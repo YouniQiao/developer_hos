@@ -2,8 +2,8 @@
 title: "@ohos.telephony.data (蜂窝数据)"
 upstream_id: "harmonyos-references/js-apis-telephony-data"
 catalog: "harmonyos-references"
-content_hash: "0e103823373f"
-synced_at: "2026-07-09T00:59:37.888340"
+content_hash: "6fa66532bf7c"
+synced_at: "2026-07-28T16:50:55.401702"
 ---
 
 # @ohos.telephony.data (蜂窝数据)
@@ -705,6 +705,53 @@ data.getActiveApnName().then((apn: string) => {
     console.info(`getActiveApnName success, apn: ${apn}`);
 }).catch((err: BusinessError) => {
     console.error(`getActiveApnName failed. code: ${err.code}, message: ${err.message}`);
+});
+```
+
+#### data.showSystemApnSettings
+
+showSystemApnSettings(context: Context): Promise<void>
+
+打开当前默认移动数据卡对应的APN配置界面。使用Promise异步回调。
+
+![](./img/note_3.0-zh-cn.png)
+
+- 该接口仅支持查看和选择当前已添加的通用APN，不支持新建或修改。
+- 若未插入SIM卡或设备不支持APN配置，将无法打开该配置界面。
+
+起始版本：26.0.0
+
+系统能力：SystemCapability.Telephony.CellularData
+
+模型约束：此接口仅可在Stage模型下使用。
+
+设备行为差异：该接口在Phone、Tablet中可正常调用，在其他设备类型中调用不生效。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | Stage模型的应用上下文（仅支持UIAbilityContext和ExtensionContext）。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象。无返回结果的Promise对象。 |
+
+示例：
+
+![](./img/note_3.0-zh-cn.png) 在本文档的示例中，通过this.context来获取UIAbilityContext，其中this代表继承自UIAbility的UIAbility实例。如需在页面中使用UIAbilityContext提供的能力，请参见[获取UIAbility的上下文信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-usage#获取uiability的上下文信息)。
+
+```
+import { data } from '@kit.TelephonyKit';
+import { common } from '@kit.AbilityKit';
+
+let context: common.UIAbilityContext = this.getUIContext().getHostContext() as common.UIAbilityContext;
+data.showSystemApnSettings(context).then(() => {
+  console.info("showSystemApnSettings success");
+}).catch(() => {
+  console.error("showSystemApnSettings failed");
 });
 ```
 

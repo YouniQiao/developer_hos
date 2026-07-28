@@ -2,8 +2,8 @@
 title: "分布式键值数据库错误码"
 upstream_id: "harmonyos-references/errorcode-distributedkvstore"
 catalog: "harmonyos-references"
-content_hash: "dd8b7172d154"
-synced_at: "2026-07-09T00:57:22.185089"
+content_hash: "ce68b58742e9"
+synced_at: "2026-07-28T16:40:54.954078"
 ---
 
 # 分布式键值数据库错误码
@@ -14,7 +14,11 @@ synced_at: "2026-07-09T00:57:22.185089"
 
 错误信息
 
-Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed.
+Parameter error. Possible causes:
+
+1. Mandatory parameters are left unspecified.
+2. Incorrect parameter types.
+3. Parameter verification failed.
 
 错误描述
 
@@ -40,7 +44,7 @@ Over max limits.
 
 可能原因
 
-1. 在调用订阅数据库变化接口[on('dataChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributedkvstore#ondatachange)时，对数据库的订阅数量已超过最大限制数目8。
+1. 在调用订阅数据库变化接口[on('dataChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributedkvstore#ondatachange)时，对数据库的订阅数目已超过最大限制数目8。
 2. 调用获取数据库结果集接口[getResultSet](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributedkvstore#getresultset)时，数据库当前打开的结果集数目超过最大限制数目8。
 
 处理步骤
@@ -78,7 +82,7 @@ Database corrupted.
 
 错误描述
 
-该错误码表示在调用数据库增、删、查、数据同步等接口时，数据库已损坏。
+该错误码表示在调用[put](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributedkvstore#put)、[delete](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributedkvstore#delete)、[get](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributedkvstore#get)、[sync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributedkvstore#sync)等接口时，数据库已损坏。
 
 可能原因
 
@@ -97,7 +101,7 @@ Not found.
 
 错误描述
 
-该错误码表示在调用数据库deleteKVStore、sync、get等接口时，未找到相关数据。
+该错误码表示在调用[deleteKVStore](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributedkvstore#deletekvstore)、[sync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributedkvstore#sync)、[get](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributedkvstore#get)等接口时，未找到相关数据。
 
 可能原因
 
@@ -121,7 +125,7 @@ Database or result set already closed.
 
 错误描述
 
-该错误码表示在调用数据库或查询结果集相关接口时，数据库或查询结果集为关闭状态。
+该错误码表示在调用数据库或查询结果集相关接口时，数据库或查询结果集处于关闭状态。
 
 可能原因
 

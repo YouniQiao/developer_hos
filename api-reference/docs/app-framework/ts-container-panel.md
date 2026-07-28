@@ -2,15 +2,15 @@
 title: "Panel"
 upstream_id: "harmonyos-references/ts-container-panel"
 catalog: "harmonyos-references"
-content_hash: "40927cb875a9"
-synced_at: "2026-07-09T00:58:19.084256"
+content_hash: "7bc04e3169cf"
+synced_at: "2026-07-28T16:48:53.353623"
 ---
 
 # Panel
 
 可滑动面板，提供一种轻量的内容展示窗口，方便在不同尺寸中切换。
 
-![](./img/note_3.0-zh-cn.png) 从API version 12开始，该组件不再维护，推荐使用通用属性[bindSheet](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition)。
+![](./img/note_3.0-zh-cn.png) 从API version 12开始，该组件不再维护，推荐使用通用属性[bindSheet](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#bindsheet)。
 
 该组件从API version 7开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
 
@@ -24,7 +24,9 @@ synced_at: "2026-07-09T00:58:19.084256"
 
 Panel(show: boolean)
 
-模型约束： 此接口仅可在Stage模型下使用。
+滑动面板组件。
+
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 12开始废弃。建议使用[bindSheet](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#bindsheet)替代。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -34,7 +36,7 @@ Panel(show: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| show | boolean | 是 | 控制Panel显示或隐藏。 **说明：** 如果设置为false时，则不占位隐藏。[Visible.None](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-visibility)或者show之间有一个生效时，都会生效不占位隐藏。 |
+| show | boolean | 是 | 控制Panel显示或隐藏，true表示显示面板，false表示隐藏面板。 **说明：** 如果设置为false时，则不占位隐藏。[Visibility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#visibility).None或show之间有一个生效时，都会生效不占位隐藏。 |
 
 #### 属性
 
@@ -46,7 +48,7 @@ type(value: PanelType)
 
 可滑动面板的类型。
 
-模型约束： 此接口仅可在Stage模型下使用。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 12开始废弃。建议使用[SheetOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#sheetoptions)中的preferType替代。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -64,7 +66,7 @@ mode(value: PanelMode)
 
 可滑动面板的初始状态。
 
-模型约束： 此接口仅可在Stage模型下使用。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 12开始废弃。建议使用[SheetOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#sheetoptions)中的preferType替代。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -82,7 +84,7 @@ dragBar(value: boolean)
 
 设置是否存在控制条。
 
-模型约束： 此接口仅可在Stage模型下使用。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 12开始废弃。建议使用[SheetOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#sheetoptions)中的dragBar替代。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -100,7 +102,7 @@ customHeight(value: Dimension | PanelHeight)
 
 指定PanelType.CUSTOM状态下的高度。
 
-模型约束： 此接口仅可在Stage模型下使用。
+![](./img/note_3.0-zh-cn.png) 从API version 10开始支持，从API version 12开始废弃。建议使用[SheetOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#sheetoptions)中的height替代。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -116,9 +118,9 @@ customHeight(value: Dimension | PanelHeight)
 
 fullHeight(value: number | string)
 
-指定PanelType.Full状态下的高度。
+指定PanelMode.Full状态下的高度。
 
-模型约束： 此接口仅可在Stage模型下使用。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 12开始废弃。建议使用[SheetOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#sheetoptions)中的height替代。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -128,7 +130,7 @@ fullHeight(value: number | string)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | string | 是 | 指定PanelMode.Full状态下的高度。 默认值：当前组件主轴大小减去8vp空白区 **说明：** 不支持设置百分比。 |
+| value | number | string | 是 | 指定PanelMode.Full状态下的高度。 默认值：当前组件主轴大小减去8vp空白区 单位：vp **说明：** 不支持设置百分比。 |
 
 #### [h2]halfHeight
 
@@ -136,7 +138,7 @@ halfHeight(value: number | string)
 
 指定PanelMode.Half状态下的高度。
 
-模型约束： 此接口仅可在Stage模型下使用。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 12开始废弃。建议使用[SheetOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#sheetoptions)中的height替代。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -146,7 +148,7 @@ halfHeight(value: number | string)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | string | 是 | 指定PanelMode.Half状态下的高度。 默认值：当前组件主轴大小的一半。 **说明：** 不支持设置百分比。 |
+| value | number | string | 是 | 指定PanelMode.Half状态下的高度。 默认值：当前组件主轴大小的一半。 单位：vp **说明：** 不支持设置百分比。 |
 
 #### [h2]miniHeight
 
@@ -154,7 +156,7 @@ miniHeight(value: number | string)
 
 指定PanelMode.Mini状态下的高度。
 
-模型约束： 此接口仅可在Stage模型下使用。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 12开始废弃。建议使用[SheetOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#sheetoptions)中的height替代。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -172,7 +174,7 @@ show(value: boolean)
 
 当滑动面板弹出时调用。
 
-模型约束： 此接口仅可在Stage模型下使用。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 12开始废弃。建议使用[SheetOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#bindsheet)中的isShow替代。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -190,7 +192,7 @@ backgroundMask(color: ResourceColor)
 
 指定Panel的背景蒙层。
 
-模型约束： 此接口仅可在Stage模型下使用。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 12开始废弃。建议使用[SheetOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#sheetoptions)中的maskColor替代。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -208,7 +210,7 @@ showCloseIcon(value: boolean)
 
 设置是否显示关闭图标。
 
-模型约束： 此接口仅可在Stage模型下使用。
+![](./img/note_3.0-zh-cn.png) 从API version 10开始支持，从API version 12开始废弃。建议使用[SheetOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#sheetoptions)中的showClose替代。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -222,22 +224,22 @@ showCloseIcon(value: boolean)
 
 #### PanelType枚举说明
 
-模型约束： 此接口仅可在Stage模型下使用。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 12开始废弃。建议使用[SheetSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#sheetsize枚举说明)替代。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-| 名称 | 说明 |
-| --- | --- |
-| Minibar | 提供minibar和类全屏展示切换效果。 |
-| Foldable | 内容永久展示类，提供大（类全屏）、中（类半屏）、小三种尺寸展示切换效果。 |
-| Temporary | 内容临时展示区，提供大（类全屏）、中（类半屏）两种尺寸展示切换效果。 |
-| CUSTOM10+ | 配置自适应内容高度，不支持尺寸切换效果。 |
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| Minibar | 0 | 提供minibar和类全屏展示切换效果。 |
+| Foldable | 1 | 内容永久展示类，提供大（类全屏）、中（类半屏）、小三种尺寸展示切换效果。 |
+| Temporary | 2 | 内容临时展示区，提供大（类全屏）、中（类半屏）两种尺寸展示切换效果。 |
+| CUSTOM10+ | 3 | 配置自适应内容高度，不支持尺寸切换效果。 |
 
 #### PanelMode枚举说明
 
-模型约束： 此接口仅可在Stage模型下使用。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 12开始废弃。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -251,15 +253,15 @@ showCloseIcon(value: boolean)
 
 #### PanelHeight10+枚举说明
 
-模型约束： 此接口仅可在Stage模型下使用。
+![](./img/note_3.0-zh-cn.png) 从API version 10开始支持，从API version 12开始废弃。建议使用[SheetSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#sheetsize枚举说明)替代。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-| 名称 | 说明 |
-| --- | --- |
-| WRAP_CONTENT | 类型为CUSTOM时，自适应内容高度。 |
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| WRAP_CONTENT | 'wrapContent' | [PanelType](#paneltype枚举说明)的类型为CUSTOM时，自适应内容高度。 |
 
 #### 事件
 
@@ -271,7 +273,7 @@ onChange(event: (width: number, height: number, mode: PanelMode) => void)
 
 当可滑动面板发生状态变化时触发。
 
-模型约束： 此接口仅可在Stage模型下使用。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 12开始废弃。建议使用[SheetOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#sheetoptions)中的onTypeDidChange替代。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -283,7 +285,7 @@ onChange(event: (width: number, height: number, mode: PanelMode) => void)
 | --- | --- | --- | --- |
 | width | number | 是 | 内容区的宽度值。 |
 | height | number | 是 | 内容区的高度值。 当dragBar属性为true时，panel本身的高度值为dragBar高度加上内容区高度。 |
-| mode | PanelMode | 是 | 面板的状态。 |
+| mode | [PanelMode](#panelmode枚举说明) | 是 | 面板的状态。 |
 
 #### [h2]onHeightChange9+
 
@@ -291,7 +293,7 @@ onHeightChange(callback: (value: number) => void)
 
 当可滑动面板发生高度变化时触发。
 
-模型约束： 此接口仅可在Stage模型下使用。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 12开始废弃。建议使用[SheetOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#sheetoptions)中的onHeightDidChange替代。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -321,7 +323,7 @@ struct PanelExample {
         .backgroundColor(0xFFFFFF)
         .padding({ left: 20 })
         .onClick(() => {
-          this.show = !this.show
+          this.show = !this.show;
         })
       Panel(this.show) { // 展示日程
         Column() {
@@ -333,13 +335,13 @@ struct PanelExample {
       .type(PanelType.Foldable)
       .mode(PanelMode.Half)
       .dragBar(true) // 默认开启
-      .halfHeight(500) // 默认一半
+      .halfHeight(500) // 设置半屏高度为500（默认为组件主轴大小的一半）
       .showCloseIcon(true) // 显示关闭图标
       .onChange((width: number, height: number, mode: PanelMode) => {
-        console.info(`width:${width},height:${height},mode:${mode}`)
+        console.info(`width:${width},height:${height},mode:${mode}`);
       })
     }.width('100%').height('100%').backgroundColor(0xDCDCDC).padding({ top: 5 })
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661613047.gif)
+ ![](./img/zh-cn_image_0000002686088503.gif)

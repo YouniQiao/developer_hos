@@ -2,13 +2,93 @@
 title: "REST API错误码"
 upstream_id: "harmonyos-references/account-server-error-code"
 catalog: "harmonyos-references"
-content_hash: "25ff7427dedb"
-synced_at: "2026-07-17T16:19:40.460071"
+content_hash: "db9486e6919c"
+synced_at: "2026-07-28T16:52:33.337328"
 ---
 
 # REST API错误码
 
-#### 获取用户级凭证/刷新用户级凭证/获取应用级凭证
+#### 获取用户级凭证
+
+接口URL：https://oauth-login.cloud.huawei.com/oauth2/v3/token
+
+错误码信息：
+
+| HTTP响应码 | 描述 | 解决方法 |
+| --- | --- | --- |
+| 200 | 成功。 | - |
+| 400 | 参数错误。 | 请根据**业务响应主错误码**以及**业务响应子错误码**进一步排查问题。 |
+| 403 | 无权限访问。 | 通常是调用方网络安全策略阻止了访问，请检查网络环境配置。若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 404 | 找不到服务。 | 请检查请求URI是否正确。 |
+| 405 | 不支持的http请求method。 | 请检查http请求method是否与接口说明一致。 |
+| 500 | 服务内部错误。 | 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 502 | 请求连接异常，常见于网络状况不稳定。 | 建议稍后重试，若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 503 | 系统流控。 | 触发系统流控，请稍后重试。 |
+| 504 | 请求连接超时，常见于网络状况不稳定。 | 建议稍后重试，若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 590 | 服务内部错误。 | 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+
+| 业务响应主错误码 | 业务响应子错误码 | 描述 | 解决方法 |
+| --- | --- | --- | --- |
+| 1101 | 20002 | client_id格式不正确。 | 检查client_id是否满足正则：^[0-9]{1,64}$。 |
+| 1101 | 20085 | 在grant_type参数传authorization_code时，client_secret传参为空。 | 请按照接口参数的要求，传入正确的client_secret参数。 |
+| 1101 | 20152 | code格式不正确。 | 检查code格式是否满足正则：^[0-9a-zA-Z=/\\+]+$。 该错误码出现可能场景： - code参数被篡改，导致格式不符。 - 请求头的Content-Type为application/x-www-form-urlencoded，但实际代码调用时，未对请求body体进行URLEncode处理，可参考[示例代码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token#示例代码)组装参数。 |
+| 1101 | 20154 | code解析得到的Client ID与入参client_id不一致。 | 检查入参client_id是否与[配置Client ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id)中的值一致。 |
+| 1101 | 20155 | code过期，code只有5分钟有效期，超过有效期后将无法继续使用。 | 请引导用户重新授权，获取新的code再重试。 |
+| 1101 | 20156 | code已经被使用过。 | code只能用一次，请重新获取code再重试。 |
+| 1101 | 20158 | code已失效。正常code有效期为5分钟，但是由于用户的行为（如更改密码、取消应用的授权等行为），导致华为服务器提前失效已颁发的code。 | 请引导用户重新授权，获取新的code再重试。 |
+| 1101 | 20171 | 在grant_type参数传“device_code”、“refresh_token”或“client_credentials”时，client_secret传参为空。 | 请按照接口参数的要求，grant_type参数请固定传“authorization_code”，并且传入正确的client_secret参数。 |
+| 1101 | 20172 | client_secret格式不正确。 | 检查client_secret格式是否满足正则：^[0-9a-zA-Z=/\\+]+$。 |
+| 1101 | 20182 | grant_type值不正确。 | grant_type可选值如下： - “authorization_code”：该场景用于[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token)。 - “device_code”：该场景用于[扫码授权登录-获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token-for-qrcode)。 - “refresh_token”： 该场景用于[刷新用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-refresh-token)。 - “client_credentials”：该场景用于[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)。 当前场景请固定传”authorization_code“。 |
+| 1102 | 20001 | client_id为空。 | 请按照接口参数的要求，传入正确的client_id参数。 |
+| 1102 | 20151 | code为空。 | 请按照接口参数的要求，传入正确的code参数。 |
+| 1102 | 20181 | grant_type为空。 | grant_type可选值如下： - “authorization_code”：该场景用于[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token)。 - “device_code”：该场景用于[扫码授权登录-获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token-for-qrcode)。 - “refresh_token”： 该场景用于[刷新用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-refresh-token)。 - “client_credentials”：该场景用于[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)。 当前场景请固定传”authorization_code“。 |
+| 1103 | 20153 | 无效的code。 | 请检查code是否正确。 |
+| 1203 | 12303 | client_id在系统不存在。 | 请前往AppGallery Connect（简称AGC）确认client_id是否存在。 |
+| 1203 | 12304 | 无效的client_secret。 | 入参client_id和client_secret不匹配导致，请检查参数。 |
+| 1203 | 500 | 系统内部错误。 | 系统内部处理错误，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 1203 | 1203 | 系统未知异常。 | 系统未知异常，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+
+#### 刷新用户级凭证
+
+接口URL：https://oauth-login.cloud.huawei.com/oauth2/v3/token
+
+错误码信息：
+
+| HTTP响应码 | 描述 | 解决方法 |
+| --- | --- | --- |
+| 200 | 成功。 | - |
+| 400 | 参数错误。 | 请根据**业务响应主错误码**以及**业务响应子错误码**进一步排查问题。 |
+| 403 | 无权限访问。 | 通常是调用方网络安全策略阻止了访问，请检查网络环境配置。若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 404 | 找不到服务。 | 请检查请求URI是否正确。 |
+| 405 | 不支持的http请求method。 | 请检查http请求method是否与接口说明一致。 |
+| 500 | 服务内部错误。 | 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 502 | 请求连接异常，常见于网络状况不稳定。 | 建议稍后重试，若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 503 | 系统流控。 | 触发系统流控，请稍后重试。 |
+| 504 | 请求连接超时，常见于网络状况不稳定。 | 建议稍后重试，若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 590 | 服务内部错误。 | 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+
+| 业务响应主错误码 | 业务响应子错误码 | 描述 | 解决方法 |
+| --- | --- | --- | --- |
+| 1101 | 20002 | client_id格式不正确。 | 检查client_id是否满足正则：^[0-9]{1,64}$。 |
+| 1101 | 20041 | scope格式不正确或数量超过150个。 | - 检查scope参数是否满足正则：^[0-9a-zA-Z:/\\.\u0020]+$。 - 检查scope数量是否超过150个。 |
+| 1101 | 20042 | 无效的scope。 | 入参scope存在伪造值，请参照参数说明，传入正确的参数。 |
+| 1101 | 20154 | refresh_token中的client_id和入参不一致。 | 检查入参client_id是否与[配置Client ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id)中的值一致。 |
+| 1101 | 20171 | client_secret为空。 | 请按照接口参数的要求，传入正确的client_secret参数。 |
+| 1101 | 20172 | client_secret格式不正确。 | 检查client_secret格式是否满足正则：^[0-9a-zA-Z=/\\+]+$。 |
+| 1101 | 20182 | grant_type值不正确。 | grant_type可选值如下： - “authorization_code”：该场景用于[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token)。 - “device_code”：该场景用于[扫码授权登录-获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token-for-qrcode)。 - “refresh_token”： 该场景用于[刷新用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-refresh-token)。 - “client_credentials”：该场景用于[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)。 当前场景请固定传”refresh_token“。 |
+| 1101 | 20192 | refresh_token格式不正确。 | refresh_token参数格式需要满足正则：^[0-9a-zA-Z=/\\+]+$。 |
+| 1102 | 20001 | client_id为空。 | 请按照接口参数的要求，传入正确的client_id参数。 |
+| 1102 | 20181 | grant_type为空。 | grant_type可选值如下： - “authorization_code”：该场景用于[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token)。 - “device_code”：该场景用于[扫码授权登录-获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token-for-qrcode)。 - “refresh_token”： 该场景用于[刷新用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-refresh-token)。 - “client_credentials”：该场景用于[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)。 当前场景请固定传”refresh_token“。 |
+| 1102 | 20191 | refresh_token为空。 | 请按照接口参数的要求，传入正确的refresh_token参数。 |
+| 1203 | 11205 | refresh_token已过期。refresh_token的有效期为180天，超过有效期后将无法继续使用。 | 请引导用户重新授权，获取新的refresh_token。 |
+| 1203 | 12303 | client_id在系统不存在。 | 请前往AppGallery Connect（简称AGC）确认client_id是否存在。 |
+| 1203 | 12304 | 无效的client_secret。 | 入参client_id和client_secret不匹配导致，请检查参数。 |
+| 1203 | 31202 | refresh_token解析失败。 | refresh_token不是一个正确有效的数据，请检查refresh_token参数。 |
+| 1203 | 31204 | refresh_token已失效。正常refresh_token有效期为180天，但是由于用户的行为（如更改密码、取消应用的授权等行为），导致华为服务器提前使已颁发的refresh_token失效。 | 请引导用户重新授权，获取新的refresh_token。 |
+| 1203 | 500 | 系统内部错误。 | 系统内部处理错误，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 1203 | 1203 | 系统未知异常。 | 系统未知异常，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+
+#### 获取应用级凭证
 
 接口URL：https://oauth-login.cloud.huawei.com/oauth2/v3/token
 
@@ -31,33 +111,62 @@ synced_at: "2026-07-17T16:19:40.460071"
 | --- | --- | --- | --- |
 | 1101 | 12304 | client_secret不正确。 | 请前往AppGallery Connect（简称AGC）确认client_secret是否正确。 |
 | 1101 | 20002 | client_id格式不正确。 | 检查client_id是否满足正则：^[0-9]{1,64}$。 |
-| 1101 | 20003 | client_id格式不正确或系统不存在。 | - 检查client_id是否满足正则：^[0-9]{1,64}$。 - 请前往AppGallery Connect（简称AGC）确认client_id是否存在。 |
-| 1101 | 20041 | scope格式不正确或数量超过150个。 | - 检查scope参数是否满足正则：^[0-9a-zA-Z:/\\.\u0020]+$。 - 检查scope数量是否超过150个。 |
-| 1101 | 20042 | 无效的scope。 | - 传入的scope参数，不在获取refresh_token时的scope中。 - 传入的scope是个伪造的值。 |
-| 1101 | 20085 | client_secret为空。 | 请按照接口参数的要求，传入正确的client_secret参数。 |
-| 1101 | 20152 | code格式不正确。 | 检查code格式是否满足正则：^[0-9a-zA-Z=/\\+]+$。 该错误码出现可能场景： - code参数被篡改，导致格式不符。 - 请求头的Content-Type为application/x-www-form-urlencoded，但实际代码调用时，未对请求body体进行URLEncode处理，可参考[示例代码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token#示例代码)组装参数。 |
-| 1101 | 20154 | code或refresh_token中的client_id和入参不一致。 | 检查入参client_id是否与[配置Client ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id)中的值一致。 |
-| 1101 | 20155 | code过期，code只有5分钟有效期，超过有效期后将无法继续使用。 | 请引导用户重新授权，获取新的code再重试。 |
-| 1101 | 20156 | code已经被使用过。 | code只能用一次，请重新获取code再重试。 |
-| 1101 | 20158 | code已失效。正常code有效期为5分钟，但是由于用户的行为（如更改密码、取消应用的授权等行为），导致华为服务器提前失效已颁发的code。 | 请引导用户重新授权，获取新的code再重试。 |
+| 1101 | 20003 | client_id在系统不存在。 | 请前往AppGallery Connect（简称AGC）确认client_id是否存在。 |
 | 1101 | 20171 | client_secret为空。 | 请按照接口参数的要求，传入正确的client_secret参数。 |
 | 1101 | 20172 | client_secret格式不正确。 | 检查client_secret格式是否满足正则：^[0-9a-zA-Z=/\\+]+$。 |
-| 1101 | 20182 | grant_type值不正确。 | grant_type可选值如下： - “authorization_code”：该场景用于[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token)。 - “refresh_token”： 该场景用于[刷新用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-refresh-token)。 - “client_credentials”：该场景用于[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)。 |
-| 1101 | 20192 | refresh_token格式不正确。 | refresh_token格式需要满足正则：^[0-9a-zA-Z=/\\+]+$。 |
+| 1101 | 20182 | grant_type值不正确。 | grant_type可选值如下： - “authorization_code”：该场景用于[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token)。 - “device_code”：该场景用于[扫码授权登录-获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token-for-qrcode)。 - “refresh_token”： 该场景用于[刷新用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-refresh-token)。 - “client_credentials”：该场景用于[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)。 当前场景请固定传”client_credentials“。 |
+| 1102 | 20001 | client_id为空。 | 请按照接口参数的要求，传入正确的client_id参数。 |
+| 1102 | 20181 | grant_type为空。 | grant_type可选值如下： - “authorization_code”：该场景用于[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token)。 - “device_code”：该场景用于[扫码授权登录-获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token-for-qrcode)。 - “refresh_token”： 该场景用于[刷新用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-refresh-token)。 - “client_credentials”：该场景用于[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)。 当前场景请固定传”client_credentials“。 |
+| 1203 | 500 | 系统内部错误。 | 系统内部处理错误，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 1203 | 1203 | 系统未知异常。 | 系统未知异常，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+
+#### 扫码授权登录-获取用户级凭证
+
+接口URL：https://oauth-login.cloud.huawei.com/oauth2/v3/token
+
+错误码信息：
+
+| HTTP响应码 | 描述 | 解决方法 |
+| --- | --- | --- |
+| 200 | 成功。 | - |
+| 400 | 参数错误。 | 请根据**业务响应主错误码**以及**业务响应子错误码**进一步排查问题。 |
+| 403 | 无权限访问。 | 通常是调用方网络安全策略阻止了访问，请检查网络环境配置。若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 404 | 找不到服务。 | 请检查请求URI是否正确。 |
+| 405 | 不支持的http请求method。 | 请检查http请求method是否与接口说明一致。 |
+| 500 | 服务内部错误。 | 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 502 | 请求连接异常，常见于网络状况不稳定。 | 建议稍后重试，若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 503 | 系统流控。 | 触发系统流控，请稍后重试。 |
+| 504 | 请求连接超时，常见于网络状况不稳定。 | 建议稍后重试，若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 590 | 服务内部错误。 | 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+
+| 业务响应主错误码 | 业务响应子错误码 | 描述 | 解决方法 |
+| --- | --- | --- | --- |
+| 1101 | 20002 | client_id格式不正确。 | 检查client_id是否满足正则：^[0-9]{1,64}$。 |
+| 1101 | 20152 | code格式校验不通过。 | 检查code格式是否满足正则：^[0-9a-zA-Z=/\\+]+$。 该错误码出现可能场景： - code参数被篡改，导致格式不符。 - 请求头的Content-Type为application/x-www-form-urlencoded，但实际代码调用时，未对请求body体进行URLEncode处理，可参考[示例代码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token-for-qrcode#示例代码)组装参数。 |
+| 1101 | 20154 | code解析得到的Client ID与入参client_id不一致。 | 检查入参client_id是否与调用[获取二维码信息接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-authorize-qrcode-info#接口原型)时的入参client_id一致。 |
+| 1101 | 20171 | client_secret为空。 | 请按照接口参数的要求，传入正确的client_secret参数。 |
+| 1101 | 20172 | client_secret格式不正确。 | 检查client_secret格式是否满足正则：^[0-9a-zA-Z=/\\+]+$。 |
+| 1101 | 20182 | grant_type值不正确。 | grant_type可选值如下： - “authorization_code”：该场景用于[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token)。 - “device_code”：该场景用于[扫码授权登录-获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token-for-qrcode)。 - “refresh_token”： 该场景用于[刷新用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-refresh-token)。 - “client_credentials”：该场景用于[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)。 当前场景请固定传”device_code“。 |
+| 1101 | 20404 | 二维码的user_code已到期。 | 请重新调用[获取二维码信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-authorize-qrcode-info)，生成新的二维码。 |
+| 1101 | 20406 | 设备码已经成功获取到用户级凭证，无法再次使用。 | 请重新调用[获取二维码信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-authorize-qrcode-info)，生成新的二维码。 |
+| 1101 | 20407 | 设备码获取用户级凭证轮询超过限制。 | 请重新调用[获取二维码信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-authorize-qrcode-info)，生成新的二维码。 |
+| 1101 | 20408 | 设备码解析出来的scope校验不通过。 | 在调用[获取二维码信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-authorize-qrcode-info)时，请严格按照接口入参要求，传入指定的scope枚举值。 |
+| 1101 | 20411 | 用户未扫码。 | 该场景属于正常错误，轮询过程中如出现该错误，请勿中断轮询。 |
+| 1101 | 20412 | 用户已扫码，但未完成授权。 | 该场景属于正常错误，轮询过程中如出现该错误，请勿中断轮询。 |
+| 1101 | 20414 | 用户已扫码，但是在授权页点击取消。 | 请重新调用[获取二维码信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-authorize-qrcode-info)，生成新的二维码。 |
 | 1102 | 20001 | client_id为空。 | 请按照接口参数的要求，传入正确的client_id参数。 |
 | 1102 | 20151 | code为空。 | 请按照接口参数的要求，传入正确的code参数。 |
-| 1102 | 20181 | grant_type为空。 | grant_type可选值如下： - “authorization_code”：该场景用于[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token)。 - “refresh_token”： 该场景用于[刷新用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-refresh-token)。 - “client_credentials”：该场景用于[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)。 |
-| 1102 | 20191 | refresh_token为空。 | 请按照接口参数的要求，传入正确的refresh_token参数。 |
-| 1103 | 20153 | 无效的code。 | 请检查code是否正确。 |
-| 1203 | 11205 | refresh_token已过期。refresh_token的有效期为180天，超过有效期后将无法继续使用。 | 请引导用户重新授权，获取新的refresh_token。 |
-| 1203 | 12303 | client_id在系统不存在。 | 请前往AppGallery Connect（简称AGC）确认client_id是否存在。 |
+| 1102 | 20181 | grant_type为空。 | grant_type可选值如下： - “authorization_code”：该场景用于[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token)。 - “device_code”：该场景用于[扫码授权登录-获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token-for-qrcode)。 - “refresh_token”： 该场景用于[刷新用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-refresh-token)。 - “client_credentials”：该场景用于[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)。 当前场景请固定传”device_code“。 |
+| 1203 | 12303 | client_id在系统不存在。 | 在grant_type=device_code场景下，检查client_id参数在系统不存在。请前往AppGallery Connect（简称AGC）确认client_id是否存在。 |
 | 1203 | 12304 | 无效的client_secret。 | 入参client_id和client_secret不匹配导致，请检查参数。 |
-| 1203 | 31202 | refresh_token解析失败。 | refresh_token不是一个正确有效的数据，请检查refresh_token参数。 |
-| 1203 | 31204 | refresh_token已失效。正常refresh_token有效期为180天，但是由于用户的行为（如更改密码、取消应用的授权等行为），导致华为服务器提前使已颁发的refresh_token失效。 | 请引导用户重新授权，获取新的refresh_token。 |
-| 1203 | 31218 | refresh_token非法。 | refresh_token格式需要满足正则：^[0-9a-zA-Z=\/\+]+$。 |
-| 1203 | 500 | 系统内部错误。 | 系统内部处理错误，建议业务打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
-| 1203 | 100300 | 系统处理异常。 | 请重试，若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
-| 1203 | 100502 | 开发者的关联主体账号组未查询到。 | 请参考[添加账号组成员](https://developer.huawei.com/consumer/cn/doc/start/aai-0000001265430513)，将应用的开发者账号加入关联主体账号组后重试。 |
+| 1600 | 16002 | 设备码解析失败。 | 入参code错误，该参数值可通过[获取二维码信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-authorize-qrcode-info)接口获取，取响应参数device_code字段的值。 |
+| 1600 | 16003 | 设备码过期。 | 请重新调用[获取二维码信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-authorize-qrcode-info)，生成新的二维码。 |
+| 1203 | 56000 | 系统内部调用出现异常。 | 系统内部调用出现异常，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 1203 | 56100 | 系统内部调用连接超时。 | 系统内部调用连接超时，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 1203 | 56200 | 系统内部调用socket超时。 | 系统内部调用socket超时，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 1203 | 57000 | 系统内部调用触发熔断。 | 服务内部调用触发熔断，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 1203 | 500 | 系统内部错误。 | 系统内部处理错误，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 1203 | 1203 | 系统未知异常。 | 系统未知异常，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
 
 #### 解析凭证
 
@@ -86,6 +195,7 @@ synced_at: "2026-07-17T16:19:40.460071"
 | 102 | 无效的access_token。 | access_token参数无效，可能原因：请求头的Content-Type为application/x-www-form-urlencoded，但实际代码调用时，未对请求body参数进行URLEncode处理，可参考[示例代码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-token-info#示例代码)组装参数。 |
 | 500 | 接口内部错误。 | 根据返回的错误描述进行处理，若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
 | 501 | 服务分发异常。 | - 检查请求URL中nsp_svc是否正确 - 若确认请求URL与文档一致，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 1302 | 接口流控。 | 业务调用频率过高，请稍后重试。 |
 | 31204 | access_token已失效。正常access_token有效期为3600秒，但是由于用户的行为（如更改密码、取消应用的授权等行为），导致华为服务器提前失效已颁发的access_token。 | 请引导用户重新授权，获取新的access_token。 |
 
 #### 取消用户级凭证授权
@@ -109,15 +219,45 @@ synced_at: "2026-07-17T16:19:40.460071"
 
 | 业务响应主错误码 | 业务响应子错误码 | 描述 | 解决方法 |
 | --- | --- | --- | --- |
-| 1101 | 20222 | 无效的token。 | token格式不正确，可能原因： 请求头的Content-Type为application/x-www-form-urlencoded，但实际代码调用时，未对请求body体进行URLEncode处理，可参考[示例代码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-revoke-token#示例代码)组装参数。 |
+| 1101 | 20222 | token格式不正确。 | token格式不正确，可能原因： - token参数为伪造的值。 - 请求头的Content-Type为application/x-www-form-urlencoded，但实际代码调用时，未对请求body体进行URLEncode处理，可参考[示例代码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-revoke-token#示例代码)组装参数。 |
 | 1102 | 20221 | token为空。 | 请按照接口参数的要求，传入正确的token参数。 |
 | 1203 | 11205 | token已过期。Access Token有效期为3600秒，Refresh Token有效期为180天，超过有效期后将无法继续使用。 | 请引导用户重新授权，获取新的token并重试。 |
 | 1203 | 17009 | 无效的token。 | 传入的token参数无效，请重新获取token。 |
 | 1203 | 17010 | token验证失败。 | token不是一个正确有效的数据，请检查token参数。 |
 | 1203 | 31202 | token解析失败。 | token不是一个正确有效的数据，请检查token参数。 |
 | 1203 | 31204 | token已失效。正常Access Token有效期为3600秒，Refresh Token有效期为180天，但是由于用户的行为（如更改密码、取消应用的授权等行为），导致华为服务器提前失效已颁发的Access Token和Refresh Token。 | 请引导用户重新授权，获取新的token并重试。 |
-| 1203 | 31218 | token格式不正确。 | 请检查token格式是否正确。 |
-| 1203 | 500 | 系统内部错误。 | 系统内部处理错误，建议业务打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 1203 | 500 | 系统内部错误。 | 系统内部处理错误，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 1203 | 1203 | 系统未知异常。 | 系统未知异常，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+
+#### 获取二维码信息
+
+接口URL：https://oauth-login.cloud.huawei.com/oauth2/v3/device/code
+
+错误码信息：
+
+| HTTP响应码 | 描述 | 解决方法 |
+| --- | --- | --- |
+| 200 | 成功。 | - |
+| 400 | 参数错误。 | 请根据**业务响应主错误码**以及**业务响应子错误码**进一步排查问题。 |
+| 403 | 无权限访问。 | 通常是调用方网络安全策略阻止了访问，请检查网络环境配置。若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 404 | 找不到服务。 | 请检查请求URI是否正确。 |
+| 405 | 不支持的http请求method。 | 请检查http请求method是否与接口说明一致。 |
+| 500 | 服务内部错误。 | 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 502 | 请求连接异常，常见于网络状况不稳定。 | 建议稍后重试，若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 503 | 系统流控。 | 触发系统流控，请稍后重试。 |
+| 504 | 请求连接超时，常见于网络状况不稳定。 | 建议稍后重试，若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 590 | 服务内部错误。 | 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+
+| 业务响应主错误码 | 业务响应子错误码 | 描述 | 解决方法 |
+| --- | --- | --- | --- |
+| 1101 | 20002 | client_id格式不正确。 | 检查client_id是否满足正则：^[0-9]{1,64}$。 |
+| 1101 | 20003 | client_id在系统不存在。 | 请前往AppGallery Connect（简称AGC）确认client_id是否存在。 |
+| 1101 | 20041 | scope格式不正确或数量超过150个。 | - 检查scope参数是否满足正则：^[0-9a-zA-Z:/\\.\u0020]+$。 - 检查scope数量是否超过150个。 |
+| 1101 | 20042 | 无效的scope。 | 入参scope存在伪造值，请参照参数说明，传入正确的参数。 |
+| 1102 | 20001 | client_id为空。 | 请按照接口参数的要求，传入正确的client_id参数。 |
+| 1600 | 16001 | 生成设备码异常。 | 设备码编码时出现异常，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 1203 | 500 | 系统内部错误。 | 系统内部处理错误，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 1203 | 1203 | 系统未知异常。 | 系统未知异常，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
 
 #### 获取用户信息
 
@@ -175,7 +315,7 @@ synced_at: "2026-07-17T16:19:40.460071"
 | 60010002 | 参数不合法。 | 请按照错误描述及接口[Request Body](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-user-info-quicklogin-by-code#request-body)参数说明检查入参。 |
 | 60010012 | code参数不正确。 | code参数传值不正确，可能原因：伪造的无效code或code被篡改。 |
 | 60010013 | clientSecret参数不正确。 | clientSecret参数传值不正确，参数取值详见[查看应用基本信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-appinfo-0000001100014694)中的**OAuth 2.0客户端ID（凭据）-Client Secret**参数。 |
-| 60180003 | code中的client_id和入参不一致。 | code参数获取时的clientId与当前接口参数clientId不一致导致，请检查入参client_id是否与[配置Client ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id)中的值一致。 |
+| 60180003 | code解析得到的Client ID与入参clientId不一致。 | code参数获取时的clientId与当前接口参数clientId不一致导致，请检查当前入参clientId是否与[配置Client ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id)中的值一致。 |
 | 60180004 | code过期，code只有5分钟有效期，超过有效期后将无法继续使用。 | 请引导用户重新授权，获取新的code再重试。 |
 | 60180005 | code已经被使用过。 | code只能用一次，请重新获取code再重试。 |
 | 60180006 | code已失效。正常code有效期为5分钟，但是由于用户的行为（如更改密码、取消应用的授权等行为），导致华为服务器提前失效已颁发的code。 | 请引导用户重新授权，获取新的code再重试。 |
@@ -278,6 +418,36 @@ synced_at: "2026-07-17T16:19:40.460071"
 | 70001401 | 服务内部错误。 | 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
 | 70009019 | 实名信息不存在 | 账号未实名，请先进行实名，或更换已实名账号，若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
 
+#### 获取用户年龄段标识
+
+接口URL：https://account-realname-api.cloud.huawei.com/openrealname/v6/realname-info/get
+
+错误码信息：
+
+| HTTP响应码 | 描述 | 解决方法 |
+| --- | --- | --- |
+| 200 | 仅表示本次接口调用成功（接口调用成功不等于业务处理成功，如**Response Body**中返回了**resultCode**字段，说明业务处理报错，需要判断报错原因）。 | - |
+| 400 | 参数错误。 | 请根据文档排查请求参数是否符合规范。 |
+| 403 | 无权限访问。 | 通常是调用方网络安全策略阻止了访问，请检查网络环境配置。若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 404 | 找不到服务。 | 请检查请求URI是否正确。 |
+| 405 | 不支持的HTTP请求method。 | 请检查HTTP请求method是否与接口说明一致。 |
+| 500 | 服务内部错误。 | 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 502 | 请求连接异常，常见于网络状况不稳定。 | 建议稍后重试，若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 504 | 请求连接超时，常见于网络状况不稳定。 | 建议稍后重试，若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 590 | 服务内部错误。 | 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+
+![](./img/note_3.0-zh-cn.png) Response Body中的resultCode字段，在处理成功时不会返回。
+
+| resultCode | 描述 | 解决方法 |
+| --- | --- | --- |
+| 60010002 | 参数不合法。 | 请按照错误描述及接口[Request Body](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-realname-age-range-flag#request-body)参数说明检查入参。 |
+| 60010003 | 鉴权信息不合法。 | 请检查Header中Authorization参数传值，可能是未传值或传值不正确。 |
+| 60010014 | 会话失效。 可能原因: - Access Token格式不正确 - Access Token无效或已过期 | 请检查Header中Authorization参数传值，确保获取凭证时Authorization Code包含realNameAgeRange scope的授权，详见[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token)。 |
+| 61110001 | 触发系统流控。 | 请稍后重试。 |
+| 61110002 | Access Token中的scope权限不满足。 可能原因: - 应用未申请realNameAgeRange scope权限。 - 获取Authorization Code时没有携带realNameAgeRange scope。 | - 申请realNameAgeRange scope权限，详见[申请账号权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-config-permissions) - 请检查Header中Authorization参数传值，确保获取凭证时Authorization Code包含realNameAgeRange scope的授权，详见[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token)。 |
+| 61110003 | Access Token中的Client ID和入参clientId不一致。 | 请检查获取凭证时Authorization Code时携带的Client ID是否和body入参中的clientId保持一致。 |
+| 60010001 | 系统内部错误。 | 根据返回的错误描述进行处理，若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+
 #### 通过OpenID获取UnionID
 
 接口URL：https://oauth-login.cloud.huawei.com/rest.php?nsp_svc=huawei.oauth2.app.openIdToUnionId
@@ -301,14 +471,56 @@ synced_at: "2026-07-17T16:19:40.460071"
 
 | NSP_STATUS | 描述 | 解决方法 |
 | --- | --- | --- |
-| 6 | access_token已过期。access_token的有效期为3600秒，超过有效期后将无法继续使用。 | 请通过[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)重新获取新的access_token。 |
+| 6 | access_token已过期。access_token有效期为3600秒，超过有效期后将无法继续使用。 | 请通过[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)重新获取新的access_token。 |
 | 102 | 无效的access_token。 | access_token参数无效，可能原因：请求头的Content-Type为application/x-www-form-urlencoded，但实际代码调用时，未对请求body参数进行URLEncode处理，可参考[示例代码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-unionid#示例代码)组装参数。 |
 | 403 | 无权限访问。 | 入参access_token请通过[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)获取，其他方式获取的access_token不允许调用该接口。 |
 | 500 | 接口内部错误。 | 根据返回的错误描述进行处理，若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
 | 501 | 服务分发异常。 | - 检查请求URL中nsp_svc是否正确 - 若确认请求URL与文档一致，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
 | 1302 | 接口流控。 | 业务调用频率过高，单应用调用并发请低于100TPS。 |
 | 31204 | access_token已失效。 | 通过[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)获取的access_token不会出现此错误。请严格按照接口入参要求，使用[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)方式获取access_token并重试。 |
-| 150028 | open_id参数为空或超长。 | 请检查open_id是否为空或者超过256的字符长度。具体格式要求请参考[OpenID和UnionID的格式说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-9) |
+| 150028 | open_id参数非法。 | open_id参数非法，可能原因： - open_id参数为空。 - open_id参数格式错误，具体格式要求请参考[OpenID和UnionID的格式说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-9)。 |
+
+#### 通过Authorization Code获取GroupUnionID
+
+接口URL：https://oauth-login.cloud.huawei.com/oauth2/v3/token
+
+错误码信息：
+
+| HTTP响应码 | 描述 | 解决方法 |
+| --- | --- | --- |
+| 200 | 成功。 | - |
+| 400 | 参数错误。 | 请根据**业务响应主错误码**以及**业务响应子错误码**进一步排查问题。 |
+| 403 | 无权限访问。 | 通常是调用方网络安全策略阻止了访问，请检查网络环境配置。若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 404 | 找不到服务。 | 请检查请求URI是否正确。 |
+| 405 | 不支持的http请求method。 | 请检查http请求method是否与接口说明一致。 |
+| 500 | 服务内部错误。 | 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 502 | 请求连接异常，常见于网络状况不稳定。 | 建议稍后重试，若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 503 | 系统流控。 | 触发系统流控，请稍后重试。 |
+| 504 | 请求连接超时，常见于网络状况不稳定。 | 建议稍后重试，若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 590 | 服务内部错误。 | 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+
+| 业务响应主错误码 | 业务响应子错误码 | 描述 | 解决方法 |
+| --- | --- | --- | --- |
+| 1101 | 20002 | client_id格式不正确。 | 检查client_id是否满足正则：^[0-9]{1,64}$。 |
+| 1101 | 20085 | 在grant_type参数传authorization_code时，client_secret传参为空。 | 请按照接口参数的要求，传入正确的client_secret参数。 |
+| 1101 | 20152 | code格式不正确。 | 检查code格式是否满足正则：^[0-9a-zA-Z=/\\+]+$。 该错误码出现可能场景： - code参数被篡改，导致格式不符。 - 请求头的Content-Type为application/x-www-form-urlencoded，但实际代码调用时，未对请求body体进行URLEncode处理，可参考[示例代码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-groupunionid-code#示例代码)组装参数。 |
+| 1101 | 20154 | code解析得到的Client ID与入参client_id不一致。 | 检查入参client_id是否与[配置Client ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id)中的值一致。 |
+| 1101 | 20155 | code过期，code只有5分钟有效期，超过有效期后将无法继续使用。 | 请引导用户重新授权，获取新的code再重试。 |
+| 1101 | 20156 | code已经被使用过。 | code只能用一次，请重新获取code再重试。 |
+| 1101 | 20158 | code已失效。正常code有效期为5分钟，但是由于用户的行为（如更改密码、取消应用的授权等行为），导致华为服务器提前失效已颁发的code。 | 请引导用户重新授权，获取新的code再重试。 |
+| 1101 | 20171 | 在grant_type参数传“device_code”、“refresh_token”或“client_credentials”时，client_secret传参为空。 | 请按照接口参数的要求，grant_type参数请固定传“authorization_code”，并且传入正确的client_secret参数。 |
+| 1101 | 20172 | client_secret格式不正确。 | 检查client_secret格式是否满足正则：^[0-9a-zA-Z=/\\+]+$。 |
+| 1101 | 20182 | grant_type值不正确。 | grant_type可选值如下： - “authorization_code”：该场景用于[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token)。 - “device_code”：该场景用于[扫码授权登录-获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token-for-qrcode)。 - “refresh_token”： 该场景用于[刷新用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-refresh-token)。 - “client_credentials”：该场景用于[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)。 当前场景请固定传”authorization_code“。 |
+| 1102 | 20001 | client_id为空。 | 请按照接口参数的要求，传入正确的client_id参数。 |
+| 1102 | 20151 | code为空。 | 请按照接口参数的要求，传入正确的code参数。 |
+| 1102 | 20181 | grant_type为空。 | grant_type可选值如下： - “authorization_code”：该场景用于[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token)。 - “device_code”：该场景用于[扫码授权登录-获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token-for-qrcode)。 - “refresh_token”： 该场景用于[刷新用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-refresh-token)。 - “client_credentials”：该场景用于[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)。 当前场景请固定传”authorization_code“。 |
+| 1103 | 20153 | 无效的code。 | code被篡改或伪造的code导致，请排查code参数是否与获取到的code一致。 |
+| 1203 | 12303 | client_id在系统不存在。 | 请前往AppGallery Connect（简称AGC）确认client_id是否存在。 |
+| 1203 | 12304 | 无效的client_secret。 | 入参client_id和client_secret不匹配导致，请检查参数。 |
+| 1203 | 100301 | 参数处理异常。 | 参数处理异常，建议按照接口入参要求，检查参数是否符合规范。若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 1203 | 100502 | 开发者账号的关联主体账号组未查询到。 | 请参考[添加账号组成员](https://developer.huawei.com/consumer/cn/doc/start/aai-0000001265430513)，将应用的开发者账号加入关联主体账号组后重试。 |
+| 1203 | 500 | 系统内部错误。 | 系统内部处理错误，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 1203 | 1203 | 系统未知异常。 | 系统未知异常，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
 
 #### 通过OpenID或UnionID获取GroupUnionID
 
@@ -393,12 +605,11 @@ synced_at: "2026-07-17T16:19:40.460071"
 
 | 业务响应主错误码 | 业务响应子错误码 | 描述 | 解决方法 |
 | --- | --- | --- | --- |
-| 1203 | 100305 | id_token的header析成功后的内容不是JSON格式。 | id_token格式错误或者伪造的id_token，请检查id_token参数值是否为华为账号返回的原始值。 |
+| 1203 | 100305 | id_token的header解析成功后的内容不是JSON格式。 | id_token格式错误或者伪造的id_token，请检查id_token参数值是否为华为账号返回的原始值。 |
 | 1203 | 100306 | id_token的payload解析成功后的内容不是JSON格式。 | id_token格式错误或者伪造的id_token，请检查id_token参数值是否为华为账号返回的原始值。 |
 | 1203 | 150021 | id_token的header解析失败。 | id_token格式错误或者伪造的id_token，请检查id_token参数值是否为华为账号返回的原始值。 |
 | 1203 | 150022 | id_token的payload解析失败。 | id_token格式错误或者伪造的id_token，请检查id_token参数值是否为华为账号返回的原始值。 |
 | 1203 | 150023 | id_token的signature解析失败。 | id_token格式错误或者伪造的id_token，请检查id_token参数值是否为华为账号返回的原始值。 |
-| 1203 | 500 | 系统内部错误。 | 系统内部处理错误，建议业务打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
 | 1400 | 14004 | 无法通过其kid找到对应的JWT公钥相关信息。 | 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
 | 1500 | 15003 | 无效的id_token。 | id_token格式错误或者伪造的id_token，请检查id_token参数值是否为华为账号返回的原始值。 |
 | 1500 | 15004 | id_token验证失败。 | id_token格式错误或者伪造的id_token，请检查id_token参数值是否为华为账号返回的原始值。 |
@@ -406,3 +617,5 @@ synced_at: "2026-07-17T16:19:40.460071"
 | 1500 | 15006 | id_token已过期。 | 请重新获取新的id_token。 |
 | 1500 | 15007 | id_token为空。 | 请按照接口参数的要求，传入正确的id_token参数。 |
 | 1500 | 15008 | id_token格式不正确。 | 检查id_token的格式是否满足正则：^[0-9a-zA-Z_\-\.]+$。 |
+| 1203 | 500 | 系统内部错误。 | 系统内部处理错误，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 1203 | 1203 | 系统未知异常。 | 系统未知异常，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |

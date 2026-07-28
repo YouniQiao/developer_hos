@@ -2,8 +2,8 @@
 title: "ArkUI_NativeDialogAPI_2"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-nativedialogapi-2"
 catalog: "harmonyos-references"
-content_hash: "43579dfdcd9b"
-synced_at: "2026-07-09T00:58:39.886855"
+content_hash: "3803d14de4fd"
+synced_at: "2026-07-28T16:49:28.923173"
 ---
 
 # ArkUI_NativeDialogAPI_2
@@ -14,7 +14,7 @@ typedef struct {...} ArkUI_NativeDialogAPI_2
 
 #### 概述
 
-ArkUI提供的Native侧自定义弹窗接口集合。
+ArkUI提供的Native侧自定义弹窗接口集合，用于在Native层创建和管理自定义弹窗，支持设置弹窗避让键盘距离、显示层级、层级节点id和嵌入式弹窗蒙层显示区域等功能，适用于需要精细化控制弹窗行为的场景。
 
 起始版本： 15
 
@@ -34,7 +34,7 @@ ArkUI提供的Native侧自定义弹窗接口集合。
 
 | 名称 | 描述 |
 | --- | --- |
-| [int32_t (*setKeyboardAvoidDistance)(ArkUI_NativeDialogHandle handle, float distance, ArkUI_LengthMetricUnit unit)](#setkeyboardavoiddistance) | 弹窗避让键盘后，和键盘之间距离。 |
+| [int32_t (*setKeyboardAvoidDistance)(ArkUI_NativeDialogHandle handle, float distance, ArkUI_LengthMetricUnit unit)](#setkeyboardavoiddistance) | 设置弹窗避让键盘后，和键盘之间距离。 |
 | [int32_t (*setLevelMode)(ArkUI_NativeDialogHandle handle, ArkUI_LevelMode levelMode)](#setlevelmode) | 设置弹窗的显示层级。 |
 | [int32_t (*setLevelUniqueId)(ArkUI_NativeDialogHandle handle, int32_t uniqueId)](#setleveluniqueid) | 设置弹窗显示层级页面下的节点id。 |
 | [int32_t (*setImmersiveMode)(ArkUI_NativeDialogHandle handle, ArkUI_ImmersiveMode immersiveMode)](#setimmersivemode) | 设置嵌入式弹窗蒙层的显示区域。 |
@@ -48,7 +48,7 @@ int32_t (*setKeyboardAvoidDistance)(ArkUI_NativeDialogHandle handle, float dista
 ```
  描述：
 
-弹窗避让键盘后，和键盘之间距离。
+设置弹窗避让键盘后，和键盘之间距离。
 
 ![](./img/note_3.0-zh-cn.png) setKeyboardAvoidDistance方法需要在调用[show](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativedialogapi-1#show)方法之前调用。
 
@@ -59,14 +59,14 @@ int32_t (*setKeyboardAvoidDistance)(ArkUI_NativeDialogHandle handle, float dista
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_NativeDialogHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativedialog8h) handle | 指向自定义弹窗控制器的指针。 |
-| float distance | 避让键盘的距离，单位为vp。 |
+| float distance | 弹窗与键盘之间保持的避让距离，单位由unit参数指定。 |
 | [ArkUI_LengthMetricUnit](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_lengthmetricunit) unit | 避让距离的单位，参数类型[ArkUI_LengthMetricUnit](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_lengthmetricunit)。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 接口初始化错误。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 接口初始化错误，请确保Native模块已正确初始化。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常，请检查参数是否有效。 |
 
 #### [h2]setLevelMode()
 
@@ -77,7 +77,7 @@ int32_t (*setLevelMode)(ArkUI_NativeDialogHandle handle, ArkUI_LevelMode levelMo
 
 设置弹窗的显示层级。
 
-![](./img/note_3.0-zh-cn.png) setLevelMode方法需要在调用[show](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativedialogapi-1#show)方法之前调用。
+![](./img/note_3.0-zh-cn.png) setLevelMode方法需要在调用[show](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativedialogapi-1#show)方法之前调用；若需配合[setLevelUniqueId](#setleveluniqueid)使用，则需要在调用setLevelUniqueId方法之后调用。
 
 起始版本： 15
 
@@ -86,13 +86,13 @@ int32_t (*setLevelMode)(ArkUI_NativeDialogHandle handle, ArkUI_LevelMode levelMo
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_NativeDialogHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativedialog8h) handle | 指向自定义弹窗控制器的指针。 |
-| [ArkUI_LevelMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-dialog-h#arkui_levelmode) levelMode | 显示层级的枚举值， 类型为[ArkUI_LevelMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-dialog-h#arkui_levelmode)。 |
+| [ArkUI_LevelMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-dialog-h#arkui_levelmode) levelMode | 显示层级的枚举值，类型为[ArkUI_LevelMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-dialog-h#arkui_levelmode)。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常，请检查参数是否有效。 |
 
 #### [h2]setLevelUniqueId()
 
@@ -103,7 +103,7 @@ int32_t (*setLevelUniqueId)(ArkUI_NativeDialogHandle handle, int32_t uniqueId)
 
 设置弹窗显示层级页面下的节点id。
 
-![](./img/note_3.0-zh-cn.png) setLevelUniqueId方法需要在调用[setLevelMode](#setlevelmode)方法之前调用。
+![](./img/note_3.0-zh-cn.png) setLevelUniqueId方法需要在调用[setLevelMode](#setlevelmode)方法之前调用，且需要在调用[show](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativedialogapi-1#show)方法之前调用。
 
 起始版本： 15
 
@@ -112,13 +112,13 @@ int32_t (*setLevelUniqueId)(ArkUI_NativeDialogHandle handle, int32_t uniqueId)
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_NativeDialogHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativedialog8h) handle | 指向自定义弹窗控制器的指针。 |
-| int32_t uniqueId | 指定节点id，会查找该节点所在页面，并将弹窗显示在该页面下。 |
+| int32_t uniqueId | 指定节点ID，会查找该节点所在页面，并将弹窗显示在该页面下。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常，请检查参数是否有效。 |
 
 #### [h2]setImmersiveMode()
 
@@ -138,10 +138,10 @@ int32_t (*setImmersiveMode)(ArkUI_NativeDialogHandle handle, ArkUI_ImmersiveMode
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_NativeDialogHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativedialog8h) handle | 指向自定义弹窗控制器的指针。 |
-| [ArkUI_ImmersiveMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-dialog-h#arkui_immersivemode) immersiveMode | 显示区域类型的枚举值， 类型为[ArkUI_ImmersiveMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-dialog-h#arkui_immersivemode)。 |
+| [ArkUI_ImmersiveMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-dialog-h#arkui_immersivemode) immersiveMode | 显示区域类型的枚举值，类型为[ArkUI_ImmersiveMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-dialog-h#arkui_immersivemode)。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常，请检查参数是否有效。 |

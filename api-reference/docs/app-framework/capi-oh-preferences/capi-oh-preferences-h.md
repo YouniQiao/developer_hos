@@ -2,8 +2,8 @@
 title: "oh_preferences.h"
 upstream_id: "harmonyos-references/capi-oh-preferences-h"
 catalog: "harmonyos-references"
-content_hash: "b16ac0d12d87"
-synced_at: "2026-07-09T00:57:18.390380"
+content_hash: "80ddac2d7e79"
+synced_at: "2026-07-28T16:40:50.829353"
 ---
 
 # oh_preferences.h
@@ -76,8 +76,8 @@ typedef void (*OH_PreferencesDataObserver)(void *context, const OH_PreferencesPa
 | 参数项 | 描述 |
 | --- | --- |
 | void *context | 应用上下文的指针。 |
-| const [OH_PreferencesPair](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-preferences-oh-preferencespair) *pairs | 发生变更的KV数据的指针。 |
-| uint32_t count | 发生变更的KV数据的数量。 |
+| const [OH_PreferencesPair](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-preferences-oh-preferencespair) *pairs | 发生变更的键值对（KV）数据的指针。 |
+| uint32_t count | 发生变更的键值对（KV）数据的数量。 |
 
 #### [h2]OH_Preferences_Open()
 
@@ -176,7 +176,7 @@ int OH_Preferences_GetBool(OH_Preferences *preference, const char *key, bool *va
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。 若错误码为PREFERENCES_OK，表示操作成功。 若错误码为PREFERENCES_ERROR_INVALID_PARAM，表示参数不合法。 若错误码为PREFERENCES_ERROR_STORAGE，表示存储异常。 若错误码为PREFERENCES_ERROR_MALLOC，表示内存分配失败。 若错误码为PREFERENCES_ERROR_KEY_NOT_FOUND，表示查询的key不存在。 |
+| int | 返回执行的错误码。 若错误码为PREFERENCES_OK，表示操作成功。 若错误码为PREFERENCES_ERROR_INVALID_PARAM，表示参数不合法。 若错误码为PREFERENCES_ERROR_STORAGE，表示存储异常。 若错误码为PREFERENCES_ERROR_MALLOC，表示内存分配失败。 若错误码为PREFERENCES_ERROR_KEY_NOT_FOUND，表示查询的Key不存在。 |
 
 #### [h2]OH_Preferences_GetString()
 
@@ -339,7 +339,7 @@ int OH_Preferences_RegisterDataObserver(OH_Preferences *preference, void *contex
 | void *context | 应用上下文的指针。 |
 | [OH_PreferencesDataObserver](#oh_preferencesdataobserver) observer | 订阅数据变更关联的回调函数[OH_PreferencesDataObserver](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-preferences-h#oh_preferencesdataobserver)。 |
 | const char *keys[] | 需要订阅的Key数组。 |
-| uint32_t keyCount | 需要订阅的Key的数量。 |
+| uint32_t keyCount | 需要订阅的Key的数量。取值范围大于等于1，必须与keys数组的实际长度一致。 |
 
 返回：
 
@@ -366,7 +366,7 @@ int OH_Preferences_UnregisterDataObserver(OH_Preferences *preference, void *cont
 | void *context | 应用上下文的指针。 |
 | [OH_PreferencesDataObserver](#oh_preferencesdataobserver) observer | 订阅数据变更关联的回调函数[OH_PreferencesDataObserver](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-preferences-h#oh_preferencesdataobserver)。 |
 | const char *keys[] | 需要取消订阅的Key数组。 |
-| uint32_t keyCount | 需要取消订阅的Key的数量。 |
+| uint32_t keyCount | 需要取消订阅的Key的数量。取值范围大于等于1，必须与keys数组的实际长度一致。 |
 
 返回：
 

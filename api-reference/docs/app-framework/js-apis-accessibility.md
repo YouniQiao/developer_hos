@@ -2,17 +2,17 @@
 title: "@ohos.accessibility (辅助功能)"
 upstream_id: "harmonyos-references/js-apis-accessibility"
 catalog: "harmonyos-references"
-content_hash: "c8a9458a7650"
-synced_at: "2026-07-09T00:57:15.422431"
+content_hash: "c412cb1c6b67"
+synced_at: "2026-07-28T16:40:48.224197"
 ---
 
 # @ohos.accessibility (辅助功能)
 
-本模块提供辅助应用查询能力，包括获取辅助应用列表、获取辅助应用启用状态、获取无障碍字幕配置等。
+本模块提供辅助功能相关能力，包括获取辅助应用列表、获取辅助应用启用状态、获取无障碍字幕配置、发送无障碍事件、监听辅助应用状态变化等。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 本模块首批接口从 API version 7 开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
+- 本模块首批接口从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
 #### 导入模块
 
@@ -30,13 +30,13 @@ type AbilityState = 'enable' | 'disable' | 'install'
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 | 类型 | 说明 |
 | --- | --- |
 | 'enable' | 表示辅助应用已启用。 |
-| 'disable' | 辅助应用已禁用。 |
-| 'install' | 辅助应用已安装。 |
+| 'disable' | 表示辅助应用已禁用。 |
+| 'install' | 表示辅助应用已安装。 |
 
 #### AbilityType
 
@@ -48,7 +48,7 @@ type AbilityType = 'audible' | 'generic' | 'haptic' | 'spoken' | 'visual' | 'all
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 | 类型 | 说明 |
 | --- | --- |
@@ -67,14 +67,14 @@ type AbilityType = 'audible' | 'generic' | 'haptic' | 'spoken' | 'visual' | 'all
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 #### [h2]属性
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | id | string | 是 | 否 | ability id。 |
-| name | string | 是 | 否 | ability 名。 |
+| name | string | 是 | 否 | ability名。 |
 | bundleName | string | 是 | 否 | Bundle名称。 |
 | targetBundleNames9+ | Array | 是 | 否 | 关注的目标Bundle名称。 |
 | abilityTypes | Array | 是 | 否 | 辅助应用类型。 |
@@ -82,7 +82,7 @@ type AbilityType = 'audible' | 'generic' | 'haptic' | 'spoken' | 'visual' | 'all
 | description | string | 是 | 否 | 辅助应用描述。 |
 | eventTypes | Array | 是 | 否 | 辅助应用关注的无障碍事件列表。 |
 | needHide12+ | boolean | 是 | 否 | 辅助应用是否在已安装的扩展服务列表中被隐藏，true表示隐藏服务，false表示显示服务。 |
-| label12+ | string | 是 | 否 | 扩展应用在扩展服务列表中的名称。 |
+| label12+ | string | 是 | 否 | 辅助应用在扩展服务列表中的名称。 |
 
 #### Action
 
@@ -92,42 +92,43 @@ type Action = 'accessibilityFocus' | 'clearAccessibilityFocus' | 'focus' | 'clea
 
 'scrollForward' | 'scrollBackward' | 'setSelection' | 'setCursorPosition' | 'home' |
 
-'back' | 'recentTask' | 'notificationCenter' | 'controlCenter' | 'common' | 'injectAction'
+'back' | 'recentTask' | 'notificationCenter' | 'controlCenter' | 'common' | 'injectAction' | 'executeCustomAction'
 
-应用所支持的目标动作，需要配置参数的目标动作已在描述中标明。
+应用所支持的目标动作，需要配置参数的目标动作已在下表各动作的说明列中标明。
 
 卡片能力： 从API version 23开始，该接口支持在ArkTS卡片中使用。
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 | 类型 | 说明 |
 | --- | --- |
 | 'click' | 表示点击操作。 |
 | 'longClick' | 表示长按操作。 |
-| 'scrollForward' | 表示向前滚动操作。 |
-| 'scrollBackward' | 表示向后滚动操作。 |
+| 'scrollForward' | 表示向前滚动操作，需配置参数scrollType，参数值为'fullScreen'或'halfScreen'。 |
+| 'scrollBackward' | 表示向后滚动操作，需配置参数scrollType，参数值为'fullScreen'或'halfScreen'。 |
 | 'focus' | 表示获得焦点操作。 |
 | 'clearFocus' | 表示清除焦点操作。 |
 | 'clearSelection' | 表示清除选择操作。当前版本暂不支持。 |
-| 'accessibilityFocus' | 表示获得无障碍焦点操作。 |
+| 'accessibilityFocus' | 表示获得无障碍焦点操作，需配置参数accessibilityFocusScene，参数值为无障碍聚焦的场景类型。 |
 | 'clearAccessibilityFocus' | 表示清除无障碍焦点操作。 |
 | 'cut' | 表示剪切操作。 |
 | 'copy' | 表示复制操作。 |
 | 'paste' | 表示粘贴操作。 |
 | 'select' | 表示选择操作。 |
-| 'setText' | 表示设置文本操作，需配置参数setText。 |
+| 'setText' | 表示设置文本操作，需配置参数setText，参数值为要设置的文本内容。 |
 | 'delete' | 表示删除操作。当前版本暂不支持。 |
-| 'setSelection' | 表示选择操作，需配置参数selectTextBegin、selectTextEnd、selectTextInForWard。 |
+| 'setSelection' | 表示设置文本选择范围操作，需配置参数selectTextBegin、selectTextEnd、selectTextInForWard，参数值为选定文本的起始坐标、结束坐标及是否向前选择。 |
 | 'common'12+ | 表示没有特定操作，用于主动聚焦、主动播报等场景。 |
 | 'home'12+ | 表示返回桌面操作。 |
 | 'back'12+ | 表示返回上一级操作。 |
 | 'recentTask'12+ | 表示打开最近任务操作。 |
 | 'notificationCenter'12+ | 表示打开通知栏操作。 |
 | 'controlCenter'12+ | 表示打开控制中心操作。 |
-| 'setCursorPosition'12+ | 表示设置光标位置操作，需配置参数offset。 |
-| 'injectAction' | 表示注入动作，需配置参数injectActionType。 **起始版本：** 26.0.0 **模型约束**：此接口仅可在Stage模型下使用。 |
+| 'setCursorPosition'12+ | 表示设置光标位置操作，需配置参数offset，参数值为光标的字符偏移量。 |
+| 'injectAction' | 表示注入动作，需配置参数injectActionType，参数值为注入动作类型。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| 'executeCustomAction' | 表示执行自定义操作，需配置参数customAction，参数值为自定义操作的名称。 **起始版本：** 26.0.0 |
 
 #### Capability
 
@@ -139,12 +140,12 @@ type Capability = 'retrieve' | 'touchGuide' | 'keyEventObserver' | 'zoom' | 'ges
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 | 类型 | 说明 |
 | --- | --- |
 | 'retrieve' | 具有检索窗口内容的能力。 |
-| 'touchGuide' | 具有触摸探索模式的能力。 |
+| 'touchGuide' | 具有触摸浏览模式的能力。 |
 | 'keyEventObserver' | 具有过滤按键事件的能力。 |
 | 'zoom' | 具有控制显示放大的能力，当前版本暂不支持。 |
 | 'gesture' | 具有执行手势动作的能力。 |
@@ -159,7 +160,7 @@ type CaptionsFontEdgeType = 'none' | 'raised' | 'depressed' | 'uniform' | 'dropS
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Hearing
+系统能力： SystemCapability.BarrierFree.Accessibility.Hearing
 
 | 类型 | 说明 |
 | --- | --- |
@@ -181,15 +182,15 @@ type CaptionsFontFamily = 'default' | 'monospacedSerif' | 'serif' | 'monospacedS
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Hearing
+系统能力： SystemCapability.BarrierFree.Accessibility.Hearing
 
 | 类型 | 说明 |
 | --- | --- |
 | 'default' | 表示默认字体。 |
-| 'monospacedSerif' | 表示等宽 Serif 字体。 |
-| 'serif' | 表示Serif 字体。 |
-| 'monospacedSansSerif' | 表示等宽 Sans Serif 字体。 |
-| 'sansSerif' | 表示Sans Serif 字体。 |
+| 'monospacedSerif' | 表示等宽Serif字体。 |
+| 'serif' | 表示Serif字体。 |
+| 'monospacedSansSerif' | 表示等宽Sans Serif字体。 |
+| 'sansSerif' | 表示Sans Serif字体。 |
 | 'casual' | 表示非正式字体。 |
 | 'cursive' | 表示手写字体。 |
 | 'smallCapitals' | 表示小型大写字母字体。 |
@@ -202,26 +203,26 @@ type CaptionsFontFamily = 'default' | 'monospacedSerif' | 'serif' | 'monospacedS
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Hearing
+系统能力： SystemCapability.BarrierFree.Accessibility.Hearing
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | fontFamily | [CaptionsFontFamily](#captionsfontfamily8) | 否 | 否 | 描述字幕字体。 |
 | fontScale | number | 否 | 否 | 描述字幕字体缩放系数，单位%，参数范围1~200。 |
-| fontColor | number | string | 否 | 否 | 描述字幕字体颜色。 number：HEX 格式颜色，支持 rgb 或 argb。 string：支持 '#rrggbb', '#rrggbbaa', '#rgb', '#rgba' 格式。 例：不透明红色，number: 0xffff0000，string: '#ff0000', '#ff0000ff', '#f00', '#f00f'。 |
+| fontColor | number | string | 否 | 否 | 描述字幕字体颜色。 number：HEX格式颜色，支持rgb或argb。 string：支持 '#rrggbb', '#rrggbbaa', '#rgb', '#rgba' 格式。 例：不透明红色，number：0xffff0000，string：'#ff0000', '#ff0000ff', '#f00', '#f00f'。 |
 | fontEdgeType | [CaptionsFontEdgeType](#captionsfontedgetype8) | 否 | 否 | 描述字幕字体边缘。 |
-| backgroundColor | number | string | 否 | 否 | 描述字幕背景颜色。 number：HEX 格式颜色，支持 rgb 或 argb。 string：支持 '#rrggbb', '#rrggbbaa', '#rgb', '#rgba' 格式。 例：不透明红色，number: 0xffff0000，string: '#ff0000', '#ff0000ff', '#f00', '#f00f'。 |
-| windowColor | number | string | 否 | 否 | 描述字幕窗口颜色。 number：HEX 格式颜色，支持 rgb 或 argb。 string：支持 '#rrggbb', '#rrggbbaa', '#rgb', '#rgba' 格式。 例：不透明红色，number: 0xffff0000，string: '#ff0000', '#ff0000ff', '#f00', '#f00f'。 |
+| backgroundColor | number | string | 否 | 否 | 描述字幕背景颜色。 number：HEX格式颜色，支持rgb或argb。 string：支持 '#rrggbb', '#rrggbbaa', '#rgb', '#rgba' 格式。 例：不透明红色，number：0xffff0000，string：'#ff0000', '#ff0000ff', '#f00', '#f00f'。 |
+| windowColor | number | string | 否 | 否 | 描述字幕窗口颜色。 number：HEX格式颜色，支持rgb或argb。 string：支持 '#rrggbb', '#rrggbbaa', '#rgb', '#rgba' 格式。 例：不透明红色，number：0xffff0000，string：'#ff0000', '#ff0000ff', '#f00', '#f00f'。 |
 
 #### CaptionsManager8+
 
-字幕配置管理，在调用CaptionsManager的方法前，需要先通过 [accessibility.getCaptionsManager()](#accessibilitygetcaptionsmanagerdeprecated)获取 CaptionsManager实例。
+字幕配置管理。调用CaptionsManager的方法前，先调用[accessibility.getCaptionsManager()](#accessibilitygetcaptionsmanagerdeprecated)获取CaptionsManager实例。
 
 卡片能力： 从API version 23开始，该接口支持在ArkTS卡片中使用。
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Hearing
+系统能力： SystemCapability.BarrierFree.Accessibility.Hearing
 
 #### [h2]属性
 
@@ -239,17 +240,17 @@ on(type: 'enableChange', callback: Callback<boolean>): void
 ![](./img/note_3.0-zh-cn.png)
 
 - 注册监听的callback参数应使用具名函数而非匿名函数，否则每次调用时会创建一个新的底层对象，引起内存泄漏问题。
-- 调用此方法后，务必在对象生命周期结束前使用[off('enableChange')](#offenablechangedeprecated)取消监听，否则可能会导致崩溃。
-- 从API version 8开始支持，从API version 12开始废弃。系统不再开放相关功能。
+- 调用此方法后，务必在组件实例销毁前（如aboutToDisappear生命周期中）使用[off('enableChange')](#offenablechangedeprecated)取消监听，否则可能会导致崩溃。
+- 从API version 8开始支持，从API version 12开始废弃。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Hearing
+系统能力： SystemCapability.BarrierFree.Accessibility.Hearing
 
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 监听的事件名，固定为‘enableChange’，即字幕配置启用状态变化事件。 |
-| callback | Callback | 是 | 回调函数，在启用状态变化时将状态通过此函数进行通知。返回true表示字幕配置开启，返回false表示字幕配置关闭。 |
+| callback | Callback | 是 | 回调函数。在启用状态变化时将状态通过此函数进行通知。返回true表示字幕配置开启；返回false表示字幕配置关闭。 |
 
 错误码：
 
@@ -293,10 +294,10 @@ on(type: 'styleChange', callback: Callback<CaptionsStyle>): void
 ![](./img/note_3.0-zh-cn.png)
 
 - 注册监听的callback参数应使用具名函数而非匿名函数，否则每次调用时会创建一个新的底层对象，引起内存泄漏问题。
-- 调用此方法后，务必在对象生命周期结束前使用[off('styleChange')](#offstylechangedeprecated)取消监听，否则可能会导致崩溃。
-- 从API version 8开始支持，从API version 12开始废弃。系统不再开放相关功能。
+- 调用此方法后，务必在组件实例销毁前（如aboutToDisappear生命周期中）使用[off('styleChange')](#offstylechangedeprecated)取消监听，否则可能会导致崩溃。
+- 从API version 8开始支持，从API version 12开始废弃。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Hearing
+系统能力： SystemCapability.BarrierFree.Accessibility.Hearing
 
 参数：
 
@@ -344,9 +345,9 @@ off(type: 'enableChange', callback?: Callback<boolean>): void
 
 取消监听字幕配置启用状态变化事件。使用callback异步回调。
 
-![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 12开始废弃。系统不再开放相关功能。
+![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 12开始废弃。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Hearing
+系统能力： SystemCapability.BarrierFree.Accessibility.Hearing
 
 参数：
 
@@ -397,11 +398,11 @@ struct Index {
 
 off(type: 'styleChange', callback?: Callback<CaptionsStyle>): void
 
-取消字幕风格变化监听事件。使用callback异步回调。
+取消监听字幕风格变化事件。使用callback异步回调。
 
-![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 12开始废弃。系统不再开放相关功能。
+![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 12开始废弃。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Hearing
+系统能力： SystemCapability.BarrierFree.Accessibility.Hearing
 
 参数：
 
@@ -450,13 +451,13 @@ struct Index {
 
 #### EventInfo
 
-界面变更事件。
+无障碍事件信息，用于描述界面变更或交互事件，作为[sendAccessibilityEvent](#accessibilitysendaccessibilityevent9)的参数定义事件的类型和触发动作。发送的无障碍事件将被系统分发到已注册且匹配事件类型的辅助应用进行响应，详见[sendAccessibilityEvent](#accessibilitysendaccessibilityevent9)。
 
 卡片能力： 从API version 23开始，该接口支持在ArkTS卡片中使用。
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 #### [h2]属性
 
@@ -464,10 +465,10 @@ struct Index {
 | --- | --- | --- | --- | --- |
 | type | [EventType](#eventtype) | 否 | 否 | 无障碍事件类型，不可缺省。 |
 | windowUpdateType | [WindowUpdateType](#windowupdatetype) | 否 | 是 | 窗口变化类型。 |
-| bundleName | string | 否 | 否 | 目标应用名；不可缺省。 |
+| bundleName | string | 否 | 否 | 目标应用的Bundle名称；不可缺省。 |
 | componentType | string | 否 | 是 | 应与事件源组件类型对应，默认值为空。 例如： - 按钮Button类型->'Button'。 - 图片Image类型->'Image'。 |
 | pageId | number | 否 | 是 | 事件源的页面ID，默认值为0。 |
-| description | string | 否 | 是 | 事件描述，根据实际场景设置，无特殊限制，默认值为空。 |
+| description | string | 否 | 是 | 事件描述，由开发者根据业务需要自定义描述内容，无特殊限制，默认值为空。 |
 | triggerAction | [Action](#action) | 否 | 否 | 触发事件的Action，不可缺省。 |
 | textMoveUnit | [TextMoveUnit](#textmoveunit) | 否 | 是 | 文本移动粒度，默认值为char。 |
 | contents | Array | 否 | 是 | 内容列表，根据实际场景设置，无特殊限制，默认值为空。 |
@@ -478,8 +479,8 @@ struct Index {
 | itemCount | number | 否 | 是 | 条目总数，默认值为0。 |
 | elementId12+ | number | 否 | 是 | 组件elementId，默认值为0。 |
 | textAnnouncedForAccessibility12+ | string | 否 | 是 | 主动播报的内容。当应用需要主动播报时，根据实际场景设置播报内容，无特殊限制，默认值为空。 |
-| textResourceAnnouncedForAccessibility18+ | Resource | 否 | 是 | 主动播报的内容支持传入Resource类型，且只能传入string。 |
-| customId12+ | string | 否 | 是 | 主动聚焦的组件ID，默认值为空。 |
+| textResourceAnnouncedForAccessibility18+ | Resource | 否 | 是 | 主动播报的内容支持传入Resource类型，且Resource只能引用string类型资源（如$r('app.string.xxx')）。 |
+| customId12+ | string | 否 | 是 | 主动聚焦的组件ID，当应用需要主动聚焦时根据实际场景设置，默认值为空。 |
 
 #### [h2]constructor
 
@@ -491,20 +492,20 @@ constructor(jsonObject: Object)
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| jsonObject | Object | 是 | 包含 type、bundleName 和 triggerAction 三个字段的 JSON对象，详见示例。 |
+| jsonObject | Object | 是 | 包含type、bundleName和triggerAction三个字段的JSON对象，详见示例。 |
 
 示例：
 
 ```
 import { accessibility } from '@kit.AccessibilityKit';
 
-let eventInfo: accessibility.EventInfo = ({
+let eventInfo = new accessibility.EventInfo({
   type: 'click',
   bundleName: 'com.example.MyApplication',
   triggerAction: 'click',
@@ -521,21 +522,22 @@ constructor(type: EventType, bundleName: string, triggerAction: Action)
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | [EventType](#eventtype) | 是 | 无障碍事件类型。 |
-| bundleName | string | 是 | 目标应用名。 |
-| triggerAction | [Action](#action) | 是 | 触发事件的 Action。 |
+| bundleName | string | 是 | 目标应用的Bundle名称。 |
+| triggerAction | [Action](#action) | 是 | 触发事件的Action。 |
 
 示例：
 
 ```
 import { accessibility } from '@kit.AccessibilityKit';
 
+// 参数依次为：type、bundleName、triggerAction。
 let eventInfo = new accessibility.EventInfo('click', 'com.example.MyApplication', 'click');
 ```
 
@@ -549,7 +551,7 @@ type EventType = 'accessibilityFocus' | 'accessibilityFocusClear' |
 
 'announceForAccessibility' | 'requestFocusForAccessibilityNotInterrupt' |
 
-'announceForAccessibilityNotInterrupt' | 'scrolling' | 'pageActive' | 'notificationUpdate'
+'announceForAccessibilityNotInterrupt' | 'scrolling' | 'pageActive' | 'notificationUpdate' | 'focusInvisible'
 
 无障碍事件类型。
 
@@ -557,7 +559,7 @@ type EventType = 'accessibilityFocus' | 'accessibilityFocusClear' |
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 | 类型 | 说明 |
 | --- | --- |
@@ -579,6 +581,7 @@ type EventType = 'accessibilityFocus' | 'accessibilityFocusClear' |
 | 'scrolling'18+ | 表示滚动视图中有item被滚出屏幕的事件。 |
 | 'pageActive'23+ | 表示页面变化的事件，值固定为'pageActive'字符串。 |
 | 'notificationUpdate' | 表示通知变化的事件，值固定为'notificationUpdate'字符串。 **起始版本：** 26.0.0 |
+| 'focusInvisible' | 表示焦点变为不可见状态，值固定为'focusInvisible'字符串。 **起始版本：** 26.0.0 |
 
 #### TextMoveUnit
 
@@ -590,7 +593,7 @@ type TextMoveUnit = 'char' | 'word' | 'line' | 'page' | 'paragraph'
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 | 类型 | 说明 |
 | --- | --- |
@@ -610,7 +613,7 @@ type WindowUpdateType = 'add' | 'remove' | 'bounds' | 'active' | 'focus'
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 | 类型 | 说明 |
 | --- | --- |
@@ -628,7 +631,7 @@ getAbilityLists(abilityType: AbilityType, stateType: AbilityState): Promise<Arra
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，建议使用[accessibility.getAccessibilityExtensionList](#accessibilitygetaccessibilityextensionlist9)替代。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 参数：
 
@@ -655,7 +658,7 @@ let abilityState: accessibility.AbilityState = 'enable';
 accessibility.getAbilityLists(abilityType, abilityState).then((data: accessibility.AccessibilityAbilityInfo[]) => {
   console.info(`succeeded in getting accessibility extension list, ${JSON.stringify(data)}`);
 }).catch((err: BusinessError) => {
-  console.error(`failed to get accessibility extension list, Code is ${err.code}, message is ${err.message}`);
+  console.error(`Failed to get accessibility extension list. Code: ${err.code}, message: ${err.message}`);
 });
 ```
 
@@ -667,7 +670,7 @@ getAbilityLists(abilityType: AbilityType, stateType: AbilityState,callback: Asyn
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，建议使用[accessibility.getAccessibilityExtensionList](#accessibilitygetaccessibilityextensionlist9-1)替代。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 参数：
 
@@ -675,7 +678,7 @@ getAbilityLists(abilityType: AbilityType, stateType: AbilityState,callback: Asyn
 | --- | --- | --- | --- |
 | abilityType | [AbilityType](#abilitytype) | 是 | 辅助应用的类型。 |
 | stateType | [AbilityState](#abilitystate) | 是 | 辅助应用的状态。 |
-| callback | AsyncCallback> | 是 | 回调函数，返回辅助应用信息列表。若返回成功，err为undefined，data为辅助应用信息列表；否则为错误对象。 |
+| callback | AsyncCallback> | 是 | 回调函数。当查询辅助应用列表成功，err为undefined，data为辅助应用信息列表；否则为错误对象。 |
 
 示例：
 
@@ -688,11 +691,11 @@ let abilityState: accessibility.AbilityState = 'enable';
 
 accessibility.getAbilityLists(abilityType, abilityState, (err: BusinessError, data: accessibility.AccessibilityAbilityInfo[]) => {
   if (err) {
-    console.error(`failed to get accessibility extension list, Code is ${err.code}, message is ${err.message}`);
+    console.error(`Failed to get accessibility extension list. Code: ${err.code}, message: ${err.message}`);
     return;
   }
   console.info(`succeeded in getting accessibility extension list, ${JSON.stringify(data)}`);
-})
+});
 ```
 
 #### accessibility.getAccessibilityExtensionList9+
@@ -705,7 +708,7 @@ getAccessibilityExtensionList(abilityType: AbilityType, stateType: AbilityState)
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 参数：
 
@@ -752,7 +755,7 @@ let abilityState: accessibility.AbilityState = 'install'; // 辅助应用状态�
 accessibility.getAccessibilityExtensionList(abilityType, abilityState).then((data: accessibility.AccessibilityAbilityInfo[]) => {
   console.info(`succeeded in getting accessibility extension list, ${JSON.stringify(data)}`);
 }).catch((err: BusinessError) => {
-  console.error(`failed to get accessibility extension list, Code is ${err.code}, message is ${err.message}`);
+  console.error(`Failed to get accessibility extension list. Code: ${err.code}, message: ${err.message}`);
 });
 
 // 例如：系统内安装一个包名为com.example.myaccessibilityapp的辅助应用。
@@ -777,7 +780,7 @@ let abilityState: accessibility.AbilityState = 'enable'; // 辅助应用状态�
 accessibility.getAccessibilityExtensionList(abilityType, abilityState).then((data: accessibility.AccessibilityAbilityInfo[]) => {
   console.info(`succeeded in getting accessibility extension list, ${JSON.stringify(data)}`);
 }).catch((err: BusinessError) => {
-  console.error(`failed to get accessibility extension list, Code is ${err.code}, message is ${err.message}`);
+  console.error(`Failed to get accessibility extension list. Code: ${err.code}, message: ${err.message}`);
 });
 ```
 
@@ -791,7 +794,7 @@ getAccessibilityExtensionList(abilityType: AbilityType, stateType: AbilityState,
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 参数：
 
@@ -799,7 +802,7 @@ getAccessibilityExtensionList(abilityType: AbilityType, stateType: AbilityState,
 | --- | --- | --- | --- |
 | abilityType | [AbilityType](#abilitytype) | 是 | 辅助应用的类型。 |
 | stateType | [AbilityState](#abilitystate) | 是 | 辅助应用的状态。 |
-| callback | AsyncCallback> | 是 | 回调函数，返回辅助应用信息列表。若返回成功，err为undefined，data为辅助应用信息列表；否则为错误对象。 |
+| callback | AsyncCallback> | 是 | 回调函数。当查询辅助应用列表成功，err为undefined，data为辅助应用信息列表；否则为错误对象。 |
 
 错误码：
 
@@ -830,9 +833,9 @@ import { BusinessError } from '@kit.BasicServicesKit';
 let abilityType: accessibility.AbilityType = 'all'; // 辅助应用类型为所有类型。
 let abilityState: accessibility.AbilityState = 'install'; // 辅助应用状态为已安装。
 
-accessibility.getAccessibilityExtensionList(abilityType, abilityState,(err: BusinessError, data: accessibility.AccessibilityAbilityInfo[]) => {
+accessibility.getAccessibilityExtensionList(abilityType, abilityState, (err: BusinessError, data: accessibility.AccessibilityAbilityInfo[]) => {
   if (err) {
-    console.error(`failed to get accessibility extension list, Code is ${err.code}, message is ${err.message}`);
+    console.error(`Failed to get accessibility extension list. Code: ${err.code}, message: ${err.message}`);
     return;
   }
   console.info(`succeeded in getting accessibility extension list, ${JSON.stringify(data)}`);
@@ -857,9 +860,9 @@ import { BusinessError } from '@kit.BasicServicesKit';
 let abilityType: accessibility.AbilityType = 'spoken'; // 辅助应用类型为具有语音反馈类型。
 let abilityState: accessibility.AbilityState = 'enable'; // 辅助应用状态为已启用。
 
-accessibility.getAccessibilityExtensionList(abilityType, abilityState,(err: BusinessError, data: accessibility.AccessibilityAbilityInfo[]) => {
+accessibility.getAccessibilityExtensionList(abilityType, abilityState, (err: BusinessError, data: accessibility.AccessibilityAbilityInfo[]) => {
   if (err) {
-    console.error(`failed to get accessibility extension list, Code is ${err.code}, message is ${err.message}`);
+    console.error(`Failed to get accessibility extension list. Code: ${err.code}, message: ${err.message}`);
     return;
   }
   console.info(`succeeded in getting accessibility extension list, ${JSON.stringify(data)}`);
@@ -872,11 +875,13 @@ getAccessibilityExtensionListSync(abilityType: AbilityType, stateType: AbilitySt
 
 查询当前系统内辅助应用列表，支持按条件查询。
 
+本接口为同步版本，与[accessibility.getAccessibilityExtensionList](#accessibilitygetaccessibilityextensionlist9)（异步版本）功能相同，如需立即获取结果可使用本接口，如需在非阻塞场景下查询建议使用异步版本。
+
 卡片能力： 从API version 23开始，该接口支持在ArkTS卡片中使用。
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 参数：
 
@@ -918,7 +923,7 @@ try {
   console.info(`succeeded in getting accessibility extension list, ${JSON.stringify(data)}`);
 } catch (error) {
   let err = error as BusinessError;
-  console.error(`failed to get accessibility extension list, Code is ${err.code}, message is ${err.message}`);
+  console.error(`Failed to get accessibility extension list. Code: ${err.code}, message: ${err.message}`);
 }
 
 // 例如：系统内安装一个包名为com.example.myaccessibilityapp的辅助应用。
@@ -946,7 +951,7 @@ try {
   console.info(`succeeded in getting accessibility extension list, ${JSON.stringify(data)}`);
 } catch (error) {
   let err = error as BusinessError;
-  console.error(`failed to get accessibility extension list, Code is ${err.code}, message is ${err.message}`);
+  console.error(`Failed to get accessibility extension list. Code: ${err.code}, message: ${err.message}`);
 }
 ```
 
@@ -991,9 +996,9 @@ getCaptionsManager(): CaptionsManager
 
 获取无障碍字幕配置管理实例。
 
-![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 12开始废弃。系统不再开放相关功能。
+![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 12开始废弃。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Hearing
+系统能力： SystemCapability.BarrierFree.Accessibility.Hearing
 
 返回值：
 
@@ -1013,25 +1018,27 @@ let captionsManager = accessibility.getCaptionsManager();
 
 on(type: 'accessibilityStateChange', callback: Callback<boolean>): void
 
-监听辅助应用启用状态变化事件。使用callback异步回调。如需获取系统内辅助应用信息，推荐使用[accessibility.getAccessibilityExtensionListSync](#accessibilitygetaccessibilityextensionlistsync12)。
+监听辅助应用启用状态变化事件。使用callback异步回调。
+
+如需获取系统内辅助应用信息，推荐使用[accessibility.getAccessibilityExtensionListSync](#accessibilitygetaccessibilityextensionlistsync12)。
 
 ![](./img/note_3.0-zh-cn.png)
 
 - 注册监听的callback参数应使用具名函数而非匿名函数，否则每次调用时会创建一个新的底层对象，引起内存泄漏问题。
-- 调用此方法后，务必在对象生命周期结束前使用[accessibility.off('accessibilityStateChange')](#accessibilityoffaccessibilitystatechange)取消监听，否则可能会导致崩溃。
+- 调用此方法后，务必在组件实例销毁前（如aboutToDisappear生命周期中）使用[accessibility.off('accessibilityStateChange')](#accessibilityoffaccessibilitystatechange)取消监听，否则可能会导致崩溃。
 
 卡片能力： 从API version 23开始，该接口支持在ArkTS卡片中使用。
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 监听的事件名，固定为‘accessibilityStateChange’，即辅助应用启用状态变化事件。 |
-| callback | Callback | 是 | 回调函数，在辅助应用启用状态变化时将状态通过此函数进行通知。此状态为全局辅助应用启用状态。返回true表示已启用辅助应用，返回false表示已禁用辅助应用。 |
+| callback | Callback | 是 | 回调函数。在辅助应用启用状态变化时将状态通过此函数进行通知。此状态为全局辅助应用启用状态。返回true表示已启用辅助应用；返回false表示已禁用辅助应用。 |
 
 错误码：
 
@@ -1046,12 +1053,30 @@ on(type: 'accessibilityStateChange', callback: Callback<boolean>): void
 ```
 import { accessibility } from '@kit.AccessibilityKit';
 
-// 系统内已安装一个或多个辅助应用时:
+// 系统内已安装一个或多个辅助应用时：
 // 1. 启用辅助应用场景：第一个辅助应用启用后，回调函数会返回true。
 // 2. 禁用辅助应用场景：若一个或多个辅助应用已启用，最后一个已启用的辅助应用被禁用时，回调函数会返回false。
-accessibility.on('accessibilityStateChange', (data: boolean) => {
-  console.info(`subscribe accessibility state change, result: ${JSON.stringify(data)}`);
-});
+@Entry
+@Component
+struct Index {
+  callback: (data: boolean) => void = this.eventCallback;
+  eventCallback(data: boolean): void {
+    console.info(`subscribe accessibility state change, result: ${JSON.stringify(data)}`);
+  }
+
+  aboutToAppear(): void {
+    accessibility.on('accessibilityStateChange', this.callback);
+  }
+
+  aboutToDisappear(): void {
+    accessibility.off('accessibilityStateChange', this.callback);
+  }
+
+  build() {
+    Column() {
+    }
+  }
+}
 ```
  监听屏幕朗读是否开启示例：
 
@@ -1093,25 +1118,27 @@ accessibility.on('accessibilityStateChange', onAccessibilityStateChangeListener)
 
 on(type: 'touchGuideStateChange', callback: Callback<boolean>): void
 
-监听触摸浏览功能启用状态变化事件。使用callback异步回调。如需获取系统内辅助应用信息，推荐使用[accessibility.getAccessibilityExtensionListSync](#accessibilitygetaccessibilityextensionlistsync12)。
+监听触摸浏览功能启用状态变化事件。使用callback异步回调。
+
+如需获取系统内辅助应用信息，推荐使用[accessibility.getAccessibilityExtensionListSync](#accessibilitygetaccessibilityextensionlistsync12)。
 
 ![](./img/note_3.0-zh-cn.png)
 
 - 注册监听的callback参数应使用具名函数而非匿名函数，否则每次调用时会创建一个新的底层对象，引起内存泄漏问题。
-- 调用此方法后，务必在对象生命周期结束前使用[accessibility.off('touchGuideStateChange')](#accessibilityofftouchguidestatechange)取消监听，否则可能会导致崩溃。
+- 调用此方法后，务必在组件实例销毁前（如aboutToDisappear生命周期中）使用[accessibility.off('touchGuideStateChange')](#accessibilityofftouchguidestatechange)取消监听，否则可能会导致崩溃。
 
 卡片能力： 从API version 23开始，该接口支持在ArkTS卡片中使用。
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Vision
+系统能力： SystemCapability.BarrierFree.Accessibility.Vision
 
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 监听的事件名，固定为‘touchGuideStateChange’，即触摸浏览启用状态变化事件。 |
-| callback | Callback | 是 | 回调函数，在触摸浏览启用状态变化时将状态通过此函数进行通知。返回true表示触摸浏览功能已开启，返回false表示触摸浏览功能已关闭。 |
+| callback | Callback | 是 | 回调函数。在触摸浏览启用状态变化时将状态通过此函数进行通知。返回true表示触摸浏览功能已开启；返回false表示触摸浏览功能已关闭。 |
 
 错误码：
 
@@ -1129,34 +1156,52 @@ import { accessibility } from '@kit.AccessibilityKit';
 // 系统内已安装一个或多个具备触摸浏览能力的辅助应用（Capability配置中含有'touchGuide'的辅助应用）时：
 // 1. 启用触摸浏览辅助应用场景：第一个触摸浏览辅助应用启用后，回调函数会返回true。
 // 2. 禁用触摸浏览辅助应用场景：若一个或多个触摸浏览辅助应用已启用，最后一个已启用的触摸浏览辅助应用被禁用时，回调函数会返回false。
-accessibility.on('touchGuideStateChange', (data: boolean) => {
-  console.info(`subscribe touch guide state change, result: ${JSON.stringify(data)}`);
-});
+@Entry
+@Component
+struct Index {
+  callback: (data: boolean) => void = this.eventCallback;
+  eventCallback(data: boolean): void {
+    console.info(`subscribe touch guide state change, result: ${JSON.stringify(data)}`);
+  }
+
+  aboutToAppear(): void {
+    accessibility.on('touchGuideStateChange', this.callback);
+  }
+
+  aboutToDisappear(): void {
+    accessibility.off('touchGuideStateChange', this.callback);
+  }
+
+  build() {
+    Column() {
+    }
+  }
+}
 ```
 
 #### accessibility.on('screenReaderStateChange')18+
 
 on(type: 'screenReaderStateChange', callback: Callback<boolean>): void
 
-监听屏幕朗读功能启用状态变化事件。使用callback异步回调。
+监听屏幕朗读模式启用状态变化事件。使用callback异步回调。
 
 ![](./img/note_3.0-zh-cn.png)
 
 - 注册监听的callback参数应使用具名函数而非匿名函数，否则每次调用时会创建一个新的底层对象，引起内存泄漏问题。
-- 调用此方法后，务必在对象生命周期结束前使用[accessibility.off('screenReaderStateChange')](#accessibilityoffscreenreaderstatechange18)取消监听，否则可能会导致崩溃。
+- 调用此方法后，务必在组件实例销毁前（如aboutToDisappear生命周期中）使用[accessibility.off('screenReaderStateChange')](#accessibilityoffscreenreaderstatechange18)取消监听，否则可能会导致崩溃。
 
 卡片能力： 从API version 23开始，该接口支持在ArkTS卡片中使用。
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 监听的事件名，固定为‘screenReaderStateChange’，即屏幕朗读启用状态变化事件。 |
-| callback | Callback | 是 | 回调函数，在屏幕朗读启用状态变化时将状态通过此函数进行通知。返回true表示屏幕朗读功能已开启，返回false表示屏幕朗读功能已关闭。 |
+| callback | Callback | 是 | 回调函数。在屏幕朗读启用状态变化时将状态通过此函数进行通知。返回true表示屏幕朗读功能已开启；返回false表示屏幕朗读功能已关闭。 |
 
 错误码：
 
@@ -1171,9 +1216,27 @@ on(type: 'screenReaderStateChange', callback: Callback<boolean>): void
 ```
 import { accessibility } from '@kit.AccessibilityKit';
 
-accessibility.on('screenReaderStateChange', (data: boolean) => {
-  console.info(`subscribe screen reader state change, result: ${JSON.stringify(data)}`);
-});
+@Entry
+@Component
+struct Index {
+  callback: (data: boolean) => void = this.eventCallback;
+  eventCallback(data: boolean): void {
+    console.info(`subscribe screen reader state change, result: ${JSON.stringify(data)}`);
+  }
+
+  aboutToAppear(): void {
+    accessibility.on('screenReaderStateChange', this.callback);
+  }
+
+  aboutToDisappear(): void {
+    accessibility.off('screenReaderStateChange', this.callback);
+  }
+
+  build() {
+    Column() {
+    }
+  }
+}
 ```
 
 #### accessibility.on('touchModeChange')20+
@@ -1185,20 +1248,20 @@ on(type: 'touchModeChange', callback: Callback<string>): void
 ![](./img/note_3.0-zh-cn.png)
 
 - 注册监听的callback参数应使用具名函数而非匿名函数，否则每次调用时会创建一个新的底层对象，引起内存泄漏问题。
-- 调用此方法后，务必在对象生命周期结束前使用[accessibility.off('touchModeChange')](#accessibilityofftouchmodechange20)取消监听，否则可能会导致崩溃。
+- 调用此方法后，务必在组件实例销毁前（如aboutToDisappear生命周期中）使用[accessibility.off('touchModeChange')](#accessibilityofftouchmodechange20)取消监听，否则可能会导致崩溃。
 
 卡片能力： 从API version 23开始，该接口支持在ArkTS卡片中使用。
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 监听的事件名，固定为‘touchModeChange’，即触摸浏览功能下的单击/双击操作模式变化事件。 |
-| callback | Callback | 是 | 回调函数，在触摸浏览功能下的单击/双击操作模式变化时将状态通过此函数进行通知。 |
+| callback | Callback | 是 | 回调函数，在触摸浏览功能下的单击/双击操作模式变化时将操作模式通过此函数进行通知。返回'singleTouchMode'表示单击操作模式，'doubleTouchMode'表示双击操作模式，'none'表示未开启触摸浏览功能。 |
 
 错误码：
 
@@ -1225,6 +1288,10 @@ struct Index {
     accessibility.on('touchModeChange', this.callback);
   }
 
+  aboutToDisappear(): void {
+    accessibility.off('touchModeChange', this.callback);
+  }
+
   build() {
     Column() {
     }
@@ -1236,22 +1303,22 @@ struct Index {
 
 onAnimationReduceStateChange(callback: Callback<boolean>): void
 
-监听减弱动效功能启用状态变化事件。使用callback异步回调。
+监听减弱动效模式启用状态变化事件。使用callback异步回调。
 
 ![](./img/note_3.0-zh-cn.png)
 
 - 注册监听的callback参数应使用具名函数而非匿名函数，否则每次调用时会创建一个新的底层对象，引起内存泄漏问题。
-- 调用此方法后，务必在对象生命周期结束前使用[accessibility.offAnimationReduceStateChange](#accessibilityoffanimationreducestatechange23)取消监听，否则可能会导致崩溃。
+- 调用此方法后，务必在组件实例销毁前（如aboutToDisappear生命周期中）使用[accessibility.offAnimationReduceStateChange](#accessibilityoffanimationreducestatechange23)取消监听，否则可能会导致崩溃。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | Callback | 是 | 回调函数。返回true表示减弱动效模式已开启；返回false表示减弱动效模式已关闭。 |
+| callback | Callback | 是 | 回调函数。在减弱动效模式启用状态变化时将状态通过此函数进行通知。返回true表示减弱动效模式已开启；返回false表示减弱动效模式已关闭。 |
 
 示例：
 
@@ -1270,6 +1337,10 @@ struct Index {
     accessibility.onAnimationReduceStateChange(this.callback);
   }
 
+  aboutToDisappear(): void {
+    accessibility.offAnimationReduceStateChange(this.callback);
+  }
+
   build() {
     Column() {
     }
@@ -1281,22 +1352,22 @@ struct Index {
 
 onFlashReminderStateChange(callback: Callback<boolean>): void
 
-监听闪烁提醒功能启用状态变化事件。使用callback异步回调。
+监听闪烁提醒模式启用状态变化事件。使用callback异步回调。
 
 ![](./img/note_3.0-zh-cn.png)
 
 - 注册监听的callback参数应使用具名函数而非匿名函数，否则每次调用时会创建一个新的底层对象，引起内存泄漏问题。
-- 调用此方法后，务必在对象生命周期结束前使用[accessibility.offFlashReminderStateChange](#accessibilityoffflashreminderstatechange23)取消监听，否则可能会导致崩溃。
+- 调用此方法后，务必在组件实例销毁前（如aboutToDisappear生命周期中）使用[accessibility.offFlashReminderStateChange](#accessibilityoffflashreminderstatechange23)取消监听，否则可能会导致崩溃。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | Callback | 是 | 回调函数。返回true表示闪烁提醒模式已开启；返回false表示闪烁提醒模式已关闭。 |
+| callback | Callback | 是 | 回调函数。在闪烁提醒模式启用状态变化时将状态通过此函数进行通知。返回true表示闪烁提醒模式已开启；返回false表示闪烁提醒模式已关闭。 |
 
 示例：
 
@@ -1315,6 +1386,10 @@ struct Index {
     accessibility.onFlashReminderStateChange(this.callback);
   }
 
+  aboutToDisappear(): void {
+    accessibility.offFlashReminderStateChange(this.callback);
+  }
+
   build() {
     Column() {
     }
@@ -1326,22 +1401,22 @@ struct Index {
 
 onAudioMonoStateChange(callback: Callback<boolean>): void
 
-监听单声道音频功能启用状态变化事件。使用callback异步回调。
+监听单声道音频模式启用状态变化事件。使用callback异步回调。
 
 ![](./img/note_3.0-zh-cn.png)
 
 - 注册监听的callback参数应使用具名函数而非匿名函数，否则每次调用时会创建一个新的底层对象，引起内存泄漏问题。
-- 调用此方法后，务必在对象生命周期结束前使用[accessibility.offAudioMonoStateChange](#accessibilityoffaudiomonostatechange23)取消监听，否则可能会导致崩溃。
+- 调用此方法后，务必在组件实例销毁前（如aboutToDisappear生命周期中）使用[accessibility.offAudioMonoStateChange](#accessibilityoffaudiomonostatechange23)取消监听，否则可能会导致崩溃。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | Callback | 是 | 回调函数。返回true表示单声道音频模式已开启；返回false表示单声道音频模式已关闭。 |
+| callback | Callback | 是 | 回调函数。在单声道音频模式启用状态变化时将状态通过此函数进行通知。返回true表示单声道音频模式已开启；返回false表示单声道音频模式已关闭。 |
 
 示例：
 
@@ -1360,6 +1435,10 @@ struct Index {
     accessibility.onAudioMonoStateChange(this.callback);
   }
 
+  aboutToDisappear(): void {
+    accessibility.offAudioMonoStateChange(this.callback);
+  }
+
   build() {
     Column() {
     }
@@ -1371,24 +1450,24 @@ struct Index {
 
 onSeniorModeStateChange(callback: Callback<boolean>): void
 
-监听关怀模式启用状态变化事件。使用callback异步回调。
+监听系统关怀模式启用状态变化事件。使用callback异步回调。
 
 ![](./img/note_3.0-zh-cn.png)
 
 - 注册监听的callback参数应使用具名函数而非匿名函数，否则每次调用时会创建一个新的底层对象，引起内存泄漏问题。
-- 调用此方法后，务必在对象生命周期结束前使用[accessibility.offSeniorModeStateChange](#accessibilityoffseniormodestatechange)取消监听，否则可能会导致崩溃。
+- 调用此方法后，务必在组件实例销毁前（如aboutToDisappear生命周期中）使用[accessibility.offSeniorModeStateChange](#accessibilityoffseniormodestatechange)取消监听，否则可能会导致崩溃。
 
 起始版本： 26.0.0
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | Callback | 是 | 回调函数。返回true表示关怀模式已开启；返回false表示关怀模式已关闭。 |
+| callback | Callback | 是 | 回调函数。在系统关怀模式启用状态变化时将状态通过此函数进行通知。返回true表示系统关怀模式已开启；返回false表示系统关怀模式已关闭。 |
 
 示例：
 
@@ -1405,6 +1484,63 @@ struct Index {
 
   aboutToAppear(): void {
     accessibility.onSeniorModeStateChange(this.callback);
+  }
+
+  aboutToDisappear(): void {
+    accessibility.offSeniorModeStateChange(this.callback);
+  }
+
+  build() {
+    Column() {
+    }
+  }
+}
+```
+
+#### accessibility.onSeniorModeStateChangeForSelf
+
+onSeniorModeStateChangeForSelf(callback: Callback<boolean>): void
+
+监听应用自身“长辈模式”变化事件。使用callback异步回调。
+
+与[accessibility.onSeniorModeStateChange](#accessibilityonseniormodestatechange)（监听系统关怀模式状态变化）对应不同作用范围，本接口仅关注应用自身状态。
+
+![](./img/note_3.0-zh-cn.png)
+
+- 注册监听的callback参数应使用具名函数而非匿名函数，否则每次调用时会创建一个新的底层对象，引起内存泄漏问题。
+- 调用此方法后，务必在组件实例销毁前（如aboutToDisappear生命周期中）使用[accessibility.offSeniorModeStateChangeForSelf](#accessibilityoffseniormodestatechangeforself)取消监听，否则可能会导致崩溃。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| callback | Callback | 是 | 回调函数。在应用自身“长辈模式”状态变化时将状态通过此函数进行通知。返回true表示应用自身“长辈模式”已开启；返回false表示应用自身“长辈模式”已关闭。 |
+
+示例：
+
+```
+import { accessibility } from '@kit.AccessibilityKit';
+
+@Entry
+@Component
+struct Index {
+  callback: (data: boolean) => void = this.eventCallback;
+  eventCallback(data: boolean): void {
+    console.info(`subscribe senior mode state change, result: ${JSON.stringify(data)}`);
+  }
+
+  aboutToAppear(): void {
+    accessibility.onSeniorModeStateChangeForSelf(this.callback);
+  }
+
+  aboutToDisappear(): void {
+    accessibility.offSeniorModeStateChangeForSelf(this.callback);
   }
 
   build() {
@@ -1424,7 +1560,7 @@ off(type: 'accessibilityStateChange', callback?: Callback<boolean>): void
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 参数：
 
@@ -1446,9 +1582,27 @@ off(type: 'accessibilityStateChange', callback?: Callback<boolean>): void
 ```
 import { accessibility } from '@kit.AccessibilityKit';
 
-accessibility.off('accessibilityStateChange', (data: boolean) => {
-  console.info(`Unsubscribe accessibility state change, result: ${JSON.stringify(data)}`);
-});
+@Entry
+@Component
+struct Index {
+  callback: (data: boolean) => void = this.eventCallback;
+  eventCallback(data: boolean): void {
+    console.info(`subscribe accessibility state change, result: ${JSON.stringify(data)}`);
+  }
+
+  aboutToAppear(): void {
+    accessibility.on('accessibilityStateChange', this.callback);
+  }
+
+  aboutToDisappear(): void {
+    accessibility.off('accessibilityStateChange', this.callback);
+  }
+
+  build() {
+    Column() {
+    }
+  }
+}
 ```
 
 #### accessibility.off('touchGuideStateChange')
@@ -1461,7 +1615,7 @@ off(type: 'touchGuideStateChange', callback?: Callback<boolean>): void
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 参数：
 
@@ -1483,9 +1637,27 @@ off(type: 'touchGuideStateChange', callback?: Callback<boolean>): void
 ```
 import { accessibility } from '@kit.AccessibilityKit';
 
-accessibility.off('touchGuideStateChange', (data: boolean) => {
-  console.info(`Unsubscribe touch guide state change, result: ${JSON.stringify(data)}`);
-});
+@Entry
+@Component
+struct Index {
+  callback: (data: boolean) => void = this.eventCallback;
+  eventCallback(data: boolean): void {
+    console.info(`subscribe touch guide state change, result: ${JSON.stringify(data)}`);
+  }
+
+  aboutToAppear(): void {
+    accessibility.on('touchGuideStateChange', this.callback);
+  }
+
+  aboutToDisappear(): void {
+    accessibility.off('touchGuideStateChange', this.callback);
+  }
+
+  build() {
+    Column() {
+    }
+  }
+}
 ```
 
 #### accessibility.off('screenReaderStateChange')18+
@@ -1498,7 +1670,7 @@ off(type: 'screenReaderStateChange', callback?: Callback<boolean>): void
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 参数：
 
@@ -1520,9 +1692,27 @@ off(type: 'screenReaderStateChange', callback?: Callback<boolean>): void
 ```
 import { accessibility } from '@kit.AccessibilityKit';
 
-accessibility.off('screenReaderStateChange', (data: boolean) => {
-  console.info(`Unsubscribe screen reader state change, result: ${JSON.stringify(data)}`);
-});
+@Entry
+@Component
+struct Index {
+  callback: (data: boolean) => void = this.eventCallback;
+  eventCallback(data: boolean): void {
+    console.info(`subscribe screen reader state change, result: ${JSON.stringify(data)}`);
+  }
+
+  aboutToAppear(): void {
+    accessibility.on('screenReaderStateChange', this.callback);
+  }
+
+  aboutToDisappear(): void {
+    accessibility.off('screenReaderStateChange', this.callback);
+  }
+
+  build() {
+    Column() {
+    }
+  }
+}
 ```
 
 #### accessibility.off('touchModeChange')20+
@@ -1535,7 +1725,7 @@ off(type: 'touchModeChange', callback?: Callback<string>): void
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 参数：
 
@@ -1588,7 +1778,7 @@ offAnimationReduceStateChange(callback?: Callback<boolean>): void
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 参数：
 
@@ -1632,7 +1822,7 @@ offFlashReminderStateChange(callback?: Callback<boolean>): void
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 参数：
 
@@ -1676,7 +1866,7 @@ offAudioMonoStateChange(callback?: Callback<boolean>): void
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 参数：
 
@@ -1716,19 +1906,19 @@ struct Index {
 
 offSeniorModeStateChange(callback?: Callback<boolean>): void
 
-取消监听关怀模式变化事件。使用callback异步回调。
+取消监听系统关怀模式变化事件。使用callback异步回调。
 
 起始版本： 26.0.0
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | Callback | 否 | 回调函数。返回true表示关怀模式已开启；返回false表示关怀模式已关闭。取消指定callback对象的事件响应。需与[accessibility.onSeniorModeStateChange](#accessibilityonseniormodestatechange)的callback一致。缺省时，表示注销所有已注册事件。 |
+| callback | Callback | 否 | 回调函数，取消指定callback对象的事件响应。需与[accessibility.onSeniorModeStateChange](#accessibilityonseniormodestatechange)的callback一致。缺省时，表示注销所有已注册事件。 |
 
 示例：
 
@@ -1758,6 +1948,52 @@ struct Index {
 }
 ```
 
+#### accessibility.offSeniorModeStateChangeForSelf
+
+offSeniorModeStateChangeForSelf(callback?: Callback<boolean>): void
+
+取消监听应用自身“长辈模式”变化事件。使用callback异步回调。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| callback | Callback | 否 | 回调函数，取消指定callback对象的事件响应。需与[accessibility.onSeniorModeStateChangeForSelf](#accessibilityonseniormodestatechangeforself)的callback一致。缺省时，表示注销所有已注册事件。 |
+
+示例：
+
+```
+import { accessibility } from '@kit.AccessibilityKit';
+
+@Entry
+@Component
+struct Index {
+  callback: (data: boolean) => void = this.eventCallback;
+  eventCallback(data: boolean): void {
+    console.info(`subscribe senior mode state change, result: ${JSON.stringify(data)}`);
+  }
+
+  aboutToAppear(): void {
+    accessibility.onSeniorModeStateChangeForSelf(this.callback);
+  }
+
+  aboutToDisappear(): void {
+    accessibility.offSeniorModeStateChangeForSelf(this.callback);
+  }
+
+  build() {
+    Column() {
+    }
+  }
+}
+```
+
 #### accessibility.isOpenAccessibility(deprecated)
 
 isOpenAccessibility(): Promise<boolean>
@@ -1766,13 +2002,13 @@ isOpenAccessibility(): Promise<boolean>
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 10开始废弃，建议使用[accessibility.isOpenAccessibilitySync](#accessibilityisopenaccessibilitysync10)替代。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，如果辅助应用已启用，则返回 true；否则返回 false。 |
+| Promise | Promise对象。返回true表示辅助应用已启用；返回false表示辅助应用未启用。 |
 
 示例：
 
@@ -1781,9 +2017,9 @@ import { accessibility } from '@kit.AccessibilityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
 accessibility.isOpenAccessibility().then((data: boolean) => {
-  console.info(`success data:isOpenAccessibility : ${JSON.stringify(data)}`)
+  console.info(`success data:isOpenAccessibility : ${JSON.stringify(data)}`);
 }).catch((err: BusinessError) => {
-  console.error(`failed to  isOpenAccessibility, Code is ${err.code}, message is ${err.message}`);
+  console.error(`Failed to isOpenAccessibility. Code: ${err.code}, message: ${err.message}`);
 });
 ```
 
@@ -1795,13 +2031,13 @@ isOpenAccessibility(callback: AsyncCallback<boolean>): void
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 10开始废弃，建议使用[accessibility.isOpenAccessibilitySync](#accessibilityisopenaccessibilitysync10)替代。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback | 是 | 回调函数，如果辅助应用已启用，则返回 true；否则返回 false。 |
+| callback | AsyncCallback | 是 | 回调函数。返回true表示辅助应用已启用；返回false表示辅助应用未启用。 |
 
 示例：
 
@@ -1811,7 +2047,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 accessibility.isOpenAccessibility((err: BusinessError, data: boolean) => {
   if (err) {
-    console.error(`failed to isOpenAccessibility, Code is ${err.code}, message is ${err.message}`);
+    console.error(`Failed to isOpenAccessibility. Code:${err.code}, message:${err.message}`);
     return;
   }
   console.info(`success data:isOpenAccessibility : ${JSON.stringify(data)}`);
@@ -1822,13 +2058,15 @@ accessibility.isOpenAccessibility((err: BusinessError, data: boolean) => {
 
 isOpenAccessibilitySync(): boolean
 
-查询当前系统内是否存在已开启的辅助应用。如需获取系统内辅助应用信息，推荐使用[accessibility.getAccessibilityExtensionListSync](#accessibilitygetaccessibilityextensionlistsync12)。
+查询当前系统内是否存在已开启的辅助应用。
+
+如需获取系统内辅助应用信息，推荐使用[accessibility.getAccessibilityExtensionListSync](#accessibilitygetaccessibilityextensionlistsync12)。
 
 卡片能力： 从API version 23开始，该接口支持在ArkTS卡片中使用。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 返回值：
 
@@ -1840,7 +2078,6 @@ isOpenAccessibilitySync(): boolean
 
 ```
 import { accessibility } from '@kit.AccessibilityKit';
-import { BusinessError } from '@kit.BasicServicesKit';
 
 // 1、系统内已安装多个辅助应用，若都没有开启，返回false。
 // 2、系统内已安装多个辅助应用，若开启任意一个，返回true。
@@ -1855,13 +2092,13 @@ isOpenTouchGuide(): Promise<boolean>
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 10开始废弃，建议使用[accessibility.isOpenTouchGuideSync](#accessibilityisopentouchguidesync10)替代。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Vision
+系统能力： SystemCapability.BarrierFree.Accessibility.Vision
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，如果触摸浏览模式已开启，则返回 true；否则返回 false。 |
+| Promise | Promise对象。返回true表示触摸浏览模式已开启；返回false表示触摸浏览模式未开启。 |
 
 示例：
 
@@ -1872,7 +2109,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 accessibility.isOpenTouchGuide().then((data: boolean) => {
   console.info(`success data:isOpenTouchGuide : ${JSON.stringify(data)}`);
 }).catch((err: BusinessError) => {
-  console.error(`failed to  isOpenTouchGuide, Code is ${err.code}, message is ${err.message}`);
+  console.error(`Failed to isOpenTouchGuide. Code:${err.code}, message:${err.message}`);
 });
 ```
 
@@ -1884,13 +2121,13 @@ isOpenTouchGuide(callback: AsyncCallback<boolean>): void
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 10开始废弃，建议使用[accessibility.isOpenTouchGuideSync](#accessibilityisopentouchguidesync10)替代。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Vision
+系统能力： SystemCapability.BarrierFree.Accessibility.Vision
 
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback | 是 | 回调函数，如果触摸浏览模式已开启，则返回 true；否则返回 false。 |
+| callback | AsyncCallback | 是 | 回调函数。返回true表示触摸浏览模式已开启；返回false表示触摸浏览模式未开启。 |
 
 示例：
 
@@ -1900,7 +2137,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 accessibility.isOpenTouchGuide((err: BusinessError, data: boolean) => {
   if (err) {
-    console.error(`failed to isOpenTouchGuide, Code is ${err.code}, message is ${err.message}`);
+    console.error(`Failed to isOpenTouchGuide. Code:${err.code}, message:${err.message}`);
     return;
   }
   console.info(`success data:isOpenTouchGuide : ${JSON.stringify(data)}`);
@@ -1911,13 +2148,13 @@ accessibility.isOpenTouchGuide((err: BusinessError, data: boolean) => {
 
 isOpenTouchGuideSync(): boolean
 
-是否开启了触摸浏览模式。
+查询触摸浏览模式是否开启。
 
 卡片能力： 从API version 23开始，该接口支持在ArkTS卡片中使用。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Vision
+系统能力： SystemCapability.BarrierFree.Accessibility.Vision
 
 返回值：
 
@@ -1937,13 +2174,13 @@ let status: boolean = accessibility.isOpenTouchGuideSync();
 
 isScreenReaderOpenSync(): boolean
 
-是否开启了屏幕朗读模式。
+查询屏幕朗读模式是否开启。
 
 卡片能力： 从API version 23开始，该接口支持在ArkTS卡片中使用。
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Vision
+系统能力： SystemCapability.BarrierFree.Accessibility.Vision
 
 返回值：
 
@@ -1963,11 +2200,11 @@ let status: boolean = accessibility.isScreenReaderOpenSync();
 
 isAnimationReduceEnabled(): Promise<boolean>
 
-判断减弱动效模式是否开启。使用Promise异步回调。
+查询减弱动效模式是否开启。使用Promise异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 返回值：
 
@@ -1988,7 +2225,7 @@ struct Index {
     accessibility.isAnimationReduceEnabled().then((data: boolean) => {
       console.info(`success data:isAnimationReduceEnabled : ${JSON.stringify(data)}`);
     }).catch((err: BusinessError) => {
-      console.error(`failed to isAnimationReduceEnabled, Code is ${err.code}, message is ${err.message}`);
+      console.error(`Failed to isAnimationReduceEnabled. Code: ${err.code}, message: ${err.message}`);
     });
   }
 
@@ -2003,11 +2240,13 @@ struct Index {
 
 isAnimationReduceEnabledSync(): boolean
 
-使用同步方法判断减弱动效模式是否开启。
+查询减弱动效模式是否开启。
+
+本接口为同步版本，与[accessibility.isAnimationReduceEnabled](#accessibilityisanimationreduceenabled23)（异步版本）功能相同，如需立即获取结果可使用本接口，如需在非阻塞场景下查询建议使用异步版本。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 返回值：
 
@@ -2039,11 +2278,11 @@ struct Index {
 
 isFlashReminderEnabled(): Promise<boolean>
 
-判断闪烁提醒模式是否开启。使用Promise异步回调。
+查询闪烁提醒模式是否开启。使用Promise异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 返回值：
 
@@ -2064,7 +2303,7 @@ struct Index {
     accessibility.isFlashReminderEnabled().then((data: boolean) => {
       console.info(`success data:isFlashReminderEnabled : ${JSON.stringify(data)}`);
     }).catch((err: BusinessError) => {
-      console.error(`failed to isFlashReminderEnabled, Code is ${err.code}, message is ${err.message}`);
+      console.error(`Failed to isFlashReminderEnabled. Code:${err.code}, message:${err.message}`);
     });
   }
 
@@ -2079,11 +2318,13 @@ struct Index {
 
 isFlashReminderEnabledSync(): boolean
 
-使用同步方法判断闪烁提醒模式是否开启。
+查询闪烁提醒模式是否开启。
+
+本接口为同步版本，与[accessibility.isFlashReminderEnabled](#accessibilityisflashreminderenabled23)（异步版本）功能相同，如需立即获取结果可使用本接口，如需在非阻塞场景下查询建议使用异步版本。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 返回值：
 
@@ -2115,11 +2356,11 @@ struct Index {
 
 isAudioMonoEnabled(): Promise<boolean>
 
-判断单声道音频模式是否开启。使用Promise异步回调。
+查询单声道音频模式是否开启。使用Promise异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 返回值：
 
@@ -2140,7 +2381,7 @@ struct Index {
     accessibility.isAudioMonoEnabled().then((data: boolean) => {
       console.info(`success data:isAudioMonoEnabled : ${JSON.stringify(data)}`);
     }).catch((err: BusinessError) => {
-      console.error(`failed to isAudioMonoEnabled, Code is ${err.code}, message is ${err.message}`);
+      console.error(`Failed to isAudioMonoEnabled. Code:${err.code}, message:${err.message}`);
     });
   }
 
@@ -2155,11 +2396,13 @@ struct Index {
 
 isAudioMonoEnabledSync(): boolean
 
-使用同步方法判断单声道音频模式是否开启。
+查询单声道音频模式是否开启。
+
+本接口为同步版本，与[accessibility.isAudioMonoEnabled](#accessibilityisaudiomonoenabled23)（异步版本）功能相同，如需立即获取结果可使用本接口，如需在非阻塞场景下查询建议使用异步版本。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 返回值：
 
@@ -2191,19 +2434,19 @@ struct Index {
 
 isSeniorModeEnabled(): Promise<boolean>
 
-判断关怀模式是否开启。使用Promise异步回调。
+查询系统关怀模式是否开启。使用Promise异步回调。
 
 起始版本： 26.0.0
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象。返回true表示关怀模式已开启；返回false表示关怀模式已关闭。 |
+| Promise | Promise对象。返回true表示系统关怀模式已开启；返回false表示系统关怀模式已关闭。 |
 
 错误码：
 
@@ -2226,7 +2469,115 @@ struct Index {
     accessibility.isSeniorModeEnabled().then((data: boolean) => {
       console.info(`success data:isSeniorModeEnabled : ${JSON.stringify(data)}`);
     }).catch((err: BusinessError) => {
-      console.error(`failed to call isSeniorModeEnabled, Code is ${err.code}, message is ${err.message}`);
+      console.error(`Failed to call isSeniorModeEnabled. Code:${err.code}, message:${err.message}`);
+    });
+  }
+
+  build() {
+    Column() {
+    }
+  }
+}
+```
+
+#### accessibility.getSeniorModeStateForSelf
+
+getSeniorModeStateForSelf(): Promise<boolean>
+
+判断应用是否开启“长辈模式”。使用Promise异步回调。
+
+与[accessibility.isSeniorModeEnabled](#accessibilityisseniormodeenabled)（判断系统关怀模式是否开启）对应不同作用范围，本接口仅查询应用自身状态。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象。返回true表示应用自身“长辈模式”已开启；返回false表示应用自身“长辈模式”已关闭。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[无障碍子系统错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-accessibility)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 9300000 | System abnormality. |
+
+示例：
+
+```
+import { accessibility } from '@kit.AccessibilityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+@Entry
+@Component
+struct Index {
+  aboutToAppear(): void {
+    accessibility.getSeniorModeStateForSelf().then((data: boolean) => {
+      console.info(`Succeeded in getting seniorModeStateForSelf, data: ${data}`);
+    }).catch((err: BusinessError) => {
+      console.error(`Failed to call getSeniorModeStateForSelf. Code:${err.code}, message:${err.message}`);
+    });
+  }
+
+  build() {
+    Column() {
+    }
+  }
+}
+```
+
+#### accessibility.setSeniorModeStateForSelf
+
+setSeniorModeStateForSelf(state: boolean): Promise<void>
+
+设置应用是否开启“长辈模式”。使用Promise异步回调。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| state | boolean | 是 | 设置应用是否开启“长辈模式”状态，true表示开启“长辈模式”，false表示关闭“长辈模式”。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，无返回结果。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[无障碍子系统错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-accessibility)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 9300000 | System abnormality. |
+
+示例：
+
+```
+import { accessibility } from '@kit.AccessibilityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+@Entry
+@Component
+struct Index {
+  aboutToAppear(): void {
+    accessibility.setSeniorModeStateForSelf(true).then(() => {
+      console.info(`Succeeded in setting seniorModeStateForSelf`);
+    }).catch((err: BusinessError) => {
+      console.error(`Failed to call setSeniorModeStateForSelf. Code:${err.code}, message:${err.message}`);
     });
   }
 
@@ -2241,11 +2592,11 @@ struct Index {
 
 sendEvent(event: EventInfo): Promise<void>
 
-发送无障碍事件。使用Promise异步回调。
+发送无障碍事件，事件将被分发到系统中已注册且匹配事件类型的辅助扩展应用进行响应。使用Promise异步回调。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，建议使用[accessibility.sendAccessibilityEvent](#accessibilitysendaccessibilityevent9)替代。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 参数：
 
@@ -2274,7 +2625,7 @@ let eventInfo: accessibility.EventInfo = ({
 accessibility.sendEvent(eventInfo).then(() => {
   console.info(`succeeded in sending event, eventInfo is ${eventInfo}`);
 }).catch((err: BusinessError) => {
-  console.error(`failed to sendEvent, Code is ${err.code}, message is ${err.message}`);
+  console.error(`Failed to sendEvent. Code:${err.code}, message:${err.message}`);
 });
 ```
 
@@ -2282,18 +2633,18 @@ accessibility.sendEvent(eventInfo).then(() => {
 
 sendEvent(event: EventInfo, callback: AsyncCallback<void>): void
 
-发送无障碍事件。使用callback异步回调。
+发送无障碍事件，事件将被分发到系统中已注册且匹配事件类型的辅助扩展应用进行响应。使用callback异步回调。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，建议使用[accessibility.sendAccessibilityEvent](#accessibilitysendaccessibilityevent9-1)替代。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| event | [EventInfo](#eventinfo) | 是 | 辅助事件对象。 |
-| callback | AsyncCallback | 是 | 回调函数，如果发送无障碍事件失败，则 AsyncCallback中err有数据返回。 |
+| event | [EventInfo](#eventinfo) | 是 | 无障碍事件对象。 |
+| callback | AsyncCallback | 是 | 回调函数。当发送无障碍事件成功，err为undefined，否则为错误对象。 |
 
 示例：
 
@@ -2309,7 +2660,7 @@ let eventInfo: accessibility.EventInfo = ({
 
 accessibility.sendEvent(eventInfo, (err: BusinessError) => {
   if (err) {
-    console.error(`failed to sendEvent, Code is ${err.code}, message is ${err.message}`);
+    console.error(`Failed to sendEvent. Code:${err.code}, message:${err.message}`);
     return;
   }
   console.info(`succeeded in sending event, eventInfo is ${eventInfo}`);
@@ -2320,13 +2671,13 @@ accessibility.sendEvent(eventInfo, (err: BusinessError) => {
 
 sendAccessibilityEvent(event: EventInfo): Promise<void>
 
-发送无障碍事件。使用Promise异步回调。
+发送无障碍事件，事件将被分发到系统中已注册且匹配事件类型的辅助扩展应用进行响应。使用Promise异步回调。
 
 卡片能力： 从API version 23开始，该接口支持在ArkTS卡片中使用。
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 参数：
 
@@ -2363,7 +2714,7 @@ let eventInfo: accessibility.EventInfo = ({
 accessibility.sendAccessibilityEvent(eventInfo).then(() => {
   console.info(`succeeded in sending event, eventInfo is ${eventInfo}`);
 }).catch((err: BusinessError) => {
-  console.error(`failed to send event , Code is ${err.code}, message is ${err.message}`);
+  console.error(`Failed to send event. Code: ${err.code}, message: ${err.message}`);
 });
 ```
 
@@ -2371,20 +2722,20 @@ accessibility.sendAccessibilityEvent(eventInfo).then(() => {
 
 sendAccessibilityEvent(event: EventInfo, callback: AsyncCallback<void>): void
 
-发送无障碍事件。使用callback异步回调。
+发送无障碍事件，事件将被分发到系统中已注册且匹配事件类型的辅助应用进行响应。使用callback异步回调。
 
 卡片能力： 从API version 23开始，该接口支持在ArkTS卡片中使用。
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| event | [EventInfo](#eventinfo) | 是 | 辅助事件对象。 |
-| callback | AsyncCallback | 是 | 回调函数，如果发送无障碍事件失败，则 AsyncCallback中err有数据返回。 |
+| event | [EventInfo](#eventinfo) | 是 | 无障碍事件对象。 |
+| callback | AsyncCallback | 是 | 回调函数。当发送无障碍事件成功，err为undefined，否则为错误对象。 |
 
 错误码：
 
@@ -2408,7 +2759,7 @@ let eventInfo: accessibility.EventInfo = ({
 
 accessibility.sendAccessibilityEvent(eventInfo, (err: BusinessError) => {
   if (err) {
-    console.error(`failed to send event, Code is ${err.code}, message is ${err.message}`);
+    console.error(`Failed to send event. Code:${err.code}, message:${err.message}`);
     return;
   }
   console.info(`succeeded in sending event, eventInfo is ${eventInfo}`);
@@ -2443,7 +2794,7 @@ let eventInfo: accessibility.EventInfo = ({
 
 accessibility.sendAccessibilityEvent(eventInfo, (err: BusinessError) => {
   if (err) {
-    console.error(`failed to send event, Code is ${err.code}, message is ${err.message}`);
+    console.error(`Failed to send event. Code:${err.code}, message:${err.message}`);
     return;
   }
   console.info(`succeeded in sending event, eventInfo is ${eventInfo}`);
@@ -2464,7 +2815,7 @@ let eventInfo: accessibility.EventInfo = ({
 
 accessibility.sendAccessibilityEvent(eventInfo, (err: BusinessError) => {
   if (err) {
-    console.error(`failed to send event, Code is ${err.code}, message is ${err.message}`);
+    console.error(`Failed to send event. Code:${err.code}, message:${err.message}`);
     return;
   }
   console.info(`succeeded in sending event, eventInfo is ${eventInfo}`);
@@ -2475,13 +2826,13 @@ accessibility.sendAccessibilityEvent(eventInfo, (err: BusinessError) => {
 
 getTouchModeSync(): string
 
-查询触摸浏览功能下的单击/双击操作模式。
+查询触摸浏览功能下的单击/双击操作模式，可用于根据当前操作模式调整应用的交互响应方式（如单击模式下直接响应点击、双击模式下需双击确认操作）。
 
 卡片能力： 从API version 23开始，该接口支持在ArkTS卡片中使用。
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.BarrierFree.Accessibility.Core
+系统能力： SystemCapability.BarrierFree.Accessibility.Core
 
 返回值：
 

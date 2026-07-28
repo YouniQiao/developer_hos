@@ -2,8 +2,8 @@
 title: "OH_Huks_KeyMaterial25519"
 upstream_id: "harmonyos-references/capi-hukstypeapi-oh-huks-keymaterial25519"
 catalog: "harmonyos-references"
-content_hash: "4d4cfdb5b31a"
-synced_at: "2026-07-09T00:59:22.048759"
+content_hash: "272be7b6f355"
+synced_at: "2026-07-28T16:50:35.068507"
 ---
 
 # OH_Huks_KeyMaterial25519
@@ -29,7 +29,7 @@ struct OH_Huks_KeyMaterial25519 {...}
 | 名称 | 描述 |
 | --- | --- |
 | enum [OH_Huks_KeyAlg](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-type-h#oh_huks_keyalg) keyAlg | 密钥的算法类型。 |
-| uint32_t keySize | 25519类型密钥的长度。 |
-| uint32_t pubKeySize | 公钥的长度。 |
-| uint32_t priKeySize | 私钥的长度。 |
+| uint32_t keySize | 25519类型密钥的长度，单位：Bit。 |
+| uint32_t pubKeySize | 公钥的长度，单位：Byte。 |
+| uint32_t priKeySize | 私钥的长度，单位：Byte。 |
 | uint32_t reserved | 预留字段。建议开发者赋值为0。 |

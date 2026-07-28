@@ -2,8 +2,8 @@
 title: "FIDO2_Capability"
 upstream_id: "harmonyos-references/_f_i_d_o2___capability"
 catalog: "harmonyos-references"
-content_hash: "0157f5ee2d51"
-synced_at: "2026-07-09T00:59:18.563654"
+content_hash: "c36c29092ee1"
+synced_at: "2026-07-28T16:50:31.154212"
 ---
 
 # FIDO2_Capability
@@ -14,7 +14,9 @@ synced_at: "2026-07-09T00:59:18.563654"
 
 起始版本： 6.0.0(20)
 
-相关模块： [FIDO2](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey)
+相关模块： [FIDO2（通行密钥服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey)
+
+所在头文件： [fido2_api.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication_capi_header_fido2)
 
 #### 汇总
 

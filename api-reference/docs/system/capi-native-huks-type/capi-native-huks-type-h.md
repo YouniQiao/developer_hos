@@ -2,23 +2,21 @@
 title: "native_huks_type.h"
 upstream_id: "harmonyos-references/capi-native-huks-type-h"
 catalog: "harmonyos-references"
-content_hash: "6a6e328850e5"
-synced_at: "2026-07-09T00:59:21.005555"
+content_hash: "00ffd192003a"
+synced_at: "2026-07-28T16:50:34.622793"
 ---
 
 # native_huks_type.h
 
 #### 概述
 
-提供huks中的枚举变量、结构体定义与宏定义。
+提供通用密钥库（HUKS）中的枚举变量、结构体定义、宏定义与错误码。
 
 引用文件： <huks/native_huks_type.h>
 
 库： libhuks_ndk.z.so
 
 系统能力： SystemCapability.Security.Huks.Core
-
-在API 9-19，系统能力为SystemCapability.Security.Huks；从API 20起，系统能力变更为SystemCapability.Security.Huks.Core
 
 起始版本： 9
 
@@ -28,50 +26,50 @@ synced_at: "2026-07-09T00:59:21.005555"
 
 #### [h2]结构体
 
-| 名称 | 描述 |
-| --- | --- |
-| [OH_Huks_Result](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hukstypeapi-oh-huks-result) | 表示状态返回数据，包括返回码和消息。 |
-| [OH_Huks_Blob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hukstypeapi-oh-huks-blob) | 定义存放数据的结构体类型。 |
-| [OH_Huks_Param](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hukstypeapi-oh-huks-param) | 定义参数集中的参数结构体类型。 |
-| [OH_Huks_ParamSet](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hukstypeapi-oh-huks-paramset) | 定义参数集的结构体类型。 |
-| [OH_Huks_CertChain](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hukstypeapi-oh-huks-certchain) | 定义证书链的结构体类型。 |
-| [OH_Huks_KeyInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hukstypeapi-oh-huks-keyinfo) | 定义密钥信息的结构体类型。 |
-| [OH_Huks_PubKeyInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hukstypeapi-oh-huks-pubkeyinfo) | 定义公钥信息的结构体类型。 |
-| [OH_Huks_KeyMaterialRsa](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hukstypeapi-oh-huks-keymaterialrsa) | 定义Rsa密钥的结构体类型。 |
-| [OH_Huks_KeyMaterialEcc](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hukstypeapi-oh-huks-keymaterialecc) | 定义Ecc密钥的结构体类型。 |
-| [OH_Huks_KeyMaterialDsa](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hukstypeapi-oh-huks-keymaterialdsa) | 定义Dsa密钥的结构体类型。 |
-| [OH_Huks_KeyMaterialDh](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hukstypeapi-oh-huks-keymaterialdh) | 定义Dh密钥的结构体类型。 |
-| [OH_Huks_KeyMaterial25519](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hukstypeapi-oh-huks-keymaterial25519) | 定义25519类型密钥的结构体类型。 |
-| [OH_Huks_KeyAliasSet](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hukstypeapi-oh-huks-keyaliasset) | 定义密钥别名集的结构体类型。 |
+| 名称 | typedef关键字 | 描述 |
+| --- | --- | --- |
+| [OH_Huks_Result](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hukstypeapi-oh-huks-result) | OH_Huks_Result | 表示状态返回数据，包括返回码和消息。 |
+| [OH_Huks_Blob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hukstypeapi-oh-huks-blob) | OH_Huks_Blob | 定义存放数据的结构体类型。 |
+| [OH_Huks_Param](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hukstypeapi-oh-huks-param) | OH_Huks_Param | 定义参数的结构体类型。 |
+| [OH_Huks_ParamSet](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hukstypeapi-oh-huks-paramset) | OH_Huks_ParamSet | 定义参数集的结构体类型。 |
+| [OH_Huks_CertChain](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hukstypeapi-oh-huks-certchain) | OH_Huks_CertChain | 定义证书链的结构体类型。 |
+| [OH_Huks_KeyInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hukstypeapi-oh-huks-keyinfo) | OH_Huks_KeyInfo | 定义密钥信息的结构体类型。 |
+| [OH_Huks_PubKeyInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hukstypeapi-oh-huks-pubkeyinfo) | OH_Huks_PubKeyInfo | 定义公钥信息的结构体类型。 |
+| [OH_Huks_KeyMaterialRsa](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hukstypeapi-oh-huks-keymaterialrsa) | OH_Huks_KeyMaterialRsa | 定义RSA密钥的结构体类型。 |
+| [OH_Huks_KeyMaterialEcc](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hukstypeapi-oh-huks-keymaterialecc) | OH_Huks_KeyMaterialEcc | 定义ECC密钥的结构体类型。 |
+| [OH_Huks_KeyMaterialDsa](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hukstypeapi-oh-huks-keymaterialdsa) | OH_Huks_KeyMaterialDsa | 定义DSA密钥的结构体类型。 |
+| [OH_Huks_KeyMaterialDh](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hukstypeapi-oh-huks-keymaterialdh) | OH_Huks_KeyMaterialDh | 定义DH密钥的结构体类型。 |
+| [OH_Huks_KeyMaterial25519](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hukstypeapi-oh-huks-keymaterial25519) | OH_Huks_KeyMaterial25519 | 定义25519类型密钥的结构体类型。 |
+| [OH_Huks_KeyAliasSet](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hukstypeapi-oh-huks-keyaliasset) | OH_Huks_KeyAliasSet | 定义密钥别名集的结构体类型。 |
 
 #### [h2]枚举
 
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
-| [OH_Huks_KeyPurpose](#oh_huks_keypurpose) | - | 密钥用途类型。 |
-| [OH_Huks_KeyDigest](#oh_huks_keydigest) | - | 摘要算法类型。 |
-| [OH_Huks_KeyPadding](#oh_huks_keypadding) | - | 填充算法类型。 |
-| [OH_Huks_CipherMode](#oh_huks_ciphermode) | - | 加密模式。 |
-| [OH_Huks_KeySize](#oh_huks_keysize) | - | 算法密钥长度。 |
-| [OH_Huks_KeyAlg](#oh_huks_keyalg) | - | 密钥使用的算法。 |
-| [OH_Huks_AlgSuite](#oh_huks_algsuite) | - | 密文导入所需的算法套件类型。 |
-| [OH_Huks_KeyGenerateType](#oh_huks_keygeneratetype) | - | 生成的密钥类型。 |
-| [OH_Huks_KeyFlag](#oh_huks_keyflag) | - | 密钥的产生方式。 |
-| [OH_Huks_KeyStorageType](#oh_huks_keystoragetype) | - | 密钥的存储方式。 |
-| [OH_Huks_ImportKeyType](#oh_huks_importkeytype) | - | 导入密钥的类型，默认为导入公钥，导入对称密钥时不需要该字段。 |
-| [OH_Huks_RsaPssSaltLenType](#oh_huks_rsapsssaltlentype) | - | PSS填充模式下盐值长度类型。 |
-| [OH_Huks_ErrCode](#oh_huks_errcode) | - | 错误码。 |
-| [OH_Huks_TagType](#oh_huks_tagtype) | - | 参数集中参数的类型。 |
-| [OH_Huks_UserAuthType](#oh_huks_userauthtype) | - | 密钥访问控制中的用户认证类型。 |
-| [OH_Huks_AuthAccessType](#oh_huks_authaccesstype) | - | 安全访问控制类型，表示密钥失效的原则。 |
-| [OH_Huks_AuthStorageLevel](#oh_huks_authstoragelevel) | - | 表示生成或导入密钥时，指定该密钥的存储安全等级。 |
-| [OH_Huks_ChallengeType](#oh_huks_challengetype) | - | 密钥使用时生成challenge的类型。 |
-| [OH_Huks_UserAuthMode](#oh_huks_userauthmode) | - | 密钥访问控制中的用户认证模式。 |
-| [OH_Huks_ChallengePosition](#oh_huks_challengeposition) | - | challenge类型为用户自定义类型时，生成的challenge有效长度仅为8字节连续的数据，且仅支持4种位置。 |
-| [OH_Huks_SecureSignType](#oh_huks_securesigntype) | - | 生成或导入密钥时，指定该密钥的安全签名类型。 |
+| [OH_Huks_KeyPurpose](#oh_huks_keypurpose) | OH_Huks_KeyPurpose | 密钥用途类型。支持通过按位或（|）组合多个用途。 |
+| [OH_Huks_KeyDigest](#oh_huks_keydigest) | OH_Huks_KeyDigest | 摘要算法类型。 |
+| [OH_Huks_KeyPadding](#oh_huks_keypadding) | OH_Huks_KeyPadding | 填充算法类型。 |
+| [OH_Huks_CipherMode](#oh_huks_ciphermode) | OH_Huks_CipherMode | 加密模式。 |
+| [OH_Huks_KeySize](#oh_huks_keysize) | OH_Huks_KeySize | 算法密钥长度。 |
+| [OH_Huks_KeyAlg](#oh_huks_keyalg) | OH_Huks_KeyAlg | 密钥使用的算法。 |
+| [OH_Huks_AlgSuite](#oh_huks_algsuite) | OH_Huks_AlgSuite | 密文导入所需的算法套件类型。 |
+| [OH_Huks_KeyGenerateType](#oh_huks_keygeneratetype) | OH_Huks_KeyGenerateType | 生成的密钥类型。 |
+| [OH_Huks_KeyFlag](#oh_huks_keyflag) | OH_Huks_KeyFlag | 密钥的产生方式。 |
+| [OH_Huks_KeyStorageType](#oh_huks_keystoragetype) | OH_Huks_KeyStorageType | 密钥的存储方式。 |
+| [OH_Huks_ImportKeyType](#oh_huks_importkeytype) | OH_Huks_ImportKeyType | 导入密钥的类型，默认为导入公钥，导入对称密钥时不需要该字段。 |
+| [OH_Huks_RsaPssSaltLenType](#oh_huks_rsapsssaltlentype) | OH_Huks_RsaPssSaltLenType | RSA算法PSS填充模式下盐值长度类型。 |
+| [OH_Huks_ErrCode](#oh_huks_errcode) | OH_Huks_ErrCode | 错误码。 |
+| [OH_Huks_TagType](#oh_huks_tagtype) | OH_Huks_TagType | 参数的类型。 |
+| [OH_Huks_UserAuthType](#oh_huks_userauthtype) | OH_Huks_UserAuthType | 密钥访问控制中的用户认证类型。 |
+| [OH_Huks_AuthAccessType](#oh_huks_authaccesstype) | OH_Huks_AuthAccessType | 安全访问控制类型，表示密钥失效的原则。 |
+| [OH_Huks_AuthStorageLevel](#oh_huks_authstoragelevel) | OH_Huks_AuthStorageLevel | 表示生成或导入密钥时，指定该密钥的存储安全等级。 |
+| [OH_Huks_ChallengeType](#oh_huks_challengetype) | OH_Huks_ChallengeType | 密钥使用时生成challenge的类型。 |
+| [OH_Huks_UserAuthMode](#oh_huks_userauthmode) | OH_Huks_UserAuthMode | 密钥访问控制中的用户认证模式。 |
+| [OH_Huks_ChallengePosition](#oh_huks_challengeposition) | OH_Huks_ChallengePosition | challenge类型为用户自定义类型时，生成的challenge有效长度仅为8字节连续的数据，且仅支持4种位置。 |
+| [OH_Huks_SecureSignType](#oh_huks_securesigntype) | OH_Huks_SecureSignType | 生成或导入密钥时，指定该密钥的安全签名类型。 |
 | [OH_Huks_KeyClassType](#oh_huks_keyclasstype) | OH_Huks_KeyClassType | 密钥类型。 |
-| [OH_Huks_KeyWrapType](#oh_huks_keywraptype) | - | 生成或导入密钥时，指定该密钥的封装类型。 |
-| [OH_Huks_Tag](#oh_huks_tag) | - | 参数集所用的TAG值枚举。 |
+| [OH_Huks_KeyWrapType](#oh_huks_keywraptype) | OH_Huks_KeyWrapType | 生成或导入密钥时，指定该密钥的封装类型。 |
+| [OH_Huks_Tag](#oh_huks_tag) | OH_Huks_Tag | 参数集所用的TAG值枚举。 |
 
 #### [h2]宏定义
 
@@ -91,7 +89,7 @@ synced_at: "2026-07-09T00:59:21.005555"
 | TOKEN_CHALLENGE_LEN 32 | 在进行访问控制时挑战值的字节长度。 **起始版本：** 9 |
 | SHA256_SIGN_LEN 32 | SHA256签名的字节长度。 **起始版本：** 9 |
 | TOKEN_SIZE 32 | 在进行访问控制时挑战值的字节长度。 **起始版本：** 9 |
-| MAX_AUTH_TIMEOUT_SECOND 60 | 最大用户认证超时时间。 **起始版本：** 9 |
+| MAX_AUTH_TIMEOUT_SECOND 60 | 最大用户认证超时时间，单位：s。 **起始版本：** 9 |
 | SECURE_SIGN_VERSION 0x01000001 | 安全签名数据的版本。 **起始版本：** 9 |
 
 #### 枚举类型说明
@@ -103,7 +101,7 @@ enum OH_Huks_KeyPurpose
 ```
  描述
 
-密钥用途类型。
+密钥用途类型。支持通过按位或（|）组合多个用途。
 
 起始版本： 9
 
@@ -116,7 +114,7 @@ enum OH_Huks_KeyPurpose
 | OH_HUKS_KEY_PURPOSE_DERIVE = 16 | 表示密钥用于派生密钥。 |
 | OH_HUKS_KEY_PURPOSE_WRAP = 32 | 表示密钥用于加密导出。 |
 | OH_HUKS_KEY_PURPOSE_UNWRAP = 64 | 表示密钥加密导入。 |
-| OH_HUKS_KEY_PURPOSE_MAC = 128 | 表示密钥用于生成mac消息验证码。 |
+| OH_HUKS_KEY_PURPOSE_MAC = 128 | 表示密钥用于生成MAC消息验证码。 |
 | OH_HUKS_KEY_PURPOSE_AGREE = 256 | 表示密钥用于进行密钥协商。 |
 
 #### [h2]OH_Huks_KeyDigest
@@ -216,7 +214,7 @@ enum OH_Huks_KeySize
 | OH_HUKS_DH_KEY_SIZE_3072 = 3072 | 使用DH算法的密钥长度为3072bit。 |
 | OH_HUKS_DH_KEY_SIZE_4096 = 4096 | 使用DH算法的密钥长度为4096bit。 |
 | OH_HUKS_SM2_KEY_SIZE_256 = 256 | 使用SM2算法的密钥长度为256bit。 |
-| OH_HUKS_SM4_KEY_SIZE_128 = 128 | 使用SM4算法支持的密钥长度为128位。 |
+| OH_HUKS_SM4_KEY_SIZE_128 = 128 | 使用SM4算法支持的密钥长度为128bit。 |
 | OH_HUKS_DES_KEY_SIZE_64 = 64 | 使用DES算法的密钥长度为64bit。 **起始版本：** 18 |
 | OH_HUKS_3DES_KEY_SIZE_128 = 128 | 使用3DES算法的密钥长度为128bit。 **起始版本：** 18 |
 | OH_HUKS_3DES_KEY_SIZE_192 = 192 | 使用3DES算法的密钥长度为192bit。 **起始版本：** 18 |
@@ -369,7 +367,7 @@ enum OH_Huks_RsaPssSaltLenType
 ```
  描述
 
-PSS填充模式下盐值长度类型。
+RSA算法PSS填充模式下盐值长度类型。
 
 起始版本： 10
 
@@ -414,11 +412,11 @@ enum OH_Huks_ErrCode
 | OH_HUKS_ERR_CODE_KEY_ALREADY_EXIST = 12000017 | 同名密钥已存在。 **起始版本：** 20 |
 | OH_HUKS_ERR_CODE_INVALID_ARGUMENT = 12000018 | 输入的参数无效。 **起始版本：** 20 |
 | OH_HUKS_ERR_CODE_ITEM_EXISTS = 12000019 | 该项实体已存在。 **起始版本：** 22 |
-| OH_HUKS_ERR_CODE_EXTERNAL_MODULE = 12000020 | 提供者或Ukey内部执行失败。 **起始版本：** 22 |
-| OH_HUKS_ERR_CODE_PIN_LOCKED = 12000021 | Pin码被锁定。 **起始版本：** 22 |
-| OH_HUKS_ERR_CODE_PIN_INCORRECT = 12000022 | Pin码错误。 **起始版本：** 22 |
-| OH_HUKS_ERR_CODE_PIN_NO_AUTH = 12000023 | Pin码未认证通过。 **起始版本：** 22 |
-| OH_HUKS_ERR_CODE_BUSY = 12000024 | 提供者或Ukey中的资源正在被使用。 **起始版本：** 22 |
+| OH_HUKS_ERR_CODE_EXTERNAL_MODULE = 12000020 | 提供者或UKey内部执行失败。 **起始版本：** 22 |
+| OH_HUKS_ERR_CODE_PIN_LOCKED = 12000021 | PIN码被锁定。 **起始版本：** 22 |
+| OH_HUKS_ERR_CODE_PIN_INCORRECT = 12000022 | PIN码错误。 **起始版本：** 22 |
+| OH_HUKS_ERR_CODE_PIN_NO_AUTH = 12000023 | PIN码未认证通过。 **起始版本：** 22 |
+| OH_HUKS_ERR_CODE_BUSY = 12000024 | 提供者或UKey中的资源正在被使用。 **起始版本：** 22 |
 | OH_HUKS_ERR_CODE_EXCEED_LIMIT = 12000025 | 资源超过限制。 **起始版本：** 22 |
 
 #### [h2]OH_Huks_TagType
@@ -428,7 +426,7 @@ enum OH_Huks_TagType
 ```
  描述
 
-参数集中参数的类型。
+参数的类型。
 
 起始版本： 9
 
@@ -471,7 +469,7 @@ enum OH_Huks_UserAuthType
 | OH_HUKS_AUTH_STORAGE_LEVEL_CE = 1 | 表示密钥仅在首次解锁后可访问。 |
 | OH_HUKS_AUTH_STORAGE_LEVEL_ECE = 2 | 表示密钥仅在解锁状态时可访问。 |
 
-![](./img/note_3.0-zh-cn.png) 业务在使用存储等级为ECE的密钥时，建议通过感知[锁屏事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/commoneventmanager-definitions#common_event_screen_locked)来清理使用该密钥创建的会话资源，以保证安全性。
+![](./img/note_3.0-zh-cn.png) 业务在使用存储等级为ECE的密钥时，建议通过锁屏事件[COMMON_EVENT_SCREEN_LOCKED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/commoneventmanager-definitions#common_event_screen_locked)来清理使用该密钥创建的会话资源，以保证安全性。
 
 #### [h2]OH_Huks_ChallengeType
 
@@ -524,9 +522,9 @@ challenge类型为用户自定义类型时，生成的challenge有效长度仅�
 | 枚举项 | 描述 |
 | --- | --- |
 | OH_HUKS_CHALLENGE_POS_0 = 0 | 0~7字节为当前密钥的有效challenge。 |
-| OH_HUKS_CHALLENGE_POS_1 | 8~15字节为当前密钥的有效challenge。 |
-| OH_HUKS_CHALLENGE_POS_2 | 16~23字节为当前密钥的有效challenge。 |
-| OH_HUKS_CHALLENGE_POS_3 | 24~31字节为当前密钥的有效challenge。 |
+| OH_HUKS_CHALLENGE_POS_1 = 1 | 8~15字节为当前密钥的有效challenge。 |
+| OH_HUKS_CHALLENGE_POS_2 = 2 | 16~23字节为当前密钥的有效challenge。 |
+| OH_HUKS_CHALLENGE_POS_3 = 3 | 24~31字节为当前密钥的有效challenge。 |
 
 #### [h2]OH_Huks_SecureSignType
 
@@ -557,7 +555,7 @@ enum OH_Huks_KeyClassType
 | 枚举项 | 描述 |
 | --- | --- |
 | OH_HUKS_KEY_CLASS_DEFAULT = 0 | 默认类型，指定密钥存储在HUKS中。 |
-| OH_HUKS_KEY_CLASS_EXTENSION = 1 | 密钥存储在外部加密提供者中。 |
+| OH_HUKS_KEY_CLASS_EXTENSION = 1 | 密钥存储在外部加密能力提供者中。 |
 
 #### [h2]OH_Huks_KeyWrapType
 
@@ -601,12 +599,12 @@ enum OH_Huks_Tag
 
 | 枚举项 | 描述 |
 | --- | --- |
-| OH_HUKS_TAG_ALGORITHM = OH_HUKS_TAG_TYPE_UINT | 1 | 算法类型。 |
-| OH_HUKS_TAG_PURPOSE = OH_HUKS_TAG_TYPE_UINT | 2 | 密钥用途。 |
-| OH_HUKS_TAG_KEY_SIZE = OH_HUKS_TAG_TYPE_UINT | 3 | 密钥长度 。 |
-| OH_HUKS_TAG_DIGEST = OH_HUKS_TAG_TYPE_UINT | 4 | 摘要算法。 |
-| OH_HUKS_TAG_PADDING = OH_HUKS_TAG_TYPE_UINT | 5 | 填充算法。 |
-| OH_HUKS_TAG_BLOCK_MODE = OH_HUKS_TAG_TYPE_UINT | 6 | 加密模式。 |
+| OH_HUKS_TAG_ALGORITHM = OH_HUKS_TAG_TYPE_UINT | 1 | 算法类型。类型可在枚举[OH_Huks_KeyAlg](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-type-h#oh_huks_keyalg)中选择。 |
+| OH_HUKS_TAG_PURPOSE = OH_HUKS_TAG_TYPE_UINT | 2 | 密钥用途，类型可在枚举[OH_Huks_KeyPurpose](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-type-h#oh_huks_keypurpose)中选择。 |
+| OH_HUKS_TAG_KEY_SIZE = OH_HUKS_TAG_TYPE_UINT | 3 | 密钥长度，长度可在枚举[OH_Huks_KeySize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-type-h#oh_huks_keysize)中选择，单位：bit。 |
+| OH_HUKS_TAG_DIGEST = OH_HUKS_TAG_TYPE_UINT | 4 | 摘要算法，类型可在枚举[OH_Huks_KeyDigest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-type-h#oh_huks_keydigest)中选择。 |
+| OH_HUKS_TAG_PADDING = OH_HUKS_TAG_TYPE_UINT | 5 | 填充算法，类型可在枚举[OH_Huks_KeyPadding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-type-h#oh_huks_keypadding)中选择。 |
+| OH_HUKS_TAG_BLOCK_MODE = OH_HUKS_TAG_TYPE_UINT | 6 | 加密模式，类型可在枚举[OH_Huks_CipherMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-type-h#oh_huks_ciphermode)中选择。 |
 | OH_HUKS_TAG_KEY_TYPE = OH_HUKS_TAG_TYPE_UINT | 7 | 密钥类型。 |
 | OH_HUKS_TAG_ASSOCIATED_DATA = OH_HUKS_TAG_TYPE_BYTES | 8 | 附加身份验证数据。 |
 | OH_HUKS_TAG_NONCE = OH_HUKS_TAG_TYPE_BYTES | 9 | 密钥加解密的NONCE字段。 |
@@ -620,31 +618,31 @@ enum OH_Huks_Tag
 | OH_HUKS_TAG_AGREE_PRIVATE_KEY_ALIAS = OH_HUKS_TAG_TYPE_BYTES | 21 | 密钥协商时的私钥别名。 |
 | OH_HUKS_TAG_AGREE_PUBLIC_KEY = OH_HUKS_TAG_TYPE_BYTES | 22 | 用于协商的公钥。 |
 | OH_HUKS_TAG_KEY_ALIAS = OH_HUKS_TAG_TYPE_BYTES | 23 | 密钥别名。 |
-| OH_HUKS_TAG_DERIVE_KEY_SIZE = OH_HUKS_TAG_TYPE_UINT | 24 | 派生密钥大小。 |
+| OH_HUKS_TAG_DERIVE_KEY_SIZE = OH_HUKS_TAG_TYPE_UINT | 24 | 派生密钥大小，单位：Byte。 |
 | OH_HUKS_TAG_IMPORT_KEY_TYPE = OH_HUKS_TAG_TYPE_UINT | 25 | 导入密钥类型，类型可在枚举[OH_Huks_ImportKeyType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-type-h#oh_huks_importkeytype)中选择。 |
-| OH_HUKS_TAG_UNWRAP_ALGORITHM_SUITE = OH_HUKS_TAG_TYPE_UINT | 26 | 导入加密密钥的套件。 |
+| OH_HUKS_TAG_UNWRAP_ALGORITHM_SUITE = OH_HUKS_TAG_TYPE_UINT | 26 | 导入加密密钥的套件，类型可在枚举[OH_Huks_AlgSuite](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-type-h#oh_huks_algsuite)中选择。 |
 | OH_HUKS_TAG_DERIVED_AGREED_KEY_STORAGE_FLAG = OH_HUKS_TAG_TYPE_UINT | 29 | 派生密钥/协商密钥的存储类型，类型可在枚举[OH_Huks_KeyStorageType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-type-h#oh_huks_keystoragetype)中选择。 |
-| OH_HUKS_TAG_RSA_PSS_SALT_LEN_TYPE = OH_HUKS_TAG_TYPE_UINT | 30 | RSA算法，填充模式为PSS时的盐值长度类型。 |
+| OH_HUKS_TAG_RSA_PSS_SALT_LEN_TYPE = OH_HUKS_TAG_TYPE_UINT | 30 | RSA算法，填充模式为PSS时的盐值长度类型，类型可在枚举[OH_Huks_RsaPssSaltLenType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-type-h#oh_huks_rsapsssaltlentype)中选择。 |
 | OH_HUKS_TAG_ALL_USERS = OH_HUKS_TAG_TYPE_BOOL | 301 | 多用户中的所有用户。 |
-| OH_HUKS_TAG_USER_ID = OH_HUKS_TAG_TYPE_UINT | 302 | 表示多用户id。 |
+| OH_HUKS_TAG_USER_ID = OH_HUKS_TAG_TYPE_UINT | 302 | 表示多用户ID。 |
 | OH_HUKS_TAG_NO_AUTH_REQUIRED = OH_HUKS_TAG_TYPE_BOOL | 303 | 表示是否需要密钥访问控制。 |
-| OH_HUKS_TAG_USER_AUTH_TYPE = OH_HUKS_TAG_TYPE_UINT | 304 | 表示密钥访问控制中用户认证类型。 |
-| OH_HUKS_TAG_AUTH_TIMEOUT = OH_HUKS_TAG_TYPE_UINT | 305 | 表示密钥访问控制类型中密钥访问的超时时间。 |
+| OH_HUKS_TAG_USER_AUTH_TYPE = OH_HUKS_TAG_TYPE_UINT | 304 | 表示密钥访问控制中用户认证类型，类型可在枚举[OH_Huks_UserAuthType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-type-h#oh_huks_userauthtype)中选择。 |
+| OH_HUKS_TAG_AUTH_TIMEOUT = OH_HUKS_TAG_TYPE_UINT | 305 | 表示密钥访问控制类型中密钥访问的超时时间，单位：s。 |
 | OH_HUKS_TAG_AUTH_TOKEN = OH_HUKS_TAG_TYPE_BYTES | 306 | 表示密钥访问控制中使用密钥时传入的authtoken的类型。 |
 | OH_HUKS_TAG_KEY_AUTH_ACCESS_TYPE = OH_HUKS_TAG_TYPE_UINT | 307 | 表示安全访问控制类型，需要和用户认证类型同时设置，类型可在枚举[OH_Huks_AuthAccessType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-type-h#oh_huks_authaccesstype)中选择。 |
 | OH_HUKS_TAG_KEY_SECURE_SIGN_TYPE = OH_HUKS_TAG_TYPE_UINT | 308 | 表示生成或导入密钥时，指定该密钥的签名类型。 |
 | OH_HUKS_TAG_CHALLENGE_TYPE = OH_HUKS_TAG_TYPE_UINT | 309 | 表示密钥使用时生成的challenge类型，类型可在枚举[OH_Huks_ChallengeType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-type-h#oh_huks_challengetype)中选择。 |
-| OH_HUKS_TAG_CHALLENGE_POS = OH_HUKS_TAG_TYPE_UINT | 310 | 表示challenge类型为用户自定义类型时，huks产生的challenge有效长度仅为8字节连续的数据的位置，类型可在枚举[OH_Huks_ChallengePosition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-type-h#oh_huks_challengeposition)中选择。 |
+| OH_HUKS_TAG_CHALLENGE_POS = OH_HUKS_TAG_TYPE_UINT | 310 | 表示challenge类型为用户自定义类型时，HUKS产生的challenge有效长度仅为8字节连续的数据的位置，类型可在枚举[OH_Huks_ChallengePosition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-type-h#oh_huks_challengeposition)中选择。 |
 | OH_HUKS_TAG_KEY_AUTH_PURPOSE = OH_HUKS_TAG_TYPE_UINT | 311 | 表示密钥认证用途的类型。 |
 | OH_HUKS_TAG_AUTH_STORAGE_LEVEL = OH_HUKS_TAG_TYPE_UINT | 316 | 密钥文件存储访问控制的类别，类型可在枚举[OH_Huks_AuthStorageLevel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-type-h#oh_huks_authstoragelevel)中选择。 **起始版本：** 11 |
 | OH_HUKS_TAG_USER_AUTH_MODE = OH_HUKS_TAG_TYPE_UINT | 319 | 表示密钥访问控制中用户认证模式，类型可在枚举[OH_Huks_UserAuthMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-type-h#oh_huks_userauthmode)中选择。 **起始版本：** 12 |
 | OH_HUKS_TAG_ATTESTATION_CHALLENGE = OH_HUKS_TAG_TYPE_BYTES | 501 | 密钥认证时的挑战值。 |
-| OH_HUKS_TAG_ATTESTATION_APPLICATION_ID = OH_HUKS_TAG_TYPE_BYTES | 502 | 密钥认证时拥有该密钥的application的Id。 |
+| OH_HUKS_TAG_ATTESTATION_APPLICATION_ID = OH_HUKS_TAG_TYPE_BYTES | 502 | 密钥认证时拥有该密钥的应用的ID。 |
 | OH_HUKS_TAG_ATTESTATION_ID_ALIAS = OH_HUKS_TAG_TYPE_BYTES | 511 | 密钥认证时的别名。 |
 | OH_HUKS_TAG_ATTESTATION_ID_SEC_LEVEL_INFO = OH_HUKS_TAG_TYPE_BYTES | 514 | 密钥认证时的安全凭据。 |
 | OH_HUKS_TAG_ATTESTATION_ID_VERSION_INFO = OH_HUKS_TAG_TYPE_BYTES | 515 | 密钥认证时的版本号。 |
 | OH_HUKS_TAG_KEY_OVERRIDE = OH_HUKS_TAG_TYPE_BOOL | 520 | 是否覆写同名密钥。 **起始版本：** 20 |
-| OH_HUKS_TAG_AE_TAG_LEN = OH_HUKS_TAG_TYPE_UINT | 521 | CCM模式下指定的AEAD长度。 **起始版本：** 22 |
+| OH_HUKS_TAG_AE_TAG_LEN = OH_HUKS_TAG_TYPE_UINT | 521 | CCM模式下指定的AEAD长度，单位：Byte。 **起始版本：** 22 |
 | OH_HUKS_TAG_KEY_CLASS = OH_HUKS_TAG_TYPE_UINT | 522 | 密钥类别，用于区分设备本地由HUKS管理的密钥或者外部装置中存储的密钥。 **起始版本：** 22 |
 | OH_HUKS_TAG_KEY_ACCESS_GROUP = OH_HUKS_TAG_TYPE_BYTES | 523 | 表示群组标识，在同一开发者ID下归属于相同的群组可共享该群组下的密钥。 **起始版本：** 23 |
 | OH_HUKS_TAG_IS_KEY_ALIAS = OH_HUKS_TAG_TYPE_BOOL | 1001 | 是否是密钥别名。 |
@@ -656,7 +654,7 @@ enum OH_Huks_Tag
 | OH_HUKS_TAG_KEY_FLAG = OH_HUKS_TAG_TYPE_UINT | 1007 | 密钥标记，类型可在枚举[OH_Huks_KeyFlag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-type-h#oh_huks_keyflag)选择。 |
 | OH_HUKS_TAG_IS_ASYNCHRONIZED = OH_HUKS_TAG_TYPE_UINT | 1008 | 是否异步。 |
 | OH_HUKS_TAG_KEY_DOMAIN = OH_HUKS_TAG_TYPE_UINT | 1011 | 密钥域。 |
-| OH_HUKS_TAG_IS_DEVICE_PASSWORD_SET = OH_HUKS_TAG_TYPE_BOOL | 1012 | 表示密钥锁屏密码访问控制字段，可限制密钥只有在用户设置了锁屏密码时可用。 True表示只有在密码设置时才能生成和使用密钥。 **起始版本：** 11 |
+| OH_HUKS_TAG_IS_DEVICE_PASSWORD_SET = OH_HUKS_TAG_TYPE_BOOL | 1012 | 表示密钥锁屏密码访问控制字段，可限制密钥只有在用户设置了锁屏密码时可用。 true表示只有在密码设置时才能生成和使用密钥。false表示不需要设置密码即能生成和使用密钥。 **起始版本：** 11 |
 | OH_HUKS_TAG_AE_TAG = OH_HUKS_TAG_TYPE_BYTES | 10009 | 用于传入GCM模式中的AEAD数据的字段。 |
 | OH_HUKS_TAG_SYMMETRIC_KEY_DATA = OH_HUKS_TAG_TYPE_BYTES | 20001 | 对称密钥数据。 |
 | OH_HUKS_TAG_ASYMMETRIC_PUBLIC_KEY_DATA = OH_HUKS_TAG_TYPE_BYTES | 20002 | 非对称密钥公钥数据。 |

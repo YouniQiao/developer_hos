@@ -2,8 +2,8 @@
 title: "updateManager（更新功能）"
 upstream_id: "harmonyos-references/store-updatemanager"
 catalog: "harmonyos-references"
-content_hash: "b068fe109811"
-synced_at: "2026-07-09T01:01:14.717392"
+content_hash: "64bba3f41ab0"
+synced_at: "2026-07-28T16:52:33.996734"
 ---
 
 # updateManager（更新功能）
@@ -67,8 +67,8 @@ import { updateManager } from '@kit.AppGalleryKit';
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | updateAvailable | [UpdateAvailableCode](#updateavailablecode) | 是 | 否 | 检查结果。 |
-| versionName | string | 是 | 是 | 版本名称，例如1.0.0.1。 **起始版本：** 6.0.0(20) **说明：** 用于元服务场景调用。 |
-| versionCode | number | 是 | 是 | 版本号，例如1001。 **起始版本：** 6.0.0(20) **说明：** 用于元服务场景调用。 |
+| versionName | string | 是 | 是 | 版本名称，例如1.0.0.1。 **起始版本：** 6.0.0(20) **说明：** 仅用于元服务场景调用，应用场景调用时会返回undefined。 |
+| versionCode | number | 是 | 是 | 版本号，例如1001。 **起始版本：** 6.0.0(20) **说明：** 仅用于元服务场景调用，应用场景调用时会返回undefined。 |
 
 #### RequestErrorCode
 
@@ -272,7 +272,7 @@ on(type: 'updateChange', callback: Callback<UpdateSessionState>, timeout?: numbe
 
 监听元服务更新检查接口，检查到有/无更新后，使用callback方式返回结果。
 
-![](./img/note_3.0-zh-cn.png) 同一设备下元服务的监听注册次数不超过6次/天、每30分钟监听注册次数不超过1次。
+![](./img/note_3.0-zh-cn.png) 同一设备下元服务的更新检查监听次数不超过6次/天、每30分钟监听次数不超过1次。
 
 模型约束： 此接口仅可在Stage模型下使用。
 

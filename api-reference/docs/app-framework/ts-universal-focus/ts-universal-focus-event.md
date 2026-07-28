@@ -2,8 +2,8 @@
 title: "焦点事件"
 upstream_id: "harmonyos-references/ts-universal-focus-event"
 catalog: "harmonyos-references"
-content_hash: "9e5d0a88436d"
-synced_at: "2026-07-24T16:43:22.947731"
+content_hash: "870427f50662"
+synced_at: "2026-07-28T16:41:53.684946"
 ---
 
 # 焦点事件
@@ -38,7 +38,7 @@ onFocus(event: () => void): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，可用于链式调用。 |
 
 #### onBlur
 
@@ -60,7 +60,7 @@ onBlur(event:() => void): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，可用于链式调用。 |
 
 #### 示例
 
@@ -83,39 +83,36 @@ struct FocusEventExample {
         .width(260)
         .height(70)
         .fontColor(Color.Black)
-        .focusable(true)
         .onFocus(() => {
-          this.oneButtonColor = '#FFFFFF'
+          this.oneButtonColor = '#FFFFFF';
         })
         .onBlur(() => {
-          this.oneButtonColor = '#0066FF'
+          this.oneButtonColor = '#0066FF';
         })
       Button('Second Button')
         .backgroundColor(this.twoButtonColor)
         .width(260)
         .height(70)
         .fontColor(Color.Black)
-        .focusable(true)
         .onFocus(() => {
-          this.twoButtonColor = '#FFFFFF'
+          this.twoButtonColor = '#FFFFFF';
         })
         .onBlur(() => {
-          this.twoButtonColor = '#87CEFA'
+          this.twoButtonColor = '#87CEFA';
         })
       Button('Third Button')
         .backgroundColor(this.threeButtonColor)
         .width(260)
         .height(70)
         .fontColor(Color.Black)
-        .focusable(true)
         .onFocus(() => {
-          this.threeButtonColor = '#FFFFFF'
+          this.threeButtonColor = '#FFFFFF';
         })
         .onBlur(() => {
-          this.threeButtonColor = '#90EE90'
+          this.threeButtonColor = '#90EE90';
         })
     }.width('100%').margin({ top: 20 })
   }
 }
 ```
- ![](./img/zh-cn_image_0000002649779770.png)
+ ![](./img/zh-cn_image_0000002686087755.png)

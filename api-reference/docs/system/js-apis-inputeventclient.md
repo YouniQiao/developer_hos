@@ -2,13 +2,13 @@
 title: "@ohos.multimodalInput.inputEventClient (输入事件注入)"
 upstream_id: "harmonyos-references/js-apis-inputeventclient"
 catalog: "harmonyos-references"
-content_hash: "cb76c8f013d9"
-synced_at: "2026-07-09T00:59:49.706612"
+content_hash: "17eeeaf75d16"
+synced_at: "2026-07-28T16:51:07.430165"
 ---
 
 # @ohos.multimodalInput.inputEventClient (输入事件注入)
 
-输入事件注入模块，提供键盘和鼠标输入事件模拟能力。
+输入事件注入模块，提供键盘、鼠标和触控输入事件模拟能力。
 
 起始版本： 26.0.0
 
@@ -127,6 +127,64 @@ struct Index {
             })
             .catch((error: BusinessError) => {
               console.error(`Failed to create mouse controller. Code: ${error.code}, message: ${error.message}.`);
+            });
+        })
+    }
+  }
+}
+```
+
+#### inputEventClient.createTouchController
+
+createTouchController(): Promise<TouchController>
+
+创建触控控制器，用于模拟触控操作。使用Promise异步回调。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.MultimodalInput.Input.InputSimulator
+
+需要权限： ohos.permission.CONTROL_DEVICE
+
+设备行为差异：该接口仅在PC/2in1设备中可正常调用，在其他设备上返回801错误码。
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，返回触控控制器实例。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[输入事件注入错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-inputeventclient)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
+| 801 | Capability not supported. |
+| 3800001 | Input service exception. |
+
+示例：
+
+```
+import { inputEventClient } from '@kit.InputKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+@Entry
+@Component
+struct Index {
+  build() {
+    RelativeContainer() {
+      Text()
+        .onClick(() => {
+          inputEventClient.createTouchController()
+            .then(touchController => {
+              console.info('Succeeded in creating touch controller');
+            })
+            .catch((error: BusinessError) => {
+              console.error(`Failed to create touch controller. Code: ${error.code}, message: ${error.message}.`);
             });
         })
     }
@@ -483,7 +541,7 @@ beginAxis(axis: Axis, value: number): Promise<void>
 | --- | --- |
 | 201 | Permission verification failed. The application does not have the permission required to call the API. |
 | 3800001 | Input service exception. |
-| 4300001 | The axis event in progress. |
+| 4300001 | The axis event is in progress. |
 
 示例：
 
@@ -606,3 +664,203 @@ endAxis(axis: Axis): Promise<void>
 示例：
 
 参见[beginAxis](#beginaxis)示例。
+
+#### TouchPoint
+
+表示屏幕上的单个触点信息。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.MultimodalInput.Input.InputSimulator
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| id | number | 否 | 否 | 触点唯一标识。取值范围为[0, 9]，且必须为整数。 |
+| displayId | number | 否 | 否 | 触点所在屏幕的唯一标识，必须为整数。 |
+| displayX | number | 否 | 否 | 触点相对于屏幕左边缘的X坐标，单位为像素（px），必须为整数。 |
+| displayY | number | 否 | 否 | 触点相对于屏幕上边缘的Y坐标，单位为像素（px），必须为整数。 |
+
+#### TouchController
+
+提供模拟触控操作的功能。模拟触控操作序列必须满足以下要求：
+
+1. 所有触点的displayId必须相同。
+2. 每个触点都必须以touchDown()开始，以touchUp()结束，中间可包含多个touchMove()。
+
+#### [h2]touchDown
+
+touchDown(touch: TouchPoint): Promise<void>
+
+触点按下。使用Promise异步回调。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.MultimodalInput.Input.InputSimulator
+
+需要权限： ohos.permission.CONTROL_DEVICE
+
+设备行为差异：该接口仅在PC/2in1设备中可正常调用，在其他设备上调用不生效。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| touch | [TouchPoint](#touchpoint) | 是 | 与屏幕接触的触点信息。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，无返回结果。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[输入事件注入错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-inputeventclient)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
+| 4300001 | Invalid input event sequence. Possible causes: 1. The touch point is touching the display; 2. The touch point ID is not within the valid range [0,9]. |
+| 4300002 | The display does not exist. |
+| 3800001 | Input service exception. |
+
+示例：
+
+```
+import { inputEventClient } from '@kit.InputKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+@Entry
+@Component
+struct Index {
+  build() {
+    RelativeContainer() {
+      Text()
+        .onClick(() => {
+          inputEventClient.createTouchController()
+            .then((touchController: inputEventClient.TouchController) => {
+              const touchPoint: inputEventClient.TouchPoint = {
+                id: 0,
+                displayId: 0,
+                displayX: 600,
+                displayY: 1200
+              };
+              touchController.touchDown(touchPoint);
+              return touchController;
+            })
+            .then((touchController: inputEventClient.TouchController) => {
+              touchController.touchMove({
+                id: 0,
+                displayId: 0,
+                displayX: 720,
+                displayY: 1200
+              });
+              return touchController;
+            })
+            .then((touchController: inputEventClient.TouchController) => {
+              touchController.touchUp({
+                id: 0,
+                displayId: 0,
+                displayX: 720,
+                displayY: 1200
+              });
+            })
+            .then(() => {
+              console.info('Succeeded in touch up');
+            })
+            .catch((error: BusinessError) => {
+              console.error(`Failed to simulate touch. Code: ${error.code}, message: ${error.message}.`);
+            });
+        })
+    }
+  }
+}
+```
+
+#### [h2]touchMove
+
+touchMove(touch: TouchPoint): Promise<void>
+
+触点移动。使用Promise异步回调。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.MultimodalInput.Input.InputSimulator
+
+需要权限： ohos.permission.CONTROL_DEVICE
+
+设备行为差异：该接口仅在PC/2in1设备中可正常调用，在其他设备上调用不生效。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| touch | [TouchPoint](#touchpoint) | 是 | 需要移动的触点信息。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，无返回结果。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[输入事件注入错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-inputeventclient)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
+| 4300001 | Invalid input event sequence. Possible causes: 1. The touch point is not touching the display; 2. The touch point ID is not within the valid range [0,9]. |
+| 3800001 | Input service exception. |
+
+示例：
+
+参见[touchDown](#touchdown)示例。
+
+#### [h2]touchUp
+
+touchUp(touch: TouchPoint): Promise<void>
+
+触点抬起。使用Promise异步回调。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.MultimodalInput.Input.InputSimulator
+
+需要权限： ohos.permission.CONTROL_DEVICE
+
+设备行为差异：该接口仅在PC/2in1设备中可正常调用，在其他设备上调用不生效。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| touch | [TouchPoint](#touchpoint) | 是 | 即将离开屏幕的触点信息。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，无返回结果。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[输入事件注入错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-inputeventclient)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
+| 4300001 | Invalid input event sequence. Possible causes: 1. The touch point is not touching the display; 2. The touch point ID is not within the valid range [0,9]. |
+| 3800001 | Input service exception. |
+
+示例：
+
+参见[touchDown](#touchdown)示例。

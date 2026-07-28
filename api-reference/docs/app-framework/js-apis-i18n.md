@@ -2,8 +2,8 @@
 title: "@ohos.i18n (国际化-I18n)"
 upstream_id: "harmonyos-references/js-apis-i18n"
 catalog: "harmonyos-references"
-content_hash: "53ca9e388d44"
-synced_at: "2026-07-09T00:59:07.739816"
+content_hash: "2e95bc9a12b3"
+synced_at: "2026-07-28T16:50:11.975282"
 ---
 
 # @ohos.i18n (国际化-I18n)
@@ -3089,7 +3089,7 @@ let info = i18n.Unicode.detectEncoding(uint8Array); // info.encodingName = 'UTF-
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| encodingName | string | 否 | 否 | 编码名称，如UTF-8。 |
+| encodingName | string | 否 | 否 | 编码名称，取值包括：UTF-8，UTF-16BE，UTF-16LE，UTF-32BE，UTF-32LE，Shift_JIS，ISO-2022-JP，ISO-2022-CN，ISO-2022-KR，GB18030，Big5，EUC-JP，EUC-KR，ISO-8859-1，ISO-8859-2，ISO-8859-5，ISO-8859-6，ISO-8859-7，ISO-8859-8，ISO-8859-9，windows-1250，windows-1251，windows-1252，windows-1253，windows-1254，windows-1255，windows-1256，KOI8-R，IBM420，IBM424。 |
 | confidence | number | 否 | 否 | 识别结果的置信度，范围是0-100。值越大，识别结果越可靠。 |
 
 #### I18NUtil9+
@@ -4270,6 +4270,53 @@ let endDate = new Date(2026, 3, 27, 18, 20, 0);
 let parts = formatter.formatRangeToParts(startDate, endDate); // parts[0].type = 'dayPeriod'
 ```
 
+#### [h2]parse
+
+parse(text: string, lenientMode: boolean): number
+
+解析本地化时间日期字符串，返回对应的时间戳。
+
+起始版本： 26.0.0
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.Global.I18n
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| text | string | 是 | 待解析的本地化时间日期字符串。 |
+| lenientMode | boolean | 是 | 是否采用宽松模式，true表示采用宽松模式，false表示不采用宽松模式。 宽松模式下，能够处理不符合常规逻辑的时间日期值，如"5月32日"会自动转换成"6月1日"进行解析。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| number | 时间日期字符串解析后对应的时间戳，单位为毫秒（ms）。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[ohos.i18n错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-i18n)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 8900001 | Invalid parameter. Possible causes: Parameter verification failed. |
+
+示例：
+
+```
+import { i18n } from '@kit.LocalizationKit';
+
+let locale = new Intl.Locale('zh-Hans-CN');
+let formatter = new i18n.SymbolDateTimeFormat(locale, {
+  dateStyle: 'full'
+});
+let result = formatter.parse('2026年5月10日星期日', false); // result = 1778342400000
+```
+
 #### [h2]resolvedOptions
 
 resolvedOptions(): ResolvedSymbolDateTimeFormatOptions
@@ -4525,7 +4572,7 @@ format(date: Date): string
 
 | 类型 | 说明 |
 | --- | --- |
-| string | 格式化后的时间日期字符串。 |
+| string | 符合ISO8601标准的时间日期字符串。 |
 
 示例：
 
@@ -4898,6 +4945,51 @@ let formatter = new i18n.SymbolNumberFormat(locale, {
 let result = formatter.formatRangeToParts(10, 20); // result[0].type = 'integer'
 ```
 
+#### [h2]parse
+
+parse(text: string, lenientMode: boolean): number
+
+解析本地化数字字符串，返回对应的数字。无法正确解析使用自定义符号的本地化数字字符串。
+
+起始版本： 26.0.0
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.Global.I18n
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| text | string | 是 | 待解析的本地化数字字符串。 |
+| lenientMode | boolean | 是 | 是否采用宽松模式，true表示采用宽松模式，false表示不采用宽松模式。 宽松模式下，能够识别错误的千分符，如"1,23,456"可以正确解析为"123456"。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| number | 本地化数字字符串解析后的数字。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[ohos.i18n错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-i18n)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 8900001 | Invalid parameter. Possible causes: Parameter verification failed. |
+
+示例：
+
+```
+import { i18n } from '@kit.LocalizationKit';
+
+let locale = new Intl.Locale('zh-Hans-CN');
+let formatter = new i18n.SymbolNumberFormat(locale);
+let result = formatter.parse('125 米', false); // result = 125
+```
+
 #### [h2]resolvedOptions
 
 resolvedOptions(): ResolvedSymbolNumberFormatOptions
@@ -5169,7 +5261,7 @@ try {
 
 #### AdvancedMeasureFormat23+
 
-提供数字格式化能力。
+提供数字格式化能力，支持根据单位使用场景自动转换合适的单位。
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 

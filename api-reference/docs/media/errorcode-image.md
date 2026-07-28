@@ -2,8 +2,8 @@
 title: "Image错误码"
 upstream_id: "harmonyos-references/errorcode-image"
 catalog: "harmonyos-references"
-content_hash: "1f056a4e91b2"
-synced_at: "2026-07-09T01:00:38.097698"
+content_hash: "d786428d9c96"
+synced_at: "2026-07-28T16:51:55.512746"
 ---
 
 # Image错误码
@@ -1073,11 +1073,11 @@ PixelMap已被传递至另一个线程。
 
 可能原因
 
-PixelMap对象已被传递至另一个线程。
+PixelMap对象已被传递至另一个线程，原线程的对象无法继续调用接口。
 
 处理步骤
 
-不要在PixelMap对象被传递到另一个线程后仍在当前线程调用该对象的方法。
+不要在PixelMap对象被传递到另一个线程后仍在原线程调用该对象的接口。
 
 #### 7600173 DMA内存不存在
 
@@ -1241,6 +1241,25 @@ Unsupported data format.
 处理步骤
 
 查看接口文档并使用接口支持的数据格式。
+
+#### 7600208 HDR图片分解失败
+
+错误信息
+
+HDR image decomposition failed. Possible causes: 1. Decomposition processing is not supported. 2. Processing error occurs.
+
+错误描述
+
+HDR图片分解失败。
+
+可能原因
+
+1. 分解处理不被支持。
+2. HDR图片处理过程中发生错误。
+
+处理步骤
+
+检查HDR PixelMap的像素格式是否支持分解，或更换图片后重试。
 
 #### 7600301 申请内存失败
 

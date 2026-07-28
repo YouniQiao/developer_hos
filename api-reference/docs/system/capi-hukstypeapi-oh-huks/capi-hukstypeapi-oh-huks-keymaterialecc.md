@@ -2,8 +2,8 @@
 title: "OH_Huks_KeyMaterialEcc"
 upstream_id: "harmonyos-references/capi-hukstypeapi-oh-huks-keymaterialecc"
 catalog: "harmonyos-references"
-content_hash: "57c9983986cd"
-synced_at: "2026-07-09T00:59:21.828102"
+content_hash: "5507e8c8a4de"
+synced_at: "2026-07-28T16:50:34.854824"
 ---
 
 # OH_Huks_KeyMaterialEcc
@@ -14,7 +14,7 @@ struct OH_Huks_KeyMaterialEcc {...}
 
 #### 概述
 
-定义Ecc密钥的结构体类型。
+定义ECC密钥的结构体类型。
 
 起始版本： 9
 
@@ -29,7 +29,7 @@ struct OH_Huks_KeyMaterialEcc {...}
 | 名称 | 描述 |
 | --- | --- |
 | enum [OH_Huks_KeyAlg](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-type-h#oh_huks_keyalg) keyAlg | 密钥的算法类型。 |
-| uint32_t keySize | 密钥的长度。 |
-| uint32_t xSize | x值的长度。 |
-| uint32_t ySize | y值的长度。 |
-| uint32_t zSize | z值的长度。 |
+| uint32_t keySize | 密钥的长度，单位：Bit。 |
+| uint32_t xSize | x值的长度，单位：Byte。 |
+| uint32_t ySize | y值的长度，单位：Byte。 |
+| uint32_t zSize | z值的长度，单位：Byte。 |

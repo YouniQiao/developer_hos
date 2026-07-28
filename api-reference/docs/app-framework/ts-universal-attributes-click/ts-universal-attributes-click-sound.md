@@ -1,27 +1,25 @@
 ---
-
 title: "点击音效"
 upstream_id: "harmonyos-references/ts-universal-attributes-click-sound"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T00:57:40.935704"
-content_hash: "96cd2206589e"
+content_hash: "c324d31c7b6b"
+synced_at: "2026-07-28T16:42:28.519436"
 ---
-
 
 # 点击音效
 
-设置组件是否启用默认点击音效。
+设置组件是否启用默认点击音效，适用于需要控制组件点击反馈音效或自定义播放点击音效的场景。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 从API version 24开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+- 从API version 24开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 - 本模块接口仅可在Stage模型下使用。
 
 #### enableClickSoundEffect
 
 enableClickSoundEffect(enabled: boolean | undefined): T
 
-设置组件是否启用默认点击音效。是否能够发音依赖设备声音相关的设置，如静音模式下不会播放音效。
+设置组件是否启用默认点击音效，适用于需要控制组件点击反馈音效或自定义点击发音的场景。是否能够发音还依赖设备声音相关的设置，如静音模式下不会播放音效。禁用默认点击音效后，开发者可以在onClick回调中调用音频相关接口自定义发音。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -29,7 +27,7 @@ enableClickSoundEffect(enabled: boolean | undefined): T
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-设备行为差异：该接口在TV中可正常调用，在其他设备中无效果。
+设备行为差异： 该接口在TV中可正常调用，在其他设备中无效果。
 
 参数：
 
@@ -41,7 +39,7 @@ enableClickSoundEffect(enabled: boolean | undefined): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### 示例
 
@@ -63,7 +61,7 @@ struct Index {
         .width('200')
         .enableClickSoundEffect(false)
         .onClick(() => {
-          // 此处自定义发音，参考SoundPool播放短音频指南
+          // 此处自定义发音，参考SoundPool播放短音频指南。
         })
     }
     .width('100%')

@@ -2,8 +2,8 @@
 title: "TextReaderIcon（朗读听筒图标）"
 upstream_id: "harmonyos-references/speech-textreadericon"
 catalog: "harmonyos-references"
-content_hash: "4730f48552a2"
-synced_at: "2026-07-09T01:01:45.056725"
+content_hash: "783714ea9b5e"
+synced_at: "2026-07-28T16:53:16.715152"
 ---
 
 # TextReaderIcon（朗读听筒图标）
@@ -36,7 +36,7 @@ import { TextReaderIcon } from '@kit.SpeechKit';
 
 | 名称 | 类型 | 必填 | 装饰器类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| readState | [ReadStateCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/speech-readstatecode) | 是 | @Link | 播报状态。 **说明：** ReadState使用[@Link装饰器：父子双向同步](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-link)。 |
+| readState | [ReadStateCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/speech-readstatecode) | 是 | @Link | 播报状态。 **说明：** readState使用[@Link装饰器：父子双向同步](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-link)。 |
 
 #### [h2]build
 
@@ -159,3 +159,12 @@ struct Index {
   }
 }
 ```
+ 组件如下图：
+
+静止状态
+
+![](./img/zh-cn_image_0000002656009756.png)
+
+播放状态
+
+![](./img/zh-cn_image_0000002655849834.png)

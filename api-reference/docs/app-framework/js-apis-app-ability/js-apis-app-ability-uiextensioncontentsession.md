@@ -2,8 +2,8 @@
 title: "@ohos.app.ability.UIExtensionContentSession (带界面扩展能力的界面操作类)"
 upstream_id: "harmonyos-references/js-apis-app-ability-uiextensioncontentsession"
 catalog: "harmonyos-references"
-content_hash: "99d2b38bc779"
-synced_at: "2026-07-09T00:57:05.085191"
+content_hash: "7ead4b29bf25"
+synced_at: "2026-07-28T16:40:34.130846"
 ---
 
 # @ohos.app.ability.UIExtensionContentSession (带界面扩展能力的界面操作类)
@@ -539,8 +539,13 @@ startAbilityByType(type: string, wantParam: Record<string, Object>, abilityStart
 
 | 错误码ID | 错误信息 |
 | --- | --- |
+| 201 | The application does not have permission to call the interface. 适用版本：11 |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
+| 16000001 | The specified ability does not exist. 适用版本：11 |
+| 16000002 | Incorrect ability type. 适用版本：11 |
+| 16000004 | Cannot start an invisible component. 适用版本：11 |
 | 16000050 | Internal error. |
+| 16200001 | The caller has been released. 适用版本：11 |
 
 示例：
 
@@ -606,8 +611,13 @@ startAbilityByType(type: string, wantParam: Record<string, Object>, abilityStart
 
 | 错误码ID | 错误信息 |
 | --- | --- |
+| 201 | The application does not have permission to call the interface. 适用版本：11 |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
+| 16000001 | The specified ability does not exist. 适用版本：11 |
+| 16000002 | Incorrect ability type. 适用版本：11 |
+| 16000004 | Cannot start an invisible component. 适用版本：11 |
 | 16000050 | Internal error. |
+| 16200001 | The caller has been released. 适用版本：11 |
 
 示例：
 

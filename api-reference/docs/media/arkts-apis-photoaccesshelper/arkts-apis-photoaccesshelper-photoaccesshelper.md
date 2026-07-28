@@ -2,8 +2,8 @@
 title: "Interface (PhotoAccessHelper)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-photoaccesshelper"
 catalog: "harmonyos-references"
-content_hash: "678e036f6e3a"
-synced_at: "2026-07-09T01:00:47.764937"
+content_hash: "52f1c1252fb5"
+synced_at: "2026-07-28T16:52:04.975943"
 ---
 
 # Interface (PhotoAccessHelper)
@@ -44,7 +44,8 @@ getAssets(options: FetchOptions, callback: AsyncCallback<FetchResult<PhotoAsset>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 201 | Permission denied. |
+| 201 | Permission denied. 适用版本：12+ |
+| 13900012 | Permission denied. 适用版本：10-11 |
 | 13900020 | Invalid argument. |
 | 14000011 | System inner fail. |
 
@@ -111,7 +112,8 @@ getAssets(options: FetchOptions): Promise<FetchResult<PhotoAsset>>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 201 | Permission denied. |
+| 201 | Permission denied. 适用版本：20+ |
+| 13900012 | Permission denied. 适用版本：10-19 |
 | 13900020 | Invalid argument. |
 | 14000011 | System inner fail. |
 
@@ -242,7 +244,8 @@ createAsset(photoType: PhotoType, extension: string, options: CreateOptions, cal
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 201 | Permission denied. |
+| 201 | Permission denied. 适用版本：11+ |
+| 13900012 | Permission denied. 适用版本：10 |
 | 13900020 | Invalid argument. |
 | 14000011 | System inner fail. |
 
@@ -300,7 +303,8 @@ createAsset(photoType: PhotoType, extension: string, callback: AsyncCallback<str
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 201 | Permission denied. |
+| 201 | Permission denied. 适用版本：11+ |
+| 13900012 | Permission denied. 适用版本：10 |
 | 13900020 | Invalid argument. |
 | 14000011 | System inner fail. |
 
@@ -361,7 +365,8 @@ createAsset(photoType: PhotoType, extension: string, options?: CreateOptions): P
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 201 | Permission denied. |
+| 201 | Permission denied. 适用版本：11+ |
+| 13900012 | Permission denied. 适用版本：10 |
 | 13900020 | Invalid argument. |
 | 14000011 | System inner fail. |
 
@@ -477,7 +482,8 @@ getAlbums(type: AlbumType, subtype: AlbumSubtype, options: FetchOptions, callbac
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 201 | Permission denied. |
+| 201 | Permission denied. 适用版本：12+ |
+| 13900012 | Permission denied. 适用版本：10-11 |
 | 13900020 | Invalid argument. |
 | 14000011 | System inner fail. |
 
@@ -542,7 +548,8 @@ getAlbums(type: AlbumType, subtype: AlbumSubtype, callback: AsyncCallback<FetchR
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 201 | Permission denied. |
+| 201 | Permission denied. 适用版本：12+ |
+| 13900012 | Permission denied. 适用版本：10-11 |
 | 13900020 | Invalid argument. |
 | 14000011 | System inner fail. |
 
@@ -605,7 +612,8 @@ getAlbums(type: AlbumType, subtype: AlbumSubtype, options?: FetchOptions): Promi
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 201 | Permission denied. |
+| 201 | Permission denied. 适用版本：12+ |
+| 13900012 | Permission denied. 适用版本：10-11 |
 | 13900020 | Invalid argument. |
 | 14000011 | System inner fail. |
 
@@ -1958,7 +1966,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 
 #### offSinglePhotoChange23+
 
-offSinglePhotoChange(asset?: PhotoAsset, callback?: Callback<PhotoAssetChangeInfos>): void;
+offSinglePhotoChange(asset?: PhotoAsset, callback?: Callback<PhotoAssetChangeInfos>): void
 
 取消单个资产的监听。具体规则如下：
 
@@ -2045,7 +2053,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 
 #### onSinglePhotoAlbumChange23+
 
-onSinglePhotoAlbumChange(album: Album, callback: Callback<AlbumChangeInfos>): void;
+onSinglePhotoAlbumChange(album: Album, callback: Callback<AlbumChangeInfos>): void
 
 注册对普通单个相册变化的监听。使用callback异步回调。
 

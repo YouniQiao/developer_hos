@@ -2,8 +2,8 @@
 title: "获取用户风险等级"
 upstream_id: "harmonyos-references/account-api-getuserrisklevel"
 catalog: "harmonyos-references"
-content_hash: "af7d6c5303b0"
-synced_at: "2026-07-09T01:01:13.110774"
+content_hash: "be9c3d0c9d65"
+synced_at: "2026-07-28T16:52:30.984611"
 ---
 
 # 获取用户风险等级
@@ -134,7 +134,7 @@ Content-Type: application/json;charset=utf-8
 
 {
     "errCode": 403,
-    "errMsg": "no permission"
+    "errMsg": "access forbidden;no basePermission"
 }
 ```
 

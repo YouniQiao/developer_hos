@@ -2,8 +2,8 @@
 title: "MapComponent（地图组件）"
 upstream_id: "harmonyos-references/map-mapcomponent"
 catalog: "harmonyos-references"
-content_hash: "33a641e57864"
-synced_at: "2026-07-09T01:01:27.615279"
+content_hash: "8bab1ae822b4"
+synced_at: "2026-07-28T16:52:46.379647"
 ---
 
 # MapComponent（地图组件）
@@ -43,9 +43,8 @@ MapComponent提供map组件，通过回调获取MapComponentController对象。
 示例：
 
 ```
-import { map, mapCommon, MapComponent } from '@kit.MapKit';
+import { map, mapCommon, MapComponent, customInfoWindowCallback } from '@kit.MapKit';
 import { AsyncCallback } from '@kit.BasicServicesKit';
-import { customInfoWindowCallback } from '@hms.core.map.MapComponent';
 
 @Entry
 @Component

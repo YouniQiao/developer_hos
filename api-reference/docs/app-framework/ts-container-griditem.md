@@ -2,8 +2,8 @@
 title: "GridItem"
 upstream_id: "harmonyos-references/ts-container-griditem"
 catalog: "harmonyos-references"
-content_hash: "06b5fbb481d2"
-synced_at: "2026-07-09T00:57:48.079679"
+content_hash: "97b36ce7af89"
+synced_at: "2026-07-28T16:43:27.932558"
 ---
 
 # GridItem
@@ -35,7 +35,7 @@ GridItem(value?: GridItemOptions)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value11+ | [GridItemOptions](#griditemoptions11对象说明) | 否 | 为GridItem提供可选参数，该对象内含有[GridItemStyle](#griditemstyle11枚举说明)枚举类型的style参数。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| value11+ | [GridItemOptions](#griditemoptions11对象说明) | 否 | 为GridItem提供可选参数，该对象内包含[GridItemStyle](#griditemstyle11枚举说明)枚举类型的style参数。不传入时使用默认样式，即GridItemStyle.NONE。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### 属性
 
@@ -138,7 +138,7 @@ forceRebuild(value: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | boolean | 是 | 在触发组件build时是否重新创建此节点。 默认值：false |
+| value | boolean | 是 | 设置为true时，在触发组件build时重新创建此节点；设置为false时，不强制重新创建此节点。 默认值：false |
 
 #### [h2]selectable8+
 
@@ -176,11 +176,11 @@ selected(value: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | boolean | 是 | 当前GridItem选中状态。设置为true时为选中状态，设置为false时为默认状态。 默认值：false |
+| value | boolean | 是 | 当前GridItem选中状态。设置为true时为选中状态，设置为false时为非选中状态。 默认值：false |
 
 #### GridItemOptions11+对象说明
 
-GridItem样式对象。
+GridItem样式对象，用于配置GridItem的样式选项。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -190,11 +190,11 @@ GridItem样式对象。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| style | [GridItemStyle](#griditemstyle11枚举说明) | 否 | 是 | 设置GridItem样式。 默认值：GridItemStyle.NONE 设置为GridItemStyle.NONE时无样式。 设置为GridItemStyle.PLAIN时，显示Hover、Press态样式。 |
+| style | [GridItemStyle](#griditemstyle11枚举说明) | 否 | 是 | 设置GridItem样式。 默认值：GridItemStyle.NONE 设置为GridItemStyle.NONE时无样式。 设置为GridItemStyle.PLAIN时，显示Hover、Press态样式。Hover态为鼠标悬停时的样式，Press态为按下时的样式。 |
 
 #### GridItemStyle11+枚举说明
 
-GridItem样式枚举。
+GridItem样式枚举，用于定义GridItem的交互态样式。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -204,8 +204,8 @@ GridItem样式枚举。
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| NONE | 0 | 无样式。 |
-| PLAIN | 1 | 显示Hover、Press态样式。 |
+| NONE | 0 | 无样式，不显示Hover、Press态样式。 |
+| PLAIN | 1 | 显示Hover、Press态样式。Hover态为鼠标悬停时的样式，Press态为按下时的样式。 |
 
 ![](./img/note_3.0-zh-cn.png) GridItem焦点态样式设置：Grid组件需要设置4vp规格以上的内边距，用于显示GridItem的焦点框。
 
@@ -225,13 +225,13 @@ GridItem元素被鼠标框选的状态改变时触发回调。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| isSelected | boolean | 是 | 进入鼠标框选范围即被选中返回true， 移出鼠标框选范围即未被选中返回false。 |
+| isSelected | boolean | 是 | 进入鼠标框选范围即被选中返回true，移出鼠标框选范围即未被选中返回false。 |
 
 #### 示例
 
 #### [h2]示例1（GridItem设置自身位置）
 
-GridItem通过设置合理的ColumnStart、ColumnEnd、RowStart、RowEnd属性来设置自身位置。需要指定GridItem起始行列号和所占行列数的场景推荐使用Grid的[GridLayoutOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-grid#gridlayoutoptions10对象说明)参数，详细可参考Grid的[示例1（固定行列Grid）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-grid#示例1固定行列grid)和[示例3（可滚动Grid设置跨行跨列节点）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-grid#示例3可滚动grid设置跨行跨列节点)。
+GridItem通过设置合理的rowStart、rowEnd、columnStart、columnEnd属性来设置自身位置。需要指定GridItem起始行列号和所占行列数的场景推荐使用Grid的[GridLayoutOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-grid#gridlayoutoptions10对象说明)参数，详细可参考Grid的[示例1（固定行列Grid）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-grid#示例1固定行列grid)和[示例3（可滚动Grid设置跨行跨列节点）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-grid#示例3可滚动grid设置跨行跨列节点)。
 
 ```
 // xxx.ets
@@ -270,7 +270,7 @@ struct GridItemExample {
             .width('100%')
             .height('100%')
             .textAlign(TextAlign.Center)
-        }.columnStart(1).columnEnd(4) // 只设置列号，不会从第1列开始布局
+        }.columnStart(1).columnEnd(4) // 未设置行号，不按columnStart(1)定位；此处从第5行、索引为0的列开始并跨4列布局
       }
       .columnsTemplate('1fr 1fr 1fr 1fr 1fr')
       .rowsTemplate('1fr 1fr 1fr 1fr 1fr')
@@ -279,7 +279,7 @@ struct GridItemExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732425.gif)
+ ![](./img/zh-cn_image_0000002656008424.gif)
 
 #### [h2]示例2（设置GridItem样式）
 
@@ -290,15 +290,15 @@ struct GridItemExample {
 @Entry
 @Component
 struct GridItemExample {
-  @State numbers: String[] = ['0', '1', '2'];
+  @State numbers: string[] = ['0', '1', '2'];
 
   build() {
     Column({ space: 5 }) {
       Grid() {
-        ForEach(this.numbers, (day: string) => {
-          ForEach(this.numbers, (day: string) => {
-            GridItem({style:GridItemStyle.NONE}) {
-              Text(day)
+        ForEach(this.numbers, (rowItem: string) => {
+          ForEach(this.numbers, (item: string) => {
+            GridItem({ style: GridItemStyle.NONE }) {
+              Text(item)
                 .fontSize(16)
                 .width('100%')
                 .height('100%')
@@ -306,8 +306,8 @@ struct GridItemExample {
                 .focusable(true)
             }
             .backgroundColor(0xF9CF93)
-          }, (day: string) => day)
-        }, (day: string) => day)
+          }, (item: string) => item)
+        }, (rowItem: string) => rowItem)
       }
       .columnsTemplate('1fr 1fr 1fr')
       .rowsTemplate('1fr 1fr')
@@ -319,10 +319,10 @@ struct GridItemExample {
       .padding('4vp')
 
       Grid() {
-        ForEach(this.numbers, (day: string) => {
-          ForEach(this.numbers, (day: string) => {
-            GridItem({style:GridItemStyle.PLAIN}) {
-              Text(day)
+        ForEach(this.numbers, (rowItem: string) => {
+          ForEach(this.numbers, (item: string) => {
+            GridItem({ style: GridItemStyle.PLAIN }) {
+              Text(item)
                 .fontSize(16)
                 .width('100%')
                 .height('100%')
@@ -330,8 +330,8 @@ struct GridItemExample {
                 .focusable(true)
             }
             .backgroundColor(0xF9CF93)
-          }, (day: string) => day)
-        }, (day: string) => day)
+          }, (item: string) => item)
+        }, (rowItem: string) => rowItem)
       }
       .columnsTemplate('1fr 1fr 1fr')
       .rowsTemplate('1fr 1fr')
@@ -345,4 +345,4 @@ struct GridItemExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253306.png)
+ ![](./img/zh-cn_image_0000002655848504.png)

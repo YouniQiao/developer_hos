@@ -2,8 +2,8 @@
 title: "Input_InterceptorEventCallback"
 upstream_id: "harmonyos-references/capi-input-input-interceptoreventcallback"
 catalog: "harmonyos-references"
-content_hash: "99ae5def7779"
-synced_at: "2026-07-09T00:59:49.461934"
+content_hash: "2ea3818f88c1"
+synced_at: "2026-07-28T16:51:07.801687"
 ---
 
 # Input_InterceptorEventCallback
@@ -28,7 +28,6 @@ typedef struct Input_InterceptorEventCallback {...} Input_InterceptorEventCallba
 
 | 名称 | 描述 |
 | --- | --- |
-| [Input_KeyEventCallback](#input_keyeventcallback) keycallback | 按键事件的回调函数。 |
 | [Input_MouseEventCallback](#input_mouseeventcallback) mouseCallback | 鼠标事件的回调函数。 |
 | [Input_TouchEventCallback](#input_toucheventcallback) touchCallback | 触屏输入事件的回调函数。 |
 | [Input_AxisEventCallback](#input_axiseventcallback) axisCallback | 轴事件的回调函数。 |
@@ -37,29 +36,11 @@ typedef struct Input_InterceptorEventCallback {...} Input_InterceptorEventCallba
 
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
-| [typedef void (*Input_KeyEventCallback)(const Input_KeyEvent* keyEvent)](#input_keyeventcallback) | Input_KeyEventCallback() | 按键事件的回调函数，keyEvent的生命周期为回调函数内。 |
 | [typedef void (*Input_MouseEventCallback)(const Input_MouseEvent* mouseEvent)](#input_mouseeventcallback) | Input_MouseEventCallback() | 鼠标事件的回调函数，mouseEvent的生命周期为回调函数内。 |
 | [typedef void (*Input_TouchEventCallback)(const Input_TouchEvent* touchEvent)](#input_toucheventcallback) | Input_TouchEventCallback() | 触屏输入事件的回调函数，touchEvent的生命周期为回调函数内。 |
 | [typedef void (*Input_AxisEventCallback)(const Input_AxisEvent* axisEvent)](#input_axiseventcallback) | Input_AxisEventCallback() | 轴事件的回调函数，axisEvent的生命周期为回调函数内。 |
 
 #### 成员函数说明
-
-#### [h2]Input_KeyEventCallback()
-
-```
-typedef void (*Input_KeyEventCallback)(const Input_KeyEvent* keyEvent)
-```
- 描述
-
-按键事件的回调函数，keyEvent的生命周期为回调函数内。
-
-起始版本： 12
-
-参数：
-
-| 参数项 | 描述 |
-| --- | --- |
-| const [Input_KeyEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-keyevent)* keyEvent | 按键事件对象。 |
 
 #### [h2]Input_MouseEventCallback()
 

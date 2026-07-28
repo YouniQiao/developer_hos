@@ -2,8 +2,8 @@
 title: "HdsListItem"
 upstream_id: "harmonyos-references/ui-design-hdslistitem"
 catalog: "harmonyos-references"
-content_hash: "46e855dc94a0"
-synced_at: "2026-07-09T00:59:10.400232"
+content_hash: "7ffec04e8ab4"
+synced_at: "2026-07-28T16:50:14.506141"
 ---
 
 # HdsListItem
@@ -32,7 +32,7 @@ import { HdsListItem } from '@kit.UIDesignKit';
 
 #### HdsListItem
 
-HdsListItem({customItemBuilder?: CustomBuilder, hdsListItemCard?: HdsListItemCardOptions, swipeActionOptions?: HdsSwipeActionOptions | SwipeActionOptions, listItemModifier?: ListItemModifier, menuStyle?: MenuStyle, menuBuilder?: CustomBuilder, isSelected?: boolean})
+HdsListItem({customItemBuilder?: CustomBuilder, hdsListItemCard?: HdsListItemCardOptions, swipeActionOptions?: HdsSwipeActionOptions | SwipeActionOptions, listItemModifier?: ListItemModifier, menuStyle?: MenuStyle, menuBuilder?: CustomBuilder, isSelected?: boolean, listItemStateStyles?: HdsListItemStateStylesOptions})
 
 装饰器类型： @Component
 
@@ -53,6 +53,7 @@ HdsListItem({customItemBuilder?: CustomBuilder, hdsListItemCard?: HdsListItemCar
 | menuStyle | [MenuStyle](#menustyle) | 否 | @Prop | ListItem预览菜单样式。 **起始版本：** 6.1.0(23) |
 | menuBuilder | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 否 | @BuilderParam | 自定义弹出菜单内容。 **起始版本：** 6.1.0(23) |
 | isSelected | boolean | 否 | @Prop | ListItem是否被选中。 true：被选中。 false：未选中。 默认值：false。 **起始版本：** 6.1.0(23) |
+| listItemStateStyles | [HdsListItemStateStylesOptions](#hdslistitemstatestylesoptions) | 否 | @Prop | ListItem多态样式。 **起始版本：** 26.0.0 |
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -147,6 +148,21 @@ HdsListItem({customItemBuilder?: CustomBuilder, hdsListItemCard?: HdsListItemCar
 | isFullDelete | boolean | 否 | 是 | 横滑之后再次滑动是否删除整个列表项。 - true：横滑之后再次滑动删除该列表项。 - false：横滑之后再次滑动不删除该列表项。 默认值：false。 |
 | onFullDeleteAction | [SwipeActionCallback](#swipeactioncallback) | 否 | 是 | 列表项删除的回调。 |
 | enableVibration | boolean | 否 | 是 | 横滑删除整个列表项时，是否启用振动。 - true：启用振动。 - false：不启用振动。 默认值：true。 **起始版本：** 6.1.0(23) |
+
+#### HdsListItemStateStylesOptions
+
+设置ListItem的多态样式。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.UIDesign.HDSPattern.Standard
+
+起始版本： 26.0.0
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| selectedBackgroundColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 选中态背景颜色。 默认值：Color.Transparent。 |
+| normalBackgroundColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 正常态背景颜色。 默认值：Color.Transparent。 |
 
 #### SwipeIconType
 
@@ -392,4 +408,4 @@ export class LazyDataSource<T> implements IDataSource {
 
 执行上述示例中的代码效果如下：
 
-![](./img/zh-cn_image_0000002631254236.gif)
+![](./img/zh-cn_image_0000002656009364.gif)

@@ -2,8 +2,8 @@
 title: "@ohos.bluetooth.baseProfile (蓝牙baseProfile模块)"
 upstream_id: "harmonyos-references/js-apis-bluetooth-baseprofile"
 catalog: "harmonyos-references"
-content_hash: "b65ed6d29632"
-synced_at: "2026-07-09T00:59:22.741322"
+content_hash: "e49f7b959d9b"
+synced_at: "2026-07-28T16:50:35.700393"
 ---
 
 # @ohos.bluetooth.baseProfile (蓝牙baseProfile模块)
@@ -30,6 +30,8 @@ type ProfileConnectionState = constant.ProfileConnectionState
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
+模型约束：此接口仅可在Stage模型下使用。
+
 | 类型 | 说明 |
 | --- | --- |
 | [constant.ProfileConnectionState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bluetooth-constant#profileconnectionstate) | 本端和对端蓝牙设备间的Profile连接状态。 |
@@ -40,17 +42,22 @@ type ProfileConnectionState = constant.ProfileConnectionState
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
+模型约束：此接口仅可在Stage模型下使用。
+
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | deviceId | string | 否 | 否 | 对端设备地址，例如："XX:XX:XX:XX:XX:XX"。 |
 | state | [ProfileConnectionState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bluetooth-constant#profileconnectionstate) | 否 | 否 | Profile连接状态。 |
 | cause12+ | [DisconnectCause](#disconnectcause12) | 否 | 否 | Profile断开连接的原因。 |
+| role | [PanRole](#panrole) | 否 | 是 | 当前对端设备对应的[PAN](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#pan)角色。 **起始版本**：26.0.0 |
 
 #### DisconnectCause12+
 
 枚举，Profile断开连接的原因。
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
@@ -61,15 +68,35 @@ type ProfileConnectionState = constant.ProfileConnectionState
 | TOO_MANY_CONNECTED_DEVICES | 4 | 当前连接数量超过上限。 |
 | CONNECT_FAIL_INTERNAL | 5 | 内部错误。 |
 
+#### PanRole
+
+枚举，PAN的不同角色。
+
+起始版本：26.0.0
+
+系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
+
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| ROLE_PANNAP | 0 | [NAP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#panu)角色。 |
+| ROLE_PANU | 1 | [PANU](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#panu)角色。 |
+
 #### BaseProfile.getConnectedDevices
 
 getConnectedDevices(): Array<string>
 
 获取和本端设备间已连接Profile的对端设备列表。
 
-需要权限：ohos.permission.ACCESS_BLUETOOTH
+需要权限：
+
+- API版本26.0.0+：ohos.permission.ACCESS_BLUETOOTH 或 (ohos.permission.ACCESS_BLUETOOTH 和 ohos.permission.GET_BLUETOOTH_PEERS_MAC)
+- API版本10-24：ohos.permission.ACCESS_BLUETOOTH
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 返回值：
 
@@ -115,6 +142,8 @@ getConnectionState(deviceId: string): ProfileConnectionState
 需要权限：ohos.permission.ACCESS_BLUETOOTH
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -162,9 +191,14 @@ on(type: 'connectionStateChange', callback: Callback<StateChangeParam>): void
 
 订阅Profile的连接状态变化事件。使用Callback异步回调。
 
-需要权限：ohos.permission.ACCESS_BLUETOOTH
+需要权限：
+
+- API版本26.0.0+：ohos.permission.ACCESS_BLUETOOTH 或 (ohos.permission.ACCESS_BLUETOOTH 和 ohos.permission.GET_BLUETOOTH_PEERS_MAC)
+- API版本10-24：ohos.permission.ACCESS_BLUETOOTH
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -180,7 +214,7 @@ on(type: 'connectionStateChange', callback: Callback<StateChangeParam>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 401 | Invalid parameter. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 401 | Invalid parameter. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. 适用版本：10-24 |
 | 801 | Capability not supported. |
 
 示例：
@@ -209,6 +243,8 @@ off(type: 'connectionStateChange', callback?: Callback<[StateChangeParam](#state
 需要权限：ohos.permission.ACCESS_BLUETOOTH
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 

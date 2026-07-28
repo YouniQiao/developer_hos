@@ -2,8 +2,8 @@
 title: "OH_ArkUI_TextEditorStyledStringController"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller"
 catalog: "harmonyos-references"
-content_hash: "fc03b52bba73"
-synced_at: "2026-07-09T00:58:48.088948"
+content_hash: "c984649e78bd"
+synced_at: "2026-07-28T16:49:48.017181"
 ---
 
 # OH_ArkUI_TextEditorStyledStringController
@@ -20,4 +20,4 @@ typedef struct OH_ArkUI_TextEditorStyledStringController OH_ArkUI_TextEditorStyl
 
 相关模块： [ArkUI_NativeModule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule)
 
-所在头文件： [native_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h)
+所在头文件： [rich_editor.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rich-editor-h)

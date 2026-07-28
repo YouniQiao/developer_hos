@@ -2,8 +2,8 @@
 title: "reminderAgentManager错误码"
 upstream_id: "harmonyos-references/errorcode-reminderagentmanager"
 catalog: "harmonyos-references"
-content_hash: "132d34a1898e"
-synced_at: "2026-07-09T00:58:57.860641"
+content_hash: "366afa21157e"
+synced_at: "2026-07-28T16:50:00.164594"
 ---
 
 # reminderAgentManager错误码
@@ -43,8 +43,9 @@ The number of reminders exceeds the limit.
 可能原因
 
 1. 因管控限制，普通应用如果没有代理提醒的使用权限，视为这个普通应用提醒数量上限为0。
-2. 单个普通应用提醒数量不超过30个。
-3. 从API version 10开始，所有应用提醒数量总和不超过12000个。API version 9及之前的版本，提醒数量总和不超过2000个。
+2. 应用数量上限因API版本而异： API版本26.0.0及以上，单个普通应用最多支持64个提醒。
+3. API version 25及以下，单个普通应用最多支持30个提醒。
+4. 从API version 10开始，所有应用提醒数量总和不超过12000个。API version 9及之前的版本，提醒数量总和不超过2000个。
 
 处理步骤
 

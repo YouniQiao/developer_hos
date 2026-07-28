@@ -2,8 +2,8 @@
 title: "Enums"
 upstream_id: "harmonyos-references/arkts-apis-media-e"
 catalog: "harmonyos-references"
-content_hash: "cb136e1a88b8"
-synced_at: "2026-07-09T01:00:39.146493"
+content_hash: "6d061c24ee48"
+synced_at: "2026-07-28T16:51:56.858393"
 ---
 
 # Enums
@@ -82,6 +82,7 @@ Codec MIME类型枚举。
 | AUDIO_AAC | 'audio/mp4a-latm' | 表示音频/mp4a-latm类型。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | AUDIO_VORBIS | 'audio/vorbis' | 表示音频/vorbis类型。 |
 | AUDIO_FLAC | 'audio/flac' | 表示音频/flac类型。 |
+| AUDIO_RAW | 'audio/raw' | 表示音频/raw类型。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | AUDIO_MP312+ | 'audio/mpeg' | 表示音频/mpeg类型。 |
 | AUDIO_G711MU12+ | 'audio/g711mu' | 表示音频/G711-mulaw类型。 |
 | AUDIO_AMR_NB18+ | 'audio/3gpp' | 表示音频/amr-nb类型。 |
@@ -174,6 +175,8 @@ Codec MIME类型枚举。
 | TOTAL_DOWNLOAD_SIZE | 'total_loading_bytes' | 表示总的加载大小，单位为字节（Byte）。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | STALLING_COUNT | 'stalling_count' | 表示总的卡顿次数。 |
 | TOTAL_STALLING_TIME | 'total_stalling_time' | 表示总的卡顿时长，单位为毫秒（ms）。 |
+| LIP_ASYNC_COUNT | 'lip_async_count' | 表示总的音画不同步的次数。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| TOTAL_LIP_ASYNC_TIME | 'total_lip_async_time' | 表示总的音画不同步时长，单位为毫秒（ms）。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### BufferingInfoType8+
 
@@ -457,6 +460,12 @@ Codec MIME类型枚举。
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
 | AV_METRICS_EVENT_STALLING | 1 | 表示播放卡顿的指标事件。 |
+| AV_METRICS_EVENT_LIP_ASYNC | 2 | 表示音画不同步的指标事件。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| AV_METRICS_EVENT_LOADINGRATE_CHANGE | 3 | 表示加载速率变化超过10%的事件。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| AV_METRICS_EVENT_LOADING_ERROR | 4 | 表示加载数据请求错误的事件。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| AV_METRICS_EVENT_CONTENT_CHANGED | 5 | 表示播放内容切换的事件。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| AV_METRICS_EVENT_CONTENT_DISCONTINUITY | 6 | 表示播放内容不连续的事件。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| AV_METRICS_EVENT_AUDIO_ABNORMAL | 7 | 表示音频状态变化的事件。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### PlaylistLoopMode
 

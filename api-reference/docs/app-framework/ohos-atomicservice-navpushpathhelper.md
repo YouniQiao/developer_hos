@@ -2,8 +2,8 @@
 title: "NavPushPathHelper"
 upstream_id: "harmonyos-references/ohos-atomicservice-navpushpathhelper"
 catalog: "harmonyos-references"
-content_hash: "dad40b49b190"
-synced_at: "2026-07-09T00:58:13.630265"
+content_hash: "68aea15bbddc"
+synced_at: "2026-07-28T16:47:51.275983"
 ---
 
 # NavPushPathHelper
@@ -25,6 +25,10 @@ import { NavPushPathHelper } from '@kit.ArkUI';
 #### 属性
 
 不支持[通用属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-attributes)
+
+#### 事件
+
+不支持[通用事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-events)
 
 #### NavPushPathHelper
 
@@ -68,7 +72,7 @@ pushPath(moduleName: string, info: NavPathInfo, animated?: boolean): Promise<voi
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | 异常返回结果。 |
+| Promise | Promise对象，无返回结果。 |
 
 错误码：
 
@@ -102,7 +106,7 @@ pushPath(moduleName: string, info: NavPathInfo, options?: NavigationOptions): Pr
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | 异常返回结果。 |
+| Promise | Promise对象，无返回结果。 |
 
 错误码：
 
@@ -135,7 +139,7 @@ pushPathByName(moduleName: string, name: string, param: Object, animated?: boole
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | 异常返回结果。 |
+| Promise | Promise对象，无返回结果。 |
 
 错误码：
 
@@ -169,7 +173,7 @@ pushPathByName(moduleName: string, name: string, param: Object, onPop: Callback<
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | 异常返回结果。 |
+| Promise | Promise对象，无返回结果。 |
 
 错误码：
 
@@ -201,7 +205,7 @@ pushDestination(moduleName: string, info: NavPathInfo, animated?: boolean): Prom
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | 异常返回结果。 |
+| Promise | Promise对象，无返回结果。 |
 
 错误码：
 
@@ -239,7 +243,7 @@ pushDestination(moduleName: string, info: NavPathInfo, options?: NavigationOptio
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | 异常返回结果。 |
+| Promise | Promise对象，无返回结果。 |
 
 错误码：
 
@@ -276,7 +280,7 @@ pushDestinationByName(moduleName: string, name: string, param: Object, animated?
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | 异常返回结果。 |
+| Promise | Promise对象，无返回结果。 |
 
 错误码：
 
@@ -314,7 +318,7 @@ pushDestinationByName(moduleName: string, name: string, param: Object, onPop: Ca
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | 异常返回结果。 |
+| Promise | Promise对象，无返回结果。 |
 
 错误码：
 
@@ -350,7 +354,7 @@ replacePath(moduleName: string, info: NavPathInfo, animated?: boolean): Promise<
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | 异常返回结果。 |
+| Promise | Promise对象，无返回结果。 |
 
 错误码：
 
@@ -384,7 +388,7 @@ replacePath(moduleName: string, info: NavPathInfo, options?: NavigationOptions):
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | 异常返回结果。 |
+| Promise | Promise对象，无返回结果。 |
 
 错误码：
 
@@ -417,7 +421,7 @@ replacePathByName(moduleName: string, name: string, param: Object, animated?: bo
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | 异常返回结果。 |
+| Promise | Promise对象，无返回结果。 |
 
 错误码：
 
@@ -426,10 +430,6 @@ replacePathByName(moduleName: string, name: string, param: Object, animated?: bo
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 300001 | hsp silent install fail. |
-
-#### 事件
-
-不支持[通用事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-events)
 
 #### 示例
 
@@ -744,4 +744,4 @@ export struct PageTwo {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002631413678.gif)
+ ![](./img/zh-cn_image_0000002686088405.gif)

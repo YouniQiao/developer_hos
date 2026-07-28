@@ -2,8 +2,8 @@
 title: "@ohos.arkui.componentSnapshot (组件截图)"
 upstream_id: "harmonyos-references/js-apis-arkui-componentsnapshot"
 catalog: "harmonyos-references"
-content_hash: "9454f8ec2172"
-synced_at: "2026-07-09T00:57:28.030592"
+content_hash: "55164d38bb3c"
+synced_at: "2026-07-28T16:40:58.824277"
 ---
 
 # @ohos.arkui.componentSnapshot (组件截图)
@@ -105,7 +105,7 @@ struct SnapshotExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732173.gif)
+ ![](./img/zh-cn_image_0000002686087673.gif)
 
 #### componentSnapshot.get(deprecated)
 
@@ -188,7 +188,7 @@ struct SnapshotExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732173.gif)
+ ![](./img/zh-cn_image_0000002686087673.gif)
 
 #### componentSnapshot.createFromBuilder(deprecated)
 
@@ -226,7 +226,7 @@ createFromBuilder(builder: CustomBuilder, callback: AsyncCallback<image.PixelMap
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameters types; 3. Parameter verification failed. |
 | 100001 | The builder is not a valid build function. |
-| 160001 | An image component in builder is not ready for taking a snapshot. The check for the ready state is required when the checkImageStatus option is enabled. |
+| 160001 | An image component in builder is not ready for taking a snapshot. The check for the ready state is required when the checkImageStatus option is enabled. 适用版本：12+ |
 
 ![](./img/note_3.0-zh-cn.png) 直接使用componentSnapshot可能导致[UI上下文不明确](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-global-interface#ui上下文不明确)的问题，建议使用getUIContext()获取[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)实例，并使用[getComponentSnapshot](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getcomponentsnapshot12)获取绑定实例的componentSnapshot。
 
@@ -291,7 +291,7 @@ struct OffscreenSnapshotExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253052.gif)
+ ![](./img/zh-cn_image_0000002685927845.gif)
 
 #### componentSnapshot.createFromBuilder(deprecated)
 
@@ -334,7 +334,7 @@ createFromBuilder(builder: CustomBuilder, delay?: number, checkImageStatus?: boo
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameters types; 3. Parameter verification failed. |
 | 100001 | The builder is not a valid build function. |
-| 160001 | An image component in builder is not ready for taking a snapshot. The check for the ready state is required when the checkImageStatus option is enabled. |
+| 160001 | An image component in builder is not ready for taking a snapshot. The check for the ready state is required when the checkImageStatus option is enabled. 适用版本：12+ |
 
 ![](./img/note_3.0-zh-cn.png) 直接使用componentSnapshot可能导致[UI上下文不明确](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-global-interface#ui上下文不明确)的问题，建议使用getUIContext()获取[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)实例，并使用[getComponentSnapshot](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getcomponentsnapshot12)获取绑定实例的componentSnapshot。
 
@@ -397,7 +397,7 @@ struct OffscreenSnapshotExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253052.gif)
+ ![](./img/zh-cn_image_0000002685927845.gif)
 
 #### componentSnapshot.getSync12+
 
@@ -416,13 +416,13 @@ getSync(id: string, options?: SnapshotOptions): image.PixelMap
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | id | string | 是 | 目标组件的[组件标识](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-component-id)。 |
-| options | [SnapshotOptions](#snapshotoptions12) | 否 | 截图相关的自定义参数。 |
+| options | [SnapshotOptions](#snapshotoptions12) | 否 | 截图相关的自定义参数，用于在需要自定义截图行为时传入，例如设置缩放比例、等待渲染完成、截图区域、色彩空间或动态范围等。不传入时使用默认截图配置。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| image.[PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 截图返回的结果。 |
+| image.[PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 组件截图的PixelMap对象，用于表示截取到的组件图像。 |
 
 错误码：
 
@@ -433,7 +433,7 @@ getSync(id: string, options?: SnapshotOptions): image.PixelMap
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameters types; 3. Parameter verification failed. |
 | 100001 | Invalid ID. |
 | 160002 | Timeout. |
-| 160003 | Unsupported color space or dynamic range mode in snapshot options. |
+| 160003 | Unsupported color space or dynamic range mode in snapshot options. 适用版本：23+ |
 
 ![](./img/note_3.0-zh-cn.png) 直接使用componentSnapshot可能导致[UI上下文不明确](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-global-interface#ui上下文不明确)的问题。建议使用getUIContext()获取[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)实例，并使用[getComponentSnapshot](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getcomponentsnapshot12)获取绑定实例的componentSnapshot。
 
@@ -458,17 +458,17 @@ struct SnapshotExample {
           .width(200)
           .height(200)
           .margin(5)
-          .id("root")
+          .id('root')
       }
 
-      Button("click to generate UI snapshot")
+      Button('click to generate UI snapshot')
         .onClick(() => {
           try {
             // 建议使用this.getUIContext().getComponentSnapshot().getSync()
-            let pixelmap = componentSnapshot.getSync("root", { scale: 2, waitUntilRenderFinished: true })
-            this.pixmap = pixelmap
+            let pixelmap = componentSnapshot.getSync('root', { scale: 2, waitUntilRenderFinished: true });
+            this.pixmap = pixelmap;
           } catch (error) {
-            console.error(`getSync errorCode:${error.code} message:${error.message}`)
+            console.error(`getSync error message:${error.message}`);
           }
         }).margin(10)
     }
@@ -478,7 +478,7 @@ struct SnapshotExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732173.gif)
+ ![](./img/zh-cn_image_0000002686087673.gif)
 
 #### SnapshotSizeLimitation
 
@@ -494,17 +494,19 @@ struct SnapshotExample {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| maxWidth | number | 否 | 否 | 组件截图的最大宽度限制。 取值范围：（-∞，+∞） 单位：px |
-| maxHeight | number | 否 | 否 | 组件截图的最大高度限制。 取值范围：（-∞，+∞） 单位：px |
+| maxWidth | number | 否 | 否 | 组件截图的最大宽度限制。 取值范围：[0, +∞) 单位：px |
+| maxHeight | number | 否 | 否 | 组件截图的最大高度限制。 取值范围：[0, +∞) 单位：px |
 
 #### SnapshotOptions12+
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| scale | number | 否 | 是 | 指定截图时图形侧绘制pixelmap的缩放比例，比例过大时截图时间会变长，或者截图可能会失败。 取值范围：[0, +∞)，当小于等于0时按默认情况处理。 默认值：1 **说明：** 请不要截取过大尺寸的图片，截图不建议超过屏幕尺寸的大小。当要截取的图片目标长宽超过底层限制时，截图会返回失败，不同设备的底层限制不同。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| waitUntilRenderFinished | boolean | 否 | 是 | 设置是否强制系统在截图前等待所有绘制指令执行完毕。true表示强制系统在截图前等待所有绘制指令执行完毕，false表示不强制系统在截图前等待所有绘制指令执行完毕。该选项可尽可能确保截图内容是最新的状态，应尽量开启。需要注意的是，开启后接口可能需要更长的时间返回，具体的时间依赖页面当时时刻需要重绘区域的大小。 默认值：false **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| scale | number | 否 | 是 | 指定截图时图形侧绘制pixelmap的缩放比例，比例过大时截图时间会变长，或者截图可能会失败。 取值范围：[0, +∞)，当小于等于0时按默认情况处理。 默认值：1 **说明：** 请不要截取过大尺寸的图片，截图不建议超过屏幕尺寸的大小。当要截取的图片目标长宽超过底层限制时，截图会返回失败，不同设备的底层限制不同，具体限制可通过[getSizeLimitation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-componentsnapshot#getsizelimitation)方法获取。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| waitUntilRenderFinished | boolean | 否 | 是 | 设置是否强制系统在截图前等待所有绘制指令执行完毕。true表示强制系统在截图前等待所有绘制指令执行完毕，false表示不强制系统在截图前等待所有绘制指令执行完毕。该选项可尽可能确保截图内容是最新的状态，应尽量开启。需要注意的是，开启后接口可能需要更长的时间返回，具体的时间依赖页面当前时刻需要重绘区域的大小。 默认值：false **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | region15+ | [SnapshotRegionType](#snapshotregiontype15) | 否 | 是 | 指定截图的矩形区域范围，默认为整个组件。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
 | colorMode23+ | [ColorModeOptions](#colormodeoptions23) | 否 | 是 | 指定截图使用的色彩空间。 默认值：{colorSpace: SRGB, isAuto: false} **元服务API：** 从API version 23开始，该接口支持在元服务中使用。 |
 | dynamicRangeMode23+ | [DynamicRangeModeOptions](#dynamicrangemodeoptions23) | 否 | 是 | 指定截图使用的动态范围模式。 默认值：{dynamicRangeMode: STANDARD, isAuto: false} **元服务API：** 从API version 23开始，该接口支持在元服务中使用。 |
@@ -514,6 +516,8 @@ struct SnapshotExample {
 定义截图时所使用的色彩空间。
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -543,17 +547,17 @@ struct SnapshotColorModeExample {
           .width(200)
           .height(200)
           .margin(5)
-          .id("root")
+          .id('root')
       }
 
-      Button("click to generate UI snapshot")
+      Button('click to generate UI snapshot')
         .onClick(() => {
-          this.getUIContext().getComponentSnapshot().get("root", (error: Error, pixmap: image.PixelMap) => {
+          this.getUIContext().getComponentSnapshot().get('root', (error: Error, pixmap: image.PixelMap) => {
             if (error) {
-              console.error(`error:${JSON.stringify(error)}`)
+              console.error(`error:${JSON.stringify(error)}`);
               return;
             }
-            this.pixmap = pixmap
+            this.pixmap = pixmap;
           }, {
             scale: 2,
             waitUntilRenderFinished: true,
@@ -568,13 +572,15 @@ struct SnapshotColorModeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732173.gif)
+ ![](./img/zh-cn_image_0000002686087673.gif)
 
 #### DynamicRangeModeOptions23+
 
 定义截图所使用的动态范围模式。
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -603,17 +609,17 @@ struct SnapshotDynamicRangeExample {
           .width(200)
           .height(200)
           .margin(5)
-          .id("root")
+          .id('root')
       }
 
-      Button("click to generate UI snapshot")
+      Button('click to generate UI snapshot')
         .onClick(() => {
-          this.getUIContext().getComponentSnapshot().get("root", (error: Error, pixmap: image.PixelMap) => {
+          this.getUIContext().getComponentSnapshot().get('root', (error: Error, pixmap: image.PixelMap) => {
             if (error) {
-              console.error(`error:${JSON.stringify(error)}`)
+              console.error(`error:${JSON.stringify(error)}`);
               return;
             }
-            this.pixmap = pixmap
+            this.pixmap = pixmap;
           }, {
             scale: 2,
             waitUntilRenderFinished: true,
@@ -628,7 +634,7 @@ struct SnapshotDynamicRangeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732173.gif)
+ ![](./img/zh-cn_image_0000002686087673.gif)
 
 #### SnapshotRegionType15+
 
@@ -637,6 +643,8 @@ type SnapshotRegionType = SnapshotRegion | LocalizedSnapshotRegion
 表示组件截图区域，取值类型为下表中的任一类型。
 
 元服务API： 从API version 15开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -651,14 +659,16 @@ type SnapshotRegionType = SnapshotRegion | LocalizedSnapshotRegion
 
 元服务API： 从API version 15开始，该接口支持在元服务中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| left | number | 否 | 否 | 截图区域矩形左上角的x轴坐标。 单位：px 取值范围：[0, 组件宽度] |
-| top | number | 否 | 否 | 截图区域矩形左上角的y轴坐标。 单位：px 取值范围：[0, 组件高度] |
-| right | number | 否 | 否 | 截图区域矩形右下角的x轴坐标。 单位：px 取值范围：[0, 组件宽度] |
-| bottom | number | 否 | 否 | 截图区域矩形右下角的y轴坐标。 单位：px 取值范围：[0, 组件高度] |
+| left | number | 否 | 否 | 截图区域矩形左上角的x轴坐标。 单位：px 取值范围：[0, 组件宽度]。取值超出范围时，截图失败，返回错误码401。 |
+| top | number | 否 | 否 | 截图区域矩形左上角的y轴坐标。 单位：px 取值范围：[0, 组件高度]。取值超出范围时，截图失败，返回错误码401。 |
+| right | number | 否 | 否 | 截图区域矩形右下角的x轴坐标。 单位：px 取值范围：[0, 组件宽度]。取值超出范围时，截图失败，返回错误码401。 |
+| bottom | number | 否 | 否 | 截图区域矩形右下角的y轴坐标。 单位：px 取值范围：[0, 组件高度]。取值超出范围时，截图失败，返回错误码401。 |
 
 #### LocalizedSnapshotRegion15+
 
@@ -666,14 +676,16 @@ type SnapshotRegionType = SnapshotRegion | LocalizedSnapshotRegion
 
 元服务API： 从API version 15开始，该接口支持在元服务中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| start | number | 否 | 否 | 布局方向为LTR时表示截图区域矩形左上角的x轴坐标，布局方向为RTL时表示截图区域矩形右上角的x轴坐标。 单位：px 取值范围：[0, 组件宽度] |
-| top | number | 否 | 否 | 布局方向为LTR时表示截图区域矩形左上角的y轴坐标，布局方向为RTL时表示截图区域矩形右上角的y轴坐标。 单位：px 取值范围：[0, 组件高度] |
-| end | number | 否 | 否 | 布局方向为LTR时表示截图区域矩形右下角的x轴坐标，布局方向为RTL时表示截图区域矩形左下角的x轴坐标。 单位：px 取值范围：[0, 组件宽度] |
-| bottom | number | 否 | 否 | 布局方向为LTR时表示截图区域矩形右下角的y轴坐标，布局方向为RTL时表示截图区域矩形左下角的y轴坐标。 单位：px 取值范围：[0, 组件高度] |
+| start | number | 否 | 否 | 布局方向为LTR时表示截图区域矩形左上角的x轴坐标，布局方向为RTL时表示截图区域矩形右上角的x轴坐标。 单位：px 取值范围：[0, 组件宽度]。取值超出范围时，截图失败，返回错误码401。 |
+| top | number | 否 | 否 | 布局方向为LTR时表示截图区域矩形左上角的y轴坐标，布局方向为RTL时表示截图区域矩形右上角的y轴坐标。 单位：px 取值范围：[0, 组件高度]。取值超出范围时，截图失败，返回错误码401。 |
+| end | number | 否 | 否 | 布局方向为LTR时表示截图区域矩形右下角的x轴坐标，布局方向为RTL时表示截图区域矩形左下角的x轴坐标。 单位：px 取值范围：[0, 组件宽度]。取值超出范围时，截图失败，返回错误码401。 |
+| bottom | number | 否 | 否 | 布局方向为LTR时表示截图区域矩形右下角的y轴坐标，布局方向为RTL时表示截图区域矩形左下角的y轴坐标。 单位：px 取值范围：[0, 组件高度]。取值超出范围时，截图失败，返回错误码401。 |
 
 ![](./img/note_3.0-zh-cn.png) 直接使用componentSnapshot可能导致[UI上下文不明确](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-global-interface#ui上下文不明确)的问题，建议使用getUIContext()获取[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)实例，并使用[getComponentSnapshot](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getcomponentsnapshot12)获取绑定实例的componentSnapshot。
 
@@ -692,31 +704,31 @@ struct SnapshotExample {
       Row() {
         Column() {
           TextClock()
-          Button("Button ABCDE").type(ButtonType.Normal)
+          Button('Button ABCDE').type(ButtonType.Normal)
           Row() {
             Checkbox()
-            Text("√")
-            Text(" | ")
+            Text('√')
+            Text(' | ')
             Checkbox()
-            Text("×")
+            Text('×')
           }.align(Alignment.Start)
 
           TextInput()
         }
         .align(Alignment.Start)
-        .id("component1")
-        .width("600px")
-        .height("600px")
+        .id('component1')
+        .width('600px')
+        .height('600px')
         .borderRadius(6)
         .borderWidth(2)
         .borderColor(Color.Green)
 
       }
 
-      Button("get capture")
+      Button('get capture')
         .onClick(() => {
           try {
-            let pixelmap = this.getUIContext().getComponentSnapshot().getSync("component1",
+            let pixelmap = this.getUIContext().getComponentSnapshot().getSync('component1',
               {
                 scale: 2,
                 waitUntilRenderFinished: true,
@@ -727,14 +739,14 @@ struct SnapshotExample {
                   bottom: 240
                 }
               })
-            this.pixmap = pixelmap
+            this.pixmap = pixelmap;
           } catch (error) {
-            console.error(`getSync errorCode:${error.code} message:${error.message}`)
+            console.error(`getSync error message:${error.message}`);
           }
         }).margin(10)
-      Image(this.pixmap).border({ color: Color.Black, width: 2 }).width("600px")
-    }.width("100%").align(Alignment.Center)
+      Image(this.pixmap).border({ color: Color.Black, width: 2 }).width('600px')
+    }.width('100%').align(Alignment.Center)
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612235.gif)
+ ![](./img/zh-cn_image_0000002656008166.gif)

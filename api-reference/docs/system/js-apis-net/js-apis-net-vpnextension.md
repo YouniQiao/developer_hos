@@ -2,25 +2,19 @@
 title: "@ohos.net.vpnExtension (VPN增强管理)"
 upstream_id: "harmonyos-references/js-apis-net-vpnextension"
 catalog: "harmonyos-references"
-content_hash: "302ca718c9b6"
-synced_at: "2026-07-09T00:59:27.964743"
+content_hash: "8b9d0972647c"
+synced_at: "2026-07-28T16:50:43.248843"
 ---
 
 # @ohos.net.vpnExtension (VPN增强管理)
 
 三方VPN管理模块，支持三方VPN的启动和停止功能。三方VPN是指由第三方提供的VPN服务，它们通常提供更多的功能和更广泛的网络连接选项，包括更多的安全和隐私功能，以及更全面的定制选项。当前提供三方VPN能力主要用于创建虚拟网卡及配置VPN路由信息，连接隧道过程及内部连接的协议需要应用内部自行实现。
 
-![](./img/note_3.0-zh-cn.png) 本模块首批接口从 API version 11 开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
+![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 11开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
-以下模块不支持在VpnExtensionAbility中引用，可能会导致程序异常退出。
+#### 约束限制
 
-- [@ohos.contact (联系人)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-contact)
-- [@ohos.geolocation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-geolocation)、[@ohos.geoLocationManager (位置服务)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-geolocationmanager)
-- [@ohos.multimedia.audio(音频管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio)
-- [@ohos.multimedia.camera(相机管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera)
-- [@ohos.telephony.call (拨打电话)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-call)
-- [@ohos.telephony.sim (SIM卡管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-sim)
-- [@ohos.telephony.sms (短信服务)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-sms)
+为保障系统安全性和稳定性，防止VpnExtensionAbility滥用系统资源，系统对其能力进行管控，不支持部分模块的引用，详情请参考[附录](#附录)。
 
 #### 导入模块
 
@@ -760,7 +754,7 @@ export default class MyVpnExtAbility  extends VpnExtensionAbility {
 | addresses | Array | 否 | 否 | VPN虚拟网卡的IP地址。API version 23之前，最多支持64个IP地址；从API version 23开始，最多支持2000个IP地址。 |
 | vpnId20+ | string | 否 | 是 | VPN唯一标识。 |
 | routes | Array | 否 | 是 | VPN虚拟网卡的路由信息（API version 23前最多可配置1024条路由；从API version 23开始最多可配置10000条路由）。 |
-| dnsAddresses | Array | 否 | 是 | DNS服务器地址信息。当配置DNS服务器地址后，VPN启动状态下被代理的应用上网时，使用配置的DNS服务器做DNS查询。 |
+| dnsAddresses | Array | 否 | 是 | DNS服务器地址信息。当配置DNS服务器地址后，VPN启动状态下被代理的应用上网时，使用配置的DNS服务器做DNS查询。最多可配置64个DNS服务器地址。 |
 | searchDomains | Array | 否 | 是 | DNS的搜索域列表。 |
 | mtu | number | 否 | 是 | 最大传输单元MTU值（单位：字节）。取值范围：[576，1500]。 |
 | isIPv4Accepted | boolean | 否 | 是 | 是否支持IPv4。true表示支持，false表示不支持, 默认值为true。 **注意**：若支持IPv4功能，需要在addresses中配置IPv4类型的IP地址。 |
@@ -779,7 +773,9 @@ let vpnConfig: vpnExtension.VpnConfig = {
   addresses: [],
   vpnId: '123',
   routes: [{
-    interface: "eth0",
+    // 网卡名称配置为空时，系统默认将路由配置到VPN虚拟网卡。
+    // 如填写非虚拟网卡实际名称，可能导致路由配置异常。
+    interface: "vpn-tun",
     destination: {
       address: {
         address:'',
@@ -789,6 +785,8 @@ let vpnConfig: vpnExtension.VpnConfig = {
       prefixLength:1
     },
     gateway: {
+      // 网关地址配置为空时，系统默认将VPN虚拟网卡地址作为网关地址。
+      // 如需使用非VPN虚拟网卡地址，请确保地址可达，否则可能导致路由配置失败。
       address:'',
       family:1,
       port:8080
@@ -810,3 +808,18 @@ function vpnCreate(){
   })
 }
 ```
+
+#### 附录
+
+VpnExtensionAbility不支持以下模块的引用。
+
+| Kit | 模块 |
+| --- | --- |
+| Contacts Kit | [@ohos.contact (联系人)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-contact) |
+| Location Kit | [@ohos.geolocation (位置服务)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-geolocation) |
+| Location Kit | [@ohos.geoLocationManager (位置服务)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-geolocationmanager) |
+| Audio Kit | [@ohos.multimedia.audio (音频管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio) |
+| Camera Kit | [@ohos.multimedia.camera (相机管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera) |
+| Telephony Kit | [@ohos.telephony.call (拨打电话)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-call) |
+| Telephony Kit | [@ohos.telephony.sim (SIM卡管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-sim) |
+| Telephony Kit | [@ohos.telephony.sms (短信服务)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-sms) |

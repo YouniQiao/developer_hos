@@ -2,14 +2,14 @@
 title: "OH_AVTranscoder"
 upstream_id: "harmonyos-references/capi-avtranscoder-oh-avtranscoder"
 catalog: "harmonyos-references"
-content_hash: "e08440c90f1b"
-synced_at: "2026-07-09T01:00:43.057809"
+content_hash: "77f7b203bd90"
+synced_at: "2026-07-28T16:52:00.550772"
 ---
 
 # OH_AVTranscoder
 
 ```
-typedef struct OH_AVTranscoder OH_AVTranscoder
+typedef struct OH_AVTranscoder OH_AVTranscoder;
 ```
 
 #### 概述

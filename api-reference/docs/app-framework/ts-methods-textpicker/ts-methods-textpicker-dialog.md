@@ -2,20 +2,20 @@
 title: "文本滑动选择器弹窗 (TextPickerDialog)"
 upstream_id: "harmonyos-references/ts-methods-textpicker-dialog"
 catalog: "harmonyos-references"
-content_hash: "ba1cbf9b6d40"
-synced_at: "2026-07-09T00:58:10.983499"
+content_hash: "70e570d4d948"
+synced_at: "2026-07-28T16:47:31.221985"
 ---
 
 # 文本滑动选择器弹窗 (TextPickerDialog)
 
-根据指定的选择范围创建文本选择器，展示在弹窗上。
+根据指定的选择范围创建文本滑动选择器，展示在弹窗上。该组件适用于设置页面、表单录入、数据筛选等需要用户从预设选项中选择文本的场景。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 该组件从API version 8开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+- 该组件从API version 8开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 - 本模块功能依赖UI的执行上下文，不可在[UI上下文不明确](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-global-interface#ui上下文不明确)的地方使用，参见[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)说明。
 - 本模块不支持深浅色模式热更新，如果需要进行深浅色模式切换，请重新打开弹窗。
-- 最大显示行数在横、竖屏模式下存在差异。竖屏时默认为5行，横屏时依赖系统配置，未配置时默认显示为3行。可通过如下参数查看具体配置值$r('sys.float.ohos_id_picker_show_count_landscape')。
+- 最大显示行数在横、竖屏模式下存在差异。竖屏时默认为5行，横屏时依赖系统配置，未配置时默认显示为3行。可通过如下资源引用查看具体配置值$r('sys.float.ohos_id_picker_show_count_landscape')。
 
 #### TextPickerDialog
 
@@ -39,7 +39,7 @@ static show(options?: TextPickerDialogOptions)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [TextPickerDialogOptions](#textpickerdialogoptions对象说明) | 否 | 配置文本选择器弹窗的参数。参数缺省时无法弹出弹窗。 |
+| options | [TextPickerDialogOptions](#textpickerdialogoptions对象说明) | 否 | 配置文本选择器弹窗的参数，缺省时无法弹出弹窗。至少需要提供range参数才能正常弹出弹窗，其他参数均为可选配置。 |
 
 #### TextPickerDialogOptions对象说明
 
@@ -51,42 +51,40 @@ static show(options?: TextPickerDialogOptions)
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| defaultPickerItemHeight | number | string | 否 | 是 | 设置选择器中选项的高度。number类型取值范围：[0, +∞)，string类型仅支持number类型取值的字符串形式，例如"56"。 默认值：选中项56vp，非选中项36vp。设置该参数后，选中项与非选中项的高度均为所设置的值。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| disappearTextStyle10+ | [PickerTextStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-picker-common#pickertextstyle对象说明) | 否 | 是 | 设置边缘项（以选中项为基准向上或向下的第二项）的文本颜色、字号、字体粗细。 默认值： { color: '#ff182431', font: { size: '14fp', weight: FontWeight.Regular } } **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| textStyle10+ | [PickerTextStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-picker-common#pickertextstyle对象说明) | 否 | 是 | 设置待选项（以选中项为基准向上或向下的第一项）的文本颜色、字号、字体粗细。 默认值： { color: '#ff182431', font: { size: '16fp', weight: FontWeight.Regular } } **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| selectedTextStyle10+ | [PickerTextStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-picker-common#pickertextstyle对象说明) | 否 | 是 | 设置选中项的文本颜色、字号、字体粗细。 默认值： { color: '#ff007dff', font: { size: '20fp', weight: FontWeight.Medium } } **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| acceptButtonStyle12+ | [PickerDialogButtonStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-picker-common#pickerdialogbuttonstyle12对象说明) | 否 | 是 | 设置确认按钮显示样式、样式和重要程度、角色、背景色、圆角、文本颜色、字号、字体粗细、字体样式、字体列表、按钮是否默认响应Enter键。 **说明：** 1.acceptButtonStyle与cancelButtonStyle中最多只能有一个primary字段配置为true，如果同时设置为true，则primary字段不生效，保持默认值false。 2.按钮高度默认40vp，在关怀模式-大字体场景下高度不变，即使按钮样式设置为圆角矩形[ROUNDED_RECTANGLE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#buttontype枚举说明)，呈现效果依然是胶囊型按钮[Capsule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#buttontype枚举说明)。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| cancelButtonStyle12+ | [PickerDialogButtonStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-picker-common#pickerdialogbuttonstyle12对象说明) | 否 | 是 | 设置取消按钮显示样式、样式和重要程度、角色、背景色、圆角、文本颜色、字号、字体粗细、字体样式、字体列表、按钮是否默认响应Enter键。 **说明：** 1.acceptButtonStyle与cancelButtonStyle中最多只能有一个primary字段配置为true，如果同时设置为true，则primary字段不生效，保持默认值false。 2.按钮高度默认40vp，在关怀模式-大字体场景下高度不变，即使按钮样式设置为圆角矩形[ROUNDED_RECTANGLE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#buttontype枚举说明)，呈现效果依然是胶囊型按钮[Capsule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#buttontype枚举说明)。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| defaultPickerItemHeight | number | string | 否 | 是 | 设置选择器中选项的高度。number类型取值范围：[0, +∞)，默认值：选中项56vp，非选中项36vp。设置该参数后，选中项与非选中项的高度均为所设置的值。string类型仅支持number类型取值的字符串形式，例如"56"。 **说明：** 当defaultPickerItemHeight的值为负数时，使用默认值。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| disappearTextStyle10+ | [PickerTextStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-picker-common#pickertextstyle对象说明) | 否 | 是 | 设置边缘项（以选中项为基准向上或向下的第二项）的文本颜色、字号、字体粗细等。 默认值： { color: '#ff182431', font: { size: '14fp', weight: FontWeight.Regular } } **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| textStyle10+ | [PickerTextStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-picker-common#pickertextstyle对象说明) | 否 | 是 | 设置待选项（以选中项为基准向上或向下的第一项）的文本颜色、字号、字体粗细等。 默认值： { color: '#ff182431', font: { size: '16fp', weight: FontWeight.Regular } } **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| selectedTextStyle10+ | [PickerTextStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-picker-common#pickertextstyle对象说明) | 否 | 是 | 设置选中项的文本颜色、字号、字体粗细等。 默认值： { color: '#ff007dff', font: { size: '20fp', weight: FontWeight.Medium } } **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| acceptButtonStyle12+ | [PickerDialogButtonStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-picker-common#pickerdialogbuttonstyle12对象说明) | 否 | 是 | 设置确认按钮显示样式、重要程度、角色、背景色、圆角、文本颜色、字号、字体粗细、字体样式、字体列表、按钮是否默认响应Enter键。 **说明：** 1.acceptButtonStyle与cancelButtonStyle中最多只能有一个primary字段配置为true，如果同时设置为true，则primary字段不生效，保持默认值false。 2.按钮高度默认40vp，borderRadius单位为vp。在关怀模式-大字体场景下高度不变，即使按钮样式设置为圆角矩形[ROUNDED_RECTANGLE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#buttontype枚举说明)，呈现效果依然是胶囊型按钮[Capsule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#buttontype枚举说明)。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| cancelButtonStyle12+ | [PickerDialogButtonStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-picker-common#pickerdialogbuttonstyle12对象说明) | 否 | 是 | 设置取消按钮显示样式、重要程度、角色、背景色、圆角、文本颜色、字号、字体粗细、字体样式、字体列表、按钮是否默认响应Enter键。 **说明：** 1.acceptButtonStyle与cancelButtonStyle中最多只能有一个primary字段配置为true，如果同时设置为true，则primary字段不生效，保持默认值false。 2.按钮高度默认40vp，borderRadius单位为vp。在关怀模式-大字体场景下高度不变，即使按钮样式设置为圆角矩形[ROUNDED_RECTANGLE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#buttontype枚举说明)，呈现效果依然是胶囊型按钮[Capsule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#buttontype枚举说明)。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | canLoop10+ | boolean | 否 | 是 | 设置是否可循环滚动。 - true：可循环。 - false：不可循环。 默认值：true **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | alignment10+ | [DialogAlignment](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-methods-alert-dialog-box#dialogalignment枚举说明) | 否 | 是 | 弹窗在竖直方向上的对齐方式。 默认值：DialogAlignment.Default **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| offset10+ | [Offset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#offset) | 否 | 是 | 弹窗相对alignment所在位置的偏移量。 默认值：{ dx: 0 , dy: 0 } **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| maskRect10+ | [Rectangle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-methods-alert-dialog-box#rectangle8类型说明) | 否 | 是 | 弹窗遮蔽层区域，在遮蔽层区域内的事件不透传，在遮蔽层区域外的事件透传。 默认值：{ x: 0, y: 0, width: '100%', height: '100%' } **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| offset10+ | [Offset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#offset) | 否 | 是 | 弹窗相对alignment所在位置的偏移量。当需要微调弹窗位置时设置此参数，不设置时弹窗按alignment对齐位置显示。 默认值：{ dx: 0 , dy: 0 } **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| maskRect10+ | [Rectangle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-methods-alert-dialog-box#rectangle8类型说明) | 否 | 是 | 弹窗遮蔽层区域，在遮蔽层区域内的事件不透传，在遮蔽层区域外的事件透传。当需要限制弹窗的交互区域或实现特殊的交互效果时设置此参数。 默认值：{ x: 0, y: 0, width: '100%', height: '100%' } **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | onAccept | (value: [TextPickerResult](#textpickerresult对象说明)) => void | 否 | 是 | 点击弹窗中的“确定”按钮时触发该回调。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | onCancel | () => void | 否 | 是 | 点击弹窗中的“取消”按钮时触发该回调。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| onChange | (value: [TextPickerResult](#textpickerresult对象说明)) => void | 否 | 是 | 滑动弹窗中的选择器后，选项归位至选中项位置时，触发该回调。 回调会在滑动动画结束后触发，如果需要快速获取索引值变化，建议使用onEnterSelectedArea接口。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| onScrollStop14+ | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 否 | 是 | 滑动弹窗中的选择器的选择列停止时，触发该回调。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| backgroundColor11+ | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 弹窗背板颜色。 默认值：Color.Transparent **说明：** 当设置了backgroundColor为非透明色时，backgroundBlurStyle需要设置为BlurStyle.NONE，否则显示的颜色将不符合预期效果。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| backgroundBlurStyle11+ | [BlurStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#blurstyle9) | 否 | 是 | 弹窗背板模糊材质。 默认值：BlurStyle.COMPONENT_ULTRA_THICK **说明：** 设置为BlurStyle.NONE即可关闭背景虚化。当设置了backgroundBlurStyle为非NONE值时，则不要设置backgroundColor，否则显示的颜色将不符合预期效果。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| backgroundBlurStyleOptions19+ | [BackgroundBlurStyleOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundblurstyleoptions10对象说明) | 否 | 是 | 背景模糊效果。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| backgroundEffect19+ | [BackgroundEffectOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundeffectoptions11) | 否 | 是 | 背景效果参数。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| onDidAppear12+ | () => void | 否 | 是 | 弹窗弹出后的事件回调。 **说明：** 1.正常时序依次为：onWillAppear>>onDidAppear>>(onAccept/onCancel/onChange/onScrollStop)>>onWillDisappear>>onDidDisappear。 2.在onDidAppear内设置改变弹窗显示效果的回调事件，二次弹出生效。 3.快速点击弹出，消失弹窗时，存在onWillDisappear在onDidAppear前生效。 4. 当弹窗入场动效未完成时关闭弹窗，该回调不会触发。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| onChange | (value: [TextPickerResult](#textpickerresult对象说明)) => void | 否 | 是 | 滑动弹窗中的选择器后，选项归位至选中项位置时，触发该回调，用于获取最终选择结果。 回调会在滑动动画结束后触发，如果需要快速获取索引值变化，建议使用onEnterSelectedArea接口。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| onScrollStop14+ | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 否 | 是 | 滑动弹窗中的选择器的选择列停止时，触发该回调，用于监听物理滑动停止事件。两者触发时机略有不同，onChange侧重于选项选中状态，onScrollStop侧重于滑动动作结束。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| backgroundColor11+ | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 弹窗背板颜色。 默认值：Color.Transparent **说明：** 1.当设置了backgroundColor为非透明色时，backgroundBlurStyle需要设置为BlurStyle.NONE，不要设置backgroundBlurStyle为非NONE值，否则显示的颜色将不符合预期效果。 2.从API版本26.0.0开始，设置systemMaterial后该属性不生效。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| backgroundBlurStyle11+ | [BlurStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#blurstyle9) | 否 | 是 | 弹窗背板模糊材质。 默认值：BlurStyle.COMPONENT_ULTRA_THICK **说明：** 1.设置为BlurStyle.NONE即可关闭背景虚化。当设置了backgroundBlurStyle为非NONE值时，则不要设置backgroundColor，否则显示的颜色将不符合预期效果。 2.从API版本26.0.0开始，设置systemMaterial后该属性不生效。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| backgroundBlurStyleOptions19+ | [BackgroundBlurStyleOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundblurstyleoptions10对象说明) | 否 | 是 | 背景模糊效果参数，用于自定义弹窗背景模糊的显示样式，支持配置颜色模式、自适应颜色、缩放比例等属性，实现不同的背景模糊视觉效果。 **说明：** 未设置时沿用backgroundBlurStyle的默认效果（BlurStyle.COMPONENT_ULTRA_THICK）；设置后将覆盖backgroundBlurStyle的效果。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| backgroundEffect19+ | [BackgroundEffectOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundeffectoptions11) | 否 | 是 | 背景效果参数，用于自定义弹窗背景的显示效果，支持配置模糊半径、饱和度、亮度、颜色等属性，实现不同的背景视觉效果。 **说明：** 未设置时不生效，此时弹窗背景模糊效果由backgroundBlurStyle决定；设置后将覆盖backgroundBlurStyle的效果。从API版本26.0.0开始，设置systemMaterial后backgroundEffect与backgroundBlurStyle均不生效。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| onDidAppear12+ | () => void | 否 | 是 | 弹窗弹出后的事件回调。 **说明：** 1.正常时序依次为：onWillAppear>>onDidAppear>>(onAccept/onCancel/onChange/onScrollStop)>>onWillDisappear>>onDidDisappear。 2.在onDidAppear内设置改变弹窗显示效果的回调事件，二次弹出生效。 3.快速点击弹出，消失弹窗时，存在onWillDisappear在onDidAppear前生效，此时onDidAppear中的参数设置可能无法在当前弹窗生效。 4. 当弹窗入场动效未完成时关闭弹窗，该回调不会触发。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | onDidDisappear12+ | () => void | 否 | 是 | 弹窗消失后的事件回调。 **说明：** 1.正常时序依次为：onWillAppear>>onDidAppear>>(onAccept/onCancel/onChange/onScrollStop)>>onWillDisappear>>onDidDisappear。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | onWillAppear12+ | () => void | 否 | 是 | 弹窗显示动效前的事件回调。 **说明：** 1.正常时序依次为：onWillAppear>>onDidAppear>>(onAccept/onCancel/onChange/onScrollStop)>>onWillDisappear>>onDidDisappear。 2.在onWillAppear内设置改变弹窗显示效果的回调事件，二次弹出生效。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | onWillDisappear12+ | () => void | 否 | 是 | 弹窗退出动效前的事件回调。 **说明：** 1.正常时序依次为：onWillAppear>>onDidAppear>>(onAccept/onCancel/onChange/onScrollStop)>>onWillDisappear>>onDidDisappear。 2.快速点击弹出，消失弹窗时，存在onWillDisappear在onDidAppear前生效。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | shadow12+ | [ShadowOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadowoptions对象说明) | [ShadowStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadowstyle10枚举说明) | 否 | 是 | 设置弹窗背板的阴影。 当设备为2in1时，默认场景下获焦阴影值为ShadowStyle.OUTER_FLOATING_MD，失焦为ShadowStyle.OUTER_FLOATING_SM **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| enableHoverMode14+ | boolean | 否 | 是 | 是否响应悬停态。 - true：响应悬停态。 - false：不响应悬停态。 默认值：false **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| hoverModeArea14+ | [HoverModeAreaType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#hovermodeareatype14) | 否 | 是 | 设置悬停态下弹窗默认展示区域。 默认值：HoverModeAreaType.BOTTOM_SCREEN **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| enableHoverMode14+ | boolean | 否 | 是 | 是否响应悬停态。 - true：响应悬停态（适用于折叠屏悬停模式等交互场景）。 - false：不响应悬停态。 默认值：false **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| hoverModeArea14+ | [HoverModeAreaType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#hovermodeareatype14) | 否 | 是 | 设置悬停态下弹窗默认展示区域，仅在enableHoverMode为true时生效。 默认值：HoverModeAreaType.BOTTOM_SCREEN **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | disableTextStyleAnimation15+ | boolean | 否 | 是 | 设置是否关闭滑动过程中文本样式变化的动效。 - true：关闭文本样式变化动效。 - false：不关闭文本样式变化动效。 默认值：false **说明：** 设置为true时，滑动过程中无字号、字重、字体颜色等变化动效，且文本均显示为defaultTextStyle属性设置的样式。如未设置defaultTextStyle，则显示为[Text](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text)组件默认样式。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | defaultTextStyle15+ | [TextPickerTextStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textpicker#textpickertextstyle15类型说明) | 否 | 是 | 设置关闭滑动过程中文本样式变化动效时的各个选项的文本样式，仅当disableTextStyleAnimation为true时生效。 默认值：与[Text](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text)组件默认值相同。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| onEnterSelectedArea18+ | Callback | 否 | 是 | 滑动过程中，选项进入分割线区域内，触发该回调。与onChange事件的差别在于，该事件的触发时机早于onChange事件，当当前滑动列滑动距离超过选中项高度的一半时，选项此时已经进入分割线区域内，会触发该事件。 **说明：** 在多列联动场景中，不建议使用该回调，由于该回调标识的是滑动过程中选项进入分割线区域内的节点，而跟随变化的选项并不涉及滑动，因此，回调的返回值中，仅当前滑动列的值会正常变化，其余未滑动列的值保持不变。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| enableHapticFeedback18+ | boolean | 否 | 是 | 设置是否开启触控反馈。 - true：开启触控反馈。 - false：不开启触控反馈。 默认值：true **元服务API**： 从API version 18开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 **说明**： 1. 设置为true后，其生效情况取决于系统的硬件是否支持。 2. 开启触控反馈时，需要在工程的src/main/module.json5文件的"module"内配置requestPermissions字段开启振动权限，配置如下： "requestPermissions": [{"name": "ohos.permission.VIBRATE"}] |
+| onEnterSelectedArea18+ | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 否 | 是 | 滑动过程中，选项进入分割线区域内，触发该回调。与onChange事件的差别在于，该事件的触发时机早于onChange事件，当当前滑动列滑动距离超过选中项高度的一半时，选项此时已经进入分割线区域内，会触发该事件。 **说明：** 在多列联动场景中，不建议使用该回调，由于该回调标识的是滑动过程中选项进入分割线区域内的节点，而跟随变化的选项并不涉及滑动，因此，回调的返回值中，仅当前滑动列的值会正常变化，其余未滑动列的值保持不变。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| enableHapticFeedback18+ | boolean | 否 | 是 | 设置是否开启触控反馈。 - true：开启触控反馈。 - false：不开启触控反馈。 默认值：true **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 **说明：** 1. 设置为true后，其生效情况取决于系统的硬件是否支持。 2. 开启触控反馈时，需要在工程的src/main/module.json5文件的"module"内配置requestPermissions字段开启振动权限，配置如下： "requestPermissions": [{"name": "ohos.permission.VIBRATE"}] |
 | selectedBackgroundStyle20+ | [PickerBackgroundStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textpicker#pickerbackgroundstyle20) | 否 | 是 | 设置选中项背景样式。 默认值： { color: $r('sys.color.comp_background_tertiary'), borderRadius: $r('sys.float.corner_radius_level12') } **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### TextPickerDialogOptionsExt20+对象说明
 
 文本选择器弹窗的参数继承自[TextPickerOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textpicker#textpickeroptions对象说明)。
-
-元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -96,36 +94,37 @@ static show(options?: TextPickerDialogOptions)
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| defaultPickerItemHeight | number | string | 否 | 是 | 设置选择器中选项的高度。number类型取值范围：[0, +∞)，string类型仅支持number类型取值的字符串形式，例如"56"。 默认值：选中项56vp，非选中项36vp。设置该参数后，选中项与非选中项的高度均为所设置的值。 |
-| acceptButtonStyle | [PickerDialogButtonStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-picker-common#pickerdialogbuttonstyle12对象说明) | 否 | 是 | 设置确认按钮显示样式、样式和重要程度、角色、背景色、圆角、文本颜色、字号、字体粗细、字体样式、字体列表、按钮是否默认响应Enter键。 **说明：** 1.acceptButtonStyle与cancelButtonStyle中最多只能有一个primary字段配置为true，如果同时设置为true，则primary字段不生效，保持默认值false。 2.按钮高度默认40vp，在关怀模式-大字体场景下高度不变，即使按钮样式设置为圆角矩形[ROUNDED_RECTANGLE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#buttontype枚举说明)，呈现效果依然是胶囊型按钮[Capsule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#buttontype枚举说明)。 |
-| cancelButtonStyle | [PickerDialogButtonStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-picker-common#pickerdialogbuttonstyle12对象说明) | 否 | 是 | 设置取消按钮显示样式、样式和重要程度、角色、背景色、圆角、文本颜色、字号、字体粗细、字体样式、字体列表、按钮是否默认响应Enter键。 **说明：** 1.acceptButtonStyle与cancelButtonStyle中最多只能有一个primary字段配置为true，如果同时设置为true，则primary字段不生效，保持默认值false。 2.按钮高度默认40vp，在关怀模式-大字体场景下高度不变，即使按钮样式设置为圆角矩形[ROUNDED_RECTANGLE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#buttontype枚举说明)，呈现效果依然是胶囊型按钮[Capsule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#buttontype枚举说明)。 |
-| canLoop | boolean | 否 | 是 | 设置是否可循环滚动。 - true：可循环。 - false：不可循环。 默认值：true |
-| alignment | [DialogAlignment](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-methods-alert-dialog-box#dialogalignment枚举说明) | 否 | 是 | 弹窗在竖直方向上的对齐方式。 默认值：DialogAlignment.Default |
-| offset | [Offset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#offset) | 否 | 是 | 弹窗相对alignment所在位置的偏移量。 默认值：{ dx: 0 , dy: 0 } |
-| maskRect | [Rectangle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-methods-alert-dialog-box#rectangle8类型说明) | 否 | 是 | 弹窗遮蔽层区域，在遮蔽层区域内的事件不透传，在遮蔽层区域外的事件透传。 默认值：{ x: 0, y: 0, width: '100%', height: '100%' } |
-| onAccept | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 否 | 是 | 点击弹窗中的“确定”按钮时触发该回调。 |
-| onCancel | [VoidCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#voidcallback12) | 否 | 是 | 点击弹窗中的“取消”按钮时触发该回调。 |
-| onChange | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 否 | 是 | 滑动弹窗中的选择器后，选项归位至选中项位置时，触发该回调。 回调会在滑动动画结束后触发，如果需要快速获取索引值变化，建议使用onEnterSelectedArea接口。 |
-| onScrollStop | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 否 | 是 | 滑动弹窗中的选择器的选择列停止时，触发该回调。 |
-| backgroundColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 弹窗背板颜色。 默认值：Color.Transparent **说明：** 当设置了backgroundColor为非透明色时，backgroundBlurStyle需要设置为BlurStyle.NONE，否则显示的颜色将不符合预期效果。 |
-| backgroundBlurStyle | [BlurStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#blurstyle9) | 否 | 是 | 弹窗背板模糊材质。 默认值：BlurStyle.COMPONENT_ULTRA_THICK **说明：** 设置为BlurStyle.NONE即可关闭背景虚化。当设置了backgroundBlurStyle为非NONE值时，则不要设置backgroundColor，否则显示的颜色将不符合预期效果。 |
-| backgroundBlurStyleOptions | [BackgroundBlurStyleOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundblurstyleoptions10对象说明) | 否 | 是 | 背景模糊效果。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
-| backgroundEffect | [BackgroundEffectOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundeffectoptions11) | 否 | 是 | 背景效果参数。 |
-| onDidAppear | [VoidCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#voidcallback12) | 否 | 是 | 弹窗弹出后的事件回调。 **说明：** 1.正常时序依次为：onWillAppear>>onDidAppear>>(onAccept/onCancel/onChange/onScrollStop)>>onWillDisappear>>onDidDisappear。 2.在onDidAppear内设置改变弹窗显示效果的回调事件，二次弹出生效。 3.快速点击弹出，消失弹窗时，存在onWillDisappear在onDidAppear前生效。 4. 当弹窗入场动效未完成时关闭弹窗，该回调不会触发。 |
-| onDidDisappear | [VoidCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#voidcallback12) | 否 | 是 | 弹窗消失后的事件回调。 **说明：** 1.正常时序依次为：onWillAppear>>onDidAppear>>(onAccept/onCancel/onChange/onScrollStop)>>onWillDisappear>>onDidDisappear。 |
-| onWillAppear | [VoidCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#voidcallback12) | 否 | 是 | 弹窗显示动效前的事件回调。 **说明：** 1.正常时序依次为：onWillAppear>>onDidAppear>>(onAccept/onCancel/onChange/onScrollStop)>>onWillDisappear>>onDidDisappear。 2.在onWillAppear内设置改变弹窗显示效果的回调事件，二次弹出生效。 |
-| onWillDisappear | [VoidCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#voidcallback12) | 否 | 是 | 弹窗退出动效前的事件回调。 **说明：** 1.正常时序依次为：onWillAppear>>onDidAppear>>(onAccept/onCancel/onChange/onScrollStop)>>onWillDisappear>>onDidDisappear。 2.快速点击弹出，消失弹窗时，存在onWillDisappear在onDidAppear前生效。 |
-| shadow | [ShadowOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadowoptions对象说明) | [ShadowStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadowstyle10枚举说明) | 否 | 是 | 设置弹窗背板的阴影。 当设备为2in1时，默认场景下获焦阴影值为ShadowStyle.OUTER_FLOATING_MD，失焦为ShadowStyle.OUTER_FLOATING_SM |
-| enableHoverMode | boolean | 否 | 是 | 是否响应悬停态。 - true：响应悬停态。 - false：不响应悬停态。 默认值：false |
-| hoverModeArea | [HoverModeAreaType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#hovermodeareatype14) | 否 | 是 | 设置悬停态下弹窗默认展示区域。 默认值：HoverModeAreaType.BOTTOM_SCREEN |
-| disableTextStyleAnimation | boolean | 否 | 是 | 设置是否关闭滑动过程中文本样式变化的动效。 - true：关闭文本样式变化动效。 - false：不关闭文本样式变化动效。 默认值：false **说明：** 设置为true时，滑动过程中无字号、字重、字体颜色等变化动效，且文本均显示为defaultTextStyle属性设置的样式。如未设置defaultTextStyle，则显示为[Text](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text)组件默认样式。 |
-| defaultTextStyle | [TextPickerTextStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textpicker#textpickertextstyle15类型说明) | 否 | 是 | 设置关闭滑动过程中文本样式变化动效时的各个选项的文本样式，仅当disableTextStyleAnimation为true时生效。 默认值：与[Text](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text)组件默认值相同。 |
-| onEnterSelectedArea | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 否 | 是 | 滑动过程中，选项进入分割线区域内，触发该回调。与onChange事件的差别在于，该事件的触发时机早于onChange事件，当当前滑动列滑动距离超过选中项高度的一半时，选项此时已经进入分割线区域内，会触发该事件。 **说明：** 在多列联动场景中，不建议使用该回调，由于该回调标识的是滑动过程中选项进入分割线区域内的节点，而跟随变化的选项并不涉及滑动，因此，回调的返回值中，仅当前滑动列的值会正常变化，其余未滑动列的值保持不变。 |
-| enableHapticFeedback | boolean | 否 | 是 | 设置是否开启触控反馈。 - true：开启触控反馈。 - false：不开启触控反馈。 默认值：true **说明**： 1. 设置为true后，其生效情况取决于系统的硬件是否支持。 2. 开启触控反馈时，需要在工程的src/main/module.json5文件的"module"内配置requestPermissions字段开启振动权限，配置如下： "requestPermissions": [{"name": "ohos.permission.VIBRATE"}] |
-| selectedBackgroundStyle | [PickerBackgroundStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textpicker#pickerbackgroundstyle20) | 否 | 是 | 设置选中项背景样式。 默认值： { color: $r('sys.color.comp_background_tertiary'), borderRadius: $r('sys.float.corner_radius_level12') } |
-| disappearTextStyle | [TextPickerTextStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textpicker#textpickertextstyle15类型说明) | 否 | 是 | 设置边缘项（以选中项为基准向上或向下的第二项）的文本颜色、字号、字体粗细、最大字号、最小字号、超长文本截断方式。 默认值： { color: '#ff182431', font: { size: '14fp', weight: FontWeight.Regular }, minFontSize: 0, maxFontSize: 0, overflow: TextOverflow.CLIP } |
-| textStyle | [TextPickerTextStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textpicker#textpickertextstyle15类型说明) | 否 | 是 | 设置待选项（以选中项为基准向上或向下的第一项）的文本颜色、字号、字体粗细、最大字号、最小字号、超长文本截断方式。 默认值： { color: '#ff182431', font: { size: '16fp', weight: FontWeight.Regular }, minFontSize: 0, maxFontSize: 0, overflow: TextOverflow.CLIP } |
-| selectedTextStyle | [TextPickerTextStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textpicker#textpickertextstyle15类型说明) | 否 | 是 | 设置选中项的文本颜色、字号、字体粗细、最大字号、最小字号、超长文本截断方式。 默认值： { color: '#ff007dff', font: { size: '20fp', weight: FontWeight.Medium }, minFontSize: 0, maxFontSize: 0, overflow: TextOverflow.CLIP } |
+| defaultPickerItemHeight | number | string | 否 | 是 | 设置选择器中选项的高度。number类型取值范围：[0, +∞)，string类型仅支持number类型取值的字符串形式，例如"56"。 默认值：选中项56vp，非选中项36vp。设置该参数后，选中项与非选中项的高度均为所设置的值。 **说明：** 当defaultPickerItemHeight的值为负数时，使用默认值。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| acceptButtonStyle | [PickerDialogButtonStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-picker-common#pickerdialogbuttonstyle12对象说明) | 否 | 是 | 设置确认按钮显示样式、重要程度、角色、背景色、圆角、文本颜色、字号、字体粗细、字体样式、字体列表、按钮是否默认响应Enter键。 **说明：** 1.acceptButtonStyle与cancelButtonStyle中最多只能有一个primary字段配置为true，如果同时设置为true，则primary字段不生效，保持默认值false。 2.按钮高度默认40vp，在关怀模式-大字体场景下高度不变，即使按钮样式设置为圆角矩形[ROUNDED_RECTANGLE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#buttontype枚举说明)，呈现效果依然是胶囊型按钮[Capsule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#buttontype枚举说明)。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| cancelButtonStyle | [PickerDialogButtonStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-picker-common#pickerdialogbuttonstyle12对象说明) | 否 | 是 | 设置取消按钮显示样式、重要程度、角色、背景色、圆角、文本颜色、字号、字体粗细、字体样式、字体列表、按钮是否默认响应Enter键。 **说明：** 1.acceptButtonStyle与cancelButtonStyle中最多只能有一个primary字段配置为true，如果同时设置为true，则primary字段不生效，保持默认值false。 2.按钮高度默认40vp，在关怀模式-大字体场景下高度不变，即使按钮样式设置为圆角矩形[ROUNDED_RECTANGLE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#buttontype枚举说明)，呈现效果依然是胶囊型按钮[Capsule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#buttontype枚举说明)。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| canLoop | boolean | 否 | 是 | 设置是否可循环滚动。 - true：可循环。 - false：不可循环。 默认值：true **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| alignment | [DialogAlignment](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-methods-alert-dialog-box#dialogalignment枚举说明) | 否 | 是 | 弹窗在竖直方向上的对齐方式。 默认值：DialogAlignment.Default **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| offset | [Offset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#offset) | 否 | 是 | 弹窗相对alignment所在位置的偏移量。当需要微调弹窗位置时设置此参数，不设置时弹窗按alignment对齐位置显示。 默认值：{ dx: 0 , dy: 0 } **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| maskRect | [Rectangle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-methods-alert-dialog-box#rectangle8类型说明) | 否 | 是 | 弹窗遮蔽层区域，在遮蔽层区域内的事件不透传，在遮蔽层区域外的事件透传。 默认值：{ x: 0, y: 0, width: '100%', height: '100%' } **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| onAccept | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 否 | 是 | 点击弹窗中的“确定”按钮时触发该回调。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| onCancel | [VoidCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#voidcallback12) | 否 | 是 | 点击弹窗中的“取消”按钮时触发该回调。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| onChange | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 否 | 是 | 滑动弹窗中的选择器后，选项归位至选中项位置时，触发该回调，用于获取最终选择结果。 回调会在滑动动画结束后触发，如果需要快速获取索引值变化，建议使用onEnterSelectedArea接口。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| onScrollStop | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 否 | 是 | 滑动弹窗中的选择器的选择列停止时，触发该回调，用于监听物理滑动停止事件。两者触发时机略有不同，onChange侧重于选项选中状态，onScrollStop侧重于滑动动作结束。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| backgroundColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 弹窗背板颜色。 默认值：Color.Transparent **说明：** 当设置了backgroundColor为非透明色时，backgroundBlurStyle需要设置为BlurStyle.NONE，否则显示的颜色将不符合预期效果。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| backgroundBlurStyle | [BlurStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#blurstyle9) | 否 | 是 | 弹窗背板模糊材质。 默认值：BlurStyle.COMPONENT_ULTRA_THICK **说明：** 设置为BlurStyle.NONE即可关闭背景虚化。当设置了backgroundBlurStyle为非NONE值时，则不要设置backgroundColor，否则显示的颜色将不符合预期效果。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| backgroundBlurStyleOptions | [BackgroundBlurStyleOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundblurstyleoptions10对象说明) | 否 | 是 | 背景模糊效果参数，用于自定义弹窗背景模糊的显示样式，支持配置颜色模式、自适应颜色、缩放比例等属性，实现不同的背景模糊视觉效果。 **说明：** 未设置时沿用backgroundBlurStyle的默认效果（BlurStyle.COMPONENT_ULTRA_THICK）；设置后将覆盖backgroundBlurStyle的效果。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| backgroundEffect | [BackgroundEffectOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundeffectoptions11) | 否 | 是 | 背景效果参数，用于自定义弹窗背景的显示效果，支持配置模糊半径、饱和度、亮度、颜色等属性，实现不同的背景视觉效果。 **说明：** 未设置时不生效，此时弹窗背景模糊效果由backgroundBlurStyle决定；设置后将覆盖backgroundBlurStyle的效果。从API版本26.0.0开始，设置systemMaterial后backgroundEffect与backgroundBlurStyle均不生效。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| onDidAppear | [VoidCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#voidcallback12) | 否 | 是 | 弹窗弹出后的事件回调。 **说明：** 1.正常时序依次为：onWillAppear>>onDidAppear>>(onAccept/onCancel/onChange/onScrollStop)>>onWillDisappear>>onDidDisappear。 2.在onDidAppear内设置改变弹窗显示效果的回调事件，二次弹出生效。 3.快速点击弹出，消失弹窗时，存在onWillDisappear在onDidAppear前生效，此时onDidAppear中的参数设置可能无法在当前弹窗生效。 4. 当弹窗入场动效未完成时关闭弹窗，该回调不会触发。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| onDidDisappear | [VoidCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#voidcallback12) | 否 | 是 | 弹窗消失后的事件回调。 **说明：** 1.正常时序依次为：onWillAppear>>onDidAppear>>(onAccept/onCancel/onChange/onScrollStop)>>onWillDisappear>>onDidDisappear。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| onWillAppear | [VoidCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#voidcallback12) | 否 | 是 | 弹窗显示动效前的事件回调。 **说明：** 1.正常时序依次为：onWillAppear>>onDidAppear>>(onAccept/onCancel/onChange/onScrollStop)>>onWillDisappear>>onDidDisappear。 2.在onWillAppear内设置改变弹窗显示效果的回调事件，二次弹出生效。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| onWillDisappear | [VoidCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#voidcallback12) | 否 | 是 | 弹窗退出动效前的事件回调。 **说明：** 1.正常时序依次为：onWillAppear>>onDidAppear>>(onAccept/onCancel/onChange/onScrollStop)>>onWillDisappear>>onDidDisappear。 2.快速点击弹出，消失弹窗时，存在onWillDisappear在onDidAppear前生效。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| shadow | [ShadowOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadowoptions对象说明) | [ShadowStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadowstyle10枚举说明) | 否 | 是 | 设置弹窗背板的阴影。 当设备为2in1时，默认场景下获焦阴影值为ShadowStyle.OUTER_FLOATING_MD，失焦为ShadowStyle.OUTER_FLOATING_SM **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| enableHoverMode | boolean | 否 | 是 | 是否响应悬停态。 - true：响应悬停态。 - false：不响应悬停态。 默认值：false **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| hoverModeArea | [HoverModeAreaType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#hovermodeareatype14) | 否 | 是 | 设置悬停态下弹窗默认展示区域，仅在enableHoverMode为true时生效。 默认值：HoverModeAreaType.BOTTOM_SCREEN **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| disableTextStyleAnimation | boolean | 否 | 是 | 设置是否关闭滑动过程中文本样式变化的动效。 - true：关闭文本样式变化动效。 - false：不关闭文本样式变化动效。 默认值：false **说明：** 设置为true时，滑动过程中无字号、字重、字体颜色等变化动效，且文本均显示为defaultTextStyle属性设置的样式。如未设置defaultTextStyle，则显示为[Text](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text)组件默认样式。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| defaultTextStyle | [TextPickerTextStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textpicker#textpickertextstyle15类型说明) | 否 | 是 | 设置关闭滑动过程中文本样式变化动效时的各个选项的文本样式，仅当disableTextStyleAnimation为true时生效。 默认值：与[Text](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text)组件默认值相同。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| onEnterSelectedArea | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 否 | 是 | 滑动过程中，选项进入分割线区域内，触发该回调。与onChange事件的差别在于，该事件的触发时机早于onChange事件，当当前滑动列滑动距离超过选中项高度的一半时，选项此时已经进入分割线区域内，会触发该事件。 **说明：** 在多列联动场景中，不建议使用该回调，由于该回调标识的是滑动过程中选项进入分割线区域内的节点，而跟随变化的选项并不涉及滑动，因此，回调的返回值中，仅当前滑动列的值会正常变化，其余未滑动列的值保持不变。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| enableHapticFeedback | boolean | 否 | 是 | 设置是否开启触控反馈。 - true：开启触控反馈。 - false：不开启触控反馈。 默认值：true **说明**： 1. 设置为true后，其生效情况取决于系统的硬件是否支持。 2. 开启触控反馈时，需要在工程的src/main/module.json5文件的"module"内配置requestPermissions字段开启振动权限，配置如下： "requestPermissions": [{"name": "ohos.permission.VIBRATE"}] **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| selectedBackgroundStyle | [PickerBackgroundStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textpicker#pickerbackgroundstyle20) | 否 | 是 | 设置选中项背景样式。 默认值： { color: $r('sys.color.comp_background_tertiary'), borderRadius: $r('sys.float.corner_radius_level12') } **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| disappearTextStyle | [TextPickerTextStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textpicker#textpickertextstyle15类型说明) | 否 | 是 | 设置边缘项（以选中项为基准向上或向下的第二项）的文本颜色、字号、字体粗细、最大字号、最小字号、超长文本截断方式。 默认值： { color: '#ff182431', font: { size: '14fp', weight: FontWeight.Regular }, minFontSize: 0, maxFontSize: 0, overflow: TextOverflow.CLIP } **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| textStyle | [TextPickerTextStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textpicker#textpickertextstyle15类型说明) | 否 | 是 | 设置待选项（以选中项为基准向上或向下的第一项）的文本颜色、字号、字体粗细、最大字号、最小字号、超长文本截断方式。 默认值： { color: '#ff182431', font: { size: '16fp', weight: FontWeight.Regular }, minFontSize: 0, maxFontSize: 0, overflow: TextOverflow.CLIP } **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| selectedTextStyle | [TextPickerTextStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textpicker#textpickertextstyle15类型说明) | 否 | 是 | 设置选中项的文本颜色、字号、字体粗细、最大字号、最小字号、超长文本截断方式。 默认值： { color: '#ff007dff', font: { size: '20fp', weight: FontWeight.Medium }, minFontSize: 0, maxFontSize: 0, overflow: TextOverflow.CLIP } **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| systemMaterial | [SystemUiMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemuimaterial) | 否 | 是 | 设置弹窗的系统材质。当需要使用系统预定义的材质效果以快速实现统一的视觉效果时设置此参数。 **说明：** - 默认值为ImmersiveOptions的style为ImmersiveStyle.ULTRA_THICK的ImmersiveMaterial对象，设置undefined时与默认值保持一致。不同的材质具有不同的效果。 - 该接口影响背景色[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、背景模糊[backgroundBlurStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundblurstyle9)、背景效果[backgroundEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundeffect11)、边框颜色[borderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#bordercolor)、边框宽度[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)、阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)，当设置系统材质时，上述接口不生效。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
 
 #### TextPickerResult对象说明
 
@@ -139,7 +138,7 @@ static show(options?: TextPickerDialogOptions)
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| value | string | string []10+ | 否 | 否 | 选中项的文本内容。 **说明**：当显示文本或图片加文本列表时，value值为选中项中的文本值。（文本选择器显示多列时，value为数组类型。） 当显示图片列表时，value值为空。 value值不支持包含转义字符'\'。 |
+| value | string | string[]10+ | 否 | 否 | 选中项的文本内容。 **说明**：当显示文本或图片加文本列表时，value值为选中项中的文本值。（文本选择器显示多列时，value为数组类型。） 当显示图片列表时，value值为空。 value值必须在range参数定义的选项范围内，不支持包含转义字符''。 |
 | index | number | number []10+ | 否 | 否 | 选中项在选择范围数组中的索引值，索引从0开始。（文本选择器显示多列时，index为数组类型。） |
 
 #### 示例
@@ -206,7 +205,7 @@ struct TextPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413650.gif)
+ ![](./img/zh-cn_image_0000002686088379.gif)
 
 #### [h2]示例2（自定义样式）
 
@@ -293,7 +292,7 @@ struct TextPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732881.png)
+ ![](./img/zh-cn_image_0000002685928547.png)
 
 #### [h2]示例3（悬停态弹窗）
 
@@ -357,7 +356,7 @@ struct TextPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253760.gif)
+ ![](./img/zh-cn_image_0000002656008870.gif)
 
 #### [h2]示例4（设置弹窗位置）
 
@@ -398,7 +397,7 @@ struct TextPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612943.png)
+ ![](./img/zh-cn_image_0000002655848950.png)
 
 #### [h2]示例5（设置遮蔽区）
 
@@ -443,7 +442,7 @@ struct TextPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413652.png)
+ ![](./img/zh-cn_image_0000002686088381.png)
 
 #### [h2]示例6（设置弹窗背板）
 
@@ -485,7 +484,7 @@ struct TextPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732883.png)
+ ![](./img/zh-cn_image_0000002685928549.png)
 
 #### [h2]示例7（设置循环滚动）
 
@@ -526,7 +525,7 @@ struct TextPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253762.gif)
+ ![](./img/zh-cn_image_0000002656008872.gif)
 
 #### [h2]示例8（设置选中项的背景样式）
 
@@ -538,7 +537,7 @@ struct TextPickerDialogExample {
 // xxx.ets
 @Entry
 @Component
-struct TextPickerExample {
+struct TextPickerDialogExample {
   private showText1: string [] = ['Text1', 'Text1', 'Text1', 'Text1']
   build() {
     Column() {
@@ -550,12 +549,12 @@ struct TextPickerExample {
               range: this.showText1,
               selectedBackgroundStyle: {
                 borderRadius: {
-                  topLeft:15,
-                  topRight:15,
-                  bottomLeft:15,
-                  bottomRight:15
+                  topLeft: 15,
+                  topRight: 15,
+                  bottomLeft: 15,
+                  bottomRight: 15
                 },
-                color: 'FFC3C3C3'
+                color: '#FFC3C3C3'
               }
             })
           })
@@ -564,7 +563,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612945.gif)
+ ![](./img/zh-cn_image_0000002655848952.gif)
 
 #### [h2]示例9（自定义背景模糊效果参数）
 
@@ -573,7 +572,7 @@ struct TextPickerExample {
 ```
 @Entry
 @Component
-struct TextPickerExample {
+struct TextPickerDialogExample {
   private showText1: string [] = ['Text1', 'Text1', 'Text1', 'Text1']
 
   build() {
@@ -601,7 +600,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413654.png)
+ ![](./img/zh-cn_image_0000002686088383.png)
 
 #### [h2]示例10（自定义背景效果参数）
 
@@ -610,7 +609,7 @@ struct TextPickerExample {
 ```
 @Entry
 @Component
-struct TextPickerExample {
+struct TextPickerDialogExample {
   private showText1: string [] = ['Text1', 'Text1', 'Text1', 'Text1']
 
   build() {
@@ -639,4 +638,4 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732885.png)
+ ![](./img/zh-cn_image_0000002685928551.png)

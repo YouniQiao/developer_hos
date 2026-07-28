@@ -2,8 +2,8 @@
 title: "refresh"
 upstream_id: "harmonyos-references/js-components-container-refresh"
 catalog: "harmonyos-references"
-content_hash: "2447070df8e0"
-synced_at: "2026-07-09T00:58:20.852214"
+content_hash: "c717ed7b071c"
+synced_at: "2026-07-28T16:48:57.716253"
 ---
 
 # refresh
@@ -40,7 +40,7 @@ synced_at: "2026-07-09T00:58:20.852214"
 | 名称 | 类型 | 默认值 | 必填 | 描述 |
 | --- | --- | --- | --- | --- |
 | background-color | | white | 否 | 设置刷新组件的背景颜色。 |
-| progress-color | | black | 否 | 设置刷新组件的loading图标颜色。 |
+| progress-color | | black | 否 | 设置刷新组件的进度图标颜色。 |
 
 #### 事件
 
@@ -137,4 +137,4 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253886.gif)
+ ![](./img/zh-cn_image_0000002655849092.gif)

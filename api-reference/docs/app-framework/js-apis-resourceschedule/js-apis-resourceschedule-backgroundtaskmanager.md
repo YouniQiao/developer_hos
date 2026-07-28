@@ -2,8 +2,8 @@
 title: "@ohos.resourceschedule.backgroundTaskManager (后台任务管理)"
 upstream_id: "harmonyos-references/js-apis-resourceschedule-backgroundtaskmanager"
 catalog: "harmonyos-references"
-content_hash: "748e3ff2f6ae"
-synced_at: "2026-07-09T00:58:57.843780"
+content_hash: "1e4f9a9e44b0"
+synced_at: "2026-07-28T16:49:59.727320"
 ---
 
 # @ohos.resourceschedule.backgroundTaskManager (后台任务管理)
@@ -698,6 +698,7 @@ stopBackgroundRunning(context: Context, callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
+| 201 | Permission denied. 适用版本：9-18 |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. |
 | 9800001 | Memory operation failed. |
 | 9800002 | Failed to write data into parcel. Possible reasons: 1. Invalid parameters; 2. Failed to apply for memory. |
@@ -761,6 +762,7 @@ stopBackgroundRunning(context: Context): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
+| 201 | Permission denied. 适用版本：9-18 |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. |
 | 9800001 | Memory operation failed. |
 | 9800002 | Failed to write data into parcel. Possible reasons: 1. Invalid parameters; 2. Failed to apply for memory. |
@@ -1536,8 +1538,7 @@ export default class EntryAbility extends UIAbility {
 | --- | --- | --- |
 | USER_CANCEL_REMOVE_NOTIFICATION | 3 | 用户移除通知。 |
 | SYSTEM_CANCEL_DATA_TRANSFER_LOW_SPEED | 4 | 申请DATA_TRANSFER类型长时任务，但是数据传输速率低。 |
-| SYSTEM_CANCEL_AUDIO_PLAYBACK_NOT_USE_AVSESSION | 5 | 申请AUDIO_PLAYBACK类型长时任务，但是未接入[AVSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-overview)。 |
-| SYSTEM_CANCEL_AUDIO_PLAYBACK_NOT_RUNNING | 6 | 申请AUDIO_PLAYBACK类型长时任务，但是未播放音视频。 |
+| SYSTEM_CANCEL_AUDIO_PLAYBACK_NOT_RUNNING | 6 | 申请AUDIO_PLAYBACK类型长时任务，但是未播放音视频。 **说明：** 需要先注册暂停回调[on('continuousTaskSuspend')](#backgroundtaskmanageroncontinuoustasksuspend20)，当连续检测失败时，系统取消对应的长时任务，返回该取消原因。 |
 | SYSTEM_CANCEL_AUDIO_RECORDING_NOT_RUNNING | 7 | 申请AUDIO_RECORDING类型长时任务，但是未录制。 |
 | SYSTEM_CANCEL_NOT_USE_LOCATION | 8 | 申请LOCATION类型长时任务，但是未使用定位导航。 |
 | SYSTEM_CANCEL_NOT_USE_BLUETOOTH | 9 | 申请BLUETOOTH_INTERACTION类型长时任务，但是未使用蓝牙相关业务。 |
@@ -1786,6 +1787,73 @@ export default class EntryAbility extends UIAbility {
 };
 ```
 
+#### [h2]requestAuthFromUserByDialog
+
+requestAuthFromUserByDialog(context: Context, callback: Callback<UserAuthResult>): void
+
+请求用户授权是否能在后台长时间运行，使用callback异步回调。接口调用成功后会发送授权弹窗。用户授权“本次允许”、“始终允许”或“不允许”后，再次请求授权时将直接回调上次授权结果，不再弹出授权弹窗。建议应用在前台时调用该接口，提示用户进行授权。仅适用于特殊场景类型[MODE_SPECIAL_SCENARIO_PROCESSING](#backgroundtaskmode21)的长时任务。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+需要权限： ohos.permission.KEEP_BACKGROUND_RUNNING
+
+系统能力： SystemCapability.ResourceSchedule.BackgroundTaskManager.ContinuousTask
+
+设备行为差异： 该接口在Phone、Tablet、PC/2in1中可正常调用，在其他设备类型中返回9800005错误码。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 应用运行的上下文。 FA模型的应用Context定义见[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-app-context)。 Stage模型的应用Context定义见[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context)。 **说明：** Stage模型中，仅支持UIAbility申请；FA模型中，仅支持ServiceAbility申请。 |
+| callback | Callback | 是 | 回调函数，返回用户授权结果。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[backgroundTaskManager错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-backgroundtaskmgr)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 201 | Permission denied. |
+| 9800004 | System service operation failed. |
+| 9800005 | Continuous task verification failed. |
+
+示例：
+
+```
+import { backgroundTaskManager } from '@kit.BackgroundTasksKit';
+import { UIAbility } from '@kit.AbilityKit';
+import { window } from '@kit.ArkUI';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+function callbackAuth(authResult: backgroundTaskManager.UserAuthResult) {
+  console.info('Operation requestAuthFromUserByDialog success. auth result: ' + JSON.stringify(authResult));
+}
+
+export default class EntryAbility extends UIAbility {
+  onWindowStageCreate(windowStage: window.WindowStage): void {
+    windowStage.loadContent('pages/Index', (err) => {
+      if (err.code) {
+        return;
+      }
+      try {
+        let continuousTaskRequest = new backgroundTaskManager.ContinuousTaskRequest();
+        let modeList: Array<number> = [backgroundTaskManager.BackgroundTaskMode.MODE_SPECIAL_SCENARIO_PROCESSING];
+        continuousTaskRequest.backgroundTaskModes = modeList;
+        let subModeList: Array<number> = [backgroundTaskManager.BackgroundTaskSubmode.SUBMODE_MEDIA_PROCESS_NORMAL_NOTIFICATION];
+        continuousTaskRequest.backgroundTaskSubmodes = subModeList;
+        continuousTaskRequest.requestAuthFromUserByDialog(this.context, callbackAuth);
+        console.info('Operation requestAuthFromUserByDialog succeeded.');
+      } catch (error) {
+        console.error(`Operation requestAuthFromUserByDialog failed. code is ${(error as BusinessError).code} message is ${(error as BusinessError).message}`);
+      }
+    });
+  }
+};
+```
+
 #### [h2]checkSpecialScenarioAuth22+
 
 checkSpecialScenarioAuth(context: Context): Promise<UserAuthResult>
@@ -1845,6 +1913,67 @@ export default class EntryAbility extends UIAbility {
 };
 ```
 
+#### [h2]checkSpecialScenarioAuthResult
+
+checkSpecialScenarioAuthResult(context: Context): Promise<UserAuthResult>
+
+查询用户是否授权能在后台长时间运行。使用Promise异步回调。当未授权时，返回授权结果[NOT_DETERMINED](#userauthresult22)；当未配置特殊场景类型[MODE_SPECIAL_SCENARIO_PROCESSING](#backgroundtaskmode21)的长时任务时，返回授权结果为[NOT_SUPPORTED](#userauthresult22)。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+需要权限： ohos.permission.KEEP_BACKGROUND_RUNNING
+
+系统能力： SystemCapability.ResourceSchedule.BackgroundTaskManager.ContinuousTask
+
+设备行为差异： 该接口在Phone、Tablet、PC/2in1中可正常调用，在其他设备类型中返回9800005错误码。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 应用运行的上下文。 FA模型的应用Context定义见[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-app-context)。 Stage模型的应用Context定义见[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context)。 **说明：** Stage模型中，仅支持UIAbility申请；FA模型中，仅支持ServiceAbility申请。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，返回用户授权结果。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[backgroundTaskManager错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-backgroundtaskmgr)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 201 | Permission denied. |
+| 9800004 | System service operation failed. |
+| 9800005 | Continuous task verification failed. |
+
+示例：
+
+```
+import { backgroundTaskManager } from '@kit.BackgroundTasksKit';
+import { AbilityConstant, UIAbility, Want } from '@kit.AbilityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+export default class EntryAbility extends UIAbility {
+  onCreate(want: Want, launchParam: AbilityConstant.LaunchParam) {
+    try {
+      let continuousTaskRequest = new backgroundTaskManager.ContinuousTaskRequest();
+      continuousTaskRequest.checkSpecialScenarioAuthResult(this.context).then((res: backgroundTaskManager.UserAuthResult) => {
+        console.info('Operation checkSpecialScenarioAuthResult succeeded. data: ' + JSON.stringify(res));
+      }).catch((error: BusinessError) => {
+        console.error(`Operation checkSpecialScenarioAuthResult failed. code is ${error.code} message is ${error.message}`);
+      });
+    } catch (error) {
+      console.error(`Operation checkSpecialScenarioAuthResult failed. code is ${(error as BusinessError).code} message is ${(error as BusinessError).message}`);
+    }
+  }
+};
+```
+
 #### BackgroundTaskMode21+
 
 长时任务主类型。通常与长时任务子类型[BackgroundTaskSubmode](#backgroundtasksubmode21)配合使用，对照关系请参考长时任务主类型与子类型对照表，两者共同作为API version 21新增的申请[startBackgroundRunning](#backgroundtaskmanagerstartbackgroundrunning21)、更新[updateBackgroundRunning](#backgroundtaskmanagerupdatebackgroundrunning21)长时任务接口入参，用于指定长时任务类型。
@@ -1864,7 +1993,7 @@ export default class EntryAbility extends UIAbility {
 | MODE_VOIP | 8 | 音视频通话。 使用场景举例：某些聊天类应用（具有音视频业务）音频、视频通话时退后台。 |
 | MODE_TASK_KEEPING | 9 | 计算任务。 使用场景举例：杀毒软件。 **说明：** 仅对PC/2in1设备开放，或者非PC/2in1设备但申请了ACL权限为[ohos.permission.KEEP_BACKGROUND_RUNNING_SYSTEM](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions#ohospermissionkeep_background_running_system)的应用开放。 |
 | MODE_AV_PLAYBACK_AND_RECORD22+ | 12 | 多媒体相关业务。 使用场景举例：音视频播放、录制、音视频通话场景，场景需与长时任务子类型相匹配。在上述场景下，选择此类型或者对应的长时任务主类型均可。例如：音视频播放场景可以申请MODE_AUDIO_PLAYBACK或者MODE_AV_PLAYBACK_AND_RECORD长时任务主类型。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
-| MODE_SPECIAL_SCENARIO_PROCESSING22+ | 13 | 特殊场景类型（仅对Phone、Tablet、PC/2in1设备开放）。 使用场景举例：应用在后台导出媒体文件、应用使用三方投播组件在后台进行投播，场景需与长时任务子类型相匹配。 **说明：** 1. 如果应用需要在后台长时间运行，可以通过[requestAuthFromUser](#requestauthfromuser22)接口请求用户授权、通过[checkSpecialScenarioAuth](#checkspecialscenarioauth22)接口查询用户授权结果。 2. 从API version 24开始，仅对申请ACL权限[ohos.permission.KEEP_BACKGROUND_RUNNING_SPECIAL_SCENARIO](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions#ohospermissionkeep_background_running_special_scenario)的应用开放。API version 23及之前版本，仅对申请ACL权限[ohos.permission.KEEP_BACKGROUND_RUNNING_SYSTEM](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions#ohospermissionkeep_background_running_system)的应用开放，已经申请该权限的应用在API version 24之后不受影响。 3. 必须单独使用且不支持通知合并，即申请或更新长时任务时，长时任务类型只能有特殊场景类型，否则返回错误。 |
+| MODE_SPECIAL_SCENARIO_PROCESSING22+ | 13 | 特殊场景类型（仅对Phone、Tablet、PC/2in1设备开放）。 使用场景举例：应用在后台导出媒体文件、应用使用三方投播组件在后台进行投播、应用在后台有室内运动场景，场景需与长时任务子类型相匹配。 **说明：** 1. 如果应用需要在后台长时间运行，可以通过[requestAuthFromUser](#requestauthfromuser22)接口请求用户授权、通过[checkSpecialScenarioAuth](#checkspecialscenarioauth22)接口查询用户授权结果。 2. 从API version 24开始，仅对申请ACL权限[ohos.permission.KEEP_BACKGROUND_RUNNING_SPECIAL_SCENARIO](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions#ohospermissionkeep_background_running_special_scenario)的应用开放。API version 23及之前版本，仅对申请ACL权限[ohos.permission.KEEP_BACKGROUND_RUNNING_SYSTEM](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions#ohospermissionkeep_background_running_system)的应用开放，已经申请该权限的应用在API version 24之后不受影响。 3. 必须单独使用且不支持通知合并，即申请或更新长时任务时，长时任务类型只能有特殊场景类型，否则返回错误。 |
 | MODE_NEARLINK | 14 | 星闪业务。 使用场景举例：通过星闪传输文件时退后台。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### BackgroundTaskSubmode21+

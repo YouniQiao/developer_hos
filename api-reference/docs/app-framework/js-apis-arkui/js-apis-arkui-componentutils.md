@@ -2,13 +2,13 @@
 title: "@ohos.arkui.componentUtils (componentUtils)"
 upstream_id: "harmonyos-references/js-apis-arkui-componentutils"
 catalog: "harmonyos-references"
-content_hash: "829c0f5af722"
-synced_at: "2026-07-17T16:16:10.653352"
+content_hash: "b1e1452b0960"
+synced_at: "2026-07-28T16:40:58.864245"
 ---
 
 # @ohos.arkui.componentUtils (componentUtils)
 
-提供获取组件绘制区域坐标和大小的能力。
+提供获取组件绘制区域坐标和大小的能力，适用于在组件布局完成后查询组件实际绘制区域信息的场景，帮助开发者获取组件尺寸、位置等布局结果。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -31,8 +31,8 @@ getRectangleById(id: string): ComponentInfo
 ![](./img/note_3.0-zh-cn.png)
 
 - 从API version 10开始支持，从API version 18开始废弃，建议使用[getRectangleById](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-componentutils#getrectanglebyid)替代。getRectangleById需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getComponentUtils](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getcomponentutils)方法获取[ComponentUtils](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-componentutils)对象，然后通过该对象进行调用。
-- 从API version 10开始，可以通过使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getComponentUtils](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getcomponentutils)方法获取当前UI上下文关联的[ComponentUtils](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-componentutils)对象。在目标组件布局完成后，通过该接口能够获取组件坐标和尺寸信息。建议在[布局回调](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-inspector)中使用该接口。如果组件动态创建但未挂载组件树，则无法通过该接口获取正常的组件信息。因为组件在未挂载组件树的情况下，一般未经过UI框架正常的测量与布局，此时请确保组件正常挂载组件树后再尝试获取组件信息。
-- 该接口返回的组件位置为布局位置，某些属性计算不支持，如[translate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#translate)、[offset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-location#offset)、[markAnchor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-location#markanchor)、[scale](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#scale)、[transform](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#transform)等，可以使用替代接口[getPositionToWindowWithTransform](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#getpositiontowindowwithtransform12)。
+- 从API version 10开始，可以通过使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getComponentUtils](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getcomponentutils)方法获取当前UI上下文关联的[ComponentUtils](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-componentutils)对象。在目标组件布局完成后，通过该接口能够获取组件坐标和尺寸信息。建议在[布局回调](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-inspector)中使用该接口。如果组件动态创建但未挂载组件树，则无法通过该接口获取组件的坐标和尺寸信息。因为组件在未挂载组件树的情况下，一般未经过UI框架的测量与布局，此时请确保组件已挂载到组件树后再尝试获取组件信息。
+- 该接口返回的组件位置为布局位置，某些属性计算不支持，如[translate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#translate)、[offset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-location#offset)、[markAnchor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-location#markanchor)、[scale](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#scale)、[transform](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#transform)、[Edges](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#edges12)和[LocalizedEdges](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#localizededges12)类型的[position](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-location#position)等，可以使用替代接口[getPositionToWindowWithTransform](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#getpositiontowindowwithtransform12)。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -42,7 +42,7 @@ getRectangleById(id: string): ComponentInfo
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| id | string | 是 | 指定组件id。 |
+| id | string | 是 | 指定组件id。目标组件需已挂载到组件树并完成布局。 |
 
 返回值：
 
@@ -62,7 +62,7 @@ getRectangleById(id: string): ComponentInfo
 
 ```
 import { componentUtils } from '@kit.ArkUI';
-let modePosition:componentUtils.ComponentInfo = componentUtils.getRectangleById("onClick");
+let modePosition:componentUtils.ComponentInfo = componentUtils.getRectangleById('onClick');
 ```
 
 #### ComponentInfo
@@ -76,9 +76,9 @@ let modePosition:componentUtils.ComponentInfo = componentUtils.getRectangleById(
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | size | [Size](#size) | 否 | 否 | 组件大小。 |
-| localOffset | [Offset](#offset) | 否 | 否 | 组件相对于父组件信息。 |
-| windowOffset | [Offset](#offset) | 否 | 否 | 组件相对于窗口信息。 |
-| screenOffset | [Offset](#offset) | 否 | 否 | 组件相对于屏幕信息。 |
+| localOffset | [Offset](#offset) | 否 | 否 | 组件相对于父组件的偏移量。 |
+| windowOffset | [Offset](#offset) | 否 | 否 | 组件相对于窗口的偏移量。 |
+| screenOffset | [Offset](#offset) | 否 | 否 | 组件相对于屏幕的偏移量。 |
 | translate | [TranslateResult](#translateresult) | 否 | 否 | 组件平移信息。 |
 | scale | [ScaleResult](#scaleresult) | 否 | 否 | 组件缩放信息。 |
 | rotate | [RotateResult](#rotateresult) | 否 | 否 | 组件旋转信息。 |
@@ -92,8 +92,8 @@ let modePosition:componentUtils.ComponentInfo = componentUtils.getRectangleById(
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| width | number | 否 | 否 | 组件宽度。 单位: px |
-| height | number | 否 | 否 | 组件高度。 单位: px |
+| width | number | 否 | 否 | 组件宽度。 单位：px |
+| height | number | 否 | 否 | 组件高度。 单位：px |
 
 #### [h2]Offset
 
@@ -103,8 +103,8 @@ let modePosition:componentUtils.ComponentInfo = componentUtils.getRectangleById(
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| x | number | 否 | 否 | x点坐标。 单位: px |
-| y | number | 否 | 否 | y点坐标。 单位: px |
+| x | number | 否 | 否 | x点坐标。 单位：px |
+| y | number | 否 | 否 | y点坐标。 单位：px |
 
 #### [h2]TranslateResult
 
@@ -114,9 +114,9 @@ let modePosition:componentUtils.ComponentInfo = componentUtils.getRectangleById(
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| x | number | 否 | 否 | x轴平移距离。 单位: vp |
-| y | number | 否 | 否 | y轴平移距离。 单位: vp |
-| z | number | 否 | 否 | z轴平移距离。 单位: vp |
+| x | number | 否 | 否 | x轴平移距离。 单位：vp |
+| y | number | 否 | 否 | y轴平移距离。 单位：vp |
+| z | number | 否 | 否 | z轴平移距离。 单位：vp |
 
 #### [h2]ScaleResult
 
@@ -129,8 +129,8 @@ let modePosition:componentUtils.ComponentInfo = componentUtils.getRectangleById(
 | x | number | 否 | 否 | x轴缩放倍数。 |
 | y | number | 否 | 否 | y轴缩放倍数。 |
 | z | number | 否 | 否 | z轴缩放倍数。 |
-| centerX | number | 否 | 否 | 变换中心点x轴坐标。 单位: vp |
-| centerY | number | 否 | 否 | 变换中心点y轴坐标。 单位: vp |
+| centerX | number | 否 | 否 | 变换中心点x轴坐标。 单位：vp |
+| centerY | number | 否 | 否 | 变换中心点y轴坐标。 单位：vp |
 
 #### [h2]RotateResult
 
@@ -143,9 +143,9 @@ let modePosition:componentUtils.ComponentInfo = componentUtils.getRectangleById(
 | x | number | 否 | 否 | 旋转轴向量x坐标。 |
 | y | number | 否 | 否 | 旋转轴向量y坐标。 |
 | z | number | 否 | 否 | 旋转轴向量z坐标。 |
-| angle | number | 否 | 否 | 旋转角度。 单位: deg |
-| centerX | number | 否 | 否 | 变换中心点x轴坐标。 单位: vp |
-| centerY | number | 否 | 否 | 变换中心点y轴坐标。 单位: vp |
+| angle | number | 否 | 否 | 旋转角度。 单位：deg |
+| centerX | number | 否 | 否 | 变换中心点x轴坐标。 单位：vp |
+| centerY | number | 否 | 否 | 变换中心点y轴坐标。 单位：vp |
 
 #### [h2]Matrix4Result
 
@@ -157,7 +157,7 @@ type Matrix4Result = [number,number,number,number,number,number,number,number,nu
 
 | 类型 | 说明 |
 | --- | --- |
-| [number,number,number,number, number,number,number,number, number,number,number,number, number,number,number,number] | 取值范围为长度为16（4*4）的number数组， 详情见四阶矩阵说明。 |
+| [number,number,number,number, number,number,number,number, number,number,number,number, number,number,number,number] | 长度为16（4*4）的number数组，详情见四阶矩阵说明。 |
 
 四阶矩阵说明：
 
@@ -184,24 +184,24 @@ type Matrix4Result = [number,number,number,number,number,number,number,number,nu
 
 #### [h2]示例1（获取ComponentUtils对象）
 
-推荐通过使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getComponentUtils](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getcomponentutils)方法获取当前UI上下文关联的ComponentUtils对象。
+推荐使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getComponentUtils](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getcomponentutils)方法获取当前UI上下文关联的ComponentUtils对象。
 
 ```
-import { matrix4, componentUtils } from '@kit.ArkUI';
+import { matrix4 } from '@kit.ArkUI';
 
 @Entry
 @Component
 struct Utils {
-  @State x: number = 120;
-  @State y: number = 10;
-  @State z: number = 100;
+  @State translateX: number = 120;
+  @State translateY: number = 10;
+  @State translateZ: number = 100;
   @State value: string = '';
-  private matrix1 = matrix4.identity().translate({ x: this.x, y: this.y, z: this.z });
+  private matrix1 = matrix4.identity().translate({ x: this.translateX, y: this.translateY, z: this.translateZ });
 
   build() {
     Column() {
       // $r("app.media.img")需要替换为开发者所需的图像资源文件
-      Image($r("app.media.img"))
+      Image($r('app.media.img'))
         .transform(this.matrix1)
         .translate({ x: 20, y: 20, z: 20 })
         .scale({ x: 0.5, y: 0.5, z: 1 })
@@ -215,12 +215,12 @@ struct Utils {
         })
         .width(300)
         .height(100)
-        .key("image_01")
+        .key('image_01')
       Button('getRectangleById')
         .onClick(() => {
           this.value = JSON.stringify(this.getUIContext()
             .getComponentUtils()
-            .getRectangleById("image_01")) // 建议使用this.getUIContext().getComponentUtils()接口
+            .getRectangleById('image_01')); // 建议使用this.getUIContext().getComponentUtils()接口
         }).margin(10).id('onClick')
       Text(this.value)
         .margin(20)
@@ -231,4 +231,4 @@ struct Utils {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002641194088.gif)
+ ![](./img/zh-cn_image_0000002655848246.gif)

@@ -2,8 +2,8 @@
 title: "Interface (MapPolyline)"
 upstream_id: "harmonyos-references/map-map-mappolyline"
 catalog: "harmonyos-references"
-content_hash: "a849f8864dd1"
-synced_at: "2026-07-09T01:01:24.264905"
+content_hash: "7895960072ef"
+synced_at: "2026-07-28T16:52:42.729429"
 ---
 
 # Interface (MapPolyline)
@@ -728,16 +728,63 @@ setCustomTextureIndexes(customTextureIndexes: number[]): Promise<void>
 | --- | --- |
 | Promise | Promise对象。无返回结果的Promise对象。 |
 
-错误码：
-
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-map)。
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 401 | Invalid input parameter. |
-
 示例：
 
 ```
 await mapPolyline.setCustomTextureIndexes([0,1,0]);
+```
+
+#### [h2]addLineText
+
+addLineText(lineText: mapCommon.LineText): void
+
+添加折线的线条文本。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.Map.Core
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | **类型** | 必填 | **说明** |
+| --- | --- | --- | --- |
+| lineText | [mapCommon.LineText](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#linetext) | 是 | 折线的线条文本参数，异常值作为无响应处理。 |
+
+示例：
+
+```
+let textLine: mapCommon.LineText = {
+  lineNames: ['第一段文字', '第二段文字'],
+  lineNameIndexes: [0, 1, 1, 2],
+  nameOnRight: false,
+  color: 0xFF000000,
+  fontSize: 15,
+  strokeColor: 0xFFFFFFFF,
+  fontStyle: 0
+};
+mapPolyline.addLineText(textLine);
+```
+
+#### [h2]removeLineText
+
+removeLineText(): void
+
+删除折线的文本。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.Map.Core
+
+起始版本： 26.0.0
+
+示例：
+
+```
+mapPolyline.removeLineText();
 ```

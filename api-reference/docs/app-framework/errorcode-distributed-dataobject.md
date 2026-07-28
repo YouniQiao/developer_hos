@@ -2,8 +2,8 @@
 title: "分布式数据对象错误码"
 upstream_id: "harmonyos-references/errorcode-distributed-dataobject"
 catalog: "harmonyos-references"
-content_hash: "a79fa14e093b"
-synced_at: "2026-07-09T00:57:22.200445"
+content_hash: "f26566af5d6f"
+synced_at: "2026-07-28T16:40:54.834266"
 ---
 
 # 分布式数据对象错误码
@@ -38,7 +38,7 @@ Parameter error.
 
 1. assetKey无效。例如：""（空字符串）。
 2. uri无效。例如：""（空字符串）。
-3. uris无效。例如uris数组长度超过50。
+3. uris无效。例如uris数组为空或数组内元素数量大于50个。
 
 可能原因
 
@@ -51,7 +51,7 @@ Parameter error.
 
 1. 传入正确的属性名，例如：'file'（文件）。
 2. 传入正确的分布式路径uri，例如："file://docs/storage/Users/username/tmp.txt"。
-3. 传入正确的分布式路径数组uris，数量为有效范围内的个数，例如：["file://docs/storage/Users/username/tmp.txt","file://com.example.demo/data/storage/el2/base/files/test.txt"]。
+3. 传入正确的分布式路径数组uris，有效个数为[1, 50]，例如：["file://docs/storage/Users/username/tmp.txt","file://com.example.demo/data/storage/el2/base/files/test.txt"]。
 4. 确保分布式路径数组uris内每个uri的路径为正确的分布式路径。
 
 #### 15400003 已设置分布式对象的sessionId

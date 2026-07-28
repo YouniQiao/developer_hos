@@ -2,8 +2,8 @@
 title: "TrustedAppService（可信应用服务）"
 upstream_id: "harmonyos-references/errorcode-devicesecurity-taas"
 catalog: "harmonyos-references"
-content_hash: "8957b0f9acf2"
-synced_at: "2026-07-09T00:59:15.853694"
+content_hash: "b9eeb3bde234"
+synced_at: "2026-07-28T16:50:26.959467"
 ---
 
 # TrustedAppService（可信应用服务）
@@ -374,3 +374,255 @@ secure image process failed.
 处理步骤
 
 重新发起请求。如果您尝试重试仍未解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)申请帮助。
+
+#### 1027200001 证真图片类型错误
+
+错误信息
+
+Incorrect image format.
+
+错误描述
+
+证真图片类型错误。
+
+可能原因
+
+传入的图片数据错误或图片数据与指定的类型不匹配。
+
+处理步骤
+
+确认图片数据格式后重新发起请求。如果您尝试重试仍未解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)申请帮助。
+
+#### 1027200002 证真处理存储不足失败
+
+错误信息
+
+Insufficient storage space for the service.
+
+错误描述
+
+证真处理存储不足导致失败。
+
+可能原因
+
+图片数据过大超过应用存储大小，申请存储失败导致错误。
+
+处理步骤
+
+确认图片数据大小与应用可申请数据大小。如果您尝试重试仍未解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)申请帮助。
+
+#### 1027200003 签名证书错误
+
+错误信息
+
+Invalid signature certificate parameters.
+
+错误描述
+
+证真签名证书获取错误。
+
+可能原因
+
+网络连接错误或证书获取服务不可用。
+
+处理步骤
+
+确认网络连接后重新发起请求。如果您尝试重试仍未解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)申请帮助。
+
+#### 1027200004 证真完整性检测失败
+
+错误信息
+
+Image data hash check failed.
+
+错误描述
+
+证真图片签名数据完整性检测失败。
+
+可能原因
+
+图片数据被破坏或证真签名流程存在问题。
+
+处理步骤
+
+确认图片内容无问题后重新发起请求。如果您尝试重试仍未解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)申请帮助。
+
+#### 1027200005 证真签名失败
+
+错误信息
+
+Image signature calculation failed.
+
+错误描述
+
+证真图片签名处理失败。
+
+可能原因
+
+签名请求传递失败或内部服务超时。
+
+处理步骤
+
+重新发起请求。如果您尝试重试仍未解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)申请帮助。
+
+#### 1027200006 证真处理存储不足失败
+
+错误信息
+
+Signature verification failed.
+
+错误描述
+
+证真图片验证签名处理失败。
+
+可能原因
+
+图片证真签名数据错误。
+
+处理步骤
+
+确认图片数据无问题后重新发起请求。如果您尝试重试仍未解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)申请帮助。
+
+#### 1027200007 证真签名确认信息错误
+
+错误信息
+
+No signature assertion found in the image signature.
+
+错误描述
+
+证真签名确认信息错误。
+
+可能原因
+
+图片数据被破坏或签名流程中数据出现错误。
+
+处理步骤
+
+确认图片内容无问题后重新发起请求。如果您尝试重试仍未解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)申请帮助。
+
+#### 1027200008 证真签名名单信息错误
+
+错误信息
+
+No signature manifest found in the image signature.
+
+错误描述
+
+证真签名名单信息错误。
+
+可能原因
+
+图片数据被破坏或签名流程中数据出现错误。
+
+处理步骤
+
+确认图片内容无问题后重新发起请求。如果您尝试重试仍未解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)申请帮助。
+
+#### 1027200009 证真签名证书链信息错误
+
+错误信息
+
+Certificate chain verification failed or the root certificate is invalid in the signature information.
+
+错误描述
+
+证真签名证书链信息验证错误或图片中不存在证书链信息。
+
+可能原因
+
+待验签图片签名来源不可信或签名流程中未正确写入证书链信息。
+
+处理步骤
+
+确认图片签名来源无问题后重新发起请求。如果您尝试重试仍未解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)申请帮助。
+
+#### 1027200010 平台不支持失败
+
+错误信息
+
+APIs not supported on the platform.
+
+错误描述
+
+平台不支持接口失败。
+
+可能原因
+
+该平台不支持此接口导致失败。
+
+处理步骤
+
+此平台不支持此接口。
+
+#### 1027200011 证真元数据信息错误
+
+错误信息
+
+Incorrect signature metadata.
+
+错误描述
+
+证真元数据信息错误。
+
+可能原因
+
+证真元数据不匹配或确认必选的证真元数据。
+
+处理步骤
+
+确认证真元数据格式正确后重新尝试。如果您尝试重试仍未解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)申请帮助。
+
+#### 1027200012 证真签名声明信息错误
+
+错误信息
+
+Invalid claim information during signature verification.
+
+错误描述
+
+证真签名声明信息错误。
+
+可能原因
+
+证真签名流程中声明信息错误或被损坏。
+
+处理步骤
+
+确认图片签名来源无问题，图片内容正确后重新发起请求。如果您尝试重试仍未解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)申请帮助。
+
+#### 1027200013 证真文件操作失败
+
+错误信息
+
+File operation failed.
+
+错误描述
+
+证真文件操作失败。
+
+可能原因
+
+传入证真文件无权限操作或文件不存在。
+
+处理步骤
+
+确认文件路径及权限正确后重新尝试。如果您尝试重试仍未解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)申请帮助。
+
+#### 1027200014 证真函数参数错误
+
+错误信息
+
+The input argument is invalid.
+
+错误描述
+
+证真函数参数错误。
+
+可能原因
+
+传入参数错误导致证真处理流程失败。
+
+处理步骤
+
+确认参数无问题后重新发起请求。如果您尝试重试仍未解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)申请帮助。

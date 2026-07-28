@@ -2,8 +2,8 @@
 title: "camera_device.h"
 upstream_id: "harmonyos-references/capi-camera-device-h"
 catalog: "harmonyos-references"
-content_hash: "880760c2052b"
-synced_at: "2026-07-09T01:00:24.553592"
+content_hash: "7c7e15108971"
+synced_at: "2026-07-28T16:51:42.285808"
 ---
 
 # camera_device.h
@@ -42,6 +42,7 @@ synced_at: "2026-07-09T01:00:24.553592"
 | [Camera_ErrorCode OH_CameraDevice_GetSensorPhysicalSize(const Camera_Device* camera, float* width, float* height)](#oh_cameradevice_getsensorphysicalsize) | 获取相机传感器的物理尺寸。 |
 | [Camera_ErrorCode OH_CameraDevice_GetSensorPixelArraySize(const Camera_Device* camera, uint32_t* width, uint32_t* height)](#oh_cameradevice_getsensorpixelarraysize) | 获取相机传感器的像素阵列大小。 |
 | [Camera_ErrorCode OH_CameraDevice_GetSensorColorFilterArrangement(const Camera_Device* camera, OH_Camera_SensorColorFilterArrangement* sensorCFA)](#oh_cameradevice_getsensorcolorfilterarrangement) | 获取相机传感器的滤色阵列排列方式。 |
+| [Camera_ErrorCode OH_CameraDevice_GetAutomotiveCameraPosition(const Camera_Device* camera, OH_Camera_AutomotiveCameraPosition* automotiveCameraPosition)](#oh_cameradevice_getautomotivecameraposition) | 获取Car设备相机摄像头的位置。 |
 
 #### 函数说明
 
@@ -381,6 +382,30 @@ Camera_ErrorCode OH_CameraDevice_GetSensorColorFilterArrangement(const Camera_De
 | --- | --- |
 | const [Camera_Device](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-camera-device)* camera | 用于获取属性的Camera_Device指针。 |
 | [OH_Camera_SensorColorFilterArrangement](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-camera-h#oh_camera_sensorcolorfilterarrangement)* sensorCFA | 输出参数，返回传感器滤色阵列排列枚举值。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| [Camera_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-camera-h#camera_errorcode) | CAMERA_OK：方法调用成功。 CAMERA_INVALID_ARGUMENT：参数丢失或者参数不正确。 CAMERA_SERVICE_FATAL_ERROR：相机服务异常。 |
+
+#### [h2]OH_CameraDevice_GetAutomotiveCameraPosition()
+
+```
+Camera_ErrorCode OH_CameraDevice_GetAutomotiveCameraPosition(const Camera_Device* camera, OH_Camera_AutomotiveCameraPosition* automotiveCameraPosition)
+```
+ 描述
+
+获取Car设备相机摄像头的位置。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| const [Camera_Device](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-camera-device)* camera | 指向用于检索属性的Camera_Device的指针。 |
+| [OH_Camera_AutomotiveCameraPosition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-camera-h#oh_camera_automotivecameraposition)* automotiveCameraPosition | 输出参数，返回Car设备摄像头位置枚举值。 |
 
 返回：
 

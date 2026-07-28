@@ -2,15 +2,15 @@
 title: "Vibrator"
 upstream_id: "harmonyos-references/capi-vibrator"
 catalog: "harmonyos-references"
-content_hash: "6ea2cacda976"
-synced_at: "2026-07-09T01:00:00.001639"
+content_hash: "27dd06553cab"
+synced_at: "2026-07-28T16:51:18.660017"
 ---
 
 # Vibrator
 
 #### 概述
 
-为马达服务提供统一的API以访问马达驱动程序。
+为马达服务提供统一的API以访问马达驱动程序，采用统一接口抽象不同设备差异。支持多种振动模式、强度和时长控制，满足游戏震动反馈、通知提醒等场景需求，帮助开发者提升应用的用户体验和交互效果。
 
 起始版本： 11
 
@@ -18,5 +18,5 @@ synced_at: "2026-07-09T01:00:00.001639"
 
 | 名称 | 描述 |
 | --- | --- |
-| [vibrator.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-vibrator-h) | 为您提供标准的开放API，用于控制马达振动的启停。 |
-| [vibrator_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-vibrator-type-h) | 为您提供标准的开放API，用于控制马达振动的启停。 |
+| [vibrator.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-vibrator-h) | 为您提供标准的开放API，用于控制马达振动的启停，提供标准化的振动控制接口。定义了Vibrator模块的核心接口。 |
+| [vibrator_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-vibrator-type-h) | 为您提供马达振动相关的类型定义、错误码和枚举值。 |

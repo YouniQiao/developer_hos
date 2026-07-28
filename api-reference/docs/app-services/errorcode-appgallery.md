@@ -2,8 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-appgallery"
 catalog: "harmonyos-references"
-content_hash: "bdc559167b95"
-synced_at: "2026-07-09T01:01:15.828571"
+content_hash: "d58c73ac28e5"
+synced_at: "2026-07-28T16:52:34.361301"
 ---
 
 # ArkTS API错误码
@@ -58,9 +58,15 @@ SA connection failed.
 
 服务异常。
 
+可能原因
+
+1. 设备的网络连接不稳定或不可用。
+2. 系统内部运行异常。
+
 处理步骤
 
-尝试重试或通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+1. 检查设备的网络连接，确保设备能够正常访问互联网。
+2. 尝试重试或通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
 
 #### 1006500006 未与监听接口共同使用
 
@@ -162,9 +168,15 @@ SA connect error.
 
 服务异常。
 
+可能原因
+
+1. 设备的网络连接不稳定或不可用。
+2. 系统内部运行异常。
+
 处理步骤
 
-尝试重试或通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+1. 检查设备的网络连接，确保设备能够正常访问互联网。
+2. 尝试重试或通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
 
 #### 1009400002 向服务端请求失败
 
@@ -176,9 +188,13 @@ Request to service error.
 
 向服务端请求失败。
 
+可能原因
+
+网络异常。
+
 处理步骤
 
-尝试重试或通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+排查网络是否正常或通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
 
 #### 1009400003 网络异常
 
@@ -190,9 +206,15 @@ Network error.
 
 网络异常。
 
+可能原因
+
+1. 设备网络连接不稳定或未连接网络，导致请求无法到达服务端。
+2. 应用市场服务端暂时出现问题，无法正常响应请求。
+
 处理步骤
 
-检查网络或尝试重试。
+1. 确保设备网络正常，尝试切换网络后重试。
+2. 通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
 
 #### 1009400004 应用不在前台
 
@@ -204,9 +226,13 @@ The application is not in the foreground.
 
 应用不在前台。
 
+可能原因
+
+调用[checkAppUpdate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-updatemanager#updatemanagercheckappupdate)、[showUpdateDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-updatemanager#updatemanagershowupdatedialog)接口时，应用不在前台，可能在后台或被最小化。
+
 处理步骤
 
-应用前台的时候调用接口。
+确保在应用处于前台时调用[checkAppUpdate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-updatemanager#updatemanagercheckappupdate)、[showUpdateDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-updatemanager#updatemanagershowupdatedialog)接口。
 
 #### 1009400005 未同意隐私政策
 
@@ -216,11 +242,15 @@ Not agreeing to the privacy agreement.
 
 错误描述
 
-未同意隐私。
+未同意应用市场的隐私协议。
+
+可能原因
+
+用户在首次使用应用时没有同意隐私协议。
 
 处理步骤
 
-打开“应用市场客户端”同意隐私政策。
+引导用户打开应用市场客户端，并且同意隐私协议。
 
 #### 1009400006 调用次数超过上限
 
@@ -232,9 +262,13 @@ Time limited.
 
 调用次数超过上限。
 
+可能原因
+
+短时间内多次调用[checkAppUpdate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-updatemanager#updatemanagercheckappupdate)接口触发限流。
+
 处理步骤
 
-尝试重试或通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+避免在应用启动或页面加载时频繁调用[checkAppUpdate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-updatemanager#updatemanagercheckappupdate)接口。建议仅在用户主动点击“检查更新”按钮时调用一次，或设置合理的调用间隔（例如至少间隔30分钟）。
 
 #### 1009400007 其它错误
 
@@ -246,9 +280,15 @@ Other error.
 
 其它错误。
 
+可能原因
+
+1. 设备网络连接不稳定，导致请求中断。
+2. 内部程序运行异常。
+
 处理步骤
 
-尝试重试或通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+1. 确保设备网络连接正常，可尝试切换网络后重试。
+2. 通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
 
 #### 1009400008 on接口参数个数异常
 
@@ -258,7 +298,11 @@ The number of parameters for the on API is incorrect.
 
 错误描述
 
-On接口参数个数异常。
+on接口参数个数异常。
+
+可能原因
+
+[on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-updatemanager#updatemanageronupdatechange)接口传入的参数个数不符合接口要求。
 
 处理步骤
 
@@ -272,11 +316,15 @@ The type parameter for the on API is invalid.
 
 错误描述
 
-On接口参数type校验异常。
+on接口参数type校验异常。
+
+可能原因
+
+[on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-updatemanager#updatemanageronupdatechange)接口传入的type参数类型或格式不符合接口要求。
 
 处理步骤
 
-检查on接口的入参type类型。
+检查[on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-updatemanager#updatemanageronupdatechange)接口的入参type类型和格式，确保符合接口要求。
 
 #### 1009400010 on接口参数callback校验异常
 
@@ -286,11 +334,15 @@ The callback parameter for the on API is invalid.
 
 错误描述
 
-On接口参数callback校验异常。
+on接口参数callback校验异常。
+
+可能原因
+
+[on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-updatemanager#updatemanageronupdatechange)接口传入的callback参数类型或格式不符合接口要求。
 
 处理步骤
 
-检查on接口的入参callback类型。
+检查[on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-updatemanager#updatemanageronupdatechange)接口的入参callback类型和格式，确保符合接口要求。
 
 #### 1009400011 on接口参数timeout校验异常
 
@@ -302,9 +354,13 @@ The timeout parameter for the on API is invalid.
 
 On接口参数timeout校验异常。
 
+可能原因
+
+[on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-updatemanager#updatemanageronupdatechange)接口传入的timeout值不符合接口要求（例如传入0、负数、小数、非number类型，或者大于20的数字）。
+
 处理步骤
 
-检查on接口的入参timeout类型。
+检查[on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-updatemanager#updatemanageronupdatechange)接口的入参timeout类型，确保符合接口要求。
 
 #### 1009400012 off接口参数个数异常
 
@@ -314,7 +370,11 @@ The number of parameters for the off API is incorrect.
 
 错误描述
 
-Off接口参数个数异常。
+off接口参数个数异常。
+
+可能原因
+
+[off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-updatemanager#updatemanageroffupdatechange)接口传入的参数个数不符合接口要求。
 
 处理步骤
 
@@ -328,11 +388,15 @@ The type parameter for the off API is invalid.
 
 错误描述
 
-Off接口参数type校验异常。
+off接口参数type校验异常。
+
+可能原因
+
+[off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-updatemanager#updatemanageroffupdatechange)接口传入的type参数类型或格式不符合接口要求。
 
 处理步骤
 
-检查off接口的入参type类型。
+检查[off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-updatemanager#updatemanageroffupdatechange)接口的入参type类型和格式，确保符合接口要求。
 
 #### 1009400014 off接口参数callback校验异常
 
@@ -342,11 +406,15 @@ The callback parameter for the off API is invalid.
 
 错误描述
 
-Off接口参数callback校验异常。
+off接口参数callback校验异常。
+
+可能原因
+
+[off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-updatemanager#updatemanageroffupdatechange)接口传入的callback参数类型或格式不符合接口要求。
 
 处理步骤
 
-检查off接口的入参callback类型。
+检查[off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-updatemanager#updatemanageroffupdatechange)接口的入参callback类型和格式，确保符合接口要求。
 
 #### 1009300001 Service extension连接失败
 
@@ -831,41 +899,146 @@ The application does not use privacy manager service.
 
 #### 1006620001 系统内部错误
 
+#### [h2]Return value parsing error
+
 错误信息
 
-System internal error.
+System internal error. Possible cause: Return value parsing error.
 
 错误描述
 
-系统内部错误。
+返回值解析异常。
 
 可能原因
 
 1. TV设备不支持[checkPinShortcutPermitted](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-productviewmanager#productviewmanagercheckpinshortcutpermitted)接口。
-2. 系统内部报错。
+2. 调用checkPinShortcutPermitted接口时，对返回参数的数据格式、类型或内容解析错误。
 
 处理步骤
 
-1. 请避免在TV设备上调用checkPinShortcutPermitted接口。
+1. 请避免在TV设备上调用[checkPinShortcutPermitted](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-productviewmanager#productviewmanagercheckpinshortcutpermitted)接口。
+2. 检查[checkPinShortcutPermitted](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-productviewmanager#productviewmanagercheckpinshortcutpermitted)接口返回参数的数据格式是否符合接口规范要求，包括数据类型、长度限制及格式规则。
+3. 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+
+#### [h2]Service connect error
+
+错误信息
+
+System internal error. Possible cause: Service connect error.
+
+错误描述
+
+服务连接异常。
+
+可能原因
+
+1. 网络连接异常或者不可用。
+2. 服务启动失败，IPC连接失败等。
+
+处理步骤
+
+1. 应用向用户给出提示，请用户检查网络。
+2. 重启设备或重试操作。
+3. 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+
+#### [h2]Read or write param error
+
+错误信息
+
+System internal error. Possible cause: Read or write param error.
+
+错误描述
+
+读取或写入参数异常。
+
+可能原因
+
+程序内部读写参数异常。
+
+处理步骤
+
+1. 重启设备或重试操作。
+2. 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+
+#### [h2]UnKnow error
+
+错误信息
+
+System internal error. Possible cause: UnKnow error.
+
+错误描述
+
+系统未知错误。
+
+可能原因
+
+系统内部发生未知异常，可能是硬件故障、驱动程序问题、I/O错误或系统服务中断。
+
+处理步骤
+
+1. 重启设备或重试操作。
+2. 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+
+#### [h2]Failed to invoke the desktop
+
+错误信息
+
+System internal error. Possible cause: Failed to invoke the desktop.
+
+错误描述
+
+桌面服务连接失败。
+
+可能原因
+
+1. 调用requestNewPinShortcut接口时，传入的参数不符合要求。
+2. 由于服务未启动、网络异常或系统内部错误导致。
+
+处理步骤
+
+1. 检查[requestNewPinShortcut](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-productviewmanager#productviewmanagerrequestnewpinshortcut)接口传入参数类型、格式和取值范围是否正确。
+2. 尝试重试操作，检查网络状态是否正常。
+3. 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+
+#### [h2]Request to service error
+
+错误信息
+
+System internal error. Possible cause: Request to service error.
+
+错误描述
+
+服务请求异常。
+
+可能原因
+
+1. 服务连接失败、网络异常或系统内部错误导致。
+
+处理步骤
+
+1. 尝试重试操作，检查网络状态是否正常。
 2. 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
 
 #### 1006620002 请求服务异常
 
+#### [h2]The phone time or network is abnormal
+
 错误信息
 
-Request to service error.
+Request to service error. Possible cause: The phone time or network is abnormal.
 
 错误描述
 
-请求服务异常。
+手机时间异常或者网络异常。
 
 可能原因
 
-网络异常。
+设备系统时间设置错误（如手动调整、时区不符）或网络时间同步失败。
 
 处理步骤
 
-排查网络是否正常或通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+1. 引导用户检查并校准设备系统时间，确保自动时间同步功能开启。
+2. 排查网络是否正常或通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
 
 #### 1006620003 快捷方式ID已经存在
 
@@ -1068,21 +1241,205 @@ Service extension连接失败。
 
 #### 1006800009 系统内部错误
 
+#### [h2]Service connect error
+
 错误信息
 
-System internal error.
+System internal error. Possible cause: Service connect error.
 
 错误描述
 
-系统内部错误。
+服务连接异常。
 
 可能原因
 
-系统内部报错。
+1. 网络连接异常或者不可用。
+2. 服务启动失败，IPC连接失败等。
 
 处理步骤
 
-请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+1. 应用向用户给出提示，请用户检查网络。
+2. 重启设备或重试操作。
+3. 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+
+#### [h2]Read or write param error
+
+错误信息
+
+System internal error. Possible cause: Read or write param error.
+
+错误描述
+
+读取或写入参数异常。
+
+可能原因
+
+程序内部读写参数异常。
+
+处理步骤
+
+1. 重启设备或重试操作。
+2. 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+
+#### [h2]Request to service error
+
+错误信息
+
+System internal error. Possible cause: Request to service error.
+
+错误描述
+
+请求服务异常。
+
+可能原因
+
+1. 服务连接失败、网络异常或系统内部错误导致。
+
+处理步骤
+
+1. 尝试重试操作，检查网络状态是否正常。
+2. 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+
+#### [h2]Return value parsing error
+
+错误信息
+
+System internal error. Possible cause: Return value parsing error.
+
+错误描述
+
+返回值解析异常。
+
+可能原因
+
+调用checkPinShortcutPermitted接口时，对返回参数的数据格式、类型或内容解析错误。
+
+处理步骤
+
+1. 检查[checkPinShortcutPermitted](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-productviewmanager#productviewmanagercheckpinshortcutpermitted)接口返回参数的数据格式是否符合接口规范要求，包括数据类型、长度限制及格式规则。
+2. 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+
+#### [h2]Failed to obtain the package name of the calling party
+
+错误信息
+
+System internal error. Possible cause: Failed to obtain the package name of the calling party.
+
+错误描述
+
+获取调用方包名异常。
+
+可能原因
+
+1. 调用方应用未成功安装。
+2. 连接服务或进行数据传递时，服务端异常或数据序列化失败，间接导致包名获取失败。
+3. 系统程序内部错误。
+
+处理步骤
+
+1. 使用命令**hdc shell bm dump -a**查询设备上已安装的应用列表，确认调用方的bundleName存在于列表中。
+2. 尝试重试操作，检查网络状态是否正常。
+3. 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+
+#### [h2]Get database module error
+
+错误信息
+
+System internal error. Possible cause: Get database module error.
+
+错误描述
+
+获取数据库模块异常。
+
+可能原因
+
+内部错误，可能由SQL执行异常、内部状态异常或系统错误（如内存不足、I/O错误）引起。
+
+处理步骤
+
+尝试重试，若仍失败可提示用户重启应用或通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+
+#### [h2]Query dynamic icon data error
+
+错误信息
+
+System internal error. Possible cause: Query dynamic icon data error.
+
+错误描述
+
+查询动态图标数据异常。
+
+可能原因
+
+1. 应用与图标管理服务连接异常，导致无法获取动态图标数据。
+2. 请求过程中网络不稳定或服务端异常。
+
+处理步骤
+
+1. 确认已申请开通[图标管理服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-appinfo-manage#申请开通服务)。
+2. 检查设备网络，确认应用市场客户端运行正常，尝试重试。
+3. 若仍失败请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+
+#### [h2]Not agreed to the basic agreement
+
+错误信息
+
+System internal error. Possible cause: Not agreed to the basic agreement.
+
+错误描述
+
+未同意开发者基础服务协议。
+
+可能原因
+
+1. 未同意开发者基础服务协议。
+2. 请求过程中网络不稳定或服务端异常。
+
+处理步骤
+
+1. 登录[华为开发者联盟官网](https://developer.huawei.com/consumer/)，检查华为开发者基础服务协议签署状态。
+2. 检查设备网络，确认应用市场客户端运行正常，尝试重试。
+3. 若仍失败请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+
+#### [h2]Failed to decrypt the folder.
+
+错误信息
+
+System internal error. Possible cause: Failed to decrypt the folder.
+
+错误描述
+
+文件夹解密失败。
+
+可能原因
+
+1. 内部运行程序异常。
+2. 系统服务连接失败或内部状态异常。
+
+处理步骤
+
+1. 尝试重试。
+2. 若仍失败请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+
+#### [h2]Failed to obtain the resource management module
+
+错误信息
+
+System internal error. Possible cause: Failed to obtain the resource management module.
+
+错误描述
+
+获取资源管理模块异常。
+
+可能原因
+
+1. 资源管理模块被其他进程锁定。
+2. 资源管理模块异常。
+
+处理步骤
+
+1. 重启应用尝试重试。
+2. 若仍失败请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
 
 #### 1006800010 无动态图标信息
 
@@ -1122,7 +1479,48 @@ Select dynamic icon failed.
 
 处理步骤
 
-请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+1. 检查[selectDynamicIcon](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/appgallery-appinfomanager#appinfomanagerselectdynamicicon)接口参数的数据格式是否符合接口规范要求，包括数据类型、长度限制及格式规则。
+2. 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+
+#### [h2]Enable dynamic icons error
+
+错误信息
+
+System internal error. Possible cause: Enable dynamic icons error.
+
+错误描述
+
+启用动态图标异常。
+
+可能原因
+
+1. selectDynamicIcon接口参数不符合接口规范要求，例如：必填参数缺失、参数格式错误、参数值无效。
+2. 图标数据不存在或动态图标模块未启用。
+
+处理步骤
+
+1. 检查[selectDynamicIcon](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/appgallery-appinfomanager#appinfomanagerselectdynamicicon)接口参数的数据格式是否符合接口规范要求，包括数据类型、长度限制及格式规则。
+2. 若仍失败请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+
+#### [h2]Failed to query the module name
+
+错误信息
+
+System internal error. Possible cause: Failed to query the module name.
+
+错误描述
+
+查询模块名称异常。
+
+可能原因
+
+1. 动态图标模块名称未在系统中配置。
+2. 内部程序运行异常。
+
+处理步骤
+
+1. 清除设备缓存并重启重试。
+2. 若仍失败请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
 
 #### 1006800012 恢复默认图标失败
 
@@ -1217,21 +1615,25 @@ Failed to connect to AppGallery.
 
 #### 1021500004 参数写入异常
 
+#### [h2]get appInfo failed or init coment SDK failed
+
 错误信息
 
-Failed to write parameters.
+Failed to write parameters, possible cause: get appInfo failed or init coment SDK failed.
 
 错误描述
 
-参数写入异常。
+获取应用信息失败或应用评论服务的SDK初始化异常。
 
 可能原因
 
-写入参数到内存失败。
+1. 网络连接不稳定或不可用。
+2. SDK初始化错误或未正确调用。
 
 处理步骤
 
-请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+1. 检查设备的网络连接，确保设备能够正常访问互联网。
+2. 尝试重试，若仍失败请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
 
 #### 1021500005 应用上下文无效
 

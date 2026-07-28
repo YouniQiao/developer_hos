@@ -2,8 +2,8 @@
 title: "HandwriteController (手写套件功能)"
 upstream_id: "harmonyos-references/pen-handwritecontroller"
 catalog: "harmonyos-references"
-content_hash: "361db6a8c438"
-synced_at: "2026-07-09T00:59:58.711436"
+content_hash: "beef8a46d508"
+synced_at: "2026-07-28T16:51:17.367687"
 ---
 
 # HandwriteController (手写套件功能)
@@ -209,7 +209,9 @@ import {
   HandwriteController,
   HandwriteComponent,
   PenType,
-  PenHspInfo
+  PenHspInfo,
+  HiddenToolType,
+  HiddenConfig
 } from '@kit.Penkit';
 
 @Entry
@@ -244,6 +246,10 @@ struct HandWriteDemoComp {
           heightRatio: 1, // 可选属性，自定义画布大小，高度占比（0-1）。
           maxCanvasHeight: 5000, // 可选属性，自定义画布最大高度。
           scaleDisabled: false, // 可选属性，是否禁止缩放。
+          hiddenTools: {
+            hiddenOptionalTools: [HiddenToolType.PENCIL], // 可选属性，设置需要隐藏的工具类集合。
+            hiddenArcBox: false  // 可选属性，设置是否隐藏波轮菜单。
+          } as HiddenConfig, // 可选属性，隐藏不需要的手写工具。
           onInit: () => {
             // 画布初始化完成时的回调。此时可以调用接口加载和显示笔记内容。
             this.controller?.load(this.initPath);

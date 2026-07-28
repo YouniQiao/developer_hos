@@ -2,8 +2,8 @@
 title: "oh_environment.h"
 upstream_id: "harmonyos-references/capi-oh-environment-h"
 catalog: "harmonyos-references"
-content_hash: "930d41e3c828"
-synced_at: "2026-07-09T00:59:00.816191"
+content_hash: "ba95c0d12d1a"
+synced_at: "2026-07-28T16:50:03.530090"
 ---
 
 # oh_environment.h
@@ -17,6 +17,11 @@ environment模块接口定义，使用environment提供的native接口，获取�
 库： libohenvironment.so
 
 系统能力： SystemCapability.FileManagement.File.Environment.FolderObtain
+
+设备行为差异：
+
+- 在API版本26.0.0及之后：该接口在PC/2in1和Tablet中可正常调用，在其他设备类型中返回801错误码。
+- 在API版本26.0.0之前：该接口在PC/2in1可正常调用，在其他设备类型中返回801错误码。
 
 起始版本： 12
 

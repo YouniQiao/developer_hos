@@ -2,8 +2,8 @@
 title: "hidebug.h"
 upstream_id: "harmonyos-references/capi-hidebug-h"
 catalog: "harmonyos-references"
-content_hash: "346d1ffacad0"
-synced_at: "2026-07-09T01:00:04.730682"
+content_hash: "d5be3cb34cec"
+synced_at: "2026-07-28T16:51:22.453092"
 ---
 
 # hidebug.h
@@ -58,6 +58,10 @@ synced_at: "2026-07-09T01:00:04.730682"
 | [typedef bool (*OH_HiDebug_MemDumpListener)(int32_t fd, OH_HiDebug_MemListenerType tag, bool mayReportToOEM, const char* arg)](#oh_hidebug_memdumplistener) | OH_HiDebug_MemDumpListener | 内存导出监听的回调函数。开发者通过应用中的文件描述符（FD）来写入内存数据，从而可利用[hidumper命令](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidumper#查询虚拟机堆内存)导出数据。 |
 | [HiDebug_ErrorCode OH_HiDebug_RegisterMemDumpListener(const char* name, OH_HiDebug_MemDumpListener listener)](#oh_hidebug_registermemdumplistener) | - | 注册内存导出监听。当应用的内存占用较高，或通过[hidumper命令](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidumper#查询虚拟机堆内存)手动导出内存信息时，系统会主动调用已注册的回调函数。 第三方应用框架或开发者可借此将应用内部内存信息转储到hidumper中，或通过商业灰度上传至OEM厂商。 对应的注销函数为：[OH_HiDebug_UnregisterMemDumpListener](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-h#oh_hidebug_unregistermemdumplistener)。 |
 | [HiDebug_ErrorCode OH_HiDebug_UnregisterMemDumpListener(const char* name)](#oh_hidebug_unregistermemdumplistener) | - | 注销已经注册成功的内存导出监听。 |
+| [uint64_t OH_HiDebug_AcquireAsyncContext()](#oh_hidebug_acquireasynccontext) | - | Profiler辅助接口，获取一个AsyncContext供后续使用。对应的释放函数为：[OH_HiDebug_ReleaseAsyncContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-h#oh_hidebug_releaseasynccontext)。 |
+| [void OH_HiDebug_PushAsyncContext(uint64_t ctx)](#oh_hidebug_pushasynccontext) | - | Profiler辅助接口，将AsyncContext压入运行上下文栈表。 |
+| [void OH_HiDebug_PopAsyncContext(uint64_t ctx)](#oh_hidebug_popasynccontext) | - | Profiler辅助接口，将AsyncContext从运行上下文栈表中弹出。 |
+| [void OH_HiDebug_ReleaseAsyncContext(uint64_t ctx)](#oh_hidebug_releaseasynccontext) | - | Profiler辅助接口，将AsyncContext释放给系统。 |
 
 #### 函数说明
 
@@ -240,7 +244,7 @@ HiDebug_ErrorCode OH_HiDebug_StopAppTraceCapture()
 
 | 类型 | 说明 |
 | --- | --- |
-| [HiDebug_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-type-h#hidebug_errorcode) | 0 - 成功。 11400104 - 系统内部错误。 11400105 - 当前没有trace正在运行 |
+| [HiDebug_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-type-h#hidebug_errorcode) | 0 - 成功。 11400104 - 系统内部错误。 11400105 - 当前没有trace正在运行。 |
 
 #### [h2]OH_HiDebug_RequestTrace()
 
@@ -332,7 +336,7 @@ typedef void (*OH_HiDebug_SymbolicAddressCallback)(void* pc, void* arg, const Hi
 | --- | --- |
 | void* pc | 传入[OH_HiDebug_SymbolicAddress](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-h#oh_hidebug_symbolicaddress)接口的需要解析的pc地址。 |
 | void* arg | 传入[OH_HiDebug_SymbolicAddress](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-h#oh_hidebug_symbolicaddress)接口的arg值。 |
-| [const HiDebug_StackFrame](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-hidebug-stackframe)* frame | 由传入[OH_HiDebug_SymbolicAddress](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-h#oh_hidebug_symbolicaddress)接口的pc地址解析后的得到栈信息[HiDebug_StackFrame](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-hidebug-stackframe)指针，该指针指向内容仅在该函数作用域内有效。 |
+| [const HiDebug_StackFrame](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-hidebug-stackframe)* frame | 由传入[OH_HiDebug_SymbolicAddress](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-h#oh_hidebug_symbolicaddress)接口的pc地址解析后得到栈信息[HiDebug_StackFrame](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-hidebug-stackframe)指针，该指针指向内容仅在该函数作用域内有效。 |
 
 #### [h2]OH_HiDebug_SymbolicAddress()
 
@@ -468,7 +472,7 @@ HiDebug_ErrorCode OH_HiDebug_GetGraphicsMemorySummary(uint32_t interval, HiDebug
 
 | 参数项 | 描述 |
 | --- | --- |
-| uint32_t interval | 当显存数据缓存值存在时间超过设定间隔interval（单位：秒）时，接口会获取最新的显存数据并更新缓存；否则，接口将直接返回缓存值。 interval的取值范围为[2，3600]，若传入的interval超出取值范围时，将使用300作为默认值。 |
+| uint32_t interval | 当显存数据缓存值存在时间超过设定间隔interval（单位：秒）时，接口会获取最新的显存数据并更新缓存；否则，接口将直接返回缓存值。 interval的取值范围为[2, 3600]，若传入的interval超出取值范围时，将使用300作为默认值。 |
 | [HiDebug_GraphicsMemorySummary](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-hidebug-graphicsmemorysummary) *summary | 表示指向[HiDebug_GraphicsMemorySummary](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-hidebug-graphicsmemorysummary)的指针。 |
 
 返回：
@@ -690,3 +694,73 @@ HiDebug_ErrorCode OH_HiDebug_UnregisterMemDumpListener(const char* name)
 | 类型 | 说明 |
 | --- | --- |
 | [HiDebug_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-type-h#hidebug_errorcode) | 返回结果码： HIDEBUG_SUCCESS：操作成功。 HIDEBUG_INVALID_ARGUMENT：无效参数。 |
+
+#### [h2]OH_HiDebug_AcquireAsyncContext()
+
+```
+uint64_t OH_HiDebug_AcquireAsyncContext()
+```
+ 描述
+
+Profiler辅助接口，获取一个AsyncContext供后续使用。对应的释放函数为：[OH_HiDebug_ReleaseAsyncContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-h#oh_hidebug_releaseasynccontext)。
+
+![](./img/caution_3.0-zh-cn.png) 该接口仅支持ARM64架构，且仅可在debug版本应用中使用。
+
+起始版本： 26.0.0
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| uint64_t | AsyncContext，异步线程上下文信息。 |
+
+#### [h2]OH_HiDebug_PushAsyncContext()
+
+```
+void OH_HiDebug_PushAsyncContext(uint64_t ctx)
+```
+ 描述
+
+Profiler辅助接口，将AsyncContext压入运行上下文栈表。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| uint64_t ctx | 由[OH_HiDebug_AcquireAsyncContext()](#oh_hidebug_acquireasynccontext)获取的异步线程上下文。 |
+
+#### [h2]OH_HiDebug_PopAsyncContext()
+
+```
+void OH_HiDebug_PopAsyncContext(uint64_t ctx)
+```
+ 描述
+
+Profiler辅助接口，将AsyncContext从运行上下文栈表中弹出。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| uint64_t ctx | 由[OH_HiDebug_AcquireAsyncContext()](#oh_hidebug_acquireasynccontext)获取的异步线程上下文。 |
+
+#### [h2]OH_HiDebug_ReleaseAsyncContext()
+
+```
+void OH_HiDebug_ReleaseAsyncContext(uint64_t ctx)
+```
+ 描述
+
+Profiler辅助接口，将AsyncContext释放给系统。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| uint64_t ctx | 由[OH_HiDebug_AcquireAsyncContext()](#oh_hidebug_acquireasynccontext)获取的异步线程上下文。 |

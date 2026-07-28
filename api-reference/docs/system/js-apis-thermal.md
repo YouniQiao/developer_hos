@@ -2,8 +2,8 @@
 title: "@ohos.thermal (热管理)"
 upstream_id: "harmonyos-references/js-apis-thermal"
 catalog: "harmonyos-references"
-content_hash: "a24ccefd344c"
-synced_at: "2026-07-09T00:59:39.201189"
+content_hash: "228e1fc18ff7"
+synced_at: "2026-07-28T16:50:56.520116"
 ---
 
 # @ohos.thermal (热管理)
@@ -113,9 +113,9 @@ console.info('thermal level is: ' + level);
 
 subscribeThermalLevel(callback: AsyncCallback<ThermalLevel>): void
 
-![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始不再维护，建议使用[thermal.registerThermalLevelCallback](#thermalregisterthermallevelcallback9)替代。
-
 订阅热档位变化时的回调提醒。使用callback异步回调。
+
+![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始不再维护，建议使用[thermal.registerThermalLevelCallback](#thermalregisterthermallevelcallback9)替代。
 
 系统能力： SystemCapability.PowerManager.ThermalManager
 
@@ -123,7 +123,7 @@ subscribeThermalLevel(callback: AsyncCallback<ThermalLevel>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback | 是 | 回调函数。AsyncCallback只返回一个参数，为热档位信息。 |
+| callback | AsyncCallback | 是 | 回调函数，返回变化后的热档位；该参数是一个函数类型。 |
 
 示例：
 
@@ -137,9 +137,9 @@ thermal.subscribeThermalLevel((err: Error, level: thermal.ThermalLevel) => {
 
 unsubscribeThermalLevel(callback?: AsyncCallback<void>): void
 
-![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始不再维护，建议使用[thermal.unregisterThermalLevelCallback](#thermalunregisterthermallevelcallback9)替代。
-
 取消订阅热档位变化时的回调提醒。使用callback异步回调。
+
+![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始不再维护，建议使用[thermal.unregisterThermalLevelCallback](#thermalunregisterthermallevelcallback9)替代。
 
 系统能力： SystemCapability.PowerManager.ThermalManager
 
@@ -161,9 +161,9 @@ thermal.unsubscribeThermalLevel(() => {
 
 getThermalLevel(): ThermalLevel
 
-![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始不再维护，建议使用[thermal.getLevel](#thermalgetlevel9)替代。
-
 获取当前热档位信息。
+
+![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始不再维护，建议使用[thermal.getLevel](#thermalgetlevel9)替代。
 
 系统能力： SystemCapability.PowerManager.ThermalManager
 

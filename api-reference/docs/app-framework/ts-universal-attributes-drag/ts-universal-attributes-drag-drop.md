@@ -2,36 +2,36 @@
 title: "拖拽控制"
 upstream_id: "harmonyos-references/ts-universal-attributes-drag-drop"
 catalog: "harmonyos-references"
-content_hash: "d747432a7d6c"
-synced_at: "2026-07-09T00:57:41.293776"
+content_hash: "e9f0720dbc32"
+synced_at: "2026-07-28T16:42:26.476894"
 ---
 
 # 拖拽控制
 
-组件提供了一些属性和接口，可用于配置组件对拖拽事件的响应行为，或影响系统对拖拽事件的处理方式，包括是否允许被拖拽，自定义拖拽预览图的外观等。
+组件提供了一些属性和接口，可用于配置组件对拖拽事件的响应行为，或影响系统对拖拽事件的处理方式，包括配置组件拖拽和落入行为、数据类型、预览图样式及交互效果。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 从API version 10开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+- 从API version 10开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 - 本模块接口仅可在Stage模型下使用。
 
 ArkUI框架对以下组件实现了默认的拖拽能力，支持对数据的拖出或拖入响应。开发者也可以通过实现通用拖拽事件来自定义拖拽响应。
 
-- 默认支持拖出能力的组件（可从组件上拖出数据）：[Search](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-search)、[TextInput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textinput)、[TextArea](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textarea)、[RichEditor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-richeditor)、[Text](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text)、[Image](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-image)、[Hyperlink](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-hyperlink)，开发者可通过设置这些组件的[draggable](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-drag-drop#draggable)属性来控制对默认拖拽能力的使用。
-- 默认支持拖入能力的组件（目标组件可响应拖入数据）：[Search](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-search)、[TextInput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textinput)、[TextArea](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textarea)、[RichEditor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-richeditor)，开发者可通过设置这些组件的[allowDrop](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-drag-drop#allowdrop)属性为null来禁用对默认拖入能力的支持。
+- 默认支持拖出能力的组件（可从组件上拖出数据）：[Search](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-search)、[TextInput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textinput)、[TextArea](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textarea)、[RichEditor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-richeditor)、[Text](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text)、[Image](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-image)、[Hyperlink](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-hyperlink)，开发者可通过设置这些组件的[draggable](#draggable)属性来控制对默认拖拽能力的使用。
+- 默认支持拖入能力的组件（目标组件可响应拖入数据）：[Search](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-search)、[TextInput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textinput)、[TextArea](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textarea)、[RichEditor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-richeditor)，开发者可通过设置这些组件的[allowDrop](#allowdrop)属性为null来禁用对默认拖入能力的支持。
 - 不支持拖出能力的组件（不可从组件上拖出数据）：[ArcScrollBar](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-arcscrollbar)、[MultiNavigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-multinavigation)、[ToolBarItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toolbaritem)、[ArcSlider](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-arcslider)、[Span](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-span)、[ImageSpan](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-imagespan)、[ContainerSpan](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-containerspan)、[SymbolSpan](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-symbolspan)、[ArcAlphabetIndexer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-arc-alphabet-indexer)、[OffscreenCanvas](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-components-offscreencanvas)、[Menu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-menu)、[MenuItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-menuitem)、[MenuItemGroup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-menuitemgroup)、[PasteButton](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-security-components-pastebutton)、[SaveButton](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-security-components-savebutton)、[WithTheme](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-with-theme)、[NavPushPathHelper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-atomicservice-navpushpathhelper)、[ContentSlot](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-components-contentslot)、[Chip](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-chip)、[ExceptionPrompt](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-exceptionprompt)、[Filter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-filter)、[FormMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-formmenu)、[Popup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-popup)、[SelectionMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-selectionmenu)、[SplitLayout](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-splitlayout)以及所有弹窗类组件。
 
 Text、TextInput、TextArea、Hyperlink、Image、RichEditor和Web组件的draggable属性默认为true，默认支持拖出能力。
 
-其他支持拖出能力的组件需要开发者将draggable属性设置为true，并在[onDragStart](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondragstart)等接口中实现数据传输相关内容，才能正确处理拖拽。
+其他支持拖出能力的组件需要开发者将draggable属性设置为true，并在[onDragStart](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondragstart)等接口中实现数据封装与传递，才能正确处理拖拽。
 
-![](./img/note_3.0-zh-cn.png) Text组件需配合[copyOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#copyoption9)一起使用，设置copyOptions为CopyOptions.InApp或者CopyOptions.LocalDevice。
+![](./img/note_3.0-zh-cn.png) Text组件拖拽时，请设置[copyOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#copyoption9)为CopyOptions.InApp或CopyOptions.LocalDevice，以启用文本拖拽功能。
 
 #### allowDrop
 
 allowDrop(value: Array<UniformDataType> | null | Array<string>): T
 
-设置该组件上允许落入的数据类型。如果未设置allowDrop，组件将默认接受所有数据类型。
+设置该组件上允许落入的数据类型。如果未设置allowDrop，组件将默认接受所有数据类型；如果已设置allowDrop，仅允许符合指定数据类型的拖入数据落入该组件，不符合指定数据类型的数据将被拒绝落入，不会触发[onDrop](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondrop)事件。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -41,13 +41,13 @@ allowDrop(value: Array<UniformDataType> | null | Array<string>): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | Array | null12+ | Array23+ | 是 | 设置该组件上允许落入的数据类型。从API version 12开始，允许设置成null使该组件不接受所有的数据类型。从API version 23开始，支持设置自定义数据类型Array，自定义数据类型为应用自行定义的数据类型字符串，字符串无明确格式要求，但不应与UniformDataType标准类型格式重复，建议以易记易区分为原则来定义。 |
+| value | Array | null12+ | Array23+ | 是 | 设置该组件上允许落入的数据类型。从API version 12开始，允许设置成null使该组件不接受所有的数据类型。从API version 23开始，支持设置自定义数据类型Array，自定义数据类型为应用自行定义的数据类型字符串，字符串无明确格式要求，但不应与UniformDataType标准类型格式重复，以防与标准类型产生混淆，建议以易记易区分为原则来定义。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，可用于链式调用。 |
 
 #### draggable
 
@@ -69,13 +69,15 @@ draggable(value: boolean): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，可用于链式调用。 |
 
 #### dragPreview11+
 
 dragPreview(value: CustomBuilder | DragItemInfo | string): T
 
 设置组件浮起和拖拽过程中的预览图。
+
+![](./img/note_3.0-zh-cn.png) 在[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)中调用该接口时，不支持为preview参数传入[CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8)类型的值，也不支持设置[DragItemInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#dragiteminfo)中的builder字段。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -85,21 +87,21 @@ dragPreview(value: CustomBuilder | DragItemInfo | string): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | [DragItemInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#dragiteminfo) | string12+ | 是 | 设置组件浮起和拖拽过程中的预览图，仅在[onDragStart](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondragstart)拖拽方式中有效。 当组件支持拖拽并同时设置[bindContextMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#bindcontextmenu8)的预览图时，则长按浮起的预览图以[bindContextMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#bindcontextmenu8)设置的预览图为准。开发者在[onDragStart](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondragstart)中返回的背板图优先级低于[dragPreview](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-drag-drop#dragpreview11)设置的预览图，当设置了[dragPreview](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-drag-drop#dragpreview11)预览图时，拖拽过程中的背板图使用[dragPreview](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-drag-drop#dragpreview11)预览图。由于[CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8)需要离线渲染之后才能使用，因此存在一定的性能开销和时延，推荐优先使用 [DragItemInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#dragiteminfo)中的[PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)方式。 当传入类型为string的id时，则将id对应组件的截图作为预览图。如果id对应的组件无法查找到，或者id对应的组件[Visibility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#visibility)属性设置成None/Hidden，则对组件自身进行截图作为拖拽预览图。目前截图不含有亮度、阴影、模糊和旋转等视觉效果。 |
+| value | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | [DragItemInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#dragiteminfo) | string12+ | 是 | 设置组件浮起和拖拽过程中的预览图，仅在[onDragStart](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondragstart)拖拽方式中有效。 当组件支持拖拽并同时设置[bindContextMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#bindcontextmenu8)的预览图时，则长按浮起的预览图以[bindContextMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#bindcontextmenu8)设置的预览图为准。开发者在[onDragStart](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondragstart)中返回的背板图优先级低于[dragPreview](#dragpreview11)设置的预览图，当设置了[dragPreview](#dragpreview11)预览图时，拖拽过程中的背板图使用[dragPreview](#dragpreview11)预览图。由于[CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8)需要离线渲染之后才能使用，因此存在一定的性能开销和时延，推荐优先使用 [DragItemInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#dragiteminfo)中的[PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)方式。 当传入类型为string的id时，则将id对应组件的截图作为预览图。如果id对应的组件无法查找到，或者id对应的组件[Visibility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#visibility)属性设置成None/Hidden，则对组件自身进行截图作为拖拽预览图。目前截图不含有亮度、阴影、模糊和旋转等视觉效果。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，可用于链式调用。 |
 
 #### dragPreview15+
 
 dragPreview(preview: CustomBuilder | DragItemInfo | string, config?: PreviewConfiguration):T
 
-自定义组件拖拽过程中的预览图，仅用于设置浮起效果或者禁用浮起效果。
+设置组件浮起和拖拽过程中的预览图，支持通过config参数配置预览图是否仅用于浮起效果、是否延迟创建等。
 
-![](./img/note_3.0-zh-cn.png) 该接口不支持在[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)中调用。
+![](./img/note_3.0-zh-cn.png) 在[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)中调用该接口时，不支持为preview参数传入[CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8)类型的值，也不支持设置[DragItemInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#dragiteminfo)中的builder字段。
 
 元服务API： 从API version 15开始，该接口支持在元服务中使用。
 
@@ -109,20 +111,20 @@ dragPreview(preview: CustomBuilder | DragItemInfo | string, config?: PreviewConf
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| preview | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | [DragItemInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#dragiteminfo) | string | 是 | 设置组件浮起和拖拽过程中的预览图，仅在[onDragStart](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondragstart)拖拽方式中有效。 当组件支持拖拽并同时设置[bindContextMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#bindcontextmenu8)的预览图时，则长按浮起的预览图以[bindContextMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#bindcontextmenu8)设置的预览图为准。开发者在[onDragStart](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondragstart)中返回的背板图优先级低于[dragPreview](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-drag-drop#dragpreview11)设置的预览图，当设置了[dragPreview](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-drag-drop#dragpreview11)预览图时，拖拽过程中的背板图使用[dragPreview](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-drag-drop#dragpreview11)预览图。由于[CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8)需要离线渲染之后才能使用，因此存在一定的性能开销和时延，推荐优先使用 [DragItemInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#dragiteminfo)中的[PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)方式。 当传入类型为string的id时，则将id对应组件的截图作为预览图。如果id对应的组件无法查找到，或者id对应的组件[Visibility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#visibility)属性设置成None/Hidden，则对组件自身进行截图作为拖拽预览图。目前截图不含有亮度、阴影、模糊和旋转等视觉效果。 |
-| config | [PreviewConfiguration](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#previewconfiguration15) | 否 | 对自定义拖拽过程中的预览图进行配置。 只对[dragPreview](#dragpreview11)中的预览生效。 |
+| preview | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | [DragItemInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#dragiteminfo) | string | 是 | 设置组件浮起和拖拽过程中的预览图，仅在[onDragStart](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondragstart)拖拽方式中有效。 当组件支持拖拽并同时设置[bindContextMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#bindcontextmenu8)的预览图时，则长按浮起的预览图以[bindContextMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#bindcontextmenu8)设置的预览图为准。开发者在[onDragStart](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondragstart)中返回的背板图优先级低于[dragPreview](#dragpreview11)设置的预览图，当设置了[dragPreview](#dragpreview11)预览图时，拖拽过程中的背板图使用[dragPreview](#dragpreview11)预览图。由于[CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8)需要离线渲染之后才能使用，因此会增加预览图生成的性能开销和时延，推荐优先使用 [DragItemInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#dragiteminfo)中的[PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)方式。 当传入类型为string的id时，则将id对应组件的截图作为预览图。如果id对应的组件无法查找到，或者id对应的组件[Visibility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#visibility)属性设置成None/Hidden，则对组件自身进行截图作为拖拽预览图。目前截图不含有亮度、阴影、模糊和旋转等视觉效果。 |
+| config | [PreviewConfiguration](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#previewconfiguration15) | 否 | 对自定义拖拽过程中的预览图进行配置，仅对[dragPreview](#dragpreview15)中的预览生效。当需要配置预览图是否仅用于浮起效果、是否延迟创建等自定义预览行为时传入该参数；不传入时，使用系统默认的拖拽预览行为，即预览图不限制仅用于浮起效果且不延迟创建预览图。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，可用于链式调用。 |
 
 #### dragPreviewOptions11+
 
 dragPreviewOptions(value: DragPreviewOptions, options?: DragInteractionOptions): T
 
-设置拖拽过程中预览图处理模式，数量角标的显示以及预览图浮起的交互模式。不支持onItemDragStart拖拽方式。
+设置拖拽过程中预览图处理模式，数量角标的显示以及预览图浮起的交互模式。不支持通过Grid的[onItemDragStart](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-grid#onitemdragstart8)拖拽GridItem，也不支持通过List的[onItemDragStart](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list#onitemdragstart8)拖拽ListItem。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 20开始，该接口支持在[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)中调用。
 
@@ -134,26 +136,26 @@ dragPreviewOptions(value: DragPreviewOptions, options?: DragInteractionOptions):
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [DragPreviewOptions](#dragpreviewoptions11-1)11+ | 是 | 设置拖拽过程中预览图处理模式及数量角标的显示。 |
-| options12+ | [DragInteractionOptions](#draginteractionoptions12)12+ | 否 | 设置拖拽过程中预览图浮起的交互模式。 默认值：空 |
+| value | [DragPreviewOptions](#dragpreviewoptions11-1)11+ | 是 | 设置拖拽过程中预览图处理模式、数量角标的显示、背板图样式及浮起与拖拽预览图过渡效果。 |
+| options12+ | [DragInteractionOptions](#draginteractionoptions12)12+ | 否 | 设置拖拽过程中预览图浮起的交互模式。当需要启用多选聚拢、默认点按效果、禁用浮起、边缘自动滚屏或震动反馈等交互能力时传入该参数；不传入该参数时，拖拽交互按[DragInteractionOptions](#draginteractionoptions12)中各字段的默认值处理。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，可用于链式调用。 |
 
 #### DragPreviewOptions11+
 
-设置拖拽过程中预览图处理模式及数量角标的显示。
+设置拖拽过程中预览图处理模式、数量角标的显示、背板图样式及过渡效果。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| mode | [DragPreviewMode](#dragpreviewmode11枚举说明) | Array12+ | 否 | 是 | 表示拖拽过程中背板图处理模式。 默认值：DragPreviewMode.AUTO 当组件同时设置DragPreviewMode.AUTO和其它枚举值时，以DragPreviewMode.AUTO为准，其它枚举值设置无效。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| numberBadge12+ | boolean | number | 否 | 是 | 控制数量角标是否显示，或强制设置显示的数量。当设置数量角标时取值范围为[0，231-1]，超过取值范围时会按默认状态处理。当设置为浮点数时，只显示整数部分。 **说明：** 在多选拖拽场景，需通过该接口设置拖拽对象的数量。 默认值：true。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| modifier12+ | [ImageModifier](#imagemodifier12) | 否 | 是 | 用于配置拖拽背板图的样式Modifier对象，可使用图片组件所支持的属性和样式来配置背板图样式(参考示例6)，当前支持透明度，阴影，背景模糊度，圆角。文本拖拽只支持默认效果，不支持通过modifier进行自定义。 1.透明度 通过[opacity](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-opacity#opacity)设置不透明度，不透明度的取值范围为0-1。设置0或不设置时采用背板图透明度的默认值0.95，设置1或异常值时不透明。 2.阴影 通过[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)设置阴影。 3.背景模糊度 通过[backgroundEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundeffect11)或[backgroundBlurStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundblurstyle9)设置背景模糊度，如果两者同时设置，以后设置的属性为准。 4.圆角 通过[border](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#border)或[borderRadius](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderradius)设置圆角，当同时在mode和modifier中设置圆角，mode设置的圆角显示优先级低于modifier设置。 默认值：空，无法修改属性。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| mode | [DragPreviewMode](#dragpreviewmode11枚举说明) | Array12+ | 否 | 是 | 表示拖拽过程中预览图处理模式。 默认值：DragPreviewMode.AUTO 当组件同时设置DragPreviewMode.AUTO和其它枚举值时，以DragPreviewMode.AUTO为准，其它枚举值设置无效。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| numberBadge12+ | boolean | number | 否 | 是 | 控制数量角标是否显示，或强制设置显示的数量。设置为true时显示角标并使用实际拖拽对象数量，设置为false时不显示角标，设置为number值时强制显示指定数量的角标。当设置数量角标时取值范围为[0, 231-1]，超过取值范围时会按默认值true处理。当设置为浮点数时，只显示整数部分。 **说明：** 在多选拖拽场景，需通过该接口设置拖拽对象的数量。 默认值：true。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| modifier12+ | [ImageModifier](#imagemodifier12) | 否 | 是 | 用于配置拖拽背板图的样式Modifier对象，可使用图片组件所支持的属性和样式来配置背板图样式（参考示例6），当前支持透明度、阴影、背景模糊度、圆角、材质效果。文本拖拽只支持默认效果，不支持通过modifier进行自定义。 1.透明度。 通过[opacity](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-opacity#opacity)设置不透明度，不透明度的取值范围为[0, 1]。设置0或不设置时采用背板图透明度的默认值0.95，设置1或超出取值范围的值时不透明。 2.阴影。 通过[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)设置阴影。 3.背景模糊度。 通过[backgroundEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundeffect11)或[backgroundBlurStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundblurstyle9)设置背景模糊度，如果两者同时设置，以后设置的属性为准。 4.圆角。 通过[border](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#border)或[borderRadius](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderradius)设置圆角，当同时在mode和modifier中设置圆角，mode设置的圆角显示优先级低于modifier设置。 5.材质效果，从API版本26.0.0开始支持。 通过[systemMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemmaterial)设置系统材质效果。 默认值：空，拖拽背板图不设置样式。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **说明：** 1.若节点已设置背景模糊或材质效果，直接用作拖拽预览会导致截图包含这些效果，与拖拽modifier属性冲突。建议使用[dragPreview](#dragpreview11)自定义不包含背景模糊和材质效果的预览。 2.[ImmersiveMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#immersivematerial)的[colorInvert](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#immersiveoptions)参数在拖拽中不生效。 |
 | sizeChangeEffect19+ | [DraggingSizeChangeEffect](#draggingsizechangeeffect19枚举说明)19+ | 否 | 是 | 用于选择长按浮起图与拖拽预览图过渡效果。 默认值：DraggingSizeChangeEffect.DEFAULT。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 |
 
 #### DragPreviewMode11+枚举说明
@@ -164,13 +166,13 @@ dragPreviewOptions(value: DragPreviewOptions, options?: DragInteractionOptions):
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| AUTO | 1 | 系统根据拖拽场景自动改变跟手点位置，根据规则自动对拖拽背板图进行缩放变换等。 **元服务API**：从API version 12开始，该接口支持在元服务中使用。 |
-| DISABLE_SCALE | 2 | 禁用系统对拖拽背板图的缩放行为。 **元服务API**：从API version 12开始，该接口支持在元服务中使用。 |
-| ENABLE_DEFAULT_SHADOW12+ | 3 | 启用非文本类组件默认阴影效果。 **元服务API**：从API version 12开始，该接口支持在元服务中使用。 |
-| ENABLE_DEFAULT_RADIUS12+ | 4 | 启用非文本类组件统一圆角效果，默认值12vp。当应用自身设置的圆角值大于默认值或modifier设置的圆角时，则显示应用自定义圆角效果。 **元服务API**：从API version 12开始，该接口支持在元服务中使用。 |
-| ENABLE_DRAG_ITEM_GRAY_EFFECT18+ | 5 | 启用支持原拖拽对象灰显（透明度）效果，对文本内容拖拽不生效。用户拖起时原对象显示灰显效果，释放时原对象恢复原有效果。开启默认灰显效果后，不建议在拖拽开始后自行修改透明度，如果开发者在拖拽发起后自行修改应用透明度，则灰显效果将被覆盖，且在结束拖拽时无法正确恢复原始透明度效果。 **元服务API**：从API version 18开始，该接口支持在元服务中使用。 |
-| ENABLE_MULTI_TILE_EFFECT18+ | 6 | 启用支持多选对象鼠标拖拽不聚拢效果，各拖拽图显示在其原始位置的相对位置，当满足多选的情况下且isMultiSelectionEnabled为true时该参数才生效。不聚拢效果优先级高于[dragPreview](#dragpreview11)。不支持二次拖拽、圆角和缩放设置。 **元服务API**：从API version 18开始，该接口支持在元服务中使用。 |
-| ENABLE_TOUCH_POINT_CALCULATION_BASED_ON_FINAL_PREVIEW19+ | 7 | 启用支持以拖拽预览图初始尺寸计算跟手点位置，长按浮起图和拖拽图不一致时使用。鼠标拖拽，设置DragPreviewMode.ENABLE_MULTI_TILE_EFFECT时不生效。 **元服务API**：从API version 19开始，该接口支持在元服务中使用。 |
+| AUTO | 1 | 系统根据拖拽场景自动改变跟手点位置，并自动对拖拽背板图进行缩放变换。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| DISABLE_SCALE | 2 | 禁用系统对拖拽背板图的缩放行为。适用于需要保持拖拽预览图原始尺寸、不希望系统自动缩放的场景，如精确尺寸拖拽或自定义预览图大小控制场景。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| ENABLE_DEFAULT_SHADOW12+ | 3 | 启用非文本类组件默认阴影效果。适用于需要为拖拽预览图添加视觉层次感、提升拖拽对象辨识度的场景。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| ENABLE_DEFAULT_RADIUS12+ | 4 | 启用非文本类组件统一圆角效果，适用于需要为拖拽预览图提供一致圆角外观的场景。默认值12vp。当应用自身设置的圆角值大于默认值或modifier设置的圆角时，则显示应用自定义圆角效果。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| ENABLE_DRAG_ITEM_GRAY_EFFECT18+ | 5 | 启用支持原拖拽对象灰显（透明度）效果，对文本内容拖拽不生效。用户拖起时原对象显示灰显效果，释放时原对象恢复原有效果。开启默认灰显效果后，不建议在拖拽开始后自行修改透明度，如果开发者在拖拽发起后自行修改应用透明度，则灰显效果将被覆盖，且在结束拖拽时无法正确恢复原始透明度效果。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| ENABLE_MULTI_TILE_EFFECT18+ | 6 | 启用支持多选对象鼠标拖拽不聚拢效果，对文本内容拖拽不生效。各拖拽图显示在其原始位置的相对位置，当多个[GridItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-griditem)或[ListItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-listitem)处于选中状态且isMultiSelectionEnabled为true时该参数才生效。不聚拢效果优先级高于[dragPreview](#dragpreview11)。不支持二次拖拽、圆角和缩放设置。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| ENABLE_TOUCH_POINT_CALCULATION_BASED_ON_FINAL_PREVIEW19+ | 7 | 启用支持基于最终拖拽预览图缩放前的原始尺寸计算跟手点位置，长按浮起图和拖拽预览图不一致时使用。鼠标拖拽，设置DragPreviewMode.ENABLE_MULTI_TILE_EFFECT时不生效。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 |
 
 #### DraggingSizeChangeEffect19+枚举说明
 
@@ -192,11 +194,11 @@ dragPreviewOptions(value: DragPreviewOptions, options?: DragInteractionOptions):
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| isMultiSelectionEnabled | boolean | 否 | 是 | 表示拖拽过程中背板图是否支持多选聚拢效果。true表示支持多选聚拢效果，false表示不支持多选聚拢效果。该参数只在[Grid](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-grid)和[List](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list)组件中的[GridItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-griditem)组件和[ListItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-listitem)组件生效。 当一个item组件设置为多选拖拽时，该组件的子组件不可拖拽。聚拢组件预览图设置的优先级为[dragPreview](#dragpreview11)中的string，dragPreview中的PixelMap，组件自截图，不支持dragPreview中的Builder形式。 不支持组件绑定[bindContextMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#bindcontextmenu12)中参数存在isShown的模式。 默认值：false **元服务API**：从API version 12开始，该接口支持在元服务中使用。 |
-| defaultAnimationBeforeLifting | boolean | 否 | 是 | 表示是否启用长按浮起阶段组件自身的默认点按效果（缩小）。true表示启用默认点按效果，false表示不启用默认点按效果。 默认值：false **元服务API**：从API version 12开始，该接口支持在元服务中使用。 |
+| isMultiSelectionEnabled | boolean | 否 | 是 | 表示拖拽过程中背板图是否支持多选聚拢效果。true表示支持多选聚拢效果，false表示不支持多选聚拢效果。该参数只在[Grid](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-grid)和[List](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list)组件中的[GridItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-griditem)组件和[ListItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-listitem)组件生效。 当一个item组件设置为多选拖拽时，该组件的子组件不可拖拽。聚拢组件预览图设置的优先级为[dragPreview](#dragpreview11)中的string、dragPreview中的PixelMap、组件自截图，不支持dragPreview中的Builder形式。 不支持组件绑定[bindContextMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#bindcontextmenu12)中参数存在isShown的模式。 默认值：false **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| defaultAnimationBeforeLifting | boolean | 否 | 是 | 表示是否启用长按浮起阶段组件自身的默认点按效果（缩小）。true表示启用默认点按效果，false表示不启用默认点按效果。 默认值：false **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | isLiftingDisabled15+ | boolean | 否 | 是 | 表示长按拖拽时，是否禁用浮起效果。true表示禁用浮起效果，false表示不禁用浮起效果。 如果设置为true，当组件支持拖拽并同时设置[bindContextMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#bindcontextmenu8)时，仅弹出配置的自定义菜单预览。 默认值：false **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
-| enableEdgeAutoScroll18+ | boolean | 否 | 是 | 设置在拖拽至可滚动组件边缘时是否触发自动滚屏。true表示触发自动滚屏，false表示不触发自动滚屏。 默认值：true **元服务API**：从API version 18开始，该接口支持在元服务中使用。 |
-| enableHapticFeedback18+ | boolean | 否 | 是 | 表示拖拽时是否启用震动。true表示启用震动，false表示不启用震动。仅在存在蒙层的预览（通过[bindContextMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#bindcontextmenu12)）场景生效。 **注意：** 仅当应用具备 ohos.permission.VIBRATE 权限，且用户启用了触感反馈时才会生效。 默认值：false **元服务API**：从API version 18开始，该接口支持在元服务中使用。 |
+| enableEdgeAutoScroll18+ | boolean | 否 | 是 | 设置在拖拽至可滚动组件边缘时是否触发自动滚屏。true表示触发自动滚屏，false表示不触发自动滚屏。 默认值：true **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| enableHapticFeedback18+ | boolean | 否 | 是 | 表示拖拽时是否启用震动。true表示启用震动，false表示不启用震动。仅在存在蒙层的预览（通过[bindContextMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#bindcontextmenu12)）场景生效。 **注意：** 仅当应用具备 ohos.permission.VIBRATE 权限，且用户启用了触感反馈时才会生效。 默认值：false **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 
 #### UniformDataType
 
@@ -239,11 +241,10 @@ import { unifiedDataChannel, uniformTypeDescriptor } from '@kit.ArkData';
 @Entry
 @Component
 struct ImageExample {
-  @State uri: string = "";
-  @State aBlockArr: string[] = [];
-  @State bBlockArr: string[] = [];
-  @State AVisible: Visibility = Visibility.Visible;
-  @State dragSuccess: Boolean = false;
+  @State uri: string = '';
+  @State disallowedBlockArr: string[] = [];
+  @State allowedBlockArr: string[] = [];
+  @State disallowedAreaVisible: Visibility = Visibility.Visible;
 
   build() {
     Column() {
@@ -255,16 +256,16 @@ struct ImageExample {
           .width(100)
           .height(100)
           .border({ width: 1 })
-          .visibility(this.AVisible)
+          .visibility(this.disallowedAreaVisible)
           .draggable(true)
           .onDragEnd((event: DragEvent) => {
             let ret = event.getResult();
             if (ret == 0) {
-              console.info("enter ret == 0")
-              this.AVisible = Visibility.Hidden;
+              console.info('enter ret == 0');
+              this.disallowedAreaVisible = Visibility.Hidden;
             } else {
-              console.info("enter ret != 0")
-              this.AVisible = Visibility.Visible;
+              console.info('enter ret != 0');
+              this.disallowedAreaVisible = Visibility.Visible;
             }
           })
       }
@@ -276,7 +277,7 @@ struct ImageExample {
             .fontSize('15dp')
             .height('10%')
           List() {
-            ForEach(this.aBlockArr, (item: string, index) => {
+            ForEach(this.disallowedBlockArr, (item: string, index) => {
               ListItem() {
                 Image(item)
                   .width(100)
@@ -291,13 +292,13 @@ struct ImageExample {
           .allowDrop([uniformTypeDescriptor.UniformDataType.TEXT])
           .onDrop((event?: DragEvent, extraParams?: string) => {
             this.uri = JSON.parse(extraParams as string)?.extraInfo;
-            this.aBlockArr.splice(JSON.parse(extraParams as string)?.insertIndex, 0, this.uri);
-            console.info("ondrop not udmf data");
+            this.disallowedBlockArr.splice(JSON.parse(extraParams as string)?.insertIndex, 0, this.uri);
+            console.info('ondrop not udmf data');
           })
           .border({ width: 1 })
         }
-        .height("50%")
-        .width("45%")
+        .height('50%')
+        .width('45%')
         .border({ width: 1 })
         .margin({ left: 12 })
 
@@ -306,7 +307,7 @@ struct ImageExample {
             .fontSize('15dp')
             .height('10%')
           List() {
-            ForEach(this.bBlockArr, (item: string, index) => {
+            ForEach(this.allowedBlockArr, (item: string, index) => {
               ListItem() {
                 Image(item)
                   .width(100)
@@ -321,26 +322,25 @@ struct ImageExample {
           .width('100%')
           .allowDrop([uniformTypeDescriptor.UniformDataType.IMAGE])
           .onDrop((event?: DragEvent, extraParams?: string) => {
-            console.info("enter onDrop")
+            console.info('enter onDrop');
             let dragData: UnifiedData = (event as DragEvent).getData() as UnifiedData;
             if (dragData != undefined) {
               let arr: Array<unifiedDataChannel.UnifiedRecord> = dragData.getRecords();
               if (arr.length > 0) {
                 let image = arr[0] as unifiedDataChannel.Image;
                 this.uri = image.imageUri;
-                this.bBlockArr.splice(JSON.parse(extraParams as string)?.insertIndex, 0, this.uri);
+                this.allowedBlockArr.splice(JSON.parse(extraParams as string)?.insertIndex, 0, this.uri);
               } else {
-                console.info(`dragData arr is null`)
+                console.info(`dragData arr is null`);
               }
             } else {
-              console.info(`dragData  is undefined`)
+              console.info(`dragData  is undefined`);
             }
-            console.info("ondrop udmf data");
-            this.dragSuccess = true
+            console.info('ondrop udmf data');
           })
         }
-        .height("50%")
-        .width("45%")
+        .height('50%')
+        .width('45%')
         .border({ width: 1 })
         .margin({ left: 12 })
       }
@@ -348,7 +348,7 @@ struct ImageExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732321.gif)
+ ![](./img/zh-cn_image_0000002656008316.gif)
 
 #### [h2]示例2（设置预览图）
 
@@ -362,7 +362,7 @@ struct DragPreviewDemo {
   @Builder
   dragPreviewBuilder() {
     Column() {
-      Text("dragPreview")
+      Text('dragPreview')
         .width(150)
         .height(50)
         .fontSize(20)
@@ -374,9 +374,9 @@ struct DragPreviewDemo {
   }
 
   @Builder
-  MenuBuilder() {
+  menuBuilder() {
     Flex({ direction: FlexDirection.Column, justifyContent: FlexAlign.Center, alignItems: ItemAlign.Center }) {
-      Text("menu item 1")
+      Text('menu item 1')
         .fontSize(15)
         .width(100)
         .height(40)
@@ -385,7 +385,7 @@ struct DragPreviewDemo {
         .backgroundColor(Color.Pink)
       Divider()
         .height(5)
-      Text("menu item 2")
+      Text('menu item 2')
         .fontSize(15)
         .width(100)
         .height(40)
@@ -401,21 +401,21 @@ struct DragPreviewDemo {
       Column() {
         // $r('app.media.image')需要替换为开发者所需的图像资源文件
         Image($r('app.media.image'))
-          .width("30%")
+          .width('30%')
           .draggable(true)
-          .bindContextMenu(this.MenuBuilder, ResponseType.LongPress)
+          .bindContextMenu(this.menuBuilder, ResponseType.LongPress)
           .onDragStart(() => {
-            console.info("Image onDragStart")
+            console.info('Image onDragStart');
           })
           .dragPreview(this.dragPreviewBuilder)
       }
-      .width("100%")
+      .width('100%')
     }
-    .height("100%")
+    .height('100%')
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253200.gif)
+ ![](./img/zh-cn_image_0000002655848396.gif)
 
 #### [h2]示例3（设置背板图样式）
 
@@ -425,20 +425,20 @@ struct DragPreviewDemo {
 // xxx.ets
 @Entry
 @Component
-struct dragPreviewOptionsDemo {
+struct DragPreviewOptionsDemo {
   build() {
     Row() {
       Column() {
         // $r('app.media.image')需要替换为开发者所需的图像资源文件
         Image($r('app.media.image'))
           .margin({ top: 10 })
-          .width("30%")
+          .width('30%')
           .draggable(true)
           .dragPreviewOptions({ mode: DragPreviewMode.AUTO })
         // $r('app.media.image')需要替换为开发者所需的图像资源文件
         Image($r('app.media.image'))
           .margin({ top: 10 })
-          .width("30%")
+          .width('30%')
           .border({
             radius: {
               topLeft: 1,
@@ -449,20 +449,20 @@ struct dragPreviewOptionsDemo {
           })
           .draggable(true)
           .onDragStart(() => {
-            console.info("Image onDragStart")
+            console.info('Image onDragStart');
           })
           .dragPreviewOptions({
             mode: [DragPreviewMode.ENABLE_DEFAULT_SHADOW, DragPreviewMode.ENABLE_DEFAULT_RADIUS,
               DragPreviewMode.ENABLE_DRAG_ITEM_GRAY_EFFECT]
           })
       }
-      .width("100%")
-      .height("100%")
+      .width('100%')
+      .height('100%')
     }
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612385.gif)
+ ![](./img/zh-cn_image_0000002686087825.gif)
 
 #### [h2]示例4（设置多选拖拽）
 
@@ -492,7 +492,7 @@ struct Example {
           .onDragStart(() => {
 
           })
-        }, (item: string) => item)
+        }, (item: number) => item.toString())
       }
       .columnsTemplate('1fr 1fr 1fr')
       .rowsTemplate('1fr 1fr 1fr')
@@ -502,7 +502,7 @@ struct Example {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413094.gif)
+ ![](./img/zh-cn_image_0000002685927997.gif)
 
 #### [h2]示例5（设置默认点按效果）
 
@@ -532,7 +532,7 @@ struct Example {
           .onDragStart(() => {
 
           })
-        }, (item: string) => item)
+        }, (item: number) => item.toString())
       }
       .columnsTemplate('1fr 1fr 1fr')
       .rowsTemplate('1fr 1fr 1fr')
@@ -542,7 +542,7 @@ struct Example {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732323.gif)
+ ![](./img/zh-cn_image_0000002656008318.gif)
 
 #### [h2]示例6（自定义背板图样式）
 
@@ -554,45 +554,40 @@ import { ImageModifier } from '@kit.ArkUI';
 
 @Entry
 @Component
-struct dragPreviewOptionsDemo {
+struct DragPreviewOptionsDemo {
   @State myModifier: ImageAttribute = new ImageModifier().opacity(0.5)
-  @State vis: boolean = true
-  @State changeValue: string = ''
-  @State submitValue: string = ''
-  @State positionInfo: CaretOffset = { index: 0, x: 0, y: 0 }
-  controller: SearchController = new SearchController()
-  @State OpacityIndex: number = 0
-  @State OpacityList: (number | undefined | null)[] = [
+  @State opacityIndex: number = 0
+  @State opacityList: (number | undefined | null)[] = [
     0.3, 0.5, 0.7, 1, -50, 0, 10, undefined, null
   ]
 
   build() {
     Row() {
       Column() {
-        Text(this.OpacityList[this.OpacityIndex] + "")
-        Button("Opacity")
+        Text(this.opacityList[this.opacityIndex] + '')
+        Button('Opacity')
           .onClick(() => {
-            this.OpacityIndex++
-            if (this.OpacityIndex > this.OpacityList.length - 1) {
-              this.OpacityIndex = 0
+            this.opacityIndex++;
+            if (this.opacityIndex > this.opacityList.length - 1) {
+              this.opacityIndex = 0;
             }
           })
         // $r('app.media.image')需要替换为开发者所需的图像资源文件
         Image($r('app.media.image'))
           .margin({ top: 10 })
-          .width("100%")
+          .width('100%')
           .draggable(true)
           .dragPreviewOptions({
-            modifier: this.myModifier.opacity(this.OpacityList[this.OpacityIndex]) as ImageModifier
+            modifier: this.myModifier.opacity(this.opacityList[this.opacityIndex]) as ImageModifier
           })
       }
-      .width("50%")
-      .height("50%")
+      .width('50%')
+      .height('50%')
     }
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253202.gif)
+ ![](./img/zh-cn_image_0000002655848398.gif)
 
 #### [h2]示例7（图片拖拽设置）
 
@@ -619,19 +614,19 @@ struct ImageDrag {
   filesDir = this.context?.filesDir;
 
   public async createPixelMap(pixelMap: unifiedDataChannel.SystemDefinedPixelMap): Promise<image.PixelMap | null> {
-    let mWidth: number = (pixelMap.details?.width ?? -1) as number;
-    let mHeight: number = (pixelMap.details?.height ?? -1) as number;
-    let mPixelFormat: image.PixelMapFormat =
+    let pixelMapWidth: number = (pixelMap.details?.width ?? -1) as number;
+    let pixelMapHeight: number = (pixelMap.details?.height ?? -1) as number;
+    let pixelMapPixelFormat: image.PixelMapFormat =
       (pixelMap.details?.['pixel-format'] ?? image.PixelMapFormat.UNKNOWN) as image.PixelMapFormat;
-    let mItemPixelMapData: Uint8Array = pixelMap.rawData;
+    let itemPixelMapData: Uint8Array = pixelMap.rawData;
     const opts: image.InitializationOptions = {
-      editable: false, pixelFormat: mPixelFormat, size: {
-        height: mHeight,
-        width: mWidth
+      editable: false, pixelFormat: pixelMapPixelFormat, size: {
+        height: pixelMapHeight,
+        width: pixelMapWidth
       }
     };
-    const buffer: ArrayBuffer = mItemPixelMapData.buffer.slice(mItemPixelMapData.byteOffset,
-      mItemPixelMapData.byteLength + mItemPixelMapData.byteOffset);
+    const buffer: ArrayBuffer = itemPixelMapData.buffer.slice(itemPixelMapData.byteOffset,
+      itemPixelMapData.byteLength + itemPixelMapData.byteOffset);
     try {
       let pixelMap: image.PixelMap = await image.createPixelMap(buffer, opts);
       return pixelMap;
@@ -647,7 +642,7 @@ struct ImageDrag {
         // 在线图片资源拖出
         Column() {
           Text('Online Image').fontSize(14)
-          Image('https://www.example.com/xxx.png')// 请填写一个具体的网络图片地址
+          Image('https://www.example.com/xxx.png') // 请填写一个具体的网络图片地址
             .objectFit(ImageFit.Contain)
             .draggable(true)
             .onDragStart(() => {
@@ -732,7 +727,7 @@ struct ImageDrag {
                   let buf = buffer.from(arrayBuffer, 0, readLen);
                   console.info(`The content of file: ${buf.toString()}`);
                   fileIo.closeSync(file);
-                })
+                });
               } catch (error) {
               }
             }
@@ -795,14 +790,16 @@ struct ImageDrag {
 
               // 落盘到本地
               const imagePackerApi = image.createImagePacker();
-              let packOpts: image.PackingOption = { format: "image/jpeg", quality: 98 };
+              let packOpts: image.PackingOption = { format: 'image/jpeg', quality: 98 };
               const path: string = this.context?.cacheDir + "/pixel_map.jpg";
               let file = fileIo.openSync(path, fileIo.OpenMode.CREATE | fileIo.OpenMode.READ_WRITE);
               imagePackerApi.packToFile(this.targetImage3, file.fd, packOpts).then(() => {
                 // 直接打包进文件
+                fileIo.closeSync(file);
               }).catch((error: BusinessError) => {
+                fileIo.closeSync(file);
                 console.error('Failed to pack the image. And the error is: ' + error);
-              })
+              });
             }
           })
       }
@@ -821,7 +818,7 @@ struct ImageDrag {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612387.gif)
+ ![](./img/zh-cn_image_0000002686087827.gif)
 
 #### [h2]示例8（设置图片拖拽震动）
 
@@ -833,9 +830,9 @@ struct ImageDrag {
 @Component
 struct DragPreviewDemo {
   @Builder
-  MenuBuilder() {
+  menuBuilder() {
     Flex({ direction: FlexDirection.Column, justifyContent: FlexAlign.Center, alignItems: ItemAlign.Center }) {
-      Text("menu item 1")
+      Text('menu item 1')
         .fontSize(15)
         .width(100)
         .height(40)
@@ -844,7 +841,7 @@ struct DragPreviewDemo {
         .backgroundColor(Color.Pink)
       Divider()
         .height(5)
-      Text("menu item 2")
+      Text('menu item 2')
         .fontSize(15)
         .width(100)
         .height(40)
@@ -860,18 +857,18 @@ struct DragPreviewDemo {
       Column() {
         // $r('app.media.app_icon')需要替换为开发者所需的图像资源文件
         Image($r('app.media.app_icon'))
-          .width("30%")
+          .width('30%')
           .draggable(true)
           .dragPreviewOptions({},
             { isMultiSelectionEnabled: true, defaultAnimationBeforeLifting: true, enableHapticFeedback: true })
-          .bindContextMenu(this.MenuBuilder, ResponseType.LongPress)
+          .bindContextMenu(this.menuBuilder, ResponseType.LongPress)
           .onDragStart(() => {
-            console.info("Image onDragStart")
+            console.info('Image onDragStart');
           })
       }
-      .width("100%")
+      .width('100%')
     }
-    .height("100%")
+    .height('100%')
   }
 }
 ```
@@ -888,7 +885,7 @@ struct LiftingExampleDemo {
   @Builder
   dragPreviewBuilder() {
     Column() {
-      Text("dragPreview builder")
+      Text('dragPreview builder')
         .width(150)
         .height(50)
         .fontSize(20)
@@ -900,9 +897,9 @@ struct LiftingExampleDemo {
   }
 
   @Builder
-  MenuBuilder() {
+  menuBuilder() {
     Flex({ direction: FlexDirection.Column, justifyContent: FlexAlign.Center, alignItems: ItemAlign.Center }) {
-      Text("menu 1")
+      Text('menu 1')
         .fontSize(25)
         .width(200)
         .height(60)
@@ -911,7 +908,7 @@ struct LiftingExampleDemo {
         .backgroundColor(Color.Green)
       Divider()
         .height(5)
-      Text("menu 2")
+      Text('menu 2')
         .fontSize(25)
         .width(200)
         .height(60)
@@ -925,17 +922,17 @@ struct LiftingExampleDemo {
   build() {
     Column() {
       Column() {
-        Text("禁用浮起效果")
+        Text('禁用浮起效果')
           .fontSize(30)
           .height(30)
           .backgroundColor('#FFFFFF')
           .margin({ top: 30 })
         // $r('app.media.startIcon')需要替换为开发者所需的图像资源文件
         Image($r('app.media.startIcon'))
-          .width("40%")
+          .width('40%')
           .draggable(true)
           .margin({ top: 15 })
-          .bindContextMenu(this.MenuBuilder, ResponseType.LongPress)
+          .bindContextMenu(this.menuBuilder, ResponseType.LongPress)
           .onDragStart(() => {
           })
           .dragPreviewOptions({}, {
@@ -945,17 +942,17 @@ struct LiftingExampleDemo {
             onlyForLifting: true,
             delayCreating: true
           })
-      }.width("100%")
+      }.width('100%')
 
       Column() {
-        Text("仅用于浮起效果")
+        Text('仅用于浮起效果')
           .fontSize(30)
           .height(30)
           .backgroundColor('#FFFFFF')
           .margin({ top: 80 })
         // $r('app.media.startIcon')需要替换为开发者所需的图像资源文件
         Image($r('app.media.startIcon'))
-          .width("40%")
+          .width('40%')
           .draggable(true)
           .margin({ top: 15 })
           .onDragStart(() => {
@@ -967,32 +964,32 @@ struct LiftingExampleDemo {
             onlyForLifting: true,
             delayCreating: true
           })
-      }.width("100%")
-    }.height("100%")
+      }.width('100%')
+    }.height('100%')
   }
 }
 ```
  自定义预览图用于浮起效果。
 
-![](./img/zh-cn_image_0000002631413096.gif)
+![](./img/zh-cn_image_0000002685927999.gif)
 
 自定义预览图禁用浮起效果。
 
-![](./img/zh-cn_image_0000002661732325.gif)
+![](./img/zh-cn_image_0000002656008320.gif)
 
 #### [h2]示例10（以拖拽预览图初始尺寸计算跟手点位置）
 
-从API version 19开始，示例10通过配置[DragPreviewMode](#dragpreviewmode11枚举说明)为ENABLE_TOUCH_POINT_CALCULATION_BASED_ON_FINAL_PREVIEW实现根据拖拽预览图的初始尺寸来计算拖拽过程中跟手点位置。当设置[DragPreviewMode](#dragpreviewmode11枚举说明)为ENABLE_MULTI_TILE_EFFECT时，该属性不生效。
+从API version 19开始，示例10通过配置[DragPreviewMode](#dragpreviewmode11枚举说明)为ENABLE_TOUCH_POINT_CALCULATION_BASED_ON_FINAL_PREVIEW实现基于最终拖拽预览图的原始尺寸来计算拖拽过程中跟手点位置。当设置[DragPreviewMode](#dragpreviewmode11枚举说明)为ENABLE_MULTI_TILE_EFFECT时，该属性不生效。
 
 ```
 @Entry
 @Component
 struct Index {
   // $r('app.media.app_icon')需要替换为开发者所需的图像资源文件
-  private iconStr: ResourceStr = $r("app.media.app_icon")
+  private iconStr: ResourceStr = $r('app.media.app_icon')
 
   @Builder
-  MyPreview() {
+  myPreview() {
     // $r('app.media.image')需要替换为开发者所需的图像资源文件
     Image($r('app.media.image'))
       .width(100)
@@ -1000,7 +997,7 @@ struct Index {
   }
 
   @Builder
-  MyMenuPreview() {
+  myMenuPreview() {
     Column() {
       // $r('app.media.image')需要替换为开发者所需的图像资源文件
       Image($r('app.media.image'))
@@ -1013,18 +1010,10 @@ struct Index {
   }
 
   @Builder
-  MyMenu() {
+  myMenu() {
     Menu() {
-      MenuItem({ startIcon: this.iconStr, content: "菜单选项" })
-      MenuItem({ startIcon: this.iconStr, content: "菜单选项" })
-    }
-  }
-
-  @Builder
-  SubMenu() {
-    Menu() {
-      MenuItem({ content: "复制", labelInfo: "Ctrl+C" })
-      MenuItem({ content: "粘贴", labelInfo: "Ctrl+V" })
+      MenuItem({ startIcon: this.iconStr, content: '菜单选项' })
+      MenuItem({ startIcon: this.iconStr, content: '菜单选项' })
     }
   }
 
@@ -1032,26 +1021,26 @@ struct Index {
     NavDestination() {
       Scroll() {
         Column() {
-          Text("no ENABLE_TOUCH_POINT_CALCULATION_BASED_ON_FINAL_PREVIEW")
+          Text('no ENABLE_TOUCH_POINT_CALCULATION_BASED_ON_FINAL_PREVIEW')
           // $r('app.media.image')需要替换为开发者所需的图像资源文件
           Image($r('app.media.image'))
             .width(200)
             .height(200)
-            .bindContextMenu(this.MyMenu, ResponseType.LongPress, {
-              preview: this.MyPreview
+            .bindContextMenu(this.myMenu, ResponseType.LongPress, {
+              preview: this.myPreview
             })
-            .dragPreview(this.MyMenuPreview)
+            .dragPreview(this.myMenuPreview)
             .draggable(true)
 
-          Text("ENABLE_TOUCH_POINT_CALCULATION_BASED_ON_FINAL_PREVIEW")
+          Text('ENABLE_TOUCH_POINT_CALCULATION_BASED_ON_FINAL_PREVIEW')
           // $r('app.media.image')需要替换为开发者所需的图像资源文件
           Image($r('app.media.image'))
             .width(200)
             .height(200)
-            .bindContextMenu(this.MyMenu, ResponseType.LongPress, {
-              preview: this.MyPreview
+            .bindContextMenu(this.myMenu, ResponseType.LongPress, {
+              preview: this.myPreview
             })
-            .dragPreview(this.MyMenuPreview)
+            .dragPreview(this.myMenuPreview)
             .draggable(true)
             .dragPreviewOptions({
               mode: [DragPreviewMode.ENABLE_TOUCH_POINT_CALCULATION_BASED_ON_FINAL_PREVIEW]
@@ -1064,7 +1053,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253204.gif)
+ ![](./img/zh-cn_image_0000002655848400.gif)
 
 #### [h2]示例11（长按浮起预览图与拖拽预览图过渡动效）
 
@@ -1075,10 +1064,10 @@ struct Index {
 @Component
 struct Index {
   // $r('app.media.app_icon')需要替换为开发者所需的图像资源文件
-  private iconStr: ResourceStr = $r("app.media.app_icon")
+  private iconStr: ResourceStr = $r('app.media.app_icon');
 
   @Builder
-  MyPreview() {
+  myPreview() {
     // $r('app.media.image')需要替换为开发者所需的图像资源文件
     Image($r('app.media.image'))
       .width(200)
@@ -1086,7 +1075,7 @@ struct Index {
   }
 
   @Builder
-  MyMenuPreviewSame() {
+  myMenuPreviewSame() {
     Column() {
       // $r('app.media.image')需要替换为开发者所需的图像资源文件
       Image($r('app.media.image'))
@@ -1096,7 +1085,7 @@ struct Index {
   }
 
   @Builder
-  MyMenuPreview() {
+  myMenuPreview() {
     Column() {
       // $r('app.media.startIcon')需要替换为开发者所需的图像资源文件
       Image($r('app.media.startIcon'))
@@ -1106,48 +1095,40 @@ struct Index {
   }
 
   @Builder
-  MyMenu() {
+  myMenu() {
     Menu() {
-      MenuItem({ startIcon: this.iconStr, content: "菜单选项" })
-      MenuItem({ startIcon: this.iconStr, content: "菜单选项" })
-    }
-  }
-
-  @Builder
-  SubMenu() {
-    Menu() {
-      MenuItem({ content: "复制", labelInfo: "Ctrl+C" })
-      MenuItem({ content: "粘贴", labelInfo: "Ctrl+V" })
+      MenuItem({ startIcon: this.iconStr, content: '菜单选项' })
+      MenuItem({ startIcon: this.iconStr, content: '菜单选项' })
     }
   }
 
   build() {
     Column() {
-      Text("sizeChangeEffect: SIZE_TRANSITION，长按弹出菜单，拖拽移动后菜单预览图过渡到预览图，有缩放无叠加效果")
+      Text('sizeChangeEffect: SIZE_TRANSITION，长按弹出菜单，拖拽移动后菜单预览图过渡到预览图，有缩放无叠加效果')
         .margin({ top: 10 })
       // $r('app.media.image')需要替换为开发者所需的图像资源文件
       Image($r('app.media.image'))
         .width(200)
         .height(200)
-        .bindContextMenu(this.MyMenu, ResponseType.LongPress, {
-          preview: this.MyMenuPreviewSame
+        .bindContextMenu(this.myMenu, ResponseType.LongPress, {
+          preview: this.myMenuPreviewSame
         })
-        .dragPreview(this.MyPreview)
+        .dragPreview(this.myPreview)
         .dragPreviewOptions({
           sizeChangeEffect: DraggingSizeChangeEffect.SIZE_TRANSITION
         })
         .draggable(true)
 
-      Text("sizeChangeEffect: SIZE_CONTENT_TRANSITION，长按弹出菜单，拖拽移动后菜单预览图和拖拽预览图两层叠加过渡")
+      Text('sizeChangeEffect: SIZE_CONTENT_TRANSITION，长按弹出菜单，拖拽移动后菜单预览图和拖拽预览图两层叠加过渡')
         .margin({ top: 10 })
       // $r('app.media.image')需要替换为开发者所需的图像资源文件
       Image($r('app.media.image'))
         .width(200)
         .height(200)
-        .bindContextMenu(this.MyMenu, ResponseType.LongPress, {
-          preview: this.MyMenuPreview
+        .bindContextMenu(this.myMenu, ResponseType.LongPress, {
+          preview: this.myMenuPreview
         })
-        .dragPreview(this.MyPreview)
+        .dragPreview(this.myPreview)
         .dragPreviewOptions({
           sizeChangeEffect: DraggingSizeChangeEffect.SIZE_CONTENT_TRANSITION
         })
@@ -1158,7 +1139,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612389.gif)
+ ![](./img/zh-cn_image_0000002686087829.gif)
 
 #### [h2]示例12（设置自定义组件落入）
 
@@ -1198,7 +1179,7 @@ struct CustomExample {
               let customCardData: Record<string, string> = {
                 'uniformDataType': 'custom.card',
                 'value': '自定义卡片'
-              }
+              };
               let unifiedRecord = new unifiedDataChannel.UnifiedRecord('custom.card', customCardData);
               let unifiedData = new unifiedDataChannel.UnifiedData(unifiedRecord);
               event.setData(unifiedData);
@@ -1236,12 +1217,12 @@ struct CustomExample {
         .allowDrop(['custom.card'])
         .onDrop((event: DragEvent) => {
           console.info('setData onDrop success');
-          let data = event.getData()
+          let data = event.getData();
           let arr: Array<unifiedDataChannel.UnifiedRecord> = data.getRecords();
           if (arr.length > 0) {
             if (arr[0].getTypes()[0] === 'custom.card') {
               let customCardData = arr[0].getValue() as Record<string, string>;
-              this.droppedItems.push(customCardData.value)
+              this.droppedItems.push(customCardData.value);
             }
           }
         })
@@ -1265,8 +1246,8 @@ struct CustomExample {
 // 自定义卡片组件
 @Component
 struct CustomCard {
-  title: string = '默认标题'
-  color: Color = Color.Gray
+  title: string = '默认标题';
+  color: Color = Color.Gray;
 
   build() {
     Column() {
@@ -1288,4 +1269,91 @@ struct CustomCard {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413098.gif)
+ ![](./img/zh-cn_image_0000002685928001.gif)
+
+#### [h2]示例13（设置背板图材质效果）
+
+该示例通过配置[ImageModifier](#imagemodifier12)中的[systemMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemmaterial)属性，设置拖拽背板的材质效果。
+
+从API版本26.0.0开始，[DragPreviewOptions](#dragpreviewoptions11-1)接口中的modifier参数新增支持[systemMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemmaterial)属性。
+
+```
+// xxx.ets
+import { ImageModifier } from '@kit.ArkUI';
+import { uiMaterial } from '@kit.ArkUI';
+
+@Entry
+@Component
+struct DragPreviewMaterialDemo {
+  @State materialIndex: number = 0;
+  @State materialName: string = 'ULTRA_THIN';
+  // 材质样式列表
+  @State materialList: uiMaterial.ImmersiveStyle[] = [
+    uiMaterial.ImmersiveStyle.ULTRA_THIN,
+    uiMaterial.ImmersiveStyle.THIN,
+    uiMaterial.ImmersiveStyle.REGULAR,
+    uiMaterial.ImmersiveStyle.THICK,
+    uiMaterial.ImmersiveStyle.ULTRA_THICK
+  ]
+  @State materialNames: string[] = [
+    'ULTRA_THIN', 'THIN', 'REGULAR', 'THICK', 'ULTRA_THICK'
+  ]
+
+  build() {
+    Row() {
+      Column() {
+        Text('当前材质样式：' + this.materialName)
+          .fontSize(16)
+          .margin({ bottom: 10 })
+
+        Button('切换材质样式')
+          .onClick(() => {
+            this.materialIndex++;
+            if (this.materialIndex > this.materialList.length - 1) {
+              this.materialIndex = 0;
+            }
+            this.materialName = this.materialNames[this.materialIndex];
+          })
+          .margin({ bottom: 20 })
+
+        Column() {
+          Text('材质效果')
+            .fontSize(20)
+            .fontColor(Color.White)
+            .margin({ top: 30, bottom: 10 })
+          Text('拖拽我查看效果')
+            .fontSize(14)
+            .fontColor(Color.White)
+        }
+        .width(150)
+        .height(150)
+        .backgroundColor('rgba(100, 150, 255, 0.3)')
+        .justifyContent(FlexAlign.Center)
+        .draggable(true)
+        .onDragStart((event: DragEvent) => {
+        })
+        .dragPreviewOptions({
+          modifier: new ImageModifier().systemMaterial(
+            new uiMaterial.ImmersiveMaterial({
+              style: this.materialList[this.materialIndex]
+            })
+          ) as ImageModifier
+        })
+
+        Text('操作说明：长按方块并拖拽\n查看不同材质效果')
+          .fontSize(14)
+          .fontColor(Color.Gray)
+          .margin({ top: 20 })
+          .textAlign(TextAlign.Center)
+      }
+      .width('100%')
+      .height('100%')
+      .padding(20)
+    }
+    .width('100%')
+    .height('100%')
+    .backgroundColor('#f5f5f5')
+  }
+}
+```
+ ![](./img/zh-cn_image_0000002656008322.gif)

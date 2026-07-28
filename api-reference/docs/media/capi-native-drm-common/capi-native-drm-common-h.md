@@ -2,8 +2,8 @@
 title: "native_drm_common.h"
 upstream_id: "harmonyos-references/capi-native-drm-common-h"
 catalog: "harmonyos-references"
-content_hash: "93cb7b6421f9"
-synced_at: "2026-07-09T01:00:28.179229"
+content_hash: "37d9c8ad8480"
+synced_at: "2026-07-28T16:51:45.889141"
 ---
 
 # native_drm_common.h
@@ -80,8 +80,8 @@ synced_at: "2026-07-09T01:00:28.179229"
 | MAX_MEDIA_KEY_STATUS_NAME_LEN 64 | 媒体密钥状态名称的最大长度。 **起始版本：** 11 |
 | MAX_MEDIA_KEY_STATUS_VALUE_LEN 256 | 媒体密钥状态值的最大长度。 **起始版本：** 11 |
 | DRM_UUID_LEN 16 | DRM解决方案的UUID长度。 **起始版本：** 11 |
-| MAX_PSSH_DATA_LEN 2048 | PSSH（Protected System Specific Header）信息的最大长度。 **起始版本：** 11 |
-| MAX_PSSH_INFO_COUNT 8 | PSSH（Protected System Specific Header）信息的最大数量。 **起始版本：** 11 |
+| MAX_PSSH_DATA_LEN 2048 | PSSH（Protection System Specific Header）信息的最大长度。 **起始版本：** 11 |
+| MAX_PSSH_INFO_COUNT 8 | PSSH（Protection System Specific Header）信息的最大数量。 **起始版本：** 11 |
 | MAX_MEDIA_KEY_SYSTEM_NAME_LEN 128 | MediaKeySystem名称的最大长度。 **起始版本：** 12 |
 | MAX_MEDIA_KEY_SYSTEM_NUM 8 | MediaKeySystem的最大数量。 **起始版本：** 12 |
 

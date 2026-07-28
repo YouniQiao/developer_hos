@@ -2,19 +2,19 @@
 title: "OH_LowPowerVideoSink"
 upstream_id: "harmonyos-references/capi-lowpowervideosink-oh-lowpowervideosink"
 catalog: "harmonyos-references"
-content_hash: "6a1816dd140e"
-synced_at: "2026-07-09T01:00:44.707434"
+content_hash: "bd6ea2141037"
+synced_at: "2026-07-28T16:52:01.746977"
 ---
 
 # OH_LowPowerVideoSink
 
 ```
-typedef struct OH_LowPowerVideoSink OH_LowPowerVideoSink
+typedef struct OH_LowPowerVideoSink OH_LowPowerVideoSink;
 ```
 
 #### 概述
 
-LowPowerVideoSink声明。
+OH_LowPowerVideoSink是低功耗视频输出场景中使用的数据结构，开发者通过该结构体实现低功耗视频输出功能。
 
 起始版本： 20
 

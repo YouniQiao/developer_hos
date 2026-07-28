@@ -2,8 +2,8 @@
 title: "Interfaces (其他)"
 upstream_id: "harmonyos-references/arkts-apis-media-i"
 catalog: "harmonyos-references"
-content_hash: "f7f6cfe64114"
-synced_at: "2026-07-09T01:00:39.330368"
+content_hash: "57dade94fabe"
+synced_at: "2026-07-28T16:51:56.486030"
 ---
 
 # Interfaces (其他)
@@ -118,6 +118,23 @@ media.createAVPlayer((err: BusinessError, player: media.AVPlayer) => {
 | --- | --- | --- | --- | --- |
 | [key: string] | Object | 否 | 是 | 该键值对支持的key取值范围，请参考[PlaybackInfoKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-e#playbackinfokey12)。 每个key值的Object类型和范围，请参考[PlaybackInfoKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-e#playbackinfokey12)。 |
 
+#### WatermarkConfiguration
+
+添加水印的配置参数。水印位置以视频左上角为原点计算。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Multimedia.Media.Core
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| top | number | 否 | 否 | 水印相对于视频顶部位置的偏移量。取值为整数，单位为像素（px）。 |
+| left | number | 否 | 否 | 水印相对于视频左侧位置的偏移量。取值为整数，单位为像素（px）。 |
+| width | number | 否 | 是 | 水印图片的宽度。取值为正整数，取值范围为[1, 4096]，单位为像素（px）。 |
+| height | number | 否 | 是 | 水印图片的高度。取值为正整数，取值范围为[1, 4096]，单位为像素（px）。 |
+
 #### AVRecorderConfig9+
 
 表示音视频录制的参数设置。
@@ -131,7 +148,7 @@ media.createAVPlayer((err: BusinessError, player: media.AVPlayer) => {
 | audioSourceType | [AudioSourceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-e#audiosourcetype9) | 否 | 是 | 选择录制的音频源类型。选择音频录制时必填。 **元服务API：** 从API version 12 开始，该接口支持在元服务中使用。 |
 | videoSourceType | [VideoSourceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-e#videosourcetype9) | 否 | 是 | 选择录制的视频源类型。选择视频录制时必填。 |
 | profile | [AVRecorderProfile](#avrecorderprofile9) | 否 | 否 | 录制的profile，必要参数。 **元服务API：** 从API version 12 开始，该接口支持在元服务中使用。 |
-| url | string | 否 | 否 | 录制输出URL：fd://xx (fd number) ![](./img/zh-cn_image_0000002631414456.png)，必要参数。 **元服务API：** 从API version 12 开始，该接口支持在元服务中使用。 |
+| url | string | 否 | 否 | 录制输出URL：fd://xx (fd number) ![](./img/zh-cn_image_0000002656009686.png)，必要参数。 **元服务API：** 从API version 12 开始，该接口支持在元服务中使用。 |
 | fileGenerationMode12+ | [FileGenerationMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-e#filegenerationmode12) | 否 | 是 | 创建媒体文件的模式，配合[on('photoAssetAvailable')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-avrecorder#onphotoassetavailable12)监听使用。 |
 | rotation(deprecated) | number | 否 | 是 | 录制的视频旋转角度，单位为度（°）。mp4格式支持0°、90°、180°和270°，默认值为0°。 从API version 6开始支持，从API version 12开始废弃。建议使用[AVMetadata](#avmetadata11).videoOrientation替代。 如果同时设置两个值，将会采用[AVMetadata](#avmetadata11).videoOrientation。 |
 | location(deprecated) | [Location](#location) | 否 | 是 | 录制的地理位置，默认不记录地理位置信息。 从API version 6开始支持，从API version 12开始废弃。建议使用 [AVMetadata](#avmetadata11).location。 如果同时设置两个值，将会采用[AVMetadata](#avmetadata11).location。 |
@@ -222,6 +239,7 @@ media.createAVPlayer((err: BusinessError, player: media.AVPlayer) => {
 | --- | --- | --- | --- | --- |
 | audioBitrate | number | 否 | 是 | 输出音频的码率，单位为比特率（bps），支持范围[1, 500000]。默认设置为48Kbps。 **元服务API：** 从API version 22开始，该接口支持在元服务中使用。 |
 | audioCodec | [CodecMimeType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-e#codecmimetype8) | 否 | 是 | 输出音频的编码格式，当前仅支持AAC。默认设置为AAC。 **元服务API：** 从API version 22开始，该接口支持在元服务中使用。 |
+| audioCodecV2 | [CodecMimeType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-e#codecmimetype8) | 否 | 是 | 输出音频的编码格式。 如果指定的编码格式不被支持，prepare会失败。默认设置为AAC。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
 | fileFormat | [ContainerFormatType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-e#containerformattype8) | 否 | 否 | 输出视频文件的封装格式，当前视频文件仅支持MP4。 **元服务API：** 从API version 22开始，该接口支持在元服务中使用。 |
 | videoBitrate | number | 否 | 是 | 输出视频的码率，单位为比特率（bps）。默认码率按输出视频的分辨率设置，[240p, 480P]默认码率值为1Mbps，(480P, 720P]默认码率值为2Mbps，(720P, 1080P]默认码率值为4Mbps，1080P及以上默认值为8Mbps。 **元服务API：** 从API version 22开始，该接口支持在元服务中使用。 |
 | videoCodec | [CodecMimeType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-e#codecmimetype8) | 否 | 是 | 输出视频的编码格式，当前仅支持AVC和HEVC。若源视频编码格式为HEVC，则默认设置为HEVC，否则默认设置为AVC。 **元服务API：** 从API version 22开始，该接口支持在元服务中使用。 |
@@ -453,7 +471,7 @@ async function setupPlayer() {
 | event | [AVMetricsEventType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-e#avmetricseventtype23) | 否 | 否 | 指标事件的类型。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | timeStamp | number | 否 | 否 | 事件发生时的系统时间。 |
 | playbackPosition | number | 否 | 否 | 事件发生时的播放进度位置。 |
-| details | Record | 否 | 否 | 事件的详细信息，不同指标事件类型包含的信息不同。 包含卡顿时间（duration: number）和卡顿的媒体类型（media: [MediaType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-e#mediatype8)）。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| details | Record | 否 | 否 | 事件的详细信息，不同指标事件类型包含的信息不同。 卡顿事件包含卡顿时间（duration: number）和卡顿的媒体类型（media: [MediaType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-e#mediatype8)）。 音画不同步事件包含不同步类型（视频帧超前或滞后音频帧）和不同步起止时间。 加载速率变化事件包含变化前后的数据下载速率。 加载数据请求错误事件包含请求阶段（连接、请求流媒体播放列表、请求流媒体数据）、请求时间和网络错误码。 播放内容切换事件包含切换前后的资源参数信息（视频分辨率、视频帧率、音频采样率、音频通道数等）。 播放内容不连续事件包含不连续类型（PTS跳变或者音频参数变化）、跳变前后的PTS/变化前后的音频参数（音频采样率、音频通道数、音频位深）。 音频状态变化事件包括失焦事件发生时的前/后状态。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### VideoSize
 
@@ -512,7 +530,7 @@ async function setupPlayer() {
 | numberOfChannels | number | 否 | 是 | 音频采集声道数，默认值为2。 **说明：** 从API version 6开始支持，从API version 9开始废弃，建议使用[AVRecorderProfile](#avrecorderprofile9)中的audioChannels替代。 |
 | format | [AudioOutputFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-e#audiooutputformatdeprecated) | 否 | 是 | 音频输出封装格式，默认设置为MPEG_4。 **说明：** 从API version 6开始支持，从API version 8开始废弃，建议使用fileFormat替代。 |
 | location | [Location](#location) | 否 | 是 | 音频采集的地理位置。 **说明：** 从API version 6开始支持，从API version 9开始废弃，建议使用[AVMetadata](#avmetadata11)中的location替代。 |
-| uri | string | 否 | 否 | 音频输出URI：fd://xx (fd number) ![](./img/zh-cn_image_0000002631414456.png) 文件需要由调用者创建，并赋予适当的权限。 **说明：** 从API version 6开始支持，从API version 9开始废弃，建议使用[AVRecorderConfig](#avrecorderconfig9)中的url替代。 |
+| uri | string | 否 | 否 | 音频输出URI：fd://xx (fd number) ![](./img/zh-cn_image_0000002656009686.png) 文件需要由调用者创建，并赋予适当的权限。 **说明：** 从API version 6开始支持，从API version 9开始废弃，建议使用[AVRecorderConfig](#avrecorderconfig9)中的url替代。 |
 | audioEncoderMime8+ | [CodecMimeType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-e#codecmimetype8) | 否 | 是 | 容器编码格式。 **说明：** 从API version 8开始支持，从API version 9开始废弃，建议使用[AVRecorderProfile](#avrecorderprofile9)中的audioCodec替代。 |
 | fileFormat8+ | [ContainerFormatType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-e#containerformattype8) | 否 | 是 | 音频编码格式。 **说明：** 从API version 8开始支持，从API version 9开始废弃，建议使用[AVRecorderProfile](#avrecorderprofile9)中的fileFormat替代。 |
 

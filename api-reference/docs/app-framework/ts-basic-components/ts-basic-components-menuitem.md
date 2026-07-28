@@ -2,8 +2,8 @@
 title: "MenuItem"
 upstream_id: "harmonyos-references/ts-basic-components-menuitem"
 catalog: "harmonyos-references"
-content_hash: "e27d9e423ca1"
-synced_at: "2026-07-09T00:58:06.765815"
+content_hash: "8f1b1b909c92"
+synced_at: "2026-07-28T16:47:03.626368"
 ---
 
 # MenuItem
@@ -31,23 +31,23 @@ MenuItem(value?: MenuItemOptions | CustomBuilder)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [MenuItemOptions](#menuitemoptions对象说明) | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 否 | 包含设置MenuItem的各项信息。 如果不传该参数，则创建空的MenuItem对象。 |
+| value | [MenuItemOptions](#menuitemoptions对象说明) | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 否 | 包含设置MenuItem的各项信息。需要使用标准菜单项配置（如起始图标、内容、标签等）时选择MenuItemOptions；需要自定义菜单项的显示内容和布局时选择CustomBuilder。如果不传该参数，则创建空的MenuItem对象。 |
 
 #### MenuItemOptions对象说明
 
-Menu中具体item菜单项信息。
+Menu中的菜单项信息。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| startIcon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | MenuItem的起始图标。不支持Symbol图标。使用Symbol图标时，须使用symbolStartIcon。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| content | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | MenuItem的内容。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| endIcon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | MenuItem的末尾图标。不支持Symbol图标。使用Symbol图标时，须使用symbolEndIcon。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| labelInfo | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | MenuItem结束的标签信息，如快捷方式Ctrl+C等。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| builder | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 否 | 是 | 用于构建二级菜单。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| symbolStartIcon12+ | [SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier) | 否 | 是 | MenuItem起始的Symbol图标。配置该项时，原先startIcon图标不显示。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| symbolEndIcon12+ | [SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier) | 否 | 是 | MenuItem末尾的Symbol图标。配置该项时，原先endIcon图标不显示。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| startIcon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | MenuItem的起始图标。不支持Symbol图标。使用Symbol图标时，须使用symbolStartIcon。默认不显示起始图标。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| content | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | MenuItem的内容。默认为空字符串。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| endIcon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | MenuItem的末尾图标。不支持Symbol图标。使用Symbol图标时，须使用symbolEndIcon。默认不显示末尾图标。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| labelInfo | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | MenuItem结束的标签信息，如快捷方式Ctrl+C等。默认不显示标签信息。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| builder | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 否 | 是 | 用于构建二级菜单。默认不显示二级菜单。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| symbolStartIcon12+ | [SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier) | 否 | 是 | MenuItem起始的Symbol图标。配置该项时，原先startIcon图标不显示。默认不显示Symbol起始图标。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| symbolEndIcon12+ | [SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier) | 否 | 是 | MenuItem末尾的Symbol图标。配置该项时，原先endIcon图标不显示。默认不显示Symbol末尾图标。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### 属性
 
@@ -77,7 +77,7 @@ selected(value: boolean)
 
 selectIcon(value: boolean | ResourceStr | SymbolGlyphModifier)
 
-设置当菜单项被选中时，是否显示被选中的图标。
+设置当菜单项被选中时，菜单项图标的显示方式。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -87,7 +87,7 @@ selectIcon(value: boolean | ResourceStr | SymbolGlyphModifier)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | boolean | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr)10+| [SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier)12+ | 是 | 菜单项被选中时，是否显示被选中的图标。 true：显示默认的对勾图标；false：不显示图标。 ResourceStr：显示指定的图标。 SymbolGlyphModifier：显示指定的HMSymbol图标。 默认值：false |
+| value | boolean | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr)10+| [SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier)12+ | 是 | 菜单项被选中时的图标显示方式。 true：显示默认的对勾图标；false：不显示图标。 ResourceStr：显示指定的图标。 SymbolGlyphModifier：显示指定的HMSymbol图标。 默认值：false |
 
 #### [h2]contentFont10+
 
@@ -161,6 +161,26 @@ labelFontColor(value: ResourceColor)
 | --- | --- | --- | --- |
 | value | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 是 | 菜单项中标签信息的字体颜色。 默认值：'#99000000' |
 
+#### [h2]subMenuBuilder
+
+subMenuBuilder(builder: CustomBuilder)
+
+设置自定义菜单项的二级菜单。
+
+起始版本： 26.0.0
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| builder | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 是 | 设置二级菜单的自定义内容。 当MenuItem组件的入参类型为[CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8)时可以使用本属性来接入自定义二级菜单。 父组件为[Menu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-menu)时，仅当[subMenuExpandingMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-menu#submenuexpandingmode12)属性设置为SubMenuExpandingMode.SIDE_EXPAND或SubMenuExpandingMode.STACK_EXPAND时，才可以触发子菜单。 |
+
 #### 事件
 
 #### [h2]onChange
@@ -177,7 +197,7 @@ onChange(callback: (selected: boolean) => void)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| selected | boolean | 是 | 选中状态发生变化时，触发该回调。 true：未选中切换为选中；false：选中切换为未选中。 |
+| selected | boolean | 是 | 当前菜单项是否被选中。 true：当前菜单项已选中；false：当前菜单项未选中。 |
 
 #### 示例
 

@@ -2,8 +2,8 @@
 title: "@ohos.enterprise.EnterpriseAdminExtensionAbility（企业设备管理扩展能力）"
 upstream_id: "harmonyos-references/js-apis-enterpriseadminextensionability"
 catalog: "harmonyos-references"
-content_hash: "814b84083d37"
-synced_at: "2026-07-09T00:59:53.607696"
+content_hash: "521bc15a7525"
+synced_at: "2026-07-28T16:51:10.958902"
 ---
 
 # @ohos.enterprise.EnterpriseAdminExtensionAbility（企业设备管理扩展能力）
@@ -51,6 +51,7 @@ import { EnterpriseAdminExtensionAbility } from '@kit.MDMKit';
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   onAdminEnabled() {
+    console.info(`Succeeded in calling onAdminEnabled callback.`);
   }
 }
 ```
@@ -72,6 +73,7 @@ import { EnterpriseAdminExtensionAbility } from '@kit.MDMKit';
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   onAdminDisabled() {
+    console.info(`Succeeded in calling onAdminDisabled callback.`);
   }
 }
 ```
@@ -95,7 +97,22 @@ onBundleAdded(bundleName: string): void
 示例：
 
 ```
-import { EnterpriseAdminExtensionAbility } from '@kit.MDMKit';
+import { EnterpriseAdminExtensionAbility, adminManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+
+let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_BUNDLE_ADDED];
+try {
+  adminManager.subscribeManagedEventSync(wantTemp, events);
+  console.info('Succeeded in subscribing managed event.');
+} catch (err) {
+  console.error(`Failed to subscribe managed event. Code: ${err.code}, message: ${err.message}`);
+}
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   onBundleAdded(bundleName: string) {
@@ -124,7 +141,22 @@ onBundleAdded(bundleName: string, accountId: number): void
 示例：
 
 ```
-import { EnterpriseAdminExtensionAbility } from '@kit.MDMKit';
+import { EnterpriseAdminExtensionAbility, adminManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+
+let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_BUNDLE_ADDED];
+try {
+  adminManager.subscribeManagedEventSync(wantTemp, events);
+  console.info('Succeeded in subscribing managed event.');
+} catch (err) {
+  console.error(`Failed to subscribe managed event. Code: ${err.code}, message: ${err.message}`);
+}
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   // 由于存在同名回调方法onBundleAdded(bundleName: string)，该回调方法无accountId参数，因此在实际调用时accountId必须为可选参数，写法请参考示例代码。如果删除accountId后的问号"?"，编译会报错。
@@ -153,7 +185,22 @@ onBundleRemoved(bundleName: string): void
 示例：
 
 ```
-import { EnterpriseAdminExtensionAbility } from '@kit.MDMKit';
+import { EnterpriseAdminExtensionAbility, adminManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+
+let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_BUNDLE_REMOVED];
+try {
+  adminManager.subscribeManagedEventSync(wantTemp, events);
+  console.info('Succeeded in subscribing managed event.');
+} catch (err) {
+  console.error(`Failed to subscribe managed event. Code: ${err.code}, message: ${err.message}`);
+}
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   onBundleRemoved(bundleName: string) {
@@ -182,7 +229,22 @@ onBundleRemoved(bundleName: string, accountId: number): void
 示例：
 
 ```
-import { EnterpriseAdminExtensionAbility } from '@kit.MDMKit';
+import { EnterpriseAdminExtensionAbility, adminManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+
+let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_BUNDLE_REMOVED];
+try {
+  adminManager.subscribeManagedEventSync(wantTemp, events);
+  console.info('Succeeded in subscribing managed event.');
+} catch (err) {
+  console.error(`Failed to subscribe managed event. Code: ${err.code}, message: ${err.message}`);
+}
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   // 由于存在同名回调方法onBundleRemoved(bundleName: string)，该回调方法无accountId参数，因此在实际调用时accountId必须为可选参数，写法请参考示例代码。如果删除accountId后的问号"?"，编译会报错。
@@ -211,7 +273,22 @@ onAppStart(bundleName: string): void
 示例：
 
 ```
-import { EnterpriseAdminExtensionAbility } from '@kit.MDMKit';
+import { EnterpriseAdminExtensionAbility, adminManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+
+let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_APP_START];
+try {
+  adminManager.subscribeManagedEventSync(wantTemp, events);
+  console.info('Succeeded in subscribing managed event.');
+} catch (err) {
+  console.error(`Failed to subscribe managed event. Code: ${err.code}, message: ${err.message}`);
+}
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   onAppStart(bundleName: string) {
@@ -239,7 +316,22 @@ onAppStop(bundleName: string): void
 示例：
 
 ```
-import { EnterpriseAdminExtensionAbility } from '@kit.MDMKit';
+import { EnterpriseAdminExtensionAbility, adminManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+
+let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_APP_STOP];
+try {
+  adminManager.subscribeManagedEventSync(wantTemp, events);
+  console.info('Succeeded in subscribing managed event.');
+} catch (err) {
+  console.error(`Failed to subscribe managed event. Code: ${err.code}, message: ${err.message}`);
+}
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   onAppStop(bundleName: string) {
@@ -267,8 +359,22 @@ onSystemUpdate(systemUpdateInfo: systemManager.SystemUpdateInfo): void
 示例：
 
 ```
-import { EnterpriseAdminExtensionAbility } from '@kit.MDMKit';
-import { systemManager } from '@kit.MDMKit';
+import { EnterpriseAdminExtensionAbility, adminManager, systemManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+
+let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_SYSTEM_UPDATE];
+try {
+  adminManager.subscribeManagedEventSync(wantTemp, events);
+  console.info('Succeeded in subscribing managed event.');
+} catch (err) {
+  console.error(`Failed to subscribe managed event. Code: ${err.code}, message: ${err.message}`);
+}
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   onSystemUpdate(systemUpdateInfo: systemManager.SystemUpdateInfo) {
@@ -318,7 +424,22 @@ onAccountAdded(accountId: number): void
 示例：
 
 ```
-import { EnterpriseAdminExtensionAbility } from '@kit.MDMKit';
+import { EnterpriseAdminExtensionAbility, adminManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+
+let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_ACCOUNT_ADDED];
+try {
+  adminManager.subscribeManagedEventSync(wantTemp, events);
+  console.info('Succeeded in subscribing managed event.');
+} catch (err) {
+  console.error(`Failed to subscribe managed event. Code: ${err.code}, message: ${err.message}`);
+}
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   onAccountAdded(accountId: number) {
@@ -346,7 +467,22 @@ onAccountSwitched(accountId: number): void
 示例：
 
 ```
-import { EnterpriseAdminExtensionAbility } from '@kit.MDMKit';
+import { EnterpriseAdminExtensionAbility, adminManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+
+let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_ACCOUNT_SWITCHED];
+try {
+  adminManager.subscribeManagedEventSync(wantTemp, events);
+  console.info('Succeeded in subscribing managed event.');
+} catch (err) {
+  console.error(`Failed to subscribe managed event. Code: ${err.code}, message: ${err.message}`);
+}
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   onAccountSwitched(accountId: number) {
@@ -374,7 +510,22 @@ onAccountRemoved(accountId: number): void
 示例：
 
 ```
-import { EnterpriseAdminExtensionAbility } from '@kit.MDMKit';
+import { EnterpriseAdminExtensionAbility, adminManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+
+let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_ACCOUNT_REMOVED];
+try {
+  adminManager.subscribeManagedEventSync(wantTemp, events);
+  console.info('Succeeded in subscribing managed event.');
+} catch (err) {
+  console.error(`Failed to subscribe managed event. Code: ${err.code}, message: ${err.message}`);
+}
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   onAccountRemoved(accountId: number) {
@@ -726,7 +877,22 @@ onStartupGuideCompleted(scene: common.StartupScene): void
 示例：
 
 ```
-import { EnterpriseAdminExtensionAbility, common } from '@kit.MDMKit';
+import { EnterpriseAdminExtensionAbility, adminManager, common } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+
+let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_STARTUP_GUIDE_COMPLETED];
+try {
+  adminManager.subscribeManagedEventSync(wantTemp, events);
+  console.info('Succeeded in subscribing managed event.');
+} catch (err) {
+  console.error(`Failed to subscribe managed event. Code: ${err.code}, message: ${err.message}`);
+}
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   onStartupGuideCompleted(scene: common.StartupScene) {
@@ -754,7 +920,22 @@ onDeviceBootCompleted(): void
 示例：
 
 ```
-import { EnterpriseAdminExtensionAbility } from '@kit.MDMKit';
+import { EnterpriseAdminExtensionAbility, adminManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+
+let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_BOOT_COMPLETED];
+try {
+  adminManager.subscribeManagedEventSync(wantTemp, events);
+  console.info('Succeeded in subscribing managed event.');
+} catch (err) {
+  console.error(`Failed to subscribe managed event. Code: ${err.code}, message: ${err.message}`);
+}
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   onDeviceBootCompleted() {
@@ -785,7 +966,22 @@ onBundleUpdated(bundleName: string, accountId: number): void
 示例：
 
 ```
-import { EnterpriseAdminExtensionAbility } from '@kit.MDMKit';
+import { EnterpriseAdminExtensionAbility, adminManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+
+let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_BUNDLE_UPDATED];
+try {
+  adminManager.subscribeManagedEventSync(wantTemp, events);
+  console.info('Succeeded in subscribing managed event.');
+} catch (err) {
+  console.error(`Failed to subscribe managed event. Code: ${err.code}, message: ${err.message}`);
+}
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   onBundleUpdated(bundleName: string, accountId: number) {
@@ -798,7 +994,7 @@ export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbil
 
 onAdminPolicyChanged(event: common.PolicyChangedEvent): void
 
-策略变更事件回调。超级设备管理应用可以通过接口[adminManager.subscribeManagedEventSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-adminmanager#adminmanagersubscribemanagedeventsync)注册MANAGED_EVENT_POLICIES_CHANGED事件后可接收此回调。企业设备管理场景下，当任意MDM应用调用表1中的接口时，系统会通知当前用户下的超级设备管理应用。
+策略变更事件回调。超级设备管理应用可以通过接口[adminManager.subscribeManagedEventSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-adminmanager#adminmanagersubscribemanagedeventsync)注册MANAGED_EVENT_POLICIES_CHANGED事件后可接收此回调。企业设备管理场景下，当任意MDM应用调用[策略变更上报列表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-appendix#策略变更上报列表)中的接口时，系统会通知当前用户下的超级设备管理应用。
 
 起始版本： 26.0.0
 
@@ -815,7 +1011,22 @@ onAdminPolicyChanged(event: common.PolicyChangedEvent): void
 示例：
 
 ```
-import { EnterpriseAdminExtensionAbility, common } from '@kit.MDMKit';
+import { EnterpriseAdminExtensionAbility, adminManager, common } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+
+let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_POLICIES_CHANGED];
+try {
+  adminManager.subscribeManagedEventSync(wantTemp, events);
+  console.info('Succeeded in subscribing managed event.');
+} catch (err) {
+  console.error(`Failed to subscribe managed event. Code: ${err.code}, message: ${err.message}`);
+}
 
 export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbility {
   onAdminPolicyChanged(event: common.PolicyChangedEvent) {
@@ -824,31 +1035,3 @@ export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbil
   }
 }
 ```
- 表1 策略变更事件：
-
-| 接口名称 | 策略变更事件[PolicyChangedEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-common#policychangedevent)中parameters参数返回示例 |
-| --- | --- |
-| [setDomainAccountPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-accountmanager#accountmanagersetdomainaccountpolicy19) | {"domainAccountInfo":{"domain":"","accountName":"test"},"policy":{"authenticationValidityPeriod":300,"passwordValidityPeriod":420,"passwordExpirationNotification":60}} |
-| [setAllowedKioskApps](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-applicationmanager#applicationmanagersetallowedkioskapps20) | {"appIdentifiers":["6917****3569"]} |
-| [setPolicySync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-browser#browsersetpolicysync) | {"appId":"com.example.**_**/******5t5CoBM=","policyName":"InsecurePrivateNetworkRequestsAllowed","policyValue":"1"} |
-| [setValue](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-devicesettings#devicesettingssetvalue) | {"item":"screenOff","value":"30000"} |
-| [setHomeWallpaper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-devicesettings#devicesettingssethomewallpaper20) | "" |
-| [setUnlockWallpaper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-devicesettings#devicesettingssetunlockwallpaper20) | "" |
-| [setSwitchStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-devicesettings#devicesettingssetswitchstatus) | {"key":1,"value":0} |
-| [addFirewallRule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-networkmanager#networkmanageraddfirewallrule) | {"firewallRule":{"srcAddr":"192.168.1.1-192.168.22.66","destAddr":"10.1.1.1","srcPort":"8080","destPort":"8080","appUid":"9696","direction":1,"action":1,"protocol":2,"family": 1,"logType":0}} |
-| [removeFirewallRule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-networkmanager#networkmanagerremovefirewallrule) | {"firewallRule":{"srcAddr":"192.168.1.1-192.168.22.66","destAddr":"10.1.1.1","srcPort":"8080","destPort":"8080","appUid":"9696","direction":1,"action":1,"protocol":2,"family": 1,"logType":0}} |
-| [addDomainFilterRule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-networkmanager#networkmanageradddomainfilterrule) | {"domainFilterRule":{"domainName":"[www.example.com","appUid":"9696","action":1,"direction":1,"family":1,"logType":0}}](http://www.example.com) |
-| [removeDomainFilterRule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-networkmanager#networkmanagerremovedomainfilterrule) | {"domainFilterRule":{"domainName":"[www.example.com","appUid":"9696","action":1,"direction":1,"family":1,"logType":0}}](http://www.example.com) |
-| [setGlobalProxySync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-networkmanager#networkmanagersetglobalproxysync) | {"httpProxy":{"host":"192.168.xx.xxx","port":8080,"exclusionList":["192.168"]}} |
-| [setGlobalProxyForAccount](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-networkmanager#networkmanagersetglobalproxyforaccount15) | {"httpProxy":{"host":"192.168.xx.xx","port":8080,"exclusionList":["192.168"]},"accountId":100} |
-| [addApn](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-networkmanager#networkmanageraddapn20) | {"apnId":"3","apnName":"CTENT"} |
-| [deleteApn](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-networkmanager#networkmanagerdeleteapn20) | {"apnId":"3","apnName":"CTENT"} |
-| [updateApn](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-networkmanager#networkmanagerupdateapn20) | {"apnInfo":{"apn":"CTENT","apnName":"CTENT","mcc":"460","mnc":"11"},"apnId":"1"} |
-| [setPreferredApn](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-networkmanager#networkmanagersetpreferredapn20) | {"apnId":"3","apnName":"CTENT"} |
-| [setEthernetConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-networkmanager#networkmanagersetethernetconfig23) | {"networkInterface":"eth0"} |
-| [setPasswordPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-securitymanager#securitymanagersetpasswordpolicy) | {"policy":{"complexityRegex":"^(?=.*[a-zA-Z])(?=.*\\d).{8},$","validityPeriod":1808309786000,"additionalDescription":"至少8个字符，且包含数字和字母。"}} |
-| [uninstallEnterpriseReSignatureCertificate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-securitymanager#securitymanageruninstallenterpriseresignaturecertificate24) | {"certificateAlias":"test.cer","accountId":100} |
-| [installEnterpriseReSignatureCertificate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-securitymanager#securitymanagerinstallenterpriseresignaturecertificate24) | {"certificateAlias":"test.cer","accountId":100} |
-| [setNTPServer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-systemmanager#systemmanagersetntpserver) | {"server":"ntpserver.com"} |
-| [setActivationLockDisabled](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-systemmanager#systemmanagersetactivationlockdisabled24) | {"isAllowed":true} |
-| [setWifiProfileSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-wifimanager#wifimanagersetwifiprofilesync) | {"profile":{"ssid":"guest-Wi-Fi","bssid":"AA:BB:CC:DD:EE:FF"}} |

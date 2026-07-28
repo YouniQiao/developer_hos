@@ -2,8 +2,8 @@
 title: "@ohos.hiviewdfx.FaultLogExtensionAbility (故障延迟通知)"
 upstream_id: "harmonyos-references/js-apis-hiviewdfx-faultlogextensionability"
 catalog: "harmonyos-references"
-content_hash: "5d3f09d76a90"
-synced_at: "2026-07-09T01:00:02.647954"
+content_hash: "6056fa3c08e1"
+synced_at: "2026-07-28T16:51:21.151227"
 ---
 
 # @ohos.hiviewdfx.FaultLogExtensionAbility (故障延迟通知)
@@ -20,7 +20,10 @@ synced_at: "2026-07-09T01:00:02.647954"
 
 - 本模块接口从API version 21开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 - 本模块接口仅可在Stage模型下使用。
-- 本模块设置了不允许调用的API名单，调用名单中的API将导致功能异常，详情请参见[附录](#附录)。
+
+#### 约束限制
+
+为保障系统安全性和稳定性，防止FaultLogExtensionAbility滥用系统资源，系统对其能力进行管控，不支持部分模块的引用，详情请参考[附录](#附录)。
 
 #### 导入模块
 
@@ -115,7 +118,7 @@ export default class MyFaultLogExtension extends FaultLogExtensionAbility {
 
 #### 附录
 
-本模块不允许调用的API名单如下。
+FaultLogExtensionAbility不支持以下模块的引用。
 
 | Kit名称 | 模块名称 |
 | --- | --- |

@@ -2,13 +2,13 @@
 title: "SegmentButton"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-segmentbutton"
 catalog: "harmonyos-references"
-content_hash: "08a09420b640"
-synced_at: "2026-07-09T00:58:16.860216"
+content_hash: "207af924bafb"
+synced_at: "2026-07-28T16:48:25.620828"
 ---
 
 # SegmentButton
 
-分段按钮组件包含页签类分段按钮、胶囊类单选分段按钮和胶囊类多选分段按钮。
+分段按钮组件包含页签类分段按钮和胶囊类分段按钮。页签类分段按钮适用于页面或内容区域的切换场景；胶囊类分段按钮适用于单选或多选的选择场景，包含胶囊类单选分段按钮和胶囊类多选分段按钮。该组件支持自定义文本颜色、字体大小、字体粗细、背景色、图片尺寸、内边距、背景模糊材质等外观属性，支持仅文本、仅图标和图标+文本三种按钮样式，并提供无障碍朗读、布局方向镜像、自定义圆角、属性动画等能力，适用于需要快速构建符合设计规范的分段选择界面的场景。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -50,11 +50,11 @@ SegmentButton({ options: SegmentButtonOptions, selectedIndexes: number[], onItem
 
 | 名称 | 类型 | 必填 | 装饰器类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| options | [SegmentButtonOptions](#segmentbuttonoptions) | 是 | @ObjectLink | 分段按钮选项。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| selectedIndexes | number[] | 是 | @Link | 分段按钮的选中项编号，第一项的编号为0，之后顺序增加。 **说明：** selectedIndexes使用[@Link装饰器：父子双向同步](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-link)，仅支持有效的按钮编号（第一个按钮编号为0，之后按顺序累加），如没有选中项可传入空数组[]。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| options | [SegmentButtonOptions](#segmentbuttonoptions) | 是 | @ObjectLink | 分段按钮的配置选项，用于设置按钮的类型（页签类或胶囊类）、外观样式（颜色、字体、尺寸等）、按钮内容和选中状态等属性。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| selectedIndexes | number[] | 是 | @Link | 分段按钮的选中项编号，第一项的编号为0，之后顺序增加。 **说明：** selectedIndexes使用[@Link装饰器：父子双向同步](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-link)，仅支持有效的按钮编号（第一个按钮编号为0，之后按顺序累加，最大编号为按钮数量减1），传入无效编号时该编号不生效。如没有选中项可传入空数组[]。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | onItemClicked13+ | Callback | 否 | - | 当分段按钮选项被点击时，触发的回调函数接收被点击的选项下标作为参数。若不传入此参数，则点击时不触发回调。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
-| maxFontScale14+ | number | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | @Prop | 分段按钮选项文字的最大字体放大倍数。 取值范围：[1, 2] 当设置的值小于1时，按值为1处理，设置的值大于2时，按值为2处理。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
-| enableStateAnimation24+ | boolean | 否 | @Prop | 设置当通过变量修改selectedIndexes值时，是否开启分段按钮的属性动画。 true表示开启分段按钮的属性动画；false表示不开启分段按钮的属性动画，使用原有动画。 默认值：false **元服务API：** 从API version 24开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| maxFontScale14+ | number | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | @Prop | 分段按钮选项文字的最大字体放大倍数，用于限制字体缩放上限。当需要控制字体放大倍数以适应特定UI布局或避免文字过大时传入此参数。 取值范围：[1, 2] 当设置的值小于1时，按值为1处理，设置的值大于2时，按值为2处理。 默认值：1 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
+| enableStateAnimation24+ | boolean | 否 | @Prop | 设置当通过变量修改selectedIndexes值时，是否开启分段按钮的属性动画。 true表示开启分段按钮的属性动画；false表示不开启分段按钮的属性动画。 默认值：false **元服务API：** 从API version 24开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### SegmentButtonOptions
 
@@ -72,28 +72,30 @@ SegmentButton({ options: SegmentButtonOptions, selectedIndexes: number[], onItem
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| type | "tab" |"capsule" | 否 | 否 | 分段按钮组件的类型。 **说明：** "tab"：页签类分段按钮，适用于页面或内容区域的切换场景。 "capsule"：胶囊类分段按钮，适用于单选或多选的选择场景。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| multiply | boolean | 否 | 否 | 分段按钮组件是否可以多选。 true: 可多选；false: 不可多选。页签类分段按钮只支持单选，设置multiply为true不生效。 值为undefined时，分段按钮不支持多选。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| type | "tab" | "capsule" | 否 | 否 | 分段按钮组件的类型。 **说明：** "tab"：页签类分段按钮，适用于页面或内容区域的切换场景。 "capsule"：胶囊类分段按钮，适用于单选或多选的选择场景。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| multiply | boolean | 否 | 否 | 分段按钮组件是否可以多选。 true：可多选；false：不可多选。 页签类分段按钮（type为"tab"）时，multiply强制为false，设置true不生效。 默认值： false 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | buttons | [SegmentButtonItemOptionsArray](#segmentbuttonitemoptionsarray) | 否 | 否 | 分段按钮组件的按钮信息，包括图标和文本信息。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | fontColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 否 | 分段按钮组件的按钮未选中态的文本颜色。 值为undefined时，颜色为$r('sys.color.ohos_id_color_text_secondary')。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | selectedFontColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 否 | 分段按钮组件的按钮选中态的文本颜色。 值为undefined时，type为"tab"时，颜色为$r('sys.color.ohos_id_color_text_primary')。 type为"capsule"时，颜色为$r('sys.color.ohos_id_color_foreground_contrary')。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| fontSize | [DimensionNoPercentage](#dimensionnopercentage) | 否 | 否 | 分段按钮组件的按钮未选中态的字体大小，不支持百分比设置。 值为undefined时，字体大小为$r('sys.float.ohos_id_text_size_body2')。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| selectedFontSize | [DimensionNoPercentage](#dimensionnopercentage) | 否 | 否 | 分段按钮组件的按钮选中态的字体大小，不支持百分比设置。 值为undefined时，字体大小为$r('sys.float.ohos_id_text_size_body2')。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| fontSize | [DimensionNoPercentage](#dimensionnopercentage) | 否 | 否 | 分段按钮组件的按钮未选中态的字体大小，不支持百分比设置。 单位：fp 值为undefined时，字体大小为$r('sys.float.ohos_id_text_size_body2')。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| selectedFontSize | [DimensionNoPercentage](#dimensionnopercentage) | 否 | 否 | 分段按钮组件的按钮选中态的字体大小，不支持百分比设置。 单位：fp 值为undefined时，字体大小为$r('sys.float.ohos_id_text_size_body2')。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | fontWeight | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | 否 | 否 | 分段按钮组件的按钮未选中态的字体粗细。 值为undefined时，字体粗细为FontWeight.Regular。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | selectedFontWeight | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | 否 | 否 | 分段按钮组件的按钮选中态的字体粗细。 值为undefined时，字体粗细为FontWeight.Medium。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | backgroundColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 否 | 分段按钮组件的背景板颜色。 值为undefined时，背景板颜色为$r('sys.color.ohos_id_color_button_normal')。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | selectedBackgroundColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 否 | 分段按钮组件的按钮选中态背景板颜色。 值为undefined时，type为"tab"时，背景板颜色为$r('sys.color.segment_button_checked_foreground_color')。 type为"capsule"时，背景板颜色为$r('sys.color.ohos_id_color_emphasize')。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| imageSize | [SizeOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#sizeoptions) | 否 | 否 | 分段按钮组件的图片尺寸。 值为undefined时，图片尺寸为{ width: 24, height: 24 }。 单位：vp **说明：** imageSize属性对仅图标按钮和图标+文本按钮生效，对仅文字按钮无效果。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| imageSize | [SizeOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#sizeoptions) | 否 | 否 | 分段按钮组件的图片尺寸。 值为undefined时，图片尺寸为{ width: 24, height: 24 }。 单位：vp **说明：** imageSize属性对仅图标按钮和图标+文本按钮生效，对纯文本按钮无效果。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | buttonPadding | [Padding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#padding) | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | 否 | 否 | 分段按钮组件的按钮内边距。 值为undefined时，仅图标按钮和仅文字按钮内边距：{ top: 4, right: 8, bottom: 4, left: 8 } 图标+文本按钮内边距：{ top: 6, right: 8, bottom: 6, left: 8 } 单位：vp **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | textPadding | [Padding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#padding) | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | 否 | 否 | 分段按钮组件的文本内边距。 值为undefined时，文本内边距为0。 单位：vp **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| localizedButtonPadding12+ | [LocalizedPadding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#localizedpadding12) | 否 | 是 | 分段按钮组件的按钮内边距。 默认值： 仅图标按钮和仅文字按钮默认值：{ top: LengthMetrics.vp(4), end: LengthMetrics.vp(8), bottom: LengthMetrics.vp(4), start: LengthMetrics.vp(8) } 图标+文本按钮默认值：{ top: LengthMetrics.vp(6), end: LengthMetrics.vp(8), bottom: LengthMetrics.vp(6), start: LengthMetrics.vp(8) } 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| localizedTextPadding12+ | [LocalizedPadding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#localizedpadding12) | 否 | 是 | 文本内边距。 默认值：0 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| localizedButtonPadding12+ | [LocalizedPadding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#localizedpadding12) | 否 | 是 | 分段按钮组件的按钮内边距，支持随布局方向（LTR/RTL）自适应。 默认值： 仅图标按钮和仅文字按钮默认值：{ top: LengthMetrics.vp(4), end: LengthMetrics.vp(8), bottom: LengthMetrics.vp(4), start: LengthMetrics.vp(8) } 图标+文本按钮默认值：{ top: LengthMetrics.vp(6), end: LengthMetrics.vp(8), bottom: LengthMetrics.vp(6), start: LengthMetrics.vp(8) } 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| localizedTextPadding12+ | [LocalizedPadding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#localizedpadding12) | 否 | 是 | 文本内边距，支持随布局方向（LTR/RTL）自适应。 默认值：0 单位：vp 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | direction12+ | [Direction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#direction) | 否 | 是 | 分段按钮组件的布局方向。 默认值：Direction.Auto 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| backgroundBlurStyle | [BlurStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#blurstyle9) | 否 | 否 | 分段按钮组件的背景模糊材质。 值为undefined时，背景模糊材质为BlurStyle.NONE。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| backgroundBlurStyle | [BlurStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#blurstyle9) | 否 | 否 | 分段按钮组件的背景模糊材质。 默认值：BlurStyle.NONE 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | borderRadiusMode20+ | [BorderRadiusMode](#borderradiusmode20) | 否 | 是 | 边框圆角模式，用于控制圆角计算方式。 默认值：BorderRadiusMode.DEFAULT 值为undefined时，按默认值处理。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
-| backgroundBorderRadius20+ | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | 分段按钮整体容器的边框圆角半径。 **说明：** 此属性仅在borderRadiusMode为BorderRadiusMode.CUSTOM时生效。 对于胶囊类多选按钮(type为"capsule"且multiply为true)，此属性不生效，需要用itemBorderRadius配置圆角。 圆角大小受组件尺寸限制，最大值为组件宽或高的一半，不支持百分比设置。 默认值：$r('sys.float.segmentbutton_container_shape') 值为undefined时，按默认值处理。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
-| itemBorderRadius20+ | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | 分段按钮中按钮项的边框圆角半径。 **说明：** 此属性仅在borderRadiusMode为BorderRadiusMode.CUSTOM时生效。 对于胶囊类多选按钮(type为"capsule"且multiply为true)，只能控制两端的选项圆角。 圆角大小受组件尺寸限制，最大值为组件宽或高的一半，不支持百分比设置。 默认值：$r('sys.float.segmentbutton_selected_background_shape') 值为undefined时，按默认值处理。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
-| backgroundSystemMaterial | [uiMaterial.Material](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#material) | 否 | 是 | 分段按钮组件的背景板的系统材质。不同系统材质包含不同的属性影响效果。传入材质后，SegmentButton的动效发生改变。 对于胶囊类多选按钮（即type为"capsule"且multiply为true），该属性不生效。 默认值：无材质效果。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| backgroundBorderRadius20+ | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | 分段按钮整体容器的边框圆角半径。 **说明：** 此属性仅在borderRadiusMode为BorderRadiusMode.CUSTOM时生效。 对于胶囊类多选分段按钮（type为"capsule"且multiply为true），此属性不生效，需要用itemBorderRadius配置圆角。 圆角大小受组件尺寸限制，最大值为组件宽或高的一半，不支持百分比设置。超出最大值时自动修正为最大值，使用百分比时按默认值处理。 默认值：$r('sys.float.segmentbutton_container_shape') 值为undefined时，按默认值处理。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| itemBorderRadius20+ | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | 分段按钮中按钮项的边框圆角半径。 **说明：** 此属性仅在borderRadiusMode为BorderRadiusMode.CUSTOM时生效。 对于胶囊类多选分段按钮（type为"capsule"且multiply为true），只能控制两端的选项圆角。 圆角大小受组件尺寸限制，最大值为组件宽或高的一半，不支持百分比设置。超出最大值时自动修正为最大值，使用百分比时按默认值处理。 默认值：$r('sys.float.segmentbutton_selected_background_shape') 值为undefined时，按默认值处理。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| backgroundSystemMaterial | [uiMaterial.Material](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#material) | 否 | 是 | 分段按钮组件的背景板的系统材质。不同系统材质具有不同的属性，产生不同的效果。传入材质后，SegmentButton的动效发生改变。 对于胶囊类多选分段按钮（即type为"capsule"且multiply为true），该属性不生效。 默认值：无材质效果。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+
+![](./img/note_3.0-zh-cn.png) 从API版本26.0.0开始，除胶囊类多选按钮（即type为"capsule"且multiply为true）外，backgroundSystemMaterial设置自动反色的系统材质时，fontColor和selectedFontColor使用支持反色的特殊系统资源，颜色自动适配到材质背景色的反色。
 
 #### [h2]constructor
 
@@ -135,13 +137,13 @@ static tab(options: TabSegmentButtonConstructionOptions): SegmentButtonOptions
 
 | 类型 | 说明 |
 | --- | --- |
-| [SegmentButtonOptions](#segmentbuttonoptions) | 分段按钮选项。 |
+| [SegmentButtonOptions](#segmentbuttonoptions) | 分段按钮选项，用于定义页签类分段按钮。 |
 
 #### [h2]capsule
 
 static capsule(options: CapsuleSegmentButtonConstructionOptions): SegmentButtonOptions
 
-创建胶囊类的SegmentButtonOptions。
+创建胶囊类的SegmentButtonOptions，用于定义胶囊类分段按钮。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -159,7 +161,7 @@ static capsule(options: CapsuleSegmentButtonConstructionOptions): SegmentButtonO
 
 | 类型 | 说明 |
 | --- | --- |
-| [SegmentButtonOptions](#segmentbuttonoptions) | 分段按钮选项。 |
+| [SegmentButtonOptions](#segmentbuttonoptions) | 分段按钮选项，用于定义胶囊类分段按钮。 |
 
 #### DimensionNoPercentage
 
@@ -193,8 +195,8 @@ type DimensionNoPercentage = PX | VP | FP | LPX | Resource
 | --- | --- | --- | --- | --- |
 | fontColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 按钮未选中态的文本颜色。 默认值：$r('sys.color.ohos_id_color_text_secondary') 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | selectedFontColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 按钮选中态的文本颜色。 默认值： type为"tab"时，默认值为$r('sys.color.ohos_id_color_text_primary')。 type为"capsule"时，默认值为$r('sys.color.ohos_id_color_foreground_contrary')。 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| fontSize | [DimensionNoPercentage](#dimensionnopercentage) | 否 | 是 | 按钮未选中态的字体大小（不支持百分比设置）。 默认值：$r('sys.float.ohos_id_text_size_body2') 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| selectedFontSize | [DimensionNoPercentage](#dimensionnopercentage) | 否 | 是 | 按钮选中态的字体大小（不支持百分比设置）。 默认值：$r('sys.float.ohos_id_text_size_body2') 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| fontSize | [DimensionNoPercentage](#dimensionnopercentage) | 否 | 是 | 按钮未选中态的字体大小（不支持百分比设置）。 默认值：$r('sys.float.ohos_id_text_size_body2') 单位：fp 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| selectedFontSize | [DimensionNoPercentage](#dimensionnopercentage) | 否 | 是 | 按钮选中态的字体大小（不支持百分比设置）。 默认值：$r('sys.float.ohos_id_text_size_body2') 单位：fp 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | fontWeight | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | 否 | 是 | 按钮未选中态的字体粗细。 默认值：FontWeight.Regular 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | selectedFontWeight | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | 否 | 是 | 按钮选中态的字体粗细。 默认值：FontWeight.Medium 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | backgroundColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 背景板颜色。 默认值：$r('sys.color.ohos_id_color_button_normal') 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
@@ -202,14 +204,14 @@ type DimensionNoPercentage = PX | VP | FP | LPX | Resource
 | imageSize | [SizeOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#sizeoptions) | 否 | 是 | 图片尺寸。 默认值：{ width: 24, height: 24 } 单位：vp 值为undefined时，按默认值处理。 **说明：** imageSize属性仅对图标按钮和图标+文本按钮生效，对纯文本按钮无效果。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | buttonPadding | [Padding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#padding) | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | 否 | 是 | 按钮内边距。 默认值： 仅图标按钮和仅文字按钮默认值：{ top: 4, right: 8, bottom: 4, left: 8 } 图标+文本按钮默认值：{ top: 6, right: 8, bottom: 6, left: 8 } 单位：vp 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | textPadding | [Padding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#padding) | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | 否 | 是 | 文本内边距。 默认值：0 单位：vp 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| localizedButtonPadding12+ | [LocalizedPadding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#localizedpadding12) | 否 | 是 | 按钮内边距。 默认值： 仅图标按钮和仅文字按钮默认值：{ top: LengthMetrics.vp(4), end: LengthMetrics.vp(8), bottom: LengthMetrics.vp(4), start: LengthMetrics.vp(8) } 图标+文本按钮默认值：{ top: LengthMetrics.vp(6), end: LengthMetrics.vp(8), bottom: LengthMetrics.vp(6), start: LengthMetrics.vp(8) } 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| localizedTextPadding12+ | [LocalizedPadding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#localizedpadding12) | 否 | 是 | 文本内边距。 默认值：0 单位：vp 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| localizedButtonPadding12+ | [LocalizedPadding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#localizedpadding12) | 否 | 是 | 按钮内边距，支持随布局方向（LTR/RTL）自适应。 默认值： 仅图标按钮和仅文字按钮默认值：{ top: LengthMetrics.vp(4), end: LengthMetrics.vp(8), bottom: LengthMetrics.vp(4), start: LengthMetrics.vp(8) } 图标+文本按钮默认值：{ top: LengthMetrics.vp(6), end: LengthMetrics.vp(8), bottom: LengthMetrics.vp(6), start: LengthMetrics.vp(8) } 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| localizedTextPadding12+ | [LocalizedPadding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#localizedpadding12) | 否 | 是 | 文本内边距，支持随布局方向（LTR/RTL）自适应。 默认值：0 单位：vp 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | direction12+ | [Direction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#direction) | 否 | 是 | 布局方向。 默认值：Direction.Auto 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | backgroundBlurStyle | [BlurStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#blurstyle9) | 否 | 是 | 背景模糊材质。 默认值：BlurStyle.NONE 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | borderRadiusMode20+ | [BorderRadiusMode](#borderradiusmode20) | 否 | 是 | 边框圆角模式，用于控制圆角计算方式。 默认值：BorderRadiusMode.DEFAULT 值为undefined时，按默认值处理。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
-| backgroundBorderRadius20+ | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | 分段按钮整体容器的边框圆角半径。 **说明：** 此属性仅在borderRadiusMode为BorderRadiusMode.CUSTOM时生效。 对于胶囊类多选按钮(type为"capsule"且multiply为true)，此属性不生效，需要用itemBorderRadius配置圆角。 圆角大小受组件尺寸限制，最大值为组件宽或高的一半，不支持百分比设置。 默认值：$r('sys.float.segmentbutton_container_shape') 值为undefined时，按默认值处理。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
-| itemBorderRadius20+ | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | 分段按钮中按钮项的边框圆角半径。 **说明：** 此属性仅在borderRadiusMode为BorderRadiusMode.CUSTOM时生效。 对于胶囊类多选按钮(type为"capsule"且multiply为true)，只能控制两端的选项圆角。 圆角大小受组件尺寸限制，最大值为组件宽或高的一半，不支持百分比设置。 默认值：$r('sys.float.segmentbutton_selected_background_shape') 值为undefined时，按默认值处理。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
-| backgroundSystemMaterial | [uiMaterial.Material](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#material) | 否 | 是 | 分段按钮组件的背景板的系统材质。不同系统材质包含不同的属性影响效果。传入材质后，SegmentButton的动效发生改变。 对于胶囊类多选按钮（即type为"capsule"且multiply为true），该属性不生效。 默认值：无材质效果。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| backgroundBorderRadius20+ | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | 分段按钮整体容器的边框圆角半径。 **说明：** 此属性仅在borderRadiusMode为BorderRadiusMode.CUSTOM时生效。 对于胶囊类多选分段按钮（type为"capsule"且multiply为true），此属性不生效，需要用itemBorderRadius配置圆角。 圆角大小受组件尺寸限制，最大值为组件宽或高的一半，不支持百分比设置。超出最大值时自动修正为最大值，使用百分比时按默认值处理。 默认值：$r('sys.float.segmentbutton_container_shape') 值为undefined时，按默认值处理。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| itemBorderRadius20+ | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | 分段按钮中按钮项的边框圆角半径。 **说明：** 此属性仅在borderRadiusMode为BorderRadiusMode.CUSTOM时生效。 对于胶囊类多选分段按钮（type为"capsule"且multiply为true），只能控制两端的选项圆角。 圆角大小受组件尺寸限制，最大值为组件宽或高的一半，不支持百分比设置。超出最大值时自动修正为最大值，使用百分比时按默认值处理。 默认值：$r('sys.float.segmentbutton_selected_background_shape') 值为undefined时，按默认值处理。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| backgroundSystemMaterial | [uiMaterial.Material](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#material) | 否 | 是 | 分段按钮组件的背景板的系统材质。不同系统材质具有不同的属性，产生不同的效果。传入材质后，SegmentButton的动效发生改变。 对于胶囊类多选分段按钮（即type为"capsule"且multiply为true），该属性不生效。 默认值：无材质效果。 从API版本26.0.0开始，除胶囊类多选分段按钮（即type为"capsule"且multiply为true）外，backgroundSystemMaterial设置自动反色的系统材质时，fontColor和selectedFontColor使用支持反色的特殊系统资源，颜色自动适配到材质背景色的反色。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### BorderRadiusMode20+
 
@@ -337,7 +339,9 @@ constructor(elements: SegmentButtonItemTuple)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| elements | [SegmentButtonItemTuple](#segmentbuttonitemtuple) | 是 | 按钮信息。 |
+| elements | [SegmentButtonItemTuple](#segmentbuttonitemtuple) | 是 | 用于初始化数组的按钮信息元组，包含2到5个按钮选项元素，每个元素定义一个按钮的图标、文本等属性。 |
+
+![](./img/note_3.0-zh-cn.png) SegmentButtonItemOptionsArray仅支持保存2到5个按钮信息元素。
 
 #### [h2]push
 
@@ -355,7 +359,7 @@ push(...items: SegmentButtonItemArray): number
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| items | [SegmentButtonItemArray](#segmentbuttonitemarray) | 否 | 被添加的按钮信息数组。 默认值：0个被添加的按钮信息数组。 |
+| items | [SegmentButtonItemArray](#segmentbuttonitemarray) | 否 | 被添加的按钮信息数组。 默认值：不传入任何按钮信息元素。 |
 
 返回值：
 
@@ -363,7 +367,7 @@ push(...items: SegmentButtonItemArray): number
 | --- | --- |
 | number | 添加元素后数组的长度。 |
 
-![](./img/note_3.0-zh-cn.png) 分段按钮组件数组仅支持保存2到5个按钮信息，若超过分段按钮组件数量个数的限制，添加按钮信息元素失败。
+![](./img/note_3.0-zh-cn.png) 分段按钮组件数组仅支持保存2到5个按钮信息。当传入的元素数量导致数组超过5个，操作不执行并返回当前数组的长度。
 
 #### [h2]pop
 
@@ -383,7 +387,7 @@ pop(): SegmentButtonItemOptions | undefined
 | --- | --- |
 | [SegmentButtonItemOptions](#segmentbuttonitemoptions) | undefined | 被移除的元素。 |
 
-![](./img/note_3.0-zh-cn.png) 分段按钮组件数组仅支持保存2到5个按钮信息，若移除后按钮组件数量不在个数限制范围内，移除按钮信息元素失败。
+![](./img/note_3.0-zh-cn.png) 分段按钮组件数组仅支持保存2到5个按钮信息。若移除后按钮数量少于2个，操作不执行并返回undefined，数组保持不变。
 
 #### [h2]shift
 
@@ -403,13 +407,13 @@ shift(): SegmentButtonItemOptions | undefined
 | --- | --- |
 | [SegmentButtonItemOptions](#segmentbuttonitemoptions) | undefined | 被移除的元素。 |
 
-![](./img/note_3.0-zh-cn.png) 分段按钮组件数组仅支持保存2到5个按钮信息，若移除后按钮组件数量不在个数限制范围内，移除按钮信息元素失败。
+![](./img/note_3.0-zh-cn.png) 分段按钮组件数组仅支持保存2到5个按钮信息。若移除后按钮数量少于2个，操作不执行并返回undefined，数组保持不变。
 
 #### [h2]unshift
 
 unshift(...items: SegmentButtonItemArray): number
 
-在数组开头添加一个新的元素，返回添加元素后数组的长度。
+在数组开头添加新的元素，返回添加元素后数组的长度。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -421,7 +425,7 @@ unshift(...items: SegmentButtonItemArray): number
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| items | [SegmentButtonItemArray](#segmentbuttonitemarray) | 否 | 添加的按钮信息数组。 默认值：0个被添加的按钮信息数组。 |
+| items | [SegmentButtonItemArray](#segmentbuttonitemarray) | 否 | 添加的按钮信息数组。 默认值：不传入任何按钮信息元素。 |
 
 返回值：
 
@@ -429,7 +433,7 @@ unshift(...items: SegmentButtonItemArray): number
 | --- | --- |
 | number | 添加元素后数组的长度。 |
 
-![](./img/note_3.0-zh-cn.png) 分段按钮组件数组仅支持保存2到5个按钮信息，若超过分段按钮组件数量个数的限制，添加按钮信息元素失败。
+![](./img/note_3.0-zh-cn.png) 分段按钮组件数组仅支持保存2到5个按钮信息。当传入的元素数量导致数组超过5个，操作不执行并返回当前数组的长度。
 
 #### [h2]splice
 
@@ -447,8 +451,8 @@ splice(start: number, deleteCount: number, ...items: SegmentButtonItemOptions[])
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| start | number | 是 | 删除元素的起始位置。 |
-| deleteCount | number | 是 | 删除元素的数量。 |
+| start | number | 是 | 删除元素的起始位置，从0开始计数。 |
+| deleteCount | number | 是 | 删除元素的数量，取值范围大于等于0。若deleteCount超过数组剩余长度，则删除从start位置开始的所有剩余元素。 |
 | items | [SegmentButtonItemOptions](#segmentbuttonitemoptions)[] | 否 | 从start开始要加入到数组中的元素。 默认值：不指定任何元素，将从数组中删除元素。 |
 
 返回值：
@@ -457,13 +461,13 @@ splice(start: number, deleteCount: number, ...items: SegmentButtonItemOptions[])
 | --- | --- |
 | [SegmentButtonItemOptions](#segmentbuttonitemoptions)[] | 返回包含了被删除的元素的数组。 |
 
-![](./img/note_3.0-zh-cn.png) 分段按钮组件数组仅保存2到5个按钮信息，若超过分段按钮组件数量个数的限制，不再删除和替换按钮信息元素。
+![](./img/note_3.0-zh-cn.png) 分段按钮组件数组仅保存2到5个按钮信息。若操作结果会导致按钮数量少于2个或多于5个，操作将不执行并返回空数组。若删除操作导致数量少于2个，或添加操作导致数量超过5个，整个splice操作将不会生效，数组保持原状态。
 
 #### [h2]create
 
 static create(elements: SegmentButtonItemTuple): SegmentButtonItemOptionsArray
 
-创建一个SegmentButtonItemOptionsArray对象。
+创建一个SegmentButtonItemOptionsArray对象。与构造函数接受相同的参数，功能一致，可根据编码习惯选择使用。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -475,13 +479,15 @@ static create(elements: SegmentButtonItemTuple): SegmentButtonItemOptionsArray
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| elements | [SegmentButtonItemTuple](#segmentbuttonitemtuple) | 是 | 按钮信息。 |
+| elements | [SegmentButtonItemTuple](#segmentbuttonitemtuple) | 是 | 用于初始化数组的按钮信息元组，包含2到5个按钮选项元素，每个元素定义一个按钮的图标、文本等属性。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| [SegmentButtonItemOptionsArray](#segmentbuttonitemoptionsarray) | 返回创建的SegmentButtonItemOptionsArray对象。 |
+| [SegmentButtonItemOptionsArray](#segmentbuttonitemoptionsarray) | 返回创建的SegmentButtonItemOptionsArray对象，用于保存按钮信息的数组。 |
+
+![](./img/note_3.0-zh-cn.png) SegmentButtonItemOptionsArray仅支持保存2到5个按钮信息元素。
 
 #### TabSegmentButtonOptions
 
@@ -522,8 +528,8 @@ static create(elements: SegmentButtonItemTuple): SegmentButtonItemOptionsArray
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | text | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 否 | 按钮文本。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| accessibilityLevel13+ | string | 否 | 是 | 无障碍重要性，控制当前组件是否可被无障碍辅助服务识别。 支持的值为: "auto"：当前组件可被无障碍辅助服务所识别。 "yes"：当前组件可被无障碍辅助服务所识别。 "no"：当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants"：当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值："auto" 值为undefined时，按默认值处理。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
-| accessibilityDescription13+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 无障碍说明，为用户解释组件操作，设置详细解释文本，帮助用户理解操作后果。若组件有文本和无障碍说明，选中时先播报文本，再播报无障碍说明。 默认值：空字符串。 值为undefined时，按默认值处理。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
+| accessibilityLevel13+ | string | 否 | 是 | 无障碍重要性，控制当前组件是否可被无障碍辅助服务识别。 支持的值为： "auto"：当前组件可被无障碍辅助服务所识别。 "yes"：当前组件可被无障碍辅助服务所识别。 "no"：当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants"：当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值："auto" 值为undefined时，按默认值处理。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
+| accessibilityDescription13+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 无障碍说明，用于为用户进一步说明当前组件，开发人员可为组件的该属性设置相对较详细的解释文本，帮助用户理解将要执行的操作。如帮助用户理解将要执行的操作可能导致什么后果，尤其是当这些后果无法从组件本身属性与无障碍文本中了解到时。若组件既拥有文本属性又拥有无障碍说明属性，则组件被选中时，先播报组件的文本属性，再播报无障碍说明属性的内容。 默认值：空字符串。 值为undefined时，按默认值处理。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
 
 #### SegmentButtonIconItem
 
@@ -535,11 +541,11 @@ static create(elements: SegmentButtonItemTuple): SegmentButtonItemOptionsArray
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| icon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 否 | 未选中态的按钮图标。 值为undefined时，不显示图标。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| icon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 否 | 未选中态的按钮图标。 值为undefined时，不显示图标。 **说明：** icon和selectedIcon需同时设置，单独设置无效。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | iconAccessibilityText13+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 未选中态按钮图标的无障碍文本。 默认值：空字符串。 值为undefined时，按默认值处理。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
-| selectedIcon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 否 | 选中态的按钮图标。 值为undefined时，不显示图标。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| selectedIcon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 否 | 选中态的按钮图标。 值为undefined时，不显示图标。 **说明：** icon和selectedIcon需同时设置，单独设置无效。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | selectedIconAccessibilityText13+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 选中态按钮图标的无障碍文本。 默认值：空字符串。 值为undefined时，按默认值处理。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
-| accessibilityLevel13+ | string | 否 | 是 | 无障碍重要性，用于控制当前组件是否可被无障碍辅助服务所识别。 支持的值为: "auto"：当前组件可被无障碍辅助服务所识别。 "yes"：当前组件可被无障碍辅助服务所识别。 "no"：当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants"：当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值："auto" 值为undefined时，按默认值处理。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
+| accessibilityLevel13+ | string | 否 | 是 | 无障碍重要性，用于控制当前组件是否可被无障碍辅助服务所识别。 支持的值为： "auto"：当前组件可被无障碍辅助服务所识别。 "yes"：当前组件可被无障碍辅助服务所识别。 "no"：当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants"：当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值："auto" 值为undefined时，按默认值处理。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
 | accessibilityDescription13+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 无障碍说明，用于为用户进一步说明当前组件，开发人员可为组件的该属性设置相对较详细的解释文本，帮助用户理解将要执行的操作。如帮助用户理解将要执行的操作可能导致什么后果，尤其是当这些后果无法从组件本身属性与无障碍文本中了解到时。若组件既拥有文本属性又拥有无障碍说明属性，则组件被选中时，先播报组件的文本属性，再播报无障碍说明属性的内容。 默认值：空字符串。 值为undefined时，按默认值处理。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
 
 ![](./img/note_3.0-zh-cn.png) 未选中态的图标icon和选中态的图标selectedIcon都需设置，单独设置无效。
@@ -554,12 +560,12 @@ static create(elements: SegmentButtonItemTuple): SegmentButtonItemOptionsArray
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| icon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 否 | 未选中态的按钮图标。 值为undefined时，不显示图标。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| icon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 否 | 未选中态的按钮图标。 值为undefined时，不显示图标。 **说明：** icon和selectedIcon需同时设置，单独设置无效。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | iconAccessibilityText13+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 未选中态按钮图标的无障碍文本。 默认值：空字符串。 值为undefined时，按默认值处理。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
-| selectedIcon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 否 | 选中态的按钮图标。 值为undefined时，不显示图标。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| selectedIcon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 否 | 选中态的按钮图标。 值为undefined时，不显示图标。 **说明：** icon和selectedIcon需同时设置，单独设置无效。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | selectedIconAccessibilityText13+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 选中态按钮图标的无障碍文本。 默认值：空字符串。 值为undefined时，按默认值处理。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
 | text | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 否 | 按钮文本。 值为undefined时，不显示文本内容。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| accessibilityLevel13+ | string | 否 | 是 | 无障碍重要性，用于控制当前组件是否可被无障碍辅助服务所识别。 支持的值为: "auto"：当前组件可被无障碍辅助服务所识别。 "yes"：当前组件可被无障碍辅助服务所识别。 "no"：当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants"：当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值："auto" 值为undefined时，按默认值处理。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
+| accessibilityLevel13+ | string | 否 | 是 | 无障碍重要性，用于控制当前组件是否可被无障碍辅助服务所识别。 支持的值为： "auto"：当前组件可被无障碍辅助服务所识别。 "yes"：当前组件可被无障碍辅助服务所识别。 "no"：当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants"：当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值："auto" 值为undefined时，按默认值处理。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
 | accessibilityDescription13+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 无障碍说明，用于为用户进一步说明当前组件，开发人员可为组件的该属性设置相对较详细的解释文本，帮助用户理解将要执行的操作。如帮助用户理解将要执行的操作可能导致什么后果，尤其是当这些后果无法从组件本身属性与无障碍文本中了解到时。若组件既拥有文本属性又拥有无障碍说明属性，则组件被选中时，先播报组件的文本属性，再播报无障碍说明属性的内容。 默认值：空字符串。 值为undefined时，按默认值处理。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
 
 ![](./img/note_3.0-zh-cn.png) 未选中态的图标icon和选中态的图标selectedIcon都需设置，单独设置无效。
@@ -578,13 +584,15 @@ static create(elements: SegmentButtonItemTuple): SegmentButtonItemOptionsArray
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| icon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 未选中态的按钮图标。 默认值：不显示未选中态的按钮图标。 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| icon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 未选中态的按钮图标。 默认值：不显示未选中态的按钮图标。 值为undefined时，按默认值处理。 **说明：** icon和selectedIcon需同时设置，单独设置无效。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | iconAccessibilityText13+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 未选中态按钮图标的无障碍文本。 默认值：空字符串。 值为undefined时，按默认值处理。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
-| selectedIcon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 选中态的按钮图标。 默认值：不显示选中态按钮图标。 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| selectedIcon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 选中态的按钮图标。 默认值：不显示选中态按钮图标。 值为undefined时，按默认值处理。 **说明：** icon和selectedIcon需同时设置，单独设置无效。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | selectedIconAccessibilityText13+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 选中态按钮图标的无障碍文本。 默认值：空字符串。 值为undefined时，按默认值处理。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
 | text | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 按钮文本。 默认值：空字符串。 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| accessibilityLevel13+ | string | 否 | 是 | 无障碍重要性，用于控制当前组件是否可被无障碍辅助服务所识别。 支持的值为: "auto"：当前组件可被无障碍辅助服务所识别。 "yes"：当前组件可被无障碍辅助服务所识别。 "no"：当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants"：当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值："auto" 值为undefined时，按默认值处理。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
+| accessibilityLevel13+ | string | 否 | 是 | 无障碍重要性，用于控制当前组件是否可被无障碍辅助服务所识别。 支持的值为： "auto"：当前组件可被无障碍辅助服务所识别。 "yes"：当前组件可被无障碍辅助服务所识别。 "no"：当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants"：当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值："auto" 值为undefined时，按默认值处理。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
 | accessibilityDescription13+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 无障碍说明，用于为用户进一步说明当前组件，开发人员可为组件的该属性设置相对较详细的解释文本，帮助用户理解将要执行的操作。如帮助用户理解将要执行的操作可能导致什么后果，尤其是当这些后果无法从组件本身属性与无障碍文本中了解到时。若组件既拥有文本属性又拥有无障碍说明属性，则组件被选中时，先播报组件的文本属性，再播报无障碍说明属性的内容。 默认值：空字符串。 值为undefined时，按默认值处理。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
+
+![](./img/note_3.0-zh-cn.png) 未选中态的图标icon和选中态的图标selectedIcon都需设置，单独设置无效。
 
 #### [h2]constructor
 
@@ -614,13 +622,15 @@ constructor(options: SegmentButtonItemOptionsConstructorOptions)
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| icon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 未选中态的按钮图标。 默认值：不显示未选中态的按钮图标。 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| icon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 未选中态的按钮图标。 默认值：不显示未选中态的按钮图标。 值为undefined时，按默认值处理。 **说明：** icon和selectedIcon需同时设置，单独设置无效。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | iconAccessibilityText13+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 未选中态按钮图标的无障碍文本。 默认值：空字符串。 值为undefined时，按默认值处理。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
-| selectedIcon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 选中态的按钮图标。 默认值：不显示选中态的按钮图标。 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| selectedIcon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 选中态的按钮图标。 默认值：不显示选中态的按钮图标。 值为undefined时，按默认值处理。 **说明：** icon和selectedIcon需同时设置，单独设置无效。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | selectedIconAccessibilityText13+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 选中态按钮图标的无障碍文本。 默认值：空字符串。 值为undefined时，按默认值处理。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
 | text | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 按钮文本。 默认值：空字符串。 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| accessibilityLevel13+ | string | 否 | 是 | 无障碍重要性，用于控制当前组件是否可被无障碍辅助服务所识别。 支持的值为: "auto"：当前组件可被无障碍辅助服务所识别。 "yes"：当前组件可被无障碍辅助服务所识别。 "no"：当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants"：当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值："auto" 值为undefined时，按默认值处理。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
+| accessibilityLevel13+ | string | 否 | 是 | 无障碍重要性，用于控制当前组件是否可被无障碍辅助服务所识别。 支持的值为： "auto"：当前组件可被无障碍辅助服务所识别。 "yes"：当前组件可被无障碍辅助服务所识别。 "no"：当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants"：当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值："auto" 值为undefined时，按默认值处理。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
 | accessibilityDescription13+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 无障碍说明，用于为用户进一步说明当前组件，开发人员可为组件的该属性设置相对较详细的解释文本，帮助用户理解将要执行的操作。如帮助用户理解将要执行的操作可能导致什么后果，尤其是当这些后果无法从组件本身属性与无障碍文本中了解到时。若组件既拥有文本属性又拥有无障碍说明属性，则组件被选中时，先播报组件的文本属性，再播报无障碍说明属性的内容。 默认值：空字符串。 值为undefined时，按默认值处理。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
+
+![](./img/note_3.0-zh-cn.png) 未选中态的图标icon和选中态的图标selectedIcon都需设置，单独设置无效。
 
 #### 示例
 
@@ -719,11 +729,11 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413712.png)
+ ![](./img/zh-cn_image_0000002655849022.png)
 
 #### [h2]示例2（设置分段按钮样式）
 
-通过配置CommonSegmentButtonOptions，实现自定义分段按钮的文本以及背板样式。
+通过配置CommonSegmentButtonOptions，实现自定义分段按钮的文本以及背景板样式。
 
 ```
 import {
@@ -826,7 +836,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732941.png)
+ ![](./img/zh-cn_image_0000002686088453.png)
 
 #### [h2]示例3（分段按钮数组处理）
 
@@ -862,34 +872,34 @@ struct Index {
             options: this.singleSelectCapsuleOptions,
             selectedIndexes: $capsuleSelectedIndexes
           })
-          // 点击’删除第一个按钮‘，第一个按钮会删除。
+          // 点击“删除第一个按钮”，第一个按钮会删除。
           Button('删除第一个按钮')
             .onClick(() => {
               this.singleSelectCapsuleOptions.buttons.shift()
             })
-          // 点击’删除最后一个按钮‘，最后一个按钮会删除。
+          // 点击“删除最后一个按钮”，最后一个按钮会删除。
           Button('删除最后一个按钮')
             .onClick(() => {
               this.singleSelectCapsuleOptions.buttons.pop()
             })
-          // 点击’末尾增加一个按钮push‘，在按钮末尾会增加一个按钮。
+          // 点击“末尾增加一个按钮push”，在按钮末尾会增加一个按钮。
           Button('末尾增加一个按钮push')
             .onClick(() => {
               this.singleSelectCapsuleOptions.buttons.push({ text: 'push' })
             })
-          // 点击’开头增加一个按钮unshift‘，在按钮开头会增加一个按钮。
+          // 点击“开头增加一个按钮unshift”，在按钮开头会增加一个按钮。
           Button('开头增加一个按钮unshift')
             .onClick(() => {
               this.singleSelectCapsuleOptions.buttons.unshift(({ text: 'unshift' }))
             })
-          // 点击’将按钮2、3替换为splice1、splice2‘，按钮2、3会被替换成splice1、splice2。
+          // 点击“将按钮2、3替换为splice1、splice2”，按钮2、3会被替换成splice1、splice2。
           Button('将按钮2、3替换为splice1、splice2')
             .onClick(() => {
               this.singleSelectCapsuleOptions.buttons.splice(1, 2, new SegmentButtonItemOptions({
                 text: 'splice1'
               }), new SegmentButtonItemOptions({ text: 'splice2' }))
             })
-          // 点击’更改所有按钮文字‘，按钮会由1、2、3、4、5替换成a、b、c、d、e。
+          // 点击“更改所有按钮文字”，按钮会由1、2、3、4、5替换成a、b、c、d、e。
           Button('更改所有按钮文字')
             .onClick(() => {
               this.singleSelectCapsuleOptions.buttons =
@@ -902,7 +912,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253820.gif)
+ ![](./img/zh-cn_image_0000002685928623.gif)
 
 #### [h2]示例4（设置镜像效果）
 
@@ -959,7 +969,7 @@ struct Index {
     multiply: false, // 设置分段按钮组件是否可以多选。
     direction: Direction.Rtl, // 设置分段按钮的布局方向。
     imageSize: { width: 40, height: 40 }, // 设置分段按钮组件的图片尺寸。
-    // 设置分段按钮组件的按钮内边距。
+    // 设置分段按钮组件的按钮内边距，支持随布局方向（LTR/RTL）自适应。
     localizedButtonPadding: {
       end: LengthMetrics.vp(10),
       start: LengthMetrics.vp(10)
@@ -1011,7 +1021,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661613003.png)
+ ![](./img/zh-cn_image_0000002656008944.png)
 
 #### [h2]示例5（设置无障碍朗读）
 
@@ -1200,7 +1210,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413714.png)
+ ![](./img/zh-cn_image_0000002655849024.png)
 
 #### [h2]示例7（开启SegmentButton的属性动画）
 
@@ -1213,7 +1223,7 @@ import { SegmentButton, SegmentButtonItemTuple, SegmentButtonOptions } from '@ki
 
 @Entry
 @Component
-struct Index12 {
+struct Index {
   @State singleSelectTextCapsuleOptions: SegmentButtonOptions = SegmentButtonOptions.capsule({
     buttons: [
       { text: '单选按钮1' }, { text: '单选按钮2' }, { text: '单选按钮3' }
@@ -1275,11 +1285,11 @@ struct Index12 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732943.gif)
+ ![](./img/zh-cn_image_0000002686088455.gif)
 
 #### [h2]示例8（设置背景板材质）
 
-以下示例通过backgroundSystemMaterial属性，为分段按钮设置了半透明的背景板材质。
+以下示例通过backgroundSystemMaterial属性，为分段按钮设置了透明的背景板材质、开启自动反色和交互形变效果，并自定义反馈光感的颜色。
 
 从API版本26.0.0开始，[SegmentButtonOptions](#segmentbuttonoptions)和[CommonSegmentButtonOptions](#commonsegmentbuttonoptions)中新增backgroundSystemMaterial属性。
 
@@ -1294,33 +1304,46 @@ import {
 
 @Entry
 @Component
-struct IndexCl {
+struct Index {
   @State tabOptions: SegmentButtonOptions = SegmentButtonOptions.tab({
     buttons: [{ text: '页签按钮1' }, { text: '页签按钮2' }, {
       text: '页签按钮3'
     }] as ItemRestriction<SegmentButtonTextItem>,
     backgroundColor: Color.Transparent,
-    // 设置为半透明材质
-    backgroundSystemMaterial: new uiMaterial.ImmersiveMaterial({ style: uiMaterial.ImmersiveStyle.ULTRA_THICK })
+    // 将fontColor设置为特殊系统资源值，启用自动反色能力。
+    fontColor: $r('sys.color.font_primary'),
+    // 设置为系统材质样式为ULTRA_THIN，并开启自动反色和交互形变效果、自定义反馈光感的颜色。
+    backgroundSystemMaterial: new uiMaterial.ImmersiveMaterial({
+      style: uiMaterial.ImmersiveStyle.ULTRA_THIN,
+      colorInvert: true,
+      interactive: true,
+      lightEffect: { color: undefined }
+    })
   });
-
-  @State tabSelectedIndexes: number[] = [2];
+  @State tabSelectedIndexes: number[] = [0];
 
   build() {
-    Stack() {
-      // 作为分段按钮的背景，其中('app.media.pic')需要替换为开发者所需的图片
-      Image($r('app.media.pic'))
-      Column() {
-        SegmentButton({
-          options: this.tabOptions,
-          selectedIndexes: $tabSelectedIndexes
-        })
-      }
+    Column({ space: 20 }) {
+      SegmentButton({
+        options: this.tabOptions,
+        selectedIndexes: $tabSelectedIndexes
+      })
     }
+    .width('100%')
+    .height('20%')
+    .padding(20)
+    .linearGradient({
+      angle: 90, // 渐变角度，90度是从左到右。
+      colors: [
+        ['#FF9A9E', 0.0], // 起始颜色及位置（0.0表示起点）。
+        ['#FECFEF', 0.1], // 中间颜色及位置。
+        ['#3B324C', 1.0] // 结束颜色及位置（1.0表示终点）。
+      ]
+    })
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253822.png)
+ ![](./img/zh-cn_image_0000002685928625.gif)
 
 #### [h2]示例9（监听SegmentButtonOptions内属性的变化）
 
@@ -1338,7 +1361,7 @@ import {
 
 @Entry
 @Component
-struct IndexCl {
+struct Index {
   @State iconTextCapsuleOptions: SegmentButtonOptions = SegmentButtonOptions.capsule({
     buttons: [
       { text: '图标1', icon: $r('sys.media.ohos_ic_public_email'), selectedIcon: $r('sys.media.ohos_ic_public_clock') },
@@ -1383,4 +1406,4 @@ struct IndexCl {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661613005.gif)
+ ![](./img/zh-cn_image_0000002656008946.gif)

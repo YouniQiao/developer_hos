@@ -2,8 +2,8 @@
 title: "statusBarManager（状态栏管理服务）"
 upstream_id: "harmonyos-references/statusbar-extension-manager"
 catalog: "harmonyos-references"
-content_hash: "804cc8dcb81c"
-synced_at: "2026-07-09T00:59:45.599662"
+content_hash: "9e3dd0de4e20"
+synced_at: "2026-07-28T16:51:02.888633"
 ---
 
 # statusBarManager（状态栏管理服务）
@@ -196,8 +196,8 @@ addToStatusBar(context: common.Context, statusBarItem: StatusBarItem): void
 | 1010710001 | The size of the pixelmap exceeds the limit. |
 | 1010710002 | The number of menu items or submenu items exceeds the limit. |
 | 1010710003 | The API is being called too frequently. |
-| 1010710005 | The string length exceeds the threshold. |
-| 1010710007 | The menuCode of the menu item is not unique. |
+| 1010710005 | The string length exceeds the threshold. 适用版本：6.0.2(22)+ |
+| 1010710007 | The menuCode of the menu item is not unique. 适用版本：6.1.1(24)+ |
 | 1010720001 | A menu item contains neither submenu nor menuAction. |
 
 示例：
@@ -240,17 +240,17 @@ async function addToStatusBar(context: Context) {
   // 构建右键菜单项内容
   let subMenus: Array<statusBarManager.StatusBarSubMenuItem> = [];
   let subMenuItemAction: statusBarManager.StatusBarMenuAction = {
-    abilityName: "EntryAbility"
+    abilityName: 'EntryAbility'
   }
   let subMenu: statusBarManager.StatusBarSubMenuItem = {
-    subTitle: "子菜单项",
+    subTitle: '子菜单项',
     menuAction: subMenuItemAction
   }
   subMenus.push(subMenu);
 
   let statusBarMenuItems: Array<statusBarManager.StatusBarMenuItem> = [];
   let menuItem: statusBarManager.StatusBarMenuItem = {
-    title: "一级菜单项",
+    title: '一级菜单项',
     // 一级menuAction和subMenu两项不可都缺省
     subMenu: subMenus
   };
@@ -261,8 +261,8 @@ async function addToStatusBar(context: Context) {
 
   // 构建左键业务弹窗信息
   let operation: statusBarManager.QuickOperation = {
-    abilityName: "MyStatusBarViewAbility",
-    title: "测试Demo",
+    abilityName: 'MyStatusBarViewAbility',
+    title: '测试Demo',
     height: 300,
     // 可缺省
     moduleName: 'entry'
@@ -313,8 +313,8 @@ addToStatusBar(context: common.Context, statusBarItem: StatusBarItem, callback: 
 | 1010710001 | The size of the pixelmap exceeds the limit. |
 | 1010710002 | The number of menu items or submenu items exceeds the limit. |
 | 1010710003 | The API is being called too frequently. |
-| 1010710005 | The string length exceeds the threshold. |
-| 1010710007 | The menuCode of the menu item is not unique. |
+| 1010710005 | The string length exceeds the threshold. 适用版本：6.0.2(22)+ |
+| 1010710007 | The menuCode of the menu item is not unique. 适用版本：6.1.1(24)+ |
 | 1010720001 | A menu item contains neither submenu nor menuAction. |
 
 示例：
@@ -358,17 +358,17 @@ async function addToStatusBar(context: Context) {
   // 构建右键菜单项内容
   let subMenus: Array<statusBarManager.StatusBarSubMenuItem> = [];
   let subMenuItemAction: statusBarManager.StatusBarMenuAction = {
-    abilityName: "EntryAbility"
+    abilityName: 'EntryAbility'
   }
   let subMenu: statusBarManager.StatusBarSubMenuItem = {
-    subTitle: "子菜单项",
+    subTitle: '子菜单项',
     menuAction: subMenuItemAction
   }
   subMenus.push(subMenu);
 
   let statusBarMenuItems: Array<statusBarManager.StatusBarMenuItem> = [];
   let menuItem: statusBarManager.StatusBarMenuItem = {
-    title: "一级菜单项",
+    title: '一级菜单项',
     // 一级menuAction和subMenu两项不可都缺省
     subMenu: subMenus
   };
@@ -379,8 +379,8 @@ async function addToStatusBar(context: Context) {
 
   // 构建左键业务弹窗信息
   let operation: statusBarManager.QuickOperation = {
-    abilityName: "MyStatusBarViewAbility",
-    title: "测试Demo",
+    abilityName: 'MyStatusBarViewAbility',
+    title: '测试Demo',
     height: 300,
     // 可缺省
     moduleName: 'entry'
@@ -652,7 +652,7 @@ updateStatusBarMenu(context: common.Context, statusBarGroupMenus: StatusBarGroup
 | 401 | The parameter check failed. |
 | 1010710002 | The number of menu items or submenu items exceeds the limit. |
 | 1010710003 | The API is being called too frequently. |
-| 1010710007 | The menuCode of the menu item is not unique. |
+| 1010710007 | The menuCode of the menu item is not unique. 适用版本：6.1.1(24)+ |
 | 1010720001 | A menu item contains neither submenu nor menuAction. |
 
 示例：
@@ -668,16 +668,16 @@ function updateStatusBarMenu(context: Context) {
   // 构建右键菜单项内容
   let subMenus: Array<statusBarManager.StatusBarSubMenuItem> = [];
   let subMenuItemAction: statusBarManager.StatusBarMenuAction = {
-    abilityName: "EntryAbility"
+    abilityName: 'EntryAbility'
   }
   let subMenu: statusBarManager.StatusBarSubMenuItem = {
-    subTitle: "二级菜单项",
+    subTitle: '二级菜单项',
     menuAction: subMenuItemAction
   }
   subMenus.push(subMenu);
   let statusBarMenuItems: Array<statusBarManager.StatusBarMenuItem> = [];
   let menuItem: statusBarManager.StatusBarMenuItem = {
-    title: "一级菜单项",
+    title: '一级菜单项',
     // 一级menuAction和subMenu两项不可都缺省
     subMenu: subMenus
   };
@@ -725,7 +725,7 @@ updateStatusBarMenu(context: common.Context, statusBarGroupMenus: StatusBarGroup
 | 401 | The parameter check failed. |
 | 1010710002 | The number of menu items or submenu items exceeds the limit. |
 | 1010710003 | The API is being called too frequently. |
-| 1010710007 | The menuCode of the menu item is not unique. |
+| 1010710007 | The menuCode of the menu item is not unique. 适用版本：6.1.1(24)+ |
 | 1010720001 | A menu item contains neither submenu nor menuAction. |
 
 示例：
@@ -742,16 +742,16 @@ function updateStatusBarMenu(context: Context) {
   // 构建右键菜单项内容
   let subMenus: Array<statusBarManager.StatusBarSubMenuItem> = [];
   let subMenuItemAction: statusBarManager.StatusBarMenuAction = {
-    abilityName: "EntryAbility"
+    abilityName: 'EntryAbility'
   }
   let subMenu: statusBarManager.StatusBarSubMenuItem = {
-    subTitle: "二级菜单项",
+    subTitle: '二级菜单项',
     menuAction: subMenuItemAction
   }
   subMenus.push(subMenu);
   let statusBarMenuItems: Array<statusBarManager.StatusBarMenuItem> = [];
   let menuItem: statusBarManager.StatusBarMenuItem = {
-    title: "一级菜单项",
+    title: '一级菜单项',
     // 一级menuAction和subMenu两项不可都缺省
     subMenu: subMenus
   };
@@ -1134,7 +1134,7 @@ updateStatusBarHoverTips(context: common.Context, hoverTips: string): Promise<vo
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-statusbar-extension)。
+以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-statusbar-extension)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -1191,7 +1191,7 @@ updateStatusBarMenuItem(context: common.Context, item: StatusBarMenuItem): Promi
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-statusbar-extension)。
+以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-statusbar-extension)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -1242,7 +1242,7 @@ async function updateStatusBarMenuItemTest(context: Context) {
     selected: true
   }
   let menuAction: statusBarManager.StatusBarMenuAction = {
-    abilityName: "EntryAbility"
+    abilityName: 'EntryAbility'
   }
   let menuItemTmp: statusBarManager.StatusBarMenuItem = {
     title: 'menuItem',
@@ -1287,7 +1287,7 @@ updateStatusBarSubMenuItem(context: common.Context, item: StatusBarSubMenuItem):
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-statusbar-extension)。
+以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-statusbar-extension)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -1335,7 +1335,7 @@ async function updateStatusBarSubMenuItemTest(context: Context) {
     selected: true
   }
   let menuAction: statusBarManager.StatusBarMenuAction = {
-    abilityName: "EntryAbility"
+    abilityName: 'EntryAbility'
   }
   let subMenuItemTmp: statusBarManager.StatusBarSubMenuItem = {
     subTitle: 'menuItem',
@@ -1350,5 +1350,142 @@ async function updateStatusBarSubMenuItemTest(context: Context) {
   } catch (e) {
     console.error(`updateStatusBarSubMenuItem failed. error code: ${e?.code}, error message: ${e?.message}`);
   }
+}
+```
+
+#### statusBarManager.isStatusBarCapabilitySupported
+
+isStatusBarCapabilitySupported(context: common.Context): Promise<boolean>
+
+检查是否支持状态栏能力。使用promise异步回调。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.PCService.StatusBarManager
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| context | [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context#context) | 是 | 上下文信息。 **说明：** 当前context仅支持传入Context的子类[UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext)、ServiceExtensionContext、[FormExtensionContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-formextensioncontext)。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象。返回true表示支持状态栏能力；返回false表示不支持。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-statusbar-extension)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 1010710003 | The API is being called too frequently. |
+
+示例：
+
+```
+import { statusBarManager } from '@kit.DeskTopExtensionKit';
+
+/**
+ * 可以通过自定义组件的内置方法获取Context信息
+ * 具体方法：this.getUIContext().getHostContext();
+ */
+async function isStatusBarCapabilitySupportedTest(context: Context) {
+  if (!context) {
+    console.error('getHostContext failed');
+    return;
+  }
+  try {
+    let isSupported = await statusBarManager.isStatusBarCapabilitySupported(context);
+    if (isSupported) {
+      console.info('The status bar capability is supported.');
+    } else {
+      console.info('The status bar capability is not supported.');
+    }
+  } catch (error) {
+    console.error(`isStatusBarCapabilitySupported failed. error code: ${error.code}, error message: ${error.message}`);
+  }
+}
+```
+
+#### statusBarManager.onIconHover
+
+onIconHover(callback: Callback<emitter.EventData>): void
+
+监听状态栏图标悬浮事件。使用callback异步回调。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.PCService.StatusBarManager
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| callback | Callback | 是 | 需要注册的回调函数，返回图标悬浮状态信息。 |
+
+示例：
+
+```
+import { emitter } from '@kit.BasicServicesKit';
+import { statusBarManager } from '@kit.DeskTopExtensionKit';
+ 
+function onIconHoverTest() {
+  let onIconHoverChange = (eventData: emitter.EventData) => {
+    let data = eventData.data;
+    if (data) {
+      let isHovered = data['isHovered'] as boolean;
+      // 处理图标悬浮业务
+    }
+  };
+ 
+  statusBarManager.onIconHover(onIconHoverChange);
+}
+```
+
+#### statusBarManager.offIconHover
+
+offIconHover(callback?: Callback<emitter.EventData>): void
+
+注销状态栏图标悬浮事件。使用callback异步回调。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.PCService.StatusBarManager
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| callback | Callback | 否 | 取消该事件的回调处理函数。 默认值：undefined。 **说明：** 若不传入callback，会取消该事件的所有回调函数。 若传入callback，需要传入对应[onIconHover](#statusbarmanageroniconhover)方法相同的对象，否则会导致回调函数未成功注销，导致内存泄露。 |
+
+示例：
+
+```
+import { emitter } from '@kit.BasicServicesKit';
+import { statusBarManager } from '@kit.DeskTopExtensionKit';
+ 
+function offIconHoverTest() {
+  let onIconHoverChange = (eventData: emitter.EventData) => {
+    let data = eventData.data;
+    if (data) {
+      let isHovered = data['isHovered'] as boolean;
+      // 处理图标悬浮业务
+    }
+  };
+ 
+  // 取消事件回调处理函数
+  statusBarManager.offIconHover(onIconHoverChange);
+ 
+  // 注销事件监听
+  statusBarManager.offIconHover();
 }
 ```

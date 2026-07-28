@@ -2,8 +2,8 @@
 title: "验证ID Token有效性"
 upstream_id: "harmonyos-references/account-api-verify-id-token"
 catalog: "harmonyos-references"
-content_hash: "717a61194193"
-synced_at: "2026-07-17T16:19:39.943247"
+content_hash: "8be3753bda36"
+synced_at: "2026-07-28T16:52:31.800771"
 ---
 
 # 验证ID Token有效性
@@ -241,12 +241,11 @@ public class IDTokenAPIDemo {
 
 | 业务响应主错误码 | 业务响应子错误码 | 描述 | 解决方法 |
 | --- | --- | --- | --- |
-| 1203 | 100305 | id_token的header析成功后的内容不是JSON格式。 | id_token格式错误或者伪造的id_token，请检查id_token参数值是否为华为账号返回的原始值。 |
+| 1203 | 100305 | id_token的header解析成功后的内容不是JSON格式。 | id_token格式错误或者伪造的id_token，请检查id_token参数值是否为华为账号返回的原始值。 |
 | 1203 | 100306 | id_token的payload解析成功后的内容不是JSON格式。 | id_token格式错误或者伪造的id_token，请检查id_token参数值是否为华为账号返回的原始值。 |
 | 1203 | 150021 | id_token的header解析失败。 | id_token格式错误或者伪造的id_token，请检查id_token参数值是否为华为账号返回的原始值。 |
 | 1203 | 150022 | id_token的payload解析失败。 | id_token格式错误或者伪造的id_token，请检查id_token参数值是否为华为账号返回的原始值。 |
 | 1203 | 150023 | id_token的signature解析失败。 | id_token格式错误或者伪造的id_token，请检查id_token参数值是否为华为账号返回的原始值。 |
-| 1203 | 500 | 系统内部错误。 | 系统内部处理错误，建议业务打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
 | 1400 | 14004 | 无法通过其kid找到对应的JWT公钥相关信息。 | 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
 | 1500 | 15003 | 无效的id_token。 | id_token格式错误或者伪造的id_token，请检查id_token参数值是否为华为账号返回的原始值。 |
 | 1500 | 15004 | id_token验证失败。 | id_token格式错误或者伪造的id_token，请检查id_token参数值是否为华为账号返回的原始值。 |
@@ -254,3 +253,5 @@ public class IDTokenAPIDemo {
 | 1500 | 15006 | id_token已过期。 | 请重新获取新的id_token。 |
 | 1500 | 15007 | id_token为空。 | 请按照接口参数的要求，传入正确的id_token参数。 |
 | 1500 | 15008 | id_token格式不正确。 | 检查id_token的格式是否满足正则：^[0-9a-zA-Z_\-\.]+$。 |
+| 1203 | 500 | 系统内部错误。 | 系统内部处理错误，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 1203 | 1203 | 系统未知异常。 | 系统未知异常，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |

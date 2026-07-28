@@ -2,8 +2,8 @@
 title: "oh_value_object.h"
 upstream_id: "harmonyos-references/capi-oh-value-object-h"
 catalog: "harmonyos-references"
-content_hash: "1049b34821b3"
-synced_at: "2026-07-09T00:57:19.047379"
+content_hash: "f8bfaca9726b"
+synced_at: "2026-07-28T16:40:51.568578"
 ---
 
 # oh_value_object.h
@@ -22,10 +22,16 @@ synced_at: "2026-07-09T00:57:19.047379"
 
 相关模块： [RDB](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb)
 
+#### OH_VObject
+
+表示支持int64、double、text等多种数据类型的值对象。
+
+起始版本： 10
+
 #### 汇总
 
 #### [h2]结构体
 
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
-| [OH_VObject](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-vobject) | OH_VObject | 表示允许的数据字段类型。 |
+| [OH_VObject](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-vobject) | OH_VObject | 表示支持int64、double、text等多种数据类型的值对象。 |

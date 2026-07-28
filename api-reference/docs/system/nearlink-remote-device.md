@@ -2,8 +2,8 @@
 title: "remoteDevice（对端设备的连接能力）"
 upstream_id: "harmonyos-references/nearlink-remote-device"
 catalog: "harmonyos-references"
-content_hash: "7182c306143c"
-synced_at: "2026-07-09T00:59:26.761891"
+content_hash: "7c260f871163"
+synced_at: "2026-07-28T16:50:42.185726"
 ---
 
 # remoteDevice（对端设备的连接能力）
@@ -171,7 +171,7 @@ startPairing(): Promise<void>
 | --- | --- |
 | 201 | Permission denied. |
 | 801 | Capability not supported. |
-| 1009700003 | Nearlink is off. |
+| 1009700003 | NearLink is off. |
 | 1009700099 | Operation failed. |
 
 示例：
@@ -222,7 +222,7 @@ getPairingState(): PairingState
 | --- | --- |
 | 201 | Permission denied. |
 | 801 | Capability not supported. |
-| 1009700003 | Nearlink is off. |
+| 1009700003 | NearLink is off. |
 | 1009700099 | Operation failed. |
 
 示例：
@@ -270,7 +270,7 @@ getDeviceName(): string
 | --- | --- |
 | 201 | Permission denied. |
 | 801 | Capability not supported. |
-| 1009700003 | Nearlink is off. |
+| 1009700003 | NearLink is off. |
 | 1009700099 | Operation failed. |
 
 示例：
@@ -284,7 +284,7 @@ let device: remoteDevice.RemoteDevice;
 try {
   device = remoteDevice.createRemoteDevice(addr);
   let name: string = device.getDeviceName();
-  console.info('state:' + JSON.stringify(name));
+  console.info('name:' + JSON.stringify(name));
 } catch (err) {
   console.error('errCode: ' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);
 }
@@ -318,7 +318,7 @@ getDeviceClass(): DeviceClass
 | --- | --- |
 | 201 | Permission denied. |
 | 801 | Capability not supported. |
-| 1009700003 | Nearlink is off. |
+| 1009700003 | NearLink is off. |
 | 1009700099 | Operation failed. |
 
 示例：
@@ -366,7 +366,7 @@ getConnectionState(): ConnectionState
 | --- | --- |
 | 201 | Permission denied. |
 | 801 | Capability not supported. |
-| 1009700003 | Nearlink is off. |
+| 1009700003 | NearLink is off. |
 | 1009700099 | Operation failed. |
 
 示例：
@@ -414,7 +414,7 @@ getAcbState(): AcbState
 | --- | --- |
 | 201 | Permission denied. |
 | 801 | Capability not supported. |
-| 1009700003 | Nearlink is off. |
+| 1009700003 | NearLink is off. |
 | 1009700099 | Operation failed. |
 
 示例：
@@ -462,7 +462,7 @@ getDeviceInformation(): DeviceInformation
 | --- | --- |
 | 201 | Permission denied. |
 | 801 | Capability not supported. |
-| 1009700003 | Nearlink is off. |
+| 1009700003 | NearLink is off. |
 | 1009700099 | Operation failed. |
 
 示例：

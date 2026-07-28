@@ -2,15 +2,15 @@
 title: "蓝牙服务子系统错误码"
 upstream_id: "harmonyos-references/errorcode-bluetoothmanager"
 catalog: "harmonyos-references"
-content_hash: "064f564978b0"
-synced_at: "2026-07-09T00:59:25.150362"
+content_hash: "281ae09f5830"
+synced_at: "2026-07-28T16:50:39.755032"
 ---
 
 # 蓝牙服务子系统错误码
 
 ![](./img/note_3.0-zh-cn.png) 以下仅介绍本模块特有错误码，通用错误码请参考[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
-#### 2900001
+#### 2900001 蓝牙服务停止
 
 错误信息
 
@@ -28,7 +28,7 @@ Service stopped.
 
 重新执行打开或关闭蓝牙。
 
-#### 2900003
+#### 2900003 蓝牙开关关闭
 
 错误信息
 
@@ -46,7 +46,7 @@ Bluetooth disabled.
 
 重新执行打开蓝牙开关。
 
-#### 2900004
+#### 2900004 配置文件不支持
 
 错误信息
 
@@ -64,7 +64,7 @@ Profile not supported.
 
 检查设备是否支持该配置文件功能，若不支持则停止调用。
 
-#### 2900005
+#### 2900005 蓝牙设备未连接
 
 错误信息
 
@@ -82,7 +82,7 @@ Device not connected.
 
 重新打开蓝牙开关，执行配对流程。
 
-#### 2900006
+#### 2900006 超最大连接数
 
 错误信息
 
@@ -100,7 +100,7 @@ The maximum number of connections has been reached.
 
 检查已配对设备数量，是否超出阈值。
 
-#### 2900007
+#### 2900007 异步接口调用超时
 
 错误信息
 
@@ -118,7 +118,7 @@ Asynchronous interface invoking timeout.
 
 超时后重试；若和远端设备存在链路，可以断开后，再重试。
 
-#### 2900008
+#### 2900008 空指针
 
 错误信息
 
@@ -136,7 +136,7 @@ pimpl或proxy为空。
 
 重新打开蓝牙开关，执行配对流程。
 
-#### 2900009
+#### 2900009 硬件资源不足
 
 错误信息
 
@@ -156,7 +156,7 @@ Fails to start scan as it is out of hardware resources.
 
 本应用已启动过其他通道的扫描，可调用停止扫描接口，停止其他已启动的扫描，释放硬件资源后再重新启动本次扫描。
 
-#### 2900010
+#### 2900010 资源达到上限
 
 错误信息
 
@@ -174,7 +174,7 @@ Resources have reached the upper limit.
 
 调用对应接口释放资源。
 
-#### 2900011
+#### 2900011 操作频繁
 
 错误信息
 
@@ -194,7 +194,7 @@ The operation is busy. The last operation is not complete.
 
 异步接口需等待callback或promise返回后再执行下一次操作。
 
-#### 2900013
+#### 2900013 前置操作超时
 
 错误信息
 
@@ -212,7 +212,7 @@ The user does not respond.
 
 重新执行前置操作。
 
-#### 2900014
+#### 2900014 用户拒绝此操作
 
 错误信息
 
@@ -266,7 +266,7 @@ Device unpaired.
 
 在蓝牙设置界面检查是否与该设备配对。
 
-#### 2900099
+#### 2900099 操作失败
 
 错误信息
 
@@ -287,7 +287,7 @@ Operation failed.
 
 1. 检查接口调用的前置依赖条件，具体处理步骤可参考[蓝牙接口调用报错2900099](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bluetooth-faq-2900099-errorcode)
 
-#### 2900100
+#### 2900100 IPC传输失败
 
 错误信息
 
@@ -305,7 +305,7 @@ IPC 数据传输失败。
 
 请检查传入数据。
 
-#### 2901000
+#### 2901000 禁止读操作
 
 错误信息
 
@@ -323,7 +323,7 @@ Read forbidden.
 
 检查是否有读操作权限。
 
-#### 2901001
+#### 2901001 禁止写操作
 
 错误信息
 
@@ -341,7 +341,7 @@ Write forbidden.
 
 检查是否有写操作权限。
 
-#### 2901003
+#### 2901003 GATT未连接
 
 错误信息
 
@@ -359,7 +359,7 @@ GATT处于未连接的状态下执行操作，例如调用[getServices](https://
 
 确保GATT处于已连接的状态。
 
-#### 2901004
+#### 2901004 GATT传输拥塞
 
 错误信息
 
@@ -377,7 +377,7 @@ GATT处于拥塞状态。
 
 降低读写操作频率，如果是WRITE_NO_RESPONSE类型的写数据操作，建议调用间隔控制在50ms以上。
 
-#### 2901005
+#### 2901005 GATT未加密
 
 错误信息
 
@@ -395,7 +395,7 @@ GATT加密权限不足。
 
 检查GATT是否有加密权限。
 
-#### 2901006
+#### 2901006 GATT未认证
 
 错误信息
 
@@ -413,7 +413,7 @@ GATT认证权限不足。
 
 检查与对端设备是否配对，是否有认证权限。
 
-#### 2901007
+#### 2901007 GATT未授权
 
 错误信息
 
@@ -431,7 +431,7 @@ GATT未授权。
 
 检查GATT是否已授权。
 
-#### 2901008
+#### 2901008 GATT服务不存在
 
 错误信息
 
@@ -449,7 +449,7 @@ GATT服务尚未被添加。
 
 先调用[addService](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bluetooth-ble#addservice)添加该服务。
 
-#### 2901054
+#### 2901054 IO传输失败
 
 错误信息
 
@@ -467,7 +467,7 @@ IO传输异常，造成失败。
 
 请重试该操作。
 
-#### 2902050
+#### 2902050 开启扫描失败
 
 错误信息
 
@@ -485,7 +485,7 @@ Ble扫描已被app开启。
 
 检查是否已经开启扫描。
 
-#### 2902054
+#### 2902054 广播报文超限
 
 错误信息
 
@@ -503,7 +503,7 @@ The length of the advertising data exceeds the upper limit.
 
 检查广播报文是否超过最大长度限制。
 
-#### 2902055
+#### 2902055 广播标识符无效
 
 错误信息
 

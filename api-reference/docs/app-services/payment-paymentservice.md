@@ -2,8 +2,8 @@
 title: "paymentService (鸿蒙支付服务)"
 upstream_id: "harmonyos-references/payment-paymentservice"
 catalog: "harmonyos-references"
-content_hash: "4960c8069d77"
-synced_at: "2026-07-09T01:01:29.595331"
+content_hash: "a1b289ca0d0b"
+synced_at: "2026-07-28T16:52:49.653228"
 ---
 
 # paymentService (鸿蒙支付服务)
@@ -101,7 +101,7 @@ import { paymentService } from '@kit.PaymentKit';
 
 requestPayment(context: common.UIAbilityContext, orderStr: string): Promise<void>
 
-该方法提供基础支付、支付并签约等功能，调用方法前请确保网络已连接，调用该方法后会拉起Payment Kit收银台，支付完成后使用Promise异步返回。
+该方法提供基础支付、支付并签约等功能，调用方法前请确保网络已连接，调用该方法后会拉起Payment Kit收银台，支付完成后使用Promise异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -131,6 +131,7 @@ requestPayment(context: common.UIAbilityContext, orderStr: string): Promise<void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
 | 1001930000 | The operation was canceled by the user. |
 | 1001930001 | Pay failed. |
 | 1001930002 | The transaction has been processed. |
@@ -179,7 +180,7 @@ struct Index {
 
 requestPayment(context: common.UIAbilityContext, orderStr: string, callback: AsyncCallback<void>): void
 
-该方法提供基础支付、支付并签约等功能，调用该方法前请确保网络已连接，调用该方法后会拉起Payment Kit收银台，支付完成后通过AsyncCallback回调结果。
+该方法提供基础支付、支付并签约等功能，调用该方法前请确保网络已连接，调用该方法后会拉起Payment Kit收银台，支付完成后使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -204,6 +205,7 @@ requestPayment(context: common.UIAbilityContext, orderStr: string, callback: Asy
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
 | 1001930000 | The operation was canceled by the user. |
 | 1001930001 | Pay failed. |
 | 1001930002 | The transaction has been processed. |
@@ -257,13 +259,15 @@ struct Index {
 
 requestContract(context: common.UIAbilityContext, contractStr: string): Promise<void>
 
-该方法提供签约功能，调用方法前请确保网络已连接，调用该方法后会拉起Payment Kit签约收银台，签约完成后使用Promise异步返回。
+该方法提供签约功能，调用方法前请确保网络已连接，调用该方法后会拉起Payment Kit签约收银台，签约完成后使用Promise异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
 元服务API： 从版本5.0.0(12)开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Payment.PaymentService
+
+设备行为差异： 该接口在Phone、Tablet、2in1设备中可正常调用，在其他设备中返回801错误码。
 
 起始版本： 5.0.0(12)
 
@@ -287,6 +291,7 @@ requestContract(context: common.UIAbilityContext, contractStr: string): Promise<
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
 | 1001930000 | The operation was canceled by the user. |
 | 1001930002 | The transaction has been processed. |
 | 1001930003 | Withhold failed. |
@@ -335,13 +340,15 @@ struct Index {
 
 requestContract(context: common.UIAbilityContext, contractStr: string, callback: AsyncCallback<void>): void
 
-该方法提供签约功能，调用该方法前请确保网络已连接，调用该方法后会拉起Payment Kit签约收银台，签约完成后通过AsyncCallback回调结果。
+该方法提供签约功能，调用该方法前请确保网络已连接，调用该方法后会拉起Payment Kit签约收银台，签约完成后使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
 元服务API： 从版本5.0.0(12)开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Payment.PaymentService
+
+设备行为差异： 该接口在Phone、Tablet、2in1设备中可正常调用，在其他设备中返回801错误码。
 
 起始版本： 5.0.0(12)
 
@@ -360,6 +367,7 @@ requestContract(context: common.UIAbilityContext, contractStr: string, callback:
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
 | 1001930000 | The operation was canceled by the user. |
 | 1001930002 | The transaction has been processed. |
 | 1001930003 | Withhold failed. |
@@ -413,13 +421,15 @@ struct Index {
 
 requestPayment(context: common.UIAbilityContext, orderStr: string, payload: string): Promise<PayResult>
 
-该方法提供拉起通用收银台、跳转三方支付功能，调用方法前请确保网络已连接，用户在通用收银台选择支付方式并确认支付后，使用Promise异步返回。
+该方法提供拉起通用收银台、跳转三方支付功能，调用方法前请确保网络已连接，用户在通用收银台选择支付方式并确认支付后，使用Promise异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
 元服务API： 从版本5.0.2(14)开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Payment.PaymentService
+
+设备行为差异： 该接口在Phone、Tablet、2in1设备中可正常调用，在其他设备中返回801错误码。
 
 起始版本： 5.0.2(14)
 
@@ -444,6 +454,7 @@ requestPayment(context: common.UIAbilityContext, orderStr: string, payload: stri
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
 | 1001930000 | The operation was canceled by the user. |
 | 1001930001 | Pay failed. |
 | 1001930002 | The transaction has been processed. |
@@ -494,13 +505,15 @@ struct Index {
 
 cashierPicker(context: common.UIAbilityContext, paymentInfo: PaymentInfo): Promise<PickerResult>
 
-该方法提供拉起通用收银台功能，调用方法前请确保网络已连接，用户在通用收银台选择支付方式并确认支付后，使用Promise异步返回。
+该方法提供拉起通用收银台功能，调用方法前请确保网络已连接，用户在通用收银台选择支付方式并确认支付后，使用Promise异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
 元服务API： 从版本5.0.2(14)开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Payment.PaymentService
+
+设备行为差异： 该接口在Phone、Tablet、2in1设备中可正常调用，在其他设备中返回801错误码。
 
 起始版本： 5.0.2(14)
 
@@ -524,6 +537,7 @@ cashierPicker(context: common.UIAbilityContext, paymentInfo: PaymentInfo): Promi
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
 | 1001930000 | The operation was canceled by the user. |
 | 1001930001 | Pay failed. |
 | 1001930002 | The transaction has been processed. |
@@ -577,13 +591,15 @@ struct Index {
 
 requestBindCard(context: common.UIAbilityContext | common.UIExtensionContext): Promise<BindCardResult>
 
-该方法提供用户绑卡功能，调用该方法后会拉起Payment Kit用户绑卡页面，绑卡完成后使用Promise异步返回。调用方法前请确保网络已连接。
+该方法提供用户绑卡功能，调用该方法后会拉起Payment Kit用户绑卡页面，绑卡完成后使用Promise异步回调。调用方法前请确保网络已连接。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
 元服务API： 从版本5.0.5(17)开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Payment.PaymentService
+
+设备行为差异： 该接口在Phone、Tablet、2in1设备中可正常调用，在其他设备中返回801错误码。
 
 起始版本： 5.0.5(17)
 
@@ -606,6 +622,7 @@ requestBindCard(context: common.UIAbilityContext | common.UIExtensionContext): P
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error.Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
 | 1001930000 | The operation was canceled by the user. |
 | 1001930011 | Network connection error. |
 

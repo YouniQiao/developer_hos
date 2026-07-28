@@ -2,8 +2,8 @@
 title: "rcp（数据请求）"
 upstream_id: "harmonyos-references/remote-communication-rcp"
 catalog: "harmonyos-references"
-content_hash: "d94be4975f9a"
-synced_at: "2026-07-09T17:26:30.964788"
+content_hash: "234c58a4f918"
+synced_at: "2026-07-28T16:50:50.977785"
 ---
 
 # rcp（数据请求）
@@ -1470,6 +1470,7 @@ function testInterceptor() {
 | connectionConfiguration | [ConnectionConfiguration](#connectionconfiguration) | 否 | 是 | 连接配置。用于指定此会话中允许的并发TCP连接总数以及单个主机所允许的最大并发TCP 连接数。 **起始版本：** 5.0.0(12) |
 | cacheControl | [CacheControl](#cachecontrol) | 否 | 是 | 缓存控制配置。用于主动控制会话中缓存验证策略，影响服务器或中间代理如何响应请求。 **起始版本：** 6.0.0(20) |
 | cookieRepository | [CookieRepository](#cookierepository) | 否 | 是 | cookie仓库。会话中的所有请求会共享cookie仓库。如果配置此项，那么此[Session](#session)上的请求实际上都会由[DefaultSession](#defaultsession)处理。 **起始版本：** 6.1.0(23) |
+| sessionPathPreference | [SessionPathPreference](#sessionpathpreference) | 否 | 是 | 会话路径偏好配置。默认值为'auto'，表示使用系统默认的路径。会话路径偏好配置不能和请求路径偏好配置冲突：若本参数非'auto'，且会话内请求的[pathPreference](#pathpreference)也非'auto'，则发起请求时将抛出错误[1007900401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-remote-communication#section1007900401-接口参数错误)。 **起始版本：** 26.0.0 |
 
 示例：
 
@@ -1726,6 +1727,24 @@ cookie仓库。cookie仓库能够自动存储HTTP响应中的cookie，自动在H
 系统能力： SystemCapability.Collaboration.RemoteCommunication
 
 起始版本： 6.1.0(23)
+
+#### SessionPathPreference
+
+type SessionPathPreference = 'auto' | 'cellular-if-could' | 'mptcp'
+
+会话路径偏好设置。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Collaboration.RemoteCommunication
+
+起始版本： 26.0.0
+
+| 类型 | 说明 |
+| --- | --- |
+| 'auto' | 表示没有配置会话路径偏好，系统自动选择路径。 |
+| 'cellular-if-could' | 表示蜂窝网络可用时，优先使用蜂窝网络。需要配置ohos.permission.GET_NETWORK_INFO才能生效。如何激活蜂窝网络，请参考[网络连接管理文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-net-connection#connectioncreatenetconnection)。 |
+| 'mptcp' | 表示使用多路传输控制协议（MPTCP），请参考[RFC 8684](https://www.rfc-editor.org/rfc/rfc8684.html)。 |
 
 #### [h2]create
 
@@ -2057,7 +2076,7 @@ TransferConfiguration接口为开发者提供了一组选项，用于调整会�
 | maxAutoRedirects | number | 否 | 是 | 最大重定向次数，在autoRedirect为true时生效。 取值范围：1~2147483647。 默认值为50。 **起始版本：** 5.0.0(12) |
 | timeout | [Timeout](#timeout) | 否 | 是 | 配置HTTP请求的超时值，允许开发者定义连接和传输数据所允许的最长时间。如果未设置，则使用默认时间。 |
 | assumesHTTP3Capable | boolean | 否 | 是 | 指定本次请求是否尝试升级为HTTP/3版本。true表示尝试升级，系统会根据客户端/服务端平台能力、网络质量等因素决定此次请求是否升级为HTTP/3版本，false表示不升级。默认为false。如需指定HTTP版本，请使用httpVersionSelectCallback。 |
-| pathPreference | [PathPreference](#pathpreference) | 否 | 是 | HTTP请求路径首选项，此处配置的为建议路径，在实际使用过程中，系统会决定使用哪个路径。可以是'auto'或'cellular'路径。默认为'auto'路径。 |
+| pathPreference | [PathPreference](#pathpreference) | 否 | 是 | HTTP请求路径首选项，此处配置的为建议路径，在实际使用过程中，设备的系统会决定使用哪个路径。可以是'auto'或'cellular'路径。默认为'auto'路径。 |
 | serviceType | [ServiceType](#servicetype) | 否 | 是 | 服务类型。默认为undefined。 |
 | pausePolicy | [PausePolicy](#pausepolicy) | 否 | 是 | 请求暂停策略。 **起始版本：** 5.0.0(12) |
 | tcp | [TcpConfiguration](#tcpconfiguration) | 否 | 是 | TCP连接的相关配置。 **起始版本：** 6.0.0(20) |
@@ -2104,6 +2123,7 @@ TracingConfiguration接口使开发者能够在会话中的HTTP请求期间捕�
 | infoToCollect | [InfoToCollect](#infotocollect) | 否 | 是 | 配置需要收集的特定类型的信息事件。默认无事件需要收集。 |
 | collectTimeInfo | boolean | 否 | 是 | 指示在跟踪过程中是否应收集与时间相关的信息，true代表收集，false代表不收集，默认值为false。 |
 | httpEventsHandler | [HttpEventsHandler](#httpeventshandler) | 否 | 是 | 为HTTP请求/响应过程中的特定操作定义响应处理程序的回调。默认值为undefined。 |
+| plaintextInException | boolean | 否 | 是 | 抛出异常时是否在异常信息中显示明文内容。true表示显示，false表示不显示，默认值为false。 **起始版本：** 26.0.0 |
 
 示例：
 
@@ -2342,11 +2362,14 @@ SecurityConfiguration接口允许开发者在会话中配置与安全相关的�
 | --- | --- | --- | --- | --- |
 | remoteValidation | 'system' | 'skip' | [CertificateAuthority](#certificateauthority) | [ValidationCallback](#validationcallback) | 否 | 是 | 证书颁发机构（CA），用于验证远程服务器的身份。默认值为'system'。 如果未设置此字段，系统CA将被用于验证远程服务器的标识。 'system'：表示使用系统CA配置。 'skip'：跳过验证。 CertificateAuthority：证书颁发机构（CA）验证。 ValidationCallback：自定义证书校验。 **说明：** 从5.0.0(12)版本开始，新增支持ValidationCallback类型。 |
 | certificate | [ClientCertificate](#clientcertificate) | 否 | 是 | 发送到远程服务器的客户端证书，用于远程服务器使用其验证委托人的身份证明。默认值为undefined，表示服务器不需要验证客户端。 |
+| certificateEnc | [ClientCertificate](#clientcertificate) | 否 | 是 | 客户端加密证书，用于发送给远程[TLCP](https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=778097598DA2761E94A5FF3F77BD66DA)服务器以验证客户端身份。仅在securityLayerType为'tlcp'时生效。默认值为undefined，表示服务器无需验证客户端的加密证书。 **起始版本：** 26.0.0 |
 | tlsOptions | 'system' | [CipherSuite](#ciphersuite)[] | [TlsV13Option](#tlsv13option) | [TlsV12Option](#tlsv12option)| [TlsV11Option](#tlsv11option) | [TlsV10Option](#tlsv10option) | 否 | 是 | TLS版本选择器，用于选择TLS的版本，默认为'system'。 'system'：表示使用系统的TLS版本。 [CipherSuite](#ciphersuite)[]：用来声明加密套件的类型的数组。 [TlsV13Option](#tlsv13option)：表示使用TLS1.3版本。 [TlsV12Option](#tlsv12option)：表示使用TLS1.2版本。 [TlsV11Option](#tlsv11option)：表示使用TLS1.1版本。 [TlsV10Option](#tlsv10option)：表示使用TLS1.0版本。 **起始版本：** 5.0.0(12) |
 | tlsRange | [TlsVersionRangeOptions](#tlsversionrangeoptions) | 否 | 是 | TLS版本范围配置器，用于设置客户端可使用TLS版本的范围，默认不配置。 **起始版本：** 6.0.0(20) |
 | serverAuthentication | [ServerAuthentication](#serverauthentication) | 否 | 是 | 安全连接期间的服务器身份验证配置。默认不认证。 |
 | certificatePinning | [CertificatePinning](#certificatepinning)| [CertificatePinning](#certificatepinning)[] | 否 | 是 | 证书锁定配置。 **起始版本：** 5.0.0(12) |
 | challenge | [OnAuthenticationChallenge](#onauthenticationchallenge) | 否 | 是 | 自定义认证挑战。 **起始版本：** 6.1.0(23) |
+| securityLayerType | [SecurityLayerType](#securitylayertype) | 否 | 是 | 安全层协议类型。默认值为'ssl-tls'。如果设置为'tlcp'，遵循以下规则： 1. 不支持模拟器。在模拟器上使用'tlcp'发起请求时抛出[804](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section804-模拟器不支持此api)错误。 2. 不支持作为代理服务器类型。[WebProxy](#webproxy)的security.securityLayerType配置为'tlcp'，发起请求时抛出[1007900401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-remote-communication#section1007900401-接口参数错误)错误。 3. remoteValidation仅支持配置为'skip'、[CertificateAuthority](#certificateauthority)或[ValidationCallback](#validationcallback)。配置为[CertificateAuthority](#certificateauthority)时，仅支持传入filePath。其他情况在请求时抛出[1007900401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-remote-communication#section1007900401-接口参数错误)错误。 4. certificate和certificateEnc不支持传入content，否则在请求时抛出[1007900401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-remote-communication#section1007900401-接口参数错误)错误。 5. certificate和certificateEnc的type只支持'PEM'类型，否则在请求时抛出[1007900401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-remote-communication#section1007900401-接口参数错误)错误。 6. 不支持配置tlsOptions、tlsRange和certificatePinning，否则在请求时抛出[1007900401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-remote-communication#section1007900401-接口参数错误)错误。 **起始版本：** 26.0.0 |
+| certificateDecompress | [CertificateDecompress](#certificatedecompress)| [CertificateDecompress](#certificatedecompress)[] | 否 | 是 | TLS1.3扩展协议证书解压缩配置。建议同时将[SecurityConfiguration](#securityconfiguration)的tlsOptions配置为[TlsV13Option](#tlsv13option)类型参数。配置项仅Phone设备生效，在其他设备上设置无效。 **起始版本：** 26.0.0 |
 
 示例：
 
@@ -2368,7 +2391,11 @@ const securityConfig: rcp.SecurityConfiguration = {
       password: "examplePassword"
     },
     authenticationType: "basic"
-  }
+  },
+  tlsOptions: {
+    tlsVersion: 'TlsV1.3',
+  },
+  certificateDecompress: 'zlib',
 };
 
 // 在会话创建中使用安全配置
@@ -2465,6 +2492,40 @@ type OnAuthenticationChallenge = (info: AuthenticationChallengeInfo[], response:
 | 类型 | 说明 |
 | --- | --- |
 | [ServerAuthentication](#serverauthentication) | null | 返回类型为HTTP服务器的身份验证信息或null。若返回验证信息，系统将使用用户提供的信息进行认证挑战；若返回null，则放弃认证挑战。 |
+
+#### SecurityLayerType
+
+type SecurityLayerType = 'ssl-tls' | 'tlcp'
+
+安全层协议类型。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Collaboration.RemoteCommunication
+
+起始版本： 26.0.0
+
+| 类型 | 说明 |
+| --- | --- |
+| 'ssl-tls' | 表示安全层使用TLS协议。 |
+| 'tlcp' | 表示安全层使用国密[TLCP](https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=778097598DA2761E94A5FF3F77BD66DA)协议。 |
+
+#### CertificateDecompress
+
+type CertificateDecompress = 'zlib' | 'brotli'
+
+证书解压缩算法。请参考[RFC 8879](https://www.rfc-editor.org/rfc/rfc8879.html)。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Collaboration.RemoteCommunication
+
+起始版本： 26.0.0
+
+| 类型 | 说明 |
+| --- | --- |
+| 'zlib' | 表示使用zlib算法解压缩。 |
+| 'brotli' | 表示使用brotli算法解压缩。 |
 
 #### AuthenticationChallengeInfo
 
@@ -3349,7 +3410,7 @@ URLOrString类型是表示URL对象或表示URL的字符串的并集类型。可
 
 type PathPreference = 'auto' | 'cellular'
 
-HTTP请求路径偏好设置。此设置仅为开发者的建议，实际使用路径由系统决定。
+HTTP请求路径偏好配置。此配置仅为开发者的建议，实际使用路径由设备的系统决定。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -3384,7 +3445,7 @@ HTTP连接复用方式。
 
 type HttpVersionSelectCallback = (url: URL) => HttpVersion
 
-选择HTTP版本的回调函数。在请求发起前执行这个函数，如果回调函数返回的不是'unknown'，则使用返回的HTTP版本，且assumesHTTP3Capable不生效。
+选择HTTP版本的回调函数。在请求发起前执行这个函数，如果回调函数返回的不是'unknown'，则使用返回的HTTP版本，且assumesHTTP3Capable不生效。如果客户端或服务端不支持开发者指定的版本，请求可能会自动降级至较低版本，或直接导致请求失败。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -4019,7 +4080,7 @@ HTTP表单数据内容中的文件内容类型。
 | --- | --- | --- | --- | --- |
 | contentType | [ContentType](#contenttype) | 否 | 是 | HTTP多部分表单数据内容类型。默认值为undefined。 |
 | remoteFileName | string | 否 | 是 | 保存到远程服务器的文件名。默认值为undefined。 |
-| contentOrPath | [Path](#path) | [FileContent](#filecontent) | [GetDataCallback](#getdatacallback) | 否 | 否 | 待发送到远程服务器的内容或文件路径。具体允许的类型见链接。 |
+| contentOrPath | [Path](#path) | [FileContent](#filecontent) | [GetDataCallback](#getdatacallback) | 否 | 否 | 待发送到远程服务器的内容或文件路径。服务器支持HTTP2、支持重定向的情况下，[GetDataCallback](#getdatacallback)无法使用，请使用[FileContent](#filecontent)或者[Path](#path)。 |
 
 示例
 

@@ -2,13 +2,15 @@
 title: "应用级变量的状态管理"
 upstream_id: "harmonyos-references/ts-state-management"
 catalog: "harmonyos-references"
-content_hash: "07d98bee1dbe"
-synced_at: "2026-07-09T00:58:18.439675"
+content_hash: "8290b9713d42"
+synced_at: "2026-07-28T16:48:45.915775"
 ---
 
 # 应用级变量的状态管理
 
-状态管理模块提供了应用程序的数据存储能力、持久化数据管理能力、UIAbility数据存储能力和应用程序需要的环境状态。
+状态管理模块提供了应用的数据存储能力、持久化数据管理能力、UIAbility数据存储能力和环境状态查询能力。[AppStorage](#appstorage)是与应用进程绑定的全局UI状态存储中心，[LocalStorage](#localstorage9)提供了页面级的UI状态存储能力，[PersistentStorage](#persistentstorage)提供了状态变量持久化的能力，[Environment](#environment)提供了读取系统环境变量并将其值写入AppStorage的能力。
+
+开发指南参考：[AppStorage：应用全局的UI状态存储](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)、[LocalStorage：页面级UI状态存储](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)、[PersistentStorage：持久化存储UI状态](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-persiststorage)和[Environment：设备环境查询](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-environment)。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 7开始支持，后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -16,12 +18,14 @@ synced_at: "2026-07-09T00:58:18.439675"
 
 | 类型 | 说明 |
 | --- | --- |
-| T | Class，number，boolean，string和这些类型的数组形式。 |
-| S | number，boolean，string。 |
+| T | Class、number、boolean、string及这些类型的数组形式。 |
+| S | number、boolean、string。 |
 
 #### AppStorage
 
-AppStorage具体UI使用说明，详见[AppStorage(应用全局的UI状态存储)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)
+AppStorage是与应用进程绑定的全局UI状态存储中心，由UI框架在应用启动时创建，将UI状态数据存储于运行内存，实现应用级全局状态共享。具体UI使用说明，详见[AppStorage：应用全局的UI状态存储](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)。
+
+![](./img/note_3.0-zh-cn.png) 从API version 12开始，AppStorage支持[Map](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#装饰map类型变量)、[Set](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#装饰set类型变量)、[Date类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#装饰date类型变量)，支持null、undefined以及[联合类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#appstorage支持联合类型)。
 
 #### [h2]ref12+
 
@@ -29,7 +33,7 @@ static ref<T>(propName: string): AbstractProperty<T> | undefined
 
 如果给定的propName在[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中存在，则返回AppStorage中propName对应属性的引用。否则，返回undefined。
 
-与[link](#link10)的功能基本一致，但不需要手动释放返回的[AbstractProperty](#abstractpropertyt12)类型的变量。
+与[link](#link10)的功能基本一致，区别在于不需要手动释放返回的[AbstractProperty](#abstractpropertyt12)类型的变量。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -45,7 +49,7 @@ static ref<T>(propName: string): AbstractProperty<T> | undefined
 
 | 类型 | 说明 |
 | --- | --- |
-| [AbstractProperty](#abstractpropertyt12) | undefined | AppStorage中propName对应属性的引用，如果AppStorage中不存在对应的propName，则返回undefined。 |
+| [AbstractProperty](#abstractpropertyt12) | undefined | 返回AppStorage中propName对应属性的引用，如果AppStorage中不存在对应的propName，则返回undefined。 |
 
 示例：
 
@@ -53,7 +57,7 @@ static ref<T>(propName: string): AbstractProperty<T> | undefined
 AppStorage.setOrCreate('PropA', 47);
 let refToPropA1: AbstractProperty<number> | undefined = AppStorage.ref('PropA');
 let refToPropA2: AbstractProperty<number> | undefined = AppStorage.ref('PropA'); // refToPropA2.get() == 47
-refToPropA1?.set(48); // 同步修改AppStorage: refToPropA1.get() == refToPropA2.get() == 48
+refToPropA1?.set(48); // 同步修改AppStorage：refToPropA1.get() == refToPropA2.get() == 48
 ```
 
 #### [h2]setAndRef12+
@@ -62,9 +66,7 @@ static setAndRef<T>(propName: string, defaultValue: T): AbstractProperty<T>
 
 与[ref](#ref12)接口类似，如果给定的propName在[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中存在，则返回AppStorage中propName对应属性的引用。如果不存在，则使用defaultValue在AppStorage中创建和初始化propName对应的属性，并返回其引用。
 
-与[setAndLink](#setandlink10)的功能基本一致，但不需要手动释放返回的[AbstractProperty](#abstractpropertyt12)类型的变量。
-
-![](./img/note_3.0-zh-cn.png) 从API version 12开始，AppStorage支持[Map](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#装饰map类型变量)、[Set](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#装饰set类型变量)、[Date类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#装饰date类型变量)，支持null、undefined以及[联合类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#appstorage支持联合类型)。
+与[setAndLink](#setandlink10)的功能基本一致，区别在于不需要手动释放返回的[AbstractProperty](#abstractpropertyt12)类型的变量。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -95,9 +97,7 @@ let ref2: AbstractProperty<number> = AppStorage.setAndRef('PropA', 50); // PropA
 
 static link<T>(propName: string): SubscribedAbstractProperty<T>
 
-与[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中对应的propName建立双向数据绑定。如果给定的propName在AppStorage中存在，返回AppStorage中propName对应属性的双向绑定数据。
-
-双向绑定数据的修改会同步回AppStorage中，AppStorage会将变化同步到所有绑定该propName的数据和自定义组件中。
+与[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中对应的propName建立双向数据绑定。如果给定的propName在AppStorage中存在，返回AppStorage中propName对应属性的双向绑定数据。与[prop](#prop10)的单向数据绑定不同，link的修改会同步回AppStorage，AppStorage会将变化同步到所有绑定该propName的数据和自定义组件中。
 
 如果AppStorage中不存在propName，则返回undefined。
 
@@ -123,7 +123,7 @@ static link<T>(propName: string): SubscribedAbstractProperty<T>
 AppStorage.setOrCreate('PropA', 47);
 let linkToPropA1: SubscribedAbstractProperty<number> = AppStorage.link('PropA');
 let linkToPropA2: SubscribedAbstractProperty<number> = AppStorage.link('PropA'); // linkToPropA2.get() == 47
-linkToPropA1.set(48); // 双向同步: linkToPropA1.get() == linkToPropA2.get() == 48
+linkToPropA1.set(48); // 双向同步：linkToPropA1.get() == linkToPropA2.get() == 48
 ```
 
 #### [h2]setAndLink10+
@@ -131,8 +131,6 @@ linkToPropA1.set(48); // 双向同步: linkToPropA1.get() == linkToPropA2.get() 
 static setAndLink<T>(propName: string, defaultValue: T): SubscribedAbstractProperty<T>
 
 与[link](#link10)接口类似，如果给定的propName在[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中存在，则返回该propName对应的属性的双向绑定数据。如果不存在，则使用defaultValue在AppStorage中创建和初始化propName对应的属性，返回其双向绑定数据。
-
-![](./img/note_3.0-zh-cn.png) 从API version 12开始，AppStorage支持[Map](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#装饰map类型变量)、[Set](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#装饰set类型变量)、[Date类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#装饰date类型变量)，支持null、undefined以及[联合类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#appstorage支持联合类型)。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -143,7 +141,7 @@ static setAndLink<T>(propName: string, defaultValue: T): SubscribedAbstractPrope
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | propName | string | 是 | AppStorage中的属性名。 |
-| defaultValue | T | 是 | 当propName在AppStorage中不存在时，使用defaultValue在AppStorage中初始化propName对应属性的值，从API version 12开始，defaultValue可以为null或undefined。 |
+| defaultValue | T | 是 | 当propName在AppStorage中不存在时，使用defaultValue在AppStorage中初始化propName对应属性的值。从API version 12开始，defaultValue可以为null或undefined。 |
 
 返回值：
 
@@ -163,7 +161,7 @@ let link2: SubscribedAbstractProperty<number> = AppStorage.setAndLink('PropA', 5
 
 static prop<T>(propName: string): SubscribedAbstractProperty<T>
 
-与[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中对应的propName建立单向属性绑定。如果给定的propName在AppStorage中存在，则返回与AppStorage中propName对应属性的单向绑定数据。如果AppStorage中不存在propName，则返回undefined。单向绑定数据的修改不会被同步回AppStorage中。
+与[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中对应的propName建立单向数据绑定。如果给定的propName在AppStorage中存在，则返回与AppStorage中propName对应属性的单向绑定数据。如果AppStorage中不存在propName，则返回undefined。单向绑定数据的修改不会同步回AppStorage中。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -194,9 +192,7 @@ prop1.set(1); // 单向同步：prop1.get()的值为1，prop2.get()的值为47
 
 static setAndProp<T>(propName: string, defaultValue: T): SubscribedAbstractProperty<T>
 
-与[prop](#prop10)接口类似。如果给定的propName在[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中存在，则返回该propName对应的属性的单向绑定数据。如果不存在，则使用defaultValue在AppStorage中创建和初始化propName对应的属性，返回其单向绑定数据。
-
-![](./img/note_3.0-zh-cn.png) 从API version 12开始，AppStorage支持[Map](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#装饰map类型变量)、[Set](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#装饰set类型变量)、[Date类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#装饰date类型变量)，支持null、undefined以及[联合类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#appstorage支持联合类型)。
+与[prop](#prop10)接口类似，如果给定的propName在[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中存在，则返回该propName对应的属性的单向绑定数据。如果不存在，则使用defaultValue在AppStorage中创建和初始化propName对应的属性，返回其单向绑定数据。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -207,13 +203,13 @@ static setAndProp<T>(propName: string, defaultValue: T): SubscribedAbstractPrope
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | propName | string | 是 | AppStorage中的属性名。 |
-| defaultValue | T | 是 | 当propName在AppStorage中不存在时，使用defaultValue在AppStorage中初始化propName对应属性的值，从API version 12开始，defaultValue可以为null或undefined。 |
+| defaultValue | T | 是 | 当propName在AppStorage中不存在时，使用defaultValue在AppStorage中初始化propName对应属性的值。从API version 12开始，defaultValue可以为null或undefined。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| [SubscribedAbstractProperty](#subscribedabstractproperty) | SubscribedAbstractProperty的实例。 |
+| [SubscribedAbstractProperty](#subscribedabstractproperty) | SubscribedAbstractProperty的实例，为AppStorage中propName对应属性的单向绑定的数据。 |
 
 示例：
 
@@ -270,7 +266,7 @@ static get<T>(propName: string): T | undefined
 
 | 类型 | 说明 |
 | --- | --- |
-| T | undefined | AppStorage中propName对应的属性，如果不存在则返回undefined。 |
+| T | undefined | AppStorage中propName对应的属性值，如果不存在则返回undefined。 |
 
 示例：
 
@@ -283,9 +279,7 @@ let value: number = AppStorage.get('PropA') as number; // 47
 
 static set<T>(propName: string, newValue: T): boolean
 
-在[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中设置propName对应属性的值。如果newValue的值和propName对应属性的值相同，即不需要做赋值操作，状态变量不会通知UI刷新propName对应属性的值。
-
-![](./img/note_3.0-zh-cn.png) 从API version 12开始，AppStorage支持[Map](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#装饰map类型变量)、[Set](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#装饰set类型变量)、[Date类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#装饰date类型变量)，支持null、undefined以及[联合类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#appstorage支持联合类型)。
+在[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中设置propName对应属性的值。如果newValue与propName对应属性的值相同，则不做赋值操作，状态变量不会通知UI刷新propName对应属性的值。与[setOrCreate](#setorcreate10)不同，set仅在propName已存在时生效，propName不存在时返回false。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -296,7 +290,7 @@ static set<T>(propName: string, newValue: T): boolean
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | propName | string | 是 | AppStorage中的属性名。 |
-| newValue | T | 是 | 属性值，从API version 12开始可以为null或undefined。 |
+| newValue | T | 是 | propName对应属性的新值，从API version 12开始可以为null或undefined。 |
 
 返回值：
 
@@ -318,9 +312,7 @@ static setOrCreate<T>(propName: string, newValue: T): void
 
 如果propName已经在[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中存在，并且newValue和propName对应属性的值不同，则设置propName对应属性的值为newValue，否则状态变量不会通知UI刷新propName对应属性的值。
 
-如果propName不存在，则创建propName属性，值为newValue。setOrCreate只可以创建单个AppStorage的键值对，如果想创建多个AppStorage键值对，可以多次调用此方法。
-
-![](./img/note_3.0-zh-cn.png) 从API version 12开始，AppStorage支持[Map](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#装饰map类型变量)、[Set](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#装饰set类型变量)、[Date类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#装饰date类型变量)，支持null、undefined以及[联合类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#appstorage支持联合类型)。
+如果propName不存在，则创建propName属性，值为newValue。setOrCreate仅可创建单个AppStorage的键值对，如需创建多个AppStorage键值对，可多次调用此方法。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -331,7 +323,7 @@ static setOrCreate<T>(propName: string, newValue: T): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | propName | string | 是 | AppStorage中的属性名。 |
-| newValue | T | 是 | 属性值，从API version 12开始可以为null或undefined。 |
+| newValue | T | 是 | propName对应属性的新值，从API version 12开始可以为null或undefined。 |
 
 示例：
 
@@ -345,14 +337,14 @@ static delete(propName: string): boolean
 
 在[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中删除propName对应的属性。
 
-在AppStorage中删除该属性的前提是必须保证该属性没有订阅者。如果有订阅者，则返回false。如果没有订阅者，则删除成功并返回true。
+仅当AppStorage中该属性没有任何订阅者时可删除成功并返回true；如果有订阅者，则返回false。
 
 属性的订阅者为：
 
 1. [@StorageLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#storagelink)、[@StorageProp](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#storageprop)装饰的变量。
 2. 通过[link](#link10)、[prop](#prop10)、[setAndLink](#setandlink10)、[setAndProp](#setandprop10)接口返回的[SubscribedAbstractProperty](#subscribedabstractproperty)的实例。
 
-如果想要删除这些订阅者，可以通过以下方式：
+如需删除这些订阅者，可通过以下方式：
 
 1. 删除@StorageLink、@StorageProp所在的自定义组件。删除自定义组件请参考[自定义组件的删除](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-page-custom-components-lifecycle#自定义组件的删除)。
 2. 对link、prop、setAndLink、setAndProp接口返回的SubscribedAbstractProperty的实例调用[aboutToBeDeleted](#abouttobedeleted10)接口。
@@ -411,7 +403,7 @@ let keys: IterableIterator<string> = AppStorage.keys();
 
 static clear(): boolean
 
-删除[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中所有属性。删除所有属性的前提是，AppStorage已经没有任何订阅者。如果有订阅者，clear将不会生效并返回false。如果没有订阅者，则删除成功，并返回true。
+删除[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中所有属性。仅当AppStorage没有任何订阅者时可删除成功并返回true；如果有订阅者，clear不会生效并返回false。
 
 订阅者的含义参考[delete](#delete10)。
 
@@ -446,7 +438,7 @@ static size(): number
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 返回AppStorage中属性的数量。 |
+| number | AppStorage中属性的数量。 |
 
 示例：
 
@@ -487,7 +479,7 @@ static Link(propName: string): any
 AppStorage.SetOrCreate('PropA', 47);
 let linkToPropA1: SubscribedAbstractProperty<number> = AppStorage.Link('PropA');
 let linkToPropA2: SubscribedAbstractProperty<number> = AppStorage.Link('PropA'); // linkToPropA2.get() == 47
-linkToPropA1.set(48); // 双向同步: linkToPropA1.get() == linkToPropA2.get() == 48
+linkToPropA1.set(48); // 双向同步：linkToPropA1.get() == linkToPropA2.get() == 48
 ```
 
 #### [h2]SetAndLink(deprecated)
@@ -505,13 +497,13 @@ static SetAndLink<T>(propName: string, defaultValue: T): SubscribedAbstractPrope
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | propName | string | 是 | AppStorage中的属性名。 |
-| defaultValue | T | 是 | 当propName在AppStorage中不存在，使用defaultValue在AppStorage中初始化propName对应属性的值，defaultValue不能为null或undefined。 |
+| defaultValue | T | 是 | 当propName在AppStorage中不存在时，使用defaultValue在AppStorage中初始化propName对应属性的值，defaultValue不能为null或undefined。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| [SubscribedAbstractProperty](#subscribedabstractproperty) | SubscribedAbstractProperty的实例，和AppStorage中propName对应属性的双向绑定的数据。 |
+| [SubscribedAbstractProperty](#subscribedabstractproperty) | SubscribedAbstractProperty的实例，为AppStorage中propName对应属性的双向绑定的数据。 |
 
 示例：
 
@@ -525,9 +517,9 @@ let link2: SubscribedAbstractProperty<number> = AppStorage.SetAndLink('PropA', 5
 
 static Prop(propName: string): any
 
-与[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中对应的propName建立单向属性绑定。如果给定的propName在AppStorage中存在，则返回与AppStorage中propName对应属性的单向绑定数据。如果AppStorage中不存在propName，则返回undefined。单向绑定数据的修改不会被同步回AppStorage中。
+与[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中对应的propName建立单向数据绑定。如果给定的propName在AppStorage中存在，则返回与AppStorage中propName对应属性的单向绑定数据。如果AppStorage中不存在propName，则返回undefined。单向绑定数据的修改不会同步回AppStorage中。
 
-![](./img/note_3.0-zh-cn.png) Prop仅支持简单类型。
+![](./img/note_3.0-zh-cn.png) Prop仅支持S类型（number、boolean、string）。
 
 从API version 7开始支持，从API version 10开始废弃，建议使用[prop](#prop10)替代。
 
@@ -558,7 +550,7 @@ prop1.set(1); // 单向同步：prop1.get()的值为1，prop2.get()的值为47
 
 static SetAndProp<S>(propName: string, defaultValue: S): SubscribedAbstractProperty<S>
 
-与[Prop](#propdeprecated)接口类似。如果给定的propName在[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中存在，则返回该propName对应的属性的单向绑定数据。如果不存在，则使用defaultValue在AppStorage中创建和初始化propName对应的属性，返回其单向绑定数据。defaultValue必须为S类型，且不能为null或undefined。
+与[Prop](#propdeprecated)接口类似，如果给定的propName在[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中存在，则返回该propName对应的属性的单向绑定数据。如果不存在，则使用defaultValue在AppStorage中创建和初始化propName对应的属性，返回其单向绑定数据。defaultValue必须为S类型，且不能为null或undefined。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 10开始废弃，建议使用[setAndProp](#setandprop10)替代。
 
@@ -575,7 +567,7 @@ static SetAndProp<S>(propName: string, defaultValue: S): SubscribedAbstractPrope
 
 | 类型 | 说明 |
 | --- | --- |
-| [SubscribedAbstractProperty](#subscribedabstractproperty) | SubscribedAbstractProperty的实例。 |
+| [SubscribedAbstractProperty](#subscribedabstractproperty) | SubscribedAbstractProperty的实例，为AppStorage中propName对应属性的单向绑定的数据。 |
 
 示例：
 
@@ -645,7 +637,7 @@ let value: number = AppStorage.Get('PropA') as number; // 47
 
 static Set<T>(propName: string, newValue: T): boolean
 
-在[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中设置propName对应属性的值，如果newValue的值和propName对应属性的值相同，即不需要做赋值操作，状态变量不会通知UI刷新propName对应属性的值，从API version 12开始，newValue可以为null或undefined。
+在[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中设置propName对应属性的值。如果newValue与propName对应属性的值相同，则不做赋值操作，状态变量不会通知UI刷新propName对应属性的值。与[SetOrCreate](#setorcreatedeprecated)不同，Set仅在propName已存在时生效，propName不存在时返回false。从API version 12开始，newValue可以为null或undefined。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 10开始废弃，建议使用[set](#set10)替代。
 
@@ -656,7 +648,7 @@ static Set<T>(propName: string, newValue: T): boolean
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | propName | string | 是 | AppStorage中的属性名。 |
-| newValue | T | 是 | 属性值，从API version 12开始可以为null或undefined。 |
+| newValue | T | 是 | propName对应属性的新值，从API version 12开始可以为null或undefined。 |
 
 返回值：
 
@@ -676,9 +668,7 @@ let res1: boolean = AppStorage.Set('PropB', 47); // false
 
 static SetOrCreate<T>(propName: string, newValue: T): void
 
-如果propName已经在[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中存在，则设置propName对应的属性值为newValue。如果不存在，则创建propName属性，值为newValue。
-
-newValue不能为null或undefined。
+如果propName已经在[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中存在，并且newValue和propName对应属性的值不同，则设置propName对应属性的值为newValue，否则状态变量不会通知UI刷新propName对应属性的值。如果不存在，则创建propName属性，值为newValue。从API version 12开始，newValue可以为null或undefined。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 10开始废弃，建议使用[setOrCreate](#setorcreate10)替代。
 
@@ -689,7 +679,7 @@ newValue不能为null或undefined。
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | propName | string | 是 | AppStorage中的属性名。 |
-| newValue | T | 是 | 属性值，不能为null或undefined。 |
+| newValue | T | 是 | propName对应属性的新值，从API version 12开始可以为null或undefined。 |
 
 示例：
 
@@ -703,9 +693,9 @@ static Delete(propName: string): boolean
 
 在[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中删除propName对应的属性。
 
-在AppStorage中删除该属性的前提是必须保证该属性没有订阅者。如果有订阅者，则返回false。如果没有订阅者则删除成功并返回true。
+仅当AppStorage中该属性没有任何订阅者时可删除成功并返回true；如果有订阅者，则返回false。
 
-属性的订阅者为[Link](#linkdeprecated)、[Prop](#propdeprecated)等接口绑定的propName，以及[@StorageLink('propName')](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#storagelink)和[@StorageProp('propName')](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#storageprop)。如果自定义组件中使用@StorageLink('propName')和@StorageProp('propName')或者SubscribedAbstractProperty实例依旧对propName有同步关系，则该属性不能从AppStorage中删除。
+属性的订阅者为[Link](#linkdeprecated)、[Prop](#propdeprecated)等接口返回的实例，以及[@StorageLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#storagelink)和[@StorageProp](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#storageprop)装饰的变量。如果@StorageLink('propName')、@StorageProp('propName')装饰的变量或SubscribedAbstractProperty实例依旧对propName有同步关系，则该属性不能从AppStorage中删除。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 10开始废弃，建议使用[delete](#delete10)替代。
 
@@ -761,7 +751,7 @@ let keys: IterableIterator<string> = AppStorage.Keys();
 
 static staticClear(): boolean
 
-删除所有的属性。
+删除[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中所有属性。仅当AppStorage没有任何订阅者时可删除成功并返回true；如果有订阅者，staticClear不会生效并返回false。订阅者的含义参考[delete](#delete10)。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，建议使用[clear](#clear10)替代。
 
@@ -771,19 +761,19 @@ static staticClear(): boolean
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | 删除所有的属性。如果删除成功，返回true；如果当前有状态变量依旧引用此属性，返回false。 |
+| boolean | 删除AppStorage中所有的属性。仅当没有任何订阅者时删除成功，返回true；如果仍有订阅者，返回false。 |
 
 示例：
 
 ```
-let simple = AppStorage.staticClear();
+let clearResult = AppStorage.staticClear();
 ```
 
 #### [h2]Clear(deprecated)
 
 static Clear(): boolean
 
-删除[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中所有属性。删除所有属性的前提是，AppStorage已经没有任何订阅者。如果有订阅者，Clear将不会生效并返回false。如果没有订阅者且删除成功则返回true。
+删除[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中所有属性。前提是AppStorage已经没有任何订阅者。如果有订阅者，Clear将不会生效并返回false。如果没有订阅者且删除成功则返回true。
 
 订阅者的含义参考[delete](#delete10)。
 
@@ -810,7 +800,7 @@ static IsMutable(propName: string): boolean
 
 返回[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中propName对应的属性是否是可变的。
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 10开始废弃。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 10开始废弃，暂无替代接口。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -847,7 +837,7 @@ static Size(): number
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 返回AppStorage中属性的数量。 |
+| number | AppStorage中属性的数量。 |
 
 示例：
 
@@ -858,13 +848,15 @@ let res: number = AppStorage.Size(); // 1
 
 #### LocalStorage9+
 
-LocalStorage具体UI使用说明，详见[LocalStorage(页面级UI状态存储)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)
+LocalStorage是页面级的UI状态存储，通过[@Entry](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-entry#entry)装饰器接收的参数可以在页面内共享同一个LocalStorage实例。具体UI使用说明，详见[LocalStorage：页面级UI状态存储](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)。
+
+![](./img/note_3.0-zh-cn.png) 从API version 12开始，LocalStorage支持[Map](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#装饰map类型变量)、[Set](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#装饰set类型变量)、[Date类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#装饰date类型变量)，支持null、undefined以及[联合类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#localstorage支持联合类型)。
 
 #### [h2]constructor9+
 
 constructor(initializingProperties?: Object)
 
-创建一个新的[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)实例。使用Object.keys(initializingProperties)返回的属性和其数值，初始化LocalStorage实例。
+创建一个新的[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)实例。使用Object.keys(initializingProperties)返回的属性名及其值，初始化LocalStorage实例。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -876,24 +868,24 @@ constructor(initializingProperties?: Object)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| initializingProperties | Object | 否 | 用initializingProperties包含的属性和数值初始化LocalStorage。initializingProperties不能为undefined。默认值为空对象，即初始化时不在LocalStorage中新增属性。 |
+| initializingProperties | Object | 否 | 用于初始化LocalStorage，当需要在创建时预置属性数据时传入此参数。其键作为LocalStorage中的属性名，值为对应属性的初始值。initializingProperties不能为undefined。不传入时默认值为空对象，LocalStorage中不包含任何预置属性。 |
 
 示例：
 
 ```
-let para: Record<string, number> = { 'PropA': 47 };
-let storage: LocalStorage = new LocalStorage(para);
+let initialData: Record<string, number> = { 'PropA': 47 };
+let storage: LocalStorage = new LocalStorage(initialData);
 ```
 
 #### [h2]getShared(deprecated)
 
 static getShared(): LocalStorage
 
-获取当前stage共享的[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)实例。
+获取当前Stage共享的[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)实例。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 10开始支持，从API version 18开始废弃，建议使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getSharedLocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getsharedlocalstorage12)替代。
 
-从API version 12开始，可以通过使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getSharedLocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getsharedlocalstorage12)来明确UI的执行上下文。
+从API version 12开始，可使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getSharedLocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getsharedlocalstorage12)明确UI执行上下文中的LocalStorage实例。
 
 卡片能力： 从API version 10开始，该接口支持在ArkTS卡片中使用。
 
@@ -907,7 +899,7 @@ static getShared(): LocalStorage
 
 | 类型 | 说明 |
 | --- | --- |
-| [LocalStorage](#localstorage9) | 返回LocalStorage实例。 |
+| [LocalStorage](#localstorage9) | 返回当前Stage共享的LocalStorage实例。 |
 
 #### [h2]has9+
 
@@ -936,8 +928,8 @@ has(propName: string): boolean
 示例：
 
 ```
-let para: Record<string, number> = { 'PropA': 47 };
-let storage: LocalStorage = new LocalStorage(para);
+let initialData: Record<string, number> = { 'PropA': 47 };
+let storage: LocalStorage = new LocalStorage(initialData);
 storage.has('PropA'); // true
 ```
 
@@ -945,7 +937,7 @@ storage.has('PropA'); // true
 
 get<T>(propName: string): T | undefined
 
-获取propName在[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)中对应的属性值。
+获取propName在[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)中对应的属性值。如果不存在则返回undefined。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -968,8 +960,8 @@ get<T>(propName: string): T | undefined
 示例：
 
 ```
-let para: Record<string, number> = { 'PropA': 47 };
-let storage: LocalStorage = new LocalStorage(para);
+let initialData: Record<string, number> = { 'PropA': 47 };
+let storage: LocalStorage = new LocalStorage(initialData);
 let value: number = storage.get('PropA') as number; // 47
 ```
 
@@ -977,9 +969,7 @@ let value: number = storage.get('PropA') as number; // 47
 
 set<T>(propName: string, newValue: T): boolean
 
-在[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)中设置propName对应属性的值。如果newValue的值和propName对应属性的值相同，即不需要做赋值操作，状态变量不会通知UI刷新propName对应属性的值。
-
-![](./img/note_3.0-zh-cn.png) 从API version 12开始，LocalStorage支持[Map](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#装饰map类型变量)、[Set](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#装饰set类型变量)、[Date类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#装饰date类型变量)，支持null、undefined以及[联合类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#localstorage支持联合类型)。
+在[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)中设置propName对应属性的值。如果newValue与propName对应属性的值相同，则不做赋值操作，状态变量不会通知UI刷新propName对应属性的值。与[setOrCreate](#setorcreate9)不同，set仅在propName已存在时生效，propName不存在时返回false。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -992,7 +982,7 @@ set<T>(propName: string, newValue: T): boolean
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | propName | string | 是 | LocalStorage中的属性名。 |
-| newValue | T | 是 | 属性值，从API version 12开始可以为undefined或者null。 |
+| newValue | T | 是 | propName对应属性的新值，从API version 12开始可以为null或undefined。 |
 
 返回值：
 
@@ -1003,8 +993,8 @@ set<T>(propName: string, newValue: T): boolean
 示例：
 
 ```
-let para: Record<string, number> = { 'PropA': 47 };
-let storage: LocalStorage = new LocalStorage(para);
+let initialData: Record<string, number> = { 'PropA': 47 };
+let storage: LocalStorage = new LocalStorage(initialData);
 let res: boolean = storage.set('PropA', 47); // true
 let res1: boolean = storage.set('PropB', 47); // false
 ```
@@ -1015,9 +1005,7 @@ setOrCreate<T>(propName: string, newValue: T): boolean
 
 如果propName已经在[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)中存在，并且newValue和propName对应属性的值不同，则设置propName对应属性的值为newValue，否则状态变量不会通知UI刷新propName对应属性的值。
 
-如果propName不存在，则创建propName属性，值为newValue。setOrCreate只可以创建单个LocalStorage的键值对，如果想创建多个LocalStorage键值对，可以多次调用此方法。
-
-![](./img/note_3.0-zh-cn.png) 从API version 12开始，LocalStorage支持[Map](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#装饰map类型变量)、[Set](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#装饰set类型变量)、[Date类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#装饰date类型变量)，支持null、undefined以及[联合类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#localstorage支持联合类型)。
+如果propName不存在，则创建propName属性，值为newValue。setOrCreate仅可创建单个LocalStorage的键值对，如需创建多个LocalStorage键值对，可多次调用此方法。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -1030,22 +1018,22 @@ setOrCreate<T>(propName: string, newValue: T): boolean
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | propName | string | 是 | LocalStorage中的属性名。 |
-| newValue | T | 是 | 属性值，从API version 12开始可以为undefined或者null。 |
+| newValue | T | 是 | propName对应属性的新值，从API version 12开始可以为null或undefined。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | 如果LocalStorage中存在propName，则更新其值为newValue，返回true。 如果LocalStorage中不存在propName，则创建propName，并初始化其值为newValue，返回true。 |
+| boolean | 如果LocalStorage中存在propName，则更新其值为newValue，返回true。 如果LocalStorage中不存在propName，则创建propName，并初始化其值为newValue，返回true。 API version 12之前，当newValue为null或undefined时返回false。 |
 
 示例：
 
 ```
-let para: Record<string, number> = { 'PropA': 47 };
-let storage: LocalStorage = new LocalStorage(para);
+let initialData: Record<string, number> = { 'PropA': 47 };
+let storage: LocalStorage = new LocalStorage(initialData);
 let res: boolean = storage.setOrCreate('PropA', 121); // true
 let res1: boolean = storage.setOrCreate('PropB', 111); // true
-let res2: boolean = storage.setOrCreate('PropB', null); // true (API12及之后返回true，API11及之前返回false)
+let res2: boolean = storage.setOrCreate('PropB', null); // true（API version 12及之后返回true，API version 11及之前返回false）
 ```
 
 #### [h2]ref12+
@@ -1054,7 +1042,7 @@ ref<T>(propName: string): AbstractProperty<T> | undefined
 
 如果给定的propName在[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)中存在，则返回LocalStorage中propName对应属性的引用。否则，返回undefined。
 
-与[link](#link9)的功能基本一致，但不需要手动释放返回的[AbstractProperty](#abstractpropertyt12)类型的变量。
+与[link](#link9)的功能基本一致，区别在于不需要手动释放返回的[AbstractProperty](#abstractpropertyt12)类型的变量。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1070,13 +1058,13 @@ ref<T>(propName: string): AbstractProperty<T> | undefined
 
 | 类型 | 说明 |
 | --- | --- |
-| [AbstractProperty](#abstractpropertyt12) | undefined | LocalStorage中propName对应属性的引用，如果LocalStorage中不存在对应的propName，则返回undefined。 |
+| [AbstractProperty](#abstractpropertyt12) | undefined | 返回LocalStorage中propName对应属性的引用，如果LocalStorage中不存在对应的propName，则返回undefined。 |
 
 示例：
 
 ```
-let para: Record<string, number> = { 'PropA': 47 };
-let storage: LocalStorage = new LocalStorage(para);
+let initialData: Record<string, number> = { 'PropA': 47 };
+let storage: LocalStorage = new LocalStorage(initialData);
 let refToPropA1: AbstractProperty<number> | undefined = storage.ref('PropA');
 let refToPropA2: AbstractProperty<number> | undefined = storage.ref('PropA'); // refToPropA2.get() == 47
 refToPropA1?.set(48); // refToPropA1.get() == refToPropA2.get() == 48
@@ -1088,9 +1076,7 @@ setAndRef<T>(propName: string, defaultValue: T): AbstractProperty<T>
 
 与[ref](#ref12-1)接口类似，如果给定的propName在[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)中存在，则返回LocalStorage中propName对应属性的引用。如果不存在，则使用defaultValue在LocalStorage中创建和初始化propName对应的属性，并返回其引用。
 
-与[setAndLink](#setandlink9)的功能基本一致，但不需要手动释放返回的[AbstractProperty](#abstractpropertyt12)类型的变量。
-
-![](./img/note_3.0-zh-cn.png) 从API version 12开始，LocalStorage支持[Map](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#装饰map类型变量)、[Set](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#装饰set类型变量)、[Date类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#装饰date类型变量)，支持null、undefined以及[联合类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#localstorage支持联合类型)。
+与[setAndLink](#setandlink9)的功能基本一致，区别在于不需要手动释放返回的[AbstractProperty](#abstractpropertyt12)类型的变量。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1112,8 +1098,8 @@ setAndRef<T>(propName: string, defaultValue: T): AbstractProperty<T>
 示例：
 
 ```
-let para: Record<string, number> = { 'PropA': 47 };
-let storage: LocalStorage = new LocalStorage(para);
+let initialData: Record<string, number> = { 'PropA': 47 };
+let storage: LocalStorage = new LocalStorage(initialData);
 let ref1: AbstractProperty<number> = storage.setAndRef('PropB', 49); // 用默认值49创建PropB
 let ref2: AbstractProperty<number> = storage.setAndRef('PropA', 50); // PropA已存在，值为47
 ```
@@ -1122,9 +1108,7 @@ let ref2: AbstractProperty<number> = storage.setAndRef('PropA', 50); // PropA已
 
 link<T>(propName: string): SubscribedAbstractProperty<T>
 
-如果给定的propName在[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)实例中存在，则返回与LocalStorage中propName对应属性的双向绑定数据。
-
-双向绑定数据的修改会被同步回LocalStorage中，LocalStorage会将变化同步到所有绑定该propName的数据和Component中。
+如果给定的propName在[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)实例中存在，则返回与LocalStorage中propName对应属性的双向绑定数据。与[prop](#prop9)的单向数据绑定不同，link建立双向数据绑定，修改会同步回LocalStorage，LocalStorage会将变化同步到所有绑定该propName的数据和自定义组件中。
 
 如果LocalStorage中不存在propName，则返回undefined。
 
@@ -1149,11 +1133,11 @@ link<T>(propName: string): SubscribedAbstractProperty<T>
 示例：
 
 ```
-let para: Record<string, number> = { 'PropA': 47 };
-let storage: LocalStorage = new LocalStorage(para);
+let initialData: Record<string, number> = { 'PropA': 47 };
+let storage: LocalStorage = new LocalStorage(initialData);
 let linkToPropA1: SubscribedAbstractProperty<number> = storage.link('PropA');
 let linkToPropA2: SubscribedAbstractProperty<number> = storage.link('PropA'); // linkToPropA2.get() == 47
-linkToPropA1.set(48); // 双向同步: linkToPropA1.get() == linkToPropA2.get() == 48
+linkToPropA1.set(48); // 双向同步：linkToPropA1.get() == linkToPropA2.get() == 48
 ```
 
 #### [h2]setAndLink9+
@@ -1161,8 +1145,6 @@ linkToPropA1.set(48); // 双向同步: linkToPropA1.get() == linkToPropA2.get() 
 setAndLink<T>(propName: string, defaultValue: T): SubscribedAbstractProperty<T>
 
 与[link](#link9)接口类似，如果给定的propName在[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)中存在，则返回该propName对应的属性的双向绑定数据。如果不存在，则使用defaultValue在LocalStorage中创建和初始化propName对应的属性，返回其双向绑定数据。
-
-![](./img/note_3.0-zh-cn.png) 从API version 12开始，LocalStorage支持[Map](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#装饰map类型变量)、[Set](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#装饰set类型变量)、[Date类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#装饰date类型变量)，支持null、undefined以及[联合类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#localstorage支持联合类型)。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -1175,7 +1157,7 @@ setAndLink<T>(propName: string, defaultValue: T): SubscribedAbstractProperty<T>
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | propName | string | 是 | LocalStorage中的属性名。 |
-| defaultValue | T | 是 | 当propName在LocalStorage中不存在时，使用defaultValue在LocalStorage中初始化propName对应属性的值，从API version 12开始defaultValue可以为null或undefined。 |
+| defaultValue | T | 是 | 当propName在LocalStorage中不存在时，使用defaultValue在LocalStorage中初始化propName对应属性的值。从API version 12开始，defaultValue可以为null或undefined。 |
 
 返回值：
 
@@ -1186,8 +1168,8 @@ setAndLink<T>(propName: string, defaultValue: T): SubscribedAbstractProperty<T>
 示例：
 
 ```
-let para: Record<string, number> = { 'PropA': 47 };
-let storage: LocalStorage = new LocalStorage(para);
+let initialData: Record<string, number> = { 'PropA': 47 };
+let storage: LocalStorage = new LocalStorage(initialData);
 let link1: SubscribedAbstractProperty<number> = storage.setAndLink('PropB', 49); // 用默认值49创建PropB
 let link2: SubscribedAbstractProperty<number> = storage.setAndLink('PropA', 50); // PropA已存在，值为47
 ```
@@ -1196,7 +1178,7 @@ let link2: SubscribedAbstractProperty<number> = storage.setAndLink('PropA', 50);
 
 prop<S>(propName: string): SubscribedAbstractProperty<S>
 
-如果给定的propName在[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)中存在，则返回与LocalStorage中propName对应属性的单向绑定数据。如果LocalStorage中不存在propName，则返回undefined。单向绑定数据的修改不会被同步回LocalStorage中。
+如果给定的propName在[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)中存在，则返回与LocalStorage中propName对应属性的单向绑定数据。如果LocalStorage中不存在propName，则返回undefined。单向绑定数据的修改不会同步回LocalStorage中。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -1214,13 +1196,13 @@ prop<S>(propName: string): SubscribedAbstractProperty<S>
 
 | 类型 | 说明 |
 | --- | --- |
-| [SubscribedAbstractProperty](#subscribedabstractproperty) | SubscribedAbstractProperty的实例，和LocalStorage中propName对应属性的单向绑定的数据。如果LocalStorage中不存在对应的propName，则返回undefined。 |
+| [SubscribedAbstractProperty](#subscribedabstractproperty) | SubscribedAbstractProperty的实例，为LocalStorage中propName对应属性的单向绑定的数据。如果LocalStorage中不存在对应的propName，则返回undefined。 |
 
 示例：
 
 ```
-let para: Record<string, number> = { 'PropA': 47 };
-let storage: LocalStorage = new LocalStorage(para);
+let initialData: Record<string, number> = { 'PropA': 47 };
+let storage: LocalStorage = new LocalStorage(initialData);
 let prop1: SubscribedAbstractProperty<number> = storage.prop('PropA');
 let prop2: SubscribedAbstractProperty<number> = storage.prop('PropA');
 prop1.set(1); // 单向同步：prop1.get()的值为1，prop2.get()的值为47
@@ -1230,9 +1212,7 @@ prop1.set(1); // 单向同步：prop1.get()的值为1，prop2.get()的值为47
 
 setAndProp<S>(propName: string, defaultValue: S): SubscribedAbstractProperty<S>
 
-与[prop](#prop9)接口类似。如果propName在[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)中存在，则返回该propName对应的属性的单向绑定数据。如果不存在，则使用defaultValue在LocalStorage中创建和初始化propName对应的属性，返回其单向绑定数据。
-
-![](./img/note_3.0-zh-cn.png) 从API version 12开始，LocalStorage支持[Map](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#装饰map类型变量)、[Set](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#装饰set类型变量)、[Date类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#装饰date类型变量)，支持null、undefined以及[联合类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#localstorage支持联合类型)。
+与[prop](#prop9)接口类似，如果给定的propName在[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)中存在，则返回该propName对应的属性的单向绑定数据。如果不存在，则使用defaultValue在LocalStorage中创建和初始化propName对应的属性，返回其单向绑定数据。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -1245,19 +1225,19 @@ setAndProp<S>(propName: string, defaultValue: S): SubscribedAbstractProperty<S>
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | propName | string | 是 | LocalStorage中的属性名。 |
-| defaultValue | S | 是 | 当propName在LocalStorage中不存在，使用defaultValue在LocalStorage中初始化propName对应属性的值，从API version 12开始defaultValue可以为null或undefined。 |
+| defaultValue | S | 是 | 当propName在LocalStorage中不存在时，使用defaultValue在LocalStorage中初始化propName对应属性的值。从API version 12开始，defaultValue可以为null或undefined。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| [SubscribedAbstractProperty](#subscribedabstractproperty) | SubscribedAbstractProperty的实例，和LocalStorage中propName对应属性的单向绑定的数据。 |
+| [SubscribedAbstractProperty](#subscribedabstractproperty) | SubscribedAbstractProperty的实例，为LocalStorage中propName对应属性的单向绑定的数据。 |
 
 示例：
 
 ```
-let para: Record<string, number> = { 'PropA': 47 };
-let storage: LocalStorage = new LocalStorage(para);
+let initialData: Record<string, number> = { 'PropA': 47 };
+let storage: LocalStorage = new LocalStorage(initialData);
 let prop: SubscribedAbstractProperty<number> = storage.setAndProp('PropB', 49); // PropA -> 47, PropB -> 49
 ```
 
@@ -1265,14 +1245,14 @@ let prop: SubscribedAbstractProperty<number> = storage.setAndProp('PropB', 49); 
 
 delete(propName: string): boolean
 
-在[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)中删除propName对应的属性。在LocalStorage中删除属性的前提是该属性已经没有订阅者，如果有订阅者，则返回false。如果没有订阅者则删除成功并返回true。
+在[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)中删除propName对应的属性。仅当LocalStorage中该属性没有任何订阅者时可删除成功并返回true；如果有订阅者，则返回false。
 
 属性的订阅者为：
 
 1. [@LocalStorageLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#localstoragelink)、[@LocalStorageProp](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#localstorageprop)装饰的变量。
 2. 通过[link](#link9)、[prop](#prop9)、[setAndLink](#setandlink9)、[setAndProp](#setandprop9)接口返回的[SubscribedAbstractProperty](#subscribedabstractproperty)的实例。
 
-如果想要删除这些订阅者，可以通过以下方式：
+如需删除这些订阅者，可通过以下方式：
 
 1. 删除@LocalStorageLink、@LocalStorageProp所在的自定义组件。删除自定义组件请参考[自定义组件的删除](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-page-custom-components-lifecycle#自定义组件的删除)。
 2. 对link、prop、setAndLink、setAndProp接口返回的SubscribedAbstractProperty的实例调用[aboutToBeDeleted](#abouttobedeleted10)接口。
@@ -1298,8 +1278,8 @@ delete(propName: string): boolean
 示例：
 
 ```
-let para: Record<string, number> = { 'PropA': 47 };
-let storage: LocalStorage = new LocalStorage(para);
+let initialData: Record<string, number> = { 'PropA': 47 };
+let storage: LocalStorage = new LocalStorage(initialData);
 storage.link<number>('PropA');
 let res: boolean = storage.delete('PropA'); // false，PropA 还存在订阅者
 let res1: boolean = storage.delete('PropB'); // false，PropB 不存在于storage中
@@ -1328,8 +1308,8 @@ keys(): IterableIterator<string>
 示例：
 
 ```
-let para: Record<string, number> = { 'PropA': 47 };
-let storage: LocalStorage = new LocalStorage(para);
+let initialData: Record<string, number> = { 'PropA': 47 };
+let storage: LocalStorage = new LocalStorage(initialData);
 let keys: IterableIterator<string> = storage.keys();
 ```
 
@@ -1354,8 +1334,8 @@ size(): number
 示例：
 
 ```
-let para: Record<string, number> = { 'PropA': 47 };
-let storage: LocalStorage = new LocalStorage(para);
+let initialData: Record<string, number> = { 'PropA': 47 };
+let storage: LocalStorage = new LocalStorage(initialData);
 let res: number = storage.size(); // 1
 ```
 
@@ -1363,7 +1343,7 @@ let res: number = storage.size(); // 1
 
 clear(): boolean
 
-删除[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)中所有的属性。删除所有属性的前提是已经没有任何订阅者。如果有订阅者，clear不会生效并返回false。如果没有订阅者则删除成功并返回true。
+删除[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)中所有的属性。仅当LocalStorage中的属性没有任何订阅者时可删除成功并返回true；如果有订阅者，clear不会生效并返回false。
 
 订阅者的含义参考[delete](#delete9)。
 
@@ -1382,8 +1362,8 @@ clear(): boolean
 示例：
 
 ```
-let para: Record<string, number> = { 'PropA': 47 };
-let storage: LocalStorage = new LocalStorage(para);
+let initialData: Record<string, number> = { 'PropA': 47 };
+let storage: LocalStorage = new LocalStorage(initialData);
 let res: boolean = storage.clear(); // true，已经没有订阅者
 ```
 
@@ -1391,7 +1371,7 @@ let res: boolean = storage.clear(); // true，已经没有订阅者
 
 static GetShared(): LocalStorage
 
-获取当前stage共享的[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)实例。
+获取当前Stage共享的[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)实例。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 10开始废弃，建议使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getSharedLocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getsharedlocalstorage12)替代。
 
@@ -1405,7 +1385,7 @@ static GetShared(): LocalStorage
 
 | 类型 | 说明 |
 | --- | --- |
-| [LocalStorage](#localstorage9) | 返回LocalStorage实例。 |
+| [LocalStorage](#localstorage9) | 返回当前Stage共享的LocalStorage实例。 |
 
 示例：
 
@@ -1415,7 +1395,9 @@ let storage: LocalStorage = LocalStorage.GetShared();
 
 #### AbstractProperty12+
 
-AbstractProperty是[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)/[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)中属性的引用。
+AbstractProperty是AppStorage/LocalStorage中属性的引用，提供读取、修改所引用属性数据及查询属性名的能力。与SubscribedAbstractProperty不同，AbstractProperty实例无需手动释放。
+
+![](./img/note_3.0-zh-cn.png) 从API version 12开始，AppStorage/LocalStorage支持Map、Set、Date类型，支持null、undefined以及联合类型。
 
 #### [h2]get12+
 
@@ -1438,7 +1420,7 @@ get(): T
 ```
 AppStorage.setOrCreate('PropA', 47);
 let ref1: AbstractProperty<number> | undefined = AppStorage.ref('PropA');
-ref1?.get(); //  ref1.get()=47
+ref1?.get(); // ref1.get()=47
 ```
 
 #### [h2]set12+
@@ -1446,8 +1428,6 @@ ref1?.get(); //  ref1.get()=47
 set(newValue: T): void
 
 更新[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)/[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)中所引用属性的数据，newValue必须是T类型，可以为null或undefined。
-
-![](./img/note_3.0-zh-cn.png) 从API version 12开始，AppStorage/LocalStorage支持Map、Set、Date类型，支持null、undefined以及联合类型。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1457,23 +1437,23 @@ set(newValue: T): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| newValue | T | 是 | 要更新的数据，可以为null或undefined。 |
+| newValue | T | 是 | AppStorage/LocalStorage中所引用属性的新值，可以为null或undefined。 |
 
 示例：
 
 ```
 AppStorage.setOrCreate('PropA', 47);
 let ref1: AbstractProperty<number> | undefined = AppStorage.ref('PropA');
-ref1?.set(1); //  ref1.get()=1
-let a: Map<string, number> = new Map([['1', 0]]);
-let ref2 = AppStorage.setAndRef('MapA', a);
-ref2.set(a);
-let b: Set<string> = new Set('1');
-let ref3 = AppStorage.setAndRef('SetB', b);
-ref3.set(b);
-let c: Date = new Date('2024');
-let ref4 = AppStorage.setAndRef('DateC', c);
-ref4.set(c);
+ref1?.set(1); // ref1.get()=1
+let mapValue: Map<string, number> = new Map([['1', 0]]);
+let ref2 = AppStorage.setAndRef('MapA', mapValue);
+ref2.set(mapValue);
+let setValue: Set<string> = new Set(['1']);
+let ref3 = AppStorage.setAndRef('SetB', setValue);
+ref3.set(setValue);
+let dateValue: Date = new Date('2024');
+let ref4 = AppStorage.setAndRef('DateC', dateValue);
+ref4.set(dateValue);
 ref2.set(null);
 ref3.set(undefined);
 ```
@@ -1499,18 +1479,20 @@ info(): string
 ```
 AppStorage.setOrCreate('PropA', 47);
 let ref1: AbstractProperty<number> | undefined = AppStorage.ref('PropA');
-ref1?.info(); //  ref1.info()='PropA'
+ref1?.info(); // ref1.info()='PropA'
 ```
 
 #### SubscribedAbstractProperty
 
-SubscribedAbstractProperty是[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)/[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)中同步的属性。
+SubscribedAbstractProperty是[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)/[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)中属性的单/双向同步绑定对象，用于与AppStorage/LocalStorage中的属性建立数据同步关系。SubscribedAbstractProperty实例需要通过[aboutToBeDeleted](#abouttobedeleted10)接口手动释放，以取消同步关系并无效化实例。
+
+![](./img/note_3.0-zh-cn.png) 从API version 12开始，AppStorage/LocalStorage支持Map、Set、Date类型，支持null、undefined以及联合类型。
 
 #### [h2]get9+
 
 abstract get(): T
 
-读取从[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)/[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)同步属性的数据。
+读取[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)/[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)中所同步属性的数据。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -1529,16 +1511,14 @@ abstract get(): T
 ```
 AppStorage.setOrCreate('PropA', 47);
 let prop1: SubscribedAbstractProperty<number> = AppStorage.prop('PropA');
-prop1.get(); //  prop1.get()=47
+prop1.get(); // prop1.get()=47
 ```
 
 #### [h2]set9+
 
 abstract set(newValue: T): void
 
-设置[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)/[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)同步属性的数据，newValue必须是T类型，从API version 12开始可以为null或undefined。
-
-![](./img/note_3.0-zh-cn.png) 从API version 12开始，AppStorage/LocalStorage支持Map、Set、Date类型，支持null、undefined以及联合类型。
+设置[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)/[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)中所同步属性的数据，newValue必须是T类型，从API version 12开始可以为null或undefined。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -1550,24 +1530,24 @@ abstract set(newValue: T): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| newValue | T | 是 | 要设置的数据，从API version 12开始可以为null或undefined。 |
+| newValue | T | 是 | AppStorage/LocalStorage中所同步属性的新值，从API version 12开始可以为null或undefined。 |
 
 示例：
 
 ```
 AppStorage.setOrCreate('PropA', 47);
 let prop1: SubscribedAbstractProperty<number> = AppStorage.prop('PropA');
-prop1.set(1); //  prop1.get()=1
-// 从API12开始支持Map、Set、Date类型，支持null、undefined以及联合类型。
-let a: Map<string, number> = new Map([['1', 0]]);
-let prop2 = AppStorage.setAndProp('MapA', a);
-prop2.set(a);
-let b: Set<string> = new Set('1');
-let prop3 = AppStorage.setAndProp('SetB', b);
-prop3.set(b);
-let c: Date = new Date('2024');
-let prop4 = AppStorage.setAndProp('DateC', c);
-prop4.set(c);
+prop1.set(1); // prop1.get()=1
+// 从API version 12开始支持Map、Set、Date类型，支持null、undefined以及联合类型。
+let mapValue: Map<string, number> = new Map([['1', 0]]);
+let prop2 = AppStorage.setAndProp('MapA', mapValue);
+prop2.set(mapValue);
+let setValue: Set<string> = new Set(['1']);
+let prop3 = AppStorage.setAndProp('SetB', setValue);
+prop3.set(setValue);
+let dateValue: Date = new Date('2024');
+let prop4 = AppStorage.setAndProp('DateC', dateValue);
+prop4.set(dateValue);
 prop2.set(null);
 prop3.set(undefined);
 ```
@@ -1576,7 +1556,7 @@ prop3.set(undefined);
 
 abstract aboutToBeDeleted(): void
 
-取消[SubscribedAbstractProperty](#subscribedabstractproperty)实例对[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)/[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)的单/双向同步关系，并无效化SubscribedAbstractProperty实例，即当调用aboutToBeDeleted方法之后不能再使用SubscribedAbstractProperty实例调用[set](#set9-1)或[get](#get9-1)方法。
+取消[SubscribedAbstractProperty](#subscribedabstractproperty)实例对[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)/[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)的单向或双向同步关系，并无效化SubscribedAbstractProperty实例。即调用aboutToBeDeleted方法之后，不能再使用SubscribedAbstractProperty实例调用[set](#set9-1)或[get](#get9-1)方法。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -1594,7 +1574,7 @@ link.aboutToBeDeleted();
 
 info(): string
 
-返回属性名称。
+返回[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)/[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)中所同步属性的属性名。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -1604,7 +1584,7 @@ info(): string
 
 | 类型 | 说明 |
 | --- | --- |
-| string | 属性名称。 |
+| string | AppStorage/LocalStorage中所同步属性的属性名。 |
 
 示例：
 
@@ -1624,12 +1604,12 @@ prop1.info(); // prop1.info() = 'PropA'
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| key | string | 否 | 否 | 属性名。 |
-| defaultValue | number | string | boolean | Object | 否 | 否 | 在PersistentStorage和AppStorage未查询到时，则使用默认值初始化它。从API version 12开始，defaultValue允许为null或undefined。 |
+| key | string | 否 | 否 | 要持久化的属性名。 |
+| defaultValue | number | string | boolean | Object | 否 | 否 | 在PersistentStorage和AppStorage中未查询到时，则使用默认值进行初始化。从API version 12开始，defaultValue可以为null或undefined。 |
 
 #### PersistentStorage
 
-PersistentStorage具体UI使用说明，详见[PersistentStorage(持久化存储UI状态)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-persiststorage)
+PersistentStorage提供了UI状态的持久化存储能力，将选定的AppStorage属性持久化到文件中，在应用重启时从文件中恢复这些属性值并写入到AppStorage。具体UI使用说明，详见[PersistentStorage：持久化存储UI状态](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-persiststorage)。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 12开始，PersistentStorage支持null、undefined。
 
@@ -1637,7 +1617,7 @@ PersistentStorage具体UI使用说明，详见[PersistentStorage(持久化存储
 
 static persistProp<T>(key: string, defaultValue: T): void
 
-将[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中key对应的属性持久化到文件中。该接口的调用通常在访问AppStorage之前。
+将[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中key对应的属性持久化到文件中。该接口通常在访问AppStorage之前调用。
 
 确定属性的类型和值的顺序如下：
 
@@ -1645,7 +1625,7 @@ static persistProp<T>(key: string, defaultValue: T): void
 2. 如果PersistentStorage文件中没有查询到key对应的属性，则在AppStorage中查找key对应的属性。如果找到key对应的属性，则将该属性持久化。
 3. 如果AppStorage中也没查找到key对应的属性，则在AppStorage中创建key对应的属性。用defaultValue初始化其值，并将该属性持久化。
 
-根据上述的初始化流程，如果AppStorage中有该属性，则会使用其值，覆盖掉PersistentStorage文件中的值。由于AppStorage是内存内数据，该行为会导致数据丧失持久化能力。
+根据上述的初始化流程，如果AppStorage中有该属性，则会使用其值覆盖PersistentStorage文件中的值。由于AppStorage是内存中的数据，这种操作会使持久化文件中的数据被内存数据覆盖，导致持久化数据失去意义。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -1655,18 +1635,18 @@ static persistProp<T>(key: string, defaultValue: T): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| key | string | 是 | 属性名。 |
-| defaultValue | T | 是 | 在PersistentStorage和AppStorage中未查询到时，则使用默认值进行初始化。从API version 12开始允许为null或undefined。 |
+| key | string | 是 | 要持久化的属性名。 |
+| defaultValue | T | 是 | 在PersistentStorage和AppStorage中未查询到时，则使用默认值进行初始化。从API version 12开始可以为null或undefined。 |
 
 示例：
 
-persistProp具体使用，见[从AppStorage中访问PersistentStorage初始化的属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-persiststorage#从appstorage中访问persistentstorage初始化的属性)
+persistProp具体用法详见[从AppStorage中访问PersistentStorage初始化的属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-persiststorage#从appstorage中访问persistentstorage初始化的属性)。
 
 #### [h2]deleteProp10+
 
 static deleteProp(key: string): void
 
-[persistProp](#persistprop10)的逆向操作。将key对应的属性从PersistentStorage中删除，后续[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)的操作，对[PersistentStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-persiststorage)不会再有影响。该操作会将对应的key从持久化文件中删除，如果希望再次持久化，可以再次调用[persistProp](#persistprop10)接口。
+是[persistProp](#persistprop10)的逆向操作。将key对应的属性从[PersistentStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-persiststorage)中删除，后续[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)的操作对PersistentStorage不会再有影响。如需再次持久化，可再次调用[persistProp](#persistprop10)接口。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -1688,7 +1668,7 @@ PersistentStorage.deleteProp('highScore');
 
 static persistProps(props: PersistPropsOptions[]): void
 
-行为和[persistProp](#persistprop10)类似，不同在于可以一次性持久化多个数据，适合在应用启动的时候初始化。
+行为与[persistProp](#persistprop10)类似，不同在于可以一次性持久化多个数据。该接口通常在访问AppStorage之前调用，适合在应用启动时初始化。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -1698,12 +1678,12 @@ static persistProps(props: PersistPropsOptions[]): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| props | [PersistPropsOptions](#persistpropsoptions10)[] | 是 | 持久化数组。 |
+| props | [PersistPropsOptions](#persistpropsoptions10)[] | 是 | 持久化数组，每项包含属性名和默认值。 |
 
 示例：
 
 ```
-PersistentStorage.persistProps([{ key: 'highScore', defaultValue: '0' }, { key: 'wightScore', defaultValue: '1' }]);
+PersistentStorage.persistProps([{ key: 'highScore', defaultValue: '0' }, { key: 'weightScore', defaultValue: '1' }]);
 ```
 
 #### [h2]keys10+
@@ -1732,7 +1712,7 @@ let keys: Array<string> = PersistentStorage.keys();
 
 static PersistProp<T>(key: string, defaultValue: T): void
 
-将[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中key对应的属性持久化到文件中。该接口的调用通常在访问AppStorage之前。
+将[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中key对应的属性持久化到文件中。该接口应在访问AppStorage之前调用。
 
 确定属性的类型和值的顺序如下：
 
@@ -1740,7 +1720,7 @@ static PersistProp<T>(key: string, defaultValue: T): void
 2. 如果PersistentStorage文件中没有查询到key对应的属性，则在AppStorage中查找key对应的属性。如果找到key对应的属性，则将该属性持久化。
 3. 如果AppStorage也没查找到key对应的属性，则在AppStorage中创建key对应的属性。用defaultValue初始化其值，并将该属性持久化。
 
-根据上述的初始化流程，如果AppStorage中有该属性，则会使用其值，覆盖掉PersistentStorage文件中的值。由于AppStorage是内存内数据，该行为会导致数据丧失持久化能力。
+根据上述的初始化流程，如果AppStorage中有该属性，则会使用其值覆盖PersistentStorage文件中的值。由于AppStorage是内存中的数据，这种操作会使持久化文件中的数据被内存数据覆盖，导致持久化数据失去意义。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 10开始废弃，建议使用[persistProp](#persistprop10)替代。
 
@@ -1750,8 +1730,8 @@ static PersistProp<T>(key: string, defaultValue: T): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| key | string | 是 | 属性名。 |
-| defaultValue | T | 是 | 在PersistentStorage和AppStorage中未查询到时，则使用默认值进行初始化。不允许为null或undefined。 |
+| key | string | 是 | 要持久化的属性名。 |
+| defaultValue | T | 是 | 在PersistentStorage和AppStorage中未查询到时，则使用默认值进行初始化。默认值不允许为null或undefined。 |
 
 示例：
 
@@ -1763,7 +1743,7 @@ PersistentStorage.PersistProp('highScore', '0');
 
 static DeleteProp(key: string): void
 
-[PersistProp](#persistpropdeprecated)的逆向操作。将key对应的属性从[PersistentStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-persiststorage)中删除，后续[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)的操作，对PersistentStorage不会再有影响。
+是[PersistProp](#persistpropdeprecated)的逆向操作。将key对应的属性从[PersistentStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-persiststorage)中删除，后续[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)的操作对PersistentStorage不会再有影响。如需再次持久化，可再次调用[PersistProp](#persistpropdeprecated)接口。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 10开始废弃，建议使用[deleteProp](#deleteprop10)替代。
 
@@ -1785,7 +1765,7 @@ PersistentStorage.DeleteProp('highScore');
 
 static PersistProps(properties: {key: string; defaultValue: any;}[]): void
 
-行为和[PersistProp](#persistpropdeprecated)类似，不同在于可以一次性持久化多个数据，适合在应用启动的时候初始化。
+行为与[PersistProp](#persistpropdeprecated)类似，不同在于可以一次性持久化多个数据。该接口应在访问AppStorage之前调用，适合在应用启动时初始化。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 10开始废弃，建议使用[persistProps](#persistprops10)替代。
 
@@ -1795,12 +1775,12 @@ static PersistProps(properties: {key: string; defaultValue: any;}[]): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| properties | {key: string; defaultValue: any}[] | 是 | 持久化数组，启动key为属性名，defaultValue为默认值。规则同PersistProp。 |
+| properties | {key: string; defaultValue: any}[] | 是 | 持久化数组，其中key为属性名，defaultValue为默认值。规则同PersistProp。 |
 
 示例：
 
 ```
-PersistentStorage.PersistProps([{ key: 'highScore', defaultValue: '0' }, { key: 'wightScore', defaultValue: '1' }]);
+PersistentStorage.PersistProps([{ key: 'highScore', defaultValue: '0' }, { key: 'weightScore', defaultValue: '1' }]);
 ```
 
 #### [h2]Keys(deprecated)
@@ -1840,17 +1820,15 @@ let keys: Array<string> = PersistentStorage.Keys();
 
 #### Environment
 
-Environment具体使用说明，详见[Environment(设备环境查询)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-environment)
+Environment提供设备环境状态的查询能力，可将系统环境变量（如深浅色模式、语言、字体缩放、布局方向等）注入AppStorage，使应用能够感知和响应设备环境变化。具体UI使用说明，详见[Environment：设备环境查询](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-environment)。
 
 #### [h2]envProp10+
 
 static envProp<S>(key: string, value: S): boolean
 
-将[Environment](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-environment)的内置环境变量key存入[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中。如果系统中未查询到Environment环境变量key的值，则使用默认值value，存入成功，返回true。如果AppStorage中已经有对应的key，则返回false。
+将[Environment](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-environment)的内置环境变量key存入[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中。如果系统中未查询到Environment环境变量key的值，则使用默认值value存入AppStorage并返回true。如果AppStorage中已经有对应的key，则返回false。
 
-所以建议在程序启动的时候调用该接口。
-
-在没有调用envProp的情况下，就使用AppStorage读取环境变量是错误的。
+在没有调用envProp的情况下，直接使用AppStorage读取环境变量，将无法获取到对应的环境变量值。建议在应用启动时调用该接口。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -1877,7 +1855,7 @@ envProp具体使用，详见[从UI中访问Environment参数](https://developer.
 
 static envProps(props: EnvPropsOptions[]): void
 
-和[envProp](#envprop10)类似，不同点在于参数为数组，可以一次性初始化多个数据。建议在应用启动时调用，将系统环境变量批量存入[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中。
+和[envProp](#envprop10)功能类似，不同点在于参数为数组，可以一次性初始化多个数据。在没有调用envProps的情况下，直接使用AppStorage读取环境变量，将无法获取到对应的环境变量值。建议在应用启动时调用，将系统环境变量批量存入[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -1912,7 +1890,7 @@ static keys(): Array<string>
 
 | 类型 | 说明 |
 | --- | --- |
-| Array | 返回关联的系统项数组。 |
+| Array | 返回环境变量的属性key的数组。 |
 
 示例：
 
@@ -1922,18 +1900,16 @@ Environment.envProps([{ key: 'accessibilityEnabled', defaultValue: 'default' }, 
   defaultValue: 'en'
 }, { key: 'prop', defaultValue: 'hhhh' }]);
 
-let keys: Array<string> = Environment.keys(); // keys 包含 accessibilityEnabled，languageCode，prop
+let keys: Array<string> = Environment.keys(); // keys 包含 accessibilityEnabled、languageCode、prop
 ```
 
 #### [h2]EnvProp(deprecated)
 
 static EnvProp<S>(key: string, value: S): boolean
 
-将[Environment](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-environment)的内置环境变量key存入[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中。如果系统中未查询到Environment环境变量key的值，则使用默认值value，存入成功，返回true。如果AppStorage中已经有对应的key，则返回false。
+将[Environment](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-environment)的内置环境变量key存入[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中。如果系统中未查询到Environment环境变量key的值，则使用默认值value存入AppStorage并返回true。如果AppStorage中已经有对应的key，则返回false。
 
-所以建议在程序启动的时候调用该接口。
-
-在没有调用EnvProp的情况下，就使用AppStorage读取环境变量是错误的。
+在没有调用EnvProp的情况下，直接使用AppStorage读取环境变量，将无法获取到对应的环境变量值。建议在应用启动时调用该接口。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 10开始废弃，建议使用[envProp](#envprop10)替代。
 
@@ -1944,7 +1920,7 @@ static EnvProp<S>(key: string, value: S): boolean
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | key | string | 是 | 环境变量名称，支持的范围详见[内置环境变量说明](#内置环境变量说明)。 |
-| value | S | 是 | 查询不到环境变量key，则使用value作为默认值存入AppStorage中。 |
+| value | S | 是 | 查询不到环境变量key时，则使用value作为默认值存入AppStorage中。 |
 
 返回值：
 
@@ -1962,7 +1938,7 @@ Environment.EnvProp('accessibilityEnabled', 'default');
 
 static EnvProps(props: {key: string; defaultValue: any;}[]): void
 
-和[EnvProp](#envpropdeprecated)类似，不同点在于参数为数组，可以一次性初始化多个数据。建议在应用启动时调用，将系统环境变量批量存入[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中。
+和[EnvProp](#envpropdeprecated)功能类似，不同点在于参数为数组，可以一次性初始化多个数据。在没有调用EnvProps的情况下，直接使用AppStorage读取环境变量，将无法获取到对应的环境变量值。建议在应用启动时调用，将系统环境变量批量存入[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 10开始废弃，建议使用[envProps](#envprops10)替代。
 
@@ -1997,7 +1973,7 @@ static Keys(): Array<string>
 
 | 类型 | 说明 |
 | --- | --- |
-| Array | 返回关联的系统项数组。 |
+| Array | 返回环境变量的属性key的数组。 |
 
 示例：
 
@@ -2007,7 +1983,7 @@ Environment.EnvProps([{ key: 'accessibilityEnabled', defaultValue: 'default' }, 
   defaultValue: 'en'
 }, { key: 'prop', defaultValue: 'hhhh' }]);
 
-let keys: Array<string> = Environment.Keys(); // keys 包含 accessibilityEnabled，languageCode，prop
+let keys: Array<string> = Environment.Keys(); // keys 包含 accessibilityEnabled、languageCode、prop
 ```
 
 #### 内置环境变量说明
@@ -2018,5 +1994,5 @@ let keys: Array<string> = Environment.Keys(); // keys 包含 accessibilityEnable
 | colorMode | [ColorMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-state-management-environment-variables#colormode) | 深浅色模式，可选值为： - ColorMode.LIGHT：浅色模式； - ColorMode.DARK：深色模式。 |
 | fontScale | number | 字体大小比例。 |
 | fontWeightScale | number | 字重比例。 |
-| layoutDirection | [LayoutDirection](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-state-management-environment-variables#layoutdirection) | 布局方向类型，可选值为： - LayoutDirection.LTR：从左到右； - LayoutDirection.RTL：从右到左。 - LayoutDirection.Auto：跟随系统。 |
+| layoutDirection | [LayoutDirection](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-state-management-environment-variables#layoutdirection) | 布局方向类型，可选值为： - LayoutDirection.LTR：从左到右； - LayoutDirection.RTL：从右到左； - LayoutDirection.Auto：跟随系统。 |
 | languageCode | string | 当前系统语言，小写字母，例如zh。 |

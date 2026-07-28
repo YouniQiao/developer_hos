@@ -2,8 +2,8 @@
 title: "OH_AudioNodeBuilderStruct"
 upstream_id: "harmonyos-references/capi-ohaudiosuite-oh-audionodebuilderstruct"
 catalog: "harmonyos-references"
-content_hash: "fb504341524d"
-synced_at: "2026-07-09T01:00:12.271500"
+content_hash: "fd2fc63ace86"
+synced_at: "2026-07-28T16:51:31.112022"
 ---
 
 # OH_AudioNodeBuilderStruct
@@ -14,7 +14,7 @@ typedef struct OH_AudioNodeBuilderStruct OH_AudioNodeBuilder
 
 #### 概述
 
-声明音频编创节点的构造器。用于构建[OH_AudioNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudiosuite-oh-audionodestruct)，配置输入\输出节点数据格式，配置输入节点回调接口。
+声明音频编创节点的构造器。用于构建[OH_AudioNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudiosuite-oh-audionodestruct)，配置输入/输出节点数据格式，配置输入节点回调接口。
 
 起始版本： 22
 

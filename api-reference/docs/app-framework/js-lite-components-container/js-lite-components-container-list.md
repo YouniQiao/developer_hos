@@ -2,8 +2,8 @@
 title: "list"
 upstream_id: "harmonyos-references/js-lite-components-container-list"
 catalog: "harmonyos-references"
-content_hash: "8fad7553ffac"
-synced_at: "2026-07-09T00:58:27.255888"
+content_hash: "4d73e02f90c8"
+synced_at: "2026-07-28T16:49:07.654310"
 ---
 
 # list
@@ -45,7 +45,7 @@ synced_at: "2026-07-09T00:58:27.255888"
 | height | | 5+ | - | 否 | 设置组件自身的高度。 未设置时组件高度默认为0。 |
 | padding | | 0 | 否 | 使用简写属性设置所有的内边距属性。 该属性可以有1到4个值： - 指定一个值时，该值指定四个边的内边距。 - 指定两个值时，第一个值指定上下两边的内边距，第二个指定左右两边的内边距。 - 指定三个值时，第一个指定上边的内边距，第二个指定左右两边的内边距，第三个指定下边的内边距。 - 指定四个值时分别为上、右、下、左边的内边距（顺时针顺序）。 |
 | padding-[left|top|right|bottom] | | 0 | 否 | 设置左、上、右、下内边距属性。 |
-| margin | | 5+ | 0 | 否 | 使用简写属性设置所有的外边距属性，该属性可以有1到4个值。 - 只有一个值时，这个值会被指定给全部的四个边。 - 两个值时，第一个值被匹配给上和下，第二个值被匹配给左和右。 - 三个值时，第一个值被匹配给上, 第二个值被匹配给左和右，第三个值被匹配给下。 - 四个值时，会依次按上、右、下、左的顺序匹配 (即顺时针顺序)。 |
+| margin | | 5+ | 0 | 否 | 使用简写属性设置所有的外边距属性，该属性可以有1到4个值。 - 只有一个值时，这个值会被指定给全部的四个边。 - 两个值时，第一个值被匹配给上和下，第二个值被匹配给左和右。 - 三个值时，第一个值被匹配给上，第二个值被匹配给左和右，第三个值被匹配给下。 - 四个值时，会依次按上、右、下、左的顺序匹配 (即顺时针顺序)。 |
 | margin-[left|top|right|bottom] | | 5+ | 0 | 否 | 设置左、上、右、下外边距属性。 |
 | border-width | | 0 | 否 | 使用简写属性设置元素的所有边框宽度。 |
 | border-color | | black | 否 | 使用简写属性设置元素的所有边框颜色。 |
@@ -69,7 +69,7 @@ synced_at: "2026-07-09T00:58:27.255888"
 <div class="container">
     <list class="todo-wrapper" ref="listObj">
         <list-item for="{{todolist}}" class="todo-item">
-            <div style="flex-direction: column;align-items: center;justify-content: center;">
+            <div style="width: 454px;height: 80px;flex-direction: column;align-items: center;justify-content: center;">
                 <text class="todo-title">{{$item.title}}</text>
                 <text class="todo-title">{{$item.date}}</text>
             </div>
@@ -137,4 +137,4 @@ export default {
   text-align: center;
 }
 ```
- ![](./img/zh-cn_image_0000002661733229.png)
+ ![](./img/zh-cn_image_0000002685928913.png)

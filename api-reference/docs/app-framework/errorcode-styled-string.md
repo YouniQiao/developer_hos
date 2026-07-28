@@ -1,14 +1,14 @@
 ---
-
 title: "属性字符串错误码"
 upstream_id: "harmonyos-references/errorcode-styled-string"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T00:58:48.783665"
-content_hash: "075964d1130b"
+content_hash: "3ceb735862a0"
+synced_at: "2026-07-28T16:49:49.320009"
 ---
 
-
 # 属性字符串错误码
+
+属性字符串错误码定义了属性字符串在转换、解码、序列化等操作过程中可能出现的错误信息及对应的处理建议，帮助开发者快速定位和解决属性字符串相关问题。
 
 ![](./img/note_3.0-zh-cn.png) 以下仅介绍本模块特有错误码，通用错误码请参考[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
@@ -20,7 +20,7 @@ Convert Error.
 
 错误描述
 
-fromHtml无法将传入的字符串转换出对应的属性字符串。
+fromHtml无法将传入的字符串转换为属性字符串。
 
 可能原因
 
@@ -28,7 +28,8 @@ fromHtml无法将传入的字符串转换出对应的属性字符串。
 
 处理步骤
 
-NA
+1. 检查传入的字符串是否为空，如果为空，请传入有效的非空字符串。
+2. 确认字符串是否符合HTML格式要求，如果不符合，请修改为符合HTML格式的字符串后重新调用。
 
 #### 180101 无效的属性字符串
 
@@ -38,12 +39,13 @@ invalid styled string.
 
 错误描述
 
-属性字符串序列化CAPI中，ArkUI_StyledString_Descriptor的属性字符串对象为空。
+在属性字符串序列化CAPI中，ArkUI_StyledString_Descriptor的属性字符串对象为空。
 
 可能原因
 
-参数中传递属性字符串有误。
+参数中传递的属性字符串为空。
 
 处理步骤
 
-检查参数中是否正确传递属性字符串。
+1. 检查ArkUI_StyledString_Descriptor中的属性字符串对象是否已正确初始化。
+2. 确认在调用相关接口时，属性字符串对象未被设置为空。

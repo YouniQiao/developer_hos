@@ -2,8 +2,8 @@
 title: "button"
 upstream_id: "harmonyos-references/js-service-widget-basic-button"
 catalog: "harmonyos-references"
-content_hash: "a9b569f5b06c"
-synced_at: "2026-07-09T00:58:30.910340"
+content_hash: "f3d0a1726b77"
+synced_at: "2026-07-28T16:49:13.747111"
 ---
 
 # button
@@ -26,7 +26,7 @@ synced_at: "2026-07-09T00:58:30.910340"
 | value | string | - | 否 | button的文本值，circle类型不生效。 |
 | icon | string | - | 否 | button的图标路径，图标格式为jpg，png和svg。 |
 | placement | string | end | 否 | 仅在type属性为缺省时生效，设置图标位于文本的位置，可选值为： - "start"：图标位于文本起始处。 - "end"：图标位于文本结束处。 - "top"：图标位于文本上方。 - "bottom"：图标位于文本下方。 |
-| waiting | boolean | false | 否 | 是否处于waiting状态，值为true时展现等待中转圈效果，位于文本左侧。值为false时，不展示等待中效果。类型为download时不生效。 |
+| waiting | boolean | false | 否 | 是否处于waiting状态，值为true时展现等待中转圈效果，位于文本左侧。值为false时，不展示等待中效果。 |
 
 #### 事件
 
@@ -89,4 +89,4 @@ synced_at: "2026-07-09T00:58:30.910340"
 ```
  4*4卡片
 
-![](./img/zh-cn_image_0000002631414022.jpg)
+![](./img/zh-cn_image_0000002686088767.jpg)

@@ -2,8 +2,8 @@
 title: "buffer_common.h"
 upstream_id: "harmonyos-references/capi-buffer-common-h"
 catalog: "harmonyos-references"
-content_hash: "664cc6448df0"
-synced_at: "2026-07-09T01:00:54.444265"
+content_hash: "8d55d2056059"
+synced_at: "2026-07-28T16:52:10.689849"
 ---
 
 # buffer_common.h
@@ -96,6 +96,8 @@ API version 12之前，使用该枚举请引用native_buffer.h头文件；从API
 | OH_COLORSPACE_DISPLAY_BT2020_SRGB | 色域范围为BT2020，传递函数为SRGB，转换矩阵为BT2020，数据范围为RANGE_FULL。 |
 | OH_COLORSPACE_DISPLAY_BT2020_HLG | 等同于 OH_COLORSPACE_BT2020_HLG_FULL。 |
 | OH_COLORSPACE_DISPLAY_BT2020_PQ | 等同于OH_COLORSPACE_BT2020_PQ_FULL。 |
+| OH_COLORSPACE_BT2020_LOG_FULL | 色域范围为BT2020，传递函数为PRIV_LOG，转换矩阵为BT2020，数据范围为RANGE_FULL。 **起始版本：** 26.0.0 |
+| OH_COLORSPACE_BT2020_LOG_LIMIT | 色域范围为BT2020，传递函数为PRIV_LOG，转换矩阵为BT2020，数据范围为RANGE_LIMIT。 **起始版本：** 26.0.0 |
 
 #### [h2]OH_NativeBuffer_MetadataType
 
@@ -139,7 +141,7 @@ enum OH_NativeBuffer_MetadataKey
 | OH_HDR_METADATA_TYPE | 元数据类型，其值见[OH_NativeBuffer_MetadataType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-buffer-common-h#oh_nativebuffer_metadatatype)，size为OH_NativeBuffer_MetadataType大小。 |
 | OH_HDR_STATIC_METADATA | 静态元数据，其值见[OH_NativeBuffer_StaticMetadata](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativebuffer-oh-nativebuffer-staticmetadata)，size为OH_NativeBuffer_StaticMetadata大小。 |
 | OH_HDR_DYNAMIC_METADATA | 动态元数据，其值见视频流中SEI的字节流，size的取值范围为1-3000。 |
-| OH_REGION_OF_INTEREST_METADATA | 视频编解码感兴趣区域（ROI）元数据，配置格式示例：“Top1,Left1-Bottom1,Right1=QpOffset1;Top2,Left2-Bottom2,Right2=QpOffset2;”。 每个ROI框由位置信息（Top,Left-Bottom,Right），编码质量偏移信息（QpOffset）组成，到分号结束。 ROI框的编码质量偏移信息可以缺省，缺省值为-3，缺省时配置示例：“Top1,Left1-Bottom1,Right1;Top2,Left2-Bottom2,Right2;”。 每组ROI元数据最多支持同时配置6个ROI，且其累计面积不超过全图的1/5。 该枚举值仅支持通过[OH_NativeBuffer_SetMetadataValue()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-buffer-h#oh_nativebuffer_setmetadatavalue)接口调用。 **起始版本：** 22 |
+| OH_REGION_OF_INTEREST_METADATA | 感兴趣区域（ROI）元数据，用于配置视频编码的ROI特性，也包含从相机预览中获取相机系统识别的ROI信息。值类型为字符串，格式为"Top1,Left1-Bottom1,Right1[=Params1];Top2,Left2-Bottom2,Right2[=Params2];"。 每个"Top,Left-Bottom,Right"代表一个ROI的坐标信息。 "[=Params]"是可选的。 "[=Params]"的格式随版本变化： - 在API版本26.0.0之前：仅支持单个代表量化参数偏移量的int32_t值（例如"=QpOffset"）。 - 从API版本26.0.0开始：额外支持并推荐使用键值对（Key-Value）格式。 参数使用逗号分隔键值对（例如，"=dqp:-6,slb:1"）。支持的键包括： - "dqp"：量化参数偏移量。 - "slb"：语义标签。该值必须与[OH_VideoMetadataRoiSemanticLabel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avcodec-videobase-h#oh_videometadataroisemanticlabel)对应。 如果完全省略"=Params"，例如"Top1,Left1-Bottom1,Right1;Top2,Left2-Bottom2,Right2=dqp:-6;"，编码器对第一个ROI使用默认参数进行编码，对第二个ROI使用指定参数进行编码。 请注意，可同时应用的ROI数量不得超过6个，且总面积不得超过图像面积的1/5，详情请参考ROI视频编码的[参数要求说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding-roi#参数要求说明)。 **起始版本：** 22 **说明：** 从API版本26.0.0开始，推荐使用[OH_VideoMetadata_AppendRoiString](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avcodec-videobase-h#oh_videometadata_appendroistring)来安全地转化和追加ROI配置，而不是手动拼接字符串。 |
 
 #### [h2]OH_NativeBuffer_Format
 

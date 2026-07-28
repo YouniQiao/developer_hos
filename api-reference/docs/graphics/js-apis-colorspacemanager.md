@@ -2,13 +2,13 @@
 title: "@ohos.graphics.colorSpaceManager (色彩管理)"
 upstream_id: "harmonyos-references/js-apis-colorspacemanager"
 catalog: "harmonyos-references"
-content_hash: "b8a27100a87b"
-synced_at: "2026-07-09T01:00:51.046472"
+content_hash: "b8d6322de19a"
+synced_at: "2026-07-28T16:52:07.086691"
 ---
 
 # @ohos.graphics.colorSpaceManager (色彩管理)
 
-本模块提供管理抽象化色域对象的一些基础能力，包括色域对象的创建与色域基础属性的获取等。
+本模块提供管理抽象化色域对象的基础能力，包括创建标准色域对象（如SRGB、DCI-P3、BT2020等）和自定义色域对象，获取色域类型、白点值、gamma值等属性。适用于需要保证色彩一致性的场景，如图像处理、视频渲染、跨设备色彩显示等，帮助开发者实现准确的色彩管理和转换，提升应用在色彩显示方面的用户体验。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 9开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -103,16 +103,17 @@ create(colorSpaceName: ColorSpace): ColorSpaceManager
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible cause: 1.Incorrect parameter type. 2.Parameter verification failed. |
+| 401 | Parameter error. Possible cause: 1. Incorrect parameter type. 2. Parameter verification failed. |
 | 18600001 | The parameter value is abnormal. |
 
 示例：
 
 ```
 try {
+  // 创建标准SRGB色域的色彩管理实例
   let colorSpace = colorSpaceManager.create(colorSpaceManager.ColorSpace.SRGB);
 } catch (err) {
-  console.error(`Failed to create SRGB colorSpace. Cause: ` + JSON.stringify(err));
+  console.error(`Failed to create SRGB colorSpace. Code: ${err.code}, message: ${err.message}`);
 }
 ```
 
@@ -143,13 +144,14 @@ create(primaries: ColorSpacePrimaries, gamma: number): ColorSpaceManager
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible cause: 1.Incorrect parameter type. 2.Parameter verification failed. |
+| 401 | Parameter error. Possible cause: 1. Incorrect parameter type. 2. Parameter verification failed. |
 | 18600001 | The parameter value is abnormal. |
 
 示例：
 
 ```
 try {
+  // 定义色域标准三原色参数
   let primaries: colorSpaceManager.ColorSpacePrimaries = {
     redX: 0.1,
     redY: 0.1,
@@ -160,10 +162,12 @@ try {
     whitePointX: 0.4,
     whitePointY: 0.4
   };
+  // 定义色域gamma值
   let gamma = 2.2;
+  // 创建自定义色域对象
   let colorSpace = colorSpaceManager.create(primaries, gamma);
 } catch (err) {
-  console.error(`Failed to create colorSpace with customized primaries and gamma. Cause: ` + JSON.stringify(err));
+  console.error(`Failed to create colorSpace with customized primaries and gamma. Code: ${err.code}, message: ${err.message}`);
 }
 ```
 
@@ -199,10 +203,11 @@ getColorSpaceName(): ColorSpace
 
 ```
 try {
+  // 获取色域类型
   let spaceName = colorSpace.getColorSpaceName();
   console.info(`spaceName: ` + spaceName.toString());
 } catch (err) {
-  console.error(`Fail to get colorSpace's name. Cause: ` + JSON.stringify(err));
+  console.error(`Failed to get colorSpace's name. Code: ${err.code}, message: ${err.message}`);
 }
 ```
 
@@ -232,10 +237,11 @@ getWhitePoint(): Array<number>
 
 ```
 try {
+  // 获取色域白点值
   let point = colorSpace.getWhitePoint();
   console.info(`point: ` + point.toString());
 } catch (err) {
-  console.error(`Failed to get white point. Cause: ` + JSON.stringify(err));
+  console.error(`Failed to get white point. Code: ${err.code}, message: ${err.message}`);
 }
 ```
 
@@ -265,9 +271,10 @@ getGamma(): number
 
 ```
 try {
+  // 获取色域gamma值
   let gamma = colorSpace.getGamma();
   console.info(`gamma: ` + gamma.toString());
 } catch (err) {
-  console.error(`Failed to get gamma. Cause: ` + JSON.stringify(err));
+  console.error(`Failed to get gamma. Code: ${err.code}, message: ${err.message}`);
 }
 ```

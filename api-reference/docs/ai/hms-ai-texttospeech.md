@@ -2,8 +2,8 @@
 title: "textToSpeech（文本转语音）"
 upstream_id: "harmonyos-references/hms-ai-texttospeech"
 catalog: "harmonyos-references"
-content_hash: "dfd0471f766a"
-synced_at: "2026-07-09T01:01:41.865454"
+content_hash: "2cedccdec5e0"
+synced_at: "2026-07-28T16:53:10.665638"
 ---
 
 # textToSpeech（文本转语音）
@@ -24,7 +24,7 @@ import { textToSpeech } from '@kit.CoreSpeechKit';
 
 createEngine(createEngineParams: CreateEngineParams, callback: AsyncCallback<TextToSpeechEngine>): void
 
-创建[TextToSpeechEngine](#texttospeechengine)实例，并初始化引擎。使用callback异步回调。
+初始化文本转语音引擎并返回一个[TextToSpeechEngine](#texttospeechengine)实例，如果引擎已初始化，将通过回调返回引擎实例。否则，将通过回调返回错误码和错误描述。使用callback异步回调。
 
 元服务API： 从版本6.1.1(24)开始，该接口支持在元服务中使用。
 
@@ -350,7 +350,7 @@ struct Page {
 
 #### TextToSpeechEngine
 
-文本转语音类，用于执行文本转语音过程中的相关操作。在调用TextToSpeechEngine的方法前，需要先通过[createEngine](#texttospeechcreateengine)方法创建一个[TextToSpeechEngine](#texttospeechengine)实例。
+文本转语音类实例，在调用TextToSpeechEngine的方法前，需要先通过[createEngine](#texttospeechcreateengine)方法创建一个[TextToSpeechEngine](#texttospeechengine)实例。
 
 元服务API： 从版本6.1.1(24)开始，该接口支持在元服务中使用。
 
@@ -493,7 +493,7 @@ struct Page {
 
 setListener(listener: SpeakListener): void
 
-设置合成播报回调。
+设置文本转语音的回调函数，该回调函数将接收所有关于文本转语音的信息。
 
 元服务API： 从版本6.1.1(24)开始，该接口支持在元服务中使用。
 
@@ -571,7 +571,7 @@ speak(text: string, speakParams: SpeakParams): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| text | string | 是 | 待播报的文本。根据不同场景的实际需求，可主动设置单词发音方式、数字播报策略、指定汉字发音以及在播报时插入静音停顿。具体方式请参考[设置播报策略](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/texttospeech-guide#设置播报策略)。 文本长度不得超过10000字符数（不包括文本开头与结尾的空格）。 |
+| text | string | 是 | 待播报的文本。根据不同场景的实际需求，可主动设置单词发音方式、数字播报策略、指定汉字发音以及在播报时插入静音停顿。具体方式请参考[设置播报策略](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/texttospeech-guide#设置播报策略)。 文本长度不得超过10000字符数（不包括文本开头与结尾的空格）。否则会返回1002300001错误码 |
 | speakParams | [SpeakParams](#speakparams) | 是 | 合成播报音频的相关参数。 |
 
 错误码：
@@ -967,7 +967,7 @@ onComplete(requestId: string, response: CompleteResponse): void
 | requestId | string | 是 | 请求ID。唯一标识一条请求。 支持英文字符，数字和中文，长度不限制。 |
 | response | [CompleteResponse](#completeresponse) | 是 | 完成播报相关信息。 |
 
-![](./img/note_3.0-zh-cn.png) onData 可能并未返回完毕，请继续接收 onData 回调。
+![](./img/note_3.0-zh-cn.png) onData 可能存在数据过大的情况，无法一次性返回全部数据，请继续接收 onData 回调。
 
 示例：
 
@@ -1019,7 +1019,7 @@ onData?: OnDataCallback
 
 合成播报过程中回调此接口，返回请求ID，音频流信息，音频附加信息如格式、时长等。若需要返回音频流信息，请实现此接口。
 
-![](./img/note_3.0-zh-cn.png) 因为异步ipc会导致onData音频流顺序小规模错乱，需要调用方在播放前对音频流按照sequence排序。
+![](./img/note_3.0-zh-cn.png) 调用方在播放音频前需要按照sequence(#synthesisresponse)对音频流进行排序, 避免播放时音频流顺序错乱。
 
 元服务API： 从版本6.1.1(24)开始，该接口支持在元服务中使用。
 

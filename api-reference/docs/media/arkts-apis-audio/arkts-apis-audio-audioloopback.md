@@ -2,8 +2,8 @@
 title: "Interface (AudioLoopback)"
 upstream_id: "harmonyos-references/arkts-apis-audio-audioloopback"
 catalog: "harmonyos-references"
-content_hash: "25fbce11a34d"
-synced_at: "2026-07-09T01:00:08.673686"
+content_hash: "7f007e646454"
+synced_at: "2026-07-28T16:51:26.319579"
 ---
 
 # Interface (AudioLoopback)
@@ -14,7 +14,7 @@ synced_at: "2026-07-09T01:00:08.673686"
 
 当启用音频返听时，系统会创建低时延渲染器与低时延采集器，实现低时延耳返功能。采集的音频直接通过内部路由返回到渲染器。对于渲染器，其音频焦点策略与[STREAM_USAGE_MUSIC](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage)相匹配。对于采集器，其音频焦点策略与[SOURCE_TYPE_MIC](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#sourcetype8)相匹配。
 
-输入\输出设备由系统自动选择。如果当前输入\输出不支持低时延，则音频返听无法启用。在运行过程中，如果音频焦点被另一个音频流抢占，输入\输出设备切换到不支持低时延的设备，系统会自动禁用音频返听。
+输入/输出设备由系统自动选择。如果当前输入/输出不支持低时延，则音频返听无法启用。在运行过程中，如果音频焦点被另一个音频流抢占，输入/输出设备切换到不支持低时延的设备，系统会自动禁用音频返听。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -161,7 +161,7 @@ audioLoopback.on('statusChange', (status: audio.AudioLoopbackStatus) => {
 
 off(type: 'statusChange', callback?: Callback<AudioLoopbackStatus>): void
 
-取消监听音频状态事件。使用callback异步回调。
+取消监听音频返听状态变化事件。
 
 系统能力： SystemCapability.Multimedia.Audio.Capturer
 
@@ -169,7 +169,7 @@ off(type: 'statusChange', callback?: Callback<AudioLoopbackStatus>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 事件回调类型，支持的事件为'statusChange'，当取消监听音频状态事件时，触发该事件。 |
+| type | string | 是 | 事件回调类型，支持的事件为'statusChange'。 |
 | callback | Callback | 否 | 回调函数，返回当前音频返听的状态。 |
 
 错误码：
@@ -272,7 +272,7 @@ enable(enable: boolean): Promise<boolean>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| enable | boolean | 是 | 表示是否启用音频返听器。true表示启用，false表示不启用。 |
+| enable | boolean | 是 | 表示是否启用音频返听器。true表示启用，false表示禁用。 |
 
 返回值：
 
@@ -336,12 +336,7 @@ setReverbPreset(preset: AudioLoopbackReverbPreset): boolean
 示例：
 
 ```
-import { BusinessError } from '@kit.BasicServicesKit';
-try {
   audioLoopback.setReverbPreset(audio.AudioLoopbackReverbPreset.THEATER);
-} catch (err) {
-  console.error(`setReverbPreset :ERROR: ${err}`);
-}
 ```
 
 #### getReverbPreset21+
@@ -427,7 +422,7 @@ getEqualizerPreset(): AudioLoopbackEqualizerPreset
 ```
 import { BusinessError } from '@kit.BasicServicesKit';
 try {
-  let reverbPreset = audioLoopback.getEqualizerPreset();
+  let equalizerPreset = audioLoopback.getEqualizerPreset();
 } catch (err) {
   console.error(`getEqualizerPreset:ERROR: ${err}`);
 }

@@ -1,12 +1,12 @@
 ---
-title: "ArkUI_TouchRecognizer*"
+title: "ArkUI_TouchRecognizerHandle"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-touchrecognizerhandle"
 catalog: "harmonyos-references"
-content_hash: "67efac7af0a5"
-synced_at: "2026-07-09T00:58:40.339104"
+content_hash: "acdd12042659"
+synced_at: "2026-07-28T16:49:29.989647"
 ---
 
-# ArkUI_TouchRecognizer*
+# ArkUI_TouchRecognizerHandle
 
 ```
 typedef ArkUI_TouchRecognizer* ArkUI_TouchRecognizerHandle
@@ -14,7 +14,7 @@ typedef ArkUI_TouchRecognizer* ArkUI_TouchRecognizerHandle
 
 #### 概述
 
-定义触摸识别器句柄。
+定义触摸识别器句柄，用于表示触摸识别器对象，并在手势打断、手势收集拦截等接口中传递该对象。具体接口请参见[native_gesture.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-gesture-h)。
 
 起始版本： 15
 

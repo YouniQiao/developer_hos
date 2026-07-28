@@ -2,8 +2,8 @@
 title: "Interfaces (其他)"
 upstream_id: "harmonyos-references/arkts-apis-audio-i"
 catalog: "harmonyos-references"
-content_hash: "345e28d5300c"
-synced_at: "2026-07-17T16:18:43.805938"
+content_hash: "112a9dffcacf"
+synced_at: "2026-07-28T16:51:26.347588"
 ---
 
 # Interfaces (其他)
@@ -110,7 +110,7 @@ synced_at: "2026-07-17T16:18:43.805938"
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| streamId | number | 是 | 否 | 音频流唯一id。 |
+| streamId | number | 是 | 否 | 音频流唯一ID。 |
 | rendererInfo | [AudioRendererInfo](#audiorendererinfo8) | 是 | 否 | 音频渲染器信息。 |
 | deviceDescriptors | [AudioDeviceDescriptors](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-t#audiodevicedescriptors) | 是 | 否 | 音频设备描述。 |
 
@@ -122,7 +122,7 @@ synced_at: "2026-07-17T16:18:43.805938"
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| streamId | number | 是 | 否 | 音频流唯一id。 |
+| streamId | number | 是 | 否 | 音频流唯一ID。 |
 | capturerInfo | [AudioCapturerInfo](#audiocapturerinfo8) | 是 | 否 | 音频采集器信息。 |
 | deviceDescriptors | [AudioDeviceDescriptors](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-t#audiodevicedescriptors) | 是 | 否 | 音频设备信息。 |
 | muted11+ | boolean | 是 | 是 | 音频采集器是否处于静音状态。true表示静音，false表示非静音。 |
@@ -135,7 +135,7 @@ synced_at: "2026-07-17T16:18:43.805938"
 | --- | --- | --- | --- | --- |
 | deviceRole | [DeviceRole](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#devicerole) | 是 | 否 | 设备角色。 **系统能力：** SystemCapability.Multimedia.Audio.Device **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | deviceType | [DeviceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#devicetype) | 是 | 否 | 设备类型。 **系统能力：** SystemCapability.Multimedia.Audio.Device **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| id9+ | number | 是 | 否 | 唯一的设备id。 **系统能力：** SystemCapability.Multimedia.Audio.Device **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| id9+ | number | 是 | 否 | 唯一的设备ID。 **系统能力：** SystemCapability.Multimedia.Audio.Device **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | name9+ | string | 是 | 否 | 设备名称。 如果是蓝牙设备，需要申请权限ohos.permission.USE_BLUETOOTH。 **系统能力：** SystemCapability.Multimedia.Audio.Device **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | address9+ | string | 是 | 否 | 设备静态MAC地址。 如果是蓝牙设备，需要申请权限ohos.permission.USE_BLUETOOTH。 **系统能力：** SystemCapability.Multimedia.Audio.Device **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | sampleRates9+ | Array | 是 | 否 | 支持的采样率。 **系统能力：** SystemCapability.Multimedia.Audio.Device **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
@@ -276,6 +276,7 @@ synced_at: "2026-07-17T16:18:43.805938"
 | streamInfo | [AudioStreamInfo](#audiostreaminfo8) | 否 | 否 | 音频流信息。 **系统能力：** SystemCapability.Multimedia.Audio.Capturer |
 | capturerInfo | [AudioCapturerInfo](#audiocapturerinfo8) | 否 | 否 | 音频采集器信息。 **系统能力：** SystemCapability.Multimedia.Audio.Capturer |
 | playbackCaptureConfig(deprecated) | [AudioPlaybackCaptureConfig](#audioplaybackcaptureconfigdeprecated) | 否 | 是 | 音频内录的配置信息。 **系统能力：** SystemCapability.Multimedia.Audio.PlaybackCapture 从API version 10开始支持，从API version 12开始废弃，建议使用[录屏接口AVScreenCapture](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avscreencapture)替代。 |
+| playbackCaptureMode | [AudioPlaybackCaptureMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#audioplaybackcapturemode) | 否 | 是 | 内录模式。可设置为AudioPlaybackCaptureMode中的枚举值或其按位或组合，当前仅支持MODE_DEFAULT（0x0）、MODE_MEDIA（0x1）、MODE_EXCLUDING_SELF（0x8000），以及MODE_MEDIA和MODE_EXCLUDING_SELF的按位或组合（0x8001）。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **系统能力：** SystemCapability.Multimedia.Audio.PlaybackCapture |
 
 #### AudioInterrupt(deprecated)
 
@@ -329,3 +330,17 @@ synced_at: "2026-07-17T16:18:43.805938"
 | type | [InterruptType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#interrupttype) | 否 | 是 | 打断事件类型。 |
 | hint | [InterruptHint](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#interrupthint) | 否 | 是 | 打断事件提示。 |
 | activated | boolean | 否 | 是 | 焦点获取/释放是否成功。true表示焦点获取/释放成功，false表示焦点获得/释放失败。 |
+
+#### SystemRecordControllerConfig
+
+系统录音控制面板的配置信息。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Multimedia.Audio.Capturer
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| sourceType | [SourceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#sourcetype8) | 否 | 否 | 应用期望使用的音频源类型。系统会根据该参数确定应用的录音场景，并为用户提供匹配的降噪模式选择能力。支持的音频源类型包括SOURCE_TYPE_MIC、SOURCE_TYPE_CAMCORDER和SOURCE_TYPE_LIVE。 |

@@ -2,8 +2,8 @@
 title: "FullScreenLaunchComponent"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-fullscreenlaunchcomponent"
 catalog: "harmonyos-references"
-content_hash: "0e9a2b83afd1"
-synced_at: "2026-07-17T16:16:47.864231"
+content_hash: "d0275768c878"
+synced_at: "2026-07-28T16:48:20.918906"
 ---
 
 # FullScreenLaunchComponent
@@ -64,6 +64,12 @@ FullScreenLaunchComponent({ content: Callback<void>, appId: string, options?: At
 本示例展示组件使用方法和扩展的元服务。实际运行时请使用开发者自己的元服务appId。
 
 FullScreenLaunchComponent组件需要由使用方调用。在提供方完成本地的安装后，即可实现在使用方应用或者元服务中全屏嵌入式拉起提供方的效果。
+
+![](./img/note_3.0-zh-cn.png) 由于嵌入式元服务运行在独立进程，其崩溃异常不会直接暴露在宿主的日志中。本地调试时可通过以下方式查看真实报错栈：
+
+1. 打开DevEco Studio的HiLog面板。
+2. 将左上角的模式切换为User logs of selected app。
+3. 在右侧进程列表中，选择被拉起的元服务进程（被拉起元服务的包名，且后缀带有embeddable字样）。
 
 使用方
 

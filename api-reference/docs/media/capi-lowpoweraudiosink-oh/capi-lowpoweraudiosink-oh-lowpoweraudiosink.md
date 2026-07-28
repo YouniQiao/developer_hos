@@ -2,8 +2,8 @@
 title: "OH_LowPowerAudioSink"
 upstream_id: "harmonyos-references/capi-lowpoweraudiosink-oh-lowpoweraudiosink"
 catalog: "harmonyos-references"
-content_hash: "c32126d6ef56"
-synced_at: "2026-07-09T01:00:44.427478"
+content_hash: "ce98bc761166"
+synced_at: "2026-07-28T16:52:01.674250"
 ---
 
 # OH_LowPowerAudioSink
@@ -14,7 +14,7 @@ typedef struct OH_LowPowerAudioSink OH_LowPowerAudioSink
 
 #### 概述
 
-LowPowerAudioSink的声明。
+OH_LowPowerAudioSink是低功耗音频输出场景中使用的数据结构，开发者通过该结构体实现低功耗音频输出功能。
 
 起始版本： 20
 

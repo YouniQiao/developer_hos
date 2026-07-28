@@ -2,8 +2,8 @@
 title: "context.h"
 upstream_id: "harmonyos-references/capi-abilityruntime-context-h"
 catalog: "harmonyos-references"
-content_hash: "e0528e4a55d7"
-synced_at: "2026-07-09T00:57:13.166856"
+content_hash: "6a16fcafa2ad"
+synced_at: "2026-07-28T16:40:43.732981"
 ---
 
 # context.h
@@ -531,7 +531,7 @@ AbilityRuntime_ErrorCode OH_AbilityRuntime_Context_SetAreaMode(
 
 | 类型 | 说明 |
 | --- | --- |
-| [AbilityRuntime_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) | 返回执行结果。 ABILITY_RUNTIME_ERROR_CODE_NO_ERROR - 操作成功。 ABILITY_RUNTIME_ERROR_CODE_PARAM_INVALID - 入参areaMode为空。 ABILITY_RUNTIME_ERROR_CODE_CONTEXT_NOT_EXIST - 上下文不存在。 |
+| [AbilityRuntime_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) | 返回执行结果。 ABILITY_RUNTIME_ERROR_CODE_NO_ERROR - 操作成功。 ABILITY_RUNTIME_ERROR_CODE_PARAM_INVALID - 入参context为空。 ABILITY_RUNTIME_ERROR_CODE_CONTEXT_NOT_EXIST - 上下文不存在。 |
 
 示例代码：
 

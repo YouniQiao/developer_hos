@@ -2,8 +2,8 @@
 title: "@ohos.display (屏幕属性)"
 upstream_id: "harmonyos-references/js-apis-display"
 catalog: "harmonyos-references"
-content_hash: "8c3293527449"
-synced_at: "2026-07-09T00:57:34.947966"
+content_hash: "c48f334151d2"
+synced_at: "2026-07-28T16:41:45.614265"
 ---
 
 # @ohos.display (屏幕属性)
@@ -218,15 +218,14 @@ import { display } from '@kit.ArkUI';
 
 屏幕亮度信息。此类型中的信息均来自底层屏幕信息数据。
 
-元服务API： 从API version 22开始，该接口支持在元服务中使用。
-
 系统能力： SystemCapability.Window.SessionManager
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| currentHeadroom | number | 是 | 否 | 当前亮度动态余量，该参数为大于0的浮点数。默认值为1.0。 |
-| maxHeadroom | number | 是 | 否 | 当前最大亮度余量，该参数为大于0的浮点数。默认值为1.0。 |
-| sdrNits | number | 是 | 否 | 屏幕的亮度，该参数为大于0的浮点数。默认值为500.0。 |
+| currentHeadroom | number | 是 | 否 | 当前亮度动态余量，该参数为大于0的浮点数。默认值为1.0。 **元服务API：** 从API version 22开始，该接口支持在元服务中使用。 |
+| maxHeadroom | number | 是 | 否 | 当前最大亮度余量，该参数为大于0的浮点数。默认值为1.0。 **元服务API：** 从API version 22开始，该接口支持在元服务中使用。 |
+| sdrNits | number | 是 | 否 | 屏幕的亮度，该参数为大于0的浮点数。默认值为500.0。 **元服务API：** 从API version 22开始，该接口支持在元服务中使用。 |
+| brightnessPosition | number | 是 | 是 | 当前屏幕亮度所对应的亮度条位置，该参数为浮点数，取值范围[0.0, 1.0]，默认值为0.0。0.0表示当前屏幕亮度最低，1.0表示当前屏幕亮度最高。该参数返回的亮度条位置与实际可能存在精度为0.01的误差。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### BrightnessCallback22+
 
@@ -931,7 +930,7 @@ let callback: display.BrightnessCallback<number, display.BrightnessInfo> = (id: 
 try {
   display.on('brightnessInfoChange', callback);
 } catch (error) {
-  console.error(`brightnessInfoChange error. Code ${error.code}, message: ${error.message}`);
+  console.error(`Failed to register brightnessInfoChange listener. Code ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -971,7 +970,7 @@ let callback: display.BrightnessCallback<number, display.BrightnessInfo> = (id: 
 try {
   display.off('brightnessInfoChange', callback);
 } catch (error) {
-  console.error(`brightnessInfoChange error. Code ${error.code}, message: ${error.message}`);
+  console.error(`Failed to unregister brightnessInfoChange listener. Code ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -1161,6 +1160,53 @@ isCaptured(): boolean
 let ret: boolean = false;
 // 检查屏幕显示信息是否被获取
 ret = display.isCaptured();
+```
+
+#### display.isCaptured
+
+isCaptured(bundleNameList: Array<string>): boolean
+
+检查设备的屏幕显示信息是否正被应用列表中的应用获取。
+
+起始版本： 26.0.0
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Window.SessionManager
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| bundleNameList | Array | 是 | 需要检查的应用列表。数组最大长度为100，超过最大长度返回1400004错误码。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| boolean | boolean值，返回设备的屏幕显示信息是否存在被获取的情况。返回true表示设备的屏幕信息正在被指定应用列表中的应用获取；返回false表示设备的屏幕信息当前没有被指定应用列表中的应用获取。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[屏幕错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-display)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 1400003 | This display manager service works abnormally. |
+| 1400004 | Parameter error. Possible cause: 1. The size of bundleNameList is larger than 100. |
+
+示例：
+
+```
+try {
+  const bundleList: Array<string> = ['com.example.app'];
+  let ret = display.isCaptured(bundleList);
+  console.info(`The screen is captured or not: ${ret}`);
+} catch (err) {
+  console.error(`Failed to get display isCaptured. Code: ${err.code}, message: ${err.message}`);
+}
 ```
 
 #### display.on('foldDisplayModeChange')10+
@@ -1364,7 +1410,7 @@ display.destroyVirtualScreen(screenId).then(() => {
 
 setVirtualScreenSurface(screenId:number, surfaceId: string): Promise<void>
 
-设置虚拟屏幕的surfaceId，surfaceId用于标识一个surface，表示当前虚拟屏用于显示对应surface中的内容。使用Promise异步回调。
+设置虚拟屏幕的surfaceId，表示虚拟屏幕内容显示在对应surface上。使用Promise异步回调。
 
 系统能力： SystemCapability.Window.SessionManager
 
@@ -1729,7 +1775,7 @@ promise.then((data: Array<display.Display>) => {
 | height | number | 是 | 否 | 显示设备的屏幕高度，单位为px，该参数为整数。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | densityDPI | number | 是 | 否 | 显示设备的物理像素密度，表示每英寸上的像素点数。该参数为浮点数，单位为px。一般取值160.0、480.0等，实际能取到的值取决于不同设备设置里提供的可选值。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | orientation10+ | [Orientation](#orientation10) | 是 | 否 | 表示显示设备当前显示的方向。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| densityPixels | number | 是 | 否 | 显示设备逻辑像素的密度，代表物理像素与逻辑像素的缩放系数，计算方式为：![](./img/zh-cn_image_0000002661612301.jpg) 该参数为浮点数，受densityDPI范围限制，取值范围在[0.5，4.0]。一般取值1.0、3.0等，实际取值取决于不同设备提供的densityDPI。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| densityPixels | number | 是 | 否 | 显示设备逻辑像素的密度，代表物理像素与逻辑像素的缩放系数，计算方式为：![](./img/zh-cn_image_0000002655848316.jpg) 该参数为浮点数，受densityDPI范围限制，取值范围在[0.5, 4.0]。一般取值1.0、3.0等，实际取值取决于不同设备提供的densityDPI。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | scaledDensity | number | 是 | 否 | 显示设备上的字体的缩放因子。该参数为浮点数，通常与densityPixels相同。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | xDPI | number | 是 | 否 | x轴方向中每英寸屏幕的确切物理像素值，该参数为浮点数。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | yDPI | number | 是 | 否 | y轴方向中每英寸屏幕的确切物理像素值，该参数为浮点数。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
@@ -1780,7 +1826,7 @@ try {
   let data = displayClass.getRoundedCorner();
   console.info(`Succeeded in getting rounded corner. Data: ${JSON.stringify(data)}`);
 } catch (error) {
-  console.error(`Failed to getRoundedCorner. Code: ${error.code}, message: ${error.message}`);
+  console.error(`Failed to get rounded corner. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -1861,7 +1907,7 @@ let promise: Promise<display.CutoutInfo> = displayClass.getCutoutInfo();
 promise.then((data: display.CutoutInfo) => {
   console.info(`Succeeded in getting cutoutInfo. Data: ${JSON.stringify(data)}`);
 }).catch((err: BusinessError) => {
-  console.error(`Failed to obtain all the display objects. Code: ${err.code}, message: ${err.message}`);
+  console.error(`Failed to get cutoutInfo. Code: ${err.code}, message: ${err.message}`);
 });
 ```
 
@@ -1945,7 +1991,6 @@ on(type: 'availableAreaChange', callback: Callback<Rect>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. |
-| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
 | 1400003 | This display manager service works abnormally. |
 
 示例：
@@ -1994,7 +2039,6 @@ off(type: 'availableAreaChange', callback?: Callback<Rect>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. |
-| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
 | 1400003 | This display manager service works abnormally. |
 
 示例：

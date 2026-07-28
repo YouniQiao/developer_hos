@@ -2,13 +2,13 @@
 title: "@ohos.enterprise.applicationManager（应用管理）"
 upstream_id: "harmonyos-references/js-apis-enterprise-applicationmanager"
 catalog: "harmonyos-references"
-content_hash: "16c4e3e9666c"
-synced_at: "2026-07-09T00:59:52.473407"
+content_hash: "b6c0e34a703e"
+synced_at: "2026-07-28T16:51:10.487374"
 ---
 
 # @ohos.enterprise.applicationManager（应用管理）
 
-本模块提供应用管理能力，包括添加应用运行禁止名单、获取应用运行禁止名单、移除应用运行禁止名单等。
+本模块提供应用管理能力，包括管理应用运行禁止名单、应用运行允许名单、开机自启动应用名单、保活应用名单、不可关停应用名单、后台防冻结应用名单、允许发送通知应用名单、允许跨设备应用名单等。适用于企业设备管理场景，可实现应用运行权限管控、开机自启动管理、保活应用管理等，提升企业设备安全性和合规性。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 12开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -26,7 +26,9 @@ import { applicationManager } from '@kit.MDMKit';
 
 addDisallowedRunningBundlesSync(admin: Want, appIds: Array<string>, accountId?: number): void
 
-添加应用至应用运行禁止名单，添加至禁止名单的应用不允许在当前/指定用户下运行。从API version 21开始，如果应用运行允许名单[addallowedRunningBundles](#applicationmanageraddallowedrunningbundles21)非空，就不能再通过本接口添加应用运行禁止名单，否则会报9200010冲突错误码。
+添加应用至应用运行禁止名单，添加至禁止名单的应用不允许在当前/指定用户下运行。从API version 21开始，如果应用运行允许名单[addAllowedRunningBundles](#applicationmanageraddallowedrunningbundles21)非空，就不能再通过本接口添加应用运行禁止名单，否则会报9200010冲突错误码。
+
+![](./img/note_3.0-zh-cn.png) 若指定应用正在运行，将其加入禁止名单后，系统将立即终止该应用进程。
 
 需要权限： ohos.permission.ENTERPRISE_MANAGE_APPLICATION
 
@@ -41,7 +43,7 @@ addDisallowedRunningBundlesSync(admin: Want, appIds: Array<string>, accountId?: 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
-| appIds | Array | 是 | 应用ID数组，指定具体应用。 **说明：** 从API version 21版本开始，支持传入应用的[appId](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appid)和[appIdentifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appidentifier)，推荐使用[appIdentifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appidentifier)。API version 20及之前版本，仅支持[appId](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appid)。 |
+| appIds | Array | 是 | 应用ID数组，指定具体应用。 **说明：** 从API version 21版本开始，支持传入应用的[appId](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appid)和[appIdentifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appidentifier)，推荐使用[appIdentifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appidentifier)。API version 20及之前版本，仅支持[appId](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appid)。 取值范围： 单个用户下该名单总数不能超过200。例如100用户下已经设置了50个、101用户未设置，则100用户还能再设置150个，101用户还能再设置200个。 |
 | accountId | number | 否 | 用户ID，取值范围：大于等于0。 accountId可以通过@ohos.account.osAccount中的[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9-1)等接口来获取。 - 调用接口时，若传入accountId，表示指定用户。 - 调用接口时，若未传入accountId，表示当前用户。 |
 
 错误码：
@@ -52,7 +54,7 @@ addDisallowedRunningBundlesSync(admin: Want, appIds: Array<string>, accountId?: 
 | --- | --- |
 | 9200001 | The application is not an administrator application of the device. |
 | 9200002 | The administrator application does not have permission to manage the device. |
-| 9200010 | A conflict policy has been configured. |
+| 9200010 | A conflict policy has been configured. 适用版本：21+ |
 | 201 | Permission verification failed. The application does not have the permission required to call the API. |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 
@@ -135,7 +137,7 @@ try {
 
 #### applicationManager.getDisallowedRunningBundlesSync
 
-getDisallowedRunningBundlesSync(admin: Want, accountId?: number): Array<string>
+getDisallowedRunningBundlesSync(admin: Want | null, accountId?: number): Array<string>
 
 获取当前/指定用户下的应用运行禁止名单。
 
@@ -149,7 +151,7 @@ getDisallowedRunningBundlesSync(admin: Want, accountId?: number): Array<string>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，API版本26.0.0之前，传入Want时查询对应企业设备管理应用设置的策略。从API版本26.0.0开始，新增支持传入null时查询实际生效的策略。 |
 | accountId | number | 否 | 用户ID，取值范围：大于等于0。 accountId可以通过@ohos.account.osAccount中的[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9-1)等接口来获取。 - 调用接口时，若传入accountId，表示指定用户。 - 调用接口时，若未传入accountId，表示当前用户。 |
 
 返回值：
@@ -308,7 +310,7 @@ try {
 
 #### applicationManager.getAllowedRunningBundles21+
 
-getAllowedRunningBundles(admin: Want, accountId: number): Array<string>
+getAllowedRunningBundles(admin: Want | null, accountId: number): Array<string>
 
 获取指定用户下的应用运行允许名单。
 
@@ -322,7 +324,7 @@ getAllowedRunningBundles(admin: Want, accountId: number): Array<string>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，API版本26.0.0之前，传入Want时查询对应企业设备管理应用设置的策略。从API版本26.0.0开始，新增支持传入null时查询实际生效的策略。 |
 | accountId | number | 是 | 用户ID，取值范围：大于等于0。 accountId可以通过@ohos.account.osAccount中的[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9-1)等接口来获取。 |
 
 返回值：
@@ -552,7 +554,7 @@ try {
 
 #### applicationManager.getAutoStartApps
 
-getAutoStartApps(admin: Want): Array<Want>
+getAutoStartApps(admin: Want | null): Array<Want>
 
 查询当前用户开机自启动应用名单。
 
@@ -568,7 +570,7 @@ getAutoStartApps(admin: Want): Array<Want>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，API版本26.0.0之前，传入Want时查询对应企业设备管理应用设置的策略。从API版本26.0.0开始，新增支持传入null时查询实际生效的策略。 |
 
 返回值：
 
@@ -694,7 +696,7 @@ try {
 
 #### applicationManager.getAutoStartApps20+
 
-getAutoStartApps(admin: Want, accountId: number): Array<Want>
+getAutoStartApps(admin: Want | null, accountId: number): Array<Want>
 
 查询指定用户下的开机自启动应用名单。
 
@@ -710,7 +712,7 @@ getAutoStartApps(admin: Want, accountId: number): Array<Want>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，API版本26.0.0之前，传入Want时查询对应企业设备管理应用设置的策略。从API版本26.0.0开始，新增支持传入null时查询实际生效的策略。 |
 | accountId | number | 是 | 用户ID，取值范围：大于等于0。 accountId可以通过@ohos.account.osAccount中的[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9-1)等接口来获取。 |
 
 返回值：
@@ -1020,7 +1022,7 @@ try {
 
 #### applicationManager.getKeepAliveApps14+
 
-getKeepAliveApps(admin: Want, accountId: number): Array<string>
+getKeepAliveApps(admin: Want | null, accountId: number): Array<string>
 
 获取保活应用包名。
 
@@ -1036,7 +1038,7 @@ getKeepAliveApps(admin: Want, accountId: number): Array<string>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，API版本26.0.0之前，传入Want时查询对应企业设备管理应用设置的策略。从API版本26.0.0开始，新增支持传入null时查询实际生效的策略。 |
 | accountId | number | 是 | 用户ID，取值范围：大于等于0。 accountId可以通过@ohos.account.osAccount中的[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9-1)等接口来获取。 |
 
 返回值：
@@ -1248,7 +1250,7 @@ try {
 
 #### applicationManager.getAllowedKioskApps20+
 
-getAllowedKioskApps(admin: Want): Array<string>
+getAllowedKioskApps(admin: Want | null): Array<string>
 
 获取允许在Kiosk模式下运行的应用。
 
@@ -1262,7 +1264,7 @@ getAllowedKioskApps(admin: Want): Array<string>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，API版本26.0.0之前，传入Want时查询对应企业设备管理应用设置的策略。从API版本26.0.0开始，新增支持传入null时查询实际生效的策略。 |
 
 返回值：
 
@@ -1408,6 +1410,8 @@ addUserNonStopApps(admin: Want, applicationInstances: Array<common.ApplicationIn
 
 不可关停应用在PC/2in1设备的效果：用户在设置-应用和元服务中点击应用名称进入详情页面后，页面中的强行停止按钮呈灰色不可用，页面中的停用按钮功能无效。
 
+从API版本26.0.0开始，调用[setDisallowedPolicyForAccount](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicyforaccount)接口禁用[SUPER_HUB](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#featureforaccount)后，再调用该接口将中转站添加到不可关停应用名单时，会发生策略冲突，抛出9200010错误码。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_APPLICATION
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
@@ -1433,6 +1437,7 @@ addUserNonStopApps(admin: Want, applicationInstances: Array<common.ApplicationIn
 | --- | --- |
 | 9200001 | The application is not an administrator application of the device. |
 | 9200002 | The administrator application does not have permission to manage the device. |
+| 9200010 | A conflict policy has been configured. 适用版本：26.0.0+ |
 | 9200012 | Parameter verification failed. |
 | 201 | Permission verification failed. The application does not have the permission required to call the API. |
 
@@ -1530,7 +1535,7 @@ try {
 
 #### applicationManager.getUserNonStopApps22+
 
-getUserNonStopApps(admin: Want): Array<common.ApplicationInstance>
+getUserNonStopApps(admin: Want | null): Array<common.ApplicationInstance>
 
 获取当前设备下所有用户不可关停应用名单。
 
@@ -1546,7 +1551,7 @@ getUserNonStopApps(admin: Want): Array<common.ApplicationInstance>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，API版本26.0.0之前，传入Want时查询对应企业设备管理应用设置的策略。从API版本26.0.0开始，新增支持传入null时查询实际生效的策略。 |
 
 返回值：
 
@@ -1588,7 +1593,7 @@ try {
 
 addFreezeExemptedApps(admin: Want, applicationInstances: Array<common.ApplicationInstance>): void
 
-为指定用户添加后台防冻结应用名单，仅可对已安装应用设置该策略，该策略重启后失效。若参数列表中存在未安装应用，则返回9200012错误码。若设置策略后，名单中有应用被卸载，则卸载的应用将从名单中移除。若添加已存在于名单中的应用，返回成功，但已设置策略名单中不会重复添加该应用。
+为指定用户添加后台防冻结应用名单，仅可对已安装应用设置该策略。若参数列表中存在未安装应用，则返回9200012错误码。若设置策略后，名单中有应用被卸载，则卸载的应用将从名单中移除。若添加已存在于名单中的应用，返回成功，但已设置策略名单中不会重复添加该应用。
 
 冻结操作：对目标应用的挂起、软件资源代理、硬件资源代理和高功耗管控等操作。
 
@@ -1596,7 +1601,7 @@ addFreezeExemptedApps(admin: Want, applicationInstances: Array<common.Applicatio
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
-设备行为差异： 该接口在Phone和Tablet中可正常调用，在其他设备中调用无效果。
+设备行为差异： 在API版本26.0.0之前，该接口在Phone和Tablet中可正常调用，在其他设备中调用无效果。从API版本26.0.0开始，该接口在Phone、Tablet、PC/2in1中均可正常使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -1659,7 +1664,7 @@ removeFreezeExemptedApps(admin: Want, applicationInstances: Array<common.Applica
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
-设备行为差异： 该接口在Phone和Tablet中可正常调用，在其他设备中调用无效果。
+设备行为差异： 在API版本26.0.0之前，该接口在Phone和Tablet中可正常调用，在其他设备中调用无效果。从API版本26.0.0开始，该接口在Phone、Tablet、PC/2in1中均可正常使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -1714,7 +1719,7 @@ try {
 
 #### applicationManager.getFreezeExemptedApps22+
 
-getFreezeExemptedApps(admin: Want): Array<common.ApplicationInstance>
+getFreezeExemptedApps(admin: Want | null): Array<common.ApplicationInstance>
 
 获取当前设备下所有用户后台防冻结应用名单。
 
@@ -1722,7 +1727,7 @@ getFreezeExemptedApps(admin: Want): Array<common.ApplicationInstance>
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
-设备行为差异： 该接口在Phone和Tablet中可正常调用，在其他设备中调用无效果。
+设备行为差异： 在API版本26.0.0之前，该接口在Phone和Tablet中可正常调用，在其他设备中调用无效果。从API版本26.0.0开始，该接口在Phone、Tablet、PC/2in1中均可正常使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -1730,7 +1735,7 @@ getFreezeExemptedApps(admin: Want): Array<common.ApplicationInstance>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，API版本26.0.0之前，传入Want时查询对应企业设备管理应用设置的策略。从API版本26.0.0开始，新增支持传入null时查询实际生效的策略。 |
 
 返回值：
 
@@ -1829,7 +1834,7 @@ try {
 
 #### applicationManager.isAbilityDisabled23+
 
-isAbilityDisabled(admin: Want, bundleName: string, accountId: number, abilityName: string): boolean
+isAbilityDisabled(admin: Want | null, bundleName: string, accountId: number, abilityName: string): boolean
 
 获取指定应用（系统应用和三方应用均支持）的Ability组件是否被禁用。
 
@@ -1843,7 +1848,7 @@ isAbilityDisabled(admin: Want, bundleName: string, accountId: number, abilityNam
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，API版本26.0.0之前，传入Want时查询对应企业设备管理应用设置的策略。从API版本26.0.0开始，新增支持传入null时查询实际生效的策略。 |
 | bundleName | string | 是 | 应用包名，指定是否禁用的应用包名。 |
 | accountId | number | 是 | 用户ID，取值范围：大于等于0的整数。 accountId可以通过@ohos.account.osAccount中的[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9-1)等接口来获取。 |
 | abilityName | string | 是 | 表示要禁用/解除禁用的Ability组件名称（当前仅支持UIAbility）。 |
@@ -2102,13 +2107,13 @@ try {
 
 addAllowedNotificationBundles(admin: Want, bundleNames: Array<string>, accountId: number): void
 
-添加允许发送通知的应用名单。设置通知白名单后，不在此名单内的应用无法发送通知。
+添加允许发送通知的应用名单。设置通知允许名单后，不在此名单内的应用无法发送通知。
 
-![](./img/note_3.0-zh-cn.png) 1.如果Kiosk模式与通知白名单策略同时设置，那么设置Kiosk模式的应用与通知白名单中的应用都可以发送通知。
+![](./img/note_3.0-zh-cn.png) 1.如果Kiosk模式与通知允许名单策略同时设置，那么设置Kiosk模式的应用与通知允许名单中的应用都可以发送通知。
 
-2.当已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicy)设置了禁用设备通知能力时，再通过本接口设置通知白名单，会抛出错误码9200010。
+2.当已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated)设置了禁用设备通知能力时，再通过本接口设置通知允许名单，会抛出错误码9200010。
 
-3.通知白名单对系统服务不生效，系统服务始终可以发送通知。系统应用受通知白名单管控。
+3.通知允许名单对系统服务不生效，系统服务始终可以发送通知。系统应用受通知允许名单管控。
 
 4.支持跨用户设置，设置后跨用户立即生效。
 
@@ -2279,6 +2284,205 @@ try {
 }
 ```
 
+#### applicationManager.addAllowedDistributeAbilityConnBundles
+
+addAllowedDistributeAbilityConnBundles(admin: Want, appIdentifiers: Array<string>, serviceType: ServiceType, accountId: number): void
+
+为指定用户下的特定分布式业务添加允许跨设备的应用名单。即名单中的应用可以不受[setDisallowedPolicyForAccount](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicyforaccountdeprecated)的限制，通过使用该特定分布式业务跨设备传输数据。
+
+当前支持的分布式业务类型有：[协同业务](#servicetype)。
+
+![](./img/note_3.0-zh-cn.png) 1.如果要设置允许使用特定分布式业务的应用名单，在调用本接口前必须已经通过[setDisallowedPolicyForAccount](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicyforaccountdeprecated)接口禁用了向其他设备传输数据的设备间单向传输数据的能力，否则会抛出错误码9201043。
+
+2.当向其他设备传输数据的设备间单向传输数据的能力被解除禁用时，通过本接口设置的允许使用特定分布式业务的应用名单会被同步清除。
+
+起始版本： 26.0.0
+
+需要权限： ohos.permission.ENTERPRISE_MANAGE_APPLICATION
+
+系统能力： SystemCapability.Customization.EnterpriseDeviceManager
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
+| appIdentifiers | Array | 是 | 应用[唯一标识符](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-bundleinfo#signatureinfo)的数组，可以通过接口[bundleManager.getBundleInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundleinfo14-2)获取bundleInfo.signatureInfo.appIdentifier。允许列表总数不能超过200个。 |
+| serviceType | [ServiceType](#servicetype) | 是 | 分布式业务类型。 |
+| accountId | number | 是 | 用户ID，取值范围：大于等于0的整数。 accountId可以通过@ohos.account.osAccount中的[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9-1)等接口来获取。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[企业设备管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprisedevicemanager)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 9200001 | The application is not an administrator application of the device. |
+| 9200002 | The administrator application does not have permission to manage the device. |
+| 9200012 | Parameter verification failed. |
+| 9201043 | Prerequisites for the API call have not been satisfied. For example, distributed outgoing transmission is not disallowed before adding the distributed bidirectional collaboration trustlist. |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
+
+示例：
+
+```
+import { applicationManager, restrictions } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+// 如果要在100用户下，禁止设备上除了指定应用以外的其他应用向其他设备传输数据，需要执行两个步骤：
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+let accountId: number = 100;
+
+// 步骤1. 禁用100用户下的设备间单向传输数据能力（若之前已经设置过设备间单向传输数据能力的禁用，此处无需重复设置）
+try {
+  restrictions.setDisallowedPolicyForAccount(wantTemp, restrictions.FeatureForAccount.DISTRIBUTED_TRANSMISSION_OUTGOING, true, accountId);
+  console.info('Succeeded in setting distributedTransmissionOutgoing disabled');
+} catch (err) {
+  console.error(`Failed to set distributedTransmissionOutgoing disabled. Code is ${err.code}, message is ${err.message}`);
+}
+
+// 步骤2. 设置100用户下允许使用某种分布式业务（例如协同业务）的应用名单
+try {
+  // 需根据实际情况进行替换
+  let appIdentifiers: Array<string> = ['6917****3569'];
+  applicationManager.addAllowedDistributeAbilityConnBundles(wantTemp, appIdentifiers, applicationManager.ServiceType.COLLABORATION_SERVICE, accountId);
+  console.info('Succeeded in adding allowed distribute ability conn bundles.');
+} catch(err) {
+  console.error(`Failed to add allowed distribute ability conn bundles. Code: ${err.code}, message: ${err.message}`);
+}
+// 执行以上两个步骤后，在100用户下，仅应用6917****3569可以通过协同业务向其他设备传输数据，其他应用无法向其他设备传输数据。
+// 注意：禁用某用户下的设备间单向传输数据能力后，是否需要添加允许使用协同业务的应用名单，应根据实际业务需求判断。
+```
+
+#### applicationManager.removeAllowedDistributeAbilityConnBundles
+
+removeAllowedDistributeAbilityConnBundles(admin: Want, appIdentifiers: Array<string>, serviceType: ServiceType, accountId: number): void
+
+为指定用户下的特定分布式业务移除允许跨设备的应用名单。移除后，若名单中还有剩余的应用，则仅名单中的应用可以不受[setDisallowedPolicyForAccount](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicyforaccountdeprecated)的限制，通过使用该特定分布式业务跨设备传输数据；若名单已被清空，无剩余的应用，则所有应用在指定用户下都不允许使用该特定分布式业务跨设备传输数据。
+
+起始版本： 26.0.0
+
+需要权限： ohos.permission.ENTERPRISE_MANAGE_APPLICATION
+
+系统能力： SystemCapability.Customization.EnterpriseDeviceManager
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
+| appIdentifiers | Array | 是 | 应用[唯一标识符](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-bundleinfo#signatureinfo)的数组，可以通过接口[bundleManager.getBundleInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundleinfo14-2)获取bundleInfo.signatureInfo.appIdentifier。允许列表总数不能超过200个。 |
+| serviceType | [ServiceType](#servicetype) | 是 | 分布式业务类型。 |
+| accountId | number | 是 | 用户ID，取值范围：大于等于0的整数。 accountId可以通过@ohos.account.osAccount中的[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9-1)等接口来获取。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[企业设备管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprisedevicemanager)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 9200001 | The application is not an administrator application of the device. |
+| 9200002 | The administrator application does not have permission to manage the device. |
+| 9200012 | Parameter verification failed. |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
+
+示例：
+
+```
+import { applicationManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+
+try {
+  // 需根据实际情况进行替换
+  let appIdentifiers: Array<string> = ['6917****3569'];
+  let accountId: number = 100;
+  applicationManager.removeAllowedDistributeAbilityConnBundles(wantTemp, appIdentifiers, applicationManager.ServiceType.COLLABORATION_SERVICE, accountId);
+  console.info('Succeeded in removing allowed distribute ability conn bundles.');
+  // 注意：移除用户下允许使用协同业务的应用名单后，是否需要解除禁用该用户下的设备间单向传输数据能力，应根据实际业务需求判断。
+} catch(err) {
+  console.error(`Failed to remove allowed distribute ability conn bundles. Code: ${err.code}, message: ${err.message}`);
+}
+```
+
+#### applicationManager.getAllowedDistributeAbilityConnBundles
+
+getAllowedDistributeAbilityConnBundles(admin: Want | null, serviceType: ServiceType, accountId: number): Array<string>
+
+获取指定用户下特定分布式业务的允许跨设备应用名单。
+
+起始版本： 26.0.0
+
+需要权限： ohos.permission.ENTERPRISE_MANAGE_APPLICATION
+
+系统能力： SystemCapability.Customization.EnterpriseDeviceManager
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
+| serviceType | [ServiceType](#servicetype) | 是 | 分布式业务类型。 |
+| accountId | number | 是 | 用户ID，取值范围：大于等于0的整数。 accountId可以通过@ohos.account.osAccount中的[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9-1)等接口来获取。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Array | 指定用户下特定分布式业务的允许跨设备应用的[唯一标识符](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-bundleinfo#signatureinfo)数组。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[企业设备管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprisedevicemanager)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 9200001 | The application is not an administrator application of the device. |
+| 9200002 | The administrator application does not have permission to manage the device. |
+| 9200012 | Parameter verification failed. |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
+
+示例：
+
+```
+import { applicationManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+
+try {
+  // 需根据实际情况进行替换
+  let accountId: number = 100;
+  let result: Array<string> = applicationManager.getAllowedDistributeAbilityConnBundles(wantTemp, applicationManager.ServiceType.COLLABORATION_SERVICE, accountId);
+  console.info(`Succeeded in getting allowed distribute ability conn bundles: ${JSON.stringify(result)}`);
+} catch(err) {
+  console.error(`Failed to get allowed distribute ability conn bundles. Code: ${err.code}, message: ${err.message}`);
+}
+```
+
 #### applicationManager.queryTrafficStats
 
 queryTrafficStats(admin: Want, bundleName: string, appIndex: number, accountId: number, networkInfo: statistics.NetworkInfo): Promise<statistics.NetStatsInfo>
@@ -2373,6 +2577,68 @@ async function queryTrafficStats() {
 }
 ```
 
+#### applicationManager.getApplicationWindowStates
+
+getApplicationWindowStates(admin: Want, bundleName: string, appIndex: number): Array<WindowStateInfo>
+
+查询指定应用的窗口状态信息列表。可以查询到应用是否在底部Dock栏，以及当前应用窗口是否在前台显示等信息。
+
+起始版本： 26.0.0
+
+需要权限： ohos.permission.ENTERPRISE_MANAGE_APPLICATION
+
+系统能力： SystemCapability.Customization.EnterpriseDeviceManager
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
+| bundleName | string | 是 | 应用的包名。 |
+| appIndex | number | 是 | 应用分身索引，取值范围：大于等于0的整数。 appIndex可以通过@ohos.bundle.bundleManager中的[getAppCloneIdentity](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetappcloneidentity14)等接口来获取。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Array | 返回应用窗口状态信息的数组。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[企业设备管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprisedevicemanager)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 9200001 | The application is not an administrator application of the device. |
+| 9200002 | The administrator application does not have permission to manage the device. |
+| 9200012 | Parameter verification failed. |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
+
+示例：
+
+```
+import { applicationManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+// 被查询的应用包名，需根据实际情况进行替换
+let bundleName: string = 'com.example.myapplication';
+// 被查询应用的分身索引，需根据实际情况进行替换
+let appIndex: number = 0;
+try {
+  let result: Array<applicationManager.WindowStateInfo> = applicationManager.getApplicationWindowStates(wantTemp, bundleName, appIndex);
+  console.info(`Succeeded in getting application window states, result: ${JSON.stringify(result)}`);
+} catch(err) {
+  console.error(`Failed to get application window states. Code: ${err.code}, message: ${err.message}`);
+}
+```
+
 #### KioskFeature20+
 
 Kiosk模式的特征。
@@ -2417,6 +2683,56 @@ Kiosk模式的特征。
 | bundleName | string | 否 | 否 | 应用的包名。 |
 | appIndex | number | 否 | 否 | 应用分身索引，取值范围：大于等于0的整数。 appIndex可以通过@ohos.bundle.bundleManager中的[getAppCloneIdentity](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetappcloneidentity14)等接口来获取。 |
 | abilityInFgTotalTime | number | 否 | 否 | Ability在前台运行的总时长，单位：毫秒。 |
+
+#### WindowStateInfo
+
+应用窗口状态信息。
+
+起始版本： 26.0.0
+
+系统能力： SystemCapability.Customization.EnterpriseDeviceManager
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| windowId | number | 否 | 否 | 应用窗口ID。 |
+| state | [WindowState](#windowstate) | 否 | 否 | 应用窗口状态。 |
+| isOnDock | boolean | 否 | 否 | 表示应用窗口是否在底部Dock栏上显示。PC/2in1设备和Tablet设备的PC模式的应用在底部Dock栏上返回true，其他设备返回false。 |
+| name | string | 否 | 否 | 应用窗口名称。 |
+
+#### ServiceType
+
+分布式业务类型。
+
+起始版本： 26.0.0
+
+系统能力： SystemCapability.Customization.EnterpriseDeviceManager
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| COLLABORATION_SERVICE | 0 | 协同业务。允许使用协同业务的应用，可以通过使用[UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext)、[UIExtensionContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiextensioncontext)中的API或[跨设备连接UIAbility开发指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/abilityconnectmanager-guidelines)中的方式，跨设备拉起其他应用的页面并向其传输数据。 |
+
+#### WindowState
+
+应用窗口状态。
+
+起始版本： 26.0.0
+
+系统能力： SystemCapability.Customization.EnterpriseDeviceManager
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| DISCONNECT | 0 | 表示窗口已创建，但是暂不可用状态。 |
+| CONNECT | 1 | 表示窗口已创建完成，可正常使用状态。 |
+| FOREGROUND | 2 | 前台状态，表示当前窗口进入前台显示，是一个过渡状态。 |
+| ACTIVE | 3 | 前台激活状态，表示当前窗口已前台显示。 |
+| INACTIVE | 4 | 前台非激活状态，表示当前窗口即将进入后台，是一个过渡状态。 |
+| BACKGROUND | 5 | 后台状态，表示当前窗口退到后台，不可见状态。 |
 
 #### applicationManager.queryBundleStatsInfos
 
@@ -2655,7 +2971,7 @@ getHideLauncherIcon(admin: Want | null): Array<string>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备有多个MDM应用时，传入admin查询对应admin设置的策略。传入null时查询整机实际生效的策略。 |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，传入admin查询对应admin设置的策略。传入null时查询整机实际生效的策略。 |
 
 返回值：
 

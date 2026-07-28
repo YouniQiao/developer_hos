@@ -2,13 +2,13 @@
 title: "Class (DragController)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-dragcontroller"
 catalog: "harmonyos-references"
-content_hash: "fdab936f21a3"
-synced_at: "2026-07-09T00:57:28.711979"
+content_hash: "f2540c5b7de5"
+synced_at: "2026-07-28T16:41:03.147925"
 ---
 
 # Class (DragController)
 
-提供发起主动拖拽的能力，当应用接收到触摸或长按等事件时可以主动发起拖拽的动作，并在其中携带拖拽信息。
+提供拖拽控制能力，支持在应用接收到触摸或长按等事件时主动发起拖拽并携带拖拽信息，也支持创建拖拽Action、获取拖拽背板、控制拖拽事件上报和拖拽启动请求、取消拖拽数据加载，以及设置不允许落入目标区域时的禁止角标显示。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -31,9 +31,9 @@ executeDrag(custom: CustomBuilder | DragItemInfo, dragInfo: dragController.DragI
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| custom | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | [DragItemInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#dragiteminfo) | 是 | 拖拽发起后跟手效果所拖拽的对象。 **说明：** 不支持全局builder。如果builder中使用了[Image](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-image)组件，应尽量开启同步加载，即配置Image的[syncLoad](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-image#syncload8)为true。该builder只用于生成当次拖拽中显示的图片。builder的根组件宽高为0时，无法生成拖拽显示的图片导致拖拽失败。builder的修改不会同步到当前正在拖拽的图片，对builder的修改需要在下一次拖拽时生效。 |
-| dragInfo | [dragController.DragInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-dragcontroller#draginfo) | 是 | 拖拽信息。 |
-| callback | [AsyncCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#asynccallback) | 是 | 拖拽结束返回结果的回调 - event：拖拽事件信息，仅包括拖拽结果。 - extraParams：拖拽事件额外信息。 |
+| custom | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | [DragItemInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#dragiteminfo) | 是 | 拖拽发起后跟手效果所拖拽的对象。当仅需通过builder生成当次拖拽中显示的图片时，使用CustomBuilder；当需要同时提供pixelMap、builder或extraInfo等拖拽项信息时，使用DragItemInfo。 **说明：** CustomBuilder不支持全局builder。如果builder中使用了[Image](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-image)组件，建议开启同步加载，即配置Image的[syncLoad](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-image#syncload8)为true。该builder只用于生成当次拖拽中显示的图片。builder的根组件宽高为0时，无法生成拖拽显示的图片导致拖拽失败。builder的修改不会同步到当前正在拖拽的图片，对builder的修改需要在下一次拖拽时生效。 |
+| dragInfo | [dragController.DragInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-dragcontroller#draginfo) | 是 | 拖拽信息对象，用于指定发起拖拽的触摸点、拖拽过程中携带的数据、额外信息等拖拽配置信息。 |
+| callback | [AsyncCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#asynccallback) | 是 | 拖拽结束返回结果的回调，回调参数包括err和data：err表示错误信息，data表示拖拽事件结果；data.event为拖拽事件信息，仅包括拖拽结果，data.extraParams为拖拽事件额外信息。 |
 
 错误码：
 
@@ -61,7 +61,7 @@ struct DragControllerPage {
   @Builder
   DraggingBuilder() {
     Column() {
-      Text("DraggingBuilder")
+      Text('DraggingBuilder')
     }
     .width(100)
     .height(100)
@@ -82,18 +82,17 @@ struct DragControllerPage {
                 data: unifiedData,
                 extraParams: ''
               };
-              let eve: DragInfo = new DragInfo();
               this.getUIContext().getDragController().executeDrag(() => {
                 this.DraggingBuilder()
-              }, dragInfo, (err, eve) => {
-                if (eve.event) {
-                  if (eve.event.getResult() == DragResult.DRAG_SUCCESSFUL) {
+              }, dragInfo, (err, dragEventParam) => {
+                if (dragEventParam.event) {
+                  if (dragEventParam.event.getResult() == DragResult.DRAG_SUCCESSFUL) {
                     // ...
-                  } else if (eve.event.getResult() == DragResult.DRAG_FAILED) {
+                  } else if (dragEventParam.event.getResult() == DragResult.DRAG_FAILED) {
                     // ...
                   }
                 }
-              })
+              });
             }
           }
         })
@@ -103,7 +102,7 @@ struct DragControllerPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612243.gif)
+ ![](./img/zh-cn_image_0000002655848254.gif)
 
 #### executeDrag11+
 
@@ -119,14 +118,14 @@ executeDrag(custom: CustomBuilder | DragItemInfo, dragInfo: dragController.DragI
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| custom | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | [DragItemInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#dragiteminfo) | 是 | 拖拽发起后跟手效果所拖拽的对象。 |
-| dragInfo | [dragController.DragInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-dragcontroller#draginfo) | 是 | 拖拽信息。 |
+| custom | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | [DragItemInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#dragiteminfo) | 是 | 拖拽发起后跟手效果所拖拽的对象。当仅需通过builder生成当次拖拽中显示的图片时，使用CustomBuilder；当需要同时提供pixelMap、builder或extraInfo等拖拽项信息时，使用DragItemInfo。 **说明：** CustomBuilder不支持全局builder。如果builder中使用了[Image](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-image)组件，应尽量开启同步加载，即配置Image的[syncLoad](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-image#syncload8)为true。该builder只用于生成当次拖拽中显示的图片。builder的根组件宽高为0时，无法生成拖拽显示的图片导致拖拽失败。builder的修改不会同步到当前正在拖拽的图片，对builder的修改需要在下一次拖拽时生效。 |
+| dragInfo | [dragController.DragInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-dragcontroller#draginfo) | 是 | 拖拽信息对象。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | 拖拽结束返回结果的回调 - event：拖拽事件信息，仅包括拖拽结果。 - extraParams：拖拽事件额外信息。 |
+| Promise | Promise对象。resolve返回拖拽结束结果： - event：拖拽事件信息，仅包括拖拽结果。 - extraParams：拖拽事件额外信息。reject返回错误信息。 |
 
 错误码：
 
@@ -157,7 +156,7 @@ struct DragControllerPage {
   @Builder
   DraggingBuilder() {
     Column() {
-      Text("DraggingBuilder")
+      Text('DraggingBuilder')
     }
     .width(100)
     .height(100)
@@ -167,7 +166,7 @@ struct DragControllerPage {
   @Builder
   PixmapBuilder() {
     Column() {
-      Text("PixmapBuilder")
+      Text('PixmapBuilder')
     }
     .width(100)
     .height(100)
@@ -188,32 +187,31 @@ struct DragControllerPage {
                 data: unifiedData,
                 extraParams: ''
               };
-              let pb: CustomBuilder = (): void => {
+              let pixmapBuilder: CustomBuilder = (): void => {
                 this.PixmapBuilder()
               };
-              this.getUIContext().getComponentSnapshot().createFromBuilder(pb).then((pix: image.PixelMap) => {
-                this.pixmap = pix;
+              this.getUIContext().getComponentSnapshot().createFromBuilder(pixmapBuilder).then((pixelMap: image.PixelMap) => {
+                this.pixmap = pixelMap;
                 let dragItemInfo: DragItemInfo = {
                   pixelMap: this.pixmap,
                   builder: () => {
                     this.DraggingBuilder()
                   },
-                  extraInfo: "DragItemInfoTest"
+                  extraInfo: 'DragItemInfoTest'
                 };
-                let eve: DragInfo = new DragInfo();
                 this.getUIContext()
                   .getDragController()
                   .executeDrag(dragItemInfo, dragInfo)
-                  .then((eve) => {
-                    if (eve.event.getResult() == DragResult.DRAG_SUCCESSFUL) {
+                  .then((dragEventParam) => {
+                    if (dragEventParam.event.getResult() == DragResult.DRAG_SUCCESSFUL) {
                       // ...
-                    } else if (eve.event.getResult() == DragResult.DRAG_FAILED) {
+                    } else if (dragEventParam.event.getResult() == DragResult.DRAG_FAILED) {
                       // ...
                     }
                   })
                   .catch((err: Error) => {
                   })
-              })
+              });
             }
           }
         })
@@ -223,15 +221,15 @@ struct DragControllerPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631412952.gif)
+ ![](./img/zh-cn_image_0000002686087683.gif)
 
 #### createDragAction11+
 
 createDragAction(customArray: Array<CustomBuilder | DragItemInfo>, dragInfo: dragController.DragInfo): dragController.DragAction
 
-创建拖拽的Action对象，需要显式指定拖拽背板图（可多个），以及拖拽的数据，跟手点等信息；当通过一个已创建的Action对象发起的拖拽未结束时，无法再次创建新的Action对象，接口会抛出异常；当Action对象的生命周期结束后，注册在该对象上的回调函数会失效，因此需要在一个尽量长的作用域下持有该对象，并在每次发起拖拽前通过createDragAction返回新的对象覆盖旧值。
+创建拖拽的Action对象时，需要显式指定拖拽背板图（可多个）、拖拽的数据、跟手点等信息。当通过一个已创建的Action对象发起的拖拽未结束时，无法再次创建新的Action对象，接口会抛出异常。当Action对象的生命周期结束后，注册在该对象上的回调函数会失效。因此，需要在需要接收该对象回调期间持有该对象，并在每次发起拖拽前通过createDragAction返回新的对象覆盖旧值。
 
-![](./img/note_3.0-zh-cn.png) 建议控制传递的拖拽背板数量，传递过多容易导致拖起的效率问题。
+![](./img/note_3.0-zh-cn.png) 建议控制传递的拖拽背板数量，避免因拖拽背板数量增加导致拖起耗时增加。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -241,8 +239,8 @@ createDragAction(customArray: Array<CustomBuilder | DragItemInfo>, dragInfo: dra
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| customArray | Array | 是 | 拖拽发起后跟手效果所拖拽的对象。 |
-| dragInfo | [dragController.DragInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-dragcontroller#draginfo) | 是 | 拖拽信息。 |
+| customArray | Array | 是 | 拖拽发起后跟手效果所拖拽的对象。 **说明：** CustomBuilder不支持全局builder。如果builder中使用了[Image](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-image)组件，应尽量开启同步加载，即配置Image的[syncLoad](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-image#syncload8)为true。builder用于生成拖拽中显示的图片。builder的根组件宽高为0时，无法生成拖拽显示的图片导致拖拽失败。builder的修改不会同步到当前正在拖拽的图片，对builder的修改需要在下一次拖拽时生效。 |
+| dragInfo | [dragController.DragInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-dragcontroller#draginfo) | 是 | 拖拽信息对象。 |
 
 返回值：
 
@@ -261,8 +259,7 @@ createDragAction(customArray: Array<CustomBuilder | DragItemInfo>, dragInfo: dra
 
 示例：
 
-1.在EntryAbility.ets中获取UI上下文并保存至LocalStorage中。
-
+1. 在EntryAbility.ets中获取UI上下文并保存至LocalStorage中。 
 ```
 import { AbilityConstant, UIAbility, Want } from '@kit.AbilityKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
@@ -321,17 +318,16 @@ export default class EntryAbility extends UIAbility {
   }
 }
 ```
- 2.通过this.getUIContext().getSharedLocalStorage()获取上下文，进而获取DragController对象实施后续操作。
 
+2. 调用this.getUIContext().getSharedLocalStorage()获取上下文，再获取DragController对象以执行后续拖拽操作。 
 ```
-import { dragController, componentSnapshot, UIContext, DragController } from '@kit.ArkUI';
+import { dragController, UIContext } from '@kit.ArkUI';
 import { image } from '@kit.ImageKit';
 import { unifiedDataChannel } from '@kit.ArkData';
 
 @Entry()
 @Component
 struct DragControllerPage {
-  @State pixmap: image.PixelMap | null = null;
   private dragAction: dragController.DragAction | null = null;
   customBuilders: Array<CustomBuilder | DragItemInfo> = new Array<CustomBuilder | DragItemInfo>();
   storages = this.getUIContext().getSharedLocalStorage();
@@ -339,7 +335,7 @@ struct DragControllerPage {
   @Builder
   DraggingBuilder() {
     Column() {
-      Text("DraggingBuilder")
+      Text('DraggingBuilder')
     }
     .width(100)
     .height(100)
@@ -351,7 +347,7 @@ struct DragControllerPage {
       Button('多对象dragAction customBuilder拖拽').onTouch((event?: TouchEvent) => {
         if (event) {
           if (event.type == TouchType.Down) {
-            console.info("multi drag Down by listener");
+            console.info('multi drag Down by listener');
             this.customBuilders.push(() => {
               this.DraggingBuilder()
             });
@@ -369,30 +365,31 @@ struct DragControllerPage {
               extraParams: ''
             };
             try {
-              let uiContext: UIContext = this.storages?.get<UIContext>('uiContext') as UIContext;
-              this.dragAction = uiContext.getDragController().createDragAction(this.customBuilders, dragInfo);
+              this.dragAction = this.getUIContext().getDragController().createDragAction(this.customBuilders, dragInfo);
               if (!this.dragAction) {
-                console.info("listener dragAction is null");
+                console.info('listener dragAction is null');
                 return;
               }
               this.dragAction.on('statusChange', (dragAndDropInfo) => {
                 if (dragAndDropInfo.status == dragController.DragStatus.STARTED) {
-                  console.info("drag has start");
+                  console.info('drag has start');
                 } else if (dragAndDropInfo.status == dragController.DragStatus.ENDED) {
-                  console.info("drag has end");
+                  console.info('drag has end');
                   if (!this.dragAction) {
                     return;
                   }
+                  // 拖拽结束后，清空拖拽背板数组并取消状态监听。
                   this.customBuilders.splice(0, this.customBuilders.length);
                   this.dragAction.off('statusChange');
                 }
-              })
+              });
               this.dragAction.startDrag().then(() => {
-              }).catch((err: Error) => {
-                console.error(`start drag Error:${err.message}`);
-              })
+              }).catch((err: BusinessError) => {
+                console.error(`Failed to start drag. Code: ${err.code}, message: ${err.message}`);
+              });
             } catch (err) {
-              console.error(`create dragAction Error:${err.message}`);
+              const error = err as BusinessError;
+              console.error(`Failed to create dragAction. Code: ${error.code}, message: ${error.message}`);
             }
           }
         }
@@ -403,7 +400,8 @@ struct DragControllerPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732183.gif)
+
+![](./img/zh-cn_image_0000002685927855.gif)
 
 #### getDragPreview11+
 
@@ -419,7 +417,7 @@ getDragPreview(): dragController.DragPreview
 
 | 类型 | 说明 |
 | --- | --- |
-| [dragController.DragPreview](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-dragcontroller#dragpreview11) | 一个代表拖拽背板的对象，提供背板样式设置的接口，在OnDrop和OnDragEnd回调中使用不生效。 |
+| [dragController.DragPreview](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-dragcontroller#dragpreview11) | 返回一个代表拖拽背板的对象，提供背板样式设置的接口；在onDrop和onDragEnd回调中使用该对象设置背板样式不生效。 |
 
 错误码： 通用错误码请参考[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
@@ -431,7 +429,7 @@ getDragPreview(): dragController.DragPreview
 
 setDragEventStrictReportingEnabled(enable: boolean): void
 
-当目标从父组件拖拽到子组件时，通过该方法设置是否会触发父组件的onDragLeave的回调。
+当拖拽对象从父组件拖拽到子组件时，是否会触发父组件的onDragLeave回调。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -441,7 +439,7 @@ setDragEventStrictReportingEnabled(enable: boolean): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| enable | boolean | 是 | 将目标从父组件拖拽到子组件时，是否会触发父组件的onDragLeave的回调。true表示触发父组件的onDragLeave的回调，false表示不触发。 |
+| enable | boolean | 是 | 当拖拽对象从父组件拖拽到子组件时，是否会触发父组件的onDragLeave回调。true表示触发父组件的onDragLeave回调，false表示不触发。 |
 
 示例：
 
@@ -497,7 +495,7 @@ cancelDataLoading(key: string): void
 
 notifyDragStartRequest(requestStatus: dragController.DragStartRequestStatus): void
 
-控制应用是否可以发起拖拽。
+控制应用是否可以发起拖拽。该接口通常与组件的onPreDrag和onDragStart回调配合使用：在拖拽开始但数据尚未准备完成时，可在onDragStart回调中调用notifyDragStartRequest(DragStartRequestStatus.WAITING)，阻止立即发起拖拽；待拖拽数据和预览资源准备完成后，再调用notifyDragStartRequest(DragStartRequestStatus.READY)，允许继续发起拖拽。若未按拖拽准备流程正确上报状态，可能导致拖拽无法按预期启动，或启动时拖拽数据尚未准备完成。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -507,7 +505,7 @@ notifyDragStartRequest(requestStatus: dragController.DragStartRequestStatus): vo
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| requestStatus | [dragController.DragStartRequestStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-dragcontroller#dragstartrequeststatus18) | 是 | 定义应用是否可以发起拖拽。 |
+| requestStatus | [dragController.DragStartRequestStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-dragcontroller#dragstartrequeststatus18) | 是 | 定义应用是否可以发起拖拽。取值为WAITING时，表示应用数据仍在准备阶段，暂不允许发起拖拽；取值为READY时，表示应用数据已准备完成，允许继续发起拖拽。 |
 
 示例：
 
@@ -529,7 +527,10 @@ struct NormalEts {
   loadData() {
     // 设置4s后才能发起拖拽
     let timeout = setTimeout(() => {
-      this.getUIContext().getComponentSnapshot().get("image1", (error: Error, pixmap: image.PixelMap) => {
+      this.getUIContext().getComponentSnapshot().get('image1', (error: Error, pixmap: image.PixelMap) => {
+        if (error) {
+          return;
+        }
         this.pixmap = pixmap;
         this.previewData = {
           pixelMap: this.pixmap
@@ -537,9 +538,10 @@ struct NormalEts {
       });
 
       let data: unifiedDataChannel.Image = new unifiedDataChannel.Image();
-      data.imageUri = "app.media.startIcon";
+      data.imageUri = 'app.media.startIcon';
       let unifiedData = new unifiedDataChannel.UnifiedData(data);
       this.unifiedData1 = unifiedData;
+      this.finished = true;
 
       this.getUIContext().getDragController().notifyDragStartRequest(dragController.DragStartRequestStatus.READY);
     }, 4000);
@@ -548,10 +550,10 @@ struct NormalEts {
 
   build() {
     Column({ space: 20 }) {
-      Image($r("app.media.startIcon"))
+      Image($r('app.media.startIcon'))
         .width(150)
         .height(150)
-        .id("image1")
+        .id('image1')
         .draggable(true)
         .dragPreview(this.previewData)
         .onPreDrag((status: PreDragStatus) => {
@@ -580,13 +582,13 @@ struct NormalEts {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253062.gif)
+ ![](./img/zh-cn_image_0000002656008176.gif)
 
 #### enableDropDisallowedBadge20+
 
 enableDropDisallowedBadge(enabled: boolean): void
 
-当组件的类型与配置的[allowDrop](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-drag-drop#allowdrop)无交集时可显示禁用角标。通常，当组件可以接收或处理拖拽数据，或当它返回DragBehavior.COPY向系统声明数据以复制方式处理时，拖拽对象会显示加号及数据编号的角标。如果返回DragBehavior.MOVE以向系统声明数据以剪切方式处理，拖拽对象将只显示数据编号的角标。当目标进行拖拽时，若系统决定或组件显式声明无法处理拖拽数据，可通过该方法检查是否应显示拖拽禁止角标。该接口暂不支持[UIExtension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-uiextension)。
+当拖拽数据类型与组件配置的[allowDrop](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-drag-drop#allowdrop)允许接收的数据类型无交集时，可显示禁用角标。通常，当组件可以接收或处理拖拽数据，或当它返回DragBehavior.COPY向系统声明数据以复制方式处理时，拖拽对象会显示加号及数据编号的角标。如果返回DragBehavior.MOVE以向系统声明数据以剪切方式处理，拖拽对象将只显示数据编号的角标。当目标进行拖拽时，若系统决定或组件显式声明无法处理拖拽数据，可通过该方法检查是否应显示拖拽禁止角标。该接口暂不支持[UIExtension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-uiextension)。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -596,11 +598,11 @@ enableDropDisallowedBadge(enabled: boolean): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| enabled | boolean | 是 | 当组件的类型与配置的[allowDrop](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-drag-drop#allowdrop)无交集时可显示禁用角标，当目标进行拖拽时，通过enableDropDisallowedBadge方法检查是否显示拖拽禁止角标。true表示显示拖拽禁止角标，false表示不显示拖拽禁止角标。默认值为false。 |
+| enabled | boolean | 是 | 当拖拽数据类型与组件配置的[allowDrop](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-drag-drop#allowdrop)允许接收的数据类型无交集时，可显示禁用角标；对目标组件进行拖拽时，通过enableDropDisallowedBadge方法检查是否显示拖拽禁止角标。true表示显示拖拽禁止角标，false表示不显示拖拽禁止角标。默认值为false。 |
 
 示例：
 
-该示例通过enableDropDisallowedBadge接口实现了对目标进行拖拽时显示拖拽禁止角标的功能。
+该示例通过enableDropDisallowedBadge接口实现了拖拽对象经过不允许落入的目标区域时显示拖拽禁止角标的功能。
 
 1. 在EntryAbility.ets中调用enableDropDisallowedBadge接口，设置enabled参数为true。 
 ```
@@ -649,4 +651,4 @@ struct Index {
 }
 ```
 
-![](./img/zh-cn_image_0000002661612245.png)
+![](./img/zh-cn_image_0000002655848256.png)

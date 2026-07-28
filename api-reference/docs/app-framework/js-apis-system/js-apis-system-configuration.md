@@ -2,8 +2,8 @@
 title: "@system.configuration (应用配置)"
 upstream_id: "harmonyos-references/js-apis-system-configuration"
 catalog: "harmonyos-references"
-content_hash: "a4191fd63def"
-synced_at: "2026-07-09T00:57:35.277408"
+content_hash: "56bed8e53fd6"
+synced_at: "2026-07-28T16:41:47.170209"
 ---
 
 # @system.configuration (应用配置)
@@ -42,7 +42,7 @@ ArkTS示例：
 ```
 export default {
   getLocale() {
-    const localeInfo = configuration.getLocale();
+    const localeInfo = Configuration.getLocale();
     console.info(localeInfo.language);
   }
 }

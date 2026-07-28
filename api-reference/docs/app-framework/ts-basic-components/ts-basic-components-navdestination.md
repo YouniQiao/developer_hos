@@ -2,13 +2,13 @@
 title: "NavDestination"
 upstream_id: "harmonyos-references/ts-basic-components-navdestination"
 catalog: "harmonyos-references"
-content_hash: "c9939d287bda"
-synced_at: "2026-07-17T16:16:29.456977"
+content_hash: "bfb0de249e14"
+synced_at: "2026-07-28T16:43:59.171835"
 ---
 
 # NavDestination
 
-作为子页面的根容器，用于显示[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)的内容区。
+NavDestination作为[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)的子页面根容器，用于显示Navigation的内容区。支持自定义标题栏和工具栏、管理页面生命周期、配置系统/自定义转场动画、绑定可滚动组件联动等功能。当需要实现多页面导航、管理页面状态、自定义页面交互效果时，使用本组件。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -57,7 +57,7 @@ title(value: string | CustomBuilder | NavDestinationCommonTitle | NavDestination
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | value | string | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | [NavDestinationCommonTitle](#navdestinationcommontitle) | [NavDestinationCustomTitle](#navdestinationcustomtitle) | [Resource14+](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 是 | 页面标题。 |
-| options12+ | [NavigationTitleOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#navigationtitleoptions11) | 否 | 标题栏选项。 |
+| options12+ | [NavigationTitleOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#navigationtitleoptions11) | 否 | 标题栏选项。 默认值：不设置时使用标题栏默认配置。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### [h2]hideTitleBar
 
@@ -83,6 +83,8 @@ hideTitleBar(hide: boolean, animated: boolean)
 
 元服务API： 从API version 13开始，该接口支持在元服务中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 参数：
@@ -98,7 +100,7 @@ fullScreenOverlay(fullScreenOverlay: Optional<boolean>)
 
 设置NavDestination是否以全屏覆盖模式显示。
 
-当参数设置为true时，在Navigation分栏模式下，当前页面会覆盖整个Navigation容器，包括NavBar和内容区。该配置作用于当前NavDestination的所有实例；当路由栈中已有页面以全屏覆盖模式显示时，其后入栈的[DIALOG](#navdestinationmode枚举说明11)页面与未设置fullScreenOverlay为false的[STANDARD](#navdestinationmode枚举说明11)页面也会继承为全屏覆盖显示。未通过该接口设置时，NavDestination默认是普通显示模式，遵循Navigation分栏显示规则。
+当参数设置为true时，在Navigation分栏模式下，当前页面会覆盖整个Navigation容器，包括NavBar和内容区。该配置作用于当前NavDestination的所有实例；当路由栈中已有页面以全屏覆盖模式显示时，其后入栈的[DIALOG](#navdestinationmode枚举说明11)页面与未将fullScreenOverlay设置为false的[STANDARD](#navdestinationmode枚举说明11)页面也会继承为全屏覆盖显示。未通过该接口设置时，NavDestination默认是普通显示模式，遵循Navigation分栏显示规则。
 
 起始版本： 26.0.0
 
@@ -127,14 +129,16 @@ toolbarConfiguration(toolbarParam: Array<ToolbarItem> | CustomBuilder, options?:
 
 元服务API： 从API version 13开始，该接口支持在元服务中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| toolbarParam | Array | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 是 | 工具栏内容。 使用Array写法设置的工具栏有如下特性： -工具栏所有选项均分底部工具栏，在每个均分内容区布局文本和图标。 -竖屏模式最多支持显示5个图标，多余的图标会被放入自动生成的更多图标中，点击更多图标，可以展示剩余内容。横屏模式时，如果为[Split](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#navigationmode9枚举说明)模式，仍按照竖屏模式显示，如果为[Stack](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#navigationmode9枚举说明)模式需配合[menus](#menus12)属性的Array使用，底部工具栏会自动隐藏，同时底部工具栏所有选项移动至页面右上角菜单。 使用[CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8)写法为用户自定义工具栏选项，不具备以上功能。 |
-| options | [NavigationToolbarOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#navigationtoolbaroptions11) | 否 | 工具栏选项。包含工具栏背景颜色、工具栏背景模糊样式及模糊选项、工具栏背景属性、工具栏布局方式、是否隐藏工具栏的文本、工具栏更多图标的菜单选项。 |
+| toolbarParam | Array | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 是 | 工具栏内容。 使用Array写法设置的工具栏有如下特性： -底部工具栏的每个选项均分宽度，用于显示文本和图标。 -竖屏模式最多支持显示5个图标，多余的图标会被放入自动生成的更多图标中，点击更多图标可以展示剩余内容。横屏模式时，如果为[Split](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#navigationmode9枚举说明)模式，仍按照竖屏模式显示，如果为[Stack](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#navigationmode9枚举说明)模式需配合[menus](#menus12)属性的Array使用，底部工具栏会自动隐藏，同时底部工具栏所有选项移动至页面右上角菜单。 使用[CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8)写法为用户自定义工具栏选项，不具备以上功能。 |
+| options | [NavigationToolbarOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#navigationtoolbaroptions11) | 否 | 工具栏选项，用于自定义工具栏显示样式。包含工具栏背景颜色、工具栏背景模糊样式及模糊选项、工具栏背景属性、工具栏布局方式、是否隐藏工具栏的文本、工具栏更多图标的菜单选项。当需要自定义工具栏样式时传入，不传入时使用默认工具栏样式。 |
 
 #### [h2]hideToolBar13+
 
@@ -143,6 +147,8 @@ hideToolBar(hide: boolean, animated?: boolean)
 设置是否隐藏工具栏。
 
 元服务API： 从API version 13开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -162,6 +168,8 @@ mode(value: NavDestinationMode)
 ![](./img/note_3.0-zh-cn.png) 从API version 12开始，该接口支持在[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)中调用。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -184,6 +192,8 @@ backButtonIcon(value: ResourceStr | PixelMap | SymbolGlyphModifier)
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 参数：
@@ -204,6 +214,8 @@ backButtonIcon(icon: ResourceStr | PixelMap | SymbolGlyphModifier, accessibility
 - 不支持通过SymbolGlyphModifier对象的fontSize属性修改图标大小、effectStrategy属性修改动效、symbolEffect属性修改动效类型。
 
 元服务API： 从API version 19开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -227,6 +239,8 @@ menus(value: Array<NavigationMenuItem> | CustomBuilder)
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 参数：
@@ -248,6 +262,8 @@ menus(items: Array<NavigationMenuItem> | CustomBuilder, options?: NavigationMenu
 
 元服务API： 从API version 19开始，该接口支持在元服务中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 参数：
@@ -255,7 +271,7 @@ menus(items: Array<NavigationMenuItem> | CustomBuilder, options?: NavigationMenu
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | items | Array | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 是 | 页面右上角菜单。 |
-| options | [NavigationMenuOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#navigationmenuoptions19) | 否 | 页面右上角菜单选项。 |
+| options | [NavigationMenuOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#navigationmenuoptions19) | 否 | 页面右上角菜单选项。 默认值：不设置时使用菜单默认配置。 |
 
 #### [h2]ignoreLayoutSafeArea12+
 
@@ -265,11 +281,13 @@ ignoreLayoutSafeArea(types?: Array<LayoutSafeAreaType>, edges?: Array<LayoutSafe
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 组件设置ignoreLayoutSafeArea之后生效的条件为： 设置LayoutSafeAreaType.SYSTEM时，组件的边界与非安全区域重合时组件能够延伸到非安全区域下。
+- 组件设置ignoreLayoutSafeArea生效条件：设置LayoutSafeAreaType.SYSTEM时，若组件边界与非安全区域重合，组件可延伸到非安全区域内。
 - 若组件扩展到非安全区域内，此时在非安全区域里触发的事件（例如：点击事件）等可能会被系统拦截，优先响应状态栏等系统组件。
 - 组件想要扩展到非安全区域内，需隐藏或者设置标题栏和工具栏为[STACK](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#barstyle12枚举说明)模式。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -278,7 +296,7 @@ ignoreLayoutSafeArea(types?: Array<LayoutSafeAreaType>, edges?: Array<LayoutSafe
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | types | Array | 否 | 配置扩展安全区域的类型。 默认值： [LayoutSafeAreaType.SYSTEM] |
-| edges | Array | 否 | 配置扩展安全区域的方向。 默认值： [LayoutSafeAreaEdge.TOP, LayoutSafeAreaEdge.BOTTOM]。 |
+| edges | Array | 否 | 配置扩展安全区域的方向。 默认值： [LayoutSafeAreaEdge.TOP, LayoutSafeAreaEdge.BOTTOM] 默认扩展顶部和底部方向，用于避让系统状态栏和导航栏的安全区域。 |
 
 #### [h2]systemBarStyle12+
 
@@ -294,21 +312,25 @@ systemBarStyle(style: Optional<SystemBarStyle>)
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| style | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 系统状态栏样式。 |
+| style | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 系统状态栏样式。设置后进入该NavDestination时，系统状态栏会切换到对应样式。 |
 
 #### [h2]systemTransition14+
 
 systemTransition(type: NavigationSystemTransitionType)
 
-设置NavDestination系统转场动画，支持分别设置系统标题栏动画和内容动画。
+设置NavDestination系统转场动画，支持分别设置系统标题栏动画和内容动画。该属性与customTransition同时设置时，后设置的属性生效。
 
 元服务API： 从API version 14开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -326,13 +348,15 @@ recoverable(recoverable: Optional<boolean>)
 
 ![](./img/note_3.0-zh-cn.png) 该接口需要配合Navigation的[recoverable](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#recoverable14)接口使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| recoverable | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | NavDestination是否可恢复，默认为可恢复。 默认值：true true：NavDestination可恢复。 false：NavDestination不可恢复。 |
+| recoverable | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | NavDestination是否可恢复，默认为可恢复。 默认值：true true：NavDestination可恢复，需配合Navigation的recoverable属性使用。 false：NavDestination不可恢复。 |
 
 #### [h2]bindToScrollable14+
 
@@ -348,13 +372,15 @@ bindToScrollable(scrollers: Array<Scroller>)
 
 元服务API： 从API version 14开始，该接口支持在元服务中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| scrollers | Array | 是 | 可滚动容器组件的控制器。 |
+| scrollers | Array | 是 | 可滚动容器组件的控制器。 生效前提：NavDestination的标题栏或工具栏需设置为可见状态。 |
 
 #### [h2]bindToNestedScrollable14+
 
@@ -370,6 +396,8 @@ bindToNestedScrollable(scrollInfos: Array<NestedScrollInfo>)
 
 元服务API： 从API version 14开始，该接口支持在元服务中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 参数：
@@ -382,9 +410,11 @@ bindToNestedScrollable(scrollInfos: Array<NestedScrollInfo>)
 
 hideBackButton(hide: Optional<boolean>)
 
-设置是否隐藏标题栏中的返回键。
+设置是否隐藏标题栏中的返回键。隐藏返回键后，用户可通过系统返回手势、[onBackPressed](#onbackpressed10)回调或自定义导航按钮返回上一页面。适用于首页或不希望用户通过标准返回键返回的场景。
 
 元服务API： 从API version 15开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -407,6 +437,8 @@ customTransition(delegate: NavDestinationTransitionDelegate)
 
 元服务API： 从API version 15开始，该接口支持在元服务中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 参数：
@@ -428,13 +460,15 @@ preferredOrientation(orientation: Optional<Orientation>)
 
 元服务API： 从API version 19开始，该接口支持在元服务中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| orientation | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | NavDestination页面对应的Orientation。 |
+| orientation | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | NavDestination页面的显示方向。转场到该NavDestination后，系统会将应用主窗口切换到该显示方向。 |
 
 #### [h2]enableStatusBar19+
 
@@ -449,13 +483,15 @@ enableStatusBar(enabled: Optional<boolean>, animated?: boolean)
 
 元服务API： 从API version 19开始，该接口支持在元服务中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| enabled | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 进入该NavDestination后，系统状态栏的显示/隐藏状态。 true：显示状态栏。 false：隐藏状态栏。 |
+| enabled | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 进入该NavDestination后，系统状态栏的显示/隐藏状态。 默认值：false true：显示状态栏。 false：隐藏状态栏。 undefined：不改变系统状态栏的显示/隐藏状态。 |
 | animated | boolean | 否 | 是否使用动画的方式显示/隐藏系统状态栏。 默认值：false true：使用动画的方式显示/隐藏系统状态栏。 false：不使用动画的方式显示/隐藏系统状态栏。 |
 
 #### [h2]enableNavigationIndicator19+
@@ -475,13 +511,15 @@ enableNavigationIndicator(enabled: Optional<boolean>)
 
 元服务API： 从API version 19开始，该接口支持在元服务中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| enabled | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 进入该NavDestination后，系统导航条的显示/隐藏状态。 true：显示导航条。 false：隐藏导航条。 |
+| enabled | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 进入该NavDestination后，系统导航条的显示/隐藏状态。 默认值：false true：显示导航条。 false：隐藏导航条。 undefined：不改变系统导航条的显示/隐藏状态。 |
 
 #### NavDestinationMode枚举说明11+
 
@@ -489,16 +527,20 @@ NavDestination类型。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| STANDARD | 0 | 标准模式的NavDestination。 |
-| DIALOG | 1 | 默认透明，进出路由栈不影响下层NavDestination的可见性（onShown、onHidden等生命周期），只会触发onActive、onInactive这两个生命周期。 API version 13之前，默认无系统转场动画。从API version 13开始，支持系统转场动画。 |
+| STANDARD | 0 | 标准模式的NavDestination，适合常规的内容页面场景，如列表详情页、设置页面、表单页面等。 |
+| DIALOG | 1 | 默认透明。进出路由栈不影响下层NavDestination的可见性（onShown、onHidden等生命周期），只触发onActive、onInactive生命周期。适合需要透明背景或悬浮效果的场景，如弹窗式页面、浮层提示、操作确认对话框等。 API version 13之前，默认无系统转场动画。从API version 13开始，支持系统转场动画。 |
 
 #### NavigationSystemTransitionType14+枚举说明
 
 系统转场动画类型。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -517,10 +559,10 @@ NavDestination类型。
 
 系统默认转场动画中只有STANDARD页面的push和pop动画有单独的标题栏动画，存在如下限制：
 
-1. 设置NavigationSystemTransitionType为TITLE时，系统转场只有标题栏动画。
-2. 设置NavigationSystemTransitionType为CONTENT时，系统转场只有内容区动画。
-
-设置NONE时没有系统转场动画，设置TITLE时只有标题栏系统转场动画，设置CONTENT和DEFAULT时默认系统转场动画。
+- 设置NavigationSystemTransitionType为TITLE时，系统转场只有标题栏动画。
+- 设置NavigationSystemTransitionType为CONTENT时，系统转场只有内容区动画。
+- 设置NavigationSystemTransitionType为NONE时，没有系统转场动画。
+- 设置NavigationSystemTransitionType为DEFAULT时，使用默认系统转场动画。
 
 #### 事件
 
@@ -533,6 +575,8 @@ onShown(callback: Callback<VisibilityChangeReason>)
 当该NavDestination页面显示时触发此回调。从API version 21开始，支持通过VisibilityChangeReason说明onShown触发的原因。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -549,6 +593,8 @@ onHidden(callback: Callback<VisibilityChangeReason>)
 当该NavDestination页面隐藏时触发此回调。从API version 21开始，支持通过VisibilityChangeReason说明onHidden触发的原因。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -568,6 +614,8 @@ onWillAppear(callback: Callback<void>)
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 参数：
@@ -585,6 +633,8 @@ onWillShow(callback: Callback<void>)
 ![](./img/note_3.0-zh-cn.png) 从API version 20开始，该接口支持在[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)中调用。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -604,6 +654,8 @@ onWillHide(callback: Callback<void>)
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 参数：
@@ -622,6 +674,8 @@ onWillDisappear(callback: Callback<void>)
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 参数：
@@ -636,9 +690,9 @@ onBackPressed(callback: () => boolean)
 
 当与Navigation绑定的导航控制器中存在内容时，此回调生效。当点击返回键时，触发该回调。
 
-返回值为true时，表示重写返回键逻辑，返回值为false时，表示回退到上一个页面。
-
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -646,7 +700,7 @@ onBackPressed(callback: () => boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | () => boolean | 是 | 当与Navigation绑定的导航控制器中存在内容时，此回调生效。当点击返回键时，触发该回调。 |
+| callback | () => boolean | 是 | 当与Navigation绑定的导航控制器中存在内容时，此回调生效。当点击返回键时，触发该回调。 返回值为true时，表示重写返回键逻辑；返回值为false时，表示回退到上一个页面。 |
 
 #### [h2]onReady11+
 
@@ -658,6 +712,8 @@ onReady(callback: import('../api/@ohos.base').Callback<[NavDestinationContext](#
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 参数：
@@ -665,6 +721,50 @@ onReady(callback: import('../api/@ohos.base').Callback<[NavDestinationContext](#
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | callback | import('../api/@ohos.base').[Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#callback) | 是 | 当NavDestination即将构建子组件之前会触发此回调。 |
+
+#### [h2]onSaveState
+
+onSaveState(callback: Optional<SaveStateCallback>)
+
+设置自定义页面状态保存回调。在NavDestination页面的[onHidden](#onhidden10)生命周期后触发该回调，用于保存当前页面的自定义状态，以便页面后续重建时恢复。
+
+该回调配合Navigation的[configuration](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#configuration)接口使用。页面创建时传入的初始参数由Navigation单独保留，开发者只需在该回调中返回自定义页面状态。返回的状态对象必须可序列化；页面重建时，保存的状态会通过[onRestoreState](#onrestorestate)回调传入。
+
+起始版本： 26.0.0
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| callback | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 页面状态保存回调。 |
+
+#### [h2]onRestoreState
+
+onRestoreState(callback: Optional<RestoreStateCallback>)
+
+设置自定义页面状态恢复回调。当NavDestination页面被重建时触发该回调，用于恢复页面自定义状态。
+
+该回调配合Navigation的[configuration](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#configuration)接口使用。页面重建时，系统会将[onSaveState](#onsavestate)返回并保存的状态作为入参传入该回调；如果没有保存自定义状态，则入参为null。
+
+起始版本： 26.0.0
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| callback | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 页面状态恢复回调。 |
 
 #### [h2]onResult15+
 
@@ -675,6 +775,8 @@ NavDestination返回时触发该回调。
 ![](./img/note_3.0-zh-cn.png) 从API version 22开始，该接口支持在[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)中调用。
 
 元服务API： 从API version 15开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -694,6 +796,8 @@ NavDestination处于激活态（处于栈顶可操作，且上层无特殊组件
 
 元服务API： 从API version 17开始，该接口支持在元服务中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 参数：
@@ -711,6 +815,8 @@ NavDestination处于非激活态（处于非栈顶不可操作，或处于栈顶
 ![](./img/note_3.0-zh-cn.png) 从API version 22开始，该接口支持在[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)中调用。
 
 元服务API： 从API version 17开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -733,6 +839,8 @@ onNewParam(callback: Optional<Callback<ESObject>>)
 
 元服务API： 从API version 19开始，该接口支持在元服务中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 参数：
@@ -740,6 +848,46 @@ onNewParam(callback: Optional<Callback<ESObject>>)
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | callback | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt)> | 是 | onNewParam触发时的回调函数，入参为路由跳转时传递到目标页面的数据。 |
+
+#### SaveStateCallback
+
+type SaveStateCallback = () => Record<string, Object> | null
+
+页面状态保存回调。
+
+起始版本： 26.0.0
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Record | null | 自定义页面状态。状态对象必须可序列化，否则不会被保存；返回null表示不保存页面状态。 |
+
+#### RestoreStateCallback
+
+type RestoreStateCallback = (savedState: Record<string, Object> | null) => void
+
+页面状态恢复回调。
+
+起始版本： 26.0.0
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| savedState | Record | null | 是 | [onSaveState](#onsavestate)保存的自定义页面状态。没有保存自定义状态时为null。 |
 
 #### NavDestinationCommonTitle
 
@@ -771,6 +919,8 @@ NavDestination自定义标题。
 
 NavDestination上下文信息。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
@@ -778,7 +928,7 @@ NavDestination上下文信息。
 | pathInfo | [NavPathInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#navpathinfo10) | 否 | 否 | 跳转NavDestination时指定的参数。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | pathStack | [NavPathStack](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#navpathstack10) | 否 | 否 | 当前NavDestination所处的导航控制器。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | navDestinationId12+ | string | 否 | 是 | 当前NavDestination的唯一ID，由系统自动生成，和组件通用属性id无关。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| mode22+ | [NavDestinationMode](#navdestinationmode枚举说明11) | 否 | 是 | 当前NavDestination的类型。 **元服务API：** 从API version 22开始，该接口支持在元服务中使用。 |
+| mode22+ | [NavDestinationMode](#navdestinationmode枚举说明11) | 否 | 是 | 当前NavDestination的类型。 默认值：NavDestinationMode.STANDARD **元服务API：** 从API version 22开始，该接口支持在元服务中使用。 |
 
 #### [h2]getConfigInRouteMap12+
 
@@ -787,6 +937,8 @@ getConfigInRouteMap(): RouteMapConfig | undefined
 获取当前NavDestination的路由配置信息。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -802,6 +954,8 @@ getConfigInRouteMap(): RouteMapConfig | undefined
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
@@ -812,9 +966,11 @@ getConfigInRouteMap(): RouteMapConfig | undefined
 
 #### NestedScrollInfo14+
 
-嵌套可滚动容器组件信息
+嵌套可滚动容器组件信息。
 
 元服务API： 从API version 14开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -823,11 +979,13 @@ getConfigInRouteMap(): RouteMapConfig | undefined
 | parent | [Scroller](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scroll#scroller) | 否 | 否 | 可滚动容器组件的控制器。 |
 | child | [Scroller](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scroll#scroller) | 否 | 否 | 可滚动容器组件的控制器，child对应的组件需要是parent对应组件的子组件，且组件间存在嵌套滚动关系。 |
 
-#### [h2]NavDestinationActiveReason17+
+#### NavDestinationActiveReason17+
 
 NavDestination激活态或者非激活态变化的原因。
 
 元服务API： 从API version 17开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -840,11 +998,13 @@ NavDestination激活态或者非激活态变化的原因。
 | OVERLAY | 4 | 通过OverlayManager开启或者关闭Overlay使NavDestination激活态发生变化。 |
 | APP_STATE | 5 | 通过前后台切换使NavDestination激活态发生变化。 |
 
-#### [h2]VisibilityChangeReason21+
+#### VisibilityChangeReason21+
 
 NavDestination可见性发生变化的原因。
 
 元服务API： 从API version 21开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -860,14 +1020,16 @@ NavDestination自定义动画接口。
 
 元服务API： 从API version 15开始，该接口支持在元服务中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | onTransitionEnd | Callback | 否 | 是 | 转场动画结束时的回调函数。 |
-| duration | number | 否 | 是 | 转场动画的持续时间。 默认值：1000（毫秒） 单位：ms |
+| duration | number | 否 | 是 | 转场动画的持续时间。 取值范围：[0, +∞) 默认值：1000（毫秒） 单位：ms |
 | curve | [Curve](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#curve) | 否 | 是 | 动画的曲线类型，默认值为[Curve.EaseInOut](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#curve)。 |
-| delay | number | 否 | 是 | 转场动画的延迟。 默认值：0（毫秒） 单位：ms |
+| delay | number | 否 | 是 | 转场动画的延迟。 取值范围：[0, +∞) 默认值：0（毫秒） 单位：ms |
 | event | Callback | 否 | 否 | 指定转场动效的闭包函数，系统会根据闭包中对组件UI状态的修改，生成对应的过渡动画。参见[animateTo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#animateto)中的event。 |
 
 #### NavDestinationTransitionDelegate15+
@@ -877,6 +1039,8 @@ type NavDestinationTransitionDelegate = (operation: NavigationOperation, isEnter
 NavDestination自定义转场动画的代理函数。
 
 元服务API： 从API version 15开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -897,7 +1061,9 @@ NavDestination自定义转场动画的代理函数。
 
 type Orientation = import('../api/@ohos.window').default.Orientation
 
-Orientation实例对象。
+页面显示方向的枚举类型。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -905,7 +1071,7 @@ Orientation实例对象。
 
 | 类型 | 说明 |
 | --- | --- |
-| import('../api/@ohos.window').default.[Orientation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#orientation9) | 返回Orientation实例对象。 |
+| import('../api/@ohos.window').default.[Orientation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#orientation9) | Orientation枚举类型，用于指定页面显示方向。 |
 
 #### 示例
 
@@ -1052,7 +1218,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002641194384.gif)
+ ![](./img/zh-cn_image_0000002656008470.gif)
 
 #### [h2]示例2（设置NavDestination自定义转场）
 
@@ -1112,7 +1278,7 @@ struct NavDest {
           .height(40)
           .margin(20)
           .onClick(() => {
-            this.stack.pushPath({ name: this.name == 'PageOne' ? "PageTwo" : "PageOne" });
+            this.stack.pushPath({ name: this.name == 'PageOne' ? 'PageTwo' : 'PageOne' });
           })
       }
       .size({ width: '100%', height: '100%' })
@@ -1192,7 +1358,7 @@ struct NavDest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002671434323.gif)
+ ![](./img/zh-cn_image_0000002655848548.gif)
 
 #### [h2]示例3（设置指定的NavDestination系统转场）
 
@@ -1341,7 +1507,7 @@ struct DestBody {
   build() {
     Column() {
       Column()
-        .width('85')
+        .width(85)
         .height(50)
         .backgroundColor(Color.White)
       Column() {
@@ -1439,13 +1605,13 @@ struct HomeBody {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002671394191.gif)
+ ![](./img/zh-cn_image_0000002686087977.gif)
 
-![](./img/zh-cn_image_0000002641354344.gif)
+![](./img/zh-cn_image_0000002685928149.gif)
 
-![](./img/zh-cn_image_0000002641194386.gif)
+![](./img/zh-cn_image_0000002656008472.gif)
 
-![](./img/zh-cn_image_0000002671434325.gif)
+![](./img/zh-cn_image_0000002655848550.gif)
 
 #### [h2]示例4（NavDestination配置页面方向和对应状态栏、导航条显隐）
 
@@ -1474,7 +1640,7 @@ struct PortraitPage {
     .enableStatusBar(true) // 显示状态栏
     .enableNavigationIndicator(true) // 显示导航条
     .backgroundColor('#ffbaece9')
-    .onResult((result: ESObject)=>{
+    .onResult((result: ESObject) => {
       this.info = result as string;
     })
     .onReady((ctx: NavDestinationContext) => {
@@ -1513,7 +1679,7 @@ struct ExamplePage {
   private stack: NavPathStack = new NavPathStack();
 
   aboutToAppear(): void {
-    this.stack.pushPath({name: "portrait"});
+    this.stack.pushPath({name: 'portrait'});
   }
 
   @Builder
@@ -1535,17 +1701,18 @@ struct ExamplePage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002671394193.gif)
+ ![](./img/zh-cn_image_0000002686087979.gif)
 
-#### [h2]示例5（NavDestination的onActive与onInActive生命周期）
+#### [h2]示例5（NavDestination的onActive与onInactive生命周期）
 
 从API version 17开始，NavDestination新增[onActive](#onactive17)、[onInactive](#oninactive17)属性。该示例演示onActive与onInactive生命周期的各种触发场景。
 
 ```
 import { promptAction, ComponentContent, OverlayManager } from '@kit.ArkUI';
+import { BusinessError } from '@kit.BasicServicesKit';
 
 class Params {
-  text: string = "";
+  text: string = '';
   offset: Position;
 
   constructor(text: string, offset: Position) {
@@ -1624,16 +1791,16 @@ struct NavDest {
       let onActiveMsg: string = `[activeTest] ${this.name} onActive, reason: ${reason}`;
       console.info(onActiveMsg);
       // API version 17版本，请替换为promptAction.showToast接口。从API version 18开始，请使用示例中的promptAction.openToast接口。
-      promptAction.openToast({ message: onActiveMsg }).catch(() => {
-        console.info('open toast failed');
+      promptAction.openToast({ message: onActiveMsg }).catch((err: BusinessError) => {
+        console.error(`Failed to open toast. Code: ${err.code}, message: ${err.message}`);
       });
     })
     .onInactive((reason: NavDestinationActiveReason) => {
       let onInActiveMsg: string = `[activeTest] ${this.name} onInactive, reason: ${reason}`;
       console.info(onInActiveMsg);
       // API version 17版本，请替换为promptAction.showToast接口。从API version 18开始，请使用示例中的promptAction.openToast接口。
-      promptAction.openToast({ message: onInActiveMsg }).catch(() => {
-        console.info('open toast failed');
+      promptAction.openToast({ message: onInActiveMsg }).catch((err: BusinessError) => {
+        console.error(`Failed to open toast. Code: ${err.code}, message: ${err.message}`);
       });
     })
     .onBackPressed(() => {
@@ -1686,7 +1853,7 @@ struct NavBody {
       }
       Column() {
         Row() {
-          Button("open Modal")
+          Button('open Modal')
             .onClick(() => {
               this.isShow = true;
             })
@@ -1701,7 +1868,7 @@ struct NavBody {
                   this.isShow = false;
                 }
               })
-          Button("open BindSheet")
+          Button('open BindSheet')
             .onClick(() => {
               this.isBindSheetShow = true;
             })
@@ -1714,7 +1881,7 @@ struct NavBody {
             })
         }
         Row() {
-          Button("open Dialog")
+          Button('open Dialog')
             .onClick(() => {
               let componentContent = new ComponentContent(
                 this.getUIContext(), wrapBuilder<[Params]>(builderText),
@@ -1723,14 +1890,14 @@ struct NavBody {
                 .then(() => {
                   console.info('[activeTest] open custom dialog success');
                 })
-                .catch(() => {
-                  console.info('[activeTest] open custom dialog failed');
+                .catch((err: BusinessError) => {
+                  console.error(`Failed to open custom dialog. Code: ${err.code}, message: ${err.message}`);
                 })
             })
             .fontColor(Color.Black)
             .backgroundColor('#ccc')
             .margin(5)
-          Button("open Overlay")
+          Button('open Overlay')
             .onClick(() => {
               let componentContent = new ComponentContent(
                 this.getUIContext(), wrapBuilder<[Params]>(builderText),
@@ -1751,6 +1918,6 @@ struct NavBody {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002641354346.gif)
+ ![](./img/zh-cn_image_0000002685928151.gif)
 
 NavDestination其他用法可参考[Navigation示例](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#示例)。

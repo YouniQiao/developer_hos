@@ -2,8 +2,8 @@
 title: "AICaptionComponent（AI字幕组件）"
 upstream_id: "harmonyos-references/speech-aicaptioncomponent"
 catalog: "harmonyos-references"
-content_hash: "0d9f23b5fee9"
-synced_at: "2026-07-09T01:01:45.595416"
+content_hash: "742cb999aee9"
+synced_at: "2026-07-28T16:53:16.762919"
 ---
 
 # AICaptionComponent（AI字幕组件）
@@ -16,7 +16,7 @@ AI字幕控件使用AI能力将语音实时转化成文本并翻译，提供原�
 
 ```
 import {
-  AICaptionComponent, AudioInfo, AudioData, AICaptionOptions, AICaptionController
+  AICaptionComponent, AudioInfo, AudioData, AICaptionOptions, AICaptionController, AICaptionFontSize
 } from '@kit.SpeechKit';
 ```
 
@@ -88,6 +88,9 @@ struct Index {
   }
 }
 ```
+ 组件如下图：
+
+![](./img/zh-cn_image_0000002686089265.png)
 
 #### AICaptionController
 
@@ -131,6 +134,68 @@ struct Index {
         controller: this.controller,
         options: this.options
       })
+    }
+  }
+}
+```
+
+#### [h2]isCapabilitySupported
+
+isCapabilitySupported(): boolean
+
+检测设备是否支持AI字幕功能。
+
+系统能力： SystemCapability.AI.AICaption
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+起始版本： 26.0.0
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| boolean | 是否支持AI字幕功能特性。true：支持AI字幕功能。false：不支持AI字幕功能。 |
+
+示例：
+
+```
+import { AICaptionComponent, AICaptionOptions, AICaptionController } from '@kit.SpeechKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+@Entry
+@Component
+struct Index {
+  private captionOption?: AICaptionOptions;
+  private controller: AICaptionController = new AICaptionController();
+  @State isSupport: boolean = false;
+  @State isShown: boolean = false;
+
+  aboutToAppear(): void {
+    // AI字幕初始化参数，设置字幕的不透明度和回调函数
+    this.captionOption = {
+      initialOpacity: 1,
+      onPrepared: () => {
+        console.info('onPrepared')
+      },
+      onError: (error: BusinessError) => {
+        console.error(`AICaption component error. Error code: ${error.code}, message: ${error.message}`);
+      }
+    };
+    this.isSupport = this.controller.isCapabilitySupported();
+    this.isShown = true;
+  }
+
+  build() {
+    Column({ space: 20 }) {
+      // 调用AICaptionComponent组件初始化字幕
+      if (this.isSupport) {
+        AICaptionComponent({
+          isShown: this.isShown,
+          controller: this.controller,
+          options: this.captionOption
+        })
+      }
     }
   }
 }

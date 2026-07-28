@@ -2,13 +2,13 @@
 title: "SelectTitleBar"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-selecttitlebar"
 catalog: "harmonyos-references"
-content_hash: "fd25515072c1"
-synced_at: "2026-07-09T00:58:16.585111"
+content_hash: "b4fbdec1fdbd"
+synced_at: "2026-07-28T16:48:26.478142"
 ---
 
 # SelectTitleBar
 
-下拉菜单标题栏包含一个下拉菜单，可用于页面之间的切换；可用于一级页面、二级及其以上界面（配置返回键）。
+下拉菜单标题栏是一个包含下拉菜单的标题栏组件，支持页面间的快速切换，可配置返回按钮和右侧菜单项。该组件适用于需要在不同视图或页面间进行导航切换的场景，支持一级页面、二级及其以上界面。使用该组件可以方便用户快速访问和切换不同的内容视图，提升页面导航的便捷性和用户体验。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -40,13 +40,13 @@ SelectTitleBar({selected: number, options: Array<SelectOption>, menuItems?: Arra
 
 | 名称 | 类型 | 必填 | 装饰器类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| selected | number | 是 | @Prop | 当前选中项目的索引。 第一项的索引为0。如果不设置该属性，则默认值为0。 |
-| options | Array | 是 | - | 下拉菜单中的项目。 |
-| menuItems | Array | 否 | - | 右侧菜单项目列表，定义标题栏右侧的菜单项目。需要在标题栏右侧添加菜单项目列表时传入此参数，缺省时不显示右侧菜单区域。 |
+| selected | number | 是 | @Prop | 当前选中项的索引。 第一项的索引为0，默认值为0。 |
+| options | Array | 是 | - | 下拉菜单中的项。 |
+| menuItems | Array | 否 | - | 右侧菜单项列表，定义标题栏右侧的菜单项。需要在右侧添加菜单项时传入此参数，缺省时不显示右侧菜单区域。 |
 | subtitle | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | - | 子标题。用于显示补充信息，需要显示子标题时传入，缺省时不显示子标题区域。 |
-| badgeValue | number | 否 | - | 新事件标记。 取值范围：[-2147483648,2147483647]，超出范围时会加上或减去4294967296，使得值仍在范围内，非整数时会舍去小数部分取整数部分，如5.5取5。 **说明：** 小于等于0时不显示信息标记。 最大消息数99，超过最大消息时仅显示99+。超大数值属于异常值，不显示信息标记。 |
+| badgeValue | number | 否 | - | 新事件标记，用于在标题栏右侧菜单图标上显示数量。 取值范围：[-2147483648,2147483647]，超出范围时会加上或减去4294967296，使得值仍在范围内，非整数时会舍去小数部分取整数部分，如5.5取5。 **说明：** 不传入时或小于等于0时，不显示事件标记。 最大消息数99，超过最大消息时仅显示99+。超大数值属于异常值，不显示事件标记。 |
 | hidesBackButton | boolean | 否 | - | 是否隐藏左侧的返回箭头。 默认值：false。true：隐藏，false：显示。 |
-| onSelected | ((index: number) => void) | 否 | - | 下拉菜单项目选中触发的回调函数，传入选中项的索引。下拉菜单选中后需要处理特定业务逻辑时时传入此参数，无特定业务逻辑时可缺省此参数。 |
+| onSelected | ((index: number) => void) | 否 | - | 下拉菜单项选中触发的回调函数，传入选中项的索引。下拉菜单选中后需要处理特定业务逻辑时传入此参数，无特定业务逻辑时可缺省此参数。 |
 
 ![](./img/note_3.0-zh-cn.png) 入参对象不可为undefined，即SelectTitleBar(undefined)。
 
@@ -58,13 +58,13 @@ SelectTitleBar({selected: number, options: Array<SelectOption>, menuItems?: Arra
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| value | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 否 | 图标资源。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| value | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 否 | 图标资源，用于设置标题栏右侧菜单项的图标，支持通过$r引用资源。当同时设置symbolStyle时，symbolStyle优先。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | symbolStyle18+ | [SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier#symbolglyphmodifier) | 否 | 是 | Symbol图标资源，优先级大于value。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| label13+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 图标标签描述。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
-| isEnabled | boolean | 否 | 是 | 是否启用。 默认值：false。true：启用，false：禁用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| action | () => void | 否 | 是 | 触发时的动作闭包。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| accessibilityLevel18+ | string | 否 | 是 | 标题栏右侧自定义按钮无障碍重要性。用于控制当前项是否可被无障碍辅助服务所识别。 支持的值为： "auto"：当前组件会转换'yes'。 "yes"：当前组件可被无障碍辅助服务所识别。 "no"：当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants"：当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值："auto"。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| accessibilityText18+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 标题栏右侧自定义按钮的无障碍文本属性。当组件不包含文本属性时，屏幕朗读选中此组件时不播报，使用者无法清楚地知道当前选中了什么组件。为了解决此场景，开发人员可为不包含文字信息的组件设置无障碍文本，当屏幕朗读选中此组件时播报无障碍文本的内容，帮助屏幕朗读的使用者清楚地知道自己选中了什么组件。 默认值：有label默认值为当前项label属性内容，没有设置label时，默认值为“ ”。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| label13+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 图标标签描述，可作为accessibilityText的默认值。同时设置label和accessibilityText时，accessibilityText优先级更高。不设置时，默认无标签。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
+| isEnabled | boolean | 否 | 是 | 是否启用。 默认值：false。true：启用该菜单项，false：禁用该菜单项（置灰且不可点击）。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| action | () => void | 否 | 是 | 右侧自定义按钮被点击时执行的回调函数。开发者可在此定义按钮点击后需要执行的自定义操作。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| accessibilityLevel18+ | string | 否 | 是 | 标题栏右侧自定义按钮无障碍重要性。用于控制当前项是否可被无障碍辅助服务所识别。 支持的值为： "auto"：当前组件根据具体情况自动转换为"yes"或"no"。 "yes"：当前组件可被无障碍辅助服务所识别。 "no"：当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants"：当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值："auto"。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| accessibilityText18+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 标题栏右侧自定义按钮的无障碍文本属性。当组件不包含文本属性时，屏幕朗读选中此组件时不播报，使用者无法清楚地知道当前选中了什么组件。为了解决此场景，开发人员可为不包含文字信息的组件设置无障碍文本，当屏幕朗读选中此组件时播报无障碍文本的内容，帮助屏幕朗读的使用者清楚地知道自己选中了什么组件。 默认值：设置了label时默认值为当前项label属性内容，未设置label时默认值为空格字符。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | accessibilityDescription18+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 标题栏右侧自定义按钮的无障碍描述。此描述用于向用户详细解释当前组件，开发人员应为组件的这一属性提供较为详尽的文本说明，以协助用户理解即将执行的操作及其可能产生的后果。特别是当这些后果无法仅从组件的属性和无障碍文本中直接获知时。如果组件同时具备文本属性和无障碍说明属性，当组件被选中时，系统将首先播报组件的文本属性，随后播报无障碍说明属性的内容。 默认值为“单指双击即可执行”。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 
 #### 事件
@@ -185,7 +185,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661613009.png)
+ ![](./img/zh-cn_image_0000002656008950.png)
 
 #### [h2]示例2（右侧自定义按钮播报）
 
@@ -234,7 +234,7 @@ struct Index {
       {
         value: $r('sys.media.ohos_ic_public_remove'),
         isEnabled: true,
-        action: () => Prompt.showToast({ message: "show toast index 4" }),
+        action: () => Prompt.showToast({ message: 'show toast index 4' }),
         accessibilityText: '移除',
         accessibilityLevel: 'yes',
         accessibilityDescription: '点击操作移除图标',
@@ -315,7 +315,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413720.png)
+ ![](./img/zh-cn_image_0000002655849030.png)
 
 #### [h2]示例3（设置Symbol类型图标）
 
@@ -331,9 +331,9 @@ struct Index {
   private menuItems: Array<SelectTitleBarMenuItem> =
     [
       {
-        // 菜单图片资源
+        // 图片资源（当同时设置value和symbolStyle时，symbolStyle优先级更高）
         value: $r('sys.media.ohos_save_button_filled'),
-        // 菜单图片symbol资源
+        // Symbol图标资源（优先级大于value）
         symbolStyle: new SymbolGlyphModifier($r('sys.symbol.save')),
         // 启用图片
         isEnabled: true,
@@ -369,7 +369,7 @@ struct Index {
         value: $r('sys.media.ohos_ic_public_remove'),
         symbolStyle: new SymbolGlyphModifier($r('sys.symbol.remove_songlist')),
         isEnabled: true,
-        action: () => Prompt.showToast({ message: "show toast index 4" }),
+        action: () => Prompt.showToast({ message: 'show toast index 4' }),
         accessibilityText: '移除',
         accessibilityLevel: 'yes',
         accessibilityDescription: '点击操作移除图标',
@@ -451,4 +451,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732949.png)
+ ![](./img/zh-cn_image_0000002686088461.png)

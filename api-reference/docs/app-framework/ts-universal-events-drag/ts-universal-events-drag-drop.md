@@ -2,8 +2,8 @@
 title: "拖拽事件"
 upstream_id: "harmonyos-references/ts-universal-events-drag-drop"
 catalog: "harmonyos-references"
-content_hash: "e7485a143088"
-synced_at: "2026-07-09T17:23:27.934399"
+content_hash: "33a970457772"
+synced_at: "2026-07-28T16:41:54.455487"
 ---
 
 # 拖拽事件
@@ -12,7 +12,7 @@ synced_at: "2026-07-09T17:23:27.934399"
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 从API version 8开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+- 从API version 8开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 - 应用本身预置的资源文件（即应用在安装前的HAP包中已经存在的资源文件）仅支持本地应用内拖拽。
 
 ArkUI框架对以下组件实现了默认的拖拽能力，支持对数据的拖出或拖入响应。开发者也可以通过实现通用拖拽事件来自定义拖拽能力。
@@ -20,11 +20,11 @@ ArkUI框架对以下组件实现了默认的拖拽能力，支持对数据的拖
 - 默认支持拖出能力的组件（可从组件上拖出数据）：[Search](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-search)、[TextInput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textinput)、[TextArea](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textarea)、[RichEditor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-richeditor)、[Text](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text)、[Image](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-image)、[Hyperlink](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-hyperlink)，开发者可通过设置这些组件的[draggable](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-drag-drop#draggable)属性来控制对默认拖拽能力的使用。
 - 默认支持拖入能力的组件（目标组件可响应拖入数据）：[Search](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-search)、[TextInput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textinput)、[TextArea](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textarea)、[RichEditor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-richeditor)，开发者可通过设置这些组件的[allowDrop](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-drag-drop#allowdrop)属性为null来禁用对默认拖入能力的支持。
 
-其他支持拖出能力的组件需要开发者将[draggable](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-drag-drop#draggable)属性设置为true，并在[onDragStart](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondragstart)等接口中实现数据传输相关内容，才能正确处理拖拽能力。
+其他支持拖出能力的组件需要开发者将[draggable](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-drag-drop#draggable)属性设置为true，并在[onDragStart](#ondragstart)等接口中实现数据传输相关内容，才能正确处理拖拽能力。
 
 Text、TextInput、TextArea、Hyperlink、Image、RichEditor和Web组件的draggable属性默认为true，默认支持拖出能力。
 
-![](./img/note_3.0-zh-cn.png) Text组件需配合[copyOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#copyoption9)一起使用，设置copyOptions为CopyOptions.InApp或者CopyOptions.LocalDevice。
+![](./img/note_3.0-zh-cn.png) Text组件需配合[copyOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#copyoption9)一起使用，设置copyOption为CopyOptions.InApp或者CopyOptions.LocalDevice。
 
 #### onDragStart
 
@@ -43,7 +43,7 @@ onDragStart(event: (event: DragEvent, extraParams?: string) => CustomBuilder | D
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
-事件优先级： 长按事件触发时间 < 500ms，长按事件优先拖拽事件响应，长按事件触发时间 >= 500ms，拖拽事件优先长按事件响应。
+事件优先级： 长按事件触发时间 < 500ms时，长按事件优先拖拽事件响应，长按事件触发时间 >= 500ms时，拖拽事件优先长按事件响应。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -151,7 +151,7 @@ onDrop(event: (event: DragEvent, extraParams?: string) => void): T
 
 onDrop(eventCallback: OnDragEventCallback, dropOptions?: DropOptions): T
 
-绑定此事件的组件可作为拖拽释放目标，当在本组件范围内停止拖拽行为时，触发回调。如果开发者没有在onDrop中主动调用event.[setResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#setresult10)()设置拖拽接收的结果，若拖拽组件为系统支持默认拖入的组件，以系统实际处理数据结果为准，其它组件则系统按照数据接收成功处理。
+绑定此事件的组件可作为拖拽释放目标，当在本组件范围内停止拖拽行为时，触发回调。如果开发者没有在onDrop中主动调用event.[setResult](#setresult10)()设置拖拽接收的结果，对于系统支持的默认可拖入组件，处理结果以系统实际处理的数据为准；对于其他组件，系统默认按数据接收成功处理。
 
 元服务API： 从API version 15开始，该接口支持在元服务中使用。
 
@@ -163,8 +163,8 @@ onDrop(eventCallback: OnDragEventCallback, dropOptions?: DropOptions): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| eventCallback | [OnDragEventCallback](#ondrageventcallback15) | 是 | 回调函数。 |
-| dropOptions | [DropOptions](#dropoptions15) | 否 | 落入过程的参数。 |
+| eventCallback | [OnDragEventCallback](#ondrageventcallback15) | 是 | 拖拽释放事件的回调函数，用于在组件作为拖拽释放目标并触发onDrop时接收拖拽事件信息。 |
+| dropOptions | [DropOptions](#dropoptions15) | 否 | 落入过程的参数。当需要配置拖拽落入过程行为（如禁用数据预获取）时传入；不传入时使用默认落入配置，默认提前获取拖拽数据。 |
 
 返回值：
 
@@ -214,7 +214,7 @@ onPreDrag(callback: Callback<PreDragStatus>): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | Callback | 是 | 回调函数。 |
+| callback | Callback | 是 | 拖拽发起前状态变化的回调函数，用于接收当前拖拽手势触发前所处阶段。回调参数为PreDragStatus，表示拖拽发起前的各阶段状态。 |
 
 返回值：
 
@@ -240,8 +240,8 @@ onDragSpringLoading(callback: Callback<SpringLoadingContext> | null, configurati
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | Callback | null | 是 | 悬停检测回调函数，当值为null时禁用悬停检测。 |
-| configuration | [DragSpringLoadingConfiguration](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-dragcontroller#dragspringloadingconfiguration20) | 否 | 悬停检测配置信息，为undefined时取[DragSpringLoadingConfiguration](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-dragcontroller#dragspringloadingconfiguration20)默认值。 |
+| callback | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#callback) | null | 是 | 悬停检测回调函数，当值为null时禁用悬停检测。 |
+| configuration | [DragSpringLoadingConfiguration](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-dragcontroller#dragspringloadingconfiguration20) | 否 | 悬停检测配置信息。当需要自定义悬停检测的触发时长、更新间隔或通知次数等行为时传入；不传入或为undefined时取[DragSpringLoadingConfiguration](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-dragcontroller#dragspringloadingconfiguration20)默认值。 |
 
 返回值：
 
@@ -259,9 +259,9 @@ onDragSpringLoading(callback: Callback<SpringLoadingContext> | null, configurati
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| pixelMap | [PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 否 | 是 | 设置拖拽过程中显示的图片。 |
-| builder | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 否 | 是 | 拖拽过程中显示自定义组件，如果设置了pixelMap，则忽略此值。 **说明：** 不支持全局builder。如果builder中使用了[Image](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-image)组件，应尽量开启同步加载，即配置Image的[syncLoad](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-image#syncload8)为true。该builder只用于生成当次拖拽中显示的图片，builder的修改不会同步到当前正在拖拽的图片，对builder的修改需要在下一次拖拽时生效。 builder传参时，建议传参格式为builder: ()=>{this.customBuilder()}，用以保证this指向的正确性。具体请参考[将@Builder装饰的函数当作CustomBuilder类型使用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-builder#将builder装饰的函数当作custombuilder类型使用)。 |
-| extraInfo | string | 否 | 是 | 拖拽项的附加信息，用于描述拖拽项。 |
+| pixelMap | [PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 否 | 是 | 设置拖拽过程中显示的图片。未设置时不使用图片作为拖拽预览。 |
+| builder | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 否 | 是 | 拖拽过程中显示自定义组件，未设置时不使用自定义组件作为拖拽预览。如果设置了pixelMap，则忽略此值。 **说明：** 不支持全局builder。如果builder中使用了[Image](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-image)组件，建议配置Image的[syncLoad](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-image#syncload8)为true以开启同步加载。该builder只用于生成当次拖拽中显示的图片，builder的修改不会同步到当前正在拖拽的图片，对builder的修改需要在下一次拖拽时生效。 builder传参时，建议传参格式为builder: ()=>{this.customBuilder()}，用以保证this指向的正确性。具体请参考[将@Builder装饰的函数当作CustomBuilder类型使用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-builder#将builder装饰的函数当作custombuilder类型使用)。 |
+| extraInfo | string | 否 | 是 | 拖拽项的附加信息，用于描述拖拽项。未设置时无附加信息。 |
 
 #### PreviewConfiguration15+
 
@@ -275,14 +275,14 @@ onDragSpringLoading(callback: Callback<SpringLoadingContext> | null, configurati
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| onlyForLifting | boolean | 否 | 是 | 自定义配置的预览图是否仅用于浮起。 **说明：** 默认值为false。true表示自定义预览图仅用于浮起，false表示可用于浮起和拖拽。设置为true时，如果发起长按拖拽，浮起时的预览图为自定义配置的预览图，拖拽时的预览图不使用[dragPreview](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-drag-drop#dragpreview11)属性，优先使用开发者在[onDragStart](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondragstart)中返回的预览图，如果[onDragStart](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondragstart)中没有返回预览图则使用组件自截图。 |
-| delayCreating | boolean | 否 | 是 | 组件预览builder是否在设置时加载。 默认值为false。true表示组件预览builder在设置时加载，false表示组件预览builder不在设置时加载。 |
+| onlyForLifting | boolean | 否 | 是 | 自定义配置的预览图是否仅用于浮起。 **说明：** 默认值为false。true表示自定义预览图仅用于浮起，false表示可用于浮起和拖拽。设置为true时，如果发起长按拖拽，浮起时的预览图为自定义配置的预览图，拖拽时的预览图不使用[dragPreview](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-drag-drop#dragpreview11)属性，优先使用开发者在[onDragStart](#ondragstart)中返回的预览图，如果[onDragStart](#ondragstart)中没有返回预览图则使用组件自截图。 |
+| delayCreating | boolean | 否 | 是 | 组件预览builder是否延时创建。 默认值为false。true表示组件预览builder延迟到需要生成拖拽预览图时创建，false表示组件预览builder在设置时创建。 |
 
 #### extraParams说明
 
 用于返回组件在拖拽中需要用到的额外信息。
 
-extraParams是JSON对象转换的string字符串，可以通过JSON.parse转换的JSON对象获取如下属性。
+extraParams是由JSON对象转换得到的string，可通过JSON.parse解析后获取如下属性。
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
@@ -301,15 +301,15 @@ extraParams是JSON对象转换的string字符串，可以通过JSON.parse转换�
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| useCustomDropAnimation10+ | boolean | 否 | 否 | 当拖拽结束时，是否禁用系统默认落位动效。 应用可将该值设定为true来禁用系统默认落位动效，并实现自己的自定义落位动效。 当不配置或设置为false时，系统默认落位动效生效，当[setResult](#setresult10)设置为DRAG_SUCCESSFUL时，落位为缩小消失动效，不为DRAG_SUCCESSFUL时，则为放大消失动效。 当未禁用系统默认落位动效时，应用不应再实现自定义动效，以避免动效上的冲突。 默认值：false **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| useCustomDropAnimation10+ | boolean | 否 | 否 | 当拖拽结束时，是否禁用系统默认落位动效。 应用可将该值设定为true来禁用系统默认落位动效，并实现自定义落位动效。 当不配置或设置为false时，系统默认落位动效生效，当[setResult](#setresult10)设置为DRAG_SUCCESSFUL时，落位为缩小消失动效，不为DRAG_SUCCESSFUL时，则为放大消失动效。 当未禁用系统默认落位动效时，应用不应再实现自定义动效，以避免动效上的冲突。 默认值：false **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | autoHideComponentUniqueIds | number | number[] | 否 | 是 | 设置拖拽过程中需要自动隐藏的组件uniqueId，支持传入单个uniqueId或数组。 仅在[onDragStart](#ondragstart)回调中设置生效。拖拽成功发起后，系统会在显示拖拽预览窗口前隐藏目标组件。 若拖拽源本身也需要隐藏，需要同时传入拖拽源组件的uniqueId。 组件的uniqueId可通过[UIContext.getFrameNodeById()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getframenodebyid12)配合[FrameNode.getUniqueId()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#getuniqueid12)获取。 开发者应在[onDragEnd](#ondragend10)或[onDrop](#ondrop)中恢复组件显示状态。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
-| dragBehavior10+ | [DragBehavior](#dragbehavior10) | 否 | 否 | 切换复制和剪贴模式的角标显示状态。 默认值：DragBehavior.COPY。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| dragBehavior10+ | [DragBehavior](#dragbehavior10) | 否 | 否 | 切换复制和剪切模式的角标显示状态。 默认值：DragBehavior.COPY。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 
 #### [h2]setData10+
 
 setData(unifiedData: UnifiedData): void
 
-向DragEvent中设置用于拖拽的数据。
+向DragEvent中设置用于拖拽的数据。与[setDataLoadParams](#setdataloadparams20)方法同时使用时，以最后调用的方法为准。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -438,7 +438,7 @@ getVelocityX(): number
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 当前拖拽的x轴方向拖动速度。坐标轴原点为屏幕左上角，单位为vp，分正负方向速度，从左往右为正，反之为负。 |
+| number | 当前拖拽的x轴方向拖动速度。坐标轴原点为屏幕左上角，单位为vp/s，分正负方向速度，从左往右为正，反之为负。 |
 
 #### [h2]getVelocityY10+
 
@@ -456,7 +456,7 @@ getVelocityY(): number
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 当前拖拽的y轴方向拖动速度。坐标轴原点为屏幕左上角，单位为vp，分正负方向速度，从上往下为正，反之为负。 |
+| number | 当前拖拽的y轴方向拖动速度。坐标轴原点为屏幕左上角，单位为vp/s，分正负方向速度，从上往下为正，反之为负。 |
 
 #### [h2]getVelocity10+
 
@@ -474,7 +474,7 @@ getVelocity(): number
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 当前拖拽的主方向拖动速度。为xy轴方向速度的平方和的算术平方根，单位为vp。 |
+| number | 当前拖拽的主方向拖动速度。为xy轴方向速度的平方和的算术平方根，单位为vp/s。 |
 
 #### [h2]getWindowX10+
 
@@ -552,7 +552,7 @@ getDisplayY(): number
 
 getModifierKeyState?(keys: Array<string>): boolean
 
-获取功能键按压状态。
+获取修饰键按压状态。
 
 元服务API： 从API version 13开始，该接口支持在元服务中使用。
 
@@ -564,7 +564,7 @@ getModifierKeyState?(keys: Array<string>): boolean
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| keys | Array | 是 | 获取功能键按压状态。报错信息请参考以下错误码。支持功能键 'Ctrl' | 'Alt' | 'Shift'。 **说明：** 此接口不支持在手写笔场景下使用。 |
+| keys | Array | 是 | 获取修饰键按压状态。报错信息请参考以下错误码。支持功能键 'Ctrl' | 'Alt' | 'Shift'。 **说明：** 此接口不支持在手写笔场景下使用。 |
 
 错误码：
 
@@ -584,7 +584,7 @@ getModifierKeyState?(keys: Array<string>): boolean
 
 startDataLoading(options: DataSyncOptions): string
 
-异步获取拖拽数据，并通知开发者当前数据同步进度，仅支持在onDrop阶段使用。
+异步获取拖拽数据，并通知开发者当前数据同步进度，仅支持在onDrop阶段使用。使用该接口获取数据时，需将[DropOptions](#dropoptions15)中的disableDataPrefetch设置为true，防止拖拽提前获取数据。
 
 元服务API： 从API version 15开始，该接口支持在元服务中使用。
 
@@ -617,7 +617,7 @@ startDataLoading(options: DataSyncOptions): string
 
 executeDropAnimation(customDropAnimation: Callback<void>): void
 
-设置自定义落位动效的执行函数，仅在[useCustomDropAnimation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#属性)为true时有效。
+设置自定义落位动效的执行函数，仅在[useCustomDropAnimation](#属性)为true时有效。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -635,7 +635,7 @@ executeDropAnimation(customDropAnimation: Callback<void>): void
 
 getDisplayId(): number
 
-获取当前拖拽事件发生时所在的屏幕ID，不支持在[onDragEnd](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondragend10)阶段使用。
+获取当前拖拽事件发生时所在的屏幕ID，可用于多屏设备拖拽场景中识别拖拽发生的屏幕并适配目标屏幕处理逻辑，不支持在[onDragEnd](#ondragend10)阶段使用。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -653,7 +653,7 @@ getDisplayId(): number
 
 getDragSource(): string
 
-获取拖起方包名。
+获取拖起方包名，可用于跨应用拖拽场景中识别数据来源应用，并根据来源应用进行数据接收校验或业务处理。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -671,7 +671,7 @@ getDragSource(): string
 
 isRemote(): boolean
 
-获取是否是跨设备拖拽，跨设备拖拽时为true。
+获取是否是跨设备拖拽，跨设备拖拽时为true，可用于跨设备拖拽场景中区分本机拖拽和跨设备拖拽，并据此调整数据传输、权限校验或提示逻辑。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -689,7 +689,7 @@ isRemote(): boolean
 
 setDataLoadParams(dataLoadParams: DataLoadParams): void
 
-设置起拖方延迟提供数据。使用此方法向系统提供数据加载参数，而不是直接提供完整的数据对象。当用户在目标应用程序上落入时，系统将使用此参数从起拖方请求实际数据。与[setData](#setdata10)方法同时使用，以最后调用的方法为准。该接口仅在[onDragStart](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondragstart)回调中生效。
+设置起拖方延迟提供数据。使用此方法向系统提供数据加载参数，而不是直接提供完整的数据对象。当用户在目标应用上落入时，系统将使用此参数从起拖方请求实际数据。与[setData](#setdata10)方法同时使用，以最后调用的方法为准。该接口仅在[onDragStart](#ondragstart)回调中生效。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -701,7 +701,7 @@ setDataLoadParams(dataLoadParams: DataLoadParams): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| dataLoadParams | [DataLoadParams](#dataloadparams20) | 是 | 落入操作时使用的数据加载参数。 |
+| dataLoadParams | [DataLoadParams](#dataloadparams20) | 是 | 起拖方延迟提供数据时使用的数据加载参数，用于在目标应用落入时向系统提供实际拖拽数据的加载方式。 |
 
 #### [h2]getX(deprecated)
 
@@ -790,7 +790,7 @@ getGlobalDisplayY(): number
 
 #### DragBehavior10+
 
-当设置[DragResult](#dragresult10枚举说明)为DROP_ENABLED后，可设置DragBehavior为复制（COPY）或剪切（MOVE）。当DragBehavior为复制（COPY）时，拖拽对象的角标会显示加号；为剪切（MOVE）时，拖拽对象的角标不会显示加号。DragBehavior用来向开发者描述数据的处理方式是复制（COPY）还是剪切（MOVE），但无法最终决定对数据的实际处理方式。DragBehavior会通过onDragEnd带回给数据拖出方，发起拖拽的一方可通过DragBehavior来区分做出的是复制（COPY）还是剪切（MOVE）数据的不同行为。
+当设置[DragResult](#dragresult10枚举说明)为DROP_ENABLED后，可设置DragBehavior为复制（COPY）或剪切（MOVE）。当DragBehavior为复制（COPY）时，拖拽对象的角标会显示加号；为剪切（MOVE）时，拖拽对象的角标不会显示加号。DragBehavior用来向开发者描述数据的处理方式是复制（COPY）还是剪切（MOVE），但无法最终决定对数据的实际处理方式。DragBehavior会通过onDragEnd带回给数据拖出方，发起拖拽的一方可通过DragBehavior区分数据处理方式是复制（COPY）还是剪切（MOVE）。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -813,13 +813,13 @@ getGlobalDisplayY(): number
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| ACTION_DETECTING_STATUS | 0 | 拖拽手势启动阶段。(按下50ms时触发) **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| READY_TO_TRIGGER_DRAG_ACTION | 1 | 拖拽准备完成，可发起拖拽阶段。(按下500ms时触发) **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| PREVIEW_LIFT_STARTED | 2 | 拖拽浮起动效发起阶段。(按下800ms时触发) **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| PREVIEW_LIFT_FINISHED | 3 | 拖拽浮起动效结束阶段。(浮起动效完全结束时触发) **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| PREVIEW_LANDING_STARTED | 4 | 拖拽落回动效发起阶段。(落回动效发起时触发) **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| PREVIEW_LANDING_FINISHED | 5 | 拖拽落回动效结束阶段。(落回动效结束时触发) **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| ACTION_CANCELED_BEFORE_DRAG | 6 | 拖拽浮起落位动效中断。(已满足READY_TO_TRIGGER_DRAG_ACTION状态后，未达到动效阶段，手指抬手时触发) **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| ACTION_DETECTING_STATUS | 0 | 拖拽手势启动阶段。（按下50ms时触发） **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| READY_TO_TRIGGER_DRAG_ACTION | 1 | 拖拽准备完成，可发起拖拽阶段。（按下500ms时触发） **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| PREVIEW_LIFT_STARTED | 2 | 拖拽浮起动效发起阶段。（按下800ms时触发） **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| PREVIEW_LIFT_FINISHED | 3 | 拖拽浮起动效结束阶段。（浮起动效完全结束时触发） **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| PREVIEW_LANDING_STARTED | 4 | 拖拽落回动效发起阶段。（落回动效发起时触发） **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| PREVIEW_LANDING_FINISHED | 5 | 拖拽落回动效结束阶段。（落回动效结束时触发） **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| ACTION_CANCELED_BEFORE_DRAG | 6 | 拖拽浮起落位动效中断。（已满足READY_TO_TRIGGER_DRAG_ACTION状态后，未达到动效阶段，手指抬手时触发） **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | PREPARING_FOR_DRAG_DETECTION18+ | 7 | 拖拽准备完成，可发起拖拽阶段。(按下350ms时触发) **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 
 #### UnifiedData10+
@@ -903,7 +903,7 @@ type OnDragEventCallback = (event: DragEvent, extraParams?: string) => void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | event | [DragEvent](#dragevent7) | 是 | event为拖拽事件信息，包括拖拽点坐标。 |
-| extraParams | string | 否 | extraParams为拖拽事件额外信息，需要解析为JSON格式，参考[extraParams](#extraparams说明)说明。 |
+| extraParams | string | 否 | extraParams为拖拽事件额外信息，需要解析为JSON格式，参考[extraParams](#extraparams说明)说明。未传入时无额外信息。 |
 
 #### DropOptions15+
 
@@ -939,7 +939,7 @@ type DragSpringLoadingConfiguration = import('../api/@ohos.arkui.dragController'
 
 type SpringLoadingContext = import('../api/@ohos.arkui.dragController').default.SpringLoadingContext
 
-定义回调上下文信息的类，用于在悬停检测回调中传递给应用程序，使其能访问拖拽状态。
+定义回调上下文信息的类，用于在悬停检测回调中传递给应用，使其能访问拖拽状态。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -949,7 +949,7 @@ type SpringLoadingContext = import('../api/@ohos.arkui.dragController').default.
 
 | 类型 | 说明 |
 | --- | --- |
-| import('../api/@ohos.arkui.dragController').default.[SpringLoadingContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-dragcontroller#springloadingcontext20) | 定义回调上下文信息的类，用于在悬停检测回调中传递给应用程序，以便应用程序能访问拖拽状态。 |
+| import('../api/@ohos.arkui.dragController').default.[SpringLoadingContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-dragcontroller#springloadingcontext20) | 定义回调上下文信息的类，用于在悬停检测回调中传递给应用，以便应用能访问拖拽状态。 |
 
 #### 示例
 
@@ -960,7 +960,6 @@ type SpringLoadingContext = import('../api/@ohos.arkui.dragController').default.
 ```
 // xxx.ets
 import { unifiedDataChannel, uniformTypeDescriptor } from '@kit.ArkData';
-import { BusinessError } from '@kit.BasicServicesKit';
 
 @Entry
 @Component
@@ -970,20 +969,9 @@ struct Index {
   @State imageWidth: number = 100;
   @State imageHeight: number = 100;
   @State imgState: Visibility = Visibility.Visible;
-  @State abstractContent: string = "abstract";
-  @State textContent: string = "";
+  @State abstractContent: string = 'abstract';
+  @State textContent: string = '';
   @State backGroundColor: Color = Color.Transparent;
-
-  @Builder
-  pixelMapBuilder() {
-    Column() {
-      // $r('app.media.icon')需要替换为开发者所需的图像资源文件
-      Image($r('app.media.icon'))
-        .width(120)
-        .height(120)
-        .backgroundColor(Color.Yellow)
-    }
-  }
 
   // 获取Udmf数据
   getDataFromUdmfRetry(event: DragEvent, callback: (data: DragEvent) => void) {
@@ -998,8 +986,8 @@ struct Index {
       }
       callback(event);
       return true;
-    } catch (e) {
-      console.error(`getData failed, code = ${(e as BusinessError).code}, message = ${(e as BusinessError).message}`);
+    } catch (error) {
+      console.error(`Failed to get data. Code: ${error.code}, message: ${error.message}`);
       return false;
     }
   }
@@ -1015,7 +1003,7 @@ struct Index {
   }
 
   // 根据拖拽发起前的不同阶段更改背景色
-  private PreDragChange(preDragStatus: PreDragStatus): void {
+  private preDragChange(preDragStatus: PreDragStatus): void {
     if (preDragStatus == PreDragStatus.READY_TO_TRIGGER_DRAG_ACTION) {
       this.backGroundColor = Color.Red;
     } else if (preDragStatus == PreDragStatus.ACTION_CANCELED_BEFORE_DRAG
@@ -1059,7 +1047,7 @@ struct Index {
           .width('100%')
           .height(50)
           .draggable(true)
-        Search({ placeholder: 'please input you word' })
+        Search({ placeholder: 'please input your word' })
           .searchButton('Search')
           .width('100%')
           .height(80)
@@ -1081,7 +1069,7 @@ struct Index {
           (event as DragEvent).setData(new unifiedDataChannel.UnifiedData(data));
         })
         .onPreDrag((status: PreDragStatus) => {
-          this.PreDragChange(status);
+          this.preDragChange(status);
         })
         .backgroundColor(this.backGroundColor)
       }.width('45%')
@@ -1112,7 +1100,7 @@ struct Index {
               this.imgState = Visibility.None;
               // 显式设置result为successful，则将该值传递给拖出方的onDragEnd
               event.setResult(DragResult.DRAG_SUCCESSFUL);
-            })
+            });
           })
 
         Text(this.targetText)
@@ -1126,7 +1114,7 @@ struct Index {
               let records: Array<unifiedDataChannel.UnifiedRecord> = event.getData().getRecords();
               let plainText: unifiedDataChannel.PlainText = records[0] as unifiedDataChannel.PlainText;
               this.targetText = plainText.textContent;
-            })
+            });
           })
 
         Column() {
@@ -1144,21 +1132,21 @@ struct Index {
             let plainText: unifiedDataChannel.PlainText = records[0] as unifiedDataChannel.PlainText;
             this.abstractContent = plainText.abstract as string;
             this.textContent = plainText.textContent;
-          })
+          });
         })
       }.width('45%')
       .height('100%')
-      .margin({ left: '5%' })
+      .margin({ left: '5%' });
     }
     .height('100%')
   }
 }
 ```
- ![](./img/zh-cn_image_0000002633850362.png)
+ ![](./img/zh-cn_image_0000002685927923.png)
 
 #### [h2]示例2（自定义落位动效）
 
-从API version 18开始，示例2展示了通过自定义接口[executeDropAnimation](#executedropanimation18)，实现落位动效。
+从API version 18开始，示例2展示了通过[executeDropAnimation](#executedropanimation18)接口，实现自定义落位动效。
 
 ```
 import { unifiedDataChannel, uniformTypeDescriptor } from '@kit.ArkData';
@@ -1226,7 +1214,7 @@ struct DropAnimationExample {
           this.imageHeight = Number(rect.height);
           this.targetImage = (records[0] as unifiedDataChannel.Image).imageUri;
           dragEvent.useCustomDropAnimation = true;
-          dragEvent.executeDropAnimation(this.customDropAnimation)
+          dragEvent.executeDropAnimation(this.customDropAnimation);
         })
         .width(this.imageWidth)
         .height(this.imageHeight)
@@ -1238,7 +1226,7 @@ struct DropAnimationExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002634010266.gif)
+ ![](./img/zh-cn_image_0000002656008244.gif)
 
 #### [h2]示例3（拖拽异步获取数据）
 
@@ -1246,13 +1234,13 @@ struct DropAnimationExample {
 
 ```
 import { unifiedDataChannel, uniformTypeDescriptor } from '@kit.ArkData';
-import { fileUri, fileIo as fileIo } from '@kit.CoreFileKit';
+import { fileUri, fileIo } from '@kit.CoreFileKit';
 import { common } from '@kit.AbilityKit';
 
 @Entry
 @Component
 struct ImageExample {
-  @State uri: string = "";
+  @State uri: string = '';
   @State blockArr: string[] = [];
   uiContext = this.getUIContext();
   udKey: string = '';
@@ -1275,7 +1263,11 @@ struct ImageExample {
               const arrayBuffer: ArrayBuffer = data.buffer.slice(data.byteOffset, data.byteLength + data.byteOffset);
               let filePath = context.filesDir + '/test.png';
               let file = fileIo.openSync(filePath, fileIo.OpenMode.CREATE | fileIo.OpenMode.READ_WRITE);
-              fileIo.writeSync(file.fd, arrayBuffer);
+              try {
+                fileIo.writeSync(file.fd, arrayBuffer);
+              } finally {
+                fileIo.closeSync(file.fd);
+              }
               // 获取图片的uri
               let uri = fileUri.getUriFromPath(filePath);
               let image: unifiedDataChannel.Image = new unifiedDataChannel.Image();
@@ -1307,7 +1299,7 @@ struct ImageExample {
           .height('90%')
           .width('100%')
           .onDrop((event?: DragEvent, extraParams?: string) => {
-            console.info("enter onDrop")
+            console.info('enter onDrop');
             let context = this.uiContext.getHostContext() as common.UIAbilityContext;
             let pathDir: string = context.distributedFilesDir;
             let destUri = fileUri.getUriFromPath(pathDir);
@@ -1345,12 +1337,12 @@ struct ImageExample {
               this.udKey = (event as DragEvent).startDataLoading(options);
               console.info(`udKey: ${this.udKey}`);
             } catch (e) {
-              console.error(`startDataLoading errorCode: ${e.code}, errorMessage: ${e.message}`);
+              console.error(`Failed to start data loading. Code: ${e.code}, message: ${e.message}`);
             }
           }, { disableDataPrefetch: true })
         }
-        .height("50%")
-        .width("90%")
+        .height('50%')
+        .width('90%')
         .border({ width: 1 })
       }
 
@@ -1359,7 +1351,7 @@ struct ImageExample {
           try {
             this.getUIContext().getDragController().cancelDataLoading(this.udKey);
           } catch (e) {
-            console.error(`cancelDataLoading errorCode: ${e.code}, errorMessage: ${e.message}`);
+            console.error(`Failed to cancel data loading. Code: ${e.code}, message: ${e.message}`);
           }
         })
         .margin({ top: 10 })
@@ -1370,11 +1362,10 @@ struct ImageExample {
 
 #### [h2]示例4（获取当前拖拽的屏幕ID）
 
-从API version 20开始，示例4展示了通过onDragXXX（不支持onDragEnd）接口获取到拖拽事件，并调用拖拽事件里的[getDisplayId](#getdisplayid20)接口获取屏幕ID。
+从API version 20开始，示例4展示了通过onDragXXX（不支持onDragEnd）接口获取拖拽事件，并调用拖拽事件的[getDisplayId](#getdisplayid20)接口获取屏幕ID。
 
 ```
 import { unifiedDataChannel, uniformTypeDescriptor } from '@kit.ArkData';
-import { BusinessError } from '@kit.BasicServicesKit';
 
 @Entry
 @Component
@@ -1390,17 +1381,6 @@ struct Index {
   @State leaveDisplayId: number = -1;
   @State dropDisplayId: number = -1;
 
-  @Builder
-  pixelMapBuilder() {
-    Column() {
-      // $r('app.media.app_icon')需要替换为开发者所需的图像资源文件
-      Image($r('app.media.app_icon'))
-        .width(120)
-        .height(120)
-        .backgroundColor(Color.Yellow)
-    }
-  }
-
   getDataFromUdmfRetry(event: DragEvent, callback: (data: DragEvent) => void) {
     try {
       let data: UnifiedData = event.getData();
@@ -1413,8 +1393,8 @@ struct Index {
       }
       callback(event);
       return true;
-    } catch (e) {
-      console.error(`getData failed, code = ${(e as BusinessError).code}, message = ${(e as BusinessError).message}`);
+    } catch (error) {
+      console.error(`Failed to get data. Code: ${error.code}, message: ${error.message}`);
       return false;
     }
   }
@@ -1428,7 +1408,7 @@ struct Index {
     }, 1500);
   }
 
-  private PreDragChange(preDragStatus: PreDragStatus): void {
+  private preDragChange(preDragStatus: PreDragStatus): void {
     if (preDragStatus == PreDragStatus.READY_TO_TRIGGER_DRAG_ACTION) {
       this.backGroundColor = Color.Red;
     } else if (preDragStatus == PreDragStatus.ACTION_CANCELED_BEFORE_DRAG
@@ -1492,7 +1472,7 @@ struct Index {
           .draggable(true)
           .margin({ left: 15 })
           .onPreDrag((status: PreDragStatus) => {
-            this.PreDragChange(status);
+            this.preDragChange(status);
           })
       }.width('45%')
       .height('100%')
@@ -1535,7 +1515,7 @@ struct Index {
               event.useCustomDropAnimation = false;
               this.imgState = Visibility.None;
               event.setResult(DragResult.DRAG_SUCCESSFUL);
-            })
+            });
           })
       }.width('45%')
       .height('100%')
@@ -1545,11 +1525,11 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664209415.png)
+ ![](./img/zh-cn_image_0000002655848324.png)
 
 #### [h2]示例5（获取包名和是否是跨设备）
 
-从API version 20开始，示例5展示了通过onDragXXX接口获取到拖拽事件，调用拖拽事件里的[getDragSource](#getdragsource20)接口获取包名，调用isRemote接口获取是否是跨设备。
+从API version 20开始，示例5展示了通过onDragXXX接口获取拖拽事件，调用拖拽事件的[getDragSource](#getdragsource20)接口获取包名，调用isRemote接口判断是否为跨设备拖拽。
 
 ```
 @Entry
@@ -1627,18 +1607,17 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664329475.png)
+ ![](./img/zh-cn_image_0000002686087753.png)
 
 #### [h2]示例6（拖拽支持悬停检测）
 
-从API version 20开始，示例6展示了通过[onDragSpringLoading](#ondragspringloading20)接口注册回调，并调用[SpringLoadingContext](#springloadingcontext20)接口获取上下文（当前状态、通知序列）。
+从API version 20开始，示例6展示了通过[onDragSpringLoading](#ondragspringloading20)接口注册回调，并通过回调中的[SpringLoadingContext](#springloadingcontext20)获取上下文信息（当前状态、通知序列）。
 
 ```
 // xxx.ets
 @Entry
 @Component
 struct Index {
-  @State targetText: string = 'Drag Text';
   @State state: number = 0;
   @State currentNotifySequence: number = 0;
   @State config: DragSpringLoadingConfiguration = {
@@ -1659,17 +1638,17 @@ struct Index {
           .backgroundColor('#008888')
         // $r('app.media.startIcon')需要替换为开发者所需的图像资源文件
         Image($r('app.media.startIcon'))
-          .id("ori_image")
+          .id('ori_image')
           .width(100)
           .height(100)
           .draggable(true)
           .margin({ left: 15 })
-        Text('当前状态是： ' + this.state)
+        Text('当前状态是: ' + this.state)
           .fontSize(18)
           .width('100%')
           .height(40)
           .margin(10)
-        Text('当前通知序列是： ' + this.currentNotifySequence)
+        Text('当前通知序列是: ' + this.currentNotifySequence)
           .fontSize(18)
           .width('100%')
           .height(40)
@@ -1685,8 +1664,8 @@ struct Index {
           .height(40)
           .margin(10)
           .backgroundColor('#008888')
-          .id("text")
-        Image("")
+          .id('text')
+        Image('')
           .width(100)
           .height(100)
           .draggable(true)
@@ -1704,14 +1683,14 @@ struct Index {
         this.state = context.state;
         this.currentNotifySequence = context.currentNotifySequence;
       }, this.config)
-      .id("column")
+      .id('column')
       .backgroundColor(Color.Grey)
     }
     .height('100%')
   }
 }
 ```
- ![](./img/zh-cn_image_0000002633850364.gif)
+ ![](./img/zh-cn_image_0000002685927925.gif)
 
 #### [h2]示例7（拖起方延迟提供数据）
 
@@ -1719,13 +1698,13 @@ struct Index {
 
 ```
 import { unifiedDataChannel, uniformDataStruct, uniformTypeDescriptor } from '@kit.ArkData';
-import { fileUri, fileIo as fileIo } from '@kit.CoreFileKit';
+import { fileUri, fileIo } from '@kit.CoreFileKit';
 import { common } from '@kit.AbilityKit';
 
 @Entry
 @Component
 struct VideoExample {
-  @State uri: string = "";
+  @State uri: string = '';
   @State blockArr: string[] = [];
   uiContext = this.getUIContext();
   udKey: string = '';
@@ -1744,6 +1723,7 @@ struct VideoExample {
           .onDragStart((event: DragEvent) => {
             const context: Context | undefined = this.uiContext.getHostContext();
             if (context) {
+              // 定义延迟数据加载回调，在目标端请求数据时读取视频资源并封装为UnifiedData。
               let loadHandler: unifiedDataChannel.DataLoadHandler = (acceptableInfo) => {
                 console.info(`acceptableInfo recordCount ${acceptableInfo?.recordCount}`);
                 if (acceptableInfo?.types) {
@@ -1761,17 +1741,19 @@ struct VideoExample {
                   fileIo.readSync(data.fd, buf, { offset: data.offset, length: bufferSize });
                   fileIo.writeSync(file.fd, buf, { offset: 0, length: bufferSize });
                 } catch (error) {
-                  console.error(`openSync errorCode: ${error.code}, errorMessage: ${error.message}`);
+                  console.error(`Failed to open file. Code: ${error.code}, message: ${error.message}`);
                 } finally {
-                  fileIo.closeSync(file.fd);
+                  if (file !== null) {
+                    fileIo.closeSync(file.fd);
+                  }
                 }
-                context.resourceManager.closeRawFdSync('test1.mp4')
+                context.resourceManager.closeRawFdSync('test1.mp4');
                 this.uri = fileUri.getUriFromPath(filePath);
                 let videoMp: uniformDataStruct.FileUri = {
                   uniformDataType: 'general.file-uri',
                   oriUri: this.uri,
                   fileType: 'general.video',
-                }
+                };
                 let unifiedRecord = new unifiedDataChannel.UnifiedRecord();
                 let unifiedData = new unifiedDataChannel.UnifiedData();
                 unifiedRecord.addEntry(uniformTypeDescriptor.UniformDataType.FILE_URI, videoMp);
@@ -1827,7 +1809,7 @@ struct VideoExample {
                 console.info(`percentage: ${progress.progress}`);
               };
             let info: unifiedDataChannel.DataLoadInfo =
-              { types: new Set([uniformTypeDescriptor.UniformDataType.VIDEO]), recordCount: 100 }
+              { types: new Set([uniformTypeDescriptor.UniformDataType.VIDEO]), recordCount: 100 };
             let options: DataSyncOptions = {
               destUri: destUri,
               fileConflictOptions: unifiedDataChannel.FileConflictOptions.OVERWRITE,
@@ -1836,15 +1818,16 @@ struct VideoExample {
               acceptableInfo: info,
             }
             try {
+              // 启动异步数据加载，并保存数据加载标识用于后续取消传输。
               this.udKey = (event as DragEvent).startDataLoading(options);
               console.info(`udKey: ${this.udKey}`);
-            } catch (e) {
-              console.error(`startDataLoading errorCode: ${e.code}, errorMessage: ${e.message}`);
+            } catch (error) {
+              console.error(`startDataLoading errorCode: ${error.code}, errorMessage: ${error.message}`);
             }
           }, { disableDataPrefetch: true })
         }
-        .height("50%")
-        .width("90%")
+        .height('50%')
+        .width('90%')
         .border({ width: 1 })
       }
 
@@ -1852,8 +1835,8 @@ struct VideoExample {
         .onClick(() => {
           try {
             this.getUIContext().getDragController().cancelDataLoading(this.udKey);
-          } catch (e) {
-            console.error(`cancelDataLoading errorCode: ${e.code}, errorMessage: ${e.message}`);
+          } catch (error) {
+            console.error(`cancelDataLoading errorCode: ${error.code}, errorMessage: ${error.message}`);
           }
         })
         .margin({ top: 10 })
@@ -1861,7 +1844,7 @@ struct VideoExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002634010268.gif)
+ ![](./img/zh-cn_image_0000002656008246.gif)
 
 #### [h2]示例8（拖拽自动隐藏指定组件）
 
@@ -1916,16 +1899,16 @@ struct DragEventAutoHideSample {
       Text(this.statusText)
         .width('100%')
         .fontSize(14)
-        .fontColor('#BF360C');
+        .fontColor('#BF360C')
 
       Row({ space: 12 }) {
         Column() {
           Text('拖拽源')
             .fontColor(Color.White)
-            .fontWeight(FontWeight.Medium);
+            .fontWeight(FontWeight.Medium)
           Text('id: drag_source')
             .fontSize(10)
-            .fontColor('#E8F5E9');
+            .fontColor('#E8F5E9')
         }
           .id('drag_source')
           .width(140)
@@ -1941,20 +1924,20 @@ struct DragEventAutoHideSample {
             event.setData(this.buildData('drag event auto hide test data'));
             this.hideTargets();
             return () => {
-              Text('拖拽预览');
+              Text('拖拽预览')
             };
           })
           .onDragEnd(() => {
             this.restoreTargets();
-          });
+          })
 
         Column() {
           Text('跟随隐藏组件')
             .fontColor(Color.White)
-            .fontWeight(FontWeight.Medium);
+            .fontWeight(FontWeight.Medium)
           Text('id: drag_badge')
             .fontSize(10)
-            .fontColor('#E3F2FD');
+            .fontColor('#E3F2FD')
         }
           .id('drag_badge')
           .width(140)
@@ -1962,15 +1945,15 @@ struct DragEventAutoHideSample {
           .backgroundColor('#1565C0')
           .borderRadius(12)
           .justifyContent(FlexAlign.Center)
-          .visibility(this.badgeVisibility);
+          .visibility(this.badgeVisibility)
       }
 
       Column() {
         Text('拖拽落点')
-          .fontWeight(FontWeight.Medium);
+          .fontWeight(FontWeight.Medium)
         Text('松手后恢复组件显示')
           .fontSize(10)
-          .fontColor('#6D4C41');
+          .fontColor('#6D4C41')
       }
         .width('100%')
         .height(120)
@@ -1979,11 +1962,11 @@ struct DragEventAutoHideSample {
         .justifyContent(FlexAlign.Center)
         .onDrop(() => {
           this.restoreTargets();
-        });
+        })
     }
     .width('100%')
-    .padding(16);
+    .padding(16)
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664209417.gif)
+ ![](./img/zh-cn_image_0000002655848326.gif)

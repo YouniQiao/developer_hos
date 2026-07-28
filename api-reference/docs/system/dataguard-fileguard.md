@@ -2,13 +2,13 @@
 title: "fileGuard (文件分级管控)"
 upstream_id: "harmonyos-references/dataguard-fileguard"
 catalog: "harmonyos-references"
-content_hash: "55fc6090923c"
-synced_at: "2026-07-09T00:59:17.274781"
+content_hash: "5661aca3ff6b"
+synced_at: "2026-07-28T16:50:29.920616"
 ---
 
 # fileGuard (文件分级管控)
 
-文件分级管控服务为企业安全管控类[MDM](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit)应用提供统一企业关键信息资产（KIA）文件的识别和外发管控能力，保证企业数据安全。功能包括扫描全盘目录下的文档，识别KIA文件，并管控KIA文件通过网络发送到非可信网段。
+文件分级管控为企业安全管控类[MDM](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit)应用提供统一企业关键信息资产（KIA）文件的识别和外发管控能力，保证企业数据安全。功能包括扫描全盘目录下的文档，识别KIA文件，并管控KIA文件通过网络发送到非可信网段。
 
 仅供企业安全管控类MDM应用申请权限后使用。
 
@@ -83,6 +83,51 @@ HDC认证的设备类型枚举。
 | --- | --- | --- |
 | UPPER | 0 | 表示HDC认证的设备类型为上位机。 |
 | LOWER | 1 | 表示HDC认证的设备类型为下位机。 |
+
+#### ManagedProcessStatus
+
+进程管控策略状态枚举。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.PCService.FileGuard
+
+起始版本： 26.0.0
+
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| TIME_BASED | 0 | 表示该进程按时间管控。 |
+| LIFE_LONG | 1 | 表示该进程按全生命周期持久化管控。 |
+
+#### ManagedProcessPolicy
+
+表示进程管控策略。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.PCService.FileGuard
+
+起始版本： 26.0.0
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| status | [ManagedProcessStatus](#managedprocessstatus) | 否 | 否 | 表示进程管控策略状态。 |
+| time | number | 否 | 是 | 用于统一设置所有策略的管控时长，当设置该时长后，基于[updatePolicy](#updatepolicy)设置的时长将不再生效。当status为LIFE_LONG时非必选，默认为undefined，设置管控时长不生效；当status为TIME_BASED时必选，单位：ms，取值范围：(0, 86400000)。 |
+
+#### ManagedProcessInfo
+
+表示进程管控信息。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.PCService.FileGuard
+
+起始版本： 26.0.0
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| pid | number | 否 | 否 | 表示进程的PID。 |
+| policy | string | 否 | 是 | 表示管控策略类别。6种固定取值：KIA，TAG1~TAG5，不区分大小写。"KIA"表示按照默认策略管控该进程；"TAG1"至"TAG5"分别表示按照对应的自定义标签策略管控该进程；当[addManagedProcess](#addmanagedprocess)未设置该参数时，表示设置该进程默认管控策略；当[removeManagedProcess](#removemanagedprocess)未设置该参数时，表示删除该进程所有管控策略。 |
 
 #### FilePathInfo
 
@@ -236,6 +281,7 @@ startFileScanTask(type: CommonDirScanType, callback: ScanFileCallback, batchNum?
 | --- | --- |
 | 201 | Permission denied. |
 | 401 | The parameter check failed. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
 
 示例：
 
@@ -292,6 +338,7 @@ startFileScanTask(path: string, callback: ScanFileCallback, batchNum?: number): 
 | --- | --- |
 | 201 | Permission denied. |
 | 401 | The parameter check failed. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
 
 示例：
 
@@ -348,6 +395,7 @@ openFile(path: string, callback: AsyncCallback<number>): void
 | --- | --- |
 | 201 | Permission denied. |
 | 401 | The parameter check failed. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
 
 示例：
 
@@ -400,6 +448,7 @@ openFile(path: string): Promise<number>
 | --- | --- |
 | 201 | Permission denied. |
 | 401 | The parameter check failed. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
 
 示例：
 
@@ -445,6 +494,7 @@ openFileWrite(path: string, callback: AsyncCallback<number>): void
 | --- | --- |
 | 201 | Permission denied. |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
 
 示例：
 
@@ -497,6 +547,7 @@ openFileWrite(path: string): Promise<number>
 | --- | --- |
 | 201 | Permission denied. |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
 
 示例：
 
@@ -544,6 +595,7 @@ setFileTag(path: string, level: SecurityLevel, tag: string, callback: AsyncCallb
 | --- | --- |
 | 201 | Permission denied. |
 | 401 | The parameter check failed. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
 
 示例：
 
@@ -599,6 +651,7 @@ setFileTag(path: string, level: SecurityLevel, tag: string): Promise<void>
 | --- | --- |
 | 201 | Permission denied. |
 | 401 | The parameter check failed. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
 
 示例：
 
@@ -645,8 +698,9 @@ setFileCustomTag(path: string, tagList: Array<string>, callback: AsyncCallback<v
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 1001700103 | The path is not exist. |
-| 1001700104 | The tag list check failed. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
+| 1001700103 | Invalid path. |
+| 1001700104 | Failed to check the tag list. |
 
 示例：
 
@@ -700,8 +754,9 @@ setFileCustomTag(path: string, tagList: Array<string>): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 1001700103 | The path is not exist. |
-| 1001700104 | The tag list check failed. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
+| 1001700103 | Invalid path. |
+| 1001700104 | Failed to check the tag list. |
 
 示例：
 
@@ -748,8 +803,9 @@ unsetFileCustomTag(path: string, tagList: Array<string>, callback: AsyncCallback
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 1001700103 | The path is not exist. |
-| 1001700104 | The tag list check failed. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
+| 1001700103 | Invalid path. |
+| 1001700104 | Failed to check the tag list. |
 
 示例：
 
@@ -803,8 +859,9 @@ unsetFileCustomTag(path: string, tagList: Array<string>): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 1001700103 | The path is not exist. |
-| 1001700104 | The tag list check failed. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
+| 1001700103 | Invalid path. |
+| 1001700104 | Failed to check the tag list. |
 
 示例：
 
@@ -851,6 +908,7 @@ queryFileTag(path: string, callback: AsyncCallback<FileTagInfo>): void
 | --- | --- |
 | 201 | Permission denied. |
 | 401 | The parameter check failed. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
 
 示例：
 
@@ -903,6 +961,7 @@ queryFileTag(path: string): Promise<FileTagInfo>
 | --- | --- |
 | 201 | Permission denied. |
 | 401 | The parameter check failed. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
 
 示例：
 
@@ -948,6 +1007,7 @@ getFileUri(path: string, callback: AsyncCallback<FilePathInfo>): void
 | --- | --- |
 | 201 | Permission denied. |
 | 401 | The parameter check failed. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
 
 示例：
 
@@ -1000,6 +1060,7 @@ getFileUri(path: string): Promise<FilePathInfo>
 | --- | --- |
 | 201 | Permission denied. |
 | 401 | The parameter check failed. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
 
 示例：
 
@@ -1045,6 +1106,7 @@ deleteFile(path: string, callback: AsyncCallback<void>): void
 | --- | --- |
 | 201 | Permission denied. |
 | 401 | The parameter check failed. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
 
 示例：
 
@@ -1097,6 +1159,7 @@ deleteFile(path: string): Promise<void>
 | --- | --- |
 | 201 | Permission denied. |
 | 401 | The parameter check failed. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
 
 示例：
 
@@ -1131,7 +1194,7 @@ updatePolicy(policy: string, callback: AsyncCallback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| policy | string | 是 | 安全管控策略：网络策略、文件策略、蓝牙策略、星闪策略、多用户策略、可信任应用列表和五种自定义标签。 - **网络策略** - default_policy：网段管控默认策略。判断在默认网段范围内，但不处于可信任网段和不可信任网段范围内的ip是否需要被管控，0表示不管控，1表示管控，默认为0。 - net_intercept_toggle：KIA网络拦截使能开关。0表示关闭，设置为0时，KIA网络拦截不生效；1表示开启（默认为1），设置为1时，开启拦截，具体拦截规则如下： -当default_policy设置为0（不管控）时，系统会拦截通过网络向外发送至默认网段范围外或不可信网段的KIA文件。 -当default_policy设置为1（管控）时，系统仅允许文件发往明确配置的可信任网段，以下所有情况均会被拦截：发往默认网段范围外的地址，发往不可信任网段地址，以及发往默认网段内但既未列入可信任网段也未列入不可信网段的地址。 - net_reject_cache_time：网络外发拦截管控时间。当成功触发网络外发拦截后，在该管控时间范围内，相关进程通过网络进行的任何文件外发操作都会被拦截。正整数，默认为30，单位：s。 - boundary：默认网段范围。限定默认管控的网段范围，向不在此范围内的ip地址外发文件默认会被拦截。字符串列表，元素为ip网段范围(包含IPV4和IPV6)，如"10.0.0.0-10.255.255.255"。 - netsegment_trustlist：可信任网段。限定可信任的网段范围，外发至该网段内的文件不会被拦截。字符串列表，元素为ip网段范围(包含IPV4和IPV6)，如"10.0.0.0-10.255.255.255"。 - netsegment_blocklist：不可信网段。限定不可信任的网段范围，外发至该网段内的文件会被拦截。字符串列表，元素为ip网段范围(包含IPV4和IPV6)，如"10.0.0.0-10.255.255.255"。 - netsegment_update_type：网段更新方式。0表示下发策略中的网段信息将覆盖原有策略中的网段信息；1表示在原有网段信息的基础下追加新下发策略中的网段信息，默认为0。 - **文件策略** - usb_intercept_toggle：U盘拦截管控开关。当KIA文件外发到U盘时，设置为0表示关闭拦截（不启用管控），设置为1表示开启拦截，默认为0。 - smb_client_intercept_toggle：Samba客户端拦截管控开关。当通过网络邻居外发KIA文件时，0表示关闭拦截（不启用管控），1表示开启拦截，默认为1。从6.0.1(21)版本开始支持此管控策略。 - smb_server_intercept_toggle：Samba服务端拦截管控开关。当通过网络邻居访问KIA文件时，0表示关闭拦截（不启用管控），1表示开启拦截，默认为1。从6.0.1(21)版本开始支持此管控策略。 - new_file_audit_toggle：新建文件审计开关。开启后，会向审计框架上报文件新建的审计事件，0表示关闭，1表示开启，默认为0。起始版本：从5.1.1(19)版本开始支持此管控策略。 - kia_variant_toggle：KIA变种开关。开启后，系统将监控KIA变种事件，并支持通过注册回调的方式监听并处理相关变种事件，0表示关闭，1表示开启，默认为1。从5.0.3(15)版本开始支持此管控策略。 - audit_filter_toggle：KIA文件创建事件及变种事件的过滤开关。0表示关闭，关闭后，会记录所有进程行为下的KIA文件创建事件及变种事件；1表示开启，开启后，仅记录应用行为下的KIA文件创建事件及变种事件，默认为0。从5.0.3(15)版本开始支持此管控策略。 - print_intercept_toggle：打印管控开关。0表示关闭，关闭后，打印KIA文件的行为不会被拦截，默认为0；1表示开启，开启后，打印KIA文件的行为将会被拦截。从6.1.1(24)版本开始支持此管控策略。 - **蓝牙策略** 从6.0.1(21)版本开始支持此管控策略。 - bluetooth_intercept_toggle：蓝牙拦截管控开关。设置后，通过蓝牙外发KIA文件会被拦截。字符串列表，可填入"bt_socket","bt_ble","bt_opp"三种蓝牙协议名称，默认为空。 - bluetooth_intercept_time：蓝牙外发拦截管控时间。当成功触发蓝牙外发拦截后，在该管控时间范围内，通过蓝牙进行的任何文件外发操作都会被拦截。正整数，默认为15，单位：s。 - **星闪策略** 从6.0.1(21)版本开始支持此管控策略。 - nearlink_intercept_toggle：星闪拦截管控开关。设置后，通过相关星闪协议外发KIA文件会被拦截。字符串列表，可填入"nearlink_ssap","nearlink_dataTransfer"两种星闪协议名称，默认为空。 - nearlink_intercept_time：星闪外发拦截管控时间。当成功触发星闪外发拦截后，在该管控时间范围内，通过星闪进行的任何文件外发操作都会被拦截。正整数，默认为15，单位：s。 - **多用户策略** 从5.1.1(19)版本开始支持此管控策略。 - user_id：用户ID。设置用户ID后，本次下发的管控策略范围将仅适用于该user_id对应的用户；若未指定user_id，则采用默认的管控策略。在使用过程中，系统会优先采用用户的专属策略，若无法匹配，则自动采用默认策略。 - **可信任应用列表** - trust_app_list：可信任应用列表，在可信任应用列表中的应用才可读取KIA文件。字符串列表，元素为[appId](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appid)，默认为空。从5.0.3(15)版本开始支持此管控策略。 - kia_file_access_toggle：KIA文件访问限制开关。1表示开启，开启后，应用读取KIA文件的行为将会受到限制，需将应用的[appId](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appid)加入到trust_app_list中，应用才被允许读取KIA文件；0表示关闭，关闭后，任何应用和进程都可以读取KIA文件的内容，默认为0。 从6.1.1(24)版本开始支持此管控策略。 - **五种自定义标签** 从5.1.1(19)版本开始支持此管控策略。最多支持五种自定义标签管控策略，该策略会自动识别文件扩展属性中包含指定"tag"内容的文件，并对这些文件进行相应管控。 - "tag": 标签名称，用于在[setFileTag](#setfiletag)、[setFileCustomTag](#setfilecustomtag)和[unsetFileCustomTag](#unsetfilecustomtag)中管控对应标签的文件，默认为空。 - "usb_intercept_toggle"：U盘拦截管控开关，默认为0。 - "net_intercept_toggle"：网络拦截管控开关，默认为0。 - "boundary"：默认网段范围。 - "netsegment_trustlist"：可信任网段。 - "netsegment_blocklist"：不可信网段。 |
+| policy | string | 是 | 安全管控策略：网络策略、文件策略、蓝牙策略、星闪策略、多用户策略、可信任应用列表和五种自定义标签。受[IPC](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ipc-rpc-overview)通信的限制，单次传输数据上限为100KB。 - **网络策略** - net_intercept_toggle：KIA网络拦截使能开关。0表示关闭，设置为0时，KIA网络拦截不生效；1表示开启拦截（默认为1）。 - boundary：管控网段范围。限定管控的网段范围，向不在此范围内的ip地址外发文件默认会被拦截。字符串列表，元素为ip网段范围(包含IPV4和IPV6)，如"10.0.0.0-10.255.255.255"。 - netsegment_trustlist：管控网段范围中的可信任网段，外发至该网段内的文件不会被拦截。字符串列表，元素为ip网段范围(包含IPV4和IPV6)，如"10.10.0.0-10.100.255.255"。 - netsegment_blocklist：管控网段范围中的不可信网段，外发至该网段内的文件会被拦截。字符串列表，元素为ip网段范围(包含IPV4和IPV6)，如"10.200.0.0-10.200.255.255"。 - default_policy：在管控网段范围内，但不处于可信任网段和不可信网段范围内的网段范围称为unspecified_segment，该字段用于判断外发至unspecified_segment内的文件是否会被拦截，具体拦截规则如下： 当default_policy设置为0时，向unspecified_segment范围发送不会被拦截。 当default_policy设置为1时，向unspecified_segment范围发送会被拦截。 - netsegment_update_type：网段更新方式。0表示下发策略中的网段信息将覆盖原有策略中的网段信息；1表示在原有网段信息的基础下追加新下发策略中的网段信息，默认为0。 - net_reject_cache_time：网络外发拦截管控时间。当成功触发网络外发拦截后，在该管控时间范围内，相关进程通过网络进行的任何文件外发操作都会被拦截。正整数，默认为30，单位：s。 - **文件策略** - usb_intercept_toggle：U盘拦截管控开关。当KIA文件外发到U盘时，设置为0表示关闭拦截（不启用管控），设置为1表示开启拦截，默认为0。 - smb_client_intercept_toggle：Samba客户端拦截管控开关。当通过网络邻居外发KIA文件时，0表示关闭拦截（不启用管控），1表示开启拦截，默认为1。从API版本6.0.1(21)开始支持此管控策略。 - smb_server_intercept_toggle：Samba服务端拦截管控开关。当通过网络邻居访问KIA文件时，0表示关闭拦截（不启用管控），1表示开启拦截，默认为1。从API版本6.0.1(21)开始支持此管控策略。 - new_file_audit_toggle：新建文件审计开关。开启后，会向审计框架上报文件新建的审计事件，0表示关闭，1表示开启，默认为0。从API版本5.1.1(19)开始支持此管控策略。 - kia_variant_toggle：KIA变种开关。开启后，系统将监控KIA变种事件，并支持通过注册回调的方式监听并处理相关变种事件，0表示关闭，1表示开启，默认为1。从API版本5.0.3(15)开始支持此管控策略。 - audit_filter_toggle：KIA文件创建事件及变种事件的过滤开关。0表示关闭，关闭后，会记录所有进程行为下的KIA文件创建事件及变种事件；1表示开启，开启后，仅记录应用行为下的KIA文件创建事件及变种事件，默认为0。从API版本5.0.3(15)开始支持此管控策略。 - print_intercept_toggle：打印管控开关。0表示关闭，关闭后，打印KIA文件的行为不会被拦截，默认为0；1表示开启，开启后，打印KIA文件的行为将会被拦截。从API版本6.1.1(24)开始支持此管控策略。 - **蓝牙策略** 从API版本6.0.1(21)开始支持此管控策略。 - bluetooth_intercept_toggle：蓝牙拦截管控开关。设置后，通过蓝牙外发KIA文件会被拦截。字符串列表，可填入"bt_socket","bt_ble","bt_opp"三种蓝牙协议名称，默认为空。 - bluetooth_intercept_time：蓝牙外发拦截管控时间。当成功触发蓝牙外发拦截后，在该管控时间范围内，通过蓝牙进行的任何文件外发操作都会被拦截。正整数，默认为15，单位：s。 - **星闪策略** 从API版本6.0.1(21)开始支持此管控策略。 - nearlink_intercept_toggle：星闪拦截管控开关。设置后，通过相关星闪协议外发KIA文件会被拦截。字符串列表，可填入"nearlink_ssap","nearlink_dataTransfer"两种星闪协议名称，默认为空。 - nearlink_intercept_time：星闪外发拦截管控时间。当成功触发星闪外发拦截后，在该管控时间范围内，通过星闪进行的任何文件外发操作都会被拦截。正整数，默认为15，单位：s。 - **多用户策略** 从API版本5.1.1(19)开始支持此管控策略。 - user_id：用户ID。设置用户ID后，本次下发的管控策略范围将仅适用于该user_id对应的用户；若未指定user_id，则采用默认的管控策略。在使用过程中，系统会优先采用用户的专属策略，若无法匹配，则自动采用默认策略。 - **可信任应用列表** - trust_app_list：可信任应用列表，在可信任应用列表中的应用才可读取KIA文件。字符串列表，元素为[appId](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appid)，默认为空。从API版本5.0.3(15)开始支持此管控策略。 - kia_file_access_toggle：KIA文件访问限制开关。1表示开启，开启后，应用读取KIA文件的行为将会受到限制，需将应用的[appId](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appid)加入到trust_app_list中，应用才被允许读取KIA文件；0表示关闭，关闭后，任何应用和进程都可以读取KIA文件的内容，默认为0。 从API版本6.1.1(24)开始支持此管控策略。 - **五种自定义标签** 从API版本5.1.1(19)开始支持此管控策略。最多支持五种自定义标签管控策略，该策略会自动识别文件扩展属性中包含指定"tag"内容的文件，并对这些文件进行相应管控。 - "tag": 标签名称，用于在[setFileTag](#setfiletag)、[setFileCustomTag](#setfilecustomtag)和[unsetFileCustomTag](#unsetfilecustomtag)中管控对应标签的文件，默认为空。 - "usb_intercept_toggle"：U盘拦截管控开关，默认为0。 - "net_intercept_toggle"：网络拦截管控开关，默认为0。 - "boundary"：默认网段范围。 - "netsegment_trustlist"：可信任网段。 - "netsegment_blocklist"：不可信网段。 自定义标签从API版本26.0.0开始新增支持以下管控策略： - "smb_client_intercept_toggle"：Samba客户端拦截管控开关，默认为0。 - "smb_server_intercept_toggle"：Samba服务端拦截管控开关，默认为0。 - "print_intercept_toggle"：打印管控开关，默认为0。 - "bluetooth_intercept_toggle"：蓝牙拦截管控开关。 - "bluetooth_intercept_time"：蓝牙外发拦截管控时间。 - "nearlink_intercept_toggle"：星闪拦截管控开关。 - "nearlink_intercept_time"：星闪外发拦截管控时间。 |
 | callback | AsyncCallback | 是 | 回调函数，当异步更新安全管控策略成功，err为undefined，否则为错误对象。 |
 
 错误码：
@@ -1142,6 +1205,7 @@ updatePolicy(policy: string, callback: AsyncCallback<void>): void
 | --- | --- |
 | 201 | Permission denied. |
 | 401 | The parameter check failed. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
 
 示例：
 
@@ -1155,13 +1219,15 @@ async function updatePolicy() {
 
   let guard: fileGuard.FileGuard = new fileGuard.FileGuard();
   let policy: string = '{' +
+    // 网络策略
     '"net_intercept_toggle":1,' +
+    '"boundary":["10.0.0.0-10.255.255.255","172.16.0.0-172.31.255.255","192.168.0.0-192.168.255.255"],' +
+    '"netsegment_trustlist":["10.10.0.0-10.100.255.255","172.20.0.0-172.20.255.255"],' +
+    '"netsegment_blocklist":["10.200.0.0-10.200.255.255","192.168.100.0-192.168.200.255"],' +
     '"default_policy":1,' +
-    '"net_reject_cache_time":30,' +
-    '"boundary":["10.0.0.0-10.255.255.255","172.16.0.0-172.31.255.255"],' +
-    '"netsegment_trustlist":["10.0.0.0-10.255.255.255","192.168.0.0-192.168.255.255"],' +
-    '"netsegment_blocklist":["172.16.0.0-172.31.255.255"],' +
     '"netsegment_update_type": 0,' +
+    '"net_reject_cache_time":30,' +
+    // 文件策略
     '"usb_intercept_toggle":1,' +
     '"smb_client_intercept_toggle":1,' +
     '"smb_server_intercept_toggle":1,' +
@@ -1169,52 +1235,92 @@ async function updatePolicy() {
     '"kia_variant_toggle":1,' +
     '"audit_filter_toggle":1,' +
     '"print_intercept_toggle":0,' +
+    // 蓝牙策略
     '"bluetooth_intercept_toggle":["bt_socket","bt_ble","bt_opp"],' +
     '"bluetooth_intercept_time":30,' +
+    // 星闪策略
     '"nearlink_intercept_toggle":["nearlink_ssap","nearlink_dataTransfer"],' +
     '"nearlink_intercept_time":30,' +
+    // 多用户策略
     `"user_id": ${userId},` +
+    // 可信任应用列表
     '"trust_app_list":["ohos.app.hap.myapplication_BPch04bPYBrkJX8RAsmiGDbHFaG+BYvhkg4TK4fHQzJOL4VnoBCZU3boBBXGVEB+M/j0X2nnd7KVeyWuEORVxI2g="],' +
     '"kia_file_access_toggle":0,' +
+    // 五种自定义标签
     '"Tag1":{' +
     '   "tag":"sensitive",' +
     '   "usb_intercept_toggle":1,' +
     '   "net_intercept_toggle":1,' +
-    '   "boundary":["10.0.0.0-10.255.255.255"],' +
-    '   "netsegment_trustlist":["10.0.0.0-10.255.255.255"],' +
-    '   "netsegment_blocklist":["172.16.0.0-172.31.255.255"]' +
+    '   "boundary":["10.0.0.0-10.255.255.255","172.16.0.0-172.31.255.255"],' +
+    '   "netsegment_trustlist":["10.10.0.0-10.10.255.255"],' +
+    '   "netsegment_blocklist":["172.20.0.0-172.20.255.255"],' +
+    '   "smb_client_intercept_toggle":1,' +
+    '   "smb_server_intercept_toggle":1,' +
+    '   "print_intercept_toggle":1,' +
+    '   "bluetooth_intercept_toggle":["bt_socket","bt_ble","bt_opp"],' +
+    '   "bluetooth_intercept_time":30,' +
+    '   "nearlink_intercept_toggle":["nearlink_ssap","nearlink_dataTransfer"],' +
+    '   "nearlink_intercept_time":30' +
     '  },' +
     '"Tag2":{' +
     '   "tag":"confidential",' +
     '   "usb_intercept_toggle":1,' +
     '   "net_intercept_toggle":1,' +
-    '   "boundary":["10.0.0.0-10.255.255.255"],' +
-    '   "netsegment_trustlist":["10.0.0.0-10.255.255.255"],' +
-    '   "netsegment_blocklist":["172.16.0.0-172.31.255.255"]' +
+    '   "boundary":["10.0.0.0-10.255.255.255","172.16.0.0-172.31.255.255"],' +
+    '   "netsegment_trustlist":["10.10.0.0-10.10.255.255"],' +
+    '   "netsegment_blocklist":["172.20.0.0-172.20.255.255"],' +
+    '   "smb_client_intercept_toggle":1,' +
+    '   "smb_server_intercept_toggle":1,' +
+    '   "print_intercept_toggle":1,' +
+    '   "bluetooth_intercept_toggle":["bt_socket","bt_ble","bt_opp"],' +
+    '   "bluetooth_intercept_time":30,' +
+    '   "nearlink_intercept_toggle":["nearlink_ssap","nearlink_dataTransfer"],' +
+    '   "nearlink_intercept_time":30' +
     '  },' +
     '"Tag3":{' +
     '   "tag":"public",' +
     '   "usb_intercept_toggle":0,' +
     '   "net_intercept_toggle":0,' +
-    '   "boundary":["10.0.0.0-10.255.255.255"],' +
-    '   "netsegment_trustlist":["10.0.0.0-10.255.255.255"],' +
-    '   "netsegment_blocklist":["172.16.0.0-172.31.255.255"]' +
+    '   "boundary":["10.0.0.0-10.255.255.255","172.16.0.0-172.31.255.255"],' +
+    '   "netsegment_trustlist":["10.10.0.0-10.10.255.255"],' +
+    '   "netsegment_blocklist":["172.20.0.0-172.20.255.255"],' +
+    '   "smb_client_intercept_toggle":1,' +
+    '   "smb_server_intercept_toggle":1,' +
+    '   "print_intercept_toggle":1,' +
+    '   "bluetooth_intercept_toggle":["bt_socket","bt_ble","bt_opp"],' +
+    '   "bluetooth_intercept_time":30,' +
+    '   "nearlink_intercept_toggle":["nearlink_ssap","nearlink_dataTransfer"],' +
+    '   "nearlink_intercept_time":30' +
     '  },' +
     '"Tag4":{' +
     '   "tag":"general",' +
     '   "usb_intercept_toggle":1,' +
     '   "net_intercept_toggle":0,' +
-    '   "boundary":["10.0.0.0-10.255.255.255"],' +
-    '   "netsegment_trustlist":["10.0.0.0-10.255.255.255"],' +
-    '   "netsegment_blocklist":["172.16.0.0-172.31.255.255"]' +
+    '   "boundary":["10.0.0.0-10.255.255.255","172.16.0.0-172.31.255.255"],' +
+    '   "netsegment_trustlist":["10.10.0.0-10.10.255.255"],' +
+    '   "netsegment_blocklist":["172.20.0.0-172.20.255.255"],' +
+    '   "smb_client_intercept_toggle":1,' +
+    '   "smb_server_intercept_toggle":1,' +
+    '   "print_intercept_toggle":1,' +
+    '   "bluetooth_intercept_toggle":["bt_socket","bt_ble","bt_opp"],' +
+    '   "bluetooth_intercept_time":30,' +
+    '   "nearlink_intercept_toggle":["nearlink_ssap","nearlink_dataTransfer"],' +
+    '   "nearlink_intercept_time":30' +
     '  },' +
     '"Tag5":{' +
     '   "tag":"special",' +
     '   "usb_intercept_toggle":1,' +
     '   "net_intercept_toggle":1,' +
-    '   "boundary":["10.0.0.0-10.255.255.255"],' +
-    '   "netsegment_trustlist":["10.0.0.0-10.255.255.255"],' +
-    '   "netsegment_blocklist":["172.16.0.0-172.31.255.255"]' +
+    '   "boundary":["10.0.0.0-10.255.255.255","172.16.0.0-172.31.255.255"],' +
+    '   "netsegment_trustlist":["10.10.0.0-10.10.255.255"],' +
+    '   "netsegment_blocklist":["172.20.0.0-172.20.255.255"],' +
+    '   "smb_client_intercept_toggle":1,' +
+    '   "smb_server_intercept_toggle":1,' +
+    '   "print_intercept_toggle":1,' +
+    '   "bluetooth_intercept_toggle":["bt_socket","bt_ble","bt_opp"],' +
+    '   "bluetooth_intercept_time":30,' +
+    '   "nearlink_intercept_toggle":["nearlink_ssap","nearlink_dataTransfer"],' +
+    '   "nearlink_intercept_time":30' +
     '  }' +
     '}';
   guard.updatePolicy(policy, (err: BusinessError) => {
@@ -1245,7 +1351,7 @@ updatePolicy(policy: string): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| policy | string | 是 | 安全管控策略：网络策略、文件策略、蓝牙策略、星闪策略、多用户策略、可信任应用列表和五种自定义标签。 - **网络策略** - default_policy：网段管控默认策略。判断在默认网段范围内，但不处于可信任网段和不可信任网段范围内的ip是否需要被管控，0表示不管控，1表示管控，默认为0。 - net_intercept_toggle：KIA网络拦截使能开关。0表示关闭，设置为0时，KIA网络拦截不生效；1表示开启（默认为1），设置为1时，开启拦截，具体拦截规则如下： -当default_policy设置为0（不管控）时，系统会拦截通过网络向外发送至默认网段范围外或不可信网段的KIA文件。 -当default_policy设置为1（管控）时，系统仅允许文件发往明确配置的可信任网段，以下所有情况均会被拦截：发往默认网段范围外的地址，发往不可信任网段地址，以及发往默认网段内但既未列入可信任网段也未列入不可信网段的地址。 - net_reject_cache_time：网络外发拦截管控时间。当成功触发网络外发拦截后，在该管控时间范围内，相关进程通过网络进行的任何文件外发操作都会被拦截。正整数，默认为30，单位：s。 - boundary：默认网段范围。限定默认管控的网段范围，向不在此范围内的ip地址外发文件默认会被拦截。字符串列表，元素为ip网段范围(包含IPV4和IPV6)，如"10.0.0.0-10.255.255.255"。 - netsegment_trustlist：可信任网段。限定可信任的网段范围，外发至该网段内的文件不会被拦截。字符串列表，元素为ip网段范围(包含IPV4和IPV6)，如"10.0.0.0-10.255.255.255"。 - netsegment_blocklist：不可信网段。限定不可信任的网段范围，外发至该网段内的文件会被拦截。字符串列表，元素为ip网段范围(包含IPV4和IPV6)，如"10.0.0.0-10.255.255.255"。 - netsegment_update_type：网段更新方式。0表示下发策略中的网段信息将覆盖原有策略中的网段信息；1表示在原有网段信息的基础下追加新下发策略中的网段信息，默认为0。 - **文件策略** - usb_intercept_toggle：U盘拦截管控开关。当KIA文件外发到U盘时，设置为0表示关闭拦截（不启用管控），设置为1表示开启拦截，默认为0。 - smb_client_intercept_toggle：Samba客户端拦截管控开关。当通过网络邻居外发KIA文件时，0表示关闭拦截（不启用管控），1表示开启拦截，默认为1。从6.0.1(21)版本开始支持此管控策略。 - smb_server_intercept_toggle：Samba服务端拦截管控开关。当通过网络邻居访问KIA文件时，0表示关闭拦截（不启用管控），1表示开启拦截，默认为1。从6.0.1(21)版本开始支持此管控策略。 - new_file_audit_toggle：新建文件审计开关。开启后，会向审计框架上报文件新建的审计事件，0表示关闭，1表示开启，默认为0。起始版本：从5.1.1(19)版本开始支持此管控策略。 - kia_variant_toggle：KIA变种开关。开启后，系统将监控KIA变种事件，并支持通过注册回调的方式监听并处理相关变种事件，0表示关闭，1表示开启，默认为1。从5.0.3(15)版本开始支持此管控策略。 - audit_filter_toggle：KIA文件创建事件及变种事件的过滤开关。0表示关闭，关闭后，会记录所有进程行为下的KIA文件创建事件及变种事件；1表示开启，开启后，仅记录应用行为下的KIA文件创建事件及变种事件，默认为0。从5.0.3(15)版本开始支持此管控策略。 - print_intercept_toggle：打印管控开关。0表示关闭，关闭后，打印KIA文件的行为不会被拦截，默认为0；1表示开启，开启后，打印KIA文件的行为将会被拦截。从6.1.1(24)版本开始支持此管控策略。 - **蓝牙策略** 从6.0.1(21)版本开始支持此管控策略。 - bluetooth_intercept_toggle：蓝牙拦截管控开关。设置后，通过蓝牙外发KIA文件会被拦截。字符串列表，可填入"bt_socket","bt_ble","bt_opp"三种蓝牙协议名称，默认为空。 - bluetooth_intercept_time：蓝牙外发拦截管控时间。当成功触发蓝牙外发拦截后，在该管控时间范围内，通过蓝牙进行的任何文件外发操作都会被拦截。正整数，默认为15，单位：s。 - **星闪策略** 从6.0.1(21)版本开始支持此管控策略。 - nearlink_intercept_toggle：星闪拦截管控开关。设置后，通过相关星闪协议外发KIA文件会被拦截。字符串列表，可填入"nearlink_ssap","nearlink_dataTransfer"两种星闪协议名称，默认为空。 - nearlink_intercept_time：星闪外发拦截管控时间。当成功触发星闪外发拦截后，在该管控时间范围内，通过星闪进行的任何文件外发操作都会被拦截。正整数，默认为15，单位：s。 - **多用户策略** 从5.1.1(19)版本开始支持此管控策略。 - user_id：用户ID。设置用户ID后，本次下发的管控策略范围将仅适用于该user_id对应的用户；若未指定user_id，则采用默认的管控策略。在使用过程中，系统会优先采用用户的专属策略，若无法匹配，则自动采用默认策略。 - **可信任应用列表** - trust_app_list：可信任应用列表，在可信任应用列表中的应用才可读取KIA文件。字符串列表，元素为[appId](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appid)，默认为空。从5.0.3(15)版本开始支持此管控策略。 - kia_file_access_toggle：KIA文件访问限制开关。1表示开启，开启后，应用读取KIA文件的行为将会受到限制，需将应用的[appId](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appid)加入到trust_app_list中，应用才被允许读取KIA文件；0表示关闭，关闭后，任何应用和进程都可以读取KIA文件的内容，默认为0。 从6.1.1(24)版本开始支持此管控策略。 - **五种自定义标签** 从5.1.1(19)版本开始支持此管控策略。最多支持五种自定义标签管控策略，该策略会自动识别文件扩展属性中包含指定"tag"内容的文件，并对这些文件进行相应管控。 - "tag": 标签名称，用于在[setFileTag](#setfiletag)、[setFileCustomTag](#setfilecustomtag)和[unsetFileCustomTag](#unsetfilecustomtag)中管控对应标签的文件，默认为空。 - "usb_intercept_toggle"：U盘拦截管控开关，默认为0。 - "net_intercept_toggle"：网络拦截管控开关，默认为0。 - "boundary"：默认网段范围。 - "netsegment_trustlist"：可信任网段。 - "netsegment_blocklist"：不可信网段。 |
+| policy | string | 是 | 安全管控策略：网络策略、文件策略、蓝牙策略、星闪策略、多用户策略、可信任应用列表和五种自定义标签。受[IPC](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ipc-rpc-overview)通信的限制，单次传输数据上限为100KB。 - **网络策略** - net_intercept_toggle：KIA网络拦截使能开关。0表示关闭，设置为0时，KIA网络拦截不生效；1表示开启拦截（默认为1）。 - boundary：管控网段范围。限定管控的网段范围，向不在此范围内的ip地址外发文件默认会被拦截。字符串列表，元素为ip网段范围(包含IPV4和IPV6)，如"10.0.0.0-10.255.255.255"。 - netsegment_trustlist：管控网段范围中的可信任网段，外发至该网段内的文件不会被拦截。字符串列表，元素为ip网段范围(包含IPV4和IPV6)，如"10.10.0.0-10.100.255.255"。 - netsegment_blocklist：管控网段范围中的不可信网段，外发至该网段内的文件会被拦截。字符串列表，元素为ip网段范围(包含IPV4和IPV6)，如"10.200.0.0-10.200.255.255"。 - default_policy：在管控网段范围内，但不处于可信任网段和不可信网段范围内的网段范围称为unspecified_segment，该字段用于判断外发至unspecified_segment内的文件是否会被拦截，具体拦截规则如下： 当default_policy设置为0时，向unspecified_segment范围发送不会被拦截。 当default_policy设置为1时，向unspecified_segment范围发送会被拦截。 - netsegment_update_type：网段更新方式。0表示下发策略中的网段信息将覆盖原有策略中的网段信息；1表示在原有网段信息的基础下追加新下发策略中的网段信息，默认为0。 - net_reject_cache_time：网络外发拦截管控时间。当成功触发网络外发拦截后，在该管控时间范围内，相关进程通过网络进行的任何文件外发操作都会被拦截。正整数，默认为30，单位：s。 - **文件策略** - usb_intercept_toggle：U盘拦截管控开关。当KIA文件外发到U盘时，设置为0表示关闭拦截（不启用管控），设置为1表示开启拦截，默认为0。 - smb_client_intercept_toggle：Samba客户端拦截管控开关。当通过网络邻居外发KIA文件时，0表示关闭拦截（不启用管控），1表示开启拦截，默认为1。从API版本6.0.1(21)开始支持此管控策略。 - smb_server_intercept_toggle：Samba服务端拦截管控开关。当通过网络邻居访问KIA文件时，0表示关闭拦截（不启用管控），1表示开启拦截，默认为1。从API版本6.0.1(21)开始支持此管控策略。 - new_file_audit_toggle：新建文件审计开关。开启后，会向审计框架上报文件新建的审计事件，0表示关闭，1表示开启，默认为0。从API版本5.1.1(19)开始支持此管控策略。 - kia_variant_toggle：KIA变种开关。开启后，系统将监控KIA变种事件，并支持通过注册回调的方式监听并处理相关变种事件，0表示关闭，1表示开启，默认为1。从API版本5.0.3(15)开始支持此管控策略。 - audit_filter_toggle：KIA文件创建事件及变种事件的过滤开关。0表示关闭，关闭后，会记录所有进程行为下的KIA文件创建事件及变种事件；1表示开启，开启后，仅记录应用行为下的KIA文件创建事件及变种事件，默认为0。从API版本5.0.3(15)开始支持此管控策略。 - print_intercept_toggle：打印管控开关。0表示关闭，关闭后，打印KIA文件的行为不会被拦截，默认为0；1表示开启，开启后，打印KIA文件的行为将会被拦截。从API版本6.1.1(24)开始支持此管控策略。 - **蓝牙策略** 从API版本6.0.1(21)开始支持此管控策略。 - bluetooth_intercept_toggle：蓝牙拦截管控开关。设置后，通过蓝牙外发KIA文件会被拦截。字符串列表，可填入"bt_socket","bt_ble","bt_opp"三种蓝牙协议名称，默认为空。 - bluetooth_intercept_time：蓝牙外发拦截管控时间。当成功触发蓝牙外发拦截后，在该管控时间范围内，通过蓝牙进行的任何文件外发操作都会被拦截。正整数，默认为15，单位：s。 - **星闪策略** 从API版本6.0.1(21)开始支持此管控策略。 - nearlink_intercept_toggle：星闪拦截管控开关。设置后，通过相关星闪协议外发KIA文件会被拦截。字符串列表，可填入"nearlink_ssap","nearlink_dataTransfer"两种星闪协议名称，默认为空。 - nearlink_intercept_time：星闪外发拦截管控时间。当成功触发星闪外发拦截后，在该管控时间范围内，通过星闪进行的任何文件外发操作都会被拦截。正整数，默认为15，单位：s。 - **多用户策略** 从API版本5.1.1(19)开始支持此管控策略。 - user_id：用户ID。设置用户ID后，本次下发的管控策略范围将仅适用于该user_id对应的用户；若未指定user_id，则采用默认的管控策略。在使用过程中，系统会优先采用用户的专属策略，若无法匹配，则自动采用默认策略。 - **可信任应用列表** - trust_app_list：可信任应用列表，在可信任应用列表中的应用才可读取KIA文件。字符串列表，元素为[appId](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appid)，默认为空。从API版本5.0.3(15)开始支持此管控策略。 - kia_file_access_toggle：KIA文件访问限制开关。1表示开启，开启后，应用读取KIA文件的行为将会受到限制，需将应用的[appId](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appid)加入到trust_app_list中，应用才被允许读取KIA文件；0表示关闭，关闭后，任何应用和进程都可以读取KIA文件的内容，默认为0。 从API版本6.1.1(24)开始支持此管控策略。 - **五种自定义标签** 从API版本5.1.1(19)开始支持此管控策略。最多支持五种自定义标签管控策略，该策略会自动识别文件扩展属性中包含指定"tag"内容的文件，并对这些文件进行相应管控。 - "tag": 标签名称，用于在[setFileTag](#setfiletag)、[setFileCustomTag](#setfilecustomtag)和[unsetFileCustomTag](#unsetfilecustomtag)中管控对应标签的文件，默认为空。 - "usb_intercept_toggle"：U盘拦截管控开关，默认为0。 - "net_intercept_toggle"：网络拦截管控开关，默认为0。 - "boundary"：默认网段范围。 - "netsegment_trustlist"：可信任网段。 - "netsegment_blocklist"：不可信网段。 自定义标签从API版本26.0.0开始新增支持以下管控策略： - "smb_client_intercept_toggle"：Samba客户端拦截管控开关，默认为0。 - "smb_server_intercept_toggle"：Samba服务端拦截管控开关，默认为0。 - "print_intercept_toggle"：打印管控开关，默认为0。 - "bluetooth_intercept_toggle"：蓝牙拦截管控开关。 - "bluetooth_intercept_time"：蓝牙外发拦截管控时间。 - "nearlink_intercept_toggle"：星闪拦截管控开关。 - "nearlink_intercept_time"：星闪外发拦截管控时间。 |
 
 返回值：
 
@@ -1261,6 +1367,7 @@ updatePolicy(policy: string): Promise<void>
 | --- | --- |
 | 201 | Permission denied. |
 | 401 | The parameter check failed. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
 
 示例：
 
@@ -1274,13 +1381,15 @@ async function updatePolicy() {
 
   let guard: fileGuard.FileGuard = new fileGuard.FileGuard();
   let policy: string = '{' +
+    // 网络策略
     '"net_intercept_toggle":1,' +
+    '"boundary":["10.0.0.0-10.255.255.255","172.16.0.0-172.31.255.255","192.168.0.0-192.168.255.255"],' +
+    '"netsegment_trustlist":["10.10.0.0-10.100.255.255","172.20.0.0-172.20.255.255"],' +
+    '"netsegment_blocklist":["10.200.0.0-10.200.255.255","192.168.100.0-192.168.200.255"],' +
     '"default_policy":1,' +
-    '"net_reject_cache_time":30,' +
-    '"boundary":["10.0.0.0-10.255.255.255","172.16.0.0-172.31.255.255"],' +
-    '"netsegment_trustlist":["10.0.0.0-10.255.255.255","192.168.0.0-192.168.255.255"],' +
-    '"netsegment_blocklist":["172.16.0.0-172.31.255.255"],' +
     '"netsegment_update_type": 0,' +
+    '"net_reject_cache_time":30,' +
+    // 文件策略
     '"usb_intercept_toggle":1,' +
     '"smb_client_intercept_toggle":1,' +
     '"smb_server_intercept_toggle":1,' +
@@ -1288,52 +1397,92 @@ async function updatePolicy() {
     '"kia_variant_toggle":1,' +
     '"audit_filter_toggle":1,' +
     '"print_intercept_toggle":0,' +
+    // 蓝牙策略
     '"bluetooth_intercept_toggle":["bt_socket","bt_ble","bt_opp"],' +
     '"bluetooth_intercept_time":30,' +
+    // 星闪策略
     '"nearlink_intercept_toggle":["nearlink_ssap","nearlink_dataTransfer"],' +
     '"nearlink_intercept_time":30,' +
+    // 多用户策略
     `"user_id": ${userId},` +
+    // 可信任应用列表
     '"trust_app_list":["ohos.app.hap.myapplication_BPch04bPYBrkJX8RAsmiGDbHFaG+BYvhkg4TK4fHQzJOL4VnoBCZU3boBBXGVEB+M/j0X2nnd7KVeyWuEORVxI2g="],' +
     '"kia_file_access_toggle":0,' +
+    // 五种自定义标签
     '"Tag1":{' +
     '   "tag":"sensitive",' +
     '   "usb_intercept_toggle":1,' +
     '   "net_intercept_toggle":1,' +
-    '   "boundary":["10.0.0.0-10.255.255.255"],' +
-    '   "netsegment_trustlist":["10.0.0.0-10.255.255.255"],' +
-    '   "netsegment_blocklist":["172.16.0.0-172.31.255.255"]' +
+    '   "boundary":["10.0.0.0-10.255.255.255","172.16.0.0-172.31.255.255"],' +
+    '   "netsegment_trustlist":["10.10.0.0-10.10.255.255"],' +
+    '   "netsegment_blocklist":["172.20.0.0-172.20.255.255"],' +
+    '   "smb_client_intercept_toggle":1,' +
+    '   "smb_server_intercept_toggle":1,' +
+    '   "print_intercept_toggle":1,' +
+    '   "bluetooth_intercept_toggle":["bt_socket","bt_ble","bt_opp"],' +
+    '   "bluetooth_intercept_time":30,' +
+    '   "nearlink_intercept_toggle":["nearlink_ssap","nearlink_dataTransfer"],' +
+    '   "nearlink_intercept_time":30' +
     '  },' +
     '"Tag2":{' +
     '   "tag":"confidential",' +
     '   "usb_intercept_toggle":1,' +
     '   "net_intercept_toggle":1,' +
-    '   "boundary":["10.0.0.0-10.255.255.255"],' +
-    '   "netsegment_trustlist":["10.0.0.0-10.255.255.255"],' +
-    '   "netsegment_blocklist":["172.16.0.0-172.31.255.255"]' +
+    '   "boundary":["10.0.0.0-10.255.255.255","172.16.0.0-172.31.255.255"],' +
+    '   "netsegment_trustlist":["10.10.0.0-10.10.255.255"],' +
+    '   "netsegment_blocklist":["172.20.0.0-172.20.255.255"],' +
+    '   "smb_client_intercept_toggle":1,' +
+    '   "smb_server_intercept_toggle":1,' +
+    '   "print_intercept_toggle":1,' +
+    '   "bluetooth_intercept_toggle":["bt_socket","bt_ble","bt_opp"],' +
+    '   "bluetooth_intercept_time":30,' +
+    '   "nearlink_intercept_toggle":["nearlink_ssap","nearlink_dataTransfer"],' +
+    '   "nearlink_intercept_time":30' +
     '  },' +
     '"Tag3":{' +
     '   "tag":"public",' +
     '   "usb_intercept_toggle":0,' +
     '   "net_intercept_toggle":0,' +
-    '   "boundary":["10.0.0.0-10.255.255.255"],' +
-    '   "netsegment_trustlist":["10.0.0.0-10.255.255.255"],' +
-    '   "netsegment_blocklist":["172.16.0.0-172.31.255.255"]' +
+    '   "boundary":["10.0.0.0-10.255.255.255","172.16.0.0-172.31.255.255"],' +
+    '   "netsegment_trustlist":["10.10.0.0-10.10.255.255"],' +
+    '   "netsegment_blocklist":["172.20.0.0-172.20.255.255"],' +
+    '   "smb_client_intercept_toggle":1,' +
+    '   "smb_server_intercept_toggle":1,' +
+    '   "print_intercept_toggle":1,' +
+    '   "bluetooth_intercept_toggle":["bt_socket","bt_ble","bt_opp"],' +
+    '   "bluetooth_intercept_time":30,' +
+    '   "nearlink_intercept_toggle":["nearlink_ssap","nearlink_dataTransfer"],' +
+    '   "nearlink_intercept_time":30' +
     '  },' +
     '"Tag4":{' +
     '   "tag":"general",' +
     '   "usb_intercept_toggle":1,' +
     '   "net_intercept_toggle":0,' +
-    '   "boundary":["10.0.0.0-10.255.255.255"],' +
-    '   "netsegment_trustlist":["10.0.0.0-10.255.255.255"],' +
-    '   "netsegment_blocklist":["172.16.0.0-172.31.255.255"]' +
+    '   "boundary":["10.0.0.0-10.255.255.255","172.16.0.0-172.31.255.255"],' +
+    '   "netsegment_trustlist":["10.10.0.0-10.10.255.255"],' +
+    '   "netsegment_blocklist":["172.20.0.0-172.20.255.255"],' +
+    '   "smb_client_intercept_toggle":1,' +
+    '   "smb_server_intercept_toggle":1,' +
+    '   "print_intercept_toggle":1,' +
+    '   "bluetooth_intercept_toggle":["bt_socket","bt_ble","bt_opp"],' +
+    '   "bluetooth_intercept_time":30,' +
+    '   "nearlink_intercept_toggle":["nearlink_ssap","nearlink_dataTransfer"],' +
+    '   "nearlink_intercept_time":30' +
     '  },' +
     '"Tag5":{' +
     '   "tag":"special",' +
     '   "usb_intercept_toggle":1,' +
     '   "net_intercept_toggle":1,' +
-    '   "boundary":["10.0.0.0-10.255.255.255"],' +
-    '   "netsegment_trustlist":["10.0.0.0-10.255.255.255"],' +
-    '   "netsegment_blocklist":["172.16.0.0-172.31.255.255"]' +
+    '   "boundary":["10.0.0.0-10.255.255.255","172.16.0.0-172.31.255.255"],' +
+    '   "netsegment_trustlist":["10.10.0.0-10.10.255.255"],' +
+    '   "netsegment_blocklist":["172.20.0.0-172.20.255.255"],' +
+    '   "smb_client_intercept_toggle":1,' +
+    '   "smb_server_intercept_toggle":1,' +
+    '   "print_intercept_toggle":1,' +
+    '   "bluetooth_intercept_toggle":["bt_socket","bt_ble","bt_opp"],' +
+    '   "bluetooth_intercept_time":30,' +
+    '   "nearlink_intercept_toggle":["nearlink_ssap","nearlink_dataTransfer"],' +
+    '   "nearlink_intercept_time":30' +
     '  }' +
     '}';
   guard.updatePolicy(policy).then(() => {
@@ -1371,7 +1520,8 @@ getPolicy(): Promise<string | null>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 1001700001 | Internal error. |
+| 801 | Capability not supported. |
+| 1001700001 | System service error. |
 
 示例：
 
@@ -1417,7 +1567,7 @@ setKiaFilelist(filelist: string, callback: AsyncCallback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| filelist | string | 是 | kia_filelist：[默认路径范围](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataguard-introduction#访问限制)下的KIA文件绝对路径列表，相关文件会被标记为KIA文件。 kia_keyword：受控文件关键字列表，文件名中包含相关关键字的文件会被管控。 kia_suffix：受控文件后缀名列表，文件名包含相关后缀名的文件会被管控。 compress_suffix：压缩文件后缀名列表，只有经过压缩后的文件后缀名在该列表范围内，才会上报压缩变种事件。 user_id：用户ID。设置用户ID后，本次设置范围将仅适用于该user_id对应的用户；若未指定user_id，则设置默认的。在使用过程中，系统会优先采用对应的用户，若无法匹配，则自动采用默认。从5.1.1(19)版本开始支持。 kia_update_type：KIA文件更新类型，当type为0时，新增策略将会替换原有策略；当type为1时，会在原有策略的基础上追加新增策略；当type为2时，会在原有策略的基础上删除新的策略，默认为0。 |
+| filelist | string | 是 | 受[IPC](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ipc-rpc-overview)通信的限制，单次传输数据上限为100KB。 - kia_filelist：[默认路径范围](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataguard-introduction#访问限制)下的KIA文件绝对路径列表，相关文件会被标记为KIA文件。 - kia_keyword：受控文件关键字列表，文件名中包含相关关键字的文件会被管控。 - kia_suffix：受控文件后缀名列表，文件名包含相关后缀名的文件会被管控。 - compress_suffix：压缩文件后缀名列表，只有经过压缩后的文件后缀名在该列表范围内，才会上报压缩变种事件。 - user_id：用户ID。设置用户ID后，本次设置范围将仅适用于该user_id对应的用户；若未指定user_id，则设置默认的。在使用过程中，系统会优先采用对应的用户，若无法匹配，则自动采用默认。从API版本5.1.1(19)开始支持。 - kia_update_type：KIA文件更新类型，当type为0时，新增策略将会替换原有策略；当type为1时，会在原有策略的基础上追加新增策略；当type为2时，会在原有策略的基础上删除新的策略，默认为0。 |
 | callback | AsyncCallback | 是 | 回调函数，当异步设置KIA文件列表成功，err为undefined，否则为错误对象。 |
 
 错误码：
@@ -1428,6 +1578,7 @@ setKiaFilelist(filelist: string, callback: AsyncCallback<void>): void
 | --- | --- |
 | 201 | Permission denied. |
 | 401 | The parameter check failed. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
 
 示例：
 
@@ -1476,7 +1627,7 @@ setKiaFilelist(filelist: string): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| filelist | string | 是 | kia_filelist：[默认路径范围](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataguard-introduction#访问限制)下的KIA文件绝对路径列表，相关文件会被标记为KIA文件。 kia_keyword：受控文件关键字列表，文件名中包含相关关键字的文件会被管控。 kia_suffix：受控文件后缀名列表，文件名包含相关后缀名的文件会被管控。 compress_suffix：压缩文件后缀名列表，只有经过压缩后的文件后缀名在该列表范围内，才会上报压缩变种事件。 user_id：用户ID。设置用户ID后，本次设置范围将仅适用于该user_id对应的用户；若未指定user_id，则设置默认的。在使用过程中，系统会优先采用对应的用户，若无法匹配，则自动采用默认。从5.1.1(19)版本开始支持。 kia_update_type：KIA文件更新类型，当type为0时，新增策略将会替换原有策略；当type为1时，会在原有策略的基础上追加新增策略；当type为2时，会在原有策略的基础上删除新的策略，默认为0。 |
+| filelist | string | 是 | 受[IPC](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ipc-rpc-overview)通信的限制，单次传输数据上限为100KB。 - kia_filelist：[默认路径范围](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataguard-introduction#访问限制)下的KIA文件绝对路径列表，相关文件会被标记为KIA文件。 - kia_keyword：受控文件关键字列表，文件名中包含相关关键字的文件会被管控。 - kia_suffix：受控文件后缀名列表，文件名包含相关后缀名的文件会被管控。 - compress_suffix：压缩文件后缀名列表，只有经过压缩后的文件后缀名在该列表范围内，才会上报压缩变种事件。 - user_id：用户ID。设置用户ID后，本次设置范围将仅适用于该user_id对应的用户；若未指定user_id，则设置默认的。在使用过程中，系统会优先采用对应的用户，若无法匹配，则自动采用默认。从API版本5.1.1(19)开始支持。 - kia_update_type：KIA文件更新类型，当type为0时，新增策略将会替换原有策略；当type为1时，会在原有策略的基础上追加新增策略；当type为2时，会在原有策略的基础上删除新的策略，默认为0。 |
 
 返回值：
 
@@ -1492,6 +1643,7 @@ setKiaFilelist(filelist: string): Promise<void>
 | --- | --- |
 | 201 | Permission denied. |
 | 401 | The parameter check failed. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
 
 示例：
 
@@ -1553,8 +1705,9 @@ isKia(path: string): boolean
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 1001700001 | Internal error. |
-| 1001700103 | The path is not exist. |
+| 801 | Capability not supported. |
+| 1001700001 | System service error. |
+| 1001700103 | Invalid path. |
 
 示例：
 
@@ -1600,6 +1753,7 @@ on(type: 'kiaCopy', callback: Callback<string>): void
 | --- | --- |
 | 201 | Permission denied. |
 | 401 | The parameter check failed. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
 
 示例：
 
@@ -1648,6 +1802,7 @@ off(type: 'kiaCopy', callback?: Callback<string>): void
 | --- | --- |
 | 201 | Permission denied. |
 | 401 | The parameter check failed. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
 
 示例：
 
@@ -1696,6 +1851,7 @@ on(type: 'kiaRename', callback: Callback<string>): void
 | --- | --- |
 | 201 | Permission denied. |
 | 401 | The parameter check failed. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
 
 示例：
 
@@ -1744,6 +1900,7 @@ off(type: 'kiaRename', callback?: Callback<string>): void
 | --- | --- |
 | 201 | Permission denied. |
 | 401 | The parameter check failed. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
 
 示例：
 
@@ -1792,6 +1949,7 @@ on(type: 'kiaCompress', callback: Callback<string>): void
 | --- | --- |
 | 201 | Permission denied. |
 | 401 | The parameter check failed. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
 
 示例：
 
@@ -1840,6 +1998,7 @@ off(type: 'kiaCompress', callback?: Callback<string>): void
 | --- | --- |
 | 201 | Permission denied. |
 | 401 | The parameter check failed. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
 
 示例：
 
@@ -1894,6 +2053,7 @@ setKiaWatermarkImage(image: Uint8Array, info: string): Promise<void>
 | --- | --- |
 | 201 | Permission denied. |
 | 401 | The parameter check failed. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
 
 示例：
 
@@ -1902,7 +2062,7 @@ import { fileIo } from '@kit.CoreFileKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { fileGuard } from '@kit.EnterpriseDataGuardKit';
 
-async function testSetKiaWaterMarkImage() {
+async function testSetKiaWatermarkImage() {
   let fd: number = -1;
   try {
     let guard: fileGuard.FileGuard = new fileGuard.FileGuard();
@@ -1915,12 +2075,12 @@ async function testSetKiaWaterMarkImage() {
     let image: Uint8Array = new Uint8Array(buffer);
     let info: string = new Date().toLocaleString();
     guard.setKiaWatermarkImage(image, info).then(() => {
-      console.info(`Succeeded in setting the watermark image for Kia file.`);
+      console.info(`Succeeded in setting the watermark image for KIA file.`);
     }).catch((err: BusinessError) => {
-      console.error(`Failed to set the watermark image for Kia file. Code: ${err.code}, message: ${err.message}.`);
+      console.error(`Failed to set the watermark image for KIA file. Code: ${err.code}, message: ${err.message}.`);
     })
   } catch (e) {
-    console.error(`testSetKiaWaterMarkImage Exception, Code: ${e.code}, message: ${e.message}`);
+    console.error(`testSetKiaWatermarkImage Exception, Code: ${e.code}, message: ${e.message}`);
   } finally {
     if (fd !== -1) {
       fileIo.close(fd);
@@ -1948,7 +2108,7 @@ addUnrestrictedApplicationList(appIds: Array<string>, userId?: number): Promise<
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | appIds | Array | 是 | 放通应用[appId](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appid)列表。 |
-| userId | number | 否 | 添加指定用户ID的放通应用列表后，该用户下的放通应用将不再受默认策略的管控；若未指定用户ID，则添加默认管控策略下的放通应用列表。 |
+| userId | number | 否 | 用户ID，正整数。添加指定用户ID的放通应用列表后，该用户下的放通应用将不再受默认策略的管控；若未指定用户ID，则添加默认管控策略下的放通应用列表。 |
 
 返回值：
 
@@ -1963,9 +2123,10 @@ addUnrestrictedApplicationList(appIds: Array<string>, userId?: number): Promise<
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 1001700001 | Internal error. |
-| 1001700101 | Invalid user ID. |
-| 1001700105 | Invalid app ID. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
+| 1001700001 | System service error. |
+| 1001700101 | Invalid userId. |
+| 1001700105 | Invalid appId. |
 
 示例：
 
@@ -1986,9 +2147,9 @@ async function addUnrestrictedApplicationList() {
     let appIds: string[] = [appId];
 
     guard.addUnrestrictedApplicationList(appIds, userId).then(() => {
-      console.info(`Succeeded in adding the application to the unrestricted list.`);
+      console.info(`Succeeded in adding the application from the unrestricted list.`);
     }).catch((error: BusinessError) => {
-      console.error(`Failed to add the application to the unrestricted list. Code: ${error.code}, message: ${error.message}.`);
+      console.error(`Failed to add the application from the unrestricted list. Code: ${error.code}, message: ${error.message}.`);
     })
   } catch (err) {
     console.error(`Failed to test addUnrestrictedApplicationList. Code: ${err.code}, message: ${err.message}.`);
@@ -2015,7 +2176,7 @@ removeUnrestrictedApplicationList(appIds: Array<string>, userId?: number): Promi
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | appIds | Array | 是 | 放通应用[appId](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appid)列表。 |
-| userId | number | 否 | 删除指定用户ID的放通应用列表。若未指定用户ID，则删除默认管控策略下的放通应用列表。 |
+| userId | number | 否 | 用户ID，正整数。删除指定用户ID的放通应用列表；若未指定用户ID，则删除默认管控策略下的放通应用列表。 |
 
 返回值：
 
@@ -2030,9 +2191,10 @@ removeUnrestrictedApplicationList(appIds: Array<string>, userId?: number): Promi
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 1001700001 | Internal error. |
-| 1001700101 | Invalid user ID. |
-| 1001700105 | Invalid app ID. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
+| 1001700001 | System service error. |
+| 1001700101 | Invalid userId. |
+| 1001700105 | Invalid appId. |
 
 示例：
 
@@ -2052,9 +2214,9 @@ async function removeUnrestrictedApplicationList() {
     let appId: string = bundleInfo.signatureInfo.appId;
     let appIds: string[] = [appId];
     guard.removeUnrestrictedApplicationList(appIds, userId).then(() => {
-      console.info(`Succeeded in removing the application to the unrestricted list.`);
+      console.info(`Succeeded in removing the application from the unrestricted list.`);
     }).catch((error: BusinessError) => {
-      console.error(`Failed to remove the application to the unrestricted list. Code: ${error.code}, message: ${error.message}.`);
+      console.error(`Failed to remove the application from the unrestricted list. Code: ${error.code}, message: ${error.message}.`);
     })
   } catch (err) {
     console.error(`Failed to test removeUnrestrictedApplicationList. Code: ${err.code}, message: ${err.message}.`);
@@ -2080,7 +2242,7 @@ getUnrestrictedApplicationList(userId?: number): Promise<Array<string>>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| userId | number | 否 | 获取指定用户ID的放通应用列表。若未指定用户ID，则获取默认管控策略下的放通应用列表。 |
+| userId | number | 否 | 用户ID，正整数。获取指定用户ID的放通应用列表；若未指定用户ID，则获取默认管控策略下的放通应用列表。 |
 
 返回值：
 
@@ -2095,8 +2257,9 @@ getUnrestrictedApplicationList(userId?: number): Promise<Array<string>>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 1001700001 | Internal error. Possible cause: IPC failed. |
-| 1001700101 | Invalid user ID. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
+| 1001700001 | System service error. |
+| 1001700101 | Invalid userId. |
 
 示例：
 
@@ -2111,9 +2274,9 @@ async function getUnrestrictedApplicationList() {
     let userId: number = await accountManager.getOsAccountLocalId();
 
     guard.getUnrestrictedApplicationList(userId).then((appIds: string[]) => {
-      console.info(`Succeeded in getting the application to the unrestricted list. appIds: ${appIds.toString()}`);
+      console.info(`Succeeded in getting the application from the unrestricted list. appIds: ${appIds.toString()}`);
     }).catch((error: BusinessError) => {
-      console.error(`Failed to get the application to the unrestricted list. Code: ${error.code}, message: ${error.message}.`);
+      console.error(`Failed to get the application from the unrestricted list. Code: ${error.code}, message: ${error.message}.`);
     })
   } catch (err) {
     console.error(`Failed to test getUnrestrictedApplicationList. Code: ${err.code}, message: ${err.message}.`);
@@ -2139,7 +2302,7 @@ setHdcAuthenticationKey(devType: AuthenticateDeviceType, keyType: AuthenticateKe
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| devType | [AuthenticateDeviceType](#authenticatedevicetype) | 是 | HDC认证的设备类型枚举。当设备类型为上位机时，需分别设置公钥和私钥；当设备类型为下位机时，仅需设置私钥。 |
+| devType | [AuthenticateDeviceType](#authenticatedevicetype) | 是 | HDC认证的设备类型枚举。当设备类型为上位机时，需设置私钥；当设备类型为下位机时，需设置公钥。 |
 | keyType | [AuthenticateKeyType](#authenticatekeytype) | 是 | HDC认证的密钥类型枚举。 |
 | key | Uint8Array | 是 | PEM格式的RSA-3072密钥。 |
 
@@ -2156,7 +2319,8 @@ setHdcAuthenticationKey(devType: AuthenticateDeviceType, keyType: AuthenticateKe
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 1001700001 | Internal error. Possible causes: 1. System IPC communication fails. 2. Failed to obtain system parameters. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
+| 1001700001 | System service error. |
 | 1001700201 | The HDC status is abnormal. |
 | 1001700202 | Failed to save the private key. |
 | 1001700203 | Failed to save the public key. |
@@ -2207,6 +2371,7 @@ onPrintStartup(callback: Callback<void>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
 
 示例：
 
@@ -2248,6 +2413,7 @@ offPrintStartup(callback?: Callback<void>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
 
 示例：
 
@@ -2256,4 +2422,297 @@ import { fileGuard } from '@kit.EnterpriseDataGuardKit';
 
 let guard: fileGuard.FileGuard = new fileGuard.FileGuard();
 guard.offPrintStartup();
+```
+
+#### [h2]getManagedProcessPolicy
+
+getManagedProcessPolicy(): Promise<ManagedProcessPolicy | null>
+
+获取当前设备处于管控状态下的进程管控策略。使用Promise异步回调。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+需要权限： ohos.permission.FILE_GUARD_MANAGER
+
+系统能力： SystemCapability.PCService.FileGuard
+
+起始版本： 26.0.0
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，返回当前设备进程管控策略，当没有策略时返回空。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[企业数据保护服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprise-dataguard)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 201 | Permission denied. |
+| 801 | Capability not supported. |
+| 1001700001 | System service error. |
+
+示例：
+
+```
+import { BusinessError } from '@kit.BasicServicesKit';
+import { fileGuard } from '@kit.EnterpriseDataGuardKit';
+
+let guard: fileGuard.FileGuard = new fileGuard.FileGuard();
+guard.getManagedProcessPolicy().then((policy: fileGuard.ManagedProcessPolicy | null) => {
+  if (policy === null) {
+    console.info(`The managed process policy is null.`);
+    return;
+  }
+  console.info(`Succeeded in getting the managed process policy. status: ${policy.status}, time: ${policy.time}`);
+}).catch((err: BusinessError) => {
+  console.error(`Failed to get the managed process policy. Code: ${err.code}, message: ${err.message}.`);
+});
+```
+
+#### [h2]setManagedProcessPolicy
+
+setManagedProcessPolicy(policy: ManagedProcessPolicy): Promise<void>
+
+设置当前设备进程管控策略。使用Promise异步回调。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+需要权限： ohos.permission.SET_FILE_GUARD_POLICY
+
+系统能力： SystemCapability.PCService.FileGuard
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| policy | [ManagedProcessPolicy](#managedprocesspolicy) | 是 | 进程管控策略。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，无返回结果。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[企业数据保护服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprise-dataguard)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 201 | Permission denied. |
+| 801 | Capability not supported. |
+| 1001700001 | System service error. |
+| 1001700106 | Invalid policy. |
+
+示例：
+
+```
+import { BusinessError } from '@kit.BasicServicesKit';
+import { fileGuard } from '@kit.EnterpriseDataGuardKit';
+
+let guard: fileGuard.FileGuard = new fileGuard.FileGuard();
+let policy: fileGuard.ManagedProcessPolicy = {
+  status: fileGuard.ManagedProcessStatus.TIME_BASED,
+  time: 3000
+};
+guard.setManagedProcessPolicy(policy).then(() => {
+  console.info(`Succeeded in setting the managed process policy.`);
+}).catch((err: BusinessError) => {
+  console.error(`Failed to set the managed process policy. Code: ${err.code}, message: ${err.message}.`);
+});
+```
+
+#### [h2]getManagedProcessList
+
+getManagedProcessList(): Promise<ManagedProcessInfo[]>
+
+获取当前设备处于管控状态下的进程管控信息列表。使用Promise异步回调。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+需要权限： ohos.permission.FILE_GUARD_MANAGER
+
+系统能力： SystemCapability.PCService.FileGuard
+
+起始版本： 26.0.0
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，返回进程管控信息列表。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[企业数据保护服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprise-dataguard)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 201 | Permission denied. |
+| 801 | Capability not supported. |
+| 1001700001 | System service error. |
+
+示例：
+
+```
+import { BusinessError } from '@kit.BasicServicesKit';
+import { fileGuard } from '@kit.EnterpriseDataGuardKit';
+
+let guard: fileGuard.FileGuard = new fileGuard.FileGuard();
+guard.getManagedProcessList().then((infos: fileGuard.ManagedProcessInfo[]) => {
+  console.info(`Succeeded in getting the managed process list.`);
+  infos.forEach((info: fileGuard.ManagedProcessInfo) => {
+    console.info(`ManagedProcessInfo pid: ${info.pid}, policy: ${info.policy}.`);
+  });
+}).catch((err: BusinessError) => {
+  console.error(`Failed to get the managed process list. Code: ${err.code}, message: ${err.message}.`);
+});
+```
+
+#### [h2]addManagedProcess
+
+addManagedProcess(processInfo: ManagedProcessInfo): Promise<void>
+
+添加管控进程。需要提供该进程的Pid以及管控策略类别（如KIA，TAG1~TAG5），基于[updatePolicy](#updatepolicy)接口配置的策略进行管控。使用Promise异步回调。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+需要权限： ohos.permission.SET_FILE_GUARD_POLICY
+
+系统能力： SystemCapability.PCService.FileGuard
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| processInfo | [ManagedProcessInfo](#managedprocessinfo) | 是 | 进程管控信息。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，无返回结果。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[企业数据保护服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprise-dataguard)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 201 | Permission denied. |
+| 801 | Capability not supported. |
+| 1001700001 | System service error. |
+| 1001700106 | Invalid policy. |
+
+示例：
+
+```
+import { process } from '@kit.ArkTS';
+import { BusinessError } from '@kit.BasicServicesKit';
+import { fileGuard } from '@kit.EnterpriseDataGuardKit';
+
+let guard: fileGuard.FileGuard = new fileGuard.FileGuard();
+let processInfo: fileGuard.ManagedProcessInfo = {
+  pid: process.pid,
+  policy: 'Tag1'
+};
+
+guard.addManagedProcess(processInfo).then(() => {
+  console.info(`Succeeded in adding the managed process.`);
+}).catch((err: BusinessError) => {
+  console.error(`Failed to add the managed process. Code: ${err.code}, message: ${err.message}.`);
+});
+```
+
+#### [h2]removeManagedProcess
+
+removeManagedProcess(processInfo: ManagedProcessInfo): Promise<void>
+
+删除管控进程。如果未配置进程管控信息中的管控策略，将删除该进程下的所有管控策略，如果配置了策略，则仅删除指定进程指定的管控策略。使用Promise异步回调。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+需要权限： ohos.permission.SET_FILE_GUARD_POLICY
+
+系统能力： SystemCapability.PCService.FileGuard
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| processInfo | [ManagedProcessInfo](#managedprocessinfo) | 是 | 进程管控信息。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，无返回结果。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[企业数据保护服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprise-dataguard)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 201 | Permission denied. |
+| 801 | Capability not supported. |
+| 1001700001 | System service error. |
+
+示例：
+
+```
+import { process } from '@kit.ArkTS';
+import { BusinessError } from '@kit.BasicServicesKit';
+import { fileGuard } from '@kit.EnterpriseDataGuardKit';
+
+let guard: fileGuard.FileGuard = new fileGuard.FileGuard();
+let processInfo: fileGuard.ManagedProcessInfo = {
+  pid: process.pid
+};
+guard.removeManagedProcess(processInfo).then(() => {
+  console.info(`Succeeded in removing the managed process.`);
+}).catch((err: BusinessError) => {
+  console.error(`Failed to remove the managed process. Code: ${err.code}, message: ${err.message}.`);
+});
+```
+
+#### [h2]isFileGuardSupported
+
+isFileGuardSupported(): boolean
+
+检查设备是否支持文件分级管控。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.PCService.FileGuard
+
+起始版本： 26.0.0
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| boolean | 布尔值，返回true表示支持文件分级管控，否则返回false。 |
+
+示例：
+
+```
+import { fileGuard } from '@kit.EnterpriseDataGuardKit';
+
+try {
+  let guard: fileGuard.FileGuard = new fileGuard.FileGuard();
+  let isSupported: boolean = guard.isFileGuardSupported();
+  console.info(`Succeeded in determining whether the device supports FileGuard. isSupported: ${isSupported}`);
+} catch (e) {
+  console.error(`Failed to determine whether the device supports FileGuard. Code: ${e.code}, message: ${e.message}.`);
+}
 ```

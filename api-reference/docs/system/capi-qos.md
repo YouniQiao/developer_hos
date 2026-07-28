@@ -2,15 +2,15 @@
 title: "QoS"
 upstream_id: "harmonyos-references/capi-qos"
 catalog: "harmonyos-references"
-content_hash: "cb218109c9db"
-synced_at: "2026-07-09T00:59:53.407742"
+content_hash: "3f873b86f96c"
+synced_at: "2026-07-28T16:51:11.380961"
 ---
 
 # QoS
 
 #### 概述
 
-提供QoS接口，包括设置、取消和查询QoS等级。
+本模块包含QoS（Quality of Service，服务质量）接口，用于设置、取消和查询线程QoS等级，从而影响系统对线程的调度优先级与资源分配；同时提供格物服务（端侧AI推理加速服务）相关C接口，用于端侧推理会话管理。QoS适用于需要区分关键任务与普通任务优先级、提升关键任务响应性能的场景，例如实时音视频处理、游戏渲染和用户交互响应等。QoS通过调整线程调度策略实现优先级控制，详细接口说明请参见[qos.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-qos-h)。
 
 起始版本： 12
 
@@ -18,4 +18,4 @@ synced_at: "2026-07-09T00:59:53.407742"
 
 | 名称 | 描述 |
 | --- | --- |
-| [qos.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-qos-h) | 声明QoS提供的C接口。 |
+| [qos.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-qos-h) | 声明QoS和格物服务相关C接口。 |

@@ -2,8 +2,8 @@
 title: "assetDownloadManager（资源包下载管理）"
 upstream_id: "harmonyos-references/graphics-accelerate-assetdownloadmanager"
 catalog: "harmonyos-references"
-content_hash: "c82dc815c758"
-synced_at: "2026-07-09T01:01:06.549357"
+content_hash: "f600063dfad9"
+synced_at: "2026-07-28T16:52:22.817073"
 ---
 
 # assetDownloadManager（资源包下载管理）
@@ -1502,8 +1502,8 @@ async limitDownloadTaskSpeed() {
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| RELEASED | 0 | 已发布的资源，即已公开发布过的资源。 完成下载后，通知栏展示“xxx 游戏资源包已更新”。 |
-| PRE_RELEASE | 1 | 预发布的资源，即未公开发布过的资源。 完成下载后，通知栏展示“xxx 游戏资源包预下载已完成” |
+| RELEASED | 0 | 已发布的资源，即已公开发布过的资源。 完成下载后，通知栏展示“{应用包名} 资源包通过WLAN下载完成 {资源大小}”。 |
+| PRE_RELEASE | 1 | 预发布的资源，即未公开发布过的资源。 完成下载后，通知栏展示“{应用包名} 资源包通过WLAN预下载已完成”。 |
 
 #### AppDownloadProgress
 
@@ -1579,9 +1579,9 @@ try {
 }
 ```
 
-#### assetDownloadManager.isSupportAssetDownload
+#### assetDownloadManager.isAssetDownloadSupported
 
-isSupportAssetDownload(): Promise<number>
+isAssetDownloadSupported(): Promise<boolean>
 
 查询用户的当前设备类型是否支持资源包下载能力。使用Promise异步回调。
 
@@ -1595,7 +1595,7 @@ isSupportAssetDownload(): Promise<number>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象。返回是否支持资源包下载能力的结果信息。 0：不支持。 1：支持。 |
+| Promise | Promise对象。返回是否支持资源包下载能力的结果信息。 返回false：不支持。 返回true：支持。 |
 
 错误码：
 
@@ -1611,13 +1611,13 @@ isSupportAssetDownload(): Promise<number>
 import { assetDownloadManager } from '@kit.GraphicsAccelerateKit';
 import { deviceInfo } from '@kit.BasicServicesKit';
 
-async IsSupportAssetDownload() {
+async IsAssetDownloadSupported() {
   // 判断当前HarmonyOS SDK版本是否为26.0.0及以上版本。
   if (deviceInfo.sdkApiVersion >= 26) {
     try {
-      const supportResult = await assetDownloadManager.isSupportAssetDownload();
-      console.info('AssetAccelDemo', 'Succeeded in testing IsSupportAssetDownload');
-      if (supportResult == 1) {
+      const supportResult: boolean = await assetDownloadManager.isAssetDownloadSupported();
+      console.info('AssetAccelDemo', 'Succeeded in testing isAssetDownloadSupported');
+      if (supportResult) {
         // 用户当前设备类型支持资源包下载能力。
         console.info('AssetAccelDemo', 'The device supports assetDownload');
       } else {
@@ -1625,7 +1625,7 @@ async IsSupportAssetDownload() {
         console.info('AssetAccelDemo', 'The device does not support assetDownload');
       }
     } catch (error) {
-      console.error('AssetAccelDemo', `Failed to test isSupportAssetDownload, errCode:${error.code}, errMessage:${error.message}`);
+      console.error('AssetAccelDemo', `Failed to test isAssetDownloadSupported, errCode:${error.code}, errMessage:${error.message}`);
     }
   }
 }

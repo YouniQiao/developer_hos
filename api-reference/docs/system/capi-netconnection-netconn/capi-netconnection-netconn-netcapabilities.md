@@ -2,8 +2,8 @@
 title: "NetConn_NetCapabilities"
 upstream_id: "harmonyos-references/capi-netconnection-netconn-netcapabilities"
 catalog: "harmonyos-references"
-content_hash: "ca542f284d10"
-synced_at: "2026-07-09T00:59:29.235880"
+content_hash: "0d652255a2e9"
+synced_at: "2026-07-28T16:50:44.935139"
 ---
 
 # NetConn_NetCapabilities
@@ -28,9 +28,9 @@ typedef struct NetConn_NetCapabilities {...} NetConn_NetCapabilities
 
 | 名称 | 描述 |
 | --- | --- |
-| uint32_t linkUpBandwidthKbps | 上行带宽。 |
-| uint32_t linkDownBandwidthKbps | 下行带宽。 |
-| [NetConn_NetCap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-net-connection-type-h#netconn_netcap) netCaps[[NETCONN_MAX_CAP_SIZE]](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-net-connection-type-h#宏定义) | 网络能力列表。 |
+| uint32_t linkUpBandwidthKbps | 上行带宽。单位：Kbps（千比特每秒）。 |
+| uint32_t linkDownBandwidthKbps | 下行带宽。单位：Kbps（千比特每秒）。 |
+| [NetConn_NetCap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-net-connection-type-h#netconn_netcap) netCaps[NETCONN_MAX_CAP_SIZE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-net-connection-type-h#宏定义) | 网络能力列表。 |
 | int32_t netCapsSize | 网络能力列表的实际size。 |
-| [NetConn_NetBearerType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-net-connection-type-h#netconn_netbearertype) bearerTypes[[NETCONN_MAX_BEARER_TYPE_SIZE]](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-net-connection-type-h#宏定义) | 承载类型列表 |
+| [NetConn_NetBearerType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-net-connection-type-h#netconn_netbearertype) bearerTypes[NETCONN_MAX_BEARER_TYPE_SIZE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-net-connection-type-h#宏定义) | 承载类型列表。 |
 | int32_t bearerTypesSize | 承载类型列表的实际size |

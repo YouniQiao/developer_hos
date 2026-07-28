@@ -2,8 +2,8 @@
 title: "Interface (CameraManager)"
 upstream_id: "harmonyos-references/arkts-apis-camera-cameramanager"
 catalog: "harmonyos-references"
-content_hash: "69aacaafa9db"
-synced_at: "2026-07-09T01:00:21.909559"
+content_hash: "a0170a92bbb4"
+synced_at: "2026-07-28T16:51:39.927574"
 ---
 
 # Interface (CameraManager)
@@ -1044,9 +1044,9 @@ function isTorchLevelControlSupported(cameraManager: camera.CameraManager): bool
 }
 ```
 
-#### SetTorchModeOnWithLevel
+#### setTorchModeOnWithLevel
 
-SetTorchModeOnWithLevel(torchLevel: number): void
+setTorchModeOnWithLevel(torchLevel: number): void
 
 手电筒设置指定亮度级别。
 
@@ -1054,7 +1054,7 @@ SetTorchModeOnWithLevel(torchLevel: number): void
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-元服务API： 从API version 26开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Camera.Core
 

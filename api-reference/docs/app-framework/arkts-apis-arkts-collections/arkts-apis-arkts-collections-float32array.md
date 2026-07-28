@@ -2,8 +2,8 @@
 title: "Class (Float32Array)"
 upstream_id: "harmonyos-references/arkts-apis-arkts-collections-float32array"
 catalog: "harmonyos-references"
-content_hash: "d98731e22cdf"
-synced_at: "2026-07-09T00:57:24.413634"
+content_hash: "952217200f67"
+synced_at: "2026-07-28T16:40:56.045954"
 ---
 
 # Class (Float32Array)
@@ -74,7 +74,7 @@ constructor(length: number)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| length | number | 是 | 用于指定ArkTS Float32Array的长度。 |
+| length | number | 是 | 用于指定ArkTS Float32Array的长度，取值需为非负整数。 |
 
 错误码：
 
@@ -174,7 +174,7 @@ let float32Array2: collections.Float32Array = new collections.Float32Array(float
 
 constructor(buffer: ArrayBuffer, byteOffset?: number, length?: number)
 
-构造函数，以ArrayBuffer创建一个ArkTS Float32Array对象。
+构造函数，以ArkTS ArrayBuffer创建一个ArkTS Float32Array对象。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -186,9 +186,7 @@ constructor(buffer: ArrayBuffer, byteOffset?: number, length?: number)
 | --- | --- | --- | --- |
 | buffer | ArrayBuffer | 是 | 用于构造ArkTS Float32Array的ArrayBuffer对象。buffer所占的字节数须是4的整数倍。 |
 | byteOffset | number | 否 | 指定buffer的字节偏移，从0开始，默认为0。 |
-| length | number | 否 | 指定ArkTS Float32Array的长度，默认为0。 |
-
-错误码：
+| length | number | 否 | 指定ArkTS Float32Array的长度，默认值为0。取值需为非负整数，且需满足byteOffset + length * 4 错误码：
 
 以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
@@ -210,7 +208,7 @@ console.info("[" + float32Array1 + "]"); // [2, 3, 4, 5, 6]
 
 static from(arrayLike: ArrayLike<number>): Float32Array
 
-从一个ArrayLike或者可迭代对象中创建一个ArkTS Float32Array对象。
+从一个ArrayLike中创建一个ArkTS Float32Array对象。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -320,7 +318,7 @@ let array: collections.Float32Array = collections.Float32Array.from(
 
 static of(...items: number[]): Float32Array
 
-通过可变数量的参数创建一个新的ArkTS Float32Array对象，参数个数可以是0个、1个或者多个。
+通过可变数量的参数创建一个新的ArkTS Float32Array对象。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -330,13 +328,13 @@ static of(...items: number[]): Float32Array
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| items | number[] | 否 | 用于创建数组的元素，参数个数可以是0个、1个或者多个。默认值为空数组。 |
+| items | number[] | 否 | 用于创建数组的元素，参数个数可变。默认值为空数组。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| Float32Array | 新的ArkTS Float32Array实例。 |
+| Float32Array | 新的ArkTS Float32Array对象。 |
 
 示例：
 
@@ -359,7 +357,7 @@ ArkTS Float32Array转换为字符串。
 
 | 类型 | 说明 |
 | --- | --- |
-| string | 一个包含数组所有元素的字符串。 |
+| string | 一个包含数组所有元素的字符串，各元素以逗号分隔。 |
 
 错误码：
 
@@ -382,7 +380,7 @@ console.info(stringArray); // 预期输出：1,2,3,4,5
 
 toLocaleString(): string
 
-根据当前应用的系统地区获取符合当前文化习惯的数字表示形式，让每个元素调用自己的toLocaleString方法把数字转换为字符串，然后使用逗号将每个元素的结果字符串按照顺序拼接成字符串。
+根据当前应用的系统地区获取符合当前文化习惯的数字表示形式。每个元素调用自己的toLocaleString方法将数字转换为字符串，然后使用逗号按顺序将各元素的结果拼接为字符串。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -392,7 +390,7 @@ toLocaleString(): string
 
 | 类型 | 说明 |
 | --- | --- |
-| string | 一个包含数组所有元素的字符串。 |
+| string | 一个包含数组所有元素的字符串，各元素以本地化格式表示并以逗号分隔。 |
 
 错误码：
 
@@ -409,7 +407,7 @@ toLocaleString(): string
 // 当前应用所在系统为法国地区
 let array = new collections.Float32Array([1000, 2000, 3000]);
 let stringArray = array.toLocaleString();
-console.info(stringArray); // 预期输出：1,000,2,000,3,000
+console.info(stringArray); // 预期输出：1 000,2 000,3 000
 ```
 
 #### copyWithin
@@ -426,7 +424,7 @@ copyWithin(target: number, start: number, end?: number): Float32Array
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| target | number | 是 | 目标起始位置的下标，如果target 返回值：
+| target | number | 是 | 目标起始位置的索引，如果target 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
@@ -546,7 +544,7 @@ fill(value: number, start?: number, end?: number): Float32Array
 
 | 类型 | 说明 |
 | --- | --- |
-| Float32Array | 填充后的Float32Array。 |
+| Float32Array | 填充后的ArkTS Float32Array。 |
 
 错误码：
 
@@ -730,8 +728,8 @@ indexOf(searchElement: number, fromIndex?: number): number
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| searchElement | number | 是 | 待索引的值。 |
-| fromIndex | number | 否 | 搜索的起始下标。默认值为0。如果下标大于等于ArkTS Float32Array的长度，则返回-1。如果提供的下标值是负数，则被当做距离数组尾部的偏移，从前到后搜索。 |
+| searchElement | number | 是 | 待查找的元素值。 |
+| fromIndex | number | 否 | 搜索的起始索引。默认值为0。如果索引大于等于ArkTS Float32Array的长度，则返回-1。如果索引为负数，则被视为距离数组尾部的偏移，从前到后搜索。 |
 
 返回值：
 
@@ -762,7 +760,7 @@ array.indexOf(9, -2); // 2
 
 lastIndexOf(searchElement: number, fromIndex?: number): number
 
-返回ArkTS Float32Array实例中最后一次出现searchElement的索引，如果对象不包含，则为-1。
+返回ArkTS Float32Array实例中最后一次出现searchElement的索引，如果不存在，则返回-1。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -772,8 +770,8 @@ lastIndexOf(searchElement: number, fromIndex?: number): number
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| searchElement | number | 是 | 待索引的值。 |
-| fromIndex | number | 否 | 搜索的起始下标。默认值为0。如果下标大于等于ArkTS Float32Array的长度，则返回-1。如果提供的下标值是负数，则被当做距离数组尾部的偏移，从后到前搜索。 |
+| searchElement | number | 是 | 待查找的元素值。 |
+| fromIndex | number | 否 | 搜索的起始索引，从该位置开始往前查找。默认值为ArkTS Float32Array长度减1（即从末尾开始）。如果索引大于等于ArkTS Float32Array的长度，则从末尾开始往前查找。如果提供的索引值是负数，则被当作距离数组尾部的偏移，从后到前搜索。 |
 
 返回值：
 
@@ -873,7 +871,7 @@ map(callbackFn: TypedArrayMapCallback<number, Float32Array>): Float32Array
 
 ```
 let array: collections.Float32Array = collections.Float32Array.from([25, 36, 49]);
-const mapped: collections.Float32Array = array.map(Math.sqrt); // Float32Array [5, 6 ,7]
+const mapped: collections.Float32Array = array.map(Math.sqrt); // Float32Array [5, 6, 7]
 ```
 
 #### reduce
@@ -951,7 +949,7 @@ reduceRight(callbackFn: TypedArrayReduceCallback<number, number, Float32Array>):
 ```
 let array: collections.Float32Array = collections.Float32Array.from([1, 2, 3, 4, 5]);
 let reducedValue: number = array.reduceRight((accumulator: number, value: number) => accumulator + value);
-console.info(reducedValue + ''); // 预期输出： 15
+console.info(reducedValue + ''); // 预期输出：15
 ```
 
 #### reduce
@@ -1031,7 +1029,7 @@ reduceRight<U = number>(callbackFn: TypedArrayReduceCallback<U, number, Float32A
 ```
 let array: collections.Float32Array = collections.Float32Array.from([1, 2, 3, 4, 5]);
 let reducedValue: number = array.reduceRight((accumulator: number, value: number) => accumulator + value, 1);
-console.info(reducedValue + ''); // 预期输出： 16
+console.info(reducedValue + ''); // 预期输出：16
 ```
 
 #### reverse
@@ -1142,7 +1140,7 @@ array.slice(-2); // Float32Array [4, 5]
 
 sort(compareFn?: TypedArrayCompareFn<number>): Float32Array
 
-对ArkTS Float32Array进行排序，并返回排序后的ArkTS Float32Array对象。
+对ArkTS Float32Array进行原地排序，并返回排序后的ArkTS Float32Array对象。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1173,16 +1171,19 @@ sort(compareFn?: TypedArrayCompareFn<number>): Float32Array
 
 ```
 let array: collections.Float32Array = collections.Float32Array.from([1, 3, 5, 4, 2]);
+// 默认升序排序
 array.sort(); // Float32Array [1, 2, 3, 4, 5]
-array.sort((a: number, b: number) => a - b); // Float32Array [1, 2, 3, 4, 5]
-array.sort((a: number, b: number) => b - a); // Float32Array [5, 4, 3, 2, 1]
+// 使用比较函数升序排序
+array.sort((first: number, second: number) => first - second); // Float32Array [1, 2, 3, 4, 5]
+// 使用比较函数降序排序
+array.sort((first: number, second: number) => second - first); // Float32Array [5, 4, 3, 2, 1]
 ```
 
 #### subarray
 
 subarray(begin?: number, end?: number): Float32Array
 
-从指定的位置截取数组，返回一个新的、基于相同ArkTS ArrayBuffer的ArkTS Float32Array对象。
+从指定的位置截取数组，返回一个基于相同ArkTS ArrayBuffer的新ArkTS Float32Array对象。由于返回的对象与原始对象共享同一个ArrayBuffer，修改其中一个会影响另一个。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1219,7 +1220,7 @@ subArray.set([10, 20, 30]); // Float32Array [10, 20, 30, 4, 5]
 
 at(index: number): number | undefined
 
-返回指定下标的元素，如果不存在，则返回undefined。
+返回指定索引的元素，如果不存在，则返回undefined。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1233,7 +1234,7 @@ at(index: number): number | undefined
 
 | 类型 | 说明 |
 | --- | --- |
-| number | undefined | 指定下标的元素；如果不存在，则返回undefined。 |
+| number | undefined | 指定索引的元素；如果不存在，则返回undefined。 |
 
 错误码：
 
@@ -1331,7 +1332,7 @@ console.info("value: " + iterator.next().value); // value: 2,33
 
 keys(): IterableIterator<number>
 
-返回一个新的迭代器对象，该对象包含ArkTS Float32Array中每个元素的键（下标）。
+返回一个新的迭代器对象，该对象包含ArkTS Float32Array中每个元素的键（索引）。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1341,7 +1342,7 @@ keys(): IterableIterator<number>
 
 | 类型 | 说明 |
 | --- | --- |
-| IterableIterator | 新的迭代器对象。 |
+| IterableIterator | 包含ArkTS Float32Array中每个元素的键（索引）的迭代器对象。 |
 
 错误码：
 
@@ -1401,7 +1402,7 @@ for (const value of iterator) {
 
 [Symbol.iterator](): IterableIterator<number>
 
-返回一个迭代器，迭代器的每一项都是一个 JavaScript 对象，并返回该对象。
+返回包含ArkTS Float32Array中每个元素的迭代器。
 
 ![](./img/note_3.0-zh-cn.png) 本接口不支持在.ets文件中使用。
 
@@ -1413,7 +1414,7 @@ for (const value of iterator) {
 
 | 类型 | 说明 |
 | --- | --- |
-| IterableIterator | 返回一个迭代器。 |
+| IterableIterator | 包含ArkTS Float32Array中每个元素值的迭代器对象。 |
 
 错误码：
 
@@ -1437,7 +1438,7 @@ for (let item of float32Array) {
 
 [index: number]: number
 
-返回Float32Array指定索引位置的元素。
+返回ArkTS Float32Array指定索引位置的元素。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 

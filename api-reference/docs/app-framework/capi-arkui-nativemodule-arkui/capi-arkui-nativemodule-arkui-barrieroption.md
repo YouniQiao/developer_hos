@@ -2,8 +2,8 @@
 title: "ArkUI_BarrierOption"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-barrieroption"
 catalog: "harmonyos-references"
-content_hash: "238fcd6b7a57"
-synced_at: "2026-07-09T00:58:43.575277"
+content_hash: "fe4e9c2de0d9"
+synced_at: "2026-07-28T16:49:35.292983"
 ---
 
 # ArkUI_BarrierOption
@@ -20,4 +20,4 @@ barrier选项，用于定义barrier的id、方向和生成时所依赖的组件�
 
 相关模块： [ArkUI_NativeModule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule)
 
-所在头文件： [native_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h)
+所在头文件： [layout.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-layout-h)

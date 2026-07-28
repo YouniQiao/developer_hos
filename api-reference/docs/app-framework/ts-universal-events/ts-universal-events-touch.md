@@ -2,13 +2,13 @@
 title: "触摸事件"
 upstream_id: "harmonyos-references/ts-universal-events-touch"
 catalog: "harmonyos-references"
-content_hash: "527a3e8af3ef"
-synced_at: "2026-07-09T17:23:26.277052"
+content_hash: "31d8394c4f89"
+synced_at: "2026-07-28T16:41:48.292907"
 ---
 
 # 触摸事件
 
-由手指、手写笔或鼠标左键在组件上按下、滑动或抬起时触发。
+触摸事件由手指、手写笔或鼠标左键在组件上按下、滑动或抬起时触发，可用于获取触摸类型、触点位置、触点变化和历史点等信息，适用于处理点击、滑动、多指触控等交互场景，帮助应用根据用户触摸行为进行响应。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -20,7 +20,7 @@ synced_at: "2026-07-09T17:23:26.277052"
 
 onTouch(event: (event: TouchEvent) => void): T
 
-手指触摸动作触发该回调。触摸事件默认[冒泡](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-basic-principles#事件冒泡)，会被多个组件消费，如果需阻止冒泡，可参考[TouchEvent](#touchevent对象说明)的stopPropagation方法。鼠标左键按下时，对应的事件也会转换成触摸事件并触发该回调。
+手指或手写笔触摸动作触发该回调。触摸事件默认[冒泡](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-basic-principles#事件冒泡)，会被多个组件消费，如果需阻止冒泡，可参考[TouchEvent](#touchevent对象说明)的stopPropagation方法。鼠标左键按下时，对应的事件也会转换成触摸事件并触发该回调。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -30,7 +30,7 @@ onTouch(event: (event: TouchEvent) => void): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| event | (event: [TouchEvent](#touchevent对象说明)) => void | 是 | 获得TouchEvent对象。 |
+| event | (event: [TouchEvent](#touchevent对象说明)) => void | 是 | 触摸事件触发时调用的回调函数，用于接收并处理TouchEvent对象。回调参数event表示本次触摸事件的详细信息。 |
 
 返回值：
 
@@ -48,9 +48,9 @@ onTouch(event: (event: TouchEvent) => void): T
 | --- | --- | --- | --- | --- |
 | type | [TouchType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#touchtype) | 否 | 否 | 触摸事件的类型。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | touches | [TouchObject](#touchobject)[] | 否 | 否 | 全部屏幕触点（多指）的信息，每个元素代表一个触点。在使用该属性时，需要校验是否为空。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| changedTouches | [TouchObject](#touchobject)[] | 否 | 否 | 发生变化而产生事件的手指信息。在使用该属性时，需要校验是否为空。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| changedTouches | [TouchObject](#touchobject)[] | 否 | 否 | 发生变化而产生事件的触点信息。在使用该属性时，需要校验是否为空。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | stopPropagation | () => void | 否 | 否 | 阻塞[事件冒泡](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-basic-principles#事件冒泡)。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| preventDefault12+ | () => void | 否 | 否 | 阻止默认事件。 **说明：** 该接口仅支持部分组件使用，当前支持组件：[Hyperlink](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-hyperlink)，不支持的组件在使用时会抛出异常。暂不支持异步调用和提供Modifier接口。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| preventDefault12+ | () => void | 否 | 否 | 阻止默认事件，适用于需要拦截组件默认行为并执行自定义处理的场景。 **说明：** 该接口仅支持部分组件使用，当前支持组件：[Hyperlink](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-hyperlink)，不支持的组件在使用时会抛出异常。暂不支持异步调用和提供Modifier接口。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | eventHandleId24+ | number | 否 | 是 | 用于事件处理的唯一标识。 取值范围：[0, +∞) **说明：** 在使用[postInputEventWithStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode#postinputeventwithstrategy24)接口分发事件时会使用该字段，事件每分发一次字段会增加100000。 多次使用相同的eventHandleId进行事件分发将导致事件响应异常。仅在构造事件的时候需要对此字段赋值，其余情况开发者无需处理。 **元服务API：** 从API version 24开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 错误码：
@@ -89,12 +89,12 @@ getHistoricalPoints(): Array<HistoricalPoint>
 | --- | --- | --- | --- | --- |
 | type | [TouchType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#touchtype) | 否 | 否 | 触摸事件的类型。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | id | number | 否 | 否 | 手指唯一标识符。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| x | number | 否 | 否 | 触摸点在事件响应组件为基准的[组件坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-glossary#组件坐标系)中的X坐标。 单位：vp **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| y | number | 否 | 否 | 触摸点在事件响应组件为基准的[组件坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-glossary#组件坐标系)中的Y坐标。 单位：vp **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| x | number | 否 | 否 | 触摸点在事件响应组件为基准的[组件坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-glossary#组件坐标系)中的X坐标。 单位：vp **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| y | number | 否 | 否 | 触摸点在事件响应组件为基准的[组件坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-glossary#组件坐标系)中的Y坐标。 单位：vp **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | windowX10+ | number | 否 | 否 | 触摸点在当前应用窗口坐标系中的X坐标。 单位：vp **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | windowY10+ | number | 否 | 否 | 触摸点在当前应用窗口坐标系中的Y坐标。 单位：vp **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| displayX10+ | number | 否 | 否 | 触摸点在当前应用屏幕坐标系中的X坐标。 单位：vp **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| displayY10+ | number | 否 | 否 | 触摸点在当前应用屏幕坐标系中的Y坐标。 单位：vp **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| displayX10+ | number | 否 | 否 | 触摸点在当前应用屏幕坐标系中的X坐标。 单位：vp **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| displayY10+ | number | 否 | 否 | 触摸点在当前应用屏幕坐标系中的Y坐标。 单位：vp **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | screenX(deprecated) | number | 否 | 否 | 触摸点在当前应用窗口坐标系中的X坐标。 单位：vp **说明：** 从API version 7开始支持，从API version 10开始废弃，建议使用windowX替代。 |
 | screenY(deprecated) | number | 否 | 否 | 触摸点在当前应用窗口坐标系中的Y坐标。 单位：vp **说明：** 从API version 7开始支持，从API version 10开始废弃，建议使用windowY替代。 |
 | pressedTime15+ | number | 否 | 是 | 当前手指按下的时间。 单位：ns **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
@@ -109,7 +109,7 @@ getHistoricalPoints(): Array<HistoricalPoint>
 
 getCurrentLocalPosition?(): Coordinate2D
 
-获取触摸位置相对于当前组件实时位置的左上角坐标。
+获取触摸位置相对于当前组件实时位置左上角的坐标。
 
 起始版本： 26.0.0
 
@@ -138,7 +138,7 @@ getCurrentLocalPosition?(): Coordinate2D
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | touchObject | [TouchObject](#touchobject) | 否 | 否 | 历史点对应触摸事件的基础信息。 |
-| size | number | 否 | 否 | 历史点对应触摸事件中手指与屏幕的触摸区域大小。 默认值：0 |
+| size | number | 否 | 否 | 历史点对应触摸事件中手指与屏幕的触摸区域大小。 默认值：0 取值范围：[0, +∞) |
 | force | number | 否 | 否 | 历史点对应触摸事件的压力大小。 默认值：0 取值范围：[0,65535)，压力越大，值越大。 |
 | timestamp | number | 否 | 否 | 历史点对应触摸事件的时间戳，表示触发事件时距离系统启动的时间间隔。 单位：ns |
 
@@ -170,12 +170,12 @@ struct TouchExample {
             if (event.type === TouchType.Move) {
               this.eventType = 'Move';
             }
-            // 1.手指按住屏幕同时点击Home键返回桌面，此时会触发Cancel
-            // 2.折叠屏手机，应用在按住屏幕的情况下折叠手机切换到外屏，此时会触发Cancel
+            // 1. 手指按住屏幕同时点击Home键返回桌面，此时会触发Cancel
+            // 2. 折叠屏手机，应用在按住屏幕的情况下折叠手机切换到外屏，此时会触发Cancel
             if (event.type === TouchType.Cancel) {
               this.eventType = 'Cancel';
             }
-            if (event.touches) {
+            if (event.touches.length > 0) {
               this.text = 'TouchType:' + this.eventType
                 + '\nDistance between touch point and touch element:'
                 + '\n  x: ' + event.touches[0].x + '\n  y: ' + event.touches[0].y
@@ -201,12 +201,12 @@ struct TouchExample {
             if (event.type === TouchType.Move) {
               this.eventType = 'Move';
             }
-            // 1.手指按住屏幕同时点击Home键返回桌面，此时会触发Cancel
-            // 2.折叠屏手机，应用在按住屏幕的情况下折叠手机切换到外屏，此时会触发Cancel
+            // 1. 手指按住屏幕同时点击Home键返回桌面，此时会触发Cancel
+            // 2. 折叠屏手机，应用在按住屏幕的情况下折叠手机切换到外屏，此时会触发Cancel
             if (event.type === TouchType.Cancel) {
               this.eventType = 'Cancel';
             }
-            if (event.touches) {
+            if (event.touches.length > 0) {
               this.text = 'TouchType:' + this.eventType
                 + '\nDistance between touch point and touch element:'
                 + '\n  x: ' + event.touches[0].x + '\n  y: ' + event.touches[0].y
@@ -225,11 +225,11 @@ struct TouchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664209409.gif)
+ ![](./img/zh-cn_image_0000002655848318.gif)
 
 #### [h2]示例2（获取组件实时位置）
 
-该示例通过[getCurrentLocalPosition](#getcurrentlocalposition)方法获取当前组件基于其实时位置的左上角坐标。
+该示例通过[getCurrentLocalPosition](#getcurrentlocalposition)方法获取触摸位置相对于当前组件实时位置左上角的坐标。
 
 从API版本26.0.0开始，新增支持getCurrentLocalPosition接口。
 
@@ -248,8 +248,8 @@ struct GetCurrentLocalPositionExample {
           if (event) {
             this.textOffsetY = -200;
             setTimeout(() => {
-              let localPos: Coordinate2D | undefined = event.touches[0].getCurrentLocalPosition?.();
-              this.positionText = `相对于当前组件实时位置左上角的坐标:\n  x: ${localPos?.x}\n  y: ${localPos?.y}`;
+              let localPos: Coordinate2D | undefined = event.touches.length > 0 ? event.touches[0].getCurrentLocalPosition?.() : undefined;
+              this.positionText = `相对于当前组件实时位置左上角的坐标：\n  x: ${localPos?.x}\n  y: ${localPos?.y}`;
             }, 2000);
           }
         })
@@ -259,4 +259,4 @@ struct GetCurrentLocalPositionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664329469.gif)
+ ![](./img/zh-cn_image_0000002686087747.gif)

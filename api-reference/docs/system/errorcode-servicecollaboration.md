@@ -1,12 +1,12 @@
 ---
-title: "ArkTS 错误码"
+title: "错误码"
 upstream_id: "harmonyos-references/errorcode-servicecollaboration"
 catalog: "harmonyos-references"
-content_hash: "99a5542893db"
-synced_at: "2026-07-09T00:59:36.850587"
+content_hash: "da30b7850470"
+synced_at: "2026-07-28T16:50:54.790777"
 ---
 
-# ArkTS 错误码
+# 错误码
 
 ![](./img/note_3.0-zh-cn.png) 以下仅介绍本模块特有错误码，通用错误码请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
@@ -189,3 +189,39 @@ Out of memory, video send back failed.
 处理步骤
 
 代表内存不足视频回传失败，请进行开发者内存分析后修复代码逻辑。
+
+#### 1028501001 IPC通信异常
+
+错误信息
+
+IPC communication exception.
+
+错误描述
+
+IPC通信异常。
+
+可能原因
+
+系统侧进程出现过异常。
+
+处理步骤
+
+请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+
+#### 1028501002 参数错误
+
+错误信息
+
+Invalid parameter.
+
+错误描述
+
+参数错误。
+
+可能原因
+
+接口入参传入非法值。
+
+处理步骤
+
+检查出现异常的接口方法的入参传入是否正确。

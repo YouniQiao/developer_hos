@@ -2,8 +2,8 @@
 title: "@ohos.app.ability.PrintExtensionAbility (打印扩展能力)"
 upstream_id: "harmonyos-references/js-apis-app-ability-printextensionability"
 catalog: "harmonyos-references"
-content_hash: "a8e61e10efe2"
-synced_at: "2026-07-09T00:59:39.838343"
+content_hash: "29e683b14e5e"
+synced_at: "2026-07-28T16:50:56.662211"
 ---
 
 # @ohos.app.ability.PrintExtensionAbility (打印扩展能力)
@@ -19,6 +19,14 @@ synced_at: "2026-07-09T00:59:39.838343"
 ```
 import { PrintExtensionAbility } from '@kit.BasicServicesKit';
 ```
+
+#### 属性
+
+系统能力： SystemCapability.Print.PrintFramework
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| context | PrintExtensionContext | 否 | 否 | 打印服务扩展能力上下文。 **起始版本：** 26.0.0 |
 
 #### PrintExtensionAbility
 

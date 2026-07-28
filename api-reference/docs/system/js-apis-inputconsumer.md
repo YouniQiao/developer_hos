@@ -2,8 +2,8 @@
 title: "@ohos.multimodalInput.inputConsumer (全局快捷键)"
 upstream_id: "harmonyos-references/js-apis-inputconsumer"
 catalog: "harmonyos-references"
-content_hash: "eff99b1a9977"
-synced_at: "2026-07-09T00:59:49.087802"
+content_hash: "92e6089e7eb0"
+synced_at: "2026-07-28T16:51:07.353974"
 ---
 
 # @ohos.multimodalInput.inputConsumer (全局快捷键)
@@ -43,7 +43,7 @@ import { inputConsumer, KeyEvent } from '@kit.InputKit';
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| key | number | 否 | 否 | 按键键值。 **说明：** 从API version 26.0.0开始，新增支持[KEYCODE_FINGERPRINT_SLIDE_UP](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-keycode#keycode)键和[KEYCODE_FINGERPRINT_SLIDE_DOWN](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-keycode#keycode)键，非设备通用键值，使用前请判断当前设备是否支持相关按键事件上报，请参考[优先响应系统功能键开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/keypressed-guidelines)。 从API version 21开始，新增支持[KEYCODE_MEDIA_PLAY_PAUSE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-keycode#keycode)键、[KEYCODE_MEDIA_NEXT](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-keycode#keycode)键和[KEYCODE_MEDIA_PREVIOUS](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-keycode#keycode)键。 对于API version 20及之前的版本，仅支持[KEYCODE_VOLUME_UP](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-keycode#keycode)键和[KEYCODE_VOLUME_DOWN](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-keycode#keycode)键。 |
+| key | number | 否 | 否 | 按键键值。 **说明：** 从API版本26.0.0开始，新增支持[KEYCODE_FINGERPRINT_SLIDE_UP](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-keycode#keycode)键和[KEYCODE_FINGERPRINT_SLIDE_DOWN](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-keycode#keycode)键，非设备通用键值，使用前请判断当前设备是否支持相关按键事件上报，请参考[优先响应系统功能键开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/keypressed-guidelines)。 从API version 21开始，新增支持[KEYCODE_MEDIA_PLAY_PAUSE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-keycode#keycode)键、[KEYCODE_MEDIA_NEXT](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-keycode#keycode)键和[KEYCODE_MEDIA_PREVIOUS](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-keycode#keycode)键。 对于API version 20及之前的版本，仅支持[KEYCODE_VOLUME_UP](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-keycode#keycode)键和[KEYCODE_VOLUME_DOWN](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-keycode#keycode)键。 |
 | action | number | 否 | 否 | 订阅指定的按键事件。 **说明：** 从API version 21开始，支持取值为1和2，取值为1表示订阅按键按下事件，取值为2表示同时订阅按键按下事件和按键抬起事件。 对于API version 20及之前的版本，仅支持取值为1，表示订阅按键按下事件。 |
 | isRepeat | boolean | 否 | 否 | 是否上报重复的按键事件。true表示上报，false表示不上报，默认值为true。 |
 
@@ -147,7 +147,7 @@ struct Index {
           };
           let hotkeyCallback = (hotkeyOptions: inputConsumer.HotkeyOptions) => {
             console.info(`Succeeded in consuming hotkey, hotkeyOptions: ${JSON.stringify(hotkeyOptions)}.`);
-          }
+          };
           try {
             // 订阅热键变更事件
             inputConsumer.on('hotkeyChange', hotkeyOptions, hotkeyCallback);
@@ -203,7 +203,7 @@ struct Index {
           // 取消订阅单个应用快捷键回调函数
           let hotkeyCallback = (hotkeyOptions: inputConsumer.HotkeyOptions) => {
             console.info(`Succeeded in consuming hotkey, hotkeyOptions: ${JSON.stringify(hotkeyOptions)}.`);
-          }
+          };
           let hotkeyOption: inputConsumer.HotkeyOptions = { preKeys: [leftCtrlKey], finalKey: zKey, isRepeat: true };
           try {
             // 订阅热键变更事件
@@ -236,7 +236,7 @@ struct Index {
           // 取消订阅所有应用快捷键回调函数
           let hotkeyCallback = (hotkeyOptions: inputConsumer.HotkeyOptions) => {
             console.info(`Succeeded in consuming hotkey, hotkeyOptions: ${JSON.stringify(hotkeyOptions)}.`);
-          }
+          };
           let hotkeyOption: inputConsumer.HotkeyOptions = { preKeys: [leftCtrlKey], finalKey: zKey, isRepeat: true };
           try {
             // 订阅热键变更事件
@@ -362,7 +362,7 @@ struct Index {
             }
             let callback = (event: KeyEvent) => {
               console.info(`Succeeded in unsubscribing ${JSON.stringify(event)}.`);
-            }
+            };
             // 订阅按键按下事件
             inputConsumer.on('keyPressed', options, callback);
             // 取消订阅按键按下事件

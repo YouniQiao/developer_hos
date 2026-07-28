@@ -1,16 +1,14 @@
 ---
-
 title: "键盘判断事件"
 upstream_id: "harmonyos-references/ts-universal-events-onneedsoftkeyboard"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T00:57:36.534687"
-content_hash: "18af5be1ad14"
+content_hash: "9f334908cd8b"
+synced_at: "2026-07-28T16:41:56.483465"
 ---
-
 
 # 键盘判断事件
 
-当组件获得焦点时，获焦组件触发该事件。系统会根据该事件回调函数返回值，判断是否需要键盘。
+当组件获得焦点时，获焦组件触发该事件，用于在焦点切换时灵活控制软键盘的显示与隐藏。系统会根据该事件回调函数返回值，判断是否需要键盘。主要适用于键盘接续场景，帮助开发者避免键盘频繁收起和拉起，优化用户交互体验。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -31,7 +29,7 @@ Web组件使用该方法时，如果返回值为true，Web组件会判断组件�
 
 XComponent组件使用该方法时，如果返回值为true且XComponent组件使用[OH_ArkUI_XComponent_SetNeedSoftKeyboard()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-interface-xcomponent-h#oh_arkui_xcomponent_setneedsoftkeyboard)设置了需要键盘，才会保留键盘，如果返回值为false，无论组件如何设置，键盘都不会保留。
 
-当接口返回true时，应用的自绘制输入框需要主动[attach](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethod#attach15)，建立输入法框架和输入法应用的通信，否则点击键盘会失去响应（失焦时输入法框架和输入法应用的通信会断开）。
+当返回值为true时，应用的自绘制输入框需要在获焦时主动调用[attach](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethod#attach15)方法，建立输入法框架和输入法应用的通信，否则点击键盘会失去响应。说明：失焦时输入法框架和输入法应用的通信会断开，获焦时需要重新建立通信。
 
 该接口只适用于对输入法应用接续的场景，对自定义键盘不生效。自定义键盘接续详见[setCustomKeyboardContinueFeature](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#setcustomkeyboardcontinuefeature23)。
 
@@ -45,7 +43,7 @@ XComponent组件使用该方法时，如果返回值为true且XComponent组件�
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| onNeedSoftkeyboardCallback | [OnNeedSoftkeyboardCallback](#onneedsoftkeyboardcallback) | undefined | 是 | 事件触发时执行的回调，系统会根据回调的返回值决定是否需要键盘。 设置为undefined时，不会触发回调，输入框类组件行为等同返回true。其他组件行为等同返回false。 |
+| onNeedSoftkeyboardCallback | [OnNeedSoftkeyboardCallback](#onneedsoftkeyboardcallback) | undefined | 是 | 事件触发时执行的回调，系统会根据回调的返回值决定是否需要键盘。 设置为undefined时，不会触发回调，输入框类组件行为等同返回true。其他组件行为等同返回false。前提条件：组件需可获焦，否则本接口不生效。当返回值为true时，自绘制输入框需在获焦时主动调用[attach](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethod#attach15)方法建立输入法通信，否则点击键盘会失去响应。 |
 
 返回值：
 
@@ -57,7 +55,7 @@ XComponent组件使用该方法时，如果返回值为true且XComponent组件�
 
 type OnNeedSoftkeyboardCallback = () => boolean
 
-当绑定该方法的组件判断是否需要键盘时，将触发此回调。
+当绑定该方法的组件判断是否需要键盘时，将触发此回调。前提条件：组件需可获焦，否则本接口不生效。
 
 元服务API： 从API version 24开始，该接口支持在元服务中使用。
 
@@ -87,7 +85,7 @@ struct Index {
     Column() {
       Button('切换焦点到Button')
         .onClick(() => {
-          this.getUIContext().getFocusController().requestFocus('Button')
+          this.getUIContext().getFocusController().requestFocus('Button');
         })
         .key('Button')
         .fontSize(20)
@@ -104,4 +102,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349559.gif)
+ ![](./img/zh-cn_image_0000002656008250.gif)

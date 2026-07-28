@@ -2,8 +2,8 @@
 title: "AtomicServiceTabs"
 upstream_id: "harmonyos-references/ohos-atomicservice-atomicservicetabs"
 catalog: "harmonyos-references"
-content_hash: "7fe50adcf573"
-synced_at: "2026-07-17T16:16:41.533549"
+content_hash: "db09a16f7f23"
+synced_at: "2026-07-28T16:47:49.530593"
 ---
 
 # AtomicServiceTabs
@@ -69,7 +69,7 @@ AtomicServiceTabs({
 | layoutMode18+ | [LayoutMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabcontent#layoutmode10) | 否 | @Prop | 设置底部页签的图片、文字排布的方式，默认值为LayoutMode.VERTICAL。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | barBackgroundColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | @Prop | 设置TabBar的背景颜色，默认值为透明。 |
 | index | number | 否 | @Prop | 设置当前显示页签的索引，索引值从0开始。默认值为0。 |
-| barOverlap | boolean | 否 | @Prop | 设置TabBar是否背景变模糊并叠加在TabContent之上。true表示TabBar背景变模糊并叠加在TabContent之上。默认值：true。 |
+| barOverlap | boolean | 否 | @Prop | 设置TabBar是否背景变模糊并叠加在TabContent之上。true表示TabBar背景变模糊并叠加在TabContent之上。默认值为true。 |
 | controller | [TabsController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabs#tabscontroller) | 否 | - | Tabs组件的控制器，用于控制Tabs组件进行页签切换。默认值为new TabsController()。 |
 | onChange | Callback | 否 | - | Tabs页签切换后触发的事件。默认值为空。 |
 | onTabBarClick | Callback | 否 | - | Tabs页签点击后触发的事件。默认值为空。 |
@@ -86,6 +86,8 @@ type TabContentBuilder = () => void
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 #### TabBarOptions
+
+页签容器。
 
 #### [h2]constructor
 
@@ -107,6 +109,8 @@ TabBarOptions的构造函数。
 | selectedColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 被选择时的页签颜色，默认值：#FF007DFF。 |
 
 #### TabBarPosition
+
+设置页签栏位置，默认值为TabBarPosition.BOTTOM。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -212,7 +216,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002671434771.png)
+ ![](./img/zh-cn_image_0000002655848972.png)
 
 #### [h2]示例2(纯图标样式)
 
@@ -284,7 +288,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002671394641.png)
+ ![](./img/zh-cn_image_0000002686088403.png)
 
 #### [h2]示例3(图标加文本，自定义图文排布)
 
@@ -378,4 +382,4 @@ struct AtomicserviceTabs  {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002641354794.gif)
+ ![](./img/zh-cn_image_0000002685928573.gif)

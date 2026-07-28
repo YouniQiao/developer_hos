@@ -2,13 +2,13 @@
 title: "@ohos.enterprise.bluetoothManager（蓝牙管理）"
 upstream_id: "harmonyos-references/js-apis-enterprise-bluetoothmanager"
 catalog: "harmonyos-references"
-content_hash: "693a11320fb8"
-synced_at: "2026-07-09T00:59:52.034816"
+content_hash: "f0b455361e98"
+synced_at: "2026-07-28T16:51:10.148433"
 ---
 
 # @ohos.enterprise.bluetoothManager（蓝牙管理）
 
-本模块提供设备蓝牙管理的能力，包括设置和查询蓝牙信息等。
+本模块提供设备蓝牙管理的能力，包括设置蓝牙开关状态、查询蓝牙信息，管理蓝牙设备可用名单、蓝牙设备禁用名单、蓝牙协议禁用名单等。通过本模块，企业可以统一管理设备蓝牙功能，实现对蓝牙设备连接的精细化管控，提升企业信息安全水平，适用于企业需要对员工设备的蓝牙使用进行规范化管理的场景。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 12开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -16,7 +16,7 @@ synced_at: "2026-07-09T00:59:52.034816"
 
 本模块接口仅对设备管理应用开放，且调用接口前需激活设备管理应用，具体请参考[MDM Kit开发指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-guide)。
 
-全局通用限制类策略由restrictions统一提供，若要全局禁用蓝牙，请参考[@ohos.enterprise.restrictions （限制类策略）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions)。
+全局通用限制类策略由restrictions统一提供，若要全局禁用蓝牙，请参考[@ohos.enterprise.restrictions（限制类策略）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions)。
 
 #### 导入模块
 
@@ -87,7 +87,7 @@ addAllowedBluetoothDevices(admin: Want, deviceIds: Array<string>): void
 
 以下情况下，通过本接口添加蓝牙设备可用名单，会报策略冲突：
 
-1. 已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicy)接口禁用了蓝牙。通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicy)接口启用蓝牙后，可解除冲突。
+1. 已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated)接口禁用了蓝牙。通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated)接口启用蓝牙后，可解除冲突。
 2. 已经通过[addDisallowedBluetoothDevices](#bluetoothmanageradddisallowedbluetoothdevices20)接口添加了蓝牙设备禁用名单。通过[removeDisallowedBluetoothDevices](#bluetoothmanagerremovedisallowedbluetoothdevices20)移除蓝牙设备禁用名单后，可解除冲突。
 
 需要权限： ohos.permission.ENTERPRISE_MANAGE_BLUETOOTH
@@ -193,7 +193,7 @@ try {
 
 #### bluetoothManager.getAllowedBluetoothDevices
 
-getAllowedBluetoothDevices(admin: Want): Array<string>
+getAllowedBluetoothDevices(admin: Want | null): Array<string>
 
 获取蓝牙设备可用名单。
 
@@ -207,7 +207,7 @@ getAllowedBluetoothDevices(admin: Want): Array<string>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，API版本26.0.0之前，传入Want时查询对应企业设备管理应用设置的策略。从API版本26.0.0开始，新增支持传入null时查询实际生效的策略。 |
 
 返回值：
 
@@ -253,7 +253,7 @@ addDisallowedBluetoothDevices(admin: Want, deviceIds: Array<string>): void
 
 以下情况下，通过本接口添加蓝牙设备禁用名单，会报策略冲突：
 
-1. 已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicy)接口禁用了蓝牙。通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicy)接口启用蓝牙后，可解除冲突。
+1. 已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated)接口禁用了蓝牙。通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated)接口启用蓝牙后，可解除冲突。
 2. 已经通过[addAllowedBluetoothDevices](#bluetoothmanageraddallowedbluetoothdevices)接口添加了蓝牙设备可用名单。通过[removeAllowedBluetoothDevices](#bluetoothmanagerremoveallowedbluetoothdevices)移除蓝牙设备可用名单后，可解除冲突。
 
 需要权限： ohos.permission.ENTERPRISE_MANAGE_BLUETOOTH
@@ -357,7 +357,7 @@ try {
 
 #### bluetoothManager.getDisallowedBluetoothDevices20+
 
-getDisallowedBluetoothDevices(admin: Want): Array<string>
+getDisallowedBluetoothDevices(admin: Want | null): Array<string>
 
 获取蓝牙设备禁用名单。
 
@@ -371,7 +371,7 @@ getDisallowedBluetoothDevices(admin: Want): Array<string>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，API版本26.0.0之前，传入Want时查询对应企业设备管理应用设置的策略。从API版本26.0.0开始，新增支持传入null时查询实际生效的策略。 |
 
 返回值：
 

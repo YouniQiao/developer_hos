@@ -2,13 +2,13 @@
 title: "Class (ContextMenuController)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-contextmenucontroller"
 catalog: "harmonyos-references"
-content_hash: "3e236f9d71db"
-synced_at: "2026-07-09T00:57:28.470452"
+content_hash: "79b5618fdf27"
+synced_at: "2026-07-28T16:41:02.425481"
 ---
 
 # Class (ContextMenuController)
 
-提供控制菜单关闭的能力。
+提供控制菜单关闭的能力。开发者可以通过此接口在特定场景下（如定时关闭、点击外部区域关闭等）主动关闭菜单。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -21,7 +21,7 @@ synced_at: "2026-07-09T00:57:28.470452"
 
 close(): void
 
-关闭菜单。
+关闭当前通过bindContextMenu展示的菜单。若当前无菜单展示，调用本方法无效果。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -55,21 +55,22 @@ struct Index {
 
   build() {
     Flex({ direction: FlexDirection.Column, alignItems: ItemAlign.Center, justifyContent: FlexAlign.Center }) {
-      Button("启动定时器").onClick(()=>
-      {
+      Button('启动定时器').onClick(() => {
+        // 延时10秒后调用close方法关闭菜单
         setTimeout(() => {
           this.menu.close();
         }, 10000);
       })
 
       Column() {
-        Text("Test ContextMenu close")
+        Text('Test ContextMenu close')
           .fontSize(20)
           .width('100%')
           .height(500)
           .backgroundColor(0xAFEEEE)
           .textAlign(TextAlign.Center)
       }
+      // 绑定自定义菜单，长按触发
       .bindContextMenu(this.MenuBuilder, ResponseType.LongPress)
     }
     .width('100%')
@@ -77,4 +78,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612241.gif)
+ ![](./img/zh-cn_image_0000002655848252.gif)

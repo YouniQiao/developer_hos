@@ -2,8 +2,8 @@
 title: "slider"
 upstream_id: "harmonyos-references/js-components-basic-slider"
 catalog: "harmonyos-references"
-content_hash: "c9e87c0af0a8"
-synced_at: "2026-07-09T00:58:22.580384"
+content_hash: "f102a54a668c"
+synced_at: "2026-07-28T16:49:00.830610"
 ---
 
 # slider
@@ -22,10 +22,10 @@ synced_at: "2026-07-09T00:58:22.580384"
 
 | 名称 | 类型 | 默认值 | 必填 | 描述 |
 | --- | --- | --- | --- | --- |
-| min | number | 0 | 否 | 滑动选择器的最小值。 |
-| max | number | 100 | 否 | 滑动选择器的最大值。 |
+| min | number | 0 | 否 | 滑动条的最小值。 |
+| max | number | 100 | 否 | 滑动条的最大值。 |
 | step | number | 1 | 否 | 每次滑动的步长。 |
-| value | number | 0 | 否 | 滑动选择器的初始值。 |
+| value | number | 0 | 否 | 滑动条的初始值。 |
 | mode5+ | string | outset | 否 | 滑动条样式： - outset：滑块在滑杆上； - inset：滑块在滑杆内。 |
 | showsteps5+ | boolean | false | 否 | 是否显示步长标识。true表示显示步长标识，false表示不显示步长标识。 |
 | showtips5+ | boolean | false | 否 | 滑动时是否有气泡提示百分比。true表示有气泡提示百分比，false表示没有气泡提示百分比。 |
@@ -52,8 +52,8 @@ synced_at: "2026-07-09T00:58:22.580384"
 
 | 属性 | 类型 | 说明 |
 | --- | --- | --- |
-| value5+ | number | 当前slider的进度值。 |
-| mode5+ | string | 当前change事件的类型，可选值为： - start：slider的值开始改变。 - move：slider的值跟随手指拖动中。 - end：slider的值结束改变。 - click：slider的值在点击进度条后改变。 |
+| value5+ | number | 当前滑动条的进度值。 |
+| mode5+ | string | 当前change事件的类型，可选值为： - start：滑动条的值开始改变。 - move：滑动条的值跟随手指拖动中。 - end：滑动条的值结束改变。 - click：滑动条的值在点击进度条后改变。 |
 
 #### 示例
 
@@ -77,4 +77,4 @@ synced_at: "2026-07-09T00:58:22.580384"
     margin-top: 100px;
 }
 ```
- ![](./img/zh-cn_image_0000002631253902.png)
+ ![](./img/zh-cn_image_0000002655849108.png)

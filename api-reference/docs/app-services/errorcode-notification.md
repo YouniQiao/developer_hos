@@ -2,8 +2,8 @@
 title: "通知错误码"
 upstream_id: "harmonyos-references/errorcode-notification"
 catalog: "harmonyos-references"
-content_hash: "cae3bbebc3bf"
-synced_at: "2026-07-17T16:19:53.093873"
+content_hash: "4c10d4e6216c"
+synced_at: "2026-07-28T16:52:48.886958"
 ---
 
 # 通知错误码
@@ -62,7 +62,7 @@ Failed to connect to the service.
 
 处理步骤
 
-重启系统。
+等待一段时间后重试，或检查通知服务运行状态，必要时重启通知服务。
 
 #### 1600004 通知开关关闭
 
@@ -98,9 +98,8 @@ Notification slot disabled.
 
 处理步骤
 
-1、通知设置里查看应用是否有该类型渠道，没有需要新增。
-
-2、通知设置里查看应用该类型渠道状态，要保持开启状态。
+1. 通知设置里查看应用是否有该类型渠道，没有需要新增。
+2. 通知设置里查看应用该类型渠道状态，要保持开启状态。
 
 #### 1600007 通知不存在
 
@@ -136,7 +135,7 @@ The user does not exist.
 
 处理步骤
 
-检查传入的用户信息。
+确认传入的用户信息是否正确。
 
 #### 1600009 通知发布频度超过限制
 
@@ -186,9 +185,8 @@ No memory space.
 
 可能原因
 
-内存空间不足。
-
-内存申请出现错误。
+1. 内存空间不足。
+2. 内存申请出现错误。
 
 处理步骤
 
@@ -306,7 +304,7 @@ The application is not allowed to send notifications due to permission settings.
 
 该应用受到[企业设备管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-intro)的权限管控，应用无法主动退出权限管控名单。
 
-#### 1600023 app NotificationSubscriberExtensionAbility未实现
+#### 1600023 应用未实现NotificationSubscriberExtensionAbility
 
 错误信息
 
@@ -314,7 +312,7 @@ The application does not implement the NotificationSubscriberExtensionAbility.
 
 错误描述
 
-应用未实现NotificationSubscriberExtensionAbility。
+应用未实现NotificationSubscriberExtensionAbility，将返回该错误码。
 
 可能原因
 

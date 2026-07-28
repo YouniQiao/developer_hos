@@ -2,8 +2,8 @@
 title: "@ohos.animator (动画)"
 upstream_id: "harmonyos-references/js-apis-animator"
 catalog: "harmonyos-references"
-content_hash: "75a7b7d42cd0"
-synced_at: "2026-07-09T00:57:27.414966"
+content_hash: "a41d4d2228e5"
+synced_at: "2026-07-28T16:40:59.245701"
 ---
 
 # @ohos.animator (动画)
@@ -53,13 +53,13 @@ create(options: AnimatorOptions): AnimatorResult
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [AnimatorOptions](#animatoroptions) | 是 | 定义动画选项。 |
+| options | [AnimatorOptions](#animatoroptions) | 是 | 动画配置选项，包含播放时长、插值曲线、延时、填充模式、播放方向、播放次数及插值起止值等参数。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| [AnimatorResult](#animatorresult) | Animator结果接口。 |
+| [AnimatorResult](#animatorresult) | 动画控制对象，可用于设置动画过程中的回调函数。 |
 
 错误码：
 
@@ -80,7 +80,7 @@ import { Animator as animator, AnimatorOptions } from '@kit.ArkUI';
 
 let options: AnimatorOptions = {
   duration: 1500,
-  easing: "friction",
+  easing: 'friction',
   delay: 0,
   fill: "forwards",
   direction: "normal",
@@ -107,13 +107,13 @@ create(options: AnimatorOptions | SimpleAnimatorOptions): AnimatorResult
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [AnimatorOptions](#animatoroptions) | [SimpleAnimatorOptions](#simpleanimatoroptions18) | 是 | 定义动画参数选项。 |
+| options | [AnimatorOptions](#animatoroptions) | [SimpleAnimatorOptions](#simpleanimatoroptions18) | 是 | 定义动画选项。AnimatorOptions适用于需要完整自定义所有动画参数的场景；SimpleAnimatorOptions适用于仅需指定起点和终点的简易动画场景，其余参数使用默认值。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| [AnimatorResult](#animatorresult) | Animator结果接口。 |
+| [AnimatorResult](#animatorresult) | 动画控制对象，可设置动画过程中的回调函数。 |
 
 错误码：
 
@@ -132,7 +132,7 @@ create(options: AnimatorOptions | SimpleAnimatorOptions): AnimatorResult
 ```
 import { Animator as animator, SimpleAnimatorOptions } from '@kit.ArkUI';
 let options: SimpleAnimatorOptions = new SimpleAnimatorOptions(100, 200).duration(2000);
-animator.create(options);// 建议使用 UIContext.createAnimator()接口
+animator.create(options); // 建议使用 UIContext.createAnimator()接口
 ```
 
 #### [h2]createAnimator(deprecated)
@@ -149,13 +149,13 @@ createAnimator(options: AnimatorOptions): AnimatorResult
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [AnimatorOptions](#animatoroptions) | 是 | 定义动画选项。 |
+| options | [AnimatorOptions](#animatoroptions) | 是 | 动画配置选项，用于定义动画的播放时长、插值曲线、延时、填充模式、播放方向、播放次数及插值起止值等参数。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| [AnimatorResult](#animatorresult) | Animator结果接口。 |
+| [AnimatorResult](#animatorresult) | 动画控制对象，可设置动画过程中的回调函数。 |
 
 示例：
 
@@ -180,7 +180,7 @@ this.animator = animator.createAnimator(options);
 
 #### AnimatorResult
 
-定义Animator结果接口。
+定义AnimatorResult接口，提供动画播放状态回调及动画控制方法。
 
 #### [h2]属性
 
@@ -192,10 +192,10 @@ this.animator = animator.createAnimator(options);
 | onFinish12+ | () => void | 否 | 否 | 动画完成时回调。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | onCancel12+ | () => void | 否 | 否 | 动画被取消时回调。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | onRepeat12+ | () => void | 否 | 否 | 动画重复时回调。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| onframe(deprecated) | (progress: number) => void | 否 | 否 | 接收到帧时回调。 **说明:** 从API version 6开始支持，从API version 12开始废弃，推荐使用onFrame。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| onfinish(deprecated) | () => void | 否 | 否 | 动画完成时回调。 **说明:** 从API version 6开始支持，从API version 12开始废弃，推荐使用onFinish。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| oncancel(deprecated) | () => void | 否 | 否 | 动画被取消时回调。 **说明:** 从API version 6开始支持，从API version 12开始废弃，推荐使用onCancel。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| onrepeat(deprecated) | () => void | 否 | 否 | 动画重复时回调。 **说明:** 从API version 6开始支持，从API version 12开始废弃，推荐使用onRepeat。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| onframe(deprecated) | (progress: number) => void | 否 | 否 | 接收到帧时回调。 **说明：** 从API version 6开始支持，从API version 12开始废弃，推荐使用[onFrame](#属性)。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| onfinish(deprecated) | () => void | 否 | 否 | 动画完成时回调。 **说明：** 从API version 6开始支持，从API version 12开始废弃，推荐使用[onFinish](#属性)。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| oncancel(deprecated) | () => void | 否 | 否 | 动画被取消时回调。 **说明：** 从API version 6开始支持，从API version 12开始废弃，推荐使用[onCancel](#属性)。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| onrepeat(deprecated) | () => void | 否 | 否 | 动画重复时回调。 **说明：** 从API version 6开始支持，从API version 12开始废弃，推荐使用[onRepeat](#属性)。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 
 #### [h2]reset9+
 
@@ -211,11 +211,11 @@ reset(options: AnimatorOptions): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [AnimatorOptions](#animatoroptions) | 是 | 定义动画选项。 |
+| options | [AnimatorOptions](#animatoroptions) | 是 | 动画配置选项，用于定义动画的播放时长、插值曲线、延时、填充模式、播放方向、播放次数及插值起止值等参数。 |
 
 错误码：
 
-以下错误码的详细介绍请参考[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[接口调用异常错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-internal)
+以下错误码的详细介绍请参考[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[接口调用异常错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-internal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -297,7 +297,7 @@ import { Animator as animator, AnimatorResult, AnimatorOptions, SimpleAnimatorOp
 
 let options: AnimatorOptions = {
   duration: 1500,
-  easing: "ease",
+  easing: 'ease',
   delay: 0,
   fill: "forwards",
   direction: "normal",
@@ -317,7 +317,7 @@ animatorResult.reset(optionsNew);
 
 play(): void
 
-启动动画。动画会保留上一次的播放状态，比如播放状态设置reverse后，再次播放会保留reverse的播放状态。
+启动动画。动画暂停后调用此方法可恢复播放。动画会保留上一次的播放状态，比如播放状态设置reverse后，再次播放会保留reverse的播放状态。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -407,7 +407,7 @@ animator.reverse();
 
 setExpectedFrameRateRange(rateRange: ExpectedFrameRateRange): void
 
-设置期望的帧率范围。
+设置期望的帧率范围，包含最小、最大和期望帧率值。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -437,7 +437,7 @@ let expectedFrameRate: ExpectedFrameRateRange = {
 @Entry
 @Component
 struct AnimatorTest {
-  private backAnimator: AnimatorResult | undefined = undefined
+  private backAnimator: AnimatorResult | undefined = undefined;
 
   create() {
     this.backAnimator = this.getUIContext().createAnimator({
@@ -463,7 +463,7 @@ struct AnimatorTest {
 
 update(options: AnimatorOptions): void
 
-更新当前动画器。
+更新当前animator动画参数。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 6开始支持，从API version 9开始废弃。建议使用[reset](#reset9)替代。
 
@@ -473,7 +473,7 @@ update(options: AnimatorOptions): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [AnimatorOptions](#animatoroptions) | 是 | 定义动画选项。 |
+| options | [AnimatorOptions](#animatoroptions) | 是 | 动画配置选项，用于定义动画的播放时长、插值曲线、延时、填充模式、播放方向、播放次数及插值起止值等参数。 |
 
 示例：
 
@@ -499,7 +499,7 @@ animator.update(options);
 | easing | string | 否 | 否 | 动画插值曲线，支持的曲线类型可参考表1。 非法字符串时取:"ease"。 |
 | delay | number | 否 | 否 | 动画延时播放时长，单位毫秒，设置为0时，表示不延时。设置为负数时动画提前播放，如果提前播放的时长大于动画总时长，动画直接过渡到终点。 默认值：0 |
 | fill | 'none' | 'forwards' | 'backwards' | 'both' | 否 | 否 | 动画执行后是否恢复到初始状态，动画执行后，动画结束时的状态（在最后一个关键帧中定义）将保留。 'none'：在动画执行之前和之后都不会应用任何样式到目标上。 'forwards'：在动画结束后，目标将保留动画结束时的状态（在最后一个关键帧中定义）。 'backwards'：动画将在[AnimatorOptions](#animatoroptions)中的delay期间应用第一个关键帧中定义的值。当[AnimatorOptions](#animatoroptions)中的direction为'normal'或'alternate'时应用from关键帧中的值，当[AnimatorOptions](#animatoroptions)中的direction为'reverse'或'alternate-reverse'时应用to关键帧中的值。 'both'：动画将遵循forwards和backwards的规则，从而在两个方向上扩展动画属性。 |
-| direction | 'normal' | 'reverse' | 'alternate' | 'alternate-reverse' | 否 | 否 | 动画播放模式。 'normal'： 动画正向循环播放。 'reverse'： 动画反向循环播放。 'alternate'：动画交替循环播放，奇数次正向播放，偶数次反向播放。 'alternate-reverse'：动画反向交替循环播放，奇数次反向播放，偶数次正向播放。 默认值：'normal' |
+| direction | 'normal' | 'reverse' | 'alternate' | 'alternate-reverse' | 否 | 否 | 动画播放方向。 'normal'： 动画正向循环播放。 'reverse'： 动画反向循环播放。 'alternate'：动画交替循环播放，奇数次正向播放，偶数次反向播放。 'alternate-reverse'：动画反向交替循环播放，奇数次反向播放，偶数次正向播放。 默认值：'normal' |
 | iterations | number | 否 | 否 | 动画播放次数。设置为0时不播放，设置为-1时无限次播放，设置大于0时为播放次数。 **说明:** 设置为除-1外其他负数视为无效取值，无效取值动画默认播放1次。 |
 | begin | number | 否 | 否 | 动画插值起点。 **说明:** 会影响[onFrame](#属性)回调的入参值。 默认值：0 |
 | end | number | 否 | 否 | 动画插值终点。 **说明:** 会影响[onFrame](#属性)回调的入参值。 默认值：1 |
@@ -545,8 +545,8 @@ SimpleAnimatorOptions的构造函数。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| begin | number | 是 | 动画插值起点。 |
-| end | number | 是 | 动画插值终点。 |
+| begin | number | 是 | 动画插值起点。 **说明：** 会影响[onFrame](#属性)回调的入参值。 |
+| end | number | 是 | 动画插值终点。 **说明:** 会影响[onFrame](#属性)回调的入参值。 |
 
 示例：
 
@@ -587,13 +587,13 @@ duration(duration: number): SimpleAnimatorOptions
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| duration | number | 是 | 设置动画时长，单位毫秒。 默认值：1000 |
+| duration | number | 是 | 设置动画播放的时长，单位毫秒。 默认值：1000 **说明:** 使用interpolating-spring曲线时，duration不生效，由弹簧参数决定。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| [SimpleAnimatorOptions](#simpleanimatoroptions18) | Animator简易动画参数对象。 |
+| [SimpleAnimatorOptions](#simpleanimatoroptions18) | 返回当前简易动画参数对象，支持链式调用以继续配置动画参数。 |
 
 示例：
 
@@ -640,7 +640,7 @@ easing(curve: string): SimpleAnimatorOptions
 
 | 类型 | 说明 |
 | --- | --- |
-| [SimpleAnimatorOptions](#simpleanimatoroptions18) | Animator简易动画参数对象。 |
+| [SimpleAnimatorOptions](#simpleanimatoroptions18) | 返回当前简易动画参数对象，支持链式调用以继续配置动画参数。 |
 
 示例：
 
@@ -669,7 +669,7 @@ struct AnimatorTest {
 
 delay(delay: number): SimpleAnimatorOptions
 
-设置animator动画播放时延。
+设置animator动画延时播放时长。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -687,7 +687,7 @@ delay(delay: number): SimpleAnimatorOptions
 
 | 类型 | 说明 |
 | --- | --- |
-| [SimpleAnimatorOptions](#simpleanimatoroptions18) | Animator简易动画参数对象。 |
+| [SimpleAnimatorOptions](#simpleanimatoroptions18) | 返回当前简易动画参数对象，支持链式调用以继续配置动画参数。 |
 
 示例：
 
@@ -734,7 +734,7 @@ fill(fillMode: [FillMode](https://developer.huawei.com/consumer/cn/doc/harmonyos
 
 | 类型 | 说明 |
 | --- | --- |
-| [SimpleAnimatorOptions](#simpleanimatoroptions18) | Animator简易动画参数对象。 |
+| [SimpleAnimatorOptions](#simpleanimatoroptions18) | 返回当前简易动画参数对象，支持链式调用以继续配置动画参数。 |
 
 示例：
 
@@ -763,7 +763,7 @@ struct AnimatorTest {
 
 direction(direction: [PlayMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#playmode)): SimpleAnimatorOptions
 
-设置animator动画播放方向。
+设置animator动画播放模式。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -781,7 +781,7 @@ direction(direction: [PlayMode](https://developer.huawei.com/consumer/cn/doc/har
 
 | 类型 | 说明 |
 | --- | --- |
-| [SimpleAnimatorOptions](#simpleanimatoroptions18) | Animator简易动画参数对象。 |
+| [SimpleAnimatorOptions](#simpleanimatoroptions18) | 返回当前简易动画参数对象，支持链式调用以继续配置动画参数。 |
 
 示例：
 
@@ -822,13 +822,13 @@ iterations(iterations: number): SimpleAnimatorOptions
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| iterations | number | 是 | 设置animator动画播放次数，设置为0时不播放，设置为-1时无限次播放。 默认值：1 |
+| iterations | number | 是 | 设置animator动画播放次数，设置为0时不播放，设置为-1时无限次播放，设置大于0时为播放次数。 **说明：** 设置为除-1外其他负数视为无效取值，无效取值动画默认播放1次。 默认值：1 使用interpolating-spring曲线时，iterations设置无效，固定设置为1。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| [SimpleAnimatorOptions](#simpleanimatoroptions18) | Animator简易动画参数对象。 |
+| [SimpleAnimatorOptions](#simpleanimatoroptions18) | 返回当前简易动画参数对象，支持链式调用以继续配置动画参数。 |
 
 示例：
 
@@ -946,7 +946,7 @@ class DateT {
   })
 }
 ```
- ![](./img/zh-cn_image_0000002631253050.gif)
+ ![](./img/zh-cn_image_0000002685927843.gif)
 
 #### [h2]基于ArkTS扩展的声明式开发范式
 
@@ -977,18 +977,18 @@ struct AnimatorTest {
       end: 200 // 动画插值终点
     })
     this.backAnimator.onFinish = () => {
-      this.flag = true
-      console.info(this.TAG, 'backAnimator onFinish')
+      this.flag = true;
+      console.info(this.TAG, 'backAnimator onFinish');
     }
     this.backAnimator.onRepeat = () => {
-      console.info(this.TAG, 'backAnimator repeat')
+      console.info(this.TAG, 'backAnimator repeat');
     }
     this.backAnimator.onCancel = () => {
-      console.info(this.TAG, 'backAnimator cancel')
+      console.info(this.TAG, 'backAnimator cancel');
     }
     this.backAnimator.onFrame = (value: number) => {
-      this.columnWidth = value
-      this.columnHeight = value
+      this.columnWidth = value;
+      this.columnHeight = value;
     }
   }
 
@@ -1115,7 +1115,7 @@ struct AnimatorTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612233.gif)
+ ![](./img/zh-cn_image_0000002656008164.gif)
 
 #### [h2]位移动画示例（简易入参）
 
@@ -1138,7 +1138,7 @@ struct AnimatorTest {
       this.flag = true
       console.info(this.TAG, 'backAnimator onFinish')
     }
-    this.backAnimator.onFrame = (value:number) => {
+    this.backAnimator.onFrame = (value: number) => {
       this.translate_ = value
     }
   }
@@ -1215,4 +1215,4 @@ struct AnimatorTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631412940.gif)
+ ![](./img/zh-cn_image_0000002655848244.gif)

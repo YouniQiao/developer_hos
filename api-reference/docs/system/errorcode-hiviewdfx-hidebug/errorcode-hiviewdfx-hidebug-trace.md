@@ -2,8 +2,8 @@
 title: "HiDebug Trace错误码"
 upstream_id: "harmonyos-references/errorcode-hiviewdfx-hidebug-trace"
 catalog: "harmonyos-references"
-content_hash: "b151e0e7646d"
-synced_at: "2026-07-09T01:00:05.827016"
+content_hash: "4bef2a42b1c7"
+synced_at: "2026-07-28T16:51:24.256948"
 ---
 
 # HiDebug Trace错误码
@@ -96,9 +96,8 @@ Quota exceeded.
 
 可能原因
 
-1.进程调用次数超出配额（1次/天）。
-
-2.整机调用次数超出配额（5次/周）。
+1. 进程调用次数超出配额（1次/天）。
+2. 整机调用次数超出配额（5次/周）。
 
 处理步骤
 

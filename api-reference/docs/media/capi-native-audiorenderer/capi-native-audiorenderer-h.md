@@ -2,8 +2,8 @@
 title: "native_audiorenderer.h"
 upstream_id: "harmonyos-references/capi-native-audiorenderer-h"
 catalog: "harmonyos-references"
-content_hash: "170ffae15652"
-synced_at: "2026-07-09T01:00:10.064103"
+content_hash: "94b0a7e4db18"
+synced_at: "2026-07-28T16:51:28.378657"
 ---
 
 # native_audiorenderer.h
@@ -61,7 +61,7 @@ synced_at: "2026-07-09T01:00:10.064103"
 | [OH_AudioStream_Result OH_AudioRenderer_GetSilentModeAndMixWithOthers(OH_AudioRenderer* renderer, bool* on)](#oh_audiorenderer_getsilentmodeandmixwithothers) | - | 获取当前音频流是否开启静音并发播放。 |
 | [OH_AudioStream_Result OH_AudioRenderer_SetDefaultOutputDevice(OH_AudioRenderer* renderer, OH_AudioDevice_Type deviceType)](#oh_audiorenderer_setdefaultoutputdevice) | - | 设置默认本机内置发声设备。 本接口仅适用于音频流类型[OH_AudioStream_Usage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_usage)为语音消息、VoIP语音通话或者VoIP视频通话的场景使用，以及可选的设备类型为听筒、扬声器和系统默认设备。 本接口允许在AudioRenderer创建以后的任何时间被调用，系统会记录应用设置的默认本机内置发声设备。在应用启动播放时，若有外接设备如蓝牙耳机/有线耳机接入，系统优先从外接设备发声；否则系统遵循应用设置的默认本机内置发声设备发声。 |
 | [typedef void (*OH_AudioRenderer_OnInterruptCallback)(OH_AudioRenderer* renderer, void* userData, OH_AudioInterrupt_ForceType type, OH_AudioInterrupt_Hint hint)](#oh_audiorenderer_oninterruptcallback) | OH_AudioRenderer_OnInterruptCallback | 音频流中断事件回调函数。 |
-| [typedef void (*OH_AudioRenderer_OnErrorCallback)(OH_AudioRenderer* renderer, void* userData, OH_AudioStream_Result error)](#oh_audiorenderer_onerrorcallback) | OH_AudioRenderer_OnErrorCallback | 音频流错误事件回调函数。 |
+| [typedef void (*OH_AudioRenderer_OnErrorCallback)(OH_AudioRenderer* renderer, void* userData, OH_AudioStream_Result error)](#oh_audiorenderer_onerrorcallback) | OH_AudioRenderer_OnErrorCallback | 音频流错误事件回调函数。系统内部故障时触发，如音频服务异常退出，非应用调用导致。 |
 | [OH_AudioStream_Result OH_AudioRenderer_GetFastStatus(OH_AudioRenderer* renderer, OH_AudioStream_FastStatus* status)](#oh_audiorenderer_getfaststatus) | - | 获取音频播放过程中的运行状态，是否在低时延状态下工作。 |
 | [typedef void (*OH_AudioRenderer_OnFastStatusChange)(OH_AudioRenderer* renderer, void* userData, OH_AudioStream_FastStatus status)](#oh_audiorenderer_onfaststatuschange) | OH_AudioRenderer_OnFastStatusChange | 音频播放过程中低时延状态改变事件的回调函数。 |
 | [OH_AudioStream_Result OH_AudioRenderer_SetLoudnessGain(OH_AudioRenderer* renderer, float loudnessGain)](#oh_audiorenderer_setloudnessgain) | - | 设置音频播放的响度值。默认的响度值是0.0dB。音频流播放类型必须是音乐[OH_AudioStream_Usage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_usage).AUDIOSTREAM_USAGE_MUSIC， 电影或视频[OH_AudioStream_Usage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_usage).AUDIOSTREAM_USAGE_MOVIE， 有声读物（包括听书、相声、评书）、听新闻、播客等[OH_AudioStream_Usage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_usage).AUDIOSTREAM_USAGE_AUDIOBOOK。 音频流的时延模式必须是普通时延[OH_AudioStream_LatencyMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_latencymode).AUDIOSTREAM_LATENCY_MODE_NORMAL。 本接口不支持通过高清通路播放的音频流设置响度。 由于音频框架与硬件之间存在缓冲区，响度调节实际生效存在延迟，时长取决于缓冲区长度。 建议在不同音频开始播放前预先设置响度，以实现最佳均衡效果。 |
@@ -395,7 +395,7 @@ OH_AudioStream_Result OH_AudioRenderer_GetFramesWritten(OH_AudioRenderer* render
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_AudioRenderer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiorendererstruct)* renderer | 指向[OH_AudioStreamBuilder_GenerateRenderer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostreambuilder-h#oh_audiostreambuilder_generaterenderer)创建的音频流实例。 |
-| int64_t* frames | 指向将为帧计数设置的变量的指针。 |
+| int64_t* frames | 指向用于接收已写入帧数的变量的指针。 |
 
 返回：
 
@@ -423,6 +423,7 @@ OH_AudioStream_Result OH_AudioRenderer_GetTimestamp(OH_AudioRenderer* renderer, 
 ![](./img/note_3.0-zh-cn.png)
 
 - 当实际播放位置（framePosition）为0时，时间戳（timestamp）是固定值，直到流真正跑起来时才会更新。
+- 播放位置（framePosition）单位为采样数，采样数计算方式为采样率乘以时间（例如，当采样率为48000Hz时，20ms音频数据对应的采样数为48000*0.02，即采样点为960）。
 - 当调用Flush接口时实际播放位置也会被重置。
 
 起始版本： 10
@@ -459,9 +460,12 @@ OH_AudioStream_Result OH_AudioRenderer_GetAudioTimestampInfo(OH_AudioRenderer* r
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 当实际播放位置（framePosition）为0时，时间戳（timestamp）是固定值，直到流真正跑起来时才会更新。
+- 当实际播放位置（framePosition）为0时，时间戳（timestamp）是固定值，直到流真正开始播放时才会更新。
+- 播放位置（framePosition）单位为采样数，采样数计算方式为采样率乘以时间（例如，当采样率为48000Hz时，20ms音频数据对应的采样数为48000*0.02，即采样点为960）。
 - 当调用Flush接口时实际播放位置也会被重置。
-- 当音频流路由（route）变化时，例如设备变化或者输出类型变化时，播放位置也会被重置，但此时时间戳仍会持续增长。推荐当实际播放位置和时间戳的变化稳定后再使用该接口获取的值。该接口适配倍速接口，例如当播放速度设置为2倍时，播放位置的增长速度也会返回为正常的2倍。
+- 在调用此函数之前，确保音频流处于运行状态，并且至少已成功播放一帧数据。
+- 当音频流路由（route）变化时，例如设备变化或者输出类型变化时，播放位置可能也会被重置，但此时时间戳仍会持续增长。推荐当实际播放位置和时间戳的变化稳定后再使用该接口获取的值。
+- 该接口适配倍速接口，例如当播放速度设置为2倍时，播放位置的增长速度也会返回为正常的2倍。
 
 起始版本： 15
 
@@ -495,7 +499,7 @@ OH_AudioStream_Result OH_AudioRenderer_GetFrameSizeInCallback(OH_AudioRenderer* 
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_AudioRenderer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiorendererstruct)* renderer | 指向[OH_AudioStreamBuilder_GenerateRenderer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostreambuilder-h#oh_audiostreambuilder_generaterenderer)创建的音频流实例。 |
-| int32_t* frameSize | 指向将为帧大小设置的变量的指针。 |
+| int32_t* frameSize | 指向用于接收帧大小的变量的指针。 |
 
 返回：
 
@@ -665,7 +669,7 @@ OH_AudioStream_Result OH_AudioRenderer_GetVolume(OH_AudioRenderer* renderer, flo
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_AudioRenderer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiorendererstruct)* renderer | 指向[OH_AudioStreamBuilder_GenerateRenderer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostreambuilder-h#oh_audiostreambuilder_generaterenderer)创建的音频流实例。 |
-| float* volume | 指向一个获取当前音频流音量值的指针。音量值的范围是[0.0, 1.0]。 |
+| float* volume | 指向一个用来接收当前音频流音量值的指针。音量值的范围是[0.0, 1.0]。 |
 
 返回：
 
@@ -856,7 +860,7 @@ OH_AudioStream_Result OH_AudioRenderer_SetDefaultOutputDevice(OH_AudioRenderer* 
 
 本接口允许在AudioRenderer创建以后的任何时间被调用，系统会记录应用设置的默认本机内置发声设备。在应用启动播放时，若有外接设备如蓝牙耳机/有线耳机接入，系统优先从外接设备发声；否则系统遵循应用设置的默认本机内置发声设备发声。
 
-设备行为差异： 当该接口在无听筒的设备上设置默认发声设备为听筒时，将继续从扬声器发声。
+设备行为差异： 当该接口在无听筒的设备上设置默认发声设备为听筒时，将从扬声器发声。
 
 起始版本： 12
 
@@ -900,7 +904,7 @@ typedef void (*OH_AudioRenderer_OnErrorCallback)(OH_AudioRenderer* renderer, voi
 ```
  描述
 
-音频流错误事件回调函数。
+音频流错误事件回调函数。系统内部故障时触发，如音频服务异常退出，非应用调用导致。
 
 起始版本： 20
 
@@ -954,7 +958,7 @@ typedef void (*OH_AudioRenderer_OnFastStatusChange)(OH_AudioRenderer* renderer, 
 | --- | --- |
 | [OH_AudioRenderer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiorendererstruct)* renderer | 指向[OH_AudioStreamBuilder_GenerateRenderer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostreambuilder-h#oh_audiostreambuilder_generaterenderer)创建的音频流实例。 |
 | void* userData | 指向应用自定义的数据存储区域。 |
-| [OH_AudioStream_FastStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_faststatus) status | 返回当前低时延状态。 |
+| [OH_AudioStream_FastStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_faststatus) status | 表示当前低时延状态。 |
 
 #### [h2]OH_AudioRenderer_SetLoudnessGain()
 
@@ -1046,7 +1050,7 @@ typedef int32_t (*OH_AudioRenderer_OnWriteDataCallbackAdvanced)(OH_AudioRenderer
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 应用实际填充有效音频数据的长度。返回值必须在[0, audioDataSize]范围内。 如果返回值小于0，系统将调整为0。 并且，如果返回值大于audioDataSize，系统将其调整到audioDataSize。 注意返回值必须是单个采样点大小的整数倍。 比如，双声道s16格式的音频数据，必须是4(2 * 16 / 8)的整数倍。 否则，可能造成播放杂音。 |
+| int32_t | 应用实际填充有效音频数据的长度。返回值必须在[0, audioDataSize]范围内。 如果返回值小于0，系统将调整为0。 并且，如果返回值大于audioDataSize，系统将其调整到audioDataSize。 注意返回值必须是单个采样点大小的整数倍。 比如，双声道S16格式的音频数据，必须是4(2 * 16 / 8)的整数倍。 否则，可能造成播放杂音。 |
 
 #### [h2]OH_AudioRenderer_GetLatency()
 

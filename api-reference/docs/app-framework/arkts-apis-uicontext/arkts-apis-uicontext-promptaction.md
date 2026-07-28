@@ -2,8 +2,8 @@
 title: "Class (PromptAction)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-promptaction"
 catalog: "harmonyos-references"
-content_hash: "22c390b92504"
-synced_at: "2026-07-09T00:57:30.250516"
+content_hash: "036aa0edc050"
+synced_at: "2026-07-28T16:41:09.645265"
 ---
 
 # Class (PromptAction)
@@ -20,23 +20,23 @@ synced_at: "2026-07-09T00:57:30.250516"
 
 getTopOrder(): LevelOrder
 
-返回最顶层显示的弹窗的顺序。
-
-获取最顶层显示的弹窗的顺序，可以在下一个弹窗时指定期望的顺序。
+返回最顶层显示的弹窗的层级对象，可用于下一个弹窗的层级配置。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
+模型约束：此接口仅可在Stage模型下使用。
+
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| [LevelOrder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#levelorder18) | 返回弹窗层级信息。 |
+| [LevelOrder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#levelorder18) | 返回最顶层显示的弹窗的层级对象。 |
 
 示例：
 
-该示例通过调用getTopOrder接口，展示了获取最顶层显示弹窗顺序的功能。
+获取最顶层显示的弹窗层级值。
 
 ```
 import { ComponentContent, PromptAction, LevelOrder, promptAction, UIContext } from '@kit.ArkUI';
@@ -80,14 +80,14 @@ struct Index {
           .fontSize(20)
           .onClick(() => {
             this.promptAction.openCustomDialog(this.contentNode, this.baseDialogOptions)
-              .catch((err: BusinessError) => {
-                console.error("openCustomDialog error: " + err.code + " " + err.message);
-              })
               .then(() => {
                 let topOrder: LevelOrder = this.promptAction.getTopOrder();
                 if (topOrder !== undefined) {
-                  console.error('topOrder: ' + topOrder.getOrder());
+                  console.info('topOrder: ' + topOrder.getOrder());
                 }
+              })
+              .catch((err: BusinessError) => {
+                console.error(`openCustomDialog error code is ${err.code}, message is ${err.message}`);
               })
           })
       }.width('100%')
@@ -100,21 +100,23 @@ struct Index {
 
 getBottomOrder(): LevelOrder
 
-获取最底层显示的弹窗的顺序，可以在下一个弹窗时指定期望的顺序。
+返回最底层显示的弹窗的层级对象，可用于下一个弹窗的层级配置。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
+模型约束：此接口仅可在Stage模型下使用。
+
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| [LevelOrder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#levelorder18) | 返回弹窗层级信息。 |
+| [LevelOrder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#levelorder18) | 返回最底层显示的弹窗的层级对象。 |
 
 示例：
 
-该示例通过调用getBottomOrder接口，展示了获取最底层显示弹窗顺序的功能。
+获取最底层显示的弹窗层级值。
 
 ```
 import { ComponentContent, PromptAction, LevelOrder, promptAction, UIContext } from '@kit.ArkUI';
@@ -158,14 +160,14 @@ struct Index {
           .fontSize(20)
           .onClick(() => {
             this.promptAction.openCustomDialog(this.contentNode, this.baseDialogOptions)
-              .catch((err: BusinessError) => {
-                console.error("openCustomDialog error: " + err.code + " " + err.message);
-              })
               .then(() => {
                 let bottomOrder: LevelOrder = this.promptAction.getBottomOrder();
                 if (bottomOrder !== undefined) {
-                  console.error('bottomOrder: ' + bottomOrder.getOrder());
+                  console.info('bottomOrder: ' + bottomOrder.getOrder());
                 }
+              })
+              .catch((err: BusinessError) => {
+                console.error(`openCustomDialog error code is ${err.code}, message is ${err.message}`);
               })
           })
       }.width('100%')
@@ -178,23 +180,25 @@ struct Index {
 
 openToast(options: promptAction.ShowToastOptions): Promise<number>
 
-显示即时反馈。使用Promise异步回调返回即时反馈的id，可供closeToast使用。
+显示即时反馈。使用Promise异步回调返回即时反馈的唯一ID，可供closeToast使用。与showToast的区别：openToast为异步方法，返回的toastId可用于后续通过closeToast关闭；showToast为同步方法，不支持程序化关闭。如需在代码中控制Toast的关闭时机，请使用openToast；如仅需简单显示，可使用showToast。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
+模型约束：此接口仅可在Stage模型下使用。
+
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [promptAction.ShowToastOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#showtoastoptions) | 是 | Toast选项。 |
+| options | [promptAction.ShowToastOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#showtoastoptions) | 是 | Toast选项。用于配置Toast的显示内容和样式，包括message、duration等属性。 |
 
 返回值
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象。返回即时反馈的id，可供closeToast使用。 |
+| Promise | Promise对象。返回即时反馈的唯一ID，可供closeToast使用。 |
 
 错误码：
 
@@ -210,7 +214,7 @@ openToast(options: promptAction.ShowToastOptions): Promise<number>
 该示例通过调用openToast和closeToast接口，展示了弹出以及关闭Toast的功能。
 
 ```
-import { PromptAction } from '@kit.ArkUI';
+import { PromptAction, promptAction } from '@kit.ArkUI';
 import { BusinessError } from '@kit.BasicServicesKit';
 
 @Entry
@@ -227,6 +231,7 @@ struct Index {
           this.promptAction.openToast({
             message: 'Toast Message',
             duration: 10000,
+            showMode:promptAction.ToastShowMode.DEFAULT,
           }).then((toastId: number) => {
             this.toastId = toastId;
           })
@@ -261,11 +266,13 @@ closeToast(toastId: number): void
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
+模型约束：此接口仅可在Stage模型下使用。
+
 参数
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| toastId | number | 是 | openToast返回的id。 |
+| toastId | number | 是 | openToast返回的即时反馈id，用于标识特定的Toast，以便后续通过closeToast关闭。 |
 
 错误码：
 
@@ -279,7 +286,7 @@ closeToast(toastId: number): void
 
 示例：
 
-请参考[openToast18](#opentoast18)的示例。
+请参考[openToast18+](#opentoast18)的示例。
 
 #### showToast
 
@@ -291,11 +298,13 @@ showToast(options: promptAction.ShowToastOptions): void
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
+模型约束：此接口仅可在Stage模型下使用。
+
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [promptAction.ShowToastOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#showtoastoptions) | 是 | Toast选项。 |
+| options | [promptAction.ShowToastOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#showtoastoptions) | 是 | Toast选项。用于配置Toast的显示内容和样式，包括message、duration、systemMaterial等属性。 |
 
 错误码：
 
@@ -308,12 +317,12 @@ showToast(options: promptAction.ShowToastOptions): void
 
 示例：
 
-该示例通过showToast接口，并设置options参数中的systemMaterial属性，实现了Toast的系统材质视效。
+该示例通过设置options参数中的systemMaterial属性，实现了Toast的系统材质。
 
 从API版本26.0.0开始，参数options的类型[promptAction.ShowToastOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#showtoastoptions)中新增了systemMaterial属性。
 
 ```
-import { PromptAction, uiMaterial } from '@kit.ArkUI';
+import { PromptAction, promptAction, uiMaterial } from '@kit.ArkUI';
 import { BusinessError } from '@kit.BasicServicesKit';
 
 @Entry
@@ -330,7 +339,8 @@ struct Index {
             this.promptAction.showToast({
               message: 'Message Info',
               duration: 2000,
-              // 控制是否设置系统材质
+              showMode:promptAction.ToastShowMode.DEFAULT,
+              // 设置系统材质
               systemMaterial: new uiMaterial.ImmersiveMaterial({
                 style: uiMaterial.ImmersiveStyle.THIN
               })
@@ -352,11 +362,11 @@ struct Index {
 ```
  未设置系统材质时：
 
-![](./img/zh-cn_image_0000002631251378.gif)
+![](./img/zh-cn_image_0000002656006376.gif)
 
 设置系统材质后：
 
-![](./img/zh-cn_image_0000002661610563.gif)
+![](./img/zh-cn_image_0000002655846456.gif)
 
 #### showDialog
 
@@ -368,12 +378,14 @@ showDialog(options: promptAction.ShowDialogOptions, callback: AsyncCallback<prom
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
+模型约束：此接口仅可在Stage模型下使用。
+
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [promptAction.ShowDialogOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#showdialogoptions) | 是 | 页面显示对话框信息描述。 |
-| callback | AsyncCallback | 是 | 回调函数。弹出对话框成功，err为undefined，data为获取到的对话框响应结果，否则为错误对象。 |
+| options | [promptAction.ShowDialogOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#showdialogoptions) | 是 | 对话框选项。用于配置对话框的显示内容和样式，包括title、message、buttons等属性。 |
+| callback | [AsyncCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#asynccallback) | 是 | 回调函数。弹出对话框成功时，err为undefined，data为获取到的对话框响应结果；失败时，err为错误对象，data为undefined。 |
 
 错误码：
 
@@ -386,7 +398,7 @@ showDialog(options: promptAction.ShowDialogOptions, callback: AsyncCallback<prom
 
 示例：
 
-该示例通过调用showDialog接口，展示了弹出对话框以及返回对话框响应结果的功能。
+该示例通过调用showDialog接口，展示了弹出对话框并返回对话框响应结果的功能。
 
 ```
 import { PromptAction } from '@kit.ArkUI';
@@ -417,7 +429,7 @@ struct Index {
               ]
             }, (err, data) => {
               if (err) {
-                console.error('showDialog err: ' + err);
+                console.error(`showDialog err: ${err}`);
                 return;
               }
               console.info('showDialog success callback, click button: ' + data.index);
@@ -443,17 +455,19 @@ showDialog(options: promptAction.ShowDialogOptions): Promise<promptAction.ShowDi
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
+模型约束：此接口仅可在Stage模型下使用。
+
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [promptAction.ShowDialogOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#showdialogoptions) | 是 | 对话框选项。 |
+| options | [promptAction.ShowDialogOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#showdialogoptions) | 是 | 对话框选项。用于配置对话框的显示内容和样式，包括title、message、buttons等属性。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，返回对话框的响应结果。 |
+| Promise | Promise对象，返回对话框的响应结果，包含用户选择的按钮索引。 |
 
 错误码：
 
@@ -466,10 +480,11 @@ showDialog(options: promptAction.ShowDialogOptions): Promise<promptAction.ShowDi
 
 示例：
 
-该示例通过调用showDialog接口，展示了弹出对话框以及通过Promise获取对话框响应结果的功能。
+该示例通过调用showDialog接口，展示了弹出对话框并通过Promise获取对话框响应结果的功能。
 
 ```
 import { PromptAction } from '@kit.ArkUI';
+import { BusinessError } from '@kit.BasicServicesKit';
 
 @Entry
 @Component
@@ -497,8 +512,8 @@ struct Index {
             .then(data => {
               console.info('showDialog success, click button: ' + data.index);
             })
-            .catch((err: Error) => {
-              console.error('showDialog error: ' + err);
+            .catch((err: BusinessError) => {
+              console.error('showDialog error: ' + err.code + ' ' + err.message);
             })
         })
     }.height('100%').width('100%').justifyContent(FlexAlign.Center)
@@ -516,12 +531,14 @@ showActionMenu(options: promptAction.ActionMenuOptions, callback: AsyncCallback<
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
+模型约束：此接口仅可在Stage模型下使用。
+
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [promptAction.ActionMenuOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#actionmenuoptions) | 是 | 操作菜单选项。 |
-| callback | AsyncCallback | 是 | 回调函数。弹出操作菜单成功，err为undefined，data为获取到的操作菜单响应结果，否则为错误对象。 |
+| options | [promptAction.ActionMenuOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#actionmenuoptions) | 是 | 操作菜单选项。用于配置操作菜单的显示内容和样式，包括title、buttons等属性。 |
+| callback | [AsyncCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#asynccallback) | 是 | 回调函数。弹出操作菜单成功时，err为undefined，data为获取到的操作菜单响应结果；失败时，err为错误对象，data为undefined。 |
 
 错误码：
 
@@ -588,17 +605,19 @@ showActionMenu(options: promptAction.ActionMenuOptions): Promise<promptAction.Ac
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
+模型约束：此接口仅可在Stage模型下使用。
+
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [promptAction.ActionMenuOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#actionmenuoptions) | 是 | 操作菜单选项。 |
+| options | [promptAction.ActionMenuOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#actionmenuoptions) | 是 | 操作菜单选项。用于配置操作菜单的显示内容和样式，包括title、buttons等属性。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，返回菜单的响应结果。 |
+| Promise | Promise对象，返回菜单的响应结果，包含用户选择的菜单项索引。 |
 
 错误码：
 
@@ -611,10 +630,12 @@ showActionMenu(options: promptAction.ActionMenuOptions): Promise<promptAction.Ac
 
 示例：
 
-该示例通过调用showActionMenu接口，展示了弹出操作菜单以及通过Promise获取操作菜单响应结果的功能。
+该示例通过调用showActionMenu接口，展示了弹出操作菜单以及通过Promise获取响应结果的功能。
 
 ```
 import { PromptAction } from '@kit.ArkUI';
+import { BusinessError } from '@kit.BasicServicesKit';
+
 @Entry
 @Component
 struct Index {
@@ -640,8 +661,8 @@ struct Index {
             .then(data => {
               console.info('showActionMenu success, click button: ' + data.index);
             })
-            .catch((err: Error) => {
-              console.error('showActionMenu error: ' + err);
+            .catch((err: BusinessError) => {
+              console.error(`showActionMenu error code is ${err.code}, message is ${err.message}`);
             })
         })
     }.height('100%').width('100%').justifyContent(FlexAlign.Center)
@@ -659,12 +680,14 @@ openCustomDialog<T extends Object>(dialogContent: ComponentContent<T>, options?:
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
+模型约束：此接口仅可在Stage模型下使用。
+
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | dialogContent | [ComponentContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-componentcontent) | 是 | 自定义弹窗中显示的组件内容。 |
-| options | [promptAction.BaseDialogOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#basedialogoptions11) | 否 | 弹窗样式。 **说明：** 如果BaseDialogOptions中的[isModal](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#basedialogoptions11)与[showInSubWindow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#basedialogoptions11)同时设置为true，则只生效showInSubWindow = true，此时为非模态弹出框且不会显示蒙层，并在子窗口中显示。 |
+| options | [promptAction.BaseDialogOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#basedialogoptions11) | 否 | 弹窗样式。当需要自定义弹窗的对齐方式、偏移量、自动取消、蒙层颜色等属性时传入此参数，不传入时使用系统默认样式。 **说明：** 如果BaseDialogOptions中的[isModal](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#basedialogoptions11)与[showInSubWindow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#basedialogoptions11)同时设置为true，则以showInSubWindow的设置为准，在子窗口中显示，不显示蒙层。 |
 
 返回值：
 
@@ -684,7 +707,7 @@ openCustomDialog<T extends Object>(dialogContent: ComponentContent<T>, options?:
 
 示例：
 
-该示例通过监听[系统环境信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-configuration)（系统语言、深浅色等）的变化，调用[ComponentContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-componentcontent) 的[update](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode#update)和[updateConfiguration](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode#updateconfiguration12)实现自定义弹窗的数据更新及节点的全量刷新。
+该示例通过监听[@ohos.app.ability.Configuration (环境变量)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-configuration)（系统语言、深浅色等）的变化，调用[ComponentContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-componentcontent) 的[update](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode#update)和[updateConfiguration](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode#updateconfiguration12)实现自定义弹窗的数据更新及节点的全量刷新。
 
 ```
 import { ComponentContent } from '@kit.ArkUI';
@@ -765,6 +788,7 @@ struct Index {
               return
             }
             promptAction.closeCustomDialog(this.contentNode)
+            // 先关闭已存在的弹窗，再重新打开
             promptAction.openCustomDialog(this.contentNode).then(() => {
               console.info("succeeded")
             }).catch((error: BusinessError) => {
@@ -790,11 +814,13 @@ openCustomDialog(options: promptAction.CustomDialogOptions): Promise<number>
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
+模型约束：此接口仅可在Stage模型下使用。
+
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [promptAction.CustomDialogOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#customdialogoptions11) | 是 | 自定义弹窗的内容。 **说明：** 如果BaseDialogOptions中的[isModal](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#basedialogoptions11)与[showInSubWindow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#basedialogoptions11)同时设置为true，则只生效showInSubWindow = true，此时为非模态弹出框且不会显示蒙层，并在子窗口中显示。 |
+| options | [promptAction.CustomDialogOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#customdialogoptions11) | 是 | 自定义弹窗选项。用于设置自定义弹窗的内容、样式、位置等属性。 **说明：** 如果BaseDialogOptions中的[isModal](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#basedialogoptions11)与[showInSubWindow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#basedialogoptions11)同时设置为true，则以showInSubWindow的设置为准，在子窗口中显示，不显示蒙层。 |
 
 返回值：
 
@@ -898,13 +924,15 @@ openCustomDialogWithController<T extends Object>(dialogContent: ComponentContent
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
+模型约束：此接口仅可在Stage模型下使用。
+
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | dialogContent | [ComponentContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-componentcontent) | 是 | 自定义弹窗中显示的组件内容。 |
-| controller | [promptAction.DialogController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#dialogcontroller18) | 是 | 自定义弹窗的控制器。 |
-| options | [promptAction.BaseDialogOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#basedialogoptions11) | 否 | 自定义弹窗的样式。 **说明：** 如果BaseDialogOptions中的[isModal](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#basedialogoptions11)与[showInSubWindow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#basedialogoptions11)同时设置为true，则只生效showInSubWindow = true，此时为非模态弹出框且不会显示蒙层，并在子窗口中显示。 |
+| controller | [promptAction.DialogController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#dialogcontroller18) | 是 | 自定义弹窗的控制器，用于在弹窗外部控制其关闭和其他操作。 |
+| options | [promptAction.BaseDialogOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#basedialogoptions11) | 否 | 自定义弹窗的样式。当需要自定义弹窗的对齐方式、偏移量、自动取消、蒙层颜色等属性时传入此参数，不传入时使用系统默认样式。 **说明：** 如果BaseDialogOptions中的[isModal](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#basedialogoptions11)与[showInSubWindow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#basedialogoptions11)同时设置为true，则以showInSubWindow的设置为准，在子窗口中显示，不显示蒙层。 |
 
 返回值：
 
@@ -924,7 +952,7 @@ openCustomDialogWithController<T extends Object>(dialogContent: ComponentContent
 
 示例：
 
-该示例通过调用openCustomDialog接口，展示了支持传入弹窗控制器与自定义弹窗绑定的功能。
+通过openCustomDialogWithController接口传入弹窗控制器并与自定义弹窗绑定。
 
 ```
 import { BusinessError } from '@kit.BasicServicesKit';
@@ -998,12 +1026,14 @@ updateCustomDialog<T extends Object>(dialogContent: ComponentContent<T>, options
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
+模型约束：此接口仅可在Stage模型下使用。
+
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | dialogContent | [ComponentContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-componentcontent) | 是 | 自定义弹窗中显示的组件内容。 |
-| options | [promptAction.BaseDialogOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#basedialogoptions11) | 是 | 弹窗样式，目前仅支持更新alignment、offset、autoCancel、maskColor。 |
+| options | [promptAction.BaseDialogOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#basedialogoptions11) | 是 | 弹窗样式，目前仅支持更新alignment、offset、autoCancel、maskColor。传入时会将指定属性更新为新值，其他属性保持当前值。 |
 
 返回值：
 
@@ -1065,7 +1095,7 @@ struct Index {
                 console.info('succeeded');
               })
               .catch((error: BusinessError) => {
-                console.error(`updateCustomDialog args error code is ${error.code}, message is ${error.message}`);
+                console.error(`openCustomDialog args error code is ${error.code}, message is ${error.message}`);
               })
 
             setTimeout(() => {
@@ -1096,6 +1126,8 @@ closeCustomDialog<T extends Object>(dialogContent: ComponentContent<T>): Promise
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -1171,7 +1203,7 @@ struct Index {
                   console.info('succeeded');
                 })
                 .catch((error: BusinessError) => {
-                  console.error(`OpenCustomDialog args error code is ${error.code}, message is ${error.message}`);
+                  console.error(`CloseCustomDialog args error code is ${error.code}, message is ${error.message}`);
                 })
             }, 2000); // 2秒后自动关闭
           })
@@ -1188,17 +1220,19 @@ struct Index {
 
 closeCustomDialog(dialogId: number): void
 
-关闭自定义弹窗。
+关闭自定义弹窗。用于关闭openCustomDialog返回的指定id对应的自定义弹窗。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
+模型约束：此接口仅可在Stage模型下使用。
+
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| dialogId | number | 是 | openCustomDialog返回的对话框id。 |
+| dialogId | number | 是 | openCustomDialog返回的对话框id，用于标识特定的自定义弹窗，以便后续关闭。 |
 
 错误码：
 
@@ -1279,13 +1313,15 @@ presentCustomDialog(builder: CustomBuilder | CustomBuilderWithId, controller?: p
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
+模型约束：此接口仅可在Stage模型下使用。
+
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | builder | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | [CustomBuilderWithId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-t#custombuilderwithid18) | 是 | 自定义弹窗的内容。 |
-| controller | [promptAction.DialogController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#dialogcontroller18) | 否 | 自定义弹窗的控制器。 |
-| options | [promptAction.DialogOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#dialogoptions18) | 否 | 自定义弹窗的样式。 **说明：** 如果BaseDialogOptions中的[isModal](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#basedialogoptions11)与[showInSubWindow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#basedialogoptions11)同时设置为true，则只生效showInSubWindow = true，此时为非模态弹出框且不会显示蒙层，并在子窗口中显示。 |
+| controller | [promptAction.DialogController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#dialogcontroller18) | 否 | 自定义弹窗的控制器，用于在弹窗外部控制弹窗的关闭和其他操作。当需要在弹窗外部通过代码控制弹窗关闭或其他操作时传入此参数，不传入时表示不使用控制器。 |
+| options | [promptAction.DialogOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#dialogoptions18) | 否 | 自定义弹窗的样式。当需要自定义弹窗的对齐方式、偏移量、自动取消、蒙层颜色等属性时传入此参数，不传入时使用系统默认样式。 **说明：** 如果BaseDialogOptions中的[isModal](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#basedialogoptions11)与[showInSubWindow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#basedialogoptions11)同时设置为true，则以showInSubWindow的设置为准，在子窗口中显示，不显示蒙层。 |
 
 返回值：
 
@@ -1396,13 +1432,15 @@ openPopup<T extends Object>(content: ComponentContent<T>, target: TargetInfo, op
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
+模型约束：此接口仅可在Stage模型下使用。
+
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | content | [ComponentContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-componentcontent) | 是 | popup弹窗中显示的组件内容。 |
 | target | [TargetInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-i#targetinfo18) | 是 | 需要绑定组件的信息。 |
-| options | [PopupCommonOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-popup#popupcommonoptions18类型说明) | 否 | popup弹窗样式。 |
+| options | [PopupCommonOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-popup#popupcommonoptions18类型说明) | 否 | popup弹窗样式，用于自定义popup弹窗的外观和行为（如圆角、蒙层、箭头等）。不传入时使用系统默认样式。 |
 
 返回值：
 
@@ -1520,6 +1558,8 @@ updatePopup<T extends Object>(content: ComponentContent<T>, options: PopupCommon
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
+模型约束：此接口仅可在Stage模型下使用。
+
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
@@ -1557,6 +1597,8 @@ closePopup<T extends Object>(content: ComponentContent<T>): Promise<void>
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -1601,13 +1643,15 @@ openMenu<T extends Object>(content: ComponentContent<T>, target: TargetInfo, opt
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
+模型约束：此接口仅可在Stage模型下使用。
+
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | content | [ComponentContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-componentcontent) | 是 | menu弹窗中显示的组件内容。 |
 | target | [TargetInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-i#targetinfo18) | 是 | 需要绑定组件的信息。 |
-| options | [MenuOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#menuoptions10) | 否 | menu弹窗样式。 **说明：** title属性不生效。 preview参数仅支持设置MenuPreviewMode类型。 |
+| options | [MenuOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#menuoptions10) | 否 | menu弹窗样式，用于自定义menu弹窗的外观和行为。不传入时使用系统默认样式。 **说明：** title属性不生效。 preview参数仅支持设置MenuPreviewMode类型。 |
 
 返回值：
 
@@ -1695,13 +1739,15 @@ updateMenu<T extends Object>(content: ComponentContent<T>, options: MenuOptions,
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
+模型约束：此接口仅可在Stage模型下使用。
+
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | content | [ComponentContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-componentcontent) | 是 | menu弹窗中显示的组件内容。 |
-| options | [MenuOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#menuoptions10) | 是 | menu弹窗样式。 **说明：** 1. 不支持更新showInSubWindow、preview、previewAnimationOptions、transition、onAppear、aboutToAppear、onDisappear、aboutToDisappear、onWillAppear、onDidAppear、onWillDisappear和onDidDisappear。 2. 支持mask通过设置[MenuMaskType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#menumasktype20类型说明)实现更新蒙层样式，不支持mask通过设置boolean实现蒙层从无到有或者从有到无的更新。 |
-| partialUpdate | boolean | 否 | menu弹窗更新方式，默认值为false。 **说明：** 1. true为增量更新，保留当前值，更新options中的指定属性。 2. false为全量更新，除options中的指定属性，其他属性恢复默认值。 |
+| options | [MenuOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#menuoptions10) | 是 | menu弹窗样式。 **说明：** 1. 不支持更新showInSubWindow、preview、previewAnimationOptions、transition、onAppear、aboutToAppear、onDisappear、aboutToDisappear、onWillAppear、onDidAppear、onWillDisappear和onDidDisappear。 2. 支持mask通过设置[MenuMaskType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#menumasktype20类型说明)实现更新蒙层样式，不支持mask通过设置boolean实现蒙层从无到有或者从有到无的更新。 3. 除上述不支持更新的属性外，其他属性均支持更新。 |
+| partialUpdate | boolean | 否 | menu弹窗更新方式，默认值为false。 **说明：** 1. true为增量更新，保留当前值，更新options中的指定属性。 2. false为全量更新，此时更新options中的指定属性，并且其他属性恢复默认值。 |
 
 返回值：
 
@@ -1786,6 +1832,8 @@ closeMenu<T extends Object>(content: ComponentContent<T>): Promise<void>
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -1875,12 +1923,14 @@ showActionMenu(options: promptAction.ActionMenuOptions, callback: [promptAction.
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full。
 
+模型约束：此接口仅可在Stage模型下使用。
+
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [promptAction.ActionMenuOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#actionmenuoptions) | 是 | 操作菜单选项。 |
-| callback | [promptAction.ActionMenuSuccessResponse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#actionmenusuccessresponse) | 是 | 回调函数，返回菜单的响应结果。 |
+| options | [promptAction.ActionMenuOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#actionmenuoptions) | 是 | 操作菜单选项。用于配置操作菜单的显示内容和样式，包括title、buttons等属性。 |
+| callback | [promptAction.ActionMenuSuccessResponse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#actionmenusuccessresponse) | 是 | 菜单的响应结果。 |
 
 错误码：
 
@@ -1927,7 +1977,6 @@ struct Index {
             let code = (error as BusinessError).code;
             console.error(`showActionMenu args error code is ${code}, message is ${message}`);
           }
-          ;
         })
     }.height('100%').width('100%').justifyContent(FlexAlign.Center)
   }

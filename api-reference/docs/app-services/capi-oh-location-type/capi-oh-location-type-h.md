@@ -2,8 +2,8 @@
 title: "oh_location_type.h"
 upstream_id: "harmonyos-references/capi-oh-location-type-h"
 catalog: "harmonyos-references"
-content_hash: "3f50eb98efd7"
-synced_at: "2026-07-09T01:01:23.361218"
+content_hash: "2449d4370fa4"
+synced_at: "2026-07-28T16:52:42.116624"
 ---
 
 # oh_location_type.h
@@ -45,6 +45,7 @@ synced_at: "2026-07-09T01:01:23.361218"
 
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
+| [bool OH_LocationInfo_IsFromMock(Location_Info* location)](#oh_locationinfo_isfrommock) | - | 判断定位信息是否来自模拟位置功能。 **起始版本：** 26.0.0 |
 | [Location_BasicInfo OH_LocationInfo_GetBasicInfo(Location_Info* location)](#oh_locationinfo_getbasicinfo) | - | 获取位置基本信息。 |
 | [Location_ResultCode OH_LocationInfo_GetAdditionalInfo(Location_Info* location, char* additionalInfo, uint32_t length)](#oh_locationinfo_getadditionalinfo) | - | 获取位置信息中的附加信息。 |
 | [typedef void (*Location_InfoCallback)(Location_Info* location, void* userData)](#location_infocallback) | Location_InfoCallback | 用于接收位置上报的回调函数。 |
@@ -131,6 +132,29 @@ enum Location_SourceType
 | LOCATION_SOURCE_TYPE_RTK = 4 | 表示定位结果来自于室外高精度定位技术。 |
 
 #### 函数说明
+
+#### [h2]OH_LocationInfo_IsFromMock()
+
+```
+bool OH_LocationInfo_IsFromMock(Location_Info* location)
+```
+ 描述
+
+判断定位信息是否来自模拟位置功能。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [Location_Info](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-location-location-info)* location | 指向位置信息结构体的指针。 需要传入非空指针，该指针可以在[Location_InfoCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-location-type-h#location_infocallback)中获取。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| bool | 返回bool类型的结果，用于指示该位置是否来自模拟位置功能。 如果值为 true，表示该位置来自模拟位置功能；如果值为false，表示该位置源自系统的真实定位结果。 |
 
 #### [h2]OH_LocationInfo_GetBasicInfo()
 

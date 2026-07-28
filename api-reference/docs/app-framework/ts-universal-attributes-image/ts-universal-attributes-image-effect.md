@@ -2,8 +2,8 @@
 title: "图像效果"
 upstream_id: "harmonyos-references/ts-universal-attributes-image-effect"
 catalog: "harmonyos-references"
-content_hash: "3ad3e3ccfc60"
-synced_at: "2026-07-09T17:23:35.408484"
+content_hash: "bdfb8d1cfaec"
+synced_at: "2026-07-28T16:42:14.157476"
 ---
 
 # 图像效果
@@ -284,7 +284,7 @@ saturate(saturate: Optional<number>): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| saturate | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 为当前组件添加饱和度效果，饱和度为颜色中的含色成分和消色成分(灰)的比例，入参为1时，显示原图像，大于1时含色成分越大，饱和度越大，小于1时消色成分越大，饱和度越小。 推荐取值范围：[0, 50) **说明：** 设置小于0的值时，按值为0处理。 当saturate的值为undefined时。恢复为饱和度为1的效果。 |
+| saturate | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 为当前组件添加饱和度效果，饱和度为颜色中的含色成分和消色成分(灰)的比例，入参为1时，显示原图像，大于1时含色成分越大，饱和度越大，小于1时消色成分越大，饱和度越小。 推荐取值范围：[0, 50) **说明：** 设置小于0的值时，按值为0处理。 当saturate的值为undefined时，恢复为饱和度为1的效果。 |
 
 返回值：
 
@@ -384,7 +384,7 @@ invert(options: Optional<number | InvertOptions>): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 反转输入的图像。 入参对象为number时。入参为图像反转的比例，值为1时完全反转，值为0则图像无变化。 取值范围：[0, 1]。 设置小于0的值时，按值为0处理。设置大于1的值时，按值为1处理。 入参对象为 InvertOptions时，对比背景颜色灰度值和阈值区间，背景颜色灰度值小于阈值区间时反色取high值，当背景颜色灰度值大于阈值区间时反色取low值，背景颜色灰度值在阈值区间内取值由high线性渐变到low。 当options的值为undefined时，恢复为图像无变化的效果。 **说明：** number和InvertOptions两种形式的入参对应不同的反转效果。两种类型的入参切换时，不会清除之前已设置的反转效果，两种反转效果会同时存在，建议始终使用同一种形式的入参。 |
+| options | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 反转输入的图像。 入参对象为number时，入参为图像反转的比例，值为1时完全反转，值为0则图像无变化。 取值范围：[0, 1]。 设置小于0的值时，按值为0处理。设置大于1的值时，按值为1处理。 入参对象为 InvertOptions时，对比背景颜色灰度值和阈值区间，背景颜色灰度值小于阈值区间时反色取high值，当背景颜色灰度值大于阈值区间时反色取low值，背景颜色灰度值在阈值区间内取值由high线性渐变到low。 当options的值为undefined时，恢复为图像无变化的效果。 **说明：** number和InvertOptions两种形式的入参对应不同的反转效果。两种类型的入参切换时，不会清除之前已设置的反转效果，两种反转效果会同时存在，建议始终使用同一种形式的入参。 |
 
 返回值：
 
@@ -458,7 +458,7 @@ hueRotate(value: number | string): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | string | 是 | 色相旋转效果，输入参数为旋转角度。 取值范围：(-∞, +∞) **说明：** 色调旋转360度会显示原始颜色。先将色调旋转180 度，然后再旋转-180度会显示原始颜色。数据类型为number时，值为90和'90deg'效果一致。 |
+| value | number | string | 是 | 色相旋转效果，输入参数为旋转角度。 单位：度（°） 取值范围：(-∞, +∞) **说明：** 色调旋转360度会显示原始颜色。先将色调旋转180 度，然后再旋转-180度会显示原始颜色。数据类型为number时，值为90和'90deg'效果一致。 |
 
 返回值：
 
@@ -484,7 +484,7 @@ hueRotate(rotation: Optional<number | string>): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| rotation | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 色相旋转效果，输入参数为旋转角度。 取值范围：(-∞, +∞) string需为数值字符串类型。 **说明：** 色调旋转360度会显示原始颜色。先将色调旋转180 度，然后再旋转-180度会显示原始颜色。数据类型为number时，值为90和'90deg'效果一致。 当rotation的值为undefined时，恢复为无色相旋转的效果。 |
+| rotation | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 色相旋转效果，输入参数为旋转角度。 取值范围：(-∞, +∞) string需为数值字符串类型。 **说明：** 色相旋转360度会显示原始颜色。先将色相旋转180 度，然后再旋转-180度会显示原始颜色。数据类型为number时，值为90和'90deg'效果一致。 当rotation的值为undefined时，恢复为无色相旋转的效果。 |
 
 返回值：
 
@@ -861,7 +861,7 @@ lightUpEffect(degree: Optional<number>): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| degree | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 设置组件图像亮起程度。 取值范围：[0,1]。 如果value等于0则图像为全黑，如果value等于1则图像为全亮效果。0到1之间数值越大，表示图像亮度越高。degree 1为异常情况，degree 1按1处理。 当degree的值为undefined时，恢复为亮起为1的效果。 |
+| degree | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 设置组件图像亮起程度。 取值范围：[0,1]。 如果degree等于0则图像为全黑，如果degree等于1则图像为全亮效果。0到1之间数值越大，表示图像亮度越高。degree 1为异常情况，degree 1按1处理。 当degree的值为undefined时，恢复为亮起为1的效果。 |
 
 返回值：
 
@@ -977,7 +977,7 @@ systemBarEffect(): T
 | --- | --- | --- | --- | --- |
 | radius | number | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 否 | 阴影模糊半径。 取值范围：[0, +∞)，API版本26.0.0开始取值范围变更为(-∞, +∞) 单位：px **说明：** API版本26.0.0之前，设置小于0的值时，按值为0处理，此时不绘制阴影；从API版本26.0.0开始，设置的值即为最终取值，值为0时仍绘制阴影，设置负数值时不绘制阴影。 如需使用vp单位的数值可用[vp2px](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#vp2px12)进行转换。 如果radius为Resource类型，则传入的值需为number类型。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 |
 | type10+ | [ShadowType](#shadowtype10枚举说明) | 否 | 是 | 阴影类型。 默认值：COLOR **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| color | [Color](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#color) | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource)| [ColoringStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#coloringstrategy10)11+ | 否 | 是 | 阴影的颜色。 默认为黑色。 **说明：** 从API version 11开始，该接口支持使用ColoringStrategy实现智能取色，智能取色功能不支持在ArkTS卡片、[textShadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#textshadow10)中使用。 当前仅支持平均取色和主色取色，智能取色区域为shadow绘制区域。 支持使用'average'字符串触发智能平均取色模式，支持使用'primary'字符串触发智能主色模式。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 |
+| color | [Color](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#color) | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | [ColoringStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#coloringstrategy10)11+ | 否 | 是 | 阴影的颜色。 默认为黑色。 **说明：** 从API version 11开始，该接口支持使用ColoringStrategy实现智能取色，智能取色功能不支持在ArkTS卡片、[textShadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#textshadow10)中使用。 当前仅支持平均取色和主色取色，智能取色区域为shadow绘制区域。 支持使用'average'字符串触发智能平均取色模式，支持使用'primary'字符串触发智能主色模式。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 |
 | offsetX | number | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 是 | 阴影的X轴偏移量。 默认值：0 单位：px **说明：** 如需使用vp单位的数值可用[vp2px](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#vp2px12)进行转换。 如果offsetX为Resource类型，则传入的值需为number类型。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 |
 | offsetY | number | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 是 | 阴影的Y轴偏移量。 默认值：0 单位：px **说明：** 如需使用vp单位的数值可用[vp2px](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#vp2px12)进行转换。 如果offsetY为Resource类型，则传入的值需为number类型。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 |
 | fill11+ | boolean | 否 | 是 | 阴影是否内部填充。true表示阴影在内部填充，false表示阴影在外部填充。 默认值：false。 **说明：** [textShadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#textshadow10)中该字段不生效。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
@@ -1091,7 +1091,7 @@ type FractionStop = [ number, number ]
 | --- | --- | --- | --- | --- |
 | low | number | 否 | 否 | 背景颜色灰度值大于阈值区间时的取值。 取值范围：[0, 1] |
 | high | number | 否 | 否 | 背景颜色灰度值小于阈值区间时的取值。 取值范围：[0, 1] |
-| threshold | number | 否 | 否 | 灰度阈值。 取值范围：[0, 1] |
+| threshold | number | 否 | 否 | 灰度阈值。与thresholdRange配合使用，灰度阈值上下偏移thresholdRange构成阈值区间。 取值范围：[0, 1] |
 | thresholdRange | number | 否 | 否 | 阈值范围。 取值范围：[0, 1] **说明：** 灰度阈值上下偏移thresholdRange构成阈值区间，背景颜色灰度值在区间内取值由high线性渐变到low。 |
 
 #### BackgroundImageOptions18+
@@ -1220,6 +1220,34 @@ type SystemUiMaterial = import('../api/@ohos.arkui.uiMaterial').default.Material
 | --- | --- |
 | import('../api/@ohos.arkui.uiMaterial').default.[Material](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#material) | 系统材质对象基类。 |
 
+#### doubleSided
+
+doubleSided(value: Optional<boolean>): T
+
+是否绘制组件的双面。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+卡片能力： 从API版本26.0.0开始，该接口支持在ArkTS卡片中使用。
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| value | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 是否绘制组件的双面。 设置为true表示组件的正面和背面都是可见的。 设置为false表示组件的正面是可见的，旋转时组件的背面是不可见的。 设置为undefined时效果和设置为true时保持一致，默认开启双面绘制。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| T | 返回当前组件。 |
+
 #### 示例
 
 #### [h2]示例1（设置图片不同属性效果）
@@ -1313,7 +1341,7 @@ struct ImageEffectsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664329519.png)
+ ![](./img/zh-cn_image_0000002686087797.png)
 
 #### [h2]示例2（设置组件线性渐变模糊效果）
 
@@ -1342,7 +1370,7 @@ struct ImageExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002633850408.png)
+ ![](./img/zh-cn_image_0000002685927969.png)
 
 #### [h2]示例3（设置离屏渲染效果）
 
@@ -1394,7 +1422,7 @@ struct RenderGroupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002634010312.png)
+ ![](./img/zh-cn_image_0000002656008290.png)
 
 #### [h2]示例4（当前组件内容与下方画布内容混合）
 
@@ -1436,7 +1464,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664209461.png)
+ ![](./img/zh-cn_image_0000002655848370.png)
 
 #### [h2]示例5（前景智能取反色）
 
@@ -1475,7 +1503,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664329521.png)
+ ![](./img/zh-cn_image_0000002686087799.png)
 
 #### [h2]示例6（设置同层阴影不重叠效果）
 
@@ -1570,7 +1598,7 @@ struct UseShadowBatchingExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002633850410.png)
+ ![](./img/zh-cn_image_0000002685927971.png)
 
 #### [h2]示例7（设置组件图像球面效果）
 
@@ -1602,11 +1630,11 @@ struct SphericalEffectExample {
 ```
  效果图如下：
 
-![](./img/zh-cn_image_0000002634010314.png)
+![](./img/zh-cn_image_0000002656008292.png)
 
 去掉sphericalEffect的设置，效果如下：
 
-![](./img/zh-cn_image_0000002664209463.png)
+![](./img/zh-cn_image_0000002655848372.png)
 
 #### [h2]示例8（设置组件图像渐亮效果）
 
@@ -1632,15 +1660,15 @@ struct LightUpExample {
 ```
  效果图如下：
 
-![](./img/zh-cn_image_0000002664329523.png)
+![](./img/zh-cn_image_0000002686087801.png)
 
 修改lightUpEffect参数值为0.2：
 
-![](./img/zh-cn_image_0000002633850412.png)
+![](./img/zh-cn_image_0000002685927973.png)
 
 去掉lightUpEffect的设置，效果如下：
 
-![](./img/zh-cn_image_0000002634010316.png)
+![](./img/zh-cn_image_0000002656008294.png)
 
 #### [h2]示例9（设置组件图像边缘像素扩展效果）
 
@@ -1672,11 +1700,11 @@ struct PixelStretchExample {
 ```
  效果图如下：
 
-![](./img/zh-cn_image_0000002664209465.png)
+![](./img/zh-cn_image_0000002655848374.png)
 
 去掉pixelStretchEffect的设置，原图效果如下：
 
-![](./img/zh-cn_image_0000002664329525.png)
+![](./img/zh-cn_image_0000002686087803.png)
 
 #### [h2]示例10（系统导航条智能反色）
 
@@ -1705,4 +1733,67 @@ struct Index {
 ```
  效果图如下：
 
-![](./img/zh-cn_image_0000002633850414.png)
+![](./img/zh-cn_image_0000002685927975.png)
+
+#### [h2]示例11（设置组件是否双面绘制）
+
+该示例主要演示通过[doubleSided](#doublesided)来设置组件是否双面绘制。
+
+从API版本26.0.0开始，新增doubleSided方法。
+
+```
+// xxx.ets
+@Entry
+@Component
+struct DoubleSided {
+  @State angleY: number = 0;
+  @State isAnimating: boolean = false;
+  @State isDoubleSided: boolean = true;
+  build() {
+    Column({space: 30}) {
+      Text('DoubleSided 背面剔除验证')
+        .fontSize(24)
+        .fontWeight(FontWeight.Bold)
+        .fontColor(Color.White)
+      Stack() {
+        Stack() {
+          Text('FRONT')
+            .fontSize(32)
+            .fontColor(Color.White)
+        }
+        .width(300)
+        .height(300)
+        .backgroundColor(Color.Blue)
+        .border({ width: 2, color: Color.Gray })
+        .doubleSided(this.isDoubleSided)
+        .rotate({ x: 0, y: 1, z: 0, angle: this.angleY})
+      }
+      .width(300)
+      .height(300)
+      Text(`Y轴旋转： ${Math.round(this.angleY)}°`)
+        .fontSize(16)
+        .fontColor(Color.White)
+      Button(this.isAnimating ? '复原' : '翻转')
+        .onClick(() => {
+          if (this.isAnimating) {
+            this.angleY = 0
+            this.isAnimating = false
+          } else {
+            this.isAnimating = true
+            this.angleY = 180
+          }
+        })
+      Button(`doubleSided: ${this.isDoubleSided ? 'true (双面)' : 'false (单面)'}`)
+        .backgroundColor(this.isDoubleSided ? '#4CAF50' : '#F44336')
+        .onClick(() => {
+          this.isDoubleSided = !this.isDoubleSided
+        })
+    }
+    .width('100%')
+    .height('100%')
+    .justifyContent(FlexAlign.Center)
+    .backgroundColor('#1a1a1a')
+  }
+}
+```
+ ![](./img/zh-cn_image_0000002656008296.gif)

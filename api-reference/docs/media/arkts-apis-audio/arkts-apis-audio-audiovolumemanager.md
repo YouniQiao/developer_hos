@@ -2,8 +2,8 @@
 title: "Interface (AudioVolumeManager)"
 upstream_id: "harmonyos-references/arkts-apis-audio-audiovolumemanager"
 catalog: "harmonyos-references"
-content_hash: "51aaef6e8056"
-synced_at: "2026-07-09T01:00:08.796691"
+content_hash: "e1d044527323"
+synced_at: "2026-07-28T16:51:26.113709"
 ---
 
 # Interface (AudioVolumeManager)
@@ -580,11 +580,10 @@ import { audio } from '@kit.AudioKit'
 
 try {
   let volumeInDb : number = audio.getAudioManager().getVolumeManager().getVolumeInUnitOfDbByStream(audio.StreamUsage.STREAM_USAGE_MUSIC, 5, audio.DeviceType.SPEAKER);
-  console.info(`Gets the volume db value that system calculate by volume stream, volume level and device type.
- success.`);
+  console.info('Succeeded in getting volume in unit of db by stream.');
 } catch (err) {
   let error = err as BusinessError;
-  console.error(`Failed to gets the volume db value that system calculate by volume stream, volume level and device type., error: ${error}`);
+  console.error(`Failed to get volume in unit of db by stream. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 

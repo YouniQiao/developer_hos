@@ -2,8 +2,8 @@
 title: "Http_PerformanceTiming"
 upstream_id: "harmonyos-references/capi-netstack-http-performancetiming"
 catalog: "harmonyos-references"
-content_hash: "b8a354585851"
-synced_at: "2026-07-09T00:59:30.509348"
+content_hash: "d7fd56960e1f"
+synced_at: "2026-07-28T16:50:46.427040"
 ---
 
 # Http_PerformanceTiming
@@ -28,10 +28,10 @@ HTTP响应时间信息，会在[Http_Response](https://developer.huawei.com/cons
 
 | 名称 | 描述 |
 | --- | --- |
-| double dnsTiming | 从request请求到DNS解析完成的耗时，包含域名解析，TCP连接等流程耗时。 |
-| double tcpTiming | 从request请求到TCP连接完成的耗时。 |
-| double tlsTiming | 从request请求到TLS连接完成的耗时。 |
-| double firstSendTiming | 从request请求到开始发送第一个字节的耗时。 |
-| double firstReceiveTiming | 从request请求到接收到第一个字节的耗时。 |
-| double totalFinishTiming | 从request请求到完成请求的耗时。 |
-| double redirectTiming | 从request请求到完成所有重定向步骤的耗时。 |
+| double dnsTiming | 从request请求到DNS解析完成的耗时，包含域名解析，TCP连接等流程耗时。单位：ms。 |
+| double tcpTiming | 从request请求到TCP连接完成的耗时。单位：ms。 |
+| double tlsTiming | 从request请求到TLS连接完成的耗时。单位：ms。 |
+| double firstSendTiming | 从request请求到开始发送第一个字节的耗时。单位：ms。 |
+| double firstReceiveTiming | 从request请求到接收到第一个字节的耗时。单位：ms。 |
+| double totalFinishTiming | 从request请求到完成请求的耗时。单位：ms。 |
+| double redirectTiming | 从request请求到完成所有重定向步骤的耗时。单位：ms。 |

@@ -2,8 +2,8 @@
 title: "Functions"
 upstream_id: "harmonyos-references/arkts-apis-data-relationalstore-f"
 catalog: "harmonyos-references"
-content_hash: "aea4d25de189"
-synced_at: "2026-07-09T00:57:15.753830"
+content_hash: "a94b8ceea559"
+synced_at: "2026-07-28T16:40:49.090075"
 ---
 
 # Functions
@@ -53,17 +53,17 @@ getRdbStore支持多线程并发操作。
 | 14800000 | Inner error. |
 | 14800010 | Failed to open or delete the database by an invalid database path. |
 | 14800011 | The current operation failed because the database is corrupted. |
-| 14801001 | The operation is supported in the stage model only. |
-| 14801002 | Invalid data group ID. |
-| 14800017 | StoreConfig is changed. |
-| 14800020 | The secret key is corrupted or lost. |
-| 14800021 | SQLite: Generic error. |
-| 14800022 | SQLite: Callback routine requested an abort. |
-| 14800023 | SQLite: Access permission denied. |
-| 14800027 | SQLite: Attempt to write a readonly database. |
-| 14800028 | SQLite: Some kind of disk I/O error occurred. |
-| 14800029 | SQLite: The database is full. |
-| 14800030 | SQLite: Unable to open the database file. |
+| 14801001 | The operation is supported in the stage model only. 适用版本：10+ |
+| 14801002 | Invalid data group ID. 适用版本：10+ |
+| 14800017 | StoreConfig is changed. 适用版本：12+ |
+| 14800020 | The secret key is corrupted or lost. 适用版本：14+ |
+| 14800021 | SQLite: Generic error. 适用版本：12+ |
+| 14800022 | SQLite: Callback routine requested an abort. 适用版本：12+ |
+| 14800023 | SQLite: Access permission denied. 适用版本：12+ |
+| 14800027 | SQLite: Attempt to write a readonly database. 适用版本：12+ |
+| 14800028 | SQLite: Some kind of disk I/O error occurred. 适用版本：12+ |
+| 14800029 | SQLite: The database is full. 适用版本：12+ |
+| 14800030 | SQLite: Unable to open the database file. 适用版本：12+ |
 
 示例：
 
@@ -162,17 +162,17 @@ getRdbStore支持多线程并发操作。
 | 14800000 | Inner error. |
 | 14800010 | Failed to open or delete the database by an invalid database path. |
 | 14800011 | The current operation failed because the database is corrupted. |
-| 14801001 | The operation is supported in the stage model only. |
-| 14801002 | Invalid data group ID. |
-| 14800017 | StoreConfig is changed. |
-| 14800020 | The secret key is corrupted or lost. |
-| 14800021 | SQLite: Generic error. |
-| 14800022 | SQLite: Callback routine requested an abort. |
-| 14800023 | SQLite: Access permission denied. |
-| 14800027 | SQLite: Attempt to write a readonly database. |
-| 14800028 | SQLite: Some kind of disk I/O error occurred. |
-| 14800029 | SQLite: The database is full. |
-| 14800030 | SQLite: Unable to open the database file. |
+| 14801001 | The operation is supported in the stage model only. 适用版本：10+ |
+| 14801002 | Invalid data group ID. 适用版本：10+ |
+| 14800017 | StoreConfig is changed. 适用版本：12+ |
+| 14800020 | The secret key is corrupted or lost. 适用版本：14+ |
+| 14800021 | SQLite: Generic error. 适用版本：12+ |
+| 14800022 | SQLite: Callback routine requested an abort. 适用版本：14+ |
+| 14800023 | SQLite: Access permission denied. 适用版本：14+ |
+| 14800027 | SQLite: Attempt to write a readonly database. 适用版本：12+ |
+| 14800028 | SQLite: Some kind of disk I/O error occurred. 适用版本：12+ |
+| 14800029 | SQLite: The database is full. 适用版本：12+ |
+| 14800030 | SQLite: Unable to open the database file. 适用版本：12+ |
 
 示例：
 
@@ -562,7 +562,7 @@ deleteRdbStore(context: Context, config: StoreConfig): Promise<void>
 | **错误码ID** | **错误信息** |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 801 | Capability not supported. |
+| 801 | Capability not supported. 适用版本：12+ |
 | 14800000 | Inner error. |
 | 14800010 | Failed to open or delete the database by an invalid database path. |
 | 14801001 | The operation is supported in the stage model only. |

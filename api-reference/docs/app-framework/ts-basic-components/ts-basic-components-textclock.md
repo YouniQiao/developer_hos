@@ -2,17 +2,17 @@
 title: "TextClock"
 upstream_id: "harmonyos-references/ts-basic-components-textclock"
 catalog: "harmonyos-references"
-content_hash: "ea9da9c1780a"
-synced_at: "2026-07-09T17:24:33.621117"
+content_hash: "358fd23b6bed"
+synced_at: "2026-07-28T16:46:19.248839"
 ---
 
 # TextClock
 
-TextClock组件通过文本将当前系统时间显示在设备上。支持不同时区的时间显示，最高精度到秒级。
+TextClock组件通过文本将当前系统时间显示在设备上，支持不同时区的时间显示和时间格式自定义，最高精度到秒级。适用于需要在应用界面上实时展示系统时间、支持多时区显示的场景，可帮助开发者快速实现时间文本展示功能，无需手动计算和更新时间。
 
 组件不可见时，时间变动将停止。组件的可见状态基于[onVisibleAreaChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-component-visible-area-change-event#onvisibleareachange)处理，可见阈值ratios大于0即视为可见状态。
 
-![](./img/note_3.0-zh-cn.png) 该组件从API version 8开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+![](./img/note_3.0-zh-cn.png) 该组件从API version 8开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
 #### 子组件
 
@@ -32,7 +32,7 @@ TextClock(options?: TextClockOptions)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [TextClockOptions](#textclockoptions18对象说明) | 否 | 通过文本显示当前系统时间的组件参数。 |
+| options | [TextClockOptions](#textclockoptions18对象说明) | 否 | 通过文本显示当前系统时间的组件参数。不传入时使用默认配置，各属性默认值详见TextClockOptions。 |
 
 #### TextClockOptions18+对象说明
 
@@ -50,8 +50,8 @@ TextClock(options?: TextClockOptions)
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| timeZoneOffset8+ | number | 否 | 是 | 设置时区偏移量。 取值范围为[-14, 12]，表示东十二区到西十二区，其中负值表示东时区，正值表示西时区，比如东八区为-8。设置值为该取值范围内的浮点数时会进行取整，舍弃小数部分。 对横跨国际日界线的国家或地区，用-13（UTC+13）和-14（UTC+14）来保证整个国家或者区域处在相同的时间，当设置的值不在取值范围内时，将使用当前系统的时区偏移量。 默认值：当前系统的时区偏移量 设置值为{ 9.5, 3.5, -3.5, -4.5, -5.5, -5.75, -6.5, -9.5, -10.5, -12.75 }集合中的浮点数时不进行取整。 **卡片能力：** 从API version 11开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| controller8+ | [TextClockController](#textclockcontroller) | 否 | 是 | 绑定一个控制器，用来控制文本时钟的状态。 **卡片能力：** 从API version 11开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| timeZoneOffset8+ | number | 否 | 是 | 设置时区偏移量，单位：小时。 取值范围为[-14, 12]，表示东十二区到西十二区，其中负值表示东时区，正值表示西时区，比如东八区为-8。设置值为该取值范围内的浮点数时会进行取整，舍弃小数部分。 对横跨国际日界线的国家或地区，用-13（UTC+13）和-14（UTC+14）来保证整个国家或者区域处在相同的时间，当设置的值不在取值范围内时，将使用当前系统的时区偏移量。 默认值：当前系统的时区偏移量 设置值为{ 9.5, 3.5, -3.5, -4.5, -5.5, -5.75, -6.5, -9.5, -10.5, -12.75 }集合中的浮点数时不进行取整。 **卡片能力：** 从API version 11开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| controller8+ | [TextClockController](#textclockcontroller) | 否 | 是 | 绑定一个控制器，用来控制文本时钟的状态。当需要通过代码控制时钟的启动与停止时传入此参数；不传入时，时钟仍会正常运行显示，但无法通过代码控制启停。 **卡片能力：** 从API version 11开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 
 #### 属性
 
@@ -71,7 +71,9 @@ d：日（若想使用01日则使用dd）
 
 E：星期（若想使用星期六则使用EEEE，若想使用周六则使用E、EE、EEE）
 
-H：小时（24小时制） h：小时（12小时制）
+H：小时（24小时制）
+
+h：小时（12小时制）
 
 m：分钟
 
@@ -95,7 +97,7 @@ a：上午/下午（当设置小时制式为H时，该参数不生效）
 
 卡片中默认值：12小时制：hh:mm，24小时制：HH:mm 。
 
-卡片中使用时，最小时间单位为分钟。如果设置格式中有秒或厘秒按默认值处理。
+卡片中使用时，最小时间单位为分钟。如果设置格式中有秒或厘秒，则按默认值处理。
 
 卡片能力： 从API version 11开始，该接口支持在ArkTS卡片中使用。
 
@@ -159,7 +161,7 @@ fontColor(value: ResourceColor)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 是 | 字体颜色。 Wearable设备上默认值：'#c5ffffff'，其他设备默认值：'e6182431' |
+| value | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 是 | 字体颜色。 Wearable设备上默认值：'#c5ffffff'，其他设备默认值：'#e6182431' |
 
 #### [h2]fontSize
 
@@ -177,7 +179,7 @@ fontSize(value: Length)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 是 | 字体大小。fontSize为number类型时，使用fp单位。字体默认大小16fp。不支持设置百分比字符串。 |
+| value | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 是 | 字体大小。fontSize为number类型时，使用fp单位。 字体默认大小16fp。不支持设置百分比字符串，传入百分比字符串时使用默认值。 |
 
 #### [h2]fontStyle
 
@@ -213,7 +215,7 @@ fontWeight(value: number | FontWeight | string)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | string | 是 | 文本的字体粗细，number类型取值范围为[100, 900]，取值间隔为100，取值越大，字体越粗。number类型取值范围外的默认值为400。string类型仅支持number类型取值的字符串形式，例如"400"，以及"bold"、"bolder"、"lighter"、"regular"、"medium"，分别对应FontWeight中相应的枚举值。 默认值：FontWeight.Normal |
+| value | number | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | string | 是 | 文本的字体粗细，number类型取值范围为[100, 900]，取值间隔为100，取值越大，字体越粗。number类型取值范围外的默认值为400。string类型支持：number类型取值的字符串形式（如400），以及枚举值'lighter'（对应300）、'regular'（对应400）、'medium'（对应500）、'bold'（对应700）、'bolder'（对应900），分别对应FontWeight中相应的枚举值。 默认值：FontWeight.Normal |
 
 #### [h2]fontFamily
 
@@ -237,7 +239,7 @@ fontFamily(value: ResourceStr)
 
 textShadow(value: ShadowOptions | Array<ShadowOptions>)
 
-设置文字阴影效果。该接口支持以数组形式入参，实现多重文字阴影。不支持fill字段, 不支持智能取色模式。
+设置文字阴影效果。该接口支持以数组形式入参，实现多重文字阴影。不支持fill字段和智能取色模式。
 
 卡片能力： 从API version 11开始，该接口支持在ArkTS卡片中使用。
 
@@ -251,7 +253,7 @@ textShadow(value: ShadowOptions | Array<ShadowOptions>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [ShadowOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadowoptions对象说明) | Array | 是 | 文字阴影效果。 |
+| value | [ShadowOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadowoptions对象说明) | Array | 是 | 文字阴影效果。支持单个阴影对象或阴影数组实现多重阴影效果。ShadowOptions对象包含radius（模糊半径）、color（阴影颜色）、offsetX（X轴偏移）、offsetY（Y轴偏移）等属性。 不支持fill字段，不支持智能取色模式。具体属性说明请参考[ShadowOptions对象说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadowoptions对象说明)。 |
 
 #### [h2]fontFeature11+
 
@@ -279,7 +281,7 @@ fontFeature(value: string)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | string | 是 | 文字特性效果。 |
+| value | string | 是 | 文字特性效果，用于设置文字的OpenType特性。格式为：normal | ，其中格式为： [ | on | off ]。可设置多个特性，中间用','隔开。例如，使用等宽时钟数字的格式为：'"ss01" on'。 |
 
 #### [h2]contentModifier12+
 
@@ -379,7 +381,7 @@ TextClockController的构造函数。
 
 start()
 
-启动文本时钟。
+启动文本时钟。使用前需先将TextClockController绑定到TextClock组件。
 
 卡片能力： 从API version 11开始，该接口支持在ArkTS卡片中使用。
 
@@ -391,7 +393,7 @@ start()
 
 stop()
 
-停止文本时钟。
+停止文本时钟。使用前需先将TextClockController绑定到TextClock组件。
 
 卡片能力： 从API version 11开始，该接口支持在ArkTS卡片中使用。
 
@@ -411,7 +413,7 @@ stop()
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| timeZoneOffset | number | 否 | 否 | 当前文本时钟时区偏移量。 取值范围为[-14, 12]，表示东十二区到西十二区，其中负值表示东时区，正值表示西时区，比如东八区为-8。设置值为该取值范围内的浮点数时会进行取整，舍弃小数部分。 |
+| timeZoneOffset | number | 否 | 否 | 当前文本时钟时区偏移量。 取值范围为[-14, 12]，表示东十二区到西十二区，其中负值表示东时区，正值表示西时区，比如东八区为-8。设置值为该取值范围内的浮点数时会进行取整，舍弃小数部分。当设置的值不在取值范围内时，将使用当前系统的时区偏移量。 |
 | started | boolean | 否 | 否 | 指示文本时钟是否启动。 true：表示启动文本时钟。 false：表示停止文本时钟。 默认值：true |
 | timeValue | number | 否 | 否 | 当前文本时钟时区的UTC秒数。 |
 
@@ -462,11 +464,11 @@ struct Second {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002633850836.gif)
+ ![](./img/zh-cn_image_0000002685928419.gif)
 
 #### [h2]示例2（设定文本阴影样式）
 
-该示例通过[textShadow](#textshadow11)属性设置文本时钟的文本阴影样式。
+该示例通过[textShadow](#textshadow11)属性设置时钟文本的阴影样式。
 
 ```
 @Entry
@@ -506,7 +508,7 @@ struct TextClockExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002634010740.png)
+ ![](./img/zh-cn_image_0000002656008742.png)
 
 #### [h2]示例3（设定自定义内容区）
 
@@ -534,6 +536,9 @@ function buildTextClock(config: TextClockConfiguration) {
         .fontSize(20)
         .margin(20)
       TimePicker({
+        // 根据UTC秒数和时区偏移量计算本地时间：config.timeValue为UTC秒数，需乘1000转为毫秒；
+        // currentTimeZoneOffset为当前系统时区偏移量，timeZoneOffset为目标时区偏移量，
+        // 二者之差乘以3600000得到时区调整的毫秒数
         selected: (new Date(config.timeValue * 1000 +
           ((config.contentModifier as MyTextClockStyle).currentTimeZoneOffset - config.timeZoneOffset) * 60 * 60 *
             1000)),
@@ -589,7 +594,7 @@ struct TextClockExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664209889.gif)
+ ![](./img/zh-cn_image_0000002655848820.gif)
 
 #### [h2]示例4（设置前导零）
 
@@ -623,7 +628,7 @@ struct TextClockExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664329949.png)
+ ![](./img/zh-cn_image_0000002686088251.png)
 
 #### [h2]示例5（设置文字显示样式）
 
@@ -677,4 +682,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002633850838.png)
+ ![](./img/zh-cn_image_0000002685928421.png)

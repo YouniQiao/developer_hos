@@ -2,8 +2,8 @@
 title: "Interface (ConcatArray)"
 upstream_id: "harmonyos-references/arkts-apis-arkts-collections-concatarray"
 catalog: "harmonyos-references"
-content_hash: "b9156cf8f140"
-synced_at: "2026-07-09T00:57:23.886927"
+content_hash: "7c61fb70c2a5"
+synced_at: "2026-07-28T16:40:56.271717"
 ---
 
 # Interface (ConcatArray)
@@ -65,7 +65,7 @@ readonly [index: number]: T
 示例：
 
 ```
-let concatArray : collections.ConcatArray<number> = new collections.Array<number>(1, 2, 4);
+let concatArray: collections.ConcatArray<number> = new collections.Array<number>(1, 2, 4);
 console.info("Element at index 1: ", concatArray[1]);
 ```
 
@@ -94,7 +94,7 @@ join(separator?: string): string
 示例：
 
 ```
-let concatArray : collections.ConcatArray<string> = new collections.Array<string>('a', 'b', 'c');
+let concatArray: collections.ConcatArray<string> = new collections.Array<string>('a', 'b', 'c');
 let joinedString = concatArray.join('-'); // 返回 "a-b-c"
 ```
 
@@ -121,6 +121,6 @@ slice(start?: number, end?: number): ConcatArray<T>
 示例：
 
 ```
-let concatArray : collections.ConcatArray<number> = new collections.Array<number>(1, 2, 3, 4, 5);
-let slicedArray = concatArray.slice(1, 3); // 返回[2, 3]，原Array保持不变
+let concatArray: collections.ConcatArray<number> = new collections.Array<number>(1, 2, 3, 4, 5);
+let slicedArray = concatArray.slice(1, 3); // 返回[2, 3]，原ConcatArray保持不变
 ```

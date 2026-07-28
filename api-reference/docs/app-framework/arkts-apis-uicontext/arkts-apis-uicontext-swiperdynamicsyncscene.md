@@ -2,20 +2,20 @@
 title: "Class (SwiperDynamicSyncScene)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-swiperdynamicsyncscene"
 catalog: "harmonyos-references"
-content_hash: "7a2785d8b7b4"
-synced_at: "2026-07-09T00:57:29.503347"
+content_hash: "2a785de1b4ff"
+synced_at: "2026-07-28T16:41:09.907631"
 ---
 
 # Class (SwiperDynamicSyncScene)
 
-提供Swiper组件动态帧率场景的相关配置。
+提供Swiper组件动态帧率场景的相关配置，适用于为动画过渡和手势跟手等不同交互场景设置差异化帧率范围，以兼顾流畅度和功耗。
 
 ![](./img/note_3.0-zh-cn.png)
 
 - 本模块首批接口从API version 10开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 - 本Class首批接口从API version 12开始支持。
 - 本模块接口仅可在Stage模型下使用。
-- SwiperDynamicSyncScene继承自[DynamicSyncScene](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-dynamicsyncscene)，对应Swiper的动态帧率场景。
+- SwiperDynamicSyncScene继承自[DynamicSyncScene](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-dynamicsyncscene)，对应Swiper的动态帧率场景。使用前需先通过UIContext的[requireDynamicSyncScene](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#requiredynamicsyncscene12)方法获取实例，再调用继承的方法设置对应场景的帧率范围。
 
 #### 属性
 
@@ -25,7 +25,7 @@ synced_at: "2026-07-09T00:57:29.503347"
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| type12+ | [SwiperDynamicSyncSceneType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-e#swiperdynamicsyncscenetype12) | 是 | 否 | Swiper的动态帧率场景。 |
+| type12+ | [SwiperDynamicSyncSceneType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-e#swiperdynamicsyncscenetype12) | 是 | 否 | Swiper的动态帧率场景类型。 |
 
 示例：
 
@@ -36,42 +36,42 @@ import { SwiperDynamicSyncSceneType, SwiperDynamicSyncScene } from '@kit.ArkUI';
 @Component
 struct Frame {
   @State ANIMATION: ExpectedFrameRateRange = { min: 0, max: 120, expected: 90 };
-  @State GESTURE: ExpectedFrameRateRange = { min: 0, max: 120, expected: 30};
+  @State GESTURE: ExpectedFrameRateRange = { min: 0, max: 120, expected: 30 };
   private scenes: SwiperDynamicSyncScene[] = [];
 
   build() {
     Column() {
-      Text("动画"+ JSON.stringify(this.ANIMATION))
-      Text("跟手"+ JSON.stringify(this.GESTURE))
-      Row(){
+      Text('动画' + JSON.stringify(this.ANIMATION))
+      Text('跟手' + JSON.stringify(this.GESTURE))
+      Row() {
         Swiper() {
-          Text("one")
-          Text("two")
-          Text("three")
+          Text('one')
+          Text('two')
+          Text('three')
         }
         .width('100%')
         .height('300vp')
-        .id("dynamicSwiper")
+        .id('dynamicSwiper')
         .backgroundColor(Color.Blue)
         .autoPlay(true)
-        .onAppear(()=>{
-          let scenes = this.getUIContext().requireDynamicSyncScene("dynamicSwiper") as SwiperDynamicSyncScene[];
+        .onAppear(() => {
+          let scenes = this.getUIContext().requireDynamicSyncScene('dynamicSwiper') as SwiperDynamicSyncScene[];
           if (scenes) {
             this.scenes = scenes;
           }
         })
       }
 
-      Button("set frame")
+      Button('set frame')
         .onClick(() => {
-          this.scenes.forEach((scenes: SwiperDynamicSyncScene) => {
+          this.scenes.forEach((scene: SwiperDynamicSyncScene) => {
 
-            if (scenes.type == SwiperDynamicSyncSceneType.ANIMATION) {
-              scenes.setFrameRateRange(this.ANIMATION);
+            if (scene.type == SwiperDynamicSyncSceneType.ANIMATION) {
+              scene.setFrameRateRange(this.ANIMATION);
             }
 
-            if (scenes.type == SwiperDynamicSyncSceneType.GESTURE) {
-              scenes.setFrameRateRange(this.GESTURE);
+            if (scene.type == SwiperDynamicSyncSceneType.GESTURE) {
+              scene.setFrameRateRange(this.GESTURE);
             }
           });
         })

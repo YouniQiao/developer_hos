@@ -2,8 +2,8 @@
 title: "@ohos.net.netFirewall (网络防火墙)"
 upstream_id: "harmonyos-references/js-apis-net-netfirewall"
 catalog: "harmonyos-references"
-content_hash: "514256b4b39c"
-synced_at: "2026-07-09T00:59:28.191383"
+content_hash: "cc1dec6e0d55"
+synced_at: "2026-07-28T16:50:43.447929"
 ---
 
 # @ohos.net.netFirewall (网络防火墙)
@@ -130,10 +130,10 @@ addNetFirewallRule(rule: NetFirewallRule): Promise<number>
 
 ![](./img/note_3.0-zh-cn.png)
 
-1. 防火墙规则优先级说明（[setNetFirePolicy](#netfirewallsetnetfirewallpolicy)和[addNetFirewallRule](#netfirewalladdnetfirewallrule)无调用顺序要求）： 调用[setNetFirePolicy](#netfirewallsetnetfirewallpolicy)设置默认策略为阻止，调用[addNetFirewallRule](#netfirewalladdnetfirewallrule)新增显式规则，规则优先级由高到低为： 显式阻止规则
+1. 防火墙规则优先级说明（[setNetFirewallPolicy](#netfirewallsetnetfirewallpolicy)和[addNetFirewallRule](#netfirewalladdnetfirewallrule)无调用顺序要求）： 调用[setNetFirewallPolicy](#netfirewallsetnetfirewallpolicy)设置默认策略为阻止，调用[addNetFirewallRule](#netfirewalladdnetfirewallrule)新增显式规则，规则优先级由高到低为： 显式阻止规则
 2. 显式允许规则
 3. 默认阻止策略
-4. 调用[setNetFirePolicy](#netfirewallsetnetfirewallpolicy)设置默认策略为允许，调用[addNetFirewallRule](#netfirewalladdnetfirewallrule)新增显式规则，规则优先级由高到低为： 显式允许规则
+4. 调用[setNetFirewallPolicy](#netfirewallsetnetfirewallpolicy)设置默认策略为允许，调用[addNetFirewallRule](#netfirewalladdnetfirewallrule)新增显式规则，规则优先级由高到低为： 显式允许规则
 5. 显式阻止规则
 6. 默认允许策略
 7. 防火墙IP规则和域名规则冲突时（域名解析的IP与IP规则的IP相同，规则行为冲突）： 若以域名方式访问，则域名规则优先级高于IP规则，不受域名解析出的IP的规则影响。
@@ -234,7 +234,8 @@ let ipRule: netFirewall.NetFirewallRule = {
       startPort: 443,
       endPort: 443
     }],
-  userId: 100
+  userId: 100,
+  interface:"wlan0" // 从API版本26.0.0开始支持
 };
 netFirewall.addNetFirewallRule(ipRule).then((result: number) => {
   console.info('rule Id: ', result);
@@ -258,7 +259,8 @@ let domainRule: netFirewall.NetFirewallRule = {
       isWildcard: true,
       domain: "*.example.cn"
     }],
-  userId: 100
+  userId: 100,
+  interface:"wlan0" // 从API版本26.0.0开始支持
 };
 netFirewall.addNetFirewallRule(domainRule).then((result: number) => {
   console.info('rule Id: ', result);
@@ -278,7 +280,8 @@ let dnsRule: netFirewall.NetFirewallRule = {
    primaryDns: "4.4.4.4",
    standbyDns: "8.8.8.8",
   },
-  userId: 100
+  userId: 100,
+  interface:"wlan0" // 从API版本26.0.0开始支持
 };
 netFirewall.addNetFirewallRule(dnsRule).then((result: number) => {
   console.info('rule Id: ', result);
@@ -405,7 +408,8 @@ let ipRuleUpd: netFirewall.NetFirewallRule = {
       startIp: "10.20.1.1",
       endIp: "10.20.1.10"
     }],
-  userId: 100
+  userId: 100,
+  interface:"wlan0" // 从API版本26.0.0开始支持
 };
 netFirewall.updateNetFirewallRule(ipRuleUpd).then(() => {
   console.info('update firewall rule success.');
@@ -543,6 +547,7 @@ netFirewall.getNetFirewallRule(100, 1).then((rule: netFirewall.NetFirewallRule) 
 | remotePorts | Array | 否 | 是 | 远端端口。当type=RULE_IP时有效，否则将被忽略。最多10个。 |
 | domains | Array | 否 | 是 | 域名列表，当type=RULE_DOMAIN时有效，否则将被忽略，目前不支持中文域名。 |
 | dns | [NetFirewallDnsParams](#netfirewalldnsparams) | 否 | 是 | DNS：当type=RULE_DNS时有效，否则将被忽略。当type=RULE_DNS时，该字段不能为空。 |
+| interface | string | 否 | 是 | 物理网卡名称，例如wlan0。当type=RULE_IP时有效，否则将被忽略。可选，最多16个字符。 **起始版本**：26.0.0 **模型约束**：此接口仅可在Stage模型下使用。 |
 
 #### RequestParam
 

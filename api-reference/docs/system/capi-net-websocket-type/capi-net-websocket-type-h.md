@@ -2,8 +2,8 @@
 title: "net_websocket_type.h"
 upstream_id: "harmonyos-references/capi-net-websocket-type-h"
 catalog: "harmonyos-references"
-content_hash: "dc635b3bd2e1"
-synced_at: "2026-07-09T00:59:28.878435"
+content_hash: "616e5ba0b149"
+synced_at: "2026-07-28T16:50:44.566504"
 ---
 
 # net_websocket_type.h
@@ -117,7 +117,7 @@ websocket客户端接收数据的回调函数定义。
 | --- | --- |
 | [struct WebSocket](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-netstack-websocket) *client | websocket客户端。 |
 | char *data | websocket客户端接收的数据。 |
-| uint32_t length | websocket客户端接收的数据长度。 |
+| uint32_t length | websocket客户端接收的数据长度。单位：Byte。 |
 
 #### [h2]WebSocket_OnErrorCallback()
 

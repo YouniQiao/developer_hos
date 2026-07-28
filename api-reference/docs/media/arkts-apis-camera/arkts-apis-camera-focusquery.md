@@ -2,8 +2,8 @@
 title: "Interface (FocusQuery)"
 upstream_id: "harmonyos-references/arkts-apis-camera-focusquery"
 catalog: "harmonyos-references"
-content_hash: "4de1009fe313"
-synced_at: "2026-07-09T01:00:21.886891"
+content_hash: "db0e935a34c9"
+synced_at: "2026-07-28T16:51:39.949546"
 ---
 
 # Interface (FocusQuery)
@@ -66,5 +66,51 @@ function isFocusModeSupported(photoSession: camera.PhotoSession): boolean {
     console.error(`The isFocusModeSupported call failed. error code: ${err.code}`);
   }
   return status;
+}
+```
+
+#### isLockFocusTrackingSupported
+
+isLockFocusTrackingSupported(): boolean
+
+检查设备是否支持锁定焦点跟踪的功能。
+
+起始版本： 26.0.0
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Multimedia.Camera.Core
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| boolean | 检查是否支持锁定焦点跟踪。true表示支持，false表示不支持。接口调用失败会抛出相应错误码并返回undefined。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[Camera错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-camera)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 7400103 | Session not config, only throw in session usage. |
+
+示例：
+
+```
+import { BusinessError } from '@kit.BasicServicesKit';
+
+function isLockFocusTrackSupported(photoSession: camera.PhotoSession): boolean {
+  let isSupported: boolean = false;
+  try {
+    isSupported = photoSession.isLockFocusTrackingSupported();
+  } catch (error) {
+    // 失败返回错误码error.code并处理。
+    let err = error as BusinessError;
+    console.error(`The isLockFocusTrackingSupported call failed. error code: ${err.code}`);
+  }
+  return isSupported;
 }
 ```

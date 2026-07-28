@@ -2,13 +2,13 @@
 title: "@ohos.arkui.Prefetcher (Prefetching)"
 upstream_id: "harmonyos-references/js-apis-arkui-prefetcher"
 catalog: "harmonyos-references"
-content_hash: "c7c0e8cc4229"
-synced_at: "2026-07-09T00:57:28.288137"
+content_hash: "cba405b659d4"
+synced_at: "2026-07-28T16:40:59.288915"
 ---
 
 # @ohos.arkui.Prefetcher (Prefetching)
 
-配合LazyForEach，为List、Grid、WaterFlow和Swiper等容器组件滑动浏览时提供内容预加载能力，提升用户浏览体验。
+配合LazyForEach，为List、Grid、WaterFlow和Swiper等容器组件滑动浏览时提供内容预取能力，提升用户浏览体验。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -24,7 +24,7 @@ import { BasicPrefetcher, IDataSourcePrefetching, IPrefetcher } from '@kit.ArkUI
 
 #### IPrefetcher
 
-实现此接口以提供预取能力。
+实现此接口以提供预取能力，配合LazyForEach在List、Grid等容器组件滑动浏览时预取数据项，提升用户浏览体验。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -64,7 +64,7 @@ class MyPrefetcher implements IPrefetcher {
 
 visibleAreaChanged(minVisible: number, maxVisible: number): void;
 
-当可见区域边界发生改变时调用此方法。支持与List、Grid、WaterFlow和Swiper组件配合使用。
+当可见区域边界发生改变时调用此方法，将当前可见区域范围通知给Prefetcher，使其据此决定预取或取消预取的数据项。调用此方法前需先通过setDataSource方法设置数据源。支持与List、Grid、WaterFlow和Swiper组件配合使用。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -74,8 +74,8 @@ visibleAreaChanged(minVisible: number, maxVisible: number): void;
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| minVisible | number | 是 | 列表可见区域的上界。 |
-| maxVisible | number | 是 | 列表可见区域的下界。 |
+| minVisible | number | 是 | 当前可见区域中第一项数据的索引值，取值范围为[0, totalCount()-1]。超出范围时计算错误。 |
+| maxVisible | number | 是 | 当前可见区域中最后一项数据的索引值，取值范围为[0, totalCount()-1]。超出范围时计算错误。 |
 
 ```
 class MyPrefetcher implements IPrefetcher {
@@ -105,7 +105,7 @@ BasicPrefetcher对象不支持使用JSON序列化。
 
 constructor(dataSource?: IDataSourcePrefetching);
 
-传入支持预取的DataSource以绑定到Prefetcher。
+传入支持预取的数据源，在创建对象时绑定到Prefetcher。若创建时未传入数据源，也可在创建后通过setDataSource方法设置。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -115,13 +115,13 @@ constructor(dataSource?: IDataSourcePrefetching);
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| dataSource | [IDataSourcePrefetching](#idatasourceprefetching) | 否 | 支持预取能力的数据源。 |
+| dataSource | [IDataSourcePrefetching](#idatasourceprefetching) | 否 | 支持预取能力的数据源。不传入时默认为空，后续可通过setDataSource方法设置数据源。 |
 
 #### [h2]setDataSource
 
 setDataSource(dataSource: IDataSourcePrefetching): void;
 
-设置支持预取的DataSource以绑定到Prefetcher。
+设置支持预取的数据源以绑定到Prefetcher。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -137,7 +137,7 @@ setDataSource(dataSource: IDataSourcePrefetching): void;
 
 visibleAreaChanged(minVisible: number, maxVisible: number): void;
 
-当可见区域边界发生改变时调用此方法。支持与List、Grid、WaterFlow和Swiper组件配合使用。
+当可见区域边界发生改变时调用此方法，将当前可见区域范围通知给Prefetcher，使其据此决定预取或取消预取的数据项。调用此方法前需确保已通过构造函数或setDataSource方法设置数据源。支持与List、Grid、WaterFlow和Swiper组件配合使用。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -147,12 +147,12 @@ visibleAreaChanged(minVisible: number, maxVisible: number): void;
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| minVisible | number | 是 | 列表可见区域的上界。 |
-| maxVisible | number | 是 | 列表可见区域的下界。 |
+| minVisible | number | 是 | 当前可见区域中第一项数据的索引值，取值范围为[0, totalCount()-1]。超出范围时计算错误。 |
+| maxVisible | number | 是 | 当前可见区域中最后一项数据的索引值，取值范围为[0, totalCount()-1]。超出范围时计算错误。 |
 
 #### IDataSourcePrefetching
 
-继承自[IDataSource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-rendering-control-lazyforeach#idatasource)。实现该接口，提供具备预取能力的DataSource。
+继承自[IDataSource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-rendering-control-lazyforeach#idatasource)。实现该接口，提供具备预取能力的数据源。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -162,7 +162,7 @@ visibleAreaChanged(minVisible: number, maxVisible: number): void;
 
 prefetch(index: number): Promise<void> | void;
 
-从数据集中预取指定的元素。该方法可以为同步，也可为异步。
+从数据集中预取指定的数据项。该方法可以为同步，也可为异步。当可见区域发生变化时，预取算法判断即将进入可见区域的数据项需要预取时，会调用该方法。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -172,7 +172,7 @@ prefetch(index: number): Promise<void> | void;
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| index | number | 是 | 预取数据项索引值。 |
+| index | number | 是 | 预取数据项索引值，取值范围为[0, totalCount()-1]。 |
 
 返回值：
 
@@ -184,7 +184,7 @@ prefetch(index: number): Promise<void> | void;
 
 cancel?(index: number): Promise<void> | void;
 
-取消从数据集中预取指定的元素。该方法可以为同步，也可为异步。
+取消从数据集中预取指定的数据项。该方法可以为同步，也可为异步。该方法为可选方法，若数据源未实现该方法，则不执行取消预取操作。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -194,7 +194,7 @@ cancel?(index: number): Promise<void> | void;
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| index | number | 是 | 取消预取数据项索引值。 |
+| index | number | 是 | 取消预取数据项索引值，取值范围为[0, totalCount()-1]。 |
 
 返回值：
 
@@ -202,11 +202,11 @@ cancel?(index: number): Promise<void> | void;
 | --- | --- |
 | Promise | void | 异步执行时返回Promise对象，同步执行时无返回值。Promise仅表示操作完成，无实际返回内容。 |
 
-列表内容移出屏幕时（比如列表快速滑动场景下），预取算法判断屏幕以外的Item可以被取消预取时，该方法即会被调用。例如，如果HTTP框架支持请求取消，则可以在此处取消在prefetch中发起的网络请求。
+当列表内容移出屏幕（例如列表快速滑动场景下），且预取算法判断屏幕以外的数据项可以被取消预取时，该方法会被调用。例如，如果HTTP框架支持请求取消，则可以在此处取消在prefetch中发起的网络请求。
 
 #### 示例
 
-下面示例展示了Prefetcher的预加载能力。该示例采用分页的方式，配合LazyForEach实现懒加载效果，并通过添加延时来模拟加载过程。
+下面示例展示了Prefetcher的预取能力。该示例采用分页的方式，配合LazyForEach实现懒加载效果，并添加延时模拟加载过程。
 
 ```
 import { BasicPrefetcher, IDataSourcePrefetching } from '@kit.ArkUI';
@@ -233,6 +233,7 @@ struct PrefetcherDemoComponent {
               .height(`${100 / ITEMS_ON_SCREEN}%`)
           }
           .onAppear(() => {
+            // 当列表项索引达到分页触发点时加载下一页数据，并将触发点更新为当前总数据量减半页，使下一页在接近列表末尾时再次触发加载
             if (index >= this.breakPoint) {
               this.dataSource.getHttpData(++this.page, this.pageSize);
               this.breakPoint = this.dataSource.totalCount() - this.pageSize / 2;
@@ -267,12 +268,10 @@ class PictureItem {
   readonly color: number;
   title: string;
   imagePixelMap: image.PixelMap | undefined;
-  key: string;
 
   constructor(color: number, title: string) {
     this.color = color;
     this.title = title;
-    this.key = title;
   }
 }
 
@@ -304,10 +303,11 @@ class MyDataSource implements IDataSourcePrefetching {
         const bitmap = create10x10Bitmap(item.color);
         const imageSource: image.ImageSource = image.createImageSource(bitmap);
         item.imagePixelMap = await imageSource.createPixelMap();
+        imageSource.release();
         resolve();
       }, this.fetchDelayMs);
 
-      this.fetches.set(index, timeoutId)
+      this.fetches.set(index, timeoutId);
     });
   }
 
@@ -320,7 +320,7 @@ class MyDataSource implements IDataSourcePrefetching {
   }
 
   // 模拟分页方式加载数据
-  getHttpData(pageNum: number, pageSize:number): void {
+  getHttpData(pageNum: number, pageSize: number): void {
     const newItems: PictureItem[] = [];
     for (let i = (pageNum - 1) * pageSize; i < pageNum * pageSize; i++) {
       const item = new PictureItem(getRandomColor(), `Item ${i}`);
@@ -368,11 +368,11 @@ class MyDataSource implements IDataSourcePrefetching {
 
 function getRandomColor(): number {
   const maxColorCode = 256;
-  const r = Math.floor(Math.random() * maxColorCode);
-  const g = Math.floor(Math.random() * maxColorCode);
-  const b = Math.floor(Math.random() * maxColorCode);
+  const red = Math.floor(Math.random() * maxColorCode);
+  const green = Math.floor(Math.random() * maxColorCode);
+  const blue = Math.floor(Math.random() * maxColorCode);
 
-  return (r * 256 + g) * 256 + b;
+  return (red * 256 + green) * 256 + blue;
 }
 
 function create10x10Bitmap(color: number): ArrayBuffer {
@@ -404,16 +404,16 @@ function create10x10Bitmap(color: number): ArrayBuffer {
   view16[offset++] = 1;
   view16[offset++] = 24;
 
-  const b = color & 0xff;
-  const g = (color >> 8) & 0xff;
-  const r = color >> 16;
+  const blue = color & 0xff;
+  const green = (color >> 8) & 0xff;
+  const red = color >> 16;
   offset = headerLength;
   const view8 = new Uint8Array(buffer);
   for (let y = 0; y < height; y++) {
     for (let x = 0; x < width; x++) {
-      view8[offset++] = b;
-      view8[offset++] = g;
-      view8[offset++] = r;
+      view8[offset++] = blue;
+      view8[offset++] = green;
+      view8[offset++] = red;
     }
     offset += 2;
   }
@@ -423,8 +423,8 @@ function create10x10Bitmap(color: number): ArrayBuffer {
 ```
  演示效果如下：
 
-![](./img/zh-cn_image_0000002631253056.gif)
+![](./img/zh-cn_image_0000002685927849.gif)
 
 #### 补充说明
 
-开发者也可使用HarmonyOS三方库[@netteam/prefetcher](https://ohpm.openharmony.cn/#/cn/detail/@netteam%2Fprefetcher)开发预加载功能。该三方库提供了更多的接口，可以更加便捷有效地实现数据预加载。
+开发者也可使用HarmonyOS三方库[@netteam/prefetcher](https://ohpm.openharmony.cn/#/cn/detail/@netteam%2Fprefetcher)开发预取功能。该三方库提供了更多的接口，可以更加便捷有效地实现数据预取。

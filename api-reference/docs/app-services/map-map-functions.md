@@ -2,8 +2,8 @@
 title: "Functions"
 upstream_id: "harmonyos-references/map-map-functions"
 catalog: "harmonyos-references"
-content_hash: "5b3ce485a0b3"
-synced_at: "2026-07-09T01:01:26.785499"
+content_hash: "c591c93ba32a"
+synced_at: "2026-07-28T16:52:45.472024"
 ---
 
 # Functions
@@ -155,6 +155,7 @@ let bounds: mapCommon.LatLngBounds = {
     longitude: 119
   }
 };
+// 设置地图经纬度范围并指定内边距为5px
 let cameraUpdate: map.CameraUpdate = map.newLatLngBounds(bounds, 5);
 ```
 

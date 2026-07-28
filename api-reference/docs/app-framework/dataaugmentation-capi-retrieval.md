@@ -2,8 +2,8 @@
 title: "Retrieval"
 upstream_id: "harmonyos-references/dataaugmentation-capi-retrieval"
 catalog: "harmonyos-references"
-content_hash: "95ab6a79664a"
-synced_at: "2026-07-09T00:59:02.664558"
+content_hash: "21b0e8304fcd"
+synced_at: "2026-07-28T16:50:05.862806"
 ---
 
 # Retrieval
@@ -224,7 +224,7 @@ enum Retrieval_Channel_Type
 
 | 枚举值 | 描述 |
 | --- | --- |
-| RETRIEVAL_TYPE_VECTOR | 表示向量索引。 |
+| RETRIEVAL_TYPE_VECTOR | 表示向量索引，其对应的数值为1。 |
 
 #### 函数说明
 
@@ -935,7 +935,7 @@ int OH_Retrieval_SetVectorRecallLimit(OH_Retrieval_VectorCondition *condition, u
 | 名称 | 描述 |
 | --- | --- |
 | condition | 指向检索条件[OH_Retrieval_VectorCondition](#oh_retrieval_vectorcondition)实例的指针。 |
-| limit | 向量检索结果的数量上限，最大值1000。 |
+| limit | 向量检索结果的数量上限，取值范围[1, 1000]。 |
 
 返回：
 

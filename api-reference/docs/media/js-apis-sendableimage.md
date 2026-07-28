@@ -2,8 +2,8 @@
 title: "@ohos.multimedia.sendableImage (基于Sendable对象的图片处理)"
 upstream_id: "harmonyos-references/js-apis-sendableimage"
 catalog: "harmonyos-references"
-content_hash: "93b87b1c905b"
-synced_at: "2026-07-09T01:00:32.203637"
+content_hash: "2a7ef9327269"
+synced_at: "2026-07-28T16:51:49.480252"
 ---
 
 # @ohos.multimedia.sendableImage (基于Sendable对象的图片处理)
@@ -120,7 +120,7 @@ class MySequence implements rpc.Parcelable {
       this.pixel_map = sendableImage.createPixelMapFromParcel(messageSequence);
     } catch(e) {
       let error = e as BusinessError;
-      console.error(`createPixelMapFromParcel error. code is ${error.code}, message is ${error.message}`);
+      console.error(`Failed to create a PixelMap from a parcel. Code: ${error.code}, message: ${error.message}.`);
       return false;
     }
     return true;
@@ -1617,7 +1617,7 @@ class MySequence implements rpc.Parcelable {
   }
   marshalling(messageSequence : rpc.MessageSequence) {
     this.pixel_map.marshalling(messageSequence);
-    console.info('marshalling');
+    console.info('Succeeded in marshalling a PixelMap.');
     return true;
   }
   unmarshalling(messageSequence : rpc.MessageSequence) {
@@ -1625,7 +1625,7 @@ class MySequence implements rpc.Parcelable {
       pixelParcel.unmarshalling(messageSequence).then(async (pixelMap: sendableImage.PixelMap) => {
         this.pixel_map = pixelMap;
         pixelMap.getImageInfo().then((imageInfo: image.ImageInfo) => {
-          console.info("unmarshalling information h:" + imageInfo.size.height + "w:" + imageInfo.size.width);
+          console.info(`Succeeded in unmarshalling a PixelMap. Height: ${imageInfo.size.height}, width: ${imageInfo.size.width}.`);
         })
       })
     });
@@ -1709,7 +1709,7 @@ class MySequence implements rpc.Parcelable {
   }
   marshalling(messageSequence: rpc.MessageSequence) {
     this.pixel_map.marshalling(messageSequence);
-    console.info('marshalling');
+    console.info('Succeeded in marshalling a PixelMap.');
     return true;
   }
   unmarshalling(messageSequence: rpc.MessageSequence) {
@@ -1717,7 +1717,7 @@ class MySequence implements rpc.Parcelable {
       pixelParcel.unmarshalling(messageSequence).then(async (pixelMap : sendableImage.PixelMap) => {
         this.pixel_map = pixelMap;
         pixelMap.getImageInfo().then((imageInfo : image.ImageInfo) => {
-          console.info("unmarshalling information h:" + imageInfo.size.height + "w:" + imageInfo.size.width);
+          console.info(`Succeeded in unmarshalling a PixelMap. Height: ${imageInfo.size.height}, width: ${imageInfo.size.width}.`);
         })
       })
     });
@@ -2118,9 +2118,9 @@ async function GetComponent() {
   let receiver: sendableImage.ImageReceiver = sendableImage.createImageReceiver(size, image.ImageFormat.JPEG, 8);
   let img = await receiver.readNextImage();
   img.getComponent(image.ComponentType.JPEG).then((component: image.Component) => {
-    console.info('getComponent succeeded.');
+    console.info('Succeeded in getting an image component.');
   }).catch((error: BusinessError) => {
-    console.error(`getComponent failed code ${error.code}, message is ${error.message}`);
+    console.error(`Failed to get an image component. Code: ${error.code}, message: ${error.message}.`);
   })
 }
 ```
@@ -2160,9 +2160,9 @@ async function Release() {
   let receiver: sendableImage.ImageReceiver = sendableImage.createImageReceiver(size, image.ImageFormat.JPEG, 8);
   let img = await receiver.readNextImage();
   img.release().then(() => {
-    console.info('release succeeded.');
+    console.info('Succeeded in releasing an image.');
   }).catch((error: BusinessError) => {
-    console.error(`release failed. code ${error.code}, message is ${error.message}`);
+    console.error(`Failed to release an image. Code: ${error.code}, message: ${error.message}.`);
   })
 }
 ```
@@ -2248,9 +2248,9 @@ async function ReadLatestImage() {
   }
   let receiver: sendableImage.ImageReceiver = sendableImage.createImageReceiver(size, image.ImageFormat.JPEG, 8);
   receiver.readLatestImage().then((img: sendableImage.Image) => {
-    console.info('readLatestImage succeeded.');
+    console.info('Succeeded in reading the latest image.');
   }).catch((error: BusinessError) => {
-    console.error(`readLatestImage failed. code ${error.code}, message is ${error.message}`);
+    console.error(`Failed to read the latest image. Code: ${error.code}, message: ${error.message}.`);
   })
 }
 ```
@@ -2285,9 +2285,9 @@ async function ReadNextImage() {
   }
   let receiver: sendableImage.ImageReceiver = sendableImage.createImageReceiver(size, image.ImageFormat.JPEG, 8);
   receiver.readNextImage().then((img: sendableImage.Image) => {
-    console.info('readNextImage succeeded.');
+    console.info('Succeeded in reading the next image.');
   }).catch((error: BusinessError) => {
-    console.error(`readNextImage failed. code ${error.code}, message is ${error.message}`);
+    console.error(`Failed to read the next image. Code: ${error.code}, message: ${error.message}.`);
   })
 }
 ```
@@ -2357,9 +2357,9 @@ async function Release() {
   }
   let receiver: sendableImage.ImageReceiver = sendableImage.createImageReceiver(size, image.ImageFormat.JPEG, 8);
   receiver.release().then(() => {
-    console.info('release succeeded.');
+    console.info('Succeeded in releasing an image receiver.');
   }).catch((error: BusinessError) => {
-    console.error(`release failed. code ${error.code}, message is ${error.message}`);
+    console.error(`Failed to release an image receiver. Code: ${error.code}, message: ${error.message}.`);
   })
 }
 ```

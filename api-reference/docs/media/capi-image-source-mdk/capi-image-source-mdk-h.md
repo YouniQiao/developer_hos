@@ -2,8 +2,8 @@
 title: "image_source_mdk.h"
 upstream_id: "harmonyos-references/capi-image-source-mdk-h"
 catalog: "harmonyos-references"
-content_hash: "21b1d3a3a697"
-synced_at: "2026-07-09T01:00:33.918827"
+content_hash: "6529daf2f3c1"
+synced_at: "2026-07-28T16:51:51.038471"
 ---
 
 # image_source_mdk.h
@@ -14,7 +14,7 @@ synced_at: "2026-07-09T01:00:33.918827"
 
 库： libimage_source_ndk.z.so
 
-系统能力： SystemCapability.Multimedia.Image.Core
+系统能力： SystemCapability.Multimedia.Image.ImageSource
 
 引用文件： <multimedia/image_framework/image_source_mdk.h>
 

@@ -2,8 +2,8 @@
 title: "@ohos.file.environment (目录环境能力)"
 upstream_id: "harmonyos-references/js-apis-file-environment"
 catalog: "harmonyos-references"
-content_hash: "4355c70ee434"
-synced_at: "2026-07-09T00:58:59.282054"
+content_hash: "844507b0e14a"
+synced_at: "2026-07-28T16:50:01.766955"
 ---
 
 # @ohos.file.environment (目录环境能力)
@@ -26,7 +26,10 @@ getUserDownloadDir(): string
 
 系统能力：SystemCapability.FileManagement.File.Environment.FolderObtain
 
-设备行为差异：该接口在2in1中可正常调用，在其他设备类型中返回801错误码。
+设备行为差异：
+
+- 在API版本26.0.0及之后：该接口在PC/2in1和Tablet中可正常调用，在其他设备类型中返回801错误码。
+- 在API版本26.0.0之前：该接口在PC/2in1可正常调用，在其他设备类型中返回801错误码。
 
 返回值：
 
@@ -66,7 +69,10 @@ getUserDesktopDir(): string
 
 系统能力：SystemCapability.FileManagement.File.Environment.FolderObtain
 
-设备行为差异：该接口在2in1中可正常调用，在其他设备类型中返回801错误码。
+设备行为差异：
+
+- 在API版本26.0.0及之后：该接口在PC/2in1和Tablet中可正常调用，在其他设备类型中返回801错误码。
+- 在API版本26.0.0之前：该接口在PC/2in1可正常调用，在其他设备类型中返回801错误码。
 
 返回值：
 
@@ -106,7 +112,10 @@ getUserDocumentDir(): string
 
 系统能力：SystemCapability.FileManagement.File.Environment.FolderObtain
 
-设备行为差异：该接口在2in1中可正常调用，在其他设备类型中返回801错误码。
+设备行为差异：
+
+- 在API版本26.0.0及之后：该接口在PC/2in1和Tablet中可正常调用，在其他设备类型中返回801错误码。
+- 在API版本26.0.0之前：该接口在PC/2in1可正常调用，在其他设备类型中返回801错误码。
 
 返回值：
 

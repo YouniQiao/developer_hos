@@ -2,15 +2,15 @@
 title: "native_mediakeysession.h"
 upstream_id: "harmonyos-references/capi-native-mediakeysession-h"
 catalog: "harmonyos-references"
-content_hash: "e1ab5ee606fe"
-synced_at: "2026-07-09T01:00:28.796690"
+content_hash: "b93e8f1f87e3"
+synced_at: "2026-07-28T16:51:46.544383"
 ---
 
 # native_mediakeysession.h
 
 #### 概述
 
-定义Drm MediaKeySession API。提供以下功能：
+定义DRM MediaKeySession API。提供以下功能：
 
 生成媒体密钥请求、处理媒体密钥响应、事件监听、获取内容保护级别、检查媒体密钥状态、删除媒体密钥等。
 
@@ -37,10 +37,10 @@ synced_at: "2026-07-09T01:00:28.796690"
 
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
-| [typedef Drm_ErrCode (*MediaKeySession_EventCallback)(DRM_EventType eventType, uint8_t *info,int32_t infoLen, char *extra)](#mediakeysession_eventcallback) | MediaKeySession_EventCallback | MediaKeySession事件触发时将调用的回调函数，如密钥过期事件。 |
-| [typedef Drm_ErrCode (*MediaKeySession_KeyChangeCallback)(DRM_KeysInfo *keysInfo, bool newKeysAvailable)](#mediakeysession_keychangecallback) | MediaKeySession_KeyChangeCallback | 密钥变更时将调用回调。 |
-| [typedef Drm_ErrCode (*OH_MediaKeySession_EventCallback)(MediaKeySession *mediaKeySession, DRM_EventType eventType,uint8_t *info, int32_t infoLen, char *extra)](#oh_mediakeysession_eventcallback) | OH_MediaKeySession_EventCallback | 事件触发时将调用的回调函数。事件信息来源于媒体播放过程中的DRM事件，通过MediaKeySession实例触发。 |
-| [typedef Drm_ErrCode (*OH_MediaKeySession_KeyChangeCallback)(MediaKeySession *mediaKeySession, DRM_KeysInfo *keysInfo, bool newKeysAvailable)](#oh_mediakeysession_keychangecallback) | OH_MediaKeySession_KeyChangeCallback | 密钥变更时将调用的回调。 |
+| [typedef Drm_ErrCode (*MediaKeySession_EventCallback)(DRM_EventType eventType, uint8_t *info, int32_t infoLen, char *extra)](#mediakeysession_eventcallback) | MediaKeySession_EventCallback | MediaKeySession事件触发时将调用的回调函数，如密钥过期事件。 |
+| [typedef Drm_ErrCode (*MediaKeySession_KeyChangeCallback)(DRM_KeysInfo *keysInfo, bool newKeysAvailable)](#mediakeysession_keychangecallback) | MediaKeySession_KeyChangeCallback | 密钥变更时调用的回调函数。 |
+| [typedef Drm_ErrCode (*OH_MediaKeySession_EventCallback)(MediaKeySession *mediaKeySession, DRM_EventType eventType, uint8_t *info, int32_t infoLen, char *extra)](#oh_mediakeysession_eventcallback) | OH_MediaKeySession_EventCallback | 事件触发时将调用的回调函数。事件信息来源于媒体播放过程中的DRM事件，通过MediaKeySession实例触发。 |
+| [typedef Drm_ErrCode (*OH_MediaKeySession_KeyChangeCallback)(MediaKeySession *mediaKeySession, DRM_KeysInfo *keysInfo, bool newKeysAvailable)](#oh_mediakeysession_keychangecallback) | OH_MediaKeySession_KeyChangeCallback | 密钥变更时调用的回调函数。 |
 | [Drm_ErrCode OH_MediaKeySession_GenerateMediaKeyRequest(MediaKeySession *mediaKeySession, DRM_MediaKeyRequestInfo *info, DRM_MediaKeyRequest *mediaKeyRequest)](#oh_mediakeysession_generatemediakeyrequest) | - | 生成媒体密钥请求。 |
 | [Drm_ErrCode OH_MediaKeySession_ProcessMediaKeyResponse(MediaKeySession *mediaKeySession, uint8_t *response, int32_t responseLen, uint8_t *offlineMediaKeyId, int32_t *offlineMediaKeyIdLen)](#oh_mediakeysession_processmediakeyresponse) | - | 处理媒体密钥请求响应。 |
 | [Drm_ErrCode OH_MediaKeySession_CheckMediaKeyStatus(MediaKeySession *mediaKeySession, DRM_MediaKeyStatus *mediaKeyStatus)](#oh_mediakeysession_checkmediakeystatus) | - | 检查媒体密钥状态。 |
@@ -59,7 +59,7 @@ synced_at: "2026-07-09T01:00:28.796690"
 #### [h2]MediaKeySession_EventCallback()
 
 ```
-typedef  Drm_ErrCode (*MediaKeySession_EventCallback)(DRM_EventType eventType, uint8_t *info,int32_t infoLen, char *extra)
+typedef Drm_ErrCode (*MediaKeySession_EventCallback)(DRM_EventType eventType, uint8_t *info, int32_t infoLen, char *extra)
 ```
  描述
 
@@ -89,7 +89,7 @@ typedef  Drm_ErrCode (*MediaKeySession_KeyChangeCallback)(DRM_KeysInfo *keysInfo
 ```
  描述
 
-密钥变更时将调用回调。
+密钥变更时调用的回调函数。
 
 起始版本： 11
 

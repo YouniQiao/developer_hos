@@ -2,17 +2,17 @@
 title: "XComponentNode"
 upstream_id: "harmonyos-references/js-apis-arkui-xcomponentnode"
 catalog: "harmonyos-references"
-content_hash: "ac31299505d5"
-synced_at: "2026-07-09T00:57:35.898668"
+content_hash: "640c49767e55"
+synced_at: "2026-07-28T16:41:47.768695"
 ---
 
 # XComponentNode
 
-提供XComponent节点XComponentNode，表示组件树中的[XComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-xcomponent)组件，用于[EGL](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/egl)/[OpenGL ES](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/opengles)和媒体数据写入，并支持动态修改节点渲染类型。
+提供XComponent节点XComponentNode，表示组件树中的[XComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-xcomponent)组件，用于[EGL](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/egl)/[OpenGL ES](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/opengles)渲染和媒体数据写入，并支持动态修改节点渲染类型，适用于需要在ArkUI组件树中嵌入Native自渲染内容的场景。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 从API version 12开始废弃，建议使用类型为[XComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#xcomponent12)的typeNode的方式实现。
+- 从API version 11开始支持，从API version 12开始废弃，建议使用[XComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#xcomponent12)类型的typeNode替代。
 - 本模块接口仅可在Stage模型下使用。
 - 本模块首批接口从API version 11开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 - 当前不支持在预览器中使用XComponentNode。
@@ -20,7 +20,7 @@ synced_at: "2026-07-09T00:57:35.898668"
 #### 导入模块
 
 ```
-import { XComponentNode } from "@kit.ArkUI";
+import { XComponentNode } from '@kit.ArkUI';
 ```
 
 #### XComponentNode(deprecated)
@@ -40,10 +40,10 @@ XComponentNode的构造函数。
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | uiContext | [UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext) | 是 | UI上下文，获取方式可参考[UIContext获取方法](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-node#uicontext获取方法)。 |
-| options | [RenderOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode#renderoptions) | 是 | XComponentNode的构造可选参数。 |
-| id | string | 是 | XComponent的唯一标识，支持最大的字符串长度128。详见[XComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-xcomponent)组件。 |
-| type | [XComponentType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#xcomponenttype10) | 是 | 用于指定XComponent组件类型。详见[XComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-xcomponent)组件。 |
-| libraryName | string | 否 | Native层编译输出动态库名称。详见[XComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-xcomponent)组件。 |
+| options | [RenderOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode#renderoptions) | 是 | XComponentNode的渲染配置选项，用于设置节点渲染相关参数，如理想尺寸（selfIdealSize）等。 |
+| id | string | 是 | XComponent的唯一标识，最大支持字符串长度128，超出长度时接口创建失败。详见[XComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-xcomponent)组件。 |
+| type | [XComponentType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#xcomponenttype10) | 是 | 用于指定XComponent组件类型，取值为[XComponentType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#xcomponenttype10)枚举定义的值。详见[XComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-xcomponent)组件。 |
+| libraryName | string | 否 | Native层编译输出动态库名称。不传该参数时，默认不加载Native动态库。详见[XComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-xcomponent)组件。 |
 
 ![](./img/note_3.0-zh-cn.png) 需要显式指定[RenderOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode#renderoptions)中的selfIdealSize，否则XComponentNode内容大小为空，不显示任何内容。
 
@@ -61,7 +61,7 @@ XComponentNode加载完成时触发该回调。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| event | Object | 否 | 获取XComponent实例对象的context，context上挂载的方法由开发者在C++层定义。 |
+| event | Object | 否 | XComponent实例对象的事件参数，用于获取XComponent实例的context。context上挂载的方法由开发者在C++层定义，开发者可通过该context调用Native层注册的方法。 |
 
 #### [h2]onDestroy(deprecated)
 
@@ -77,7 +77,7 @@ XComponentNode销毁时触发该回调。
 
 changeRenderType(type: NodeRenderType): boolean
 
-修改XComponentNode的渲染类型。
+动态修改XComponentNode的渲染类型。例如，当需要在组件上进行EGL/OpenGL ES直接绘制时可使用DISPLAY类型；当需要将渲染内容作为纹理参与合成（如实现半透明叠加效果或离屏渲染）时可切换为TEXTURE类型。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 11开始支持，从API version 12开始废弃，建议使用[appendChild](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#appendchild12)替代。
 
@@ -87,7 +87,7 @@ changeRenderType(type: NodeRenderType): boolean
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | [NodeRenderType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode#noderendertype) | 是 | 需要修改的渲染类型。 |
+| type | [NodeRenderType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode#noderendertype) | 是 | 需要修改的目标渲染类型，取值为[NodeRenderType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode#noderendertype)枚举定义的值。 |
 
 返回值：
 
@@ -98,11 +98,11 @@ changeRenderType(type: NodeRenderType): boolean
 #### 示例
 
 ```
-import { NodeController, FrameNode, XComponentNode, NodeRenderType, UIContext} from '@kit.ArkUI'
+import { NodeController, FrameNode, XComponentNode, NodeRenderType, XComponentType, UIContext } from '@kit.ArkUI';
 
 class XComponentNodeController extends NodeController {
   private xComponentNode: MyXComponentNode | null = null;
-  private soName: string = "tetrahedron_napi" // 该 so 由开发者通过 NAPI 编写并生成
+  private soName: string = 'tetrahedron_napi'; // 该 so 由开发者通过 NAPI 编写并生成
 
   constructor() {
     super();
@@ -111,7 +111,7 @@ class XComponentNodeController extends NodeController {
   makeNode(context: UIContext): FrameNode | null {
     this.xComponentNode = new MyXComponentNode(context, {
       selfIdealSize: { width: 200, height: 200 }
-    }, "xComponentId", XComponentType.SURFACE, this.soName);
+    }, 'xComponentId', XComponentType.SURFACE, this.soName);
     return this.xComponentNode;
   }
 
@@ -147,4 +147,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253120.jpg)
+ ![](./img/zh-cn_image_0000002656008238.jpg)

@@ -2,8 +2,8 @@
 title: "AntifraudPicker（反诈选择器）"
 upstream_id: "harmonyos-references/devicesecurity-antifraudpicker-api"
 catalog: "harmonyos-references"
-content_hash: "b6d4740ebba7"
-synced_at: "2026-07-09T00:59:15.255484"
+content_hash: "59d59c47e031"
+synced_at: "2026-07-28T16:50:25.837184"
 ---
 
 # AntifraudPicker（反诈选择器）
@@ -157,12 +157,12 @@ selectFraudMessage(context: common.Context, options?: [AntifraudMessageOptions](
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-antifraudpicker) 。
+以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-antifraudpicker)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. Interface caller does not have permission "ohos.permission.USE_FRAUD_MESSAGES_PICKER". |
-| 401 | Input parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
 | 1017100001 | Unknown error. |
 | 1017100002 | The device type is not supported. |
 
@@ -219,12 +219,12 @@ selectFraudCallLog(context: common.Context, options?: [AntifraudCallLogOptions](
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-antifraudpicker) 。
+以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-antifraudpicker)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. Interface caller does not have permission "ohos.permission.USE_FRAUD_CALL_LOG_PICKER". |
-| 401 | Input parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
 | 1017100001 | Unknown error. |
 | 1017100002 | The device type is not supported. |
 
@@ -299,7 +299,7 @@ try {
 | installTime | number | 否 | 否 | 应用安装时间戳，单位：毫秒。 |
 | appId | string | 否 | 否 | 应用ID。 |
 | label | string | 否 | 否 | 应用名称，为用户视角的应用名称，如”时钟”。 |
-| installSource | string | 否 | 否 | 应用程序的安装来源，支持的取值如下： - pre-installed表示应用为第一次开机时安装的预置应用。 - ota表示应用为系统升级时新增的预置应用。 - recovery表示卸载后再恢复的预置应用。 - 安装来源的格式为包名表示应用由此包名对应的应用安装。 - unknown表示应用安装来源未知 |
+| installSource | string | 否 | 否 | 应用程序的安装来源，支持的取值如下： - pre-installed表示应用为第一次开机时安装的预置应用。 - ota表示应用为系统升级时新增的预置应用。 - recovery表示卸载后再恢复的预置应用。 - 安装来源的格式为包名表示应用由此包名对应的应用安装。 - unknown表示应用安装来源未知。 |
 
 #### selectFraudApp
 

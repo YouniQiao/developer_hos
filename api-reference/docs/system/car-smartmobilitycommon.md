@@ -1,12 +1,12 @@
 ---
-title: "smartMobilityCommon（智慧出行场景）"
+title: "smartMobilityCommon (智慧出行场景)"
 upstream_id: "harmonyos-references/car-smartmobilitycommon"
 catalog: "harmonyos-references"
-content_hash: "3f8bb0bf0ac4"
-synced_at: "2026-07-09T00:59:53.811614"
+content_hash: "0fa61a49bacc"
+synced_at: "2026-07-28T16:51:12.069982"
 ---
 
-# smartMobilityCommon（智慧出行场景）
+# smartMobilityCommon (智慧出行场景)
 
 作为分布式业务公共功能提供给应用，实现监听分布式业务（HiCar、超级桌面等）的状态，以及事件监听的能力。
 
@@ -133,7 +133,7 @@ let awareness: smartMobilityCommon.SmartMobilityAwareness = smartMobilityCommon.
 
 on(type: 'smartMobilityEvent', smartMobilityTypes: SmartMobilityType[],callback: Callback<SmartMobilityEvent>): void
 
-注册智慧出行业务的事件监听，例如导航流转完成后通知事件时，触发此回调执行。
+注册智慧出行业务的事件监听，例如导航流转完成后通知事件时，触发此回调执行。使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -151,7 +151,7 @@ on(type: 'smartMobilityEvent', smartMobilityTypes: SmartMobilityType[],callback:
 | --- | --- | --- | --- |
 | type | string | 是 | 订阅类型，该位置为常量值： 'smartMobilityEvent'，表示订阅事件监听。 |
 | smartMobilityTypes | [SmartMobilityType](#smartmobilitytype)[] | 是 | 业务类型数组，支持同时订阅多个业务。 |
-| callback | Callback | 是 | 出行业务事件回调函数。 |
+| callback | Callback | 是 | 出行业务事件回调函数，返回智慧出行公共事件对象。 |
 
 错误码：
 
@@ -190,7 +190,7 @@ try {
 
 off(type: 'smartMobilityEvent', smartMobilityTypes: SmartMobilityType[], callback?: Callback<SmartMobilityEvent>): void
 
-取消注册智慧出行业务的事件监听。
+取消注册智慧出行业务的事件监听。使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -265,7 +265,7 @@ getSmartMobilityEvent(type: SmartMobilityType, eventName: string): SmartMobility
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | [SmartMobilityType](#smartmobilitytype) | 是 | 业务类型。 |
-| eventName | string | 是 | 事件名。取值有下面3种： CAR_HOP_EVENT，流转事件。 HICAR_EVENT，HiCar事件。 SUPER_LAUNCHER_EVENT，超级桌面事件。 |
+| eventName | string | 是 | 事件名。取值有下面3种： CAR_HOP_EVENT，流转事件。 HICAR_EVENT，HiCar事件。 SUPER_LAUNCHER_EVENT，超级桌面事件。 其他取值，则接口返回[401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败)错误码。 |
 
 返回值：
 
@@ -309,7 +309,7 @@ try {
 
 on(type: 'smartMobilityStatus', smartMobilityTypes: SmartMobilityType[], callback: Callback<SmartMobilityInfo>): void
 
-注册智慧出行连接状态的监听。
+注册智慧出行连接状态的监听。使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -327,7 +327,7 @@ on(type: 'smartMobilityStatus', smartMobilityTypes: SmartMobilityType[], callbac
 | --- | --- | --- | --- |
 | type | string | 是 | 订阅类型，该位置为常量值： 'smartMobilityStatus'，表示订阅业务连接状态监听。 |
 | smartMobilityTypes | [SmartMobilityType](#smartmobilitytype)[] | 是 | 业务类型数组，支持同时订阅多个业务。 |
-| callback | Callback | 是 | 出行连接状态回调函数。 |
+| callback | Callback | 是 | 出行连接状态回调函数，返回智慧出行状态信息对象。 |
 
 错误码：
 
@@ -366,7 +366,7 @@ try {
 
 off(type: 'smartMobilityStatus', smartMobilityTypes: SmartMobilityType[], callback?: Callback<SmartMobilityInfo>): void
 
-取消注册智慧出行连接状态的监听。
+取消注册智慧出行连接状态的监听。使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -473,6 +473,6 @@ try {
   hilog.info(0x0000, 'testTag', `get smart mobility status succeed, status: ${JSON.stringify(ret)}`);
 } catch (e) {
   // 捕获接口调用异常时的错误码并做相应处理
-  hilog.error(0x0000, 'testTag', `get smart mobility status error, error code: ${e?.code}`);
+  hilog.error(0x0000, 'testTag', `get smart mobility status error, errCode: ${e?.code}`);
 }
 ```

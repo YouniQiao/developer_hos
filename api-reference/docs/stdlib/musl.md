@@ -2,8 +2,8 @@
 title: "libc标准库"
 upstream_id: "harmonyos-references/musl"
 catalog: "harmonyos-references"
-content_hash: "502d0d5a51b5"
-synced_at: "2026-07-09T01:01:48.614800"
+content_hash: "ca5f1d9bcf65"
+synced_at: "2026-07-28T16:53:22.242490"
 ---
 
 # libc标准库
@@ -36,9 +36,9 @@ libdl：dlopen等动态链接器接口，当前在HarmonyOS中是一个链接，
 
 #### 支持的能力
 
-提供兼容C99、C11、POSIX标准的头文件，以及库函数接口，但不是完全兼容；支持armv7a、arm64、x86_64三种架构的支持；
+提供兼容C99、C11、POSIX标准的头文件，以及库函数接口，但不是完全兼容；目前提供armv7a、arm64、x86_64三种架构的支持；
 
-为了更好的适配HarmonyOS设备的高性能、低内存、高安全、轻量化、支持多种形态设备的基本特征；在musl开源库的基础上进行了优化，增强，对不适用嵌入式设备的接口进行了裁剪。
+为了更好地适配HarmonyOS设备的高性能、低内存、高安全、轻量化、支持多种形态设备的基本特征；在musl开源库的基础上进行了优化，增强，对不适用嵌入式设备的接口进行了裁剪。
 
 #### [h2]新增能力
 
@@ -62,7 +62,7 @@ libdl：dlopen等动态链接器接口，当前在HarmonyOS中是一个链接，
 
 | 接口名称 | 说明 |
 | --- | --- |
-| epoll_create | 在HarmonyOS5.0 上 该接口逻辑与1.2.3版本保持一致，不会对入参进行判断，不区分入参小于等于0的情况，预计下版本更新此接口逻辑与社区1.2.5保持一致，增加入参逻辑判断，入参小于等于0时创建失败，并返回错误码EINVAL。 |
+| epoll_create | 当前 HarmonyOS musl 仓中的 epoll_create 未对 size 入参进行有效性校验，不区分 size 是否小于等于 0。实际表现为：当 size 0，或优先使用 epoll_create1。 |
 
 #### ICONV支持的字符集编码格式
 
@@ -70,7 +70,7 @@ musl支持的字符集编码格式，以及受支持的别名。
 
 ![](./img/caution_3.0-zh-cn.png) 在进行字符集编码格式转换时，请使用正确的源字符集编码格式，且目标字符集编码格式必须支持这些受转换的字符，否则转换失败。
 
-在musl里不支持将源字符集编码格式转换成这五种目标字符集编码格式：gb18030，gbk，gb2312，big5和euckr。
+在musl里不支持将源字符集编码格式转换成这两种目标字符集编码格式：big5,euckr。
 
 | 编码格式 | 别名 | musl支持情况 |
 | --- | --- | --- |
@@ -125,7 +125,7 @@ musl支持的字符集编码格式，以及受支持的别名。
 | cp866 | | 支持 |
 | cp1047 | ibm1047 | 支持 |
 
-#### musl不支持接口列表。
+#### musl不支持接口列表
 
 [native api中没有导出的符号列表](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/musl-peculiar-symbol)
 

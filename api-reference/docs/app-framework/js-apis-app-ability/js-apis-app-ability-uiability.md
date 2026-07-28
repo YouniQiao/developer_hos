@@ -2,8 +2,8 @@
 title: "@ohos.app.ability.UIAbility (带界面的应用组件)"
 upstream_id: "harmonyos-references/js-apis-app-ability-uiability"
 catalog: "harmonyos-references"
-content_hash: "79baeb9ef4d8"
-synced_at: "2026-07-09T00:57:06.174100"
+content_hash: "fc72cee9c6e4"
+synced_at: "2026-07-28T16:40:34.417991"
 ---
 
 # @ohos.app.ability.UIAbility (带界面的应用组件)
@@ -20,7 +20,7 @@ UIAbility是包含UI界面的应用组件，继承自[Ability](https://developer
 
 图1 UIAbility生命周期状态
 
-![](./img/zh-cn_image_0000002631253046.png)
+![](./img/zh-cn_image_0000002655848238.png)
 
 - Create：表示UIAbility实例已创建。系统会在该状态下触发其[onCreate](#oncreate)回调函数，开发者可以在[onCreate](#oncreate)中执行初始化操作。
 - Foreground：表示UIAbility被拉到前台。系统会在该状态下触发其[onForeground](#onforeground)回调函数，开发者可以在[onForeground](#onforeground)中申请应用所需的资源。
@@ -33,7 +33,7 @@ UIAbility是包含UI界面的应用组件，继承自[Ability](https://developer
 
 图2 Call调用示意图
 
-![](./img/zh-cn_image_0000002661729977.png)
+![](./img/zh-cn_image_0000002685925359.png)
 
 - Caller UIAbility调用[startAbilityByCall()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext#startabilitybycall)接口获取[Caller](#caller)对象，并使用Caller对象的[call](#call)方法向Callee UIAbility发送数据。
 - Callee UIAbility持有一个[Callee](#callee)对象，通过Callee的[on](#on)方法注册回调函数，用于接收Caller对象发送的数据。
@@ -59,6 +59,7 @@ import { UIAbility } from '@kit.AbilityKit';
 | lastRequestWant | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 否 | 否 | 最近一次拉起UIAbility请求的Want参数。 - 首次拉起UIAbility时，取值为[onCreate](#oncreate)接收到的Want参数。 - 重复拉起UIAbility时，取值为[onNewWant](#onnewwant)最近一次接收到的Want参数。 **元服务API**：从API version 11开始，该接口支持在元服务中使用。 |
 | callee | [Callee](#callee) | 否 | 否 | 系统为UIAbility创建的后台通信对象，Callee UIAbility（被调用方）可以通过Callee对象接收Caller对象发送的数据。 |
 | specifiedId23+ | string | 否 | 是 | 仅当UIAbility启动模式为[specified](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-launch-type#specified启动模式)时存在，取值为开发者自定义的UIAbility标识。 |
+| isDestroyed | boolean | 否 | 否 | 用于判断UIAbility是否已被销毁。默认值为false，表示UIAbility未销毁，当[onDestroy](#ondestroy)回调执行后，该属性会被设置为true，表示UIAbility已销毁。 **起始版本：** 26.0.0 |
 
 #### [h2]onCreate
 

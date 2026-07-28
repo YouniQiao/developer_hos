@@ -2,15 +2,15 @@
 title: "ArkUI_EventModule"
 upstream_id: "harmonyos-references/capi-arkui-eventmodule"
 catalog: "harmonyos-references"
-content_hash: "a5a5742c1785"
-synced_at: "2026-07-09T00:58:32.125478"
+content_hash: "6334735c6f30"
+synced_at: "2026-07-28T16:49:16.455183"
 ---
 
 # ArkUI_EventModule
 
 #### 概述
 
-在Native侧提供ArkUI的UI输入事件能力。
+在Native侧提供ArkUI的UI输入事件能力，用于获取并处理触控、鼠标、轴、按键等UI输入事件，适用于需要在C/C++层直接处理UI输入事件的场景。
 
 起始版本： 12
 

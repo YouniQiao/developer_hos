@@ -1,12 +1,10 @@
 ---
-
 title: "模块描述"
 upstream_id: "harmonyos-references/arkts-apis-arkts-utils"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T00:57:24.227865"
-content_hash: "deab49f79de0"
+content_hash: "90b4bf9f972b"
+synced_at: "2026-07-28T16:40:56.442743"
 ---
-
 
 # 模块描述
 
@@ -14,7 +12,7 @@ content_hash: "deab49f79de0"
 
 - [ArkTSUtils.locks](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-utils-locks)：异步锁。
 - [ArkTSUtils.ASON](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-utils-ason)：ASON工具。
-- [SendableLruCache](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-utils-sendablelrucache)：SendableLruCache缓冲区。
+- [ArkTSUtils.SendableLruCache](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-utils-sendablelrucache)：SendableLruCache缓冲区。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 12开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -23,5 +21,5 @@ content_hash: "deab49f79de0"
 #### 导入模块
 
 ```
-import { ArkTSUtils } from '@kit.ArkTS'
+import { ArkTSUtils } from '@kit.ArkTS';
 ```

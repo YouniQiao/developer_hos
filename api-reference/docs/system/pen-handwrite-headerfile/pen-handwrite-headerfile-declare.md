@@ -2,8 +2,8 @@
 title: "native_handwrite_api.h"
 upstream_id: "harmonyos-references/pen-handwrite-headerfile-declare"
 catalog: "harmonyos-references"
-content_hash: "7e194fb74b27"
-synced_at: "2026-07-09T00:59:59.142664"
+content_hash: "fe5ae35a9700"
+synced_at: "2026-07-28T16:51:17.745079"
 ---
 
 # native_handwrite_api.h
@@ -34,10 +34,16 @@ synced_at: "2026-07-09T00:59:59.142664"
 
 | 名称 | 描述 |
 | --- | --- |
-| enum [Handwrite_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pen-handwrite-c#handwrite_errcode) { E_NO_ERROR = 0, E_PARAMS = 401, E_INNER_ERROR = 1010400001 } | 定义手写错误码。 |
+| enum [Handwrite_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pen-handwrite-c#handwrite_errcode) { E_NO_ERROR = 0, E_PARAMS = 401, E_INNER_ERROR = 1010400001, E_PERMISSION = 201 } | 定义手写错误码。 |
 
 #### [h2]函数
 
 | 名称 | 函数 |
 | --- | --- |
 | int32_t [HMS_HandWrite_GetPredictPoint](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pen-handwrite-c#hms_handwrite_getpredictpoint)(const [HandWrite_HistoricalPoint](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pen-handwrite-struct-historicalpoint) *event, int32_t size, float *predictPointX, float *predictPointY) | 此接口用于获取预测点。 |
+
+#### [h2]函数
+
+| 名称 | 函数 |
+| --- | --- |
+| int32_t [HMS_HandWrite_SetRefreshDelayOff](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pen-handwrite-c#hms_handwrite_setrefreshdelayoff)(const char* xcomponentId, const bool enable) | 此接口用于笔记类应用提升手写笔书写时延。 |

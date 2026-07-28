@@ -2,8 +2,8 @@
 title: "XEG_RTShadowAODescription"
 upstream_id: "harmonyos-references/xengine-kit-xeg-rtshadowaodescription"
 catalog: "harmonyos-references"
-content_hash: "4e6705b854e5"
-synced_at: "2026-07-09T01:01:11.188175"
+content_hash: "5f43b6f034b9"
+synced_at: "2026-07-28T16:52:28.376941"
 ---
 
 # XEG_RTShadowAODescription
@@ -31,12 +31,12 @@ synced_at: "2026-07-09T01:01:11.188175"
 | VkImageView [inputMotionVectorImage](#inputmotionvectorimage) | 运动矢量图像，可以为空。运动矢量的计算方式为当前渲染像素的NDC坐标的XY值减去其上一帧的NDC坐标的XY值。图像格式需要是VK_FORMAT_R16G16_SFLOAT或更高精度。保留字段，暂不支持。 |
 | VkImageView [outputShadowAOImage](#outputshadowaoimage) | 输出的阴影和环境光遮蔽图像，不能为空，格式必须为VK_FORMAT_R8G8_UNORM。阴影值将写入R通道，环境光遮蔽值将写入G通道。 |
 | VkAccelerationStructureKHR [accelerationStructure](#accelerationstructure) | 场景的光线追踪加速结构。 |
-| bool [isAsInTranslatedSpace](#isasintranslatedspace) | 光线追踪加速结构是否在Translated世界空间构建。true表示在Translated世界空间构建，false表示在绝对世界空间构建。默认值为false。 |
-| float [translatedViewMatrix](#translatedviewmatrix) | 相机Translated观察矩阵，必须是4*4列主序矩阵。当isAsInTranslatedSpace值为false时可以不赋值。 |
+| bool [isAsInTranslatedSpace](#isasintranslatedspace) = false | 光线追踪加速结构是否在Translated世界空间构建。true表示在Translated世界空间构建，false表示在绝对世界空间构建。默认值为false。 |
+| float [translatedViewMatrix](#translatedviewmatrix) [16] | 相机Translated观察矩阵，必须是4*4列主序矩阵。当isAsInTranslatedSpace值为false时可以不赋值。 |
 | float [viewMatrix](#viewmatrix) [16] | 相机观察矩阵，必须是4*4列主序矩阵。 |
 | float [projectionMatrix](#projectionmatrix) [16] | 相机投影矩阵，必须是4*4列主序矩阵。 |
 | float [worldCameraOrigin](#worldcameraorigin) [3] | 相机在世界空间中的位置坐标。 |
-| bool [ndcFlipY](#ndcflipy) | 标识NDC空间与世界空间是否存在Y轴翻转关系。true表示翻转，false表示不翻转。默认值为false。 |
+| bool [ndcFlipY](#ndcflipy) = false | 标识NDC空间与世界空间是否存在Y轴翻转关系。true表示翻转，false表示不翻转。默认值为false。 |
 | const [XEG_RTShadowParameters](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/xengine-kit-xeg-rtshadowparameters) * [pRtShadowParameters](#prtshadowparameters) | 光线追踪阴影算法参数，当XEG_RTShadowAOCreateInfo::enableRTShadow=true时不能为空。 |
 | const [XEG_RTAOParameters](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/xengine-kit-xeg-rtaoparameters) * [pRtAOParameters](#prtaoparameters) | 光线追踪环境光算法参数，当XEG_RTShadowAOCreateInfo::enableRTAO=true时不能为空。 |
 | const [XEG_RTShadowAODenoiserParameters](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/xengine-kit-xeg-rtshadowaodenoiserparameters) * [pRtShadowAODenoiserParameters](#prtshadowaodenoiserparameters) | 去噪参数，不能为空。光线追踪阴影和环境光遮蔽使用相同的去噪参数。 |

@@ -2,17 +2,13 @@
 title: "functionalButtonComponentManager(场景化融合Button组件管理)"
 upstream_id: "harmonyos-references/scenario-fusion-functionalbuttoncomponentmanager"
 catalog: "harmonyos-references"
-content_hash: "1b149ececc5e"
-synced_at: "2026-07-09T01:01:39.941366"
+content_hash: "24be6abc78fd"
+synced_at: "2026-07-28T16:53:03.836385"
 ---
 
 # functionalButtonComponentManager(场景化融合Button组件管理)
 
 本模块提供Button组件的逻辑管理，辅助HarmonyOS应用和元服务通过Button组件完成相应功能。
-
-模型约束： 此接口仅可在Stage模型下使用。
-
-系统能力： SystemCapability.AtomicserviceComponent.UIComponent
 
 起始版本： 4.1.0(11)
 
@@ -201,7 +197,7 @@ import { functionalButtonComponentManager } from '@kit.ScenarioFusionKit';
 
 系统能力： SystemCapability.AtomicserviceComponent.UIComponent
 
-设备行为差异： 该接口在Phone、Tablet、PC/2in1、TV、Car中可正常调用，在其他设备类型中返回801错误码。
+设备行为差异： 该接口在Phone、Tablet、PC/2in1、TV中可正常调用，在其他设备类型中返回801错误码。
 
 起始版本： 4.1.0(11)
 
@@ -219,7 +215,7 @@ import { functionalButtonComponentManager } from '@kit.ScenarioFusionKit';
 
 系统能力： SystemCapability.AtomicserviceComponent.UIComponent
 
-设备行为差异： 该接口在Phone、Tablet、PC/2in1、TV、Car中可正常调用，在其他设备类型中返回801错误码。
+设备行为差异： 该接口在Phone、Tablet、PC/2in1、TV中可正常调用，在其他设备类型中返回801错误码。
 
 起始版本： 4.1.0(11)
 
@@ -237,7 +233,7 @@ import { functionalButtonComponentManager } from '@kit.ScenarioFusionKit';
 
 系统能力： SystemCapability.AtomicserviceComponent.UIComponent
 
-设备行为差异： 该接口在Phone、Tablet、PC/2in1、TV、Car中可正常调用，在其他设备类型中返回801错误码。
+设备行为差异： 该接口在Phone、Tablet、PC/2in1、TV中可正常调用，在其他设备类型中返回801错误码。
 
 起始版本： 4.1.0(11)
 
@@ -273,7 +269,7 @@ import { functionalButtonComponentManager } from '@kit.ScenarioFusionKit';
 
 系统能力： SystemCapability.AtomicserviceComponent.UIComponent
 
-设备行为差异： 该接口在Phone、Tablet、PC/2in1、TV、Car中可正常调用，在其他设备类型中返回801错误码。
+设备行为差异： 该接口在Phone、Tablet、PC/2in1、TV中可正常调用，在其他设备类型中返回801错误码。
 
 起始版本： 4.1.0(11)
 
@@ -452,7 +448,7 @@ import { functionalButtonComponentManager } from '@kit.ScenarioFusionKit';
 
 系统能力： SystemCapability.AtomicserviceComponent.UIComponent
 
-设备行为差异： 该接口在Phone、Tablet、PC/2in1、TV、Car中可正常调用，在其他设备类型中返回801错误码。
+设备行为差异： 该接口在Phone、Tablet、PC/2in1、TV中可正常调用，在其他设备类型中返回801错误码。
 
 起始版本： 5.0.2(14)
 
@@ -464,7 +460,7 @@ import { functionalButtonComponentManager } from '@kit.ScenarioFusionKit';
 
 该接口定义请求订阅消息的返回体。
 
-![](./img/note_3.0-zh-cn.png) 仅提供给元服务使用。
+![](./img/note_3.0-zh-cn.png) 仅提供给元服务使用，非元服务应用调用[onRequestSubscribeMessage](#onrequestsubscribemessage)接口返回[10008](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scenario-fusion#section10008-调用方非元服务)错误码。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -484,7 +480,7 @@ import { functionalButtonComponentManager } from '@kit.ScenarioFusionKit';
 
 该接口定义分享的参数。
 
-![](./img/note_3.0-zh-cn.png) 仅提供给元服务使用。
+![](./img/note_3.0-zh-cn.png) 仅提供给元服务使用，非元服务应用调用[onShare](#onshare)接口返回[10008](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scenario-fusion#section10008-调用方非元服务)错误码。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -497,7 +493,7 @@ import { functionalButtonComponentManager } from '@kit.ScenarioFusionKit';
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | description | string | 否 | 是 | 元服务描述，支持开发者传入，默认是元服务描述。 **元服务API：** 从版本6.0.0(20)开始，该接口支持在元服务中使用。 |
-| previewUri | string | 否 | 是 | 元服务预览图，由开发者传入图片，否则返回默认元服务icon图标；本地文件路径、代码包文件路径或者网络图片路径。 **元服务API：** 从版本6.0.0(20)开始，该接口支持在元服务中使用。 |
+| previewUri | string | 否 | 是 | 元服务预览图，由开发者传入图片，如果传入值为空则返回默认元服务icon图标；支持传入本地文件路径和代码包文件路径的图片。 **元服务API：** 从版本6.0.0(20)开始，该接口支持在元服务中使用。 |
 | uniformDataType | uniformTypeDescriptor.[UniformDataType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-uniformtypedescriptor#uniformdatatype) | 否 | 是 | 元服务数据类型，取值范围：[HYPERLINK, IMAGE, VIDEO, TEXT, FILE]，默认值：HYPERLINK。 HYPERLINK：分享当前元服务。 IMAGE：图片分享。 VIDEO：视频分享。 TEXT：文本分享。 FILE：文件分享。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
 | content | string | 否 | 是 | 元服务分享内容，链接（包含元服务App Linking）、文本类型的内容通过该字段传递。 HYPERLINK：自定义参数json字符串作为content字段，长度限制1~1024。 IMAGE：图片uri作为content字段。 VIDEO：视频uri作为content字段。 TEXT：文本内容作为content字段。 FILE：文件uri作为content字段。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
 | title | string | 否 | 是 | 元服务分享的标题，如果是文本、链接等内容，建议填入title标识其标题。缺省时，若分享内容为文本类型，则文本内容作为title字段；若分享内容为文件类型，则文件名作为title字段。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
@@ -550,7 +546,7 @@ onGetPhoneNumber(callback: AsyncCallback<GetPhoneNumberResult>): FunctionalButto
 
 系统能力： SystemCapability.AtomicserviceComponent.UIComponent
 
-设备行为差异： 该接口在Phone、Tablet、PC/2in1、TV、Car中可正常调用，在其他设备类型中返回801错误码。
+设备行为差异： 该接口在Phone、Tablet、PC/2in1、TV中可正常调用，在其他设备类型中返回801错误码。
 
 起始版本： 4.1.0(11)
 
@@ -588,7 +584,7 @@ struct Index {
             styleOption: {
               styleConfig: new functionalButtonComponentManager.ButtonConfig()
                 .fontSize(20)
-            },
+            }
           },
           // 当OpenType为GET_PHONE_NUMBER时，回调必须为onGetPhoneNumber。
           controller: new functionalButtonComponentManager.FunctionalButtonController()
@@ -624,7 +620,7 @@ onGetRealtimePhoneNumber(callback: AsyncCallback<GetRealtimePhoneNumberResult>):
 
 系统能力： SystemCapability.AtomicserviceComponent.UIComponent
 
-设备行为差异： 该接口在Phone、Tablet、PC/2in1、TV、Car中可正常调用，在其他设备类型中返回801错误码。
+设备行为差异： 该接口在Phone、Tablet、PC/2in1、TV中可正常调用，在其他设备类型中返回801错误码。
 
 起始版本： 4.1.0(11)
 
@@ -662,7 +658,7 @@ struct Index {
             styleOption: {
               styleConfig: new functionalButtonComponentManager.ButtonConfig()
                 .fontSize(20)
-            },
+            }
           },
           // 当OpenType为GET_REALTIME_PHONENUMBER时，回调必须为onGetRealtimePhoneNumber。
           controller: new functionalButtonComponentManager.FunctionalButtonController()
@@ -700,7 +696,7 @@ onLaunchApp(callback: AsyncCallback<void>): FunctionalButtonController
 
 系统能力： SystemCapability.AtomicserviceComponent.UIComponent
 
-设备行为差异： 该接口在Phone、Tablet、PC/2in1、TV、Car中可正常调用，在其他设备类型中返回801错误码。
+设备行为差异： 该接口在Phone、Tablet、PC/2in1、TV中可正常调用，在其他设备类型中返回801错误码。
 
 起始版本： 4.1.0(11)
 
@@ -736,14 +732,14 @@ struct Index {
             label: '打开APP',
             // 当OpenType为functionButtonComponentManager.OpenType.LAUNCH_APP时，appParam为必填项。
             appParam: {
-              bundleName: "xxx",
-              abilityName: "xxx"
+              bundleName: 'xxx',
+              abilityName: 'xxx'
             },
             // 调整按钮样式。
             styleOption: {
               styleConfig: new functionalButtonComponentManager.ButtonConfig()
                 .fontSize(20)
-            },
+            }
           },
           // 当OpenType设置为LAUNCH_APP时，回调函数必须是onLaunchApp。
           controller: new functionalButtonComponentManager.FunctionalButtonController().onLaunchApp((err) => {
@@ -777,7 +773,7 @@ onOpenSetting(callback: AsyncCallback<OpenSettingResult>): FunctionalButtonContr
 
 系统能力： SystemCapability.AtomicserviceComponent.UIComponent
 
-设备行为差异： 该接口在Phone、Tablet、PC/2in1、TV、Car中可正常调用，在其他设备类型中返回801错误码。
+设备行为差异： 该接口在Phone、Tablet、PC/2in1、TV中可正常调用，在其他设备类型中返回801错误码。
 
 起始版本： 4.1.0(11)
 
@@ -815,7 +811,7 @@ struct Index {
             styleOption: {
               styleConfig: new functionalButtonComponentManager.ButtonConfig()
                 .fontSize(20)
-            },
+            }
           },
           // 当OpenType为OPEN_SETTING时，回调必须为onOpenSetting。
           controller: new functionalButtonComponentManager.FunctionalButtonController().onOpenSetting((err, data) => {
@@ -828,7 +824,7 @@ struct Index {
             hilog.info(0x0000, 'testTag', 'succeeded in opening setting');
             data.permissions!.forEach((value, key) => {
               hilog.info(0x0000, 'testTag', 'key: %{public}s value: %{public}s', String(key), value);
-            })
+            });
           })
         })
       }.width('100%')
@@ -894,7 +890,7 @@ struct Index {
               .width(80)
               .height(80)
               .backgroundColor('#E5E5E5')
-          },
+          }
         },
         // 当OpenType设置为CHOOSE_AVATAR时，回调函数必须是onChooseAvatar。
         controller: new functionalButtonComponentManager.FunctionalButtonController().onChooseAvatar((err, data) => {
@@ -976,7 +972,7 @@ struct Index {
               hoverStayTime: 0,
               styleConfig: new functionalButtonComponentManager.ButtonConfig()
                 .fontSize(20)
-            },
+            }
           },
           // 当OpenType设置为CHOOSE_ADDRESS时，回调必须为onChooseAddress。
           controller: new functionalButtonComponentManager.FunctionalButtonController()
@@ -1065,7 +1061,7 @@ struct Index {
               hoverStayTime: 0,
               styleConfig: new functionalButtonComponentManager.ButtonConfig()
                 .fontSize(20)
-            },
+            }
           },
           // 当OpenType为CHOOSE_INVOICE_TITLE时，回调必须为onChooseInvoiceTitle。
           controller: new functionalButtonComponentManager.FunctionalButtonController()
@@ -1142,17 +1138,17 @@ interface Result {
 @Component
 struct SecondPage {
 
-  obtainRealNameDataInfo(authCode: string, sceneID:number, openID: string, realName: string, idNo: string,
+  obtainRealNameDataInfo(authCode: string, sceneID: number, openID: string, realName: string, idNo: string,
     callback: AsyncCallback<Result>) {
     // 每个httpRequest对应一个HTTP请求任务，且不可重复使用。
     let httpRequest = http.createHttp();
     // 监听HTTP响应头事件，该事件比HTTP请求的响应返回得更早。是否监听HTTP响应头事件由您决定。
     httpRequest.on('headersReceive', (header) => {
-      hilog.info(0x0000, "testTag", "header: %{public}s", header as string);
+      hilog.info(0x0000, 'testTag', 'header: %{public}s', header as string);
     });
     httpRequest.request(
       // 请自行在extraData中自定义EXAMPLE_URL。是否向URL添加参数由您决定。
-      "EXAMPLE_URL",
+      'EXAMPLE_URL',
       {
         method: http.RequestMethod.POST,
         // 您可以根据服务需求添加头部字段。
@@ -1161,18 +1157,18 @@ struct SecondPage {
         },
         // 使用此字段在POST请求中传递信息。
         extraData: {
-          "authCode": authCode,
-          "sceneID": sceneID,
-          "openID": openID,
-          "realname": realName,
-          "idNo": idNo,
+          'authCode': authCode,
+          'sceneID': sceneID,
+          'openID': openID,
+          'realname': realName,
+          'idNo': idNo
         },
         expectDataType: http.HttpDataType.STRING,
         usingCache: true,
         priority: 1,
         connectTimeout: 60000,
         readTimeout: 60000,
-        usingProtocol: http.HttpProtocol.HTTP1_1,
+        usingProtocol: http.HttpProtocol.HTTP1_1
       }, (err, data) => {
       if (!err) {
         let res: Result = JSON.parse(data.result as string);
@@ -1185,7 +1181,7 @@ struct SecondPage {
         // 在httpRequest完成后调用destroy()方法以释放资源。
         httpRequest.destroy();
       }
-    })
+    });
   }
 
   build() {
@@ -1200,7 +1196,7 @@ struct SecondPage {
             styleOption: {
               styleConfig: new functionalButtonComponentManager.ButtonConfig()
                 .fontSize(20)
-            },
+            }
           },
           // 当OpenType设置为REAL_NAME_AUTHENTICATION时，回调必须为onRealNameAuthentication。
           controller: new functionalButtonComponentManager.FunctionalButtonController()
@@ -1226,7 +1222,7 @@ struct SecondPage {
                 let verifyResult = data.verifyResult;
                 let verifyToken = data.verifyToken;
                 hilog.info(0x0000, 'testTag', 'succeeded in verifying');
-              })
+              });
             })
         })
       }
@@ -1291,11 +1287,11 @@ struct SecondPage {
     let httpRequest = http.createHttp();
     // 监听HTTP响应头事件，该事件比HTTP请求的响应返回得更早。是否监听HTTP响应头事件由您决定。
     httpRequest.on('headersReceive', (header) => {
-      hilog.info(0x0000, "testTag", "header: %{public}s", header as string);
+      hilog.info(0x0000, 'testTag', 'header: %{public}s', header as string);
     });
     httpRequest.request(
       // 请自行在extraData中自定义EXAMPLE_URL。是否向URL添加参数由您决定。
-      "EXAMPLE_URL",
+      'EXAMPLE_URL',
       {
         method: http.RequestMethod.POST,
         // 您可以根据服务需求添加头部字段。
@@ -1304,18 +1300,18 @@ struct SecondPage {
         },
         // 使用此字段在POST请求中传递信息。
         extraData: {
-          "authCode": authCode,
-          "sceneID": sceneID,
-          "openID": openID,
-          "realname": realName,
-          "idNo": idNo,
+          'authCode': authCode,
+          'sceneID': sceneID,
+          'openID': openID,
+          'realname': realName,
+          'idNo': idNo
         },
         expectDataType: http.HttpDataType.STRING,
         usingCache: true,
         priority: 1,
         connectTimeout: 60000,
         readTimeout: 60000,
-        usingProtocol: http.HttpProtocol.HTTP1_1,
+        usingProtocol: http.HttpProtocol.HTTP1_1
       }, (err, data) => {
       if (!err) {
         let res: Result = JSON.parse(data.result as string);
@@ -1328,7 +1324,7 @@ struct SecondPage {
         // 在httpRequest完成后调用destroy()方法以释放资源。
         httpRequest.destroy();
       }
-    })
+    });
   }
 
   build() {
@@ -1343,7 +1339,7 @@ struct SecondPage {
             styleOption: {
               styleConfig: new functionalButtonComponentManager.ButtonConfig()
                 .fontSize(20)
-            },
+            }
           },
           // 当OpenType为FACE_AUTHENTICATION时，回调必须为onFaceAuthentication。
           controller: new functionalButtonComponentManager.FunctionalButtonController()
@@ -1360,7 +1356,7 @@ struct SecondPage {
               let openID: string = data.openID as string;
               hilog.info(0x0000, 'testTag', 'succeeded in authCode');
               // sceneid 表示场景ID。选项包括：0（实名验证）、1（人脸验证，验证姓名、证件类型、证件号码和人脸）和2（人脸验证，仅验证人脸）。
-              this.obtainFaceVerifyDataInfo(authCode, 2, openID, "", "", (err, data) => {
+              this.obtainFaceVerifyDataInfo(authCode, 2, openID, '', '', (err, data) => {
                 if (err) {
                   hilog.error(0x0000, 'testTag', 'error: %{public}d %{public}s', err.code, err.message);
                   return;
@@ -1377,7 +1373,7 @@ struct SecondPage {
                     let state = data.state;
                     hilog.info(0x0000, 'testTag', 'auth result success');
                   });
-              })
+              });
             })
         })
       }
@@ -1437,11 +1433,11 @@ struct SecondPage {
     let httpRequest = http.createHttp();
     // 监听HTTP响应头事件，该事件比HTTP请求的响应返回得更早。是否监听HTTP响应头事件由您决定。
     httpRequest.on('headersReceive', (header) => {
-      hilog.info(0x0000, "testTag", "header: %{public}s", header as string);
+      hilog.info(0x0000, 'testTag', 'header: %{public}s', header as string);
     });
     httpRequest.request(
       // 请自行在extraData中自定义EXAMPLE_URL。是否向URL添加参数由您决定。
-      "EXAMPLE_URL",
+      'EXAMPLE_URL',
       {
         method: http.RequestMethod.POST,
         // 您可以根据服务需求添加头部字段。
@@ -1450,18 +1446,18 @@ struct SecondPage {
         },
         // 使用此字段在POST请求中传递信息。
         extraData: {
-          "authCode": authCode,
-          "sceneID": sceneID,
-          "openID": openID,
-          "realname": realName,
-          "idNo": idNo,
+          'authCode': authCode,
+          'sceneID': sceneID,
+          'openID': openID,
+          'realname': realName,
+          'idNo': idNo
         },
         expectDataType: http.HttpDataType.STRING,
         usingCache: true,
         priority: 1,
         connectTimeout: 60000,
         readTimeout: 60000,
-        usingProtocol: http.HttpProtocol.HTTP1_1,
+        usingProtocol: http.HttpProtocol.HTTP1_1
       }, (err, data) => {
       if (!err) {
         let res: Result = JSON.parse(data.result as string);
@@ -1474,7 +1470,7 @@ struct SecondPage {
         // 在httpRequest完成后调用destroy()方法以释放资源。
         httpRequest.destroy();
       }
-    })
+    });
   }
 
   build() {
@@ -1489,7 +1485,7 @@ struct SecondPage {
             styleOption: {
               styleConfig: new functionalButtonComponentManager.ButtonConfig()
                 .fontSize(20)
-            },
+            }
           },
           // 当OpenType为FACE_AUTHENTICATION时，回调必须为onFaceAuthentication。
           controller: new functionalButtonComponentManager.FunctionalButtonController()
@@ -1506,7 +1502,7 @@ struct SecondPage {
               let openID: string = data.openID as string;
               hilog.info(0x0000, 'testTag', 'succeeded in authCode');
               // sceneid 表示场景ID。选项包括：0（实名验证）、1（人脸验证，验证姓名、证件类型、证件号码和人脸）和2（人脸验证，仅验证人脸）。
-              this.obtainFaceVerifyDataInfo(authCode, 2, openID, "", "", (err, data) => {
+              this.obtainFaceVerifyDataInfo(authCode, 2, openID, '', '', (err, data) => {
                 if (err) {
                   hilog.error(0x0000, 'testTag', 'error: %{public}d %{public}s', err.code, err.message);
                   return;
@@ -1523,7 +1519,7 @@ struct SecondPage {
                     let state = data.state;
                     hilog.info(0x0000, 'testTag', 'auth result success');
                   });
-              })
+              });
             })
         })
       }
@@ -1594,7 +1590,7 @@ struct Index {
               hoverStayTime: 0,
               styleConfig: new functionalButtonComponentManager.ButtonConfig()
                 .fontSize(20)
-            },
+            }
           },
           // 当OpenType设置为CHOOSE_LOCATION时，回调必须为onChooseLocation。
           controller: new functionalButtonComponentManager.FunctionalButtonController()
@@ -1668,10 +1664,10 @@ struct Index {
                 .fontSize(20)
             },
             subscribeLiveViewParam: {
-              event: "SUBSCRIBE_TIMER",
+              event: 'SUBSCRIBE_TIMER',
               alertTime: 172178838111,
               startTime: 172170198111
-            },
+            }
           },
           // 当OpenType为SUBSCRIBE_LIVE_VIEW时，回调必须为onSubscribeLiveView。
           controller: new functionalButtonComponentManager.FunctionalButtonController().onSubscribeLiveView((err,
@@ -1708,7 +1704,7 @@ onPermissionSetting(callback: AsyncCallback<PermissionSettingResult>): Functiona
 
 系统能力： SystemCapability.AtomicserviceComponent.UIComponent
 
-设备行为差异： 该接口在Phone、Tablet、PC/2in1、TV、Car中可正常调用，在其他设备类型中返回801错误码。
+设备行为差异： 该接口在Phone、Tablet、PC/2in1、TV中可正常调用，在其他设备类型中返回801错误码。
 
 起始版本： 5.0.2(14)
 
@@ -1755,9 +1751,9 @@ struct Index {
                   } else {
                    hilog.info(0x0000, 'testTag', 'data permissions: %{public}s', data.permissions?.join(','));
                    hilog.info(0x0000, 'testTag', 'data authResults: %{public}s', data.authResults?.join(','));
-                   hilog.info(0x0000, 'testTag', 'data dialogShownResults: %{public}s',data.dialogShownResults?.join(','));
+                   hilog.info(0x0000, 'testTag', 'data dialogShownResults: %{public}s', data.dialogShownResults?.join(','));
                   }
-                })
+                });
             } catch (err) {
               hilog.error(0x0000, 'testTag', 'error: %{public}d %{public}s', err.code, err.message);
             }
@@ -1774,7 +1770,7 @@ struct Index {
             styleOption: {
               styleConfig: new functionalButtonComponentManager.ButtonConfig()
                 .fontSize(20)
-            },
+            }
           },
           // 当OpenType设置为PERMISSION_SETTING时，回调必须为onPermissionSetting。
           controller: new functionalButtonComponentManager.FunctionalButtonController().onPermissionSetting((err,
@@ -1789,7 +1785,7 @@ struct Index {
             let result = data.permissionResult;
             result.forEach(res => {
               hilog.info(0x0000, 'testTag', 'data: %{public}s', String(res));
-            })
+            });
           })
         })
       }
@@ -1806,7 +1802,7 @@ onRequestSubscribeMessage(callback: AsyncCallback<RequestSubscribeMessageResult>
 
 注册FunctionalButton组件为服务动态授权码按钮的点击事件，使用callback异步回调。
 
-![](./img/note_3.0-zh-cn.png) 该接口在元服务中可正常使用。
+![](./img/note_3.0-zh-cn.png) 该接口在元服务中可正常使用，非元服务应用调用此接口返回[10008](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scenario-fusion#section10008-调用方非元服务)错误码。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -1862,7 +1858,7 @@ struct Index {
             styleOption: {
               styleConfig: new functionalButtonComponentManager.ButtonConfig()
                 .fontSize(20)
-            },
+            }
           },
           // 当OpenType为REQUEST_SUBSCRIBE_MESSAGE时，回调必须为onRequestSubscribeMessage。
           controller: new functionalButtonComponentManager.FunctionalButtonController()
@@ -1890,7 +1886,7 @@ onShare(callback: AsyncCallback<void>): FunctionalButtonController
 
 注册FunctionalButton组件为分享按钮的点击事件，使用callback异步回调。
 
-![](./img/note_3.0-zh-cn.png) 仅提供给元服务使用。
+![](./img/note_3.0-zh-cn.png) 该接口在元服务中可正常使用，非元服务应用调用此接口返回[10008](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scenario-fusion#section10008-调用方非元服务)错误码。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -1951,7 +1947,7 @@ struct Index {
             styleOption: {
               styleConfig: new functionalButtonComponentManager.ButtonConfig()
                 .fontSize(20)
-            },
+            }
           },
           // 当OpenType设置为SHARE时，回调函数必须是onShare。
           controller: new functionalButtonComponentManager.FunctionalButtonController()
@@ -1977,7 +1973,7 @@ onFeedback(callback: AsyncCallback<void>): FunctionalButtonController
 
 注册FunctionalButton组件为反馈按钮的点击事件，使用callback异步回调。
 
-![](./img/note_3.0-zh-cn.png) 仅提供给元服务使用。
+![](./img/note_3.0-zh-cn.png) 该接口在元服务中可正常使用，非元服务应用调用此接口返回[10008](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scenario-fusion#section10008-调用方非元服务)错误码。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -2031,7 +2027,7 @@ struct Index {
             styleOption: {
               styleConfig: new functionalButtonComponentManager.ButtonConfig()
                 .fontSize(20)
-            },
+            }
           },
           // 当OpenType设置为FEEDBACK时，回调函数必须是onFeedback。
           controller: new functionalButtonComponentManager.FunctionalButtonController()
@@ -2099,7 +2095,7 @@ struct Index {
             styleOption: {
               styleConfig: new functionalButtonComponentManager.ButtonConfig()
                 .fontSize(20)
-            },
+            }
           },
           // 当OpenType为GET_PHONE_NUMBER_AND_RISK_LEVEL时，回调必须为onGetPhoneNumberAndRiskLevel。
           controller: new functionalButtonComponentManager.FunctionalButtonController()
@@ -3043,11 +3039,11 @@ struct Index {
             label: '快速验证手机号',
             // 调整按钮样式。
             styleOption: {
-              loading: true,
+              loading: true
             },
             textModifier: new TextModifier().fontColor(Color.Pink),
             buttonModifier: new ButtonModifier().backgroundColor(Color.Green),
-            loadingProgressModifier: new LoadingProgressModifier().width(20).height(20),
+            loadingProgressModifier: new LoadingProgressModifier().width(20).height(20)
           },
           // 当OpenType为GET_PHONE_NUMBER时，回调必须为onGetPhoneNumber。
           controller: new functionalButtonComponentManager.FunctionalButtonController()
@@ -3070,4 +3066,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661613815.png)
+ ![](./img/zh-cn_image_0000002685929429.png)

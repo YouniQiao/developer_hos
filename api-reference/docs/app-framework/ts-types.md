@@ -2,8 +2,8 @@
 title: "基础类型定义"
 upstream_id: "harmonyos-references/ts-types"
 catalog: "harmonyos-references"
-content_hash: "da6b8835deb7"
-synced_at: "2026-07-09T17:24:59.167981"
+content_hash: "b79de166523c"
+synced_at: "2026-07-28T16:48:52.203084"
 ---
 
 # 基础类型定义
@@ -174,9 +174,9 @@ type Margin = Padding
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-| 名称 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| Margin | [Padding](#padding) | 否 | 外边距类型，用于描述组件不同方向的外边距，其类型与内边距类型一致。 |
+| 类型 | 说明 |
+| --- | --- |
+| [Padding](#padding) | 外边距类型，用于描述组件不同方向的外边距，其类型与内边距类型一致。 |
 
 #### LocalizedMargin12+
 
@@ -194,9 +194,9 @@ type LocalizedMargin = LocalizedPadding
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-| 名称 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| LocalizedMargin | [LocalizedPadding](#localizedpadding12) | 否 | 外边距类型，用于描述组件不同方向的外边距，其类型与内边距类型一致。 |
+| 类型 | 说明 |
+| --- | --- |
+| [LocalizedPadding](#localizedpadding12) | 外边距类型，用于描述组件不同方向的外边距，其类型与内边距类型一致。 |
 
 #### EdgeWidths9+
 
@@ -233,9 +233,9 @@ type EdgeWidth = EdgeWidths
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-| 名称 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| EdgeWidth | [EdgeWidths](#edgewidths9) | 否 | 组件边框不同方向的宽度。 |
+| 类型 | 说明 |
+| --- | --- |
+| [EdgeWidths](#edgewidths9) | 组件边框不同方向的宽度。 |
 
 #### LocalizedEdgeWidths12+
 
@@ -573,9 +573,23 @@ type LengthConstrain = { minLength: Length; maxLength: Length; }
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-| 名称 | 类型 | 必填 | 描述 |
+#### [h2]constructor9+
+
+constructor(value: number[])
+
+ColorFilter的构造函数，创建具有4*5矩阵的颜色过滤器。
+
+卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
+
+元服务API： 从API version 11开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| constructor | number[] | 是 | 创建具有4*5矩阵的颜色过滤器，入参为[m*n]位于m行和n列中矩阵值，矩阵是行优先的。 |
+| value | number[] | 是 | 4*5颜色矩阵的值，[m*n]位于m行和n列中矩阵值，矩阵是行优先的。 |
 
 #### CustomBuilder8+
 
@@ -613,11 +627,11 @@ type CustomBuilderT<T> = (t: T) => void
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-| 名称 | 类型 | 只读 | 可选 | 默认值 | 描述 |
-| --- | --- | --- | --- | --- | --- |
-| strokeColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | Color.White | 内部图标颜色。 |
-| size | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | - | 内部图标大小，单位vp。默认大小与多选框组件宽度相同。 不支持百分比形式设置。设置为非法值时，按照默认值处理。 |
-| strokeWidth | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 2 | 内部图标粗细，单位vp。不支持设置百分比。设置为非法值时，按照默认值处理。 |
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| strokeColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 内部图标颜色。默认值：Color.White |
+| size | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 内部图标大小，单位vp。默认大小与多选框组件宽度相同。 不支持百分比形式设置。设置为非法值时，按照默认值处理。 |
+| strokeWidth | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 内部图标粗细，单位vp。不支持设置百分比。设置为非法值时，按照默认值处理。默认值：2 |
 
 #### ModalTransition10+
 
@@ -639,16 +653,20 @@ type CustomBuilderT<T> = (t: T) => void
 
 外描边选项设置。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 卡片能力： 从API version 11开始，该接口支持在ArkTS卡片中使用。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| width | [Dimension](#dimension10) | [EdgeOutlineWidths](#edgeoutlinewidths11对象说明) | 否 | 是 | 设置外描边宽度，不支持百分比。 默认值：0，外描边效果中width为必设项，否则不显示外描边。 |
-| color | [ResourceColor](#resourcecolor) | [EdgeColors](#edgecolors9) | [LocalizedEdgeColors](#localizededgecolors12)12+ | 否 | 是 | 设置外描边颜色。 默认值：Color.Black |
-| radius | [Dimension](#dimension10) | [OutlineRadiuses](#outlineradiuses11对象说明) | 否 | 是 | 设置外描边圆角半径，不支持百分比。 默认值：0 最大生效值：组件width/2 + outlineWidth或组件height/2 + outlineWidth。 |
-| style | [OutlineStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-outline#outlinestyle枚举说明) | [EdgeOutlineStyles](#edgeoutlinestyles11对象说明) | 否 | 是 | 设置外描边样式。 默认值：OutlineStyle.SOLID |
+| width | [EdgeOutlineWidths](#edgeoutlinewidths11对象说明) | [Dimension](#dimension10) | 否 | 是 | 设置外描边宽度，不支持百分比。 默认值：0，外描边效果中width为必设项，否则不显示外描边。 |
+| color | [EdgeColors](#edgecolors9) | [ResourceColor](#resourcecolor) | [LocalizedEdgeColors](#localizededgecolors12)12+ | 否 | 是 | 设置外描边颜色。 默认值：Color.Black |
+| radius | [OutlineRadiuses](#outlineradiuses11对象说明) | [Dimension](#dimension10) | 否 | 是 | 设置外描边圆角半径，不支持百分比。 默认值：0 最大生效值：组件width/2 + outlineWidth或组件height/2 + outlineWidth。 |
+| style | [EdgeOutlineStyles](#edgeoutlinestyles11对象说明) | [OutlineStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-outline#outlinestyle枚举说明) | 否 | 是 | 设置外描边样式。 默认值：OutlineStyle.SOLID |
 
 #### EdgeOutlineWidths11+对象说明
 
@@ -748,7 +766,7 @@ type PX = { number }px
 
 type VP = { number }vp | number
 
-长度类型，用于描述以vp像素单位为单位的长度。
+长度类型，用于描述以vp为单位的长度。
 
 卡片能力： 从API version 23开始，该接口支持在ArkTS卡片中使用。
 
@@ -800,7 +818,11 @@ type LPX = { number }lpx
 
 #### Percentage10+
 
+type Percentage = { number }%
+
 长度类型，用于描述以百分比单位为单位的长度。
+
+卡片能力： 从API version 23开始，该接口支持在ArkTS卡片中使用。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -810,13 +832,13 @@ type LPX = { number }lpx
 
 | 类型 | 说明 |
 | --- | --- |
-| {number}% | 需要指定以百分比单位，如'10%'。 |
+| { number }% | 需要指定以百分比单位，如'10%'。 |
 
 #### Degree10+
 
 type Degree = ${number}deg
 
-角度类型，用于描述以deg像素单位为单位的长度。
+角度类型，用于描述以deg为单位的角度。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -826,7 +848,7 @@ type Degree = ${number}deg
 
 | 类型 | 说明 |
 | --- | --- |
-| {number}deg | 需要指定以deg像素单位，如'10deg'。 |
+| { number }deg | 需要指定以deg为单位，如'10deg'。 |
 
 #### TouchPoint11+
 
@@ -847,6 +869,8 @@ type Degree = ${number}deg
 
 type VoidCallback = () => void
 
+无参数、无返回值的函数回调类型，用于定义不需要传递数据且不返回结果的回调场景。
+
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
@@ -855,7 +879,7 @@ type VoidCallback = () => void
 
 #### Callback12+
 
-Callback<T,V = void> = (data: T) => V;
+type Callback<T, V = void> = (data: T) => V;
 
 带参数的函数回调。
 
@@ -867,7 +891,7 @@ Callback<T,V = void> = (data: T) => V;
 
 #### DividerStyleOptions12+
 
-分割线样式属性集合, 用于描述分割线相关信息。
+分割线样式属性集合，用于描述分割线相关信息。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -877,11 +901,11 @@ Callback<T,V = void> = (data: T) => V;
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| strokeWidth | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12)12+ | 否 | 是 | 分割线的线宽。 |
+| strokeWidth | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | 分割线的线宽。 |
 | color | [ResourceColor](#resourcecolor) | 否 | 是 | 分割线的颜色。 |
-| startMargin | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12)12+ | 否 | 是 | 分割线与菜单侧边起始端的距离。 |
-| endMargin | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12)12+ | 否 | 是 | 分割线与菜单侧边结束端的距离。 |
-| mode | [DividerMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#dividermode19枚举说明)19+ | 否 | 是 | 设置分割线模式。 |
+| startMargin | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | 分割线与菜单侧边起始端的距离。 |
+| endMargin | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | 分割线与菜单侧边结束端的距离。 |
+| mode19+ | [DividerMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#dividermode19枚举说明) | 否 | 是 | 设置分割线模式。 |
 
 #### ChainWeightOptions14+对象说明
 
@@ -946,7 +970,7 @@ Callback<T,V = void> = (data: T) => V;
 
 type ResponsiveFillType = PresetFillType
 
-响应式布局填充模式，用于WaterFlow、Grid、List和Swiper组件。
+响应式布局填充模式，用于WaterFlow、Grid、List、Swiper和LazyVWaterFlowLayout组件。LazyVWaterFlowLayout组件从API版本26.0.0开始支持。
 
 元服务API： 从API version 22开始，该接口支持在元服务中使用。
 
@@ -960,7 +984,7 @@ type ResponsiveFillType = PresetFillType
 
 #### ItemFillPolicy22+
 
-定义一个适用于WaterFlow、Grid、List和Swiper组件的响应式布局策略。
+定义一个适用于WaterFlow、Grid、List、Swiper和LazyVWaterFlowLayout组件的响应式布局策略。LazyVWaterFlowLayout组件从API版本26.0.0开始支持。
 
 元服务API： 从API version 22开始，该接口支持在元服务中使用。
 
@@ -997,11 +1021,11 @@ type ResponsiveFillType = PresetFillType
 
 以水平方向Bias为例，其值为组件到左锚点的距离 Dstart与组件到水平方向锚点间总距离 Dstart + Dend的比值。镜像语言下，Dstart为组件到右锚点的距离。下图中Dwidth表示组件宽度。
 
-![](./img/zh-cn_image_0000002664210123.png)
+![](./img/zh-cn_image_0000002655849050.png)
 
 竖直方向同理，其值为组件到上锚点的距离Dtop与组件到竖直方向锚点间总距离Dtop + Dbottom的比值。下图中Dheight表示组件高度。
 
-![](./img/zh-cn_image_0000002664330181.png)
+![](./img/zh-cn_image_0000002686088481.png)
 
 卡片能力： 从API version 11开始，该接口支持在ArkTS卡片中使用。
 
@@ -1063,3 +1087,40 @@ type ResponsiveFillType = PresetFillType
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | scrollStep | number | 否 | 是 | 无障碍手势触发的无障碍滚动操作中的组件操作步数。默认值基于组件默认值。 不支持的组件配置不生效。 当前支持组件：[slider](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-slider)，用于slider组件聚焦后通过手势上下扫动触发slider组件的滑动操作。滑动距离：scrollStep*[step](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-slider#slideroptions对象说明)。取值范围：[1, ([max](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-slider#slideroptions对象说明) - [min](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-slider#slideroptions对象说明))/[step](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-slider#slideroptions对象说明)]，默认值为1。超出取值范围时取默认值1；在取值范围内，scrollStep为非整数时向下取整。 |
+
+#### AccessibilityNextFocusParams
+
+定义无障碍自定义下一个焦点处理过程中可使用的详细参数对象。
+
+起始版本： 26.0.0
+
+卡片能力： 从API版本26.0.0开始，该接口支持在ArkTS卡片中使用。
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| isConsiderDescendants | boolean | 否 | 是 | 是否在无障碍自定义下一个焦点处理过程中查找后代节点中的焦点。 true表示在无障碍自定义下一个焦点处理过程中查找后代节点中的焦点；false表示在无障碍自定义下一个焦点处理过程中不查找后代节点中的焦点。 默认值：false |
+
+#### AccessibilityCustomAction
+
+自定义无障碍操作接口。
+
+起始版本： 26.0.0
+
+卡片能力： 从API版本26.0.0开始，该接口支持在ArkTS卡片中使用。
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| name | [ResourceStr](#resourcestr) | 否 | 否 | 自定义操作的名称，用于标识和绑定操作回调。 **说明：** 名称的文本长度需在128字节以内，超出部分将被截断。 |
+| onAction | [VoidCallback](#voidcallback12) | 否 | 否 | 处理自定义操作的回调。 |

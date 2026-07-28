@@ -2,25 +2,23 @@
 title: "Matrix2D"
 upstream_id: "harmonyos-references/ts-components-canvas-matrix2d"
 catalog: "harmonyos-references"
-content_hash: "b08cb7332d61"
-synced_at: "2026-07-09T00:58:03.673353"
+content_hash: "c45abfad6d0e"
+synced_at: "2026-07-28T16:46:35.609336"
 ---
 
 # Matrix2D
 
-用于画布绘制[CanvasRenderingContext2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-canvasrenderingcontext2d)、[OffscreenCanvasRenderingContext2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-offscreencanvasrenderingcontext2d)、[CanvasPattern](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-components-canvas-canvaspattern)和[Path2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-components-canvas-path2d)的矩阵对象，可以对矩阵进行缩放、旋转和平移等变换。
+用于[CanvasRenderingContext2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-canvasrenderingcontext2d)、[OffscreenCanvasRenderingContext2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-offscreencanvasrenderingcontext2d)、[CanvasPattern](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-components-canvas-canvaspattern)和[Path2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-components-canvas-path2d)图形变换的矩阵对象，可以对矩阵进行缩放、旋转和平移等变换。
 
 Matrix2D的使用场景包括：
 
-1. [CanvasRenderingContext2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-canvasrenderingcontext2d)和[OffscreenCanvasRenderingContext2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-offscreencanvasrenderingcontext2d)中调用[getTransform](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-canvasrenderingcontext2d#gettransform)接口获取画布的图形变换矩阵Matrix2D对象，调用[setTransform](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-canvasrenderingcontext2d#settransform-1)接口对后续绘制内容进行Matrix2D对象对应的图形变换。
+1. [CanvasRenderingContext2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-canvasrenderingcontext2d)和[OffscreenCanvasRenderingContext2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-offscreencanvasrenderingcontext2d)中调用[getTransform](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-components-canvas-common-method#gettransform)接口获取画布的图形变换矩阵Matrix2D对象，调用[setTransform](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-components-canvas-common-method#settransform-1)接口对后续绘制内容进行Matrix2D对象对应的图形变换。
 2. [CanvasPattern](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-components-canvas-canvaspattern)中调用[setTransform](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-components-canvas-canvaspattern#settransform)接口对[CanvasPattern](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-components-canvas-canvaspattern)对象进行Matrix2D对象对应的图形变换。
 3. [Path2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-components-canvas-path2d)中调用[addPath](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-components-canvas-path2d#addpath)接口对[Path2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-components-canvas-path2d)对象进行Matrix2D对象对应的图形变换。
 
-![](./img/note_3.0-zh-cn.png) 从 API version 8 开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 8开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
-#### 接口
-
-#### [h2]constructor10+
+#### constructor10+
 
 constructor()
 
@@ -34,7 +32,7 @@ constructor()
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-#### [h2]constructor12+
+#### constructor12+
 
 constructor(unit: LengthMetricsUnit)
 
@@ -52,7 +50,7 @@ constructor(unit: LengthMetricsUnit)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| unit | [LengthMetricsUnit](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetricsunit12) | 是 | 用来配置Matrix2D对象的单位模式，配置后无法动态更改，配置方法同[CanvasRenderingContext2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-canvasrenderingcontext2d)。 异常值NaN和Infinity按默认值处理。 默认值：DEFAULT |
+| unit | [LengthMetricsUnit](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetricsunit12) | 是 | 用来配置Matrix2D对象的单位模式，配置后无法动态更改，配置方法同[CanvasRenderingContext2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-canvasrenderingcontext2d)。 默认值：DEFAULT 异常值NaN和Infinity按默认值处理。 |
 
 #### 属性
 
@@ -64,12 +62,12 @@ constructor(unit: LengthMetricsUnit)
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| scaleX | number | 否 | 是 | 水平缩放系数，取值范围无限制。 异常值undefined按无效值处理，NaN和Infinity会导致Matrix2D异常，设置后绘制内容不显示。 |
-| scaleY | number | 否 | 是 | 垂直缩放系数，取值范围无限制。 异常值undefined按无效值处理，NaN和Infinity会导致Matrix2D异常，设置后绘制内容不显示。 |
-| rotateX | number | 否 | 是 | 水平倾斜系数，取值范围无限制。 异常值undefined按无效值处理，NaN和Infinity会导致Matrix2D异常，设置后绘制内容不显示。 |
-| rotateY | number | 否 | 是 | 垂直倾斜系数，取值范围无限制。 异常值undefined按无效值处理，NaN和Infinity会导致Matrix2D异常，设置后绘制内容不显示。 |
-| translateX | number | 否 | 是 | 水平平移距离，取值范围无限制。 异常值undefined按无效值处理，NaN和Infinity会导致Matrix2D异常，设置后绘制内容不显示。 默认单位：vp |
-| translateY | number | 否 | 是 | 垂直平移距离，取值范围无限制。 异常值undefined按无效值处理，NaN和Infinity会导致Matrix2D异常，设置后绘制内容不显示。 默认单位：vp |
+| scaleX | number | 否 | 是 | 水平缩放系数，取值范围无限制。值大于1时放大，小于1时缩小，负值时水平翻转。 默认值：1 异常值undefined按无效值处理，NaN和Infinity会导致Matrix2D异常，设置后绘制内容不显示。 |
+| scaleY | number | 否 | 是 | 垂直缩放系数，取值范围无限制。值大于1时放大，小于1时缩小，负值时垂直翻转。 默认值：1 异常值undefined按无效值处理，NaN和Infinity会导致Matrix2D异常，设置后绘制内容不显示。 |
+| rotateX | number | 否 | 是 | 水平倾斜系数，取值范围无限制。 默认值：0 异常值undefined按无效值处理，NaN和Infinity会导致Matrix2D异常，设置后绘制内容不显示。 |
+| rotateY | number | 否 | 是 | 垂直倾斜系数，取值范围无限制。 默认值：0 异常值undefined按无效值处理，NaN和Infinity会导致Matrix2D异常，设置后绘制内容不显示。 |
+| translateX | number | 否 | 是 | 水平平移距离，取值范围无限制。 默认值：0 异常值undefined按无效值处理，NaN和Infinity会导致Matrix2D异常，设置后绘制内容不显示。 默认单位：vp |
+| translateY | number | 否 | 是 | 垂直平移距离，取值范围无限制。 默认值：0 异常值undefined按无效值处理，NaN和Infinity会导致Matrix2D异常，设置后绘制内容不显示。 默认单位：vp |
 
 ![](./img/note_3.0-zh-cn.png) 可使用[px2vp](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#px2vp12)接口进行单位转换。
 
@@ -107,15 +105,13 @@ struct Parameter {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732785.png)
+ ![](./img/zh-cn_image_0000002686088269.png)
 
-#### 方法
-
-#### [h2]identity
+#### identity
 
 identity(): Matrix2D
 
-创建单位矩阵。
+创建单位矩阵。常用于重置变换矩阵，清除之前的所有变换操作，使后续绘制内容不受之前的变换影响。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -127,7 +123,7 @@ identity(): Matrix2D
 
 | 类型 | 说明 |
 | --- | --- |
-| Matrix2D | 单位矩阵。 |
+| Matrix2D | 单位矩阵，可用于初始化或重置图形变换状态。 |
 
 示例：
 
@@ -158,13 +154,13 @@ struct Identity {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253664.png)
+ ![](./img/zh-cn_image_0000002685928439.png)
 
-#### [h2]invert
+#### invert
 
 invert(): Matrix2D
 
-获取当前矩阵的逆矩阵。
+获取当前矩阵的逆矩阵。常用于撤销之前的变换操作，或计算反向变换，实现坐标系的反向映射。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -176,7 +172,7 @@ invert(): Matrix2D
 
 | 类型 | 说明 |
 | --- | --- |
-| Matrix2D | 逆矩阵结果。 |
+| Matrix2D | 逆矩阵结果，可用于反向变换或撤销之前的变换操作。 |
 
 示例：
 
@@ -213,17 +209,17 @@ struct Invert {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612845.png)
+ ![](./img/zh-cn_image_0000002656008762.png)
 
-#### [h2]multiply(deprecated)
+#### multiply(deprecated)
 
 multiply(other?: Matrix2D): Matrix2D
 
-当前矩阵与目标矩阵相乘。
-
-卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。该接口为空接口。
+当前矩阵与目标矩阵相乘。此接口为空接口，无实际效果。
 
 该接口从API version 10开始废弃，且无实际绘制效果，故不提供示例。
+
+卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。该接口为空接口。
 
 参数：
 
@@ -235,30 +231,30 @@ multiply(other?: Matrix2D): Matrix2D
 
 | 类型 | 说明 |
 | --- | --- |
-| Matrix2D | 相乘结果矩阵。 |
+| Matrix2D | 此接口为空实现，返回值无实际意义。 |
 
-#### [h2]rotate(deprecated)
+#### rotate(deprecated)
 
 rotate(rx?: number, ry?: number): Matrix2D
 
-对当前矩阵进行旋转运算。
+对当前矩阵进行旋转运算。此接口为空接口，无实际效果。
+
+![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 10开始废弃。建议使用[rotate](#rotate10)替代。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。该接口为空接口。
-
-该接口从API version 10开始废弃，推荐使用[rotate](#rotate10)。
 
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| rx | number | 否 | 旋转点的水平方向坐标，取值范围无限制。 异常值undefined和null按无效值处理，NaN和Infinity会导致Matrix2D异常。 默认单位：vp |
-| ry | number | 否 | 旋转点的垂直方向坐标，取值范围无限制。 异常值undefined和null按无效值处理，NaN和Infinity会导致Matrix2D异常。 默认单位：vp |
+| rx | number | 否 | 旋转点的水平方向坐标，取值范围无限制。 默认单位：vp 异常值undefined和null按无效值处理，NaN和Infinity会导致Matrix2D异常。 默认值：0 |
+| ry | number | 否 | 旋转点的垂直方向坐标，取值范围无限制。 默认单位：vp 异常值undefined和null按无效值处理，NaN和Infinity会导致Matrix2D异常。 默认值：0 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| Matrix2D | 旋转后结果矩阵对象。 |
+| Matrix2D | 旋转后结果矩阵对象，可用于对图形进行旋转变换。 |
 
 示例：
 
@@ -295,13 +291,13 @@ struct Rotate {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413556.png)
+ ![](./img/zh-cn_image_0000002655848842.png)
 
-#### [h2]rotate10+
+#### rotate10+
 
 rotate(degree: number, rx?: number, ry?: number): Matrix2D
 
-以旋转点为中心，对当前矩阵进行右乘旋转运算。
+以旋转点为中心，对当前矩阵进行左乘旋转运算。常用于图形旋转动画或图片旋转处理等场景。
 
 卡片能力： 从API version 10开始，该接口支持在ArkTS卡片中使用。
 
@@ -313,7 +309,7 @@ rotate(degree: number, rx?: number, ry?: number): Matrix2D
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| degree | number | 是 | 旋转角度，取值范围无限制。顺时针方向为正弧度，可以通过角度 * Math.PI / 180将角度转换为弧度值传入该接口。 异常值undefined和null按无效值处理，NaN和Infinity会导致Matrix2D异常。 默认单位：弧度 |
+| degree | number | 是 | 旋转角度（弧度值），取值范围无限制。顺时针方向为正值，可以通过角度 * Math.PI / 180将角度转换为弧度值传入该接口。 异常值undefined和null按无效值处理，NaN和Infinity会导致Matrix2D异常。 默认单位：弧度 |
 | rx | number | 否 | 旋转点的水平方向坐标，取值范围无限制。 默认单位：vp 异常值undefined和null按无效值处理，NaN和Infinity会导致Matrix2D异常。 默认值：0 |
 | ry | number | 否 | 旋转点的垂直方向坐标，取值范围无限制。 默认单位：vp 异常值undefined和null按无效值处理，NaN和Infinity会导致Matrix2D异常。 默认值：0 |
 
@@ -321,7 +317,7 @@ rotate(degree: number, rx?: number, ry?: number): Matrix2D
 
 | 类型 | 说明 |
 | --- | --- |
-| Matrix2D | 旋转后结果矩阵对象。 |
+| Matrix2D | 旋转后结果矩阵对象，可用于对图形进行旋转变换。 |
 
 示例：
 
@@ -358,13 +354,13 @@ struct Rotate {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732787.png)
+ ![](./img/zh-cn_image_0000002686088271.png)
 
-#### [h2]translate
+#### translate
 
 translate(tx?: number, ty?: number): Matrix2D
 
-对当前矩阵进行左乘平移运算。
+对当前矩阵进行左乘平移运算。常用于调整图形位置、实现位移动画或偏移画布坐标系等场景。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -383,7 +379,7 @@ translate(tx?: number, ty?: number): Matrix2D
 
 | 类型 | 说明 |
 | --- | --- |
-| Matrix2D | 平移后结果矩阵对象。 |
+| Matrix2D | 平移后结果矩阵对象，可用于对图形进行平移变换。 |
 
 示例：
 
@@ -420,13 +416,13 @@ struct Translate {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253666.png)
+ ![](./img/zh-cn_image_0000002685928441.png)
 
-#### [h2]scale
+#### scale
 
 scale(sx?: number, sy?: number): Matrix2D
 
-对当前矩阵进行右乘缩放运算。
+对当前矩阵进行左乘缩放运算。常用于图形放大缩小或翻转等场景。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -438,14 +434,14 @@ scale(sx?: number, sy?: number): Matrix2D
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| sx | number | 否 | 水平缩放比例系数，取值范围无限制。 异常值undefined和null按无效值处理，NaN和Infinity会导致Matrix2D异常。 默认值：1.0 |
-| sy | number | 否 | 垂直缩放比例系数，取值范围无限制。 异常值undefined和null按无效值处理，NaN和Infinity会导致Matrix2D异常。 默认值：1.0 |
+| sx | number | 否 | 水平缩放比例系数，取值范围无限制。值大于1时放大，小于1时缩小，负值时水平翻转。 异常值undefined和null按无效值处理，NaN和Infinity会导致Matrix2D异常。 默认值：1.0 |
+| sy | number | 否 | 垂直缩放比例系数，取值范围无限制。值大于1时放大，小于1时缩小，负值时垂直翻转。 异常值undefined和null按无效值处理，NaN和Infinity会导致Matrix2D异常。 默认值：1.0 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| Matrix2D | 缩放结果矩阵对象。 |
+| Matrix2D | 缩放结果矩阵对象，可用于对图形进行缩放变换。 |
 
 示例：
 
@@ -482,4 +478,4 @@ struct Scale {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612847.png)
+ ![](./img/zh-cn_image_0000002656008764.png)

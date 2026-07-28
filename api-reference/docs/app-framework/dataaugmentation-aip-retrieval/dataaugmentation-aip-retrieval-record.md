@@ -2,8 +2,8 @@
 title: "aip_retrieval_record.h"
 upstream_id: "harmonyos-references/dataaugmentation-aip-retrieval-record"
 catalog: "harmonyos-references"
-content_hash: "5d0354eb4d53"
-synced_at: "2026-07-09T00:59:02.589989"
+content_hash: "120abe0434d8"
+synced_at: "2026-07-28T16:50:06.222360"
 ---
 
 # aip_retrieval_record.h
@@ -11,6 +11,10 @@ synced_at: "2026-07-09T00:59:02.589989"
 #### 概述
 
 提供与检索结果相关的接口。
+
+检索结果（OH_Retrieval_Record）是知识检索操作的返回数据，包含从知识库中检索到的字段和字段取值。检索结果由多个数据库bucket数组（OH_Retrieval_RecordItem）组成，每个bucket数组对应一条匹配的记录，其中包含该记录各字段的名称和值。
+
+适用于需要从知识库中获取相关信息并进行展示的应用场景，例如：知识问答系统中获取检索结果、智能推荐中提取匹配记录等。
 
 引用文件： #include "dataaugmentation/retrieval/aip_retrieval_record.h"
 

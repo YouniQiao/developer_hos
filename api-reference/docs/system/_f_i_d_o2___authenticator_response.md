@@ -2,8 +2,8 @@
 title: "FIDO2_AuthenticatorResponse"
 upstream_id: "harmonyos-references/_f_i_d_o2___authenticator_response"
 catalog: "harmonyos-references"
-content_hash: "bdc3018d238a"
-synced_at: "2026-07-09T00:59:18.314346"
+content_hash: "bb32195e35fa"
+synced_at: "2026-07-28T16:50:30.990946"
 ---
 
 # FIDO2_AuthenticatorResponse
@@ -14,7 +14,9 @@ synced_at: "2026-07-09T00:59:18.314346"
 
 起始版本： 6.0.0(20)
 
-相关模块： [FIDO2](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey)
+相关模块： [FIDO2（通行密钥服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey)
+
+所在头文件： [fido2_api.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication_capi_header_fido2)
 
 #### 汇总
 
@@ -23,7 +25,7 @@ synced_at: "2026-07-09T00:59:18.314346"
 | 名称 | 描述 |
 | --- | --- |
 | [Uint8Buff](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_uint8_buff) [authenticatorData](#authenticatordata) | 身份认证器数据。 |
-| [Uint8Buff](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_uint8_buff) [signature](#signature) | 签名。 |
+| [Uint8Buff](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_uint8_buff) [signature](#signature) | FIDO2认证的签名信息。 |
 | [Uint8Buff](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_uint8_buff) [userHandle](#userhandle) | 用户句柄（用户ID）。默认值为空。长度限制0到4096。可选。 |
 | [Uint8Buff](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_uint8_buff) [clientDataJson](#clientdatajson) | 获取客户端数据，表示WebAuthn依赖方和客户端的上下文绑定，包含类型、挑战值及源等数据。 |
 
@@ -54,7 +56,7 @@ Uint8Buff FIDO2_AuthenticatorResponse::signature
 ```
  描述
 
-签名。
+FIDO2认证的签名信息。
 
 #### [h2]userHandle
 

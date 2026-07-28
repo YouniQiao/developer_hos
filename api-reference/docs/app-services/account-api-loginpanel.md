@@ -2,11 +2,15 @@
 title: "LoginPanel (华为账号Panel登录组件)"
 upstream_id: "harmonyos-references/account-api-loginpanel"
 catalog: "harmonyos-references"
-content_hash: "a73d3adac3e9"
-synced_at: "2026-07-09T01:01:11.665091"
+content_hash: "6f10871a4646"
+synced_at: "2026-07-28T16:52:29.387371"
 ---
 
 # LoginPanel (华为账号Panel登录组件)
+
+本模块提供LoginPanel组件，应用通过集成该组件完成华为账号登录功能。
+
+LoginPanel需要配合[loginComponentManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager)一起使用，用于实现华为账号登录功能。LoginPanel内的按钮文本默认支持多语言。
 
 起始版本： 4.1.0(11)
 

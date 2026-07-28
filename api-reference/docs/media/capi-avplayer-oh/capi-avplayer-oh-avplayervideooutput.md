@@ -2,19 +2,19 @@
 title: "OH_AVPlayerVideoOutput"
 upstream_id: "harmonyos-references/capi-avplayer-oh-avplayervideooutput"
 catalog: "harmonyos-references"
-content_hash: "1815ea828614"
-synced_at: "2026-07-09T01:00:45.536470"
+content_hash: "3975080117c2"
+synced_at: "2026-07-28T16:52:02.592123"
 ---
 
 # OH_AVPlayerVideoOutput
 
 ```
-typedef struct OH_AVPlayerVideoOutput OH_AVPlayerVideoOutput
+typedef struct OH_AVPlayerVideoOutput OH_AVPlayerVideoOutput;
 ```
 
 #### 概述
 
-OH_AVPlayerVideoOutput字段。
+OH_AVPlayerVideoOutput结构体类型定义。
 
 起始版本： 26.0.0
 

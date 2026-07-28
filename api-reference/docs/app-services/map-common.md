@@ -2,8 +2,8 @@
 title: "mapCommon（地图属性模型）"
 upstream_id: "harmonyos-references/map-common"
 catalog: "harmonyos-references"
-content_hash: "76af1f55d5e0"
-synced_at: "2026-07-09T01:01:27.751728"
+content_hash: "6023185e7e83"
+synced_at: "2026-07-28T16:52:45.603908"
 ---
 
 # mapCommon（地图属性模型）
@@ -32,9 +32,9 @@ import { mapCommon } from '@kit.MapKit';
 | --- | --- | --- | --- | --- |
 | mapType | [MapType](#maptype) | 否 | 是 | 地图类型，默认值为[MapType](#maptype).STANDARD，异常值按默认值处理。 **元服务API：** 从版本4.1.0(11)开始，该接口支持在元服务中使用。 |
 | position | [CameraPosition](#cameraposition) | 否 | 否 | 地图相机位置。 **元服务API：** 从版本4.1.0(11)开始，该接口支持在元服务中使用。 |
-| bounds | [LatLngBounds](#latlngbounds) | 否 | 是 | 地图展示边界，异常值根据无边界处理。 **元服务API：** 从版本4.1.0(11)开始，该接口支持在元服务中使用。 **说明：** 西南角纬度不能大于东北角纬度。 |
-| minZoom | number | 否 | 是 | 地图最小层级，有效范围：[2, 20]，默认值为2，异常值按默认值处理。 如果设置的最小缩放级别小于2，minZoom会取2。 **元服务API：** 从版本4.1.0(11)开始，该接口支持在元服务中使用。 |
-| maxZoom | number | 否 | 是 | 地图最大层级，有效范围：[2, 20]，默认值为20，异常值按默认值处理。 如果设置的最大缩放级别大于20，maxZoom会取20。 **元服务API：** 从版本4.1.0(11)开始，该接口支持在元服务中使用。 |
+| bounds | [LatLngBounds](#latlngbounds) | 否 | 是 | 地图展示边界，默认值无边界，异常值按默认值处理。 **元服务API：** 从版本4.1.0(11)开始，该接口支持在元服务中使用。 **说明：** 西南角纬度不能大于东北角纬度。 |
+| minZoom | number | 否 | 是 | 地图最小层级，有效范围：[2, 20]，默认值为2，异常值按默认值处理。 如果设置的最小缩放级别小于2，minZoom会取2；如果设置的最小缩放层级大于20，minZoom会取20。 **元服务API：** 从版本4.1.0(11)开始，该接口支持在元服务中使用。 |
+| maxZoom | number | 否 | 是 | 地图最大层级，有效范围：[2, 20]，默认值为20，异常值按默认值处理。 如果设置的最大缩放级别小于2，maxZoom会取2；如果设置的最大缩放层级大于20，maxZoom会取20。 **元服务API：** 从版本4.1.0(11)开始，该接口支持在元服务中使用。 |
 | rotateGesturesEnabled | boolean | 否 | 是 | 是否支持旋转手势，默认值为true，异常值按默认值处理。 - true：支持 - false：不支持 **元服务API：** 从版本4.1.0(11)开始，该接口支持在元服务中使用。 |
 | scrollGesturesEnabled | boolean | 否 | 是 | 是否支持滑动手势，默认值为true，异常值按默认值处理。 - true：支持 - false：不支持 **元服务API：** 从版本4.1.0(11)开始，该接口支持在元服务中使用。 |
 | zoomGesturesEnabled | boolean | 否 | 是 | 是否支持缩放手势，默认值为true，异常值按默认值处理。 - true：支持 - false：不支持 **元服务API：** 从版本4.1.0(11)开始，该接口支持在元服务中使用。 |
@@ -303,7 +303,7 @@ let poi: mapCommon.Poi = {
 | --- | --- | --- | --- | --- |
 | position | [LatLng](#latlng) | 否 | 否 | 标记的位置坐标。 **元服务API：** 从版本4.1.0(11)开始，该接口支持在元服务中使用。 |
 | rotation | number | 否 | 是 | 标记的旋转角度，单位：度。 以正北方向为0度、顺时针方向为正的角度，默认值为0，取值范围：[0, 360)。超出取值范围的值会换算成取值范围内的值，比如361会被换算成1，-1换算为359。 **元服务API：** 从版本4.1.0(11)开始，该接口支持在元服务中使用。 |
-| icon | string | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 是 | 图标，不传时显示默认图标。 - 图片格式支持jpg、jpeg、png、gif、webp、svg。 - string类型入参支持两种格式： - 资源相对路径格式：图标存放在resources/rawfile，icon参数传入rawfile文件夹下的相对路径。 - toDataURL格式（如data:image/png;base64,）。 **元服务API：** 从版本4.1.0(11)开始，该接口支持在元服务中使用。 **说明：** 从5.0.0(12)版本开始，icon属性支持[image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)和[Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource)类型。 |
+| icon | string | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 是 | 图标，不传时显示默认图标。 - 图片格式支持jpg、jpeg、png、gif（只支持显示第一帧）、webp、svg。 - string类型入参支持两种格式： - 资源相对路径格式：图标存放在resources/rawfile，icon参数传入rawfile文件夹下的相对路径。 - toDataURL格式（如data:image/png;base64,）。 **元服务API：** 从版本4.1.0(11)开始，该接口支持在元服务中使用。 **说明：** 从5.0.0(12)版本开始，icon属性支持[image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)和[Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource)类型。 |
 | alpha | number | 否 | 是 | 透明度，取值范围[0, 1]，0代表完全透明，1表示完全不透明，默认值为1，异常值按默认值处理。 **元服务API：** 从版本4.1.0(11)开始，该接口支持在元服务中使用。 |
 | anchorU | number | 否 | 是 | 锚点的水平坐标，以图像宽度的比例，建议取值[0, 1]，默认值为0.5，异常值按默认值处理。 **元服务API：** 从版本4.1.0(11)开始，该接口支持在元服务中使用。 |
 | anchorV | number | 否 | 是 | 锚点的垂直坐标，以图像高度的比例，建议取值[0, 1]，默认值为1，异常值按默认值处理。 **元服务API：** 从版本4.1.0(11)开始，该接口支持在元服务中使用。 |
@@ -314,7 +314,7 @@ let poi: mapCommon.Poi = {
 | snippet | string | 否 | 是 | 信息窗口的子标题，信息窗的最大宽度为136vp，超长字串超出部分用省略号“...”表示。 **元服务API：** 从版本4.1.0(11)开始，该接口支持在元服务中使用。 |
 | infoWindowAnchorU | number | 否 | 是 | 指示标记信息窗口的锚点在水平方向上的位置。值范围：[0, 1]，默认值为0.5，异常值按默认值处理。 **元服务API：** 从版本4.1.0(11)开始，该接口支持在元服务中使用。 |
 | infoWindowAnchorV | number | 否 | 是 | 指示标记信息窗口的锚点在垂直方向上的位置。值范围：[0, 1]，默认值为0，异常值按默认值处理。 **元服务API：** 从版本4.1.0(11)开始，该接口支持在元服务中使用。 |
-| altitude | number | 否 | 是 | 海拔高度，单位：m，默认值为0，异常值按默认值处理。 **起始版本：** 5.0.0(12) **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| altitude | number | 否 | 是 | 相对于地面的高度，单位：m，默认值为0，异常值按默认值处理。 **起始版本：** 5.0.0(12) **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
 | collisionRule | [CollisionRule](#collisionrule) | 否 | 是 | 标记与地图POI之间的冲突处理规则，默认值为[CollisionRule](#collisionrule).NONE。异常值按照默认值处理。 **说明：** 从5.0.3(15)版本开始，collisionRule属性支持CollisionRule.NONE和CollisionRule.ALL类型；从6.1.0(23)版本开始，collisionRule属性新增支持CollisionRule.NAME和CollisionRule.ICON_CASCADE类型。 **起始版本：** 5.0.3(15) **元服务API：** 从版本5.0.3(15)开始，该接口支持在元服务中使用。 |
 | annotations | [Text](#text)[] | 否 | 是 | 标记的注释，最小长度为1，最大长度为3。 **起始版本：** 5.0.3(15) **元服务API：** 从版本5.0.3(15)开始，该接口支持在元服务中使用。 |
 | showIcon | boolean | 否 | 是 | 是否显示标记的图标，默认值为true。根据显示的图标对异常值进行处理。 - true：显示标记的图标 - false：不显示标记的图标 **起始版本：** 5.0.3(15) **元服务API：** 从版本5.0.3(15)开始，该接口支持在元服务中使用。 |
@@ -537,7 +537,7 @@ let polylineOption: mapCommon.MapPolylineOptions = {
 | repeatable | boolean | 否 | 是 | 点注释名称与地图POI名称相同时，是否支持去重，默认值为false，异常值按默认值处理。 - true：支持去重 - false：不支持去重 **元服务API：** 从版本4.1.0(11)开始，该接口支持在元服务中使用。 **说明：** 碰撞规则为[CollisionRule](#collisionrule).NONE时，repeatable不支持设置。 |
 | collisionRule | [CollisionRule](#collisionrule) | 否 | 是 | 点注释的碰撞规则，默认值为[CollisionRule](#collisionrule).NAME，异常值按默认值处理。 **元服务API：** 从版本4.1.0(11)开始，该接口支持在元服务中使用。 **说明：** 设置碰撞规则为[CollisionRule](#collisionrule).ALL，需要同时设置覆盖物碰撞优先级priority属性。 |
 | titles | Array | 否 | 否 | 点注释的标题，数组长度最小为1，最大为3。 **元服务API：** 从版本4.1.0(11)开始，该接口支持在元服务中使用。 |
-| icon | string | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 是 | 点注释的图标，不传时使用默认图标。 - 图片格式支持jpg、jpeg、png、gif、webp、svg。 - string类型入参支持两种格式： 1. 资源相对路径格式：图标存放在resources/rawfile，icon参数传入rawfile文件夹下的相对路径。 2. toDataURL格式（如data:image/png;base64,）。 **元服务API：** 从版本4.1.0(11)开始，该接口支持在元服务中使用。 **说明：** 从5.0.0(12)版本开始，icon属性支持[image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)和[Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource)类型。 |
+| icon | string | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 是 | 点注释的图标，不传时使用默认图标。 - 图片格式支持jpg、jpeg、png、gif（只支持显示第一帧）、webp、svg。 - string类型入参支持两种格式： 1. 资源相对路径格式：图标存放在resources/rawfile，icon参数传入rawfile文件夹下的相对路径。 2. toDataURL格式（如data:image/png;base64,）。 **元服务API：** 从版本4.1.0(11)开始，该接口支持在元服务中使用。 **说明：** 从5.0.0(12)版本开始，icon属性支持[image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)和[Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource)类型。 |
 | showIcon | boolean | 否 | 是 | 点注释是否展示图标。默认值为true。 - true：展示 - false：不展示 **元服务API：** 从版本4.1.0(11)开始，该接口支持在元服务中使用。 |
 | textPosition | [TextPosition](#textposition) | 否 | 是 | 设置点注释的文本位置。 默认值为[TextPosition](#textposition).DEFAULT。 **起始版本：** 5.0.0(12) **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
 
@@ -588,7 +588,7 @@ let pointAnnotationOptions: mapCommon.PointAnnotationParams = {
 | **名称** | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
 | positions | Array> | 否 | 否 | 气泡位置，系统基于多个位置段计算图标的适当位置，异常值不处理。 |
-| icons | Array | 否 | 否 | 气泡图标，异常值不处理。 - 必须提供4个方向的图标，传入的图标宽高需要相同。 - 图片格式支持jpg、jpeg、png、gif、webp、svg。 - string类型入参支持两种格式： - 资源相对路径格式：图标存放在resources/rawfile，icon参数传入rawfile文件夹下的相对路径。 - toDataURL格式（如data:image/png;base64,）。 **说明：** 从5.0.0(12)版本开始，icon属性支持[image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)和[Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource)类型。 |
+| icons | Array | 否 | 否 | 气泡图标，异常值不处理。 - 必须提供4个方向的图标，传入的图标宽高需要相同。 - 图片格式支持jpg、jpeg、png、gif（只支持显示第一帧）、webp、svg。 - string类型入参支持两种格式： - 资源相对路径格式：图标存放在resources/rawfile，icon参数传入rawfile文件夹下的相对路径。 - toDataURL格式（如data:image/png;base64,）。 **说明：** 从5.0.0(12)版本开始，icon属性支持[image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)和[Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource)类型。 |
 
 示例：
 
@@ -917,7 +917,7 @@ export class ClusterOverlayParamsMore implements mapCommon.ClusterOverlayParams 
 | anchorV | number | 否 | 是 | 覆盖物的锚点在垂直方向上的位置。取值范围：[0,1]。默认值为0.5。 **说明：** 当bounds有值时，设置anchorV会改变覆盖物的锚点在垂直方向上的位置，不会改变bounds的范围。 |
 | bearing | number | 否 | 是 | 覆盖物的旋转角度。 以正北方向为0度、顺时针方向为正的角度，默认值为0，单位：度，取值范围：[0, 360)。超出取值范围的值会换算成取值范围内的值，比如361会被换算成1，-1换算为359。 |
 | clickable | boolean | 否 | 是 | 覆盖物是否可单击。 - true：可点击。 - false：不可点击。 默认值为false。 |
-| image | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 否 | 否 | 覆盖物的图像入参。 图片格式支持jpg、jpeg、png、gif、webp、svg。 **说明：** [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr)为Resource和string两种格式，其中string类型入参支持两种格式： - 资源相对路径格式：图标存放在resources/rawfile，image参数传入rawfile文件夹下的相对路径。 - toDataURL格式（如data:image/png;base64,）。 |
+| image | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 否 | 否 | 覆盖物的图像入参。 图片格式支持jpg、jpeg、png、gif（只支持显示第一帧）、webp、svg。 **说明：** [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr)为Resource和string两种格式，其中string类型入参支持两种格式： - 资源相对路径格式：图标存放在resources/rawfile，image参数传入rawfile文件夹下的相对路径。 - toDataURL格式（如data:image/png;base64,）。 |
 | transparency | number | 否 | 是 | 覆盖物的透明度。 取值范围：[0, 1]。 0表示不透明，1表示全透明。 默认值为0。 |
 
 示例：
@@ -1132,7 +1132,7 @@ let buildingOverlayOptions: mapCommon.BuildingOverlayParams =
 
 | **名称** | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
-| image | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 否 | 否 | 纹理图片。 图片格式支持jpg、jpeg、png、gif、webp、svg。 **说明：** [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr)为Resource和string两种格式，其中string类型入参支持两种格式： - 资源相对路径格式：图标存放在resources/rawfile，image参数传入rawfile文件夹下的相对路径。 - toDataURL格式（如data:image/png;base64,）。 |
+| image | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 否 | 否 | 纹理图片。 图片格式支持jpg、jpeg、png、gif（只支持显示第一帧）、webp、svg。 **说明：** [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr)为Resource和string两种格式，其中string类型入参支持两种格式： - 资源相对路径格式：图标存放在resources/rawfile，image参数传入rawfile文件夹下的相对路径。 - toDataURL格式（如data:image/png;base64,）。 |
 | width | number | 否 | 是 | 纹理宽度，单位：m，取值大于等于0，默认值为3，异常值按默认值处理。 |
 | height | number | 否 | 是 | 纹理高度，单位：m，取值大于等于0，默认值为3，异常值按默认值处理。 |
 
@@ -1601,7 +1601,7 @@ type TileProvider = (x: number, y: number, z: number) => Promise<ArrayBuffer>
 | **名称** | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
 | fillColor | number | [Expression](#expression) | 否 | 是 | 填充颜色，默认值：0x000000，异常值按默认值处理。支持： - 十六进制RGB格式。 - 从矢量图层数据的属性中读取。 |
-| fillOpacity | number | [Expression](#expression) | 否 | 是 | 填充不透明度，默认值：0，异常值按默认值处理。支持： - 介于0到1之间的数字。 - 从矢量图层数据的属性中读取。 |
+| fillOpacity | number | [Expression](#expression) | 否 | 是 | 填充不透明度，默认值：0，异常值按默认值处理。支持： - 取值范围为[0, 1]，0表示完全透明，1表示完全不透明。 - 从矢量图层数据的属性中读取。 |
 
 #### MvtLayerType
 
@@ -1726,6 +1726,68 @@ type TileProvider = (x: number, y: number, z: number) => Promise<ArrayBuffer>
 | icon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 否 | 否 | 海量点的图标。 |
 | anchorU | number | 否 | 是 | 图标锚点在水平方向上的位置，取值范围：[0, 1]，默认值：0.5。 |
 | anchorV | number | 否 | 是 | 图标锚点在垂直方向上的位置，取值范围：[0, 1]，默认值：0.5。 |
+
+#### LineText
+
+提供地图线段的文本。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.Map.Core
+
+起始版本： 26.0.0
+
+| **名称** | **类型** | 只读 | 可选 | **说明** |
+| --- | --- | --- | --- | --- |
+| lineNames | string[] | 否 | 否 | 分段行文本内容列表。 |
+| lineNameIndexes | number[] | 否 | 否 | 用于在段中显示文本的段线范围。 **说明：** - 每个值必须大于等于0。 - 值序列必须单调不递减。 - LineNameIndexes数组长度必须是lineNames数组长度的两倍。 如果违反任何一个条件，则该参数将被视为无效参数。 |
+| nameOnRight | boolean | 否 | 是 | 显示在行的哪一边的文本。 - true：右侧。 - false：左侧。 默认值：true，异常值按默认值处理。 |
+| color | number | 否 | 是 | 文字内容的颜色，颜色值采用ARGB格式，默认值：0xFF000000，异常值按默认值处理。 |
+| fontSize | number | 否 | 是 | 文字内容的字体大小，默认值：15，单位：px，取值范围：[0, 100]，超出按边界值处理，null和undefined按默认值处理。 |
+| strokeColor | number | 否 | 是 | 文本内容描边颜色，颜色值采用ARGB格式，默认值：0xFFFFFFFF，异常值按默认值处理。 |
+| fontStyle | [FontStyle](#fontstyle) | 否 | 是 | 文字内容的字体样式，默认值：[FontStyle](#fontstyle).REGULAR，异常值按默认值处理。 |
+
+#### SphereParams
+
+3D地球的属性，包括启用晨昏线、城市灯光、动画持续时间、背景和覆盖物。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.Map.Core
+
+起始版本： 26.0.0
+
+| **名称** | **类型** | 只读 | 可选 | **说明** |
+| --- | --- | --- | --- | --- |
+| sunLightEnabled | boolean | 否 | 是 | 是否启用晨昏线。 - true：启用晨昏线。 - false：关闭晨昏线。 默认值：true，异常值按默认值处理。 **说明：** 晨昏线是地球表面上太阳光照范围的分界线，将地球分为白天和黑夜两个区域。晨昏线在地球上的位置会随着地球自转和公转而不断变化。 |
+| cityLightEnabled | boolean | 否 | 是 | 是否启用城市灯光，默认值：true，异常值按默认值处理。 - true：启用城市灯光。 - false：关闭城市灯光。 |
+| animateDuration | number | 否 | 是 | 动画持续时间，单位ms，取值范围：不小于0，异常值按默认值处理。 |
+| backgroundImage | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 否 | 是 | 3D地球的背景。 |
+| coverageImage | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 否 | 是 | 3D地球的覆盖物。 |
+
+#### MapSignalParams
+
+信号路线的属性，继承[BaseOverlayOptions](#baseoverlayoptions)。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.Map.Core
+
+起始版本： 26.0.0
+
+| **名称** | **类型** | 只读 | 可选 | **说明** |
+| --- | --- | --- | --- | --- |
+| signalId | string | 否 | 否 | 信号路线ID，空值不处理。 **说明：** 成功添加信号路线后，Map Kit会在应用进程内存中缓存signalId。删除路线时，默认保留该缓存，以便在应用进程存活期间，可无需网络直接重新添加已缓存的信号路线。 如果需要删除缓存的signalId，请调用[removeSignalLineCache](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#removesignallinecache)接口。 |
+| points | [LatLng](#latlng)[] | 否 | 是 | 信号路线的顶点，长度范围为[0, 10000]，路线长度小于200km，空值返回401。 |
+| colors | number[] | 否 | 是 | 信号路线的颜色，长度必须为3。三段颜色依次对应弱、中、强信号，ARGB格式，默认值：[0xFFFC3C11, 0xFFFFDF42, 0xFF42B0FF]（红、黄、蓝），数组长度必须为3，异常值按照默认值处理。 |
+| width | number | 否 | 是 | 信号路线的宽度，范围为[0, 512]，默认值：10，单位：px，传入值大于512按512处理，小于0按10处理，空值按默认值处理。 |
+| coordinateType | [CoordinateType](#coordinatetype) | 否 | 是 | 表示坐标系类型，默认值[CoordinateType.GCJ02](#coordinatetype)，异常值按默认值处理。 |
 
 #### MapType
 
@@ -1890,6 +1952,8 @@ type TileProvider = (x: number, y: number, z: number) => Promise<ArrayBuffer>
 | FOLLOW | 2 | 连续定位，且将相机移动到地图中心点，定位蓝点跟随设备移动。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
 | FOLLOW_ROTATE | 3 | 连续定位，且将相机移动到地图中心点，定位蓝点依照设备方向旋转，并且会跟随设备移动。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 **说明：** 需要权限：ohos.permission.ACCELEROMETER。 |
 | TRACK_ROTATE | 4 | 连续定位，位置图标会跟随设备的移动并根据设备方向旋转，但不会移动到地图中心。 **起始版本：** 6.0.0(20) **元服务API：** 从版本6.0.0(20)开始，该接口支持在元服务中使用。 **说明：** 需要权限：ohos.permission.ACCELEROMETER。 |
+| MAP_ROTATE | 5 | 持续获取定位，相机移动到地图的中心点。定位的蓝点会随着设备移动，地图也会根据设备的方向进行旋转。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **说明：** 需要权限：ohos.permission.ACCELEROMETER。 |
+| MAP_ROTATE_NO_CENTER | 6 | 持续获取定位，相机不会移动到地图中心点。定位的蓝点会随着设备移动，地图也会根据设备的方向进行旋转。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **说明：** 需要权限：ohos.permission.ACCELEROMETER。 |
 
 #### DayNightMode
 

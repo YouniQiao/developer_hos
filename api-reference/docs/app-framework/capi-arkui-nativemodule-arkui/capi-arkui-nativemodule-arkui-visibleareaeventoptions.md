@@ -2,8 +2,8 @@
 title: "ArkUI_VisibleAreaEventOptions"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-visibleareaeventoptions"
 catalog: "harmonyos-references"
-content_hash: "602cea15505e"
-synced_at: "2026-07-09T00:58:44.589896"
+content_hash: "9fee84765deb"
+synced_at: "2026-07-28T16:49:37.359213"
 ---
 
 # ArkUI_VisibleAreaEventOptions
@@ -14,28 +14,28 @@ typedef struct ArkUI_VisibleAreaEventOptions ArkUI_VisibleAreaEventOptions
 
 #### 概述
 
-可见区域变化监听的参数。
+ArkUI_VisibleAreaEventOptions用于配置可见区域变化监听的参数，包括阈值数组、预期更新间隔和可见区域计算模式。该类型可用于根据组件可见比例加载或释放资源，适用于需要监听组件可见区域变化并按指定阈值触发更新的场景。
 
-开发者在使用该类型时，首先需要调用[OH_ArkUI_VisibleAreaEventOptions_Create](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#oh_arkui_visibleareaeventoptions_create)创建一个ArkUI_VisibleAreaEventOptions参数对象。然后可通过如下接口配置监听行为：
+开发者在使用该类型时，首先需要调用[OH_ArkUI_VisibleAreaEventOptions_Create](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-common-attributes-h#oh_arkui_visibleareaeventoptions_create)创建一个ArkUI_VisibleAreaEventOptions参数对象。创建成功后可通过如下接口配置监听行为：
 
-使用[OH_ArkUI_VisibleAreaEventOptions_SetRatios](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#oh_arkui_visibleareaeventoptions_setratios)设置阈值数组，定义触发可见区域变化的阈值条件。
+使用[OH_ArkUI_VisibleAreaEventOptions_SetRatios](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-common-attributes-h#oh_arkui_visibleareaeventoptions_setratios)设置阈值数组，定义触发可见区域变化的阈值条件。
 
-使用[OH_ArkUI_VisibleAreaEventOptions_SetExpectedUpdateInterval](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#oh_arkui_visibleareaeventoptions_setexpectedupdateinterval)设置预期更新间隔。
+使用[OH_ArkUI_VisibleAreaEventOptions_SetExpectedUpdateInterval](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-common-attributes-h#oh_arkui_visibleareaeventoptions_setexpectedupdateinterval)设置预期更新间隔，定义两次可见区域变化通知之间的最小时间间隔。
 
-使用[OH_ArkUI_VisibleAreaEventOptions_SetMeasureFromViewport](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#oh_arkui_visibleareaeventoptions_setmeasurefromviewport)设置可见区域的计算模式。
+使用[OH_ArkUI_VisibleAreaEventOptions_SetMeasureFromViewport](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-common-attributes-h#oh_arkui_visibleareaeventoptions_setmeasurefromviewport)设置可见区域计算模式，定义是否从视口区域计算可见比例。
 
 如需获取已设置的参数值，可使用：
 
-[OH_ArkUI_VisibleAreaEventOptions_GetRatios](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#oh_arkui_visibleareaeventoptions_getratios)获取阈值数组。
+[OH_ArkUI_VisibleAreaEventOptions_GetRatios](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-common-attributes-h#oh_arkui_visibleareaeventoptions_getratios)获取阈值数组。
 
-[OH_ArkUI_VisibleAreaEventOptions_GetExpectedUpdateInterval](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#oh_arkui_visibleareaeventoptions_getexpectedupdateinterval)获取预期更新间隔。
+[OH_ArkUI_VisibleAreaEventOptions_GetExpectedUpdateInterval](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-common-attributes-h#oh_arkui_visibleareaeventoptions_getexpectedupdateinterval)获取预期更新间隔。
 
-[OH_ArkUI_VisibleAreaEventOptions_GetMeasureFromViewport](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#oh_arkui_visibleareaeventoptions_getmeasurefromviewport)获取可见区域计算模式。
+[OH_ArkUI_VisibleAreaEventOptions_GetMeasureFromViewport](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-common-attributes-h#oh_arkui_visibleareaeventoptions_getmeasurefromviewport)获取可见区域计算模式。
 
-使用完毕后，应调用[OH_ArkUI_VisibleAreaEventOptions_Dispose](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#oh_arkui_visibleareaeventoptions_dispose)释放资源。
+当不再需要该ArkUI_VisibleAreaEventOptions对象时，应调用[OH_ArkUI_VisibleAreaEventOptions_Dispose](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-common-attributes-h#oh_arkui_visibleareaeventoptions_dispose)释放资源。
 
 起始版本： 17
 
 相关模块： [ArkUI_NativeModule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule)
 
-所在头文件： [native_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h)
+所在头文件： [common_attributes.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-common-attributes-h)

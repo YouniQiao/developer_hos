@@ -1,12 +1,10 @@
 ---
-
 title: "系统定义的公共事件"
 upstream_id: "harmonyos-references/commoneventmanager-definitions"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T00:59:41.603668"
-content_hash: "382f4c3f0f67"
+content_hash: "ba9220eeae92"
+synced_at: "2026-07-28T16:50:58.783575"
 ---
-
 
 # 系统定义的公共事件
 
@@ -78,7 +76,7 @@ content_hash: "382f4c3f0f67"
 
 在设备上指定用户下安装了新的应用程序，将会触发事件通知服务发布该系统公共事件。
 
-![](./img/note_3.0-zh-cn.png) 三方应用只能监听自身应用的安装事件。
+![](./img/note_3.0-zh-cn.png) 三方应用默认只能监听自身应用的安装事件。若三方应用需要监听InHouse应用的安装事件，需要被监听的InHouse应用在app.json5的[allowListenBundleChangedEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file)中配置本应用的[appIdentifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appidentifier)。
 
 系统能力： SystemCapability.Notification.CommonEvent
 
@@ -92,7 +90,7 @@ content_hash: "382f4c3f0f67"
 
 在设备指定用户下卸载指定的应用程序包，将会触发事件通知服务发布该系统公共事件。
 
-![](./img/note_3.0-zh-cn.png) 三方应用只能监听自身应用的卸载事件。
+![](./img/note_3.0-zh-cn.png) 三方应用默认只能监听自身应用的卸载事件。若三方应用需要监听InHouse应用的卸载事件，需要被监听的InHouse应用在app.json5的[allowListenBundleChangedEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file)中配置本应用的[appIdentifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appidentifier)。
 
 系统能力： SystemCapability.Notification.CommonEvent
 
@@ -102,7 +100,7 @@ content_hash: "382f4c3f0f67"
 
 #### [h2]COMMON_EVENT_BUNDLE_REMOVED
 
-表示现有的应用程序包从设备中移除的事件。
+（预留事件，暂未支持）表示现有的应用程序包从设备中移除的事件。
 
 系统能力： SystemCapability.Notification.CommonEvent
 
@@ -124,9 +122,9 @@ content_hash: "382f4c3f0f67"
 
 表示应用包已更改的公共事件的动作（例如，包中的组件已启用或禁用）。
 
-在设备上安装的应用程序包更新或者包的组件被禁用使能，将会触发事件通知服务发布该系统公共事件。
+在设备上安装的应用程序包更新或者包的组件被启用/禁用，将会触发事件通知服务发布该系统公共事件。
 
-![](./img/note_3.0-zh-cn.png) 三方应用只能监听自身应用的更改事件。
+![](./img/note_3.0-zh-cn.png) 三方应用默认只能监听自身应用的更改事件。若三方应用需要监听InHouse应用的更新事件，需要被监听的InHouse应用在app.json5的[allowListenBundleChangedEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file)中配置本应用的[appIdentifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appidentifier)。
 
 系统能力： SystemCapability.Notification.CommonEvent
 
@@ -140,7 +138,7 @@ content_hash: "382f4c3f0f67"
 
 对设备上安装的应用程序包清除缓存时，将会触发事件通知服务发布该系统公共事件。
 
-![](./img/note_3.0-zh-cn.png) 三方应用只能监听自身应用的缓存清理事件。
+![](./img/note_3.0-zh-cn.png) 三方应用默认只能监听自身应用的缓存清理事件。若三方应用需要监听InHouse应用的缓存清理事件，需要被监听的InHouse应用在app.json5的[allowListenBundleChangedEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file)中配置本应用的[appIdentifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appidentifier)。
 
 系统能力： SystemCapability.Notification.CommonEvent
 
@@ -150,7 +148,7 @@ content_hash: "382f4c3f0f67"
 
 #### [h2]COMMON_EVENT_PACKAGES_SUSPENDED
 
-表示包已经被挂起。
+（预留事件，暂未支持）表示包已经被挂起。
 
 系统能力： SystemCapability.Notification.CommonEvent
 
@@ -160,7 +158,7 @@ content_hash: "382f4c3f0f67"
 
 #### [h2]COMMON_EVENT_MY_PACKAGE_SUSPENDED
 
-发送到已被系统挂起的包。
+（预留事件，暂未支持）发送到已被系统挂起的包。
 
 系统能力： SystemCapability.Notification.CommonEvent
 
@@ -170,7 +168,7 @@ content_hash: "382f4c3f0f67"
 
 #### [h2]COMMON_EVENT_MY_PACKAGE_UNSUSPENDED
 
-发送到已被系统解除挂起的包。
+（预留事件，暂未支持）发送到已被系统解除挂起的包。
 
 系统能力： SystemCapability.Notification.CommonEvent
 
@@ -187,6 +185,22 @@ content_hash: "382f4c3f0f67"
 订阅者所需权限： 无
 
 取值： "usual.event.MANAGE_PACKAGE_STORAGE"
+
+#### [h2]COMMON_EVENT_SKILL_CHANGED26+
+
+表示设备上应用的skill发生变化的公共事件。
+
+在设备上指定用户下安装、更新、卸载了包含skill的应用程序，将会触发事件通知服务发布该系统公共事件。
+
+![](./img/note_3.0-zh-cn.png) 应用默认只能接收自身应用的skill变化事件。
+
+申请ohos.permission.MANAGE_SKILL_PRIVILEGE权限后能接收自身应用和其他应用的skill变化事件。
+
+系统能力： SystemCapability.Notification.CommonEvent
+
+订阅者所需权限： 无
+
+取值： "usual.event.SKILL_CHANGED"
 
 #### Account Kit
 
@@ -394,7 +408,7 @@ datashare服务启动完成后，将会触发事件通知服务发布该系统�
 
 表示分布式账号登录成功的动作。
 
-分布式账号登录成功时会触发事件通知服务发布该系统公共事件，事件携带系统账号ID。
+分布式账号登录成功时会触发事件通知服务发布该系统公共事件，事件携带系统账号ID和子身份ID。
 
 与这个公共事件相关的接口：setOsAccountDistributedInfo、updateOsAccountDistributedInfo(已废弃)，这些为公共API，setOsAccountDistributedInfoByLocalId为系统API，具体参看[分布式账号接口文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributed-account)。
 
@@ -410,7 +424,7 @@ datashare服务启动完成后，将会触发事件通知服务发布该系统�
 
 表示分布式账号登出成功的动作。
 
-分布式账号登出时会触发事件通知服务发布该系统公共事件，事件携带系统账号ID。
+分布式账号登出时会触发事件通知服务发布该系统公共事件，事件携带系统账号ID和子身份ID。
 
 与这个公共事件相关的接口：setOsAccountDistributedInfo、updateOsAccountDistributedInfo(已废弃)，这些为公共API，setOsAccountDistributedInfoByLocalId为系统API，具体参看[分布式账号接口文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributed-account)。
 
@@ -426,7 +440,7 @@ datashare服务启动完成后，将会触发事件通知服务发布该系统�
 
 表示分布式账号token令牌无效的动作。
 
-分布式账号的token令牌无效时会触发事件通知服务发布该系统公共事件，事件携带系统账号ID。
+分布式账号的token令牌无效时会触发事件通知服务发布该系统公共事件，事件携带系统账号ID和子身份ID。
 
 与这个公共事件相关的接口：setOsAccountDistributedInfo、updateOsAccountDistributedInfo(已废弃)，这些为公共API，setOsAccountDistributedInfoByLocalId为系统API，具体参看[分布式账号接口文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributed-account)。
 
@@ -442,7 +456,7 @@ datashare服务启动完成后，将会触发事件通知服务发布该系统�
 
 表示分布式账号注销的动作。
 
-分布式账号注销成功会时触发事件通知服务发布该系统公共事件，事件携带系统账号ID。
+分布式账号注销成功会触发事件通知服务发布该系统公共事件，事件携带系统账号ID和子身份ID。
 
 与这个公共事件相关的接口：setOsAccountDistributedInfo、updateOsAccountDistributedInfo(已废弃)，这些为公共API，setOsAccountDistributedInfoByLocalId为系统API，具体参看[分布式账号接口文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributed-account)。
 
@@ -488,7 +502,7 @@ datashare服务启动完成后，将会触发事件通知服务发布该系统�
 
 说明：
 
-从API Version 10开始废弃，替代接口为[COMMON_EVENT_SCREEN_UNLOCKED](#common_event_screen_unlocked)。
+从API version 9 开始支持，从API version 10 开始废弃，建议使用[COMMON_EVENT_SCREEN_UNLOCKED](#common_event_screen_unlocked)代替。
 
 系统能力： SystemCapability.Notification.CommonEvent
 
@@ -510,7 +524,7 @@ datashare服务启动完成后，将会触发事件通知服务发布该系统�
 
 #### [h2]COMMON_EVENT_BATTERY_LOW
 
-表示电池电量低的普通事件的动作。
+表示电池电量低的公共事件的动作。
 
 当电池电量低于设备设置的低电量百分比值时，将会触发事件通知服务发布该系统公共事件。
 
@@ -524,7 +538,7 @@ datashare服务启动完成后，将会触发事件通知服务发布该系统�
 
 表示电池退出低电量状态的公共事件的动作。
 
-当电池电量从低电量等级变化到电池电量高于低电量等级时，将会触发事件通知服务发布该系统公共事件。
+当电池电量从低电量等级上升到高于低电量等级时，将会触发事件通知服务发布该系统公共事件。
 
 系统能力： SystemCapability.Notification.CommonEvent
 
@@ -534,7 +548,7 @@ datashare服务启动完成后，将会触发事件通知服务发布该系统�
 
 #### [h2]COMMON_EVENT_POWER_CONNECTED
 
-设备连接到外部电源的公共事件的动作。
+表示设备连接到外部电源的公共事件的动作。
 
 当设备连接到外部可识别的充电器类型充电时，将会触发事件通知服务发布该系统公共事件。
 
@@ -546,7 +560,7 @@ datashare服务启动完成后，将会触发事件通知服务发布该系统�
 
 #### [h2]COMMON_EVENT_POWER_DISCONNECTED
 
-设备与外部电源断开的公共事件的动作。
+表示设备与外部电源断开的公共事件的动作。
 
 当设备与外部电源断开时，将会触发事件通知服务发布该系统公共事件。
 
@@ -700,6 +714,48 @@ datashare服务启动完成后，将会触发事件通知服务发布该系统�
 
 取值： "usual.event.EXIT_HIBERNATE"
 
+#### [h2]COMMON_EVENT_VOLUME_DECRYPTED
+
+表示设备上的特定卷已被解密。
+
+当设备上的特定卷被解密时，将会触发事件通知服务发布该系统公共事件。
+
+起始版本： 26.0.0
+
+系统能力： SystemCapability.Notification.CommonEvent
+
+订阅者所需权限： 无
+
+取值： "usual.event.VOLUME_DECRYPTED"
+
+#### [h2]COMMON_EVENT_VOLUME_ENCRYPTED
+
+表示设备上的特定卷已被加密。
+
+当设备上的特定卷被加密时，将会触发事件通知服务发布该系统公共事件。
+
+起始版本： 26.0.0
+
+系统能力： SystemCapability.Notification.CommonEvent
+
+订阅者所需权限： 无
+
+取值： "usual.event.VOLUME_ENCRYPTED"
+
+#### [h2]COMMON_EVENT_VOLUME_ENCRYPTION_POLICY_SET
+
+表示设备上的特定卷已设置其加密策略。
+
+当设备上的特定卷设置其加密策略时，将会触发事件通知服务发布该系统公共事件。
+
+起始版本： 26.0.0
+
+系统能力： SystemCapability.Notification.CommonEvent
+
+订阅者所需权限： ohos.permission.QUERY_VOLUME_ENCRYPTION_STATUS
+
+取值： "usual.event.VOLUME_ENCRYPTION_POLICY_SET"
+
 #### Connectivity Kit
 
 #### [h2]COMMON_EVENT_BLUETOOTH_HANDSFREE_AG_CONNECT_STATE_CHANGE20+
@@ -812,9 +868,9 @@ datashare服务启动完成后，将会触发事件通知服务发布该系统�
 
 #### [h2]COMMON_EVENT_NFC_ACTION_ADAPTER_STATE_CHANGED
 
-指示设备NFC状态已更改的公共事件的操作。
+表示设备NFC状态已更改的公共事件的操作。
 
-指示设备NFC状态更改时，将会触发事件通知服务发布该系统公共事件。
+表示设备NFC状态更改时，将会触发事件通知服务发布该系统公共事件。
 
 系统能力： SystemCapability.Notification.CommonEvent
 
@@ -942,7 +998,7 @@ Wi-Fi连接状态发生改变。
 
 系统能力： SystemCapability.Notification.CommonEvent
 
-订阅者需要的权限： 无
+订阅者所需权限： 无
 
 取值： "usual.event.wifi.mplink.STATE_CHANGE"
 
@@ -1052,9 +1108,9 @@ Wi-Fi连接状态发生改变。
 
 #### [h2]COMMON_EVENT_CONNECTIVITY_CHANGE10+
 
-指示网络连接状态变化。
+表示网络连接状态变化。
 
-各类网络（以太网、Wi-Fi、蜂窝等）在发生连接状态状态变化时（断开、断开中、连接中、已连接等），将会触发事件通知服务发布该系统公共事件。
+各类网络（以太网、Wi-Fi、蜂窝等）在连接状态变化时（断开、断开中、连接中、已连接等），将会触发事件通知服务发布该系统公共事件。
 
 具体枚举值及其对应的连接状态如下表所示：
 
@@ -1075,7 +1131,7 @@ Wi-Fi连接状态发生改变。
 
 #### [h2]COMMON_EVENT_AIRPLANE_MODE_CHANGED10+
 
-指示飞行模式状态变化。
+表示飞行模式状态变化。
 
 在开启或者关闭系统飞行模式状态后，将会触发事件通知服务发布该系统公共事件。
 
@@ -1087,7 +1143,7 @@ Wi-Fi连接状态发生改变。
 
 #### [h2]COMMON_EVENT_HTTP_PROXY_CHANGE10+
 
-指示网络Http代理配置信息更新。
+表示网络Http代理配置信息更新。
 
 在系统全局代理或者各类网络（以太网、Wi-Fi、蜂窝等）Http代理配置信息发生变化时，将会触发事件通知服务发布该系统公共事件。
 
@@ -1157,7 +1213,7 @@ AppGallery Kit面向应用发布如下系统公共事件。
 
 表示隐私签署结果的公共事件。
 
-隐私弹框场景下，用户点击同意，会发送此事件。
+隐私弹框场景下，用户点击同意，将会触发事件通知服务发布该系统公共事件。
 
 系统能力： SystemCapability.Notification.CommonEvent
 
@@ -1177,7 +1233,7 @@ Multimodalinput Kit面向应用发布如下系统公共事件。
 
 系统能力： SystemCapability.Notification.CommonEvent
 
-取值： "usual.event.TABLET_MODE_CHANGED "
+取值： "usual.event.TABLET_MODE_CHANGED"
 
 #### [h2]COMMON_EVENT_LID_STATE_CHANGED23+
 
@@ -1587,7 +1643,7 @@ Multimodalinput Kit面向应用发布如下系统公共事件。
 
 订阅者所需权限： 无
 
-取值： "usual.event.USER_FOREGROUND“
+取值： "usual.event.USER_FOREGROUND"
 
 #### [h2]COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_DISCOVERED(deprecated)
 
@@ -1891,7 +1947,7 @@ Multimodalinput Kit面向应用发布如下系统公共事件。
 
 #### [h2]COMMON_EVENT_BLUETOOTH_HOST_NAME_UPDATE(deprecated)
 
-指示设备蓝牙适配器名称已更改的公共事件的操作。
+表示设备蓝牙适配器名称已更改的公共事件的操作。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 9 开始支持，从API version 20 开始废弃。
 
@@ -1979,7 +2035,7 @@ Multimodalinput Kit面向应用发布如下系统公共事件。
 
 #### [h2]COMMON_EVENT_IVI_SLEEP
 
-（预留事件，暂未支持）表示表示车辆的车载信息娱乐（IVI）系统正在休眠的常见事件的动作。
+（预留事件，暂未支持）表示车辆的车载信息娱乐（IVI）系统正在休眠的公共事件的动作。
 
 系统能力： SystemCapability.Notification.CommonEvent
 
@@ -2049,7 +2105,7 @@ Multimodalinput Kit面向应用发布如下系统公共事件。
 
 #### [h2]COMMON_EVENT_IVI_TEMPERATURE_ABNORMAL
 
-（预留事件，暂未支持）表示车载系统具有极端温度的常见事件的动作。
+（预留事件，暂未支持）表示车载系统具有极端温度的公共事件的动作。
 
 系统能力： SystemCapability.Notification.CommonEvent
 

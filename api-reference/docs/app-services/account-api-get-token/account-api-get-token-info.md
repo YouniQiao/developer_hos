@@ -2,8 +2,8 @@
 title: "解析凭证"
 upstream_id: "harmonyos-references/account-api-get-token-info"
 catalog: "harmonyos-references"
-content_hash: "0e517938e5d8"
-synced_at: "2026-07-09T01:01:12.459315"
+content_hash: "972574c46183"
+synced_at: "2026-07-28T16:52:30.138981"
 ---
 
 # 解析凭证
@@ -44,7 +44,7 @@ synced_at: "2026-07-09T01:01:12.459315"
 
 | **参数** | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| access_token | 是 | String | 通过[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token)/[刷新用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-refresh-token)/[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)获取到的access_token值。 |
+| access_token | 是 | String | 通过如下场景获取到的access_token值。 - [获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token) - [刷新用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-refresh-token) - [获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token) - [扫码授权登录-获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token-for-qrcode) |
 | open_id | 否 | String | 需要解析用户级凭证并期望拿到OpenID时，请填写该参数，填写固定值字符串“OPENID”。 |
 
 #### 请求示例
@@ -79,7 +79,7 @@ open_id=OPENID&access_token=<access_token>
 | open_id | 否 | String | 用户的OpenID，由用户账号和Client ID签名而成，当Access Token为用户级，且入参open_id为OPENID时才返回。具体格式要求请参考[OpenID和UnionID的格式说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-9)。 |
 | scope | 否 | String | 用户授权scope列表，通过空格分隔，当Access Token为用户级且用户授权的scope不为空时才返回。 |
 | project_id | 是 | String | 项目ID，项目的唯一标识。 |
-| type | 是 | Integer | 凭证类型。 0：通过[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token)获取的Access Token。 1：通过[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)获取的Access Token。 |
+| type | 是 | Integer | 凭证类型。 0：通过[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token)、[刷新用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-refresh-token)、[扫码授权登录-获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token-for-qrcode)获取到的Access Token。 1：通过[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)获取的Access Token。 |
 
 调用失败时，响应消息体返回如下：
 
@@ -196,4 +196,5 @@ public class GetTokenInfoAPIDemo {
 | 102 | 无效的access_token。 | access_token参数无效，可能原因：请求头的Content-Type为application/x-www-form-urlencoded，但实际代码调用时，未对请求body参数进行URLEncode处理，可参考[示例代码](#示例代码)组装参数。 |
 | 500 | 接口内部错误。 | 根据返回的错误描述进行处理，若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
 | 501 | 服务分发异常。 | - 检查请求URL中nsp_svc是否正确 - 若确认请求URL与文档一致，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 1302 | 接口流控。 | 业务调用频率过高，请稍后重试。 |
 | 31204 | access_token已失效。正常access_token有效期为3600秒，但是由于用户的行为（如更改密码、取消应用的授权等行为），导致华为服务器提前失效已颁发的access_token。 | 请引导用户重新授权，获取新的access_token。 |

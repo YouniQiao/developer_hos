@@ -2,13 +2,13 @@
 title: "@ohos.util.Deque (线性容器Deque)"
 upstream_id: "harmonyos-references/js-apis-deque"
 catalog: "harmonyos-references"
-content_hash: "61098552826d"
-synced_at: "2026-07-09T00:57:25.688744"
+content_hash: "c3cb1f2a8dd9"
+synced_at: "2026-07-28T16:40:57.406592"
 ---
 
 # @ohos.util.Deque (线性容器Deque)
 
-Deque（double ended queue）基于循环队列的数据结构实现，支持两端元素的插入和删除，同时具备先进先出以及先进后出的特点。Deque会根据实际需要动态调整容量，每次扩容两倍。
+Deque（double-ended queue）基于循环队列的数据结构实现，支持两端元素的插入和删除。Deque同时具备先进先出以及先进后出的特点，可根据操作端的不同同时作为队列和栈使用。当现有容量不足以容纳新插入的元素时，Deque会动态调整容量，每次扩容两倍，无需手动预设容量。
 
 Deque和[Queue](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-queue)相比，Deque允许在两端执行插入和删除操作，Queue只能在头部删除元素，尾部插入元素。
 
@@ -18,11 +18,11 @@ Deque和[Queue](https://developer.huawei.com/consumer/cn/doc/harmonyos-reference
 
 文档中使用了泛型，涉及以下泛型标记符：
 
-- T：Type，类
+- T：Type，类型
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 8开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
-容器类使用静态语言实现，限制了存储位置和属性，不支持自定义属性和方法。
+容器类使用静态语言实现，限制了内部存储方式和所支持的属性，不支持自定义属性和方法。
 
 #### 导入模块
 
@@ -46,7 +46,7 @@ import { Deque } from '@kit.ArkTS';
 
 constructor()
 
-Deque的构造函数。
+Deque的构造函数，用于创建一个基于循环队列数据结构的空Deque实例。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -63,6 +63,7 @@ Deque的构造函数。
 示例：
 
 ```
+// 创建Deque实例
 let deque = new Deque<string | number | boolean | Object>();
 ```
 
@@ -70,7 +71,7 @@ let deque = new Deque<string | number | boolean | Object>();
 
 insertFront(element: T): void
 
-在deque头部插入元素。
+在Deque头部插入元素。插入成功后Deque的元素个数增加1。Deque在头部插入元素的效率高于ArrayList。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -80,7 +81,7 @@ insertFront(element: T): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| element | T | 是 | 插入的元素。 |
+| element | T | 是 | 在头部插入的元素，类型需与Deque实例化时指定的泛型类型T一致。 |
 
 错误码：
 
@@ -93,18 +94,21 @@ insertFront(element: T): void
 示例：
 
 ```
-class C1 {
-  name: string = ""
-  age: string = ""
+class PersonInfo {
+  name: string = "";
+  age: string = "";
 }
 
-let deque = new Deque<string | number | boolean | Array<number> | C1>();
+// 创建支持多种类型的Deque实例
+let deque = new Deque<string | number | boolean | Array<number> | PersonInfo>();
+// 在头部插入字符串元素
 deque.insertFront("a");
+// 在头部插入数字元素
 deque.insertFront(1);
-let b = [1, 2, 3];
-deque.insertFront(b);
-let c: C1 = {name : "Dylan", age : "13"};
-deque.insertFront(c);
+let numArray = [1, 2, 3];
+deque.insertFront(numArray);
+let person: PersonInfo = {name : "Dylan", age : "13"};
+deque.insertFront(person);
 deque.insertFront(false);
 console.info("result:", deque[0]);  // result: false
 ```
@@ -113,7 +117,7 @@ console.info("result:", deque[0]);  // result: false
 
 insertEnd(element: T): void
 
-在deque尾部插入元素。
+在Deque尾部插入元素。插入成功后Deque的元素个数增加1。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -123,7 +127,7 @@ insertEnd(element: T): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| element | T | 是 | 插入的元素。 |
+| element | T | 是 | 在尾部插入的元素。 |
 
 错误码：
 
@@ -136,18 +140,21 @@ insertEnd(element: T): void
 示例：
 
 ```
-class C1 {
-  name: string = ""
-  age: string = ""
+class PersonInfo {
+  name: string = "";
+  age: string = "";
 }
 
-let deque = new Deque<string | number | boolean | Array<number> | C1>();
+// 创建支持多种类型的Deque实例
+let deque = new Deque<string | number | boolean | Array<number> | PersonInfo>();
+// 在尾部插入字符串元素
 deque.insertEnd("a");
+// 在尾部插入数字元素
 deque.insertEnd(1);
-let b = [1, 2, 3];
-deque.insertEnd(b);
-let c: C1 = {name : "Dylan", age : "13"};
-deque.insertEnd(c);
+let numArray = [1, 2, 3];
+deque.insertEnd(numArray);
+let person: PersonInfo = {name : "Dylan", age : "13"};
+deque.insertEnd(person);
 deque.insertEnd(false);
 console.info("result:", deque[0]);  // result: a
 ```
@@ -166,7 +173,7 @@ has(element: T): boolean
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| element | T | 是 | 指定的元素。 |
+| element | T | 是 | 要在Deque中查找的指定元素，用于判断Deque是否包含该元素。类型需与Deque实例化时指定的泛型类型T一致。 |
 
 返回值：
 
@@ -185,8 +192,11 @@ has(element: T): boolean
 示例：
 
 ```
+// 创建Deque实例
 let deque = new Deque<string>();
+// 在头部插入元素
 deque.insertFront("squirrel");
+// 判断Deque中是否包含指定元素
 let result = deque.has("squirrel");
 console.info("result:", result);  // result: true
 ```
@@ -195,7 +205,7 @@ console.info("result:", result);  // result: true
 
 popFirst(): T
 
-删除并返回双端队列的首元素。
+删除并返回Deque的首元素。删除成功后Deque的元素个数减少1。Deque在头部删除元素的效率高于ArrayList。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -218,12 +228,14 @@ popFirst(): T
 示例：
 
 ```
+// 创建Deque实例并插入元素
 let deque = new Deque<number>();
 deque.insertFront(2);
 deque.insertFront(4);
 deque.insertEnd(5);
 deque.insertFront(2);
 deque.insertFront(4);
+// 删除并返回双端队列的首元素
 let result = deque.popFirst();
 console.info("result:", result);  // result: 4
 ```
@@ -232,7 +244,7 @@ console.info("result:", result);  // result: 4
 
 popLast(): T
 
-删除并返回双端队列的尾元素。
+删除并返回Deque的尾元素。删除成功后Deque的元素个数减少1。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -255,12 +267,14 @@ popLast(): T
 示例：
 
 ```
+// 创建Deque实例并插入元素
 let deque = new Deque<number>();
 deque.insertFront(2);
 deque.insertEnd(6);
 deque.insertFront(5);
 deque.insertFront(2);
 deque.insertFront(4);
+// 删除并返回双端队列的尾元素
 let result = deque.popLast();
 console.info("result:", result);  // result: 6
 ```
@@ -269,7 +283,7 @@ console.info("result:", result);  // result: 6
 
 forEach(callbackFn: (value: T, index?: number, deque?: Deque<T>) => void, thisArg?: Object): void
 
-在遍历Deque实例对象中每一个元素的过程中，对每个元素执行回调函数。
+通过回调函数遍历Deque实例中的每个元素。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -279,16 +293,16 @@ forEach(callbackFn: (value: T, index?: number, deque?: Deque<T>) => void, thisAr
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callbackFn | function | 是 | 回调函数。 |
-| thisArg | Object | 否 | callbackFn被调用时用作this值，默认值为当前实例对象。 |
+| callbackFn | function | 是 | 遍历每个元素时执行的回调函数，执行时的this值可通过thisArg参数指定。在回调函数执行过程中，不建议修改Deque（如插入或删除元素），否则可能导致遍历行为异常。 |
+| thisArg | Object | 否 | callbackFn被调用时用作this值。当需要改变回调函数中的this指向时传入此参数；不传入时默认值为当前实例对象。 |
 
 callbackFn的参数说明：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | value | T | 是 | 当前遍历到的元素。 |
-| index | number | 否 | 当前遍历到的下标值，默认值为0。 |
-| deque | Deque | 否 | 当前调用forEach方法的实例对象，默认值为当前实例对象。 |
+| index | number | 否 | 当前遍历到的下标值，从0开始递增。 |
+| deque | [Deque](#deque) | 否 | 当前调用forEach方法的实例对象，即正在遍历的Deque实例。 |
 
 错误码：
 
@@ -301,11 +315,13 @@ callbackFn的参数说明：
 示例：
 
 ```
+// 创建Deque实例并插入元素
 let deque = new Deque<number>();
 deque.insertFront(2);
 deque.insertEnd(3);
 deque.insertFront(1);
 deque.insertEnd(4);
+// 使用forEach遍历Deque中每个元素并执行回调函数
 deque.forEach((value: number, index: number): void => {
   console.info("value:" + value, "index:" + index);
 });
@@ -321,7 +337,7 @@ deque.forEach((value: number, index: number): void => {
 
 getFirst(): T
 
-获取Deque实例的头元素。
+获取Deque实例的头元素，不删除该元素。调用后，Deque的内容和长度不变。如需删除并返回首元素，请使用popFirst。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -331,7 +347,7 @@ getFirst(): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回T类型的头元素。 |
+| T | 返回Deque实例的头元素。 |
 
 错误码：
 
@@ -344,11 +360,13 @@ getFirst(): T
 示例：
 
 ```
+// 创建Deque实例并插入元素
 let deque = new Deque<number>();
 deque.insertEnd(2);
 deque.insertEnd(4);
 deque.insertFront(5);
 deque.insertFront(4);
+// 获取Deque的头元素
 let result = deque.getFirst();
 console.info("result:", result);  // result: 4
 ```
@@ -357,7 +375,7 @@ console.info("result:", result);  // result: 4
 
 getLast(): T
 
-获取Deque实例的尾元素。
+获取Deque实例的尾元素，不删除该元素。调用后，Deque的内容和长度不变。如需删除并返回尾元素，请使用popLast。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -367,7 +385,7 @@ getLast(): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回T类型的尾元素。 |
+| T | 返回Deque实例的尾元素。 |
 
 错误码：
 
@@ -380,11 +398,13 @@ getLast(): T
 示例：
 
 ```
+// 创建Deque实例并插入元素
 let deque = new Deque<number>();
 deque.insertFront(2);
 deque.insertFront(4);
 deque.insertFront(5);
 deque.insertFront(4);
+// 获取Deque的尾元素
 let result = deque.getLast();
 console.info("result:", result);  // result: 2
 ```
@@ -393,7 +413,7 @@ console.info("result:", result);  // result: 2
 
 [Symbol.iterator](): IterableIterator<T>
 
-返回一个迭代器，迭代器的每一项都是一个JavaScript对象。
+返回一个迭代器，按插入顺序遍历Deque中的元素，迭代器每项为T类型的元素。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -403,7 +423,7 @@ console.info("result:", result);  // result: 2
 
 | 类型 | 说明 |
 | --- | --- |
-| IterableIterator | 返回一个迭代器。 |
+| IterableIterator | 返回一个迭代器，用于遍历Deque实例中的所有元素。 |
 
 错误码：
 
@@ -436,10 +456,10 @@ value:2
 
 // 使用方法二：
 let iter = deque[Symbol.iterator]();
-let temp:IteratorResult<number> = iter.next();
-while(!temp.done) {
-  console.info("value:" + temp.value);
-  temp = iter.next();
+let iterResult: IteratorResult<number> = iter.next();
+while (!iterResult.done) {
+  console.info("value:" + iterResult.value);
+  iterResult = iter.next();
 }
 /*
 输出结果：

@@ -2,8 +2,8 @@
 title: "Interface (Focus)"
 upstream_id: "harmonyos-references/arkts-apis-camera-focus"
 catalog: "harmonyos-references"
-content_hash: "0e651f2124c1"
-synced_at: "2026-07-09T01:00:21.807183"
+content_hash: "9ba50bb99f9c"
+synced_at: "2026-07-28T16:51:39.931769"
 ---
 
 # Interface (Focus)
@@ -232,5 +232,90 @@ function getFocalLength(photoSession: camera.PhotoSession): number {
     console.error(`The getFocalLength call failed. error code: ${err.code}`);
   }
   return focalLength;
+}
+```
+
+#### lockFocusTracking
+
+lockFocusTracking(focusPoint: Point): void
+
+锁定焦点跟踪，使对焦持续追踪指定的物体。通过focusPoint参数指定追踪目标。
+
+起始版本： 26.0.0
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Multimedia.Camera.Core
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| focusPoint | [Point](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-i#point) | 是 | 锁定对焦跟踪点。x、y的取值范围均为 [0, 1]，超出范围则设置不生效。(0, 0)表示画面左上角，(1, 1)表示画面右下角。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[Camera错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-camera)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 7400103 | Session not config, only throw in session usage. |
+| 7400201 | Camera service fatal error. |
+
+示例：
+
+```
+import { BusinessError } from '@kit.BasicServicesKit';
+
+function lockFocusTracking(photoSession: camera.PhotoSession): void {
+  try {
+    const focusPoint: camera.Point = {x: 0, y: 0};
+    photoSession.lockFocusTracking(focusPoint);
+  } catch (error) {
+    // 失败返回错误码error.code并处理。
+    let err = error as BusinessError;
+    console.error(`The lockFocusTrack call failed. error code: ${err.code}`);
+  }
+}
+```
+
+#### unlockFocusTracking
+
+unlockFocusTracking(): void
+
+解锁焦点跟踪。
+
+起始版本： 26.0.0
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Multimedia.Camera.Core
+
+错误码：
+
+以下错误码的详细介绍请参见[Camera错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-camera)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 7400103 | Session not config, only throw in session usage. |
+| 7400201 | Camera service fatal error. |
+
+示例：
+
+```
+import { BusinessError } from '@kit.BasicServicesKit';
+
+function unlockFocusTracking(photoSession: camera.PhotoSession): void {
+  try {
+    photoSession.unlockFocusTracking();
+  } catch (error) {
+    // 失败返回错误码error.code并处理。
+    let err = error as BusinessError;
+    console.error(`The unlockFocusTrack call failed. error code: ${err.code}`);
+  }
 }
 ```

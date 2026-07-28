@@ -2,8 +2,8 @@
 title: "OH_IPC_MessageOption"
 upstream_id: "harmonyos-references/capi-ohipcremoteobject-oh-ipc-messageoption"
 catalog: "harmonyos-references"
-content_hash: "b8a27410f2a8"
-synced_at: "2026-07-09T00:59:06.248362"
+content_hash: "fdba07c6e32e"
+synced_at: "2026-07-28T16:50:10.572396"
 ---
 
 # OH_IPC_MessageOption
@@ -14,7 +14,9 @@ typedef struct {...} OH_IPC_MessageOption
 
 #### 概述
 
-IPC消息选项定义。
+IPC消息选项定义，用于配置IPC通信过程中的请求参数。 该结构体主要包含以下配置项：
+
+系统能力： SystemCapability.Communication.IPC.Core
 
 起始版本： 12
 
@@ -28,6 +30,6 @@ IPC消息选项定义。
 
 | 名称 | 描述 |
 | --- | --- |
-| [OH_IPC_RequestMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ipc-cremote-object-h#oh_ipc_requestmode) mode | 消息请求模式。 |
-| uint32_t timeout | RPC预留参数，该参数对IPC无效。 |
-| void* reserved | 保留参数，必须为空 |
+| [OH_IPC_RequestMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ipc-cremote-object-h#oh_ipc_requestmode) mode | 消息请求模式，用于指定IPC消息的请求方式。可选择同步模式或异步模式，同步模式适用于需要等待返回结果的场景，异步模式适用于不需要等待结果的场景。设置同步模式后，调用会阻塞当前线程等待返回结果；设置异步模式后，调用会立即返回，不等待结果。在C语言中必须显式初始化此成员。推荐初始化为同步模式（当需要获取返回结果时），或异步模式（当不需要返回结果时）。 |
+| uint32_t timeout | RPC预留参数，在RPC通信场景下可设置超时时间，该参数对IPC通信无效，使用IPC时可忽略此参数，单位：s。取值范围为[0, 4294967295]。在RPC场景下，推荐根据业务需求设置合理的超时时间（如30000ms用于普通请求，60000ms用于大数据传输），避免长时间阻塞。超时后RPC调用会失败并返回超时错误。在C语言中必须显式初始化此成员，推荐初始化为0。 |
+| void* reserved | 保留参数，必须传入NULL。传入非空指针时可能导致接口调用失败或未定义行为。 |

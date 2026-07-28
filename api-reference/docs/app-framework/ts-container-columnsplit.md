@@ -2,23 +2,23 @@
 title: "ColumnSplit"
 upstream_id: "harmonyos-references/ts-container-columnsplit"
 catalog: "harmonyos-references"
-content_hash: "619ead7f55a6"
-synced_at: "2026-07-09T00:57:46.168596"
+content_hash: "ae43748ccdd1"
+synced_at: "2026-07-28T16:43:18.379066"
 ---
 
 # ColumnSplit
 
-将子组件纵向布局，并在每个子组件之间插入横向分割线。
+将子组件纵向布局，并在每个子组件之间插入横向分割线。适用于需要垂直方向上多区域布局且支持动态调整区域大小的场景，如仪表盘界面、可调节高度的上下分区布局等。通过可拖拽的分割线，用户可以灵活调整各区域高度，提升界面交互性和用户体验。
 
-![](./img/note_3.0-zh-cn.png) 该组件从API version 7开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+![](./img/note_3.0-zh-cn.png) 该组件从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
 #### 子组件
 
 可以包含子组件。
 
-ColumnSplit通过分割线限制子组件的高度。初始化时，分割线位置根据子组件的高度来计算。初始化后，动态修改子组件的高度不生效，分割线位置保持不变，可通过拖动相邻分割线改变子组件高度。
+ColumnSplit通过分割线限制子组件的高度。初始化时，分割线位置根据子组件的高度来计算。初始化后，动态修改子组件的高度不生效，分割线位置保持不变。设置resizeable(true)后，可通过拖动相邻分割线改变子组件高度。
 
-初始化后，动态修改[margin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#margin)、[border](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#border)、[padding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#padding)通用属性导致子组件尺寸大于相邻分割线间距的异常情况下，不支持拖动分割线改变子组件的高度。
+初始化后，当动态修改[margin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#margin)、[border](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#border)、[padding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#padding)通用属性导致子组件尺寸大于相邻分割线间距时，不支持拖动分割线改变子组件的高度。
 
 #### 接口
 
@@ -40,7 +40,9 @@ ColumnSplit()
 
 resizeable(value: boolean)
 
-设置分割线是否可拖动。
+设置分割线是否可拖拽。设置为true时，用户可拖动分割线调整相邻子组件高度；设置为false时，分割线不可拖动，子组件高度固定。
+
+![](./img/note_3.0-zh-cn.png) 初始化后，当动态修改[margin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#margin)、[border](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#border)、[padding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#padding)通用属性导致子组件尺寸大于相邻分割线间距时，不支持拖动分割线改变子组件的高度。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -50,13 +52,13 @@ resizeable(value: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | boolean | 是 | 分割线是否可拖动。设置为true时表示分割线可拖动，设置为false时表示分割线不可拖动。 默认值：false 非法值：按默认值处理。 |
+| value | boolean | 是 | 分割线是否可拖动。设置为true时表示分割线可拖动，设置为false时表示分割线不可拖动。子组件的高度调整范围受其最大最小高度限制；当子组件尺寸大于相邻分割线间距时，不支持拖动分割线。初始化后，当动态修改margin、border、padding通用属性导致子组件尺寸大于相邻分割线间距时，不支持拖动分割线改变子组件的高度。 默认值：false 非法值：按默认值处理。 |
 
 #### [h2]divider10+
 
 divider(value: ColumnSplitDividerStyle | null)
 
-设置分割线的margin。
+设置分割线与子组件之间的距离。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -68,7 +70,7 @@ divider(value: ColumnSplitDividerStyle | null)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [ColumnSplitDividerStyle](#columnsplitdividerstyle10对象说明) | null | 是 | 分割线的margin，即设置分割线与子组件的距离。 默认值：null。当设置为null时，分割线与子组件的距离为0vp。 非法值：按默认值处理。 |
+| value | [ColumnSplitDividerStyle](#columnsplitdividerstyle10对象说明) | null | 是 | 分割线的margin，即设置分割线与子组件的距离。对象属性包括：startMargin（子组件与上方分割线的距离）和endMargin（子组件与下方分割线的距离）。 默认值：null。当设置为null时，分割线与子组件的距离为0vp。 非法值：按默认值处理。 |
 
 #### ColumnSplitDividerStyle10+对象说明
 
@@ -82,8 +84,8 @@ divider(value: ColumnSplitDividerStyle | null)
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| startMargin | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | 否 | 是 | 子组件与其上方分割线的距离。 默认值：0vp 非法值：按默认值处理，此时[getInspectorByKey()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-component-id#getinspectorbykey9)接口获取到的属性值为undefined。 |
-| endMargin | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | 否 | 是 | 子组件与其下方分割线的距离。 默认值：0vp 非法值：按默认值处理，此时[getInspectorByKey()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-component-id#getinspectorbykey9)接口获取到的属性值为undefined。 |
+| startMargin | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | 否 | 是 | 子组件与其上方分割线的距离。可调整间距（如避免内容与分割线重叠、美化布局等场景）。 默认值：0vp 取值范围：不支持负值。 非法值：按默认值处理，此时[getInspectorByKey()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-component-id#getinspectorbykey9)接口获取到的属性值为undefined。 |
+| endMargin | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | 否 | 是 | 子组件与其下方分割线的距离。可调整间距（如避免内容与分割线重叠、美化布局等场景）。 默认值：0vp 取值范围：不支持负值。 非法值：按默认值处理，此时[getInspectorByKey()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-component-id#getinspectorbykey9)接口获取到的属性值为undefined。 |
 
 ![](./img/note_3.0-zh-cn.png) 与[RowSplit](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-rowsplit)相同，ColumnSplit的分割线可调整上下两侧子组件的高度，子组件的高度调整范围受其最大最小高度限制。
 
@@ -115,13 +117,13 @@ struct ColumnSplitExample {
         Text('5').width('100%').height(50).backgroundColor(0xF5DEB3).textAlign(TextAlign.Center)
       }
       .borderWidth(1)
-      .resizeable(true) // 可拖动
+      .resizeable(true) // 设置分割线可拖拽
       .width('90%').height('60%')
     }.width('100%')
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732395.gif)
+ ![](./img/zh-cn_image_0000002686087901.gif)
 
 #### [h2]示例2（设置带有间隔的ColumnSplit组件）
 
@@ -143,11 +145,11 @@ struct ColumnSplitDividerExample {
         Text('5').width('100%').height(50).backgroundColor(0xF5DEB3).textAlign(TextAlign.Center)
       }
       .borderWidth(1)
-      .divider({ startMargin: 5, endMargin: 5 }) // 设置间隔
+      .divider({ startMargin: 5, endMargin: 5 }) // 设置分割线与子组件的距离
       .width('90%')
       .height('60%')
     }.width('100%')
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253276.png)
+ ![](./img/zh-cn_image_0000002685928073.png)

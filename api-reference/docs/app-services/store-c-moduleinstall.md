@@ -2,8 +2,8 @@
 title: "ModuleInstall"
 upstream_id: "harmonyos-references/store-c-moduleinstall"
 catalog: "harmonyos-references"
-content_hash: "ecdc9c441e44"
-synced_at: "2026-07-09T01:01:15.818954"
+content_hash: "1cbee51a47ed"
+synced_at: "2026-07-28T16:52:34.607756"
 ---
 
 # ModuleInstall
@@ -35,7 +35,7 @@ synced_at: "2026-07-09T01:01:15.818954"
 
 | 名称 | 描述 |
 | --- | --- |
-| [ModuleInstall_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-c-moduleinstall#moduleinstall_errcode) { E_NO_ERROR = 0, E_PARAMS = 401, E_QUERY_MODULE = 1006500001, E_REPEATED_CALL = 1006500002, E_CONNECT_SA = 1006500004, E_OFF_WITHOUT_ON = 1006500006, E_CONNECT_SERVICE_EXTENSION = 1006500007, E_WRITE_PARAM = 1006500008, E_REQUEST_SERVER = 1006500009, E_RESPONSE_INVALID = 1006500010, E_INNER_ERROR = 1006500011 } | 枚举错误码。 |
+| [ModuleInstall_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-c-moduleinstall#moduleinstall_errcode) { E_NO_ERROR = 0, E_PARAMS = 401, E_QUERY_MODULE = 1006500001, E_REPEATED_CALL = 1006500002, E_CONNECT_SA = 1006500004, E_OFF_WITHOUT_ON = 1006500006, E_CONNECT_SERVICE_EXTENSION = 1006500007, E_WRITE_PARAM = 1006500008, E_REQUEST_SERVER = 1006500009, E_RESPONSE_INVALID = 1006500010, E_INNER_ERROR = 1006500011, E_INTERNAL_COMMUNICATION = 1006500012, E_INVALID_TASK_ID = 1006500013 } | 枚举错误码。 |
 | [ModuleInstall_InstallStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-c-moduleinstall#moduleinstall_installstatus) { INSTALLED = 0, NOT_INSTALLED = 1 } | 枚举安装状态。 |
 | [ModuleInstall_RequestCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-c-moduleinstall#moduleinstall_requestcode) { MODULE_ALREADY_EXISTS = -8, MODULE_UNAVAILABLE = -7, INVALID_REQUEST = -6, NETWORK_ERROR = -5, INVOKER_VERIFICATION_FAILED = -4, FOREGROUND_REQUIRED = -3, ACTIVE_SESSION_LIMIT_EXCEEDED = -2, FAILURE = -1, SUCCESS = 0, DOWNLOAD_WAIT_WIFI = 1 } | 枚举请求码。 |
 | [ModuleInstall_TaskStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-c-moduleinstall#moduleinstall_taskstatus) { CREATE_TASK_FAILED = -4, HIGHER_VERSION_INSTALLED = -3, TASK_ALREADY_EXISTS = -2, TASK_UNFOUND = -1, TASK_CREATED = 0, DOWNLOADING = 1, DOWNLOAD_PAUSED = 2, DOWNLOAD_WAITING = 3, DOWNLOAD_SUCCESSFUL = 4, DOWNLOAD_FAILED = 5, DOWNLOAD_WAIT_FOR_WIFI = 6, INSTALL_WAITING = 20, INSTALLING = 21, INSTALL_SUCCESSFUL = 22, INSTALL_FAILED = 23 } | 枚举任务状态。 |
@@ -57,6 +57,7 @@ synced_at: "2026-07-09T01:01:15.818954"
 | int [HMS_ModuleInstall_GetFetchModulesTotalSize](#hms_moduleinstall_getfetchmodulestotalsize)(const [ModuleInstall_FetchModulesResult](#moduleinstall_fetchmodulesresult) *fetchModulesResult) | 获取模块下载总大小。 |
 | int [HMS_ModuleInstall_GetFetchModulesDownloadedSize](#hms_moduleinstall_getfetchmodulesdownloadedsize)(const [ModuleInstall_FetchModulesResult](#moduleinstall_fetchmodulesresult) *fetchModulesResult) | 获取模块下载已下载大小。 |
 | [ModuleInstall_ErrCode](#moduleinstall_errcode) [HMS_ModuleInstall_CancelTask](#hms_moduleinstall_canceltask)(const char *taskId, unsigned int length, unsigned int cancelResult) | 取消下载任务。 |
+| [ModuleInstall_ErrCode](#moduleinstall_errcode) [HMS_ModuleInstall_PauseTask](#hms_moduleinstall_pausetask)(const char *taskId) | 暂停下载任务。 |
 | [ModuleInstall_ErrCode](#moduleinstall_errcode) [HMS_ModuleInstall_ShowCellularDataConfirmation](#hms_moduleinstall_showcellulardataconfirmation)(const char *taskId, unsigned int length, unsigned int showResult) | 展示流量弹窗。 |
 | [ModuleInstall_StatusCallback](#moduleinstall_statuscallback) *[HMS_ModuleInstall_CreateStatusCallback](#hms_moduleinstall_createstatuscallback)([ModuleInstall_OnStatusCallback](#moduleinstall_onstatuscallback) *onStatusCallback) | 创建下载进度监听回调。 |
 | [ModuleInstall_ErrCode](#moduleinstall_errcode) [HMS_ModuleInstall_On](#hms_moduleinstall_on)(const char *bundleName, unsigned int length, unsigned int appIndex, unsigned int period, [ModuleInstall_StatusCallback](#moduleinstall_statuscallback) **callback) | 下载进度监听。 |
@@ -135,6 +136,8 @@ enum ModuleInstall_ErrCode
 | E_REQUEST_SERVER = 1006500009 | 请求服务异常。 |
 | E_RESPONSE_INVALID = 1006500010 | 响应参数无法解析。 |
 | E_INNER_ERROR = 1006500011 | 内部错误。 |
+| E_INTERNAL_COMMUNICATION = 1006500012 | 内部通信异常。 **起始版本：** 26.0.0 |
+| E_INVALID_TASK_ID = 1006500013 | 无效的任务ID。 **起始版本：** 26.0.0 |
 
 #### [h2]ModuleInstall_InstallStatus
 
@@ -509,11 +512,34 @@ ModuleInstall_ErrCode HMS_ModuleInstall_CancelTask(const char *taskId, unsigned 
 | --- | --- |
 | char *taskId | 任务id。 |
 | int length | 任务id长度，最大长度512。 |
-| int cancelResult | 取消下载结果。 |
+| int cancelResult | 取消下载结果。 0：成功。 1：失败。 |
 
 返回：
 
-返回E_NO_ERROR表示成功；返回E_PARAMS表示输入参数错误；返回E_CONNECT_SERVICE_EXTENSION表示服务连接失败；返回E_WRITE_PARAM表示参数写入异常；返回E_REQUEST_SERVER表示请求服务异常；返回E_RESPONSE_INVALID表示响应参数无法解析；
+返回E_NO_ERROR表示成功；返回E_PARAMS表示输入参数错误；返回E_CONNECT_SERVICE_EXTENSION表示服务连接失败；返回E_WRITE_PARAM表示参数写入异常；返回E_REQUEST_SERVER表示请求服务异常；返回E_RESPONSE_INVALID表示响应参数无法解析。
+
+#### [h2]HMS_ModuleInstall_PauseTask
+
+```
+ModuleInstall_ErrCode HMS_ModuleInstall_PauseTask(const char *taskId)
+```
+ 描述
+
+暂停下载任务。
+
+系统能力： SystemCapability.AppGalleryService.Distribution.OnDemandInstall
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| char *taskId | 任务id。 |
+
+返回：
+
+返回E_NO_ERROR表示成功；返回E_INVALID_TASK_ID表示无效的任务ID；返回E_INTERNAL_COMMUNICATION表示内部通信异常。
 
 #### [h2]HMS_ModuleInstall_ShowCellularDataConfirmation
 
@@ -534,7 +560,7 @@ ModuleInstall_ErrCode HMS_ModuleInstall_ShowCellularDataConfirmation(const char 
 | --- | --- |
 | char *taskId | 任务id。 |
 | int length | 任务id长度，最大长度512。 |
-| int showResult | 展示流量弹窗结果。 |
+| int showResult | 展示流量弹窗结果。 0：成功。 1：失败。 |
 
 返回：
 

@@ -2,15 +2,15 @@
 title: "dialog"
 upstream_id: "harmonyos-references/js-components-container-dialog"
 catalog: "harmonyos-references"
-content_hash: "4a62452ae681"
-synced_at: "2026-07-09T00:58:20.332719"
+content_hash: "0ba73847669c"
+synced_at: "2026-07-28T16:48:56.985452"
 ---
 
 # dialog
 
 ![](./img/note_3.0-zh-cn.png) 从API version 4开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
 
-自定义弹窗容器。
+自定义对话框容器。
 
 #### 权限列表
 
@@ -40,7 +40,7 @@ synced_at: "2026-07-09T00:58:20.332719"
 
 | 名称 | 参数 | 描述 |
 | --- | --- | --- |
-| cancel | - | 用户点击非dialog区域触发取消弹窗时触发的事件。 |
+| cancel | - | 用户点击非对话框区域触发取消对话框时触发的事件。 |
 | show7+ | - | 对话框弹出时触发该事件。 |
 | close7+ | - | 对话框关闭时触发该事件。 |
 
@@ -157,4 +157,4 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253880.gif)
+ ![](./img/zh-cn_image_0000002655849086.gif)

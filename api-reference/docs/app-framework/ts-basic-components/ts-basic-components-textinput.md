@@ -2,15 +2,15 @@
 title: "TextInput"
 upstream_id: "harmonyos-references/ts-basic-components-textinput"
 catalog: "harmonyos-references"
-content_hash: "5c90d9970740"
-synced_at: "2026-07-09T00:57:56.849016"
+content_hash: "c41d46bdc586"
+synced_at: "2026-07-28T16:44:47.195441"
 ---
 
 # TextInput
 
-单行文本输入框组件。
+单行文本输入框组件，用于接收用户的单行文本输入。支持多种输入类型（如文本、密码、邮箱、数字等）、自定义样式（字体、颜色、下划线、装饰线等）、输入过滤、密码输入模式、自动填充等功能，适用于登录注册、搜索、表单填写等多种场景。能够解决文本输入验证、格式化、安全输入等常见需求，简化开发流程、提升用户体验并增强数据安全性。
 
-![](./img/note_3.0-zh-cn.png) 该组件从API version 7开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+![](./img/note_3.0-zh-cn.png) 该组件从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
 该组件仅支持单文本样式，若需实现富文本样式，建议使用[RichEditor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-richeditor)组件。
 
@@ -30,7 +30,7 @@ TextInput(value?: TextInputOptions)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [TextInputOptions](#textinputoptions对象说明) | 否 | TextInput组件参数。 |
+| value | [TextInputOptions](#textinputoptions对象说明) | 否 | TextInput组件参数。默认值undefined。不设置该参数时，输入框初始化为空。 |
 
 #### TextInputOptions对象说明
 
@@ -42,15 +42,15 @@ TextInput初始化参数。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| placeholder | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 设置无输入时的提示文本。 |
-| text | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 设置输入框当前的文本内容。 建议通过onChange事件将状态变量与文本实时绑定， 避免组件刷新时TextInput中的文本内容异常。 从API version 10开始，该参数支持[$$](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-two-way-sync)双向绑定变量。 从API version 18开始，该参数支持[!!](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-binding#系统组件参数双向绑定)双向绑定变量。 |
-| controller8+ | [TextInputController](#textinputcontroller8) | 否 | 是 | 设置TextInput控制器。 |
+| placeholder | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 设置无输入时的提示文本。不设置时默认无提示文本。 |
+| text | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 设置输入框当前的文本内容。不设置时默认为空字符串。 建议通过onChange事件将状态变量与文本实时绑定， 避免组件刷新时TextInput中的文本内容异常。 从API version 10开始，该参数支持[$$](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-two-way-sync)双向绑定变量。 从API version 18开始，该参数支持[!!](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-binding#系统组件参数双向绑定)双向绑定变量。 |
+| controller8+ | [TextInputController](#textinputcontroller8) | 否 | 是 | 设置TextInput控制器。当需要通过控制器调用光标设置、文本选择等方法时传入此参数。不设置时默认无控制器，无法使用控制器相关方法。 |
 
 #### 属性
 
 除支持[通用属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-attributes)，还支持以下属性：
 
-![](./img/note_3.0-zh-cn.png) 默认情况下，通用属性[padding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#padding)的默认值为：
+![](./img/note_3.0-zh-cn.png) 默认情况下，通用属性[padding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#padding)的默认值为
 
 {
 
@@ -64,7 +64,7 @@ left: '16vp'
 
 }
 
-输入框开启下划线模式时，通用属性padding的默认值为：
+输入框开启下划线模式时，通用属性padding的默认值为
 
 {
 
@@ -88,7 +88,7 @@ type(value: InputType)
 
 设置输入框类型。
 
-不同的InputType会拉起对应类型的键盘，同时限制输入。
+不同的InputType会拉起对应类型的键盘，同时限制输入。未通过该接口设置时，默认为InputType.Normal。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -98,17 +98,17 @@ type(value: InputType)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [InputType](#inputtype枚举说明) | 是 | 输入框类型。 默认值：InputType.Normal |
+| value | [InputType](#inputtype枚举说明) | 是 | 输入框类型。 |
 
-![](./img/note_3.0-zh-cn.png) 密码填充服务需要特定的输入框类型。如何使用密码填充服务参考[快速适配](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-quick-adaptation)。
+![](./img/note_3.0-zh-cn.png) 密码填充服务需要密码相关的[输入框类型](#inputtype枚举说明)(如InputType.Password、InputType.NUMBER_PASSWORD、InputType.NEW_PASSWORD、InputType.USER_NAME)。如何使用密码填充服务参考[快速适配](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-quick-adaptation)。
 
-设置[密码模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-text-input#密码模式)时，装饰线[decoration](#decoration12)、下划线[showUnderline](#showunderline10)不生效。
+设置[密码模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-text-input#密码模式)时，装饰线[decoration](#decoration12)、下划线[showUnderline](#showunderline10)、行高[lineHeight](#lineheight12)、文字特性[fontFeature](#fontfeature12)不生效。
 
 #### [h2]placeholderColor
 
 placeholderColor(value: ResourceColor)
 
-设置placeholder文本颜色。
+设置placeholder文本颜色。未通过该接口设置时，默认颜色跟随主题，Wearable设备上默认值为'#99ffffff'（白色，不透明度为60%）。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -118,7 +118,7 @@ placeholderColor(value: ResourceColor)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 是 | placeholder文本颜色。 默认值：跟随主题。 Wearable设备上默认值为：'#99ffffff' |
+| value | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 是 | placeholder文本颜色。 |
 
 #### [h2]placeholderFont
 
@@ -134,7 +134,7 @@ placeholderFont(value?: Font)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [Font](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#font) | 否 | placeholder文本样式。 Wearable设备上默认值为：18fp |
+| value | [Font](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#font) | 否 | placeholder文本样式。 省略该参数时使用系统默认字体样式。 Wearable设备上字体大小默认值为18fp |
 
 ![](./img/note_3.0-zh-cn.png) 可以使用[loadFontSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-text#loadfontsync)注册自定义字体。
 
@@ -142,7 +142,7 @@ placeholderFont(value?: Font)
 
 enterKeyType(value: EnterKeyType)
 
-设置输入法回车键类型。
+设置输入法回车键类型。未通过该接口设置时，默认为EnterKeyType.Done。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -152,13 +152,13 @@ enterKeyType(value: EnterKeyType)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [EnterKeyType](#enterkeytype枚举说明) | 是 | 输入法回车键类型。 默认值：EnterKeyType.Done |
+| value | [EnterKeyType](#enterkeytype枚举说明) | 是 | 输入法回车键类型。 |
 
 #### [h2]caretColor
 
 caretColor(value: ResourceColor)
 
-设置输入框光标颜色。
+设置输入框光标颜色。未通过该接口设置时，默认为'#007DFF'（蓝色），Wearable设备上默认值为'#5EA1FF'（蓝色，比'#007DFF'颜色稍浅）。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -168,7 +168,7 @@ caretColor(value: ResourceColor)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 是 | 输入框光标颜色。 默认值：'#007DFF' |
+| value | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 是 | 输入框光标颜色。 |
 
 ![](./img/note_3.0-zh-cn.png) 从API version 12开始，此接口支持设置文本手柄颜色，光标和文本手柄颜色保持一致。
 
@@ -176,7 +176,7 @@ caretColor(value: ResourceColor)
 
 maxLength(value: number)
 
-设置文本的最大输入字符数。
+设置文本的最大输入字符数。未通过该接口设置时，默认可以无限输入。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -186,13 +186,13 @@ maxLength(value: number)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 文本的最大输入字符数。 默认值：Infinity，可以无限输入。 **说明：** 当不设置该属性或设置异常值时，取默认值，设置小数时，取整数部分，设置值超过2^31-1时，可能导致异常行为。 |
+| value | number | 是 | 文本的最大输入字符数。 取值范围：[0, 2^31-1] **说明：** 当不设置该属性或设置异常值时，取默认值。设置小数时，取整数部分。设置值超过取值范围上限时，可能导致组件显示或功能异常，请勿超过上限值。 |
 
 #### [h2]fontColor
 
 fontColor(value: ResourceColor)
 
-设置字体颜色。
+设置字体颜色。未通过该接口设置时，默认颜色跟随主题，Wearable设备上默认值为'#dbffffff'（白色，不透明度为86%）。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -202,13 +202,13 @@ fontColor(value: ResourceColor)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 是 | 字体颜色。 Wearable设备上默认值为：'#dbffffff' |
+| value | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 是 | 字体颜色。 |
 
 #### [h2]fontSize
 
 fontSize(value: Length)
 
-设置字体大小。
+设置字体大小。未通过该接口设置时，默认字体大小为16fp，Wearable设备上默认值为18fp。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -218,13 +218,13 @@ fontSize(value: Length)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 是 | 字体大小。fontSize为number类型时，使用fp单位。字体默认大小16fp。不支持设置百分比字符串。 Wearable设备上默认值为：18fp |
+| value | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 是 | 字体大小。fontSize为number类型时，使用fp单位。不支持设置百分比字符串。 |
 
 #### [h2]fontStyle
 
 fontStyle(value: FontStyle)
 
-设置字体样式。
+设置字体样式。未通过该接口设置时，默认为FontStyle.Normal。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -234,13 +234,13 @@ fontStyle(value: FontStyle)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [FontStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontstyle) | 是 | 字体样式。 默认值：FontStyle.Normal |
+| value | [FontStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontstyle) | 是 | 字体样式。 |
 
 #### [h2]fontWeight
 
 fontWeight(value: number | FontWeight | ResourceStr)
 
-设置文本的字体粗细，设置过大可能会在不同字体下有截断。
+设置文本的字体粗细，设置过大可能会在不同字体下有截断。未通过该接口设置时，默认为FontWeight.Normal。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -250,13 +250,13 @@ fontWeight(value: number | FontWeight | ResourceStr)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 是 | 文本的字体粗细，number类型取值[100, 900]，取值间隔为100，默认为400，取值越大，字体越粗。string类型仅支持number类型取值的字符串形式，例如"400"，以及"bold"、"bolder"、"lighter"、"regular"、"medium"，分别对应FontWeight中相应的枚举值。 默认值：FontWeight.Normal 从API version 20开始，支持Resource类型。 |
+| value | number | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 是 | 文本的字体粗细，number类型取值[100,900]，取值间隔为100，取值越大，字体越粗。string类型仅支持number类型取值的字符串形式，例如“400”，以及“bold”、“bolder”、“lighter”、“regular”、“medium”，分别对应FontWeight中相应的枚举值。 从API version 20开始，支持Resource类型。 |
 
 #### [h2]fontFamily
 
 fontFamily(value: ResourceStr)
 
-设置字体列表。
+设置字体列表。未通过该接口设置时，默认字体为'HarmonyOS Sans'。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -266,7 +266,7 @@ fontFamily(value: ResourceStr)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 是 | 字体列表。默认字体'HarmonyOS Sans'。 使用多个字体时，请用逗号','分隔，字体的优先级按顺序生效。例如：'Arial,HarmonyOS Sans'。 应用当前支持'HarmonyOS Sans'字体和自定义字体。 卡片当前仅支持'HarmonyOS Sans'字体。 |
+| value | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 是 | 字体列表。使用多个字体时，请用逗号','分隔，字体的优先级按顺序生效。例如：'Arial,HarmonyOS Sans'。 应用当前支持'HarmonyOS Sans'字体和自定义字体。 卡片当前仅支持'HarmonyOS Sans'字体。 Wearable设备支持'HarmonyOS Sans'字体和自定义字体。 |
 
 ![](./img/note_3.0-zh-cn.png) 推荐使用[loadFontSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-text#loadfontsync)注册自定义字体。
 
@@ -274,9 +274,7 @@ fontFamily(value: ResourceStr)
 
 inputFilter(value: ResourceStr, error?: Callback<string>)
 
-通过正则表达式设置输入过滤器。匹配表达式的输入允许显示，不匹配的输入将被过滤。
-
-单字符输入场景仅支持单字符匹配，多字符输入场景支持字符串匹配，例如粘贴。
+通过正则表达式设置输入过滤器。匹配表达式的输入允许显示，不匹配的输入将被过滤。单字符输入场景仅支持单字符匹配，多字符输入场景支持字符串匹配，例如粘贴。未通过该接口设置时，默认无输入过滤规则，所有输入都允许显示。
 
 从API version 11开始，设置inputFilter且输入的字符不为空字符，会导致[type](#type)接口附带的文本过滤效果失效。
 
@@ -295,9 +293,7 @@ inputFilter(value: ResourceStr, error?: Callback<string>)
 
 copyOption(value: CopyOptions)
 
-设置输入的文本是否可复制。设置CopyOptions.None时，只支持粘贴和全选。
-
-设置CopyOptions.None时，不允许拖拽。
+设置输入的文本是否可复制。设置CopyOptions.None时，只支持粘贴和全选。设置CopyOptions.None时，不允许拖拽。未通过该接口设置时，默认为CopyOptions.LocalDevice，支持设备内复制。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -307,13 +303,13 @@ copyOption(value: CopyOptions)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [CopyOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#copyoptions9) | 是 | 输入的文本是否可复制。 默认值：CopyOptions.LocalDevice，支持设备内复制。 |
+| value | [CopyOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#copyoptions9) | 是 | 输入的文本是否可复制。 |
 
 #### [h2]showPasswordIcon9+
 
 showPasswordIcon(value: boolean)
 
-设置当密码输入模式时，输入框末尾的图标是否显示。
+设置在密码模式下，输入框末尾的图标是否显示。未通过该接口设置时，默认TV设备为false，其他设备为true。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -323,7 +319,7 @@ showPasswordIcon(value: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | boolean | 是 | 密码输入模式时，输入框末尾的图标是否显示。 true表示显示，false表示不显示。 默认值：TV设备为false，其他设备为true。 |
+| value | boolean | 是 | 密码输入模式时，输入框末尾的图标是否显示。 true表示显示，false表示不显示。 |
 
 #### [h2]style9+
 
@@ -331,7 +327,7 @@ style(value: TextInputStyle | TextContentStyle)
 
 设置输入框为默认风格或内联输入风格，内联输入风格只支持InputType.Normal类型。
 
-输入框类型介绍请参考[type](#type)接口。
+输入框类型介绍请参考[type](#type)接口。未通过该接口设置时，默认为TextInputStyle.Default。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -341,17 +337,17 @@ style(value: TextInputStyle | TextContentStyle)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [TextInputStyle](#textinputstyle9枚举说明) | [TextContentStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#textcontentstyle10) | 是 | 输入框为默认风格或内联输入风格。 默认值：TextInputStyle.Default |
+| value | [TextInputStyle](#textinputstyle9枚举说明) | [TextContentStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#textcontentstyle10) | 是 | 输入框为默认风格或内联输入风格。 |
 
 #### [h2]textAlign9+
 
 textAlign(value: TextAlign)
 
-设置文本在输入框中的水平对齐方式。
+设置文本在输入框中的水平对齐方式。未通过该接口设置时，默认为TextAlign.Start。
 
 支持TextAlign.Start、TextAlign.Center和TextAlign.End。TextAlign.JUSTIFY的对齐方式按照TextAlign.Start处理。
 
-可通过[align](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-location#align)属性控制文本段落在垂直方向上的位置。此组件中不可使用align属性控制文本段落在水平方向上的位置。
+可通过[align](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-location#align)属性控制文本段落在垂直方向上的位置。此组件不支持通过align属性控制文本段落在水平方向上的位置。
 
 - Alignment.TopStart、Alignment.Top、Alignment.TopEnd：内容顶部对齐。
 - Alignment.Start、Alignment.Center、Alignment.End：内容垂直居中。
@@ -365,7 +361,7 @@ textAlign(value: TextAlign)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [TextAlign](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#textalign) | 是 | 文本在输入框中的水平对齐方式。 默认值：TextAlign.Start |
+| value | [TextAlign](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#textalign) | 是 | 文本在输入框中的水平对齐方式。 |
 
 ![](./img/note_3.0-zh-cn.png) textAlign只能调整文本整体的布局，不影响字符的显示顺序。若需要调整字符的显示顺序，请参考[镜像状态字符对齐](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-internationalization#镜像状态字符对齐)。
 
@@ -391,7 +387,7 @@ textDirection(direction: TextDirection | undefined)
 
 selectedBackgroundColor(value: ResourceColor)
 
-设置文本选中底板颜色。如果未设置不透明度，默认为20%不透明度。
+设置文本选中底板颜色。如果未设置不透明度，默认为20%不透明度。未通过该接口设置时，默认为'#FF007DFF'（蓝色），Wearable设备上默认值为'#FF1F71FF'（蓝色，比'#FF007DFF'颜色稍深）。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -421,7 +417,7 @@ caretStyle(value: CaretStyle)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [CaretStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#caretstyle10) | 是 | 光标的风格。 |
+| value | [CaretStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#caretstyle10) | 是 | 光标的风格，用于自定义光标的显示样式。配置项包括width（光标宽度）和color（光标颜色）等。不设置时使用系统默认光标样式。 |
 
 ![](./img/note_3.0-zh-cn.png) 当同时设置caretColor属性和caretStyle属性中的color参数时，遵循后设置生效原则。
 
@@ -443,7 +439,7 @@ caretPosition(value: number)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 光标的位置。 第一个字符前的位置是0。 |
+| value | number | 是 | 光标的位置。 第一个字符前的位置是0。 当取值小于0时，取0；大于文本长度时，显示在文本末尾。 |
 
 #### [h2]showUnit10+
 
@@ -481,13 +477,13 @@ showError(value?: ResourceStr | undefined)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | undefined | 否 | 错误状态下提示的错误文本或者不显示错误状态。 默认不显示错误状态。 Wearable设备上字体大小为：13fp，对齐方式为：居中对齐 **说明：** 从API version 12开始，value支持Resource类型。 |
+| value | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | undefined | 否 | 错误状态下提示的错误文本或者不显示错误状态。 默认不显示错误状态。 Wearable设备上字体大小为：13fp，对齐方式为：居中对齐 **说明：** 从API version 12开始，value支持Resource类型。 不支持[TextInputStyle](#textinputstyle9枚举说明)的内联模式。 |
 
 #### [h2]showUnderline10+
 
 showUnderline(value: boolean)
 
-设置是否开启下划线。
+设置是否开启下划线。未通过该接口设置时，默认不开启下划线，下划线默认颜色为'#33182431'（深灰色，不透明度为20%），默认粗细为1px，文本框尺寸48vp，下划线只支持InputType.Normal类型。设置密码模式时，下划线不生效。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -499,17 +495,18 @@ showUnderline(value: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | boolean | 是 | 是否开启下划线。 true表示开启，false表示不开启。 默认值：false 下划线默认颜色为'#33182431'，默认粗细为1px，文本框尺寸48vp，下划线只支持InputType.Normal类型。 |
+| value | boolean | 是 | 是否开启下划线。 true表示开启，false表示不开启。 |
 
-![](./img/note_3.0-zh-cn.png) 设置[密码模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-text-input#密码模式)时，装饰线[decoration](#decoration12)、下划线[showUnderline](#showunderline10)不生效。
+![](./img/note_3.0-zh-cn.png)
+
+- 下划线只支持[InputType.Normal](#inputtype枚举说明)类型。
+- 设置[密码模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-text-input#密码模式)时，装饰线[decoration](#decoration12)、下划线[showUnderline](#showunderline10)、行高[lineHeight](#lineheight12)、文字特性[fontFeature](#fontfeature12)不生效。
 
 #### [h2]passwordIcon10+
 
 passwordIcon(value: PasswordIcon)
 
-设置当密码输入模式时，输入框末尾的图标。
-
-支持jpg、png、bmp、heic和webp类型的图片格式。
+设置在密码模式下，输入框末尾的图标。未通过该接口设置时，默认使用系统提供的密码图标。支持jpg、png、bmp、heic和webp类型的图片格式。该图标的固定尺寸为24vp，Wearable设备上默认尺寸为28vp，若引用的图标过大或过小，均显示为固定尺寸。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -521,13 +518,13 @@ passwordIcon(value: PasswordIcon)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [PasswordIcon](#passwordicon10对象说明) | 是 | 密码输入模式时，输入框末尾的图标。 默认为系统提供的密码图标。 该图标的固定尺寸为24vp，Wearable设备上默认值为28vp，若引用的图标过大或过小，均显示为固定尺寸。 |
+| value | [PasswordIcon](#passwordicon10对象说明) | 是 | 密码输入模式时，输入框末尾的图标。 |
 
 #### [h2]enableKeyboardOnFocus10+
 
 enableKeyboardOnFocus(value: boolean)
 
-设置TextInput通过点击以外的方式获焦时，是否主动拉起软键盘。
+设置TextInput通过点击以外的方式获焦时，是否主动拉起软键盘。未通过该接口设置时，默认TV设备为false，其他设备为true。
 
 从API version 10开始，获焦默认绑定输入法。
 
@@ -541,13 +538,13 @@ enableKeyboardOnFocus(value: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | boolean | 是 | 通过点击以外的方式获焦时，是否主动拉起软键盘。 true表示主动拉起软键盘，false表示不主动拉起。 默认值：TV设备为false，其他设备为true。 |
+| value | boolean | 是 | 通过点击以外的方式获焦时，是否主动拉起软键盘。 true表示主动拉起软键盘，false表示不主动拉起。 |
 
 #### [h2]selectionMenuHidden10+
 
 selectionMenuHidden(value: boolean)
 
-设置是否隐藏系统文本选择菜单。
+设置是否隐藏系统文本选择菜单。未通过该接口设置时，默认显示系统文本选择菜单。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -559,13 +556,13 @@ selectionMenuHidden(value: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | boolean | 是 | 是否隐藏系统文本选择菜单。 设置为true时，单击输入框光标、长按输入框、双击输入框、三击输入框或者右键输入框，隐藏系统文本选择菜单。 设置为false时，显示系统文本选择菜单。 默认值：false |
+| value | boolean | 是 | 是否隐藏系统文本选择菜单。 设置为true时，单击输入框光标、长按输入框、双击输入框、三击输入框或者右键输入框，隐藏系统文本选择菜单。 设置为false时，显示系统文本选择菜单。 |
 
 #### [h2]barState10+
 
 barState(value: BarState)
 
-设置内联输入风格编辑态时滚动条的显示模式。
+设置内联输入风格编辑态时滚动条的显示模式。未通过该接口设置时，默认为BarState.Auto。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -577,13 +574,13 @@ barState(value: BarState)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [BarState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#barstate) | 是 | 内联输入风格编辑态时滚动条的显示模式。 默认值：BarState.Auto |
+| value | [BarState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#barstate) | 是 | 内联输入风格编辑态时滚动条的显示模式。仅设置内联模式时该属性生效。 |
 
 #### [h2]maxLines10+
 
 maxLines(value: number)
 
-设置内联输入风格编辑态时文本可显示的最大行数。
+设置内联输入风格编辑态时文本可显示的最大行数。未通过该接口设置时，默认为3。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -595,7 +592,7 @@ maxLines(value: number)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 内联输入风格编辑态时文本可显示的最大行数。 默认值：3 取值范围：(0, UINT32_MAX] |
+| value | number | 是 | 内联输入风格编辑态时文本可显示的最大行数。仅设置内联模式且处于编辑态时该属性生效。 取值范围：(0, UINT32_MAX]。传入0或负数时，按默认值3处理；超出UINT32_MAX时，自动修正为UINT32_MAX。 |
 
 #### [h2]customKeyboard10+
 
@@ -630,13 +627,13 @@ customKeyboard(value: CustomBuilder | ComponentContent | undefined, options?: Ke
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | value | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | [ComponentContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-componentcontent#componentcontent-1)22+ | undefined22+ | 是 | 自定义键盘。设定值为undefined时，关闭自定义键盘。 |
-| options12+ | [KeyboardOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-richeditor#keyboardoptions12) | 否 | 设置自定义键盘是否支持避让功能。 |
+| options12+ | [KeyboardOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-richeditor#keyboardoptions12) | 否 | 设置自定义键盘是否支持避让功能。 不设置该参数时，自定义键盘默认不支持避让功能。 |
 
 #### [h2]enableAutoFill11+
 
 enableAutoFill(value: boolean)
 
-设置是否启用自动填充。典型场景参考[密码自动填充服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault)、[智能填充服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-intelligent-filling)。
+设置是否启用自动填充。未通过该接口设置时，默认启用自动填充。典型场景参考[密码自动填充服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault)、[智能填充服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-intelligent-filling)。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -648,17 +645,17 @@ enableAutoFill(value: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | boolean | 是 | 是否启用自动填充。 true表示启用，false表示不启用。 默认值：true |
+| value | boolean | 是 | 是否启用自动填充。 true表示启用，false表示不启用。 |
 
 #### [h2]enableSelectedDataDetector22+
 
 enableSelectedDataDetector(enable: boolean | undefined)
 
-设置是否对选中文本进行实体识别。该接口依赖设备底层应具有文本识别能力，否则设置不会生效。
+设置是否对选中文本进行实体识别。该接口依赖设备底层应具有文本识别能力，否则设置不会生效。未通过该接口设置时，默认开启选中文本实体识别，并识别所有类型的实体，同时启用AI菜单功能。
 
 当enableSelectedDataDetector设置为true时，默认识别所有类型的实体。
 
-启用后可识别选区中的邮件、电话、网址、日期、地址等，并在文本选择菜单中展示对应的AI菜单项。默认启用AI菜单功能。
+启用后可识别选区中的邮件、电话、网址、日期、地址等，并在文本选择菜单中展示对应的AI菜单项。
 
 AI菜单功能启用时，在组件中选中文本后，文本选择菜单能够展示对应的AI菜单项，包括[TextMenuItemId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#textmenuitemid12)中的url（打开链接）、email（新建邮件）、phoneNumber（呼叫）、address（导航前往）、dateTime（新建日程）。
 
@@ -676,7 +673,7 @@ AI菜单生效时，选中范围内需包括且仅包括一个完整的AI实体�
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| enable | boolean | undefined | 是 | 是否开启选中文本实体识别。 true：开启识别，false：关闭识别。默认值为：true。 值为undefined时，按默认值处理。 |
+| enable | boolean | undefined | 是 | 是否开启选中文本实体识别。 true：开启识别，false：关闭识别。 值为undefined时，按默认值处理。 |
 
 #### [h2]passwordRules11+
 
@@ -696,13 +693,17 @@ passwordRules(value: string)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | string | 是 | 定义生成密码的规则。 |
+| value | string | 是 | 定义生成密码的规则。 **说明：** 需先设置[enableAutoFill](#enableautofill11)启用自动填充功能，并设置[contentType](#contenttype12)为NEW_PASSWORD类型，该属性在触发自动填充时生效。 |
 
 #### [h2]cancelButton11+
 
 cancelButton(options: CancelButtonOptions)
 
-设置右侧清除按钮样式，仅支持图片类型的图标。不支持[内联模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-text-input#内联模式)。示例请参考[示例4（设置右侧清除按钮样式）](#示例4设置右侧清除按钮样式)。
+设置右侧清除按钮样式，仅支持图片类型的图标。不支持[TextInputStyle](#textinputstyle9枚举说明)的内联模式。示例请参考[示例4（设置右侧清除按钮样式）](#示例4设置右侧清除按钮样式)。未通过该接口设置时，默认为{
+
+style: CancelButtonStyle.INPUT
+
+}，Wearable设备上图标默认尺寸为28vp。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -714,13 +715,13 @@ cancelButton(options: CancelButtonOptions)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [CancelButtonOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-search#cancelbuttonoptions12对象说明) | 是 | 右侧清除按钮样式选项。 默认值： { style: CancelButtonStyle.INPUT } Wearable设备上默认值为：28vp |
+| options | [CancelButtonOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-search#cancelbuttonoptions12对象说明) | 是 | 右侧清除按钮样式选项。 |
 
 #### [h2]selectAll11+
 
 selectAll(value: boolean)
 
-设置初始状态时，是否全选文本。不支持[内联模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-text-input#内联模式)。
+设置初始状态时，是否全选文本。不支持[TextInputStyle](#textinputstyle9枚举说明)的内联模式。未通过该接口设置时，默认不会全选文本。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -732,7 +733,7 @@ selectAll(value: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | boolean | 是 | 是否全选文本。 true表示会全选文本，false表示不会全选文本。 默认值：false |
+| value | boolean | 是 | 是否全选文本。 true表示会全选文本，false表示不会全选文本。 |
 
 #### [h2]showCounter11+
 
@@ -761,7 +762,7 @@ showCounter(value: boolean, options?: InputCounterOptions)
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | value | boolean | 是 | 是否显示计数器。 true表示显示计数器，false表示不显示。 |
-| options | [InputCounterOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-text-style#inputcounteroptions11对象说明) | 否 | 计数器的配置项。 |
+| options | [InputCounterOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-text-style#inputcounteroptions11对象说明) | 否 | 计数器的配置项，用于设置计数器阈值百分比、边框高亮等。当需要自定义计数器显示规则时传入此参数。不传入时使用默认计数器配置（阈值百分比为100%，边框高亮为true）。 |
 
 #### [h2]contentType12+
 
@@ -779,13 +780,13 @@ contentType(value: ContentType)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [ContentType](#contenttype12枚举说明) | 是 | 自动填充类型。 |
+| value | [ContentType](#contenttype12枚举说明) | 是 | 自动填充类型。取值范围：详见ContentType枚举说明。 |
 
 #### [h2]underlineColor12+
 
 underlineColor(value: ResourceColor|UnderlineColor|undefined)
 
-设置下划线颜色。
+设置下划线颜色。未通过该接口设置时，默认为主题配置的下划线颜色，主题配置的默认下划线颜色为'#33182431'（深灰色，不透明度为20%）。
 
 开启输入框下划线[showUnderline](#showunderline10)时，支持配置下划线颜色。
 
@@ -799,7 +800,7 @@ underlineColor(value: ResourceColor|UnderlineColor|undefined)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | [UnderlineColor](#underlinecolor12对象说明) | undefined | 是 | 设置下划线颜色。 当设置下划线颜色模式时，修改下划线颜色。当只设定非特殊状态下的颜色，可以直接输入ResourceColor。设定值为undefined、null、无效值时，所有下划线恢复为默认值。 默认值：主题配置的下划线颜色。主题配置的默认下划线颜色为'#33182431'。 |
+| value | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | [UnderlineColor](#underlinecolor12对象说明) | undefined | 是 | 设置下划线颜色。 当设置下划线颜色模式时，修改下划线颜色。当只设定非特殊状态下的颜色，可以直接输入ResourceColor。设定值为undefined、null、无效值时，所有下划线恢复为默认值。 |
 
 #### [h2]lineHeight12+
 
@@ -824,13 +825,23 @@ lineHeight(value: number | string | Resource)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 是 | 文本行高。 |
+| value | number | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 是 | 文本行高。 number类型时单位为fp。 |
 
 #### [h2]decoration12+
 
 decoration(value: TextDecorationOptions)
 
-设置文本装饰线类型样式及其颜色。
+设置文本装饰线类型样式及其颜色。未通过该接口设置时，默认为{
+
+type: TextDecorationType.None,
+
+color: Color.Black,
+
+style: TextDecorationStyle.SOLID,
+
+thicknessScale: 1.0
+
+}。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -842,13 +853,13 @@ decoration(value: TextDecorationOptions)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [TextDecorationOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-text-style#textdecorationoptions12对象说明) | 是 | 文本装饰线对象。 默认值：{ type: TextDecorationType.None, color: Color.Black, style: TextDecorationStyle.SOLID, thicknessScale: 1.0 } |
+| value | [TextDecorationOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-text-style#textdecorationoptions12对象说明) | 是 | 文本装饰线对象。 |
 
 ![](./img/note_3.0-zh-cn.png) 当文字的下边缘轮廓与装饰线位置相交时，会触发下划线避让规则，下划线将在这些字符处避让文字。常见“gjyqp”等英文字符。
 
 当文本装饰线的颜色设置为Color.Transparent时，装饰线颜色设置为跟随每行第一个字的字体颜色。当文本装饰线的颜色设置为透明色16进制对应值“#00FFFFFF”时，装饰线颜色设置为透明色。
 
-设置[密码模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-text-input#密码模式)时，装饰线[decoration](#decoration12)、下划线[showUnderline](#showunderline10)不生效。
+设置[密码模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-text-input#密码模式)时，装饰线[decoration](#decoration12)、下划线[showUnderline](#showunderline10)、行高[lineHeight](#lineheight12)、文字特性[fontFeature](#fontfeature12)不生效。
 
 #### [h2]letterSpacing12+
 
@@ -896,7 +907,7 @@ fontFeature(value: string)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | string | 是 | 文字特性效果。 |
+| value | string | 是 | 文字特性效果，用于设置OpenType字体高级排版能力（如等宽数字、连字等）。格式为normal或[/topic/body/section/table/tgroup/tbody/row/entry/feature-tag-value {""}) ，例如"ss01" on。 (feature-tag-value] |
 
 Font Feature当前支持的属性参见[fontFeature](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#fontfeature12)属性列表。
 
@@ -910,7 +921,7 @@ Font Feature当前支持的属性参见[fontFeature](https://developer.huawei.co
 
 wordBreak(value: WordBreak)
 
-设置文本断行规则。该属性在组件设置[内联模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-text-input#内联模式)时样式生效，但对placeholder文本无效。
+设置文本断行规则。该属性在组件设置[TextInputStyle](#textinputstyle9枚举说明)的内联模式时样式生效，但对placeholder文本无效。未通过该接口设置时，默认为WordBreak.BREAK_WORD。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -922,7 +933,7 @@ wordBreak(value: WordBreak)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [WordBreak](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#wordbreak11) | 是 | 内联输入风格编辑态时断行规则。 默认值：WordBreak.BREAK_WORD |
+| value | [WordBreak](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#wordbreak11) | 是 | 内联输入风格编辑态时断行规则。 |
 
 ![](./img/note_3.0-zh-cn.png) 组件不支持clip属性设置，设置该属性任意枚举值对组件文本截断无影响。
 
@@ -930,7 +941,7 @@ wordBreak(value: WordBreak)
 
 textOverflow(value: TextOverflow)
 
-设置文本超长时的显示方式。仅在[内联模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-text-input#内联模式)的编辑态、非编辑态下支持。
+设置文本超长时的显示方式。仅在[TextInputStyle](#textinputstyle9枚举说明)值为内联模式的编辑态、非编辑态下支持。未通过该接口设置时，内联模式非编辑态下默认为TextOverflow.Ellipsis，内联模式编辑态下默认为TextOverflow.Clip。
 
 文本截断是按字进行。例如，英文以单词为最小单位进行截断，若需要以字母为单位进行截断，可将wordBreak属性设置为WordBreak.BREAK_ALL。
 
@@ -946,7 +957,7 @@ textOverflow(value: TextOverflow)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [TextOverflow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#textoverflow) | 是 | 文本超长时的显示方式。 [内联模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-text-input#内联模式)非编辑态下默认值：TextOverflow.Ellipsis 内联模式编辑态下默认值：TextOverflow.Clip |
+| value | [TextOverflow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#textoverflow) | 是 | 文本超长时的显示方式。 |
 
 ![](./img/note_3.0-zh-cn.png) TextInput组件不支持设置TextOverflow.MARQUEE模式，当设置为TextOverflow.MARQUEE模式时，[内联模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-text-input#内联模式)非编辑态下显示为TextOverflow.Ellipsis，内联模式编辑态下以及非内联模式下显示为TextOverflow.Clip。
 
@@ -956,7 +967,7 @@ textOverflow(value: TextOverflow)
 
 textIndent(value: Dimension)
 
-设置首行文本缩进。
+设置首行文本缩进。未通过该接口设置时，默认为0。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -968,7 +979,7 @@ textIndent(value: Dimension)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | 是 | 首行文本缩进。 默认值：0 单位：[vp](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-pixel-units#基本像素单位) 取值范围：大于等于0。设置负数时，按默认值处理。 |
+| value | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | 是 | 首行文本缩进。 单位：[vp](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-pixel-units#基本像素单位) 取值范围：大于等于0。设置负数时，按默认值处理。 |
 
 #### [h2]minFontSize12+
 
@@ -992,7 +1003,7 @@ minFontSize小于或等于0时，自适应字号不生效，此时按照[fontSiz
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 是 | 文本最小显示字号。 单位：[fp](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-pixel-units#基本像素单位) |
+| value | number | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 是 | 文本最小显示字号。 单位：[fp](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-pixel-units#基本像素单位) 需大于0，小于或等于0时自适应字号不生效，按fontSize属性值生效。 需配合maxFontSize使用，单独设置不生效。 |
 
 #### [h2]maxFontSize12+
 
@@ -1016,13 +1027,13 @@ maxFontSize小于等于0或者maxFontSize小于minFontSize时，自适应字号�
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 是 | 文本最大显示字号。 单位：[fp](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-pixel-units#基本像素单位) |
+| value | number | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 是 | 文本最大显示字号。 单位：[fp](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-pixel-units#基本像素单位) 需大于0且大于minFontSize，否则自适应字号不生效，按fontSize属性值生效。 需配合minFontSize使用，单独设置不生效。 |
 
 #### [h2]heightAdaptivePolicy12+
 
 heightAdaptivePolicy(value: TextHeightAdaptivePolicy)
 
-组件设置为内联输入风格时，设置文本自适应高度的方式。
+组件设置为内联输入风格时，设置文本自适应高度的方式。未通过该接口设置时，默认为TextHeightAdaptivePolicy.MAX_LINES_FIRST。
 
 当设置为TextHeightAdaptivePolicy.MAX_LINES_FIRST时，优先使用[maxLines](#maxlines10)属性来调整文本高度。如果使用maxLines属性的布局大小超过了布局约束，则尝试在[minFontSize](#minfontsize12)和[maxFontSize](#maxfontsize12)的范围内缩小字体以显示更多文本。
 
@@ -1044,13 +1055,13 @@ heightAdaptivePolicy(value: TextHeightAdaptivePolicy)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [TextHeightAdaptivePolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#textheightadaptivepolicy10) | 是 | 文本自适应高度的方式。 默认值：TextHeightAdaptivePolicy.MAX_LINES_FIRST |
+| value | [TextHeightAdaptivePolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#textheightadaptivepolicy10) | 是 | 文本自适应高度的方式。仅设置内联输入风格时该属性生效。 |
 
 #### [h2]showPassword12+
 
 showPassword(visible: boolean)
 
-设置密码的显隐状态。
+设置密码的显隐状态。未通过该接口设置时，默认不显示密码。
 
 当[InputType](#inputtype枚举说明)设置为Password、NEW_PASSWORD和NUMBER_PASSWORD模式时，密码保护功能才能生效。非密码输入模式则不会触发该功能。
 
@@ -1066,13 +1077,15 @@ showPassword(visible: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| visible | boolean | 是 | 是否显示密码。 true表示会显示密码，false表示不会显示密码。 默认值：false |
+| visible | boolean | 是 | 是否显示密码。 true表示会显示密码，false表示不会显示密码。 建议在[onSecurityStateChange](#onsecuritystatechange12)回调中同步状态，避免末尾图标状态异常。 |
 
 #### [h2]lineBreakStrategy12+
 
 lineBreakStrategy(strategy: LineBreakStrategy)
 
-设置折行规则。该属性在wordBreak不等于breakAll的时候生效，不支持连词符。
+设置折行规则。该属性在wordBreak不等于BREAK_ALL的时候生效，不支持连字符。未通过该接口设置时，默认为LineBreakStrategy.GREEDY。
+
+适用于需要优化文本换行效果的场景：LineBreakStrategy.GREEDY适用于优先填充每行的快速换行；LineBreakStrategy.HIGH_QUALITY适用于追求更优视觉效果的排版；LineBreakStrategy.BALANCED适用于需要均匀分配各行内容的布局。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1084,7 +1097,7 @@ lineBreakStrategy(strategy: LineBreakStrategy)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| strategy | [LineBreakStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#linebreakstrategy12) | 是 | 文本的折行规则。 默认值：LineBreakStrategy.GREEDY **说明：** 仅设置[内联模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-text-input#内联模式)时该属性生效。 |
+| strategy | [LineBreakStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#linebreakstrategy12) | 是 | 文本的折行规则。 LineBreakStrategy.GREEDY表示贪婪折行，优先填充每行；LineBreakStrategy.HIGH_QUALITY表示高质量折行，平衡行长；LineBreakStrategy.BALANCED表示均衡折行，优化排版美观。 **说明：** 仅设置[TextInputStyle](#textinputstyle9枚举说明)的内联模式时该属性生效。 |
 
 #### [h2]editMenuOptions12+
 
@@ -1110,7 +1123,7 @@ editMenuOptions(editMenu: EditMenuOptions)
 
 enablePreviewText(enable: boolean)
 
-设置是否开启输入预上屏。
+设置是否开启输入预上屏。未通过该接口设置时，默认开启输入预上屏。
 
 预上屏内容定义为文字暂存态，目前不支持文字拦截功能。
 
@@ -1124,7 +1137,7 @@ enablePreviewText(enable: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| enable | boolean | 是 | 是否开启输入预上屏。 true表示开启输入预上屏，false表示不开启输入预上屏。 默认值：true |
+| enable | boolean | 是 | 是否开启输入预上屏。 true表示开启输入预上屏，false表示不开启输入预上屏。 |
 
 ![](./img/note_3.0-zh-cn.png) “预上屏”描述的是一种文字暂存状态。需要在输入法中开启预上屏功能，在输入文本过程中，未确认输入候选词时，文本框中显示标记文本。例如，通过拼音输入中文时，未确定候选词之前，在输入框中显示拼音字母，该状态称为文字预上屏。
 
@@ -1132,15 +1145,15 @@ enablePreviewText(enable: boolean)
 
 enableHapticFeedback(isEnabled: boolean)
 
-设置是否开启触控反馈。
+设置是否开启触控反馈。未通过该接口设置时，默认开启触控反馈。
 
 开启触控反馈时，需要在工程的[module.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中配置requestPermissions字段以开启振动权限，配置如下：
 
 ```
 "requestPermissions": [
- {
-    "name": "ohos.permission.VIBRATE",
- }
+  {
+    "name": "ohos.permission.VIBRATE"
+  }
 ]
 ```
  元服务API： 从API version 13开始，该接口支持在元服务中使用。
@@ -1153,7 +1166,7 @@ enableHapticFeedback(isEnabled: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| isEnabled | boolean | 是 | 是否开启触控反馈。 true表示开启触控反馈，false表示不开启触控反馈。 默认值：true |
+| isEnabled | boolean | 是 | 是否开启触控反馈。 true表示开启触控反馈，false表示不开启触控反馈。 |
 
 #### [h2]autoCapitalizationMode20+
 
@@ -1171,13 +1184,13 @@ autoCapitalizationMode(mode: AutoCapitalizationMode)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| mode | [AutoCapitalizationMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#autocapitalizationmode20枚举说明) | 是 | 自动大小写模式，默认状态无效。 |
+| mode | [AutoCapitalizationMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#autocapitalizationmode20枚举说明) | 是 | 自动大小写模式。不设置时，默认不启用自动大小写功能。具体实现以输入法应用为主。 |
 
 #### [h2]keyboardAppearance15+
 
 keyboardAppearance(appearance: Optional<KeyboardAppearance>)
 
-设置输入框拉起的键盘样式，需要输入法适配后生效。具体参考[输入法应用沉浸模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inputmethod-immersive-mode-guide)。
+设置输入框拉起的键盘样式，需要输入法适配后生效。具体参考[输入法应用沉浸模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inputmethod-immersive-mode-guide)。未通过该接口设置时，默认为KeyboardAppearance.NONE_IMMERSIVE。
 
 元服务API： 从API version 15开始，该接口支持在元服务中使用。
 
@@ -1189,13 +1202,13 @@ keyboardAppearance(appearance: Optional<KeyboardAppearance>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| appearance | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 键盘样式。 默认值：KeyboardAppearance.NONE_IMMERSIVE |
+| appearance | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 键盘样式。 |
 
 #### [h2]strokeWidth20+
 
 strokeWidth(width: Optional<LengthMetrics>)
 
-设置文本描边的宽度。
+设置文本描边的宽度。未通过该接口设置时，默认值为0，不做描边处理。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -1207,13 +1220,13 @@ strokeWidth(width: Optional<LengthMetrics>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| width | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 文本描边的宽度。如果LengthMetrics的unit值是PERCENT，当前设置不生效，按默认值处理。 若设置值小于0，显示实心字；若大于0，显示空心字。 默认值为0，不做描边处理。 |
+| width | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 文本描边的宽度。如果LengthMetrics的unit值是PERCENT，当前设置不生效，按默认值处理。 若设置值小于0，显示实心字；若大于0，显示空心字。 |
 
 #### [h2]strokeColor20+
 
 strokeColor(color: Optional<ResourceColor>)
 
-设置文本描边的颜色。
+设置文本描边的颜色。未通过该接口设置时，默认为字体颜色，设置异常值时取默认值。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -1225,13 +1238,13 @@ strokeColor(color: Optional<ResourceColor>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| color | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 描边颜色。默认值为字体颜色，设置异常值时取默认值。 |
+| color | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 描边颜色。 |
 
 #### [h2]stopBackPress15+
 
 stopBackPress(isStopped: Optional<boolean>)
 
-设置是否阻止返回键传递。
+设置是否阻止返回键事件向其他组件或系统传递。设置为true时，TextInput拦截返回键事件，不向其他组件传递；设置为false时，返回键事件正常向其他组件或系统传递。适用于需要自定义返回键行为的场景，如表单未保存时拦截返回操作并弹出确认提示、自定义导航流程、游戏或特殊交互场景中需要接管返回键控制等。未通过该接口设置时，默认为true，异常值取默认值。
 
 元服务API： 从API version 15开始，该接口支持在元服务中使用。
 
@@ -1243,13 +1256,13 @@ stopBackPress(isStopped: Optional<boolean>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| isStopped | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 是否阻止返回键。 true表示阻止，false表示不阻止。 默认值：true。异常值取默认值。 |
+| isStopped | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 是否阻止返回键。 true表示阻止，false表示不阻止。 |
 
 #### [h2]halfLeading18+
 
 halfLeading(halfLeading: Optional<boolean>)
 
-设置文本在行内垂直居中，将行间距平分至行的顶部与底部。
+设置文本在行内垂直居中，将行间距平分至行的顶部与底部。未通过该接口设置时，默认为false。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -1261,7 +1274,7 @@ halfLeading(halfLeading: Optional<boolean>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| halfLeading | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 设置文本是否垂直居中。 true表示将行间距平分至行的顶部与底部，false则不平分。 默认值：false |
+| halfLeading | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 设置文本是否垂直居中。 true表示将行间距平分至行的顶部与底部，false则不平分。 |
 
 #### [h2]minFontScale18+
 
@@ -1303,7 +1316,11 @@ maxFontScale(scale: Optional<number | Resource>)
 
 cancelButton(symbolOptions: CancelButtonSymbolOptions)
 
-设置右侧清除按钮样式，仅支持symbol图标。不支持[内联模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-text-input#内联模式)。示例请参考[示例15（设置symbol类型清除按钮）](#示例15设置symbol类型清除按钮)。
+设置右侧清除按钮样式，仅支持symbol图标。不支持[TextInputStyle](#textinputstyle9枚举说明)的内联模式。示例请参考[示例15（设置symbol类型清除按钮）](#示例15设置symbol类型清除按钮)。未通过该接口设置时，默认为{
+
+style: CancelButtonStyle.INPUT
+
+}。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -1315,13 +1332,13 @@ cancelButton(symbolOptions: CancelButtonSymbolOptions)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| symbolOptions | [CancelButtonSymbolOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-search#cancelbuttonsymboloptions12对象说明) | 是 | 右侧清除按钮样式。 默认值： { style: CancelButtonStyle.INPUT } |
+| symbolOptions | [CancelButtonSymbolOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-search#cancelbuttonsymboloptions12对象说明) | 是 | 右侧清除按钮样式。 |
 
 #### [h2]ellipsisMode18+
 
 ellipsisMode(mode: Optional<EllipsisMode>)
 
-设置省略位置。ellipsisMode属性仅在[内联模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-text-input#内联模式)下生效，需要配合overflow设置为TextOverflow.Ellipsis使用，单独设置ellipsisMode属性不生效。
+设置省略位置。ellipsisMode属性仅在[TextInputStyle](#textinputstyle9枚举说明)的内联模式下生效，需要配合[textOverflow](#textoverflow12)设置为TextOverflow.Ellipsis使用，单独设置ellipsisMode属性不生效。未通过该接口设置时，默认为EllipsisMode.END。
 
 非编辑态时正常生效，编辑态时EllipsisMode.START和EllipsisMode.CENTER仅在maxLines设置为1时生效，EllipsisMode.END、EllipsisMode.MULTILINE_START和EllipsisMode.MULTILINE_CENTER正常生效。
 
@@ -1335,13 +1352,13 @@ ellipsisMode(mode: Optional<EllipsisMode>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| mode | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 省略位置。 默认值：EllipsisMode.END |
+| mode | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 省略位置。 |
 
 #### [h2]enableAutoFillAnimation20+
 
 enableAutoFillAnimation(enabled: Optional<boolean>)
 
-设置是否启用自动填充动效。
+设置是否启用自动填充动效。未通过该接口设置时，默认为true。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -1353,13 +1370,13 @@ enableAutoFillAnimation(enabled: Optional<boolean>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| enabled | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 是否启用自动填充动效。 true表示启用，false表示不启用。 默认值：true **说明：** 启用之后，仅输入模式[InputType](#inputtype枚举说明)设置为Password、NEW_PASSWORD或NUMBER_PASSWORD的输入框在进行自动填充时动效可生效。 |
+| enabled | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 是否启用自动填充动效。 true表示启用，false表示不启用。 **说明：** 需先设置[enableAutoFill](#enableautofill11)启用自动填充功能。启用之后，仅输入模式[InputType](#inputtype枚举说明)设置为Password、NEW_PASSWORD或NUMBER_PASSWORD的输入框在进行自动填充时动效可生效。 |
 
 #### [h2]enableAutoSpacing20+
 
 enableAutoSpacing(enabled: Optional<boolean>)
 
-设置是否开启中文与西文的自动间距。
+设置是否开启中文与西文的自动间距。未通过该接口设置时，默认为false。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -1371,17 +1388,16 @@ enableAutoSpacing(enabled: Optional<boolean>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| enabled | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 是否开启中文与西文的自动间距。 true为开启自动间距，false为不开启。 默认值：false |
+| enabled | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 是否开启中文与西文的自动间距。 true为开启自动间距，false为不开启。 |
 
 #### [h2]compressLeadingPunctuation23+
 
 compressLeadingPunctuation(enabled: Optional<boolean>)
 
-设置是否开启行首标点符号压缩。
+设置是否开启行首标点符号压缩。未通过该接口设置时，默认不开启行首标点符号压缩。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 行首标点符号默认不压缩。
 - 支持压缩的标点符号，请参考[ParagraphStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-text#paragraphstyle)的行首压缩的标点范围。
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
@@ -1402,7 +1418,7 @@ orphanCharOptimization(enabled: Optional<boolean>)
 
 设置文本排版时是否使能孤字优化。不通过该接口设置，默认不使能孤字优化。
 
-孤字优化通过更高效地处理孤立字符（段落尾行首字符）来改善文本布局。使能后，它会调整换行点以尽可能避免孤立字符。孤字优化特性需在[wordBreak](#wordbreak12)为非BREAK_ALL并且待排版文本首个[TextStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-text#textstyle)的[locale](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-text#textstyle)为“zh-Hans”或“zh-Hant”时生效。
+使能后，会调整换行点以尽可能避免孤立字符（段落尾行首字符），改善文本布局。该特性需在wordBreak为非BREAK_ALL且待排版文本首个[TextStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-text#textstyle)的[locale](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-text#textstyle)为"zh-Hans"或"zh-Hant"时生效。
 
 起始版本： 26.0.0
 
@@ -1414,7 +1430,71 @@ orphanCharOptimization(enabled: Optional<boolean>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| enabled | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 段落最后一行是否使能孤字优化。 true表示使能孤字优化，false表示不使能孤字优化。 值为undefined或null时，不使能孤字优化。 |
+| enabled | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 段落最后一行是否使能孤字优化。 true表示使能孤字优化，false表示不使能孤字优化。 值为undefined或null时，不使能孤字优化。 孤字优化需在wordBreak为非BREAK_ALL并且待排版文本首个TextStyle的locale为"zh-Hans"或"zh-Hant"时生效。 |
+
+#### [h2]strokeJoinStyle
+
+strokeJoinStyle(strokeJoinStyle: StrokeJoinStyle | undefined)
+
+设置文本描边拐角样式。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| strokeJoinStyle | [StrokeJoinStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#strokejoinstyle) | undefined | 是 | 文本描边拐角样式。 值为undefined时，按照StrokeJoinStyle.MITER_JOIN处理，请参考[StrokeJoinStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#strokejoinstyle)，文本拐角处表现为锐角。 |
+
+#### [h2]shaderStyle
+
+shaderStyle(shader: ShaderStyle | undefined)
+
+设置文本着色器效果，如线性渐变、径向渐变效果等。
+
+![](./img/note_3.0-zh-cn.png) 当同时设置shaderStyle和[strokeWidth](#strokewidth20)时，shaderStyle不生效。
+
+shaderStyle的优先级高于[fontColor](#fontcolor)。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| shader | [ShaderStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#shaderstyle20) | undefined | 是 | 文本着色器效果，用于设置文本的渐变或特殊颜色效果。支持线性渐变、径向渐变、纯色等类型。 当同时设置shaderStyle和strokeWidth时，shaderStyle不生效。 值为undefined时，无渐变效果。 |
+
+#### [h2]punctuationOverflow
+
+punctuationOverflow(enabled: Optional<boolean>)
+
+设置是否启用行尾标点符号悬挂。不通过该接口设置，默认标点符号不悬挂。
+
+起始版本： 26.0.0
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| enabled | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 是否启用行尾标点符号悬挂。 true表示启用行尾标点符号悬挂，false表示不启用行尾标点符号悬挂。设置为undefined或null时，不启用标点符号悬挂。 |
 
 #### [h2]includeFontPadding23+
 
@@ -1450,7 +1530,7 @@ fallbackLineSpacing(enabled: Optional<boolean>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| enabled | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 行高是否基于文字实际高度自适应。 true表示行高基于文字实际高度自适应；false表示行高不基于文字实际高度自适应。 |
+| enabled | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 行高是否基于文字实际高度自适应。 true表示行高基于文字实际高度自适应；false表示行高不基于文字实际高度自适应。 此接口仅当行高小于文字实际高度时生效。 |
 
 #### [h2]selectedDragPreviewStyle23+
 
@@ -1481,12 +1561,12 @@ selectedDragPreviewStyle(value: SelectedDragPreviewStyle | undefined)
 | Normal | 0 | 基本输入模式，无特殊限制。 内联输入风格只支持InputType.Normal类型。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | Number | 2 | 纯数字输入模式。 不支持负数、小数。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | PhoneNumber9+ | 3 | 电话号码输入模式。 支持输入数字、空格、+ 、-、*、#、(、)，长度不限。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| Email | 5 | 邮箱地址输入模式。 支持数字、字母、下划线、小数点、!、#、$、%、&、'、"、*、+、-、/、=、?、^、`、{、|、}、~，以及@字符（只能存在一个@字符）。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| Password | 7 | 密码输入模式。 默认输入文字短暂显示后变成圆点。从API version 12开始，PC/2in1设备上输入文字直接显示为圆点。 TV设备上输入框末尾默认不显示小眼睛图标，其他设备输入框末尾默认显示小眼睛图标。 密码输入模式中，[decoration](#decoration12)、[showUnderline](#showunderline10)、[lineHeight](#lineheight12)不生效。 在已启用密码保险箱的情况下，支持用户名、密码的自动保存和自动填充。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| NUMBER_PASSWORD11+ | 8 | 纯数字密码输入模式。 默认输入文字短暂显示后变成圆点。从API version 12开始，PC/2in1设备上输入文字直接显示为圆点。 TV设备上输入框末尾默认不显示小眼睛图标，其他设备输入框末尾默认显示小眼睛图标。 密码输入模式不支持下划线样式。在已启用密码保险箱的情况下，支持用户名、密码的自动保存和自动填充。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| USER_NAME11+ | 10 | 用户名输入模式，无特殊限制。 在已启用密码保险箱的情况下，支持用户名、密码的自动保存和自动填充。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| NEW_PASSWORD11+ | 11 | 新密码输入模式，无特殊限制。 默认输入文字短暂显示后变成圆点。从API version 12开始，PC/2in1设备上输入文字直接显示为圆点。 TV设备上输入框末尾默认不显示小眼睛图标，其他设备输入框末尾默认显示小眼睛图标。 在已启用密码保险箱的情况下，支持自动生成新密码。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| NUMBER_DECIMAL11+ | 12 | 带小数点的数字输入模式。 支持数字，小数点（只能存在一个小数点）。不支持负数小数，负数小数的数字输入模式请使用inputFilter实现。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| Email | 5 | 邮箱地址输入模式。 支持数字、字母、下划线、小数点、!、#、$、%、&、'、"、*、+、-、/、=、?、^、`、{、|、}、~，以及@（仅支持一个）。邮箱地址格式需符合基本规范：@字符前为用户名部分，@字符后为域名部分。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| Password | 7 | 密码输入模式。 默认输入文字短暂显示后变成圆点。从API version 12开始，PC/2in1设备上输入文字直接显示为圆点。 TV设备上输入框末尾默认不显示小眼睛图标，其他设备输入框末尾默认显示小眼睛图标。 密码输入模式中，[decoration](#decoration12)、[showUnderline](#showunderline10)、[lineHeight](#lineheight12)、[fontFeature](#fontfeature12)不生效。 在已启用密码保险箱的情况下，支持用户名、密码的自动保存和自动填充。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| NUMBER_PASSWORD11+ | 8 | 纯数字密码输入模式。 默认输入文字短暂显示后变成圆点。从API version 12开始，PC/2in1设备上输入文字直接显示为圆点。 TV设备上输入框末尾默认不显示小眼睛图标，其他设备输入框末尾默认显示小眼睛图标。 密码输入模式中，[decoration](#decoration12)、[showUnderline](#showunderline10)、[lineHeight](#lineheight12)、[fontFeature](#fontfeature12)不生效。在已启用密码保险箱的情况下，支持用户名、密码的自动保存和自动填充。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| USER_NAME11+ | 10 | 用户名输入模式，无特殊限制。 在已启用密码保险箱的情况下，支持用户名的自动保存和自动填充，用于配合[InputType.Password](#inputtype枚举说明)、[InputType.NUMBER_PASSWORD](#inputtype枚举说明)、[InputType.NEW_PASSWORD](#inputtype枚举说明)完成用户名密码配对填充。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| NEW_PASSWORD11+ | 11 | 新密码输入模式。 默认输入文字短暂显示后变成圆点。从API version 12开始，PC/2in1设备上输入文字直接显示为圆点。 TV设备上输入框末尾默认不显示小眼睛图标，其他设备输入框末尾默认显示小眼睛图标。 密码输入模式中，[decoration](#decoration12)、[showUnderline](#showunderline10)、[lineHeight](#lineheight12)、[fontFeature](#fontfeature12)不生效。在已启用密码保险箱的情况下，支持自动生成新密码。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| NUMBER_DECIMAL11+ | 12 | 带小数点的数字输入模式。 支持数字，小数点（只能存在一个小数点）。不支持负数（包括负数整数和负数小数）。若需支持负数输入，请使用[inputFilter](#inputfilter8)属性实现负数过滤。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | URL12+ | 13 | 带URL的输入模式，无特殊限制。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | ONE_TIME_CODE20+ | 14 | 验证码输入模式，无特殊限制。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
@@ -1540,10 +1620,10 @@ selectedDragPreviewStyle(value: SelectedDragPreviewStyle | undefined)
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-| 名称 | 说明 |
-| --- | --- |
-| Default | 默认风格，光标宽1.5vp，光标高度与文本选中底板高度和字体大小相关。 |
-| Inline | 内联输入风格。文本选中底板高度与输入框高度相同。 内联输入是在有明显的编辑态/非编辑态的区分场景下使用，例如：文件列表视图中的重命名。 不支持showError属性。 [内联模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-text-input#内联模式)下，不支持拖入文本。 |
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| Default | - | 默认风格，光标宽1.5vp，光标高度与文本选中底板高度和字体大小相关。 |
+| Inline | - | 内联输入风格，也称内联模式。文本选中底板高度与输入框高度相同。 内联输入是在有明显的编辑态/非编辑态的区分场景下使用，例如：文件列表视图中的重命名。 不支持showError属性。 不支持showCounter属性，内联模式下字符计数器不显示。 内联模式下，不支持拖入文本。 |
 
 #### PasswordIcon10+对象说明
 
@@ -1555,8 +1635,8 @@ selectedDragPreviewStyle(value: SelectedDragPreviewStyle | undefined)
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| onIconSrc | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 是 | 密码输入模式时，能够切换密码可见时显示的图标。 string格式可用于加载网络图片和本地图片。 |
-| offIconSrc | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 是 | 密码输入模式时，能够切换密码不可见时显示的图标。 string格式可用于加载网络图片和本地图片。 |
+| onIconSrc | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 是 | 密码输入模式时，能够切换密码可见时显示的图标。默认为系统提供的密码图标。 string格式可用于加载网络图片和本地图片。 网络图片支持http或https协议的URL格式；本地图片支持应用资源路径格式。 |
+| offIconSrc | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 是 | 密码输入模式时，能够切换密码不可见时显示的图标。默认为系统提供的密码图标。 string格式可用于加载网络图片和本地图片。 网络图片支持http或https协议的URL格式；本地图片支持应用资源路径格式。 |
 
 #### EnterKeyType枚举说明
 
@@ -1620,7 +1700,7 @@ onEditChanged(callback: (isEditing: boolean) => void)
 
 输入状态变化时，触发该回调。
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 8开始废弃，建议使用[onEditChange](#oneditchange8)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 8开始废弃。建议使用[onEditChange](#oneditchange8)替代。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -1628,7 +1708,7 @@ onEditChanged(callback: (isEditing: boolean) => void)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| isEditing | boolean | 是 | 当前是否正在输入中。 true表示正在输入；false表示当前没有输入。 |
+| isEditing | boolean | 是 | 当前是否正在输入中。 true表示正在输入，即输入框处于编辑态，有光标显示，可以接收用户输入；false表示当前没有输入，即输入框处于非编辑态，无光标显示，不能接收用户输入。 |
 
 #### [h2]onEditChange8+
 
@@ -1644,7 +1724,7 @@ onEditChange(callback: Callback<boolean>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | Callback | 是 | 输入状态变化回调，返回值为true表示输入框处于编辑态，返回值为false表示输入框处于非编辑态。 |
+| callback | Callback | 是 | 输入状态变化回调，返回值为true表示输入框处于编辑态（有光标显示，可以接收用户输入）；返回值为false表示输入框处于非编辑态（无光标显示，不能接收用户输入）。 |
 
 #### [h2]onCopy8+
 
@@ -1670,9 +1750,15 @@ onWillCopy(callback: Callback<string, boolean>)
 
 起始版本： 26.0.0
 
+![](./img/note_3.0-zh-cn.png) onWillCopy和onCopy形成will/did时序模式：
+
+- onWillCopy在复制操作前触发，可通过返回false拦截复制操作；返回true则允许复制，随后触发onCopy。
+- onCopy在复制操作完成后触发，无法拦截。
+- 两者可以同时使用，onWillCopy用于拦截控制，onCopy用于获取复制结果。
+
 模型约束： 此接口仅可在Stage模型下使用。
 
-元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API version 26.0.0开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -1680,7 +1766,7 @@ onWillCopy(callback: Callback<string, boolean>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | Callback | 是 | 复制操作前的回调。回调参数类型为string时，表示将要被复制的文本内容。回调参数类型为boolean时，表示当前选中文本是否允许被复制，true：允许文本被复制；false：不允许文本被复制。 |
+| callback | Callback | 是 | 复制操作前的回调。回调参数类型为string时，表示将要被复制的文本内容。回调参数类型为boolean时，表示当前选中文本是否允许被复制，true：允许文本被复制，执行正常的复制操作；false：不允许文本被复制，拦截此次复制操作，文本不会被复制到剪贴板。 |
 
 #### [h2]onCut8+
 
@@ -1706,6 +1792,12 @@ onWillCut(callback: Callback<string, boolean>)
 
 起始版本： 26.0.0
 
+![](./img/note_3.0-zh-cn.png) onWillCut和onCut形成will/did时序模式：
+
+- onWillCut在剪切操作前触发，可通过返回false拦截剪切操作；返回true则允许剪切，随后触发onCut。
+- onCut在剪切操作完成后触发，无法拦截。
+- 两者可以同时使用，onWillCut用于拦截控制，onCut用于获取剪切结果。
+
 模型约束： 此接口仅可在Stage模型下使用。
 
 元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
@@ -1716,7 +1808,7 @@ onWillCut(callback: Callback<string, boolean>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | Callback | 是 | 剪切操作前的回调。回调参数类型为string时，表示将要被剪切的文本内容。回调参数类型为boolean时，表示当前选中文本是否允许被剪切，true：允许文本被剪切；false：不允许文本被剪切。 |
+| callback | Callback | 是 | 剪切操作前的回调。回调参数类型为string时，表示将要被剪切的文本内容。回调参数类型为boolean时，表示当前选中文本是否允许被剪切，true：允许文本被剪切，执行正常的剪切操作；false：不允许文本被剪切，拦截此次剪切操作，文本不会被剪切到剪贴板也不会从输入框中删除。 |
 
 #### [h2]onPaste8+
 
@@ -1796,6 +1888,12 @@ onWillInsert(callback: Callback<InsertValue, boolean>)
 
 在将要输入时，触发该回调。
 
+![](./img/note_3.0-zh-cn.png) onWillInsert和onDidInsert形成will/did时序模式：
+
+- onWillInsert在输入操作前触发，可通过返回false拦截输入操作；返回true则允许输入，随后触发onDidInsert
+- onDidInsert在输入完成后触发，无法拦截
+- 两者可以同时使用，onWillInsert用于拦截控制，onDidInsert用于获取输入结果
+
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
@@ -1806,7 +1904,7 @@ onWillInsert(callback: Callback<InsertValue, boolean>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | Callback | 是 | 在将要输入时调用的回调。 在返回true时，表示正常插入，返回false时，表示不插入。 在预上屏和候选词操作时，该回调不触发。 仅支持系统输入法输入的场景。 |
+| callback | Callback | 是 | 在将要输入时调用的回调。 回调参数类型为InsertValue时，包含将要插入的文本内容等信息。回调参数类型为boolean时，表示是否允许此次插入，返回true：允许文本正常插入到输入框中；返回false：拦截此次插入操作，文本不会被插入。开发者可通过此回调实现对输入内容的过滤和拦截。 在预上屏和候选词操作时，该回调不触发。 仅支持系统输入法输入的场景。 |
 
 #### [h2]onDidInsert12+
 
@@ -1832,6 +1930,12 @@ onWillDelete(callback: Callback<DeleteValue, boolean>)
 
 在将要删除时，触发该回调。
 
+![](./img/note_3.0-zh-cn.png) onWillDelete和onDidDelete形成will/did时序模式：
+
+- onWillDelete在删除操作前触发，可通过返回false拦截删除操作；返回true则允许删除，随后触发onDidDelete
+- onDidDelete在删除完成后触发，无法拦截
+- 两者可以同时使用，onWillDelete用于拦截控制，onDidDelete用于获取删除结果
+
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
@@ -1842,7 +1946,7 @@ onWillDelete(callback: Callback<DeleteValue, boolean>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | Callback | 是 | 在将要删除时调用的回调。 在返回true时，表示正常删除，返回false时，表示不删除。 在预上屏删除操作时，该回调不触发。 仅支持系统输入法输入的场景。 |
+| callback | Callback | 是 | 在将要删除时调用的回调。 回调参数类型为DeleteValue时，包含将要删除的文本内容等信息。回调参数类型为boolean时，表示是否允许此次删除，返回true：允许文本正常删除；返回false：拦截此次删除操作，文本不会被删除。开发者可通过此回调实现对删除操作的拦截和控制。 在预上屏删除操作时，该回调不触发。 仅支持系统输入法输入的场景。 |
 
 #### [h2]onDidDelete12+
 
@@ -1882,7 +1986,7 @@ onWillChange的回调时序晚于onWillInsert、onWillDelete，早于onDidInsert
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | Callback | 是 | 在文本内容将要发生变化时的回调。 返回true时，表示正常修改。返回false时，表示拦截此次触发。 |
+| callback | Callback | 是 | 在文本内容将要发生变化时的回调。 回调参数类型为EditableTextChangeValue时，包含文本变化的相关信息。回调参数类型为boolean时，表示是否允许此次文本变化，返回true：允许文本正常修改，变化会生效；返回false：拦截此次文本变化操作，文本内容不会发生改变。开发者可通过此回调实现对文本变化的拦截和控制。 |
 
 #### [h2]onWillAttachIME20+
 
@@ -1930,8 +2034,6 @@ TextInputController的构造函数。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
-模型约束： 此接口仅可在Stage模型下使用。
-
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 #### [h2]caretPosition8+
@@ -1941,8 +2043,6 @@ caretPosition(value: number): void
 设置输入光标的位置。当取值小于0时，取0，大于文本长度时，显示在文本末尾。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
-
-模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -1968,8 +2068,7 @@ setTextSelection(selectionStart: number, selectionEnd: number, options?: Selecti
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| selectionStart | number | 是 | 文本选择区域起始位置，文本框中文字的起始位置为0。 |
-| selectionEnd | number | 是 | 文本选择区域结束位置。当selectionEnd 如果selectionStart或selectionEnd被赋值为undefined时，当作0处理。
+| selectionStart | number | 是 | 文本选择区域起始位置，文本框中文字的起始位置为0。当selectionStart 如果selectionStart或selectionEnd被赋值为undefined时，当作0处理。
 
 如果selectionMenuHidden被赋值为true或设备为2in1时，即使options被赋值为MenuPolicy.SHOW，调用setTextSelection也不弹出菜单。
 
@@ -1997,10 +2096,10 @@ stopEditing(): void
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| typing | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | undefined | 否 | 是 | 键入时下划线颜色。不填写、undefined、null、无效值时恢复默认。 |
-| normal | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | undefined | 否 | 是 | 非特殊状态时下划线颜色。不填写、undefined、null、无效值时恢复默认。 |
-| error | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | undefined | 否 | 是 | 错误时下划线颜色。不填写、undefined、null、无效值时恢复默认。此选项会修改showCounter属性中达到最大字符数时的颜色。 |
-| disable | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | undefined | 否 | 是 | 禁用时下划线颜色。不填写、undefined、null、无效值时恢复默认。 |
+| typing | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | undefined | 否 | 是 | 键入时下划线颜色。不填写、undefined、null、无效值时恢复默认，默认为主题配置的下划线颜色。 |
+| normal | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | undefined | 否 | 是 | 非特殊状态时下划线颜色。不填写、undefined、null、无效值时恢复默认，默认为主题配置的下划线颜色。 |
+| error | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | undefined | 否 | 是 | 错误时下划线颜色。不填写、undefined、null、无效值时恢复默认，默认为主题配置的下划线颜色。此选项会修改showCounter属性中达到最大字符数时的颜色。 |
+| disable | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | undefined | 否 | 是 | 禁用时下划线颜色。不填写、undefined、null、无效值时恢复默认，默认为主题配置的下划线颜色。 |
 
 #### SubmitEvent11+
 
@@ -2190,7 +2289,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732567.gif)
+ ![](./img/zh-cn_image_0000002656008570.gif)
 
 #### [h2]示例2（设置下划线）
 
@@ -2215,7 +2314,7 @@ struct TextInputExample {
       { value: 'MB' },
       { value: 'GB' },
       { value: 'TB', }])
-      .height("48vp")
+      .height('48vp')
       .borderRadius(0)
       .selected(2)
       .align(Alignment.Center)
@@ -2226,8 +2325,8 @@ struct TextInputExample {
       .optionFont({ size: 20, weight: 400 })
       .backgroundColor(Color.Transparent)
       .responseRegion({
-        height: "40vp",
-        width: "80%",
+        height: '40vp',
+        width: '80%',
         x: '10%',
         y: '6vp'
       })
@@ -2291,7 +2390,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253446.png)
+ ![](./img/zh-cn_image_0000002655848650.png)
 
 #### [h2]示例3（设置自定义键盘）
 
@@ -2324,7 +2423,7 @@ function CustomKeyboardBuilder(builderParams: BuilderParams) {
     Grid() {
       ForEach([1, 2, 3, 4, 5, 6, 7, 8, 9, '*', 0, '#'], (item: number | string) => {
         GridItem() {
-          Button(item + "")
+          Button(item + '')
             .width(110).onClick(() => {
             builderParams.inputValue += item;
           })
@@ -2337,8 +2436,8 @@ function CustomKeyboardBuilder(builderParams: BuilderParams) {
 @Component
 struct TextInputExample {
   controller: TextInputController = new TextInputController();
-  @State inputValue: string = "";
-  @State componentContent ?: ComponentContent<BuilderParams> = undefined;
+  @State inputValue: string = '';
+  @State componentContent?: ComponentContent<BuilderParams> = undefined;
   @State builderParam: BuilderParams = new BuilderParams(this.inputValue, this.controller);
   @State supportAvoidance: boolean = true;
 
@@ -2355,13 +2454,13 @@ struct TextInputExample {
 
       Text('ComponentContent').margin(10).border({ width: 1 })
       TextInput({ controller: this.builderParam.controller, text: this.builderParam.inputValue })
-        .customKeyboard(CustomKeyboardBuilder(this.builderParam), { supportAvoidance: this.supportAvoidance })
+        .customKeyboard(new ComponentContent(this.getUIContext(), wrapBuilder(CustomKeyboardBuilder), this.builderParam), { supportAvoidance: this.supportAvoidance })
         .margin(10).border({ width: 1 }).height('48vp')
     }
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612629.gif)
+ ![](./img/zh-cn_image_0000002686088079.gif)
 
 #### [h2]示例4（设置右侧清除按钮样式）
 
@@ -2396,7 +2495,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413336.png)
+ ![](./img/zh-cn_image_0000002685928249.png)
 
 #### [h2]示例5（设置计数器）
 
@@ -2430,7 +2529,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732569.jpg)
+ ![](./img/zh-cn_image_0000002656008572.jpg)
 
 #### [h2]示例6（电话号码格式化）
 
@@ -2441,7 +2540,6 @@ struct TextInputExample {
 @Entry
 @Component
 struct TextInputExample {
-  @State submitValue: string = '';
   @State text: string = '';
   public readonly NUM_TEXT_MAXSIZE_LENGTH = 13;
   @State telNumberNoSpace: string = "";
@@ -2452,7 +2550,7 @@ struct TextInputExample {
   controller: TextInputController = new TextInputController();
 
   isEmpty(str?: string): boolean {
-    return str == 'undefined' || !str || !new RegExp("[^\\s]").test(str);
+    return str == 'undefined' || !str || !new RegExp('[^\\s]').test(str);
   }
 
   checkNeedNumberSpace(numText: string) {
@@ -2474,12 +2572,12 @@ struct TextInputExample {
     if (this.isEmpty(str)) {
       return '';
     }
-    return str.replace(new RegExp("[\\s]", "g"), '');
+    return str.replace(new RegExp('[\\s]', 'g'), '');
   }
 
   setCaret() {
     if (this.nextCaret != -1) {
-      console.info("to keep caret position right, change caret to", this.nextCaret);
+      console.info('to keep caret position right, change caret to', this.nextCaret);
       this.controller.caretPosition(this.nextCaret);
       this.nextCaret = -1;
     }
@@ -2495,7 +2593,7 @@ struct TextInputExample {
         }
       }
       this.actualCh += this.telNumberNoSpace.length - befNumberNoSpace.length;
-      console.info("actualCh: " + this.actualCh);
+      console.info('actualCh: ' + this.actualCh);
       for (let i = 0; i < nextText.length; i++) {
         if (nextText[i] != ' ') {
           this.actualCh -= 1;
@@ -2507,7 +2605,7 @@ struct TextInputExample {
       }
     } else if (befNumberNoSpace.length > this.telNumberNoSpace.length) { // 删除场景
       if (this.lastCaretPosition === this.text.length) {
-        console.info("Caret at last, no need to change");
+        console.info('Caret at last, no need to change');
       } else if (this.lastCaretPosition === this.lastCaretPositionEnd) {
         // 按键盘上回退键一个一个删的情况
         for (let i = this.lastCaretPosition; i < this.text.length; i++) {
@@ -2538,25 +2636,26 @@ struct TextInputExample {
           .onChange((value: string) => {
             this.telNumberNoSpace = this.removeSpace(value);
             let nextText: string = "";
+            // 根据电话号码长度决定格式化方式：长度超限则不格式化，否则按'XXX XXXX XXXX'格式插入空格
             if (this.telNumberNoSpace.length > this.NUM_TEXT_MAXSIZE_LENGTH - 2) {
               nextText = this.telNumberNoSpace;
             } else if (this.checkNeedNumberSpace(value)) {
               if (this.telNumberNoSpace.length <= 3) {
                 nextText = this.telNumberNoSpace;
               } else {
-                let split1: string = this.telNumberNoSpace.substring(0, 3);
-                let split2: string = this.telNumberNoSpace.substring(3);
-                nextText = split1 + ' ' + split2;
+                let firstPart: string = this.telNumberNoSpace.substring(0, 3);
+                let secondPart: string = this.telNumberNoSpace.substring(3);
+                nextText = firstPart + ' ' + secondPart;
                 if (this.telNumberNoSpace.length > 7) {
-                  split2 = this.telNumberNoSpace.substring(3, 7);
-                  let split3: string = this.telNumberNoSpace.substring(7);
-                  nextText = split1 + ' ' + split2 + ' ' + split3;
+                  secondPart = this.telNumberNoSpace.substring(3, 7);
+                  let thirdPart: string = this.telNumberNoSpace.substring(7);
+                  nextText = firstPart + ' ' + secondPart + ' ' + thirdPart;
                 }
               }
             } else {
               nextText = value;
             }
-            console.info("onChange Triggered:" + this.text + "|" + nextText + "|" + value);
+            console.info('onChange Triggered:' + this.text + '|' + nextText + '|' + value);
             if (this.text === nextText && nextText === value) {
               // 此时说明数字已经格式化完成了 在这个时候改变光标位置不会被重置掉
               this.setCaret();
@@ -2567,7 +2666,7 @@ struct TextInputExample {
           })
           .onTextSelectionChange((selectionStart, selectionEnd) => {
             // 记录光标位置
-            console.info("selection change: ", selectionStart, selectionEnd);
+            console.info('selection change: ', selectionStart, selectionEnd);
             this.lastCaretPosition = selectionStart;
             this.lastCaretPositionEnd = selectionEnd;
           })// 从API version 10开始支持
@@ -2578,7 +2677,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253448.png)
+ ![](./img/zh-cn_image_0000002655848652.png)
 
 #### [h2]示例7（设置文本断行规则）
 
@@ -2597,7 +2696,7 @@ struct TextInputExample {
   build() {
     Row() {
       Column() {
-        Text("TextInput为inline模式，WordBreakType属性为NORMAL的样式：").fontSize(16).fontColor(0xCCCCCC)
+        Text('TextInput为inline模式，WordBreakType属性为NORMAL的样式：').fontSize(16).fontColor(0xCCCCCC)
         TextInput({
           text: this.textStrEn
         })
@@ -2606,7 +2705,7 @@ struct TextInputExample {
           .style(TextInputStyle.Inline)// Inline模式
           .wordBreak(WordBreak.NORMAL) // 非Inline模式该属性无效
 
-        Text("TextInput为inline模式，英文文本，WordBreakType属性为BREAK_ALL的样式：").fontSize(16).fontColor(0xCCCCCC)
+        Text('TextInput为inline模式，英文文本，WordBreakType属性为BREAK_ALL的样式：').fontSize(16).fontColor(0xCCCCCC)
         TextInput({
           text: this.textStrEn
         })
@@ -2615,7 +2714,7 @@ struct TextInputExample {
           .style(TextInputStyle.Inline)
           .wordBreak(WordBreak.BREAK_ALL)
 
-        Text("TextInput为inline模式，中文文本，WordBreakType属性为BREAK_ALL的样式：").fontSize(16).fontColor(0xCCCCCC)
+        Text('TextInput为inline模式，中文文本，WordBreakType属性为BREAK_ALL的样式：').fontSize(16).fontColor(0xCCCCCC)
         TextInput({
           text: this.textStrZn
         })
@@ -2624,7 +2723,7 @@ struct TextInputExample {
           .style(TextInputStyle.Inline)
           .wordBreak(WordBreak.BREAK_ALL)
 
-        Text("TextInput为inline模式，WordBreakType属性为BREAK_WORD的样式：").fontSize(16).fontColor(0xCCCCCC)
+        Text('TextInput为inline模式，WordBreakType属性为BREAK_WORD的样式：').fontSize(16).fontColor(0xCCCCCC)
         TextInput({
           text: this.textStrEn
         })
@@ -2637,7 +2736,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612631.png)
+ ![](./img/zh-cn_image_0000002686088081.png)
 
 #### [h2]示例8（设置文本样式）
 
@@ -2684,7 +2783,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413338.png)
+ ![](./img/zh-cn_image_0000002685928251.png)
 
 #### [h2]示例9（设置文字特性效果）
 
@@ -2709,12 +2808,12 @@ struct TextInputExample {
         .fontSize(20)
         .fontFeature("\"ss01\" off")
     }
-    .width("90%")
-    .margin("5%")
+    .width('90%')
+    .margin('5%')
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732571.png)
+ ![](./img/zh-cn_image_0000002656008574.png)
 
 #### [h2]示例10（自定义键盘避让）
 
@@ -2726,7 +2825,7 @@ struct TextInputExample {
 @Component
 struct TextInputExample {
   controller: TextInputController = new TextInputController();
-  @State inputValue: string = "";
+  @State inputValue: string = '';
   @State height1: string | number = '80%';
   @State supportAvoidance: boolean = true;
 
@@ -2744,7 +2843,7 @@ struct TextInputExample {
       Grid() {
         ForEach([1, 2, 3, 4, 5, 6, 7, 8, 9, '*', 0, '#'], (item: number | string) => {
           GridItem() {
-            Button(item + "")
+            Button(item + '')
               .width(110).onClick(() => {
               this.inputValue += item;
             })
@@ -2757,22 +2856,22 @@ struct TextInputExample {
   build() {
     Column() {
       Row() {
-        Button("20%")
+        Button('20%')
           .fontSize(24)
           .onClick(() => {
-            this.height1 = "20%";
+            this.height1 = '20%';
           })
-        Button("80%")
+        Button('80%')
           .fontSize(24)
           .margin({ left: 20 })
           .onClick(() => {
-            this.height1 = "80%";
+            this.height1 = '80%';
           })
       }
       .justifyContent(FlexAlign.Center)
       .alignItems(VerticalAlign.Bottom)
       .height(this.height1)
-      .width("100%")
+      .width('100%')
       .padding({ bottom: 50 })
 
       TextInput({ controller: this.controller, text: this.inputValue })// 绑定自定义键盘
@@ -2784,7 +2883,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253450.gif)
+ ![](./img/zh-cn_image_0000002655848654.gif)
 
 #### [h2]示例11（设置文本自适应）
 
@@ -2835,7 +2934,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612633.png)
+ ![](./img/zh-cn_image_0000002686088083.png)
 
 #### [h2]示例12（设置折行规则）
 
@@ -2847,9 +2946,9 @@ struct TextInputExample {
 @Component
 struct TextInputExample {
   @State message1: string =
-    "They can be classified as built-in components–those directly provided by the ArkUI framework and custom components – those defined by developers" +
-      "The built-in components include buttons radio progress indicators and text You can set the rendering effect of these components in method chaining mode," +
-      "page components are divided into independent UI units to implementindependent creation development and reuse of different units on pages making pages more engineering-oriented.";
+    'They can be classified as built-in components–those directly provided by the ArkUI framework and custom components – those defined by developers' +
+      'The built-in components include buttons radio progress indicators and text You can set the rendering effect of these components in method chaining mode,' +
+      'page components are divided into independent UI units to implementindependent creation development and reuse of different units on pages making pages more engineering-oriented.';
   @State lineBreakStrategyIndex: number = 0;
   @State lineBreakStrategy: LineBreakStrategy[] =
     [LineBreakStrategy.GREEDY, LineBreakStrategy.HIGH_QUALITY, LineBreakStrategy.BALANCED];
@@ -2878,7 +2977,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413340.gif)
+ ![](./img/zh-cn_image_0000002685928253.gif)
 
 #### [h2]示例13（支持插入和删除回调）
 
@@ -2889,18 +2988,18 @@ struct TextInputExample {
 @Entry
 @Component
 struct TextInputExample {
-  @State insertValue: string = "";
-  @State deleteValue: string = "";
+  @State insertValue: string = '';
+  @State deleteValue: string = '';
   @State insertOffset: number = 0;
   @State deleteOffset: number = 0;
   @State deleteDirection: number = 0;
-  @State currentValue_1: string = "";
-  @State currentValue_2: string = "";
+  @State currentValue_1: string = '';
+  @State currentValue_2: string = '';
 
   build() {
     Row() {
       Column() {
-        TextInput({ text: "TextInput支持插入回调文本" })
+        TextInput({ text: 'TextInput支持插入回调文本' })
           .height(60)
           .onWillInsert((info: InsertValue) => {
             this.insertValue = info.insertValue;
@@ -2910,14 +3009,14 @@ struct TextInputExample {
             this.insertOffset = info.insertOffset;
           })
           .onWillChange((info: EditableTextChangeValue) => {
-            this.currentValue_1 = info.content
-            return true
+            this.currentValue_1 = info.content;
+            return true;
           })
 
-        Text("insertValue:" + this.insertValue + "  insertOffset:" + this.insertOffset).height(30)
-        Text("currentValue_1:" + this.currentValue_1).height(30)
+        Text('insertValue:' + this.insertValue + '  insertOffset:' + this.insertOffset).height(30)
+        Text('currentValue_1:' + this.currentValue_1).height(30)
 
-        TextInput({ text: "TextInput支持删除回调文本b" })
+        TextInput({ text: 'TextInput支持删除回调文本b' })
           .height(60)
           .onWillDelete((info: DeleteValue) => {
             this.deleteValue = info.deleteValue;
@@ -2929,13 +3028,13 @@ struct TextInputExample {
             this.deleteDirection = info.direction;
           })
           .onWillChange((info: EditableTextChangeValue) => {
-            this.currentValue_2 = info.content
-            return true
+            this.currentValue_2 = info.content;
+            return true;
           })
 
-        Text("deleteValue:" + this.deleteValue + "  deleteOffset:" + this.deleteOffset).height(30)
-        Text("deleteDirection:" + (this.deleteDirection == 0 ? "BACKWARD" : "FORWARD")).height(30)
-        Text("currentValue_2:" + this.currentValue_2).height(30)
+        Text('deleteValue:' + this.deleteValue + '  deleteOffset:' + this.deleteOffset).height(30)
+        Text('deleteDirection:' + (this.deleteDirection == 0 ? 'BACKWARD' : 'FORWARD')).height(30)
+        Text('currentValue_2:' + this.currentValue_2).height(30)
 
       }.width('100%')
     }
@@ -2943,7 +3042,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732573.png)
+ ![](./img/zh-cn_image_0000002656008576.png)
 
 #### [h2]示例14（文本扩展自定义菜单）
 
@@ -2978,20 +3077,20 @@ struct TextInputExample {
     return items;
   }
   onMenuItemClick = (menuItem: TextMenuItem, textRange: TextRange) => {
-    if (menuItem.id.equals(TextMenuItemId.of("create2"))) {
-      console.info("拦截 id: create2 start:" + textRange.start + "; end:" + textRange.end);
+    if (menuItem.id.equals(TextMenuItemId.of('create2'))) {
+      console.info('拦截 id: create2 start:' + textRange.start + '; end:' + textRange.end);
       return true;
     }
-    if (menuItem.id.equals(TextMenuItemId.of("prepare1"))) {
-      console.info("拦截 id: prepare1 start:" + textRange.start + "; end:" + textRange.end);
+    if (menuItem.id.equals(TextMenuItemId.of('prepare1'))) {
+      console.info('拦截 id: prepare1 start:' + textRange.start + '; end:' + textRange.end);
       return true;
     }
     if (menuItem.id.equals(TextMenuItemId.COPY)) {
-      console.info("拦截 COPY start:" + textRange.start + "; end:" + textRange.end);
+      console.info('拦截 COPY start:' + textRange.start + '; end:' + textRange.end);
       return true;
     }
     if (menuItem.id.equals(TextMenuItemId.SELECT_ALL)) {
-      console.info("不拦截 SELECT_ALL start:" + textRange.start + "; end:" + textRange.end);
+      console.info('不拦截 SELECT_ALL start:' + textRange.start + '; end:' + textRange.end);
       return false;
     }
     return false;
@@ -3023,12 +3122,12 @@ struct TextInputExample {
           this.endIndex = selectionEnd;
         })
     }
-    .width("90%")
-    .margin("5%")
+    .width('90%')
+    .margin('5%')
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253452.png)
+ ![](./img/zh-cn_image_0000002655848656.png)
 
 #### [h2]示例15（设置symbol类型清除按钮）
 
@@ -3056,7 +3155,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612635.jpg)
+ ![](./img/zh-cn_image_0000002686088085.jpg)
 
 #### [h2]示例16（文本设置省略模式）
 
@@ -3075,10 +3174,10 @@ struct TextInputExample {
 @Entry
 @Component
 struct EllipsisModeExample {
-  @State text: string = "As the sun begins to set, casting a warm golden hue across the sky," +
-    "the world seems to slow down and breathe a sigh of relief. The sky is painted with hues of orange, " +
-    " pink, and lavender, creating a breath taking tapestry that stretches as far as the eye can see." +
-    "The air is filled with the sweet scent of blooming flowers, mingling with the earthy aroma of freshly turned soil.";
+  @State text: string = 'As the sun begins to set, casting a warm golden hue across the sky,' +
+    'the world seems to slow down and breathe a sigh of relief. The sky is painted with hues of orange, ' +
+    ' pink, and lavender, creating a breath taking tapestry that stretches as far as the eye can see.' +
+    'The air is filled with the sweet scent of blooming flowers, mingling with the earthy aroma of freshly turned soil.';
   @State ellipsisModeIndex: number = 0;
   @State ellipsisMode: (EllipsisMode | undefined | null)[] =
     [EllipsisMode.END, EllipsisMode.START, EllipsisMode.CENTER, EllipsisMode.MULTILINE_START,
@@ -3123,7 +3222,7 @@ struct EllipsisModeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413342.gif)
+ ![](./img/zh-cn_image_0000002685928255.gif)
 
 #### [h2]示例17（输入框支持输入状态变化等回调）
 
@@ -3137,20 +3236,20 @@ struct EllipsisModeExample {
 @Component
 struct TextInputExample {
   @State editStatus: boolean = false;
-  @State copyValue: string = "";
-  @State cutValue: string = "";
-  @State pasteValue: string = "";
+  @State copyValue: string = '';
+  @State cutValue: string = '';
+  @State pasteValue: string = '';
   @State totalOffsetX: number = 0;
   @State totalOffsetY: number = 0;
 
   build() {
     Row() {
       Column() {
-        TextInput({ text: "TextInput支持输入状态变化时回调" })
+        TextInput({ text: 'TextInput支持输入状态变化时回调' })
           .height(60)
           .fontStyle(FontStyle.Italic)
           .fontWeight(FontWeight.Bold)
-          .fontFamily("HarmonyOS Sans")
+          .fontFamily('HarmonyOS Sans')
           .copyOption(CopyOptions.LocalDevice)
           .textAlign(TextAlign.Center)
           .selectedBackgroundColor(Color.Blue)
@@ -3166,11 +3265,11 @@ struct TextInputExample {
 
         Text("editStatus:" + this.editStatus).height(30)
 
-        TextInput({ text: "TextInput支持复制操作时回调" })
+        TextInput({ text: 'TextInput支持复制操作时回调' })
           .height(60)
           .fontStyle(FontStyle.Italic)
           .fontWeight(FontWeight.Bold)
-          .fontFamily("HarmonyOS Sans")
+          .fontFamily('HarmonyOS Sans')
           .copyOption(CopyOptions.LocalDevice)
           .textAlign(TextAlign.Center)
           .selectedBackgroundColor(Color.Blue)
@@ -3184,13 +3283,13 @@ struct TextInputExample {
             return false;
           })
 
-        Text("copyValue:" + this.copyValue).height(30)
+        Text('copyValue:' + this.copyValue).height(30)
 
-        TextInput({ text: "TextInput支持剪切操作时回调" })
+        TextInput({ text: 'TextInput支持剪切操作时回调' })
           .height(60)
           .fontStyle(FontStyle.Italic)
           .fontWeight(FontWeight.Bold)
-          .fontFamily("HarmonyOS Sans")
+          .fontFamily('HarmonyOS Sans')
           .copyOption(CopyOptions.LocalDevice)
           .textAlign(TextAlign.Center)
           .selectedBackgroundColor(Color.Blue)
@@ -3204,13 +3303,13 @@ struct TextInputExample {
             return false;
           })
 
-        Text("cutValue:" + this.cutValue).height(30)
+        Text('cutValue:' + this.cutValue).height(30)
 
-        TextInput({ text: "TextInput支持粘贴操作时回调" })
+        TextInput({ text: 'TextInput支持粘贴操作时回调' })
           .height(60)
           .fontStyle(FontStyle.Italic)
           .fontWeight(FontWeight.Bold)
-          .fontFamily("HarmonyOS Sans")
+          .fontFamily('HarmonyOS Sans')
           .copyOption(CopyOptions.LocalDevice)
           .textAlign(TextAlign.Center)
           .selectedBackgroundColor(Color.Blue)
@@ -3219,13 +3318,13 @@ struct TextInputExample {
             this.pasteValue = pasteValue;
           })
 
-        Text("pasteValue:" + this.pasteValue).height(30)
+        Text('pasteValue:' + this.pasteValue).height(30)
 
-        TextInput({ text: "TextInput支持文本内容滚动时回调: 文本内容宽度超出输入框宽度，滚动文本查看偏移量变化" })
+        TextInput({ text: 'TextInput支持文本内容滚动时回调: 文本内容宽度超出输入框宽度，滚动文本查看偏移量变化' })
           .height(60)
           .fontStyle(FontStyle.Italic)
           .fontWeight(FontWeight.Bold)
-          .fontFamily("HarmonyOS Sans")
+          .fontFamily('HarmonyOS Sans')
           .copyOption(CopyOptions.LocalDevice)
           .textAlign(TextAlign.Center)
           .selectedBackgroundColor(Color.Blue)
@@ -3235,7 +3334,7 @@ struct TextInputExample {
             this.totalOffsetY = totalOffsetY;
           })
 
-        Text("totalOffsetX:" + this.totalOffsetX + "  totalOffsetY:" + this.totalOffsetY).height(30)
+        Text('totalOffsetX:' + this.totalOffsetX + '  totalOffsetY:' + this.totalOffsetY).height(30)
 
       }.width('100%')
     }
@@ -3243,7 +3342,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732575.png)
+ ![](./img/zh-cn_image_0000002656008578.png)
 
 #### [h2]示例18（设置最小字体范围与最大字体范围）
 
@@ -3303,7 +3402,7 @@ struct TextInputExample {
 
 | 系统字体缩放倍数为2倍 | 系统字体缩放倍数为3.2倍 |
 | --- | --- |
-| ![](./img/zh-cn_image_0000002631253454.png) | ![](./img/zh-cn_image_0000002661612637.png) |
+| ![](./img/zh-cn_image_0000002655848658.png) | ![](./img/zh-cn_image_0000002686088087.png) |
 
 #### [h2]示例19（设置选中指定区域的文本内容）
 
@@ -3342,11 +3441,13 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413344.png)
+ ![](./img/zh-cn_image_0000002685928257.png)
 
 #### [h2]示例20（设置文本描边）
 
 从API version 20开始，该示例通过[strokeWidth](#strokewidth20)和[strokeColor](#strokecolor20)属性设置文本的描边宽度及颜色。
+
+从API版本26.0.0开始，新增[strokeJoinStyle](#strokejoinstyle)接口，支持设置文本描边拐角样式。
 
 ```
 // xxx.ets
@@ -3378,6 +3479,7 @@ struct TextInputExample {
           .borderWidth(1)
           .fontSize(40)
           .strokeWidth(LengthMetrics.px(3.0))
+          .strokeJoinStyle(StrokeJoinStyle.MITER_JOIN)
           .strokeColor(Color.Red)
       }.height('90%')
     }
@@ -3386,7 +3488,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732577.png)
+ ![](./img/zh-cn_image_0000002656008580.png)
 
 #### [h2]示例21（设置中西文自动间距）
 
@@ -3412,7 +3514,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253456.png)
+ ![](./img/zh-cn_image_0000002655848660.png)
 
 #### [h2]示例22（设置字符计数颜色以及超出字符颜色）
 
@@ -3448,7 +3550,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612639.gif)
+ ![](./img/zh-cn_image_0000002686088089.gif)
 
 #### [h2]示例23（设置placeholder富文本样式）
 
@@ -3461,7 +3563,7 @@ import { LengthMetrics } from '@kit.ArkUI';
 @Component
 struct TextInputExample  {
   styledString: MutableStyledString =
-    new MutableStyledString("输入框富文本：文本",
+    new MutableStyledString('输入框富文本：文本',
       [
         {
           start: 0,
@@ -3501,7 +3603,7 @@ struct TextInputExample  {
   build() {
     Scroll() {
       Column() {
-        Text("TextInput placeholder富文本")
+        Text('TextInput placeholder富文本')
           .fontSize(8)
         TextInput({
           controller: this.controllerInput
@@ -3514,7 +3616,7 @@ struct TextInputExample  {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413346.jpg)
+ ![](./img/zh-cn_image_0000002685928259.jpg)
 
 #### [h2]示例24（设置输入法扩展信息）
 
@@ -3529,9 +3631,10 @@ struct TextInputExample {
     Column() {
       TextInput({ text: '拉起输入法前执行onWillAttachIME回调' })
         .onWillAttachIME((client: IMEClient) => {
+          // 设置输入法扩展信息，包括自定义属性和节点ID
           client.setExtraConfig({
             customSettings: {
-              name: "TextInput", // 自定义属性
+              name: 'TextInput', // 自定义属性
               id: client.nodeId // 自定义属性
             }
           })
@@ -3548,7 +3651,7 @@ struct TextInputExample {
 ```
 @Entry
 @Component
-struct demo {
+struct TextInputBarStateDemo {
   @State message: string = '这里是一段长文本'.repeat(10)
 
   build() {
@@ -3568,37 +3671,57 @@ struct demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732579.gif)
+ ![](./img/zh-cn_image_0000002656008582.gif)
 
-#### [h2]示例26（设置行首标点压缩）
+#### [h2]示例26（设置行首标点符号压缩和行尾标点符号悬挂）
 
-该示例通过[compressLeadingPunctuation](#compressleadingpunctuation23)接口设置行首标点压缩，左侧有间距的标点符号位于行首时，标点会直接压缩间距至左侧边界。
+本示例通过[compressLeadingPunctuation](#compressleadingpunctuation23)接口设置行首标点符号压缩，通过[punctuationOverflow](#punctuationoverflow)设置行尾标点符号悬挂。
 
-从API version 23开始，支持compressLeadingPunctuation接口。
+左侧有间距的标点符号位于行首时，标点会直接压缩间距至左侧边界。
+
+文本自动换行后，剩余内容（含标点符号）需要能够放入上一行，标点符号悬挂才生效。
+
+从API版本23开始，新增compressLeadingPunctuation接口。
+
+从API版本26.0.0开始，新增punctuationOverflow接口。
 
 ```
-// xxx.ets
 @Entry
 @Component
-struct Index {
+struct PunctuationDemo {
+  @State compressLeadingPunctuation: boolean = false;
+  @State punctuationOverflow: boolean = false;
+  @State text: string = '「123456789！\n『123456789：';
+
   build() {
-    Column(){
-      TextInput({ text: "\u300C行首标点压缩打开" })
-        .compressLeadingPunctuation(true)
-        .margin(5)
+    Column() {
+      TextInput({ text: this.text })
+        .compressLeadingPunctuation(this.compressLeadingPunctuation)
+        .punctuationOverflow(this.punctuationOverflow)
+        .fontSize('20fp')
         .style(TextInputStyle.Inline)
-        .fontSize(30)
-        .width("90%")
-      TextInput({ text: "\u300C行首标点压缩关闭" })
-        .compressLeadingPunctuation(false)
-        .style(TextInputStyle.Inline)
-        .fontSize(30)
-        .width("90%")
-    }
+        .align(Alignment.Center)
+        .width('45%')
+
+      Column() {
+        Button('开启行首标点符号压缩').onClick(() => {
+          this.compressLeadingPunctuation = true;
+        }).margin(5)
+        Button('关闭行首标点符号压缩').onClick(() => {
+          this.compressLeadingPunctuation = false;
+        }).margin(5)
+        Button('开启行尾标点符号悬挂').onClick(() => {
+          this.punctuationOverflow = true;
+        }).margin(5)
+        Button('关闭行尾标点符号悬挂').onClick(() => {
+          this.punctuationOverflow = false;
+        }).margin(5)
+      }
+    }.width('100%').padding(20)
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253458.gif)
+ ![](./img/zh-cn_image_0000002655848662.gif)
 
 #### [h2]示例27（设置自适应间距）
 
@@ -3664,7 +3787,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612641.gif)
+ ![](./img/zh-cn_image_0000002686088091.gif)
 
 #### [h2]示例28（设置文本拖拽时的背板样式）
 
@@ -3690,7 +3813,7 @@ struct TextInputTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413348.png)
+ ![](./img/zh-cn_image_0000002685928261.png)
 
 #### [h2]示例29（删除文本框内的最后一个字符）
 
@@ -3709,13 +3832,14 @@ struct Page {
       TextInput({ text: 'TextInput输入框Deletebackward示例', controller: this.controller })
       Button('Delete backward')
         .onClick(() => {
+          // 删除文本框内最后一个字符
           this.controller.deleteBackward();
         })
     }
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732581.gif)
+ ![](./img/zh-cn_image_0000002656008584.gif)
 
 #### [h2]示例30（设置文本排版方向）
 
@@ -3762,7 +3886,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253460.png)
+ ![](./img/zh-cn_image_0000002655848664.png)
 
 #### [h2]示例31（将指定范围的文字滚动到可视区内）
 
@@ -3783,14 +3907,15 @@ struct TextInputExample {
       TextInput({ text: this.text, controller: this.controller })
         .width(336)
         .height(56)
-      Button("滚动文本到可视区").onClick(()=> {
+      Button('滚动文本到可视区').onClick(()=> {
+        // 将第22-30个字符滚动到可视区内
         this.controller.scrollToVisible({ start: 22, end: 30})
       })
     }.width('100%').height('100%').backgroundColor('#F1F3F5')
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612643.gif)
+ ![](./img/zh-cn_image_0000002686088093.gif)
 
 #### [h2]示例32（设置文本排版时是否使能孤字优化）
 
@@ -3832,13 +3957,82 @@ struct TextExample {
 
 不开启孤字优化：
 
-![](./img/zh-cn_image_0000002631413350.png)
+![](./img/zh-cn_image_0000002685928263.png)
 
 开启孤字优化：
 
-![](./img/zh-cn_image_0000002661732583.png)
+![](./img/zh-cn_image_0000002656008586.png)
 
-#### [h2]示例33（设置文本选择的AI菜单）
+#### [h2]示例33（设置文本着色器效果）
+
+该示例通过[shaderStyle](#shaderstyle)接口实现对TextInput组件内文本着色效果。
+
+从API版本26.0.0开始，新增shaderStyle接口。
+
+```
+@Entry
+@Component
+struct ShaderColorStyle {
+  @State message: string = 'Hello World';
+  @State linearGradientOptions1: LinearGradientOptions =
+    {
+      angle: 45,
+      colors: [[Color.Red, 0.0], [Color.Blue, 0.3], [Color.Green, 0.5]]
+    };
+  @State linearGradientOptions2: LinearGradientOptions =
+    {
+      direction: GradientDirection.LeftTop,
+      colors: [[Color.Red, 0.0], [Color.Blue, 0.3], [Color.Green, 0.5]],
+      repeating: true,
+    };
+  @State radialGradientOptions: RadialGradientOptions =
+    {
+      center: [50, 50],
+      radius: 20,
+      colors: [[Color.Red, 0.0], [Color.Blue, 0.3], [Color.Green, 0.5]],
+      repeating: true,
+    };
+  @State colorShaderStyle: ColorShaderStyle =
+    {
+      color: Color.Blue
+    };
+  build() {
+    Column({ space: 5 }) {
+      Text('angle为45°的线性渐变').fontSize(18).width('90%')
+        .margin({ top: 40, left: 40 })
+      TextInput({ text: this.message })
+        .fontSize(20)
+        .width('80%')
+        .height(50)
+        .shaderStyle(this.linearGradientOptions1)
+      Text('direction为LeftTop的线性渐变').fontSize(18).width('90%')
+        .margin({ top: 40, left: 40 })
+      TextInput({ text: this.message })
+        .fontSize(20)
+        .width('80%')
+        .height(50)
+        .shaderStyle(this.linearGradientOptions2)
+      Text('径向渐变').fontSize(18).width('90%')
+        .margin({ top: 40, left: 40 })
+      TextInput({ text: this.message })
+        .fontSize(20)
+        .width('80%')
+        .height(50)
+        .shaderStyle(this.radialGradientOptions)
+      Text('纯色').fontSize(18).width('90%')
+        .margin({ top: 40, left: 40 })
+      TextInput({ text: this.message })
+        .fontSize(20)
+        .width('80%')
+        .height(50)
+        .shaderStyle(this.colorShaderStyle)
+    }
+  }
+}
+```
+ ![](./img/zh-cn_image_0000002655848666.png)
+
+#### [h2]示例34（设置文本选择的AI菜单）
 
 该示例通过[enableSelectedDataDetector](#enableselecteddatadetector22)，配置文本选择AI菜单功能。
 
@@ -3847,7 +4041,7 @@ struct TextExample {
 ```
 @Entry
 @Component
-struct Demo33 {
+struct Demo34 {
   exampleText: string = '示例网址：www.example.com';
 
   build() {
@@ -3864,4 +4058,4 @@ struct Demo33 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253462.gif)
+ ![](./img/zh-cn_image_0000002686088095.gif)

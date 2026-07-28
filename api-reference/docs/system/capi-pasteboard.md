@@ -2,15 +2,15 @@
 title: "Pasteboard"
 upstream_id: "harmonyos-references/capi-pasteboard"
 catalog: "harmonyos-references"
-content_hash: "3e8b186f30a3"
-synced_at: "2026-07-09T00:59:42.750872"
+content_hash: "1769d8e1ca25"
+synced_at: "2026-07-28T16:50:59.942908"
 ---
 
 # Pasteboard
 
 #### 概述
 
-系统剪贴板支持复制和粘贴多种类型的数据。可以使用此模块接口操作纯文本、HTML、URI、像素图片等其他类型的数据。
+系统剪贴板支持复制和粘贴多种类型的数据。可以使用此模块接口操作纯文本、HTML、URI、PixelMap等多种类型的数据。
 
 起始版本： 13
 

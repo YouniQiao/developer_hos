@@ -2,8 +2,8 @@
 title: "deviceinfo.h"
 upstream_id: "harmonyos-references/capi-deviceinfo-h"
 catalog: "harmonyos-references"
-content_hash: "9916490a6176"
-synced_at: "2026-07-09T00:59:42.862206"
+content_hash: "0ae8922ea862"
+synced_at: "2026-07-28T16:51:00.002722"
 ---
 
 # deviceinfo.h
@@ -481,7 +481,7 @@ const char *OH_GetDistributionOSVersion(void)
 
 | 类型 | 说明 |
 | --- | --- |
-| const char* | ISV发行版系统版本号。 如果没有指定ISV，它将返回与[OH_GetOSFullName](#oh_getosfullname)相同的值。 |
+| const char* | ISV发行版系统版本号。 如果没有指定ISV，它将返回与[OH_GetSdkApiVersion](#oh_getsdkapiversion)相同的值。 |
 
 #### [h2]OH_GetDistributionOSApiVersion()
 

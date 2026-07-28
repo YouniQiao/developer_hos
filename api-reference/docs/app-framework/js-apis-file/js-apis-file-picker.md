@@ -2,8 +2,8 @@
 title: "@ohos.file.picker (选择器)"
 upstream_id: "harmonyos-references/js-apis-file-picker"
 catalog: "harmonyos-references"
-content_hash: "ee591ef397d7"
-synced_at: "2026-07-09T00:58:59.447651"
+content_hash: "bd292fb0721d"
+synced_at: "2026-07-28T16:50:02.676297"
 ---
 
 # @ohos.file.picker (选择器)
@@ -91,8 +91,6 @@ let documentPicker = new picker.DocumentViewPicker(); // 不推荐使用无参�
 constructor(context: Context, window: window.Window)
 
 应用自行创建窗口中，可用通过该构造函数创建DocumentViewPicker对象。一般场景推荐使用constructor(context: Context)方法创建DocumentViewPicker对象。
-
-![](./img/note_3.0-zh-cn.png) 从API version 19开始，2in1和Tablet设备支持该方法。
 
 系统能力：SystemCapability.FileManagement.UserFileService
 
@@ -772,7 +770,7 @@ async function example18(context: common.UIAbilityContext) { // 需确保 contex
 | authMode12+ | boolean | 否 | 是 | 拉起授权Picker，默认为false（非授权模式）。当authMode为true时为授权模式，defaultFilePathUri必填，表明待授权URI。 **设备行为差异**：该参数在2in1设备中可正常使用，在其他设备中无效果。 **元服务API**：从API version 12开始，该接口支持在元服务中使用。 **系统能力**：SystemCapability.FileManagement.UserFileService.FolderSelection |
 | multiAuthMode15+ | boolean | 否 | 是 | 支持批量授权模式，默认为false（非批量授权模式）。当multiAuthMode为true时为批量授权模式。当multiAuthMode为true时，只有multiUriArray参数生效，其他参数不生效。 **设备行为差异**：该参数在Phone设备中可正常使用，在其他设备中无效果。 **元服务API**：从API version 15开始，该接口支持在元服务中使用。 **系统能力**：SystemCapability.FileManagement.UserFileService |
 | multiUriArray15+ | Array | 否 | 是 | 传入需要批量授权的URI数组（仅支持文件，文件夹不生效）。配合multiAuthMode使用。当multiAuthMode为false时，配置该参数不生效。默认为空（效果为拉起批量授权页面后展示的文件为空）。 **设备行为差异**：该参数在Phone设备中可正常使用，在其他设备中无效果。 **元服务API**：从API version 15开始，该接口支持在元服务中使用。 **系统能力**：SystemCapability.FileManagement.UserFileService |
-| mergeMode15+ | [MergeTypeMode](#mergetypemode15) | 否 | 是 | 开启聚合视图模式，支持拉起文件管理应用的聚合视图。默认为DEFAULT，表示该参数不生效，非聚合视图。当该参数置为非DEFAULT时，其他参数不生效。 API版本26.0.0及之后的版本当该参数置为非DEFAULT时，仅fileSuffixFilters参数生效，其他参数不生效。该参数不推荐与multiAuthMode一起使用。 **设备行为差异**：该参数在Phone设备中可正常使用，在其他设备中无效果。 **元服务API**：从API version 15开始，该接口支持在元服务中使用。 **系统能力**：SystemCapability.FileManagement.UserFileService |
+| mergeMode15+ | [MergeTypeMode](#mergetypemode15) | 否 | 是 | 开启聚合视图模式，支持拉起文件管理应用的聚合视图。默认为DEFAULT，表示该参数不生效，非聚合视图。当该参数置为非DEFAULT时，其他参数不生效。 API版本26.0.0及之后的版本当该参数置为非DEFAULT时，仅fileSuffixFilters参数生效，其他参数不生效。 **设备行为差异**：该参数在Phone设备中可正常使用，在其他设备中无效果。 **元服务API**：从API version 15开始，该接口支持在元服务中使用。 **系统能力**：SystemCapability.FileManagement.UserFileService |
 | isEncryptionSupported19+ | boolean | 否 | 是 | 是否支持加密（仅支持文件，文件夹不生效），默认为false。该参数为true时，在Picker界面可以选择对文件进行加密。 **元服务API**：从API version 19开始，该接口支持在元服务中使用。 **系统能力**：SystemCapability.FileManagement.UserFileService |
 | allowsMulFolderSelection | boolean | 否 | 是 | 是否支持多选文件夹。true表示支持，false表示不支持，默认值为false。 该参数需要与selectMode配合使用，当selectMode为FOLDER或者MIXED，并且allowsMulFolderSelection为true，多选文件夹功能生效。 **起始版本**：26.0.0 **元服务API**：从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束**：此接口仅可在Stage模型下使用。 **系统能力**：SystemCapability.FileManagement.UserFileService.FolderSelection |
 
@@ -816,7 +814,7 @@ async function example18(context: common.UIAbilityContext) { // 需确保 contex
 | newFileNames | Array | 否 | 是 | 拉起documentPicker进行保存的文件名。若无此参数，则默认需要用户自行输入。 **元服务API**：从API version 12开始，该接口支持在元服务中使用。 **系统能力**：SystemCapability.FileManagement.UserFileService |
 | defaultFilePathUri10+ | string | 否 | 是 | 指定保存的文件或者目录的URI。默认为空。 **元服务API**：从API version 12开始，该接口支持在元服务中使用。 **系统能力**：SystemCapability.FileManagement.UserFileService |
 | fileSuffixChoices10+ | Array | 否 | 是 | 保存文件的后缀类型。传入字符串数组，每一项代表一个后缀选项，每一项内部用"|"分为两部分，第一部分为描述，第二部分为要保存的后缀。没有"|"则没有描述，该项整体是一个保存的后缀。默认没有后缀类型。 **元服务API**：从API version 12开始，该接口支持在元服务中使用。 **系统能力**：SystemCapability.FileManagement.UserFileService |
-| pickerMode12+ | [DocumentPickerMode](#documentpickermode12) | 否 | 是 | 拉起picker的类型, 默认为DEFAULT。当pickerMode设置为DOWNLOAD时，用户配置的参数newFileNames、defaultFilePathUri和fileSuffixChoices将不会生效。 **元服务API**：从API version 12开始，该接口支持在元服务中使用。 **系统能力**：SystemCapability.FileManagement.UserFileService |
+| pickerMode12+ | [DocumentPickerMode](#documentpickermode12) | 否 | 是 | 拉起picker的类型，默认为DEFAULT。当pickerMode设置为DOWNLOAD时，用户配置的参数newFileNames、defaultFilePathUri和fileSuffixChoices将不会生效。 **元服务API**：从API version 12开始，该接口支持在元服务中使用。 **系统能力**：SystemCapability.FileManagement.UserFileService |
 | autoCreateEmptyFile23+ | boolean | 否 | 是 | 保存文件时，由应用决定是否预置空文件。默认为true，Picker会预置空文件并且返回文件的URI数组。false不预置空文件，只会返回文件的URI数组。 **模型约束**：此接口仅可在Stage模型下使用。 **系统能力**：SystemCapability.FileManagement.UserFileService.FolderSelection |
 
 #### AudioSelectOptions

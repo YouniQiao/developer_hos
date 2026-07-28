@@ -2,8 +2,8 @@
 title: "ArkUI_ColorPropertyHandle"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-colorpropertyhandle"
 catalog: "harmonyos-references"
-content_hash: "be66c926dbff"
-synced_at: "2026-07-09T00:58:46.552635"
+content_hash: "2cb0c130b016"
+synced_at: "2026-07-28T16:49:40.471717"
 ---
 
 # ArkUI_ColorPropertyHandle
@@ -14,7 +14,7 @@ typedef struct ArkUI_ColorProperty* ArkUI_ColorPropertyHandle
 
 #### 概述
 
-定义颜色属性指针。
+定义颜色属性指针，用于表示ArkUI中的颜色属性。
 
 起始版本： 20
 

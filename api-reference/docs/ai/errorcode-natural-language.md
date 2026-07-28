@@ -2,8 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-natural-language"
 catalog: "harmonyos-references"
-content_hash: "186024d83abf"
-synced_at: "2026-07-09T01:01:42.791193"
+content_hash: "2360ad46e8a6"
+synced_at: "2026-07-28T16:53:12.914780"
 ---
 
 # ArkTS API错误码
@@ -22,11 +22,13 @@ Run timed out, please try again later.
 
 可能原因
 
-当前存在大量的请求，无法及时处理。
+1. 当前存在大量请求。
+2. 当前设备CPU或者NPU占用过高。
+3. 当前设备内存不足。
 
 处理步骤
 
-过一段时间重试，并做好相关的逻辑判断。
+重启设备或者清理后台业务之后，等待一段时间再重试。
 
 #### 1011200001 运行失败
 

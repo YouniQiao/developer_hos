@@ -2,17 +2,17 @@
 title: "@arkts.lang (ArkTS语言基础能力)"
 upstream_id: "harmonyos-references/js-apis-arkts-lang"
 catalog: "harmonyos-references"
-content_hash: "c6231c299ea4"
-synced_at: "2026-07-09T00:57:24.010075"
+content_hash: "c480011649e9"
+synced_at: "2026-07-28T16:40:56.393390"
 ---
 
 # @arkts.lang (ArkTS语言基础能力)
 
-本模块提供ArkTS语言的基础类型定义。当前提供ISendable、RetentionPolicy和Retention接口。
+本模块提供ArkTS语言的基础类型定义，支持跨线程传递数据结构、注解保留策略控制等功能。当前提供ISendable类型、RetentionPolicy枚举类型和Retention注解。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 12开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
-此模块仅支持在ArkTS文件（文件后缀为.ets）中导入使用。
+本模块仅支持在ArkTS文件（文件后缀为.ets）中导入使用。
 
 #### 导入模块
 
@@ -22,11 +22,11 @@ import { lang, Retention, RetentionPolicy } from '@kit.ArkTS';
 
 #### lang.ISendable
 
-是所有[Sendable](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable#基础概念)类型（除null和undefined）的父类型。自身没有任何必须的方法和属性。
+是所有[Sendable](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable#基础概念)对象类型（除null和undefined）的父类型。实现该接口后，自定义类的实例将支持跨线程传递。自身不定义任何方法和属性。
 
-ArkTS中，ISendable类型的对象是Object类型的实例，遵循其基本特征，同时支持跨线程传递。
+ArkTS中，ISendable类型的对象是Object类型的实例，遵循Object类型的基本特征，同时支持跨线程传递。
 
-ISendable主要用在开发者自定义Sendable数据结构的场景中，ArkTS语言标准库中的容器类型（如[Array](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-collections-array)、[Map](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-collections-map)、[Set](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-collections-set)等）隐式地继承并实现了ISendable。
+ISendable主要用在开发者自定义Sendable数据结构的场景中。ArkTS语言标准库中的Sendable容器类型（如[Array](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-collections-array)、[Map](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-collections-map)、[Set](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-collections-set)等）隐式地继承并实现了ISendable。
 
 元服务API：从API version 12 开始，该接口支持在元服务中使用。
 
@@ -35,14 +35,15 @@ ISendable主要用在开发者自定义Sendable数据结构的场景中，ArkTS�
 示例：
 
 ```
-// 构造一个用户自定义的Sendable数据结构
+// 使用@Sendable装饰器声明可跨线程传递的类
 @Sendable
+// 实现lang.ISendable接口，定义自定义Sendable数据结构
 class CustomData implements lang.ISendable {
-    data1: number;
-    data2: string;
-    constructor(data1: number, data2: string) {
-        this.data1 = data1;
-        this.data2 = data2;
+    id: number;
+    name: string;
+    constructor(id: number, name: string) {
+        this.id = id;
+        this.name = name;
     }
 }
 ```

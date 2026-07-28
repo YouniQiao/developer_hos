@@ -2,8 +2,8 @@
 title: "Http_Buffer"
 upstream_id: "harmonyos-references/capi-netstack-http-buffer"
 catalog: "harmonyos-references"
-content_hash: "d1f5ec6ea219"
-synced_at: "2026-07-09T00:59:30.195933"
+content_hash: "cbda19c5b3e1"
+synced_at: "2026-07-28T16:50:46.138452"
 ---
 
 # Http_Buffer
@@ -28,5 +28,5 @@ HTTP缓存结构体。
 
 | 名称 | 描述 |
 | --- | --- |
-| const char *buffer | 缓存区数据。 |
-| uint32_t length | 缓存区长度。 |
+| const char *buffer | 缓冲区数据。 |
+| uint32_t length | 缓冲区长度。单位：Byte。 |

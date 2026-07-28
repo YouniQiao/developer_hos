@@ -2,8 +2,8 @@
 title: "文本组件公共接口"
 upstream_id: "harmonyos-references/ts-text-common"
 catalog: "harmonyos-references"
-content_hash: "aa69d2dd2843"
-synced_at: "2026-07-09T00:58:00.263404"
+content_hash: "51c7df5c8a66"
+synced_at: "2026-07-28T16:45:20.098657"
 ---
 
 # 文本组件公共接口
@@ -12,7 +12,7 @@ synced_at: "2026-07-09T00:58:00.263404"
 
 - 本模块首批接口从API version 10开始支持，后续版本的新增接口，采用上角标单独标记接口的起始版本。
 - 本模块接口仅可在Stage模型下使用。
-- 文本类组件公共接口。
+- 文本类组件公共接口提供了文本处理的基础能力，包括光标样式设置、布局管理、文本选择控制、菜单项定制等功能。该模块适用于需要对文本组件进行精细控制的场景，例如文本编辑器、富文本应用、输入表单等。通过这些接口，开发者可以自定义光标样式、获取文本布局信息、处理文本选择、定制编辑菜单等，提升应用的文本交互体验。
 
 #### CaretStyle10+
 
@@ -23,7 +23,7 @@ synced_at: "2026-07-09T00:58:00.263404"
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | width | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 光标尺寸，不支持百分比。 默认值：'2vp' |
-| color | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 光标颜色。 默认值：'#ff007dff' |
+| color | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 光标颜色。 默认值：'#ff007dff'，表示蓝色。 |
 
 #### LayoutManager12+
 
@@ -46,6 +46,8 @@ getLineCount(): number
 
 获取组件内容的总行数。
 
+![](./img/note_3.0-zh-cn.png) 文本内容变更后，需等待布局完成才可获取到最新的总行数。
+
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
@@ -54,13 +56,18 @@ getLineCount(): number
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 组件内容的总行数。 |
+| number | 组件内容的总行数。当[LayoutManager](#layoutmanager12)没有和组件绑定时，返回0。 |
 
 #### [h2]getGlyphPositionAtCoordinate12+
 
 getGlyphPositionAtCoordinate(x: number, y: number): PositionWithAffinity
 
 获取较为接近给定坐标的字形的位置信息。
+
+![](./img/note_3.0-zh-cn.png)
+
+- 字形（Glyph）是文本渲染的基本单元，与字符（Character）可能存在一对多关系。如需获取字符级别的位置信息，可使用[getCharacterPositionAtCoordinate](#getcharacterpositionatcoordinate24)方法。
+- 文本内容变更后，需等待布局完成才可获取到最新的位置信息。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -77,13 +84,18 @@ getGlyphPositionAtCoordinate(x: number, y: number): PositionWithAffinity
 
 | 类型 | 说明 |
 | --- | --- |
-| [PositionWithAffinity](#positionwithaffinity12) | 字形位置信息。 |
+| [PositionWithAffinity](#positionwithaffinity12) | 字形位置信息。当[LayoutManager](#layoutmanager12)没有和组件绑定时，返回无效值。 |
 
 #### [h2]getCharacterPositionAtCoordinate24+
 
 getCharacterPositionAtCoordinate(x: number, y: number): PositionWithAffinity | undefined
 
 获取距离指定坐标最近的字符的位置信息。
+
+![](./img/note_3.0-zh-cn.png)
+
+- 字形（Glyph）是文本渲染的基本单元，与字符（Character）可能存在一对多关系。如需获取字形级别的位置信息，可使用[getGlyphPositionAtCoordinate](#getglyphpositionatcoordinate12)方法。
+- 文本内容变更后，需等待布局完成才可获取到最新的位置信息。
 
 元服务API： 从API version 24开始，该接口支持在元服务中使用。
 
@@ -108,7 +120,18 @@ getCharacterPositionAtCoordinate(x: number, y: number): PositionWithAffinity | u
 
 getGlyphRangeForCharacterRange(charRange: [TextRange](#textrange12)): Array<[TextRange](#textrange12)> | undefined
 
-根据给定的文本字符范围来获取范围内的字形范围，以及实际的字符范围。例如文本为"世界Hello"，其中文本"世"的字形索引范围为[0, 1]，一个汉字占三个字符，所以其对应的字符索引范围为[0, 3]。如果指定的字符索引范围是[0, 1]，但无法解析出三分之一个汉字，所以实际的字符索引范围是[0, 3]。
+根据给定的文本字符范围来获取范围内的字形范围，以及实际的字符范围。
+
+![](./img/note_3.0-zh-cn.png) 文本内容变更后，需等待布局完成才可获取到最新的字形范围信息。
+
+以文本“世界Hello”为例，其字形索引与字符索引的对应关系如下：
+
+| 文本 | 世 | 界 | H | e | l | l | o |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 字形索引范围 | [0, 1] | [1, 2] | [2, 3] | [3, 4] | [4, 5] | [5, 6] | [6, 7] |
+| 字符索引范围 | [0, 3] | [3, 6] | [6, 7] | [7, 8] | [8, 9] | [9, 10] | [10, 11] |
+
+其中文本“世”的字形索引范围为[0, 1]，一个汉字占三个字符，所以其对应的字符索引范围为[0, 3]。如果指定的字符索引范围是[0, 1]，但无法解析出三分之一个汉字，所以实际的字符索引范围是[0, 3]。
 
 元服务API： 从API version 24开始，该接口支持在元服务中使用。
 
@@ -126,13 +149,24 @@ getGlyphRangeForCharacterRange(charRange: [TextRange](#textrange12)): Array<[Tex
 
 | 类型 | 说明 |
 | --- | --- |
-| Array | undefined | 数组中含有两个元素，第一个元素是字形范围，第二个元素是实际的字符范围，当返回的范围是异常值时，范围内元素为-1。当[LayoutManager](#layoutmanager12)没有和组件绑定时，该接口会返回undefined。 |
+| Array | undefined | 数组中含有两个元素，第一个元素是字形范围，第二个元素是实际的字符范围。 当返回的范围是异常值时，范围内元素为-1。 当[LayoutManager](#layoutmanager12)没有和组件绑定时，该接口会返回undefined。 |
 
 #### [h2]getCharacterRangeForGlyphRange24+
 
 getCharacterRangeForGlyphRange(glyphRange: [TextRange](#textrange12)): Array<[TextRange](#textrange12)> | undefined
 
-根据给定的文本字形范围来获取范围内的字符范围，以及实际的字形范围。例如文本为"世界Hello"，其字形索引范围为[0, 7]，一个汉字占三个字符，所以其对应的字符索引范围为[0, 11]。如果指定的索引范围是[0, 11]，但字形一共只有7个，所以实际的字形索引范围是[0, 7]。
+根据给定的文本字形范围来获取范围内的字符范围，以及实际的字形范围。
+
+![](./img/note_3.0-zh-cn.png) 文本内容变更后，需等待布局完成才可获取到最新的字符范围信息。
+
+以文本“世界Hello”为例，其字形索引与字符索引的对应关系如下：
+
+| 文本 | 世 | 界 | H | e | l | l | o |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 字形索引范围 | [0, 1] | [1, 2] | [2, 3] | [3, 4] | [4, 5] | [5, 6] | [6, 7] |
+| 字符索引范围 | [0, 3] | [3, 6] | [6, 7] | [7, 8] | [8, 9] | [9, 10] | [10, 11] |
+
+其字形索引范围为[0, 7]，一个汉字占三个字符，所以其对应的字符索引范围为[0, 11]。如果指定的字形索引范围是[0, 11]，但字形一共只有7个，所以实际的字形索引范围是[0, 7]。
 
 元服务API： 从API version 24开始，该接口支持在元服务中使用。
 
@@ -150,13 +184,15 @@ getCharacterRangeForGlyphRange(glyphRange: [TextRange](#textrange12)): Array<[Te
 
 | 类型 | 说明 |
 | --- | --- |
-| Array | undefined | 数组中含有两个元素，第一个元素是字符范围，第二个元素是实际的字形范围，当返回的范围是异常值时，范围内元素为-1。当[LayoutManager](#layoutmanager12)没有和组件绑定时，该接口会返回undefined。 |
+| Array | undefined | 数组中含有两个元素，第一个元素是字符范围，第二个元素是实际的字形范围。 当返回的范围是异常值时，范围内元素为-1。 当[LayoutManager](#layoutmanager12)没有和组件绑定时，该接口会返回undefined。 |
 
 #### [h2]getLineMetrics12+
 
 getLineMetrics(lineNumber: number): LineMetrics
 
 获取指定行的行信息、文本样式信息、以及字体属性信息。
+
+![](./img/note_3.0-zh-cn.png) 文本内容变更后，需等待布局完成才可获取到最新的行信息。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -166,19 +202,21 @@ getLineMetrics(lineNumber: number): LineMetrics
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| lineNumber | number | 是 | 行号，从0开始。 |
+| lineNumber | number | 是 | 行号，取值范围[0, 实际行数-1]，从0开始。当行号小于0或超出实际行数时，返回无效值。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| [LineMetrics](#linemetrics12) | 行信息、文本样式信息、以及字体属性信息。 当行号小于0或超出实际行，返回无效值。 |
+| [LineMetrics](#linemetrics12) | 行信息、文本样式信息、以及字体属性信息。 当行号小于0或超出实际行，返回无效值。当[LayoutManager](#layoutmanager12)没有和组件绑定时，返回无效值。 |
 
 #### [h2]getRectsForRange14+
 
 getRectsForRange(range: TextRange, widthStyle: RectWidthStyle, heightStyle: RectHeightStyle): Array<TextBox>
 
-获取给定的矩形区域宽度以及矩形区域高度的规格下，文本中任意区间范围内的字符或占位符所占的绘制区域信息。
+根据给定的矩形区域宽度样式和高度样式，获取文本中任意区间范围内的字符或占位符所占的绘制区域信息。
+
+![](./img/note_3.0-zh-cn.png) 文本内容变更后，需等待布局完成才可获取到最新的绘制区域信息。
 
 元服务API： 从API version 14开始，该接口支持在元服务中使用。
 
@@ -189,14 +227,14 @@ getRectsForRange(range: TextRange, widthStyle: RectWidthStyle, heightStyle: Rect
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | range | [TextRange](#textrange12) | 是 | 需要获取的区域的文本区间。 |
-| widthStyle | [RectWidthStyle](#rectwidthstyle14) | 是 | 返回的矩形区域的宽度的规格。 |
-| heightStyle | [RectHeightStyle](#rectheightstyle14) | 是 | 返回的矩形区域的高度的规格。 |
+| widthStyle | [RectWidthStyle](#rectwidthstyle14) | 是 | 返回的矩形区域的宽度规格，用于控制返回矩形的宽度计算方式，不同规格值会影响矩形的宽度边界。 |
+| heightStyle | [RectHeightStyle](#rectheightstyle14) | 是 | 返回的矩形区域的高度规格，用于控制返回矩形的高度计算方式，不同规格值会影响矩形的高度边界。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| Array | 矩形区域数组。 |
+| Array | 矩形区域数组。当[LayoutManager](#layoutmanager12)没有和组件绑定时，返回空数组。 |
 
 #### PositionWithAffinity12+
 
@@ -209,7 +247,7 @@ getRectsForRange(range: TextRange, widthStyle: RectWidthStyle, heightStyle: Rect
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | position | number | 否 | 否 | 字形或字符相对于组件内容的索引，整数。 |
-| affinity | [Affinity](#affinity12) | 否 | 否 | 位置亲和度。 |
+| affinity | [Affinity](#affinity12) | 否 | 否 | 位置亲和度，表示光标位置在字形边界处的倾向性，具体取值请参见Affinity枚举。 |
 
 #### TextMenuItemId12+
 
@@ -240,7 +278,7 @@ getRectsForRange(range: TextRange, widthStyle: RectWidthStyle, heightStyle: Rect
 | phoneNumber20+ | [TextMenuItemId](#textmenuitemid12) | 是 | 否 | 呼叫，为一级菜单项。对选中的电话号码提供跳转服务，拉起电话拨号页面。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | address20+ | [TextMenuItemId](#textmenuitemid12) | 是 | 否 | 导航前往，为一级菜单项。对选中的地址提供跳转服务，拉起地图应用。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | dateTime20+ | [TextMenuItemId](#textmenuitemid12) | 是 | 否 | 新建日程，为一级菜单项。对选中的日期和时间提供跳转服务，拉起新建日程页面。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
-| askAI20+ | [TextMenuItemId](#textmenuitemid12) | 是 | 否 | 问问小艺。对选中的文本提供AI问询能力，为一级菜单项。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| askAI20+ | [TextMenuItemId](#textmenuitemid12) | 是 | 否 | 问问小艺。对选中的文本提供AI问询能力，为一级菜单项。该菜单项依赖大模型能力，否则不生效。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | autoFill23+ | [TextMenuItemId](#textmenuitemid12) | 是 | 否 | 自动填充，为一级菜单项。点击后会展开二级菜单项“密码保险箱”，仅支持[Search](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-search)、[TextInput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textinput)、[TextArea](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textarea)或[RichEditor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-richeditor)。 **元服务API：** 从API version 23开始，该接口支持在元服务中使用。 |
 | passwordVault23+ | [TextMenuItemId](#textmenuitemid12) | 是 | 否 | 密码保险箱，为二级菜单项。点击该菜单项后会拉起密码保险箱应用，该应用提供自动填充账号密码能力，仅支持[Search](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-search)、[TextInput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textinput)、[TextArea](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textarea)或[RichEditor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-richeditor)。 **元服务API：** 从API version 23开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
@@ -258,13 +296,13 @@ static of(id: ResourceStr): TextMenuItemId
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| id | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 是 | 菜单的id。 |
+| id | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 是 | 菜单项标识，用于创建TextMenuItemId对象以识别菜单选项。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| [TextMenuItemId](#textmenuitemid12) | TextMenuItemId的对象。 |
+| [TextMenuItemId](#textmenuitemid12) | 根据传入id创建的菜单项标识对象，用于识别菜单选项。 |
 
 #### [h2]equals
 
@@ -280,7 +318,7 @@ equals(id: TextMenuItemId): boolean
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| id | [TextMenuItemId](#textmenuitemid12) | 是 | TextMenuItemId的id。 |
+| id | [TextMenuItemId](#textmenuitemid12) | 是 | 需要比较的TextMenuItemId对象。 |
 
 返回值：
 
@@ -295,9 +333,9 @@ equals(id: TextMenuItemId): boolean
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | content | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 否 | 菜单名称。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| icon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 菜单图标。 不支持网络图片。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| icon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 菜单图标。 不支持网络图片。 默认值：undefined，不显示菜单图标。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | id | [TextMenuItemId](#textmenuitemid12) | 否 | 否 | 菜单id。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| labelInfo15+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 快捷键提示。 该字段仅2in1设备支持。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
+| labelInfo15+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 快捷键提示。 该字段仅2in1设备支持。 默认值：undefined，不显示快捷键提示。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
 
 #### EditMenuOptions
 
@@ -311,7 +349,7 @@ equals(id: TextMenuItemId): boolean
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| onPrepareMenu20+ | [OnPrepareMenuCallback](#onpreparemenucallback20) | 否 | 是 | 当文本选择区域变化后显示菜单之前触发该回调，可在该回调中进行菜单数据设置。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| onPrepareMenu20+ | [OnPrepareMenuCallback](#onpreparemenucallback20) | 否 | 是 | 当文本选择区域变化后显示菜单之前触发该回调，可在该回调中进行菜单数据设置。 与[onCreateMenu](#oncreatemenu12)功能相似但触发时机不同：onCreateMenu在菜单创建时触发，适用于初始化菜单项；本接口在每次选择区域变化后、菜单显示前触发，适用于根据选择内容动态调整菜单。两者可同时使用。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 
 #### [h2]onCreateMenu12+
 
@@ -339,7 +377,7 @@ onCreateMenu(menuItems: Array<TextMenuItem>): Array<TextMenuItem>
 
 onMenuItemClick(menuItem: TextMenuItem, range: TextRange): boolean
 
-菜单项功能函数。
+在菜单项被点击时触发该回调，用于处理菜单项的点击行为。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -390,8 +428,8 @@ type OnPrepareMenuCallback = (menuItems: Array<TextMenuItem>) => Array<TextMenuI
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| start | number | 否 | 是 | 起始索引。 |
-| end | number | 否 | 是 | 结束索引。 |
+| start | number | 否 | 是 | 起始索引，从0开始。 |
+| end | number | 否 | 是 | 结束索引，从0开始。 |
 
 #### EditableTextOnChangeCallback12+
 
@@ -480,6 +518,23 @@ type EditableTextOnChangeCallback = (value: string, previewText?: PreviewText, o
 | LIGHT_IMMERSIVE | 2 | 浅色沉浸式风格。 |
 | DARK_IMMERSIVE | 3 | 深色沉浸式风格。 |
 
+#### IncrementalUpdatePolicy
+
+文本渲染的增量更新策略。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| NONE | 0 | 不启用增量更新，采用全量布局渲染。 |
+| PARAGRAPH_CACHE | 1 | 启用增量更新，使用段落级缓存。该策略生效的前提是文本绑定的属性字符串对象保持不变，若属性字符串对象发生变化则无法命中缓存。 |
+
 #### InsertValue12+对象说明
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
@@ -488,7 +543,7 @@ type EditableTextOnChangeCallback = (value: string, previewText?: PreviewText, o
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| insertOffset | number | 否 | 否 | 插入的值的位置信息。 |
+| insertOffset | number | 否 | 否 | 插入的值的位置索引，从0开始。 |
 | insertValue | string | 否 | 否 | 插入的值。 |
 
 #### DeleteValue12+对象说明
@@ -499,7 +554,7 @@ type EditableTextOnChangeCallback = (value: string, previewText?: PreviewText, o
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| deleteOffset | number | 否 | 否 | 删除的值的位置信息。 |
+| deleteOffset | number | 否 | 否 | 删除的值的位置索引，从0开始。 |
 | direction | [TextDeleteDirection](#textdeletedirection12枚举说明) | 否 | 否 | 删除值的方向。 |
 | deleteValue | string | 否 | 否 | 删除的值。 |
 
@@ -511,11 +566,11 @@ type EditableTextOnChangeCallback = (value: string, previewText?: PreviewText, o
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| types | [TextDataDetectorType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#textdatadetectortype11枚举说明)[] | 否 | 否 | 设置文本识别的实体类型。设置types为null或者[]时，识别所有类型的实体，否则只识别指定类型的实体。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| onDetectResultUpdate | Callback | 否 | 是 | 文本识别成功后，触发onDetectResultUpdate回调。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| color12+ | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 设置文本识别成功后的实体颜色。 默认值：'#ff0a59f7' **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| types | [TextDataDetectorType](#textdatadetectortype11枚举说明)[] | 否 | 否 | 设置文本识别的实体类型。设置types为null或者[]时，识别所有类型的实体，否则只识别指定类型的实体。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| onDetectResultUpdate | Callback | 否 | 是 | 文本识别成功后，触发onDetectResultUpdate回调。 默认值：undefined，不触发回调。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| color12+ | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 设置文本识别成功后的实体颜色。 默认值：'#ff0a59f7'，表示蓝色（不透明度为100%） **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | decoration12+ | [DecorationStyleInterface](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-styled-string#decorationstyleinterface) | 否 | 是 | 设置文本识别成功后的实体装饰线样式。 默认值： { type: TextDecorationType.Underline, color: 与实体颜色一致, style: TextDecorationStyle.SOLID } **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| enablePreviewMenu20+ | boolean | 否 | 是 | 设置是否开启文本识别长按显示预览菜单。true表示开启，false表示未开启。 默认值：false 当[copyOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-richeditor#copyoptions)设置为None时，若enablePreviewMenu设置为true，长按AI实体也不能显示预览菜单。 **设备行为差异：** 该参数在Phone、Tablet中可正常调用，在PC/2in1、TV和Wearable等其他设备类型中无效果。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| enablePreviewMenu20+ | boolean | 否 | 是 | 设置是否开启文本识别长按显示预览菜单。true表示开启，false表示未开启。 默认值：false 当[copyOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-richeditor#copyoptions)设置为None时，若enablePreviewMenu设置为true，长按AI实体也不能显示预览菜单。 **设备行为差异：** 本接口实际支持的设备类型范围（Phone、Tablet）小于其所属系统能力支持的设备类型范围（Phone、PC/2in1、Tablet、TV、Car、Wearable）。因硬件形态限制，该接口在PC/2in1、TV、Car、Wearable设备中调用功能不生效。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 
 #### PreviewText12+
 
@@ -527,7 +582,7 @@ type EditableTextOnChangeCallback = (value: string, previewText?: PreviewText, o
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| offset | number | 否 | 否 | 预上屏内容的起始位置。 |
+| offset | number | 否 | 否 | 预上屏内容的起始位置索引，从0开始。 |
 | value | string | 否 | 否 | 预上屏的内容。 |
 
 #### FontSettingOptions12+对象说明
@@ -542,7 +597,7 @@ type EditableTextOnChangeCallback = (value: string, previewText?: PreviewText, o
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| enableVariableFontWeight | boolean | 否 | 是 | 是否启用可变字重调节。字体配置项作为[fontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#fontweight12)接口的入参，fontWeight接口中weight取值为[100, 900]内非整百数值时，enableVariableFontWeight用于设置weight的值是否生效。 默认值：false true：启用可变字重调节。此时如果weight取值为[100, 900]范围内任意整数，字重取值为weight。 false：禁用可变字重调节。此时如果weight取值为[100, 900]范围内的整百数值，字重取值为weight；weight是非整百数值时，字重取默认值400。 |
+| enableVariableFontWeight | boolean | 否 | 是 | 是否启用可变字重调节。字体配置项作为[fontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#fontweight12)接口的入参，fontWeight接口中weight取值为[100, 900]内非整百数值时，enableVariableFontWeight用于设置weight的值是否生效。 默认值：false true：启用可变字重调节。此时如果weight取值为[100, 900]范围内任意整数，字重取值为weight，否则取默认值400。 false：禁用可变字重调节。此时如果weight取值为[100, 900]范围内的整百数值，字重取值为weight；weight是非整百数值时，字重取默认值400。 |
 
 #### FontConfigs24+对象说明
 
@@ -600,8 +655,8 @@ type OnDidChangeCallback = (rangeBefore: TextRange, rangeAfter: TextRange) => vo
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| onWillChange | Callback | 否 | 是 | 文本内容将要变化回调函数。 |
-| onDidChange | [OnDidChangeCallback](#ondidchangecallback12) | 否 | 是 | 文本内容完成变化回调函数。 |
+| onWillChange | Callback | 否 | 是 | 文本内容将要变化回调函数。 默认值：null，不触发回调。 返回true表示允许文本内容变更，返回false表示阻止文本内容变更。 |
+| onDidChange | [OnDidChangeCallback](#ondidchangecallback12) | 否 | 是 | 文本内容完成变化回调函数。 默认值：null，不触发回调。 |
 
 #### StyledStringChangeValue12+
 
@@ -615,11 +670,11 @@ type OnDidChangeCallback = (rangeBefore: TextRange, rangeAfter: TextRange) => vo
 | --- | --- | --- | --- | --- |
 | range | [TextRange](#textrange12) | 否 | 否 | 即将被替换的属性字符串子串在原字符串中的范围。 |
 | replacementString | [StyledString](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-styled-string#styledstring) | 否 | 否 | 用于替换的属性字符串。 |
-| previewText | [StyledString](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-styled-string#styledstring) | 否 | 是 | 预览内容属性字符串。 该属性用于表示语音输入、拍摄输入、输入法预上屏场景下的未提交上屏的临时输入内容。 |
+| previewText | [StyledString](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-styled-string#styledstring) | 否 | 是 | 预览内容属性字符串。 默认值：null，表示无预览内容。 该属性用于表示语音输入、拍摄输入、输入法预上屏场景下的未提交上屏的临时输入内容。 |
 
 #### AutoCapitalizationMode20+枚举说明
 
-自动大小写模式类型，只提供接口能力，具体实现以输入法应用为主。
+自动大小写模式类型，只提供接口能力，具体实现由输入法应用决定。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -627,7 +682,7 @@ type OnDidChangeCallback = (rangeBefore: TextRange, rangeAfter: TextRange) => vo
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| NONE | 0 | 默认状态无效。 |
+| NONE | 0 | 默认状态，不进行自动大小写处理。 |
 | WORDS | 1 | 按单词自动大小写，即输入单词的首个字符大写，其他字符小写。 |
 | SENTENCES | 2 | 按句子自动大小写，即输入句子的首个字符大写，其他字符小写。 |
 | ALL_CHARACTERS | 3 | 按全字符自动大小写。 |
@@ -650,7 +705,7 @@ selectionStart和selectionEnd均为-1时表示全选。
 
 未获焦时调用该接口不产生选中效果。
 
-从API version 12开始，在2in1设备中，无论options取何值，调用setSelection接口都不会弹出菜单，此外，如果组件中已经存在菜单，调用setSelection接口会关闭菜单。
+从API version 12开始，在PC/2in1设备中，无论options取何值，调用setSelection接口都不会弹出菜单，此外，如果组件中已经存在菜单，调用setSelection接口会关闭菜单。
 
 在非2in1设备中，options取值为MenuPolicy.DEFAULT时，遵循以下规则：
 
@@ -666,8 +721,8 @@ selectionStart和selectionEnd均为-1时表示全选。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| selectionStart | number | 是 | 选中开始位置。 取值小于0时，按0处理。 |
-| selectionEnd | number | 是 | 选中结束位置。 取值大于文本长度时，按当前文本长度处理。 |
+| selectionStart | number | 是 | 选中开始位置。 取值小于0时，按0处理。取值大于文本长度时，按当前文本长度处理。 特殊取值效果：当selectionStart和selectionEnd均为-1时，表示全选。 |
+| selectionEnd | number | 是 | 选中结束位置。 取值小于0时，按0处理。取值大于文本长度时，按当前文本长度处理。 特殊取值效果：当selectionStart和selectionEnd均为-1时，表示全选。 |
 | options | [SelectionOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-text-style#selectionoptions12对象说明) | 否 | 选择项配置。 默认值继承[SelectionOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-text-style#selectionoptions12对象说明)。 |
 
 #### [h2]closeSelectionMenu12+
@@ -694,7 +749,7 @@ getLayoutManager(): LayoutManager
 
 | 类型 | 说明 |
 | --- | --- |
-| [LayoutManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#layoutmanager12) | 布局管理器对象。 |
+| [LayoutManager](#layoutmanager12) | 布局管理器对象，用于获取文本布局信息，如行数、行度量、字形位置等。 |
 
 #### TextEditControllerEx12+
 
@@ -762,7 +817,7 @@ setCaretOffset(offset: number): boolean
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| offset | number | 是 | 光标偏移位置。超出所有内容范围时，设置失败。 |
+| offset | number | 是 | 光标偏移位置，取值范围[0, 文本长度]。超出所有内容范围时，设置失败。 |
 
 返回值：
 
@@ -784,7 +839,7 @@ getPreviewText?(): PreviewText
 
 | 类型 | 说明 |
 | --- | --- |
-| [PreviewText](#previewtext12) | 预上屏信息。 |
+| [PreviewText](#previewtext12) | 预上屏信息，包含预上屏起始位置索引和预上屏文本内容。 |
 
 #### StyledStringController12+
 
@@ -836,7 +891,7 @@ getStyledString(): MutableStyledString
 | --- | --- | --- | --- | --- |
 | type | [TextDecorationType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#textdecorationtype) | 否 | 否 | 装饰线类型。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | color | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 否 | 装饰线颜色。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| style | [TextDecorationStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#textdecorationstyle12) | 否 | 是 | 装饰线样式。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| style | [TextDecorationStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#textdecorationstyle12) | 否 | 是 | 装饰线样式。 默认值：TextDecorationStyle.SOLID **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | thicknessScale20+ | number | 否 | 是 | 装饰线粗细缩放比例。 默认值：1.0 取值范围：[0, +∞) **说明：** 负值按默认值处理。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 
 #### LineMetrics12+
@@ -923,7 +978,7 @@ type RectWidthStyle = import('../api/@ohos.graphics.text').default.RectWidthStyl
 
 #### TextChangeOptions15+对象说明
 
-变化前的文本信息，以及变化后的选区范围。
+文本变化相关信息，包括变化前后的选区范围、变化前的文本内容等。
 
 元服务API： 从API version 15开始，该接口支持在元服务中使用。
 
@@ -947,8 +1002,8 @@ type RectWidthStyle = import('../api/@ohos.graphics.text').default.RectWidthStyl
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | content | string | 否 | 否 | 当前的文本内容。 |
-| previewText | [PreviewText](#previewtext12) | 否 | 是 | 预上屏的内容信息。 |
-| options | [TextChangeOptions](#textchangeoptions15对象说明) | 否 | 是 | 变化的文本内容信息。 |
+| previewText | [PreviewText](#previewtext12) | 否 | 是 | 预上屏的内容信息。 默认值：undefined，表示无预上屏内容。 |
+| options | [TextChangeOptions](#textchangeoptions15对象说明) | 否 | 是 | 变化的文本内容信息。 默认值：undefined。 |
 
 #### TextMenuShowMode16+
 
@@ -1015,7 +1070,7 @@ constructor(options: LinearGradientOptions)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [LinearGradientOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-gradient-color#lineargradientoptions18对象说明) | 是 | 显示为线性渐变效果。 |
+| options | [LinearGradientOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-gradient-color#lineargradientoptions18对象说明) | 是 | 显示为线性渐变效果。 [LinearGradientOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-gradient-color#lineargradientoptions18对象说明)中的direction默认值按[GradientDirection](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#gradientdirection)中的NONE处理。 |
 
 #### RadialGradientStyle20+
 
@@ -1276,6 +1331,24 @@ constructor(options?: NumericTextTransitionOptions)
 | CENTER | 1 | 内容区中心对齐。 |
 | BOTTOM | 2 | 内容区底部对齐。 |
 
+#### StrokeJoinStyle
+
+定义线条拐角的样式，即在绘制折线时线段拐角处的画笔样式。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| MITER_JOIN | 0 | 拐角类型为锐角。 |
+| ROUND_JOIN | 1 | 拐角类型为圆角。 |
+| BEVEL_JOIN | 2 | 拐角类型为平角。 |
+
 #### TextDirection22+
 
 文本排版方向。
@@ -1338,3 +1411,29 @@ type FontVariation = import('../api/@ohos.graphics.text').default.FontVariation
 | 类型 | 说明 |
 | --- | --- |
 | import('../api/@ohos.graphics.text').default.[FontVariation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-text#fontvariation) | 可变字体的属性。 |
+
+#### OnCreateMenuCallback
+
+type OnCreateMenuCallback = (menuItems: Array<TextMenuItem>) => Array<TextMenuItem>
+
+菜单创建时触发。
+
+起始版本： 26.0.0
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| menuItems | Array | 是 | 当前显示的菜单项。 **说明：** 对默认菜单项的名称、图标、快捷键提示修改不生效。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Array | 处理后的菜单项。 |

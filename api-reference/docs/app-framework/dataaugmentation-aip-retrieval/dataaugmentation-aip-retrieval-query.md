@@ -2,8 +2,8 @@
 title: "aip_retrieval_query.h"
 upstream_id: "harmonyos-references/dataaugmentation-aip-retrieval-query"
 catalog: "harmonyos-references"
-content_hash: "9b8b1423bce6"
-synced_at: "2026-07-09T00:59:02.575773"
+content_hash: "25b1fd27eadc"
+synced_at: "2026-07-28T16:50:06.188802"
 ---
 
 # aip_retrieval_query.h
@@ -36,4 +36,4 @@ synced_at: "2026-07-09T00:59:02.575773"
 | --- | --- |
 | [OH_Retrieval_Query](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-capi-retrieval#oh_retrieval_query) * [OH_Retrieval_CreateQuery](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-capi-retrieval#oh_retrieval_createquery) () | 创建检索词，作为检索接口的入参。 |
 | int [OH_Retrieval_DestroyQuery](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-capi-retrieval#oh_retrieval_destroyquery) ([OH_Retrieval_Query](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-capi-retrieval#oh_retrieval_query) *query) | 销毁通过[OH_Retrieval_CreateQuery](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-capi-retrieval#oh_retrieval_createquery)获得的检索词。 |
-| int [OH_Retrieval_SetOriginalQuestion](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-capi-retrieval#oh_retrieval_setoriginalquestion) ([OH_Retrieval_Query](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-capi-retrieval#oh_retrieval_query) *query, const char *question) | 设置[OH_Retrieval_Query](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-capi-retrieval#oh_retrieval_query)中的检索词。 |
+| int [OH_Retrieval_SetOriginalQuestion](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-capi-retrieval#oh_retrieval_setoriginalquestion) ([OH_Retrieval_Query](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-capi-retrieval#oh_retrieval_query) *query, const char *question) | 设置[OH_Retrieval_Query](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-capi-retrieval#oh_retrieval_query)中的检索词。其中，参数question为待检索的纯文本字符串，用于指定具体的检索内容。该参数不能为空，且长度不得超过512个字符。 |

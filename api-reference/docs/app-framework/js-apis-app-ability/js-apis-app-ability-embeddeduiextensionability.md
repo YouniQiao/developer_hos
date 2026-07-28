@@ -2,8 +2,8 @@
 title: "@ohos.app.ability.EmbeddedUIExtensionAbility (支持跨进程界面嵌入的ExtensionAbility组件)"
 upstream_id: "harmonyos-references/js-apis-app-ability-embeddeduiextensionability"
 catalog: "harmonyos-references"
-content_hash: "ca1e5c69560b"
-synced_at: "2026-07-17T16:15:51.943738"
+content_hash: "5d4ed93328ea"
+synced_at: "2026-07-28T16:40:32.799930"
 ---
 
 # @ohos.app.ability.EmbeddedUIExtensionAbility (支持跨进程界面嵌入的ExtensionAbility组件)
@@ -28,11 +28,9 @@ import { EmbeddedUIExtensionAbility } from '@kit.AbilityKit';
 
 EmbeddedUIExtensionAbility为开发者提供了跨进程界面嵌入的能力，继承自[UIExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiextensionability)。
 
-目前EmbeddedUIExtensionAbility只能被同应用的UIAbility拉起。
+![](./img/note_3.0-zh-cn.png) EmbeddedUIExtensionAbility只能被同应用的UIAbility拉起。从API版本26.0.0开始，满足以下条件时则允许EmbeddedComponent跨应用拉起EmbeddedUIExtensionAbility：
+
+- EmbeddedComponent所属应用已申请ohos.permission.SUPPORT_CROSS_APP_EMBED_FOR_OA权限（该权限仅企业普通应用可申请）。
+- 该应用的[appIdentifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appidentifier)在EmbeddedUIExtensionAbility支持的应用清单（即[extensionAbilities标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#extensionabilities标签)的appIdentifierAllowList属性）中。
 
 系统能力：SystemCapability.Ability.AbilityRuntime.Core
-
-设备行为差异：
-
-- 从API version 12开始，该接口在Tablet中可正常调用，在其他设备类型中无法被启动。
-- 从API version 13开始，该接口在PC/2in1、Tablet中可正常调用，在其他设备类型中无法被启动。

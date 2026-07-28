@@ -2,8 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-statusbar-extension"
 catalog: "harmonyos-references"
-content_hash: "722c90f6c683"
-synced_at: "2026-07-09T00:59:45.757191"
+content_hash: "4278b8869533"
+synced_at: "2026-07-28T16:51:02.619029"
 ---
 
 # ArkTS API错误码
@@ -324,13 +324,51 @@ Invalid parameter.
 
 错误描述
 
-传入的parameters参数的数组大小超过限制。
+调用接口传入的参数异常。
 
 可能原因
 
 - 调用[addQuickTask](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanageraddquicktask)方法时传入的parameters参数的数组大小超过64。
 - 调用[updateQuickTask](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanagerupdatequicktask)方法时传入的parameters参数的数组大小超过64。
+- 调用[setProgressState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanagersetprogressstate)方法时传入的state参数范围超出[ProgressState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#progressstate)。
+- 调用[setProgressValue](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanagersetprogressvalue)方法时传入的completed小于0、total小于等于0、completed大于total。
 
 处理步骤
 
-请重新设置parameters参数的数组元素数量或通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+请重新设置参数值或通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+
+#### 1020210010 未在快捷栏找到应用图标
+
+错误信息
+
+Quick bar icon not found.
+
+错误描述
+
+未在快捷栏找到应用图标。
+
+可能原因
+
+应用图标未在快捷栏上显示。
+
+处理步骤
+
+请在应用图标出现在快捷栏后再调用接口或通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+
+#### 1020210011 API接口调用太频繁
+
+错误信息
+
+The API is called too frequently.
+
+错误描述
+
+短时间内频繁调用API接口。
+
+可能原因
+
+[setQuickBarCombineIcon](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanagersetquickbarcombineicon)，[setQuickBarLayeredIcon](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanagersetquickbarlayeredicon)，[setProgressState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanagersetprogressstate)，[setProgressValue](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanagersetprogressvalue)，[isQuickBarCapabilitySupported](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanagerisquickbarcapabilitysupported)等接口调用间隔小于20ms。
+
+处理步骤
+
+请注意设置API的调用间隔或通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。

@@ -2,8 +2,8 @@
 title: "形状裁剪"
 upstream_id: "harmonyos-references/ts-universal-attributes-sharp-clipping"
 catalog: "harmonyos-references"
-content_hash: "c6fb51837158"
-synced_at: "2026-07-09T00:57:39.634012"
+content_hash: "6e5f6ddfc5a0"
+synced_at: "2026-07-28T16:42:14.548318"
 ---
 
 # 形状裁剪
@@ -56,7 +56,7 @@ clip(clip: Optional<boolean>): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| clip | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 设置子组件是否按照当前组件边缘轮廓进行裁剪。 **说明：** 设置为true后，子组件超出当前组件范围外的区域将不响应绑定的手势事件。 当clip的值为undefined时，恢复为不对子组件超出当前组件范围外的区域进行裁剪。 |
+| clip | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 设置子组件是否按照当前组件边缘轮廓进行裁剪。true表示子组件按照当前组件边缘轮廓进行裁剪，false表示不对子组件进行裁剪。 **说明：** 设置为true后，子组件超出当前组件范围外的区域将不响应绑定的手势事件。 当clip的值为undefined时，恢复为不对子组件超出当前组件范围外的区域进行裁剪。 |
 
 返回值：
 
@@ -82,7 +82,7 @@ clip(value: boolean | CircleAttribute | EllipseAttribute | PathAttribute | RectA
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | boolean | [CircleAttribute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-circle) | [EllipseAttribute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-ellipse) | [PathAttribute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-path) | [RectAttribute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-rect) | 是 | 参数为相应类型的组件，按指定的形状对当前组件进行裁剪；参数为boolean类型时，设置是否按照父容器边缘轮廓进行裁剪。 默认值：false true表示按照父容器边缘轮廓进行裁剪，false表示不对子组件进行裁剪。 **说明：** 参数为对应类型的组件时，裁剪不会导致被裁剪区域无法响应绑定的手势事件。参数为boolean类型时，裁剪会导致被裁剪区域无法响应绑定的手势事件。 |
+| value | boolean | [CircleAttribute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-circle) | [EllipseAttribute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-ellipse) | [PathAttribute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-path) | [RectAttribute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-rect) | 是 | 参数为相应类型的组件，按指定的形状对当前组件和子组件进行裁剪；参数为boolean类型时，设置是否按照当前组件边缘轮廓进行裁剪。 默认值：false true表示按当前组件边缘轮廓进行裁剪，false表示不进行裁剪。 **说明：** 参数为对应类型的组件时，裁剪不会导致被裁剪区域无法响应绑定的手势事件。参数为boolean类型时，裁剪会导致被裁剪区域无法响应绑定的手势事件。 |
 
 返回值：
 
@@ -230,7 +230,7 @@ type RectShape = import('../api/@ohos.arkui.shape').RectShape
 
 mask(value: ProgressMask): T
 
-为组件上添加可调节进度的遮罩。
+为组件添加可调节进度的遮罩。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -254,7 +254,7 @@ mask(value: ProgressMask): T
 
 mask(mask: Optional<ProgressMask>): T
 
-为组件上添加可调节进度的遮罩。与[mask12+](#mask12)相比，新增了对undefined类型的支持。
+为组件添加可调节进度的遮罩。与[mask12+](#mask12)相比，新增了对undefined类型的支持。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -278,7 +278,7 @@ mask(mask: Optional<ProgressMask>): T
 
 mask(value: CircleAttribute | EllipseAttribute | PathAttribute | RectAttribute | ProgressMask): T
 
-为组件上添加指定形状的遮罩。
+为组件添加指定形状的遮罩。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 12开始废弃，建议使用[maskShape](#maskshape12)替代。
 
@@ -304,7 +304,7 @@ mask(value: CircleAttribute | EllipseAttribute | PathAttribute | RectAttribute |
 
 maskShape(value: CircleShape | EllipseShape | PathShape | RectShape): T
 
-为组件上添加指定形状的遮罩。
+为组件添加指定形状的遮罩。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -330,7 +330,7 @@ maskShape(value: CircleShape | EllipseShape | PathShape | RectShape): T
 
 maskShape(shape: Optional<CircleShape | EllipseShape | PathShape | RectShape>): T
 
-为组件上添加指定形状的遮罩。与[maskShape12+](#maskshape12)相比，新增了对undefined类型的支持。
+为组件添加指定形状的遮罩。与[maskShape12+](#maskshape12)相比，新增了对undefined类型的支持。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -483,7 +483,7 @@ struct ClipAndMaskExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253180.png)
+ ![](./img/zh-cn_image_0000002655848376.png)
 
 #### [h2]示例2（实现组件遮罩）
 
@@ -513,7 +513,7 @@ struct ProgressMaskExample {
           delay: 0, // 动画延迟
           iterations: 1, // 播放次数
           playMode: PlayMode.Normal // 动画模式
-        }) // 对Button组件的宽高属性进行动画配置
+        }) // 对Image组件的属性进行动画配置
 
       // 更新进度遮罩的进度值
       Button('updateProgress')
@@ -530,7 +530,7 @@ struct ProgressMaskExample {
           } else {
             this.progress.updateColor(0x9f0000ff);
           }
-          this.progressFlag1 = !this.progressFlag1
+          this.progressFlag1 = !this.progressFlag1;
         }).width(200).height(50).margin(20)
 
       // 开关呼吸光晕动画
@@ -552,4 +552,4 @@ struct ProgressMaskExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612363.gif)
+ ![](./img/zh-cn_image_0000002686087805.gif)

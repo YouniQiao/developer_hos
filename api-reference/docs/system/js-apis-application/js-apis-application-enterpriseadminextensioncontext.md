@@ -1,12 +1,12 @@
 ---
-title: "EnterpriseAdminExtensionContext"
+title: "EnterpriseAdminExtensionContext（企业设备管理扩展能力上下文环境）"
 upstream_id: "harmonyos-references/js-apis-application-enterpriseadminextensioncontext"
 catalog: "harmonyos-references"
-content_hash: "7d30b9ac6f01"
-synced_at: "2026-07-09T00:59:53.248463"
+content_hash: "4473a4431015"
+synced_at: "2026-07-28T16:51:11.303193"
 ---
 
-# EnterpriseAdminExtensionContext
+# EnterpriseAdminExtensionContext（企业设备管理扩展能力上下文环境）
 
 EnterpriseAdminExtensionContext是[EnterpriseAdminExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterpriseadminextensionability)的上下文环境，继承自[ExtensionContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-extensioncontext)。
 
@@ -89,7 +89,7 @@ startAbilityByAdmin(admin: Want, want: Want): Promise<void>
     "startWindowBackground": "$color:white",
     "exported": true,
     "permissions": [
-      "ohos.permission.START_UI_Ability"
+      "ohos.permission.START_UI_ABILITY"
     ]
   }
 ]

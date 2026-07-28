@@ -2,24 +2,24 @@
 title: "鼠标事件"
 upstream_id: "harmonyos-references/ts-universal-mouse-key"
 catalog: "harmonyos-references"
-content_hash: "56aac73fa6af"
-synced_at: "2026-07-09T17:23:26.637435"
+content_hash: "d04a13fa8cb4"
+synced_at: "2026-07-28T16:41:48.144314"
 ---
 
 # 鼠标事件
 
-在鼠标的单个动作触发多个事件时，事件的顺序是固定的，鼠标事件默认冒泡。
+鼠标事件用于监听组件上的鼠标点击、移动等交互，可获取鼠标按键、动作、坐标、历史点等事件信息，适用于需要处理鼠标交互、绘制轨迹、手势识别或优化输入响应体验的场景。在鼠标的单个动作触发多个事件时，事件的顺序是固定的，鼠标事件默认冒泡。
 
 ![](./img/note_3.0-zh-cn.png)
 
 - 本模块首批接口从API version 8开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
-- 目前仅支持通过外接鼠标触发。
+- 目前支持通过外接鼠标或通过触控板触发鼠标事件。
 
 #### onMouse
 
 onMouse(event: (event: MouseEvent) => void): T
 
-当前组件被鼠标按键点击时或者鼠标在组件上悬浮移动时，触发该回调。
+当前组件被鼠标按键点击时或者鼠标在组件上悬浮移动时，或通过触控板触发相同的鼠标操作时，触发该回调。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -47,19 +47,19 @@ onMouse(event: (event: MouseEvent) => void): T
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| x | number | 否 | 否 | 鼠标位置在事件响应组件为基准的[组件坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-glossary#组件坐标系)中的X坐标。 单位：vp **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| y | number | 否 | 否 | 鼠标位置在事件响应组件为基准的[组件坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-glossary#组件坐标系)中的Y坐标。 单位：vp **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| x | number | 否 | 否 | 鼠标位置在事件响应组件为基准的[组件坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-glossary#组件坐标系)中的X坐标。 单位：vp **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| y | number | 否 | 否 | 鼠标位置在事件响应组件为基准的[组件坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-glossary#组件坐标系)中的Y坐标。 单位：vp **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | button | [MouseButton](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#mousebutton8) | 否 | 否 | 鼠标按键。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | action | [MouseAction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#mouseaction8) | 否 | 否 | 鼠标动作。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| stopPropagation | () => void | 否 | 否 | 阻塞[事件冒泡](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-basic-principles#事件冒泡)。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| stopPropagation | () => void | 否 | 否 | 阻塞[事件冒泡](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-basic-principles#事件冒泡)，适用于当前组件已处理鼠标事件且需要阻止事件继续向父组件传递的场景。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | windowX10+ | number | 否 | 否 | 鼠标位置在当前应用窗口坐标系中的X坐标。 单位：vp **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | windowY10+ | number | 否 | 否 | 鼠标位置在当前应用窗口坐标系中的Y坐标。 单位：vp **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| displayX10+ | number | 否 | 否 | 鼠标位置在当前应用屏幕坐标系中的X坐标。 单位：vp **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| displayY10+ | number | 否 | 否 | 鼠标位置在当前应用屏幕坐标系中的Y坐标。 单位：vp **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| displayX10+ | number | 否 | 否 | 鼠标位置在当前应用屏幕坐标系中的X坐标。 单位：vp **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| displayY10+ | number | 否 | 否 | 鼠标位置在当前应用屏幕坐标系中的Y坐标。 单位：vp **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | screenX(deprecated) | number | 否 | 否 | 鼠标位置在当前应用窗口坐标系中的X坐标。 单位：vp **说明：** 从API version 8开始支持，从API version 10开始废弃，建议使用windowX替代。 |
 | screenY(deprecated) | number | 否 | 否 | 鼠标位置在当前应用窗口坐标系中的Y坐标。 单位：vp **说明：** 从API version 8开始支持，从API version 10开始废弃，建议使用windowY替代。 |
-| rawDeltaX15+ | number | 否 | 是 | 鼠标设备在二维平面X轴的移动增量。其数值为鼠标硬件的原始移动数据，使用物理世界中鼠标移动的距离单位进行表示。上报数值由硬件本身决定，并非屏幕的物理/逻辑像素。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| rawDeltaY15+ | number | 否 | 是 | 鼠标设备在二维平面Y轴的移动增量。其数值为鼠标硬件的原始移动数据，使用物理世界中鼠标移动的距离单位进行表示。上报数值由硬件本身决定，并非屏幕的物理/逻辑像素。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| rawDeltaX15+ | number | 否 | 是 | 鼠标设备在二维平面X轴的移动增量。其数值为鼠标硬件的原始移动数据，使用物理世界中鼠标移动的距离单位进行表示。上报数值由硬件本身决定，并非屏幕的物理/逻辑像素。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 **说明：** API版本26.0.0之前，rawDeltaX的返回值并非鼠标硬件的原始移动数据，而是原始数据缩小了X倍，X为系统的显示大小比例。API版本26.0.0开始，rawDeltaX的返回值为鼠标硬件的原始移动数据。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| rawDeltaY15+ | number | 否 | 是 | 鼠标设备在二维平面Y轴的移动增量。其数值为鼠标硬件的原始移动数据，使用物理世界中鼠标移动的距离单位进行表示。上报数值由硬件本身决定，并非屏幕的物理/逻辑像素。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 **说明：** API版本26.0.0之前，rawDeltaY的返回值并非鼠标硬件的原始移动数据，而是原始数据缩小了X倍，X为系统的显示大小比例。API版本26.0.0开始，rawDeltaY的返回值为鼠标硬件的原始移动数据。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | pressedButtons15+ | MouseButton[] | 否 | 是 | 当前按下的鼠标按键集合。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | globalDisplayX20+ | number | 否 | 是 | 鼠标位置在[全局坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#global-coordinate-system全局坐标系)中的X坐标。 单位：vp 取值范围：(-∞, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | globalDisplayY20+ | number | 否 | 是 | 鼠标位置在[全局坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#global-coordinate-system全局坐标系)中的Y坐标。 单位：vp 取值范围：(-∞, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
@@ -69,7 +69,7 @@ onMouse(event: (event: MouseEvent) => void): T
 
 getCurrentLocalPosition?(): Coordinate2D
 
-获取鼠标位置相对于当前组件实时位置的左上角坐标。
+获取鼠标位置相对于当前组件实时位置的左上角坐标，适用于组件位置动态变化时实时获取鼠标相对组件坐标的场景。
 
 起始版本： 26.0.0
 
@@ -89,7 +89,7 @@ getCurrentLocalPosition?(): Coordinate2D
 
 getHistoricalPoints?(): Array<MouseHistoricalPoint>
 
-获取当前帧的所有历史点信息。历史点可用于实现更平滑的绘制效果。
+获取当前帧的所有历史点信息。历史点可用于实现更平滑的绘制效果、手势识别、性能优化、轨迹分析或数据分析等操作。目前仅支持通过外接鼠标触发。
 
 该接口仅能在[MouseEvent](#mouseevent对象说明)中调用，用于获取触发[onMouse](#onmouse)时当前帧历史点的相关信息，不同设备每帧的鼠标事件上报频率不同，一帧通常只会上报一个鼠标事件，如果当前帧收到的[MouseEvent](#mouseevent对象说明)数目大于1，会将该帧最后一个点通过[onMouse](#onmouse)返回，其余点作为历史点。
 
@@ -129,15 +129,15 @@ getHistoricalPoints?(): Array<MouseHistoricalPoint>
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| x | number | 否 | 否 | 鼠标指针相对于被点击组件左上角的X坐标。 单位：vp |
-| y | number | 否 | 否 | 鼠标指针相对于被点击组件左上角的Y坐标。 单位：vp |
-| displayX | number | 否 | 否 | 鼠标指针相对于整个屏幕左上角的X坐标。 单位：vp |
-| displayY | number | 否 | 否 | 鼠标指针相对于整个屏幕左上角的Y坐标。 单位：vp |
+| x | number | 否 | 否 | 鼠标指针相对于事件响应组件左上角的X坐标。 单位：vp |
+| y | number | 否 | 否 | 鼠标指针相对于事件响应组件左上角的Y坐标。 单位：vp |
+| displayX | number | 否 | 否 | 鼠标指针相对于当前应用屏幕左上角的X坐标。 单位：vp |
+| displayY | number | 否 | 否 | 鼠标指针相对于当前应用屏幕左上角的Y坐标。 单位：vp |
 | windowX | number | 否 | 否 | 鼠标指针相对于应用窗口左上角的X坐标。 单位：vp |
 | windowY | number | 否 | 否 | 鼠标指针相对于应用窗口左上角的Y坐标。 单位：vp |
 | globalDisplayX | number | 否 | 否 | 鼠标位置在[全局坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#global-coordinate-system全局坐标系)中的X坐标。 单位：vp |
 | globalDisplayY | number | 否 | 否 | 鼠标位置在[全局坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#global-coordinate-system全局坐标系)中的Y坐标。 单位：vp |
-| timestamp | number | 否 | 否 | 鼠标事件的时间戳。 单位：ns |
+| timestamp | number | 否 | 否 | 鼠标事件的时间戳，表示触发事件时距离系统启动的时间间隔。 单位：ns |
 
 #### 示例
 
@@ -165,7 +165,7 @@ struct MouseEventExample {
         .height(80)
         .backgroundColor(this.color)
         .fontSize(24)
-        .onHover((isHover: boolean, event: HoverEvent) => {
+        .onHover((isHover: boolean) => {
           // 通过onHover事件动态修改按钮在是否有鼠标悬浮时的文本内容与背景颜色
           if (isHover) {
             this.hoverText = 'hover';
@@ -239,11 +239,11 @@ struct MouseEventExample {
 
 鼠标点击时：
 
-![](./img/zh-cn_image_0000002633850358.gif)
+![](./img/zh-cn_image_0000002685927919.gif)
 
 #### [h2]示例2（获取当前帧历史点）
 
-该示例通过调用[getHistoricalPoints](#gethistoricalpoints)接口，获取到触发重采样时的历史点，可以用来实现更平滑的绘制等操作。
+该示例通过调用[getHistoricalPoints](#gethistoricalpoints)接口，获取当前帧的历史点，可以用来实现更平滑的绘制等操作。
 
 从API版本26.0.0开始，新增getHistoricalPoints接口。
 
@@ -251,7 +251,7 @@ struct MouseEventExample {
 @Entry
 @Component
 struct HistoricalPointsExample {
-  historicalPointsInfo: string = ''
+  historicalPointsInfo: string = '';
 
   build() {
     Column() {
@@ -263,13 +263,13 @@ struct HistoricalPointsExample {
             // 调用getHistoricalPoints接口获取当前帧历史点信息
             const historicalPoints = event.getHistoricalPoints?.();
             if (historicalPoints) {
-              this.historicalPointsInfo = `历史点数量: ${historicalPoints.length}`;
+              this.historicalPointsInfo = `历史点数量：${historicalPoints.length}`;
               historicalPoints.forEach((point: MouseHistoricalPoint, index: number) => {
                 this.historicalPointsInfo += `\n点${index}: `
-                  +`x = ${point.x}, y = ${point.y}, windowX = ${point.windowX}, windowY = ${point.windowY}, `
-                  +`displayX = ${point.displayX}, displayY = ${point.displayY}, `
-                  +`globalDisplayX = ${point.globalDisplayX}, globalDisplayY = ${point.globalDisplayY}, `
-                  +`timestamp = ${point.timestamp}`;
+                  + `x = ${point.x}, y = ${point.y}, windowX = ${point.windowX}, windowY = ${point.windowY}, `
+                  + `displayX = ${point.displayX}, displayY = ${point.displayY}, `
+                  + `globalDisplayX = ${point.globalDisplayX}, globalDisplayY = ${point.globalDisplayY}, `
+                  + `timestamp = ${point.timestamp}`;
               });
               console.info(this.historicalPointsInfo);
             }
@@ -284,7 +284,7 @@ struct HistoricalPointsExample {
 
 #### [h2]示例3（获取组件实时位置）
 
-该示例通过[getCurrentLocalPosition](#getcurrentlocalposition)方法获取当前组件基于其实时位置的左上角坐标。
+该示例通过[getCurrentLocalPosition](#getcurrentlocalposition)方法获取鼠标位置相对于当前组件实时位置左上角的坐标。
 
 从API版本26.0.0开始，新增支持getCurrentLocalPosition接口。
 
@@ -299,12 +299,13 @@ struct GetCurrentLocalPositionExample {
   build() {
     Column() {
       Button('获取鼠标位置相对于当前组件实时位置左上角的坐标').translate({ y: this.textOffsetY })
-        .onMouse((event?: MouseEvent) => {
+        .onMouse((event: MouseEvent) => {
           if (event) {
+            // 移动组件后延迟获取鼠标相对于组件实时位置左上角的坐标
             this.textOffsetY = -200;
             setTimeout(() => {
               let localPos: Coordinate2D | undefined = event.getCurrentLocalPosition?.();
-              this.positionText = `相对于当前组件实时位置左上角的坐标:\n  x: ${localPos?.x}\n  y: ${localPos?.y}`;
+              this.positionText = `相对于当前组件实时位置左上角的坐标：\n  x: ${localPos?.x}\n  y: ${localPos?.y}`;
             }, 2000);
           }
         })
@@ -318,4 +319,4 @@ struct GetCurrentLocalPositionExample {
 
 鼠标触发事件时：
 
-![](./img/zh-cn_image_0000002634010262.gif)
+![](./img/zh-cn_image_0000002656008240.gif)

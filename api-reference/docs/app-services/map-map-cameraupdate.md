@@ -2,8 +2,8 @@
 title: "Interface (CameraUpdate)"
 upstream_id: "harmonyos-references/map-map-cameraupdate"
 catalog: "harmonyos-references"
-content_hash: "df9449dc388e"
-synced_at: "2026-07-09T01:01:24.965487"
+content_hash: "b2103d326259"
+synced_at: "2026-07-28T16:52:43.193754"
 ---
 
 # Interface (CameraUpdate)
@@ -16,7 +16,7 @@ import { map, mapCommon } from '@kit.MapKit';
 
 #### CameraUpdate
 
-CameraUpdate定义了相机移动参数。CameraUpdate的创建方法参见[newCameraPosition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-functions#newcameraposition)等function。
+CameraUpdate定义了相机移动参数。CameraUpdate的创建方法参见[newCameraPosition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-functions#newcameraposition)、[newLatLng](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-functions#newlatlng)和[newLatLngBounds](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-functions#newlatlngbounds)等函数，获取地图的控制器类mapController参见[MapComponentController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#mapcomponentcontroller)。
 
 模型约束： 此接口仅可在Stage模型下使用。
 

@@ -2,8 +2,8 @@
 title: "@ohos.enterprise.telephonyManager（通话管理）"
 upstream_id: "harmonyos-references/js-apis-enterprise-telephonymanager"
 catalog: "harmonyos-references"
-content_hash: "9caeba3bddd1"
-synced_at: "2026-07-09T00:59:53.245696"
+content_hash: "2ebd0a0bd5f9"
+synced_at: "2026-07-28T16:51:11.321097"
 ---
 
 # @ohos.enterprise.telephonyManager（通话管理）
@@ -16,7 +16,7 @@ synced_at: "2026-07-09T00:59:53.245696"
 
 本模块接口仅对设备管理应用开放，调用接口前需激活该应用，详情请参考[MDM Kit开发指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-guide)。
 
-全局通用限制类策略由restrictions提供，若要全局禁用通话，请参考[@ohos.enterprise.restrictions （限制类策略）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions)。
+全局通用限制类策略由restrictions提供，若要全局禁用通话，请参考[@ohos.enterprise.restrictions（限制类策略）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions)。
 
 #### 导入模块
 
@@ -33,6 +33,8 @@ setSimDisabled(admin: Want, slotId: number): void
 需要权限： ohos.permission.ENTERPRISE_MANAGE_TELEPHONY
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
+
+设备行为差异： 该接口在Phone和Tablet设备中可正常调用，在其他设备中返回801错误码。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -54,6 +56,7 @@ setSimDisabled(admin: Want, slotId: number): void
 | 9200001 | The application is not an administrator application of the device. |
 | 9200002 | The administrator application does not have permission to manage the device. |
 | 201 | Permission verification failed. The application does not have the permission required to call the API. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
 
 示例：
 
@@ -85,6 +88,8 @@ setSimEnabled(admin: Want, slotId: number): void
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
+设备行为差异： 该接口在Phone和Tablet设备中可正常调用，在其他设备中返回801错误码。
+
 模型约束： 此接口仅可在Stage模型下使用。
 
 冲突规则： [从严管控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则1从严管控)。
@@ -105,6 +110,7 @@ setSimEnabled(admin: Want, slotId: number): void
 | 9200001 | The application is not an administrator application of the device. |
 | 9200002 | The administrator application does not have permission to manage the device. |
 | 201 | Permission verification failed. The application does not have the permission required to call the API. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
 
 示例：
 
@@ -136,6 +142,8 @@ isSimDisabled(admin: Want, slotId: number): boolean
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
+设备行为差异： 该接口在Phone和Tablet设备中可正常调用，在其他设备中返回801错误码。
+
 模型约束： 此接口仅可在Stage模型下使用。
 
 参数：
@@ -160,6 +168,7 @@ isSimDisabled(admin: Want, slotId: number): boolean
 | 9200001 | The application is not an administrator application of the device. |
 | 9200002 | The administrator application does not have permission to manage the device. |
 | 201 | Permission verification failed. The application does not have the permission required to call the API. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
 
 示例：
 
@@ -189,7 +198,7 @@ addOutgoingCallPolicyNumbers(admin: Want, policy: adminManager.Policy, numbers: 
 
 以下情况下，通过本接口添加通话呼出的允许或禁用名单，会报策略冲突：
 
-1. 已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicy)接口禁用了设备通话能力，再通过本接口添加通话呼出的禁用或允许名单，返回203错误码。通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicy)接口解除禁用设备通话能力后，可解除冲突。
+1. 已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated))接口禁用了设备通话能力，再通过本接口添加通话呼出的禁用或允许名单，返回203错误码。通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated))接口解除禁用设备通话能力后，可解除冲突。
 2. 已经通过本接口设置了通话呼出的禁用名单，再通过本接口添加通话呼出允许名单，返回9200010错误码。通过[removeOutgoingCallPolicyNumbers](#telephonymanagerremoveoutgoingcallpolicynumbers)接口将之前设置的通话呼出禁用名单移除后，可解除冲突。
 3. 已经通过本接口设置了通话呼出的允许名单，再通过本接口添加通话呼出禁用名单，返回9200010错误码。通过[removeOutgoingCallPolicyNumbers](#telephonymanagerremoveoutgoingcallpolicynumbers)接口将之前设置的通话呼出允许名单移除后，可解除冲突。
 
@@ -258,7 +267,7 @@ removeOutgoingCallPolicyNumbers(admin: Want, policy: adminManager.Policy, number
 
 以下情况下，通过本接口移除通话呼出的允许或禁用名单，会报策略冲突：
 
-已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicy)接口禁用了设备通话能力，再通过本接口移除通话呼出的禁用或允许名单，返回203错误码。通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicy)接口解除禁用设备通话能力后，可解除冲突。
+已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated))接口禁用了设备通话能力，再通过本接口移除通话呼出的禁用或允许名单，返回203错误码。通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated))接口解除禁用设备通话能力后，可解除冲突。
 
 需要权限： ohos.permission.ENTERPRISE_MANAGE_TELEPHONY
 
@@ -318,7 +327,7 @@ try {
 
 #### telephonyManager.getOutgoingCallPolicyNumbers
 
-getOutgoingCallPolicyNumbers(admin: Want, policy: adminManager.Policy): Array<string>
+getOutgoingCallPolicyNumbers(admin: Want | null, policy: adminManager.Policy): Array<string>
 
 获取通话呼出的允许或禁用名单。
 
@@ -334,7 +343,7 @@ getOutgoingCallPolicyNumbers(admin: Want, policy: adminManager.Policy): Array<st
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，API版本26.0.0之前，传入Want时查询对应企业设备管理应用设置的策略。从API版本26.0.0开始，新增支持传入null时查询实际生效的策略。 |
 | policy | [adminManager.Policy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-adminmanager#policy20) | 是 | 允许或禁用名单策略。 BLOCK_LIST为禁用名单，TRUST_LIST为允许名单。 |
 
 返回值：
@@ -383,7 +392,7 @@ addIncomingCallPolicyNumbers(admin: Want, policy: adminManager.Policy, numbers: 
 
 以下情况下，通过本接口添加通话呼入的允许或禁用名单，会报策略冲突：
 
-1. 已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicy)接口禁用了设备通话能力，再通过本接口添加通话呼入的禁用或允许名单，返回203错误码。通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicy)接口解除禁用设备通话能力后，可解除冲突。
+1. 已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated))接口禁用了设备通话能力，再通过本接口添加通话呼入的禁用或允许名单，返回203错误码。通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated))接口解除禁用设备通话能力后，可解除冲突。
 2. 已经通过本接口设置了通话呼入的禁用名单，再通过本接口添加通话呼入允许名单，返回9200010错误码。通过[removeIncomingCallPolicyNumbers](#telephonymanagerremoveincomingcallpolicynumbers)接口将之前设置的通话呼入禁用名单移除后，可解除冲突。
 3. 已经通过本接口设置了通话呼入的允许名单，再通过本接口添加通话呼入禁用名单，返回9200010错误码。通过[removeIncomingCallPolicyNumbers](#telephonymanagerremoveincomingcallpolicynumbers)接口将之前设置的通话呼入允许名单移除后，可解除冲突。
 
@@ -452,7 +461,7 @@ removeIncomingCallPolicyNumbers(admin: Want, policy: adminManager.Policy, number
 
 以下情况下，通过本接口移除通话呼入的允许或禁用名单，会报策略冲突：
 
-1. 已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicy)接口禁用了设备通话能力，再通过本接口移除通话呼入的禁用或允许名单，返回203错误码。通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicy)接口解除禁用设备通话能力后，可解除冲突。
+1. 已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated))接口禁用了设备通话能力，再通过本接口移除通话呼入的禁用或允许名单，返回203错误码。通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated))接口解除禁用设备通话能力后，可解除冲突。
 
 需要权限： ohos.permission.ENTERPRISE_MANAGE_TELEPHONY
 
@@ -512,7 +521,7 @@ try {
 
 #### telephonyManager.getIncomingCallPolicyNumbers
 
-getIncomingCallPolicyNumbers(admin: Want, policy: adminManager.Policy): Array<string>
+getIncomingCallPolicyNumbers(admin: Want | null, policy: adminManager.Policy): Array<string>
 
 获取通话呼入的允许或禁用名单。
 
@@ -528,7 +537,7 @@ getIncomingCallPolicyNumbers(admin: Want, policy: adminManager.Policy): Array<st
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，API版本26.0.0之前，传入Want时查询对应企业设备管理应用设置的策略。从API版本26.0.0开始，新增支持传入null时查询实际生效的策略。 |
 | policy | [adminManager.Policy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-adminmanager#policy20) | 是 | 允许或禁用名单策略。BLOCK_LIST为禁用名单，TRUST_LIST为允许名单。 |
 
 返回值：

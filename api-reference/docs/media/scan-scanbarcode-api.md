@@ -2,15 +2,17 @@
 title: "scanBarcode (默认界面扫码)"
 upstream_id: "harmonyos-references/scan-scanbarcode-api"
 catalog: "harmonyos-references"
-content_hash: "b997e48c56aa"
-synced_at: "2026-07-09T01:00:49.229496"
+content_hash: "006026f88c85"
+synced_at: "2026-07-28T16:52:05.841480"
 ---
 
 # scanBarcode (默认界面扫码)
 
-本模块提供默认界面扫码能力。
+#### 模块概述
 
-为了方便开发者接入，我们提供了详细的样例工程供参考，推荐参考[示例工程](https://gitcode.com/HarmonyOS_Samples/scankit-samplecode-clientdemo-arkts)接入。
+scanBarcode模块提供系统级体验一致的扫码界面，包含相机预览流，相册扫码入口，暗光环境闪光灯开启提示。Scan Kit默认界面扫码对系统相机权限进行了预授权且调用期间处于安全访问状态，无需开发者再次申请相机权限。
+
+为便于开发者快速上手，建议参考官方提供的[示例工程](https://gitcode.com/HarmonyOS_Samples/scankit-samplecode-clientdemo-arkts)。
 
 起始版本： 4.0.0(10)
 
@@ -32,12 +34,12 @@ import { scanBarcode } from '@kit.ScanKit';
 
 | **名称** | **类型** | **只读** | **可选** | **说明** |
 | --- | --- | --- | --- | --- |
-| scanType | scanCore.[ScanType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-scancore#scantype) | 否 | 否 | 码类型。 **元服务API：** 从版本4.1.0(11)开始，该接口支持在元服务中使用。 |
-| originalValue | string | 否 | 否 | 码识别内容结果。 **元服务API：** 从版本4.1.0(11)开始，该接口支持在元服务中使用。 |
+| scanType | scanCore.[ScanType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-scancore#scantype) | 否 | 否 | 码类型。 **元服务API：** 从API版本4.1.0(11)开始，该接口支持在元服务中使用。 |
+| originalValue | string | 否 | 否 | 码识别内容结果。 **元服务API：** 从API版本4.1.0(11)开始，该接口支持在元服务中使用。 |
 | scanCodeRect | [ScanCodeRect](#scancoderect) | 否 | 是 | 码识别位置信息。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **起始版本：** 4.1.0(11) |
-| cornerPoints | Array | 否 | 是 | 码识别角点位置信息，返回QR Code四个角点。此参数仅图像识码接口[detectBarcode.decodeImage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-imagedecode#detectbarcodedecodeimage)返回。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **起始版本：** 5.0.0(12) |
-| isGS1 | boolean | 否 | 是 | 码图是否携带GS1（Global Standards 1）数据。 true表示码图携带GS1数据；false表示码图不携带GS1数据。默认值是false。 **元服务API：** 从版本6.0.2(22)开始，该接口支持在元服务中使用。 **起始版本：** 6.0.2(22) |
-| source | scanCore.[ScanSource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-scancore#scansource) | 否 | 是 | 扫码结果来源。此参数仅默认界面扫码接口返回。 **元服务API：** 从版本6.0.2(22)开始，该接口支持在元服务中使用。 **起始版本：** 6.0.2(22) |
+| cornerPoints | Array | 否 | 是 | 码识别角点位置信息，返回QR Code四个角点。此参数仅图像识码接口[decodeImage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-imagedecode#decodeimage)返回。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **起始版本：** 5.0.0(12) |
+| isGS1 | boolean | 否 | 是 | 码图是否携带GS1（Global Standards 1）数据。 true表示码图携带GS1数据；false表示码图不携带GS1数据。默认值是false。 **元服务API：** 从API版本6.0.2(22)开始，该接口支持在元服务中使用。 **起始版本：** 6.0.2(22) |
+| source | scanCore.[ScanSource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-scancore#scansource) | 否 | 是 | 扫码结果来源。此参数仅默认界面扫码接口返回。用于区分扫码结果来源于相机预览流还是相册图片，以便进行不同的业务处理。 **元服务API：** 从API版本6.0.2(22)开始，该接口支持在元服务中使用。 **起始版本：** 6.0.2(22) |
 
 #### ScanCodeRect
 
@@ -79,11 +81,11 @@ import { scanBarcode } from '@kit.ScanKit';
 
 #### ScanOptions
 
-扫码、识码参数。
+扫码配置参数。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-元服务API： 从版本4.1.0(11)开始，该接口支持在元服务中使用。
+元服务API： 从API版本4.1.0(11)开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Scan.ScanBarcode
 
@@ -91,9 +93,9 @@ import { scanBarcode } from '@kit.ScanKit';
 
 | **名称** | **类型** | **只读** | **可选** | **说明** |
 | --- | --- | --- | --- | --- |
-| scanTypes | Array | 否 | 是 | 设置扫码类型，默认扫码ALL（全部码类型）。 从6.1.0(23)版本开始，默认界面扫码的标题支持根据此参数进行动态显示。 对于6.1.0(23)之前版本，标题统一显示为“扫描二维码/条形码”。 对于6.1.0(23)及之后版本： - scanTypes为ALL、FORMAT_UNKNOWN，或同时包含条形码和二维码类型，标题显示为“扫描二维码/条形码”。 - scanTypes未设置，标题显示为“扫描二维码/条形码”。 - scanTypes仅包含条形码类型，标题显示为“扫描条形码”。 - scanTypes仅包含二维码类型，标题显示为“扫描二维码”。 |
-| enableMultiMode | boolean | 否 | 是 | 是否开启多码识别，默认false。 - true：多码识别。 - false：单码识别。 |
-| enableAlbum | boolean | 否 | 是 | 是否开启相册，默认true。 - true：开启相册扫码。 - false：关闭相册扫码。 此参数只控制默认界面扫码能力中的相册识码且相册识码只支持单码识别。 |
+| scanTypes | Array | 否 | 是 | 设置扫码类型。 **默认值：** ALL（全部码类型）。 从API版本6.1.0(23)开始，默认界面扫码的标题支持根据此参数进行动态显示。 在API版本6.1.0(23)之前，标题统一显示为“扫描二维码/条形码”。 在API版本6.1.0(23)及之后： - scanTypes为ALL、FORMAT_UNKNOWN，或同时包含条形码和二维码类型，标题显示为“扫描二维码/条形码”。 - scanTypes未设置，标题显示为“扫描二维码/条形码”。 - scanTypes仅包含条形码类型，标题显示为“扫描条形码”。 - scanTypes仅包含二维码类型，标题显示为“扫描二维码”。 |
+| enableMultiMode | boolean | 否 | 是 | 是否开启多码识别。 **默认值：** false。 - true：多码识别。 - false：单码识别。 |
+| enableAlbum | boolean | 否 | 是 | 是否开启相册。 **默认值：** true。 - true：开启相册扫码。 - false：关闭相册扫码。 此参数只控制默认界面扫码能力中的相册识码且相册识码只支持单码识别。 |
 
 示例：
 
@@ -121,7 +123,7 @@ function loadPage(uiContext: UIContext) {
 }
 ```
 
-#### scanBarcode.startScanForResult
+#### startScanForResult
 
 startScanForResult(context: common.Context, options?: ScanOptions): Promise<ScanResult>
 
@@ -129,11 +131,11 @@ startScanForResult(context: common.Context, options?: ScanOptions): Promise<Scan
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-元服务API： 从版本4.1.0(11)开始，该接口支持在元服务中使用。
+元服务API： 从API版本4.1.0(11)开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Scan.ScanBarcode
 
-设备行为差异： 对于6.0.2(22)及之前版本，该接口在Phone、Tablet中可正常调用。对于6.1.0(23)及之后版本，该接口在Phone、Tablet、带后置相机的Wearable中可正常调用，在不带后置相机的Wearable中无响应。可以通过[cameraManager.getSupportedCameras](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-cameramanager#getsupportedcameras)接口查询是否带后置相机。
+设备行为差异： 在API版本6.0.2(22)及之前，该接口在Phone、Tablet中可正常调用。在API版本6.1.0(23)及之后，该接口在Phone、Tablet、带后置相机的Wearable中可正常调用，在不带后置相机的Wearable中无响应。可以通过[getSupportedCameras](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-cameramanager#getsupportedcameras)接口查询是否带后置相机。
 
 起始版本： 4.1.0(11)
 
@@ -142,7 +144,7 @@ startScanForResult(context: common.Context, options?: ScanOptions): Promise<Scan
 | **参数名** | **类型** | **必填** | **说明** |
 | --- | --- | --- | --- |
 | context | [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-common#context) | 是 | 应用上下文。 |
-| options | [ScanOptions](#scanoptions) | 否 | 启动扫码参数。 |
+| options | [ScanOptions](#scanoptions) | 否 | 扫码配置参数。 **默认值：** 参考ScanOptions的默认值。 |
 
 返回值：
 
@@ -152,13 +154,13 @@ startScanForResult(context: common.Context, options?: ScanOptions): Promise<Scan
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scan)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scan)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1. Incorrect parameter types; 2. Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 1000500001 | Internal error. |
-| 1000500002 | The user canceled the barcode scanning. |
+| 1000500002 | The user canceled the barcode scanning. 适用版本：5.0.0(12)+ |
 
 示例：
 
@@ -186,7 +188,7 @@ function loadPage(uiContext: UIContext) {
 }
 ```
 
-#### scanBarcode.startScanForResult
+#### startScanForResult
 
 startScanForResult(context: common.Context, callback: AsyncCallback<ScanResult>): void
 
@@ -194,11 +196,11 @@ startScanForResult(context: common.Context, callback: AsyncCallback<ScanResult>)
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-元服务API： 从版本4.1.0(11)开始，该接口支持在元服务中使用。
+元服务API： 从API版本4.1.0(11)开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Scan.ScanBarcode
 
-设备行为差异： 对于6.0.2(22)及之前版本，该接口在Phone、Tablet中可正常调用。对于6.1.0(23)及之后版本，该接口在Phone、Tablet、带后置相机的Wearable中可正常调用，在不带后置相机的Wearable中无响应。可以通过[cameraManager.getSupportedCameras](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-cameramanager#getsupportedcameras)接口查询是否带后置相机。
+设备行为差异： 在API版本6.0.2(22)及之前，该接口在Phone、Tablet中可正常调用。在API版本6.1.0(23)及之后，该接口在Phone、Tablet、带后置相机的Wearable中可正常调用，在不带后置相机的Wearable中无响应。可以通过[getSupportedCameras](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-cameramanager#getsupportedcameras)接口查询是否带后置相机。
 
 起始版本： 4.1.0(11)
 
@@ -211,13 +213,13 @@ startScanForResult(context: common.Context, callback: AsyncCallback<ScanResult>)
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scan)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scan)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1. Incorrect parameter types; 2. Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 1000500001 | Internal error. |
-| 1000500002 | The user canceled the barcode scanning. |
+| 1000500002 | The user canceled the barcode scanning. 适用版本：5.0.0(12)+ |
 
 示例：
 
@@ -246,7 +248,7 @@ function loadPage(uiContext: UIContext) {
 }
 ```
 
-#### scanBarcode.startScanForResult
+#### startScanForResult
 
 startScanForResult(context: common.Context, options: ScanOptions, callback: AsyncCallback<ScanResult>): void
 
@@ -254,11 +256,11 @@ startScanForResult(context: common.Context, options: ScanOptions, callback: Asyn
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-元服务API： 从版本4.1.0(11)开始，该接口支持在元服务中使用。
+元服务API： 从API版本4.1.0(11)开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Scan.ScanBarcode
 
-设备行为差异： 对于6.0.2(22)及之前版本，该接口在Phone、Tablet中可正常调用。对于6.1.0(23)及之后版本，该接口在Phone、Tablet、带后置相机的Wearable中可正常调用，在不带后置相机的Wearable中无响应。可以通过[cameraManager.getSupportedCameras](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-cameramanager#getsupportedcameras)接口查询是否带后置相机。
+设备行为差异： 在API版本6.0.2(22)及之前，该接口在Phone、Tablet中可正常调用。在API版本6.1.0(23)及之后，该接口在Phone、Tablet、带后置相机的Wearable中可正常调用，在不带后置相机的Wearable中无响应。可以通过[getSupportedCameras](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-cameramanager#getsupportedcameras)接口查询是否带后置相机。
 
 起始版本： 4.1.0(11)
 
@@ -267,18 +269,18 @@ startScanForResult(context: common.Context, options: ScanOptions, callback: Asyn
 | **参数名** | **类型** | **必填** | **说明** |
 | --- | --- | --- | --- |
 | context | [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-common#context) | 是 | 应用上下文。 |
-| options | [ScanOptions](#scanoptions) | 是 | 启动扫码参数。 |
+| options | [ScanOptions](#scanoptions) | 是 | 扫码配置参数。 |
 | callback | AsyncCallback | 是 | 回调函数。当扫码返回成功，err为undefined，data为获取到的扫码结果对象[ScanResult](#scanresult)；否则为错误对象。 |
 
 错误码
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scan)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scan)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1. Incorrect parameter types; 2. Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 1000500001 | Internal error. |
-| 1000500002 | The user canceled the barcode scanning. |
+| 1000500002 | The user canceled the barcode scanning. 适用版本：5.0.0(12)+ |
 
 示例：
 
@@ -310,19 +312,19 @@ function loadPage(uiContext: UIContext) {
 }
 ```
 
-#### scanBarcode.startScan(deprecated)
+#### startScan(deprecated)
 
 startScan(options?: ScanOptions): Promise<ScanResult>
 
 通过配置参数调用默认界面扫码，返回扫码结果。使用Promise异步回调。
 
-废弃说明： 从版本4.1.0(11)开始废弃，建议使用[startScanForResult](#scanbarcodestartscanforresult)替代。
+废弃说明： 从API版本4.1.0(11)开始废弃，建议使用[startScanForResult](#startscanforresult)替代。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.Multimedia.Scan.ScanBarcode
 
-设备行为差异： 对于6.0.2(22)及之前版本，该接口在Phone、Tablet中可正常调用。对于6.1.0(23)及之后版本，该接口在Phone、Tablet、带后置相机的Wearable中可正常调用，在不带后置相机的Wearable中无响应。可以通过[cameraManager.getSupportedCameras](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-cameramanager#getsupportedcameras)接口查询是否带后置相机。
+设备行为差异： 在API版本6.0.2(22)及之前，该接口在Phone、Tablet中可正常调用。在API版本6.1.0(23)及之后，该接口在Phone、Tablet、带后置相机的Wearable中可正常调用，在不带后置相机的Wearable中无响应。可以通过[getSupportedCameras](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-cameramanager#getsupportedcameras)接口查询是否带后置相机。
 
 起始版本： 4.0.0(10)
 
@@ -330,7 +332,7 @@ startScan(options?: ScanOptions): Promise<ScanResult>
 
 | **参数名** | **类型** | **必填** | **说明** |
 | --- | --- | --- | --- |
-| options | [ScanOptions](#scanoptions) | 否 | 启动扫码参数。 |
+| options | [ScanOptions](#scanoptions) | 否 | 启动扫码配置参数。 **默认值：** 参考ScanOptions的默认值。 |
 
 返回值：
 
@@ -340,7 +342,7 @@ startScan(options?: ScanOptions): Promise<ScanResult>
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scan)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -369,19 +371,19 @@ try {
 }
 ```
 
-#### scanBarcode.startScan(deprecated)
+#### startScan(deprecated)
 
 startScan(callback: AsyncCallback<ScanResult>): void
 
 启动默认界面扫码，返回扫码结果。使用callback异步回调。
 
-废弃说明： 从版本4.1.0(11)开始废弃，建议使用[startScanForResult](#scanbarcodestartscanforresult-1)替代。
+废弃说明： 从API版本4.1.0(11)开始废弃，建议使用[startScanForResult](#startscanforresult-1)替代。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.Multimedia.Scan.ScanBarcode
 
-设备行为差异： 对于6.0.2(22)及之前版本，该接口在Phone、Tablet中可正常调用。对于6.1.0(23)及之后版本，该接口在Phone、Tablet、带后置相机的Wearable中可正常调用，在不带后置相机的Wearable中无响应。可以通过[cameraManager.getSupportedCameras](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-cameramanager#getsupportedcameras)接口查询是否带后置相机。
+设备行为差异： 在API版本6.0.2(22)及之前，该接口在Phone、Tablet中可正常调用。在API版本6.1.0(23)及之后，该接口在Phone、Tablet、带后置相机的Wearable中可正常调用，在不带后置相机的Wearable中无响应。可以通过[getSupportedCameras](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-cameramanager#getsupportedcameras)接口查询是否带后置相机。
 
 起始版本： 4.0.0(10)
 
@@ -393,11 +395,11 @@ startScan(callback: AsyncCallback<ScanResult>): void
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scan)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1. Incorrect parameter types; 2. Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 
 示例：
 
@@ -422,19 +424,19 @@ try {
 }
 ```
 
-#### scanBarcode.startScan(deprecated)
+#### startScan(deprecated)
 
 startScan(options: ScanOptions, callback: AsyncCallback<ScanResult>): void
 
 通过配置参数调用默认界面扫码，返回扫码结果。使用callback异步回调。
 
-废弃说明： 从版本4.1.0(11)开始废弃，建议使用[startScanForResult](#scanbarcodestartscanforresult-2)替代。
+废弃说明： 从API版本4.1.0(11)开始废弃，建议使用[startScanForResult](#startscanforresult-2)替代。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.Multimedia.Scan.ScanBarcode
 
-设备行为差异： 对于6.0.2(22)及之前版本，该接口在Phone、Tablet中可正常调用。对于6.1.0(23)及之后版本，该接口在Phone、Tablet、带后置相机的Wearable中可正常调用，在不带后置相机的Wearable中无响应。可以通过[cameraManager.getSupportedCameras](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-cameramanager#getsupportedcameras)接口查询是否带后置相机。
+设备行为差异： 在API版本6.0.2(22)及之前，该接口在Phone、Tablet中可正常调用。在API版本6.1.0(23)及之后，该接口在Phone、Tablet、带后置相机的Wearable中可正常调用，在不带后置相机的Wearable中无响应。可以通过[getSupportedCameras](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-cameramanager#getsupportedcameras)接口查询是否带后置相机。
 
 起始版本： 4.0.0(10)
 
@@ -442,16 +444,16 @@ startScan(options: ScanOptions, callback: AsyncCallback<ScanResult>): void
 
 | **参数名** | **类型** | **必填** | **说明** |
 | --- | --- | --- | --- |
-| options | [ScanOptions](#scanoptions) | 是 | 启动扫码参数。 |
+| options | [ScanOptions](#scanoptions) | 是 | 扫码配置参数。 |
 | callback | AsyncCallback | 是 | 回调函数，当扫码返回成功，err为undefined，data为获取到的扫码结果对象[ScanResult](#scanresult)；否则为错误对象。 |
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scan)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1. Incorrect parameter types; 2. Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 
 示例：
 

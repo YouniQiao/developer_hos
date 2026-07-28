@@ -2,8 +2,8 @@
 title: "Interfaces (其他)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-i"
 catalog: "harmonyos-references"
-content_hash: "df1821aa1058"
-synced_at: "2026-07-09T01:00:47.028243"
+content_hash: "d4296c76ab60"
+synced_at: "2026-07-28T16:52:04.030734"
 ---
 
 # Interfaces (其他)
@@ -170,6 +170,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 | uri | string | 否 | 否 | 媒体文件资源uri。 |
 | mediaType | [PhotoType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#phototype) | 否 | 否 | 媒体资产的类型（图片/视频）。 |
 | albumUri | string | 否 | 否 | 媒体资产（图片/视频）所属相册的uri。 |
+| isFavorite | boolean | 否 | 否 | 表示媒体资产（图片/视频）的收藏状态。true表示资产已收藏，false表示资产未收藏。 **起始版本：** 26.0.0 |
 
 #### PhotoAssetChangeData20+
 

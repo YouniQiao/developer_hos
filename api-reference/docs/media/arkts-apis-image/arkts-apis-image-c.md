@@ -2,8 +2,8 @@
 title: "Constants"
 upstream_id: "harmonyos-references/arkts-apis-image-c"
 catalog: "harmonyos-references"
-content_hash: "b3831de85029"
-synced_at: "2026-07-09T01:00:30.954921"
+content_hash: "5e9ec918b4a9"
+synced_at: "2026-07-28T16:51:49.360835"
 ---
 
 # Constants
@@ -56,11 +56,11 @@ async function SetXmageWatermarkMode(imageSourceObj : image.ImageSource) {
   let makerNoteHuaweiMetadata = image.MakerNoteHuaweiMetadata.createInstance();
   // 设置XMAGE水印模式为底部中央。
   makerNoteHuaweiMetadata.xmageWatermarkMode = image.XMAGE_WATERMARK_MODE_AT_THE_BOTTOM;
-  console.info('makerNoteHuaweiMetadata.xmageWatermarkMode:', makerNoteHuaweiMetadata.xmageWatermarkMode);
+  console.info(`Succeeded in setting the XMAGE watermark mode. Mode: ${makerNoteHuaweiMetadata.xmageWatermarkMode}.`);
   await imageSourceObj.writeImageMetadata({ makerNoteHuaweiMetadata: makerNoteHuaweiMetadata }).then(() => {
-    console.info(`SetXmageWatermarkMode success.`);
+    console.info(`Succeeded in writing image metadata.`);
   }).catch((error: BusinessError) => {
-    console.error(`WriteImageMetadata failed error.code is ${error.code}, error.message is ${error.message}`);
+    console.error(`Failed to write image metadata. Code: ${error.code}, message: ${error.message}.`);
   });
 }
 ```
@@ -74,11 +74,11 @@ async function SetCaptureMode(imageSourceObj : image.ImageSource) {
   let makerNoteHuaweiMetadata = image.MakerNoteHuaweiMetadata.createInstance();
   // 设置拍摄模式为专业模式。
   makerNoteHuaweiMetadata.captureMode = image.CAPTURE_MODE_PROFESSIONAL;
-  console.info('makerNoteHuaweiMetadata.captureMode:', makerNoteHuaweiMetadata.captureMode);
+  console.info(`Succeeded in setting the capture mode. Mode: ${makerNoteHuaweiMetadata.captureMode}.`);
   await imageSourceObj.writeImageMetadata({ makerNoteHuaweiMetadata: makerNoteHuaweiMetadata }).then(() => {
-    console.info(`SetCaptureMode success.`);
+    console.info(`Succeeded in writing image metadata.`);
   }).catch((error: BusinessError) => {
-    console.error(`WriteImageMetadata failed error.code is ${error.code}, error.message is ${error.message}`);
+    console.error(`Failed to write image metadata. Code: ${error.code}, message: ${error.message}.`);
   });
 }
 ```

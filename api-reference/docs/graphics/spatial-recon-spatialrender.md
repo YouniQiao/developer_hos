@@ -2,8 +2,8 @@
 title: "spatialRender"
 upstream_id: "harmonyos-references/spatial-recon-spatialrender"
 catalog: "harmonyos-references"
-content_hash: "ac0ad438ee85"
-synced_at: "2026-07-09T01:01:08.960382"
+content_hash: "d5d3688ca4f6"
+synced_at: "2026-07-28T16:52:25.969453"
 ---
 
 # spatialRender
@@ -51,6 +51,236 @@ if (renderContext != null) {
     gsNode.scale = { x: 1.5, y: 1.5, z: 1.5 };
     // 设置节点可见性
     gsNode.visible = true;
+  });
+}
+```
+
+#### TiledGSNode
+
+表示一个分块3DGS（Tiled 3D Gaussian Splatting）渲染对象，专门用于加载和渲染大规模的3DGS场景。TiledGSNode类继承自[Node](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-nodes#node)，使用方法请参考Node。
+
+#### [h2]setCamera
+
+setCamera(camera: Camera): void
+
+设置驱动分块选择的相机。
+
+系统能力：SystemCapability.Graphics.SpatialRender
+
+模型约束： 此模块的接口仅可在Stage模型下使用。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| camera | [Camera](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-nodes#camera) | 是 | 驱动分块选择的相机。默认使用渲染当前场景的相机，可以设置其他的相机。 |
+
+示例：
+
+```
+import { Scene, RenderContext, Camera, Node } from '@kit.ArkGraphics3D';
+import { spatialRender } from '@kit.SpatialReconKit';
+
+// 获取默认的渲染上下文
+let renderContext: RenderContext | null = Scene.getDefaultRenderContext();
+
+if (renderContext != null) {
+  renderContext.loadPlugin(spatialRender.GSPlugin.PLUGIN_ID);
+  // 加载场景
+  Scene.load().then(async (scene: Scene) => {
+    if (!scene.root) {
+      return;
+    }
+    let root: Node = scene.root as Node;
+
+    // 创建相机
+    let srf = scene.getResourceFactory();
+    let camera: Camera = await srf.createCamera({ name: "Camera1", path: root.path });
+    camera.clearColor = { r: 202/255.0, g: 233/255.0, b: 246/255.0, a: 1.0 };
+    camera.nearPlane = 0.5;
+    camera.farPlane = 10000.0;
+    let PI = 3.141592653;
+    let DEG2RAD = PI * 2.0 / 360.0;
+    camera.fov = 60.0 * DEG2RAD;
+    camera.enabled = true;
+
+    // 配置分块3DGS导入参数
+    let params: spatialRender.TiledGSImportSettings = {
+      uri: "file:///data/storage/el2/base/files/uav-lod/sanyapo.scene.json"
+    };
+
+    // 加载分块3DGS模型
+    let promise = spatialRender.GSPlugin.loadTiledGSNode(scene, params, root);
+    promise.then((tiledGSNode: spatialRender.TiledGSNode) => {
+      if (!camera) {
+        return;
+      }
+      // 设置驱动分块选择的相机
+      tiledGSNode.setCamera(camera);
+      // 设置节点属性
+      tiledGSNode.position = { x: 0, y: 0, z: 0 };
+      tiledGSNode.scale = { x: 1, y: 1, z: 1 };
+      tiledGSNode.visible = true;
+    });
+  });
+}
+```
+
+#### [h2]setTileRequestCallback
+
+setTileRequestCallback(callback: GSTileRequestCallback | null): void
+
+设置瓦片请求回调函数，当渲染器需要应用程序提供瓦片数据时，会调用该回调。该回调接收应用程序应加载的瓦片（文件）列表。使用callback异步回调。
+
+模型约束： 此模块的接口仅可在Stage模型下使用。
+
+系统能力：SystemCapability.Graphics.SpatialRender
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| callback | [GSTileRequestCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/spatial-recon-spatialrender#gstilerequestcallback) | 是 | 回调函数。当渲染器请求瓦片时触发成功，返回渲染器向应用请求的[GSTile](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/spatial-recon-spatialrender#gstile)瓦片列表；否则为错误对象。 |
+
+示例：
+
+```
+import { Scene, RenderContext, Camera, Node } from '@kit.ArkGraphics3D';
+import { spatialRender } from '@kit.SpatialReconKit';
+
+// 获取默认的渲染上下文
+let renderContext: RenderContext | null = Scene.getDefaultRenderContext();
+
+if (renderContext != null) {
+  renderContext.loadPlugin(spatialRender.GSPlugin.PLUGIN_ID);
+  // 加载场景
+  Scene.load().then(async (scene: Scene) => {
+    if (!scene.root) {
+      return;
+    }
+    let root: Node = scene.root as Node;
+
+    // 创建相机
+    let srf = scene.getResourceFactory();
+    let camera: Camera = await srf.createCamera({ name: "Camera1", path: root.path });
+    camera.clearColor = { r: 202/255.0, g: 233/255.0, b: 246/255.0, a: 1.0 };
+    camera.nearPlane = 0.5;
+    camera.farPlane = 10000.0;
+    let PI = 3.141592653;
+    let DEG2RAD = PI * 2.0 / 360.0;
+    camera.fov = 60.0 * DEG2RAD;
+    camera.enabled = true;
+
+    // 配置分块3DGS导入参数
+    let params: spatialRender.TiledGSImportSettings = {
+      uri: "file:///data/storage/el2/base/files/uav-lod/sanyapo.scene.json"
+    };
+
+    // 加载分块3DGS模型
+    let promise = spatialRender.GSPlugin.loadTiledGSNode(scene, params, root);
+    promise.then((tiledGSNode: spatialRender.TiledGSNode) => {
+      if (!camera) {
+        return;
+      }
+      // 设置驱动分块选择的相机
+      tiledGSNode.setCamera(camera);
+      // 设置节点属性
+      tiledGSNode.position = { x: 0, y: 0, z: 0 };
+      tiledGSNode.scale = { x: 1, y: 1, z: 1 };
+      tiledGSNode.visible = true;
+      // 向渲染器注册瓦片请求回调
+      tiledGSNode.setTileRequestCallback((tiles: spatialRender.GSTile[]) => {
+        // 获取并保存远端瓦片数据，然后通知渲染器瓦片准备就绪
+        if (!tiles || tiles.length <= 0) {
+          return;
+        }
+      });
+    });
+  });
+}
+```
+
+#### [h2]notifyTileReady
+
+notifyTileReady(tile: GSTile): void
+
+通知渲染器指定的瓦片现在可以加载。[tile.uri](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/spatial-recon-spatialrender#gstile)相对路径指向的文件已可访问，并可被渲染器读取。如果渲染器不再需要该瓦片（例如在获取完成前相机已移开），该调用将不执行任何操作。
+
+模型约束： 此模块的接口仅可在Stage模型下使用。
+
+系统能力：SystemCapability.Graphics.SpatialRender
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| tile | [GSTile](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/spatial-recon-spatialrender#gstile) | 是 | 数据可用的瓦片。 |
+
+示例：
+
+```
+import { Scene, RenderContext, Camera, Node } from '@kit.ArkGraphics3D';
+import { spatialRender } from '@kit.SpatialReconKit';
+
+// 获取默认的渲染上下文
+let renderContext: RenderContext | null = Scene.getDefaultRenderContext();
+
+if (renderContext != null) {
+  renderContext.loadPlugin(spatialRender.GSPlugin.PLUGIN_ID);
+  // 加载场景
+  Scene.load().then(async (scene: Scene) => {
+    if (!scene.root) {
+      return;
+    }
+    let root: Node = scene.root as Node;
+
+    // 创建相机
+    let srf = scene.getResourceFactory();
+    let camera: Camera = await srf.createCamera({ name: "Camera1", path: root.path });
+    camera.clearColor = { r: 202/255.0, g: 233/255.0, b: 246/255.0, a: 1.0 };
+    camera.nearPlane = 0.5;
+    camera.farPlane = 10000.0;
+    let PI = 3.141592653;
+    let DEG2RAD = PI * 2.0 / 360.0;
+    camera.fov = 60.0 * DEG2RAD;
+    camera.enabled = true;
+
+    // 配置分块3DGS导入参数
+    let params: spatialRender.TiledGSImportSettings = {
+      uri: "file:///data/storage/el2/base/files/uav-lod/sanyapo.scene.json"
+    };
+
+    // 加载分块3DGS模型
+    let promise = spatialRender.GSPlugin.loadTiledGSNode(scene, params, root);
+    promise.then((tiledGSNode: spatialRender.TiledGSNode) => {
+      if (!camera) {
+        return;
+      }
+      // 设置驱动分块选择的相机
+      tiledGSNode.setCamera(camera);
+      // 设置节点属性
+      tiledGSNode.position = { x: 0, y: 0, z: 0 };
+      tiledGSNode.scale = { x: 1, y: 1, z: 1 };
+      tiledGSNode.visible = true;
+      // 向渲染器注册瓦片请求回调
+      tiledGSNode.setTileRequestCallback((tiles: spatialRender.GSTile[]) => {
+        if (!tiles || tiles.length <= 0) {
+          return;
+        }
+        for (const tile of tiles) {
+          // 向远端请求获取瓦片数据，并持久化保存至uri指定相对路径
+          // ......
+          // 通知渲染器某个瓦片数据准备就绪
+          tiledGSNode..notifyTileReady(tile);
+        }
+      });
+    });
   });
 }
 ```
@@ -143,9 +373,57 @@ if (renderContext != null) {
 }
 ```
 
+#### [h2]loadTiledGSNode
+
+static loadTiledGSNode(scene: Scene, params: TiledGSImportSettings, parent?: Node): Promise<TiledGSNode>
+
+加载分块3DGS模型，使用Promise异步回调。
+
+系统能力：SystemCapability.Graphics.SpatialRender
+
+模型约束： 此模块的接口仅可在Stage模型下使用。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| scene | [Scene](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene) | 是 | 指定在应用界面想要显示的场景，是ArkGraphics 3D基础模块。建议通过调用[Scene.load](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene#load)来获取。 |
+| params | [TiledGSImportSettings](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/spatial-recon-spatialrender#tiledgsimportsettings) | 是 | 加载分块3DGS模型的设置。 |
+| parent | [Node](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-nodes#node) | 否 | 预期挂载分块3DGS模型的节点。如果不传，加载的分块3DGS模型会被挂载到Scene的根节点上。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，返回分块3DGS模型对应的TiledGSNode。 |
+
+示例：
+
+```
+import { Scene, RenderContext } from '@kit.ArkGraphics3D';
+import { spatialRender } from '@kit.SpatialReconKit';
+
+// 获取默认的渲染上下文
+let renderContext: RenderContext | null = Scene.getDefaultRenderContext();
+
+if (renderContext != null) {
+  // 加载空间重建插件GSPlugin
+  renderContext.loadPlugin(spatialRender.GSPlugin.PLUGIN_ID);
+  // 加载场景
+  let scene = Scene.load().then(async (scene: Scene) => {
+    // 设置分块3DGS模型清单文件的URI路径，根据实际情况修改
+    let uri = "file:///data/storage/el2/base/files/uav-lod/sanyapo.scene.json";
+    // 通过GSPlugin加载指定的分块3DGS节点，并将其添加到场景根节点下
+    let tiledGSNode: spatialRender.TiledGSNode = await spatialRender.GSPlugin.loadTiledGSNode(scene, { uri }, scene.root);
+  });
+}
+```
+
 #### GSImportSettings
 
-GSImportSettings类封装了加载3DGS模型的设置，包括模型路径和数据在文件中的偏移量，帮助开发者加载3DGS模型。
+GSImportSettings类封装了加载3DGS模型的设置，包括模型路径和数据在文件中的偏移量。
 
 系统能力：SystemCapability.Graphics.SpatialRender
 
@@ -182,6 +460,44 @@ if (renderContext != null) {
 }
 ```
 
+#### TiledGSImportSettings
+
+TiledGSImportSettings类封装了加载分块3DGS模型的设置，包含清单文件路径。
+
+系统能力：SystemCapability.Graphics.SpatialRender
+
+模型约束： 此模块的接口仅可在Stage模型下使用。
+
+起始版本： 26.0.0
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| uri | string | 否 | 否 | 分块3DGS模型清单文件（JSON）的路径，用于描述瓦片层级结构。传入空字符串将导致加载失败。 |
+
+示例：
+
+```
+import { Scene, RenderContext } from '@kit.ArkGraphics3D';
+import { spatialRender } from '@kit.SpatialReconKit';
+
+// 获取默认的渲染上下文
+let renderContext: RenderContext | null = Scene.getDefaultRenderContext();
+
+if (renderContext != null) {
+  // 加载空间重建插件GSPlugin
+  renderContext.loadPlugin(spatialRender.GSPlugin.PLUGIN_ID);
+  // 加载场景
+  let scene = Scene.load().then(async (scene: Scene) => {
+    // 设置分块3DGS模型清单文件的URI路径，根据实际情况修改
+    let uri = "file:///data/storage/el2/base/files/uav-lod/sanyapo.scene.json";
+    // 配置导入参数
+    let setting: spatialRender.TiledGSImportSettings = { uri: uri };
+    // 通过GSPlugin加载指定的分块3DGS节点，并添加到场景根节点下
+    let tiledGSNode: spatialRender.TiledGSNode = await spatialRender.GSPlugin.loadTiledGSNode(scene, setting, scene.root);
+  });
+}
+```
+
 #### RetroEffectParams
 
 RetroEffect参数，该类型为字符串枚举，该枚举值可在[Effect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-resources#effect21)的[getPropertyValue](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-resources#getpropertyvalue23)和[setPropertyValue](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-resources#setpropertyvalue23)方法中使用，用于声明属性的名称，以获取属性的当前值或更新属性的值。
@@ -192,7 +508,7 @@ RetroEffect参数，该类型为字符串枚举，该枚举值可在[Effect](htt
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| COLOR_NUM | 'colorNum' | RetroEffect中colorNum属性的名称。 属性对应取值类型为number。该属性表示使用多少种颜色来作为[颜色抖动](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/spatial-recon-glossary#颜色抖动)。通常属性值越大图像质量越高、值越小复古风格越重。属性取值范围大于0，默认值8。 |
+| COLOR_NUM | 'colorNum' | RetroEffect中colorNum属性的名称。 属性对应取值类型为number。该属性表示使用多少种颜色来作为颜色抖动。通常属性值越大图像质量越高、值越小复古风格越重。属性取值范围大于0，默认值8。 |
 | PIXEL_SIZE | 'pixelSize' | RetroEffect中pixelSize属性的名称。 属性对应取值类型为number。该属性表示下采样的程度。越大越重。若该属性取值为1，则不会进行下采样。属性取值范围大于等于1，默认值4。 |
 | BLEND_ENABLED | 'blendEnabled' | RetroEffect中blendEnabled属性的名称。 属性对应取值类型为boolean。该属性表示是否把处理后的图片与原始图片融合，属性值设置为true会把处理后的图片与原始图片融合，设置为false不会做融合。由于复古风格会造成图像的亮度下降、色彩偏移，将该属性值设为true用以维持图像的亮度与色彩。属性取值默认为true。 |
 | CURVE | 'curve' | RetroEffect中curve属性的名称。 属性对应取值类型为number。该属性表示显像管电视屏幕带有的曲率。复古风格会模拟显像管电视的显示特征。该属性代表显像管电视屏幕带有的曲率，属性取值越大曲率越大。属性取值范围[0, 1]，默认值0.25。 |
@@ -238,7 +554,7 @@ RetroEffect接口封装了复古风格的效果参数，可实现自定义的复
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| colorNum | number | 否 | 否 | 使用多少种颜色来作为[颜色抖动](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/spatial-recon-glossary#颜色抖动)。通常值越大图像质量越高、值越小复古风格越重。取值范围大于0。默认值8。 |
+| colorNum | number | 否 | 否 | 使用多少种颜色来作为颜色抖动。通常值越大图像质量越高、值越小复古风格越重。取值范围大于0。默认值8。 |
 | pixelSize | number | 否 | 否 | 下采样的程度。越大越重。若为1，则不会进行下采样。取值范围大于等于1。默认值4。 |
 | blendEnabled | boolean | 否 | 否 | 是否把处理后的图片与原始图片融合，设置为true会把处理后的图片与原始图片融合，设置为false不会做融合。复古风格会造成图像的亮度下降、色彩偏移。设为true用以维持图像的亮度与色彩。默认值true。 |
 | curve | number | 否 | 否 | 显像管电视屏幕带有的曲率。复古风格会模拟显像管电视的显示特征， curve代表显像管电视屏幕带有的曲率，值越大曲率越大。取值范围[0, 1]。默认值0.25。 |
@@ -364,7 +680,7 @@ ObraDinnEffect参数，该类型为字符串枚举，该枚举值可在[Effect](
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| NOISE_STRENGTH | 'noiseStrength' | ObraDinnEffect中的noiseStrength属性的名称。 属性对应取值类型为number。该属性表示选择哪些像素用来[颜色抖动](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/spatial-recon-glossary#颜色抖动)。该属性可以起到平滑边缘的效果，加大噪声强度会导致边缘更模糊。属性取值范围[0, 1]，默认值0.3。 |
+| NOISE_STRENGTH | 'noiseStrength' | ObraDinnEffect中的noiseStrength属性的名称。 属性对应取值类型为number。该属性表示选择哪些像素用来颜色抖动。该属性可以起到平滑边缘的效果，加大噪声强度会导致边缘更模糊。属性取值范围[0, 1]，默认值0.3。 |
 | THRESHOLD | 'threshold' | ObraDinnEffect中的threshold属性的名称。 属性对应取值类型为number。该属性表示将像素分为前景颜色或后景颜色的阈值。该属性取值越高，图像整体的颜色会越接近后景颜色。属性值取值范围[0, 1]，默认值0.4。 |
 | FOREGROUND_COLOR | 'foregroundColor' | ObraDinnEffect中的foregroundColor属性的名称。 属性对应取值类型为[Color](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-types#color)。该属性表示前景颜色。 |
 | BACKGROUND_COLOR | 'backgroundColor' | ObraDinnEffect中的backgroundColor属性的名称。 属性对应取值类型为[Color](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-types#color)。该属性表示背景颜色。 |
@@ -410,7 +726,7 @@ ObraDinnEffect接口封装了bit（黑白点阵）风格的效果参数，可实
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| noiseStrength | number | 否 | 否 | 选择哪些像素用来[颜色抖动](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/spatial-recon-glossary#颜色抖动)。可以起到平滑边缘的效果。加大噪声强度会导致边缘更模糊。取值范围[0, 1]，默认值0.3。 |
+| noiseStrength | number | 否 | 否 | 选择哪些像素用来颜色抖动。可以起到平滑边缘的效果。加大噪声强度会导致边缘更模糊。取值范围[0, 1]，默认值0.3。 |
 | threshold | number | 否 | 否 | 把像素分为前景颜色或后景颜色的阈值。高于该阈值的像素会被处理为前景颜色。threshold越低，图像整体的颜色会越接近前景颜色。threshold越高，图像整体的颜色会越接近后景颜色。取值范围[0, 1]，默认值0.4。 |
 | foregroundColor | [Color](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-types#color) | 否 | 否 | 前景颜色。 |
 | backgroundColor | [Color](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-types#color) | 否 | 否 | 背景颜色。 |
@@ -530,6 +846,140 @@ if (renderContext != null) {
     let camera = await rf.createCamera({ name: "gsCam", path: "//gsCam" }, { renderingPipeline: RenderingPipelineType.FORWARD });
     // 将颜色编辑效果添加到摄像机的效果链中
     camera.effects.append(effect)
+  });
+}
+```
+
+#### GSTile
+
+3D高斯瓦片的描述符。一个GSTile对应清单文件中的一个.sog文件。
+
+模型约束： 此模块的接口仅可在Stage模型下使用。
+
+系统能力：SystemCapability.Graphics.SpatialRender
+
+起始版本： 26.0.0
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| uri | string | 否 | 否 | 包含3D高斯瓦片数据的.sog文件的Uri。 |
+
+示例：
+
+```
+import { Scene, RenderContext, Camera, Node } from '@kit.ArkGraphics3D';
+import { spatialRender } from '@kit.SpatialReconKit';
+
+// 获取默认的渲染上下文
+let renderContext: RenderContext | null = Scene.getDefaultRenderContext();
+
+if (renderContext != null) {
+  renderContext.loadPlugin(spatialRender.GSPlugin.PLUGIN_ID);
+  // 加载场景
+  Scene.load().then(async (scene: Scene) => {
+    if (!scene.root) {
+      return;
+    }
+    let root: Node = scene.root as Node;
+
+    // 创建相机
+    let srf = scene.getResourceFactory();
+    let camera: Camera = await srf.createCamera({ name: "Camer1", path: root.path });
+    camera.enabled = true;
+
+    // 配置分块3DGS导入参数
+    let params: spatialRender.TiledGSImportSettings = {
+      uri: "file:///data/storage/el2/base/files/uav-lod/sanyapo.scene.json"
+    };
+
+    // 加载分块3DGS模型
+    let promise = spatialRender.GSPlugin.loadTiledGSNode(scene, params, root);
+    promise.then((tiledGSNode: spatialRender.TiledGSNode) => {
+      if (!camera) {
+        return;
+      }
+      // 设置驱动分块选择的相机
+      tiledGSNode.setCamera(camera);
+      // 向渲染器注册瓦片请求回调
+      tiledGSNode.setTileRequestCallback((tiles: spatialRender.GSTile[]) => {
+        if (!tiles || tiles.length <= 0) {
+          return;
+        }
+        // 遍历请求的瓦片列表，获取对应uri
+        for (const tile of tiles) {
+          console.debug('tile uri=', tile.uri);
+        }
+      });
+    });
+  });
+}
+```
+
+#### GSTileRequestCallback
+
+type GSTileRequestCallback = (tiles: GSTile[]) => void
+
+回调函数，用于传递来自渲染器的瓦片数据请求。当驱动相机移动且渲染器需要加载更多瓦片时触发。
+
+模型约束： 此模块的接口仅可在Stage模型下使用。
+
+系统能力：SystemCapability.Graphics.SpatialRender
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| tiles | [GSTile](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/spatial-recon-spatialrender#gstile)[] | 是 | 渲染器向应用请求的瓦片列表。 |
+
+示例：
+
+```
+import { Scene, RenderContext, Camera, Node } from '@kit.ArkGraphics3D';
+import { spatialRender } from '@kit.SpatialReconKit';
+
+// 获取默认的渲染上下文
+let renderContext: RenderContext | null = Scene.getDefaultRenderContext();
+
+if (renderContext != null) {
+  renderContext.loadPlugin(spatialRender.GSPlugin.PLUGIN_ID);
+  // 加载场景
+  Scene.load().then(async (scene: Scene) => {
+    if (!scene.root) {
+      return;
+    }
+    let root: Node = scene.root as Node;
+
+    // 创建相机
+    let srf = scene.getResourceFactory();
+    let camera: Camera = await srf.createCamera({ name: "Camer1", path: root.path });
+    camera.enabled = true;
+
+    // 配置分块3DGS导入参数
+    let params: spatialRender.TiledGSImportSettings = {
+      uri: "file:///data/storage/el2/base/files/uav-lod/sanyapo.scene.json"
+    };
+
+    // 加载分块3DGS模型
+    let promise = spatialRender.GSPlugin.loadTiledGSNode(scene, params, root);
+    promise.then((tiledGSNode: spatialRender.TiledGSNode) => {
+      if (!camera) {
+        return;
+      }
+      // 设置驱动分块选择的相机
+      tiledGSNode.setCamera(camera);
+      // 向渲染器注册瓦片请求回调
+      tiledGSNode.setTileRequestCallback((tiles: spatialRender.GSTile[]) => {
+        if (!tiles || tiles.length <= 0) {
+          return;
+        }
+        // 遍历请求的瓦片列表
+        for (const tile of tiles) {
+          // 向远端发送请求，获取对应瓦片数据并持久化保存
+        }
+      });
+    });
   });
 }
 ```

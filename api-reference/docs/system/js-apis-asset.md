@@ -2,8 +2,8 @@
 title: "@ohos.security.asset (关键资产存储服务)"
 upstream_id: "harmonyos-references/js-apis-asset"
 catalog: "harmonyos-references"
-content_hash: "79505c26a6c4"
-synced_at: "2026-07-09T17:26:00.649804"
+content_hash: "dc3a77027e04"
+synced_at: "2026-07-28T16:50:17.459389"
 ---
 
 # @ohos.security.asset (关键资产存储服务)
@@ -174,7 +174,7 @@ batchAdd(attributesArray: Array<AssetMap>): Promise<BatchResult>
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[关键资产存储服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-asset)。
+以下错误码的详细介绍请参见[关键资产存储服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-asset)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -357,7 +357,7 @@ batchRemove(assetsToBeRemoved: Array<AssetMap>): Promise<void>
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[关键资产存储服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-asset)。
+以下错误码的详细介绍请参见[关键资产存储服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-asset)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -544,7 +544,7 @@ batchUpdate(sourceAttributes: Array<AssetMap>, destAttributes: Array<AssetMap>):
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[关键资产存储服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-asset)。
+以下错误码的详细介绍请参见[关键资产存储服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-asset)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -648,7 +648,7 @@ function stringToArray(str: string): Uint8Array {
 let query: asset.AssetMap = new Map();
 query.set(asset.Tag.ALIAS, stringToArray('demo_alias'));
 asset.preQuery(query).then((challenge: Uint8Array) => {
-  console.info(`Succeeded in pre-querying Asset. Challenge is: ${challenge}`);
+  console.info(`Succeeded in pre-querying Asset, the challenge is: `, challenge);
 });
 ```
 
@@ -963,7 +963,7 @@ querySyncResult(query: AssetMap): Promise<SyncResult>
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[关键资产存储服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-asset)。
+以下错误码的详细介绍请参见[关键资产存储服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-asset)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |

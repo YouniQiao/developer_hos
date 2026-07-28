@@ -2,8 +2,8 @@
 title: "@ohos.security.certManagerDialog (证书管理对话框模块)"
 upstream_id: "harmonyos-references/js-apis-certmanagerdialog"
 catalog: "harmonyos-references"
-content_hash: "3305a7fe82e2"
-synced_at: "2026-07-09T00:59:19.657912"
+content_hash: "ef2a34cfd433"
+synced_at: "2026-07-28T16:50:32.104804"
 ---
 
 # @ohos.security.certManagerDialog (证书管理对话框模块)
@@ -217,7 +217,7 @@ openInstallCertificateDialog(context: common.Context, certType: CertificateType,
 | context | [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-common#context) | 是 | 表示应用的上下文信息。 |
 | certType | [CertificateType](#certificatetype14) | 是 | 表示安装证书类型，目前仅支持CA_CERT、CREDENTIAL_USER、CREDENTIAL_SYSTEM。 |
 | certScope | [CertificateScope](#certificatescope14) | 是 | 表示安装证书的使用范围，目前仅支持CURRENT_USER、NOT_SPECIFIED。 |
-| cert | Uint8Array | 是 | 表示安装证书数据。 |
+| cert | Uint8Array | 是 | 表示证书数据，大小不超过8KB。 当certType为CA_CERT，应为PEM或DER编码格式的证书数据。 当certType为CREDENTIAL_USER或CREDENTIAL_SYSTEM，应为P12编码格式的证书凭据数据。 |
 
 返回值：
 
@@ -237,8 +237,8 @@ openInstallCertificateDialog(context: common.Context, certType: CertificateType,
 | 29700001 | Internal error. Possible causes: 1. IPC communication failed; 2. Memory operation error; 3. File operation error. Please try again. |
 | 29700002 | The user cancels the installation operation. |
 | 29700003 | The user install certificate failed in the certificate manager dialog, such as the certificate is in an invalid format. |
-| 29700004 | To ensure user security, the current device does not support this API. When certType is set to CA_CERT, this API can be invoked only on 2in1 devices. This error code is returned on other devices. |
-| 29700005 | The operation does not comply with the device security policy, such as the device does not allow users to manage the ca certificate of the global user. 适用版本：18+ |
+| 29700004 | For security purposes, the current device does not support this API. You can use the [supportsCACertDialog](#certificatemanagerdialogsupportscacertdialog) to determine whether the device supports opening the dialog box for installing a CA certificate with certType set to CA. |
+| 29700005 | The operation does not comply with the device security policy, such as the device does not allow users to manage the CA certificate of the global user. 适用版本：18+ |
 
 示例：
 
@@ -290,7 +290,7 @@ openUninstallCertificateDialog(context: common.Context, certType: CertificateTyp
 | --- | --- | --- | --- |
 | context | [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-common#context) | 是 | 表示应用的上下文信息。 |
 | certType | [CertificateType](#certificatetype14) | 是 | 表示待卸载证书类型，目前仅支持CA_CERT。 |
-| certUri | string | 是 | 表示待卸载证书的唯一标识符，最大长度为256字节。 |
+| certUri | string | 是 | 表示待卸载证书的唯一标识符，可通过安装CA证书接口或查询CA证书列表接口获取。 |
 
 返回值：
 
@@ -309,8 +309,8 @@ openUninstallCertificateDialog(context: common.Context, certType: CertificateTyp
 | 29700001 | Internal error. Possible causes: 1. IPC communication failed; 2. Memory operation error; 3. File operation error. Please try again. |
 | 29700002 | The user cancels the uninstallation operation. |
 | 29700003 | The user uninstall certificate failed in the certificate manager dialog, such as the certificate uri is not exist. |
-| 29700004 | The API is not supported on this device. |
-| 29700005 | The operation does not comply with the device security policy, such as the device does not allow users to manage the ca certificate of the global user. |
+| 29700004 | For security purposes, the current device does not support this API. You can use the [supportsCACertDialog](#certificatemanagerdialogsupportscacertdialog) to determine whether the device can open the dialog box for deleting a CA certificate with certType set to CA. |
+| 29700005 | The operation does not comply with the device security policy, such as the device does not allow users to manage the CA certificate of the global user. |
 
 示例：
 
@@ -357,7 +357,7 @@ openCertificateDetailDialog(context: common.Context, cert: Uint8Array, property:
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | context | [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-common#context) | 是 | 表示应用的上下文信息。 |
-| cert | Uint8Array | 是 | 表示安装证书数据。 |
+| cert | Uint8Array | 是 | 表示证书数据。 |
 | property | [CertificateDialogProperty](#certificatedialogproperty18) | 是 | 表示打开证书管理对话框的属性。 |
 
 返回值：
@@ -438,7 +438,7 @@ openAuthorizeDialog(context: common.Context): Promise<string>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission verification failed. The application does not have the permission required to call the API. |
-| 401 | Invalid parameter. Possible causes: 1. A mandatory parameter is left unspecified. 2. Incorrect parameter type. 3. Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. A mandatory parameter is left unspecified. 2. Incorrect parameter type. 3. Parameter verification failed. |
 | 801 | The certificate management application Hap is not preinstalled in the system, and the capability is not supported. 适用版本：26.0.0+ |
 | 29700001 | Internal error. Possible causes: 1. IPC communication failed; 2. Memory operation error; 3. File operation error. Please try again. |
 | 29700002 | The user cancels the authorization. |
@@ -454,6 +454,7 @@ import { UIContext } from '@kit.ArkUI';
 /* context为应用的上下文信息，调用方自行获取，此处仅为示例 */
 let context: common.Context = new UIContext().getHostContext() as common.Context;
 try {
+  /* 打开证书管理对话框的证书凭据授权页面。 */
   certificateManagerDialog.openAuthorizeDialog(context).then((uri: string) => {
     console.info(`Succeeded in authorizing certificate, uri: ${uri}`)
   }).catch((error: Error) => {
@@ -476,12 +477,12 @@ openAuthorizeDialog(context: common.Context, authorizeRequest: AuthorizeRequest)
 
 系统能力： SystemCapability.Security.CertificateManagerDialog
 
-模型约束： 此接口仅可在Stage模型下使用。
-
 设备行为差异：
 
 - 从API版本26.0.0开始，该接口在所有设备上无行为差异。
 - 在API版本22-24，当authorizeRequest.certTypes数组只包含CREDENTIAL_UKEY取值时，在PC/2in1设备可正常调用，在其他设备返回801错误码。当authorizeRequest.certTypes数组包含CREDENTIAL_UKEY和其他凭据类型时，在PC/2in1设备可正常调用，在其他设备上会忽略CREDENTIAL_UKEY类型的凭据。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -507,7 +508,7 @@ openAuthorizeDialog(context: common.Context, authorizeRequest: AuthorizeRequest)
 | 29700001 | Internal error. Possible causes: 1. IPC communication failed; 2. Memory operation error; 3. File operation error; 4. Call other service failed. Please try again. |
 | 29700002 | The user cancels the authorization. |
 | 29700006 | Indicates that the input parameters validation failed. for example, the parameter format is incorrect or the value range is invalid. |
-| 29700007 | No available certificate for authorization. |
+| 29700007 | No available certificate for authorization. Possible causes: 1. No certificate matches the filter criteria; 2. All certificates have been deleted. |
 
 示例：
 
@@ -642,6 +643,7 @@ import { certificateManagerDialog } from '@kit.DeviceCertificateKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
+  /* 判断设备是否支持打开CA证书管理对话框。 */
   let isSupport: boolean = certificateManagerDialog.supportsCACertDialog();
   console.info(`Succeeded in checking whether the device supports CA dialog.`)
 } catch (err) {

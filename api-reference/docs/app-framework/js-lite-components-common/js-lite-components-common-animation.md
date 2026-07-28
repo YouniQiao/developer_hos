@@ -2,13 +2,13 @@
 title: "动画样式"
 upstream_id: "harmonyos-references/js-lite-components-common-animation"
 catalog: "harmonyos-references"
-content_hash: "1ccd03c4fcfe"
-synced_at: "2026-07-09T00:58:26.841820"
+content_hash: "42e8f4034510"
+synced_at: "2026-07-28T16:49:07.131689"
 ---
 
 # 动画样式
 
-组件支持通过style或css设置动态的旋转、平移及缩放效果。
+组件支持通过style或css设置动态的旋转及平移效果。
 
 | 名称 | 类型 | 默认值 | 描述 |
 | --- | --- | --- | --- |
@@ -30,13 +30,15 @@ synced_at: "2026-07-09T00:58:26.841820"
 
 ![](./img/note_3.0-zh-cn.png) 轻量级智能穿戴仅支持原始大小的图片进行旋转。
 
+rotate仅支持在@keyframes中使用，不支持在普通样式中设置或动态绑定。
+
 表2 @keyframes属性说明
 
 | 名称 | 类型 | 默认值 | 描述 |
 | --- | --- | --- | --- |
-| background-color | | - | 动画执行后应用到组件上的背景颜色。 |
-| width | | - | 动画执行后应用到组件上的宽度值。 |
-| height | | - | 动画执行后应用到组件上的高度值。 |
+| background-color | | - | 动画关键帧时刻应用到组件上的背景颜色。 |
+| width | | - | 动画关键帧时刻应用到组件上的宽度值。 |
+| height | | - | 动画关键帧时刻应用到组件上的高度值。 |
 | transform | string | - | 定义应用在组件上的变换类型，见表1。 |
 
 对于不支持起始值或终止值缺省的情况，可以通过from和to显式指定起始和结束。示例：
@@ -52,6 +54,6 @@ synced_at: "2026-07-09T00:58:26.841820"
    }
 }
 ```
- ![](./img/zh-cn_image_0000002631254106.gif)
+ ![](./img/zh-cn_image_0000002656009234.gif)
 
 ![](./img/note_3.0-zh-cn.png) @keyframes的from/to不支持动态绑定。

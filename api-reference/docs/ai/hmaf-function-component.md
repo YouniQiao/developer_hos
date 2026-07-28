@@ -2,15 +2,15 @@
 title: "FunctionComponent（功能组件）"
 upstream_id: "harmonyos-references/hmaf-function-component"
 catalog: "harmonyos-references"
-content_hash: "a25eb4824ae7"
-synced_at: "2026-07-09T01:01:40.650928"
+content_hash: "d1342af89b3a"
+synced_at: "2026-07-28T16:53:08.443177"
 ---
 
 # FunctionComponent（功能组件）
 
 Agent Framework Kit（智能体框架服务）提供了拉起指定智能体的能力。
 
-应用在[小艺开放平台](https://developer.huawei.com/consumer/cn/hag/hagindex.html?isInFrame=true&lang=zh_CN#/)上线智能体后，向用户提供应用+智能体组合的服务，让用户可以在适当的场景下通过Agent Framework Kit的UI控件能力主动拉起智能体。开发智能体请参考[开发Agent](https://developer.huawei.com/consumer/cn/doc/service/developing-intelligent-agents-0000002435989592)。
+应用在[小艺开放平台](https://developer.huawei.com/consumer/cn/hag/hagindex.html?isInFrame=true&lang=zh_CN#/)上线智能体后，向用户提供应用+智能体组合的服务，让用户可以在适当的场景下通过Agent Framework Kit的UI控件能力主动拉起智能体。配置智能体请参考[开发Agent](https://developer.huawei.com/consumer/cn/doc/service/developing-intelligent-agents-0000002435989592)。
 
 起始版本： 6.0.0(20)
 
@@ -36,18 +36,18 @@ Agent功能组件，可以实现拉起智能体功能。
 
 参数：
 
-| 名称 | 类型 | 必填 | 装饰器类型 | 说明 |
+| 名称 | 类型 | 只读 | 必填 | 说明 |
 | --- | --- | --- | --- | --- |
-| agentId | string | 是 | - | Agent ID，Agent的唯一标识，[开发Agent](https://developer.huawei.com/consumer/cn/doc/service/developing-intelligent-agents-0000002435989592)时获取。智能体创建成功后，可在智能体配置页面的网址链接中获取。 长度限制1~64个字符。 |
-| onError | [ErrorCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#errorcallback) | 是 | - | 错误回调函数。 |
-| options | [FunctionOptions](#functionoptions) | 否 | - | Function组件初始化可选参数。 |
-| controller | [FunctionController](#functioncontroller) | 否 | - | Function组件控制器。默认为undefined。 |
+| agentId | string | 是 | 是 | Agent ID，Agent的唯一标识，[开发Agent](https://developer.huawei.com/consumer/cn/doc/service/developing-intelligent-agents-0000002435989592)时获取。智能体创建成功后，可在智能体配置页面的网址链接中获取。 长度限制1~64个字符。 |
+| onError | [ErrorCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#errorcallback) | 是 | 是 | 错误回调函数。返回的错误码及说明如下所示 |
+| options | [FunctionOptions](#functionoptions) | 是 | 否 | Function组件初始化可选参数。 |
+| controller | [FunctionController](#functioncontroller) | 是 | 否 | Function组件控制器。默认为undefined。 |
 
 ![](./img/note_3.0-zh-cn.png) 该组件的所有参数均为初始化配置项，仅在组件实例化时生效，运行过程中修改参数值无法实现动态更新，若需调整参数请重新初始化组件。
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-agent-framework)。
+以下错误码为onError回调函数返回的，详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-agent-framework)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -86,7 +86,7 @@ struct FunctionExample {
 
 #### AgentController
 
-Agent Framework Kit控件通用控制器。
+Agent Framework Kit控件通用控制器。集成了开发者与Agent功能组件交互的通用方法，该类为控制器基类，可被其它更高阶的控制器继承。
 
 元服务API： 从版本6.0.1(21)开始，该接口支持在元服务中使用。
 
@@ -121,7 +121,7 @@ isAgentSupport(context: common.UIAbilityContext, agentId: string): Promise<boole
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，agentId是否有效，Agent功能是否正常。 true：agentId有效且Agent功能支持。 false：agentId无效或者Agent功能不支持。 |
+| Promise | Promise对象，返回true表示agentId有效且Agent功能支持，返回false表示agentId无效或者Agent功能不支持。 |
 
 错误码：
 
@@ -203,7 +203,7 @@ on(type: 'agentDialogOpened', callback: Callback<void>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 值为'agentDialogOpened'，监听智能体对话框打开事件。 |
-| callback | Callback | 是 | callback回调函数。当具体的操作成功，err为undefined，否则为错误对象。 |
+| callback | Callback | 是 | 回调函数。当具体的操作成功，err为undefined，否则为错误对象。 |
 
 示例：
 
@@ -270,7 +270,7 @@ off(type: 'agentDialogOpened', callback?: Callback<void>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 值为 'agentDialogOpened'，取消智能体对话框打开事件的监听。 |
-| callback | Callback | 否 | 需要取消注册的回调函数，需与订阅时传入的回调函数是同一个。若无此参数，则取消注册所有的回调函数。当具体的操作成功，err为undefined，否则为错误对象。 |
+| callback | Callback | 否 | 回调函数，需要取消注册的回调函数，需与订阅时传入的回调函数是同一个。若无此参数，则取消注册所有的回调函数。当具体的操作成功，err为undefined，否则为错误对象。 |
 
 示例：
 
@@ -337,7 +337,7 @@ on(type: 'agentDialogClosed', callback: Callback<void>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 值为'agentDialogClosed'，监听智能体对话框关闭事件。 |
-| callback | Callback | 是 | callback回调函数。当具体的操作成功，err为undefined，否则为错误对象。 |
+| callback | Callback | 是 | 回调函数。当具体的操作成功，err为undefined，否则为错误对象。 |
 
 示例：
 
@@ -404,7 +404,7 @@ off(type: 'agentDialogClosed', callback?: Callback<void>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 值为 'agentDialogClosed'，取消智能体对话框关闭事件的监听。 |
-| callback | Callback | 否 | 需要取消注册的回调函数，需与订阅时传入的回调函数是同一个。若不传入此参数，则取消注册所有的回调函数。当具体的操作成功，err为undefined，否则为错误对象。 |
+| callback | Callback | 否 | 回调函数，需要取消注册的回调函数，需与订阅时传入的回调函数是同一个。若不传入此参数，则取消注册所有的回调函数。当具体的操作成功，err为undefined，否则为错误对象。 |
 
 示例：
 
@@ -466,7 +466,7 @@ Function组件控制器，用于与Function组件控制交互。预留接口，�
 
 #### BaseOptions
 
-组件可选参数的基础对象。
+Agent组件可选参数的基础对象。集成了Agent组件的共用参数，用于开发者自定义组件属性，可被其它高阶参数继承。
 
 元服务API： 从版本6.0.1(21)开始，该接口支持在元服务中使用。
 
@@ -481,13 +481,13 @@ Function组件控制器，用于与Function组件控制交互。预留接口，�
 | 参数名 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | title | string | 否 | 是 | 表示AgentFramework组件的标题。默认值为空。 [FunctionOptions](#functionoptions).buttonType按钮类型为ButtonType.CIRCLE时不体现。 当前只显示指定大小，宽度超过8个中文字符会进行省略。 字体大于1.75倍时默认最大显示两行。 |
-| titleFontSize | number | 否 | 是 | 表示AgentFramework组件标题的字体大小。取值范围为[14, 16]，默认值为16。取值在范围外取默认值。 |
-| iconSize | number | 否 | 是 | 表示AgentFramework组件图标的大小。取值范围为[16, 24]。 - 按钮类型为CIRCLE时，默认值为24。 - 按钮类型为CAPSULE时，默认值为20。 取值在范围外取默认值。 |
+| titleFontSize | number | 否 | 是 | 表示AgentFramework组件标题的字体大小。取值范围为[14, 16]vp，默认值为16vp。取值在范围外取默认值。 |
+| iconSize | number | 否 | 是 | 表示AgentFramework组件图标的大小。取值范围为[16, 24]vp。 - 按钮类型为CIRCLE时，默认值为24vp。 - 按钮类型为CAPSULE时，默认值为20vp。 取值在范围外取默认值。 |
 | iconColors | [ResourceColor[]](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 表示图标颜色，当前仅支持设置一种颜色，不设置时，为默认渐变色图标。 |
 
 #### FunctionOptions
 
-功能组件选项的定义。继承自[BaseOptions](#baseoptions)。
+FunctionComponent功能组件的初始化参数，继承自[BaseOptions](#baseoptions)，开发者可通过该参数自定义FunctionComponent的属性。
 
 元服务API： 从版本6.0.1(21)开始，该接口支持在元服务中使用。
 
@@ -503,8 +503,8 @@ Function组件控制器，用于与Function组件控制交互。预留接口，�
 | --- | --- | --- | --- | --- |
 | queryText | string | 否 | 是 | 使用功能组件的初始查询文本，默认值为空。 |
 | controlSize | [ControlSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#controlsize11枚举说明) | 否 | 是 | 功能组件按钮的大小，默认值为ControlSize.NORMAL。 |
-| buttonType | [ButtonType](#buttontype) | 否 | 是 | 功能组件的按钮类型。title属性为空或不传时默认值为ButtonType.CIRCLE，title属性不为空时默认值为ButtonType.CAPSULE。 |
-| isShowShadow | boolean | 否 | 是 | 如果显示按钮的阴影，仅在 ButtonType.CAPSULE 胶囊类型时有效。默认值为false。 true：显示阴影。 false：不显示阴影。 |
+| buttonType | [ButtonType](#buttontype) | 否 | 是 | 功能组件的按钮类型。title属性为空或不传时默认值为[ButtonType.CIRCLE](#buttontype)，title属性不为空时默认值为[ButtonType.CAPSULE](#buttontype)。 |
+| isShowShadow | boolean | 否 | 是 | 如果显示按钮的阴影，仅在 [ButtonType.CAPSULE](#buttontype) 胶囊类型时有效。默认值为false。 true：显示阴影。 false：不显示阴影。 |
 | backgroundColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 显示背景板时，组件的背景颜色。 默认值为sys.color.comp_background_tertiary背景色。 |
 | titleColors | [ResourceColor[]](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 功能组件带文本时，文本的颜色，当前最多仅支持设置两种颜色。 - 设置两种颜色时为渐变色。 - 设置一种颜色时为设置颜色。 - 不设置时为默认渐变色文本。 |
 

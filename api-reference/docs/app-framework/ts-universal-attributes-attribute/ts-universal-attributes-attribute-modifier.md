@@ -2,13 +2,13 @@
 title: "动态属性设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-attribute-modifier"
 catalog: "harmonyos-references"
-content_hash: "4c57056da11f"
-synced_at: "2026-07-09T00:57:42.885490"
+content_hash: "e8c4def63a98"
+synced_at: "2026-07-28T16:42:46.285788"
 ---
 
 # 动态属性设置
 
-动态设置组件的属性，支持开发者在属性设置时使用if/else语法，且根据需要使用多态样式设置属性。
+动态设置组件的属性，支持开发者在属性设置时使用if/else语法，且根据需要使用多态样式设置属性。适用于需要根据组件状态（如按压、获焦、禁用、选中、悬浮等）动态切换样式的场景，可提升样式管理的灵活性和代码复用性。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -17,14 +17,7 @@ synced_at: "2026-07-09T00:57:42.885490"
 - 在attributeModifier中设置的属性尽量不要与其他方法设置的属性相同，避免在页面刷新时attributeModifier不生效。
 - 对于仅需根据条件设置组件单一属性的简单场景，可以使用[三目表达式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-declarative-ui-description#配置属性)（如.width(isFullScreen ? 200 : 100)）。
 - 从API version 20开始，attributeModifier支持自定义组件。
-
-#### attributeModifier
-
-attributeModifier(modifier: AttributeModifier<T>): T
-
-动态设置组件的属性方法。
-
-元服务API： 从API version 12开始，该接口支持在元服务中使用。
+- 如果组件同时处于多种状态，并且分别在各自的状态里设置了一样的属性，那么最终样式生效的优先级为悬浮态元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -102,7 +95,7 @@ applyFocusedAttribute?(instance: T): void
 
 applyDisabledAttribute?(instance: T): void
 
-组件禁用状态的样式。参考[示例6（组件绑定modifier禁用状态的样式）](#示例6组件绑定modifier禁用状态的样式)。
+组件禁用状态的样式。参考[示例6（组件绑定Modifier禁用状态的样式）](#示例6组件绑定modifier禁用状态的样式)。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -120,9 +113,27 @@ applySelectedAttribute?(instance: T): void
 
 组件选中状态的样式。
 
-开发者可根据需要自定义实现这些方法，通过传入的参数识别组件类型，对instance设置属性，支持使用if/else语法进行动态设置。参考[示例7（组件绑定modifier选中状态样式）](#示例7组件绑定modifier选中状态样式)。
+开发者可根据需要自定义实现上述回调方法，通过传入的参数识别组件类型，对instance设置属性，支持使用if/else语法进行动态设置。参考[示例7（组件绑定Modifier选中状态样式）](#示例7组件绑定modifier选中状态样式)。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| instance | T | 是 | 组件的属性类，用来标识进行属性设置的组件的类型，比如[Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button)组件的[属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#属性)（ButtonAttribute），[Text](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text)组件的[属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#属性)（TextAttribute）等。具体取值请参考[Attribute类型支持范围](#attribute类型支持范围)。 |
+
+#### [h2]applyHoveredAttribute
+
+applyHoveredAttribute?(instance: T): void
+
+组件悬浮状态的样式。参考[示例9（组件绑定Modifier实现鼠标悬浮态效果）](#示例9组件绑定modifier实现鼠标悬浮态效果)。
+
+起始版本： 26.0.0
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -229,26 +240,26 @@ applySelectedAttribute?(instance: T): void
 
 ![](./img/note_3.0-zh-cn.png)
 
-- StepperAttribute从API version 22开始废弃，建议使用SwiperAttribute替代。
-- StepperItemAttribute从API version 22开始废弃，建议使用SwiperAttribute替代。
-- NavigatorAttribute从API version 20开始废弃，建议使用NavigationAttribute替代。
-- NavRouterAttribute从API version 20开始废弃，建议使用NavigationAttribute替代。
-- PanelAttribute从API version 20开始废弃，推荐使用通用属性bindSheet。
+- StepperAttribute从API version 11开始支持，从API version 22开始废弃。建议使用SwiperAttribute替代。
+- StepperItemAttribute从API version 11开始支持，从API version 22开始废弃。建议使用SwiperAttribute替代。
+- NavigatorAttribute从API version 11开始支持，从API version 20开始废弃。建议使用NavigationAttribute替代。
+- NavRouterAttribute从API version 11开始支持，从API version 20开始废弃。建议使用NavigationAttribute替代。
+- PanelAttribute从API version 11开始支持，从API version 20开始废弃。建议使用通用属性bindSheet替代。
 
 属性支持范围：
 
 1. 不支持入参或者返回值为[CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8)的属性。
-2. 不支持入参为[modifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-modifier)类型的属性，具体为以下属性方法：[attributeModifier](#attributemodifier)，[drawModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-draw-modifier#drawmodifier)和[gestureModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-gesture-modifier#gesturemodifier)。
+2. 不支持入参为[modifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-modifier)类型的属性，具体为以下属性方法：[attributeModifier](#attributemodifier)、[drawModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-draw-modifier#drawmodifier)和[gestureModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-gesture-modifier#gesturemodifier)。
 3. 不支持[animation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-animatorproperty)属性。
 4. 不支持[gesture](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-gesture-events-binding)类型的属性。
 5. 不支持[stateStyles](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-polymorphic-style#statestyles)属性。
 6. 不支持已废弃属性。
 
-不支持或者未实现的属性在使用时会抛出"Method not implemented."、"is not callable"、"Builder is not supported."等异常信息。具体Modifier支持范围可参考[属性或事件对attributemodifier的支持情况](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-extension-attributemodifier#属性或事件对attributemodifier的支持情况)。
+不支持或者未实现的属性在使用时会抛出"Method not implemented."、"is not callable"、"Builder is not supported."等异常信息。具体Modifier支持范围可参考[属性或事件对attributeModifier的支持情况](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-extension-attributemodifier#属性或事件对attributemodifier的支持情况)。
 
 #### 自定义Modifier
 
-从API version 12开始，开发者可使用自定义Modifier构建组件并配置属性，通过此自定义的Modifier可调用所封装组件的属性和样式接口。
+从API version 12开始，开发者可使用自定义Modifier构建组件并配置属性，通过此自定义的Modifier可调用所封装组件的属性和样式接口。适用于需要封装和复用组件属性配置的场景，可简化组件样式管理并提高代码复用性。
 
 自定义Modifier支持范围：
 
@@ -335,11 +346,11 @@ applySelectedAttribute?(instance: T): void
 
 ![](./img/note_3.0-zh-cn.png)
 
-- StepperModifier从API version 22开始废弃，建议使用SwiperModifier替代。
-- StepperItemModifier从API version 22开始废弃，建议使用SwiperModifier替代。
-- NavigatorModifier从API version 20开始废弃，建议使用NavigationModifier替代。
-- NavRouterModifier从API version 20开始废弃，建议使用NavigationModifier替代。
-- PanelModifier从API version 20开始废弃，推荐使用通用属性bindSheet。
+- StepperModifier从API version 20开始支持，从API version 22开始废弃。建议使用[SwiperModifier](#自定义modifier)替代。
+- StepperItemModifier从API version 12开始支持，从API version 22开始废弃。建议使用[SwiperModifier](#自定义modifier)替代。
+- NavigatorModifier从API version 12开始支持，从API version 20开始废弃。建议使用[NavigationModifier](#自定义modifier)替代。
+- NavRouterModifier从API version 12开始支持，从API version 20开始废弃。建议使用[NavigationModifier](#自定义modifier)替代。
+- PanelModifier从API version 12开始支持，从API version 20开始废弃。建议使用通用属性bindSheet替代。
 
 注意事项
 
@@ -347,8 +358,8 @@ applySelectedAttribute?(instance: T): void
 2. 自定义Modifier属性值变化，组件对应属性也会变化。自定义Modifier类型为基类，构造的对象为子类对象，使用时要通过as进行类型断言为子类。
 3. 一个自定义Modifier设置给两个组件，Modifier属性变化的时候对两个组件同时生效。
 4. 一个Modifier设置了属性A和属性B，再设置属性C和属性D，4个属性同时在组件上生效。
-5. 自定义Modifier不支持@State标注的状态数据的变化感知，见[示例3（自定义Modifier不支持感知@State装饰的状态数据变化）](#示例3自定义modifier不支持感知state装饰的状态数据变化)。
-6. 多次通过attributeModifier设置属性时，生效的属性为所有属性的并集，相同属性按照设置顺序生效。
+5. 自定义Modifier不支持@State装饰的状态数据的变化感知，见[示例3（自定义Modifier不支持感知@State装饰的状态数据变化）](#示例3自定义modifier不支持感知state装饰的状态数据变化)。
+6. 多次通过attributeModifier设置属性时，生效的属性为所有属性的并集，相同属性以最后设置的值为准。
 
 #### 示例
 
@@ -373,13 +384,13 @@ class MyButtonModifier implements AttributeModifier<ButtonAttribute> {
 
 @Entry
 @Component
-struct attributeDemo {
+struct AttributeDemo {
   @State modifier: MyButtonModifier = new MyButtonModifier();
 
   build() {
     Row() {
       Column() {
-        Button("Button")
+        Button('Button')
           .attributeModifier(this.modifier)
           .onClick(() => {
             this.modifier.isDark = !this.modifier.isDark;
@@ -391,7 +402,7 @@ struct attributeDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413132.gif)
+ ![](./img/zh-cn_image_0000002656008358.gif)
 
 #### [h2]示例2（组件绑定Modifier实现按压态效果）
 
@@ -412,13 +423,13 @@ class MyButtonModifier implements AttributeModifier<ButtonAttribute> {
 
 @Entry
 @Component
-struct attributePressedDemo {
+struct AttributePressedDemo {
   @State modifier: MyButtonModifier = new MyButtonModifier();
 
   build() {
     Row() {
       Column() {
-        Button("Button")
+        Button('Button')
           .attributeModifier(this.modifier)
       }
       .width('100%')
@@ -427,16 +438,16 @@ struct attributePressedDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413132.gif)
+ ![](./img/zh-cn_image_0000002656008358.gif)
 
 #### [h2]示例3（自定义Modifier不支持感知@State装饰的状态数据变化）
 
 该示例通过状态数据设置自定义Modifier的宽度，自定义Modifier不支持感知@State装饰的状态数据变化，点击按钮后宽度不发生改变。
 
 ```
-import { CommonModifier } from "@kit.ArkUI";
+import { CommonModifier } from '@kit.ArkUI';
 
-const TEST_TAG: string = "AttributeModifier";
+const TEST_TAG: string = 'AttributeModifier';
 
 // 设置通用组件属性的自定义AttributeModifier
 class MyModifier extends CommonModifier {
@@ -450,7 +461,7 @@ struct MyImage1 {
   @Link modifier: CommonModifier;
 
   build() {
-    Image($r("app.media.startIcon")).attributeModifier(this.modifier as MyModifier)
+    Image($r('app.media.startIcon')).attributeModifier(this.modifier as MyModifier)
   }
 }
 
@@ -464,17 +475,17 @@ struct Index {
 
   build() {
     Column() {
-      Button($r("app.string.EntryAbility_label"))
+      Button($r('app.string.EntryAbility_label'))
         .margin(10)
         .onClick(() => {
-          console.info(TEST_TAG, "onClick");
+          console.info(TEST_TAG, 'onClick');
           this.index++;
           if (this.index % 2 === 1) {
             this.width1 = 10;
-            console.info(TEST_TAG, "setGroup1");
+            console.info(TEST_TAG, 'setGroup1');
           } else {
             this.height1 = 10;
-            console.info(TEST_TAG, "setGroup2");
+            console.info(TEST_TAG, 'setGroup2');
           }
         })
       MyImage1({ modifier: this.myModifier })
@@ -483,16 +494,16 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732361.gif)
+ ![](./img/zh-cn_image_0000002655848438.gif)
 
 #### [h2]示例4（Modifier和自定义Modifier的属性同时生效）
 
-该示例通过自定义Modifier设置了width和height，点击按钮时设置[borderStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#borderstyle)和[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)，点击后4个属性同时生效。
+该示例通过自定义Modifier设置了width、height和margin，点击按钮时设置[borderStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#borderstyle)和[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)，点击后5个属性同时生效。
 
 ```
-import { CommonModifier } from "@kit.ArkUI";
+import { CommonModifier } from '@kit.ArkUI';
 
-const TEST_TAG: string = "AttributeModifier";
+const TEST_TAG: string = 'AttributeModifier';
 
 // 设置通用组件属性的自定义AttributeModifier
 class MyModifier extends CommonModifier {
@@ -516,7 +527,7 @@ struct MyImage1 {
   @Link modifier: CommonModifier;
 
   build() {
-    Image($r("app.media.startIcon")).attributeModifier(this.modifier as MyModifier)
+    Image($r('app.media.startIcon')).attributeModifier(this.modifier as MyModifier)
   }
 }
 
@@ -528,17 +539,17 @@ struct Index {
 
   build() {
     Column() {
-      Button($r("app.string.EntryAbility_label"))
+      Button($r('app.string.EntryAbility_label'))
         .margin(10)
         .onClick(() => {
-          console.info(TEST_TAG, "onClick");
+          console.info(TEST_TAG, 'onClick');
           this.index++;
           if (this.index % 2 === 1) {
             (this.myModifier as MyModifier).setGroup1();
-            console.info(TEST_TAG, "setGroup1");
+            console.info(TEST_TAG, 'setGroup1');
           } else {
             (this.myModifier as MyModifier).setGroup2();
-            console.info(TEST_TAG, "setGroup2");
+            console.info(TEST_TAG, 'setGroup2');
           }
         })
       MyImage1({ modifier: this.myModifier })
@@ -547,7 +558,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253240.gif)
+ ![](./img/zh-cn_image_0000002686087867.gif)
 
 #### [h2]示例5（组件绑定Modifier获焦样式）
 
@@ -567,22 +578,22 @@ class MyButtonModifier implements AttributeModifier<ButtonAttribute> {
 
 @Entry
 @Component
-struct attributeDemo {
+struct AttributeDemo {
   @State modifier: MyButtonModifier = new MyButtonModifier();
   @State isDisable: boolean = true;
 
   build() {
     Row() {
       Column() {
-        Button("Button")
+        Button('Button')
           .attributeModifier(this.modifier)
           .enabled(this.isDisable)
-          .id("app")
+          .id('app')
         Divider().vertical(false).strokeWidth(15).color(Color.Transparent)
-        Button("Button2")
+        Button('Button2')
           .onClick(() => {
             this.getUIContext().getFocusController().activate(true);
-            this.getUIContext().getFocusController().requestFocus("app");
+            this.getUIContext().getFocusController().requestFocus('app');
           })
       }
       .width('100%')
@@ -591,7 +602,7 @@ struct attributeDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612425.gif)
+ ![](./img/zh-cn_image_0000002685928039.gif)
 
 #### [h2]示例6（组件绑定Modifier禁用状态的样式）
 
@@ -607,18 +618,18 @@ class MyButtonModifier implements AttributeModifier<ButtonAttribute> {
 
 @Entry
 @Component
-struct attributeDemo {
+struct AttributeDemo {
   @State modifier: MyButtonModifier = new MyButtonModifier();
   @State isDisable: boolean = true;
 
   build() {
     Row() {
       Column() {
-        Button("Button")
+        Button('Button')
           .attributeModifier(this.modifier)
           .enabled(this.isDisable)
         Divider().vertical(false).strokeWidth(15).color(Color.Transparent)
-        Button("Button2")
+        Button('Button2')
           .onClick(() => {
             this.isDisable = !this.isDisable;
           })
@@ -629,11 +640,11 @@ struct attributeDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413134.gif)
+ ![](./img/zh-cn_image_0000002656008360.gif)
 
 #### [h2]示例7（组件绑定Modifier选中状态样式）
 
-该示例通过Radio绑定Modifier实现了展示组件选中时样式的效果。
+该示例通过Radio绑定Modifier实现了组件选中时的样式效果。
 
 ```
 // 设置Radio组件属性的自定义AttributeModifier
@@ -650,10 +661,9 @@ class MyRadioModifier implements AttributeModifier<RadioAttribute> {
 
 @Entry
 @Component
-struct attributeDemo {
+struct AttributeDemo {
   @State modifier: MyRadioModifier = new MyRadioModifier();
   @State value: boolean = false;
-  @State value2: boolean = false;
 
   build() {
     Row() {
@@ -675,7 +685,7 @@ struct attributeDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732363.gif)
+ ![](./img/zh-cn_image_0000002655848440.gif)
 
 #### [h2]示例8（自定义组件绑定Modifier实现按压态效果）
 
@@ -686,18 +696,18 @@ struct attributeDemo {
 // 设置自定义组件属性的自定义AttributeModifier
 class CustomModifier implements AttributeModifier<CommonAttribute> {
   applyNormalAttribute(instance: CommonAttribute): void {
-    instance.backgroundColor(Color.Blue)
+    instance.backgroundColor(Color.Blue);
   }
 
   applyPressedAttribute(instance: CommonAttribute): void {
-    instance.backgroundColor(Color.Gray)
+    instance.backgroundColor(Color.Gray);
   }
 }
 
 @Entry
 @Component
-struct attributePressedDemo {
-  @State modifier: CustomModifier = new CustomModifier()
+struct AttributePressedDemo {
+  @State modifier: CustomModifier = new CustomModifier();
 
   build() {
     Row() {
@@ -715,7 +725,7 @@ struct attributePressedDemo {
 @Component
 struct ChildComponent {
   build() {
-    Text("common")
+    Text('common')
       .fontColor(Color.White)
       .fontSize(28)
       .textAlign(TextAlign.Center)
@@ -724,4 +734,43 @@ struct ChildComponent {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253244.gif)
+ ![](./img/zh-cn_image_0000002686087869.gif)
+
+#### [h2]示例9（组件绑定Modifier实现鼠标悬浮态效果）
+
+该示例通过Button绑定Modifier实现了鼠标悬浮态的效果。当鼠标移动到Button上时，Button的背景颜色变为红色，此时为悬浮态效果；当鼠标离开Button时，Button的背景颜色变为黑色，此时为普通态效果；同时通过[applyHoveredAttribute](#applyhoveredattribute)接口设置悬浮态样式。
+
+从API版本26.0.0开始，新增[applyHoveredAttribute](#applyhoveredattribute)接口。
+
+```
+// xxx.ets
+// 设置Button组件属性的自定义AttributeModifier
+class MyButtonModifier implements AttributeModifier<ButtonAttribute> {
+  applyNormalAttribute(instance: ButtonAttribute): void {
+    instance.backgroundColor(Color.Black);
+  }
+
+  // 设置悬浮态样式
+  applyHoveredAttribute(instance: ButtonAttribute): void {
+    instance.backgroundColor(Color.Red);
+  }
+}
+
+@Entry
+@Component
+struct AttributeHoveredDemo {
+  @State modifier: MyButtonModifier = new MyButtonModifier();
+
+  build() {
+    Row() {
+      Column() {
+        Button('Button')
+          .attributeModifier(this.modifier)
+      }
+      .width('100%')
+    }
+    .height('100%')
+  }
+}
+```
+ ![](./img/zh-cn_image_0000002685928041.gif)

@@ -2,13 +2,13 @@
 title: "@ohos.app.ability.InsightIntentContext (意图执行上下文)"
 upstream_id: "harmonyos-references/js-apis-app-ability-insightintentcontext"
 catalog: "harmonyos-references"
-content_hash: "3eac49bb77f3"
-synced_at: "2026-07-09T00:57:04.450180"
+content_hash: "7b455d8cdf30"
+synced_at: "2026-07-28T16:40:33.142442"
 ---
 
 # @ohos.app.ability.InsightIntentContext (意图执行上下文)
 
-本模块提供意图执行上下文，是[意图执行基类](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintentexecutor)和[@InsightIntentEntry的意图执行基类](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintententryexecutor)的属性，为意图执行提供基础能力，例如启动本应用内的[UIAbility组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability)。
+本模块提供意图执行上下文，是[意图执行基类](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintentexecutor)和[@InsightIntentEntry的意图执行基类](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintententryexecutor)的属性，为意图执行提供基础能力，例如启动本应用内的[UIAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#uiability)组件。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 11开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -56,12 +56,12 @@ export default class InsightIntentExecutorUI extends InsightIntentExecutor {
           console.info('testTag setExecuteResult success');
         })
         .catch((error: BusinessError) => {
-          console.error(`testTag setExecuteResult fail1, error code: ${JSON.stringify(error)}`);
+          console.error(`Failed to setExecuteResult. Code: ${error.code}, message: ${error.message}`);
         });
     } catch (e) {
       let code = (e as BusinessError).code;
       let msg = (e as BusinessError).message;
-      console.error(`testTag setExecuteResult fail2, error code: ${JSON.stringify(code)}, error msg: ${JSON.stringify(msg)}`);
+      console.error(`testTag setExecuteResult fail2, error code: ${code}, error msg: ${msg}`);
     }
     return result;
   }
@@ -134,7 +134,8 @@ export default class IntentExecutorImpl extends InsightIntentExecutor {
         }
       })
     } catch (error) {
-      hilog.error(0x0000, 'testTag', 'Start ability error caught %{public}s', JSON.stringify(error));
+      const err: BusinessError = error as BusinessError;
+      console.error(`Failed to start ability. Code: ${err.code}, message: ${err.message}`);
     }
 
     let result: insightIntent.ExecuteResult = {
@@ -214,7 +215,8 @@ export default class IntentExecutorImpl extends InsightIntentExecutor {
       await this.context.startAbility(want);
       hilog.info(0x0000, 'testTag', '%{public}s', 'Start ability finished');
     } catch (error) {
-      hilog.error(0x0000, 'testTag', 'Start ability error caught %{public}s', JSON.stringify(error));
+      const err: BusinessError = error as BusinessError;
+      console.error(`Failed to start ability. Code: ${err.code}, message: ${err.message}`);
     }
 
     let result: insightIntent.ExecuteResult = {
@@ -234,9 +236,9 @@ setReturnModeForUIAbilityForeground(returnMode: insightIntent.ReturnMode): void
 
 设置意图执行结果的返回形式，适用于执行模式为[UI_ABILITY_FOREGROUND](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintent#executemode)的意图。
 
-模型约束：此接口仅可在Stage模型下使用。
-
 元服务API：从API version 23开始，该接口支持在元服务中使用。
+
+模型约束：此接口仅可在Stage模型下使用。
 
 系统能力：SystemCapability.Ability.AbilityRuntime.Core
 
@@ -276,9 +278,8 @@ export default class InsightIntentExecutorUI extends InsightIntentExecutor {
     try {
       this.context.setReturnModeForUIAbilityForeground(insightIntent.ReturnMode.FUNCTION);
     } catch (error) {
-      let code = (error as BusinessError).code;
-      let msg = (error as BusinessError).message;
-      console.error(`testTag setReturnModeForUIAbilityForeground fail, error code: ${code}, err msg: ${msg}.`);
+      const err: BusinessError = error as BusinessError;
+      console.error(`Failed to setReturnModeForUIAbilityForeground. Code: ${err.code}, message: ${err.message}`);
     }
 
     let localStorageData: Record<string, number> = {
@@ -356,9 +357,8 @@ export default class InsightIntentExecutorUI extends InsightIntentExecutor {
       storage.setOrCreate('session', pageLoader);
       pageLoader.loadContent('pages/UIExtensionPage', storage);
     } catch (err) {
-      let code = (err as BusinessError).code;
-      let msg = (err as BusinessError).message;
-      console.info(`testTag loadContent error code: ${code}, error msg: ${msg}.`);
+      const err: BusinessError = err as BusinessError;
+      console.error(`Failed to loadContent. Code: ${err.code}, message: ${err.message}`);
     }
     return result;
   }

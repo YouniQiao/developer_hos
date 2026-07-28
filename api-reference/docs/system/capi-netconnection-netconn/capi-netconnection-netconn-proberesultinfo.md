@@ -2,8 +2,8 @@
 title: "NetConn_ProbeResultInfo"
 upstream_id: "harmonyos-references/capi-netconnection-netconn-proberesultinfo"
 catalog: "harmonyos-references"
-content_hash: "7b1df98e9c5f"
-synced_at: "2026-07-09T00:59:29.595929"
+content_hash: "1a5a73d05a57"
+synced_at: "2026-07-28T16:50:45.401525"
 ---
 
 # NetConn_ProbeResultInfo
@@ -29,4 +29,4 @@ typedef struct NetConn_ProbeResultInfo {...} NetConn_ProbeResultInfo
 | 名称 | 描述 |
 | --- | --- |
 | uint8_t lossRate | 丢包率，百分制，值100表示100%丢包；50表示50%丢包。 |
-| uint32_t rtt[[NETCONN_MAX_RTT_NUM]](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-net-connection-type-h#宏定义) | 时延结果，包含最小、最大、平均、标准差。 |
+| uint32_t rtt[NETCONN_MAX_RTT_NUM](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-net-connection-type-h#宏定义) | 时延结果（单位：ms），包含最小、最大、平均、标准差。 |

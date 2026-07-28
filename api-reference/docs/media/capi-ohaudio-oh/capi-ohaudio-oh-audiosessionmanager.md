@@ -2,19 +2,19 @@
 title: "OH_AudioSessionManager"
 upstream_id: "harmonyos-references/capi-ohaudio-oh-audiosessionmanager"
 catalog: "harmonyos-references"
-content_hash: "92945a5065f8"
-synced_at: "2026-07-09T01:00:11.190327"
+content_hash: "4831f1c1da90"
+synced_at: "2026-07-28T16:51:29.693289"
 ---
 
 # OH_AudioSessionManager
 
 ```
-typedef struct OH_AudioSessionManager OH_AudioSessionManager
+typedef struct OH_AudioSessionManager OH_AudioSessionManager;
 ```
 
 #### 概述
 
-声明音频会话管理器。用于管理音频会话相关功能。
+音频会话管理器结构体。用于管理音频会话。
 
 起始版本： 12
 

@@ -2,13 +2,13 @@
 title: "工具栏设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-toolbar"
 catalog: "harmonyos-references"
-content_hash: "e965934bf822"
-synced_at: "2026-07-09T00:57:43.654166"
+content_hash: "7386e1c48f73"
+synced_at: "2026-07-28T16:43:01.343761"
 ---
 
 # 工具栏设置
 
-设置组件对应的工具栏。
+为组件设置对应的工具栏。toolbar是组件通用属性，可在窗口顶部标题栏相应分栏位置创建由ToolBarItem构成的自定义工具栏，适用于需要在标题栏区域添加自定义操作项（如按钮、滑动条、搜索栏等）的场景。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -20,7 +20,7 @@ synced_at: "2026-07-09T00:57:43.654166"
 
 toolbar(value: CustomBuilder): T
 
-为绑定该属性的组件，在窗口顶部标题栏相应分栏创建与该组件绑定的由[ToolBarItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toolbaritem)构成的工具栏，分栏位置依据绑定该属性的组件所在分栏位置确定。[CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8)必须由[ToolBarItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toolbaritem)构成，该工具栏才能生效。
+为绑定该属性的组件，在窗口顶部标题栏相应分栏创建由[ToolBarItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toolbaritem)构成的工具栏，分栏位置由绑定该属性的组件所在分栏决定。[CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8)必须由[ToolBarItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toolbaritem)构成，该工具栏才能生效。适用于在分栏导航场景下，需要在标题栏区域集成快捷操作入口（如收藏、分享、编辑等操作按钮）的应用。
 
 ![](./img/note_3.0-zh-cn.png) 该接口不支持在[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)中调用。
 
@@ -30,7 +30,7 @@ toolbar(value: CustomBuilder): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 是 | 为当前组件配置CustomBuilder类型的自定义工具栏。 |
+| value | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 是 | 为当前组件配置CustomBuilder类型的自定义工具栏。CustomBuilder必须由[ToolBarItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toolbaritem)构成，该工具栏才能生效。 |
 
 返回值：
 
@@ -40,32 +40,32 @@ toolbar(value: CustomBuilder): T
 
 ![](./img/note_3.0-zh-cn.png)
 
-1. toolbar仅支持固定标题栏，不支持悬浮标题栏（仅限三键模式）。
-2. toolbar支持自定义组件布局，可将其置于特定分栏位置（左侧或右侧）。但需注意，当元素数量超过可用空间时，将导致布局截断或焦点框遮挡等现象，从而使部分操作项不可见或引发交互冲突。此时，元素不会自动缩略，建议合理控制元素数量。
+1. toolbar仅支持固定标题栏，不支持悬浮标题栏（悬浮标题栏仅在三键导航模式下涉及，三键导航模式即设备底部显示返回、主屏、多任务三个虚拟导航按键的导航模式）。
+2. toolbar支持自定义组件布局，可将其置于特定分栏位置（左侧或右侧）。但需注意，当元素总宽度超过可用空间时，将导致布局截断或焦点框遮挡等现象，从而使部分操作项不可见或引发交互冲突。此时，元素不会自动缩略，建议根据分栏可用宽度控制元素数量，避免元素总宽度超出可用空间。
 3. toolbar当前仅支持单行布局，不支持多行布局，因此应避免在一个toolbar中放置多行布局的元素。
 4. toolbar仅支持在[NavigationMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#navigationmode9枚举说明)为Split的场景中使用。
-5. 标题栏高度会根据toolbar内的[ToolBarItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toolbaritem)组件在有限范围内浮动： [ToolBarItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toolbaritem)组件与标题栏默认存在4VP的margin（外边距）。
-6. 当[ToolBarItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toolbaritem)组件的最大高度小于等于48VP时，标题栏高度会调整为56VP，此设置适用于标题栏、工具栏、搜索栏等通用组件。
-7. 当[ToolBarItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toolbaritem)组件的最大高度介于48VP到56VP之间时，标题栏高度会调整为64VP，此设置适用于图标与文字同时呈现的工具栏。
-8. 当[ToolBarItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toolbaritem)组件的最大高度超过56VP时，标题栏高度会调整为72VP。如果[ToolBarItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toolbaritem)组件的最大高度超过64VP，则标题栏的高度保持为72VP，超出的区域会发生裁剪。
+5. 标题栏高度会根据toolbar内的[ToolBarItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toolbaritem)组件在有限范围内浮动： [ToolBarItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toolbaritem)组件与标题栏默认存在4vp的margin（外边距）。
+6. 当[ToolBarItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toolbaritem)组件的最大高度小于等于48vp时，标题栏高度会调整为56vp，此设置适用于标题栏、工具栏、搜索栏等通用组件。
+7. 当[ToolBarItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toolbaritem)组件的最大高度介于48vp到56vp之间时，标题栏高度会调整为64vp，此设置适用于图标与文字同时呈现的工具栏。
+8. 当[ToolBarItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toolbaritem)组件的最大高度超过56vp时，标题栏高度会调整为72vp。如果[ToolBarItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toolbaritem)组件的最大高度超过64vp，则标题栏的高度保持为72vp，超出的区域会发生裁剪。
 
 #### 示例
 
-该示例通过为[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)下的[Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button)组件绑定toolbar通用属性，为标题栏Navbar分栏开头位置添加包含两个[Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button)组件工具栏项。为[NavDestination](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navdestination)下的[Text](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text)组件绑定toolbar通用属性，为标题栏NavDestination分栏末尾位置添加包含一个滑动条组件和一个搜索栏组件工具栏项。
+该示例通过为[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)下的[Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button)组件绑定toolbar通用属性，为标题栏NavBar分栏开头位置添加包含两个[Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button)组件的工具栏项。为[NavDestination](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navdestination)下的[Text](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text)组件绑定toolbar通用属性，为标题栏NavDestination分栏末尾位置添加包含一个滑动条组件和一个搜索栏组件的工具栏项。
 
 ```
 // xxx.ets
 @Entry
 @Component
-struct SideBarContainerExample {
-  normalIcon: Resource = $r("app.media.startIcon")
+struct ToolbarExample {
+  normalIcon: Resource = $r('app.media.startIcon')
   selectedIcon: Resource = $r("app.media.startIcon")
   @State arr: number[] = [1, 2, 3]
   @State current: number = 1
   @Provide('navPathStack') navPathStack: NavPathStack = new NavPathStack()
 
   @Builder
-  MyToolBar() {
+  MyToolbar() {
     ToolBarItem({ placement: ToolBarItemPlacement.TOP_BAR_LEADING }) {
       Button("left").height("30vp")
     }
@@ -94,7 +94,7 @@ struct SideBarContainerExample {
           .fontSize(30)
           .toolbar(this.MyToolbarNavDest())
       }
-      .backgroundColor(Color.Grey)
+      .backgroundColor(Color.Gray)
     }
   }
 
@@ -110,7 +110,7 @@ struct SideBarContainerExample {
               .fontFamily('source-sans-pro,cursive,sans-serif')
           }
           .onClick(() => {
-            this.current = item
+            this.current = item;
           })
         }, (item: number) => item.toString())
       }.width('100%')
@@ -123,13 +123,13 @@ struct SideBarContainerExample {
             .width('20%')
             .height(40)
             .margin(20)
-            .toolbar(this.MyToolBar)
+            .toolbar(this.MyToolbar())
           Button('showNavDest', { stateEffect: true, type: ButtonType.Capsule })
             .width('20%')
             .height(40)
             .margin(20)
             .onClick(() => {
-              this.navPathStack.pushPath({ name: "1" })
+              this.navPathStack.pushPath({ name: '1' });
             })
         }
         .width('100%')
@@ -148,7 +148,7 @@ struct SideBarContainerExample {
     .maxSideBarWidth(300)
     .minContentWidth(0)
     .onChange((value: boolean) => {
-      console.info('status:' + value)
+      console.info('status:' + value);
     })
     .divider({
       strokeWidth: '1vp',
@@ -159,4 +159,4 @@ struct SideBarContainerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612431.png)
+ ![](./img/zh-cn_image_0000002656008366.png)

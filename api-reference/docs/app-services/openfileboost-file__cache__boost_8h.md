@@ -2,8 +2,8 @@
 title: "file_cache_boost.h"
 upstream_id: "harmonyos-references/openfileboost-file__cache__boost_8h"
 catalog: "harmonyos-references"
-content_hash: "65d263b18fea"
-synced_at: "2026-07-09T01:01:36.889435"
+content_hash: "70617bf926f2"
+synced_at: "2026-07-28T16:52:59.796098"
 ---
 
 # file_cache_boost.h
@@ -45,7 +45,8 @@ synced_at: "2026-07-09T01:01:36.889435"
 
 | 名称 | 描述 |
 | --- | --- |
-| [FileCacheBoost_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/openfileboost_preview#filecacheboost_errcode) [HMS_FileCacheBoost_Init](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/openfileboost_preview) (const char *path, size_t pathLen, uint32_t cacheUpperLimitMb, const char *dbName, size_t dbNameLen) | 初始化缓存路径、缓存容量上限、数据库名称。系统保证了线程并发安全控制，如需支持多进程并发场景，建议各进程使用不同的数据库文件名以保证访问安全性。 |
+| bool [HMS_Preview_FileCacheBoost_IsSupported](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/openfileboost_preview#hms_preview_filecacheboost_issupported) (void) | 查询当前设备是否支持文件缓存加速功能。建议开发者在使用文件缓存加速功能之前，先调用本接口检查当前设备是否支持文件缓存加速功能。确认支持后再使用其他文件缓存加速接口如[HMS_FileCacheBoost_Init](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/openfileboost_preview#hms_filecacheboost_init)等。 |
+| [FileCacheBoost_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/openfileboost_preview#filecacheboost_errcode) [HMS_FileCacheBoost_Init](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/openfileboost_preview#hms_filecacheboost_init) (const char *path, size_t pathLen, uint32_t cacheUpperLimitMb, const char *dbName, size_t dbNameLen) | 初始化缓存路径、缓存容量上限、数据库名称。系统保证了线程并发安全控制，如需支持多进程并发场景，建议各进程使用不同的数据库文件名以保证访问安全性。 |
 | [FileCacheBoost_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/openfileboost_preview#filecacheboost_errcode) [HMS_FileCacheBoost_AddObjectByKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/openfileboost_preview#hms_filecacheboost_addobjectbykey) (const uint8_t *key, size_t keyLen, const uint8_t *data, size_t dataLen, uint32_t weight) | 创建并添加一个缓存对象至文件缓存。 系统通过key管理缓存，建议开发者合理设计和管理key值，确保其在不同上下文中的唯一性和准确性。 当不再需要缓存时，推荐开发者主动调用[HMS_FileCacheBoost_RemoveObjectByKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/openfileboost_preview#hms_filecacheboost_removeobjectbykey)删除对应的缓存项，以避免资源浪费。 若不主动删除，系统将在缓存容量不足时，依据系统策略进行清除。 开发者若想要对key对应的缓存内容做修改，需要先调用[HMS_FileCacheBoost_RemoveObjectByKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/openfileboost_preview#hms_filecacheboost_removeobjectbykey)删除之前的key，再重新创建和添加。 |
 | [FileCacheBoost_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/openfileboost_preview#filecacheboost_errcode) [HMS_FileCacheBoost_GetObjectByKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/openfileboost_preview#hms_filecacheboost_getobjectbykey) (const uint8_t *key, size_t keyLen, uint8_t **data, size_t *dataLen) | 根据指定的key查询缓存对象。若缓存对象存在，则从磁盘中加载缓存对象的内容。调用该函数，系统会分配一段内存用于存储缓存数据，作为出参返回给开发者。开发者需在使用完毕后调用[HMS_FileCacheBoost_FreeObject](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/openfileboost_preview#hms_filecacheboost_freeobject)显式释放该内存。 |
 | void [HMS_FileCacheBoost_FreeObject](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/openfileboost_preview#hms_filecacheboost_freeobject) (uint8_t *data) | 释放调用[HMS_FileCacheBoost_GetObjectByKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/openfileboost_preview#hms_filecacheboost_getobjectbykey)或[HMS_FileCacheBoost_GetSerialObjectByKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/openfileboost_preview#hms_filecacheboost_getserialobjectbykey)分配的内存，建议开发者不再使用该内存时，及时调用此函数进行释放，避免造成内存泄漏。 |

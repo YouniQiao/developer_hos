@@ -2,8 +2,8 @@
 title: "Interface (AuxiliaryPicture)"
 upstream_id: "harmonyos-references/arkts-apis-image-auxiliarypicture"
 catalog: "harmonyos-references"
-content_hash: "0d1171a349a0"
-synced_at: "2026-07-09T01:00:29.602671"
+content_hash: "dfd72f31d178"
+synced_at: "2026-07-28T16:51:47.580739"
 ---
 
 # Interface (AuxiliaryPicture)
@@ -43,7 +43,7 @@ writePixelsFromBuffer(data: ArrayBuffer): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象。无返回结果。 |
+| Promise | Promise对象，无返回结果。 |
 
 错误码：
 
@@ -53,7 +53,7 @@ writePixelsFromBuffer(data: ArrayBuffer): Promise<void>
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed. |
 
-示例:
+示例：
 
 ```
 async function WritePixelsFromBuffer(context: Context) {
@@ -107,7 +107,7 @@ async function ReadPixelsToBuffer(context: Context) {
   let auxPictureObj: image.AuxiliaryPicture | null = pictureObj.getAuxiliaryPicture(image.AuxiliaryPictureType.GAINMAP);
   if(auxPictureObj != null) {
     await auxPictureObj.readPixelsToBuffer().then((pixelsBuffer: ArrayBuffer) => {
-      console.info('Succeeded in reading pixels to buffer.' );
+      console.info('Succeeded in reading pixels to buffer success.' );
     }).catch((error: BusinessError) => {
       console.error(`Failed to read pixels to buffer. error.code: ${error.code}, error.message: ${error.message}`);
     });

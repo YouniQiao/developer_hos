@@ -2,18 +2,18 @@
 title: "绑定手势事件"
 upstream_id: "harmonyos-references/ts-gesture-settings"
 catalog: "harmonyos-references"
-content_hash: "7254899a8dbe"
-synced_at: "2026-07-09T00:57:43.958890"
+content_hash: "afbe7f081db2"
+synced_at: "2026-07-28T16:43:02.118421"
 ---
 
 # 绑定手势事件
 
-为组件绑定不同类型的手势事件，并设置事件的响应方法。
+为组件绑定不同类型的手势事件，并设置事件的响应方法；支持普通手势绑定、父组件优先识别手势和父子组件同时触发手势，适用于组件交互响应、父子组件手势优先级控制以及多组件手势协同触发等场景。
 
 ![](./img/note_3.0-zh-cn.png)
 
 - 本模块首批接口从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
-- 可以通过gesture、priorityGesture和parallelGesture给组件绑定手势识别，手势识别成功后可以通过事件回调通知组件。可以通过[触摸热区](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-touch-target)指定可识别手势的区域。gesture、priorityGesture和parallelGesture当前不支持使用三目运算符（条件? 表达式1 : 表达式2）切换手势绑定。
+- 可以通过gesture、priorityGesture和parallelGesture给组件绑定手势识别，手势识别成功后可以通过事件回调通知组件。可以通过[触摸热区](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-touch-target)指定可识别手势的区域。gesture、priorityGesture和parallelGesture当前不支持使用三目运算符（条件 ? 表达式1 : 表达式2）切换手势绑定。
 
 #### gesture
 
@@ -32,13 +32,13 @@ gesture(gesture: GestureType, mask?: GestureMask): T
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | gesture | [GestureType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#gesturetype) | 是 | 绑定的手势类型。 |
-| mask | [GestureMask](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#gesturemask枚举说明) | 否 | 事件响应设置。 默认值：GestureMask.Normal |
+| mask | [GestureMask](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#gesturemask枚举说明) | 否 | 事件响应设置。当需要设置父组件优先识别手势时是否屏蔽子组件手势时传入该参数：GestureMask.Normal表示不屏蔽子组件手势，适用于父组件优先识别后仍允许子组件手势按默认规则参与识别的场景；GestureMask.IgnoreInternal表示屏蔽子组件手势，适用于希望父组件priorityGesture绑定的手势优先响应并忽略子组件手势的场景。不传入时默认值为GestureMask.Normal。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，可用于链式调用。 |
 
 #### priorityGesture
 
@@ -47,7 +47,7 @@ priorityGesture(gesture: GestureType, mask?: GestureMask): T
 绑定优先识别手势。
 
 1. 默认情况下，子组件优先识别通过gesture绑定的手势，当父组件配置priorityGesture时，父组件优先识别priorityGesture绑定的手势。
-2. 绑定长按手势时，设置触发长按的最短时间小的组件会优先响应，会忽略priorityGesture设置。
+2. 绑定长按手势时，设置的触发长按最短时间小于其他参与手势识别组件的组件会优先响应，并忽略priorityGesture设置。
 
 ![](./img/note_3.0-zh-cn.png) 该接口不支持在[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)中调用。
 
@@ -59,14 +59,14 @@ priorityGesture(gesture: GestureType, mask?: GestureMask): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| gesture | [GestureType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#gesturetype) | 是 | 绑定的手势对象。 |
+| gesture | [GestureType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#gesturetype) | 是 | 绑定的手势对象。绑定长按手势时，设置触发长按的最短时间较小的组件会优先响应，并忽略priorityGesture设置。 |
 | mask | [GestureMask](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#gesturemask枚举说明) | 否 | 事件响应设置。 默认值：GestureMask.Normal |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，可用于链式调用。 |
 
 #### parallelGesture
 
@@ -85,13 +85,13 @@ parallelGesture(gesture: GestureType, mask?: GestureMask): T
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | gesture | [GestureType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#gesturetype) | 是 | 绑定的手势对象。 |
-| mask | [GestureMask](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#gesturemask枚举说明) | 否 | 事件响应设置。 默认值：GestureMask.Normal |
+| mask | [GestureMask](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#gesturemask枚举说明) | 否 | 事件响应设置。当需要配置父子组件手势同时触发时，可传入该参数控制是否屏蔽子组件手势：GestureMask.Normal表示不屏蔽子组件手势，适用于父子组件手势都需要响应的场景；GestureMask.IgnoreInternal表示屏蔽子组件手势，适用于只希望父组件parallelGesture绑定的手势响应的场景。不传入时默认值为GestureMask.Normal。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，可用于链式调用。 |
 
 #### SourceType枚举说明8+
 
@@ -142,8 +142,8 @@ struct GestureSettingsExample {
         Text('TapGesture:' + this.priorityTestValue).fontSize(28)
           .gesture(
             TapGesture()
-              .onAction((event: GestureEvent) => {
-                this.priorityTestValue += '\nText'
+              .onAction(() => {
+                this.priorityTestValue += '\nText';
               }))
       }
       .height(200)
@@ -155,7 +155,7 @@ struct GestureSettingsExample {
       .priorityGesture(
         TapGesture()
           .onAction((event: GestureEvent) => {
-            this.priorityTestValue += '\nColumn'
+            this.priorityTestValue += '\nColumn';
           }), GestureMask.IgnoreInternal)
 
       Column() {
@@ -163,7 +163,7 @@ struct GestureSettingsExample {
           .gesture(
             TapGesture()
               .onAction((event: GestureEvent) => {
-                this.parallelTestValue += '\nText'
+                this.parallelTestValue += '\nText';
               }))
       }
       .height(200)
@@ -175,17 +175,17 @@ struct GestureSettingsExample {
       .parallelGesture(
         TapGesture()
           .onAction((event: GestureEvent) => {
-            this.parallelTestValue += '\nColumn'
+            this.parallelTestValue += '\nColumn';
           }), GestureMask.Normal)
     }
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413140.gif)
+ ![](./img/zh-cn_image_0000002655848446.gif)
 
 #### [h2]示例2（实时监测参与滑动手势的有效触点数量）
 
-该示例通过配置fingerInfos实时监测参与滑动手势的有效触点数量。
+该示例通过读取fingerInfos实时监测参与滑动手势的有效触点数量。
 
 ```
 // xxx.ets
@@ -205,7 +205,7 @@ struct PanGestureWithFingerCount {
   build() {
     Column() {
       // 显示当前有效触点数量
-      Text(`触点数量: ${this.fingerCount}`)
+      Text(`触点数量：${this.fingerCount}`)
         .fontSize(20)
         .margin(10)
 
@@ -221,34 +221,34 @@ struct PanGestureWithFingerCount {
       .gesture(
         PanGesture(this.panOption)
           .onActionStart((event: GestureEvent) => {
-            console.info('Pan start')
-            this.fingerCount = event.fingerInfos?.length || 0 // 记录触点数量
+            console.info('Pan start');
+            this.fingerCount = event.fingerInfos?.length || 0; // 记录触点数量
           })
           .onActionUpdate((event: GestureEvent) => {
             if (event) {
-              console.info(`fingerInfos ${JSON.stringify(event.fingerInfos)}`)
-              this.offsetX = this.positionX + event.offsetX
-              this.offsetY = this.positionY + event.offsetY
-              this.fingerCount = event.fingerInfos?.length || 0 // 更新触点数量，记录下参与当前手势的有效触点的数量
+              console.info(`fingerInfos ${JSON.stringify(event.fingerInfos)}`);
+              this.offsetX = this.positionX + event.offsetX;
+              this.offsetY = this.positionY + event.offsetY;
+              this.fingerCount = event.fingerInfos?.length || 0; // 更新触点数量，记录下参与当前手势的有效触点的数量
             }
           })
-          .onActionEnd((event: GestureEvent) => {
-            this.positionX = this.offsetX
-            this.positionY = this.offsetY
-            this.fingerCount = 0 // 触点离开触摸区域后归零
-            console.info('Pan end')
+          .onActionEnd(() => {
+            this.positionX = this.offsetX;
+            this.positionY = this.offsetY;
+            this.fingerCount = 0; // 触点离开触摸区域后归零
+            console.info('Pan end');
           })
           .onActionCancel(() => {
-            this.fingerCount = 0 // 手势取消后归零
+            this.fingerCount = 0; // 手势取消后归零
           })
       )
 
       Button('切换为双指滑动')
         .onClick(() => {
-          this.panOption.setFingers(2)
+          this.panOption.setFingers(2);
         })
     }
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732369.gif)
+ ![](./img/zh-cn_image_0000002686087875.gif)

@@ -2,8 +2,8 @@
 title: "获取应用级凭证"
 upstream_id: "harmonyos-references/account-api-obtain-app-token"
 catalog: "harmonyos-references"
-content_hash: "cd8761a76133"
-synced_at: "2026-07-09T01:01:12.737075"
+content_hash: "e5e5b04a0edb"
+synced_at: "2026-07-28T16:52:30.300318"
 ---
 
 # 获取应用级凭证
@@ -44,7 +44,7 @@ synced_at: "2026-07-09T01:01:12.737075"
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| grant_type | 是 | String | 授权模式，固定传值“client_credentials”。 |
+| grant_type | 是 | String | 授权模式，本场景固定传值“client_credentials”。 |
 | client_id | 是 | String | 在创建应用后，由AppGallery Connect（简称AGC）为应用分配的唯一标识。参数取值详见[查看应用基本信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-appinfo-0000001100014694)中的**OAuth 2.0客户端ID（凭据）-Client ID**参数。 |
 | client_secret | 是 | String | 在创建应用后，由AppGallery Connect（简称AGC）为应用分配的密钥（Client Secret）。参数取值详见[查看应用基本信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-appinfo-0000001100014694)中的**OAuth 2.0客户端ID（凭据）-Client Secret**参数。 |
 
@@ -182,11 +182,11 @@ public class AppTokenAPIDemo {
 | --- | --- | --- | --- |
 | 1101 | 12304 | client_secret不正确。 | 请前往AppGallery Connect（简称AGC）确认client_secret是否正确。 |
 | 1101 | 20002 | client_id格式不正确。 | 检查client_id是否满足正则：^[0-9]{1,64}$。 |
-| 1101 | 20003 | client_id格式不正确或系统不存在。 | - 检查client_id是否满足正则：^[0-9]{1,64}$。 - 请前往AppGallery Connect（简称AGC）确认client_id是否存在。 |
+| 1101 | 20003 | client_id在系统不存在。 | 请前往AppGallery Connect（简称AGC）确认client_id是否存在。 |
 | 1101 | 20171 | client_secret为空。 | 请按照接口参数的要求，传入正确的client_secret参数。 |
 | 1101 | 20172 | client_secret格式不正确。 | 检查client_secret格式是否满足正则：^[0-9a-zA-Z=/\\+]+$。 |
-| 1101 | 20182 | grant_type值不正确。 | grant_type可选值如下： - “authorization_code”：该场景用于[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token)。 - “refresh_token”： 该场景用于[刷新用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-refresh-token)。 - “client_credentials”：该场景用于[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)。 |
+| 1101 | 20182 | grant_type值不正确。 | grant_type可选值如下： - “authorization_code”：该场景用于[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token)。 - “device_code”：该场景用于[扫码授权登录-获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token-for-qrcode)。 - “refresh_token”： 该场景用于[刷新用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-refresh-token)。 - “client_credentials”：该场景用于[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)。 当前场景请固定传”client_credentials“。 |
 | 1102 | 20001 | client_id为空。 | 请按照接口参数的要求，传入正确的client_id参数。 |
-| 1102 | 20181 | grant_type为空。 | grant_type可选值如下： - “authorization_code”：该场景用于[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token)。 - “refresh_token”： 该场景用于[刷新用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-refresh-token)。 - “client_credentials”：该场景用于[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)。 |
-| 1203 | 12303 | client_id在系统不存在。 | 请前往AppGallery Connect（简称AGC）确认client_id是否存在。 |
-| 1203 | 500 | 系统内部错误。 | 系统内部处理错误，建议业务打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 1102 | 20181 | grant_type为空。 | grant_type可选值如下： - “authorization_code”：该场景用于[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token)。 - “device_code”：该场景用于[扫码授权登录-获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token-for-qrcode)。 - “refresh_token”： 该场景用于[刷新用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-refresh-token)。 - “client_credentials”：该场景用于[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)。 当前场景请固定传”client_credentials“。 |
+| 1203 | 500 | 系统内部错误。 | 系统内部处理错误，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 1203 | 1203 | 系统未知异常。 | 系统未知异常，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |

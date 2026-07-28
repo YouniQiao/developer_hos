@@ -2,8 +2,8 @@
 title: "oh_preferences_option.h"
 upstream_id: "harmonyos-references/capi-oh-preferences-option-h"
 catalog: "harmonyos-references"
-content_hash: "c32aad580e30"
-synced_at: "2026-07-09T00:57:18.550500"
+content_hash: "0123bba43680"
+synced_at: "2026-07-28T16:40:50.967483"
 ---
 
 # oh_preferences_option.h
@@ -102,7 +102,7 @@ int OH_PreferencesOption_SetFileName(OH_PreferencesOption *option, const char *f
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_PreferencesOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-preferences-oh-preferencesoption) *option | 指向Preferences配置选项[OH_PreferencesOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-preferences-oh-preferencesoption)实例对象的指针。 |
-| const char *fileName | 需要设置的文件名称。 |
+| const char *fileName | 需要设置的文件名称。文件名称长度需大于零且小于等于255字节，名称中不能包含'/'且不能以'/'结尾。 |
 
 返回：
 

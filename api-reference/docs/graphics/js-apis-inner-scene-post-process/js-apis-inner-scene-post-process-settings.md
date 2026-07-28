@@ -2,13 +2,13 @@
 title: "ScenePostProcessSettings"
 upstream_id: "harmonyos-references/js-apis-inner-scene-post-process-settings"
 catalog: "harmonyos-references"
-content_hash: "586a61e3a93e"
-synced_at: "2026-07-09T17:27:51.886430"
+content_hash: "d0f334e233f5"
+synced_at: "2026-07-28T16:52:22.138147"
 ---
 
 # ScenePostProcessSettings
 
-本模块提供3D图形中的色调映射等图像后处理方法。
+本模块提供ArkGraphics 3D中的色调映射等图像后处理方法。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -64,7 +64,7 @@ import { ToneMappingType, ToneMappingSettings, BloomSettings, VignetteSettings, 
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| roundness | number | 否 | 是 | 暗角的覆盖区域大小，取值范围为[0, 1]，取值为0时覆盖区域收缩至最小，取值为1时覆盖区域为全局，默认值为sqrt(0.5)（约0.707）。 |
+| roundness | number | 否 | 是 | 暗角的圆度，取值范围为[0, 1]，取值为0时暗角形状趋近矩形，取值为1时暗角形状趋近圆形，默认值为sqrt(0.5)（约0.707）。 |
 | intensity | number | 否 | 是 | 作用强度，取值范围为[0, 1]，取值为0时无暗角效果，取值为1时为最大暗角强度，默认值为0.4。 |
 
 #### ColorFringeSettings22+
@@ -75,7 +75,7 @@ import { ToneMappingType, ToneMappingSettings, BloomSettings, VignetteSettings, 
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| intensity | number | 否 | 是 | 作用强度，取值范围为0到1之间，默认值为0.2。 |
+| intensity | number | 否 | 是 | 作用强度，取值范围为[0, 1]，默认值为0.2。 |
 
 #### PostProcessSettings
 

@@ -2,8 +2,8 @@
 title: "Functions"
 upstream_id: "harmonyos-references/arkts-apis-arkts-utils-f"
 catalog: "harmonyos-references"
-content_hash: "0af0c145c9de"
-synced_at: "2026-07-09T00:57:24.352707"
+content_hash: "ca40dc3b2bbe"
+synced_at: "2026-07-28T16:40:56.649764"
 ---
 
 # Functions
@@ -15,7 +15,7 @@ synced_at: "2026-07-09T00:57:24.352707"
 #### 导入模块
 
 ```
-import { ArkTSUtils } from '@kit.ArkTS'
+import { ArkTSUtils } from '@kit.ArkTS';
 ```
 
 #### ArkTSUtils.isSendable
@@ -32,7 +32,7 @@ isSendable(value: Object | null | undefined): boolean
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | Object | null | undefined | 是 | 待校验的对象。 |
+| value | Object | null | undefined | 是 | 待判断是否为Sendable数据类型的对象。 |
 
 返回值：
 

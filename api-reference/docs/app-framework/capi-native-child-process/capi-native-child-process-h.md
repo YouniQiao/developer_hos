@@ -2,8 +2,8 @@
 title: "native_child_process.h"
 upstream_id: "harmonyos-references/capi-native-child-process-h"
 catalog: "harmonyos-references"
-content_hash: "e2397af7337e"
-synced_at: "2026-07-09T17:23:05.080887"
+content_hash: "2f6919f780b8"
+synced_at: "2026-07-28T16:40:43.612536"
 ---
 
 # native_child_process.h
@@ -62,6 +62,7 @@ synced_at: "2026-07-09T17:23:05.080887"
 | [Ability_NativeChildProcess_ErrCode OH_Ability_UnregisterNativeChildProcessExitCallback(OH_Ability_OnNativeChildProcessExit onProcessExit)](#oh_ability_unregisternativechildprocessexitcallback) | - | 解注册子进程退出回调。 |
 | [Ability_NativeChildProcess_ErrCode OH_Ability_ChildProcessConfigs_SetIsolationUid(Ability_ChildProcessConfigs* configs, bool isolationUid)](#oh_ability_childprocessconfigs_setisolationuid) | - | 设置子进程配置信息对象的uid是否隔离。该设置仅在NativeChildProcess_IsolationMode为NCP_ISOLATION_MODE_ISOLATED时生效。 |
 | [Ability_NativeChildProcess_ErrCode OH_Ability_KillChildProcess(int32_t pid)](#oh_ability_killchildprocess) | - | 终止当前进程创建的子进程。 |
+| [OH_Ability_IsNativeChildProcessSupported()](#oh_ability_isnativechildprocesssupported) | - | 查询是否允许调用者在此设备上创建Native子进程。 |
 
 #### 枚举类型说明
 
@@ -403,7 +404,7 @@ void Main(NativeChildProcess_Args args);
 
 5. 子进程将在Main(args)函数返回后退出。
 
-设备行为差异： 对于API 13及之前版本，该接口在PC/2in1设备中可正常使用，在其他设备类型中返回[NCP_ERR_NOT_SUPPORTED](#ability_nativechildprocess_errcode)错误码。对于API 14及之后版本，该接口在PC/2in1、Tablet中可正常使用，在其他设备类型中返回[NCP_ERR_NOT_SUPPORTED](#ability_nativechildprocess_errcode)错误码。
+设备行为差异： 在API version 13及之前，该接口在PC/2in1设备中可正常使用，在其他设备类型中返回[NCP_ERR_NOT_SUPPORTED](#ability_nativechildprocess_errcode)错误码。从API version 14开始，该接口在PC/2in1、Tablet中可正常使用，在其他设备类型中返回[NCP_ERR_NOT_SUPPORTED](#ability_nativechildprocess_errcode)错误码。
 
 起始版本： 13
 
@@ -589,3 +590,20 @@ Ability_NativeChildProcess_ErrCode OH_Ability_KillChildProcess(int32_t pid)
 | 类型 | 说明 |
 | --- | --- |
 | [Ability_NativeChildProcess_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-child-process-h#ability_nativechildprocess_errcode) | NCP_NO_ERROR - 调用成功。 NCP_ERR_SERVICE_ERROR - 服务端出错。 NCP_ERR_INVALID_PID - 所传入的子进程pid不合法。 详见Ability_NativeChildProcess_ErrCode。 |
+
+#### [h2]OH_Ability_IsNativeChildProcessSupported()
+
+```
+bool OH_Ability_IsNativeChildProcessSupported()
+```
+ 描述
+
+查询是否允许调用者在此设备上创建[Native子进程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-terminology#native子进程)。
+
+起始版本： 26.0.0
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| boolean | 是否允许调用者创建Native子进程。 true：允许创建Native子进程。 false：不允许创建Native子进程。 默认值：false。 |

@@ -2,8 +2,8 @@
 title: "Constants"
 upstream_id: "harmonyos-references/arkts-apis-audio-c"
 catalog: "harmonyos-references"
-content_hash: "c205122ae206"
-synced_at: "2026-07-09T01:00:08.632206"
+content_hash: "388ac8aac9d6"
+synced_at: "2026-07-28T16:51:26.309835"
 ---
 
 # Constants
@@ -12,8 +12,8 @@ synced_at: "2026-07-09T01:00:08.632206"
 
 | 名称 | 类型 | 只读 | 说明 |
 | --- | --- | --- | --- |
-| DEFAULT_VOLUME_GROUP_ID9+ | number | 是 | 默认音量组id。 **系统能力：** SystemCapability.Multimedia.Audio.Volume |
-| DEFAULT_INTERRUPT_GROUP_ID9+ | number | 是 | 默认音频中断组id。 **系统能力：** SystemCapability.Multimedia.Audio.Interrupt |
+| DEFAULT_VOLUME_GROUP_ID9+ | number | 是 | 默认音量组ID。 **系统能力：** SystemCapability.Multimedia.Audio.Volume |
+| DEFAULT_INTERRUPT_GROUP_ID9+ | number | 是 | 默认音频中断组ID。 **系统能力：** SystemCapability.Multimedia.Audio.Interrupt |
 
 示例：
 

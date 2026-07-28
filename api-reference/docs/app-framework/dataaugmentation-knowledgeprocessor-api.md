@@ -2,15 +2,15 @@
 title: "knowledgeProcessor（知识加工）"
 upstream_id: "harmonyos-references/dataaugmentation-knowledgeprocessor-api"
 catalog: "harmonyos-references"
-content_hash: "d027b7894316"
-synced_at: "2026-07-09T00:59:02.209866"
+content_hash: "da37eba2a165"
+synced_at: "2026-07-28T16:50:05.745192"
 ---
 
 # knowledgeProcessor（知识加工）
 
 本模块提供获取知识加工对象（KnowledgeProcessor）以及获取知识加工状态（ProcessorStatus）的能力。
 
-由于知识加工能力依赖的嵌入模型只支持在PC/2in1部署，因此当前知识加工能力仅支持PC/2in1设备。
+由于知识加工能力依赖的嵌入模型只支持在PC/2in1部署，因此当前知识加工能力仅支持PC/2in1设备。在其他设备类型中不可用会抛出异常。
 
 起始版本： 6.0.0(20)
 
@@ -45,7 +45,7 @@ getKnowledgeProcessor(context: common.BaseContext, config: KnowledgeProcessorCon
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，返回知识加工对象。 |
+| Promise | Promise对象，返回知识加工对象。该对象可用于获取知识加工状态（getStatus）、启动知识加工（startProcess）和停止知识加工（stopProcess）等操作。 |
 
 错误码：
 
@@ -97,6 +97,8 @@ cleanKnowledgeData(context: common.Context, config: KnowledgeProcessorConfig): P
 根据入参中的知识加工配置获取对应知识库信息，将对应知识库进行清空。使用promise异步回调。
 
 在schema升级场景下，首次开库或调用[getKnowledgeProcessor](#getknowledgeprocessor)接口前调用cleanKnowledgeData接口，其他场景调用可能会导致知识库数据丢失或者数据损坏。
+
+![](./img/caution_3.0-zh-cn.png) 在schema升级场景中，为避免数据不一致，强烈建议仅在首次开库或调用getKnowledgeProcessor接口前调用cleanKnowledgeData接口以清理旧数据。非schema升级场景下请勿调用此接口，否则可能导致已有知识库数据永久丢失或损坏，且无法恢复。
 
 模型约束： 此接口仅可在Stage模型下使用。
 

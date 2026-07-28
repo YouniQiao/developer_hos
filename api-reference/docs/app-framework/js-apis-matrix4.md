@@ -2,8 +2,8 @@
 title: "@ohos.matrix4 (矩阵变换)"
 upstream_id: "harmonyos-references/js-apis-matrix4"
 catalog: "harmonyos-references"
-content_hash: "ae7805018dc6"
-synced_at: "2026-07-09T00:57:31.324369"
+content_hash: "8efe10b1e186"
+synced_at: "2026-07-28T16:41:15.806116"
 ---
 
 # @ohos.matrix4 (矩阵变换)
@@ -36,7 +36,7 @@ Matrix的构造函数，可以通过传入的参数创建一个四阶矩阵，�
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [number,number,number,number, number,number,number,number, number,number,number,number, number,number,number,number] | 是 | 参数为长度为16（4*4）的number数组, 详情见四阶矩阵说明。 各number取值范围：(-∞, +∞) 默认值： [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1] |
+| options | [number,number,number,number, number,number,number,number, number,number,number,number, number,number,number,number] | 是 | 参数为长度为16（4*4）的number数组， 详情见四阶矩阵说明。 各number取值范围：(-∞, +∞) 默认值： [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1] |
 
 返回值：
 
@@ -60,12 +60,12 @@ Matrix的构造函数，可以通过传入的参数创建一个四阶矩阵，�
 | m21 | number | 是 | 第10个值，xyz轴旋转会影响这个值。 |
 | m22 | number | 是 | z轴缩放值，单位矩阵默认为1。 |
 | m23 | number | 是 | 第12个值，透视投影会影响这个值。 |
-| m30 | number | 是 | x轴平移值，单位px，单位矩阵默认为0。 |
-| m31 | number | 是 | y轴平移值，单位px，单位矩阵默认为0。 |
-| m32 | number | 是 | z轴平移值，单位px，单位矩阵默认为0。 |
-| m33 | number | 是 | 齐次坐标下生效，产生透视投影效果。 |
+| m30 | number | 是 | x轴平移值，单位：px，单位矩阵默认为0。 |
+| m31 | number | 是 | y轴平移值，单位：px，单位矩阵默认为0。 |
+| m32 | number | 是 | z轴平移值，单位：px，单位矩阵默认为0。 |
+| m33 | number | 是 | 在齐次坐标下生效，产生透视投影效果。 |
 
-示例
+示例：
 
 ```
 import { matrix4 } from '@kit.ArkUI';
@@ -84,7 +84,7 @@ struct Tests {
     Column() {
       // $r("app.media.zh")需要替换为开发者所需的图像资源文件。
       Image($r("app.media.zh"))
-        .width("40%")
+        .width('40%')
         .height(100)
         .transform(matrix)
     }
@@ -96,7 +96,7 @@ struct Tests {
 
 identity(): Matrix4Transit
 
-Matrix的初始化函数，可以返回一个单位矩阵对象。
+Matrix的初始化函数，可以返回一个初始的单位矩阵对象，可作为后续矩阵变换操作的基础。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -128,7 +128,7 @@ struct Tests {
     Column() {
       // $r("app.media.zh")需要替换为开发者所需的图像资源文件。
       Image($r("app.media.zh"))
-        .width("40%")
+        .width('40%')
         .height(100)
         .transform(matrix1)
       // $r("app.media.zh")需要替换为开发者所需的图像资源文件。
@@ -180,7 +180,7 @@ struct Test {
   imageSize: Length = '300px';
 
   build() {
-    Column({ space: "50px" }) {
+    Column({ space: '50px' }) {
       // $r("app.media.testImage")需要替换为开发者所需的图像资源文件。
       Image($r("app.media.testImage"))
         .width(this.imageSize)
@@ -196,12 +196,12 @@ struct Test {
         .height(this.imageSize)
         .transform(this.matrix2)
     }.alignItems(HorizontalAlign.Center)
-    .height('100%').width("100%")
+    .height('100%').width('100%')
     .justifyContent(FlexAlign.Center)
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631412964.png)
+ ![](./img/zh-cn_image_0000002686087699.png)
 
 #### [h2]combine
 
@@ -242,7 +242,7 @@ struct Test {
       // 矩阵变换前
       // $r("app.media.icon")需要替换为开发者所需的图像资源文件。
       Image($r("app.media.icon"))
-        .width("40%")
+        .width('40%')
         .height(100)
         .margin({ top: 50 })
       // 先平移x轴200px，再缩放两倍x轴，得到矩阵变换后的效果图
@@ -256,7 +256,7 @@ struct Test {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732195.png)
+ ![](./img/zh-cn_image_0000002685927871.png)
 
 #### [h2]invert
 
@@ -342,13 +342,13 @@ struct Test {
     Column() {
       // $r("app.media.bg1")需要替换为开发者所需的图像资源文件。
       Image($r("app.media.bg1")).transform(this.matrix1)
-        .width("40%")
+        .width('40%')
         .height(100)
     }
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253074.png)
+ ![](./img/zh-cn_image_0000002656008192.png)
 
 #### [h2]scale
 
@@ -394,13 +394,13 @@ struct Test {
     Column() {
       // $r("app.media.testImage")需要替换为开发者所需的图像资源文件。
       Image($r("app.media.testImage")).transform(this.matrix1)
-        .width("300px")
+        .width('300px')
         .height("300px")
     }.width("100%").height("100%").justifyContent(FlexAlign.Center)
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612259.png)
+ ![](./img/zh-cn_image_0000002655848272.png)
 
 #### [h2]skew12+
 
@@ -418,8 +418,8 @@ Matrix的倾斜函数，可以为当前矩阵增加x轴/y轴倾斜效果。会�
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| x | number | 是 | 设置x轴倾斜参数。 |
-| y | number | 是 | 设置y轴倾斜参数。 |
+| x | number | 是 | x轴倾斜参数，用于设置x轴方向的倾斜程度。 值为0时无倾斜，正值和负值对应不同方向的倾斜效果。 |
+| y | number | 是 | y轴倾斜参数，用于设置y轴方向的倾斜程度。 值为0时无倾斜，正值和负值对应不同方向的倾斜效果。 |
 
 返回值：
 
@@ -447,12 +447,12 @@ struct Test {
           top: 300
         })
     }
-    .width("100%")
+    .width('100%')
     .height("100%")
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631412966.jpeg)
+ ![](./img/zh-cn_image_0000002686087701.jpeg)
 
 #### [h2]rotate
 
@@ -497,13 +497,13 @@ struct Test {
     Column() {
       // $r("app.media.bg1")需要替换为开发者所需的图像资源文件。
       Image($r("app.media.bg1")).transform(this.matrix1)
-        .width("40%")
+        .width('40%')
         .height(100)
     }.width("100%").margin({ top: 50 })
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732197.png)
+ ![](./img/zh-cn_image_0000002685927873.png)
 
 #### [h2]transformPoint
 
@@ -525,7 +525,7 @@ Matrix的坐标点转换函数，可以将当前的变换效果作用到一个�
 
 | 类型 | 说明 |
 | --- | --- |
-| [number, number] | 返回矩阵变换后的Point对象。 |
+| [number, number] | 返回矩阵变换后的坐标点，格式为[x, y]。 |
 
 示例：
 
@@ -559,17 +559,17 @@ struct Test {
         .height('300px')
         .margin({ top: 50 })
         .transform(this.matrix_2)
-    }.width("100%").padding(50)
+    }.width('100%').padding(50)
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253076.png)
+ ![](./img/zh-cn_image_0000002656008194.png)
 
 #### [h2]setPolyToPoly12+
 
 setPolyToPoly(options: PolyToPolyOptions): Matrix4Transit
 
-将一个多边形的顶点坐标映射到另外一个多边形的顶点坐标。
+将一个多边形的顶点坐标映射到另外一个多边形的顶点坐标。适用于需要进行自定义形变的场景，如图片透视校正、实现3D视觉效果、卡片翻转效果等。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -581,7 +581,7 @@ setPolyToPoly(options: PolyToPolyOptions): Matrix4Transit
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [PolyToPolyOptions](#polytopolyoptions12) | 是 | 映射相关的参数。 |
+| options | [PolyToPolyOptions](#polytopolyoptions12) | 是 | 多边形映射参数，用于指定源多边形顶点坐标和目标多边形顶点坐标的映射关系。 |
 
 返回值：
 
@@ -615,11 +615,11 @@ struct Index {
         .transform(this.matrix1)
         .width('500px')
         .height('500px')
-    }.width("100%").height("100%").opacity(0.5)
+    }.width('100%').height('100%').opacity(0.5)
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612261.png)
+ ![](./img/zh-cn_image_0000002655848274.png)
 
 #### TranslateOption
 
@@ -651,11 +651,11 @@ struct Index {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| x | number | 否 | 是 | 旋转轴向量x坐标。 默认值：0。 取值范围 (-∞, +∞) |
-| y | number | 否 | 是 | 旋转轴向量y坐标。 默认值：0。 取值范围 (-∞, +∞) |
+| x | number | 否 | 是 | 旋转轴向量x坐标，用于指定旋转轴在x方向的分量。当需要绕包含x分量的轴旋转时传入此参数，不传入时旋转轴x分量默认为0。 默认值：0 取值范围：(-∞, +∞) |
+| y | number | 否 | 是 | 旋转轴向量y坐标，用于指定旋转轴在y方向的分量。当需要绕包含y分量的轴旋转时传入此参数，不传入时旋转轴y分量默认为0。 默认值：0 取值范围：(-∞, +∞) |
 | z | number | 否 | 是 | 旋转轴向量z坐标。 默认值：0。 取值范围 (-∞, +∞)。 **说明：** 旋转向量中x、y、z至少有一个不为0才有意义。 |
-| angle | number | 否 | 是 | 旋转角度。 默认值：0 |
-| centerX | number | 否 | 是 | 单次矩阵变换中心点相对于组件变换中心点（锚点）的额外x轴偏移值。 单位：px 默认值：0 **说明：** 为0时表示x方向的矩阵变换中心恰好为组件x方向锚点，取值表示相对组件x方向锚点的额外偏移量。具体实现可参考[示例3（按中心点旋转）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#示例3按中心点旋转)。 |
+| angle | number | 否 | 是 | 旋转角度，用于设置组件绕旋转轴的旋转量。当需要旋转组件时传入此参数，不传入时组件不做旋转。 默认值：0 |
+| centerX | number | 否 | 是 | 单次矩阵变换操作的中心点相对于组件变换中心点（锚点）的额外x轴偏移值。 单位：px 默认值：0 **说明：** 为0时表示x方向的矩阵变换中心恰好为组件x方向锚点，取值表示相对组件x方向锚点的额外偏移量。具体实现可参考[示例3（按中心点旋转）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#示例3按中心点旋转)。 |
 | centerY | number | 否 | 是 | 单次矩阵变换中心点相对于组件变换中心点（锚点）的额外y轴偏移值。 单位：px 默认值：0 **说明：** 为0时表示y方向的矩阵变换中心恰好为组件y方向锚点，取值表示相对组件y方向锚点的额外偏移量。具体实现可参考[示例3（按中心点旋转）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#示例3按中心点旋转)。 |
 
 #### PolyToPolyOptions12+
@@ -670,9 +670,9 @@ struct Index {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| src | Array | 否 | 否 | 源点坐标。 |
-| srcIndex | number | 否 | 是 | 源点坐标起始索引。 默认值:0 取值范围：[0, +∞) |
-| dst | Array | 否 | 否 | 目标点坐标。 |
+| src | Array | 否 | 否 | 源多边形顶点坐标，用于定义映射变换的起始形状。 |
+| srcIndex | number | 否 | 是 | 源点坐标起始索引，用于指定从src数组的哪个位置开始取点。当需要从src数组特定位置开始取源点时传入此参数，不传入时从索引0开始取点。 默认值：0 取值范围：[0, +∞) |
+| dst | Array | 否 | 否 | 目标多边形顶点坐标，用于定义映射变换的目标形状。 |
 | dstIndex | number | 否 | 是 | 目标坐标起始索引。 默认值: src.length/2 取值范围：[0, +∞) |
 | pointCount | number | 否 | 是 | 使用到的点数量。要使用的点的数量如果为0，则返回单位矩阵。如果为1，则返回一个将两个点改变之前的平移矩阵。如果为2-4，则返回一个变换矩阵。 默认值: 0 取值范围：[0, +∞) |
 
@@ -688,8 +688,8 @@ struct Index {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| x | number | 否 | 否 | x轴坐标。 取值范围：(-∞, +∞) |
-| y | number | 否 | 否 | y轴坐标。 取值范围：(-∞, +∞) |
+| x | number | 否 | 否 | x轴坐标。 单位：px 取值范围：(-∞, +∞) |
+| y | number | 否 | 否 | y轴坐标。 单位：px 取值范围：(-∞, +∞) |
 
 #### matrix4.copy(deprecated)
 
@@ -724,7 +724,7 @@ struct Test {
     Column() {
       // $r("app.media.bg1")需要替换为开发者所需的图像资源文件。
       Image($r("app.media.bg1"))
-        .width("40%")
+        .width('40%')
         .height(100)
         .transform(this.matrix1)
       // $r("app.media.bg2")需要替换为开发者所需的图像资源文件。
@@ -737,7 +737,7 @@ struct Test {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631412968.png)
+ ![](./img/zh-cn_image_0000002686087703.png)
 
 #### matrix4.invert(deprecated)
 
@@ -769,7 +769,7 @@ Matrix的叠加函数，可以将两个矩阵的效果叠加起来生成一个�
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [Matrix4Transit](#matrix4transit) | 是 | 待叠加的矩阵对象。 |
+| options | [Matrix4Transit](#matrix4transit) | 是 | 待叠加的矩阵对象，其变换效果将与单位矩阵进行叠加。 |
 
 返回值：
 
@@ -791,7 +791,7 @@ Matrix的平移函数，可以为当前矩阵增加x轴/y轴/z轴平移效果。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [TranslateOption](#translateoption) | 是 | 设置平移参数。 |
+| options | [TranslateOption](#translateoption) | 是 | 平移配置参数，用于设置x轴、y轴、z轴的平移距离。 |
 
 返回值：
 
@@ -813,7 +813,7 @@ Matrix的缩放函数，可以为当前矩阵增加x轴/y轴/z轴缩放效果。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [ScaleOption](#scaleoption) | 是 | 设置缩放参数。 |
+| options | [ScaleOption](#scaleoption) | 是 | 缩放配置参数，用于设置x轴、y轴、z轴的缩放倍数及变换中心点坐标。 |
 
 返回值：
 
@@ -835,7 +835,7 @@ Matrix的旋转函数，可以为当前矩阵增加x轴/y轴/z轴旋转效果。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [RotateOption](#rotateoption) | 是 | 设置旋转参数。 |
+| options | [RotateOption](#rotateoption) | 是 | 旋转配置参数，用于设置旋转轴向量(x/y/z)、旋转角度及变换中心点偏移值。 |
 
 返回值：
 
@@ -863,4 +863,4 @@ Matrix的坐标点转换函数，可以将当前的变换效果作用到一个�
 
 | 类型 | 说明 |
 | --- | --- |
-| [number, number] | 返回矩阵变换后的Point对象。 |
+| [number, number] | 返回矩阵变换后的坐标点，格式为[x, y]。 |

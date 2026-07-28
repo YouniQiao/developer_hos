@@ -2,8 +2,8 @@
 title: "GlobalColorPicker"
 upstream_id: "harmonyos-references/pen-imagefeaturepicker-c"
 catalog: "harmonyos-references"
-content_hash: "b177ba0b6487"
-synced_at: "2026-07-09T00:59:59.043709"
+content_hash: "d0d24b33e92b"
+synced_at: "2026-07-28T16:51:17.485899"
 ---
 
 # GlobalColorPicker
@@ -62,8 +62,6 @@ typedef void(* HMS_GCP_OnResult) (void *userData, HMS_GCP_PickedColorInfo colorI
 此回调用于接收拾取的颜色结果。
 
 起始版本： 5.0.0(12)
-
-参数:
 
 | 名称 | 描述 |
 | --- | --- |
@@ -126,8 +124,6 @@ int32_t HMS_GCP_StartColorPicker (int32_t initialPosX, int32_t initialPosY, HMS_
 
 起始版本： 5.0.0(12)
 
-参数:
-
 | 名称 | 描述 |
 | --- | --- |
 | initialPosX | 取色器初始位置的x轴坐标。取值范围：0~屏幕的实际宽度，单位px。 |
@@ -147,8 +143,6 @@ int32_t HMS_GCP_StartColorPickerWithColorValue (int32_t initialPosX, int32_t ini
 此API用于启动取色器，在取色器移动时显示值。
 
 起始版本： 5.1.0(18)
-
-参数：
 
 | 名称 | 描述 |
 | --- | --- |

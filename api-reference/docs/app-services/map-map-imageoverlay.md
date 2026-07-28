@@ -2,8 +2,8 @@
 title: "Interface (ImageOverlay)"
 upstream_id: "harmonyos-references/map-map-imageoverlay"
 catalog: "harmonyos-references"
-content_hash: "9acfdeef86fe"
-synced_at: "2026-07-09T01:01:25.956109"
+content_hash: "d535d8bdacb0"
+synced_at: "2026-07-28T16:52:44.092090"
 ---
 
 # Interface (ImageOverlay)
@@ -44,7 +44,9 @@ let imageOverlayParams: mapCommon.ImageOverlayParams = {
   visible: true,
   bearing: 0
 };
+// 添加图片覆盖物
 let imageOverlay = await this.mapController.addImageOverlay(imageOverlayParams);
+// 设置覆盖物旋转角度为180度
 imageOverlay.setBearing(180);
 let bearing: number = imageOverlay.getBearing();
 ```
@@ -67,7 +69,7 @@ getBearing(): number
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 返回覆盖物的旋转角度，单位：度。 |
+| number | 返回覆盖物的旋转角度，单位：度（°）。 |
 
 示例：
 
@@ -249,7 +251,7 @@ setBearing(bearing: number): void
 
 | **参数名** | **类型** | 必填 | **说明** |
 | --- | --- | --- | --- |
-| bearing | number | 是 | 覆盖物的旋转角度，单位：度。 以正北方向为0度、顺时针方向为正的角度，默认值为0，取值范围：[0, 360)。超出取值范围的值会换算成取值范围内的值，比如361会被换算成1，-1换算为359。 |
+| bearing | number | 是 | 覆盖物的旋转角度，单位：°。 以正北方向为0°、顺时针方向为正的角度，默认值为0°，取值范围：[0, 360)。超出取值范围的值会换算成取值范围内的值，比如361°会被换算成1°，-1°换算为359°。 |
 
 示例：
 
@@ -328,7 +330,7 @@ setImage(image: ResourceStr | image.PixelMap): Promise<void>
 
 | **参数名** | **类型** | 必填 | **说明** |
 | --- | --- | --- | --- |
-| image | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 是 | 覆盖物的图像。 图片格式支持jpg、jpeg、png、gif、webp、svg。 **说明：** [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr)为Resource和string两种格式，其中string类型入参支持两种格式： - 资源相对路径格式：图标存放在resources/rawfile，image参数传入rawfile文件夹下的相对路径。 - toDataURL格式（如data:image/png;base64,）。 |
+| image | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 是 | 覆盖物的图像。 图片格式支持jpg、jpeg、png、gif（只支持显示第一帧）、webp、svg。 **说明：** [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr)为Resource和string两种格式，其中string类型入参支持两种格式： - 资源相对路径格式：图标存放在resources/rawfile，image参数传入rawfile文件夹下的相对路径。 - toDataURL格式（如data:image/png;base64,）。 |
 
 返回值：
 

@@ -2,8 +2,8 @@
 title: "自定义事件分发"
 upstream_id: "harmonyos-references/ts-universal-attributes-on-child-touch-test"
 catalog: "harmonyos-references"
-content_hash: "49eb52beba09"
-synced_at: "2026-07-09T00:57:36.936754"
+content_hash: "2fe8a224e8c2"
+synced_at: "2026-07-28T16:41:56.936108"
 ---
 
 # 自定义事件分发
@@ -12,7 +12,7 @@ synced_at: "2026-07-09T00:57:36.936754"
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 从API version 10开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+- 从API version 10开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 - 本模块接口仅可在Stage模型下使用。
 - onClick和旋转、捏合手势经过自定义事件分发后，可能会因为未命中触摸热区导致事件不响应。
 
@@ -35,13 +35,13 @@ onChildTouchTest(event: (value: Array<TouchTestInfo>) => TouchResult): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| event | (value: Array) => TouchResult | 是 | 触摸事件信息。value的值为包含子节点信息的数组。 |
+| event | (value: Array) => [TouchResult](#touchresult11) | 是 | 自定义触摸测试的回调函数，用于接收包含子节点触摸测试信息的数组value，value中仅包含开发者通过id属性设置了id的命名节点的信息，并返回TouchResult以控制子节点的事件分发策略。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，可用于链式调用。 |
 
 #### TouchTestInfo11+
 
@@ -88,7 +88,7 @@ onChildTouchTest(event: (value: Array<TouchTestInfo>) => TouchResult): T
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | strategy | [TouchTestStrategy](#touchteststrategy11枚举说明) | 否 | 否 | 事件派发策略。 |
-| id | string | 否 | 是 | 子组件的唯一标识。 当strategy为TouchTestStrategy.DEFAULT时，id是可选的；当strategy是TouchTestStrategy.FORWARD_COMPETITION或TouchTestStrategy.FORWARD时，id是必需的（如果没有返回id，则当成TouchTestStrategy.DEFAULT处理）。 |
+| id | string | 否 | 是 | 子组件的唯一标识。 当strategy为TouchTestStrategy.DEFAULT时，id是可选的；当strategy是TouchTestStrategy.FORWARD_COMPETITION或TouchTestStrategy.FORWARD时，id是必需的（如果没有返回id，则视为TouchTestStrategy.DEFAULT处理）。 |
 
 #### TouchTestStrategy11+枚举说明
 
@@ -103,14 +103,14 @@ onChildTouchTest(event: (value: Array<TouchTestInfo>) => TouchResult): T
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
 | DEFAULT | 0 | 自定义分发不产生影响，系统按当前节点命中状态分发事件。 |
-| FORWARD_COMPETITION | 1 | 应用指定分发事件到某个子节点，其他兄弟节点是否分发事件交由系统决定。 |
-| FORWARD | 2 | 应用指定分发事件到某个子节点，系统不再分发事件到其他兄弟节点。 |
+| FORWARD_COMPETITION | 1 | 应用指定将事件分发到某个子节点，系统决定是否继续向其他兄弟节点分发事件。 |
+| FORWARD | 2 | 应用指定将事件分发到某个子节点，系统不再将事件分发到其他兄弟节点。 |
 
 #### 示例
 
 #### [h2]示例1（设置事件派发策略为FORWARD_COMPETITION）
 
-该示例点击List下方空白区域后拖动，可使List滑动。点击Button按钮时，Button会响应onClick事件。
+在该示例中，点击List下方空白区域后拖动，可使List滑动。点击Button按钮时，Button会响应onClick事件。
 
 ```
 // xxx.ets
@@ -119,9 +119,9 @@ import { PromptAction } from '@kit.ArkUI';
 @Entry
 @Component
 struct ListExample {
-  private arr: number[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  private arr: number[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
   promptAction: PromptAction = this.getUIContext().getPromptAction();
-  @State text: string = 'Button'
+  @State text: string = 'Button';
 
   build() {
     Column() {
@@ -142,11 +142,11 @@ struct ListExample {
       .scrollBar(BarState.Off)
       .edgeEffect(EdgeEffect.Spring)
       .onScrollIndex((start: number, end: number) => {
-        console.info(`first ${start}`)
-        console.info(`last ${end}`)
+        console.info(`first ${start}`);
+        console.info(`last ${end}`);
       })
       .onDidScroll((scrollOffset: number, scrollState: ScrollState) => {
-        console.info(`onScroll scrollState = ScrollState ${scrollState.toString()}, scrollOffset = ${scrollOffset}`)
+        console.info(`onScroll scrollState = ScrollState ${scrollState.toString()}, scrollOffset = ${scrollOffset}`);
       })
       .width('100%')
       .height('65%')
@@ -160,8 +160,8 @@ struct ListExample {
         .fontWeight(FontWeight.Medium)
         .margin({ top: 80 })
         .onClick(() => {
-          this.text = 'click the button'
-          this.promptAction.showToast({ message: 'you click the button.', duration: 3000 })
+          this.text = 'click the button';
+          this.promptAction.showToast({ message: 'you click the button.', duration: 3000 });
         })
     }
     .width('100%')
@@ -171,7 +171,7 @@ struct ListExample {
     .padding({ left: 12, right: 12, bottom: 24 })
     .onChildTouchTest((touchInfo) => {
       for (let info of touchInfo) {
-        if (info.id == 'MyList') {
+        if (info.id === 'MyList') {
           return { id: info.id, strategy: TouchTestStrategy.FORWARD_COMPETITION }
         }
       }
@@ -180,7 +180,7 @@ struct ListExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612317.gif)
+ ![](./img/zh-cn_image_0000002655848330.gif)
 
 #### [h2]示例2（设置事件派发策略为FORWARD）
 
@@ -193,9 +193,9 @@ import { PromptAction } from '@kit.ArkUI';
 @Entry
 @Component
 struct ListExample {
-  private arr: number[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  private arr: number[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
   promptAction: PromptAction = this.getUIContext().getPromptAction();
-  @State text: string = 'Button'
+  @State text: string = 'Button';
 
   build() {
     Column() {
@@ -216,11 +216,11 @@ struct ListExample {
       .scrollBar(BarState.Off)
       .edgeEffect(EdgeEffect.Spring)
       .onScrollIndex((start: number, end: number) => {
-        console.info(`first ${start}`)
-        console.info(`last ${end}`)
+        console.info(`first ${start}`);
+        console.info(`last ${end}`);
       })
       .onDidScroll((scrollOffset: number, scrollState: ScrollState) => {
-        console.info(`onScroll scrollState = ScrollState ${scrollState.toString()}, scrollOffset = ${scrollOffset}`)
+        console.info(`onScroll scrollState = ScrollState ${scrollState.toString()}, scrollOffset = ${scrollOffset}`);
       })
       .width('100%')
       .height('65%')
@@ -234,8 +234,8 @@ struct ListExample {
         .fontWeight(FontWeight.Medium)
         .margin({ top: 80 })
         .onClick(() => {
-          this.text = 'click the button'
-          this.promptAction.showToast({ message: 'you click the button.', duration: 3000 })
+          this.text = 'click the button';
+          this.promptAction.showToast({ message: 'you click the button.', duration: 3000 });
         })
     }
     .width('100%')
@@ -245,7 +245,7 @@ struct ListExample {
     .padding({ left: 12, right: 12, bottom: 24 })
     .onChildTouchTest((touchInfo) => {
       for (let info of touchInfo) {
-        if (info.id == 'MyList') {
+        if (info.id === 'MyList') {
           return { id: info.id, strategy: TouchTestStrategy.FORWARD }
         }
       }
@@ -254,7 +254,7 @@ struct ListExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413024.gif)
+ ![](./img/zh-cn_image_0000002686087759.gif)
 
 #### [h2]示例3（设置事件派发策略为DEFAULT）
 
@@ -267,9 +267,9 @@ import { PromptAction } from '@kit.ArkUI';
 @Entry
 @Component
 struct ListExample {
-  private arr: number[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  private arr: number[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
   promptAction: PromptAction = this.getUIContext().getPromptAction();
-  @State text: string = 'Button'
+  @State text: string = 'Button';
 
   build() {
     Column() {
@@ -290,11 +290,11 @@ struct ListExample {
       .scrollBar(BarState.Off)
       .edgeEffect(EdgeEffect.Spring)
       .onScrollIndex((start: number, end: number) => {
-        console.info(`first ${start}`)
-        console.info(`last ${end}`)
+        console.info(`first ${start}`);
+        console.info(`last ${end}`);
       })
       .onDidScroll((scrollOffset: number, scrollState: ScrollState) => {
-        console.info(`onScroll scrollState = ScrollState ${scrollState.toString()}, scrollOffset = ${scrollOffset}`)
+        console.info(`onScroll scrollState = ScrollState ${scrollState.toString()}, scrollOffset = ${scrollOffset}`);
       })
       .width('100%')
       .height('65%')
@@ -308,8 +308,8 @@ struct ListExample {
         .fontWeight(FontWeight.Medium)
         .margin({ top: 80 })
         .onClick(() => {
-          this.text = 'click the button'
-          this.promptAction.showToast({ message: 'you click the button.', duration: 3000 })
+          this.text = 'click the button';
+          this.promptAction.showToast({ message: 'you click the button.', duration: 3000 });
         })
     }
     .width('100%')
@@ -317,10 +317,10 @@ struct ListExample {
     .backgroundColor(0xF1F3F5)
     .justifyContent(FlexAlign.End)
     .padding({ left: 12, right: 12, bottom: 24 })
-    .onChildTouchTest((touchInfo) => {
+    .onChildTouchTest(() => {
       return { strategy: TouchTestStrategy.DEFAULT }
     })
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732255.gif)
+ ![](./img/zh-cn_image_0000002685927931.gif)

@@ -2,8 +2,8 @@
 title: "@ohos.process (获取进程相关的信息)"
 upstream_id: "harmonyos-references/js-apis-process"
 catalog: "harmonyos-references"
-content_hash: "ebdb3c5c67e7"
-synced_at: "2026-07-09T00:57:24.801086"
+content_hash: "f336b7f27b7c"
+synced_at: "2026-07-28T16:40:57.039975"
 ---
 
 # @ohos.process (获取进程相关的信息)
@@ -198,8 +198,8 @@ kill(signal: number, pid: number): boolean
 示例：
 
 ```
-let pres = process.pid;
-let result = process.kill(28, pres);
+let pid = process.pid;
+let result = process.kill(28, pid);
 ```
 
 #### process.exit(deprecated)
@@ -208,7 +208,7 @@ exit(code: number): void
 
 终止程序。
 
-请谨慎使用此接口。调用此接口后应用将退出。如果输入参数非0，可能会导致数据丢失或出现异常。
+请谨慎使用此接口。调用此接口后应用将退出。如果输入参数非0，可能会导致数据丢失或出现未定义的运行异常。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，建议使用[exit9+](#exit9)替代。
 
@@ -308,7 +308,9 @@ isAppUid(v: number): boolean
 示例：
 
 ```
-let result = process.isAppUid(688);
+// uid通过process.uid获取
+let pres = process.uid;
+let result = process.isAppUid(pres);
 ```
 
 #### process.getSystemConfig(deprecated)
@@ -344,7 +346,7 @@ let pres = process.getSystemConfig(_SC_ARG_MAX);
 
 getEnvironmentVar(name: string): string
 
-获取环境变量名对应的值。
+获取环境变量名对应的值。如果环境变量不存在，返回undefined。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[getEnvironmentVar9+](#getenvironmentvar9)替代。
 
@@ -370,7 +372,7 @@ let pres = process.getEnvironmentVar("PATH");
 
 #### ProcessManager9+
 
-提供进程管理相关接口，包括进程UID判断、用户信息查询、线程优先级获取、环境变量获取、进程退出和信号发送等功能。
+提供进程管理相关接口，包括进程uid判断、用户信息查询、线程优先级获取、环境变量获取、进程退出和信号发送等功能。
 
 通过new process.ProcessManager()构造ProcessManager对象。
 
@@ -399,18 +401,20 @@ isAppUid(v: number): boolean
 示例：
 
 ```
-let pro = new process.ProcessManager();
+// 创建ProcessManager实例
+let processManager = new process.ProcessManager();
 // uid通过process.uid获取
 let pres = process.uid;
-let result = pro.isAppUid(pres);
-console.info("result: " + result); // result: true
+// 判断uid是否属于当前应用程序
+let result = processManager.isAppUid(pres);
+console.info("result:", result); // result: true
 ```
 
 #### [h2]getUidForName9+
 
 getUidForName(v: string): number
 
-根据指定的用户名，从系统的用户数据库中获取该用户uid。
+根据指定的用户名，从系统的用户数据库中获取该用户的uid。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -431,8 +435,10 @@ getUidForName(v: string): number
 示例：
 
 ```
-let pro = new process.ProcessManager();
-let pres = pro.getUidForName("tool");
+// 创建ProcessManager实例
+let processManager = new process.ProcessManager();
+// 根据用户名获取uid
+let pres = processManager.getUidForName("tool");
 ```
 
 #### [h2]getThreadPriority9+
@@ -449,7 +455,7 @@ getThreadPriority(v: number): number
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| v | number | 是 | 指定的线程tid。 |
+| v | number | 是 | 指定的线程tid。可通过process.tid获取。 |
 
 返回值：
 
@@ -460,9 +466,12 @@ getThreadPriority(v: number): number
 示例：
 
 ```
-let pro = new process.ProcessManager();
+// 创建ProcessManager实例
+let processManager = new process.ProcessManager();
+// 获取当前线程tid
 let tid = process.tid;
-let pres = pro.getThreadPriority(tid);
+// 根据tid获取线程优先级
+let pres = processManager.getThreadPriority(tid);
 ```
 
 #### [h2]getSystemConfig9+
@@ -490,9 +499,12 @@ getSystemConfig(name: number): number
 示例：
 
 ```
-let pro = new process.ProcessManager();
+// 创建ProcessManager实例
+let processManager = new process.ProcessManager();
+// 定义系统配置参数
 let _SC_ARG_MAX = 0;
-let pres = pro.getSystemConfig(_SC_ARG_MAX);
+// 获取系统配置信息
+let pres = processManager.getSystemConfig(_SC_ARG_MAX);
 ```
 
 #### [h2]getEnvironmentVar9+
@@ -520,8 +532,10 @@ getEnvironmentVar(name: string): string
 示例：
 
 ```
-let pro = new process.ProcessManager();
-let pres = pro.getEnvironmentVar("PATH");
+// 创建ProcessManager实例
+let processManager = new process.ProcessManager();
+// 获取PATH环境变量的值
+let pres = processManager.getEnvironmentVar("PATH");
 ```
 
 #### [h2]exit9+
@@ -530,7 +544,7 @@ exit(code: number): void
 
 终止程序。
 
-请谨慎使用此接口，此接口调用后应用会退出，如果入参非0会产生数据丢失或者异常情况。
+请谨慎使用此接口，此接口调用后应用会退出，如果输入参数非0，可能会导致数据丢失或出现未定义的运行异常。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -545,15 +559,15 @@ exit(code: number): void
 示例：
 
 ```
-let pro = new process.ProcessManager();
-pro.exit(0);
+let processManager = new process.ProcessManager();
+processManager.exit(0);
 ```
 
 #### [h2]kill9+
 
 kill(signal: number, pid: number): boolean
 
-发送signal到指定的进程，结束指定进程（仅支持结束本进程）。
+发送信号到指定的进程，结束指定进程（仅支持结束本进程）。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -563,7 +577,7 @@ kill(signal: number, pid: number): boolean
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| signal | number | 是 | 发送特定的信号给目标进程。 取值范围：1 返回值：
+| signal | number | 是 | 发送特定的信号给指定进程。 取值范围：1 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
@@ -572,7 +586,10 @@ kill(signal: number, pid: number): boolean
 示例：
 
 ```
-let pro = new process.ProcessManager();
+// 创建ProcessManager实例
+let processManager = new process.ProcessManager();
+// 获取当前进程pid
 let pres = process.pid;
-let result = pro.kill(28, pres);
+// 发送信号28结束当前进程
+let result = processManager.kill(28, pres);
 ```

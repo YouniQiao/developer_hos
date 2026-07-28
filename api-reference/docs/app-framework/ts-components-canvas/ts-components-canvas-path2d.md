@@ -2,23 +2,21 @@
 title: "Path2D"
 upstream_id: "harmonyos-references/ts-components-canvas-path2d"
 catalog: "harmonyos-references"
-content_hash: "05d7d67c1a49"
-synced_at: "2026-07-09T00:58:04.928241"
+content_hash: "802d8418f8ce"
+synced_at: "2026-07-28T16:46:40.209982"
 ---
 
 # Path2D
 
-路径对象，支持通过对象的接口进行路径的描述，并通过Canvas的stroke接口或者fill接口进行绘制。
+路径对象，支持通过对象的接口进行路径的描述和组合，并通过Canvas的stroke接口或者fill接口进行绘制。Path2D支持复用路径、组合多个路径、基于SVG路径字符串创建路径等功能，适用于需要多次绘制相同路径、动态组合复杂图形或基于SVG路径数据绘制图形的场景。
 
-![](./img/note_3.0-zh-cn.png) 从 API version 8 开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 8开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
 Path2D对象不支持重置已设置的路径，如需新路径可重新创建一个空的Path2D对象。
 
 Path2D对象的方法无法对[CanvasRenderingContext2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-canvasrenderingcontext2d)和[OffscreenCanvasRenderingContext2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-offscreencanvasrenderingcontext2d)对象中设置的路径生效。
 
-#### 接口
-
-#### [h2]constructor
+#### constructor
 
 constructor()
 
@@ -30,7 +28,7 @@ constructor()
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-#### [h2]constructor12+
+#### constructor12+
 
 constructor(unit: LengthMetricsUnit)
 
@@ -50,7 +48,7 @@ constructor(unit: LengthMetricsUnit)
 | --- | --- | --- | --- |
 | unit | [LengthMetricsUnit](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetricsunit12) | 是 | 用来配置Path2D对象的单位模式，配置后无法动态更改，配置方法同[CanvasRenderingContext2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-canvasrenderingcontext2d)。 异常值NaN和Infinity按默认值处理。 默认值：DEFAULT |
 
-#### [h2]constructor
+#### constructor
 
 constructor(path: Path2D)
 
@@ -66,9 +64,9 @@ constructor(path: Path2D)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| path | Path2D | 是 | 路径对象。 |
+| path | Path2D | 是 | 需要复制的路径对象，新创建的Path2D对象将包含与原路径相同的路径数据。异常值null和undefined时创建空路径对象。 |
 
-#### [h2]constructor12+
+#### constructor12+
 
 constructor(path: Path2D, unit: LengthMetricsUnit)
 
@@ -86,10 +84,10 @@ constructor(path: Path2D, unit: LengthMetricsUnit)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| path | Path2D | 是 | 路径对象。 |
+| path | Path2D | 是 | 需要复制的Path2D路径对象，用于基于现有路径创建新的Path2D对象。传入的路径对象不会被修改，新创建的对象将包含该路径的完整副本。 |
 | unit | [LengthMetricsUnit](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetricsunit12) | 是 | 用来配置Path2D对象的单位模式，配置后无法动态更改，配置方法同[CanvasRenderingContext2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-canvasrenderingcontext2d)。 异常值NaN和Infinity按默认值处理。 默认值：DEFAULT |
 
-#### [h2]constructor
+#### constructor
 
 constructor(d: string)
 
@@ -107,7 +105,7 @@ constructor(d: string)
 | --- | --- | --- | --- |
 | d | string | 是 | 符合SVG路径描述规范的路径字符串，格式参考[SVG路径描述规范](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-path#svg路径描述规范)，异常值按无效值处理。 |
 
-#### [h2]constructor12+
+#### constructor12+
 
 constructor(description: string, unit: LengthMetricsUnit)
 
@@ -146,8 +144,8 @@ addPath(path: Path2D, transform?: Matrix2D): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| path | Path2D | 是 | 需要添加到当前路径的路径对象，路径单位：px。 异常值undefined和null按无效值处理。 |
-| transform | [Matrix2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-components-canvas-matrix2d) | 否 | 新增路径的变换矩阵对象。 异常值undefined和null按无效值处理。 默认值：null |
+| path | Path2D | 是 | 需要添加到当前路径的路径对象。 异常值undefined和null按无效值处理。 |
+| transform | [Matrix2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-components-canvas-matrix2d) | 否 | 新增路径的变换矩阵对象，用于对添加的路径进行平移、旋转、缩放等变换。当需要对添加的路径进行图形变换时传入此参数，不需要变换时可不传。不传入时默认为null，表示不对路径进行变换。 异常值undefined和null按无效值处理。 默认值：null |
 
 示例：
 
@@ -158,7 +156,7 @@ addPath(path: Path2D, transform?: Matrix2D): void
 struct AddPath {
   private settings: RenderingContextSettings = new RenderingContextSettings(true);
   private context: CanvasRenderingContext2D = new CanvasRenderingContext2D(this.settings);
-  private path2Da: Path2D = new Path2D("M250 150 L150 350 L350 350 Z");
+  private path2Da: Path2D = new Path2D('M250 150 L150 350 L350 350 Z');
   private path2Db: Path2D = new Path2D();
 
   build() {
@@ -177,7 +175,7 @@ struct AddPath {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612873.png)
+ ![](./img/zh-cn_image_0000002656008768.png)
 
 #### [h2]closePath
 
@@ -221,7 +219,7 @@ struct ClosePath {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413584.png)
+ ![](./img/zh-cn_image_0000002655848848.png)
 
 #### [h2]moveTo
 
@@ -277,7 +275,7 @@ struct MoveTo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732815.png)
+ ![](./img/zh-cn_image_0000002686088277.png)
 
 #### [h2]lineTo
 
@@ -329,7 +327,7 @@ struct LineTo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253694.png)
+ ![](./img/zh-cn_image_0000002685928447.png)
 
 #### [h2]bezierCurveTo
 
@@ -382,7 +380,7 @@ struct BezierCurveTo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612875.png)
+ ![](./img/zh-cn_image_0000002656008770.png)
 
 #### [h2]quadraticCurveTo
 
@@ -433,7 +431,7 @@ struct QuadraticCurveTo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413586.png)
+ ![](./img/zh-cn_image_0000002655848850.png)
 
 #### [h2]arc
 
@@ -453,9 +451,9 @@ arc(x: number, y: number, radius: number, startAngle: number, endAngle: number, 
 | --- | --- | --- | --- |
 | x | number | 是 | 弧线圆心的x坐标值。 API version 18之前，设置NaN或Infinity时，整条路径不显示；设置null或undefined时，当前接口不生效。API version 18及以后，设置NaN、Infinity、null或undefined时当前接口不生效，其他传入有效参数的路径方法正常绘制。 默认单位：vp |
 | y | number | 是 | 弧线圆心的y坐标值。 API version 18之前，设置NaN或Infinity时，整条路径不显示；设置null或undefined时，当前接口不生效。API version 18及以后，设置NaN、Infinity、null或undefined时当前接口不生效，其他传入有效参数的路径方法正常绘制。 默认单位：vp |
-| radius | number | 是 | 弧线的圆半径。 API version 18之前，设置NaN或Infinity时，整条路径不显示；设置null或undefined时，当前接口不生效。API version 18及以后，设置NaN、Infinity、null或undefined时当前接口不生效，其他传入有效参数的路径方法正常绘制。 默认单位：vp |
-| startAngle | number | 是 | 弧线的起始弧度。 API version 18之前，设置NaN或Infinity时，整条路径不显示；设置null或undefined时，当前接口不生效。API version 18及以后，设置NaN、Infinity、null或undefined时当前接口不生效，其他传入有效参数的路径方法正常绘制。 单位：弧度。 |
-| endAngle | number | 是 | 弧线的终止弧度。 API version 18之前，设置NaN或Infinity时，整条路径不显示；设置null或undefined时，当前接口不生效。API version 18及以后，设置NaN、Infinity、null或undefined时当前接口不生效，其他传入有效参数的路径方法正常绘制。 单位：弧度。 |
+| radius | number | 是 | 弧线的圆半径，取值范围：[0, +∞)。 API version 18之前，设置NaN或Infinity时，整条路径不显示；设置null或undefined时，当前接口不生效。API version 18及以后，设置NaN、Infinity、null或undefined时当前接口不生效，其他传入有效参数的路径方法正常绘制。 默认单位：vp |
+| startAngle | number | 是 | 弧线的起始弧度。 API version 18之前，设置NaN或Infinity时，整条路径不显示；设置null或undefined时，当前接口不生效。API version 18及以后，设置NaN、Infinity、null或undefined时当前接口不生效，其他传入有效参数的路径方法正常绘制。 默认单位：弧度。 |
+| endAngle | number | 是 | 弧线的终止弧度。 API version 18之前，设置NaN或Infinity时，整条路径不显示；设置null或undefined时，当前接口不生效。API version 18及以后，设置NaN、Infinity、null或undefined时当前接口不生效，其他传入有效参数的路径方法正常绘制。 默认单位：弧度。 |
 | counterclockwise | boolean | 否 | 是否逆时针绘制圆弧。 true：逆时针方向绘制圆弧。 false：顺时针方向绘制圆弧。 默认值：false，设置null或undefined按默认值处理。 |
 
 示例：
@@ -485,13 +483,13 @@ struct Arc {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732817.png)
+ ![](./img/zh-cn_image_0000002686088279.png)
 
 #### [h2]arcTo
 
 arcTo(x1: number, y1: number, x2: number, y2: number, radius: number): void
 
-依据圆弧经过的点和圆弧半径创建圆弧路径。
+依据控制点和圆弧半径创建圆弧路径。控制点(x1, y1)和(x2, y2)用于确定圆弧的切线方向。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -507,7 +505,7 @@ arcTo(x1: number, y1: number, x2: number, y2: number, radius: number): void
 | y1 | number | 是 | 圆弧第一个控制点的y坐标值。 API version 18之前，设置NaN或Infinity时，整条路径不显示；设置null或undefined时，当前接口不生效。API version 18及以后，设置NaN、Infinity、null或undefined时当前接口不生效，其他传入有效参数的路径方法正常绘制。 默认单位：vp |
 | x2 | number | 是 | 圆弧第二个控制点的x坐标值。 API version 18之前，设置NaN或Infinity时，整条路径不显示；设置null或undefined时，当前接口不生效。API version 18及以后，设置NaN、Infinity、null或undefined时当前接口不生效，其他传入有效参数的路径方法正常绘制。 默认单位：vp |
 | y2 | number | 是 | 圆弧第二个控制点的y坐标值。 API version 18之前，设置NaN或Infinity时，整条路径不显示；设置null或undefined时，当前接口不生效。API version 18及以后，设置NaN、Infinity、null或undefined时当前接口不生效，其他传入有效参数的路径方法正常绘制。 默认单位：vp |
-| radius | number | 是 | 圆弧的圆半径值。 API version 18之前，设置NaN或Infinity时，整条路径不显示；设置null或undefined时，当前接口不生效。API version 18及以后，设置NaN、Infinity、null或undefined时当前接口不生效，其他传入有效参数的路径方法正常绘制。 默认单位：vp |
+| radius | number | 是 | 圆弧的圆半径值，取值范围：[0, +∞)。 API version 18之前，设置NaN或Infinity时，整条路径不显示；设置null或undefined时，当前接口不生效。API version 18及以后，设置NaN、Infinity、null或undefined时当前接口不生效，其他传入有效参数的路径方法正常绘制。 默认单位：vp |
 
 示例：
 
@@ -537,13 +535,13 @@ struct ArcTo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253696.png)
+ ![](./img/zh-cn_image_0000002685928449.png)
 
 #### [h2]ellipse
 
 ellipse(x: number, y: number, radiusX: number, radiusY: number, rotation: number, startAngle: number, endAngle: number, counterclockwise?: boolean): void
 
-在规定的矩形区域绘制一个椭圆。
+在指定中心点，以给定的x轴半径、y轴半径和旋转角度绘制椭圆路径。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -557,11 +555,11 @@ ellipse(x: number, y: number, radiusX: number, radiusY: number, rotation: number
 | --- | --- | --- | --- |
 | x | number | 是 | 椭圆圆心的x轴坐标。 API version 18之前，设置NaN或Infinity时，整条路径不显示；设置null或undefined时，当前接口不生效。API version 18及以后，设置NaN、Infinity、null或undefined时当前接口不生效，其他传入有效参数的路径方法正常绘制。 默认单位：vp |
 | y | number | 是 | 椭圆圆心的y轴坐标。 API version 18之前，设置NaN或Infinity时，整条路径不显示；设置null或undefined时，当前接口不生效。API version 18及以后，设置NaN、Infinity、null或undefined时当前接口不生效，其他传入有效参数的路径方法正常绘制。 默认单位：vp |
-| radiusX | number | 是 | 椭圆x轴的半径长度。 API version 18之前，设置NaN或Infinity时，整条路径不显示；设置null或undefined时，当前接口不生效。API version 18及以后，设置NaN、Infinity、null或undefined时当前接口不生效，其他传入有效参数的路径方法正常绘制。 默认单位：vp |
-| radiusY | number | 是 | 椭圆y轴的半径长度。 API version 18之前，设置NaN或Infinity时，整条路径不显示；设置null或undefined时，当前接口不生效。API version 18及以后，设置NaN、Infinity、null或undefined时当前接口不生效，其他传入有效参数的路径方法正常绘制。 默认单位：vp |
-| rotation | number | 是 | 椭圆的旋转角度。 API version 18之前，设置NaN或Infinity时，整条路径不显示；设置null或undefined时，当前接口不生效。API version 18及以后，设置NaN、Infinity、null或undefined时当前接口不生效，其他传入有效参数的路径方法正常绘制。 单位：弧度 |
-| startAngle | number | 是 | 椭圆绘制的起始点角度。 API version 18之前，设置NaN或Infinity时，整条路径不显示；设置null或undefined时，当前接口不生效。API version 18及以后，设置NaN、Infinity、null或undefined时当前接口不生效，其他传入有效参数的路径方法正常绘制。 单位：弧度 |
-| endAngle | number | 是 | 椭圆绘制的结束点角度。 API version 18之前，设置NaN或Infinity时，整条路径不显示；设置null或undefined时，当前接口不生效。API version 18及以后，设置NaN、Infinity、null或undefined时当前接口不生效，其他传入有效参数的路径方法正常绘制。 单位：弧度 |
+| radiusX | number | 是 | 椭圆x轴的半径长度，取值范围：[0, +∞)。 API version 18之前，设置NaN或Infinity时，整条路径不显示；设置null或undefined时，当前接口不生效。API version 18及以后，设置NaN、Infinity、null或undefined时当前接口不生效，其他传入有效参数的路径方法正常绘制。 默认单位：vp |
+| radiusY | number | 是 | 椭圆y轴的半径长度，取值范围：[0, +∞)。 API version 18之前，设置NaN或Infinity时，整条路径不显示；设置null或undefined时，当前接口不生效。API version 18及以后，设置NaN、Infinity、null或undefined时当前接口不生效，其他传入有效参数的路径方法正常绘制。 默认单位：vp |
+| rotation | number | 是 | 椭圆的旋转角度。 API version 18之前，设置NaN或Infinity时，整条路径不显示；设置null或undefined时，当前接口不生效。API version 18及以后，设置NaN、Infinity、null或undefined时当前接口不生效，其他传入有效参数的路径方法正常绘制。 默认单位：弧度 |
+| startAngle | number | 是 | 椭圆绘制的起始点角度。 API version 18之前，设置NaN或Infinity时，整条路径不显示；设置null或undefined时，当前接口不生效。API version 18及以后，设置NaN、Infinity、null或undefined时当前接口不生效，其他传入有效参数的路径方法正常绘制。 默认单位：弧度 |
+| endAngle | number | 是 | 椭圆绘制的结束点角度。 API version 18之前，设置NaN或Infinity时，整条路径不显示；设置null或undefined时，当前接口不生效。API version 18及以后，设置NaN、Infinity、null或undefined时当前接口不生效，其他传入有效参数的路径方法正常绘制。 默认单位：弧度 |
 | counterclockwise | boolean | 否 | 是否以逆时针方向绘制椭圆。 true：逆时针方向绘制椭圆。 false：顺时针方向绘制椭圆。 默认值：false，设置null或undefined按默认值处理。 |
 
 示例：
@@ -591,13 +589,15 @@ struct CanvasExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612877.png)
+ ![](./img/zh-cn_image_0000002656008772.png)
 
 #### [h2]rect
 
 rect(x: number, y: number, w: number, h: number): void
 
 创建矩形路径。
+
+![](./img/note_3.0-zh-cn.png) 如需创建圆角矩形路径，请使用[roundRect](#roundrect20)方法。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -611,8 +611,8 @@ rect(x: number, y: number, w: number, h: number): void
 | --- | --- | --- | --- |
 | x | number | 是 | 指定矩形的左上角x坐标值。 API version 18之前，设置NaN或Infinity时，整条路径不显示；设置null或undefined时，当前接口不生效。API version 18及以后，设置NaN、Infinity、null或undefined时当前接口不生效，其他传入有效参数的路径方法正常绘制。 默认单位：vp |
 | y | number | 是 | 指定矩形的左上角y坐标值。 API version 18之前，设置NaN或Infinity时，整条路径不显示；设置null或undefined时，当前接口不生效。API version 18及以后，设置NaN、Infinity、null或undefined时当前接口不生效，其他传入有效参数的路径方法正常绘制。 默认单位：vp |
-| w | number | 是 | 指定矩形的宽度。 API version 18之前，设置NaN或Infinity时，整条路径不显示；设置null或undefined时，当前接口不生效。API version 18及以后，设置NaN、Infinity、null或undefined时当前接口不生效，其他传入有效参数的路径方法正常绘制。 默认单位：vp |
-| h | number | 是 | 指定矩形的高度。 API version 18之前，设置NaN或Infinity时，整条路径不显示；设置null或undefined时，当前接口不生效。API version 18及以后，设置NaN、Infinity、null或undefined时当前接口不生效，其他传入有效参数的路径方法正常绘制。 默认单位：vp |
+| w | number | 是 | 指定矩形的宽度，设置负值为向左绘制。 API version 18之前，设置NaN或Infinity时，整条路径不显示；设置null或undefined时，当前接口不生效。API version 18及以后，设置NaN、Infinity、null或undefined时当前接口不生效，其他传入有效参数的路径方法正常绘制。 如需绘制完整矩形，取值范围：[-x, Canvas宽度 - x]。 默认单位：vp |
+| h | number | 是 | 指定矩形的高度，设置负值为向上绘制。 API version 18之前，设置NaN或Infinity时，整条路径不显示；设置null或undefined时，当前接口不生效。API version 18及以后，设置NaN、Infinity、null或undefined时当前接口不生效，其他传入有效参数的路径方法正常绘制。 如需绘制完整矩形，取值范围：[-y, Canvas高度 - y]。 默认单位：vp |
 
 示例：
 
@@ -641,7 +641,7 @@ struct CanvasExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413588.png)
+ ![](./img/zh-cn_image_0000002655848852.png)
 
 #### [h2]roundRect20+
 
@@ -661,11 +661,11 @@ roundRect(x: number, y: number, w: number, h: number, radii?: number | Array<num
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| x | number | 是 | 指定矩形的左上角x坐标值。 null按0处理，undefined按无效值处理，不进行绘制。 如需绘制完整矩形，取值范围：[0, Canvas宽度)。 默认单位：vp |
-| y | number | 是 | 指定矩形的左上角y坐标值。 null按0处理，undefined按无效值处理，不进行绘制。 如需绘制完整矩形，取值范围：[0, Canvas高度)。 默认单位：vp |
-| w | number | 是 | 指定矩形的宽度，设置负值为向左绘制。 null按0处理，undefined按无效值处理，不进行绘制。 如需绘制完整矩形，取值范围：[-x, Canvas宽度 - x]。 默认单位：vp |
-| h | number | 是 | 指定矩形的高度，设置负值为向上绘制。 null按0处理，undefined按无效值处理，不进行绘制。 如需绘制完整矩形，取值范围：[-y, Canvas高度 - y]。 默认单位：vp |
-| radii | number | Array | 否 | 指定用于矩形角的圆弧半径的数字或列表。 参数类型为number时，所有矩形角的圆弧半径按该数字设置。 参数类型为Array时，数目为1-4个按下面设置： [所有矩形角的圆弧半径] [左上及右下矩形角的圆弧半径, 右上及左下矩形角的圆弧半径] [左上矩形角的圆弧半径, 右上及左下矩形角的圆弧半径, 右下矩形角的圆弧半径] [左上矩形角的圆弧半径, 右上矩形角的圆弧半径, 右下矩形角的圆弧半径, 左下矩形角的圆弧半径] radii存在负数或列表的数目不在[1,4]内时抛出异常，错误码：103701。 默认值：0，null和undefined按默认值处理。 圆弧半径超过矩形宽高时会等比例缩放到宽高的长度。 默认单位：vp |
+| x | number | 是 | 指定矩形的左上角x坐标值。 null按0处理，undefined按无效值处理，不进行绘制。 设置NaN或Infinity时当前接口不生效，其他传入有效参数的路径方法正常绘制。 如需绘制完整矩形，取值范围：[0, Canvas宽度)。 默认单位：vp |
+| y | number | 是 | 指定矩形的左上角y坐标值。 null按0处理，undefined按无效值处理，不进行绘制。 设置NaN或Infinity时当前接口不生效，其他传入有效参数的路径方法正常绘制。 如需绘制完整矩形，取值范围：[0, Canvas高度)。 默认单位：vp |
+| w | number | 是 | 指定矩形的宽度，设置负值为向左绘制。 null按0处理，undefined按无效值处理，不进行绘制。 设置NaN或Infinity时当前接口不生效，其他传入有效参数的路径方法正常绘制。 如需绘制完整矩形，取值范围：[-x, Canvas宽度 - x]。 默认单位：vp |
+| h | number | 是 | 指定矩形的高度，设置负值为向上绘制。 null按0处理，undefined按无效值处理，不进行绘制。 设置NaN或Infinity时当前接口不生效，其他传入有效参数的路径方法正常绘制。 如需绘制完整矩形，取值范围：[-y, Canvas高度 - y]。 默认单位：vp |
+| radii | number | Array | 否 | 指定用于矩形角的圆弧半径的数字或数组。 参数类型为number时，所有矩形角的圆弧半径按该数字设置。 参数类型为Array时，数组长度为1-4，按下面设置： [所有矩形角的圆弧半径] [左上及右下矩形角的圆弧半径, 右上及左下矩形角的圆弧半径] [左上矩形角的圆弧半径, 右上及左下矩形角的圆弧半径, 右下矩形角的圆弧半径] [左上矩形角的圆弧半径, 右上矩形角的圆弧半径, 右下矩形角的圆弧半径, 左下矩形角的圆弧半径] radii存在负数或数组长度为0或大于4时抛出异常，错误码：103701。 默认值：0，null和undefined按默认值处理。 圆弧半径超过矩形宽高时会等比例缩放到宽高的长度。 默认单位：vp |
 
 错误码：
 
@@ -732,4 +732,4 @@ struct CanvasExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253644.jpeg)
+ ![](./img/zh-cn_image_0000002686088281.jpeg)

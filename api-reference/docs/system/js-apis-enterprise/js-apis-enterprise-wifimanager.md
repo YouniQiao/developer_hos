@@ -2,8 +2,8 @@
 title: "@ohos.enterprise.wifiManager（Wi-Fi管理）"
 upstream_id: "harmonyos-references/js-apis-enterprise-wifimanager"
 catalog: "harmonyos-references"
-content_hash: "6b0d391b65e1"
-synced_at: "2026-07-09T00:59:53.215608"
+content_hash: "912b55d28492"
+synced_at: "2026-07-28T16:51:10.961751"
 ---
 
 # @ohos.enterprise.wifiManager（Wi-Fi管理）
@@ -50,7 +50,7 @@ isWifiActiveSync(admin: Want): boolean
 
 错误码：
 
-以下的错误码的详细介绍请参见[企业设备管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprisedevicemanager)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+以下错误码的详细介绍请参见[企业设备管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprisedevicemanager)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -101,7 +101,7 @@ setWifiProfileSync(admin: Want, profile: WifiProfile): void
 
 错误码：
 
-以下的错误码的详细介绍请参见[企业设备管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprisedevicemanager)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+以下错误码的详细介绍请参见[企业设备管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprisedevicemanager)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -460,7 +460,7 @@ addAllowedWifiList(admin: Want, list: Array<WifiAccessInfo>): void
 
 以下情况下，调用本接口会报策略冲突：
 
-1. 已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicy)接口禁用了设备Wi-Fi能力。通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicy)解除Wi-Fi禁用后，可解除冲突。
+1. 已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated))接口禁用了设备Wi-Fi能力。通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated))解除Wi-Fi禁用后，可解除冲突。
 2. 已经通过[addDisallowedWifiList](#wifimanageradddisallowedwifilist19)接口添加了Wi-Fi禁用名单。通过[removeDisallowedWifiList](#wifimanagerremovedisallowedwifilist19)移除Wi-Fi禁用名单后，可解除冲突。
 
 需要权限： ohos.permission.ENTERPRISE_MANAGE_WIFI
@@ -570,7 +570,7 @@ try {
 
 #### wifiManager.getAllowedWifiList19+
 
-getAllowedWifiList(admin: Want): Array<WifiAccessInfo>
+getAllowedWifiList(admin: Want | null): Array<WifiAccessInfo>
 
 获取Wi-Fi允许名单。
 
@@ -584,7 +584,7 @@ getAllowedWifiList(admin: Want): Array<WifiAccessInfo>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，API版本26.0.0之前，传入Want时查询对应企业设备管理应用设置的策略。从API版本26.0.0开始，新增支持传入null时查询实际生效的策略。 |
 
 返回值：
 
@@ -629,7 +629,7 @@ addDisallowedWifiList(admin: Want, list: Array<WifiAccessInfo>): void
 
 以下情况下，调用本接口会报策略冲突：
 
-1. 已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicy)接口禁用了设备Wi-Fi能力。通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicy)解除Wi-Fi禁用后，可解除冲突。
+1. 已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated))接口禁用了设备Wi-Fi能力。通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated))解除Wi-Fi禁用后，可解除冲突。
 2. 已经通过[addAllowedWifiList](#wifimanageraddallowedwifilist19)接口添加了Wi-Fi允许名单。通过[removeAllowedWifiList](#wifimanagerremoveallowedwifilist19)移除Wi-Fi允许名单后，可解除冲突。
 
 需要权限： ohos.permission.ENTERPRISE_MANAGE_WIFI
@@ -739,7 +739,7 @@ try {
 
 #### wifiManager.getDisallowedWifiList19+
 
-getDisallowedWifiList(admin: Want): Array<WifiAccessInfo>
+getDisallowedWifiList(admin: Want | null): Array<WifiAccessInfo>
 
 获取Wi-Fi禁用名单。
 
@@ -753,7 +753,7 @@ getDisallowedWifiList(admin: Want): Array<WifiAccessInfo>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，API版本26.0.0之前，传入Want时查询对应企业设备管理应用设置的策略。从API版本26.0.0开始，新增支持传入null时查询实际生效的策略。 |
 
 返回值：
 
@@ -798,13 +798,15 @@ turnOnWifi(admin: Want, isForce: boolean): void
 
 以下情况下，通过本接口打开Wi-Fi开关，会打开失败并提示"系统功能被禁用"：
 
-​已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicy)接口禁用了Wi-Fi。需通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicy)接口启用Wi-Fi，解决"系统功能被禁用"报错。
+​已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated))接口禁用了Wi-Fi。需通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated))接口启用Wi-Fi，解决"系统功能被禁用"报错。
 
 需要权限： ohos.permission.ENTERPRISE_MANAGE_WIFI
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
-冲突规则： 任意MDM应用​通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicy)接口禁用了Wi-Fi，则无法通过本接口直接打开Wi-Fi开关。
+冲突规则： 任意MDM应用​通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated))接口禁用了Wi-Fi，则无法通过本接口直接打开Wi-Fi开关。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -815,7 +817,7 @@ turnOnWifi(admin: Want, isForce: boolean): void
 
 错误码：
 
-以下的错误码的详细介绍请参见[企业设备管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprisedevicemanager)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+以下错误码的详细介绍请参见[企业设备管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprisedevicemanager)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -852,13 +854,15 @@ turnOffWifi(admin: Want): void
 
 以下情况下，通过本接口关闭Wi-Fi开关，会提示"系统功能被禁用"：
 
-​已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicy)接口禁用了Wi-Fi。需通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicy)接口启用Wi-Fi，解决"系统功能被禁用"报错。
+​已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated))接口禁用了Wi-Fi。需通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated))接口启用Wi-Fi，解决"系统功能被禁用"报错。
 
 需要权限： ohos.permission.ENTERPRISE_MANAGE_WIFI
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
-冲突规则： 任意MDM应用通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicy)接口禁用了Wi-Fi，则无法通过本接口直接关闭Wi-Fi开关。
+冲突规则： 任意MDM应用通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated))接口禁用了Wi-Fi，则无法通过本接口直接关闭Wi-Fi开关。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -868,7 +872,7 @@ turnOffWifi(admin: Want): void
 
 错误码：
 
-以下的错误码的详细介绍请参见[企业设备管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprisedevicemanager)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+以下错误码的详细介绍请参见[企业设备管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprisedevicemanager)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |

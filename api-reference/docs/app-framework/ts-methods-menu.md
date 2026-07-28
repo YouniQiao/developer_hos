@@ -2,8 +2,8 @@
 title: "ContextMenu"
 upstream_id: "harmonyos-references/ts-methods-menu"
 catalog: "harmonyos-references"
-content_hash: "32d9bbfd48be"
-synced_at: "2026-07-09T00:58:07.219865"
+content_hash: "70cf2858dee3"
+synced_at: "2026-07-28T16:47:04.171427"
 ---
 
 # ContextMenu
@@ -14,13 +14,13 @@ synced_at: "2026-07-09T00:58:07.219865"
 
 #### ContextMenu.close(deprecated)
 
-static close()
+static close(): void
 
-可以通过该方法在页面范围内关闭通过[bindContextMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#bindcontextmenu12)为组件绑定的菜单。
+在页面范围内关闭通过[bindContextMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#bindcontextmenu12)绑定的菜单。常用于页面跳转、拖拽开始等需要主动关闭已显示菜单的交互场景。
 
-![](./img/note_3.0-zh-cn.png) 从API version 18开始废弃，建议使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getContextMenuController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getcontextmenucontroller12)获取[ContextMenuController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-contextmenucontroller)实例，再通过此实例调用替代方法[close](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-contextmenucontroller#close12)。
+![](./img/note_3.0-zh-cn.png) 从API version 8开始支持。从API version 18开始废弃，建议使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getContextMenuController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getcontextmenucontroller12)获取[ContextMenuController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-contextmenucontroller)实例，再通过此实例调用替代方法[close](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-contextmenucontroller#close12)。
 
-从API version 12开始，可以通过使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getContextMenuController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getcontextmenucontroller12)来明确UI的执行上下文。
+两者功能相同，区别在于：ContextMenu.close()是静态方法，在多窗口场景下可能无法明确指定要关闭哪个窗口的菜单；而通过UIContext获取的ContextMenuController实例调用close()可以关联到具体的UIContext，从而明确指定操作的UI上下文，建议在API version 12及以上版本中使用UIContext方式。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -28,7 +28,7 @@ static close()
 
 #### 示例
 
-该示例为ContextMenu.close关闭通过bindContextMenu属性绑定的菜单。
+该示例演示ContextMenu.close的使用方法，在拖拽开始时关闭通过bindContextMenu绑定的菜单。
 
 ![](./img/note_3.0-zh-cn.png) 推荐通过使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getContextMenuController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getcontextmenucontroller12)来明确UI的执行上下文。
 
@@ -60,7 +60,7 @@ struct Index {
           .textAlign(TextAlign.Center)
       }
       .bindContextMenu(this.MenuBuilder, ResponseType.LongPress)
-      .onDragStart(()=>{
+      .onDragStart(() => {
         // 拖拽时关闭菜单
         ContextMenu.close() // 建议使用 this.getUIContext().getContextMenuController().close()
       })
@@ -70,4 +70,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612897.gif)
+ ![](./img/zh-cn_image_0000002656008826.gif)

@@ -2,8 +2,8 @@
 title: "@ohos.deviceInfo (设备信息)"
 upstream_id: "harmonyos-references/js-apis-device-info"
 catalog: "harmonyos-references"
-content_hash: "5647589da5d6"
-synced_at: "2026-07-09T00:59:39.582666"
+content_hash: "f7ef92bb4724"
+synced_at: "2026-07-28T16:50:56.153100"
 ---
 
 # @ohos.deviceInfo (设备信息)
@@ -42,7 +42,7 @@ import { deviceInfo } from '@kit.BasicServicesKit';
 | softwareModel | string | 是 | 内部软件子型号。 示例：ALN-AL00 |
 | hardwareModel | string | 是 | 硬件版本号。 示例：HL1CMSM |
 | hardwareProfile(deprecated) | string | 是 | 硬件Profile。 **说明**： 从API version 6 开始支持，从API version 9 开始废弃，建议使用[系统能力SystemCapability使用指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/syscap)查询相关信息。 示例：default |
-| serial | string | 是 | 设备序列号SN(Serial Number)。 **说明**：可作为设备唯一识别码。 **需要权限**：ohos.permission.sec.ACCESS_UDID(该权限只允许系统应用及企业定制应用申请) 示例：序列号随设备差异 |
+| serial | string | 是 | 设备序列号SN(Serial Number)。 **说明**：可作为设备唯一识别码。 **需要权限**：ohos.permission.sec.ACCESS_UDID(该权限只允许系统应用及企业类应用申请) 示例：序列号随设备差异 |
 | bootloaderVersion | string | 是 | Bootloader版本号。 示例：bootloader |
 | abiList | string | 是 | 应用二进制接口（Abi）。 示例：arm64-v8a |
 | securityPatchTag | string | 是 | 安全补丁级别。 示例：2024/1/1 |
@@ -67,15 +67,15 @@ import { deviceInfo } from '@kit.BasicServicesKit';
 | udid7+ | string | 是 | 设备Udid。 **说明**：数据长度为65字节。可作为设备唯一识别码。 **需要权限**：ohos.permission.sec.ACCESS_UDID(该权限只允许系统应用及企业类应用申请) 示例：9D6AABD147XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXE5536412 |
 | distributionOSName10+ | string | 是 | 发行版系统名称。 示例：OpenHarmony |
 | distributionOSVersion10+ | string | 是 | 发行版系统版本号。格式为x.x.x，x是数字 示例：5.0.0 |
-| distributionOSApiVersion10+ | number | 是 | 发行版系统API版本。 示例：50001 |
-| distributionOSApiName13+ | string | 是 | 发行版系统API版本名称。 |
+| distributionOSApiVersion10+ | number | 是 | 发行版系统API版本。 示例：500001 |
+| distributionOSApiName13+ | string | 是 | 发行版系统API版本名称。 示例：OpenHarmony-API |
 | distributionOSReleaseType10+ | string | 是 | 发行版系统类型。 示例：Release |
-| ODID12+ | string | 是 | 开发者匿名设备标识符。 **ODID值会在以下场景重新生成**： 手机恢复出厂设置。 同一设备上同一个开发者(developerId相同)的应用全部卸载后重新安装时。 **ODID生成规则**： 根据签名信息里developerId解析出的groupId生成，developerId规则为groupId.developerId，若无groupId则取整个developerId作为groupId。 同一设备上运行的同一个开发者(developerId相同)的应用，ODID相同。 同一个设备上不同开发者(developerId不同)的应用，ODID不同。 不同设备上同一个开发者(developerId相同)的应用，ODID不同。 不同设备上不同开发者(developerId不同)的应用，ODID不同。 **说明**：数据长度为37字节(包含结束符)。 示例：1234a567-XXXX-XXXX-XXXX-XXXXXXXXXXXX |
+| ODID12+ | string | 是 | ODID（Open Developer Identifier，开发者匿名设备标识符）。 **ODID值会在以下场景重新生成**： 手机恢复出厂设置。 同一设备上同一个开发者(developerId相同)的应用全部卸载后重新安装时。 **ODID生成规则**： 根据签名信息里developerId解析出的groupId生成，developerId规则为groupId.developerId，若无groupId则取整个developerId作为groupId。 同一设备上运行的同一个开发者(developerId相同)的应用，ODID相同。 同一个设备上不同开发者(developerId不同)的应用，ODID不同。 不同设备上同一个开发者(developerId相同)的应用，ODID不同。 不同设备上不同开发者(developerId不同)的应用，ODID不同。 **说明**：数据长度为37字节(包含结束符)。 示例：1234a567-XXXX-XXXX-XXXX-XXXXXXXXXXXX |
 | diskSN15+ | string | 是 | 硬盘序列号。 **说明** ：该字段只能在部分2in1设备上进行查询，其他设备查询结果为空。 **需要权限**：ohos.permission.ACCESS_DISK_PHY_INFO 示例：2502EM400567 |
-| performanceClass19+ | [PerformanceClassLevel](#performanceclasslevel19) | 是 | 描述设备能力等级，基于CPU、内存、存储读写性能和屏幕分辨率等因素综合评估。 |
-| chipType21+ | string | 是 | 当前设备CPU芯片型号 示例：xxxxx |
-| bootCount21+ | number | 是 | 当前设备重启次数，获取失败时返回-1 示例：100 |
-| deviceColor | string | 是 | 当前设备颜色。如果无法获取，则返回空字符串 **模型约束：** 此接口仅可在Stage模型下使用。 **起始版本**：26.0.0 示例：gold |
+| performanceClass19+ | [PerformanceClassLevel](#performanceclasslevel19) | 是 | 描述设备能力等级，基于CPU、内存、存储读写性能和屏幕分辨率等因素综合评估。 **使用场景**：用于根据设备能力进行性能适配，如调整动画复杂度、选择不同质量的资源、动态控制功能特性等。 示例：CLASS_LEVEL_HIGH |
+| chipType21+ | string | 是 | 当前设备CPU芯片型号。 示例：xxxxx |
+| bootCount21+ | number | 是 | 当前设备重启次数，获取失败时返回-1。 示例：100 |
+| deviceColor | string | 是 | 当前设备颜色。如果无法获取，则返回空字符串 **模型约束：** 此接口仅可在Stage模型下使用。 **起始版本**：26.0.0 示例：blue |
 | **错误码：** | | | |
 
 以下错误码的详细介绍请参见[deviceInfo错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-device-info)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
@@ -88,177 +88,177 @@ import { deviceInfo } from '@kit.BasicServicesKit';
 示例
 
 ```
-    import { deviceInfo } from '@kit.BasicServicesKit';
+import { deviceInfo } from '@kit.BasicServicesKit';
 
-    let deviceTypeInfo: string = deviceInfo.deviceType;
-    // 输出结果：the value of the deviceType is :wearable
-    console.info('the value of the deviceType is :' + deviceTypeInfo);
+let deviceTypeInfo: string = deviceInfo.deviceType;
+// 输出结果：the value of the deviceType is :wearable
+console.info('the value of the deviceType is :' + deviceTypeInfo);
 
-    let manufactureInfo: string = deviceInfo.manufacture;
-    // 输出结果：the value of the manufacture is :HUAWEI
-    console.info('the value of the manufactureInfo is :' + manufactureInfo);
+let manufactureInfo: string = deviceInfo.manufacture;
+// 输出结果：the value of the manufacture is :HUAWEI
+console.info('the value of the manufactureInfo is :' + manufactureInfo);
 
-    let brandInfo: string = deviceInfo.brand;
-    // 输出结果：the value of the brand is :HUAWEI
-    console.info('the value of the device brand is :' + brandInfo);
+let brandInfo: string = deviceInfo.brand;
+// 输出结果：the value of the brand is :HUAWEI
+console.info('the value of the device brand is :' + brandInfo);
 
-    let marketNameInfo: string = deviceInfo.marketName;
-    // 输出结果：the value of the marketName is :Mate XX
-    console.info('the value of the deviceInfo marketName is :' + marketNameInfo);
+let marketNameInfo: string = deviceInfo.marketName;
+// 输出结果：the value of the marketName is :Mate XX
+console.info('the value of the deviceInfo marketName is :' + marketNameInfo);
 
-    let productSeriesInfo: string = deviceInfo.productSeries;
-    // 输出结果：the value of the productSeries is :TAS
-    console.info('the value of the deviceInfo productSeries is :' + productSeriesInfo);
+let productSeriesInfo: string = deviceInfo.productSeries;
+// 输出结果：the value of the productSeries is :TAS
+console.info('the value of the deviceInfo productSeries is :' + productSeriesInfo);
 
-    let productModelInfo: string = deviceInfo.productModel;
-    // 输出结果：the value of the productModel is :TAS-AL00
-    console.info('the value of the deviceInfo productModel is :' + productModelInfo);
+let productModelInfo: string = deviceInfo.productModel;
+// 输出结果：the value of the productModel is :TAS-AL00
+console.info('the value of the deviceInfo productModel is :' + productModelInfo);
 
-    let productModelAliasInfo: string = deviceInfo.productModelAlias;
-    console.info('the value of the deviceInfo productModelAlias is :' + productModelAliasInfo);
+let productModelAliasInfo: string = deviceInfo.productModelAlias;
+console.info('the value of the deviceInfo productModelAlias is :' + productModelAliasInfo);
 
-    let softwareModelInfo: string = deviceInfo.softwareModel;
-    // 输出结果：the value of the softwareModel is :TAS-AL00
-    console.info('the value of the deviceInfo softwareModel is :' + softwareModelInfo);
+let softwareModelInfo: string = deviceInfo.softwareModel;
+// 输出结果：the value of the softwareModel is :TAS-AL00
+console.info('the value of the deviceInfo softwareModel is :' + softwareModelInfo);
 
-    let hardwareModelInfo: string = deviceInfo.hardwareModel;
-    // 输出结果：the value of the hardwareModel is :TASA00CVN1
-    console.info('the value of the deviceInfo hardwareModel is :' + hardwareModelInfo);
+let hardwareModelInfo: string = deviceInfo.hardwareModel;
+// 输出结果：the value of the hardwareModel is :TASA00CVN1
+console.info('the value of the deviceInfo hardwareModel is :' + hardwareModelInfo);
 
-    let serialInfo: string = deviceInfo.serial;
-    // 输出结果：the value of the serial is :序列号随设备差异
-    console.info('the value of the deviceInfo serial is :' + serialInfo);
+let serialInfo: string = deviceInfo.serial;
+// 输出结果：the value of the serial is :序列号随设备差异
+console.info('the value of the deviceInfo serial is :' + serialInfo);
 
-    let bootloaderVersionInfo: string = deviceInfo.bootloaderVersion;
-    // 输出结果：the value of the bootloaderVersion is :bootloader
-    console.info('the value of the deviceInfo bootloaderVersion is :' + bootloaderVersionInfo);
+let bootloaderVersionInfo: string = deviceInfo.bootloaderVersion;
+// 输出结果：the value of the bootloaderVersion is :bootloader
+console.info('the value of the deviceInfo bootloaderVersion is :' + bootloaderVersionInfo);
 
-    let abiListInfo: string = deviceInfo.abiList;
-    // 输出结果：the value of the abiList is :arm64-v8a
-    console.info('the value of the deviceInfo abiList is :' + abiListInfo);
+let abiListInfo: string = deviceInfo.abiList;
+// 输出结果：the value of the abiList is :arm64-v8a
+console.info('the value of the deviceInfo abiList is :' + abiListInfo);
 
-    let securityPatchTagInfo: string = deviceInfo.securityPatchTag;
-    // 输出结果：the value of the securityPatchTag is :2021/01/01
-    console.info('the value of the deviceInfo securityPatchTag is :' + securityPatchTagInfo);
+let securityPatchTagInfo: string = deviceInfo.securityPatchTag;
+// 输出结果：the value of the securityPatchTag is :2021/01/01
+console.info('the value of the deviceInfo securityPatchTag is :' + securityPatchTagInfo);
 
-    let displayVersionInfo: string = deviceInfo.displayVersion;
-    // 输出结果：the value of the displayVersion is :XXX X.X.X.X
-    console.info('the value of the deviceInfo displayVersion is :' + displayVersionInfo);
+let displayVersionInfo: string = deviceInfo.displayVersion;
+// 输出结果：the value of the displayVersion is :XXX X.X.X.X
+console.info('the value of the deviceInfo displayVersion is :' + displayVersionInfo);
 
-    let incrementalVersionInfo: string = deviceInfo.incrementalVersion;
-    // 输出结果：the value of the incrementalVersion is :default
-    console.info('the value of the deviceInfo incrementalVersion is :' + incrementalVersionInfo);
+let incrementalVersionInfo: string = deviceInfo.incrementalVersion;
+// 输出结果：the value of the incrementalVersion is :default
+console.info('the value of the deviceInfo incrementalVersion is :' + incrementalVersionInfo);
 
-    let osReleaseTypeInfo: string = deviceInfo.osReleaseType;
-    // 输出结果：the value of the osReleaseType is :Release
-    console.info('the value of the deviceInfo osReleaseType is :' + osReleaseTypeInfo);
+let osReleaseTypeInfo: string = deviceInfo.osReleaseType;
+// 输出结果：the value of the osReleaseType is :Release
+console.info('the value of the deviceInfo osReleaseType is :' + osReleaseTypeInfo);
 
-    let osFullNameInfo: string = deviceInfo.osFullName;
-    // 输出结果：the value of the osFullName is :OpenHarmony-5.0.0.1
-    console.info('the value of the deviceInfo osFullName is :' + osFullNameInfo);
+let osFullNameInfo: string = deviceInfo.osFullName;
+// 输出结果：the value of the osFullName is :OpenHarmony-5.0.0.1
+console.info('the value of the deviceInfo osFullName is :' + osFullNameInfo);
 
-    let majorVersionInfo: number = deviceInfo.majorVersion;
-    // 输出结果：the value of the majorVersion is :5
-    console.info('the value of the deviceInfo majorVersion is :' + majorVersionInfo);
+let majorVersionInfo: number = deviceInfo.majorVersion;
+// 输出结果：the value of the majorVersion is :5
+console.info('the value of the deviceInfo majorVersion is :' + majorVersionInfo);
 
-    let seniorVersionInfo: number = deviceInfo.seniorVersion;
-    // 输出结果：the value of the seniorVersion is :0
-    console.info('the value of the deviceInfo seniorVersion is :' + seniorVersionInfo);
+let seniorVersionInfo: number = deviceInfo.seniorVersion;
+// 输出结果：the value of the seniorVersion is :0
+console.info('the value of the deviceInfo seniorVersion is :' + seniorVersionInfo);
 
-    let featureVersionInfo: number = deviceInfo.featureVersion;
-    // 输出结果：the value of the featureVersion is :0
-    console.info('the value of the deviceInfo featureVersion is :' + featureVersionInfo);
+let featureVersionInfo: number = deviceInfo.featureVersion;
+// 输出结果：the value of the featureVersion is :0
+console.info('the value of the deviceInfo featureVersion is :' + featureVersionInfo);
 
-    let buildVersionInfo: number = deviceInfo.buildVersion;
-    // 输出结果：the value of the buildVersion is :1
-    console.info('the value of the deviceInfo buildVersion is :' + buildVersionInfo);
+let buildVersionInfo: number = deviceInfo.buildVersion;
+// 输出结果：the value of the buildVersion is :1
+console.info('the value of the deviceInfo buildVersion is :' + buildVersionInfo);
 
-    let sdkApiVersionInfo: number = deviceInfo.sdkApiVersion;
-    // 输出结果：the value of the sdkApiVersion is :12
-    console.info('the value of the deviceInfo sdkApiVersion is :' + sdkApiVersionInfo);
+let sdkApiVersionInfo: number = deviceInfo.sdkApiVersion;
+// 输出结果：the value of the sdkApiVersion is :12
+console.info('the value of the deviceInfo sdkApiVersion is :' + sdkApiVersionInfo);
 
-   let sdkMinorApiVersionInfo: number = deviceInfo.sdkMinorApiVersion;
-    // 输出结果：the value of the sdk Minor ApiVersion is :0
-    console.info('the value of the deviceInfo sdkMinorApiVersion is :' + sdkMinorApiVersionInfo);
+let sdkMinorApiVersionInfo: number = deviceInfo.sdkMinorApiVersion;
+// 输出结果：the value of the sdk Minor ApiVersion is :0
+console.info('the value of the deviceInfo sdkMinorApiVersion is :' + sdkMinorApiVersionInfo);
 
-   let sdkPatchApiVersionInfo: number = deviceInfo.sdkPatchApiVersion;
-    // 输出结果：the value of the sdk Patch ApiVersion is :0
-    console.info('the value of the deviceInfo sdkPatchApiVersion is :' + sdkPatchApiVersionInfo);
+let sdkPatchApiVersionInfo: number = deviceInfo.sdkPatchApiVersion;
+// 输出结果：the value of the sdk Patch ApiVersion is :0
+console.info('the value of the deviceInfo sdkPatchApiVersion is :' + sdkPatchApiVersionInfo);
 
-    let firstApiVersionInfo: number = deviceInfo.firstApiVersion;
-    // 输出结果：the value of the firstApiVersion is :3
-    console.info('the value of the deviceInfo firstApiVersion is :' + firstApiVersionInfo);
+let firstApiVersionInfo: number = deviceInfo.firstApiVersion;
+// 输出结果：the value of the firstApiVersion is :3
+console.info('the value of the deviceInfo firstApiVersion is :' + firstApiVersionInfo);
 
-    let versionIdInfo: string = deviceInfo.versionId;
-    // 输出结果：the value of the versionId is :wearable/HUAWEI/HUAWEI/TAS/OpenHarmony-5.0.0.1/TAS-AL00/TAS-AL00/12/default/release:nolog
-    console.info('the value of the deviceInfo versionId is :' + versionIdInfo);
+let versionIdInfo: string = deviceInfo.versionId;
+// 输出结果：the value of the versionId is :wearable/HUAWEI/HUAWEI/TAS/OpenHarmony-5.0.0.1/TAS-AL00/TAS-AL00/12/default/release:nolog
+console.info('the value of the deviceInfo versionId is :' + versionIdInfo);
 
-    let buildTypeInfo: string = deviceInfo.buildType;
-    // 输出结果：the value of the buildType is :default
-    console.info('the value of the deviceInfo buildType is :' + buildTypeInfo);
+let buildTypeInfo: string = deviceInfo.buildType;
+// 输出结果：the value of the buildType is :default
+console.info('the value of the deviceInfo buildType is :' + buildTypeInfo);
 
-    let buildUserInfo: string = deviceInfo.buildUser;
-    // 输出结果：the value of the buildUser is :default
-    console.info('the value of the deviceInfo buildUser is :' + buildUserInfo);
+let buildUserInfo: string = deviceInfo.buildUser;
+// 输出结果：the value of the buildUser is :default
+console.info('the value of the deviceInfo buildUser is :' + buildUserInfo);
 
-    let buildHostInfo: string = deviceInfo.buildHost;
-    // 输出结果：the value of the buildHost is :default
-    console.info('the value of the deviceInfo buildHost is :' + buildHostInfo);
+let buildHostInfo: string = deviceInfo.buildHost;
+// 输出结果：the value of the buildHost is :default
+console.info('the value of the deviceInfo buildHost is :' + buildHostInfo);
 
-    let buildTimeInfo: string = deviceInfo.buildTime;
-    // 输出结果：the value of the buildTime is :default
-    console.info('the value of the deviceInfo buildTime is :' + buildTimeInfo);
+let buildTimeInfo: string = deviceInfo.buildTime;
+// 输出结果：the value of the buildTime is :default
+console.info('the value of the deviceInfo buildTime is :' + buildTimeInfo);
 
-    let buildRootHashInfo: string = deviceInfo.buildRootHash;
-    // 输出结果：the value of the buildRootHash is :default
-    console.info('the value of the deviceInfo buildRootHash is :' + buildRootHashInfo);
+let buildRootHashInfo: string = deviceInfo.buildRootHash;
+// 输出结果：the value of the buildRootHash is :default
+console.info('the value of the deviceInfo buildRootHash is :' + buildRootHashInfo);
 
-    let udid: string = deviceInfo.udid;
-    // 输出结果：the value of the udid is :9D6AABD147XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXE5536412
-    console.info('the value of the deviceInfo udid is :' + udid);
+let udid: string = deviceInfo.udid;
+// 输出结果：the value of the udid is :9D6AABD147XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXE5536412
+console.info('the value of the deviceInfo udid is :' + udid);
 
-    let distributionOSName: string = deviceInfo.distributionOSName
-    // 输出结果：the value of the distributionOSName is :OpenHarmony
-    console.info('the value of the deviceInfo distributionOSName is :' + distributionOSName);
+let distributionOSName: string = deviceInfo.distributionOSName;
+// 输出结果：the value of the distributionOSName is :OpenHarmony
+console.info('the value of the deviceInfo distributionOSName is :' + distributionOSName);
 
-    let distributionOSVersion: string = deviceInfo.distributionOSVersion
-    // 输出结果：the value of the distributionOSVersion is :5.0.0
-    console.info('the value of the deviceInfo distributionOSVersion is :' + distributionOSVersion);
+let distributionOSVersion: string = deviceInfo.distributionOSVersion;
+// 输出结果：the value of the distributionOSVersion is :5.0.0
+console.info('the value of the deviceInfo distributionOSVersion is :' + distributionOSVersion);
 
-    let distributionOSApiVersion: number = deviceInfo.distributionOSApiVersion
-    // 输出结果：the value of the distributionOSApiVersion is :500001
-    console.info('the value of the deviceInfo distributionOSApiVersion is :' + distributionOSApiVersion);
+let distributionOSApiVersion: number = deviceInfo.distributionOSApiVersion;
+// 输出结果：the value of the distributionOSApiVersion is :500001
+console.info('the value of the deviceInfo distributionOSApiVersion is :' + distributionOSApiVersion);
 
-    let distributionOSApiName: string = deviceInfo.distributionOSApiName
-    console.info('the value of the deviceInfo distributionOSApiName is :' + distributionOSApiName);
+let distributionOSApiName: string = deviceInfo.distributionOSApiName;
+console.info('the value of the deviceInfo distributionOSApiName is :' + distributionOSApiName);
 
-    let distributionOSReleaseType: string = deviceInfo.distributionOSReleaseType
-    // 输出结果：the value of the distributionOSReleaseType is :Release
-    console.info('the value of the deviceInfo distributionOSReleaseType is :' + distributionOSReleaseType);
+let distributionOSReleaseType: string = deviceInfo.distributionOSReleaseType;
+// 输出结果：the value of the distributionOSReleaseType is :Release
+console.info('the value of the deviceInfo distributionOSReleaseType is :' + distributionOSReleaseType);
 
-    let odid: string = deviceInfo.ODID;
-    // 输出结果：the value of the ODID is :1234a567-XXXX-XXXX-XXXX-XXXXXXXXXXXX
-    console.info('the value of the deviceInfo odid is :' + odid);
+let odid: string = deviceInfo.ODID;
+// 输出结果：the value of the ODID is :1234a567-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+console.info('the value of the deviceInfo odid is :' + odid);
 
-    let diskSN: string = deviceInfo.diskSN;
-    // 输出结果：the value of the deviceInfo diskSN is :2502EM400567
-    console.info('the value of the deviceInfo diskSN is :' + diskSN);
+let diskSN: string = deviceInfo.diskSN;
+// 输出结果：the value of the deviceInfo diskSN is :2502EM400567
+console.info('the value of the deviceInfo diskSN is :' + diskSN);
 
-    let performanceClass = deviceInfo.performanceClass;
-    // 输出结果：the value of the deviceInfo performanceClass is :0
-    console.info('the value of the deviceInfo performanceClass is :' + performanceClass);
+let performanceClass = deviceInfo.performanceClass;
+// 输出结果：the value of the deviceInfo performanceClass is :0
+console.info('the value of the deviceInfo performanceClass is :' + performanceClass);
 
-    let chipType: string = deviceInfo.chipType;
-    // 输出结果：the value of the deviceInfo chipType is :xxxxx
-    console.info('the value of the deviceInfo chipType is :' + chipType);
+let chipType: string = deviceInfo.chipType;
+// 输出结果：the value of the deviceInfo chipType is :xxxxx
+console.info('the value of the deviceInfo chipType is :' + chipType);
 
-    let bootCount: number = deviceInfo.bootCount
-    // 输出结果：the value of the bootCount is :100
-    console.info('the value of the deviceInfo bootCount is :' + bootCount);
+let bootCount: number = deviceInfo.bootCount;
+// 输出结果：the value of the bootCount is :100
+console.info('the value of the deviceInfo bootCount is :' + bootCount);
 
-    let deviceColor: string = deviceInfo.deviceColor;
-    // 输出结果：the value of the deviceColor is :blue
-    console.info('the value of the deviceColor is :' + deviceColor);
+let deviceColor: string = deviceInfo.deviceColor;
+// 输出结果：the value of the deviceColor is :blue
+console.info('the value of the deviceColor is :' + deviceColor);
 ```
 
 #### PerformanceClassLevel19+
@@ -294,33 +294,33 @@ import { deviceInfo } from '@kit.BasicServicesKit';
 示例
 
 ```
-    let deviceTypesInfoDefault: string = deviceInfo.DeviceTypes.TYPE_DEFAULT;
-    // 输出结果：the value of the DeviceTypes is :default
-    console.info('the value of the DeviceTypes is :' + deviceTypesInfoDefault);
+let deviceTypesInfoDefault: string = deviceInfo.DeviceTypes.TYPE_DEFAULT;
+// 输出结果：the value of the DeviceTypes is :default
+console.info('the value of the DeviceTypes is :' + deviceTypesInfoDefault);
 
-    let deviceTypesInfoPhone: string = deviceInfo.DeviceTypes.TYPE_PHONE;
-    // 输出结果：the value of the DeviceTypes is :phone
-    console.info('the value of the DeviceTypes is :' + deviceTypesInfoPhone);
+let deviceTypesInfoPhone: string = deviceInfo.DeviceTypes.TYPE_PHONE;
+// 输出结果：the value of the DeviceTypes is :phone
+console.info('the value of the DeviceTypes is :' + deviceTypesInfoPhone);
 
-    let deviceTypesInfoTablet: string = deviceInfo.DeviceTypes.TYPE_TABLET;
-    // 输出结果：the value of the DeviceTypes is :tablet
-    console.info('the value of the DeviceTypes is :' + deviceTypesInfoTablet);
+let deviceTypesInfoTablet: string = deviceInfo.DeviceTypes.TYPE_TABLET;
+// 输出结果：the value of the DeviceTypes is :tablet
+console.info('the value of the DeviceTypes is :' + deviceTypesInfoTablet);
 
-    let deviceTypesInfo2IN1: string = deviceInfo.DeviceTypes.TYPE_2IN1;
-    // 输出结果：the value of the DeviceTypes is :2in1
-    console.info('the value of the DeviceTypes is :' + deviceTypesInfo2IN1);
+let deviceTypesInfo2IN1: string = deviceInfo.DeviceTypes.TYPE_2IN1;
+// 输出结果：the value of the DeviceTypes is :2in1
+console.info('the value of the DeviceTypes is :' + deviceTypesInfo2IN1);
 
-    let deviceTypesInfoTV: string = deviceInfo.DeviceTypes.TYPE_TV;
-    // 输出结果：the value of the DeviceTypes is :tv
-    console.info('the value of the DeviceTypes is :' + deviceTypesInfoTV);
+let deviceTypesInfoTV: string = deviceInfo.DeviceTypes.TYPE_TV;
+// 输出结果：the value of the DeviceTypes is :tv
+console.info('the value of the DeviceTypes is :' + deviceTypesInfoTV);
 
-    let deviceTypesInfoWearable: string = deviceInfo.DeviceTypes.TYPE_WEARABLE;
-    // 输出结果：the value of the DeviceTypes is :wearable
-    console.info('the value of the DeviceTypes is :' + deviceTypesInfoWearable);
+let deviceTypesInfoWearable: string = deviceInfo.DeviceTypes.TYPE_WEARABLE;
+// 输出结果：the value of the DeviceTypes is :wearable
+console.info('the value of the DeviceTypes is :' + deviceTypesInfoWearable);
 
-    let deviceTypesInfoCar: string = deviceInfo.DeviceTypes.TYPE_CAR;
-    // 输出结果：the value of the DeviceTypes is :car
-    console.info('the value of the DeviceTypes is :' + deviceTypesInfoCar);
+let deviceTypesInfoCar: string = deviceInfo.DeviceTypes.TYPE_CAR;
+// 输出结果：the value of the DeviceTypes is :car
+console.info('the value of the DeviceTypes is :' + deviceTypesInfoCar);
 ```
 
 #### deviceInfo.apiAvailable
@@ -352,18 +352,18 @@ import { deviceInfo } from '@kit.BasicServicesKit';
 
 // Check API 26.0.0 (String format for API 26+ represents both HarmonyOS and Distribution OS)
 if (deviceInfo.apiAvailable("26.0.0")) {
-   ...
+   // 需要版本隔离的方法
 }
 
 // Check API 5.0.1 (Distribution OS version, API 26-)
 if (deviceInfo.apiAvailable("5.0.1")) {
-   ...
+   // 需要版本隔离的方法
 }
 
 import { deviceInfo } from '@kit.BasicServicesKit';
 
 // Check API 13 (HarmonyOS SDK version, API 26-)
 if (deviceInfo.apiAvailable(13)) {
-   ...
+   // 需要版本隔离的方法
 }
 ```

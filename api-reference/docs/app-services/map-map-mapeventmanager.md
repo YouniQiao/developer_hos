@@ -2,8 +2,8 @@
 title: "Interface (MapEventManager)"
 upstream_id: "harmonyos-references/map-map-mapeventmanager"
 catalog: "harmonyos-references"
-content_hash: "f59b96a655be"
-synced_at: "2026-07-09T17:28:10.915547"
+content_hash: "872c53d32c68"
+synced_at: "2026-07-28T16:52:45.315403"
 ---
 
 # Interface (MapEventManager)
@@ -1988,7 +1988,7 @@ on(type: 'indoorMapEnter', callback: Callback<IndoorMapInfo>): void
 
 系统能力： SystemCapability.Map.Core
 
-设备行为差异： 在5.1.1(19)及之后版本该接口在phone、tablet、PC/2in1均可正常使用，在其他设备中返回801错误码。
+设备行为差异： 在5.1.1(19)及之后版本该接口在phone、tablet和PC/2in1均可正常使用，在其他设备中返回801错误码。
 
 起始版本： 5.1.1(19)
 
@@ -2026,9 +2026,9 @@ off(type: 'indoorMapEnter', callback?: Callback<IndoorMapInfo>): void
 
 元服务API： 从版本5.1.1(19)开始，该接口支持在元服务中使用。
 
-设备行为差异： 在5.1.1(19)及之后版本该接口在phone、tablet、PC/2in1均可正常使用，在其他设备中返回801错误码。
-
 系统能力： SystemCapability.Map.Core
+
+设备行为差异： 在5.1.1(19)及之后版本该接口在phone、tablet和PC/2in1均可正常使用，在其他设备中返回801错误码。
 
 起始版本： 5.1.1(19)
 
@@ -2071,7 +2071,7 @@ on(type: 'indoorMapExit', callback: Callback<void>): void
 
 系统能力： SystemCapability.Map.Core
 
-设备行为差异： 在5.1.1(19)及之后版本该接口在phone、tablet、PC/2in1均可正常使用，在其他设备中返回801错误码。
+设备行为差异： 在5.1.1(19)及之后版本该接口在phone、tablet和PC/2in1均可正常使用，在其他设备中返回801错误码。
 
 起始版本： 5.1.1(19)
 
@@ -2111,7 +2111,7 @@ off(type: 'indoorMapExit', callback?: Callback<void>): void
 
 系统能力： SystemCapability.Map.Core
 
-设备行为差异： 在5.1.1(19)及之后版本该接口在phone、tablet、PC/2in1均可正常使用，在其他设备中返回801错误码。
+设备行为差异： 在5.1.1(19)及之后版本该接口在phone、tablet和PC/2in1均可正常使用，在其他设备中返回801错误码。
 
 起始版本： 5.1.1(19)
 

@@ -2,8 +2,8 @@
 title: "speechRecognizer（语音识别）"
 upstream_id: "harmonyos-references/hms-ai-speechrecognizer"
 catalog: "harmonyos-references"
-content_hash: "e465881bc222"
-synced_at: "2026-07-09T01:01:41.761271"
+content_hash: "f5c7a42ea3f7"
+synced_at: "2026-07-28T16:53:10.970538"
 ---
 
 # speechRecognizer（语音识别）
@@ -302,7 +302,7 @@ struct Page {
 
 setListener(listener: RecognitionListener): void
 
-设置语音识别回调。
+设置语音识别回调。在使用其他能力前需要先调用setListener设置回调。
 
 系统能力： SystemCapability.AI.SpeechRecognizer
 
@@ -418,9 +418,7 @@ struct Page {
 
 writeAudio(sessionId: string, audio: Uint8Array): void
 
-写音频流，最大音频长度为60000ms。为了确保收到识别结果，请优先调用[setListener](#setlistener)和[startListening](#startlistening)。
-
-此接口在调用[speechRecognizer.createEngine](#speechrecognizercreateengine)、[speechRecognizer.createEngine](#speechrecognizercreateengine-1)、[setListener](#setlistener)、[startListening](#startlistening)之后使用。如果是通过录音，不需要显式调用writeAudio；如果是写音频流文件，需要Core File Kit相关接口循环读取文件，详见[开发步骤](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/speechrecognizer-guide#开发步骤)。
+写音频流，最大音频长度为60000ms。为了确保收到识别结果，此接口需在调用[speechRecognizer.createEngine](#speechrecognizercreateengine)、[speechRecognizer.createEngine](#speechrecognizercreateengine-1)、[setListener](#setlistener)、[startListening](#startlistening)之后使用，否则writeAudio方法将写入失败，或无法接收识别后的回调。如果是通过录音，不需要显式调用writeAudio；如果是写音频流文件，需要Core File Kit相关接口循环读取文件，详见[开发步骤](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/speechrecognizer-guide#开发步骤)。
 
 系统能力： SystemCapability.AI.SpeechRecognizer
 

@@ -1,32 +1,14 @@
 ---
-title: "StarShieldConfidentialRiskControlEngine（星盾机密风控引擎）"
+title: "RiskControlEngine（星盾机密风控引擎）"
 upstream_id: "harmonyos-references/errorcode-devicesecurity-riskcontrolengine"
 catalog: "harmonyos-references"
-content_hash: "7d0391d08eee"
-synced_at: "2026-07-09T00:59:15.583779"
+content_hash: "e9b5e772fe94"
+synced_at: "2026-07-28T16:50:26.666002"
 ---
 
-# StarShieldConfidentialRiskControlEngine（星盾机密风控引擎）
+# RiskControlEngine（星盾机密风控引擎）
 
 ![](./img/note_3.0-zh-cn.png) 以下仅介绍本模块特有错误码，通用错误码请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
-
-#### 1010800001 内部异常
-
-错误信息
-
-Internal error.
-
-错误描述
-
-内部异常。
-
-可能原因
-
-接口执行流程中调用系统其它接口出现异常。
-
-处理步骤
-
-请优先重试，若重试不成功，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。
 
 #### 1010800004 校验capability失败
 

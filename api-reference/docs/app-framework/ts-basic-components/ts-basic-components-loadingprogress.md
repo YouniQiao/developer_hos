@@ -2,19 +2,19 @@
 title: "LoadingProgress"
 upstream_id: "harmonyos-references/ts-basic-components-loadingprogress"
 catalog: "harmonyos-references"
-content_hash: "20745c3ceccb"
-synced_at: "2026-07-09T17:24:20.815525"
+content_hash: "9f47a95eb24a"
+synced_at: "2026-07-28T16:46:11.640198"
 ---
 
 # LoadingProgress
 
-用于显示加载动效的组件。
+LoadingProgress是用于显示加载进度条的组件，在数据加载过程中为用户提供视觉反馈，提升用户体验。该组件支持设置前景色、控制动画显示状态等特性，适用于需要在应用内展示加载进度的场景。
 
-加载动效在组件不可见时停止，组件的可见状态基于[onVisibleAreaChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-component-visible-area-change-event#onvisibleareachange)处理，可见阈值ratios大于0即视为可见状态。
+加载进度条的动效在组件不可见时停止，组件的可见状态基于[onVisibleAreaChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-component-visible-area-change-event#onvisibleareachange)处理，可见阈值ratios大于0即视为可见状态。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 该组件从API version 8开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+- 该组件从API version 8开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 - 该组件从API版本26.0.0开始支持[WithTheme](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-with-theme)。
 
 #### 子组件
@@ -37,7 +37,7 @@ LoadingProgress()
 
 除支持[通用属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-attributes)外，还支持以下属性：
 
-![](./img/note_3.0-zh-cn.png) 组件应设置合理的宽高，当组件宽高设置过大时加载动效可能不符合预期效果。
+![](./img/note_3.0-zh-cn.png) 组件应设置合理的宽高，当组件宽高设置过大时加载进度条的动效可能不符合预期效果。
 
 #### [h2]color
 
@@ -91,7 +91,7 @@ contentModifier(modifier: ContentModifier<LoadingProgressConfiguration>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| modifier | ContentModifier | 是 | 在LoadingProgress组件上，定制内容区的方法。 modifier： 内容修改器，开发者需要自定义class实现ContentModifier接口。 |
+| modifier | ContentModifier | 是 | 在LoadingProgress组件上，定制内容区的方法。 modifier：内容修改器，开发者需要自定义class实现ContentModifier接口。 |
 
 #### 事件
 
@@ -131,7 +131,7 @@ contentModifier(modifier: ContentModifier<LoadingProgressConfiguration>)
 
 #### [h2]示例1（设置颜色）
 
-该示例通过[color](#color)接口，实现了设置加载动效颜色的功能。
+该示例通过[color](#color)接口，实现了设置加载进度条颜色的功能。
 
 ```
 // xxx.ets
@@ -148,7 +148,7 @@ struct LoadingProgressExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664329939.gif)
+ ![](./img/zh-cn_image_0000002686088241.gif)
 
 #### [h2]示例2（设置定制内容区）
 
@@ -172,7 +172,7 @@ class MyLoadingProgressStyle implements ContentModifier<LoadingProgressConfigura
   }
 }
 
-let arr2: string[] = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+let arr: string[] = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
 @Builder
 function buildLoadingProgress(config: LoadingProgressConfiguration) {
@@ -233,7 +233,7 @@ function buildLoadingProgress(config: LoadingProgressConfiguration) {
 
     Column() {
       List({ space: 20, initialIndex: 0 }) {
-        ForEach(arr2, (item: string) => {
+        ForEach(arr, (item: string) => {
           ListItem() {
             Text((config.contentModifier as MyLoadingProgressStyle).enableLoading ? '' + item : Number(item) * 2 + '')
               .width('100%')
@@ -268,7 +268,6 @@ function buildLoadingProgress(config: LoadingProgressConfiguration) {
 @Component
 struct LoadingProgressDemoExample {
   @State loadingProgressList: (boolean | undefined | null)[] = [undefined, true, null, false];
-  @State widthList: (number | string)[] = ['110%', 220, '40%', 80];
   @State loadingProgressIndex: number = 0;
   @State clickFlag: number = 0;
   scroller: Scroller = new Scroller();
@@ -296,4 +295,4 @@ struct LoadingProgressDemoExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002633850828.gif)
+ ![](./img/zh-cn_image_0000002685928411.gif)

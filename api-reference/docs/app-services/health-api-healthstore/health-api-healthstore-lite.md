@@ -2,8 +2,8 @@
 title: "healthStore (运动健康数据服务)(Lite)"
 upstream_id: "harmonyos-references/health-api-healthstore-lite"
 catalog: "harmonyos-references"
-content_hash: "1e122b8903a1"
-synced_at: "2026-07-09T01:01:20.018089"
+content_hash: "440f8c6825ce"
+synced_at: "2026-07-28T16:52:38.541454"
 ---
 
 # healthStore (运动健康数据服务)(Lite)
@@ -95,8 +95,8 @@ import healthStore from '@hms.health.store';
 | --- | --- | --- | --- | --- |
 | startLocalDate | string | 否 | 否 | 数据的开始本地日期，格式'MM/DD/YYYY'。 |
 | endLocalDate | string | 否 | 否 | 数据的结束本地日期，格式'MM/DD/YYYY'。 |
-| startTime | number | 否 | 否 | 请求的开始时间，Unix时间戳，以毫秒为单位。该参数在Lite Wearable设备上暂不生效，仅支持返回最新一条数据。 取值范围：(0, ∞) |
-| endTime | number | 否 | 否 | 请求的结束时间，Unix时间戳，以毫秒为单位。该参数在Lite Wearable设备上暂不生效，仅支持返回最新一条数据。 取值范围：(0, ∞) |
+| startTime | number | 否 | 否 | 请求的开始时间，Unix时间戳，单位：ms。该参数在Lite Wearable设备上暂不生效，仅支持返回最新一条数据。 取值范围：(0, ∞) |
+| endTime | number | 否 | 否 | 请求的结束时间，Unix时间戳，单位：ms。该参数在Lite Wearable设备上暂不生效，仅支持返回最新一条数据。 取值范围：(0, ∞) |
 | dataSourceOptions | [DataSourceOptions](#datasourceoptions) | 否 | 是 | 请求关联的数据源信息，若未填写，默认为无数据源限制。 |
 
 #### DataSourceOptions
@@ -146,9 +146,9 @@ ExerciseSequence<K extends Record<string, [ExerciseSummary](#exercisesummary)> =
 | 名称 | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
 | exerciseType | [SubDataType](#subdatatype) | 否 | 否 | 锻炼记录子数据类型。 |
-| duration | number | 否 | 是 | 锻炼时长，单位毫秒，若未填写，默认为结束时间减去开始时间。 取值范围：(0, ∞) |
-| summaries | Pick | 否 | 否 | 统计数据，锻炼记录关联的统计数据类型参考[exerciseSequenceHelper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-exercisedequencehelper)定义的模型。 |
-| details | Pick | 否 | 是 | 详情数据，锻炼记录关联的详情数据类型参考[exerciseSequenceHelper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-exercisedequencehelper)定义的模型，若未填写，默认为空。 |
+| duration | number | 否 | 是 | 锻炼时长，单位：ms，若未填写，默认为结束时间减去开始时间。 取值范围：(0, ∞) |
+| summaries | Pick | 否 | 否 | 统计数据，锻炼记录关联的统计数据类型参考[exerciseSequenceHelper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-exercisesequencehelper-lite)定义的模型。 |
+| details | Pick | 否 | 是 | 详情数据，锻炼记录关联的详情数据类型参考[exerciseSequenceHelper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-exercisesequencehelper-lite)定义的模型，若未填写，默认为空。 |
 
 #### ExerciseSequenceReadRequest
 
@@ -231,10 +231,10 @@ type PaceValueType = Record<string, number>
 | dataType | [DataType](#datatype) | 否 | 否 | 数据类型。 |
 | dataSourceId | string | 否 | 否 | 数据源唯一标识值。LiteWearable设备开发，无需填写dataSourceId。 |
 | localDate | string | 否 | 否 | 数据的本地日期，格式'MM/DD/YYYY'。 |
-| startTime | number | 否 | 否 | 数据开始时间，Unix时间戳，以毫秒为单位。 取值范围：(0, ∞) |
-| endTime | number | 否 | 否 | 数据结束时间，Unix时间戳，以毫秒为单位。 取值范围：(0, ∞) |
+| startTime | number | 否 | 否 | 数据开始时间，Unix时间戳，单位：ms。 取值范围：(0, ∞) |
+| endTime | number | 否 | 否 | 数据结束时间，Unix时间戳，单位：ms。 取值范围：(0, ∞) |
 | timeZone | string | 否 | 否 | 数据所在的时区，格式为+0800。 |
-| modifiedTime | number | 否 | 否 | 创建或修改时间，Unix时间戳，以毫秒为单位。 取值范围：(0, ∞) |
+| modifiedTime | number | 否 | 否 | 创建或修改时间，Unix时间戳，单位：ms。 取值范围：(0, ∞) |
 
 #### SequencePoint
 
@@ -248,7 +248,7 @@ type PaceValueType = Record<string, number>
 
 | 名称 | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
-| startTime | number | 否 | 否 | 数据开始时间，Unix时间戳，以毫秒为单位。 取值范围：(0, ∞) |
+| startTime | number | 否 | 否 | 数据开始时间，Unix时间戳，单位：ms。 取值范围：(0, ∞) |
 | [P: string] | [HealthValueType](#healthvaluetype) | 否 | 否 | 详情数据点字段。 |
 
 #### SequenceReadOptions
@@ -266,7 +266,7 @@ SequenceReadOptions<DK extends Record<string, [SequencePoint](#sequencepoint)[]>
 | 名称 | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
 | withDetails | boolean | 否 | 是 | 是否读取全部详情。true为读取全部详情，false为不读取详情，若未填写，则withPartialDetails参数生效。 |
-| withPartialDetails | (keyof DK)[] | 否 | 是 | 读取部分详情数据类型（若需要读取部分详情，withDetails参数不能填写），锻炼记录与健康记录关联的详情数据类型分别参考[exerciseSequenceHelper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-exercisedequencehelper-lite)。 |
+| withPartialDetails | (keyof DK)[] | 否 | 是 | 读取部分详情数据类型（若需要读取部分详情，withDetails参数不能填写），锻炼记录与健康记录关联的详情数据类型分别参考[exerciseSequenceHelper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-exercisesequencehelper-lite)。 |
 
 #### SortOrder
 

@@ -2,11 +2,13 @@
 title: "Enums"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-e"
 catalog: "harmonyos-references"
-content_hash: "0822ac9bb224"
-synced_at: "2026-07-09T00:57:30.255601"
+content_hash: "38498f53d146"
+synced_at: "2026-07-28T16:41:13.084001"
 ---
 
 # Enums
+
+本章节提供UIContext相关枚举类型，用于配置键盘避让、动态帧率场景、节点渲染状态、手势监听、自定义键盘接续和文本选择清除策略等场景。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -17,14 +19,16 @@ synced_at: "2026-07-09T00:57:30.255601"
 
 配置键盘弹出时页面的避让模式。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
 | OFFSET | 0 | 上抬模式。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | RESIZE | 1 | 压缩模式。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| OFFSET_WITH_CARET14+ | 2 | 上抬模式，输入框光标位置发生变化时候也会触发避让。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
-| RESIZE_WITH_CARET14+ | 3 | 压缩模式，输入框光标位置发生变化时候也会触发避让。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
+| OFFSET_WITH_CARET14+ | 2 | 上抬模式，输入框光标位置发生变化时也会触发避让。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
+| RESIZE_WITH_CARET14+ | 3 | 压缩模式，输入框光标位置发生变化时也会触发避让。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
 | NONE14+ | 4 | 不避让键盘。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
 
 #### SwiperDynamicSyncSceneType12+
@@ -54,7 +58,9 @@ synced_at: "2026-07-09T00:57:30.255601"
 
 #### NodeRenderState20+
 
-组件的渲染状态。
+节点的渲染状态。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -62,25 +68,29 @@ synced_at: "2026-07-09T00:57:30.255601"
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| ABOUT_TO_RENDER_IN | 0 | 该节点已挂载到渲染树上，一般将会在下一帧被渲染。一般情况下可被看见，但会被渲染并不等同于一定可见。 |
+| ABOUT_TO_RENDER_IN | 0 | 该节点已挂载到渲染树上，通常会在下一帧渲染并对用户可见，但节点被渲染不代表一定可见。 |
 | ABOUT_TO_RENDER_OUT | 1 | 该节点已从渲染树中删除，一般下一帧不会被渲染，用户将不会看到此节点。 |
 
 #### GestureActionPhase20+
 
 此枚举类型表示手势回调触发阶段，对应gesture.d.ts中定义的动作回调，但不同手势类型支持的阶段不同（如SwipeGesture仅包含WILL_START枚举值）。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| WILL_START | 0 | 手势已被系统成功识别，将立即触发onActionStart或onAction回调。若手势绑定了onActionStart，则在onActionStart处触发；若手势绑定了onAction，则在onAction处触发；若两者同时绑定，则优先在onActionStart处触发；若两者均未绑定，则不会触发任何回调。某些容器有内置手势绑定了回调（如滚动类容器），默认支持上述回调触发机制，无需显式绑定即可触发回调。 |
-| WILL_END | 1 | 表示手势已被判定为结束状态（通常发生在用户抬起手指终止交互时）。onActionEnd回调将立即触发，但手势必须显式绑定onActionEnd。某些容器有内置手势绑定了回调（如滚动类容器），默认支持该结束状态判定，无需显式绑定即可触发onActionEnd回调。 |
+| WILL_START | 0 | 手势已被系统成功识别，将立即触发onActionStart或onAction回调。若手势绑定了onActionStart，则在onActionStart处触发；若手势绑定了onAction，则在onAction处触发；若两者同时绑定，则优先在onActionStart处触发；若两者均未绑定，则不会触发任何回调。具有内置手势回调的容器（如滚动类容器）默认支持onActionStart或onAction回调触发机制，无需显式绑定即可触发回调。 |
+| WILL_END | 1 | 表示手势已被判定为结束状态（通常发生在用户抬起手指终止交互时）。onActionEnd回调将立即触发，但手势必须显式绑定onActionEnd。具有内置手势回调的容器（如滚动类容器）默认支持手势结束状态判定，无需显式绑定即可触发onActionEnd回调。 |
 
 #### GestureListenerType20+
 
 此枚举类型用于指定需要监控的手势类型。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -98,6 +108,8 @@ synced_at: "2026-07-09T00:57:30.255601"
 #### ResolveStrategy22+
 
 UIContext对象的解析策略。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 元服务API： 从API version 22开始，该接口支持在元服务中使用。
 
@@ -124,7 +136,7 @@ UIContext对象的解析策略。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-模型约束：此接口仅可在Stage模型下使用。
+模型约束： 此接口仅可在Stage模型下使用。
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |

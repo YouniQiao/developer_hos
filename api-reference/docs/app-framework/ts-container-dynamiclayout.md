@@ -2,17 +2,17 @@
 title: "DynamicLayout"
 upstream_id: "harmonyos-references/ts-container-dynamiclayout"
 catalog: "harmonyos-references"
-content_hash: "77c10ec815e1"
-synced_at: "2026-07-09T00:57:45.958670"
+content_hash: "4e6fb4410e77"
+synced_at: "2026-07-28T16:43:15.159661"
 ---
 
 # DynamicLayout
 
-动态布局容器组件，支持在运行时动态切换不同的布局算法，不改变子组件的状态。
+动态布局容器组件，支持在运行时动态切换不同的布局算法，不改变子组件的状态。使用DynamicLayout可以提升布局灵活性，简化界面适配和多视图切换的开发流程。适用于响应式布局（适配不同屏幕尺寸）、多视图模式切换（如列表/网格/瀑布流切换）、用户自定义布局等场景。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 该组件从API version 24开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+- 该组件从API version 24开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 - 本模块接口仅可在Stage模型下使用。
 
 #### 子组件
@@ -25,11 +25,11 @@ DynamicLayout(algorithm: LayoutAlgorithm)
 
 动态布局容器。
 
-模型约束： 此接口仅可在Stage模型下使用。
-
 卡片能力： 从API version 24开始，该接口支持在ArkTS卡片中使用。
 
 元服务API： 从API version 24开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -37,7 +37,7 @@ DynamicLayout(algorithm: LayoutAlgorithm)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| algorithm | [LayoutAlgorithm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#layoutalgorithm-1) | 是 | 指定动态布局容器的布局算法。取非法值时，按照[StackLayoutAlgorithm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#stacklayoutalgorithm)布局子组件，子组件堆叠排列。 |
+| algorithm | [LayoutAlgorithm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#layoutalgorithm-1) | 是 | 指定动态布局容器的布局算法。支持使用[RowLayoutAlgorithm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#rowlayoutalgorithm)（水平线性布局，适用于水平排列场景）、[ColumnLayoutAlgorithm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#columnlayoutalgorithm)（垂直线性布局，适用于垂直排列场景）、[StackLayoutAlgorithm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#stacklayoutalgorithm)（堆叠布局，适用于层叠覆盖场景）、[GridLayoutAlgorithm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#gridlayoutalgorithm)（网格布局，适用于规整网格场景）和[CustomLayoutAlgorithm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#customlayoutalgorithm)（自定义布局，适用于复杂特殊布局场景）等布局算法实例，详见[LayoutAlgorithm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#layoutalgorithm-1)。取非法值（如null、undefined或无效的布局算法对象）时，按照[StackLayoutAlgorithm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#stacklayoutalgorithm)布局子组件，子组件堆叠排列。 |
 
 #### 属性
 
@@ -45,9 +45,10 @@ DynamicLayout(algorithm: LayoutAlgorithm)
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 当布局算法为[RowLayoutAlgorithm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#rowlayoutalgorithm)或[ColumnLayoutAlgorithm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#columnlayoutalgorithm)时，子组件设置[Flex布局](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-flex-layout)属性生效。
-- 当布局算法为[StackLayoutAlgorithm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#stacklayoutalgorithm)时，子组件设置[layoutGravity](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-location#layoutgravity20)属性生效。
+- 当布局算法为[RowLayoutAlgorithm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#rowlayoutalgorithm)或[ColumnLayoutAlgorithm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#columnlayoutalgorithm)时，子组件设置[Flex布局](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-flex-layout)属性生效，设置[layoutGravity](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-location#layoutgravity20)属性不生效。
+- 当布局算法为[StackLayoutAlgorithm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#stacklayoutalgorithm)时，子组件设置[layoutGravity](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-location#layoutgravity20)属性生效，设置[Flex布局](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-flex-layout)属性不生效。
 - 当布局算法为[CustomLayoutAlgorithm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#customlayoutalgorithm)时，DynamicLayout组件[FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#framenode-1)的[setMeasuredSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#setmeasuredsize12)方法优先级高于[尺寸设置](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size)和[边框](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border)属性，子组件[FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#framenode-1)的[measure](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#measure12)和[layout](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#layout12)方法优先级高于[ignoreLayoutSafeArea](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-expand-safe-area#ignorelayoutsafearea20)属性。
+- 当布局算法为[GridLayoutAlgorithm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#gridlayoutalgorithm)时，子组件设置[Flex布局](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-flex-layout)属性不生效，设置[layoutGravity](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-location#layoutgravity20)属性不生效，子组件通过GridLayoutAlgorithm参数控制位置。
 
 #### 事件
 
@@ -57,7 +58,7 @@ DynamicLayout(algorithm: LayoutAlgorithm)
 
 #### [h2]示例1（自定义布局算法实现瀑布流布局）
 
-该示例展示如何重写[onMeasure](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#onmeasure)、[onLayout](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#onlayout)函数，实现瀑布流布局展示商品列表的功能。
+该示例展示如何重写[onMeasure](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#onmeasure)、[onLayout](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#onlayout)函数，实现瀑布流布局展示商品列表的功能。瀑布流布局通过测量阶段计算子组件高度并记录每列累计高度，在布局阶段将子组件分配到当前高度最小的列，实现自动填充效果。
 
 从API version 24开始，新增onMeasure、onLayout。
 
@@ -226,11 +227,13 @@ interface Product {
   image: string;
 }
 ```
- ![](./img/zh-cn_image_0000002631413162.png)
+ ![](./img/zh-cn_image_0000002655848468.png)
 
 #### [h2]示例2（切换布局算法）
 
-该示例通过改变[@Local](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-local)装饰的[LayoutAlgorithm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#layoutalgorithm-1)类型变量，实现动态切换DynamicLayout组件布局算法的功能。示例展示如何切换布局算法为水平线性布局算法[RowLayoutAlgorithm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#rowlayoutalgorithm)、垂直线性布局算法[ColumnLayoutAlgorithm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#columnlayoutalgorithm)、堆叠布局算法[StackLayoutAlgorithm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#stacklayoutalgorithm)和网格布局算法[GridLayoutAlgorithm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#gridlayoutalgorithm)。
+该示例通过改变[@Local](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-local)装饰的[LayoutAlgorithm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#layoutalgorithm-1)类型变量，实现动态切换DynamicLayout组件布局算法的功能。示例展示如何切换布局算法为[RowLayoutAlgorithm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#rowlayoutalgorithm)（水平线性布局）、[ColumnLayoutAlgorithm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#columnlayoutalgorithm)（垂直线性布局）、[StackLayoutAlgorithm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#stacklayoutalgorithm)（堆叠布局）和[GridLayoutAlgorithm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-layoutalgorithm#gridlayoutalgorithm)（网格布局）。
+
+![](./img/note_3.0-zh-cn.png) 示例中预置的layoutGravity属性仅在Stack布局算法下生效，在Row/Column布局算法下该属性不生效。
 
 从API version 24开始，新增RowLayoutAlgorithm、ColumnLayoutAlgorithm、StackLayoutAlgorithm、GridLayoutAlgorithm。
 
@@ -342,7 +345,7 @@ struct LayoutSwitchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732391.gif)
+ ![](./img/zh-cn_image_0000002686087897.gif)
 
 #### [h2]示例3（修改布局算法属性）
 
@@ -401,6 +404,7 @@ struct PropertyChangeExample {
         Button('两端对齐')
           .fontSize(14)
           .onClick(() => {
+            // 修改justifyContent属性为两端对齐
             this.algorithm.justifyContent = FlexAlign.SpaceBetween;
           })
       }
@@ -410,4 +414,4 @@ struct PropertyChangeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253272.gif)
+ ![](./img/zh-cn_image_0000002685928069.gif)

@@ -2,8 +2,8 @@
 title: "TrustedAuthentication（数字盾服务）"
 upstream_id: "harmonyos-references/devicesecurity-trusted-auth-api"
 catalog: "harmonyos-references"
-content_hash: "a4c3eac7ecff"
-synced_at: "2026-07-09T00:59:15.793900"
+content_hash: "d8557da52eba"
+synced_at: "2026-07-28T16:50:26.192099"
 ---
 
 # TrustedAuthentication（数字盾服务）
@@ -30,7 +30,7 @@ enableTrustedAuthentication(challenge: Uint8Array, pwdInfo: PasswordInfo, label:
 
 系统能力： SystemCapability.Security.TrustedAuthentication
 
-设备行为差异： 对于API 24之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于API 24及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#checkconfirmuitextformat)查询能力是否支持。
+设备行为差异： 对于6.1.1(24)之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于6.1.1(24)及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#checkconfirmuitextformat)查询能力是否支持。
 
 起始版本： 6.0.0(20)
 
@@ -111,7 +111,7 @@ modifyTrustedAuthenticationPwd(challenge: Uint8Array, pwdInfo: PasswordInfo, aut
 
 系统能力： SystemCapability.Security.TrustedAuthentication
 
-设备行为差异： 对于API 24之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于API 24及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#checkconfirmuitextformat)查询能力是否支持。
+设备行为差异： 对于6.1.1(24)之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于6.1.1(24)及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#checkconfirmuitextformat)查询能力是否支持。
 
 起始版本： 6.0.0(20)
 
@@ -197,7 +197,7 @@ disableTrustedAuthentication(challenge: Uint8Array, needAuth: boolean, authID: b
 
 系统能力： SystemCapability.Security.TrustedAuthentication
 
-设备行为差异： 对于API 24之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于API 24及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#checkconfirmuitextformat)查询能力是否支持。
+设备行为差异： 对于6.1.1(24)之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于6.1.1(24)及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#checkconfirmuitextformat)查询能力是否支持。
 
 起始版本： 6.0.0(20)
 
@@ -277,7 +277,7 @@ trustedAuthentication(challenge: Uint8Array, authID: bigint, label: TUILable): P
 
 系统能力： SystemCapability.Security.TrustedAuthentication
 
-设备行为差异： 对于API 24之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于API 24及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#checkconfirmuitextformat)查询能力是否支持。
+设备行为差异： 对于6.1.1(24)之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于6.1.1(24)及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#checkconfirmuitextformat)查询能力是否支持。
 
 起始版本： 6.0.0(20)
 
@@ -354,7 +354,7 @@ procContentAuthentication(challenge: Uint8Array, authID: bigint, authMsg: AuthRe
 
 系统能力： SystemCapability.Security.TrustedAuthentication
 
-设备行为差异： 对于API 24之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于API 24及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#checkconfirmuitextformat)查询能力是否支持。
+设备行为差异： 对于6.1.1(24)之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于6.1.1(24)及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#checkconfirmuitextformat)查询能力是否支持。
 
 起始版本： 6.0.0(20)
 
@@ -437,7 +437,7 @@ getBiometricAuthToken(operType: OperateType, tuiAuthToken: Uint8Array, bioAuthTo
 
 系统能力： SystemCapability.Security.TrustedAuthentication
 
-设备行为差异： 对于API 24之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于API 24及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#checkconfirmuitextformat)查询能力是否支持。
+设备行为差异： 对于6.1.1(24)之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于6.1.1(24)及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#checkconfirmuitextformat)查询能力是否支持。
 
 起始版本： 6.0.0(20)
 
@@ -482,7 +482,7 @@ import { common } from '@kit.AbilityKit';
 const TAG = "TrustedAuthenticationJsTest";
 async function PwdVerify(challenge: Uint8Array, resourceMgr:resourceManager.ResourceManager):Promise<trustedAuthentication.AuthToken> {
   try {
-    const authID: bigint = 11842183505170721246n; // 实际填充为从服务器获取到的账号对应的authID值
+    const authID: bigint = 11842183505170721246n; // 实际填充为从服务器获取到的账号对应的credentialID值
     const fileData : Uint8Array = await resourceMgr.getRawFileContent('test_logo_rgba.png'); // 实际使用时请替换为应用要在TUI界面展示的logo图片名称
     const buffer = fileData.buffer;
     const label:trustedAuthentication.TUILable = {
@@ -547,7 +547,7 @@ importData(data: ArrayBuffer, authID: bigint): Promise<void>
 
 系统能力： SystemCapability.Security.TrustedAuthentication
 
-设备行为差异： 对于API 24之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于API 24及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#checkconfirmuitextformat)查询能力是否支持。
+设备行为差异： 对于6.1.1(24)之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于6.1.1(24)及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#checkconfirmuitextformat)查询能力是否支持。
 
 起始版本： 6.0.0(20)
 
@@ -608,7 +608,7 @@ exportData(authID: bigint, label: TUILable): Promise<ArrayBuffer>
 
 系统能力： SystemCapability.Security.TrustedAuthentication
 
-设备行为差异： 对于API 24之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于API 24及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#checkconfirmuitextformat)查询能力是否支持。
+设备行为差异： 对于6.1.1(24)之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于6.1.1(24)及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#checkconfirmuitextformat)查询能力是否支持。
 
 起始版本： 6.0.0(20)
 
@@ -677,7 +677,7 @@ checkConfirmUITextFormat(text: string): Promise<TextCheckResult>
 
 系统能力： SystemCapability.Security.TrustedAuthentication
 
-设备行为差异： 对于API 24之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于API 24及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。
+设备行为差异： 对于6.1.1(24)之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于6.1.1(24)及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。
 
 起始版本： 6.0.0(20)
 
@@ -761,7 +761,7 @@ getRemainAuthTimes(authID: bigint): Promise<number>
 
 系统能力： SystemCapability.Security.TrustedAuthentication
 
-设备行为差异： 对于API 24之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于API 24及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#checkconfirmuitextformat)查询能力是否支持。
+设备行为差异： 对于6.1.1(24)之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于6.1.1(24)及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#checkconfirmuitextformat)查询能力是否支持。
 
 起始版本： 6.0.0(20)
 
@@ -818,7 +818,7 @@ disableTrustedBioAuthentication(authID: bigint, authType: AuthType): Promise<voi
 
 系统能力： SystemCapability.Security.TrustedAuthentication
 
-设备行为差异： 对于API 24之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于API 24及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#checkconfirmuitextformat)查询能力是否支持。
+设备行为差异： 对于6.1.1(24)之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于6.1.1(24)及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#checkconfirmuitextformat)查询能力是否支持。
 
 起始版本： 6.0.0(20)
 

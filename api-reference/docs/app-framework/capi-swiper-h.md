@@ -1,0 +1,1503 @@
+---
+title: "swiper.h"
+upstream_id: "harmonyos-references/capi-swiper-h"
+catalog: "harmonyos-references"
+content_hash: "d9a168ed70a3"
+synced_at: "2026-07-28T16:49:26.410672"
+---
+
+# swiper.h
+
+#### 概述
+
+定义Swiper组件的枚举和接口。
+
+引用文件： <arkui/node_attributes/swiper.h>
+
+库： libace_ndk.z.so
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+起始版本： 12
+
+相关模块： [ArkUI_NativeModule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule)
+
+相关示例： [NDKSwiperSample](https://gitcode.com/HarmonyOS_Samples/guide-snippets/tree/master/ArkUISample/NDKSwiperSample)
+
+#### 汇总
+
+#### [h2]结构体
+
+| 名称 | typedef关键字 | 描述 |
+| --- | --- | --- |
+| [ArkUI_SwiperIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator) | ArkUI_SwiperIndicator | 定义Swiper组件的导航指示器样式，用于在轮播等场景中展示当前位置和切换状态。支持自定义指示器的大小、颜色、间距等属性配置，能够提升用户对当前浏览位置的感知，增强用户交互体验，适用于需要展示轮播图片、广告位、内容导航等多种应用场景。 |
+| [ArkUI_SwiperDigitIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperdigitindicator) | ArkUI_SwiperDigitIndicator | 定义Swiper组件的数字导航指示器样式，用于以数字形式展示当前位置和总页数。 |
+| [ArkUI_SwiperArrowStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperarrowstyle) | ArkUI_SwiperArrowStyle | 定义Swiper组件的导航箭头样式结构体，通过配置箭头位置、大小、颜色等属性实现翻页指引。 |
+
+#### [h2]枚举
+
+| 名称 | typedef关键字 | 描述 |
+| --- | --- | --- |
+| [ArkUI_SwiperArrow](#arkui_swiperarrow) | ArkUI_SwiperArrow | Swiper导航点箭头枚举值。 |
+| [ArkUI_SwiperNestedScrollMode](#arkui_swipernestedscrollmode) | ArkUI_SwiperNestedScrollMode | Swiper组件和父组件的嵌套滚动模式。 |
+| [ArkUI_PageFlipMode](#arkui_pageflipmode) | ArkUI_PageFlipMode | Swiper组件鼠标滚轮翻页模式。 |
+| [ArkUI_SwiperAnimationMode](#arkui_swiperanimationmode) | ArkUI_SwiperAnimationMode | Swiper组件跳转到目标index的动画模式。 |
+| [ArkUI_SwiperIndicatorType](#arkui_swiperindicatortype) | ArkUI_SwiperIndicatorType | 定义Swiper组件的导航指示器类型。 |
+
+#### [h2]函数
+
+| 名称 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperIndicator* OH_ArkUI_SwiperIndicator_Create(ArkUI_SwiperIndicatorType type)](#oh_arkui_swiperindicator_create) | 创建Swiper组件的导航指示器。 |
+| [void OH_ArkUI_SwiperIndicator_Dispose(ArkUI_SwiperIndicator* indicator)](#oh_arkui_swiperindicator_dispose) | 销毁Swiper组件的导航指示器指针。 |
+| [void OH_ArkUI_SwiperIndicator_SetStartPosition(ArkUI_SwiperIndicator* indicator, float value)](#oh_arkui_swiperindicator_setstartposition) | 设置导航点距离Swiper组件左边的距离。 |
+| [float OH_ArkUI_SwiperIndicator_GetStartPosition(ArkUI_SwiperIndicator* indicator)](#oh_arkui_swiperindicator_getstartposition) | 获取导航点距离Swiper组件左边的距离。 |
+| [void OH_ArkUI_SwiperIndicator_SetTopPosition(ArkUI_SwiperIndicator* indicator, float value)](#oh_arkui_swiperindicator_settopposition) | 设置导航点距离Swiper组件顶部的距离。 |
+| [float OH_ArkUI_SwiperIndicator_GetTopPosition(ArkUI_SwiperIndicator* indicator)](#oh_arkui_swiperindicator_gettopposition) | 获取导航点距离Swiper组件顶部的距离。 |
+| [void OH_ArkUI_SwiperIndicator_SetEndPosition(ArkUI_SwiperIndicator* indicator, float value)](#oh_arkui_swiperindicator_setendposition) | 设置导航点距离Swiper组件右边的距离。 |
+| [float OH_ArkUI_SwiperIndicator_GetEndPosition(ArkUI_SwiperIndicator* indicator)](#oh_arkui_swiperindicator_getendposition) | 获取导航点距离Swiper组件右边的距离。 |
+| [void OH_ArkUI_SwiperIndicator_SetBottomPosition(ArkUI_SwiperIndicator* indicator, float value)](#oh_arkui_swiperindicator_setbottomposition) | 设置导航点距离Swiper组件底部的距离。 |
+| [float OH_ArkUI_SwiperIndicator_GetBottomPosition(ArkUI_SwiperIndicator* indicator)](#oh_arkui_swiperindicator_getbottomposition) | 获取导航点距离Swiper组件底部的距离。 |
+| [void OH_ArkUI_SwiperIndicator_SetIgnoreSizeOfBottom(ArkUI_SwiperIndicator* indicator, int32_t ignoreSize)](#oh_arkui_swiperindicator_setignoresizeofbottom) | 设置OH_ArkUI_SwiperIndicator_SetBottomPosition是否忽略导航点大小。 |
+| [int32_t OH_ArkUI_SwiperIndicator_GetIgnoreSizeOfBottom(ArkUI_SwiperIndicator* indicator)](#oh_arkui_swiperindicator_getignoresizeofbottom) | 获取OH_ArkUI_SwiperIndicator_SetBottomPosition是否忽略导航点大小。 |
+| [void OH_ArkUI_SwiperIndicator_SetItemWidth(ArkUI_SwiperIndicator* indicator, float value)](#oh_arkui_swiperindicator_setitemwidth) | 设置Swiper组件圆点导航指示器的宽。 |
+| [float OH_ArkUI_SwiperIndicator_GetItemWidth(ArkUI_SwiperIndicator* indicator)](#oh_arkui_swiperindicator_getitemwidth) | 获取Swiper组件圆点导航指示器的宽。 |
+| [void OH_ArkUI_SwiperIndicator_SetItemHeight(ArkUI_SwiperIndicator* indicator, float value)](#oh_arkui_swiperindicator_setitemheight) | 设置Swiper组件圆点导航指示器的高。 |
+| [float OH_ArkUI_SwiperIndicator_GetItemHeight(ArkUI_SwiperIndicator* indicator)](#oh_arkui_swiperindicator_getitemheight) | 获取Swiper组件圆点导航指示器的高。 |
+| [void OH_ArkUI_SwiperIndicator_SetSelectedItemWidth(ArkUI_SwiperIndicator* indicator, float value)](#oh_arkui_swiperindicator_setselecteditemwidth) | 设置被选中的Swiper组件圆点导航指示器的宽。 |
+| [float OH_ArkUI_SwiperIndicator_GetSelectedItemWidth(ArkUI_SwiperIndicator* indicator)](#oh_arkui_swiperindicator_getselecteditemwidth) | 获取被选中Swiper组件圆点导航指示器的宽。 |
+| [void OH_ArkUI_SwiperIndicator_SetSelectedItemHeight(ArkUI_SwiperIndicator* indicator, float value)](#oh_arkui_swiperindicator_setselecteditemheight) | 设置被选中的Swiper组件圆点导航指示器的高。 |
+| [float OH_ArkUI_SwiperIndicator_GetSelectedItemHeight(ArkUI_SwiperIndicator* indicator)](#oh_arkui_swiperindicator_getselecteditemheight) | 获取被选中Swiper组件圆点导航指示器的高。 |
+| [void OH_ArkUI_SwiperIndicator_SetMask(ArkUI_SwiperIndicator* indicator, int32_t mask)](#oh_arkui_swiperindicator_setmask) | 设置是否显示Swiper组件圆点导航指示器的蒙版样式。 |
+| [int32_t OH_ArkUI_SwiperIndicator_GetMask(ArkUI_SwiperIndicator* indicator)](#oh_arkui_swiperindicator_getmask) | 获取是否显示Swiper组件圆点导航指示器的蒙版样式。 |
+| [void OH_ArkUI_SwiperIndicator_SetColor(ArkUI_SwiperIndicator* indicator, uint32_t color)](#oh_arkui_swiperindicator_setcolor) | 设置Swiper组件圆点导航指示器的颜色。 |
+| [uint32_t OH_ArkUI_SwiperIndicator_GetColor(ArkUI_SwiperIndicator* indicator)](#oh_arkui_swiperindicator_getcolor) | 获取Swiper组件圆点导航指示器的颜色。 |
+| [void OH_ArkUI_SwiperIndicator_SetSelectedColor(ArkUI_SwiperIndicator* indicator, uint32_t selectedColor)](#oh_arkui_swiperindicator_setselectedcolor) | 设置被选中Swiper组件圆点导航指示器的颜色。 |
+| [uint32_t OH_ArkUI_SwiperIndicator_GetSelectedColor(ArkUI_SwiperIndicator* indicator)](#oh_arkui_swiperindicator_getselectedcolor) | 获取被选中Swiper组件圆点导航指示器的颜色。 |
+| [int32_t OH_ArkUI_SwiperIndicator_SetMaxDisplayCount(ArkUI_SwiperIndicator* indicator, int32_t maxDisplayCount)](#oh_arkui_swiperindicator_setmaxdisplaycount) | 设置圆点导航点指示器样式下，导航点显示个数的最大值。 |
+| [int32_t OH_ArkUI_SwiperIndicator_GetMaxDisplayCount(ArkUI_SwiperIndicator* indicator)](#oh_arkui_swiperindicator_getmaxdisplaycount) | 获取圆点导航点指示器样式下，导航点显示个数的最大值。 |
+| [ArkUI_SwiperDigitIndicator *OH_ArkUI_SwiperDigitIndicator_Create()](#oh_arkui_swiperdigitindicator_create) | 创建Swiper组件的数字导航指示器。 |
+| [void OH_ArkUI_SwiperDigitIndicator_Destroy(ArkUI_SwiperDigitIndicator* indicator)](#oh_arkui_swiperdigitindicator_destroy) | 销毁Swiper组件的数字导航指示器指针。 |
+| [void OH_ArkUI_SwiperDigitIndicator_SetStartPosition(ArkUI_SwiperDigitIndicator* indicator, float value)](#oh_arkui_swiperdigitindicator_setstartposition) | 设置数字导航指示器距离Swiper组件左边的距离，在从右至左显示的语言模式下，设置其距离Swiper组件右边的距离。 |
+| [float OH_ArkUI_SwiperDigitIndicator_GetStartPosition(ArkUI_SwiperDigitIndicator* indicator)](#oh_arkui_swiperdigitindicator_getstartposition) | 获取数字导航指示器距离Swiper组件左边的距离，在从右至左显示的语言模式下，获取其距离Swiper组件右边的距离。 |
+| [void OH_ArkUI_SwiperDigitIndicator_SetTopPosition(ArkUI_SwiperDigitIndicator* indicator, float value)](#oh_arkui_swiperdigitindicator_settopposition) | 设置数字导航指示器距离Swiper组件顶部的距离。 |
+| [float OH_ArkUI_SwiperDigitIndicator_GetTopPosition(ArkUI_SwiperDigitIndicator* indicator)](#oh_arkui_swiperdigitindicator_gettopposition) | 获取数字导航指示器距离Swiper组件顶部的距离。 |
+| [void OH_ArkUI_SwiperDigitIndicator_SetEndPosition(ArkUI_SwiperDigitIndicator* indicator, float value)](#oh_arkui_swiperdigitindicator_setendposition) | 设置数字导航指示器距离Swiper组件右边的距离，在从右至左显示的语言模式下，设置其距离Swiper组件左边的距离。 |
+| [float OH_ArkUI_SwiperDigitIndicator_GetEndPosition(ArkUI_SwiperDigitIndicator* indicator)](#oh_arkui_swiperdigitindicator_getendposition) | 获取数字导航指示器距离Swiper组件右边的距离，在从右至左显示的语言模式下，获取其距离Swiper组件左边的距离。 |
+| [void OH_ArkUI_SwiperDigitIndicator_SetBottomPosition(ArkUI_SwiperDigitIndicator* indicator, float value)](#oh_arkui_swiperdigitindicator_setbottomposition) | 设置数字导航指示器距离Swiper组件底部的距离。 |
+| [float OH_ArkUI_SwiperDigitIndicator_GetBottomPosition(ArkUI_SwiperDigitIndicator* indicator)](#oh_arkui_swiperdigitindicator_getbottomposition) | 获取数字导航指示器距离Swiper组件底部的距离。 |
+| [void OH_ArkUI_SwiperDigitIndicator_SetFontColor(ArkUI_SwiperDigitIndicator* indicator, uint32_t color)](#oh_arkui_swiperdigitindicator_setfontcolor) | 设置Swiper组件数字导航指示器字体颜色。 |
+| [uint32_t OH_ArkUI_SwiperDigitIndicator_GetFontColor(ArkUI_SwiperDigitIndicator* indicator)](#oh_arkui_swiperdigitindicator_getfontcolor) | 获取Swiper组件数字导航指示器字体颜色。 |
+| [void OH_ArkUI_SwiperDigitIndicator_SetSelectedFontColor(ArkUI_SwiperDigitIndicator* indicator, uint32_t selectedColor)](#oh_arkui_swiperdigitindicator_setselectedfontcolor) | 设置被选中Swiper组件数字导航指示器字体颜色。 |
+| [uint32_t OH_ArkUI_SwiperDigitIndicator_GetSelectedFontColor(ArkUI_SwiperDigitIndicator* indicator)](#oh_arkui_swiperdigitindicator_getselectedfontcolor) | 获取被选中Swiper组件数字导航指示器字体颜色。 |
+| [void OH_ArkUI_SwiperDigitIndicator_SetFontSize(ArkUI_SwiperDigitIndicator* indicator, float size)](#oh_arkui_swiperdigitindicator_setfontsize) | 设置Swiper组件数字导航指示器字体大小。 |
+| [float OH_ArkUI_SwiperDigitIndicator_GetFontSize(ArkUI_SwiperDigitIndicator* indicator)](#oh_arkui_swiperdigitindicator_getfontsize) | 获取Swiper组件数字导航指示器字体大小。 |
+| [void OH_ArkUI_SwiperDigitIndicator_SetSelectedFontSize(ArkUI_SwiperDigitIndicator* indicator, float size)](#oh_arkui_swiperdigitindicator_setselectedfontsize) | 设置被选中Swiper组件数字导航指示器字体大小。 |
+| [float OH_ArkUI_SwiperDigitIndicator_GetSelectedFontSize(ArkUI_SwiperDigitIndicator* indicator)](#oh_arkui_swiperdigitindicator_getselectedfontsize) | 获取被选中Swiper组件数字导航指示器字体大小。 |
+| [ArkUI_SwiperArrowStyle *OH_ArkUI_SwiperArrowStyle_Create()](#oh_arkui_swiperarrowstyle_create) | 创建Swiper组件的导航箭头。 |
+| [void OH_ArkUI_SwiperArrowStyle_Destroy(ArkUI_SwiperArrowStyle* arrowStyle)](#oh_arkui_swiperarrowstyle_destroy) | 销毁Swiper组件的导航箭头指针。 |
+| [void OH_ArkUI_SwiperArrowStyle_SetShowBackground(ArkUI_SwiperArrowStyle* arrowStyle, int32_t showBackground)](#oh_arkui_swiperarrowstyle_setshowbackground) | 设置Swiper组件导航箭头底板是否显示。 |
+| [int32_t OH_ArkUI_SwiperArrowStyle_GetShowBackground(ArkUI_SwiperArrowStyle* arrowStyle)](#oh_arkui_swiperarrowstyle_getshowbackground) | 获取Swiper组件导航箭头底板是否显示。 |
+| [void OH_ArkUI_SwiperArrowStyle_SetShowSidebarMiddle(ArkUI_SwiperArrowStyle* arrowStyle, int32_t showSidebarMiddle)](#oh_arkui_swiperarrowstyle_setshowsidebarmiddle) | 设置Swiper组件导航箭头显示位置。 |
+| [int32_t OH_ArkUI_SwiperArrowStyle_GetShowSidebarMiddle(ArkUI_SwiperArrowStyle* arrowStyle)](#oh_arkui_swiperarrowstyle_getshowsidebarmiddle) | 获取Swiper组件导航箭头显示位置。 |
+| [void OH_ArkUI_SwiperArrowStyle_SetBackgroundSize(ArkUI_SwiperArrowStyle* arrowStyle, float backgroundSize)](#oh_arkui_swiperarrowstyle_setbackgroundsize) | 设置Swiper组件导航箭头底板大小。 |
+| [float OH_ArkUI_SwiperArrowStyle_GetBackgroundSize(ArkUI_SwiperArrowStyle* arrowStyle)](#oh_arkui_swiperarrowstyle_getbackgroundsize) | 获取Swiper组件导航箭头底板大小。 |
+| [void OH_ArkUI_SwiperArrowStyle_SetBackgroundColor(ArkUI_SwiperArrowStyle* arrowStyle, uint32_t backgroundColor)](#oh_arkui_swiperarrowstyle_setbackgroundcolor) | 设置Swiper组件导航箭头底板颜色。 |
+| [uint32_t OH_ArkUI_SwiperArrowStyle_GetBackgroundColor(ArkUI_SwiperArrowStyle* arrowStyle)](#oh_arkui_swiperarrowstyle_getbackgroundcolor) | 获取Swiper组件导航箭头底板颜色。 |
+| [void OH_ArkUI_SwiperArrowStyle_SetArrowSize(ArkUI_SwiperArrowStyle* arrowStyle, float arrowSize)](#oh_arkui_swiperarrowstyle_setarrowsize) | 设置Swiper组件导航箭头大小。 |
+| [float OH_ArkUI_SwiperArrowStyle_GetArrowSize(ArkUI_SwiperArrowStyle* arrowStyle)](#oh_arkui_swiperarrowstyle_getarrowsize) | 获取Swiper组件导航箭头大小。 |
+| [void OH_ArkUI_SwiperArrowStyle_SetArrowColor(ArkUI_SwiperArrowStyle* arrowStyle, uint32_t arrowColor)](#oh_arkui_swiperarrowstyle_setarrowcolor) | 设置Swiper组件导航箭头颜色。 |
+| [uint32_t OH_ArkUI_SwiperArrowStyle_GetArrowColor(ArkUI_SwiperArrowStyle* arrowStyle)](#oh_arkui_swiperarrowstyle_getarrowcolor) | 获取Swiper组件导航箭头颜色。 |
+| [void OH_ArkUI_SwiperIndicator_SetSpace(ArkUI_SwiperIndicator* indicator, float space)](#oh_arkui_swiperindicator_setspace) | 设置导航点间距。 |
+| [float OH_ArkUI_SwiperIndicator_GetSpace(ArkUI_SwiperIndicator* indicator)](#oh_arkui_swiperindicator_getspace) | 获取导航点间距。 |
+| [void OH_ArkUI_SwiperDigitIndicator_SetIgnoreSizeOfBottom(ArkUI_SwiperDigitIndicator* indicator, int32_t ignoreSize)](#oh_arkui_swiperdigitindicator_setignoresizeofbottom) | 设置OH_ArkUI_SwiperDigitIndicator_SetBottomPosition是否忽略导航点大小。 |
+| [int32_t OH_ArkUI_SwiperDigitIndicator_GetIgnoreSizeOfBottom(ArkUI_SwiperDigitIndicator* indicator)](#oh_arkui_swiperdigitindicator_getignoresizeofbottom) | 获取OH_ArkUI_SwiperDigitIndicator_SetBottomPosition是否忽略导航点大小。 |
+
+#### 枚举类型说明
+
+#### [h2]ArkUI_SwiperArrow
+
+```
+enum ArkUI_SwiperArrow
+```
+ 描述
+
+Swiper导航点箭头枚举值。
+
+起始版本： 12
+
+| 枚举项 | 描述 |
+| --- | --- |
+| ARKUI_SWIPER_ARROW_HIDE = 0 | 不显示swiper中导航点箭头。 |
+| ARKUI_SWIPER_ARROW_SHOW | 显示swiper中导航点箭头。 |
+| ARKUI_SWIPER_ARROW_SHOW_ON_HOVER | 在hover状态下显示swiper中导航点箭头。 |
+
+#### [h2]ArkUI_SwiperNestedScrollMode
+
+```
+enum ArkUI_SwiperNestedScrollMode
+```
+ 描述
+
+Swiper组件和父组件的嵌套滚动模式。
+
+起始版本： 12
+
+| 枚举项 | 描述 |
+| --- | --- |
+| ARKUI_SWIPER_NESTED_SRCOLL_SELF_ONLY = 0 | Swiper只自身滚动，不与父组件联动。 |
+| ARKUI_SWIPER_NESTED_SRCOLL_SELF_FIRST | Swiper自身先滚动，自身滚动到边缘以后父组件滚动。父组件滚动到边缘以后，如果父组件有边缘效果，则父组件触发边缘效果，否则Swiper触发边缘效果。 |
+
+#### [h2]ArkUI_PageFlipMode
+
+```
+enum ArkUI_PageFlipMode
+```
+ 描述
+
+Swiper组件鼠标滚轮翻页模式。
+
+起始版本： 15
+
+| 枚举项 | 描述 |
+| --- | --- |
+| ARKUI_PAGE_FLIP_MODE_CONTINUOUS = 0 | 鼠标滚轮连续滚动时翻多页，根据鼠标事件上报次数确定。 |
+| ARKUI_PAGE_FLIP_MODE_SINGLE | 一次翻页动画结束前不响应其他鼠标滚轮事件。 |
+
+#### [h2]ArkUI_SwiperAnimationMode
+
+```
+enum ArkUI_SwiperAnimationMode
+```
+ 描述
+
+Swiper组件跳转到目标index的动画模式。
+
+起始版本： 15
+
+| 枚举项 | 描述 |
+| --- | --- |
+| ARKUI_SWIPER_NO_ANIMATION = 0 | 无动画跳转到目标index。 |
+| ARKUI_SWIPER_DEFAULT_ANIMATION = 1 | 做动画跳转到目标index。 |
+| ARKUI_SWIPER_FAST_ANIMATION = 2 | 先无动画跳转到目标附近再做动画跳转到目标index。 |
+
+#### [h2]ArkUI_SwiperIndicatorType
+
+```
+enum ArkUI_SwiperIndicatorType
+```
+ 描述
+
+定义Swiper组件的导航指示器类型。
+
+起始版本： 12
+
+| 枚举项 | 描述 |
+| --- | --- |
+| ARKUI_SWIPER_INDICATOR_TYPE_DOT | 圆点指示器类型。 |
+| ARKUI_SWIPER_INDICATOR_TYPE_DIGIT | 数字指示器类型。 |
+
+#### 函数说明
+
+#### [h2]OH_ArkUI_SwiperIndicator_Create()
+
+```
+ArkUI_SwiperIndicator* OH_ArkUI_SwiperIndicator_Create(ArkUI_SwiperIndicatorType type)
+```
+ 描述
+
+创建Swiper组件的导航指示器。
+
+起始版本： 12
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperIndicatorType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-swiper-h#arkui_swiperindicatortype) type | 导航指示器的类型。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| [ArkUI_SwiperIndicator*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator) | 导航指示器对象指针。 |
+
+#### [h2]OH_ArkUI_SwiperIndicator_Dispose()
+
+```
+void OH_ArkUI_SwiperIndicator_Dispose(ArkUI_SwiperIndicator* indicator)
+```
+ 描述
+
+销毁Swiper组件的导航指示器指针。
+
+起始版本： 12
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator)* indicator | 导航指示器对象指针。 |
+
+#### [h2]OH_ArkUI_SwiperIndicator_SetStartPosition()
+
+```
+void OH_ArkUI_SwiperIndicator_SetStartPosition(ArkUI_SwiperIndicator* indicator, float value)
+```
+ 描述
+
+设置导航点距离Swiper组件左边的距离。
+
+起始版本： 12
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator)* indicator | 导航指示器对象指针。 |
+| float value | 导航点距离Swiper组件左边的距离。默认值：0，单位：vp。 |
+
+#### [h2]OH_ArkUI_SwiperIndicator_GetStartPosition()
+
+```
+float OH_ArkUI_SwiperIndicator_GetStartPosition(ArkUI_SwiperIndicator* indicator)
+```
+ 描述
+
+获取导航点距离Swiper组件左边的距离。
+
+起始版本： 12
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator)* indicator | 导航指示器对象指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| float | 导航点距离Swiper组件左边的距离。单位：vp。 |
+
+#### [h2]OH_ArkUI_SwiperIndicator_SetTopPosition()
+
+```
+void OH_ArkUI_SwiperIndicator_SetTopPosition(ArkUI_SwiperIndicator* indicator, float value)
+```
+ 描述
+
+设置导航点距离Swiper组件顶部的距离。
+
+起始版本： 12
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator)* indicator | 导航指示器对象指针。 |
+| float value | 导航点距离Swiper组件顶部的距离。默认值：0，单位：vp。 |
+
+#### [h2]OH_ArkUI_SwiperIndicator_GetTopPosition()
+
+```
+float OH_ArkUI_SwiperIndicator_GetTopPosition(ArkUI_SwiperIndicator* indicator)
+```
+ 描述
+
+获取导航点距离Swiper组件顶部的距离。
+
+起始版本： 12
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator)* indicator | 导航指示器对象指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| float | 导航点距离Swiper组件顶部的距离。单位：vp。 |
+
+#### [h2]OH_ArkUI_SwiperIndicator_SetEndPosition()
+
+```
+void OH_ArkUI_SwiperIndicator_SetEndPosition(ArkUI_SwiperIndicator* indicator, float value)
+```
+ 描述
+
+设置导航点距离Swiper组件右边的距离。
+
+起始版本： 12
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator)* indicator | 导航指示器对象指针。 |
+| float value | 导航点距离Swiper组件右边的距离。默认值：0，单位：vp。 |
+
+#### [h2]OH_ArkUI_SwiperIndicator_GetEndPosition()
+
+```
+float OH_ArkUI_SwiperIndicator_GetEndPosition(ArkUI_SwiperIndicator* indicator)
+```
+ 描述
+
+获取导航点距离Swiper组件右边的距离。
+
+起始版本： 12
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator)* indicator | 导航指示器对象指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| float | 导航点距离Swiper组件右边的距离。单位：vp。 |
+
+#### [h2]OH_ArkUI_SwiperIndicator_SetBottomPosition()
+
+```
+void OH_ArkUI_SwiperIndicator_SetBottomPosition(ArkUI_SwiperIndicator* indicator, float value)
+```
+ 描述
+
+设置导航点距离Swiper组件底部的距离。
+
+起始版本： 12
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator)* indicator | 导航指示器对象指针。 |
+| float value | 导航点距离Swiper组件底部的距离。默认值：0，单位：vp。 |
+
+#### [h2]OH_ArkUI_SwiperIndicator_GetBottomPosition()
+
+```
+float OH_ArkUI_SwiperIndicator_GetBottomPosition(ArkUI_SwiperIndicator* indicator)
+```
+ 描述
+
+获取导航点距离Swiper组件底部的距离。
+
+起始版本： 12
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator)* indicator | 导航指示器对象指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| float | 导航点距离Swiper组件底部的距离。单位：vp。 |
+
+#### [h2]OH_ArkUI_SwiperIndicator_SetIgnoreSizeOfBottom()
+
+```
+void OH_ArkUI_SwiperIndicator_SetIgnoreSizeOfBottom(ArkUI_SwiperIndicator* indicator, int32_t ignoreSize)
+```
+ 描述
+
+设置OH_ArkUI_SwiperIndicator_SetBottomPosition是否忽略导航点大小。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator)* indicator | 导航指示器对象指针。 |
+| int32_t ignoreSize | 是否忽略导航点大小。1表示忽略导航点大小，0表示不忽略，默认值0。 |
+
+#### [h2]OH_ArkUI_SwiperIndicator_GetIgnoreSizeOfBottom()
+
+```
+int32_t OH_ArkUI_SwiperIndicator_GetIgnoreSizeOfBottom(ArkUI_SwiperIndicator* indicator)
+```
+ 描述
+
+获取OH_ArkUI_SwiperIndicator_SetBottomPosition是否忽略导航点大小。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator)* indicator | 导航指示器对象指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| int32_t | 是否忽略导航点大小。 |
+
+#### [h2]OH_ArkUI_SwiperIndicator_SetItemWidth()
+
+```
+void OH_ArkUI_SwiperIndicator_SetItemWidth(ArkUI_SwiperIndicator* indicator, float value)
+```
+ 描述
+
+设置Swiper组件圆点导航指示器的宽。
+
+起始版本： 12
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator)* indicator | 导航指示器对象指针。 |
+| float value | 圆点导航指示器的宽。默认值：12，单位：vp。 |
+
+#### [h2]OH_ArkUI_SwiperIndicator_GetItemWidth()
+
+```
+float OH_ArkUI_SwiperIndicator_GetItemWidth(ArkUI_SwiperIndicator* indicator)
+```
+ 描述
+
+获取Swiper组件圆点导航指示器的宽。
+
+起始版本： 12
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator)* indicator | 导航指示器对象指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| float | 圆点导航指示器的宽。单位：vp。 |
+
+#### [h2]OH_ArkUI_SwiperIndicator_SetItemHeight()
+
+```
+void OH_ArkUI_SwiperIndicator_SetItemHeight(ArkUI_SwiperIndicator* indicator, float value)
+```
+ 描述
+
+设置Swiper组件圆点导航指示器的高。
+
+起始版本： 12
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator)* indicator | 导航指示器对象指针。 |
+| float value | 圆点导航指示器的高。默认值：6，单位：vp。 |
+
+#### [h2]OH_ArkUI_SwiperIndicator_GetItemHeight()
+
+```
+float OH_ArkUI_SwiperIndicator_GetItemHeight(ArkUI_SwiperIndicator* indicator)
+```
+ 描述
+
+获取Swiper组件圆点导航指示器的高。
+
+起始版本： 12
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator)* indicator | 导航指示器对象指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| float | 圆点导航指示器的高。单位：vp。 |
+
+#### [h2]OH_ArkUI_SwiperIndicator_SetSelectedItemWidth()
+
+```
+void OH_ArkUI_SwiperIndicator_SetSelectedItemWidth(ArkUI_SwiperIndicator* indicator, float value)
+```
+ 描述
+
+设置被选中的Swiper组件圆点导航指示器的宽。
+
+起始版本： 12
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator)* indicator | 导航指示器对象指针。 |
+| float value | 圆点导航指示器的宽。默认值：12，单位：vp。 |
+
+#### [h2]OH_ArkUI_SwiperIndicator_GetSelectedItemWidth()
+
+```
+float OH_ArkUI_SwiperIndicator_GetSelectedItemWidth(ArkUI_SwiperIndicator* indicator)
+```
+ 描述
+
+获取被选中Swiper组件圆点导航指示器的宽。
+
+起始版本： 12
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator)* indicator | 导航指示器对象指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| float | 圆点导航指示器的宽。单位：vp。 |
+
+#### [h2]OH_ArkUI_SwiperIndicator_SetSelectedItemHeight()
+
+```
+void OH_ArkUI_SwiperIndicator_SetSelectedItemHeight(ArkUI_SwiperIndicator* indicator, float value)
+```
+ 描述
+
+设置被选中的Swiper组件圆点导航指示器的高。
+
+起始版本： 12
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator)* indicator | 导航指示器对象指针。 |
+| float value | 圆点导航指示器的高。默认值：6，单位：vp。 |
+
+#### [h2]OH_ArkUI_SwiperIndicator_GetSelectedItemHeight()
+
+```
+float OH_ArkUI_SwiperIndicator_GetSelectedItemHeight(ArkUI_SwiperIndicator* indicator)
+```
+ 描述
+
+获取被选中Swiper组件圆点导航指示器的高。
+
+起始版本： 12
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator)* indicator | 导航指示器对象指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| float | 圆点导航指示器的高。单位：vp。 |
+
+#### [h2]OH_ArkUI_SwiperIndicator_SetMask()
+
+```
+void OH_ArkUI_SwiperIndicator_SetMask(ArkUI_SwiperIndicator* indicator, int32_t mask)
+```
+ 描述
+
+设置是否显示Swiper组件圆点导航指示器的蒙版样式。
+
+起始版本： 12
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator)* indicator | 导航指示器对象指针。 |
+| int32_t mask | 是否显示蒙版样式，1表示显示，0表示不显示。 |
+
+#### [h2]OH_ArkUI_SwiperIndicator_GetMask()
+
+```
+int32_t OH_ArkUI_SwiperIndicator_GetMask(ArkUI_SwiperIndicator* indicator)
+```
+ 描述
+
+获取是否显示Swiper组件圆点导航指示器的蒙版样式。
+
+起始版本： 12
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator)* indicator | 导航指示器对象指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| int32_t | mask 1表示显示圆点导航指示器的蒙版样式，0表示不显示。 |
+
+#### [h2]OH_ArkUI_SwiperIndicator_SetColor()
+
+```
+void OH_ArkUI_SwiperIndicator_SetColor(ArkUI_SwiperIndicator* indicator, uint32_t color)
+```
+ 描述
+
+设置Swiper组件圆点导航指示器的颜色。
+
+起始版本： 12
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator)* indicator | 导航指示器对象指针。 |
+| uint32_t color | 颜色类型，0xargb格式，形如 0xFFFF0000表示红色。 |
+
+#### [h2]OH_ArkUI_SwiperIndicator_GetColor()
+
+```
+uint32_t OH_ArkUI_SwiperIndicator_GetColor(ArkUI_SwiperIndicator* indicator)
+```
+ 描述
+
+获取Swiper组件圆点导航指示器的颜色。
+
+起始版本： 12
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator)* indicator | 导航指示器对象指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| uint32_t | 颜色类型，0xargb格式，形如 0xFFFF0000表示红色。 |
+
+#### [h2]OH_ArkUI_SwiperIndicator_SetSelectedColor()
+
+```
+void OH_ArkUI_SwiperIndicator_SetSelectedColor(ArkUI_SwiperIndicator* indicator, uint32_t selectedColor)
+```
+ 描述
+
+设置被选中Swiper组件圆点导航指示器的颜色。
+
+起始版本： 12
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator)* indicator | 导航指示器对象指针。 |
+| uint32_t selectedColor | 颜色类型，0xargb格式，形如 0xFFFF0000表示红色。 |
+
+#### [h2]OH_ArkUI_SwiperIndicator_GetSelectedColor()
+
+```
+uint32_t OH_ArkUI_SwiperIndicator_GetSelectedColor(ArkUI_SwiperIndicator* indicator)
+```
+ 描述
+
+获取被选中Swiper组件圆点导航指示器的颜色。
+
+起始版本： 12
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator)* indicator | 导航指示器对象指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| uint32_t | 颜色类型，0xargb格式，形如 0xFFFF0000表示红色。 |
+
+#### [h2]OH_ArkUI_SwiperIndicator_SetMaxDisplayCount()
+
+```
+int32_t OH_ArkUI_SwiperIndicator_SetMaxDisplayCount(ArkUI_SwiperIndicator* indicator, int32_t maxDisplayCount)
+```
+ 描述
+
+设置圆点导航点指示器样式下，导航点显示个数的最大值。
+
+起始版本： 12
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator)* indicator | 导航指示器对象指针。 |
+| int32_t maxDisplayCount | 导航点显示个数最大值，有效取值范围[6, 9]。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 如果maxDisplayCount设置范围错误，返回错误码。 |
+
+#### [h2]OH_ArkUI_SwiperIndicator_GetMaxDisplayCount()
+
+```
+int32_t OH_ArkUI_SwiperIndicator_GetMaxDisplayCount(ArkUI_SwiperIndicator* indicator)
+```
+ 描述
+
+获取圆点导航点指示器样式下，导航点显示个数的最大值。
+
+起始版本： 12
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator)* indicator | 导航指示器对象指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| int32_t | 导航点显示个数最大值，有效取值范围[6, 9]。 |
+
+#### [h2]OH_ArkUI_SwiperDigitIndicator_Create()
+
+```
+ArkUI_SwiperDigitIndicator *OH_ArkUI_SwiperDigitIndicator_Create()
+```
+ 描述
+
+创建Swiper组件的数字导航指示器。
+
+起始版本： 19
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| [ArkUI_SwiperDigitIndicator *](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperdigitindicator) | 数字导航指示器对象指针。 |
+
+#### [h2]OH_ArkUI_SwiperDigitIndicator_Destroy()
+
+```
+void OH_ArkUI_SwiperDigitIndicator_Destroy(ArkUI_SwiperDigitIndicator* indicator)
+```
+ 描述
+
+销毁Swiper组件的数字导航指示器指针。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperDigitIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperdigitindicator)* indicator | 数字导航指示器对象指针。 |
+
+#### [h2]OH_ArkUI_SwiperDigitIndicator_SetStartPosition()
+
+```
+void OH_ArkUI_SwiperDigitIndicator_SetStartPosition(ArkUI_SwiperDigitIndicator* indicator, float value)
+```
+ 描述
+
+设置数字导航指示器距离Swiper组件左边的距离，在从右至左显示的语言模式下，设置其距离Swiper组件右边的距离。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperDigitIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperdigitindicator)* indicator | 数字导航指示器对象指针。 |
+| float value | 数字导航指示器距离Swiper组件左边的距离，在从右至左显示的语言模式下，其距离Swiper组件右边的距离。默认值：0，单位：vp。 |
+
+#### [h2]OH_ArkUI_SwiperDigitIndicator_GetStartPosition()
+
+```
+float OH_ArkUI_SwiperDigitIndicator_GetStartPosition(ArkUI_SwiperDigitIndicator* indicator)
+```
+ 描述
+
+获取数字导航指示器距离Swiper组件左边的距离，在从右至左显示的语言模式下，获取其距离Swiper组件右边的距离。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperDigitIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperdigitindicator)* indicator | 数字导航指示器对象指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| float | 数字导航指示器距离Swiper组件左边的距离，在从右至左显示的语言模式下，其距离Swiper组件右边的距离。单位：vp。 |
+
+#### [h2]OH_ArkUI_SwiperDigitIndicator_SetTopPosition()
+
+```
+void OH_ArkUI_SwiperDigitIndicator_SetTopPosition(ArkUI_SwiperDigitIndicator* indicator, float value)
+```
+ 描述
+
+设置数字导航指示器距离Swiper组件顶部的距离。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperDigitIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperdigitindicator)* indicator | 数字导航指示器对象指针。 |
+| float value | 数字导航指示器距离Swiper组件顶部的距离。默认值：0，单位：vp。 |
+
+#### [h2]OH_ArkUI_SwiperDigitIndicator_GetTopPosition()
+
+```
+float OH_ArkUI_SwiperDigitIndicator_GetTopPosition(ArkUI_SwiperDigitIndicator* indicator)
+```
+ 描述
+
+获取数字导航指示器距离Swiper组件顶部的距离。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperDigitIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperdigitindicator)* indicator | 数字导航指示器对象指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| float | 数字导航指示器距离Swiper组件顶部的距离。单位：vp。 |
+
+#### [h2]OH_ArkUI_SwiperDigitIndicator_SetEndPosition()
+
+```
+void OH_ArkUI_SwiperDigitIndicator_SetEndPosition(ArkUI_SwiperDigitIndicator* indicator, float value)
+```
+ 描述
+
+设置数字导航指示器距离Swiper组件右边的距离，在从右至左显示的语言模式下，设置其距离Swiper组件左边的距离。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperDigitIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperdigitindicator)* indicator | 数字导航指示器对象指针。 |
+| float value | 数字导航指示器距离Swiper组件右边的距离，在从右至左显示的语言模式下，其距离Swiper组件左边的距离。默认值：0，单位：vp。 |
+
+#### [h2]OH_ArkUI_SwiperDigitIndicator_GetEndPosition()
+
+```
+float OH_ArkUI_SwiperDigitIndicator_GetEndPosition(ArkUI_SwiperDigitIndicator* indicator)
+```
+ 描述
+
+获取数字导航指示器距离Swiper组件右边的距离，在从右至左显示的语言模式下，获取其距离Swiper组件左边的距离。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperDigitIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperdigitindicator)* indicator | 数字导航指示器对象指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| float | 数字导航指示器距离Swiper组件右边的距离，在从右至左显示的语言模式下，其距离Swiper组件左边的距离。单位：vp。 |
+
+#### [h2]OH_ArkUI_SwiperDigitIndicator_SetBottomPosition()
+
+```
+void OH_ArkUI_SwiperDigitIndicator_SetBottomPosition(ArkUI_SwiperDigitIndicator* indicator, float value)
+```
+ 描述
+
+设置数字导航指示器距离Swiper组件底部的距离。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperDigitIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperdigitindicator)* indicator | 数字导航指示器对象指针。 |
+| float value | 数字导航指示器距离Swiper组件底部的距离。默认值：0，单位：vp。 |
+
+#### [h2]OH_ArkUI_SwiperDigitIndicator_GetBottomPosition()
+
+```
+float OH_ArkUI_SwiperDigitIndicator_GetBottomPosition(ArkUI_SwiperDigitIndicator* indicator)
+```
+ 描述
+
+获取数字导航指示器距离Swiper组件底部的距离。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperDigitIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperdigitindicator)* indicator | 数字导航指示器对象指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| float | 数字导航指示器距离Swiper组件底部的距离。单位：vp。 |
+
+#### [h2]OH_ArkUI_SwiperDigitIndicator_SetFontColor()
+
+```
+void OH_ArkUI_SwiperDigitIndicator_SetFontColor(ArkUI_SwiperDigitIndicator* indicator, uint32_t color)
+```
+ 描述
+
+设置Swiper组件数字导航指示器字体颜色。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperDigitIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperdigitindicator)* indicator | 数字导航指示器对象指针。 |
+| uint32_t color | 颜色类型，0xargb格式，形如 0xFFFF0000表示红色。默认值：0xFF182431。 |
+
+#### [h2]OH_ArkUI_SwiperDigitIndicator_GetFontColor()
+
+```
+uint32_t OH_ArkUI_SwiperDigitIndicator_GetFontColor(ArkUI_SwiperDigitIndicator* indicator)
+```
+ 描述
+
+获取Swiper组件数字导航指示器字体颜色。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperDigitIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperdigitindicator)* indicator | 数字导航指示器对象指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| uint32_t | 颜色类型，0xargb格式，形如 0xFFFF0000表示红色。 |
+
+#### [h2]OH_ArkUI_SwiperDigitIndicator_SetSelectedFontColor()
+
+```
+void OH_ArkUI_SwiperDigitIndicator_SetSelectedFontColor(ArkUI_SwiperDigitIndicator* indicator, uint32_t selectedColor)
+```
+ 描述
+
+设置被选中Swiper组件数字导航指示器字体颜色。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperDigitIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperdigitindicator)* indicator | 数字导航指示器对象指针。 |
+| uint32_t selectedColor | 颜色类型，0xargb格式，形如 0xFFFF0000表示红色。默认值：0xFF182431。 |
+
+#### [h2]OH_ArkUI_SwiperDigitIndicator_GetSelectedFontColor()
+
+```
+uint32_t OH_ArkUI_SwiperDigitIndicator_GetSelectedFontColor(ArkUI_SwiperDigitIndicator* indicator)
+```
+ 描述
+
+获取被选中Swiper组件数字导航指示器字体颜色。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperDigitIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperdigitindicator)* indicator | 数字导航指示器对象指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| uint32_t | 颜色类型，0xargb格式，形如 0xFFFF0000表示红色。 |
+
+#### [h2]OH_ArkUI_SwiperDigitIndicator_SetFontSize()
+
+```
+void OH_ArkUI_SwiperDigitIndicator_SetFontSize(ArkUI_SwiperDigitIndicator* indicator, float size)
+```
+ 描述
+
+设置Swiper组件数字导航指示器字体大小。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperDigitIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperdigitindicator)* indicator | 数字导航指示器对象指针。 |
+| float size | 字体大小数值，单位为fp。 |
+
+#### [h2]OH_ArkUI_SwiperDigitIndicator_GetFontSize()
+
+```
+float OH_ArkUI_SwiperDigitIndicator_GetFontSize(ArkUI_SwiperDigitIndicator* indicator)
+```
+ 描述
+
+获取Swiper组件数字导航指示器字体大小。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperDigitIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperdigitindicator)* indicator | 数字导航指示器对象指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| float | 字体大小数值，单位为fp。 |
+
+#### [h2]OH_ArkUI_SwiperDigitIndicator_SetSelectedFontSize()
+
+```
+void OH_ArkUI_SwiperDigitIndicator_SetSelectedFontSize(ArkUI_SwiperDigitIndicator* indicator, float size)
+```
+ 描述
+
+设置被选中Swiper组件数字导航指示器字体大小。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperDigitIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperdigitindicator)* indicator | 数字导航指示器对象指针。 |
+| float size | 字体大小数值，单位为fp。 |
+
+#### [h2]OH_ArkUI_SwiperDigitIndicator_GetSelectedFontSize()
+
+```
+float OH_ArkUI_SwiperDigitIndicator_GetSelectedFontSize(ArkUI_SwiperDigitIndicator* indicator)
+```
+ 描述
+
+获取被选中Swiper组件数字导航指示器字体大小。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperDigitIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperdigitindicator)* indicator | 数字导航指示器对象指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| float | 字体大小数值，单位为fp。 |
+
+#### [h2]OH_ArkUI_SwiperArrowStyle_Create()
+
+```
+ArkUI_SwiperArrowStyle *OH_ArkUI_SwiperArrowStyle_Create()
+```
+ 描述
+
+创建Swiper组件的导航箭头。
+
+起始版本： 19
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| [ArkUI_SwiperArrowStyle *](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperarrowstyle) | 导航箭头对象指针。 |
+
+#### [h2]OH_ArkUI_SwiperArrowStyle_Destroy()
+
+```
+void OH_ArkUI_SwiperArrowStyle_Destroy(ArkUI_SwiperArrowStyle* arrowStyle)
+```
+ 描述
+
+销毁Swiper组件的导航箭头指针。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperArrowStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperarrowstyle)* arrowStyle | 导航箭头对象指针。 |
+
+#### [h2]OH_ArkUI_SwiperArrowStyle_SetShowBackground()
+
+```
+void OH_ArkUI_SwiperArrowStyle_SetShowBackground(ArkUI_SwiperArrowStyle* arrowStyle, int32_t showBackground)
+```
+ 描述
+
+设置Swiper组件导航箭头底板是否显示。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperArrowStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperarrowstyle)* arrowStyle | 导航箭头对象指针。 |
+| int32_t showBackground | 导航箭头底板是否显示，0：不显示，1：显示，默认值：0。 |
+
+#### [h2]OH_ArkUI_SwiperArrowStyle_GetShowBackground()
+
+```
+int32_t OH_ArkUI_SwiperArrowStyle_GetShowBackground(ArkUI_SwiperArrowStyle* arrowStyle)
+```
+ 描述
+
+获取Swiper组件导航箭头底板是否显示。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperArrowStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperarrowstyle)* arrowStyle | 导航箭头对象指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| int32_t | 导航箭头底板是否显示，0：不显示，1：显示。 |
+
+#### [h2]OH_ArkUI_SwiperArrowStyle_SetShowSidebarMiddle()
+
+```
+void OH_ArkUI_SwiperArrowStyle_SetShowSidebarMiddle(ArkUI_SwiperArrowStyle* arrowStyle, int32_t showSidebarMiddle)
+```
+ 描述
+
+设置Swiper组件导航箭头显示位置。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperArrowStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperarrowstyle)* arrowStyle | 导航箭头对象指针。 |
+| int32_t showSidebarMiddle | 导航箭头显示位置，0：显示在导航指示器两侧，1：显示在Swiper组件两侧，默认值：0。 |
+
+#### [h2]OH_ArkUI_SwiperArrowStyle_GetShowSidebarMiddle()
+
+```
+int32_t OH_ArkUI_SwiperArrowStyle_GetShowSidebarMiddle(ArkUI_SwiperArrowStyle* arrowStyle)
+```
+ 描述
+
+获取Swiper组件导航箭头显示位置。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperArrowStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperarrowstyle)* arrowStyle | 导航箭头对象指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| int32_t | 导航箭头显示位置，0：显示在导航指示器两侧，1：显示在Swiper组件两侧。 |
+
+#### [h2]OH_ArkUI_SwiperArrowStyle_SetBackgroundSize()
+
+```
+void OH_ArkUI_SwiperArrowStyle_SetBackgroundSize(ArkUI_SwiperArrowStyle* arrowStyle, float backgroundSize)
+```
+ 描述
+
+设置Swiper组件导航箭头底板大小。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperArrowStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperarrowstyle)* arrowStyle | 导航箭头对象指针。 |
+| float backgroundSize | 导航箭头底板大小，单位：vp。默认值：显示在导航指示器两侧24vp，显示在Swiper两侧32vp。 |
+
+#### [h2]OH_ArkUI_SwiperArrowStyle_GetBackgroundSize()
+
+```
+float OH_ArkUI_SwiperArrowStyle_GetBackgroundSize(ArkUI_SwiperArrowStyle* arrowStyle)
+```
+ 描述
+
+获取Swiper组件导航箭头底板大小。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperArrowStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperarrowstyle)* arrowStyle | 导航箭头对象指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| float | 导航箭头底板大小，单位：vp。 |
+
+#### [h2]OH_ArkUI_SwiperArrowStyle_SetBackgroundColor()
+
+```
+void OH_ArkUI_SwiperArrowStyle_SetBackgroundColor(ArkUI_SwiperArrowStyle* arrowStyle, uint32_t backgroundColor)
+```
+ 描述
+
+设置Swiper组件导航箭头底板颜色。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperArrowStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperarrowstyle)* arrowStyle | 导航箭头对象指针。 |
+| uint32_t backgroundColor | 导航箭头底板颜色，0xargb格式，形如 0xFFFF0000表示红色。默认值：显示在导航指示器两侧为0x00000000，显示在Swiper两侧为0x19182431。 |
+
+#### [h2]OH_ArkUI_SwiperArrowStyle_GetBackgroundColor()
+
+```
+uint32_t OH_ArkUI_SwiperArrowStyle_GetBackgroundColor(ArkUI_SwiperArrowStyle* arrowStyle)
+```
+ 描述
+
+获取Swiper组件导航箭头底板颜色。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperArrowStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperarrowstyle)* arrowStyle | 导航箭头对象指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| uint32_t | 导航箭头底板颜色，0xargb格式，形如 0xFFFF0000表示红色。 |
+
+#### [h2]OH_ArkUI_SwiperArrowStyle_SetArrowSize()
+
+```
+void OH_ArkUI_SwiperArrowStyle_SetArrowSize(ArkUI_SwiperArrowStyle* arrowStyle, float arrowSize)
+```
+ 描述
+
+设置Swiper组件导航箭头大小。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperArrowStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperarrowstyle)* arrowStyle | 导航箭头对象指针。 |
+| float arrowSize | 导航箭头大小，单位：vp。默认值：显示在导航指示器两侧18vp，显示在Swiper两侧24vp。显示导航箭头底板时，arrowSize固定为backgroundSize的3/4。 |
+
+#### [h2]OH_ArkUI_SwiperArrowStyle_GetArrowSize()
+
+```
+float OH_ArkUI_SwiperArrowStyle_GetArrowSize(ArkUI_SwiperArrowStyle* arrowStyle)
+```
+ 描述
+
+获取Swiper组件导航箭头大小。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperArrowStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperarrowstyle)* arrowStyle | 导航箭头对象指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| float | 导航箭头大小，单位：vp。 |
+
+#### [h2]OH_ArkUI_SwiperArrowStyle_SetArrowColor()
+
+```
+void OH_ArkUI_SwiperArrowStyle_SetArrowColor(ArkUI_SwiperArrowStyle* arrowStyle, uint32_t arrowColor)
+```
+ 描述
+
+设置Swiper组件导航箭头颜色。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperArrowStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperarrowstyle)* arrowStyle | 导航箭头对象指针。 |
+| uint32_t arrowColor | 导航箭头颜色，0xargb格式，形如 0xFFFF0000表示红色。 |
+
+#### [h2]OH_ArkUI_SwiperArrowStyle_GetArrowColor()
+
+```
+uint32_t OH_ArkUI_SwiperArrowStyle_GetArrowColor(ArkUI_SwiperArrowStyle* arrowStyle)
+```
+ 描述
+
+获取Swiper组件导航箭头颜色。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperArrowStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperarrowstyle)* arrowStyle | 导航箭头对象指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| uint32_t | 导航箭头颜色，0xargb格式，形如 0xFFFF0000表示红色。 |
+
+#### [h2]OH_ArkUI_SwiperIndicator_SetSpace()
+
+```
+void OH_ArkUI_SwiperIndicator_SetSpace(ArkUI_SwiperIndicator* indicator, float space)
+```
+ 描述
+
+设置导航点间距。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator)* indicator | 导航指示器对象指针。 |
+| float space | 导航点间距。默认值：8，单位：vp。 |
+
+#### [h2]OH_ArkUI_SwiperIndicator_GetSpace()
+
+```
+float OH_ArkUI_SwiperIndicator_GetSpace(ArkUI_SwiperIndicator* indicator)
+```
+ 描述
+
+获取导航点间距。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator)* indicator | 导航指示器对象指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| float | 导航点间距。单位：vp。 |
+
+#### [h2]OH_ArkUI_SwiperDigitIndicator_SetIgnoreSizeOfBottom()
+
+```
+void OH_ArkUI_SwiperDigitIndicator_SetIgnoreSizeOfBottom(ArkUI_SwiperDigitIndicator* indicator, int32_t ignoreSize)
+```
+ 描述
+
+设置OH_ArkUI_SwiperDigitIndicator_SetBottomPosition是否忽略导航点大小。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperDigitIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperdigitindicator)* indicator | 导航指示器对象指针。 |
+| int32_t ignoreSize | 是否忽略导航点大小。1表示忽略导航点大小，0表示不忽略，默认值0。 |
+
+#### [h2]OH_ArkUI_SwiperDigitIndicator_GetIgnoreSizeOfBottom()
+
+```
+int32_t OH_ArkUI_SwiperDigitIndicator_GetIgnoreSizeOfBottom(ArkUI_SwiperDigitIndicator* indicator)
+```
+ 描述
+
+获取OH_ArkUI_SwiperDigitIndicator_SetBottomPosition是否忽略导航点大小。
+
+起始版本： 19
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_SwiperDigitIndicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-swiperdigitindicator)* indicator | 导航指示器对象指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| int32_t | 是否忽略导航点大小。 |

@@ -2,8 +2,8 @@
 title: "Class (JsGeolocation)"
 upstream_id: "harmonyos-references/arkts-basic-components-web-jsgeolocation"
 catalog: "harmonyos-references"
-content_hash: "7836127695e9"
-synced_at: "2026-07-09T00:58:53.777936"
+content_hash: "9bc96cf0719d"
+synced_at: "2026-07-28T16:49:55.401058"
 ---
 
 # Class (JsGeolocation)
@@ -22,7 +22,7 @@ JsGeolocation适用于Web组件中网页主动请求地理位置权限的场景�
 
 constructor()
 
-JsGeolocation的构造函数。
+JsGeolocation的构造函数。构造函数本身不直接被应用调用，通常通过[onGeolocationShow事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#ongeolocationshow)回调获取JsGeolocation实例。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -30,7 +30,7 @@ JsGeolocation的构造函数。
 
 invoke(origin: string, allow: boolean, retain: boolean): void
 
-设置网页地理位置权限状态。
+设置网页地理位置权限状态。该方法需在[onGeolocationShow事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#ongeolocationshow)回调中调用，用于对发起地理位置权限请求的网页进行授权响应。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -38,6 +38,6 @@ invoke(origin: string, allow: boolean, retain: boolean): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| origin | string | 是 | 指定源的字符串。 |
+| origin | string | 是 | 发起地理位置权限请求的网页源，用于标识特定网站的地理位置请求来源。 origin格式必须遵循RFC 6454中定义的格式。 |
 | allow | boolean | 是 | 设置的地理位置权限状态。 true表示开启地理位置权限，false表示不开启地理位置权限。 |
-| retain | boolean | 是 | 是否允许将地理位置权限状态保存到系统中。可通过[GeolocationPermissions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-geolocationpermissions)接口管理保存到系统的地理位置权限。 true表示允许将地理位置权限状态保存到系统中，false表示不允许将地理位置权限状态保存到系统中。 |
+| retain | boolean | 是 | 是否允许将地理位置权限状态保存到系统中。可通过[GeolocationPermissions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-geolocationpermissions)接口管理保存到系统的地理位置权限。 true表示保存地理位置权限状态到系统，false表示不保存到系统。 |

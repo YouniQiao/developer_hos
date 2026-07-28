@@ -2,8 +2,8 @@
 title: "ExceptionPrompt"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-exceptionprompt"
 catalog: "harmonyos-references"
-content_hash: "e1867416721f"
-synced_at: "2026-07-09T00:58:14.941789"
+content_hash: "fcb5f1c47ed9"
+synced_at: "2026-07-28T16:48:14.142380"
 ---
 
 # ExceptionPrompt
@@ -58,7 +58,7 @@ PromptOptions定义options的类型。
 | --- | --- | --- | --- | --- |
 | icon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 指定当前异常提示的异常图标样式。 默认不设置或设置为undefined，异常图标不显示。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | symbolStyle18+ | [SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier#symbolglyphmodifier) | 否 | 是 | 指定当前异常提示的异常Symbol图标样式，优先级大于icon。 默认不设置或设置为undefined，Symbol图标不显示。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| tip | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 指定当前异常提示的文字提示内容。 支持默认内置四种状态文字资源如下： 1.无网络状态：显示网络未连接：引用ohos_network_not_connected。 2.网络差状态：显示网络连接不稳定，请点击重试：引用ohos_network_connected_unstable。 3.连不上服务器状态：显示无法连接到服务器，请点击重试：引用ohos_unstable_connect_server。 4.有网但是获取不到内容状态：显示无法获取位置，请点击重试：引用ohos_custom_network_tips_left。 默认不设置或设置为undefined，文字提示内容不显示。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| tip | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 指定当前异常提示的文字提示内容。 支持默认内置四种状态文字资源如下： 1.无网络状态：显示网络未连接：引用ohos_network_not_connected。 2.网络差状态：显示网络连接不稳定，请点击重试：引用ohos_network_connected_unstable。 3.连不上服务器状态：显示无法连接到服务器，请点击重试：引用ohos_unstable_connect_server。 4.有网但是获取不到位置状态：显示无法获取位置，请点击重试：引用ohos_custom_network_tips_left。 默认不设置或设置为undefined，文字提示内容不显示。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | marginType | [MarginType](#margintype) | 否 | 否 | 指定当前异常提示的边距样式。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | actionText | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 指定当前异常提示的右侧图标按钮的文字内容。 默认不设置或设置为undefined，文字内容不显示。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | marginTop | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | 否 | 否 | 指定当前异常提示的距离顶部的位置。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
@@ -119,7 +119,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253804.png)
+ ![](./img/zh-cn_image_0000002655849004.png)
 
 #### [h2]示例2（设置弹窗类型的异常提示）
 
@@ -178,16 +178,6 @@ struct CustomDialogExample {
 @Entry
 @Component
 struct Index1 {
-  @State ButtonText: string = '';
-  @State MAP_HEIGHT: string = '30%';
-  @State duration: number = 2500;
-  @State tips: string = '';
-  @State actionText: string = '';
-  controller: TextInputController = new TextInputController();
-  cancel: () => void = () => {
-  };
-  confirm: () => void = () => {
-  };
   @State options: PromptOptions = {
     icon: $r('sys.media.ohos_ic_public_fail'),
     tip: '',
@@ -246,7 +236,7 @@ struct Index1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612987.gif)
+ ![](./img/zh-cn_image_0000002686088435.gif)
 
 #### [h2]示例3（设置Symbol类型图标）
 
@@ -285,4 +275,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413698.png)
+ ![](./img/zh-cn_image_0000002685928605.png)

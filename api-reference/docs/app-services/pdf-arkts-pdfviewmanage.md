@@ -2,8 +2,8 @@
 title: "pdfViewManager（PDF预览）"
 upstream_id: "harmonyos-references/pdf-arkts-pdfviewmanage"
 catalog: "harmonyos-references"
-content_hash: "347e92d401ba"
-synced_at: "2026-07-09T01:01:36.805996"
+content_hash: "13de9c97b993"
+synced_at: "2026-07-28T16:52:59.103531"
 ---
 
 # pdfViewManager（PDF预览）
@@ -23,6 +23,8 @@ import { pdfViewManager } from '@kit.PDFKit';
 #### PdfController
 
 PDF文档控制器类。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -51,6 +53,8 @@ let pdfController = new pdfViewManager.PdfController();
 setViewOffset(offsetX: number, offsetY: number, refreshView: boolean): void
 
 设置可视区域X和Y坐标的偏移。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -84,6 +88,8 @@ if (pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 getPagePixelMap(pageIndex: number, isSync?: boolean): Promise<image.PixelMap>
 
 获取对应PDF页面的缩略图，使用Promise异步回调。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -123,6 +129,8 @@ registerScrollListener(listener: Callback<ScrollParam>): void
 
 注册滚动监听器。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -147,6 +155,8 @@ pdfController.registerScrollListener((scrollParam: pdfViewManager.ScrollParam) =
 enablePageDrag(verticalEnabled: boolean, horizontalEnabled: boolean): void
 
 设置页面是否支持拖拽。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -179,6 +189,8 @@ if (pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 loadDocument(path: string, password?: string, initPageIndex?: number, onProgress?: Callback<number>): Promise<pdfService.ParseResult>
 
 加载文件并显示指定的页面，使用Promise异步回调。由于loadDocument不支持重复调用，因此在二次调用之前，必须先通过releaseDocument释放当前已加载的文档，以确保资源正确释放并避免潜在的冲突或异常。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -215,7 +227,9 @@ let loadResult: pdfService.ParseResult = await pdfController.loadDocument(tempFi
 
 releaseDocument(): void
 
-释放已加载的文件
+释放已加载的文件。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -241,6 +255,8 @@ if (pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 setHighlightRects(rectArray: Array<PageRects>, color?: number): void
 
 在UI层，以PDF页面左下角(0,0)为原点，以PDF点为单位，向上延展，高亮显示对应的矩形区域内容。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -279,6 +295,8 @@ setHighlightText(pageIndex: number, textArray: string[], color: number): void
 
 高亮选中文本，执行中的[searchKey](#searchkey)会中断。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -310,7 +328,9 @@ if (pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 
 setPageZoom(zoom: number): void
 
-设置视图的缩放比例。
+设置视图的缩放比例。使用该函数时，会将页面适配模式改为PageFit.FIT_NONE。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -343,6 +363,8 @@ getPageZoom(): number
 
 获取视图的缩放比例。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -370,11 +392,13 @@ if (pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 
 #### [h2]setMaxZoom
 
-setMaxZoom(maxZoom: number): boolean;
+setMaxZoom(maxZoom: number): boolean
 
 设置视图的最大缩放比例。
 
 ![](./img/note_3.0-zh-cn.png) 页面适配(PageFit)的优先级高于缩放比例(Zoom)，当同时执行了缩放比例设置与页面适配设置时，优先遵循设置的页面适配方式。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -420,9 +444,11 @@ struct PdfPage {
 
 #### [h2]getMaxZoom
 
-getMaxZoom(): number;
+getMaxZoom(): number
 
 获取视图的最大缩放比例。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -462,11 +488,13 @@ struct PdfPage {
 
 #### [h2]setMinZoom
 
-setMinZoom(minZoom: number): boolean;
+setMinZoom(minZoom: number): boolean
 
 设置视图的最小缩放比例。
 
 ![](./img/note_3.0-zh-cn.png) 页面适配(PageFit)的优先级高于缩放比例(Zoom)，当同时执行了缩放比例设置与页面适配设置时，优先遵循设置的页面适配方式。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -512,9 +540,11 @@ struct PdfPage {
 
 #### [h2]getMinZoom
 
-getMinZoom(): number;
+getMinZoom(): number
 
 获取视图的最小缩放比例。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -558,6 +588,8 @@ setPageLayout(columnCount: pdfService.PageLayout): void
 
 设置页面布局模式：单页面：1，双页面：2。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -588,6 +620,8 @@ if (pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 getPageLayout(): pdfService.PageLayout
 
 获取页面布局模式。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -620,6 +654,8 @@ setPageContinuous(isContinuous: boolean): void
 
 设置页面滚动是否连续排列。仅支持垂直排列。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -650,6 +686,8 @@ if (pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 isPageContinuous(): boolean
 
 获取页面是否连续排列。仅支持垂直排列
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -682,6 +720,8 @@ setPageFit(pageFit: pdfService.PageFit): void
 
 设置页面的适配模式。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -713,6 +753,8 @@ getPageFit(): pdfService.PageFit
 
 获取页面的适配模式。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -743,6 +785,8 @@ if (pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 setPageSpacing(horizontal: number, vertical?: number): void
 
 设置页面之间的行间距和列间距。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -776,6 +820,8 @@ getPageHorizontalSpacing(): number
 
 获取双页模式下左右页面之间的间距。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -806,6 +852,8 @@ if (pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 getPageVerticalSpacing(): number
 
 获取上下页之间的间距。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -838,6 +886,8 @@ getPageCount(): number
 
 获取PDF的总页数。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -868,6 +918,8 @@ if (pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 getPageIndex(): number
 
 获取PDF当前页的索引。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -900,6 +952,8 @@ goToPage(pageIndex: number): void
 
 跳转到指定页。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -930,6 +984,8 @@ if (pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 setPageRotation(pageIndex: number, angle: pdfService.RotationAngle): void
 
 设置指定页面在PdfView组件中显示的旋转角度。旋转角度为逆时针方向的固定值，可选值包括 0、90、180、270 度。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -962,6 +1018,8 @@ if (pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 getPageRotation(pageIndex: number): pdfService.RotationAngle
 
 获取指定页面的旋转度数： 0、90、180、270度。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1000,6 +1058,8 @@ enableAnnotation(annotationType: SupportedAnnotationType, color?: number): void
 
 在常用操作之间切换并添加批注。目前支持高亮、下划线和删除线。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -1031,6 +1091,8 @@ if (pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 addMarkupAnnotation(annotationType: SupportedAnnotationType, selectedRects: Array<SelectedRects>, color: number): void
 
 在PDF注释层，以PDFView视图左上角(0,0)为原点，以像素点为单位，向下延展，添加文本批注。文本批注添加成功后，通过[registerAnnotationSelectedListener](#registerannotationselectedlistener)回调来高亮显示文本批注。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1067,6 +1129,8 @@ disableAnnotation(): void
 
 禁止添加批注。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -1091,6 +1155,8 @@ if (pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 deleteSelectedAnnotation(annotationIndex: number, pageIndex: number): void
 
 删除选中的批注。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1124,6 +1190,8 @@ if (pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 updateMarkupAnnotation(annotationIndex: number, pageIndex: number, color: number): void
 
 修改批注颜色。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1160,6 +1228,8 @@ saveDocument(path: string, onProgress?: Callback<number>): Promise<number>
 保存PDF文档，使用Promise异步回调。
 
 ![](./img/note_3.0-zh-cn.png) 由于文档不可同时读写，如果需要覆盖回原文档，请创建临时文档作为过渡。具体请参见下方示例代码。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1206,7 +1276,9 @@ pdfController.releaseDocument();
 
 registerSelectedRectsChangedListener(listener: Callback<Array<SelectedRects>>): void
 
-选中文本拖拽窗口变化，导致选中区域高亮块也要同步变化。
+注册用于监听选中区域矩形变化的监听器。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1233,6 +1305,8 @@ registerPageFitChangedListener(listener: Callback<pdfService.PageFit>): void
 
 注册页面适配变化监听器。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -1257,6 +1331,8 @@ pdfController.registerPageFitChangedListener((pageFit: pdfService.PageFit) => {}
 registerPageChangedListener(listener: Callback<number>): void
 
 注册页面索引变化监听器。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1283,6 +1359,8 @@ registerScaleChangedListener(listener: Callback<number>): void
 
 注册页面缩放变化监听器。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -1307,6 +1385,8 @@ pdfController.registerScaleChangedListener((scale: number) => {});
 registerTextSelectedListener(listener: Callback<TextSelectedParam>): void
 
 注册文本选中监听器。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1333,6 +1413,8 @@ registerAnnotationSelectedListener(listener: Callback<SelectedAnnotation>): void
 
 注册页面批注选中监听器。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -1357,6 +1439,8 @@ pdfController.registerAnnotationSelectedListener((pdfAnnotation: pdfViewManager.
 registerImageSelectedListener(listener: Callback<ImageSelectedParam>): void
 
 注册图片选中监听器。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1383,6 +1467,8 @@ registerActionClickListener(listener: Callback<RedirectInfo>): void
 
 注册Click动作的时候监听器，例如：拿到值是链接地址可以拉取浏览器跳转到相应的网页。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -1407,6 +1493,8 @@ pdfController.registerActionClickListener((redirectInfo: pdfViewManager.Redirect
 registerAnnotationChangedListener(listener: Callback<AnnotationChangedParam>): void
 
 注册批注变化监听器。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1433,6 +1521,8 @@ registerPageCountChangedListener(listener: Callback<number>): void
 
 注册总页数变化的时候监听器，需要在loadDocument之前调用，否则无法捕获loadDocument期间的页数变化事件。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -1457,6 +1547,8 @@ pdfController.registerPageCountChangedListener((pageCount: number) => {});
 searchKey(text: string, listener: Callback<number>): void
 
 搜索文本并返回匹配的总数，执行搜索会清除之前通过[setHighlightText](#sethighlighttext)设置的文本高亮。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1490,6 +1582,8 @@ clearSearch(): void
 
 清除搜索文本的高亮，等价于搜索空字符串 。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -1514,6 +1608,8 @@ if (pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 getSearchIndex(): number
 
 获取当前命中搜索关键字匹配结果的索引，执行搜索接口后默认命中索引为0。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1546,6 +1642,8 @@ setSearchIndex(index: number): void
 
 设置搜索匹配结果的索引，页面会跳转到索引对应搜索结果处。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -1576,6 +1674,8 @@ if (pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 setDisplayDirection(displayDirection: DisplayDirection): void
 
 设置PDF非连续模式下文档的翻页方向。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1658,9 +1758,616 @@ struct PdfPage {
 }
 ```
 
+#### [h2]setRenderMode
+
+setRenderMode(renderMode: PresetRenderMode): void
+
+自定义渲染风格。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.OfficeService.PDFService.Core
+
+起始版本： 26.0.0
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| renderMode | [PresetRenderMode](#presetrendermode) | 是 | 渲染风格。默认值：DEFAULT。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[ArkTS API 错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-pdf)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| [1011302004](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-pdf#section1011302004-渲染忙碌) | The rendering thread is busy. |
+| [1011302005](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-pdf#section1011302005-无效渲染模式) | Unknown rendering mode. |
+
+示例：
+
+```
+import { pdfService, pdfViewManager, PdfView } from '@kit.PDFKit'
+import { fileIo } from '@kit.CoreFileKit';
+import { hilog } from '@kit.PerformanceAnalysisKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+@Entry
+@Component
+struct Index {
+  private controller: pdfViewManager.PdfController = new pdfViewManager.PdfController();
+
+  aboutToAppear(): void {
+    let context = this.getUIContext().getHostContext() as Context;
+    let dir: string = context.resourceDir
+    // 确保在工程目录src/main/resources/resfile里存在input.pdf文档
+    let filePath: string = dir + '/input.pdf';
+    try {
+      let res = fileIo.accessSync(filePath);
+      if (!res) {
+        let content: Uint8Array = context.resourceManager.getRawFileContentSync('resfile/input.pdf');
+        let fdSand =
+          fileIo.openSync(filePath, fileIo.OpenMode.WRITE_ONLY | fileIo.OpenMode.CREATE | fileIo.OpenMode.TRUNC);
+        fileIo.writeSync(fdSand.fd, content.buffer);
+        fileIo.closeSync(fdSand.fd);
+      }
+    } catch (e) {
+      let error: BusinessError = e as BusinessError;
+      hilog.error(0x0000, 'IndexPage', `Code: ${error.code}, message: ${error.message} `);
+    }
+    (async () => {
+      let loadResult1: pdfService.ParseResult = await this.controller.loadDocument(filePath);
+      this.controller.setRenderMode(pdfViewManager.PresetRenderMode.DARKMODE);
+
+    })()
+  }
+
+  build() {
+    Row() {
+      PdfView({
+        controller: this.controller,
+        pageFit: pdfService.PageFit.FIT_WIDTH,
+        showScroll: true
+      })
+        .id('pdfview_app_view')
+        .layoutWeight(1);
+    }
+    .width('100%')
+    .height('100%')
+  }
+}
+```
+
+#### [h2]loadDocumentFromMemory
+
+loadDocumentFromMemory(data: ArrayBuffer, password?: string, initPageIndex?: number, onProgress?: Callback<number>): Promise<pdfService.ParseResult>
+
+从内存二进制数据流加载PDF文件并显示指定的页面，使用Promise异步回调。loadDocumentFromMemory和loadDocument均为文档加载接口，此类接口不支持连续调用，因此在二次调用之前，必须先通过releaseDocument释放当前已加载的文档，以确保资源正确释放并避免潜在的冲突或异常。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.OfficeService.PDFService.Core
+
+起始版本： 26.0.0
+
+![](./img/note_3.0-zh-cn.png) 传入接口的ArrayBuffer在结束生命周期完成释放前，不推荐对内部数据流进行篡改，否则可能会导致显示异常、闪退等非预期行为。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| data | ArrayBuffer | 是 | PDF文件的二进制数据，仅支持大小1GB以内的二进制数据。data参数建议使用private变量存储，不可使用@State或@Link等装饰器，否则将导致接口无法获取到传入的二进制数据。 |
+| password | string | 否 | 密码，长度不超过512字节，仅支持ASCII字符（127以内），默认值：空字符串。 |
+| initPageIndex | number | 否 | 要打开的文档初始化页面索引，0为初始页，默认值：0。 |
+| onProgress | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#callback) | 否 | 加载文档进度回调函数。传此参数，返回number类型数据，表示文档加载进度；不传此参数不返回文档加载进度。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，返回解析二进制数据流结果。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[ArkTS API 错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-pdf)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| [1011302001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-pdf#section1011302001-页码值错误) | Invalid page number. |
+| [1011302002](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-pdf#section1011302002-加载的文档未释放) | The loaded document has not been freed. |
+| [1011302003](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-pdf#section1011302003-加载的二进制流为空或超出范围) | The input ArrayBuffer is empty or exceeds the maximum limit. |
+| [1011302006](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-pdf#section1011302006-加载忙碌) | Another document is being loaded. |
+
+示例：
+
+```
+import { pdfViewManager, pdfService} from '@kit.PDFKit';
+import { fileIo } from '@kit.CoreFileKit';
+import { common } from '@kit.AbilityKit';
+
+@Entry
+@Component
+struct PdfPage {
+private pdfController: pdfViewManager.PdfController = new pdfViewManager.PdfController();
+private pdfBuffer: ArrayBuffer | null | undefined = null;
+
+    async aboutToAppear() {
+        try {
+            let context = this.getUIContext().getHostContext() as common.UIAbilityContext;
+            let filePath = context.resourceDir;
+            let tempFilePath = filePath + `/input.pdf`;
+            // 可通过以下方式来构建PDF文件的ArrayBuffer
+            let file = fileIo.openSync(tempFilePath, fileIo.OpenMode.READ_ONLY);
+            let stat = fileIo.statSync(file.fd);
+            this.pdfBuffer = new ArrayBuffer(stat.size);
+            fileIo.readSync(file.fd, this.pdfBuffer);
+            fileIo.closeSync(file.fd);
+
+            let loadResult: pdfService.ParseResult = await this.pdfController.loadDocumentFromMemory(this.pdfBuffer);
+        } catch (e) {
+            // 错误处理
+        }
+    }
+    aboutToDisappear(): void {
+        // 释放pdfBuffer
+        this.pdfBuffer = undefined;
+    }
+    build() {
+        Column() {
+            // 组件
+        }
+    }
+}
+```
+
+#### [h2]getPageIndexFromViewPoint
+
+getPageIndexFromViewPoint(viewPoint: Point): number
+
+将视图坐标系中的指定点转换为对应的PDF页面索引（从0开始），坐标单位：px，原点为PdfView组件左上角。同步返回页面索引。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.OfficeService.PDFService.Core
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| viewPoint | Point | 是 | 视图坐标系中的位置点，需传入单位为px的像素值。默认值：{ x: 0, y: 0 } |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| number | 返回对应的页面索引。大于等于0：有效的页面索引。-1：该点未落在任何有效页面上。 |
+
+示例：
+
+```
+import { pdfService, pdfViewManager, PdfView } from '@kit.PDFKit';
+
+@Entry
+@Component
+struct Index {
+@State message: string = 'Hello World';
+private context = this.getUIContext().getHostContext() as Context;
+private controller: pdfViewManager.PdfController = new pdfViewManager.PdfController();
+private filePath = this.context.resourceDir + '/input.pdf';
+
+    aboutToAppear(): void {
+        this.controller.loadDocument(this.filePath);
+    }
+
+    aboutToDisappear(): void {
+        this.controller.releaseDocument();
+    }
+
+    build() {
+        RelativeContainer() {
+            Column() {
+                Row() {
+                    PdfView({
+                        // 需将controller绑定到PdfView组件上
+                        controller: this.controller,
+                        pageFit: pdfService.PageFit.FIT_WIDTH,
+                        showScroll: true
+                    }).onTouch((event: TouchEvent) => {
+                        if (event.type === TouchType.Down) {
+                            try {
+                                let viewPoint: pdfViewManager.Point = {
+                                    x: vp2px(event.touches[0].x),
+                                    y: vp2px(event.touches[0].y)
+                                };
+                                // 使用res
+                                let res = this.controller.getPageIndexFromViewPoint(viewPoint);
+                            } catch (error) {
+                                console.error(`Failed to getPageIndexFromViewPoint: ${error}`);
+                            };
+                        }
+                    })
+                        .width('100%')
+                        .height('100%')
+                }
+            .width('100%')
+                    .height('100%')
+            }
+        }
+    .width('100%')
+            .height('100%')
+    }
+}
+```
+
+#### [h2]viewRectToPDFRect
+
+viewRectToPDFRect(pageIndex: number, viewRect: ViewRect): pdfService.PdfRect
+
+将视图坐标系中的矩形转换为指定PDF页面坐标系的矩形，返回转换后的PDF页面坐标系矩形。视图坐标原点在PdfView组件左上角，Y轴向下，单位px。PDF坐标原点在PDF页面左下角，Y轴向上，单位Points。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.OfficeService.PDFService.Core
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| pageIndex | number | 是 | 目标PDF页面的索引（从0开始）。默认值：0。 |
+| viewRect | ViewRect | 是 | 视图坐标系中的矩形区域，包含left、top、right、bottom属性，单位为px。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| pdfService.[PdfRect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pdf-arkts-pdfservice#pdfrect) | 返回转换后的PDF页面坐标系矩形。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[ArkTS API 错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-pdf)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| [1011302001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-pdf#section1011302001-页码值错误) | Invalid page number. |
+
+示例：
+
+```
+import { pdfService, pdfViewManager, PdfView } from '@kit.PDFKit';
+
+@Entry
+@Component
+struct Index {
+private context = this.getUIContext().getHostContext() as Context;
+private controller: pdfViewManager.PdfController = new pdfViewManager.PdfController();
+private filePath = this.context.resourceDir + '/input.pdf';
+
+    aboutToAppear(): void {
+        this.controller.loadDocument(this.filePath);
+    }
+
+    aboutToDisappear(): void {
+        this.controller.releaseDocument();
+    }
+
+    build() {
+        RelativeContainer() {
+            Column() {
+                Row() {
+                    PdfView({
+                        // 需将controller绑定到PdfView组件上
+                        controller: this.controller,
+                        pageFit: pdfService.PageFit.FIT_WIDTH,
+                        showScroll: true
+                    })
+                        .width('100%')
+                        .height('100%')
+
+                    Button('pdfRectToViewRect').onClick(() => {
+                        try {
+                            let viewRect: pdfViewManager.ViewRect = {
+                                left: 100,
+                                top: 100,
+                                right: 100,
+                                bottom: 100
+                            };
+                            // 转换为 PDF 内部坐标
+                            let res: pdfService.PdfRect = this.controller.viewRectToPDFRect(0, viewRect);
+                            // 使用res
+                        } catch (error) {
+                            console.error(`Failed to viewRectToPDFRect: ${error}`);
+                        }
+                    })
+                }
+            .width('100%')
+                    .height('100%')
+            }
+        }
+    .width('100%')
+            .height('100%')
+    }
+}
+```
+
+#### [h2]pdfPointToViewPoint
+
+pdfPointToViewPoint(pageIndex: number, pdfPoint: pdfService.PdfPoint): Point
+
+将PDF页面坐标系中的点转换为视图坐标系中的点，PDF页面坐标系中的点。视图坐标原点在PdfView组件左上角，Y轴向下，单位为px。PDF页面坐标原点在PDF页面左下角，Y轴向上，单位为Points。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.OfficeService.PDFService.Core
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| pageIndex | number | 是 | 源PDF页面的索引（从0开始）。默认值：0。 |
+| pdfPoint | pdfService.[PdfPoint](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pdf-arkts-pdfservice#pdfpoint) | 是 | PDF页面坐标系中的点，单位为Points。默认值：{ x: 0, y: 0 } |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| [Point](#point) | 返回转换后的视图坐标系点，包含x和y属性，单位为px。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[ArkTS API 错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-pdf)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| [1011302001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-pdf#section1011302001-页码值错误) | Invalid page number. |
+
+示例：
+
+```
+import { pdfService, pdfViewManager, PdfView } from '@kit.PDFKit';
+
+@Entry
+@Component
+struct Index {
+  private context = this.getUIContext().getHostContext() as Context;
+  private controller: pdfViewManager.PdfController = new pdfViewManager.PdfController();
+  private filePath = this.context.resourceDir + '/input.pdf';
+
+  aboutToAppear(): void {
+    this.controller.loadDocument(this.filePath);
+  }
+
+  aboutToDisappear(): void {
+    this.controller.releaseDocument();
+  }
+
+  build() {
+    RelativeContainer() {
+      Column() {
+        Row() {
+          PdfView({
+            // 需将controller绑定到PdfView组件上
+            controller: this.controller,
+            pageFit: pdfService.PageFit.FIT_WIDTH,
+            showScroll: true
+          })
+            .width('100%')
+            .height('100%')
+
+          Button('pdfRectToViewRect').onClick(() => {
+            try {
+              let pdfpoint: pdfService.PdfPoint = {
+                x: 100,
+                y: 100
+              }
+              // 使用res
+              let res: pdfViewManager.Point = this.controller.pdfPointToViewPoint(0, pdfpoint);
+            } catch (error) {
+              console.error(`Failed to pdfPointToViewPoint: ${error}`);
+            }
+            ;
+          })
+        }
+        .width('100%')
+        .height('100%')
+      }
+    }
+    .width('100%')
+    .height('100%')
+  }
+}
+```
+
+#### [h2]viewPointToPDFPoint
+
+viewPointToPDFPoint(pageIndex: number, viewPoint: Point): pdfService.PdfPoint
+
+将视图坐标系中的指定点转换为指定PDF页面坐标系中的点。视图坐标原点在PdfView组件左上角，Y轴向下，单位为px。PDF页面坐标原点在具体PDF页面左下角，Y轴向上，单位为Points。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.OfficeService.PDFService.Core
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| pageIndex | number | 是 | 目标 PDF 页面的索引值（从 0 开始）。默认值：0。 |
+| viewPoint | Point | 是 | 视图坐标系中的位置点，单位为px。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| pdfService.[PdfPoint](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pdf-arkts-pdfservice#pdfpoint) | 返回转换后的PDF坐标系点，包含x和y属性，单位为点（Points）。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[ArkTS API 错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-pdf)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| [1011302001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-pdf#section1011302001-页码值错误) | Invalid page number. |
+
+示例：
+
+```
+import { pdfService, pdfViewManager, PdfView } from '@kit.PDFKit';
+
+@Entry
+@Component
+struct Index {
+  @State message: string = 'Hello World';
+  private context = this.getUIContext().getHostContext() as Context;
+  private controller: pdfViewManager.PdfController = new pdfViewManager.PdfController();
+  private filePath = this.context.resourceDir + '/input.pdf';
+
+  aboutToAppear(): void {
+    this.controller.loadDocument(this.filePath);
+  }
+
+  aboutToDisappear(): void {
+    this.controller.releaseDocument();
+  }
+
+  build() {
+    RelativeContainer() {
+      Column() {
+          Row() {
+          PdfView({
+            // 需将controller绑定到PdfView组件上
+            controller: this.controller,
+            pageFit: pdfService.PageFit.FIT_WIDTH,
+            showScroll: true
+          }).onTouch((event: TouchEvent) => {
+            if (event.type === TouchType.Down) {
+              try {
+                let viewPoint :pdfViewManager.Point ={
+                  x:vp2px(event.touches[0].x) ,
+                  y:vp2px(event.touches[0].y)
+                }
+                // 使用res
+                let res:pdfService.PdfPoint=  this.controller.viewPointToPDFPoint(0,viewPoint);
+              } catch (error) {
+                console.error(`Failed to viewPointToPDFPoint: ${error}`);
+              };
+            }
+          })
+            .width('100%')
+            .height('100%')
+        }
+        .width('100%')
+        .height('100%')
+      }
+    }
+    .width('100%')
+    .height('100%')
+  }
+}
+```
+
+#### [h2]pdfRectToViewRect
+
+pdfRectToViewRect(pageIndex: number, pdfRect: pdfService.PdfRect): ViewRect
+
+将PDF页面坐标系的矩形同步转换为视图坐标系矩形，返回转换后的视图坐标系矩形。视图坐标原点在PdfView组件左上角，Y轴向下，单位为px。PDF坐标原点在具体PDF页面左下角，Y轴向上，单位为Points。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.OfficeService.PDFService.Core
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| pageIndex | number | 是 | 源PDF页面的索引值（从0开始）。默认值：0。 |
+| pdfRect | pdfService.[PdfRect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pdf-arkts-pdfservice#pdfrect) | 是 | PDF坐标系中的矩形区域，单位为Points。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| [ViewRect](#viewrect) | 返回转换后的视图坐标系矩形，单位为px。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[ArkTS API 错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-pdf)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| [1011302001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-pdf#section1011302001-页码值错误) | Invalid page number. |
+
+示例：
+
+```
+import { pdfService, pdfViewManager, PdfView } from '@kit.PDFKit';
+
+@Entry
+@Component
+struct Index {
+  private context = this.getUIContext().getHostContext() as Context;
+  private controller: pdfViewManager.PdfController = new pdfViewManager.PdfController();
+  private filePath = this.context.resourceDir + '/input.pdf';
+
+  aboutToAppear(): void {
+    this.controller.loadDocument(this.filePath);
+  }
+
+  aboutToDisappear(): void {
+    this.controller.releaseDocument();
+  }
+
+  build() {
+    RelativeContainer() {
+      Column() {
+          Row() {
+          PdfView({
+            // 需将controller绑定到PdfView组件上
+            controller: this.controller,
+            pageFit: pdfService.PageFit.FIT_WIDTH,
+            showScroll: true
+          })
+            .width('100%')
+            .height('100%')
+
+            Button('pdfRectToViewRect').onClick(() => {
+              try {
+                let pdfRect: pdfService.PdfRect ={
+                  left:100,
+                  top: 100,
+                  right:200,
+                  bottom:200
+                }
+                // 使用res
+                let res:pdfViewManager.ViewRect=  this.controller.pdfRectToViewRect(0,pdfRect);
+              } catch (error) {
+                console.error(`Failed to pdfRectToViewRect: ${error}`);
+              };
+            })
+        }
+        .width('100%')
+        .height('100%')
+      }
+    }
+    .width('100%')
+    .height('100%')
+  }
+}
+```
+
 #### RedirectInfo
 
 PDF页面重定向信息类。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1678,6 +2385,8 @@ PDF页面重定向信息类。
 constructor(content: string, actionType: RedirectType)
 
 用于创建PDF页面重定向信息类对象。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1700,6 +2409,8 @@ let redirectInfo = new pdfViewManager.RedirectInfo('https://www.test.com', pdfVi
 
 PDF选择的批注信息。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -1716,6 +2427,8 @@ PDF选择的批注信息。
 #### PageRects
 
 页面中矩形区域类。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1734,6 +2447,8 @@ constructor(pageIndex: number, rectArray: Array<pdfService.PdfRect>)
 
 用于创建页面中矩形区域类的对象。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -1748,6 +2463,8 @@ constructor(pageIndex: number, rectArray: Array<pdfService.PdfRect>)
 #### SelectedRects
 
 PDF页面中选定文本的矩形区域类，继承[PageRects](#pagerects)。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1764,6 +2481,8 @@ PDF页面中选定文本的矩形区域类，继承[PageRects](#pagerects)。
 constructor(pageIndex: number, rectArray: Array<pdfService.PdfRect>, isRotated: number)
 
 用于创建PDF页面中选定文本的矩形区域类的对象。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1792,6 +2511,8 @@ let selectedRects: pdfViewManager.SelectedRects = new pdfViewManager.SelectedRec
 
 PDF页面[registerScrollListener](#registerscrolllistener)监听函数回调参数。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -1807,7 +2528,9 @@ PDF页面[registerScrollListener](#registerscrolllistener)监听函数回调参�
 
 #### TextSelectedParam
 
-PDF页面 registerTextSelectedListener 监听函数回调参数。
+PDF页面[registerTextSelectedListener](#registertextselectedlistener)监听函数回调参数。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1820,7 +2543,9 @@ PDF页面 registerTextSelectedListener 监听函数回调参数。
 
 #### ImageSelectedParam
 
-PDF页面 registerImageSelectedListener 监听函数回调参数。
+PDF页面[registerImageSelectedListener](#registerimageselectedlistener)监听函数回调参数。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1835,7 +2560,9 @@ PDF页面 registerImageSelectedListener 监听函数回调参数。
 
 #### AnnotationChangedParam
 
-PDF页面 registerAnnotationChangedListener 监听函数回调参数。
+PDF页面[registerAnnotationChangedListener](#registerannotationchangedlistener)监听函数回调参数。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1851,6 +2578,8 @@ PDF页面 registerAnnotationChangedListener 监听函数回调参数。
 #### SupportedAnnotationType
 
 PDF页面支持的批注类型。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1872,6 +2601,8 @@ PDF页面支持的批注类型。
 
 PDF页面上支持的批注更改类型。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -1886,6 +2617,8 @@ PDF页面上支持的批注更改类型。
 
 需要进行重定向的ActionType。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -1898,6 +2631,8 @@ PDF页面上支持的批注更改类型。
 #### DisplayDirection
 
 非连续显示时的翻页方向。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1939,3 +2674,50 @@ PDF页面上支持的批注更改类型。
 | --- | --- | --- |
 | SELF_ONLY | 0 | 只自身滑动，不与父组件联动。 |
 | SELF_FIRST | 1 | 自身先滑动，自身滑动到边缘以后父组件滑动。如果父组件有边缘效果，在滑动到父组件边缘后，触发父组件边缘效果，否则触发子组件的边缘效果。 |
+
+#### PresetRenderMode
+
+预设渲染模式。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.OfficeService.PDFService.Core
+
+起始版本： 26.0.0
+
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| DEFAULT | 0 | 标准渲染模式，保持原始像素，不做任何处理。适合正常光线环境。 |
+| DARKMODE | 1 | 深色渲染模式，基于标准模式对像素进行反差增强，提升在暗色背景下的可见性。适合夜间或低光环境。 |
+
+#### Point
+
+坐标系中的点位置信息。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.OfficeService.PDFService.Core
+
+起始版本： 26.0.0
+
+| 名称 | 类型 | 说明 |
+| --- | --- | --- |
+| x | number | x坐标值，表示与Y轴的垂直距离。默认值：0。 |
+| y | number | y坐标值，表示与X轴的垂直距离。默认值：0。 |
+
+#### ViewRect
+
+视图坐标系中的矩形区域，单位为px，原点(0,0)位于PdfView组件左上角。X轴正方向向右，Y轴正方向向下。left、top、right、bottom分别表示矩形四条边到原点的垂直距离。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.OfficeService.PDFService.Core
+
+起始版本： 26.0.0
+
+| 名称 | 类型 | 说明 |
+| --- | --- | --- |
+| left | number | 矩形左边缘的X坐标。默认值：0。 |
+| top | number | 矩形上边缘的Y坐标。默认值：0。 |
+| right | number | 矩形右边缘的X坐标。默认值：0。 |
+| bottom | number | 矩形下边缘的y坐标。默认值：0。 |

@@ -2,15 +2,15 @@
 title: "Z序控制"
 upstream_id: "harmonyos-references/ts-universal-attributes-z-order"
 catalog: "harmonyos-references"
-content_hash: "110aa7e892b5"
-synced_at: "2026-07-09T00:57:37.689564"
+content_hash: "5ccbb5695abc"
+synced_at: "2026-07-28T16:42:02.525274"
 ---
 
 # Z序控制
 
 组件的Z序，设置同一容器中兄弟组件的堆叠顺序。
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
 #### zIndex
 
@@ -28,13 +28,13 @@ zIndex(value: number): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 同一容器中兄弟组件显示层级关系。zIndex值越大，显示层级越高，即zIndex值大的组件会覆盖在zIndex值小的组件上方。当不涉及新增或减少兄弟节点，动态改变zIndex时会在zIndex改变前层级顺序的基础上进行稳定排序。 |
+| value | number | 是 | 同一容器中兄弟组件显示层级关系。zIndex值越大，显示层级越高，即zIndex值大的组件会覆盖在zIndex值小的组件上方；不同容器内的组件无法根据zIndex值改变跨容器显示层级。当不涉及新增或减少兄弟节点，动态改变zIndex时会在zIndex改变前层级顺序的基础上进行稳定排序；涉及新增或减少兄弟节点时，zIndex值越大，显示层级越高，zIndex值相等时将按声明顺序显示，即后声明的组件会覆盖在先声明的组件上方。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### 示例
 
@@ -56,7 +56,7 @@ struct ZIndexExample {
           .size({ width: '40%', height: '30%' }).backgroundColor(0xbbb2cb)
           .zIndex(2)
         // Text2设置zIndex值为1
-        Text('2, default zIndex(1)')
+        Text('2, zIndex(1)')
           .size({ width: '70%', height: '50%' }).backgroundColor(0xd2cab3).align(Alignment.TopStart)
           .zIndex(1)
         // Text3设置zIndex值为0
@@ -68,13 +68,13 @@ struct ZIndexExample {
   }
 }
 ```
- Stack容器内子组件不设置zIndex的效果。
+ Stack容器内子组件不设置zIndex时，默认按照声明顺序显示，后声明的组件会覆盖在先声明的组件上方。
 
-![](./img/zh-cn_image_0000002631253144.png)
+![](./img/zh-cn_image_0000002656008262.png)
 
 Stack容器子组件设置zIndex后的效果。
 
-![](./img/zh-cn_image_0000002661612329.png)
+![](./img/zh-cn_image_0000002655848342.png)
 
 #### [h2]示例2（动态修改zIndex属性）
 
@@ -85,14 +85,14 @@ Stack容器子组件设置zIndex后的效果。
 @Entry
 @Component
 struct ZIndexExample {
-  @State zIndex_: number = 0
+  @State zIndexValue: number = 0;
 
   build() {
     Column() {
       // 点击Button改变zIndex后，在点击Button前的层级顺序上根据zIndex进行稳定排序。
-      Button("change Text2 zIndex")
+      Button('change Text2 zIndex')
         .onClick(() => {
-          this.zIndex_ = (this.zIndex_ + 1) % 3;
+          this.zIndexValue = (this.zIndexValue + 1) % 3;
         })
       Stack() {
         // Text1设置zIndex值为1
@@ -100,9 +100,9 @@ struct ZIndexExample {
           .size({ width: '70%', height: '50%' }).backgroundColor(0xd2cab3).align(Alignment.TopStart)
           .zIndex(1)
         // Text2设置zIndex默认值为0
-        Text('2, default zIndex(0), now zIndex:' + this.zIndex_)
+        Text('2, default zIndex(0), now zIndex:' + this.zIndexValue)
           .size({ width: '90%', height: '80%' }).backgroundColor(0xc1cbac).align(Alignment.TopStart)
-          .zIndex(this.zIndex_)
+          .zIndex(this.zIndexValue)
       }.width('100%').height(200)
     }.width('100%').height(200)
   }
@@ -110,19 +110,19 @@ struct ZIndexExample {
 ```
  不点击Button修改zIndex值的效果。
 
-![](./img/zh-cn_image_0000002631413036.png)
+![](./img/zh-cn_image_0000002686087771.png)
 
 点击Button动态修改zIndex，使Text1和Text2的zIndex相等，因为在点击Button前的层级顺序上根据zIndex进行稳定排序，层级顺序不发生改变。
 
-![](./img/zh-cn_image_0000002661732269.png)
+![](./img/zh-cn_image_0000002685927943.png)
 
 点击Button动态修改zIndex，使Text2的zIndex大于Text1，层级顺序发生改变。
 
-![](./img/zh-cn_image_0000002631253146.png)
+![](./img/zh-cn_image_0000002656008264.png)
 
 #### [h2]示例3（设置不同容器内组件的zIndex属性）
 
-该示例在不同容器内设置zIndex属性。其中，Text1、Text2和Text3在不同的Stack容器内。虽然Text3的zIndex值最小，但Text1、Text2仍无法按照预期显示在Text3的上方。
+该示例在不同容器内设置zIndex属性。其中，Text1、Text2在同一个Stack容器内，Text3在另一个Stack容器内。虽然Text3的zIndex值最小，但Text1、Text2仍无法根据zIndex值显示在Text3的上方。
 
 ```
 // xxx.ets
@@ -137,7 +137,7 @@ struct ZIndexExample {
           .size({ width: '40%', height: '30%' }).backgroundColor(0xbbb2cb)
           .zIndex(2)
         // Text2设置zIndex值为1
-        Text('2, default zIndex(1)')
+        Text('2, zIndex(1)')
           .size({ width: '70%', height: '50%' }).backgroundColor(0xd2cab3).align(Alignment.TopStart)
           .zIndex(1)
       }.width('100%').height(200)
@@ -153,4 +153,4 @@ struct ZIndexExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612331.png)
+ ![](./img/zh-cn_image_0000002655848344.png)

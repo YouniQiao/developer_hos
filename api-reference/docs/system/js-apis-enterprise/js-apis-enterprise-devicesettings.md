@@ -1,12 +1,12 @@
 ---
-title: "@ohos.enterprise.deviceSettings （设备设置管理）"
+title: "@ohos.enterprise.deviceSettings（设备设置管理）"
 upstream_id: "harmonyos-references/js-apis-enterprise-devicesettings"
 catalog: "harmonyos-references"
-content_hash: "6ec77c62db0e"
-synced_at: "2026-07-09T00:59:52.538369"
+content_hash: "d9dad644f022"
+synced_at: "2026-07-28T16:51:10.203449"
 ---
 
-# @ohos.enterprise.deviceSettings （设备设置管理）
+# @ohos.enterprise.deviceSettings（设备设置管理）
 
 本模块提供企业设备设置能力，包括设置、获取设备息屏时间等。
 
@@ -42,7 +42,7 @@ setValue(admin: Want, item: string, value: string): void
 | --- | --- | --- | --- |
 | admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
 | item | string | 是 | 设备设置策略类型。 - screenOff：设备息屏策略。对于PC/2in1设备，支持设置电池和电源供电下的设备息屏策略。 - dateTime：设置系统时间。 - powerPolicy：设备电源策略。该能力仅支持PC/2in1设备，策略设置之后不刷新设置—电源和电池页面，在手机平板设备设置后不生效。 对于PC/2in1设备，仅支持设置电池供电下的设备电源策略。设置设备超时灭屏时睡眠延迟策略，睡眠动作需要在设置—电源和电池页面显示的睡眠时间之后等待设置的delayTime才会生效。 - eyeComfort：从API version 23开始支持，设置护眼模式开关状态，仅支持全天开启和关闭护眼模式。 - defaultInputMethod：从API version 23开始支持，设置默认输入法。 |
-| value | string | 是 | 策略类型值。 当item为screenOff时，value为设备息屏时间（单位：毫秒）。建议value值和设置页面手动操作下拉框中的可选项保持一致。 当item为dateTime时，value为要设置的系统时间（单位：毫秒）。 当item为powerPolicy时，value为JSON字符串，格式：{"powerScene":xx,"powerPolicy":{"powerPolicyAction":xx,"delayTime":xx}}。 powerScene为电源策略场景，可设置参数如下： - 0：超时灭屏场景。 powerPolicyAction为休眠动作策略场景，可设置参数如下： - 0：不执行动作。 - 1：自动进入睡眠。 - 2：强制进入睡眠。 - 3：进入休眠，该策略暂不生效。 - 4：关机。 delayTime为延迟时间（单位：毫秒），不支持设置为30000毫秒，其余数值均在允许范围内。 当item为eyeComfort时，value为护眼模式开关状态的字符串。 - on：全天开启护眼模式。 - off：关闭护眼模式。 当item为defaultInputMethod时，value为输入法应用包名字符串。 - 可以通过[getCurrentInputMethod](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethod#inputmethodgetcurrentinputmethod9)获取当前输入法应用包名。 |
+| value | string | 是 | 策略类型值。 当item为screenOff时，value为设备息屏时间（单位：毫秒）。建议value值和设置页面手动操作下拉框中的可选项保持一致。仅在PC/2in1设备上支持传-1设置永不息屏，其他设备无效。 当item为dateTime时，value为要设置的系统时间（单位：毫秒）。 当item为powerPolicy时，value为JSON字符串，格式：{"powerScene":xx,"powerPolicy":{"powerPolicyAction":xx,"delayTime":xx}}。 powerScene为电源策略场景，可设置参数如下： - 0：超时灭屏场景。 powerPolicyAction为休眠动作策略场景，可设置参数如下： - 0：不执行动作。 - 1：自动进入睡眠。 - 2：强制进入睡眠。 - 3：进入休眠，该策略暂不生效。 - 4：关机。 delayTime为延迟时间（单位：毫秒），不支持设置为30000毫秒，其余数值均在允许范围内。 当item为eyeComfort时，value为护眼模式开关状态的字符串。 - on：全天开启护眼模式。 - off：关闭护眼模式。 当item为defaultInputMethod时，value为输入法应用包名字符串。 - 可以通过[getCurrentInputMethod](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethod#inputmethodgetcurrentinputmethod9)获取当前输入法应用包名。 |
 
 错误码：
 
@@ -99,7 +99,7 @@ getValue(admin: Want, item: string): string
 
 | 类型 | 说明 |
 | --- | --- |
-| string | 策略类型值。 当item为screenOff时，返回设备息屏时间（单位：毫秒），对于PC/2in1设备，返回设备电池供电下的息屏时间（单位：毫秒）。 当item为powerPolicy时，返回电源策略，对于PC/2in1设备，返回设备电池供电下的电源策略，格式为JSON字符串:{"powerScene":xx,"powerPolicy":{"powerPolicyAction":xx,"delayTime":xx}}。powerScene为电源策略场景；delayTime为延迟时间（单位：毫秒）；powerPolicyAction为休眠策略。 电源策略场景： - 0：超时场景。 休眠策略： - 0：不执行动作。 - 1：自动进入睡眠。 - 2：强制进入睡眠。 - 3：进入休眠，该策略暂不生效。 - 4：关机。 当item为eyeComfort时，value为护眼模式开关状态的字符串。 - on：全天开启护眼模式。 - off：关闭护眼模式。 - unknown：其他模式。 |
+| string | 策略类型值。 当item为screenOff时，返回设备息屏时间（单位：毫秒），对于PC/2in1设备，返回设备电池供电下的息屏时间（单位：毫秒）。 当item为powerPolicy时，返回电源策略，对于PC/2in1设备，返回设备电池供电下的电源策略，格式为JSON字符串:{"powerScene":xx,"powerPolicy":{"powerPolicyAction":xx,"delayTime":xx}}。powerScene为电源策略场景；delayTime为延迟时间（单位：毫秒）；powerPolicyAction为休眠策略。 电源策略场景： - 0：超时场景。 休眠策略： - 0：不执行动作。 - 1：自动进入睡眠。 - 2：强制进入睡眠。 - 3：进入休眠，该策略暂不生效。 - 4：关机。 当item为eyeComfort时，返回的value为护眼模式开关状态的字符串。 - on：全天开启护眼模式。 - off：关闭护眼模式。 - unknown：其他模式。 |
 
 错误码：
 
@@ -258,6 +258,8 @@ deviceSettings.setUnlockWallpaper(wantTemp, fd).then(() => {
   console.info('Succeeded in setting lock wallpaper');
 }).catch((err: BusinessError) => {
   console.error(`Failed to set lock wallpaper. Code: ${err.code}, message: ${err.message}`);
+}).finally(() => {
+  fs.closeSync(fd);
 });
 ```
 
@@ -279,7 +281,7 @@ setValueForAccount(admin: Want, item: SettingsItem, accountId: number, value: st
 | --- | --- | --- | --- |
 | admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
 | item | [SettingsItem](#settingsitem24) | 是 | 设备设置策略类型。 |
-| accountId | number | 是 | 用户ID，取值范围：大于等于0。 accountId可以通过[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9)等接口来获取。 |
+| accountId | number | 是 | 用户ID，取值范围：大于等于0。 accountId可以通过[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9-1)等接口来获取。 |
 | value | string | 是 | 策略类型值。 当item为[SettingsItem.DEVICE_NAME](#settingsitem24)时，value为设备名称的字符串。 字符串长度范围：大于等于1，小于等于100。只允许设置当前用户的设备名称，设置其他用户的设备名称返回9200012错误码。 当item为[SettingsItem.FLOATING_NAVIGATION](#settingsitem24)时，在Phone和Tablet设备中可正常调用，在其他设备中返回801错误码。只允许设置当前用户的三键导航，设置其他用户的三键导航不会生效，value为三键导航的开关状态。 - '0'：表示开启三键导航（通过接口[enterKioskMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-kioskmanager#kioskmanagerenterkioskmode)进入Kiosk模式下，三键导航显示依赖底部手势开启；即三键导航开关和底部手势开关同时开启时，三键导航才会显示。底部手势可通过接口[applicationManager.setKioskFeatures](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-applicationmanager#applicationmanagersetkioskfeatures20)设置开启或关闭）。 - '1'：表示关闭三键导航。 |
 
 错误码：
@@ -335,7 +337,7 @@ getValueForAccount(admin: Want, item: SettingsItem, accountId: number): string
 | --- | --- | --- | --- |
 | admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
 | item | [SettingsItem](#settingsitem24) | 是 | 设备设置策略类型。 |
-| accountId | number | 是 | 用户ID，取值范围：大于等于0。 accountId可以通过[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9)等接口来获取。 |
+| accountId | number | 是 | 用户ID，取值范围：大于等于0。 accountId可以通过[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9-1)等接口来获取。 |
 
 返回值：
 
@@ -443,6 +445,8 @@ removeHiddenSettingsMenu(admin: Want, menusToHidden: Array<SettingsMenu>): void
 
 将设置项从当前用户下的隐藏设置项列表中移除。隐藏设置项列表中的设置项在当前用户的设置菜单中会被隐藏，隐藏后不可以在设置的搜索中搜索到，如果通过某种方式搜索到该设置项，点击后也无法打开。若移除后剩余的隐藏设置项列表为空，则设置项会全部显示。调用接口后即刻生效，无需重启设置应用。
 
+从API版本26.0.0开始，调用[setDisallowedPolicyForAccount](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicyforaccount)接口禁用[SUPER_HUB](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#featureforaccount)后，再调用该接口将中转站从隐藏设置项列表中移除时，会发生策略冲突，抛出9200010错误码。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_SETTINGS
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
@@ -466,6 +470,7 @@ removeHiddenSettingsMenu(admin: Want, menusToHidden: Array<SettingsMenu>): void
 | --- | --- |
 | 9200001 | The application is not an administrator application of the device. |
 | 9200002 | The administrator application does not have permission to manage the device. |
+| 9200010 | A conflict policy has been configured. 适用版本：26.0.0+ |
 | 9200012 | Parameter verification failed. |
 | 9200016 | Service timeout. |
 | 201 | Permission verification failed. The application does not have the permission required to call the API. |
@@ -562,7 +567,7 @@ try {
 
 setSwitchStatus(admin: Want, key: SwitchKey, status: SwitchStatus): void
 
-设置开关的状态。支持设置星闪、蓝牙、Wi-Fi、NFC的状态为开启或关闭，设置完毕后，用户可以手动开关。支持设置蓝牙、NFC的状态为强制开启，设置完毕后，用户不可以手动开关。若已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicy) 接口禁用了某个开关，则通过本接口设置这个开关的状态会抛出错误码203，需通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicy) 接口解除该开关禁用策略。当设备有多个MDM应用时，各MDM应用设置开关状态不存在冲突，最后设置的策略生效。开启(用户可手动开启、关闭)、关闭(用户可手动开启、关闭)、强制开启(用户不可手动关闭)三个状态可以随意切换，也不存在冲突。
+设置开关的状态。支持设置星闪、蓝牙、Wi-Fi、NFC的状态为开启或关闭，设置完毕后，用户可以手动开关。支持设置蓝牙、NFC的状态为强制开启，设置完毕后，用户不可以手动开关。若已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated) 接口禁用了某个开关，则通过本接口设置这个开关的状态会抛出错误码203，需通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated) 接口解除该开关禁用策略。当设备有多个MDM应用时，各MDM应用设置开关状态不存在冲突，最后设置的策略生效。开启(用户可手动开启、关闭)、关闭(用户可手动开启、关闭)、强制开启(用户不可手动关闭)三个状态可以随意切换，也不存在冲突。
 
 起始版本： 26.0.0
 
@@ -584,7 +589,7 @@ setSwitchStatus(admin: Want, key: SwitchKey, status: SwitchStatus): void
 
 错误码：
 
-以下的错误码的详细介绍请参见[企业设备管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprisedevicemanager)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+以下错误码的详细介绍请参见[企业设备管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprisedevicemanager)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |

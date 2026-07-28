@@ -2,8 +2,8 @@
 title: "ArkUI_RenderContentModifierHandle"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-rendercontentmodifierhandle"
 catalog: "harmonyos-references"
-content_hash: "7ca72011121d"
-synced_at: "2026-07-09T00:58:46.929393"
+content_hash: "f31dba2a5649"
+synced_at: "2026-07-28T16:49:41.278383"
 ---
 
 # ArkUI_RenderContentModifierHandle
@@ -14,7 +14,7 @@ typedef struct ArkUI_RenderContentModifier* ArkUI_RenderContentModifierHandle
 
 #### 概述
 
-定义内容修改器指针。
+定义渲染内容修改器指针，用于引用内容修改器。内容修改器可挂载到渲染节点，并附加渲染属性或设置onDraw回调。
 
 起始版本： 20
 

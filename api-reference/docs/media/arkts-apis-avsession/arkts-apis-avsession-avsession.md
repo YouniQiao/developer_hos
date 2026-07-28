@@ -2,8 +2,8 @@
 title: "Interface (AVSession)"
 upstream_id: "harmonyos-references/arkts-apis-avsession-avsession"
 catalog: "harmonyos-references"
-content_hash: "e29ba06ed498"
-synced_at: "2026-07-09T01:00:17.651588"
+content_hash: "aa33bcb87f34"
+synced_at: "2026-07-28T16:51:37.033010"
 ---
 
 # Interface (AVSession)
@@ -1437,6 +1437,156 @@ try {
   currentAVSession.setBackgroundPlayMode(avSession.BackgroundPlayMode.ENABLE_BACKGROUND_PLAY);
 } catch (err) {
   console.error(`setBackgroundPlayMode BusinessError: code: ${err.code}, message: ${err.message}`);
+}
+```
+
+#### setSupportedPlaySpeeds
+
+setSupportedPlaySpeeds(speeds: Array<number>): Promise<void>
+
+设置应用支持的播放倍速列表。使用Promise异步回调。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.Multimedia.AVSession.Core
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| speeds | Array | 是 | 支持的播放倍速列表。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，无返回结果。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[媒体会话管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-avsession)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+
+示例：
+
+```
+try {
+  let speeds: number[] = [0.5, 1, 1.25, 1.5];
+  await currentAVSession.setSupportedPlaySpeeds(speeds);
+  console.info('Succeeded in setting supported play speeds.');
+} catch (err) {
+  console.error(`setSupportedPlaySpeeds BusinessError: code: ${err.code}, message: ${err.message}`);
+}
+```
+
+#### setSupportedLoopModes
+
+setSupportedLoopModes(loopModes: Array<LoopMode>): Promise<void>
+
+设置应用支持的循环模式列表。使用Promise异步回调。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.Multimedia.AVSession.Core
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| loopModes | Array | 是 | 支持的循环模式列表。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，无返回结果。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[媒体会话管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-avsession)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+
+示例：
+
+```
+try {
+  let loopModes: avSession.LoopMode[] = [
+    avSession.LoopMode.LOOP_MODE_SEQUENCE,
+    avSession.LoopMode.LOOP_MODE_SINGLE,
+    avSession.LoopMode.LOOP_MODE_LIST
+  ];
+  await currentAVSession.setSupportedLoopModes(loopModes);
+  console.info('Succeeded in setting supported loop modes.');
+} catch (err) {
+  console.error(`setSupportedLoopModes BusinessError: code: ${err.code}, message: ${err.message}`);
+}
+```
+
+#### setMediaCenterControlType
+
+setMediaCenterControlType(type: Array<AVMediaCenterControlType>): Promise<void>
+
+设置应用支持的控制类型列表。使用Promise异步回调。
+
+设置优先显示在播控中心的控制类型列表，若未设置控制类型优先级，播控中心将根据[AVSessionType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-t#avsessiontype10)显示，具体显示规则参考[创建不同类型的会话](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-access-scene#创建不同类型的会话)。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Multimedia.AVSession.Core
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| type | Array | 是 | 优先在播控中心显示的控制类型列表。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，无返回结果。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[媒体会话管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-avsession)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+
+示例：
+
+```
+try {
+  let controlTypes: avSession.AVMediaCenterControlType[] = [
+    'playNext',
+    'playPrevious',
+    'setSpeed',
+    'setLoopMode'
+  ];
+  await currentAVSession.setMediaCenterControlType(controlTypes);
+  console.info('Succeeded in setting media center control type.');
+} catch (err) {
+  console.error(`setMediaCenterControlType BusinessError: code: ${err.code}, message: ${err.message}`);
 }
 ```
 

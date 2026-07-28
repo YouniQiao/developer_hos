@@ -2,8 +2,8 @@
 title: "@ohos.security.cryptoFramework (加解密算法库框架)"
 upstream_id: "harmonyos-references/js-apis-cryptoframework"
 catalog: "harmonyos-references"
-content_hash: "2cb4605a8483"
-synced_at: "2026-07-09T17:26:02.703510"
+content_hash: "7c1123db274f"
+synced_at: "2026-07-28T16:50:21.249120"
 ---
 
 # @ohos.security.cryptoFramework (加解密算法库框架)
@@ -28,19 +28,24 @@ import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| INVALID_PARAMS | 401 | 非法入参。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| NOT_SUPPORT | 801 | 操作不支持。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| ERR_OUT_OF_MEMORY | 17620001 | 内存操作失败。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| ERR_RUNTIME_ERROR | 17620002 | 表示在ArkTS和C之间转换参数失败。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| ERR_PARAMETER_CHECK_FAILED20+ | 17620003 | 表示参数检查失败。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| INVALID_PARAMS | 401 | 非法入参。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** API版本12+：此接口可在Stage模型和FA模型下使用。 API版本9-11：此接口仅可在Stage模型下使用。 |
+| NOT_SUPPORT | 801 | 操作不支持。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** API版本12+：此接口可在Stage模型和FA模型下使用。 API版本9-11：此接口仅可在Stage模型下使用。 |
+| ERR_OUT_OF_MEMORY | 17620001 | 内存操作失败。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** API版本12+：此接口可在Stage模型和FA模型下使用。 API版本9-11：此接口仅可在Stage模型下使用。 |
+| ERR_RUNTIME_ERROR | 17620002 | 获取Native对象失败或参数转换失败。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** API版本12+：此接口可在Stage模型和FA模型下使用。 API版本9-11：此接口仅可在Stage模型下使用。 |
+| ERR_PARAMETER_CHECK_FAILED20+ | 17620003 | 表示参数检查失败。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | ERR_INVALID_CALL | 17620004 | 表示无效的函数调用。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| ERR_CRYPTO_OPERATION | 17630001 | 调用三方算法库API出错。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| ERR_CRYPTO_OPERATION | 17630001 | 密码操作错误。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** API版本12+：此接口可在Stage模型和FA模型下使用。 API版本9-11：此接口仅可在Stage模型下使用。 |
 
 #### DataBlob
 
 二进制数据的封装接口，核心字段data为Uint8Array类型。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
+
+模型约束：
+
+- API版本12+：此接口可在Stage模型和FA模型下使用。
+- API版本9-11：此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.Security.CryptoFramework
 
@@ -56,7 +61,7 @@ import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 
 适用于需要iv等参数的对称加解密模式（对于无iv等参数的模式如ECB模式，无需构造，在[init()](#init-1)中传入null即可）。
 
-![](./img/note_3.0-zh-cn.png) iv（Initialization Vector，初始化向量）是用于对称加密模式（如 CBC/CTR/OFB/CFB/GCM/CCM/Poly1305）中引入随机性或唯一性的字节序列，保证相同明文在相同密钥下产生不同密文。
+![](./img/note_3.0-zh-cn.png) iv（Initialization Vector，初始化向量）是用于对称加密模式（如 CBC/CTR/OFB/CFB/GCM/CCM/ChaCha20-Poly1305）中引入随机性或唯一性的字节序列，保证相同明文在相同密钥下产生不同密文。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -67,7 +72,7 @@ import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| algName | string | 否 | 否 | 指明对称加解密参数的算法模式。可选值如下： - "IvParamsSpec"：适用于CBC|CTR|OFB|CFB模式。 - "GcmParamsSpec"：适用于GCM模式。 - "CcmParamsSpec"：适用于CCM模式。 |
+| algName | string | 否 | 否 | 指明对称加解密参数的算法模式。可选值如下： - "IvParamsSpec"：适用于CBC|CTR|OFB|CFB模式。 - "GcmParamsSpec"：适用于GCM模式。 - "CcmParamsSpec"：适用于CCM模式。 - "AeadParamsSpec"：适用于AES-GCM，AES-CCM，SM4-GCM和ChaCha20-Poly1305算法。 |
 
 ![](./img/note_3.0-zh-cn.png) 由于[init()](#init-1)的params参数是ParamsSpec类型（父类），而实际需要传入具体的子类对象（如[IvParamsSpec](#ivparamsspec)），因此在构造子类对象时应设置其父类ParamsSpec的algName参数，使算法库在init()时知道传入的是哪种子类对象。
 
@@ -86,13 +91,13 @@ import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| iv | [DataBlob](#datablob) | 否 | 否 | 指明加解密参数iv。常见取值如下： - AES的CBC|CTR|OFB|CFB模式：iv长度为16字节。 - 3DES的CBC|OFB|CFB模式：iv长度为8字节。 - SM410+的CBC|CTR|OFB|CFB模式：iv长度为16字节。 |
+| iv | [DataBlob](#datablob) | 否 | 否 | 加密和解密参数iv。常见取值如下： - AES的CBC|CTR|OFB|CFB模式：iv长度为16字节。 - 3DES的CBC|OFB|CFB模式：iv长度为8字节。 - SM410+的CBC|CTR|OFB|CFB模式：iv长度为16字节。 |
 
 ![](./img/note_3.0-zh-cn.png) 传入[init()](#init-1)方法前需要指定其algName属性（来源于父类[ParamsSpec](#paramsspec)）。
 
 #### GcmParamsSpec
 
-加解密参数[ParamsSpec](#paramsspec)的子类，用于在对称加解密时作为[init()](#init-1)方法的参数。
+加解密参数[ParamsSpec](#paramsspec)的子类，封装使用GCM AEAD模式进行加密或解密的参数，需要IV、AAD和认证标签。它是[ParamsSpec](#paramsspec)的子类，用于在对称加解密时作为[init()](#init-1)方法的参数。
 
 适用于GCM模式。
 
@@ -112,12 +117,11 @@ import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ![](./img/note_3.0-zh-cn.png)
 
 1. 传入[init()](#init-1)方法前需要指定其algName属性（来源于父类[ParamsSpec](#paramsspec)）。
-2. 对于1~128字节长度的iv，加解密算法库无额外限制，但结果取决于底层OpenSSL的支持情况。
-3. 当aad参数不需要使用或aad长度为0时，可以将aad的data属性设置为一个空的Uint8Array，来构造GcmParamsSpec，写法为aad: { data: new Uint8Array() }。
+2. 当aad参数不需要使用或aad长度为0时，可以将aad的data属性设置为一个空的Uint8Array，来构造GcmParamsSpec，写法为aad: { data: new Uint8Array() }。
 
 #### CcmParamsSpec
 
-加解密参数[ParamsSpec](#paramsspec)的子类，用于在对称加解密时作为[init()](#init-1)方法的参数。
+加解密参数[ParamsSpec](#paramsspec)的子类，封装使用CCM AEAD模式进行加密或解密的参数，需要IV、AAD和认证标签。它是[ParamsSpec](#paramsspec)的子类，用于在对称加解密时作为[init()](#init-1)方法的参数。
 
 适用于CCM模式。
 
@@ -138,7 +142,7 @@ import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 
 #### Poly1305ParamsSpec22+
 
-加解密参数[ParamsSpec](#paramsspec)的子类，用于在对称加解密时作为[init()](#init-1)方法的参数。
+加解密参数[ParamsSpec](#paramsspec)的子类，封装使用ChaCha20-Poly1305 AEAD模式进行加密或解密的参数，需要nonce、AAD和认证标签。它是[ParamsSpec](#paramsspec)的子类，用于在对称加解密时作为[init()](#init-1)方法的参数。
 
 适用于[ChaCha20算法](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sym-encrypt-decrypt-spec#chacha20)Poly1305模式。
 
@@ -148,8 +152,8 @@ import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| iv | [DataBlob](#datablob) | 否 | 否 | 指明加解密参数iv，长度为12字节。 |
-| aad | [DataBlob](#datablob) | 否 | 否 | 指明加解密参数aad，长度为任意字节。 |
+| iv | [DataBlob](#datablob) | 否 | 否 | Nonce（通过iv字段传入），长度为12字节。 |
+| aad | [DataBlob](#datablob) | 否 | 否 | 指明加解密参数aad。 |
 | authTag | [DataBlob](#datablob) | 否 | 否 | 指定加解密参数authTag，长度为16字节。 |
 
 ![](./img/note_3.0-zh-cn.png) 传入[init()](#init-1)方法前需要指定其algName属性（来源于父类[ParamsSpec](#paramsspec)）。
@@ -158,14 +162,17 @@ import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 
 #### AeadParamsSpec
 
-用于AEAD（带关联数据的认证加密）对称加解密的[init()](#init-1)方法参数，继承自[ParamsSpec](#paramsspec)。
+用于AEAD（带附加数据的认证加密）对称加解密的[init()](#init-1)方法参数，继承自[ParamsSpec](#paramsspec)。
 
-适用于[AES算法](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sym-encrypt-decrypt-spec#aes)的CCM分组模式。
+适用于[AES算法](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sym-encrypt-decrypt-spec#aes)的CCM/GCM分组模式、SM4算法的GCM模式和ChaCha20算法的Poly1305模式。
 
-![](./img/note_3.0-zh-cn.png) 在AES-CCM模式下使用AeadParamsSpec加密时：
+![](./img/note_3.0-zh-cn.png) 在使用AeadParamsSpec加密时：
 
-- 若加密时指定了tag长度，解密时必须传入相同长度。
+- 若加密时指定了tagLen，解密时必须传入相同长度。
 - 当前使用AeadParamsSpec参数，CCM模式下[update](#update)与[doFinal](#dofinal)只能调用其中一个进行加密或者解密。且每个方法只能调用一次。
+- 对于AES算法的GCM模式与SM4算法的GCM模式，tagLen仅支持4、8、12、13、14、15、16，若不填则默认为16。
+- 对于AES算法的CCM模式，tagLen仅支持4、6、8、10、12、14、16，若不填则默认为12。
+- 对于ChaCha20算法的Poly1305模式，tagLen仅支持16。
 
 起始版本： 26.0.0
 
@@ -177,13 +184,13 @@ import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| nonce | Uint8Array | 否 | 否 | 指明加解密参数nonce。对于AES算法的CCM模式长度为7-13字节；对于AES算法的GCM模式、SM4算法的GCM模式长度为1-128字节；对于ChaCha20算法的Poly1305模式长度为12字节。 |
-| authenticatedData | Uint8Array | 否 | 是 | 指明加解密参数aad，长度为任意字节。 |
-| tagLen | number | 否 | 是 | 指定加解密参数authTag长度，对于AES-CCM若不填则长度默认为12字节。tagLen长度范围为4-16，并且为偶数。 |
+| nonce | Uint8Array | 否 | 否 | 指明加解密参数nonce。对于AES算法的CCM模式长度为7-13字节；对于AES算法的GCM模式、SM4算法的GCM模式长度为1-128字节，推荐使用12字节；对于ChaCha20算法的Poly1305模式长度为12字节。 |
+| authenticatedData | Uint8Array | 否 | 是 | 指定可选的附加认证数据。 |
+| tagLen | number | 否 | 是 | 指定加解密参数authTag长度，单位为字节。对于AES算法的CCM模式，tagLen仅支持4、6、8、10、12、14、16，若不填则默认为12；对于AES算法的GCM模式与SM4算法的GCM模式，tagLen仅支持4、8、12、13、14、15、16，若不填则默认为16；对于ChaCha20算法的Poly1305模式，tagLen仅支持16。 |
 
 #### CryptoMode
 
-表示加解密操作的枚举。
+枚举加密和解密的密码操作模式。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -255,11 +262,17 @@ import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| EC_PRIVATE_K | 6 | 表示椭圆曲线（EC）私钥的 K。 |
-| EC_PRIVATE_04_X_Y_K | 7 | 表示椭圆曲线（EC）私钥的 04||X||Y||K。 |
-| EC_PUBLIC_X_Y | 8 | 表示椭圆曲线（EC）公钥的 X||Y。 |
-| EC_PUBLIC_04_X_Y | 9 | 表示椭圆曲线（EC）公钥的 04||X||Y。 |
-| EC_PUBLIC_COMPRESS_X | 10 | 表示椭圆曲线（EC）公钥的 02||X 或 03||X。 |
+| ML_DSA_PRIVATE_SEED | 0 | 表示ML-DSA（Module-Lattice-Based Digital Signature Algorithm）私钥的种子。 |
+| ML_DSA_PRIVATE_RAW | 1 | 表示ML-DSA私钥的原始私钥数据。 |
+| ML_DSA_PUBLIC_RAW | 2 | 表示ML-DSA公钥的原始公钥数据。 |
+| ML_KEM_PRIVATE_SEED | 3 | 表示ML-KEM（Module-Lattice-Based Key-Encapsulation Mechanism）私钥的种子。 |
+| ML_KEM_PRIVATE_RAW | 4 | 表示ML-KEM私钥的原始私钥数据。 |
+| ML_KEM_PUBLIC_RAW | 5 | 表示ML-KEM公钥的原始公钥数据。 |
+| EC_PRIVATE_K | 6 | 表示椭圆曲线（EC）上的私钥标量k。 |
+| EC_PRIVATE_04_X_Y_K | 7 | 表示椭圆曲线（EC）密钥的复合编码04||X||Y||K，其中04||X||Y为非压缩公钥点，K为私钥标量。 |
+| EC_PUBLIC_X_Y | 8 | 表示椭圆曲线（EC）公钥的 X||Y格式编码数据。 |
+| EC_PUBLIC_04_X_Y | 9 | 表示椭圆曲线（EC）公钥的 04||X||Y格式编码数据。 |
+| EC_PUBLIC_COMPRESS_X | 10 | 表示椭圆曲线（EC）公钥的 02||X 或 03||X格式编码数据。 |
 
 #### AsyKeySpecType10+
 
@@ -304,9 +317,7 @@ import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 
 表示签名验签参数的枚举。这些参数支持通过[setSignSpec](#setsignspec10)、[setVerifySpec](#setverifyspec10)接口设置，通过[getSignSpec](#getsignspec10)、[getVerifySpec](#getverifyspec10)接口获取。
 
-当前只支持RSA算法和SM2算法，从API version 11开始，增加对SM2_USER_ID_UINT8ARR参数的支持，详细规格请参考[签名验签规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sign-sig-verify-overview)。
-
-元服务API： 从API version 12开始，该接口支持在元服务中使用。
+当前只支持RSA算法和SM2算法，从API version 11开始，增加对SM2_USER_ID_UINT8ARR参数的支持。从API版本26.0.0开始，支持ML-DSA算法。详细规格请参考[签名验签规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sign-sig-verify-overview)。
 
 系统能力：
 
@@ -315,12 +326,15 @@ import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| PSS_MD_NAME_STR | 100 | 表示RSA算法中，使用PSS模式时，消息摘要功能的算法名。 |
-| PSS_MGF_NAME_STR | 101 | 表示RSA算法中，使用PSS模式时，掩码生成算法（目前仅支持MGF1）。 |
-| PSS_MGF1_MD_STR | 102 | 表示RSA算法中，使用PSS模式时，MGF1掩码生成功能的消息摘要参数。 |
-| PSS_SALT_LEN_NUM | 103 | 表示RSA算法中，使用PSS模式时，盐值的长度，长度以字节为单位。 |
-| PSS_TRAILER_FIELD_NUM | 104 | 表示RSA算法中，使用PSS模式时，用于编码操作的整数。 |
-| SM2_USER_ID_UINT8ARR11+ | 105 | 表示SM2算法中，用户身份标识字段。 |
+| PSS_MD_NAME_STR | 100 | 表示RSA算法中，使用PSS模式时，消息摘要功能的算法名。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| PSS_MGF_NAME_STR | 101 | 表示RSA算法中，使用PSS模式时，掩码生成算法（目前仅支持MGF1）。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| PSS_MGF1_MD_STR | 102 | 表示RSA算法中，使用PSS模式时，MGF1掩码生成功能的消息摘要算法。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| PSS_SALT_LEN_NUM | 103 | 表示RSA算法中，使用PSS模式时，盐值的长度，长度以字节为单位。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| PSS_TRAILER_FIELD_NUM | 104 | 表示RSA算法中，使用PSS模式时，用于编码操作的整数。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| SM2_USER_ID_UINT8ARR11+ | 105 | 表示SM2算法中，用户身份标识字段。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| ML_DSA_DETERMINISTIC_BOOL | 106 | 表示ML-DSA签名和验证过程中是否使用确定性签名。不设置时默认值为false。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
+| ML_DSA_MU_BOOL | 107 | 表示ML-DSA签名和验证过程中的mu参数值。不设置时默认值为false，设置为true时，待签名数据需是64字节的哈希。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
+| ML_DSA_CONTEXT_UINT8ARR | 108 | 表示ML-DSA签名和验证过程中的上下文数据。最大长度为255字节，用于标识签名验签场景，该参数在设置ML_DSA_MU_BOOL为true时无效，不设置时默认值为空字符串。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
 
 #### AsyKeySpec10+
 
@@ -677,7 +691,7 @@ import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 
 #### DHCommonParamsSpec11+
 
-密钥参数[AsyKeySpec](#asykeyspec10)的子类，用于指定DH算法中公私钥包含的参数。
+密钥参数[AsyKeySpec](#asykeyspec10)的子类，用于指定DH算法中公私钥包含的公共参数。
 
 在使用密钥参数生成密钥时，将其传入[createAsyKeyGeneratorBySpec()](#cryptoframeworkcreateasykeygeneratorbyspec10)方法创建密钥生成器。
 
@@ -817,7 +831,7 @@ import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 | --- | --- | --- | --- | --- |
 | passphrase | string | Uint8Array | 否 | 否 | 用户输入的原始密码。 |
 | salt | Uint8Array | 否 | 否 | 盐值。 |
-| n | number | 否 | 否 | 迭代次数，需要为正整数。 |
+| n | number | 否 | 否 | CPU/内存开销参数，需要为正整数。 |
 | p | number | 否 | 否 | 并行化参数，需要为正整数。 |
 | r | number | 否 | 否 | 块大小参数，需要为正整数。 |
 | maxMemory | number | 否 | 否 | 最大内存限制参数，需要为正整数，单位为bytes。 |
@@ -836,7 +850,7 @@ import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | key | string | Uint8Array | 否 | 否 | 密钥材料。 |
-| info | Uint8Array | 否 | 否 | 附加信息。 |
+| info | Uint8Array | 否 | 否 | 共享信息。 |
 | keySize | number | 否 | 否 | 派生得到的密钥字节长度，需要为正整数，单位为bytes。 |
 
 ![](./img/note_3.0-zh-cn.png) key指的是用户输入的最初的密钥材料。
@@ -873,7 +887,7 @@ RSA私钥编码参数，使用获取私钥字符串时，可以添加此参数�
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | password | string | 否 | 否 | 密码。 |
-| cipherName | string | 否 | 否 | 算法名。 |
+| cipherName | string | 否 | 否 | 用于编码私钥的对称密码算法。 |
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -882,7 +896,7 @@ RSA私钥编码参数，使用获取私钥字符串时，可以添加此参数�
 
 #### MacSpec18+
 
-消息认证码参数，计算HMAC、CMAC消息认证码时，需要构建子类对象并作为输入参数。
+消息认证码参数，计算HMAC或CMAC时，需要构建子类对象并作为输入参数。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -890,13 +904,13 @@ RSA私钥编码参数，使用获取私钥字符串时，可以添加此参数�
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| algName | string | 否 | 否 | 消息验证码算法名。 |
+| algName | string | 否 | 否 | 消息认证码算法名。 |
 
-![](./img/note_3.0-zh-cn.png) algName是必选参数，表示消息验证码算法。
+![](./img/note_3.0-zh-cn.png) algName是必选参数，表示消息认证码算法。
 
 #### HmacSpec18+
 
-消息认证码参数[MacSpec](#macspec18)的子类，作为HMAC消息验证码计算的输入。
+消息认证码参数[MacSpec](#macspec18)的子类，作为HMAC计算的输入。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -910,7 +924,7 @@ RSA私钥编码参数，使用获取私钥字符串时，可以添加此参数�
 
 #### CmacSpec18+
 
-消息认证码参数[MacSpec](#macspec18)的子类，作为CMAC消息验证码计算的输入。
+消息认证码参数[MacSpec](#macspec18)的子类，作为CMAC计算的输入。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -918,13 +932,13 @@ RSA私钥编码参数，使用获取私钥字符串时，可以添加此参数�
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| cipherName | string | 否 | 否 | 对称加密算法名。 |
+| cipherName | string | 否 | 否 | CMAC使用的对称密码算法名。 |
 
 ![](./img/note_3.0-zh-cn.png) cipherName是必选参数，表示CMAC对称加密算法。
 
 #### EccSignatureSpec20+
 
-包含（r、s）的ECC/SM2签名数据的结构体。
+包含（r、s）的ECC/SM2签名数据的对象。
 
 ![](./img/note_3.0-zh-cn.png) r和s的长度各为256位。
 
@@ -984,9 +998,9 @@ getEncoded(): DataBlob
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 801 | this operation is not supported. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 801 | This operation is not supported. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -1027,9 +1041,9 @@ getKeySize(): number
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17630001 | crypto operation error. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -1054,7 +1068,7 @@ async function testGenerateAesKey() {
 
 clearMem(): void
 
-同步方法，将系统底层内存中的密钥内容清零。建议在不再使用对称密钥实例时调用此函数，避免密钥数据在内存中存留过久。
+同步方法，将系统底层内存中的密钥数据清零。建议在不再使用对称密钥实例时调用此函数，避免密钥数据在内存中存留过久。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1075,13 +1089,13 @@ async function testGenerateAesKeyFun() {
   console.info('key blob: '+ encodedKey.data);
   key.clearMem();
   encodedKey = key.getEncoded();
-  console.info('key blob：' + encodedKey.data);
+  console.info('key blob: ' + encodedKey.data);
 }
 ```
 
 #### PubKey
 
-公钥，是[Key](#key)的子类，在非对称加解密、验签、密钥协商时需要将其对象作为输入使用。
+公钥，是[Key](#key)的子类，在非对称加密、签名验证、密钥协商时需要将其对象作为输入使用。
 
 公钥可以通过非对称密钥生成器[AsyKeyGenerator](#asykeygenerator)、[AsyKeyGeneratorBySpec](#asykeygeneratorbyspec10)来生成。
 
@@ -1116,11 +1130,11 @@ getAsyKeySpec(itemType: AsyKeySpecItem): bigint | string | number
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 801 | this operation is not supported. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
-| 17620003 | parameter check failed. 适用版本：26.0.0+ |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 801 | This operation is not supported. 适用版本：12+ |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
+| 17620003 | Parameter check failed. 适用版本：26.0.0+ |
 
 示例：
 
@@ -1164,12 +1178,12 @@ async function testgetAsyKeySpec() {
 
 getEncodedDer(format: string): DataBlob
 
-支持根据指定的密钥格式（如规范、压缩状态等），获取符合ASN.1语法和DER编码的公钥数据。目前仅支持ECC压缩和非压缩格式的公钥数据。
+支持根据指定的密钥格式（如规范、压缩状态等），获取符合ASN.1语法和DER编码的公钥数据。
 
 ![](./img/note_3.0-zh-cn.png) 本接口和[Key.getEncoded()](#getencoded)的区别是：
 
 1. 本接口可根据入参决定数据的输出格式。
-2. [Key.getEncoded()](#getencoded)接口，不支持指定密钥格式，生成的数据格式与原始数据格式保持一致。（原始数据格式，指通过[convertKey](#convertkey-3)接口生成密钥对象时的数据格式）。
+2. [Key.getEncoded()](#getencoded)接口，不支持指定获取密钥数据的格式。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1179,7 +1193,7 @@ getEncodedDer(format: string): DataBlob
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| format | string | 是 | 用于指定当前密钥格式。 在API版本12-24，取值仅支持"X509|COMPRESSED"和"X509|UNCOMPRESSED"。 从API版本26.0.0开始，RSA公钥格式取值支持"PKCS1"和"X509"。 |
+| format | string | 是 | 用于指定当前密钥格式。支持EC密钥，format取值支持"X509|COMPRESSED"和"X509|UNCOMPRESSED"。 从API版本26.0.0开始，支持RSA密钥，format取值支持"PKCS1"和"X509"。 从API版本26.0.0开始，支持ML-DSA和ML-KEM密钥，format取值支持"X509"。 |
 
 返回值：
 
@@ -1193,9 +1207,10 @@ getEncodedDer(format: string): DataBlob
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
+| 17620003 | Parameter check failed. 适用版本：26.0.0+ |
 
 示例：
 
@@ -1227,7 +1242,7 @@ getEncodedPem(format: string): string
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| format | string | 是 | 指定的获取密钥字符串的编码格式。其中，公钥可为'PKCS1' 或'X509'格式。 |
+| format | string | 是 | 指定的获取密钥字符串的编码格式。支持RSA密钥，format取值支持'X509'或'PKCS1'。 从API版本26.0.0起，支持EC、ML-DSA和ML-KEM密钥，format取值支持'X509'。 |
 
 返回值：
 
@@ -1241,10 +1256,10 @@ getEncodedPem(format: string): string
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
-| 17620003 | parameter check failed. 适用版本：26.0.0+ |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
+| 17620003 | Parameter check failed. 适用版本：26.0.0+ |
 
 示例：
 
@@ -1299,10 +1314,10 @@ getKeyData(itemType: AsyKeyDataItem): Promise<Uint8Array>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17620003 | parameter check failed. |
-| 17630001 | crypto operation error. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17620003 | Parameter check failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -1349,10 +1364,10 @@ getKeyDataSync(itemType: AsyKeyDataItem): Uint8Array
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17620003 | parameter check failed. |
-| 17630001 | crypto operation error. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17620003 | Parameter check failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -1369,7 +1384,7 @@ function eccGetKeyDataTest() {
 
 #### PriKey
 
-私钥，是[Key](#key)的子类，在非对称加解密、签名、密钥协商时需要将其作为输入使用。
+私钥，是[Key](#key)的子类，在非对称解密、签名、密钥协商时需要将其作为输入使用。
 
 私钥可以通过非对称密钥生成器[AsyKeyGenerator](#asykeygenerator)、[AsyKeyGeneratorBySpec](#asykeygeneratorbyspec10)来生成。
 
@@ -1377,7 +1392,7 @@ function eccGetKeyDataTest() {
 
 clearMem(): void
 
-同步方法，清零系统底层内存中的密钥内容。
+同步方法，清零系统底层内存中的密钥数据。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1435,11 +1450,11 @@ getAsyKeySpec(itemType: AsyKeySpecItem): bigint | string | number
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 801 | this operation is not supported. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
-| 17620003 | parameter check failed. 适用版本：26.0.0+ |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 801 | This operation is not supported. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
+| 17620003 | Parameter check failed. 适用版本：26.0.0+ |
 
 示例：
 
@@ -1484,13 +1499,9 @@ getEncodedDer(format: string): DataBlob
 
 支持根据指定的密钥格式（如采用哪个规范），获取满足ASN.1语法、DER编码的私钥数据。
 
-在API版本12-24，仅支持获取PKCS #8格式的ECC私钥数据。
-
-从API版本26.0.0开始，增加支持获取PKCS #1和PKCS #8格式的RSA私钥数据。
-
 ![](./img/note_3.0-zh-cn.png) 本接口和[Key.getEncoded()](#getencoded)的区别是：
 
-1. 本接口可根据入参决定数据的输出格式，当前支持获取PKCS #8格式的ECC私钥数据。
+1. 本接口可根据入参决定数据的输出格式。
 2. [Key.getEncoded()](#getencoded)接口，不支持指定密钥格式。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
@@ -1501,7 +1512,7 @@ getEncodedDer(format: string): DataBlob
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| format | string | 是 | 用于指定当前密钥格式。 在API版本12-24，取值仅支持"PKCS8"。 从API版本26.0.0开始，RSA私钥格式支持"PKCS1"和"PKCS8"。 |
+| format | string | 是 | 用于指定当前密钥格式。支持EC密钥，format取值支持"PKCS8"。 从API版本26.0.0开始，支持RSA密钥，format取值支持"PKCS1"和"PKCS8"。 从API版本26.0.0开始，支持ML-DSA和ML-KEM密钥，format取值支持"PKCS8"。 |
 
 返回值：
 
@@ -1515,10 +1526,10 @@ getEncodedDer(format: string): DataBlob
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
-| 17620003 | parameter check failed. 适用版本：26.0.0+ |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
+| 17620003 | Parameter check failed. 适用版本：26.0.0+ |
 
 示例：
 
@@ -1551,7 +1562,7 @@ getEncodedPem(format: string): string
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| format | string | 是 | 指定的获取密钥字符串的编码格式。其中，私钥可为'PKCS1' 或'PKCS8'格式。从API版本26.0.0起，ECC算法的私钥可为'EC'格式。 |
+| format | string | 是 | 指定的获取密钥字符串的编码格式。支持RSA密钥，format取值支持'PKCS8'或'PKCS1'。 从API版本26.0.0起，支持EC密钥，format取值支持'PKCS8'或'EC'。 从API版本26.0.0起，支持ML-DSA和ML-KEM密钥，format取值支持'PKCS8'。 |
 
 返回值：
 
@@ -1565,10 +1576,10 @@ getEncodedPem(format: string): string
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
-| 17620003 | parameter check failed. 适用版本：26.0.0+ |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
+| 17620003 | Parameter check failed. 适用版本：26.0.0+ |
 
 示例：
 
@@ -1630,10 +1641,10 @@ getEncodedPem(format: string, config: KeyEncodingConfig): string
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 801 | this operation is not supported. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 801 | This operation is not supported. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -1692,9 +1703,9 @@ getPubKey(): Promise<PubKey>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17630001 | crypto operation error. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -1788,9 +1799,9 @@ getPubKeySync(): PubKey
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17630001 | crypto operation error. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -1894,10 +1905,10 @@ getKeyData(itemType: AsyKeyDataItem): Promise<Uint8Array>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17620003 | parameter check failed. |
-| 17630001 | crypto operation error. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17620003 | Parameter check failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -1944,10 +1955,10 @@ getKeyDataSync(itemType: AsyKeyDataItem): Uint8Array
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17620003 | parameter check failed. |
-| 17630001 | crypto operation error. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17620003 | Parameter check failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -2019,8 +2030,8 @@ createSymKeyGenerator(algName: string): SymKeyGenerator
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 801 | this operation is not supported. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 801 | This operation is not supported. |
 
 示例：
 
@@ -2080,8 +2091,8 @@ generateSymKey(callback: AsyncCallback<SymKey>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 17620001 | memory operation failed. |
-| 17620004 | invalid function call. 适用版本：26.0.0+ |
+| 17620001 | Memory operation failed. |
+| 17620004 | Invalid function call. 适用版本：26.0.0+ |
 
 示例：
 
@@ -2123,8 +2134,8 @@ generateSymKey(): Promise<SymKey>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 17620001 | memory operation failed. |
-| 17620004 | invalid function call. 适用版本：26.0.0+ |
+| 17620001 | Memory operation failed. |
+| 17620004 | Invalid function call. 适用版本：26.0.0+ |
 
 示例：
 
@@ -2171,8 +2182,8 @@ generateSymKeySync(): SymKey
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 17620001 | memory operation failed. |
-| 17620004 | invalid function call. 适用版本：26.0.0+ |
+| 17620001 | Memory operation failed. |
+| 17620004 | Invalid function call. 适用版本：26.0.0+ |
 
 示例：
 
@@ -2193,7 +2204,7 @@ function testGenerateSymKeySync() {
 
 convertKey(key: DataBlob, callback: AsyncCallback<SymKey>): void
 
-根据指定数据生成对称密钥。使用callback异步回调。
+将指定数据转换为对称密钥。使用callback异步回调。
 
 必须在使用[createSymKeyGenerator](#cryptoframeworkcreatesymkeygenerator)创建对称密钥生成器后，才能使用本函数。
 
@@ -2221,9 +2232,9 @@ convertKey(key: DataBlob, callback: AsyncCallback<SymKey>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620003 | parameter check failed. 适用版本：26.0.0+ |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620003 | Parameter check failed. 适用版本：26.0.0+ |
 
 示例：
 
@@ -2252,7 +2263,7 @@ function testConvertKey() {
 
 convertKey(key: DataBlob): Promise<SymKey>
 
-根据指定数据生成对称密钥。使用Promise异步回调。
+将指定数据转换为对称密钥。使用Promise异步回调。
 
 在使用本函数前，需先通过[createSymKeyGenerator](#cryptoframeworkcreatesymkeygenerator)创建对称密钥生成器。
 
@@ -2281,9 +2292,9 @@ convertKey(key: DataBlob): Promise<SymKey>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620003 | parameter check failed. 适用版本：26.0.0+ |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620003 | Parameter check failed. 适用版本：26.0.0+ |
 
 示例：
 
@@ -2316,7 +2327,7 @@ function testConvertKey() {
 
 convertKeySync(key: DataBlob): SymKey
 
-根据指定数据生成对称密钥。
+将指定数据转换为对称密钥。
 
 必须在使用[createSymKeyGenerator](#cryptoframeworkcreatesymkeygenerator)创建对称密钥生成器后，才能使用本函数。
 
@@ -2344,9 +2355,9 @@ convertKeySync(key: DataBlob): SymKey
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620003 | parameter check failed. 适用版本：26.0.0+ |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620003 | Parameter check failed. 适用版本：26.0.0+ |
 
 示例：
 
@@ -2363,7 +2374,7 @@ function testConvertKeySync() {
   let symKeyGenerator = cryptoFramework.createSymKeyGenerator('HMAC');
   let key = symKeyGenerator.convertKeySync(keyBlob);
   let encodedKey = key.getEncoded();
-  console.info('key encoded data：' + encodedKey.data);
+  console.info('key encoded data: ' + encodedKey.data);
 }
 ```
 
@@ -2400,9 +2411,9 @@ createAsyKeyGenerator(algName: string): AsyKeyGenerator
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 801 | this operation is not supported. |
-| 17620001 | memory operation failed. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 801 | This operation is not supported. |
+| 17620001 | Memory operation failed. |
 
 示例：
 
@@ -2454,9 +2465,9 @@ generateKeyPair(callback: AsyncCallback<KeyPair>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: Incorrect parameter types; |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: Incorrect parameter types; |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -2498,9 +2509,9 @@ generateKeyPair(): Promise<KeyPair>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -2539,9 +2550,9 @@ generateKeyPairSync(): KeyPair
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -2588,9 +2599,9 @@ convertKey(pubKey: DataBlob | null, priKey: DataBlob | null, callback: AsyncCall
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -2649,9 +2660,9 @@ convertKey(pubKey: DataBlob | null, priKey: DataBlob | null): Promise<KeyPair>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -2707,9 +2718,9 @@ convertKeySync(pubKey: DataBlob | null, priKey: DataBlob | null): KeyPair
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -2774,9 +2785,9 @@ convertPemKey(pubKey: string | null, priKey: string | null): Promise<KeyPair>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -2855,9 +2866,9 @@ convertPemKey(pubKey: string | null, priKey: string | null, password: string): P
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -2926,9 +2937,9 @@ convertPemKeySync(pubKey: string | null, priKey: string | null): KeyPair
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -3005,9 +3016,9 @@ convertPemKeySync(pubKey: string | null, priKey: string | null, password: string
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -3052,7 +3063,7 @@ function TestConvertPemKeyBySync() {
 
 createAsyKeyGeneratorBySpec(asyKeySpec: AsyKeySpec): AsyKeyGeneratorBySpec
 
-指定密钥参数，获取非对称密钥生成器实例。
+指定密钥参数，获取AsyKeyGeneratorBySpec非对称密钥生成器实例。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -3071,7 +3082,7 @@ createAsyKeyGeneratorBySpec(asyKeySpec: AsyKeySpec): AsyKeyGeneratorBySpec
 
 | 类型 | 说明 |
 | --- | --- |
-| [AsyKeyGeneratorBySpec](#asykeygeneratorbyspec10) | 返回非对称密钥生成器实例。 |
+| [AsyKeyGeneratorBySpec](#asykeygeneratorbyspec10) | 返回AsyKeyGeneratorBySpec非对称密钥生成器实例。 |
 
 错误码：
 
@@ -3079,9 +3090,9 @@ createAsyKeyGeneratorBySpec(asyKeySpec: AsyKeySpec): AsyKeyGeneratorBySpec
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 801 | this operation is not supported. |
-| 17620001 | memory operation failed. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 801 | This operation is not supported. |
+| 17620001 | Memory operation failed. |
 
 示例：
 
@@ -3119,7 +3130,7 @@ let asyKeyGeneratorBySpec = cryptoFramework.createAsyKeyGeneratorBySpec(asyKeyPa
 
 #### AsyKeyGeneratorBySpec10+
 
-非对称密钥生成器。在使用该类的方法前，需要先使用[createAsyKeyGeneratorBySpec()](#cryptoframeworkcreateasykeygeneratorbyspec10)方法构建一个AsyKeyGeneratorBySpec实例。
+AsyKeyGeneratorBySpec非对称密钥生成器。在使用该类的方法前，需要先使用[createAsyKeyGeneratorBySpec()](#cryptoframeworkcreateasykeygeneratorbyspec10)方法构建一个AsyKeyGeneratorBySpec实例。
 
 #### [h2]属性
 
@@ -3161,9 +3172,9 @@ generateKeyPair(callback: AsyncCallback<KeyPair>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: Incorrect parameter types; |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: Incorrect parameter types; |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -3235,9 +3246,9 @@ generateKeyPair(): Promise<KeyPair>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -3306,9 +3317,9 @@ generateKeyPairSync(): KeyPair
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -3385,9 +3396,9 @@ generatePriKey(callback: AsyncCallback<PriKey>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: Mandatory parameters are left unspecified; |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: Mandatory parameters are left unspecified; |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -3459,9 +3470,9 @@ generatePriKey(): Promise<PriKey>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -3530,9 +3541,9 @@ generatePriKeySync(): PriKey
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -3607,9 +3618,9 @@ generatePubKey(callback: AsyncCallback<PubKey>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: Incorrect parameter types; |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: Incorrect parameter types; |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -3681,9 +3692,9 @@ generatePubKey(): Promise<PubKey>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -3752,9 +3763,9 @@ generatePubKeySync(): PubKey
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -3804,7 +3815,7 @@ function testGeneratePubKeySync() {
 
 #### ECCKeyUtil11+
 
-用于根据椭圆曲线名称为非对称密钥对生成公共参数。
+提供ECC密钥参数生成和基于指定椭圆曲线的点转换工具。
 
 #### [h2]genECCCommonParamsSpec11+
 
@@ -3837,9 +3848,9 @@ static genECCCommonParamsSpec(curveName: string): ECCCommonParamsSpec
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 801 | this operation is not supported. |
-| 17620001 | memory operation failed. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 801 | This operation is not supported. |
+| 17620001 | Memory operation failed. |
 
 示例：
 
@@ -3889,9 +3900,9 @@ static convertPoint(curveName: string, encodedPoint: Uint8Array): Point
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -3937,9 +3948,9 @@ static getEncodedPoint(curveName: string, point: Point, format: string): Uint8Ar
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -3951,8 +3962,8 @@ async function doTest() {
   let keyPair = await generator.generateKeyPair();
   let eccPkX = keyPair.pubKey.getAsyKeySpec(cryptoFramework.AsyKeySpecItem.ECC_PK_X_BN);
   let eccPkY = keyPair.pubKey.getAsyKeySpec(cryptoFramework.AsyKeySpecItem.ECC_PK_Y_BN);
-  console.info('ECC_PK_X_BN 16：' + eccPkX.toString(16));
-  console.info('ECC_PK_Y_BN 16：' + eccPkY.toString(16));
+  console.info('ECC_PK_X_BN 16: ' + eccPkX.toString(16));
+  console.info('ECC_PK_Y_BN 16: ' + eccPkY.toString(16));
   // 将eccPkX.toString(16)结果放入x，eccPkY.toString(16)结果放入y。
   let returnPoint: cryptoFramework.Point = {
     x: BigInt('0x' + eccPkX.toString(16)),
@@ -3999,10 +4010,10 @@ static genDHCommonParamsSpec(pLen: number, skLen?: number): DHCommonParamsSpec
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 801 | this operation is not supported. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 801 | This operation is not supported. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -4051,9 +4062,9 @@ static genCipherTextBySpec(spec: SM2CipherTextSpec, mode?: string): DataBlob
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -4106,9 +4117,9 @@ static getCipherTextSpec(cipherText: DataBlob, mode?: string): SM2CipherTextSpec
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 ```
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
@@ -4165,9 +4176,9 @@ createCipher(transformation: string): Cipher
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 801 | this operation is not supported. |
-| 17620001 | memory operation failed. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 801 | This operation is not supported. |
+| 17620001 | Memory operation failed. |
 
 示例：
 
@@ -4178,7 +4189,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 let cipherAlgName = '3DES192|ECB|PKCS7';
 try {
   let cipher = cryptoFramework.createCipher(cipherAlgName);
-  console.info('cipher algName：' + cipher.algName);
+  console.info('cipher algName: ' + cipher.algName);
 } catch (error) {
   let e: BusinessError = error as BusinessError;
   console.error(`sync failed: errCode: ${e.code}, errMsg: ${e.message}`);
@@ -4228,8 +4239,8 @@ init(opMode: CryptoMode, key: Key, params: ParamsSpec | null, callback: AsyncCal
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| opMode | [CryptoMode](#cryptomode) | 是 | 加密或者解密模式。 |
-| key | [Key](#key) | 是 | 指定加密或解密的密钥。 |
+| opMode | [CryptoMode](#cryptomode) | 是 | 要执行的操作（加密或解密）。 |
+| key | [Key](#key) | 是 | 用于加密或解密的密钥。 |
 | params | [ParamsSpec](#paramsspec) | null10+ | 是 | 指定加密或解密的参数，对于ECB等没有参数的算法模式，请传入null。API 10之前只支持ParamsSpec， API 10之后增加支持null。 |
 | callback | AsyncCallback | 是 | 回调函数。当加解密初始化成功，err为undefined，否则为错误对象。 |
 
@@ -4239,11 +4250,11 @@ init(opMode: CryptoMode, key: Key, params: ParamsSpec | null, callback: AsyncCal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17620003 | parameter check failed. Possible causes: 1. Invalid opMode value; 2. Invalid iv length; 3. Invalid key length. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17620003 | Parameter check failed. Possible causes: 1. Invalid opMode value; 2. Invalid iv length; 3. Invalid key length. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]init
 
@@ -4264,8 +4275,8 @@ init(opMode: CryptoMode, key: Key, params: ParamsSpec | null): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| opMode | [CryptoMode](#cryptomode) | 是 | 加密或者解密模式。 |
-| key | [Key](#key) | 是 | 指定加密或解密的密钥。 |
+| opMode | [CryptoMode](#cryptomode) | 是 | 要执行的操作（加密或解密）。 |
+| key | [Key](#key) | 是 | 用于加密或解密的密钥。 |
 | params | [ParamsSpec](#paramsspec) | null10+ | 是 | 指定加密或解密的参数，对于ECB等没有参数的算法模式，请传入null。API 10之前仅支持ParamsSpec，从API 10开始增加对null的支持。 |
 
 返回值：
@@ -4280,11 +4291,11 @@ init(opMode: CryptoMode, key: Key, params: ParamsSpec | null): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17620003 | parameter check failed. Possible causes: 1. Invalid opMode value; 2. Invalid iv length; 3. Invalid key length. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17620003 | Parameter check failed. Possible causes: 1. Invalid opMode value; 2. Invalid iv length; 3. Invalid key length. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]initSync12+
 
@@ -4312,11 +4323,11 @@ initSync(opMode: CryptoMode, key: Key, params: ParamsSpec | null): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17620003 | parameter check failed. Possible causes: 1. Invalid opMode value; 2. Invalid iv length; 3. Invalid key length. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17620003 | Parameter check failed. Possible causes: 1. Invalid opMode value; 2. Invalid iv length; 3. Invalid key length. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]update
 
@@ -4353,11 +4364,11 @@ update(data: DataBlob, callback: AsyncCallback<DataBlob>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17620003 | parameter check failed. Possible causes: 1. The data is too long. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17620003 | Parameter check failed. Possible causes: 1. The data is too long. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]update
 
@@ -4399,11 +4410,11 @@ update(data: DataBlob): Promise<DataBlob>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17620003 | parameter check failed. Possible causes: 1. The data is too long. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17620003 | Parameter check failed. Possible causes: 1. The data is too long. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]updateSync12+
 
@@ -4437,11 +4448,11 @@ updateSync(data: DataBlob): DataBlob
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17620003 | parameter check failed. Possible causes: 1. The data is too long. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17620003 | Parameter check failed. Possible causes: 1. The data is too long. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]doFinal
 
@@ -4481,11 +4492,11 @@ doFinal(data: DataBlob | null, callback: AsyncCallback<DataBlob>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17620003 | parameter check failed. Possible causes: 1. The data is too long. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17620003 | Parameter check failed. Possible causes: 1. The data is too long. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -4586,11 +4597,11 @@ doFinal(data: DataBlob | null): Promise<DataBlob>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17620003 | parameter check failed. Possible causes: 1. The data is too long. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17620003 | Parameter check failed. Possible causes: 1. The data is too long. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -4678,11 +4689,11 @@ doFinalSync(data: DataBlob | null): DataBlob
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17620003 | parameter check failed. Possible causes: 1. The data is too long. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17620003 | Parameter check failed. Possible causes: 1. The data is too long. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -4757,11 +4768,11 @@ setCipherSpec(itemType: CipherSpecItem, itemValue: Uint8Array): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 801 | this operation is not supported. |
-| 17620001 | memory operation failed. |
-| 17620003 | parameter check failed. Possible causes: 1. Unsupported itemType. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 801 | This operation is not supported. |
+| 17620001 | Memory operation failed. |
+| 17620003 | Parameter check failed. Possible causes: 1. Unsupported itemType. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -4806,11 +4817,11 @@ getCipherSpec(itemType: CipherSpecItem): string | Uint8Array
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 801 | this operation is not supported. |
-| 17620001 | memory operation failed. |
-| 17620003 | parameter check failed. Possible causes: 1. Unsupported itemType. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 801 | This operation is not supported. |
+| 17620001 | Memory operation failed. |
+| 17620003 | Parameter check failed. Possible causes: 1. Unsupported itemType. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -4841,7 +4852,7 @@ createSign(algName: string): Sign
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| algName | string | 是 | 指定签名算法：RSA、ECC、DSA、SM210+或Ed2551911+。使用RSA PKCS #1模式时需设置摘要；使用RSA PSS模式时需设置摘要和掩码摘要。签名时，通过设置OnlySign参数可传入数据摘要仅作签名。 支持的规格详见[签名验签规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sign-sig-verify-overview)。 |
+| algName | string | 是 | 指定签名算法：RSA、ECC、DSA、SM210+、Ed2551911+和ML-DSA26.0.0+。使用RSA PKCS #1模式时需设置摘要；使用RSA PSS模式时需设置摘要和掩码摘要。签名时，通过设置OnlySign参数可传入数据摘要仅作签名。 支持的规格详见[签名验签规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sign-sig-verify-overview)。 |
 
 返回值：
 
@@ -4855,9 +4866,9 @@ createSign(algName: string): Sign
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 801 | this operation is not supported. |
-| 17620001 | memory operation failed. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 801 | This operation is not supported. |
+| 17620001 | Memory operation failed. |
 
 示例：
 
@@ -4932,10 +4943,10 @@ Sign类不支持重复初始化。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]init
 
@@ -4970,10 +4981,10 @@ Sign类不支持重复初始化。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]initSync12+
 
@@ -4999,10 +5010,10 @@ Sign类不支持重复调用initSync。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]update
 
@@ -5042,11 +5053,11 @@ OnlySign模式下，不支持update操作，需要直接使用sign传入数据�
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17620004 | invalid function call. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17620004 | Invalid function call. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]update
 
@@ -5054,7 +5065,7 @@ update(data: DataBlob): Promise<void>
 
 追加待签名数据，使用Promise异步回调方式完成更新。
 
-在使用本函数前，必须先使用[Sign](#sign)方法对[init()](#init-3)实例进行初始化。
+在使用本函数前，必须先使用[init()](#init-3)方法对[Sign](#sign)实例进行初始化。
 
 ![](./img/note_3.0-zh-cn.png) 根据数据量，可以不调用update（即[init](#init-3)完成后直接调用[sign](#sign-2)）或多次调用update。
 
@@ -5091,11 +5102,11 @@ OnlySign模式下，不支持update操作，需要直接使用sign传入数据�
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17620004 | invalid function call. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17620004 | Invalid function call. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]updateSync12+
 
@@ -5131,11 +5142,11 @@ OnlySign模式下，不支持updateSync操作，需要直接使用signSync传入
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17620004 | invalid function call. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17620004 | Invalid function call. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]sign
 
@@ -5163,10 +5174,10 @@ sign(data: DataBlob | null, callback: AsyncCallback<DataBlob>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]sign
 
@@ -5199,10 +5210,10 @@ sign(data: DataBlob | null): Promise<DataBlob>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]signSync12+
 
@@ -5232,10 +5243,10 @@ signSync(data: DataBlob | null): DataBlob
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -5439,7 +5450,7 @@ setSignSpec(itemType: SignSpecItem, itemValue: number | Uint8Array): void
 
 设置签名参数。常用签名参数可通过 [createSign](#cryptoframeworkcreatesign) 指定，其他参数则通过本接口设置。
 
-只支持RSA算法、SM2算法，从API version11开始，支持SM2算法设置签名参数。
+当前仅支持RSA算法、SM2算法，从API version 11开始，支持SM2算法设置签名参数。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -5461,10 +5472,10 @@ setSignSpec(itemType: SignSpecItem, itemValue: number | Uint8Array): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 801 | this operation is not supported. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 801 | This operation is not supported. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -5475,6 +5486,51 @@ function testSetSignSpec() {
   let signer = cryptoFramework.createSign('RSA|PSS|SHA256|MGF1_SHA256');
   let setN = 20;
   signer.setSignSpec(cryptoFramework.SignSpecItem.PSS_SALT_LEN_NUM, setN);
+}
+```
+
+#### [h2]setSignSpec
+
+setSignSpec(itemType: SignSpecItem, itemValue: number | Uint8Array | boolean): void
+
+设置签名参数。签名算法字符串参数在[createSign](#cryptoframeworkcreatesign)时指定；ML-DSA特有的参数（如是否确定性签名、是否使用外部μ哈希模式和上下文字符串）通过本接口设置。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.Security.CryptoFramework.Signature
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| itemType | [SignSpecItem](#signspecitem10) | 是 | 用于指定需要设置的签名参数。 |
+| itemValue | number | Uint8Array | boolean | 是 | 用于指定签名参数的具体值，具体参数含义请参见[SignSpecItem](#signspecitem10)。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[cryptoFramework错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-crypto-framework)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 801 | This operation is not supported. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17620003 | Parameter check failed. |
+| 17620004 | Invalid function call. |
+| 17630001 | Crypto operation error. |
+
+示例：
+
+```
+import { cryptoFramework } from '@kit.CryptoArchitectureKit';
+
+function testSetSignSpec() {
+  let signer = cryptoFramework.createSign('ML-DSA');
+  signer.setSignSpec(cryptoFramework.SignSpecItem.ML_DSA_DETERMINISTIC_BOOL, true);
 }
 ```
 
@@ -5509,10 +5565,10 @@ getSignSpec(itemType: SignSpecItem): string | number
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 801 | this operation is not supported. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 801 | This operation is not supported. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -5544,7 +5600,7 @@ createVerify(algName: string): Verify
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| algName | string | 是 | 指定签名算法：RSA、ECC、DSA、SM210+或Ed2551911+。使用RSA PKCS #1模式时需设置摘要；使用RSA PSS模式时需设置摘要和掩码摘要。使用RSA算法验签时，设置Recover参数可支持验签恢复。 支持的规格详见[签名验签规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sign-sig-verify-overview)。 |
+| algName | string | 是 | 指定签名验证算法：RSA、ECC、DSA、SM210+、Ed2551911+和ML-DSA26.0.0+。使用RSA PKCS #1模式时需设置摘要；使用RSA PSS模式时需设置摘要和掩码摘要。使用RSA算法验签时，设置Recover参数可支持验签恢复。 支持的规格详见[签名验签规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sign-sig-verify-overview)。 |
 
 返回值：
 
@@ -5558,9 +5614,9 @@ createVerify(algName: string): Verify
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 801 | this operation is not supported. |
-| 17620001 | memory operation failed. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 801 | This operation is not supported. |
+| 17620001 | Memory operation failed. |
 
 示例：
 
@@ -5627,10 +5683,10 @@ init(pubKey: PubKey, callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]init
 
@@ -5663,10 +5719,10 @@ init(pubKey: PubKey): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]initSync12+
 
@@ -5690,10 +5746,10 @@ initSync(pubKey: PubKey): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]update
 
@@ -5733,11 +5789,11 @@ OnlyVerify模式下，不支持update操作，直接使用verify传入数据即�
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17620004 | invalid function call. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17620004 | Invalid function call. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]update
 
@@ -5782,11 +5838,11 @@ OnlyVerify模式下，不支持update操作，直接使用verify传入数据即�
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17620004 | invalid function call. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17620004 | Invalid function call. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]updateSync12+
 
@@ -5802,7 +5858,7 @@ updateSync(data: DataBlob): void
 
 验签使用多次updateSync操作的示例代码详见[使用RSA密钥对分段签名验签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-rsa-sign-sig-verify-pkcs1-by-segment)，其余算法操作类似。
 
-OnlyVerify模式下，不支持update操作，需要直接使用verifySync传入数据。
+OnlyVerify模式下，不支持updateSync操作，需要直接使用verifySync传入数据。
 
 当使用DSA算法进行验签，并设置了摘要算法为NoHash时，则不支持updateSync操作，updateSync接口会返回错误码ERR_CRYPTO_OPERATION。
 
@@ -5822,11 +5878,11 @@ OnlyVerify模式下，不支持update操作，需要直接使用verifySync传入
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17620004 | invalid function call. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17620004 | Invalid function call. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]verify
 
@@ -5855,10 +5911,10 @@ verify(data: DataBlob | null, signatureData: DataBlob, callback: AsyncCallback<b
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]verify
 
@@ -5892,10 +5948,10 @@ verify(data: DataBlob | null, signatureData: DataBlob): Promise<boolean>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]verifySync12+
 
@@ -5926,10 +5982,10 @@ verifySync(data: DataBlob | null, signatureData: DataBlob): boolean
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -6187,11 +6243,11 @@ recover(signatureData: DataBlob): Promise<DataBlob | null>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17620004 | invalid function call. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17620004 | Invalid function call. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -6303,11 +6359,11 @@ recoverSync(signatureData: DataBlob): DataBlob | null
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17620004 | invalid function call. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17620004 | Invalid function call. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]setVerifySpec10+
 
@@ -6315,9 +6371,9 @@ setVerifySpec(itemType: SignSpecItem, itemValue: number): void
 
 setVerifySpec(itemType: SignSpecItem, itemValue: number | Uint8Array): void
 
-设置验签参数。常用的签名参数直接通过[createVerify](#cryptoframeworkcreateverify) 来指定，剩余参数通过本接口指定。
+设置验签参数。常用的验签参数直接通过[createVerify](#cryptoframeworkcreateverify) 来指定，剩余参数通过本接口指定。
 
-支持RSA算法和SM2算法，从API version 11开始，支持SM2算法设置验签参数。
+支持RSA算法和SM2算法，从API version 11开始，支持SM2算法设置签名验证参数。
 
 验签的参数应当与签名的参数保持一致。
 
@@ -6341,10 +6397,10 @@ setVerifySpec(itemType: SignSpecItem, itemValue: number | Uint8Array): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 801 | this operation is not supported. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 801 | This operation is not supported. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -6358,13 +6414,58 @@ function testSetVerifySpec() {
 }
 ```
 
+#### [h2]setVerifySpec
+
+setVerifySpec(itemType: SignSpecItem, itemValue: number | Uint8Array | boolean): void
+
+设置验签参数。验签算法字符串参数在[createVerify](#cryptoframeworkcreateverify)时指定；ML-DSA特有的参数（如是否使用外部μ哈希模式和上下文字符串）通过本接口设置。
+
+验签的参数应当与签名的参数保持一致。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.Security.CryptoFramework.Signature
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| itemType | [SignSpecItem](#signspecitem10) | 是 | 用于指定需要设置的验签参数。 |
+| itemValue | number | Uint8Array | boolean | 是 | 用于指定验签参数的具体值，具体参数含义请参见[SignSpecItem](#signspecitem10)。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[cryptoFramework错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-crypto-framework)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 801 | This operation is not supported. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17620003 | Parameter check failed. |
+| 17620004 | Invalid function call. |
+| 17630001 | Crypto operation error. |
+
+示例：
+
+```
+import { cryptoFramework } from '@kit.CryptoArchitectureKit';
+
+function testSetVerifySpec() {
+  let verifier = cryptoFramework.createVerify('ML-DSA');
+  verifier.setVerifySpec(cryptoFramework.SignSpecItem.ML_DSA_MU_BOOL, false);
+}
+```
+
 #### [h2]getVerifySpec10+
 
 getVerifySpec(itemType: SignSpecItem): string | number
 
 获取验签参数。当前只支持RSA算法。
-
-验签的参数应当与签名的参数保持一致。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -6391,10 +6492,10 @@ getVerifySpec(itemType: SignSpecItem): string | number
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 801 | this operation is not supported. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 801 | This operation is not supported. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -6426,7 +6527,7 @@ createKeyAgreement(algName: string): KeyAgreement
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| algName | string | 是 | 指定密钥协商算法：目前仅支持ECC，从API version 11开始，增加支持X25519和DH。 支持的规格详见[密钥协商规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-agreement-overview)。 |
+| algName | string | 是 | 指定密钥协商算法：目前仅支持ECDH，从API version 11开始，增加支持X25519和DH。 支持的规格详见[密钥协商规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-agreement-overview)。 |
 
 返回值：
 
@@ -6440,9 +6541,9 @@ createKeyAgreement(algName: string): KeyAgreement
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 801 | this operation is not supported. |
-| 17620001 | memory operation failed. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 801 | This operation is not supported. |
+| 17620001 | Memory operation failed. |
 
 示例：
 
@@ -6496,10 +6597,10 @@ generateSecret(priKey: PriKey, pubKey: PubKey, callback: AsyncCallback<DataBlob>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]generateSecret
 
@@ -6533,10 +6634,10 @@ generateSecret(priKey: PriKey, pubKey: PubKey): Promise<DataBlob>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]generateSecretSync12+
 
@@ -6567,10 +6668,10 @@ generateSecretSync(priKey: PriKey, pubKey: PubKey): DataBlob
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -6632,6 +6733,11 @@ createMd(algName: string): Md
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
+模型约束：
+
+- API版本12+：此接口可在Stage模型和FA模型下使用。
+- API版本9-11：此接口仅可在Stage模型下使用。
+
 系统能力：
 
 - API版本12+：SystemCapability.Security.CryptoFramework.MessageDigest
@@ -6655,8 +6761,8 @@ createMd(algName: string): Md
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
 
 示例：
 
@@ -6680,6 +6786,8 @@ Md类，调用Md方法进行消息摘要（Message Digest）计算。调用前�
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力：
 
 - API版本12+：SystemCapability.Security.CryptoFramework.MessageDigest
@@ -6699,6 +6807,11 @@ update(input: DataBlob, callback: AsyncCallback<void>): void
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
+模型约束：
+
+- API版本12+：此接口可在Stage模型和FA模型下使用。
+- API版本9-11：此接口仅可在Stage模型下使用。
+
 系统能力：
 
 - API版本12+：SystemCapability.Security.CryptoFramework.MessageDigest
@@ -6717,9 +6830,9 @@ update(input: DataBlob, callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]update
 
@@ -6730,6 +6843,8 @@ update(input: DataBlob): Promise<void>
 ![](./img/note_3.0-zh-cn.png) Md算法多次调用update更新的代码示例详见开发指导[分段摘要算法](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-message-digest#分段摘要算法)。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力：
 
@@ -6756,9 +6871,9 @@ update(input: DataBlob): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]updateSync12+
 
@@ -6769,6 +6884,8 @@ updateSync(input: DataBlob): void
 ![](./img/note_3.0-zh-cn.png) Md算法多次调用updateSync更新的代码示例详见开发指导[分段摘要算法](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-message-digest#分段摘要算法)。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
+
+模型约束： 此接口可在Stage模型和FA模型下使用。
 
 系统能力： SystemCapability.Security.CryptoFramework.MessageDigest
 
@@ -6784,9 +6901,9 @@ updateSync(input: DataBlob): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]digest
 
@@ -6795,6 +6912,11 @@ digest(callback: AsyncCallback<DataBlob>): void
 返回Md的计算结果。使用callback异步回调。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
+
+模型约束：
+
+- API版本12+：此接口可在Stage模型和FA模型下使用。
+- API版本9-11：此接口仅可在Stage模型下使用。
 
 系统能力：
 
@@ -6813,8 +6935,8 @@ digest(callback: AsyncCallback<DataBlob>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -6841,6 +6963,8 @@ digest(): Promise<DataBlob>
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力：
 
 - API版本12+：SystemCapability.Security.CryptoFramework.MessageDigest
@@ -6860,8 +6984,8 @@ digest(): Promise<DataBlob>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -6971,6 +7095,8 @@ digestSync(): DataBlob
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
+模型约束： 此接口可在Stage模型和FA模型下使用。
+
 系统能力： SystemCapability.Security.CryptoFramework.MessageDigest
 
 返回值：
@@ -6985,10 +7111,10 @@ digestSync(): DataBlob
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -7085,6 +7211,11 @@ getMdLength(): number
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
+模型约束：
+
+- API版本12+：此接口可在Stage模型和FA模型下使用。
+- API版本9-11：此接口仅可在Stage模型下使用。
+
 系统能力：
 
 - API版本12+：SystemCapability.Security.CryptoFramework.MessageDigest
@@ -7102,7 +7233,7 @@ getMdLength(): number
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 17630001 | crypto operation error. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -7148,8 +7279,8 @@ createMac(algName: string): Mac
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
 
 示例：
 
@@ -7182,13 +7313,13 @@ createMac(macSpec: MacSpec): Mac
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| macSpec | [MacSpec](#macspec18) | 是 | 根据消息验证码的不同算法，指定入参结构体，支持算法请参考[MAC消息认证码算法规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-compute-mac-overview)。 |
+| macSpec | [MacSpec](#macspec18) | 是 | 根据消息认证码的不同算法，指定入参参数，支持算法请参考[MAC消息认证码算法规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-compute-mac-overview)。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| Mac | 返回由指定入参结构体生成的[Mac](#mac)对象。 |
+| Mac | 返回由指定入参参数生成的[Mac](#mac)对象。 |
 
 错误码：
 
@@ -7196,10 +7327,10 @@ createMac(macSpec: MacSpec): Mac
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -7267,9 +7398,9 @@ init(key: SymKey, callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]init
 
@@ -7302,9 +7433,9 @@ init(key: SymKey): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]initSync12+
 
@@ -7328,9 +7459,9 @@ initSync(key: SymKey): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]update
 
@@ -7360,9 +7491,9 @@ update(input: DataBlob, callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]update
 
@@ -7397,9 +7528,9 @@ update(input: DataBlob): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]updateSync12+
 
@@ -7425,15 +7556,15 @@ updateSync(input: DataBlob): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 #### [h2]doFinal
 
 doFinal(callback: AsyncCallback<DataBlob>): void
 
-返回Mac的计算结果。使用callback异步回调。
+完成MAC计算并获取MAC计算结果。使用callback异步回调。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -7446,7 +7577,7 @@ doFinal(callback: AsyncCallback<DataBlob>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback | 是 | 回调函数，用于获取Mac的计算结果。当Mac计算成功，err为undefined，data为获取到的Mac计算结果；否则为错误对象。 |
+| callback | AsyncCallback | 是 | 回调函数，用于获取Mac的计算结果。当MAC计算成功，err为undefined，data为获取到的Mac计算结果；否则为错误对象。 |
 
 错误码：
 
@@ -7454,8 +7585,8 @@ doFinal(callback: AsyncCallback<DataBlob>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -7486,7 +7617,7 @@ function hmacByCallback() {
 
 doFinal(): Promise<DataBlob>
 
-返回Mac的计算结果。使用Promise异步回调。
+完成MAC计算并获取MAC计算结果。使用Promise异步回调。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -7499,7 +7630,7 @@ doFinal(): Promise<DataBlob>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，返回Mac的计算结果。 |
+| Promise | Promise对象，返回MAC计算结果。 |
 
 错误码：
 
@@ -7507,8 +7638,8 @@ doFinal(): Promise<DataBlob>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -7535,7 +7666,7 @@ async function hmacByPromise() {
 
 doFinalSync(): DataBlob
 
-通过同步方式返回Mac的计算结果。
+通过同步方式完成MAC计算并获取MAC计算结果。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -7545,7 +7676,7 @@ doFinalSync(): DataBlob
 
 | 类型 | 说明 |
 | --- | --- |
-| [DataBlob](#datablob) | 返回Mac的计算结果。 |
+| [DataBlob](#datablob) | 返回MAC计算结果。 |
 
 错误码：
 
@@ -7553,10 +7684,10 @@ doFinalSync(): DataBlob
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -7604,7 +7735,7 @@ getMacLength(): number
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 17630001 | crypto operation error. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -7651,6 +7782,11 @@ createRandom(): Random
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
+模型约束：
+
+- API版本12+：此接口可在Stage模型和FA模型下使用。
+- API版本9-11：此接口仅可在Stage模型下使用。
+
 系统能力：
 
 - API版本12+：SystemCapability.Security.CryptoFramework.Rand
@@ -7668,7 +7804,7 @@ createRandom(): Random
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 17620001 | memory operation failed. |
+| 17620001 | Memory operation failed. |
 
 示例：
 
@@ -7692,6 +7828,8 @@ Random类，调用Random方法生成随机数。调用前，需要通过[createR
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力：
 
 - API版本12+：SystemCapability.Security.CryptoFramework.Rand
@@ -7708,6 +7846,11 @@ generateRandom(len: number, callback: AsyncCallback<DataBlob>): void
 生成指定长度的随机数。使用callback异步回调。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
+
+模型约束：
+
+- API版本12+：此接口可在Stage模型和FA模型下使用。
+- API版本9-11：此接口仅可在Stage模型下使用。
 
 系统能力：
 
@@ -7727,9 +7870,9 @@ generateRandom(len: number, callback: AsyncCallback<DataBlob>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -7753,6 +7896,8 @@ generateRandom(len: number): Promise<DataBlob>
 生成指定长度的随机数。使用promise异步回调。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力：
 
@@ -7779,9 +7924,9 @@ generateRandom(len: number): Promise<DataBlob>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -7873,6 +8018,11 @@ generateRandomSync(len: number): DataBlob
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
+模型约束：
+
+- API版本12+：此接口可在Stage模型和FA模型下使用。
+- API版本10-11：此接口仅可在Stage模型下使用。
+
 系统能力：
 
 - API版本12+：SystemCapability.Security.CryptoFramework.Rand
@@ -7896,9 +8046,9 @@ generateRandomSync(len: number): DataBlob
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -7996,6 +8146,8 @@ enableHardwareEntropy(): void
 
 元服务API： 从API version 21开始，该接口支持在元服务中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.Security.CryptoFramework.Rand
 
 错误码：
@@ -8004,10 +8156,10 @@ enableHardwareEntropy(): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 801 | this operation is not supported. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17630001 | crypto operation error. |
+| 801 | This operation is not supported. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -8040,6 +8192,11 @@ setSeed(seed: DataBlob): void
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
+模型约束：
+
+- API版本12+：此接口可在Stage模型和FA模型下使用。
+- API版本9-11：此接口仅可在Stage模型下使用。
+
 系统能力：
 
 - API版本12+：SystemCapability.Security.CryptoFramework.Rand
@@ -8057,7 +8214,7 @@ setSeed(seed: DataBlob): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 17620001 | memory operation failed. |
+| 17620001 | Memory operation failed. |
 
 示例：
 
@@ -8112,9 +8269,9 @@ createKdf(algName: string): Kdf
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 801 | this operation is not supported. |
-| 17620001 | memory operation failed. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 801 | This operation is not supported. |
+| 17620001 | Memory operation failed. |
 
 示例：
 
@@ -8169,10 +8326,10 @@ generateSecret(params: KdfSpec, callback: AsyncCallback<DataBlob>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620003 | parameter check failed. Possible causes: 1. Invalid key length in the params; 2. Invalid info length in the params; 3. Invalid keySize in the params. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620003 | Parameter check failed. Possible causes: 1. Invalid key length in the params; 2. Invalid info length in the params; 3. Invalid keySize in the params. 适用版本：22+ |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -8249,10 +8406,10 @@ generateSecret(params: KdfSpec): Promise<DataBlob>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620003 | parameter check failed. Possible causes: 1. Invalid key length in the params; 2. Invalid info length in the params; 3. Invalid keySize in the params. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620003 | Parameter check failed. Possible causes: 1. Invalid key length in the params; 2. Invalid info length in the params; 3. Invalid keySize in the params. 适用版本：22+ |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -8326,11 +8483,11 @@ generateSecretSync(params: KdfSpec): DataBlob
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17620003 | parameter check failed. Possible causes: 1. Invalid key length in the params; 2. Invalid info length in the params; 3. Invalid keySize in the params. |
-| 17630001 | crypto operation error. |
+| 401 | Invalid parameters. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17620003 | Parameter check failed. Possible causes: 1. Invalid key length in the params; 2. Invalid info length in the params; 3. Invalid keySize in the params. 适用版本：22+ |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -8390,7 +8547,7 @@ static genEccSignatureSpec(data: Uint8Array): EccSignatureSpec
 
 | 类型 | 说明 |
 | --- | --- |
-| [EccSignatureSpec](#eccsignaturespec20) | 包含r和s的数据结构体。 |
+| [EccSignatureSpec](#eccsignaturespec20) | 包含r和s的数据对象。 |
 
 错误码：
 
@@ -8398,10 +8555,10 @@ static genEccSignatureSpec(data: Uint8Array): EccSignatureSpec
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17620003 | parameter check failed. Possible causes: 1. The length of the data parameter is 0 or too large. |
-| 17630001 | crypto operation error. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17620003 | Parameter check failed. Possible causes: 1. The length of the data parameter is 0 or too large. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -8452,10 +8609,10 @@ static genEccSignature(spec: EccSignatureSpec): Uint8Array;
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 17620001 | memory operation failed. |
-| 17620002 | failed to convert parameters between arkts and c. |
-| 17620003 | parameter check failed. Possible causes: 1. The r or s value of the spec parameter is 0 or too large. |
-| 17630001 | crypto operation error. |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17620003 | Parameter check failed. Possible causes: 1. The r or s value of the spec parameter is 0 or too large. |
+| 17630001 | Crypto operation error. |
 
 示例：
 
@@ -8476,6 +8633,349 @@ function testGenEccSignature() {
   } catch (err) {
     let e: BusinessError = err as BusinessError;
     console.error(`ecc failed: errCode: ${e.code}, errMsg: ${e.message}`);
+  }
+}
+```
+
+#### KemAlgNameId
+
+表示密钥封装（Kem）算法名称的枚举。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.Security.CryptoFramework.Cipher
+
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| ML_KEM_512 | 0 | 表示ML-KEM-512算法名称ID。 |
+| ML_KEM_768 | 1 | 表示ML-KEM-768算法名称ID。 |
+| ML_KEM_1024 | 2 | 表示ML-KEM-1024算法名称ID。 |
+
+#### KemEncapResult
+
+表示密钥封装的结果。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.Security.CryptoFramework.Cipher
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| sharedSecret | Uint8Array | 否 | 否 | 密钥封装生成的共享密钥。 |
+| wrappedKey | Uint8Array | 否 | 否 | 密钥封装生成的封装密钥。 |
+
+#### cryptoFramework.createKem
+
+createKem(algNameId: KemAlgNameId): Kem
+
+生成Kem实例，用于密钥封装和解封装操作。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.Security.CryptoFramework.Cipher
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| algNameId | [KemAlgNameId](#kemalgnameid) | 是 | 指定密钥封装算法的名称ID。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| [Kem](#kem) | 返回根据输入算法生成的Kem对象。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[cryptoFramework错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-crypto-framework)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17620003 | Parameter check failed. |
+| 17630001 | Crypto operation error. |
+
+示例：
+
+```
+import { cryptoFramework } from '@kit.CryptoArchitectureKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+function createKem() {
+  try {
+    let kem = cryptoFramework.createKem(cryptoFramework.KemAlgNameId.ML_KEM_768);
+    console.info('create kem success');
+  } catch (err) {
+    let e: BusinessError = err as BusinessError;
+    console.error(`create kem failed: errCode: ${e.code}, errMsg: ${e.message}`);
+  }
+}
+```
+
+#### Kem
+
+Kem类，使用密钥封装方法之前需要创建该类的实例进行操作，通过[createKem](#cryptoframeworkcreatekem)方法构造此实例。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Security.CryptoFramework.Cipher
+
+#### [h2]encapsulate
+
+encapsulate(pubKey: PubKey, ikme: Uint8Array | null): Promise<KemEncapResult>
+
+基于传入的公钥进行密钥封装。使用Promise异步回调。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.Security.CryptoFramework.Cipher
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| pubKey | [PubKey](#pubkey) | 是 | 用于密钥封装的公钥。 |
+| ikme | Uint8Array | null | 是 | 用于生成临时密钥的ikme。若传入null，则由算法库内部随机生成。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，返回密钥封装的结果。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[cryptoFramework错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-crypto-framework)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17620003 | Parameter check failed. |
+| 17630001 | Crypto operation error. |
+
+示例：
+
+```
+import { cryptoFramework } from '@kit.CryptoArchitectureKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+async function kemEncapsulate() {
+  try {
+    let asyKeyGenerator = cryptoFramework.createAsyKeyGenerator('ML-KEM-768');
+    let keyPair = await asyKeyGenerator.generateKeyPair();
+    let kem = cryptoFramework.createKem(cryptoFramework.KemAlgNameId.ML_KEM_768);
+    let encapResult = await kem.encapsulate(keyPair.pubKey, null);
+    console.info('encapsulate success');
+    console.info('sharedSecret length: ' + encapResult.sharedSecret.length);
+    console.info('wrappedKey length: ' + encapResult.wrappedKey.length);
+  } catch (err) {
+    let e: BusinessError = err as BusinessError;
+    console.error(`encapsulate failed: errCode: ${e.code}, errMsg: ${e.message}`);
+  }
+}
+```
+
+#### [h2]encapsulateSync
+
+encapsulateSync(pubKey: PubKey, ikme: Uint8Array | null): KemEncapResult
+
+以同步方式基于传入的公钥进行密钥封装。
+
+![](./img/note_3.0-zh-cn.png) 建议优先使用异步接口[encapsulate](#encapsulate)，同步接口可能因系统繁忙、负载高等原因耗时较长而阻塞主线程，建议在子线程中调用同步接口以避免阻塞主线程。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.Security.CryptoFramework.Cipher
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| pubKey | [PubKey](#pubkey) | 是 | 用于密钥封装的公钥。 |
+| ikme | Uint8Array | null | 是 | 用于生成临时密钥的ikme。若传入null，则由算法库内部随机生成。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| [KemEncapResult](#kemencapresult) | 密钥封装的结果。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[cryptoFramework错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-crypto-framework)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17620003 | Parameter check failed. |
+| 17630001 | Crypto operation error. |
+
+示例：
+
+```
+import { cryptoFramework } from '@kit.CryptoArchitectureKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+function kemEncapsulateSync() {
+  try {
+    let asyKeyGenerator = cryptoFramework.createAsyKeyGenerator('ML-KEM-768');
+    let keyPair = asyKeyGenerator.generateKeyPairSync();
+    let kem = cryptoFramework.createKem(cryptoFramework.KemAlgNameId.ML_KEM_768);
+    let encapResult = kem.encapsulateSync(keyPair.pubKey, null);
+    console.info('encapsulateSync success');
+    console.info('sharedSecret length: ' + encapResult.sharedSecret.length);
+    console.info('wrappedKey length: ' + encapResult.wrappedKey.length);
+  } catch (err) {
+    let e: BusinessError = err as BusinessError;
+    console.error(`encapsulateSync failed: errCode: ${e.code}, errMsg: ${e.message}`);
+  }
+}
+```
+
+#### [h2]decapsulate
+
+decapsulate(priKey: PriKey, wrappedKey: Uint8Array): Promise<Uint8Array>
+
+基于传入的私钥和封装密钥进行密钥解封装。使用Promise异步回调。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.Security.CryptoFramework.Cipher
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| priKey | [PriKey](#prikey) | 是 | 用于密钥解封装的私钥。 |
+| wrappedKey | Uint8Array | 是 | 密钥封装时生成的封装密钥（wrappedKey）。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，返回密钥解封装得到的共享密钥。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[cryptoFramework错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-crypto-framework)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17620003 | Parameter check failed. |
+| 17630001 | Crypto operation error. |
+
+示例：
+
+```
+import { cryptoFramework } from '@kit.CryptoArchitectureKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+async function kemDecapsulate() {
+  try {
+    let asyKeyGenerator = cryptoFramework.createAsyKeyGenerator('ML-KEM-768');
+    let keyPair = await asyKeyGenerator.generateKeyPair();
+    let kem = cryptoFramework.createKem(cryptoFramework.KemAlgNameId.ML_KEM_768);
+    let encapResult = await kem.encapsulate(keyPair.pubKey, null);
+    let sharedSecret = await kem.decapsulate(keyPair.priKey, encapResult.wrappedKey);
+    console.info('decapsulate success');
+    console.info('sharedSecret length: ' + sharedSecret.length);
+  } catch (err) {
+    let e: BusinessError = err as BusinessError;
+    console.error(`decapsulate failed: errCode: ${e.code}, errMsg: ${e.message}`);
+  }
+}
+```
+
+#### [h2]decapsulateSync
+
+decapsulateSync(priKey: PriKey, wrappedKey: Uint8Array): Uint8Array
+
+以同步方式基于传入的私钥和封装的密钥进行密钥解封装。
+
+![](./img/note_3.0-zh-cn.png) 建议优先使用异步接口[decapsulate](#decapsulate)，同步接口可能因系统繁忙、负载高等原因耗时较长而阻塞主线程，建议在子线程中调用同步接口以避免阻塞主线程。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.Security.CryptoFramework.Cipher
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| priKey | [PriKey](#prikey) | 是 | 用于密钥解封装的私钥。 |
+| wrappedKey | Uint8Array | 是 | 密钥封装时生成的封装密钥（wrappedKey）。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Uint8Array | 密钥解封装得到的共享密钥。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[cryptoFramework错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-crypto-framework)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 17620001 | Memory operation failed. |
+| 17620002 | Failed to obtain the native object or convert parameters. |
+| 17620003 | Parameter check failed. |
+| 17630001 | Crypto operation error. |
+
+示例：
+
+```
+import { cryptoFramework } from '@kit.CryptoArchitectureKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+function kemDecapsulateSync() {
+  try {
+    let asyKeyGenerator = cryptoFramework.createAsyKeyGenerator('ML-KEM-768');
+    let keyPair = asyKeyGenerator.generateKeyPairSync();
+    let kem = cryptoFramework.createKem(cryptoFramework.KemAlgNameId.ML_KEM_768);
+    let encapResult = kem.encapsulateSync(keyPair.pubKey, null);
+    let sharedSecret = kem.decapsulateSync(keyPair.priKey, encapResult.wrappedKey);
+    console.info('decapsulateSync success');
+    console.info('sharedSecret length: ' + sharedSecret.length);
+  } catch (err) {
+    let e: BusinessError = err as BusinessError;
+    console.error(`decapsulateSync failed: errCode: ${e.code}, errMsg: ${e.message}`);
   }
 }
 ```

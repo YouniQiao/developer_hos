@@ -1,18 +1,16 @@
 ---
-
 title: "显隐控制"
 upstream_id: "harmonyos-references/ts-universal-attributes-visibility"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T00:57:37.495676"
-content_hash: "637711a39e28"
+content_hash: "3acdce8e9292"
+synced_at: "2026-07-28T16:42:01.570987"
 ---
-
 
 # 显隐控制
 
-控制组件是否可见。
+控制组件是否可见，适用于根据业务状态动态调整组件显示效果和页面布局的场景。
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
 #### visibility
 
@@ -36,7 +34,7 @@ visibility(value: Visibility): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于支持属性链式调用。 |
 
 #### 示例
 
@@ -51,19 +49,19 @@ struct VisibilityExample {
     Column() {
       Column() {
         // 隐藏不参与占位
-        Text('None').fontSize(9).width('90%').fontColor(0xCCCCCC)
-        Row().visibility(Visibility.None).width('90%').height(80).backgroundColor(0xAFEEEE)
+        Text('None').fontSize(9).width('90%').fontColor(0xCCCCCC);
+        Row().visibility(Visibility.None).width('90%').height(80).backgroundColor(0xAFEEEE);
 
         // 隐藏参与占位
-        Text('Hidden').fontSize(9).width('90%').fontColor(0xCCCCCC)
-        Row().visibility(Visibility.Hidden).width('90%').height(80).backgroundColor(0xAFEEEE)
+        Text('Hidden').fontSize(9).width('90%').fontColor(0xCCCCCC);
+        Row().visibility(Visibility.Hidden).width('90%').height(80).backgroundColor(0xAFEEEE);
 
         // 正常显示，组件默认的显示模式
-        Text('Visible').fontSize(9).width('90%').fontColor(0xCCCCCC)
-        Row().visibility(Visibility.Visible).width('90%').height(80).backgroundColor(0xAFEEEE)
-      }.width('90%').border({ width: 1 })
-    }.width('100%').margin({ top: 5 })
+        Text('Visible').fontSize(9).width('90%').fontColor(0xCCCCCC);
+        Row().visibility(Visibility.Visible).width('90%').height(80).backgroundColor(0xAFEEEE);
+      }.width('90%').border({ width: 1 });
+    }.width('100%').margin({ top: 5 });
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230150.png)
+ ![](./img/zh-cn_image_0000002655848334.png)

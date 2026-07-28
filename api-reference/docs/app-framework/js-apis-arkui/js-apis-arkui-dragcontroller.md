@@ -2,13 +2,13 @@
 title: "@ohos.arkui.dragController (DragController)"
 upstream_id: "harmonyos-references/js-apis-arkui-dragcontroller"
 catalog: "harmonyos-references"
-content_hash: "527fc274667a"
-synced_at: "2026-07-09T00:57:28.332160"
+content_hash: "0311f7ca7157"
+synced_at: "2026-07-28T16:40:58.915455"
 ---
 
 # @ohos.arkui.dragController (DragController)
 
-本模块提供发起主动拖拽的能力，当应用接收到触摸或长按等事件时可以主动发起拖拽的动作，并在其中携带拖拽信息。
+本模块提供发起主动拖拽的能力，当应用接收到触摸或长按等事件时可以主动发起拖拽动作，并在拖拽过程中携带拖拽信息，适用于应用需要自主控制拖拽发起时机、拖拽预览效果和拖拽数据传递的场景，帮助应用实现更灵活的自定义拖拽交互。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -25,7 +25,7 @@ import { dragController } from '@kit.ArkUI';
 
 #### dragController.executeDrag(deprecated)
 
-executeDrag(custom: CustomBuilder | DragItemInfo, dragInfo: DragInfo,callback:AsyncCallback<DragEventParam>): void
+executeDrag(custom: CustomBuilder | DragItemInfo, dragInfo: DragInfo, callback: AsyncCallback<DragEventParam>): void
 
 主动发起拖拽能力，传入拖拽发起后跟手效果所拖拽的对象以及携带拖拽信息。使用callback异步回调。
 
@@ -74,9 +74,9 @@ struct DragControllerPage {
   @State text: string = ''
 
   @Builder
-  DraggingBuilder() {
+  draggingBuilder() {
     Column() {
-      Text("DraggingBuilder")
+      Text('DraggingBuilder')
         .fontColor(Color.White)
         .fontSize(12)
     }
@@ -92,7 +92,7 @@ struct DragControllerPage {
         .onTouch((event?: TouchEvent) => {
           if (event) {
             if (event.type == TouchType.Down) {
-              let text = new unifiedDataChannel.PlainText()
+              let text = new unifiedDataChannel.PlainText();
               text.textContent = 'drag text'
               text.abstract = 'abstract'
               let unifiedData = new unifiedDataChannel.UnifiedData(text)
@@ -135,7 +135,7 @@ struct DragControllerPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732175.gif)
+ ![](./img/zh-cn_image_0000002686087675.gif)
 
 #### dragController.executeDrag(deprecated)
 
@@ -163,7 +163,7 @@ executeDrag(custom: CustomBuilder | DragItemInfo, dragInfo: DragInfo): Promise<D
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，拖拽结束返回结果的回调。 |
+| Promise | Promise对象，拖拽结束时返回结果。 |
 
 错误码：
 
@@ -284,7 +284,7 @@ struct DragControllerPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253054.gif)
+ ![](./img/zh-cn_image_0000002685927847.gif)
 
 #### DragInfo
 
@@ -295,12 +295,12 @@ struct DragControllerPage {
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | pointerId | number | 否 | 否 | 设置启动拖拽时屏幕上触摸点的Id。取值范围为[0, 9]的整数。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| data | [unifiedDataChannel.UnifiedData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-unifieddatachannel#unifieddata) | 否 | 是 | 设置拖拽过程中携带的数据。 默认值：空 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| data | [unifiedDataChannel.UnifiedData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-unifieddatachannel#unifieddata) | 否 | 是 | 设置拖拽过程中携带的数据。与dataLoadParams同时设置时，dataLoadParams生效。 默认值：空 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | extraParams | string | 否 | 是 | 设置拖拽事件额外信息，具体功能暂未实现。 默认值：空 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | touchPoint11+ | [TouchPoint](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#touchpoint11) | 否 | 是 | 配置跟手点坐标。不配置时，左右居中，顶部向下偏移20%。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| previewOptions11+ | [DragPreviewOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-drag-drop#dragpreviewoptions11-1) | 否 | 是 | 设置拖拽过程中背板图处理模式及数量角标的显示。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| previewOptions11+ | [DragPreviewOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-drag-drop#dragpreviewoptions11-1) | 否 | 是 | 设置拖拽过程中背板图处理模式及数量角标的显示。当需要自定义拖拽预览背板效果或数量角标显示方式时传入；不传入时使用系统默认的拖拽预览背板处理模式和数量角标显示策略。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | autoHideComponentUniqueIds | number | number[] | 否 | 是 | 设置在主动拖拽过程中由系统自动隐藏的组件uniqueId，支持传入单个uniqueId或数组。 主动拖拽成功发起后，系统会在显示拖拽预览窗口前自动隐藏目标组件。 若主动拖拽源本身也需要被隐藏，需要同时传入其uniqueId。 组件的uniqueId可通过[UIContext.getFrameNodeById()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getframenodebyid12)配合[FrameNode.getUniqueId()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#getuniqueid12)获取。 开发者需要在拖拽结束回调中按需恢复组件显示状态。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| dataLoadParams20+ | [unifiedDataChannel.DataLoadParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-unifieddatachannel#dataloadparams20) | 否 | 是 | 设置拖起方延迟提供数据。调用此方法向系统提供数据加载参数，而非直接传入完整的数据对象。当用户将数据拖拽至目标应用程序并释放时，系统将使用此参数从起拖方请求实际数据。与data同时设置时，dataLoadParams生效。 默认值：空 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| dataLoadParams20+ | [unifiedDataChannel.DataLoadParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-unifieddatachannel#dataloadparams20) | 否 | 是 | 设置起拖方延迟提供数据。调用此方法向系统提供数据加载参数，而非直接传入完整的数据对象。当用户将数据拖拽至目标应用程序并释放时，系统将使用此参数从起拖方请求实际数据。与data同时设置时，dataLoadParams生效。 默认值：空 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 
 示例：
 
@@ -564,10 +564,10 @@ struct DragControllerPage {
               })
               this.dragAction.startDrag().then(() => {
               }).catch((err: Error) => {
-                console.error(`start drag Error:${err.message}`);
+                console.error(`Failed to start drag. Code: ${err.code}, message: ${err.message}`);
               })
             } catch (err) {
-              console.error(`create dragAction Error:${err.message}`);
+              console.error(`Failed to create dragAction. Code: ${err.code}, message: ${err.message}`);
             }
           }
         }
@@ -576,7 +576,7 @@ struct DragControllerPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612237.gif)
+ ![](./img/zh-cn_image_0000002656008168.gif)
 
 #### DragAction11+
 
@@ -590,7 +590,7 @@ struct DragControllerPage {
 
 startDrag(): Promise<void>
 
-启动拖拽服务。使用Promise异步回调。
+启动拖拽服务。适用于通过createDragAction创建DragAction对象后，主动发起多对象拖拽或自定义拖拽背板的场景。使用Promise异步回调。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -623,9 +623,9 @@ struct DragControllerPage {
   customBuilders: Array<CustomBuilder | DragItemInfo> = new Array<CustomBuilder | DragItemInfo>();
 
   @Builder
-  DraggingBuilder() {
+  draggingBuilder() {
     Column() {
-      Text("DraggingBuilder")
+      Text('DraggingBuilder')
         .fontColor(Color.White)
         .fontSize(12)
     }
@@ -641,7 +641,7 @@ struct DragControllerPage {
           if (event.type == TouchType.Down) {
             this.customBuilders.splice(0, this.customBuilders.length);
             this.customBuilders.push(() => {
-              this.DraggingBuilder()
+              this.draggingBuilder();
             });
             let text = new unifiedDataChannel.PlainText()
             text.textContent = 'drag text'
@@ -657,15 +657,15 @@ struct DragControllerPage {
                 .createDragAction(this.customBuilders,
                   dragInfo) // 建议使用 this.getUIContext().getDragController().createDragAction()接口
               if (!this.dragAction) {
-                console.info("listener dragAction is null");
+                console.info('listener dragAction is null');
                 return;
               }
               this.dragAction.startDrag().then(() => {
               }).catch((err: Error) => {
-                console.error(`start drag Error: ${err.message}`);
+                console.error(`Failed to start drag. Message: ${err.message}`);
               })
             } catch (err) {
-              console.error(`create dragAction Error: ${err.message}`);
+              console.error(`Failed to create dragAction. Code: ${err.code}, message: ${err.message}`);
             }
           }
         }
@@ -676,11 +676,11 @@ struct DragControllerPage {
 ```
  示例2：
 
-从API version 20开始，在[DragInfo](#draginfo)中配置dataLoadParams，设置拖起方延迟提供数据。
+从API version 20开始，在[DragInfo](#draginfo)中配置dataLoadParams，设置起拖方延迟提供数据。
 
 ```
 import { unifiedDataChannel, uniformTypeDescriptor, uniformDataStruct } from '@kit.ArkData';
-import { fileUri, fileIo as fileIo } from '@kit.CoreFileKit';
+import { fileUri, fileIo } from '@kit.CoreFileKit';
 import { common } from '@kit.AbilityKit';
 import { dragController } from '@kit.ArkUI';
 
@@ -689,10 +689,10 @@ import { dragController } from '@kit.ArkUI';
 struct ImageExample {
   private dragAction: dragController.DragAction | null = null;
   customBuilders: Array<CustomBuilder | DragItemInfo> = new Array<CustomBuilder | DragItemInfo>();
-  @State uri: string = "";
+  @State uri: string = '';
   @State blockArr: string[] = [];
   uiContext = this.getUIContext();
-  udKey: string = '';
+  dataLoadingKey: string = '';
 
   @Builder
   DraggingBuilder() {
@@ -711,10 +711,11 @@ struct ImageExample {
               if (event.type == TouchType.Down) {
                 this.customBuilders.splice(0, this.customBuilders.length);
                 this.customBuilders.push(() => {
-                  this.DraggingBuilder()
+                  this.DraggingBuilder();
                 });
                 const context: Context | undefined = this.uiContext.getHostContext();
                 if (context) {
+                  // 延迟加载拖拽数据时，将rawfile中的视频复制到应用文件目录并构造UnifiedData返回。
                   let loadHandler: unifiedDataChannel.DataLoadHandler = () => {
                     let data =
                       context.resourceManager.getRawFdSync('test1.mp4');
@@ -727,14 +728,14 @@ struct ImageExample {
                     fileIo.closeSync(file.fd);
                     context.resourceManager.closeRawFdSync('test1.mp4')
                     this.uri = fileUri.getUriFromPath(filePath);
-                    let videoMp: uniformDataStruct.FileUri = {
+                    let videoFileUri: uniformDataStruct.FileUri = {
                       uniformDataType: 'general.file-uri',
                       oriUri: this.uri,
                       fileType: 'general.video',
                     }
                     let unifiedRecord = new unifiedDataChannel.UnifiedRecord();
                     let unifiedData = new unifiedDataChannel.UnifiedData();
-                    unifiedRecord.addEntry(uniformTypeDescriptor.UniformDataType.FILE_URI, videoMp);
+                    unifiedRecord.addEntry(uniformTypeDescriptor.UniformDataType.FILE_URI, videoFileUri);
                     unifiedData.addRecord(unifiedRecord);
                     return unifiedData;
                   }
@@ -748,7 +749,7 @@ struct ImageExample {
                     }
                   }
 
-                  let func = (dragAndDropInfo: dragController.DragAndDropInfo) => {
+                  let statusChangeCallback = (dragAndDropInfo: dragController.DragAndDropInfo) => {
                     console.info(`ndq Register to listen on drag status ${JSON.stringify(dragAndDropInfo)}`);
                   }
                   try {
@@ -760,7 +761,7 @@ struct ImageExample {
                       console.info("listener dragAction is null");
                       return;
                     }
-                    this.dragAction.on('statusChange', func);
+                    this.dragAction.on('statusChange', statusChangeCallback);
                     this.dragAction.startDrag().then(() => {
                     }).catch((err: Error) => {
                       console.error(`start drag Error: ${err.message}`);
@@ -822,8 +823,8 @@ struct ImageExample {
               dataProgressListener: progressListener,
             }
             try {
-              this.udKey = (event as DragEvent).startDataLoading(options);
-              console.info('udKey: ', this.udKey);
+              this.dataLoadingKey = (event as DragEvent).startDataLoading(options);
+              console.info('dataLoadingKey: ', this.dataLoadingKey);
             } catch (e) {
               console.error(`startDataLoading errorCode: ${e.code}, errorMessage: ${e.message}`);
             }
@@ -837,7 +838,7 @@ struct ImageExample {
       Button('取消数据传输')
         .onClick(() => {
           try {
-            this.getUIContext().getDragController().cancelDataLoading(this.udKey);
+            this.getUIContext().getDragController().cancelDataLoading(this.dataLoadingKey);
           } catch (e) {
             console.error(`cancelDataLoading errorCode: ${e.code}, errorMessage: ${e.message}`);
           }
@@ -847,13 +848,13 @@ struct ImageExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631412944.gif)
+ ![](./img/zh-cn_image_0000002655848248.gif)
 
 #### [h2]on('statusChange')11+
 
 on(type: 'statusChange', callback: Callback<[DragAndDropInfo](#draganddropinfo11)>): void
 
-注册监听拖拽状态改变事件。
+注册监听拖拽状态改变事件，用于在主动拖拽开始或结束时获取拖拽状态，并执行更新UI、记录状态或清理资源等操作。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -864,7 +865,7 @@ on(type: 'statusChange', callback: Callback<[DragAndDropInfo](#draganddropinfo11
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 监听事件，固定为'statusChange'，即注册监听拖拽状态改变事件。 |
-| callback | Callback | 是 | 回调函数，返回当前的[DragAndDropInfo](#draganddropinfo11)组件状态。 |
+| callback | Callback | 是 | 回调函数，返回当前的[DragAndDropInfo](#draganddropinfo11)拖拽状态信息。 |
 
 示例：
 
@@ -881,9 +882,9 @@ struct DragControllerPage {
   customBuilders: Array<CustomBuilder | DragItemInfo> = new Array<CustomBuilder | DragItemInfo>();
 
   @Builder
-  DraggingBuilder() {
+  draggingBuilder() {
     Column() {
-      Text("DraggingBuilder")
+      Text('DraggingBuilder')
         .fontColor(Color.White)
         .fontSize(12)
     }
@@ -899,7 +900,7 @@ struct DragControllerPage {
           if (event.type == TouchType.Down) {
             this.customBuilders.splice(0, this.customBuilders.length);
             this.customBuilders.push(() => {
-              this.DraggingBuilder()
+              this.draggingBuilder();
             });
             let text = new unifiedDataChannel.PlainText()
             text.textContent = 'drag text'
@@ -909,7 +910,7 @@ struct DragControllerPage {
               data: unifiedData,
               extraParams: ''
             }
-            let func = (dragAndDropInfo: dragController.DragAndDropInfo) => {
+            let statusChangeCallback = (dragAndDropInfo: dragController.DragAndDropInfo) => {
               console.info(`Register to listen on drag status ${JSON.stringify(dragAndDropInfo)}`);
             }
             try {
@@ -918,17 +919,17 @@ struct DragControllerPage {
                 .createDragAction(this.customBuilders,
                   dragInfo) // 建议使用 this.getUIContext().getDragController().createDragAction()接口
               if (!this.dragAction) {
-                console.info("listener dragAction is null");
+                console.info('listener dragAction is null');
                 return;
               }
               // 监听状态改变，触发后打印func中的日志
-              this.dragAction.on('statusChange', func);
+              this.dragAction.on('statusChange', statusChangeCallback);
               this.dragAction.startDrag().then(() => {
-              }).catch((err: Error) => {
-                console.error(`start drag Error: ${err.message}`);
+              }).catch((err: BusinessError) => {
+                console.error(`Failed to start drag. Code: ${err.code}, message: ${err.message}`);
               })
             } catch (err) {
-              console.error(`create dragAction Error: ${err.message}`);
+              console.error(`Failed to create dragAction. Code: ${err.code}, message: ${err.message}`);
             }
           }
         }
@@ -942,7 +943,7 @@ struct DragControllerPage {
 
 off(type: 'statusChange', callback?: Callback<[DragAndDropInfo](#draganddropinfo11)>): void
 
-取消注册监听拖拽状态改变事件。
+取消注册监听拖拽状态改变事件，适用于拖拽结束、页面销毁或不再需要响应拖拽状态变化时释放监听的场景。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -953,7 +954,7 @@ off(type: 'statusChange', callback?: Callback<[DragAndDropInfo](#draganddropinfo
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 监听事件，固定为'statusChange'，即取消监听拖拽状态改变事件。 |
-| callback | Callback | 否 | 回调函数，返回当前的[DragAndDropInfo](#draganddropinfo11)组件状态。 |
+| callback | Callback | 否 | 回调函数，返回当前的[DragAndDropInfo](#draganddropinfo11)拖拽状态信息。 |
 
 示例：
 
@@ -970,7 +971,7 @@ struct DragControllerPage {
   customBuilders: Array<CustomBuilder | DragItemInfo> = new Array<CustomBuilder | DragItemInfo>();
 
   @Builder
-  DraggingBuilder() {
+  draggingBuilder() {
     Column() {
       Text("DraggingBuilder")
         .fontColor(Color.White)
@@ -988,7 +989,7 @@ struct DragControllerPage {
           if (event.type == TouchType.Down) {
             this.customBuilders.splice(0, this.customBuilders.length);
             this.customBuilders.push(() => {
-              this.DraggingBuilder()
+              this.draggingBuilder();
             });
             let text = new unifiedDataChannel.PlainText()
             text.textContent = 'drag text'
@@ -998,7 +999,7 @@ struct DragControllerPage {
               data: unifiedData,
               extraParams: ''
             }
-            let func = (dragAndDropInfo: dragController.DragAndDropInfo) => {
+            let statusChangeCallback = (dragAndDropInfo: dragController.DragAndDropInfo) => {
               console.info(`Register to listen on drag status ${JSON.stringify(dragAndDropInfo)}`);
             }
             this.dragAction = this.getUIContext()
@@ -1006,15 +1007,15 @@ struct DragControllerPage {
               .createDragAction(this.customBuilders,
                 dragInfo) // 建议使用 this.getUIContext().getDragController().createDragAction()接口
             if (!this.dragAction) {
-              console.info("listener dragAction is null");
+              console.info('listener dragAction is null');
               return;
             }
-            this.dragAction.on('statusChange', func);
+            this.dragAction.on('statusChange', statusChangeCallback);
             // 取消监听，发起拖拽后不会打印func中的日志
-            this.dragAction.off('statusChange', func);
+            this.dragAction.off('statusChange', statusChangeCallback);
             this.dragAction.startDrag().then(() => {
-            }).catch((err: Error) => {
-              console.error(`start drag Error: ${err.message}`);
+            }).catch((err: BusinessError) => {
+              console.error(`Failed to start drag. Code: ${err.code}, message: ${err.message}`);
             })
           }
         }
@@ -1061,7 +1062,7 @@ struct DragControllerPage {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| duration | number | 否 | 是 | 动画持续时间，单位为毫秒。 默认值：1000 **说明：** - 设置小于0的值时按0处理。 - 设置浮点型类型的值时，向下取整。例如，设置值为1.2，按照1处理。 |
+| duration | number | 否 | 是 | 动画持续时间，单位为毫秒。 默认值：1000 **说明：** - 设置小于0的值时按0处理。 - 设置浮点类型的值时，向下取整。例如，设置值为1.2，按照1处理。 |
 | curve | [Curve](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#curve) | [ICurve](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-curve#icurve9) | 否 | 是 | 设置动画曲线。 默认值：Curve.EaseInOut |
 
 #### DragEventParam12+
@@ -1096,15 +1097,15 @@ getDragPreview(): DragPreview
 
 | 类型 | 说明 |
 | --- | --- |
-| [DragPreview](#dragpreview11) | 一个代表拖拽背板的对象，提供背板样式设置的接口，在OnDrop和OnDragEnd回调中使用不生效。 |
+| [DragPreview](#dragpreview11) | 一个代表拖拽背板的对象，提供背板样式设置的接口，在onDrop和onDragEnd回调中使用不生效。 |
 
 示例：
 
-请参考[animate](#animate11)
+请参考[animate](#animate11)。
 
 #### DragPreview11+
 
-拖拽背板的对象，在OnDrop和OnDragEnd回调中使用不生效。
+拖拽背板的对象，在onDrop和onDragEnd回调中使用不生效。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1114,7 +1115,7 @@ getDragPreview(): DragPreview
 
 setForegroundColor(color: ResourceColor): void
 
-设置背板蒙版颜色，在OnDrop和OnDragEnd回调中使用不生效，仅支持通过 [getDragPreview()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-dragcontroller#getdragpreview11) 方法获取到的对象上使用。
+设置背板蒙版颜色，在onDrop和onDragEnd回调中使用不生效，仅支持通过 [getDragPreview()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-dragcontroller#getdragpreview11) 方法获取到的对象上使用。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1128,13 +1129,13 @@ setForegroundColor(color: ResourceColor): void
 
 示例：
 
-请参考[animate](#animate11)
+请参考[animate](#animate11)。
 
 #### [h2]animate11+
 
 animate(options: AnimationOptions, handler: () => void): void
 
-设置背板蒙版颜色变化动效，在OnDrop和OnDragEnd回调中使用不生效，仅支持通过 [getDragPreview()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-dragcontroller#getdragpreview11) 方法获取到的对象上使用。
+设置背板蒙版颜色变化动效，在onDrop和onDragEnd回调中使用不生效，仅支持通过 [getDragPreview()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-dragcontroller#getdragpreview11) 方法获取到的对象上使用。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1144,7 +1145,7 @@ animate(options: AnimationOptions, handler: () => void): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [AnimationOptions](#animationoptions11) | 是 | 动效参数。 |
+| options | [AnimationOptions](#animationoptions11) | 是 | 背板蒙版颜色变化的动效配置参数，用于设置动画持续时间、动画曲线等效果。 |
 | handler | () => void | 是 | 用于修改背板蒙版颜色等属性的回调方法。 |
 
 示例：
@@ -1176,15 +1177,14 @@ export default class EntryAbility extends UIAbility {
 
     windowStage.loadContent('pages/Index', this.storage, (err, data) => {
       if (err.code) {
-        hilog.error(0x0000, 'testTag', 'Failed to load the content. Cause: %{public}s',
-          `Code is ${err.code}, message is ${err.message}`);
+        console.error(`Failed to load the content. Code: ${err.code}, message: ${err.message}`);
         return;
       }
       hilog.info(0x0000, 'testTag', 'Succeeded in loading the content. Data: %{public}s',
         `Code is ${err.code}, message is ${err.message}`);
       windowStage.getMainWindow((err, data) => {
         if (err.code) {
-          hilog.error(0x0000, `Failed to obtain the main window. Cause: ${err.message}`, '');
+          console.error(`Failed to obtain the main window. Code: ${err.code}, message: ${err.message}`);
           return;
         }
         uiContext = data.getUIContext();
@@ -1199,8 +1199,7 @@ export default class EntryAbility extends UIAbility {
 ```
 import { unifiedDataChannel } from '@kit.ArkData';
 import { hilog } from '@kit.PerformanceAnalysisKit';
-import { dragController, curves, promptAction, UIContext } from '@kit.ArkUI';
-import { image } from '@kit.ImageKit';
+import { dragController, curves, UIContext } from '@kit.ArkUI';
 import { BusinessError } from '@kit.BasicServicesKit';
 
 class DragInfo {
@@ -1211,25 +1210,14 @@ class DragInfo {
 @Entry()
 @Component
 struct DragControllerPage {
-  @State pixmap: image.PixelMap | null = null;
   storages = this.getUIContext().getSharedLocalStorage();
 
   @Builder
-  DraggingBuilder() {
+  draggingBuilder() {
     Column() {
-      Text("DraggingBuilder")
+      Text('DraggingBuilder')
         .fontColor(Color.White)
         .fontSize(12)
-    }
-    .width(100)
-    .height(100)
-    .backgroundColor(Color.Blue)
-  }
-
-  @Builder
-  PixmapBuilder() {
-    Column() {
-      Text("PixmapBuilder")
     }
     .width(100)
     .height(100)
@@ -1243,19 +1231,19 @@ struct DragControllerPage {
         .onDragEnter(() => {
           try {
             let uiContext: UIContext = this.storages?.get<UIContext>('uiContext') as UIContext;
-            let previewObj: dragController.DragPreview = uiContext.getDragController().getDragPreview();
+            let dragPreview: dragController.DragPreview = uiContext.getDragController().getDragPreview();
             let foregroundColor: ResourceColor = Color.Green;
 
             let previewAnimation: dragController.AnimationOptions = {
               curve: curves.cubicBezierCurve(0.2, 0, 0, 1),
             }
-            previewObj.animate(previewAnimation, () => {
-              previewObj.setForegroundColor(foregroundColor);
+            dragPreview.animate(previewAnimation, () => {
+              dragPreview.setForegroundColor(foregroundColor);
             });
           } catch (error) {
-            let msg = (error as BusinessError).message;
+            let message = (error as BusinessError).message;
             let code = (error as BusinessError).code;
-            hilog.error(0x0000, `show error code is ${code}, message is ${msg}`, '');
+            console.error(`Failed to animate drag preview. Code: ${code}, message: ${message}`);
           }
         })
         .onDrop(() => {
@@ -1271,21 +1259,23 @@ struct DragControllerPage {
               data: unifiedData,
               extraParams: ''
             }
-            let eve: DragInfo = new DragInfo();
             this.getUIContext()
               .getDragController()
               .executeDrag(() => { // 建议使用 this.getUIContext().getDragController().executeDrag()接口
-                this.DraggingBuilder()
-              }, dragInfo, (err, eve) => {
-                hilog.info(0x0000, `${JSON.stringify(err)}`, '')
-                if (eve && eve.event) {
-                  if (eve.event.getResult() == DragResult.DRAG_SUCCESSFUL) {
-                    hilog.info(0x0000, 'success', '');
-                  } else if (eve.event.getResult() == DragResult.DRAG_FAILED) {
-                    hilog.info(0x0000, 'failed', '');
-                  }
+                this.draggingBuilder()
+              }, dragInfo, (err, dragEventParam) => {
+                if (err) {
+                  console.error(`Failed to execute drag. Code: ${err.code}, message: ${err.message}`);
+                  return;
                 }
-              })
+                if (dragEventParam && dragEventParam.event) {
+                  if (dragEventParam.event.getResult() == DragResult.DRAG_SUCCESSFUL) {
+                    hilog.info(0x0000, 'success', '');
+                  } else if (dragEventParam.event.getResult() == DragResult.DRAG_FAILED) {
+                    hilog.info(0x0000, 'failed', '');
+                   }
+                 }
+               })
           }
         }
       }).margin({ top: 100 })
@@ -1295,7 +1285,7 @@ struct DragControllerPage {
   }
 }
 ```
-![](./img/zh-cn_image_0000002661732177.gif)
+![](./img/zh-cn_image_0000002686087677.gif)
 
 #### DragStartRequestStatus18+
 
@@ -1320,14 +1310,14 @@ struct DragControllerPage {
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| BEGIN | 0 | 拖拽进入组件范围静止一段时间，被识别为悬停状态。此时允许进行一些悬停检测的准备操作。 |
+| BEGIN | 0 | 拖拽进入组件范围并静止达到[stillTimeLimit](#dragspringloadingconfiguration20)配置的时长后，被识别为悬停状态。此时允许进行悬停检测所需的数据准备、状态记录等准备操作。 |
 | UPDATE | 1 | 拖拽已处于悬停状态，如果继续静止会定期触发UPDATE通知，以检查悬停状态。此时允许UI效果刷新以突出悬停状态。 |
-| END | 2 | 如果最后一次UPDATE通知后拖拽继续静止会进入END，整个悬停检测结束。进入END后拖拽需要移出组件范围后再次进入组件或移入组件内子组件才会重新开始悬停检测。此时应用程序可进行清理、导航或视图切换操作。 |
-| CANCEL | 3 | 拖拽进入BEGIN后，在手指/鼠标抬起、切换窗口、息屏、移出组件范围、移入组件内子组件或组件内移动超过检测阈值等场景会触发CANCEL通知，悬停检测中断。应用程序将恢复UI样式，并取消待定的导航及视图切换操作。 |
+| END | 2 | 如果最后一次UPDATE通知后拖拽继续静止会进入END，整个悬停检测结束。进入END后拖拽需要移出组件范围后再次进入组件或移入组件内子组件才会重新开始悬停检测。此时应用可进行清理、导航或视图切换操作。 |
+| CANCEL | 3 | 拖拽进入BEGIN后，在手指/鼠标抬起、切换窗口、息屏、移出组件范围、移入组件内子组件或组件内移动超过检测阈值等场景会触发CANCEL通知，悬停检测中断。应用将恢复UI样式，并取消待定的导航及视图切换操作。 |
 
 #### DragSpringLoadingConfiguration20+
 
-定义拖拽的悬停检测配置参数的接口。默认的配置参数通常已能满足需求。可以通过在绑定[onDragSpringLoading](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondragspringloading20)时指定配置，或者通过在BEGIN状态期间使用[updateConfiguration](#updateconfiguration20)方法动态修改的方式以自定义该配置参数。
+定义拖拽的悬停检测配置参数的接口。默认的配置参数通常已能满足需求。可以在绑定[onDragSpringLoading](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondragspringloading20)时指定配置，或者在BEGIN状态期间使用[updateConfiguration](#updateconfiguration20)方法动态修改该配置参数。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -1335,14 +1325,14 @@ struct DragControllerPage {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| stillTimeLimit | number | 否 | 是 | 进入悬停检测BEGIN状态所需保持静止的时间（ms）。取值范围为[0, 231-1]的整数。输入浮点数时只取整数部分。输入非法值（负数、null、undefined、NaN）时取默认值500。 |
-| updateInterval | number | 否 | 是 | 进入悬停检测UPDATE状态后，更新通知的时间间隔（ms）。取值范围为[0, 231-1]的整数。输入浮点数时只取整数部分。输入非法值（负数、null、undefined、NaN）时取默认值100。 |
+| stillTimeLimit | number | 否 | 是 | 进入悬停检测BEGIN状态所需保持静止的时间，单位：ms。取值范围为[0, 231-1]的整数。输入浮点数时只取整数部分。输入非法值（负数、null、undefined、NaN）时取默认值500。 |
+| updateInterval | number | 否 | 是 | 进入悬停检测UPDATE状态后，更新通知的时间间隔，单位：ms。取值范围为[0, 231-1]的整数。输入浮点数时只取整数部分。输入非法值（负数、null、undefined、NaN）时取默认值100。 |
 | updateNotifyCount | number | 否 | 是 | 进入悬停检测UPDATE状态后，更新通知的最大次数。取值范围为[0, 231-1]的整数。输入浮点数时只取整数部分。输入非法值（负数、null、undefined、NaN）时取默认值3。 |
-| updateToFinishInterval | number | 否 | 是 | 从UPDATE状态到END状态的最长等待时间（ms）。取值范围为[0, 231-1]的整数。输入浮点数时只取整数部分。输入非法值（负数、null、undefined、NaN）时取默认值100。 |
+| updateToFinishInterval | number | 否 | 是 | 从UPDATE状态到END状态的最长等待时间，单位：ms。取值范围为[0, 231-1]的整数。输入浮点数时只取整数部分。输入非法值（负数、null、undefined、NaN）时取默认值100。 |
 
 #### SpringLoadingDragInfos20+
 
-定义触发悬停检测时拖拽事件信息的接口。该接口提供了拖拽数据摘要和拖拽事件额外信息，应用程序可以据此决定是否响应悬停检测回调。
+定义触发悬停检测时拖拽事件信息的接口。该接口提供了拖拽数据摘要和拖拽事件额外信息，应用可以据此决定是否响应悬停检测回调。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -1355,7 +1345,7 @@ struct DragControllerPage {
 
 #### SpringLoadingContext20+
 
-定义回调上下文信息的类，用于在悬停检测回调中传递给应用程序，使其能访问拖拽状态、动态刷新UI效果以及访问拖拽数据以确定是否处理拖拽操作。
+定义回调上下文信息的类，用于在悬停检测回调中传递给应用，使其能访问拖拽状态、动态刷新UI效果以及访问拖拽数据以确定是否处理拖拽操作。
 
 #### [h2]属性
 
@@ -1374,7 +1364,7 @@ struct DragControllerPage {
 
 abort(): void
 
-终止后续的悬停检测。本方法不会触发CANCEL状态通知，应用程序需要在执行本方法时进行状态清理。
+终止后续的悬停检测。该方法应在悬停检测回调中通过SpringLoadingContext对象调用。本方法不会触发CANCEL状态通知，应用需要在执行本方法时进行状态清理。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -1384,7 +1374,7 @@ abort(): void
 
 updateConfiguration(config: DragSpringLoadingConfiguration): void
 
-更新悬停检测的配置，仅在悬停检测状态为BEGIN时生效。应用程序通常在绑定[onDragSpringLoading](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondragspringloading20)时设置悬停检测配置或使用默认配置。该方法不会修改绑定时的原始配置，而是在后续悬停检测中更新动态的配置信息。请谨慎使用本方法，因为不同的拖拽数据类型可能需要不同的UX时间。
+更新悬停检测的配置，仅在悬停检测状态为BEGIN时生效。应用通常在绑定[onDragSpringLoading](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondragspringloading20)时设置悬停检测配置或使用默认配置。该方法不会修改绑定时的原始配置，而是在后续悬停检测中更新动态的配置信息。使用本方法时，应根据拖拽数据类型调整悬停检测相关时间配置，因为不同的拖拽数据类型可能需要不同的用户交互响应时间。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -1394,4 +1384,4 @@ updateConfiguration(config: DragSpringLoadingConfiguration): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| config | [DragSpringLoadingConfiguration](#dragspringloadingconfiguration20) | 是 | 悬停检测配置。 |
+| config | [DragSpringLoadingConfiguration](#dragspringloadingconfiguration20) | 是 | 需要更新的悬停检测配置，用于动态设置进入BEGIN状态的静止时间、UPDATE通知间隔、通知次数和结束等待时间等，仅在悬停检测状态为BEGIN时生效。 |

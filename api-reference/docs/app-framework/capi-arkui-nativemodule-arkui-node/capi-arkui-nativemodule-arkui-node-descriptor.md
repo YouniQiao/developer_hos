@@ -2,8 +2,8 @@
 title: "ArkUI_Node"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-node-descriptor"
 catalog: "harmonyos-references"
-content_hash: "f03d2c82debb"
-synced_at: "2026-07-09T00:58:43.193022"
+content_hash: "7849627d5584"
+synced_at: "2026-07-28T16:49:34.584563"
 ---
 
 # ArkUI_Node
@@ -14,7 +14,7 @@ struct ArkUI_Node
 
 #### 概述
 
-定义ArkUI native组件实例对象。
+定义ArkUI Native组件实例对象，供ArkUI_NodeHandle指针在Native接口中标识和传递组件实例。
 
 起始版本： 22
 

@@ -2,13 +2,13 @@
 title: "NotificationTemplate"
 upstream_id: "harmonyos-references/js-apis-inner-notification-notificationtemplate"
 catalog: "harmonyos-references"
-content_hash: "be1042cf7955"
-synced_at: "2026-07-09T01:01:28.824057"
+content_hash: "fefc31729e4e"
+synced_at: "2026-07-28T16:52:48.483040"
 ---
 
 # NotificationTemplate
 
-通知模板。
+通知模板。用于指定通知所使用的模板类型。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 8开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -22,5 +22,5 @@ synced_at: "2026-07-09T01:01:28.824057"
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| name | string | 否 | 否 | 模板名称。当前仅支持表示下载进度的进度条通知模板，取值为'downloadTemplate'。 |
-| data | Record | 否 | 否 | 模板数据。 - title: 表示下载标题。必填字段，值为字符串类型。 - fileName: 表示下载文件名。必填字段，值为字符串类型。 - progressValue: 表示下载进度，值为数值类型。 |
+| name | string | 否 | 否 | 模板名称。当前仅支持表示下载进度的进度条通知模板，取值为'downloadTemplate'。字符串长度不超过202字节，超出部分会被截断。不可为空字符串。 |
+| data | Record | 否 | 否 | 模板数据。 - title: 表示下载标题。必填字段，值为字符串类型。 - fileName: 表示下载文件名。必填字段，值为字符串类型。 - progressValue: 表示下载进度，值为数值类型。建议取值范围为0~100，表示百分比进度。当progressValue取值小于或等于0时，进度为0；当其取值大于或等于100时，进度环消失，代表下载完成。 |

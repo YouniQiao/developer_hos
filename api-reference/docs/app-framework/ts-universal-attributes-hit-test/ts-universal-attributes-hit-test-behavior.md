@@ -1,28 +1,27 @@
 ---
-
 title: "触摸测试控制"
 upstream_id: "harmonyos-references/ts-universal-attributes-hit-test-behavior"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T00:57:41.404373"
-content_hash: "254841b9ff92"
+content_hash: "6b12e4ac9fa6"
+synced_at: "2026-07-28T16:42:35.897452"
 ---
-
 
 # 触摸测试控制
 
-设置组件的[触摸测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-basic-principles#触摸测试)类型。在ArkUI开发框架中，处理触屏事件和鼠标事件时，会在事件触发前进行按压点与组件响应热区的触摸测试，以收集需响应事件的组件。基于测试结果，框架会分发相应的事件。hitTestBehavior属性用于设置不同的触摸测试响应模式，影响触摸测试收集结果及后续事件分发。具体影响参考[HitTestMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#hittestmode9)枚举说明。影响[点击事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-click)、[触摸事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-touch)、[拖拽事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop)、[鼠标事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-mouse-key)、[轴事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-axis)、[悬浮事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-hover)、[无障碍悬浮事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-accessibility-hover-event)和[手势事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-settings)的分发。
+设置组件的[触摸测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-basic-principles#触摸测试)模式。在ArkUI开发框架中，处理触屏事件和鼠标事件时，会在事件触发前进行按压点与组件响应热区的触摸测试，以收集需响应事件的组件。基于测试结果，框架会向通过触摸测试的组件分发事件。当组件存在重叠、穿透等触摸响应冲突时，可通过hitTestBehavior属性设置不同的触摸测试响应模式，影响触摸测试收集结果及后续事件分发，避免不必要的触摸响应。具体影响参考[HitTestMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#hittestmode9)枚举说明。影响[点击事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-click)、[触摸事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-touch)、[拖拽事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop)、[鼠标事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-mouse-key)、[轴事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-axis)、[悬浮事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-hover)、[无障碍悬浮事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-accessibility-hover-event)和[手势事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-settings)的分发。
 
 ![](./img/note_3.0-zh-cn.png)
 
 - 本模块首批接口从API version 9开始支持，后续版本的新增接口，采用上角标单独标记接口的起始版本。
 - 当Stack组件中有多个节点触摸区域重叠时，如果最上层节点的子组件命中，则默认只会对显示在最上层的节点做触摸测试。此时只有给显示在最上层的节点设置hitTestBehavior为HitTestMode.Transparent时，才能使显示在下层的节点触发触摸测试。
-- 存在新增节点时，如需该节点响应触摸测试，需要对其设置[HitTestMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#hittestmode9)。当新增节点存在多层级节点时，仅需设置根节点的HitTestMode。
 
 #### hitTestBehavior
 
 hitTestBehavior(value: HitTestMode): T
 
 设置组件的触摸测试类型。如果组件不设置hitTestBehavior，其默认触摸测试类型为HitTestMode.Default。
+
+卡片能力： 从API版本26.0.0开始，该接口支持在ArkTS卡片中使用。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -32,17 +31,17 @@ hitTestBehavior(value: HitTestMode): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [HitTestMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#hittestmode9) | 是 | 设置当前组件的触摸测试类型。 |
+| value | [HitTestMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#hittestmode9) | 是 | 设置当前组件的触摸测试模式。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### 示例
 
-#### [h2]示例1（触摸测试类型为Block和Transparent的触摸测试效果）
+#### [h2]示例1（触摸测试模式为Block和Transparent的触摸测试效果）
 
 该示例通过设置不同的[HitTestMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#hittestmode9)值演示了Block和Transparent的触摸测试效果。
 
@@ -56,26 +55,28 @@ struct HitTestBehaviorExample {
     Stack() {
       Button('outer button')
         .onTouch((event) => {
-          console.info(`outer button touched type: ${(event as TouchEvent).type}`)
+          console.info(`outer button touched type: ${(event as TouchEvent).type}`);
         })
       // inner stack
       Stack() {
         Button('inner button')
           .onTouch((event) => {
-            console.info(`inner button touched type: ${(event as TouchEvent).type}`)
+            console.info(`inner button touched type: ${(event as TouchEvent).type}`);
           })
       }
-      .width("100%").height("100%")
+      .width('100%').height('100%')
+      // 设置触摸测试类型为Block，自身响应触摸测试但阻止兄弟节点参与触摸测试
       .hitTestBehavior(HitTestMode.Block)
       .onTouch((event) => {
-        console.info(`stack touched type: ${(event as TouchEvent).type}`)
+        console.info(`stack touched type: ${(event as TouchEvent).type}`);
       })
 
       Text('Transparent')
+        // 设置触摸测试类型为Transparent，自身不拦截触摸测试，允许下层节点响应触摸测试
         .hitTestBehavior(HitTestMode.Transparent)
-        .width("100%").height("100%")
+        .width('100%').height('100%')
         .onTouch((event) => {
-          console.info(`text touched type: ${(event as TouchEvent).type}`)
+          console.info(`text touched type: ${(event as TouchEvent).type}`);
         })
     }.width(300).height(300)
   }
@@ -84,7 +85,7 @@ struct HitTestBehaviorExample {
 
 #### [h2]示例2（触摸测试类型为BLOCK_HIERARCHY时的触摸测试效果）
 
-从API version 20开始，该示例演示了设置触摸测试类型为BLOCK_HIERARCHY时的触摸测试效果。
+从API version 20开始，该示例演示了设置触摸测试模式为BLOCK_HIERARCHY时的触摸测试效果。
 
 ```
 // xxx.ets
@@ -132,7 +133,7 @@ struct BlockHierarchy {
             })
             .hitTestBehavior(HitTestMode.Transparent)
         }
-        .width("100%").height("100%")
+        .width('100%').height('100%')
         // 设置触摸测试模式，自身和子节点响应触摸测试，阻止所有优先级较低的兄弟节点和父节点参与触摸测试
         .hitTestBehavior(HitTestMode.BLOCK_HIERARCHY)
         .onTouch((event) => {
@@ -141,7 +142,7 @@ struct BlockHierarchy {
 
         Text('Transparent')
           .hitTestBehavior(HitTestMode.Transparent)
-          .width("100%").height("100%")
+          .width('100%').height('100%')
           .onTouch((event) => {
             console.info(`HitTestMode text touched type: ${(event as TouchEvent).type}`);
           })
@@ -161,7 +162,7 @@ struct BlockHierarchy {
 
 #### [h2]示例3（触摸测试类型为BLOCK_DESCENDANTS时的触摸测试效果）
 
-从API version 20开始，该示例演示了设置触摸测试类型为BLOCK_DESCENDANTS时的触摸测试效果。
+从API version 20开始，该示例演示了设置触摸测试模式为BLOCK_DESCENDANTS时的触摸测试效果。
 
 ```
 // xxx.ets
@@ -188,8 +189,8 @@ struct BlockDescendants {
               console.info(`HitTestMode inner button touched type: ${(event as TouchEvent).type}`);
             })
         }
-        .width("100%").height("100%")
-        // 设置触摸测试模式，自身不响应触摸测试，并且所有的后代（孩子，孙子等）也不响应触摸测试
+        .width('100%').height('100%')
+        // 设置触摸测试模式，自身不响应触摸测试，并且所有的后代（孩子、孙子等）也不响应触摸测试，不会影响祖先节点的触摸测试
         .hitTestBehavior(HitTestMode.BLOCK_DESCENDANTS)
         .onTouch((event) => {
           console.info(`HitTestMode stack touched type: ${(event as TouchEvent).type}`);
@@ -197,7 +198,7 @@ struct BlockDescendants {
 
         Text('Transparent')
           .hitTestBehavior(HitTestMode.Transparent)
-          .width("100%").height("100%")
+          .width('100%').height('100%')
           .onTouch((event) => {
             console.info(`HitTestMode text touched type: ${(event as TouchEvent).type}`);
           })
@@ -237,7 +238,7 @@ struct Index {
         .height('100%')
         .width('100%')
         .onTouch(() => {
-          console.info('background hit test!')
+          console.info('background hit test!');
         })
       Stack() {
         // 点击按钮进行触摸测试

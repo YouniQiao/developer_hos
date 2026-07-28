@@ -2,8 +2,8 @@
 title: "Rdb_KeyData"
 upstream_id: "harmonyos-references/capi-rdb-rdb-keydata"
 catalog: "harmonyos-references"
-content_hash: "4911c93d7dab"
-synced_at: "2026-07-09T00:57:20.633729"
+content_hash: "4f2636c76566"
+synced_at: "2026-07-28T16:40:52.722733"
 ---
 
 # Rdb_KeyData
@@ -28,4 +28,4 @@ union Rdb_KeyData { ... }
 | --- | --- |
 | uint64_t integer | 存放uint64_t类型的数据。 |
 | double real | 存放double类型的数据。 |
-| const char* text | 存放char类型的数据。 |
+| const char* text | 存放字符串类型的数据。 |

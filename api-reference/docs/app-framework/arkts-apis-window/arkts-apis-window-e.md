@@ -2,8 +2,8 @@
 title: "Enums"
 upstream_id: "harmonyos-references/arkts-apis-window-e"
 catalog: "harmonyos-references"
-content_hash: "a3b789625048"
-synced_at: "2026-07-09T00:57:34.965080"
+content_hash: "100e6d5cd04c"
+synced_at: "2026-07-28T16:41:44.756162"
 ---
 
 # Enums
@@ -101,9 +101,9 @@ synced_at: "2026-07-09T00:57:34.965080"
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| UNDEFINED | 0 | 默认值。 |
-| MAXIMIZE | 1 | 窗口最大化。 |
-| RECOVER | 2 | 窗口恢复到上一次的状态。 |
+| UNDEFINED | 0 | 默认值，表示窗口矩形变化的原因未定义。 |
+| MAXIMIZE | 1 | 窗口进入最大化或全屏模式。 |
+| RECOVER | 2 | 窗口从最大化模式、全屏模式或分屏模式恢复到自由悬浮窗口模式。 |
 | MOVE | 3 | 窗口拖拽移动。 |
 | DRAG | 4 | 窗口拖拽缩放。 |
 | DRAG_START | 5 | 窗口开始拖拽缩放。 |
@@ -150,8 +150,8 @@ synced_at: "2026-07-09T00:57:34.965080"
 | FULL_SCREEN | 1 | 表示APP全屏模式。 [自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态下，窗口铺满整个屏幕，默认无dock栏、标题栏和状态栏显示。 可通过[maximize()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#maximize12)和[setTitleAndDockHoverShown()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#settitleanddockhovershown14)配置，当hover到热区时是否显示标题栏和dock栏。 当maximize()和setTitleAndDockHoverShown()接口都调用时，以最后调用设置的效果为准。 非[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态下，窗口铺满整个屏幕，无标题栏和dock栏显示。可通过[setSpecificSystemBarEnabled()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setspecificsystembarenabled11)配置是否显示状态栏。 |
 | MAXIMIZE | 2 | 表示APP窗口最大化模式，[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态下，窗口铺满整个屏幕，不需要hover就可以显示dock栏、状态栏和标题栏。非[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态下，不存在该状态。 |
 | MINIMIZE | 3 | 表示APP窗口最小化模式。 |
-| FLOATING | 4 | 表示APP自由悬浮形式窗口模式。 |
-| SPLIT_SCREEN | 5 | 表示APP分屏模式。 |
+| FLOATING | 4 | 表示APP自由悬浮形式窗口模式，窗口可以自由移动和缩放，适用于需要多窗口同时使用的场景。 |
+| SPLIT_SCREEN | 5 | 表示APP分屏模式，屏幕同时显示两个应用窗口，每个窗口占据屏幕的一半空间，适用于多任务并行处理的场景。 |
 
 #### PixelUnit22+
 
@@ -174,10 +174,26 @@ synced_at: "2026-07-09T00:57:34.965080"
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| FOLLOW_APP_IMMERSIVE_SETTING | 0 | 最大化时，跟随应用app当前设置的全屏模式。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| FOLLOW_APP_IMMERSIVE_SETTING | 0 | 最大化时，跟随应用当前设置的全屏模式。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | EXIT_IMMERSIVE | 1 | 最大化时，如果当前窗口设置了全屏模式会退出全屏模式。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | ENTER_IMMERSIVE | 2 | 最大化时，进入全屏模式，鼠标Hover在热区上显示窗口标题栏和dock栏。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | ENTER_IMMERSIVE_DISABLE_TITLE_AND_DOCK_HOVER14+ | 3 | 最大化时，进入全屏模式，鼠标Hover在热区上不显示窗口标题栏和dock栏。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
+
+#### AcrossDisplayPresentation
+
+折叠屏的跨屏策略枚举，用于控制折叠2in1设备在悬停态下主窗口最大化时的瀑布流模式行为。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Window.SessionManager
+
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| FOLLOW_ACROSS_DISPLAY_SETTING | 0 | 跟随当前跨屏策略设置。若未设置过跨屏策略，则使用系统默认策略：设备悬停态下，窗口进入单屏最大化（即窗口最大化时只在上半屏或下半屏显示）；展开态下，窗口最大化并在折回悬停态时保持瀑布流模式（即窗口跨上下两半屏显示）。 |
+| ENTER_ACROSS_DISPLAY_MODE | 1 | 设备悬停态下，窗口直接进入瀑布流模式；展开态下，窗口最大化并在折回悬停态时保持瀑布流模式。 |
+| EXIT_ACROSS_DISPLAY_MODE | 2 | 设备悬停态下，窗口退出瀑布流模式，进入单屏最大化；展开态下，窗口最大化并在折回悬停态时退出瀑布流模式。 |
 
 #### WindowAnimationCurve20+
 

@@ -2,8 +2,8 @@
 title: "net_connection_type.h"
 upstream_id: "harmonyos-references/capi-net-connection-type-h"
 catalog: "harmonyos-references"
-content_hash: "3da5595b8b82"
-synced_at: "2026-07-09T00:59:28.565205"
+content_hash: "832fa52b3655"
+synced_at: "2026-07-28T16:50:44.575916"
 ---
 
 # net_connection_type.h
@@ -72,6 +72,7 @@ synced_at: "2026-07-09T00:59:28.565205"
 | [typedef void (*OH_NetConn_NetworkAvailable)(NetConn_NetHandle *netHandle)](#oh_netconn_networkavailable) | OH_NetConn_NetworkAvailable | 网络可用回调。 |
 | [typedef void (*OH_NetConn_NetCapabilitiesChange)(NetConn_NetHandle *netHandle,NetConn_NetCapabilities *netCapabilities)](#oh_netconn_netcapabilitieschange) | OH_NetConn_NetCapabilitiesChange | 网络能力集变更回调。 |
 | [typedef void (*OH_NetConn_NetConnectionPropertiesChange)(NetConn_NetHandle *netHandle,NetConn_ConnectionProperties *connConnetionProperties)](#oh_netconn_netconnectionpropertieschange) | OH_NetConn_NetConnectionPropertiesChange | 网络连接属性变更回调。 |
+| [typedef void (*OH_NetConn_GlobalHttpProxyRefreshCallback)(int32_t result, const NetConn_HttpProxy *proxy, void *userContext)](#oh_netconn_globalhttpproxyrefreshcallback) | OH_NetConn_GlobalHttpProxyRefreshCallback | 全局HTTP代理重新认证结果的回调。 |
 | [typedef void (*OH_NetConn_NetLost)(NetConn_NetHandle *netHandle)](#oh_netconn_netlost) | OH_NetConn_NetLost | 网络断开回调。 |
 | [typedef void (*OH_NetConn_NetUnavailable)(void)](#oh_netconn_netunavailable) | OH_NetConn_NetUnavailable | 网络不可用回调，在指定的超时时间内网络未激活时触发该回调，如果未设置超时时间则不会触发该回调。 |
 | [typedef void (*OH_NetConn_NetBlockStatusChange)(NetConn_NetHandle *netHandle, bool blocked)](#oh_netconn_netblockstatuschange) | OH_NetConn_NetBlockStatusChange | 网络阻塞状态变更回调。 |
@@ -191,6 +192,25 @@ typedef void (*OH_NetConn_AppHttpProxyChange)(NetConn_HttpProxy *proxy)
 | 参数项 | 描述 |
 | --- | --- |
 | [NetConn_HttpProxy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-netconnection-netconn-httpproxy) *proxy | 变化的代理配置信息,可能是空指针。 |
+
+#### [h2]OH_NetConn_GlobalHttpProxyRefreshCallback()
+
+```
+typedef void (*OH_NetConn_GlobalHttpProxyRefreshCallback)(int32_t result, const NetConn_HttpProxy *proxy, void *userContext)
+```
+ 描述
+
+全局HTTP代理重新认证结果的回调。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| (int32_t result | 重新认证的结果。0表示成功，其他值表示失败。 |
+| [const NetConn_HttpProxy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-netconnection-netconn-httpproxy) *proxy | 当重新认证成功（result为0）时，表示刷新后的全局HTTP代理信息。如果重新认证失败（result非0）时，proxy为NULL。该proxy对象由系统持有，仅在该回调函数内部有效。调用者不得释放或修改它。如果调用者需要在回调返回后继续使用该代理信息，必须进行深拷贝。 |
+| void *userContext | 用户自定义数据。系统不会访问、拷贝或释放该数据。 |
 
 #### [h2]OH_NetConn_NetworkAvailable()
 

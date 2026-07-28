@@ -2,8 +2,8 @@
 title: "Native api中导出的ICU4C符号列表"
 upstream_id: "harmonyos-references/icu4c-symbol"
 catalog: "harmonyos-references"
-content_hash: "200de76a866f"
-synced_at: "2026-07-09T01:01:50.585957"
+content_hash: "b7b4e5966b20"
+synced_at: "2026-07-28T16:53:25.899303"
 ---
 
 # Native api中导出的ICU4C符号列表
@@ -556,3 +556,10 @@ synced_at: "2026-07-09T01:01:50.585957"
 | FUNC | utf8_back1SafeBody | 22 |
 | FUNC | utf8_prevCharSafeBody | 22 |
 | FUNC | utrans_transIncrementalUChars | 22 |
+| FUNC | UCNV_FROM_U_CALLBACK_STOP | 26.0.0 |
+| FUNC | UCNV_TO_U_CALLBACK_STOP | 26.0.0 |
+| FUNC | UCNV_FROM_U_CALLBACK_SKIP | 26.0.0 |
+| FUNC | UCNV_FROM_U_CALLBACK_SUBSTITUTE | 26.0.0 |
+| FUNC | UCNV_FROM_U_CALLBACK_ESCAPE | 26.0.0 |
+| FUNC | UCNV_TO_U_CALLBACK_SKIP | 26.0.0 |
+| FUNC | UCNV_TO_U_CALLBACK_SUBSTITUTE | 26.0.0 |

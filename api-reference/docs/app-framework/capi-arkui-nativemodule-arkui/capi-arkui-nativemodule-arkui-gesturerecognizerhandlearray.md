@@ -1,12 +1,12 @@
 ---
-title: "ArkUI_GestureRecognizerHandle*"
+title: "ArkUI_GestureRecognizerHandleArray"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-gesturerecognizerhandlearray"
 catalog: "harmonyos-references"
-content_hash: "c4aefd635019"
-synced_at: "2026-07-09T00:58:40.534006"
+content_hash: "27c6e327b54b"
+synced_at: "2026-07-28T16:49:30.127575"
 ---
 
-# ArkUI_GestureRecognizerHandle*
+# ArkUI_GestureRecognizerHandleArray
 
 ```
 typedef ArkUI_GestureRecognizerHandle* ArkUI_GestureRecognizerHandleArray
@@ -14,7 +14,7 @@ typedef ArkUI_GestureRecognizerHandle* ArkUI_GestureRecognizerHandleArray
 
 #### 概述
 
-提供手势识别器句柄类型数组对象定义。
+定义手势识别器句柄数组类型，用于表示或传递多个手势识别器句柄，例如获取响应链中的手势识别器集合。详细机制和使用方式请参见[native_gesture.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-gesture-h)中的手势接口说明。
 
 起始版本： 12
 

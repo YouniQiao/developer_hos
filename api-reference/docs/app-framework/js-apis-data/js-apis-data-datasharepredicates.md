@@ -2,8 +2,8 @@
 title: "@ohos.data.dataSharePredicates (数据共享谓词)"
 upstream_id: "harmonyos-references/js-apis-data-datasharepredicates"
 catalog: "harmonyos-references"
-content_hash: "f3d30a4fe53e"
-synced_at: "2026-07-09T00:57:14.876934"
+content_hash: "acb74afc962e"
+synced_at: "2026-07-28T16:40:48.243838"
 ---
 
 # @ohos.data.dataSharePredicates (数据共享谓词)
@@ -49,8 +49,8 @@ equalTo(field: string, value: ValueType): DataSharePredicates
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| field | string | 是 | 数据库表中的列名。 field为undefined或者null时，此次调用接口配置的谓词无效。 |
-| value | [ValueType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-valuesbucket#valuetype) | 是 | 指示要与谓词匹配的值。 value为undefined或者null时，此次调用接口配置的谓词无效。 |
+| field | string | 是 | 数据库表中的列名。 field为undefined或null时，此次调用接口配置的谓词无效。 |
+| value | [ValueType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-valuesbucket#valuetype) | 是 | 指示要与谓词匹配的值。 value为undefined或null时，此次调用接口配置的谓词无效。 |
 
 返回值：
 
@@ -108,7 +108,7 @@ orderByAsc(field: string): DataSharePredicates
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| field | string | 是 | 数据库表中的列名。 field为undefined或者null时，此次调用接口配置的谓词无效。 |
+| field | string | 是 | 数据库表中的列名。 field为undefined或null时，此次调用接口配置的谓词无效。 |
 
 返回值：
 
@@ -139,7 +139,7 @@ orderByDesc(field: string): DataSharePredicates
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| field | string | 是 | 数据库表中的列名。 field为undefined或者null时，此次调用接口配置的谓词无效。 |
+| field | string | 是 | 数据库表中的列名。 field为undefined或null时，此次调用接口配置的谓词无效。 |
 
 返回值：
 
@@ -202,8 +202,8 @@ in(field: string, value: Array<ValueType>): DataSharePredicates
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| field | string | 是 | 数据库表中的列名。 field为undefined或者null时，此次调用接口配置的谓词无效。 |
-| value | Array | 是 | 以ValueType型数组形式指定的要匹配的值。 |
+| field | string | 是 | 数据库表中的列名。 field为undefined或null时，此次调用接口配置的谓词无效。 当field为字符串'null'或'undefined'时，键值型数据库和关系型数据库接口使用该谓词时，可能匹配结果非预期或抛出异常。 |
+| value | Array | 是 | 以ValueType型数组形式指定的要匹配的值。 value为undefined或null时，此次调用接口配置的谓词无效。 |
 
 返回值：
 
@@ -252,7 +252,7 @@ predicates.notEqualTo("NAME", "Rose");
 
 beginWrap(): DataSharePredicates
 
-该接口用于向谓词添加左括号，相当于sql语句的“(”，必须和右括号一起使用。
+该接口用于向谓词添加左括号，相当于SQL语句的“(”，必须和右括号一起使用。
 
 目前仅关系型数据库支持该谓词。
 
@@ -280,7 +280,7 @@ predicates.equalTo("NAME", "lisi")
 
 endWrap(): DataSharePredicates
 
-该接口用于向谓词添加右括号，相当于sql语句的“)”，必须和左括号一起使用。
+该接口用于向谓词添加右括号，相当于SQL语句的“)”，必须和左括号一起使用。
 
 目前仅关系型数据库支持该谓词。
 

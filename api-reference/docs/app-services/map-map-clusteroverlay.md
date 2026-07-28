@@ -2,8 +2,8 @@
 title: "Interface (ClusterOverlay)"
 upstream_id: "harmonyos-references/map-map-clusteroverlay"
 catalog: "harmonyos-references"
-content_hash: "7a89716f227c"
-synced_at: "2026-07-09T01:01:25.485503"
+content_hash: "4346d41030e1"
+synced_at: "2026-07-28T16:52:43.928592"
 ---
 
 # Interface (ClusterOverlay)
@@ -16,7 +16,7 @@ import { map, mapCommon } from '@kit.MapKit';
 
 #### ClusterOverlay
 
-聚合图层类。
+聚合图层类。ClusterOverlay用于在地图上展示聚合后的标记点，以优化大量标记点显示时的性能和用户体验。它将地理位置相近的多个标记点合并为一个聚合点，并支持点击聚合点展开查看具体标记点。适用于展示大量POI数据、避免地图过于拥挤的情况。
 
 模型约束： 此接口仅可在Stage模型下使用。
 

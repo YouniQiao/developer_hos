@@ -2,8 +2,8 @@
 title: "FIDO2_PublicKeyCredentialCreationOptions"
 upstream_id: "harmonyos-references/_f_i_d_o2___public_key_credential_creation_options"
 catalog: "harmonyos-references"
-content_hash: "23d6f412ba0a"
-synced_at: "2026-07-09T00:59:18.889598"
+content_hash: "234a233180bf"
+synced_at: "2026-07-28T16:50:31.509703"
 ---
 
 # FIDO2_PublicKeyCredentialCreationOptions
@@ -14,7 +14,9 @@ synced_at: "2026-07-09T00:59:18.889598"
 
 起始版本： 6.0.0(20)
 
-相关模块： [FIDO2](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey)
+相关模块： [FIDO2（通行密钥服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey)
+
+所在头文件： [fido2_api.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication_capi_header_fido2)
 
 #### 汇总
 
@@ -26,7 +28,7 @@ synced_at: "2026-07-09T00:59:18.889598"
 | [FIDO2_PublicKeyCredentialUserEntity](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_f_i_d_o2___public_key_credential_user_entity) [user](#user) | 创建新凭据时用户的属性。 |
 | [Uint8Buff](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_uint8_buff) [challenge](#challenge) | 挑战值。 |
 | [FIDO2_CredentialCreationOptionArray](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_f_i_d_o2___credential_creation_option_array) [pubKeyCredParams](#pubkeycredparams) | 认证凭据的附加参数数组。 |
-| uint32_t [timeout](#timeout) | 注册操作最长时间，单位为ms。默认为300000（5分钟），最大为600000（10分钟）。可选。 |
+| uint32_t [timeout](#timeout) | 超时时间。单位为ms。默认为300000（5分钟），限制为0到600000（10分钟）。可选。 |
 | [FIDO2_PublicKeyCredentialDescriptorArray](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_f_i_d_o2___public_key_credential_descriptor_array) [excludeCredentials](#excludecredentials) | FIDO服务器已注册的凭据列表。默认值为[]。可选。 |
 | [FIDO2_AuthenticatorSelectionCriteria](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_f_i_d_o2___authenticator_selection_criteria) [authenticatorSelection](#authenticatorselection) | 身份认证器相关配置项。 |
 | [FIDO2_PublicKeyCredentialHintArray](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_f_i_d_o2___public_key_credential_hint_array) [hints](#hints) | 认证方式指示。默认值为[]。可选。 |
@@ -70,7 +72,7 @@ Uint8Buff FIDO2_PublicKeyCredentialCreationOptions::challenge
 ```
  描述
 
-挑战。
+挑战值。
 
 #### [h2]excludeCredentials
 
@@ -124,7 +126,7 @@ uint32_t FIDO2_PublicKeyCredentialCreationOptions::timeout
 ```
  描述
 
-注册操作最长时间，单位为ms。可选。
+超时时间。单位为ms。默认为300000（5分钟），限制为0到600000（10分钟）。可选。
 
 #### [h2]user
 

@@ -2,8 +2,8 @@
 title: "ArkTS API 错误码"
 upstream_id: "harmonyos-references/errorcode-ringtone"
 catalog: "harmonyos-references"
-content_hash: "7cd65b690649"
-synced_at: "2026-07-09T01:00:49.101118"
+content_hash: "3e025f0cbe21"
+synced_at: "2026-07-28T16:52:05.743216"
 ---
 
 # ArkTS API 错误码
@@ -77,6 +77,24 @@ Failed to call the system API.
 可能原因
 
 其他未知错误。
+
+处理步骤
+
+尝试重试操作或请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。
+
+#### 1011600005 文件类型不匹配
+
+错误信息
+
+The data type does not match the ringtone type.
+
+错误描述
+
+文件类型匹配失败。
+
+可能原因
+
+传入的文件类型不匹配。
 
 处理步骤
 

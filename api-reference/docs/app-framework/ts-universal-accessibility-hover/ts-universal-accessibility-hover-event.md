@@ -2,17 +2,17 @@
 title: "无障碍悬浮事件"
 upstream_id: "harmonyos-references/ts-universal-accessibility-hover-event"
 catalog: "harmonyos-references"
-content_hash: "04b54d5211be"
-synced_at: "2026-07-09T17:23:31.786060"
+content_hash: "a360bfd727b1"
+synced_at: "2026-07-28T16:41:57.861527"
 ---
 
 # 无障碍悬浮事件
 
-在开启无障碍模式后，Touch事件会转换为无障碍悬浮事件。
+在开启无障碍模式后，Touch事件会转换为无障碍悬浮事件。该模块提供onAccessibilityHover和onAccessibilityHoverTransparent接口，用于在无障碍模式下监听和处理单指触摸产生的悬浮事件，适用于需要为视障用户提供触摸交互无障碍支持的组件开发场景，帮助开发者捕获无法被无障碍聚焦的组件的Touch事件，提升应用的无障碍访问能力。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 从API version 12开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+- 从API version 12开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 - 本模块接口仅可在Stage模型下使用。
 - 目前仅支持通过开启无障碍模式触发。
 
@@ -22,7 +22,7 @@ onAccessibilityHover(callback: AccessibilityCallback): T
 
 开启无障碍模式后，单指触摸绑定该回调的组件时触发该回调。
 
-![](./img/note_3.0-zh-cn.png) 该接口不支持在[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)中调用。
+![](./img/note_3.0-zh-cn.png) 本接口与[onAccessibilityHoverTransparent](#onaccessibilityhovertransparent20)为互补关系：onAccessibilityHover处理可被无障碍识别为可聚焦组件的悬浮事件（回调参数为AccessibilityHoverEvent）；onAccessibilityHoverTransparent处理无法被无障碍识别为可聚焦组件的触摸事件（回调参数为TouchEvent）。同一组件同一时刻仅会触发其中一个回调。若需同时监听两类组件，可将两个接口分别绑定到不同组件上。该接口不支持在[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)中调用。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -32,7 +32,7 @@ onAccessibilityHover(callback: AccessibilityCallback): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | [AccessibilityCallback](#accessibilitycallback) | 是 | 提供开启无障碍模式后的无障碍悬浮回调事件，当开启无障碍模式后，单指触摸绑定该回调的组件时触发该回调。 |
+| callback | [AccessibilityCallback](#accessibilitycallback) | 是 | 提供开启无障碍模式后的无障碍悬浮回调事件，当单指触摸绑定该回调的可被无障碍识别为可聚焦的组件时触发该回调。 |
 
 返回值：
 
@@ -55,7 +55,7 @@ type AccessibilityCallback = (isHover: boolean, event: AccessibilityHoverEvent) 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | isHover | boolean | 是 | 表示开启无障碍模式后，手指在组件上触发由Touch事件转换成的无障碍悬浮事件，手指进入时为true，退出时为false。 |
-| event | [AccessibilityHoverEvent](#accessibilityhoverevent对象说明) | 是 | 获得AccessibilityHoverEvent对象。 |
+| event | [AccessibilityHoverEvent](#accessibilityhoverevent对象说明) | 是 | 无障碍悬浮事件对象，用于获取触发无障碍悬浮事件时的详细信息，包括无障碍悬浮动作类型（type）、手指相对于组件/窗口/屏幕的坐标（x、y、windowX、windowY、displayX、displayY、globalDisplayX、globalDisplayY）等属性。 |
 
 #### AccessibilityHoverEvent对象说明
 
@@ -67,23 +67,25 @@ type AccessibilityCallback = (isHover: boolean, event: AccessibilityHoverEvent) 
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| type | [AccessibilityHoverType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#accessibilityhovertype12) | 否 | 否 | 无障碍悬浮动作。 |
-| x | number | 否 | 否 | 手指位置相对于当前组件左上角的x轴坐标。 单位：vp |
-| y | number | 否 | 否 | 手指位置相对于当前组件左上角的y轴坐标。 单位：vp |
-| windowX | number | 否 | 否 | 手指位置相对于应用窗口左上角的x轴坐标。 单位：vp |
-| windowY | number | 否 | 否 | 手指位置相对于应用窗口左上角的y轴坐标。 单位：vp |
-| displayX | number | 否 | 否 | 手指位置相对于应用屏幕左上角的x轴坐标。 单位：vp |
-| displayY | number | 否 | 否 | 手指位置相对于应用屏幕左上角的y轴坐标。 单位：vp |
-| globalDisplayX20+ | number | 否 | 是 | 手指位置相对于全局屏幕的左上角的x轴坐标。 单位：vp 取值范围：[0, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
-| globalDisplayY20+ | number | 否 | 是 | 手指位置相对于全局屏幕的左上角的y轴坐标。 单位：vp 取值范围：[0, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| type | [AccessibilityHoverType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#accessibilityhovertype12) | 否 | 否 | 无障碍悬浮动作类型，包括HOVER_ENTER（手指进入组件）、HOVER_MOVE（手指在组件内移动）、HOVER_EXIT（手指离开组件）和HOVER_CANCEL（悬浮事件被取消）。 |
+| x | number | 否 | 否 | 手指位置相对于当前组件左上角的x轴坐标。 单位：vp 取值范围：[0, +∞) |
+| y | number | 否 | 否 | 手指位置相对于当前组件左上角的y轴坐标。 单位：vp 取值范围：[0, +∞) |
+| windowX | number | 否 | 否 | 手指位置相对于应用窗口左上角的x轴坐标。 单位：vp 取值范围：[0, +∞) |
+| windowY | number | 否 | 否 | 手指位置相对于应用窗口左上角的y轴坐标。 单位：vp 取值范围：[0, +∞) |
+| displayX | number | 否 | 否 | 手指位置相对于应用屏幕左上角的x轴坐标。 单位：vp 取值范围：[0, +∞) |
+| displayY | number | 否 | 否 | 手指位置相对于应用屏幕左上角的y轴坐标。 单位：vp 取值范围：[0, +∞) |
+| globalDisplayX20+ | number | 否 | 是 | 手指位置相对于全局屏幕左上角的x轴坐标。 单位：vp 取值范围：[0, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| globalDisplayY20+ | number | 否 | 是 | 手指位置相对于全局屏幕左上角的y轴坐标。 单位：vp 取值范围：[0, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 
 #### onAccessibilityHoverTransparent20+
 
 onAccessibilityHoverTransparent(callback: AccessibilityTransparentCallback): T
 
-在开启朗读类辅助应用以及手指触摸在组件区域的前提下，当该组件及子组件全部没有被无障碍悬浮识别为可聚焦时，会触发该回调，并且返回无障碍悬浮事件。仅支持手指触摸。不支持如下组件在触摸位置中的场景，包括[UIExtension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-uiextension)、[Web](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web)、[XComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-xcomponent)与第三方UI框架对接。在上述场景下，该回调接口无法生效。
+当开启朗读类辅助应用（如屏幕朗读器）且手指触摸在组件区域，同时该组件及子组件全部没有被无障碍悬浮识别为可聚焦时，会触发该回调，并通过回调参数返回该触摸事件对应的TouchEvent。仅支持手指触摸。不支持触摸位置位于以下组件区域内的场景，包括[UIExtension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-uiextension)、[Web](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web)、[XComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-xcomponent)，以及与第三方UI框架对接的场景。在上述场景下，该回调接口无法生效。
 
 组件无法被无障碍悬浮识别为可聚焦的主要原因包括，组件的无障碍重要性[accessibilityLevel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-accessibility#accessibilitylevel)为"no"或者"no-hide-descendants"；组件无文本且未配置无障碍文本[accessibilityText](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-accessibility#accessibilitytext)，同时不支持点击或长按操作。
+
+![](./img/note_3.0-zh-cn.png) 本接口与[onAccessibilityHover](#onaccessibilityhover)为互补关系，同一组件同一时刻仅会触发其中一个回调。该接口不支持在[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)中调用。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -93,7 +95,7 @@ onAccessibilityHoverTransparent(callback: AccessibilityTransparentCallback): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | [AccessibilityTransparentCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-accessibility-hover-event#accessibilitytransparentcallback20) | 是 | 提供开启无障碍模式后未能响应的用户输入的触摸事件，当开启无障碍模式后，单指触摸未能响应无障碍悬浮事件位置时触发该回调。 |
+| callback | [AccessibilityTransparentCallback](#accessibilitytransparentcallback20) | 是 | 提供开启朗读类辅助应用后未能响应的用户输入的触摸事件。当手指触摸在组件区域，且该组件及子组件全部没有被无障碍悬浮识别为可聚焦时，触发该回调。 |
 
 返回值：
 
@@ -105,7 +107,7 @@ onAccessibilityHoverTransparent(callback: AccessibilityTransparentCallback): T
 
 type AccessibilityTransparentCallback = (event: TouchEvent) => void
 
-提供开启无障碍模式后未能响应的用户输入的触摸事件。
+提供开启朗读类辅助应用后未能被无障碍悬浮响应的触摸事件回调类型。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -115,13 +117,13 @@ type AccessibilityTransparentCallback = (event: TouchEvent) => void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| event | [TouchEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-touch#touchevent对象说明) | 是 | 原始Touch事件。 **说明：** TouchEvent对象的触摸事件的类型[TouchType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#touchtype)为四种无障碍悬浮事件类型中的一种，四种无障碍悬浮事件类型为HOVER_ENTER、HOVER_MOVE、HOVER_EXIT和HOVER_CANCEL。 |
+| event | [TouchEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-touch#touchevent对象说明) | 是 | 原始Touch事件对象，用于获取无法被无障碍悬浮识别为可聚焦组件的触摸事件的详细信息，包括触摸点坐标、触摸类型等属性。 **说明：** TouchEvent对象的触摸事件的类型[TouchType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#touchtype)为四种无障碍悬浮事件类型中的一种，四种无障碍悬浮事件类型为HOVER_ENTER、HOVER_MOVE、HOVER_EXIT和HOVER_CANCEL。 |
 
 #### 示例
 
 #### [h2]示例1 (使用onAccessibilityHover事件)
 
-该示例主要演示通过使用onAccessibilityHover事件，对无障碍模式下的按钮进行设置。
+该示例主要演示使用onAccessibilityHover事件，对无障碍模式下的按钮进行设置。
 
 ```
 // xxx.ets
@@ -136,8 +138,8 @@ struct OnAccessibilityHoverEventExample {
       Button(this.hoverText)
         .width(180).height(80)
         .backgroundColor(this.color)
-        .onAccessibilityHover((isHover: boolean, event: AccessibilityHoverEvent) => {
-          // 通过onAccessibilityHover事件动态修改按钮在是否有鼠标悬浮时的文本内容与背景颜色
+        .onAccessibilityHover((isHover: boolean) => {
+          // 通过onAccessibilityHover事件动态修改按钮在无障碍悬浮（手指触摸进入/退出）时的文本内容与背景颜色
           if (isHover) {
             this.hoverText = 'hover';
             this.color = Color.Pink;
@@ -155,20 +157,20 @@ struct OnAccessibilityHoverEventExample {
 
 该示例代码在无障碍模式下通过onAccessibilityHoverTransparent接口捕获无法无障碍聚焦的组件的触摸事件，最后再将事件信息显示在组件下方的文本中。
 
-从API version 20开始，新增了[onAccessibilityHoverTransparent](#onaccessibilityhovertransparent20)入参类型为AccessibilityTransparentCallback的接口。
+从API version 20开始，新增了入参类型为AccessibilityTransparentCallback的[onAccessibilityHoverTransparent](#onaccessibilityhovertransparent20)接口。
 
 ```
 @Entry
 @Component
-struct TestExample {
+struct OnAccessibilityHoverTransparentExample {
   @State text: string = '';
   @State eventType: string = '';
 
   build() {
     Column({ space: 50 }) {
       Column() {
-        Button("Test Button")
-          .accessibilityLevel("no")
+        Button('Test Button')
+          .accessibilityLevel('no')
       }.margin({ top: 20 })
 
       Text(this.text)

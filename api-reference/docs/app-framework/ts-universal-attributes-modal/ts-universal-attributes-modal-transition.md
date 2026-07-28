@@ -2,8 +2,8 @@
 title: "全屏模态转场"
 upstream_id: "harmonyos-references/ts-universal-attributes-modal-transition"
 catalog: "harmonyos-references"
-content_hash: "2572ee17d8ea"
-synced_at: "2026-07-09T00:57:42.249931"
+content_hash: "8b4cdc9cc303"
+synced_at: "2026-07-28T16:42:44.106711"
 ---
 
 # 全屏模态转场
@@ -34,7 +34,7 @@ bindContentCover(isShow: boolean, builder: CustomBuilder, type?: ModalTransition
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | isShow | boolean | 是 | 是否显示全屏模态页面。 -true：显示全屏模态页面。 -false：隐藏全屏模态页面。 从API version 10开始，该参数支持[$$](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-two-way-sync)双向绑定变量。 从API version 18开始，该参数支持[!!](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-binding#系统组件参数双向绑定)双向绑定变量。 |
-| builder | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 是 | 配置全屏模态页面内容。 |
+| builder | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 是 | 配置全屏模态页面内容。 **说明**：在搭载HarmonyOS 7.0.0及以上版本，不管Builder是否有唯一根节点，都可以拉起全模态页面。针对低于该版本的设备，Builder需要有唯一的容器类根节点，如Column，才能拉起全模态页面。 |
 | type | [ModalTransition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#modaltransition) | 否 | 全屏模态页面的系统转场方式。 默认值：ModalTransition.DEFAULT。 **说明：** 与transition同时设置时，此属性不生效。 |
 
 返回值：
@@ -58,7 +58,7 @@ bindContentCover(isShow: boolean, builder: CustomBuilder, options?: ContentCover
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | isShow | boolean | 是 | 是否显示全屏模态页面。 -true：显示全屏模态页面。 -false：隐藏全屏模态页面。 从API version 10开始，该参数支持[$$](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-two-way-sync)双向绑定变量。 从API version 18开始，该参数支持[!!](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-binding#系统组件参数双向绑定)双向绑定变量。 |
-| builder | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 是 | 配置全屏模态页面内容。 |
+| builder | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 是 | 配置全屏模态页面内容。 **说明**：在搭载HarmonyOS 7.0.0及以上版本，不管Builder是否有唯一根节点，都可以拉起全模态页面。针对低于该版本的设备，Builder需要有唯一的容器类根节点，如Column，才能拉起全模态页面。 |
 | options | [ContentCoverOptions](#contentcoveroptions) | 否 | 配置全屏模态页面的可选属性。 |
 
 返回值：
@@ -78,7 +78,7 @@ bindContentCover(isShow: boolean, builder: CustomBuilder, options?: ContentCover
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | modalTransition | [ModalTransition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#modaltransition) | 否 | 是 | 全屏模态页面的系统转场方式。 默认值：ModalTransition.DEFAULT。 **说明：** 与transition同时设置时，此属性不生效。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| onWillDismiss12+ | Callback | 否 | 是 | 全屏模态页面交互式关闭回调函数。 **说明：** 当用户执行back事件关闭交互操作时，如果注册该回调函数，则不会立刻关闭。在回调函数中可以通过reason得到阻拦关闭页面的操作类型，从而根据原因选择是否关闭全屏模态页面。在onWillDismiss回调中，不能再做onWillDismiss拦截。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| onWillDismiss12+ | Callback | 否 | 是 | 全屏模态页面交互式关闭回调函数。 **说明：** 当用户执行back事件关闭交互操作时，如果注册该回调函数，则不会立刻关闭。在回调函数中可以通过reason得到拦截关闭页面的操作类型，从而根据原因选择是否关闭全屏模态页面。在onWillDismiss回调中，不能再做onWillDismiss拦截。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | transition12+ | [TransitionEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-transition-animation-component#transitioneffect10对象说明) | 否 | 是 | 全屏模态页面的自定义转场方式。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | enableSafeArea20+ | boolean | 否 | 是 | 全屏模态是否适配安全区域，true表示全屏模态适配安全区域，将内容限制在安全区内，避让导航条和状态栏，false表示不做处理，和之前的样式保持一致。默认值为false。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 
@@ -110,7 +110,7 @@ struct ModalTransitionExample {
   @Builder
   myBuilder2() {
     Column() {
-      Button("close modal 2")
+      Button('close modal 2')
         .margin(10)
         .fontSize(20)
         .onClick(() => {
@@ -133,7 +133,7 @@ struct ModalTransitionExample {
         modalTransition: ModalTransition.NONE,
         backgroundColor: Color.Orange,
         onWillAppear: () => {
-          console.info("BindContentCover onWillAppear.");
+          console.info('BindContentCover onWillAppear.');
         },
         onAppear: () => {
           console.info("BindContentCover onAppear.");
@@ -190,7 +190,7 @@ struct ModalTransitionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253230.gif)
+ ![](./img/zh-cn_image_0000002686087857.gif)
 
 #### [h2]示例2（自定义转场动画）
 
@@ -219,7 +219,7 @@ struct ModalTransitionExample {
   @Builder
   myBuilder2() {
     Column() {
-      Button("close modal 2")
+      Button('close modal 2')
         .margin(10)
         .fontSize(20)
         .onClick(() => {
@@ -233,7 +233,7 @@ struct ModalTransitionExample {
   @Builder
   myBuilder() {
     Column() {
-      Button("transition modal 2")
+      Button('transition modal 2')
         .margin(10)
         .fontSize(20)
         .onClick(() => {
@@ -255,7 +255,7 @@ struct ModalTransitionExample {
         }
       })
 
-      Button("close modal 1")
+      Button('close modal 1')
         .margin(10)
         .fontSize(20)
         .onClick(() => {
@@ -303,7 +303,7 @@ struct ModalTransitionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612415.gif)
+ ![](./img/zh-cn_image_0000002685928029.gif)
 
 #### [h2]示例3（上下切换转场）
 
@@ -320,7 +320,7 @@ struct ModalTransitionExample {
   @Builder
   myBuilder2() {
     Column() {
-      Button("close modal 2")
+      Button('close modal 2')
         .margin(10)
         .fontSize(20)
         .onClick(() => {
@@ -334,7 +334,7 @@ struct ModalTransitionExample {
   @Builder
   myBuilder() {
     Column() {
-      Button("transition modal 2")
+      Button('transition modal 2')
         .margin(10)
         .fontSize(20)
         .onClick(() => {
@@ -356,7 +356,7 @@ struct ModalTransitionExample {
         }
       })
 
-      Button("close modal 1")
+      Button('close modal 1')
         .margin(10)
         .fontSize(20)
         .onClick(() => {
@@ -400,7 +400,7 @@ struct ModalTransitionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413124.gif)
+ ![](./img/zh-cn_image_0000002656008350.gif)
 
 #### [h2]示例4（透明度渐变转场）
 
@@ -417,7 +417,7 @@ struct ModalTransitionExample {
   @Builder
   myBuilder2() {
     Column() {
-      Button("close modal 2")
+      Button('close modal 2')
         .margin(10)
         .fontSize(20)
         .onClick(() => {
@@ -432,7 +432,7 @@ struct ModalTransitionExample {
   @Builder
   myBuilder() {
     Column() {
-      Button("transition modal 2")
+      Button('transition modal 2')
         .margin(10)
         .fontSize(20)
         .onClick(() => {
@@ -454,7 +454,7 @@ struct ModalTransitionExample {
         }
       })
 
-      Button("close modal 1")
+      Button('close modal 1')
         .margin(10)
         .fontSize(20)
         .onClick(() => {
@@ -498,7 +498,7 @@ struct ModalTransitionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732353.gif)
+ ![](./img/zh-cn_image_0000002655848430.gif)
 
 #### [h2]示例5（设置不同效果的自定义转场）
 
@@ -544,7 +544,7 @@ struct ModalTransitionExample {
             backgroundColor: Color.Gray,
             transition: TransitionEffect.SLIDE.animation({ duration: 5000, curve: Curve.LinearOutSlowIn }),
             onWillDismiss: ((dismissContentCoverAction: DismissContentCoverAction) => {
-              if (dismissContentCoverAction.reason == DismissReason.PRESS_BACK) {
+              if (dismissContentCoverAction.reason === DismissReason.PRESS_BACK) {
                 console.info("BindContentCover dismiss reason is back pressed");
               }
               dismissContentCoverAction.dismiss();
@@ -592,7 +592,7 @@ struct ModalTransitionExample {
                 TransitionEffect.rotate({ z: 1, angle: 180 }).animation({ duration: 1300 }))
             ),
             onWillDismiss: ((dismissContentCoverAction: DismissContentCoverAction) => {
-              if (dismissContentCoverAction.reason == DismissReason.PRESS_BACK) {
+              if (dismissContentCoverAction.reason === DismissReason.PRESS_BACK) {
                 console.info("back pressed");
               }
               dismissContentCoverAction.dismiss();
@@ -613,11 +613,11 @@ struct ModalTransitionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253232.gif)
+ ![](./img/zh-cn_image_0000002686087859.gif)
 
 #### [h2]示例6（设置全屏模态适配安全区）
 
-从API version 20开始，该示例主要演示设置enableSafeArea为true后全屏模态适配安全区的内容效果。全屏模态容器其背景色为浅蓝色，内容颜色为灰色，内容在安全区内布局。
+从API version 20开始，该示例主要演示设置enableSafeArea为true后全屏模态适配安全区的内容效果。全屏模态容器的背景色为浅蓝色，内容颜色为灰色，内容在安全区内布局。
 
 ```
 // xxx.ets
@@ -675,4 +675,4 @@ struct SafeAreaController {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612417.png)
+ ![](./img/zh-cn_image_0000002685928031.png)

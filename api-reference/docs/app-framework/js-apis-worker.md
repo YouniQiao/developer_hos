@@ -2,8 +2,8 @@
 title: "@ohos.worker (启动一个Worker)"
 upstream_id: "harmonyos-references/js-apis-worker"
 catalog: "harmonyos-references"
-content_hash: "5e331db3ba25"
-synced_at: "2026-07-09T00:57:27.630317"
+content_hash: "9b5565ba2d31"
+synced_at: "2026-07-28T16:40:58.482275"
 ---
 
 # @ohos.worker (启动一个Worker)
@@ -77,7 +77,7 @@ Worker线程的优先级枚举，各优先级对应关系请参考[QoS等级定�
 | onmessage9+ | (event: [MessageEvents](#messageevents9)) => void | 否 | 是 | 回调函数。表示宿主线程接收到来自其创建的Worker通过workerPort.[postMessage](#postmessage9-3)或workerPort.[postMessageWithSharedSendable](#postmessagewithsharedsendable12-1)接口发送的消息时被调用的事件处理程序，处理程序在宿主线程中执行。其中回调函数中event类型为[MessageEvents](#messageevents9)，表示收到的Worker线程发送的消息数据。默认值为undefined。 **元服务API**：从API version 11开始，该属性支持在元服务中使用。 |
 | onmessageerror9+ | (event: [MessageEvents](#messageevents9)) => void | 否 | 是 | 回调函数。用于处理Worker对象接收到的无法被序列化的消息。该处理程序在宿主线程中执行，event类型为[MessageEvents](#messageevents9)，表示收到的Worker消息数据。默认值为undefined。 **元服务API**：从API version 11开始，该属性支持在元服务中使用。 |
 
-使用Worker模块时，API version 18及之后的版本建议在宿主线程中注册onAllErrors回调，以捕获Worker线程生命周期内的各种异常。API version 18之前的版本应注册onerror回调。如果未注册onAllErrors或onerror回调，当Worker线程出现异常时会发生jscrash问题。注意，onerror接口仅能捕获onmessage回调中的同步异常，捕获异常后，Worker线程将进入销毁流程，无法继续使用。
+使用Worker模块时，API version 18及之后的版本建议在宿主线程中注册onAllErrors回调，以捕获Worker线程生命周期内的各种异常。API version 18之前的版本应注册onerror回调。如果未注册onAllErrors或onerror回调，当Worker线程出现异常时会发生崩溃问题。注意，onerror接口仅能捕获onmessage回调中的同步异常，捕获异常后，Worker线程将进入销毁流程，无法继续使用。
 
 onAllErrors接口与onerror接口之间的行为差异如下：
 
@@ -357,8 +357,8 @@ on(type: string, listener: WorkerEventListener): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 10200004 | Worker instance is not running. |
-| 10200005 | The invoked API is not supported in workers. |
+| 10200004 | The Worker instance is not running. |
+| 10200005 | The called API is not supported in the worker thread. |
 
 示例：
 
@@ -400,8 +400,8 @@ once(type: string, listener: WorkerEventListener): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 10200004 | Worker instance is not running. |
-| 10200005 | The invoked API is not supported in workers. |
+| 10200004 | The Worker instance is not running. |
+| 10200005 | The called API is not supported in the worker thread. |
 
 示例：
 
@@ -441,8 +441,8 @@ off(type: string, listener?: WorkerEventListener): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 10200004 | Worker instance is not running. |
-| 10200005 | The invoked API is not supported in workers. |
+| 10200004 | The Worker instance is not running. |
+| 10200005 | The called API is not supported in the worker thread. |
 
 示例：
 
@@ -495,7 +495,7 @@ registerGlobalCallObject(instanceName: string, globalCallObject: Object): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 10200004 | Worker instance is not running. |
+| 10200004 | The Worker instance is not running. |
 
 示例：
 
@@ -566,7 +566,7 @@ unregisterGlobalCallObject(instanceName?: string): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 10200004 | Worker instance is not running. |
+| 10200004 | The Worker instance is not running. |
 
 示例：
 
@@ -596,7 +596,7 @@ workerInstance.postMessage("start worker");
 
 terminate(): void
 
-销毁Worker线程并停止Worker线程接收消息。
+由宿主线程主动销毁Worker线程并停止Worker线程接收消息。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -643,8 +643,8 @@ addEventListener(type: string, listener: WorkerEventListener): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 10200004 | Worker instance is not running. |
-| 10200005 | The invoked API is not supported in workers. |
+| 10200004 | The Worker instance is not running. |
+| 10200005 | The called API is not supported in the worker thread. |
 
 示例：
 
@@ -685,7 +685,7 @@ removeEventListener(type: string, callback?: WorkerEventListener): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 10200004 | Worker instance is not running. |
+| 10200004 | The Worker instance is not running. |
 
 示例：
 
@@ -732,7 +732,7 @@ dispatchEvent(event: Event): boolean
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 10200004 | Worker instance is not running. |
+| 10200004 | The Worker instance is not running. |
 
 示例：
 
@@ -768,7 +768,7 @@ removeAllListener(): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 10200004 | Worker instance is not running. |
+| 10200004 | The Worker instance is not running. |
 
 示例：
 
@@ -1149,7 +1149,7 @@ Worker线程调用宿主线程上注册的对象的指定方法，此调用对Wo
 | --- | --- | --- | --- |
 | instanceName | string | 是 | 注册对象时使用的键，用于在宿主线程中查找对象。 |
 | methodName | string | 是 | 在已注册对象上调用的方法名。该方法不能使用async修饰，也不能基于底层异步机制返回结果，否则会抛出异常。 |
-| timeout | number | 是 | 表示从Worker线程发起调用开始到在主线程中执行目标方法的最大等待时间，单位为ms，取整数，取值范围为[1-5000]ms。也可取特殊值0，此时表示本次调用等待时间为5000ms。 API version 21 之前，在debug模式下受此参数设置的最大等待时间限制。 从API version 21 开始，在debug模式下不受此参数设置的最大等待时间限制，可一直等待。 |
+| timeout | number | 是 | 表示从Worker线程发起调用开始到在主线程中执行目标方法的最大等待时间，单位为ms，取整数，取值范围为[1-5000]ms。超出范围的，则表示本次调用等待时间为5000ms。 API version 21 之前，在debug模式下受此参数设置的最大等待时间限制。 从API version 21 开始，在debug模式下不受此参数设置的最大等待时间限制，可一直等待。 |
 | args | Object[] | 否 | 注册对象上所调用方法的参数数组。 |
 
 返回值：
@@ -1164,7 +1164,7 @@ Worker线程调用宿主线程上注册的对象的指定方法，此调用对Wo
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 10200004 | Worker instance is not running. |
+| 10200004 | The Worker instance is not running. |
 | 10200006 | An exception occurred during serialization. |
 | 10200019 | The globalCallObject is not registered. |
 | 10200020 | The method to be called is not callable or is an async method or a generator. |
@@ -1263,9 +1263,9 @@ Worker线程向宿主线程发送插队消息，消息中的[Sendable对象](htt
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 如果是Worker线程往主线程发送插队的消息，消息能够插队并且按优先级进行发送。
+- 如果是Worker线程向宿主线程发送插队的消息，消息能够插队并且按优先级进行发送。
 - 如果是Worker线程之间发送插队的消息，消息只能插队，没有优先级。
-- postMessage和postMessageWithSharedSendable接口往主线程发送消息，默认是HIGH优先级，无插队效果。
+- postMessage和postMessageWithSharedSendable接口向宿主线程发送消息，默认是HIGH优先级，无插队效果。
 
 起始版本：26.0.0
 
@@ -1298,8 +1298,7 @@ Worker线程向宿主线程发送插队消息，消息中的[Sendable对象](htt
 // worker文件路径为：entry/src/main/ets/workers/Worker.ets
 // Worker.ets
 
-import { MessageEvents, ThreadWorkerGlobalScope, worker } from '@kit.ArkTS';
-import { Priority } from '@ohos.worker';
+import { MessageEvents, ThreadWorkerGlobalScope, worker, Priority } from '@kit.ArkTS';
 
 const workerPort: ThreadWorkerGlobalScope = worker.workerPort;
 workerPort.onmessage = (e: MessageEvents) => {
@@ -1349,8 +1348,7 @@ workerInstance.onmessage = (e: MessageEvents) => {
  如果传递的参数是对象字面量的话，需要[显式标注对象字面量的类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/typescript-to-arkts-migration-guide#需要显式标注对象字面量的类型)。
 
 ```
-import { worker, ThreadWorkerGlobalScope, MessageEvents, ErrorEvent } from '@kit.ArkTS';
-import { Priority } from '@ohos.worker';
+import { worker, ThreadWorkerGlobalScope, MessageEvents, ErrorEvent, Priority } from '@kit.ArkTS';
 
 class ClassA {
   public obj: string = ''
@@ -1407,8 +1405,8 @@ workerPort.onmessage = (e: MessageEvents) => {
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 10200004 | Worker instance is not running. |
-| 10200005 | The invoked API is not supported in workers. |
+| 10200004 | The Worker instance is not running. |
+| 10200005 | The called API is not supported in the worker thread. |
 
 示例：
 
@@ -1481,7 +1479,7 @@ type ErrorCallback = (err: ErrorEvent) => void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| err | ErrorEvent | 是 | 错误事件类，表示Worker执行过程中出现的异常信息。 |
+| err | [ErrorEvent](#errorevent) | 是 | 错误事件类，表示Worker执行过程中出现的异常信息。 |
 
 #### Worker(deprecated)
 
@@ -1765,7 +1763,7 @@ workerPort.removeEventListener('alert');
 
 dispatchEvent(event: Event): boolean
 
-分发定义在Worker的事件。
+分发Worker实例上已注册的事件。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，建议使用[dispatchEvent9+](#dispatchevent9)替代。
 
@@ -1863,7 +1861,7 @@ Worker线程用于与宿主线程通信的类。DedicatedWorkerGlobalScope类继
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | onmessage(deprecated) | (this: DedicatedWorkerGlobalScope, ev: [MessageEvent](#messageeventt)) => void | 否 | 是 | 回调函数，表示Worker线程收到来自其宿主线程通过postMessage接口发送的消息时被调用的事件处理程序，处理程序在Worker线程中执行。其中this指调用者对象本身[DedicatedWorkerGlobalScope](#dedicatedworkerglobalscopedeprecated)，ev类型为[MessageEvent](#messageeventt)，表示收到的Worker消息数据。默认值为undefined。 **说明**：从API version 7开始支持，从API version 9开始废弃，建议使用[ThreadWorkerGlobalScope.onmessage](#属性-2)替代。 |
-| onmessageerror(deprecated) | (this: DedicatedWorkerGlobalScope, ev: [MessageEvent](#messageeventt)) => void | 否 | 是 | 回调函数，表示当Worker对象接收到一条无法被反序列化的消息时被调用的事件处理程序，处理程序在Worker线程中执行。其中this指调用者对象本身[DedicatedWorkerGlobalScope](#dedicatedworkerglobalscopedeprecated)，ev类型为[MessageEvent](#messageeventt)，表示收到的Worker消息数据。从API version 7开始支持，默认值为undefined。 **说明**：从API version 9开始废弃，建议使用[ThreadWorkerGlobalScope.onmessageerror](#属性-2)替代。 |
+| onmessageerror(deprecated) | (this: DedicatedWorkerGlobalScope, ev: [MessageEvent](#messageeventt)) => void | 否 | 是 | 回调函数，表示当Worker对象接收到一条无法被反序列化的消息时被调用的事件处理程序，处理程序在Worker线程中执行。其中this指调用者对象本身[DedicatedWorkerGlobalScope](#dedicatedworkerglobalscopedeprecated)，ev类型为[MessageEvent](#messageeventt)，表示收到的Worker消息数据。默认值为undefined。 **说明**：从API version 7开始支持，从API version 9开始废弃，建议使用[ThreadWorkerGlobalScope.onmessageerror](#属性-2)替代。 |
 
 #### [h2]postMessage(deprecated)
 
@@ -2019,7 +2017,7 @@ parentPort.onmessage = (): void => {
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | type | string | 是 | 否 | 指定事件的类型。 |
-| timeStamp | number | 是 | 否 | 事件创建时的时间戳（精度为毫秒），目前不支持。 |
+| timeStamp | number | 是 | 否 | 事件创建时的时间戳，单位为ms，目前不支持。 |
 
 #### EventListener(deprecated)
 
@@ -2073,7 +2071,7 @@ workerInstance.addEventListener("alert", ()=>{
 | filename | string | 是 | 否 | 出现异常所在的文件。 |
 | lineno | number | 是 | 否 | 异常所在的行数。 |
 | colno | number | 是 | 否 | 异常所在的列数。 |
-| error | Object | 是 | 否 | 异常类型。 |
+| error | Object | 是 | 否 | 异常对象。 |
 
 #### MessageEvent
 

@@ -2,8 +2,8 @@
 title: "ArkUI_FloatPropertyHandle"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-floatpropertyhandle"
 catalog: "harmonyos-references"
-content_hash: "9d17af9efbc5"
-synced_at: "2026-07-09T00:58:46.654376"
+content_hash: "3197318d9927"
+synced_at: "2026-07-28T16:49:40.797018"
 ---
 
 # ArkUI_FloatPropertyHandle
@@ -14,7 +14,7 @@ typedef struct ArkUI_FloatProperty* ArkUI_FloatPropertyHandle
 
 #### 概述
 
-定义浮点数属性指针。
+定义ArkUI原生浮点渲染属性指针，用于创建、传递并管理目标内容修改器上的浮点属性。
 
 起始版本： 20
 

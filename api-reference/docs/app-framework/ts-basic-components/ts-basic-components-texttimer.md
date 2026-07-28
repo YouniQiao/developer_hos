@@ -2,17 +2,17 @@
 title: "TextTimer"
 upstream_id: "harmonyos-references/ts-basic-components-texttimer"
 catalog: "harmonyos-references"
-content_hash: "8ba0bcb360cc"
-synced_at: "2026-07-09T17:24:36.270458"
+content_hash: "12b5954ca912"
+synced_at: "2026-07-28T16:46:21.541719"
 ---
 
 # TextTimer
 
-通过文本显示计时信息并控制其计时器状态的组件。
+TextTimer是通过文本显示计时信息并控制其计时器状态的组件，支持正向计时与倒计时两种模式，可自定义显示格式，适用于秒表、活动倒计时等需要展示时间流逝的场景。常用于倒计时场景，如考试倒计时、限时活动、运动计时等。
 
 组件不可见（非锁屏状态和应用后台状态）时，UI时间变动将停止（即该组件此时不会绘制），[onTimer](#ontimer)仍然会正常触发。
 
-![](./img/note_3.0-zh-cn.png) 该组件从API version 8开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+![](./img/note_3.0-zh-cn.png) 该组件从API version 8开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
 #### 子组件
 
@@ -32,7 +32,7 @@ TextTimer(options?: TextTimerOptions)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [TextTimerOptions](#texttimeroptions对象说明) | 否 | 通过文本显示计时信息并控制其计时器状态的组件参数。默认值继承[TextTimerOptions](#texttimeroptions对象说明) 。 |
+| options | [TextTimerOptions](#texttimeroptions对象说明) | 否 | 通过文本显示计时信息并控制其计时器状态的组件参数。当需要自定义计时器配置（如设置倒计时开关、计时时间、初始时间、控制器等）时传入此参数；不传入时使用TextTimerOptions的默认配置。 默认值继承[TextTimerOptions](#texttimeroptions对象说明) 。 |
 
 #### TextTimerOptions对象说明
 
@@ -43,11 +43,25 @@ TextTimer(options?: TextTimerOptions)
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | isCountDown | boolean | 否 | 是 | 倒计时开关。 true：计时器开启倒计时，例如从30秒~0秒。 false：计时器开始计时，例如从0秒~30秒。 默认值：false **卡片能力：** 从API version 10开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| count | number | 否 | 是 | 计时器时间（isCountDown为true时生效），单位为毫秒。最长不超过86400000毫秒（24小时）。 0卡片能力： 从API version 10开始，该接口支持在ArkTS卡片中使用。
+| count | number | 否 | 是 | 计时器初始时间，单位为毫秒，isCountDown为true时生效。 默认值：60000 取值范围为(0, 86400000)，即不超过24小时。超出取值范围时置为默认值。 **卡片能力：** 从API version 10开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| controller | [TextTimerController](#texttimercontroller) | 否 | 是 | TextTimer控制器，用于通过编程方式控制计时器的启动、暂停和重置。不传入时，计时器仍可正常显示但无法通过代码控制其状态。 **卡片能力：** 从API version 10开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| startTime | number | 否 | 是 | 计时器正向计时模式下的初始时间，仅当isCountDown为false时该参数设置生效。 取值范围：[−2147483648, 2147483647]。 默认值：0 单位：毫秒 当值为负数时，计时器将从负值开始计时，经过0后继续向正数计时。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **卡片能力：** 从API版本26.0.0开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
+
+#### 属性
+
+除支持[通用属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-attributes)外，还支持以下属性：
+
+#### [h2]format
+
+format(value: string)
+
+设置自定义时间格式，需至少包含一个HH、mm、ss、SS中的关键字。使用yy、MM、dd等日期格式时，不支持该格式，将使用默认格式'HH:mm:ss.SS'。
+
+计时器更新频率按format最小单位处理，例如：format设置为'HH:mm'时，更新频率为一分钟。设置高精度的format（如包含SS）时，可能会导致onTimer回调间隔不均匀。
+
+卡片能力： 从API version 10开始，该接口支持在ArkTS卡片中使用。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
-
-模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -55,7 +69,7 @@ TextTimer(options?: TextTimerOptions)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | string | 是 | 自定义时间显示的格式。 默认值：'HH:mm:ss.SS' |
+| value | string | 是 | 自定义计时器显示的时间格式，需至少包含一个HH、mm、ss、SS中的关键字。 默认值：'HH:mm:ss.SS' |
 
 #### [h2]fontColor
 
@@ -66,8 +80,6 @@ fontColor(value: ResourceColor)
 卡片能力： 从API version 10开始，该接口支持在ArkTS卡片中使用。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
-
-模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -87,15 +99,13 @@ fontSize(value: Length)
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
-模型约束： 此接口仅可在Stage模型下使用。
-
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 是 | 字体大小。value为Length中的number类型时，单位为fp。字体大小默认为16fp。value为Length中的string类型时，设置值为非数字开头的字符串时，按0fp处理；设置值为数字开头的字符串时，如果数字后内容包含除[像素单位](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-pixel-units)外的字符（如字母、特殊符号等），则取值字符串开头的数字部分，单位为fp。例如设置值为"abc"时取值为0fp，设置值为"10vp"时取值为10vp，设置值为"10vp11abc"时取值为10fp。不支持设置百分比字符串。 |
+| value | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 是 | 字体大小。 默认值：16fp value为Length中的number类型时，单位为fp。value为Length中的string类型时，若设置值为非数字开头，则按0fp处理；若设置值为数字开头，当数字后内容包含除[像素单位](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-pixel-units)外的字符（如字母、特殊符号等）时，取值字符串开头的数字部分，单位为fp。 例如：设置值为"abc"时取值为0fp，设置值为"10vp"时取值为10vp，设置值为"10vp11abc"时取值为10fp。不支持设置百分比字符串。 |
 
 #### [h2]fontStyle
 
@@ -106,8 +116,6 @@ fontStyle(value: FontStyle)
 卡片能力： 从API version 10开始，该接口支持在ArkTS卡片中使用。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
-
-模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -127,8 +135,6 @@ fontWeight(value: number | FontWeight | ResourceStr)
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
-模型约束： 此接口仅可在Stage模型下使用。
-
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 参数：
@@ -147,8 +153,6 @@ fontFamily(value: ResourceStr)
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
-模型约束： 此接口仅可在Stage模型下使用。
-
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 参数：
@@ -161,7 +165,7 @@ fontFamily(value: ResourceStr)
 
 textShadow(value: ShadowOptions | Array<ShadowOptions>)
 
-设置文字阴影效果。该接口支持以数组形式入参，实现多重文字阴影。不支持fill字段, 不支持智能取色模式。
+设置文字阴影效果。该接口支持以数组形式入参，实现多重文字阴影。不支持fill字段和智能取色模式。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 12开始，该接口支持在[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)中调用。
 
@@ -181,7 +185,7 @@ textShadow(value: ShadowOptions | Array<ShadowOptions>)
 
 contentModifier(modifier: ContentModifier<TextTimerConfiguration>)
 
-定制TextTimer内容区的方法。
+定制TextTimer内容区的方法。当默认的文本显示样式无法满足需求时，可用于实现自定义的计时器UI效果。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -201,13 +205,11 @@ contentModifier(modifier: ContentModifier<TextTimerConfiguration>)
 
 onTimer(event: (utc: number, elapsedTime: number) => void)
 
-时间文本发生变化时触发该事件。锁屏状态和应用后台状态下不会触发该事件。设置高精度的[format](#format)（SS）时，回调间隔可能会出现波动。
+时间文本发生变化时触发该事件。锁屏状态和应用后台状态下不会触发该事件。组件不可见（非锁屏状态和应用后台状态）时，UI时间变动将停止，但该事件仍会正常触发。设置高精度的[format](#format)（SS）时，回调间隔可能不均匀，相邻两次回调的时间间隔可能存在差异。
 
 卡片能力： 从API version 10开始，该接口支持在ArkTS卡片中使用。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
-
-模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -215,7 +217,7 @@ onTimer(event: (utc: number, elapsedTime: number) => void)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| utc | number | 是 | Linux时间戳，即自1970年1月1日起经过的时间，单位为设置格式的最小单位。 |
+| utc | number | 是 | Linux时间戳，即自1970年1月1日起经过的时间，单位为[format](#format)属性设置格式中的最小时间单位。 |
 | elapsedTime | number | 是 | 计时器经过的时间，单位为设置格式的最小单位。 |
 
 #### TextTimerController
@@ -225,8 +227,6 @@ TextTimer组件的控制器，用于控制文本计时器。一个TextTimer组�
 卡片能力： 从API version 10开始，该接口支持在ArkTS卡片中使用。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
-
-模型约束： 此接口仅可在Stage模型下使用。
 
 #### [h2]导入对象
 
@@ -244,21 +244,17 @@ TextTimerController的构造函数。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
-模型约束： 此接口仅可在Stage模型下使用。
-
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 #### [h2]start
 
 start()
 
-计时开始。
+计时开始。需在TextTimer组件创建完成并绑定控制器后调用。
 
 卡片能力： 从API version 10开始，该接口支持在ArkTS卡片中使用。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
-
-模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -266,13 +262,11 @@ start()
 
 pause()
 
-计时暂停。
+计时暂停。需在组件创建完成后调用。
 
 卡片能力： 从API version 10开始，该接口支持在ArkTS卡片中使用。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
-
-模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -280,13 +274,11 @@ pause()
 
 reset()
 
-重置计时器。
+重置计时器。需在组件创建完成后调用。
 
 卡片能力： 从API version 10开始，该接口支持在ArkTS卡片中使用。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
-
-模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -302,7 +294,53 @@ ContentModifier接口使用的TextTimer配置。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| count | number | 否 | 否 | 计时器时间（isCountDown为true时生效），单位为毫秒。最长不超过86400000毫秒（24小时）。 0
+| count | number | 否 | 否 | 计时器初始时间，单位为毫秒，isCountDown为true时生效。 默认值：60000 取值范围为(0, 86400000)，即不超过24小时。超出取值范围时置为默认值。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| isCountDown | boolean | 否 | 否 | 是否倒计时。 true：计时器开启倒计时，例如从30秒~0秒；false：计时器开始计时，例如从0秒~30秒。 默认值：false **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| started | boolean | 否 | 否 | 是否已经开始了计时。 true：开始计时；false：未开始计时。 默认值：false **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| elapsedTime | number | 否 | 否 | 计时器经过的时间，单位为设置格式的最小单位。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| startTime | number | 否 | 是 | 计时器正向计时模式下的初始时间，仅当isCountDown为false时该参数设置生效。 取值范围：无上限，支持负数。 默认值：0 单位：毫秒 当值为负数时，计时器将从负值开始计时，经过0后继续向正数计时。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
+
+#### 示例
+
+#### [h2]示例1（支持手动启停的文本计时器）
+
+该示例展示了TextTimer组件的基本使用方法，通过[format](#format)属性设置计时器的文本显示格式。
+
+用户可以通过点击"start"、"pause"、"reset"按钮，开启、暂停、重置计时器。
+
+```
+// xxx.ets
+@Entry
+@Component
+struct TextTimerExample {
+  textTimerController: TextTimerController = new TextTimerController();
+  @State format: string = 'mm:ss.SS';
+
+  build() {
+    Column() {
+      TextTimer({ isCountDown: true, count: 30000, controller: this.textTimerController })
+        .format(this.format)
+        .fontColor(Color.Black)
+        .fontSize(50)
+        .onTimer((utc: number, elapsedTime: number) => {
+          console.info('textTimer countDown utc is：' + utc + ', elapsedTime: ' + elapsedTime);
+        })
+      Row() {
+        Button('start').onClick(() => {
+          this.textTimerController.start();
+        })
+        Button('pause').onClick(() => {
+          this.textTimerController.pause();
+        })
+        Button('reset').onClick(() => {
+          this.textTimerController.reset();
+        })
+      }
+    }
+  }
+}
+```
+ ![](./img/zh-cn_image_0000002656008744.gif)
 
 #### [h2]示例2（设定文本阴影样式）
 
@@ -347,7 +385,7 @@ struct TextTimerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664209891.png)
+ ![](./img/zh-cn_image_0000002655848822.png)
 
 #### [h2]示例3（设定自定义内容区）
 
@@ -425,7 +463,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664329951.gif)
+ ![](./img/zh-cn_image_0000002686088253.gif)
 
 #### [h2]示例4（创建之后立即执行计时）
 
@@ -441,14 +479,12 @@ struct TextTimerStart {
 
   build() {
     Column() {
-      Scroll()
-        .height('20%')
       TextTimer({ isCountDown: true, count: 30000, controller: this.textTimerController })
         .format(this.format)
         .fontColor(Color.Black)
         .fontSize(50)
         .onTimer((utc: number, elapsedTime: number) => {
-          console.info('textTimer notCountDown utc is：' + utc + ', elapsedTime: ' + elapsedTime);
+          console.info('textTimer countDown utc is：' + utc + ', elapsedTime: ' + elapsedTime);
         })
         .onAppear(() => {
           this.textTimerController.start();
@@ -460,7 +496,7 @@ struct TextTimerStart {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002633850840.gif)
+ ![](./img/zh-cn_image_0000002685928423.gif)
 
 #### [h2]示例5（设置文本样式）
 
@@ -470,7 +506,7 @@ struct TextTimerStart {
 // xxx.ets
 @Entry
 @Component
-struct Demo {
+struct TextTimerDemo {
   textTimerController: TextTimerController = new TextTimerController();
   @State countValue: number = 5025678;
 
@@ -512,7 +548,7 @@ struct Demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002634010744.png)
+ ![](./img/zh-cn_image_0000002656008746.png)
 
 #### [h2]示例6（设置初始计时时间）
 
@@ -552,4 +588,4 @@ struct TextTimerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664209893.gif)
+ ![](./img/zh-cn_image_0000002655848824.gif)

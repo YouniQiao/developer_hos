@@ -2,8 +2,8 @@
 title: "@ohos.geoLocationManager (位置服务)"
 upstream_id: "harmonyos-references/js-apis-geolocationmanager"
 catalog: "harmonyos-references"
-content_hash: "af4391bdf8cd"
-synced_at: "2026-07-09T01:01:24.076388"
+content_hash: "b8d6ab29c3bb"
+synced_at: "2026-07-28T16:52:42.162117"
 ---
 
 # @ohos.geoLocationManager (位置服务)
@@ -127,6 +127,7 @@ import { geoLocationManager } from '@kit.LocationKit';
 | --- | --- | --- | --- | --- |
 | interval | number | 否 | 否 | 表示上报位置信息的时间间隔，单位是秒。默认值为1，取值范围为大于等于0。等于0时对位置上报时间间隔无限制。 |
 | locationScenario | [UserActivityScenario](#useractivityscenario12) | [PowerConsumptionScenario](#powerconsumptionscenario12) | 否 | 否 | 表示定位的场景信息。取值范围见[UserActivityScenario](#useractivityscenario12)和[PowerConsumptionScenario](#powerconsumptionscenario12)的定义。 |
+| sportsType | [SportsType](#sportstype18) | 否 | 是 | 表示运动模式。取值范围见[SportsType](#sportstype18)定义。此参数仅在locationScenario设置为UserActivityScenario.SPORT时有效。默认值为0，表示该参数不生效。 **起始版本：** 26.0.0 |
 | needPoi19+ | boolean | 否 | 是 | 表示是否需要获取当前位置附近的POI信息。false代表不需要获取当前位置附近的POI信息，true代表需要获取当前位置附近的POI信息。不设置时，默认值为false。 该参数仅在精确位置功能场景（即同时授权了ohos.permission.APPROXIMATELY_LOCATION和ohos.permission.LOCATION 权限）下有效，模糊位置功能生效场景（即仅授权了ohos.permission.APPROXIMATELY_LOCATION 权限）下不返回POI信息。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 |
 
 #### SingleLocationRequest12+
@@ -232,6 +233,7 @@ GNSS围栏的配置参数。目前只支持圆形围栏。
 | uncertaintyOfTimeSinceBoot12+ | number | 否 | 是 | 表示位置时间戳的不确定度。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | sourceType12+ | [LocationSourceType](#locationsourcetype12) | 否 | 是 | 表示定位结果的来源。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | poi19+ | [PoiInfo](#poiinfo19) | 否 | 是 | 表示当前位置附近的POI信息。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 |
+| isFromMock | boolean | 否 | 是 | true：位置信息来自于位置模拟功能。 false：位置信息不是来自于位置模拟功能。 **起始版本：** 26.0.0 **元服务API：** 从API version 26.0.0开始，该接口支持在元服务中使用。 |
 
 #### GeofenceTransition12+
 
@@ -509,6 +511,7 @@ POI信息结构体。
 | RUNNING | 1 | 表示跑步。 |
 | WALKING | 2 | 表示步行。 |
 | CYCLING | 3 | 表示骑行。 |
+| SKIING | 4 | 表示滑雪。 **起始版本：** 26.0.0 |
 
 #### BeaconFenceInfoType20+
 
@@ -581,6 +584,58 @@ beacon围栏请求参数。transitionCallback与fenceExtensionAbilityName任选�
 | index | number | 否 | 否 | 表示匹配的WLAN在wlanBssidArray中的索引。 |
 | ssid | string | 否 | 否 | 表示匹配的WLAN的SSID。 |
 
+#### DistrictRequestParams
+
+表示获取区县信息的请求参数。
+
+起始版本： 26.0.0
+
+元服务API： 从API version 26.0.0开始，该接口支持在元服务中使用。
+
+系统能力：SystemCapability.Location.Location.Geocoder
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| locale | string | 否 | 是 | 表示位置描述信息的语言，“zh”代表中文，“en”代表英文。默认值从设置中的“语言和地区”获取。 |
+| timeoutMs | number | 否 | 是 | 表示超时时间，单位是毫秒。默认值是5000毫秒。 |
+
+#### DistrictInfo
+
+表示区域信息。
+
+起始版本： 26.0.0
+
+元服务API： 从API version 26.0.0开始，该接口支持在元服务中使用。
+
+系统能力：SystemCapability.Location.Location.Geocoder
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| locale | string | 否 | 是 | 表示位置描述信息的语言，“zh”代表中文，“en”代表英文。 |
+| countryCode | string | 否 | 是 | 表示国家码信息。 |
+| countryName | string | 否 | 是 | 表示国家信息。 |
+| administrativeArea | string | 否 | 是 | 表示国家以下的一级行政区，一般是省/州。 |
+| subAdministrativeArea | string | 否 | 是 | 表示国家以下的二级行政区，一般是市。 |
+| locality | string | 否 | 是 | 表示城市信息，一般是市。 |
+| subLocality | string | 否 | 是 | 表示子城市信息，一般是区/县。 |
+
+#### BluetoothSearchRequestParams
+
+蓝牙扫描请求参数。
+
+起始版本： 26.0.0
+
+元服务API： 从API version 26.0.0开始，该接口支持在元服务中使用。
+
+系统能力：SystemCapability.Location.Location.Core
+
+模型约束：此接口仅可在Stage模型下使用。
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| deviceIdArray | Array | 否 | 否 | 表示蓝牙设备的地址列表，用于过滤扫描结果。单个字符串的长度不超过64，数组的长度不超过1000。仅当扫描到的蓝牙设备的地址与该数组中的一个元素相同时才通过callback返回该蓝牙设备信息。当传入空数组（数组长度为0）时，不会返回蓝牙扫描结果。数组中每个元素的格式如下："XX:XX:XX:XX:XX:XX"。 |
+| rssiThreshold | number | 否 | 是 | 表示RSSI阈值，只扫描RSSI大于此阈值的设备。取值范围为-128至127。 |
+
 #### geoLocationManager.on('locationChange')
 
 on(type: 'locationChange', request: LocationRequest | ContinuousLocationRequest, callback: Callback<Location>): void
@@ -650,6 +705,76 @@ try {
 }
 ```
 
+#### geoLocationManager.onLocationChange
+
+onLocationChange(request: LocationRequest | ContinuousLocationRequest, callback: Callback<Location>): void
+
+开启位置变化订阅，并发起定位请求。使用callback异步回调。
+
+起始版本： 26.0.0
+
+需要权限：ohos.permission.APPROXIMATELY_LOCATION
+
+系统能力：SystemCapability.Location.Location.Core
+
+模型约束：此接口仅可在Stage模型下使用。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| request | [LocationRequest](#locationrequest) | [ContinuousLocationRequest](#continuouslocationrequest12) | 是 | 设置位置请求参数。 |
+| callback | Callback | 是 | 回调函数，返回位置信息。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[位置服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-geolocationmanager)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 801 | Capability not supported. Failed to call ${geoLocationManager.onLocationChange} due to limited device capabilities. |
+| 3301000 | The location service is unavailable. |
+| 3301100 | The location switch is off. |
+
+示例
+
+```
+import { geoLocationManager } from '@kit.LocationKit';
+
+// 方式一：使用LocationRequest作为入参
+let requestInfo: geoLocationManager.LocationRequest = {
+  'priority': geoLocationManager.LocationRequestPriority.FIRST_FIX,
+  'scenario': geoLocationManager.LocationRequestScenario.UNSET,
+  'timeInterval': 1,
+  'distanceInterval': 0,
+  'maxAccuracy': 0
+};
+let locationChange = (location: geoLocationManager.Location): void => {
+  console.info('locationChange: data: ' + JSON.stringify(location));
+};
+try {
+  geoLocationManager.onLocationChange(requestInfo, locationChange);
+} catch (err) {
+  console.error("errCode:" + err.code + ", message:" + err.message);
+}
+
+// 方式二：使用ContinuousLocationRequest作为入参
+let request: geoLocationManager.ContinuousLocationRequest = {
+  'interval': 1,
+  'locationScenario': geoLocationManager.UserActivityScenario.NAVIGATION
+};
+let locationCallback = (location: geoLocationManager.Location): void => {
+  console.info('locationCallback: data: ' + JSON.stringify(location));
+};
+try {
+  geoLocationManager.onLocationChange(request, locationCallback);
+} catch (err) {
+  console.error("errCode:" + err.code + ", message:" + err.message);
+}
+```
+
 #### geoLocationManager.off('locationChange')
 
 off(type: 'locationChange', callback?: Callback<Location>): void
@@ -667,7 +792,7 @@ off(type: 'locationChange', callback?: Callback<Location>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 设置事件类型。type为“locationChange”，表示位置变化。 |
-| callback | Callback | 否 | 需要取消订阅的回调函数。该回调函数需要与on接口传入的回调函数保持一致。若无此参数，则取消当前类型的所有订阅。 |
+| callback | Callback | 否 | 需要取消订阅的回调函数。该回调函数需要与on接口传入的回调函数保持一致，否则会取消订阅失败且不会返回任何错误码。若无此参数，则取消当前类型的所有订阅。 |
 
 错误码：
 
@@ -698,6 +823,59 @@ let locationChange = (location: geoLocationManager.Location): void => {
 try {
   geoLocationManager.on('locationChange', requestInfo, locationChange);
   geoLocationManager.off('locationChange', locationChange);
+} catch (err) {
+  console.error("errCode:" + err.code + ", message:" + err.message);
+}
+```
+
+#### geoLocationManager.offLocationChange
+
+offLocationChange(callback?: Callback<Location>): void
+
+关闭位置变化订阅，并删除对应的定位请求。
+
+当传入的callback与onLocationChange接口传入的callback不一致时会抛出401错误码。
+
+起始版本： 26.0.0
+
+系统能力：SystemCapability.Location.Location.Core
+
+模型约束：此接口仅可在Stage模型下使用。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| callback | Callback | 否 | 需要取消订阅的回调函数。该回调函数需要与onLocationChange接口传入的回调函数保持一致，否则将抛出401错误码。若无此参数，则取消所有订阅。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[位置服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-geolocationmanager)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 801 | Capability not supported. Failed to call ${geoLocationManager.offLocationChange} due to limited device capabilities. |
+| 3301000 | The location service is unavailable. |
+
+示例
+
+```
+import { geoLocationManager } from '@kit.LocationKit';
+
+let requestInfo: geoLocationManager.LocationRequest = {
+  'priority': geoLocationManager.LocationRequestPriority.FIRST_FIX,
+  'scenario': geoLocationManager.LocationRequestScenario.UNSET,
+  'timeInterval': 1,
+  'distanceInterval': 0,
+  'maxAccuracy': 0
+};
+let locationChange = (location: geoLocationManager.Location): void => {
+  console.info('locationChange: data: ' + JSON.stringify(location));
+};
+try {
+  geoLocationManager.onLocationChange(requestInfo, locationChange);
+  geoLocationManager.offLocationChange(locationChange);
 } catch (err) {
   console.error("errCode:" + err.code + ", message:" + err.message);
 }
@@ -1284,8 +1462,6 @@ off(type: 'gnssFenceStatusChange', request: GeofenceRequest, want: WantAgent): v
 
 删除一个围栏，并取消订阅该围栏事件。该接口功能由GNSS定位芯片提供（仅部分型号支持），如果设备无此芯片或使用的芯片型号不支持该功能，则返回错误码801（Capability not supported）。调用该接口前建议先通过[geoLocationManager.isGnssFenceServiceSupported](#geolocationmanagerisgnssfenceservicesupported)接口判断对应能力是否支持。
 
-需要权限：ohos.permission.APPROXIMATELY_LOCATION
-
 系统能力：SystemCapability.Location.Location.Geofence
 
 参数：
@@ -1302,7 +1478,6 @@ off(type: 'gnssFenceStatusChange', request: GeofenceRequest, want: WantAgent): v
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 201 | Permission verification failed. The application does not have the permission required to call the API. |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 801 | Capability not supported. Failed to call ${geoLocationManager.off('gnssFenceStatusChange')} due to limited device capabilities. |
 | 3301000 | The location service is unavailable. |
@@ -2451,8 +2626,6 @@ removeGnssGeofence(geofenceId: number): Promise<void>
 
 GNSS地理围栏功能依赖GNSS定位芯片（仅部分型号支持），如果设备无此芯片或使用的芯片型号不支持该功能，则返回错误码801（Capability not supported）。调用该接口前建议先通过[geoLocationManager.isGnssFenceServiceSupported](#geolocationmanagerisgnssfenceservicesupported)接口判断对应能力是否支持。
 
-需要权限：ohos.permission.LOCATION 和 ohos.permission.APPROXIMATELY_LOCATION
-
 系统能力：SystemCapability.Location.Location.Geofence
 
 参数：
@@ -2473,7 +2646,6 @@ GNSS地理围栏功能依赖GNSS定位芯片（仅部分型号支持），如果
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 201 | Permission verification failed. The application does not have the permission required to call the API. |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 801 | Capability not supported. Failed to call ${geoLocationManager.removeGnssGeofence} due to limited device capabilities. |
 | 3301000 | The location service is unavailable. |
@@ -2842,7 +3014,7 @@ beacon围栏是指通过蓝牙beacon设备和手机应用配合，实现“虚�
 | 801 | Capability not supported. Failed to call ${geoLocationManager.addBeaconFence} due to limited device capabilities. |
 | 3501100 | Failed to add a beacon fence because the location switch is off. |
 | 3501101 | Failed to add a beacon fence because the bluetooth switch is off. |
-| 3501601 | The number of beacon fence exceeds the maximum. |
+| 3501601 | The number of beacon fences exceeds the maximum. |
 | 3501603 | Duplicate beacon fence information. |
 
 示例
@@ -3239,7 +3411,7 @@ findMatchingWlan(wlanBssidArray: Array<string>, rssiThreshold: number, needStart
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise> | Promise对象，匹配成功时返回对应的WLAN设备信息，匹配失败时返回空数组(数组长度为0)。仅返回RSSI最强的3个设备信息。 |
+| Promise> | Promise对象，匹配成功时返回对应的WLAN设备信息，匹配失败时返回空数组(数组长度为0)。仅返回rssi最强的3个设备信息。 |
 
 错误码：
 
@@ -3266,5 +3438,275 @@ try {
   })
 } catch (error) {
   console.error("findMatchingWlan: errCode " + error.code + ", errMessage " + error.message);
+}
+```
+
+#### geoLocationManager.getCurrentDistrict
+
+getCurrentDistrict(params?: DistrictRequestParams): Promise<DistrictInfo>
+
+获取当前设备所在区域的信息。使用Promise异步回调。
+
+起始版本： 26.0.0
+
+需要权限：ohos.permission.APPROXIMATELY_LOCATION
+
+系统能力：SystemCapability.Location.Location.Geocoder
+
+模型约束：此接口仅可在Stage模型下使用。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| request | [DistrictRequestParams](#districtrequestparams) | 否 | 设置区域信息请求参数。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，当前设备所在区域的信息。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[位置服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-geolocationmanager)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 801 | Capability not supported. Failed to call ${geoLocationManager.getCurrentDistrict} due to limited device capabilities. |
+| 3301000 | The location service is unavailable. |
+| 3301100 | The location switch is off. |
+| 3301500 | Failed to query the area information because the reverse geocoding server returns an error. |
+
+示例
+
+```
+import { geoLocationManager } from '@kit.LocationKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+// 参数配置一：指定语言/国家/超时时间
+try {
+  let params: geoLocationManager.DistrictRequestParams = {
+    locale: "en",
+    timeoutMs: 5000
+  }
+  geoLocationManager.getCurrentDistrict(params).then((res) => {
+    if (res) {
+      console.info("getCurrentDistrict result:" + res);
+    }
+  })
+  .catch((error: BusinessError) => {
+    console.error('promise, getCurrentDistrict: error=' + JSON.stringify(error));
+  });
+} catch (error) {
+  console.error("getCurrentDistrict: errCode" + error.code + ", errMessage" + error.message);
+}
+// 参数配置二：使用默认值
+try {
+  geoLocationManager.getCurrentDistrict().then((res) => {
+    if (res) {
+      console.info("getCurrentDistrict result:" + res);
+    }
+  })
+  .catch((error: BusinessError) => {
+    console.error('promise, getCurrentDistrict: error=' + JSON.stringify(error));
+  });
+} catch (error) {
+  console.error("getCurrentDistrict: errCode" + error.code + ", errMessage" + error.message);
+}
+```
+
+#### geoLocationManager.getPostProcessingTrack
+
+getPostProcessingTrack(sportsType: SportsType): Promise<Array<Location>>
+
+根据传入的[sportsType](#sportstype18)获取特定运动模式下的后处理轨迹。在调用此接口之前，需要先调用[geoLocationManager.on('locationChange')](#geolocationmanageronlocationchange)，并在[ContinuousLocationRequest](#continuouslocationrequest12)入参中的[SportsType](#sportstype18)配置正确的运动模式。当前仅支持滑雪模式。记录的运动轨迹会在24小时之后清除。
+
+起始版本： 26.0.0
+
+需要权限：ohos.permission.LOCATION
+
+系统能力：SystemCapability.Location.Location.Gnss
+
+模型约束：此接口仅可在Stage模型下使用。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| sportsType | [SportsType](#sportstype18) | 否 | 设置要获取后处理轨迹的运动模式。当前仅支持滑雪模式。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise> | Promise对象，用于返回后处理运动轨迹。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[位置服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-geolocationmanager)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 801 | Capability not supported. Failed to call ${geoLocationManager.getPostProcessingTrack} due to limited device capabilities. |
+| 3301000 | The location service is unavailable. |
+| 3301100 | The location switch is off. |
+| 3301200 | Failed to obtain the geographical location. |
+
+示例
+
+```
+import { geoLocationManager } from '@kit.LocationKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let request: geoLocationManager.ContinuousLocationRequest = {
+  'interval': 1,
+  'locationScenario': geoLocationManager.UserActivityScenario.SPORT,
+  // 设置运动类型为滑雪
+  'sportsType': geoLocationManager.SportsType.SKIING,
+};
+
+let locationCallback = (location: geoLocationManager.Location): void => {
+  console.info('locationCallback: data: ' + JSON.stringify(location));
+};
+
+let processTrackTask = (): void => {
+  // 先移除定位请求
+  geoLocationManager.off('locationChange', locationCallback);
+  // 获取后处理轨迹
+  geoLocationManager.getPostProcessingTrack(geoLocationManager.SportsType.SKIING)
+    .then((res) => {
+      console.info('getPostProcessingTrack len: ' + JSON.stringify(res.length));
+    }).catch((err: BusinessError) => {
+      console.info('getPostProcessingTrack err: ' + JSON.stringify(err));
+    })
+}
+
+try {
+  // 发起滑雪模式定位请求
+  geoLocationManager.on('locationChange', request, locationCallback);
+  // 满足轨迹采集条件后，移除定位请求并获取后处理轨迹，这里设定30分钟后满足轨迹采集要求。
+  let delayTaskTime = 30 * 60 * 1000;
+  setTimeout(processTrackTask, delayTaskTime);
+} catch (err) {
+  console.error("errCode:" + err.code + ", message:" + err.message);
+}
+```
+
+#### geoLocationManager.startBluetoothSearch
+
+startBluetoothSearch(request: BluetoothSearchRequestParams, callback: Callback<BluetoothScanResult>): void
+
+启动蓝牙扫描并查找指定的蓝牙设备，仅当扫描到的蓝牙设备满足入参BluetoothSearchRequestParams指定的条件时，才通过callback异步返回该蓝牙设备信息。
+
+起始版本： 26.0.0
+
+元服务API： 从API version 26.0.0开始，该接口支持在元服务中使用。
+
+需要权限：ohos.permission.APPROXIMATELY_LOCATION
+
+系统能力：SystemCapability.Location.Location.Core
+
+模型约束：此接口仅可在Stage模型下使用。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| request | [BluetoothSearchRequestParams](#bluetoothsearchrequestparams) | 是 | 设置蓝牙扫描请求参数。 |
+| callback | Callback | 是 | 回调函数，用于返回蓝牙扫描结果。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[位置服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-geolocationmanager)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 801 | Capability not supported. Failed to call ${geoLocationManager.startBluetoothSearch} due to limited device capabilities. |
+| 3301000 | The location service is unavailable. |
+| 3301800 | Failed to start Bluetooth scanning. |
+
+示例
+
+```
+import { geoLocationManager } from '@kit.LocationKit';
+
+private callback = (bluetoothScanResult: geoLocationManager.BluetoothScanResult) => {
+  if (bluetoothScanResult) {
+    console.info('bluetoothScanResult: deviceId=' + bluetoothScanResult.deviceId);
+      try {
+        // 开发者需要考虑在合适的时机调用stopBluetoothSearch停止蓝牙扫描以节省功耗，本代码仅作为参考
+        geoLocationManager.stopBluetoothSearch(this.callback);
+      } catch (err) {
+        console.error("errCode:" + err.code + ", message:" + err.message);
+      }
+  }
+};
+let request: geoLocationManager.BluetoothSearchRequestParams = {
+  'rssiThreshold': -=100,
+  'deviceIdArray': ['98:56:07:E6:AA:46','4E:E6:D2:02:27:F9']
+};
+
+try {
+  geoLocationManager.startBluetoothSearch(request, this.callback);
+} catch (err) {
+  console.error("errCode:" + err.code + ", message:" + err.message);
+}
+```
+
+#### geoLocationManager.stopBluetoothSearch
+
+stopBluetoothSearch(callback?: Callback<BluetoothScanResult>): void
+
+停止蓝牙扫描，该回调函数需要与startBluetoothSearch接口传入的回调函数保持一致。若无此参数，则取消当前类型的所有订阅。
+
+起始版本： 26.0.0
+
+元服务API： 从API version 26.0.0开始，该接口支持在元服务中使用。
+
+系统能力：SystemCapability.Location.Location.Core
+
+模型约束：此接口仅可在Stage模型下使用。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| callback | Callback | 否 | 取消订阅的回调函数。该回调函数需要与on接口传入的回调函数保持一致。若无此参数，则取消当前类型的所有订阅。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[位置服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-geolocationmanager)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 801 | Capability not supported. Failed to call ${geoLocationManager.stopBluetoothSearch} due to limited device capabilities. |
+| 3301000 | The location service is unavailable. |
+
+示例
+
+```
+import { geoLocationManager } from '@kit.LocationKit';
+
+let request: geoLocationManager.BluetoothSearchRequestParams = {
+  'rssiThreshold': -100,
+  'deviceIdArray': ['98:56:07:E6:AA:46','4E:E6:D2:02:27:F9']
+};
+let callback = (bluetoothScanResult: geoLocationManager.BluetoothScanResult) => {
+  if (bluetoothScanResult) {
+    console.info('bluetoothScanResult: deviceId=' + bluetoothScanResult.deviceId);
+  }
+};
+try {
+  geoLocationManager.startBluetoothSearch(request, callback);
+  geoLocationManager.stopBluetoothSearch(callback);
+} catch (err) {
+  console.error("errCode:" + err.code + ", message:" + err.message);
 }
 ```

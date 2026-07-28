@@ -1,14 +1,14 @@
 ---
-
 title: "城市码及区划代码表"
 upstream_id: "harmonyos-references/map-citycode"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T01:01:29.305730"
-content_hash: "7bad59e9137a"
+content_hash: "63820c4d1f49"
+synced_at: "2026-07-28T16:52:48.199140"
 ---
 
-
 # 城市码及区划代码表
+
+城市码(cityCode)是指用于标识城市级别的编码；区划代码(adminCode)是指用于标识行政区划级别的编码。
 
 ![](./img/note_3.0-zh-cn.png) 仅中国大陆及港澳地区支持城市码及区划代码。
 

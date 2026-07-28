@@ -2,8 +2,8 @@
 title: "ArkUI_NodeAttributeType（基础属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-base"
 catalog: "harmonyos-references"
-content_hash: "ca46ca66c348"
-synced_at: "2026-07-09T00:58:34.277967"
+content_hash: "af6792a95069"
+synced_at: "2026-07-28T16:49:20.121344"
 ---
 
 # ArkUI_NodeAttributeType（基础属性）
@@ -27,7 +27,7 @@ enum ArkUI_NodeAttributeType
 ```
 NODE_BACKGROUND_COLOR = 2
 ```
- 背景色属性，支持属性设置，属性重置和属性获取接口。
+ 背景色属性，支持属性设置、属性重置和属性获取接口。
 
 作为属性设置方法参数、属性获取方法返回值[ArkUI_AttributeItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-attributeitem)格式如下。
 
@@ -37,7 +37,7 @@ NODE_BACKGROUND_COLOR = 2
 
 | 参数项 | 描述 |
 | --- | --- |
-| .value[0].u32 | 背景色数值，0xargb格式，形如 0xFFFF0000 表示红色。 |
+| .value[0].u32 | 背景色数值，0xargb格式，取值范围0x00000000~0xFFFFFFFF，形如 0xFFFF0000 表示红色。 |
 
 返回：
 
@@ -50,7 +50,7 @@ NODE_BACKGROUND_COLOR = 2
 ```
 NODE_BACKGROUND_IMAGE = 3
 ```
- 背景色图片属性，支持属性设置，属性重置和属性获取接口。
+ 背景图片属性，支持属性设置，属性重置和属性获取接口。
 
 作为属性设置方法参数、属性获取方法返回值[ArkUI_AttributeItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-attributeitem)格式如下。
 
@@ -61,7 +61,7 @@ NODE_BACKGROUND_IMAGE = 3
 | 参数项 | 描述 |
 | --- | --- |
 | .string | 图片地址。API version 22及之前版本，支持网络图片资源地址、本地图片资源地址、Base64和[PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)资源，不支持[svg](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-svg)图片、gif和webp等类型的动图。从API version 23开始，新增支持webp和gif类型的动图，显示动图第一帧，不支持其他类型的动图。 |
-| .value[0]?.i32 | 可选值，repeat参数，参数类型[ArkUI_ImageRepeat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_imagerepeat)，默认值为ARKUI_IMAGE_REPEAT_NONE。 |
+| .value[0]?.i32 | 可选值，repeat参数，参数类型[ArkUI_ImageRepeat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image-h#arkui_imagerepeat)，默认值为ARKUI_IMAGE_REPEAT_NONE。 |
 | .object | PixelMap图片数据，参数类型为[ArkUI_DrawableDescriptor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-drawabledescriptor)。.object参数和.string参数二选一，不可同时设置。 |
 
 返回：
@@ -69,7 +69,7 @@ NODE_BACKGROUND_IMAGE = 3
 | 类型 | 说明 |
 | --- | --- |
 | .string | 图片地址。API version 22及之前版本，支持网络图片资源地址、本地图片资源地址、Base64和PixelMap资源，不支持svg图片、gif和webp等类型的动图。从API version 23开始，新增支持webp和gif类型的动图，显示动图第一帧，不支持其他类型的动图。 |
-| .value[0].i32 | repeat参数，参数类型[ArkUI_ImageRepeat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_imagerepeat)。 |
+| .value[0].i32 | repeat参数，参数类型[ArkUI_ImageRepeat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image-h#arkui_imagerepeat)。 |
 | .object | PixelMap图片数据，参数类型为[ArkUI_DrawableDescriptor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-drawabledescriptor)。 |
 
 #### NODE_ID
@@ -135,13 +135,13 @@ NODE_BACKGROUND_IMAGE_SIZE_WITH_STYLE = 31
 
 | 参数项 | 描述 |
 | --- | --- |
-| .value[0].i32 | 背景图片的宽高样式，取[ArkUI_ImageSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_imagesize)枚举值。 |
+| .value[0].i32 | 背景图片的宽高样式，取[ArkUI_ImageSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image-h#arkui_imagesize)枚举值。不同枚举值决定了背景图片的缩放和裁剪方式，如按原图大小显示、保持宽高比覆盖组件区域、保持宽高比完整显示等。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| .value[0].i32 | 背景图片的宽高样式，取[ArkUI_ImageSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_imagesize)枚举值。 |
+| .value[0].i32 | 背景图片的宽高样式，取[ArkUI_ImageSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image-h#arkui_imagesize)枚举值。 |
 
 #### NODE_BACKGROUND_IMAGE_POSITION
 
@@ -160,8 +160,8 @@ NODE_BACKGROUND_IMAGE_POSITION = 56
 | --- | --- |
 | .value[0].f32 | x轴位置，单位为px。 |
 | .value[1].f32 | y轴位置，单位为px。 |
-| .value[2]?.i32 | 可选值，对齐方式，参数类型[ArkUI_Alignment](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_alignment)，默认值为ARKUI_ALIGNMENT_TOP_START。该参数从API version 21开始支持。 |
-| .value[3]?.i32 | 可选值，布局方向，参数类型[ArkUI_Direction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_direction)，默认值为ARKUI_DIRECTION_AUTO。多数场景下建议设置为AUTO，由系统自动处理布局方向；若需要固定方向，可设置为LTR或RTL。该参数从API version 21开始支持。 |
+| .value[2]?.i32 | 可选值，对齐方式，参数类型[ArkUI_Alignment](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-layout-h#arkui_alignment)，默认值为ARKUI_ALIGNMENT_TOP_START。该参数从API version 21开始支持。 |
+| .value[3]?.i32 | 可选值，布局方向，参数类型[ArkUI_Direction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-layout-h#arkui_direction)，默认值为ARKUI_DIRECTION_AUTO。多数场景下建议设置为AUTO，由系统自动处理布局方向；若需要固定方向，可设置为LTR或RTL。该参数从API version 21开始支持。 |
 
 返回：
 
@@ -169,15 +169,15 @@ NODE_BACKGROUND_IMAGE_POSITION = 56
 | --- | --- |
 | .value[0].f32 | x轴位置，单位为px。 |
 | .value[1].f32 | y轴位置，单位为px。 |
-| .value[2].i32 | 对齐方式，参数类型[ArkUI_Alignment](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_alignment)。该返回值从API version 21开始支持。 |
-| .value[3].i32 | 布局方向，参数类型[ArkUI_Direction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_direction)。该返回值从API version 21开始支持。 |
+| .value[2].i32 | 对齐方式，参数类型[ArkUI_Alignment](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-layout-h#arkui_alignment)。该返回值从API version 21开始支持。 |
+| .value[3].i32 | 布局方向，参数类型[ArkUI_Direction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-layout-h#arkui_direction)。该返回值从API version 21开始支持。 |
 
 #### NODE_RENDER_GROUP
 
 ```
 NODE_RENDER_GROUP = 80
 ```
- 设置当前组件和子组件是否先整体离屏渲染绘制后再与父控件融合绘制，支持属性设置，属性重置和属性获取。
+ 设置当前组件和子组件是否先整体离屏渲染绘制后再与父组件融合绘制，支持属性设置，属性重置和属性获取接口。
 
 作为属性设置方法参数、属性获取方法返回值[ArkUI_AttributeItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-attributeitem)格式如下。
 
@@ -187,13 +187,13 @@ NODE_RENDER_GROUP = 80
 
 | 参数项 | 描述 |
 | --- | --- |
-| .value[0].i32 | 参数类型为1表示当前组件与子组件需要先整体离屏渲染绘制后再与父控件融合绘制，参数类型为0表示不需要整体离屏渲染绘制后再与父控件融合绘制。默认值为0。 |
+| .value[0].i32 | 参数值为1表示当前组件与子组件需要先整体离屏渲染绘制后再与父控件融合绘制，参数值为0表示不需要整体离屏渲染绘制后再与父控件融合绘制。默认值为0。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| .value[0].i32 | 参数类型为1表示当前组件与子组件完成整体离屏渲染绘制，参数类型为0表示当前组件与子组件未完成整体离屏渲染绘制。 |
+| .value[0].i32 | 参数值为1表示当前组件与子组件完成整体离屏渲染绘制，参数值为0表示当前组件与子组件未完成整体离屏渲染绘制。 |
 
 #### NODE_UNIQUE_ID
 
@@ -224,3 +224,26 @@ NODE_CLICK_DISTANCE = 97
 | 参数项 | 描述 |
 | --- | --- |
 | .value[0].f32 | 表示识别点击手势时允许手指在该范围内移动，单位为vp。 |
+
+#### NODE_INSPECTOR_LABEL
+
+```
+NODE_INSPECTOR_LABEL = 126
+```
+ 设置调测标签，帮助开发者分辨同类节点，提高开发和分析调试的效率。支持属性设置，属性重置和属性获取接口。
+
+作为属性设置方法参数、属性获取方法返回值[ArkUI_AttributeItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-attributeitem)格式如下。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| .string | 表示调测标签的内容。当传入空指针时本地调用无效，支持传入空字符串。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| .string | 表示调测标签的内容。 |

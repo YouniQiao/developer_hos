@@ -2,8 +2,8 @@
 title: "FIDO2_CredentialRequestOptions"
 upstream_id: "harmonyos-references/_f_i_d_o2___credential_request_options"
 catalog: "harmonyos-references"
-content_hash: "f9e47f967a72"
-synced_at: "2026-07-09T00:59:18.671516"
+content_hash: "66e75996b379"
+synced_at: "2026-07-28T16:50:31.329189"
 ---
 
 # FIDO2_CredentialRequestOptions
@@ -14,7 +14,9 @@ synced_at: "2026-07-09T00:59:18.671516"
 
 起始版本： 6.0.0(20)
 
-相关模块： [FIDO2](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey)
+相关模块： [FIDO2（通行密钥服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey)
+
+所在头文件： [fido2_api.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication_capi_header_fido2)
 
 #### 汇总
 

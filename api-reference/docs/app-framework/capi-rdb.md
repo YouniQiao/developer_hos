@@ -2,15 +2,15 @@
 title: "RDB"
 upstream_id: "harmonyos-references/capi-rdb"
 catalog: "harmonyos-references"
-content_hash: "9adf8a42b25e"
-synced_at: "2026-07-09T00:57:18.034282"
+content_hash: "3f48ff9b1657"
+synced_at: "2026-07-28T16:40:50.689610"
 ---
 
 # RDB
 
 #### 概述
 
-分布式数据管理（Distributed data manager，data）支持单设备的各种结构化数据的持久化，以及端云间的同步、共享功能。
+分布式数据管理（Distributed Data Manager，data）支持单设备的各种结构化数据的持久化，以及端云间的同步、共享功能。
 
 分布式数据管理定义了一系列数据类型，可以对数据进行增删改查。
 

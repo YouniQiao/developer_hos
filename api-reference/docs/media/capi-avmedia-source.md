@@ -2,8 +2,8 @@
 title: "AVMediaSource"
 upstream_id: "harmonyos-references/capi-avmedia-source"
 catalog: "harmonyos-references"
-content_hash: "305e459113f2"
-synced_at: "2026-07-09T01:00:40.014332"
+content_hash: "5485c141deb2"
+synced_at: "2026-07-28T16:51:57.878312"
 ---
 
 # AVMediaSource
@@ -11,8 +11,6 @@ synced_at: "2026-07-09T01:00:40.014332"
 #### 概述
 
 定义AVMediaSource的API。
-
-系统能力： SystemCapability.Multimedia.Media.Core
 
 起始版本： 23
 

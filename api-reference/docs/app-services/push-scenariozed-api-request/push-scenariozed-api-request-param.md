@@ -2,8 +2,8 @@
 title: "请求体参数说明"
 upstream_id: "harmonyos-references/push-scenariozed-api-request-param"
 catalog: "harmonyos-references"
-content_hash: "7b33965a914a"
-synced_at: "2026-07-09T01:01:38.269665"
+content_hash: "84f481246925"
+synced_at: "2026-07-28T16:53:01.573905"
 ---
 
 # 请求体参数说明
@@ -17,7 +17,6 @@ synced_at: "2026-07-09T01:01:38.269665"
 | biTag | 否 | String | 批量任务消息标识，[消息回执](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-msg-receipt)时会返回给应用服务器，长度最大64字节。 |
 | receiptId | 否 | String | 输入一个唯一的回执ID指定本次下行消息的回执地址及配置，该回执ID可以在[配置回执参数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-msg-receipt#配置回执参数)中查看。 |
 | collapseKey | 否 | Integer | 用户设备离线时，Push服务器对离线消息缓存机制的控制方式，用户设备上线后缓存消息会再次下发，取值如下： -1：对该取值的所有离线消息都缓存（**默认值**） 0~100：离线消息缓存分组标识，对离线消息进行分组缓存，每个应用每一组只缓存一条最新的离线消息 如果您发送了10条消息，其中前5条的collapseKey为1，后5条的collapseKey为2，那么待用户上线后collapseKey为1和2的分别下发最新的一条消息给最终用户。 **说明：** collapseKey字段只对push-type为0或2的消息生效。 0：通知消息 2：语音播报消息 |
-| backgroundMode | 否 | Integer | 后台消息模式，仅对push-type为6的消息生效。取值如下： 0（**默认值**）：默认后台消息，按照天粒度管控频次 ，系统会根据使用场景和流量进行管控，不合理的使用场景系统会进行频控。 1：即时通讯后台消息，终端设备接收到该条消息后，如果应用在前台则将消息内容传给应用；如果应用在后台，系统会不定时将后台消息送达至应用主进程，您可以在主进程中及时将消息内容同步到应用内。 每次主进程可执行的最大时长为30秒，请在30秒内完成事务处理，超出时间后主进程生命周期结束。 系统限制应用每小时最多发送2条，可能会根据用户使用应用行为，系统运行策略调整。 **说明：** - 该参数设置为**1**时，应用需要申请即时通讯后台消息推送权益，该权益使用限于专属IM类应用；若应用未申请该权益，系统将按照参数设置为0的场景处理该条消息。 - 即时通讯后台消息是否能够及时送达受多因素影响，例如用户使用应用的行为、设备电量、系统负载等，系统不保障送达。 |
 
 #### target
 
@@ -275,10 +274,11 @@ synced_at: "2026-07-09T01:01:38.269665"
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| type | 是 | Integer | 布局类型： 3：进度可视化类型，适用于外卖配送、生鲜配送、车辆接驾进展等涉及进度节点显示的活动。 4：强调文本模板类型，适用于展示取餐码、取件码、车牌号等关键信息的活动。 5：左右文本模板类型，适用于高铁、火车、航班等涉及展示起点、终点的活动。 7：赛事类型，适用于体育赛事比分场景、游戏赛事比分场景等。 -1：基础模板，只展示[固定区和辅助区](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-live-view-0000001955186861#section159031834267)。 **说明：** · 从6.1.0(23)开始，新增支持基础模板（即type为-1）。 · 当更新实况窗时，type传入非法值，终端设备会使用基础模板进行展示。 · 当创建实况窗时，每种[event](#liveviewpayload-实况窗消息)仅可使用特定的布局类型，详情请参见[创建实况窗约束](#创建实况窗约束)（基础模板不受限制，即每种event都可以使用基础模板创建）；当更新实况窗时，每种[event](#liveviewpayload-实况窗消息)可以使用任何布局类型。 · Wearable设备不支持基础模板布局类型（即type为-1），设备收到该类型的消息后将不会展示。 |
+| type | 是 | Integer | 布局类型： 3：进度可视化类型，适用于外卖配送、生鲜配送、车辆接驾进展等涉及进度节点显示的活动。 4：强调文本模板类型，适用于展示取餐码、取件码、车牌号等关键信息的活动。 5：左右文本模板类型，适用于高铁、火车、航班等涉及展示起点、终点的活动。 7：赛事类型，适用于体育赛事比分场景、游戏赛事比分场景等。 100：自定义实况卡片类型。**起始版本：** 26.0.0 -1：基础模板，只展示[固定区和辅助区](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-live-view-0000001955186861#section159031834267)。**起始版本：** 6.1.0(23) （Wearable设备不支持本模板布局类型，设备收到该类型的消息后将不会展示） **说明：** · 当更新实况窗时，type传入非法值，终端设备会使用基础模板进行展示。 · 当创建实况窗时，每种[event](#liveviewpayload-实况窗消息)仅可使用特定的布局类型，详情请参见[创建实况窗约束](#创建实况窗约束)（基础模板不受限制，即每种event都可以使用基础模板创建）；当更新实况窗时，每种[event](#liveviewpayload-实况窗消息)可以使用任何布局类型。 |
 | keywords | 否 | Map | 实况窗关键词，operation为0且event为如下场景时，必填。 · event为FLIGHT时，仅有**flightNo**一个keyword，表示航班号，占位符格式：{{flightNo}}。 · event为TRAIN时，仅有**trainNo**一个keyword，表示火车车次，占位符格式：{{trainNo}}。 消息体中占位符的使用，参见[支持携带占位符的字段](#支持携带占位符的字段)。 |
 | additionalText | 否 | String | 提示信息/免责声明。仅在NotificationData.type=5时可用。（注意消息体大小限制，详情参见[使用约束](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-intro#使用约束)） |
 | keepTime | 否 | Long | 实况窗通知存档期，在结束实况窗通知后，通知仍保留在通知中心的时长，**默认0不保留**，最多设置1小时，单位：s。 存档期时间以结束实况窗消息中携带的此字段数据为准，存档期期间不支持再次更新或结束通知。 |
+| CustomLayout | 否 | [CustomLayout](#customlayout) Object | 实况窗卡片自定义扩展区，type为100时必填，具体字段请参见[CustomLayout](#customlayout)结构体 **起始版本：** 26.0.0 |
 | contentTitle | 否 | String | 通知标题，长度最大1024字符。 operation为0时必填，且不能为空字符串。 |
 | contentText | 否 | Array [[RichText](#richtext) Object] | 通知内容，由多段富文本RichText组成，文本长度总和不超过1024字符，若设置文本颜色，只允许设置为同一种颜色。 operation为0时必填，且不能为空Array。 |
 | richProgress | 否 | [RichProgress](#richprogress) Object | 丰富进度信息，type为3时必填，具体字段请参见[RichProgress](#richprogress)结构体。 |
@@ -300,9 +300,16 @@ synced_at: "2026-07-09T01:01:38.269665"
 | weather | 否 | [Weather](#weather) Object | 传入天气信息结构体。需要同时传入天气类型、天气位置类型与最高最低温度参数，才会在卡片上展示天气。仅支持左右文本模板（即type为5）。 当传入天气类型为雨、雪特殊天气，且同时传入实况窗卡片的背景氛围类型参数backgroundType（合法值参见Live View Kit [BackgroundType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-liveviewmanager#backgroundtype)枚举值）为赏月航班或夕阳航班对应的值时，卡片上优先展示天气背景，其余非特殊天气在卡片上优先展示赏月航班或夕阳航班背景氛围。 **说明：** Wearable设备不支持该特性，携带该字段的消息将不会展示。 |
 | backgroundType | 否 | Integer | 表示实况窗卡片的背景氛围类型，仅支持左右文本模板（即type为5），合法值参见Live View Kit [BackgroundType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-liveviewmanager#backgroundtype)枚举值。 当传入实况窗卡片的背景氛围类型参数为赏月航班或夕阳航班对应的值时，且同时传入天气类型（[Weather](#weather)）为雨、雪特殊天气，卡片上优先展示天气背景，其余非特殊天气在卡片上优先展示赏月航班或夕阳航班背景氛围。 **说明：** Wearable设备不支持该特性，携带该字段的消息将不会展示。 |
 
+#### [h2]CustomLayout
+
+| 参数 | 是否必选 | 参数类型 | 描述 |
+| --- | --- | --- | --- |
+| abilityName | 是 | String | [LiveViewCardExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-card-ability)（实况窗卡片自定义扩展区的扩展Ability）的名称。字符串长度需小于128。值不能为以下内容：null/undefined/空字符串。 **起始版本：** 26.0.0 |
+| abilityParameters | 否 | Map | [LiveViewCardExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-card-ability)（实况窗卡片自定义扩展区的扩展Ability）传入的自定义参数。填值时可以为空，key-value键值对最多50个，传入后可在LiveViewCardExtensionAbility的[onRender()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-card-ability#onrender)中，通过param获取。 **起始版本：** 26.0.0 |
+
 #### [h2]Extend
 
-![](./img/zh-cn_image_0000002661613807.png)
+![](./img/zh-cn_image_0000002685929421.png)
 
 - 1 实况卡片辅助区类型，对应type字段： 当辅助区类型为1时，辅助区显示普通文本，使用API字段text传入文本内容。
 - 当辅助区类型为2时，辅助区显示胶囊文本，使用API字段text传入文本内容。
@@ -320,7 +327,7 @@ synced_at: "2026-07-09T01:01:38.269665"
 
 #### [h2]Game
 
-![](./img/zh-cn_image_0000002631414518.png)
+![](./img/zh-cn_image_0000002656009746.png)
 
 - 1 左侧队伍名称，对应host中的[name](#team)字段。
 - 2 左侧队伍图标，对应host中的[icon](#team)和[iconUrl](#team)字段。
@@ -367,10 +374,10 @@ synced_at: "2026-07-09T01:01:38.269665"
 
 | 图示 | 说明 |
 | --- | --- |
-| ![](./img/zh-cn_image_0000002661733745.png) | 定义实况胶囊基本属性的基类： · 1 胶囊布局类型，对应type字段。 · 2 实况胶囊的图标，对应icon和iconUrl字段。 · 3 实况胶囊的尾部图标，对应tailIcon和tailIconUrl字段。 · 4 实况胶囊副文本是否展示，对应isContentDisplayed字段。 · 5 实况胶囊尾部图标是否展示，对应isTailIconDisplayed字段。 |
-| ![](./img/zh-cn_image_0000002631254626.png) | type为1时展示该内容： · 1 胶囊状态主文本，对应title字段。 · 2 胶囊内容，对应content字段。 |
-| ![](./img/zh-cn_image_0000002661613809.png) | type为2时展示该内容： · 1 胶囊内容，对应content字段。 · 2 胶囊计时器初始值，对应capsuleTimer中的[time](#capsuletimer)字段。 · 3 是否倒计时显示计时器，对应capsuleTimer中的[countDown](#capsuletimer)字段。 · 4 胶囊计时器是否暂停，对应capsuleTimer中的[pause](#capsuletimer)字段。 |
-| ![](./img/zh-cn_image_0000002631414520.png) | type为3时展示该内容： · 1 进度最大值，对应progress中的[max](#progress)字段。 · 2 进度当前值，对应progress中的[progress](#progress)字段。 · 3 进度显示类型，对应progress中的[indeterminate](#progress)字段。 · 4 胶囊内容，对应content字段。 |
+| ![](./img/zh-cn_image_0000002655849824.png) | 定义实况胶囊基本属性的基类： · 1 胶囊布局类型，对应type字段。 · 2 实况胶囊的图标，对应icon和iconUrl字段。 · 3 实况胶囊的尾部图标，对应tailIcon和tailIconUrl字段。 · 4 实况胶囊副文本是否展示，对应isContentDisplayed字段。 · 5 实况胶囊尾部图标是否展示，对应isTailIconDisplayed字段。 |
+| ![](./img/zh-cn_image_0000002686089255.png) | type为1时展示该内容： · 1 胶囊状态主文本，对应title字段。 · 2 胶囊内容，对应content字段。 |
+| ![](./img/zh-cn_image_0000002685929423.png) | type为2时展示该内容： · 1 胶囊内容，对应content字段。 · 2 胶囊计时器初始值，对应capsuleTimer中的[time](#capsuletimer)字段。 · 3 是否倒计时显示计时器，对应capsuleTimer中的[countDown](#capsuletimer)字段。 · 4 胶囊计时器是否暂停，对应capsuleTimer中的[pause](#capsuletimer)字段。 |
+| ![](./img/zh-cn_image_0000002656009748.png) | type为3时展示该内容： · 1 进度最大值，对应progress中的[max](#progress)字段。 · 2 进度当前值，对应progress中的[progress](#progress)字段。 · 3 进度显示类型，对应progress中的[indeterminate](#progress)字段。 · 4 胶囊内容，对应content字段。 |
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
@@ -399,7 +406,7 @@ synced_at: "2026-07-09T01:01:38.269665"
 
 #### [h2]SingleTextBlock
 
-![](./img/zh-cn_image_0000002661733747.png)
+![](./img/zh-cn_image_0000002655849826.png)
 
 - 1 辅助标记文本，对应firstLine字段。
 - 2 强调文本内容，对应secondLine字段。
@@ -414,7 +421,7 @@ synced_at: "2026-07-09T01:01:38.269665"
 
 #### [h2]FirstTextBlock
 
-![](./img/zh-cn_image_0000002631254628.png)
+![](./img/zh-cn_image_0000002686089257.png)
 
 - 1 左侧首行文本，对应firstLine字段。
 - 2 左侧次行文本内容，对应secondLine字段。
@@ -429,7 +436,7 @@ synced_at: "2026-07-09T01:01:38.269665"
 
 #### [h2]LastTextBlock
 
-![](./img/zh-cn_image_0000002661613811.png)
+![](./img/zh-cn_image_0000002685929425.png)
 
 - 3 右侧首行文本，对应firstLine字段。
 - 4 右侧次行文本内容，对应secondLine字段。
@@ -449,7 +456,7 @@ synced_at: "2026-07-09T01:01:38.269665"
 
 #### [h2]RichProgress
 
-![](./img/zh-cn_image_0000002631414522.png)
+![](./img/zh-cn_image_0000002656009750.png)
 
 - 1 进度百分比，对应progress字段。
 - 2 进度指示器左侧的进度点及节点图标的颜色，对应color字段。
@@ -477,7 +484,7 @@ synced_at: "2026-07-09T01:01:38.269665"
 
 #### [h2]ExternalData
 
-![](./img/zh-cn_image_0000002661733749.png)
+![](./img/zh-cn_image_0000002655849828.png)
 
 - 1 自定义的外屏通知标题，对应title字段。
 - 2 自定义的外屏通知内容，对应body字段。

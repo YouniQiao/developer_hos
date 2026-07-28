@@ -2,8 +2,8 @@
 title: "Types"
 upstream_id: "harmonyos-references/arkts-apis-avsession-t"
 catalog: "harmonyos-references"
-content_hash: "29ae465ef9da"
-synced_at: "2026-07-09T01:00:18.032525"
+content_hash: "91dce3f4ee69"
+synced_at: "2026-07-28T16:51:36.622337"
 ---
 
 # Types
@@ -128,7 +128,29 @@ type AVControlCommandType = 'play' | 'pause' | 'stop' | 'playNext' | 'playPrevio
 | 'setTargetLoopMode' 18+ | 设置目标循环模式。对应参数使用[LoopMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-e#loopmode10)。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | 'toggleFavorite' | 切换收藏状态。对应参数使用[AVMetadata.assetId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-i#avmetadata10)。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | 'playFromAssetId' 11+ | 播放指定的assetId。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| 'playWithAssetId' 20+ | 播放指定的assetId。对应参数使用[AVMetadata.assetId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-i#avmetadata10)， 字符串长度系统能力： SystemCapability.Multimedia.AVSession.Core
+| 'playWithAssetId' 20+ | 播放指定的assetId。对应参数使用[AVMetadata.assetId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-i#avmetadata10)， 字符串长度起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Multimedia.AVSession.Core
+
+| 类型 | 说明 |
+| --- | --- |
+| 'playNext' | 下一首。 |
+| 'playPrevious' | 上一首。 |
+| 'fastForward' | 快进。 |
+| 'rewind' | 快退。 |
+| 'setSpeed' | 设置播放倍速。 |
+| 'setLoopMode' | 设置循环模式。 |
+| 'toggleFavorite' | 是否收藏。 |
+
+#### NoParamCallback22+
+
+type NoParamCallback = () => void
+
+定义无参数的回调函数类型。
+
+系统能力： SystemCapability.Multimedia.AVSession.Core
 
 #### TwoParamCallback22+
 

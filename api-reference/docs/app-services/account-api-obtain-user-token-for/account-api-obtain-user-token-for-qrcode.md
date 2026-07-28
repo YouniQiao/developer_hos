@@ -1,0 +1,232 @@
+---
+title: "获取用户级凭证"
+upstream_id: "harmonyos-references/account-api-obtain-user-token-for-qrcode"
+catalog: "harmonyos-references"
+content_hash: "53737e74684a"
+synced_at: "2026-07-28T16:52:30.464976"
+---
+
+# 获取用户级凭证
+
+![](./img/caution_3.0-zh-cn.png) 为了更安全的网络访问，请务必使用TLS1.2协议及规定内的加密套件。若使用协议是TLS1.0、TLS1.1或规定外的加密套件，可能无法正常访问华为账号服务。
+
+关于TLS1.2协议及规定内加密套件的信息，可以点击这里进行详细了解：[TLS协议及加密套件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-common#tls协议及加密套件)。
+
+#### 功能介绍
+
+通过设备码获取用户级Access Token、Refresh Token、ID Token。
+
+#### 场景描述
+
+[扫码授权登录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-authorize-by-qrcode)场景下，应用服务端通过设备码轮询该接口，获取Access Token、Refresh Token、ID Token。
+
+#### 使用约束
+
+- 需确保调用端网络正常。
+- [获取二维码信息接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-authorize-qrcode-info#接口原型)返回的设备码存在有效期（以接口响应结果中的expire_in字段实际值为准），超时后需要重新调用[获取二维码信息接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-authorize-qrcode-info#接口原型)生成新的二维码。
+- [获取二维码信息接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-authorize-qrcode-info#接口原型)返回的用户码存在有效期（以接口响应结果中的scan_expire_in字段实际值为准），如果用户未在此时间内扫码，需要重新调用[获取二维码信息接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-authorize-qrcode-info#接口原型)生成新的二维码。
+- 应用服务端在轮询该接口时，同一个设备码轮询次数不得超过[获取二维码信息接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-authorize-qrcode-info#接口原型)响应结果中的expire_in/interval的值，轮询超过限制后请求会被拒绝，需要重新调用[获取二维码信息接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-authorize-qrcode-info#接口原型)生成新的二维码。
+
+#### 接口原型
+
+- **承载协议：** HTTPS POST
+- **接口方向：** 开发者服务器->华为账号服务器
+- **接口URL：** https://oauth-login.cloud.huawei.com/oauth2/v3/token
+- **数据格式：** 请求消息：Content-Type: application/x-www-form-urlencoded 响应消息：Content-Type: application/json;charset=utf-8
+
+#### 请求参数
+
+#### [h2]Request Header
+
+| 参数 | 是否必选 | 参数类型 | 描述 |
+| --- | --- | --- | --- |
+| Content-Type | 是 | String | 取值为：application/x-www-form-urlencoded。 **说明**： Request Body传参，请务必遵循此请求头格式，否则可能导致请求失败，具体传参方式可参考[示例代码](#示例代码)。 |
+
+#### [h2]Request Body
+
+| 参数 | 是否必选 | 参数类型 | 描述 |
+| --- | --- | --- | --- |
+| grant_type | 是 | String | 授权模式，本场景固定传“device_code”。 |
+| client_id | 是 | String | 在创建应用后，由AppGallery Connect（简称AGC）为应用分配的唯一标识。参数取值详见[查看应用基本信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-appinfo-0000001100014694)中的**OAuth 2.0客户端ID（凭据）-Client ID**参数。 **说明：** 该参数与获取code参数时的Client ID必须一致，否则会报错（sub_error=20154），如出现此报错，请参考[配置Client ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id)排查处理。 |
+| client_secret | 是 | String | 在创建应用后，由AppGallery Connect（简称AGC）为应用分配的密钥（Client Secret）。参数取值详见[查看应用基本信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-appinfo-0000001100014694)中的**OAuth 2.0客户端ID（凭据）-Client Secret**参数。 |
+| code | 是 | String | 设备码，当“grant_type”为“device_code”时，此参数必选。该参数的值对应[获取二维码信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-authorize-qrcode-info)返回的device_code值。 |
+| supportAlg | 否 | String | 生成ID Token的算法，当前支持的算法如下： - PS256（推荐使用） - RS256 如果未指定该参数或指定的算法不在支持的范围内，则默认使用RS256。 |
+
+#### 请求示例
+
+```
+POST /oauth2/v3/token HTTP/1.1
+Host: oauth-login.cloud.huawei.com
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=device_code&code=<device_code>&client_id=<client_id>&client_secret=<client_secret>
+```
+
+#### 响应参数
+
+#### [h2]Response Header
+
+| 参数 | 是否必选 | 参数类型 | 描述 |
+| --- | --- | --- | --- |
+| Content-Type | 是 | String | 取值为：application/json;charset=utf-8。 |
+
+#### [h2]Response Body
+
+调用成功时，响应消息体返回如下：
+
+| 参数 | 是否必选 | 参数类型 | 描述 |
+| --- | --- | --- | --- |
+| token_type | 是 | String | 固定字符串“Bearer”。 |
+| access_token | 是 | String | Access Token，访问被权限管控资源的凭证。Access Token长度详见[Access Token和Refresh Token长度限制要求](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-11)。 |
+| scope | 否 | String | Access Token中的scope，以空格分隔，最大不会超过150个。在[获取二维码信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-authorize-qrcode-info)时没有传入任何scope，且应用不具备该用户的历史授权，则不返回该字段。 |
+| expires_in | 是 | Integer | Access Token的过期时间，单位：s。默认有效期为3600s。 |
+| refresh_token | 是 | String | Refresh Token，用于刷新Access Token。Refresh Token有效期为180天。 |
+| id_token | 否 | String | ID Token（JWT格式），详细信息请参见[验证ID Token有效性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-verify-id-token)中ID Token描述。在[获取二维码信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-authorize-qrcode-info)时没有传入openid的scope且用户不具备openid的历史授权，则不返回该字段。 |
+| open_id | 是 | String | 用户OpenID。具体格式要求请参考[OpenID和UnionID的格式说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-9)。 |
+
+调用失败时，响应消息体返回如下：
+
+| 参数 | 参数类型 | 描述 |
+| --- | --- | --- |
+| error | int | 业务响应主错误码，详见[错误码](#错误码)。 |
+| sub_error | int | 业务响应子错误码，详见[错误码](#错误码)。 |
+| error_description | String | 错误描述信息。 |
+
+#### 响应示例
+
+#### [h2]请求成功时
+
+```
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=utf-8
+
+{
+    "access_token": "DgEAAN7qd*****U0TvQ/eXpE4x+gvhoYh5/UuzL",
+    "refresh_token": "DgECAL++vCn******NQ/UOL8+wm0jJi+o4NI793H",
+    "expires_in": 3600,
+    "id_token": "eyJraW*****ifQ.eyJhdF9oYX*****Q2fQ.TT05lFYe*****vDwb_Gj1ccR59yyB2Ig",
+    "scope": "openid profile",
+    "token_type": "Bearer",
+    "open_id": "AQAxrBzThFv*****lv9tV_4rMCc"
+}
+```
+
+#### [h2]请求失败时
+
+```
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+
+{
+    "sub_error": 12304,
+    "error_description": "invalid client_secret",
+    "error": 1203
+}
+```
+
+#### 示例代码
+
+Java示例代码如下，运行前需要进行[示例代码环境配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-common#示例代码环境配置)（请将此示例代码与工具类CallUtils放于同一路径下，如不在同一路径，请手动添加import）
+
+```
+import com.alibaba.fastjson2.JSONObject;
+import org.apache.http.NameValuePair;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.message.BasicNameValuePair;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * 获取用户级凭证
+ */
+public class UserTokenAPIDemo {
+    public static void main(String[] args) throws IOException {
+        // 获取用户级凭证的接口URL
+        String url = "https://oauth-login.cloud.huawei.com/oauth2/v3/token";
+        // 授权模式，这里使用设备码（device_code）获取Access Token
+        String grantType = "device_code";
+        // 替换为实际的Client ID
+        String clientId = "<Client ID>";
+        // 替换为Client ID对应的Client Secret
+        String clientSecret = "<Client Secret>";
+        // 替换为获取到的设备码（device_code）
+        String code = "<device_code>";
+        JSONObject result = getTokenByDeviceCode(url, code, clientSecret, clientId, grantType);
+        // 解析获取access_token
+        String accessToken = result.getString("access_token");
+        // 解析获取scope
+        String scope = result.getString("scope");
+        // 解析获取token_type
+        String tokenType = result.getString("token_type");
+        // 解析获取refresh_token
+        String refreshToken = result.getString("refresh_token");
+        // 解析获取expires_in
+        Integer expiresIn = result.getInteger("expires_in");
+        // 解析获取id_token
+        String idToken = result.getString("id_token");
+        // 解析获取open_id
+        String openId = result.getString("open_id");
+    }
+
+    private static JSONObject getTokenByDeviceCode(String url, String deviceCode, String clientSecret,
+                                             String clientId, String grantType) throws IOException {
+        HttpPost httpPost = new HttpPost(url);
+        List<NameValuePair> request = new ArrayList<>();
+        request.add(new BasicNameValuePair("code", deviceCode));
+        request.add(new BasicNameValuePair("client_secret", clientSecret));
+        request.add(new BasicNameValuePair("client_id", clientId));
+        request.add(new BasicNameValuePair("grant_type", grantType));
+        request.add(new BasicNameValuePair("supportAlg", "PS256"));
+        httpPost.setHeader("Content-Type", "application/x-www-form-urlencoded");
+        httpPost.setEntity(new UrlEncodedFormEntity(request));
+        // 如需要自定义异常处理请使用api CallUtils#remoteCall(HttpUriRequest, BiFunction<CloseableHttpResponse,String,E>)
+        return CallUtils.toJsonObject(CallUtils.remoteCallOAuth(httpPost));
+    }
+}
+```
+
+#### 错误码
+
+| HTTP响应码 | 描述 | 解决方法 |
+| --- | --- | --- |
+| 200 | 成功。 | - |
+| 400 | 参数错误。 | 请根据**业务响应主错误码**以及**业务响应子错误码**进一步排查问题。 |
+| 403 | 无权限访问。 | 通常是调用方网络安全策略阻止了访问，请检查网络环境配置。若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 404 | 找不到服务。 | 请检查请求URI是否正确。 |
+| 405 | 不支持的http请求method。 | 请检查http请求method是否与接口说明一致。 |
+| 500 | 服务内部错误。 | 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 502 | 请求连接异常，常见于网络状况不稳定。 | 建议稍后重试，若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 503 | 系统流控。 | 触发系统流控，请稍后重试。 |
+| 504 | 请求连接超时，常见于网络状况不稳定。 | 建议稍后重试，若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 590 | 服务内部错误。 | 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+
+| 业务响应主错误码 | 业务响应子错误码 | 描述 | 解决方法 |
+| --- | --- | --- | --- |
+| 1101 | 20002 | client_id格式不正确。 | 检查client_id是否满足正则：^[0-9]{1,64}$。 |
+| 1101 | 20152 | code格式校验不通过。 | 检查code格式是否满足正则：^[0-9a-zA-Z=/\\+]+$。 该错误码出现可能场景： - code参数被篡改，导致格式不符。 - 请求头的Content-Type为application/x-www-form-urlencoded，但实际代码调用时，未对请求body体进行URLEncode处理，可参考[示例代码](#示例代码)组装参数。 |
+| 1101 | 20154 | code解析得到的Client ID与入参client_id不一致。 | 检查入参client_id是否与调用[获取二维码信息接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-authorize-qrcode-info#接口原型)时的入参client_id一致。 |
+| 1101 | 20171 | client_secret为空。 | 请按照接口参数的要求，传入正确的client_secret参数。 |
+| 1101 | 20172 | client_secret格式不正确。 | 检查client_secret格式是否满足正则：^[0-9a-zA-Z=/\\+]+$。 |
+| 1101 | 20182 | grant_type值不正确。 | grant_type可选值如下： - “authorization_code”：该场景用于[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token)。 - “device_code”：该场景用于[扫码授权登录-获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token-for-qrcode)。 - “refresh_token”： 该场景用于[刷新用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-refresh-token)。 - “client_credentials”：该场景用于[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)。 当前场景请固定传”device_code“。 |
+| 1101 | 20404 | 二维码的user_code已到期。 | 请重新调用[获取二维码信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-authorize-qrcode-info)，生成新的二维码。 |
+| 1101 | 20406 | 设备码已经成功获取到用户级凭证，无法再次使用。 | 请重新调用[获取二维码信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-authorize-qrcode-info)，生成新的二维码。 |
+| 1101 | 20407 | 设备码获取用户级凭证轮询超过限制。 | 请重新调用[获取二维码信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-authorize-qrcode-info)，生成新的二维码。 |
+| 1101 | 20408 | 设备码解析出来的scope校验不通过。 | 在调用[获取二维码信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-authorize-qrcode-info)时，请严格按照接口入参要求，传入指定的scope枚举值。 |
+| 1101 | 20411 | 用户未扫码。 | 该场景属于正常错误，轮询过程中如出现该错误，请勿中断轮询。 |
+| 1101 | 20412 | 用户已扫码，但未完成授权。 | 该场景属于正常错误，轮询过程中如出现该错误，请勿中断轮询。 |
+| 1101 | 20414 | 用户已扫码，但是在授权页点击取消。 | 请重新调用[获取二维码信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-authorize-qrcode-info)，生成新的二维码。 |
+| 1102 | 20001 | client_id为空。 | 请按照接口参数的要求，传入正确的client_id参数。 |
+| 1102 | 20151 | code为空。 | 请按照接口参数的要求，传入正确的code参数。 |
+| 1102 | 20181 | grant_type为空。 | grant_type可选值如下： - “authorization_code”：该场景用于[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token)。 - “device_code”：该场景用于[扫码授权登录-获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token-for-qrcode)。 - “refresh_token”： 该场景用于[刷新用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-refresh-token)。 - “client_credentials”：该场景用于[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)。 当前场景请固定传”device_code“。 |
+| 1203 | 12303 | client_id在系统不存在。 | 在grant_type=device_code场景下，检查client_id参数在系统不存在。请前往AppGallery Connect（简称AGC）确认client_id是否存在。 |
+| 1203 | 12304 | 无效的client_secret。 | 入参client_id和client_secret不匹配导致，请检查参数。 |
+| 1600 | 16002 | 设备码解析失败。 | 入参code错误，该参数值可通过[获取二维码信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-authorize-qrcode-info)接口获取，取响应参数device_code字段的值。 |
+| 1600 | 16003 | 设备码过期。 | 请重新调用[获取二维码信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-authorize-qrcode-info)，生成新的二维码。 |
+| 1203 | 56000 | 系统内部调用出现异常。 | 系统内部调用出现异常，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 1203 | 56100 | 系统内部调用连接超时。 | 系统内部调用连接超时，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 1203 | 56200 | 系统内部调用socket超时。 | 系统内部调用socket超时，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 1203 | 57000 | 系统内部调用触发熔断。 | 服务内部调用触发熔断，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 1203 | 500 | 系统内部错误。 | 系统内部处理错误，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 1203 | 1203 | 系统未知异常。 | 系统未知异常，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |

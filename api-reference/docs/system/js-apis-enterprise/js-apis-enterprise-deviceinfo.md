@@ -2,8 +2,8 @@
 title: "@ohos.enterprise.deviceInfo（设备信息管理）"
 upstream_id: "harmonyos-references/js-apis-enterprise-deviceinfo"
 catalog: "harmonyos-references"
-content_hash: "8d4cc998f2bd"
-synced_at: "2026-07-09T00:59:51.776894"
+content_hash: "d9a44a413c2c"
+synced_at: "2026-07-28T16:51:09.858620"
 ---
 
 # @ohos.enterprise.deviceInfo（设备信息管理）
@@ -55,6 +55,7 @@ getDeviceInfo(admin: Want, label: string): string
 | --- | --- |
 | 9200001 | The application is not an administrator application of the device. |
 | 9200002 | The administrator application does not have permission to manage the device. |
+| 9200007 | The system ability works abnormally. |
 | 201 | Permission verification failed. The application does not have the permission required to call the API. |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 

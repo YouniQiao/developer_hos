@@ -2,18 +2,18 @@
 title: "@ohos.bytrace (性能打点)"
 upstream_id: "harmonyos-references/js-apis-bytrace"
 catalog: "harmonyos-references"
-content_hash: "946f97c0ef67"
-synced_at: "2026-07-09T01:00:02.981632"
+content_hash: "c91a0b0b0b43"
+synced_at: "2026-07-28T16:51:21.506974"
 ---
 
 # @ohos.bytrace (性能打点)
 
-本模块提供了追踪进程轨迹。
+本模块提供了追踪进程轨迹的能力，用于应用性能分析场景。开发者可以通过性能打点来追踪关键代码段的执行时间，定位性能瓶颈，优化应用性能。适用于应用启动耗时分析、业务流程性能监控、帧率分析等场景。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 本模块接口从API Version 8开始废弃，建议使用新接口[@ohos.hiTraceMeter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hitracemeter)替代。
 - 本模块首批接口从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
+- 本模块接口从API version 8开始废弃，建议使用新接口[@ohos.hiTraceMeter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hitracemeter)替代。
 
 #### 导入模块
 
@@ -27,7 +27,10 @@ startTrace(name: string, taskId: number, expectedTime?: number): void
 
 标记一个时间片跟踪任务的开始。
 
-![](./img/note_3.0-zh-cn.png) 如果有多个相同name的任务需要追踪或者对同一个任务要追踪多次，并且这些跟踪任务会同时被执行，则每次调用startTrace的taskId必须不一致。如果具有相同name的跟踪任务是串行执行的，则taskId可以相同。在下面bytrace.finishTrace的示例中会举例说明。
+![](./img/note_3.0-zh-cn.png)
+
+- 如果有多个相同name的任务需要追踪或者对同一个任务要追踪多次，并且这些跟踪任务会同时被执行，则每次调用startTrace的taskId必须不一致。如果具有相同name的跟踪任务是串行执行的，则taskId可以相同。在下面bytrace.finishTrace的示例中会举例说明。
+- 从API version 7开始支持，从API version 8开始废弃。建议使用[startTrace](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hitracemeter#hitracemeterstarttrace)替代。
 
 系统能力： SystemCapability.HiviewDFX.HiTrace
 
@@ -37,7 +40,7 @@ startTrace(name: string, taskId: number, expectedTime?: number): void
 | --- | --- | --- | --- |
 | name | string | 是 | 时间片跟踪任务名称。 |
 | taskId | number | 是 | 时间片跟踪任务id。 |
-| expectedTime | number | 否 | 期望的耗时时间（单位：ms）。可选，默认为空。 |
+| expectedTime | number | 否 | 期望的耗时时间（单位：ms）。设置该值后，系统会在实际执行时间超过期望值时产生性能警告。可选，默认为空表示不产生警告。 |
 
 示例：
 
@@ -52,7 +55,10 @@ finishTrace(name: string, taskId: number): void
 
 标记一个时间片跟踪事件的结束。
 
-![](./img/note_3.0-zh-cn.png) finishTrace的name和taskId必须与流程开始的startTrace对应参数值一致。
+![](./img/note_3.0-zh-cn.png)
+
+- finishTrace的name和taskId必须与流程开始的startTrace对应参数值一致。
+- 从API version 7开始支持，从API version 8开始废弃。建议使用[finishTrace](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hitracemeter#hitracemeterfinishtrace)替代。
 
 系统能力：SystemCapability.HiviewDFX.HiTrace
 
@@ -60,8 +66,8 @@ finishTrace(name: string, taskId: number): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| name | string | 是 | 时间片跟踪任务名称。 |
-| taskId | number | 是 | 时间片跟踪任务id。 |
+| name | string | 是 | 时间片跟踪任务名称，必须与startTrace调用时的name参数值一致。 |
+| taskId | number | 是 | 时间片跟踪任务id，必须与startTrace调用时的taskId参数值一致。 |
 
 示例：
 
@@ -95,7 +101,9 @@ bytrace.finishTrace("myTestFunc", 1);
 
 traceByValue(name: string, count: number): void
 
-标记预追踪耗时任务的数值变量，该变量的数值会不断变化。
+标记预追踪耗时任务的数值变量，该变量的数值会不断变化。traceByValue可独立使用，用于记录某个数值变量的变化轨迹。
+
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 8开始废弃。建议使用[traceByValue](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hitracemeter#hitracemetertracebyvalue)替代。
 
 系统能力：SystemCapability.HiviewDFX.HiTrace
 

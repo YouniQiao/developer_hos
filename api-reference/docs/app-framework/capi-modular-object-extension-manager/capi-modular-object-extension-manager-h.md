@@ -2,8 +2,8 @@
 title: "modular_object_extension_manager.h"
 upstream_id: "harmonyos-references/capi-modular-object-extension-manager-h"
 catalog: "harmonyos-references"
-content_hash: "a8b678bfec93"
-synced_at: "2026-07-09T00:57:13.151808"
+content_hash: "c2c4315ddfac"
+synced_at: "2026-07-28T16:40:44.403071"
 ---
 
 # modular_object_extension_manager.h
@@ -327,3 +327,51 @@ AbilityRuntime_ErrorCode OH_AbilityRuntime_GetModObjExtensionInfoByIndex(OH_Abil
 | 类型 | 说明 |
 | --- | --- |
 | [AbilityRuntime_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) | 返回特定的错误码。 [ABILITY_RUNTIME_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 接口调用成功。 [ABILITY_RUNTIME_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) allExtensionInfos或extensionInfo为空， 或index大于等于集合中ModularObjectExtensionAbility信息数量。 |
+
+#### [h2]OH_AbilityRuntime_ConnectModularObjectExtensionAbility()
+
+```
+AbilityRuntime_ErrorCode OH_AbilityRuntime_ConnectModularObjectExtensionAbility(AbilityBase_Want *want, OH_AbilityRuntime_ConnectOptions *connectOptions, int64_t *connectionId)
+```
+ 描述
+
+连接ModularObjectExtensionAbility。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| AbilityBase_Want *want | 连接ModularObjectExtensionAbility需要的Want信息。详细内容参考[AbilityBase_Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilitybase-want)。 |
+| OH_AbilityRuntime_ConnectOptions *connectOptions | 连接选项。详细内容参考[OH_AbilityRuntime_ConnectOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-connectoptions)。 |
+| int64_t *connectionId | 指向int64_t的指针，用于接收连接ID。可以在后续调用[OH_AbilityRuntime_DisconnectModularObjectExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-extension-manager-h#oh_abilityruntime_disconnectmodularobjectextensionability)时使用。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| [AbilityRuntime_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) | 返回特定的错误码。 [ABILITY_RUNTIME_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 接口调用成功。 [ABILITY_RUNTIME_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 传入参数无效。 [ABILITY_RUNTIME_ERROR_CODE_NOT_SUPPORTED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 设备不支持连接ModularObjectExtensionAbility。 [ABILITY_RUNTIME_ERROR_CODE_NO_SUCH_ABILITY](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 目标Ability不存在。 [ABILITY_RUNTIME_ERROR_CODE_INCORRECT_ABILITY_TYPE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) Ability类型不正确。 [ABILITY_RUNTIME_ERROR_CODE_VISIBILITY_VERIFICATION_FAILED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 无法启动不可见组件。 [ABILITY_RUNTIME_ERROR_CODE_STATIC_CFG_PERMISSION](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 指定进程无相应权限。 [ABILITY_RUNTIME_ERROR_CODE_CROSS_USER_OPERATION](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 不允许跨用户操作。 [ABILITY_RUNTIME_ERROR_CODE_CROWDTEST_EXPIRED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 众测应用已过期。 [ABILITY_RUNTIME_ERROR_CODE_INTERNAL](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 内部错误。 [ABILITY_RUNTIME_ERROR_CODE_NOT_TOP_ABILITY](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 调用方进程不在前台。 [ABILITY_RUNTIME_ERROR_CODE_UPPER_LIMIT_REACHED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 同名Ability的实例数超过20个。 [ABILITY_RUNTIME_ERROR_CODE_NO_RUNNING_ABILITIES_WITH_UI](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 目标应用无正在运行的UIAbility或UIExtensionAbility。 [ABILITY_RUNTIME_ERROR_CODE_UPPER_RATE_LIMIT](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) API调用频率过高，超过每秒20次。 [ABILITY_RUNTIME_ERROR_CODE_UPPER_CONNECTION_NUMBER_LIMIT](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 同一进程最多连接5个同名的Ability。 [ABILITY_RUNTIME_ERROR_CODE_CROSS_APP_IN_PROCESS](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 在[OH_ABILITY_RUNTIME_LAUNCH_MODE_IN_PROCESS](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-extension-manager-h#oh_abilityruntime_launchmode)模式下，调用方与目标Ability不在同一应用。 |
+
+#### [h2]OH_AbilityRuntime_DisconnectModularObjectExtensionAbility()
+
+```
+AbilityRuntime_ErrorCode OH_AbilityRuntime_DisconnectModularObjectExtensionAbility(int64_t connectionId)
+```
+ 描述
+
+断开与ModularObjectExtensionAbility的连接。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| int64_t connectionId | 表示连接ID。由[OH_AbilityRuntime_ConnectModularObjectExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-extension-manager-h#oh_abilityruntime_connectmodularobjectextensionability)返回。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| [AbilityRuntime_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) | 返回特定的错误码。 [ABILITY_RUNTIME_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 接口调用成功。 [ABILITY_RUNTIME_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 传入参数无效。 [ABILITY_RUNTIME_ERROR_CODE_INTERNAL](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 内部错误。 |

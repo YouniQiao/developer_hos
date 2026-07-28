@@ -2,8 +2,8 @@
 title: "特效绘制合并"
 upstream_id: "harmonyos-references/ts-universal-attributes-use-effect"
 catalog: "harmonyos-references"
-content_hash: "8010d7c5bbed"
-synced_at: "2026-07-09T00:57:40.757334"
+content_hash: "04ba0010845f"
+synced_at: "2026-07-28T16:42:25.140058"
 ---
 
 # 特效绘制合并
@@ -19,7 +19,7 @@ synced_at: "2026-07-09T00:57:40.757334"
 
 useEffect(value: boolean): T
 
-用于对背景模糊等特效进行绘制合并。
+用于控制组件是否继承父级EffectComponent的特效属性参数，对背景模糊等特效进行绘制合并。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -93,8 +93,8 @@ useEffect(useEffect: Optional<boolean>, effectType?: EffectType): T
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| DEFAULT | 0 | 使用效果模板进行定义。 |
-| WINDOW_EFFECT | 1 | 使用窗口定义的效果模板进行定义。 |
+| DEFAULT | 0 | 使用效果模板。 |
+| WINDOW_EFFECT | 1 | 使用窗口定义的效果模板。 |
 
 效果模板
 

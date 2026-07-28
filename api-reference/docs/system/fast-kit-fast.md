@@ -2,8 +2,8 @@
 title: "FAST"
 upstream_id: "harmonyos-references/fast-kit-fast"
 catalog: "harmonyos-references"
-content_hash: "c7a320892ff0"
-synced_at: "2026-07-17T16:18:24.735270"
+content_hash: "8c779b00f44b"
+synced_at: "2026-07-28T16:51:04.071055"
 ---
 
 # FAST
@@ -28,13 +28,17 @@ synced_at: "2026-07-17T16:18:24.735270"
 | [fast_dsp_common.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit-fast-dsp-common-8h) | 数字信号处理（DSP）通用数据结构和工具函数定义。 |
 | [fast_dsp_transform.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit-fast-dsp-transform-8h) | 数字信号处理（DSP）变换函数定义，包括FFT、IFFT等。 |
 | [fast_solver_rect_partition.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit-fast-solver-rect-partition-8h) | 矩形划分求解器相关数据结构及函数定义。 |
+| [fast_solver_polynomial.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit-fast-solver-polynomial-8h) | 多项式零点求解器相关数据结构及函数定义。 |
 | [fast_collections_hashmap.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit-fast-collections-hashmap-8h) | 适用于单线程场景的哈希表相关数据结构及函数定义。 |
+| [fast_utils_algorithm.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit-fast-utils-algorithm-8h) | 通用算法实现，目前提供排序相关的数据结构和函数定义。 |
+| [scheduling_optimization.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit-scheduling-optimization-8h) | 系统性能优化相关数据结构及函数定义。 |
 
 #### [h2]结构体
 
 | 名称 | 描述 |
 | --- | --- |
 | struct [FAST_Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit--fast-rect) | 定义矩形的数据结构。 |
+| struct [FAST_Poly](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit--fast-poly) | 定义稀疏格式多项式的数据结构。 |
 | struct [FAST_SplitComplex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit--fast-splitcomplex) | 定义单精度浮点复数信号的数据结构（分离格式）。 |
 | struct [FAST_SplitComplexD](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit--fast-splitcomplexd) | 定义双精度浮点复数信号的数据结构（分离格式）。 |
 | struct [FAST_BiquadCoefficients](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit--fast-biquadcoefficients) | 定义单精度二阶（biquad）IIR滤波器节的系数。 |
@@ -43,6 +47,7 @@ synced_at: "2026-07-17T16:18:24.735270"
 | struct [FAST_BiquadStateD](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit--fast-biquadstated) | 定义双精度二阶IIR滤波器节的状态变量。 |
 | struct [FAST_Biquadm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit--fast-biquadm) | 定义单精度多通道、多节二阶IIR滤波器组的数据结构。 |
 | struct [FAST_BiquadmD](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit--fast-biquadmd) | 定义双精度多通道、多节二阶IIR滤波器组的数据结构。 |
+| struct [HMS_FAST_SortData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit--hms-fast-sortdata) | 定义待排序的连续数据块的数据结构。 |
 
 #### [h2]类型定义
 
@@ -53,7 +58,9 @@ synced_at: "2026-07-17T16:18:24.735270"
 | typedef struct [FAST_SegmentMapConfig](#fast_segmentmapconfig) [FAST_SegmentMapConfig](#fast_segmentmapconfig) | 线段表的不透明配置（Opaque Configuration）。 |
 | typedef void * [FAST_SegmentMapHandle](#fast_segmentmaphandle) | 线段表的句柄。 |
 | typedef enum [FAST_ErrorCode](#fast_errorcode-1) [FAST_ErrorCode](#fast_errorcode) | FAST Kit的错误码。 |
+| typedef enum [HMS_FAST_HannWindowType](#hms_fast_hannwindowtype-1) [HMS_FAST_HannWindowType](#hms_fast_hannwindowtype) | 汉宁窗类型枚举。 |
 | typedef struct [FAST_Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit--fast-rect) [FAST_Rect](#fast_rect) | 定义矩形的数据结构。 |
+| typedef struct [FAST_Poly](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit--fast-poly) [FAST_Poly](#fast_poly) | 定义稀疏格式多项式的数据结构。 |
 | typedef struct [FAST_RectPartitionConfig](#fast_rectpartitionconfig) [FAST_RectPartitionConfig](#fast_rectpartitionconfig) | 矩形划分求解器的不透明配置。 |
 | typedef struct [FAST_SplitComplex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit--fast-splitcomplex) [FAST_SplitComplex](#fast_splitcomplex) | 单精度浮点复数信号结构体。 |
 | typedef struct [FAST_SplitComplexD](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit--fast-splitcomplexd) [FAST_SplitComplexD](#fast_splitcomplexd) | 双精度浮点复数信号结构体。 |
@@ -76,6 +83,12 @@ synced_at: "2026-07-17T16:18:24.735270"
 | typedef uint64_t ([*HMS_FAST_ConcurrentHashmap_HashFunc](#hms_fast_concurrenthashmap_hashfunc)) (const [FAST_ConcurrentHashmapKeyPtr](#fast_concurrenthashmapkeyptr) key) | 开发者自定义的哈希值计算函数。 |
 | typedef int32_t ([*HMS_FAST_ConcurrentHashmap_KeyEqualFunc](#hms_fast_concurrenthashmap_keyequalfunc)) (const [FAST_ConcurrentHashmapKeyPtr](#fast_concurrenthashmapkeyptr) leftKey, const [FAST_ConcurrentHashmapKeyPtr](#fast_concurrenthashmapkeyptr) rightKey) | 开发者自定义的键比较函数。 |
 | typedef int32_t ([*HMS_FAST_ConcurrentHashmap_HookFunc](#hms_fast_concurrenthashmap_hookfunc)) (const [FAST_ConcurrentHashmapKeyPtr](#fast_concurrenthashmapkeyptr) key, [FAST_ConcurrentHashmapValuePtr](#fast_concurrenthashmapvalueptr) value, void* context) | 开发者自定义的通用回调函数形式。 |
+| typedef struct [HMS_FAST_SortData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit--hms-fast-sortdata) [HMS_FAST_SortData](#hms_fast_sortdata) | 定义待排序的连续数据块的数据结构。 |
+| typedef void* [HMS_FAST_SortElementPtr](#hms_fast_sortelementptr) | 表示通用容器中单个元素的opaque pointer类型。 |
+| typedef const void* [HMS_FAST_SortElementConstPtr](#hms_fast_sortelementconstptr) | 表示通用容器中单个元素的const opaque pointer类型。 |
+| typedef int32_t(* [HMS_FAST_Sort_CompFunc](#hms_fast_sort_compfunc)) ([HMS_FAST_SortElementConstPtr](#hms_fast_sortelementconstptr) first, [HMS_FAST_SortElementConstPtr](#hms_fast_sortelementconstptr) second) | 用户自定义比较函数的回调函数指针类型。 |
+| typedef struct HMS_FAST_PerfHintConfigBuilder [HMS_FAST_PerfHintConfigBuilder](#hms_fast_perfhintconfigbuilder) | 系统性能优化配置参数构建器。 |
+| typedef struct HMS_FAST_PerfHintConfig [HMS_FAST_PerfHintConfig](#hms_fast_perfhintconfig) | 系统性能优化配置参数。 |
 
 #### [h2]常量
 
@@ -90,6 +103,11 @@ synced_at: "2026-07-17T16:18:24.735270"
 | [FAST_SegmentMapQueryType](#fast_segmentmapquerytype-1) { FAST_SEGMENTMAP_QUERY_TYPE_SUM = 0, FAST_SEGMENTMAP_QUERY_TYPE_MIN = 1, FAST_SEGMENTMAP_QUERY_TYPE_MAX = 2 } | 线段表支持的查询操作类型。 |
 | [FAST_SegmentMapUpdateType](#fast_segmentmapupdatetype-1) { FAST_SEGMENTMAP_UPDATE_TYPE_SET = 0, FAST_SEGMENTMAP_UPDATE_TYPE_ADD = 1, FAST_SEGMENTMAP_UPDATE_TYPE_SUB = 2 } | 线段表支持的更新操作类型。 |
 | [FAST_ErrorCode](#fast_errorcode-1) { FAST_ERROR_CODE_SUCCESS = 1023100000, FAST_ERROR_CODE_FAIL = 1023100001, FAST_ERROR_CODE_ILLEGAL_INPUT = 1023100002, FAST_ERROR_CODE_INVALID_PTR = 1023100003, FAST_ERROR_CODE_KEY_EXISTS = 1023110000, FAST_ERROR_CODE_KEY_NOT_EXISTS = 1023110001, FAST_ERROR_CODE_OOM = 1023199001 } | FAST Kit的错误码。 |
+| [HMS_FAST_HannWindowType](#hms_fast_hannwindowtype-1) { HMS_FAST_HANN_DENORMALIZE_FULL = 0x00, HMS_FAST_HANN_NORMALIZE_FULL = 0x01, HMS_FAST_HANN_DENORMALIZE_HALF = 0x10, HMS_FAST_HANN_NORMALIZE_HALF = 0x11 } | 汉宁窗类型枚举。 |
+| [HMS_FAST_SchedulingOptimization_SceneType](#hms_fast_schedulingoptimization_scenetype) { HMS_FAST_APP_LAUNCH = 1, HMS_FAST_PAGE_TRANSITION = 2, HMS_FAST_PAGE_LOAD = 3, HMS_FAST_NETWORK_FILE_PROCESSING = 4, HMS_FAST_LOCAL_FILE_PROCESSING = 5, HMS_FAST_PAGE_DRAWING = 6, HMS_FAST_ANIMATION = 7, HMS_FAST_MEDIA_PLAYBACK = 8, HMS_FAST_MEDIA_ENCODING_AND_DECODING = 9 } | 需要系统性能优化的场景类型。 |
+| [HMS_FAST_SchedulingOptimization_SceneState](#hms_fast_schedulingoptimization_scenestate) { HMS_FAST_END = 0, HMS_FAST_BEGIN = 1 } | 需要系统性能优化的场景状态。 |
+| [HMS_FAST_SchedulingOptimization_DurationType](#hms_fast_schedulingoptimization_durationtype) { HMS_FAST_SHORT = 1, HMS_FAST_MEDIUM = 2, HMS_FAST_LONG = 3 } | 需要系统性能优化的持续时间选项。 |
+| [HMS_FAST_SchedulingOptimization_ErrorCode](#hms_fast_schedulingoptimization_errorcode) { HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_SUCCESS = 0, HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_HIGH_SYSTEM_LOAD = 1027700001, HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_POWER_SAVING_MODE = 1027700002, HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_LOW_POWER_MODE = 1027700003, HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_NON_FRONTEND = 1027700004, HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_INTERVAL = 1027700005, HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_EXECUTE_ERROR = 1027700006, HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_INVALID_PARAM = 1027700007, HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_NO_MEMORY = 1027700008 } | 系统性能优化的错误码。 |
 
 #### [h2]函数
 
@@ -105,8 +123,11 @@ synced_at: "2026-07-17T16:18:24.735270"
 | FAST_EXPORT [FAST_ErrorCode](#fast_errorcode-1) [HMS_FAST_SegmentMap_Query](#hms_fast_segmentmap_query) ([FAST_SegmentMapHandle](#fast_segmentmaphandle) handle, size_t left, size_t right, int32_t *result) | 查询线段表的区间。 |
 | FAST_EXPORT [FAST_ErrorCode](#fast_errorcode-1) [HMS_FAST_RectPartition_CreateConfig](#hms_fast_rectpartition_createconfig) ([FAST_RectPartitionConfig](#fast_rectpartitionconfig) **config) | 创建矩形划分求解器的不透明配置。 |
 | FAST_EXPORT void [HMS_FAST_RectPartition_DestroyConfig](#hms_fast_rectpartition_destroyconfig) ([FAST_RectPartitionConfig](#fast_rectpartitionconfig) *config) | 销毁矩形划分求解器的不透明配置。 |
-| FAST_EXPORT [FAST_ErrorCode](#fast_errorcode-1) [HMS_FAST_RectPartition_SetAlgo](#hms_fast_rectpartition_setalgo) ([FAST_RectPartitionConfig](#fast_rectpartitionconfig) *config, const char *name) | 设置矩形划分求解器使用的算法。目前仅支持扫描线算法“SweepLineAlgo”，输出数量尽可能少（不保证最优性）的不相交矩形集合，复杂度为![](./img/zh-cn_image_0000002671435249.png)。 |
-| FAST_EXPORT [FAST_ErrorCode](#fast_errorcode-1) [HMS_FAST_RectPartition_Solve](#hms_fast_rectpartition_solve) ([FAST_RectPartitionConfig](#fast_rectpartitionconfig) *config, size_t size, const [FAST_Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit--fast-rect) *origin, [FAST_Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit--fast-rect) *result, size_t *resultSize) | 在指定不透明配置下解决矩形划分问题。函数接收若干个彼此不相交的矩形作为输入，计算出覆盖相同区域的矩形划分方案，并使输出的矩形数量尽可能少。 **说明**： 1. 输入须保证矩形两两不相交（即任意两个矩形满足：![](./img/zh-cn_image_0000002671395115.png) 或 ![](./img/zh-cn_image_0000002641355268.png)或![](./img/zh-cn_image_0000002641195308.png)或 ![](./img/zh-cn_image_0000002671435251.png)），否则函数返回FAST_ERROR_CODE_ILLEGAL_INPUT。 2. 函数能保证输出矩形的数量小于等于输入矩形的数量。 |
+| FAST_EXPORT [FAST_ErrorCode](#fast_errorcode-1) [HMS_FAST_RectPartition_SetAlgo](#hms_fast_rectpartition_setalgo) ([FAST_RectPartitionConfig](#fast_rectpartitionconfig) *config, const char *name) | 设置矩形划分求解器使用的算法。目前仅支持扫描线算法“SweepLineAlgo”，输出数量尽可能少（不保证最优性）的不相交矩形集合，复杂度为![](./img/zh-cn_image_0000002655849452.png)。 |
+| FAST_EXPORT [FAST_ErrorCode](#fast_errorcode-1) [HMS_FAST_RectPartition_Solve](#hms_fast_rectpartition_solve) ([FAST_RectPartitionConfig](#fast_rectpartitionconfig) *config, size_t size, const [FAST_Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit--fast-rect) *origin, [FAST_Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit--fast-rect) *result, size_t *resultSize) | 在指定不透明配置下解决矩形划分问题。函数接收若干个彼此不相交的矩形作为输入，计算出覆盖相同区域的矩形划分方案，并使输出的矩形数量尽可能少。 **说明**： 1. 输入须保证矩形两两不相交（即任意两个矩形满足：![](./img/zh-cn_image_0000002686088883.png) 或 ![](./img/zh-cn_image_0000002685929051.png)或![](./img/zh-cn_image_0000002656009376.png)或 ![](./img/zh-cn_image_0000002655849454.png)），否则函数返回FAST_ERROR_CODE_ILLEGAL_INPUT。 2. 函数能保证输出矩形的数量小于等于输入矩形的数量。 |
+| [FAST_ErrorCode](#fast_errorcode-1) [HMS_FAST_PolyRoot_ComputeRoots](#hms_fast_polyroot_computeroots) (const [FAST_Poly](#fast_poly) *poly, const size_t maxRootCount, double *root, size_t *rootCount) | 计算多项式的给定实数根的实根。 |
+| [FAST_ErrorCode](#fast_errorcode-1) [HMS_FAST_PolyRoot_ComputeSingle](#hms_fast_polyroot_computesingle) (const [FAST_Poly](#fast_poly) *poly, double *root) | 计算多项式的主导(绝对值最大)实根。 |
+| [FAST_ErrorCode](#fast_errorcode-1) [HMS_FAST_PolyRoot_ComputeRootIntervals](#hms_fast_polyroot_computerootintervals) (const [FAST_Poly](#fast_poly) *poly, const size_t maxRootCount, double *leftBoundary, double *rightBoundary, size_t *rootCount) | 计算多项式给定个数实根的隔离区间，输出每个实根的左右边界。 |
 | float [HMS_FAST_DSP_Maxmgv](#hms_fast_dsp_maxmgv) (const float *input, size_t stride, size_t length) | 计算步长实数向量中的最大幅值（单精度）。 |
 | double [HMS_FAST_DSP_MaxmgvD](#hms_fast_dsp_maxmgvd) (const double *input, size_t stride, size_t length) | 计算步长实数向量中的最大幅值（双精度）。 |
 | void [HMS_FAST_DSP_Maxvi](#hms_fast_dsp_maxvi) (const float *input, size_t stride, size_t length, float *value, size_t *index) | 查找步长实数向量中的最大值及其索引（单精度）。 |
@@ -125,6 +146,58 @@ synced_at: "2026-07-17T16:18:24.735270"
 | void [HMS_FAST_DSP_CtozD](#hms_fast_dsp_ctozd) (const double *input, size_t strideInput, [FAST_SplitComplexD](#fast_splitcomplexd) *output, size_t strideOutput, size_t length) | 将交错复数数组转换为分离格式（双精度）。 |
 | void [HMS_FAST_DSP_Ztoc](#hms_fast_dsp_ztoc) (const [FAST_SplitComplex](#fast_splitcomplex) *input, size_t strideInput, float *output, size_t strideOutput, size_t length) | 将分离复数数组转换为交错格式（单精度）。 |
 | void [HMS_FAST_DSP_ZtocD](#hms_fast_dsp_ztocd) (const [FAST_SplitComplexD](#fast_splitcomplexd) *input, size_t strideInput, double *output, size_t strideOutput, size_t length) | 将分离复数数组转换为交错格式（双精度）。 |
+| void [HMS_FAST_DSP_Zvabs](#hms_fast_dsp_zvabs) (const [FAST_SplitComplex](#fast_splitcomplex) *input, size_t strideInput, float *output, size_t strideOutput, size_t length) | 计算复数向量的幅值（单精度）。 |
+| void [HMS_FAST_DSP_ZvabsD](#hms_fast_dsp_zvabsd) (const [FAST_SplitComplexD](#fast_splitcomplexd) *input, size_t strideInput, double *output, size_t strideOutput, size_t length) | 计算复数向量的幅值（双精度）。 |
+| void [HMS_FAST_DSP_Zvmags](#hms_fast_dsp_zvmags) (const [FAST_SplitComplex](#fast_splitcomplex) *input, size_t strideInput, float *output, size_t strideOutput, size_t length) | 计算复数向量的幅值平方（单精度）。 |
+| void [HMS_FAST_DSP_ZvmagsD](#hms_fast_dsp_zvmagsd) (const [FAST_SplitComplexD](#fast_splitcomplexd) *input, size_t strideInput, double *output, size_t strideOutput, size_t length) | 计算复数向量的幅值平方（双精度）。 |
+| void [HMS_FAST_DSP_Zvphas](#hms_fast_dsp_zvphas) (const [FAST_SplitComplex](#fast_splitcomplex) *input, size_t strideInput, float *output, size_t strideOutput, size_t length) | 计算复数向量的相位角（单精度）。 |
+| void [HMS_FAST_DSP_ZvphasD](#hms_fast_dsp_zvphasd) (const [FAST_SplitComplexD](#fast_splitcomplexd) *input, size_t strideInput, double *output, size_t strideOutput, size_t length) | 计算复数向量的相位角（双精度）。 |
+| void [HMS_FAST_DSP_Vsmul](#hms_fast_dsp_vsmul) (const float *input, size_t strideInput, const float scalar, float *output, size_t strideOutput, size_t length) | 将向量的每个元素乘以标量（单精度）。 |
+| void [HMS_FAST_DSP_VsmulD](#hms_fast_dsp_vsmuld) (const double *input, size_t strideInput, const double scalar, double *output, size_t strideOutput, size_t length) | 将向量的每个元素乘以标量（双精度）。 |
+| void [HMS_FAST_DSP_Vsdiv](#hms_fast_dsp_vsdiv) (const float *input, size_t strideInput, const float scalar, float *output, size_t strideOutput, size_t length) | 将向量的每个元素除以标量（单精度）。 |
+| void [HMS_FAST_DSP_VsdivD](#hms_fast_dsp_vsdivd) (const double *input, size_t strideInput, const double scalar, double *output, size_t strideOutput, size_t length) | 将向量的每个元素除以标量（双精度）。 |
+| void [HMS_FAST_DSP_Svdiv](#hms_fast_dsp_svdiv) (const float scalar, const float *input, size_t strideInput, float *output, size_t strideOutput, size_t length) | 将标量除以向量的每个元素（单精度）。 |
+| void [HMS_FAST_DSP_SvdivD](#hms_fast_dsp_svdivd) (const double scalar, const double *input, size_t strideInput, double *output, size_t strideOutput, size_t length) | 将标量除以向量的每个元素（双精度）。 |
+| void [HMS_FAST_DSP_Vsadd](#hms_fast_dsp_vsadd) (const float *input, size_t strideInput, const float scalar, float *output, size_t strideOutput, size_t length) | 将标量加到向量的每个元素（单精度）。 |
+| void [HMS_FAST_DSP_VsaddD](#hms_fast_dsp_vsaddd) (const double *input, size_t strideInput, const double scalar, double *output, size_t strideOutput, size_t length) | 将标量加到向量的每个元素（双精度）。 |
+| void [HMS_FAST_DSP_Vadd](#hms_fast_dsp_vadd) (const float *inputA, size_t strideA, const float *inputB, size_t strideB, float *outputC, size_t strideC, size_t length) | 执行向量逐元素加法（单精度）。 |
+| void [HMS_FAST_DSP_VaddD](#hms_fast_dsp_vaddd) (const double *inputA, size_t strideA, const double *inputB, size_t strideB, double *outputC, size_t strideC, size_t length) | 执行向量逐元素加法（双精度）。 |
+| void [HMS_FAST_DSP_Vsub](#hms_fast_dsp_vsub) (const float *inputA, size_t strideA, const float *inputB, size_t strideB, float *outputC, size_t strideC, size_t length) | 执行向量逐元素减法（单精度）。 |
+| void [HMS_FAST_DSP_VsubD](#hms_fast_dsp_vsubd) (const double *inputA, size_t strideA, const double *inputB, size_t strideB, double *outputC, size_t strideC, size_t length) | 执行向量逐元素减法（双精度）。 |
+| void [HMS_FAST_DSP_Vmul](#hms_fast_dsp_vmul) (const float *inputA, size_t strideA, const float *inputB, size_t strideB, float *outputC, size_t strideC, size_t length) | 执行向量逐元素乘法（单精度）。 |
+| void [HMS_FAST_DSP_VmulD](#hms_fast_dsp_vmuld) (const double *inputA, size_t strideA, const double *inputB, size_t strideB, double *outputC, size_t strideC, size_t length) | 执行向量逐元素乘法（双精度）。 |
+| void [HMS_FAST_DSP_Vdiv](#hms_fast_dsp_vdiv) (const float *inputA, size_t strideA, const float *inputB, size_t strideB, float *outputC, size_t strideC, size_t length) | 执行向量逐元素除法（单精度）。 |
+| void [HMS_FAST_DSP_VdivD](#hms_fast_dsp_vdivd) (const double *inputA, size_t strideA, const double *inputB, size_t strideB, double *outputC, size_t strideC, size_t length) | 执行向量逐元素除法（双精度）。 |
+| void [HMS_FAST_DSP_Vdist](#hms_fast_dsp_vdist) (const float *inputA, size_t strideA, const float *inputB, size_t strideB, float *outputC, size_t strideC, size_t length) | 计算两个向量对应元素的欧几里得范数（单精度）。 |
+| void [HMS_FAST_DSP_VdistD](#hms_fast_dsp_vdistd) (const double *inputA, size_t strideA, const double *inputB, size_t strideB, double *outputC, size_t strideC, size_t length) | 计算两个向量对应元素的欧几里得范数（双精度）。 |
+| float [HMS_FAST_DSP_Svesq](#hms_fast_dsp_svesq) (const float *input, size_t stride, size_t length) | 计算向量元素的平方和（单精度）。 |
+| double [HMS_FAST_DSP_SvesqD](#hms_fast_dsp_svesqd) (const double *input, size_t stride, size_t length) | 计算向量元素的平方和（双精度）。 |
+| void [HMS_FAST_DSP_Minvi](#hms_fast_dsp_minvi) (const float *input, size_t stride, size_t length, float *value, size_t *index) | 查找步长实数向量中的最小值及其索引（单精度）。 |
+| void [HMS_FAST_DSP_MinviD](#hms_fast_dsp_minvid) (const double *input, size_t stride, size_t length, double *value, size_t *index) | 查找步长实数向量中的最小值及其索引（双精度）。 |
+| void [HMS_FAST_DSP_Vsq](#hms_fast_dsp_vsq) (const float *input, size_t strideInput, float *output, size_t strideOutput, size_t length) | 计算向量每个元素的平方（单精度）。 |
+| void [HMS_FAST_DSP_VsqD](#hms_fast_dsp_vsqd) (const double *input, size_t strideInput, double *output, size_t strideOutput, size_t length) | 计算向量每个元素的平方（双精度）。 |
+| void [HMS_FAST_DSP_Vabs](#hms_fast_dsp_vabs) (const float *input, size_t strideInput, float *output, size_t strideOutput, size_t length) | 计算向量每个元素的绝对值（单精度）。 |
+| void [HMS_FAST_DSP_VabsD](#hms_fast_dsp_vabsd) (const double *input, size_t strideInput, double *output, size_t strideOutput, size_t length) | 计算向量每个元素的绝对值（双精度）。 |
+| void [HMS_FAST_DSP_Vthr](#hms_fast_dsp_vthr) (const float *input, size_t strideInput, const float threshold, float *output, size_t strideOutput, size_t length) | 对向量应用阈值（单精度）。 |
+| void [HMS_FAST_DSP_VthrD](#hms_fast_dsp_vthrd) (const double *input, size_t strideInput, const double threshold, double *output, size_t strideOutput, size_t length) | 对向量应用阈值（双精度）。 |
+| void [HMS_FAST_DSP_Vrvrs](#hms_fast_dsp_vrvrs) (float *vector, size_t stride, size_t length) | 原地反转向量中元素的顺序（单精度）。 |
+| void [HMS_FAST_DSP_VrvrsD](#hms_fast_dsp_vrvrsd) (double *vector, size_t stride, size_t length) | 原地反转向量中元素的顺序（双精度）。 |
+| void [HMS_FAST_DSP_Vspdp](#hms_fast_dsp_vspdp) (const float *input, size_t strideInput, double *output, size_t strideOutput, size_t length) | 将单精度向量转换为双精度向量。 |
+| void [HMS_FAST_DSP_Vdpsp](#hms_fast_dsp_vdpsp) (const double *input, size_t strideInput, float *output, size_t strideOutput, size_t length) | 将双精度向量转换为单精度向量。 |
+| void [HMS_FAST_DSP_Vfill](#hms_fast_dsp_vfill) (float *vector, size_t stride, size_t length, const float scalar) | 使用指定标量值填充向量（单精度）。 |
+| void [HMS_FAST_DSP_VfillD](#hms_fast_dsp_vfilld) (double *vector, size_t stride, size_t length, const double scalar) | 使用指定标量值填充向量（双精度）。 |
+| void [HMS_FAST_DSP_Vclr](#hms_fast_dsp_vclr) (float *vector, size_t stride, size_t length) | 将向量所有元素清零（单精度）。 |
+| void [HMS_FAST_DSP_VclrD](#hms_fast_dsp_vclrd) (double *vector, size_t stride, size_t length) | 将向量所有元素清零（双精度）。 |
+| void [HMS_FAST_DSP_Conv](#hms_fast_dsp_conv) (const float *input, size_t strideInput, const float *filter, size_t strideFilter, float *output, size_t strideOutput, size_t outputLength, size_t filterLength) | 执行两个向量的卷积运算（单精度）。 |
+| void [HMS_FAST_DSP_ConvD](#hms_fast_dsp_convd) (const double *input, size_t strideInput, const double *filter, size_t strideFilter, double *output, size_t strideOutput, size_t outputLength, size_t filterLength) | 执行两个向量的卷积运算（双精度）。 |
+| void [HMS_FAST_DSP_HannWindow](#hms_fast_dsp_hannwindow) (float *output, size_t length, [HMS_FAST_HannWindowType](#hms_fast_hannwindowtype-1) type) | 生成汉宁窗序列（单精度）。 |
+| void [HMS_FAST_DSP_HannWindowD](#hms_fast_dsp_hannwindowd) (double *output, size_t length, [HMS_FAST_HannWindowType](#hms_fast_hannwindowtype-1) type) | 生成汉宁窗序列（双精度）。 |
+| void [HMS_FAST_DSP_Mmul](#hms_fast_dsp_mmul) (const float *matrixA, size_t strideA, const float *matrixB, size_t strideB, float *matrixC, size_t strideC, size_t rowsM, size_t colsN, size_t colsP) | 执行矩阵乘法：C = A * B（单精度）。 |
+| void [HMS_FAST_DSP_MmulD](#hms_fast_dsp_mmuld) (const double *matrixA, size_t strideA, const double *matrixB, size_t strideB, double *matrixC, size_t strideC, size_t rowsM, size_t colsN, size_t colsP) | 执行矩阵乘法：C = A * B（双精度）。 |
+| void [HMS_FAST_DSP_Vvpow](#hms_fast_dsp_vvpow) (const float *inputA, const float *inputB, float *outputC, size_t length) | 执行向量逐元素幂运算（单精度）。 |
+| void [HMS_FAST_DSP_VvpowD](#hms_fast_dsp_vvpowd) (const double *inputA, const double *inputB, double *outputC, size_t length) | 执行向量逐元素幂运算（双精度）。 |
+| void [HMS_FAST_DSP_Vsort](#hms_fast_dsp_vsort) (float *vector, size_t length, int order) | 对向量进行原地排序（单精度）。 |
+| void [HMS_FAST_DSP_VsortD](#hms_fast_dsp_vsortd) (double *vector, size_t length, int order) | 对向量进行原地排序（双精度）。 |
 | [FAST_ErrorCode](#fast_errorcode-1) [HMS_FAST_Biquadm_SetActiveFilters](#hms_fast_biquadm_setactivefilters) ([FAST_Biquadm](#fast_biquadm) *filter, const uint8_t *activeMask) | 设置二阶滤波器节的激活掩码（单精度）。 |
 | [FAST_ErrorCode](#fast_errorcode-1) [HMS_FAST_Biquadm_SetActiveFiltersD](#hms_fast_biquadm_setactivefiltersd) ([FAST_BiquadmD](#fast_biquadmd) *filter, const uint8_t *activeMask) | 设置二阶滤波器节的激活掩码（双精度）。 |
 | [FAST_ErrorCode](#fast_errorcode-1) [HMS_FAST_Biquadm_SetCoeffSingle](#hms_fast_biquadm_setcoeffsingle) ([FAST_Biquadm](#fast_biquadm) *filter, const float *coeff, size_t stride) | 从单精度源数组设置所有二阶滤波器系数（单精度滤波器）。 |
@@ -164,6 +237,17 @@ typedef struct FAST_RectPartitionConfig FAST_RectPartitionConfig
 矩形划分求解器的不透明配置（Opaque Configuration），如果未在配置中设置算法，默认的算法是扫描线算法“SweepLineAlgo”。
 
 起始版本： 6.0.2(22)
+
+#### [h2]FAST_Poly
+
+```
+typedef struct FAST_Poly FAST_Poly
+```
+ 描述
+
+定义稀疏格式多项式的数据结构。多项式![](./img/zh-cn_image_0000002686088885.png)由系数数组coeff和指数数组pow共同描述，且需按指数升序排列。
+
+起始版本： 26.0.0
 
 #### [h2]FAST_SegmentMapConfig
 
@@ -485,6 +569,98 @@ typedef int32_t(* HMS_FAST_Hashmap_KeyEqualFunc) (const FAST_HashmapKeyPtr leftK
 
 如果键被视为相等则非零；否则为零。
 
+#### [h2]HMS_FAST_SortElementPtr
+
+```
+typedef void* HMS_FAST_SortElementPtr
+```
+ 描述
+
+表示通用容器中单个元素的opaque pointer类型。
+
+起始版本： 26.0.0
+
+#### [h2]HMS_FAST_SortElementConstPtr
+
+```
+typedef const void* HMS_FAST_SortElementConstPtr
+```
+ 描述
+
+表示通用容器中单个元素的const opaque pointer类型。
+
+起始版本： 26.0.0
+
+#### [h2]HMS_FAST_Sort_CompFunc
+
+```
+typedef int32_t(* HMS_FAST_Sort_CompFunc) (HMS_FAST_SortElementConstPtr first, HMS_FAST_SortElementConstPtr second)
+```
+ 描述
+
+用户自定义比较函数的回调函数类型。
+
+起始版本： 26.0.0
+
+参数:
+
+| 名称 | 描述 |
+| --- | --- |
+| first | 指向第一个元素的指针。 |
+| second | 指向第二个元素的指针。 |
+
+返回值：
+
+比较结果。必须返回：
+
+- 负数表示first小于second
+- 零表示first等于second
+- 正数表示first大于second
+
+#### [h2]HMS_FAST_SortData
+
+```
+typedef struct HMS_FAST_SortData HMS_FAST_SortData
+```
+ 描述
+
+描述待排序的连续内存数据块。
+
+起始版本： 26.0.0
+
+#### [h2]HMS_FAST_HannWindowType
+
+```
+typedef enum HMS_FAST_HannWindowType HMS_FAST_HannWindowType
+```
+ 描述
+
+汉宁窗类型枚举。
+
+起始版本： 26.0.0
+
+#### [h2]HMS_FAST_PerfHintConfigBuilder
+
+```
+typedef struct HMS_FAST_PerfHintConfigBuilder HMS_FAST_PerfHintConfigBuilder
+```
+ 描述
+
+系统性能优化配置参数构建器。
+
+起始版本： 26.0.0
+
+#### [h2]HMS_FAST_PerfHintConfig
+
+```
+typedef struct HMS_FAST_PerfHintConfig HMS_FAST_PerfHintConfig
+```
+ 描述
+
+系统性能优化配置参数。
+
+起始版本： 26.0.0
+
 #### 常量说明
 
 #### [h2]FAST_MAX_FFT_LOG2N
@@ -494,7 +670,7 @@ const uint32_t FAST_MAX_FFT_LOG2N = 16;
 ```
  描述
 
-FFT支持的最大点数N对应的以2为底的对数值。即FAST_MAX_FFT_LOG2N=$\log_2$(N)，其中N为FFT支持的最大点数，例如该值为16时，最大点数为65536。
+FFT支持的最大点数N对应的以2为底的对数值。即FAST_MAX_FFT_LOG2N=![](./img/zh-cn_image_0000002685929053.png)，其中N为FFT支持的最大点数，例如该值为16时，最大点数为65536。
 
 起始版本：26.0.0
 
@@ -559,6 +735,103 @@ enum FAST_SegmentMapUpdateType
 | FAST_SEGMENTMAP_UPDATE_TYPE_ADD | 加法更新，区间内的每一个元素加同一个值。 |
 | FAST_SEGMENTMAP_UPDATE_TYPE_SUB | 减法更新，区间内的每一个元素减同一个值。 |
 
+#### [h2]HMS_FAST_HannWindowType
+
+```
+enum HMS_FAST_HannWindowType
+```
+ 描述
+
+汉宁窗类型枚举。
+
+起始版本： 26.0.0
+
+| 枚举值 | 描述 |
+| --- | --- |
+| HMS_FAST_HANN_DENORMALIZE_FULL = 0x00 | 非归一化全窗。 |
+| HMS_FAST_HANN_NORMALIZE_FULL = 0x01 | 归一化全窗。 |
+| HMS_FAST_HANN_DENORMALIZE_HALF = 0x10 | 非归一化半窗，给定长度为N时，仅包含前(N+1)/2个点。 |
+| HMS_FAST_HANN_NORMALIZE_HALF = 0x11 | 归一化半窗，给定长度为N时，仅包含前(N+1)/2个点。 |
+
+#### [h2]HMS_FAST_SchedulingOptimization_SceneType
+
+```
+enum HMS_FAST_SchedulingOptimization_SceneType
+```
+ 描述
+
+需要系统性能优化的场景类型。
+
+起始版本： 26.0.0
+
+| 枚举值 | 描述 |
+| --- | --- |
+| HMS_FAST_APP_LAUNCH = 1 | 应用启动场景。 |
+| HMS_FAST_PAGE_TRANSITION = 2 | 页面切换场景。 |
+| HMS_FAST_PAGE_LOAD = 3 | 页面加载场景。 |
+| HMS_FAST_NETWORK_FILE_PROCESSING = 4 | 网络文件处理场景。 |
+| HMS_FAST_LOCAL_FILE_PROCESSING = 5 | 本地文件处理场景。 |
+| HMS_FAST_PAGE_DRAWING = 6 | 页面绘制场景。 |
+| HMS_FAST_ANIMATION = 7 | 动效场景。 |
+| HMS_FAST_MEDIA_PLAYBACK = 8 | 媒体播放场景。 |
+| HMS_FAST_MEDIA_ENCODING_AND_DECODING = 9 | 媒体编解码场景。 |
+
+#### [h2]HMS_FAST_SchedulingOptimization_SceneState
+
+```
+enum HMS_FAST_SchedulingOptimization_SceneState
+```
+ 描述
+
+需要系统性能优化的场景状态。
+
+起始版本： 26.0.0
+
+| 枚举值 | 描述 |
+| --- | --- |
+| HMS_FAST_END | 结束系统性能优化。 |
+| HMS_FAST_BEGIN | 开始系统性能优化。 |
+
+#### [h2]HMS_FAST_SchedulingOptimization_DurationType
+
+```
+enum HMS_FAST_SchedulingOptimization_DurationType
+```
+ 描述
+
+需要系统性能优化的持续时间选项。
+
+起始版本： 26.0.0
+
+| 枚举值 | 描述 |
+| --- | --- |
+| HMS_FAST_SHORT | 短持续时间。单次最大持续时间：1，间隔大于3。单位：秒。 |
+| HMS_FAST_MEDIUM | 中等持续时间。单次最大持续时间：10，间隔大于30。单位：秒。 |
+| HMS_FAST_LONG | 长持续时间。单次最大持续时间：60，间隔大于180。单位：秒。 |
+
+#### [h2]HMS_FAST_SchedulingOptimization_ErrorCode
+
+```
+enum HMS_FAST_SchedulingOptimization_ErrorCode
+```
+ 描述
+
+系统性能优化的错误码。
+
+起始版本： 26.0.0
+
+| 枚举值 | 描述 |
+| --- | --- |
+| HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_SUCCESS | 成功。 |
+| HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_HIGH_SYSTEM_LOAD | 系统高负载。 |
+| HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_POWER_SAVING_MODE | 省电模式。 |
+| HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_LOW_POWER_MODE | 低电量模式。 |
+| HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_NON_FRONTEND | 非前台调用场景。 |
+| HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_INTERVAL | 间隔不满足要求。 |
+| HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_EXECUTE_ERROR | 执行系统性能优化失败。 |
+| HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_INVALID_PARAM | 参数无效。 |
+| HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_NO_MEMORY | 内存不足。 |
+
 #### 函数说明
 
 #### [h2]HMS_FAST_RectPartition_CreateConfig()
@@ -619,7 +892,7 @@ FAST_EXPORT FAST_ErrorCode HMS_FAST_RectPartition_SetAlgo (FAST_RectPartitionCon
 | 名称 | 描述 |
 | --- | --- |
 | config | 待设置的矩形划分求解器的不透明配置[FAST_RectPartitionConfig](#fast_rectpartitionconfig)。 |
-| name | 矩形求解器使用的算法名称。目前仅支持扫描线算法“SweepLineAlgo”，输出数量尽可能少（不保证最优性）的不相交矩形集合，复杂度为![](./img/zh-cn_image_0000002671395117.png)。 |
+| name | 矩形求解器使用的算法名称。目前仅支持扫描线算法“SweepLineAlgo”，输出数量尽可能少（不保证最优性）的不相交矩形集合，复杂度为![](./img/zh-cn_image_0000002655849452.png)。 |
 
 返回：
 
@@ -662,7 +935,90 @@ FAST_EXPORT FAST_ErrorCode HMS_FAST_RectPartition_Solve (FAST_RectPartitionConfi
 
 注解：
 
-1. 当选择“SweepLineAlgo”时，不应该返回[FAST_ERROR_CODE_FAIL](#fast_errorcode-1)，此处仅作为预防性设置。
+当config选择"SweepLineAlgo"算法时，结果不会返回[FAST_ERROR_CODE_FAIL](#fast_errorcode-1)，此处仅作为预防性设置。
+
+#### [h2]HMS_FAST_PolyRoot_ComputeRoots()
+
+```
+FAST_ErrorCode HMS_FAST_PolyRoot_ComputeRoots (const FAST_Poly * poly, const size_t maxRootCount, double * root, size_t * rootCount )
+```
+ 描述
+
+计算多项式的给定数量的实数根。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| poly | 待求根的多项式[FAST_Poly](#fast_poly)。 |
+| maxRootCount | 需要返回的实根数量。 |
+| root | 输出实根数组。 |
+| rootCount | 实际返回的实根数量。 |
+
+返回：
+
+当成功时，返回[FAST_ERROR_CODE_SUCCESS](#fast_errorcode-1)。
+
+当poly或root或rootCount为NULL时，返回[FAST_ERROR_CODE_INVALID_PTR](#fast_errorcode-1)。
+
+当输入非法时（如指数未按升序排列），返回[FAST_ERROR_CODE_ILLEGAL_INPUT](#fast_errorcode-1)。
+
+#### [h2]HMS_FAST_PolyRoot_ComputeSingle()
+
+```
+FAST_ErrorCode HMS_FAST_PolyRoot_ComputeSingle (const FAST_Poly * poly, double * root )
+```
+ 描述
+
+计算多项式的绝对值最大的实根。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| poly | 待求根的多项式[FAST_Poly](#fast_poly)。 |
+| root | 计算出的实根。 |
+
+返回：
+
+当成功时，返回[FAST_ERROR_CODE_SUCCESS](#fast_errorcode-1)。
+
+当poly或root为NULL时，返回[FAST_ERROR_CODE_INVALID_PTR](#fast_errorcode-1)。
+
+当输入非法时（如指数未按升序排列），返回[FAST_ERROR_CODE_ILLEGAL_INPUT](#fast_errorcode-1)。
+
+#### [h2]HMS_FAST_PolyRoot_ComputeRootIntervals()
+
+```
+FAST_ErrorCode HMS_FAST_PolyRoot_ComputeRootIntervals (const FAST_Poly * poly, const size_t maxRootCount, double * leftBoundary, double * rightBoundary, size_t * rootCount )
+```
+ 描述
+
+计算多项式给定数量的实根的隔离区间，输出每个实根的左右边界。每个区间包含且仅包含一个实根。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| poly | 待求根区间的多项式[FAST_Poly](#fast_poly)。 |
+| maxRootCount | 需要输出的实根的区间数量 |
+| leftBoundary | 各个实根区间左边界的数组。 |
+| rightBoundary | 各个实根区间右边界的数组。 |
+| rootCount | 实际找到并返回的实根数量。 |
+
+返回：
+
+当成功时，返回[FAST_ERROR_CODE_SUCCESS](#fast_errorcode-1)。
+
+当poly或leftBoundary或rightBoundary或rootCount为NULL时，返回[FAST_ERROR_CODE_INVALID_PTR](#fast_errorcode-1)。
+
+当输入非法时（如指数未按升序排列），返回[FAST_ERROR_CODE_ILLEGAL_INPUT](#fast_errorcode-1)。
 
 #### [h2]HMS_FAST_SegmentMap_Create()
 
@@ -1609,6 +1965,1334 @@ void HMS_FAST_DSP_ZtocD (const FAST_SplitComplexD * input, size_t strideInput, d
 
 无。
 
+#### [h2]HMS_FAST_DSP_Zvabs()
+
+```
+void HMS_FAST_DSP_Zvabs (const FAST_SplitComplex * input, size_t strideInput, float * output, size_t strideOutput, size_t length)
+```
+ 描述
+
+计算复数向量的幅值（单精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| input | 分离格式复数输入向量指针。 |
+| strideInput | 输入向量的步长。值为1表示连续存储。 |
+| output | 输出向量指针（幅值）。 |
+| strideOutput | 输出向量的步长。值为1表示连续存储。 |
+| length | 待处理的复数元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_ZvabsD()
+
+```
+void HMS_FAST_DSP_ZvabsD (const FAST_SplitComplexD * input, size_t strideInput, double * output, size_t strideOutput, size_t length)
+```
+ 描述
+
+计算复数向量的幅值（双精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| input | 分离格式复数输入向量指针。 |
+| strideInput | 输入向量的步长。值为1表示连续存储。 |
+| output | 输出向量指针（幅值）。 |
+| strideOutput | 输出向量的步长。值为1表示连续存储。 |
+| length | 待处理的复数元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_Zvmags()
+
+```
+void HMS_FAST_DSP_Zvmags (const FAST_SplitComplex * input, size_t strideInput, float * output, size_t strideOutput, size_t length)
+```
+ 描述
+
+计算复数向量的幅值平方（单精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| input | 分离格式复数输入向量指针。 |
+| strideInput | 输入向量的步长。值为1表示连续存储。 |
+| output | 输出向量指针（幅值平方）。 |
+| strideOutput | 输出向量的步长。值为1表示连续存储。 |
+| length | 待处理的复数元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_ZvmagsD()
+
+```
+void HMS_FAST_DSP_ZvmagsD (const FAST_SplitComplexD * input, size_t strideInput, double * output, size_t strideOutput, size_t length)
+```
+ 描述
+
+计算复数向量的幅值平方（双精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| input | 分离格式复数输入向量指针。 |
+| strideInput | 输入向量的步长。值为1表示连续存储。 |
+| output | 输出向量指针（幅值平方）。 |
+| strideOutput | 输出向量的步长。值为1表示连续存储。 |
+| length | 待处理的复数元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_Zvphas()
+
+```
+void HMS_FAST_DSP_Zvphas (const FAST_SplitComplex * input, size_t strideInput, float * output, size_t strideOutput, size_t length)
+```
+ 描述
+
+计算复数向量的相位角（弧度制）（单精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| input | 分离格式复数输入向量指针。 |
+| strideInput | 输入向量的步长。值为1表示连续存储。 |
+| output | 输出向量指针（相位角）。 |
+| strideOutput | 输出向量的步长。值为1表示连续存储。 |
+| length | 待处理的复数元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_ZvphasD()
+
+```
+void HMS_FAST_DSP_ZvphasD (const FAST_SplitComplexD * input, size_t strideInput, double * output, size_t strideOutput, size_t length)
+```
+ 描述
+
+计算复数向量的相位角（弧度制）（双精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| input | 分离格式复数输入向量指针。 |
+| strideInput | 输入向量的步长。值为1表示连续存储。 |
+| output | 输出向量指针（相位角）。 |
+| strideOutput | 输出向量的步长。值为1表示连续存储。 |
+| length | 待处理的复数元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_Vsmul()
+
+```
+void HMS_FAST_DSP_Vsmul (const float * input, size_t strideInput, const float scalar, float * output, size_t strideOutput, size_t length)
+```
+ 描述
+
+将向量的每个元素乘以标量，output[i] = input[i] * scalar（单精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| input | 输入向量指针。 |
+| strideInput | 输入向量的步长。值为1表示连续存储。 |
+| scalar | 乘法标量。 |
+| output | 输出向量指针。 |
+| strideOutput | 输出向量的步长。值为1表示连续存储。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_VsmulD()
+
+```
+void HMS_FAST_DSP_VsmulD (const double * input, size_t strideInput, const double scalar, double * output, size_t strideOutput, size_t length)
+```
+ 描述
+
+将向量的每个元素乘以标量，output[i] = input[i] * scalar（双精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| input | 输入向量指针。 |
+| strideInput | 输入向量的步长。值为1表示连续存储。 |
+| scalar | 乘法标量。 |
+| output | 输出向量指针。 |
+| strideOutput | 输出向量的步长。值为1表示连续存储。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_Vsdiv()
+
+```
+void HMS_FAST_DSP_Vsdiv (const float * input, size_t strideInput, const float scalar, float * output, size_t strideOutput, size_t length)
+```
+ 描述
+
+将向量的每个元素除以标量，output[i] = input[i] / scalar（单精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| input | 输入向量指针。 |
+| strideInput | 输入向量的步长。值为1表示连续存储。 |
+| scalar | 除数标量。 |
+| output | 输出向量指针。 |
+| strideOutput | 输出向量的步长。值为1表示连续存储。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_VsdivD()
+
+```
+void HMS_FAST_DSP_VsdivD (const double * input, size_t strideInput, const double scalar, double * output, size_t strideOutput, size_t length)
+```
+ 描述
+
+将向量的每个元素除以标量，output[i] = input[i] / scalar（双精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| input | 输入向量指针。 |
+| strideInput | 输入向量的步长。值为1表示连续存储。 |
+| scalar | 除数标量。 |
+| output | 输出向量指针。 |
+| strideOutput | 输出向量的步长。值为1表示连续存储。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_Svdiv()
+
+```
+void HMS_FAST_DSP_Svdiv (const float scalar, const float * input, size_t strideInput, float * output, size_t strideOutput, size_t length)
+```
+ 描述
+
+将标量除以向量的每个元素，output[i] = scalar / input[i]（单精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| scalar | 被除数标量。 |
+| input | 输入向量指针。 |
+| strideInput | 输入向量的步长。值为1表示连续存储。 |
+| output | 输出向量指针。 |
+| strideOutput | 输出向量的步长。值为1表示连续存储。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_SvdivD()
+
+```
+void HMS_FAST_DSP_SvdivD (const double scalar, const double * input, size_t strideInput, double * output, size_t strideOutput, size_t length)
+```
+ 描述
+
+将标量除以向量的每个元素，output[i] = scalar / input[i]（双精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| scalar | 被除数标量。 |
+| input | 输入向量指针。 |
+| strideInput | 输入向量的步长。值为1表示连续存储。 |
+| output | 输出向量指针。 |
+| strideOutput | 输出向量的步长。值为1表示连续存储。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_Vsadd()
+
+```
+void HMS_FAST_DSP_Vsadd (const float * input, size_t strideInput, const float scalar, float * output, size_t strideOutput, size_t length)
+```
+ 描述
+
+将标量加到向量的每个元素，output[i] = input[i] + scalar（单精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| input | 输入向量指针。 |
+| strideInput | 输入向量的步长。值为1表示连续存储。 |
+| scalar | 加法标量。 |
+| output | 输出向量指针。 |
+| strideOutput | 输出向量的步长。值为1表示连续存储。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_VsaddD()
+
+```
+void HMS_FAST_DSP_VsaddD (const double * input, size_t strideInput, const double scalar, double * output, size_t strideOutput, size_t length)
+```
+ 描述
+
+将标量加到向量的每个元素，output[i] = input[i] + scalar（双精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| input | 输入向量指针。 |
+| strideInput | 输入向量的步长。值为1表示连续存储。 |
+| scalar | 加法标量。 |
+| output | 输出向量指针。 |
+| strideOutput | 输出向量的步长。值为1表示连续存储。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_Vadd()
+
+```
+void HMS_FAST_DSP_Vadd (const float * inputA, size_t strideA, const float * inputB, size_t strideB, float * outputC, size_t strideC, size_t length)
+```
+ 描述
+
+执行向量逐元素加法，C[i] = A[i] + B[i]（单精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| inputA | 输入向量A指针。 |
+| strideA | 向量A的步长。值为1表示连续存储。 |
+| inputB | 输入向量B指针。 |
+| strideB | 向量B的步长。值为1表示连续存储。 |
+| outputC | 输出向量C指针。 |
+| strideC | 向量C的步长。值为1表示连续存储。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_VaddD()
+
+```
+void HMS_FAST_DSP_VaddD (const double * inputA, size_t strideA, const double * inputB, size_t strideB, double * outputC, size_t strideC, size_t length)
+```
+ 描述
+
+执行向量逐元素加法，C[i] = A[i] + B[i]（双精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| inputA | 输入向量A指针。 |
+| strideA | 向量A的步长。值为1表示连续存储。 |
+| inputB | 输入向量B指针。 |
+| strideB | 向量B的步长。值为1表示连续存储。 |
+| outputC | 输出向量C指针。 |
+| strideC | 向量C的步长。值为1表示连续存储。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_Vsub()
+
+```
+void HMS_FAST_DSP_Vsub (const float * inputA, size_t strideA, const float * inputB, size_t strideB, float * outputC, size_t strideC, size_t length)
+```
+ 描述
+
+执行向量逐元素减法，C[i] = A[i] - B[i]（单精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| inputA | 输入向量A指针。 |
+| strideA | 向量A的步长。值为1表示连续存储。 |
+| inputB | 输入向量B指针。 |
+| strideB | 向量B的步长。值为1表示连续存储。 |
+| outputC | 输出向量C指针。 |
+| strideC | 向量C的步长。值为1表示连续存储。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_VsubD()
+
+```
+void HMS_FAST_DSP_VsubD (const double * inputA, size_t strideA, const double * inputB, size_t strideB, double * outputC, size_t strideC, size_t length)
+```
+ 描述
+
+执行向量逐元素减法，C[i] = A[i] - B[i]（双精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| inputA | 输入向量A指针。 |
+| strideA | 向量A的步长。值为1表示连续存储。 |
+| inputB | 输入向量B指针。 |
+| strideB | 向量B的步长。值为1表示连续存储。 |
+| outputC | 输出向量C指针。 |
+| strideC | 向量C的步长。值为1表示连续存储。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_Vmul()
+
+```
+void HMS_FAST_DSP_Vmul (const float * inputA, size_t strideA, const float * inputB, size_t strideB, float * outputC, size_t strideC, size_t length)
+```
+ 描述
+
+执行向量逐元素乘法，C[i] = A[i] * B[i]（单精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| inputA | 输入向量A指针。 |
+| strideA | 向量A的步长。值为1表示连续存储。 |
+| inputB | 输入向量B指针。 |
+| strideB | 向量B的步长。值为1表示连续存储。 |
+| outputC | 输出向量C指针。 |
+| strideC | 向量C的步长。值为1表示连续存储。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_VmulD()
+
+```
+void HMS_FAST_DSP_VmulD (const double * inputA, size_t strideA, const double * inputB, size_t strideB, double * outputC, size_t strideC, size_t length)
+```
+ 描述
+
+执行向量逐元素乘法，C[i] = A[i] * B[i]（双精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| inputA | 输入向量A指针。 |
+| strideA | 向量A的步长。值为1表示连续存储。 |
+| inputB | 输入向量B指针。 |
+| strideB | 向量B的步长。值为1表示连续存储。 |
+| outputC | 输出向量C指针。 |
+| strideC | 向量C的步长。值为1表示连续存储。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_Vdiv()
+
+```
+void HMS_FAST_DSP_Vdiv (const float * inputA, size_t strideA, const float * inputB, size_t strideB, float * outputC, size_t strideC, size_t length)
+```
+ 描述
+
+执行向量逐元素除法，C[i] = A[i] / B[i]（单精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| inputA | 输入向量A指针（被除数）。 |
+| strideA | 向量A的步长。值为1表示连续存储。 |
+| inputB | 输入向量B指针（除数）。 |
+| strideB | 向量B的步长。值为1表示连续存储。 |
+| outputC | 输出向量C指针。 |
+| strideC | 向量C的步长。值为1表示连续存储。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_VdivD()
+
+```
+void HMS_FAST_DSP_VdivD (const double * inputA, size_t strideA, const double * inputB, size_t strideB, double * outputC, size_t strideC, size_t length)
+```
+ 描述
+
+执行向量逐元素除法，C[i] = A[i] / B[i]（双精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| inputA | 输入向量A指针（被除数）。 |
+| strideA | 向量A的步长。值为1表示连续存储。 |
+| inputB | 输入向量B指针（除数）。 |
+| strideB | 向量B的步长。值为1表示连续存储。 |
+| outputC | 输出向量C指针。 |
+| strideC | 向量C的步长。值为1表示连续存储。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_Vdist()
+
+```
+void HMS_FAST_DSP_Vdist (const float * inputA, size_t strideA, const float * inputB, size_t strideB, float * outputC, size_t strideC, size_t length)
+```
+ 描述
+
+计算两个向量对应元素的欧几里得范数（单精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| inputA | 输入向量A指针。 |
+| strideA | 向量A的步长。值为1表示连续存储。 |
+| inputB | 输入向量B指针。 |
+| strideB | 向量B的步长。值为1表示连续存储。 |
+| outputC | 输出向量C指针。 |
+| strideC | 向量C的步长。值为1表示连续存储。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_VdistD()
+
+```
+void HMS_FAST_DSP_VdistD (const double * inputA, size_t strideA, const double * inputB, size_t strideB, double * outputC, size_t strideC, size_t length)
+```
+ 描述
+
+计算两个向量对应元素的欧几里得范数（双精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| inputA | 输入向量A指针。 |
+| strideA | 向量A的步长。值为1表示连续存储。 |
+| inputB | 输入向量B指针。 |
+| strideB | 向量B的步长。值为1表示连续存储。 |
+| outputC | 输出向量C指针。 |
+| strideC | 向量C的步长。值为1表示连续存储。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_Svesq()
+
+```
+float HMS_FAST_DSP_Svesq (const float * input, size_t stride, size_t length)
+```
+ 描述
+
+计算向量元素的平方和（单精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| input | 输入向量指针。 |
+| stride | 输入向量的步长。值为1表示连续存储。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+向量元素的平方和。
+
+#### [h2]HMS_FAST_DSP_SvesqD()
+
+```
+double HMS_FAST_DSP_SvesqD (const double * input, size_t stride, size_t length)
+```
+ 描述
+
+计算向量元素的平方和（双精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| input | 输入向量指针。 |
+| stride | 输入向量的步长。值为1表示连续存储。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+向量元素的平方和。
+
+#### [h2]HMS_FAST_DSP_Minvi()
+
+```
+void HMS_FAST_DSP_Minvi (const float * input, size_t stride, size_t length, float * value, size_t * index)
+```
+ 描述
+
+查找步长实数向量中的最小值及其索引（单精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| input | 输入向量指针。 |
+| stride | 连续样本之间的距离。值为1表示连续存储。 |
+| length | 待处理的样本数。 |
+| value | 输出参数，存储找到的最小值。如果length为0，设置为FLT_MAX。 |
+| index | 输出参数，存储最小值的索引（0基）。如果length为0，设置为0。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_MinviD()
+
+```
+void HMS_FAST_DSP_MinviD (const double * input, size_t stride, size_t length, double * value, size_t * index)
+```
+ 描述
+
+查找步长实数向量中的最小值及其索引（双精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| input | 输入向量指针。 |
+| stride | 连续样本之间的距离。值为1表示连续存储。 |
+| length | 待处理的样本数。 |
+| value | 输出参数，存储找到的最小值。如果length为0，设置为DBL_MAX。 |
+| index | 输出参数，存储最小值的索引（0基）。如果length为0，设置为0。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_Vsq()
+
+```
+void HMS_FAST_DSP_Vsq (const float * input, size_t strideInput, float * output, size_t strideOutput, size_t length)
+```
+ 描述
+
+计算向量每个元素的平方（单精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| input | 输入向量指针。 |
+| strideInput | 输入向量的步长。值为1表示连续存储。 |
+| output | 输出向量指针。 |
+| strideOutput | 输出向量的步长。值为1表示连续存储。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_VsqD()
+
+```
+void HMS_FAST_DSP_VsqD (const double * input, size_t strideInput, double * output, size_t strideOutput, size_t length)
+```
+ 描述
+
+计算向量每个元素的平方（双精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| input | 输入向量指针。 |
+| strideInput | 输入向量的步长。值为1表示连续存储。 |
+| output | 输出向量指针。 |
+| strideOutput | 输出向量的步长。值为1表示连续存储。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_Vabs()
+
+```
+void HMS_FAST_DSP_Vabs (const float * input, size_t strideInput, float * output, size_t strideOutput, size_t length)
+```
+ 描述
+
+计算向量每个元素的绝对值（单精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| input | 输入向量指针。 |
+| strideInput | 输入向量的步长。值为1表示连续存储。 |
+| output | 输出向量指针。 |
+| strideOutput | 输出向量的步长。值为1表示连续存储。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_VabsD()
+
+```
+void HMS_FAST_DSP_VabsD (const double * input, size_t strideInput, double * output, size_t strideOutput, size_t length)
+```
+ 描述
+
+计算向量每个元素的绝对值（双精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| input | 输入向量指针。 |
+| strideInput | 输入向量的步长。值为1表示连续存储。 |
+| output | 输出向量指针。 |
+| strideOutput | 输出向量的步长。值为1表示连续存储。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_Vthr()
+
+```
+void HMS_FAST_DSP_Vthr (const float * input, size_t strideInput, const float threshold, float * output, size_t strideOutput, size_t length)
+```
+ 描述
+
+对向量应用阈值，若input[i] < threshold则output[i] = threshold，否则output[i] = input[i]（单精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| input | 输入向量指针。 |
+| strideInput | 输入向量的步长。值为1表示连续存储。 |
+| threshold | 阈值标量。 |
+| output | 输出向量指针。 |
+| strideOutput | 输出向量的步长。值为1表示连续存储。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_VthrD()
+
+```
+void HMS_FAST_DSP_VthrD (const double * input, size_t strideInput, const double threshold, double * output, size_t strideOutput, size_t length)
+```
+ 描述
+
+对向量应用阈值，若input[i] < threshold则output[i] = threshold，否则output[i] = input[i]（双精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| input | 输入向量指针。 |
+| strideInput | 输入向量的步长。值为1表示连续存储。 |
+| threshold | 阈值标量。 |
+| output | 输出向量指针。 |
+| strideOutput | 输出向量的步长。值为1表示连续存储。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_Vrvrs()
+
+```
+void HMS_FAST_DSP_Vrvrs (float * vector, size_t stride, size_t length)
+```
+ 描述
+
+原地反转向量中元素的顺序（单精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| vector | 待反转的向量指针。 |
+| stride | 向量的步长。值为1表示连续存储。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_VrvrsD()
+
+```
+void HMS_FAST_DSP_VrvrsD (double * vector, size_t stride, size_t length)
+```
+ 描述
+
+原地反转向量中元素的顺序（双精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| vector | 待反转的向量指针。 |
+| stride | 向量的步长。值为1表示连续存储。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_Vspdp()
+
+```
+void HMS_FAST_DSP_Vspdp (const float * input, size_t strideInput, double * output, size_t strideOutput, size_t length)
+```
+ 描述
+
+将单精度向量转换为双精度向量。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| input | 单精度输入向量指针。 |
+| strideInput | 输入向量的步长。值为1表示连续存储。 |
+| output | 双精度输出向量指针。 |
+| strideOutput | 输出向量的步长。值为1表示连续存储。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_Vdpsp()
+
+```
+void HMS_FAST_DSP_Vdpsp (const double * input, size_t strideInput, float * output, size_t strideOutput, size_t length)
+```
+ 描述
+
+将双精度向量转换为单精度向量。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| input | 双精度输入向量指针。 |
+| strideInput | 输入向量的步长。值为1表示连续存储。 |
+| output | 单精度输出向量指针。 |
+| strideOutput | 输出向量的步长。值为1表示连续存储。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_Vfill()
+
+```
+void HMS_FAST_DSP_Vfill (float * vector, size_t stride, size_t length, const float scalar)
+```
+ 描述
+
+使用指定标量值填充向量（单精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| vector | 待填充的向量指针。 |
+| stride | 向量的步长。值为1表示连续存储。 |
+| length | 待填充的元素数量。 |
+| scalar | 标量值。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_VfillD()
+
+```
+void HMS_FAST_DSP_VfillD (double * vector, size_t stride, size_t length, const double scalar)
+```
+ 描述
+
+使用指定标量值填充向量（双精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| vector | 待填充的向量指针。 |
+| stride | 向量的步长。值为1表示连续存储。 |
+| length | 待填充的元素数量。 |
+| scalar | 标量值。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_Vclr()
+
+```
+void HMS_FAST_DSP_Vclr (float * vector, size_t stride, size_t length)
+```
+ 描述
+
+将向量所有元素清零（单精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| vector | 输出向量指针。 |
+| stride | 向量的步长。值为1表示连续存储。 |
+| length | 待清零的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_VclrD()
+
+```
+void HMS_FAST_DSP_VclrD (double * vector, size_t stride, size_t length)
+```
+ 描述
+
+将向量所有元素清零（双精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| vector | 输出向量指针。 |
+| stride | 向量的步长。值为1表示连续存储。 |
+| length | 待清零的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_Conv()
+
+```
+void HMS_FAST_DSP_Conv (const float * input, size_t strideInput, const float * filter, size_t strideFilter, float * output, size_t strideOutput, size_t outputLength, size_t filterLength)
+```
+ 描述
+
+执行两个向量的卷积运算（单精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| input | 输入信号向量指针。 |
+| strideInput | 输入向量的步长。值为1表示连续存储。 |
+| filter | 滤波器系数向量指针。 |
+| strideFilter | 滤波器向量的步长。值为1表示连续存储。 |
+| output | 输出向量指针。 |
+| strideOutput | 输出向量的步长。值为1表示连续存储。 |
+| outputLength | 输出向量中的元素数量。 |
+| filterLength | 滤波器向量中的元素数量。 |
+
+返回：
+
+无。
+
+注解：
+
+input缓冲区长度必须大于outputLength + filterLength - 1，否则将产生未定义行为。
+
+#### [h2]HMS_FAST_DSP_ConvD()
+
+```
+void HMS_FAST_DSP_ConvD (const double * input, size_t strideInput, const double * filter, size_t strideFilter, double * output, size_t strideOutput, size_t outputLength, size_t filterLength)
+```
+ 描述
+
+执行两个向量的卷积运算（双精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| input | 输入信号向量指针。 |
+| strideInput | 输入向量的步长。值为1表示连续存储。 |
+| filter | 滤波器系数向量指针。 |
+| strideFilter | 滤波器向量的步长。值为1表示连续存储。 |
+| output | 输出向量指针。 |
+| strideOutput | 输出向量的步长。值为1表示连续存储。 |
+| outputLength | 输出向量中的元素数量。 |
+| filterLength | 滤波器向量中的元素数量。 |
+
+返回：
+
+无。
+
+注解：
+
+input缓冲区长度必须大于outputLength + filterLength - 1，否则将产生未定义行为。
+
+#### [h2]HMS_FAST_DSP_HannWindow()
+
+```
+void HMS_FAST_DSP_HannWindow (float * output, size_t length, HMS_FAST_HannWindowType type)
+```
+ 描述
+
+生成汉宁窗序列（单精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| output | 输出向量指针，用于存放窗系数。 |
+| length | 生成的窗点数。 |
+| type | 窗类型，参见[HMS_FAST_HannWindowType](#hms_fast_hannwindowtype-1)。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_HannWindowD()
+
+```
+void HMS_FAST_DSP_HannWindowD (double * output, size_t length, HMS_FAST_HannWindowType type)
+```
+ 描述
+
+生成汉宁窗序列（双精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| output | 输出向量指针，用于存放窗系数。 |
+| length | 生成的窗点数。 |
+| type | 窗类型，参见[HMS_FAST_HannWindowType](#hms_fast_hannwindowtype-1)。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_Mmul()
+
+```
+void HMS_FAST_DSP_Mmul (const float * matrixA, size_t strideA, const float * matrixB, size_t strideB, float * matrixC, size_t strideC, size_t rowsM, size_t colsN, size_t colsP)
+```
+ 描述
+
+执行矩阵乘法，C = A * B，其中A为MxP矩阵、B为PxN矩阵、C为MxN矩阵（单精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| matrixA | 矩阵A指针。 |
+| strideA | 矩阵A的元素步长。 |
+| matrixB | 矩阵B指针。 |
+| strideB | 矩阵B的元素步长。 |
+| matrixC | 矩阵C指针（结果）。 |
+| strideC | 矩阵C的元素步长。 |
+| rowsM | 矩阵A和C的行数。 |
+| colsN | 矩阵B和C的列数。 |
+| colsP | 矩阵A的列数和矩阵B的行数。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_MmulD()
+
+```
+void HMS_FAST_DSP_MmulD (const double * matrixA, size_t strideA, const double * matrixB, size_t strideB, double * matrixC, size_t strideC, size_t rowsM, size_t colsN, size_t colsP)
+```
+ 描述
+
+执行矩阵乘法，C = A * B，其中A为MxP矩阵、B为PxN矩阵、C为MxN矩阵（双精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| matrixA | 矩阵A指针。 |
+| strideA | 矩阵A的元素步长。 |
+| matrixB | 矩阵B指针。 |
+| strideB | 矩阵B的元素步长。 |
+| matrixC | 矩阵C指针（结果）。 |
+| strideC | 矩阵C的元素步长。 |
+| rowsM | 矩阵A和C的行数。 |
+| colsN | 矩阵B和C的列数。 |
+| colsP | 矩阵A的列数和矩阵B的行数。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_Vvpow()
+
+```
+void HMS_FAST_DSP_Vvpow (const float * inputA, const float * inputB, float * outputC, size_t length)
+```
+ 描述
+
+执行向量逐元素幂运算，C[i]等于A[i]的B[i]次方（单精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| inputA | 底数向量A指针。 |
+| inputB | 指数向量B指针。 |
+| outputC | 输出向量C指针。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_VvpowD()
+
+```
+void HMS_FAST_DSP_VvpowD (const double * inputA, const double * inputB, double * outputC, size_t length)
+```
+ 描述
+
+执行向量逐元素幂运算，C[i]等于A[i]的B[i]次方（双精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| inputA | 底数向量A指针。 |
+| inputB | 指数向量B指针。 |
+| outputC | 输出向量C指针。 |
+| length | 待处理的元素数量。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_Vsort()
+
+```
+void HMS_FAST_DSP_Vsort (float * vector, size_t length, int order)
+```
+ 描述
+
+对向量进行原地排序（单精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| vector | 待排序的向量指针（输入/输出）。 |
+| length | 待排序的元素数量。 |
+| order | 排序顺序（1表示升序，-1表示降序，其他值不执行操作）。 |
+
+返回：
+
+无。
+
+#### [h2]HMS_FAST_DSP_VsortD()
+
+```
+void HMS_FAST_DSP_VsortD (double * vector, size_t length, int order)
+```
+ 描述
+
+对向量进行原地排序（双精度）。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| vector | 待排序的向量指针（输入/输出）。 |
+| length | 待排序的元素数量。 |
+| order | 排序顺序（1表示升序，-1表示降序，其他值不执行操作）。 |
+
+返回：
+
+无。
+
 #### [h2]HMS_FAST_FFT_CreateConfig()
 
 ```
@@ -1930,7 +3614,7 @@ FAST_ErrorCode HMS_FAST_ConcurrentHashmap_Erase(
 ```
  描述
 
-在并发哈希表中删除给定的键及其对应的值，并将其值保存在originalKey和originalValue中以便于开发者进行内存管理; 实际使用时也可根据需求将originalKey或originalValue设为NULL，此时则不会将键或值的地址返回。
+在并发哈希表中删除给定的键及其对应的值，并将其值保存在originalKey和originalValue中以便于开发者进行内存管理；实际使用时也可根据需求将originalKey或originalValue设为NULL，此时则不会将键或值的地址返回。
 
 起始版本： 6.1.1(24)
 
@@ -2352,3 +4036,349 @@ FAST_ErrorCode HMS_FAST_Hashmap_TryInsert (FAST_HashmapHandle handle, const FAST
 注解：
 
 调用者管理键和值内存的生命周期。
+
+#### [h2]HMS_FAST_Algo_Sort()
+
+```
+FAST_ErrorCode HMS_FAST_Algo_Sort (HMS_FAST_SortData * data, HMS_FAST_Sort_CompFunc comp)
+```
+ 描述
+
+使用用户提供的比较函数对任意类型数组进行完整排序。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| data | 待排序数据的描述符。data->data不能为NULL，data->sizeOf必须大于0，data->length必须大于0。 |
+| comp | 用户自定义的比较函数。不能为NULL。 |
+
+返回：
+
+当成功时，返回[FAST_ERROR_CODE_SUCCESS](#fast_errorcode-1)。
+
+当data->sizeOf或data->length为0时，返回[FAST_ERROR_CODE_ILLEGAL_INPUT](#fast_errorcode-1)。
+
+当data、data->data或comp为NULL时，返回[FAST_ERROR_CODE_INVALID_PTR](#fast_errorcode-1)。
+
+当内存耗尽时，返回[FAST_ERROR_CODE_OOM](#fast_errorcode-1)。
+
+#### [h2]HMS_FAST_Algo_PartialSortAt()
+
+```
+FAST_ErrorCode HMS_FAST_Algo_PartialSortAt (HMS_FAST_SortData * data, size_t offset, size_t count, HMS_FAST_Sort_CompFunc comp)
+```
+ 描述
+
+对数组进行原地部分排序，使指定区间[offset, offset + count)包含排序后对应位置的元素。
+
+功能说明：
+
+- 子数组[offset, offset+count)包含排序后的第offset个到第(offset+count-1)个元素，按升序排列。
+- offset之前的所有元素小于子数组中的最小元素。
+- offset+count之后的所有元素大于子数组中的最大元素。
+- 子数组之外的元素不保证排序。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| data | 待排序数据的描述符。与[HMS_FAST_Algo_Sort](#hms_fast_algo_sort)要求相同。 |
+| offset | 子数组的起始索引。 |
+| count | 子数组的元素数量。 |
+| comp | 用户自定义的比较函数。不能为NULL。 |
+
+返回：
+
+当成功时，返回[FAST_ERROR_CODE_SUCCESS](#fast_errorcode-1)。
+
+当data->sizeOf或data->length为0，或(offset+count)越界时，返回[FAST_ERROR_CODE_ILLEGAL_INPUT](#fast_errorcode-1)。
+
+当data、data->data或comp为NULL时，返回[FAST_ERROR_CODE_INVALID_PTR](#fast_errorcode-1)。
+
+当内存耗尽时，返回[FAST_ERROR_CODE_OOM](#fast_errorcode-1)。
+
+#### [h2]HMS_FAST_Algo_NaturalSort()
+
+```
+FAST_ErrorCode HMS_FAST_Algo_NaturalSort (HMS_FAST_SortData * data, int32_t ascend)
+```
+ 描述
+
+使用自然语言规则对UTF-8编码的C字符串数组进行排序。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| data | 待排序数据的描述符。data->data不能为NULL，data->sizeOf必须大于0，data->length必须大于0。注意：data->sizeOf必须等于sizeof(char*)。 |
+| ascend | 排序方向，非零为升序，零为降序。 |
+
+返回：
+
+当成功时，返回[FAST_ERROR_CODE_SUCCESS](#fast_errorcode-1)。
+
+当data->length为0，或data->sizeOf不等于sizeof(char*)时，返回[FAST_ERROR_CODE_ILLEGAL_INPUT](#fast_errorcode-1)。
+
+当data或data->data为NULL时，返回[FAST_ERROR_CODE_INVALID_PTR](#fast_errorcode-1)。
+
+当引用的三方库报错导致执行失败时，返回[FAST_ERROR_CODE_FAIL](#fast_errorcode-1)。
+
+注解：
+
+- 此函数专门用于排序人类可读文本，要求data->data指向char*数组。
+- 如果data->data不包含有效的null终止C字符串（如整数、结构体指针等），行为未定义，可能导致崩溃或内存损坏。
+- 自然语言排序会将字符串中的数字序列视为数值进行比较，例如：file1, file2, file10, file20。
+
+#### [h2]HMS_FAST_Algo_NaturalPartialSortAt()
+
+```
+FAST_ErrorCode HMS_FAST_Algo_NaturalPartialSortAt (HMS_FAST_SortData * data, size_t offset, size_t count, int32_t ascend)
+```
+ 描述
+
+使用自然语言规则对UTF-8编码的C字符串数组进行部分排序，使指定区间[offset, offset + count)包含排序后对应位置的元素。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| data | 待排序数据的描述符。与[HMS_FAST_Algo_NaturalSort](#hms_fast_algo_naturalsort)要求相同。 |
+| offset | 子数组的起始索引。 |
+| count | 子数组的元素数量。 |
+| ascend | 排序方向，非零为升序，零为降序。 |
+
+返回：
+
+当成功时，返回[FAST_ERROR_CODE_SUCCESS](#fast_errorcode-1)。
+
+当data->length为0，或(offset+count)越界，或data->sizeOf不等于sizeof(char*)时，返回[FAST_ERROR_CODE_ILLEGAL_INPUT](#fast_errorcode-1)。
+
+当data或data->data为NULL时，返回[FAST_ERROR_CODE_INVALID_PTR](#fast_errorcode-1)。
+
+当引用的三方库报错导致执行失败时，返回[FAST_ERROR_CODE_FAIL](#fast_errorcode-1)。
+
+#### [h2]HMS_FAST_PerfHintConfigBuilder_Create()
+
+```
+HMS_FAST_SchedulingOptimization_ErrorCode HMS_FAST_PerfHintConfigBuilder_Create (HMS_FAST_PerfHintConfigBuilder** builder)
+```
+ 描述
+
+创建构建器实例。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| builder | 指向创建的构建器实例的引用。 |
+
+返回：
+
+当成功时，返回[HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_SUCCESS](#hms_fast_schedulingoptimization_errorcode)。
+
+当参数无效时，返回[HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_INVALID_PARAM](#hms_fast_schedulingoptimization_errorcode)。
+
+当内存不足，无法分配新实例时，返回[HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_NO_MEMORY](#hms_fast_schedulingoptimization_errorcode)。
+
+#### [h2]HMS_FAST_PerfHintConfigBuilder_Destroy()
+
+```
+void HMS_FAST_PerfHintConfigBuilder_Destroy (HMS_FAST_PerfHintConfigBuilder* builder)
+```
+ 描述
+
+销毁构建器。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| builder | 构建器实例指针。 |
+
+#### [h2]HMS_FAST_PerfHintConfigBuilder_SetSceneType()
+
+```
+HMS_FAST_SchedulingOptimization_ErrorCode HMS_FAST_PerfHintConfigBuilder_SetSceneType (HMS_FAST_PerfHintConfigBuilder* builder, HMS_FAST_SchedulingOptimization_SceneType sceneType)
+```
+ 描述
+
+设置需要系统性能优化的场景类型。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| builder | 构建器实例指针。 |
+| sceneType | 需要系统性能优化的场景类型。 |
+
+返回：
+
+当成功时，返回[HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_SUCCESS](#hms_fast_schedulingoptimization_errorcode)。
+
+当参数无效时，返回[HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_INVALID_PARAM](#hms_fast_schedulingoptimization_errorcode)。
+
+#### [h2]HMS_FAST_PerfHintConfigBuilder_SetSceneState()
+
+```
+HMS_FAST_SchedulingOptimization_ErrorCode HMS_FAST_PerfHintConfigBuilder_SetSceneState (HMS_FAST_PerfHintConfigBuilder* builder, HMS_FAST_SchedulingOptimization_SceneState sceneState)
+```
+ 描述
+
+设置需要系统性能优化的场景状态。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| builder | 构建器实例指针。 |
+| sceneState | 需要系统性能优化的场景状态。 |
+
+返回：
+
+当成功时，返回[HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_SUCCESS](#hms_fast_schedulingoptimization_errorcode)。
+
+当参数无效时，返回[HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_INVALID_PARAM](#hms_fast_schedulingoptimization_errorcode)。
+
+#### [h2]HMS_FAST_PerfHintConfigBuilder_SetDurationType()
+
+```
+HMS_FAST_SchedulingOptimization_ErrorCode HMS_FAST_PerfHintConfigBuilder_SetDurationType (HMS_FAST_PerfHintConfigBuilder* builder, HMS_FAST_SchedulingOptimization_DurationType durationType)
+```
+ 描述
+
+设置需要系统性能优化的持续时间选项。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| builder | 构建器实例指针。 |
+| durationType | 需要系统性能优化的持续时间选项。 |
+
+返回：
+
+当成功时，返回[HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_SUCCESS](#hms_fast_schedulingoptimization_errorcode)。
+
+当参数无效时，返回[HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_INVALID_PARAM](#hms_fast_schedulingoptimization_errorcode)。
+
+#### [h2]HMS_FAST_PerfHintConfigBuilder_SetTids()
+
+```
+HMS_FAST_SchedulingOptimization_ErrorCode HMS_FAST_PerfHintConfigBuilder_SetTids (HMS_FAST_PerfHintConfigBuilder* builder, int* tids, uint32_t tidsSize)
+```
+ 描述
+
+设置需要优化的线程ID。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| builder | 构建器实例指针。 |
+| tids | 需要优化的线程ID数组。 |
+| tidsSize | 线程ID数组大小，最大长度为16。 |
+
+返回：
+
+当成功时，返回[HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_SUCCESS](#hms_fast_schedulingoptimization_errorcode)。
+
+当参数无效时，返回[HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_INVALID_PARAM](#hms_fast_schedulingoptimization_errorcode)。
+
+#### [h2]HMS_FAST_PerfHintConfigBuilder_Build()
+
+```
+HMS_FAST_SchedulingOptimization_ErrorCode HMS_FAST_PerfHintConfigBuilder_Build (HMS_FAST_PerfHintConfigBuilder* builder, HMS_FAST_PerfHintConfig** config)
+```
+ 描述
+
+创建系统性能优化配置参数。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| builder | 构建器实例指针。 |
+| config | 指向接收系统性能优化配置参数对象的指针。 |
+
+返回：
+
+当成功时，返回[HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_SUCCESS](#hms_fast_schedulingoptimization_errorcode)。
+
+当内存不足，无法分配新实例时，返回[HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_NO_MEMORY](#hms_fast_schedulingoptimization_errorcode)。
+
+当参数无效时，返回[HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_INVALID_PARAM](#hms_fast_schedulingoptimization_errorcode)。
+
+#### [h2]HMS_FAST_PerfHintConfig_Destroy()
+
+```
+void HMS_FAST_PerfHintConfig_Destroy (HMS_FAST_PerfHintConfig* config)
+```
+ 描述
+
+销毁系统性能优化配置参数。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| config | 配置参数实例指针。 |
+
+#### [h2]HMS_FAST_SchedulingOptimization_PerfHint()
+
+```
+HMS_FAST_SchedulingOptimization_ErrorCode HMS_FAST_SchedulingOptimization_PerfHint (const HMS_FAST_PerfHintConfig* config)
+```
+ 描述
+
+系统性能优化接口。
+
+起始版本： 26.0.0
+
+参数：
+
+| 名称 | 描述 |
+| --- | --- |
+| config | 指向系统性能优化配置参数的指针。 |
+
+返回：
+
+当成功时，返回[HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_SUCCESS](#hms_fast_schedulingoptimization_errorcode)。
+
+当系统高负载时，返回[HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_HIGH_SYSTEM_LOAD](#hms_fast_schedulingoptimization_errorcode)。
+
+当省电模式时，返回[HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_POWER_SAVING_MODE](#hms_fast_schedulingoptimization_errorcode)。
+
+当低电量模式时，返回[HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_LOW_POWER_MODE](#hms_fast_schedulingoptimization_errorcode)。
+
+当非前台调用场景时，返回[HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_NON_FRONTEND](#hms_fast_schedulingoptimization_errorcode)。
+
+当间隔不满足要求时，返回[HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_INTERVAL](#hms_fast_schedulingoptimization_errorcode)。
+
+当执行系统性能优化失败时，返回[HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_EXECUTE_ERROR](#hms_fast_schedulingoptimization_errorcode)。
+
+当参数无效时，返回[HMS_FAST_ERR_SCHEDULING_OPTIMIZATION_INVALID_PARAM](#hms_fast_schedulingoptimization_errorcode)。

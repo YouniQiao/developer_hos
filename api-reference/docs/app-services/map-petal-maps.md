@@ -2,8 +2,8 @@
 title: "petalMaps（拉起地图应用）"
 upstream_id: "harmonyos-references/map-petal-maps"
 catalog: "harmonyos-references"
-content_hash: "f0a049e2065e"
-synced_at: "2026-07-09T17:28:11.508365"
+content_hash: "d5b8ed2b4078"
+synced_at: "2026-07-28T16:52:45.618135"
 ---
 
 # petalMaps（拉起地图应用）
@@ -52,7 +52,7 @@ openMapHomePage(context: common.Context): Promise<void>
 | --- | --- |
 | 401 | Invalid input parameter. |
 | 1002600014 | Failed to start the map app. |
-| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. 适用版本：5.1.0(18)+ |
 
 示例：
 
@@ -95,7 +95,7 @@ openMapPoiDetail(context: common.Context, poiDetailParams: PoiDetailParams): Pro
 | --- | --- |
 | 401 | Invalid input parameter. |
 | 1002600014 | Failed to start the map app. |
-| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. 适用版本：5.1.0(18)+ |
 
 示例：
 
@@ -144,7 +144,7 @@ openMapTextSearch(context: common.Context, textSearchParams: TextSearchParams): 
 | --- | --- |
 | 401 | Invalid input parameter. |
 | 1002600014 | Failed to start the map app. |
-| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. 适用版本：5.1.0(18)+ |
 
 示例：
 
@@ -190,7 +190,7 @@ openMapRoutePlan(context: common.Context, routePlanParams: RoutePlanParams): Pro
 | --- | --- |
 | 401 | Invalid input parameter. |
 | 1002600014 | Failed to start the map app. |
-| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. 适用版本：5.1.0(18)+ |
 
 示例：
 
@@ -239,7 +239,7 @@ openMapNavi(context: common.Context, naviParams: NaviParams): Promise<void>
 | --- | --- |
 | 401 | Invalid input parameter. |
 | 1002600014 | Failed to start the map app. |
-| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. 适用版本：5.1.0(18)+ |
 
 示例：
 
@@ -361,7 +361,7 @@ POI详情的参数。
 | **名称** | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
 | destinationPosition | [mapCommon.LatLng](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#latlng) | 否 | 否 | POI的坐标。 取值范围：经度[-180, 180)，纬度[-85.2, 85.2]。对异常值进行处理，返回错误码401。 |
-| destinationName | string | 否 | 是 | POI的名称，超长名称超出部分用省略号“...”表示。 |
+| destinationName | string | 否 | 是 | POI的名称，名称超出单行时，以省略号"..."截断显示。 |
 | destinationPoiId | string | 否 | 是 | POI ID。 POI ID和经纬度都作为入参时，POI ID具有更高优先级。 |
 | zoom | number | 否 | 是 | 地图缩放级别。取值范围：[3, 20]，默认值：17，异常值按照默认值处理。 **说明：** 当传入destinationPoiId时zoom层级不支持自定义。 **起始版本：** 6.0.1(21) |
 | coordinateType | [mapCommon.CoordinateType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#coordinatetype) | 否 | 是 | 地图坐标系类型。默认值[mapCommon.CoordinateType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#coordinatetype).GCJ02，异常值按照默认值处理。 **起始版本：** 6.0.1(21) |
@@ -396,7 +396,7 @@ let params: petalMaps.PoiDetailParams = {
 
 | **名称** | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
-| destinationName | string | 否 | 是 | 终点的名称，超长名称超出部分用省略号“...”表示。 |
+| destinationName | string | 否 | 是 | 终点的名称，名称超出单行时，以省略号"..."截断显示。 |
 
 示例：
 
@@ -421,10 +421,10 @@ let params: petalMaps.TextSearchParams = {
 | **名称** | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
 | originPosition | [mapCommon.LatLng](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#latlng) | 否 | 是 | 起点的坐标。默认值为用户当前坐标。 取值范围：经度[-180, 180)，纬度[-85.2, 85.2]。对异常值进行处理，返回错误码401。 |
-| originName | string | 否 | 是 | 起点的名称，超长名称超出部分用省略号“...”表示。 |
+| originName | string | 否 | 是 | 起点的名称，名称超出单行时，以省略号"..."截断显示。 |
 | originPoiId | string | 否 | 是 | 起点的POI ID。 POI ID和经纬度都入参时，POI ID具有更高优先级。 |
 | destinationPosition | [mapCommon.LatLng](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#latlng) | 否 | 否 | 终点的坐标。 取值范围：经度[-180, 180)，纬度[-85.2, 85.2]。对异常值进行处理，返回错误码401。 |
-| destinationName | string | 否 | 是 | 终点的名称，超长名称超出部分用省略号“...”表示。 |
+| destinationName | string | 否 | 是 | 终点的名称，名称超出单行时，以省略号"..."截断显示。 |
 | destinationPoiId | string | 否 | 是 | 终点的POI ID。 POI ID和经纬度都入参时，POI ID具有更高优先级。 |
 | vehicleType | [VehicleType](#vehicletype) | 否 | 是 | 出行方式。 默认值为[VehicleType](#vehicletype).DRIVING，异常值按默认值处理。 |
 | coordinateType | [mapCommon.CoordinateType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#coordinatetype) | 否 | 是 | 地图坐标系类型。默认值[mapCommon.CoordinateType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#coordinatetype).GCJ02，异常值按照默认值处理。 **起始版本：** 6.0.1(21) |
@@ -455,11 +455,11 @@ let params: petalMaps.RoutePlanParams = {
 | **名称** | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
 | destinationPosition | [mapCommon.LatLng](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#latlng) | 否 | 否 | 终点的坐标。 取值范围：经度[-180, 180)，纬度[-85.2, 85.2]。对异常值进行处理，返回错误码401。 |
-| destinationName | string | 否 | 是 | 终点名称，超长名称超出部分用省略号“...”表示。 |
+| destinationName | string | 否 | 是 | 终点名称，名称超出单行时，以省略号"..."截断显示。 |
 | destinationPoiId | string | 否 | 是 | 终点的POI ID。 POI ID和经纬度都入参时，POI ID具有更高优先级。 |
 | vehicleType | [VehicleType](#vehicletype) | 否 | 是 | 出行方式。 默认值为[VehicleType](#vehicletype).DRIVING，异常值按默认值处理。 |
 | originPosition | [mapCommon.LatLng](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#latlng) | 否 | 是 | 起点的坐标。默认值为用户当前坐标。 取值范围：经度[-180, 180)，纬度[-85.2, 85.2]。对异常值进行处理，返回错误码401。 **起始版本：** 6.0.1(21) |
-| originName | string | 否 | 是 | 起点的名称，超长名称超出部分用省略号“...”表示。 **起始版本：** 6.0.1(21) |
+| originName | string | 否 | 是 | 起点的名称，名称超出单行时，以省略号"..."截断显示。 **起始版本：** 6.0.1(21) |
 | originPoiId | string | 否 | 是 | 起点的POI ID。 POI ID和经纬度都入参时，POI ID具有更高优先级。 **起始版本：** 6.0.1(21) |
 | coordinateType | [mapCommon.CoordinateType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#coordinatetype) | 否 | 是 | 地图坐标系类型。默认值[mapCommon.CoordinateType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#coordinatetype).GCJ02，异常值按照默认值处理。 **起始版本：** 6.0.1(21) |
 
@@ -507,7 +507,7 @@ let params: petalMaps.OfflineDataParams = {
 
 系统能力： SystemCapability.Map.Core
 
-设备行为差异： 对于5.1.1(19)及之前的版本，该接口在phone、tablet中可正常使用，在其他设备中返回801错误码。在API20及之后版本该接口在phone、tablet、PC/2in1均可正常使用，在其他设备中返回801错误码。
+设备行为差异： 对于5.1.1(19)及之前的版本，该接口在phone、tablet中可正常使用，在其他设备中返回801错误码。在6.0.0(20)及之后版本该接口在phone、tablet、PC/2in1均可正常使用，在其他设备中返回801错误码。
 
 起始版本： 5.0.3(15)
 
@@ -533,10 +533,10 @@ let params: petalMaps.OfflineDataParams = {
 | **名称** | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
 | destinationPosition | [mapCommon.LatLng](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#latlng) | 否 | 否 | 终点的坐标。 取值范围：经度[-180, 180)，纬度[-85.2, 85.2]。对异常值进行处理，返回错误码401。 |
-| destinationName | string | 否 | 是 | 终点名称，超长名称超出部分用省略号“...”表示。 |
+| destinationName | string | 否 | 是 | 终点名称，名称超出单行时，以省略号"..."截断显示。 |
 | destinationPoiId | string | 否 | 是 | 终点的POI ID。 POI ID和经纬度都入参时，POI ID具有更高优先级。 |
 | originPosition | [mapCommon.LatLng](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#latlng) | 否 | 是 | 起点的坐标。默认值为用户当前坐标。 取值范围：经度[-180, 180)，纬度[-85.2, 85.2]。对异常值进行处理，返回错误码401。 |
-| originName | string | 否 | 是 | 起点的名称，超长名称超出部分用省略号“...”表示。 |
+| originName | string | 否 | 是 | 起点的名称，名称超出单行时，以省略号"..."截断显示。 |
 | originPoiId | string | 否 | 是 | 起点的POI ID。 POI ID和经纬度都入参时，POI ID具有更高优先级。 |
 | coordinateType | [mapCommon.CoordinateType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#coordinatetype) | 否 | 是 | 地图坐标系类型。默认值[mapCommon.CoordinateType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#coordinatetype).GCJ02，异常值按照默认值处理。 |
 

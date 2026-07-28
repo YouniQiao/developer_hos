@@ -2,8 +2,8 @@
 title: "image_receiver_mdk.h"
 upstream_id: "harmonyos-references/capi-image-receiver-mdk-h"
 catalog: "harmonyos-references"
-content_hash: "c0a687c8f807"
-synced_at: "2026-07-09T01:00:33.841374"
+content_hash: "e79745373cc4"
+synced_at: "2026-07-28T16:51:51.258279"
 ---
 
 # image_receiver_mdk.h
@@ -16,7 +16,7 @@ synced_at: "2026-07-09T01:00:33.841374"
 
 引用文件： <multimedia/image_framework/image_receiver_mdk.h>
 
-系统能力： SystemCapability.Multimedia.Image.Core
+系统能力： SystemCapability.Multimedia.Image.ImageReceiver
 
 起始版本： 10
 

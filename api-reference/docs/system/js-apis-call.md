@@ -2,8 +2,8 @@
 title: "@ohos.telephony.call (拨打电话)"
 upstream_id: "harmonyos-references/js-apis-call"
 catalog: "harmonyos-references"
-content_hash: "efd64ec3860a"
-synced_at: "2026-07-09T00:59:38.093755"
+content_hash: "d31005ea2462"
+synced_at: "2026-07-28T16:50:55.399445"
 ---
 
 # @ohos.telephony.call (拨打电话)
@@ -308,6 +308,62 @@ call.makeCall(context, "138xxxxxxxx").then(() => {
     console.info(`makeCall success`);
 }).catch((err: BusinessError) => {
     console.error(`makeCall fail, promise: err->${JSON.stringify(err)}`);
+});
+```
+
+#### call.makeCallWithToken
+
+makeCallWithToken(phoneNumber: string, options?: MakeCallOptions): Promise<string>
+
+跳转到拨号界面，并显示待拨出的号码。使用Promise异步回调。
+
+![](./img/note_3.0-zh-cn.png) 该接口返回校验token，应用可以利用phoneNumber和token实现特定能力，比如蜂窝下行流的录制。
+
+起始版本: 26.0.0
+
+元服务API：从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力：SystemCapability.Applications.Contacts
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| phoneNumber | string | 是 | 电话号码。 |
+| options | [MakeCallOptions](#makecalloptions24) | 否 | 通话参数。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，返回鉴权校验token。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[电话子系统错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-telephony)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 8300001 | Invalid parameter value. |
+| 8300002 | Operation failed. Cannot connect to service. |
+| 8300003 | System internal error. |
+| 8300999 | Unknown error code. |
+
+示例：
+
+```
+import { call } from '@kit.TelephonyKit';
+
+// 设置通话结束后是否返回当前App与应用是否开启自定义无障碍功能
+let makeOptions: call.MakeCallOptions = {
+  isHideDialScreen: true,
+  isCustomAccessibility : true
+}
+
+call.makeCallWithToken("138xxxxxxxx", makeOptions).then(() => {
+    console.info(`makeCallWithToken success`);
+}).catch((err: BusinessError) => {
+    console.error(`makeCallWithToken fail, promise: err->${JSON.stringify(err)}`);
 });
 ```
 
@@ -978,6 +1034,63 @@ call.rejectCall((err: BusinessError) => {
 });
 ```
 
+#### call.getCallTransferInfo
+
+getCallTransferInfo(type: CallTransferType, number: string): Promise<CallTransferResult>
+
+获取电话号码的呼叫转移状态。使用Promise异步回调。
+
+起始版本: 26.0.0
+
+需要权限：ohos.permission.GET_CALL_TRANSFER_INFO
+
+系统能力：SystemCapability.Telephony.CallManager
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| type | [CallTransferType](#calltransfertype) | 是 | 指示要获取哪种类型的呼叫转移。 |
+| number | string | 是 | 指示用于获取呼叫转移状态的号码。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，返回呼叫转移结果。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[电话子系统错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-telephony)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 201 | Permission denied. |
+| 801 | Capability not supported. |
+| 8300001 | Invalid parameter value. |
+| 8300002 | Operation failed. Cannot connect to service. |
+| 8300003 | System internal error. |
+| 8401002 | Invalid input call number. |
+| 8401003 | Operation too frequent. |
+
+示例：
+
+```
+import { call } from '@kit.TelephonyKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let type: call.CallTransferType = call.CallTransferType.TRANSFER_TYPE_UNCONDITIONAL;
+let number: string = "138xxxxxxxx";
+
+call.getCallTransferInfo(type, number)
+    .then((data: call.CallTransferResult) => {
+        console.info(`getCallTransferInfo success, data->${JSON.stringify(data)}`);
+    })
+    .catch((err:BusinessError) => {
+        console.error(`getCallTransferInfo fail, err->${JSON.stringify(err)}`);
+    });
+```
+
 #### DialOptions
 
 拨打电话的可选参数。
@@ -1013,6 +1126,7 @@ call.rejectCall((err: BusinessError) => {
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | isHideDialScreen | boolean | 否 | 是 | 是否隐藏拨号界面，true表示隐藏，false表示不隐藏。 |
+| isCustomAccessibility | boolean | 否 | 是 | 应用是否支持自定义无障碍能力，默认为false。true表示支持，false表示不支持。 **起始版本:** 26.0.0 **元服务API**：从API版本26.0.0开始，该接口支持在元服务中使用。 |
 
 #### TelCallState21+
 
@@ -1068,3 +1182,47 @@ call.rejectCall((err: BusinessError) => {
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | countryCode | string | 否 | 是 | 国家码，支持所有国家的国家码，如：CN（中国）。默认为：CN。 |
+
+#### TransferStatus
+
+转移状态。
+
+起始版本: 26.0.0
+
+系统能力：SystemCapability.Telephony.CallManager
+
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| TRANSFER_DISABLE | 0 | 禁用转移。 |
+| TRANSFER_ENABLE | 1 | 启用转移。 |
+
+#### CallTransferType
+
+呼叫转移类型。
+
+起始版本: 26.0.0
+
+系统能力：SystemCapability.Telephony.CallManager
+
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| TRANSFER_TYPE_UNCONDITIONAL | 0 | 无条件转移。 |
+| TRANSFER_TYPE_BUSY | 1 | 忙线转移。 |
+| TRANSFER_TYPE_NO_REPLY | 2 | 无回复转移。 |
+| TRANSFER_TYPE_NOT_REACHABLE | 3 | 无法访问转移。 |
+
+#### CallTransferResult
+
+呼叫转移结果。
+
+起始版本: 26.0.0
+
+系统能力：SystemCapability.Telephony.CallManager
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| status | [TransferStatus](#transferstatus) | 否 | 否 | 转移状态。 |
+| startHour | number | 否 | 否 | 开始时间的小时数。 |
+| startMinute | number | 否 | 否 | 开始时间的分钟数。 |
+| endHour | number | 否 | 否 | 结束时间的小时数。 |
+| endMinute | number | 否 | 否 | 结束时间的分钟数。 |

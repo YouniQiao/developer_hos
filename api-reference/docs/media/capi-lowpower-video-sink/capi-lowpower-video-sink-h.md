@@ -2,8 +2,8 @@
 title: "lowpower_video_sink.h"
 upstream_id: "harmonyos-references/capi-lowpower-video-sink-h"
 catalog: "harmonyos-references"
-content_hash: "c809a3502166"
-synced_at: "2026-07-17T16:19:13.020219"
+content_hash: "0687816ea89d"
+synced_at: "2026-07-28T16:51:59.688175"
 ---
 
 # lowpower_video_sink.h
@@ -428,7 +428,7 @@ OH_AVErrCode OH_LowPowerVideoSink_SetSyncAudioSink(OH_LowPowerVideoSink* videoSi
 ```
  描述
 
-LowPowerVideoSink设置用于音画同步的OH_LowPowerAudioSink。
+LowPowerVideoSink设置用于音画同步的OH_LowPowerAudioSink。需要在OH_LowPowerVideoSink_Prepare前完成。
 
 起始版本： 20
 

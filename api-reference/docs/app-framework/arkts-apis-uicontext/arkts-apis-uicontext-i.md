@@ -2,11 +2,13 @@
 title: "Interfaces (其他)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-i"
 catalog: "harmonyos-references"
-content_hash: "ba3481ffb50c"
-synced_at: "2026-07-09T00:57:29.905370"
+content_hash: "dca509465cd9"
+synced_at: "2026-07-28T16:41:12.727351"
 ---
 
 # Interfaces (其他)
+
+本文汇总ArkUI UIContext相关的其他接口，用于描述组件目标节点、页面信息、OverlayManager初始化参数、手势触发信息及Swiper内容区信息等。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -25,8 +27,8 @@ synced_at: "2026-07-09T00:57:29.905370"
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| id | string | number | 否 | 否 | 指定popup或menu绑定的目标节点。 **说明：** 1. 当id是number时，对应组件实例的UniqueID，此id由系统保证唯一性。 2. 当id是string时，对应[通用属性id](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-component-id#id)所指定的组件，此id的唯一性需由开发者确保，但实际可能会有多个。 |
-| componentId | number | 否 | 是 | 目标节点所在的自定义组件的UniqueID。当上述id指定为string类型时，可通过此属性圈定范围。方便开发者在一定范围内保证id: string的唯一性。 |
+| id | string | number | 否 | 否 | 指定popup或menu绑定的目标节点。 **说明：** 1. 当id是number时，对应组件实例的UniqueID，此id由系统保证唯一性。 2. 当id是string时，对应[通用属性id](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-component-id#id)所指定的组件，此id的唯一性需由开发者确保，但实际会有存在多个相同id的组件的可能性。 |
+| componentId | number | 否 | 是 | 目标节点所在的自定义组件的UniqueID。当上述id指定为string类型且需要在指定自定义组件范围内查找目标节点时，可通过此属性圈定范围，方便开发者在一定范围内保证id: string的唯一性。默认不指定自定义组件范围。 |
 
 #### PageInfo12+
 
@@ -49,7 +51,7 @@ Router和NavDestination等页面信息，若无对应的Router或NavDestination�
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| renderRootOverlay | boolean | 否 | 是 | 是否渲染overlay根节点，true表示渲染overlay根节点，false表示不渲染overlay根节点，默认值为true。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
+| renderRootOverlay | boolean | 否 | 是 | 是否渲染overlay根节点，true表示渲染overlay根节点，false表示不渲染overlay根节点，默认值为true。通过将该参数设置为false，可以解决[OverlayManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-overlaymanager)显示在[PhotoPickerComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-file-photopickercomponent)上层时，PhotoPickerComponent无法选中照片的问题。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
 | enableBackPressedEvent19+ | boolean | 否 | 是 | 是否支持通过侧滑手势关闭OverlayManager下的ComponentContent，true表示可以通过侧滑关闭，false表示不可以通过侧滑关闭，默认值为false。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 |
 
 #### GestureTriggerInfo20+
@@ -69,7 +71,7 @@ Router和NavDestination等页面信息，若无对应的Router或NavDestination�
 
 #### GestureObserverConfigs20+
 
-该参数用于指定需要监听的手势回调阶段（传入空数组将无效），仅当手势触发指定阶段时才会发送通知。
+该参数用于指定需要监听的手势回调阶段（传入空数组时不监听任何手势回调阶段），仅当手势触发指定阶段时才会发送通知。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -77,7 +79,7 @@ Router和NavDestination等页面信息，若无对应的Router或NavDestination�
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| actionPhases | Array | 否 | 否 | 手势事件对象。 |
+| actionPhases | Array | 否 | 否 | 需要监听的手势回调阶段。传入空数组将无效，仅当手势触发指定阶段时才会发送通知。 |
 
 #### SwiperContentInfo22+
 

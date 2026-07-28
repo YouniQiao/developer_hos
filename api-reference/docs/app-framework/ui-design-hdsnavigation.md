@@ -2,8 +2,8 @@
 title: "HdsNavigation"
 upstream_id: "harmonyos-references/ui-design-hdsnavigation"
 catalog: "harmonyos-references"
-content_hash: "fb0df6b52bf5"
-synced_at: "2026-07-09T17:25:58.475454"
+content_hash: "0597ee474534"
+synced_at: "2026-07-28T16:50:14.102511"
 ---
 
 # HdsNavigation
@@ -564,7 +564,7 @@ onNavBarStateChange(callback: Callback<boolean>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callBack | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 是 | 参数为true时表示显示导航栏，为false时表示隐藏导航栏。 |
+| callBack | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 是 | 回调函数。返回true表示显示导航栏，返回false表示隐藏导航栏。 |
 
 #### [h2]onNavigationModeChange
 
@@ -582,7 +582,7 @@ onNavigationModeChange(callback: Callback<NavigationMode>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 是 | - 参数为NavigationMode.Split时：当前HdsNavigation显示为双栏。 - 参数为NavigationMode.Stack时：当前HdsNavigation显示为单栏。 |
+| callback | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 是 | 回调函数。 - 返回NavigationMode.Split时，表示当前HdsNavigation显示为双栏模式。 - 返回NavigationMode.Stack时，表示当前HdsNavigation显示为单栏。 |
 
 #### [h2]onTitleModeChange
 
@@ -600,7 +600,7 @@ onTitleModeChange(callback: Callback<HdsNavigationTitleMode>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 是 | 参数为标题栏显示模式。 |
+| callback | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 是 | 回调函数，返回当前标题栏显示模式。 |
 
 #### [h2]customNavContentTransition
 
@@ -1281,7 +1281,7 @@ HdsNavigation标题栏动态显隐配置信息。
 
 #### BuilderOptions
 
-自定义构建组件配置信息。
+构建标题栏中的自定义组件配置信息。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -1344,7 +1344,7 @@ struct Index {
         },
         originalStyle: {
           backgroundStyle: {
-            backgroundColor: $r('sys.color.ohos_id_color_background'),
+            backgroundColor: $r('sys.color.ohos_id_color_background')
           },
           contentStyle: {
             titleStyle: { mainTitleColor: $r('sys.color.font_primary'), subTitleColor: $r('sys.color.font_secondary') },
@@ -1360,7 +1360,7 @@ struct Index {
         },
         scrollEffectStyle: {
           backgroundStyle: {
-            backgroundColor: $r('sys.color.ohos_id_color_background_transparent'),
+            backgroundColor: $r('sys.color.ohos_id_color_background_transparent')
           },
           contentStyle: {
             titleStyle: { mainTitleColor: $r('sys.color.font_primary'), subTitleColor: $r('sys.color.font_secondary') },
@@ -1387,7 +1387,7 @@ struct Index {
               icon: $r('sys.symbol.ohos_wifi'),
               isEnabled: true,
               action: () => {
-                console.info("HdsNavigation menu1");
+                console.info('HdsNavigation menu1');
               }
             }
           }, {
@@ -1399,19 +1399,19 @@ struct Index {
           }, {
             content: {
               label: 'menu3',
-              icon: $r('sys.symbol.lock'),
+              icon: $r('sys.symbol.lock')
             }
           }, {
             content: {
               label: 'menu4',
-              icon: $r('sys.symbol.trunk'),
+              icon: $r('sys.symbol.trunk')
             }
           }]
         },
         backIcon: {
           label: 'backButton',
           icon: $r('sys.symbol.trunk'),
-          isEnabled: true,
+          isEnabled: true
         }
       }
     })
@@ -1422,7 +1422,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664330559.gif)
+ ![](./img/zh-cn_image_0000002655849430.gif)
 
 #### [h2]设置菜单消息提醒
 
@@ -1456,7 +1456,7 @@ struct Index {
     .titleBar({
       content: {
         title: {
-          mainTitle: "Main",
+          mainTitle: 'Main',
           subTitle: this.subTitle
         },
         menu: {
@@ -1464,28 +1464,28 @@ struct Index {
             content: {
               label: 'menu1',
               icon: $r('sys.symbol.plus'),
-              isEnabled: true,
+              isEnabled: true
             },
             badge: {
-              count: 1,
+              count: 1
             }
           }, {
             content: {
               label: 'menu2',
               icon: $r('sys.symbol.trunk'),
-              isEnabled: true,
+              isEnabled: true
             },
             badge: {
-              count: 100,
+              count: 100
             }
           }]
-        },
+        }
       }
     })
   }
 }
 ```
- ![](./img/zh-cn_image_0000002633851448.jpg)
+ ![](./img/zh-cn_image_0000002686088861.jpg)
 
 #### [h2]设置自定义区域
 
@@ -1506,16 +1506,16 @@ struct Index {
   @State blankHeight: number = TITLE_BAR_HEIGHT_FREE + BOTTOM_BUILDER_HEIGHT;
 
   @Builder
-  StackBuilder() {
+  stackBuilder() {
     Column() {
-      Button("HdsNavigation")
+      Button('HdsNavigation')
     }
     .height(56)
     .justifyContent(FlexAlign.Center)
   }
 
   @Builder
-  BottomBuilder() {
+  bottomBuilder() {
     Column() {
       Search()
     }
@@ -1542,7 +1542,7 @@ struct Index {
             blurEffectiveEndOffset: LengthMetrics.vp(20)
           },
           scrollEffectStyle: {
-            backgroundStyle: { maskExtraHeight: 56.0 },
+            backgroundStyle: { maskExtraHeight: 56.0 }
           }
         },
         content: {
@@ -1550,18 +1550,18 @@ struct Index {
             mainTitle: 'MainTitle',
             subTitle: 'SubTitle'
           },
-          stackBuilder: (): void => this.StackBuilder(),
-          bottomBuilder: { builder: (): void => this.BottomBuilder() },
+          stackBuilder: (): void => this.stackBuilder(),
+          bottomBuilder: { builder: (): void => this.bottomBuilder() },
           menu: {
             value: [{
               content: {
                 label: 'menu1',
-                icon: $r('sys.symbol.plus'),
+                icon: $r('sys.symbol.plus')
               },
             }, {
               content: {
                 label: 'menu2',
-                icon: $r('sys.symbol.lock'),
+                icon: $r('sys.symbol.lock')
               }
             }]
           }
@@ -1572,7 +1572,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002634011352.jpg)
+ ![](./img/zh-cn_image_0000002685929029.jpg)
 
 #### [h2]设置标题栏的动态显隐
 
@@ -1592,7 +1592,7 @@ struct Index {
   @State blankHeight: number = TITLE_BAR_HEIGHT_FREE + BOTTOM_BUILDER_HEIGHT;
 
   @Builder
-  BottomBuilder() {
+  bottomBuilder() {
     Column() {
       Search()
     }
@@ -1616,13 +1616,13 @@ struct Index {
             mainTitle: 'MainTitle',
             subTitle: 'SubTitle'
           },
-          bottomBuilder: { builder: (): void => this.BottomBuilder() },
+          bottomBuilder: { builder: (): void => this.bottomBuilder() },
           menu: {
             value: [{
               content: {
                 label: 'menu1',
-                icon: $r('sys.symbol.plus'),
-              },
+                icon: $r('sys.symbol.plus')
+              }
             }]
           }
         }
@@ -1638,7 +1638,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664210503.gif)
+ ![](./img/zh-cn_image_0000002656009354.gif)
 
 #### [h2]设置标题栏图标样式
 
@@ -1674,7 +1674,6 @@ struct Index {
         }.edgeEffect(EdgeEffect.Spring).scrollBar(BarState.Off)
       }
       .titleMode(HdsNavigationTitleMode.MINI)
-      .hideBackButton(true)
       .titleBar({
         content: {
           title: {
@@ -1685,18 +1684,18 @@ struct Index {
             value: [{
               content: {
                 label: 'CAPSULE',
-                type: TextStyleMode.NORMAL,
+                type: TextStyleMode.NORMAL
               }
             }, {
               content: {
                 label: '5',
-                type: TextStyleMode.SINGLE_CHARACTER,
+                type: TextStyleMode.SINGLE_CHARACTER
               }
             }, {
               content: {
                 label: 'smallIcon',
                 icon: $r('sys.symbol.plus'),
-                type: IconStyleMode.LARGE,
+                type: IconStyleMode.LARGE
               }
             }]
           },
@@ -1704,17 +1703,17 @@ struct Index {
             content: {
               label: 'headIcon',
               icon: $r('sys.symbol.lock'),
-              type: IconStyleMode.SMALL,
+              type: IconStyleMode.SMALL
             }
           },
-          divider: { showType: DividerShowType.ON },
+          divider: { showType: DividerShowType.ON }
         }
       })
     }
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664330561.jpg)
+ ![](./img/zh-cn_image_0000002655849432.jpg)
 
 #### [h2]半模态标题栏样式
 
@@ -1734,14 +1733,14 @@ struct SheetTransitionExample {
   scroller: Scroller = new Scroller();
 
   @Builder
-  SubTitleBuilder() {
-    Text("click to share")
+  subTitleBuilder() {
+    Text('click to share')
       .fontColor(Color.Blue)
       .maxFontScale(1)
       .lineHeight(`${14 * 1.49}vp`)
       .fontSize(14)
       .onClick(() => {
-        console.info("click to share");
+        console.info('click to share');
       })
   }
 
@@ -1764,7 +1763,7 @@ struct SheetTransitionExample {
           title: {
             mainTitle: 'MainTitle',
             subTitle: 'SubTitle',
-            subTitleBuilder: (): void => this.SubTitleBuilder(), // 自定义副标题区域
+            subTitleBuilder: (): void => this.subTitleBuilder() // 自定义副标题区域
           },
           menu: {
             value: [{
@@ -1773,7 +1772,7 @@ struct SheetTransitionExample {
                 isEnabled: true,
                 type: IconStyleMode.SMALL,
                 action: () => {
-                  console.info("model cancel");
+                  console.info('model cancel');
                 }
               }
             }]
@@ -1782,9 +1781,9 @@ struct SheetTransitionExample {
             content: {
               label: 'leftIcon',
               icon: $r('sys.symbol.ohos_wifi'),
-              isEnabled: true,
+              isEnabled: true
             }
-          },
+          }
         }
       })
     }
@@ -1792,7 +1791,7 @@ struct SheetTransitionExample {
 
   build() {
     Column() {
-      Button("transition modal")
+      Button('transition modal')
         .onClick(() => {
           this.isShow = true;
         })
@@ -1806,7 +1805,7 @@ struct SheetTransitionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002633851450.jpg)
+ ![](./img/zh-cn_image_0000002686088863.jpg)
 
 #### [h2]图标上绑定自定义menu
 
@@ -1823,10 +1822,10 @@ const TITLE_BAR_HEIGHT_FULL: number = 138;
 @Builder
 function menuComponent() {
   Menu() {
-    MenuItem({ content: "copy" }).onClick(() => {
+    MenuItem({ content: 'copy' }).onClick(() => {
       Prompt.showToast({ message: 'on click' });
     })
-    MenuItem({ content: "paste" }).enabled(false)
+    MenuItem({ content: 'paste' }).enabled(false)
   }
   .width(224).menuItemDivider({ strokeWidth: LengthMetrics.px(1), color: $r('sys.color.comp_divider') })
 }
@@ -1871,29 +1870,34 @@ struct Index {
                     promptAction.openMenu(
                       contentNode,
                       { id: this.targetId },
-                      { backgroundColor: Color.Yellow });
+                      { backgroundColor: Color.Yellow })
+                      .then(() => {
+                        console.info('openMenu success');
+                      })
+                      .catch((err: BusinessError) => {
+                        console.error(`openMenu error code is ${err.code}, message is ${err.message}`);
+                      })
                   } catch (error) {
                     let message = (error as BusinessError).message;
                     let code = (error as BusinessError).code;
                     console.error(`openMenu args error code is ${code}, message is ${message}`);
                   }
-                  console.info("model cancel");
                 }
               }
             }, {
               content: {
                 label: 'menu2',
-                icon: $r('sys.symbol.ohos_wifi'),
+                icon: $r('sys.symbol.ohos_wifi')
               }
             }]
-          },
+          }
         }
       })
     }
   }
 }
 ```
- ![](./img/zh-cn_image_0000002634011354.gif)
+ ![](./img/zh-cn_image_0000002685929031.gif)
 
 #### [h2]设置应用内多窗图标
 
@@ -1945,7 +1949,7 @@ struct MultiWindowEntryInAPPTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664210505.jpg)
+ ![](./img/zh-cn_image_0000002656009356.jpg)
 
 #### [h2]设置HdsNavigation双栏模式
 
@@ -1957,21 +1961,21 @@ import { HdsNavigation, HdsNavigationAttribute, HdsNavigationTitleMode } from '@
 import { ComponentContent } from '@kit.ArkUI';
 
 @Builder
-function PlaceholderPage() {
+function placeholderPage() {
   Column() {
-    Text("分栏模式占位页")
+    Text('分栏模式占位页')
       .fontSize(28)
       .fontWeight(700)
       .margin({ top: 200 })
-  }.width("100%")
-  .height("100%")
+  }.width('100%')
+  .height('100%')
 }
 
 @Entry
 @Component
 struct Index {
   scroller: Scroller = new Scroller();
-  placeholder = new ComponentContent(this.getUIContext(), wrapBuilder(PlaceholderPage))
+  placeholder = new ComponentContent(this.getUIContext(), wrapBuilder(placeholderPage));
   private arr: number[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
   build() {
@@ -2003,7 +2007,7 @@ struct Index {
         title: {
           mainTitle: 'Main',
           subTitle: 'Sub'
-        },
+        }
       }
     })
     .bindToScrollable([this.scroller])
@@ -2011,7 +2015,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664330563.gif)
+ ![](./img/zh-cn_image_0000002655849434.gif)
 
 #### [h2]设置标题栏沉浸式样式
 
@@ -2026,9 +2030,9 @@ import {
   HdsNavigation,
   HdsNavigationAttribute,
   HdsNavigationTitleMode,
-  ScrollEffectType,
-} from '@kit.UIDesignKit'
-import { promptAction } from '@kit.ArkUI'
+  ScrollEffectType
+} from '@kit.UIDesignKit';
+import { promptAction } from '@kit.ArkUI';
 
 @Entry
 @Component
@@ -2056,8 +2060,8 @@ struct Index {
           // 'app.media.demo_img'需要替换为开发者所需的资源文件
           Image($r('app.media.demo_img'))
             .width('100%')
-          Text(`当前材质Level为: ${this.materialLevel}`).fontSize(20).fontWeight(FontWeight.Bold)
-          Text(`当前材质Type为: ${this.materialType}`).fontSize(20).fontWeight(FontWeight.Bold)
+          Text(`当前材质Level为： ${this.materialLevel}`).fontSize(20).fontWeight(FontWeight.Bold)
+          Text(`当前材质Type为： ${this.materialType}`).fontSize(20).fontWeight(FontWeight.Bold)
           Button('切换材质Type为None').onClick(() => {
             // 无材质效果
             this.materialType = hdsMaterial.MaterialType.NONE;
@@ -2068,7 +2072,7 @@ struct Index {
     .titleBar({
       content: {
         title: {
-          mainTitle: '主标题',
+          mainTitle: '主标题'
         },
         menu: {
           value: [{
@@ -2076,16 +2080,28 @@ struct Index {
               icon: $r('sys.symbol.search_things'),
               label: 'search',
               action: () => {
-                promptAction.openToast({ message: 'on click' });
-              },
+                try {
+                  promptAction.openToast({ message: 'on click' })
+                    .then(() => {
+                      console.info('openToast success');
+                    })
+                    .catch((err: BusinessError) => {
+                      console.error(`openToast error code is ${err.code}, message is ${err.message}`);
+                    })
+                } catch (error) {
+                  let message = (error as BusinessError).message;
+                  let code = (error as BusinessError).code;
+                  console.error(`openToast args error code is ${code}, message is ${message}`);
+                }
+              }
             }
           }]
-        },
+        }
       },
       style: {
         scrollEffectOpts: {
           // 从6.1.0(23)开始， 新增IMMERSIVE_GRADIENT_BLUR类型，标题文字和图标样式从白色到黑色线性过渡。
-          scrollEffectType: ScrollEffectType.IMMERSIVE_GRADIENT_BLUR,
+          scrollEffectType: ScrollEffectType.IMMERSIVE_GRADIENT_BLUR
         },
         // 从6.1.0(23)开始，支持材质相关属性。
         // 推荐与ScrollEffectType.IMMERSIVE_GRADIENT_BLUR（推荐沉浸式图文类的场景使用） 或 ScrollEffectType.GRADIENT_BLUR（推荐非沉浸式列表类的场景使用）搭配使用。
@@ -2093,7 +2109,7 @@ struct Index {
           materialType: this.materialType,
           materialLevel: this.materialLevel
         }
-      },
+      }
     })
     .bindToScrollable([this.scrollerForScroll])
     .hideBackButton(true)
@@ -2106,7 +2122,7 @@ struct Index {
 
 执行上述代码展示的效果如下。
 
-![](./img/zh-cn_image_0000002633851452.gif)
+![](./img/zh-cn_image_0000002686088865.gif)
 
 #### [h2]通过onReady获取栈
 
@@ -2118,14 +2134,13 @@ struct Index {
 示例：
 
 ```
-// 从6.0.2(22)版本开始，无需手动导入HdsNavigationAttribute与HdsNavDestinationAttribute。具体请参考HdsNavigation与HdsNavDestination的导入模块说明。
 import {
   HdsNavDestination,
   HdsNavigation,
   HdsNavigationAttribute,
   HdsNavDestinationAttribute,
   HdsNavigationTitleMode
-} from "@kit.UIDesignKit";
+} from '@kit.UIDesignKit';
 
 class PageParam {
   constructor(num_: number) {
@@ -2143,13 +2158,13 @@ export function PageOneBuilder(name: string, param: Object) {
 @Component
 struct PageOne {
   private stack: NavPathStack | null = null;
-  private name: string = "";
+  private name: string = '';
   private paramNum: number = 0;
 
   build() {
     HdsNavDestination() {
       Column() {
-        Text("NavPathInfo: name: " + this.name + ", paramNum: " + this.paramNum)
+        Text('NavPathInfo: name: ' + this.name + ', paramNum: ' + this.paramNum)
         Button('pushPath', { stateEffect: true, type: ButtonType.Capsule })
           .width('80%')
           .height(40)
@@ -2157,7 +2172,7 @@ struct PageOne {
           .onClick(() => {
             if (this.stack) {
               let p = new PageParam(this.paramNum + 1);
-              this.stack.pushPath({ name: "pageOne", param: p });
+              this.stack.pushPath({ name: 'pageOne', param: p });
             }
           })
         Button('pop', { stateEffect: true, type: ButtonType.Capsule })
@@ -2175,8 +2190,8 @@ struct PageOne {
       enableComponentSafeArea: true,
       content: {
         title: {
-          mainTitle: 'PageOne',
-        },
+          mainTitle: 'PageOne'
+        }
       }
     })
     .onReady((ctx: NavDestinationContext) => {
@@ -2206,7 +2221,7 @@ struct NavigationExample2 {
           .margin(20)
           .onClick(() => {
             let p = new PageParam(1);
-            this.stack.pushPath({ name: "pageOne", param: p });
+            this.stack.pushPath({ name: 'pageOne', param: p });
           })
       }
       .width('100%')
@@ -2217,8 +2232,8 @@ struct NavigationExample2 {
     .titleBar({
       content: {
         title: {
-          mainTitle: '主标题',
-        },
+          mainTitle: '主标题'
+        }
       }
     })
     .titleMode(HdsNavigationTitleMode.MINI)
@@ -2246,4 +2261,4 @@ struct NavigationExample2 {
 
 执行上述代码，效果展示如下。
 
-![](./img/zh-cn_image_0000002634011356.gif)
+![](./img/zh-cn_image_0000002685929033.gif)

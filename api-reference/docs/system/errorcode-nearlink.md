@@ -2,8 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-nearlink"
 catalog: "harmonyos-references"
-content_hash: "fb3ce4c4335d"
-synced_at: "2026-07-09T00:59:26.883955"
+content_hash: "e1ccfb11fa33"
+synced_at: "2026-07-28T16:50:42.265788"
 ---
 
 # ArkTS API错误码
@@ -50,7 +50,7 @@ The UUID is already registered.
 
 错误信息
 
-Port is exceeds the upper limit.
+The number of ports exceeds the upper limit.
 
 错误描述
 
@@ -68,7 +68,7 @@ Port is exceeds the upper limit.
 
 错误信息
 
-No port associated with this UUID is registered.
+The UUID is not registered.
 
 错误描述
 
@@ -86,11 +86,11 @@ No port associated with this UUID is registered.
 
 错误信息
 
-Write data congest.
+The data writing process is congested.
 
 错误描述
 
-数据传输过程中发生异常。
+发送数传数据异常。
 
 可能原因
 

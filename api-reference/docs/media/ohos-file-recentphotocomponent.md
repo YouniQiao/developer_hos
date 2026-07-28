@@ -2,15 +2,15 @@
 title: "@ohos.file.RecentPhotoComponent (最近图片组件)"
 upstream_id: "harmonyos-references/ohos-file-recentphotocomponent"
 catalog: "harmonyos-references"
-content_hash: "2bcacbef9f01"
-synced_at: "2026-07-21T16:26:57.239165"
+content_hash: "04f5b62f95ce"
+synced_at: "2026-07-28T16:52:04.486150"
 ---
 
 # @ohos.file.RecentPhotoComponent (最近图片组件)
 
 应用可以在布局中嵌入最近图片组件，通过此组件，应用无需申请权限，即可指定配置访问公共目录中最近的一个图片或视频文件。授予的权限仅包含只读权限。
 
-请注意RecentPickerComponent不支持嵌套，且不应在其上覆盖设置overlay属性或更高层级组件，以免导致手势事件失效。
+请注意RecentPhotoComponent不支持嵌套，且不应在其上覆盖设置overlay属性或更高层级组件，以免导致手势事件失效。
 
 ![](./img/note_3.0-zh-cn.png)
 

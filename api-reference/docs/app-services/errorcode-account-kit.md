@@ -2,8 +2,8 @@
 title: "ArkTS错误码"
 upstream_id: "harmonyos-references/errorcode-account-kit"
 catalog: "harmonyos-references"
-content_hash: "2f30695f0657"
-synced_at: "2026-07-09T01:01:12.610225"
+content_hash: "ab94285e41e6"
+synced_at: "2026-07-28T16:52:29.907515"
 ---
 
 # ArkTS错误码
@@ -65,6 +65,7 @@ The scopes or permissions are not supported.
 5. 元服务开发过程中，调[AuthorizationWithHuaweiIDRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#authorizationwithhuaweiidrequest)接口时传了phone这个scope。
 6. 在实名信息校验、人脸核身场景，登录的华为账号是儿童账号。
 7. Wearable、TV设备申请获取不支持的scope。
+8. 在一键登录场景下，用户登录的华为账号注册地为中国境外、香港特别行政区、澳门特别行政区或中国台湾。
 
 处理步骤
 
@@ -75,6 +76,7 @@ The scopes or permissions are not supported.
 5. 元服务不能直接调用该接口获取手机号，可参考场景化控件[快速验证手机号Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-getphonenumber)获取。
 6. 更换或注册一个中国境内（香港特别行政区、澳门特别行政区、中国台湾除外）的成人华为账号，重新触发接口。
 7. 更换其他支持调用该API的设备。
+8. 应用需展示其他登录方式。
 
 #### 1001500004 已登录的华为账号不支持该功能
 
@@ -174,7 +176,7 @@ Invalid input parameter value.
 
 处理步骤
 
-1. 在AppGallery Connect（简称AGC）的[开发与服务](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/myProject)中，选择对应的项目和对应的应用，在“常规 > 应用 ”下，找到**应用**的Client ID和APP ID。 ![](./img/zh-cn_image_0000002661611519.png) 若Client ID和APP ID不同：请检查module type为entry的模块下module.json5中的client_id是否配置或配置的值是否正确，参考[配置Client ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id)。
+1. 在AppGallery Connect（简称AGC）的[开发与服务](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/myProject)中，选择对应的项目和对应的应用，在“常规 > 应用 ”下，找到**应用**的Client ID和APP ID。 ![](./img/zh-cn_image_0000002655847494.png) 若Client ID和APP ID不同：请检查module type为entry的模块下module.json5中的client_id是否配置或配置的值是否正确，参考[配置Client ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id)。
 2. 若Client ID和APP ID相同：可无需配置Client ID。
 3. 请在AppGallery Connect中重新申请Profile文件并重新进行签名。在调试阶段，请参考[申请调试Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-debug-profile-0000002248181278)，完成Profile申请并重新手动签名；在发布阶段，请参考[申请发布Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-profile-0000002248341090)，完成Profile申请并重新手动签名。
 4. 需要通过授权API（[AuthorizationWithHuaweiIDRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#authorizationwithhuaweiidrequest)）获取到匿名手机号，将其作为参数调用一键登录接口。
@@ -644,7 +646,7 @@ The HUAWEI ID is not signed in.
 
 错误信息
 
-Failed to create a invoice title because the title already exists.
+Failed to create an invoice title because the title already exists.
 
 错误描述
 
@@ -1079,3 +1081,151 @@ This device does not support this API.
 处理步骤
 
 修复该设备的前置摄像故障或更换前置摄像功能正常的设备后重试。
+
+#### 1026900001 用户未登录华为账号
+
+错误信息
+
+The user has not logged in with HUAWEI ID.
+
+错误描述
+
+用户未登录华为账号。
+
+可能原因
+
+用户事先未登录华为账号。
+
+处理步骤
+
+如需引导用户登录，可调用[LoginWithHuaweiIDRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#loginwithhuaweiidrequest)，将forceLogin参数设置为true，拉起登录页面引导用户登录，或引导用户在系统设置中登录华为账号。
+
+#### 1026900003 内部错误
+
+错误信息
+
+Internal error, possibly an IPC failure.
+
+错误描述
+
+内部错误。
+
+可能原因
+
+系统内部出现异常。
+
+处理步骤
+
+1、重启设备后重试。
+
+2、若您的问题仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+
+#### 1026900004 服务器错误
+
+错误信息
+
+Server error.
+
+错误描述
+
+服务器错误。
+
+可能原因
+
+华为账号服务器错误。
+
+处理步骤
+
+1、重启设备后重试。
+
+2、若您的问题仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+
+#### 1026900005 网络错误
+
+错误信息
+
+Network error.
+
+错误描述
+
+网络错误。
+
+可能原因
+
+设备未连网。
+
+处理步骤
+
+请检查网络连接。
+
+#### 1026900006 参数错误
+
+错误信息
+
+Parameter check failed.
+
+错误描述
+
+参数错误。
+
+可能原因
+
+传入的参数类型或值不符合要求。
+
+处理步骤
+
+请检查传入参数类型或值是否正确，修正后重试。
+
+#### 1026900007 不支持的国家或地区
+
+错误信息
+
+Unsupported country/region.
+
+错误描述
+
+不支持的国家或地区。
+
+可能原因
+
+当前服务不支持用户所在国家或地区。
+
+处理步骤
+
+引导用户更换或注册一个中国境内（香港特别行政区、澳门特别行政区、中国台湾除外）的华为账号重新登录。
+
+#### 1026900008 用户取消操作
+
+错误信息
+
+The user canceled the current operation.
+
+错误描述
+
+用户取消当前操作。
+
+可能原因
+
+用户在操作过程中取消了操作。
+
+处理步骤
+
+用户主动取消操作，无需特殊处理。
+
+#### 1026900009 应用没有权限
+
+错误信息
+
+The app does not have the required permissions.
+
+错误描述
+
+该应用不具备所需的权限。
+
+可能原因
+
+该应用不具备所需的权限。
+
+处理步骤
+
+在华为开发者联盟网站申请获取亲密圈关系列表权限。

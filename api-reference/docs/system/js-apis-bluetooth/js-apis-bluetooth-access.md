@@ -2,8 +2,8 @@
 title: "@ohos.bluetooth.access (蓝牙access模块)"
 upstream_id: "harmonyos-references/js-apis-bluetooth-access"
 catalog: "harmonyos-references"
-content_hash: "75c50dafb8a0"
-synced_at: "2026-07-09T00:59:23.020351"
+content_hash: "4c9ecfd4cc07"
+synced_at: "2026-07-28T16:50:35.738148"
 ---
 
 # @ohos.bluetooth.access (蓝牙access模块)
@@ -220,6 +220,7 @@ getState(): BluetoothState
 
 | 错误码ID | 错误信息 |
 | --- | --- |
+| 201 | Permission denied. 适用版本：10-12 |
 | 801 | Capability not supported. |
 | 2900001 | Service stopped. |
 | 2900099 | Operation failed. |
@@ -259,6 +260,7 @@ on(type: 'stateChange', callback: Callback<BluetoothState>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
+| 201 | Permission denied. 适用版本：10-17 |
 | 401 | Invalid parameter. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
 | 801 | Capability not supported. |
 | 2900099 | Operation failed. |
@@ -301,6 +303,7 @@ off(type: 'stateChange', callback?: Callback<BluetoothState>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
+| 201 | Permission denied. 适用版本：10-17 |
 | 401 | Invalid parameter. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
 | 801 | Capability not supported. |
 | 2900099 | Operation failed. |

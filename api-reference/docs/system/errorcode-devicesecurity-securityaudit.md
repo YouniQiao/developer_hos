@@ -2,8 +2,8 @@
 title: "SecurityAudit（安全审计）"
 upstream_id: "harmonyos-references/errorcode-devicesecurity-securityaudit"
 catalog: "harmonyos-references"
-content_hash: "f7858ae46ba3"
-synced_at: "2026-07-09T00:59:15.587464"
+content_hash: "6f0008ba3e38"
+synced_at: "2026-07-28T16:50:27.016832"
 ---
 
 # SecurityAudit（安全审计）
@@ -26,7 +26,7 @@ check permission fail.
 
 处理步骤
 
-只允许清单内的企业类应用申请该权限，申请方式请参考：[申请使用企业类应用可用权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-enterprise-apps)。
+只允许清单内的企业类应用申请该权限，申请方式请参考：[企业类应用可用权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-enterprise-apps)。
 
 #### 401 参数检查失败
 
@@ -58,7 +58,9 @@ Internal error.
 
 可能原因
 
-接口执行流程中调用系统其它接口出现异常。
+1.系统服务进程故障。
+
+2.IPC（Inter-Process Communication，进程间通信）跨进程调用失败。
 
 处理步骤
 

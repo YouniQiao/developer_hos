@@ -2,8 +2,8 @@
 title: "camera.h"
 upstream_id: "harmonyos-references/capi-camera-h"
 catalog: "harmonyos-references"
-content_hash: "4da5c5f95619"
-synced_at: "2026-07-09T01:00:24.617048"
+content_hash: "71c4712a7ee8"
+synced_at: "2026-07-28T16:51:42.286710"
 ---
 
 # camera.h
@@ -41,7 +41,7 @@ synced_at: "2026-07-09T01:00:24.617048"
 | [Camera_PhotoCaptureSetting](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-camera-photocapturesetting) | Camera_PhotoCaptureSetting | 要设置的拍照捕获选项。 |
 | [Camera_FrameShutterInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-camera-frameshutterinfo) | Camera_FrameShutterInfo | 帧快门回调信息。 |
 | [Camera_CaptureEndInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-camera-captureendinfo) | Camera_CaptureEndInfo | 捕获结束信息。 |
-| [Camera_Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-camera-rect) | Camera_Rect | 矩形定义。 检测点应在0-1坐标系内，该坐标系左上角为(0，0)，右下角为(1，1)。 此坐标系以设备充电口在右侧时的横向设备方向为基准。 例如应用的预览界面布局以设备充电口在下侧时的竖向方向为基准，布局宽高为(w，h)， 返回点为(x，y)，则转换后的坐标点为(1-y，x)。 |
+| [Camera_Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-camera-rect) | Camera_Rect | 相机矩形。用于各类检测对象的矩形框绘制。 检测点坐标系以设备横向位置（充电口朝右）为基准。 坐标系原点位于左上角 (0, 0)，右下角对应相机预览流的像素分辨率。 所有参数均为整型像素值，其中topLeftX与topLeftY表示矩形左上角坐标，width与height分别表示矩形的宽高。 |
 | [Camera_MetadataObject](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-camera-metadataobject) | Camera_MetadataObject | 元数据对象基础。 |
 | [Camera_TorchStatusInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-camera-torchstatusinfo) | Camera_TorchStatusInfo | 手电筒状态信息。 |
 | [Camera_SmoothZoomInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-camera-smoothzoominfo) | Camera_SmoothZoomInfo | 平滑变焦参数信息。 |
@@ -55,6 +55,7 @@ synced_at: "2026-07-09T01:00:24.617048"
 | [OH_Camera_ZoomRange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-oh-camera-zoomrange) | OH_Camera_ZoomRange | 变焦范围配置。 |
 | [OH_Camera_PhysicalAperture](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-oh-camera-physicalaperture) | OH_Camera_PhysicalAperture | 物理光圈配置。 |
 | [OH_Camera_ZoomPointInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-oh-camera-zoompointinfo) | OH_Camera_ZoomPointInfo | 描述变焦点信息。 |
+| [OH_Camera_Rect_Ext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-oh-camera-rect-ext) | OH_Camera_Rect_Ext | 矩形定义。 检测点应在0-1坐标系内，该坐标系左上角为(0，0)，右下角为(1，1)。 此坐标系以设备充电口在右侧时的横向设备方向为基准。 例如应用的预览界面布局以设备充电口在下侧时的竖向方向为基准，布局宽高为(w，h)，返回点为(x，y)，则转换后的坐标点为(1-y，x)。 |
 | [Camera_Manager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-camera-manager) | Camera_Manager | 相机管理器对象。 可以使用[OH_Camera_GetCameraManager](#oh_camera_getcameramanager)方法创建指针。 |
 
 #### [h2]枚举
@@ -94,6 +95,7 @@ synced_at: "2026-07-09T01:00:24.617048"
 | [OH_Camera_OISMode](#oh_camera_oismode) | OH_Camera_OISMode | 光学防抖（Optical Image Stabilization）模式枚举。 |
 | [OH_Camera_OISAxes](#oh_camera_oisaxes) | OH_Camera_OISAxes | 光学防抖（OIS）轴枚举。 |
 | [OH_Camera_ExposureState](#oh_camera_exposurestate) | OH_Camera_ExposureState | 枚举相机曝光状态。 |
+| [OH_Camera_MetadataObjectEmotion](#oh_camera_metadataobjectemotion) | OH_Camera_MetadataObjectEmotion | 元数据对象情绪类型枚举。 |
 
 #### [h2]函数
 
@@ -128,7 +130,9 @@ enum Camera_ErrorCode
 | CAMERA_DEVICE_DISABLED = 7400108 | 由于安全原因，相机已禁用。 |
 | CAMERA_DEVICE_PREEMPTED = 7400109 | 因被抢占而无法使用相机。 |
 | CAMERA_UNRESOLVED_CONFLICTS_WITH_CURRENT_CONFIGURATIONS = 7400110 | 与当前配置存在冲突。 **起始版本：** 12 |
+| CAMERA_ERROR_OPTIONAL_PROPERTY_NOT_EXIST = 7400113 | 可选属性不存在。 **起始版本：** 26.0.0 |
 | CAMERA_SERVICE_FATAL_ERROR = 7400201 | 相机服务异常。 比如没有相机权限、相机服务重启、跨进程调用异常等。 |
+| CAMERA_ERROR_CAPABILITY_NOT_SUPPORTED = 7400114 | 表示设备当前不支持该能力。 **起始版本：** 26.0.0 |
 
 #### [h2]Camera_Status
 
@@ -438,6 +442,13 @@ enum Camera_MetadataObjectType
 | FACE_DETECTION = 0 | 元数据的对象类型，用于人脸检测。 从API version 23开始，推荐使用新枚举值[CAMERA_METADATA_OBJECT_TYPE_FACE_DETECTION](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-camera-h#camera_metadataobjecttype)。 |
 | CAMERA_METADATA_OBJECT_TYPE_FACE_DETECTION = 0 | 元数据的对象类型，用于人脸检测。 **起始版本：** 23 |
 | CAMERA_METADATA_OBJECT_TYPE_HUMAN_BODY = 1 | 元数据的对象类型，用于人体检测。 **起始版本：** 23 |
+| CAMERA_METADATA_OBJECT_TYPE_CAT_FACE = 2 | 元数据的对象类型，用于猫脸检测。 **起始版本：** 26.0.0 |
+| CAMERA_METADATA_OBJECT_TYPE_CAT_BODY = 3 | 元数据的对象类型，用于猫体检测。 **起始版本：** 26.0.0 |
+| CAMERA_METADATA_OBJECT_TYPE_DOG_FACE = 4 | 元数据的对象类型，用于狗脸检测。 **起始版本：** 26.0.0 |
+| CAMERA_METADATA_OBJECT_TYPE_DOG_BODY = 5 | 元数据的对象类型，用于狗体检测。 **起始版本：** 26.0.0 |
+| CAMERA_METADATA_OBJECT_TYPE_SALIENT_DETECTION = 6 | 元数据的对象类型，用于显著性物体检测。 **起始版本：** 26.0.0 |
+| CAMERA_METADATA_OBJECT_TYPE_BAR_CODE_DETECTION = 7 | 元数据的对象类型，用于二维码检测。 **起始版本：** 26.0.0 |
+| CAMERA_METADATA_OBJECT_TYPE_BASIC_FACE_DETECTION = 8 | 元数据的对象类型，用于基础人脸检测。 **起始版本：** 26.0.0 |
 
 #### [h2]Camera_TorchMode
 
@@ -702,6 +713,53 @@ enum OH_Camera_ExposureState
 | --- | --- |
 | OH_CAMERA_EXPOSURE_STATE_SCAN = 0 | 表示曝光处于扫描状态。 **起始版本：** 26.0.0 |
 | OH_CAMERA_EXPOSURE_STATE_CONVERGED = 1 | 表示曝光已经收敛。 **起始版本：** 26.0.0 |
+
+#### [h2]OH_Camera_MetadataObjectEmotion
+
+```
+enum OH_Camera_MetadataObjectEmotion
+```
+ 描述
+
+元数据对象情绪类型枚举。
+
+起始版本： 26.0.0
+
+| 枚举项 | 描述 |
+| --- | --- |
+| OH_CAMERA_METADATA_OBJECT_EMOTION_NEUTRAL = 0 | 平静。 **起始版本：** 26.0.0 |
+| OH_CAMERA_METADATA_OBJECT_EMOTION_SADNESS = 1 | 悲伤。 **起始版本：** 26.0.0 |
+| OH_CAMERA_METADATA_OBJECT_EMOTION_SMILE = 2 | 微笑。 **起始版本：** 26.0.0 |
+| OH_CAMERA_METADATA_OBJECT_EMOTION_SURPRISE = 3 | 惊讶。 **起始版本：** 26.0.0 |
+
+#### [h2]OH_Camera_AutomotiveCameraPosition
+
+```
+enum OH_Camera_AutomotiveCameraPosition
+```
+ 描述
+
+Car设备摄像头位置的枚举。
+
+起始版本： 26.0.0
+
+| 枚举项 | 描述 |
+| --- | --- |
+| OH_CAMERA_AUTOMOTIVE_CAMERA_POSITION_EXTERIOR_OTHER = 0 | Car设备外部其他位置摄像头。 **起始版本：** 26.0.0 |
+| OH_CAMERA_AUTOMOTIVE_CAMERA_POSITION_EXTERIOR_FRONT = 1 | Car设备外部前侧摄像头。 **起始版本：** 26.0.0 |
+| OH_CAMERA_AUTOMOTIVE_CAMERA_POSITION_EXTERIOR_REAR = 2 | Car设备外部后侧摄像头。 **起始版本：** 26.0.0 |
+| OH_CAMERA_AUTOMOTIVE_CAMERA_POSITION_EXTERIOR_LEFT = 3 | Car设备外部左侧摄像头。 **起始版本：** 26.0.0 |
+| OH_CAMERA_AUTOMOTIVE_CAMERA_POSITION_EXTERIOR_RIGHT = 4 | Car设备外部右侧摄像头。 **起始版本：** 26.0.0 |
+| OH_CAMERA_AUTOMOTIVE_CAMERA_POSITION_INTERIOR_OTHER = 5 | Car设备内部其他位置摄像头。 **起始版本：** 26.0.0 |
+| OH_CAMERA_AUTOMOTIVE_CAMERA_POSITION_INTERIOR_ROW_1_LEFT = 6 | Car设备内部第一排左侧摄像头。 **起始版本：** 26.0.0 |
+| OH_CAMERA_AUTOMOTIVE_CAMERA_POSITION_INTERIOR_ROW_1_CENTER = 7 | Car设备内部第一排中央摄像头。 **起始版本：** 26.0.0 |
+| OH_CAMERA_AUTOMOTIVE_CAMERA_POSITION_INTERIOR_ROW_1_RIGHT = 8 | Car设备内部第一排右侧摄像头。 **起始版本：** 26.0.0 |
+| OH_CAMERA_AUTOMOTIVE_CAMERA_POSITION_INTERIOR_ROW_2_LEFT = 9 | Car设备内部第二排左侧摄像头。 **起始版本：** 26.0.0 |
+| OH_CAMERA_AUTOMOTIVE_CAMERA_POSITION_INTERIOR_ROW_2_CENTER = 10 | Car设备内部第二排中央摄像头。 **起始版本：** 26.0.0 |
+| OH_CAMERA_AUTOMOTIVE_CAMERA_POSITION_INTERIOR_ROW_2_RIGHT = 11 | Car设备内部第二排右侧摄像头。 **起始版本：** 26.0.0 |
+| OH_CAMERA_AUTOMOTIVE_CAMERA_POSITION_INTERIOR_ROW_3_LEFT = 12 | Car设备内部第三排左侧摄像头。 **起始版本：** 26.0.0 |
+| OH_CAMERA_AUTOMOTIVE_CAMERA_POSITION_INTERIOR_ROW_3_CENTER = 13 | Car设备内部第三排中央摄像头。 **起始版本：** 26.0.0 |
+| OH_CAMERA_AUTOMOTIVE_CAMERA_POSITION_INTERIOR_ROW_3_RIGHT = 14 | Car设备内部第三排右侧摄像头。 **起始版本：** 26.0.0 |
 
 #### 函数说明
 

@@ -2,15 +2,124 @@
 title: "@ohos.abilityAccessCtrl (程序访问控制管理)"
 upstream_id: "harmonyos-references/js-apis-abilityaccessctrl"
 catalog: "harmonyos-references"
-content_hash: "114c73d909cf"
-synced_at: "2026-07-09T00:57:06.714750"
+content_hash: "99ab38b99f24"
+synced_at: "2026-07-28T16:40:35.585405"
 ---
 
 # @ohos.abilityAccessCtrl (程序访问控制管理)
 
-程序访问控制提供应用程序的权限校验和管理能力。
+程序访问控制提供应用程序的权限校验和管理能力，支持应用在访问受保护资源前进行权限状态判断、运行时授权申请、设置页授权引导和权限状态变化监听。权限分为system_grant（系统自动授权）、user_grant（需用户手动授权）和[manual_settings](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview#manual_settings手动设置授权)（手动设置授权）三类，应用需在配置文件中声明所需权限。权限管理机制详见[应用权限管控概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview)。
 
-![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 8开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
+该模块主要用于以下场景：
+
+- 在业务执行前校验当前应用是否具备访问受保护资源所需要的权限。
+- 在权限未授予时，拉起运行时权限弹窗或权限设置页面，请求用户授权。
+- 订阅当前应用的权限状态变化事件，在权限状态变化后及时调整业务流程。
+
+![](./img/note_3.0-zh-cn.png)
+
+- 本模块首批接口从API version 8开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
+
+#### 关键Class/Interface介绍
+
+#### [h2]核心枚举类型
+
+- **[GrantStatus](#grantstatus)：** 权限授权状态枚举，用于表示当前权限的授权状态。
+- **[SwitchType](#switchtype12)：** 全局开关类型枚举，用于表示需要请求的系统全局开关类型。
+- **[PermissionStateChangeType](#permissionstatechangetype18)：** 权限状态变化类型枚举，用于表示授权、取消授权等变化。
+- **[PermissionStatus](#permissionstatus20)：** 权限状态枚举，用于表示当前权限状态。
+- **[SelectedResult](#selectedresult22)：** 设置页授权选择结果枚举，用于表示用户在权限设置弹窗中的选择结果。
+
+#### [h2]核心接口类型
+
+- **[PermissionStateChangeInfo](#permissionstatechangeinfo18)：** 权限状态变化事件对象，用于返回变化类型、应用身份标识和权限名。
+- **[PermissionRequestResult](#permissionrequestresult10)：** 权限申请结果对象，用于返回权限申请后的权限名列表、授权结果和弹窗展示结果。
+- **[Context](#context10)：** 上下文对象，用于发起权限申请或打开权限设置弹窗。
+
+#### [h2]核心类
+
+- **[AtManager](#atmanager)：** 程序访问控制管理类，提供权限校验、权限弹窗申请、设置页授权引导和权限状态监听等能力。
+
+![](./img/zh-cn_image_0000002685927839.png)
+
+#### [h2]API组合使用关系说明
+
+场景1：访问受保护资源前申请授权。
+
+场景说明：应用访问相机、麦克风、位置等受保护资源前，可通过[AtManager](#atmanager)校验权限状态，等待返回授权状态后再判断是否需要请求用户授权。
+
+典型使用流程如下：
+
+```
+import { abilityAccessCtrl, Context, Permissions, bundleManager, common } from '@kit.AbilityKit';
+
+// 1. 创建权限管理实例
+let atManager: abilityAccessCtrl.AtManager = abilityAccessCtrl.createAtManager();
+let bundleInfo: bundleManager.BundleInfo =
+  bundleManager.getBundleInfoForSelfSync(bundleManager.BundleFlag.GET_BUNDLE_INFO_WITH_APPLICATION);
+let tokenID: number = bundleInfo.appInfo.accessTokenId;
+let permissionName: Permissions = 'ohos.permission.CAMERA';
+let context: Context = this.getUIContext().getHostContext() as common.UIAbilityContext;
+
+// 2. 检查目标权限是否已授予
+await atManager.checkAccessToken(tokenID, permissionName);
+
+// 3. 如未授予，则向用户申请权限
+await atManager.requestPermissionsFromUser(context, [permissionName]);
+
+// 4. 申请完成后再次确认当前权限状态
+atManager.getSelfPermissionStatus(permissionName);
+
+// 5. 权限满足后再调用受保护的业务能力
+// call protected API
+```
+ 场景2：引导用户通过设置页授权。
+
+场景说明：当用户已拒绝授权，或当前权限仅允许通过设置页授权时，可先查询当前权限状态，再调用[openPermissionOnSetting](#openpermissiononsetting22)或[requestPermissionOnSetting](#requestpermissiononsetting12)引导用户继续完成授权。
+
+典型使用流程如下：
+
+```
+import { abilityAccessCtrl, Context, Permissions, common } from '@kit.AbilityKit';
+
+// 1. 创建权限管理实例
+let atManager: abilityAccessCtrl.AtManager = abilityAccessCtrl.createAtManager();
+let permissionName: Permissions = 'ohos.permission.CAMERA';
+let context: Context = this.getUIContext().getHostContext() as common.UIAbilityContext;
+
+// 2. 查询当前权限状态
+atManager.getSelfPermissionStatus(permissionName);
+
+// 3. 根据状态引导用户前往设置页
+await atManager.openPermissionOnSetting(context, permissionName);
+
+// 4. 或通过设置授权流程请求权限
+await atManager.requestPermissionOnSetting(context, [permissionName]);
+```
+ 场景3：监听自身权限状态变化。
+
+场景说明：应用需要根据授权变化实时调整界面或业务逻辑时，可使用[on](#on18)订阅自身权限状态变化；不再需要监听时，使用[off](#off18)取消订阅。
+
+典型使用流程如下：
+
+```
+import { abilityAccessCtrl, Permissions } from '@kit.AbilityKit';
+
+// 1. 创建权限管理实例
+let atManager: abilityAccessCtrl.AtManager = abilityAccessCtrl.createAtManager();
+let permissionList: Array<Permissions> = ['ohos.permission.APPROXIMATELY_LOCATION'];
+let callback: (data: abilityAccessCtrl.PermissionStateChangeInfo) => void =
+  (data: abilityAccessCtrl.PermissionStateChangeInfo): void => {
+    console.info('receive permission state change');
+    console.info(`data change: ${data.change}, tokenID: ${data.tokenID}, permission name: ${data.permissionName}`);
+  };
+
+// 2. 订阅指定权限的状态变化
+atManager.on('selfPermissionStateChange', permissionList, callback);
+
+// 3. 不再需要时取消订阅
+atManager.off('selfPermissionStateChange', permissionList, callback);
+```
 
 #### 导入模块
 
@@ -22,7 +131,7 @@ import { abilityAccessCtrl } from '@kit.AbilityKit';
 
 createAtManager(): AtManager
 
-访问控制管理：创建程序访问控制管理的实例对象。
+创建程序访问控制管理实例，用于权限校验、运行时权限申请、设置页授权引导和权限状态变化监听等场景。调用成功后返回AtManager实例，可用于后续的权限管理操作。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -37,18 +146,21 @@ createAtManager(): AtManager
 示例：
 
 ```
+// 创建权限管理实例
 let atManager: abilityAccessCtrl.AtManager = abilityAccessCtrl.createAtManager();
 ```
 
 #### AtManager
 
-管理访问控制模块的实例。
+程序访问控制管理类，提供权限校验、运行时权限弹窗申请、设置页授权引导、全局开关请求和权限状态监听等能力。通过[createAtManager](#abilityaccessctrlcreateatmanager)获取实例。
 
 #### [h2]checkAccessToken9+
 
 checkAccessToken(tokenID: number, permissionName: Permissions): Promise<GrantStatus>
 
-校验应用是否被授予权限。使用Promise异步回调。
+校验应用是否已被授予指定权限。调用成功后，返回当前权限的授权状态，开发者可据此决定直接执行后续业务、继续发起权限申请，或引导用户前往系统设置修改授权状态。使用Promise异步回调。
+
+适用于应用访问相机、麦克风、位置等受保护资源前进行前置权限判断的场景。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -58,14 +170,14 @@ checkAccessToken(tokenID: number, permissionName: Permissions): Promise<GrantSta
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| tokenID | number | 是 | 要校验的目标应用的身份标识，可通过[BundleInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-bundleinfo)中的[ApplicationInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-applicationinfo#applicationinfo-1)的accessTokenId字段获取。本应用的tokenID可通过[bundleManager.getBundleInfoForSelfSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundleinfoforselfsync10)获取。 |
-| permissionName | [Permissions](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permissions) | 是 | 需要校验的权限名称，合法的权限名取值可在[应用权限列表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permissions)中查询。 |
+| tokenID | number | 是 | 要校验的目标应用的身份标识。可通过[bundleManager.getBundleInfoSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundleinfosync14)获取；若校验本应用，也可通过[bundleManager.getBundleInfoForSelfSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundleinfoforselfsync10)获取。该参数必须为大于0的整数，传入0时返回错误码12100001。 |
+| permissionName | [Permissions](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permissions) | 是 | 需要校验的权限名称。权限名长度不能超过256个字符，传入无效值时返回错误码12100001。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象。返回授权状态结果。 |
+| Promise | Promise对象，返回授权状态结果。 |
 
 错误码：
 
@@ -82,10 +194,15 @@ checkAccessToken(tokenID: number, permissionName: Permissions): Promise<GrantSta
 import { abilityAccessCtrl, Permissions, bundleManager } from '@kit.AbilityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
+// 创建权限管理器实例
 let atManager: abilityAccessCtrl.AtManager = abilityAccessCtrl.createAtManager();
+// 获取应用的bundleInfo信息
 let bundleInfo = bundleManager.getBundleInfoForSelfSync(bundleManager.BundleFlag.GET_BUNDLE_INFO_WITH_APPLICATION);
+// 获取应用的TokenID
 let tokenID: number = bundleInfo.appInfo.accessTokenId;
+// 设置需要校验的权限名
 let permissionName: Permissions = 'ohos.permission.GRANT_SENSITIVE_PERMISSIONS';
+// 校验应用是否被授予权限
 atManager.checkAccessToken(tokenID, permissionName).then((data: abilityAccessCtrl.GrantStatus) => {
   console.info(`checkAccessToken success, result: ${data}`);
 }).catch((err: BusinessError): void => {
@@ -97,7 +214,11 @@ atManager.checkAccessToken(tokenID, permissionName).then((data: abilityAccessCtr
 
 checkAccessTokenSync(tokenID: number, permissionName: Permissions): GrantStatus
 
-校验应用是否被授予权限，同步返回结果。
+校验应用是否已被授予指定权限，同步返回该权限的授权状态。开发者可据此决定直接执行后续业务流程，或继续发起权限申请，或引导用户前往设置页修改授权状态。
+
+与[checkAccessToken](#checkaccesstoken9)相比，本接口同步返回授权状态，适用于无需异步处理的权限校验场景。
+
+适用于应用访问相机、麦克风、位置等受保护资源前进行前置权限判断的场景。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -107,8 +228,8 @@ checkAccessTokenSync(tokenID: number, permissionName: Permissions): GrantStatus
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| tokenID | number | 是 | 要校验的目标应用的身份标识，可通过[BundleInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-bundleinfo)中的[ApplicationInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-applicationinfo#applicationinfo-1)的accessTokenId字段获取。本应用的tokenID可通过[bundleManager.getBundleInfoForSelfSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundleinfoforselfsync10)获取。 |
-| permissionName | [Permissions](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permissions) | 是 | 需要校验的权限名称，合法的权限名取值可在[应用权限列表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permissions)中查询。 |
+| tokenID | number | 是 | 要校验的目标应用的身份标识。可通过[bundleManager.getBundleInfoSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundleinfosync14)获取；若校验本应用，也可通过[bundleManager.getBundleInfoForSelfSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundleinfoforselfsync10)获取。该参数必须为大于0的整数，传入0时返回错误码12100001。 |
+| permissionName | [Permissions](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permissions) | 是 | 需要校验的权限名称。权限名长度不能超过256个字符，传入无效值时返回错误码12100001。 |
 
 返回值：
 
@@ -130,10 +251,15 @@ checkAccessTokenSync(tokenID: number, permissionName: Permissions): GrantStatus
 ```
 import { abilityAccessCtrl, Permissions, bundleManager } from '@kit.AbilityKit';
 
+// 创建权限管理器实例
 let atManager: abilityAccessCtrl.AtManager = abilityAccessCtrl.createAtManager();
+// 获取应用的bundleInfo信息
 let bundleInfo = bundleManager.getBundleInfoForSelfSync(bundleManager.BundleFlag.GET_BUNDLE_INFO_WITH_APPLICATION);
+// 获取应用的TokenID
 let tokenID: number = bundleInfo.appInfo.accessTokenId;
+// 设置需要校验的权限名
 let permissionName: Permissions = 'ohos.permission.GRANT_SENSITIVE_PERMISSIONS';
+// 同步校验应用是否被授予权限
 let data: abilityAccessCtrl.GrantStatus = atManager.checkAccessTokenSync(tokenID, permissionName);
 console.info(`Result: ${data}`);
 ```
@@ -142,7 +268,7 @@ console.info(`Result: ${data}`);
 
 on(type: 'selfPermissionStateChange', permissionList: Array<Permissions>, callback: Callback<PermissionStateChangeInfo>): void
 
-订阅本应用的指定权限列表的权限授权状态变化事件。当本应用对应权限的授权状态发生变化时，触发对应回调函数的执行。使用callback异步回调。
+订阅本应用的指定权限列表的权限授权状态变化事件，使用callback异步回调。可在需要根据权限状态实时更新UI或业务逻辑、监听用户授权行为等场景中使用。不再需要监听时，调用[off](#off18)取消订阅。
 
 - 多次调用本订阅接口时，如果订阅的权限列表相同，callback不同，允许订阅成功。
 - 多次调用本订阅接口时，如果订阅的权限列表间有相同的子集，callback相同时，订阅失败。
@@ -151,6 +277,8 @@ on(type: 'selfPermissionStateChange', permissionList: Array<Permissions>, callba
 
 - 用户主动撤销：系统会终止对应应用进程。
 - 系统主动回收：应用进程不会终止。典型场景如安全控件的单次授权，在授权周期结束后由系统自动回收。
+
+该接口通常与[off](#off18)配套使用，当不再需要监听时应调用off取消订阅。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -161,7 +289,7 @@ on(type: 'selfPermissionStateChange', permissionList: Array<Permissions>, callba
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 订阅事件类型，固定为'selfPermissionStateChange'，自身权限状态变更事件。 |
-| permissionList | Array | 是 | 订阅的权限名列表，如果为空，则表示订阅所有的权限状态变化，合法的权限名取值可在[应用权限列表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permissions)中查询。 |
+| permissionList | Array | 是 | 订阅的权限名列表，如果为空，则表示订阅所有的权限状态变化。 权限列表中的权限名长度不能超过256个字符，当列表中所有权限名均无效时返回错误码12100001。 该数组长度不能超过1024，超出限制时返回错误码12100001。 |
 | callback | Callback | 是 | 回调函数。订阅指定权限名状态变更事件的回调。 |
 
 错误码：
@@ -180,16 +308,21 @@ on(type: 'selfPermissionStateChange', permissionList: Array<Permissions>, callba
 
 ```
 import { abilityAccessCtrl, Permissions } from '@kit.AbilityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
+  // 创建权限管理实例
   let atManager: abilityAccessCtrl.AtManager = abilityAccessCtrl.createAtManager();
+  // 设置需要订阅的权限列表
   let permissionList: Array<Permissions> = ['ohos.permission.APPROXIMATELY_LOCATION'];
+  // 订阅权限状态变化
   atManager.on('selfPermissionStateChange', permissionList, (data: abilityAccessCtrl.PermissionStateChangeInfo) => {
     console.info('receive permission state change');
     console.info(`data change: ${data.change}, tokenID: ${data.tokenID}, permission name: ${data.permissionName}`);
   });
-} catch(err) {
-  console.error(`Code: ${err.code}, message: ${err.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -197,9 +330,13 @@ try {
 
 off(type: 'selfPermissionStateChange', permissionList: Array<Permissions>, callback?: Callback<PermissionStateChangeInfo>): void
 
-取消订阅自身指定权限列表的权限状态变更事件。使用callback异步回调。
+取消订阅自身指定权限列表的权限状态变更事件。取消订阅成功后，将不再接收指定权限列表的状态变化通知。
 
-取消订阅不传callback时，批量删除permissionList下面的所有callback。
+在无需继续监听权限变化、应用退出或切换页面等场景下，可调用该接口取消订阅。
+
+当不传入callback参数时，将批量删除与permissionList相关联的所有回调函数。
+
+该接口通常与[on](#on18)配套使用，用于取消通过on创建的监听关系。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -209,9 +346,9 @@ off(type: 'selfPermissionStateChange', permissionList: Array<Permissions>, callb
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 订阅事件类型，固定为'selfPermissionStateChange'，权限状态变更事件。 |
-| permissionList | Array | 是 | 取消订阅的权限名列表，为空时表示取消订阅所有的权限状态变化，必须与[on](#on18)的输入一致，合法的权限名取值可在[应用权限列表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permissions)中查询。 |
-| callback | Callback | 否 | 回调函数。取消订阅指定tokenID与指定权限名状态变更事件的回调。 |
+| type | string | 是 | 取消订阅事件类型，固定为'selfPermissionStateChange'，权限状态变更事件。 |
+| permissionList | Array | 是 | 取消订阅的权限名列表，为空时表示取消订阅所有的权限状态变化，必须与[on](#on18)订阅时的权限列表匹配（不区分顺序）。 |
+| callback | Callback | 否 | 回调函数。取消订阅指定权限名状态变更事件的回调。不传入此参数时，将批量删除与permissionList相关联的所有回调函数。 |
 
 错误码：
 
@@ -227,13 +364,18 @@ off(type: 'selfPermissionStateChange', permissionList: Array<Permissions>, callb
 
 ```
 import { abilityAccessCtrl, Permissions } from '@kit.AbilityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
+  // 创建权限管理实例
   let atManager: abilityAccessCtrl.AtManager = abilityAccessCtrl.createAtManager();
+  // 设置需要取消订阅的权限列表
   let permissionList: Array<Permissions> = ['ohos.permission.APPROXIMATELY_LOCATION'];
+  // 取消订阅权限状态变化
   atManager.off('selfPermissionStateChange', permissionList);
-} catch(err) {
-  console.error(`Code: ${err.code}, message: ${err.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -241,11 +383,13 @@ try {
 
 requestPermissionsFromUser(context: Context, permissionList: Array<Permissions>, requestCallback: AsyncCallback<PermissionRequestResult>): void
 
-用于UIAbility/UIExtensionAbility拉起弹框请求[用户授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)。使用callback异步回调。
+用于UIAbility/UIExtensionAbility拉起弹窗请求[用户授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)，返回本次请求权限的授权结果。使用callback异步回调。
 
-如果用户拒绝授权，将无法再次拉起弹框，需要用户在系统应用“设置”的界面中，手动授予权限，或是调用[requestPermissionOnSetting](#requestpermissiononsetting12)，拉起权限设置弹框，引导用户授权。
+适用于应用首次访问受保护资源前主动向用户申请 [user_grant](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview#user_grant用户授权) 权限的场景。
 
-![](./img/zh-cn_image_0000002631412936.png)
+如果用户拒绝授权，将无法通过此接口再次拉起授权弹窗。开发者可引导用户前往系统设置界面手动授权，或调用[requestPermissionOnSetting](#requestpermissiononsetting12)拉起权限设置弹窗，引导用户完成授权。
+
+![](./img/zh-cn_image_0000002656008160.png)
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -257,9 +401,9 @@ requestPermissionsFromUser(context: Context, permissionList: Array<Permissions>,
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 请求权限的UIAbility/UIExtensionAbility的Context。 |
-| permissionList | Array | 是 | 权限名列表，合法的权限名取值可在[应用权限列表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permissions)中查询。 |
-| requestCallback | AsyncCallback | 是 | 回调函数。当拉起权限请求弹框成功，err为undefined，data为获取到的PermissionRequestResult；否则err为错误对象。 |
+| context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 请求权限的UIAbility/UIExtensionAbility的Context。若传入其他应用、无效页面或非Stage模型的Context，接口可能报错或无法拉起弹窗。 |
+| permissionList | Array | 是 | 权限名列表。该数组不能为空，建议仅传入当前业务场景必要的敏感权限，避免一次申请过多权限。权限名长度不能超过256个字符。 |
+| requestCallback | AsyncCallback | 是 | 回调函数。调用完成后通过err返回错误信息，通过data返回权限请求结果对象。开发者可根据权限请求结果判断用户是否授权、是否展示过弹窗以及失败原因。 |
 
 错误码：
 
@@ -281,9 +425,11 @@ requestPermissionsFromUser(context: Context, permissionList: Array<Permissions>,
 import { abilityAccessCtrl, Context, PermissionRequestResult, common } from '@kit.AbilityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
+// 创建权限管理器实例
 let atManager: abilityAccessCtrl.AtManager = abilityAccessCtrl.createAtManager();
 // 请在组件内获取context
 let context: Context = this.getUIContext().getHostContext() as common.UIAbilityContext;
+// 请求用户授权
 atManager.requestPermissionsFromUser(context, ['ohos.permission.CAMERA'], (err: BusinessError, data: PermissionRequestResult) => {
   if (err) {
     console.error(`requestPermissionsFromUser fail, code: ${err.code}, message: ${err.message}`);
@@ -301,9 +447,11 @@ atManager.requestPermissionsFromUser(context, ['ohos.permission.CAMERA'], (err: 
 
 requestPermissionsFromUser(context: Context, permissionList: Array<Permissions>): Promise<PermissionRequestResult>
 
-用于UIAbility/UIExtensionAbility拉起弹框请求[用户授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)。使用Promise异步回调。
+用于UIAbility/UIExtensionAbility拉起弹窗请求[用户授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)，返回本次请求权限的授权结果。使用Promise异步回调。
 
-如果用户拒绝授权，将无法再次拉起弹框，需要用户在系统应用“设置”的界面中，手动授予权限，或是调用[requestPermissionOnSetting](#requestpermissiononsetting12)，拉起权限设置弹框，引导用户授权。
+适用于应用首次访问受保护资源前主动向用户申请user_grant权限的场景。
+
+如果用户拒绝授权，将无法通过此接口再次拉起授权弹窗。开发者可引导用户前往系统设置界面手动授权，或调用[requestPermissionOnSetting](#requestpermissiononsetting12)拉起权限设置弹窗，引导用户完成授权。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -315,14 +463,14 @@ requestPermissionsFromUser(context: Context, permissionList: Array<Permissions>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 请求权限的UIAbility/UIExtensionAbility的Context。 |
-| permissionList | Array | 是 | 权限名列表，合法的权限名取值可在[应用权限列表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permissions)中查询。 |
+| context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 请求权限的UIAbility/UIExtensionAbility的Context。若传入其他应用、无效页面或非Stage模型的Context，接口可能报错或无法拉起弹窗。 |
+| permissionList | Array | 是 | 权限名列表。该数组不能为空，建议仅传入当前业务场景必要的敏感权限，避免一次申请过多权限。权限名长度不能超过256个字符。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象。返回接口的结果。 |
+| Promise | Promise对象，返回权限请求结果对象，包含权限数组、每个权限的授权结果、是否展示弹窗以及失败原因等信息。 |
 
 错误码：
 
@@ -344,9 +492,11 @@ requestPermissionsFromUser(context: Context, permissionList: Array<Permissions>)
 import { abilityAccessCtrl, Context, PermissionRequestResult, common } from '@kit.AbilityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
+// 创建权限管理器实例
 let atManager: abilityAccessCtrl.AtManager = abilityAccessCtrl.createAtManager();
 // 请在组件内获取context
 let context: Context = this.getUIContext().getHostContext() as common.UIAbilityContext;
+// 请求用户授权
 atManager.requestPermissionsFromUser(context, ['ohos.permission.CAMERA']).then((data: PermissionRequestResult) => {
   console.info(`requestPermissionsFromUser success, result: ${data}`);
   console.info('requestPermissionsFromUser data permissions:' + data.permissions);
@@ -362,11 +512,13 @@ atManager.requestPermissionsFromUser(context, ['ohos.permission.CAMERA']).then((
 
 requestPermissionOnSetting(context: Context, permissionList: Array<Permissions>): Promise<Array<GrantStatus>>
 
-用于[UIAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#uiability)/[UIExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiextensionability#uiextensionability)二次拉起权限设置弹框。使用Promise异步回调。
+用于[UIAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#uiability)/[UIExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiextensionability#uiextensionability)二次拉起权限设置弹窗，返回授权状态数组。使用Promise异步回调。
 
-在调用此接口前，应用需要先调用[requestPermissionsFromUser](#requestpermissionsfromuser9)，如果用户在首次弹窗授权时已授权，调用当前接口将无法拉起弹窗。
+适用于用户在首次弹窗中已拒绝过该权限授予，需要通过设置页面继续申请权限的场景。
 
-![](./img/zh-cn_image_0000002661732169.png)
+在调用此接口前，应用需要先调用[requestPermissionsFromUser](#requestpermissionsfromuser9)。如果用户已在首次弹窗中授权，则调用当前接口不会拉起授权弹窗。
+
+![](./img/zh-cn_image_0000002655848240.png)
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -378,14 +530,14 @@ requestPermissionOnSetting(context: Context, permissionList: Array<Permissions>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 请求权限的UIAbility/UIExtensionAbility的Context。 |
-| permissionList | Array | 是 | 权限名列表，合法的权限名取值可在[应用权限组列表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-group-list)中查询。 |
+| context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 请求权限的UIAbility/UIExtensionAbility的Context。若传入其他应用、无效页面或非Stage模型的Context，接口可能报错或无法拉起弹窗。 |
+| permissionList | Array | 是 | 权限名列表。该数组不能为空，仅支持传入已声明且用户已撤销授权的user_grant权限，且传入权限需属于同一[权限组](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-group-list)。权限名长度不能超过256个字符。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise> | Promise对象。返回授权状态结果。 |
+| Promise> | Promise对象，返回授权状态数组，数组中每个元素对应permissionList中相应权限的授权结果。 |
 
 错误码：
 
@@ -407,9 +559,11 @@ requestPermissionOnSetting(context: Context, permissionList: Array<Permissions>)
 import { abilityAccessCtrl, Context, common } from '@kit.AbilityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
+// 创建权限管理器实例
 let atManager: abilityAccessCtrl.AtManager = abilityAccessCtrl.createAtManager();
 // 请在组件内获取context
 let context: Context = this.getUIContext().getHostContext() as common.UIAbilityContext;
+// 拉起权限设置弹窗
 atManager.requestPermissionOnSetting(context, ['ohos.permission.CAMERA']).then((data: Array<abilityAccessCtrl.GrantStatus>) => {
   console.info(`requestPermissionOnSetting success, result: ${data}`);
 }).catch((err: BusinessError): void => {
@@ -421,11 +575,13 @@ atManager.requestPermissionOnSetting(context, ['ohos.permission.CAMERA']).then((
 
 requestGlobalSwitch(context: Context, type: SwitchType): Promise<boolean>
 
-用于UIAbility/UIExtensionAbility拉起全局开关设置弹框。使用Promise异步回调。
+用于UIAbility/UIExtensionAbility拉起全局开关设置弹窗。调用成功后，若全局开关处于关闭状态，则弹出全局开关设置界面供用户操作；若全局开关已开启，则不拉起弹窗并返回true。使用Promise异步回调。
 
-在某些情况下，如果录音、拍照等功能被禁用，应用可拉起此弹框请求用户同意开启对应功能。如果当前全局开关的状态为开启，则不拉起弹框。
+适用于依赖系统级全局开关（如相机、麦克风、定位）开启的场景。
 
-![](./img/zh-cn_image_0000002631253048.png)
+当应用需要使用相机、麦克风或定位等需要全局开关管控的功能时，如果对应的全局开关被关闭，应用可拉起此弹窗请求用户开启对应功能。如果当前全局开关的状态为开启，则不拉起弹窗。
+
+![](./img/zh-cn_image_0000002686087669.png)
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -437,14 +593,14 @@ requestGlobalSwitch(context: Context, type: SwitchType): Promise<boolean>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 请求权限的UIAbility/UIExtensionAbility的Context。 |
-| type | [SwitchType](#switchtype12) | 是 | 全局开关类型。 |
+| context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 请求全局开关的UIAbility/UIExtensionAbility的Context。若传入其他应用、无效页面或非Stage模型的Context，接口可能报错或无法拉起弹窗。 |
+| type | [SwitchType](#switchtype12) | 是 | 指定需要请求开启的全局开关类型。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象。返回true，表示全局开关状态为开启。返回false，表示全局开关状态为关闭。 |
+| Promise | Promise对象。返回true表示当前全局开关处于开启状态；返回false表示当前全局开关仍处于关闭状态。 |
 
 错误码：
 
@@ -465,10 +621,12 @@ requestGlobalSwitch(context: Context, type: SwitchType): Promise<boolean>
 import { abilityAccessCtrl, Context, common } from '@kit.AbilityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
+// 创建权限管理器实例
 let atManager: abilityAccessCtrl.AtManager = abilityAccessCtrl.createAtManager();
 // 请在组件内获取context
 let context: Context = this.getUIContext().getHostContext() as common.UIAbilityContext;
-atManager.requestGlobalSwitch(context, abilityAccessCtrl.SwitchType.CAMERA).then((data: Boolean) => {
+// 拉起全局开关设置弹窗
+atManager.requestGlobalSwitch(context, abilityAccessCtrl.SwitchType.CAMERA).then((data: boolean) => {
   console.info(`requestGlobalSwitch success, result: ${data}`);
 }).catch((err: BusinessError): void => {
   console.error(`requestGlobalSwitch fail, code: ${err.code}, message: ${err.message}`);
@@ -479,7 +637,9 @@ atManager.requestGlobalSwitch(context, abilityAccessCtrl.SwitchType.CAMERA).then
 
 getSelfPermissionStatus(permissionName: Permissions): PermissionStatus
 
-查询应用权限状态，同步返回结果。
+查询当前应用的权限状态，同步返回结果。调用成功后，返回当前权限的状态。与[checkAccessToken](#checkaccesstoken9)不同，本接口无需传入应用身份标识，仅用于查询当前应用自身权限状态。
+
+适用于在判断是否需要请求权限前、权限申请后确认授权结果、或监听到权限状态变化后重新查询等场景。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -489,7 +649,7 @@ getSelfPermissionStatus(permissionName: Permissions): PermissionStatus
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| permissionName | [Permissions](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permissions) | 是 | 需要校验的权限名称，合法的权限名取值可在[应用权限列表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permissions)中查询。 |
+| permissionName | [Permissions](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permissions) | 是 | 需要查询状态的权限名称。权限名不能为空，且长度不能超过256个字符，传入无效值时返回错误码12100001。 |
 
 返回值：
 
@@ -512,12 +672,15 @@ getSelfPermissionStatus(permissionName: Permissions): PermissionStatus
 import { abilityAccessCtrl } from '@kit.AbilityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
+// 创建权限管理实例
 let atManager: abilityAccessCtrl.AtManager = abilityAccessCtrl.createAtManager();
 try {
+  // 查询当前应用的权限状态
   let data: abilityAccessCtrl.PermissionStatus = atManager.getSelfPermissionStatus('ohos.permission.CAMERA');
   console.info(`getSelfPermissionStatus success, result: ${data}`);
-} catch(err) {
-  console.error(`getSelfPermissionStatus fail, code: ${err.code}, message: ${err.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`getSelfPermissionStatus fail, code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -525,7 +688,9 @@ try {
 
 openPermissionOnSetting(context: Context, permission: Permissions): Promise<SelectedResult>
 
-用于[UIAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#uiability)/[UIExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiextensionability#uiextensionability)拉起跳转设置页的弹窗。使用Promise异步回调。
+用于[UIAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#uiability)/[UIExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiextensionability#uiextensionability)拉起权限设置页面。调用成功后会打开权限设置页面，用户在页面中操作后，返回用户在设置页面中的选择结果。使用Promise异步回调。
+
+适用于 [manual_settings](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview#manual_settings手动设置授权) 类型权限无法通过普通授权弹窗申请、必须引导用户进入系统设置完成授权的场景。manual_settings类型权限是指只能由用户在系统设置中手动开启的权限，无法通过普通授权弹窗直接申请。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -535,14 +700,14 @@ openPermissionOnSetting(context: Context, permission: Permissions): Promise<Sele
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 请求权限的UIAbility/UIExtensionAbility的Context。 |
-| permission | [Permissions](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permissions) | 是 | 权限名，只支持授权方式为[manual_settings](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview#manual_settings手动设置授权)类型的权限。 |
+| context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 请求权限的UIAbility/UIExtensionAbility的Context。若传入其他应用、无效页面或非Stage模型的Context，接口可能报错或无法打开设置页面。 |
+| permission | [Permissions](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permissions) | 是 | 需要跳转设置页处理的权限名。权限名长度不能超过256个字符。传入无效或未在module.json中声明的权限时返回错误码12100001；仅支持授权方式为[manual_settings](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview#manual_settings手动设置授权)类型的权限，传入其他类型权限时返回错误码12100014。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象。返回跳转设置页弹窗结果。 |
+| Promise | Promise对象，返回用户在设置页面中的选择结果。 |
 
 错误码：
 
@@ -562,9 +727,11 @@ openPermissionOnSetting(context: Context, permission: Permissions): Promise<Sele
 import { abilityAccessCtrl, Context, common } from '@kit.AbilityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
+// 创建权限管理器实例
 let atManager: abilityAccessCtrl.AtManager = abilityAccessCtrl.createAtManager();
 // 请在组件内获取context
 let context: Context = this.getUIContext().getHostContext() as common.UIAbilityContext;
+// 拉起跳转设置页弹窗
 atManager.openPermissionOnSetting(context, 'ohos.permission.HOOK_KEY_EVENT').then((data: abilityAccessCtrl.SelectedResult) => {
   console.info(`openPermissionOnSetting success, result: ${data}`);
 }).catch((err: BusinessError): void => {
@@ -576,7 +743,11 @@ atManager.openPermissionOnSetting(context, 'ohos.permission.HOOK_KEY_EVENT').the
 
 verifyAccessTokenSync(tokenID: number, permissionName: Permissions): GrantStatus
 
-校验应用是否被授予权限，同步返回结果。
+校验应用是否已被授予指定权限，同步返回该权限的授权状态。开发者可据此决定直接执行后续业务流程，或继续发起权限申请，或引导用户前往系统设置修改授权状态。
+
+适用于应用访问相机、麦克风、位置等受保护资源前进行前置权限判断的场景。
+
+建议使用[checkAccessTokenSync](#checkaccesstokensync10)替代。
 
 系统能力： SystemCapability.Security.AccessToken
 
@@ -584,8 +755,8 @@ verifyAccessTokenSync(tokenID: number, permissionName: Permissions): GrantStatus
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| tokenID | number | 是 | 要校验的目标应用的身份标识，可通过[BundleInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-bundleinfo)中的[ApplicationInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-applicationinfo#applicationinfo-1)的accessTokenId字段获取。本应用的tokenID可通过[bundleManager.getBundleInfoForSelfSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundleinfoforselfsync10)获取。 |
-| permissionName | [Permissions](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permissions) | 是 | 需要校验的权限名称，合法的权限名取值可在[应用权限列表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permissions)中查询。 |
+| tokenID | number | 是 | 要校验的目标应用的身份标识。可通过[bundleManager.getBundleInfoSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundleinfosync14)获取；若校验本应用，也可通过[bundleManager.getBundleInfoForSelfSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundleinfoforselfsync10)获取。该参数必须为大于0的整数，传入0时返回错误码12100001。 |
+| permissionName | [Permissions](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permissions) | 是 | 需要校验的权限名称。权限名长度不能超过256个字符，传入无效值时返回错误码12100001。 |
 
 返回值：
 
@@ -606,16 +777,23 @@ verifyAccessTokenSync(tokenID: number, permissionName: Permissions): GrantStatus
 
 ```
 import { abilityAccessCtrl, Permissions, bundleManager } from '@kit.AbilityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
 
+// 创建权限管理器实例
 let atManager: abilityAccessCtrl.AtManager = abilityAccessCtrl.createAtManager();
+// 获取应用的bundleInfo信息
 let bundleInfo = bundleManager.getBundleInfoForSelfSync(bundleManager.BundleFlag.GET_BUNDLE_INFO_WITH_APPLICATION);
+// 获取应用的TokenID
 let tokenID: number = bundleInfo.appInfo.accessTokenId;
 try {
+  // 设置需要校验的权限名
   let permissionName: Permissions = 'ohos.permission.GRANT_SENSITIVE_PERMISSIONS';
+  // 同步校验应用是否被授予权限
   let data: abilityAccessCtrl.GrantStatus = atManager.verifyAccessTokenSync(tokenID, permissionName);
   console.info(`verifyAccessTokenSync success, result: ${data}`);
-} catch(err) {
-  console.error(`verifyAccessTokenSync fail, code: ${err.code}, message: ${err.message}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`verifyAccessTokenSync fail, code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -623,7 +801,9 @@ try {
 
 verifyAccessToken(tokenID: number, permissionName: Permissions): Promise<GrantStatus>
 
-校验应用是否被授予权限。使用Promise异步回调。
+校验应用是否已被授予指定权限，调用成功后，返回当前权限的授权状态，开发者可据此决定直接执行后续业务、继续发起权限申请，或引导用户前往系统设置修改授权状态。使用Promise异步回调。
+
+适用于应用访问受保护资源前进行前置权限判断的场景。
 
 ![](./img/note_3.0-zh-cn.png) 建议使用[checkAccessToken](#checkaccesstoken9)替代。
 
@@ -633,14 +813,14 @@ verifyAccessToken(tokenID: number, permissionName: Permissions): Promise<GrantSt
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| tokenID | number | 是 | 要校验的目标应用的身份标识，可通过[BundleInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-bundleinfo)中的[ApplicationInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-applicationinfo#applicationinfo-1)的accessTokenId字段获取。本应用的tokenID可通过[bundleManager.getBundleInfoForSelfSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundleinfoforselfsync10)获取。 |
-| permissionName | [Permissions](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permissions) | 是 | 需要校验的权限名称，合法的权限名取值可在[应用权限列表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permissions)中查询。 |
+| tokenID | number | 是 | 要校验的目标应用的身份标识。可通过[bundleManager.getBundleInfoSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundleinfosync14)获取；若校验本应用，也可通过[bundleManager.getBundleInfoForSelfSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundleinfoforselfsync10)获取。该参数必须为大于0的整数，传入0时返回错误码12100001。 |
+| permissionName | [Permissions](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permissions) | 是 | 需要校验的权限名称。权限名长度不能超过256个字符，传入无效值时返回错误码12100001。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象。返回授权状态结果。 |
+| Promise | Promise对象，返回授权状态结果。 |
 
 示例：
 
@@ -648,10 +828,15 @@ verifyAccessToken(tokenID: number, permissionName: Permissions): Promise<GrantSt
 import { abilityAccessCtrl, Permissions, bundleManager } from '@kit.AbilityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
+// 创建权限管理器实例
 let atManager: abilityAccessCtrl.AtManager = abilityAccessCtrl.createAtManager();
+// 获取应用的bundleInfo信息
 let bundleInfo = bundleManager.getBundleInfoForSelfSync(bundleManager.BundleFlag.GET_BUNDLE_INFO_WITH_APPLICATION);
+// 获取应用的TokenID
 let tokenID: number = bundleInfo.appInfo.accessTokenId;
+// 设置需要校验的权限名
 let permissionName: Permissions = 'ohos.permission.GRANT_SENSITIVE_PERMISSIONS';
+// 校验应用是否被授予权限
 atManager.verifyAccessToken(tokenID, permissionName).then((data: abilityAccessCtrl.GrantStatus) => {
   console.info(`verifyAccessToken success, result: ${data}`);
 }).catch((err: BusinessError): void => {
@@ -663,9 +848,9 @@ atManager.verifyAccessToken(tokenID, permissionName).then((data: abilityAccessCt
 
 verifyAccessToken(tokenID: number, permissionName: string): Promise<GrantStatus>
 
-校验应用是否被授予权限。使用Promise异步回调。
+校验应用是否已被授予指定权限。调用成功后，返回当前权限的授权状态，开发者可据此决定后续操作。使用Promise异步回调。
 
-![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[checkAccessToken](#checkaccesstoken9)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[checkAccessToken](#checkaccesstoken9)替代。
 
 系统能力： SystemCapability.Security.AccessToken
 
@@ -673,14 +858,14 @@ verifyAccessToken(tokenID: number, permissionName: string): Promise<GrantStatus>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| tokenID | number | 是 | 要校验的目标应用的身份标识，可通过[BundleInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-bundleinfo)中的[ApplicationInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-applicationinfo#applicationinfo-1)的accessTokenId字段获取。本应用的tokenID可通过[bundleManager.getBundleInfoForSelfSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundleinfoforselfsync10)获取。 |
-| permissionName | string | 是 | 需要校验的权限名称，合法的权限名取值可在[应用权限列表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permissions)中查询。 |
+| tokenID | number | 是 | 要校验的目标应用的身份标识。可通过[bundleManager.getBundleInfoSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundleinfosync14)获取；若校验本应用，也可通过[bundleManager.getBundleInfoForSelfSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundleinfoforselfsync10)获取。该参数必须为大于0的整数，传入0时返回错误码12100001。 |
+| permissionName | string | 是 | 需要校验的权限名称。权限名长度不能超过256个字符，传入无效值时返回错误码12100001。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象。返回授权状态结果。 |
+| Promise | Promise对象，返回授权状态结果。 |
 
 示例：
 
@@ -688,10 +873,15 @@ verifyAccessToken(tokenID: number, permissionName: string): Promise<GrantStatus>
 import { abilityAccessCtrl, Permissions, bundleManager } from '@kit.AbilityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
+// 创建权限管理器实例
 let atManager: abilityAccessCtrl.AtManager = abilityAccessCtrl.createAtManager();
+// 获取应用的bundleInfo信息
 let bundleInfo = bundleManager.getBundleInfoForSelfSync(bundleManager.BundleFlag.GET_BUNDLE_INFO_WITH_APPLICATION);
+// 获取应用的TokenID
 let tokenID: number = bundleInfo.appInfo.accessTokenId;
+// 设置需要校验的权限名
 let permissionName: Permissions = 'ohos.permission.GRANT_SENSITIVE_PERMISSIONS';
+// 校验应用是否被授予权限
 atManager.verifyAccessToken(tokenID, permissionName).then((data: abilityAccessCtrl.GrantStatus) => {
   console.info(`verifyAccessToken success, result: ${data}`);
 }).catch((err: BusinessError): void => {
@@ -757,7 +947,7 @@ atManager.verifyAccessToken(tokenID, permissionName).then((data: abilityAccessCt
 
 type PermissionRequestResult = _PermissionRequestResult
 
-权限请求结果对象。
+权限请求结果对象，包含申请的权限名列表、每个权限的授权结果、弹窗展示结果及失败原因等信息。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -767,13 +957,13 @@ type PermissionRequestResult = _PermissionRequestResult
 
 | 类型 | 说明 |
 | --- | --- |
-| [_PermissionRequestResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-permissionrequestresult) | 权限请求结果对象。 |
+| [_PermissionRequestResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-permissionrequestresult) | 权限请求结果对象，包含申请的权限名列表、每个权限的授权结果、弹窗展示结果及失败原因等信息。 |
 
 #### Context10+
 
 type Context = _Context
 
-提供了ability或application的上下文的能力，包括访问特定应用程序的资源等。
+提供Ability或Application的上下文，可用于访问应用程序的资源。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -783,7 +973,7 @@ type Context = _Context
 
 | 类型 | 说明 |
 | --- | --- |
-| [_Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 提供了ability或application的上下文的能力，包括访问特定应用程序的资源等。 |
+| [_Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 提供Ability或Application的上下文，可用于访问应用程序的资源。 |
 
 #### PermissionStatus20+
 
@@ -797,7 +987,7 @@ type Context = _Context
 | --- | --- | --- |
 | DENIED | -1 | 表示用户未授权。 |
 | GRANTED | 0 | 表示已授权。 |
-| NOT_DETERMINED | 1 | 表示未操作。应用声明[用户授权权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-all-user)，暂未调用[requestPermissionsFromUser](#requestpermissionsfromuser9)接口请求用户授权时，或用户在设置中将权限状态修改为每次询问时，查询权限状态将返回此值。 |
+| NOT_DETERMINED | 1 | 表示未操作。应用声明[用户授权权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-all-user)但暂未调用[requestPermissionsFromUser](#requestpermissionsfromuser9)接口请求授权，或用户在设置中将权限状态修改为每次询问时，查询权限状态返回此值。 |
 | INVALID | 2 | 表示无效。应用未[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)或当前无法处理。例如：当模糊位置权限的状态为NOT_DETERMINED时，查询精确位置权限状态，返回此值。 |
 | RESTRICTED | 3 | 表示受限。用户未同意隐私声明（仅系统应用会返回此状态）。 |
 

@@ -2,13 +2,13 @@
 title: "TextReader（朗读控件）"
 upstream_id: "harmonyos-references/speech-textreader-api"
 catalog: "harmonyos-references"
-content_hash: "9696a62723a6"
-synced_at: "2026-07-09T01:01:46.027726"
+content_hash: "a47fa1626d35"
+synced_at: "2026-07-28T16:53:16.978813"
 ---
 
 # TextReader（朗读控件）
 
-朗读控件使用AI能力将文本实时转化成语音并进行朗读，适用于一些新闻类文本内容浏览类APP，帮助用户在一些无法直接浏览文本内容的场景下，通过文本朗读来高效获取信息。
+朗读控件使用AI能力将文本实时转化成语音并进行朗读，支持多种语言、音色和语速调节，适用于一些新闻、教育、阅读类文本内容浏览类APP，帮助用户在如驾驶、运动等一些不方便直接浏览文本内容的场景下，通过文本朗读来高效获取信息。支持多种播放模式，如Minibar，播放面板等。
 
 起始版本： 5.0.0(12)
 
@@ -977,7 +977,9 @@ try {
 
 on(type: 'setArticle', callback: Callback<string>): void
 
-注册设置文章回调函数，点击文章或者切换文章时，若目标文章内容为空（bodyInfo值为空）时，触发该回调执行。同一类型监听，注册多个回调函数，仅第一次注册有效。使用callback异步回调。
+注册设置文章回调函数，点击文章或者切换文章时，若目标文章内容为空（bodyInfo值为空）时，触发该回调执行。
+
+说明：同一类型监听，注册多个回调函数，仅第一次注册有效。使用callback异步回调。
 
 元服务API： 从版本5.0.3(15)开始，该接口支持在元服务中使用。
 
@@ -992,7 +994,7 @@ on(type: 'setArticle', callback: Callback<string>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件回调类型，支持的事件为'setArticle'，设置文章后，目标文章内容为空（bodyInfo值为空）时，触发该事件。 |
-| callback | Callback | 是 | 点击文章或者切换文章时，执行的回调函数，参数为文章id，err为undefined，否则为错误对象。 |
+| callback | Callback | 是 | 回调函数，当触发文章点击事件或者文章切换事件时执行，返回结果为文章id。 |
 
 错误码：
 
@@ -1035,7 +1037,7 @@ off(type: 'setArticle', callback?: Callback<string>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件回调类型，支持的事件为'setArticle'，设置文章后，触发该事件。 |
-| callback | Callback | 否 | 需要取消监听的回调函数，需与订阅时传入的回调函数是同一个，若不填，则取消当前应用监听该事件的所有回调函数，err为undefined，否则为错误对象。 |
+| callback | Callback | 否 | 回调函数，取消监听文章点击事件或者文章切换事件，需与订阅时传入的回调函数是同一个，若不填，则取消当前应用监听该事件的所有回调函数。 |
 
 错误码：
 
@@ -1061,7 +1063,9 @@ try {
 
 on(type: 'clickArticle', callback: Callback<string>): void
 
-注册点击事件回调函数，点击标题时，触发该回调执行。同一类型监听，注册多个回调函数，仅第一次注册有效。使用callback异步回调。
+注册点击事件回调函数，点击标题时，触发该回调执行。
+
+说明：同一类型监听，注册多个回调函数，仅第一次注册有效。使用callback异步回调。
 
 元服务API： 从版本5.0.3(15)开始，该接口支持在元服务中使用。
 
@@ -1076,7 +1080,7 @@ on(type: 'clickArticle', callback: Callback<string>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件回调类型，支持的事件为'clickArticle'，点击文章标题，触发回调。 |
-| callback | Callback | 是 | 点击标题时执行的回调函数，参数为文章id，err为undefined，否则为错误对象。 |
+| callback | Callback | 是 | 回调函数，当触发标题点击事件时执行，返回结果为文章id。 |
 
 错误码：
 
@@ -1119,7 +1123,7 @@ off(type: 'clickArticle', callback?: Callback<string>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件回调类型，支持的事件为'clickArticle'，点击文章标题，取消回调。 |
-| callback | Callback | 否 | 需要取消监听的回调函数，需与订阅时传入的回调函数是同一个，若不填，则取消当前应用监听该事件的所有回调函数，err为undefined，否则为错误对象。 |
+| callback | Callback | 否 | 回调函数，取消监听标题点击事件，需与订阅时传入的回调函数是同一个，若不填，则取消当前应用监听该事件的所有回调函数。 |
 
 错误码：
 
@@ -1145,7 +1149,9 @@ try {
 
 on(type: 'clickAuthor', callback: Callback<string>): void
 
-注册点击事件回调函数，点击作者时，触发该回调执行。同一类型监听，注册多个回调函数，仅第一次注册有效。使用callback异步回调。
+注册点击事件回调函数，点击作者时，触发该回调执行。
+
+说明：同一类型监听，注册多个回调函数，仅第一次注册有效。使用callback异步回调。
 
 元服务API： 从版本5.0.3(15)开始，该接口支持在元服务中使用。
 
@@ -1160,7 +1166,7 @@ on(type: 'clickAuthor', callback: Callback<string>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件回调类型，支持的事件为'clickAuthor'，点击作者，触发回调。 |
-| callback | Callback | 是 | 点击作者时执行的回调函数，参数为文章id，err为undefined，否则为错误对象。 |
+| callback | Callback | 是 | 回调函数，当触发点击作者事件时执行，返回结果为文章id。 |
 
 错误码：
 
@@ -1203,7 +1209,7 @@ off(type: 'clickAuthor', callback?: Callback<string>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件回调类型，支持的事件为'clickAuthor'，点击作者事件，取消回调。 |
-| callback | Callback | 否 | 需要取消监听的回调函数，需与订阅时传入的回调函数是同一个，若不填，则取消当前应用监听该事件的所有回调函数，err为undefined，否则为错误对象。 |
+| callback | Callback | 否 | 回调函数，取消监听点击作者事件，需与订阅时传入的回调函数是同一个，若不填，则取消当前应用监听该事件的所有回调函数。 |
 
 错误码：
 
@@ -1229,7 +1235,9 @@ try {
 
 on(type: 'clickNotification', callback: Callback<string>): void
 
-注册点击事件回调函数，通知栏时，触发该回调执行。同一类型监听，注册多个回调函数，仅第一次注册有效。使用callback异步回调。
+注册点击事件回调函数，点击通知栏时，触发该回调执行。
+
+说明：同一类型监听，注册多个回调函数，仅第一次注册有效。使用callback异步回调。
 
 元服务API： 从版本5.0.3(15)开始，该接口支持在元服务中使用。
 
@@ -1244,7 +1252,7 @@ on(type: 'clickNotification', callback: Callback<string>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件回调类型，支持的事件为'clickNotification'，点击通知栏，触发回调。预留参数，暂未支持。 |
-| callback | Callback | 是 | 点击通知栏时执行的回调函数，参数为文章id，err为undefined，否则为错误对象。 |
+| callback | Callback | 是 | 回调函数，当触发通知栏点击事件时执行，返回结果为文章id。 |
 
 错误码：
 
@@ -1287,7 +1295,7 @@ off(type: 'clickNotification', callback?: Callback<string>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件回调类型，支持的事件为'clickNotification'，点击通知栏事件，取消回调。 |
-| callback | Callback | 否 | 需要取消监听的回调函数，需与订阅时传入的回调函数是同一个，若不填，则取消当前应用监听该事件的所有回调函数，err为undefined，否则为错误对象。 |
+| callback | Callback | 否 | 回调函数，取消监听通知栏点击事件，需与订阅时传入的回调函数是同一个，若不填，则取消当前应用监听该事件的所有回调函数。 |
 
 错误码：
 
@@ -1313,7 +1321,9 @@ try {
 
 on(type: 'showPanel', callback: Callback<void>): void
 
-注册拉起播放面板回调函数，拉起播放面板时，触发该回调执行。同一类型监听，注册多个回调函数，仅第一次注册有效。使用callback异步回调。
+注册拉起播放面板回调函数，拉起播放面板时，触发该回调执行。
+
+说明：同一类型监听，注册多个回调函数，仅第一次注册有效。使用callback异步回调。
 
 元服务API： 从版本5.0.3(15)开始，该接口支持在元服务中使用。
 
@@ -1328,7 +1338,7 @@ on(type: 'showPanel', callback: Callback<void>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件回调类型，支持的事件为'showPanel'，拉起面板，触发回调。 |
-| callback | Callback | 是 | 拉起面板时执行的回调函数，err为undefined，否则为错误对象。 |
+| callback | Callback | 是 | 回调函数，当触发拉起面板事件时执行，无返回结果。 |
 
 错误码：
 
@@ -1371,7 +1381,7 @@ off(type: 'showPanel', callback?: Callback<void>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件回调类型，支持的事件为'showPanel'，拉起面板，取消回调。 |
-| callback | Callback | 否 | 需要取消监听的回调函数，需与订阅时传入的回调函数是同一个，若不填，则取消当前应用监听该事件的所有回调函数，err为undefined，否则为错误对象。 |
+| callback | Callback | 否 | 回调函数，取消监听拉起面板事件，需与订阅时传入的回调函数是同一个，若不填，则取消当前应用监听该事件的所有回调函数。 |
 
 错误码：
 
@@ -1398,7 +1408,9 @@ try {
 
 on(type: 'hidePanel', callback: Callback<void>): void
 
-注册收回播放面板回调函数，收回播放面板时，触发该回调执行。同一类型监听，注册多个回调函数，仅第一次注册有效。使用callback异步回调。
+注册收回播放面板回调函数，收回播放面板时，触发该回调执行。
+
+说明：同一类型监听，注册多个回调函数，仅第一次注册有效。使用callback异步回调。
 
 元服务API： 从版本5.0.3(15)开始，该接口支持在元服务中使用。
 
@@ -1413,7 +1425,7 @@ on(type: 'hidePanel', callback: Callback<void>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件回调类型，支持的事件为'hidePanel'，收回面板，触发回调。 |
-| callback | Callback | 是 | 收回面板时执行的回调函数，err为undefined，否则为错误对象。 |
+| callback | Callback | 是 | 回调函数，当触发收回面板事件时执行，无返回结果。 |
 
 错误码：
 
@@ -1456,7 +1468,7 @@ off(type: 'hidePanel', callback?: Callback<void>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件回调类型，支持的事件为'hidePanel'，收起面板，取消回调。 |
-| callback | Callback | 否 | 需要取消监听的回调函数，需与订阅时传入的回调函数是同一个，若不填，则取消当前应用监听该事件的所有回调函数，err为undefined，否则为错误对象。 |
+| callback | Callback | 否 | 回调函数，取消监听收回面板事件，需与订阅时传入的回调函数是同一个，若不填，则取消当前应用监听该事件的所有回调函数。 |
 
 错误码：
 
@@ -1483,7 +1495,9 @@ try {
 
 on(type: 'stop', callback: Callback<void>): void
 
-注册停止回调函数，调用stop时，触发该回调执行。同一类型监听，注册多个回调函数，仅第一次注册有效。使用callback异步回调。
+注册停止回调函数，调用stop时，触发该回调执行。
+
+说明：同一类型监听，注册多个回调函数，仅第一次注册有效。使用callback异步回调。
 
 元服务API： 从版本5.0.3(15)开始，该接口支持在元服务中使用。
 
@@ -1498,7 +1512,7 @@ on(type: 'stop', callback: Callback<void>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件回调类型，支持的事件为'stop'，调用stop接口或用户主动滑动通知栏退出。 |
-| callback | Callback | 是 | 触发stop事件时执行的回调函数，err为undefined，否则为错误对象。 |
+| callback | Callback | 是 | 回调函数，当触发stop事件时执行，无返回结果。 |
 
 错误码：
 
@@ -1541,7 +1555,7 @@ off(type: 'stop', callback?: Callback<void>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件回调类型，支持的事件为'stop'，调用stop接口或用户主动滑动通知栏退出。 |
-| callback | Callback | 否 | 需要取消监听的回调函数，需与订阅时传入的回调函数是同一个，若不填，则取消当前应用监听该事件的所有回调函数，err为undefined，否则为错误对象。 |
+| callback | Callback | 否 | 回调事件，取消监听stop事件，需与订阅时传入的回调函数是同一个，若不填，则取消当前应用监听该事件的所有回调函数。 |
 
 错误码：
 
@@ -1567,7 +1581,9 @@ try {
 
 on(type:'release', callback: Callback<void>): void
 
-注册释放回调函数，调用release时，触发该回调执行。同一类型监听，注册多个回调函数，仅第一次注册有效。使用callback异步回调。
+注册释放回调函数，调用release时，触发该回调执行。
+
+说明：同一类型监听，注册多个回调函数，仅第一次注册有效。使用callback异步回调。
 
 元服务API： 从版本5.0.3(15)开始，该接口支持在元服务中使用。
 
@@ -1582,7 +1598,7 @@ on(type:'release', callback: Callback<void>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件回调类型，支持的事件为'release'，调用release释放资源。 |
-| callback | Callback | 是 | 触发release事件时执行的回调函数，err为undefined，否则为错误对象。 |
+| callback | Callback | 是 | 回调函数，当触发release事件时执行，无返回结果。 |
 
 错误码：
 
@@ -1625,7 +1641,7 @@ off(type: 'release', callback?: Callback<void>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件回调类型，支持的事件为'release'，调用release释放资源。 |
-| callback | Callback | 否 | 需要取消监听的回调函数，需与订阅时传入的回调函数是同一个，若不填，则取消当前应用监听该事件的所有回调函数，err为undefined，否则为错误对象。 |
+| callback | Callback | 否 | 回调函数，取消监听release事件，需与订阅时传入的回调函数是同一个，若不填，则取消当前应用监听该事件的所有回调函数。 |
 
 错误码：
 
@@ -1651,7 +1667,9 @@ try {
 
 on(type: 'stateChange', callback: Callback<ReadState>): void
 
-注册状态变化回调函数，当前正在播放的文章状态变更时，触发该回调执行。同一类型监听，注册多个回调函数，仅第一次注册有效。使用callback异步回调。
+注册状态变化回调函数，当前正在播放的文章状态变更时，触发该回调执行。
+
+说明：同一类型监听，注册多个回调函数，仅第一次注册有效。使用callback异步回调。
 
 元服务API： 从版本5.0.3(15)开始，该接口支持在元服务中使用。
 
@@ -1666,7 +1684,7 @@ on(type: 'stateChange', callback: Callback<ReadState>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件回调类型，支持的事件为'stateChange'，当前正在播放的文章状态变更时，触发该事件。 |
-| callback | Callback | 是 | 正在播放的文章状态变更时，执行的回调函数，err为undefined，否则为错误对象。 |
+| callback | Callback | 是 | 回调函数，当正在播放的文章状态变更时，执行的回调函数，返回结果为ReadState。 |
 
 错误码：
 
@@ -1709,7 +1727,7 @@ off(type: 'stateChange', callback?: Callback<ReadState>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件回调类型，支持的事件为'stateChange'，当前正在播放的文章状态变更时，触发该事件。 |
-| callback | Callback | 否 | 需要取消监听的回调函数，需与订阅时传入的回调函数是同一个，若不填，则取消当前应用监听该事件的所有回调函数，err为undefined，否则为错误对象。 |
+| callback | Callback | 否 | 回调函数，取消监听正在播放的文章状态变更，需与订阅时传入的回调函数是同一个，若不填，则取消当前应用监听该事件的所有回调函数。 |
 
 错误码：
 
@@ -1727,7 +1745,7 @@ import { TextReader } from '@kit.SpeechKit';
 try {
   TextReader.off('stateChange');
 } catch (e) {
-  console.error(`TextReader failed to unset on(type: 'requestMore')eventListener. Code: ${e.code}, message: ${e.message}`);
+  console.error(`TextReader failed to unset stateChange eventListener. Code: ${e.code}, message: ${e.message}`);
 }
 ```
 
@@ -1735,7 +1753,9 @@ try {
 
 on(type: 'requestMore', callback: Callback<void>): void
 
-注册请求更多文章回调函数，拉到播放列表底端或播放到文章最后一篇，触发该回调执行。同一类型监听，注册多个回调函数，仅第一次注册有效。使用callback异步回调。
+注册请求更多文章回调函数，拉到播放列表底端或播放到文章最后一篇，触发该回调执行。
+
+说明：同一类型监听，注册多个回调函数，仅第一次注册有效。使用callback异步回调。
 
 元服务API： 从版本5.0.3(15)开始，该接口支持在元服务中使用。
 
@@ -1750,7 +1770,7 @@ on(type: 'requestMore', callback: Callback<void>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件回调类型，支持的事件为'requestMore'，请求更多文章时，触发该事件监听。 |
-| callback | Callback | 是 | 拉到播放列表底端或播放到文章最后一篇，触发该回调执行，err为undefined，否则为错误对象。 |
+| callback | Callback | 是 | 回调函数，当拉到播放列表底端或播放到文章最后一篇事件触发时执行，无返回结果。 |
 
 错误码：
 
@@ -1778,7 +1798,9 @@ try {
 
 on(type: 'requestMore', callback: Callback<string>): void
 
-注册请求更多文章回调函数，拉到播放列表底端或播放到文章最后一篇，触发该回调执行，返回用户自定义参数。同一类型监听，注册多个回调函数，仅第一次注册有效。使用callback异步回调。
+注册请求更多文章回调函数，拉到播放列表底端或播放到文章最后一篇，触发该回调执行，返回用户自定义参数。
+
+说明：同一类型监听，注册多个回调函数，仅第一次注册有效。使用callback异步回调。
 
 元服务API： 从版本5.0.3(15)开始，该接口支持在元服务中使用。
 
@@ -1793,7 +1815,7 @@ on(type: 'requestMore', callback: Callback<string>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件回调类型，支持的事件为'requestMore'，拉到播放列表底端请求更多文章时，触发该事件监听。 |
-| callback | Callback | 是 | 拉到播放列表底端或播放到文章最后一篇，触发该回调执行。返回的自定义参数在[StartParams](#startparams)的callbackParam属性配置，err为undefined，否则为错误对象。 |
+| callback | Callback | 是 | 回调函数，当拉到播放列表底端或播放到文章最后一篇事件触发时执行，返回结果为[StartParams.callbackParam](#startparams)中配置的自定义参数字符串。 |
 
 错误码：
 
@@ -1834,7 +1856,7 @@ off(type: 'requestMore', callback?: Callback<void>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件回调类型，支持的事件为'requestMore'，请求更多文章时，触发该事件监听。 |
-| callback | Callback | 否 | 需要取消监听的回调函数，需与订阅时传入的回调函数是同一个，若不填，则取消当前应用监听该事件的所有回调函数，err为undefined，否则为错误对象。 |
+| callback | Callback | 否 | 回调函数，取消监听拉到播放列表底端或播放到文章最后一篇事件，需与订阅时传入的回调函数是同一个，若不填，则取消当前应用监听该事件的所有回调函数。 |
 
 错误码：
 
@@ -1875,7 +1897,7 @@ off(type: 'requestMore', callback: Callback<string>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件回调类型，支持的事件为'requestMore'，请求更多文章时，触发该事件监听。 |
-| callback | Callback | 是 | 需要取消监听的回调函数，需与订阅时传入的回调函数是同一个，err为undefined，否则为错误对象。 |
+| callback | Callback | 是 | 回调函数，取消监听拉到播放列表底端或播放到文章最后一篇事件，需与订阅时传入的回调函数是同一个。 |
 
 错误码：
 
@@ -1903,7 +1925,9 @@ try {
 
 on(type: 'eventNotification' , callback: Callback<NotificationEvent>): void
 
-注册播控中心状态回调函数，播控中心状态发生变化时，触发该回调执行。同一类型监听，注册多个回调函数，仅第一次注册有效。使用callback异步回调。
+注册播控中心状态回调函数，播控中心状态发生变化时，触发该回调执行。
+
+说明：同一类型监听，注册多个回调函数，仅第一次注册有效。使用callback异步回调。
 
 元服务API： 从版本5.0.3(15)开始，该接口支持在元服务中使用。
 
@@ -1918,7 +1942,7 @@ on(type: 'eventNotification' , callback: Callback<NotificationEvent>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件回调类型，支持的事件为'eventNotification'，播控中心状态变化，触发该事件。 |
-| callback | Callback | 是 | 播控中心状态发生变化时，触发该回调执行，err为undefined，否则为错误对象。 |
+| callback | Callback | 是 | 回调函数，当播控中心状态发生变化时执行，返回结果为NotificationEvent。 |
 
 错误码：
 
@@ -1961,7 +1985,7 @@ off(type: 'eventNotification', callback?: Callback<NotificationEvent>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件回调类型。事件回调类型，支持的事件为'eventNotification'，注销该事件。 |
-| callback | Callback | 否 | 需要取消监听的回调函数，需与订阅时传入的回调函数是同一个，若不填，则取消当前应用监听该事件的所有回调函数，err为undefined，否则为错误对象。 |
+| callback | Callback | 否 | 回调函数，取消监听播控中心状态变化事件，需与订阅时传入的回调函数是同一个，若不填，则取消当前应用监听该事件的所有回调函数。 |
 
 错误码：
 
@@ -1987,7 +2011,9 @@ try {
 
 on(type: 'eventPanel', callback: Callback<PanelEvent>): void
 
-注册播放面板状态回调函数，播放面板状态发生变化时，触发该回调执行。同一类型监听，注册多个回调函数，仅第一次注册有效。使用callback异步回调。
+注册播放面板状态回调函数，播放面板状态发生变化时，触发该回调执行。
+
+说明：同一类型监听，注册多个回调函数，仅第一次注册有效。使用callback异步回调。
 
 元服务API： 从版本5.0.3(15)开始，该接口支持在元服务中使用。
 
@@ -2002,7 +2028,7 @@ on(type: 'eventPanel', callback: Callback<PanelEvent>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件回调类型，支持的事件为'eventPanel'，播放面板状态变化，其中[PanelEvent](#panelevent)中的BPC_10 click事件回调只支持手机。 |
-| callback | Callback | 是 | 播放面板状态发生变化时，触发该回调执行，err为undefined，否则为错误对象。 |
+| callback | Callback | 是 | 回调函数，当播放面板状态发生变化时执行，返回结果为PanelEvent。 |
 
 错误码：
 
@@ -2045,7 +2071,7 @@ off(type: 'eventPanel', callback?: Callback<PanelEvent>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件回调类型，支持的事件为'eventPanel'，播放面板状态变化。 |
-| callback | Callback | 否 | 需要取消监听的回调函数，需与订阅时传入的回调函数是同一个，若不填，则取消当前应用监听该事件的所有回调函数，err为undefined，否则为错误对象。 |
+| callback | Callback | 否 | 回调函数，取消监听面板状态变化事件，需与订阅时传入的回调函数是同一个，若不填，则取消当前应用监听该事件的所有回调函数。 |
 
 错误码：
 
@@ -2072,7 +2098,9 @@ try {
 
 on(type: 'eventReadList', callback: Callback<Array<ListEventState>>): void
 
-注册播报列表相关事件监听，点击播报列表图标时，触发该回调执行。同一类型监听，注册多个回调函数，仅第一次注册有效。使用callback异步回调。
+注册播报列表相关事件监听，点击播报列表图标时，触发该回调执行。
+
+说明：同一类型监听，注册多个回调函数，仅第一次注册有效。使用callback异步回调。
 
 元服务API： 从版本5.0.3(15)开始，该接口支持在元服务中使用。
 
@@ -2087,7 +2115,7 @@ on(type: 'eventReadList', callback: Callback<Array<ListEventState>>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件回调类型，支持的事件为'eventReadList'。 |
-| callback | Callback> | 是 | 播报列表发生相关事件时，触发该回调执行，err为undefined，否则为错误对象。 |
+| callback | Callback> | 是 | 回调函数，当触发播报列表图标点击事件时执行，返回结果为ListEventState。 |
 
 错误码：
 
@@ -2132,7 +2160,7 @@ off(type: 'eventReadList', callback?: Callback<Array<ListEventState>>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件回调类型，支持的事件为'eventReadList'。 |
-| callback | Callback> | 否 | 需要取消监听的回调函数，需与订阅时传入的回调函数是同一个，若不填，则取消当前应用监听该事件的所有回调函数，err为undefined，否则为错误对象。 |
+| callback | Callback> | 否 | 回调函数，取消监听播报列表图标点击事件，需与订阅时传入的回调函数是同一个，若不填，则取消当前应用监听该事件的所有回调函数。 |
 
 错误码：
 
@@ -2158,7 +2186,9 @@ try {
 
 on(type: 'readProgress', callback: Callback<ReadProgress>): void
 
-注册已播放时长相关事件监听，已播放时长发生相关事件时，触发该回调执行。同一类型监听，注册多个回调函数，仅第一次注册有效。使用callback异步回调。
+注册已播放时长相关事件监听，例如触发暂停、停止、播放完成、初始化ReaderParam设置的reportProgressPeriod的定时操作时，触发该回调执行。
+
+说明：同一类型监听，注册多个回调函数，仅第一次注册有效。使用callback异步回调。
 
 元服务API： 从版本5.0.3(15)开始，该接口支持在元服务中使用。
 
@@ -2173,7 +2203,7 @@ on(type: 'readProgress', callback: Callback<ReadProgress>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件回调类型，支持的事件为'readProgress'。 |
-| callback | Callback | 是 | 已播放时长发生相关事件时，触发该回调执行，err为undefined，否则为错误对象。 |
+| callback | Callback | 是 | 回调函数，当触发已播放时长变化事件时执行，返回结果为ReadProgress。 |
 
 错误码：
 
@@ -2216,7 +2246,7 @@ off(type: 'readProgress', callback?: Callback<ReadProgress>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件回调类型，支持的事件为'readProgress'。 |
-| callback | Callback | 否 | 需要取消监听的回调函数，需与订阅时传入的回调函数是同一个，若不填，则取消当前应用监听该事件的所有回调函数，err为undefined，否则为错误对象。 |
+| callback | Callback | 否 | 回调函数，取消监听已播放时长变化事件，需与订阅时传入的回调函数是同一个，若不填，则取消当前应用监听该事件的所有回调函数。 |
 
 错误码：
 
@@ -2433,9 +2463,9 @@ struct Index {
 | author | [TextInfo](#textinfo) | 否 | 是 | 文章的作者，默认空。 |
 | date | [TextInfo](#textinfo) | 否 | 是 | 文章的时间（例:Mon Jul 08 2024 21:25:41 GMT+0800）。 预留参数，暂未支持。 |
 | image | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 否 | 是 | 封面图图片。图片转为PixelMap后的最大大小为8MB。 若未传，采用默认封面图。 |
-| imageUrl | string | 否 | 是 | 文章封面图片链接。 若未传，采用默认封面图。图片的宽高大于10242048时会进行压缩。 image和imageUrl同时存在的时候，image设置生效。 **起始版本：** 5.0.2(14) |
+| imageUrl | string | 否 | 是 | 文章封面图片链接。 若未传，采用默认封面图。图片的宽 * 高大于1024 * 2048时会进行压缩。 image和imageUrl同时存在的时候，image设置生效。 **起始版本：** 5.0.2(14) |
 | bodyInfo | string | 否 | 是 | [setArticle](#setarticle)以及[loadMore](#loadmore)接口必填。 实时朗读的正文信息。 对于6.0.2(22)及之前版本，正文中无标点符号和换行符的情况下，长度须小于等于10000字符。对于6.1.0(23)版本开始，正文长度支持10000字符以上。 |
-| bodyInfoObject | [BodyInfo](#bodyinfo) | 否 | 是 | 正文内容信息，默认空。 **起始版本：** 5.0.2(14) |
+| bodyInfoObject | [BodyInfo](#bodyinfo) | 否 | 是 | 正文内容信息，默认空。与bodyInfo的区别是，bodyInfo只更新内容，bodyInfoObject会更新包含文章内容，封面图，文章标题等信息，若同时赋值，bodyInfoObject生效。 **起始版本：** 5.0.2(14) |
 | categoryObject | [CategoryInfo](#categoryinfo) | 否 | 是 | 文章分类信息，默认空。 **起始版本：** 5.0.2(14) |
 | audioInfo | [AudioInfo](#audioinfo)[] | 否 | 是 | 音频信息，默认空。 若配置此参数，则优先使用传入音频进行播报。 **起始版本：** 5.0.2(14) |
 | isFavorite | boolean | 否 | 是 | true表示已喜欢/收藏。 false表示不喜欢/未收藏。 默认false。 **起始版本：** 5.0.2(14) |
@@ -2458,7 +2488,7 @@ struct Index {
 | --- | --- | --- | --- | --- |
 | id | string | 否 | 否 | 文章分类ID。 |
 | name | string | 否 | 否 | 文章分类的名称。 |
-| image | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | string | 否 | 否 | 文章分类的图片或者图片的url，优先级大于文章封面图片。 |
+| image | [PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | string | 否 | 否 | 文章分类的图片或者图片的url。 朗读详情页、minibar悬浮窗展示图片时，文章分类图片的优先级高于文章封面图。 |
 
 #### TextInfo
 

@@ -2,8 +2,8 @@
 title: "OH_Huks_KeyMaterialDh"
 upstream_id: "harmonyos-references/capi-hukstypeapi-oh-huks-keymaterialdh"
 catalog: "harmonyos-references"
-content_hash: "d359760b3bec"
-synced_at: "2026-07-09T00:59:21.900405"
+content_hash: "b806db6d8716"
+synced_at: "2026-07-28T16:50:34.962663"
 ---
 
 # OH_Huks_KeyMaterialDh
@@ -29,7 +29,7 @@ struct OH_Huks_KeyMaterialDh {...}
 | 名称 | 描述 |
 | --- | --- |
 | enum [OH_Huks_KeyAlg](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-type-h#oh_huks_keyalg) keyAlg | 密钥的算法类型。 |
-| uint32_t keySize | DH密钥的长度。 |
-| uint32_t pubKeySize | 公钥的长度。 |
-| uint32_t priKeySize | 私钥的长度。 |
-| uint32_t reserved | 保留。 |
+| uint32_t keySize | DH密钥的长度，单位：Bit。 |
+| uint32_t pubKeySize | 公钥的长度，单位：Byte。 |
+| uint32_t priKeySize | 私钥的长度，单位：Byte。 |
+| uint32_t reserved | 保留字段。 |

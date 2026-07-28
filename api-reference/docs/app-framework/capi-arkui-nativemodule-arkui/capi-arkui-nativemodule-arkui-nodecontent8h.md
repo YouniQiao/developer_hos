@@ -2,8 +2,8 @@
 title: "ArkUI_NodeContent*"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-nodecontent8h"
 catalog: "harmonyos-references"
-content_hash: "50110f5a0244"
-synced_at: "2026-07-09T00:58:43.434368"
+content_hash: "afea4965e745"
+synced_at: "2026-07-28T16:49:35.089001"
 ---
 
 # ArkUI_NodeContent*
@@ -14,7 +14,7 @@ typedef struct ArkUI_NodeContent* ArkUI_NodeContentHandle
 
 #### 概述
 
-定义ArkUI NodeContent实例在Native侧的实例对象指针定义。
+定义ArkUI_NodeContent在Native侧的实例对象指针，用于在Native接口中引用和传递NodeContent实例。
 
 起始版本： 12
 

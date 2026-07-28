@@ -2,8 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-wallet"
 catalog: "harmonyos-references"
-content_hash: "d96703085cdd"
-synced_at: "2026-07-09T01:01:40.448188"
+content_hash: "884b45d0db07"
+synced_at: "2026-07-28T16:53:06.374186"
 ---
 
 # ArkTS API错误码
@@ -312,15 +312,15 @@ The Wallet app was closed by the user.
 
 错误描述
 
-钱包APP被用户关闭。
+钱包App被用户关闭。
 
 可能原因
 
-用户主动关闭钱包APP。
+用户主动关闭钱包App。
 
 处理步骤
 
-重新点击桌面图标打开钱包APP。
+重新点击桌面图标打开钱包App。
 
 #### 1010210102 校验token失败
 
@@ -975,7 +975,7 @@ Failed to confirm the order.
 
 错误信息
 
-The card deleting failed.
+Failed to delete the card.
 
 错误描述
 

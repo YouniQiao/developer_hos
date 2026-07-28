@@ -2,8 +2,8 @@
 title: "@ohos.app.ability.AppServiceExtensionAbility (应用后台服务扩展组件)"
 upstream_id: "harmonyos-references/js-apis-app-ability-appserviceextensionability"
 catalog: "harmonyos-references"
-content_hash: "c3a83ec10f7a"
-synced_at: "2026-07-24T16:42:53.500619"
+content_hash: "9f9fbf5e5f96"
+synced_at: "2026-07-28T16:40:31.979097"
 ---
 
 # @ohos.app.ability.AppServiceExtensionAbility (应用后台服务扩展组件)
@@ -18,12 +18,13 @@ AppServiceExtensionAbility模块提供后台服务相关扩展能力，包括后
 
 - 当前仅支持2in1设备。
 - 应用集成AppServiceExtensionAbility的组件需要申请ACL权限（ohos.permission.SUPPORT_APP_SERVICE_EXTENSION）。该ACL权限当前只对企业普通应用开放申请，申请方式参考[权限申请指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
+- 为保障系统安全性和稳定性，防止AppServiceExtensionAbility滥用系统资源，系统对其能力进行管控，不支持[@ohos.window (窗口)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window)模块的引用。
 
 #### 生命周期
 
 AppServiceExtensionAbility提供了[onCreate()](#oncreate)、[onRequest()](#onrequest)、[onConnect()](#onconnect)、[onDisconnect()](#ondisconnect)和[onDestroy()](#ondestroy)生命周期回调，开发者可根据需要重写对应的回调方法。下图展示了AppServiceExtensionAbility的生命周期。
 
-![](./img/zh-cn_image_0000002680019247.png)
+![](./img/zh-cn_image_0000002685927837.png)
 
 - **onCreate** 在AppServiceExtensionAbility实例创建时，系统会触发该回调。
 - **onDestroy** 在AppServiceExtensionAbility实例销毁时，系统会触发该回调。

@@ -2,8 +2,8 @@
 title: "OH_Predicates"
 upstream_id: "harmonyos-references/capi-rdb-oh-predicates"
 catalog: "harmonyos-references"
-content_hash: "c570051452c4"
-synced_at: "2026-07-09T00:57:19.958366"
+content_hash: "6db052b4976d"
+synced_at: "2026-07-28T16:40:52.352218"
 ---
 
 # OH_Predicates
@@ -42,7 +42,7 @@ typedef struct {...} OH_Predicates
 | [OH_Predicates *(*isNotNull)(OH_Predicates *predicates, const char *field)](#isnotnull) | 函数指针，配置谓词以匹配值不为null的指定字段。 该方法等同于SQL语句中的“IS NOT NULL”。 |
 | [OH_Predicates *(*like)(OH_Predicates *predicates, const char *field, OH_VObject *valueObject)](#like) | 函数指针，配置谓词以匹配数据字段为field且值类似于指定字符串的字段。 该方法等同于SQL语句中的“LIKE”。 |
 | [OH_Predicates *(*between)(OH_Predicates *predicates, const char *field, OH_VObject *valueObject)](#between) | 函数指针，将谓词配置为匹配数据字段为field且其值在给定范围内的指定字段。 该方法等同于SQL语句中的“BETWEEN”。 |
-| [OH_Predicates *(*notBetween)(OH_Predicates *predicates, const char *field, OH_VObject *valueObject)](#notbetween) | 函数指针，将谓词配置为匹配数据字段为field且其值超出给定范围内的指定字段。 该方法等同于SQL语句中的“NOT BETWEEN”。 |
+| [OH_Predicates *(*notBetween)(OH_Predicates *predicates, const char *field, OH_VObject *valueObject)](#notbetween) | 函数指针，配置谓词以匹配数据字段为field且其值不在给定范围内的指定字段。 该方法等同于SQL语句中的“NOT BETWEEN”。 |
 | [OH_Predicates *(*greaterThan)(OH_Predicates *predicates, const char *field, OH_VObject *valueObject)](#greaterthan) | 函数指针，配置谓词以匹配数据字段为field且值大于指定值valueObject的字段。 该方法等同于SQL语句中的“>”。 |
 | [OH_Predicates *(*lessThan)(OH_Predicates *predicates, const char *field, OH_VObject *valueObject)](#lessthan) | 函数指针，配置谓词以匹配数据字段为field且值小于指定值valueObject的字段。 该方法等同于SQL语句中的“=”。 |
 | [OH_Predicates *(*lessThanOrEqualTo)(OH_Predicates *predicates, const char *field, OH_VObject *valueObject)](#lessthanorequalto) | 函数指针，配置谓词以匹配数据字段为field且值小于或等于指定值valueObject的字段。 该方法等同于SQL语句中的“描述
@@ -305,7 +305,7 @@ OH_Predicates *(*notBetween)(OH_Predicates *predicates, const char *field, OH_VO
 ```
  描述
 
-函数指针，将谓词配置为匹配数据字段为field且其值超出给定范围内的指定字段。
+函数指针，配置谓词以匹配数据字段为field且其值不在给定范围内的指定字段。
 
 该方法等同于SQL语句中的“NOT BETWEEN”。
 
@@ -452,7 +452,7 @@ OH_Predicates *(*orderBy)(OH_Predicates *predicates, const char *field, OH_Order
 | --- | --- |
 | OH_Predicates *predicates | 表示指向OH_Predicates实例的指针。 |
 | const char *field | 数据库表中的列名，不能为空。 |
-| [OH_VObject](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-vobject) type | 表示排序类型[OH_VObject](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-vobject)。 |
+| [OH_OrderType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-predicates-h#oh_ordertype) type | 排序类型。 |
 
 返回：
 
@@ -556,7 +556,7 @@ OH_Predicates *(*groupBy)(OH_Predicates *predicates, char const *const *fields, 
 | --- | --- |
 | OH_Predicates *predicates | 表示指向OH_Predicates实例的指针。 |
 | char const *const *fields | 指定分组依赖的列名，不能为空。 |
-| int length | 该参数为输入参数，表示开发者传入的fields数值的长度。 |
+| int length | 该参数为输入参数，表示fields数组的长度。 |
 
 返回：
 
@@ -571,7 +571,7 @@ OH_Predicates *(*in)(OH_Predicates *predicates, const char *field, OH_VObject *v
 ```
  描述
 
-函数指针，配置谓词以匹配数据字段为field且值在给定范围内的指定字段。
+函数指针，配置谓词以匹配数据字段为field且其值在给定集合内的指定字段。
 
 该方法等同于SQL语句中的“IN”。
 
@@ -598,7 +598,7 @@ OH_Predicates *(*notIn)(OH_Predicates *predicates, const char *field, OH_VObject
 ```
  描述
 
-函数指针，配置谓词以匹配数据字段为field且值超出给定范围内的指定字段。
+函数指针，配置谓词以匹配数据字段为field且其值不在给定集合内的指定字段。
 
 该方法等同于SQL语句中的“NOT IN”。
 

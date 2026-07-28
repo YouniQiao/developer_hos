@@ -2,13 +2,13 @@
 title: "@ohos.hichecker (检测模式)"
 upstream_id: "harmonyos-references/js-apis-hichecker"
 catalog: "harmonyos-references"
-content_hash: "fb95c8828f10"
-synced_at: "2026-07-09T01:00:02.210056"
+content_hash: "ddb3e92e15ad"
+synced_at: "2026-07-28T16:51:20.408469"
 ---
 
 # @ohos.hichecker (检测模式)
 
-HiChecker可以作为应用开发阶段使用的检测工具，用于检测代码运行过程中部分易忽略的问题，如应用线程出现耗时调用、应用进程中Ability资源泄露等问题。开发者可以通过日志记录或进程crash等形式查看具体问题并进行修改，提升应用的使用体验。
+HiChecker可以作为应用开发阶段使用的检测工具，用于检测代码运行过程中部分易忽略的问题，如应用线程出现耗时调用、应用进程中Ability资源泄漏等问题。开发者可以通过日志记录或进程crash等形式查看具体问题并进行修改，提升应用的使用体验。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 8开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 

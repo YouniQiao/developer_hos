@@ -1,14 +1,12 @@
 ---
-
-title: "通行密钥"
+title: "FIDO2（通行密钥服务）"
 upstream_id: "harmonyos-references/passkey"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T00:59:18.323645"
-content_hash: "9ec0824b74aa"
+content_hash: "fe1aebf517d6"
+synced_at: "2026-07-28T16:50:30.698753"
 ---
 
-
-# 通行密钥
+# FIDO2（通行密钥服务）
 
 #### 概述
 
@@ -66,7 +64,7 @@ content_hash: "9ec0824b74aa"
 | typedef enum [FIDO2_UserVerificationRequirement](#fido2_userverificationrequirement-1) [FIDO2_UserVerificationRequirement](#fido2_userverificationrequirement) | 依赖方可能需要对某些操作进行用户鉴权（认证当前用户是否为用户）， 但不需要对其他操作进行认证。定义枚举类型是为了区分不同的需求级别。 |
 | typedef enum [FIDO2_AuthenticatorAttachment](#fido2_authenticatorattachment-1) [FIDO2_AuthenticatorAttachment](#fido2_authenticatorattachment) | 认证器信息（平台、漫游）。 |
 | typedef enum [FIDO2_AuthenticatorTransport](#fido2_authenticatortransport-1) [FIDO2_AuthenticatorTransport](#fido2_authenticatortransport) | 认证器传输方式的枚举。 |
-| typedef enum [FIDO2_Algorithm](#fido2_algorithm-1) [FIDO2_Algorithm](#fido2_algorithm) | 加密算法的枚举。 |
+| typedef enum [FIDO2_Algorithm](#fido2_algorithm-1) [FIDO2_Algorithm](#fido2_algorithm) | FIDO2支持的密码算法枚举。 |
 | typedef enum [FIDO2_PublicKeyCredentialHint](#fido2_publickeycredentialhint-1) [FIDO2_PublicKeyCredentialHint](#fido2_publickeycredentialhint) | 认证方式指示的枚举。 |
 | typedef enum [FIDO2_PublicKeyCredentialType](#fido2_publickeycredentialtype-1) [FIDO2_PublicKeyCredentialType](#fido2_publickeycredentialtype) | 公钥凭据类型的枚举。 |
 | typedef enum [FIDO2_Uvm](#fido2_uvm-1) [FIDO2_Uvm](#fido2_uvm) | UVM的枚举。 |
@@ -107,13 +105,13 @@ content_hash: "9ec0824b74aa"
 | [FIDO2_UserVerificationRequirement](#fido2_userverificationrequirement-1) { FIDO2_REQUIRED = 0, FIDO2_PREFERRED = 1, FIDO2_DISCOURAGED = 2 } | 依赖方可能需要对某些操作进行用户鉴权（认证当前用户是否为用户）， 但不需要对其他操作进行认证。定义枚举类型是为了区分不同的需求级别。 |
 | [FIDO2_AuthenticatorAttachment](#fido2_authenticatorattachment-1) { FIDO2_PLATFORM = 0, FIDO2_CROSS_PLATFORM = 1 } | 认证器信息（平台、漫游）。 |
 | [FIDO2_AuthenticatorTransport](#fido2_authenticatortransport-1) { FIDO2_USB = 0, FIDO2_NFC = 1, FIDO2_BLE = 2, FIDO2_SMART_CARD = 3, FIDO2_HYBRID = 4, FIDO2_INTERNAL = 5 } | 认证器传输方式的枚举。 |
-| [FIDO2_Algorithm](#fido2_algorithm-1) { FIDO2_ES256 = -7, FIDO2_ES384 = -35, FIDO2_ES512 = -36, FIDO2_RS256 = -257, FIDO2_RS384 = -258, FIDO2_RS512 = -259, FIDO2_PS256 = -37, FIDO2_PS384 = -38, FIDO2_PS512 = -39 } | 加密算法的枚举。 |
+| [FIDO2_Algorithm](#fido2_algorithm-1) { FIDO2_ES256 = -7, FIDO2_ES384 = -35, FIDO2_ES512 = -36, FIDO2_RS256 = -257, FIDO2_RS384 = -258, FIDO2_RS512 = -259, FIDO2_PS256 = -37, FIDO2_PS384 = -38, FIDO2_PS512 = -39 } | FIDO2支持的密码算法枚举。 |
 | [FIDO2_PublicKeyCredentialHint](#fido2_publickeycredentialhint-1) { FIDO2_SECURITY_KEY = 0, FIDO2_CLIENT_DEVICE = 1, FIDO2_HINT_HYBRID = 2 } | 认证方式指示的枚举。 |
 | [FIDO2_PublicKeyCredentialType](#fido2_publickeycredentialtype-1) { FIDO2_PUBLIC_KEY = 0 } | 公钥凭据类型的枚举。 |
 | [FIDO2_Uvm](#fido2_uvm-1) { FIDO2_UVM_FINGERPRINT = 2, FIDO2_UVM_PIN = 4, FIDO2_UVM_FACEPRINT = 16 } | UVM的枚举。 |
-| [FIDO2_ClientCapability](#fido2_clientcapability-1) { FIDO2_CONDITIONAL_CREATE = 0, FIDO2_CONDITIONAL_GET = 1, FIDO2_HYBRID_TRANSPORT = 2, FIDO2_PASSKEY_PLATFORM_AUTHENTICATOR = 3, FIDO2_USER_VERIFYING_PLATFORM_AUTHENTICATOR = 4, FIDO2_RELATED_ORIGINS = 5, FIDO2_SIGNAL_ALL_ACCEPTED_CREDENTIALS = 6, FIDO2_SIGNAL_CURRENT_USER_DETAILS = 7, FIDO2_SIGNAL_UNKNOWN_CREDENTIAL = 8, FIDO2_EXTENSION_UVI = 9, FIDO2_EXTENSION_LARGEBLOB = 10 } | 客户端能力的枚举。 |
+| [FIDO2_ClientCapability](#fido2_clientcapability-1) { FIDO2_CONDITIONAL_CREATE = 0, FIDO2_CONDITIONAL_GET = 1, FIDO2_HYBRID_TRANSPORT = 2, FIDO2_PASSKEY_PLATFORM_AUTHENTICATOR = 3, FIDO2_USER_VERIFYING_PLATFORM_AUTHENTICATOR = 4, FIDO2_RELATED_ORIGINS = 5, FIDO2_SIGNAL_ALL_ACCEPTED_CREDENTIALS = 6, FIDO2_SIGNAL_CURRENT_USER_DETAILS = 7, FIDO2_SIGNAL_UNKNOWN_CREDENTIAL = 8, FIDO2_EXTENSION_UVI = 9, FIDO2_EXTENSION_LARGEBLOB = 10, FIDO2_EXTENSION_AUTH_TYPE_LIST = 11 } | 客户端能力的枚举。 |
 | [FIDO2_CredentialMediationRequirement](#fido2_credentialmediationrequirement-1) { FIDO2_SILENT = 0, FIDO2_OPTIONAL = 1, FIDO2_CONDITIONAL = 2, FIDO2_MEDIATION_REQUIRED = 3 } | 用户介入要求的枚举。 |
-| [FIDO2_ErrorCode](#fido2_errorcode-1) { FIDO2_SUCCESS = 0, FIDO2_PERMISSION_DENIED = 201, FIDO2_DEVICE_NOT_SUPPORT = 801, FIDO2_NOT_SUPPORT = 1021300001, FIDO2_INVALID_STATE = 1021300002, FIDO2_INTEGRITY_CHECK_FAILED = 1021300003, FIDO2_USER_ABORT = 1021300004, FIDO2_TIMEOUT = 1021300005, FIDO2_ENCODING_ERROR = 1021300006, FIDO2_UNKNOWN_ERROR = 1021300007, FIDO2_CONSTRAINT_ERROR = 1021300008, FIDO2_DATA_ERROR = 1021300009, FIDO2_USER_REJECTS = 1021300010, FIDO2_CONNECT_SERVICE_FAILED = 1021300011, FIDO2_MAX_CRED_NUM_REACHED = 1021300012, FIDO2_INVALID_CTAP_COMMAND = 1021310001, FIDO2_INVALID_PARAMETERS = 1021310002, FIDO2_INVALID_MESSAGE_OR_ATTRIBUTE_LENGTH = 1021310003, FIDO2_INVALID_CBOR_OR_UNPREDICTABLE = 1021310004, FIDO2_PARSE_CBOR_FAILED = 1021310005, FIDO2_INVALID_CREDENTIALS = 1021310006, FIDO2_NOT_ALLOWED = 1021310007, FIDO2_USER_VERIFICATION_FAILED = 1021310008, FIDO2_OTHER_ERROR = 1021310009 } | 错误码定义。 |
+| [FIDO2_ErrorCode](#fido2_errorcode-1) { FIDO2_SUCCESS = 0, FIDO2_PERMISSION_DENIED = 201, FIDO2_DEVICE_NOT_SUPPORT = 801, FIDO2_NOT_SUPPORT = 1021300001, FIDO2_INVALID_STATE = 1021300002, FIDO2_INTEGRITY_CHECK_FAILED = 1021300003, FIDO2_USER_ABORT = 1021300004, FIDO2_TIMEOUT = 1021300005, FIDO2_ENCODING_ERROR = 1021300006, FIDO2_UNKNOWN_ERROR = 1021300007, FIDO2_CONSTRAINT_ERROR = 1021300008, FIDO2_DATA_ERROR = 1021300009, FIDO2_USER_REJECTS = 1021300010, FIDO2_CONNECT_SERVICE_FAILED = 1021300011, FIDO2_MAX_CRED_NUM_REACHED = 1021300012, FIDO2_INVALID_CTAP_COMMAND = 1021310001, FIDO2_INVALID_PARAMETERS = 1021310002, FIDO2_INVALID_MESSAGE_OR_ATTRIBUTE_LENGTH = 1021310003, FIDO2_INVALID_CBOR_OR_UNPREDICTABLE = 1021310004, FIDO2_PARSE_CBOR_FAILED = 1021310005, FIDO2_INVALID_CREDENTIALS = 1021310006, FIDO2_NOT_ALLOWED = 1021310007, FIDO2_USER_VERIFICATION_FAILED = 1021310008, FIDO2_OTHER_ERROR = 1021310009, FIDO2_USER_CANCELLED_SWITCHED = 1021300013 } | 错误码定义。 |
 
 #### [h2]函数
 
@@ -151,7 +149,7 @@ typedef enum FIDO2_Algorithm FIDO2_Algorithm
 ```
  描述
 
-算法的枚举。
+FIDO2支持的密码算法枚举。
 
 起始版本： 6.0.0(20)
 
@@ -549,7 +547,7 @@ enum FIDO2_Algorithm
 ```
  描述
 
-加密算法的枚举。
+FIDO2支持的密码算法枚举。
 
 起始版本： 6.0.0(20)
 
@@ -643,6 +641,7 @@ enum FIDO2_ClientCapability
 | FIDO2_SIGNAL_UNKNOWN_CREDENTIAL | 发送未知凭据。 |
 | FIDO2_EXTENSION_UVI | uvi的扩展参数。 |
 | FIDO2_EXTENSION_LARGEBLOB | largeBlob的扩展参数。 **起始版本**：26.0.0 |
+| FIDO2_EXTENSION_AUTH_TYPE_LIST | authType的扩展参数。 **起始版本**：26.0.0 |
 
 #### [h2]FIDO2_CredentialMediationRequirement
 
@@ -698,6 +697,7 @@ enum FIDO2_ErrorCode
 | FIDO2_INVALID_CREDENTIALS | 未提供有效凭据。 |
 | FIDO2_NOT_ALLOWED | 不允许。 |
 | FIDO2_USER_VERIFICATION_FAILED | 用户认证失败。 |
+| FIDO2_USER_CANCELLED_SWITCHED | 用户认证失败切换其他认证方式。 **起始版本**：26.0.0 |
 | FIDO2_OTHER_ERROR | 其他错误。 |
 
 #### [h2]FIDO2_PublicKeyCredentialHint
@@ -808,7 +808,7 @@ FIDO2_ErrorCode HMS_FIDO2_authenticate (const FIDO2_CredentialRequestOptions opt
 
 返回：
 
-如果函数执行成功，则返回FIDO2_SUCCESS；如果函数执行失败，则返回特定的错误代码。详细信息请参见[FIDO2_ErrorCode](#fido2_errorcode)。
+如果函数执行成功，则返回FIDO2_SUCCESS；如果函数执行失败，则返回特定的错误代码。详细信息请参见[FIDO2_ErrorCode](#fido2_errorcode-1)。
 
 #### [h2]HMS_FIDO2_AuthenticatorMetadataArray_Destroy()
 
@@ -863,7 +863,7 @@ FIDO2_ErrorCode HMS_FIDO2_getClientCapability (FIDO2_CapabilityArray ** capabili
 
 返回：
 
-如果函数执行成功，则返回FIDO2_SUCCESS； 如果函数执行失败，则返回错误代码。详细信息请参见[FIDO2_ErrorCode](#fido2_errorcode)。
+如果函数执行成功，则返回FIDO2_SUCCESS； 如果函数执行失败，则返回错误代码。详细信息请参见[FIDO2_ErrorCode](#fido2_errorcode-1)。
 
 #### [h2]HMS_FIDO2_getPlatformAuthenticator()
 
@@ -884,7 +884,7 @@ FIDO2_ErrorCode HMS_FIDO2_getPlatformAuthenticator (FIDO2_AuthenticatorMetadataA
 
 返回：
 
-如果函数执行成功，则返回FIDO2_SUCCESS；如果函数执行失败，则返回错误代码。详细信息请参见[FIDO2_ErrorCode](#fido2_errorcode)。
+如果函数执行成功，则返回FIDO2_SUCCESS；如果函数执行失败，则返回错误代码。详细信息请参见[FIDO2_ErrorCode](#fido2_errorcode-1)。
 
 #### [h2]HMS_FIDO2_initCreationOptions()
 
@@ -995,4 +995,4 @@ FIDO2_ErrorCode HMS_FIDO2_register (const FIDO2_CredentialCreationOptions option
 
 返回：
 
-如果函数执行成功，则返回FIDO2_SUCCESS；如果函数执行失败，则返回错误代码。详细信息请参见[FIDO2_ErrorCode](#fido2_errorcode)。
+如果函数执行成功，则返回FIDO2_SUCCESS；如果函数执行失败，则返回错误代码。详细信息请参见[FIDO2_ErrorCode](#fido2_errorcode-1)。

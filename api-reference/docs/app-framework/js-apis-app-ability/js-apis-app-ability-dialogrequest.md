@@ -2,8 +2,8 @@
 title: "@ohos.app.ability.dialogRequest (dialogRequest模块)"
 upstream_id: "harmonyos-references/js-apis-app-ability-dialogrequest"
 catalog: "harmonyos-references"
-content_hash: "d4dd672930b4"
-synced_at: "2026-07-09T00:57:07.229074"
+content_hash: "92843060dd6f"
+synced_at: "2026-07-28T16:40:36.232004"
 ---
 
 # @ohos.app.ability.dialogRequest (dialogRequest模块)
@@ -109,7 +109,7 @@ export default class EntryAbility extends UIAbility {
     try {
       let requestCallback = dialogRequest.getRequestCallback(want);
     } catch(err) {
-      console.error(`getRequestInfo err= ${JSON.stringify(err)}`);
+      console.error(`getRequestCallback  err= ${JSON.stringify(err)}`);
     }
   }
 }
@@ -182,7 +182,7 @@ export default class EntryAbility extends UIAbility {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| result | [ResultCode](#resultcode) | 否 | 否 | 表示结果码。 |
+| result | [ResultCode](#resultcode) | 否 | 否 | 表示结果码，用于判断请求是否成功。 |
 | want10+ | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 否 | 是 | 表示Want类型信息，如ability名称，包名等。 |
 
 #### RequestCallback

@@ -2,8 +2,8 @@
 title: "wearEngineLite（穿戴设备能力开放）（Lite）"
 upstream_id: "harmonyos-references/wearenginelite_api"
 catalog: "harmonyos-references"
-content_hash: "399b8e8db5e4"
-synced_at: "2026-07-09T01:00:01.802879"
+content_hash: "34f0df3be30d"
+synced_at: "2026-07-28T16:51:20.371915"
 ---
 
 # wearEngineLite（穿戴设备能力开放）（Lite）
@@ -97,6 +97,103 @@ static offConnectionStateChange(callback?: MonitorEventCallback): void
   };
 
   WearEngineLite.offConnectionStateChange(eventCallback);
+```
+
+#### [h2]onFileReceive
+
+static onFileReceive(remoteAppInfo: AppInfo, callback: FileReceiverCallback): void
+
+订阅对端设备向本端设备发送文件和文件传输进度的事件。
+
+模型约束： 此接口仅可在FA模型下使用。
+
+系统能力： SystemCapability.Health.WearEngine.Lite
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| remoteAppInfo | [AppInfo](#appinfo) | 是 | 指定的设备侧应用参数。 |
+| callback | [FileReceiverCallback](#filereceivercallback) | 是 | 回调函数，返回文件对象。 |
+
+示例：
+
+```
+ // 设置设备侧应用的应用信息：包名与指纹
+ let remoteAppInfo = {
+    bundleName: '',
+    fingerprint: ''
+ };
+ // 设置需要接收的文件存储路径
+ globalThis.__fileDir__ = 'xxxx/xxxx';
+ // 设置需要接收的文件信息和传输进度
+ let FileReceiverCallback =
+ {
+    onReceive: (fileName, filePath, progress)=>{
+        hilog.info(0,'onFileReceive',`onFileReceive is:  ${fileName}, filePath is: ${filePath}, progress is: ${progress}`);
+    },
+    success: (code, data) => {
+        hilog.info(0,'onFileReceive',`onFileReceive success code is: ${code}, data is ${data}`);
+    },
+    fail: (code, data) => {
+        hilog.error(0,'onFileReceive',`onFileReceive fail code: ${code}, data is ${data}`);
+    }
+ };
+ try {
+    WearEngineLite.onFileReceive(remoteAppInfo, FileReceiverCallback);
+    } catch (error) {
+        hilog.error(0,'onFileReceive',`Failed to onFileReceive. code is ${error.code}, message is ${error.data}.`);
+ };
+```
+
+#### [h2]offFileReceive
+
+static offFileReceive(remoteAppInfo: AppInfo, callback?: FileReceiverCallback): void
+
+取消订阅对端设备向本端设备发送文件和文件传输进度的事件。
+
+模型约束： 此接口仅可在FA模型下使用。
+
+系统能力： SystemCapability.Health.WearEngine.Lite
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| remoteAppInfo | [AppInfo](#appinfo) | 是 | 指定的设备侧应用参数。 |
+| callback | [FileReceiverCallback](#filereceivercallback) | 否 | 回调函数，返回文件对象。 |
+
+示例：
+
+```
+ // 设置设备侧应用的应用信息：包名与指纹
+ let remoteAppInfo = {
+    bundleName: '',
+    fingerprint: ''
+ };
+ // 设置需要接收的文件信息回调
+ let fileReceiverCallback =
+    {
+        onReceive: (fileName, filePath, progress)=>{
+            hilog.info(0,'offFileReceive',`offFileReceive is:  ${fileName}, filePath is: ${filePath}, progress is: ${progress}`);
+        },
+        success: (code, data) => {
+            hilog.info(0,'offFileReceive',`offFileReceive success code is: ${code}, data is ${data}`);
+        },
+        fail: (code, data) => {
+            hilog.error(0,'offFileReceive',`offFileReceive fail code: ${code}, data is ${data}`);
+        }
+      };
+
+ try {
+    WearEngineLite.offFileReceive(remoteAppInfo, fileReceiverCallback);
+ } catch (error) {
+    hilog.error(0,'offFileReceive',`Failed to offFileReceive. Code is ${error.code}, message is ${error.data}.`);
+ };
 ```
 
 #### MonitorEventCallback
@@ -231,3 +328,167 @@ fail(code: number, data?: string): void
 | --- | --- | --- | --- | --- |
 | event | string | 否 | 否 | 回调函数上报的监听事件。 |
 | data | [MonitorData](#monitordata) | 否 | 否 | 变化后的设备状态信息。 |
+
+#### FileReceiverCallback
+
+作为[onFileReceive](#onfilereceive)接口的入参，当接收文件进度发生变化时，将变化后的文件传输进度传递给回调函数；作为[offFileReceive](#offfilereceive)接口的入参，用于取消订阅对端应用向本端应用发送文件的事件。
+
+#### [h2]onReceive
+
+onReceive(fileName: string, filePath: string, progress: number): void
+
+用于接收对端设备发送的文件和查看接收进度。
+
+模型约束： 此接口仅可在FA模型下使用。
+
+系统能力： SystemCapability.Health.WearEngine.Lite
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| fileName | string | 是 | 接收文件的名称。 |
+| filePath | string | 是 | 接收文件的存储路径。 |
+| progress | number | 是 | 接收文件的传输进度，返回值范围：0-100。 |
+
+示例：
+
+```
+// 设置设备侧应用的应用信息：包名与指纹
+ let remoteAppInfo = {
+ bundleName: '',
+ fingerprint: ''
+    };
+// 设置需要接收的文件信息回调
+ let fileReceiverCallback =
+ {
+    onReceive: (fileName, filePath, progress)=>{
+    hilog.info(0,'onFileReceive',`onFileReceive is:  ${fileName}, filePath is: ${filePath}, progress is: ${progress}`);
+ },
+ success: (code, data) => {
+    hilog.info(0,'onFileReceive',`onFileReceive success code is: ${code}, data is ${data}`);
+ },
+    fail: (code, data) => {
+        hilog.error(0,'onFileReceive',`onFileReceive fail code: ${code}, data is ${data}`);
+    }
+ };
+
+ try {
+    WearEngineLite.onFileReceive(remoteAppInfo, fileReceiverCallback);
+ } catch (error) {
+    hilog.error(0,'onFileReceive',`Failed to onFileReceive. Code is ${error.code}, message is ${error.data}.`);
+ };
+```
+
+#### [h2]success
+
+success(code: number, data?: string): void
+
+表示订阅成功或者是取消订阅成功。
+
+模型约束： 此接口仅可在FA模型下使用。
+
+系统能力： SystemCapability.Health.WearEngine.Lite
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| code | number | 是 | 返回0。 |
+| data | string | 否 | 返回undefined。 |
+
+示例：
+
+```
+ // 设置设备侧应用的应用信息：包名与指纹
+ let remoteAppInfo = {
+ bundleName: '',
+ fingerprint: ''
+ };
+ // 设置需要接收的文件信息回调
+ let fileReceiverCallback =
+ {
+    onReceive: (fileName, filePath, progress)=>{
+        hilog.info(0,'onFileReceive',`onFileReceive is:  ${fileName}, filePath is: ${filePath}, progress is: ${progress}`);
+    },
+    success: (code, data) => {
+        hilog.info(0,'onFileReceive',`onFileReceive success code is: ${code}, data is ${data}`);
+    },
+    fail: (code, data) => {
+        hilog.error(0,'onFileReceive',`onFileReceive fail code: ${code}, data is ${data}`);
+    }
+ };
+
+ try {
+    WearEngineLite.onFileReceive(remoteAppInfo, fileReceiverCallback);
+ } catch (error) {
+    hilog.error(0,'onFileReceive',`Failed to onFileReceive. Code is ${error.code}, message is ${error.data}.`);
+ };
+```
+
+#### [h2]fail
+
+fail(code: number, data?: string): void
+
+表示订阅失败或者是取消订阅失败。
+
+模型约束： 此接口仅可在FA模型下使用。
+
+系统能力： SystemCapability.Health.WearEngine.Lite
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| code | number | 是 | 返回-1。 |
+| data | string | 否 | 返回undefined。 |
+
+示例：
+
+```
+// 设置设备侧应用的应用信息：包名与指纹
+ let remoteAppInfo = {
+    bundleName: '',
+    fingerprint: ''
+ };
+// 设置需要接收的文件信息回调
+ let fileReceiverCallback =
+ {
+    onReceive: (fileName, filePath, progress)=>{
+        hilog.info(0,'onFileReceive',`onFileReceive is:  ${fileName}, filePath is: ${filePath}, progress is: ${progress}`);
+    },
+    success: (code, data) => {
+        hilog.info(0,'onFileReceive',`onFileReceive success code is: ${code}, data is ${data}`);
+    },
+    fail: (code, data) => {
+        hilog.error(0,'onFileReceive',`onFileReceive fail code: ${code}, data is ${data}`);
+    }
+ };
+
+ try {
+    WearEngineLite.onFileReceive(remoteAppInfo, fileReceiverCallback);
+ } catch (error) {
+    hilog.error(0,'onFileReceive',`Failed to onFileReceive. Code is ${error.code}, message is ${error.data}.`);
+ };
+```
+
+#### AppInfo
+
+设备侧应用信息类。
+
+模型约束： 此接口仅可在FA模型下使用。
+
+系统能力： SystemCapability.Health.WearEngine.Lite
+
+起始版本： 26.0.0
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| bundleName | string | 否 | 否 | 应用名称。 |
+| fingerprint | string | 否 | 否 | [应用指纹，用于标识应用的唯一身份。](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_faq-9) |

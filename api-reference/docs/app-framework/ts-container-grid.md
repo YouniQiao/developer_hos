@@ -2,8 +2,8 @@
 title: "Grid"
 upstream_id: "harmonyos-references/ts-container-grid"
 catalog: "harmonyos-references"
-content_hash: "aeb2ee66123f"
-synced_at: "2026-07-09T00:57:48.153067"
+content_hash: "2d79b71fd70a"
+synced_at: "2026-07-28T16:43:28.028342"
 ---
 
 # Grid
@@ -54,8 +54,8 @@ Grid(scroller?: Scroller, layoutOptions?: GridLayoutOptions)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| scroller | [Scroller](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scroll#scroller) | 否 | 可滚动组件的控制器。用于与可滚动组件进行绑定。 **说明：** 不允许和其他滚动类组件，如：[ArcList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-arclist)、[List](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list)、[Grid](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-grid)、[Scroll](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scroll)和[WaterFlow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-waterflow)绑定同一个滚动控制对象。 |
-| layoutOptions10+ | [GridLayoutOptions](#gridlayoutoptions10对象说明) | 否 | Grid布局选项。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| scroller | [Scroller](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scroll#scroller) | 否 | 可滚动组件的控制器。用于与可滚动组件进行绑定。不设置时不绑定外部控制器，组件自行管理滚动行为。 **说明：** 不允许和其他滚动类组件，如：[ArcList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-arclist)、[List](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list)、[Grid](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-grid)、[Scroll](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scroll)和[WaterFlow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-waterflow)绑定同一个滚动控制对象。 |
+| layoutOptions10+ | [GridLayoutOptions](#gridlayoutoptions10对象说明) | 否 | Grid布局选项，用于配置GridItem跨行跨列等布局信息。不传入时，Grid按照rowsTemplate、columnsTemplate等常规属性以及GridItem自身属性进行布局，不启用GridLayoutOptions提供的布局选项。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### GridLayoutOptions10+对象说明
 
@@ -82,7 +82,7 @@ Grid布局选项。其中，irregularIndexes和onGetIrregularSizeByIndex可对�
 
 设置Grid的padding后，如果子组件部分位于Grid内容区且部分位于padding区域内，则会显示；如果子组件完全位于padding区域内，则不会显示。如下图所示，GridItem1显示，而GridItem2不显示。
 
-![](./img/zh-cn_image_0000002661612475.png)
+![](./img/zh-cn_image_0000002655848490.png)
 
 #### [h2]columnsTemplate
 
@@ -138,7 +138,7 @@ columnsTemplate(value: string | ItemFillPolicy)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | string | [ItemFillPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#itemfillpolicy22) | 是 | 当前网格组件布局列的数量。 |
+| value | string | [ItemFillPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#itemfillpolicy22) | 是 | 当前网格组件布局列的数量。value为string类型时，表示固定列数或repeat函数形式；value为ItemFillPolicy类型时，根据断点自动确定列数。 |
 
 #### [h2]rowsTemplate
 
@@ -213,7 +213,7 @@ columnsGap(value: Length)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 是 | 列与列的间距。 默认值：0 取值范围：[0, +∞) |
+| value | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 是 | 列与列的间距。 默认值：0 取值范围：[0, +∞)，设置为小于0的值时，按默认值0显示。 |
 
 #### [h2]rowsGap
 
@@ -229,7 +229,7 @@ rowsGap(value: Length)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 是 | 行与行的间距。 默认值：0 取值范围：[0, +∞) |
+| value | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 是 | 行与行的间距。 默认值：0 取值范围：[0, +∞)，设置为小于0的值时，按默认值0显示。 |
 
 #### [h2]scrollBar
 
@@ -285,7 +285,7 @@ scrollBarColor(color: Color | number | string | Resource)
 
 scrollBarWidth(value: number | string)
 
-设置滚动条的宽度，不支持百分比设置。宽度设置后，滚动条正常状态和按压状态宽度均为滚动条的宽度值。如果滚动条的宽度超过Grid组件主轴方向的高度，则滚动条的宽度会变为默认值。
+设置滚动条的宽度，不支持百分比设置。宽度设置后，滚动条正常状态和按压状态宽度均为滚动条的宽度值。如果滚动条的宽度超过Grid组件主轴方向的可视尺寸，则滚动条的宽度会变为默认值4vp。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -295,13 +295,13 @@ scrollBarWidth(value: number | string)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | string | 是 | 滚动条的宽度。 默认值：4 单位：vp 取值范围：设置为小于0的值时，按默认值处理。设置为0时，不显示滚动条。 |
+| value | number | string | 是 | 滚动条的宽度。 默认值：4 单位：vp 取值范围：[0, +∞)，设置为小于0的值时，按默认值处理。设置为0时，不显示滚动条。 |
 
 #### [h2]scrollBarWidth
 
 scrollBarWidth(value: number | string | Resource)
 
-设置滚动条的宽度，不支持百分比设置。宽度设置后，滚动条正常状态和按压状态宽度均为滚动条的宽度值。如果滚动条的宽度超过Grid组件主轴方向的高度，则滚动条的宽度会变为4vp。支持Resource资源类型。
+设置滚动条的宽度，不支持百分比设置。宽度设置后，滚动条正常状态和按压状态宽度均为滚动条的宽度值。如果滚动条的宽度超过Grid组件主轴方向的可视尺寸，则滚动条的宽度会变为默认值4vp。支持Resource资源类型。
 
 未通过该接口设置时，设置滚动条的宽度为4vp。
 
@@ -323,9 +323,9 @@ scrollBarWidth(value: number | string | Resource)
 
 cachedCount(value: number)
 
-设置预加载的GridItem的数量，只在[LazyForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-lazyforeach)和开启了[virtualScroll](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-rendering-control-repeat#virtualscroll)开关的[Repeat](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-rendering-control-repeat)中生效。
+设置主轴方向前后两侧分别预加载的网格行/列数，只在[LazyForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-lazyforeach)和开启了[virtualScroll](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-rendering-control-repeat#virtualscroll)开关的[Repeat](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-rendering-control-repeat)中生效。
 
-设置缓存后会在Grid显示区域上下各缓存cachedCount*列数个GridItem。
+设置缓存后，会在Grid显示区域沿主轴方向的前后两侧分别预加载cachedCount个网格行/列。垂直滚动时，上下两侧分别预加载cachedCount行；水平滚动时，左右两侧分别预加载cachedCount列。
 
 [LazyForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-lazyforeach)和开启了[virtualScroll](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-rendering-control-repeat#virtualscroll)开关的[Repeat](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-rendering-control-repeat)超出显示和缓存范围的GridItem会被释放。
 
@@ -343,9 +343,9 @@ cachedCount(value: number)
 
 cachedCount(count: number, show: boolean)
 
-设置预加载的GridItem数量，并配置是否显示预加载节点。
+设置主轴方向前后两侧分别预加载的网格行/列数，并配置是否显示预加载节点，只在[LazyForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-lazyforeach)和开启了[virtualScroll](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-rendering-control-repeat#virtualscroll)开关的[Repeat](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-rendering-control-repeat)中生效。
 
-设置缓存后会在Grid显示区域上下各缓存cachedCount*列数个GridItem。配合裁剪[clip](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sharp-clipping#clip12)或内容裁剪[clipContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scrollable-common#clipcontent14)属性可以显示出预加载节点。
+设置缓存后，会在Grid显示区域沿主轴方向的前后两侧分别预加载cachedCount个网格行/列。垂直滚动时，上下两侧分别预加载cachedCount行；水平滚动时，左右两侧分别预加载cachedCount列。配合裁剪[clip](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sharp-clipping#clip12)或内容裁剪[clipContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scrollable-common#clipcontent14)属性可以显示出预加载节点。
 
 元服务API： 从API version 14开始，该接口支持在元服务中使用。
 
@@ -366,6 +366,8 @@ editMode(value: boolean)
 
 设置Grid是否进入编辑模式，进入编辑模式可以拖拽Grid组件内部[GridItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-griditem)。
 
+![](./img/note_3.0-zh-cn.png) 此属性仅在rowsTemplate和columnsTemplate都不设置时生效。
+
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
@@ -381,6 +383,8 @@ editMode(value: boolean)
 layoutDirection(value: GridDirection)
 
 设置布局的主轴方向。
+
+![](./img/note_3.0-zh-cn.png) 此属性仅在rowsTemplate和columnsTemplate都不设置时生效。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -398,6 +402,8 @@ maxCount(value: number)
 
 设置可显示的最大行数或列数。设置为小于1的值时，按默认值显示。
 
+![](./img/note_3.0-zh-cn.png) 此属性仅在rowsTemplate和columnsTemplate都不设置时生效。
+
 当layoutDirection是Row/RowReverse时，表示可显示的最大列数。
 
 当layoutDirection是Column/ColumnReverse时，表示可显示的最大行数。
@@ -412,13 +418,15 @@ maxCount(value: number)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 可显示的最大行数或列数。 默认值：Infinity |
+| value | number | 是 | 可显示的最大行数或列数。 默认值：Infinity 取值范围：[1, +∞)，设置为小于1的值时，按默认值Infinity处理。 |
 
 #### [h2]minCount8+
 
 minCount(value: number)
 
 设置可显示的最小行数或列数。设置为小于1的值时，按默认值显示。
+
+![](./img/note_3.0-zh-cn.png) 此属性仅在rowsTemplate和columnsTemplate都不设置时生效。
 
 当layoutDirection是Row/RowReverse时，表示可显示的最小列数。
 
@@ -434,13 +442,15 @@ minCount(value: number)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 可显示的最小行数或列数。 默认值：1 |
+| value | number | 是 | 可显示的最小行数或列数。 默认值：1 取值范围：[1, +∞)，设置为小于1的值时，按默认值1处理。 |
 
 #### [h2]cellLength8+
 
 cellLength(value: number)
 
 设置一行的高度或者一列的宽度。
+
+![](./img/note_3.0-zh-cn.png) 此属性仅在rowsTemplate和columnsTemplate都不设置时生效。
 
 当layoutDirection是Row/RowReverse时，表示一行的高度。
 
@@ -454,7 +464,7 @@ cellLength(value: number)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 一行的高度或者一列的宽度。 默认值：第一个元素的大小 单位：vp 取值范围：(0, +∞)，设置为小于等于0的值时，按默认值显示。 |
+| value | number | 是 | 一行的高度或者一列的宽度。 默认值：当layoutDirection是Row/RowReverse时，为首个GridItem的高度；当layoutDirection是Column/ColumnReverse时，为首个GridItem的宽度。 单位：vp 取值范围：(0, +∞)，设置为小于等于0的值时，按默认值显示。 |
 
 #### [h2]multiSelectable8+
 
@@ -547,13 +557,13 @@ nestedScroll(value: NestedScrollOptions)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [NestedScrollOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scrollable-common#nestedscrolloptions10对象说明) | 是 | 嵌套滚动选项。 |
+| value | [NestedScrollOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scrollable-common#nestedscrolloptions10对象说明) | 是 | 嵌套滚动选项，用于设置Grid组件与父组件的嵌套滚动联动行为。 |
 
 #### [h2]friction10+
 
 friction(value: number | Resource)
 
-设置摩擦系数，手动划动滚动区域时生效，仅影响惯性滚动过程，对惯性滚动过程中的链式效果有间接影响。
+设置摩擦系数，手动滑动滚动区域时生效，仅影响惯性滚动过程，对惯性滚动过程中的链式效果有间接影响。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -655,7 +665,27 @@ editModeOptions(options?: EditModeOptions)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [EditModeOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scrollable-common#editmodeoptions23对象说明) | 否 | 编辑模式选项。 |
+| options | [EditModeOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scrollable-common#editmodeoptions23对象说明) | 否 | 编辑模式选项，用于配置Grid编辑模式下的多选聚拢动画、预览角标、多选样式、双指滑动多选等行为。需要调整上述行为时传入；不传入时，各选项使用EditModeOptions对象说明中的默认值。 |
+
+#### [h2]enableEditMode
+
+enableEditMode(enabled: boolean | undefined)
+
+设置Grid是否启用编辑模式，启用编辑模式后可以在Grid组件内滑动多选[GridItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-griditem)。未通过该接口设置时，不启用编辑模式。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| enabled | boolean | undefined | 是 | 是否启用编辑模式，该参数支持[!!](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-binding)双向绑定变量。设置为true时启用编辑模式，可以滑动多选，设置为false或undefined时关闭编辑模式，不可滑动多选。 |
 
 #### GridItemAlignment12+枚举说明
 
@@ -728,7 +758,7 @@ onItemDragStart(event: OnItemDragStartCallback)
 
 拖拽浮起的GridItem可在应用窗口内移动，若需限制移动范围，可通过自定义手势实现，具体参考[示例16（实现GridItem自定义拖拽）](#示例16实现griditem自定义拖拽)。
 
-不支持拖动到Grid边缘时自动滚动，可使用通用拖拽实现，具体参考[示例17（通过拖拽事件实现GridItem拖拽）](#示例17通过拖拽事件实现griditem拖拽)。从API版本26.0.0开始，可以使用[ForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-foreach)、[LazyForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-lazyforeach)、[Repeat](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-rendering-control-repeat)的[onMove](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-drag-sorting#onmove)接口实现该效果，参考[示例21（使用OnMove进行拖拽）](#示例21使用onmove进行拖拽)。它同时支持跨行跨列的GridItem的拖拽，但需注意Grid必须是可滚动的。
+不支持拖动到Grid边缘时自动滚动，可使用通用拖拽实现，具体参考[示例17（通过拖拽事件实现GridItem拖拽）](#示例17通过拖拽事件实现griditem拖拽)。从API版本26.0.0开始，可以使用[ForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-foreach)、[LazyForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-lazyforeach)、[Repeat](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-rendering-control-repeat)的[onMove](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-drag-sorting#onmove)接口实现该效果，参考[示例22（使用OnMove进行拖拽）](#示例22使用onmove进行拖拽)。它同时支持跨行跨列的GridItem的拖拽，但需注意Grid必须是可滚动的。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -771,8 +801,8 @@ onItemDragMove(event: (event: ItemDragInfo, itemIndex: number, insertIndex: numb
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | event | [ItemDragInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scrollable-common#itemdraginfo对象说明) | 是 | 拖拽点的信息。 |
-| itemIndex | number | 是 | 拖拽起始位置。 |
-| insertIndex | number | 是 | 拖拽插入位置。 |
+| itemIndex | number | 是 | 拖拽起始位置，表示被拖拽的GridItem在Grid中的索引值。 |
+| insertIndex | number | 是 | 当前拖拽插入位置，表示GridItem在拖拽移动过程中的目标插入索引值。 |
 
 #### [h2]onItemDragLeave8+
 
@@ -845,7 +875,7 @@ onReachStart(event: () => void)
 
 网格到达起始位置时触发。
 
-Grid初始化时会触发一次，Grid滚动到起始位置时触发一次。Grid边缘效果为弹簧效果时，划动经过起始位置时触发一次，回弹回起始位置时再触发一次。
+Grid初始化时会触发一次，Grid滚动到起始位置时触发一次。Grid边缘效果为弹簧效果时，滑动经过起始位置时触发一次，回弹返回起始位置时再触发一次。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -863,9 +893,9 @@ Grid初始化时会触发一次，Grid滚动到起始位置时触发一次。Gri
 
 onReachEnd(event: () => void)
 
-网格到达末尾位置时触发。不满一屏并且最后一个子组件末端在Grid内时触发。
+网格到达末尾位置时触发。当网格内容不满一屏，并且最后一个子组件末端在Grid内时触发。
 
-Grid边缘效果为弹簧效果时，划动经过末尾位置时触发一次，回弹回末尾位置时再触发一次。
+Grid边缘效果为弹簧效果时，滑动经过末尾位置时触发一次，回弹返回末尾位置时再触发一次。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -966,6 +996,26 @@ onScroll(event: (scrollOffset: number, scrollState: [ScrollState](https://develo
 | scrollOffset | number | 是 | 相对于上一帧的偏移量，Grid的内容向上滚动时偏移量为正，向下滚动时偏移量为负。 单位vp。 |
 | scrollState | [ScrollState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list#scrollstate枚举说明) | 是 | 当前滑动状态。 |
 
+#### [h2]onEditModeChange
+
+onEditModeChange(callback: Callback<boolean> | undefined)
+
+[enableEditMode](#enableeditmode)编辑模式状态变化时触发。使用callback异步回调。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| callback | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | undefined | 是 | 编辑模式状态变化时触发的回调。回调参数类型为boolean，true表示进入编辑模式，false表示退出编辑模式。 传入undefined时取消回调。 |
+
 #### ComputedBarAttribute10+对象说明
 
 滚动条位置和长度对象。
@@ -1005,7 +1055,7 @@ setOnWillScroll(callback: OnWillScrollCallback | undefined): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | [OnWillScrollCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scrollable-common#onwillscrollcallback12) | undefined | 是 | onWillScroll事件的回调函数。 |
+| callback | [OnWillScrollCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scrollable-common#onwillscrollcallback12) | undefined | 是 | onWillScroll事件的回调函数。传入undefined时，会重置事件回调。 |
 
 #### [h2]setOnDidScroll19+
 
@@ -1025,7 +1075,7 @@ setOnDidScroll(callback: OnScrollCallback | undefined): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | [OnScrollCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scrollable-common#onscrollcallback12) | undefined | 是 | onDidScroll事件的回调函数。 |
+| callback | [OnScrollCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scrollable-common#onscrollcallback12) | undefined | 是 | onDidScroll事件的回调函数。传入undefined时，会重置事件回调。 |
 
 #### [h2]setOnScrollIndex19+
 
@@ -1045,7 +1095,7 @@ setOnScrollIndex(callback: OnGridScrollIndexCallback | undefined): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | [OnGridScrollIndexCallback](#ongridscrollindexcallback19) | undefined | 是 | onScrollIndex事件的回调函数。 |
+| callback | [OnGridScrollIndexCallback](#ongridscrollindexcallback19) | undefined | 是 | onScrollIndex事件的回调函数。传入undefined时，会重置事件回调。 |
 
 #### OnGridScrollIndexCallback19+
 
@@ -1149,7 +1199,7 @@ struct GridExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413184.gif)
+ ![](./img/zh-cn_image_0000002686087919.gif)
 
 #### [h2]示例2（可滚动Grid和滚动事件）
 
@@ -1297,7 +1347,7 @@ struct GridExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732413.gif)
+ ![](./img/zh-cn_image_0000002685928091.gif)
 
 #### [h2]示例3（可滚动Grid设置跨行跨列节点）
 
@@ -1389,7 +1439,7 @@ struct GridExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253294.gif)
+ ![](./img/zh-cn_image_0000002656008412.gif)
 
 #### [h2]示例4（Grid嵌套滚动）
 
@@ -1570,7 +1620,7 @@ struct GridExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612477.gif)
+ ![](./img/zh-cn_image_0000002655848492.gif)
 
 #### [h2]示例5（Grid拖拽场景）
 
@@ -1658,19 +1708,19 @@ struct GridExample {
 
 网格子组件开始拖拽：
 
-![](./img/zh-cn_image_0000002631413186.png)
+![](./img/zh-cn_image_0000002686087921.png)
 
 网格子组件拖拽过程中：
 
-![](./img/zh-cn_image_0000002661732415.png)
+![](./img/zh-cn_image_0000002685928093.png)
 
 网格子组件1与子组件6拖拽交换位置后：
 
-![](./img/zh-cn_image_0000002631253296.png)
+![](./img/zh-cn_image_0000002656008414.png)
 
 拖拽动画：
 
-![](./img/zh-cn_image_0000002661612479.gif)
+![](./img/zh-cn_image_0000002655848494.gif)
 
 #### [h2]示例6（自适应Grid）
 
@@ -1722,7 +1772,7 @@ struct GridExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413188.gif)
+ ![](./img/zh-cn_image_0000002686087923.gif)
 
 #### [h2]示例7（双指缩放修改Grid列数）
 
@@ -1807,7 +1857,7 @@ struct GridExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732417.gif)
+ ![](./img/zh-cn_image_0000002685928095.gif)
 
 #### [h2]示例8（设置自适应列数）
 
@@ -1876,7 +1926,7 @@ struct GridColumnsTemplate {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253298.png)
+ ![](./img/zh-cn_image_0000002656008416.png)
 
 #### [h2]示例9（以当前行最高的GridItem的高度为其他GridItem的高度）
 
@@ -1914,7 +1964,7 @@ struct Index {
       Text('Grid alignItems示例代码')
 
       Grid() {
-        LazyForEach(this.data, (item: number) => {
+        LazyForEach(this.data, (item: string) => {
           // GridItem和Column不设置高度，默认会自适应子组件大小，设置STRETCH的场景下，会变成与当前行最高节点同高。
           // 若设置高度，则会保持已设置的高度，不会与当前行最高节点同高。
           GridItem() {
@@ -1944,7 +1994,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612481.png)
+ ![](./img/zh-cn_image_0000002655848496.png)
 
 #### [h2]示例10（设置边缘渐隐）
 
@@ -1999,7 +2049,7 @@ struct GridExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413190.gif)
+ ![](./img/zh-cn_image_0000002686087925.gif)
 
 #### [h2]示例11（单边边缘效果）
 
@@ -2053,7 +2103,7 @@ struct GridExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732419.gif)
+ ![](./img/zh-cn_image_0000002685928097.gif)
 
 #### [h2]示例12（方向键走焦换行模式）
 
@@ -2138,7 +2188,7 @@ struct GridExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253300.gif)
+ ![](./img/zh-cn_image_0000002656008418.gif)
 
 #### [h2]示例13（设置滚动事件）
 
@@ -2251,7 +2301,7 @@ struct GridScrollToIndexSample {
     let list: string[] = [];
     for (let i = 0; i < 10; i++) {
       for (let j = 0; j < 10; j++) {
-        list.push((i * 5 + j  + 1).toString());
+        list.push((i * 5 + j + 1).toString());
       }
     }
     this.numbers =  new GridDataSource(list);
@@ -2293,7 +2343,7 @@ struct GridScrollToIndexSample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612483.gif)
+ ![](./img/zh-cn_image_0000002655848498.gif)
 
 #### [h2]示例15（实现Grid滑动选择）
 
@@ -2312,7 +2362,7 @@ enum SlideActionType {
   END
 }
 // 热区
-let HOT_AREA_LENGTH: number;
+let HOT_AREA_LENGTH: number = 0;
 try {
   HOT_AREA_LENGTH =
     Math.round(display.getDefaultDisplaySync().densityDPI * 10 / 25.4 / display.getDefaultDisplaySync().densityPixels);
@@ -2322,7 +2372,7 @@ try {
 // 滚动曲线: 贝塞尔曲线
 const SLIDE_SELECT_SPEED_CURVE = curves.cubicBezierCurve(0.33, 0, 0.67, 1);
 // 滚动速度: 最大速度
-let AUTO_SPEED_MAX: number;
+let AUTO_SPEED_MAX: number = 0;
 try {
   AUTO_SPEED_MAX = Math.round(2400 / display.getDefaultDisplaySync().densityPixels);
 } catch (error) {
@@ -2595,7 +2645,7 @@ struct GridExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413192.gif)
+ ![](./img/zh-cn_image_0000002686087927.gif)
 
 #### [h2]示例16（实现GridItem自定义拖拽）
 
@@ -2610,7 +2660,6 @@ struct GridItemExample {
   @State numbers: number[] = [];
   @State dragItem: number = -1;
   @State scaleItem: number = -1;
-  @State item: number = -1;
   private dragRefOffsetX: number = 0;
   private dragRefOffsetY: number = 0;
   @State offsetX: number = 0;
@@ -2865,7 +2914,7 @@ struct GridItemExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732421.gif)
+ ![](./img/zh-cn_image_0000002685928099.gif)
 
 #### [h2]示例17（通过拖拽事件实现GridItem拖拽）
 
@@ -2898,7 +2947,7 @@ struct Example {
   build() {
     Column({ space: 5 }) {
       Grid() {
-        LazyForEach(this.numbers, (item: number, index: number) => {
+        LazyForEach(this.numbers, (item: string, index: number) => {
           GridItem() {
             Text(item + '')
               .fontSize(16)
@@ -2936,7 +2985,7 @@ struct Example {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253302.gif)
+ ![](./img/zh-cn_image_0000002656008420.gif)
 
 #### [h2]示例18（Grid组件基于断点配置列数）
 
@@ -2989,15 +3038,15 @@ struct GridExample {
 ```
  Grid宽度属于sm及更小的断点区间时显示2列。
 
-![](./img/zh-cn_image_0000002661612485.png)
+![](./img/zh-cn_image_0000002655848500.png)
 
 Grid宽度属于md断点区间时显示3列。
 
-![](./img/zh-cn_image_0000002631413194.png)
+![](./img/zh-cn_image_0000002686087929.png)
 
 Grid宽度属于lg及更大的断点区间时显示5列。
 
-![](./img/zh-cn_image_0000002661732423.png)
+![](./img/zh-cn_image_0000002685928101.png)
 
 #### [h2]示例19（获取内容总大小）
 
@@ -3082,7 +3131,7 @@ struct GridExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253304.gif)
+ ![](./img/zh-cn_image_0000002656008422.gif)
 
 #### [h2]示例20（设置多选聚拢动画）
 
@@ -3185,9 +3234,105 @@ struct GridExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612487.gif)
+ ![](./img/zh-cn_image_0000002655848502.gif)
 
-#### [h2]示例21（使用OnMove进行拖拽）
+#### [h2]示例21（设置滑动多选）
+
+该示例通过使用enableEditMode双向绑定和onEditModeChange事件监听在Grid上双指滑动进入多选模式的通知，实现了在Grid上边滑动边选择的效果。
+
+从API版本26.0.0开始，Grid组件新增[enableEditMode](#enableeditmode)接口和[onEditModeChange](#oneditmodechange)事件。
+
+GridDataSource说明及完整代码参考[示例2（可滚动Grid和滚动事件）](#示例2可滚动grid和滚动事件)。
+
+```
+// xxx.ets
+import { GridDataSource } from './GridDataSource';
+
+@Entry
+@Component
+struct GridExample {
+  numbers: GridDataSource = new GridDataSource([]);
+  @State @Watch('onEditModeChanged') enableEditMode: boolean = false;
+  @State enableTwoFingerSelect: boolean = false;
+  @State selectedIndexes: number[] = [];
+
+  onEditModeChanged() {
+    console.info(`enableEditMode changed to: ${this.enableEditMode}`);
+    if (!this.enableEditMode) {
+      console.info('enableEditMode changed to false, clearing selectedIndexes');
+      this.selectedIndexes = [];
+    }
+  }
+
+  aboutToAppear() {
+    let list: string[] = [];
+    for (let i = 0; i < 20; i++) {
+      for (let j = 0; j < 20; j++) {
+        list.push((20 * i + j + 1).toString());
+      }
+    }
+    this.numbers = new GridDataSource(list);
+  }
+
+  build() {
+    Column({ space: 5 }) {
+      Grid() {
+        LazyForEach(this.numbers, (day: string, index: number) => {
+          GridItem() {
+            Stack() {
+              Text(day)
+                .fontSize(16)
+                .backgroundColor(0xF9CF93)
+                .width('100%')
+                .height(80)
+                .textAlign(TextAlign.Center)
+            }
+          }
+          .selected(this.selectedIndexes.includes(index))
+          .onSelect((isSelected: boolean) => {
+            console.info('item ' + index.toString() + ' is ' + (isSelected ? 'selected' : 'unselected'));
+            if (isSelected) {
+              this.selectedIndexes.push(index);
+            } else {
+              let deleted = this.selectedIndexes.findIndex((value) => value === index);
+              if (deleted !== -1) {
+                this.selectedIndexes.splice(deleted, 1);
+              }
+            }
+          })
+        }, (index: number) => index.toString())
+      }
+      .columnsTemplate('1fr 1fr 1fr')
+      .columnsGap(10)
+      .rowsGap(10)
+      .width('90%')
+      .height('50%')
+      .backgroundColor(0xFAEEE0)
+      .enableEditMode(this.enableEditMode!!)
+      .onEditModeChange((data: boolean) => {
+        // 也可以不使用enableEditMode双向绑定，在此处实现onEditModeChanged中的业务逻辑
+        console.info(`onEditModeChange:${data}`)
+      })
+      .editModeOptions({ useDefaultMultiSelectStyle: true, enableTwoFingerMultiSelect: this.enableTwoFingerSelect })
+
+      Row() {
+        Button('EditMode: ' + this.enableEditMode).onClick(() => {
+          this.enableEditMode = !this.enableEditMode;
+        })
+        Button('TwoFinger: ' + this.enableTwoFingerSelect).onClick(() => {
+          this.enableTwoFingerSelect = !this.enableTwoFingerSelect;
+        })
+      }
+      .margin({
+        bottom: 30
+      })
+    }.width('100%').margin({ top: 5 })
+  }
+}
+```
+ ![](./img/zh-cn_image_0000002686087931.gif)
+
+#### [h2]示例22（使用OnMove进行拖拽）
 
 从API版本26.0.0开始，该示例展示了Grid使用LazyForEach的[onMove](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-drag-sorting#onmove)接口进行拖拽排序的效果，支持拖动到Grid边缘时触发Grid的自动滚动，同时Grid存在跨行跨列节点。
 
@@ -3397,4 +3542,4 @@ struct GridOnMoveExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413196.gif)
+ ![](./img/zh-cn_image_0000002685928103.gif)

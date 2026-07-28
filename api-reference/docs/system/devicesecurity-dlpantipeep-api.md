@@ -2,8 +2,8 @@
 title: "DlpAntiPeep（防窥保护）"
 upstream_id: "harmonyos-references/devicesecurity-dlpantipeep-api"
 catalog: "harmonyos-references"
-content_hash: "a5b034e4a714"
-synced_at: "2026-07-09T00:59:15.187799"
+content_hash: "c976cedf3b8b"
+synced_at: "2026-07-28T16:50:26.356308"
 ---
 
 # DlpAntiPeep（防窥保护）
@@ -106,7 +106,7 @@ on(type: 'dlpAntiPeep', callback: Callback<DlpAntiPeepStatus>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 801 | Capability not supported. |
+| 801 | Capability not supported. Function on can not work correctly due to limited device capabilities. |
 | 1020600001 | Internal error. |
 
 示例：
@@ -151,7 +151,7 @@ off(type: 'dlpAntiPeep', callback?: Callback<DlpAntiPeepStatus>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 801 | Capability not supported. |
+| 801 | Capability not supported. Function off can not work correctly due to limited device capabilities. |
 | 1020600001 | Internal error. |
 
 示例：

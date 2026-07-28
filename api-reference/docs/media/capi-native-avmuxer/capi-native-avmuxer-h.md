@@ -2,8 +2,8 @@
 title: "native_avmuxer.h"
 upstream_id: "harmonyos-references/capi-native-avmuxer-h"
 catalog: "harmonyos-references"
-content_hash: "3aeca2fac336"
-synced_at: "2026-07-09T01:00:15.054695"
+content_hash: "e8e0ab03ad2c"
+synced_at: "2026-07-28T16:51:34.031134"
 ---
 
 # native_avmuxer.h
@@ -107,7 +107,7 @@ OH_AVErrCode OH_AVMuxer_SetFormat(OH_AVMuxer *muxer, OH_AVFormat *format)
 ```
  描述
 
-设置format数据到封装器。
+设置format数据到封装器。该接口必须在[OH_AVMuxer_Start](#oh_avmuxer_start)前调用。
 
 API version 14起，支持设置创建时间OH_MD_KEY_CREATION_TIME。若创建时间未写入成功，请排查OH_MD_KEY_CREATION_TIME字符串设置是否符合ISO 8601标准的时间格式且为UTC时间。
 
@@ -207,7 +207,7 @@ OH_AVErrCode OH_AVMuxer_WriteSample(OH_AVMuxer *muxer, uint32_t trackIndex, OH_A
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_AVMuxer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avmuxer-oh-avmuxer) *muxer | 指向OH_AVMuxer实例的指针。 |
-| uint32_t trackIndex | 数据对应的音视频轨的索引。 |
+| uint32_t trackIndex | 数据对应的音视频轨的索引，取值范围为已成功添加的音视频轨索引。 |
 | [OH_AVMemory](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-core-oh-avmemory) *sample | 编码或解封装得到的数据。 |
 | [OH_AVCodecBufferAttr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-core-oh-avcodecbufferattr) info | sample对应的描述信息。 |
 
@@ -235,7 +235,7 @@ OH_AVErrCode OH_AVMuxer_WriteSampleBuffer(OH_AVMuxer *muxer, uint32_t trackIndex
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_AVMuxer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avmuxer-oh-avmuxer) *muxer | 指向OH_AVMuxer实例的指针。 |
-| uint32_t trackIndex | 数据对应的音视频轨的索引。 |
+| uint32_t trackIndex | 数据对应的音视频轨的索引，取值范围为已成功添加的音视频轨索引。 |
 | const [OH_AVBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-core-oh-avbuffer) *sample | 编码或解封装得到的数据及属性。 |
 
 返回：
@@ -251,7 +251,7 @@ OH_AVErrCode OH_AVMuxer_Stop(OH_AVMuxer *muxer)
 ```
  描述
 
-停止封装。封装器停止后不支持重新开始。
+停止封装。该接口必须在[OH_AVMuxer_Start](#oh_avmuxer_start)后调用，封装器停止后不支持重新开始。
 
 系统能力： SystemCapability.Multimedia.Media.Muxer
 

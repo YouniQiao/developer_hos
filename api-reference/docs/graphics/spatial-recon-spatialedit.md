@@ -2,8 +2,8 @@
 title: "spatialEdit"
 upstream_id: "harmonyos-references/spatial-recon-spatialedit"
 catalog: "harmonyos-references"
-content_hash: "0f4b7410f8d3"
-synced_at: "2026-07-09T17:27:54.305810"
+content_hash: "935513a78d13"
+synced_at: "2026-07-28T16:52:25.676442"
 ---
 
 # spatialEdit
@@ -526,6 +526,54 @@ function undo() : void {
 }
 ```
 
+#### [h2]getRecommended3DBox
+
+getRecommended3DBox(ori: Vec3, dir: Vec3): Aabb
+
+获取对象沿特定射线的推荐3D轴对齐边界框。
+
+系统能力： SystemCapability.Graphics.SpatialEdit
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| ori | [Vec3](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-types#vec3) | 是 | 射线的起点坐标。 |
+| dir | Vec3 | 是 | 射线的方向向量。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Aabb | 射线检测到的物体的3D轴对齐包围盒（AABB）。 |
+
+示例：
+
+```
+import { spatialRender, spatialEdit } from '@kit.SpatialReconKit';
+import { Scene, SceneResourceFactory, Aabb, Vec3 } from '@kit.ArkGraphics3D';
+
+function getRecommended3DBox() : void {
+  // 加载3DGS插件
+  Scene.getDefaultRenderContext()?.loadPlugin(spatialRender.GSPlugin.PLUGIN_ID);
+  // 加载场景
+  Scene.load().then(async (scene: Scene) => {
+    let rf: SceneResourceFactory = scene.getResourceFactory();
+    // 获取GSNode实例
+    let gsNode: spatialRender.GSNode = await rf.createNode({ name: "gs", path: "//gs" })
+    // 获取GSEdit实例
+    let editor: spatialEdit.GSEdit = spatialEdit.GSEdit.editGSNode(gsNode);
+
+    let rayOrigin: Vec3 = { x : 0 , y : 0 , z : 0 };
+    let rayDirection: Vec3 = { x : 1 , y : 1 , z : 1 };
+    // 获取射线相交物体的包围盒
+    let aabb: Aabb = editor.getRecommended3DBox(rayOrigin, rayDirection);
+  });
+}
+```
+
 #### [h2]saveToPLY
 
 saveToPLY(uri: string): Promise<boolean>
@@ -580,6 +628,52 @@ function SaveToPLY(context: Context) : void {
     } else {
       console.error("保存失败");
     }
+  });
+}
+```
+
+#### [h2]extract3DMainBody
+
+extract3DMainBody(point: Vec2): Promise<boolean>
+
+根据按压的点集提取3D主体,调用完成后，抽取结果会覆盖内存中的GSNode数据，使用Promise异步回调。
+
+系统能力： SystemCapability.Graphics.SpatialEdit
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| point | [Vec2](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-types#vec2) | 是 | 屏幕位置坐标，用于指定提取主体的位置。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，是否成功提取主体，true表示成功，false表示失败。 |
+
+示例：
+
+```
+import { spatialRender, spatialEdit } from '@kit.SpatialReconKit';
+import { Scene, SceneResourceFactory, Vec2 } from '@kit.ArkGraphics3D';
+
+function extract3DMainBody() : void {
+  // 加载3DGS插件
+  Scene.getDefaultRenderContext()?.loadPlugin(spatialRender.GSPlugin.PLUGIN_ID);
+  // 加载场景
+  Scene.load().then(async (scene: Scene) => {
+    let rf: SceneResourceFactory = scene.getResourceFactory();
+    // 获取GSNode实例
+    let gsNode: spatialRender.GSNode = await rf.createNode({ name: "gs", path: "//gs" });
+    // 获取GSEdit实例
+    let editor: spatialEdit.GSEdit = spatialEdit.GSEdit.editGSNode(gsNode);
+
+    let point: Vec2 = { x: 0.5, y: 0.5 };
+    // 提取该位置的3D主体
+    let result: boolean = await editor.extract3DMainBody(point);
   });
 }
 ```

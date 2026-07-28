@@ -2,8 +2,8 @@
 title: "native_audiostreambuilder.h"
 upstream_id: "harmonyos-references/capi-native-audiostreambuilder-h"
 catalog: "harmonyos-references"
-content_hash: "d8f83fed3ae1"
-synced_at: "2026-07-09T01:00:11.159512"
+content_hash: "e9bd9e7e4d37"
+synced_at: "2026-07-28T16:51:28.678921"
 ---
 
 # native_audiostreambuilder.h
@@ -61,7 +61,10 @@ synced_at: "2026-07-09T01:00:11.159512"
 | [OH_AudioStream_Result OH_AudioStreamBuilder_SetCapturerWillMuteWhenInterrupted(OH_AudioStreamBuilder* builder, bool muteWhenInterrupted)](#oh_audiostreambuilder_setcapturerwillmutewheninterrupted) | 设置输入音频流是否启用静音打断模式。 |
 | [OH_AudioStream_Result OH_AudioStreamBuilder_SetRendererFastStatusChangeCallback(OH_AudioStreamBuilder* builder, OH_AudioRenderer_OnFastStatusChange callback, void* userData)](#oh_audiostreambuilder_setrendererfaststatuschangecallback) | 设置音频播放过程中低时延状态改变事件的回调函数。 |
 | [OH_AudioStream_Result OH_AudioStreamBuilder_SetCapturerFastStatusChangeCallback(OH_AudioStreamBuilder* builder, OH_AudioCapturer_OnFastStatusChange callback, void* userData)](#oh_audiostreambuilder_setcapturerfaststatuschangecallback) | 设置音频录制过程中低时延状态改变事件的回调函数。 |
+| [OH_AudioStream_Result OH_AudioStreamBuilder_SetCapturerLoopbackEffectEnabled(OH_AudioStreamBuilder* builder, bool enabled)](#oh_audiostreambuilder_setcapturerloopbackeffectenabled) | 设置音频录制流是否采集带音频混响效果的音频数据。当音频环回设置为硬件模式并启用混响效果时，低时延模式的采集器可以获取到具备混响效果的录音数据。 |
 | [OH_AudioStream_Result OH_AudioStreamBuilder_SetPlaybackCaptureMode(OH_AudioStreamBuilder* builder, uint32_t mode)](#oh_audiostreambuilder_setplaybackcapturemode) | 在使用内录（录制设备内部应用的声音）时设置可以录制的音频模式，该模式将决定要录制的音频流类型。此功能仅适用于[AudioStream_Type_Capturer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_type)类型。该API暂不对外支持。 |
+| [OH_AudioStream_Result OH_AudioStreamBuilder_SetSensitiveRecordPermitCallback(OH_AudioStreamBuilder* builder, OH_AudioCapturer_SensitiveRecordPermitCallback callback, void* userData)](#oh_audiostreambuilder_setsensitiverecordpermitcallback) | 设置蜂窝通话下行录音风险提示语播放结束的回调函数。仅在使用[OH_AudioStream_SourceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_sourcetype).AUDIOSTREAM_SOURCE_TYPE_VOICE_DOWNLINK录制时需要设置此函数。此回调必须成功设置，否则采集器无法创建。音频采集器创建后，风险提示语将自动添加到发送给通话对方的语音数据中。应用应等待回调结果后再启动采集器，否则[OH_AudioCapturer_Start](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiocapturer-h#oh_audiocapturer_start)将返回错误。请确保音频采集器在蜂窝通话开始后创建，否则[OH_AudioStreamBuilder_GenerateCapturer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostreambuilder-h#oh_audiostreambuilder_generatecapturer)将返回错误。 |
+| [OH_AudioStream_Result OH_AudioStreamBuilder_SetCellularRecordSecurityParams(OH_AudioStreamBuilder* builder, const char* cellularRecordPhoneNum, const char* cellularRecordToken)](#oh_audiostreambuilder_setcellularrecordsecurityparams) | 设置蜂窝通话下行录音的电话号码和安全令牌。仅在使用[OH_AudioStream_SourceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_sourcetype).AUDIOSTREAM_SOURCE_TYPE_VOICE_DOWNLINK录制时需要设置此函数。电话号码和安全令牌将用于校验蜂窝通话下行采集器是否匹配对应的蜂窝通话，必须成功设置，否则采集器无法创建。 |
 
 #### 函数说明
 
@@ -82,7 +85,7 @@ OH_AudioStream_Result OH_AudioStreamBuilder_Create(OH_AudioStreamBuilder** build
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_AudioStreamBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiostreambuilderstruct)** builder | 该引用指向创建的构造器的结果。 |
+| [OH_AudioStreamBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiostreambuilderstruct)** builder | 用于接收创建的构造器实例。 |
 | [OH_AudioStream_Type](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_type) type | 构造器的流类型。AUDIOSTREAM_TYPE_RENDERER或AUDIOSTREAM_TYPE_CAPTURER。 |
 
 返回：
@@ -276,7 +279,7 @@ OH_AudioStream_Result OH_AudioStreamBuilder_SetRendererInfo(OH_AudioStreamBuilde
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_AudioStreamBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiostreambuilderstruct)* builder | 指向[OH_AudioStreamBuilder_Create](#oh_audiostreambuilder_create)创建的构造器实例。 |
-| [OH_AudioStream_Usage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_usage) usage | 输出音频流属性，使用的工作场景。 |
+| [OH_AudioStream_Usage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_usage) usage | 输出音频流的使用场景。 |
 
 返回：
 
@@ -324,7 +327,7 @@ OH_AudioStream_Result OH_AudioStreamBuilder_SetCapturerInfo(OH_AudioStreamBuilde
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_AudioStreamBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiostreambuilderstruct)* builder | 指向[OH_AudioStreamBuilder_Create](#oh_audiostreambuilder_create)创建的构造器实例。 |
-| [OH_AudioStream_SourceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_sourcetype) sourceType | 输入音频流属性，使用的工作场景。 |
+| [OH_AudioStream_SourceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_sourcetype) sourceType | 输入音频流的使用场景。 |
 
 返回：
 
@@ -866,6 +869,30 @@ OH_AudioStream_Result OH_AudioStreamBuilder_SetCapturerFastStatusChangeCallback(
 | --- | --- |
 | [OH_AudioStream_Result](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_result) | AUDIOSTREAM_SUCCESS：函数执行成功。 AUDIOSTREAM_ERROR_INVALID_PARAM：参数无效，比如，builder为空指针。 |
 
+#### [h2]OH_AudioStreamBuilder_SetCapturerLoopbackEffectEnabled()
+
+```
+OH_AudioStream_Result OH_AudioStreamBuilder_SetCapturerLoopbackEffectEnabled(OH_AudioStreamBuilder* builder, bool enabled)
+```
+ 描述
+
+设置音频录制流是否采集带音频混响效果的音频数据。当音频环回设置为硬件模式并启用混响效果时，低时延模式的采集器可以获取到具备混响效果的录音数据。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [OH_AudioStreamBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiostreambuilderstruct)* builder | 指向[OH_AudioStreamBuilder_Create](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostreambuilder-h#oh_audiostreambuilder_create)创建的构造器实例。 |
+| bool enabled | 设置应用程序是否采集带混响效果的音频数据。true表示采集，false表示不采集。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| [OH_AudioStream_Result](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_result) | AUDIOSTREAM_SUCCESS：函数执行成功。 AUDIOSTREAM_ERROR_INVALID_PARAM：参数无效。如builder为空指针。 |
+
 #### [h2]OH_AudioStreamBuilder_SetPlaybackCaptureMode()
 
 ```
@@ -888,4 +915,54 @@ OH_AudioStream_Result OH_AudioStreamBuilder_SetPlaybackCaptureMode(OH_AudioStrea
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_AudioStream_Result](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_result) | AUDIOSTREAM_SUCCESS：函数执行成功。 AUDIOSTREAM_ERROR_INVALID_PARAM：参数无效。例如，builder或mode为空指针。 |
+| [OH_AudioStream_Result](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_result) | AUDIOSTREAM_SUCCESS：函数执行成功。 AUDIOSTREAM_ERROR_INVALID_PARAM：参数无效。例如，builder为空指针或mode值无效。 |
+
+#### [h2]OH_AudioStreamBuilder_SetSensitiveRecordPermitCallback()
+
+```
+OH_AudioStream_Result OH_AudioStreamBuilder_SetSensitiveRecordPermitCallback(OH_AudioStreamBuilder* builder, OH_AudioCapturer_SensitiveRecordPermitCallback callback, void* userData)
+```
+ 描述
+
+设置蜂窝通话下行录音风险提示语播放结束的回调函数。仅在使用[OH_AudioStream_SourceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_sourcetype).AUDIOSTREAM_SOURCE_TYPE_VOICE_DOWNLINK录制时需要设置此函数。此回调必须成功设置，否则采集器无法创建。音频采集器创建后，风险提示语将自动添加到发送给通话对方的语音数据中。应用应等待回调结果后再启动采集器，否则[OH_AudioCapturer_Start](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiocapturer-h#oh_audiocapturer_start)将返回错误。请确保音频采集器在蜂窝通话开始后创建，否则[OH_AudioStreamBuilder_GenerateCapturer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostreambuilder-h#oh_audiostreambuilder_generatecapturer)将返回错误。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [OH_AudioStreamBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiostreambuilderstruct)* builder | 指向[OH_AudioStreamBuilder_Create](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostreambuilder-h#oh_audiostreambuilder_create)创建的构造器实例。 |
+| OH_AudioCapturer_SensitiveRecordPermitCallback callback | 用于接收风险提示语播放结束的回调函数，不允许为空指针。 |
+| void* userData | 用户数据指针，将在回调中回传给应用。若无需传递数据，可传入空指针。若数据不为空指针，调用方应在收到回调时确认数据是否仍然有效。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| [OH_AudioStream_Result](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_result) | - - AUDIOSTREAM_SUCCESS：函数执行成功。 - - - AUDIOSTREAM_ERROR_INVALID_PARAM：参数builder或callback为空指针。 - - |
+
+#### [h2]OH_AudioStreamBuilder_SetCellularRecordSecurityParams()
+
+```
+OH_AudioStream_Result OH_AudioStreamBuilder_SetCellularRecordSecurityParams(OH_AudioStreamBuilder* builder, const char* cellularRecordPhoneNum, const char* cellularRecordToken)
+```
+ 描述
+
+设置蜂窝通话下行录音的电话号码和安全令牌。仅在使用[OH_AudioStream_SourceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_sourcetype).AUDIOSTREAM_SOURCE_TYPE_VOICE_DOWNLINK录制时需要设置此函数。电话号码和安全令牌将用于校验蜂窝通话下行采集器是否匹配对应的蜂窝通话，必须成功设置，否则采集器无法创建。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [OH_AudioStreamBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiostreambuilderstruct)* builder | 指向[OH_AudioStreamBuilder_Create](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostreambuilder-h#oh_audiostreambuilder_create)创建的构造器实例。 |
+| const char* cellularRecordPhoneNum | 目标蜂窝通话的电话号码，用于makeCallWithToken()中，不允许为空指针。 |
+| const char* cellularRecordToken | 目标蜂窝通话的安全令牌，可通过通话管理的makeCallWithToken()函数获取，不允许为空指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| [OH_AudioStream_Result](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_result) | - - AUDIOSTREAM_SUCCESS：函数执行成功。 - - - AUDIOSTREAM_ERROR_INVALID_PARAM：参数builder、cellularRecordPhoneNum或cellularRecordToken为空指针。 - - |

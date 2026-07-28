@@ -2,8 +2,8 @@
 title: "OpenGL"
 upstream_id: "harmonyos-references/opengl"
 catalog: "harmonyos-references"
-content_hash: "4b5ac16e8a7a"
-synced_at: "2026-07-09T01:01:48.684064"
+content_hash: "25a2ff36a216"
+synced_at: "2026-07-28T16:53:22.609263"
 ---
 
 # OpenGL
@@ -102,7 +102,7 @@ libEGL.so
 
 #### 相关参考
 
-针对OpenGL的使用和相关开发，需要同步了解NDK的开发过程，以及XComponent组件等的使用。具体可参考:
+针对OpenGL的使用和相关开发，需要同步了解NDK的开发过程，以及XComponent组件等的使用。具体可参考：
 
 - [NDK开发参考](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-development-overview)
 - [Node-API参考](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/napi)

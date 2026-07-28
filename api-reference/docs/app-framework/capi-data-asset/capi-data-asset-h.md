@@ -2,8 +2,8 @@
 title: "data_asset.h"
 upstream_id: "harmonyos-references/capi-data-asset-h"
 catalog: "harmonyos-references"
-content_hash: "d0f84bf081da"
-synced_at: "2026-07-09T00:57:18.926288"
+content_hash: "3466d4efab42"
+synced_at: "2026-07-28T16:40:51.160718"
 ---
 
 # data_asset.h
@@ -246,7 +246,7 @@ int OH_Data_Asset_SetStatus(Data_Asset *asset, Data_AssetStatus status)
 | 参数项 | 描述 |
 | --- | --- |
 | [Data_Asset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-data-asset) *asset | 表示指向[Data_Asset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-data-asset)实例的指针。 |
-| [Data_AssetStatus](#data_assetstatus) status | 表示需要设置的状态码。详细信息可以查看[Data_AssetStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-data-asset-h#data_assetstatus)。 |
+| [Data_AssetStatus](#data_assetstatus) status | 表示需要设置的状态码。详细信息可以查看[Data_AssetStatus](#data_assetstatus)。 |
 
 返回：
 
@@ -421,7 +421,7 @@ int OH_Data_Asset_GetStatus(Data_Asset *asset, Data_AssetStatus *status)
 | 参数项 | 描述 |
 | --- | --- |
 | [Data_Asset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-data-asset) *asset | 表示指向[Data_Asset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-data-asset)实例的指针。 |
-| [Data_AssetStatus](#data_assetstatus) *status | 参数是输出参数，资产类型数据的状态码会以[Data_AssetStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-data-asset-h#data_assetstatus)形式写入该变量。 |
+| [Data_AssetStatus](#data_assetstatus) *status | 参数是输出参数，资产类型数据的状态码会以[Data_AssetStatus](#data_assetstatus)形式写入该变量。 |
 
 返回：
 
@@ -444,7 +444,7 @@ Data_Asset *OH_Data_Asset_CreateOne(void)
 
 | 类型 | 说明 |
 | --- | --- |
-| [Data_Asset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-data-asset) | 创建成功则返回一个指向[Data_Asset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-data-asset)结构体实例的指针，否则返回NULL。 使用完成后，必须通过[OH_Data_Asset_DestroyOne](#oh_data_asset_destroyone)接口释放内存。 |
+| [Data_Asset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-data-asset) * | 创建成功则返回一个指向[Data_Asset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-data-asset)结构体实例的指针，否则返回NULL。 使用完成后，必须通过[OH_Data_Asset_DestroyOne](#oh_data_asset_destroyone)接口释放内存。 |
 
 #### [h2]OH_Data_Asset_DestroyOne()
 
@@ -484,13 +484,13 @@ Data_Asset **OH_Data_Asset_CreateMultiple(uint32_t count)
 
 | 参数项 | 描述 |
 | --- | --- |
-| uint32_t count | 代表创建的资产类型数据的数量。 |
+| uint32_t count | 表示要创建的[Data_Asset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-data-asset)类型实例的数量。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| [Data_Asset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-data-asset) | 创建成功则返回一个指向[Data_Asset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-data-asset)结构体实例的指针，否则返回NULL。 使用完成后，必须通过[OH_Data_Asset_DestroyMultiple](#oh_data_asset_destroymultiple)接口释放内存。 |
+| [Data_Asset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-data-asset) ** | 创建成功则返回一个指向[Data_Asset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-data-asset)结构体指针数组的指针，否则返回NULL。 使用完成后，必须通过[OH_Data_Asset_DestroyMultiple](#oh_data_asset_destroymultiple)接口释放内存。 |
 
 #### [h2]OH_Data_Asset_DestroyMultiple()
 
@@ -507,7 +507,7 @@ int OH_Data_Asset_DestroyMultiple(Data_Asset **assets, uint32_t count)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [Data_Asset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-data-asset) **assets | 表示指向[Data_Asset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-data-asset)实例的指针。 |
+| [Data_Asset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-data-asset) **assets | 表示指向[Data_Asset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-data-asset)结构体指针数组的指针。 |
 | uint32_t count | 代表需要销毁的[Data_Asset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-data-asset)类型对象的数量。 |
 
 返回：

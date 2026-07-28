@@ -2,13 +2,13 @@
 title: "MenuItemGroup"
 upstream_id: "harmonyos-references/ts-basic-components-menuitemgroup"
 catalog: "harmonyos-references"
-content_hash: "8e32033b241c"
-synced_at: "2026-07-09T00:58:07.224290"
+content_hash: "ca3fd7973ee8"
+synced_at: "2026-07-28T16:47:03.977813"
 ---
 
 # MenuItemGroup
 
-该组件用来展示菜单MenuItem的分组。
+该组件用于展示MenuItem的分组，支持设置分组的标题和尾部信息，用于组织和管理菜单项的分类结构。适用于需要在菜单中按类别组织多个菜单项的场景，通过分组清晰地展示菜单的层次结构，提升菜单的可读性和用户体验。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -31,11 +31,11 @@ MenuItemGroup(value?: MenuItemGroupOptions)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [MenuItemGroupOptions](#menuitemgroupoptions对象说明) | 否 | 包含设置MenuItemGroup的标题和尾部显示信息。 未设置时，不显示标题和尾部信息。 |
+| value | [MenuItemGroupOptions](#menuitemgroupoptions对象说明) | 否 | 设置MenuItemGroup的标题和尾部信息。 未设置时，不显示标题和尾部信息。 |
 
 #### MenuItemGroupOptions对象说明
 
-菜单MenuItem分组的标题和尾部信息。
+MenuItem分组的标题和尾部信息。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -43,8 +43,8 @@ MenuItemGroup(value?: MenuItemGroupOptions)
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| header | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 否 | 是 | 设置对应group的标题显示信息。 未设置时，不显示标题信息。 |
-| footer | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 否 | 是 | 设置对应group的尾部显示信息。 未设置时，不显示尾部信息。 |
+| header | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 否 | 是 | 设置分组的标题，显示在分组中所有菜单项的顶部。 未设置时，不显示标题。 |
+| footer | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 否 | 是 | 设置分组的菜单页脚，显示在分组中所有菜单项的底部。 未设置时，不显示菜单页脚。 |
 
 #### 示例
 

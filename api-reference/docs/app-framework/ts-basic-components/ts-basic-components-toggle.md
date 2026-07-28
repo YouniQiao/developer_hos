@@ -2,17 +2,17 @@
 title: "Toggle"
 upstream_id: "harmonyos-references/ts-basic-components-toggle"
 catalog: "harmonyos-references"
-content_hash: "e2a8f8ccd044"
-synced_at: "2026-07-09T00:57:52.343694"
+content_hash: "87d0a98486b3"
+synced_at: "2026-07-28T16:44:09.461562"
 ---
 
 # Toggle
 
-组件提供勾选框样式、状态按钮样式和开关样式。
+组件提供勾选框样式、状态按钮样式和开关样式，适用于需要快速切换状态或进行单选确认的场景，能够有效提升交互体验与界面的直观性。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 该组件从API version 8开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+- 该组件从API version 8开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 - 从API版本26.0.0开始，Toggle组件支持系统材质效果。Toggle组件使用通用系统材质属性[systemMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemmaterial)时，不同[ToggleType](#toggletype枚举说明)类型的效果不同： ToggleType.Checkbox：当前未适配系统材质效果，设置系统材质不会出现系统材质相关的动效和视觉效果。
 - ToggleType.Switch：传入材质参数时，使用组件内部预设的视觉参数，传入的材质参数仅作为开启系统材质的开关标记，不影响实际视觉效果。主要影响Toggle的滑块大小、滑块样式、阴影等视觉属性。设置[switchPointColor](#switchpointcolor)后会出现点光源效果，点光源颜色跟随switchPointColor的设置。传入undefined时，系统材质不生效，表现为原先的Toggle样式。
 - ToggleType.Button：设置系统材质的效果与[Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button)组件设置系统材质的效果相同，主要影响背景颜色、边框、阴影等视觉属性。
@@ -39,7 +39,7 @@ Toggle(options: ToggleOptions)
 
 #### ToggleOptions18+对象说明
 
-Toggle的信息。
+Toggle组件的配置信息。
 
 ![](./img/note_3.0-zh-cn.png) 为规范匿名对象的定义，API 18版本修改了此处的元素定义。其中，保留了历史匿名对象的起始版本信息，会出现外层元素@since版本号高于内层元素版本号的情况，但这不影响接口的使用。
 
@@ -70,8 +70,8 @@ Toggle的样式。
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| Checkbox | 0 | 提供单选框样式。 **说明：** API version 11开始，Checkbox默认样式由圆角方形变为圆形。 [通用属性margin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#margin)的默认值为： { top: '14px', right: '14px', bottom: '14px', left: '14px' }。 默认尺寸为： {width:'20vp', height:'20vp'}。 |
-| Switch | 1 | 提供开关样式。 **说明：** [通用属性margin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#margin)默认值为： { top: '6px', right: '14px', bottom: '6px', left: '14px' }。 默认尺寸为： {width:'36vp', height:'20vp'}。 |
+| Checkbox | 0 | 提供勾选框样式。 **说明：** API version 11开始，Checkbox默认样式由圆角方形变为圆形。 [通用属性margin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#margin)的默认值为： { top: '14px', right: '14px', bottom: '14px', left: '14px' }。 默认尺寸为： {width:'20vp', height:'20vp'}。 |
+| Switch | 1 | 提供开关样式。 **说明：** [通用属性margin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#margin)的默认值为： { top: '6px', right: '14px', bottom: '6px', left: '14px' }。 默认尺寸为： {width:'36vp', height:'20vp'}。 |
 | Button | 2 | 提供状态按钮样式。如子组件设置文本，文本内容将显示在按钮内。默认高度为28vp，宽度无默认值。 |
 
 #### 属性
@@ -83,6 +83,8 @@ Toggle的样式。
 selectedColor(value: ResourceColor)
 
 设置组件在打开状态下的背景颜色。
+
+![](./img/note_3.0-zh-cn.png) 设置systemMaterial系统材质时对背景色的影响，请参考组件开篇说明。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -120,6 +122,8 @@ switchStyle(value: SwitchStyle)
 
 设置Switch类型的样式。仅当type为ToggleType.Switch生效。
 
+![](./img/note_3.0-zh-cn.png) 与systemMaterial系统材质同时设置时，请参考组件开篇说明及通用系统材质属性文档。
+
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
@@ -153,6 +157,8 @@ contentModifier(modifier: ContentModifier<ToggleConfiguration>)
 #### SwitchStyle12+对象说明
 
 Switch类型的样式。
+
+![](./img/note_3.0-zh-cn.png) 与systemMaterial系统材质同时设置时，请参考组件开篇说明及通用系统材质属性文档。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -203,7 +209,7 @@ onChange(callback: (isOn: boolean) => void)
 | --- | --- | --- | --- | --- |
 | isOn | boolean | 否 | 否 | 开关是否打开。 true：开关打开；false：开关关闭。 默认值：false |
 | enabled | boolean | 否 | 否 | 是否可以切换状态。 true：可以切换状态；false：不可以切换状态。 默认值：true |
-| triggerChange | Callback | 否 | 否 | 触发switch选中状态变化。 true：状态从关切换为开；false：状态从开切换为关。 |
+| triggerChange | Callback | 否 | 否 | 用于触发Toggle开关状态变化的回调函数，通常在自定义ContentModifier中通过编程方式改变开关状态。调用此回调并传入true可将开关状态设置为打开，传入false可将开关状态设置为关闭。 |
 
 #### 示例
 
@@ -274,7 +280,7 @@ struct ToggleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612553.gif)
+ ![](./img/zh-cn_image_0000002656008496.gif)
 
 #### [h2]示例2（自定义开关类型的样式）
 
@@ -315,7 +321,7 @@ struct ToggleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413262.gif)
+ ![](./img/zh-cn_image_0000002655848574.gif)
 
 #### [h2]示例3（自定义Toggle样式）
 
@@ -323,8 +329,11 @@ struct ToggleExample {
 
 ```
 // xxx.ets
+// 自定义Switch样式修改器，实现ContentModifier接口定制Toggle内容区
 class MySwitchStyle implements ContentModifier<ToggleConfiguration> {
+  // 开关打开时的背景颜色
   selectedColor: Color = Color.White;
+  // 用于按钮显示的文本
   lamp: string = 'string';
 
   constructor(selectedColor: Color, lamp: string) {
@@ -360,6 +369,7 @@ function buildSwitch(config: ToggleConfiguration) {
 struct Index {
   build() {
     Column({ space: 50 }) {
+      // 使用自定义样式修改器定制Toggle内容，并通过onChange监听状态变化
       Toggle({ type: ToggleType.Switch })
         .enabled(true)
         .contentModifier(new MySwitchStyle(Color.Yellow, '灯'))
@@ -370,7 +380,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732495.gif)
+ ![](./img/zh-cn_image_0000002686088003.gif)
 
 #### [h2]示例4（Toggle系统材质效果）
 
@@ -411,4 +421,4 @@ struct ToggleMaterialTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253372.gif)
+ ![](./img/zh-cn_image_0000002685928175.gif)

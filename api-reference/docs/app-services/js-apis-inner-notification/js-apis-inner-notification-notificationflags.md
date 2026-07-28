@@ -2,13 +2,13 @@
 title: "NotificationFlags"
 upstream_id: "harmonyos-references/js-apis-inner-notification-notificationflags"
 catalog: "harmonyos-references"
-content_hash: "2eb48fb95e25"
-synced_at: "2026-07-09T01:01:28.556905"
+content_hash: "10ff1f305aed"
+synced_at: "2026-07-28T16:52:48.105225"
 ---
 
 # NotificationFlags
 
-描述通知标志的实例。
+描述通知标志位。应用可以使用NotificationFlags按需削减通知的提醒方式。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 8开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -33,6 +33,6 @@ synced_at: "2026-07-09T01:01:28.556905"
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| TYPE_NONE | 0 | 默认标志，与TYPE_OPEN效果相同。 |
+| TYPE_NONE | 0 | 未设置标志时的默认值，与TYPE_OPEN效果相同。 |
 | TYPE_OPEN | 1 | 通知标志打开。 |
 | TYPE_CLOSE | 2 | 通知标志关闭。 |

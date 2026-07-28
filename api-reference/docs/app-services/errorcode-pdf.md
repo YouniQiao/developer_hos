@@ -2,8 +2,8 @@
 title: "ArkTS API 错误码"
 upstream_id: "harmonyos-references/errorcode-pdf"
 catalog: "harmonyos-references"
-content_hash: "a57686508086"
-synced_at: "2026-07-09T01:01:36.001930"
+content_hash: "db4e48dabc71"
+synced_at: "2026-07-28T16:52:58.808051"
 ---
 
 # ArkTS API 错误码
@@ -14,7 +14,7 @@ synced_at: "2026-07-09T01:01:36.001930"
 
 错误信息
 
-The sizes of pageIndices and matrices arrays do not match.
+The arrays of pageIndices and matrices do not match.
 
 错误描述
 
@@ -32,7 +32,7 @@ pageIndices和matrices数组长度不一致。
 
 错误信息
 
-The page index value in pageIndices is out of valid range.
+Invalid page number.
 
 错误描述
 
@@ -52,19 +52,19 @@ pageIndices中的页码值不在合理范围。
 
 错误信息
 
-bitmapWidth × bitmapHeight exceeds the maximum pixel limit of 250 million.
+The number of pixels in the bitmap exceeds the upper limit.
 
 错误描述
 
-bitmapWidth × bitmapHeight大于最大像素值（2.5亿）。
+位图中的像素数量超过上限。
 
 可能原因
 
-bitmapWidth × bitmapHeight的值超过2.5亿。
+位图尺寸（bitmapWidth × bitmapHeight）对应的像素数超过250M。
 
 处理步骤
 
-确保bitmapWidth × bitmapHeight小于2.5亿。
+确保位图尺寸（bitmapWidth × bitmapHeight）对应的像素数不超过250M。
 
 #### 1011301004 创建bitmap失败
 
@@ -122,3 +122,115 @@ PDF文档未加载，无法访问指定的PDF文档。
 处理步骤
 
 调用[loadDocument](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pdf-arkts-pdfservice#loaddocument)，重新触发加载过程。
+
+#### 1011302001 页码值错误
+
+错误信息
+
+Invalid page number.
+
+错误描述
+
+[loadDocumentFromMemory](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pdf-arkts-pdfviewmanage#loaddocumentfrommemory)传入的initPageIndex页码值参数不在合理范围。
+
+可能原因
+
+1. 页码值小于0。
+2. 页码值为Infinity。
+3. 页码值为NaN。
+
+处理步骤
+
+确保initPageIndex页码值为自然数。
+
+#### 1011302002 加载的文档未释放
+
+错误信息
+
+The loaded document has not been freed.
+
+错误描述
+
+当前有加载的文档没有被释放。
+
+可能原因
+
+使用[loadDocumentFromMemory](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pdf-arkts-pdfviewmanage#loaddocumentfrommemory)接口成功加载文档二进制数据流后，未调用releaseDocument进行文档释放，在同一个controller再次加载文档二进制数据流
+
+处理步骤
+
+调用releaseDocument接口释放当前controller加载的文档二进制数据流。
+
+#### 1011302003 加载的二进制流为空或超出范围
+
+错误信息
+
+The input ArrayBuffer is empty or exceeds the maximum limit.
+
+错误描述
+
+当前[loadDocumentFromMemory](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pdf-arkts-pdfviewmanage#loaddocumentfrommemory)接口加载的二进制数据流为空或超出接口支持的最大大小。
+
+可能原因
+
+1. 当前加载的二进制数据流为空。
+2. 当前加载的二进制数据流大小超过1GB的最大支持范围。
+
+处理步骤
+
+1. 确保传入的二进制数据流为有内容的数据流。
+2. 检查传入的二进制数据流大小，确保数据流大小不超过1GB。
+
+#### 1011302004 渲染忙碌
+
+错误信息
+
+The rendering thread is busy.
+
+错误描述
+
+渲染忙碌。
+
+可能原因
+
+距离上一次调用本接口的时间过短，小于300ms。
+
+处理步骤
+
+等待300ms后再进行下一次调用。
+
+#### 1011302005 无效渲染模式
+
+错误信息
+
+Unknown rendering mode.
+
+错误描述
+
+无效渲染模式。
+
+可能原因
+
+[setRenderMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pdf-arkts-pdfviewmanage#setrendermode)传入参数值越界，不在规定范围内。
+
+处理步骤
+
+重新设置参数约束，仅允许传入预定义的枚举值。
+
+#### 1011302006 加载忙碌
+
+错误信息
+
+Another document is being loaded.
+
+错误描述
+
+当前有未完成的异步加载任务，无法加载当前文档。
+
+可能原因
+
+短时间内并发调用了异步加载接口。
+
+处理步骤
+
+检查调用逻辑，避免连续调用异步加载接口。

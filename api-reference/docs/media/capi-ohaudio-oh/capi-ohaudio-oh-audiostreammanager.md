@@ -2,14 +2,14 @@
 title: "OH_AudioStreamManager"
 upstream_id: "harmonyos-references/capi-ohaudio-oh-audiostreammanager"
 catalog: "harmonyos-references"
-content_hash: "9c140e52b4cd"
-synced_at: "2026-07-09T01:00:11.210532"
+content_hash: "d99610c50cb2"
+synced_at: "2026-07-28T16:51:29.702307"
 ---
 
 # OH_AudioStreamManager
 
 ```
-typedef struct OH_AudioStreamManager OH_AudioStreamManager
+typedef struct OH_AudioStreamManager OH_AudioStreamManager;
 ```
 
 #### 概述

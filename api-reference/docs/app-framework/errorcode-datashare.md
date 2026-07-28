@@ -2,8 +2,8 @@
 title: "数据共享错误码"
 upstream_id: "harmonyos-references/errorcode-datashare"
 catalog: "harmonyos-references"
-content_hash: "bf7dac8e0561"
-synced_at: "2026-07-09T00:57:22.191707"
+content_hash: "7c3079a8de8e"
+synced_at: "2026-07-28T16:40:54.779012"
 ---
 
 # 数据共享错误码
@@ -50,7 +50,7 @@ The parameter format is incorrect or the value range is invalid.
 可能原因
 
 1. URI长度超过256字节。
-2. proxyData的value长度超过4096字节。
+2. proxyData（代理数据配置项）的value长度超过4096字节。
 3. 接口传入的URI数组长度超过32。
 4. 接口传入的proxyData数组长度超过32。
 5. URI格式校验失败。
@@ -62,3 +62,21 @@ The parameter format is incorrect or the value range is invalid.
 3. 检查接口传入的URI数组的长度是否超过32。
 4. 检查接口传入的proxyData数组的长度是否超过32。
 5. 检查接口传入的URI数组或者proxyData数组中的URI是否满足格式校验： URI的固定格式为"datashareproxy://{bundleName}/{path}"，其中bundleName为配置发布方应用的bundleName，path可随意填写。
+
+#### 15700015 访问URI权限错误
+
+错误信息
+
+No permission to access the data specified by the URI.
+
+错误描述
+
+没有权限访问URI所指定的数据。
+
+可能原因
+
+未申请访问指定数据所需的权限。
+
+处理步骤
+
+咨询数据提供方访问指定数据所需的权限。

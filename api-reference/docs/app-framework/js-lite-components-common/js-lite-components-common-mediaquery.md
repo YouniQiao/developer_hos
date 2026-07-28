@@ -2,8 +2,8 @@
 title: "媒体查询"
 upstream_id: "harmonyos-references/js-lite-components-common-mediaquery"
 catalog: "harmonyos-references"
-content_hash: "eeea40f5ac4f"
-synced_at: "2026-07-09T00:58:26.944142"
+content_hash: "025522266779"
+synced_at: "2026-07-28T16:49:07.305316"
 ---
 
 # 媒体查询
@@ -30,7 +30,7 @@ synced_at: "2026-07-09T00:58:26.944142"
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 不支持=，操作符;
+- 不支持=，操作符；
 - 从API version 9开始，支持多重()嵌套使用；
 - media语句整体长度不能超过 512 个字符；
 - 单个media条件长度不能超过32个字符；
@@ -50,7 +50,7 @@ synced_at: "2026-07-09T00:58:26.944142"
 | 类型 | 说明 |
 | --- | --- |
 | and | 将多个媒体特征（Media Feature）以“与”的方式连接成一个媒体查询，只有当所有媒体特征都为true，查询条件成立。另外，它还可以将媒体类型和媒体功能结合起来。 例如：screen and (device-type: liteWearable) and (max-height: 454) 表示当设备类型是智能穿戴同时应用的最大高度小于等于454个像素单位时成立。 |
-| or9+ | 将多个媒体特征以“或”的方式连接成一个媒体查询，如果存在结果为true的媒体特征，则查询条件成立。 例如：screen and (max-height: 454) or （round-screen：true）表示当应用高度小于等于454个像素单位或者设备屏幕是圆形时，条件成立。 |
+| or9+ | 将多个媒体特征以“或”的方式连接成一个媒体查询，如果存在结果为true的媒体特征，则查询条件成立。 例如：screen and (max-height: 454) or (round-screen: true)表示当应用高度小于等于454个像素单位或者设备屏幕是圆形时，条件成立。 |
 
 #### 媒体特征
 

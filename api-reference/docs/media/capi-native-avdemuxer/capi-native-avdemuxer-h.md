@@ -2,8 +2,8 @@
 title: "native_avdemuxer.h"
 upstream_id: "harmonyos-references/capi-native-avdemuxer-h"
 catalog: "harmonyos-references"
-content_hash: "3b4a94dfd944"
-synced_at: "2026-07-09T01:00:15.154132"
+content_hash: "0ece5c8bbaca"
+synced_at: "2026-07-28T16:51:33.524613"
 ---
 
 # native_avdemuxer.h
@@ -45,7 +45,7 @@ synced_at: "2026-07-09T01:00:15.154132"
 | [OH_AVErrCode OH_AVDemuxer_UnselectTrackByID(OH_AVDemuxer *demuxer, uint32_t trackIndex)](#oh_avdemuxer_unselecttrackbyid) | - | 移除读取sample的轨道，未选中的轨道的数据不会被解封装器读取。 注意，通过多次调用接口并传入不同轨道的索引来取消对多个轨道的选择。 同一轨道被多次取消选择时，接口会返回AV_ERR_OK，并且只会生效一次。 |
 | [OH_AVErrCode OH_AVDemuxer_ReadSample(OH_AVDemuxer *demuxer, uint32_t trackIndex, OH_AVMemory *sample, OH_AVCodecBufferAttr *info)](#oh_avdemuxer_readsample) | - | 获取指定轨道的sample及相关信息。 注意，读取轨道sample前，轨道必须被选中。调用接口后解封装器将自动前进到下一帧。 |
 | [OH_AVErrCode OH_AVDemuxer_ReadSampleBuffer(OH_AVDemuxer *demuxer, uint32_t trackIndex, OH_AVBuffer *sample)](#oh_avdemuxer_readsamplebuffer) | - | 获取指定轨道的sample及相关信息。 注意，读取轨道sample前，轨道必须被选中。调用接口后解封装器将自动前进到下一帧。 |
-| [OH_AVErrCode OH_AVDemuxer_SeekToTime(OH_AVDemuxer *demuxer, int64_t millisecond, OH_AVSeekMode mode)](#oh_avdemuxer_seektotime) | - | 根据设定的跳转模式，将所有选中的轨道到指定时间附近。 |
+| [OH_AVErrCode OH_AVDemuxer_SeekToTime(OH_AVDemuxer *demuxer, int64_t millisecond, OH_AVSeekMode mode)](#oh_avdemuxer_seektotime) | - | 根据设定的跳转模式，将所有选中的轨道跳转到指定时间附近。 |
 | [OH_AVErrCode OH_AVDemuxer_SetMediaKeySystemInfoCallback(OH_AVDemuxer *demuxer, DRM_MediaKeySystemInfoCallback callback)](#oh_avdemuxer_setmediakeysysteminfocallback) | - | 设置DRM信息回调函数。 |
 | [OH_AVErrCode OH_AVDemuxer_SetDemuxerMediaKeySystemInfoCallback(OH_AVDemuxer *demuxer, Demuxer_MediaKeySystemInfoCallback callback)](#oh_avdemuxer_setdemuxermediakeysysteminfocallback) | - | 设置DRM信息回调函数。 |
 | [OH_AVErrCode OH_AVDemuxer_GetMediaKeySystemInfo(OH_AVDemuxer *demuxer, DRM_MediaKeySystemInfo *mediaKeySystemInfo)](#oh_avdemuxer_getmediakeysysteminfo) | - | 获取DRM信息。在[Demuxer_MediaKeySystemInfoCallback](#demuxer_mediakeysysteminfocallback)或[DRM_MediaKeySystemInfoCallback](#drm_mediakeysysteminfocallback)接口成功回调以后，调用此接口才能获取到DRM信息。 |
@@ -111,7 +111,7 @@ source的创建、销毁及使用，详情请参考[OH_AVSource](https://develop
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_AVDemuxer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avdemuxer-oh-avdemuxer) * | 返回一个指向OH_AVDemuxer实例的指针。 如果执行成功，则返回指向OH_AVDemuxer实例的指针，否则返回NULL。 可能的失败原因： 1. source无效，即空指针或非OH_AVSource实例。 2. 非OH_AVSource实例。 |
+| [OH_AVDemuxer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avdemuxer-oh-avdemuxer) * | 返回一个指向OH_AVDemuxer实例的指针。 如果执行成功，则返回指向OH_AVDemuxer实例的指针，否则返回NULL。 可能的失败原因： 1. source为空指针。 2. source为非OH_AVSource实例。 |
 
 #### [h2]OH_AVDemuxer_Destroy()
 
@@ -255,13 +255,13 @@ OH_AVErrCode OH_AVDemuxer_ReadSampleBuffer(OH_AVDemuxer *demuxer, uint32_t track
 | --- | --- |
 | [OH_AVDemuxer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avdemuxer-oh-avdemuxer) *demuxer | 指向OH_AVDemuxer实例的指针。 |
 | uint32_t trackIndex | 本次读取压缩帧的轨道的索引。 |
-| OH_AVBuffer *sample | 指向OH_AVBuffer实例的指针，用于储存压缩帧数据以及相关信息。 |
+| [OH_AVBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-core-oh-avbuffer) *sample | 指向OH_AVBuffer实例的指针，用于储存压缩帧数据以及相关信息。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_AVErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-averrors-h#oh_averrcode) | AV_ERR_OK：执行成功。 AV_ERR_INVALID_VAL： 1. 输入的demuxer指针为空或为非解封装器实例。 2. sample为空指针。 3. 轨道的索引超出范围。 4. 输入sample为空。 AV_ERR_OPERATE_NOT_PERMIT： 1. 轨道的索引没有被选中。 2. demuxer没有正确的初始化。 AV_ERR_NO_MEMORY：sample容量不足以存储所有帧数据。 AV_ERR_UNKNOWN：无法从文件中读取或解析帧。 |
+| [OH_AVErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-averrors-h#oh_averrcode) | AV_ERR_OK：执行成功。 AV_ERR_INVALID_VAL： 1. 输入的demuxer指针为空或为非解封装器实例。 2. sample为空指针。 3. 轨道的索引超出范围。 AV_ERR_OPERATE_NOT_PERMIT： 1. 轨道的索引没有被选中。 2. demuxer没有正确的初始化。 AV_ERR_NO_MEMORY：sample容量不足以存储所有帧数据。 AV_ERR_UNKNOWN：无法从文件中读取或解析帧。 |
 
 #### [h2]OH_AVDemuxer_SeekToTime()
 
@@ -270,7 +270,7 @@ OH_AVErrCode OH_AVDemuxer_SeekToTime(OH_AVDemuxer *demuxer, int64_t millisecond,
 ```
  描述
 
-根据设定的跳转模式，将所有选中的轨道到指定时间附近。
+根据设定的跳转模式，将所有选中的轨道跳转到指定时间附近。调用前需先通过OH_AVDemuxer_SelectTrackByID选中轨道。
 
 系统能力： SystemCapability.Multimedia.Media.Spliter
 

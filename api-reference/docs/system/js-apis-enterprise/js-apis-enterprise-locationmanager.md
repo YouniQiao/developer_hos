@@ -2,8 +2,8 @@
 title: "@ohos.enterprise.locationManager（位置服务管理）"
 upstream_id: "harmonyos-references/js-apis-enterprise-locationmanager"
 catalog: "harmonyos-references"
-content_hash: "4747857b0988"
-synced_at: "2026-07-09T00:59:52.385453"
+content_hash: "7d1b4a6a540f"
+synced_at: "2026-07-28T16:51:10.152079"
 ---
 
 # @ohos.enterprise.locationManager（位置服务管理）
@@ -68,7 +68,7 @@ let wantTemp: Want = {
 
 try {
   locationManager.setLocationPolicy(wantTemp, locationManager.LocationPolicy.DISALLOW_LOCATION_SERVICE);
-  console.info(`Succeeded in setting location patch tag.`);
+  console.info(`Succeeded in setting location policy.`);
 } catch(err) {
   console.error(`Failed to set location policy. Code: ${err.code}, message: ${err.message}`);
 }
@@ -76,7 +76,7 @@ try {
 
 #### locationManager.getLocationPolicy
 
-getLocationPolicy(admin: Want): LocationPolicy
+getLocationPolicy(admin: Want | null): LocationPolicy
 
 查询位置服务管理策略。
 
@@ -90,7 +90,7 @@ getLocationPolicy(admin: Want): LocationPolicy
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，API版本26.0.0之前，传入Want时查询对应企业设备管理应用设置的策略。从API版本26.0.0开始，新增支持传入null时查询实际生效的策略。 |
 
 返回值：
 

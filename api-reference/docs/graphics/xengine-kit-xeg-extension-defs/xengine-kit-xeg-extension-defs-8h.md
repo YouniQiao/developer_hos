@@ -2,8 +2,8 @@
 title: "xeg_extension_defs.h"
 upstream_id: "harmonyos-references/xengine-kit-xeg-extension-defs-8h"
 catalog: "harmonyos-references"
-content_hash: "4aad96f2b401"
-synced_at: "2026-07-09T01:01:09.010166"
+content_hash: "83c22fdb9a59"
+synced_at: "2026-07-28T16:52:26.246011"
 ---
 
 # xeg_extension_defs.h
@@ -34,6 +34,7 @@ synced_at: "2026-07-09T01:01:09.010166"
 | [XEG_neural_upscale](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/xengine-kit-xengine#xeg_neural_upscale) 1 | XEngine空域AI超分扩展特性宏定义。 |
 | [XEG_NEURAL_UPSCALE_VERSION](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/xengine-kit-xengine#xeg_neural_upscale_version) 1 | XEngine空域AI超分扩展特性版本号。 |
 | [XEG_NEURAL_UPSCALE_EXTENSION_NAME](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/xengine-kit-xengine#xeg_neural_upscale_extension_name) "XEG_neural_upscale" | XEngine空域AI超分扩展特性名称。 |
+| [XEG_NEURAL_UPSCALE2_EXTENSION_NAME](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/xengine-kit-xengine#xeg_neural_upscale2_extension_name) "XEG_neural_upscale2" | XEngine空域AI超分（版本2）扩展特性名称。 |
 | [XEG_temporal_upscale](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/xengine-kit-xengine#xeg_temporal_upscale) 1 | XEngine时域AI超分扩展特性宏定义。 |
 | [XEG_TEMPORAL_UPSCALE_VERSION](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/xengine-kit-xengine#xeg_temporal_upscale_version) 1 | XEngine时域AI超分扩展特性版本号。 |
 | [XEG_TEMPORAL_UPSCALE_EXTENSION_NAME](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/xengine-kit-xengine#xeg_temporal_upscale_extension_name) "XEG_temporal_upscale" | XEngine时域AI超分扩展特性名称。 |

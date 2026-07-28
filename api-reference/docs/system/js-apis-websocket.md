@@ -2,8 +2,8 @@
 title: "@ohos.net.webSocket (WebSocket连接)"
 upstream_id: "harmonyos-references/js-apis-websocket"
 catalog: "harmonyos-references"
-content_hash: "74fbc4fd33e5"
-synced_at: "2026-07-09T00:59:28.849162"
+content_hash: "b1416d75495f"
+synced_at: "2026-07-28T16:50:43.798557"
 ---
 
 # @ohos.net.webSocket (WebSocket连接)
@@ -608,9 +608,9 @@ import { BusinessError, Callback } from '@kit.BasicServicesKit';
 let ws = webSocket.createWebSocket();
 ws.on('openInfo', (err: BusinessError, value: webSocket.WebSocketOpenInfo) => {
   if (value?.protocol != undefined) {
-    console.info(`on openInfo exists protocol: status: ${value.status}, message: ${value.message}, protocol: ${value.protocol}`);
+    console.info(`on openInfo exist protocol: status: ${value.status}, message: ${value.message}, protocol: ${value.protocol}`);
   } else {
-    console.info(`on openInfo, status: ${value.status}, message: ${value.message}, protocol: ${value.protocol}`);
+    console.info(`on openInfo , status: ${value.status}, message: ${value.message}, protocol: ${value.protocol}`);
   }
 });
 ```
@@ -645,9 +645,9 @@ import { BusinessError } from '@kit.BasicServicesKit';
 let ws = webSocket.createWebSocket();
 let callback1 = (err: BusinessError, value: webSocket.WebSocketOpenInfo) => {
   if (value?.protocol != undefined) {
-    console.info(`on openInfo exists protocol: status: ${value.status}, message: ${value.message}, protocol: ${value.protocol}`);
+    console.info(`on openInfo exist protocol: status: ${value.status}, message: ${value.message}, protocol: ${value.protocol}`);
   } else {
-    console.info(`on openInfo, status: ${value.status}, message: ${value.message}, protocol: ${value.protocol}`);
+    console.info(`on openInfo , status: ${value.status}, message: ${value.message}, protocol: ${value.protocol}`);
   }
 }
 ws.on('openInfo', callback1);
@@ -1520,7 +1520,8 @@ localServer.off('error');
 | skipServerCertVerification20+ | boolean | 否 | 是 | 是否跳过服务器证书验证。true表示跳过服务器证书验证，false表示不跳过服务器证书验证。默认为false。 |
 | pingInterval21+ | number | 否 | 是 | 自定义[心跳检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/websocket-connection#场景介绍)时间，默认为30s。每pingInterval周期会发起心跳检测，设置为0则表示关闭心跳检测。最大值：30000s，最小值：0s。 |
 | pongTimeout21+ | number | 否 | 是 | 自定义发起心跳检测后，超时断开时间，默认为30s。发起心跳检测后若pongTimeout时间未响应则断开连接。最大值：30000s，最小值：0s。pongTimeout须小于等于pingInterval。 |
-| minSupportTlsProtocol | [TlsProtocol](#tlsprotocol) | 否 | 是 | 自定义支持的最低TLS协议版本。例如：设置该参数为TLS_V_1_1，则客户端可支持TLS协议版本有TLS 1.1、TLS 1.2、TLS 1.3。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| minSupportTlsProtocol | [TlsProtocol](#tlsprotocol) | 否 | 是 | 自定义支持的最低TLS协议版本。例如：设置该参数为TLS_V_1_1，则客户端可支持TLS协议版本有TLS1.1、TLS1.2、TLS1.3。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| supportOriginPort | boolean | 否 | 是 | Origin是WebSocket握手请求中的HTTP请求头字段，用于标识请求来源，服务端可据此进行来源校验。该参数用于控制Origin字段是否携带自定义端口号。默认值为false。设置为true时： - 调用[connect](#connect)接口后，若其第一个参数url中指定的协议为ws，且显式指定的端口号不是80，则Origin字段中会携带对应的端口；其他情况不携带端口号。 - 调用[connect](#connect)接口后，若其第一个参数url中指定的协议为wss，且显式指定的端口号不是443，则Origin字段中会携带对应的端口号；其他情况不携带端口号。 设置为false时，Origin字段不会携带端口号。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### ClientCert11+
 
@@ -1681,7 +1682,7 @@ TLS协议类型。
 
 起始版本： 26.0.0
 
-系统能力：SystemCapability.Communication.NetStack
+系统能力： SystemCapability.Communication.NetStack
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -1704,6 +1705,6 @@ WebSocket连接成功后的详细信息。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| status | number | 否 | 否 | 服务器返回的状态码。例如：101表示建链成功并升级为WebSocket协议。 |
+| status | number | 否 | 否 | 服务器返回的状态码。例如：101表示建链成功并升级为websocket协议。 |
 | message | string | 否 | 否 | 服务器返回的状态信息。与status字段对应，例如：status=101时，该字段返回"Switching Protocols"。 |
 | protocol | string | 否 | 是 | 服务器返回的协商后的协议。 |

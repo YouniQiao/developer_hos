@@ -2,8 +2,8 @@
 title: "组件内转场 (transition)"
 upstream_id: "harmonyos-references/ts-transition-animation-component"
 catalog: "harmonyos-references"
-content_hash: "49764f61b193"
-synced_at: "2026-07-09T17:24:45.766978"
+content_hash: "3065708025f8"
+synced_at: "2026-07-28T16:47:06.783527"
 ---
 
 # 组件内转场 (transition)
@@ -14,7 +14,7 @@ synced_at: "2026-07-09T17:24:45.766978"
 
 当前有两种方式触发组件的transition：
 
-1. 当组件插入或删除时（如if条件改变、ForEach新增删除组件），会递归的触发所有新插入/删除的组件的transition效果。
+1. 当组件插入或删除时（如if条件改变、ForEach新增删除组件），会递归地触发所有新插入/删除的组件的transition效果。
 2. 当组件[visibility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-visibility#visibility)属性在可见和不可见（Visibility.Hidden或Visibility.None）之间改变时，只触发该组件的transition效果。在Visibility.Visible与Visibility.None之间切换时，若直接设置为Visibility.None，会导致组件布局大小为0，此时无法观察到transition效果。而当在动画中修改visibility属性为Visibility.None时，组件布局为0是带动画的，将呈现transition与布局动画的叠加效果，形成双动画的复合表现。具体效果可参考[示例4](#示例4visibility切换时的双动画复合效果)。
 
 #### transition
@@ -117,8 +117,8 @@ TransitionEffect以函数的形式指定转场效果。提供了以下接口：
 3. 如果未使用animateTo触发转场动画且TransitionEffect中也无animation参数，则该组件直接出现或者消失。
 4. TransitionEffect中指定的属性值如与默认值相同，则该属性不会产生转场动画。如TransitionEffect.opacity(1).animation({duration:1000})，由于opacity默认值也为1，未产生透明度动画，该组件直接出现或者消失。
 5. 更详细的关于scale、rotate效果的介绍可参考[图形变换](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation)。
-6. 如果在动画范围([animateTo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#animateto)、[animation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-animatorproperty))内触发组件的上下树或可见性([visibility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-visibility#visibility))改变，而根组件没有配置transition，会给该组件加上默认透明度转场，即TransitionEffect.OPACITY，动画参数跟随所处动画环境的参数。如不需要可通过主动配置TransitionEffect.IDENTITY来禁用，使该组件直接出现或消失。
-7. 当通过删除整棵子树的方式触发消失转场，如需看到完整的消失转场过程，需要保证被删除子树的根组件的有充足的消失转场时间，见示例3。
+6. 如果在动画范围([animateTo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#animateto)、[animation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-animatorproperty))内触发组件的上下树或可见性([visibility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-visibility#visibility))改变，而该子树的根组件没有配置transition，会给该组件加上默认透明度转场，即TransitionEffect.OPACITY，动画参数跟随所处动画环境的参数。如不需要可通过主动配置TransitionEffect.IDENTITY来禁用，使该组件直接出现或消失。
+7. 当通过删除整棵子树的方式触发消失转场，如需看到完整的消失转场过程，需要保证被删除子树的根组件有充足的消失转场时间，见示例3。
 
 #### [h2]translate10+
 
@@ -164,7 +164,7 @@ rotate(options: RotateOptions): TransitionEffect<"rotate">
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [RotateOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#rotateoptions对象说明) | 是 | 组件转场时的旋转效果，为插入时起点和删除时终点的值。 -x：横向的旋转向量分量。 -y：纵向的旋转向量分量。 -z：竖向的旋转向量分量。 - centerX、centerY指旋转中心点，centerX和centerY默认值是"50%"，即默认以组件的中心点为旋转中心点。 - 中心点为(0, 0)代表组件的左上角。 -centerZ指z轴锚点，即3D旋转中心点的z轴分量，centerZ默认值是0。 -perspective指视距，不支持perspective属性做转场动画。 |
+| options | [RotateOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#rotateoptions对象说明) | 是 | 组件转场时的旋转效果，为插入时起点和删除时终点的值。 -angle：旋转角度，单位为度（°），决定绕旋转轴的旋转幅度。 -x：横向的旋转向量分量。 -y：纵向的旋转向量分量。 -z：竖向的旋转向量分量。 - centerX、centerY指旋转中心点，centerX和centerY默认值是"50%"，数值类型单位为vp。，即默认以组件的中心点为旋转中心点。 - 中心点为(0, 0)代表组件的左上角。 -centerZ指z轴锚点，即3D旋转中心点的z轴分量，centerZ默认值是0。 -perspective指视距，不支持perspective属性做转场动画。 |
 
 返回值：
 
@@ -190,7 +190,7 @@ scale(options: ScaleOptions): TransitionEffect<"scale">
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [ScaleOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#scaleoptions对象说明) | 是 | 组件转场时的缩放效果，为插入时起点和删除时终点的值。设置的缩放值在组件当前的scale属性上进行乘法叠加，如组件当前scale值为0.8，当转场缩放值设置为0.5时，组件入场动画的缩放值将从0.8×0.5=0.4开始执行。 -x：横向放大倍数（或缩小比例）。 -y：纵向放大倍数（或缩小比例）。 -z：当前为二维显示，该参数无效。 - centerX、centerY指缩放中心点，centerX和centerY默认值是"50%"，即默认以组件的中心点为缩放中心点。 - 中心点为(0, 0)代表组件的左上角。 **说明：** 设置centerX、centerY为非法字符串时（例如，"illegalString"），默认值为"0"。 |
+| options | [ScaleOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#scaleoptions对象说明) | 是 | 组件转场时的缩放效果，为插入时起点和删除时终点的值。设置的缩放值在组件当前的scale属性上进行乘法叠加，如组件当前scale值为0.8，当转场缩放值设置为0.5时，组件入场动画的缩放值将从0.8×0.5=0.4开始执行。 - x：横向放大倍数（或缩小比例）。 - y：纵向放大倍数（或缩小比例）。 - z：当前为二维显示，该参数无效。 - centerX、centerY指缩放中心点，centerX和centerY默认值是"50%"，即默认以组件的中心点为缩放中心点。 - 中心点为(0, 0)代表组件的左上角。 **说明：** 设置centerX、centerY为非法字符串时（例如，"illegalString"），默认值为"0"。 |
 
 返回值：
 
@@ -254,7 +254,7 @@ move(edge: TransitionEdge): TransitionEffect<"move">
 
 asymmetric(appear: TransitionEffect, disappear: TransitionEffect): TransitionEffect<"asymmetric">
 
-设置非对称的转场效果，即出现、消失为两套独立不同的动画，效果不互为逆过程。具体效果可参考[示例2](#示例2使用不同接口实现图片出现消失)。
+设置非对称的转场效果，即出现、消失为两套独立不同的动画，效果不互为逆过程。适用于需要出现和消失采用不同动画策略的场景。具体效果可参考[示例2](#示例2使用不同接口实现图片出现消失)。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -296,7 +296,7 @@ constructor(type: Type, effect: Effect)
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | [Type](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#transitiontype) | 是 | 转场类型。 |
-| effect | [Effect](#transitioneffect10对象说明) | 是 | 转场参数。 |
+| effect | [Effect](#transitioneffect10对象说明) | 是 | 转场效果配置，用于指定具体的转场动画效果，包括透明度、平移、旋转、缩放等转场效果的参数设置。 |
 
 #### [h2]combine10+
 
@@ -322,7 +322,7 @@ combine(transitionEffect: TransitionEffect): TransitionEffect
 
 | 类型 | 说明 |
 | --- | --- |
-| [TransitionEffect](#transitioneffect10对象说明) | 组合过渡效应。 |
+| [TransitionEffect](#transitioneffect10对象说明) | 组合过渡效果。 |
 
 #### [h2]animation10+
 
@@ -342,7 +342,7 @@ animation(value: AnimateParam): TransitionEffect
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [AnimateParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-explicit-animation#animateparam对象说明) | 是 | 动画参数。 该参数只用来指定动画参数，其入参AnimateParam的onFinish回调不生效。 如果通过combine进行TransitionEffect的组合，前一TransitionEffect的动画参数也可用于后一TransitionEffect。 |
+| value | [AnimateParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-explicit-animation#animateparam对象说明) | 是 | 动画参数。 该参数仅用于指定动画参数，其入参AnimateParam的onFinish回调不生效。 如果通过combine进行TransitionEffect的组合，前一TransitionEffect的动画参数也可用于后一TransitionEffect。 |
 
 返回值：
 
@@ -372,7 +372,7 @@ type TransitionFinishCallback = (transitionIn: boolean) => void
 
 ![](./img/note_3.0-zh-cn.png)
 
-1. 当通过触发一棵子树的上下树，进而递归的触发出现消失转场时，只能保证根组件的消失动画结束回调能被调用。如果子组件的消失动画结束回调时间晚于根组件的消失动画结束回调，由于整棵子树已被销毁，子组件的结束回调不会被调用。
+1. 当通过触发一棵子树的上下树，进而递归地触发出现消失转场时，只能保证根组件的消失动画结束回调能被调用。如果子组件的消失动画结束回调时间晚于根组件的消失动画结束回调，由于整棵子树已被销毁，子组件的结束回调不会被调用。
 2. 当同一组件的最后一个同类型（即出现或者消失）的动画结束后，才会调用结束回调。即如果反复触发出现消失动画（例如通过Visibility触发），只有最后一次的出现消失的结束回调才会被调用。
 
 #### TransitionOptions(deprecated)
@@ -385,8 +385,8 @@ TransitionOptions通过指定结构体内的参数来指定转场效果。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| type | [TransitionType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#transitiontype) | 否 | 是 | 指定该转场样式生效的场景。 默认值：TransitionType.All **说明：** 不指定type时默认为TransitionType.All，即插入删除都生效。 |
-| opacity | number | 否 | 是 | 设置组件转场时的透明度效果，为插入时起点和删除时终点的值。 取值范围： [0, 1] **说明：** 设置小于0的非法值时，按0处理；设置大于1的非法值时，按1处理。 |
+| type | [TransitionType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#transitiontype) | 否 | 是 | 指定该转场效果生效的场景。 默认值：TransitionType.All **说明：** 不指定type时默认为TransitionType.All，即插入删除都生效。 |
+| opacity | number | 否 | 是 | 设置组件转场时的透明度效果，为插入时起点和删除时终点的值。当需要实现淡入淡出过渡效果时设置此属性；不设置此属性时，若同时未设置其他转场效果，默认产生透明度转场效果（相当于opacity为0），若已设置其他转场效果，则不产生透明度转场效果。 取值范围： [0, 1] **说明：** 设置小于0的非法值时，按0处理；设置大于1的非法值时，按1处理。 |
 | translate | [TranslateOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#translateoptions对象说明) | 否 | 是 | 设置组件转场时的平移效果，为插入时起点和删除时终点的值。 -x：横向的平移距离。 -y：纵向的平移距离。 -z：竖向的平移距离。 |
 | scale | [ScaleOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#scaleoptions对象说明) | 否 | 是 | 设置组件转场时的缩放效果，为插入时起点和删除时终点的值。 -x：横向放大倍数（或缩小比例）。 -y：纵向放大倍数（或缩小比例）。 -z：当前为二维显示，该参数无效 。 - centerX、centerY指缩放中心点，centerX和centerY默认值是"50%"，即默认以组件的中心点为缩放中心点。 - 中心点为(0, 0)代表组件的左上角。 **说明：** 设置centerX、centerY为非法字符串时（例如，"illegalString"），默认值为"0"。 |
 | rotate | [RotateOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#rotateoptions对象说明) | 否 | 是 | 设置组件转场时的旋转效果，为插入时起点和删除时终点的值。 -x：横向的旋转向量分量。 -y：纵向的旋转向量分量。 -z：竖向的旋转向量分量。 - centerX、centerY指旋转中心点，centerX和centerY默认值是"50%"，即默认以组件的中心点为旋转中心点。 - 中心点为(0, 0)代表组件的左上角。 |
@@ -438,7 +438,7 @@ struct TransitionEffectExample1 {
 ```
  示意图：
 
-![](./img/zh-cn_image_0000002664330059.gif)
+![](./img/zh-cn_image_0000002655848910.gif)
 
 #### [h2]示例2（使用不同接口实现图片出现消失）
 
@@ -500,7 +500,7 @@ struct TransitionEffectExample2 {
 ```
  示意图：
 
-![](./img/zh-cn_image_0000002633850948.gif)
+![](./img/zh-cn_image_0000002686088341.gif)
 
 #### [h2]示例3（设置父子组件为transition）
 
@@ -532,7 +532,7 @@ struct TransitionEffectExample3 {
         Column() {
           Row() {
             // $r('app.media.testImg')需要替换为开发者所需的图像资源文件。
-            Image($r('app.media.testImg')).width(150).height(150).id("image1")
+            Image($r('app.media.testImg')).width(150).height(150).id('image1')
               .transition(TransitionEffect.OPACITY.animation({ duration: 1000 }))
           }
 
@@ -541,11 +541,11 @@ struct TransitionEffectExample3 {
             .width(150)
             .height(150)
             .margin({ top: 50 })
-            .id("image2")
+            .id('image2')
             .transition(TransitionEffect.scale({ x: 0, y: 0 }).animation({ duration: 1000 }))
-          Text("view").margin({ top: 50 })
+          Text('view').margin({ top: 50 })
         }
-        .id("column1")
+        .id('column1')
         .transition(TransitionEffect.opacity(0.99).animation({ duration: 1000 }),
           // 结束回调设置在消失的第一层节点上，确保能有消失的结束回调
           (transitionIn: boolean) => {
@@ -559,7 +559,7 @@ struct TransitionEffectExample3 {
 ```
  示意图：
 
-![](./img/zh-cn_image_0000002634010852.gif)
+![](./img/zh-cn_image_0000002685928509.gif)
 
 #### [h2]示例4（visibility切换时的双动画复合效果）
 
@@ -578,7 +578,7 @@ struct TransitionVisibilityExample {
         .onClick(() => {
           this.getUIContext()?.animateTo({ duration: 1000 }, () => {
             this.isVisible = !this.isVisible;
-          })
+          });
         })
       Column() {
         Text('Hello World')
@@ -597,4 +597,4 @@ struct TransitionVisibilityExample {
 ```
  示意图：
 
-![](./img/zh-cn_image_0000002664210003.gif)
+![](./img/zh-cn_image_0000002656008832.gif)

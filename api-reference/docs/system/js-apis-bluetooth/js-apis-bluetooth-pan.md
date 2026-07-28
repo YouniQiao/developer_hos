@@ -2,8 +2,8 @@
 title: "@ohos.bluetooth.pan (蓝牙pan模块)"
 upstream_id: "harmonyos-references/js-apis-bluetooth-pan"
 catalog: "harmonyos-references"
-content_hash: "652eb833fb79"
-synced_at: "2026-07-09T00:59:23.110280"
+content_hash: "04f6905aa709"
+synced_at: "2026-07-28T16:50:36.450623"
 ---
 
 # @ohos.bluetooth.pan (蓝牙pan模块)
@@ -26,6 +26,8 @@ type BaseProfile = baseProfile.BaseProfile
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
+模型约束：此接口仅可在Stage模型下使用。
+
 | 类型 | 说明 |
 | --- | --- |
 | [baseProfile.BaseProfile](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bluetooth-baseprofile#baseprofile) | 基础Profile接口定义。 |
@@ -34,19 +36,21 @@ type BaseProfile = baseProfile.BaseProfile
 
 createPanProfile(): PanProfile
 
-创建蓝牙[NAP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#nap)实例。通过该实例可使用本端作为NAP设备的接口，如：获取和其他设备间的蓝牙个人局域网服务连接状态。
+创建蓝牙[PAN](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#pan)实例。通过该实例可使用本端作为[NAP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#nap)设备和[PANU](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#panu)设备的接口，如：获取和其他设备间的蓝牙个人局域网服务连接状态。
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| PanProfile | 返回NAP实例。 - 该类继承于[BaseProfile](#baseprofile)，因此可以使用其父类中的方法。 - 和该实例角色相对应的是[PANU](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#panu)角色。 |
+| PanProfile | 返回PAN实例。该类继承于[BaseProfile](#baseprofile)，因此可以使用其父类中的方法。 |
 
 错误码：
 
-以下错误码的详细介绍请参见[蓝牙服务子系统错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-bluetoothmanager)。
+以下错误码的详细介绍请参见[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -56,12 +60,94 @@ createPanProfile(): PanProfile
 示例：
 
 ```
-import { BusinessError } from '@kit.BasicServicesKit';
-
 try {
     let panProfile : pan.PanProfile= pan.createPanProfile();
     console.info('pan success');
 } catch (err) {
     console.error('errCode: ' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);
+}
+```
+
+#### PanProfile
+
+表示蓝牙PAN通信的实例。
+
+- 使用PanProfile方法之前需要创建该类的实例进行操作，通过[createPanProfile](#pancreatepanprofile)方法构造此实例。
+- 该类继承于[BaseProfile](#baseprofile)，因此可以使用其父类中的方法。
+
+#### [h2]isPanSupported
+
+isPanSupported(): boolean
+
+本端作为NAP角色时使用，获取本端网络共享状态。
+
+起始版本：26.0.0
+
+系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| boolean | 当前设备支持PAN时返回true，不支持时返回false。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[蓝牙服务子系统错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-bluetoothmanager)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 2900099 | Operation failed. |
+
+示例：
+
+```
+try {
+    let panProfile: pan.PanProfile = pan.createPanProfile();
+    let isPanSupported: boolean = panProfile.isPanSupported();
+} catch (err) {
+    console.error(`errCode: ${err.code}, errMessage: ${err.message}`);
+}
+```
+
+#### [h2]isTetheringOn
+
+isTetheringOn(): boolean
+
+本端作为NAP时使用，获取本端网络共享状态。
+
+起始版本：26.0.0
+
+需要权限：ohos.permission.ACCESS_BLUETOOTH
+
+系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| boolean | 网络共享开启返回true，网络共享关闭返回false。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 201 | Permission denied. |
+| 801 | Capability not supported. Only can be called on phone, tablet, and 2in1 devices. Failed to call the API when the short-range chip is not inserted on 2in1 device. |
+
+示例：
+
+```
+try {
+    let panProfile: pan.PanProfile = pan.createPanProfile();
+    let isTetheringOn: boolean = panProfile.isTetheringOn();
+} catch (err) {
+    console.error(`errCode: ${err.code}, errMessage: ${err.message}`);
 }
 ```

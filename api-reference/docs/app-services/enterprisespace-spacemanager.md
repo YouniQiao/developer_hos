@@ -2,8 +2,8 @@
 title: "@hms.enterpriseSpaceService.spaceManager(空间管理)"
 upstream_id: "harmonyos-references/enterprisespace-spacemanager"
 catalog: "harmonyos-references"
-content_hash: "0812ef715665"
-synced_at: "2026-07-09T01:01:17.833446"
+content_hash: "f0c9a5249771"
+synced_at: "2026-07-28T16:52:36.534317"
 ---
 
 # @hms.enterpriseSpaceService.spaceManager(空间管理)
@@ -30,7 +30,7 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| shortName | string | 否 | 否 | 工作空间的本地简称，其值与[WorkspaceInfo](#workspaceinfo)下的localName一致。 |
+| shortName | string | 否 | 否 | 工作空间的本地简称，默认值与[WorkspaceInfo](#workspaceinfo)下的localName一致。 |
 
 #### WorkspaceDomainInfo
 
@@ -44,12 +44,12 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| domain | string | 否 | 否 | 域名，仅在企业空间有值，例如“xx.com”，在个人空间中，其值为空。 |
-| workspaceName | string | 否 | 否 | 工作空间域账号名称，仅在企业空间中有效，而在个人空间中则为空。 |
-| accountId | string | 否 | 是 | 域中的账号标识符，仅在企业空间中有效，而在个人空间中则为空。其创建空间时，由系统自动生成的字符串，在[setWorkspaceInfo](#setworkspaceinfo)中可设置为空。 |
+| domain | string | 否 | 否 | 域名，仅在工作空间认证后有值，例如“xx.com”，否则其值为空。 |
+| workspaceName | string | 否 | 否 | 工作空间域账号名称，仅在工作空间认证后有值，否则其值为空。 |
+| accountId | string | 否 | 是 | 域账号标识符，仅在工作空间认证后有值，否则其值为空。其创建空间时，由系统自动生成的字符串，在[setWorkspaceInfo](#setworkspaceinfo)中可设置为空。 |
 | isAuthenticated | boolean | 否 | 是 | 工作空间是否已鉴权。 - true：已鉴权 - false：未鉴权 默认值为false。 |
-| serverConfigId | string | 否 | 是 | 工作空间所属域的服务器配置标识符。由创建空间时系统自动生成的，仅在企业空间中有效，例如“xx:test.com”，而在个人空间中则为空。企业账号未认证时，默认值为空。 |
-| enterpriseWorkspaceName | string | 否 | 是 | 企业空间名称，企业设备在某个空间下的标签属性，默认值为空。例如，在企业空间下，此字段表示“企业空间”；在个人空间下，此字段表示“个人空间”。 **起始版本**：6.0.2(22) |
+| serverConfigId | string | 否 | 是 | 工作空间所属域的服务器配置标识符。由创建空间时系统自动生成的，仅在工作空间认证后有值，例如“xx:test.com”，否则其值为空。 |
+| enterpriseWorkspaceName | string | 否 | 是 | 工作空间名称，企业设备在某个空间下的标签属性，默认值为空。例如，该名称在企业空间为“XXX”。 **起始版本**：6.0.2(22) |
 
 #### WorkspaceInfo
 
@@ -65,11 +65,11 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 | --- | --- | --- | --- | --- |
 | workspaceId | number | 否 | 否 | 工作空间ID。首个空间ID为100，后续创建的工作空间ID逐一递增，例如101、102。 |
 | localName | string | 否 | 否 | 工作空间的本地账号名称，例如，“test”。 |
-| shortName | string | 否 | 是 | 工作空间的本地简称，其值与localName一致。 |
+| shortName | string | 否 | 是 | 工作空间的本地简称，默认值与localName一致。 |
 | isUnlocked | boolean | 否 | 否 | 工作空间是否处于解锁状态。 - true：解锁状态 - false：锁屏状态 默认值为false。 |
 | photo | string | 否 | 否 | 工作空间的资料照片，是由本地照片的Base64格式拼接成的JSON字符串。“type”为照片类型，当前仅支持值为0；“defaultImg”为由照片转为Base64格式的字符串。例如，拼接后字符串为“{"type":0,"defaultImg":"data:image/png;base64,iVBO******Jggg==}”。 |
-| createTime | number | 否 | 否 | 工作空间的创建时间戳，为系统生成的10位数字组成的时间戳。 |
-| lastLoginTime | number | 否 | 否 | 工作空间的最后登录时间，通常为系统生成的10位数字组成的时间戳。 |
+| createTime | number | 否 | 否 | 工作空间的创建时间，系统生成的10位数字组成的时间戳，单位：s。 |
+| lastLoginTime | number | 否 | 否 | 工作空间的最后登录时间，通常为系统生成的10位数字组成的时间戳，单位：s。 |
 | serialNumber | number | 否 | 否 | 通常为由9位数字组成的工作空间序列号。 |
 | isActivated | boolean | 否 | 否 | 工作空间是否处于激活状态。 - true：激活状态 - false：未激活状态 默认值为false。 |
 | isCreateCompleted | boolean | 否 | 否 | 工作空间创建是否完成。 - true：创建工作空间已完成状态 - false：创建工作空间未完成状态 默认值为true。 |
@@ -78,7 +78,7 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 
 #### ProcessConfigInfo
 
-管控的系统服务进程以及其不可访问路径的配置信息。
+进程无法访问的路径信息。
 
 起始版本： 6.0.1(21)
 
@@ -93,7 +93,7 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 
 #### WorkspaceType
 
-工作空间类型。
+工作空间类型的枚举。
 
 起始版本： 6.0.0(20)
 
@@ -107,7 +107,7 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 
 #### QueryType
 
-查询的工作空间类型。
+工作空间查询类型的枚举。
 
 起始版本： 6.0.0(20)
 
@@ -122,7 +122,7 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 
 #### EventType
 
-订阅事件类型。
+订阅事件类型的枚举。
 
 起始版本： 6.0.0(20)
 
@@ -136,7 +136,7 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 
 #### UserDataEnum
 
-用户类型。
+工作空间类型的枚举。
 
 起始版本： 6.0.1(21)
 
@@ -146,12 +146,12 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| ENTERPRISE | 0 | 表示企业用户。 |
-| PERSONAL | 1 | 表示个人用户。 |
+| ENTERPRISE | 0 | 表示企业空间。 |
+| PERSONAL | 1 | 表示个人空间。 |
 
 #### EventData
 
-与空间事件相关的详细信息。
+工作空间事件信息。
 
 起始版本： 6.0.0(20)
 
@@ -166,7 +166,7 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 
 #### LockdownModePolicy
 
-锁定模式策略，包括后台应用冻结和公共目录加解密等安全加固功能，提供开关，关闭或者效率模式。
+锁定模式策略类型的枚举，包括后台应用冻结和公共目录加解密等安全加固功能，提供开关，关闭或者效率模式。
 
 起始版本： 6.0.2(22)
 
@@ -181,7 +181,7 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 
 #### SpaceGuidePolicy
 
-个人空间创建引导页展示策略。
+个人空间创建引导页展示策略的枚举。
 
 起始版本： 6.1.0(23)
 
@@ -196,7 +196,7 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 
 #### AuthResult
 
-企业认证返回结果。
+企业认证结果。
 
 起始版本： 6.1.0(23)
 
@@ -211,7 +211,7 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 
 #### StatusBarIcon
 
-状态栏图标。
+状态栏中的工作空间图标。
 
 起始版本： 6.1.0(23)
 
@@ -221,8 +221,71 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| white | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 否 | 否 | 黑色背景下图标，样式设计[参考设计规范](https://developer.huawei.com/consumer/cn/doc/design-guides/statusbar-0000002319710910#section13803824112416)。 |
-| black | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 否 | 否 | 白色背景下图标，样式设计[参考设计规范](https://developer.huawei.com/consumer/cn/doc/design-guides/statusbar-0000002319710910#section13803824112416)。 |
+| white | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 否 | 否 | 深色背景下图标，样式设计[参考设计规范](https://developer.huawei.com/consumer/cn/doc/design-guides/statusbar-0000002319710910#section13803824112416)。 |
+| black | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 否 | 否 | 浅色背景下图标，样式设计[参考设计规范](https://developer.huawei.com/consumer/cn/doc/design-guides/statusbar-0000002319710910#section13803824112416)。 |
+
+#### NotificationVisibilitySwitch
+
+跨空间通知内容可见性的状态枚举。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.EnterpriseSpace.ServiceManage
+
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| NOTIFICATION_HIDDEN | 0 | 隐藏跨空间消息提醒。 |
+| NOTIFICATION_VISIBLE | 1 | 展示跨空间消息提醒。 |
+
+#### NotificationSwitch
+
+跨空间通知的开关状态枚举。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.EnterpriseSpace.ServiceManage
+
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| ON | 0 | 开启跨空间消息提醒。 |
+| OFF | 1 | 关闭跨空间消息提醒。 |
+
+#### NotificationVisibilityControl
+
+跨空间通知内容可见性的控制类型枚举。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.EnterpriseSpace.ServiceManage
+
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| ALLOW_CHANGE | 0 | 允许修改跨空间消息提醒可见性开关状态。 |
+| DISALLOW_CHANGE | 1 | 不允许修改跨空间消息提醒可见性开关状态。 |
+
+#### NotificationConfig
+
+应用跨空间通知的配置信息。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.EnterpriseSpace.ServiceManage
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| workspaceId | number | 否 | 否 | 工作空间ID。首个空间ID为100，后续创建的工作空间ID逐一递增，例如101、102。取值应为[100,10736]内的整数。 |
+| appIdentifier | string | 否 | 否 | 应用的唯一标识。详情信息可参考[什么是appIdentifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appidentifier)。 |
+| notificationState | [NotificationSwitch](#notificationswitch) | 否 | 否 | 跨空间消息提醒开关状态，取值可参见[NotificationSwitch](#notificationswitch)。 |
+| visibilityState | [NotificationVisibilitySwitch](#notificationvisibilityswitch) | 否 | 是 | 跨空间消息提醒可见性开关状态，取值可参见[NotificationVisibilitySwitch](#notificationvisibilityswitch)。默认值为NOTIFICATION_HIDDEN。 |
+| allowVisibilityChange | [NotificationVisibilityControl](#notificationvisibilitycontrol) | 否 | 是 | 跨空间消息提醒可见性控制开关状态，取值可参见[NotificationVisibilityControl](#notificationvisibilitycontrol)。默认值为ALLOW_CHANGE。 |
 
 #### createWorkspace
 
@@ -230,7 +293,7 @@ createWorkspace(localName: string, workspaceType: WorkspaceType, params?: Create
 
 创建工作空间。使用Promise异步回调。
 
-![](./img/note_3.0-zh-cn.png) 从6.1.0(23)版本，在创建工作空间时，增加如下校验：
+![](./img/note_3.0-zh-cn.png) 从6.1.0(23)开始，在创建工作空间时，增加如下校验：
 
 - 最多可创建2个工作空间。
 - 企业管理员设置禁止添加账号或者关闭全盘解密后，无法创建工作空间。
@@ -247,8 +310,8 @@ createWorkspace(localName: string, workspaceType: WorkspaceType, params?: Create
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| localName | string | 是 | 工作空间的本地名称。 |
-| workspaceType | [WorkspaceType](#workspacetype) | 是 | 工作空间的类型，取值可参见[WorkspaceType](#workspacetype)。 |
+| localName | string | 是 | 工作空间的本地账号名称，例如，“testWorkspace”。 |
+| workspaceType | [WorkspaceType](#workspacetype) | 是 | 工作空间的类型。 |
 | params | [CreateWorkspaceParams](#createworkspaceparams) | 否 | 创建工作空间配置，具体可参见[CreateWorkspaceParams](#createworkspaceparams)。 |
 
 返回值：
@@ -264,19 +327,20 @@ createWorkspace(localName: string, workspaceType: WorkspaceType, params?: Create
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | The application does not have permission to call this function. |
+| 801 | The device type not supported. 适用版本：26.0.0+ |
 | 1020400001 | System service exception. |
 | 1020400002 | Parameter error. |
 | 1020400003 | Invalid workspace. |
 | 1020400007 | Enterprise workspace not enabled. |
-| 1020400011 | Account creation is not permitted. |
-| 1020400012 | Full disk encryption is not enabled. |
+| 1020400011 | Account creation is not permitted. 适用版本：6.1.0(23)+ |
+| 1020400012 | Full disk encryption is not enabled. 适用版本：6.1.0(23)+ |
 
 示例：
 
 ```
 import { spaceManager } from '@kit.EnterpriseSpaceKit';
 
-const localName: string = '111111';
+const localName: string = 'testWorkspace';
 const workspaceType: spaceManager.WorkspaceType = spaceManager.WorkspaceType.ADMIN;
 const params: spaceManager.CreateWorkspaceParams = {
   shortName: 'test'
@@ -293,7 +357,7 @@ enableWorkspace(enable: boolean): Promise<void>
 
 ![](./img/note_3.0-zh-cn.png) 从6.1.0(23)开始，使能双空间特性时，增加以下校验：
 
-- 用户数量不超过2个。
+- 当前工作空间个数不超过2个。
 - 企业管理员设置关闭全盘解密后，无法使能双空间特性。
 
 起始版本： 6.0.0(20)
@@ -308,7 +372,7 @@ enableWorkspace(enable: boolean): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| enable | boolean | 是 | 双空间特性是否启用。默认值为false。 - true：支持双空间特性 - false：不支持双空间特性 |
+| enable | boolean | 是 | 双空间特性是否启用。参数的默认值为false。 - true：支持双空间特性 - false：不支持双空间特性 |
 
 返回值：
 
@@ -323,10 +387,11 @@ enableWorkspace(enable: boolean): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | The application does not have permission to call this function. |
+| 801 | The device type not supported. 适用版本：26.0.0+ |
 | 1020400001 | System service exception. |
 | 1020400002 | Parameter error. |
-| 1020400003 | Invalid workspace. |
-| 1020400012 | Full disk encryption is not enabled. |
+| 1020400003 | Invalid workspace. 适用版本：6.1.0(23)+ |
+| 1020400012 | Full disk encryption is not enabled. 适用版本：6.1.0(23)+ |
 
 示例：
 
@@ -356,7 +421,7 @@ queryWorkspace(queryFlag: QueryType): Promise<WorkspaceInfo[]>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| queryFlag | [QueryType](#querytype) | 是 | 工作空间类型，其取值可参见[QueryType](#querytype)。 |
+| queryFlag | [QueryType](#querytype) | 是 | 工作空间类型。 |
 
 返回值：
 
@@ -371,6 +436,7 @@ queryWorkspace(queryFlag: QueryType): Promise<WorkspaceInfo[]>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | The application does not have permission to call this function. |
+| 801 | The device type not supported. 适用版本：26.0.0+ |
 | 1020400001 | System service exception. |
 | 1020400002 | Parameter error. |
 
@@ -417,6 +483,7 @@ removeWorkspace(workspaceId: number): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | The application does not have permission to call this function. |
+| 801 | The device type not supported. 适用版本：26.0.0+ |
 | 1020400001 | System service exception. |
 | 1020400002 | Parameter error. |
 | 1020400003 | Invalid workspace. |
@@ -427,7 +494,7 @@ removeWorkspace(workspaceId: number): Promise<void>
 ```
 import { spaceManager } from '@kit.EnterpriseSpaceKit';
 
-const workspaceId: number = 101;  // 已经创建的工作空间ID。
+const workspaceId: number = 101; // 已经创建的工作空间ID。
 await spaceManager.removeWorkspace(workspaceId);
 console.info(`Succeeded in removing workspace.`);
 ```
@@ -442,7 +509,7 @@ setWorkspaceInfo(workspaceId: number, domainInfo: WorkspaceDomainInfo): Promise<
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-需要权限： ohos.permission.ENTERPRISE_MANAGE_LOCAL_PUBLICSPACES
+需要权限： ohos.permission.ENTERPRISE_MANAGE_LOCAL_PUBLICSPACES或ohos.permission.MANAGE_LOCAL_WORKSPACES
 
 系统能力： SystemCapability.EnterpriseSpace.ServiceManage
 
@@ -466,6 +533,7 @@ setWorkspaceInfo(workspaceId: number, domainInfo: WorkspaceDomainInfo): Promise<
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | The application does not have permission to call this function. |
+| 801 | The device type not supported. 适用版本：26.0.0+ |
 | 1020400001 | System service exception. |
 | 1020400002 | Parameter error. |
 | 1020400003 | Invalid workspace. |
@@ -494,7 +562,7 @@ console.info(`Succeeded in setting workspace info.`);
 
 setWorkspaceProfilePhoto(workspaceId: number, photo: string): Promise<void>
 
-根据工作空间ID设置工作空间资料照片。使用Promise异步回调。
+设置工作空间资料照片。使用Promise异步回调。
 
 起始版本： 6.0.0(20)
 
@@ -524,6 +592,7 @@ setWorkspaceProfilePhoto(workspaceId: number, photo: string): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | The application does not have permission to call this function. |
+| 801 | The device type not supported. 适用版本：26.0.0+ |
 | 1020400001 | System service exception. |
 | 1020400002 | Parameter error. |
 | 1020400003 | Invalid workspace. |
@@ -563,7 +632,7 @@ subscribeEvent(eventId: EventType[], callback: AsyncCallback<EventData>): number
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | eventId | [EventType](#eventtype)[] | 是 | 订阅的空间事件类型列表。 |
-| callback | AsyncCallback | 是 | 回调函数，当订阅空间事件成功，[EventData](#eventdata)为与空间事件相关的详细信息。 |
+| callback | AsyncCallback | 是 | 回调函数，当订阅空间事件成功，err为undefined，data为获取到的工作空间事件信息[EventData](#eventdata)；否则为错误对象。 |
 
 返回值：
 
@@ -578,6 +647,7 @@ subscribeEvent(eventId: EventType[], callback: AsyncCallback<EventData>): number
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | The application does not have permission to call this function. |
+| 801 | The device type not supported. 适用版本：26.0.0+ |
 | 1020400001 | System service exception. |
 | 1020400002 | Parameter error. |
 | 1020400006 | Session disconnected. |
@@ -627,6 +697,7 @@ unsubscribeEvent(subscribeId: number): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | The application does not have permission to call this function. |
+| 801 | The device type not supported. 适用版本：26.0.0+ |
 | 1020400001 | System service exception. |
 | 1020400002 | Parameter error. |
 | 1020400007 | Enterprise workspace not enabled. |
@@ -636,7 +707,7 @@ unsubscribeEvent(subscribeId: number): void
 ```
 import { spaceManager } from '@kit.EnterpriseSpaceKit';
 
-const subscribeId: number = 100;
+const subscribeId: number = 10; // 由订阅空间事件得到的订阅ID。
 spaceManager.unsubscribeEvent(subscribeId);
 console.info(`Succeeded in unsubscribing event.`);
 ```
@@ -659,7 +730,7 @@ setRestrictedAccessBackgroundUserdata(userData: UserDataEnum, enable: boolean): 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| userData | [UserDataEnum](#userdataenum) | 是 | 表示用户空间类型。 |
+| userData | [UserDataEnum](#userdataenum) | 是 | 表示工作空间类型。 |
 | enable | boolean | 是 | 表示是否开启管控。默认值为true。 - true：表示开启管控，此时系统服务进程不可访问后台用户的数据 - false：表示关闭管控，此时系统服务进程可正常访问后台用户的数据 |
 
 返回值：
@@ -675,6 +746,7 @@ setRestrictedAccessBackgroundUserdata(userData: UserDataEnum, enable: boolean): 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | The application does not have permission to call this function. |
+| 801 | The device type not supported. 适用版本：26.0.0+ |
 | 1020400001 | System service exception. |
 | 1020400002 | Parameter error. |
 | 1020400007 | Enterprise workspace not enabled. |
@@ -686,8 +758,8 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 
 const userData: spaceManager.UserDataEnum = spaceManager.UserDataEnum.ENTERPRISE;
 const enable: boolean = false;
-await spaceManager.setRestrictedAccessBackgroundUserdata(userData, enable)
-console.info(`Succeeded in setting restricted access background user data. userData: ${userData}, enable: ${enable}`);
+await spaceManager.setRestrictedAccessBackgroundUserdata(userData, enable);
+console.info(`Succeeded in setting restricted access background user data.`);
 ```
 
 #### getRestrictedAccessBackgroundUserdataStatus
@@ -708,13 +780,13 @@ getRestrictedAccessBackgroundUserdataStatus(userData: UserDataEnum): Promise<boo
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| userData | [UserDataEnum](#userdataenum) | 是 | 表示用户空间类型。 |
+| userData | [UserDataEnum](#userdataenum) | 是 | 表示工作空间类型。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，表示当前用户空间不可访问功能状态。 表示是否开启管控。 - true：表示开启管控，此时系统服务进程不可访问后台用户的数据 - false：表示关闭管控，此时系统服务进程可正常访问后台用户的数据 |
+| Promise | Promise对象，表示系统服务进程访问后台用户数据是否管控。 - true：表示开启管控，此时系统服务进程不可访问后台用户的数据 - false：表示关闭管控，此时系统服务进程可正常访问后台用户的数据。 |
 
 错误码：
 
@@ -723,6 +795,7 @@ getRestrictedAccessBackgroundUserdataStatus(userData: UserDataEnum): Promise<boo
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | The application does not have permission to call this function. |
+| 801 | The device type not supported. 适用版本：26.0.0+ |
 | 1020400001 | System service exception. |
 | 1020400002 | Parameter error. |
 | 1020400007 | Enterprise workspace not enabled. |
@@ -755,13 +828,13 @@ getRestrictedAccessBackgroundUserdataProcessList(userData: UserDataEnum): Promis
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| userData | [UserDataEnum](#userdataenum) | 是 | 表示用户空间类型。 |
+| userData | [UserDataEnum](#userdataenum) | 是 | 表示工作空间类型。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，表示当前配置的管控信息列表。 |
+| Promise | Promise对象，返回当前配置的管控信息列表。 |
 
 错误码：
 
@@ -770,6 +843,7 @@ getRestrictedAccessBackgroundUserdataProcessList(userData: UserDataEnum): Promis
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | The application does not have permission to call this function. |
+| 801 | The device type not supported. 适用版本：26.0.0+ |
 | 1020400001 | System service exception. |
 | 1020400002 | Parameter error. |
 | 1020400007 | Enterprise workspace not enabled. |
@@ -806,7 +880,7 @@ addRestrictedAccessBackgroundUserdataProcessList(userData: UserDataEnum, process
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| userData | [UserDataEnum](#userdataenum) | 是 | 表示用户空间类型。 |
+| userData | [UserDataEnum](#userdataenum) | 是 | 表示工作空间类型。 |
 | processName | string | 是 | 表示系统服务进程的名称。 |
 | disallowPaths | string[] | 否 | 表示配置的不可访问的路径。 - 当不传该参数时，默认值为['/data/service','/data/app','/storage','/mnt'] - 当传该参数时，其值只能是['/data/service','/data/app','/storage','/mnt']列表的子集 |
 
@@ -823,6 +897,7 @@ addRestrictedAccessBackgroundUserdataProcessList(userData: UserDataEnum, process
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | The application does not have permission to call this function. |
+| 801 | The device type not supported. 适用版本：26.0.0+ |
 | 1020400001 | System service exception. |
 | 1020400002 | Parameter error. |
 | 1020400007 | Enterprise workspace not enabled. |
@@ -861,7 +936,7 @@ deleteRestrictedAccessBackgroundUserdataProcessList(userData: UserDataEnum, proc
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| userData | [UserDataEnum](#userdataenum) | 是 | 表示用户空间类型，其值参考[UserDataEnum](#userdataenum)枚举值。 |
+| userData | [UserDataEnum](#userdataenum) | 是 | 表示工作空间类型，其值参考[UserDataEnum](#userdataenum)枚举值。 |
 | processName | string | 是 | 表示系统服务进程的名称。 |
 
 返回值：
@@ -877,6 +952,7 @@ deleteRestrictedAccessBackgroundUserdataProcessList(userData: UserDataEnum, proc
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | The application does not have permission to call this function. |
+| 801 | The device type not supported. 适用版本：26.0.0+ |
 | 1020400001 | System service exception. |
 | 1020400002 | Parameter error. |
 | 1020400007 | Enterprise workspace not enabled. |
@@ -900,13 +976,13 @@ try {
 
 setWorkspacePolicy(key: string, value: number, workspaceId?: number): Promise<void>
 
-设置工作空间策略。
+设置工作空间策略。使用Promise异步回调。
 
 起始版本： 6.0.2(22)
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-需要权限： ohos.permission.ENTERPRISE_MANAGE_LOCAL_PUBLICSPACES
+需要权限： ohos.permission.ENTERPRISE_MANAGE_LOCAL_PUBLICSPACES或ohos.permission.MANAGE_LOCAL_WORKSPACES
 
 系统能力： SystemCapability.EnterpriseSpace.ServiceManage
 
@@ -931,6 +1007,7 @@ setWorkspacePolicy(key: string, value: number, workspaceId?: number): Promise<vo
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | The application does not have permission to call this function. |
+| 801 | The device type not supported. 适用版本：26.0.0+ |
 | 1020400001 | System service exception. |
 | 1020400002 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 
@@ -950,7 +1027,7 @@ console.info(`Succeeded in setting workspace policy.`);
 
 getWorkspacePolicy(key: string, workspaceId?: number): Promise<number>
 
-查询工作空间策略。
+查询工作空间策略。使用Promise异步回调。
 
 起始版本： 6.0.2(22)
 
@@ -971,7 +1048,7 @@ getWorkspacePolicy(key: string, workspaceId?: number): Promise<number>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，策略状态，根据传入的key查看[LockdownModePolicy](#lockdownmodepolicy)或者[SpaceGuidePolicy](#spaceguidepolicy)的枚举值。 |
+| Promise | Promise对象，返回策略状态，根据传入的key查看[LockdownModePolicy](#lockdownmodepolicy)或者[SpaceGuidePolicy](#spaceguidepolicy)的枚举值。 |
 
 错误码：
 
@@ -980,6 +1057,7 @@ getWorkspacePolicy(key: string, workspaceId?: number): Promise<number>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | The application does not have permission to call this function. |
+| 801 | The device type not supported. 适用版本：26.0.0+ |
 | 1020400001 | System service exception. |
 | 1020400002 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 1020400005 | Configuration not set. |
@@ -999,7 +1077,7 @@ console.info(`Succeeded in getting workspace policy. value: ${value}`);
 
 setLockdownExemptionApps(appIds: string[], workspaceId?: number): Promise<void>
 
-设置深度冻结豁免名单。设置的豁免应用在后台空间可正常运行，不会被冻结。
+设置深度冻结豁免名单。设置的豁免应用在后台空间可正常运行，不会被冻结。使用Promise异步回调。
 
 起始版本： 6.0.2(22)
 
@@ -1013,8 +1091,8 @@ setLockdownExemptionApps(appIds: string[], workspaceId?: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| appIds | string[] | 是 | 表示属于深度冻结豁免名单的应用ID数组。列表，例如“[com.example.test1, com.example.test2]”。 |
-| workspaceId | number | 否 | 表示属于豁免名单的空间ID。首个空间ID为100，后续创建的工作空间ID逐一递增，例如101、102。如果未设置，则默认使用调用者所在的工作空间ID。取值应为[100,10736]内的整数。 |
+| appIds | string[] | 是 | 表示属于深度冻结豁免名单的应用ID数组。列表，例如“['com.example.test1', 'com.example.test2']”。详情信息可参考[什么是appId](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appid)。 |
+| workspaceId | number | 否 | 表示工作空间ID。首个空间ID为100，后续创建的工作空间ID逐一递增，例如101、102。如果未设置，则默认使用调用者所在的工作空间ID。取值应为[100,10736]内的整数。 |
 
 返回值：
 
@@ -1029,6 +1107,7 @@ setLockdownExemptionApps(appIds: string[], workspaceId?: number): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | The application does not have permission to call this function. |
+| 801 | The device type not supported. 适用版本：26.0.0+ |
 | 1020400001 | System service exception. |
 | 1020400002 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 1020400007 | Enterprise workspace not enabled. |
@@ -1040,9 +1119,9 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 
 const workspaceId: number = 100;
 const appIds = [
-    'com.example.enterprisespacekit_samplecode_clientdemo_arkts1',
-    'com.example.enterprisespacekit_samplecode_clientdemo_arkts2'
-  ];
+  'com.example.enterprisespacekit_samplecode_clientdemo_arkts1',
+  'com.example.enterprisespacekit_samplecode_clientdemo_arkts2'
+];
 await spaceManager.setLockdownExemptionApps(appIds, workspaceId);
 console.info(`Succeeded in setting lockdown exemption apps.`);
 ```
@@ -1051,7 +1130,7 @@ console.info(`Succeeded in setting lockdown exemption apps.`);
 
 getLockdownExemptionApps(workspaceId?: number): Promise<string[]>
 
-查询深度冻结豁免名单。
+查询深度冻结豁免名单。使用Promise异步回调。
 
 起始版本： 6.0.2(22)
 
@@ -1071,7 +1150,7 @@ getLockdownExemptionApps(workspaceId?: number): Promise<string[]>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，表示深度冻结豁免名单。 |
+| Promise | Promise对象，返回深度冻结豁免名单。 |
 
 错误码：
 
@@ -1080,6 +1159,7 @@ getLockdownExemptionApps(workspaceId?: number): Promise<string[]>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | The application does not have permission to call this function. |
+| 801 | The device type not supported. 适用版本：26.0.0+ |
 | 1020400001 | System service exception. |
 | 1020400002 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 1020400007 | Enterprise workspace not enabled. |
@@ -1098,7 +1178,7 @@ console.info(`Succeeded in getting lockdown exemption apps. apps: ${JSON.stringi
 
 authenticate(enterpriseAuthInfo: WorkspaceDomainInfo, credential: Uint8Array): Promise<AuthResult>
 
-企业账号认证。
+企业账号认证。使用Promise异步回调。
 
 起始版本： 6.1.0(23)
 
@@ -1113,13 +1193,13 @@ authenticate(enterpriseAuthInfo: WorkspaceDomainInfo, credential: Uint8Array): P
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | enterpriseAuthInfo | [WorkspaceDomainInfo](#workspacedomaininfo) | 是 | 工作空间域信息，具体可参见[WorkspaceDomainInfo](#workspacedomaininfo)。 |
-| credential | Uint8Array | 是 | 企业用户登录凭证。 |
+| credential | Uint8Array | 是 | 企业用户登录凭证（如密码），需由用户传入。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，表示企业账号认证结果。 |
+| Promise | Promise对象，返回企业账号认证结果。 |
 
 错误码：
 
@@ -1128,6 +1208,7 @@ authenticate(enterpriseAuthInfo: WorkspaceDomainInfo, credential: Uint8Array): P
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | The application does not have permission to call this function. |
+| 801 | The device type not supported. 适用版本：26.0.0+ |
 | 1020400001 | System service exception. |
 | 1020400002 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 1020400004 | Authentication failed. |
@@ -1158,7 +1239,7 @@ try {
 
 getAccessToken(businessParams: Record<string, string>): Promise<Uint8Array>
 
-获取企业应用访问令牌。
+获取企业应用访问令牌。使用Promise异步回调。
 
 起始版本： 6.1.0(23)
 
@@ -1178,7 +1259,7 @@ getAccessToken(businessParams: Record<string, string>): Promise<Uint8Array>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，表示AccessToken。 |
+| Promise | Promise对象，返回访问令牌，可用于企业应用的免密登录。 |
 
 错误码：
 
@@ -1187,6 +1268,7 @@ getAccessToken(businessParams: Record<string, string>): Promise<Uint8Array>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | The application does not have permission to call this function. |
+| 801 | The device type not supported. 适用版本：26.0.0+ |
 | 1020400001 | System service exception. |
 | 1020400002 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 1020400003 | Invalid workspace. |
@@ -1215,7 +1297,7 @@ setWorkspaceStatusBarIcon(icon: StatusBarIcon, workspaceId?: number): Promise<vo
 
 根据工作空间ID设置工作空间状态栏图标。使用Promise异步回调。
 
-该接口仅供企业安全管控类MDM应用申请权限后使用，可修改状态栏图标的工作空间受限于当前MDM应用所在工作空间。若MDM应用安装在U0/U1工作空间下，可修改其他工作空间状态栏图标，否则仅能修改当前MDM应用所在工作空间的状态栏图标。
+该接口仅供企业安全管控类MDM应用申请权限后使用，可修改状态栏图标的工作空间受限于当前MDM应用所在工作空间。若MDM应用安装在系统预制用户下，可修改其他工作空间状态栏图标，否则仅能修改当前MDM应用所在工作空间的状态栏图标。
 
 起始版本： 6.1.0(23)
 
@@ -1230,7 +1312,7 @@ setWorkspaceStatusBarIcon(icon: StatusBarIcon, workspaceId?: number): Promise<vo
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | icon | [StatusBarIcon](#statusbaricon) | 是 | 设置的工作空间的状态栏图标。 |
-| workspaceId | number | 否 | 工作空间ID。首个空间ID为100，后续创建的工作空间ID逐一递增，例如101、102。 如果未设置，则默认使用调用者所在的工作空间ID。取值应为[100,10736]内的整数。 |
+| workspaceId | number | 否 | 工作空间ID。首个空间ID为100，后续创建的工作空间ID逐一递增，例如101、102。如果未设置，则默认使用调用者所在的工作空间ID。取值应为[100,10736]内的整数。 |
 
 返回值：
 
@@ -1245,6 +1327,7 @@ setWorkspaceStatusBarIcon(icon: StatusBarIcon, workspaceId?: number): Promise<vo
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | The application does not have permission to call this function. |
+| 801 | The device type not supported. 适用版本：26.0.0+ |
 | 1020400001 | System service exception. |
 | 1020400002 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 1020400003 | Invalid workspace. |
@@ -1275,13 +1358,13 @@ struct Index {
     const blackPixelMap: image.PixelMap = await blackImageSource.createPixelMap();
 
     // 构建图标信息
-    const icons: spaceManager.StatusBarIcon = {
+    const icon: spaceManager.StatusBarIcon = {
       white: whitePixelMap,
       black: blackPixelMap
     };
     const workspaceId: number = 100;
     try {
-      await spaceManager.setWorkspaceStatusBarIcon(icons, workspaceId);
+      await spaceManager.setWorkspaceStatusBarIcon(icon, workspaceId);
       console.info(`Succeeded in setting workspace status bar icon.`);
     } catch (err) {
       console.error(`Failed to set workspace status bar icon. Code: ${err.code}, message: ${err.message}`);
@@ -1299,7 +1382,7 @@ setWorkspaceLocalName(localName: string, workspaceId?: number): Promise<void>
 
 根据工作空间ID设置工作空间本地名称。使用Promise异步回调。
 
-该接口仅供企业安全管控类MDM应用申请权限后使用，可修改本地名称的工作空间受限于当前MDM应用所在工作空间。若MDM应用安装在U0/U1工作空间下，可修改其他工作空间本地名称，否则仅能修改当前MDM应用所在工作空间的本地名称。
+该接口仅供企业安全管控类MDM应用申请权限后使用，可修改本地名称的工作空间受限于当前MDM应用所在工作空间。若MDM应用安装在系统预制用户下，可修改其他工作空间本地名称，否则仅能修改当前MDM应用所在工作空间的本地名称。
 
 起始版本： 6.1.0(23)
 
@@ -1314,7 +1397,7 @@ setWorkspaceLocalName(localName: string, workspaceId?: number): Promise<void>
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | localName | string | 是 | 设置的工作空间的本地名称。 |
-| workspaceId | number | 否 | 工作空间ID。首个空间ID为100，后续创建的工作空间ID逐一递增，例如101、102。 如果未设置，则默认使用调用者所在的工作空间ID。取值应为[100,10736]内的整数。 |
+| workspaceId | number | 否 | 工作空间ID。首个空间ID为100，后续创建的工作空间ID逐一递增，例如101、102。如果未设置，则默认使用调用者所在的工作空间ID。取值应为[100,10736]内的整数。 |
 
 返回值：
 
@@ -1329,6 +1412,7 @@ setWorkspaceLocalName(localName: string, workspaceId?: number): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | The application does not have permission to call this function. |
+| 801 | The device type not supported. 适用版本：26.0.0+ |
 | 1020400001 | System service exception. |
 | 1020400002 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 
@@ -1347,7 +1431,7 @@ console.info(`Succeeded in setting workspace local name.`);
 
 isEnterpriseWorkspaceEnabled(): Promise<boolean>
 
-查询设备是否开启双空间。使用Promise异步回调。
+查询设备是否开启企业数字空间特性。使用Promise异步回调。
 
 起始版本： 26.0.0
 
@@ -1361,7 +1445,7 @@ isEnterpriseWorkspaceEnabled(): Promise<boolean>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，表示当前设备是否开启双空间。 - true：表示当前设备已开启双空间，展示双空间的相关特性。 - false：表示当前设备未开启双空间。 |
+| Promise | Promise对象，返回true表示当前设备已开启企业数字空间特性；返回false表示当前设备未开启企业数字空间特性。 |
 
 错误码：
 
@@ -1370,6 +1454,7 @@ isEnterpriseWorkspaceEnabled(): Promise<boolean>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | The application does not have permission to call this function. |
+| 801 | The device type not supported. |
 | 1020400001 | System service exception. |
 
 示例：
@@ -1405,7 +1490,7 @@ isEnterpriseWorkspace(workspaceId?: number): Promise<boolean>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，表示工作空间是否为企业空间。 - true：表示企业空间，展示企业空间的相关特性。 - false：表示个人空间，区分企业空间特有信息。 |
+| Promise | Promise对象，返回true表示该工作空间是企业空间；返回false表示该工作空间是个人空间。 |
 
 错误码：
 
@@ -1414,9 +1499,11 @@ isEnterpriseWorkspace(workspaceId?: number): Promise<boolean>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | The application does not have permission to call this function. |
+| 801 | The device type not supported. |
 | 1020400001 | System service exception. |
 | 1020400002 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 1020400003 | Invalid workspace. |
+| 1020400007 | Enterprise workspace not enabled. |
 
 示例：
 
@@ -1426,4 +1513,153 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 const workspaceId: number = 100;
 const isEnterprise = await spaceManager.isEnterpriseWorkspace(workspaceId);
 console.info(`Succeeded in getting enterprise space. isEnterprise: ${isEnterprise}`);
+```
+
+#### switchWorkspace
+
+switchWorkspace(workspaceId?: number): Promise<void>
+
+切换工作空间。使用Promise异步回调。
+
+该接口仅供企业安全管控类MDM应用申请权限后使用，并且存在两个空间的情况下允许调用。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+需要权限： ohos.permission.ENTERPRISE_MANAGE_LOCAL_PUBLICSPACES
+
+系统能力： SystemCapability.EnterpriseSpace.ServiceManage
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| workspaceId | number | 否 | 目标工作空间ID，如果未设置，则默认切换到另一个工作空间。取值应为[100,10736]内的整数。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，无返回结果。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprise-space)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 201 | The application does not have permission to call this function. |
+| 801 | The device type not supported. |
+| 1020400001 | System service exception. |
+| 1020400002 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 1020400003 | Invalid workspace. |
+| 1020400007 | Enterprise workspace not enabled. |
+
+示例：
+
+```
+import { spaceManager } from '@kit.EnterpriseSpaceKit';
+
+const workspaceId: number = 101; // 已经创建的工作空间ID。
+await spaceManager.switchWorkspace(workspaceId);
+console.info(`Succeeded in switching workspace.`);
+```
+
+#### setNotificationConfig
+
+setNotificationConfig(configs: NotificationConfig[]): Promise<void>
+
+设置跨空间消息提醒配置。使用Promise异步回调。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+需要权限： ohos.permission.ENTERPRISE_MANAGE_LOCAL_PUBLICSPACES
+
+系统能力： SystemCapability.EnterpriseSpace.ServiceManage
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| configs | [NotificationConfig](#notificationconfig)[] | 是 | 跨空间消息提醒配置列表。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，无返回结果。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprise-space)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 201 | The application does not have permission to call this function. |
+| 801 | The device type not supported. |
+| 1020400001 | System service exception. |
+| 1020400002 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 1020400007 | Enterprise workspace not enabled. |
+| 1020400014 | Configuration quantity exceeds the limit. |
+
+示例：
+
+```
+import { spaceManager } from '@kit.EnterpriseSpaceKit';
+
+const configs: spaceManager.NotificationConfig[] = [
+  {
+    workspaceId: 100,
+    appIdentifier: 'com.example.app',
+    notificationState: spaceManager.NotificationSwitch.ON,
+    visibilityState: spaceManager.NotificationVisibilitySwitch.NOTIFICATION_VISIBLE,
+    allowVisibilityChange: spaceManager.NotificationVisibilityControl.ALLOW_CHANGE
+  }
+];
+await spaceManager.setNotificationConfig(configs);
+console.info(`Succeeded in setting notification config.`);
+```
+
+#### getNotificationConfig
+
+getNotificationConfig(): Promise<NotificationConfig[]>
+
+获取跨空间消息提醒配置。使用Promise异步回调。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+需要权限： ohos.permission.QUERY_LOCAL_WORKSPACES
+
+系统能力： SystemCapability.EnterpriseSpace.ServiceManage
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，返回跨空间消息提醒配置列表。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprise-space)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 201 | The application does not have permission to call this function. |
+| 801 | The device type not supported. |
+| 1020400001 | System service exception. |
+| 1020400005 | Configuration not set. |
+| 1020400007 | Enterprise workspace not enabled. |
+
+示例：
+
+```
+import { spaceManager } from '@kit.EnterpriseSpaceKit';
+
+const configs: spaceManager.NotificationConfig[] = await spaceManager.getNotificationConfig();
+console.info(`Succeeded in getting notification config. configs: ${JSON.stringify(configs)}`);
 ```

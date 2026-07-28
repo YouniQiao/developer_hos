@@ -2,8 +2,8 @@
 title: "walletPass（Pass卡片能力）"
 upstream_id: "harmonyos-references/wallet-walletpass"
 catalog: "harmonyos-references"
-content_hash: "f89c1304562e"
-synced_at: "2026-07-09T01:01:40.007368"
+content_hash: "79b9214757ad"
+synced_at: "2026-07-28T16:53:06.539317"
 ---
 
 # walletPass（Pass卡片能力）
@@ -59,10 +59,10 @@ import { walletPass } from '@kit.WalletKit';
 @Entry
 @Component
 struct Index {
+  // 初始化，需要传入应用的UIAbilityContext
   private walletPassClient: walletPass.WalletPassClient = new walletPass.WalletPassClient(this.getUIContext().getHostContext() as common.UIAbilityContext);
 
   build() {
-    // your application UI
   }
 }
 ```
@@ -89,13 +89,13 @@ queryPassDeviceInfo(passStr: string): Promise<string>
 
 | **参数名** | **类型** | **必填** | **说明** |
 | --- | --- | --- | --- |
-| passStr | string | 是 | 要求JSON String格式，传入的字段以key-value的形式设置在JSON String中，并通过该参数传入。 key包括passType、targetDeviceType。 - passType：[创建Wallet Kit服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-preparations)时注册的服务号，需要开发者到华为AGC网站申请。 - targetDeviceType：目标设备类型。取值如下 - phone：手机 - wear：穿戴 - all：手机+穿戴 |
+| passStr | string | 是 | 要求JSON String格式，传入的字段以key-value的形式设置在JSON String中，并通过该参数传入。 key包括passType、targetDeviceType。 - passType：创建Wallet Kit服务时注册的服务号，需要开发者到华为AGC网站申请。 - targetDeviceType：目标设备类型。取值如下 - phone：手机 - wear：穿戴 - all：手机+穿戴 |
 
 返回值：
 
-| 类型 | **说明** |
+| **类型** | **说明** |
 | --- | --- |
-| Promise | Promise对象，JSON String格式，传出的字段以key-value的形式设置在数组类型的JSON String中，并通过该参数传出。 key包括deviceType、passDeviceId、deviceModel、passCapabilityVersion、deviceModelNumber、deviceCapabilities。 - deviceType：设备类型。取值如下 - phone：手机 - wear：穿戴 - passDeviceId：账号/设备联合标识符。 - deviceModel：设备名，用于展示可开通的设备名称。 - passCapabilityVersion：WalletKit开放能力版本号，用于版本兼容处理，初始为 1。 - deviceModelNumber：设备型号编码，用于获取匹配的标定数据。 - deviceCapabilities：能力集，同步返回是否支持NFC/BLE/UWB/SLE - NFC：0200 - NFC+BLE：0201 - UWB：0202 - SLE：0203 |
+| Promise | Promise对象，返回设备标识及设备能力。JSON String格式，传出的字段以key-value的形式设置在数组类型的JSON String中，并通过该参数传出。 key包括deviceType、passDeviceId、deviceModel、passCapabilityVersion、deviceModelNumber、deviceCapabilities。 - deviceType：设备类型。取值如下 - phone：手机 - wear：穿戴 - passDeviceId：账号/设备联合标识符。 - deviceModel：设备名，用于展示可开通的设备名称。 - passCapabilityVersion：WalletKit开放能力版本号，用于版本兼容处理，初始为 1。 - deviceModelNumber：设备型号编码，用于获取匹配的标定数据。 - deviceCapabilities：能力集，同步返回是否支持NFC/BLE/UWB/SLE - NFC：0200 - NFC+BLE：0201 - UWB：0202 - SLE：0203 |
 
 错误码：
 
@@ -107,7 +107,7 @@ queryPassDeviceInfo(passStr: string): Promise<string>
 | 1010200001 | No permission to access the Wallet APIs. |
 | 1010200002 | Wallet app not found. |
 | 1010200003 | The environment of the wallet is not ready. |
-| 1010200006 | The device's remote paired watch cannot be connected |
+| 1010200006 | The device's remote paired watch cannot be connected. |
 | 1010220003 | Pass service is temporarily unavailable. |
 | 1010200013 | Operation failed because of an internal error. |
 | 1010200014 | The Wallet APIs can be called by the device owner only. |
@@ -123,24 +123,28 @@ import { BusinessError } from '@kit.BasicServicesKit';
 @Entry
 @Component
 struct Index {
+  // 初始化，需要传入应用的UIAbilityContext
   private walletPassClient: walletPass.WalletPassClient = new walletPass.WalletPassClient(this.getUIContext().getHostContext() as common.UIAbilityContext);
+  // 创建WalletKit服务申请的服务号
   private passType: string = '';
+  // 设备类型
   private targetDeviceType: string = '';
 
-  async queryPassDeviceInfo() {
+  queryPassDeviceInfo() {
     let passStr = JSON.stringify({
       passType: this.passType,
       targetDeviceType: this.targetDeviceType
     });
     this.walletPassClient.queryPassDeviceInfo(passStr).then((result: string) => {
+      // 接口调用成功
       console.info(`Succeeded in querying passDeviceInfo, result:${result}`);
     }).catch((err: BusinessError) => {
+      // 接口调用失败
       console.error(`Failed to query passDeviceInfo, code:${err.code}, message:${err.message}`);
     })
   }
 
   build() {
-    // your application UI
   }
 }
 ```
@@ -167,13 +171,13 @@ canAddPass(passStr: string): Promise<string>
 
 | **参数名** | **类型** | **必填** | **说明** |
 | --- | --- | --- | --- |
-| passStr | string | 是 | 要求JSON String格式，传入的字段以key-value的形式设置在JSON String中，并通过该参数传入。 key包括passType、targetDeviceType。 - passType：[创建Wallet Kit服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-preparations)时注册的服务号，需要开发者到华为AGC网站申请。 - targetDeviceType：目标设备类型。取值如下 - phone: 手机 - wear：穿戴 - all：手机+穿戴 |
+| passStr | string | 是 | 要求JSON String格式，传入的字段以key-value的形式设置在JSON String中，并通过该参数传入。 key包括passType、targetDeviceType。 - passType：创建Wallet Kit服务时注册的服务号，需要开发者到华为AGC网站申请。 - targetDeviceType：目标设备类型。取值如下 - phone: 手机 - wear：穿戴 - all：手机+穿戴 |
 
 返回值：
 
 | 类型 | **说明** |
 | --- | --- |
-| Promise | Promise对象，JSON String格式，传出的字段以key-value的形式设置在数组类型的JSON String中，并通过该参数传出。 key包括passType、deviceType、passDeviceId、deviceModel、result。 - passType：服务号 - deviceType：设备类型。取值如下 - phone：手机 - wear：穿戴 - passDeviceId：账号/设备联合标识符。 - deviceModel：设备名，用于展示可开通的设备名称。 - result：结果码。取值如下 0：支持添加 1：ROM版本过低 2：钱包版本过低 3：ROM版本和钱包版本均过低 |
+| Promise | Promise对象，返回是否支持添卡的结果。JSON String格式，传出的字段以key-value的形式设置在数组类型的JSON String中，并通过该参数传出。 key包括passType、deviceType、passDeviceId、deviceModel、result。 - passType：服务号 - deviceType：设备类型。取值如下 - phone：手机 - wear：穿戴 - passDeviceId：账号/设备联合标识符。 - deviceModel：设备名，用于展示可开通的设备名称。 - result：结果码。取值如下 0：支持添加 1：ROM版本过低 2：钱包版本过低 3：ROM版本和钱包版本均过低 |
 
 错误码：
 
@@ -207,24 +211,28 @@ import { BusinessError } from '@kit.BasicServicesKit';
 @Entry
 @Component
 struct Index {
+  // 初始化，需要传入应用的UIAbilityContext
   private walletPassClient: walletPass.WalletPassClient = new walletPass.WalletPassClient(this.getUIContext().getHostContext() as common.UIAbilityContext);
+  // 创建WalletKit服务申请的服务号
   private passType: string = '';
+  // 设备类型
   private targetDeviceType: string = '';
 
-  async canAddPass() {
+  canAddPass() {
     let passStr = JSON.stringify({
       passType: this.passType,
       targetDeviceType: this.targetDeviceType
     });
     this.walletPassClient.canAddPass(passStr).then((result: string) => {
+      // 接口调用成功
       console.info(`Succeeded in checking addPass, result:${result}`);
     }).catch((err: BusinessError) => {
+      // 接口调用失败
       console.error(`Failed to check addPass, code:${err.code}, message:${err.message}`);
     })
   }
 
   build() {
-    // your application UI
   }
 }
 ```
@@ -257,7 +265,7 @@ initWalletEnvironment(passStr: string): Promise<void>
 
 | 类型 | **说明** |
 | --- | --- |
-| Promise | Promise对象。无返回结果的Promise对象。 |
+| Promise | Promise对象，无返回结果。 |
 
 错误码：
 
@@ -283,22 +291,25 @@ import { BusinessError } from '@kit.BasicServicesKit';
 @Entry
 @Component
 struct Index {
+  // 初始化，需要传入应用的UIAbilityContext
   private walletPassClient: walletPass.WalletPassClient = new walletPass.WalletPassClient(this.getUIContext().getHostContext() as common.UIAbilityContext);
+  // 设备类型
   private targetDeviceType: string = '';
 
-  async initWalletEnvironment() {
+  initWalletEnvironment() {
     let passStr = JSON.stringify({
       targetDeviceType: this.targetDeviceType
     });
     this.walletPassClient.initWalletEnvironment(passStr).then(() => {
+      // 接口调用成功
       console.info(`Succeeded in initiating walletEnvironment`);
     }).catch((err: BusinessError) => {
+      // 接口调用失败
       console.error(`Failed to initiate walletEnvironment, code:${err.code}, message:${err.message}`);
     })
   }
 
   build() {
-    // your application UI
   }
 }
 ```
@@ -325,13 +336,13 @@ addPass(passStr: string): Promise<string>
 
 | **参数名** | **类型** | **必填** | **说明** |
 | --- | --- | --- | --- |
-| passStr | string | 是 | 要求JSON String格式，传入的字段以key-value的形式设置在JSON String中，并通过该参数传入。 key包括jweContent。 - jweContent：[生成JWE数据](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-carkey#生成jwe数据)章节生成的开卡签名数据包。 |
+| passStr | string | 是 | 要求JSON String格式，传入的字段以key-value的形式设置在JSON String中，并通过该参数传入。 key包括jweContent。 - jweContent：开发者服务端生成的开卡签名数据包。 |
 
 返回值：
 
 | 类型 | **说明** |
 | --- | --- |
-| Promise | Promise对象，JSON String格式，传出的字段以key-value的形式设置在JSON String中，并通过该参数传出。 key包括passType、serialNumber、deviceType、passDeviceId。 - passType： 开通的卡片服务号 。 - serialNumber： 开通的 Pass 卡片唯一标识 。 - deviceType：开卡设备的类型。取值如下 - phone: 手机 - wear：穿戴 - all：手机+穿戴 - passDeviceId： 开卡设备的帐号/设备联合标识符。 |
+| Promise | Promise对象，返回卡片数据。JSON String格式，传出的字段以key-value的形式设置在JSON String中，并通过该参数传出。 key包括passType、serialNumber、deviceType、passDeviceId。 - passType： 开通的卡片服务号 。 - serialNumber： 开通的 Pass 卡片唯一标识 。 - deviceType：开卡设备的类型。取值如下 - phone: 手机 - wear：穿戴 - all：手机+穿戴 - passDeviceId： 开卡设备的帐号/设备联合标识符。 |
 
 错误码：
 
@@ -369,22 +380,25 @@ import { BusinessError } from '@kit.BasicServicesKit';
 @Entry
 @Component
 struct Index {
+  // 初始化，需要传入应用的UIAbilityContext
   private walletPassClient: walletPass.WalletPassClient = new walletPass.WalletPassClient(this.getUIContext().getHostContext() as common.UIAbilityContext);
+  // jwe数据，需要从云侧获取
   private jweContent: string = '';
 
-  async addPass() {
+  addPass() {
     let passStr = JSON.stringify({
       jweContent: this.jweContent
     });
     this.walletPassClient.addPass(passStr).then((result: string) => {
+      // 接口调用成功
       console.info(`Succeeded in adding pass, result:${result}`);
     }).catch((err: BusinessError) => {
+      // 接口调用失败
       console.error(`Failed to add pass, code:${err.code}, message:${err.message}`);
     })
   }
 
   build() {
-    // your application UI
   }
 }
 ```
@@ -411,13 +425,13 @@ queryPass(passStr: string): Promise<string>
 
 | **参数名** | **类型** | **必填** | **说明** |
 | --- | --- | --- | --- |
-| passStr | string | 是 | 要求JSON String格式，传入的字段以key-value的形式设置在JSON String中，并通过该参数传入。 key包括passType、serialNumber。 - passType：[创建Wallet Kit服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-preparations)时注册的服务号，需要开发者到华为AGC网站申请。 - serialNumber：[申请钥匙卡片](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-carkey#申请钥匙卡片)时定义的卡券唯一标识。 |
+| passStr | string | 是 | 要求JSON String格式，传入的字段以key-value的形式设置在JSON String中，并通过该参数传入。 key包括passType、serialNumber。 - passType：创建Wallet Kit服务时注册的服务号，需要开发者到华为AGC网站申请。 - serialNumber：开发者服务器申请卡券时定义的唯一标识。 |
 
 返回值：
 
 | 类型 | **说明** |
 | --- | --- |
-| Promise | Promise对象，JSON String格式，传出的字段以key-value的形式设置在数组类型的JSON String中，并通过该参数传出。 key包括passType、serialNumber、deviceType、passDeviceId、deviceModel、cardStatus。 - passType：服务号 - serialNumber：卡券唯一标识 - deviceType：设备类型。取值如下 - phone：手机 - wear：穿戴 - passDeviceId：账号/设备联合标识符。 - deviceModel：设备名，用于展示可开通的设备名称。 - cardStatus：卡片状态 。取值如下 0：可用 1：不可用 |
+| Promise | Promise对象，返回卡片数据。JSON String格式，传出的字段以key-value的形式设置在数组类型的JSON String中，并通过该参数传出。 key包括passType、serialNumber、deviceType、passDeviceId、deviceModel、cardStatus。 - passType：服务号 - serialNumber：卡券唯一标识 - deviceType：设备类型。取值如下 - phone：手机 - wear：穿戴 - passDeviceId：账号/设备联合标识符。 - deviceModel：设备名，用于展示可开通的设备名称。 - cardStatus：卡片状态 。取值如下 0：可用 1：不可用 |
 
 错误码：
 
@@ -444,24 +458,28 @@ import { BusinessError } from '@kit.BasicServicesKit';
 @Entry
 @Component
 struct Index {
+  // 初始化，需要传入应用的UIAbilityContext
   private walletPassClient: walletPass.WalletPassClient = new walletPass.WalletPassClient(this.getUIContext().getHostContext() as common.UIAbilityContext);
+  // 创建WalletKit服务申请的服务号
   private passType: string = '';
+  // 卡券唯一标识
   private serialNumber: string = '';
 
-  async queryPass() {
+  queryPass() {
     let passStr = JSON.stringify({
       passType: this.passType,
       serialNumber: this.serialNumber
     });
     this.walletPassClient.queryPass(passStr).then((result: string) => {
+      // 接口调用成功
       console.info(`Succeeded in querying pass, result: ${result}`);
     }).catch((err: BusinessError) => {
+      // 接口调用失败
       console.error(`Failed to query pass, code:${err.code}, message:${err.message}`);
     })
   }
 
   build() {
-    // your application UI
   }
 }
 ```
@@ -488,13 +506,13 @@ viewPass(passStr: string): Promise<void>
 
 | **参数名** | **类型** | **必填** | **说明** |
 | --- | --- | --- | --- |
-| passStr | string | 是 | 要求JSON String格式，传入的字段以key-value的形式设置在JSON String中，并通过该参数传入。 key包括passType、serialNumber。 - passType：[创建Wallet Kit服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-preparations)时注册的服务号，需要开发者到华为AGC网站申请。 - serialNumber：[申请钥匙卡片](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-carkey#申请钥匙卡片)时定义的卡券唯一标识。 |
+| passStr | string | 是 | 要求JSON String格式，传入的字段以key-value的形式设置在JSON String中，并通过该参数传入。 key包括passType、serialNumber。 - passType：创建Wallet Kit服务时注册的服务号，需要开发者到华为AGC网站申请。 - serialNumber：开发者服务器申请卡券时定义的唯一标识。 |
 
 返回值：
 
 | 类型 | **说明** |
 | --- | --- |
-| Promise | Promise对象。无返回结果的Promise对象。 |
+| Promise | Promise对象，无返回结果。 |
 
 错误码：
 
@@ -514,8 +532,11 @@ import { walletPass } from '@kit.WalletKit';
 @Entry
 @Component
 struct Index {
+  // 初始化，需要传入应用的UIAbilityContext
   private walletPassClient: walletPass.WalletPassClient = new walletPass.WalletPassClient(this.getUIContext().getHostContext() as common.UIAbilityContext);
+  // 创建WalletKit服务申请的服务号
   private passType: string = '';
+  // 卡券唯一标识
   private serialNumber: string = '';
 
   async viewPass() {
@@ -525,14 +546,15 @@ struct Index {
     });
     try {
       await this.walletPassClient.viewPass(passStr);
+      // 接口调用成功
       console.info(`Succeeded in viewing pass`);
     } catch (err) {
+      // 接口调用失败
       console.error(`Failed to view pass, code:${err.code}, message:${err.message}`);
     }
   }
 
   build() {
-    // your application UI
   }
 }
 ```
@@ -559,13 +581,13 @@ updatePass(passStr: string): Promise<string>
 
 | **参数名** | **类型** | **必填** | **说明** |
 | --- | --- | --- | --- |
-| passStr | string | 是 | 要求JSON String格式，传入的字段以key-value的形式设置在JSON String中，并通过该参数传入。 key包括passType、serialNumber。 - passType：[创建Wallet Kit服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-preparations)时注册的服务号，需要开发者到华为AGC网站申请。 - serialNumber：[申请钥匙卡片](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-carkey#申请钥匙卡片)时定义的卡券唯一标识。 |
+| passStr | string | 是 | 要求JSON String格式，传入的字段以key-value的形式设置在JSON String中，并通过该参数传入。 key包括passType、serialNumber。 - passType：创建Wallet Kit服务时注册的服务号，需要开发者到华为AGC网站申请。 - serialNumber：开发者服务器申请卡券时定义的唯一标识。 |
 
 返回值：
 
 | 类型 | **说明** |
 | --- | --- |
-| Promise | Promise对象，JSON String格式，传出的字段以key-value的形式设置在JSON String中，并通过该参数传出。 key包括result。 - result：卡券更新结果0，全部更新完成后返回操作成功。 |
+| Promise | Promise对象，返回卡片更新结果。JSON String格式，传出的字段以key-value的形式设置在JSON String中，并通过该参数传出。 key包括result。 - result：卡券更新结果0，全部更新完成后返回操作成功。 |
 
 错误码：
 
@@ -595,24 +617,28 @@ import { BusinessError } from '@kit.BasicServicesKit';
 @Entry
 @Component
 struct Index {
+  // 初始化，需要传入应用的UIAbilityContext
   private walletPassClient: walletPass.WalletPassClient = new walletPass.WalletPassClient(this.getUIContext().getHostContext() as common.UIAbilityContext);
+  // 创建WalletKit服务申请的服务号
   private passType: string = '';
+  // 卡券唯一标识
   private serialNumber: string = '';
 
-  async updatePass() {
+  updatePass() {
     let passStr = JSON.stringify({
       passType: this.passType,
       serialNumber: this.serialNumber
     });
     this.walletPassClient.updatePass(passStr).then((result: string) => {
+      // 接口调用成功
       console.info(`Succeeded in updating pass,result: ${result}`);
     }).catch((err: BusinessError) => {
+      // 接口调用失败
       console.error(`Failed to update pass, code:${err.code}, message:${err.message}`);
     })
   }
 
   build() {
-    // your application UI
   }
 }
 ```
@@ -639,13 +665,13 @@ deletePass(passStr: string): Promise<string>
 
 | **参数名** | **类型** | **必填** | **说明** |
 | --- | --- | --- | --- |
-| passStr | string | 是 | 要求JSON String格式，传入的字段以key-value的形式设置在JSON String中，并通过该参数传入。 key包括passType、serialNumber。 - passType：[创建Wallet Kit服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-preparations)时注册的服务号，需要开发者到华为AGC网站申请。 - serialNumber：[申请钥匙卡片](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-carkey#申请钥匙卡片)时定义的卡券唯一标识。 |
+| passStr | string | 是 | 要求JSON String格式，传入的字段以key-value的形式设置在JSON String中，并通过该参数传入。 key包括passType、serialNumber。 - passType：创建Wallet Kit服务时注册的服务号，需要开发者到华为AGC网站申请。 - serialNumber：开发者服务器申请卡券时定义的唯一标识。 |
 
 返回值：
 
 | 类型 | **说明** |
 | --- | --- |
-| Promise | Promise对象，JSON String格式，传出的字段以key-value的形式设置在JSON String中，并通过该参数传出。 key包括result。 - result：卡券删除结果0，全部删除完成后返回操作成功。 |
+| Promise | Promise对象，返回卡片删除结果。JSON String格式，传出的字段以key-value的形式设置在JSON String中，并通过该参数传出。 key包括result。 - result：卡券删除结果0，全部删除完成后返回操作成功。 |
 
 错误码：
 
@@ -676,24 +702,28 @@ import { BusinessError } from '@kit.BasicServicesKit';
 @Entry
 @Component
 struct Index {
+  // 初始化，需要传入应用的UIAbilityContext
   private walletPassClient: walletPass.WalletPassClient = new walletPass.WalletPassClient(this.getUIContext().getHostContext() as common.UIAbilityContext);
+  // 创建WalletKit服务申请的服务号
   private passType: string = '';
+  // 卡券唯一标识
   private serialNumber: string = '';
 
-  async deletePass() {
+  deletePass() {
     let passStr = JSON.stringify({
       passType: this.passType,
       serialNumber: this.serialNumber
     });
     this.walletPassClient.deletePass(passStr).then((result: string) => {
+      // 接口调用成功
       console.info(`Succeeded in deleting pass, result: ${result}`);
     }).catch((err: BusinessError) => {
+      // 接口调用失败
       console.error(`Failed to delete pass, code:${err.code}, message:${err.message}`);
     })
   }
 
   build() {
-    // your application UI
   }
 }
 ```
@@ -720,13 +750,13 @@ queryICCEConnectionState(rkeStr: string): Promise<string>
 
 | **参数名** | **类型** | **必填** | **说明** |
 | --- | --- | --- | --- |
-| rkeStr | string | 是 | 要求JSON String格式，传入的字段以key-value的形式设置在JSON String中，并通过该参数传入。 key包括passType、serialNumber。 - passType：[创建Wallet Kit服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-preparations)时注册的服务号，需要开发者到华为AGC网站申请。 - serialNumber：[申请钥匙卡片](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-carkey#申请钥匙卡片)时定义的卡券唯一标识。 |
+| rkeStr | string | 是 | 要求JSON String格式，传入的字段以key-value的形式设置在JSON String中，并通过该参数传入。 key包括passType、serialNumber。 - passType：创建Wallet Kit服务时注册的服务号，需要开发者到华为AGC网站申请。 - serialNumber：开发者服务器申请卡券时定义的唯一标识。 |
 
 返回值：
 
 | 类型 | **说明** |
 | --- | --- |
-| Promise | Promise对象，JSON String格式，传出的字段以key-value的形式设置在JSON String中，并通过该参数传出。 key包括deviceType、passDeviceId、deviceModel、connectionState、authState。 - deviceType：设备类型。取值如下 - phone：手机 - wear：穿戴 - passDeviceId：账号/设备联合标识符。 - deviceModel：设备名，用于展示可开通的设备名称。 - connectionState：连接状态。取值如下 0：异常状态 1：正在连接 2：连接成功 3：未连接 4：连接超时 10：未配对 11：配对中 12：已配对 - authState：认证状态。取值如下 0：未认证/认证失败 1：认证成功 |
+| Promise | Promise对象，返回连接状态。JSON String格式，传出的字段以key-value的形式设置在JSON String中，并通过该参数传出。 key包括deviceType、passDeviceId、deviceModel、connectionState、authState。 - deviceType：设备类型。取值如下 - phone：手机 - wear：穿戴 - passDeviceId：账号/设备联合标识符。 - deviceModel：设备名，用于展示可开通的设备名称。 - connectionState：连接状态。取值如下 0：异常状态 1：正在连接 2：连接成功 3：未连接 4：连接超时 10：未配对 11：配对中 12：已配对 - authState：认证状态。取值如下 0：未认证/认证失败 1：认证成功 |
 
 错误码：
 
@@ -739,7 +769,7 @@ queryICCEConnectionState(rkeStr: string): Promise<string>
 | 1010200002 | Wallet app not found. |
 | 1010200006 | The device's remote paired watch cannot be connected. |
 | 1010220004 | The card does not exist in the specified device. |
-| 1010220006 | Bluetooth permission is not granted. |
+| 1010220006 | Bluetooth permission is not granted. 适用版本：5.0.1(13)+ |
 | 1010200013 | Operation failed because of an internal error. |
 | 1010200014 | The Wallet APIs can be called by the device owner only. |
 
@@ -753,24 +783,28 @@ import { BusinessError } from '@kit.BasicServicesKit';
 @Entry
 @Component
 struct Index {
+  // 初始化，需要传入应用的UIAbilityContext
   private walletPassClient: walletPass.WalletPassClient = new walletPass.WalletPassClient(this.getUIContext().getHostContext() as common.UIAbilityContext);
+  // 创建WalletKit服务申请的服务号
   private passType: string = '';
+  // 卡券唯一标识
   private serialNumber: string = '';
 
-  async queryICCEConnectionState() {
+  queryICCEConnectionState() {
     let passStr = JSON.stringify({
       passType: this.passType,
       serialNumber: this.serialNumber
     });
     this.walletPassClient.queryICCEConnectionState(passStr).then((result: string) => {
+      // 接口调用成功
       console.info(`Succeeded in querying ICCEConnectionState, result: ${result}`);
     }).catch((err: BusinessError) => {
+      // 接口调用失败
       console.error(`Failed to query ICCEConnectionState, code:${err.code}, message:${err.message}`);
     })
   }
 
   build() {
-    // your application UI
   }
 }
 ```
@@ -797,13 +831,13 @@ startICCEConnection(rkeStr: string): Promise<string>
 
 | **参数名** | **类型** | **必填** | **说明** |
 | --- | --- | --- | --- |
-| rkeStr | string | 是 | 要求JSON String格式，传入的字段以key-value的形式设置在JSON String中，并通过该参数传入。 key包括passType、serialNumber。 - passType：[创建Wallet Kit服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-preparations)时注册的服务号，需要开发者到华为AGC网站申请。 - serialNumber：[申请钥匙卡片](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-carkey#申请钥匙卡片)时定义的卡券唯一标识。 |
+| rkeStr | string | 是 | 要求JSON String格式，传入的字段以key-value的形式设置在JSON String中，并通过该参数传入。 key包括passType、serialNumber。 - passType：创建Wallet Kit服务时注册的服务号，需要开发者到华为AGC网站申请。 - serialNumber：开发者服务器申请卡券时定义的唯一标识。 |
 
 返回值：
 
 | 类型 | **说明** |
 | --- | --- |
-| Promise | Promise对象，JSON String格式，传出的字段以key-value的形式设置在JSON String中，并通过该参数传出。 key包括result、deviceType、passDeviceId、deviceModel、connectionState、authState、reasonCode。 result：认证状态。取值如下 0：已配对已连接 1：已配对未连接 2：未配对 deviceType：设备类型。取值如下 phone：手机 wear：穿戴 passDeviceId：账号/设备联合标识符。 deviceModel：设备名，用于展示可开通的设备名称。 connectionState：连接状态。取值如下 0：异常状态 1：正在连接 2：连接成功 3：未连接 4：连接超时 10：未配对 11：配对中 12：已配对 authState：认证状态。取值如下 0：未认证/认证失败 1：认证成功 reasonCode：异常原因码，只有result为2时才会返回。取值如下 1：表侧星闪开关未开启 |
+| Promise | Promise对象，返回连接结果。JSON String格式，传出的字段以key-value的形式设置在JSON String中，并通过该参数传出。 key包括result、deviceType、passDeviceId、deviceModel、connectionState、authState、reasonCode。 result：认证状态。取值如下 0：已配对已连接 1：已配对未连接 2：未配对 deviceType：设备类型。取值如下 phone：手机 wear：穿戴 passDeviceId：账号/设备联合标识符。 deviceModel：设备名，用于展示可开通的设备名称。 connectionState：连接状态。取值如下 0：异常状态 1：正在连接 2：连接成功 3：未连接 4：连接超时 10：未配对 11：配对中 12：已配对 authState：认证状态。取值如下 0：未认证/认证失败 1：认证成功 reasonCode：异常原因码，只有result为2时才会返回。取值如下 1：表侧星闪开关未开启 |
 
 错误码：
 
@@ -814,13 +848,13 @@ startICCEConnection(rkeStr: string): Promise<string>
 | 401 | Parameter error. Possible causes: Mandatory parameters are left unspecified. |
 | 1010200001 | No permission to access the Wallet APIs. |
 | 1010200002 | Wallet app not found. |
-| 1010200005 | The operation was canceled by the user. |
+| 1010200005 | The operation was canceled by the user. 适用版本：5.0.1(13)+ |
 | 1010200006 | The device's remote paired watch cannot be connected. |
 | 1010200010 | Network connection error. |
 | 1010200012 | Duplicate request. |
 | 1010221001 | Connection failed because the pairing code is not obtained. |
 | 1010220004 | The card does not exist in the specified device. |
-| 1010220006 | Bluetooth permission is not granted. |
+| 1010220006 | Bluetooth permission is not granted. 适用版本：5.0.1(13)+ |
 | 1010200013 | Operation failed because of an internal error. |
 | 1010200014 | The Wallet APIs can be called by the device owner only. |
 
@@ -834,24 +868,28 @@ import { BusinessError } from '@kit.BasicServicesKit';
 @Entry
 @Component
 struct Index {
+  // 初始化，需要传入应用的UIAbilityContext
   private walletPassClient: walletPass.WalletPassClient = new walletPass.WalletPassClient(this.getUIContext().getHostContext() as common.UIAbilityContext);
+  // 创建WalletKit服务申请的服务号
   private passType: string = '';
+  // 卡券唯一标识
   private serialNumber: string = '';
 
-  async startICCEConnection() {
+  startICCEConnection() {
     let passStr = JSON.stringify({
       passType: this.passType,
       serialNumber: this.serialNumber
     });
     this.walletPassClient.startICCEConnection(passStr).then((result: string) => {
+      // 接口调用成功
       console.info(`Succeeded in starting ICCEConnection, result: ${result}`);
     }).catch((err: BusinessError) => {
+      // 接口调用失败
       console.error(`Failed to start ICCEConnection, code:${err.code}, message:${err.message}`);
     })
   }
 
   build() {
-    // your application UI
   }
 }
 ```
@@ -878,14 +916,14 @@ registerICCEListener(rkeStr: string, eventNotifyListener: rpc.RemoteObject): Pro
 
 | **参数名** | **类型** | **必填** | **说明** |
 | --- | --- | --- | --- |
-| rkeStr | string | 是 | 要求JSON String格式，传入的字段以key-value的形式设置在JSON String中，并通过该参数传入。 key包括passType、registerName。 - passType：[创建Wallet Kit服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-preparations)时注册的服务号，需要开发者到华为AGC网站申请。 - registerName：注册监听的应用名称，一般为包名。 |
+| rkeStr | string | 是 | 要求JSON String格式，传入的字段以key-value的形式设置在JSON String中，并通过该参数传入。 key包括passType、registerName。 - passType：创建Wallet Kit服务时注册的服务号，需要开发者到华为AGC网站申请。 - registerName：注册监听的应用名称，一般为包名。 |
 | eventNotifyListener | [rpc.RemoteObject](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-rpc#remoteobject) | 是 | 回调事件，[rpc.RemoteObject](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-rpc#remoteobject)格式。 |
 
 返回值：
 
 | 类型 | **说明** |
 | --- | --- |
-| Promise | Promise对象，JSON String格式，传出的字段以key-value的形式设置在JSON String中，并通过该参数传出。 key包括result。 result：注册成功结果0。 |
+| Promise | Promise对象，返回注册结果。JSON String格式，传出的字段以key-value的形式设置在JSON String中，并通过该参数传出。 key包括result。 result：注册成功结果0。 |
 
 错误码：
 
@@ -909,14 +947,16 @@ import { walletPass } from '@kit.WalletKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { rpc } from '@kit.IPCKit';
 
+// 注册的回调对象
 class ICCECallBack extends rpc.RemoteObject {
   constructor() {
     super('ICCECallBack');
   }
 
-  async onRemoteMessageRequest(code: number, data: rpc.MessageSequence, reply: rpc.MessageSequence, option: rpc.MessageOption): Promise<boolean> {
-    // processing after receiving communication data
-    let codeInt = data.readInt();
+  async onRemoteMessageRequest(code: number, data: rpc.MessageSequence, reply: rpc.MessageSequence): Promise<boolean> {
+    // 接收到钱包发送的数据，此时可以进行数据通信
+    console.info(`OnRemoteMessageRequest successed, code: ${code} data: ${data.readString()}`);
+    reply.writeString('Test');
     return true;
   }
 }
@@ -924,26 +964,31 @@ class ICCECallBack extends rpc.RemoteObject {
 @Entry
 @Component
 struct Index {
+  // 初始化，需要传入应用的UIAbilityContext
   private walletPassClient: walletPass.WalletPassClient = new walletPass.WalletPassClient(this.getUIContext().getHostContext() as common.UIAbilityContext);
+  // 注册的回调对象
   private callback: rpc.RemoteObject | null = null;
+  // 创建WalletKit服务申请的服务号
   private passType: string = '';
+  // 注册名，推荐使用包名
   private registerName: string = '';
 
-  async registerICCEListener() {
+  registerICCEListener() {
     let passStr = JSON.stringify({
       passType: this.passType,
       registerName: this.registerName
     });
     this.callback = new ICCECallBack();
     this.walletPassClient.registerICCEListener(passStr, this.callback).then((result: string) => {
+      // 接口调用成功
       console.info(`Succeeded in registering ICCEListener, result: ${result}`);
     }).catch((err: BusinessError) => {
+      // 接口调用失败
       console.error(`Failed to register ICCEListener, code:${err.code}, message:${err.message}`);
     })
   }
 
   build() {
-    // your application UI
   }
 }
 ```
@@ -970,13 +1015,13 @@ unregisterICCEListener(rkeStr: string): Promise<string>
 
 | **参数名** | **类型** | **必填** | **说明** |
 | --- | --- | --- | --- |
-| rkeStr | string | 是 | 要求JSON String格式，传入的字段以key-value的形式设置在JSON String中，并通过该参数传入。 key包括passType、registerName。 - passType：[创建Wallet Kit服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-preparations)时注册的服务号，需要开发者到华为AGC网站申请。 - registerName：注册监听的应用名称，一般为包名。 |
+| rkeStr | string | 是 | 要求JSON String格式，传入的字段以key-value的形式设置在JSON String中，并通过该参数传入。 key包括passType、registerName。 - passType：创建Wallet Kit服务时注册的服务号，需要开发者到华为AGC网站申请。 - registerName：注册监听的应用名称，一般为包名。 |
 
 返回值：
 
 | 类型 | **说明** |
 | --- | --- |
-| Promise | Promise对象，JSON String格式，传出的字段以key-value的形式设置在JSON String中，并通过该参数传出。 key包括result。 result：解注册成功结果0。 |
+| Promise | Promise对象，返回解注册结果。JSON String格式，传出的字段以key-value的形式设置在JSON String中，并通过该参数传出。 key包括result。 result：解注册成功结果0。 |
 
 错误码：
 
@@ -1002,27 +1047,32 @@ import { rpc } from '@kit.IPCKit';
 @Entry
 @Component
 struct Index {
+  // 初始化，需要传入应用的UIAbilityContext
   private walletPassClient: walletPass.WalletPassClient = new walletPass.WalletPassClient(this.getUIContext().getHostContext() as common.UIAbilityContext);
+  // 注册的回调对象
   private callback: rpc.RemoteObject | null = null;
+  // 创建WalletKit服务申请的服务号
   private passType: string = '';
+  // 注册名，推荐使用包名
   private registerName: string = '';
 
-  async unregisterICCEListener() {
+  unregisterICCEListener() {
     let passStr = JSON.stringify({
       passType: this.passType,
       registerName: this.registerName
     });
 
     this.walletPassClient.unregisterICCEListener(passStr).then((result: string) => {
+      // 接口调用成功
       console.info(`Succeeded in unregistering ICCEListener, result: ${result}`);
       this.callback = null;
     }).catch((err: BusinessError) => {
+      // 接口调用失败
       console.error(`Failed to unregister ICCEListener, code:${err.code}, message:${err.message}`);
     })
   }
 
   build() {
-    // your application UI
   }
 }
 ```
@@ -1049,13 +1099,13 @@ sendICCERKEMessage(rkeStr: string): Promise<string>
 
 | **参数名** | **类型** | **必填** | **说明** |
 | --- | --- | --- | --- |
-| rkeStr | string | 是 | 要求JSON String格式，传入的字段以key-value的形式设置在JSON String中，并通过该参数传入。 key包括passType、serialNumber、rkeCommand、encryptFlag、directionFlag。 - passType：[创建Wallet Kit服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-preparations)时注册的服务号，需要开发者到华为AGC网站申请。 - serialNumber：[申请钥匙卡片](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-carkey#申请钥匙卡片)时定义的卡券唯一标识。 - rkeCommand：请求指令。 - encryptFlag：加密指示位。取值如下 0：不加密 1：需要基于通道会话秘钥加密 - directionFlag：方向指示位。取值如下 0：上报结果 1：发送指令 |
+| rkeStr | string | 是 | 要求JSON String格式，传入的字段以key-value的形式设置在JSON String中，并通过该参数传入。 key包括passType、serialNumber、rkeCommand、encryptFlag、directionFlag。 - passType：创建Wallet Kit服务时注册的服务号，需要开发者到华为AGC网站申请。 - serialNumber：开发者服务器申请卡券时定义的唯一标识。 - rkeCommand：请求指令。 - encryptFlag：加密指示位。取值如下 0：不加密 1：需要基于通道会话秘钥加密 - directionFlag：方向指示位。取值如下 0：上报结果 1：发送指令 |
 
 返回值：
 
 | 类型 | **说明** |
 | --- | --- |
-| Promise | Promise对象，JSON String格式，传出的字段以key-value的形式设置在JSON String中，并通过该参数传出。 key包括deviceType、passDeviceId、deviceModel、result。 - deviceType：设备类型。取值如下 - phone：手机 - wear：穿戴 - passDeviceId：账号/设备联合标识符。 - deviceModel：设备名，用于展示可开通的设备名称。 - result：车控发起结果，发送至车辆后立即返回。取值如下 - 0：发送成功 |
+| Promise | Promise对象，返回车控结果。JSON String格式，传出的字段以key-value的形式设置在JSON String中，并通过该参数传出。 key包括deviceType、passDeviceId、deviceModel、result。 - deviceType：设备类型。取值如下 - phone：手机 - wear：穿戴 - passDeviceId：账号/设备联合标识符。 - deviceModel：设备名，用于展示可开通的设备名称。 - result：车控发起结果，发送至车辆后立即返回。取值如下 - 0：发送成功 |
 
 错误码：
 
@@ -1069,7 +1119,7 @@ sendICCERKEMessage(rkeStr: string): Promise<string>
 | 1010200006 | The device's remote paired watch cannot be connected. |
 | 1010200012 | Duplicate request. |
 | 1010220004 | The card does not exist in the specified device. |
-| 1010220006 | Bluetooth permission is not granted. |
+| 1010220006 | Bluetooth permission is not granted. 适用版本：5.0.1(13)+ |
 | 1010221301 | Failed to send the RKE message because of a connection failure. |
 | 1010221302 | Failed to send the RKE message because of an authentication failure. |
 | 1010200013 | Operation failed because of an internal error. |
@@ -1085,12 +1135,16 @@ import { BusinessError } from '@kit.BasicServicesKit';
 @Entry
 @Component
 struct Index {
+  // 初始化，需要传入应用的UIAbilityContext
   private walletPassClient: walletPass.WalletPassClient = new walletPass.WalletPassClient(this.getUIContext().getHostContext() as common.UIAbilityContext);
+  // 卡券唯一标识
   private serialNumber: string = '';
+  // 创建WalletKit服务申请的服务号
   private passType: string = '';
+  // 车控指令
   private rkeCommand: string = '';
 
-  async sendICCERKEMessage() {
+  sendICCERKEMessage() {
     let passStr = JSON.stringify({
       passType: this.passType,
       serialNumber: this.serialNumber,
@@ -1099,14 +1153,15 @@ struct Index {
       directionFlag: '1'
     });
     this.walletPassClient.sendICCERKEMessage(passStr).then((result: string) => {
+      // 接口调用成功
       console.info(`Succeeded in sending ICCERKEMessage, result: ${result}`);
     }).catch((err: BusinessError) => {
+      // 接口调用失败
       console.error(`Failed to send ICCERKEMessage, code:${err.code}, message:${err.message}`);
     })
   }
 
   build() {
-    // your application UI
   }
 }
 ```

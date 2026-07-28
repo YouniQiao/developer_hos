@@ -2,8 +2,8 @@
 title: "Types"
 upstream_id: "harmonyos-references/arkts-apis-audio-t"
 catalog: "harmonyos-references"
-content_hash: "f0bc04f40862"
-synced_at: "2026-07-09T01:00:08.623813"
+content_hash: "6548f3ad7ecb"
+synced_at: "2026-07-28T16:51:26.469125"
 ---
 
 # Types
@@ -38,13 +38,13 @@ type AudioCapturerChangeInfoArray = Array<Readonly<AudioCapturerChangeInfo>>
 
 type AudioEffectInfoArray = Array<Readonly<AudioEffectMode>>
 
-待查询ContentType和StreamUsage组合场景下的音效模式数组类型，[AudioEffectMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#audioeffectmode10)数组，只读。
+ContentType和StreamUsage组合场景下的音效模式数组类型，[AudioEffectMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#audioeffectmode10)数组，只读。
 
 系统能力： SystemCapability.Multimedia.Audio.Renderer
 
 | 类型 | 说明 |
 | --- | --- |
-| Array> | 待查询ContentType和StreamUsage组合场景下的音效模式数组类型，[AudioEffectMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#audioeffectmode10)数组，只读。 |
+| Array> | ContentType和StreamUsage组合场景下的音效模式数组类型，[AudioEffectMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#audioeffectmode10)数组，只读。 |
 
 #### AudioDeviceDescriptors
 
@@ -64,7 +64,7 @@ type AudioDeviceDescriptors = Array<Readonly<AudioDeviceDescriptor>>
 
 type AudioRendererWriteDataCallback = (data: ArrayBuffer) => AudioDataCallbackResult | void
 
-回调函数类型，用于音频渲染器的数据写入，回调函数结束后，音频服务会把data指向的数据放入队列里等待播放，因此请勿在回调外再次更改data指向的数据, 且务必保证往data填满待播放数据, 否则会导致音频服务播放杂音。
+回调函数类型，用于音频渲染器的数据写入。回调函数结束后，音频服务会把data指向的数据放入队列里等待播放，因此请勿在回调外再次更改data指向的数据，且务必保证往data填满待播放数据，否则会导致音频播放出现杂音。
 
 系统能力： SystemCapability.Multimedia.Audio.Renderer
 
@@ -79,3 +79,19 @@ type AudioRendererWriteDataCallback = (data: ArrayBuffer) => AudioDataCallbackRe
 | 类型 | 说明 |
 | --- | --- |
 | [AudioDataCallbackResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#audiodatacallbackresult12) | void | 如果返回 void 或 AudioDataCallbackResult.VALID：表示数据有效，将播放音频数据；如果返回 AudioDataCallbackResult.INVALID：表示数据无效，且音频数据不播放。 |
+
+#### DeviceTypeArray
+
+type DeviceTypeArray = Array<DeviceType>
+
+数组类型，[DeviceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#devicetype)数组。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Multimedia.Audio.Device
+
+| 类型 | 说明 |
+| --- | --- |
+| Array | DeviceType数组。 |

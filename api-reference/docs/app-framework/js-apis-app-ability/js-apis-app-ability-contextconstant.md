@@ -2,13 +2,13 @@
 title: "@ohos.app.ability.contextConstant (Context相关常量)"
 upstream_id: "harmonyos-references/js-apis-app-ability-contextconstant"
 catalog: "harmonyos-references"
-content_hash: "56c957e7a9da"
-synced_at: "2026-07-09T00:57:04.190479"
+content_hash: "578cfe5b3cf4"
+synced_at: "2026-07-28T16:40:32.777819"
 ---
 
 # @ohos.app.ability.contextConstant (Context相关常量)
 
-ContextConstant提供Context相关的枚举，包含文件加密分区等级、UIAbility启动后的进程模式等。
+ContextConstant提供Context相关的枚举，包含文件加密分区等级、进程模式等。其中，文件加密分区等级用于保护应用数据安全，开发者可根据应用需求选择合适的加密等级；进程模式用于控制UIAbility的启动方式和进程行为。这些枚举帮助开发者实现更灵活的应用架构和更安全的数据管理。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 9开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -22,7 +22,7 @@ import { contextConstant } from '@kit.AbilityKit';
 
 #### AreaMode
 
-文件加密分区等级，保证应用在不同场景下的数据安全。开发者可以根据应用的具体需求选择合适的加密等级，以保护用户的数据安全。
+文件加密分区等级，保证应用在不同场景下的数据安全。开发者可根据应用需求选择合适的加密等级。
 
 系统能力：SystemCapability.Ability.AbilityRuntime.Core
 
@@ -46,7 +46,7 @@ ProcessMode作为[StartOptions](https://developer.huawei.com/consumer/cn/doc/har
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| NEW_PROCESS_ATTACH_TO_PARENT | 1 | 创建一个新进程，并在该进程上启动UIAbility。该进程会跟随父进程退出。 **约束：** 使用此模式时，要求目标UIAbility跟调用方是在同一个应用。 |
+| NEW_PROCESS_ATTACH_TO_PARENT | 1 | 创建一个新进程，并在该进程上启动UIAbility。该进程会跟随父进程（调用方进程）退出，即当父进程退出时，此进程也会自动退出。 **约束：** 使用此模式时，要求目标UIAbility跟调用方是在同一个应用。 |
 | NEW_PROCESS_ATTACH_TO_STATUS_BAR_ITEM | 2 | 创建一个新进程，在该进程上启动UIAbility，并绑定该进程到状态栏图标上。 **约束：** 使用此模式时，要求目标UIAbility跟调用方是在同一个应用，并且应用要在状态栏中有图标。 |
 | ATTACH_TO_STATUS_BAR_ITEM | 3 | 启动UIAbility，并绑定该UIAbility所在进程到状态栏图标上。 **约束：** 使用此模式时，要求目标UIAbility跟调用方是在同一个应用，并且应用要在状态栏中有图标。 |
 
@@ -63,12 +63,14 @@ export default class EntryAbility extends UIAbility {
       bundleName: 'com.example.myapplication',
       abilityName: 'MainAbility2'
     };
-    let options: StartOptions = {
-      processMode: contextConstant.ProcessMode.NEW_PROCESS_ATTACH_TO_STATUS_BAR_ITEM,
-      startupVisibility: contextConstant.StartupVisibility.STARTUP_HIDE
-    };
+  // 创建启动选项，设置进程模式和启动可见性
+  let options: StartOptions = {
+        processMode: contextConstant.ProcessMode.NEW_PROCESS_ATTACH_TO_STATUS_BAR_ITEM,
+        startupVisibility: contextConstant.StartupVisibility.STARTUP_HIDE
+      };
 
     try {
+      // 启动目标UIAbility
       this.context.startAbility(want, options, (err: BusinessError) => {
         if (err.code) {
           // 处理业务逻辑错误
@@ -131,11 +133,13 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 export default class EntryAbility extends UIAbility {
   onCreate(want: Want, launchParam: AbilityConstant.LaunchParam) {
+    // 设置不触发onNewWant的场景，组合多个场景标志位
     let scenarios: number = contextConstant.Scenarios.SCENARIO_MOVE_MISSION_TO_FRONT |
       contextConstant.Scenarios.SCENARIO_SHOW_ABILITY |
       contextConstant.Scenarios.SCENARIO_BACK_TO_CALLER_ABILITY_WITH_RESULT;
 
     try {
+      // 设置跳过onNewWant的场景
       this.context.setOnNewWantSkipScenarios(scenarios).then(() => {
         // 执行正常业务
         console.info('setOnNewWantSkipScenarios succeed');
@@ -180,6 +184,7 @@ import { hilog } from '@kit.PerformanceAnalysisKit';
 export default class EntryAbility extends UIAbility {
   onCreate() {
     hilog.info(0x0000, 'testTag', `%{public}s`, 'Ability onCreate');
+    // 判断Context类型是否为UIAbilityContext
     let result = this.context.isContextOf(contextConstant.ContextType.UIABILITY_CONTEXT);
     hilog.info(0x0000, 'testTag', `match contextType result is:%{public}s`, JSON.stringify(result));
   }

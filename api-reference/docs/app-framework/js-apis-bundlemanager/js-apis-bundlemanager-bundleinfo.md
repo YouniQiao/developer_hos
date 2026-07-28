@@ -2,8 +2,8 @@
 title: "BundleInfo"
 upstream_id: "harmonyos-references/js-apis-bundlemanager-bundleinfo"
 catalog: "harmonyos-references"
-content_hash: "2409710adec8"
-synced_at: "2026-07-09T00:57:10.402565"
+content_hash: "7f1dc402284c"
+synced_at: "2026-07-28T16:40:40.215728"
 ---
 
 # BundleInfo
@@ -100,3 +100,19 @@ import { bundleManager } from '@kit.AbilityKit';
 | --- | --- | --- | --- | --- |
 | bundleName | string | 是 | 否 | 应用的bundleName。 |
 | appIndex | number | 是 | 否 | 应用包的分身索引信息。取值为整数，范围：[0-5]，0表示主应用，1-5等表示分身应用。 |
+
+#### AlternateIconInfo
+
+描述应用备用图标信息。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.BundleManager.BundleFramework.Core
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| iconName | string | 是 | 否 | 备用图标的名称。 |
+| iconId | number | 是 | 否 | 备用图标的资源id，是编译构建时根据应用配置的icon自动生成的资源id。 |
+| enabled | boolean | 是 | 否 | 备用图标是否启用。 true：表示当前备用图标启用。 false：表示当前备用图标未启用。 **说明：** 应用最多只能启用一个备用图标。 |

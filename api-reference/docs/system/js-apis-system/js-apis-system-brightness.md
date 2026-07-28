@@ -2,8 +2,8 @@
 title: "@system.brightness (屏幕亮度)"
 upstream_id: "harmonyos-references/js-apis-system-brightness"
 catalog: "harmonyos-references"
-content_hash: "cf9c0206f7e2"
-synced_at: "2026-07-09T00:59:42.006407"
+content_hash: "0769f36d4140"
+synced_at: "2026-07-28T16:50:59.316637"
 ---
 
 # @system.brightness (屏幕亮度)
@@ -21,7 +21,11 @@ synced_at: "2026-07-09T00:59:42.006407"
 import brightness, { BrightnessModeResponse, BrightnessResponse } from '@system.brightness';
 ```
 
-#### brightness.getValue(deprecated)
+#### Brightness
+
+提供屏幕亮度和模式的查询、调节接口。
+
+#### [h2]getValue(deprecated)
 
 getValue(options?: GetBrightnessOptions): void
 
@@ -101,7 +105,7 @@ export default {
 }
 ```
 
-#### brightness.setValue(deprecated)
+#### [h2]setValue(deprecated)
 
 setValue(options?: SetBrightnessOptions): void
 
@@ -182,7 +186,7 @@ export default {
 }
 ```
 
-#### brightness.getMode(deprecated)
+#### [h2]getMode(deprecated)
 
 getMode(options?: GetBrightnessModeOptions): void
 
@@ -262,7 +266,7 @@ export default {
 }
 ```
 
-#### brightness.setMode(deprecated)
+#### [h2]setMode(deprecated)
 
 setMode(options?: SetBrightnessModeOptions): void
 
@@ -343,15 +347,16 @@ export default {
 }
 ```
 
-#### brightness.setKeepScreenOn(deprecated)
+#### [h2]setKeepScreenOn(deprecated)
 
 setKeepScreenOn(options?: SetKeepScreenOnOptions): void
 
-除Lite Wearable外，从API version 7开始不再维护，建议使用[window.setWindowKeepScreenOn()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowkeepscreenon9)替代。
-
 设置屏幕是否保持常亮状态，开启常亮模式推荐在onShow()阶段调用。
 
-![](./img/caution_3.0-zh-cn.png) 在Lite Wearable上，该接口仅能阻止系统无活动超时灭屏（自动），无法阻止用户主动操作（如盖屏）、常亮时刻结束等导致的灭屏。
+![](./img/caution_3.0-zh-cn.png)
+
+- 除Lite Wearable外，从API version 7开始不再维护，建议使用[window.setWindowKeepScreenOn()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowkeepscreenon9)替代。
+- 在Lite Wearable上，该接口仅能阻止系统无活动超时灭屏（自动），无法阻止用户主动操作（如盖屏）、常亮时刻结束等导致的灭屏。
 
 系统能力： SystemCapability.PowerManager.DisplayPowerManager.Lite
 

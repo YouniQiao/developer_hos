@@ -2,13 +2,15 @@
 title: "textRecognition（文字识别）"
 upstream_id: "harmonyos-references/core-vision-text-recognition-api"
 catalog: "harmonyos-references"
-content_hash: "dce9346ca7f3"
-synced_at: "2026-07-09T01:01:41.847643"
+content_hash: "a694263e54d4"
+synced_at: "2026-07-28T16:53:10.718808"
 ---
 
 # textRecognition（文字识别）
 
-通用文字识别服务提供图像信息转换为字符信息的能力。通过拍照、扫描等光学输入方式，把各种票据、卡证、表格、报刊、书籍等印刷品文字转化为图像信息，再利用文字识别技术将图像信息转化为计算机等设备可以使用的字符信息，便于用户提取字符内容、屏幕坐标及外框。目前本服务支持识别的语言有：简体中文、英文、日文、韩文、繁体中文五种语言。
+通用文字识别服务提供图像信息转换为字符信息的能力。通过拍照、扫描等光学输入方式，把各种票据、卡证、表格、报刊、书籍等印刷品文字转化为图像信息，再利用文字识别技术将图像信息转化为计算机等设备可以使用的字符信息，便于用户提取字符内容、屏幕坐标及外框。
+
+目前本服务支持识别的语言有：简体中文、英文、日文、韩文、繁体中文五种语言。在使用文字识别服务时，建议图像清晰、文字无遮挡、背景简洁，以获得最佳识别效果，不适用于模糊不清或倾斜严重的图像。
 
 起始版本： 4.0.0(10)
 
@@ -44,7 +46,7 @@ import { textRecognition } from '@kit.CoreVisionKit';
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| pixelMap | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 是 | 否 | 待识别的图片。 具体规格请参考[约束与限制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-introduction#约束与限制)。 |
+| pixelMap | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 是 | 否 | 待识别的图片。对于图片的要求请参见[约束与限制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-introduction#约束与限制)。 |
 
 #### PixelPoint
 
@@ -242,7 +244,7 @@ struct Page {
 
 recognizeText(visionInfo: VisionInfo, callback: AsyncCallback<TextRecognitionResult>): void
 
-识别视觉信息内包含的文本。使用Callback异步回调。
+识别视觉信息内包含的文本。当识别完成时，回调函数会被自动调用并返回识别结果。使用Callback异步回调。
 
 系统能力： SystemCapability.AI.OCR.TextRecognition
 
@@ -255,7 +257,7 @@ recognizeText(visionInfo: VisionInfo, callback: AsyncCallback<TextRecognitionRes
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | visionInfo | [VisionInfo](#visioninfo) | 是 | 待识别的视觉信息。 |
-| callback | [AsyncCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#asynccallback) | 是 | 回调函数，识别成功时返回文字识别的结果。 |
+| callback | [AsyncCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#asynccallback) | 是 | 回调函数，当识别成功时，err为undefined，返回文字识别的结果；否则为错误对象。 |
 
 错误码：
 
@@ -265,8 +267,8 @@ recognizeText(visionInfo: VisionInfo, callback: AsyncCallback<TextRecognitionRes
 | --- | --- |
 | 200 | Run timed out, please try again later. |
 | 401 | The parameter check failed. |
-| 1001400001 | Failed to run, please try again. |
-| 1001400002 | The service is abnormal. |
+| 1001400001 | Failed to run OCR, please try again. |
+| 1001400002 | The OCR service is abnormal. |
 
 示例：
 
@@ -344,7 +346,7 @@ struct Page {
 
 recognizeText(visionInfo: VisionInfo, configuration ?: TextRecognitionConfiguration): Promise<TextRecognitionResult>
 
-识别视觉信息内包含的文本，可以通过自定义配置项进行更详细的设置。使用Promise异步回调。
+识别视觉信息内包含的文本。可以通过自定义配置项（如是否支持朝向检测）进行更详细的设置。使用Promise异步回调。
 
 系统能力： SystemCapability.AI.OCR.TextRecognition
 
@@ -373,8 +375,8 @@ recognizeText(visionInfo: VisionInfo, configuration ?: TextRecognitionConfigurat
 | --- | --- |
 | 200 | Run timed out, please try again later. |
 | 401 | The parameter check failed. |
-| 1001400001 | Failed to run, please try again. |
-| 1001400002 | The service is abnormal. |
+| 1001400001 | Failed to run OCR, please try again. |
+| 1001400002 | The OCR service is abnormal. |
 
 示例：
 
@@ -447,7 +449,7 @@ struct Page {
 
 recognizeText(visionInfo: VisionInfo, configuration: TextRecognitionConfiguration, callback: AsyncCallback<TextRecognitionResult>): void
 
-通过自定义配置项对识别能力进行更详细的设置，识别视觉信息内包含的文本。使用Callback异步回调。
+通过自定义配置项对识别能力进行更详细的设置，识别视觉信息内包含的文本。当识别完成时，回调函数会被自动调用并返回识别结果。使用Callback异步回调。
 
 系统能力： SystemCapability.AI.OCR.TextRecognition
 
@@ -461,7 +463,7 @@ recognizeText(visionInfo: VisionInfo, configuration: TextRecognitionConfiguratio
 | --- | --- | --- | --- |
 | visionInfo | [VisionInfo](#visioninfo) | 是 | 待识别的视觉信息。 |
 | configuration | [TextRecognitionConfiguration](#textrecognitionconfiguration) | 是 | 识别的配置项。 |
-| callback | [AsyncCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#asynccallback) | 是 | 回调函数，识别成功时返回文字识别的结果。 |
+| callback | [AsyncCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#asynccallback) | 是 | 回调函数，当识别成功时err为undefined，返回文字识别的结果；否则为错误对象。 |
 
 错误码：
 
@@ -471,8 +473,8 @@ recognizeText(visionInfo: VisionInfo, configuration: TextRecognitionConfiguratio
 | --- | --- |
 | 200 | Run timed out, please try again later. |
 | 401 | The parameter check failed. |
-| 1001400001 | Failed to run, please try again. |
-| 1001400002 | The service is abnormal. |
+| 1001400001 | Failed to run OCR, please try again. |
+| 1001400002 | The OCR service is abnormal. |
 
 示例：
 
@@ -577,8 +579,8 @@ getSupportedLanguages(): Promise<Array<string>>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 1001400001 | Failed to run, please try again. |
-| 1001400002 | The service is abnormal. |
+| 1001400001 | Failed to run OCR, please try again. |
+| 1001400002 | The OCR service is abnormal. |
 
 示例：
 
@@ -587,6 +589,7 @@ import { textRecognition } from '@kit.CoreVisionKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
+// 获取支持的语言类型列表
 textRecognition.getSupportedLanguages().then((data: Array<string>) => {
   let languageString = data.join(', ');
   hilog.info(0x0000, 'OCRDemo', `Succeeded in obtaining the language: ${languageString}`);
@@ -621,7 +624,7 @@ getSupportedLanguages(callback: AsyncCallback<Array<string>>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#asynccallback)> | 是 | 回调函数，返回所支持的[语言类型列表](#语言类型列表)。 |
+| callback | [AsyncCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#asynccallback)> | 是 | 回调函数，当识别成功时err为undefined，返回所支持的[语言类型列表](#语言类型列表)；否则为错误对象。 |
 
 错误码：
 
@@ -629,8 +632,8 @@ getSupportedLanguages(callback: AsyncCallback<Array<string>>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 1001400001 | Failed to run, please try again. |
-| 1001400002 | The service is abnormal. |
+| 1001400001 | Failed to run OCR, please try again. |
+| 1001400002 | The OCR service is abnormal. |
 
 示例：
 
@@ -639,6 +642,7 @@ import { textRecognition } from '@kit.CoreVisionKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
+// 获取支持的语言类型列表
 textRecognition.getSupportedLanguages((error: BusinessError, data: Array<string>) => {
   if (!error) {
     hilog.info(0x0000, 'OCRDemo', `Succeeded in obtaining the language: ${data}`);

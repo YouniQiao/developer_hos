@@ -2,8 +2,8 @@
 title: "net_websocket.h"
 upstream_id: "harmonyos-references/capi-net-websocket-h"
 catalog: "harmonyos-references"
-content_hash: "6ce8afe94097"
-synced_at: "2026-07-09T00:59:29.125520"
+content_hash: "4d49579f0f2c"
+synced_at: "2026-07-28T16:50:44.484443"
 ---
 
 # net_websocket.h
@@ -141,7 +141,7 @@ int OH_WebSocketClient_Send(struct WebSocket *client, char *data, size_t length)
 | --- | --- |
 | [struct WebSocket](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-netstack-websocket) *client | 客户端。 |
 | char *data | 客户端发送的数据。 |
-| size_t length | 客户端发送的数据长度。 |
+| size_t length | 客户端发送的数据长度。单位：Byte。 |
 
 返回：
 

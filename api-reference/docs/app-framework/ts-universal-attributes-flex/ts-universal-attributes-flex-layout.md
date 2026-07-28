@@ -2,24 +2,32 @@
 title: "Flex布局"
 upstream_id: "harmonyos-references/ts-universal-attributes-flex-layout"
 catalog: "harmonyos-references"
-content_hash: "caa7758236ee"
-synced_at: "2026-07-09T00:57:38.217824"
+content_hash: "bc0012c23c3c"
+synced_at: "2026-07-28T16:42:05.672728"
 ---
 
 # Flex布局
 
-可以灵活排列、对齐和分配容器内的子组件空间，使元素根据可用空间扩展或收缩，以满足不同屏幕尺寸下的响应式布局。
+Flex布局提供灵活的组件排列和对齐能力，可以动态分配容器内的子组件空间，使元素根据可用空间自动扩展或收缩。适用于响应式UI布局、动态内容布局、复杂布局实现等场景，能解决传统布局在多设备适配困难、内容变化导致布局错位、复杂对齐需求难以实现等问题。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 从API version 7开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+- 从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 - 仅[Flex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-flex)、[Column](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-column)、[Row](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-row)和[DynamicLayout](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-dynamiclayout)支持下述四种属性，[GridRow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-gridrow)仅支持设置[alignSelf](#alignself)。
+
+![](./img/note_3.0-zh-cn.png)
+
+- **flexBasis**：设置组件的基准尺寸，作为布局的初始参考值，优先级高于width/height。
+- **flexGrow**：定义组件在父容器有剩余空间时的扩展比例，剩余空间按各组件flexGrow比例分配。
+- **flexShrink**：定义组件在父容器空间不足时的压缩比例，超出的尺寸按各组件flexShrink比例分摊。
+
+flexBasis设定基准尺寸，flexGrow控制扩展行为，flexShrink控制压缩行为，三者可单独使用或组合使用。
 
 #### flexBasis
 
 flexBasis(value: number | string): T
 
-设置组件的基准尺寸。
+设置组件的基准尺寸。仅Flex、Column、Row和DynamicLayout容器支持此属性。设置后组件会以该基准尺寸作为初始尺寸参与布局计算。当父容器为Column、Row时，需设置主轴方向的尺寸。Column和Row在未设置主轴尺寸（width/height/size）时仍遵守默认布局行为，在主轴上自适应子组件尺寸，此时可能影响flexBasis的效果。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -31,19 +39,19 @@ flexBasis(value: number | string): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | string | 是 | 设置组件在父容器主轴方向上的基准尺寸。 默认值：'auto'（表示组件在主轴方向上的基准尺寸为组件原本的大小）。 string类型可选值：可以转化为数字的字符串（如'10'）或带长度单位的字符串（如'10px'）或'auto'，不允许设置百分比字符串。 number：取值范围(0,+∞)，单位为vp。 异常值：默认为'auto'。 |
+| value | number | string | 是 | 设置组件在父容器主轴方向上的基准尺寸。 默认值：'auto'（表示组件在主轴方向上的基准尺寸为组件原本的大小）。 string类型：不允许设置百分比字符串。可选值：可以转化为数字的字符串（如'10'）、带长度单位的字符串（如'10px'）或'auto'。传入不符合要求的字符串时，按默认值'auto'处理。 number：取值范围(0,+∞)，单位为vp（virtual pixel，虚拟像素）。 设置异常值时，该属性按默认值'auto'处理。 [constraintSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#constraintsize)限制组件的尺寸范围，当flexBasis设置的基准尺寸超出constraintSize的限制范围时，会被constraintSize约束。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### flexGrow
 
 flexGrow(value: number): T
 
-设置组件在父容器的剩余空间所占比例。
+设置组件在父容器的剩余空间所占比例。仅Flex、Column、Row和DynamicLayout容器支持此属性。设置后组件会根据比例扩展占据剩余空间。当父容器为Column、Row时，需设置主轴方向的尺寸。Column和Row在未设置主轴尺寸（width/height/size）时仍遵守默认布局行为，在主轴上自适应子组件尺寸，此时可能影响flexGrow的剩余空间分配效果。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -55,21 +63,21 @@ flexGrow(value: number): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 设置父容器在主轴方向上的剩余空间分配给此属性所在组件的比例。 取值范围：[0, +∞) 默认值：0 设置异常值时，该属性为默认值。 |
+| value | number | 是 | 设置父容器在主轴方向（行布局为水平方向，列布局为垂直方向）上的剩余空间分配给此属性所在组件的比例。值为0表示不参与剩余空间分配，保持原有尺寸；值大于0时，按照比例分配父容器的剩余空间，值越大分配的空间越多。 取值范围：[0, +∞) 默认值：0 父容器为[Column](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-column)、[Row](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-row)时，需设置主轴方向的尺寸（[width](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#width)/[height](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#height)/[size](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#size)），否则可能影响flexGrow的剩余空间分配效果。 [constraintSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#constraintsize)限制组件的尺寸范围，当flexGrow扩展后的组件尺寸超出constraintSize的最大限制时，会被constraintSize约束。 设置异常值时，该属性为默认值。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### flexShrink
 
 flexShrink(value: number): T
 
-设置父容器压缩尺寸分配给此属性所在组件的比例。当父容器为Column、Row时，需设置主轴方向的尺寸。
+设置父容器空间不足时，压缩尺寸分配给此属性所在组件的比例。仅Flex、Column、Row和DynamicLayout容器支持此属性。当父容器为Column、Row时，父容器需设置主轴方向的尺寸（即width/height/size），此时flexShrink才生效。Column和Row在未设置主轴尺寸（width/height/size）时仍遵守默认布局行为，在主轴上自适应子组件尺寸，此时flexShrink不生效。
 
-![](./img/note_3.0-zh-cn.png) 使用[getInspectorByKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-component-id#getinspectorbykey9)获取flexShrink属性时，如果该节点未设置flexShrink属性，默认返回1。
+![](./img/note_3.0-zh-cn.png) 使用[getInspectorByKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-component-id#getinspectorbykey9)获取flexShrink属性时，如果该节点未设置flexShrink属性，默认返回1（与Flex容器的默认值一致，与Column、Row容器的默认值0不同）。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -81,19 +89,19 @@ flexShrink(value: number): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 设置父容器压缩尺寸分配给此属性所在组件的比例。 父容器为[Column](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-column)、[Row](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-row)时，默认值：0，取值范围[0,+∞)。 父容器为[Flex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-flex)时，默认值：1 [constraintSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#constraintsize)限制组件的尺寸范围。[Column](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-column)和[Row](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-row)即使设置了[constraintSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#constraintsize)，在未设置主轴尺寸（[width](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#width)/[height](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#height)/[size](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#size)）时仍遵守默认布局行为，在主轴上自适应子组件尺寸，此时flexShrink不生效。 设置异常值时，该属性为默认值。 |
+| value | number | 是 | 设置父容器空间不足时，压缩尺寸分配给此属性所在组件的比例。值为0表示该组件不参与压缩；值大于0时，按照比例压缩，值越大压缩量越大。 父容器为[Column](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-column)、[Row](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-row)时，默认值：0，取值范围：[0, +∞)。 父容器为[Flex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-flex)时，默认值：1，取值范围：[0, +∞)。 [constraintSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#constraintsize)限制组件的尺寸范围。[Column](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-column)和[Row](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-row)即使设置了[constraintSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#constraintsize)，在父容器未设置主轴尺寸（[width](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#width)/[height](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#height)/[size](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#size)）时仍遵守默认布局行为，在主轴上自适应子组件尺寸，此时flexShrink不生效。 设置异常值时，该属性为默认值。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### alignSelf
 
 alignSelf(value: ItemAlign): T
 
-子组件在父容器交叉轴的对齐格式。
+子组件在父容器交叉轴（与主轴垂直的方向）的对齐格式，设置后会覆盖父容器的alignItems设置。仅Flex、Column、Row、DynamicLayout和GridRow容器支持此属性。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -105,13 +113,13 @@ alignSelf(value: ItemAlign): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [ItemAlign](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#itemalign) | 是 | 子组件在父容器交叉轴的对齐格式，会覆盖[Flex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-flex)、[Column](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-column)、[Row](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-row)、[GridRow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-gridrow)布局容器中的alignItems设置。 [GridCol](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-gridcol)可以绑定alignSelf属性来改变它自身在交叉轴方向上的布局。 默认值：ItemAlign.Auto |
+| value | [ItemAlign](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#itemalign) | 是 | 子组件在父容器交叉轴的对齐格式，会覆盖[Flex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-flex)、[Column](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-column)、[Row](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-row)、[DynamicLayout](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-dynamiclayout)、[GridRow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-gridrow)布局容器中的alignItems设置。当子组件需要与父容器中其他子组件不同的对齐方式时使用（典型场景：父容器中大部分子组件居中对齐，但某个子组件需要顶部或底部对齐；或需要为单个子组件指定特殊的对齐方式）。 [GridCol](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-gridcol)可以绑定alignSelf属性来改变它自身在交叉轴方向上的布局。 默认值：ItemAlign.Auto（表示继承父容器的对齐设置） |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### 示例
 
@@ -203,4 +211,4 @@ struct FlexExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413048.png)
+ ![](./img/zh-cn_image_0000002686087783.png)

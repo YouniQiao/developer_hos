@@ -2,8 +2,8 @@
 title: "image_packer_mdk.h"
 upstream_id: "harmonyos-references/capi-image-packer-mdk-h"
 catalog: "harmonyos-references"
-content_hash: "801accc08c17"
-synced_at: "2026-07-09T01:00:33.253963"
+content_hash: "e16892fe9266"
+synced_at: "2026-07-28T16:51:50.864931"
 ---
 
 # image_packer_mdk.h
@@ -26,7 +26,7 @@ synced_at: "2026-07-09T01:00:33.253963"
 
 库： libimage_packer_ndk.z.so
 
-系统能力： SystemCapability.Multimedia.Image.Core
+系统能力： SystemCapability.Multimedia.Image.ImagePacker
 
 起始版本： 11
 

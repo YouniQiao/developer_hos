@@ -2,8 +2,8 @@
 title: "loginComponentManager (华为账号登录组件管理)"
 upstream_id: "harmonyos-references/account-api-component-manager"
 catalog: "harmonyos-references"
-content_hash: "67e1157efb70"
-synced_at: "2026-07-09T01:01:13.231128"
+content_hash: "66c980c05b75"
+synced_at: "2026-07-28T16:52:29.895721"
 ---
 
 # loginComponentManager (华为账号登录组件管理)
@@ -519,7 +519,6 @@ struct QuickLoginButtonComponent {
 
             Text($r('app.string.app_name'))
               .fontFamily($r('sys.string.ohos_id_text_font_family_medium'))
-              .fontWeight(FontWeight.Medium)
               .fontWeight(FontWeight.Bold)
               .maxFontSize($r('sys.float.ohos_id_text_size_headline8'))
               .minFontSize($r('sys.float.ohos_id_text_size_body1'))
@@ -2003,7 +2002,7 @@ struct QuickLoginButtonComponent {
 | verifyPhoneNumber | boolean | 否 | 是 | 华为账号用户在过去90天内未进行过短信验证，是否拉起Account Kit提供的短信验证码页面。 true：拉起Account Kit提供的短信验证码页面。 false：不拉起Account Kit提供的短信验证码页面。需要应用验证手机号时效性。 默认值：true。 **起始版本：** 5.0.0(12) |
 | optionalLoginAreaAttr | [OptionalLoginAreaAttr](#optionalloginareaattr) | 否 | 是 | 可选登录区域属性，支持设置图标，可用于展示其他登录方式对应图标，以跳转不同的自定义登录页面。 如果optionalLoginButtonAttr和optionalLoginAreaAttr同时存在，优先展示optionalLoginAreaAttr。 **起始版本：** 5.0.0(12) |
 | riskLevel | boolean | 否 | 是 | 是否需要获取华为账号用户风险等级。 仅登录类型为[LoginType.QUICK_LOGIN](#logintype)时需要设置该参数。 true：需要[获取用户风险等级](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-risklevel-byquicklogin)。 false：不获取用户风险等级。 默认值：false。 **起始版本：** 5.1.0(18) |
-| securityVerification | boolean | 否 | 是 | 用户开启华为账号一键登录增强身份验证后，应用会在登录过程中通过华为账号使用生物识别或短信进行身份验证。如果需要获取用户一键登录增强身份验证的开关状态，需设置该字段为false。 仅登录类型为[LoginType.QUICK_LOGIN](#logintype)时需要设置该参数。 true：响应结果HuaweiIDCredential将不会返回[enableSecurityVerification](#huaweiidcredential)。 false：响应结果HuaweiIDCredential将返回[enableSecurityVerification](#huaweiidcredential)。 默认值：true。 **设备行为差异：** 该属性在Phone、Tablet、PC/2in1、TV设备中可正常使用，Car设备因不支持增强验证，该属性无效。 **起始版本：** 6.0.0(20) |
+| securityVerification | boolean | 否 | 是 | 用户开启华为账号一键登录增强身份验证后，应用会在登录过程中通过华为账号使用生物识别或短信进行身份验证。如果需要获取用户一键登录增强身份验证的开关状态，需设置该字段为false。 仅登录类型为[LoginType.QUICK_LOGIN](#logintype)时需要设置该参数。 true：响应结果HuaweiIDCredential将不会返回[enableSecurityVerification](#huaweiidcredential)。 false：响应结果HuaweiIDCredential将返回[enableSecurityVerification](#huaweiidcredential)。 默认值：true。 **起始版本：** 6.0.0(20) |
 
 #### LoginWithHuaweiIDButtonParams
 
@@ -2028,7 +2027,7 @@ struct QuickLoginButtonComponent {
 | extraStyle | [ExtraStyle](#extrastyle) | 否 | 是 | 如果应用想使用华为账号提供的固定样式之外的效果，可使用此接口自定义按钮样式。 **起始版本：** 5.0.0(12) |
 | loginButtonTextType | [LoginButtonTextType](#loginbuttontexttype) | 否 | 是 | 当loginType为[LoginType.QUICK_LOGIN](#logintype)时，可传入此参数，控制按钮文本内容显示。 默认值：[LoginButtonTextType.QUICK_LOGIN](#loginbuttontexttype) - 当该参数为[LoginButtonTextType.QUICK_LOGIN](#loginbuttontexttype)时，按钮文本内容显示“华为账号一键登录”。 - 当该参数为[LoginButtonTextType.QUICK_REGISTRATION](#loginbuttontexttype)时，按钮文本内容显示“华为账号一键注册”。 **起始版本：** 5.0.0(12) |
 | riskLevel | boolean | 否 | 是 | 是否需要获取华为账号用户风险等级。 仅登录类型为[LoginType.QUICK_LOGIN](#logintype)时需要设置该参数。 true：需要[获取用户风险等级](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-risklevel-byquicklogin)。 false：不获取用户风险等级。 默认值：false。 **起始版本：** 5.1.0(18) |
-| securityVerification | boolean | 否 | 是 | 用户开启华为账号一键登录增强身份验证后，应用会在登录过程中通过华为账号使用生物识别或短信进行身份验证。如果需要获取用户一键登录增强身份验证的开关状态，需设置该字段为false。 仅登录类型为[LoginType.QUICK_LOGIN](#logintype)时需要设置该参数。 true：响应结果HuaweiIDCredential将不会返回[enableSecurityVerification](#huaweiidcredential)。 false：响应结果HuaweiIDCredential将返回 [enableSecurityVerification](#huaweiidcredential)。 默认值：true。 **设备行为差异：** 该属性在Phone、Tablet、PC/2in1、TV设备中可正常使用，Car设备因不支持增强验证，该属性无效。 **起始版本：** 6.0.0(20) |
+| securityVerification | boolean | 否 | 是 | 用户开启华为账号一键登录增强身份验证后，应用会在登录过程中通过华为账号使用生物识别或短信进行身份验证。如果需要获取用户一键登录增强身份验证的开关状态，需设置该字段为false。 仅登录类型为[LoginType.QUICK_LOGIN](#logintype)时需要设置该参数。 true：响应结果HuaweiIDCredential将不会返回[enableSecurityVerification](#huaweiidcredential)。 false：响应结果HuaweiIDCredential将返回 [enableSecurityVerification](#huaweiidcredential)。 默认值：true。 **起始版本：** 6.0.0(20) |
 
 #### HuaweiIDCredential
 
@@ -2046,7 +2045,7 @@ struct QuickLoginButtonComponent {
 | openID | string | 是 | 否 | OpenID。华为账号用户在应用/元服务的唯一标识，同一个用户，不同应用，OpenID值不同。具体格式要求请参考[OpenID和UnionID的格式说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-9)。 |
 | authorizationCode | string | 是 | 否 | Authorization Code。授权码，为临时凭据，应用服务端可使用Authorization Code调用[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token#接口原型)接口向华为账号服务器请求获取Access Token。Authorization Code有效时间5分钟，并且只能使用1次。长度限制1-1024。 |
 | idToken | string | 是 | 是 | ID Token。用户身份凭证，JWT格式的字符串，包含用户信息。JSON Web Token（JWT）是一个开放标准（RFC 7519），定义了一种安全传输信息的方法，具体请参见[jwt.io](https://jwt.io/)。用于获取部分用户相关信息及验证签名，可参考[ID Token的使用场景与使用方法](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-12)。长度限制1-2048。 |
-| enableSecurityVerification | boolean | 是 | 是 | enableSecurityVerification。华为账号用户是否开启一键登录增强身份验证。如果开发者需要获取该字段，请将参数[securityVerification](#loginwithhuaweiidbuttonparams)设置为false。 仅登录类型为[LoginType.QUICK_LOGIN](#logintype)时会返回该字段。 true：表示用户已启用增强身份验证。 false：表示用户未启用增强身份验证。 **设备行为差异：** 该属性在Phone、Tablet、PC/2in1、TV设备中可正常使用，Car设备因不支持增强验证，该属性无效。 **起始版本：** 6.0.0(20) |
+| enableSecurityVerification | boolean | 是 | 是 | enableSecurityVerification。华为账号用户是否开启一键登录增强身份验证。如果开发者需要获取该字段，请将参数[securityVerification](#loginwithhuaweiidbuttonparams)设置为false。 仅登录类型为[LoginType.QUICK_LOGIN](#logintype)时会返回该字段。 true：表示用户已启用增强身份验证。 false：表示用户未启用增强身份验证。 **起始版本：** 6.0.0(20) |
 
 #### AppInfo
 
@@ -2296,7 +2295,7 @@ struct QuickLoginButtonComponent {
 | ID | 0 | 表示用OpenID、UnionID来关联华为账号。 用户在登录成功后会返回对应数据。 该登录类型响应数据包含openID、unionID、authorizationCode、idToken字段。 |
 | PHONE_NUMBER | 1 | 表示用PhoneNumber来关联华为账号。 用户在登录成功后，如之前未对快速验证手机号进行授权，则会拉起手机号授权页面；如已授权，则返回对应数据。 该登录类型不需要实时验证华为账号的手机号码，响应数据包含openID、unionID、authorizationCode、idToken字段。 应用使用Authorization Code调用[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token#接口原型)接口向华为账号服务器请求获取Access Token，再使用Access Token调用[获取华为账号用户信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-user-info-get-phone#接口原型)接口获取用户信息，从用户信息中获取用户手机号。 |
 | REAL_TIME_PHONE_NUMBER | 2 | 表示用PhoneNumber来关联华为账号。 用户每次在登录成功后，都会拉起实时验证手机号授权页面。 该登录类型会实时验证华为账号的手机号码，响应数据包含openID、unionID、authorizationCode、idToken字段。 应用使用Authorization Code调用[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token#接口原型)接口向华为账号服务器请求获取Access Token，再使用Access Token调用[获取华为账号用户信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-user-info-get-phone#接口原型)接口获取用户信息，从用户信息中获取用户手机号。 **说明：** REAL_TIME_PHONE_NUMBER暂不支持使用。 |
-| QUICK_LOGIN | 3 | 表示用PhoneNumber来关联华为账号。 该类型不支持Icon类型和图文类型的LoginWithHuaweiIDButton组件。 该登录类型需要通过[AuthorizationWithHuaweiIDRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#authorizationwithhuaweiidrequest)接口获取华为账号绑定的匿名手机号，如果未获取到华为账号绑定的匿名手机号，请使用其他登录类型。 该登录类型响应数据包含openID、unionID、authorizationCode、idToken字段。 应用使用Authorization Code调用[/oauth2/v6/quickLogin/getPhoneNumber](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-user-info-quicklogin-by-code#接口原型)接口获取用户信息，从用户信息中获取用户手机号。 **起始版本：** 5.0.0(12) **设备行为差异：** 该接口在Phone、PC/2in1、Tablet、TV、Car中可正常调用（TV设备从5.1.1(19)版本开始支持，Car设备从26.0.0版本开始支持），在其他设备类型中返回1001500003错误码。 |
+| QUICK_LOGIN | 3 | 表示用PhoneNumber来关联华为账号。 该类型不支持Icon类型和图文类型的LoginWithHuaweiIDButton组件。 该登录类型需要通过[AuthorizationWithHuaweiIDRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#authorizationwithhuaweiidrequest)接口获取华为账号绑定的匿名手机号，如果未获取到华为账号绑定的匿名手机号，请使用其他登录类型。 该登录类型响应数据包含openID、unionID、authorizationCode、idToken字段。 应用使用Authorization Code调用[/oauth2/v6/quickLogin/getPhoneNumber](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-user-info-quicklogin-by-code#接口原型)接口获取用户信息，从用户信息中获取用户手机号。 **起始版本：** 5.0.0(12) **设备行为差异：** 该接口在Phone、PC/2in1、Tablet、TV中可正常调用（TV设备从5.1.1(19)版本开始支持），在其他设备类型中返回1001500003错误码。 |
 
 #### TextType
 

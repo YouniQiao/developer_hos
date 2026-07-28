@@ -2,17 +2,15 @@
 title: "Preview"
 upstream_id: "harmonyos-references/openfileboost_preview"
 catalog: "harmonyos-references"
-content_hash: "6bab52b7f101"
-synced_at: "2026-07-09T01:01:37.190465"
+content_hash: "1e2566d09221"
+synced_at: "2026-07-28T16:52:59.543840"
 ---
 
 # Preview
 
 #### 概述
 
-Preview Kit（文件预览服务）为应用提供便捷的文件快速预览服务。应用可以通过Preview Kit提供的预览API，快速启动预览界面，实现对各类文件的预览。
-
-其中C API接口主要提供了文件打开加速功能和通用文件缓存加速功能。
+Preview Kit（文件预览服务）为应用提供便捷的文件快速预览服务，包括文件打开加速功能和通用文件缓存加速功能。
 
 - 文件打开加速功能支持应用通过预加载机制提前加载文件，缩短用户打开文件时间，给用户提供流畅顺滑的爽感体验。
 - 通用文件缓存加速功能支持应用通过缓存服务，将解码后的数据缓存到磁盘中，后续可直接获取缓存数据，省去解码过程，提升文件打开和浏览的性能。
@@ -50,7 +48,7 @@ Preview Kit（文件预览服务）为应用提供便捷的文件快速预览服
 | typedef [FileCacheBoost_CbErrCode](#filecacheboost_cberrcode)(* [DeserializeFunc](#deserializefunc)) (void **object, [ReadFunc](#readfunc) readFunc, struct [CacheKey](#cachekey) *key) | 系统执行反序列化操作的回调函数定义。由开发者实现，用于将已序列化的数据恢复为原始数据。 |
 | typedef struct [FileScanBoost_ScanOption](#filescanboost_scanoption) [FileScanBoost_ScanOption](#filescanboost_scanoption) | 文件扫描选项配置的不透明类型。 |
 | typedef struct [FileScanBoost_ScanResult](#filescanboost_scanresult) [FileScanBoost_ScanResult](#filescanboost_scanresult) | 文件扫描结果的不透明类型。 |
-| typedef [FileScanBoost_CbErrCode](#filescanboost_cberrcode)(* [HMS_Preview_FileScanBoost_OnFileScan](#hms_preview_filescanboost_onfilescan)) (int32_t fd, const char *path, uint32_t pathLen) | 文件扫描回调通知的函数指针类型。 系统调用此回调来发送扫描任务。此回调方法与扫描任务执行是异步的， 应用程序应在收到扫描任务后立即返回回调返回值，而不应阻塞回调。 并且扫描任务完成后的最终结果应使用[HMS_Preview_FileScanBoost_ReportScanResult](#hms_preview_filescanboost_reportscanresult)报告。 |
+| typedef [FileScanBoost_CbErrCode](#filescanboost_cberrcode)(* [HMS_Preview_FileScanBoost_OnFileScan](#hms_preview_filescanboost_onfilescan)) (int32_t fd, const char *path, uint32_t pathLen) | 文件扫描回调通知的函数指针类型。系统调用此回调来发送扫描任务。此回调方法与扫描任务执行是异步的，应用程序应在收到扫描任务后立即返回回调返回值，而不应阻塞回调。并且扫描任务完成后的最终结果应使用[HMS_Preview_FileScanBoost_ReportScanResult](#hms_preview_filescanboost_reportscanresult)报告。 |
 | typedef struct [OpenFileBoost_SupportFile](#openfileboost_supportfile) [OpenFileBoost_SupportFile](#openfileboost_supportfile) | 应用支持预加载的文件信息，用于描述一组符合预加载条件的文件特征。 开发者可以使用[HMS_Preview_OpenFileBoost_SupportFileCreate](#hms_preview_openfileboost_supportfilecreate)创建该结构体， 配置哪些类型的文件可以被系统预加载。 |
 | typedef struct [OpenFileBoost_Options](#openfileboost_options) [OpenFileBoost_Options](#openfileboost_options) | 应用支持预加载的文件信息和文件类型数量，用于向系统注册一批支持预加载的文件类型。 |
 | typedef struct [OpenFileBoost_FileOperationInfo](#openfileboost_fileoperationinfo) [OpenFileBoost_FileOperationInfo](#openfileboost_fileoperationinfo) | 应用向系统传递的文件操作信息。 开发者可传递文件路径和该文件的操作信息，操作信息包括但不限于： 打开："open"，关闭："close"，导入/加载："import"，导出："export"， TAB隐藏："tab_hidden"，TAB可见"tab_visible"， 保存："save"，新建："create"，云上传："upload"，云下载："download"，共享："share"， 打印："print"，另存为："save_as"，放映："play"。 开发者可以使用[HMS_Preview_OpenFileBoost_FileOperationInfoCreate](#hms_preview_openfileboost_fileoperationinfocreate)函数创建此结构体。 |
@@ -61,10 +59,10 @@ Preview Kit（文件预览服务）为应用提供便捷的文件快速预览服
 | --- | --- |
 | [OpenFileBoost_ErrCode](#openfileboost_errcode) { OPEN_FILE_BOOST_SUCCESS = 0, OPEN_FILE_BOOST_PERMISSION_NOT_GRANTED = 201, OPEN_FILE_BOOST_INVALID_PARAM = 401, OPEN_FILE_BOOST_CAPABILITY_NOT_SUPPORTED = 801, OPEN_FILE_BOOST_INTERNAL_ERROR = 1017200001, OPEN_FILE_BOOST_INSUFFICIENT_BUFFER = 1017200002, OPEN_FILE_BOOST_SERVICE_UNAVAILABLE = 1017200003, OPEN_FILE_BOOST_NO_MEMORY = 1017200004 } | 文件打开加速的错误码定义。 |
 | [OpenFileBoost_CbErrCode](#openfileboost_cberrcode) { OPEN_FILE_BOOST_CALLBACK_SUCCESS = 0, OPEN_FILE_BOOST_CALLBACK_FAILURE = 1017210000 } | 回调函数[HMS_OpenFileBoost_OnFilePreload](#hms_openfileboost_onfilepreload)的错误码定义，用于App向系统返回回调函数执行结果。 |
-| [OpenFileBoost_AppState](#openfileboost_appstate) { OPEN_FILE_BOOST_APP_STATE_ALLOW_PRELOAD = 0, OPEN_FILE_BOOST_APP_STATE_REJECT_PRELOAD = 1, OPEN_FILE_BOOST_APP_STATE_FOREVER_REJECT_PRELOAD = 2, OPEN_FILE_BOOST_APP_STATE_EXCEL_TRANSACTION = 3} | App状态，用于指示App当前允许、拒绝或永久拒绝系统推荐预加载文件。 |
-| [FileCacheBoost_ErrCode](#filecacheboost_errcode) { FILE_CACHE_BOOST_SUCCESS = 0, FILE_CACHE_BOOST_ERROR_INVALID_PARAM = 401, FILE_CACHE_BOOST_ERROR_NOT_SUPPORTED = 801, FILE_CACHE_BOOST_ERROR_NOMEM = 1017220001, FILE_CACHE_BOOST_ERROR_INTERNAL_ERROR = 1017220002, FILE_CACHE_BOOST_ERROR_KEY_NOT_FOUND = 1017220003, FILE_CACHE_BOOST_ERROR_KEY_EXIST = 1017220004, FILE_CACHE_BOOST_ERROR_NOT_DIR = 1017220005, FILE_CACHE_BOOST_ERROR_IO = 1017220006, FILE_CACHE_BOOST_ERROR_IO_CANCELED = 1017220007, FILE_CACHE_BOOST_ERROR_NOT_INITIALIZED = 1017220008, FILE_CACHE_BOOST_ERROR_EXCEED_LIMIT = 1017220009， FILE_CACHE_BOOST_ERROR_IO_CANCEL_FAILED = 1017220010 } | 文件缓存加速相关的错误码定义。 |
-| [FileCacheBoost_CbErrCode](#filecacheboost_cberrcode) { FILE_CACHE_BOOST_CALLBACK_SUCCESS = 0, FILE_CACHE_BOOST_CALLBACK_FAILURE = 1017221001， FILE_CACHE_BOOST_CALLBACK_IO_CANCELED = 1017221002 } | 回调函数[DeserializeFunc](#deserializefunc)和[SerializeFunc](#serializefunc)的错误码定义，应用程序将回调函数的执行结果返回给系统。 |
-| [FileScanBoost_ErrCode](#filescanboost_errcode) { FILE_SCAN_BOOST_SUCCESS = 0, FILE_SCAN_BOOST_ERROR_PERMISSION_NOT_GRANTED = 201, FILE_SCAN_BOOST_ERROR_INVALID_PARAM = 401, FILE_SCAN_BOOST_ERROR_NOT_SUPPORTED = 801, FILE_SCAN_BOOST_ERROR_INTERNAL = 1017230001, FILE_SCAN_BOOST_ERROR_NOT_REGISTERED = 1017230002, FILE_SCAN_BOOST_ERROR_ALREADY_REGISTERED = 1017230003, FILE_SCAN_BOOST_ERROR_SERVICE_UNAVAILABLE = 1017230004, FILE_SCAN_BOOST_ERROR_FORMAT_NOT_SUPPORTED = 1017230005 } | 文件扫描加速功能返回的所有错误码的枚举。 |
+| [OpenFileBoost_AppState](#openfileboost_appstate) { OPEN_FILE_BOOST_APP_STATE_ALLOW_PRELOAD = 0, OPEN_FILE_BOOST_APP_STATE_REJECT_PRELOAD = 1, OPEN_FILE_BOOST_APP_STATE_FOREVER_REJECT_PRELOAD = 2, OPEN_FILE_BOOST_APP_STATE_EXCEL_TRANSACTION = 3 } | App状态，用于指示App当前允许、拒绝或永久拒绝系统推荐预加载文件。 |
+| [FileCacheBoost_ErrCode](#filecacheboost_errcode) { FILE_CACHE_BOOST_SUCCESS = 0, FILE_CACHE_BOOST_ERROR_INVALID_PARAM = 401, FILE_CACHE_BOOST_ERROR_NOT_SUPPORTED = 801, FILE_CACHE_BOOST_ERROR_NOMEM = 1017220001, FILE_CACHE_BOOST_ERROR_INTERNAL_ERROR = 1017220002, FILE_CACHE_BOOST_ERROR_KEY_NOT_FOUND = 1017220003, FILE_CACHE_BOOST_ERROR_KEY_EXIST = 1017220004, FILE_CACHE_BOOST_ERROR_NOT_DIR = 1017220005, FILE_CACHE_BOOST_ERROR_IO = 1017220006, FILE_CACHE_BOOST_ERROR_IO_CANCELED = 1017220007, FILE_CACHE_BOOST_ERROR_NOT_INITIALIZED = 1017220008, FILE_CACHE_BOOST_ERROR_EXCEED_LIMIT = 1017220009, FILE_CACHE_BOOST_ERROR_IO_CANCEL_FAILED = 1017220010 } | 文件缓存加速相关的错误码定义。 |
+| [FileCacheBoost_CbErrCode](#filecacheboost_cberrcode) { FILE_CACHE_BOOST_CALLBACK_SUCCESS = 0, FILE_CACHE_BOOST_CALLBACK_FAILURE = 1017221001, FILE_CACHE_BOOST_CALLBACK_IO_CANCELED = 1017221002 } | 回调函数[DeserializeFunc](#deserializefunc)和[SerializeFunc](#serializefunc)的错误码定义，应用程序将回调函数的执行结果返回给系统。 |
+| [FileScanBoost_ErrCode](#filescanboost_errcode) { FILE_SCAN_BOOST_SUCCESS = 0, FILE_SCAN_BOOST_ERROR_PERMISSION_NOT_GRANTED = 201, FILE_SCAN_BOOST_ERROR_INVALID_PARAM = 401, FILE_SCAN_BOOST_ERROR_CAPABILITY_NOT_SUPPORTED = 801, FILE_SCAN_BOOST_ERROR_INTERNAL = 1017230001, FILE_SCAN_BOOST_ERROR_NOT_REGISTERED = 1017230002, FILE_SCAN_BOOST_ERROR_ALREADY_REGISTERED = 1017230003, FILE_SCAN_BOOST_ERROR_SERVICE_UNAVAILABLE = 1017230004, FILE_SCAN_BOOST_ERROR_FORMAT_NOT_SUPPORTED = 1017230005 } | 文件扫描加速功能返回的所有错误码的枚举。 |
 | [FileScanBoost_CbErrCode](#filescanboost_cberrcode) { FILE_SCAN_BOOST_CALLBACK_SUCCESS = 0, FILE_SCAN_BOOST_CALLBACK_ERROR_INTERNAL = 1017240001, FILE_SCAN_BOOST_CALLBACK_ERROR_FORMAT_NOT_SUPPORTED = 1017240002 } | 文件扫描回调特定错误码的枚举。 |
 | [FileScanBoost_ScanState](#filescanboost_scanstate) { FILE_SCAN_BOOST_SCAN_STATE_SUCCESS = 0, FILE_SCAN_BOOST_SCAN_STATE_PROCESS_ERROR = 1, FILE_SCAN_BOOST_SCAN_STATE_FILE_ERROR = 2 } | 文件扫描后扫描状态的枚举。 |
 
@@ -72,11 +70,12 @@ Preview Kit（文件预览服务）为应用提供便捷的文件快速预览服
 
 | 名称 | 描述 |
 | --- | --- |
+| bool [HMS_Preview_FileBoost_IsSupported](#hms_preview_fileboost_issupported) (void) | 查询当前设备是否支持文件打开加速功能。建议使用本接口检查，确认设备支持文件打开加速功能后，再使用其他文件打开加速接口如[HMS_OpenFileBoost_RegisterFilePreload](#hms_openfileboost_registerfilepreload)、[HMS_Preview_FileScanBoost_RegisterFileScan](#hms_preview_filescanboost_registerfilescan)等。 |
 | [OpenFileBoost_ErrCode](#openfileboost_errcode) [HMS_OpenFileBoost_GetFdFromPreloadFileInfo](#hms_openfileboost_getfdfrompreloadfileinfo) (void *fileInfo, int32_t *fd) | 获取文件描述符信息。 |
 | [OpenFileBoost_ErrCode](#openfileboost_errcode) [HMS_OpenFileBoost_GetSandboxPathFromPreloadFileInfo](#hms_openfileboost_getsandboxpathfrompreloadfileinfo) (void *fileInfo, char *sandboxPath, int32_t pathLen) | 获取沙箱路径信息。 |
 | [OpenFileBoost_ErrCode](#openfileboost_errcode) [HMS_OpenFileBoost_RegisterFilePreload](#hms_openfileboost_registerfilepreload) ([HMS_OpenFileBoost_QueryAppState](#hms_openfileboost_queryappstate) queryAppState, [HMS_OpenFileBoost_OnFilePreload](#hms_openfileboost_onfilepreload) filePreload, [HMS_OpenFileBoost_OnFilePreload](#hms_openfileboost_onfilepreload) cancelFilePreload) | 应用使用本接口向系统注册文件预加载回调。 后续，系统预测用户可能打开的文件时，先调用queryAppState来向应用查询当前是否可以推荐预加载的文件。如果应用通过queryAppState返回允许推荐，则系统通过调用filePreload推荐一个文件，供应用进行预加载操作。 在某些特定情况下，例如系统可用内存不足、有其他文件更有可能被用户打开、或其他不适合文件保持预加载状态的条件发生，系统会通过调用cancelFilePreload来取消部分文件的预加载。 |
 | [OpenFileBoost_ErrCode](#openfileboost_errcode) [HMS_OpenFileBoost_UnregisterFilePreload](#hms_openfileboost_unregisterfilepreload) (void) | 取消注册预加载回调。 |
-| [OpenFileBoost_ErrCode](#openfileboost_errcode) [HMS_OpenFileBoost_NotifyPreloadHit](#hms_openfileboost_notifypreloadhit) (int32_t fd, char *sandboxPath, int32_t pathLen) | 当用户打开预加载文件时, App调用该接口通知系统预加载命中, 这将有助于提高预加载文件预测的准确性。 |
+| [OpenFileBoost_ErrCode](#openfileboost_errcode) [HMS_OpenFileBoost_NotifyPreloadHit](#hms_openfileboost_notifypreloadhit) (int32_t fd, char *sandboxPath, int32_t pathLen) | 当用户打开预加载文件时，App调用该接口通知系统预加载命中， 这将有助于提高预加载文件预测的准确性。 |
 | [FileScanBoost_ErrCode](#filescanboost_errcode) [HMS_Preview_FileScanBoost_ScanOptionCreate](#hms_preview_filescanboost_scanoptioncreate) ([FileScanBoost_ScanOption](#filescanboost_scanoption) **outOption) | 创建FileScanBoost_ScanOption实例。 |
 | void [HMS_Preview_FileScanBoost_ScanOptionDestroy](#hms_preview_filescanboost_scanoptiondestroy) ([FileScanBoost_ScanOption](#filescanboost_scanoption) *option) | 销毁FileScanBoost_ScanOption实例。 |
 | [FileScanBoost_ErrCode](#filescanboost_errcode) [HMS_Preview_FileScanBoost_ScanOptionAddSupportFile](#hms_preview_filescanboost_scanoptionaddsupportfile) ([FileScanBoost_ScanOption](#filescanboost_scanoption) *option, const char *suffix, uint32_t suffixLen) | 向扫描选项添加支持的文件类型。 |
@@ -91,22 +90,23 @@ Preview Kit（文件预览服务）为应用提供便捷的文件快速预览服
 | [OpenFileBoost_ErrCode](#openfileboost_errcode) [HMS_Preview_OpenFileBoost_SupportFileCreate](#hms_preview_openfileboost_supportfilecreate) (const char *suffix, uint32_t suffixLen, uint64_t lowerLimitKb, uint64_t upperLimitKb, [OpenFileBoost_SupportFile](#openfileboost_supportfile) **outSupportFile) | 创建[OpenFileBoost_SupportFile](#openfileboost_supportfile)。 |
 | [OpenFileBoost_ErrCode](#openfileboost_errcode) [HMS_Preview_OpenFileBoost_SupportFileDestroy](#hms_preview_openfileboost_supportfiledestroy) ([OpenFileBoost_SupportFile](#openfileboost_supportfile) *supportFile) | 销毁[OpenFileBoost_SupportFile](#openfileboost_supportfile)。 |
 | [OpenFileBoost_ErrCode](#openfileboost_errcode) [HMS_Preview_OpenFileBoost_OptionsCreate](#hms_preview_openfileboost_optionscreate) ([OpenFileBoost_Options](#openfileboost_options) **outOptions) | 创建一个空的[OpenFileBoost_Options](#openfileboost_options)。 使用[HMS_Preview_OpenFileBoost_OptionsAddSupportFile](#hms_preview_openfileboost_optionsaddsupportfile)添加文件。 |
-| [OpenFileBoost_ErrCode](#openfileboost_errcode) [HMS_Preview_OpenFileBoost_OptionsAddSupportFile](#hms_preview_openfileboost_optionsaddsupportfile) ([OpenFileBoost_Options](#openfileboost_options) *options, const [OpenFileBoost_SupportFile](#openfileboost_supportfile) *supportFile) | 向[OpenFileBoost_Options](#openfileboost_options)添加支持预加载的文件类型。 |
+| [OpenFileBoost_ErrCode](#openfileboost_errcode) [HMS_Preview_OpenFileBoost_OptionsAddSupportFile](#hms_preview_openfileboost_optionsaddsupportfile) ([OpenFileBoost_Options](#openfileboost_options) *options, const [OpenFileBoost_SupportFile](#openfileboost_supportfile) *supportFile) | 向[OpenFileBoost_Options](#openfileboost_options)添加支持预加载的文件类型列表。 |
 | [OpenFileBoost_ErrCode](#openfileboost_errcode) [HMS_Preview_OpenFileBoost_OptionsDestroy](#hms_preview_openfileboost_optionsdestroy) ([OpenFileBoost_Options](#openfileboost_options) *options) | 销毁[OpenFileBoost_Options](#openfileboost_options)。 |
 | [OpenFileBoost_ErrCode](#openfileboost_errcode) [HMS_Preview_OpenFileBoost_RegisterFilePreloadWithOption](#hms_preview_openfileboost_registerfilepreloadwithoption) (HMS_OpenFileBoost_QueryAppState queryAppState, HMS_OpenFileBoost_OnFilePreload filePreload, HMS_OpenFileBoost_OnFilePreload cancelFilePreload, [OpenFileBoost_Options](#openfileboost_options) *options) | 注册预加载回调，允许应用传入支持预加载的文件信息。 |
 | bool [HMS_Preview_OpenFileBoost_IsEnabled](#hms_preview_openfileboost_isenabled) (void) | 查询应用加速特性是否可用。 |
 | [OpenFileBoost_ErrCode](#openfileboost_errcode) [HMS_Preview_OpenFileBoost_FileOperationInfoCreate](#hms_preview_openfileboost_fileoperationinfocreate) (const char *path, uint32_t pathLen, const char *operation, uint32_t operationLen, [OpenFileBoost_FileOperationInfo](#openfileboost_fileoperationinfo) **outFileOperationInfo) | 创建[OpenFileBoost_FileOperationInfo](#openfileboost_fileoperationinfo)。 |
 | [OpenFileBoost_ErrCode](#openfileboost_errcode) [HMS_Preview_OpenFileBoost_FileOperationInfoDestroy](#hms_preview_openfileboost_fileoperationinfodestroy) ([OpenFileBoost_FileOperationInfo](#openfileboost_fileoperationinfo) *fileOperationInfo) | 销毁[OpenFileBoost_FileOperationInfo](#openfileboost_fileoperationinfo)。 |
 | [OpenFileBoost_ErrCode](#openfileboost_errcode) [HMS_Preview_OpenFileBoost_NotifyFileOperation](#hms_preview_openfileboost_notifyfileoperation) ([OpenFileBoost_FileOperationInfo](#openfileboost_fileoperationinfo) *fileOperationInfo) | 当用户对文件进行操作时，App调用该接口通知系统文件操作类型，这将有助于提高预加载文件预测的准确性。 |
+| bool [HMS_Preview_FileCacheBoost_IsSupported](#hms_preview_filecacheboost_issupported) (void) | 查询当前设备是否支持文件缓存加速功能。建议使用本接口检查，确认设备支持文件缓存加速功能后，再使用其他文件缓存加速接口如[HMS_FileCacheBoost_Init](#hms_filecacheboost_init)等。 |
 | [FileCacheBoost_ErrCode](#filecacheboost_errcode) [HMS_FileCacheBoost_Init](#hms_filecacheboost_init) (const char *path, size_t pathLen, uint32_t cacheUpperLimitMb, const char *dbName, size_t dbNameLen) | 初始化缓存路径、缓存容量上限、数据库名称。系统保证了线程并发安全控制，如需支持多进程并发场景，建议各进程使用不同的数据库文件名以保证访问安全性。 缓存路径：开发者传入相对路径，缓存保存在应用沙箱目录下。 缓存容量上限：当系统检测到缓存总量超出设定上限后，将根据缓存淘汰策略进行容量管控，删除相应的缓存以释放空间。 |
 | [FileCacheBoost_ErrCode](#filecacheboost_errcode) [HMS_FileCacheBoost_AddObjectByKey](#hms_filecacheboost_addobjectbykey) (const uint8_t *key, size_t keyLen, const uint8_t *data, size_t dataLen, uint32_t weight) | 创建并添加一个缓存对象至文件缓存。 该函数通过指定的唯一标识符 (key) 将数据缓存至文件缓存系统中，便于后续快速访问。建议开发者合理设计和管理key值，确保其在不同上下文中的唯一性和准确性。 当缓存不再需要时，推荐开发者主动调用 [HMS_FileCacheBoost_RemoveObjectByKey](#hms_filecacheboost_removeobjectbykey)删除对应的缓存项，以避免资源浪费。 若不主动删除，系统将在缓存容量不足时，依据系统策略进行清除。开发者若想要对key对应的缓存内容做修改，需要先调用[HMS_FileCacheBoost_RemoveObjectByKey](#hms_filecacheboost_removeobjectbykey)删除之前的key，再重新创建和添加。 |
 | [FileCacheBoost_ErrCode](#filecacheboost_errcode) [HMS_FileCacheBoost_GetObjectByKey](#hms_filecacheboost_getobjectbykey) (const uint8_t *key, size_t keyLen, uint8_t **data, size_t *dataLen) | 根据指定的key查询缓存对象，若存在，则从磁盘中加载缓存对象的内容。调用该函数系统会分配一段内存用于存储缓存数据，作为出参返回给开发者，开发者需在使用完毕后调用[HMS_FileCacheBoost_FreeObject](#hms_filecacheboost_freeobject)显式释放该内存。 |
 | void [HMS_FileCacheBoost_FreeObject](#hms_filecacheboost_freeobject) (uint8_t *data) | 释放调用[HMS_FileCacheBoost_GetObjectByKey](#hms_filecacheboost_getobjectbykey)或[HMS_FileCacheBoost_GetSerialObjectByKey](#hms_filecacheboost_getserialobjectbykey)分配的内存，建议开发者不再使用该内存时，及时调用此函数进行释放，避免造成内存泄漏。 |
-| [FileCacheBoost_ErrCode](#filecacheboost_errcode) [HMS_FileCacheBoost_AddSerialObjectByKey](#hms_filecacheboost_addserialobjectbykey) (const uint8_t *key, size_t keyLen, [SerializeFunc](#serializefunc) func, const void *object, uint32_t weight) | 创建一个复杂类型对象的缓存项，通过传入自定义的序列化函数[SerializeFunc](#serializefunc)对该象进行序列化处理，以便将其存储至磁盘并支持后续恢复。 例如图像数据需要同时保存其元数据和像素数据，才能实现完整的缓存与读取过程。序列化和反序列化会占用内存，请开发者控制object大小，降低内存压力。 |
+| [FileCacheBoost_ErrCode](#filecacheboost_errcode) [HMS_FileCacheBoost_AddSerialObjectByKey](#hms_filecacheboost_addserialobjectbykey) (const uint8_t *key, size_t keyLen, [SerializeFunc](#serializefunc) func, const void *object, uint32_t weight) | 创建一个复杂类型对象的缓存项，通过传入自定义的序列化函数[SerializeFunc](#serializefunc)将该对象进行序列化处理，以便将其存储至磁盘并支持后续恢复。 例如图像数据需要同时保存其元数据和像素数据，才能实现完整的缓存与读取过程。序列化和反序列化会占用内存，请开发者控制object大小，降低内存压力。 |
 | [FileCacheBoost_ErrCode](#filecacheboost_errcode) [HMS_FileCacheBoost_GetSerialObjectByKey](#hms_filecacheboost_getserialobjectbykey) (const uint8_t *key, size_t keyLen, [DeserializeFunc](#deserializefunc) func, void **object) | 根据指定的key值获取复杂类型缓存对象，并通过传入的反序列化函数[DeserializeFunc](#deserializefunc)将其还原为原始数据，从而获得完整的对象内容。 调用该函数系统会分配一段内存用于存储缓存数据，作为出参返回给开发者，开发者需在使用完毕后调用[HMS_FileCacheBoost_FreeObject](#hms_filecacheboost_freeobject)显式释放该内存。 |
 | [FileCacheBoost_ErrCode](#filecacheboost_errcode) [HMS_FileCacheBoost_RemoveObjectByKey](#hms_filecacheboost_removeobjectbykey) (const uint8_t *key, size_t keyLen) | 根据指定的key删除对应的缓存对象。 |
 | [FileCacheBoost_ErrCode](#filecacheboost_errcode) [HMS_FileCacheBoost_CancelOngoingIOByKey](#hms_filecacheboost_cancelongoingiobykey) (const uint8_t *key, size_t keyLen) | 取消key对应的缓存对象当前正在进行的I/O操作。当开发者需要释放数据对象时，应调用本函数，防止有其他线程对该数据对象进行添加缓存对象或者获取缓存对象的操作。若该对象正处于缓存过程中，则操作将被中止；若已缓存完成，则此函数不做任何处理。 当该函数返回 FILE_CACHE_BOOST_SUCCESS，开发者可以立即释放数据对象；当返回FILE_CACHE_BOOST_ERROR_IO_CANCEL_FAILED，表示当前没有正在执行的 key 需要被取消，开发者需要确认该 key 对应的动作执行完成或无需执行后再释放数据对象。 例如当一个线程尝试删除数据对象的同时，有其他线程对其进行[HMS_FileCacheBoost_AddObjectByKey](#hms_filecacheboost_addobjectbykey)操作， 调用本函数可确保缓存对象的安全性，避免引发数据竞争问题。 |
-| [FileCacheBoost_ErrCode](#filecacheboost_errcode) [HMS_FileCacheBoost_ClearAllCache](#hms_filecacheboost_clearallcache) (void) | 清理所有的缓存对象。 该函数会释放通过[HMS_FileCacheBoost_AddObjectByKey](#hms_filecacheboost_addobjectbykey)和[HMS_FileCacheBoost_AddSerialObjectByKey](#hms_filecacheboost_addserialobjectbykey)创建的所有缓存对象 |
+| [FileCacheBoost_ErrCode](#filecacheboost_errcode) [HMS_FileCacheBoost_ClearAllCache](#hms_filecacheboost_clearallcache) (void) | 清理所有的缓存对象。 该函数会释放通过[HMS_FileCacheBoost_AddObjectByKey](#hms_filecacheboost_addobjectbykey)和[HMS_FileCacheBoost_AddSerialObjectByKey](#hms_filecacheboost_addserialobjectbykey)创建的所有缓存对象。 |
 
 #### 宏定义说明
 
@@ -142,7 +142,9 @@ typedef OpenFileBoost_CbErrCode(*HMS_OpenFileBoost_OnFilePreload) (void *fileInf
 
 返回：
 
-函数执行结果，如果执行成功则返回OPEN_FILE_BOOST_CALLBACK_SUCCESS，如果失败则返回 OPEN_FILE_BOOST_CALLBACK_FAILURE。
+| 类型 | 说明 |
+| --- | --- |
+| [OpenFileBoost_CbErrCode](#openfileboost_cberrcode) | 函数执行结果。 如果执行成功则返回OPEN_FILE_BOOST_CALLBACK_SUCCESS。 如果失败则返回OPEN_FILE_BOOST_CALLBACK_FAILURE。 |
 
 #### [h2]HMS_OpenFileBoost_QueryAppState
 
@@ -157,7 +159,9 @@ typedef OpenFileBoost_AppState(*HMS_OpenFileBoost_QueryAppState) (void)
 
 返回：
 
-如果App允许推荐文件，应该返回OPEN_FILE_BOOST_APP_STATE_ALLOW_PRELOAD，系统接下来将调用 [HMS_OpenFileBoost_OnFilePreload](#hms_openfileboost_onfilepreload)去推荐文件进行预加载。 如果App拒绝此次推荐，应该返回OPEN_FILE_BOOST_APP_STATE_REJECT_PRELOAD。如果App在本次注册期间不想再收到推荐，应该返回OPEN_FILE_BOOST_APP_STATE_FOREVER_REJECT_PRELOAD，然后尽快调用HMS_OpenFileBoost_UnregisterFilePreloadCb来取消注册。
+| 类型 | 说明 |
+| --- | --- |
+| [OpenFileBoost_AppState](#openfileboost_appstate) | 如果App允许推荐文件，应该返回OPEN_FILE_BOOST_APP_STATE_ALLOW_PRELOAD，系统接下来将调用 [HMS_OpenFileBoost_OnFilePreload](#hms_openfileboost_onfilepreload)去推荐文件进行预加载。 如果App拒绝此次推荐，应该返回OPEN_FILE_BOOST_APP_STATE_REJECT_PRELOAD。 如果App在本次注册期间不想再收到推荐，应该返回OPEN_FILE_BOOST_APP_STATE_FOREVER_REJECT_PRELOAD，然后尽快调用HMS_OpenFileBoost_UnregisterFilePreloadCb来取消注册。 |
 
 #### [h2]FileScanBoost_ScanOption
 
@@ -188,7 +192,7 @@ typedef FileScanBoost_CbErrCode(* HMS_Preview_FileScanBoost_OnFileScan) (int32_t
 ```
  描述
 
-文件扫描回调通知的函数指针类型。 系统调用此回调来发送扫描任务。此回调方法与扫描任务执行是异步的， 应用程序应在收到扫描任务后立即返回回调返回值，而不应阻塞回调。 并且扫描任务完成后的最终结果应使用[HMS_Preview_FileScanBoost_ReportScanResult](#hms_preview_filescanboost_reportscanresult)报告。
+文件扫描回调通知的函数指针类型。 系统调用此回调来发送扫描任务。此回调方法与扫描任务执行是异步的， 应用程序应在收到扫描任务后立即返回回调返回值，而不应阻塞回调。并且扫描任务完成后的最终结果应使用[HMS_Preview_FileScanBoost_ReportScanResult](#hms_preview_filescanboost_reportscanresult)报告。
 
 起始版本： 26.0.0
 
@@ -202,7 +206,9 @@ typedef FileScanBoost_CbErrCode(* HMS_Preview_FileScanBoost_OnFileScan) (int32_t
 
 返回：
 
-回调错误码，应用接受扫描任务或者返回错误。FILE_SCAN_BOOST_CALLBACK_SUCCESS表示接受扫描任务，否则表示不接受。
+| 类型 | 说明 |
+| --- | --- |
+| [FileScanBoost_CbErrCode](#filescanboost_cberrcode) | 回调错误码。 应用接受扫描任务或者返回错误。 FILE_SCAN_BOOST_CALLBACK_SUCCESS表示接受扫描任务，否则表示不接受。 |
 
 #### [h2]OpenFileBoost_FileOperationInfo
 
@@ -250,7 +256,7 @@ typedef struct OpenFileBoost_SupportFile OpenFileBoost_SupportFile
 ```
  描述
 
-应用支持预加载的文件信息，用于描述一组符合预加载条件的文件特征。 开发者可以使用[HMS_Preview_OpenFileBoost_SupportFileCreate](#hms_preview_openfileboost_supportfilecreate)创建该结构体， 配置哪些类型的文件可以被系统预加载。
+应用支持预加载的文件信息，用于描述一组符合预加载条件的文件特征。 开发者可以使用[HMS_Preview_OpenFileBoost_SupportFileCreate](#hms_preview_openfileboost_supportfilecreate)创建该结构体，配置哪些类型的文件可以被系统预加载。
 
 起始版本： 26.0.0
 
@@ -286,7 +292,9 @@ typedef FileCacheBoost_CbErrCode(*SerializeFunc) (const void *object, WriteFunc 
 
 返回：
 
-函数执行成功则返回FILE_CACHE_BOOST_CALLBACK_SUCCESS，函数执行失败则返回FILE_CACHE_BOOST_CALLBACK_FAILURE，其他错误详见[FileCacheBoost_CbErrCode](#filecacheboost_cberrcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [FileCacheBoost_CbErrCode](#filecacheboost_cberrcode) | 函数执行结果。 函数执行成功则返回FILE_CACHE_BOOST_CALLBACK_SUCCESS。 函数执行失败则返回FILE_CACHE_BOOST_CALLBACK_FAILURE。 其他错误详见[FileCacheBoost_CbErrCode](#filecacheboost_cberrcode)。 |
 
 #### [h2]WriteFunc
 
@@ -309,7 +317,9 @@ typedef FileCacheBoost_ErrCode(*WriteFunc) (const void *buffer, size_t bufferLen
 
 返回：
 
-如果函数执行成功，则返回FILE_CACHE_BOOST_SUCCESS，如果因数据对象内存被释放，导致写入缓存对象任务无法执行则返回FILE_CACHE_BOOST_ERROR_IO_CANCELED，其他错误详见[FileCacheBoost_ErrCode](#filecacheboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [FileCacheBoost_ErrCode](#filecacheboost_errcode) | 函数执行结果。 如果函数执行成功，则返回FILE_CACHE_BOOST_SUCCESS。 如果因数据对象内存被释放，导致写入缓存对象任务无法执行则返回FILE_CACHE_BOOST_ERROR_IO_CANCELED。 其他错误详见[FileCacheBoost_ErrCode](#filecacheboost_errcode)。 |
 
 #### [h2]DeserializeFunc
 
@@ -332,7 +342,9 @@ typedef FileCacheBoost_CbErrCode(*DeserializeFunc) (void **object, ReadFunc read
 
 返回：
 
-函数执行成功则返回FILE_CACHE_BOOST_CALLBACK_SUCCESS，函数执行失败则返回FILE_CACHE_BOOST_CALLBACK_FAILURE，其他错误详见[FileCacheBoost_CbErrCode](#filecacheboost_cberrcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [FileCacheBoost_CbErrCode](#filecacheboost_cberrcode) | 函数执行结果。 函数执行成功则返回FILE_CACHE_BOOST_CALLBACK_SUCCESS。 函数执行失败则返回FILE_CACHE_BOOST_CALLBACK_FAILURE。 其他错误详见[FileCacheBoost_CbErrCode](#filecacheboost_cberrcode)。 |
 
 #### [h2]ReadFunc
 
@@ -355,7 +367,9 @@ typedef FileCacheBoost_ErrCode(*ReadFunc) (void *buffer, size_t *bufferLen, stru
 
 返回：
 
-如果函数执行成功，则返回FILE_CACHE_BOOST_SUCCESS，如果因数据对象内存被释放，导致读取缓存对象任务无法执行则返回FILE_CACHE_BOOST_ERROR_IO_CANCELED，其他错误详见[FileCacheBoost_ErrCode](#filecacheboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [FileCacheBoost_ErrCode](#filecacheboost_errcode) | 函数执行结果。 如果函数执行成功，则返回FILE_CACHE_BOOST_SUCCESS。 如果因数据对象内存被释放，导致读取缓存对象任务无法执行则返回FILE_CACHE_BOOST_ERROR_IO_CANCELED。 其他错误详见[FileCacheBoost_ErrCode](#filecacheboost_errcode)。 |
 
 #### 枚举类型说明
 
@@ -372,10 +386,10 @@ App状态，用于指示App当前是否允许系统推荐预加载文件。
 
 | 枚举值 | 描述 |
 | --- | --- |
-| OPEN_FILE_BOOST_APP_STATE_ALLOW_PRELOAD | 当前允许推荐预加载文件。 |
-| OPEN_FILE_BOOST_APP_STATE_REJECT_PRELOAD | 当前不允许推荐预加载文件。 |
-| OPEN_FILE_BOOST_APP_STATE_FOREVER_REJECT_PRELOAD | 这次注册期间永远不允许推荐预加载文件。 |
-| OPEN_FILE_BOOST_APP_STATE_EXCEL_TRANSACTION | 应用程序正在执行与excel文件相关的独占任务。**起始版本：** 26.0.0 |
+| OPEN_FILE_BOOST_APP_STATE_ALLOW_PRELOAD = 0 | 当前允许推荐预加载文件。 |
+| OPEN_FILE_BOOST_APP_STATE_REJECT_PRELOAD = 1 | 当前不允许推荐预加载文件。 |
+| OPEN_FILE_BOOST_APP_STATE_FOREVER_REJECT_PRELOAD = 2 | 这次注册期间永远不允许推荐预加载文件。 |
+| OPEN_FILE_BOOST_APP_STATE_EXCEL_TRANSACTION = 3 | 应用程序正在执行与excel文件相关的独占任务。**起始版本：** 26.0.0 |
 
 #### [h2]OpenFileBoost_CbErrCode
 
@@ -390,8 +404,8 @@ enum OpenFileBoost_CbErrCode
 
 | 枚举值 | 描述 |
 | --- | --- |
-| OPEN_FILE_BOOST_CALLBACK_SUCCESS | 回调函数执行成功。 |
-| OPEN_FILE_BOOST_CALLBACK_FAILURE | 回调函数执行失败。 |
+| OPEN_FILE_BOOST_CALLBACK_SUCCESS = 0 | 回调函数执行成功。 |
+| OPEN_FILE_BOOST_CALLBACK_FAILURE = 1017210000 | 回调函数执行失败。 |
 
 #### [h2]OpenFileBoost_ErrCode
 
@@ -406,14 +420,14 @@ enum OpenFileBoost_ErrCode
 
 | 枚举值 | 描述 |
 | --- | --- |
-| OPEN_FILE_BOOST_SUCCESS | 成功。 |
-| OPEN_FILE_BOOST_PERMISSION_NOT_GRANTED | 未授权。 |
-| OPEN_FILE_BOOST_INVALID_PARAM | 无效输入参数。 |
-| OPEN_FILE_BOOST_CAPABILITY_NOT_SUPPORTED | 该设备不支持此API。**起始版本：** 26.0.0 |
-| OPEN_FILE_BOOST_INTERNAL_ERROR | 内部错误。 |
-| OPEN_FILE_BOOST_INSUFFICIENT_BUFFER | 传入的缓冲区的长度不足。 |
-| OPEN_FILE_BOOST_SERVICE_UNAVAILABLE | 服务不可用。 |
-| OPEN_FILE_BOOST_NO_MEMORY | 内存不足。 |
+| OPEN_FILE_BOOST_SUCCESS = 0 | 成功。 |
+| OPEN_FILE_BOOST_PERMISSION_NOT_GRANTED = 201 | 未授权。 |
+| OPEN_FILE_BOOST_INVALID_PARAM = 401 | 无效输入参数。 |
+| OPEN_FILE_BOOST_CAPABILITY_NOT_SUPPORTED = 801 | 该设备不支持此API。**起始版本：** 26.0.0 |
+| OPEN_FILE_BOOST_INTERNAL_ERROR = 1017200001 | 内部错误。 |
+| OPEN_FILE_BOOST_INSUFFICIENT_BUFFER = 1017200002 | 传入的缓冲区的长度不足。 |
+| OPEN_FILE_BOOST_SERVICE_UNAVAILABLE = 1017200003 | 服务不可用。 |
+| OPEN_FILE_BOOST_NO_MEMORY = 1017200004 | 内存不足。 |
 
 #### [h2]FileScanBoost_CbErrCode
 
@@ -428,9 +442,9 @@ enum FileScanBoost_CbErrCode
 
 | 枚举值 | 描述 |
 | --- | --- |
-| FILE_SCAN_BOOST_CALLBACK_SUCCESS | 回调成功完成。 |
-| FILE_SCAN_BOOST_CALLBACK_ERROR_INTERNAL | 回调内部错误。 |
-| FILE_SCAN_BOOST_CALLBACK_ERROR_FORMAT_NOT_SUPPORTED | 不支持扫描此文件类型。 |
+| FILE_SCAN_BOOST_CALLBACK_SUCCESS = 0 | 回调成功完成。 |
+| FILE_SCAN_BOOST_CALLBACK_ERROR_INTERNAL = 1017240001 | 回调内部错误。 |
+| FILE_SCAN_BOOST_CALLBACK_ERROR_FORMAT_NOT_SUPPORTED = 1017240002 | 不支持扫描此文件类型。 |
 
 #### [h2]FileScanBoost_ErrCode
 
@@ -445,15 +459,15 @@ enum FileScanBoost_ErrCode
 
 | 枚举值 | 描述 |
 | --- | --- |
-| FILE_SCAN_BOOST_SUCCESS | 操作成功完成。 |
-| FILE_SCAN_BOOST_ERROR_PERMISSION_NOT_GRANTED | 未授予文件预加载权限。 |
-| FILE_SCAN_BOOST_ERROR_INVALID_PARAM | 提供的参数无效。 |
-| FILE_SCAN_BOOST_ERROR_CAPABILITY_NOT_SUPPORTED | 该设备不支持此API。 |
-| FILE_SCAN_BOOST_ERROR_INTERNAL | 内部系统错误。 |
-| FILE_SCAN_BOOST_ERROR_NOT_REGISTERED | 未注册扫描能力回调。 |
-| FILE_SCAN_BOOST_ERROR_ALREADY_REGISTERED | 扫描能力回调已注册。 |
-| FILE_SCAN_BOOST_ERROR_SERVICE_UNAVAILABLE | 服务不可用。 |
-| FILE_SCAN_BOOST_ERROR_FORMAT_NOT_SUPPORTED | 文件格式不支持。 |
+| FILE_SCAN_BOOST_SUCCESS = 0 | 操作成功完成。 |
+| FILE_SCAN_BOOST_ERROR_PERMISSION_NOT_GRANTED = 201 | 未授予文件预加载权限。 |
+| FILE_SCAN_BOOST_ERROR_INVALID_PARAM = 401 | 提供的参数无效。 |
+| FILE_SCAN_BOOST_ERROR_CAPABILITY_NOT_SUPPORTED = 801 | 该设备不支持此API。 |
+| FILE_SCAN_BOOST_ERROR_INTERNAL = 1017230001 | 内部系统错误。 |
+| FILE_SCAN_BOOST_ERROR_NOT_REGISTERED = 1017230002 | 未注册扫描能力回调。 |
+| FILE_SCAN_BOOST_ERROR_ALREADY_REGISTERED = 1017230003 | 扫描能力回调已注册。 |
+| FILE_SCAN_BOOST_ERROR_SERVICE_UNAVAILABLE = 1017230004 | 服务不可用。 |
+| FILE_SCAN_BOOST_ERROR_FORMAT_NOT_SUPPORTED = 1017230005 | 文件格式不支持。 |
 
 #### [h2]FileScanBoost_ScanState
 
@@ -468,9 +482,9 @@ enum FileScanBoost_ScanState
 
 | 枚举值 | 描述 |
 | --- | --- |
-| FILE_SCAN_BOOST_SCAN_STATE_SUCCESS | 扫描成功完成。 |
-| FILE_SCAN_BOOST_SCAN_STATE_PROCESS_ERROR | 扫描操作发生错误。 |
-| FILE_SCAN_BOOST_SCAN_STATE_FILE_ERROR | 文件无法预加载。 |
+| FILE_SCAN_BOOST_SCAN_STATE_SUCCESS = 0 | 扫描成功完成。 |
+| FILE_SCAN_BOOST_SCAN_STATE_PROCESS_ERROR = 1 | 扫描操作发生错误。 |
+| FILE_SCAN_BOOST_SCAN_STATE_FILE_ERROR = 2 | 文件无法预加载。 |
 
 #### [h2]FileCacheBoost_CbErrCode
 
@@ -518,6 +532,21 @@ enum FileCacheBoost_ErrCode
 
 #### 函数说明
 
+#### [h2]HMS_Preview_FileBoost_IsSupported()
+
+```
+bool HMS_Preview_FileBoost_IsSupported (void)
+```
+ 描述
+
+查询当前设备是否支持文件打开加速功能。建议使用本接口检查，确认设备支持文件打开加速功能后，再使用其他文件打开加速接口如[HMS_OpenFileBoost_RegisterFilePreload](#hms_openfileboost_registerfilepreload)、[HMS_Preview_FileScanBoost_RegisterFileScan](#hms_preview_filescanboost_registerfilescan)等。
+
+起始版本： 26.0.0
+
+返回：
+
+如果当前设备支持文件打开加速功能，则返回true；否则返回false。
+
 #### [h2]HMS_OpenFileBoost_GetFdFromPreloadFileInfo()
 
 ```
@@ -525,7 +554,7 @@ OpenFileBoost_ErrCode HMS_OpenFileBoost_GetFdFromPreloadFileInfo (void * fileInf
 ```
  描述
 
-获取文件描述符信息。
+获取文件描述符信息。使用示例详见[文件打开加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-openfileboost)。
 
 起始版本： 5.0.3(15)
 
@@ -538,7 +567,9 @@ OpenFileBoost_ErrCode HMS_OpenFileBoost_GetFdFromPreloadFileInfo (void * fileInf
 
 返回：
 
-函数执行结果，如果执行成功则返回OPEN_FILE_BOOST_SUCCESS，如果失败将返回具体错误码，详见[OpenFileBoost_ErrCode](#openfileboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [OpenFileBoost_ErrCode](#openfileboost_errcode) | 函数执行结果。 如果执行成功则返回OPEN_FILE_BOOST_SUCCESS。 如果失败将返回具体错误码。详见[OpenFileBoost_ErrCode](#openfileboost_errcode)。 |
 
 #### [h2]HMS_OpenFileBoost_GetSandboxPathFromPreloadFileInfo()
 
@@ -547,7 +578,7 @@ OpenFileBoost_ErrCode HMS_OpenFileBoost_GetSandboxPathFromPreloadFileInfo (void 
 ```
  描述
 
-获取沙箱路径信息。
+获取沙箱路径信息。使用示例详见[文件打开加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-openfileboost)。
 
 起始版本： 5.0.3(15)
 
@@ -561,7 +592,9 @@ OpenFileBoost_ErrCode HMS_OpenFileBoost_GetSandboxPathFromPreloadFileInfo (void 
 
 返回：
 
-函数执行结果，如果执行成功则返回OPEN_FILE_BOOST_SUCCESS，如果传入的内存缓冲区太小，系统将返回OPEN_FILE_BOOST_INSUFFICIENT_BUFFER，其他错误详见[OpenFileBoost_ErrCode](#openfileboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [OpenFileBoost_ErrCode](#openfileboost_errcode) | 函数执行结果。 如果执行成功则返回OPEN_FILE_BOOST_SUCCESS。 如果传入的内存缓冲区太小，系统将返回OPEN_FILE_BOOST_INSUFFICIENT_BUFFER。 其他错误详见[OpenFileBoost_ErrCode](#openfileboost_errcode)。 |
 
 #### [h2]HMS_OpenFileBoost_NotifyPreloadHit()
 
@@ -570,7 +603,7 @@ OpenFileBoost_ErrCode HMS_OpenFileBoost_NotifyPreloadHit (int32_t fd, char * san
 ```
  描述
 
-当用户打开预加载文件时，App调用该接口通知系统预加载命中，这将有助于提高预加载文件预测的准确性。
+当用户打开预加载文件时，App调用该接口通知系统预加载命中，这将有助于提高预加载文件预测的准确性。使用示例详见[文件打开加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-openfileboost)。
 
 起始版本： 5.0.3(15)
 
@@ -580,11 +613,13 @@ OpenFileBoost_ErrCode HMS_OpenFileBoost_NotifyPreloadHit (int32_t fd, char * san
 | --- | --- |
 | fd | 命中文件的文件描述符信息。 |
 | sandboxPath | 命中文件的沙箱路径。 |
-| pathLen | 沙箱路径的长度 |
+| pathLen | 沙箱路径的长度。 |
 
 返回：
 
-函数执行结果，如果执行成功则返回OPEN_FILE_BOOST_SUCCESS，如果失败将返回具体错误码，详见[OpenFileBoost_ErrCode](#openfileboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [OpenFileBoost_ErrCode](#openfileboost_errcode) | 函数执行结果。 如果执行成功则返回OPEN_FILE_BOOST_SUCCESS。 如果失败将返回具体错误码。详见[OpenFileBoost_ErrCode](#openfileboost_errcode)。 |
 
 #### [h2]HMS_OpenFileBoost_RegisterFilePreload()
 
@@ -597,7 +632,7 @@ OpenFileBoost_ErrCode HMS_OpenFileBoost_RegisterFilePreload (HMS_OpenFileBoost_Q
 
 后续，系统预测用户可能打开的文件时，先调用queryAppState来向应用查询当前是否可以推荐预加载的文件。如果应用通过queryAppState返回允许推荐，则系统通过调用filePreload推荐一个文件，供应用进行预加载操作。
 
-在某些特定情况下，例如系统可用内存不足、有其他文件更有可能被用户打开、或其他不适合文件保持预加载状态的条件发生，系统会通过调用cancelFilePreload来取消部分文件的预加载。
+在某些特定情况下，例如系统可用内存不足、有其他文件更有可能被用户打开、或其他不适合文件保持预加载状态的条件发生，系统会通过调用cancelFilePreload来取消部分文件的预加载。使用示例详见[文件打开加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-openfileboost)。
 
 起始版本： 5.0.3(15)
 
@@ -611,7 +646,9 @@ OpenFileBoost_ErrCode HMS_OpenFileBoost_RegisterFilePreload (HMS_OpenFileBoost_Q
 
 返回：
 
-函数执行结果，如果执行成功则返回OPEN_FILE_BOOST_SUCCESS，如果失败将返回具体错误码，详见[OpenFileBoost_ErrCode](#openfileboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [OpenFileBoost_ErrCode](#openfileboost_errcode) | 函数执行结果。 如果执行成功则返回OPEN_FILE_BOOST_SUCCESS。 如果失败将返回具体错误码。详见[OpenFileBoost_ErrCode](#openfileboost_errcode)。 |
 
 #### [h2]HMS_OpenFileBoost_UnregisterFilePreload()
 
@@ -620,13 +657,15 @@ OpenFileBoost_ErrCode HMS_OpenFileBoost_UnregisterFilePreload (void)
 ```
  描述
 
-取消注册预加载回调。
+取消注册预加载回调。使用示例详见[文件打开加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-openfileboost)。
 
 起始版本： 5.0.3(15)
 
 返回：
 
-函数执行结果，如果执行成功则返回OPEN_FILE_BOOST_SUCCESS，如果失败将返回具体错误码，详见[OpenFileBoost_ErrCode](#openfileboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [OpenFileBoost_ErrCode](#openfileboost_errcode) | 函数执行结果。 如果执行成功则返回OPEN_FILE_BOOST_SUCCESS。 如果失败将返回具体错误码。详见[OpenFileBoost_ErrCode](#openfileboost_errcode)。 |
 
 #### [h2]HMS_Preview_FileScanBoost_RegisterFileScan()
 
@@ -635,7 +674,7 @@ FileScanBoost_ErrCode HMS_Preview_FileScanBoost_RegisterFileScan (HMS_Preview_Fi
 ```
  描述
 
-使用扩展名过滤方式注册多文件类型的回调函数。在上一次注册结果注销之前，请勿重复注册。重复注册将返回错误码FILE_SCAN_BOOST_ERROR_ALREADY_REGISTERED，且仅首次注册的信息生效。
+使用扩展名过滤方式注册多文件类型的回调函数。在上一次注册结果注销之前，请勿重复注册。重复注册将返回错误码FILE_SCAN_BOOST_ERROR_ALREADY_REGISTERED，且仅首次注册的信息生效。使用示例详见[文件打开加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-openfileboost)。
 
 起始版本： 26.0.0
 
@@ -648,7 +687,9 @@ FileScanBoost_ErrCode HMS_Preview_FileScanBoost_RegisterFileScan (HMS_Preview_Fi
 
 返回：
 
-指示注册结果的错误码。详见[FileScanBoost_ErrCode](#filescanboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [FileScanBoost_ErrCode](#filescanboost_errcode) | 函数执行结果。 如果函数执行成功，返回FILE_SCAN_BOOST_SUCCESS。 如果函数执行失败，返回具体错误码。详见[FileScanBoost_ErrCode](#filescanboost_errcode)。 |
 
 #### [h2]HMS_Preview_FileScanBoost_ReportScanResult()
 
@@ -657,7 +698,7 @@ FileScanBoost_ErrCode HMS_Preview_FileScanBoost_ReportScanResult (const char *pa
 ```
  描述
 
-完成扫描后，报告文件扫描操作的扫描结果。
+完成扫描后，报告文件扫描操作的扫描结果。使用示例详见[文件打开加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-openfileboost)。
 
 起始版本： 26.0.0
 
@@ -671,7 +712,9 @@ FileScanBoost_ErrCode HMS_Preview_FileScanBoost_ReportScanResult (const char *pa
 
 返回：
 
-如果函数执行成功，返回FILE_SCAN_BOOST_SUCCESS；如果函数执行失败，返回具体错误码。详见[FileScanBoost_ErrCode](#filescanboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [FileScanBoost_ErrCode](#filescanboost_errcode) | 函数执行结果。 如果函数执行成功，返回FILE_SCAN_BOOST_SUCCESS。 如果函数执行失败，返回具体错误码。详见[FileScanBoost_ErrCode](#filescanboost_errcode)。 |
 
 #### [h2]HMS_Preview_FileScanBoost_ScanOptionAddSupportFile()
 
@@ -680,7 +723,7 @@ FileScanBoost_ErrCode HMS_Preview_FileScanBoost_ScanOptionAddSupportFile (FileSc
 ```
  描述
 
-在注册扫描接口的扫描选项参数中添加支持的文件类型。
+在注册扫描接口的扫描选项参数中添加支持的文件类型。使用示例详见[文件打开加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-openfileboost)。
 
 起始版本： 26.0.0
 
@@ -694,7 +737,9 @@ FileScanBoost_ErrCode HMS_Preview_FileScanBoost_ScanOptionAddSupportFile (FileSc
 
 返回：
 
-如果函数执行成功，返回FILE_SCAN_BOOST_SUCCESS；如果函数执行失败，返回具体错误码。详见[FileScanBoost_ErrCode](#filescanboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [FileScanBoost_ErrCode](#filescanboost_errcode) | 函数执行结果。 如果函数执行成功，返回FILE_SCAN_BOOST_SUCCESS。 如果函数执行失败，返回具体错误码。详见[FileScanBoost_ErrCode](#filescanboost_errcode)。 |
 
 #### [h2]HMS_Preview_FileScanBoost_ScanOptionCreate()
 
@@ -703,7 +748,7 @@ FileScanBoost_ErrCode HMS_Preview_FileScanBoost_ScanOptionCreate (FileScanBoost_
 ```
  描述
 
-创建FileScanBoost_ScanOption实例。应用使用完毕后必须调用[HMS_Preview_FileScanBoost_ScanOptionDestroy](#hms_preview_filescanboost_scanoptiondestroy)来释放该实例。
+创建[FileScanBoost_ScanOption](#filescanboost_scanoption)实例。应用使用完毕后必须调用[HMS_Preview_FileScanBoost_ScanOptionDestroy](#hms_preview_filescanboost_scanoptiondestroy)来释放该实例。使用示例详见[文件打开加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-openfileboost)。
 
 起始版本： 26.0.0
 
@@ -711,11 +756,13 @@ FileScanBoost_ErrCode HMS_Preview_FileScanBoost_ScanOptionCreate (FileScanBoost_
 
 | 名称 | 描述 |
 | --- | --- |
-| outOption | 指向接收所创建选项实例的指针。可参见[FileScanBoost_ScanOption](#filescanboost_scanoption) |
+| outOption | 指向接收所创建选项实例的指针。可参见[FileScanBoost_ScanOption](#filescanboost_scanoption)。 |
 
 返回：
 
-如果函数执行成功，返回FILE_SCAN_BOOST_SUCCESS；如果函数执行失败，返回具体错误码。详见[FileScanBoost_ErrCode](#filescanboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [FileScanBoost_ErrCode](#filescanboost_errcode) | 函数执行结果。 如果函数执行成功，返回FILE_SCAN_BOOST_SUCCESS。 如果函数执行失败，返回具体错误码。详见[FileScanBoost_ErrCode](#filescanboost_errcode)。 |
 
 #### [h2]HMS_Preview_FileScanBoost_ScanOptionDestroy()
 
@@ -724,7 +771,7 @@ void HMS_Preview_FileScanBoost_ScanOptionDestroy (FileScanBoost_ScanOption *opti
 ```
  描述
 
-销毁FileScanBoost_ScanOption实例。
+销毁[FileScanBoost_ScanOption](#filescanboost_scanoption)实例。使用示例详见[文件打开加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-openfileboost)。
 
 起始版本： 26.0.0
 
@@ -732,7 +779,7 @@ void HMS_Preview_FileScanBoost_ScanOptionDestroy (FileScanBoost_ScanOption *opti
 
 | 名称 | 描述 |
 | --- | --- |
-| option | 指向要销毁的选项实例的指针。可参见[FileScanBoost_ScanOption](#filescanboost_scanoption) |
+| option | 指向要销毁的选项实例的指针。可参见[FileScanBoost_ScanOption](#filescanboost_scanoption)。 |
 
 #### [h2]HMS_Preview_FileScanBoost_ScanResultCreate()
 
@@ -741,7 +788,7 @@ FileScanBoost_ErrCode HMS_Preview_FileScanBoost_ScanResultCreate (FileScanBoost_
 ```
  描述
 
-创建FileScanBoost_ScanResult实例。应用使用完毕后必须调用[HMS_Preview_FileScanBoost_ScanResultDestroy](#hms_preview_filescanboost_scanresultdestroy)来释放该实例。
+创建[FileScanBoost_ScanResult](#filescanboost_scanresult)实例。应用使用完毕后必须调用[HMS_Preview_FileScanBoost_ScanResultDestroy](#hms_preview_filescanboost_scanresultdestroy)来释放该实例。使用示例详见[文件打开加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-openfileboost)。
 
 起始版本： 26.0.0
 
@@ -753,7 +800,9 @@ FileScanBoost_ErrCode HMS_Preview_FileScanBoost_ScanResultCreate (FileScanBoost_
 
 返回：
 
-如果函数执行成功，返回FILE_SCAN_BOOST_SUCCESS；如果函数执行失败，返回具体错误码请参见[FileScanBoost_ErrCode](#filescanboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [FileScanBoost_ErrCode](#filescanboost_errcode) | 函数执行结果。 如果函数执行成功，返回FILE_SCAN_BOOST_SUCCESS。 如果函数执行失败，返回具体错误码。请参见[FileScanBoost_ErrCode](#filescanboost_errcode)。 |
 
 #### [h2]HMS_Preview_FileScanBoost_ScanResultDestroy()
 
@@ -762,7 +811,7 @@ void HMS_Preview_FileScanBoost_ScanResultDestroy (FileScanBoost_ScanResult *resu
 ```
  描述
 
-销毁FileScanBoost_ScanResult实例。
+销毁[FileScanBoost_ScanResult](#filescanboost_scanresult)实例。使用示例详见[文件打开加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-openfileboost)。
 
 起始版本： 26.0.0
 
@@ -779,7 +828,7 @@ FileScanBoost_ErrCode HMS_Preview_FileScanBoost_ScanResultSetMaxAtomicTime (File
 ```
  描述
 
-在文件扫描结果中设置最大原子时间，单位为ms。
+在文件扫描结果中设置最大原子时间，单位为ms。使用示例详见[文件打开加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-openfileboost)。
 
 起始版本： 26.0.0
 
@@ -792,7 +841,9 @@ FileScanBoost_ErrCode HMS_Preview_FileScanBoost_ScanResultSetMaxAtomicTime (File
 
 返回：
 
-如果函数执行成功，返回FILE_SCAN_BOOST_SUCCESS；如果函数执行失败，返回具体错误码。详见[FileScanBoost_ErrCode](#filescanboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [FileScanBoost_ErrCode](#filescanboost_errcode) | 函数执行结果。 如果函数执行成功，返回FILE_SCAN_BOOST_SUCCESS。 如果函数执行失败，返回具体错误码。详见[FileScanBoost_ErrCode](#filescanboost_errcode)。 |
 
 #### [h2]HMS_Preview_FileScanBoost_ScanResultSetMemSize()
 
@@ -801,7 +852,7 @@ FileScanBoost_ErrCode HMS_Preview_FileScanBoost_ScanResultSetMemSize (FileScanBo
 ```
  描述
 
-在文件扫描结果中设置内存大小,单位为MB。
+在文件扫描结果中设置内存大小，单位为MB。使用示例详见[文件打开加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-openfileboost)。
 
 起始版本： 26.0.0
 
@@ -814,7 +865,9 @@ FileScanBoost_ErrCode HMS_Preview_FileScanBoost_ScanResultSetMemSize (FileScanBo
 
 返回：
 
-如果函数执行成功，返回FILE_SCAN_BOOST_SUCCESS；如果函数执行失败，返回具体错误码。详见[FileScanBoost_ErrCode](#filescanboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [FileScanBoost_ErrCode](#filescanboost_errcode) | 函数执行结果。 如果函数执行成功，返回FILE_SCAN_BOOST_SUCCESS。 如果函数执行失败，返回具体错误码。详见[FileScanBoost_ErrCode](#filescanboost_errcode)。 |
 
 #### [h2]HMS_Preview_FileScanBoost_ScanResultSetState()
 
@@ -823,7 +876,7 @@ FileScanBoost_ErrCode HMS_Preview_FileScanBoost_ScanResultSetState (FileScanBoos
 ```
  描述
 
-在结果中设置扫描状态。
+在结果中设置扫描状态。使用示例详见[文件打开加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-openfileboost)。
 
 起始版本： 26.0.0
 
@@ -832,11 +885,13 @@ FileScanBoost_ErrCode HMS_Preview_FileScanBoost_ScanResultSetState (FileScanBoos
 | 名称 | 描述 |
 | --- | --- |
 | result | 指向扫描结果实例的指针。 |
-| state | 扫描完成状态。扫描状态请参见[FileScanBoost_ScanState](#filescanboost_scanstate) |
+| state | 扫描完成状态。扫描状态请参见[FileScanBoost_ScanState](#filescanboost_scanstate)。 |
 
 返回：
 
-如果函数执行成功，返回FILE_SCAN_BOOST_SUCCESS；如果函数执行失败，返回具体错误码。详见[FileScanBoost_ErrCode](#filescanboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [FileScanBoost_ErrCode](#filescanboost_errcode) | 函数执行结果。 如果函数执行成功，返回FILE_SCAN_BOOST_SUCCESS。 如果函数执行失败，返回具体错误码。详见[FileScanBoost_ErrCode](#filescanboost_errcode)。 |
 
 #### [h2]HMS_Preview_FileScanBoost_UnregisterFileScan()
 
@@ -845,13 +900,15 @@ FileScanBoost_ErrCode HMS_Preview_FileScanBoost_UnregisterFileScan (void)
 ```
  描述
 
-移除已注册的文件扫描回调函数。注销文件扫描后，该应用程序所有未报告扫描结果的扫描任务均失效。 同时，在发起注销之前，应用程序需要清理未完成的扫描任务。
+移除已注册的文件扫描回调函数。注销文件扫描后，该应用程序所有未报告扫描结果的扫描任务均失效。同时，在发起注销之前，应用程序需要清理未完成的扫描任务。使用示例详见[文件打开加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-openfileboost)。
 
 起始版本： 26.0.0
 
 返回：
 
-如果函数执行成功，返回FILE_SCAN_BOOST_SUCCESS；如果函数执行失败，返回具体错误码。详见[FileScanBoost_ErrCode](#filescanboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [FileScanBoost_ErrCode](#filescanboost_errcode) | 函数执行结果。 如果函数执行成功，返回FILE_SCAN_BOOST_SUCCESS。 如果函数执行失败，返回具体错误码。详见[FileScanBoost_ErrCode](#filescanboost_errcode)。 |
 
 #### [h2]HMS_Preview_OpenFileBoost_FileOperationInfoCreate()
 
@@ -860,7 +917,7 @@ OpenFileBoost_ErrCode HMS_Preview_OpenFileBoost_FileOperationInfoCreate (const c
 ```
  描述
 
-创建[OpenFileBoost_FileOperationInfo](#openfileboost_fileoperationinfo)。
+创建[OpenFileBoost_FileOperationInfo](#openfileboost_fileoperationinfo)。使用示例详见[文件打开加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-openfileboost)。
 
 起始版本： 26.0.0
 
@@ -876,7 +933,9 @@ OpenFileBoost_ErrCode HMS_Preview_OpenFileBoost_FileOperationInfoCreate (const c
 
 返回：
 
-如果函数执行成功，返回OPEN_FILE_BOOST_SUCCESS；如果函数执行失败，返回特定的错误码，详见[OpenFileBoost_ErrCode](#openfileboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [OpenFileBoost_ErrCode](#openfileboost_errcode) | 函数执行结果。 如果函数执行成功，返回OPEN_FILE_BOOST_SUCCESS。 如果函数执行失败，返回特定的错误码。详见[OpenFileBoost_ErrCode](#openfileboost_errcode)。 |
 
 #### [h2]HMS_Preview_OpenFileBoost_FileOperationInfoDestroy()
 
@@ -885,7 +944,7 @@ OpenFileBoost_ErrCode HMS_Preview_OpenFileBoost_FileOperationInfoDestroy (OpenFi
 ```
  描述
 
-销毁[OpenFileBoost_FileOperationInfo](#openfileboost_fileoperationinfo)。
+销毁[OpenFileBoost_FileOperationInfo](#openfileboost_fileoperationinfo)。使用示例详见[文件打开加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-openfileboost)。
 
 起始版本： 26.0.0
 
@@ -897,7 +956,9 @@ OpenFileBoost_ErrCode HMS_Preview_OpenFileBoost_FileOperationInfoDestroy (OpenFi
 
 返回：
 
-如果函数执行成功，返回OPEN_FILE_BOOST_SUCCESS；如果函数执行失败，返回特定的错误码，详见[OpenFileBoost_ErrCode](#openfileboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [OpenFileBoost_ErrCode](#openfileboost_errcode) | 函数执行结果。 如果函数执行成功，返回OPEN_FILE_BOOST_SUCCESS。 如果函数执行失败，返回特定的错误码。详见[OpenFileBoost_ErrCode](#openfileboost_errcode)。 |
 
 #### [h2]HMS_Preview_OpenFileBoost_IsEnabled()
 
@@ -906,13 +967,15 @@ bool HMS_Preview_OpenFileBoost_IsEnabled (void)
 ```
  描述
 
-查询应用加速特性是否可用。
+查询应用加速特性是否可用。使用示例详见[文件打开加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-openfileboost)。
 
 起始版本： 26.0.0
 
 返回：
 
-如果加速特性可用，则返回true；否则返回false。
+| 类型 | 说明 |
+| --- | --- |
+| bool | 如果加速特性可用，则返回true；否则返回false。 |
 
 #### [h2]HMS_Preview_OpenFileBoost_NotifyFileOperation()
 
@@ -933,7 +996,9 @@ OpenFileBoost_ErrCode HMS_Preview_OpenFileBoost_NotifyFileOperation (OpenFileBoo
 
 返回：
 
-如果函数执行成功，返回OPEN_FILE_BOOST_SUCCESS；如果函数执行失败，返回特定的错误码，详见[OpenFileBoost_ErrCode](#openfileboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [OpenFileBoost_ErrCode](#openfileboost_errcode) | 函数执行结果。 如果函数执行成功，返回OPEN_FILE_BOOST_SUCCESS。 如果函数执行失败，返回特定的错误码。详见[OpenFileBoost_ErrCode](#openfileboost_errcode)。 |
 
 #### [h2]HMS_Preview_OpenFileBoost_OptionsAddSupportFile()
 
@@ -942,7 +1007,7 @@ OpenFileBoost_ErrCode HMS_Preview_OpenFileBoost_OptionsAddSupportFile (OpenFileB
 ```
  描述
 
-向[OpenFileBoost_Options](#openfileboost_options)添加支持预加载的文件类型。
+向[OpenFileBoost_Options](#openfileboost_options)添加支持预加载的文件类型列表。使用示例详见[文件打开加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-openfileboost)。
 
 起始版本： 26.0.0
 
@@ -955,7 +1020,9 @@ OpenFileBoost_ErrCode HMS_Preview_OpenFileBoost_OptionsAddSupportFile (OpenFileB
 
 返回：
 
-如果函数执行成功，返回OPEN_FILE_BOOST_SUCCESS；如果函数执行失败，返回特定的错误码，详见[OpenFileBoost_ErrCode](#openfileboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [OpenFileBoost_ErrCode](#openfileboost_errcode) | 函数执行结果。 如果函数执行成功，返回OPEN_FILE_BOOST_SUCCESS。 如果函数执行失败，返回特定的错误码。详见[OpenFileBoost_ErrCode](#openfileboost_errcode)。 |
 
 #### [h2]HMS_Preview_OpenFileBoost_OptionsCreate()
 
@@ -964,7 +1031,7 @@ OpenFileBoost_ErrCode HMS_Preview_OpenFileBoost_OptionsCreate (OpenFileBoost_Opt
 ```
  描述
 
-创建一个空的[OpenFileBoost_Options](#openfileboost_options), 再使用[HMS_Preview_OpenFileBoost_OptionsAddSupportFile](#hms_preview_openfileboost_optionsaddsupportfile)添加支持的文件类型。
+创建一个空的[OpenFileBoost_Options](#openfileboost_options), 再使用[HMS_Preview_OpenFileBoost_OptionsAddSupportFile](#hms_preview_openfileboost_optionsaddsupportfile)添加支持的文件类型。使用示例详见[文件打开加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-openfileboost)。
 
 起始版本： 26.0.0
 
@@ -976,7 +1043,9 @@ OpenFileBoost_ErrCode HMS_Preview_OpenFileBoost_OptionsCreate (OpenFileBoost_Opt
 
 返回：
 
-如果函数执行成功，返回OPEN_FILE_BOOST_SUCCESS；如果函数执行失败，返回特定的错误码，详见 [OpenFileBoost_ErrCode](#openfileboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [OpenFileBoost_ErrCode](#openfileboost_errcode) | 函数执行结果。 如果函数执行成功，返回OPEN_FILE_BOOST_SUCCESS。 如果函数执行失败，返回特定的错误码。详见[OpenFileBoost_ErrCode](#openfileboost_errcode)。 |
 
 #### [h2]HMS_Preview_OpenFileBoost_OptionsDestroy()
 
@@ -985,7 +1054,7 @@ OpenFileBoost_ErrCode HMS_Preview_OpenFileBoost_OptionsDestroy (OpenFileBoost_Op
 ```
  描述
 
-销毁[OpenFileBoost_Options](#openfileboost_options)。
+销毁[OpenFileBoost_Options](#openfileboost_options)。使用示例详见[文件打开加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-openfileboost)。
 
 起始版本： 26.0.0
 
@@ -997,7 +1066,9 @@ OpenFileBoost_ErrCode HMS_Preview_OpenFileBoost_OptionsDestroy (OpenFileBoost_Op
 
 返回：
 
-如果函数执行成功，返回OPEN_FILE_BOOST_SUCCESS；如果函数执行失败，返回特定的错误码，详见[OpenFileBoost_ErrCode](#openfileboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [OpenFileBoost_ErrCode](#openfileboost_errcode) | 函数执行结果。 如果函数执行成功，返回OPEN_FILE_BOOST_SUCCESS。 如果函数执行失败，返回特定的错误码。详见[OpenFileBoost_ErrCode](#openfileboost_errcode)。 |
 
 #### [h2]HMS_Preview_OpenFileBoost_RegisterFilePreloadWithOption()
 
@@ -1006,7 +1077,7 @@ OpenFileBoost_ErrCode HMS_Preview_OpenFileBoost_RegisterFilePreloadWithOption (H
 ```
  描述
 
-注册预加载回调，允许应用传入支持预加载的文件信息。
+注册预加载回调，允许应用传入支持预加载的文件信息。使用示例详见[文件打开加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-openfileboost)。
 
 起始版本： 26.0.0
 
@@ -1014,14 +1085,16 @@ OpenFileBoost_ErrCode HMS_Preview_OpenFileBoost_RegisterFilePreloadWithOption (H
 
 | 名称 | 描述 |
 | --- | --- |
-| queryAppState | App状态查询回调函数, 在通知预加载之前先调用该回调函数查询当前是否允许推荐预加载文件。 |
-| filePreload | 文件预加载回调, 系统预测用户可能打开的文件，并通过该回调函数通知应用。 |
-| cancelFilePreload | 取消文件预加载回调, 比如系统可用内存不足时系统会通知调用方取消文件的预加载。 |
+| queryAppState | App状态查询回调函数，在通知预加载之前先调用该回调函数查询当前是否允许推荐预加载文件。 |
+| filePreload | 文件预加载回调，系统预测用户可能打开的文件，并通过该回调函数通知应用。 |
+| cancelFilePreload | 取消文件预加载回调，比如系统可用内存不足时系统会通知调用方取消文件的预加载。 |
 | options | 预加载支持文件配置选项，用于定义哪些类型的文件可以被预加载。 |
 
 返回：
 
-如果函数执行成功，返回OPEN_FILE_BOOST_SUCCESS；如果函数执行失败，返回特定的错误码，详见[OpenFileBoost_ErrCode](#openfileboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [OpenFileBoost_ErrCode](#openfileboost_errcode) | 函数执行结果。 如果函数执行成功，返回OPEN_FILE_BOOST_SUCCESS。 如果函数执行失败，返回特定的错误码。详见[OpenFileBoost_ErrCode](#openfileboost_errcode)。 |
 
 #### [h2]HMS_Preview_OpenFileBoost_SupportFileCreate()
 
@@ -1030,7 +1103,7 @@ OpenFileBoost_ErrCode HMS_Preview_OpenFileBoost_SupportFileCreate (const char *s
 ```
  描述
 
-创建[OpenFileBoost_SupportFile](#openfileboost_supportfile)。
+创建[OpenFileBoost_SupportFile](#openfileboost_supportfile)。使用示例详见[文件打开加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-openfileboost)。
 
 起始版本： 26.0.0
 
@@ -1046,7 +1119,9 @@ OpenFileBoost_ErrCode HMS_Preview_OpenFileBoost_SupportFileCreate (const char *s
 
 返回：
 
-如果函数执行成功，返回OPEN_FILE_BOOST_SUCCESS；如果函数执行失败，返回特定的错误码，详见[OpenFileBoost_ErrCode](#openfileboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [OpenFileBoost_ErrCode](#openfileboost_errcode) | 函数执行结果。 如果函数执行成功，返回OPEN_FILE_BOOST_SUCCESS。 如果函数执行失败，返回特定的错误码。详见[OpenFileBoost_ErrCode](#openfileboost_errcode)。 |
 
 #### [h2]HMS_Preview_OpenFileBoost_SupportFileDestroy()
 
@@ -1055,7 +1130,7 @@ OpenFileBoost_ErrCode HMS_Preview_OpenFileBoost_SupportFileDestroy (OpenFileBoos
 ```
  描述
 
-销毁[OpenFileBoost_SupportFile](#openfileboost_supportfile)。
+销毁[OpenFileBoost_SupportFile](#openfileboost_supportfile)。使用示例详见[文件打开加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-openfileboost)。
 
 起始版本： 26.0.0
 
@@ -1067,7 +1142,24 @@ OpenFileBoost_ErrCode HMS_Preview_OpenFileBoost_SupportFileDestroy (OpenFileBoos
 
 返回：
 
-如果函数执行成功，返回OPEN_FILE_BOOST_SUCCESS；如果函数执行失败，返回特定的错误码，详见[OpenFileBoost_ErrCode](#openfileboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [OpenFileBoost_ErrCode](#openfileboost_errcode) | 函数执行结果。 如果函数执行成功，返回OPEN_FILE_BOOST_SUCCESS。 如果函数执行失败，返回特定的错误码。详见[OpenFileBoost_ErrCode](#openfileboost_errcode)。 |
+
+#### [h2]HMS_Preview_FileCacheBoost_IsSupported()
+
+```
+bool HMS_Preview_FileCacheBoost_IsSupported (void)
+```
+ 描述
+
+查询当前设备是否支持文件缓存加速功能。建议使用本接口检查，确认设备支持文件缓存加速功能后，再使用其他文件缓存加速接口如[HMS_FileCacheBoost_Init](#hms_filecacheboost_init)等。
+
+起始版本： 26.0.0
+
+返回：
+
+如果当前设备支持文件缓存加速功能，则返回true；否则返回false。
 
 #### [h2]HMS_FileCacheBoost_Init()
 
@@ -1076,7 +1168,7 @@ FileCacheBoost_ErrCode HMS_FileCacheBoost_Init (const char * path, size_t pathLe
 ```
  描述
 
-初始化缓存路径、缓存容量上限和数据库名称。该函数用于配置缓存文件的存储目录以及缓存最大容量。当系统检测到缓存总量超出设定上限后，将根据缓存淘汰策略进行容量管控，删除相应的缓存以释放空间。
+初始化缓存路径、缓存容量上限和数据库名称。该函数用于配置缓存文件的存储目录以及缓存最大容量。当系统检测到缓存总量超出设定上限后，将根据缓存淘汰策略进行容量管控，删除相应的缓存以释放空间。使用示例详见[通用文件缓存加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-filecacheboost)。
 
 起始版本： 6.1.0(23)
 
@@ -1092,15 +1184,9 @@ FileCacheBoost_ErrCode HMS_FileCacheBoost_Init (const char * path, size_t pathLe
 
 返回：
 
-函数执行结果:
-
-FILE_CACHE_BOOST_SUCCESS：执行成功。
-
-FILE_CACHE_BOOST_ERROR_NOT_DIR：传入的路径无效，系统无法创建。
-
-FILE_CACHE_BOOST_ERROR_INVALID_PARAM：传入的参数无效。
-
-其他错误详见[FileCacheBoost_ErrCode](#filecacheboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [FileCacheBoost_ErrCode](#filecacheboost_errcode) | 函数执行结果。 FILE_CACHE_BOOST_SUCCESS：执行成功。 FILE_CACHE_BOOST_ERROR_NOT_DIR：传入的路径无效，系统无法创建。 FILE_CACHE_BOOST_ERROR_INVALID_PARAM：传入的参数无效。 其他错误详见[FileCacheBoost_ErrCode](#filecacheboost_errcode)。 |
 
 #### [h2]HMS_FileCacheBoost_AddObjectByKey()
 
@@ -1113,7 +1199,7 @@ FileCacheBoost_ErrCode HMS_FileCacheBoost_AddObjectByKey (const uint8_t * key, s
 
 建议开发者合理设计和管理key值，确保其在不同上下文中的唯一性和准确性。 当缓存不再需要时，推荐开发者主动调用[HMS_FileCacheBoost_RemoveObjectByKey](#hms_filecacheboost_removeobjectbykey)删除对应的缓存项，以避免资源浪费。 若不主动删除，系统将在缓存容量不足时，依据系统策略进行清除。
 
-开发者若想要对key对应的缓存内容做修改，需要先调用[HMS_FileCacheBoost_RemoveObjectByKey](#hms_filecacheboost_removeobjectbykey)删除之前的key，再重新创建和添加。
+开发者若想要对key对应的缓存内容做修改，需要先调用[HMS_FileCacheBoost_RemoveObjectByKey](#hms_filecacheboost_removeobjectbykey)删除之前的key，再重新创建和添加。使用示例详见[通用文件缓存加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-filecacheboost)。
 
 起始版本： 6.1.0(23)
 
@@ -1129,23 +1215,9 @@ FileCacheBoost_ErrCode HMS_FileCacheBoost_AddObjectByKey (const uint8_t * key, s
 
 返回：
 
-函数执行结果：
-
-FILE_CACHE_BOOST_SUCCESS：执行成功。
-
-FILE_CACHE_BOOST_ERROR_KEY_EXIST：key 值已经存在。
-
-FILE_CACHE_BOOST_ERROR_IO：发生I/O读写错误。
-
-FILE_CACHE_BOOST_ERROR_IO_CANCELED：因数据对象内存缓存被释放，导致创建缓存对象任务无法执行。
-
-FILE_CACHE_BOOST_ERROR_NOT_INITIALIZED：未初始化。
-
-FILE_CACHE_BOOST_ERROR_EXCEED_LIMIT：添加的缓存大小大于缓存容量上限。
-
-FILE_CACHE_BOOST_ERROR_INVALID_PARAM：传入的参数无效。
-
-其他错误详见 [FileCacheBoost_ErrCode](#filecacheboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [FileCacheBoost_ErrCode](#filecacheboost_errcode) | 函数执行结果。 FILE_CACHE_BOOST_SUCCESS：执行成功。 FILE_CACHE_BOOST_ERROR_KEY_EXIST：key值已经存在。 FILE_CACHE_BOOST_ERROR_IO：发生I/O读写错误。 FILE_CACHE_BOOST_ERROR_IO_CANCELED：因数据对象内存缓存被释放，导致创建缓存对象任务无法执行。 FILE_CACHE_BOOST_ERROR_NOT_INITIALIZED：未初始化。 FILE_CACHE_BOOST_ERROR_EXCEED_LIMIT：添加的缓存大小大于缓存容量上限。 FILE_CACHE_BOOST_ERROR_INVALID_PARAM：传入的参数无效。 其他错误详见[FileCacheBoost_ErrCode](#filecacheboost_errcode)。 |
 
 #### [h2]HMS_FileCacheBoost_GetObjectByKey()
 
@@ -1154,7 +1226,7 @@ FileCacheBoost_ErrCode HMS_FileCacheBoost_GetObjectByKey (const uint8_t * key, s
 ```
  描述
 
-根据指定的key查询缓存对象，若存在，则从磁盘中加载缓存对象的内容。调用该函数系统会分配一段内存用于存储缓存数据，作为出参返回给开发者，开发者需在使用完毕后调用[HMS_FileCacheBoost_FreeObject](#hms_filecacheboost_freeobject)显式释放该内存。
+根据指定的key查询缓存对象，若存在，则从磁盘中加载缓存对象的内容。调用该函数系统会分配一段内存用于存储缓存数据，作为出参返回给开发者，开发者需在使用完毕后调用[HMS_FileCacheBoost_FreeObject](#hms_filecacheboost_freeobject)显式释放该内存。使用示例详见[通用文件缓存加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-filecacheboost)。
 
 起始版本： 6.1.0(23)
 
@@ -1169,21 +1241,9 @@ FileCacheBoost_ErrCode HMS_FileCacheBoost_GetObjectByKey (const uint8_t * key, s
 
 返回：
 
-函数执行结果：
-
-FILE_CACHE_BOOST_SUCCESS：执行成功。
-
-FILE_CACHE_BOOST_ERROR_KEY_NOT_FOUND：key值不存在。
-
-FILE_CACHE_BOOST_ERROR_IO：发生I/O读写错误。
-
-FILE_CACHE_BOOST_ERROR_NOT_INITIALIZED：未初始化。
-
-FILE_CACHE_BOOST_ERROR_IO_CANCELED：因数据对象内存被释放，导致获取缓存对象任务无法执行。
-
-FILE_CACHE_BOOST_ERROR_INVALID_PARAM：传入的参数无效。
-
-其他错误详见 [FileCacheBoost_ErrCode](#filecacheboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [FileCacheBoost_ErrCode](#filecacheboost_errcode) | 函数执行结果。 FILE_CACHE_BOOST_SUCCESS：执行成功。 FILE_CACHE_BOOST_ERROR_KEY_NOT_FOUND：key值不存在。 FILE_CACHE_BOOST_ERROR_IO：发生I/O读写错误。 FILE_CACHE_BOOST_ERROR_NOT_INITIALIZED：未初始化。 FILE_CACHE_BOOST_ERROR_IO_CANCELED：因数据对象内存被释放，导致获取缓存对象任务无法执行。 FILE_CACHE_BOOST_ERROR_INVALID_PARAM：传入的参数无效。 其他错误详见[FileCacheBoost_ErrCode](#filecacheboost_errcode)。 |
 
 #### [h2]HMS_FileCacheBoost_FreeObject()
 
@@ -1192,7 +1252,7 @@ void HMS_FileCacheBoost_FreeObject (uint8_t * data)
 ```
  描述
 
-释放调用[HMS_FileCacheBoost_GetObjectByKey](#hms_filecacheboost_getobjectbykey)或[HMS_FileCacheBoost_GetSerialObjectByKey](#hms_filecacheboost_getserialobjectbykey)分配的内存，建议开发者不再使用该内存时，及时调用此函数进行释放，避免造成内存泄漏。
+释放调用[HMS_FileCacheBoost_GetObjectByKey](#hms_filecacheboost_getobjectbykey)或[HMS_FileCacheBoost_GetSerialObjectByKey](#hms_filecacheboost_getserialobjectbykey)分配的内存，建议开发者不再使用该内存时，及时调用此函数进行释放，避免造成内存泄漏。使用示例详见[通用文件缓存加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-filecacheboost)。
 
 起始版本： 6.1.0(23)
 
@@ -1211,7 +1271,7 @@ FileCacheBoost_ErrCode HMS_FileCacheBoost_AddSerialObjectByKey (const uint8_t * 
 
 创建一个复杂类型对象的缓存项，通过传入自定义的序列化函数[SerializeFunc](#serializefunc)对该象进行序列化处理，以便将该对象存储至磁盘并支持后续恢复。
 
-例如图像数据需要同时保存其元数据和像素数据，才能实现完整的缓存与读取过程。序列化和反序列化会占用内存，请开发者控制object大小，降低内存压力。
+例如图像数据需要同时保存其元数据和像素数据，才能实现完整的缓存与读取过程。序列化和反序列化会占用内存，请开发者控制object大小，降低内存压力。使用示例详见[通用文件缓存加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-filecacheboost)。
 
 起始版本： 6.1.0(23)
 
@@ -1227,23 +1287,9 @@ FileCacheBoost_ErrCode HMS_FileCacheBoost_AddSerialObjectByKey (const uint8_t * 
 
 返回：
 
-函数执行结果：
-
-FILE_CACHE_BOOST_SUCCESS：执行成功。
-
-FILE_CACHE_BOOST_ERROR_KEY_EXIST：key值已经存在。
-
-FILE_CACHE_BOOST_ERROR_IO：发生I/O读写错误。
-
-FILE_CACHE_BOOST_ERROR_IO_CANCELED：因数据对象内存缓存被释放， 导致创建缓存对象任务无法执行。
-
-FILE_CACHE_BOOST_ERROR_NOT_INITIALIZED：未初始化。
-
-FILE_CACHE_BOOST_ERROR_EXCEED_LIMIT：添加的缓存大小大于缓存容量上限。
-
-FILE_CACHE_BOOST_ERROR_INVALID_PARAM：传入的参数无效。
-
-其他错误详见 [FileCacheBoost_ErrCode](#filecacheboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [FileCacheBoost_ErrCode](#filecacheboost_errcode) | 函数执行结果。 FILE_CACHE_BOOST_SUCCESS：执行成功。 FILE_CACHE_BOOST_ERROR_KEY_EXIST：key值已经存在。 FILE_CACHE_BOOST_ERROR_IO：发生I/O读写错误。 FILE_CACHE_BOOST_ERROR_IO_CANCELED：因数据对象内存缓存被释放，导致创建缓存对象任务无法执行。 FILE_CACHE_BOOST_ERROR_NOT_INITIALIZED：未初始化。 FILE_CACHE_BOOST_ERROR_EXCEED_LIMIT：添加的缓存大小大于缓存容量上限。 FILE_CACHE_BOOST_ERROR_INVALID_PARAM：传入的参数无效。 其他错误详见[FileCacheBoost_ErrCode](#filecacheboost_errcode)。 |
 
 #### [h2]HMS_FileCacheBoost_GetSerialObjectByKey()
 
@@ -1252,7 +1298,7 @@ FileCacheBoost_ErrCode HMS_FileCacheBoost_GetSerialObjectByKey (const uint8_t * 
 ```
  描述
 
-根据指定的key值获取复杂类型缓存对象，并通过传入的反序列化函数[DeserializeFunc](#deserializefunc)将其还原为原始数据，从而获得完整的对象内容。 调用该函数系统会分配一段内存用于存储缓存数据，作为出参返回给开发者，开发者需在使用完毕后调用[HMS_FileCacheBoost_FreeObject](#hms_filecacheboost_freeobject)显式释放该内存。
+根据指定的key值获取复杂类型缓存对象，并通过传入的反序列化函数[DeserializeFunc](#deserializefunc)将其还原为原始数据，从而获得完整的对象内容。 调用该函数系统会分配一段内存用于存储缓存数据，作为出参返回给开发者，开发者需在使用完毕后调用[HMS_FileCacheBoost_FreeObject](#hms_filecacheboost_freeobject)显式释放该内存。使用示例详见[通用文件缓存加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-filecacheboost)。
 
 起始版本： 6.1.0(23)
 
@@ -1267,21 +1313,9 @@ FileCacheBoost_ErrCode HMS_FileCacheBoost_GetSerialObjectByKey (const uint8_t * 
 
 返回：
 
-函数执行结果：
-
-FILE_CACHE_BOOST_SUCCESS：执行成功。
-
-FILE_CACHE_BOOST_ERROR_KEY_NOT_FOUND：key值不存在。
-
-FILE_CACHE_BOOST_ERROR_IO：发生I/O读写错误。
-
-FILE_CACHE_BOOST_ERROR_NOT_INITIALIZED：未初始化。
-
-FILE_CACHE_BOOST_ERROR_IO_CANCELED：因数据对象内存缓存被释放，导致获取缓存对象任务无法执行。
-
-FILE_CACHE_BOOST_ERROR_INVALID_PARAM：传入的参数无效。
-
-其他错误详见 [FileCacheBoost_ErrCode](#filecacheboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [FileCacheBoost_ErrCode](#filecacheboost_errcode) | 函数执行结果。 FILE_CACHE_BOOST_SUCCESS：执行成功。 FILE_CACHE_BOOST_ERROR_KEY_NOT_FOUND：key值不存在。 FILE_CACHE_BOOST_ERROR_IO：发生I/O读写错误。 FILE_CACHE_BOOST_ERROR_NOT_INITIALIZED：未初始化。 FILE_CACHE_BOOST_ERROR_IO_CANCELED：因数据对象内存缓存被释放，导致获取缓存对象任务无法执行。 FILE_CACHE_BOOST_ERROR_INVALID_PARAM：传入的参数无效。 其他错误详见[FileCacheBoost_ErrCode](#filecacheboost_errcode)。 |
 
 #### [h2]HMS_FileCacheBoost_CancelOngoingIOByKey()
 
@@ -1294,7 +1328,7 @@ FileCacheBoost_ErrCode HMS_FileCacheBoost_CancelOngoingIOByKey (const uint8_t * 
 
 当该函数返回 FILE_CACHE_BOOST_SUCCESS，开发者可以立即释放数据对象；当返回FILE_CACHE_BOOST_ERROR_IO_CANCEL_FAILED，表示当前没有正在执行的 key 需要被取消，开发者需要确认该 key 对应的动作执行完成或无需执行后再释放数据对象。
 
-例如当一个线程尝试删除数据对象的同时，有其他线程对其进行[HMS_FileCacheBoost_AddObjectByKey](#hms_filecacheboost_addobjectbykey)操作， 调用本函数可确保缓存对象的安全性，避免引发数据竞争问题。
+例如当一个线程尝试删除数据对象的同时，有其他线程对其进行[HMS_FileCacheBoost_AddObjectByKey](#hms_filecacheboost_addobjectbykey)操作，调用本函数可确保缓存对象的安全性，避免引发数据竞争问题。使用示例详见[通用文件缓存加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-filecacheboost)。
 
 起始版本： 6.1.0(23)
 
@@ -1307,15 +1341,9 @@ FileCacheBoost_ErrCode HMS_FileCacheBoost_CancelOngoingIOByKey (const uint8_t * 
 
 返回：
 
-函数执行结果：
-
-FILE_CACHE_BOOST_SUCCESS：缓存完成和I/O取消成功，开发者可以立即释放数据对象。
-
-FILE_CACHE_BOOST_ERROR_IO_CANCEL_FAILED：I/O取消失败，表示当前没有正在执行的key需要被取消，开发者需要确认该key对应的动作执行完成或无需执行后再释放数据对象。
-
-FILE_CACHE_BOOST_ERROR_INVALID_PARAM：传入的参数无效。
-
-其他错误详见[FileCacheBoost_ErrCode](#filecacheboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [FileCacheBoost_ErrCode](#filecacheboost_errcode) | 函数执行结果。 FILE_CACHE_BOOST_SUCCESS：缓存完成和I/O取消成功，开发者可以立即释放数据对象。 FILE_CACHE_BOOST_ERROR_IO_CANCEL_FAILED：I/O取消失败，表示当前没有正在执行的key需要被取消，开发者需要确认该key对应的动作执行完成或无需执行后再释放数据对象。 FILE_CACHE_BOOST_ERROR_INVALID_PARAM：传入的参数无效。 其他错误详见[FileCacheBoost_ErrCode](#filecacheboost_errcode)。 |
 
 #### [h2]HMS_FileCacheBoost_RemoveObjectByKey()
 
@@ -1324,7 +1352,7 @@ FileCacheBoost_ErrCode HMS_FileCacheBoost_RemoveObjectByKey (const uint8_t * key
 ```
  描述
 
-根据指定的key删除对应的缓存对象。
+根据指定的key删除对应的缓存对象。使用示例详见[通用文件缓存加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-filecacheboost)。
 
 起始版本： 6.1.0(23)
 
@@ -1337,17 +1365,9 @@ FileCacheBoost_ErrCode HMS_FileCacheBoost_RemoveObjectByKey (const uint8_t * key
 
 返回：
 
-函数执行结果：
-
-FILE_CACHE_BOOST_SUCCESS：执行成功。
-
-FILE_CACHE_BOOST_ERROR_KEY_NOT_FOUND：key值不存在。
-
-FILE_CACHE_BOOST_ERROR_NOT_INITIALIZED：未初始化。
-
-FILE_CACHE_BOOST_ERROR_INVALID_PARAM：传入参数无效。
-
-其他错误详见 [FileCacheBoost_ErrCode](#filecacheboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [FileCacheBoost_ErrCode](#filecacheboost_errcode) | 函数执行结果。 FILE_CACHE_BOOST_SUCCESS：执行成功。 FILE_CACHE_BOOST_ERROR_KEY_NOT_FOUND：key值不存在。 FILE_CACHE_BOOST_ERROR_NOT_INITIALIZED：未初始化。 FILE_CACHE_BOOST_ERROR_INVALID_PARAM：传入参数无效。 其他错误详见[FileCacheBoost_ErrCode](#filecacheboost_errcode)。 |
 
 #### [h2]HMS_FileCacheBoost_ClearAllCache()
 
@@ -1356,16 +1376,12 @@ FileCacheBoost_ErrCode HMS_FileCacheBoost_ClearAllCache (void )
 ```
  描述
 
-清理所有的缓存对象。 该函数会释放通过[HMS_FileCacheBoost_AddObjectByKey](#hms_filecacheboost_addobjectbykey)和[HMS_FileCacheBoost_AddSerialObjectByKey](#hms_filecacheboost_addserialobjectbykey)创建的所有缓存对象。
+清理所有的缓存对象。该函数会释放通过[HMS_FileCacheBoost_AddObjectByKey](#hms_filecacheboost_addobjectbykey)和[HMS_FileCacheBoost_AddSerialObjectByKey](#hms_filecacheboost_addserialobjectbykey)创建的所有缓存对象。使用示例详见[通用文件缓存加速（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-filecacheboost)。
 
 起始版本： 6.1.0(23)
 
 返回：
 
-函数执行结果：
-
-FILE_CACHE_BOOST_SUCCESS：执行成功。
-
-FILE_CACHE_BOOST_ERROR_NOT_INITIALIZED：未初始化。
-
-其他错误详见[FileCacheBoost_ErrCode](#filecacheboost_errcode)。
+| 类型 | 说明 |
+| --- | --- |
+| [FileCacheBoost_ErrCode](#filecacheboost_errcode) | 函数执行结果。 FILE_CACHE_BOOST_SUCCESS：执行成功。 FILE_CACHE_BOOST_ERROR_NOT_INITIALIZED：未初始化。 其他错误详见[FileCacheBoost_ErrCode](#filecacheboost_errcode)。 |

@@ -2,8 +2,8 @@
 title: "oh_rdb_transaction.h"
 upstream_id: "harmonyos-references/capi-oh-rdb-transaction-h"
 catalog: "harmonyos-references"
-content_hash: "7bb8509b9dea"
-synced_at: "2026-07-09T00:57:19.213780"
+content_hash: "df153d7f4c39"
+synced_at: "2026-07-28T16:40:51.567827"
 ---
 
 # oh_rdb_transaction.h
@@ -99,7 +99,7 @@ OH_RDB_TransOptions *OH_RdbTrans_CreateOptions(void)
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_RDB_TransOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-rdb-transoptions) | 执行成功时返回指向[OH_RDB_TransOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-rdb-transoptions)实例的指针。否则返回nullptr。 使用完成后，必须通过[OH_RdbTrans_DestroyOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-rdb-transaction-h#oh_rdbtrans_destroyoptions)接口释放内存。 |
+| [OH_RDB_TransOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-rdb-transoptions) | 执行成功时返回指向[OH_RDB_TransOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-rdb-transoptions)实例的指针。否则返回nullptr。 使用完成后，必须通过[OH_RdbTrans_DestroyOptions](#oh_rdbtrans_destroyoptions)接口释放内存。 |
 
 #### [h2]OH_RdbTrans_DestroyOptions()
 
@@ -223,7 +223,7 @@ int OH_RdbTrans_Insert(OH_Rdb_Transaction *trans, const char *table, const OH_VB
 #### [h2]OH_RdbTrans_InsertWithConflictResolution()
 
 ```
-int OH_RdbTrans_InsertWithConflictResolution(OH_Rdb_Transaction *trans, const char *table, const OH_VBucket *row,Rdb_ConflictResolution resolution, int64_t *rowId)
+int OH_RdbTrans_InsertWithConflictResolution(OH_Rdb_Transaction *trans, const char *table, const OH_VBucket *row, Rdb_ConflictResolution resolution, int64_t *rowId)
 ```
  描述
 
@@ -298,7 +298,7 @@ int OH_RdbTrans_Update(OH_Rdb_Transaction *trans, const OH_VBucket *row, const O
 | [OH_Rdb_Transaction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-rdb-transaction) *trans | 指向[OH_Rdb_Transaction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-rdb-transaction)实例的指针。 |
 | const [OH_VBucket](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-vbucket) *row | 表示要更新到表中的数据行。 |
 | const [OH_Predicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-predicates) *predicates | 表示[OH_Predicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-predicates)指定的更新条件。 |
-| int64_t *changes | 输出参数，表示更新成功的次数。 |
+| int64_t *changes | 输出参数，表示更新成功的行数。 |
 
 返回：
 
@@ -309,7 +309,7 @@ int OH_RdbTrans_Update(OH_Rdb_Transaction *trans, const OH_VBucket *row, const O
 #### [h2]OH_RdbTrans_UpdateWithConflictResolution()
 
 ```
-int OH_RdbTrans_UpdateWithConflictResolution(OH_Rdb_Transaction *trans, const OH_VBucket *row,const OH_Predicates *predicates, Rdb_ConflictResolution resolution, int64_t *changes)
+int OH_RdbTrans_UpdateWithConflictResolution(OH_Rdb_Transaction *trans, const OH_VBucket *row, const OH_Predicates *predicates, Rdb_ConflictResolution resolution, int64_t *changes)
 ```
  描述
 
@@ -376,7 +376,7 @@ OH_Cursor *OH_RdbTrans_Query(OH_Rdb_Transaction *trans, const OH_Predicates *pre
 | [OH_Rdb_Transaction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-rdb-transaction) *trans | 指向[OH_Rdb_Transaction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-rdb-transaction)实例的指针。 |
 | const [OH_Predicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-predicates) *predicates | 表示[OH_Predicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-predicates)指定的查询条件。 |
 | const char *columns[] | 表示要查询的列，如果传入空值，则查询适用于所有列。 |
-| int len | 表示列中元素的个数。 |
+| int len | 传入的columns数组的长度。若len大于columns数组的实际长度，则会访问越界。 |
 
 返回：
 

@@ -2,13 +2,13 @@
 title: "@ohos.arkui.shape (形状)"
 upstream_id: "harmonyos-references/js-apis-arkui-shape"
 catalog: "harmonyos-references"
-content_hash: "0e556b31f4de"
-synced_at: "2026-07-09T00:57:28.011361"
+content_hash: "d4bf3772b6de"
+synced_at: "2026-07-28T16:40:59.347496"
 ---
 
 # @ohos.arkui.shape (形状)
 
-在[clipShape](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sharp-clipping#clipshape12)和[maskShape](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sharp-clipping#maskshape12)接口中可以传入对应的形状。
+@ohos.arkui.shape模块提供了CircleShape、EllipseShape、PathShape、RectShape等多种形状定义，用于在[clipShape](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sharp-clipping#clipshape12)和[maskShape](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sharp-clipping#maskshape12)接口中传入对应的形状，实现对组件的裁剪和遮罩效果。适用于需要将组件裁剪为圆形、椭圆、矩形等特定形状，或通过形状遮罩实现视觉效果的场景，如头像裁剪、图标遮罩等。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -18,7 +18,7 @@ synced_at: "2026-07-09T00:57:28.011361"
 #### 导入模块
 
 ```
-import { CircleShape, EllipseShape, PathShape, RectShape } from "@kit.ArkUI";
+import { CircleShape, EllipseShape, PathShape, RectShape } from '@kit.ArkUI';
 ```
 
 #### CircleShape
@@ -49,7 +49,7 @@ constructor(options?: ShapeSize)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [ShapeSize](#shapesize) | 否 | 形状的大小。 |
+| options | [ShapeSize](#shapesize) | 否 | 形状的大小，包含width（宽度）和height（高度）属性，用于设置形状的尺寸。不传入时使用默认尺寸，默认宽度0vp，默认高度0vp。 |
 
 #### EllipseShape
 
@@ -79,11 +79,11 @@ constructor(options?: ShapeSize)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [ShapeSize](#shapesize) | 否 | 形状的大小。 |
+| options | [ShapeSize](#shapesize) | 否 | 形状的大小，用于自定义椭圆的宽高尺寸。不传入时width和height默认值为0vp。 |
 
 #### PathShape
 
-用于clipShape和maskShape接口的路径。
+用于clipShape和maskShape接口的路径形状。
 
 继承自[CommonShapeMethod](#commonshapemethod)。
 
@@ -133,7 +133,7 @@ commands(commands: string): PathShape
 
 | 类型 | 说明 |
 | --- | --- |
-| [PathShape](#pathshape) | 返回PathShape对象。 |
+| [PathShape](#pathshape) | 返回设置路径绘制指令后的PathShape对象，可用于链式调用继续配置路径形状。 |
 
 #### RectShape
 
@@ -187,7 +187,7 @@ radiusWidth(rWidth: number | string): RectShape
 
 | 类型 | 说明 |
 | --- | --- |
-| [RectShape](#rectshape) | 返回RectShape对象。 |
+| [RectShape](#rectshape) | 返回设置圆角半径后的RectShape对象，可用于链式调用继续配置矩形形状。 |
 
 #### [h2]radiusHeight
 
@@ -211,7 +211,7 @@ radiusHeight(rHeight: number | string): RectShape
 
 | 类型 | 说明 |
 | --- | --- |
-| [RectShape](#rectshape) | 返回RectShape对象。 |
+| [RectShape](#rectshape) | 返回设置圆角半径高度后的RectShape对象，可用于链式调用继续配置矩形形状。 |
 
 #### [h2]radius
 
@@ -229,17 +229,17 @@ radius(radius: number | string | Array<number | string>): RectShape
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| radius | number | string | Array | 是 | 矩形形状的圆角半径。仅接受数组的前四个元素，分别为矩形左上，右上，左下，右下的圆角半径。 类型为number时取值范围是[0, +∞)，string时是[Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length)。 单位：vp 取值为异常值时按照0vp处理。 |
+| radius | number | string | Array | 是 | 矩形形状的圆角半径。仅接受数组的前四个元素，分别为矩形左上、右上、左下、右下的圆角半径。 类型为number时取值范围是[0, +∞)，string时是[Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length)。 单位：vp 取值为异常值时按照0vp处理。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| [RectShape](#rectshape) | 返回RectShape对象。 |
+| [RectShape](#rectshape) | 返回设置圆角半径宽度后的RectShape对象，可用于链式调用继续配置矩形形状。 |
 
 #### ShapeSize
 
-形状的尺寸参数。
+形状的大小参数。
 
 卡片能力： 从API version 12开始，该接口支持在ArkTS卡片中使用。
 
@@ -249,8 +249,8 @@ radius(radius: number | string | Array<number | string>): RectShape
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| width | number | string | 否 | 是 | 形状的宽度。 类型为number时取值范围是[0, +∞)，string时是[Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length)。 单位：vp 取值为异常值时按照0vp处理。 |
-| height | number | string | 否 | 是 | 形状的高度。 类型为number时取值范围是[0, +∞)，string时是[Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length)。 单位：vp 取值为异常值时按照0vp处理。 |
+| width | number | string | 否 | 是 | 形状的宽度。 类型为number时取值范围是[0, +∞)，string时是[Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length)。 单位：vp 默认值：0vp 取值为异常值时按照0vp处理。 不设置时默认值为0vp。 |
+| height | number | string | 否 | 是 | 形状的高度。 类型为number时取值范围是[0, +∞)，string时是[Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length)。 单位：vp 默认值：0vp 取值为异常值时按照0vp处理。 不设置时默认值为0vp。 |
 
 #### PathShapeOptions
 
@@ -264,7 +264,7 @@ PathShape的构造函数参数。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| commands | string | 否 | 是 | 绘制路径的指令。更多说明请参考[commands](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-path#commands)支持的绘制命令。 |
+| commands | string | 否 | 是 | 绘制路径的指令。默认值为空字符串，不设置时不绘制路径。更多说明请参考[commands](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-path#commands)支持的绘制命令。 |
 
 #### RectShapeOptions
 
@@ -284,7 +284,7 @@ RectShape 的构造函数参数。
 
 #### RoundRectShapeOptions
 
-RectShape 带有半径的构造函数参数。
+RectShape 带有圆角半径的构造函数参数。
 
 继承自[ShapeSize](#shapesize)。
 
@@ -296,8 +296,8 @@ RectShape 带有半径的构造函数参数。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| radiusWidth | number | string | 否 | 是 | 矩形形状圆角半径的宽度。 类型为number时取值范围是[0, +∞)，string时是[Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length)。 单位：vp 取值为异常值时按照0vp处理。 |
-| radiusHeight | number | string | 否 | 是 | 矩形形状圆角半径的高度。 类型为number时取值范围是[0, +∞)，string时是[Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length)。 单位：vp 取值为异常值时按照0vp处理。 |
+| radiusWidth | number | string | 否 | 是 | 矩形形状圆角半径的宽度。 类型为number时取值范围是[0, +∞)，string时是[Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length)。 单位：vp 默认值：0vp 取值为异常值时按照0vp处理。 |
+| radiusHeight | number | string | 否 | 是 | 矩形形状圆角半径的高度。 类型为number时取值范围是[0, +∞)，string时是[Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length)。 单位：vp 默认值：0vp 取值为异常值时按照0vp处理。 |
 
 #### BaseShape
 
@@ -383,7 +383,7 @@ size(size: SizeOptions): T
 
 #### CommonShapeMethod
 
-常见的形状方法。
+提供形状的偏移、填充和位置设置等通用方法的基类。
 
 卡片能力： 从API version 12开始，该接口支持在ArkTS卡片中使用。
 
@@ -443,7 +443,7 @@ fill(color: ResourceColor): T
 
 position(position: Position): T
 
-设置形状的位置。
+形状的位置坐标。
 
 卡片能力： 从API version 12开始，该接口支持在ArkTS卡片中使用。
 
@@ -455,7 +455,7 @@ position(position: Position): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| position | [Position](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#position) | 是 | 设置形状的位置。 |
+| position | [Position](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#position) | 是 | 形状的位置。 |
 
 返回值：
 
@@ -490,6 +490,7 @@ struct ShapeExample {
       Text('PathShape, fill').fontSize(20).width('75%').fontColor('#DCDCDC')
       // $r('app.media.startIcon')需替换为开发者所需的资源文件
       Image($r('app.media.startIcon'))
+        // 使用SVG路径指令绘制三角形作为遮罩形状
         .maskShape(new PathShape().commands('M100 0 L200 240 L0 240 Z').fill(Color.Red))
         .width('500px').height('280px')
     
@@ -504,4 +505,4 @@ struct ShapeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612239.png)
+ ![](./img/zh-cn_image_0000002656008170.png)

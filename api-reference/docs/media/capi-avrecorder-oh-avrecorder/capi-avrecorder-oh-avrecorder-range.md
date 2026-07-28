@@ -2,8 +2,8 @@
 title: "OH_AVRecorder_Range"
 upstream_id: "harmonyos-references/capi-avrecorder-oh-avrecorder-range"
 catalog: "harmonyos-references"
-content_hash: "ee800726ab46"
-synced_at: "2026-07-09T01:00:43.056917"
+content_hash: "3d75703b500a"
+synced_at: "2026-07-28T16:52:00.417374"
 ---
 
 # OH_AVRecorder_Range
@@ -14,7 +14,7 @@ typedef struct OH_AVRecorder_Range {...} OH_AVRecorder_Range
 
 #### 概述
 
-表示类型的范围。
+表示AVRecorder相关参数（如比特率、帧率等）的取值范围。
 
 起始版本： 18
 

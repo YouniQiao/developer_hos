@@ -2,8 +2,8 @@
 title: "OH_Huks_Param"
 upstream_id: "harmonyos-references/capi-hukstypeapi-oh-huks-param"
 catalog: "harmonyos-references"
-content_hash: "9847a854142b"
-synced_at: "2026-07-09T00:59:21.490931"
+content_hash: "0e02808c466a"
+synced_at: "2026-07-28T16:50:34.410903"
 ---
 
 # OH_Huks_Param
@@ -29,4 +29,4 @@ struct OH_Huks_Param {...}
 | 名称 | 描述 |
 | --- | --- |
 | uint32_t tag | 标签值。 |
-| union { bool boolParam; int32_t int32Param; uint32_t uint32Param; uint64_t uint64Param; [struct OH_Huks_Blob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hukstypeapi-oh-huks-blob) blob; } | boolParam：bool型参数。 int32Param：int32_t型参数。 uint32Param：uint32_t型参数。 uint64Param：uint64_t型参数。 blob：OH_Huks_Blob型参数。 |
+| union { bool boolParam; int32_t int32Param; uint32_t uint32Param; uint64_t uint64Param; [struct OH_Huks_Blob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hukstypeapi-oh-huks-blob) blob; } | boolParam：布尔型参数。 int32Param：int32_t型参数。 uint32Param：uint32_t型参数。 uint64Param：uint64_t型参数。 blob：OH_Huks_Blob型参数。 |

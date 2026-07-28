@@ -2,15 +2,15 @@
 title: "外描边设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-outline"
 catalog: "harmonyos-references"
-content_hash: "c13ab642df3f"
-synced_at: "2026-07-09T00:57:40.253939"
+content_hash: "3ae1bb9c4ff0"
+synced_at: "2026-07-28T16:42:23.436752"
 ---
 
 # 外描边设置
 
 设置组件外描边（outline）样式。外描边绘制在组件的外侧，不影响布局，不会占用组件本身大小。
 
-![](./img/zh-cn_image_0000002661612369.png)
+![](./img/zh-cn_image_0000002686087809.png)
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -57,7 +57,7 @@ outline(options: Optional<OutlineOptions>): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 外描边样式。 当options的值为undefined时，恢复为无外边框效果。 |
+| options | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 外描边样式。 当options的值为undefined时，恢复为无外描边效果。 |
 
 返回值：
 
@@ -85,7 +85,7 @@ outline(options: Optional<OutlineOptions>): T
 
 outlineStyle(value: OutlineStyle | EdgeOutlineStyles): T
 
-设置元素的外描边样式。不设置该接口时，默认显示为一条实线。
+设置元素的外描边样式，不设置时默认显示为一条实线。需设置outlineWidth大于0，外描边样式才可见。
 
 卡片能力： 从API version 11开始，该接口支持在ArkTS卡片中使用。
 
@@ -109,7 +109,7 @@ outlineStyle(value: OutlineStyle | EdgeOutlineStyles): T
 
 outlineStyle(style: Optional<OutlineStyle | EdgeOutlineStyles>): T
 
-设置元素的外描边样式。不设置该接口时，默认显示为一条实线。与[outlineStyle](#outlinestyle)相比，style参数新增了对undefined类型的支持。
+设置元素的外描边样式。需设置outlineWidth大于0，外描边样式才可见。不设置该接口时，默认显示为一条实线。与[outlineStyle](#outlinestyle)相比，style参数新增了对undefined类型的支持。
 
 卡片能力： 从API version 18开始，该接口支持在ArkTS卡片中使用。
 
@@ -181,7 +181,7 @@ outlineWidth(width: Optional<Dimension | EdgeOutlineWidths>): T
 
 outlineColor(value: ResourceColor | EdgeColors | LocalizedEdgeColors): T
 
-设置元素的外描边颜色。不设置该接口时，默认显示为黑色。
+设置元素的外描边颜色，需设置outlineWidth大于0，外描边颜色才可见。不设置该接口时，默认显示为黑色。
 
 卡片能力： 从API version 11开始，该接口支持在ArkTS卡片中使用。
 
@@ -205,7 +205,7 @@ outlineColor(value: ResourceColor | EdgeColors | LocalizedEdgeColors): T
 
 outlineColor(color: Optional<ResourceColor | EdgeColors | LocalizedEdgeColors>): T
 
-设置元素的外描边颜色。不设置该接口时，默认显示为黑色。与[outlineColor](#outlinecolor)相比，color参数新增了对undefined类型的支持。
+设置元素的外描边颜色。需设置outlineWidth大于0，外描边颜色才可见。不设置该接口时，默认显示为黑色。与[outlineColor](#outlinecolor)相比，color参数新增了对undefined类型的支持。
 
 卡片能力： 从API version 18开始，该接口支持在ArkTS卡片中使用。
 
@@ -217,7 +217,7 @@ outlineColor(color: Optional<ResourceColor | EdgeColors | LocalizedEdgeColors>):
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| color | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 设置元素的外描边颜色。 当color的值为undefined时，恢复为描边颜色为Color.Black的效果。 |
+| color | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 设置元素的外描边颜色。 当color的值为undefined时，恢复为外描边颜色为Color.Black的效果。 |
 
 返回值：
 
@@ -319,7 +319,7 @@ struct OutlineExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413078.png)
+ ![](./img/zh-cn_image_0000002685927981.png)
 
 #### [h2]示例2（使用LocalizedEdgeColors类型）
 
@@ -368,8 +368,8 @@ struct OutlineExample {
 ```
  从左至右显示语言示例图
 
-![](./img/zh-cn_image_0000002661732307.png)
+![](./img/zh-cn_image_0000002656008302.png)
 
 从右至左显示语言示例图
 
-![](./img/zh-cn_image_0000002631253186.png)
+![](./img/zh-cn_image_0000002655848382.png)

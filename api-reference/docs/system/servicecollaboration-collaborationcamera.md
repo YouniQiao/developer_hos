@@ -2,8 +2,8 @@
 title: "CollaborationCamera (跨设备互通组件)"
 upstream_id: "harmonyos-references/servicecollaboration-collaborationcamera"
 catalog: "harmonyos-references"
-content_hash: "53cd53ea28d7"
-synced_at: "2026-07-09T00:59:36.553518"
+content_hash: "2a8ad7d7d8c1"
+synced_at: "2026-07-28T16:50:54.185588"
 ---
 
 # CollaborationCamera (跨设备互通组件)
@@ -136,7 +136,7 @@ onState: (stateCode: number, buffer: ArrayBuffer) => void
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS 错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-servicecollaboration)。
+以下错误码的详细介绍请参见[错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-servicecollaboration)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |

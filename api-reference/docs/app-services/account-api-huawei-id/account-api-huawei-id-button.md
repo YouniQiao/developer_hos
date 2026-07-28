@@ -2,11 +2,15 @@
 title: "LoginWithHuaweiIDButton (华为账号Button登录组件)"
 upstream_id: "harmonyos-references/account-api-huawei-id-button"
 catalog: "harmonyos-references"
-content_hash: "ddd837cdeaff"
-synced_at: "2026-07-09T01:01:12.243287"
+content_hash: "20c68fee77d3"
+synced_at: "2026-07-28T16:52:30.022727"
 ---
 
 # LoginWithHuaweiIDButton (华为账号Button登录组件)
+
+本模块提供LoginWithHuaweiIDButton组件，应用通过集成该组件完成华为账号登录功能。
+
+LoginWithHuaweiIDButton需要配合[loginComponentManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager)一起使用，用于实现华为账号登录功能。LoginWithHuaweiIDButton组件文本内容默认支持多语言。
 
 起始版本： 4.1.0(11)
 
@@ -156,7 +160,6 @@ struct QuickLoginButtonComponent {
 
             Text($r('app.string.app_name'))
               .fontFamily($r('sys.string.ohos_id_text_font_family_medium'))
-              .fontWeight(FontWeight.Medium)
               .fontWeight(FontWeight.Bold)
               .maxFontSize($r('sys.float.ohos_id_text_size_headline8'))
               .minFontSize($r('sys.float.ohos_id_text_size_body1'))

@@ -2,8 +2,8 @@
 title: "DisplaySoloist_ExpectedRateRange"
 upstream_id: "harmonyos-references/capi-nativedisplaysoloist-displaysoloist-expectedraterange"
 catalog: "harmonyos-references"
-content_hash: "54d48e53301b"
-synced_at: "2026-07-09T01:01:00.361049"
+content_hash: "b6bc726ec8b9"
+synced_at: "2026-07-28T16:52:15.757765"
 ---
 
 # DisplaySoloist_ExpectedRateRange
@@ -14,7 +14,7 @@ typedef struct {...} DisplaySoloist_ExpectedRateRange
 
 #### 概述
 
-提供期望帧率范围结构体。
+期望帧率范围结构体，用于设置DisplaySoloist（可变帧率独立线程绘制）的期望帧率范围。设置的期望帧率范围将作为系统调度的参考，系统会尽量在此范围内调整绘制帧率。
 
 起始版本： 12
 
@@ -28,6 +28,6 @@ typedef struct {...} DisplaySoloist_ExpectedRateRange
 
 | 名称 | 描述 |
 | --- | --- |
-| int32_t min | 期望帧率范围最小值，取值范围为[0,120]。 |
-| int32_t max | 期望帧率范围最大值，取值范围为[0,120]。 |
-| int32_t expected | 期望帧率，取值范围为[0,120]。 |
+| int32_t min | 期望的最小帧率，单位为帧/秒（fps），取值范围为[0, 设备支持的最大刷新率]。 |
+| int32_t max | 期望的最大帧率，单位为帧/秒（fps），取值范围为[min, 设备支持的最大刷新率]。 |
+| int32_t expected | 期望的目标帧率，单位为帧/秒（fps），取值范围为[min, max]。 |

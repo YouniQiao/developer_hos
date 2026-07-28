@@ -2,8 +2,8 @@
 title: "tspan"
 upstream_id: "harmonyos-references/js-components-svg-tspan"
 catalog: "harmonyos-references"
-content_hash: "82826c25f537"
-synced_at: "2026-07-09T00:58:25.298581"
+content_hash: "c2ba54d12c84"
+synced_at: "2026-07-28T16:49:04.628224"
 ---
 
 # tspan
@@ -23,6 +23,8 @@ synced_at: "2026-07-09T00:58:25.298581"
 #### 子组件
 
 支持[tspan](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-svg-tspan)。
+
+#### 属性
 
 支持以下表格中的属性。
 
@@ -58,7 +60,7 @@ synced_at: "2026-07-09T00:58:25.298581"
       <tspan dx="-5" fill-opacity="0.2">first span.</tspan>
       <tspan dx="5" fill="red" font-size="25" fill-opacity="0.4">second span.</tspan>
       <tspan dy="-5" fill="#D2691E" font-size="35" rotate="-10" fill-opacity="0.6">third span.</tspan>
-      <tspan fill="#blue" font-size="40" rotate="10" fill-opacity="0.8" stroke="#00FF00" stroke-width="1px">forth span.</tspan>
+      <tspan fill="blue" font-size="40" rotate="10" fill-opacity="0.8" stroke="#00FF00" stroke-width="1px">fourth span.</tspan>
     </text>
   </svg>
 </div>
@@ -74,7 +76,7 @@ synced_at: "2026-07-09T00:58:25.298581"
     width: 1080px;
 }
 ```
- ![](./img/zh-cn_image_0000002631253948.png)
+ ![](./img/zh-cn_image_0000002655849154.png)
 
 属性动画示例
 
@@ -111,7 +113,7 @@ synced_at: "2026-07-09T00:58:25.298581"
     width: 1080px;
 }
 ```
- ![](./img/zh-cn_image_0000002661613129.gif)
+ ![](./img/zh-cn_image_0000002686088585.gif)
 
 ```
 <!-- xxx.hml -->
@@ -127,7 +129,7 @@ synced_at: "2026-07-09T00:58:25.298581"
   </svg>
 </div>
 ```
- ![](./img/zh-cn_image_0000002631413840.gif)
+ ![](./img/zh-cn_image_0000002685928755.gif)
 
 ```
 <!-- xxx.hml -->
@@ -142,7 +144,7 @@ synced_at: "2026-07-09T00:58:25.298581"
   </svg>
 </div>
 ```
- ![](./img/zh-cn_image_0000002661733071.gif)
+ ![](./img/zh-cn_image_0000002656009078.gif)
 
 ```
 <!-- xxx.hml -->
@@ -164,4 +166,4 @@ synced_at: "2026-07-09T00:58:25.298581"
   </svg>
 </div>
 ```
- ![](./img/zh-cn_image_0000002631253950.gif)
+ ![](./img/zh-cn_image_0000002655849156.gif)

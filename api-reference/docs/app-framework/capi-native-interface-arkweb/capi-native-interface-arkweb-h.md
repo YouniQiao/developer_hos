@@ -2,8 +2,8 @@
 title: "native_interface_arkweb.h"
 upstream_id: "harmonyos-references/capi-native-interface-arkweb-h"
 catalog: "harmonyos-references"
-content_hash: "ef433d36db4f"
-synced_at: "2026-07-09T00:58:55.570446"
+content_hash: "339fc8a58932"
+synced_at: "2026-07-28T16:49:57.238435"
 ---
 
 # native_interface_arkweb.h
@@ -46,7 +46,7 @@ native_interface_arkweb.h是ArkWeb Native API的核心入口头文件，定义�
 | [typedef void (*NativeArkWeb_OnDestroyCallback)(const char*)](#nativearkweb_ondestroycallback) | NativeArkWeb_OnDestroyCallback | 定义Web组件销毁时的回调函数的类型。 |
 | [typedef void (*OH_ArkWeb_OnCookieSaveCallback)(ArkWeb_ErrorCode errorCode)](#oh_arkweb_oncookiesavecallback) | OH_ArkWeb_OnCookieSaveCallback | 定义保存cookie的回调函数的类型。 **起始版本：** 20 |
 | [void OH_NativeArkWeb_RunJavaScript(const char* webTag, const char* jsCode, NativeArkWeb_OnJavaScriptCallback callback)](#oh_nativearkweb_runjavascript) | - | 在当前显示页面的环境下，加载并异步执行一段JavaScript代码。 |
-| [void OH_NativeArkWeb_RegisterJavaScriptProxy(const char* webTag, const char* objName, const char** methodList,NativeArkWeb_OnJavaScriptProxyCallback* callback, int32_t size, bool needRefresh)](#oh_nativearkweb_registerjavascriptproxy) | - | 注册对象及函数名称列表。 |
+| [void OH_NativeArkWeb_RegisterJavaScriptProxy(const char* webTag, const char* objName, const char** methodList, NativeArkWeb_OnJavaScriptProxyCallback* callback, int32_t size, bool needRefresh)](#oh_nativearkweb_registerjavascriptproxy) | - | 注册对象及函数名称列表。 |
 | [void OH_NativeArkWeb_UnregisterJavaScriptProxy(const char* webTag, const char* objName)](#oh_nativearkweb_unregisterjavascriptproxy) | - | 删除已注册的对象及其下的回调函数。 |
 | [void OH_NativeArkWeb_SetJavaScriptProxyValidCallback(const char* webTag, NativeArkWeb_OnValidCallback callback)](#oh_nativearkweb_setjavascriptproxyvalidcallback) | - | 设置对象可注册时的回调函数。 |
 | [NativeArkWeb_OnValidCallback OH_NativeArkWeb_GetJavaScriptProxyValidCallback(const char* webTag)](#oh_nativearkweb_getjavascriptproxyvalidcallback) | - | 获取已注册的对象可注册时的回调函数。 |
@@ -178,7 +178,7 @@ void OH_NativeArkWeb_RunJavaScript(const char* webTag, const char* jsCode, Nativ
 #### [h2]OH_NativeArkWeb_RegisterJavaScriptProxy()
 
 ```
-void OH_NativeArkWeb_RegisterJavaScriptProxy(const char* webTag, const char* objName, const char** methodList,NativeArkWeb_OnJavaScriptProxyCallback* callback, int32_t size, bool needRefresh)
+void OH_NativeArkWeb_RegisterJavaScriptProxy(const char* webTag, const char* objName, const char** methodList, NativeArkWeb_OnJavaScriptProxyCallback* callback, int32_t size, bool needRefresh)
 ```
  描述：
 
@@ -312,7 +312,7 @@ NativeArkWeb_OnDestroyCallback OH_NativeArkWeb_GetDestroyCallback(const char* we
 #### [h2]OH_NativeArkWeb_LoadData()
 
 ```
-ArkWeb_ErrorCode OH_NativeArkWeb_LoadData(const char* webTag,const char* data,const char* mimeType,const char* encoding,const char* baseUrl,const char* historyUrl)
+ArkWeb_ErrorCode OH_NativeArkWeb_LoadData(const char* webTag, const char* data, const char* mimeType, const char* encoding, const char* baseUrl, const char* historyUrl)
 ```
  描述：
 
@@ -330,7 +330,7 @@ ArkWeb_ErrorCode OH_NativeArkWeb_LoadData(const char* webTag,const char* data,co
 | const char* data | "Base64"或"URL"编码的字符串，不能为空。 |
 | const char* mimeType | 媒体类型，例如"text/html"，不能为空。 |
 | const char* encoding | 编码类型，例如"UTF-8"，不能为空。 |
-| const char* baseUrl | 指定的URL路径("http"/"https"/"data"协议),由Web组件分配给window.origin。 |
+| const char* baseUrl | 指定的URL路径（"http"/"https"/"data"协议），由Web组件分配给window.origin。 |
 | const char* historyUrl | 历史URL，当它不为空时，可以通过历史记录来管理，实现前进和后退功能。 |
 
 返回：
@@ -390,7 +390,7 @@ void OH_ArkWebCookieManager_SaveCookieAsync(OH_ArkWeb_OnCookieSaveCallback callb
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_ArkWeb_OnCookieSaveCallback](#oh_arkweb_oncookiesavecallback)* callback | 保存cookie完成后执行该回调。 |
+| [OH_ArkWeb_OnCookieSaveCallback](#oh_arkweb_oncookiesavecallback) callback | 保存cookie完成后执行该回调。 |
 
 #### [h2]OH_NativeArkWeb_GetBlanklessInfoWithKey()
 
@@ -434,7 +434,11 @@ ArkWeb_BlanklessErrorCode OH_NativeArkWeb_SetBlanklessLoadingWithKey(const char*
 ```
  描述：
 
-设置无白屏加载是否启用。本接口必须与[OH_NativeArkWeb_GetBlanklessInfoWithKey](#oh_nativearkweb_getblanklessinfowithkey)接口配套使用。
+设置无白屏加载是否启用。本接口必须与OH_NativeArkWeb_GetBlanklessInfoWithKey接口配套使用。
+
+使用场景：
+
+根据页面首屏加载预测信息动态决定是否启用无白屏加载时使用，例如当相似度预测值较高时启用无白屏加载优化，当相似度较低时不启用以避免资源浪费。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -452,13 +456,13 @@ ArkWeb_BlanklessErrorCode OH_NativeArkWeb_SetBlanklessLoadingWithKey(const char*
 | --- | --- |
 | const char* webTag | Web组件名称。 |
 | const char* key | 唯一标识本页面的key值。必须与[OH_NativeArkWeb_GetBlanklessInfoWithKey](#oh_nativearkweb_getblanklessinfowithkey)接口的key值相同。 合法取值范围：非空，长度不超过2048个字符。 非法值设置行为：返回错误码[ArkWeb_BlanklessErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkweb-error-code-h#arkweb_blanklesserrorcode)，插帧不生效。 |
-| bool isStarted | 是否启用开始插帧，true：启用，false：不启用。 默认值：false。 |
+| bool isStarted | 是否启用插帧。true：启用插帧，当页面首屏相似度较高且需要减少白屏时间以提升加载体验时选择；false：不启用插帧，当页面跳变过大导致相似度较低或不需要优化加载体验时选择。 默认值：false。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| [ArkWeb_BlanklessErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkweb-error-code-h#arkweb_blanklesserrorcode) | 返回接口调用是否成功，具体见[ArkWeb_BlanklessErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkweb-error-code-h#arkweb_blanklesserrorcode)定义。 |
+| [ArkWeb_BlanklessErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkweb-error-code-h#arkweb_blanklesserrorcode) | 返回错误码，具体见[ArkWeb_BlanklessErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkweb-error-code-h#arkweb_blanklesserrorcode)定义。 |
 
 #### [h2]OH_NativeArkWeb_ClearBlanklessLoadingCache()
 
@@ -481,9 +485,13 @@ void OH_NativeArkWeb_ClearBlanklessLoadingCache(const char* key[], uint32_t size
 
 | 参数项 | 描述 |
 | --- | --- |
-| const char* key[] | 清除Blankless优化方案页面的key值列表，key值为[OH_NativeArkWeb_GetBlanklessInfoWithKey](#oh_nativearkweb_getblanklessinfowithkey)中指定过的。 默认值：所有Blankless优化方案缓存的页面key列表。 合法取值范围：长度不超过2048，key列表长度描述：
+| const char* key[] | 清除Blankless优化方案页面的key值列表，key值为[OH_NativeArkWeb_GetBlanklessInfoWithKey](#oh_nativearkweb_getblanklessinfowithkey)中指定过的。 合法取值范围：长度不超过2048，keys数组长度描述：
 
 设置无白屏加载方案的持久化缓存容量，返回实际生效值。默认缓存容量为30MB，最大值为100MB。当实际缓存超过容量时，将采用淘汰不常用的过渡帧的方式清理。
+
+使用场景：
+
+使用者需要自定义缓存容量的场景。
 
 起始版本： 20
 
@@ -491,13 +499,13 @@ void OH_NativeArkWeb_ClearBlanklessLoadingCache(const char* key[], uint32_t size
 
 | 参数项 | 描述 |
 | --- | --- |
-| uint32_t capacity | 设置持久化缓存设置，单位MB，最大设置不超过100MB。 默认值：30MB。 合法取值范围：0~100，当设置为0时，无缓存空间，则功能全局不开启。 非法值处理行为：大于100时生效值为100。 |
+| uint32_t capacity | 设置持久化缓存容量，单位MB，最大设置不超过100MB。 默认值：30MB。 合法取值范围：0~100，当设置为0时，无缓存空间，则功能全局不开启。 非法值处理行为：大于100时生效值为100。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| uint32_t | 返回实际生效的容量值，范围0~100。 大于100时生效值为100。 |
+| uint32_t | 返回实际生效的容量值，单位为MB，范围0~100。 大于100时生效值为100。 |
 
 #### [h2]OH_NativeArkWeb_SetActiveWebEngineVersion()
 

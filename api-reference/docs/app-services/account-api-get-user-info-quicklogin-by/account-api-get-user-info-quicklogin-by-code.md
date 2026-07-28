@@ -2,8 +2,8 @@
 title: "一键登录获取华为账号绑定号码和UnionID/OpenID"
 upstream_id: "harmonyos-references/account-api-get-user-info-quicklogin-by-code"
 catalog: "harmonyos-references"
-content_hash: "583c253817c5"
-synced_at: "2026-07-09T01:01:13.034468"
+content_hash: "1c304697baff"
+synced_at: "2026-07-28T16:52:30.620673"
 ---
 
 # 一键登录获取华为账号绑定号码和UnionID/OpenID
@@ -102,7 +102,7 @@ Content-Type: application/json
     "unionId": "AQAxrB1HNA*****n-IfWRSUVq2M7xU",
     // 华为账号绑定号码，使用该手机号完成一键登录（返回数据实际为明文）
     "phoneNumber": "0086191******08",
-    // 通过一键登录功能获取的华为账号绑定号码的实时有效性, 0表示需要进一步验证有效性， 1表示可以直接使用
+    // 通过一键登录功能获取的华为账号绑定号码的实时有效性，0表示需要进一步验证有效性，1表示可以直接使用
     "phoneNumberValid": 1,
     // 不带国际冠码与国际电话区号的形式（返回数据实际为明文）
     "purePhoneNumber": "191******08",
@@ -196,7 +196,7 @@ public class GetQuickLoginMobilePhoneByCodeDemo {
 | 60010002 | 参数不合法。 | 请按照错误描述及接口[Request Body](#request-body)参数说明检查入参。 |
 | 60010012 | code参数不正确。 | code参数传值不正确，可能原因：伪造的无效code或code被篡改。 |
 | 60010013 | clientSecret参数不正确。 | clientSecret参数传值不正确，参数取值详见[查看应用基本信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-appinfo-0000001100014694)中的**OAuth 2.0客户端ID（凭据）-Client Secret**参数。 |
-| 60180003 | code中的client_id和入参不一致。 | code参数获取时的clientId与当前接口参数clientId不一致导致，请检查入参client_id是否与[配置Client ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id)中的值一致。 |
+| 60180003 | code解析得到的Client ID与入参clientId不一致。 | code参数获取时的clientId与当前接口参数clientId不一致导致，请检查入参clientId是否与[配置Client ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id)中的值一致。 |
 | 60180004 | code过期，code只有5分钟有效期，超过有效期后将无法继续使用。 | 请引导用户重新授权，获取新的code再重试。 |
 | 60180005 | code已经被使用过。 | code只能用一次，请重新获取code再重试。 |
 | 60180006 | code已失效。正常code有效期为5分钟，但是由于用户的行为（如更改密码、取消应用的授权等行为），导致华为服务器提前失效已颁发的code。 | 请引导用户重新授权，获取新的code再重试。 |

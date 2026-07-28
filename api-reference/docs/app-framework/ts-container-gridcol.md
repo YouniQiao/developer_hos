@@ -2,15 +2,15 @@
 title: "GridCol"
 upstream_id: "harmonyos-references/ts-container-gridcol"
 catalog: "harmonyos-references"
-content_hash: "4df273bb7f9d"
-synced_at: "2026-07-09T00:57:46.316074"
+content_hash: "856f8da5e9eb"
+synced_at: "2026-07-28T16:43:17.035002"
 ---
 
 # GridCol
 
-栅格子组件，必须作为栅格容器组件([GridRow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-gridrow))的子组件使用。
+栅格布局系统中的列组件，必须作为栅格容器组件([GridRow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-gridrow))的子组件使用。适用于响应式布局、多设备适配等需要动态调整列宽的场景。支持响应式断点配置、跨列布局、偏移和排序功能。使用GridCol组件可以快速实现响应式布局，简化多设备适配的开发工作。
 
-![](./img/note_3.0-zh-cn.png) 该组件从API version 9开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+![](./img/note_3.0-zh-cn.png) 该组件从API version 9开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
 #### 子组件
 
@@ -20,7 +20,7 @@ synced_at: "2026-07-09T00:57:46.316074"
 
 GridCol(option?: GridColOptions)
 
-栅格列布局组件。
+栅格列布局组件。创建成功后，可根据配置的span、offset、order属性进行栅格布局，作为GridRow的子组件参与栅格系统的布局计算。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -32,7 +32,7 @@ GridCol(option?: GridColOptions)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| option | [GridColOptions](#gridcoloptions对象说明) | 否 | 栅格列布局组件布局选项。 |
+| option | [GridColOptions](#gridcoloptions对象说明) | 否 | 栅格布局子组件配置选项，可配置span（占用列数）、offset（偏移列数）、order（排序序号）。当需要自定义栅格布局行为（如响应式列宽、固定偏移位置、指定渲染顺序）时传入此参数；当使用默认栅格布局时可不传入。不传入时使用默认配置。 |
 
 #### GridColOptions对象说明
 
@@ -46,13 +46,13 @@ GridCol(option?: GridColOptions)
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| span | number | [GridColColumnOption](#gridcolcolumnoption) | 否 | 是 | 栅格子组件占用栅格容器组件的列数。span为0表示该元素不参与布局计算，即不会被渲染。 取值为非负整数，默认值为1 非法值：按默认值处理。 |
-| offset | number | [GridColColumnOption](#gridcolcolumnoption) | 否 | 是 | 栅格子组件相对于原本位置偏移的列数。 取值为非负整数，默认值为0 非法值：按默认值处理。 |
+| span | number | [GridColColumnOption](#gridcolcolumnoption) | 否 | 是 | 栅格子组件占用栅格容器组件的列数。span为0表示该元素不参与布局计算，即不会被渲染。 取值为非负整数，默认值为1。 非法值：按默认值处理。 |
+| offset | number | [GridColColumnOption](#gridcolcolumnoption) | 否 | 是 | 栅格子组件相对于原本位置偏移的列数。offset为0表示不偏移。 取值为非负整数，默认值为0。 非法值：按默认值处理。 |
 | order | number | [GridColColumnOption](#gridcolcolumnoption) | 否 | 是 | 元素的序号，根据栅格子组件的序号，从小到大对栅格子组件做排序。 取值为非负整数，默认值为0。 非法值：按默认值处理。 **说明：** 当子组件不设置order或者设置相同的order，子组件按照代码顺序展示。 当子组件部分设置order，部分不设置order时，未设置order的子组件依次排序靠前，设置了order的子组件按照数值从小到大排列。 |
 
 span、offset、order属性按照xs、sm、md、lg、xl、xxl的顺序具有“继承性”，未设置值的断点将会从前一个断点取值。
 
-API version 20之后，span的继承规则见[GridColColumnOption](#gridcolcolumnoption)。
+API version 20之后，span的继承规则见[GridColColumnOption](#gridcolcolumnoption)，offset和order的继承规则保持不变。
 
 #### 属性
 
@@ -62,7 +62,7 @@ API version 20之后，span的继承规则见[GridColColumnOption](#gridcolcolum
 
 span(value: number | GridColColumnOption)
 
-设置占用列数。span为0，意味着该元素不参与布局计算，即不会被渲染。
+设置栅格子组件占用列数。调用成功后，栅格子组件将按照设置的列数占据相应宽度的栅格区域。span为0表示该元素不参与布局计算，即不会被渲染。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -74,13 +74,13 @@ span(value: number | GridColColumnOption)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | [GridColColumnOption](#gridcolcolumnoption) | 是 | 占用列数。 取值为非负整数，默认值为1。 非法值：按默认值处理。 |
+| value | number | [GridColColumnOption](#gridcolcolumnoption) | 是 | 占用列数。span为0表示该元素不参与布局计算，即不会被渲染。 取值为非负整数，默认值为1。 非法值：按默认值处理。 **说明：** 该属性具有断点继承性，详见[GridColOptions对象说明](#gridcoloptions对象说明)。API version 20之后，默认值继承规则有变化，详见[GridColColumnOption](#gridcolcolumnoption)。 |
 
 #### [h2]gridColOffset
 
 gridColOffset(value: number | GridColColumnOption)
 
-设置相对于前一个栅格子组件偏移的列数。
+设置栅格子组件相对于原本位置偏移的列数。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -92,7 +92,7 @@ gridColOffset(value: number | GridColColumnOption)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | [GridColColumnOption](#gridcolcolumnoption) | 是 | 相对于前一个栅格子组件偏移的列数。 取值为非负整数，默认值：0 非法值：按默认值处理。 |
+| value | number | [GridColColumnOption](#gridcolcolumnoption) | 是 | 相对于原本位置偏移的列数。gridColOffset为0表示不偏移。 取值为非负整数，默认值为0。 非法值：按默认值处理。 **说明：** 该属性具有断点继承性，详见[GridColOptions对象说明](#gridcoloptions对象说明)。 |
 
 #### [h2]order
 
@@ -110,7 +110,7 @@ order(value: number | GridColColumnOption)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | [GridColColumnOption](#gridcolcolumnoption) | 是 | 元素的序号，根据栅格子组件的序号，从小到大对栅格子组件做排序。 取值为非负整数，默认值：0 非法值：按默认值处理。 |
+| value | number | [GridColColumnOption](#gridcolcolumnoption) | 是 | 元素序号，根据栅格子组件的序号从小到大排序。 取值为非负整数，默认值为0。 非法值：按默认值处理。 **说明：** 该属性具有断点继承性，详见[GridColOptions对象说明](#gridcoloptions对象说明)。 |
 
 #### GridColColumnOption
 
@@ -138,12 +138,12 @@ span: {md:4, lg:8} // 等于配置 span: {xs:4, sm:4, md:4, lg:8, xl:8, xxl:8}
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| xs | number | 否 | 是 | 在栅格大小为xs的设备上，栅格容器组件的栅格列数。 |
-| sm | number | 否 | 是 | 在栅格大小为sm的设备上，栅格容器组件的栅格列数。 |
-| md | number | 否 | 是 | 在栅格大小为md的设备上，栅格容器组件的栅格列数。 |
-| lg | number | 否 | 是 | 在栅格大小为lg的设备上，栅格容器组件的栅格列数。 |
-| xl | number | 否 | 是 | 在栅格大小为xl的设备上，栅格容器组件的栅格列数。 |
-| xxl | number | 否 | 是 | 在栅格大小为xxl的设备上，栅格容器组件的栅格列数。 |
+| xs | number | 否 | 是 | 在最小宽度类型设备上，栅格子组件占据的栅格列数。取值为非负整数。默认值为1。非法值：按默认值处理。 |
+| sm | number | 否 | 是 | 在小宽度类型设备上，栅格子组件占据的栅格列数。取值为非负整数。默认值为1。非法值：按默认值处理。 |
+| md | number | 否 | 是 | 在中等宽度类型设备上，栅格子组件占据的栅格列数。取值为非负整数。默认值为1。非法值：按默认值处理。 |
+| lg | number | 否 | 是 | 在大宽度类型设备上，栅格子组件占据的栅格列数。取值为非负整数。默认值为1。非法值：按默认值处理。 |
+| xl | number | 否 | 是 | 在特大宽度类型设备上，栅格子组件占据的栅格列数。取值为非负整数。默认值为1。非法值：按默认值处理。 |
+| xxl | number | 否 | 是 | 在超大宽度类型设备上，栅格子组件占据的栅格列数。取值为非负整数。默认值为1。非法值：按默认值处理。 |
 
 #### 事件
 
@@ -164,9 +164,11 @@ struct GridColExample {
 
   build() {
     Column() {
+      // 创建栅格容器，配置列数、间距和响应式断点
       GridRow({
         columns: 5,
         gutter: { x: 5, y: 10 },
+        // 设置响应式断点，基于窗口尺寸判断
         breakpoints: {
           value: ['400vp', '600vp', '800vp'],
           reference: BreakpointsReference.WindowSize
@@ -174,6 +176,7 @@ struct GridColExample {
         direction: GridRowDirection.Row
       }) {
         ForEach(this.bgColors, (color: Color) => {
+          // 配置不同断点下的span值，实现响应式布局
           GridCol({
             span: { xs: 1, sm: 2, md: 3, lg: 4 },
             offset: 0,
@@ -191,4 +194,4 @@ struct GridColExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612457.png)
+ ![](./img/zh-cn_image_0000002656008392.png)

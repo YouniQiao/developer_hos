@@ -2,8 +2,8 @@
 title: "@ohos.bluetoothManager (蓝牙)"
 upstream_id: "harmonyos-references/js-apis-bluetoothmanager"
 catalog: "harmonyos-references"
-content_hash: "4e8d74b9a5e7"
-synced_at: "2026-07-09T00:59:25.728957"
+content_hash: "ed535ec000f9"
+synced_at: "2026-07-28T16:50:41.532214"
 ---
 
 # @ohos.bluetoothManager (蓝牙)
@@ -12,7 +12,7 @@ synced_at: "2026-07-09T00:59:25.728957"
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 9开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
-从API Version 10 开始，该接口不再维护，推荐使用[@ohos.bluetooth.ble](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bluetooth-ble)等相关profile接口。
+从API Version 10 开始，该接口不再维护，推荐使用[@ohos.bluetooth.ble (蓝牙ble模块)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bluetooth-ble)等相关Profile接口。
 
 #### 导入模块
 
@@ -4936,8 +4936,8 @@ try {
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| STATE_NOT_PLAYING | 0x0000 | 表示未播放。 |
-| STATE_PLAYING | 0x0001 | 表示正在播放。 |
+| STATE_NOT_PLAYING | 0 | 表示未播放。 |
+| STATE_PLAYING | 1 | 表示正在播放。 |
 
 #### ProfileId(deprecated)
 

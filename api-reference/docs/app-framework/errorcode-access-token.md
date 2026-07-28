@@ -2,8 +2,8 @@
 title: "访问控制错误码"
 upstream_id: "harmonyos-references/errorcode-access-token"
 catalog: "harmonyos-references"
-content_hash: "94d3092ee73f"
-synced_at: "2026-07-09T00:57:13.982342"
+content_hash: "d87ce5379072"
+synced_at: "2026-07-28T16:40:47.236037"
 ---
 
 # 访问控制错误码
@@ -37,7 +37,7 @@ Invalid Parameter. Error message: messageInfo.
 
 处理步骤
 
-检查入参，修正参数值为有效值，有效值请参考各[接口参数说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-abilityaccessctrl)。
+检查入参，修正参数值为有效值，有效值请参考[@ohos.abilityAccessCtrl (程序访问控制管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-abilityaccessctrl)中对应接口的参数说明。
 
 #### 12100004 接口未配套使用
 
@@ -47,17 +47,23 @@ The API is not used in pair with others.
 
 错误描述
 
-当接口未配套使用时，将返回该错误码。
+当接口未按配套关系调用，或在未解除配套关系前重复调用时，将返回该错误码。
 
 可能原因
 
-1. 当前接口在未配套使用的情况下，重复调用。
+1. 当前接口在未解除配套关系前，使用相同入参重复调用。
 2. 当前接口在未配套使用的情况下，单独调用。
 
 处理步骤
 
-1. 检查当前接口是否有配套使用，如调用启动记录的接口后，在未调用停止记录的接口前，不可再次使用相同的入参调用启动记录接口。
-2. 检查当前接口是否有配套使用，如停止记录的接口需要在启动记录的接口调用之后方可调用，注销监听接口需要在注册监听接口调用之后方可调用。
+检查当前接口是否有配套使用：
+
+- 注册监听接口和注销监听接口需配套使用：调用注册监听接口后，在未调用对应注销监听接口前，不可再次使用相同的入参调用注册监听接口；注销监听接口需要在对应注册监听接口调用之后方可调用。
+
+相关方法：
+
+- 订阅自身权限状态变更事件：[on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-abilityaccessctrl#on18)
+- 取消订阅自身权限状态变更事件：[off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-abilityaccessctrl#off18)
 
 #### 12100005 监听器数量超过限制
 
@@ -71,7 +77,7 @@ The number of listeners exceeds the limit.
 
 可能原因
 
-该错误码表示当前监听器数量超过限制200个。
+注册的监听器数量超过系统限制的200个上限。
 
 处理步骤
 
@@ -90,7 +96,7 @@ The service is abnormal.
 可能原因
 
 1. 权限管理服务无法正常启动。
-2. IPC数据读取写入失败。
+2. IPC（Inter-Process Communication，进程间通信）数据读取写入失败。
 
 处理步骤
 
@@ -104,22 +110,22 @@ Common inner error.
 
 错误描述
 
-当服务内部发生错误或权限弹框发生错误时，将返回该错误码。
+当服务内部发生错误或权限弹窗发生错误时，将返回该错误码。
 
 可能原因
 
 1. 内部错误 系统服务内部异常或数据库错误。
-2. 权限弹框错误 应用处于后台，无法正常拉起弹框。
-3. 设备处于锁屏状态，无法正常拉起弹框。
-4. 拉起弹框后未及时处理，弹框进程因应用退出而被系统回收，例如用户在多任务界面清理应用进程。
+2. 权限弹窗错误 应用处于后台，无法正常拉起弹窗。
+3. 设备处于锁屏状态，无法正常弹出弹窗。
+4. 拉起弹窗后未及时处理，弹窗进程因应用退出而被系统回收，例如用户在多任务界面清理应用进程。
 
 处理步骤
 
 1. 内部错误 建议重启设备后重试。
-2. 权限弹框错误 确认应用处于前台状态后再发起弹框请求。
-3. 确认设备处于解锁状态后再发起弹框请求。
-4. 确认弹框已被及时处理，若弹框进程因应用退出而被系统回收则无需额外操作。
-5. 若您的问题仍无法解决，请通过在线提单提交问题说明及日志信息，支持人员会及时处理。
+2. 权限弹窗错误 确认应用处于前台状态后再发起弹窗请求。
+3. 确认设备处于解锁状态后再发起弹窗请求。
+4. 确认弹窗已被及时处理，若弹窗进程因应用退出而被系统回收则无需额外操作。
+5. 若问题仍无法解决，请开发者通过在线提交工单反馈问题说明及日志信息，技术支持人员会及时处理。
 
 #### 12100010 存在未被处理的请求
 
@@ -137,7 +143,7 @@ The request already exists.
 
 处理步骤
 
-请处理完上次请求。
+请等待上一次权限请求完成，并根据上一次请求的返回结果完成授权处理后再重新发起请求。
 
 #### 12100011 输入的所有权限均已被授权
 
@@ -155,7 +161,7 @@ All permissions in the permission list have been granted.
 
 处理步骤
 
-无需处理，返回此错误码表示申请权限已被授权，不会拉起权限设置弹框。
+无需处理，返回此错误码表示申请权限已被授权，不会弹出权限设置弹窗。
 
 #### 12100012 输入的权限中存在未被用户拒绝过的权限
 
@@ -191,7 +197,7 @@ The specific global switch is already open.
 
 处理步骤
 
-无需处理，返回此错误码表示全局开关已开启，不会拉起全局开关设置弹框。
+无需处理，返回此错误码表示全局开关已开启，不会弹出全局开关设置弹窗。
 
 #### 12100014 非预期的权限
 
@@ -205,9 +211,9 @@ Unexpected permission.
 
 可能原因
 
-1. [再次拉起权限设置弹框](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-abilityaccessctrl#requestpermissiononsetting12)时，传入了manual_settings授权方式的权限。
+1. 调用[requestPermissionOnSetting](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-abilityaccessctrl#requestpermissiononsetting12)再次弹出权限设置弹窗时，传入了manual_settings授权方式的权限。
 2. 授权或取消授权时，传入了非user_grant和manual_settings授权方式的权限。
-3. [拉起跳转设置页弹窗](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-abilityaccessctrl#openpermissiononsetting22)时，传入了非manual_settings授权方式的权限。
+3. 调用[openPermissionOnSetting](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-abilityaccessctrl#openpermissiononsetting22)拉起跳转设置页弹窗时，传入了非manual_settings授权方式的权限。
 
 处理步骤
 

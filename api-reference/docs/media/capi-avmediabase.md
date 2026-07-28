@@ -2,8 +2,8 @@
 title: "AVMediaBase"
 upstream_id: "harmonyos-references/capi-avmediabase"
 catalog: "harmonyos-references"
-content_hash: "be712193ff5a"
-synced_at: "2026-07-09T01:00:40.133845"
+content_hash: "2b3d6bd56cec"
+synced_at: "2026-07-28T16:51:57.906446"
 ---
 
 # AVMediaBase
@@ -11,8 +11,6 @@ synced_at: "2026-07-09T01:00:40.133845"
 #### 概述
 
 定义AVMedia的结构体和枚举类型。
-
-系统能力： SystemCapability.Multimedia.Media.Core
 
 起始版本： 23
 

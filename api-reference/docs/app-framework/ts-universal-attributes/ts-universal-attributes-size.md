@@ -2,25 +2,25 @@
 title: "尺寸设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-size"
 catalog: "harmonyos-references"
-content_hash: "4a02fb53a0eb"
-synced_at: "2026-07-09T00:57:38.469441"
+content_hash: "899d02fcc1c3"
+synced_at: "2026-07-28T16:42:03.867005"
 ---
 
 # 尺寸设置
 
-设置组件的宽高、边距。
+设置组件的宽高、边距。通过设置组件尺寸相关属性，可以实现灵活的页面布局和响应式设计，常见场景包括固定组件大小、按比例分配布局空间、设置组件内外边距、实现安全区域适配等。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 从API version 7开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
-- 如果组件的尺寸通过百分比进行设置， 在计算组件尺寸的百分比大小时，参考最近设置了固定大小的祖先节点的尺寸。
+- 从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
+- 如果组件的尺寸通过百分比进行设置，在计算组件尺寸的百分比大小时，参考最近设置了固定大小的祖先节点的尺寸。
 - 从API version 10开始，尺寸设置内部分属性支持使用calc计算特性，具体支持属性请参考对应的属性说明。calc计算特性是一种动态计算长度值的函数，常用于灵活设置布局尺寸（如宽度、高度、边距等）。它允许通过数学表达式组合不同单位和数值，支持通过加减乘除括号运算符组成计算表达式，实现动态响应式设计。注意，在使用calc时，运算符与数值之间需要使用空格隔开。具体使用场景可见[示例1](#示例1设置组件的宽高和边距)。
 
 #### width
 
 width(value: Length): T
 
-设置组件自身的宽度，缺省时使用元素自身内容需要的宽度。若子组件的宽大于父组件的宽，则会超出父组件的范围。
+设置组件自身的宽度，缺省时使用子组件自身内容需要的宽度。若子组件的宽大于父组件的宽，则子组件会溢出显示在父组件外部。
 
 从API version 10开始，该接口支持calc计算特性。
 
@@ -34,24 +34,25 @@ width(value: Length): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 是 | 要设置的组件宽度。 单位：vp |
+| value | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 是 | 要设置的组件宽度。 单位：vp 设置百分比时，以父容器的宽度作为基础值。 异常值：参数为undefined时，属性设置不生效；其它异常值时，width属性恢复到不配置时的默认行为。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件对象，用于链式调用。 |
 
 ![](./img/note_3.0-zh-cn.png)
 
 - 在[TextInput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textinput)组件中，width设置auto表示自适应文本宽度。
 - 在[AlphabetIndexer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-alphabet-indexer)组件中，width设置auto表示自适应宽度最大索引项的宽度。
+- 在[Row](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-row)、[Column](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-column)、[RelativeContainer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-relativecontainer)组件中，width设置auto表示自适应子组件。
 
 #### height
 
 height(value: Length): T
 
-设置组件自身的高度，缺省时使用元素自身内容需要的高度。若子组件的高大于父组件的高，则会超出父组件的范围。
+设置组件自身的高度，缺省时使用子组件自身内容需要的高度。若子组件的高大于父组件的高，则子组件会溢出显示在父组件外部。
 
 从API version 10开始，该接口支持calc计算特性。
 
@@ -65,13 +66,13 @@ height(value: Length): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 是 | 要设置的组件高度。 单位：vp |
+| value | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 是 | 要设置的组件高度。 单位：vp 设置百分比时，以父容器的高度作为基础值。 异常值：参数为undefined时，属性设置不生效；其它异常值时，height属性恢复到不配置时的默认行为。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件对象，用于链式调用。 |
 
 ![](./img/note_3.0-zh-cn.png) 在[Row](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-row)、[Column](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-column)、[RelativeContainer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-relativecontainer)组件中，width、height设置auto表示自适应子组件。
 
@@ -79,7 +80,9 @@ height(value: Length): T
 
 width(widthValue: Length | LayoutPolicy): T
 
-设置组件自身的宽度或水平方向布局策略，缺省时使用元素自身内容需要的宽度。若子组件的宽大于父组件的宽，则会超出父组件的范围。
+设置组件自身的宽度或水平方向布局策略，缺省时使用子组件自身内容需要的宽度。若子组件的宽大于父组件的宽，则子组件会溢出显示在父组件外部。
+
+从API version 15开始，当参数为Length类型时，该接口支持calc计算特性。
 
 卡片能力： 从API version 15开始，该接口支持在ArkTS卡片中使用。
 
@@ -93,19 +96,21 @@ width(widthValue: Length | LayoutPolicy): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| widthValue | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | [LayoutPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#layoutpolicy15) | 是 | 要设置的组件宽度或水平方向布局策略。 单位：vp |
+| widthValue | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | [LayoutPolicy](#layoutpolicy15) | 是 | 要设置的组件宽度或水平方向布局策略。 单位：vp 设置百分比时，以父容器的宽度作为基础值。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件对象，用于链式调用。 |
 
 #### height15+
 
 height(heightValue: Length | LayoutPolicy): T
 
-设置组件自身的高度或垂直方向布局策略，缺省时使用元素自身内容需要的高度。若子组件的高大于父组件的高，则会超出父组件的范围。
+设置组件自身的高度或垂直方向布局策略，缺省时使用子组件自身内容需要的高度。若子组件的高大于父组件的高，则子组件会溢出显示在父组件外部。
+
+从API version 15开始，当参数为Length类型时，该接口支持calc计算特性。
 
 卡片能力： 从API version 15开始，该接口支持在ArkTS卡片中使用。
 
@@ -119,19 +124,19 @@ height(heightValue: Length | LayoutPolicy): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| heightValue | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | [LayoutPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#layoutpolicy15) | 是 | 要设置的组件高度或垂直方向布局策略。 单位：vp |
+| heightValue | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | [LayoutPolicy](#layoutpolicy15) | 是 | 要设置的组件高度或垂直方向布局策略。 单位：vp 设置百分比时，以父容器的高度作为基础值。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件对象，用于链式调用。 |
 
 #### size
 
 size(value: SizeOptions): T
 
-设置组件自身的宽高尺寸。
+设置组件自身的宽高尺寸。设置后会影响组件在父容器中的布局和显示大小。
 
 从API version 10开始，该接口支持calc计算特性。
 
@@ -151,13 +156,13 @@ size(value: SizeOptions): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件对象，用于链式调用。 |
 
 #### padding
 
 padding(value: Padding | Length | LocalizedPadding): T
 
-设置组件的内边距属性。
+设置组件的内边距属性。设置后会在组件内容和边框之间创建额外空间，影响组件内部内容的布局区域。
 
 从API version 10开始，该接口支持calc计算特性。
 
@@ -177,7 +182,7 @@ padding(value: Padding | Length | LocalizedPadding): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件对象，用于链式调用。 |
 
 #### margin
 
@@ -197,19 +202,19 @@ margin(value: Margin | Length | LocalizedMargin): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [Margin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#margin) | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | [LocalizedMargin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#localizedmargin12)12+ | 是 | 设置组件的外边距。 参数为Length类型时，四个方向外边距同时生效。 默认值：0 单位：vp margin设置百分比时，上下左右外边距均以父容器的width作为基础值。在[Row](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-row)、[Column](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-column)、[Flex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-flex)交叉轴上布局时，子组件交叉轴的大小与margin的和为整体。 例如Column容器宽100，其中子组件宽50，margin left为10，right为20，子组件水平方向偏移10。 |
+| value | [Margin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#margin) | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | [LocalizedMargin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#localizedmargin12)12+ | 是 | 设置组件的外边距。 参数为Length类型时，四个方向外边距同时生效。 默认值：0 单位：vp margin设置百分比时，上下左右外边距均以父容器的width作为基础值。在[Row](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-row)、[Column](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-column)、[Flex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-flex)交叉轴上布局时，子组件在交叉轴方向占用的空间包含子组件本身尺寸和margin值。 例如Column容器宽100，其中子组件宽50，margin left为10，right为20，子组件宽度与左右margin之和为50+10+20=80，小于容器宽度100，子组件在交叉轴方向居中对齐，此时水平方向左侧和右侧各有(100-80)/2=10的空白区域。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件对象，用于链式调用。 |
 
 #### safeAreaPadding14+
 
 safeAreaPadding(paddingValue: Padding | LengthMetrics | LocalizedPadding): T
 
-设置安全区边距属性。允许容器向自身添加组件级安全区域，供子组件延伸，支持[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)动态设置属性方法。
+设置安全区边距属性。允许容器向自身添加组件级安全区域，供子组件延伸，支持[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)动态设置属性方法。与padding不同，safeAreaPadding用于设置组件级安全区域供子组件延伸使用，而padding用于设置组件内容区域的内边距，两者可同时设置、分别生效。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 18开始，该接口支持在[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)中调用。
 
@@ -225,13 +230,13 @@ safeAreaPadding(paddingValue: Padding | LengthMetrics | LocalizedPadding): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| paddingValue | [Padding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#padding) | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | [LocalizedPadding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#localizedpadding12) | 是 | 设置组件的安全区边距。 默认值：0 单位：vp |
+| paddingValue | [Padding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#padding) | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | [LocalizedPadding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#localizedpadding12) | 是 | 设置组件的安全区边距，用于在组件内部创建组件级安全区域供子组件延伸使用。 默认值：0 单位：vp paddingValue设置百分比时，上下左右内边距均以父容器的width作为基础值。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件对象，用于链式调用。 |
 
 ![](./img/note_3.0-zh-cn.png) 当父辈和祖先容器设置了组件级安全区域时，子组件可以感知并利用该区域，称该区域为累计安全区延伸（accumulatedSafeAreaExpand，下文简称SAE），表示子组件在四个方向上各可延伸的长度。当祖辈与更上一级祖辈的safeAreaPadding相邻接（即未被margin、border、padding分隔）时，SAE将递归地向外累积，直至不存在相邻的更外层safeAreaPadding或递归至页面容器外。系统级避让区域（如状态栏、导航条、挖孔区等，详情参见[安全区域](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-expand-safe-area)中的说明）可视为页面容器特有的safeAreaPadding，同样参与该延伸范围的计算。
 
@@ -241,7 +246,7 @@ safeAreaPadding(paddingValue: Padding | LengthMetrics | LocalizedPadding): T
 
 layoutWeight(value: number | string): T
 
-设置组件的布局权重，使组件在父容器（[Row](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-row)/[Column](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-column)/[Flex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-flex)）的主轴方向按照权重分配尺寸。
+设置组件的布局权重，使组件在父容器（[Row](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-row)/[Column](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-column)/[Flex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-flex)）的主轴方向按照权重分配尺寸。适用于父容器尺寸确定、需要多个子组件按比例分配剩余空间的场景。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -253,19 +258,19 @@ layoutWeight(value: number | string): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | string | 是 | 父容器尺寸确定时，不设置layoutWeight属性或者layoutWeight属性生效值为0的元素优先占位，这些元素占位后在主轴留下的空间称为主轴剩余空间。设置了layoutWeight属性且layoutWeight属性生效值大于0的子元素会从主轴剩余空间中按照各自所设置的权重占比分配尺寸，分配时会忽略元素本身的尺寸设置。 默认值：0 **说明：** 仅在[Row](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-row)/[Column](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-column)/[Flex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-flex)布局中生效。 可选值为大于等于0的数字，或者可以转换为数字的字符串。 如果容器中有子元素设置了layoutWeight属性，且设置的属性值大于0，则所有子元素不会再基于[flexShrink](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-flex-layout#flexshrink)和[flexGrow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-flex-layout#flexgrow)布局。 |
+| value | number | string | 是 | 父容器尺寸确定时，不设置layoutWeight属性或者layoutWeight属性生效值为0的子组件优先占位，这些子组件占位后在主轴留下的空间称为主轴剩余空间。设置了layoutWeight属性且layoutWeight属性生效值大于0的子组件会从主轴剩余空间中按照各自所设置的权重占比分配尺寸，分配时会忽略子组件本身的width/height设置，但保留minWidth/minHeight约束。 默认值：0 取值范围：[0, +∞) 超出范围时：传入小于0的值时，按0处理。 **说明：** 仅在[Row](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-row)/[Column](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-column)/[Flex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-flex)布局中生效。 可选值为大于等于0的数字，或者可以转换为数字的字符串（支持整数、小数格式）。 如果容器中有子组件设置了layoutWeight属性，且设置的属性值大于0，则所有子组件不会再基于[flexShrink](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-flex-layout#flexshrink)和[flexGrow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-flex-layout#flexgrow)布局。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件对象，用于链式调用。 |
 
 #### constraintSize
 
 constraintSize(value: ConstraintSizeOptions): T
 
-设置约束尺寸，组件布局时，进行尺寸范围限制。
+设置约束尺寸，组件布局时进行尺寸范围限制。设置后组件的宽度和高度将被限制在指定的最小值和最大值范围内，constraintSize的优先级高于width和height属性。
 
 从API version 10开始，该接口支持calc计算特性。
 
@@ -285,13 +290,13 @@ constraintSize(value: ConstraintSizeOptions): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件对象，用于链式调用。 |
 
 constraintSize(minWidth/maxWidth/minHeight/maxHeight)取值对width/height影响：
 
 | 缺省值 | 结果 |
 | --- | --- |
-| \ | width=MAX(minWidth,MIN(maxWidth,width)) height=MAX(minHeight,MIN(maxHeight,height)) |
+| 全部缺省 | width=MAX(minWidth,MIN(maxWidth,width)) height=MAX(minHeight,MIN(maxHeight,height)) |
 | maxWidth、maxHeight | width=MAX(minWidth,width) height=MAX(minHeight,height) |
 | minWidth、minHeight | width=MIN(maxWidth,width) height=MIN(maxHeight,height) |
 | width、height | 若minWidth模型约束： 此接口仅可在Stage模型下使用。
@@ -300,16 +305,16 @@ constraintSize(minWidth/maxWidth/minHeight/maxHeight)取值对width/height影响
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| matchParent | [LayoutPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#layoutpolicy15) | 是 | 否 | 当前组件自适应父组件布局时，其大小与父组件内容区相等，不包括padding，border和safeAreaPadding。 **卡片能力：** 从API version 15开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
-| wrapContent20+ | [LayoutPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#layoutpolicy15) | 是 | 否 | 当前组件自适应子组件（内容）时，其大小与子组件（内容）相等，并且其大小受父组件内容区大小约束。 **卡片能力：** 从API version 20开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
-| fixAtIdealSize20+ | [LayoutPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#layoutpolicy15) | 是 | 否 | 当前组件自适应子组件（内容）时，其大小与子组件（内容）相等，并且其大小不受父组件内容区大小约束。 **卡片能力：** 从API version 20开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| matchParent | [LayoutPolicy](#layoutpolicy15) | 是 | 否 | 当前组件自适应父组件布局时，其大小与父组件内容区相等，不包括padding，border和safeAreaPadding。适用于需要组件填满父容器内容区的场景，例如列表项、卡片容器等。 **卡片能力：** 从API version 15开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
+| wrapContent20+ | [LayoutPolicy](#layoutpolicy15) | 是 | 否 | 当前组件自适应子组件（内容）时，其大小与子组件（内容）相等，并且其大小受父组件内容区大小约束。适用于需要根据内容自动调整大小但不能超出父容器的场景，例如文本容器、弹窗内容区等。 **卡片能力：** 从API version 20开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| fixAtIdealSize20+ | [LayoutPolicy](#layoutpolicy15) | 是 | 否 | 当前组件自适应子组件（内容）时，其大小与子组件（内容）相等，并且其大小不受父组件内容区大小约束。适用于需要根据内容自动调整大小且可以超出父容器的场景，例如悬浮提示、下拉菜单等。 **卡片能力：** 从API version 20开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 
 ![](./img/note_3.0-zh-cn.png)
 
-- LayoutPolicy支持设置三种布局策略：matchParent（自适应父组件布局）、wrapContent（根据内容自适应但不超过父组件尺寸的布局）和fixAtIdealSize（根据内容自适应，可能超过父组件尺寸的布局）。具体示例代码参见[设置布局策略](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#示例5设置布局策略)。
-- wrapContent和fixAtIdealSize场景，组件无法通过内容确定大小时，如果组件大小有默认值，则按照默认值进行测算；如果没有默认值，则按照宽高(0,0)进行测算。
+- LayoutPolicy支持设置三种布局策略：matchParent（自适应父组件布局）、wrapContent（根据内容自适应但不超过父组件尺寸的布局）和fixAtIdealSize（根据内容自适应，可能超过父组件尺寸的布局）。具体示例代码参见[设置布局策略](#示例5设置布局策略)。
+- wrapContent和fixAtIdealSize场景，组件无法通过内容确定大小时，如果组件大小有默认值，则按照默认值进行测算，组件最终以默认大小显示；如果没有默认值，则按照宽高(0,0)进行测算，组件最终以零尺寸显示。
 - 容器设置wrapContent，并且有子组件设置matchParent时（包括仅一边设置matchParent），容器先由确定大小的子组件撑大，设置matchParent的子组件再匹配容器大小；如果没有确定大小的子组件，容器和子组件大小均为0。
-- LayoutPolicy优先级低于constraintSize。
+- LayoutPolicy的设置会被constraintSize约束，即当同时设置LayoutPolicy和constraintSize时，constraintSize的约束优先生效。
 - 从API version 15开始，仅Row和Column组件的width和height属性支持设置LayoutPolicy类型参数，其他组件设置LayoutPolicy类型参数后与不设置宽度或高度表现一致；从API version 20开始，所有基础组件均支持设置LayoutPolicy类型参数。
 - 当Row、Column、Flex组件主轴尺寸自适应子组件，且子组件A仅交叉轴设置matchParent时，API版本26.0.0之前，子组件A不参与Row、Column、Flex组件的主轴尺寸测量过程，此时Row、Column、Flex组件主轴方向不自适应子组件A的尺寸；从API版本26.0.0开始，子组件A会参与Row、Column、Flex组件的主轴尺寸测量过程，此时Row、Column、Flex组件主轴方向会自适应子组件A的尺寸。交叉轴方向同理。具体变更效果参见[示例6（子组件单方向设置matchParent效果）](#示例6子组件单方向设置matchparent效果)。
 
@@ -358,7 +363,7 @@ struct SizeExample {
         .fontSize(12)
         .fontColor(0xCCCCCC)
         .width('90%')
-      // 父容器尺寸确定时，设置了layoutWeight的子元素在主轴布局尺寸按照权重进行分配，忽略本身尺寸设置。
+      // 父容器尺寸确定时，设置了layoutWeight的子组件在主轴布局尺寸按照权重进行分配，忽略本身尺寸设置。
       Row() {
         // 权重1，占主轴剩余空间1/3
         Text('layoutWeight(1)')
@@ -411,7 +416,7 @@ struct SizeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253148.png)
+ ![](./img/zh-cn_image_0000002656008266.png)
 
 #### [h2]示例2（LocalizedPadding和LocalizedMargin类型的使用）
 
@@ -462,11 +467,11 @@ struct SizeExample {
 ```
  从左至右显示语言示例图
 
-![](./img/zh-cn_image_0000002661612333.png)
+![](./img/zh-cn_image_0000002655848346.png)
 
 从右至左显示语言示例图
 
-![](./img/zh-cn_image_0000002631413040.png)
+![](./img/zh-cn_image_0000002686087775.png)
 
 #### [h2]示例3（设置组件级安全区）
 
@@ -499,7 +504,7 @@ struct SafeAreaPaddingExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732273.png)
+ ![](./img/zh-cn_image_0000002685927947.png)
 
 #### [h2]示例4（使用attributeModifier动态设置安全区）
 
@@ -543,7 +548,7 @@ struct SafeAreaPaddingExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253150.png)
+ ![](./img/zh-cn_image_0000002656008268.png)
 
 #### [h2]示例5（设置布局策略）
 
@@ -599,7 +604,7 @@ struct LayoutPolicyExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612335.jpg)
+ ![](./img/zh-cn_image_0000002655848348.jpg)
 
 #### [h2]示例6（子组件单方向设置matchParent效果）
 
@@ -640,4 +645,4 @@ struct Demo {
 
 | API版本26.0.0前 | 从API版本26.0.0开始 |
 | --- | --- |
-| ![](./img/zh-cn_image_0000002631413042.png) | ![](./img/zh-cn_image_0000002661732275.png) |
+| ![](./img/zh-cn_image_0000002686087777.png) | ![](./img/zh-cn_image_0000002685927949.png) |

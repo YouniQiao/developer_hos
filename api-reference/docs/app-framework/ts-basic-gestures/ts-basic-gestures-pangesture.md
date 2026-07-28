@@ -2,13 +2,13 @@
 title: "PanGesture"
 upstream_id: "harmonyos-references/ts-basic-gestures-pangesture"
 catalog: "harmonyos-references"
-content_hash: "6d650bf7c7b6"
-synced_at: "2026-07-09T00:57:44.438053"
+content_hash: "9b7358ced5c9"
+synced_at: "2026-07-28T16:43:05.557999"
 ---
 
 # PanGesture
 
-滑动手势事件，当滑动的最小距离达到设定的最小值时触发滑动手势事件。
+当滑动距离达到设定的最小值时，触发滑动手势事件。
 
 以下场景可以触发滑动手势：
 
@@ -21,7 +21,7 @@ synced_at: "2026-07-09T00:57:44.438053"
 | 触摸板双指滑动。 | [SourceTool](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-settings#sourcetool枚举说明9).TOUCHPAD | [SourceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-settings#sourcetype枚举说明8).Mouse | axisVertical或axisHorizontal不为0。 |
 | 手写笔滑动。 | [SourceTool](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-settings#sourcetool枚举说明9).Pen | [SourceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-settings#sourcetype枚举说明8).TouchScreen | axisVertical和axisHorizontal均为0。 |
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
 #### 接口
 
@@ -39,13 +39,13 @@ PanGesture(value?: { fingers?: number; direction?: PanDirection; distance?: numb
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | { fingers?: number; direction?: [PanDirection](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-gestures-pangesture#pandirection枚举说明); distance?: number } | [PanGestureOptions](#pangestureoptions) | 否 | 滑动手势参数。 - fingers：用于指定触发滑动的最少手指数，最小为1指，最大取值为10指。 默认值：1 取值范围：[1, 10] **说明：** 当设置的值小于1或不设置时，会被转化为默认值。 - direction：用于指定触发滑动的手势方向，此枚举值支持逻辑与(&)和逻辑或（|）运算。 默认值：PanDirection.All - distance：用于指定触发滑动手势事件的最小滑动距离，单位为vp。 取值范围：[0, +∞) 手写笔默认值：8，其余输入源默认值：5 **说明：** [Tabs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabs)组件滑动与该滑动手势事件同时存在时，可将distance值设为1，使滑动更灵敏，避免造成事件错乱。 当设定的值小于0时，按默认值处理。 当组件应用了[scale](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#scale)缩放变换时，distance的实际识别距离会按照scale比例进行缩放。 |
+| value | { fingers?: number; direction?: [PanDirection](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-gestures-pangesture#pandirection枚举说明); distance?: number } | [PanGestureOptions](#pangestureoptions) | 否 | 滑动手势参数。 - fingers：用于指定触发滑动的最少手指数，最小为1指，最大取值为10指。 默认值：1 取值范围：[1, 10] **说明：** 当设置的值小于1或不设置时，会被转化为默认值。 - direction：用于指定触发滑动的手势方向，此枚举值支持逻辑与(&)和逻辑或（|）运算。 默认值：PanDirection.All - distance：用于指定触发滑动手势事件的最小滑动距离，单位为vp。 取值范围：[0, +∞) 手写笔默认值：8，其余输入源默认值：5 **说明：** [Tabs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabs)组件滑动与该滑动手势事件同时存在时，可将distance值设为1，使滑动更灵敏，避免滑动手势与Tabs组件滑动事件的响应结果不符合预期。 当设定的值小于0时，按默认值处理。 当组件应用了[scale](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#scale)缩放变换时，distance的实际识别距离会按照scale比例进行缩放。 |
 
 #### [h2]PanGesture15+
 
 PanGesture(options?: PanGestureHandlerOptions)
 
-创建滑动手势对象。与[PanGesture](#pangesture-1)相比，options参数新增了对isFingerCountLimited和distanceMap参数，分别表示是否检查触摸屏幕的手指数量以及指定不同输入源触发滑动手势事件的最小滑动距离。
+创建滑动手势对象。与[PanGesture](#pangesture-1)相比，options参数新增了isFingerCountLimited参数，表示是否检查触摸屏幕的手指数量；distanceMap参数从API version 19开始支持，用于指定不同输入源触发滑动手势事件的最小滑动距离，单位为vp。
 
 元服务API： 从API version 15开始，该接口支持在元服务中使用。
 
@@ -57,7 +57,7 @@ PanGesture(options?: PanGestureHandlerOptions)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [PanGestureHandlerOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesturehandler#pangesturehandleroptions) | 否 | 滑动手势处理器配置参数。 |
+| options | [PanGestureHandlerOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesturehandler#pangesturehandleroptions) | 否 | 滑动手势处理器配置参数，用于配置触发滑动手势事件的条件，包括是否检查触摸屏幕的手指数量（isFingerCountLimited）以及为不同输入源指定触发滑动手势事件的最小滑动距离（distanceMap，API version 19开始支持，单位为vp）。当需要配置是否检查触摸屏幕的手指数量，或需要为不同输入源分别指定触发滑动手势事件的最小滑动距离时，传入该参数；不传入时，使用默认滑动手势处理器配置。 |
 
 #### PanDirection枚举说明
 
@@ -84,7 +84,7 @@ PanGesture(options?: PanGestureHandlerOptions)
 
 constructor(value?: { fingers?: number; direction?: PanDirection; distance?: number })
 
-创建滑动手势配置参数对象。通过PanGestureOptions对象接口可以动态修改滑动手势的属性，从而避免通过状态变量修改属性（状态变量修改会导致UI刷新）。
+创建滑动手势配置参数对象。通过PanGestureOptions对象可以动态修改滑动手势的属性，从而避免通过状态变量修改属性导致UI刷新。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -94,7 +94,7 @@ constructor(value?: { fingers?: number; direction?: PanDirection; distance?: num
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | { fingers?: number; direction?: [PanDirection](#pandirection枚举说明); distance?: number } | 否 | 滑动手势配置参数对象。 fingers用于指定触发滑动的最少手指数，最小为1指， 最大取值为10指。 默认值：1 direction用于指定触发滑动的手势方向，此枚举值支持逻辑与(&)和逻辑或（|）运算。 默认值：PanDirection.All distance用于指定触发滑动手势事件的最小滑动距离，单位为vp。 手写笔默认值：8，其余输入源默认值：5 **说明：** [Tabs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabs)组件滑动与该滑动手势事件同时存在时，可将distance值设为1，使滑动更灵敏，避免造成事件错乱。 当设定的值小于0时，按默认值处理。 建议设置合理的滑动距离，滑动距离设置过大时会导致滑动不跟手（响应时延慢）的问题。 当组件应用了[scale](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#scale)缩放变换时，distance的实际识别距离会按照scale比例进行缩放。 |
+| value | { fingers?: number; direction?: [PanDirection](#pandirection枚举说明); distance?: number } | 否 | 滑动手势配置参数对象。 fingers用于指定触发滑动的最少手指数，最小为1指， 最大取值为10指。 默认值：1 direction用于指定触发滑动的手势方向，此枚举值支持逻辑与(&)和逻辑或（|）运算。 默认值：PanDirection.All distance用于指定触发滑动手势事件的最小滑动距离，单位为vp。 取值范围：[0, +∞) 手写笔默认值：8，其余输入源默认值：5 **说明：** [Tabs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabs)组件滑动与该滑动手势事件同时存在时，可将distance值设为1，使滑动更灵敏，避免造成事件错乱。 当设定的值小于0时，按默认值处理。 建议设置合理的滑动距离，滑动距离设置过大时会导致滑动不跟手（响应时延增加）的问题。 当组件应用了[scale](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#scale)缩放变换时，distance的实际识别距离会按照scale比例进行缩放。 |
 
 #### [h2]setDirection
 
@@ -116,7 +116,7 @@ setDirection(value: PanDirection)
 
 setDistance(value: number)
 
-设置触发滑动手势事件的最小滑动距离，单位为vp。距离值不宜设置过大，避免因滑动脱手、响应时延过大等问题导致性能劣化，最佳实践请参考：[减小拖动识别距离](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-application-latency-optimization-cases#section1116134115286)。
+设置触发滑动手势事件的最小滑动距离，单位为vp。建议以手写笔8vp、其余输入源5vp为初始值，根据实际交互场景调整滑动距离；滑动距离增大时，可能出现手势跟随效果变差、响应时延增加等问题，导致性能劣化，最佳实践请参考：[减小拖动识别距离](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-application-latency-optimization-cases#section1116134115286)。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -126,7 +126,7 @@ setDistance(value: number)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 触发滑动手势事件的最小滑动距离，单位为vp。 手写笔默认值：8，其余输入源默认值：5 **说明：** [Tabs组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabs)滑动与该滑动手势事件同时存在时，可将distance值设为1，使滑动更灵敏，避免造成事件错乱。 当设定的值小于0时，按默认值处理。 建议设置合理的滑动距离，滑动距离设置过大时会导致滑动不跟手（响应时延慢）的问题。 当组件应用了[scale](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#scale)缩放变换时，distance的实际识别距离会按照scale比例进行缩放。 |
+| value | number | 是 | 触发滑动手势事件的最小滑动距离，单位为vp。 取值范围：[0, +∞) 手写笔默认值：8，其余输入源默认值：5 **说明：** [Tabs组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabs)滑动与该滑动手势事件同时存在时，可将distance值设为1，使滑动更灵敏，避免滑动手势与Tabs组件滑动事件的响应结果不符合预期。 当设定的值小于0时，按默认值处理。 建议设置合理的滑动距离，滑动距离设置过大时会导致滑动不跟手（响应时延慢）的问题。 当组件应用了[scale](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#scale)缩放变换时，distance的实际识别距离会按照scale比例进行缩放。 |
 
 #### [h2]setFingers
 
@@ -160,7 +160,7 @@ getDirection(): PanDirection
 
 | 类型 | 说明 |
 | --- | --- |
-| [PanDirection](#pandirection枚举说明) | 滑动方向。 |
+| [PanDirection](#pandirection枚举说明) | 当前PanGestureOptions对象中配置的滑动触发方向。 |
 
 #### [h2]getDistance18+
 
@@ -178,7 +178,7 @@ getDistance(): number
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 滑动手势事件的最小滑动距离。 |
+| number | 当前PanGestureOptions对象中配置的触发滑动手势事件的最小滑动距离，单位为vp。 |
 
 #### 事件
 
@@ -198,13 +198,13 @@ onActionStart(event: (event: GestureEvent) => void)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| event | (event: [GestureEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#gestureevent对象说明)) => void | 是 | 滑动手势识别成功回调。 |
+| event | (event: [GestureEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#gestureevent对象说明)) => void | 是 | 滑动手势识别成功时触发的回调函数，回调参数event为GestureEvent对象，用于获取本次滑动手势的事件信息。 |
 
 #### [h2]onActionUpdate
 
 onActionUpdate(event: (event: GestureEvent) => void)
 
-设置滑动手势更新回调。fingerList为多根手指时，该回调监听每次只会更新一根手指的位置信息。
+设置滑动手势更新回调。fingerList包含多根手指时，每次触发该回调仅更新一根手指的位置信息。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -214,7 +214,7 @@ onActionUpdate(event: (event: GestureEvent) => void)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| event | (event: [GestureEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#gestureevent对象说明)) => void | 是 | 滑动手势更新回调。 |
+| event | (event: [GestureEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#gestureevent对象说明)) => void | 是 | 滑动手势更新时触发的回调函数，回调参数event为GestureEvent对象，用于获取滑动过程中的手势事件信息。 |
 
 #### [h2]onActionEnd
 
@@ -230,7 +230,7 @@ onActionEnd(event: (event: GestureEvent) => void)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| event | (event: [GestureEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#gestureevent对象说明)) => void | 是 | 滑动手势结束回调。 |
+| event | (event: [GestureEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#gestureevent对象说明)) => void | 是 | 滑动手势结束时触发的回调函数，回调参数event为GestureEvent对象，用于获取滑动结束时的手势事件信息。 |
 
 #### [h2]onActionCancel
 
@@ -264,7 +264,7 @@ onActionCancel(event: Callback<GestureEvent>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| event | Callback | 是 | 滑动手势取消回调。 |
+| event | Callback | 是 | 滑动手势取消时触发的回调函数，回调参数为GestureEvent对象，用于获取滑动取消时的手势事件信息。 |
 
 #### 示例
 
@@ -301,11 +301,13 @@ struct PanGestureExample {
         })
         .onActionUpdate((event: GestureEvent) => {
           if (event) {
+            // 根据滑动偏移量更新组件当前位置
             this.offsetX = this.positionX + event.offsetX;
             this.offsetY = this.positionY + event.offsetY;
           }
         })
         .onActionEnd((event: GestureEvent) => {
+          // 滑动结束后保存当前位置，作为下一次滑动的起始位置
           this.positionX = this.offsetX;
           this.positionY = this.offsetY;
           console.info('Pan end');
@@ -327,8 +329,8 @@ struct PanGestureExample {
 
 向左滑动：
 
-![](./img/zh-cn_image_0000002661732371.png)
+![](./img/zh-cn_image_0000002686087877.png)
 
-点击按钮时，修改PanGesture触发条件为双指向左下方滑动：
+点击按钮时，修改PanGesture触发条件为双指向任意方向滑动：
 
-![](./img/zh-cn_image_0000002631253252.png)
+![](./img/zh-cn_image_0000002685928049.png)

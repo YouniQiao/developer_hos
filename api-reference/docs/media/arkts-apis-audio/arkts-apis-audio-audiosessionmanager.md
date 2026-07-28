@@ -2,8 +2,8 @@
 title: "Interface (AudioSessionManager)"
 upstream_id: "harmonyos-references/arkts-apis-audio-audiosessionmanager"
 catalog: "harmonyos-references"
-content_hash: "a0cce3217aff"
-synced_at: "2026-07-21T16:26:14.253348"
+content_hash: "9c9ed30c945e"
+synced_at: "2026-07-28T16:51:25.973738"
 ---
 
 # Interface (AudioSessionManager)
@@ -53,7 +53,7 @@ activateAudioSession(strategy: AudioSessionStrategy): Promise<void>
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1.Mandatory parameters unspecified. 2.Incorrect parameter types. |
 | 6800101 | Parameter verification failed. |
-| 6800301 | System error. Returned by promise. |
+| 6800301 | System error. Possible causes: 1.Focus preemption failure. 2.Audio server process died. |
 
 示例：
 
@@ -93,7 +93,7 @@ deactivateAudioSession(): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800301 | System error. Returned by promise. |
+| 6800301 | System error. Possible causes: 1.The audio session is not existed or has been released. 2.Audio server process died. |
 
 示例：
 
@@ -427,7 +427,7 @@ setMediaOutputDevice(deviceType: DeviceType): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 6800101 | Parameter verification failed, for example, the selected device type is not supported. |
-| 6800301 | Audio client call audio service error, System error. |
+| 6800301 | System error. Possible causes: 1.Internal variable memory allocation failed. 2.Audio server process died. 3.Speaker device is not available. |
 
 示例：
 
@@ -472,7 +472,7 @@ on(type: 'currentOutputDeviceChanged', callback: Callback<CurrentOutputDeviceCha
 import { audio } from '@kit.AudioKit';
 
 let currentOutputDeviceChangedCallback = (currentOutputDeviceChangedEvent: audio.CurrentOutputDeviceChangedEvent) => {
-  console.info(`reason of audioSessionStateChanged: ${currentOutputDeviceChangedEvent.changeReason} `);
+  console.info(`reason of currentOutputDeviceChanged: ${currentOutputDeviceChangedEvent.changeReason} `);
 };
 
 audioSessionManager.on('currentOutputDeviceChanged', currentOutputDeviceChangedCallback);
@@ -510,7 +510,7 @@ audioSessionManager.off('currentOutputDeviceChanged');
 
 // 同一监听事件中，on方法和off方法传入callback参数一致，off方法取消对应on方法订阅的监听。
 let currentOutputDeviceChangedCallback = (currentOutputDeviceChangedEvent: audio.CurrentOutputDeviceChangedEvent) => {
-  console.info(`reason of audioSessionStateChanged: ${currentOutputDeviceChangedEvent.changeReason} `);
+  console.info(`reason of currentOutputDeviceChanged: ${currentOutputDeviceChangedEvent.changeReason} `);
 };
 
 audioSessionManager.on('currentOutputDeviceChanged', currentOutputDeviceChangedCallback);
@@ -999,7 +999,7 @@ setCapturerMuteHint(mute: boolean): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800103 | Operation not permitted at current state, there is no audio capturer running. |
+| 6800103 | Operation not permit at current state, there is no audio capturer running. |
 
 示例：
 

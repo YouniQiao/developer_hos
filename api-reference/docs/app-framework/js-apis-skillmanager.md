@@ -2,8 +2,8 @@
 title: "@ohos.bundle.skillManager (skillManager模块)"
 upstream_id: "harmonyos-references/js-apis-skillmanager"
 catalog: "harmonyos-references"
-content_hash: "243d713ae685"
-synced_at: "2026-07-09T00:57:08.217952"
+content_hash: "13b845302f6d"
+synced_at: "2026-07-28T16:40:37.290794"
 ---
 
 # @ohos.bundle.skillManager (skillManager模块)
@@ -123,6 +123,14 @@ getSkillInfosForSelf(flags: number): Promise<Array<[SkillInfo](https://developer
 | 类型 | 说明 |
 | --- | --- |
 | Promise> | Promise对象，返回调用方所在应用的所有技能信息数组。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[包管理子系统通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-bundle)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 17700101 | Bundle manager service is exception. Possible causes: 1. Failed to connect to the system service. 2. IPC data transmission failed. 3. Failed to obtain the object constructor. |
 
 示例：
 

@@ -2,8 +2,8 @@
 title: "@ohos.advertising.AdComponent (广告展示组件)"
 upstream_id: "harmonyos-references/js-apis-adcomponent"
 catalog: "harmonyos-references"
-content_hash: "f832a2eb3a26"
-synced_at: "2026-07-09T01:01:14.330314"
+content_hash: "82c3ef5698f2"
+synced_at: "2026-07-28T16:52:32.730204"
 ---
 
 # @ohos.advertising.AdComponent (广告展示组件)
@@ -37,7 +37,7 @@ AdComponent({
 
 参数：
 
-| **参数名** | **类型** | 必填 | **装饰器类型** | 说明 |
+| **名称** | **类型** | 必填 | **装饰器类型** | 说明 |
 | --- | --- | --- | --- | --- |
 | ads | advertising.[Advertisement](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-advertisement#advertisement)[] | 是 | - | 广告对象数组。 说明：非贴片广告类型，组件只展示数组第一个数据。 元服务API：从API version 12开始，该接口支持在元服务中使用。 |
 | displayOptions | advertising.[AdDisplayOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-advertising#addisplayoptions) | 是 | - | 广告展示参数。 元服务API：从API version 12开始，该接口支持在元服务中使用。 |
@@ -47,7 +47,17 @@ AdComponent({
 
 ![](./img/note_3.0-zh-cn.png) 为了保证广告能正确展示，该接口必须和请求广告接口配套使用。效果和使用方法可参考[原生广告](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-publisher-service-native)、[贴片广告](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-publisher-service-roll)、[开屏广告](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-publisher-service-splash)接入和展示。
 
-示例：
+#### [h2]build
+
+build(): void
+
+用于创建AdComponent对象的构造函数。
+
+元服务API： 从API version 12开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.Advertising.Ads
+
+#### 示例
 
 ```
 import { AdComponent, advertising } from '@kit.AdsKit';
@@ -90,13 +100,3 @@ struct Index {
   }
 }
 ```
-
-#### [h2]build
-
-build(): void
-
-用于创建AdComponent对象的构造函数。
-
-元服务API： 从API version 12开始，该接口支持在元服务中使用。
-
-系统能力： SystemCapability.Advertising.Ads

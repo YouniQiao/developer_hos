@@ -2,8 +2,8 @@
 title: "ohprint.h"
 upstream_id: "harmonyos-references/capi-ohprint-h"
 catalog: "harmonyos-references"
-content_hash: "cfbdb918aca5"
-synced_at: "2026-07-09T00:59:43.520483"
+content_hash: "6c8e882d4a39"
+synced_at: "2026-07-28T16:51:01.173347"
 ---
 
 # ohprint.h
@@ -20,7 +20,7 @@ synced_at: "2026-07-09T00:59:43.520483"
 
 起始版本： 12
 
-相关模块： [OH_Print](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-print)
+相关模块： [Print](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-print)
 
 #### 汇总
 
@@ -558,7 +558,7 @@ Print_ErrorCode OH_Print_RegisterPrinterChangeListener(Print_PrinterChangeCallba
 
 | 类型 | 说明 |
 | --- | --- |
-| [Print_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohprint-h#print_errorcode) | 返回 [PRINT_ERROR_NONE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohprint-h#print_errorcode) 表示执行成功。 [PRINT_ERROR_NO_PERMISSION](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohprint-h#print_errorcode) 需要 ohos.permission.PRINT 权限。 [PRINT_ERROR_RPC_FAILURE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohprint-h#print_errorcode) 无法连接到打印服务能力。 |
+| [Print_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohprint-h#print_errorcode) | 返回 [PRINT_ERROR_NONE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohprint-h#print_errorcode) 表示执行成功。 [PRINT_ERROR_NO_PERMISSION](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohprint-h#print_errorcode) 需要 ohos.permission.PRINT 权限。 [PRINT_ERROR_RPC_FAILURE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohprint-h#print_errorcode) 无法连接到打印服务。 |
 
 #### [h2]OH_Print_UnregisterPrinterChangeListener()
 

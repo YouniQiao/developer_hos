@@ -2,8 +2,8 @@
 title: "HdsListItemCard"
 upstream_id: "harmonyos-references/ui-design-hdslistitemcard"
 catalog: "harmonyos-references"
-content_hash: "03a46145afb9"
-synced_at: "2026-07-09T00:59:10.019012"
+content_hash: "af3221685f27"
+synced_at: "2026-07-28T16:50:15.266445"
 ---
 
 # HdsListItemCard
@@ -1148,7 +1148,7 @@ HdsListItemCard无障碍播放能力选项。
 
 系统能力： SystemCapability.UIDesign.HDSComponent.Full
 
-起始本： 6.1.0(23)
+起始版本： 6.1.0(23)
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
@@ -1273,6 +1273,7 @@ HdsListItemCard中选择类元素样式选项。
 | enable | boolean | 否 | 是 | 选择类元素是否被启用。 true：选择类元素被启用。 false：选择类元素被禁用。 默认值：true。 |
 | checkId | string | 否 | 是 | 选择类元素的Id。 |
 | accessibilityOptions | [AccessibilityOptions](#accessibilityoptions) | 否 | 是 | 选择类元素的无障碍播放能力选项。 |
+| radioStyle | [HdsRadioStyle](#hdsradiostyle) | 否 | 是 | 单选框的样式。本参数仅对单选框生效。 **起始版本：** 26.0.0 |
 
 #### ToggleButtonOptions
 
@@ -1420,6 +1421,20 @@ HdsListItemCard中下拉按钮样式选项。
 | accessibilityOptions | [AccessibilityOptions](#accessibilityoptions) | 否 | 是 | 下拉按钮的无障碍播放能力选项。 |
 | selected | number | 否 | 是 | 设置下拉菜单初始选项的索引，第一项的索引为0。当不设置selected属性或设置为异常值时，默认选中值为-1，菜单项不选中。 默认值：-1。 **起始版本：** 6.1.0(23) |
 
+#### HdsRadioStyle
+
+HdsListItemCard中单选框的样式选项。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.UIDesign.HDSComponent.Full
+
+起始版本： 26.0.0
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| indicatorType | [HdsRadioIndicatorType](#hdsradioindicatortype) | 否 | 是 | 单选框的选中样式。 默认值：HdsIndicatorType.TICK。 |
+
 #### SymbolType
 
 type SymbolType= ResourceStr | SymbolGlyphModifier
@@ -1493,6 +1508,21 @@ PrefixIcon图标大小枚举。
 | SYSTEM_ICON | 2 | A区（列表左侧）Icon图标类型：系统图标类型，大小为24vp * 24vp（穿戴设备上为32vp*32vp）。 |
 
 ![](./img/note_3.0-zh-cn.png) 上述描述中所有左侧、中间、右侧均是在LTR模式下。
+
+#### HdsRadioIndicatorType
+
+单选框选中样式枚举。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.UIDesign.HDSComponent.Full
+
+起始版本： 26.0.0
+
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| TICK | 0 | 选中样式为系统默认TICK图标。即[Radio](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-radio)的默认选中样式。 |
+| CHECK_MARK | 100 | 选中样式为$r('sys.symbol.checkmark')图标。图标默认颜色为$r('sys.color.icon_primary')。 |
 
 #### OnClickCallback
 
@@ -1690,4 +1720,4 @@ struct HdsListItemCardExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661613417.jpg)
+ ![](./img/zh-cn_image_0000002655849442.jpg)

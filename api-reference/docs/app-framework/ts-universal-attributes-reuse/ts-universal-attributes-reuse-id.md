@@ -1,16 +1,14 @@
 ---
-
 title: "复用标识"
 upstream_id: "harmonyos-references/ts-universal-attributes-reuse-id"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T00:57:43.413892"
-content_hash: "6d0b310bb340"
+content_hash: "5355a03ececa"
+synced_at: "2026-07-28T16:43:00.994629"
 ---
-
 
 # 复用标识
 
-reuseId用于标记自定义组件复用组，当组件回收复用时，复用框架将根据组件的reuseId来划分组件的复用组。
+reuseId用于标记自定义组件的复用组，当组件回收复用时，复用框架将根据组件的reuseId划分组件的复用组。通过为不同布局或类型的组件设置不同的reuseId，可避免组件被错误复用，实现更精准的复用匹配，提升复用效率，适用于同一自定义组件存在多种布局形态的场景。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -21,11 +19,11 @@ reuseId用于标记自定义组件复用组，当组件回收复用时，复用�
 
 reuseId(id: string): T
 
-复用标识，用于划分自定义组件的复用组。
+复用标识，用于划分自定义组件的复用组。该接口仅可在Stage模型下使用。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 根据不同场景灵活设置reuseId，实现最佳复用效果。最佳实践请参考[组件复用-使用reuseId标记布局发生变化的组件](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-component-reuse#section1239555818211)。
+- 根据组件的不同布局形态或类型设置对应的reuseId，以提升复用匹配的精确度。最佳实践请参考组件复用-[使用reuseId标记布局发生变化的组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-component_reuse#使用reuseid标记布局发生变化的组件)。
 - 该接口不支持在[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)中调用。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
@@ -36,7 +34,7 @@ reuseId(id: string): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| id | string | 是 | 复用标识，用于划分自定义组件的复用组。 |
+| id | string | 是 | 复用标识，用于划分自定义组件的复用组。建议为不同布局或类型的组件设置不同的reuseId，以避免组件被错误复用，提升复用效率。仅在@Reusable装饰的自定义组件上生效。 |
 
 返回值：
 
@@ -53,20 +51,20 @@ reuseId(id: string): T
 @Entry
 @Component
 struct MyComponent {
-  @State switch: boolean = true;
-  private type: string = "type1";
+  @State isShow: boolean = true;
+  private type: string = 'type1';
 
   build() {
     Column() {
-      Button("ChangeType")
+      Button('ChangeType')
         .onClick(() => {
-          this.type = "type2"
+          this.type = 'type2';
         })
-      Button("Switch")
+      Button('Switch')
         .onClick(() => {
-          this.switch = !this.switch
+          this.isShow = !this.isShow;
         })
-      if (this.switch) {
+      if (this.isShow) {
         ReusableChildComponent({ type: this.type })
           .reuseId(this.type)
       }
@@ -79,14 +77,14 @@ struct MyComponent {
 @Reusable
 @Component
 struct ReusableChildComponent {
-  @State type: string = ''
+  @State type: string = '';
 
   aboutToAppear() {
-    console.info(`ReusableChildComponent Appear ${this.type}`)
+    console.info(`ReusableChildComponent Appear ${this.type}`);
   }
 
   aboutToReuse(params: ESObject) {
-    console.info(`ReusableChildComponent Reuse ${this.type}`)
+    console.info(`ReusableChildComponent Reuse ${this.type}`);
     this.type = params.type;
   }
 

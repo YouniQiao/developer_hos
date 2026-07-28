@@ -2,8 +2,8 @@
 title: "avmetadata_extractor_base.h"
 upstream_id: "harmonyos-references/capi-avmetadata-extractor-base-h"
 catalog: "harmonyos-references"
-content_hash: "b798db7df685"
-synced_at: "2026-07-09T01:00:40.573614"
+content_hash: "ed57a57ae1f4"
+synced_at: "2026-07-28T16:51:58.240846"
 ---
 
 # avmetadata_extractor_base.h
@@ -41,27 +41,27 @@ synced_at: "2026-07-09T01:00:40.573614"
 
 | 名称 | 描述 |
 | --- | --- |
-| static const char * OH_AVMETADATA_EXTRACTOR_ALBUM = "album" | 获取专辑标题的关键字，对应值类型为const char*。 **起始版本：** 18 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor |
-| static const char * OH_AVMETADATA_EXTRACTOR_ALBUM_ARTIST = "albumArtist" | 获取专辑艺术家的关键字，对应值类型为const char*。 **起始版本：** 18 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor |
-| static const char * OH_AVMETADATA_EXTRACTOR_ARTIST = "artist" | 获取媒体资源艺术家的关键字，对应值类型为const char*。 **起始版本：** 18 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor |
-| static const char * OH_AVMETADATA_EXTRACTOR_AUTHOR = "author" | 获取媒体资源作者的关键字，对应值类型为const char*。 **起始版本：** 18 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor |
-| static const char * OH_AVMETADATA_EXTRACTOR_DATE_TIME = "dateTime" | 获取媒体资源创建时间的关键字，对应值类型为const char*。 **起始版本：** 18 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor |
-| static const char * OH_AVMETADATA_EXTRACTOR_DATE_TIME_FORMAT = "dateTimeFormat" | 获取媒体资源创建时间的关键字，对应值类型为const char*，按YYYY-MM-DD HH:mm:ss格式输出。 **起始版本：** 18 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor |
-| static const char * OH_AVMETADATA_EXTRACTOR_COMPOSER = "composer" | 获取媒体资源作曲家的关键字，对应值类型为const char*。 **起始版本：** 18 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor |
-| static const char * OH_AVMETADATA_EXTRACTOR_DURATION = "duration" | 获取媒体资源时长的关键字，对应值类型为int64_t，单位为毫秒（ms）。 **起始版本：** 18 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor |
-| static const char * OH_AVMETADATA_EXTRACTOR_GENRE = "genre" | 获取媒体资源类型或体裁的关键字，对应值类型为const char*。 **起始版本：** 18 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor |
-| static const char * OH_AVMETADATA_EXTRACTOR_HAS_AUDIO = "hasAudio" | 获取媒体资源是否包含音频的关键字，对应值类型为int32_t。 **起始版本：** 18 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor |
-| static const char * OH_AVMETADATA_EXTRACTOR_HAS_VIDEO = "hasVideo" | 获取媒体资源是否包含视频的关键字，对应值类型为int32_t。 **起始版本：** 18 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor |
-| static const char * OH_AVMETADATA_EXTRACTOR_MIME_TYPE = "mimeType" | 获取媒体资源mime类型的关键字，对应值类型为const char*，例如：“video/mp4”、“audio/mp4”和“audio/amr wb”。 **起始版本：** 18 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor |
-| static const char * OH_AVMETADATA_EXTRACTOR_TRACK_COUNT = "trackCount" | 获取媒体资源轨道数量的关键字，对应值类型为int32_t。 **起始版本：** 18 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor |
-| static const char * OH_AVMETADATA_EXTRACTOR_SAMPLE_RATE = "sampleRate" | 获取音频采样率的关键字，对应值类型为int32_t，单位为赫兹（Hz）。 **起始版本：** 18 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor |
-| static const char * OH_AVMETADATA_EXTRACTOR_TITLE = "title" | 获取媒体资源标题的关键字，对应值类型为const char*。 **起始版本：** 18 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor |
-| static const char * OH_AVMETADATA_EXTRACTOR_VIDEO_HEIGHT = "videoHeight" | 获取视频高度的关键字，对应值类型为int32_t，单位为像素。 **起始版本：** 18 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor |
-| static const char * OH_AVMETADATA_EXTRACTOR_VIDEO_WIDTH = "videoWidth" | 获取视频宽度的关键字，对应值类型为int32_t，单位为像素。 **起始版本：** 18 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor |
-| static const char * OH_AVMETADATA_EXTRACTOR_VIDEO_ORIENTATION = "videoOrientation" | 获取视频旋转方向的关键字，对应值类型为int32_t，单位为度（°）。 **起始版本：** 18 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor |
-| static const char * OH_AVMETADATA_EXTRACTOR_VIDEO_IS_HDR_VIVID = "hdrType" | 获取是否是HDR Vivid视频的关键字，对应值类型为int32_t。 详情请参阅media_types.h中的[OH_Core_HdrType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-media-types-h#oh_core_hdrtype)。 **起始版本：** 18 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor |
-| static const char * OH_AVMETADATA_EXTRACTOR_LOCATION_LATITUDE = "latitude" | 获取地理位置中的纬度值的关键字，对应值类型为float。 **起始版本：** 18 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor |
-| static const char * OH_AVMETADATA_EXTRACTOR_LOCATION_LONGITUDE = "longitude" | 获取地理位置中的经度值的关键字，对应值类型为float。 **起始版本：** 18 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor |
+| static const char * OH_AVMETADATA_EXTRACTOR_ALBUM = "album" | 获取专辑标题的关键字，对应值类型为const char*。 **起始版本：** 18 |
+| static const char * OH_AVMETADATA_EXTRACTOR_ALBUM_ARTIST = "albumArtist" | 获取专辑艺术家的关键字，对应值类型为const char*。 **起始版本：** 18 |
+| static const char * OH_AVMETADATA_EXTRACTOR_ARTIST = "artist" | 获取媒体资源艺术家的关键字，对应值类型为const char*。 **起始版本：** 18 |
+| static const char * OH_AVMETADATA_EXTRACTOR_AUTHOR = "author" | 获取媒体资源作者的关键字，对应值类型为const char*。 **起始版本：** 18 |
+| static const char * OH_AVMETADATA_EXTRACTOR_DATE_TIME = "dateTime" | 获取媒体资源创建时间的关键字，对应值类型为const char*。 **起始版本：** 18 |
+| static const char * OH_AVMETADATA_EXTRACTOR_DATE_TIME_FORMAT = "dateTimeFormat" | 获取媒体资源创建时间的关键字，对应值类型为const char*，按YYYY-MM-DD HH:mm:ss格式输出。 **起始版本：** 18 |
+| static const char * OH_AVMETADATA_EXTRACTOR_COMPOSER = "composer" | 获取媒体资源作曲家的关键字，对应值类型为const char*。 **起始版本：** 18 |
+| static const char * OH_AVMETADATA_EXTRACTOR_DURATION = "duration" | 获取媒体资源时长的关键字，对应值类型为int64_t，单位为毫秒（ms）。 **起始版本：** 18 |
+| static const char * OH_AVMETADATA_EXTRACTOR_GENRE = "genre" | 获取媒体资源类型或体裁的关键字，对应值类型为const char*。 **起始版本：** 18 |
+| static const char * OH_AVMETADATA_EXTRACTOR_HAS_AUDIO = "hasAudio" | 获取媒体资源是否包含音频的关键字，对应值类型为int32_t。 取值原则：0表示不包含音频，1表示包含音频。 **起始版本：** 18 |
+| static const char * OH_AVMETADATA_EXTRACTOR_HAS_VIDEO = "hasVideo" | 获取媒体资源是否包含视频的关键字，对应值类型为int32_t。 取值原则：0表示不包含视频，1表示包含视频。 **起始版本：** 18 |
+| static const char * OH_AVMETADATA_EXTRACTOR_MIME_TYPE = "mimeType" | 获取媒体资源mime类型的关键字，对应值类型为const char*，例如：“video/mp4”、“audio/mp4”和“audio/amr-wb”。 **起始版本：** 18 |
+| static const char * OH_AVMETADATA_EXTRACTOR_TRACK_COUNT = "trackCount" | 获取媒体资源轨道数量的关键字，对应值类型为int32_t。 **起始版本：** 18 |
+| static const char * OH_AVMETADATA_EXTRACTOR_SAMPLE_RATE = "sampleRate" | 获取音频采样率的关键字，对应值类型为int32_t，单位为赫兹（Hz）。 **起始版本：** 18 |
+| static const char * OH_AVMETADATA_EXTRACTOR_TITLE = "title" | 获取媒体资源标题的关键字，对应值类型为const char*。 **起始版本：** 18 |
+| static const char * OH_AVMETADATA_EXTRACTOR_VIDEO_HEIGHT = "videoHeight" | 获取视频高度的关键字，对应值类型为int32_t，单位为像素。 **起始版本：** 18 |
+| static const char * OH_AVMETADATA_EXTRACTOR_VIDEO_WIDTH = "videoWidth" | 获取视频宽度的关键字，对应值类型为int32_t，单位为像素。 **起始版本：** 18 |
+| static const char * OH_AVMETADATA_EXTRACTOR_VIDEO_ORIENTATION = "videoOrientation" | 获取视频旋转方向的关键字，对应值类型为int32_t，单位为度（°）。 **起始版本：** 18 |
+| static const char * OH_AVMETADATA_EXTRACTOR_VIDEO_IS_HDR_VIVID = "hdrType" | 获取是否是HDR Vivid视频的关键字，对应值类型为int32_t。 详情请参阅media_types.h中的[OH_Core_HdrType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-media-types-h#oh_core_hdrtype)。 **起始版本：** 18 |
+| static const char * OH_AVMETADATA_EXTRACTOR_LOCATION_LATITUDE = "latitude" | 获取地理位置中的纬度值的关键字，对应值类型为float。 **起始版本：** 18 |
+| static const char * OH_AVMETADATA_EXTRACTOR_LOCATION_LONGITUDE = "longitude" | 获取地理位置中的经度值的关键字，对应值类型为float。 **起始版本：** 18 |
 
 #### 枚举类型说明
 
@@ -78,6 +78,6 @@ enum OH_AVMetadataExtractor_FetchState
 
 | 枚举项 | 描述 |
 | --- | --- |
-| OH_AVMETADATA_EXTRACTOR_FETCH_FAILED = 0 | 提取操作失败。 |
-| OH_AVMETADATA_EXTRACTOR_FETCH_SUCCEEDED = 1 | 提取操作成功。 |
-| OH_AVMETADATA_EXTRACTOR_FETCH_CANCELED = 2 | 提取操作被用户取消。 |
+| OH_AVMETADATA_EXTRACTOR_FETCH_FAILED = 0 | 帧提取操作失败。 |
+| OH_AVMETADATA_EXTRACTOR_FETCH_SUCCEEDED = 1 | 帧提取操作成功。 |
+| OH_AVMETADATA_EXTRACTOR_FETCH_CANCELED = 2 | 帧提取操作被用户取消。 |

@@ -2,8 +2,8 @@
 title: "privacyManager（隐私管理服务）"
 upstream_id: "harmonyos-references/store-privacymanager"
 catalog: "harmonyos-references"
-content_hash: "3146d6a91626"
-synced_at: "2026-07-09T01:01:15.215994"
+content_hash: "6e6c924e3f5b"
+synced_at: "2026-07-28T16:52:33.959515"
 ---
 
 # privacyManager（隐私管理服务）
@@ -130,8 +130,6 @@ import { privacyManager } from '@kit.AppGalleryKit';
 
 隐私签署结果。
 
-元服务API： 从版本5.0.0(12)开始，该接口支持在元服务中使用。
-
 模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.AppGalleryService.PrivacyManager
@@ -140,11 +138,11 @@ import { privacyManager } from '@kit.AppGalleryKit';
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| type | [AppPrivacyType](#appprivacytype) | 是 | 否 | 隐私类型。 |
-| versionCode | number | 是 | 否 | 协议版本号。 |
-| result | [AppPrivacyResultType](#appprivacyresulttype) | 是 | 否 | 隐私签署结果。 |
-| id | string | 是 | 否 | 隐私协议id。 |
-| signingTimestamp | number | 是 | 是 | 隐私签署时间(单位:ms)。 **起始版本：** 5.0.2(14) **元服务API**：从版本5.0.2(14)开始，该接口支持在元服务中使用。 |
+| type | [AppPrivacyType](#appprivacytype) | 是 | 否 | 隐私类型。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| versionCode | number | 是 | 否 | 协议版本号。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| result | [AppPrivacyResultType](#appprivacyresulttype) | 是 | 否 | 隐私签署结果。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| id | string | 是 | 否 | 隐私协议id。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| signingTimestamp | number | 是 | 是 | 隐私签署时间(单位:ms)。 **起始版本：** 5.0.2(14) **元服务API：** 从版本5.0.2(14)开始，该接口支持在元服务中使用。 |
 
 #### ConsentResult
 

@@ -2,8 +2,8 @@
 title: "AntifraudPicker（反诈选择器）"
 upstream_id: "harmonyos-references/errorcode-devicesecurity-antifraudpicker"
 catalog: "harmonyos-references"
-content_hash: "c233f5e231d2"
-synced_at: "2026-07-09T00:59:15.577505"
+content_hash: "d0395d00e0a6"
+synced_at: "2026-07-28T16:50:27.110005"
 ---
 
 # AntifraudPicker（反诈选择器）
@@ -22,7 +22,7 @@ Permission denied.
 
 可能原因
 
-应用hap未申请ohos.permission.USE_FRAUD_MESSAGES_PICKER或ohos.permission.USE_FRAUD_CALL_LOG_PICKER权限。
+应用hap未申请ohos.permission.USE_FRAUD_MESSAGES_PICKER、ohos.permission.USE_FRAUD_CALL_LOG_PICKER或ohos.permission.USE_FRAUD_APP_PICKER权限。
 
 处理步骤
 

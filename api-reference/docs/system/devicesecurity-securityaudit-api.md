@@ -2,8 +2,8 @@
 title: "SecurityAudit（安全审计）"
 upstream_id: "harmonyos-references/devicesecurity-securityaudit-api"
 catalog: "harmonyos-references"
-content_hash: "1b96c3f97370"
-synced_at: "2026-07-09T00:59:15.496333"
+content_hash: "48e68df39d12"
+synced_at: "2026-07-28T16:50:25.971728"
 ---
 
 # SecurityAudit（安全审计）
@@ -64,7 +64,7 @@ import { securityAudit } from '@kit.DeviceSecurityKit';
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| PASTEBOARD | 0x27000000 | 剪切板复制粘贴事件。 |
+| PASTEBOARD | 0x27000000 | 剪贴板复制粘贴事件。 |
 | FILE | 0x1C000007 | 文件事件。 |
 | FILE_INTERCEPTED | 0x1C001100 | 文件访问规则违规事件。 |
 | ACCOUNT | 0x10000100 | 账户登录或注销事件。 |
@@ -112,17 +112,26 @@ import { securityAudit } from '@kit.DeviceSecurityKit';
 | FILE_SHARE | 0x0F000002 | 文件分享事件。 **起始版本：** 26.0.0 |
 | DATA_DRAG | 0x0F000003 | 数据拖拽事件。 **起始版本：** 26.0.0 |
 | DLP_FILE_ACCESS | 0x0F000006 | DLP文件访问。 **起始版本：** 26.0.0 |
-| FILE_CREATE | 0x1C001104 | 文件创建事件。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用 |
-| FILE_OPEN | 0x1C001105 | 文件打开事件。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用 |
-| FILE_CLOSE | 0x1C001106 | 文件关闭事件。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用 |
-| FILE_DELETE | 0x1C001107 | 文件删除事件。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用 |
-| FILE_RENAME | 0x1C001108 | 文件重命名事件。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用 |
-| FILE_COPY | 0x1C001109 | 文件复制事件。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用 |
-| FILE_SETOWNER | 0x1C00110A | 文件修改所有者事件。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用 |
-| FILE_SETMODE | 0x1C00110B | 文件修改mode事件。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用 |
-| FILE_SETEXTATTR | 0x1C00110C | 文件设置扩展属性事件。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用 |
-| FILE_DELETEEXTATTR | 0x1C00110D | 文件删除扩展属性事件。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用 |
-| FILE_WRITE | 0x1C00110E | 文件写事件。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用 |
+| FILE_CREATE | 0x1C001104 | 文件创建事件。 **起始版本：** 26.0.0 |
+| FILE_OPEN | 0x1C001105 | 文件打开事件。 **起始版本：** 26.0.0 |
+| FILE_CLOSE | 0x1C001106 | 文件关闭事件。 **起始版本：** 26.0.0 |
+| FILE_DELETE | 0x1C001107 | 文件删除事件。 **起始版本：** 26.0.0 |
+| FILE_RENAME | 0x1C001108 | 文件重命名事件。 **起始版本：** 26.0.0 |
+| FILE_COPY | 0x1C001109 | 文件复制事件。 **起始版本：** 26.0.0 |
+| FILE_SETOWNER | 0x1C00110A | 文件修改所有者事件。 **起始版本：** 26.0.0 |
+| FILE_SETMODE | 0x1C00110B | 文件修改mode事件。 **起始版本：** 26.0.0 |
+| FILE_SETEXTATTR | 0x1C00110C | 文件设置扩展属性事件。 **起始版本：** 26.0.0 |
+| FILE_DELETEEXTATTR | 0x1C00110D | 文件删除扩展属性事件。 **起始版本：** 26.0.0 |
+| FILE_WRITE | 0x1C00110E | 文件写事件。 **起始版本：** 26.0.0 |
+| BLUETOOTH_INTERCEPTED | 0x03000200 | 蓝牙拦截事件。 **起始版本：** 26.0.0 |
+| DISC_BURNING | 0x0F000004 | 光盘刻录事件。 **起始版本：** 26.0.0 |
+| MEDIA_FILE_ACCESS | 0x0F000005 | 媒体文件访问事件。 **起始版本：** 26.0.0 |
+| ACCOUNT_MANAGEMENT | 0x10000103 | 账户管理事件。 **起始版本：** 26.0.0 |
+| DEVICE_POWER_ON | 0x16000001 | 设备开机事件。 **起始版本：** 26.0.0 |
+| DEVICE_POWER_OFF | 0x16000002 | 设备关机事件。 **起始版本：** 26.0.0 |
+| AUDIO_INTERFACE_ACCESS | 0x1A000001 | 音频接口访问事件。 **起始版本：** 26.0.0 |
+| VIDEO_INTERFACE_ACCESS | 0x1A000002 | 视频接口访问事件。 **起始版本：** 26.0.0 |
+| SERIAL_PORT_INTERCEPTED | 0x30000101 | 串口拦截事件。 **起始版本：** 26.0.0 |
 
 #### FilterType
 
@@ -141,7 +150,7 @@ import { securityAudit } from '@kit.DeviceSecurityKit';
 | FILE_PATH_EQUAL | 0x00010000 | 文件路径类型的过滤器类型。 |
 | FILE_PATH_PREFIX | 0x00010001 | 文件路径前缀类型的过滤器类型。 |
 | FILE_PATH_SUFFIX | 0x00010002 | 文件路径后缀类型的过滤器类型。 |
-| FILE_PATH_REGULAR | 0x00010003 | 进程名称后缀的过滤类型。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用 |
+| FILE_PATH_REGULAR | 0x00010003 | 文件路径正则表达式的过滤类型。 **起始版本：** 26.0.0 |
 | PROCESS_UID_EQUAL | 0x00020000 | 过滤进程的UID类型。 |
 | PROCESS_PID_EQUAL | 0x00020100 | 过滤进程ID类型。 |
 | PROCESS_NAME_EQUAL | 0x00020200 | 筛选进程名称类型。 |
@@ -166,6 +175,8 @@ import { securityAudit } from '@kit.DeviceSecurityKit';
 | FILE_DELETE | 0x1C801103 | 文件删除阻断事件。 |
 | FILE_SETEXTATTR | 0x1C801104 | 文件设置扩展属性的阻断事件。 |
 | FILE_DELETEEXTATTR | 0x1C801105 | 文件删除扩展属性的阻断事件。 |
+| FILE_READ_END | 0x1C801106 | 文件读结束阻断事件。 **起始版本：** 26.0.0 |
+| PROCESS_EXEC | 0x1C801400 | 进程执行的阻断事件。 **起始版本：** 26.0.0 |
 
 #### AuthResult
 
@@ -206,7 +217,7 @@ on(type: 'auditEventOccur', auditEventInfo: [AuditEventInfo](#auditeventinfo), c
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[安全审计错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -219,7 +230,7 @@ import { securityAudit } from '@kit.DeviceSecurityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
-const TAG = "SecurityAuditAuditJsTest";
+const TAG = 'SecurityAuditAuditJsTest';
 const callback = (event: securityAudit.AuditEvent) => {
   hilog.info(0x0000, TAG, '%{public}s', 'Security_SecurityAudit_JsApi_Func eventId= ' + event.eventId);
   hilog.info(0x0000, TAG, '%{public}s', 'Security_SecurityAudit_JsApi_Func version= ' + event.version);
@@ -266,7 +277,7 @@ off(type: 'auditEventOccur', auditEventInfo: [AuditEventInfo](#auditeventinfo), 
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[安全审计错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -279,7 +290,7 @@ import { securityAudit } from '@kit.DeviceSecurityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
-const TAG = "SecurityAuditAuditJsTest";
+const TAG = 'SecurityAuditAuditJsTest';
 let auditEventInfo: securityAudit.AuditEventInfo = {
    eventId: 0x810800800
 };
@@ -344,12 +355,12 @@ subscribe(events: NotifyEvent[]): void
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[安全审计错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | check permission fail. |
-| 1012000001 | Internal error. |
+| 1012000001 | Internal error.Possible causes: 1. IPC cross-process invoking fails. 2. System service process is faulty. |
 
 示例：
 
@@ -359,7 +370,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
 let client: securityAudit.Client | undefined = undefined;
-const TAG = "SecurityAuditJsTest";
+const TAG = 'SecurityAuditJsTest';
 const callback = (event: securityAudit.AuditEvent) => {
   hilog.info(0x0000, TAG, '%{public}s', 'Security_SecurityAudit_JsApi_Func eventId= ' + event.eventId);
   hilog.info(0x0000, TAG, '%{public}s', 'Security_SecurityAudit_JsApi_Func version= ' + event.version);
@@ -399,12 +410,12 @@ unsubscribe(events: NotifyEvent[]): void
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[安全审计错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | check permission fail. |
-| 1012000001 | Internal error. |
+| 1012000001 | Internal error.Possible causes: 1. IPC cross-process invoking fails. 2. System service process is faulty. |
 
 示例：
 
@@ -414,7 +425,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
 let client: securityAudit.Client | undefined = undefined;
-const TAG = "SecurityAuditJsTest";
+const TAG = 'SecurityAuditJsTest';
 const callback = (event: securityAudit.AuditEvent) => {
   hilog.info(0x0000, TAG, '%{public}s', 'Security_SecurityAudit_JsApi_Func eventId= ' + event.eventId);
   hilog.info(0x0000, TAG, '%{public}s', 'Security_SecurityAudit_JsApi_Func version= ' + event.version);
@@ -455,12 +466,12 @@ addFilter(event: NotifyEvent, filter: Filter): void
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[安全审计错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | check permission fail. |
-| 1012000001 | Internal error. |
+| 1012000001 | Internal error.Possible causes: 1. IPC cross-process invoking fails. 2. System service process is faulty. |
 | 1012000004 | The number of filters exceeds the upper limit. |
 | 1012000005 | The event does not support the filter condition. |
 
@@ -472,7 +483,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
 let client: securityAudit.Client | undefined = undefined;
-const TAG = "SecurityAuditJsTest";
+const TAG = 'SecurityAuditJsTest';
 const callback = (event: securityAudit.AuditEvent) => {
   hilog.info(0x0000, TAG, '%{public}s', 'Security_SecurityAudit_JsApi_Func eventId= ' + event.eventId);
   hilog.info(0x0000, TAG, '%{public}s', 'Security_SecurityAudit_JsApi_Func version= ' + event.version);
@@ -518,12 +529,12 @@ removeFilter(event: NotifyEvent, filter: Filter): void
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[安全审计错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | check permission fail. |
-| 1012000001 | Internal error. |
+| 1012000001 | Internal error.Possible causes: 1. IPC cross-process invoking fails. 2. System service process is faulty. |
 | 1012000005 | The event does not support the filter condition. |
 
 示例：
@@ -534,7 +545,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
 let client: securityAudit.Client | undefined = undefined;
-const TAG = "SecurityAuditJsTest";
+const TAG = 'SecurityAuditJsTest';
 const callback = (event: securityAudit.AuditEvent) => {
   hilog.info(0x0000, TAG, '%{public}s', 'Security_SecurityAudit_JsApi_Func eventId= ' + event.eventId);
   hilog.info(0x0000, TAG, '%{public}s', 'Security_SecurityAudit_JsApi_Func version= ' + event.version);
@@ -585,12 +596,12 @@ newClient(callback: Callback<[AuditEvent](#auditevent)>): Client
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[安全审计错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | check permission fail. |
-| 1012000001 | Internal error. |
+| 1012000001 | Internal error.Possible causes: 1. IPC cross-process invoking fails. 2. System service process is faulty. |
 | 1012000002 | The number of clients exceeds the global upper limit. |
 | 1012000003 | The number of clients exceeds the current process upper limit. |
 
@@ -602,7 +613,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
 let client: securityAudit.Client | undefined = undefined;
-const TAG = "SecurityAuditJsTest";
+const TAG = 'SecurityAuditJsTest';
 const callback = (event: securityAudit.AuditEvent) => {
   hilog.info(0x0000, TAG, '%{public}s', 'Security_SecurityAudit_JsApi_Func eventId= ' + event.eventId);
   hilog.info(0x0000, TAG, '%{public}s', 'Security_SecurityAudit_JsApi_Func version= ' + event.version);
@@ -641,12 +652,12 @@ deleteClient(client: Client): void
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[安全审计错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | check permission fail. |
-| 1012000001 | Internal error. |
+| 1012000001 | Internal error.Possible causes: 1. IPC cross-process invoking fails. 2. System service process is faulty. |
 
 示例：
 
@@ -656,7 +667,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
 let client: securityAudit.Client | undefined = undefined;
-const TAG = "SecurityAuditJsTest";
+const TAG = 'SecurityAuditJsTest';
 const callback = (event: securityAudit.AuditEvent) => {
   hilog.info(0x0000, TAG, '%{public}s', 'Security_SecurityAudit_JsApi_Func eventId= ' + event.eventId);
   hilog.info(0x0000, TAG, '%{public}s', 'Security_SecurityAudit_JsApi_Func version= ' + event.version);
@@ -708,12 +719,12 @@ subscribe(events: AuthEvent[]): void
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[安全审计错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | check permission fail. |
-| 1012000001 | Internal error. |
+| 1012000001 | Internal error.Possible causes: 1. IPC cross-process invoking fails. 2. System service process is faulty. |
 
 示例：
 
@@ -722,7 +733,7 @@ import { securityAudit } from '@kit.DeviceSecurityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
-const TAG = "SecurityAuditAuthJsTest";
+const TAG = 'SecurityAuditAuthJsTest';
 let authClient: securityAudit.AuthClient | undefined = undefined;
 const callback = (event: securityAudit.AuditEvent) => {
   hilog.info(0x0000, TAG, '%{public}s', 'Security_SecurityAudit_Auth_JsApi_Func eventId= ' + event.eventId);
@@ -765,12 +776,12 @@ unsubscribe(events: AuthEvent[]): void
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[安全审计错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | check permission fail. |
-| 1012000001 | Internal error. |
+| 1012000001 | Internal error.Possible causes: 1. IPC cross-process invoking fails. 2. System service process is faulty. |
 
 示例：
 
@@ -779,7 +790,7 @@ import { securityAudit } from '@kit.DeviceSecurityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
-const TAG = "SecurityAuditAuthJsTest";
+const TAG = 'SecurityAuditAuthJsTest';
 let authClient: securityAudit.AuthClient | undefined = undefined;
 const callback = (event: securityAudit.AuditEvent) => {
   hilog.info(0x0000, TAG, '%{public}s', 'Security_SecurityAudit_Auth_JsApi_Func eventId= ' + event.eventId);
@@ -829,12 +840,12 @@ addFilter(event: AuthEvent, filter: Filter): void
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[安全审计错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | check permission fail. |
-| 1012000001 | Internal error. |
+| 1012000001 | Internal error.Possible causes: 1. IPC cross-process invoking fails. 2. System service process is faulty. |
 | 1012000004 | The number of filters exceeds the upper limit. |
 | 1012000005 | The event does not support the filter condition. |
 
@@ -845,7 +856,7 @@ import { securityAudit } from '@kit.DeviceSecurityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
-const TAG = "SecurityAuditAuthJsTest";
+const TAG = 'SecurityAuditAuthJsTest';
 let authClient: securityAudit.AuthClient | undefined = undefined;
 const callback = (event: securityAudit.AuditEvent) => {
   hilog.info(0x0000, TAG, '%{public}s', 'Security_SecurityAudit_Auth_JsApi_Func eventId= ' + event.eventId);
@@ -894,12 +905,12 @@ removeFilter(event: AuthEvent, filter: Filter): void
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[安全审计错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | check permission fail. |
-| 1012000001 | Internal error. |
+| 1012000001 | Internal error.Possible causes: 1. IPC cross-process invoking fails. 2. System service process is faulty. |
 | 1012000005 | The event does not support the filter condition. |
 
 示例：
@@ -909,7 +920,7 @@ import { securityAudit } from '@kit.DeviceSecurityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
-const TAG = "SecurityAuditAuthJsTest";
+const TAG = 'SecurityAuditAuthJsTest';
 let authClient: securityAudit.AuthClient | undefined = undefined;
 const callback = (event: securityAudit.AuditEvent) => {
   hilog.info(0x0000, TAG, '%{public}s', 'Security_SecurityAudit_Auth_JsApi_Func eventId= ' + event.eventId);
@@ -964,12 +975,12 @@ auth(auditEvent: AuditEvent, authResult: AuthResult): void
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[安全审计错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | check permission fail. |
-| 1012000001 | Internal error. |
+| 1012000001 | Internal error.Possible causes: 1. IPC cross-process invoking fails. 2. System service process is faulty. |
 | 1012000007 | The auth event cannot be found. |
 
 示例：
@@ -979,7 +990,7 @@ import { securityAudit } from '@kit.DeviceSecurityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
-const TAG = "SecurityAuditAuthJsTest";
+const TAG = 'SecurityAuditAuthJsTest';
 let authClient: securityAudit.AuthClient | undefined = undefined;
 const allowEventCallback = (event: securityAudit.AuditEvent) => {
   hilog.info(0x0000, TAG, '%{public}s', 'Security_SecurityAudit_Auth_JsApi_Func eventId= ' + event.eventId);
@@ -1024,16 +1035,16 @@ newAuthClient(callback: Callback<[AuditEvent](#auditevent)>): AuthClient
 
 | 类型 | 说明 |
 | --- | --- |
-| [AuthClient](#authclient) | 阻断类客户端实例对象。 |
+| [AuthClient](#authclient) | 阻断类客户端实例对象，一个进程最大只允许创建2个客户端实例对象，当前设备最多只允许创建16个客户端实例对象。一个客户端实例最大只允许设置256条正过滤的过滤value和256条反过滤的过滤value。 |
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[安全审计错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | check permission fail. |
-| 1012000001 | Internal error. |
+| 1012000001 | Internal error.Possible causes: 1. IPC cross-process invoking fails. 2. System service process is faulty. |
 | 1012000002 | The number of clients exceeds the global upper limit. |
 | 1012000003 | The number of clients exceeds the current process upper limit. |
 
@@ -1044,7 +1055,7 @@ import { securityAudit } from '@kit.DeviceSecurityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
-const TAG = "SecurityAuditAuthJsTest";
+const TAG = 'SecurityAuditAuthJsTest';
 let authClient: securityAudit.AuthClient | undefined = undefined;
 const callback = (event: securityAudit.AuditEvent) => {
   hilog.info(0x0000, TAG, '%{public}s', 'Security_SecurityAudit_Auth_JsApi_Func eventId= ' + event.eventId);
@@ -1081,12 +1092,12 @@ deleteAuthClient(client: AuthClient): void
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[安全审计错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | check permission fail. |
-| 1012000001 | Internal error. |
+| 1012000001 | Internal error.Possible causes: 1. IPC cross-process invoking fails. 2. System service process is faulty. |
 
 示例：
 
@@ -1095,7 +1106,7 @@ import { securityAudit } from '@kit.DeviceSecurityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
-const TAG = "SecurityAuditAuthJsTest";
+const TAG = 'SecurityAuditAuthJsTest';
 let authClient: securityAudit.AuthClient | undefined = undefined;
 const callback = (event: securityAudit.AuditEvent) => {
   hilog.info(0x0000, TAG, '%{public}s', 'Security_SecurityAudit_Auth_JsApi_Func eventId= ' + event.eventId);
@@ -1116,9 +1127,89 @@ try {
 }
 ```
 
+#### AuthClientConfiguration
+
+阻断类事件客户端配置项。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Security.SecurityAudit
+
+起始版本： 26.0.0
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| timeoutAuthResult | [AuthResult](#authresult) | 否 | 否 | 设置授权事件响应超时时的默认授权结果。 - ALLOW：超时放行 - DENY：超时阻断 |
+
+#### newAuthClient
+
+newAuthClient(callback: Callback<[AuditEvent](#auditevent)>, configuration: [AuthClientConfiguration](#authclientconfiguration)): AuthClient
+
+创建一个新的阻断客户端（可配置超时默认阻断策略），该客户端提供的方法可以实现阻断类事件的订阅、过滤和阻断功能。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+需要权限： ohos.permission.kernel.AUTH_AUDIT_EVENT
+
+系统能力： SystemCapability.Security.SecurityAudit
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| callback | Callback | 是 | 用于接收审计数据的回调函数。 |
+| configuration | [AuthClientConfiguration](#authclientconfiguration) | 是 | 阻断客户端配置项。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| [AuthClient](#authclient) | 阻断类客户端实例对象。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[安全审计错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 201 | check permission fail. |
+| 1012000001 | Internal error.Possible causes: 1. IPC cross-process invoking fails. 2. System service process is faulty. |
+| 1012000002 | The number of clients exceeds the global upper limit. |
+| 1012000003 | The number of clients exceeds the current process upper limit. |
+
+示例：
+
+```
+import { securityAudit } from '@kit.DeviceSecurityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+import { hilog } from '@kit.PerformanceAnalysisKit';
+
+const TAG = 'SecurityAuditAuthJsTest';
+let authClient: securityAudit.AuthClient | undefined = undefined;
+const callback = (event: securityAudit.AuditEvent) => {
+  hilog.info(0x0000, TAG, '%{public}s', 'Security_SecurityAudit_Auth_JsApi_Func eventId= ' + event.eventId);
+  hilog.info(0x0000, TAG, '%{public}s', 'Security_SecurityAudit_Auth_JsApi_Func content= ' + event.content);
+  hilog.info(0x0000, TAG, '%{public}s', 'Security_SecurityAudit_Auth_JsApi_Func metadata= ' + event.metadata);
+};
+
+// 配置超时后阻断
+let config: securityAudit.AuthClientConfiguration = {
+  timeoutAuthResult: securityAudit.AuthResult.DENY
+};
+
+try {
+  authClient = securityAudit.newAuthClient(callback, config);
+} catch (err) {
+  let e: BusinessError = err as BusinessError;
+  hilog.error(0x0000, TAG, 'newAuthClient failed: %{public}d %{public}s', e.code, e.message);
+}
+```
+
 #### queryAllProcesses
 
-queryAllProcesses(): string;
+queryAllProcesses(): string
 
 查询获取所有的应用进程信息。
 
@@ -1138,12 +1229,12 @@ queryAllProcesses(): string;
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[安全审计错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | check permission fail. |
-| 1012000001 | Internal error. |
+| 1012000001 | Internal error.Possible causes: 1. IPC cross-process invoking fails. 2. System service process is faulty. |
 
 示例：
 
@@ -1152,7 +1243,7 @@ import { securityAudit } from '@kit.DeviceSecurityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
-const TAG = "SecurityAuditJsTest";
+const TAG = 'SecurityAuditJsTest';
 try {
   hilog.info(0x0000, TAG, 'queryAllProcesses begin.');
   const result = securityAudit.queryAllProcesses();
@@ -1165,7 +1256,7 @@ try {
 
 #### queryProcesses
 
-queryProcesses(pids: number[]): string;
+queryProcesses(pids: number[]): string
 
 查询获取输入的PID的应用进程信息。
 
@@ -1191,12 +1282,12 @@ queryProcesses(pids: number[]): string;
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[安全审计错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | check permission fail. |
-| 1012000001 | Internal error. |
+| 1012000001 | Internal error.Possible causes: 1. IPC cross-process invoking fails. 2. System service process is faulty. |
 | 1012000006 | The number of queried processes exceeds the threshold. |
 
 示例：
@@ -1206,7 +1297,7 @@ import { securityAudit } from '@kit.DeviceSecurityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
-const TAG = "SecurityAuditJsTest";
+const TAG = 'SecurityAuditJsTest';
 let pids: number[] = [1, 2];
 try {
   hilog.info(0x0000, TAG, 'queryProcesses begin.');
@@ -1246,12 +1337,12 @@ acquireCodeSign(path: string): string
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[安全审计错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | check permission fail. |
-| 1012000001 | Internal error. |
+| 1012000001 | Internal error.Possible causes: 1. IPC cross-process invoking fails. 2. System service process is faulty. |
 | 1012000008 | The file cannot be found. |
 
 示例：
@@ -1261,7 +1352,7 @@ import { securityAudit } from '@kit.DeviceSecurityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
  
-const TAG = "SecurityAuditJsTest";
+const TAG = 'SecurityAuditJsTest';
 let path = 'test';
 try {
   hilog.info(0x0000, TAG, 'acquireCodeSign begin.');
@@ -1275,7 +1366,7 @@ try {
 
 #### acquireAllClientsInfo
 
-acquireAllClientsInfo(): string;
+acquireAllClientsInfo(): string
 
 查询获取全量审计事件通知类客户端信息。
 
@@ -1295,12 +1386,12 @@ acquireAllClientsInfo(): string;
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[安全审计错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | check permission fail. |
-| 1012000001 | Internal error. |
+| 1012000001 | Internal error.Possible causes: 1. IPC cross-process invoking fails. 2. System service process is faulty. |
 
 示例：
 
@@ -1309,7 +1400,7 @@ import { securityAudit } from '@kit.DeviceSecurityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
-const TAG = "SecurityAuditJsTest";
+const TAG = 'SecurityAuditJsTest';
 try {
   hilog.info(0x0000, TAG, 'acquireAllClientsInfo begin.');
   const result = securityAudit.acquireAllClientsInfo();
@@ -1317,5 +1408,52 @@ try {
 } catch (err) {
   let e: BusinessError = err as BusinessError;
   hilog.error(0x0000, TAG, 'acquireAllClientsInfo failed: %{public}d %{public}s', e.code, e.message);
+}
+```
+
+#### acquireAllAuthClientsInfo
+
+acquireAllAuthClientsInfo(): string
+
+查询获取全量审计事件阻断类客户端信息。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+需要权限： ohos.permission.kernel.AUTH_AUDIT_EVENT
+
+系统能力： SystemCapability.Security.SecurityAudit
+
+起始版本： 26.0.0
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| string | 安全审计阻断类客户端信息，内容为json格式字符串。例如： [{"procName": vps, "uid": 1000, "pid": 1000}]。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[安全审计错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-securityaudit)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 201 | check permission fail. |
+| 1012000001 | Internal error.Possible causes: 1. IPC cross-process invoking fails. 2. System service process is faulty. |
+
+示例：
+
+```
+import { securityAudit } from '@kit.DeviceSecurityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+import { hilog } from '@kit.PerformanceAnalysisKit';
+ 
+const TAG = 'SecurityAuditJsTest';
+try {
+  hilog.info(0x0000, TAG, 'acquireAllAuthClientsInfo begin.');
+  const result = securityAudit.acquireAllAuthClientsInfo();
+  hilog.info(0x0000, TAG, 'Succeeded in acquireAllAuthClientsInfo.');
+} catch (err) {
+  let e: BusinessError = err as BusinessError;
+  hilog.error(0x0000, TAG, 'acquireAllAuthClientsInfo failed: %{public}d %{public}s', e.code, e.message);
 }
 ```

@@ -2,8 +2,8 @@
 title: "@ohos.prompt (弹窗)"
 upstream_id: "harmonyos-references/js-apis-prompt"
 catalog: "harmonyos-references"
-content_hash: "efc683fb800c"
-synced_at: "2026-07-09T00:57:34.994662"
+content_hash: "64f694720f76"
+synced_at: "2026-07-28T16:41:46.748830"
 ---
 
 # @ohos.prompt (弹窗)
@@ -40,10 +40,10 @@ showToast(options: ShowToastOptions): void
 import prompt from '@ohos.prompt'
 prompt.showToast({
   message: 'Message Info',
-    duration: 2000
+  duration: 2000
 });
 ```
- ![](./img/zh-cn_image_0000002631413010.gif)
+ ![](./img/zh-cn_image_0000002686087745.gif)
 
 #### ShowToastOptions
 
@@ -61,7 +61,7 @@ prompt.showToast({
 
 showDialog(options: ShowDialogOptions): Promise<ShowDialogSuccessResponse>
 
-创建并显示对话框，对话框响应后同步返回结果。
+创建并显示对话框，使用Promise异步回调。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -102,7 +102,7 @@ prompt.showDialog({
     console.info('showDialog error: ' + err);
   })
 ```
- ![](./img/zh-cn_image_0000002631253080.gif)
+ ![](./img/zh-cn_image_0000002656008198.gif)
 
 #### prompt.showDialog
 
@@ -116,7 +116,7 @@ showDialog(options: ShowDialogOptions, callback: AsyncCallback<ShowDialogSuccess
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [ShowDialogOptions](#showdialogoptions) | 是 | 页面显示对话框信息描述。 |
+| options | [ShowDialogOptions](#showdialogoptions) | 是 | 对话框选项。 |
 | callback | AsyncCallback | 是 | 对话框响应结果回调。 |
 
 示例：
@@ -144,7 +144,7 @@ prompt.showDialog({
   console.info('showDialog success callback, click button: ' + data.index);
 });
 ```
- ![](./img/zh-cn_image_0000002661612265.gif)
+ ![](./img/zh-cn_image_0000002655848278.gif)
 
 #### ShowDialogOptions
 
@@ -207,13 +207,13 @@ prompt.showActionMenu({
   console.info('showActionMenu success callback, click button: ' + data.index);
 })
 ```
- ![](./img/zh-cn_image_0000002631253082.gif)
+ ![](./img/zh-cn_image_0000002656008200.gif)
 
 #### prompt.showActionMenu
 
 showActionMenu(options: ActionMenuOptions): Promise<ActionMenuSuccessResponse>
 
-创建并显示操作菜单，菜单响应后同步返回结果。
+创建并显示操作菜单，使用Promise异步回调。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -253,7 +253,7 @@ prompt.showActionMenu({
     console.info('showActionMenu error: ' + err);
   })
 ```
- ![](./img/zh-cn_image_0000002631412974.gif)
+ ![](./img/zh-cn_image_0000002686087709.gif)
 
 #### ActionMenuOptions
 

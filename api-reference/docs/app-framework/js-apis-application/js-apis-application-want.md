@@ -2,8 +2,8 @@
 title: "@ohos.application.Want (Want)"
 upstream_id: "harmonyos-references/js-apis-application-want"
 catalog: "harmonyos-references"
-content_hash: "e5440bd7b4cb"
-synced_at: "2026-07-09T00:57:11.132310"
+content_hash: "8d9f9e33c011"
+synced_at: "2026-07-28T16:40:41.408217"
 ---
 
 # @ohos.application.Want (Want)
@@ -48,13 +48,15 @@ let want: Want = {
 'bundleName': 'com.example.myapplication',
 'abilityName': 'EntryAbility',
 };
-class MyAbility extends UIAbility{
-onCreate(want: Want, launchParam: AbilityConstant.LaunchParam){
-    this.context.startAbility(want, (error: BusinessError) => {
-    // 显式拉起Ability，通过bundleName、abilityName和moduleName可以唯一确定一个Ability
-    console.error(`error.code = ${error.code}`);
-    });
-}
+class MyAbility extends UIAbility {
+  onCreate(want: Want, launchParam: AbilityConstant.LaunchParam) {
+      this.context.startAbility(want, (error: BusinessError) => {
+        // 显式拉起Ability，通过bundleName、abilityName和moduleName可以唯一确定一个Ability
+        if (error) {
+          console.error(`StartAbility failed, error code: ${error.code}, error msg: ${error.message}.`);
+        }
+      });
+    }
 }
 ```
 
@@ -63,11 +65,11 @@ onCreate(want: Want, launchParam: AbilityConstant.LaunchParam){
 import Want from '@ohos.application.Want';
 
 let want: Want = {
-    bundleName: 'com.example.myapplication',
-    abilityName: 'EntryAbility',
-    parameters: {
-        keyForString: 'str',
-    },
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EntryAbility',
+  parameters: {
+    keyForString: 'str',
+  },
 };
 ```
 
@@ -76,12 +78,12 @@ let want: Want = {
 import Want from '@ohos.application.Want';
 
 let want: Want = {
-    bundleName: 'com.example.myapplication',
-    abilityName: 'EntryAbility',
-    parameters: {
-        keyForInt: 100,
-        keyForDouble: 99.99,
-    },
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EntryAbility',
+  parameters: {
+    keyForInt: 100,
+    keyForDouble: 99.99,
+  },
 };
 ```
 
@@ -90,11 +92,11 @@ let want: Want = {
 import Want from '@ohos.application.Want';
 
 let want: Want = {
-    bundleName: 'com.example.myapplication',
-    abilityName: 'EntryAbility',
-    parameters: {
-        keyForBool: true,
-    },
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EntryAbility',
+  parameters: {
+    keyForBool: true,
+  },
 };
 ```
 
@@ -103,16 +105,16 @@ let want: Want = {
 import Want from '@ohos.application.Want';
 
 let want: Want = {
-    bundleName: 'com.example.myapplication',
-    abilityName: 'EntryAbility',
-    parameters: {
-        keyForObject: {
-            keyForObjectString: 'str',
-            keyForObjectInt: -200,
-            keyForObjectDouble: 35.5,
-            keyForObjectBool: false,
-        },
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EntryAbility',
+  parameters: {
+    keyForObject: {
+      keyForObjectString: 'str',
+      keyForObjectInt: -200,
+      keyForObjectDouble: 35.5,
+      keyForObjectBool: false,
     },
+  },
 };
 ```
 
@@ -121,14 +123,14 @@ let want: Want = {
 import Want from '@ohos.application.Want';
 
 let want: Want = {
-    bundleName: 'com.example.myapplication',
-    abilityName: 'EntryAbility',
-    parameters: {
-        keyForArrayString: ['str1', 'str2', 'str3'],
-        keyForArrayInt: [100, 200, 300, 400],
-        keyForArrayDouble: [0.1, 0.2],
-        keyForArrayObject: [{obj1: 'aaa'}, {obj2: 100}],
-    },
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EntryAbility',
+  parameters: {
+    keyForArrayString: ['str1', 'str2', 'str3'],
+    keyForArrayInt: [100, 200, 300, 400],
+    keyForArrayDouble: [0.1, 0.2],
+    keyForArrayObject: [{obj1: 'aaa'}, {obj2: 100}],
+  },
 };
 ```
 
@@ -142,25 +144,27 @@ import UIAbility from '@ohos.app.ability.UIAbility';
 
 let fd: number = 0;
 try {
-    fd = fileIo.openSync('/data/storage/el2/base/haps/pic.png').fd;
+  fd = fileIo.openSync('/data/storage/el2/base/haps/pic.png').fd;
 } catch (e) {
-    console.error(`OpenSync failed, error code: ${e.code}, error msg: ${e.message}.`);
+  console.error(`OpenSync failed, error code: ${e.code}, error msg: ${e.message}.`);
 }
 let want: Want = {
-    deviceId: '', // deviceId为空表示本设备
-    bundleName: 'com.example.myapplication',
-    abilityName: 'EntryAbility',
-    parameters: {
-        'keyFd': { 'type': 'FD', 'value': fd }
-    }
+  deviceId: '', // deviceId为空表示本设备
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EntryAbility',
+  parameters: {
+    'keyFd': { 'type': 'FD', 'value': fd }
+  }
 };
 
 class MyAbility extends UIAbility {
-    onCreate(want: Want, launchParam: AbilityConstant.LaunchParam) {
-        this.context.startAbility(want, (error: BusinessError) => {
-            // 显式拉起Ability，通过bundleName、abilityName和moduleName可以唯一确定一个Ability
-            console.error(`StartAbility failed, error.code: ${error.code}, err msg: ${error.message}.`);
-        });
-    }
+  onCreate(want: Want, launchParam: AbilityConstant.LaunchParam) {
+    this.context.startAbility(want, (error: BusinessError) => {
+      // 显式拉起Ability，通过bundleName、abilityName和moduleName可以唯一确定一个Ability
+      if (error) {
+        console.error(`StartAbility failed, error code: ${error.code}, error msg: ${error.message}.`);
+      }
+    });
+  }
 }
 ```

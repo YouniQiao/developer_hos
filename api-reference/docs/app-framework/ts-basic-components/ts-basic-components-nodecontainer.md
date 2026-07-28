@@ -2,13 +2,13 @@
 title: "NodeContainer"
 upstream_id: "harmonyos-references/ts-basic-components-nodecontainer"
 catalog: "harmonyos-references"
-content_hash: "5f74514f76cc"
-synced_at: "2026-07-09T00:58:13.084965"
+content_hash: "b5a77dae3c26"
+synced_at: "2026-07-28T16:47:51.014000"
 ---
 
 # NodeContainer
 
-基础组件，用于挂载自定义节点（如[FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode)或[BuilderNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode)），并通过[NodeController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-nodecontroller)动态控制节点的上树和下树。组件不支持尾随添加子节点，接受一个[NodeController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-nodecontroller)实例接口，需与NodeController组合使用。
+基础组件，用于挂载自定义节点（如[FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode)或[BuilderNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode)中获取的根节点FrameNode），并通过[NodeController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-nodecontroller)动态控制节点的上树和下树，适用于需要在组件树中动态插入、移除自定义节点以实现UI按需加载与节点复用的场景，可提升页面渲染效率并降低节点创建开销。组件不支持尾随添加子节点，接受一个[NodeController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-nodecontroller)实例，需与NodeController组合使用。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -42,7 +42,7 @@ NodeContainer(controller: import('../api/@ohos.arkui.node').NodeController)
 
 #### 属性
 
-支持[通用属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-attributes)。
+支持[通用属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-attributes)，但不支持[动态属性设置](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier)。
 
 #### 事件
 
@@ -80,9 +80,13 @@ class MyNodeController extends NodeController {
   makeNode(uiContext: UIContext): FrameNode | null {
     if (this.rootNode === null) {
       this.rootNode = new BuilderNode(uiContext);
-      this.rootNode.build(this.wrapBuilder, { text: "This is a Text" })
+      this.rootNode.build(this.wrapBuilder, { text: 'This is a Text' })
     }
     return this.rootNode.getFrameNode();
+  }
+
+  aboutToDisappear() {
+    this.rootNode?.dispose();
   }
 }
 
@@ -93,13 +97,13 @@ struct Index {
 
   build() {
     Flex({ direction: FlexDirection.Column, alignItems: ItemAlign.Start, justifyContent: FlexAlign.SpaceEvenly }) {
-      Text("This is a NodeContainer contains a text and a button ")
+      Text('This is a NodeContainer contains a text and a button ')
         .fontSize(9)
         .fontColor(0xCCCCCC)
       NodeContainer(this.baseNode)
         .borderWidth(1)
         .onClick(() => {
-          console.info("click event");
+          console.info('click event');
         })
     }
     .padding({ left: 35, right: 35, top: 35 })
@@ -108,4 +112,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732907.jpg)
+ ![](./img/zh-cn_image_0000002685928575.jpg)

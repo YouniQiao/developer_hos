@@ -2,13 +2,13 @@
 title: "ToolBar"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-toolbar"
 catalog: "harmonyos-references"
-content_hash: "fb99195603ee"
-synced_at: "2026-07-09T00:58:17.962690"
+content_hash: "b10c15a48697"
+synced_at: "2026-07-28T16:48:37.559608"
 ---
 
 # ToolBar
 
-工具栏组件，用于展示针对当前界面内容的操作选项，在界面底部显示。底部最多显示5个入口，超过则收纳入“更多”子项中，在最右侧显示。
+工具栏组件，用于展示针对当前界面内容的操作选项，在界面底部显示。适用于需要为用户提供快捷操作入口的场景，如编辑页面的复制、粘贴、分享等操作。底部最多显示5个入口，超过则收纳入“更多”子项中，在最右侧显示。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -41,8 +41,8 @@ ToolBar({toolBarList: ToolBarOptions, activateIndex?: number, controller: TabsCo
 | 名称 | 类型 | 必填 | 装饰器类型 | 说明 |
 | --- | --- | --- | --- | --- |
 | toolBarList | [ToolBarOptions](#toolbaroptions) | 是 | @ObjectLink | 工具栏列表。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| activateIndex | number | 否 | @Prop | 激活态的子项。 取值范围：大于等于-1。 默认值：-1，没有激活态的子项。若设置数值小于-1，按没有激活项处理。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| controller | [TabsController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabs#tabscontroller) | 是 | - | 工具栏控制器，不支持控制工具栏子项。 **说明：** 根据自定义组件成员属性访问限定符[使用限制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-custom-components-access-restrictions#使用限制)，该接口属于常规成员变量，可以传参进行初始化；也可以不传。不传时，使用组件内预设值进行初始化，组件内预设值为：new TabsController()。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| activateIndex | number | 否 | @Prop | 激活态的子项索引。 默认值：-1，表示没有激活态的子项。设置小于-1的值时按没有激活项处理。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| controller | [TabsController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabs#tabscontroller) | 是 | - | 工具栏控制器，用于关联Tabs组件页面切换，不支持控制工具栏子项。 **说明：** 根据自定义组件成员属性访问限定符[使用限制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-custom-components-access-restrictions#使用限制)，该接口属于常规成员变量，可以传参进行初始化；也可以不传。不传时，使用组件内预设值进行初始化，组件内预设值为：new TabsController()。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | dividerModifier13+ | [DividerModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#自定义modifier) | 否 | @Prop | 工具栏头部分割线属性，可设置分割线高度、颜色等。 默认值：系统默认值。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
 | toolBarModifier13+ | [ToolBarModifier](#toolbarmodifier13) | 否 | @Prop | 工具栏属性，可设置工具栏高度、背景色、内边距（仅在工具栏子项数量小于5时生效）、是否显示按压态。 默认值： 工具栏高度：56vp 背景色：ohos_id_toolbar_bg 内边距：24vp 显示按压态。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
 
@@ -71,21 +71,21 @@ ToolBar({toolBarList: ToolBarOptions, activateIndex?: number, controller: TabsCo
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | content | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 否 | 工具栏子项的文本。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| action | () => void | 否 | 是 | 工具栏子项点击事件。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| icon | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 是 | 工具栏子项的图标。 默认不设置或者设置为undefined，图标不显示。 toolBarSymbolOptions有传入参数时，icon不生效。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| action | () => void | 否 | 是 | 工具栏子项点击事件。不传入时点击子项不会触发任何操作。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| icon | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 是 | 工具栏子项的图标。 默认不设置或者设置为undefined，图标不显示。 当设置了toolBarSymbolOptions属性时，icon属性将不生效。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | state | [ItemState](#itemstate) | 否 | 是 | 工具栏子项的状态。 默认为ItemState.ENABLE。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| iconColor13+ | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 工具栏子项的图标填充颜色。 默认值为$r('sys.color.icon_primary')。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
-| activatedIconColor13+ | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 工具栏子项激活态的图标填充颜色。 默认值为$r('sys.color.icon_emphasize')。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
+| iconColor13+ | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 工具栏子项的图标填充颜色。 默认值为$r('sys.color.icon_primary')。 当设置了toolBarSymbolOptions属性时，该参数不生效。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
+| activatedIconColor13+ | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 工具栏子项激活态的图标填充颜色。 默认值为$r('sys.color.icon_emphasize')。 当设置了toolBarSymbolOptions属性时，该参数不生效。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
 | textColor13+ | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 工具栏子项的文本颜色。 默认值为$r('sys.color.font_primary')。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
 | activatedTextColor13+ | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 工具栏子项激活态的文本颜色。 默认值为$r('sys.color.font_emphasize')。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
-| toolBarSymbolOptions13+ | [ToolBarSymbolGlyphOptions](#toolbarsymbolglyphoptions13) | 否 | 是 | 工具栏子项的图标属性，symbol类型。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
-| accessibilityText18+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 工具栏子项的无障碍文本属性。当组件不包含文本属性时，屏幕朗读选中此组件时不播报，使用者无法清楚地知道当前选中了什么组件。为了解决此场景，开发人员可为不包含文字信息的组件设置无障碍文本，当屏幕朗读选中此组件时播报无障碍文本的内容，帮助屏幕朗读的使用者清楚地知道自己选中了什么组件。 默认值为当前项content属性内容。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| accessibilityDescription18+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 工具栏子项的无障碍描述。此描述用于向用户详细解释当前组件，开发人员应为组件的这一属性提供较为详尽的文本说明，以协助用户理解即将执行的操作及其可能产生的后果。特别是当这些后果无法仅从组件的属性和无障碍文本中直接获知时。如果组件同时具备文本属性和无障碍说明属性，当组件被选中时，系统将首先播报组件的文本属性，随后播报无障碍说明属性的内容。 默认值为“单指双击即可执行”。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| accessibilityLevel18+ | string | 否 | 是 | 工具栏子项无障碍重要性。用于控制当前项是否可被无障碍辅助服务所识别。 支持的值为： "auto"：当前组件会转换"yes"。 "yes"：当前组件可被无障碍辅助服务所识别。 "no"：当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants"：当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值："auto" **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| toolBarSymbolOptions13+ | [ToolBarSymbolGlyphOptions](#toolbarsymbolglyphoptions13) | 否 | 是 | 工具栏子项的图标属性，symbol类型。设置此参数后，icon属性将不生效。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
+| accessibilityText18+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 工具栏子项的无障碍文本属性。当组件不包含文本属性时，屏幕朗读选中此组件时不播报。开发人员可为不包含文字信息的组件设置无障碍文本，使屏幕朗读选中此组件时播报该文本内容。 默认值为当前项content属性内容。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| accessibilityDescription18+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 工具栏子项的无障碍描述。用于向用户详细解释当前组件的功能和操作后果，特别是当这些信息无法仅从组件文本直接获知时。组件被选中时，将依次播报文本属性和无障碍说明属性的内容。 默认值为“单指双击即可执行”。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| accessibilityLevel18+ | string | 否 | 是 | 工具栏子项无障碍重要性。用于控制当前项是否可被无障碍辅助服务所识别。 支持的值为： "auto"：当前组件会转换为"yes"。 "yes"：当前组件可被无障碍辅助服务所识别。 "no"：当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants"：当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值："auto" **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 
 #### ToolBarModifier13+
 
-ToolBarModifier提供设置工具栏高度(height)、背景色(backgroundColor)、左右内边距（padding，仅在item小于5个时生效）、是否显示按压态（stateEffect）的方法。
+ToolBarModifier提供设置工具栏高度(height)、背景色(backgroundColor)、左右内边距（padding，仅在子项数量小于5个时生效）、是否显示按压态（stateEffect）的方法。
 
 元服务API： 从API version 13开始，该接口支持在元服务中使用。
 
@@ -93,7 +93,7 @@ ToolBarModifier提供设置工具栏高度(height)、背景色(backgroundColor)�
 
 backgroundColor(backgroundColor: ResourceColor): ToolBarModifier
 
-自定义绘制工具栏背景色的接口，若重载该方法则可进行工具栏背景色的自定义绘制。
+设置工具栏背景色的接口。
 
 元服务API： 从API version 13开始，该接口支持在元服务中使用。
 
@@ -111,13 +111,13 @@ backgroundColor(backgroundColor: ResourceColor): ToolBarModifier
 
 | 类型 | 说明 |
 | --- | --- |
-| [ToolBarModifier](#toolbarmodifier13) | 设置backgroundColor后的ToolBarModifier对象。 |
+| [ToolBarModifier](#toolbarmodifier13) | 返回当前的ToolBarModifier对象，支持链式调用。 |
 
 #### [h2]padding13+
 
 padding(padding: LengthMetrics): ToolBarModifier
 
-自定义绘制工具栏左右内边距的接口，若重载该方法则可进行工具栏左右内边距的自定义绘制。
+设置工具栏左右内边距的接口。
 
 元服务API： 从API version 13开始，该接口支持在元服务中使用。
 
@@ -129,19 +129,19 @@ padding(padding: LengthMetrics): ToolBarModifier
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| padding | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 是 | 工具栏左右内边距，仅在item小于5个时生效。 工具栏默认在item小于5个时padding为24vp，大于等于5个时为0。 |
+| padding | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 是 | 工具栏左右内边距，仅在子项数量小于5个时生效。 工具栏默认在子项数量小于5个时padding为24vp，大于等于5个时为0vp。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| [ToolBarModifier](#toolbarmodifier13) | 设置padding后的ToolBarModifier对象。 |
+| [ToolBarModifier](#toolbarmodifier13) | 返回当前的ToolBarModifier对象，支持链式调用。 |
 
 #### [h2]height13+
 
 height(height: LengthMetrics): ToolBarModifier
 
-自定义绘制工具栏高度的接口，若重载该方法则可进行工具栏高度的自定义绘制，此高度不包含分割线高度。
+设置工具栏高度的接口，此高度不包含分割线高度。
 
 元服务API： 从API version 13开始，该接口支持在元服务中使用。
 
@@ -159,7 +159,7 @@ height(height: LengthMetrics): ToolBarModifier
 
 | 类型 | 说明 |
 | --- | --- |
-| [ToolBarModifier](#toolbarmodifier13) | 设置height后的ToolBarModifier对象。 |
+| [ToolBarModifier](#toolbarmodifier13) | 返回当前的ToolBarModifier对象，支持链式调用。 |
 
 #### [h2]stateEffect13+
 
@@ -183,7 +183,7 @@ stateEffect(stateEffect: boolean): ToolBarModifier
 
 | 类型 | 说明 |
 | --- | --- |
-| [ToolBarModifier](#toolbarmodifier13) | 设置stateEffect后的ToolBarModifier对象。 |
+| [ToolBarModifier](#toolbarmodifier13) | 返回当前的ToolBarModifier对象，支持链式调用。 |
 
 #### ItemState
 
@@ -292,7 +292,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732959.png)
+ ![](./img/zh-cn_image_0000002656008962.png)
 
 #### [h2]示例2（设置工具栏自定义样式）
 
@@ -391,7 +391,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253838.png)
+ ![](./img/zh-cn_image_0000002655849042.png)
 
 #### [h2]示例3（设置工具栏自定义播报）
 
@@ -468,4 +468,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732959.png)
+ ![](./img/zh-cn_image_0000002656008962.png)

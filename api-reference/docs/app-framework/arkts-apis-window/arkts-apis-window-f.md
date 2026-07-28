@@ -2,8 +2,8 @@
 title: "Functions"
 upstream_id: "harmonyos-references/arkts-apis-window-f"
 catalog: "harmonyos-references"
-content_hash: "f19711265d92"
-synced_at: "2026-07-09T00:57:34.655841"
+content_hash: "e0c681d060b2"
+synced_at: "2026-07-28T16:41:43.061389"
 ---
 
 # Functions
@@ -27,7 +27,7 @@ createWindow(config: Configuration, callback: AsyncCallback<Window>): void
 
 非[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态下，子窗口创建后默认是[沉浸式布局](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/immersive-window-feature#沉浸式布局)。
 
-自由窗口状态下，子窗口参数[decorEnabled](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#configuration9)为false时，子窗口创建后为沉浸式布局；子窗口参数decorEnabled为true，子窗口创建后为非沉浸式布局。
+自由窗口状态下，子窗口参数[decorEnabled](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#configuration9)为false时，创建后为沉浸式布局；参数decorEnabled为true，创建后为非沉浸式布局。
 
 需要权限： ohos.permission.SYSTEM_FLOAT_WINDOW（仅当创建窗口类型为window.WindowType.TYPE_FLOAT时需要申请）
 
@@ -50,11 +50,12 @@ createWindow(config: Configuration, callback: AsyncCallback<Window>): void
 | --- | --- |
 | 201 | Permission verification failed. The application does not have the permission required to call the API. |
 | 401 | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
-| 801 | Capability not supported. createWindow can not work correctly due to limited device capabilities. |
+| 801 | Capability not supported. createWindow can not work correctly due to limited device capabilities. 适用版本：12+ |
 | 1300001 | Repeated operation. Possible cause: The window has been created and can not be created again. |
-| 1300002 | This window state is abnormal. Possible cause: Invalid parent window type, parent window cannot be a subWindow. |
-| 1300004 | Unauthorized operation. Possible cause: The window type in the configuration is invalid. |
+| 1300002 | This window state is abnormal. Possible cause: Invalid parent window type, parent window cannot be a subWindow. 适用版本：12+ |
+| 1300004 | Unauthorized operation. Possible cause: The window type in the configuration is invalid. 适用版本：12+ |
 | 1300006 | This window context is abnormal. |
+| 1300008 | The display device is abnormal. 适用版本：9-16 |
 | 1300009 | The parent window is invalid. |
 
 示例：
@@ -98,7 +99,7 @@ createWindow(config: Configuration): Promise<Window>
 
 非[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态下，子窗口创建后默认是[沉浸式布局](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/immersive-window-feature#沉浸式布局)。
 
-自由窗口状态下，子窗口参数[decorEnabled](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#configuration9)为false时，子窗口创建后为沉浸式布局；子窗口参数decorEnabled为true，子窗口创建后为非沉浸式布局。
+自由窗口状态下，子窗口参数[decorEnabled](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#configuration9)为false时，创建后为沉浸式布局；参数decorEnabled为true，创建后为非沉浸式布局。
 
 需要权限： ohos.permission.SYSTEM_FLOAT_WINDOW（仅当创建窗口类型为window.WindowType.TYPE_FLOAT时需要申请）
 
@@ -126,11 +127,12 @@ createWindow(config: Configuration): Promise<Window>
 | --- | --- |
 | 201 | Permission verification failed. The application does not have the permission required to call the API. |
 | 401 | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
-| 801 | Capability not supported. createWindow can not work correctly due to limited device capabilities. |
+| 801 | Capability not supported. createWindow can not work correctly due to limited device capabilities. 适用版本：12+ |
 | 1300001 | Repeated operation. Possible cause: The window has been created and can not be created again. |
-| 1300002 | This window state is abnormal. Possible cause: Invalid parent window type, parent window cannot be a subWindow. |
-| 1300004 | Unauthorized operation. Possible cause: The window type in the configuration is invalid. |
+| 1300002 | This window state is abnormal. Possible cause: Invalid parent window type, parent window cannot be a subWindow. 适用版本：12+ |
+| 1300004 | Unauthorized operation. Possible cause: The window type in the configuration is invalid. 适用版本：12+ |
 | 1300006 | This window context is abnormal. |
+| 1300008 | The display device is abnormal. 适用版本：9-16 |
 | 1300009 | The parent window is invalid. |
 
 示例：
@@ -716,7 +718,8 @@ getAllWindowLayoutInfo(displayId: number): Promise<Array<WindowLayoutInfo>>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 801 | Capability not supported. function getAllWindowLayoutInfo can not work correctly due to limited device capabilities. |
+| 801 | Capability not supported. Function getAllWindowLayoutInfo can not work correctly due to limited device capabilities. |
+| 1300002 | This window state is abnormal. 适用版本：15-18 |
 | 1300003 | This window manager service works abnormally. Possible cause: Internal task error. |
 
 示例：
@@ -837,7 +840,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 try {
   let promise = window.getVisibleWindowInfo();
   promise.then((data) => {
-    data.forEach(windowInfo=>{
+    data.forEach((windowInfo) => {
       console.info(`left:${windowInfo.rect.left}`);
       console.info(`top:${windowInfo.rect.top}`);
       console.info(`width:${windowInfo.rect.width}`);
@@ -850,7 +853,7 @@ try {
       console.info(`displayId:${windowInfo.displayId}`);
       console.info(`globalDisplayRect:${JSON.stringify(windowInfo.globalDisplayRect)}`);
       console.info(`globalRect:${JSON.stringify(windowInfo.globalRect)}`);
-    })
+    });
   }).catch((err: BusinessError) => {
     console.error('Failed to getWindowInfo. Cause: ' + JSON.stringify(err));
   });
@@ -1065,7 +1068,7 @@ export default class EntryAbility extends UIAbility {
     console.info('Ability onWindowStageCreate');
     windowStage.loadContent('pages/Index', (err) => {
       if (err.code) {
-        console.error(`Failed to load the content. Cause: ${JSON.stringify(err)}`);
+        console.error(`Failed to load the content. Cause code: ${err.code}, message: ${err.message}`);
       }
       reqPermissionsFromUser(permissions, this.context);
       console.info('Succeeded in loading the content');
@@ -1075,10 +1078,10 @@ export default class EntryAbility extends UIAbility {
       windowInfoPromise.then((list: Array<window.MainWindowInfo>) => {
         console.info('Get all main window info success.');
       }).catch((err: BusinessError) => {
-        console.error(`Get all main window info failed. Error info: ${JSON.stringify(err)}`);
+        console.error(`Get all main window info failed. Cause code: ${err.code}, message: ${err.message}`);
       });
     } catch (err) {
-      console.error(`Get all main window info failed. Cause info: ${JSON.stringify(err)}`);
+      console.error(`Get all main window info failed. Cause code: ${err.code}, message: ${err.message}`);
     }
   }
 }
@@ -1151,7 +1154,7 @@ export default class EntryAbility extends UIAbility {
     console.info('Ability onWindowStageCreate');
     windowStage.loadContent('pages/Index', (err) => {
       if (err.code) {
-        console.error(`Failed to load the content. Cause: JSON.stringify(err)`);
+        console.error(`Failed to load the content. Cause code: ${err.code}, message: ${err.message}`);
       }
       reqPermissionsFromUser(permissions, this.context);
       console.info('Success in loading the content');
@@ -1172,13 +1175,13 @@ export default class EntryAbility extends UIAbility {
             console.info(`Get main window snapshot, getBytesNumberPerRow: ${list[i]?.getBytesNumberPerRow()}`);
           }
         }).catch((err: BusinessError) => {
-          console.error(`Get main window snapshot failed. Error info: ${JSON.stringify(err)}`);
+          console.error(`Get main window snapshot failed. Cause code: ${err.code}, message: ${err.message}`);
         });
       }).catch((err: BusinessError) => {
-        console.error(`Get all main window info failed. Error info: ${JSON.stringify(err)}`);
+        console.error(`Get all main window info failed. Cause code: ${err.code}, message: ${err.message}`);
       });
     } catch (err) {
-      console.error(`Get all main window info failed. Cause info: ${JSON.stringify(err)}`);
+      console.error(`Get all main window info failed. Cause code: ${err.code}, message: ${err.message}`);
     }
   }
 }
@@ -1433,7 +1436,7 @@ promise.then((data) => {
 
 find(id: string, callback: AsyncCallback<Window>): void
 
-查找id所对应的窗口，使用callback异步回调。
+根据窗口名称查找对应的窗口，使用callback异步回调。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，建议使用[findWindow()](#windowfindwindow9)替代。
 
@@ -1467,7 +1470,7 @@ window.find('test', (err: BusinessError, data) => {
 
 find(id: string): Promise<Window>
 
-查找id所对应的窗口，使用Promise异步回调。
+根据窗口名称查找对应的窗口，使用Promise异步回调。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，建议使用[findWindow()](#windowfindwindow9)替代。
 

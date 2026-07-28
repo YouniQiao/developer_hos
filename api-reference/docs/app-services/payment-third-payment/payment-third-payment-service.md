@@ -2,8 +2,8 @@
 title: "thirdPaymentService(三方支付服务)"
 upstream_id: "harmonyos-references/payment-third-payment-service"
 catalog: "harmonyos-references"
-content_hash: "6735c5c69e09"
-synced_at: "2026-07-09T01:01:29.803724"
+content_hash: "9eeee4d63967"
+synced_at: "2026-07-28T16:52:49.251173"
 ---
 
 # thirdPaymentService(三方支付服务)
@@ -128,7 +128,7 @@ struct Index {
 
 pay(payInfo: string): Promise<void>;
 
-该方法提供拉起三方支付方式收银台等功能，调用方法前请确保网络已连接，调用该方法后会拉起三方支付收银台，完成后使用Promise异步返回。
+该方法提供拉起三方支付方式收银台等功能，调用方法前请确保网络已连接，调用该方法后会拉起三方支付收银台，完成后使用Promise异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -156,6 +156,7 @@ pay(payInfo: string): Promise<void>;
 
 | 错误码ID | 错误信息 |
 | --- | --- |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
 | 1022830000 | The operation was canceled by the user. |
 | 1022830001 | Pay failed. |
 | 1022830002 | The payInfo invalid. Possible causes: 1.Data format is not json string; 2.Mandatory parameters are left unspecified. |
@@ -228,6 +229,14 @@ handlePayCallback(want: Want): boolean;
 | 类型 | 说明 |
 | --- | --- |
 | boolean | 回调处理结果（该结果为用户支付操作处理结果，非实际支付结果，实际支付结果以三方支付结果为准）。 - true：用户支付操作成功 - false：用户支付操作失败 |
+
+错误码：
+
+以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-payment)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
 
 示例：
 

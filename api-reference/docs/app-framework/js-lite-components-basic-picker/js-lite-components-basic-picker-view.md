@@ -2,8 +2,8 @@
 title: "picker-view"
 upstream_id: "harmonyos-references/js-lite-components-basic-picker-view"
 catalog: "harmonyos-references"
-content_hash: "292d4c6f5b35"
-synced_at: "2026-07-09T00:58:28.132026"
+content_hash: "0d93ed1f6d88"
+synced_at: "2026-07-28T16:49:09.583710"
 ---
 
 # picker-view
@@ -62,12 +62,12 @@ type=time：
 | selected-color | | #ffffff | 否 | 选中项字体颜色。 |
 | selected-font-size | | 38px | 否 | 选中项字体尺寸，类型length，单位px。 |
 | selected-font-family | string | HYQiHei-65S | 否 | 选中项字体类型。 |
-| font-family | string | HYQiHei-65S | 否 | 选项字体类型。 |
+| font-family | string | HYQiHei-65S | 否 | 候选项字体类型。 |
 | width | | 5+ | - | 否 | 设置组件自身的宽度。 未设置时组件宽度默认为0。 |
 | height | | 5+ | - | 否 | 设置组件自身的高度。 未设置时组件高度默认为0。 |
 | padding | | 0 | 否 | 使用简写属性设置所有的内边距属性。 该属性可以有1到4个值： - 指定一个值时，该值指定四个边的内边距。 - 指定两个值时，第一个值指定上下两边的内边距，第二个指定左右两边的内边距。 - 指定三个值时，第一个指定上边的内边距，第二个指定左右两边的内边距，第三个指定下边的内边距。 - 指定四个值时分别为上、右、下、左边的内边距（顺时针顺序）。 |
 | padding-[left|top|right|bottom] | | 0 | 否 | 设置左、上、右、下内边距属性。 |
-| margin | | 5+ | 0 | 否 | 使用简写属性设置所有的外边距属性，该属性可以有1到4个值。 - 只有一个值时，这个值会被指定给全部的四个边。 - 两个值时，第一个值被匹配给上和下，第二个值被匹配给左和右。 - 三个值时，第一个值被匹配给上, 第二个值被匹配给左和右，第三个值被匹配给下。 - 四个值时，会依次按上、右、下、左的顺序匹配 (即顺时针顺序)。 |
+| margin | | 5+ | 0 | 否 | 使用简写属性设置所有的外边距属性，该属性可以有1到4个值。 - 只有一个值时，这个值会被指定给全部的四个边。 - 两个值时，第一个值被匹配给上和下，第二个值被匹配给左和右。 - 三个值时，第一个值被匹配给上，第二个值被匹配给左和右，第三个值被匹配给下。 - 四个值时，会依次按上、右、下、左的顺序匹配 (即顺时针顺序)。 |
 | margin-[left|top|right|bottom] | | 5+ | 0 | 否 | 设置左、上、右、下外边距属性。 |
 | border-width | | 0 | 否 | 使用简写属性设置元素的所有边框宽度。 |
 | border-color | | black | 否 | 使用简写属性设置元素的所有边框颜色。 |
@@ -86,11 +86,11 @@ type=time：
 
 ```
 <!-- xxx.hml -->
-<div class="container" @swipe="handleSwipe">
+  <div class="container">
   <text class="title">
     Selected：{{time}}
   </text>
-  <picker-view class="time-picker" type="time" ref="pickerViewObj" selected="{{defaultTime}}" @change="handleChange"></picker-view>
+  <picker-view class="time-picker" type="time" columns="2" ref="pickerViewObj" selected="{{defaultTime}}" @change="handleChange"></picker-view>
 </div>
 ```
  
@@ -125,6 +125,7 @@ export default {
   },
   onInit() {
     this.defaultTime = this.now();
+    this.time = this.defaultTime;
   },
   handleChange(data) {
     this.time = this.concat(data.hour, data.minute);
@@ -142,11 +143,11 @@ export default {
     return `${this.fill(hours)}:${this.fill(minutes)}`;
   },
   onShow() {
-        this.$refs.pickerViewObj.rotation({focus: true})
+    this.$refs.pickerViewObj.rotation({focus: true})
   },
   onHide() {
-      this.$refs.pickerViewObj.rotation({focus: false})
+    this.$refs.pickerViewObj.rotation({focus: false})
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631414006.png)
+ ![](./img/zh-cn_image_0000002686088751.png)

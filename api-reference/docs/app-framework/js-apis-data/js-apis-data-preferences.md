@@ -2,15 +2,15 @@
 title: "@ohos.data.preferences (用户首选项)"
 upstream_id: "harmonyos-references/js-apis-data-preferences"
 catalog: "harmonyos-references"
-content_hash: "446f769a7443"
-synced_at: "2026-07-09T00:57:15.966520"
+content_hash: "31e7da4beb18"
+synced_at: "2026-07-28T16:40:49.255158"
 ---
 
 # @ohos.data.preferences (用户首选项)
 
 用户首选项为应用提供Key-Value键值型的数据处理能力，支持应用持久化轻量级数据，并对其修改和查询。
 
-数据存储采用键值对形式，键为字符串类型，值可为数字、字符串、布尔类型及其对应的数组。
+数据存储采用键值对形式，键为字符串类型，值可为数字、字符串、布尔类型、数组、Uint8Array、object或bigint。
 
 用户首选项的持久化文件存储在[preferencesDir](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-stage#获取应用文件路径)路径下，创建preferences对象前，需要保证preferencesDir路径可读写。持久化文件存储路径中的[加密等级](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-contextconstant#areamode)会影响文件的可读写状态，路径访问限制详见[应用文件目录与应用文件路径](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory#应用文件目录与应用文件路径)。
 
@@ -62,7 +62,7 @@ getPreferences(context: Context, name: string, callback: AsyncCallback<Preferenc
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 
 示例：
 
@@ -77,7 +77,7 @@ let dataPreferences: preferences.Preferences | null = null;
 
 preferences.getPreferences(context, 'myStore', (err: BusinessError, val: preferences.Preferences) => {
   if (err) {
-    console.error("Failed to get preferences. code =" + err.code + ", message =" + err.message);
+    console.error("Failed to get preferences. Code = " + err.code + ", message = " + err.message);
     return;
   }
   dataPreferences = val;
@@ -97,7 +97,7 @@ class EntryAbility extends UIAbility {
   onWindowStageCreate(windowStage: window.WindowStage) {
     preferences.getPreferences(this.context, 'myStore', (err: BusinessError, val: preferences.Preferences) => {
       if (err) {
-        console.error("Failed to get preferences. code =" + err.code + ", message =" + err.message);
+        console.error("Failed to get preferences. Code = " + err.code + ", message = " + err.message);
         return;
       }
       dataPreferences = val;
@@ -139,7 +139,7 @@ getPreferences(context: Context, name: string): Promise<Preferences>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 
 示例：
 
@@ -158,7 +158,7 @@ sp.then((object: preferences.Preferences) => {
   dataPreferences = object;
   console.info("Succeeded in getting preferences.");
 }).catch((err: BusinessError) => {
-  console.error("Failed to get preferences. code =" + err.code + ", message =" + err.message);
+  console.error("Failed to get preferences. Code = " + err.code + ", message = " + err.message);
 })
 ```
  Stage模型示例：
@@ -177,7 +177,7 @@ class EntryAbility extends UIAbility {
       dataPreferences = object;
       console.info("Succeeded in getting preferences.");
     }).catch((err: BusinessError) => {
-      console.error("Failed to get preferences. code =" + err.code + ", message =" + err.message);
+      console.error("Failed to get preferences. Code = " + err.code + ", message = " + err.message);
     })
   }
 }
@@ -200,7 +200,7 @@ getPreferences(context: Context, options: Options, callback: AsyncCallback<Prefe
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | context | Context | 是 | 应用上下文。 FA模型的应用Context定义见[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-app-context)。 Stage模型的应用Context定义见[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context)。 |
-| options | [Options](#options10) | 是 | 与Preferences实例相关的配置选项。 |
+| options | [Options](#options10) | 是 | 与Preferences实例相关的配置选项。name字段为必填字段，名称长度需大于零且小于等于255字节，名称中不能包含'/'且不能以'/'结尾。dataGroupId和storageType为可选字段。 |
 | callback | AsyncCallback | 是 | 回调函数。当获取Preferences实例成功，err为undefined，返回Preferences实例；否则err为错误对象。 |
 
 错误码：
@@ -211,7 +211,7 @@ getPreferences(context: Context, options: Options, callback: AsyncCallback<Prefe
 | --- | --- |
 | 401 | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | 801 | Capability not supported. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 | 15501001 | The operations is supported in stage mode only. |
 | 15501002 | Invalid dataGroupId. |
 
@@ -230,7 +230,7 @@ let dataPreferences: preferences.Preferences | null = null;
 let options: preferences.Options = { name: 'myStore' };
 preferences.getPreferences(context, options, (err: BusinessError, val: preferences.Preferences) => {
   if (err) {
-    console.error("Failed to get preferences. code =" + err.code + ", message =" + err.message);
+    console.error("Failed to get preferences. Code = " + err.code + ", message = " + err.message);
     return;
   }
   dataPreferences = val;
@@ -251,7 +251,7 @@ class EntryAbility extends UIAbility {
     let options: preferences.Options = { name: 'myStore' };
     preferences.getPreferences(this.context, options, (err: BusinessError, val: preferences.Preferences) => {
       if (err) {
-        console.error("Failed to get preferences. code =" + err.code + ", message =" + err.message);
+        console.error("Failed to get preferences. Code = " + err.code + ", message = " + err.message);
         return;
       }
       dataPreferences = val;
@@ -294,7 +294,7 @@ getPreferences(context: Context, options: Options): Promise<Preferences>
 | --- | --- |
 | 401 | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | 801 | Capability not supported. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 | 15501001 | The operations is supported in stage mode only. |
 | 15501002 | Invalid dataGroupId. |
 
@@ -316,7 +316,7 @@ sp.then((object: preferences.Preferences) => {
   dataPreferences = object;
   console.info("Succeeded in getting preferences.");
 }).catch((err: BusinessError) => {
-  console.error("Failed to get preferences. code =" + err.code + ", message =" + err.message);
+  console.error("Failed to get preferences. Code = " + err.code + ", message = " + err.message);
 })
 ```
  Stage模型示例：
@@ -336,7 +336,7 @@ class EntryAbility extends UIAbility {
       dataPreferences = object;
       console.info("Succeeded in getting preferences.");
     }).catch((err: BusinessError) => {
-      console.error("Failed to get preferences. code =" + err.code + ", message =" + err.message);
+      console.error("Failed to get preferences. Code = " + err.code + ", message = " + err.message);
     })
   }
 }
@@ -375,7 +375,7 @@ getPreferencesSync(context: Context, options: Options): Preferences
 | --- | --- |
 | 401 | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | 801 | Capability not supported. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 | 15501001 | The operations is supported in stage mode only. |
 | 15501002 | Invalid dataGroupId. |
 
@@ -438,7 +438,7 @@ deletePreferences(context: Context, name: string, callback: AsyncCallback<void>)
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 | 15500010 | Failed to delete the user preferences persistence file. |
 
 示例：
@@ -454,7 +454,7 @@ let context = featureAbility.getContext();
 
 preferences.deletePreferences(context, 'myStore', (err: BusinessError) => {
   if (err) {
-    console.error("Failed to delete preferences. code =" + err.code + ", message =" + err.message);
+    console.error("Failed to delete preferences. Code = " + err.code + ", message = " + err.message);
     return;
   }
   console.info("Succeeded in deleting preferences.");
@@ -471,7 +471,7 @@ class EntryAbility extends UIAbility {
   onWindowStageCreate(windowStage: window.WindowStage) {
     preferences.deletePreferences(this.context, 'myStore', (err: BusinessError) => {
       if (err) {
-        console.error("Failed to delete preferences. code =" + err.code + ", message =" + err.message);
+        console.error("Failed to delete preferences. Code = " + err.code + ", message = " + err.message);
         return;
       }
       console.info("Succeeded in deleting preferences.");
@@ -514,7 +514,7 @@ deletePreferences(context: Context, name: string): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 | 15500010 | Failed to delete the user preferences persistence file. |
 
 示例：
@@ -532,7 +532,7 @@ let sp = preferences.deletePreferences(context, 'myStore');
 sp.then(() => {
   console.info("Succeeded in deleting preferences.");
 }).catch((err: BusinessError) => {
-  console.error("Failed to delete preferences. code =" + err.code + ", message =" + err.message);
+  console.error("Failed to delete preferences. Code = " + err.code + ", message = " + err.message);
 })
 ```
  Stage模型示例：
@@ -548,7 +548,7 @@ class EntryAbility extends UIAbility {
     sp.then(() => {
       console.info("Succeeded in deleting preferences.");
     }).catch((err: BusinessError) => {
-      console.error("Failed to delete preferences. code =" + err.code + ", message =" + err.message);
+      console.error("Failed to delete preferences. code =" + err.code + ", message = " + err.message);
     })
   }
 }
@@ -584,7 +584,7 @@ deletePreferences(context: Context, options: Options, callback: AsyncCallback<vo
 | --- | --- |
 | 401 | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | 801 | Capability not supported. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 | 15500010 | Failed to delete the user preferences persistence file. |
 | 15501001 | The operations is supported in stage mode only. |
 | 15501002 | Invalid dataGroupId. |
@@ -603,7 +603,7 @@ let context = featureAbility.getContext();
 let options: preferences.Options = { name: 'myStore' };
 preferences.deletePreferences(context, options, (err: BusinessError) => {
   if (err) {
-    console.error("Failed to delete preferences. code =" + err.code + ", message =" + err.message);
+    console.error("Failed to delete preferences. code =" + err.code + ", message = " + err.message);
     return;
   }
   console.info("Succeeded in deleting preferences.");
@@ -621,7 +621,7 @@ class EntryAbility extends UIAbility {
     let options: preferences.Options = { name: 'myStore' };
     preferences.deletePreferences(this.context, options, (err: BusinessError) => {
       if (err) {
-        console.error("Failed to delete preferences. code =" + err.code + ", message =" + err.message);
+        console.error("Failed to delete preferences. code =" + err.code + ", message = " + err.message);
         return;
       }
       console.info("Succeeded in deleting preferences.");
@@ -665,7 +665,7 @@ deletePreferences(context: Context, options: Options): Promise<void>
 | --- | --- |
 | 401 | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | 801 | Capability not supported. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 | 15500010 | Failed to delete the user preferences persistence file. |
 | 15501001 | The operations is supported in stage mode only. |
 | 15501002 | Invalid dataGroupId. |
@@ -686,7 +686,7 @@ let sp = preferences.deletePreferences(context, options);
 sp.then(() => {
   console.info("Succeeded in deleting preferences.");
 }).catch((err: BusinessError) => {
-  console.error("Failed to delete preferences. code =" + err.code + ", message =" + err.message);
+  console.error("Failed to delete preferences. code =" + err.code + ", message = " + err.message);
 })
 ```
  Stage模型示例：
@@ -703,7 +703,7 @@ class EntryAbility extends UIAbility {
     sp.then(() => {
       console.info("Succeeded in deleting preferences.");
     }).catch((err: BusinessError) => {
-      console.error("Failed to delete preferences. code =" + err.code + ", message =" + err.message);
+      console.error("Failed to delete preferences. code =" + err.code + ", message = " + err.message);
     })
   }
 }
@@ -740,7 +740,7 @@ removePreferencesFromCache(context: Context, name: string, callback: AsyncCallba
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 
 示例：
 
@@ -754,7 +754,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 let context = featureAbility.getContext();
 preferences.removePreferencesFromCache(context, 'myStore', (err: BusinessError) => {
   if (err) {
-    console.error("Failed to remove preferences. code =" + err.code + ", message =" + err.message);
+    console.error("Failed to remove preferences. code =" + err.code + ", message = " + err.message);
     return;
   }
   console.info("Succeeded in removing preferences.");
@@ -771,7 +771,7 @@ class EntryAbility extends UIAbility {
   onWindowStageCreate(windowStage: window.WindowStage) {
     preferences.removePreferencesFromCache(this.context, 'myStore', (err: BusinessError) => {
       if (err) {
-        console.error("Failed to remove preferences. code =" + err.code + ", message =" + err.message);
+        console.error("Failed to remove preferences. code =" + err.code + ", message = " + err.message);
         return;
       }
       console.info("Succeeded in removing preferences.");
@@ -816,7 +816,7 @@ removePreferencesFromCache(context: Context, name: string): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 
 示例：
 
@@ -832,7 +832,7 @@ let sp = preferences.removePreferencesFromCache(context, 'myStore');
 sp.then(() => {
   console.info("Succeeded in removing preferences.");
 }).catch((err: BusinessError) => {
-  console.error("Failed to remove preferences. code =" + err.code + ", message =" + err.message);
+  console.error("Failed to remove preferences. code =" + err.code + ", message = " + err.message);
 })
 ```
  Stage模型示例：
@@ -848,7 +848,7 @@ class EntryAbility extends UIAbility {
     sp.then(() => {
       console.info("Succeeded in removing preferences.");
     }).catch((err: BusinessError) => {
-      console.error("Failed to remove preferences. code =" + err.code + ", message =" + err.message);
+      console.error("Failed to remove preferences. code =" + err.code + ", message = " + err.message);
     })
   }
 }
@@ -884,7 +884,7 @@ removePreferencesFromCacheSync(context: Context, name: string): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 
 示例：
 
@@ -942,7 +942,7 @@ removePreferencesFromCache(context: Context, options: Options, callback: AsyncCa
 | --- | --- |
 | 401 | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | 801 | Capability not supported. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 | 15501001 | The operations is supported in stage mode only. |
 | 15501002 | Invalid dataGroupId. |
 
@@ -959,7 +959,7 @@ let context = featureAbility.getContext();
 let options: preferences.Options = { name: 'myStore' };
 preferences.removePreferencesFromCache(context, options, (err: BusinessError) => {
   if (err) {
-    console.error("Failed to remove preferences. code =" + err.code + ", message =" + err.message);
+    console.error("Failed to remove preferences. code =" + err.code + ", message = " + err.message);
     return;
   }
   console.info("Succeeded in removing preferences.");
@@ -977,7 +977,7 @@ class EntryAbility extends UIAbility {
     let options: preferences.Options = { name: 'myStore' };
     preferences.removePreferencesFromCache(this.context, options, (err: BusinessError) => {
       if (err) {
-        console.error("Failed to remove preferences. code =" + err.code + ", message =" + err.message);
+        console.error("Failed to remove preferences. code =" + err.code + ", message = " + err.message);
         return;
       }
       console.info("Succeeded in removing preferences.");
@@ -1023,7 +1023,7 @@ removePreferencesFromCache(context: Context, options: Options): Promise<void>
 | --- | --- |
 | 401 | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | 801 | Capability not supported. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 | 15501001 | The operations is supported in stage mode only. |
 | 15501002 | Invalid dataGroupId. |
 
@@ -1042,7 +1042,7 @@ let sp = preferences.removePreferencesFromCache(context, options);
 sp.then(() => {
   console.info("Succeeded in removing preferences.");
 }).catch((err: BusinessError) => {
-  console.error("Failed to remove preferences. code =" + err.code + ", message =" + err.message);
+  console.error("Failed to remove preferences. code =" + err.code + ", message = " + err.message);
 })
 ```
  Stage模型示例：
@@ -1059,7 +1059,7 @@ class EntryAbility extends UIAbility {
     sp.then(() => {
       console.info("Succeeded in removing preferences.");
     }).catch((err: BusinessError) => {
-      console.error("Failed to remove preferences. code =" + err.code + ", message =" + err.message);
+      console.error("Failed to remove preferences. code =" + err.code + ", message = " + err.message);
     })
   }
 }
@@ -1067,7 +1067,7 @@ class EntryAbility extends UIAbility {
 
 #### preferences.removePreferencesFromCacheSync10+
 
-removePreferencesFromCacheSync(context: Context, options: Options):void
+removePreferencesFromCacheSync(context: Context, options: Options): void
 
 从缓存中移除指定的Preferences实例，通过Options进行参数设置，此为同步接口。
 
@@ -1096,7 +1096,7 @@ removePreferencesFromCacheSync(context: Context, options: Options):void
 | --- | --- |
 | 401 | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | 801 | Capability not supported. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 | 15501001 | The operations is supported in stage mode only. |
 | 15501002 | Invalid dataGroupId. |
 
@@ -1230,7 +1230,7 @@ get(key: string, defValue: ValueType, callback: AsyncCallback<ValueType>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 
 示例：
 
@@ -1239,7 +1239,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 dataPreferences.get('startup', 'default', (err: BusinessError, val: preferences.ValueType) => {
   if (err) {
-    console.error("Failed to get value of 'startup'. code =" + err.code + ", message =" + err.message);
+    console.error("Failed to get value of 'startup'. code =" + err.code + ", message = " + err.message);
     return;
   }
   console.info("Succeeded in getting value of 'startup'. val: " + val);
@@ -1276,7 +1276,7 @@ get(key: string, defValue: ValueType): Promise<ValueType>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 
 示例：
 
@@ -1287,7 +1287,7 @@ let data = dataPreferences.get('startup', 'default');
 data.then((data: preferences.ValueType) => {
   console.info("Succeeded in getting value of 'startup'. Data: " + data);
 }).catch((err: BusinessError) => {
-  console.error("Failed to get value of 'startup'. code =" + err.code + ", message =" + err.message);
+  console.error("Failed to get value of 'startup'. code =" + err.code + ", message = " + err.message);
 })
 ```
 
@@ -1321,7 +1321,7 @@ getSync(key: string, defValue: ValueType): ValueType
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 
 示例：
 
@@ -1352,7 +1352,7 @@ getAll(callback: AsyncCallback<Object>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Mandatory parameters are left unspecified. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 
 示例：
 
@@ -1368,7 +1368,7 @@ function getObjKeys(obj: Object): string[] {
 
 dataPreferences.getAll((err: BusinessError, value: Object) => {
   if (err) {
-    console.error("Failed to get all key-values. code =" + err.code + ", message =" + err.message);
+    console.error("Failed to get all key-values. code =" + err.code + ", message = " + err.message);
     return;
   }
   let allKeys = getObjKeys(value);
@@ -1399,7 +1399,7 @@ getAll(): Promise<Object>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 
 示例：
 
@@ -1419,7 +1419,7 @@ allData.then((value: Object) => {
   console.info('getAll keys = ' + allKeys);
   console.info("getAll object = " + JSON.stringify(value));
 }).catch((err: BusinessError) => {
-  console.error("Failed to get all key-values. code =" + err.code + ", message =" + err.message);
+  console.error("Failed to get all key-values. code =" + err.code + ", message = " + err.message);
 })
 ```
 
@@ -1445,7 +1445,7 @@ getAllSync(): Object
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 
 示例：
 
@@ -1492,7 +1492,7 @@ put(key: string, value: ValueType, callback: AsyncCallback<void>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 
 示例：
 
@@ -1501,7 +1501,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 dataPreferences.put('startup', 'auto', (err: BusinessError) => {
   if (err) {
-    console.error("Failed to put value of 'startup'. code =" + err.code + ", message =" + err.message);
+    console.error("Failed to put value of 'startup'. code =" + err.code + ", message = " + err.message);
     return;
   }
   console.info("Succeeded in putting value of 'startup'.");
@@ -1542,7 +1542,7 @@ put(key: string, value: ValueType): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 
 示例：
 
@@ -1553,7 +1553,7 @@ let putStartupPref = dataPreferences.put('startup', 'auto');
 putStartupPref.then(() => {
   console.info("Succeeded in putting value of 'startup'.");
 }).catch((err: BusinessError) => {
-  console.error("Failed to put value of 'startup'. code =" + err.code + ", message =" + err.message);
+  console.error("Failed to put value of 'startup'. code =" + err.code + ", message = " + err.message);
 })
 ```
 
@@ -1585,7 +1585,7 @@ putSync(key: string, value: ValueType): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 
 示例：
 
@@ -1617,7 +1617,7 @@ has(key: string, callback: AsyncCallback<boolean>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 
 示例：
 
@@ -1626,7 +1626,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 dataPreferences.has('startup', (err: BusinessError, val: boolean) => {
   if (err) {
-    console.error("Failed to check the key 'startup'. code =" + err.code + ", message =" + err.message);
+    console.error("Failed to check the key 'startup'. code =" + err.code + ", message = " + err.message);
     return;
   }
   if (val) {
@@ -1666,7 +1666,7 @@ has(key: string): Promise<boolean>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 
 示例：
 
@@ -1681,7 +1681,7 @@ isStartupSet.then((val: boolean) => {
     console.info("The key 'startup' does not contain.");
   }
 }).catch((err: BusinessError) => {
-  console.error("Failed to check the key 'startup'. code =" + err.code + ", message =" + err.message);
+  console.error("Failed to check the key 'startup'. code =" + err.code + ", message = " + err.message);
 })
 ```
 
@@ -1714,7 +1714,7 @@ hasSync(key: string): boolean
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 
 示例：
 
@@ -1751,7 +1751,7 @@ delete(key: string, callback: AsyncCallback<void>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 
 示例：
 
@@ -1760,7 +1760,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 dataPreferences.delete('startup', (err: BusinessError) => {
   if (err) {
-    console.error("Failed to delete the key 'startup'. code =" + err.code + ", message =" + err.message);
+    console.error("Failed to delete the key 'startup'. code =" + err.code + ", message = " + err.message);
     return;
   }
   console.info("Succeeded in deleting the key 'startup'.");
@@ -1796,7 +1796,7 @@ delete(key: string): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 
 示例：
 
@@ -1807,7 +1807,7 @@ let deleteStartupPromise = dataPreferences.delete('startup');
 deleteStartupPromise.then(() => {
   console.info("Succeeded in deleting the key 'startup'.");
 }).catch((err: BusinessError) => {
-  console.error("Failed to delete the key 'startup'. code =" + err.code +", message =" + err.message);
+  console.error("Failed to delete the key 'startup'. code =" + err.code +", message = " + err.message);
 })
 ```
 
@@ -1834,7 +1834,7 @@ deleteSync(key: string): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 
 示例：
 
@@ -1869,7 +1869,7 @@ flush(callback: AsyncCallback<void>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Mandatory parameters are left unspecified. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 
 示例：
 
@@ -1878,7 +1878,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 dataPreferences.flush((err: BusinessError) => {
   if (err) {
-    console.error("Failed to flush. code =" + err.code + ", message =" + err.message);
+    console.error("Failed to flush. code =" + err.code + ", message = " + err.message);
     return;
   }
   console.info("Succeeded in flushing.");
@@ -1911,7 +1911,7 @@ flush(): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 
 示例：
 
@@ -1922,7 +1922,7 @@ let flushResult = dataPreferences.flush();
 flushResult.then(() => {
   console.info("Succeeded in flushing.");
 }).catch((err: BusinessError) => {
-  console.error("Failed to flush. code =" + err.code + ", message =" + err.message);
+  console.error("Failed to flush. code =" + err.code + ", message = " + err.message);
 })
 ```
 
@@ -1975,7 +1975,7 @@ clear(callback: AsyncCallback<void>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Mandatory parameters are left unspecified. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 
 示例：
 
@@ -1984,7 +1984,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 dataPreferences.clear((err: BusinessError) =>{
   if (err) {
-    console.error("Failed to clear. code =" + err.code + ", message =" + err.message);
+    console.error("Failed to clear. code =" + err.code + ", message = " + err.message);
     return;
   }
   console.info("Succeeded in clearing.");
@@ -2013,7 +2013,7 @@ clear(): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 
 示例：
 
@@ -2024,7 +2024,7 @@ let promise = dataPreferences.clear();
 promise.then(() => {
   console.info("Succeeded in clearing.");
 }).catch((err: BusinessError) => {
-  console.error("Failed to clear. code =" + err.code + ", message =" + err.message);
+  console.error("Failed to clear. code =" + err.code + ", message = " + err.message);
 })
 ```
 
@@ -2078,7 +2078,7 @@ on(type: 'change', callback: Callback<string>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 
 示例：
 
@@ -2092,7 +2092,7 @@ dataPreferences.on('change', observer);
 dataPreferences.putSync('startup', 'manual');
 dataPreferences.flush((err: BusinessError) => {
   if (err) {
-    console.error("Failed to flush. code =" + err.code + ", message =" + err.message);
+    console.error("Failed to flush. code =" + err.code + ", message = " + err.message);
     return;
   }
   console.info("Succeeded in flushing.");
@@ -2120,7 +2120,7 @@ on(type: 'multiProcessChange', callback: Callback<string>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件类型，固定值'multiProcessChange'，表示多进程间的数据变更。 |
-| callback | Callback | 是 | 回调函数。 |
+| callback | Callback | 是 | 多进程间数据变更时触发的回调函数，回调参数为发生变更的Key字符串。 |
 
 错误码：
 
@@ -2129,7 +2129,7 @@ on(type: 'multiProcessChange', callback: Callback<string>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 | 15500019 | Failed to obtain the subscription service. |
 
 示例：
@@ -2144,7 +2144,7 @@ dataPreferences.on('multiProcessChange', observer);
 dataPreferences.putSync('startup', 'manual');
 dataPreferences.flush((err: BusinessError) => {
   if (err) {
-    console.error("Failed to flush. code =" + err.code + ", message =" + err.message);
+    console.error("Failed to flush. code =" + err.code + ", message = " + err.message);
     return;
   }
   console.info("Succeeded in flushing.");
@@ -2169,7 +2169,7 @@ on(type: 'dataChange', keys: Array<string>, callback: Callback<Record<string, Va
 | --- | --- | --- | --- |
 | type | string | 是 | 事件类型，固定值'dataChange'，表示精确的数据变更。 |
 | keys | Array | 是 | 需要订阅的Key集合。 |
-| callback | Callback> | 是 | 回调函数。回调支持返回多个键值对，其中键为发生变更的订阅Key，值为变更后的数据：支持number、string、boolean、Array、Array、Array、Uint8Array、object类型。 |
+| callback | Callback> | 是 | 回调函数。回调支持返回多个键值对，其中键为发生变更的订阅Key，类型为string；值为变更后的数据，类型为[ValueType](#valuetype)。 |
 
 错误码：
 
@@ -2197,7 +2197,7 @@ dataPreferences.putSync('name', 'xiaohong');
 dataPreferences.putSync('weight', 125);
 dataPreferences.flush((err: BusinessError) => {
   if (err) {
-    console.error("Failed to flush. code =" + err.code + ", message =" + err.message);
+    console.error("Failed to flush. code =" + err.code + ", message = " + err.message);
     return;
   }
   console.info("Succeeded in flushing.");
@@ -2228,7 +2228,7 @@ off(type: 'change', callback?: Callback<string>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 
 示例：
 
@@ -2242,7 +2242,7 @@ dataPreferences.on('change', observer);
 dataPreferences.putSync('startup', 'auto');
 dataPreferences.flush((err: BusinessError) => {
   if (err) {
-    console.error("Failed to flush. code =" + err.code + ", message =" + err.message);
+    console.error("Failed to flush. code =" + err.code + ", message = " + err.message);
     return;
   }
   console.info("Succeeded in flushing.");
@@ -2276,7 +2276,7 @@ off(type: 'multiProcessChange', callback?: Callback<string>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
-| 15500000 | Inner error. |
+| 15500000 | Inner error. 适用版本：11+ |
 
 示例：
 
@@ -2290,7 +2290,7 @@ dataPreferences.on('multiProcessChange', observer);
 dataPreferences.putSync('startup', 'auto');
 dataPreferences.flush((err: BusinessError) => {
   if (err) {
-    console.error("Failed to flush. code =" + err.code + ", message =" + err.message);
+    console.error("Failed to flush. code =" + err.code + ", message = " + err.message);
     return;
   }
   console.info("Succeeded in flushing.");
@@ -2306,12 +2306,8 @@ off(type: 'dataChange', keys: Array<string>, callback?: Callback<Record<string, 
 
 配对调用：
 
-- 与on('dataChange')成对使用，用于取消精确数据变更订阅。
+- 与[on('dataChange')](#ondatachange12)成对使用，用于取消精确数据变更订阅。
 - 如果不需要监听特定Key的数据变更，建议及时调用off取消订阅。
-
-相关方法：
-
-- on('dataChange')：精确订阅数据变更
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -2351,7 +2347,7 @@ dataPreferences.putSync('name', 'xiaohong');
 dataPreferences.putSync('weight', 125);
 dataPreferences.flush((err: BusinessError) => {
   if (err) {
-    console.error("Failed to flush. code =" + err.code + ", message =" + err.message);
+    console.error("Failed to flush. code =" + err.code + ", message = " + err.message);
     return;
   }
   console.info("Succeeded in flushing.");

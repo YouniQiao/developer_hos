@@ -2,8 +2,8 @@
 title: "interactiveLiveness（人脸活体检测）"
 upstream_id: "harmonyos-references/vision-interactive-liveness"
 catalog: "harmonyos-references"
-content_hash: "fc3256eb813a"
-synced_at: "2026-07-09T01:01:45.724047"
+content_hash: "0adc964555a0"
+synced_at: "2026-07-28T16:53:17.120073"
 ---
 
 # interactiveLiveness（人脸活体检测）
@@ -20,7 +20,7 @@ synced_at: "2026-07-09T01:01:45.724047"
 import { interactiveLiveness } from '@kit.VisionKit';
 ```
 
-#### DetectionMode
+#### DetectionMode(deprecated)
 
 检测模式的枚举值。
 
@@ -32,10 +32,12 @@ import { interactiveLiveness } from '@kit.VisionKit';
 
 起始版本： 5.0.0(12)
 
+废弃版本： 26.0.0
+
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| SILENT_MODE | SILENT_MODE | 表示静默活体检测模式，暂未支持。 |
-| INTERACTIVE_MODE | INTERACTIVE_MODE | 表示动作活体检测模式。 |
+| SILENT_MODE(deprecated) | 'SILENT_MODE' | 表示静默活体检测模式，暂未支持。 **说明：** 从版本26.0.0开始废弃。 |
+| INTERACTIVE_MODE(deprecated) | 'INTERACTIVE_MODE' | 表示动作活体检测模式。 **说明：** 从版本26.0.0开始废弃。 |
 
 #### ActionsNumber
 
@@ -70,8 +72,8 @@ import { interactiveLiveness } from '@kit.VisionKit';
 
 | 名称 | 值 | **说明** |
 | --- | --- | --- |
-| BACK_MODE | back | 表示人脸活体检测完成后返回到上一页。 |
-| REPLACE_MODE | replace | 表示人脸活体检测完跳转到成功或失败页面。 |
+| BACK_MODE | 'back' | 表示人脸活体检测完成后返回到上一页。 |
+| REPLACE_MODE | 'replace' | 表示人脸活体检测完跳转到成功或失败页面。 |
 
 #### InteractiveLivenessConfig
 
@@ -87,10 +89,10 @@ import { interactiveLiveness } from '@kit.VisionKit';
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| isSilentMode | [DetectionMode](#detectionmode) | 否 | 否 | 表示的是人脸活体检测模式，默认动作活体检测模式。 INTERACTIVE_MODE表示动作活体检测模式。 |
+| isSilentMode(deprecated) | [DetectionMode](#detectionmodedeprecated) | 否 | 否 | 表示的是人脸活体检测模式，默认动作活体检测模式。 INTERACTIVE_MODE表示动作活体检测模式。 **说明：** 从版本26.0.0开始废弃。 |
 | actionsNum | [ActionsNumber](#actionsnumber) | 否 | 是 | 表示动作活体检测的动作数量，数量范围3或4个，默认3个动作。随机生成，规则如下： 当actionsNum=3时，[眨眼，注视]组合中的动作元素不会同时存在并且相邻的动作元素不会相同。 当actionsNum=4时，眨眼动作元素有且仅有1次，注视动作元素最多出现1次，[眨眼，注视]组合中的动作元素不会相邻，相邻的动作元素不会相同。 该参数只有当isSilentMode是INTERACTIVE_MODE的时候有效。 |
-| successfulRouteUrl | string | 否 | 是 | 表示人脸活体检测成功后跳转的页面路径。如果自定义界面，routeMode值为replace时生效。 如果不填，系统有默认的检测成功页面。 |
-| failedRouteUrl | string | 否 | 是 | 表示人脸活体检测失败后跳转的页面路径。如果自定义界面，routeMode值为replace时生效。 如果不填，系统有默认的检测失败页面。 |
+| successfulRouteUrl | string | 否 | 是 | 表示人脸活体检测成功后跳转的页面路径。如果自定义界面，routeMode值为replace时生效。 如果不填，系统有默认的检测成功页面。 若路由跳转失败（如页面不存在），则留在当前页面。 |
+| failedRouteUrl | string | 否 | 是 | 表示人脸活体检测失败后跳转的页面路径。如果自定义界面，routeMode值为replace时生效。 如果不填，系统有默认的检测失败页面。 若填写错误，路由跳转失败（如页面不存在），则留在当前页面。 |
 | routeMode | [RouteRedirectionMode](#routeredirectionmode) | 否 | 是 | 人脸活体检测完成后跳转模式，默认REPLACE_MODE模式。 |
 | challenge | string | 否 | 是 | 挑战值。仅用于安全摄像头场景（对应[initializeAttestContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-taas-api#initializeattestcontext)方法中的“userData”字段）的活体检测。 使用安全摄像头场景的前提需要[开通Device Security服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-deviceverify-activateservice)。 长度范围是[16,128]之间（challenge传空或者undefined表示不使用安全摄像头）。 安全摄像头目前支持的设备详情请查看[约束与限制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-taas-securecamera#约束与限制)。 |
 | speechSwitch | boolean | 否 | 是 | 语音播报的开关。 - true表示开启语音播报。 - false表示关闭语音播报。 默认开启语音播报。 |
@@ -164,6 +166,8 @@ let routerOptions: interactiveLiveness.InteractiveLivenessConfig = {
   isSilentMode: isSilentMode
 };
 
+// 调用此接口会跳转到人脸活体检测页面，当前页面会隐藏
+// 检测完成后会根据routeMode配置决定是返回当前页面还是跳转到成功/，同时异步返回检测是否成功，可根据返回结果进行相关操作
 interactiveLiveness.startLivenessDetection(routerOptions).then((isSuccess) => {
   if (isSuccess) {
     hilog.info(0x0001, `LivenessCollectionIndex`, `Succeeded in jumping.`);
@@ -194,7 +198,7 @@ startLivenessDetection(config: InteractiveLivenessConfig, callback: AsyncCallbac
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | config | [InteractiveLivenessConfig](#interactivelivenessconfig) | 是 | 跳转到人脸活体检测页面的配置项。 |
-| callback | [AsyncCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#asynccallback) | 是 | 回调函数。当人脸活体检测成功，err为undefined，data为获取到的InteractiveLivenessResult；否则为错误对象。当前只适用于RouteRedirectionMode.BACK_MODE跳转模式。 |
+| callback | [AsyncCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#asynccallback) | 是 | 回调函数。当人脸活体检测成功，err为undefined，data为获取到的InteractiveLivenessResult；否则返回错误对象， data为undefined。当前只适用于RouteRedirectionMode.BACK_MODE跳转模式。 |
 
 返回值：
 
@@ -204,7 +208,7 @@ startLivenessDetection(config: InteractiveLivenessConfig, callback: AsyncCallbac
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-vision)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-vision)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -257,7 +261,7 @@ void interactiveLiveness.startLivenessDetection(routerOptions, (err: BusinessErr
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
 | INTERACTIVE_LIVENESS | 0 | 表示当前检测的结果是动作活体检测。 |
-| SILENT_LIVENESS | 1 | 表示当前检测的结果是静默活体检测，暂未支持。 |
+| SILENT_LIVENESS(deprecated) | 1 | 表示当前检测的结果是静默活体检测，暂未支持。 **说明：** 从版本26.0.0开始废弃。 |
 | NOT_LIVENESS | 2 | 表示当前检测的结果是非活体，跳转的是失败页面，不会返回错误信息。如果配置了失败页面或者back路由跳转，不建议有重新检测的场景。 |
 
 #### InteractiveLivenessResult

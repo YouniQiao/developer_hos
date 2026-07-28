@@ -2,8 +2,8 @@
 title: "lowpower_video_sink_base.h"
 upstream_id: "harmonyos-references/capi-lowpower-video-sink-base-h"
 catalog: "harmonyos-references"
-content_hash: "0ee905f1f268"
-synced_at: "2026-07-09T01:00:41.603659"
+content_hash: "63f30a4fec60"
+synced_at: "2026-07-28T16:51:59.376517"
 ---
 
 # lowpower_video_sink_base.h
@@ -35,24 +35,24 @@ synced_at: "2026-07-09T01:00:41.603659"
 
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
-| [typedef void (*OH_LowPowerVideoSink_OnDataNeeded)(OH_LowPowerVideoSink* sink, OH_AVSamplesBuffer* buffer, void *userData)](#oh_lowpowervideosink_ondataneeded) | OH_LowPowerVideoSink_OnDataNeeded | LowPowerVideoSink需要数据时调用该方法，包含在[OH_LowPowerVideoSinkCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpowervideosink-oh-lowpowervideosinkcallback)中。 |
+| [typedef void (*OH_LowPowerVideoSink_OnDataNeeded)(OH_LowPowerVideoSink* sink, OH_AVSamplesBuffer* buffer, void *userData)](#oh_lowpowervideosink_ondataneeded) | OH_LowPowerVideoSink_OnDataNeeded | LowPowerVideoSink需要数据时调用该方法。 |
 | [typedef void (*OH_LowPowerVideoSink_OnError)(OH_LowPowerVideoSink* sink, OH_AVErrCode errCode, const char* errMsg, void* userData)](#oh_lowpowervideosink_onerror) | OH_LowPowerVideoSink_OnError | LowPowerVideoSink发生错误时调用该方法。 |
-| [typedef void (*OH_LowPowerVideoSink_OnTargetArrived)(OH_LowPowerVideoSink* sink, const int64_t targetPts, const bool isTimeout, void* userData)](#oh_lowpowervideosink_ontargetarrived) | OH_LowPowerVideoSink_OnTargetArrived | LowPowerVideoSink到达目标点时调用该方法，包含在[OH_LowPowerVideoSinkCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpowervideosink-oh-lowpowervideosinkcallback)中。 |
-| [typedef void (*OH_LowPowerVideoSink_OnRenderStarted)(OH_LowPowerVideoSink* sink, void* userData)](#oh_lowpowervideosink_onrenderstarted) | OH_LowPowerVideoSink_OnRenderStarted | LowPowerVideoSink开始渲染时调用该方法，包含在[OH_LowPowerVideoSinkCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpowervideosink-oh-lowpowervideosinkcallback)中。 |
-| [typedef void (*OH_LowPowerVideoSink_OnStreamChanged)(OH_LowPowerVideoSink* sink, OH_AVFormat* format, void* userData)](#oh_lowpowervideosink_onstreamchanged) | OH_LowPowerVideoSink_OnStreamChanged | LowPowerVideoSink流切换调用该方法，包含在[OH_LowPowerVideoSinkCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpowervideosink-oh-lowpowervideosinkcallback)中。 |
-| [typedef void (*OH_LowPowerVideoSink_OnFirstFrameDecoded)(OH_LowPowerVideoSink* sink, void* userData)](#oh_lowpowervideosink_onfirstframedecoded) | OH_LowPowerVideoSink_OnFirstFrameDecoded | LowPowerVideoSink第一帧解码成功时调用该方法，包含在[OH_LowPowerVideoSinkCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpowervideosink-oh-lowpowervideosinkcallback)中。 |
-| [typedef void (*OH_LowPowerVideoSink_OnEos)(OH_LowPowerVideoSink* sink, void* userData)](#oh_lowpowervideosink_oneos) | OH_LowPowerVideoSink_OnEos | LowPowerVideoSink播放完成时调用该方法，包含在[OH_LowPowerVideoSinkCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpowervideosink-oh-lowpowervideosinkcallback)中。 |
+| [typedef void (*OH_LowPowerVideoSink_OnTargetArrived)(OH_LowPowerVideoSink* sink, const int64_t targetPts, const bool isTimeout, void* userData)](#oh_lowpowervideosink_ontargetarrived) | OH_LowPowerVideoSink_OnTargetArrived | LowPowerVideoSink到达目标点时调用该方法。 |
+| [typedef void (*OH_LowPowerVideoSink_OnRenderStarted)(OH_LowPowerVideoSink* sink, void* userData)](#oh_lowpowervideosink_onrenderstarted) | OH_LowPowerVideoSink_OnRenderStarted | LowPowerVideoSink开始渲染时调用该方法。 |
+| [typedef void (*OH_LowPowerVideoSink_OnStreamChanged)(OH_LowPowerVideoSink* sink, OH_AVFormat* format, void* userData)](#oh_lowpowervideosink_onstreamchanged) | OH_LowPowerVideoSink_OnStreamChanged | LowPowerVideoSink流切换调用该方法。 |
+| [typedef void (*OH_LowPowerVideoSink_OnFirstFrameDecoded)(OH_LowPowerVideoSink* sink, void* userData)](#oh_lowpowervideosink_onfirstframedecoded) | OH_LowPowerVideoSink_OnFirstFrameDecoded | LowPowerVideoSink第一帧解码成功时调用该方法。 |
+| [typedef void (*OH_LowPowerVideoSink_OnEos)(OH_LowPowerVideoSink* sink, void* userData)](#oh_lowpowervideosink_oneos) | OH_LowPowerVideoSink_OnEos | LowPowerVideoSink播放完成时调用该方法。 |
 
 #### 函数说明
 
 #### [h2]OH_LowPowerVideoSink_OnDataNeeded()
 
 ```
-typedef void (*OH_LowPowerVideoSink_OnDataNeeded)(OH_LowPowerVideoSink* sink,OH_AVSamplesBuffer* buffer,void *userData)
+typedef void (*OH_LowPowerVideoSink_OnDataNeeded)(OH_LowPowerVideoSink* sink, OH_AVSamplesBuffer* buffer, void *userData)
 ```
  描述
 
-LowPowerVideoSink需要数据时调用该方法，包含在[OH_LowPowerVideoSinkCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpowervideosink-oh-lowpowervideosinkcallback)中。
+LowPowerVideoSink需要数据时调用该方法。
 
 起始版本： 20
 
@@ -67,7 +67,7 @@ LowPowerVideoSink需要数据时调用该方法，包含在[OH_LowPowerVideoSink
 #### [h2]OH_LowPowerVideoSink_OnError()
 
 ```
-typedef void (*OH_LowPowerVideoSink_OnError)(OH_LowPowerVideoSink* sink,OH_AVErrCode errCode,const char* errMsg,void* userData)
+typedef void (*OH_LowPowerVideoSink_OnError)(OH_LowPowerVideoSink* sink, OH_AVErrCode errCode, const char* errMsg, void* userData)
 ```
  描述
 
@@ -87,11 +87,11 @@ LowPowerVideoSink发生错误时调用该方法。
 #### [h2]OH_LowPowerVideoSink_OnTargetArrived()
 
 ```
-typedef void (*OH_LowPowerVideoSink_OnTargetArrived)(OH_LowPowerVideoSink* sink,const int64_t targetPts,const bool isTimeout,void* userData)
+typedef void (*OH_LowPowerVideoSink_OnTargetArrived)(OH_LowPowerVideoSink* sink, const int64_t targetPts, const bool isTimeout, void* userData)
 ```
  描述
 
-LowPowerVideoSink到达目标点时调用该方法，包含在[OH_LowPowerVideoSinkCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpowervideosink-oh-lowpowervideosinkcallback)中。
+LowPowerVideoSink到达目标点时调用该方法。
 
 起始版本： 20
 
@@ -111,7 +111,7 @@ typedef void (*OH_LowPowerVideoSink_OnRenderStarted)(OH_LowPowerVideoSink* sink,
 ```
  描述
 
-LowPowerVideoSink开始渲染时调用该方法，包含在[OH_LowPowerVideoSinkCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpowervideosink-oh-lowpowervideosinkcallback)中。
+LowPowerVideoSink开始渲染时调用该方法。
 
 起始版本： 20
 
@@ -129,7 +129,7 @@ typedef void (*OH_LowPowerVideoSink_OnStreamChanged)(OH_LowPowerVideoSink* sink,
 ```
  描述
 
-LowPowerVideoSink流切换调用该方法，包含在[OH_LowPowerVideoSinkCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpowervideosink-oh-lowpowervideosinkcallback)中。
+LowPowerVideoSink流切换调用该方法。
 
 起始版本： 20
 
@@ -148,7 +148,7 @@ typedef void (*OH_LowPowerVideoSink_OnFirstFrameDecoded)(OH_LowPowerVideoSink* s
 ```
  描述
 
-LowPowerVideoSink第一帧解码成功时调用该方法，包含在[OH_LowPowerVideoSinkCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpowervideosink-oh-lowpowervideosinkcallback)中。
+LowPowerVideoSink第一帧解码成功时调用该方法。
 
 起始版本： 20
 
@@ -166,7 +166,7 @@ typedef void (*OH_LowPowerVideoSink_OnEos)(OH_LowPowerVideoSink* sink, void* use
 ```
  描述
 
-LowPowerVideoSink播放完成时调用该方法，包含在[OH_LowPowerVideoSinkCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpowervideosink-oh-lowpowervideosinkcallback)中。
+LowPowerVideoSink播放完成时调用该方法。
 
 起始版本： 20
 

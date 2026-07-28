@@ -2,8 +2,8 @@
 title: "取消用户级凭证授权"
 upstream_id: "harmonyos-references/account-api-obtain-revoke-token"
 catalog: "harmonyos-references"
-content_hash: "14a0660954de"
-synced_at: "2026-07-09T01:01:12.873095"
+content_hash: "5f2a65558344"
+synced_at: "2026-07-28T16:52:30.275519"
 ---
 
 # 取消用户级凭证授权
@@ -154,12 +154,12 @@ public class RevokeTokenAPIDemo {
 
 | 业务响应主错误码 | 业务响应子错误码 | 描述 | 解决方法 |
 | --- | --- | --- | --- |
-| 1101 | 20222 | 无效的token。 | token格式不正确，可能原因： 请求头的Content-Type为application/x-www-form-urlencoded，但实际代码调用时，未对请求body体进行URLEncode处理，可参考[示例代码](#示例代码)组装参数。 |
+| 1101 | 20222 | token格式不正确。 | token格式不正确，可能原因： 请求头的Content-Type为application/x-www-form-urlencoded，但实际代码调用时，未对请求body体进行URLEncode处理，可参考[示例代码](#示例代码)组装参数。 |
 | 1102 | 20221 | token为空。 | 请按照接口参数的要求，传入正确的token参数。 |
 | 1203 | 11205 | token已过期。Access Token有效期为3600秒，Refresh Token有效期为180天，超过有效期后将无法继续使用。 | 请引导用户重新授权，获取新的token并重试。 |
 | 1203 | 17009 | 无效的token。 | 传入的token参数无效，请重新获取token。 |
 | 1203 | 17010 | token验证失败。 | token不是一个正确有效的数据，请检查token参数。 |
 | 1203 | 31202 | token解析失败。 | token不是一个正确有效的数据，请检查token参数。 |
 | 1203 | 31204 | token已失效。正常Access Token有效期为3600秒，Refresh Token有效期为180天，但是由于用户的行为（如更改密码、取消应用的授权等行为），导致华为服务器提前失效已颁发的Access Token和Refresh Token。 | 请引导用户重新授权，获取新的token并重试。 |
-| 1203 | 31218 | token格式不正确。 | 请检查token格式是否正确。 |
-| 1203 | 500 | 系统内部错误。 | 系统内部处理错误，建议业务打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 1203 | 500 | 系统内部错误。 | 系统内部处理错误，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 1203 | 1203 | 系统未知异常。 | 系统未知异常，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |

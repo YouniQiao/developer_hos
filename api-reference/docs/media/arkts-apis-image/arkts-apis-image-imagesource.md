@@ -2,8 +2,8 @@
 title: "Interface (ImageSource)"
 upstream_id: "harmonyos-references/arkts-apis-image-imagesource"
 catalog: "harmonyos-references"
-content_hash: "b1e32a3280d0"
-synced_at: "2026-07-09T01:00:30.254789"
+content_hash: "84a14d09d56f"
+synced_at: "2026-07-28T16:51:47.950880"
 ---
 
 # Interface (ImageSource)
@@ -184,7 +184,7 @@ function GetImageInfoSync(context : Context) {
 
 getImageProperty(key:PropertyKey, options?: ImagePropertyOptions): Promise<string>
 
-获取图片中给定索引处图像的指定属性键的值。用Promise异步回调。
+获取图片中给定索引处图像的指定属性键的值。使用Promise异步回调。
 
 该接口仅支持JPEG、PNG、HEIF12+、WEBP23+和DNG23+（不同硬件设备支持情况不同）文件，且需要包含Exif信息。
 
@@ -644,7 +644,7 @@ async function WriteImageMetadata(imageSourceObj : image.ImageSource) {
     metaData.exifMetadata.imageLength = 3072;
   }
   await imageSourceObj.writeImageMetadata(metaData).then(() => {
-    console.info(`Succceed in writing image metadata.`);
+    console.info(`Succeeded in writing image metadata.`);
   }).catch((error: BusinessError) => {
     console.error(`Failed to write image metadata. error.code is ${error.code}, error.message is ${error.message}`);
   });
@@ -780,8 +780,8 @@ updateData(buf: ArrayBuffer, isFinished: boolean, offset: number, length: number
 | --- | --- | --- | --- |
 | buf | ArrayBuffer | 是 | 存放增量数据的buffer。 |
 | isFinished | boolean | 是 | true表示数据更新完成，当前buffer内存放最后一段数据；false表示数据还未更新完成，需要继续更新。 |
-| offset | number | 是 | 即当前buffer中的数据首地址，相对于整个图片文件首地址的偏移量。单位：字节。 |
-| length | number | 是 | 当前buffer的长度。单位： 字节（byte）。 |
+| offset | number | 是 | 即当前buffer中的数据首地址，相对于整个图片文件首地址的偏移量。单位：字节（Byte）。 |
+| length | number | 是 | 当前buffer的长度。单位：字节（Byte）。 |
 
 返回值：
 
@@ -818,8 +818,8 @@ updateData(buf: ArrayBuffer, isFinished: boolean, offset: number, length: number
 | --- | --- | --- | --- |
 | buf | ArrayBuffer | 是 | 存放增量数据的buffer。 |
 | isFinished | boolean | 是 | true表示数据更新完成，当前buffer内存放最后一段数据；false表示数据还未更新完成，需要继续更新。 |
-| offset | number | 是 | 即当前buffer中的数据首地址，相对于整个图片文件首地址的偏移量。单位：字节。 |
-| length | number | 是 | 当前buffer的长度。单位：字节（byte）。 |
+| offset | number | 是 | 即当前buffer中的数据首地址，相对于整个图片文件首地址的偏移量。单位：字节（Byte）。 |
+| length | number | 是 | 当前buffer的长度。单位：字节（Byte）。 |
 | callback | AsyncCallback | 是 | 回调函数，当更新增量数据成功，err为undefined，否则为错误对象。 |
 
 示例：
@@ -1349,6 +1349,7 @@ createPixelMapUsingAllocator(options?: DecodingOptions, allocatorType?: Allocato
 - 该方法为非线程安全的方法，不支持在同一个ImageSource实例上并发调用。
 - 由于图片占用内存较大，所以当PixelMap对象使用完成后，应主动调用[release](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap#release7)方法，及时释放内存。
 - 释放时应确保该对象的所有异步方法均执行完成，且后续不再使用该对象。
+- 当调用方所在进程启用沙箱隔离，且指定AllocatorType.DMA或由AllocatorType.AUTO选择DMA内存时，需为该沙箱进程配置访问DMA内存相关资源的SELinux权限；否则可能因SELinux策略拦截导致接口调用阻塞或失败。
 
 系统能力： SystemCapability.Multimedia.Image.ImageSource
 
@@ -1416,7 +1417,10 @@ createPixelMapUsingAllocatorSync(options?: DecodingOptions, allocatorType?: Allo
 
 释放时应确保该对象的所有异步方法均执行完成，且后续不再使用该对象。
 
-![](./img/note_3.0-zh-cn.png) 该方法为同步方法，调用时会阻塞当前线程，不建议在主线程中调用，否则可能导致应用卡顿、掉帧或响应延迟。具体场景参考[耗时任务并发场景简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/time-consuming-task-overview)。
+![](./img/note_3.0-zh-cn.png)
+
+- 该方法为同步方法，调用时会阻塞当前线程，不建议在主线程中调用，否则可能导致应用卡顿、掉帧或响应延迟。具体场景参考[耗时任务并发场景简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/time-consuming-task-overview)。
+- 当调用方所在进程启用沙箱隔离，且指定AllocatorType.DMA或由AllocatorType.AUTO选择DMA内存时，需为该沙箱进程配置访问DMA内存相关资源的SELinux权限；否则可能因SELinux策略拦截导致接口调用阻塞或失败。
 
 系统能力： SystemCapability.Multimedia.Image.ImageSource
 

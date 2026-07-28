@@ -2,8 +2,8 @@
 title: "@ohos.bundle.shortcutManager (shortcutManager模块)"
 upstream_id: "harmonyos-references/js-apis-shortcutmanager"
 catalog: "harmonyos-references"
-content_hash: "300da22f58bf"
-synced_at: "2026-07-09T00:57:07.891631"
+content_hash: "6c32b504adea"
+synced_at: "2026-07-28T16:40:37.086720"
 ---
 
 # @ohos.bundle.shortcutManager (shortcutManager模块)
@@ -45,7 +45,7 @@ setShortcutVisibleForSelf(id: string, visible: boolean) : Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 17700070 | The specified shortcut id is illegal. |
+| 17700070 | The specified shortcut id is not exist. |
 
 示例：
 

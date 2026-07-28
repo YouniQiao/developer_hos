@@ -2,8 +2,8 @@
 title: "OH_AVRecorder_EncoderInfo"
 upstream_id: "harmonyos-references/capi-avrecorder-oh-avrecorder-encoderinfo"
 catalog: "harmonyos-references"
-content_hash: "2c55b4478d12"
-synced_at: "2026-07-09T01:00:43.049682"
+content_hash: "89b0168128ee"
+synced_at: "2026-07-28T16:52:00.424901"
 ---
 
 # OH_AVRecorder_EncoderInfo
@@ -28,12 +28,12 @@ typedef struct OH_AVRecorder_EncoderInfo {...} OH_AVRecorder_EncoderInfo
 
 | 名称 | 描述 |
 | --- | --- |
-| [OH_AVRecorder_CodecMimeType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avrecorder-base-h#oh_avrecorder_codecmimetype) mimeType | 编码器MIME类型名称。 |
+| [OH_AVRecorder_CodecMimeType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avrecorder-base-h#oh_avrecorder_codecmimetype) mimeType | 编码器MIME类型名称。与type相对应，音频编码器对应音频MIME类型，视频编码器对应视频MIME类型。 |
 | char* type | 编码器类型，audio表示音频编码器，video表示视频编码器。 |
-| [OH_AVRecorder_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avrecorder-oh-avrecorder-range) bitRate | 比特率，包含该编码器的最大和最小值。 |
-| [OH_AVRecorder_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avrecorder-oh-avrecorder-range) frameRate | 视频帧率，包含帧率的最大和最小值，仅视频编码器拥有。 |
-| [OH_AVRecorder_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avrecorder-oh-avrecorder-range) width | 视频帧的宽度，包含宽度的最大和最小值，仅视频编码器拥有。 |
-| [OH_AVRecorder_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avrecorder-oh-avrecorder-range) height | 视频帧的高度，包含高度的最大和最小值，仅视频编码器拥有。 |
-| [OH_AVRecorder_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avrecorder-oh-avrecorder-range) channels | 音频采集声道数，包含声道数的最大和最小值，仅音频编码器拥有。 |
-| int32_t* sampleRate | 音频采样率列表，包含所有可以使用的音频采样率值，仅音频编码器拥有。 |
-| int32_t sampleRateLen | 音频采样率列表长度。 |
+| [OH_AVRecorder_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avrecorder-oh-avrecorder-range) bitRate | 编码器支持的比特率的范围，比特率单位为比特每秒（bit/s）。音频和视频编码器均适用。 |
+| [OH_AVRecorder_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avrecorder-oh-avrecorder-range) frameRate | 编码器支持的视频帧率的范围，帧率单位为帧每秒（FPS）。仅适用于视频编码器。 |
+| [OH_AVRecorder_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avrecorder-oh-avrecorder-range) width | 编码器支持的视频帧宽度的范围，视频帧宽度单位为像素（px）。仅适用于视频编码器。 |
+| [OH_AVRecorder_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avrecorder-oh-avrecorder-range) height | 编码器支持的视频帧高度的范围，视频帧高度单位为像素（px）。仅适用于视频编码器。 |
+| [OH_AVRecorder_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avrecorder-oh-avrecorder-range) channels | 编码器支持的音频采集声道数的范围。仅适用于音频编码器。 |
+| int32_t* sampleRate | 音频采样率列表，包含所有可以使用的音频采样率值，单位为赫兹（Hz）。仅适用于音频编码器。 |
+| int32_t sampleRateLen | 音频采样率列表长度，与sampleRate字段配合使用，仅适用于音频编码器。 |

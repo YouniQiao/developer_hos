@@ -2,15 +2,37 @@
 title: "@ohos.sensor (传感器)"
 upstream_id: "harmonyos-references/js-apis-sensor"
 catalog: "harmonyos-references"
-content_hash: "86ba5a7afb99"
-synced_at: "2026-07-09T17:26:56.845102"
+content_hash: "e388f31e85d4"
+synced_at: "2026-07-28T16:51:19.992220"
 ---
 
 # @ohos.sensor (传感器)
 
-sensor模块提供了获取传感器数据的能力，包括获取传感器属性列表，订阅传感器数据，以及一些通用的传感器算法。
+@ohos.sensor 模块是鸿蒙操作系统提供的传感器服务模块，属于 SensorServiceKit。该模块为开发者提供了统一的传感器数据访问能力，涵盖设备上各类物理传感器的数据订阅、查询以及传感器算法计算。
+
+sensor 模块是传感器数据访问的统一接口，定义了设备上各类物理传感器的订阅、查询和算法计算能力。
+
+当应用需要感知设备运动状态（如摇一摇、翻转）、检测环境条件（如自动调节屏幕亮度、测量气压估算海拔）、获取设备方向（如指南针导航）、监测健康数据（如心率计步）时，应使用本模块订阅对应传感器数据。当需要进行传感器数据相关的数学变换和计算时，应使用传感器算法接口。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 8开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。订阅前可使用[getSingleSensor](#sensorgetsinglesensor9)接口获取该传感器的信息，获取该传感器信息成功时可正常订阅传感器，异常情况详见[getSingleSensor](#sensorgetsinglesensor9)错误码说明，具体使用方法可参考[指南开发步骤](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sensor-guidelines#开发步骤)；订阅传感器数据时确保on订阅和off取消订阅成对出现。
+
+sensor模块提供传感器数据订阅与查询能力，核心使用流程如下：
+
+1. 使用[sensor.getSingleSensor](#sensorgetsinglesensor9)或[sensor.getSensorListSync](#sensorgetsensorlistsync12)查询传感器信息，确认设备支持目标传感器。
+2. 使用sensor.on接口订阅传感器数据，持续接收数据回调。
+3. 使用sensor.once接口获取一次传感器数据，适用于无需持续监听的场景。
+4. 使用sensor.off接口取消订阅，确保on和off成对调用。
+
+sensor.on与sensor.once的区别：
+
+- sensor.on持续订阅传感器数据，通过callback反复上报，适用于需要实时监测的场景。
+- sensor.once仅获取一次传感器数据，callback只触发一次后自动取消订阅，适用于单次采集的场景。
+
+注意事项：
+
+- 订阅前建议先使用getSingleSensor确认设备支持该传感器。
+- on订阅和off取消订阅必须成对出现，避免资源泄漏。
+- 对于需要权限的传感器（加速度、陀螺仪、心率、计步等），须先申请相应权限。
 
 #### 导入模块
 
@@ -22,7 +44,7 @@ import { sensor } from '@kit.SensorServiceKit';
 
 on(type: SensorId.ACCELEROMETER, callback: Callback<AccelerometerResponse>, options?: Options): void
 
-订阅加速度传感器数据。
+订阅加速度传感器数据。加速度传感器用于测量设备在X、Y、Z三个方向上的加速度，包含重力加速度分量。适用于需要感知设备运动状态、实现屏幕旋转、游戏操控、计步等场景的场景。调用后，系统会按设定频率通过callback持续上报加速度数据。
 
 需要权限：ohos.permission.ACCELEROMETER
 
@@ -36,7 +58,7 @@ on(type: SensorId.ACCELEROMETER, callback: Callback<AccelerometerResponse>, opti
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).ACCELEROMETER | 是 | 传感器类型，该值固定为SensorId.ACCELEROMETER。 |
 | callback | Callback | 是 | 回调函数，异步上报的传感器数据固定为AccelerometerResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 错误码：
 
@@ -56,7 +78,9 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 // 使用try catch对可能出现的异常进行捕获
 try {
+  // 订阅加速度传感器数据
   sensor.on(sensor.SensorId.ACCELEROMETER, (data: sensor.AccelerometerResponse) => {
+    // 输出X、Y、Z坐标分量
     console.info('Succeeded in invoking on. X-coordinate component: ' + data.x);
     console.info('Succeeded in invoking on. Y-coordinate component: ' + data.y);
     console.info('Succeeded in invoking on. Z-coordinate component: ' + data.z);
@@ -74,7 +98,7 @@ try {
 
 on(type: SensorId.FUSION_PRESSURE, callback: Callback<FusionPressureResponse>, options?: Options): void
 
-订阅融合压力传感器数据。
+订阅融合压力传感器数据。融合压力传感器用于获取经融合算法处理的压力数据，仅适用于智能手表设备。适用于需要获取手腕压力数据的健康监测场景。调用后，系统会按设定频率通过callback持续上报融合压力数据。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -84,7 +108,7 @@ on(type: SensorId.FUSION_PRESSURE, callback: Callback<FusionPressureResponse>, o
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).FUSION_PRESSURE | 是 | 传感器类型，该值固定为SensorId.FUSION_PRESSURE |
 | callback | Callback | 是 | 回调函数，异步上报的传感器数据固定为FusionPressureResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 错误码：
 
@@ -103,7 +127,9 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 // 使用try catch对可能出现的异常进行捕获
 try {
+  // 订阅融合压力传感器数据
   sensor.on(sensor.SensorId.FUSION_PRESSURE, (data: sensor.FusionPressureResponse) => {
+    // 输出融合压力值
     console.info('Succeeded in invoking on. fusionPressure: ' + data.fusionPressure);
   }, { interval: 100000000 });
   setTimeout(() => {
@@ -119,7 +145,7 @@ try {
 
 on(type: SensorId.ACCELEROMETER_UNCALIBRATED, callback: Callback<AccelerometerUncalibratedResponse>, options?: Options): void
 
-订阅未校准加速度传感器数据。
+订阅未校准加速度传感器数据。未校准加速度传感器与加速度传感器的区别在于，其上报的偏移值(biasX/biasY/biasZ)未经系统校准补偿，适用于需要获取原始加速度数据或自行实现校准算法的场景。与sensor.on('SensorId.ACCELEROMETER')相比，本接口额外提供偏移值信息，适用于需要分析设备校准偏差的场景。
 
 需要权限：ohos.permission.ACCELEROMETER
 
@@ -131,7 +157,7 @@ on(type: SensorId.ACCELEROMETER_UNCALIBRATED, callback: Callback<AccelerometerUn
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).ACCELEROMETER_UNCALIBRATED | 是 | 传感器类型，该值固定为SensorId.ACCELEROMETER_UNCALIBRATED。 |
 | callback | Callback | 是 | 回调函数，异步上报的传感器数据固定为AccelerometerUncalibratedResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 错误码：
 
@@ -151,7 +177,9 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 // 使用try catch对可能出现的异常进行捕获
 try {
+  // 订阅未校准加速度传感器数据
   sensor.on(sensor.SensorId.ACCELEROMETER_UNCALIBRATED, (data: sensor.AccelerometerUncalibratedResponse) => {
+    // 输出X、Y、Z坐标分量和偏移值
     console.info('Succeeded in invoking on. X-coordinate component: ' + data.x);
     console.info('Succeeded in invoking on. Y-coordinate component: ' + data.y);
     console.info('Succeeded in invoking on. Z-coordinate component: ' + data.z);
@@ -172,7 +200,7 @@ try {
 
 on(type: SensorId.AMBIENT_LIGHT, callback: Callback<LightResponse>, options?: Options): void
 
-订阅环境光传感器数据。
+订阅环境光传感器数据。环境光传感器用于测量周围环境的光照强度，适用于自动调节屏幕亮度、判断环境明暗等场景。调用后，系统会按设定频率通过callback持续上报环境光强度数据。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -182,7 +210,7 @@ on(type: SensorId.AMBIENT_LIGHT, callback: Callback<LightResponse>, options?: Op
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).AMBIENT_LIGHT | 是 | 传感器类型，该值固定为SensorId.AMBIENT_LIGHT。 |
 | callback | Callback | 是 | 回调函数，异步上报的传感器数据固定为LightResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 错误码：
 
@@ -201,7 +229,9 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 // 使用try catch对可能出现的异常进行捕获
 try {
+  // 订阅环境光传感器数据
   sensor.on(sensor.SensorId.AMBIENT_LIGHT, (data: sensor.LightResponse) => {
+    // 输出环境光强度
     console.info('Succeeded in getting the ambient light intensity: ' + data.intensity);
   }, { interval: 100000000 });
   setTimeout(() => {
@@ -217,7 +247,7 @@ try {
 
 on(type: SensorId.AMBIENT_TEMPERATURE, callback: Callback<AmbientTemperatureResponse>, options?: Options): void
 
-订阅温度传感器数据。
+订阅环境温度传感器数据。温度传感器用于测量设备周围的环境温度，适用于环境温度监测、温度补偿等场景。调用后，系统会按设定频率通过callback持续上报温度数据。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -227,7 +257,7 @@ on(type: SensorId.AMBIENT_TEMPERATURE, callback: Callback<AmbientTemperatureResp
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).AMBIENT_TEMPERATURE | 是 | 传感器类型，该值固定为SensorId.AMBIENT_TEMPERATURE。 |
 | callback | Callback | 是 | 回调函数，异步上报的传感器数据固定为AmbientTemperatureResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 错误码：
 
@@ -246,7 +276,9 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 // 使用try catch对可能出现的异常进行捕获
 try {
+  // 订阅温度传感器数据
   sensor.on(sensor.SensorId.AMBIENT_TEMPERATURE, (data: sensor.AmbientTemperatureResponse) => {
+    // 输出温度值
     console.info('Succeeded in invoking on. Temperature: ' + data.temperature);
   }, { interval: 100000000 });
   setTimeout(() => {
@@ -262,7 +294,7 @@ try {
 
 on(type: SensorId.BAROMETER, callback: Callback<BarometerResponse>, options?: Options): void
 
-订阅气压计传感器数据。
+订阅气压计传感器数据。气压计传感器用于测量大气压强，适用于海拔估算、天气预报辅助等场景。调用后，系统会按设定频率通过callback持续上报气压数据。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -272,7 +304,7 @@ on(type: SensorId.BAROMETER, callback: Callback<BarometerResponse>, options?: Op
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).BAROMETER | 是 | 传感器类型，该值固定为SensorId.BAROMETER。 |
 | callback | Callback | 是 | 回调函数，异步上报的传感器数据固定为BarometerResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 错误码：
 
@@ -291,7 +323,9 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 // 使用try catch对可能出现的异常进行捕获
 try {
+  // 订阅气压计传感器数据
   sensor.on(sensor.SensorId.BAROMETER, (data: sensor.BarometerResponse) => {
+    // 输出气压值
     console.info('Succeeded in invoking on. Atmospheric pressure: ' + data.pressure);
   }, { interval: 100000000 });
   setTimeout(() => {
@@ -307,7 +341,7 @@ try {
 
 on(type: SensorId.GRAVITY, callback: Callback<GravityResponse>, options?: Options): void
 
-订阅重力传感器数据。
+订阅重力传感器数据。重力传感器用于测量设备在X、Y、Z三个方向上受到的重力加速度分量，适用于需要分离重力分量进行运动分析的的场景，如游戏操控、运动检测。调用后，系统会按设定频率通过callback持续上报重力分量数据。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -317,7 +351,7 @@ on(type: SensorId.GRAVITY, callback: Callback<GravityResponse>, options?: Option
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).GRAVITY | 是 | 传感器类型，该值固定为SensorId.GRAVITY。 |
 | callback | Callback | 是 | 回调函数，异步上报的传感器数据固定为GravityResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 错误码：
 
@@ -336,7 +370,9 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 // 使用try catch对可能出现的异常进行捕获
 try {
+  // 订阅重力传感器数据
   sensor.on(sensor.SensorId.GRAVITY, (data: sensor.GravityResponse) => {
+    // 输出X、Y、Z坐标分量
     console.info('Succeeded in invoking on. X-coordinate component: ' + data.x);
     console.info('Succeeded in invoking on. Y-coordinate component: ' + data.y);
     console.info('Succeeded in invoking on. Z-coordinate component: ' + data.z);
@@ -354,7 +390,7 @@ try {
 
 on(type: SensorId.GYROSCOPE, callback: Callback<GyroscopeResponse>, options?: Options): void
 
-订阅校准的陀螺仪传感器数据。
+订阅校准的陀螺仪传感器数据。陀螺仪传感器用于测量设备绕X、Y、Z轴的旋转角速度，适用于设备旋转检测、姿态跟踪、游戏操控等场景。调用后，系统会按设定频率通过callback持续上报角速度数据。
 
 需要权限：ohos.permission.GYROSCOPE
 
@@ -368,7 +404,7 @@ on(type: SensorId.GYROSCOPE, callback: Callback<GyroscopeResponse>, options?: Op
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).GYROSCOPE | 是 | 传感器类型，该值固定为SensorId.GYROSCOPE。 |
 | callback | Callback | 是 | 回调函数，异步上报的传感器数据固定为GyroscopeResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 错误码：
 
@@ -388,7 +424,9 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 // 使用try catch对可能出现的异常进行捕获
 try {
+  // 订阅校准的陀螺仪传感器数据
   sensor.on(sensor.SensorId.GYROSCOPE, (data: sensor.GyroscopeResponse) => {
+    // 输出X、Y、Z坐标分量
     console.info('Succeeded in invoking on. X-coordinate component: ' + data.x);
     console.info('Succeeded in invoking on. Y-coordinate component: ' + data.y);
     console.info('Succeeded in invoking on. Z-coordinate component: ' + data.z);
@@ -406,7 +444,7 @@ try {
 
 on(type: SensorId.GYROSCOPE_UNCALIBRATED, callback: Callback<GyroscopeUncalibratedResponse>, options?: Options): void
 
-订阅未校准陀螺仪传感器数据。
+订阅未校准陀螺仪传感器数据。未校准陀螺仪传感器与陀螺仪传感器的区别在于，其上报的偏移值(biasX/biasY/biasZ)未经系统校准补偿，适用于需要获取原始陀螺仪数据或自行实现校准算法的场景。与sensor.on('SensorId.GYROSCOPE')相比，本接口额外提供偏移值信息，适用于需要分析设备陀螺仪校准偏差的场景。
 
 需要权限：ohos.permission.GYROSCOPE
 
@@ -418,7 +456,7 @@ on(type: SensorId.GYROSCOPE_UNCALIBRATED, callback: Callback<GyroscopeUncalibrat
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).GYROSCOPE_UNCALIBRATED | 是 | 传感器类型，该值固定为SensorId.GYROSCOPE_UNCALIBRATED。 |
 | callback | Callback | 是 | 回调函数，异步上报的传感器数据固定为GyroscopeUncalibratedResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 错误码：
 
@@ -438,7 +476,9 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 // 使用try catch对可能出现的异常进行捕获
 try {
+  // 订阅未校准陀螺仪传感器数据
   sensor.on(sensor.SensorId.GYROSCOPE_UNCALIBRATED, (data: sensor.GyroscopeUncalibratedResponse) => {
+    // 输出X、Y、Z坐标分量和偏移值
     console.info('Succeeded in invoking on. X-coordinate component: ' + data.x);
     console.info('Succeeded in invoking on. Y-coordinate component: ' + data.y);
     console.info('Succeeded in invoking on. Z-coordinate component: ' + data.z);
@@ -459,7 +499,7 @@ try {
 
 on(type: SensorId.HALL, callback: Callback<HallResponse>, options?: Options): void
 
-订阅霍尔传感器数据。
+订阅霍尔传感器数据。霍尔传感器用于检测磁场变化，常用于检测翻盖手机或皮套的开合状态。当霍尔事件被触发得较为频繁时，可通过options参数限定事件上报频率。调用后，系统会通过callback持续上报霍尔状态数据。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -469,7 +509,7 @@ on(type: SensorId.HALL, callback: Callback<HallResponse>, options?: Options): vo
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).HALL | 是 | 传感器类型，该值固定为SensorId.HALL。 |
 | callback | Callback | 是 | 回调函数，异步上报的传感器数据固定为HallResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，默认值为200000000ns。当霍尔事件被触发的很频繁时，该参数用于限定事件上报的频率。 |
+| options | [Options](#options) | 否 | 可选参数列表，当霍尔事件被触发的很频繁时，用于设置传感器上报频率，默认值为200000000ns。 |
 
 错误码：
 
@@ -488,7 +528,9 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 // 使用try catch对可能出现的异常进行捕获
 try {
+  // 订阅霍尔传感器数据
   sensor.on(sensor.SensorId.HALL, (data: sensor.HallResponse) => {
+    // 输出霍尔状态
     console.info('Succeeded in invoking on. Hall status: ' + data.status);
   }, { interval: 100000000 });
   setTimeout(() => {
@@ -504,7 +546,7 @@ try {
 
 on(type: SensorId.HEART_RATE, callback: Callback<HeartRateResponse>, options?: Options): void
 
-订阅心率传感器数据。
+订阅心率传感器数据。心率传感器用于测量用户的心率值，适用于健康监测、运动辅助等场景。调用后，系统会按设定频率通过callback持续上报心率数据。
 
 需要权限：ohos.permission.READ_HEALTH_DATA
 
@@ -516,7 +558,7 @@ on(type: SensorId.HEART_RATE, callback: Callback<HeartRateResponse>, options?: O
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).HEART_RATE | 是 | 传感器类型，该值固定为SensorId.HEART_RATE。 |
 | callback | Callback | 是 | 回调函数，异步上报的传感器数据固定为HeartRateResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 错误码：
 
@@ -536,7 +578,9 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 // 使用try catch对可能出现的异常进行捕获
 try {
+  // 订阅心率传感器数据
   sensor.on(sensor.SensorId.HEART_RATE, (data: sensor.HeartRateResponse) => {
+    // 输出心率值
     console.info('Succeeded in invoking on. Heart rate: ' + data.heartRate);
   }, { interval: 100000000 });
   setTimeout(() => {
@@ -552,7 +596,7 @@ try {
 
 on(type: SensorId.HUMIDITY, callback: Callback<HumidityResponse>, options?: Options): void
 
-订阅湿度传感器数据。
+订阅湿度传感器数据。湿度传感器用于测量周围环境的相对湿度，适用于环境湿度监测、智能家居联动等场景。调用后，系统会按设定频率通过callback持续上报湿度数据。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -562,7 +606,7 @@ on(type: SensorId.HUMIDITY, callback: Callback<HumidityResponse>, options?: Opti
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).HUMIDITY | 是 | 传感器类型，该值固定为SensorId.HUMIDITY。 |
 | callback | Callback | 是 | 回调函数，异步上报的传感器数据固定为HumidityResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 错误码：
 
@@ -581,7 +625,9 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 // 使用try catch对可能出现的异常进行捕获
 try {
+  // 订阅湿度传感器数据
   sensor.on(sensor.SensorId.HUMIDITY, (data: sensor.HumidityResponse) => {
+    // 输出湿度值
     console.info('Succeeded in invoking on. Humidity: ' + data.humidity);
   }, { interval: 100000000 });
   setTimeout(() => {
@@ -597,7 +643,7 @@ try {
 
 on(type: SensorId.LINEAR_ACCELEROMETER, callback: Callback<LinearAccelerometerResponse>, options?: Options): void
 
-订阅线性加速度传感器数据。
+订阅线性加速度传感器数据。线性加速度传感器用于测量设备在X、Y、Z三个方向上的加速度（不含重力加速度分量），适用于需要感知设备纯粹运动加速度的场景，如运动追踪、碰撞检测。与sensor.on('SensorId.ACCELEROMETER')相比，本接口已去除重力分量，适用于仅需设备运动加速度的场景。
 
 需要权限：ohos.permission.ACCELEROMETER
 
@@ -609,7 +655,7 @@ on(type: SensorId.LINEAR_ACCELEROMETER, callback: Callback<LinearAccelerometerRe
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).LINEAR_ACCELEROMETER | 是 | 传感器类型，该值固定为SensorId.LINEAR_ACCELEROMETER。 |
 | callback | Callback | 是 | 回调函数，异步上报的传感器数据固定为LinearAccelerometerResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 错误码：
 
@@ -629,7 +675,9 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 // 使用try catch对可能出现的异常进行捕获
 try {
+  // 订阅线性加速度传感器数据
   sensor.on(sensor.SensorId.LINEAR_ACCELEROMETER, (data: sensor.LinearAccelerometerResponse) => {
+    // 输出X、Y、Z坐标分量
     console.info('Succeeded in invoking on. X-coordinate component: ' + data.x);
     console.info('Succeeded in invoking on. Y-coordinate component: ' + data.y);
     console.info('Succeeded in invoking on. Z-coordinate component: ' + data.z);
@@ -647,7 +695,7 @@ try {
 
 on(type: SensorId.MAGNETIC_FIELD, callback: Callback<MagneticFieldResponse>, options?: Options): void
 
-订阅地磁传感器数据。
+订阅地磁传感器数据。地磁传感器用于测量设备周围的磁场强度在X、Y、Z三个方向上的分量，适用于指南针、方向检测、金属检测等场景。调用后，系统会按设定频率通过callback持续上报磁场分量数据。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -657,7 +705,7 @@ on(type: SensorId.MAGNETIC_FIELD, callback: Callback<MagneticFieldResponse>, opt
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).MAGNETIC_FIELD | 是 | 传感器类型，该值固定为SensorId.MAGNETIC_FIELD。 |
 | callback | Callback | 是 | 回调函数，异步上报的传感器数据固定为MagneticFieldResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 错误码：
 
@@ -676,7 +724,9 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 // 使用try catch对可能出现的异常进行捕获
 try {
+  // 订阅地磁传感器数据
   sensor.on(sensor.SensorId.MAGNETIC_FIELD, (data: sensor.MagneticFieldResponse) => {
+    // 输出X、Y、Z坐标分量
     console.info('Succeeded in invoking on. X-coordinate component: ' + data.x);
     console.info('Succeeded in invoking on. Y-coordinate component: ' + data.y);
     console.info('Succeeded in invoking on. Z-coordinate component: ' + data.z);
@@ -694,7 +744,7 @@ try {
 
 on(type: SensorId.MAGNETIC_FIELD_UNCALIBRATED, callback: Callback<MagneticFieldUncalibratedResponse>, options?: Options): void
 
-订阅未校准地磁传感器数据。
+订阅未校准地磁传感器数据。未校准地磁传感器与地磁传感器的区别在于，其上报的偏移值(biasX/biasY/biasZ)未经系统校准补偿，适用于需要获取原始磁场数据或自行实现校准算法的场景。与sensor.on('SensorId.MAGNETIC_FIELD')相比，本接口额外提供偏移值信息，适用于需要分析设备地磁校准偏差的场景。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -704,7 +754,7 @@ on(type: SensorId.MAGNETIC_FIELD_UNCALIBRATED, callback: Callback<MagneticFieldU
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).MAGNETIC_FIELD_UNCALIBRATED | 是 | 传感器类型，该值固定为SensorId.MAGNETIC_FIELD_UNCALIBRATED。 |
 | callback | Callback | 是 | 回调函数，异步上报的传感器数据固定为MagneticFieldUncalibratedResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 错误码：
 
@@ -723,7 +773,9 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 // 使用try catch对可能出现的异常进行捕获
 try {
+  // 订阅未校准地磁传感器数据
   sensor.on(sensor.SensorId.MAGNETIC_FIELD_UNCALIBRATED, (data: sensor.MagneticFieldUncalibratedResponse) => {
+    // 输出X、Y、Z坐标分量和偏移值
     console.info('Succeeded in invoking on. X-coordinate component: ' + data.x);
     console.info('Succeeded in invoking on. Y-coordinate component: ' + data.y);
     console.info('Succeeded in invoking on. Z-coordinate component: ' + data.z);
@@ -744,7 +796,7 @@ try {
 
 on(type: SensorId.ORIENTATION, callback: Callback<OrientationResponse>, options?: Options): void
 
-订阅方向传感器数据。
+订阅方向传感器数据。方向传感器用于测量设备绕Z轴旋转的角度(alpha)、绕X轴旋转的角度(beta)和绕Y轴旋转的角度(gamma)，适用于屏幕旋转、指南针、姿态感知等场景。调用后，系统会按设定频率通过callback持续上报方向数据。调用本接口的应用或服务可以通过提示用户使用8字校准法来提高应用获取的方向传感器的精度，此传感器理论误差正负5度，具体的精度根据不同的驱动及算法实现可能存在差异。
 
 ![](./img/note_3.0-zh-cn.png) 调用本接口的应用或服务可以通过提示用户使用8字校准法来提高应用获取的方向传感器的精度，此传感器理论误差正负5度，具体的精度根据不同的驱动及算法实现可能存在差异。
 
@@ -758,7 +810,7 @@ on(type: SensorId.ORIENTATION, callback: Callback<OrientationResponse>, options?
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).ORIENTATION | 是 | 传感器类型，该值固定为SensorId.ORIENTATION。 |
 | callback | Callback | 是 | 回调函数，异步上报的传感器数据固定为OrientationResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 错误码：
 
@@ -777,7 +829,9 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 // 使用try catch对可能出现的异常进行捕获
 try {
+  // 订阅方向传感器数据
   sensor.on(sensor.SensorId.ORIENTATION, (data: sensor.OrientationResponse) => {
+    // 输出设备绕Z、X、Y轴旋转的角度
     console.info('Succeeded in the device rotating at an angle around the Z axis: ' + data.alpha);
     console.info('Succeeded in the device rotating at an angle around the X axis: ' + data.beta);
     console.info('Succeeded in the device rotating at an angle around the Y axis: ' + data.gamma);
@@ -795,7 +849,7 @@ try {
 
 on(type: SensorId.PEDOMETER, callback: Callback<PedometerResponse>, options?: Options): void
 
-订阅计步器传感器数据。计步传感器数据上报有一定延迟，延迟时间由具体的实现产品决定。
+订阅计步器传感器数据。计步器传感器用于统计用户的步行步数，适用于运动追踪、健康管理等场景。计步传感器数据上报有一定延迟，延迟时间由具体的实现产品决定。调用后，系统会按设定频率通过callback持续上报步数数据。
 
 需要权限：ohos.permission.ACTIVITY_MOTION
 
@@ -807,7 +861,7 @@ on(type: SensorId.PEDOMETER, callback: Callback<PedometerResponse>, options?: Op
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).PEDOMETER | 是 | 传感器类型，该值固定为SensorId.PEDOMETER。 |
 | callback | Callback | 是 | 回调函数，异步上报的传感器数据固定为PedometerResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 错误码：
 
@@ -827,7 +881,9 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 // 使用try catch对可能出现的异常进行捕获
 try {
+  // 订阅计步器传感器数据
   sensor.on(sensor.SensorId.PEDOMETER, (data: sensor.PedometerResponse) => {
+    // 输出步数
     console.info('Succeeded in invoking on. Step count: ' + data.steps);
   }, { interval: 100000000 });
   setTimeout(() => {
@@ -843,7 +899,7 @@ try {
 
 on(type: SensorId.PEDOMETER_DETECTION, callback: Callback<PedometerDetectionResponse>, options?: Options): void
 
-订阅计步检测器传感器数据。
+订阅计步检测器传感器数据。计步检测器传感器用于检测用户是否发生了计步事件（如迈步动作），适用于需要实时检测步行状态的场景。与sensor.on('SensorId.PEDOMETER')相比，本接口上报的是计步事件标量而非累计步数，适用于需要检测单步事件的场景。
 
 需要权限：ohos.permission.ACTIVITY_MOTION
 
@@ -855,7 +911,7 @@ on(type: SensorId.PEDOMETER_DETECTION, callback: Callback<PedometerDetectionResp
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).PEDOMETER_DETECTION | 是 | 传感器类型，该值固定为SensorId.PEDOMETER_DETECTION。 |
 | callback | Callback | 是 | 回调函数，异步上报的传感器数据固定为PedometerDetectionResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 错误码：
 
@@ -875,7 +931,9 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 // 使用try catch对可能出现的异常进行捕获
 try {
+  // 订阅计步检测器传感器数据
   sensor.on(sensor.SensorId.PEDOMETER_DETECTION, (data: sensor.PedometerDetectionResponse) => {
+    // 输出计步标量值
     console.info('Succeeded in invoking on. Pedometer scalar: ' + data.scalar);
   }, { interval: 100000000 });
   setTimeout(() => {
@@ -891,7 +949,7 @@ try {
 
 on(type: SensorId.PROXIMITY, callback: Callback<ProximityResponse>, options?: Options): void
 
-订阅接近光传感器数据。
+订阅接近光传感器数据。接近光传感器用于检测物体与设备的距离状态，常用于通话时自动关闭屏幕以防止误触。当接近光事件被触发得较为频繁时，可通过options参数限定事件上报频率。调用后，系统会通过callback持续上报接近状态数据。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -901,7 +959,7 @@ on(type: SensorId.PROXIMITY, callback: Callback<ProximityResponse>, options?: Op
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).PROXIMITY | 是 | 传感器类型，该值固定为SensorId.PROXIMITY。 |
 | callback | Callback | 是 | 回调函数，异步上报的传感器数据固定为ProximityResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，默认值为200000000ns。当接近光事件被触发的很频繁时，该参数用于限定事件上报的频率。 |
+| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。当接近光事件被触发的很频繁时，该参数用于限定事件上报的频率。 |
 
 错误码：
 
@@ -920,7 +978,9 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 // 使用try catch对可能出现的异常进行捕获
 try {
+  // 订阅接近光传感器数据
   sensor.on(sensor.SensorId.PROXIMITY, (data: sensor.ProximityResponse) => {
+    // 输出距离值
     console.info('Succeeded in invoking on. Distance: ' + data.distance);
   }, { interval: 100000000 });
   setTimeout(() => {
@@ -936,7 +996,7 @@ try {
 
 on(type: SensorId.ROTATION_VECTOR, callback: Callback<RotationVectorResponse>, options?: Options): void
 
-订阅旋转矢量传感器数据。
+订阅旋转矢量传感器数据。旋转矢量传感器用于表示设备的姿态旋转，数据由X、Y、Z分量和标量W组成，可用于设备姿态估计、AR/VR场景等。调用后，系统会按设定频率通过callback持续上报旋转矢量数据。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -946,7 +1006,7 @@ on(type: SensorId.ROTATION_VECTOR, callback: Callback<RotationVectorResponse>, o
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).ROTATION_VECTOR | 是 | 传感器类型，该值固定为SensorId.ROTATION_VECTOR。 |
 | callback | Callback | 是 | 回调函数，异步上报的传感器数据固定为RotationVectorResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 错误码：
 
@@ -984,7 +1044,7 @@ try {
 
 on(type: SensorId.SIGNIFICANT_MOTION, callback: Callback<SignificantMotionResponse>, options?: Options): void
 
-订阅有效运动传感器数据。
+订阅有效运动传感器数据，用于检测用户拿起设备、明显移动或剧烈摇晃等有效运动事件。适用于需要根据用户活动状态唤醒设备、启动应用或切换模式的场景。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -994,7 +1054,7 @@ on(type: SensorId.SIGNIFICANT_MOTION, callback: Callback<SignificantMotionRespon
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).SIGNIFICANT_MOTION | 是 | 传感器类型，该值固定为SensorId.SIGNIFICANT_MOTION。 |
 | callback | Callback | 是 | 回调函数，异步上报的传感器数据固定为SignificantMotionResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 错误码：
 
@@ -1029,7 +1089,7 @@ try {
 
 on(type: SensorId.WEAR_DETECTION, callback: Callback<WearDetectionResponse>, options?: Options): void
 
-订阅佩戴检测传感器数据。
+订阅佩戴检测传感器数据。佩戴检测传感器用于检测设备是否被用户佩戴，适用于智能手表等可穿戴设备的佩戴状态检测，以便自动切换工作模式。调用后，系统会按设定频率通过callback持续上报佩戴状态数据。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -1037,9 +1097,9 @@ on(type: SensorId.WEAR_DETECTION, callback: Callback<WearDetectionResponse>, opt
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | [SensorId](#sensorid9) | 是 | 传感器类型，该值固定为[SensorId](#sensorid9).WEAR_DETECTION |
+| type | [SensorId](#sensorid9).WEAR_DETECTION | 是 | 传感器类型，该值固定为SensorId.WEAR_DETECTION。 |
 | callback | Callback | 是 | 回调函数，异步上报的传感器数据固定为WearDetectionResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 错误码：
 
@@ -1074,7 +1134,7 @@ try {
 
 on(type: 'sensorStatusChange', callback: Callback<SensorStatusEvent>): void
 
-监听传感器上线下线状态的变化，callback返回传感器状态事件数据。
+监听传感器上线下线状态的变化，callback返回传感器状态事件数据。适用于需要感知传感器设备动态上下线的场景，如远程传感器连接或断开时自动更新传感器列表或订阅状态。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -1082,7 +1142,7 @@ on(type: 'sensorStatusChange', callback: Callback<SensorStatusEvent>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 固定传入'sensorStatusChange',状态监听固定参数。 |
+| type | string | 是 | 固定传入'sensorStatusChange', 状态监听固定参数。 |
 | callback | Callback | 是 | 回调函数，异步上报的传感器事件数据SensorStatusEvent。 |
 
 错误码：
@@ -1117,7 +1177,7 @@ try {
 
 once(type: SensorId.ACCELEROMETER, callback: Callback<AccelerometerResponse>): void
 
-获取一次加速度传感器数据。
+获取一次加速度传感器数据。适用于无需持续监听、仅需一次性获取当前加速度数据的场景。调用后，callback仅触发一次，自动取消订阅。
 
 需要权限：ohos.permission.ACCELEROMETER
 
@@ -1163,7 +1223,7 @@ try {
 
 once(type: SensorId.ACCELEROMETER_UNCALIBRATED, callback: Callback<AccelerometerUncalibratedResponse>): void
 
-获取一次未校准加速度传感器数据。
+获取一次未校准加速度传感器数据。适用于仅需一次性获取原始加速度及偏移数据的场景。调用后，callback仅触发一次，自动取消订阅。
 
 需要权限：ohos.permission.ACCELEROMETER
 
@@ -1212,7 +1272,7 @@ try {
 
 once(type: SensorId.AMBIENT_LIGHT, callback: Callback<LightResponse>): void
 
-获取一次环境光传感器数据。
+获取一次环境光传感器数据。适用于仅需一次性获取当前环境光强度的场景。调用后，callback仅触发一次，自动取消订阅。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -1253,7 +1313,7 @@ try {
 
 once(type: SensorId.AMBIENT_TEMPERATURE, callback: Callback<AmbientTemperatureResponse>): void
 
-获取一次温度传感器数据。
+获取一次温度传感器数据。适用于仅需一次性获取当前环境温度的场景。调用后，callback仅触发一次，自动取消订阅。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -1294,7 +1354,7 @@ try {
 
 once(type: SensorId.BAROMETER, callback: Callback<BarometerResponse>): void
 
-获取一次气压计传感器数据。
+获取一次气压计传感器数据。适用于仅需一次性获取当前气压值的场景。调用后，callback仅触发一次，自动取消订阅。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -1335,7 +1395,7 @@ try {
 
 once(type: SensorId.GRAVITY, callback: Callback<GravityResponse>): void
 
-获取一次重力传感器数据。
+获取一次重力传感器数据。适用于仅需一次性获取当前重力分量的场景。调用后，callback仅触发一次，自动取消订阅。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -1378,7 +1438,7 @@ try {
 
 once(type: SensorId.GYROSCOPE, callback: Callback<GyroscopeResponse>): void
 
-获取一次陀螺仪传感器数据。
+获取一次陀螺仪传感器数据。适用于仅需一次性获取当前旋转角速度的场景。调用后，callback仅触发一次，自动取消订阅。
 
 需要权限：ohos.permission.GYROSCOPE
 
@@ -1424,7 +1484,7 @@ try {
 
 once(type: SensorId.GYROSCOPE_UNCALIBRATED, callback: Callback<GyroscopeUncalibratedResponse>): void
 
-获取一次未校准陀螺仪传感器数据。
+获取一次未校准陀螺仪传感器数据。适用于仅需一次性获取原始角速度及偏移数据的场景。调用后，callback仅触发一次，自动取消订阅。
 
 需要权限：ohos.permission.GYROSCOPE
 
@@ -1473,7 +1533,7 @@ try {
 
 once(type: SensorId.HALL, callback: Callback<HallResponse>): void
 
-获取一次霍尔传感器数据。
+获取一次霍尔传感器数据。适用于仅需一次性检测当前霍尔状态的场景。调用后，callback仅触发一次，自动取消订阅。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -1514,7 +1574,7 @@ try {
 
 once(type: SensorId.HEART_RATE, callback: Callback<HeartRateResponse>): void
 
-获取一次心率传感器数据。
+获取一次心率传感器数据。适用于仅需一次性获取当前心率值的场景。调用后，callback仅触发一次，自动取消订阅。
 
 需要权限：ohos.permission.READ_HEALTH_DATA
 
@@ -1558,7 +1618,7 @@ try {
 
 once(type: SensorId.HUMIDITY, callback: Callback<HumidityResponse>): void
 
-获取一次湿度传感器数据。
+获取一次湿度传感器数据。适用于仅需一次性获取当前环境湿度的场景。调用后，callback仅触发一次，自动取消订阅。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -1599,7 +1659,7 @@ try {
 
 once(type: SensorId.LINEAR_ACCELEROMETER, callback: Callback<LinearAccelerometerResponse>): void
 
-获取一次线性加速度传感器数据。
+获取一次线性加速度传感器数据。适用于仅需一次性获取当前线性加速度（不含重力分量）的场景。调用后，callback仅触发一次，自动取消订阅。
 
 需要权限：ohos.permission.ACCELEROMETER
 
@@ -1645,7 +1705,7 @@ try {
 
 once(type: SensorId.MAGNETIC_FIELD, callback: Callback<MagneticFieldResponse>): void
 
-获取一次磁场传感器数据。
+获取一次磁场传感器数据。适用于仅需一次性获取当前磁场分量的场景。调用后，callback仅触发一次，自动取消订阅。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -1688,7 +1748,7 @@ try {
 
 once(type: SensorId.MAGNETIC_FIELD_UNCALIBRATED, callback: Callback<MagneticFieldUncalibratedResponse>): void
 
-获取一次未经校准的磁场传感器数据。
+获取一次未经校准的磁场传感器数据。适用于仅需一次性获取原始磁场及偏移数据的场景。调用后，callback仅触发一次，自动取消订阅。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -1734,7 +1794,7 @@ try {
 
 once(type: SensorId.ORIENTATION, callback: Callback<OrientationResponse>): void
 
-获取一次方向传感器数据。
+获取一次方向传感器数据。适用于仅需一次性获取当前设备方向的场景。调用后，callback仅触发一次，自动取消订阅。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -1777,7 +1837,7 @@ try {
 
 once(type: SensorId.PEDOMETER, callback: Callback<PedometerResponse>): void
 
-获取一次计步器传感器数据。计步传感器数据上报有一定延迟，延迟时间由具体的实现产品决定。
+获取一次计步器传感器数据。计步传感器数据上报有一定延迟，延迟时间由具体的实现产品决定。适用于仅需一次性获取当前步数的场景。调用后，callback仅触发一次，自动取消订阅。
 
 需要权限：ohos.permission.ACTIVITY_MOTION
 
@@ -1821,7 +1881,7 @@ try {
 
 once(type: SensorId.PEDOMETER_DETECTION, callback: Callback<PedometerDetectionResponse>): void
 
-获取一次计步检测器传感器数据。
+获取一次计步检测器传感器数据。适用于仅需一次性检测计步事件的场景。调用后，callback仅触发一次，自动取消订阅。
 
 需要权限：ohos.permission.ACTIVITY_MOTION
 
@@ -1865,7 +1925,7 @@ try {
 
 once(type: SensorId.PROXIMITY, callback: Callback<ProximityResponse>): void
 
-获取一次接近光传感器数据。
+获取一次接近光传感器数据。适用于仅需一次性检测当前接近状态的场景。调用后，callback仅触发一次，自动取消订阅。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -1906,7 +1966,7 @@ try {
 
 once(type: SensorId.ROTATION_VECTOR, callback: Callback<RotationVectorResponse>): void
 
-获取一次旋转矢量传感器数据。
+获取一次旋转矢量传感器数据。适用于仅需一次性获取当前设备姿态的场景。调用后，callback仅触发一次，自动取消订阅。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -1950,7 +2010,7 @@ try {
 
 once(type: SensorId.SIGNIFICANT_MOTION, callback: Callback<SignificantMotionResponse>): void
 
-获取一次有效运动传感器数据。
+获取一次有效运动传感器数据。适用于仅需一次性检测有效运动的场景。调用后，callback仅触发一次，自动取消订阅。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -1991,7 +2051,7 @@ try {
 
 once(type: SensorId.WEAR_DETECTION, callback: Callback<WearDetectionResponse>): void
 
-获取一次佩戴检测传感器数据。
+获取一次佩戴检测传感器数据。适用于仅需一次性检测佩戴状态的场景。调用后，callback仅触发一次，自动取消订阅。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -1999,7 +2059,7 @@ once(type: SensorId.WEAR_DETECTION, callback: Callback<WearDetectionResponse>): 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | [SensorId](#sensorid9) | 是 | 传感器类型，该值固定为[SensorId](#sensorid9).WEAR_DETECTION。 |
+| type | [SensorId](#sensorid9).WEAR_DETECTION | 是 | 传感器类型，该值固定为[SensorId](#sensorid9).WEAR_DETECTION。 |
 | callback | Callback | 是 | 回调函数，异步上报的传感器数据固定为WearDetectionResponse。 |
 
 错误码：
@@ -2032,7 +2092,7 @@ try {
 
 off(type: SensorId.ACCELEROMETER, callback?: Callback<AccelerometerResponse>): void
 
-取消订阅加速度传感器数据。
+取消订阅加速度传感器数据。当不再需要接收加速度传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 需要权限：ohos.permission.ACCELEROMETER
 
@@ -2088,7 +2148,7 @@ try {
 
 off(type: SensorId.ACCELEROMETER, sensorInfoParam?: SensorInfoParam, callback?: Callback<AccelerometerResponse>): void
 
-取消订阅加速度传感器数据。
+取消订阅加速度传感器数据。当不再需要接收加速度传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 需要权限：ohos.permission.ACCELEROMETER
 
@@ -2101,7 +2161,7 @@ off(type: SensorId.ACCELEROMETER, sensorInfoParam?: SensorInfoParam, callback?: 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).ACCELEROMETER | 是 | 传感器类型，该值固定为SensorId.ACCELEROMETER。 |
-| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId、sensorIndex |
+| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId和sensorIndex，用于取消指定设备上指定传感器的订阅。不传入时默认取消本地设备该类型所有传感器的订阅。 |
 | callback | Callback | 否 | 需要取消订阅的回调函数，若无此参数，则取消订阅当前类型的所有回调函数。 |
 
 错误码：
@@ -2177,7 +2237,7 @@ function sensorUnsubscribe(): Ret {
 
 off(type: SensorId.ACCELEROMETER_UNCALIBRATED, callback?: Callback<AccelerometerUncalibratedResponse>): void
 
-取消订阅未校准加速度传感器数据。
+取消订阅未校准加速度传感器数据。当不再需要接收未校准加速度传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 需要权限：ohos.permission.ACCELEROMETER
 
@@ -2231,7 +2291,7 @@ try {
 
 off(type: SensorId.FUSION_PRESSURE, sensorInfoParam?: SensorInfoParam, callback?: Callback<FusionPressureResponse>): void
 
-取消订阅融合压力传感器数据。
+取消订阅融合压力传感器数据。当不再需要接收融合压力传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -2240,7 +2300,7 @@ off(type: SensorId.FUSION_PRESSURE, sensorInfoParam?: SensorInfoParam, callback?
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).FUSION_PRESSURE | 是 | 传感器类型，该值固定为SensorId.FUSION_PRESSURE。 |
-| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId、sensorIndex |
+| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId和sensorIndex，用于取消指定设备上指定传感器的订阅。不传入时默认取消本地设备该类型所有传感器的订阅。 |
 | callback | Callback | 否 | 取消订阅的回调函数，若无此参数，则取消订阅当前类型的所有回调函数。 |
 
 错误码：
@@ -2316,7 +2376,7 @@ function sensorUnsubscribe(): Ret {
 
 off(type: SensorId.ACCELEROMETER_UNCALIBRATED, sensorInfoParam?: SensorInfoParam, callback?: Callback<AccelerometerUncalibratedResponse>): void
 
-取消订阅未校准加速度传感器数据。
+取消订阅未校准加速度传感器数据。当不再需要接收未校准加速度传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 需要权限：ohos.permission.ACCELEROMETER
 
@@ -2327,7 +2387,7 @@ off(type: SensorId.ACCELEROMETER_UNCALIBRATED, sensorInfoParam?: SensorInfoParam
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).ACCELEROMETER_UNCALIBRATED | 是 | 传感器类型，该值固定为SensorId.ACCELEROMETER_UNCALIBRATED。 |
-| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId、sensorIndex |
+| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId和sensorIndex，用于取消指定设备上指定传感器的订阅。不传入时默认取消本地设备该类型所有传感器的订阅。 |
 | callback | Callback | 否 | 需要取消订阅的回调函数，若无此参数，则取消订阅当前类型的所有回调函数。 |
 
 错误码：
@@ -2403,7 +2463,7 @@ function sensorUnsubscribe(): Ret {
 
 off(type: SensorId.AMBIENT_LIGHT, callback?: Callback<LightResponse>): void
 
-取消订阅环境光传感器数据。
+取消订阅环境光传感器数据。当不再需要接收环境光传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -2454,7 +2514,7 @@ try {
 
 off(type: SensorId.AMBIENT_LIGHT, sensorInfoParam?: SensorInfoParam, callback?: Callback<LightResponse>): void
 
-取消订阅环境光传感器数据。
+取消订阅环境光传感器数据。当不再需要接收环境光传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -2463,7 +2523,7 @@ off(type: SensorId.AMBIENT_LIGHT, sensorInfoParam?: SensorInfoParam, callback?: 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).AMBIENT_LIGHT | 是 | 传感器类型，该值固定为SensorId.AMBIENT_LIGHT。 |
-| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId、sensorIndex |
+| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId和sensorIndex，用于取消指定设备上指定传感器的订阅。不传入时默认取消本地设备该类型所有传感器的订阅。 |
 | callback | Callback | 否 | 需要取消订阅的回调函数，若无此参数，则取消订阅当前类型的所有回调函数。 |
 
 错误码：
@@ -2538,7 +2598,7 @@ function sensorUnsubscribe(): Ret {
 
 off(type: SensorId.AMBIENT_TEMPERATURE, callback?: Callback<AmbientTemperatureResponse>): void
 
-取消订阅温度传感器数据。
+取消订阅温度传感器数据。当不再需要接收温度传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -2589,7 +2649,7 @@ try {
 
 off(type: SensorId.AMBIENT_TEMPERATURE, sensorInfoParam?: SensorInfoParam, callback?: Callback<AmbientTemperatureResponse>): void
 
-取消订阅温度传感器数据。
+取消订阅温度传感器数据。当不再需要接收温度传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -2598,7 +2658,7 @@ off(type: SensorId.AMBIENT_TEMPERATURE, sensorInfoParam?: SensorInfoParam, callb
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).AMBIENT_TEMPERATURE | 是 | 传感器类型，该值固定为SensorId.AMBIENT_TEMPERATURE。 |
-| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId、sensorIndex |
+| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId和sensorIndex，用于取消指定设备上指定传感器的订阅。不传入时默认取消本地设备该类型所有传感器的订阅。 |
 | callback | Callback | 否 | 需要取消订阅的回调函数，若无此参数，则取消订阅当前类型的所有回调函数。 |
 
 错误码：
@@ -2673,7 +2733,7 @@ function sensorUnsubscribe(): Ret {
 
 off(type: SensorId.BAROMETER, callback?: Callback<BarometerResponse>): void
 
-取消订阅气压计传感器数据。
+取消订阅气压计传感器数据。当不再需要接收气压计传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -2724,7 +2784,7 @@ try {
 
 off(type: SensorId.BAROMETER, sensorInfoParam?: SensorInfoParam, callback?: Callback<BarometerResponse>): void
 
-取消订阅气压计传感器数据。
+取消订阅气压计传感器数据。当不再需要接收气压计传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -2733,7 +2793,7 @@ off(type: SensorId.BAROMETER, sensorInfoParam?: SensorInfoParam, callback?: Call
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).BAROMETER | 是 | 传感器类型，该值固定为SensorId.BAROMETER。 |
-| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId、sensorIndex |
+| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId和sensorIndex，用于取消指定设备上指定传感器的订阅。不传入时默认取消本地设备该类型所有传感器的订阅。 |
 | callback | Callback | 否 | 需要取消订阅的回调函数，若无此参数，则取消订阅当前类型的所有回调函数。 |
 
 错误码：
@@ -2808,7 +2868,7 @@ function sensorUnsubscribe(): Ret {
 
 off(type: SensorId.GRAVITY, callback?: Callback<GravityResponse>): void
 
-取消订阅重力传感器数据。
+取消订阅重力传感器数据。当不再需要接收重力传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -2859,7 +2919,7 @@ try {
 
 off(type: SensorId.GRAVITY, sensorInfoParam?: SensorInfoParam, callback?: Callback<GravityResponse>): void
 
-取消订阅重力传感器数据。
+取消订阅重力传感器数据。当不再需要接收重力传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -2868,7 +2928,7 @@ off(type: SensorId.GRAVITY, sensorInfoParam?: SensorInfoParam, callback?: Callba
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).GRAVITY | 是 | 传感器类型，该值固定为SensorId.GRAVITY。 |
-| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId、sensorIndex |
+| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId和sensorIndex，用于取消指定设备上指定传感器的订阅。不传入时默认取消本地设备该类型所有传感器的订阅。 |
 | callback | Callback | 否 | 需要取消订阅的回调函数，若无此参数，则取消订阅当前类型的所有回调函数。 |
 
 错误码：
@@ -2943,7 +3003,7 @@ function sensorUnsubscribe(): Ret {
 
 off(type: SensorId.GYROSCOPE, callback?: Callback<GyroscopeResponse>): void
 
-取消订阅陀螺仪传感器数据。
+取消订阅陀螺仪传感器数据。当不再需要接收陀螺仪传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 需要权限：ohos.permission.GYROSCOPE
 
@@ -2999,7 +3059,7 @@ try {
 
 off(type: SensorId.GYROSCOPE, sensorInfoParam?: SensorInfoParam, callback?: Callback<GyroscopeResponse>): void
 
-取消订阅陀螺仪传感器数据。
+取消订阅陀螺仪传感器数据。当不再需要接收陀螺仪传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 需要权限：ohos.permission.GYROSCOPE
 
@@ -3012,7 +3072,7 @@ off(type: SensorId.GYROSCOPE, sensorInfoParam?: SensorInfoParam, callback?: Call
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).GYROSCOPE | 是 | 传感器类型，该值固定为SensorId.GYROSCOPE。 |
-| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId、sensorIndex |
+| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId和sensorIndex，用于取消指定设备上指定传感器的订阅。不传入时默认取消本地设备该类型所有传感器的订阅。 |
 | callback | Callback | 否 | 需要取消订阅的回调函数，若无此参数，则取消订阅当前类型的所有回调函数。 |
 
 错误码：
@@ -3088,7 +3148,7 @@ function sensorUnsubscribe(): Ret {
 
 off(type: SensorId.GYROSCOPE_UNCALIBRATED, callback?: Callback<GyroscopeUncalibratedResponse>): void
 
-取消订阅未校准陀螺仪传感器数据。
+取消订阅未校准陀螺仪传感器数据。当不再需要接收未校准陀螺仪传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 需要权限：ohos.permission.GYROSCOPE
 
@@ -3153,7 +3213,7 @@ off(type: SensorId.GYROSCOPE_UNCALIBRATED, sensorInfoParam?: SensorInfoParam, ca
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).GYROSCOPE_UNCALIBRATED | 是 | 传感器类型，该值固定为SensorId.GYROSCOPE_UNCALIBRATED。 |
-| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId、sensorIndex |
+| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId和sensorIndex，用于取消指定设备上指定传感器的订阅。不传入时默认取消本地设备该类型所有传感器的订阅。 |
 | callback | Callback | 否 | 需要取消订阅的回调函数，若无此参数，则取消订阅当前类型的所有回调函数。 |
 
 错误码：
@@ -3229,7 +3289,7 @@ function sensorUnsubscribe(): Ret {
 
 off(type: SensorId.HALL, callback?: Callback<HallResponse>): void
 
-取消订阅霍尔传感器数据。
+取消订阅霍尔传感器数据。当不再需要接收霍尔传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -3280,7 +3340,7 @@ try {
 
 off(type: SensorId.HALL, sensorInfoParam?: SensorInfoParam, callback?: Callback<HallResponse>): void
 
-取消订阅霍尔传感器数据。
+取消订阅霍尔传感器数据。当不再需要接收霍尔传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -3289,7 +3349,7 @@ off(type: SensorId.HALL, sensorInfoParam?: SensorInfoParam, callback?: Callback<
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).HALL | 是 | 传感器类型，该值固定为SensorId.HALL。 |
-| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId、sensorIndex |
+| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId和sensorIndex，用于取消指定设备上指定传感器的订阅。不传入时默认取消本地设备该类型所有传感器的订阅。 |
 | callback | Callback | 否 | 需要取消订阅的回调函数，若无此参数，则取消订阅当前类型的所有回调函数。 |
 
 错误码：
@@ -3364,7 +3424,7 @@ function sensorUnsubscribe(): Ret {
 
 off(type: SensorId.HEART_RATE, callback?: Callback<HeartRateResponse>): void
 
-取消订阅心率传感器数据。
+取消订阅心率传感器数据。当不再需要接收心率传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 需要权限：ohos.permission.READ_HEALTH_DATA
 
@@ -3418,7 +3478,7 @@ try {
 
 off(type: SensorId.HEART_RATE, sensorInfoParam?: SensorInfoParam, callback?: Callback<HeartRateResponse>): void
 
-取消订阅心率传感器数据。
+取消订阅心率传感器数据。当不再需要接收心率传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 需要权限：ohos.permission.READ_HEALTH_DATA
 
@@ -3429,7 +3489,7 @@ off(type: SensorId.HEART_RATE, sensorInfoParam?: SensorInfoParam, callback?: Cal
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).HEART_RATE | 是 | 传感器类型，该值固定为SensorId.HEART_RATE。 |
-| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId、sensorIndex |
+| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId和sensorIndex，用于取消指定设备上指定传感器的订阅。不传入时默认取消本地设备该类型所有传感器的订阅。 |
 | callback | Callback | 否 | 需要取消订阅的回调函数，若无此参数，则取消订阅当前类型的所有回调函数。 |
 
 错误码：
@@ -3505,7 +3565,7 @@ function sensorUnsubscribe(): Ret {
 
 off(type: SensorId.HUMIDITY, callback?: Callback<HumidityResponse>): void
 
-取消订阅湿度传感器数据。
+取消订阅湿度传感器数据。当不再需要接收湿度传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -3556,7 +3616,7 @@ try {
 
 off(type: SensorId.HUMIDITY, sensorInfoParam?: SensorInfoParam, callback?: Callback<HumidityResponse>): void
 
-取消订阅湿度传感器数据。
+取消订阅湿度传感器数据。当不再需要接收湿度传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -3565,7 +3625,7 @@ off(type: SensorId.HUMIDITY, sensorInfoParam?: SensorInfoParam, callback?: Callb
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).HUMIDITY | 是 | 传感器类型，该值固定为SensorId.HUMIDITY。 |
-| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId、sensorIndex |
+| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId和sensorIndex，用于取消指定设备上指定传感器的订阅。不传入时默认取消本地设备该类型所有传感器的订阅。 |
 | callback | Callback | 否 | 需要取消订阅的回调函数，若无此参数，则取消订阅当前类型的所有回调函数。 |
 
 错误码：
@@ -3640,7 +3700,7 @@ function sensorUnsubscribe(): Ret {
 
 off(type: SensorId.LINEAR_ACCELEROMETER, callback?: Callback<LinearAccelerometerResponse>): void
 
-取消订阅线性加速度传感器数据。
+取消订阅线性加速度传感器数据。当不再需要接收线性加速度传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 需要权限：ohos.permission.ACCELEROMETER
 
@@ -3650,7 +3710,7 @@ off(type: SensorId.LINEAR_ACCELEROMETER, callback?: Callback<LinearAccelerometer
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | [SensorId](#sensorid9).LINEAR_ACCELEROMETER | 是 | 传感器类型，该值固定为SensorId.LINEAR_ACCELERATION。 |
+| type | [SensorId](#sensorid9).LINEAR_ACCELEROMETER | 是 | 传感器类型，该值固定为SensorId.LINEAR_ACCELEROMETER。 |
 | callback | Callback | 否 | 需要取消订阅的回调函数，若无此参数，则取消订阅当前类型的所有回调函数。 |
 
 错误码：
@@ -3694,7 +3754,7 @@ try {
 
 off(type: SensorId.LINEAR_ACCELEROMETER, sensorInfoParam?: SensorInfoParam, callback?: Callback<LinearAccelerometerResponse>): void
 
-取消订阅线性加速度传感器数据。
+取消订阅线性加速度传感器数据。当不再需要接收线性加速度传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 需要权限：ohos.permission.ACCELEROMETER
 
@@ -3705,7 +3765,7 @@ off(type: SensorId.LINEAR_ACCELEROMETER, sensorInfoParam?: SensorInfoParam, call
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).LINEAR_ACCELEROMETER | 是 | 传感器类型，该值固定为SensorId.LINEAR_ACCELERATION。 |
-| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId、sensorIndex |
+| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId和sensorIndex，用于取消指定设备上指定传感器的订阅。不传入时默认取消本地设备该类型所有传感器的订阅。 |
 | callback | Callback | 否 | 需要取消订阅的回调函数，若无此参数，则取消订阅当前类型的所有回调函数。 |
 
 错误码：
@@ -3781,7 +3841,7 @@ function sensorUnsubscribe(): Ret {
 
 off(type: SensorId.MAGNETIC_FIELD, callback?: Callback<MagneticFieldResponse>): void
 
-取消订阅磁场传感器数据。
+取消订阅磁场传感器数据。当不再需要接收磁场传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -3832,7 +3892,7 @@ try {
 
 off(type: SensorId.MAGNETIC_FIELD, sensorInfoParam?: SensorInfoParam, callback?: Callback<MagneticFieldResponse>): void
 
-取消订阅磁场传感器数据。
+取消订阅磁场传感器数据。当不再需要接收磁场传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -3841,7 +3901,7 @@ off(type: SensorId.MAGNETIC_FIELD, sensorInfoParam?: SensorInfoParam, callback?:
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).MAGNETIC_FIELD | 是 | 传感器类型，该值固定为SensorId.MAGNETIC_FIELD。 |
-| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId、sensorIndex |
+| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId和sensorIndex，用于取消指定设备上指定传感器的订阅。不传入时默认取消本地设备该类型所有传感器的订阅。 |
 | callback | Callback | 否 | 需要取消订阅的回调函数，若无此参数，则取消订阅当前类型的所有回调函数。 |
 
 错误码：
@@ -3916,7 +3976,7 @@ function sensorUnsubscribe(): Ret {
 
 off(type: SensorId.MAGNETIC_FIELD_UNCALIBRATED, callback?: Callback<MagneticFieldUncalibratedResponse>): void
 
-取消订阅未校准的磁场传感器数据。
+取消订阅未校准的磁场传感器数据。当不再需要接收未校准磁场传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -3967,7 +4027,7 @@ try {
 
 off(type: SensorId.MAGNETIC_FIELD_UNCALIBRATED, sensorInfoParam?: SensorInfoParam, callback?: Callback<MagneticFieldUncalibratedResponse>): void
 
-取消订阅未校准的磁场传感器数据。
+取消订阅未校准的磁场传感器数据。当不再需要接收未校准磁场传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -3976,7 +4036,7 @@ off(type: SensorId.MAGNETIC_FIELD_UNCALIBRATED, sensorInfoParam?: SensorInfoPara
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).MAGNETIC_FIELD_UNCALIBRATED | 是 | 传感器类型，该值固定为SensorId.MAGNETIC_FIELD_UNCALIBRATED。 |
-| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId、sensorIndex |
+| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId和sensorIndex，用于取消指定设备上指定传感器的订阅。不传入时默认取消本地设备该类型所有传感器的订阅。 |
 | callback | Callback | 否 | 需要取消订阅的回调函数，若无此参数，则取消订阅当前类型的所有回调函数。 |
 
 错误码：
@@ -4051,7 +4111,7 @@ function sensorUnsubscribe(): Ret {
 
 off(type: SensorId.ORIENTATION, callback?: Callback<OrientationResponse>): void
 
-取消订阅方向传感器数据。
+取消订阅方向传感器数据。当不再需要接收方向传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 元服务API：从API version 11开始，该接口支持在元服务中使用。
 
@@ -4104,7 +4164,7 @@ try {
 
 off(type: SensorId.ORIENTATION, sensorInfoParam?: SensorInfoParam, callback?: Callback<OrientationResponse>): void
 
-取消订阅方向传感器数据。
+取消订阅方向传感器数据。当不再需要接收方向传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 元服务API：从API version 19开始，该接口支持在元服务中使用。
 
@@ -4115,7 +4175,7 @@ off(type: SensorId.ORIENTATION, sensorInfoParam?: SensorInfoParam, callback?: Ca
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).ORIENTATION | 是 | 传感器类型，该值固定为SensorId.ORIENTATION。 |
-| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId、sensorIndex |
+| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId和sensorIndex，用于取消指定设备上指定传感器的订阅。不传入时默认取消本地设备该类型所有传感器的订阅。 |
 | callback | Callback | 否 | 需要取消订阅的回调函数，若无此参数，则取消订阅当前类型的所有回调函数。 |
 
 错误码：
@@ -4190,7 +4250,7 @@ function sensorUnsubscribe(): Ret {
 
 off(type: SensorId.PEDOMETER, callback?: Callback<PedometerResponse>): void
 
-取消订阅计步器传感器数据。
+取消订阅计步器传感器数据。当不再需要接收计步器传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 需要权限：ohos.permission.ACTIVITY_MOTION
 
@@ -4244,7 +4304,7 @@ try {
 
 off(type: SensorId.PEDOMETER, sensorInfoParam?: SensorInfoParam, callback?: Callback<PedometerResponse>): void
 
-取消订阅计步器传感器数据。
+取消订阅计步器传感器数据。当不再需要接收计步器传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 需要权限：ohos.permission.ACTIVITY_MOTION
 
@@ -4255,7 +4315,7 @@ off(type: SensorId.PEDOMETER, sensorInfoParam?: SensorInfoParam, callback?: Call
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).PEDOMETER | 是 | 传感器类型，该值固定为SensorId.PEDOMETER。 |
-| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId、sensorIndex |
+| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId和sensorIndex，用于取消指定设备上指定传感器的订阅。不传入时默认取消本地设备该类型所有传感器的订阅。 |
 | callback | Callback | 否 | 需要取消订阅的回调函数，若无此参数，则取消订阅当前类型的所有回调函数。 |
 
 错误码：
@@ -4331,7 +4391,7 @@ function sensorUnsubscribe(): Ret {
 
 off(type: SensorId.PEDOMETER_DETECTION, callback?: Callback<PedometerDetectionResponse>): void
 
-取消订阅计步检测器传感器数据。
+取消订阅计步检测器传感器数据。当不再需要接收计步检测器传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 需要权限：ohos.permission.ACTIVITY_MOTION
 
@@ -4385,7 +4445,7 @@ try {
 
 off(type: SensorId.PEDOMETER_DETECTION, sensorInfoParam?: SensorInfoParam, callback?: Callback<PedometerDetectionResponse>): void
 
-取消订阅计步检测器传感器数据。
+取消订阅计步检测器传感器数据。当不再需要接收计步检测器传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 需要权限：ohos.permission.ACTIVITY_MOTION
 
@@ -4396,12 +4456,12 @@ off(type: SensorId.PEDOMETER_DETECTION, sensorInfoParam?: SensorInfoParam, callb
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).PEDOMETER_DETECTION | 是 | 传感器类型，该值固定为SensorId.PEDOMETER_DETECTION。 |
-| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId、sensorIndex |
+| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId和sensorIndex，用于取消指定设备上指定传感器的订阅。不传入时默认取消本地设备该类型所有传感器的订阅。 |
 | callback | Callback | 否 | 需要取消订阅的回调函数，若无此参数，则取消订阅当前类型的所有回调函数。 |
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。错误码和错误信息会以异常的形式抛出，调用接口时需要使用try catch对可能出现的异常进行捕获操作。
+以下错误码的详细介绍请参见[传感器错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-sensor)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。错误码和错误信息会以异常的形式抛出，调用接口时需要使用try catch对可能出现的异常进行捕获操作。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -4472,7 +4532,7 @@ function sensorUnsubscribe(): Ret {
 
 off(type: SensorId.PROXIMITY, callback?: Callback<ProximityResponse>): void
 
-取消订阅接近光传感器数据。
+取消订阅接近光传感器数据。当不再需要接收接近光传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -4523,7 +4583,7 @@ try {
 
 off(type: SensorId.PROXIMITY, sensorInfoParam?: SensorInfoParam, callback?: Callback<ProximityResponse>): void
 
-取消订阅接近光传感器数据。
+取消订阅接近光传感器数据。当不再需要接收接近光传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -4532,7 +4592,7 @@ off(type: SensorId.PROXIMITY, sensorInfoParam?: SensorInfoParam, callback?: Call
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).PROXIMITY | 是 | 传感器类型，该值固定为SensorId.PROXIMITY。 |
-| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId、sensorIndex |
+| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId和sensorIndex，用于取消指定设备上指定传感器的订阅。不传入时默认取消本地设备该类型所有传感器的订阅。 |
 | callback | Callback | 否 | 需要取消订阅的回调函数，若无此参数，则取消订阅当前类型的所有回调函数。 |
 
 错误码：
@@ -4607,7 +4667,7 @@ function sensorUnsubscribe(): Ret {
 
 off(type: SensorId.ROTATION_VECTOR, callback?: Callback<RotationVectorResponse>): void
 
-取消订阅旋转矢量传感器数据。
+取消订阅旋转矢量传感器数据。当不再需要接收旋转矢量传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -4658,7 +4718,7 @@ try {
 
 off(type: SensorId.ROTATION_VECTOR, sensorInfoParam?: SensorInfoParam, callback?: Callback<RotationVectorResponse>): void
 
-取消订阅旋转矢量传感器数据。
+取消订阅旋转矢量传感器数据。当不再需要接收旋转矢量传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -4667,7 +4727,7 @@ off(type: SensorId.ROTATION_VECTOR, sensorInfoParam?: SensorInfoParam, callback?
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).ROTATION_VECTOR | 是 | 传感器类型，该值固定为SensorId.ROTATION_VECTOR。 |
-| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId、sensorIndex |
+| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId和sensorIndex，用于取消指定设备上指定传感器的订阅。不传入时默认取消本地设备该类型所有传感器的订阅。 |
 | callback | Callback | 否 | 需要取消订阅的回调函数，若无此参数，则取消订阅当前类型的所有回调函数。 |
 
 错误码：
@@ -4742,7 +4802,7 @@ function sensorUnsubscribe(): Ret {
 
 off(type: SensorId.SIGNIFICANT_MOTION, callback?: Callback<SignificantMotionResponse>): void
 
-取消订阅有效运动传感器数据。
+取消订阅有效运动传感器数据。当不再需要接收有效运动传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -4793,16 +4853,16 @@ try {
 
 off(type: SensorId.SIGNIFICANT_MOTION, sensorInfoParam?: SensorInfoParam, callback?: Callback<SignificantMotionResponse>): void
 
-取消订阅有效运动传感器数据。
+取消订阅有效运动传感器数据。当不再需要接收有效运动传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
-系统能力:SystemCapability.Sensors.Sensor
+系统能力：SystemCapability.Sensors.Sensor
 
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).SIGNIFICANT_MOTION | 是 | 传感器类型，该值固定为SensorId.SIGNIFICANT_MOTION。 |
-| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId、sensorIndex |
+| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId和sensorIndex，用于取消指定设备上指定传感器的订阅。不传入时默认取消本地设备该类型所有传感器的订阅。 |
 | callback | Callback | 否 | 需要取消订阅的回调函数，若无此参数，则取消订阅当前类型的所有回调函数。 |
 
 错误码：
@@ -4877,7 +4937,7 @@ function sensorUnsubscribe(): Ret {
 
 off(type: SensorId.WEAR_DETECTION, callback?: Callback<WearDetectionResponse>): void
 
-取消订阅佩戴检测传感器数据。
+取消订阅佩戴检测传感器数据。当不再需要接收佩戴检测传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -4885,7 +4945,7 @@ off(type: SensorId.WEAR_DETECTION, callback?: Callback<WearDetectionResponse>): 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | [SensorId](#sensorid9) | 是 | 传感器类型，该值固定为[SensorId](#sensorid9).WEAR_DETECTION。 |
+| type | [SensorId](#sensorid9).WEAR_DETECTION | 是 | 传感器类型，该值固定为[SensorId](#sensorid9).WEAR_DETECTION。 |
 | callback | Callback | 否 | 需要取消订阅的回调函数，若无此参数，则取消订阅当前类型的所有回调函数。 |
 
 错误码：
@@ -4928,7 +4988,7 @@ try {
 
 off(type: SensorId.WEAR_DETECTION, sensorInfoParam?: SensorInfoParam, callback?: Callback<WearDetectionResponse>): void
 
-取消订阅佩戴检测传感器数据。
+取消订阅佩戴检测传感器数据。当不再需要接收佩戴检测传感器数据时调用此接口取消订阅。off取消订阅必须与on订阅成对出现。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -4937,7 +4997,7 @@ off(type: SensorId.WEAR_DETECTION, sensorInfoParam?: SensorInfoParam, callback?:
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | [SensorId](#sensorid9).WEAR_DETECTION | 是 | 传感器类型，该值固定为SensorId.WEAR_DETECTION。 |
-| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId、sensorIndex |
+| sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId和sensorIndex，用于取消指定设备上指定传感器的订阅。不传入时默认取消本地设备该类型所有传感器的订阅。 |
 | callback | Callback | 否 | 需要取消订阅的回调函数，若无此参数，则取消订阅当前类型的所有回调函数。 |
 
 错误码：
@@ -5012,7 +5072,7 @@ function sensorUnsubscribe(): Ret {
 
 off(type: 'sensorStatusChange', callback?: Callback<SensorStatusEvent>): void
 
-取消监听传感器变化。
+取消监听传感器上线下线状态的变化。当不再需要感知传感器上下线状态时调用此接口取消监听。off取消监听必须与on监听成对出现。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -5025,7 +5085,7 @@ off(type: 'sensorStatusChange', callback?: Callback<SensorStatusEvent>): void
 
 错误码：
 
-以下错误码的详细介绍请参见[传感器错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-sensor)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。错误码和错误信息会以异常的形式抛出，调用接口时需要使用try catch对可能出现的异常进行捕获操作。
+以下错误码的详细介绍请参见[传感器错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-sensor)。错误码和错误信息会以异常的形式抛出，调用接口时需要使用try catch对可能出现的异常进行捕获操作。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -5153,7 +5213,7 @@ getGeomagneticInfo(locationOptions: LocationOptions, timeMillis: number, callbac
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | locationOptions | [LocationOptions](#locationoptions) | 是 | 地理位置，包括经度、纬度和海拔高度。 |
-| timeMillis | number | 是 | 获取磁偏角的时间，unix时间戳，单位毫秒。 |
+| timeMillis | number | 是 | 获取磁偏角的时间，unix时间戳。单位：ms（毫秒）。取值范围：正整数。 |
 | callback | AsyncCallback | 是 | 回调函数，异步返回地磁场信息。 |
 
 错误码：
@@ -5206,7 +5266,7 @@ getGeomagneticInfo(locationOptions: LocationOptions, timeMillis: number): Promis
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | locationOptions | [LocationOptions](#locationoptions) | 是 | 地理位置，包括经度、纬度和海拔高度。 |
-| timeMillis | number | 是 | 获取磁偏角的时间，unix时间戳，单位毫秒。 |
+| timeMillis | number | 是 | 获取磁偏角的时间，unix时间戳。单位：ms（毫秒）。取值范围：正整数。 |
 
 返回值：
 
@@ -5861,7 +5921,7 @@ getQuaternion(rotationVector: Array<number>): Promise<Array<number>>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise> | Promise，使用异步方式对象返归一化回四元数。 |
+| Promise> | Promise对象，使用异步方式返回归一化四元数。 |
 
 错误码：
 
@@ -6073,7 +6133,7 @@ getRotationMatrix(gravity: Array<number>, geomagnetic: Array<number>): Promise<R
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，使用异步方式返回旋转矩阵。 |
+| Promise | Promise对象，使用异步方式返回旋转矩阵。RotationMatrixResponse对象包含设备的旋转矩阵和倾斜矩阵，可用于计算设备的姿态和方向信息。 |
 
 错误码：
 
@@ -6164,7 +6224,7 @@ getSensorList(): Promise<Array<Sensor>>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise> | Promise对象，使用异步方式返回传感器属性列表。 |
+| Promise> | Promise对象，使用异步方式返回传感器属性列表。每个Sensor对象包含传感器的类型ID、名称、版本、厂商、最大范围、分辨率、功率等属性信息。 |
 
 错误码：
 
@@ -6259,7 +6319,7 @@ getSingleSensor(type: SensorId, callback: AsyncCallback<Sensor>): void
 | --- | --- |
 | 401 | Parameter error.Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | 14500101 | Service exception.Possible causes:1. Sensor hdf service exception;2. Sensor service ipc exception;3.Sensor data channel exception. |
-| 14500102 | The sensor is not supported by the device. |
+| 14500102 | The sensor is not supported by the device. [since 12] |
 
 示例：
 
@@ -6318,7 +6378,7 @@ getSingleSensor(type: SensorId): Promise<Sensor>
 | --- | --- |
 | 401 | Parameter error.Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | 14500101 | Service exception.Possible causes:1. Sensor hdf service exception;2. Sensor service ipc exception;3.Sensor data channel exception. |
-| 14500102 | The sensor is not supported by the device. |
+| 14500102 | The sensor is not supported by the device. [since 12] |
 
 示例：
 
@@ -6393,28 +6453,28 @@ try {
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| ACCELEROMETER | 1 | 加速度传感器。 **元服务API**：从API version 11开始，该接口支持在元服务中使用。 |
-| GYROSCOPE | 2 | 陀螺仪传感器。 **元服务API**：从API version 11开始，该接口支持在元服务中使用。 |
-| AMBIENT_LIGHT | 5 | 环境光传感器。 |
-| MAGNETIC_FIELD | 6 | 磁场传感器。 |
-| BAROMETER | 8 | 气压计传感器。 |
-| HALL | 10 | 霍尔传感器。 |
-| PROXIMITY | 12 | 接近光传感器。 |
-| HUMIDITY | 13 | 湿度传感器。 |
-| ORIENTATION | 256 | 方向传感器。 **元服务API**：从API version 11开始，该接口在支持元服务中使用。 |
-| GRAVITY | 257 | 重力传感器。 |
-| LINEAR_ACCELEROMETER | 258 | 线性加速度传感器。 |
-| ROTATION_VECTOR | 259 | 旋转矢量传感器。 |
-| AMBIENT_TEMPERATURE | 260 | 环境温度传感器。 |
-| MAGNETIC_FIELD_UNCALIBRATED | 261 | 未校准磁场传感器。 |
-| GYROSCOPE_UNCALIBRATED | 263 | 未校准陀螺仪传感器。 |
-| SIGNIFICANT_MOTION | 264 | 有效运动传感器。 |
-| PEDOMETER_DETECTION | 265 | 计步检测传感器。 |
-| PEDOMETER | 266 | 计步传感器。 |
-| HEART_RATE | 278 | 心率传感器。 |
-| WEAR_DETECTION | 280 | 佩戴检测传感器。 |
-| ACCELEROMETER_UNCALIBRATED | 281 | 未校准加速度传感器。 |
-| FUSION_PRESSURE22+ | 283 | 融合压力传感器。 仅智能表有该传感器 |
+| ACCELEROMETER | 1 | 加速度传感器类型，用于测量设备的加速度。 **元服务API**：从API version 11开始，该接口支持在元服务中使用。 |
+| GYROSCOPE | 2 | 陀螺仪传感器类型，用于测量设备的旋转角速度。 **元服务API**：从API version 11开始，该接口支持在元服务中使用。 |
+| AMBIENT_LIGHT | 5 | 环境光传感器类型，用于测量环境光照强度。 |
+| MAGNETIC_FIELD | 6 | 磁场传感器类型，用于测量设备周围的环境磁场强度。 |
+| BAROMETER | 8 | 气压计传感器类型，用于测量大气压力。 |
+| HALL | 10 | 霍尔传感器类型，用于检测设备周围是否存在磁力吸引。 |
+| PROXIMITY | 12 | 接近光传感器类型，用于检测物体与设备显示器的接近程度。 |
+| HUMIDITY | 13 | 湿度传感器类型，用于测量环境的相对湿度。 |
+| ORIENTATION | 256 | 方向传感器类型，用于测量设备的旋转方向角度。 **元服务API**：从API version 11开始，该接口在支持元服务中使用。 |
+| GRAVITY | 257 | 重力传感器类型，用于测量设备的重力加速度。 |
+| LINEAR_ACCELEROMETER | 258 | 线性加速度传感器类型，用于测量设备排除重力后的线性加速度。 |
+| ROTATION_VECTOR | 259 | 旋转矢量传感器类型，用于描述设备相对于参考方向的旋转状态。 |
+| AMBIENT_TEMPERATURE | 260 | 环境温度传感器类型，用于测量环境的温度。 |
+| MAGNETIC_FIELD_UNCALIBRATED | 261 | 未校准磁场传感器类型，用于测量未校准的环境磁场强度及其偏量。 |
+| GYROSCOPE_UNCALIBRATED | 263 | 未校准陀螺仪传感器类型，用于测量未校准的设备旋转角速度及其偏量。 |
+| SIGNIFICANT_MOTION | 264 | 有效运动传感器类型，用于检测设备是否存在大幅度运动。 |
+| PEDOMETER_DETECTION | 265 | 计步检测传感器类型，用于检测用户的计步动作。 |
+| PEDOMETER | 266 | 计步传感器类型，用于统计用户的行走步数。 |
+| HEART_RATE | 278 | 心率传感器类型，用于测量用户的心率数值。 |
+| WEAR_DETECTION | 280 | 佩戴检测传感器类型，用于检测设备是否被佩戴。 |
+| ACCELEROMETER_UNCALIBRATED | 281 | 未校准加速度传感器类型，用于测量未校准的设备加速度及其偏量。 |
+| FUSION_PRESSURE22+ | 283 | 融合压力传感器类型，用于测量融合压力值。仅智能表有该传感器。 |
 
 #### SensorInfoParam19+
 
@@ -6426,27 +6486,27 @@ try {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| deviceId | number | 否 | 是 | 设备ID：默认值为-1，表示本地设备，设备ID需通过[getSensorList](#sensorgetsensorlist9)查询或者监听设备上下线接口[sensorStatusChange](#sensoronsensorstatuschange19)获取。 |
-| sensorIndex | number | 否 | 是 | 传感器索引：默认值为0，为设备上的默认传感器，其它传感器ID需通过[getSensorList](#sensorgetsensorlist9)查询或者监听设备上下线接口[sensorStatusChange](#sensoronsensorstatuschange19)获取。 |
+| deviceId | number | 否 | 是 | 指定目标传感器所属设备的ID。默认值：-1（表示本地设备）。可通过[sensor.on('sensorStatusChange')](#sensoronsensorstatuschange19)或[getSensorList](#sensorgetsensorlist9)获取远程设备ID。 |
+| sensorIndex | number | 否 | 是 | 指定目标传感器的索引，同一类型传感器可能有多个实例。默认值：0（表示设备上的默认传感器）。其它传感器索引需通过[getSensorList](#sensorgetsensorlist9)或[sensor.on('sensorStatusChange')](#sensoronsensorstatuschange19)获取。 |
 
 #### SensorStatusEvent19+
 
-设备状态变化事件数据。
+设备状态变化事件数据，用于描述传感器上下线事件的信息。
 
 系统能力：SystemCapability.Sensors.Sensor
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| timestamp | number | 否 | 否 | 事件发生的时间戳，单位ms。 |
-| sensorId | number | 否 | 否 | 传感器ID。 |
-| sensorIndex | number | 否 | 否 | 传感器索引。 |
-| isSensorOnline | boolean | 否 | 否 | 传感器上线或者下线，true为上线，false为下线。 |
-| deviceId | number | 否 | 否 | 设备ID。 |
-| deviceName | string | 否 | 否 | 设备名称。 |
+| timestamp | number | 否 | 否 | 事件发生的时间戳。从设备开机开始计时到事件发生的时间。单位：ms（毫秒）。 |
+| sensorId | number | 否 | 否 | 传感器类型ID，对应[SensorId](#sensorid9)枚举值。 |
+| sensorIndex | number | 否 | 否 | 传感器索引，同一类型传感器可能有多个实例，通过sensorIndex区分。 |
+| isSensorOnline | boolean | 否 | 否 | 传感器是否上线。true表示传感器上线，false表示传感器下线。 |
+| deviceId | number | 否 | 否 | 设备ID。-1表示本地设备，其它值表示远程设备。 |
+| deviceName | string | 否 | 否 | 设备名称，标识传感器的来源设备。 |
 
 #### SensorAccuracy11+
 
-传感器数据的精度。
+传感器数据的精度挡位。
 
 元服务API：从API version 11开始，该接口支持在元服务中使用。
 
@@ -6454,14 +6514,14 @@ try {
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| ACCURACY_UNRELIABLE | 0 | 传感器数据不可信。 |
-| ACCURACY_LOW | 1 | 传感器低挡位精度。 |
-| ACCURACY_MEDIUM | 2 | 传感器中挡位精度。 |
-| ACCURACY_HIGH | 3 | 传感器高挡位精度。 |
+| ACCURACY_UNRELIABLE | 0 | 传感器数据不可信，精度挡位最低，数据可靠性无法保证。 |
+| ACCURACY_LOW | 1 | 传感器低挡位精度，数据精度较低，仅适用于粗略估算场景。 |
+| ACCURACY_MEDIUM | 2 | 传感器中挡位精度，数据精度中等，适用于一般应用场景。 |
+| ACCURACY_HIGH | 3 | 传感器高挡位精度，数据精度较高，适用于对精度要求严格的场景。 |
 
 #### Response
 
-传感器数据的时间戳。
+传感器数据的时间戳与精度信息基类，所有传感器Response类型均继承于此。
 
 元服务API：从API version 11开始，该接口支持在元服务中使用。
 
@@ -6469,8 +6529,8 @@ try {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| timestamp | number | 否 | 否 | 传感器数据上报的时间戳。从设备开机开始计时到上报数据的时间，单位 : ns。 |
-| accuracy11+ | [SensorAccuracy](#sensoraccuracy11)11+ | 否 | 否 | 传感器数据上报的精度挡位值。 |
+| timestamp | number | 否 | 否 | 传感器数据上报的时间戳。从设备开机开始计时到上报数据的时间，单位：ns（纳秒）。 |
+| accuracy11+ | [SensorAccuracy](#sensoraccuracy11)11+ | 否 | 否 | 传感器数据上报的精度挡位值，表示当前上报数据的可信程度。 |
 
 #### Sensor9+
 
@@ -6480,21 +6540,21 @@ try {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| sensorName | string | 否 | 否 | 传感器名称。 |
-| vendorName | string | 否 | 否 | 传感器供应商。 |
-| firmwareVersion | string | 否 | 否 | 传感器固件版本。 |
-| hardwareVersion | string | 否 | 否 | 传感器硬件版本。 |
-| sensorId | number | 否 | 否 | 传感器类型id。 |
-| maxRange | number | 否 | 否 | 传感器测量范围的最大值。 |
-| minSamplePeriod | number | 否 | 否 | 允许的最小采样周期。 |
-| maxSamplePeriod | number | 否 | 否 | 允许的最大采样周期。 |
-| precision | number | 否 | 否 | 传感器精度。 |
-| power | number | 否 | 否 | 传感器功率的估计值，单位：mA。 |
-| sensorIndex19+ | number | 否 | 是 | 传感器索引。 |
-| deviceId19+ | number | 否 | 是 | 设备ID。 |
-| deviceName19+ | string | 否 | 是 | 设备名称。 |
-| isLocalSensor19+ | boolean | 否 | 是 | 是否本地传感器，true为本地传感器，false为非本地传感器。 |
-| isMockSensor23+ | boolean | 否 | 是 | 是否mock传感器，true为mock传感器，false为非mock传感器。 |
+| sensorName | string | 否 | 否 | 传感器名称，标识传感器的类型和型号。 |
+| vendorName | string | 否 | 否 | 传感器厂商名称，标识传感器的制造商。 |
+| firmwareVersion | string | 否 | 否 | 传感器固件版本号，标识传感器固件的当前版本。 |
+| hardwareVersion | string | 否 | 否 | 传感器硬件版本号，标识传感器硬件的当前版本。 |
+| sensorId | number | 否 | 否 | 传感器类型ID，对应[SensorId](#sensorid9)枚举值。 |
+| maxRange | number | 否 | 否 | 传感器最大测量范围。单位：取决于具体传感器类型（如加速度传感器为m/s²）。 |
+| minSamplePeriod | number | 否 | 否 | 传感器最小采样周期。单位：ns（纳秒）。 |
+| maxSamplePeriod | number | 否 | 否 | 传感器最大采样周期。单位：ns（纳秒）。 |
+| precision | number | 否 | 否 | 传感器精度。单位：取决于具体传感器类型。 |
+| power | number | 否 | 否 | 传感器估计功耗。单位：mA（毫安）。 |
+| sensorIndex19+ | number | 否 | 是 | 传感器索引，同一类型传感器可能有多个实例，通过sensorIndex区分。默认值：0。 |
+| deviceId19+ | number | 否 | 是 | 设备ID，-1表示本地设备。默认值：-1。 |
+| deviceName19+ | string | 否 | 是 | 设备名称，标识传感器的来源设备。 |
+| isLocalSensor19+ | boolean | 否 | 是 | 是否为本地传感器。true表示本地传感器，false表示非本地传感器（即远程设备上的传感器）。默认值：true。 |
+| isMockSensor23+ | boolean | 否 | 是 | 是否为模拟传感器。true表示模拟传感器，false表示真实传感器。默认值：false。 |
 
 #### AccelerometerResponse
 
@@ -6506,9 +6566,9 @@ try {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| x | number | 否 | 否 | 施加在设备x轴的加速度，单位 : m/s²；取值为实际上报物理量。 |
-| y | number | 否 | 否 | 施加在设备y轴的加速度，单位 : m/s²；取值为实际上报物理量。 |
-| z | number | 否 | 否 | 施加在设备z轴的加速度，单位 : m/s²；取值为实际上报物理量。 |
+| x | number | 否 | 否 | 施加在设备x轴方向的加速度。单位：m/s²；取值为实际上报物理量。 |
+| y | number | 否 | 否 | 施加在设备y轴方向的加速度。单位：m/s²；取值为实际上报物理量。 |
+| z | number | 否 | 否 | 施加在设备z轴方向的加速度。单位：m/s²；取值为实际上报物理量。 |
 
 #### LinearAccelerometerResponse
 
@@ -6518,9 +6578,9 @@ try {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| x | number | 否 | 否 | 施加在设备x轴的线性加速度，单位 : m/s²。 |
-| y | number | 否 | 否 | 施加在设备y轴的线性加速度，单位 : m/s²。 |
-| z | number | 否 | 否 | 施加在设备z轴的线性加速度，单位 : m/s²。 |
+| x | number | 否 | 否 | 施加在设备x轴方向的线性加速度（排除重力分量）。单位：m/s²。 |
+| y | number | 否 | 否 | 施加在设备y轴方向的线性加速度（排除重力分量）。单位：m/s²。 |
+| z | number | 否 | 否 | 施加在设备z轴方向的线性加速度（排除重力分量）。单位：m/s²。 |
 
 #### AccelerometerUncalibratedResponse
 
@@ -6530,12 +6590,12 @@ try {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| x | number | 否 | 否 | 施加在设备x轴未校准的加速度，单位 : m/s²。 |
-| y | number | 否 | 否 | 施加在设备y轴未校准的加速度，单位 : m/s²。 |
-| z | number | 否 | 否 | 施加在设备z轴未校准的加速度，单位 : m/s²。 |
-| biasX | number | 否 | 否 | 施加在设备x轴未校准的加速度偏量，单位 : m/s²。 |
-| biasY | number | 否 | 否 | 施加在设备y轴未校准的加速度偏量，单位 : m/s²。 |
-| biasZ | number | 否 | 否 | 施加在设备z轴未校准的加速度偏量，单位 : m/s²。 |
+| x | number | 否 | 否 | 施加在设备x轴方向未校准的加速度。单位：m/s²。 |
+| y | number | 否 | 否 | 施加在设备y轴方向未校准的加速度。单位：m/s²。 |
+| z | number | 否 | 否 | 施加在设备z轴方向未校准的加速度。单位：m/s²。 |
+| biasX | number | 否 | 否 | 施加在设备x轴方向未校准的加速度偏量（估计的加速度偏差）。单位：m/s²。 |
+| biasY | number | 否 | 否 | 施加在设备y轴方向未校准的加速度偏量（估计的加速度偏差）。单位：m/s²。 |
+| biasZ | number | 否 | 否 | 施加在设备z轴方向未校准的加速度偏量（估计的加速度偏差）。单位：m/s²。 |
 
 #### FusionPressureResponse22+
 
@@ -6545,7 +6605,7 @@ try {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| fusionPressure | number | 否 | 否 | 施加在融合压力传感器上的压力值百分比，单位 : % |
+| fusionPressure | number | 否 | 否 | 融合压力值，表示施加在融合压力传感器上的压力值百分比。单位：%（百分比）。 |
 
 #### GravityResponse
 
@@ -6555,9 +6615,9 @@ try {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| x | number | 否 | 否 | 施加在设备x轴的重力加速度，单位 : m/s²。 |
-| y | number | 否 | 否 | 施加在设备y轴的重力加速度，单位 : m/s²。 |
-| z | number | 否 | 否 | 施加在设备z轴的重力加速度，单位 : m/s²。 |
+| x | number | 否 | 否 | 施加在设备x轴方向的重力加速度。单位：m/s²。 |
+| y | number | 否 | 否 | 施加在设备y轴方向的重力加速度。单位：m/s²。 |
+| z | number | 否 | 否 | 施加在设备z轴方向的重力加速度。单位：m/s²。 |
 
 #### OrientationResponse
 
@@ -6569,9 +6629,9 @@ try {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| alpha | number | 否 | 否 | 设备围绕Z轴的旋转角度，单位：度；取值范围为0-360度。 |
-| beta | number | 否 | 否 | 设备围绕X轴的旋转角度，单位：度；取值范围为0-±180度。 |
-| gamma | number | 否 | 否 | 设备围绕Y轴的旋转角度，单位：度；取值范围为0-±90度。 |
+| alpha | number | 否 | 否 | 设备围绕Z轴的旋转角度，即方位角。单位：degree（度）；取值范围：[0, 360]。 |
+| beta | number | 否 | 否 | 设备围绕X轴的旋转角度，即俯仰角。单位：degree（度）；取值范围：[-180, 180]。 |
+| gamma | number | 否 | 否 | 设备围绕Y轴的旋转角度，即翻转角。单位：degree（度）；取值范围：[-90, 90]。 |
 
 #### RotationVectorResponse
 
@@ -6581,10 +6641,10 @@ try {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| x | number | 否 | 否 | 旋转矢量x轴分量。 |
-| y | number | 否 | 否 | 旋转矢量y轴分量。 |
-| z | number | 否 | 否 | 旋转矢量z轴分量。 |
-| w | number | 否 | 否 | 标量，描述设备相对于某个参考方向的旋转状态，单位：弧度。 |
+| x | number | 否 | 否 | 旋转矢量的x轴分量，表示设备旋转状态在x轴方向的投影。 |
+| y | number | 否 | 否 | 旋转矢量的y轴分量，表示设备旋转状态在y轴方向的投影。 |
+| z | number | 否 | 否 | 旋转矢量的z轴分量，表示设备旋转状态在z轴方向的投影。 |
+| w | number | 否 | 否 | 旋转矢量的标量分量，描述设备相对于某个参考方向的旋转状态。单位：弧度（rad）。 |
 
 #### GyroscopeResponse
 
@@ -6596,9 +6656,9 @@ try {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| x | number | 否 | 否 | 设备x轴的旋转角速度，单位rad/s；取值为实际上报物理量。 |
-| y | number | 否 | 否 | 设备y轴的旋转角速度，单位rad/s；取值为实际上报物理量。 |
-| z | number | 否 | 否 | 设备z轴的旋转角速度，单位rad/s；取值为实际上报物理量。 |
+| x | number | 否 | 否 | 设备x轴方向的旋转角速度。单位：rad/s（弧度/秒）；取值为实际上报物理量。 |
+| y | number | 否 | 否 | 设备y轴方向的旋转角速度。单位：rad/s（弧度/秒）；取值为实际上报物理量。 |
+| z | number | 否 | 否 | 设备z轴方向的旋转角速度。单位：rad/s（弧度/秒）；取值为实际上报物理量。 |
 
 #### GyroscopeUncalibratedResponse
 
@@ -6608,12 +6668,12 @@ try {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| x | number | 否 | 否 | 设备x轴未校准的旋转角速度，单位rad/s。 |
-| y | number | 否 | 否 | 设备y轴未校准的旋转角速度，单位rad/s。 |
-| z | number | 否 | 否 | 设备z轴未校准的旋转角速度，单位rad/s。 |
-| biasX | number | 否 | 否 | 设备x轴未校准的旋转角速度偏量，单位rad/s。 |
-| biasY | number | 否 | 否 | 设备y轴未校准的旋转角速度偏量，单位rad/s。 |
-| biasZ | number | 否 | 否 | 设备z轴未校准的旋转角速度偏量，单位rad/s。 |
+| x | number | 否 | 否 | 设备x轴方向未校准的旋转角速度。单位：rad/s（弧度/秒）。 |
+| y | number | 否 | 否 | 设备y轴方向未校准的旋转角速度。单位：rad/s（弧度/秒）。 |
+| z | number | 否 | 否 | 设备z轴方向未校准的旋转角速度。单位：rad/s（弧度/秒）。 |
+| biasX | number | 否 | 否 | 设备x轴方向未校准的旋转角速度偏量（估计的角速度偏差）。单位：rad/s（弧度/秒）。 |
+| biasY | number | 否 | 否 | 设备y轴方向未校准的旋转角速度偏量（估计的角速度偏差）。单位：rad/s（弧度/秒）。 |
+| biasZ | number | 否 | 否 | 设备z轴方向未校准的旋转角速度偏量（估计的角速度偏差）。单位：rad/s（弧度/秒）。 |
 
 #### SignificantMotionResponse
 
@@ -6623,7 +6683,7 @@ try {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| scalar | number | 否 | 否 | 表示剧烈运动程度。测量三个物理轴（x、y 和 z）上，设备是否存在大幅度运动；若存在大幅度运动则数据上报为1。 |
+| scalar | number | 否 | 否 | 表示剧烈运动程度。取值范围：1（检测到有效运动），表示设备在三个物理轴（x、y和z）上存在大幅度运动时上报为1。 |
 
 #### ProximityResponse
 
@@ -6633,7 +6693,7 @@ try {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| distance | number | 否 | 否 | 可见物体与设备显示器的接近程度。0表示接近，大于0表示远离。 |
+| distance | number | 否 | 否 | 可见物体与设备显示器的接近程度。取值范围：0表示接近（物体靠近设备），大于0表示远离（物体远离设备）。 |
 
 #### LightResponse
 
@@ -6643,9 +6703,9 @@ try {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| intensity | number | 否 | 否 | 光强（单位：勒克斯）。 |
-| colorTemperature12+ | number | 否 | 是 | 色温（单位：开尔文），可选参数，如果该参数不支持则返回固定值（固定值由传感器自定义），支持则返回正常数值。 |
-| infraredLuminance12+ | number | 否 | 是 | 红外亮度（单位：cd/m²），可选参数，如果该参数不支持则返回固定值（固定值由传感器自定义），支持则返回正常数值。 |
+| intensity | number | 否 | 否 | 环境光强度。单位：lux（勒克斯）。 |
+| colorTemperature12+ | number | 否 | 是 | 色温。单位：K（开尔文）。可选参数，如果该参数不支持则返回固定值（固定值由传感器自定义），支持则返回正常数值。 |
+| infraredLuminance12+ | number | 否 | 是 | 红外亮度。单位：cd/m²（坎德拉每平方米）。可选参数，如果该参数不支持则返回固定值（固定值由传感器自定义），支持则返回正常数值。 |
 
 #### HallResponse
 
@@ -6655,7 +6715,7 @@ try {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| status | number | 否 | 否 | 显示霍尔状态。测量设备周围是否存在磁力吸引，0表示没有，大于0表示有。 |
+| status | number | 否 | 否 | 霍尔开关状态，表示设备周围是否存在磁力吸引。取值范围：0（无磁力吸引，霍尔开关断开）或大于0（有磁力吸引，霍尔开关闭合）。 |
 
 #### MagneticFieldResponse
 
@@ -6665,9 +6725,9 @@ try {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| x | number | 否 | 否 | x轴环境磁场强度，单位 : μT。 |
-| y | number | 否 | 否 | y轴环境磁场强度，单位 : μT。 |
-| z | number | 否 | 否 | z轴环境磁场强度，单位 : μT。 |
+| x | number | 否 | 否 | x轴方向的环境磁场强度。单位：μT（微特斯拉）。 |
+| y | number | 否 | 否 | y轴方向的环境磁场强度。单位：μT（微特斯拉）。 |
+| z | number | 否 | 否 | z轴方向的环境磁场强度。单位：μT（微特斯拉）。 |
 
 #### MagneticFieldUncalibratedResponse
 
@@ -6677,12 +6737,12 @@ try {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| x | number | 否 | 否 | x轴未校准环境磁场强度，单位 : μT。 |
-| y | number | 否 | 否 | y轴未校准环境磁场强度，单位 : μT。 |
-| z | number | 否 | 否 | z轴未校准环境磁场强度，单位 : μT。 |
-| biasX | number | 否 | 否 | x轴未校准环境磁场强度偏量，单位 : μT。 |
-| biasY | number | 否 | 否 | y轴未校准环境磁场强度偏量，单位 : μT。 |
-| biasZ | number | 否 | 否 | z轴未校准环境磁场强度偏量，单位 : μT。 |
+| x | number | 否 | 否 | x轴方向未校准的环境磁场强度。单位：μT（微特斯拉）。 |
+| y | number | 否 | 否 | y轴方向未校准的环境磁场强度。单位：μT（微特斯拉）。 |
+| z | number | 否 | 否 | z轴方向未校准的环境磁场强度。单位：μT（微特斯拉）。 |
+| biasX | number | 否 | 否 | x轴方向未校准的环境磁场强度偏量（估计的磁场偏差）。单位：μT（微特斯拉）。 |
+| biasY | number | 否 | 否 | y轴方向未校准的环境磁场强度偏量（估计的磁场偏差）。单位：μT（微特斯拉）。 |
+| biasZ | number | 否 | 否 | z轴方向未校准的环境磁场强度偏量（估计的磁场偏差）。单位：μT（微特斯拉）。 |
 
 #### PedometerResponse
 
@@ -6692,7 +6752,7 @@ try {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| steps | number | 否 | 否 | 用户的行走步数。 |
+| steps | number | 否 | 否 | 用户的行走步数。单位：步。 |
 
 #### HumidityResponse
 
@@ -6702,7 +6762,7 @@ try {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| humidity | number | 否 | 否 | 湿度值。测量环境的相对湿度，以百分比 (%) 表示。 |
+| humidity | number | 否 | 否 | 环境的相对湿度。单位：%（百分比），表示环境的相对湿度百分比。 |
 
 #### PedometerDetectionResponse
 
@@ -6712,7 +6772,7 @@ try {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| scalar | number | 否 | 否 | 计步器检测。检测用户的计步动作，如果取值为1则代表用户产生了计步行走的动作，取值为0则代表用户没有发生运动。 |
+| scalar | number | 否 | 否 | 计步检测标量。取值范围：1（检测到计步事件，表示用户产生了计步行走的动作）或0（未检测到计步事件，表示用户没有发生运动）。 |
 
 #### AmbientTemperatureResponse
 
@@ -6722,7 +6782,7 @@ try {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| temperature | number | 否 | 否 | 环境温度（单位：摄氏度）。 |
+| temperature | number | 否 | 否 | 环境温度。单位：℃（摄氏度）。 |
 
 #### BarometerResponse
 
@@ -6732,7 +6792,7 @@ try {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| pressure | number | 否 | 否 | 压力值（单位：百帕）。 |
+| pressure | number | 否 | 否 | 大气压力值。单位：hPa（百帕）。 |
 
 #### HeartRateResponse
 
@@ -6742,7 +6802,7 @@ try {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| heartRate | number | 否 | 否 | 心率值。测量用户的心率数值，单位：bpm。 |
+| heartRate | number | 否 | 否 | 用户的心率数值。单位：bpm（beats per minute，每分钟心跳次数）。 |
 
 #### WearDetectionResponse
 
@@ -6752,11 +6812,11 @@ try {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| value | number | 否 | 否 | 表示设备是否被穿戴（1表示已穿戴，0表示未穿戴）。 |
+| value | number | 否 | 否 | 设备佩戴状态。取值范围：0（未佩戴）或1（已佩戴）。 |
 
 #### Options
 
-设置传感器上报频率。
+设置传感器上报频率及传感器选择参数。
 
 元服务API：从API version 11开始，该接口支持在元服务中使用。
 
@@ -6764,14 +6824,14 @@ try {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| interval | number|[SensorFrequency](#sensorfrequency11)11+ | 否 | 是 | 表示传感器的上报频率，默认值为200000000ns。该属性有最小值和最大值的限制，由硬件支持的上报频率决定，当设置频率大于最大值时以最大值上报数据，小于最小值时以最小值上报数据。 |
-| sensorInfoParam19+ | [SensorInfoParam](#sensorinfoparam19) | 否 | 是 | 传感器传入设置参数，可指定deviceId、sensorIndex。 **元服务API**：从API version 19开始，该接口支持在元服务中使用。 |
+| interval | number|[SensorFrequency](#sensorfrequency11)11+ | 否 | 是 | 用于设置传感器数据上报的时间间隔。默认值：200000000ns（即200ms）。单位：ns（纳秒）。取值范围需参考各传感器的minSamplePeriod和maxSamplePeriod，可通过[getSingleSensor](#sensorgetsinglesensor9)查询。建议根据实际业务需求设置合理的上报频率，取值越小上报越频繁。当设置频率大于最大值时以最大值上报数据，小于最小值时以最小值上报数据。 |
+| sensorInfoParam19+ | [SensorInfoParam](#sensorinfoparam19) | 否 | 是 | 传感器传入设置参数，可指定deviceId、sensorIndex，用于多传感器场景下选择目标传感器。 **元服务API**：从API version 19开始，该接口支持在元服务中使用。 |
 
 #### SensorFrequency11+
 
 type SensorFrequency = 'game' | 'ui' | 'normal'
 
-传感器上报频率模式。
+传感器上报频率模式，提供预定义的频率档位，方便开发者快速设置常用的上报频率。
 
 元服务API：从API version 11开始，该接口支持在元服务中使用。
 
@@ -6779,65 +6839,65 @@ type SensorFrequency = 'game' | 'ui' | 'normal'
 
 | 类型 | 说明 |
 | --- | --- |
-| 'game' | 用于指定传感器上报频率，频率值为20000000ns，该频率被设置在硬件支持的频率范围内时会生效，值固定为'game'字符串。 |
-| 'ui' | 用于指定传感器上报频率，频率值为60000000ns，该频率被设置在硬件支持的频率范围内时会生效，值固定为'ui'字符串。 |
-| 'normal' | 用于指定传感器上报频率，频率值为200000000ns，该频率被设置在硬件支持的频率范围内时会生效，值固定为'normal'字符串。 |
+| 'game' | 游戏模式，用于指定传感器上报频率。频率值：20000000ns（即20ms），适用于对数据延迟敏感的游戏类应用。该频率被设置在硬件支持的频率范围内时会生效，值固定为'game'字符串。 |
+| 'ui' | UI模式，用于指定传感器上报频率。频率值：60000000ns（即60ms），适用于对数据更新有中等要求的UI交互类应用。该频率被设置在硬件支持的频率范围内时会生效，值固定为'ui'字符串。 |
+| 'normal' | 普通模式，用于指定传感器上报频率。频率值：200000000ns（即200ms），适用于对数据更新频率要求不高的常规应用。该频率被设置在硬件支持的频率范围内时会生效，值固定为'normal'字符串。 |
 
 #### RotationMatrixResponse
 
-设置旋转矩阵响应对象。
+设置旋转矩阵响应对象，用于描述旋转矩阵和倾斜矩阵的计算结果。
 
 系统能力：SystemCapability.Sensors.Sensor
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| rotation | Array | 否 | 否 | 旋转矩阵。 |
-| inclination | Array | 否 | 否 | 倾斜矩阵。 |
+| rotation | Array | 否 | 否 | 旋转矩阵，长度为9的一维数组，表示设备在三维空间中的旋转状态。 |
+| inclination | Array | 否 | 否 | 倾斜矩阵，长度为9的一维数组，表示地磁倾斜变换矩阵。 |
 
 #### CoordinatesOptions
 
-设置坐标选项对象。
+设置坐标选项对象，用于指定坐标系的变换方向。
 
 系统能力：SystemCapability.Sensors.Sensor
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| x | number | 否 | 否 | x坐标方向。 |
-| y | number | 否 | 否 | y坐标方向。 |
+| x | number | 否 | 否 | x坐标方向，用于指定旋转矩阵变换在x轴的方向。 |
+| y | number | 否 | 否 | y坐标方向，用于指定旋转矩阵变换在y轴的方向。 |
 
 #### GeomagneticResponse
 
-设置地磁响应对象。
+设置地磁响应对象，用于描述指定地理位置的地磁场信息。
 
 系统能力：SystemCapability.Sensors.Sensor
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| x | number | 否 | 否 | 地磁场的北分量，单位nT。 |
-| y | number | 否 | 否 | 地磁场的东分量，单位nT。 |
-| z | number | 否 | 否 | 地磁场的垂直分量，单位nT。 |
-| geomagneticDip | number | 否 | 否 | 地磁倾角，即地球磁场线与水平面的夹角，单位度（°）。 |
-| deflectionAngle | number | 否 | 否 | 地磁偏角，即地磁北方向与正北方向在水平面上的角度，单位度（°）。 |
-| levelIntensity | number | 否 | 否 | 地磁场的水平强度，单位nT。 |
-| totalIntensity | number | 否 | 否 | 地磁场的总强度，单位nT。 |
+| x | number | 否 | 否 | 地磁场X方向分量（北分量）。单位：nT（纳特斯拉）。 |
+| y | number | 否 | 否 | 地磁场Y方向分量（东分量）。单位：nT（纳特斯拉）。 |
+| z | number | 否 | 否 | 地磁场Z方向分量（垂直分量）。单位：nT（纳特斯拉）。 |
+| geomagneticDip | number | 否 | 否 | 磁倾角，即地球磁场线与水平面的夹角。单位：degree（度）。 |
+| deflectionAngle | number | 否 | 否 | 磁偏角，即地磁北方向与正北方向在水平面上的角度。单位：degree（度）。 |
+| levelIntensity | number | 否 | 否 | 水平磁场强度，即地磁场在水平面上的总强度。单位：nT（纳特斯拉）。 |
+| totalIntensity | number | 否 | 否 | 总磁场强度，即地磁场三维空间的总强度。单位：nT（纳特斯拉）。 |
 
 #### LocationOptions
 
-指示地理位置。
+指示地理位置，用于传入经纬度和海拔信息以计算地磁场。
 
 系统能力：SystemCapability.Sensors.Sensor
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| latitude | number | 否 | 否 | 纬度，单位度（°）。 |
-| longitude | number | 否 | 否 | 经度，单位度（°）。 |
-| altitude | number | 否 | 否 | 海拔高度，单位m。 |
+| latitude | number | 否 | 否 | 纬度。取值范围：[-90, 90]。单位：degree（度）。 |
+| longitude | number | 否 | 否 | 经度。取值范围：[-180, 180]。单位：degree（度）。 |
+| altitude | number | 否 | 否 | 海拔高度。单位：m（米）。 |
 
 #### sensor.on('SensorType.SENSOR_TYPE_ID_ACCELEROMETER')(deprecated)
 
 on(type: SensorType.SENSOR_TYPE_ID_ACCELEROMETER, callback: Callback<AccelerometerResponse>,options?: Options): void
 
-监听加速度传感器的数据变化。如果多次调用该接口，仅最后一次调用生效。
+监听加速度传感器的数据变化。适用于需要感知设备运动状态、实现屏幕旋转或游戏操控的场景。如果多次调用该接口，仅最后一次调用生效。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.on.ACCELEROMETER](#sensoronsensoridaccelerometer9)替代。
 
@@ -6851,7 +6911,7 @@ on(type: SensorType.SENSOR_TYPE_ID_ACCELEROMETER, callback: Callback<Acceleromet
 | --- | --- | --- | --- |
 | type | [SensorType](#sensortypedeprecated).SENSOR_TYPE_ID_ACCELEROMETER | 是 | 要订阅的加速度传感器类型为SENSOR_TYPE_ID_ACCELEROMETER。 |
 | callback | Callback | 是 | 注册加速度传感器的回调函数，上报的数据类型为AccelerometerResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 示例：
 
@@ -6871,7 +6931,7 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_ACCELEROMETER, (data: sensor.Accelero
 
 on(type: SensorType.SENSOR_TYPE_ID_LINEAR_ACCELERATION,callback:Callback<LinearAccelerometerResponse>, options?: Options): void
 
-监听线性加速度传感器的数据变化。如果多次调用该接口，仅最后一次调用生效。
+监听线性加速度传感器的数据变化。适用于需要获取排除重力影响的线性加速度数据的场景。如果多次调用该接口，仅最后一次调用生效。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.on.LINEAR_ACCELEROMETER](#sensoronsensoridlinear_accelerometer9)替代。
 
@@ -6885,15 +6945,15 @@ on(type: SensorType.SENSOR_TYPE_ID_LINEAR_ACCELERATION,callback:Callback<LinearA
 | --- | --- | --- | --- |
 | type | [SensorType](#sensortypedeprecated).SENSOR_TYPE_ID_LINEAR_ACCELERATION | 是 | 要订阅的线性加速度传感器类型为SENSOR_TYPE_ID_LINEAR_ACCELERATION。 |
 | callback | Callback | 是 | 注册线性加速度传感器的回调函数，上报的数据类型为LinearAccelerometerResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 #### sensor.on('SensorType.SENSOR_TYPE_ID_ACCELEROMETER_UNCALIBRATED')(deprecated)
 
 on(type: SensorType.SENSOR_TYPE_ID_ACCELEROMETER_UNCALIBRATED,callback: Callback<AccelerometerUncalibratedResponse>, options?: Options): void
 
-监听未校准加速度传感器的数据变化。如果多次调用该接口，仅最后一次调用生效。
+监听未校准加速度传感器的数据变化。适用于需要获取包含偏差校准数据的加速度原始数据的场景。如果多次调用该接口，仅最后一次调用生效。
 
-![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.on.ACCELEROMETER_UNCALIBRATED](#sensoronsensoridaccelerometer_uncalibrated9)9+代替。
+![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.on.ACCELEROMETER_UNCALIBRATED](#sensoronsensoridaccelerometer_uncalibrated9)替代。
 
 需要权限：ohos.permission.ACCELEROMETER
 
@@ -6905,7 +6965,7 @@ on(type: SensorType.SENSOR_TYPE_ID_ACCELEROMETER_UNCALIBRATED,callback: Callback
 | --- | --- | --- | --- |
 | type | [SensorType](#sensortypedeprecated).SENSOR_TYPE_ID_ACCELEROMETER_UNCALIBRATED | 是 | 要订阅的未校准加速度传感器类型为SENSOR_TYPE_ID_ACCELEROMETER_UNCALIBRATED。 |
 | callback | Callback | 是 | 注册未校准加速度传感器的回调函数，上报的数据类型为AccelerometerUncalibratedResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 示例：
 
@@ -6928,7 +6988,7 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_ACCELEROMETER_UNCALIBRATED, (data: se
 
 on(type: SensorType.SENSOR_TYPE_ID_GRAVITY, callback: Callback<GravityResponse>,options?: Options): void
 
-监听重力传感器的数据变化。如果多次调用该接口，仅最后一次调用生效。
+监听重力传感器的数据变化。适用于需要感知设备重力方向的场景。如果多次调用该接口，仅最后一次调用生效。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.on.GRAVITY](#sensoronsensoridgravity9)替代。
 
@@ -6940,7 +7000,7 @@ on(type: SensorType.SENSOR_TYPE_ID_GRAVITY, callback: Callback<GravityResponse>,
 | --- | --- | --- | --- |
 | type | [SensorType](#sensortypedeprecated).SENSOR_TYPE_ID_GRAVITY | 是 | 要订阅的重力传感器类型为SENSOR_TYPE_ID_GRAVITY。 |
 | callback | Callback | 是 | 注册重力传感器的回调函数，上报的数据类型为GravityResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 示例：
 
@@ -6960,7 +7020,7 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_GRAVITY, (data: sensor.GravityRespons
 
 on(type: SensorType.SENSOR_TYPE_ID_GYROSCOPE, callback: Callback<GyroscopeResponse>, options?: Options): void
 
-监听陀螺仪传感器的数据变化。如果多次调用该接口，仅最后一次调用生效。
+监听陀螺仪传感器的数据变化。适用于需要感知设备旋转角速度的场景。如果多次调用该接口，仅最后一次调用生效。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.on.GYROSCOPE](#sensoronsensoridgyroscope9)替代。
 
@@ -6974,7 +7034,7 @@ on(type: SensorType.SENSOR_TYPE_ID_GYROSCOPE, callback: Callback<GyroscopeRespon
 | --- | --- | --- | --- |
 | type | [SensorType](#sensortypedeprecated).SENSOR_TYPE_ID_GYROSCOPE | 是 | 要订阅的陀螺仪传感器类型为SENSOR_TYPE_ID_GYROSCOPE。 |
 | callback | Callback | 是 | 注册陀螺仪传感器的回调函数，上报的数据类型为GyroscopeResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 示例：
 
@@ -6994,7 +7054,7 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_GYROSCOPE, (data: sensor.GyroscopeRes
 
 on(type: SensorType.SENSOR_TYPE_ID_GYROSCOPE_UNCALIBRATED,callback:Callback<GyroscopeUncalibratedResponse>, options?: Options): void
 
-监听未校准陀螺仪传感器的数据变化。如果多次调用该接口，仅最后一次调用生效。
+监听未校准陀螺仪传感器的数据变化。适用于需要获取包含偏差校准数据的陀螺仪原始数据的场景。如果多次调用该接口，仅最后一次调用生效。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.on.GYROSCOPE_UNCALIBRATED](#sensoronsensoridgyroscope_uncalibrated9)替代。
 
@@ -7008,7 +7068,7 @@ on(type: SensorType.SENSOR_TYPE_ID_GYROSCOPE_UNCALIBRATED,callback:Callback<Gyro
 | --- | --- | --- | --- |
 | type | [SensorType](#sensortypedeprecated).SENSOR_TYPE_ID_GYROSCOPE_UNCALIBRATED | 是 | 要订阅的未校准陀螺仪传感器类型为SENSOR_TYPE_ID_GYROSCOPE_UNCALIBRATED。 |
 | callback | Callback | 是 | 注册未校准陀螺仪传感器的回调函数，上报的数据类型为GyroscopeUncalibratedResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 示例：
 
@@ -7031,7 +7091,7 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_GYROSCOPE_UNCALIBRATED, (data: sensor
 
 on(type: SensorType.SENSOR_TYPE_ID_SIGNIFICANT_MOTION, callback: Callback<SignificantMotionResponse>, options?: Options): void
 
-监听有效运动传感器数据变化。如果多次调用该接口，仅最后一次调用生效。
+监听有效运动传感器数据变化。适用于需要检测设备是否有显著运动的场景。如果多次调用该接口，仅最后一次调用生效。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.on.SIGNIFICANT_MOTION](#sensoronsensoridsignificant_motion9)替代。
 
@@ -7043,7 +7103,7 @@ on(type: SensorType.SENSOR_TYPE_ID_SIGNIFICANT_MOTION, callback: Callback<Signif
 | --- | --- | --- | --- |
 | type | [SensorType](#sensortypedeprecated).SENSOR_TYPE_ID_SIGNIFICANT_MOTION | 是 | 要订阅的有效运动传感器类型为SENSOR_TYPE_ID_SIGNIFICANT_MOTION。 |
 | callback | Callback | 是 | 注册有效运动传感器的回调函数，上报的数据类型为SignificantMotionResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 示例：
 
@@ -7061,7 +7121,7 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_SIGNIFICANT_MOTION, (data: sensor.Sig
 
 on(type: SensorType.SENSOR_TYPE_ID_PEDOMETER_DETECTION, callback: Callback<PedometerDetectionResponse>, options?: Options): void
 
-监听计步检测传感器的数据变化。如果多次调用该接口，仅最后一次调用生效。
+监听计步检测传感器的数据变化。适用于需要检测用户是否在行走的场景。如果多次调用该接口，仅最后一次调用生效。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.on.PEDOMETER_DETECTION](#sensoronsensoridpedometer_detection9)替代。
 
@@ -7075,7 +7135,7 @@ on(type: SensorType.SENSOR_TYPE_ID_PEDOMETER_DETECTION, callback: Callback<Pedom
 | --- | --- | --- | --- |
 | type | [SensorType](#sensortypedeprecated).SENSOR_TYPE_ID_PEDOMETER_DETECTION | 是 | 要订阅的计步检测传感器类型为SENSOR_TYPE_ID_PEDOMETER_DETECTION。 |
 | callback | Callback | 是 | 注册计步检测传感器的回调函数，上报的数据类型为PedometerDetectionResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 示例：
 
@@ -7093,7 +7153,7 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_PEDOMETER_DETECTION, (data: sensor.Pe
 
 on(type: SensorType.SENSOR_TYPE_ID_PEDOMETER, callback: Callback<PedometerResponse>, options?: Options): void
 
-监听计步传感器的数据变化。如果多次调用该接口，仅最后一次调用生效。
+监听计步传感器的数据变化。适用于需要获取用户步数数据的场景。如果多次调用该接口，仅最后一次调用生效。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.on.PEDOMETER](#sensoronsensoridpedometer9)替代。
 
@@ -7107,7 +7167,7 @@ on(type: SensorType.SENSOR_TYPE_ID_PEDOMETER, callback: Callback<PedometerRespon
 | --- | --- | --- | --- |
 | type | [SensorType](#sensortypedeprecated).SENSOR_TYPE_ID_PEDOMETER | 是 | 要订阅的计步传感器类型为SENSOR_TYPE_ID_PEDOMETER。 |
 | callback | Callback | 是 | 注册计步传感器的回调函数，上报的数据类型为PedometerResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 示例：
 
@@ -7125,7 +7185,7 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_PEDOMETER, (data: sensor.PedometerRes
 
 on(type: SensorType.SENSOR_TYPE_ID_AMBIENT_TEMPERATURE, callback:Callback<AmbientTemperatureResponse>, options?: Options): void
 
-监听环境温度传感器的数据变化。如果多次调用该接口，仅最后一次调用生效。
+监听环境温度传感器的数据变化。适用于需要感知环境温度的场景。如果多次调用该接口，仅最后一次调用生效。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.on.AMBIENT_TEMPERATURE](#sensoronsensoridambient_temperature9)替代。
 
@@ -7137,7 +7197,7 @@ on(type: SensorType.SENSOR_TYPE_ID_AMBIENT_TEMPERATURE, callback:Callback<Ambien
 | --- | --- | --- | --- |
 | type | [SensorType](#sensortypedeprecated).SENSOR_TYPE_ID_AMBIENT_TEMPERATURE | 是 | 要订阅的环境温度传感器类型为SENSOR_TYPE_ID_AMBIENT_TEMPERATURE。 |
 | callback | Callback | 是 | 注册环境温度传感器的回调函数，上报的数据类型为AmbientTemperatureResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 示例：
 
@@ -7155,7 +7215,7 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_AMBIENT_TEMPERATURE, (data: sensor.Am
 
 on(type: SensorType.SENSOR_TYPE_ID_MAGNETIC_FIELD, callback: Callback<MagneticFieldResponse>,options?: Options): void
 
-监听磁场传感器的数据变化。如果多次调用该接口，仅最后一次调用生效。
+监听磁场传感器的数据变化。适用于需要感知设备周围磁场强度与方向的场景。如果多次调用该接口，仅最后一次调用生效。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.on.MAGNETIC_FIELD](#sensoronsensoridmagnetic_field9)替代。
 
@@ -7167,7 +7227,7 @@ on(type: SensorType.SENSOR_TYPE_ID_MAGNETIC_FIELD, callback: Callback<MagneticFi
 | --- | --- | --- | --- |
 | type | [SensorType](#sensortypedeprecated).SENSOR_TYPE_ID_MAGNETIC_FIELD | 是 | 要订阅的磁场传感器类型为SENSOR_TYPE_ID_MAGNETIC_FIELD。 |
 | callback | Callback | 是 | 注册磁场传感器的回调函数，上报的数据类型为MagneticFieldResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 示例：
 
@@ -7187,7 +7247,7 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_MAGNETIC_FIELD, (data: sensor.Magneti
 
 on(type: SensorType.SENSOR_TYPE_ID_MAGNETIC_FIELD_UNCALIBRATED, callback: Callback<MagneticFieldUncalibratedResponse>, options?: Options): void
 
-监听未校准磁场传感器的数据变化。如果多次调用该接口，仅最后一次调用生效。
+监听未校准磁场传感器的数据变化。适用于需要获取包含偏差校准数据的磁场原始数据的场景。如果多次调用该接口，仅最后一次调用生效。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.on.MAGNETIC_FIELD_UNCALIBRATED](#sensoronsensoridmagnetic_field_uncalibrated9)替代。
 
@@ -7199,7 +7259,7 @@ on(type: SensorType.SENSOR_TYPE_ID_MAGNETIC_FIELD_UNCALIBRATED, callback: Callba
 | --- | --- | --- | --- |
 | type | [SensorType](#sensortypedeprecated).SENSOR_TYPE_ID_MAGNETIC_FIELD_UNCALIBRATED | 是 | 要订阅的未校准磁场传感器类型为SENSOR_TYPE_ID_MAGNETIC_FIELD_UNCALIBRATED。 |
 | callback | Callback | 是 | 注册未校准磁场传感器的回调函数，上报的数据类型为MagneticFieldUncalibratedResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 示例：
 
@@ -7222,7 +7282,7 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_MAGNETIC_FIELD_UNCALIBRATED, (data: s
 
 on(type: SensorType.SENSOR_TYPE_ID_PROXIMITY, callback: Callback<ProximityResponse>,options?: Options): void
 
-监听接近光传感器的数据变化。如果多次调用该接口，仅最后一次调用生效。
+监听接近光传感器的数据变化。适用于需要感知设备前方是否有物体靠近的场景。如果多次调用该接口，仅最后一次调用生效。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.on.PROXIMITY](#sensoronsensoridproximity9)替代。
 
@@ -7234,7 +7294,7 @@ on(type: SensorType.SENSOR_TYPE_ID_PROXIMITY, callback: Callback<ProximityRespon
 | --- | --- | --- | --- |
 | type | [SensorType](#sensortypedeprecated).SENSOR_TYPE_ID_PROXIMITY | 是 | 要订阅的接近光传感器类型为SENSOR_TYPE_ID_PROXIMITY。 |
 | callback | Callback | 是 | 注册接近光传感器的回调函数，上报的数据类型为ProximityResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，默认值为200000000ns。当接近光事件被触发的很频繁时，该参数用于限定事件上报的频率。 |
+| options | [Options](#options) | 否 | 可选参数列表，当接近光事件被触发的很频繁时，用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 示例：
 
@@ -7252,7 +7312,7 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_PROXIMITY, (data: sensor.ProximityRes
 
 on(type: SensorType.SENSOR_TYPE_ID_HUMIDITY, callback: Callback<HumidityResponse>,options?: Options): void
 
-监听湿度传感器的数据变化。如果多次调用该接口，仅最后一次调用生效。
+监听湿度传感器的数据变化。适用于需要感知环境湿度的场景。如果多次调用该接口，仅最后一次调用生效。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.on.HUMIDITY](#sensoronsensoridhumidity9)替代。
 
@@ -7264,7 +7324,7 @@ on(type: SensorType.SENSOR_TYPE_ID_HUMIDITY, callback: Callback<HumidityResponse
 | --- | --- | --- | --- |
 | type | [SensorType](#sensortypedeprecated).SENSOR_TYPE_ID_HUMIDITY | 是 | 要订阅的湿度传感器类型为SENSOR_TYPE_ID_HUMIDITY。 |
 | callback | Callback | 是 | 注册湿度传感器的回调函数，上报的数据类型为HumidityResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 示例：
 
@@ -7282,7 +7342,7 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_HUMIDITY, (data: sensor.HumidityRespo
 
 on(type: SensorType.SENSOR_TYPE_ID_BAROMETER, callback: Callback<BarometerResponse>,options?: Options): void
 
-监听气压计传感器的数据变化。如果多次调用该接口，仅最后一次调用生效。
+监听气压计传感器的数据变化。适用于需要感知环境气压的场景。如果多次调用该接口，仅最后一次调用生效。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.on.BAROMETER](#sensoronsensoridbarometer9)替代。
 
@@ -7294,7 +7354,7 @@ on(type: SensorType.SENSOR_TYPE_ID_BAROMETER, callback: Callback<BarometerRespon
 | --- | --- | --- | --- |
 | type | [SensorType](#sensortypedeprecated).SENSOR_TYPE_ID_BAROMETER | 是 | 要订阅的气压计传感器类型为SENSOR_TYPE_ID_BAROMETER。 |
 | callback | Callback | 是 | 注册气压计传感器的回调函数，上报的数据类型为BarometerResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 示例：
 
@@ -7312,7 +7372,7 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_BAROMETER, (data: sensor.BarometerRes
 
 on(type: SensorType.SENSOR_TYPE_ID_HALL, callback: Callback<HallResponse>, options?: Options): void
 
-监听霍尔传感器的数据变化。如果多次调用该接口，仅最后一次调用生效。
+监听霍尔传感器的数据变化。适用于需要检测设备翻盖或磁铁状态的场景。如果多次调用该接口，仅最后一次调用生效。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.on.HALL](#sensoronsensoridhall9)替代。
 
@@ -7324,7 +7384,7 @@ on(type: SensorType.SENSOR_TYPE_ID_HALL, callback: Callback<HallResponse>, optio
 | --- | --- | --- | --- |
 | type | [SensorType](#sensortypedeprecated).SENSOR_TYPE_ID_HALL | 是 | 要订阅的霍尔传感器类型为SENSOR_TYPE_ID_HALL。 |
 | callback | Callback | 是 | 注册霍尔传感器的回调函数，上报的数据类型为 HallResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，默认值为200000000ns。当霍尔事件被触发的很频繁时，该参数用于限定事件上报的频率。 |
+| options | [Options](#options) | 否 | 可选参数列表，当霍尔事件被触发的很频繁时，用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 示例：
 
@@ -7342,7 +7402,7 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_HALL, (data: sensor.HallResponse) => 
 
 on(type: SensorType.SENSOR_TYPE_ID_AMBIENT_LIGHT, callback: Callback<LightResponse>, options?: Options): void
 
-监听环境光传感器的数据变化。如果多次调用该接口，仅最后一次调用生效。
+监听环境光传感器的数据变化。适用于需要感知环境光照强度的场景。如果多次调用该接口，仅最后一次调用生效。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.on.AMBIENT_LIGHT](#sensoronsensoridambient_light9)替代。
 
@@ -7354,7 +7414,7 @@ on(type: SensorType.SENSOR_TYPE_ID_AMBIENT_LIGHT, callback: Callback<LightRespon
 | --- | --- | --- | --- |
 | type | [SensorType](#sensortypedeprecated).SENSOR_TYPE_ID_AMBIENT_LIGHT | 是 | 要订阅的环境光传感器类型为SENSOR_TYPE_ID_AMBIENT_LIGHT。 |
 | callback | Callback | 是 | 注册环境光传感器的回调函数，上报的数据类型为LightResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 示例：
 
@@ -7372,7 +7432,7 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_AMBIENT_LIGHT, (data: sensor.LightRes
 
 on(type: SensorType.SENSOR_TYPE_ID_ORIENTATION, callback: Callback<OrientationResponse>, options?: Options): void
 
-监听方向传感器的数据变化。如果多次调用该接口，仅最后一次调用生效。
+监听方向传感器的数据变化。适用于需要感知设备姿态方向的场景。如果多次调用该接口，仅最后一次调用生效。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.on.ORIENTATION](#sensoronsensoridorientation9)替代。
 
@@ -7384,7 +7444,7 @@ on(type: SensorType.SENSOR_TYPE_ID_ORIENTATION, callback: Callback<OrientationRe
 | --- | --- | --- | --- |
 | type | [SensorType](#sensortypedeprecated).SENSOR_TYPE_ID_ORIENTATION | 是 | 要订阅的方向传感器类型为SENSOR_TYPE_ID_ORIENTATION。 |
 | callback | Callback | 是 | 注册方向传感器的回调函数，上报的数据类型为OrientationResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 示例：
 
@@ -7404,7 +7464,7 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_ORIENTATION, (data: sensor.Orientatio
 
 on(type: SensorType.SENSOR_TYPE_ID_HEART_RATE, callback: Callback<HeartRateResponse>, options?: Options): void
 
-监听心率传感器的数据变化。如果多次调用该接口，仅最后一次调用生效。
+监听心率传感器的数据变化。适用于需要获取用户心率数据的场景。如果多次调用该接口，仅最后一次调用生效。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.on.HEART_RATE](#sensoronsensoridheart_rate9)替代。
 
@@ -7418,13 +7478,13 @@ on(type: SensorType.SENSOR_TYPE_ID_HEART_RATE, callback: Callback<HeartRateRespo
 | --- | --- | --- | --- |
 | type | [SensorType](#sensortypedeprecated).SENSOR_TYPE_ID_HEART_RATE | 是 | 要订阅的心率传感器类型为SENSOR_TYPE_ID_HEART_RATE。 |
 | callback | Callback | 是 | 注册心率传感器的回调函数，上报的数据类型为HeartRateResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 #### sensor.on('SensorType.SENSOR_TYPE_ID_ROTATION_VECTOR')(deprecated)
 
 on(type: SensorType.SENSOR_TYPE_ID_ROTATION_VECTOR, callback: Callback<RotationVectorResponse>,options?: Options): void
 
-监听旋转矢量传感器的数据变化。如果多次调用该接口，仅最后一次调用生效。
+监听旋转矢量传感器的数据变化。适用于需要感知设备三维空间旋转状态的场景。如果多次调用该接口，仅最后一次调用生效。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.on.ROTATION_VECTOR](#sensoronsensoridrotation_vector9)替代。
 
@@ -7436,7 +7496,7 @@ on(type: SensorType.SENSOR_TYPE_ID_ROTATION_VECTOR, callback: Callback<RotationV
 | --- | --- | --- | --- |
 | type | [SensorType](#sensortypedeprecated).SENSOR_TYPE_ID_ROTATION_VECTOR | 是 | 要订阅的旋转矢量传感器类型为SENSOR_TYPE_ID_ROTATION_VECTOR。 |
 | callback | Callback | 是 | 注册旋转矢量传感器的回调函数，上报的数据类型为RotationVectorResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 示例：
 
@@ -7457,7 +7517,7 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_ROTATION_VECTOR, (data: sensor.Rotati
 
 on(type: SensorType.SENSOR_TYPE_ID_WEAR_DETECTION, callback: Callback<WearDetectionResponse>,options?: Options): void
 
-监听所佩戴的检测传感器的数据变化。如果多次调用该接口，仅最后一次调用生效。
+监听所佩戴的检测传感器的数据变化。适用于需要检测设备是否被佩戴的场景。如果多次调用该接口，仅最后一次调用生效。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.on.WEAR_DETECTION](#sensoronsensoridwear_detection9)替代。
 
@@ -7469,7 +7529,7 @@ on(type: SensorType.SENSOR_TYPE_ID_WEAR_DETECTION, callback: Callback<WearDetect
 | --- | --- | --- | --- |
 | type | [SensorType](#sensortypedeprecated).SENSOR_TYPE_ID_WEAR_DETECTION | 是 | 要订阅的佩戴检测传感器类型为SENSOR_TYPE_ID_WEAR_DETECTION。 |
 | callback | Callback | 是 | 注册佩戴检测传感器的回调函数，上报的数据类型为WearDetectionResponse。 |
-| options | [Options](#options) | 否 | 可选参数列表，用于设置传感器上报频率，默认值为200000000ns。 |
+| options | [Options](#options) | 否 | 用于设置传感器上报频率，默认值为200000000ns（即200ms）。 |
 
 示例：
 
@@ -7487,7 +7547,7 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_WEAR_DETECTION, (data: sensor.WearDet
 
 once(type: SensorType.SENSOR_TYPE_ID_ACCELEROMETER, callback: Callback<AccelerometerResponse>): void
 
-监听加速度传感器的数据变化一次。
+监听加速度传感器的数据变化一次。适用于仅需一次性获取当前加速度数据的场景。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.once.ACCELEROMETER](#sensoroncesensoridaccelerometer9)替代。
 
@@ -7518,7 +7578,7 @@ sensor.once(sensor.SensorType.SENSOR_TYPE_ID_ACCELEROMETER, (data: sensor.Accele
 
 once(type: SensorType.SENSOR_TYPE_ID_LINEAR_ACCELERATION, callback:Callback<LinearAccelerometerResponse>): void
 
-监听线性加速度传感器数据变化一次。
+监听线性加速度传感器数据变化一次。适用于仅需一次性获取当前线性加速度数据的场景。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.once.LINEAR_ACCELEROMETER](#sensoroncesensoridlinear_accelerometer9)替代。
 
@@ -7537,7 +7597,7 @@ once(type: SensorType.SENSOR_TYPE_ID_LINEAR_ACCELERATION, callback:Callback<Line
 
 once(type: SensorType.SENSOR_TYPE_ID_ACCELEROMETER_UNCALIBRATED,callback: Callback<AccelerometerUncalibratedResponse>): void
 
-监听未校准加速度传感器的数据变化一次。
+监听未校准加速度传感器的数据变化一次。适用于仅需一次性获取当前未校准加速度数据的场景。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.once.ACCELEROMETER_UNCALIBRATED](#sensoroncesensoridaccelerometer_uncalibrated9)替代。
 
@@ -7571,7 +7631,7 @@ sensor.once(sensor.SensorType.SENSOR_TYPE_ID_ACCELEROMETER_UNCALIBRATED, (data: 
 
 once(type: SensorType.SENSOR_TYPE_ID_GRAVITY, callback: Callback<GravityResponse>): void
 
-监听重力传感器的数据变化一次。
+监听重力传感器的数据变化一次。适用于仅需一次性获取当前重力数据的场景。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.once.GRAVITY](#sensoroncesensoridgravity9)替代。
 
@@ -7600,7 +7660,7 @@ sensor.once(sensor.SensorType.SENSOR_TYPE_ID_GRAVITY, (data: sensor.GravityRespo
 
 once(type: SensorType.SENSOR_TYPE_ID_GYROSCOPE, callback: Callback<GyroscopeResponse>): void
 
-监听陀螺仪传感器的数据变化一次。
+监听陀螺仪传感器的数据变化一次。适用于仅需一次性获取当前陀螺仪数据的场景。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.once.GYROSCOPE](#sensoroncesensoridgyroscope9)替代。
 
@@ -7631,9 +7691,9 @@ sensor.once(sensor.SensorType.SENSOR_TYPE_ID_GYROSCOPE, (data: sensor.GyroscopeR
 
 once(type: SensorType.SENSOR_TYPE_ID_GYROSCOPE_UNCALIBRATED,callback: Callback<GyroscopeUncalibratedResponse>): void
 
-监听未校准陀螺仪传感器的数据变化一次。
+监听未校准陀螺仪传感器的数据变化一次。适用于仅需一次性获取当前未校准陀螺仪数据的场景。
 
-![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.once.GYROSCOPE_UNCALIBRATED](#sensoroncesensoridgyroscope_uncalibrated9)>代替。
+![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.once.GYROSCOPE_UNCALIBRATED](#sensoroncesensoridgyroscope_uncalibrated9)替代。
 
 需要权限：ohos.permission.GYROSCOPE
 
@@ -7665,7 +7725,7 @@ sensor.once(sensor.SensorType.SENSOR_TYPE_ID_GYROSCOPE_UNCALIBRATED, (data: sens
 
 once(type: SensorType.SENSOR_TYPE_ID_SIGNIFICANT_MOTION, callback: Callback<SignificantMotionResponse>): void
 
-监听有效运动传感器的数据变化一次。
+监听有效运动传感器的数据变化一次。适用于仅需一次性获取当前有效运动数据的场景。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.once.SIGNIFICANT_MOTION](#sensoroncesensoridsignificant_motion9)替代。
 
@@ -7692,7 +7752,7 @@ sensor.once(sensor.SensorType.SENSOR_TYPE_ID_SIGNIFICANT_MOTION, (data: sensor.S
 
 once(type: SensorType.SENSOR_TYPE_ID_PEDOMETER_DETECTION, callback: Callback<PedometerDetectionResponse>): void
 
-监听计步检测传感器数据变化一次。
+监听计步检测传感器数据变化一次。适用于仅需一次性获取当前计步检测数据的场景。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.once.PEDOMETER_DETECTION](#sensoroncesensoridpedometer_detection9)替代。
 
@@ -7721,7 +7781,7 @@ sensor.once(sensor.SensorType.SENSOR_TYPE_ID_PEDOMETER_DETECTION, (data: sensor.
 
 once(type: SensorType.SENSOR_TYPE_ID_PEDOMETER, callback: Callback<PedometerResponse>): void
 
-监听计步器传感器数据变化一次。
+监听计步器传感器数据变化一次。适用于仅需一次性获取当前计步数据的场景。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.once.PEDOMETER](#sensoroncesensoridpedometer9)替代。
 
@@ -7750,7 +7810,7 @@ sensor.once(sensor.SensorType.SENSOR_TYPE_ID_PEDOMETER, (data: sensor.PedometerR
 
 once(type: SensorType.SENSOR_TYPE_ID_AMBIENT_TEMPERATURE, callback: Callback<AmbientTemperatureResponse>): void
 
-监听环境温度传感器数据变化一次。
+监听环境温度传感器数据变化一次。适用于仅需一次性获取当前环境温度数据的场景。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.once.AMBIENT_TEMPERATURE](#sensoroncesensoridambient_temperature9)替代。
 
@@ -7777,7 +7837,7 @@ sensor.once(sensor.SensorType.SENSOR_TYPE_ID_AMBIENT_TEMPERATURE, (data: sensor.
 
 once(type: SensorType.SENSOR_TYPE_ID_MAGNETIC_FIELD, callback: Callback<MagneticFieldResponse>): void
 
-监听磁场传感器数据变化一次。
+监听磁场传感器数据变化一次。适用于仅需一次性获取当前磁场数据的场景。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.once.MAGNETIC_FIELD](#sensoroncesensoridmagnetic_field9)替代。
 
@@ -7806,7 +7866,7 @@ sensor.once(sensor.SensorType.SENSOR_TYPE_ID_MAGNETIC_FIELD, (data: sensor.Magne
 
 once(type: SensorType.SENSOR_TYPE_ID_MAGNETIC_FIELD_UNCALIBRATED, callback: Callback<MagneticFieldUncalibratedResponse>): void
 
-监听未校准磁场传感器数据变化一次。
+监听未校准磁场传感器数据变化一次。适用于仅需一次性获取当前未校准磁场数据的场景。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.once.MAGNETIC_FIELD_UNCALIBRATED](#sensoroncesensoridmagnetic_field_uncalibrated9)替代。
 
@@ -7838,7 +7898,7 @@ sensor.once(sensor.SensorType.SENSOR_TYPE_ID_MAGNETIC_FIELD_UNCALIBRATED, (data:
 
 once(type: SensorType.SENSOR_TYPE_ID_PROXIMITY, callback: Callback<ProximityResponse>): void
 
-监听接近光传感器数据变化一次。
+监听接近光传感器数据变化一次。适用于仅需一次性获取当前接近光数据的场景。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.once.PROXIMITY](#sensoroncesensoridproximity9)替代。
 
@@ -7866,7 +7926,7 @@ sensor.once(sensor.SensorType.SENSOR_TYPE_ID_PROXIMITY, (data: sensor.ProximityR
 
 once(type: SensorType.SENSOR_TYPE_ID_HUMIDITY, callback: Callback<HumidityResponse>): void
 
-监听湿度传感器数据变化一次。
+监听湿度传感器数据变化一次。适用于仅需一次性获取当前湿度数据的场景。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.once.HUMIDITY](#sensoroncesensoridhumidity9)替代。
 
@@ -7889,11 +7949,11 @@ sensor.once(sensor.SensorType.SENSOR_TYPE_ID_HUMIDITY, (data: sensor.HumidityRes
 });
 ```
 
-#### sensor.once('type: SensorType.SENSOR_TYPE_ID_BAROMETER')(deprecated)
+#### sensor.once('SensorType.SENSOR_TYPE_ID_BAROMETER')(deprecated)
 
 once(type: SensorType.SENSOR_TYPE_ID_BAROMETER, callback: Callback<BarometerResponse>): void
 
-监听气压计传感器数据变化一次。
+监听气压计传感器数据变化一次。适用于仅需一次性获取当前气压数据的场景。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.once.BAROMETER](#sensoroncesensoridbarometer9)替代。
 
@@ -7920,7 +7980,7 @@ sensor.once(sensor.SensorType.SENSOR_TYPE_ID_BAROMETER, (data: sensor.BarometerR
 
 once(type: SensorType.SENSOR_TYPE_ID_HALL, callback: Callback<HallResponse>): void
 
-监听霍尔传感器数据变化一次。
+监听霍尔传感器数据变化一次。适用于仅需一次性获取当前霍尔数据的场景。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.once.HALL](#sensoroncesensoridhall9)替代。
 
@@ -7947,7 +8007,7 @@ sensor.once(sensor.SensorType.SENSOR_TYPE_ID_HALL, (data: sensor.HallResponse) =
 
 once(type: SensorType.SENSOR_TYPE_ID_AMBIENT_LIGHT, callback: Callback<LightResponse>): void
 
-监听环境光传感器数据变化一次。
+监听环境光传感器数据变化一次。适用于仅需一次性获取当前环境光数据的场景。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.once.AMBIENT_LIGHT](#sensoroncesensoridambient_light9)替代。
 
@@ -7966,7 +8026,7 @@ once(type: SensorType.SENSOR_TYPE_ID_AMBIENT_LIGHT, callback: Callback<LightResp
 import { sensor } from '@kit.SensorServiceKit';
 
 sensor.once(sensor.SensorType.SENSOR_TYPE_ID_AMBIENT_LIGHT, (data: sensor.LightResponse) => {
-  console.info('Succeeded in invoking once. invoking once. Illumination: ' + data.intensity);
+  console.info('Succeeded in invoking once. Illumination: ' + data.intensity);
 });
 ```
 
@@ -7974,7 +8034,7 @@ sensor.once(sensor.SensorType.SENSOR_TYPE_ID_AMBIENT_LIGHT, (data: sensor.LightR
 
 once(type: SensorType.SENSOR_TYPE_ID_ORIENTATION, callback: Callback<OrientationResponse>): void
 
-监听方向传感器数据变化一次。
+监听方向传感器数据变化一次。适用于仅需一次性获取当前方向数据的场景。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.once.ORIENTATION](#sensoroncesensoridorientation9)替代。
 
@@ -8003,7 +8063,7 @@ sensor.once(sensor.SensorType.SENSOR_TYPE_ID_ORIENTATION, (data: sensor.Orientat
 
 once(type: SensorType.SENSOR_TYPE_ID_ROTATION_VECTOR, callback: Callback<RotationVectorResponse>): void
 
-监听旋转矢量传感器数据变化一次。
+监听旋转矢量传感器数据变化一次。适用于仅需一次性获取当前旋转矢量数据的场景。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.once.ROTATION_VECTOR](#sensoroncesensoridrotation_vector9)替代。
 
@@ -8033,7 +8093,7 @@ sensor.once(sensor.SensorType.SENSOR_TYPE_ID_ROTATION_VECTOR, (data: sensor.Rota
 
 once(type: SensorType.SENSOR_TYPE_ID_HEART_RATE, callback: Callback<HeartRateResponse>): void
 
-监听心率传感器数据变化一次。
+监听心率传感器数据变化一次。适用于仅需一次性获取当前心率数据的场景。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.once.HEART_RATE](#sensoroncesensoridheart_rate9)替代。
 
@@ -8062,7 +8122,7 @@ sensor.once(sensor.SensorType.SENSOR_TYPE_ID_HEART_RATE, (data: sensor.HeartRate
 
 once(type: SensorType.SENSOR_TYPE_ID_WEAR_DETECTION, callback: Callback<WearDetectionResponse>): void
 
-监听所佩戴的检测传感器的数据变化一次。
+监听所佩戴的检测传感器的数据变化一次。适用于仅需一次性获取当前佩戴检测数据的场景。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.once.WEAR_DETECTION](#sensoroncesensoridwear_detection9)替代。
 
@@ -8089,7 +8149,7 @@ sensor.once(sensor.SensorType.SENSOR_TYPE_ID_WEAR_DETECTION, (data: sensor.WearD
 
 off(type: SensorType.SENSOR_TYPE_ID_ACCELEROMETER, callback?: Callback<AccelerometerResponse>): void
 
-取消订阅传感器数据。
+取消订阅加速度传感器数据。off取消订阅必须与on订阅成对出现。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.off.ACCELEROMETER](#sensoroffsensoridaccelerometer9)替代。
 
@@ -8122,7 +8182,7 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_ACCELEROMETER, callback);
 
 off(type: SensorType.SENSOR_TYPE_ID_ACCELEROMETER_UNCALIBRATED, callback?: Callback<AccelerometerUncalibratedResponse>): void
 
-取消订阅传感器数据。
+取消订阅未校准加速度传感器数据。off取消订阅必须与on订阅成对出现。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.off.ACCELEROMETER_UNCALIBRATED](#sensoroffsensoridaccelerometer_uncalibrated9)替代。
 
@@ -8158,7 +8218,7 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_ACCELEROMETER_UNCALIBRATED, callback
 
 off(type: SensorType.SENSOR_TYPE_ID_AMBIENT_LIGHT, callback?: Callback<LightResponse>): void
 
-取消订阅传感器数据。
+取消订阅环境光传感器数据。off取消订阅必须与on订阅成对出现。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.off.AMBIENT_LIGHT](#sensoroffsensoridambient_light9)替代。
 
@@ -8187,7 +8247,7 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_AMBIENT_LIGHT, callback);
 
 off(type: SensorType.SENSOR_TYPE_ID_AMBIENT_TEMPERATURE, callback?: Callback<AmbientTemperatureResponse>): void
 
-取消订阅传感器数据。
+取消订阅环境温度传感器数据。off取消订阅必须与on订阅成对出现。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.off.AMBIENT_TEMPERATURE](#sensoroffsensoridambient_temperature9)替代。
 
@@ -8216,7 +8276,7 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_AMBIENT_TEMPERATURE, callback);
 
 off(type: SensorType.SENSOR_TYPE_ID_BAROMETER, callback?: Callback<BarometerResponse>): void
 
-取消订阅传感器数据。
+取消订阅气压计传感器数据。off取消订阅必须与on订阅成对出现。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.off.BAROMETER](#sensoroffsensoridbarometer9)替代。
 
@@ -8245,7 +8305,7 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_BAROMETER, callback);
 
 off(type: SensorType.SENSOR_TYPE_ID_GRAVITY, callback?: Callback<GravityResponse>): void
 
-取消订阅传感器数据。
+取消订阅重力传感器数据。off取消订阅必须与on订阅成对出现。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.off.GRAVITY](#sensoroffsensoridgravity9)替代。
 
@@ -8276,7 +8336,7 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_GRAVITY, callback);
 
 off(type: SensorType.SENSOR_TYPE_ID_GYROSCOPE, callback?: Callback<GyroscopeResponse>): void
 
-取消订阅传感器数据。
+取消订阅陀螺仪传感器数据。off取消订阅必须与on订阅成对出现。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.off.GYROSCOPE](#sensoroffsensoridgyroscope9)替代。
 
@@ -8309,7 +8369,7 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_GYROSCOPE, callback);
 
 off(type: SensorType.SENSOR_TYPE_ID_GYROSCOPE_UNCALIBRATED, callback?: Callback<GyroscopeUncalibratedResponse>): void
 
-取消订阅传感器数据。
+取消订阅未校准陀螺仪传感器数据。off取消订阅必须与on订阅成对出现。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.off.GYROSCOPE_UNCALIBRATED](#sensoroffsensoridgyroscope_uncalibrated9)替代。
 
@@ -8342,7 +8402,7 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_GYROSCOPE_UNCALIBRATED, callback);
 
 off(type: SensorType.SENSOR_TYPE_ID_HALL, callback?: Callback<HallResponse>): void
 
-取消订阅传感器数据。
+取消订阅霍尔传感器数据。off取消订阅必须与on订阅成对出现。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.off.HALL](#sensoroffsensoridhall9)替代。
 
@@ -8371,7 +8431,7 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_HALL, callback);
 
 off(type: SensorType.SENSOR_TYPE_ID_HEART_RATE, callback?: Callback<HeartRateResponse>): void
 
-取消订阅传感器数据。
+取消订阅心率传感器数据。off取消订阅必须与on订阅成对出现。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.off.HEART_RATE](#sensoroffsensoridheart_rate9)替代。
 
@@ -8402,7 +8462,7 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_HEART_RATE, callback);
 
 off(type: SensorType.SENSOR_TYPE_ID_HUMIDITY, callback?: Callback<HumidityResponse>): void
 
-取消订阅传感器数据。
+取消订阅湿度传感器数据。off取消订阅必须与on订阅成对出现。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.off.HUMIDITY](#sensoroffsensoridhumidity9)替代。
 
@@ -8431,7 +8491,7 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_HUMIDITY, callback);
 
 off(type: SensorType.SENSOR_TYPE_ID_LINEAR_ACCELERATION, callback?: Callback<LinearAccelerometerResponse>): void
 
-取消订阅传感器数据。
+取消订阅线性加速度传感器数据。off取消订阅必须与on订阅成对出现。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.off.LINEAR_ACCELEROMETER](#sensoroffsensoridlinear_accelerometer9)替代。
 
@@ -8464,7 +8524,7 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_LINEAR_ACCELERATION, callback);
 
 off(type: SensorType.SENSOR_TYPE_ID_MAGNETIC_FIELD, callback?: Callback<MagneticFieldResponse>): void
 
-取消订阅传感器数据。
+取消订阅磁场传感器数据。off取消订阅必须与on订阅成对出现。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.off.MAGNETIC_FIELD](#sensoroffsensoridmagnetic_field9)替代。
 
@@ -8495,7 +8555,7 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_MAGNETIC_FIELD, callback);
 
 off(type: SensorType.SENSOR_TYPE_ID_MAGNETIC_FIELD_UNCALIBRATED, callback?: Callback<MagneticFieldUncalibratedResponse>): void
 
-取消订阅传感器数据。
+取消订阅未校准磁场传感器数据。off取消订阅必须与on订阅成对出现。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.off.MAGNETIC_FIELD_UNCALIBRATED](#sensoroffsensoridmagnetic_field_uncalibrated9)替代。
 
@@ -8529,7 +8589,7 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_MAGNETIC_FIELD_UNCALIBRATED, callbac
 
 off(type: SensorType.SENSOR_TYPE_ID_ORIENTATION, callback?: Callback<OrientationResponse>): void
 
-取消订阅传感器数据。
+取消订阅方向传感器数据。off取消订阅必须与on订阅成对出现。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.off.ORIENTATION](#sensoroffsensoridorientation9)替代。
 
@@ -8560,7 +8620,7 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_ORIENTATION, callback);
 
 off(type: SensorType.SENSOR_TYPE_ID_PEDOMETER, callback?: Callback<PedometerResponse>): void
 
-取消订阅传感器数据。
+取消订阅计步传感器数据。off取消订阅必须与on订阅成对出现。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.off.PEDOMETER](#sensoroffsensoridpedometer9)替代。
 
@@ -8591,7 +8651,7 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_PEDOMETER, callback);
 
 off(type: SensorType.SENSOR_TYPE_ID_PEDOMETER_DETECTION, callback?: Callback<PedometerDetectionResponse>): void
 
-取消订阅传感器数据。
+取消订阅计步检测传感器数据。off取消订阅必须与on订阅成对出现。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.off.PEDOMETER_DETECTION](#sensoroffsensoridpedometer_detection9)替代。
 
@@ -8622,7 +8682,7 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_PEDOMETER_DETECTION, callback);
 
 off(type: SensorType.SENSOR_TYPE_ID_PROXIMITY, callback?: Callback<ProximityResponse>): void
 
-取消订阅传感器数据。
+取消订阅接近光传感器数据。off取消订阅必须与on订阅成对出现。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.off.PROXIMITY](#sensoroffsensoridproximity9)替代。
 
@@ -8651,7 +8711,7 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_PROXIMITY, callback);
 
 off(type: SensorType.SENSOR_TYPE_ID_ROTATION_VECTOR, callback?: Callback<RotationVectorResponse>): void
 
-取消订阅传感器数据。
+取消订阅旋转矢量传感器数据。off取消订阅必须与on订阅成对出现。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.off.ROTATION_VECTOR](#sensoroffsensoridrotation_vector9)替代。
 
@@ -8683,7 +8743,7 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_ROTATION_VECTOR, callback);
 
 off(type: SensorType.SENSOR_TYPE_ID_SIGNIFICANT_MOTION, callback?: Callback<SignificantMotionResponse>): void
 
-取消订阅有效运动传感器数据。
+取消订阅有效运动传感器数据。off取消订阅必须与on订阅成对出现。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.off.SIGNIFICANT_MOTION](#sensoroffsensoridsignificant_motion9)替代。
 
@@ -8712,7 +8772,7 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_SIGNIFICANT_MOTION, callback);
 
 off(type: SensorType.SENSOR_TYPE_ID_WEAR_DETECTION, callback?: Callback<WearDetectionResponse>): void
 
-取消订阅传感器数据。
+取消订阅佩戴检测传感器数据。off取消订阅必须与on订阅成对出现。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.off.WEAR_DETECTION](#sensoroffsensoridwear_detection9)替代。
 
@@ -9219,7 +9279,7 @@ createQuaternion(rotationVector: Array<number>): Promise<Array<number>>
 
 将旋转矢量转换为四元数，使用Promise异步方式返回结果。
 
-![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.getQuaternion](#sensorgetquaternion9-1)>代替。
+![](./img/note_3.0-zh-cn.png) 从API version 8 开始支持，从API version 9 开始废弃，建议使用[sensor.getQuaternion](#sensorgetquaternion9-1)替代。
 
 系统能力：SystemCapability.Sensors.Sensor
 
@@ -9317,7 +9377,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 const promise = sensor.getDirection([1, 0, 0, 0, 1, 0, 0, 0, 1]);
 promise.then((data: Array<number>) => {
-  console.info('Succeeded in getting sensor_getAltitude_Promise', data);
+  console.info('Succeeded in getting sensor_getDirection_Promise', data);
   for (let i = 1; i < data.length; i++) {
     console.info("Succeeded in getting sensor_getDirection_promise" + data[i]);
   }

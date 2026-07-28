@@ -2,13 +2,13 @@
 title: "触摸热区设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-touch-target"
 catalog: "harmonyos-references"
-content_hash: "7152e5bbba69"
-synced_at: "2026-07-09T00:57:41.302786"
+content_hash: "f38e7993043a"
+synced_at: "2026-07-28T16:42:29.558481"
 ---
 
 # 触摸热区设置
 
-设置组件的响应热区。在ArkUI开发框架中，处理触屏事件和鼠标事件时，会在事件触发前进行按压点与组件响应热区的[触摸测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-basic-principles#触摸测试)，以收集需响应事件的组件。基于测试结果，框架会分发相应的事件。影响[点击事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-click)、[触摸事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-touch)、[拖拽事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop)、[鼠标事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-mouse-key)、[轴事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-axis)、[悬浮事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-hover)、[无障碍悬浮事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-accessibility-hover-event)和[手势事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-settings)的分发。
+设置组件的触摸热区。在ArkUI开发框架中，处理触屏事件和鼠标事件时，会在事件触发前进行按压点与组件响应热区的[触摸测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-basic-principles#触摸测试)，以收集需响应事件的组件。基于测试结果，框架会分发相应的事件。影响[点击事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-click)、[触摸事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-touch)、[拖拽事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop)、[鼠标事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-mouse-key)、[轴事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-axis)、[悬浮事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-hover)、[无障碍悬浮事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-accessibility-hover-event)和[手势事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-settings)的分发。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -19,7 +19,7 @@ synced_at: "2026-07-09T00:57:41.302786"
 
 responseRegion(value: Array<Rectangle> | Rectangle): T
 
-设置一个或多个触摸热区。从API版本26.0.0开始，未主动设置时[Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button)、[Button模式的Toggle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toggle)、[Select](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-select)、[Chip](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-chip)和[ChipGroup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-chipgroup)组件的触摸热区默认最小高度从28vp变更为32vp。该变更仅影响触摸命中范围，不影响组件实际显示高度。
+设置一个或多个触摸热区。调用[responseRegionList](#responseregionlist22)接口时，该接口不再生效。从API版本26.0.0开始，未主动设置时[Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button)、[Button模式的Toggle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toggle)、[Select](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-select)、[Chip](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-chip)和[ChipGroup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-chipgroup)组件的触摸热区默认最小高度从28vp变更为32vp。该变更仅影响触摸命中范围，不影响组件实际显示高度。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -37,13 +37,13 @@ responseRegion(value: Array<Rectangle> | Rectangle): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于支持链式调用。 |
 
 #### mouseResponseRegion10+
 
 mouseResponseRegion(value: Array<Rectangle> | Rectangle): T
 
-设置一个或多个鼠标触摸热区。
+设置一个或多个鼠标触摸热区。调用[responseRegionList](#responseregionlist22)接口时，该接口不再生效。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -61,7 +61,7 @@ mouseResponseRegion(value: Array<Rectangle> | Rectangle): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于支持链式调用。 |
 
 #### responseRegionList22+
 
@@ -85,7 +85,7 @@ responseRegionList(regions: Array<ResponseRegion>): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于支持链式调用。 |
 
 #### Rectangle对象说明
 
@@ -105,7 +105,7 @@ responseRegionList(regions: Array<ResponseRegion>): T
 ![](./img/note_3.0-zh-cn.png)
 
 - x和y可以设置正负值百分比。当x设置为'100%'时表示热区往右偏移组件本身宽度大小，当x设置为'-100%'时表示热区往左偏移组件本身宽度大小。当y设置为'100%'时表示热区往下偏移组件本身高度大小，当y设置为'-100%'时表示热区往上偏移组件本身高度大小。
-- width和height设置百分比时，只能设置正值百分比。width：'100%'表示热区宽度设置为该组件本身的宽度。比如组件本身宽度是100vp，那么'100%'表示热区宽度也为100vp。height：'100%'表示热区高度设置为该组件本身的高度。
+- width和height设置百分比时，只能设置正值百分比。width：'100%'表示热区宽度设置为该组件本身的宽度。比如组件本身宽度是100vp，那么'100%'表示热区宽度也为100vp。height：'100%'表示热区高度设置为该组件本身的高度。设置为0或负值百分比时，采用默认值'100%'。
 - 百分比相对于组件自身宽高进行计算。
 - 当父组件设置[clip](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sharp-clipping#clip12)(true)时，子组件的响应会受到父组件触摸热区的影响，不在父组件触摸热区内的子组件无法响应手势和事件。
 - width和height不支持calc()的动态计算。
@@ -117,9 +117,9 @@ responseRegionList(regions: Array<ResponseRegion>): T
 ![](./img/note_3.0-zh-cn.png)
 
 - 当父组件设置[clip](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sharp-clipping#clip12)为true时，子组件的响应会受到父组件触摸热区的影响，不在父组件触摸热区内的子组件无法响应手势和事件。
-- 如果触摸热区未配置输入工具类型，触摸位置和大小均采用默认值。
+- 如果触摸热区未配置输入工具类型、触摸位置或大小，对应项采用默认值。
 - x和y的计算结果为正值时，分别代表向右偏移和向下偏移；当计算结果为负值时，分别代表向左偏移和向上偏移。
-- width和height采用string类型时，string需采用小写字符否则不生效，支持calc()的动态计算。指定calc()的入参字符串格式为'宽高缩放比例 ± 宽高增量'，宽高缩放比例为百分比，宽高增量单位为px或vp。例如'calc(80% + 10vp)'中，80%为宽高缩放比例、10vp为宽高增量。width和height采用LengthMetrics类型且单位为percent时，相对于组件自身宽高进行计算，percent(1)代表100%。当计算结果为负值时，采用默认值。
+- width和height采用string类型时，string需采用小写字符，否则不生效，支持calc()的动态计算。指定calc()的入参字符串格式为'宽高缩放比例 ± 宽高增量'，宽高缩放比例为百分比，宽高增量单位为px或vp；格式不符合要求或使用其他单位时不生效。例如'calc(80% + 10vp)'中，80%为宽高缩放比例、10vp为宽高增量。width和height采用LengthMetrics类型且单位为percent时，相对于组件自身宽高进行计算，percent(1)代表100%。当计算结果为负值时，采用默认值。
 
 元服务API： 从API version 22开始，该接口支持在元服务中使用。
 
@@ -146,13 +146,13 @@ responseRegionList(regions: Array<ResponseRegion>): T
 @Entry
 @Component
 struct TouchTargetExample {
-  @State text: string = "";
+  @State text: string = '';
 
   build() {
     Column({ space: 20 }) {
       Text("{x:0,y:0,width:'50%',height:'100%'}")
       // 热区宽度为按钮的一半，点击button1右半部无响应
-      Button("button1")
+      Button('button1')
         .responseRegion({
           x: 0,
           y: 0,
@@ -160,13 +160,13 @@ struct TouchTargetExample {
           height: '100%'
         })
         .onClick(() => {
-          this.text = 'button1 clicked'
+          this.text = 'button1 clicked';
         })
 
       // 为一个组件添加多个热区
       Text("[{x:'100%',y:0,width:'50%',height:'100%'}," +
         "\n{ x: 0, y: 0, width: '50%', height: '100%' }]")
-      Button("button2")
+      Button('button2')
         .responseRegion([
           {
             x: '100%',
@@ -179,14 +179,14 @@ struct TouchTargetExample {
             y: 0,
             width: '50%',
             height: '100%'
-          }// 第二个热区宽度为按钮的一半，点击button2左半部，点击事件生效
+          } // 第二个热区宽度为按钮的一半，点击button2左半部，点击事件生效
         ])
         .onClick(() => {
-          this.text = 'button2 clicked'
+          this.text = 'button2 clicked';
         })
       // 热区大小为整个按钮，且下移一个按钮高度，点击button3下方按钮大小区域，点击事件生效
       Text("{x:0,y:'100%',width:'100%',height:'100%'}")
-      Button("button3")
+      Button('button3')
         .responseRegion({
           x: 0,
           y: '100%',
@@ -194,7 +194,7 @@ struct TouchTargetExample {
           height: '100%'
         })
         .onClick(() => {
-          this.text = 'button3 clicked'
+          this.text = 'button3 clicked';
         })
 
       Text(this.text).margin({ top: 50 })
@@ -202,7 +202,7 @@ struct TouchTargetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253208.gif)
+ ![](./img/zh-cn_image_0000002686087833.gif)
 
 #### [h2]示例2（通过responseRegionList接口设置触摸热区）
 
@@ -217,13 +217,13 @@ import { LengthMetrics } from '@kit.ArkUI';
 @Entry
 @Component
 struct TouchTargetExample {
-  @State text: string = "";
+  @State text: string = '';
 
   build() {
     Column({ space: 20 }) {
-      Text("left part of button1")
+      Text('left part of button1')
       // 热区宽度为按钮的一半，点击button1右半部无响应
-      Button("button1")
+      Button('button1')
         .responseRegionList([{
           x: LengthMetrics.vp(0),
           y: LengthMetrics.vp(0),
@@ -231,13 +231,13 @@ struct TouchTargetExample {
           height: LengthMetrics.percent(1),
         }])
         .onClick(() => {
-          this.text = 'button1 clicked'
+          this.text = 'button1 clicked';
         })
 
-      // 热区一的大小为整个按钮，且右移一个按钮宽度，点击button2左边按钮大小区域，点击事件生效
+      // 热区一的大小为整个按钮，且右移一个按钮宽度，点击button2右边按钮大小区域，点击事件生效
       // 热区二的大小为整个按钮，且下移一个按钮高度，鼠标点击button2下方按钮大小区域，点击事件生效
-      Text("one button size right of button2," + "\n one button size below button2")
-      Button("button2")
+      Text('one button size right of button2,' + '\n one button size below button2')
+      Button('button2')
         .responseRegionList([{
           x: LengthMetrics.percent(1),
           y: LengthMetrics.vp(0),
@@ -251,7 +251,7 @@ struct TouchTargetExample {
           height: 'calc(100% - 0px)',
         }])
         .onClick(() => {
-          this.text = 'button2 clicked'
+          this.text = 'button2 clicked';
         })
 
       Text(this.text).margin({ top: 50 })
@@ -259,11 +259,11 @@ struct TouchTargetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612393.gif)
+ ![](./img/zh-cn_image_0000002685928005.gif)
 
 #### [h2]示例3（设置鼠标的触摸热区以响应点击事件）
 
-该示例通过[mouseResponseRegion](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-touch-target#mouseresponseregion10)设置鼠标的触摸热区以响应点击事件。
+该示例通过[mouseResponseRegion](#mouseresponseregion10)设置鼠标的触摸热区以响应点击事件。
 
 ```
 // xxx.ets
@@ -350,4 +350,4 @@ struct MouseResponseRegionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413102.gif)
+ ![](./img/zh-cn_image_0000002656008326.gif)

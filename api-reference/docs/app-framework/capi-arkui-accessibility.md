@@ -2,15 +2,15 @@
 title: "ArkUI_Accessibility"
 upstream_id: "harmonyos-references/capi-arkui-accessibility"
 catalog: "harmonyos-references"
-content_hash: "355f602238fb"
-synced_at: "2026-07-09T00:58:32.080346"
+content_hash: "e1ab28b570fa"
+synced_at: "2026-07-28T16:49:16.038537"
 ---
 
 # ArkUI_Accessibility
 
 #### 概述
 
-描述ArkUI Accessibility对外支持的Native能力，如查询无障碍节点、上报无障碍事件等。
+本模块描述ArkUI Accessibility对外支持的Native能力，支持查询无障碍节点、上报无障碍事件等。适用于辅助应用、无障碍服务等需要访问和响应ArkUI无障碍信息的场景，便于开发者构建无障碍辅助功能，提升应用的无障碍体验。
 
 起始版本： 13
 

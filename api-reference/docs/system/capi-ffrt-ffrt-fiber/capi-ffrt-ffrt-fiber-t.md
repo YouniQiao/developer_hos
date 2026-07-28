@@ -2,8 +2,8 @@
 title: "ffrt_fiber_t"
 upstream_id: "harmonyos-references/capi-ffrt-ffrt-fiber-t"
 catalog: "harmonyos-references"
-content_hash: "19ddb165edd8"
-synced_at: "2026-07-09T00:59:48.323960"
+content_hash: "1d8496d25c33"
+synced_at: "2026-07-28T16:51:06.685895"
 ---
 
 # ffrt_fiber_t
@@ -14,7 +14,7 @@ typedef struct {...} ffrt_fiber_t
 
 #### 概述
 
-纤程结构。
+纤程结构体，用于存储纤程执行上下文。
 
 起始版本： 20
 
@@ -28,4 +28,4 @@ typedef struct {...} ffrt_fiber_t
 
 | 名称 | 描述 |
 | --- | --- |
-| uintptr_t storage[ffrt_fiber_storage_size] | 纤程上下文占用空间。 |
+| uintptr_t storage[ffrt_fiber_storage_size] | 纤程执行上下文的内部存储。请勿直接访问，通过[ffrt_fiber_init](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-fiber-h#ffrt_fiber_init)初始化，通过[ffrt_fiber_switch](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-fiber-h#ffrt_fiber_switch)切换。 |

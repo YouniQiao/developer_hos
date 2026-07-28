@@ -2,8 +2,8 @@
 title: "systemShare（分享）"
 upstream_id: "harmonyos-references/share-system-share"
 catalog: "harmonyos-references"
-content_hash: "182cb3c0b27d"
-synced_at: "2026-07-09T01:01:39.544069"
+content_hash: "11a277f0444b"
+synced_at: "2026-07-28T16:53:05.483036"
 ---
 
 # systemShare（分享）
@@ -41,8 +41,8 @@ import { systemShare } from '@kit.ShareKit';
 | description | string | 否 | 是 | 数据记录的描述。缺省为空字符串。 |
 | thumbnail | Uint8Array | 否 | 是 | 数据记录缩略图。缺省时使用与分享内容类型匹配的图标作为缩略图。 建议开发者传入符合数据记录的缩略图，如无，可传入应用图标。 **说明：** 限制图片大小：32KB以下。过大的图片可能导致want数据超限无法拉起分享，可使用[ImagePacker.packToData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-imagepacker#packtodata13)压缩图片质量。 |
 | thumbnailUri | string | 否 | 是 | 数据记录缩略图的uri。缺省时使用与分享内容类型匹配的图标作为缩略图。支持的uri类型： 应用文件URI，参见：[应用文件分享](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-app-file) 用户文件URI，参见：[用户文件URI介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/user-file-uri-intro) **起始版本：** 5.0.0(12)。 **说明：** 与thumbnail字段同时存在时，优先使用thumbnail字段。 |
-| uri | string | 否 | 是 | 数据记录的uri。支持的uri类型： 应用文件URI，参见：[应用文件分享](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-app-file) 用户文件URI，参见：[用户文件URI介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/user-file-uri-intro) **说明：** 沙箱路径可通过[fileUri.getUriFromPath](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fileuri#fileurigeturifrompath)方法获取文件URI。content和uri二者至少有一个不为空。 |
-| content | string | 否 | 是 | 数据记录内容。链接（包含App Linking）、文本类型的内容通过该字段传递。 **说明：** content和uri二者至少有一个不为空。 |
+| uri | string | 否 | 是 | 数据记录的uri。支持的uri类型： 应用文件URI，参见：[应用文件分享](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-app-file) 用户文件URI，参见：[用户文件URI介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/user-file-uri-intro) **说明：** 沙箱路径可通过[fileUri.getUriFromPath](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fileuri#fileurigeturifrompath)方法获取文件URI。content和uri二者至少有一个不为空，否则会导致分享失败。 |
+| content | string | 否 | 是 | 数据记录内容。链接（包含App Linking）、文本类型的内容通过该字段传递。 **说明：** content和uri二者至少有一个不为空，否则会导致分享失败。 |
 | extraData | Record> | 否 | 是 | 扩展数据，用于向目标应用/设备分享自定义的扩展内容。 |
 | revisitShareRecordData | [RevisitShareRecordData](#revisitsharerecorddata) | 否 | 是 | 通过该字段生成二维码复访分享图。支持类型见[RevisitShareRecordType](#revisitsharerecordtype)。 **起始版本：** 6.1.0(23)。 |
 
@@ -60,11 +60,11 @@ import { systemShare } from '@kit.ShareKit';
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| anchor | [ShareControllerAnchor](#sharecontrolleranchor) | string | 否 | 是 | 类型为string时，表示分享面板关联的控件ID（[ArkUI组件常规属性的id值](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-common-attributes#常规属性)）。 类型为ShareControllerAnchor时，表示锚点位置。 不传此参数时，面板会显示在默认位置(居中)。 |
+| anchor | [ShareControllerAnchor](#sharecontrolleranchor) | string | 否 | 是 | 类型为string时，表示分享面板关联的控件ID（[ArkUI组件常规属性的id值](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-common-attributes#常规属性)）。 类型为ShareControllerAnchor时，表示锚点位置。 不传此参数时，面板会显示在默认位置（居中）。 |
 | previewMode | [SharePreviewMode](#sharepreviewmode) | 否 | 是 | 预览的模式，缺省为卡片模式。 |
 | selectionMode | [SelectionMode](#selectionmode) | 否 | 是 | 选择的模式，缺省为单选模式。 |
 | excludedAbilities | Array | 否 | 是 | 操作区不需要显示的能力列表。 **起始版本：** 5.0.0(12)。 |
-| appLaunchTrustInfo | Array | 否 | 是 | 通过配置[应用唯一标识符](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-bundleinfo#signatureinfo)（appIdentifier字段）列表，指定可分享的目标应用名单。仅取前50个配置项，超出部分不生效。需申请权限ohos.permission.SET_SYSTEMSHARE_APPLAUNCHTRUSTLIST，该能力受限开放，仅支持企业应用限制内部数据分享到企业集团信任的应用。 **起始版本：** 6.0.1(21)。 |
+| appLaunchTrustInfo | Array | 否 | 是 | 通过配置[应用唯一标识符](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-bundleinfo#signatureinfo)（appIdentifier字段）列表，指定可分享的目标应用名单，系统仅读取前50个配置项，超出部分将不生效。调用此功能需申请ohos.permission.SET_SYSTEMSHARE_APPLAUNCHTRUSTLIST权限。该能力属于受限开放范围，仅限企业应用用于限制内部数据分享至集团信任的应用列表。 **起始版本：** 6.0.1(21)。 |
 
 #### ShareControllerAnchor
 
@@ -80,7 +80,7 @@ import { systemShare } from '@kit.ShareKit';
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| windowOffset | [Offset](#offset) | 否 | 否 | 相对锚点的窗体偏移值。 |
+| windowOffset | [Offset](#offset) | 否 | 否 | 表示共享控制器的窗口偏移量，推荐设置组件左上角顶点的坐标。 |
 | size | [Size](#size) | 否 | 是 | 锚点矩形的尺寸，缺省时，锚点是一个点，即宽高都为0。 |
 
 #### Offset
@@ -125,7 +125,7 @@ shareCompleted事件的返回值，用于获知用户分享渠道信息。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| targetAbilityInfo | [ShareAbilityInfo](#shareabilityinfo) | 是 | 否 | 用户分享渠道的信息。 |
+| targetAbilityInfo | [ShareAbilityInfo](#shareabilityinfo) | 否 | 否 | 用户分享渠道的信息。 |
 
 #### ShareAbilityInfo
 
@@ -139,11 +139,13 @@ shareCompleted事件的返回值，用于获知用户分享渠道信息。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| name | string | 否 | 否 | 分享渠道的名称。 - 系统操作有固定名称。请参见：[ShareAbilityName](#shareabilityname)。 - 非系统操作采用'[bundleName]#[moduleName]#[abilityName]'格式拼接。 |
+| name | string | 否 | 否 | 分享渠道的名称。 - 系统操作有固定名称。请参见：[ShareAbilityName](#shareabilityname)枚举值。 - 非系统操作采用'[bundleName]#[moduleName]#[abilityName]'格式拼接。 |
 
 #### ContactInfo
 
 意图框架推荐联系人的信息。当分享到推荐联系人时，携带此参数用于区分。
+
+数据捐献参考：[共享联系人信息到分享推荐区](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-intents-share)。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -278,14 +280,14 @@ shareCompleted事件的返回值，用于获知用户分享渠道信息。
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| COPY_TO_PASTEBOARD | SystemShare_CopyToPasteboard | 复制 |
-| SAVE_TO_MEDIA_ASSET | SystemShare_SaveToMediaAsset | 保存至图库 |
-| SAVE_AS_FILE | SystemShare_SaveAsFile | 另存为 |
-| PRINT | SystemShare_Print | 打印 |
-| SAVE_TO_SUPERHUB | SystemShare_Superhub | 添加至中转站 |
-| COLLECTION | SystemShare_Collection | 小艺知识空间 |
-| HARMONYSHARE | SystemShare_HarmonyShare | 华为分享 |
-| ENCRYPT | SystemShare_Encrypt | 加密分享 |
+| COPY_TO_PASTEBOARD | 'SystemShare_CopyToPasteboard' | 复制 |
+| SAVE_TO_MEDIA_ASSET | 'SystemShare_SaveToMediaAsset' | 保存至图库 |
+| SAVE_AS_FILE | 'SystemShare_SaveAsFile' | 另存为 |
+| PRINT | 'SystemShare_Print' | 打印 |
+| SAVE_TO_SUPERHUB | 'SystemShare_Superhub' | 添加至中转站 |
+| COLLECTION | 'SystemShare_Collection' | 小艺知识空间 |
+| HARMONYSHARE | 'SystemShare_HarmonyShare' | 华为分享 |
+| ENCRYPT | 'SystemShare_Encrypt' | 加密分享 |
 
 #### RevisitShareRecordType
 
@@ -322,7 +324,7 @@ shareCompleted事件的返回值，用于获知用户分享渠道信息。
 
 一个分享数据对象至少存在一条记录，开发者需要在SharedData实例化过程中，通过构造器第一个参数传入；当分享数据包含多条数据记录时，则需要使用addRecord(record: SharedRecord)方法追加记录。
 
-![](./img/note_3.0-zh-cn.png) 数据记录当前最大可支持500条，且需同时满足数据总大小不超过IPC传输上限200KB。
+![](./img/note_3.0-zh-cn.png) 数据记录当前最大可支持500条，且需同时满足数据总大小不超过[IPC](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ipc-rpc-overview#基本概念)传输上限200KB。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -454,8 +456,8 @@ aboutToAppear(): void {
 
 分享面板在不同设备下有不同的展示形式，根据屏幕规格&参数为应用提供不同的预览形式以及分享方式。
 
-- 例如手机设备中，分享以模态显示；横屏/折叠屏展开状态时，分享面板以对话框形式显示；
-- 而2in1设备及tablet，需要传入锚点信息并且以悬浮窗（Popup）形式显示。
+- 例如手机和TV设备中，分享以模态显示；横屏/折叠屏展开状态时，分享面板以对话框形式显示；
+- 而PC/2in1设备及Tablet，需要传入锚点信息并且以悬浮窗（Popup）形式显示。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -534,7 +536,7 @@ show(context: common.UIAbilityContext, options: ShareControllerOptions): Promise
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败) | Parameter error. |
-| [1003702001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/share-error-code#section1003702001-数据记录格式非法类型不支持) | Record types are not support.(The batch and multiple selection modes support { @link UDMF.File } type records only.) |
+| [1003702001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/share-error-code#section1003702001-数据记录格式非法类型不支持) | Record types are not support. (The batch and multiple selection modes support { @link UDMF.File } type records only.) |
 | [1003702002](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/share-error-code#section1003702002-跨进程传输数据量超过上限) | IPC data is oversized. |
 
 示例：
@@ -571,7 +573,7 @@ export default struct LinkScenario {
 
 on(event: 'dismiss', callback: () => void): void
 
-注册分享面板关闭事件监听。
+注册分享面板关闭事件监听。使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -630,7 +632,7 @@ private async handelShareDismiss(): Promise<void> {
 
 off(event: 'dismiss', callback: () => void): void
 
-取消分享面板关闭事件监听。
+取消分享面板关闭事件监听。使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -681,13 +683,11 @@ private async handelShareDisableDismiss(): Promise<void> {
 
 on(type: 'shareCompleted', callback: Callback<ShareOperationResult>): void
 
-注册用户完成分享事件监听。返回用户分享渠道，可用于数据统计等。
+注册用户完成分享事件监听。返回用户分享渠道，可用于数据统计等。使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.Collaboration.SystemShare
-
-设备行为差异： 该接口在TV中无效果，在其他设备类型中可正常调用。
 
 起始版本： 5.1.0(18)
 
@@ -696,7 +696,7 @@ on(type: 'shareCompleted', callback: Callback<ShareOperationResult>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件回调类型，支持的事件为'shareCompleted'，当用户完成分享时，触发该事件。 |
-| callback | Callback | 是 | 事件回调。 |
+| callback | Callback | 是 | 事件回调，可通过回调参数获取分享渠道。 |
 
 错误码：
 
@@ -741,13 +741,11 @@ private async handelShareCompleted(): Promise<void> {
 
 off(type: 'shareCompleted', callback?: Callback<ShareOperationResult>): void
 
-取消用户完成分享事件监听。
+取消用户完成分享事件监听。使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.Collaboration.SystemShare
-
-设备行为差异： 该接口在TV中无效果，在其他设备类型中可正常调用。
 
 起始版本： 5.1.0(18)
 

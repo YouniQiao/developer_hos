@@ -2,8 +2,8 @@
 title: "SafetyDetect（安全检测）"
 upstream_id: "harmonyos-references/errorcode-devicesecurity-safetydetect"
 catalog: "harmonyos-references"
-content_hash: "68b37e312ad6"
-synced_at: "2026-07-09T00:59:15.213743"
+content_hash: "bec6c920c725"
+synced_at: "2026-07-28T16:50:26.553965"
 ---
 
 # SafetyDetect（安全检测）
@@ -95,11 +95,12 @@ Verify capability fail.
 
 可能原因
 
-应用未开通安全检测服务。
+1. 应用未在AppGallery Connect中开通该服务。
+2. 应用已开通服务但未重新申请Profile。
 
 处理步骤
 
-开通安全检测服务
+开通安全检测服务。
 
 1. 参考[开通Device Security服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-deviceverify-activateservice)在AppGallery Connect开通“安全检测服务”。
 2. 重新[申请Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-profile-0000002270709473)，将新申请到的Profile作为工程的签名文件后重试。
@@ -113,8 +114,6 @@ The number of calls exceeds the parallel threshold.
 错误描述
 
 接口被同时调用的数量超出最大阈值。
-
-5.1.0(18)版本开始新增该错误码。
 
 可能原因
 
@@ -136,8 +135,6 @@ The invoking frequency exceeds the threshold.
 
 接口被在单位时间内调用次数超出最大阈值。
 
-5.1.0(18)版本开始新增该错误码。
-
 每个应用在每个设备上每天最多可以调用1万次接口、每分钟最多可以调用5次系统完整性检测接口。
 
 可能原因
@@ -158,8 +155,6 @@ Operation timeout.
 
 接口执行超时。
 
-5.1.0(18)版本开始新增该错误码。
-
 可能原因
 
 系统高负载或者网络拥堵。
@@ -178,8 +173,6 @@ The cloud service traffic exceeds the threshold.
 
 云服务请求量过多，超出限流阈值。
 
-5.1.0(18)版本开始新增该错误码。
-
 可能原因
 
 大范围设备同时调用云侧接口。
@@ -187,3 +180,21 @@ The cloud service traffic exceeds the threshold.
 处理步骤
 
 建议延迟重试，比如延迟5秒重试，如果重试再次失败，则每次以指数递增间隔重试。
+
+#### 1010800011 风险因子查询失败
+
+错误信息
+
+Failed to query the risk factor.
+
+错误描述
+
+风险因子查询失败。
+
+可能原因
+
+接口执行流程中调用系统其它接口出现异常。
+
+处理步骤
+
+请优先重试，若重试不成功，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。

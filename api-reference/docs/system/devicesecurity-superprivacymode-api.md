@@ -2,8 +2,8 @@
 title: "SuperPrivacyMode（超级隐私模式）"
 upstream_id: "harmonyos-references/devicesecurity-superprivacymode-api"
 catalog: "harmonyos-references"
-content_hash: "5a12e0ca9997"
-synced_at: "2026-07-09T00:59:15.206376"
+content_hash: "b9a7afcad065"
+synced_at: "2026-07-28T16:50:26.751504"
 ---
 
 # SuperPrivacyMode（超级隐私模式）
@@ -228,6 +228,8 @@ try {
 #### SuperPrivacyPolicy
 
 超级隐私模式管控策略对象，表示超级隐私对隐私传感器的控制策略。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力：SystemCapability.Security.SecurityPrivacyServer
 

@@ -2,8 +2,8 @@
 title: "ArkUI_NodeContentEvent"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-nodecontentevent"
 catalog: "harmonyos-references"
-content_hash: "a2412f717fa3"
-synced_at: "2026-07-09T00:58:42.171341"
+content_hash: "4b63b4583c54"
+synced_at: "2026-07-28T16:49:32.868946"
 ---
 
 # ArkUI_NodeContentEvent
@@ -14,7 +14,7 @@ typedef struct ArkUI_NodeContentEvent ArkUI_NodeContentEvent
 
 #### 概述
 
-定义NodeContent事件的通用结构类型。
+定义NodeContent事件的通用结构类型，作为NodeContent事件回调的事件参数，用于获取事件类型和触发事件的NodeContent对象。
 
 起始版本： 12
 

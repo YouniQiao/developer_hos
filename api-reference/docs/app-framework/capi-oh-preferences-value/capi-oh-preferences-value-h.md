@@ -2,8 +2,8 @@
 title: "oh_preferences_value.h"
 upstream_id: "harmonyos-references/capi-oh-preferences-value-h"
 catalog: "harmonyos-references"
-content_hash: "b971d93f916b"
-synced_at: "2026-07-09T00:57:18.587992"
+content_hash: "54d2b12e3a10"
+synced_at: "2026-07-28T16:40:51.089359"
 ---
 
 # oh_preferences_value.h
@@ -28,7 +28,7 @@ synced_at: "2026-07-09T00:57:18.587992"
 
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
-| [OH_PreferencesPair](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-preferences-oh-preferencespair) | OH_PreferencesPair | 定义Preferences使用的KV数据对象类型。 |
+| [OH_PreferencesPair](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-preferences-oh-preferencespair) | OH_PreferencesPair | 定义Preferences使用的键值对数据对象类型。 |
 | [OH_PreferencesValue](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-preferences-oh-preferencesvalue) | OH_PreferencesValue | 定义PreferencesValue对象类型。 |
 
 #### [h2]枚举
@@ -41,8 +41,8 @@ synced_at: "2026-07-09T00:57:18.587992"
 
 | 名称 | 描述 |
 | --- | --- |
-| [const char *OH_PreferencesPair_GetKey(const OH_PreferencesPair *pairs, uint32_t index)](#oh_preferencespair_getkey) | 获取KV数据中索引对应数据的键。 |
-| [const OH_PreferencesValue *OH_PreferencesPair_GetPreferencesValue(const OH_PreferencesPair *pairs, uint32_t index)](#oh_preferencespair_getpreferencesvalue) | 获取KV数据数组中索引对应的值。 |
+| [const char *OH_PreferencesPair_GetKey(const OH_PreferencesPair *pairs, uint32_t index)](#oh_preferencespair_getkey) | 获取键值对数据中索引对应数据的键。 |
+| [const OH_PreferencesValue *OH_PreferencesPair_GetPreferencesValue(const OH_PreferencesPair *pairs, uint32_t index)](#oh_preferencespair_getpreferencesvalue) | 获取键值对数据数组中索引对应的值。 |
 | [Preference_ValueType OH_PreferencesValue_GetValueType(const OH_PreferencesValue *object)](#oh_preferencesvalue_getvaluetype) | 获取PreferencesValue对象的数据类型。 |
 | [int OH_PreferencesValue_GetInt(const OH_PreferencesValue *object, int *value)](#oh_preferencesvalue_getint) | 从PreferencesValue对象[OH_PreferencesValue](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-preferences-oh-preferencesvalue)中获取一个整型值。 |
 | [int OH_PreferencesValue_GetBool(const OH_PreferencesValue *object, bool *value)](#oh_preferencesvalue_getbool) | 从PreferencesValue对象[OH_PreferencesValue](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-preferences-oh-preferencesvalue)中获取一个布尔值。 |
@@ -108,7 +108,7 @@ const char *OH_PreferencesPair_GetKey(const OH_PreferencesPair *pairs, uint32_t 
 ```
  描述
 
-获取KV数据中索引对应数据的键。
+获取键值对数据中索引对应数据的键。
 
 起始版本： 13
 
@@ -116,8 +116,8 @@ const char *OH_PreferencesPair_GetKey(const OH_PreferencesPair *pairs, uint32_t 
 
 | 参数项 | 描述 |
 | --- | --- |
-| const [OH_PreferencesPair](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-preferences-oh-preferencespair) *pairs | 目标KV数据[OH_PreferencesPair](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-preferences-oh-preferencespair)的指针。 |
-| uint32_t index | 目标KV数据[OH_PreferencesPair](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-preferences-oh-preferencespair)的索引值。 |
+| const [OH_PreferencesPair](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-preferences-oh-preferencespair) *pairs | 目标键值对数据[OH_PreferencesPair](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-preferences-oh-preferencespair)的指针。 |
+| uint32_t index | 目标键值对数据[OH_PreferencesPair](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-preferences-oh-preferencespair)的索引值。 |
 
 返回：
 
@@ -132,7 +132,7 @@ const OH_PreferencesValue *OH_PreferencesPair_GetPreferencesValue(const OH_Prefe
 ```
  描述
 
-获取KV数据数组中索引对应的值。
+获取键值对数据数组中索引对应的值。
 
 起始版本： 13
 
@@ -140,8 +140,8 @@ const OH_PreferencesValue *OH_PreferencesPair_GetPreferencesValue(const OH_Prefe
 
 | 参数项 | 描述 |
 | --- | --- |
-| const [OH_PreferencesPair](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-preferences-oh-preferencespair) *pairs | 目标KV数据[OH_PreferencesPair](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-preferences-oh-preferencespair)的指针。 |
-| uint32_t index | 目标KV数据[OH_PreferencesPair](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-preferences-oh-preferencespair)的索引值。 |
+| const [OH_PreferencesPair](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-preferences-oh-preferencespair) *pairs | 目标键值对数据[OH_PreferencesPair](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-preferences-oh-preferencespair)的指针。 |
+| uint32_t index | 目标键值对数据[OH_PreferencesPair](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-preferences-oh-preferencespair)的索引值，取值范围[0, count-1]（count为pairs数组长度）。 |
 
 返回：
 

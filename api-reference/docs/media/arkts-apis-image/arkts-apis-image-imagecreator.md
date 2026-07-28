@@ -2,8 +2,8 @@
 title: "Interface (ImageCreator)"
 upstream_id: "harmonyos-references/arkts-apis-image-imagecreator"
 catalog: "harmonyos-references"
-content_hash: "84853eaa377d"
-synced_at: "2026-07-09T01:00:29.757295"
+content_hash: "10684f535c2b"
+synced_at: "2026-07-28T16:51:47.612013"
 ---
 
 # Interface (ImageCreator)
@@ -225,7 +225,7 @@ off(type: 'imageRelease', callback?: AsyncCallback<void>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 监听事件类型，如'imageRelease'。 |
-| callback | AsyncCallback | 否 | 回调函数。当移除注册成功时，err返回null，否则为错误对象。 |
+| callback | AsyncCallback | 否 | 回调函数。当移除注册成功时，err为undefined，否则为错误对象。 |
 
 示例：
 

@@ -2,8 +2,8 @@
 title: "属性"
 upstream_id: "harmonyos-references/arkts-basic-components-web-attributes"
 catalog: "harmonyos-references"
-content_hash: "900bb4dfc6ba"
-synced_at: "2026-07-17T16:17:32.861423"
+content_hash: "6be76d519932"
+synced_at: "2026-07-28T16:49:55.327125"
 ---
 
 # 属性
@@ -450,7 +450,7 @@ struct WebComponent {
 
 geolocationAccess(geolocationAccess: boolean)
 
-设置是否开启获取地理位置权限。当属性没有显式调用时，默认开启获取地理位置权限。具体使用方式参考[管理位置权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-geolocation-permission)。
+设置是否开启获取地理位置权限。当属性没有显式调用时，默认开启。具体使用方式参考[管理位置权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-geolocation-permission)。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -458,7 +458,7 @@ geolocationAccess(geolocationAccess: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| geolocationAccess | boolean | 是 | 设置是否开启获取地理位置权限。 true表示设置开启获取地理位置权限，false表示设置不开启获取地理位置权限。 传入undefined或null时为false。 |
+| geolocationAccess | boolean | 是 | 设置是否开启获取地理位置权限。 true表示开启，false表示不开启。 传入undefined或null时为false。 |
 
 示例：
 
@@ -4544,4 +4544,49 @@ struct WebComponent {
   <input type="text" placeholder="Text">
 </body>
 </html>
+```
+
+#### enableFullscreenVideoOverlay
+
+enableFullscreenVideoOverlay(enabled: boolean)
+
+设置Web组件是否开启覆盖式全屏播放功能。当属性没有显式调用时，默认不开启该能力。
+
+![](./img/note_3.0-zh-cn.png)
+
+- 当前只支持H264、H265解码格式的视频。
+- 只有视频元素发出的全屏请求才会响应。
+
+起始版本： 26.0.0
+
+系统能力： SystemCapability.Web.Webview.Core
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+设备行为差异： 该接口在Phone/Tablet设备中可正常调用，在其他设备中无效。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| enabled | boolean | 是 | 设置Web组件是否开启覆盖式全屏播放功能。 true表示开启该功能。 false表示不开启。 |
+
+示例：
+
+```
+// xxx.ets
+import { webview } from '@kit.ArkWeb';
+
+@Entry
+@Component
+struct WebComponent {
+  controller: webview.WebviewController = new webview.WebviewController();
+
+  build() {
+    Column() {
+      Web({ src: 'www.example.com', controller: this.controller })
+      .enableFullscreenVideoOverlay(true)
+    }
+  }
+}
 ```

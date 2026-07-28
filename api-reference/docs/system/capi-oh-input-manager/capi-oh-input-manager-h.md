@@ -2,8 +2,8 @@
 title: "oh_input_manager.h"
 upstream_id: "harmonyos-references/capi-oh-input-manager-h"
 catalog: "harmonyos-references"
-content_hash: "e63dd758f4f4"
-synced_at: "2026-07-09T00:59:50.696779"
+content_hash: "d090fcf625e4"
+synced_at: "2026-07-28T16:51:08.342992"
 ---
 
 # oh_input_manager.h
@@ -1386,7 +1386,7 @@ void OH_Input_SetMouseEventAxisValue(struct Input_MouseEvent* mouseEvent, float 
 | 参数项 | 描述 |
 | --- | --- |
 | struct [Input_MouseEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-mouseevent)* mouseEvent | 鼠标事件对象，通过[OH_Input_CreateMouseEvent](#oh_input_createmouseevent)接口可以创建鼠标事件对象。 使用完需使用[OH_Input_DestroyMouseEvent](#oh_input_destroymouseevent)接口销毁鼠标事件对象。 |
-| float axisValue | 轴事件的值，正数向前滚动（例如，1.0表示向前滚动一个单位），负数向后滚动（例如，-1.0表示向后滚动一个单位）,零表示没有滚动。 |
+| float axisValue | 轴事件的值，正数向前滚动（例如，1.0表示向前滚动一个单位），负数向后滚动（例如，-1.0表示向后滚动一个单位），零表示没有滚动。 |
 
 #### [h2]OH_Input_GetMouseEventAxisValue()
 
@@ -2189,7 +2189,7 @@ Input_Result OH_Input_GetAxisEventAxisValue(const Input_AxisEvent* axisEvent,Inp
 | --- | --- |
 | const [Input_AxisEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-axisevent)* axisEvent | 轴事件对象，通过[OH_Input_CreateAxisEvent](#oh_input_createaxisevent)接口可以创建轴事件对象。 使用完需使用[OH_Input_DestroyAxisEvent](#oh_input_destroyaxisevent)接口销毁轴事件对象。 |
 | [InputEvent_AxisType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-axis-type-h#inputevent_axistype) axisType | 轴类型，具体请参考[InputEvent_AxisType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-axis-type-h#inputevent_axistype)。 |
-| double* axisValue | 出参，返回轴事件的值，正数向前滚动（例如，1.0表示向前滚动一个单位），负数向后滚动（例如，-1.0表示向后滚动一个单位）,零表示没有滚动。 |
+| double* axisValue | 出参，返回轴事件的值，正数向前滚动（例如，1.0表示向前滚动一个单位），负数向后滚动（例如，-1.0表示向后滚动一个单位），零表示没有滚动。 |
 
 返回：
 
@@ -2779,7 +2779,7 @@ Input_Result OH_Input_AddKeyEventInterceptor(Input_KeyEventCallback callback, In
 
 | 类型 | 说明 |
 | --- | --- |
-| [Input_Result](#input_result) | 若添加按键事件的拦截成功，则返回[INPUT_SUCCESS](#input_result)；若权限校验失败，则返回[INPUT_PERMISSION_DENIED](#input_result)； 若callback为空，则返回[INPUT_PARAMETER_ERROR](#input_result)；若重复添加拦截器，则返回[INPUT_REPEAT_INTERCEPTOR](#input_result)； 若服务异常；则返回[INPUT_SERVICE_EXCEPTION](#input_result)。 |
+| [Input_Result](#input_result) | 若添加按键事件的拦截成功，则返回[INPUT_SUCCESS](#input_result)；若权限校验失败，则返回[INPUT_PERMISSION_DENIED](#input_result)； 若callback为空，则返回[INPUT_PARAMETER_ERROR](#input_result)；若重复添加拦截器，则返回[INPUT_REPEAT_INTERCEPTOR](#input_result)； 若服务异常，则返回[INPUT_SERVICE_EXCEPTION](#input_result)。 |
 
 #### [h2]OH_Input_AddInputEventInterceptor()
 
@@ -2809,7 +2809,7 @@ Input_Result OH_Input_AddInputEventInterceptor(Input_InterceptorEventCallback *c
 
 | 类型 | 说明 |
 | --- | --- |
-| [Input_Result](#input_result) | 若添加输入事件的拦截成功，则返回[INPUT_SUCCESS](#input_result)；若权限校验失败，则返回[INPUT_PERMISSION_DENIED](#input_result)； 若callback为空，则返回[INPUT_PARAMETER_ERROR](#input_result)；若重复添加拦截器，则返回[INPUT_REPEAT_INTERCEPTOR](#input_result)； 若服务异常；则返回[INPUT_SERVICE_EXCEPTION](#input_result)。 |
+| [Input_Result](#input_result) | 若添加输入事件的拦截成功，则返回[INPUT_SUCCESS](#input_result)；若权限校验失败，则返回[INPUT_PERMISSION_DENIED](#input_result)； 若callback为空，则返回[INPUT_PARAMETER_ERROR](#input_result)；若重复添加拦截器，则返回[INPUT_REPEAT_INTERCEPTOR](#input_result)； 若服务异常，则返回[INPUT_SERVICE_EXCEPTION](#input_result)。 |
 
 #### [h2]OH_Input_RemoveKeyEventInterceptor()
 
@@ -3601,6 +3601,8 @@ int32_t OH_Input_InjectTouchEvent(const struct Input_TouchEvent* touchEvent)
 
 从API版本26.0.0开始，持有ohos.permission.CONTROL_DEVICE权限的调用方也可以直接使用本接口。
 
+系统能力： SystemCapability.MultimodalInput.Input.Core
+
 设备行为差异：该接口在PC/2in1设备中可正常调用，在其他设备上调用无效果。
 
 需要权限： ohos.permission.CONTROL_DEVICE
@@ -4204,7 +4206,7 @@ Input_Result OH_Input_GetPointerStyle(int32_t windowId, int32_t *pointerStyle)
 ```
  描述
 
-获取指定窗口的鼠标光标样式。
+获取指定窗口的鼠标光标样式。此接口仅支持获取本应用进程内窗口的鼠标光标样式。
 
 设备行为差异：该接口在Wearable设备上调用无效果，在其他设备上可正常调用。
 
@@ -4230,7 +4232,7 @@ Input_Result OH_Input_SetPointerStyle(int32_t windowId, int32_t pointerStyle)
 ```
  描述
 
-设置指定窗口的鼠标光标样式。
+设置指定窗口的鼠标光标样式。此接口仅支持设置本应用进程内窗口的鼠标光标样式。
 
 设备行为差异：该接口在Wearable设备上调用无效果，在其他设备上可正常调用。
 
@@ -4355,7 +4357,7 @@ Input_CursorConfig* OH_Input_CursorConfig_Create(bool followSystem)
 
 | 参数项 | 描述 |
 | --- | --- |
-| bool followSystem | 是否根据系统设置调整鼠标光标大小。false表示使用自定义鼠标光标样式大小，true表示根据系统设置调整鼠标光标大小，可调整范围为：[光标资源图大小，256×256]，单位为像素（px）。 |
+| bool followSystem | 是否根据系统设置调整鼠标光标大小。false表示使用自定义鼠标光标样式大小，true表示根据系统设置调整鼠标光标大小，可调整范围为：[光标资源图大小, 256×256]，单位为像素（px）。 |
 
 返回：
 
@@ -4413,7 +4415,7 @@ Input_Result OH_Input_SetCustomCursor(int32_t windowId, Input_CustomCursor* cust
 
 设置自定义鼠标光标样式。
 
-应用窗口布局改变、热区切换、页面跳转、光标移出再回到窗口、光标在窗口不同区域移动，以上场景可能导致光标切换回系统样式，需要开发者重新设置光标样式。
+应用窗口布局改变、热区切换、页面跳转、光标移出再回到窗口、光标在窗口不同区域移动，以上场景可能导致光标切换回系统样式，需要开发者重新设置光标样式。此接口仅支持设置本应用进程内窗口的自定义鼠标光标样式。
 
 起始版本： 22
 
@@ -4618,7 +4620,7 @@ Input_Result OH_Input_SetTouchEventPressure(struct Input_TouchEvent* touchEvent,
 ```
  描述
 
-设置触屏输入事件的压力。如果未设置压力值，或者不在合法范围内，默认值是0.0。
+设置触屏输入事件的压力。如果未设置压力值，或设置的值不在[0.0, 1.0]范围内，默认值是0.0。
 
 起始版本： 24
 
@@ -4854,4 +4856,4 @@ Input_Result OH_Input_BindInputDeviceToDisplay(int32_t inputDeviceId, int32_t di
 
 | 类型 | 说明 |
 | --- | --- |
-| [Input_Result](#input_result) | OH_Input_BindInputDeviceToDisplay函数返回值： [INPUT_SUCCESS](#input_result)表示操作成功。 [INPUT_PERMISSION_DENIED](#input_result)表示权限校验失败。 [INPUT_PARAMETER_ERROR](#input_result)表示参数检查失败。 [INPUT_SERVICE_EXCEPTION](#input_result)表示服务异常，请重试。 |
+| [Input_Result](#input_result) | OH_Input_BindInputDeviceToDisplay函数返回值： [INPUT_SUCCESS](#input_result)表示操作成功。 [INPUT_PERMISSION_DENIED](#input_result)表示权限校验失败。 [INPUT_PARAMETER_ERROR](#input_result)表示参数检查失败（输入设备不存在，显示屏设备不存在，或者输入设备不是手写笔设备）。 [INPUT_SERVICE_EXCEPTION](#input_result)表示服务异常，请重试。 |

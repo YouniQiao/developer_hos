@@ -2,8 +2,8 @@
 title: "WhitePointArray"
 upstream_id: "harmonyos-references/capi-nativecolorspacemanager-whitepointarray"
 catalog: "harmonyos-references"
-content_hash: "53351bf3a85d"
-synced_at: "2026-07-09T01:01:00.331042"
+content_hash: "8bacff9a447d"
+synced_at: "2026-07-28T16:52:15.706117"
 ---
 
 # WhitePointArray
@@ -14,7 +14,7 @@ typedef struct WhitePointArray {...} WhitePointArray
 
 #### 概述
 
-提供白点数组结构体，白点是指在当前色域中表示白色的坐标。
+提供白点数组结构体，白点是在当前色域中表示白色的坐标。
 
 起始版本： 13
 
@@ -28,4 +28,4 @@ typedef struct WhitePointArray {...} WhitePointArray
 
 | 名称 | 描述 |
 | --- | --- |
-| float arr[2] | 表示白点返回数组。 |
+| float arr[2] | 表示白点坐标数组。arr[0]表示x坐标，arr[1]表示y坐标，用于在色域空间中精确定义白色基准点，影响色域的显示效果和颜色准确性。 |

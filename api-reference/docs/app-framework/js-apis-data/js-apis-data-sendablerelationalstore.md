@@ -1,12 +1,12 @@
 ---
-title: "@ohos.data.sendableRelationalStore（共享关系型数据库）"
+title: "@ohos.data.sendableRelationalStore (共享关系型数据库)"
 upstream_id: "harmonyos-references/js-apis-data-sendablerelationalstore"
 catalog: "harmonyos-references"
-content_hash: "38be08bd9bcd"
-synced_at: "2026-07-09T00:57:16.503902"
+content_hash: "2936d0d74615"
+synced_at: "2026-07-28T16:40:49.709761"
 ---
 
-# @ohos.data.sendableRelationalStore（共享关系型数据库）
+# @ohos.data.sendableRelationalStore (共享关系型数据库)
 
 该模块针对关系型数据库（Relational Database，RDB）提供了sendable支持。支持从查询结果集中获取sendable类型ValuesBucket用于并发实例间传递。
 
@@ -456,6 +456,7 @@ async function queryByName(context: Context, name: string) {
     securityLevel: relationalStore.SecurityLevel.S3,
   };
 
+  let result: sendableRelationalStore.ValuesBucket | undefined;
   let store = await relationalStore.getRdbStore(context, CONFIG);
   console.info(`Get store successfully!`);
 
@@ -465,9 +466,11 @@ async function queryByName(context: Context, name: string) {
   const resultSet = await store.query(predicates);
   if (resultSet.rowCount > 0 && resultSet.goToFirstRow()) {
     // 获取可用于跨线程传递的ValuesBucket返回查询结果
-    return resultSet.getSendableRow();
+    result = resultSet.getSendableRow();
   }
-  return null;
+  resultSet.close();
+  await store.close();
+  return result;
 }
 
 @Entry

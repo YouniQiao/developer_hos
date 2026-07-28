@@ -2,8 +2,8 @@
 title: "Interface (ResultSet)"
 upstream_id: "harmonyos-references/arkts-apis-data-relationalstore-resultset"
 catalog: "harmonyos-references"
-content_hash: "a0eceb539cce"
-synced_at: "2026-07-09T00:57:16.594307"
+content_hash: "94a2a3d84f26"
+synced_at: "2026-07-28T16:40:49.058084"
 ---
 
 # Interface (ResultSet)
@@ -79,6 +79,7 @@ try {
   let resultSet: relationalStore.ResultSet = await store.querySql("SELECT e1.NAME, e2.NAME, e1.AGE, e2.AGE FROM EMPLOYEE1 e1 LEFT JOIN EMPLOYEE2 e2 ON e1.SALARY=e2.SALARY");
   if (resultSet != undefined) {
     const names = resultSet.getColumnNames();
+    resultSet.close();
   }
 } catch (err) {
   console.error(`Failed to get column names: code:${err.code}, message:${err.message}`);
@@ -112,25 +113,25 @@ getColumnIndex(columnName: string): number
 | **错误码ID** | **错误信息** |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 14800000 | Inner error. |
-| 14800011 | The current operation failed because the database is corrupted. |
+| 14800000 | Inner error. 适用版本：12+ |
+| 14800011 | The current operation failed because the database is corrupted. 适用版本：12+ |
 | 14800013 | Column index is out of bounds. |
-| 14800014 | The target instance is already closed. |
-| 14800019 | The SQL must be a query statement. |
-| 14800021 | SQLite: Generic error. |
-| 14800022 | SQLite: Callback routine requested an abort. |
-| 14800023 | SQLite: Access permission denied. |
-| 14800024 | SQLite: The database file is locked. |
-| 14800025 | SQLite: A table in the database is locked. |
-| 14800026 | SQLite: The database is out of memory. |
-| 14800027 | SQLite: Attempt to write a readonly database. |
-| 14800028 | SQLite: Some kind of disk I/O error occurred. |
-| 14800029 | SQLite: The database is full. |
-| 14800030 | SQLite: Unable to open the database file. |
-| 14800031 | SQLite: TEXT or BLOB exceeds size limit. |
-| 14800032 | SQLite: Abort due to constraint violation. |
-| 14800033 | SQLite: Data type mismatch. |
-| 14800034 | SQLite: Library used incorrectly. |
+| 14800014 | The target instance is already closed. 适用版本：12+ |
+| 14800019 | The SQL must be a query statement. 适用版本：12+ |
+| 14800021 | SQLite: Generic error. 适用版本：12+ |
+| 14800022 | SQLite: Callback routine requested an abort. 适用版本：12+ |
+| 14800023 | SQLite: Access permission denied. 适用版本：12+ |
+| 14800024 | SQLite: The database file is locked. 适用版本：12+ |
+| 14800025 | SQLite: A table in the database is locked. 适用版本：12+ |
+| 14800026 | SQLite: The database is out of memory. 适用版本：12+ |
+| 14800027 | SQLite: Attempt to write a readonly database. 适用版本：12+ |
+| 14800028 | SQLite: Some kind of disk I/O error occurred. 适用版本：12+ |
+| 14800029 | SQLite: The database is full. 适用版本：12+ |
+| 14800030 | SQLite: Unable to open the database file. 适用版本：12+ |
+| 14800031 | SQLite: TEXT or BLOB exceeds size limit. 适用版本：12+ |
+| 14800032 | SQLite: Abort due to constraint violation. 适用版本：12+ |
+| 14800033 | SQLite: Data type mismatch. 适用版本：12+ |
+| 14800034 | SQLite: Library used incorrectly. 适用版本：12+ |
 
 示例：
 
@@ -170,25 +171,25 @@ getColumnName(columnIndex: number): string
 | **错误码ID** | **错误信息** |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 14800000 | Inner error. |
-| 14800011 | The current operation failed because the database is corrupted. |
+| 14800000 | Inner error. 适用版本：12+ |
+| 14800011 | The current operation failed because the database is corrupted. 适用版本：12+ |
 | 14800013 | Column index is out of bounds. |
-| 14800014 | The target instance is already closed. |
-| 14800019 | The SQL must be a query statement. |
-| 14800021 | SQLite: Generic error. |
-| 14800022 | SQLite: Callback routine requested an abort. |
-| 14800023 | SQLite: Access permission denied. |
-| 14800024 | SQLite: The database file is locked. |
-| 14800025 | SQLite: A table in the database is locked. |
-| 14800026 | SQLite: The database is out of memory. |
-| 14800027 | SQLite: Attempt to write a readonly database. |
-| 14800028 | SQLite: Some kind of disk I/O error occurred. |
-| 14800029 | SQLite: The database is full. |
-| 14800030 | SQLite: Unable to open the database file. |
-| 14800031 | SQLite: TEXT or BLOB exceeds size limit. |
-| 14800032 | SQLite: Abort due to constraint violation. |
-| 14800033 | SQLite: Data type mismatch. |
-| 14800034 | SQLite: Library used incorrectly. |
+| 14800014 | The target instance is already closed. 适用版本：12+ |
+| 14800019 | The SQL must be a query statement. 适用版本：12+ |
+| 14800021 | SQLite: Generic error. 适用版本：12+ |
+| 14800022 | SQLite: Callback routine requested an abort. 适用版本：12+ |
+| 14800023 | SQLite: Access permission denied. 适用版本：12+ |
+| 14800024 | SQLite: The database file is locked. 适用版本：12+ |
+| 14800025 | SQLite: A table in the database is locked. 适用版本：12+ |
+| 14800026 | SQLite: The database is out of memory. 适用版本：12+ |
+| 14800027 | SQLite: Attempt to write a readonly database. 适用版本：12+ |
+| 14800028 | SQLite: Some kind of disk I/O error occurred. 适用版本：12+ |
+| 14800029 | SQLite: The database is full. 适用版本：12+ |
+| 14800030 | SQLite: Unable to open the database file. 适用版本：12+ |
+| 14800031 | SQLite: TEXT or BLOB exceeds size limit. 适用版本：12+ |
+| 14800032 | SQLite: Abort due to constraint violation. 适用版本：12+ |
+| 14800033 | SQLite: Data type mismatch. 适用版本：12+ |
+| 14800034 | SQLite: Library used incorrectly. 适用版本：12+ |
 
 示例：
 
@@ -212,7 +213,7 @@ getColumnType(columnIdentifier: number | string): Promise<ColumnType>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| columnIdentifier | number | string | 是 | 表示结果集中指定列的索引或名称。索引必须是非负整数，最大不能超过属性columnNames的长度。名称必须是属性columnNames内的名称。 |
+| columnIdentifier | number | string | 是 | 表示结果集中指定列的索引或列名。索引必须是非负整数，且必须小于属性columnNames的长度。列名必须是属性columnNames内的名称。 |
 
 返回值：
 
@@ -355,25 +356,25 @@ goTo(offset:number): boolean
 | **错误码ID** | **错误信息** |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 14800000 | Inner error. |
-| 14800011 | The current operation failed because the database is corrupted. |
+| 14800000 | Inner error. 适用版本：12+ |
+| 14800011 | The current operation failed because the database is corrupted. 适用版本：12+ |
 | 14800012 | ResultSet is empty or pointer index is out of bounds. |
-| 14800014 | The target instance is already closed. |
-| 14800019 | The SQL must be a query statement. |
-| 14800021 | SQLite: Generic error. |
-| 14800022 | SQLite: Callback routine requested an abort. |
-| 14800023 | SQLite: Access permission denied. |
-| 14800024 | SQLite: The database file is locked. |
-| 14800025 | SQLite: A table in the database is locked. |
-| 14800026 | SQLite: The database is out of memory. |
-| 14800027 | SQLite: Attempt to write a readonly database. |
-| 14800028 | SQLite: Some kind of disk I/O error occurred. |
-| 14800029 | SQLite: The database is full. |
-| 14800030 | SQLite: Unable to open the database file. |
-| 14800031 | SQLite: TEXT or BLOB exceeds size limit. |
-| 14800032 | SQLite: Abort due to constraint violation. |
-| 14800033 | SQLite: Data type mismatch. |
-| 14800034 | SQLite: Library used incorrectly. |
+| 14800014 | The target instance is already closed. 适用版本：12+ |
+| 14800019 | The SQL must be a query statement. 适用版本：12+ |
+| 14800021 | SQLite: Generic error. 适用版本：12+ |
+| 14800022 | SQLite: Callback routine requested an abort. 适用版本：12+ |
+| 14800023 | SQLite: Access permission denied. 适用版本：12+ |
+| 14800024 | SQLite: The database file is locked. 适用版本：12+ |
+| 14800025 | SQLite: A table in the database is locked. 适用版本：12+ |
+| 14800026 | SQLite: The database is out of memory. 适用版本：12+ |
+| 14800027 | SQLite: Attempt to write a readonly database. 适用版本：12+ |
+| 14800028 | SQLite: Some kind of disk I/O error occurred. 适用版本：12+ |
+| 14800029 | SQLite: The database is full. 适用版本：12+ |
+| 14800030 | SQLite: Unable to open the database file. 适用版本：12+ |
+| 14800031 | SQLite: TEXT or BLOB exceeds size limit. 适用版本：12+ |
+| 14800032 | SQLite: Abort due to constraint violation. 适用版本：12+ |
+| 14800033 | SQLite: Data type mismatch. 适用版本：12+ |
+| 14800034 | SQLite: Library used incorrectly. 适用版本：12+ |
 
 示例：
 
@@ -410,25 +411,25 @@ goToRow(position: number): boolean
 | **错误码ID** | **错误信息** |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 14800000 | Inner error. |
-| 14800011 | The current operation failed because the database is corrupted. |
+| 14800000 | Inner error. 适用版本：12+ |
+| 14800011 | The current operation failed because the database is corrupted. 适用版本：12+ |
 | 14800012 | ResultSet is empty or pointer index is out of bounds. |
-| 14800014 | The target instance is already closed. |
-| 14800019 | The SQL must be a query statement. |
-| 14800021 | SQLite: Generic error. |
-| 14800022 | SQLite: Callback routine requested an abort. |
-| 14800023 | SQLite: Access permission denied. |
-| 14800024 | SQLite: The database file is locked. |
-| 14800025 | SQLite: A table in the database is locked. |
-| 14800026 | SQLite: The database is out of memory. |
-| 14800027 | SQLite: Attempt to write a readonly database. |
-| 14800028 | SQLite: Some kind of disk I/O error occurred. |
-| 14800029 | SQLite: The database is full. |
-| 14800030 | SQLite: Unable to open the database file. |
-| 14800031 | SQLite: TEXT or BLOB exceeds size limit. |
-| 14800032 | SQLite: Abort due to constraint violation. |
-| 14800033 | SQLite: Data type mismatch. |
-| 14800034 | SQLite: Library used incorrectly. |
+| 14800014 | The target instance is already closed. 适用版本：12+ |
+| 14800019 | The SQL must be a query statement. 适用版本：12+ |
+| 14800021 | SQLite: Generic error. 适用版本：12+ |
+| 14800022 | SQLite: Callback routine requested an abort. 适用版本：12+ |
+| 14800023 | SQLite: Access permission denied. 适用版本：12+ |
+| 14800024 | SQLite: The database file is locked. 适用版本：12+ |
+| 14800025 | SQLite: A table in the database is locked. 适用版本：12+ |
+| 14800026 | SQLite: The database is out of memory. 适用版本：12+ |
+| 14800027 | SQLite: Attempt to write a readonly database. 适用版本：12+ |
+| 14800028 | SQLite: Some kind of disk I/O error occurred. 适用版本：12+ |
+| 14800029 | SQLite: The database is full. 适用版本：12+ |
+| 14800030 | SQLite: Unable to open the database file. 适用版本：12+ |
+| 14800031 | SQLite: TEXT or BLOB exceeds size limit. 适用版本：12+ |
+| 14800032 | SQLite: Abort due to constraint violation. 适用版本：12+ |
+| 14800033 | SQLite: Data type mismatch. 适用版本：12+ |
+| 14800034 | SQLite: Library used incorrectly. 适用版本：12+ |
 
 示例：
 
@@ -458,25 +459,25 @@ goToFirstRow(): boolean
 
 | **错误码ID** | **错误信息** |
 | --- | --- |
-| 14800000 | Inner error. |
-| 14800011 | The current operation failed because the database is corrupted. |
+| 14800000 | Inner error. 适用版本：12+ |
+| 14800011 | The current operation failed because the database is corrupted. 适用版本：12+ |
 | 14800012 | ResultSet is empty or pointer index is out of bounds. |
-| 14800014 | The target instance is already closed. |
-| 14800019 | The SQL must be a query statement. |
-| 14800021 | SQLite: Generic error. |
-| 14800022 | SQLite: Callback routine requested an abort. |
-| 14800023 | SQLite: Access permission denied. |
-| 14800024 | SQLite: The database file is locked. |
-| 14800025 | SQLite: A table in the database is locked. |
-| 14800026 | SQLite: The database is out of memory. |
-| 14800027 | SQLite: Attempt to write a readonly database. |
-| 14800028 | SQLite: Some kind of disk I/O error occurred. |
-| 14800029 | SQLite: The database is full. |
-| 14800030 | SQLite: Unable to open the database file. |
-| 14800031 | SQLite: TEXT or BLOB exceeds size limit. |
-| 14800032 | SQLite: Abort due to constraint violation. |
-| 14800033 | SQLite: Data type mismatch. |
-| 14800034 | SQLite: Library used incorrectly. |
+| 14800014 | The target instance is already closed. 适用版本：12+ |
+| 14800019 | The SQL must be a query statement. 适用版本：12+ |
+| 14800021 | SQLite: Generic error. 适用版本：12+ |
+| 14800022 | SQLite: Callback routine requested an abort. 适用版本：12+ |
+| 14800023 | SQLite: Access permission denied. 适用版本：12+ |
+| 14800024 | SQLite: The database file is locked. 适用版本：12+ |
+| 14800025 | SQLite: A table in the database is locked. 适用版本：12+ |
+| 14800026 | SQLite: The database is out of memory. 适用版本：12+ |
+| 14800027 | SQLite: Attempt to write a readonly database. 适用版本：12+ |
+| 14800028 | SQLite: Some kind of disk I/O error occurred. 适用版本：12+ |
+| 14800029 | SQLite: The database is full. 适用版本：12+ |
+| 14800030 | SQLite: Unable to open the database file. 适用版本：12+ |
+| 14800031 | SQLite: TEXT or BLOB exceeds size limit. 适用版本：12+ |
+| 14800032 | SQLite: Abort due to constraint violation. 适用版本：12+ |
+| 14800033 | SQLite: Data type mismatch. 适用版本：12+ |
+| 14800034 | SQLite: Library used incorrectly. 适用版本：12+ |
 
 示例：
 
@@ -506,25 +507,25 @@ goToLastRow(): boolean
 
 | **错误码ID** | **错误信息** |
 | --- | --- |
-| 14800000 | Inner error. |
-| 14800011 | The current operation failed because the database is corrupted. |
+| 14800000 | Inner error. 适用版本：12+ |
+| 14800011 | The current operation failed because the database is corrupted. 适用版本：12+ |
 | 14800012 | ResultSet is empty or pointer index is out of bounds. |
-| 14800014 | The target instance is already closed. |
-| 14800019 | The SQL must be a query statement. |
-| 14800021 | SQLite: Generic error. |
-| 14800022 | SQLite: Callback routine requested an abort. |
-| 14800023 | SQLite: Access permission denied. |
-| 14800024 | SQLite: The database file is locked. |
-| 14800025 | SQLite: A table in the database is locked. |
-| 14800026 | SQLite: The database is out of memory. |
-| 14800027 | SQLite: Attempt to write a readonly database. |
-| 14800028 | SQLite: Some kind of disk I/O error occurred. |
-| 14800029 | SQLite: The database is full. |
-| 14800030 | SQLite: Unable to open the database file. |
-| 14800031 | SQLite: TEXT or BLOB exceeds size limit. |
-| 14800032 | SQLite: Abort due to constraint violation. |
-| 14800033 | SQLite: Data type mismatch. |
-| 14800034 | SQLite: Library used incorrectly. |
+| 14800014 | The target instance is already closed. 适用版本：12+ |
+| 14800019 | The SQL must be a query statement. 适用版本：12+ |
+| 14800021 | SQLite: Generic error. 适用版本：12+ |
+| 14800022 | SQLite: Callback routine requested an abort. 适用版本：12+ |
+| 14800023 | SQLite: Access permission denied. 适用版本：12+ |
+| 14800024 | SQLite: The database file is locked. 适用版本：12+ |
+| 14800025 | SQLite: A table in the database is locked. 适用版本：12+ |
+| 14800026 | SQLite: The database is out of memory. 适用版本：12+ |
+| 14800027 | SQLite: Attempt to write a readonly database. 适用版本：12+ |
+| 14800028 | SQLite: Some kind of disk I/O error occurred. 适用版本：12+ |
+| 14800029 | SQLite: The database is full. 适用版本：12+ |
+| 14800030 | SQLite: Unable to open the database file. 适用版本：12+ |
+| 14800031 | SQLite: TEXT or BLOB exceeds size limit. 适用版本：12+ |
+| 14800032 | SQLite: Abort due to constraint violation. 适用版本：12+ |
+| 14800033 | SQLite: Data type mismatch. 适用版本：12+ |
+| 14800034 | SQLite: Library used incorrectly. 适用版本：12+ |
 
 示例：
 
@@ -554,25 +555,25 @@ goToNextRow(): boolean
 
 | **错误码ID** | **错误信息** |
 | --- | --- |
-| 14800000 | Inner error. |
-| 14800011 | The current operation failed because the database is corrupted. |
+| 14800000 | Inner error. 适用版本：12+ |
+| 14800011 | The current operation failed because the database is corrupted. 适用版本：12+ |
 | 14800012 | ResultSet is empty or pointer index is out of bounds. |
-| 14800014 | The target instance is already closed. |
-| 14800019 | The SQL must be a query statement. |
-| 14800021 | SQLite: Generic error. |
-| 14800022 | SQLite: Callback routine requested an abort. |
-| 14800023 | SQLite: Access permission denied. |
-| 14800024 | SQLite: The database file is locked. |
-| 14800025 | SQLite: A table in the database is locked. |
-| 14800026 | SQLite: The database is out of memory. |
-| 14800027 | SQLite: Attempt to write a readonly database. |
-| 14800028 | SQLite: Some kind of disk I/O error occurred. |
-| 14800029 | SQLite: The database is full. |
-| 14800030 | SQLite: Unable to open the database file. |
-| 14800031 | SQLite: TEXT or BLOB exceeds size limit. |
-| 14800032 | SQLite: Abort due to constraint violation. |
-| 14800033 | SQLite: Data type mismatch. |
-| 14800034 | SQLite: Library used incorrectly. |
+| 14800014 | The target instance is already closed. 适用版本：12+ |
+| 14800019 | The SQL must be a query statement. 适用版本：12+ |
+| 14800021 | SQLite: Generic error. 适用版本：12+ |
+| 14800022 | SQLite: Callback routine requested an abort. 适用版本：12+ |
+| 14800023 | SQLite: Access permission denied. 适用版本：12+ |
+| 14800024 | SQLite: The database file is locked. 适用版本：12+ |
+| 14800025 | SQLite: A table in the database is locked. 适用版本：12+ |
+| 14800026 | SQLite: The database is out of memory. 适用版本：12+ |
+| 14800027 | SQLite: Attempt to write a readonly database. 适用版本：12+ |
+| 14800028 | SQLite: Some kind of disk I/O error occurred. 适用版本：12+ |
+| 14800029 | SQLite: The database is full. 适用版本：12+ |
+| 14800030 | SQLite: Unable to open the database file. 适用版本：12+ |
+| 14800031 | SQLite: TEXT or BLOB exceeds size limit. 适用版本：12+ |
+| 14800032 | SQLite: Abort due to constraint violation. 适用版本：12+ |
+| 14800033 | SQLite: Data type mismatch. 适用版本：12+ |
+| 14800034 | SQLite: Library used incorrectly. 适用版本：12+ |
 
 示例：
 
@@ -602,25 +603,25 @@ goToPreviousRow(): boolean
 
 | **错误码ID** | **错误信息** |
 | --- | --- |
-| 14800000 | Inner error. |
-| 14800011 | The current operation failed because the database is corrupted. |
+| 14800000 | Inner error. 适用版本：12+ |
+| 14800011 | The current operation failed because the database is corrupted. 适用版本：12+ |
 | 14800012 | ResultSet is empty or pointer index is out of bounds. |
-| 14800014 | The target instance is already closed. |
-| 14800019 | The SQL must be a query statement. |
-| 14800021 | SQLite: Generic error. |
-| 14800022 | SQLite: Callback routine requested an abort. |
-| 14800023 | SQLite: Access permission denied. |
-| 14800024 | SQLite: The database file is locked. |
-| 14800025 | SQLite: A table in the database is locked. |
-| 14800026 | SQLite: The database is out of memory. |
-| 14800027 | SQLite: Attempt to write a readonly database. |
-| 14800028 | SQLite: Some kind of disk I/O error occurred. |
-| 14800029 | SQLite: The database is full. |
-| 14800030 | SQLite: Unable to open the database file. |
-| 14800031 | SQLite: TEXT or BLOB exceeds size limit. |
-| 14800032 | SQLite: Abort due to constraint violation. |
-| 14800033 | SQLite: Data type mismatch. |
-| 14800034 | SQLite: Library used incorrectly. |
+| 14800014 | The target instance is already closed. 适用版本：12+ |
+| 14800019 | The SQL must be a query statement. 适用版本：12+ |
+| 14800021 | SQLite: Generic error. 适用版本：12+ |
+| 14800022 | SQLite: Callback routine requested an abort. 适用版本：12+ |
+| 14800023 | SQLite: Access permission denied. 适用版本：12+ |
+| 14800024 | SQLite: The database file is locked. 适用版本：12+ |
+| 14800025 | SQLite: A table in the database is locked. 适用版本：12+ |
+| 14800026 | SQLite: The database is out of memory. 适用版本：12+ |
+| 14800027 | SQLite: Attempt to write a readonly database. 适用版本：12+ |
+| 14800028 | SQLite: Some kind of disk I/O error occurred. 适用版本：12+ |
+| 14800029 | SQLite: The database is full. 适用版本：12+ |
+| 14800030 | SQLite: Unable to open the database file. 适用版本：12+ |
+| 14800031 | SQLite: TEXT or BLOB exceeds size limit. 适用版本：12+ |
+| 14800032 | SQLite: Abort due to constraint violation. 适用版本：12+ |
+| 14800033 | SQLite: Data type mismatch. 适用版本：12+ |
+| 14800034 | SQLite: Library used incorrectly. 适用版本：12+ |
 
 示例：
 
@@ -718,25 +719,25 @@ getBlob(columnIndex: number): Uint8Array
 | **错误码ID** | **错误信息** |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 14800000 | Inner error. |
-| 14800011 | The current operation failed because the database is corrupted. |
-| 14800012 | ResultSet is empty or pointer index is out of bounds. |
+| 14800000 | Inner error. 适用版本：12+ |
+| 14800011 | The current operation failed because the database is corrupted. 适用版本：12+ |
+| 14800012 | ResultSet is empty or pointer index is out of bounds. 适用版本：12+ |
 | 14800013 | Column index is out of bounds. |
-| 14800014 | The target instance is already closed. |
-| 14800021 | SQLite: Generic error. |
-| 14800022 | SQLite: Callback routine requested an abort. |
-| 14800023 | SQLite: Access permission denied. |
-| 14800024 | SQLite: The database file is locked. |
-| 14800025 | SQLite: A table in the database is locked. |
-| 14800026 | SQLite: The database is out of memory. |
-| 14800027 | SQLite: Attempt to write a readonly database. |
-| 14800028 | SQLite: Some kind of disk I/O error occurred. |
-| 14800029 | SQLite: The database is full. |
-| 14800030 | SQLite: Unable to open the database file. |
-| 14800031 | SQLite: TEXT or BLOB exceeds size limit. |
-| 14800032 | SQLite: Abort due to constraint violation. |
-| 14800033 | SQLite: Data type mismatch. |
-| 14800034 | SQLite: Library used incorrectly. |
+| 14800014 | The target instance is already closed. 适用版本：12+ |
+| 14800021 | SQLite: Generic error. 适用版本：12+ |
+| 14800022 | SQLite: Callback routine requested an abort. 适用版本：12+ |
+| 14800023 | SQLite: Access permission denied. 适用版本：12+ |
+| 14800024 | SQLite: The database file is locked. 适用版本：12+ |
+| 14800025 | SQLite: A table in the database is locked. 适用版本：12+ |
+| 14800026 | SQLite: The database is out of memory. 适用版本：12+ |
+| 14800027 | SQLite: Attempt to write a readonly database. 适用版本：12+ |
+| 14800028 | SQLite: Some kind of disk I/O error occurred. 适用版本：12+ |
+| 14800029 | SQLite: The database is full. 适用版本：12+ |
+| 14800030 | SQLite: Unable to open the database file. 适用版本：12+ |
+| 14800031 | SQLite: TEXT or BLOB exceeds size limit. 适用版本：12+ |
+| 14800032 | SQLite: Abort due to constraint violation. 适用版本：12+ |
+| 14800033 | SQLite: Data type mismatch. 适用版本：12+ |
+| 14800034 | SQLite: Library used incorrectly. 适用版本：12+ |
 
 示例：
 
@@ -773,25 +774,25 @@ getString(columnIndex: number): string
 | **错误码ID** | **错误信息** |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 14800000 | Inner error. |
-| 14800011 | The current operation failed because the database is corrupted. |
-| 14800012 | ResultSet is empty or pointer index is out of bounds. |
+| 14800000 | Inner error. 适用版本：12+ |
+| 14800011 | The current operation failed because the database is corrupted. 适用版本：12+ |
+| 14800012 | ResultSet is empty or pointer index is out of bounds. 适用版本：12+ |
 | 14800013 | Column index is out of bounds. |
-| 14800014 | The target instance is already closed. |
-| 14800021 | SQLite: Generic error. |
-| 14800022 | SQLite: Callback routine requested an abort. |
-| 14800023 | SQLite: Access permission denied. |
-| 14800024 | SQLite: The database file is locked. |
-| 14800025 | SQLite: A table in the database is locked. |
-| 14800026 | SQLite: The database is out of memory. |
-| 14800027 | SQLite: Attempt to write a readonly database. |
-| 14800028 | SQLite: Some kind of disk I/O error occurred. |
-| 14800029 | SQLite: The database is full. |
-| 14800030 | SQLite: Unable to open the database file. |
-| 14800031 | SQLite: TEXT or BLOB exceeds size limit. |
-| 14800032 | SQLite: Abort due to constraint violation. |
-| 14800033 | SQLite: Data type mismatch. |
-| 14800034 | SQLite: Library used incorrectly. |
+| 14800014 | The target instance is already closed. 适用版本：12+ |
+| 14800021 | SQLite: Generic error. 适用版本：12+ |
+| 14800022 | SQLite: Callback routine requested an abort. 适用版本：12+ |
+| 14800023 | SQLite: Access permission denied. 适用版本：12+ |
+| 14800024 | SQLite: The database file is locked. 适用版本：12+ |
+| 14800025 | SQLite: A table in the database is locked. 适用版本：12+ |
+| 14800026 | SQLite: The database is out of memory. 适用版本：12+ |
+| 14800027 | SQLite: Attempt to write a readonly database. 适用版本：12+ |
+| 14800028 | SQLite: Some kind of disk I/O error occurred. 适用版本：12+ |
+| 14800029 | SQLite: The database is full. 适用版本：12+ |
+| 14800030 | SQLite: Unable to open the database file. 适用版本：12+ |
+| 14800031 | SQLite: TEXT or BLOB exceeds size limit. 适用版本：12+ |
+| 14800032 | SQLite: Abort due to constraint violation. 适用版本：12+ |
+| 14800033 | SQLite: Data type mismatch. 适用版本：12+ |
+| 14800034 | SQLite: Library used incorrectly. 适用版本：12+ |
 
 示例：
 
@@ -828,25 +829,25 @@ getLong(columnIndex: number): number
 | **错误码ID** | **错误信息** |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 14800000 | Inner error. |
-| 14800011 | The current operation failed because the database is corrupted. |
-| 14800012 | ResultSet is empty or pointer index is out of bounds. |
+| 14800000 | Inner error. 适用版本：12+ |
+| 14800011 | The current operation failed because the database is corrupted. 适用版本：12+ |
+| 14800012 | ResultSet is empty or pointer index is out of bounds. 适用版本：12+ |
 | 14800013 | Column index is out of bounds. |
-| 14800014 | The target instance is already closed. |
-| 14800021 | SQLite: Generic error. |
-| 14800022 | SQLite: Callback routine requested an abort. |
-| 14800023 | SQLite: Access permission denied. |
-| 14800024 | SQLite: The database file is locked. |
-| 14800025 | SQLite: A table in the database is locked. |
-| 14800026 | SQLite: The database is out of memory. |
-| 14800027 | SQLite: Attempt to write a readonly database. |
-| 14800028 | SQLite: Some kind of disk I/O error occurred. |
-| 14800029 | SQLite: The database is full. |
-| 14800030 | SQLite: Unable to open the database file. |
-| 14800031 | SQLite: TEXT or BLOB exceeds size limit. |
-| 14800032 | SQLite: Abort due to constraint violation. |
-| 14800033 | SQLite: Data type mismatch. |
-| 14800034 | SQLite: Library used incorrectly. |
+| 14800014 | The target instance is already closed. 适用版本：12+ |
+| 14800021 | SQLite: Generic error. 适用版本：12+ |
+| 14800022 | SQLite: Callback routine requested an abort. 适用版本：12+ |
+| 14800023 | SQLite: Access permission denied. 适用版本：12+ |
+| 14800024 | SQLite: The database file is locked. 适用版本：12+ |
+| 14800025 | SQLite: A table in the database is locked. 适用版本：12+ |
+| 14800026 | SQLite: The database is out of memory. 适用版本：12+ |
+| 14800027 | SQLite: Attempt to write a readonly database. 适用版本：12+ |
+| 14800028 | SQLite: Some kind of disk I/O error occurred. 适用版本：12+ |
+| 14800029 | SQLite: The database is full. 适用版本：12+ |
+| 14800030 | SQLite: Unable to open the database file. 适用版本：12+ |
+| 14800031 | SQLite: TEXT or BLOB exceeds size limit. 适用版本：12+ |
+| 14800032 | SQLite: Abort due to constraint violation. 适用版本：12+ |
+| 14800033 | SQLite: Data type mismatch. 适用版本：12+ |
+| 14800034 | SQLite: Library used incorrectly. 适用版本：12+ |
 
 示例：
 
@@ -889,25 +890,25 @@ getDouble(columnIndex: number): number
 | **错误码ID** | **错误信息** |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 14800000 | Inner error. |
-| 14800011 | The current operation failed because the database is corrupted. |
-| 14800012 | ResultSet is empty or pointer index is out of bounds. |
+| 14800000 | Inner error. 适用版本：12+ |
+| 14800011 | The current operation failed because the database is corrupted. 适用版本：12+ |
+| 14800012 | ResultSet is empty or pointer index is out of bounds. 适用版本：12+ |
 | 14800013 | Column index is out of bounds. |
-| 14800014 | The target instance is already closed. |
-| 14800021 | SQLite: Generic error. |
-| 14800022 | SQLite: Callback routine requested an abort. |
-| 14800023 | SQLite: Access permission denied. |
-| 14800024 | SQLite: The database file is locked. |
-| 14800025 | SQLite: A table in the database is locked. |
-| 14800026 | SQLite: The database is out of memory. |
-| 14800027 | SQLite: Attempt to write a readonly database. |
-| 14800028 | SQLite: Some kind of disk I/O error occurred. |
-| 14800029 | SQLite: The database is full. |
-| 14800030 | SQLite: Unable to open the database file. |
-| 14800031 | SQLite: TEXT or BLOB exceeds size limit. |
-| 14800032 | SQLite: Abort due to constraint violation. |
-| 14800033 | SQLite: Data type mismatch. |
-| 14800034 | SQLite: Library used incorrectly. |
+| 14800014 | The target instance is already closed. 适用版本：12+ |
+| 14800021 | SQLite: Generic error. 适用版本：12+ |
+| 14800022 | SQLite: Callback routine requested an abort. 适用版本：12+ |
+| 14800023 | SQLite: Access permission denied. 适用版本：12+ |
+| 14800024 | SQLite: The database file is locked. 适用版本：12+ |
+| 14800025 | SQLite: A table in the database is locked. 适用版本：12+ |
+| 14800026 | SQLite: The database is out of memory. 适用版本：12+ |
+| 14800027 | SQLite: Attempt to write a readonly database. 适用版本：12+ |
+| 14800028 | SQLite: Some kind of disk I/O error occurred. 适用版本：12+ |
+| 14800029 | SQLite: The database is full. 适用版本：12+ |
+| 14800030 | SQLite: Unable to open the database file. 适用版本：12+ |
+| 14800031 | SQLite: TEXT or BLOB exceeds size limit. 适用版本：12+ |
+| 14800032 | SQLite: Abort due to constraint violation. 适用版本：12+ |
+| 14800033 | SQLite: Data type mismatch. 适用版本：12+ |
+| 14800034 | SQLite: Library used incorrectly. 适用版本：12+ |
 
 示例：
 
@@ -950,25 +951,25 @@ getAsset(columnIndex: number): Asset
 | **错误码ID** | **错误信息** |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 14800000 | Inner error. |
-| 14800011 | The current operation failed because the database is corrupted. |
-| 14800012 | ResultSet is empty or pointer index is out of bounds. |
+| 14800000 | Inner error. 适用版本：12+ |
+| 14800011 | The current operation failed because the database is corrupted. 适用版本：12+ |
+| 14800012 | ResultSet is empty or pointer index is out of bounds. 适用版本：12+ |
 | 14800013 | Column index is out of bounds. |
-| 14800014 | The target instance is already closed. |
-| 14800021 | SQLite: Generic error. |
-| 14800022 | SQLite: Callback routine requested an abort. |
-| 14800023 | SQLite: Access permission denied. |
-| 14800024 | SQLite: The database file is locked. |
-| 14800025 | SQLite: A table in the database is locked. |
-| 14800026 | SQLite: The database is out of memory. |
-| 14800027 | SQLite: Attempt to write a readonly database. |
-| 14800028 | SQLite: Some kind of disk I/O error occurred. |
-| 14800029 | SQLite: The database is full. |
-| 14800030 | SQLite: Unable to open the database file. |
-| 14800031 | SQLite: TEXT or BLOB exceeds size limit. |
-| 14800032 | SQLite: Abort due to constraint violation. |
-| 14800033 | SQLite: Data type mismatch. |
-| 14800034 | SQLite: Library used incorrectly. |
+| 14800014 | The target instance is already closed. 适用版本：12+ |
+| 14800021 | SQLite: Generic error. 适用版本：12+ |
+| 14800022 | SQLite: Callback routine requested an abort. 适用版本：12+ |
+| 14800023 | SQLite: Access permission denied. 适用版本：12+ |
+| 14800024 | SQLite: The database file is locked. 适用版本：12+ |
+| 14800025 | SQLite: A table in the database is locked. 适用版本：12+ |
+| 14800026 | SQLite: The database is out of memory. 适用版本：12+ |
+| 14800027 | SQLite: Attempt to write a readonly database. 适用版本：12+ |
+| 14800028 | SQLite: Some kind of disk I/O error occurred. 适用版本：12+ |
+| 14800029 | SQLite: The database is full. 适用版本：12+ |
+| 14800030 | SQLite: Unable to open the database file. 适用版本：12+ |
+| 14800031 | SQLite: TEXT or BLOB exceeds size limit. 适用版本：12+ |
+| 14800032 | SQLite: Abort due to constraint violation. 适用版本：12+ |
+| 14800033 | SQLite: Data type mismatch. 适用版本：12+ |
+| 14800034 | SQLite: Library used incorrectly. 适用版本：12+ |
 
 示例：
 
@@ -982,7 +983,7 @@ if (resultSet != undefined) {
 
 getAssets(columnIndex: number): Assets
 
-以[Assets](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-data-relationalstore-t#assets10)形式获取当前行中指定列的值，如果当前列的数据类型为Assets类型，会以Assets类型返回指定值，如果当前列中的值为null时，会返回null，其他类型则抛出错误码14800000。
+以[Assets](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-data-relationalstore-t#assets10)形式获取当前行中指定列的值，如果当前列的数据类型为Assets类型，会以Assets类型返回指定值，如果当前列中的值为null时，会返回null，其他类型则抛出14800000。
 
 系统能力： SystemCapability.DistributedDataManager.RelationalStore.Core
 
@@ -1005,25 +1006,25 @@ getAssets(columnIndex: number): Assets
 | **错误码ID** | **错误信息** |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 14800000 | Inner error. |
-| 14800011 | The current operation failed because the database is corrupted. |
-| 14800012 | ResultSet is empty or pointer index is out of bounds. |
+| 14800000 | Inner error. 适用版本：12+ |
+| 14800011 | The current operation failed because the database is corrupted. 适用版本：12+ |
+| 14800012 | ResultSet is empty or pointer index is out of bounds. 适用版本：12+ |
 | 14800013 | Column index is out of bounds. |
-| 14800014 | The target instance is already closed. |
-| 14800021 | SQLite: Generic error. |
-| 14800022 | SQLite: Callback routine requested an abort. |
-| 14800023 | SQLite: Access permission denied. |
-| 14800024 | SQLite: The database file is locked. |
-| 14800025 | SQLite: A table in the database is locked. |
-| 14800026 | SQLite: The database is out of memory. |
-| 14800027 | SQLite: Attempt to write a readonly database. |
-| 14800028 | SQLite: Some kind of disk I/O error occurred. |
-| 14800029 | SQLite: The database is full. |
-| 14800030 | SQLite: Unable to open the database file. |
-| 14800031 | SQLite: TEXT or BLOB exceeds size limit. |
-| 14800032 | SQLite: Abort due to constraint violation. |
-| 14800033 | SQLite: Data type mismatch. |
-| 14800034 | SQLite: Library used incorrectly. |
+| 14800014 | The target instance is already closed. 适用版本：12+ |
+| 14800021 | SQLite: Generic error. 适用版本：12+ |
+| 14800022 | SQLite: Callback routine requested an abort. 适用版本：12+ |
+| 14800023 | SQLite: Access permission denied. 适用版本：12+ |
+| 14800024 | SQLite: The database file is locked. 适用版本：12+ |
+| 14800025 | SQLite: A table in the database is locked. 适用版本：12+ |
+| 14800026 | SQLite: The database is out of memory. 适用版本：12+ |
+| 14800027 | SQLite: Attempt to write a readonly database. 适用版本：12+ |
+| 14800028 | SQLite: Some kind of disk I/O error occurred. 适用版本：12+ |
+| 14800029 | SQLite: The database is full. 适用版本：12+ |
+| 14800030 | SQLite: Unable to open the database file. 适用版本：12+ |
+| 14800031 | SQLite: TEXT or BLOB exceeds size limit. 适用版本：12+ |
+| 14800032 | SQLite: Abort due to constraint violation. 适用版本：12+ |
+| 14800033 | SQLite: Data type mismatch. 适用版本：12+ |
+| 14800034 | SQLite: Library used incorrectly. 适用版本：12+ |
 
 示例：
 
@@ -1054,24 +1055,24 @@ getRow(): ValuesBucket
 | **错误码ID** | **错误信息** |
 | --- | --- |
 | 14800000 | Inner error. |
-| 14800011 | The current operation failed because the database is corrupted. |
-| 14800012 | ResultSet is empty or pointer index is out of bounds. |
-| 14800013 | Column index is out of bounds. |
-| 14800014 | The target instance is already closed. |
-| 14800021 | SQLite: Generic error. |
-| 14800022 | SQLite: Callback routine requested an abort. |
-| 14800023 | SQLite: Access permission denied. |
-| 14800024 | SQLite: The database file is locked. |
-| 14800025 | SQLite: A table in the database is locked. |
-| 14800026 | SQLite: The database is out of memory. |
-| 14800027 | SQLite: Attempt to write a readonly database. |
-| 14800028 | SQLite: Some kind of disk I/O error occurred. |
-| 14800029 | SQLite: The database is full. |
-| 14800030 | SQLite: Unable to open the database file. |
-| 14800031 | SQLite: TEXT or BLOB exceeds size limit. |
-| 14800032 | SQLite: Abort due to constraint violation. |
-| 14800033 | SQLite: Data type mismatch. |
-| 14800034 | SQLite: Library used incorrectly. |
+| 14800011 | The current operation failed because the database is corrupted. 适用版本：12+ |
+| 14800012 | ResultSet is empty or pointer index is out of bounds. 适用版本：12+ |
+| 14800013 | Column index is out of bounds. 适用版本：12+ |
+| 14800014 | The target instance is already closed. 适用版本：12+ |
+| 14800021 | SQLite: Generic error. 适用版本：12+ |
+| 14800022 | SQLite: Callback routine requested an abort. 适用版本：12+ |
+| 14800023 | SQLite: Access permission denied. 适用版本：12+ |
+| 14800024 | SQLite: The database file is locked. 适用版本：12+ |
+| 14800025 | SQLite: A table in the database is locked. 适用版本：12+ |
+| 14800026 | SQLite: The database is out of memory. 适用版本：12+ |
+| 14800027 | SQLite: Attempt to write a readonly database. 适用版本：12+ |
+| 14800028 | SQLite: Some kind of disk I/O error occurred. 适用版本：12+ |
+| 14800029 | SQLite: The database is full. 适用版本：12+ |
+| 14800030 | SQLite: Unable to open the database file. 适用版本：12+ |
+| 14800031 | SQLite: TEXT or BLOB exceeds size limit. 适用版本：12+ |
+| 14800032 | SQLite: Abort due to constraint violation. 适用版本：12+ |
+| 14800033 | SQLite: Data type mismatch. 适用版本：12+ |
+| 14800034 | SQLite: Library used incorrectly. 适用版本：12+ |
 
 示例：
 
@@ -1196,6 +1197,7 @@ try {
   if (resultSet != undefined) {
     resultSet.goToFirstRow();
     const rowData = resultSet.getCurrentRowData();
+    resultSet.close();
   }
 } catch (err) {
   console.error(`Failed to get row data: code:${err.code}, message:${err.message}`);
@@ -1278,6 +1280,7 @@ try {
       position += rowsData.length;
     }
   }
+  resultSet.close();
 } catch (err) {
   console.error(`Failed to get rows data: code:${err.code}, message:${err.message}`);
 }
@@ -1350,8 +1353,10 @@ async function getDataByName(name: string, context: common.UIAbilityContext) {
   if (resultSet.rowCount > 0) {
     resultSet.goToFirstRow();
     const sendableValuesBucket = resultSet.getSendableRow();
+    resultSet.close();
     return sendableValuesBucket;
   } else {
+    resultSet.close();
     return null;
   }
 }
@@ -1398,25 +1403,25 @@ isColumnNull(columnIndex: number): boolean
 | **错误码ID** | **错误信息** |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 14800000 | Inner error. |
-| 14800011 | The current operation failed because the database is corrupted. |
-| 14800012 | ResultSet is empty or pointer index is out of bounds. |
+| 14800000 | Inner error. 适用版本：12+ |
+| 14800011 | The current operation failed because the database is corrupted. 适用版本：12+ |
+| 14800012 | ResultSet is empty or pointer index is out of bounds. 适用版本：12+ |
 | 14800013 | Column index is out of bounds. |
-| 14800014 | The target instance is already closed. |
-| 14800021 | SQLite: Generic error. |
-| 14800022 | SQLite: Callback routine requested an abort. |
-| 14800023 | SQLite: Access permission denied. |
-| 14800024 | SQLite: The database file is locked. |
-| 14800025 | SQLite: A table in the database is locked. |
-| 14800026 | SQLite: The database is out of memory. |
-| 14800027 | SQLite: Attempt to write a readonly database. |
-| 14800028 | SQLite: Some kind of disk I/O error occurred. |
-| 14800029 | SQLite: The database is full. |
-| 14800030 | SQLite: Unable to open the database file. |
-| 14800031 | SQLite: TEXT or BLOB exceeds size limit. |
-| 14800032 | SQLite: Abort due to constraint violation. |
-| 14800033 | SQLite: Data type mismatch. |
-| 14800034 | SQLite: Library used incorrectly. |
+| 14800014 | The target instance is already closed. 适用版本：12+ |
+| 14800021 | SQLite: Generic error. 适用版本：12+ |
+| 14800022 | SQLite: Callback routine requested an abort. 适用版本：12+ |
+| 14800023 | SQLite: Access permission denied. 适用版本：12+ |
+| 14800024 | SQLite: The database file is locked. 适用版本：12+ |
+| 14800025 | SQLite: A table in the database is locked. 适用版本：12+ |
+| 14800026 | SQLite: The database is out of memory. 适用版本：12+ |
+| 14800027 | SQLite: Attempt to write a readonly database. 适用版本：12+ |
+| 14800028 | SQLite: Some kind of disk I/O error occurred. 适用版本：12+ |
+| 14800029 | SQLite: The database is full. 适用版本：12+ |
+| 14800030 | SQLite: Unable to open the database file. 适用版本：12+ |
+| 14800031 | SQLite: TEXT or BLOB exceeds size limit. 适用版本：12+ |
+| 14800032 | SQLite: Abort due to constraint violation. 适用版本：12+ |
+| 14800033 | SQLite: Data type mismatch. 适用版本：12+ |
+| 14800034 | SQLite: Library used incorrectly. 适用版本：12+ |
 
 示例：
 
@@ -1453,5 +1458,5 @@ if (resultSet != undefined) {
 
 | **错误码ID** | **错误信息** |
 | --- | --- |
-| 14800000 | Inner error. |
+| 14800000 | Inner error. 适用版本：12+ |
 | 14800012 | ResultSet is empty or pointer index is out of bounds. |

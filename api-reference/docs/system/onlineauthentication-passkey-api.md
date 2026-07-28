@@ -2,8 +2,8 @@
 title: "通行密钥"
 upstream_id: "harmonyos-references/onlineauthentication-passkey-api"
 catalog: "harmonyos-references"
-content_hash: "9e3e701f5473"
-synced_at: "2026-07-09T00:59:18.189365"
+content_hash: "2d27337bf00e"
+synced_at: "2026-07-28T16:50:30.652481"
 ---
 
 # 通行密钥
@@ -37,7 +37,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| attestationObject | Uint8Array | 是 | 否 | 声明对象。 |
+| attestationObject | Uint8Array | 是 | 否 | 注册凭证的响应报文中，用于向服务器证明新生成密钥对合法性的数据结构。 |
 | clientDataJson | Uint8Array | 是 | 否 | 获取客户端数据，表示WebAuthn依赖方和客户端的上下文绑定，包含类型、挑战值及源等数据。 |
 | publicKeyAlgorithm | [Algorithm](#algorithm) | 否 | 否 | 密码算法。 |
 | publicKey | Uint8Array | 否 | 是 | 注册时生成的公钥数据，包含公钥算法类型和密钥参数，用于服务器保存并后续验证认证签名。默认值为空。 |
@@ -63,7 +63,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 | transports | Array | 否 | 否 | 定义身份认证器访问类型，取值范围为[AuthenticatorTransport](#authenticatortransport)枚举。 |
 | publicKey | string | 否 | 是 | 注册时生成的公钥数据，包含公钥算法类型和密钥参数，用于服务器保存并后续验证认证签名。默认值为空。长度限制0到4096。 |
 | publicKeyAlgorithm | [Algorithm](#algorithm) | 否 | 否 | 密码算法。 |
-| attestationObject | string | 否 | 否 | 声明对象。长度限制0到10000。 |
+| attestationObject | string | 否 | 否 | 注册凭证的响应报文中，用于向服务器证明新生成密钥对合法性的数据结构。长度限制0到10000。 |
 
 #### AuthenticationExtensionsClientOutputsJson
 
@@ -185,7 +185,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | challenge | Uint8Array | 否 | 否 | 获取挑战值。 |
-| timeout | number | 否 | 是 | 认证操作最长时间，单位为ms。默认值为300000ms。 |
+| timeout | number | 否 | 是 | 超时时间。单位为ms。默认为300000（5分钟），限制为0到600000（10分钟）。 |
 | rpId | string | 否 | 是 | 依赖方标识。默认值为空。长度限制0到512。 |
 | allowCredentials | Array | 否 | 是 | 认证凭据的附加参数列表。默认值为空。 |
 | userVerification | [UserVerificationRequirement](#userverificationrequirement) | 否 | 是 | 用户认证需求枚举。默认值为FIDO2_PREFERRED。 |
@@ -525,7 +525,7 @@ Token binding协议，用于客户端与依赖方通信。
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | type | [PublicKeyCredentialType](#publickeycredentialtype) | 否 | 否 | 凭证类型。 |
-| alg | [Algorithm](#algorithm) | 否 | 否 | 算法。 |
+| alg | [Algorithm](#algorithm) | 否 | 否 | 凭证所使用的密码算法。 |
 
 #### PublicKeyCredentialUserEntity
 
@@ -580,7 +580,7 @@ Token binding协议，用于客户端与依赖方通信。
 | user | [PublicKeyCredentialUserEntity](#publickeycredentialuserentity) | 否 | 否 | 用户信息。 |
 | challenge | Uint8Array | 否 | 否 | 挑战值。长度限制16到512。 |
 | pubKeyCredParams | Array | 否 | 否 | 身份验证凭据的附加参数列表。 |
-| timeout | number | 否 | 是 | 超时时间。默认值为300000ms。限制300s到600s。 |
+| timeout | number | 否 | 是 | 超时时间。单位为ms。默认为300000（5分钟），限制为0到600000（10分钟）。 |
 | excludeCredentials | Array | 否 | 是 | FIDO服务器已注册的凭据列表，默认值为空数组。 |
 | authenticatorSelection | [AuthenticatorSelectionCriteria](#authenticatorselectioncriteria) | 否 | 是 | 身份认证器相关配置项。默认值为空。 |
 | hints | Array | 否 | 是 | 提示。默认值为空数组。 |
@@ -627,8 +627,8 @@ Token binding协议，用于客户端与依赖方通信。
 | SIGNAL_ALL_ACCEPTED_CREDENTIALS | 'signalAllAcceptedCredentials' | 发送所有接受的凭据。 **元服务API**：从版本6.0.0(20)开始，该接口支持在元服务中使用。 |
 | SIGNAL_CURRENT_USER_DETAILS | 'signalCurrentUserDetails' | 发送当前用户详细信息。 **元服务API**：从版本6.0.0(20)开始，该接口支持在元服务中使用。 |
 | SIGNAL_UNKNOWN_CREDENTIAL | 'signalUnknownCredential' | 发送未知凭据。 **元服务API**：从版本6.0.0(20)开始，该接口支持在元服务中使用。 |
-| EXTENSION_LARGEBLOB | 'extension:largeblob' | largeBlob的扩展参数。 **元服务API**：从API版本26.0.0开始，该接口支持在元服务中使用。 |
-| EXTENSION_AUTH_TYPE_LIST | 'extension:authTypeList' | authTypeList的扩展参数。 **元服务API**：从API版本26.0.0开始，该接口支持在元服务中使用。 |
+| EXTENSION_LARGEBLOB | 'extension:largeblob' | largeBlob的扩展参数。 **起始版本**：26.0.0 **元服务API**：从API版本26.0.0开始，该接口支持在元服务中使用。 |
+| EXTENSION_AUTH_TYPE_LIST | 'extension:authTypeList' | authTypeList的扩展参数。 **起始版本**：26.0.0 **元服务API**：从API版本26.0.0开始，该接口支持在元服务中使用。 |
 
 #### AuthenticatorMetadata
 
@@ -644,7 +644,7 @@ Token binding协议，用于客户端与依赖方通信。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| aaguid | string | 是 | 否 | 认证器唯一标识。长度限制0到512。 |
+| aaguid | string | 是 | 否 | 认证器的唯一标识符。长度限制0到512。 |
 | uvm | [Uvm](#uvm) | 是 | 否 | 支持的平台认证器类型，人脸、指纹、PIN码。 |
 | isAvailable | boolean | 是 | 否 | true表示该认证器可用，false表示该认证器不可用。 |
 
@@ -676,29 +676,42 @@ getClientCapabilities(context: common.Context): Promise<Map<ClientCapability, bo
 
 错误码：
 
-以下错误码的详细介绍请参见[通行密钥服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-onlineauthentication-passkey)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[通行密钥服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-onlineauthentication-passkey)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 801 | Device type error. 适用版本：6.0.1(21)+ |
 | 1021300007 | Unknown error. |
+| 1021300009 | Data error. |
 | 1021300011 | Failed to connect to the service. |
 
 示例：
 
 ```
+import { UIContext } from '@kit.ArkUI';
 import { common } from '@kit.AbilityKit';
 
-uiContext1: UIContext = this.getUIContext();
-uiContext: common.UIAbilityContext = this.uiContext1.getHostContext() as common.UIAbilityContext; // 使用uiContext需要获取页面UIAbility的Context，一个页面获取一次即可
-
-try {
-    let clientCapabilities: Map<fido2.ClientCapability, boolean> =
-      await fido2.getClientCapabilities(this.uiContext); // 获取客户端能力列表
-  console.info('Succeeded in doing getClientCapabilities. clientCapabilities:', JSON.stringify(clientCapabilities));
-  } catch (error) {
-    const err: BusinessError = error as BusinessError;
-    console.error(`Failed to call discover. Code is ${err.code}, message is ${err.message}`);
+@Entry
+@Component
+struct Index {
+  uiContext = new UIContext();
+  context: Context = this.uiContext.getHostContext() as common.UIAbilityContext;
+  build() {
+    RelativeContainer() {
+      Text()
+        .id('HelloWorld')
+        .onClick(async () => {
+          try {
+            let clientCapabilities: Map<fido2.ClientCapability, boolean> =
+              await fido2.getClientCapabilities(this.context);
+            console.info('Succeeded in doing getClientCapabilities. clientCapabilities:', JSON.stringify(clientCapabilities));
+          } catch (error) {
+            const err: BusinessError = error as BusinessError;
+            console.error(`Failed to call getClientCapabilities. Code is ${err.code}, message is ${err.message}`);
+          }
+        })
+    }
+  }
 }
 ```
 
@@ -730,30 +743,43 @@ getPlatformAuthenticators(context: common.Context): Promise<Array<AuthenticatorM
 
 错误码：
 
-以下错误码的详细介绍请参见[通行密钥服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-onlineauthentication-passkey)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[通行密钥服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-onlineauthentication-passkey)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 801 | Device type error. 适用版本：6.0.1(21)+ |
 | 1021300007 | Unknown error. |
+| 1021300009 | Data error. |
 | 1021300011 | Failed to connect to the service. |
 
 示例：
 
 ```
+import { UIContext } from '@kit.ArkUI';
 import { common } from '@kit.AbilityKit';
 
-uiContext1: UIContext = this.getUIContext();
-uiContext: common.UIAbilityContext = this.uiContext1.getHostContext() as common.UIAbilityContext; // 使用uiContext需要获取页面UIAbility的Context，一个页面获取一次即可
-
-try {
-  let platformAuthenticators: Array<fido2.AuthenticatorMetadata> =
-    await fido2.getPlatformAuthenticators(this.uiContext); // 获取平台认证器信息
-  console.info('Succeeded in doing getPlatformAuthenticators. platformAuthenticators:',
-    JSON.stringify(platformAuthenticators));
-  } catch (error) {
-    const err: BusinessError = error as BusinessError;
-    console.error(`Failed to call discover. Code is ${err.code}, message is ${err.message}`);
+@Entry
+@Component
+struct Index {
+  uiContext = new UIContext();
+  context: Context = this.uiContext.getHostContext() as common.UIAbilityContext;
+  build() {
+    RelativeContainer() {
+      Text()
+        .id('HelloWorld')
+        .onClick(async () => {
+          try {
+            let platformAuthenticators: Array<fido2.AuthenticatorMetadata> =
+              await fido2.getPlatformAuthenticators(this.context);
+            console.info('Succeeded in doing getPlatformAuthenticators. platformAuthenticators:',
+              JSON.stringify(platformAuthenticators));
+          } catch (error) {
+            const err: BusinessError = error as BusinessError;
+            console.error(`Failed to call getPlatformAuthenticators. Code is ${err.code}, message is ${err.message}`);
+          }
+        })
+    }
+  }
 }
 ```
 
@@ -787,7 +813,7 @@ register(context: common.Context, options: CredentialCreationOptions, tokenBindi
 
 错误码：
 
-以下错误码的详细介绍请参见[通行密钥服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-onlineauthentication-passkey)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[通行密钥服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-onlineauthentication-passkey)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -808,22 +834,41 @@ register(context: common.Context, options: CredentialCreationOptions, tokenBindi
 示例：
 
 ```
+import { UIContext } from '@kit.ArkUI';
 import { common } from '@kit.AbilityKit';
 
-uiContext1: UIContext = this.getUIContext();
-uiContext: common.UIAbilityContext = this.uiContext1.getHostContext() as common.UIAbilityContext; // 使用uiContext需要获取页面UIAbility的Context，一个页面获取一次即可
-
-try {
-  let credentialCreationOp: fido2.CredentialCreationOptions = {
-    publicKey: pkOptions // pkOptions为从FIDO服务器获取的注册报文
-  }; // credentialCreationOp为应用组装的注册信息
-  let publicKeyAttestationCredential: fido2.PublicKeyAttestationCredential =
-    await fido2.register(this.uiContext, credentialCreationOp); // 进行FIDO2注册
-  console.info('Succeeded in doing register. publicKeyAttestationCredential:',
-    JSON.stringify(publicKeyAttestationCredential));
-  } catch (error) {
-    const err: BusinessError = error as BusinessError;
-    console.error(`Failed to call discover. Code is ${err.code}, message is ${err.message}`);
+@Entry
+@Component
+struct Index {
+  uiContext = new UIContext();
+  context: Context = this.uiContext.getHostContext() as common.UIAbilityContext;
+  build() {
+    RelativeContainer() {
+      Text()
+        .id('HelloWorld')
+        .onClick(async () => {
+          let pkOptions: fido2.PublicKeyCredentialCreationOptions = {
+            rp: { id: 'example.com', name: 'Example Corp' },
+            user: { id: new Uint8Array([1, 2, 3, 4]), name: 'user', displayName: 'User Name' },
+            pubKeyCredParams: [
+            ],
+            challenge: new Uint8Array([1, 2, 3, 4, 5, 6, 7, 8])
+          };
+          let credentialCreationOp: fido2.CredentialCreationOptions = {
+            publicKey: pkOptions
+          };
+          try {
+            let publicKeyAttestationCredential: fido2.PublicKeyAttestationCredential =
+              await fido2.register(this.context, credentialCreationOp);
+            console.info('Succeeded in doing register. publicKeyAttestationCredential:',
+              JSON.stringify(publicKeyAttestationCredential));
+          } catch (error) {
+            const err: BusinessError = error as BusinessError;
+            console.error(`Failed to call register. Code is ${err.code}, message is ${err.message}`);
+          }
+        })
+    }
+  }
 }
 ```
 
@@ -857,7 +902,7 @@ authenticate(context: common.Context, options: CredentialRequestOptions, tokenBi
 
 错误码：
 
-以下错误码的详细介绍请参见[通行密钥服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-onlineauthentication-passkey)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[通行密钥服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-onlineauthentication-passkey)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -885,21 +930,37 @@ authenticate(context: common.Context, options: CredentialRequestOptions, tokenBi
 示例：
 
 ```
+import { UIContext } from '@kit.ArkUI';
 import { common } from '@kit.AbilityKit';
 
-uiContext1: UIContext = this.getUIContext();
-uiContext: common.UIAbilityContext = this.uiContext1.getHostContext() as common.UIAbilityContext; // 使用uiContext需要获取页面UIAbility的Context，一个页面获取一次即可
-
-try {
-  let authCredentialRequestOptions: fido2.CredentialRequestOptions = {
-    publicKey: authPub, // authPub为从FIDO服务器获取的认证报文
-    mediation: 'optional' as fido2.CredentialMediationRequirement
-  }; // authCredentialRequestOptions为应用组装的认证信息
-  let pkAssertionCredential: fido2.PublicKeyAssertionCredential =
-    await fido2.authenticate(this.uiContext, authCredentialRequestOptions); // 进行FIDO2认证
-  console.info('Succeeded in doing authenticate. pkAssertionCredential:', JSON.stringify(pkAssertionCredential));
-  } catch (error) {
-    const err: BusinessError = error as BusinessError;
-    console.error(`Failed to call discover. Code is ${err.code}, message is ${err.message}`);
+@Entry
+@Component
+struct Index {
+  uiContext = new UIContext();
+  context: Context = this.uiContext.getHostContext() as common.UIAbilityContext;
+  build() {
+    RelativeContainer() {
+      Text()
+        .id('HelloWorld')
+        .onClick(async () => {
+          let authPub: fido2.PublicKeyCredentialRequestOptions = {
+            challenge: new Uint8Array([1, 2, 3, 4, 5, 6, 7, 8]),
+            rpId: 'example.com'
+          };
+          let authCredentialRequestOptions: fido2.CredentialRequestOptions = {
+            publicKey: authPub,
+            mediation: 'optional' as fido2.CredentialMediationRequirement
+          };
+          try {
+            let pkAssertionCredential: fido2.PublicKeyAssertionCredential =
+              await fido2.authenticate(this.context, authCredentialRequestOptions);
+            console.info('Succeeded in doing authenticate. pkAssertionCredential:', JSON.stringify(pkAssertionCredential));
+          } catch (error) {
+            const err: BusinessError = error as BusinessError;
+            console.error(`Failed to call authenticate. Code is ${err.code}, message is ${err.message}`);
+          }
+        })
+    }
+  }
 }
 ```

@@ -2,19 +2,13 @@
 title: "atomicService（融合场景化API）"
 upstream_id: "harmonyos-references/scenario-fusion-atomicservice"
 catalog: "harmonyos-references"
-content_hash: "553412519553"
-synced_at: "2026-07-09T01:01:39.073405"
+content_hash: "d5c304cf8e80"
+synced_at: "2026-07-28T16:53:02.715004"
 ---
 
 # atomicService（融合场景化API）
 
 本模块为开发者提供获取系统信息、系统设置、关注组件等能力。
-
-模型约束： 此接口仅可在Stage模型下使用。
-
-元服务API： 从版本5.0.0(12)开始，该接口支持在元服务中使用。
-
-系统能力： SystemCapability.AtomicserviceComponent.atomicservice
 
 起始版本： 5.0.0(12)
 
@@ -65,7 +59,7 @@ import { atomicService } from '@kit.ScenarioFusionKit';
 | screenSafeArea | [window.AvoidArea](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#avoidarea7) | 否 | 是 | 竖屏正方向下的安全区域。 |
 | language | string | 否 | 是 | 系统语言。 |
 | osFullName | string | 否 | 是 | 系统版本。 |
-| fontSizeSetting | number | 否 | 是 | 显示设备逻辑像素的密度，代表物理像素与逻辑像素的缩放系数，计算方式为：![](./img/zh-cn_image_0000002661733751.png) 该参数为浮点数，受[densityDPI](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#display)范围限制，取值范围在[0.5，4.0]。一般取值1.0、3.0等，实际取值取决于不同设备提供的[densityDPI](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#display)。 |
+| fontSizeSetting | number | 否 | 是 | 显示设备逻辑像素的密度，代表物理像素与逻辑像素的缩放系数，计算方式为：![](./img/zh-cn_image_0000002655849830.png) 该参数为浮点数，受[densityDPI](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#display)范围限制，取值范围在[0.5，4.0]。一般取值1.0、3.0等，实际取值取决于不同设备提供的[densityDPI](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#display)。 |
 | sdkApiVersion | number | 否 | 是 | 系统软件API版本。 |
 | bluetoothEnabled | boolean | 否 | 是 | 蓝牙系统开关。true表示开关已打开，false表示开关已关闭。 |
 | locationEnabled | boolean | 否 | 是 | 地理位置的系统开关。true表示开关已打开，false表示开关已关闭。 |
@@ -160,7 +154,7 @@ type SystemInfoType = 'brand' | 'deviceModel' | 'screenWidth' | 'screenHeight' |
 
 系统能力： SystemCapability.AtomicserviceComponent.atomicservice
 
-设备行为差异： 该接口在Phone、Tablet、PC/2in1、Wearable、TV、Car中可正常调用，在其他设备类型中返回801错误码。
+设备行为差异： 该接口在Phone、Tablet、PC/2in1、Wearable、TV中可正常调用，在其他设备类型中返回801错误码。
 
 起始版本： 5.0.0(12)
 
@@ -174,7 +168,7 @@ type SystemInfoType = 'brand' | 'deviceModel' | 'screenWidth' | 'screenHeight' |
 | 'screenSafeArea' | 竖屏正方向下的安全区域。 |
 | 'language' | 系统语言。 |
 | 'osFullName' | 系统版本。 |
-| 'fontSizeSetting' | 显示设备逻辑像素的密度，代表物理像素与逻辑像素的缩放系数，计算方式为：![](./img/zh-cn_image_0000002631254632.png) 该参数为浮点数，受[densityDPI](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#display)范围限制，取值范围在[0.5，4.0]。一般取值1.0、3.0等，实际取值取决于不同设备提供的[densityDPI](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#display)。 |
+| 'fontSizeSetting' | 显示设备逻辑像素的密度，代表物理像素与逻辑像素的缩放系数，计算方式为：![](./img/zh-cn_image_0000002686089261.png) 该参数为浮点数，受[densityDPI](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#display)范围限制，取值范围在[0.5，4.0]。一般取值1.0、3.0等，实际取值取决于不同设备提供的[densityDPI](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#display)。 |
 | 'sdkApiVersion' | 系统软件API版本。 |
 | 'bluetoothEnabled' | 蓝牙系统开关。 |
 | 'locationEnabled' | 地理位置的系统开关。 |
@@ -196,7 +190,7 @@ type SystemSettingType = 'bluetoothEnabled' | 'locationEnabled' | 'wifiEnabled' 
 
 系统能力： SystemCapability.AtomicserviceComponent.atomicservice
 
-设备行为差异： 该接口在Phone、Tablet、PC/2in1、Wearable、TV、Car中可正常调用，在其他设备类型中返回801错误码。
+设备行为差异： 该接口在Phone、Tablet、PC/2in1、Wearable、TV中可正常调用，在其他设备类型中返回801错误码。
 
 起始版本： 5.0.0(12)
 
@@ -221,7 +215,7 @@ getSystemInfoSync(properties?: Array<SystemInfoType>): SystemInfo
 
 系统能力： SystemCapability.AtomicserviceComponent.atomicservice
 
-设备行为差异： 该接口在Phone、Tablet、PC/2in1、Wearable、TV、Car中可正常调用，在其他设备类型中返回801错误码。
+设备行为差异： 该接口在Phone、Tablet、PC/2in1、Wearable、TV中可正常调用，在其他设备类型中返回801错误码。
 
 起始版本： 5.0.0(12)
 
@@ -282,7 +276,7 @@ getSystemInfo(properties?: Array<SystemInfoType>): Promise<SystemInfo>
 
 系统能力： SystemCapability.AtomicserviceComponent.atomicservice
 
-设备行为差异： 该接口在Phone、Tablet、PC/2in1、Wearable、TV、Car中可正常调用，在其他设备类型中返回801错误码。
+设备行为差异： 该接口在Phone、Tablet、PC/2in1、Wearable、TV中可正常调用，在其他设备类型中返回801错误码。
 
 起始版本： 5.0.0(12)
 
@@ -333,7 +327,7 @@ try {
     let windowHeight: number | undefined = data.windowHeight;
   }).catch((error: BusinessError) => {
     hilog.error(0x0000, 'testTag', 'Promise error: %{public}d %{public}s', error.code, error.message);
-  })
+  });
 } catch (error) {
   hilog.error(0x0000, 'testTag', 'Failed to get system info asynchronously, failReason: %{public}d %{public}s', error.code, error.message);
 }
@@ -351,7 +345,7 @@ getSystemSetting(properties?: Array<SystemSettingType>): SystemSettingInfo
 
 系统能力： SystemCapability.AtomicserviceComponent.atomicservice
 
-设备行为差异： 该接口在Phone、Tablet、PC/2in1、Wearable、TV、Car中可正常调用，在其他设备类型中返回801错误码。
+设备行为差异： 该接口在Phone、Tablet、PC/2in1、Wearable、TV中可正常调用，在其他设备类型中返回801错误码。
 
 起始版本： 5.0.0(12)
 
@@ -463,15 +457,16 @@ struct Index {
           hilog.info(0x0000, 'testTag', 'follow failed handle');
         }
       }
-    }
+    };
     // 展示关注组件。
     atomicService.showFollowComponent(this.getUIContext(), params, callbacks).catch((error: BusinessError<void>) => {
       hilog.error(0x0000, 'testTag', 'Failed to show the Follow Component, failReason: %{public}d %{public}s', error.code,
         error.message);
-    })
+    });
   }
 
   build() {
+    // 开发者自行实现逻辑处理
   }
 }
 ```

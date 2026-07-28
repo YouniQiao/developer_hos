@@ -2,8 +2,8 @@
 title: "@ohos.settings (设置数据项名称)"
 upstream_id: "harmonyos-references/js-apis-settings"
 catalog: "harmonyos-references"
-content_hash: "3a9cd2431b20"
-synced_at: "2026-07-09T00:59:41.508114"
+content_hash: "4337fa60b1f5"
+synced_at: "2026-07-28T16:50:59.053253"
 ---
 
 # @ohos.settings (设置数据项名称)
@@ -705,7 +705,7 @@ openNetworkManagerSettings(context: Context): Promise<boolean>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| context | Context | 是 | 应用上下文（仅支持UIAbilityContext和ExtensionContext）。 Stage模型的应用Context定义见[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context)。 |
+| context | Context | 是 | 应用上下文（仅支持UIAbilityContext和UIExtensionContext）。 Stage模型的应用Context定义见[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context)。 |
 
 返回值：
 
@@ -736,11 +736,13 @@ settings.openNetworkManagerSettings(context).then((status) => {
 });
 ```
 
-#### settings.enableAirplaneMode
+#### settings.enableAirplaneMode(deprecated)
 
 enableAirplaneMode(enable: boolean, callback: AsyncCallback<void>): void
 
 启用或禁用飞行模式。使用callback异步回调（暂不支持）。
+
+![](./img/note_3.0-zh-cn.png) 从 API version 7开始支持，从API version 26.0.0开始废弃，此接口不再提供替代接口。
 
 系统能力：SystemCapability.Applications.Settings.Core
 
@@ -764,11 +766,13 @@ settings.enableAirplaneMode(isEnabled, (err:Error) => {
 })
 ```
 
-#### settings.enableAirplaneMode
+#### settings.enableAirplaneMode(deprecated)
 
 enableAirplaneMode(enable: boolean): Promise<void>
 
 启用或禁用飞行模式。使用Promise异步回调（暂不支持）。
+
+![](./img/note_3.0-zh-cn.png) 从 API version 7开始支持，从API version 26.0.0开始废弃，此接口不再提供替代接口。
 
 系统能力：SystemCapability.Applications.Settings.Core
 
@@ -795,11 +799,13 @@ settings.enableAirplaneMode(isEnabled).then(() => {
 })
 ```
 
-#### settings.canShowFloating
+#### settings.canShowFloating(deprecated)
 
 canShowFloating(callback: AsyncCallback<boolean>): void
 
 检查应用是否能够以悬浮窗形式显示。使用callback异步回调（暂不支持）。
+
+![](./img/note_3.0-zh-cn.png) 从 API version 7开始支持，从API version 26.0.0开始废弃，此接口不再提供替代接口。
 
 系统能力：SystemCapability.Applications.Settings.Core
 
@@ -821,11 +827,13 @@ settings.canShowFloating((err:Error, status: boolean) => {
 });
 ```
 
-#### settings.canShowFloating
+#### settings.canShowFloating(deprecated)
 
 canShowFloating(): Promise<boolean>
 
 检查应用是否能够以悬浮窗形式显示。使用Promise异步回调（暂不支持）。
+
+![](./img/note_3.0-zh-cn.png) 从 API version 7开始支持，从API version 26.0.0开始废弃，此接口不再提供替代接口。
 
 系统能力：SystemCapability.Applications.Settings.Core
 
@@ -843,11 +851,13 @@ settings.canShowFloating().then((status:boolean) => {
 });
 ```
 
-#### settings.getUriSync8+
+#### settings.getUriSync(deprecated)
 
 getUriSync(name: string): string
 
 获取数据项的URI（暂不支持）。
+
+![](./img/note_3.0-zh-cn.png) 从 API version 8开始支持，从API version 26.0.0开始废弃，此接口不再提供替代接口。
 
 系统能力：SystemCapability.Applications.Settings.Core
 
@@ -876,7 +886,7 @@ getURI(name: string, callback: AsyncCallback<object>): void
 
 获取数据项的URI。使用callback异步回调（暂不支持）。
 
-![](./img/note_3.0-zh-cn.png) 从 API version 7开始支持，从API version 9开始废弃，此接口不再提供代替接口。
+![](./img/note_3.0-zh-cn.png) 从 API version 7开始支持，从API version 9开始废弃，此接口不再提供替代接口。
 
 系统能力：SystemCapability.Applications.Settings.Core
 
@@ -901,7 +911,7 @@ getURI(name: string): Promise<object>
 
 获取数据项的URI。使用Promise异步回调（暂不支持）。
 
-![](./img/note_3.0-zh-cn.png) 从 API version 7开始支持，从API version 9开始废弃，此接口不再提供代替接口。
+![](./img/note_3.0-zh-cn.png) 从 API version 7开始支持，从API version 9开始废弃，此接口不再提供替代接口。
 
 系统能力：SystemCapability.Applications.Settings.Core
 
@@ -929,7 +939,7 @@ settings.getURI(settings.display.SCREEN_BRIGHTNESS_STATUS).then((uri:string) => 
 
 getValue(dataAbilityHelper: DataAbilityHelper, name: string, callback: AsyncCallback<object>): void
 
-获取数据库中DEVICE_SHARD域指定数据项的值。使用callback异步回调。
+获取数据库中DEVICE_SHARED域指定数据项的值。使用callback异步回调。
 
 ![](./img/note_3.0-zh-cn.png) 从 API version 7开始支持，从API version 9开始废弃，建议使用[getValue()](#settingsgetvalue10)替代。
 
@@ -1093,7 +1103,7 @@ openInputMethodSettings(context: Context): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| context | Context | 是 | 应用上下文（仅支持UIAbilityContext和ExtensionContext）。 Stage模型的应用Context定义见[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context)。 |
+| context | Context | 是 | 应用上下文（仅支持UIAbilityContext和UIExtensionContext）。 Stage模型的应用Context定义见[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context)。 |
 
 错误码：
 
@@ -1131,7 +1141,7 @@ openInputMethodDetail(context: Context, bundleName: string, inputMethodId: strin
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| context | Context | 是 | 应用上下文（仅支持UIAbilityContext和ExtensionContext）。 Stage模型的应用Context定义见[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context)。 |
+| context | Context | 是 | 应用上下文（仅支持UIAbilityContext和UIExtensionContext）。 Stage模型的应用Context定义见[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context)。 |
 | bundleName | string | 是 | 拉起输入法的对应包名 |
 | inputMethodId | string | 是 | 输入法扩展在应用内唯一标识[id](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethod#inputmethodproperty8)。 |
 
@@ -1173,7 +1183,7 @@ openBiometricsSettingsPage(context: Context): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 应用上下文（仅支持UIAbilityContext和ExtensionContext）。 Stage模型的应用Context定义见[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context)。 |
+| context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 应用上下文（仅支持UIAbilityContext和UIExtensionContext）。 Stage模型的应用Context定义见[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context)。 |
 
 错误码：
 
@@ -1215,7 +1225,7 @@ openNfcSettingsPage(context: Context): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 应用上下文（仅支持UIAbilityContext和ExtensionContext）。 Stage模型的应用Context定义见[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context)。 |
+| context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 应用上下文（仅支持UIAbilityContext和UIExtensionContext）。 Stage模型的应用Context定义见[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context)。 |
 
 错误码：
 
@@ -1329,7 +1339,7 @@ openMobileNetworkSettingsPage(context: Context): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 应用上下文（仅支持UIAbilityContext和ExtensionContext）。 Stage模型的应用Context定义见[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context)。 |
+| context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 应用上下文（仅支持UIAbilityContext和UIExtensionContext）。 Stage模型的应用Context定义见[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context)。 |
 
 错误码：
 
@@ -1373,7 +1383,7 @@ openDisplaySettingsPage(context: Context): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 应用上下文（仅支持UIAbilityContext和ExtensionContext）。 Stage模型的应用Context定义见[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context)。 |
+| context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 应用上下文（仅支持UIAbilityContext和UIExtensionContext）。 Stage模型的应用Context定义见[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context)。 |
 
 错误码：
 
@@ -1417,7 +1427,7 @@ openScreenRefreshRateSettingsPage(context: Context): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 应用上下文（仅支持UIAbilityContext和ExtensionContext）。 Stage模型的应用Context定义见[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context)。 |
+| context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 应用上下文（仅支持UIAbilityContext和UIExtensionContext）。 Stage模型的应用Context定义见[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context)。 |
 
 错误码：
 
@@ -1461,7 +1471,7 @@ openSoundSettingsPage(context: Context): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 应用上下文（仅支持UIAbilityContext和ExtensionContext）。 Stage模型的应用Context定义见[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context)。 |
+| context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 应用上下文（仅支持UIAbilityContext和UIExtensionContext）。 Stage模型的应用Context定义见[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context)。 |
 
 错误码：
 
@@ -1505,7 +1515,7 @@ openAboutDeviceSettingsPage(context: Context): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 应用上下文（仅支持UIAbilityContext和ExtensionContext）。 Stage模型的应用Context定义见[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context)。 |
+| context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 应用上下文（仅支持UIAbilityContext和UIExtensionContext）。 Stage模型的应用Context定义见[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context)。 |
 
 错误码：
 
@@ -1549,7 +1559,7 @@ openAppDetailSettingsPage(context: Context, bundleName: string, appIndex?: numbe
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 应用上下文（仅支持UIAbilityContext和ExtensionContext）。 Stage模型的应用Context定义见[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context)。 |
+| context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 应用上下文（仅支持UIAbilityContext和UIExtensionContext）。 Stage模型的应用Context定义见[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context)。 |
 | bundleName | string | 是 | 应用包名 |
 | appIndex | number | 否 | 应用分身的索引 |
 

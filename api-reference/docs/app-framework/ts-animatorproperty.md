@@ -2,13 +2,13 @@
 title: "属性动画 (animation)"
 upstream_id: "harmonyos-references/ts-animatorproperty"
 catalog: "harmonyos-references"
-content_hash: "b5dee0a5c80b"
-synced_at: "2026-07-09T00:58:07.218449"
+content_hash: "4baebcc2361f"
+synced_at: "2026-07-28T16:47:04.328634"
 ---
 
 # 属性动画 (animation)
 
-组件的某些通用属性变化时，可以通过属性动画实现渐变过渡效果，提升用户体验。支持的属性包括[width](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#width)、[height](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#height)、[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、[opacity](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-opacity#opacity)、[scale](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#scale)、[rotate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#rotate)、[translate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#translate)等。对于改变布局类属性（如宽高）的动画，内容通常会直接跳转到最终状态，例如文字或[Canvas](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-components-canvas-canvas)中的内容。如果希望内容跟随宽高变化，可以使用[renderFit](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-renderfit#renderfit)属性进行配置。
+组件的某些通用属性变化时，若不设置动画，属性变化会直接跳变到目标值。通过属性动画可实现渐变过渡效果，使界面变化更加自然流畅。支持的属性包括[width](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#width)、[height](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#height)、[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、[opacity](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-opacity#opacity)、[scale](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#scale)、[rotate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#rotate)、[translate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#translate)等。对于改变布局类属性（如宽高）的动画，内容通常会直接跳变到最终状态，例如文字或[Canvas](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-components-canvas-canvas)中的内容。如果希望内容跟随宽高变化，可以使用[renderFit](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-renderfit#renderfit)属性进行配置。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
 
@@ -33,7 +33,7 @@ animation(value:AnimateParam): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [AnimateParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-explicit-animation#animateparam对象说明) | 是 | 设置动画效果相关参数。 |
+| value | [AnimateParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-explicit-animation#animateparam对象说明) | 是 | 设置动画效果相关参数，各属性的取值范围及含义详见[AnimateParam对象说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-explicit-animation#animateparam对象说明)。 |
 
 返回值：
 
@@ -72,6 +72,7 @@ struct AnimationExample {
         .margin(30)
         .width(this.widthSize) // 只有写在animation前面才生效
         .height(this.heightSize) // 只有写在animation前面才生效
+        // 为按钮尺寸变化配置缓出曲线，重复播放3次
         .animation({
           duration: 2000,
           curve: Curve.EaseOut,
@@ -127,6 +128,7 @@ struct AttrAnimationExample {
         })
         .margin(50)
         .rotate({ angle: this.rotateAngle })
+        // 为旋转角度变化配置阻尼曲线，延迟500ms启动，无限循环交替播放
         .animation({
           duration: 1200,
           curve: Curve.Friction,
@@ -143,4 +145,4 @@ struct AttrAnimationExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413608.gif)
+ ![](./img/zh-cn_image_0000002655848906.gif)

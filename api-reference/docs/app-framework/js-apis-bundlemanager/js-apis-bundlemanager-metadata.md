@@ -2,15 +2,15 @@
 title: "Metadata"
 upstream_id: "harmonyos-references/js-apis-bundlemanager-metadata"
 catalog: "harmonyos-references"
-content_hash: "79b34fe1b084"
-synced_at: "2026-07-09T00:57:10.360824"
+content_hash: "2b2030550cf6"
+synced_at: "2026-07-28T16:40:40.589938"
 ---
 
 # Metadata
 
 元数据对象，可以通过[bundleManager.getBundleInfoForSelf](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundleinfoforself)获取，其中参数bundleFlags至少包含GET_BUNDLE_INFO_WITH_METADATA。此对象在[ApplicationInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-applicationinfo)、[HapModuleInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-hapmoduleinfo)、[AbilityInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-abilityinfo)、[ExtensionAbilityInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-extensionabilityinfo)中均包含。
 
-![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 9 开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
+![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 9开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
 描述的module、uiAbility、extensionAbility配置信息，标签值为数组类型，该标签下的配置只对当前module、uiAbility或者extensionAbility生效。
 
@@ -24,7 +24,7 @@ import { bundleManager } from '@kit.AbilityKit';
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
-系统能力: SystemCapability.BundleManager.BundleFramework.Core
+系统能力：SystemCapability.BundleManager.BundleFramework.Core
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |

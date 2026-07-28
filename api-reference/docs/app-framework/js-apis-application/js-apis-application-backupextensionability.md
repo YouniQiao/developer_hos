@@ -2,8 +2,8 @@
 title: "@ohos.application.BackupExtensionAbility (备份恢复扩展能力)"
 upstream_id: "harmonyos-references/js-apis-application-backupextensionability"
 catalog: "harmonyos-references"
-content_hash: "2af4eb529291"
-synced_at: "2026-07-09T00:58:59.058687"
+content_hash: "ab7499fb0e2c"
+synced_at: "2026-07-28T16:50:01.944594"
 ---
 
 # @ohos.application.BackupExtensionAbility (备份恢复扩展能力)
@@ -14,6 +14,10 @@ BackupExtensionAbility模块提供备份恢复服务相关扩展能力，为应�
 
 - 本模块首批接口从API version 10开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 - 本模块接口仅可在Stage模型下使用。
+
+#### 约束限制
+
+为保障系统安全性和稳定性，防止BackupExtensionAbility滥用系统资源，系统对其能力进行管控，不支持部分模块的引用，详情请参考[附录](#附录)。
 
 #### 导入模块
 
@@ -426,3 +430,27 @@ class BackupExt extends BackupExtensionAbility {
   }
 }
 ```
+
+#### 附录
+
+BackupExtensionAbility不支持以下模块的引用。
+
+| Kit | 模块 |
+| --- | --- |
+| Ability Kit | [@ohos.abilityAccessCtrl (程序访问控制管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-abilityaccessctrl) |
+| Ability Kit | [@ohos.app.ability.appManager (应用管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-appmanager) |
+| Ability Kit | [@ohos.bundle.defaultAppManager (默认应用管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-defaultappmanager) |
+| Ability Kit | [@ohos.bundle.launcherBundleManager (launcherBundleManager模块)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-launcherbundlemanager) |
+| Ability Kit | [UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext) |
+| ArkUI | [@ohos.screenshot (屏幕截图)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-screenshot) |
+| Background Tasks Kit | [@ohos.bundleState (设备使用信息统计)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-deviceusagestatistics) |
+| Background Tasks Kit | [@ohos.reminderAgent (后台代理提醒)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-reminderagent) |
+| Background Tasks Kit | [@ohos.reminderAgentManager (后台代理提醒)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-reminderagentmanager) |
+| Basic Services Kit | [@ohos.power (系统电源管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-power) |
+| Connectivity Kit | [@ohos.nfc.cardEmulation (标准NFC-cardEmulation)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-cardemulation) |
+| Form Kit | [@ohos.application.formError (formError)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-application-formerror) |
+| Form Kit | [@ohos.application.formError (formError)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-application-formerror) |
+| IME Kit | [@ohos.inputMethod (输入法框架)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethod) |
+| Location Kit | [@ohos.geolocation (位置服务)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-geolocation) |
+| MDM Kit | [@ohos.enterprise.adminManager（admin权限管理）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-adminmanager) |
+| Sensor Service Kit | [@ohos.sensor (传感器)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-sensor) |

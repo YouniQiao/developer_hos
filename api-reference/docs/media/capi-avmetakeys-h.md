@@ -2,8 +2,8 @@
 title: "avmetakeys.h"
 upstream_id: "harmonyos-references/capi-avmetakeys-h"
 catalog: "harmonyos-references"
-content_hash: "abfbd6bc55c5"
-synced_at: "2026-07-09T01:00:42.189194"
+content_hash: "9d77b72e9247"
+synced_at: "2026-07-28T16:51:59.705624"
 ---
 
 # avmetakeys.h
@@ -33,12 +33,12 @@ synced_at: "2026-07-09T01:00:42.189194"
 | const char * OH_AVMETA_KEY_MIME_TYPE | 编解码器MIME类型，值类型为字符串（string）。 **起始版本：** 23 |
 | const char * OH_AVMETA_KEY_DURATION | 媒体时长（单位：微秒），值类型为int64_t。 **起始版本：** 23 |
 | const char * OH_AVMETA_KEY_BITRATE | 比特率（单位：bps），值类型为int64_t。 **起始版本：** 23 |
-| const char * OH_AVMETA_KEY_FRAME_RATE | 视频帧率（每100秒的帧数），值类型为double。 **起始版本：** 23 |
-| const char * OH_AVMETA_KEY_WIDTH | 视频宽度，值类型为int32_t。 **起始版本：** 23 |
-| const char * OH_AVMETA_KEY_HEIGHT | 视频高度，值类型为int32_t。 **起始版本：** 23 |
+| const char * OH_AVMETA_KEY_FRAME_RATE | 视频帧率，单位为每秒帧数（fps），值类型为double。 **起始版本：** 23 |
+| const char * OH_AVMETA_KEY_WIDTH | 视频宽度，单位为像素（px），值类型为int32_t。 **起始版本：** 23 |
+| const char * OH_AVMETA_KEY_HEIGHT | 视频高度，单位为像素（px），值类型为int32_t。 **起始版本：** 23 |
 | const char * OH_AVMETA_KEY_CHANNEL_COUNT | 音频声道数，值类型为int32_t。 **起始版本：** 23 |
-| const char * OH_AVMETA_KEY_SAMPLE_RATE | 音频采样率（Hz），值类型为int32_t。 **起始版本：** 23 |
-| const char * OH_AVMETA_KEY_SAMPLE_DEPTH | 音频采样位深（bit depth），值类型为int32_t。 **起始版本：** 23 |
+| const char * OH_AVMETA_KEY_SAMPLE_RATE | 音频采样率，单位为赫兹（Hz），值类型为int32_t。 **起始版本：** 23 |
+| const char * OH_AVMETA_KEY_SAMPLE_DEPTH | 音频采样位深，单位为比特（bit），值类型为int32_t。 **起始版本：** 23 |
 | const char * OH_AVMETA_KEY_LANGUAGE | 语言标识，值类型为字符串（string）。 **起始版本：** 23 |
 | const char * OH_AVMETA_KEY_TRACK_NAME | 轨道名称，值类型为字符串（string）。 **起始版本：** 23 |
 | const char * OH_AVMETA_KEY_HDR_TYPE | HDR类型，值类型为int32_t。 **起始版本：** 23 |

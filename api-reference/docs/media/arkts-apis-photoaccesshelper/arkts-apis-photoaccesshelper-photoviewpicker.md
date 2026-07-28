@@ -2,8 +2,8 @@
 title: "Class (PhotoViewPicker)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-photoviewpicker"
 catalog: "harmonyos-references"
-content_hash: "7ffcbffe25ca"
-synced_at: "2026-07-21T16:26:55.463959"
+content_hash: "c25c787348f7"
+synced_at: "2026-07-28T16:52:03.281909"
 ---
 
 # Class (PhotoViewPicker)
@@ -105,7 +105,7 @@ select(option: PhotoSelectOptions, callback: AsyncCallback<PhotoSelectResult>) :
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 13900042 | Unknown error. |
-| 23800151 | Scene parameters validate failed, possible causes:1. An illegal enumeration value was passed to PhotoSelectOptions.globalMovingPhotoState. Only MOVING_PHOTO_ENABLED and MOVING_PHOTO_DISABLED are supported for configuration; |
+| 23800151 | Scene parameters validate failed, possible causes:1. An illegal enumeration value was passed to PhotoSelectOptions.globalMovingPhotoState. Only MOVING_PHOTO_ENABLED and MOVING_PHOTO_DISABLED are supported for configuration; 适用版本：12 |
 
 示例：
 

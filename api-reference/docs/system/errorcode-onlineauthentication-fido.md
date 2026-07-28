@@ -2,8 +2,8 @@
 title: "FIDO"
 upstream_id: "harmonyos-references/errorcode-onlineauthentication-fido"
 catalog: "harmonyos-references"
-content_hash: "b3e26c3e63a0"
-synced_at: "2026-07-09T00:59:17.277405"
+content_hash: "ec417a064bf2"
+synced_at: "2026-07-28T16:50:30.036350"
 ---
 
 # FIDO
@@ -183,3 +183,23 @@ Switched to the custom authentication process.
 处理步骤
 
 重新发起UAF认证或者拉起自定义认证方式。
+
+#### 1005900018 认证被锁定
+
+错误信息
+
+Authentication is locked out.
+
+错误描述
+
+认证被锁定。
+
+可能原因
+
+当前认证失败的次数超过了上限，触发防爆模式，认证被锁定。
+
+上限参考[AuthLockState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-useriam-userauth#authlockstate22)参数说明中的认证未被冻结时的最大尝试次数。
+
+处理步骤
+
+稍后重新发起一次成功的认证。

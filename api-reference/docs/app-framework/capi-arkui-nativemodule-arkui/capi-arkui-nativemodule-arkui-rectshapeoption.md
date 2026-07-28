@@ -2,8 +2,8 @@
 title: "ArkUI_RectShapeOption"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-rectshapeoption"
 catalog: "harmonyos-references"
-content_hash: "736c2d221dcf"
-synced_at: "2026-07-09T00:58:46.877494"
+content_hash: "0ce41aa20a2b"
+synced_at: "2026-07-28T16:49:41.231970"
 ---
 
 # ArkUI_RectShapeOption
@@ -14,7 +14,7 @@ typedef struct ArkUI_RectShape ArkUI_RectShapeOption
 
 #### 概述
 
-定义范围形状结构体。
+定义矩形形状配置项，用于在ArkUI渲染节点中描述矩形或椭圆形的形状范围，可作为创建遮罩或裁剪配置项的输入。
 
 起始版本： 20
 

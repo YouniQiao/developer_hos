@@ -2,8 +2,8 @@
 title: "list-item"
 upstream_id: "harmonyos-references/js-service-widget-container-list-item"
 catalog: "harmonyos-references"
-content_hash: "e656b7004a8f"
-synced_at: "2026-07-09T00:58:30.583255"
+content_hash: "d680ff35fb2d"
+synced_at: "2026-07-28T16:49:13.278085"
 ---
 
 # list-item
@@ -37,7 +37,7 @@ synced_at: "2026-07-09T00:58:30.583255"
 | 名称 | 类型 | 默认值 | 必填 | 描述 |
 | --- | --- | --- | --- | --- |
 | column-span | | 1 | 否 | 当前的list-item需要在list中占据的列的数量，默认占一列，仅在list为多列时生效。 |
-| click-color | | - | 否 | 设置列表项按压点击时的背板颜色。 |
+| click-color | | - | 否 | 设置list-item按压点击时的背板颜色。 |
 
 #### 事件
 

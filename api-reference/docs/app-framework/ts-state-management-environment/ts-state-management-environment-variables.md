@@ -1,16 +1,16 @@
 ---
-
 title: "内置环境变量说明"
 upstream_id: "harmonyos-references/ts-state-management-environment-variables"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T00:58:18.238858"
-content_hash: "13dd3c79e0a9"
+content_hash: "9cec1b8f8066"
+synced_at: "2026-07-28T16:48:45.248896"
 ---
-
 
 # 内置环境变量说明
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 7开始支持，后续版本的新增接口，采用上角标单独标记接口的起始版本。
+
+内置环境变量用于反映系统环境状态的值，开发者可通过[Environment](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-state-management#environment)查询内置环境变量（如深浅色模式、布局方向等）。
 
 #### ColorMode
 

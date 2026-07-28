@@ -2,8 +2,8 @@
 title: "DocumentScanner（文档扫描控件）"
 upstream_id: "harmonyos-references/vision-document-scanner"
 catalog: "harmonyos-references"
-content_hash: "753799dfdd98"
-synced_at: "2026-07-09T01:01:45.863424"
+content_hash: "028f5a3fefee"
+synced_at: "2026-07-28T16:53:17.413920"
 ---
 
 # DocumentScanner（文档扫描控件）
@@ -15,7 +15,7 @@ synced_at: "2026-07-09T01:01:45.863424"
 #### 导入模块
 
 ```
-import { DocType, DocumentScanner, DocumentScannerConfig, SaveOption, FilterId, ShootingMode, EditTab, DocumentScannerResultCallback } from '@kit.VisionKit';
+import { DocType, DocumentScanner, DocumentScannerConfig, SaveOption, FilterId, ShootingMode, EditTab, DocumentScannerResultCallback, DocumentScannerController } from '@kit.VisionKit';
 ```
 
 #### DocumentScanner
@@ -39,6 +39,20 @@ import { DocType, DocumentScanner, DocumentScannerConfig, SaveOption, FilterId, 
 | scannerConfig | [DocumentScannerConfig](#documentscannerconfig) | 是 | - | 文档扫描能力配置。 |
 | onResult | [DocumentScannerResultCallback](#documentscannerresultcallback) | 是 | - | 文档扫描结果回调。 |
 
+#### [h2]build
+
+build(): void
+
+用于创建[DocumentScanner](#documentscanner)对象的构造函数，开发者无需调用此方法。
+
+元服务API： 从版本5.0.0(12)开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.AI.Component.DocScan
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+起始版本： 5.0.0(12)
+
 #### DocumentScannerConfig
 
 文档扫描配置项。
@@ -54,7 +68,7 @@ import { DocType, DocumentScanner, DocumentScannerConfig, SaveOption, FilterId, 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | maxShotCount | number | 否 | 是 | 文档扫描最大支持张数。默认值1，最大值50。 取值范围：[1,50]的整数。 |
-| supportType | [DocType](#doctype)[] | 否 | 否 | 支持识别的文件类型。默认值：[DocType.DOC]。 **设备行为差异：** 部分机型仅支持配置[DocType.DOC]。若设备配置不支持的属性，此属性将采用默认值。 |
+| supportType | [DocType](#doctype)[] | 否 | 否 | 支持识别的文件类型。默认值：[DocType.DOC]。 **设备行为差异：** 部分机型不支持配置[DocType.SHEET]，可使用[isSheetDetectionSupported](#issheetdetectionsupported)查询当前设备是否支持表格提取功能。若设备配置不支持的属性，此属性将采用默认值。 |
 | isGallerySupported | boolean | 否 | 是 | 是否支持从图库进行选图。true：支持。false：不支持。默认值：true。 |
 | defaultFilterId | [FilterId](#filterid) | 否 | 是 | 初始滤镜效果。默认增强。 |
 | editTabs | [EditTab](#edittab)[] | 否 | 是 | Tab栏中展示的功能按钮。默认全部显示。 |
@@ -172,3 +186,45 @@ type DocumentScannerResultCallback = (code: number, saveType: SaveOption, uris: 
 | code | number | 是 | 返回的结果码： -1：无结果返回 200：识别成功 1008601001：uris无效 **说明：** 从5.0.5(17)开始支持状态码1008601001 |
 | saveType | [SaveOption](#saveoption) | 是 | 结果保存格式。 |
 | uris | string[] | 是 | 文档uri列表。 |
+
+#### DocumentScannerController
+
+文档扫描控制器，用于控制交互。
+
+元服务API： 从版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.AI.Component.DocScan
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+起始版本： 26.0.0
+
+#### [h2]isSheetDetectionSupported
+
+isSheetDetectionSupported(): boolean
+
+查询当前设备是否支持表格提取功能。
+
+元服务API： 从版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.AI.Component.DocScan
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+起始版本： 26.0.0
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| boolean | 如果当前设备支持表格提取功能，则返回true；否则返回false。 |
+
+示例：
+
+```
+import { DocumentScannerController } from '@kit.VisionKit';
+
+let documentScannerController: DocumentScannerController = new DocumentScannerController();
+let isSheetSupported = documentScannerController.isSheetDetectionSupported();
+console.info(`isSheetSupported: ${isSheetSupported}`);
+```

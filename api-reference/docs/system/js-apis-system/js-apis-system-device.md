@@ -2,8 +2,8 @@
 title: "@system.device (设备信息)"
 upstream_id: "harmonyos-references/js-apis-system-device"
 catalog: "harmonyos-references"
-content_hash: "a96c24f71adb"
-synced_at: "2026-07-09T00:59:42.037718"
+content_hash: "e22e87f36146"
+synced_at: "2026-07-28T16:50:59.453948"
 ---
 
 # @system.device (设备信息)
@@ -12,7 +12,7 @@ synced_at: "2026-07-09T00:59:42.037718"
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 模块维护策略 - 对于Lite Wearable设备类型，该模块长期维护，正常使用。 - 对于支持该模块的其他设备类型，该模块从API Version 6开始不再维护，推荐使用新接口[@ohos.deviceInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-device-info)进行设备信息查询。
+- 模块维护策略 - 对于Lite Wearable设备类型，该模块长期维护，正常使用。 - 对于支持该模块的其他设备类型，该模块从API version 6开始不再维护，推荐使用新接口[@ohos.deviceInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-device-info)（从API version 6开始支持）进行设备信息查询。
 - 本模块首批接口从API version 3开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
 #### 导入模块

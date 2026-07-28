@@ -2,8 +2,8 @@
 title: "Interface (AbsAlbum)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-absalbum"
 catalog: "harmonyos-references"
-content_hash: "54bc6b2721a6"
-synced_at: "2026-07-09T01:00:46.321341"
+content_hash: "06c93e71d855"
+synced_at: "2026-07-28T16:52:03.464614"
 ---
 
 # Interface (AbsAlbum)
@@ -29,7 +29,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 | count | number | 是 | 否 | 相册中文件数量。 |
 | coverUri | string | 是 | 否 | 封面文件uri。 |
 | lpath23+ | string | 是 | 是 | 相册虚拟路径。 |
-| changeTime23+ | number | 是 | 是 | 相册的更改时间。 |
+| changeTime23+ | number | 是 | 是 | 相册的更改时间，单位：秒。 |
 
 #### getAssets
 
@@ -57,7 +57,8 @@ getAssets(options: FetchOptions, callback: AsyncCallback<FetchResult<PhotoAsset>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 201 | Permission denied. |
+| 201 | Permission denied. 适用版本：12+ |
+| 13900012 | Permission denied. 适用版本：10-11 |
 | 13900020 | Invalid argument. |
 | 14000011 | System inner fail. |
 
@@ -124,7 +125,8 @@ getAssets(options: FetchOptions): Promise<FetchResult<PhotoAsset>>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 201 | Permission denied. |
+| 201 | Permission denied. 适用版本：20+ |
+| 13900012 | Permission denied. 适用版本：10-19 |
 | 13900020 | Invalid argument. |
 | 14000011 | System inner fail. |
 

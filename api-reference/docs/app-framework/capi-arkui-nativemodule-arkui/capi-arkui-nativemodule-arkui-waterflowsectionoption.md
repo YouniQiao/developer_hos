@@ -2,8 +2,8 @@
 title: "ArkUI_WaterFlowSectionOption"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-waterflowsectionoption"
 catalog: "harmonyos-references"
-content_hash: "5f9095e06517"
-synced_at: "2026-07-09T00:58:43.401056"
+content_hash: "08052203f63d"
+synced_at: "2026-07-28T16:49:34.773819"
 ---
 
 # ArkUI_WaterFlowSectionOption
@@ -20,4 +20,4 @@ typedef struct ArkUI_WaterFlowSectionOption ArkUI_WaterFlowSectionOption
 
 相关模块： [ArkUI_NativeModule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule)
 
-所在头文件： [native_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h)
+所在头文件： [water_flow.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-water-flow-h)

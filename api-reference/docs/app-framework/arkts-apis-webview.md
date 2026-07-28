@@ -1,12 +1,10 @@
 ---
-
 title: "模块描述"
 upstream_id: "harmonyos-references/arkts-apis-webview"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T00:58:49.784188"
-content_hash: "5cddbb64d0ed"
+content_hash: "78c63cc931c1"
+synced_at: "2026-07-28T16:49:50.647060"
 ---
-
 
 # 模块描述
 
@@ -27,6 +25,7 @@ WebView模块是HarmonyOS ArkWeb框架提供的Web控制能力模块，用于在
 该模块提供以下Web控制相关的常用功能：
 
 - [AdsBlockManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-adsblockmanager)：广告过滤配置。
+- [AIPageCommand](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-aipagecommand)：[executeAIPageCommand](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#executeaipagecommand)支持的JSON命令协议。
 - [BackForwardCacheOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-backforwardcacheoptions)：前进后退缓存配置。
 - [BackForwardCacheSupportedFeatures](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-backforwardcachesupportedfeatures)：设置前进后退缓存配置所支持的特性。
 - [GeolocationPermissions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-geolocationpermissions)：地理位置权限配置。

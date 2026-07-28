@@ -2,8 +2,8 @@
 title: "HiDebug错误码"
 upstream_id: "harmonyos-references/errorcode-hiviewdfx-hidebug"
 catalog: "harmonyos-references"
-content_hash: "c7655f9a254a"
-synced_at: "2026-07-09T01:00:06.107988"
+content_hash: "815d4e967939"
+synced_at: "2026-07-28T16:51:24.432722"
 ---
 
 # HiDebug错误码
@@ -60,9 +60,8 @@ The number of available invocations for the interface is insufficient. Please wa
 
 可能原因
 
-1.进程调用次数超出配额（1次/天）。
-
-2.整机调用次数超出配额（5次/周）。
+1. 进程调用次数超出配额（1次/天）。
+2. 整机调用次数超出配额（5次/周）。
 
 处理步骤
 
@@ -188,9 +187,8 @@ Failed to create dump file.
 
 可能原因
 
-1、进程目录下存在同名文件。
-
-2、系统资源不足。
+1. 进程目录下存在同名文件。
+2. 系统资源不足。
 
 处理步骤
 

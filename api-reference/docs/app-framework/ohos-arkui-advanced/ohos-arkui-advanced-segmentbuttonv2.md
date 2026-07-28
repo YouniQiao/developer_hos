@@ -2,13 +2,13 @@
 title: "SegmentButtonV2"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-segmentbuttonv2"
 catalog: "harmonyos-references"
-content_hash: "dfeec34edba7"
-synced_at: "2026-07-09T00:58:17.218274"
+content_hash: "b43f24bf3059"
+synced_at: "2026-07-28T16:48:25.955001"
 ---
 
 # SegmentButtonV2
 
-分段按钮组件用于创建页签型、单选或多选的胶囊型分段按钮。
+分段按钮组件用于创建页签型、单选或多选的胶囊型分段按钮，支持文本、图标、Symbol等多种选项类型及图文混合配置，可自定义字体、颜色、圆角等样式。页签型分段按钮适用于页签切换场景，单选胶囊型分段按钮适用于单选切换场景，多选胶囊型分段按钮适用于多选筛选场景。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -82,9 +82,9 @@ TabSegmentButtonV2({
 | 名称 | 类型 | 必填 | 装饰器类型 | 说明 |
 | --- | --- | --- | --- | --- |
 | items | [SegmentButtonV2Items](#segmentbuttonv2items) | 是 | @Require @Param | 配置分段按钮的选项集合信息。 值为undefined时，不显示选项信息。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| selectedIndex | number | 是 | @Require @Param | 配置分段按钮被选中的选项下标，第一项的编号为0，之后顺序增加。 值为undefined时，不选中任何选项，其他非正数值，默认选项下标为0。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| $selectedIndex | [OnSelectedIndexChange](#onselectedindexchange) | 否 | @Event | 配置分段按钮选中项变更时触发的回调函数。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| onItemClicked | Callback | 否 | @Event | 配置分段按钮选项被单击时触发的回调函数。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| selectedIndex | number | 是 | @Require @Param | 配置分段按钮被选中的选项下标，第一项的编号为0，之后顺序增加。 取值范围：[0, items长度-1] 值为undefined时，不选中任何选项。传入有效数值（包括0）时，选中对应下标的选项；传入数值大于items长度-1时，选中items长度-1项；传入数值小于0时，选中索引为0项。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| $selectedIndex | [OnSelectedIndexChange](#onselectedindexchange) | 否 | @Event | 配置分段按钮选中项变更时触发的回调函数。 默认值：undefined，未设置时不触发回调。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| onItemClicked | Callback | 否 | @Event | 配置分段按钮选项被单击时触发的回调函数。回调参数为number类型，表示被单击选项的下标，第一项编号为0，之后按顺序递增。 默认值：undefined，未设置时不触发回调。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | buttonBackgroundColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮背板颜色。 默认值：$r('sys.color.segment_button_v2_tab_button_background') 值为undefined时，按默认值处理。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | buttonBackgroundBlurStyle | [BlurStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#blurstyle9) | 否 | @Param | 配置分段按钮背板模糊材质。 默认值：undefined 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | buttonBackgroundBlurStyleOptions | [BackgroundBlurStyleOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundblurstyleoptions10对象说明) | 否 | @Param | 配置分段按钮背板模糊材质配置参数。 默认值：undefined 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
@@ -97,24 +97,26 @@ TabSegmentButtonV2({
 | itemPadding | [LocalizedPadding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#localizedpadding12) | 否 | @Param | 配置分段按钮选项内边距。 默认值：{ top: LengthMetrics.resource($r('sys.float.padding_level2')), bottom: LengthMetrics.resource($r('sys.float.padding_level2')), start: LengthMetrics.resource($r('sys.float.padding_level4')), end: LengthMetrics.resource($r('sys.float.padding_level4')) } 值为undefined时，按默认值处理。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | itemShadow | [ShadowOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadowoptions对象说明) | [ShadowStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadowstyle10枚举说明) | 否 | @Param | 配置分段按钮选项阴影。 默认值：ShadowStyle.OUTER_DEFAULT_XS 超出取值范围按默认值处理。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | itemSpace | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | @Param | 配置分段按钮选项之间的间隔。 取值范围：[0, +∞) 默认值：LengthMetrics.vp(0) **说明：** 不支持设置百分比类型，异常值按默认值处理。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| itemMinFontScale | number | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | @Param | 配置分段按钮选项文字大小的最小字体缩放倍数。 取值范围：[0, 1] 默认值：0 **说明：** 设置的值小于 0 时，按值为 0 处理，设置的值大于 1，按值为 1 处理，异常值默认不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| itemMinFontScale | number | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | @Param | 配置分段按钮选项文字大小的最小字体缩放倍数。 取值范围：[0, 1] 默认值：0 **说明：** 设置的最小字体缩放值小于 0 时，按值为 0 处理，设置的最小字体缩放值大于 1 时，按值为 1 处理，异常值默认不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | itemMaxFontScale | number | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | @Param | 配置分段按钮选项文字大小的最大字体缩放倍数。 取值范围：[1, 2] 默认值：1 **说明：** 设置的值小于 1 时，按值为 1 处理，设置的值大于 2，按值为 2 处理，异常值默认不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| itemFontSize | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | @Param | 配置分段按钮非选中选项的字体大小。 取值范围：[0, +∞) 默认值：14fp **说明：** 不支持设置百分比类型，异常值按默认值处理。 items设置textModifier的fontSize属性值时，itemFontSize不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| itemSelectedFontSize | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | @Param | 配置分段按钮选中项的字体大小。 取值范围：[0, +∞) 默认值：14fp **说明：** 不支持设置百分比类型，异常值按默认值处理。 items设置textModifier的fontSize属性值时，itemSelectedFontSize不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| itemFontColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮非选中选项的字体颜色。 默认值：$r('sys.color.font_secondary') 值为undefined时，按默认值处理。 **说明：** items设置textModifier的fontColor属性值时，itemFontColor不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| itemSelectedFontColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮选中项的字体颜色。 默认值：$r('sys.color.font_primary') 值为undefined时，按默认值处理。 **说明：** items设置textModifier的fontColor属性值时，itemSelectedFontColor不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| itemFontWeight | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | 否 | @Param | 配置分段按钮非选中选项的字体字重。 默认值：FontWeight.Medium 超出取值范围按默认值处理。 **说明：** items设置textModifier的fontWeight属性值时，itemFontWeight不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| itemSelectedFontWeight | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | 否 | @Param | 配置分段按钮选中项的字体字重。 默认值：FontWeight.Medium 超出取值范围按默认值处理。 **说明：** items设置textModifier的fontWeight属性值时，itemSelectedFontWeight不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| itemFontSize | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | @Param | 配置分段按钮非选中的选项字体大小。 取值范围：[0, +∞) 默认值：14fp **说明：** 不支持设置百分比类型，异常值按默认值处理。 items设置textModifier/fontSize属性值时，itemFontSize不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| itemSelectedFontSize | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | @Param | 配置分段按钮选中的选项字体大小。 取值范围：[0, +∞) 默认值：14fp **说明：** 不支持设置百分比类型，异常值按默认值处理。 items设置textModifier/fontSize属性值时，itemSelectedFontSize不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| itemFontColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮非选中选项的字体颜色。 默认值：$r('sys.color.font_secondary') 值为undefined时，按默认值处理。 **说明：** items设置textModifier/fontColor属性值时，itemFontColor不生效。 backgroundSystemMaterial设置自动反色的系统材质时，该属性使用支持反色的特殊系统资源，颜色自动适配到材质背景色的反色。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| itemSelectedFontColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮选中项的字体颜色。 默认值：$r('sys.color.font_primary') 值为undefined时，按默认值处理。 **说明：** items设置textModifier/fontColor属性值时，itemSelectedFontColor不生效。 backgroundSystemMaterial设置自动反色的系统材质时，该属性使用支持反色的特殊系统资源，颜色自动适配到材质背景色的反色。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| itemFontWeight | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | 否 | @Param | 配置分段按钮非选中选项的字体字重。 默认值：FontWeight.Medium 超出取值范围按默认值处理。 **说明：** items设置textModifier/fontWeight属性值时，itemFontWeight不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| itemSelectedFontWeight | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | 否 | @Param | 配置分段按钮选中项的字体字重。 默认值：FontWeight.Medium 超出取值范围按默认值处理。 **说明：** items设置textModifier/fontWeight属性值时，itemSelectedFontWeight不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | itemBorderRadius | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | @Param | 配置分段按钮选项的圆角大小。 取值范围：[0, +∞) 默认值：$r('sys.float.segment_button_v2_selected_corner_radius') 超出取值范围按默认值处理。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| itemIconSize | [SizeT](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#sizett12) | 否 | @Param | 配置分段按钮选项中Image类型的图标大小。 取值范围：[0, +∞) 默认值：{ width: LengthMetrics.vp(24), height: LengthMetrics.vp(24) } 超出取值范围按默认值处理。 **说明：** items设置iconModifier的width、height属性值时，itemIconSize不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| itemIconFillColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮非选中的选项图标颜色。 默认值：$r('sys.color.font_secondary') 值为undefined时，按默认值处理。 **说明：** items设置iconModifier的fillColor属性值时，itemIconFillColor不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| itemSelectedIconFillColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮选中的选项图标颜色。 默认值：$r('sys.color.font_primary') 值为undefined时，按默认值处理。 **说明：** items设置iconModifier的fillColor属性值时，itemSelectedIconFillColor不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| itemSymbolFontSize | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | @Param | 配置分段按钮选项中HM Symbol类型图标大小。 取值范围：[0, +∞) 默认值：20fp **说明：** 不支持设置百分比类型，异常值按默认值处理。 items设置symbolModifier的fontSize属性值时，itemSymbolFontSize不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| itemSymbolFontColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮非选中选项HM Symbol类型图标的颜色。 默认值：$r('sys.color.font_secondary') 值为undefined时，按默认值处理。 **说明：** items设置symbolModifier的fontColor属性值时，itemSymbolFontColor不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| itemSelectedSymbolFontColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮选中选项的HM Symbol类型图标颜色。 默认值：$r('sys.color.font_primary') 值为undefined时，按默认值处理。 **说明：** items设置symbolModifier的fontColor属性值时，itemSelectedSymbolFontColor不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| itemIconSize | [SizeT](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#sizett12) | 否 | @Param | 配置分段按钮选项中Image类型的图标大小。 取值范围：[0, +∞) 默认值：{ width: LengthMetrics.vp(24), height: LengthMetrics.vp(24) } 超出取值范围按默认值处理。 **说明：** items设置iconModifier/width、height属性值时，itemIconSize不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| itemIconFillColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮非选中的选项图标颜色。 默认值：$r('sys.color.font_secondary') 值为undefined时，按默认值处理。 **说明：** items设置iconModifier/fillColor属性值时，itemIconFillColor不生效。 backgroundSystemMaterial设置自动反色的系统材质时，该属性使用支持反色的特殊系统资源，颜色自动适配到材质背景色的反色。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| itemSelectedIconFillColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮选中的选项图标颜色。 默认值：$r('sys.color.font_primary') 值为undefined时，按默认值处理。 **说明：** items设置iconModifier/fillColor属性值时，itemSelectedIconFillColor不生效。 backgroundSystemMaterial设置自动反色的系统材质时，该属性使用支持反色的特殊系统资源，颜色自动适配到材质背景色的反色。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| itemSymbolFontSize | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | @Param | 配置分段按钮选项中HM Symbol类型图标大小。 取值范围：[0, +∞) 默认值：20fp **说明：** 不支持设置百分比类型，异常值按默认值处理。 items设置symbolModifier/fontSize属性值时，itemSymbolFontSize不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| itemSymbolFontColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮非选中选项HM Symbol类型图标的颜色。 默认值：$r('sys.color.font_secondary') 值为undefined时，按默认值处理。 **说明：** items设置symbolModifier/fontColor属性值时，itemSymbolFontColor不生效。 backgroundSystemMaterial设置自动反色的系统材质时，该属性使用支持反色的特殊系统资源，颜色自动适配到材质背景色的反色。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| itemSelectedSymbolFontColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮选中选项的HM Symbol类型图标颜色。 默认值：$r('sys.color.font_primary') 值为undefined时，按默认值处理。 **说明：** items设置symbolModifier/fontColor属性值时，itemSelectedSymbolFontColor不生效。 backgroundSystemMaterial设置自动反色的系统材质时，该属性使用支持反色的特殊系统资源，颜色自动适配到材质背景色的反色。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | languageDirection | [Direction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#direction) | 否 | @Param | 配置分段按钮的布局方向。 默认值：Direction.Auto 超出取值范围按默认值处理。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| enableStateAnimation24+ | boolean | 否 | @Param | 设置当通过变量修改selectedIndex值时，是否开启分段按钮的属性动画。 true表示开启分段按钮的属性动画；未配置该属性或值为false时表示不开启分段按钮的属性动画，使用原有动画。 默认值：false 该成员只读，不支持更改。 **元服务API：** 从API version 24开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| enableStateAnimation24+ | boolean | 否 | @Param | 设置当通过变量修改selectedIndex值时，是否开启分段按钮的属性动画。 true表示开启分段按钮的属性动画；未配置该属性或值为false时表示不开启分段按钮的属性动画，使用组件默认的切换动画效果。 默认值：false 该成员只读，不支持更改。 **元服务API：** 从API version 24开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | backgroundSystemMaterial | [uiMaterial.Material](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#material) | 否 | @Param | 分段按钮组件的背景板的系统材质。不同系统材质包含不同的属性影响效果。传入材质后，SegmentButtonV2的动效发生改变。 默认值：无材质效果。 该成员只读，不支持更改。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+
+![](./img/note_3.0-zh-cn.png) 从API版本26.0.0开始，backgroundSystemMaterial设置自动反色的系统材质时，itemFontColor、itemSelectedFontColor、itemIconFillColor、itemSelectedIconFillColor、itemSymbolFontColor、itemSelectedSymbolFontColor使用支持反色的特殊系统资源，颜色自动适配到材质背景色的反色。
 
 #### CapsuleSegmentButtonV2
 
@@ -165,9 +167,9 @@ CapsuleSegmentButtonV2({
 | 名称 | 类型 | 必填 | 装饰器类型 | 说明 |
 | --- | --- | --- | --- | --- |
 | items | [SegmentButtonV2Items](#segmentbuttonv2items) | 是 | @Require @Param | 配置分段按钮的选项集合信息。 值为undefined时，不显示选项信息。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| selectedIndex | number | 是 | @Require @Param | 配置分段按钮被选中的选项下标，第一项的编号为0，之后顺序增加。 值为undefined时，不选中任何选项，其他非正数值，默认选项下标为0。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| $selectedIndex | [OnSelectedIndexChange](#onselectedindexchange) | 否 | @Event | 配置分段按钮选中项变更时的回调函数。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| onItemClicked | Callback | 否 | @Event | 配置分段按钮选项被单击时触发的回调函数。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| selectedIndex | number | 是 | @Require @Param | 配置分段按钮被选中的选项下标，第一项的编号为0，之后顺序增加。 取值范围：[0, items长度-1] 值为undefined时，不选中任何选项。传入有效数值（包括0）时，选中对应下标的选项；传入数值大于items长度-1时，选中items长度-1项；传入数值小于0时，选中索引为0项。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| $selectedIndex | [OnSelectedIndexChange](#onselectedindexchange) | 否 | @Event | 配置分段按钮选中项变更时触发的回调函数。 默认值：undefined，未设置时不触发回调。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| onItemClicked | Callback | 否 | @Event | 配置分段按钮选项被单击时触发的回调函数。回调参数为number类型，表示被单击选项的下标，第一项编号为0，之后按顺序递增。 默认值：undefined，未设置时不触发回调。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | buttonBackgroundColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮背板颜色。 默认值：$r('sys.color.segment_button_v2_tab_button_background') 值为undefined时，按默认值处理。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | buttonBackgroundBlurStyle | [BlurStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#blurstyle9) | 否 | @Param | 配置分段按钮背板模糊材质。 默认值：undefined 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | buttonBackgroundBlurStyleOptions | [BackgroundBlurStyleOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundblurstyleoptions10对象说明) | 否 | @Param | 配置分段按钮背板模糊材质配置参数。 默认值：undefined 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
@@ -180,24 +182,26 @@ CapsuleSegmentButtonV2({
 | itemPadding | [LocalizedPadding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#localizedpadding12) | 否 | @Param | 配置分段按钮选项的内边距。 默认值：{ top: LengthMetrics.resource($r('sys.float.padding_level2')), bottom: LengthMetrics.resource($r('sys.float.padding_level2')), start: LengthMetrics.resource($r('sys.float.padding_level4')), end: LengthMetrics.resource($r('sys.float.padding_level4')) } 值为undefined时，按默认值处理。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | itemShadow | [ShadowOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadowoptions对象说明) | [ShadowStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadowstyle10枚举说明) | 否 | @Param | 配置分段按钮选项的阴影。 默认值：ShadowStyle.OUTER_DEFAULT_XS 超出取值范围按默认值处理。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | itemSpace | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | @Param | 配置分段按钮选项之间的间隔。 取值范围：[0, +∞) 默认值：LengthMetrics.vp(0) **说明：** 不支持设置百分比类型，异常值按默认值处理。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| itemMinFontScale | number | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | @Param | 配置分段按钮选项文字大小的最小字体缩放倍数。 取值范围：[0, 1] 默认值：0 **说明：** 设置的值小于 0 时，按值为 0 处理，设置的值大于 1，按值为 1 处理，异常值默认不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| itemMinFontScale | number | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | @Param | 配置分段按钮选项文字大小的最小字体缩放倍数。 取值范围：[0, 1] 默认值：0 **说明：** 设置的最小字体缩放值小于 0 时，按值为 0 处理，设置的最小字体缩放值大于 1 时，按值为 1 处理，异常值默认不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | itemMaxFontScale | number | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | @Param | 配置分段按钮选项文字大小的最大字体缩放倍数。 取值范围：[1, 2] 默认值：1 **说明：** 设置的值小于 1 时，按值为 1 处理，设置的值大于 2，按值为 2 处理，异常值默认不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| itemFontSize | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | @Param | 配置分段按钮非选中的选项字体大小。 取值范围：[0, +∞) 默认值：14fp **说明：** 不支持设置百分比类型，异常值按默认值处理。 items设置textModifier的fontSize属性值时，itemFontSize不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| itemSelectedFontSize | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | @Param | 配置分段按钮选中的选项字体大小。 取值范围：[0, +∞) 默认值：14fp **说明：** 不支持设置百分比类型，异常值按默认值处理。 items设置textModifier的fontSize属性值时，itemSelectedFontSize不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| itemFontColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮非选中的选项字体颜色。 默认值：$r('sys.color.font_secondary') 值为undefined时，按默认值处理。 **说明：** items设置textModifier的fontColor属性值时，itemFontColor不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| itemSelectedFontColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮选中的选项字体颜色。 默认值：$r('sys.color.font_on_primary') 值为undefined时，按默认值处理。 **说明：** items设置textModifier的fontColor属性值时，itemSelectedFontColor不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| itemFontWeight | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | 否 | @Param | 配置分段按钮非选中的选项字体字重。 默认值：FontWeight.Medium 超出取值范围按默认值处理。 **说明：** items设置textModifier的fontWeight属性值时，itemFontWeight不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| itemSelectedFontWeight | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | 否 | @Param | 配置分段按钮选中的选项字体字重。 默认值：FontWeight.Medium 超出取值范围按默认值处理。 **说明：** items设置textModifier的fontWeight属性值时，itemSelectedFontWeight不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| itemFontSize | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | @Param | 配置分段按钮非选中的选项字体大小。 取值范围：[0, +∞) 默认值：14fp **说明：** 不支持设置百分比类型，异常值按默认值处理。 items设置textModifier/fontSize属性值时，itemFontSize不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| itemSelectedFontSize | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | @Param | 配置分段按钮选中的选项字体大小。 取值范围：[0, +∞) 默认值：14fp **说明：** 不支持设置百分比类型，异常值按默认值处理。 items设置textModifier/fontSize属性值时，itemSelectedFontSize不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| itemFontColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮非选中的选项字体颜色。 默认值：$r('sys.color.font_secondary') 值为undefined时，按默认值处理。 **说明：** items设置textModifier/fontColor属性值时，itemFontColor不生效。 backgroundSystemMaterial设置自动反色的系统材质时，该属性使用支持反色的特殊系统资源，颜色自动适配到材质背景色的反色。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| itemSelectedFontColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮选中的选项字体颜色。 默认值：$r('sys.color.font_on_primary') 值为undefined时，按默认值处理。 **说明：** items设置textModifier/fontColor属性值时，itemSelectedFontColor不生效。 backgroundSystemMaterial设置自动反色的系统材质时，该属性使用支持反色的特殊系统资源，颜色自动适配到材质背景色的反色。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| itemFontWeight | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | 否 | @Param | 配置分段按钮非选中的选项字体字重。 默认值：FontWeight.Medium 超出取值范围按默认值处理。 **说明：** items设置textModifier/fontWeight属性值时，itemFontWeight不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| itemSelectedFontWeight | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | 否 | @Param | 配置分段按钮选中的选项字体字重。 默认值：FontWeight.Medium 超出取值范围按默认值处理。 **说明：** items设置textModifier/fontWeight属性值时，itemSelectedFontWeight不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | itemBorderRadius | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | @Param | 配置分段按钮选项的圆角大小。 取值范围：[0, +∞) 默认值：$r('sys.float.segment_button_v2_selected_corner_radius') 超出取值范围按默认值处理。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| itemIconSize | [SizeT](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#sizett12) | 否 | @Param | 配置分段按钮选项中Image类型图标大小。 取值范围：[0, +∞) 默认值：{ width: LengthMetrics.vp(24), height: LengthMetrics.vp(24) } 超出取值范围按默认值处理。 **说明：** items设置iconModifier的width、height属性值时，itemIconSize不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| itemIconFillColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮非选中的选项图标颜色。 默认值：$r('sys.color.font_secondary') 值为undefined时，按默认值处理。 **说明：** items设置iconModifier的fillColor属性值时，itemIconFillColor不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| itemSelectedIconFillColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮选中的选项图标颜色。 默认值：$r('sys.color.font_on_primary') 值为undefined时，按默认值处理。 **说明：** items设置iconModifier的fillColor属性值时，itemSelectedIconFillColor不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| itemSymbolFontSize | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | @Param | 配置分段按钮选项中HM Symbol类型图标大小。 取值范围：[0, +∞) 默认值：20fp **说明：** 不支持设置百分比类型，异常值按默认值处理。 items设置symbolModifier的fontSize属性值时，itemSymbolFontSize不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| itemSymbolFontColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮非选中的选项中HM Symbol类型图标颜色。 默认值：$r('sys.color.font_secondary') 值为undefined时，按默认值处理。 **说明：** items设置symbolModifier的fontColor属性值时，itemSymbolFontColor不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| itemSelectedSymbolFontColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮选中的选项中HM Symbol类型图标颜色。 默认值：$r('sys.color.font_on_primary') 值为undefined时，按默认值处理。 **说明：** items设置symbolModifier的fontColor属性值时，itemSelectedSymbolFontColor不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| itemIconSize | [SizeT](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#sizett12) | 否 | @Param | 配置分段按钮选项中Image类型图标大小。 取值范围：[0, +∞) 默认值：{ width: LengthMetrics.vp(24), height: LengthMetrics.vp(24) } 超出取值范围按默认值处理。 **说明：** items设置iconModifier/width、height属性值时，itemIconSize不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| itemIconFillColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮非选中的选项图标颜色。 默认值：$r('sys.color.font_secondary') 值为undefined时，按默认值处理。 **说明：** items设置iconModifier/fillColor属性值时，itemIconFillColor不生效。 backgroundSystemMaterial设置自动反色的系统材质时，该属性使用支持反色的特殊系统资源，颜色自动适配到材质背景色的反色。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| itemSelectedIconFillColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮选中的选项图标颜色。 默认值：$r('sys.color.font_on_primary') 值为undefined时，按默认值处理。 **说明：** items设置iconModifier/fillColor属性值时，itemSelectedIconFillColor不生效。 backgroundSystemMaterial设置自动反色的系统材质时，该属性使用支持反色的特殊系统资源，颜色自动适配到材质背景色的反色。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| itemSymbolFontSize | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | @Param | 配置分段按钮选项中HM Symbol类型图标大小。 取值范围：[0, +∞) 默认值：20fp **说明：** 不支持设置百分比类型，异常值按默认值处理。 items设置symbolModifier/fontSize属性值时，itemSymbolFontSize不生效。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| itemSymbolFontColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮非选中的选项中HM Symbol类型图标颜色。 默认值：$r('sys.color.font_secondary') 值为undefined时，按默认值处理。 **说明：** items设置symbolModifier/fontColor属性值时，itemSymbolFontColor不生效。 backgroundSystemMaterial设置自动反色的系统材质时，该属性使用支持反色的特殊系统资源，颜色自动适配到材质背景色的反色。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| itemSelectedSymbolFontColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮选中的选项中HM Symbol类型图标颜色。 默认值：$r('sys.color.font_on_primary') 值为undefined时，按默认值处理。 **说明：** items设置symbolModifier/fontColor属性值时，itemSelectedSymbolFontColor不生效。 backgroundSystemMaterial设置自动反色的系统材质时，该属性使用支持反色的特殊系统资源，颜色自动适配到材质背景色的反色。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | languageDirection | [Direction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#direction) | 否 | @Param | 配置分段按钮的布局方向。 默认值：Direction.Auto 超出取值范围按默认值处理。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| enableStateAnimation24+ | boolean | 否 | @Param | 设置当通过变量修改selectedIndex时，是否开启分段按钮的属性动画。 true表示开启分段按钮的属性动画；未配置该属性或值为false时表示不开启分段按钮的属性动画，使用原有动画。 默认值：false 该成员只读，不支持更改。 **元服务API：** 从API version 24开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| enableStateAnimation24+ | boolean | 否 | @Param | 设置当通过变量修改selectedIndex值时，是否开启分段按钮的属性动画。 true表示开启分段按钮的属性动画；未配置该属性或值为false时表示不开启分段按钮的属性动画，使用组件默认的切换动画效果。 默认值：false 该成员只读，不支持更改。 **元服务API：** 从API version 24开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | backgroundSystemMaterial | [uiMaterial.Material](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#material) | 否 | @Param | 分段按钮组件的背景板的系统材质。不同系统材质包含不同的属性影响效果。传入材质后，SegmentButtonV2的动效发生改变。 默认值：无材质效果。 该成员只读，不支持更改。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+
+![](./img/note_3.0-zh-cn.png) 从API版本26.0.0开始，backgroundSystemMaterial设置自动反色的系统材质时，itemFontColor、itemSelectedFontColor、itemIconFillColor、itemSelectedIconFillColor、itemSymbolFontColor、itemSelectedSymbolFontColor使用支持反色的特殊系统资源，颜色自动适配到材质背景色的反色。
 
 #### MultiCapsuleSegmentButtonV2
 
@@ -243,10 +247,10 @@ MultiCapsuleSegmentButtonV2({
 
 | 名称 | 类型 | 必填 | 装饰器类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| items | [SegmentButtonV2Items](#segmentbuttonv2items) | 是 | @Require @Param | 配置分段按钮的选项集合信息。 值为undefined时，不显示选项信息。 该成员只读，不支持更改。 |
-| selectedIndexes | number[] | 是 | @Require @Param | 配置分段按钮被选中的选项下标集合，第一项的编号为0，之后顺序增加。 值为undefined时，不选中任何选项。 **说明：** 仅支持有效的按钮编号（第一个按钮编号为0，之后按顺序累加），如没有选中项可传入空数组[]。 该成员只读，不支持更改。 |
-| $selectedIndexes | [OnSelectedIndexesChange](#onselectedindexeschange) | 是 | @Event | 配置分段按钮选中项变更时的回调函数。 |
-| onItemClicked | Callback | 否 | @Event | 配置分段按钮选项被单击时触发的回调函数。 |
+| items | [SegmentButtonV2Items](#segmentbuttonv2items) | 是 | @Require @Param | 配置分段按钮的选项集合信息。 值为undefined时，不显示选项信息。 该成员只读，不支持更改。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| selectedIndexes | number[] | 是 | @Require @Param | 配置分段按钮被选中的选项下标集合，第一项的编号为0，之后顺序增加。 值为undefined时，不选中任何选项。 **说明：** 仅支持有效的按钮编号（第一个按钮编号为0，之后按顺序累加，取值范围：[0, items长度-1]），如没有选中项可传入空数组[]。传入无效编号（小于0或大于items长度-1）时，该编号不选中对应选项。 该成员只读，不支持更改。 |
+| $selectedIndexes | [OnSelectedIndexesChange](#onselectedindexeschange) | 是 | @Event | 配置分段按钮选中项变更时触发的回调函数。 |
+| onItemClicked | Callback | 否 | @Event | 配置分段按钮选项被单击时触发的回调函数。回调参数为number类型，表示被单击选项的下标，第一项编号为0，之后按顺序递增。 默认值：undefined，未设置时不触发回调。 |
 | itemBackgroundColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮非选中的选项背板颜色。 默认值：$r('sys.color.segment_button_v2_multi_capsule_button_background') 值为undefined时，按默认值处理。 该成员只读，不支持更改。 |
 | itemBackgroundEffect | [BackgroundEffectOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundeffectoptions11) | 否 | @Param | 配置分段按钮选项的背板效果。 默认值：undefined 该成员只读，不支持更改。 |
 | itemBackgroundBlurStyle | [BlurStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#blurstyle9) | 否 | @Param | 配置分段按钮选项的模糊材质。 默认值：undefined 该成员只读，不支持更改。 |
@@ -255,21 +259,21 @@ MultiCapsuleSegmentButtonV2({
 | itemMinHeight | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | @Param | 配置分段按钮选项的最小高度。 取值范围：[0, +∞) 默认值： 只有纯文本或者纯图标选项时：$r('sys.float.segment_button_v2_singleline_selected_height')；有图文混合的选项时：$r('sys.float.segment_button_v2_doubleline_selected_height') 超出取值范围按默认值处理。 该成员只读，不支持更改。 |
 | itemPadding | [LocalizedPadding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#localizedpadding12) | 否 | @Param | 配置分段按钮选项的内边距。 默认值：{ top: LengthMetrics.resource($r('sys.float.padding_level2')), bottom: LengthMetrics.resource($r('sys.float.padding_level2')), start: LengthMetrics.resource($r('sys.float.padding_level4')), end: LengthMetrics.resource($r('sys.float.padding_level4')) } 值为undefined时，按默认值处理。 该成员只读，不支持更改。 |
 | itemSpace | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | @Param | 配置分段按钮选项之间的间隔。 取值范围：[0, +∞) 默认值：LengthMetrics.vp(1) **说明：** 不支持设置百分比类型，异常值按默认值处理。 该成员只读，不支持更改。 |
-| itemMinFontScale | number | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | @Param | 配置分段按钮选项文字大小的最小缩放倍数。 取值范围：[0, 1] 默认值：0 **说明：** 设置的值小于 0 时，按值为 0 处理，设置的值大于 1，按值为 1 处理，异常值默认不生效。 该成员只读，不支持更改。 |
+| itemMinFontScale | number | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | @Param | 配置分段按钮选项文字大小的最小字体缩放倍数。 取值范围：[0, 1] 默认值：0 **说明：** 设置的最小字体缩放值小于 0 时，按值为 0 处理，设置的最小字体缩放值大于 1 时，按值为 1 处理，异常值默认不生效。 该成员只读，不支持更改。 |
 | itemMaxFontScale | number | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | @Param | 配置分段按钮选项文字大小的最大字体缩放倍数。 取值范围：[1, 2] 默认值：1 **说明：** 设置的值小于 1 时，按值为 1 处理，设置的值大于 2，按值为 2 处理，异常值默认不生效。 该成员只读，不支持更改。 |
-| itemSelectedFontSize | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | @Param | 配置分段按钮选中的选项字体大小。 取值范围：[0, +∞) 默认值：14fp **说明：** 不支持设置百分比类型，异常值按默认值处理。 items设置textModifier的fontSize属性值时，itemSelectedFontSize不生效。 该成员只读，不支持更改。 |
-| itemFontColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮非选中的选项字体颜色。 默认值：$r('sys.color.font_secondary') 值为undefined时，按默认值处理。 **说明：** items设置textModifier的fontColor属性值时，itemFontColor不生效。 该成员只读，不支持更改。 |
-| itemFontSize | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | @Param | 配置分段按钮非选中的选项字体大小。 取值范围：[0, +∞) 默认值：14fp **说明：** 不支持设置百分比类型，异常值按默认值处理。 items设置textModifier的fontSize属性值时，itemFontSize不生效。 该成员只读，不支持更改。 |
-| itemSelectedFontColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮选中的选项字体颜色。 默认值：$r('sys.color.font_on_primary') 值为undefined时，按默认值处理。 **说明：** items设置textModifier的fontColor属性值时，itemSelectedFontColor不生效。 该成员只读，不支持更改。 |
-| itemFontWeight | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | 否 | @Param | 配置分段按钮非选中的选项字体字重。 默认值：FontWeight.Medium 超出取值范围按默认值处理。 **说明：** items设置textModifier的fontWeight属性值时，itemFontWeight不生效。 该成员只读，不支持更改。 |
-| itemSelectedFontWeight | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | 否 | @Param | 配置分段按钮选中的选项字体字重。 默认值：FontWeight.Medium 超出取值范围按默认值处理。 **说明：** items设置textModifier的fontWeight属性值时，itemSelectedFontWeight不生效。 该成员只读，不支持更改。 |
+| itemSelectedFontSize | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | @Param | 配置分段按钮选中的选项字体大小。 取值范围：[0, +∞) 默认值：14fp **说明：** 不支持设置百分比类型，异常值按默认值处理。 items设置textModifier/fontSize属性值时，itemSelectedFontSize不生效。 该成员只读，不支持更改。 |
+| itemFontColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮非选中的选项字体颜色。 默认值：$r('sys.color.font_secondary') 值为undefined时，按默认值处理。 **说明：** items设置textModifier/fontColor属性值时，itemFontColor不生效。 该成员只读，不支持更改。 |
+| itemFontSize | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | @Param | 配置分段按钮非选中的选项字体大小。 取值范围：[0, +∞) 默认值：14fp **说明：** 不支持设置百分比类型，异常值按默认值处理。 items设置textModifier/fontSize属性值时，itemFontSize不生效。 该成员只读，不支持更改。 |
+| itemSelectedFontColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮选中的选项字体颜色。 默认值：$r('sys.color.font_on_primary') 值为undefined时，按默认值处理。 **说明：** items设置textModifier/fontColor属性值时，itemSelectedFontColor不生效。 该成员只读，不支持更改。 |
+| itemFontWeight | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | 否 | @Param | 配置分段按钮非选中的选项字体字重。 默认值：FontWeight.Medium 超出取值范围按默认值处理。 **说明：** items设置textModifier/fontWeight属性值时，itemFontWeight不生效。 该成员只读，不支持更改。 |
+| itemSelectedFontWeight | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | 否 | @Param | 配置分段按钮选中的选项字体字重。 默认值：FontWeight.Medium 超出取值范围按默认值处理。 **说明：** items设置textModifier/fontWeight属性值时，itemSelectedFontWeight不生效。 该成员只读，不支持更改。 |
 | itemBorderRadius | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | @Param | 配置分段按钮选项的圆角大小。 取值范围：[0, +∞) 默认值：$r('sys.float.segment_button_v2_multi_corner_radius') 超出取值范围按默认值处理。 该成员只读，不支持更改。 |
-| itemIconSize | [SizeT](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#sizett12) | 否 | @Param | 配置分段按钮选项中Image类型图标大小。 取值范围：[0, +∞) 默认值：{ width: LengthMetrics.vp(24), height: LengthMetrics.vp(24) } 超出取值范围按默认值处理。 **说明：** items设置iconModifier的width、height属性值时，itemIconSize不生效。 该成员只读，不支持更改。 |
-| itemIconFillColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮非选中的选项图标颜色。 默认值：$r('sys.color.font_secondary') 值为undefined时，按默认值处理。 **说明：** items设置iconModifier的fillColor属性值时，itemIconFillColor不生效。 该成员只读，不支持更改。 |
-| itemSelectedIconFillColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮选中的选项图标颜色。 默认值：$r('sys.color.font_on_primary') 值为undefined时，按默认值处理。 **说明：** items设置iconModifier的fillColor属性值时，itemSelectedIconFillColor不生效。 该成员只读，不支持更改。 |
-| itemSymbolFontSize | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | @Param | 配置分段按钮选项中HM Symbol类型图标大小。 取值范围：[0, +∞) 默认值：20fp **说明：** 不支持设置百分比类型，异常值按默认值处理。 items设置symbolModifier的fontSize属性值时，itemSymbolFontSize不生效。 该成员只读，不支持更改。 |
-| itemSymbolFontColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮非选中的选项中HM Symbol类型图标颜色。 默认值：$r('sys.color.font_secondary') 值为undefined时，按默认值处理。 **说明：** items设置symbolModifier的fontColor属性值时，itemSymbolFontColor不生效。 该成员只读，不支持更改。 |
-| itemSelectedSymbolFontColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮选中的选项中HM Symbol类型图标颜色。 默认值：$r('sys.color.font_on_primary') 值为undefined时，按默认值处理。 **说明：** items设置symbolModifier的fontColor属性值时，itemSelectedSymbolFontColor不生效。 该成员只读，不支持更改。 |
+| itemIconSize | [SizeT](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#sizett12) | 否 | @Param | 配置分段按钮选项中Image类型图标大小。 取值范围：[0, +∞) 默认值：{ width: LengthMetrics.vp(24), height: LengthMetrics.vp(24) } 超出取值范围按默认值处理。 **说明：** items设置iconModifier/width、height属性值时，itemIconSize不生效。 该成员只读，不支持更改。 |
+| itemIconFillColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮非选中的选项图标颜色。 默认值：$r('sys.color.font_secondary') 值为undefined时，按默认值处理。 **说明：** items设置iconModifier/fillColor属性值时，itemIconFillColor不生效。 该成员只读，不支持更改。 |
+| itemSelectedIconFillColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮选中的选项图标颜色。 默认值：$r('sys.color.font_on_primary') 值为undefined时，按默认值处理。 **说明：** items设置iconModifier/fillColor属性值时，itemSelectedIconFillColor不生效。 该成员只读，不支持更改。 |
+| itemSymbolFontSize | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | @Param | 配置分段按钮选项中HM Symbol类型图标大小。 取值范围：[0, +∞) 默认值：20fp **说明：** 不支持设置百分比类型，异常值按默认值处理。 items设置symbolModifier/fontSize属性值时，itemSymbolFontSize不生效。 该成员只读，不支持更改。 |
+| itemSymbolFontColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮非选中的选项中HM Symbol类型图标颜色。 默认值：$r('sys.color.font_secondary') 值为undefined时，按默认值处理。 **说明：** items设置symbolModifier/fontColor属性值时，itemSymbolFontColor不生效。 该成员只读，不支持更改。 |
+| itemSelectedSymbolFontColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | @Param | 配置分段按钮选中的选项中HM Symbol类型图标颜色。 默认值：$r('sys.color.font_on_primary') 值为undefined时，按默认值处理。 **说明：** items设置symbolModifier/fontColor属性值时，itemSelectedSymbolFontColor不生效。 该成员只读，不支持更改。 |
 | languageDirection | [Direction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#direction) | 否 | @Param | 配置分段按钮的布局方向。 默认值：Direction.Auto 超出取值范围按默认值处理。 该成员只读，不支持更改。 |
 
 #### SegmentButtonV2Items
@@ -302,7 +306,7 @@ constructor(items: SegmentButtonV2ItemOptions[])
 
 get hasHybrid():boolean
 
-是否支持图文混合选项。
+是否包含图文混合选项。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -314,7 +318,7 @@ get hasHybrid():boolean
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | 是否支持图文混合选项。 true：有图文混合选项；false：无图文混合选项。 |
+| boolean | 是否包含图文混合选项。 true：有图文混合选项；false：无图文混合选项。 |
 
 #### SegmentButtonV2Item
 
@@ -368,7 +372,7 @@ constructor(options: SegmentButtonV2ItemOptions)
 
 get isHybrid():boolean
 
-检查分段按钮选项是否已配置文本和图标。
+检查分段按钮选项是否已配置文本和图标。与[hasHybrid](#hashybrid)的区别：hasHybrid用于检查整个选项集合是否包含图文混合选项，本接口用于检查单个选项是否已配置文本和图标。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -396,12 +400,12 @@ get isHybrid():boolean
 | --- | --- | --- | --- | --- |
 | text | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 分段按钮选项文本。 默认值：undefined |
 | icon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 分段按钮选项图片类型图标。 默认值：undefined |
-| symbol | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 是 | 分段按钮选项图标，HM Symbol类型 。 默认值：undefined |
-| enabled | boolean | 否 | 是 | 分段按钮选项是否可用。 默认值：true true：分段按钮选项可用；false：分段按钮选项不可用。 值为undefined时，按默认值处理。 |
+| symbol | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 是 | 分段按钮选项的HM Symbol类型图标。 默认值：undefined |
+| enabled | boolean | 否 | 是 | 分段按钮选项是否可用。 默认值：true true：可用；false：不可用。 值为undefined时，按默认值处理。 |
 | textModifier | [TextModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#自定义modifier) | 否 | 是 | 分段按钮选项文本属性样式修改器。 默认值：undefined |
-| iconModifier | [ImageModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#自定义modifier) | 否 | 是 | 修改分段按钮选项图片类型的图标属性样式。 默认值：undefined |
+| iconModifier | [ImageModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#自定义modifier) | 否 | 是 | 分段按钮选项图片类型图标属性的样式修改器。 默认值：undefined |
 | symbolModifier | [SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier#symbolglyphmodifier) | 否 | 是 | 分段按钮选项HM Symbol类型图标属性样式修改器。 默认值：undefined |
-| accessibilityText | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 分段按钮选项无障碍文本[accessibilityText](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-accessibility#accessibilitytext)。 默认值："" 值为undefined时，按默认值处理。 |
+| accessibilityText | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 分段按钮选项的无障碍文本[accessibilityText](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-accessibility#accessibilitytext)。 默认值："" 值为undefined时，按默认值处理。 |
 | accessibilityDescription | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 分段按钮选项无障碍说明[accessibilityDescription](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-accessibility#accessibilitydescription)。 默认值："" 值为undefined时，按默认值处理。 |
 | accessibilityLevel | string | 否 | 是 | 分段按钮选项无障碍重要性[accessibilityLevel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-accessibility#accessibilitylevel)。 默认值："auto" 值为undefined时，按默认值处理。 |
 
@@ -426,7 +430,7 @@ type OnSelectedIndexChange = (selectedIndex: number) => void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| selectedIndex | number | 是 | 分段按钮选项下标。 |
+| selectedIndex | number | 是 | 分段按钮选项下标。第一项编号为0，之后按顺序递增。 |
 
 #### OnSelectedIndexesChange
 
@@ -444,11 +448,11 @@ type OnSelectedIndexesChange = (selectedIndexes: number[]) => void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| selectedIndexes | number[] | 是 | 分段按钮选项下标集合。 |
+| selectedIndexes | number[] | 是 | 分段按钮被选中项的下标集合，第一项编号为0，之后按顺序递增。 |
 
 #### 示例
 
-#### [h2]示例 1（页签型分段按钮）
+#### [h2]示例1（页签型分段按钮）
 
 此示例说明页签型分段按钮的基本用法。
 
@@ -583,9 +587,9 @@ export struct VCard {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413716.gif)
+ ![](./img/zh-cn_image_0000002655849026.gif)
 
-#### [h2]示例 2（单选的胶囊型分段按钮）
+#### [h2]示例2（单选的胶囊型分段按钮）
 
 该示例介绍单选胶囊型分段按钮的基本用法。
 
@@ -712,9 +716,9 @@ export struct VCard {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732945.gif)
+ ![](./img/zh-cn_image_0000002686088457.gif)
 
-#### [h2]示例 3（多选的胶囊型分段按钮）
+#### [h2]示例3（多选的胶囊型分段按钮）
 
 该示例介绍多选胶囊型分段按钮的基本用法。
 
@@ -841,11 +845,11 @@ export struct VCard {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253824.gif)
+ ![](./img/zh-cn_image_0000002685928627.gif)
 
 #### [h2]示例4（分段按钮Modifier的基本用法）
 
-该示例介绍页签型分段按钮，单选的胶囊型分段按钮，多选的胶囊型分段按钮Modifier的基本用法。
+该示例介绍页签型分段按钮、单选的胶囊型分段按钮、多选的胶囊型分段按钮的Modifier基本用法。
 
 ```
 import {
@@ -873,7 +877,7 @@ struct SegmentButtonV2Example {
     { symbol: $r('sys.symbol.matebook') },
   ]);
   @Local textSelectedIndex: number = 0;
-  @Local freeSelectedIndex: number[] = [0];
+  @Local freeSelectedIndexes: number[] = [0];
 
   build() {
     Column() {
@@ -894,7 +898,7 @@ struct SegmentButtonV2Example {
       VCard({ title: 'MultiCapsuleSegmentButtonV2' }) {
         MultiCapsuleSegmentButtonV2({
           items: this.textItems,
-          selectedIndexes: this.freeSelectedIndex!!,
+          selectedIndexes: this.freeSelectedIndexes!!,
         })
       }
 
@@ -935,7 +939,7 @@ export struct VCard {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661613007.png)
+ ![](./img/zh-cn_image_0000002656008948.png)
 
 #### [h2]示例5（开启SegmentButtonV2的属性动画）
 
@@ -1029,16 +1033,16 @@ export struct VCard {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413718.gif)
+ ![](./img/zh-cn_image_0000002655849028.gif)
 
 #### [h2]示例6（设置背景板材质）
 
-以下示例通过backgroundSystemMaterial属性，为分段按钮设置了半透明的背景板材质。
+以下示例通过backgroundSystemMaterial属性，为分段按钮设置透明的背景板材质，开启自动反色和交互形变效果，并自定义反馈光感的颜色。
 
 从API版本26.0.0开始，[TabSegmentButtonV2](#tabsegmentbuttonv2)和[CapsuleSegmentButtonV2](#capsulesegmentbuttonv2)中新增backgroundSystemMaterial属性。
 
 ```
-import { SegmentButtonV2Items, TabSegmentButtonV2, CapsuleSegmentButtonV2, uiMaterial } from '@kit.ArkUI';
+import { SegmentButtonV2Items, TabSegmentButtonV2, CapsuleSegmentButtonV2, uiMaterial, ColorMetrics } from '@kit.ArkUI';
 
 @Entry
 @ComponentV2
@@ -1050,7 +1054,6 @@ struct SegmentButtonV2Example {
     { text: '智能穿戴' },
   ]);
   @Local textSelectedIndex: number = 0;
-
   @Local imageItems: SegmentButtonV2Items = new SegmentButtonV2Items([
     { icon: $r('sys.media.ohos_ic_public_device_phone') },
     { icon: $r('sys.media.ohos_ic_public_device_pad') },
@@ -1060,40 +1063,53 @@ struct SegmentButtonV2Example {
   @Local imageSelectedIndex: number = 0;
 
   build() {
-    Scroll() {
-      Stack() {
-        // 作为分段按钮的背景，其中('app.media.pic')需要替换为开发者所需的图片
-        Image($r('app.media.pic'))
-        Column({ space: 12 }) {
-          VCard({ title: '纯文本选项' }) {
-            TabSegmentButtonV2({
-              items: this.textItems,
-              selectedIndex: this.textSelectedIndex!!,
-              // 设置为半透明材质
-              backgroundSystemMaterial:
-              new uiMaterial.ImmersiveMaterial({ style: uiMaterial.ImmersiveStyle.ULTRA_THICK })
-            })
-          }
-
-          VCard({ title: '纯图标选项' }) {
-            CapsuleSegmentButtonV2({
-              items: this.imageItems,
-              selectedIndex: this.imageSelectedIndex!!,
-              // 设置为半透明材质
-              backgroundSystemMaterial:
-              new uiMaterial.ImmersiveMaterial({ style: uiMaterial.ImmersiveStyle.ULTRA_THICK })
-            })
-          }
-
-        }
-        .constraintSize({ minHeight: '100%' })
-        .justifyContent(FlexAlign.Start)
-        .padding(16)
+    Column({ space: 12 }) {
+      VCard({ title: '纯文本选项' }) {
+        TabSegmentButtonV2({
+          items: this.textItems,
+          selectedIndex: this.textSelectedIndex!!,
+          // 将itemFontColor设置为特殊系统资源值，启用自动反色能力。
+          itemFontColor: ColorMetrics.resourceColor($r('sys.color.font_primary')),
+          itemSelectedFontColor: ColorMetrics.resourceColor(Color.Black),
+          // 设置为系统材质样式为ULTRA_THIN，并开启自动反色和交互形变效果、自定义反馈光感的颜色。
+          backgroundSystemMaterial: new uiMaterial.ImmersiveMaterial({
+            style: uiMaterial.ImmersiveStyle.ULTRA_THIN,
+            colorInvert: true,
+            interactive: true,
+            lightEffect: { color: $r('sys.color.interactive_click') }
+          })
+        })
       }
-      .backgroundColor('#f1f3f5')
-      .width('100%')
-      .height('100%')
+
+      VCard({ title: '纯图标选项' }) {
+        CapsuleSegmentButtonV2({
+          items: this.imageItems,
+          selectedIndex: this.imageSelectedIndex!!,
+          // 将itemFontColor设置为特殊系统资源值，启用自动反色能力。
+          itemFontColor: ColorMetrics.resourceColor($r('sys.color.font_primary')),
+          itemSelectedFontColor: ColorMetrics.resourceColor(Color.Black),
+          // 设置为系统材质样式为ULTRA_THIN，开启自动反色和交互形变效果、自定义反馈光感的颜色。
+          backgroundSystemMaterial: new uiMaterial.ImmersiveMaterial({
+            style: uiMaterial.ImmersiveStyle.ULTRA_THIN,
+            colorInvert: true,
+            interactive: true,
+            lightEffect: { color: undefined }
+          })
+        })
+      }
+
     }
+    .linearGradient({
+      angle: 180, // 渐变角度，180度是从上到下。
+      colors: [
+        ['#FF9A9E', 0.0], // 起始颜色及位置（0.0表示起点）。
+        ['#FECFEF', 0.5], // 中间颜色及位置。
+        ['#3B324C', 1.0] // 结束颜色及位置（1.0表示终点）。
+      ]
+    })
+    .height(225)
+    .justifyContent(FlexAlign.Start)
+    .padding(16)
   }
 }
 
@@ -1125,11 +1141,11 @@ export struct VCard {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732947.png)
+ ![](./img/zh-cn_image_0000002686088459.gif)
 
 #### [h2]示例7（监听对象类型属性内部属性的变化）
 
-[SegmentButtonV2Item](#segmentbuttonv2item)使用了@ObservedV2装饰器，SegmentButtonV2组件通过@Param接收各个属性参数。对于@Trace装饰的基本类型属性，@Param已能观测到属性变化并触发UI刷新。但对于对象类型属性（如itemIconSize、itemPadding等）的内部属性（如itemIconSize的width、height，itemPadding的top、bottom、start、end），这些对象类型本身未被@ObservedV2装饰，其内部属性变化无法被@Param感知，导致修改内部属性时UI不会自动刷新。使用[makeObserved](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-statemanagement#makeobserved)接口对对象类型属性（如itemIconSize）进行包裹，可以为该对象的内部属性补充深度观察能力，使得修改内部属性（如width、height）时，框架能够监听到变化并触发UI刷新。makeObserved接口的详细说明请参考[makeObserved接口：将非观察数据变为可观察数据](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-makeobserved)。
+[SegmentButtonV2Item](#segmentbuttonv2item)使用了@ObservedV2装饰器，SegmentButtonV2组件通过@Param接收各个属性参数。对于@Trace装饰的基本类型属性，@Param已能观测到属性变化并触发UI刷新。但对于对象类型属性（如itemIconSize、itemPadding等）的内部属性（如itemIconSize的width、height，itemPadding的top、bottom、start、end），这些对象类型本身未被@ObservedV2装饰，其内部属性变化无法被@Param感知。因此，修改内部属性时UI不会自动刷新。使用[makeObserved](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-statemanagement#makeobserved)接口对对象类型属性（如itemIconSize）进行包裹，可以为该对象的内部属性补充深度观察能力，使得修改内部属性（如width、height）时，框架能够监听到变化并触发UI刷新。makeObserved接口的详细说明请参考[makeObserved接口：将非观察数据变为可观察数据](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-makeobserved)。
 
 以下示例使用UIUtils.makeObserved包裹itemIconSize，并通过Button修改itemIconSize的width和height属性，验证对象类型属性内部属性变化能够触发SegmentButtonV2的UI刷新。
 
@@ -1171,4 +1187,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253826.gif)
+ ![](./img/zh-cn_image_0000002685928629.gif)

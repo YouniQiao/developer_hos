@@ -2,8 +2,8 @@
 title: "显式动画立即下发 (animateToImmediately)"
 upstream_id: "harmonyos-references/ts-explicit-animatetoimmediately"
 catalog: "harmonyos-references"
-content_hash: "88ff542a6a80"
-synced_at: "2026-07-09T00:58:08.523686"
+content_hash: "e6964fc1aa12"
+synced_at: "2026-07-28T16:47:10.032745"
 ---
 
 # 显式动画立即下发 (animateToImmediately)
@@ -25,7 +25,7 @@ animateToImmediately接口用来提供[显式动画](https://developer.huawei.co
 
 #### animateToImmediately
 
-animateToImmediately(value: AnimateParam , event: () => void): void
+animateToImmediately(value: AnimateParam, event: () => void): void
 
 提供显式动画立即下发功能。
 
@@ -37,8 +37,8 @@ animateToImmediately(value: AnimateParam , event: () => void): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [AnimateParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-explicit-animation#animateparam对象说明) | 是 | 设置动画效果相关参数。 |
-| event | () => void | 是 | 指定显示动效的闭包函数，在闭包函数中导致的状态变化系统会自动插入过渡动画。 |
+| value | [AnimateParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-explicit-animation#animateparam对象说明) | 是 | 设置动画效果相关参数，动画参数将作用于event闭包函数中状态变化产生的过渡动效。各属性的取值范围及含义详见[AnimateParam对象说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-explicit-animation#animateparam对象说明)。 |
+| event | () => void | 是 | 指定显式动效的闭包函数，在闭包函数中导致的状态变化系统会自动插入过渡动画，动画效果由value参数控制。务必确保调用时状态完整，否则前几帧可能出现渲染异常。 |
 
 #### 示例
 
@@ -99,4 +99,4 @@ struct AnimateToImmediatelyExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253728.gif)
+ ![](./img/zh-cn_image_0000002656008838.gif)

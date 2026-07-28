@@ -2,13 +2,13 @@
 title: "@ohos.arkui.observer (无感监听)"
 upstream_id: "harmonyos-references/js-apis-arkui-observer"
 catalog: "harmonyos-references"
-content_hash: "85c0d7818ccd"
-synced_at: "2026-07-09T17:23:19.568624"
+content_hash: "e235becbabca"
+synced_at: "2026-07-28T16:40:59.871370"
 ---
 
 # @ohos.arkui.observer (无感监听)
 
-提供UI组件行为变化的无感监听能力。推荐使用[UIObserver](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uiobserver)进行组件监听。
+本模块提供UI组件行为变化的无感监听能力，包括监听页面状态、滚动事件、页面路由、屏幕像素密度、布局和绘制、页面切换以及TabContent状态变化等。适用于需要在不侵入组件业务逻辑的情况下感知UI状态变化的场景。推荐使用[UIObserver](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uiobserver)进行组件监听。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -536,7 +536,7 @@ struct Index {
                 .fontSize(16)
                 .textAlign(TextAlign.Center)
                 .margin({ top: 10 })
-            }, (item: string) => item)
+            }, (item: number) => item.toString())
           }.width('100%')
         }
         .id('testId')
@@ -746,7 +746,7 @@ off(type: 'densityUpdate', context: UIContext, callback?: Callback<DensityInfo>)
 | callback | Callback | 否 | 需要被注销的回调函数。若不指定具体的回调函数，则注销指定UIContext下所有densityUpdate事件监听。 |
 
 ```
-import { uiObserver, UIContext } from '@kit.ArkUI';
+import { uiObserver } from '@kit.ArkUI';
 
 @Entry
 @Component

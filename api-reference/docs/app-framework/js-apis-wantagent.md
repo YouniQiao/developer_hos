@@ -2,8 +2,8 @@
 title: "@ohos.wantAgent (WantAgent模块)"
 upstream_id: "harmonyos-references/js-apis-wantagent"
 catalog: "harmonyos-references"
-content_hash: "3c375fd54db8"
-synced_at: "2026-07-09T00:57:11.623416"
+content_hash: "1c0746101daa"
+synced_at: "2026-07-28T16:40:41.811252"
 ---
 
 # @ohos.wantAgent (WantAgent模块)
@@ -150,7 +150,7 @@ getBundleName(agent: WantAgent, callback: AsyncCallback<string>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | agent | WantAgent | 是 | WantAgent对象。 |
-| callback | AsyncCallback | 是 | 获取WantAgent实例的包名的回调方法。 |
+| callback | AsyncCallback | 是 | 获取WantAgent实例的Bundle名称的回调方法。 |
 
 示例：
 

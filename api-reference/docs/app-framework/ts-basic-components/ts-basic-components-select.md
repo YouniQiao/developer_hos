@@ -2,15 +2,15 @@
 title: "Select"
 upstream_id: "harmonyos-references/ts-basic-components-select"
 catalog: "harmonyos-references"
-content_hash: "751354499738"
-synced_at: "2026-07-09T17:23:48.364135"
+content_hash: "89572cf34ab9"
+synced_at: "2026-07-28T16:44:37.105410"
 ---
 
 # Select
 
-提供下拉选择菜单，让用户在多个选项间选择。
+提供下拉选择菜单，让用户在多个选项间选择。Select组件支持设置选项图标、自定义样式、分割线等，适用于需要在有限空间内展示多个选项供用户选择的场景。
 
-![](./img/note_3.0-zh-cn.png) 该组件从API version 8开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+![](./img/note_3.0-zh-cn.png) 该组件从API version 8开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
 #### 子组件
 
@@ -39,8 +39,8 @@ Select(options: Array<SelectOption>)
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | value | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 否 | 下拉选项内容。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| icon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 下拉选项图片。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| symbolIcon12+ | [SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier) | 否 | 是 | 下拉选项Symbol图片。 symbolIcon优先级高于icon。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| icon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 下拉选项图片，默认不显示。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| symbolIcon12+ | [SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier) | 否 | 是 | 下拉选项Symbol图片，默认不显示。 symbolIcon优先级高于icon。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### 属性
 
@@ -50,7 +50,7 @@ Select(options: Array<SelectOption>)
 
 selected(value: number | Resource)
 
-设置下拉菜单初始选项的索引，第一项的索引为0。当不设置selected属性或设置为异常值时，默认选中值为-1，菜单项不选中；当设置为undefined、null时，选中第一项。
+设置下拉菜单初始选项的索引，第一项的索引为0。当不设置selected属性、或设置为负数、非整数、超出索引范围等异常值时，默认选中值为-1，菜单项不选中；当设置为undefined、null时，选中第一项。
 
 从API version 10开始，该属性支持[$$](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-two-way-sync)双向绑定变量。
 
@@ -70,7 +70,7 @@ selected(value: number | Resource)
 
 selected(numCount: Optional<number | Resource>)
 
-设置下拉菜单初始选项的索引，第一项的索引为0。当不设置selected属性或设置异常值时，默认选择值为-1，菜单项不选中；当设置为undefined、null时，选中第一项。
+设置下拉菜单初始选项的索引，第一项的索引为0。当不设置selected属性、或设置为负数、非整数、超出索引范围等异常值时，默认选中值为-1，菜单项不选中；当设置为undefined、null时，选中第一项。
 
 该属性支持[$$](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-two-way-sync)、[!!](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-binding#系统组件参数双向绑定)双向绑定变量。
 
@@ -84,7 +84,7 @@ selected(numCount: Optional<number | Resource>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| numCount | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 下拉菜单初始选项的索引。 当numCount的值为undefined时，选中第一项。 |
+| numCount | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 下拉菜单初始选项的索引，索引值从0开始。 当numCount的值为undefined或null时，选中第一项。 |
 
 #### [h2]value
 
@@ -104,7 +104,7 @@ value(value: ResourceStr)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr)11+ | 是 | 下拉按钮本身的文本内容。 **说明：** 文本长度大于列宽时，文本被截断。 |
+| value | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr)11+ | 是 | 下拉按钮本身的文本内容。 **说明：** 文本长度大于列宽时，文本被截断，超出的部分以省略号的方式显示。 |
 
 #### [h2]value18+
 
@@ -124,7 +124,7 @@ value(resStr: Optional<ResourceStr>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| resStr | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 下拉按钮本身的文本内容。 当resStr的值为undefined时维持上次取值。 |
+| resStr | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 下拉按钮本身的文本内容。 当resStr的值为undefined时维持上次取值。 **说明：** 文本长度大于列宽时，文本被截断。 |
 
 #### [h2]controlSize12+
 
@@ -168,21 +168,21 @@ controlSize(size: Optional<ControlSize>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| size | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | Select组件的尺寸。 当size的值为undefined时，默认值为ControlSize.NORMAL。 |
+| size | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | Select组件的尺寸。 默认值：ControlSize.NORMAL。 当size的值为undefined或null时，默认值为ControlSize.NORMAL。 |
 
 controlSize、width、height接口作用优先级：
 
-1）如果开发者只设置了width和height，当文字大小设置的是比较大的值的时候，文字超出组件大小，超出的部分以省略号的方式显示；
+1）如果开发者只设置了width和height，当文字大小设置为较大值时，文字会超出组件大小，超出的部分以省略号的方式显示；
 
 2）如果开发者只设置了controlSize，没有设置width和height，组件宽高自适应文字，文字不超出组件，并设置最小宽度minWidth和最小高度minHeight；
 
-3）如果controlSize、width、height接口都设置了，width和height设置的值生效，但如果width和height设置的值小于controlSize设置的最小宽度minWidth和最小高度minHeight，width和height设置的值不生效，宽高仍保持controlSize设置的最小宽度minWidth和最小高度minHeight。
+3）如果同时设置了controlSize、width、height接口，width和height设置的值生效，但如果width和height设置的值小于controlSize设置的最小宽度minWidth和最小高度minHeight，width和height设置的值不生效，宽高仍保持controlSize设置的最小宽度minWidth和最小高度minHeight。
 
 #### [h2]menuItemContentModifier12+
 
 menuItemContentModifier(modifier: ContentModifier<MenuItemConfiguration>)
 
-定制Select下拉菜单项内容区的方法。在应用了menuItemContentModifier后，下拉菜单的内容将完全由开发者自定义，此时为Select组件设置的分割线、选项颜色及下拉菜单的字体颜色等属性将不再生效。
+定制Select下拉菜单项内容区的方法。在应用了menuItemContentModifier后，下拉菜单的内容将完全由开发者自定义，此时为Select组件设置的分割线、选项颜色及下拉菜单的字体颜色等属性将不再生效。适用于下拉菜单项需要展示图文混排、多行文本、复杂图标或内置控件等复杂布局的场景。
 
 ![](./img/note_3.0-zh-cn.png) 该接口不支持在[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)中调用。
 
@@ -216,13 +216,13 @@ menuItemContentModifier(modifier: Optional<ContentModifier<MenuItemConfiguration
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| modifier | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt)> | 是 | 在Select组件上，定制下拉菜单项内容区的方法。 modifier：内容修改器，开发者需要自定义class实现ContentModifier接口。 当modifier的值为undefined时，不使用内容修改器。 |
+| modifier | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt)> | 是 | 在Select组件上，定制下拉菜单项内容区的方法。 modifier：内容修改器，开发者需要自定义class实现ContentModifier接口。 当modifier的值为undefined或null时，不使用内容修改器。 |
 
 #### [h2]divider12+
 
 divider(options: Optional<DividerOptions> | null)
 
-设置分割线样式，不设置该属性则按“默认值”展示分割线。
+设置分割线样式，不设置该属性则按“默认值”展示分割线。该属性与dividerStyle冲突，如果同时设置，按调用顺序生效，后者覆盖前者。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -240,7 +240,7 @@ divider(options: Optional<DividerOptions> | null)
 
 dividerStyle(style: Optional<DividerStyleOptions>)
 
-设置分割线样式，不设置该属性则按“默认值”展示分割线。该属性与divider互斥，按调用顺序生效。
+设置分割线样式，不设置该属性则按“默认值”展示分割线。该属性与divider冲突，如果同时设置，按调用顺序生效，后者覆盖前者。
 
 元服务API： 从API version 19开始，该接口支持在元服务中使用。
 
@@ -252,7 +252,7 @@ dividerStyle(style: Optional<DividerStyleOptions>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| style | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 1.设置DividerOptions，则按设置的样式显示分割线。 默认值： { strokeWidth: '1px' , color: '#33182431' } 2.设置为null或undefined时，展示默认分割线。 3.当mode为FLOAT_ABOVE_MENU时，strokeWidth设置过宽时，会覆盖文字。分割线会从每一个Item底部开始，同时向上向下画分割线。当mode为EMBEDDED_IN_MENU时，分割线在Menu中展开，独立占用高度。 4.startMargin和endMargin的默认值与不设置divider属性时的分割线样式保持一致。startMargin和endMargin的和与optionWidth的值相等时，不显示分割线。startMargin和endMargin的和超过optionWidth的值时，按照默认样式显示分割线。 |
+| style | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 1.设置DividerStyleOptions，则按设置的样式显示分割线。 默认值： { strokeWidth: '1px' , color: '#33182431' } 2.设置为null或undefined时，展示默认分割线。 3.当mode为FLOAT_ABOVE_MENU时，strokeWidth设置过宽时，会覆盖文字。分割线会从每一个Item底部开始，同时向上向下画分割线。当mode为EMBEDDED_IN_MENU时，分割线在Menu中展开，独立占用高度。 4.startMargin和endMargin的默认值与不设置divider属性时的分割线样式保持一致。startMargin和endMargin的和与optionWidth的值相等时，不显示分割线。startMargin和endMargin的和超过optionWidth的值时，按照默认样式显示分割线。 |
 
 #### [h2]font
 
@@ -456,7 +456,7 @@ optionBgColor(resColor: Optional<ResourceColor>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| resColor | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 下拉菜单项的背景色。 当resColor的值为undefined时，下拉菜单项的背景色为Color.White。 |
+| resColor | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 下拉菜单项的背景色。 当resColor的值为undefined时，默认值：API version 11之前为Color.White，API version 11及之后为Color.Transparent。 |
 
 #### [h2]optionFont
 
@@ -617,7 +617,7 @@ menuAlign(alignType: MenuAlignType, offset?: Offset)
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | alignType | [MenuAlignType](#menualigntype10枚举说明) | 是 | 对齐方式类型。 默认值：MenuAlignType.START |
-| offset | [Offset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#offset) | 否 | 按照对齐类型对齐后，下拉菜单相对下拉按钮的偏移量。 默认值：{dx: 0, dy: 0} |
+| offset | [Offset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#offset) | 否 | 按照对齐类型对齐后，下拉菜单相对下拉按钮的偏移量。dx控制水平方向偏移，dy控制垂直方向偏移。 默认值：{dx: 0, dy: 0} |
 
 #### [h2]menuAlign18+
 
@@ -644,7 +644,7 @@ optionWidth(value: Dimension | OptionWidthMode )
 
 设置下拉菜单项的宽度，不支持设置百分比。OptionWidthMode类型为枚举类型，OptionWidthMode决定下拉菜单是否继承下拉按钮宽度。
 
-当设置为异常值或小于最小宽度56vp时，属性无效，菜单项宽度设为默认值，即2栅格。
+当设置为无效值或小于最小宽度56vp时，属性无效，菜单项宽度设为默认值，即2栅格。
 
 Select组件距屏幕边缘的左右间距为16vp，建议将组件本身及菜单项的宽度设置为小于等于calc(100% - 32vp)的值，以避免下拉菜单弹出时发生偏移。
 
@@ -666,7 +666,7 @@ optionWidth(width: Optional<Dimension | OptionWidthMode> )
 
 设置下拉菜单项的宽度，不支持设置百分比。OptionWidthMode类型为枚举类型，OptionWidthMode决定下拉菜单是否继承下拉按钮宽度。与[optionWidth](#optionwidth11)11+相比，width参数新增了对undefined类型的支持。
 
-当设置为异常值或小于最小宽度56vp时，属性无效，菜单项宽度设为默认值，即2栅格。
+当设置为无效值或小于最小宽度56vp时，属性无效，菜单项宽度设为默认值，即2栅格。
 
 Select组件距屏幕边缘的左右间距为16vp，建议将组件本身及菜单项的宽度设置为小于等于calc(100% - 32vp)的值，以避免下拉菜单弹出时发生偏移。
 
@@ -688,9 +688,9 @@ optionHeight(value: Dimension)
 
 设置下拉菜单显示的最大高度，不支持设置百分比。默认最大高度是屏幕可用高度的80%，设置的菜单最大高度不能超过默认最大高度。
 
-当设置为异常值或零时，属性不生效。
+当设置为无效值或零时，属性不生效。
 
-如果下拉菜单所有选项的实际高度没有设定的高度大，下拉菜单的高度按实际高度显示。
+如果下拉菜单所有选项的实际高度小于设定的高度，下拉菜单的高度按实际高度显示。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -710,7 +710,7 @@ optionHeight(height: Optional<Dimension>)
 
 设置下拉菜单显示的最大高度，不支持设置百分比。默认最大高度是屏幕可用高度的80%，设置的菜单最大高度不能超过默认最大高度。与[optionHeight](#optionheight11)11+相比，height参数新增了对undefined类型的支持。
 
-当设置为异常值或零时，属性不生效。
+当设置为无效值或零时，属性不生效。
 
 如果下拉菜单所有选项的实际高度小于设定的高度，下拉菜单的高度按实际高度显示。
 
@@ -724,7 +724,7 @@ optionHeight(height: Optional<Dimension>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| height | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 下拉菜单显示的最大高度。 当height的值为undefined时，属性不生效，下拉菜单最大高度设为默认值，即下拉菜单最大高度默认值为屏幕可用高度的80%。 |
+| height | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 下拉菜单显示的最大高度。 当height的值为undefined时，属性不生效，下拉菜单最大高度设为默认值，即屏幕可用高度的80%。 |
 
 #### [h2]menuBackgroundColor11+
 
@@ -744,7 +744,7 @@ menuBackgroundColor(value: ResourceColor)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 是 | 下拉菜单的背景色。 默认值： API version 11之前，默认值为$r('sys.color.ohos_id_color_card_bg')。 API version 11及之后，默认值为Color.Transparent。 |
+| value | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 是 | 下拉菜单的背景色。 默认值：API version 11之前为$r('sys.color.ohos_id_color_card_bg')，API version 11及之后为Color.Transparent。 |
 
 #### [h2]menuBackgroundColor18+
 
@@ -854,7 +854,7 @@ showDefaultSelectedIcon(show: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| show | boolean | 是 | 是否显示默认选定的图标。 true：显示默认选择的图标；false：不显示默认选择的图标，通过突出显示背景色来表示选中。 默认值：false 当show为true时，若设置了selectedOptionBgColor选中项的背景色时，则同时显示选中项的背景色和默认选定的图标；若未通过selectedOptionBgColor设置选中项的背景色时，不突出显示背景色，只显示默认选定的图标。 |
+| show | boolean | 是 | 是否显示默认选定的图标。 true：显示默认选定的图标；false：不显示默认选定的图标，通过突出显示背景色来表示选中。 默认值：false 当show为true时，若设置了selectedOptionBgColor选中项的背景色时，则同时显示选中项的背景色和默认选定的图标；若未通过selectedOptionBgColor设置选中项的背景色时，不突出显示背景色，只显示默认选定的图标。 |
 
 #### [h2]textModifier20+
 
@@ -916,7 +916,7 @@ optionTextModifier(modifier: Optional<TextModifier>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| modifier | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 在Select组件上，定制Select下拉菜单未选中项样式的方法。 当modifier的值为undefined时，不自定义下拉菜单未选中项的文本样式。 |
+| modifier | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 在Select组件上，定制Select下拉菜单未选中项文本样式的方法。 当modifier的值为undefined时，不自定义下拉菜单未选中项的文本样式。 |
 
 #### [h2]selectedOptionTextModifier20+
 
@@ -938,7 +938,7 @@ selectedOptionTextModifier(modifier: Optional<[TextModifier](https://developer.h
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| modifier | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 设置下拉菜单项选中项的文本样式。 开发者可以根据需要管理和维护文本的样式进行设置。 当modifier的值为undefined时，不自定义下拉菜单项选中项的文本样式。 |
+| modifier | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 设置下拉菜单选中项的文本样式。 开发者可以根据需要管理和维护文本的样式进行设置。 当modifier的值为undefined时，不自定义下拉菜单选中项的文本样式。 |
 
 #### [h2]showInSubWindow20+
 
@@ -974,7 +974,7 @@ keyboardAvoidMode(mode:Optional<MenuKeyboardAvoidMode>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| mode | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 设置下拉菜单是否避让软键盘。取值为undefined时，按照MenuKeyboardAvoidMode.NONE处理，不避让软键盘。 |
+| mode | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 设置下拉菜单是否避让软键盘。取值为undefined时，按照MenuKeyboardAvoidMode.NONE处理，不避让软键盘。各枚举值的具体效果参见[MenuKeyboardAvoidMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#menukeyboardavoidmode23枚举说明)枚举说明。 |
 
 #### [h2]minKeyboardAvoidDistance23+
 
@@ -994,11 +994,11 @@ minKeyboardAvoidDistance(distance:Optional<LengthMetrics>)
 | --- | --- | --- | --- |
 | distance | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 设置下拉菜单避让软键盘的最小距离。设置为负数、undefined时，按照8vp处理。 |
 
-#### [h2]menuSystemMaterial
+#### [h2]menuBackgroundBlurStyleOptions
 
-menuSystemMaterial(material:Optional<SystemUiMaterial>)
+menuBackgroundBlurStyleOptions(blurStyle: Optional<BackgroundBlurStyleOptions>)
 
-设置Select下拉菜单的系统材质。不同系统材质对应不同的属性影响效果，该接口影响下拉菜单背景色[menuBackgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-select#menubackgroundcolor18)、边框颜色[borderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#bordercolor)、边框宽度[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)、阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)参数，当设置系统材质时，上述接口不生效。
+设置Select下拉菜单的背景模糊效果。
 
 起始版本： 26.0.0
 
@@ -1012,7 +1012,47 @@ menuSystemMaterial(material:Optional<SystemUiMaterial>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| material | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 设置下拉菜单系统材质。材质设置为非法值、undefined时，按照不设置系统材质处理。 |
+| blurStyle | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 设置Select下拉菜单的背景模糊效果。 |
+
+#### [h2]menuBackgroundEffect
+
+menuBackgroundEffect(effect: Optional<BackgroundEffectOptions>)
+
+设置Select下拉菜单的背景属性。
+
+起始版本： 26.0.0
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| effect | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 设置Select下拉菜单的背景属性，包括：模糊半径、亮度、饱和度和颜色。 |
+
+#### [h2]menuSystemMaterial
+
+menuSystemMaterial(material:Optional<SystemUiMaterial>)
+
+设置Select下拉菜单的系统材质。不同系统材质对应不同的属性影响效果，该接口影响下拉菜单背景色[menuBackgroundColor](#menubackgroundcolor18)、边框颜色[borderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#bordercolor)、边框宽度[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)、阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)等参数，当设置系统材质时，上述接口不生效。
+
+起始版本： 26.0.0
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| material | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 设置下拉菜单系统材质。材质设置为无效值、undefined时，按照不设置系统材质处理。 |
 
 #### ArrowPosition10+枚举说明
 
@@ -1091,7 +1131,7 @@ menuSystemMaterial(material:Optional<SystemUiMaterial>)
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| width | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | [EdgeOutlineWidths](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#edgeoutlinewidths11对象说明) | 否 | 是 | 设置外描边宽度，不支持百分比。 默认值：0 |
+| width | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | [EdgeOutlineWidths](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#edgeoutlinewidths11对象说明) | 否 | 是 | 设置外描边宽度，不支持百分比。 默认值：0vp |
 | color | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | [EdgeColors](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#edgecolors9) | 否 | 是 | 设置外描边颜色。 默认值：#19ffffff |
 
 #### 事件
@@ -1204,7 +1244,7 @@ struct SelectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664329741.png)
+ ![](./img/zh-cn_image_0000002685928201.png)
 
 #### [h2]示例2（设置symbol类型图标）
 
@@ -1264,11 +1304,11 @@ struct SelectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002633850630.png)
+ ![](./img/zh-cn_image_0000002656008524.png)
 
 #### [h2]示例3（自定义下拉菜单）
 
-该示例实现了一个自定义下拉菜选项的Select组件。自定义下拉菜单选项样式为“文本 + Symbol图片 + 空白间隔 + 文本 + 绘制三角形”，点击菜单选项后Select组件显示菜单选项的文本内容。
+该示例实现了一个自定义下拉菜单选项的Select组件。自定义下拉菜单选项样式为“文本 + Symbol图片 + 空白间隔 + 文本 + 绘制三角形”，点击菜单选项后Select组件显示菜单选项的文本内容。
 
 ```
 import { SymbolGlyphModifier } from '@kit.ArkUI';
@@ -1353,7 +1393,7 @@ struct SelectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002634010534.png)
+ ![](./img/zh-cn_image_0000002655848604.png)
 
 #### [h2]示例4（设置分割线样式）
 
@@ -1409,7 +1449,7 @@ struct SelectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664209683.png)
+ ![](./img/zh-cn_image_0000002686088031.png)
 
 #### [h2]示例5（设置无分割线样式）
 
@@ -1455,7 +1495,7 @@ struct SelectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664329743.png)
+ ![](./img/zh-cn_image_0000002685928203.png)
 
 #### [h2]示例6（设置Select中文本和箭头样式）
 
@@ -1529,7 +1569,7 @@ struct SelectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002633850632.png)
+ ![](./img/zh-cn_image_0000002656008526.png)
 
 #### [h2]示例7（设置Select下拉菜单选中和非选中项文本样式）
 
@@ -1605,7 +1645,7 @@ struct SelectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002634010536.png)
+ ![](./img/zh-cn_image_0000002655848606.png)
 
 #### [h2]示例8（设置分割线模式）
 
@@ -1621,7 +1661,7 @@ struct Index {
     RelativeContainer() {
       Select([{ value: "SelectItem" }, { value: "SelectItem" }, { value: "SelectItem" },])
         .value("请选择")
-        **
+        /**
          * 自定义下拉选项分割线完整样式
          * strokeWidth：分割线粗细，使用vp单位统一适配不同屏幕
          * color：分割线浅灰色
@@ -1638,7 +1678,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664209685.png)
+ ![](./img/zh-cn_image_0000002686088033.png)
 
 #### [h2]示例9（设置Select下拉菜单外描边样式）
 
@@ -1692,9 +1732,9 @@ struct SelectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664329745.png)
+ ![](./img/zh-cn_image_0000002685928205.png)
 
-#### [h2]示例10（设置Select的弹出菜单避让软键盘）
+#### [h2]示例10（设置Select弹出菜单避让软键盘）
 
 该示例通过调用[keyboardAvoidMode](#keyboardavoidmode23)和[minKeyboardAvoidDistance](#minkeyboardavoiddistance23)接口，实现下拉菜单避让软键盘并自定义避让软键盘的最小距离。
 
@@ -1716,7 +1756,7 @@ struct Index {
     try {
       this.inputController = inputMethod.getController();
     } catch (err) {
-      console.error("get input method controller failed：", JSON.stringify(err));
+      console.error("get input method controller fail：", JSON.stringify(err));
     }
   }
 
@@ -1771,11 +1811,11 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002633850634.gif)
+ ![](./img/zh-cn_image_0000002656008528.gif)
 
 #### [h2]示例11（设置Select和下拉菜单系统材质）
 
-该示例通过调用[menuSystemMaterial](#menusystemmaterial)接口实现下拉菜单系统材质效果，通过[systemMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemmaterial)接口实现select组件系统材质效果。
+该示例通过调用[menuSystemMaterial](#menusystemmaterial)接口实现下拉菜单系统材质效果，通过[SystemUiMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemuimaterial)接口实现select组件系统材质效果。
 
 从API版本26.0.0开始，新增menuSystemMaterial接口。
 
@@ -1815,8 +1855,8 @@ struct Index {
 ```
  未设置系统材质时：
 
-![](./img/zh-cn_image_0000002634010538.png)
+![](./img/zh-cn_image_0000002655848608.png)
 
 设置系统材质后：
 
-![](./img/zh-cn_image_0000002664209687.png)
+![](./img/zh-cn_image_0000002686088035.png)

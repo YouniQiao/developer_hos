@@ -2,13 +2,13 @@
 title: "共享元素转场 (sharedTransition)"
 upstream_id: "harmonyos-references/ts-transition-animation-shared-elements"
 catalog: "harmonyos-references"
-content_hash: "86261627fe8b"
-synced_at: "2026-07-09T17:24:46.562870"
+content_hash: "567bdfe02dc6"
+synced_at: "2026-07-28T16:47:06.454793"
 ---
 
 # 共享元素转场 (sharedTransition)
 
-可以通过设置组件的sharedTransition属性将该元素标记为共享元素并设置对应的共享元素转场动效。sharedTransition仅发生在[@ohos.router (页面路由)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-router)跳转时。
+共享元素转场（sharedTransition）用于在页面跳转时实现共享元素的平滑过渡动画，使同一元素在不同页面间保持视觉连续性，提升用户体验和转场流畅度。可以通过设置组件的sharedTransition属性将该元素标记为共享元素并设置对应的共享元素转场动效。sharedTransition仅发生在[@ohos.router (页面路由)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-router)跳转时。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
 
@@ -73,7 +73,7 @@ struct SharedTransitionExample {
         .sharedTransition('sharedImage', { duration: 800, curve: Curve.Linear, delay: 100 })
     }.width('100%').height('100%').alignItems(HorizontalAlign.Start)
     .onClick(() => {
-      this.getUIContext().getRouter().pushUrl({ url: 'pages/PageB' })
+      this.getUIContext().getRouter().pushUrl({ url: 'pages/PageB' });
     })
   }
 
@@ -103,4 +103,4 @@ struct PageBExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664330061.gif)
+ ![](./img/zh-cn_image_0000002655848912.gif)

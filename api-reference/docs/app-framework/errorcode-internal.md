@@ -1,36 +1,34 @@
 ---
-
 title: "接口调用异常错误码"
 upstream_id: "harmonyos-references/errorcode-internal"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T00:58:48.397390"
-content_hash: "c4cb72d7f6b6"
+content_hash: "fd38cdd873bf"
+synced_at: "2026-07-28T16:49:48.631528"
 ---
-
 
 # 接口调用异常错误码
 
-![](./img/note_3.0-zh-cn.png) 以下仅介绍本模块特有错误码，通用错误码请参考[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+![](./img/note_3.0-zh-cn.png) 以下仅介绍本模块特有错误码。开发者在使用ArkUI相关接口时如遇到接口调用异常，可参考本文档中的错误码信息定位问题原因并采取相应处理步骤。通用错误码请参考[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 #### 100001 接口调用异常错误码
 
 错误信息
 
-作为[@ohos.animator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-animator)的错误码时，错误信息为：The specified page is not found or the object property list is not obtained.
+作为[@ohos.animator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-animator)的错误码时，错误信息为："The specified page is not found or the object property list is not obtained."。
 
-作为[@ohos.promptAction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction)和[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)的错误码时，错误信息为：Internal error.
+作为[@ohos.promptAction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction)和[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)的错误码时，错误信息为："Internal error."。
 
-作为[@ohos.router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-router)的错误码时，错误信息为：Internal error. UI execution context is not found.
+作为[@ohos.router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-router)的错误码时，错误信息为："Internal error. UI execution context is not found."。
 
-作为[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)路由框架的错误码时，错误信息为：Internal error. Create NavDestination failed, probably caused by wrong UIContext.
+作为[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)路由框架的错误码时，错误信息为："Internal error. Create NavDestination failed, probably caused by wrong UIContext."。
 
-作为[@ohos.arkui.componentSnapshot](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-componentsnapshot)的错误码时，错误信息为：The builder is not a valid build function.
+作为[@ohos.arkui.componentSnapshot](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-componentsnapshot)的错误码时，错误信息为："The builder is not a valid build function."。
 
-作为[@ohos.arkui.componentUtils](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-componentutils)的错误码时，错误信息为：UI execution context not found.
+作为[@ohos.arkui.componentUtils](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-componentutils)的错误码时，错误信息为："UI execution context not found."。
 
 错误描述
 
-作为[@ohos.animator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-animator)和[@ohos.promptAction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction)的错误码时，出现了开发者解决不了的内部异常错误，会报此错误码，并描述具体是哪种内部错误。
+作为[@ohos.animator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-animator)和[@ohos.promptAction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction)的错误码时，出现了由系统内部产生的异常错误，开发者无法通过修改自身代码解决，系统会报此错误码，并描述具体是哪种内部错误。
 
 作为[@ohos.router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-router)的错误码时，该错误码为string类型。
 
@@ -42,11 +40,11 @@ content_hash: "c4cb72d7f6b6"
 
 可能原因
 
-作为[@ohos.animator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-animator)、[@ohos.router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-router)和[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)路由框架的错误码时，可能原因为：未成功获取渲染引擎，解析参数失败等。
+作为[@ohos.animator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-animator)、[@ohos.router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-router)和[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)路由框架的错误码时，可能原因为：未成功获取渲染引擎、解析参数失败等。
 
-作为[@ohos.promptAction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction)的错误码时，可能原因为：未成功获取渲染引擎、解析参数失败或者UI上下文不明确等问题。
+作为[@ohos.promptAction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction)的错误码时，可能原因为：未成功获取渲染引擎、解析参数失败、UI上下文不明确等。
 
-作为[@ohos.arkui.componentSnapshot](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-componentsnapshot)的错误码时，可能原因为：无法获取正确的UI实例、空指针异常、UI实例内部状态校验异常、组件未上树无法查询到节点、截图尺寸超过硬件限制（硬件限制可能根据不同硬件平台有所不同）等。
+作为[@ohos.arkui.componentSnapshot](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-componentsnapshot)的错误码时，可能原因为：无法获取正确的UI实例、空指针异常、UI实例内部状态校验异常、组件未上树无法查询到节点、截图尺寸超过硬件限制（不同硬件平台的限制值有所不同）等。
 
 作为[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)的错误时，可能原因为：内存不足或JS虚拟机异常等因素可能导致UI实例创建失败。
 

@@ -2,8 +2,8 @@
 title: "@ohos.bluetooth.hfp (蓝牙hfp模块)"
 upstream_id: "harmonyos-references/js-apis-bluetooth-hfp"
 catalog: "harmonyos-references"
-content_hash: "80232254ba43"
-synced_at: "2026-07-09T00:59:22.894579"
+content_hash: "6ccf0efae976"
+synced_at: "2026-07-28T16:50:36.087486"
 ---
 
 # @ohos.bluetooth.hfp (蓝牙hfp模块)
@@ -66,6 +66,43 @@ try {
 }
 ```
 
+#### hfp.createHfpHfProfile
+
+createHfpHfProfile(): HandsFreeHfProfile
+
+创建蓝牙通话音频中的[HF](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#hf)实例。通过该实例可使用本端作为HF设备的接口，如：获取和其他设备间的蓝牙通话音频连接状态。
+
+起始版本： 26.0.0
+
+系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| [HandsFreeHfProfile](#handsfreehfprofile) | 返回HF实例。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 801 | Capability not supported. |
+
+示例：
+
+```
+try {
+    let hfProfile = hfp.createHfpHfProfile();
+    console.info('hf success');
+} catch (err) {
+    console.error(`errCode: ${err.code}, errMessage: ${err.message}`);
+}
+```
+
 #### HandsFreeAudioGatewayProfile
 
 该实例表示蓝牙通话音频中的[HFP AG](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#hfp-ag)角色‌。
@@ -73,3 +110,19 @@ try {
 - 该类继承于[BaseProfile](#baseprofile)，因此可以使用其父类中的方法。
 - 使用该类的接口前，需通过[createHfpAgProfile](#hfpcreatehfpagprofile)接口构造该类的实例。
 - 和该实例角色相对应的是[HF](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#hf)角色。
+
+系统能力：SystemCapability.Communication.Bluetooth.Core
+
+#### HandsFreeHfProfile
+
+该实例表示蓝牙通话音频中的[HF](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#hf)角色‌。
+
+- 该类继承于[BaseProfile](#baseprofile)，因此可以使用其父类中的方法。
+- 使用该类的接口前，需通过[createHfpHfProfile](#hfpcreatehfphfprofile)接口构造该类的实例。
+- 和该实例角色相对应的是[HFP AG](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#hfp-ag)角色。
+
+起始版本： 26.0.0
+
+系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。

@@ -2,19 +2,19 @@
 title: "OH_AVSeiMessageArray"
 upstream_id: "harmonyos-references/capi-avplayer-oh-avseimessagearray"
 catalog: "harmonyos-references"
-content_hash: "1ec0d1283327"
-synced_at: "2026-07-09T01:00:45.234938"
+content_hash: "a9a67e212140"
+synced_at: "2026-07-28T16:52:02.363176"
 ---
 
 # OH_AVSeiMessageArray
 
 ```
-typedef struct OH_AVSeiMessageArray OH_AVSeiMessageArray
+typedef struct OH_AVSeiMessageArray OH_AVSeiMessageArray;
 ```
 
 #### 概述
 
-SEI消息数组的结构体类型。
+SEI（Supplemental Enhancement Information）消息数组的结构体类型。用于存储和管理SEI消息的数组结构体，支持批量获取和处理视频流中的SEI消息，适用于需要解析视频补充增强信息的场景。
 
 起始版本： 23
 

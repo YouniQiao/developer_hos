@@ -2,15 +2,15 @@
 title: "AVRecorder"
 upstream_id: "harmonyos-references/capi-avrecorder"
 catalog: "harmonyos-references"
-content_hash: "9dc5eb11da3b"
-synced_at: "2026-07-09T01:00:39.675482"
+content_hash: "ddb76b1d6350"
+synced_at: "2026-07-28T16:51:57.225446"
 ---
 
 # AVRecorder
 
 #### 概述
 
-提供请求录制能力的API。
+AVRecorder提供媒体录制能力，支持音视频数据的采集与录制，适用于需要将音视频内容录制保存为文件的场景。
 
 开发者可根据实际的开发需求，参考对应的开发指南及样例：
 
@@ -25,5 +25,5 @@ synced_at: "2026-07-09T01:00:39.675482"
 
 | 名称 | 描述 |
 | --- | --- |
-| [avrecorder.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avrecorder-h) | 定义AVRecorder接口。应用可使用媒体AVRecorder提供的接口录制媒体数据。 |
+| [avrecorder.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avrecorder-h) | 定义AVRecorder接口。AVRecorder提供媒体录制能力，支持音视频数据的采集与录制，适用于需要将音视频内容录制保存为文件的场景。 |
 | [avrecorder_base.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avrecorder-base-h) | 定义了媒体AVRecorder的结构体和枚举。 |

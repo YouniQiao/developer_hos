@@ -2,8 +2,8 @@
 title: "Interface (AudioRoutingManager)"
 upstream_id: "harmonyos-references/arkts-apis-audio-audioroutingmanager"
 catalog: "harmonyos-references"
-content_hash: "d1811b800334"
-synced_at: "2026-07-09T01:00:08.018913"
+content_hash: "5c700a95a5c8"
+synced_at: "2026-07-28T16:51:25.661767"
 ---
 
 # Interface (AudioRoutingManager)
@@ -1033,4 +1033,44 @@ let capturerInfo: audio.AudioCapturerInfo = {
 audioRoutingManager.on('preferredInputDeviceChangeForCapturerInfo', capturerInfo, preferredInputDeviceChangeForCapturerInfoCallback);
 
 audioRoutingManager.off('preferredInputDeviceChangeForCapturerInfo', preferredInputDeviceChangeForCapturerInfoCallback);
+```
+
+#### declareDeviceTypesCompatibility
+
+declareDeviceTypesCompatibility(deviceTypes: DeviceTypeArray): void
+
+声明应用需要兼容的设备类型。
+
+![](./img/note_3.0-zh-cn.png) 对于API version 20及以上版本新增的设备类型，应用调用获取设备的相关接口时（例如[getAvailableDevices](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiosessionmanager#getavailabledevices21)），默认返回的设备类型为匿名类型。如需获取具体设备类型，需先调用该方法进行设备类型兼容声明。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Multimedia.Audio.Device
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| deviceTypes | [DeviceTypeArray](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-t#devicetypearray) | 是 | [DeviceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#devicetype)数组。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[Audio错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-audio)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 6800101 | Parameter verification failed, the param deviceTypes contains value that is invalid enum or is not device type introduced in API 20 onwards. |
+
+示例：
+
+```
+import { audio } from '@kit.AudioKit';
+
+let deviceTypes = [
+  audio.DeviceType.NEARLINK
+];
+
+audioRoutingManager.declareDeviceTypesCompatibility(deviceTypes);
 ```

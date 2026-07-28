@@ -2,8 +2,8 @@
 title: "@ohos.file.cloudSync (端云同步能力)"
 upstream_id: "harmonyos-references/js-apis-file-cloudsync"
 catalog: "harmonyos-references"
-content_hash: "4eb3fe7de80d"
-synced_at: "2026-07-09T00:59:00.251466"
+content_hash: "ccd747f013bd"
+synced_at: "2026-07-28T16:50:02.591883"
 ---
 
 # @ohos.file.cloudSync (端云同步能力)
@@ -95,8 +95,8 @@ import { cloudSync } from '@kit.CoreFileKit';
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | state | [State](#state11) | 否 | 否 | 枚举值，云文件下载状态。 |
-| processed | number | 否 | 否 | 已下载数据大小，取值范围[0，9223372036854775807]（单位：Byte）。 |
-| size | number | 否 | 否 | 当前云文件大小，取值范围[0，9223372036854775807]（单位：Byte）。 |
+| processed | number | 否 | 否 | 已下载数据大小，取值范围[0, 9223372036854775807]（单位：Byte）。 |
+| size | number | 否 | 否 | 当前云文件大小，取值范围[0, 9223372036854775807]（单位：Byte）。 |
 | uri | string | 否 | 否 | 当前云文件URI。 |
 | error | [DownloadErrorType](#downloaderrortype11) | 否 | 否 | 下载的错误类型。 |
 
@@ -830,7 +830,7 @@ stop(uri: string, needClean?: boolean): Promise<void>
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | uri | string | 是 | 待下载文件uri。 |
-| needClean12+ | boolean | 否 | 是否删除已下载的文件。默认值为false表示不删除；true表示删除。 从API version12开始支持该参数。 |
+| needClean12+ | boolean | 否 | 是否删除已下载的文件。默认值为false表示不删除；true表示删除。 从API version 12开始支持该参数。 |
 
 返回值：
 
@@ -1015,6 +1015,88 @@ try {
   let error:BusinessError = err as BusinessError;
   console.error("clean file cache failed with error message: " + err.message + ", error code: " + err.code);
 }
+```
+
+#### [h2]cleanAllFileCache
+
+cleanAllFileCache(): Promise<void>
+
+删除所有已缓存文件，未上云文件、写打开文件及缩略图文件不会被删除。使用Promise异步回调。
+
+起始版本： 26.0.0
+
+模型约束：此接口仅可在Stage模型下使用。
+
+系统能力：SystemCapability.FileManagement.DistributedFileService.CloudSync.Core
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，无返回结果。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[文件管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-filemanagement)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 13900010 | Try again. |
+
+示例：
+
+```
+import { BusinessError } from '@kit.BasicServicesKit';
+import { fileUri } from '@kit.CoreFileKit';
+
+let fileCache = new cloudSync.CloudFileCache();
+
+fileCache.cleanAllFileCache().then(() => {
+  console.info("clean file cache successfully");
+}).catch((err: BusinessError) => {
+  console.error("clean file cache failed with error message: " + err.message + ", error code: " + err.code);
+});
+```
+
+#### [h2]getCachedTotalSize
+
+getCachedTotalSize(): Promise<number>
+
+获取已缓存文件的总大小，包含本地新增未上云文件、本地新增已上云文件及已下载文件大小，不包含缩略图文件大小。使用Promise异步回调。
+
+起始版本： 26.0.0
+
+模型约束：此接口仅可在Stage模型下使用。
+
+系统能力：SystemCapability.FileManagement.DistributedFileService.CloudSync.Core
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，返回已缓存文件总大小。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[文件管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-filemanagement)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 13900010 | Try again. |
+
+示例：
+
+```
+import { BusinessError } from '@kit.BasicServicesKit';
+import { fileUri } from '@kit.CoreFileKit';
+
+let fileCache = new cloudSync.CloudFileCache();
+
+fileCache.getCachedTotalSize().then((totalDownloadSize: number) => {
+  console.info("totalDownloadSize: " + totalDownloadSize);
+}).catch((err: BusinessError) => {
+  console.error("get totalDownloadSize failed with error message: " + err.message + ", error code: " + err.code);
+});
 ```
 
 #### DownloadErrorType11+

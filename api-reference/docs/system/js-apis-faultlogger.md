@@ -2,8 +2,8 @@
 title: "@ohos.faultLogger (故障日志获取)"
 upstream_id: "harmonyos-references/js-apis-faultlogger"
 catalog: "harmonyos-references"
-content_hash: "536f3fa26c65"
-synced_at: "2026-07-09T01:00:03.073687"
+content_hash: "b09e13165ed3"
+synced_at: "2026-07-28T16:51:21.635097"
 ---
 
 # @ohos.faultLogger (故障日志获取)
@@ -14,7 +14,7 @@ synced_at: "2026-07-09T01:00:03.073687"
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 8开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
-本模块接口从API version 18开始废弃使用, 该接口不再维护。后续版本推荐使用[@ohos.hiviewdfx.hiAppEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hiviewdfx-hiappevent)订阅APP_CRASH，APP_FREEZE事件。
+本模块接口从API version 18开始废弃使用，该接口不再维护。后续版本推荐使用[@ohos.hiviewdfx.hiAppEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hiviewdfx-hiappevent)订阅APP_CRASH，APP_FREEZE事件。
 
 查阅[从Faultlogger接口迁移崩溃事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-crash-events-arkts#从faultlogger接口迁移崩溃事件)，了解使用hiAppEvent订阅APP_CRASH的具体信息。
 
@@ -73,7 +73,7 @@ query(faultType: FaultType, callback: AsyncCallback<Array<FaultLogInfo>>) : void
 
 错误码：
 
-以下错误码的详细介绍参见[faultLogger错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-faultlogger)。
+以下错误码的详细介绍参见[Faultlogger 错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-faultlogger)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -135,7 +135,7 @@ query(faultType: FaultType) : Promise<Array<FaultLogInfo>>
 
 错误码：
 
-以下错误码的详细介绍参见[faultLogger错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-faultlogger)。
+以下错误码的详细介绍参见[Faultlogger 错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-faultlogger)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |

@@ -2,8 +2,8 @@
 title: "Enums"
 upstream_id: "harmonyos-references/arkts-apis-webview-e"
 catalog: "harmonyos-references"
-content_hash: "543055b9383a"
-synced_at: "2026-07-09T17:25:37.514373"
+content_hash: "ae19703db0f1"
+synced_at: "2026-07-28T16:49:53.996258"
 ---
 
 # Enums
@@ -262,7 +262,7 @@ Scroll滚动类型，用于[setScrollable](https://developer.huawei.com/consumer
 | HAVE_NOTHING | 0 | 没有缓存。 |
 | HAVE_METADATA | 1 | 只缓存了媒体元数据。 |
 | HAVE_CURRENT_DATA | 2 | 只缓存到当前的播放进度。 |
-| HAVE_FUTURE_DATA | 3 | 缓存时长超过了当前的播放进度, 但是仍有可能导致卡顿。 |
+| HAVE_FUTURE_DATA | 3 | 缓存时长超过了当前的播放进度，但是仍有可能导致卡顿。 |
 | HAVE_ENOUGH_DATA | 4 | 缓存了足够的数据，保证播放流畅。 |
 
 #### MediaError12+
@@ -354,8 +354,9 @@ Web页面场景下，全局滚动条模式。
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| OVERLAY_LAYOUT_SCROLLBAR | 0 | 非常驻滚动条。 |
+| OVERLAY_LAYOUT_SCROLLBAR | 0 | 非常驻滚动条，可以拖拽。 |
 | FORCE_DISPLAY_SCROLLBAR | 1 | 常驻滚动条。 |
+| OVERLAY_VISUAL_SCROLLBAR | 2 | 非常驻滚动条，不可以拖拽。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### WebBlanklessErrorCode20+
 

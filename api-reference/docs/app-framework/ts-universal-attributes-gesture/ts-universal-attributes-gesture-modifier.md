@@ -1,27 +1,25 @@
 ---
-
 title: "动态手势设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-gesture-modifier"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T00:57:42.633809"
-content_hash: "f1db48187246"
+content_hash: "605a5999e304"
+synced_at: "2026-07-28T16:42:50.119128"
 ---
-
 
 # 动态手势设置
 
-动态设置组件绑定的手势，支持在属性设置时使用if/else语法。
+动态设置组件绑定的手势，支持在属性设置时使用if/else语法，适用于需要根据组件状态或用户操作切换单一手势或手势组绑定的场景，可提升手势配置的灵活性。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 从API version 12开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+- 从API version 12开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 - 本模块接口仅可在Stage模型下使用。
 
 #### gestureModifier
 
 gestureModifier(modifier: GestureModifier): T
 
-动态设置组件绑定的手势。
+动态设置组件绑定的手势，适用于需要根据组件状态或用户操作动态切换手势绑定的场景。若在当次手势操作过程中触发了组件上的手势动态切换，该切换效果在当次手势结束（所有手指抬起）后的下一次手势操作中生效。
 
 ![](./img/note_3.0-zh-cn.png) gestureModifier不支持自定义组件。
 
@@ -35,7 +33,7 @@ gestureModifier(modifier: GestureModifier): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| modifier | [GestureModifier](#gesturemodifier-1) | 是 | 动态设置当前组件的手势绑定，支持if/else语法。 modifier: 手势修改器，开发者需自定义class实现GestureModifier接口。 |
+| modifier | [GestureModifier](#gesturemodifier-1) | 是 | 动态设置当前组件的手势绑定，支持if/else语法。 本参数为手势修改器，开发者需自定义class实现GestureModifier接口。 |
 
 返回值：
 
@@ -45,15 +43,15 @@ gestureModifier(modifier: GestureModifier): T
 
 #### GestureModifier
 
-开发者需要自定义class实现GestureModifier接口。
+GestureModifier用于封装组件手势的动态设置逻辑。开发者需自定义class实现GestureModifier接口，并在applyGesture中根据需要设置或切换组件绑定的手势。
 
 #### [h2]applyGesture
 
 applyGesture(event: UIGestureEvent): void
 
-手势更新函数。
+手势应用函数，适用于需要根据组件状态或用户操作动态切换手势绑定的场景。
 
-开发者可根据需要自定义实现该方法，对组件设置需要绑定的手势，支持使用if/else语法进行动态设置。若在当次手势操作过程中触发了组件上的手势动态切换，该切换效果在当次手势结束（所有手指抬起）后的下一次手势操作中生效。
+开发者可根据需要自定义实现该方法，通过调用UIGestureEvent的[addGesture()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-uigestureevent#addgesture)方法对组件设置需要绑定的手势，支持使用if/else语法进行动态设置。若在当次手势操作过程中触发了组件上的手势动态切换，该切换效果在当次手势结束（所有手指抬起）后的下一次手势操作中生效。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -63,7 +61,7 @@ applyGesture(event: UIGestureEvent): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| event | [UIGestureEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-uigestureevent#uigestureevent) | 是 | UIGestureEvent对象，用于设置组件需要绑定的手势。 |
+| event | [UIGestureEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-uigestureevent#uigestureevent) | 是 | 手势事件对象，用于设置组件需要绑定的手势。 |
 
 #### 示例
 
@@ -77,6 +75,7 @@ class MyButtonModifier implements GestureModifier {
   supportDoubleTap: boolean = true;
 
   applyGesture(event: UIGestureEvent): void {
+    // 根据supportDoubleTap状态绑定双击手势或拖动手势
     if (this.supportDoubleTap) {
       event.addGesture(
         new TapGestureHandler({
@@ -85,12 +84,12 @@ class MyButtonModifier implements GestureModifier {
           // 从API version 23开始，新增distanceThreshold属性
           distanceThreshold: 100
         })
-          .tag("aaa")
+          .tag('doubleTapGesture')
           .onAction((event: GestureEvent) => {
             console.info('Gesture Info is', JSON.stringify(event));
             console.info('button tap');
           })
-      )
+      );
     } else {
       event.addGesture(
         new PanGestureHandler()
@@ -127,7 +126,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230252.png)
+ ![](./img/zh-cn_image_0000002656008362.png)
 
 #### [h2]示例2（动态绑定手势组）
 
@@ -155,7 +154,7 @@ class MyButtonModifier implements GestureModifier {
           console.info('event info is', JSON.stringify(event));
           console.info('ExclusiveGroupGesture PanGesture onActionEnd is called');
         })]
-      }))
+      }));
     } else {
       // 绑定并行手势组
       event.addGesture(new GestureGroupHandler({
@@ -173,7 +172,7 @@ class MyButtonModifier implements GestureModifier {
           console.info('event info is', JSON.stringify(event));
           console.info('ParallelGroupGesture PanGesture onActionEnd is called');
         })]
-      }))
+      }));
     }
   }
 }
@@ -204,4 +203,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070342.png)
+ ![](./img/zh-cn_image_0000002655848442.png)

@@ -2,13 +2,13 @@
 title: "NotificationActionButton"
 upstream_id: "harmonyos-references/js-apis-inner-notification-notificationactionbutton"
 catalog: "harmonyos-references"
-content_hash: "7b32195a4119"
-synced_at: "2026-07-09T01:01:28.098789"
+content_hash: "72172f25be0d"
+synced_at: "2026-07-28T16:52:47.262410"
 ---
 
 # NotificationActionButton
 
-描述通知中显示的操作按钮。
+NotificationActionButton模块定义了通知中显示的操作按钮，用于在[NotificationRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-notification-notificationrequest#notificationrequest-1)中添加交互式操作按钮，让用户通过点击按钮触发WantAgent动作。当开发者需要在通知中提供交互式操作按钮（如"回复"、"标记已读"等）时使用此模块。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -18,7 +18,7 @@ synced_at: "2026-07-09T01:01:28.098789"
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| title | string | 否 | 否 | 按钮标题。字符串长度不超过200字节，超出部分会被截断；也不可为空字符串。 |
-| wantAgent | [WantAgent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-wantagent) | 否 | 否 | 点击按钮时触发的WantAgent。 |
-| extras | { [key: string]: any } | 否 | 是 | 按钮扩展信息。预留能力，暂未支持。 |
+| title | string | 否 | 否 | 按钮标题，显示在通知的操作按钮上。字符串长度不超过202字节，超出部分会被截断。不可为空字符串。 |
+| wantAgent | [WantAgent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-wantagent) | 否 | 否 | 点击按钮时触发的WantAgent，封装了应用的行为意图。用户点击按钮后，系统将按WantAgent指定的方式执行动作（如跳转至指定UIAbility或发送公共事件）。 |
+| extras | { [key: string]: any } | 否 | 是 | 按钮扩展信息。默认为空。用于存储按钮的自定义扩展数据，应用可按需添加任意键值对信息，如按钮的特定标识、附加数据等。 |
 | userInput8+ | [NotificationUserInput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-notification-notificationuserinput) | 否 | 是 | 用户输入对象实例，默认为空。表示用户输入时的标识。 |

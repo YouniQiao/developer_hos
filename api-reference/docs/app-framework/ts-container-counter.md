@@ -2,13 +2,13 @@
 title: "Counter"
 upstream_id: "harmonyos-references/ts-container-counter"
 catalog: "harmonyos-references"
-content_hash: "0df68bf9d982"
-synced_at: "2026-07-09T00:58:00.935416"
+content_hash: "c884049d0aa9"
+synced_at: "2026-07-28T16:46:08.412122"
 ---
 
 # Counter
 
-计数器组件，提供相应的增加或者减少的计数操作。
+计数器组件，提供增加或减少的计数操作。适用于商品数量选择、参数调整等需要频繁修改数值的场景，帮助用户快速直观地调整数值。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -89,7 +89,7 @@ onInc(event: VoidCallback)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| event | [VoidCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#voidcallback12) | 是 | Counter数值增加的回调函数。 |
+| event | [VoidCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#voidcallback12) | 是 | Counter 数值增加的回调函数。 |
 
 #### [h2]onDec
 
@@ -107,40 +107,40 @@ onDec(event: VoidCallback)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| event | [VoidCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#voidcallback12) | 是 | Counter数值减少的回调函数。 |
+| event | [VoidCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#voidcallback12) | 是 | Counter 数值减少的回调函数。 |
 
 #### 示例
 
-该示例展示了Counter组件的基本使用方法。点击+、-按钮可以修改value值。
+该示例展示了Counter组件的基本使用方法。点击+、-按钮可以修改计数器的数值。
 
 ```
 // xxx.ets
 @Entry
 @Component
 struct CounterExample {
-  @State value1: number = 0;
-  @State value2: number = 0;
+  @State counterValue1: number = 0;
+  @State counterValue2: number = 0;
 
   build() {
     Column({ space: 50 }) {
       Counter() {
-        Text(this.value1.toString())
+        Text(this.counterValue1.toString())
       }
       .onInc(() => {
-        this.value1++;
+        this.counterValue1++;
       })
       .onDec(() => {
-        this.value1--;
+        this.counterValue1--;
       })
 
       Counter() {
-        Text(this.value2.toString())
+        Text(this.counterValue2.toString())
       }
       .onInc(() => {
-        this.value2++;
+        this.counterValue2++;
       })
       .onDec(() => {
-        this.value2--;
+        this.counterValue2--;
       })
       .enableInc(true)
       .enableDec(false)
@@ -151,4 +151,4 @@ struct CounterExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732713.gif)
+ ![](./img/zh-cn_image_0000002685928403.gif)

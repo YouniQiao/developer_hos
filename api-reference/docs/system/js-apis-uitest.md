@@ -2,8 +2,8 @@
 title: "@ohos.UiTest"
 upstream_id: "harmonyos-references/js-apis-uitest"
 catalog: "harmonyos-references"
-content_hash: "62e9d5c196f8"
-synced_at: "2026-07-09T17:27:02.197910"
+content_hash: "e674db557997"
+synced_at: "2026-07-28T16:51:25.881655"
 ---
 
 # @ohos.UiTest
@@ -671,7 +671,7 @@ scrollable(b?: boolean): On
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| b | boolean | 否 | 控件可滑动状态。true：可滑动。false：不可滑动。默认为true。可以借助[DevEco Testing](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deveco-testing)中UiViewer获取控件节点属性。 |
+| b | boolean | 否 | 指定控件可滑动状态。true：可滑动。false：不可滑动。默认为true。可以借助[DevEco Testing](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deveco-testing)中UiViewer获取控件节点属性。 |
 
 返回值：
 
@@ -749,7 +749,7 @@ focused(b?: boolean): On
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| b | boolean | 否 | 控件获焦状态。true：获焦。false：未获焦。默认为true。可以借助[DevEco Testing](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deveco-testing)中UiViewer获取控件节点属性。 |
+| b | boolean | 否 | 指定控件获焦状态。true：获焦。false：未获焦。默认为true。可以借助[DevEco Testing](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deveco-testing)中UiViewer获取控件节点属性。 |
 
 返回值：
 
@@ -931,9 +931,9 @@ import { On, ON } from '@kit.TestKit';
 let on: On = ON.type('Button').isBefore(ON.text('123')); // 查找text为123之前的第一个Button组件
 ```
 
-#### [h2]isBefore
+#### [h2]beforeComponent
 
-isBefore(com: Component): On
+beforeComponent(com: Component): On
 
 指定目标控件位于给出的特征控件之前，返回On对象自身。
 
@@ -972,7 +972,7 @@ import { Component, Driver, On, ON } from '@kit.TestKit';
 async function demo() {
   let driver: Driver = Driver.create();
   let component: Component = await driver.findComponent(ON.type('Text'));
-  let on: On = ON.text('123').isBefore(component); // 查找第一个Text组件之前的text为123的组件
+  let on: On = ON.text('123').beforeComponent(component); // 查找第一个Text组件之前的text为123的组件
 }
 ```
 
@@ -1016,9 +1016,9 @@ import { On, ON } from '@kit.TestKit';
 let on: On = ON.type('Text').isAfter(ON.text('123')); // 查找 text为123之后的第一个Text组件
 ```
 
-#### [h2]isAfter
+#### [h2]afterComponent
 
-isAfter(com: Component): On
+afterComponent(com: Component): On
 
 指定目标控件位于给出的特征控件之后，返回On对象自身。
 
@@ -1057,7 +1057,7 @@ import { Component, Driver, On, ON } from '@kit.TestKit';
 async function demo() {
   let driver: Driver = Driver.create();
   let component: Component = await driver.findComponent(ON.type('Text'));
-  let on: On = ON.text('123').isAfter(component); // 查找第一个Text组件之后的text为123的组件
+  let on: On = ON.text('123').afterComponent(component); // 查找第一个Text组件之后的text为123的组件
 }
 ```
 
@@ -1101,9 +1101,9 @@ import { On, ON } from '@kit.TestKit';
 let on: On = ON.text('java').within(ON.type('Scroll')); // 查找Scroller里面的text为java的子组件
 ```
 
-#### [h2]within
+#### [h2]withinComponent
 
-within(com: Component): On
+withinComponent(com: Component): On
 
 指定目标控件位于给出的特征控件之内，返回On对象自身。
 
@@ -1142,7 +1142,7 @@ import { Component, Driver, On, ON } from '@kit.TestKit';
 async function demo() {
   let driver: Driver = Driver.create();
   let component: Component = await driver.findComponent(ON.type('Text'));
-  let on: On = ON.text('123').within(component); // 查找第一个Text组件内部的text为123的组件
+  let on: On = ON.text('123').withinComponent(component); // 查找第一个Text组件内部的text为123的组件
 }
 ```
 
@@ -1246,7 +1246,7 @@ hint(val: string, pattern?: MatchPattern): On
 
 | 类型 | 说明 |
 | --- | --- |
-| [On](#on9) | 返回指定提示文本控件的On对象。 |
+| [On](#on9) | 返回指定目标控件hint属性的On对象。 |
 
 错误码：
 
@@ -1698,7 +1698,7 @@ async function demo() {
   if (await button.isClickable()) {
     console.info('This button can be clicked');
   } else {
-    console.info('This button can not be clicked');
+    console.info('This button cannot be clicked');
   }
 }
 ```
@@ -1801,7 +1801,7 @@ isCheckable(): Promise<boolean>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，返回控件对象能否可被勾选属性。true：可被勾选。false：不可被勾选。 |
+| Promise | Promise对象，返回控件对象能否被勾选属性。true：可被勾选。false：不可被勾选。 |
 
 错误码：
 
@@ -1866,7 +1866,7 @@ async function demo() {
   if (await scrollBar.isScrollable()) {
     console.info('This scrollBar can be operated');
   } else {
-    console.info('This scrollBar can not be operated');
+    console.info('This scrollBar cannot be operated');
   }
 }
 ```
@@ -1908,7 +1908,7 @@ async function demo() {
   if (await button.isEnabled()) {
     console.info('This button can be operated');
   } else {
-    console.info('This button can not be operated');
+    console.info('This button cannot be operated');
   }
 }
 ```
@@ -2012,10 +2012,12 @@ inputText(text: string): Promise<void>
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | text | string | 是 | 输入的文本信息，当前支持英文、中文和特殊字符。 |
-| **返回值：** | | | |
-| 类型 | 说明 | | |
-| ---------------- | ----------------- | | |
-| Promise | Promise对象，无返回结果。 | | |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，无返回结果。 |
 
 错误码：
 
@@ -3052,7 +3054,7 @@ triggerKey(keyCode: number, displayId: number): Promise<void>
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | keyCode | number | 是 | 指定的键码值，取值范围：[KeyCode键码值](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-keycode#keycode)。 |
-| displayId | number | 是 | 指定的屏幕ID，取值范围：大于等于0的整数。 **说明：** 传入displayId不存在时，将抛出17000007异常。 |
+| displayId | number | 是 | 指定的屏幕ID，取值范围：大于等于0的整数。 **说明：** 传入displayId不存在时，将抛出401错误码。 |
 
 返回值：
 
@@ -3145,7 +3147,7 @@ triggerCombineKeys(key0: number, key1: number, key2?: number, displayId?: number
 | key0 | number | 是 | 指定的第一个键码值，取值范围：[KeyCode键码值](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-keycode#keycode)。 |
 | key1 | number | 是 | 指定的第二个键码值，取值范围：[KeyCode键码值](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-keycode#keycode)。 |
 | key2 | number | 否 | 指定的第三个键码值，取值范围：[KeyCode键码值](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-keycode#keycode)，默认值为0。 |
-| displayId | number | 否 | 指定的屏幕ID，取值范围：大于等于0的整数，默认值为设备默认屏幕ID。传入displayId不存在时，将抛出401异常。 |
+| displayId | number | 否 | 指定的屏幕ID，取值范围：大于等于0的整数，默认值为设备默认屏幕ID。传入displayId不存在时，将抛出401错误码。 |
 
 返回值：
 
@@ -3263,9 +3265,9 @@ async function demo() {
 }
 ```
 
-#### [h2]clickAt
+#### [h2]clickAtWithOptions
 
-clickAt(point: Point, options?: TouchOptions): Promise<void>
+clickAtWithOptions(point: Point, options?: TouchOptions): Promise<void>
 
 在目标坐标点进行单击，支持指定触摸选项。使用Promise异步回调。
 
@@ -3309,7 +3311,7 @@ async function demo() {
     pressure: 0.5
   };
   // 在目标坐标点进行单击，并指定触摸压力
-  await driver.clickAt({ x: 100, y: 100, displayId: 0 }, options);
+  await driver.clickAtWithOptions({ x: 100, y: 100, displayId: 0 }, options);
 }
 ```
 
@@ -3488,9 +3490,9 @@ async function demo() {
 }
 ```
 
-#### [h2]longClickAt
+#### [h2]longClickAtWithOptions
 
-longClickAt(point: Point, options?: TouchOptions): Promise<void>
+longClickAtWithOptions(point: Point, options?: TouchOptions): Promise<void>
 
 长按目标坐标点，支持指定触摸选项。使用Promise异步回调。
 
@@ -3535,7 +3537,7 @@ async function demo() {
     pressure: 0.8  // 触摸压力值
   };
   // 在目标坐标点进行长按，并指定长按时长和触摸压力
-  await driver.longClickAt({ x: 100, y: 100, displayId: 0 }, options);
+  await driver.longClickAtWithOptions({ x: 100, y: 100, displayId: 0 }, options);
 }
 ```
 
@@ -3553,10 +3555,10 @@ swipe(startx: number, starty: number, endx: number, endy: number, speed?: number
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| startx | number | 是 | 起始点的横坐标信息，取值范围：大于等于0的整数。传入不在范围内的值抛出401错误码。 |
-| starty | number | 是 | 起始点的纵坐标信息，取值范围：大于等于0的整数。传入不在范围内的值抛出401错误码。 |
-| endx | number | 是 | 目的点的横坐标信息，取值范围：大于等于0的整数。传入不在范围内的值抛出401错误码。 |
-| endy | number | 是 | 目的点的纵坐标信息，取值范围：大于等于0的整数。传入不在范围内的值抛出401错误码。 |
+| startx | number | 是 | 起始点的横坐标信息，取值范围：大于等于0的整数，单位：px。传入不在范围内的值抛出401错误码。 |
+| starty | number | 是 | 起始点的纵坐标信息，取值范围：大于等于0的整数，单位：px。传入不在范围内的值抛出401错误码。 |
+| endx | number | 是 | 目的点的横坐标信息，取值范围：大于等于0的整数，单位：px。传入不在范围内的值抛出401错误码。 |
+| endy | number | 是 | 目的点的纵坐标信息，取值范围：大于等于0的整数，单位：px。传入不在范围内的值抛出401错误码。 |
 | speed | number | 否 | 滑动速率，取值范围为200-40000的整数，默认值为600，单位：px/s。为不在范围内的非负数或为null/undefined时设为默认值600。为负数时抛出401错误码。 |
 
 返回值：
@@ -3633,9 +3635,9 @@ async function demo() {
 }
 ```
 
-#### [h2]swipeBetween
+#### [h2]swipeBetweenWithOptions
 
-swipeBetween(from: Point, to: Point, options?: TouchOptions): Promise<void>
+swipeBetweenWithOptions(from: Point, to: Point, options?: TouchOptions): Promise<void>
 
 从起始坐标点滑向目标坐标点，支持指定触摸选项。使用Promise异步回调。
 
@@ -3681,7 +3683,7 @@ async function demo() {
     pressure: 0.5  // 触摸压力值
   };
   // 从起始坐标点滑向目标坐标点，并指定滑动速率和触摸压力
-  await driver.swipeBetween({ x: 100, y: 100, displayId: 0 }, { x: 1000, y: 1000, displayId: 0 }, options);
+  await driver.swipeBetweenWithOptions({ x: 100, y: 100, displayId: 0 }, { x: 1000, y: 1000, displayId: 0 }, options);
 }
 ```
 
@@ -3720,6 +3722,7 @@ drag(startx: number, starty: number, endx: number, endy: number, speed?: number)
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 17000002 | The API does not support concurrent calls. |
+| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 
 示例：
 
@@ -3781,9 +3784,9 @@ async function demo() {
 }
 ```
 
-#### [h2]dragBetween
+#### [h2]dragBetweenWithOptions
 
-dragBetween(from: Point, to: Point, options?: TouchOptions): Promise<void>
+dragBetweenWithOptions(from: Point, to: Point, options?: TouchOptions): Promise<void>
 
 从起始坐标点拖拽至目标坐标点，支持指定触摸选项。使用Promise异步回调。
 
@@ -3832,7 +3835,7 @@ async function demo() {
     pressure: 0.5   // 触摸压力值
   };
   // 从起始坐标点拖拽至目标坐标点，并指定拖拽速率、长按时长和触摸压力
-  await driver.dragBetween({ x: 100, y: 100, displayId: 0 }, { x: 1000, y: 1000, displayId: 0 }, options);
+  await driver.dragBetweenWithOptions({ x: 100, y: 100, displayId: 0 }, { x: 1000, y: 1000, displayId: 0 }, options);
 }
 ```
 
@@ -3856,7 +3859,7 @@ screenCap(savePath: string): Promise<boolean>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，返回截图操作是否成功完成。true：完成，false：未完成。 |
+| Promise | Promise对象，返回截图操作是否成功完成。true：成功完成，false：未成功完成。 |
 
 错误码：
 
@@ -3894,13 +3897,13 @@ screenCap(savePath: string, displayId: number): Promise<boolean>
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | savePath | string | 是 | 文件保存路径。路径需为当前应用的[沙箱路径](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)。 |
-| displayId | number | 是 | 指定设备屏幕ID，取值范围：大于等于0的整数。 **说明：** 传入displayId不存在时，将抛出17000007异常。 |
+| displayId | number | 是 | 指定设备屏幕ID，取值范围：大于等于0的整数。 **说明：** 传入displayId不存在时，将抛出401错误码。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，返回截图操作是否成功完成。true：完成。false：未完成。 |
+| Promise | Promise对象，返回截图操作是否成功完成。true：成功完成。false：未成功完成。 |
 
 错误码：
 
@@ -3946,7 +3949,7 @@ dumpLayout(savePath: string, displayId?: number): Promise<boolean>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，返回布局信息导出和文件存储是否成功完成。true：完成。false：未完成。 |
+| Promise | Promise对象，返回布局信息导出和文件存储是否成功完成。true：成功完成。false：未成功完成。 |
 
 错误码：
 
@@ -3974,7 +3977,7 @@ async function demo() {
 
 setDisplayRotation(rotation: DisplayRotation): Promise<void>
 
-将当前场景的显示方向设置为指定的显示方向。使用Promise异步回调。适用于可旋转的应用场景。
+将当前场景的显示方向设置为指定的显示方向。使用Promise异步回调。适用于可旋转的应用场景，应用可以在[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中配置"orientation" = "auto_rotation" 使能旋转功能。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -4482,7 +4485,7 @@ fling(from: Point, to: Point, stepLen: number, speed: number): Promise<void>
 | --- | --- | --- | --- |
 | from | [Point](#point9) | 是 | 手指接触屏幕的起始点坐标。 |
 | to | [Point](#point9) | 是 | 手指离开屏幕时的坐标点。 |
-| stepLen | number | 是 | 间隔距离，取值大于等于0的整数，单位：px。为负数时抛出401错误码。 |
+| stepLen | number | 是 | 滑动间隔距离，取值大于等于0的整数，单位：px。为负数时抛出401错误码。 |
 | speed | number | 是 | 滑动速率，取值范围为200-40000的整数，默认值为600，单位：px/s。为不在范围内的非负数或为null/undefined时设为默认值600。为负数时抛出401错误码。 |
 
 返回值：
@@ -4533,7 +4536,7 @@ injectMultiPointerAction(pointers: PointerMatrix, speed?: number): Promise<boole
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，返回操作是否成功完成。true：完成，false：未完成。 |
+| Promise | Promise对象，返回操作是否成功完成。true：成功完成，false：未成功完成。 |
 
 错误码：
 
@@ -4632,7 +4635,7 @@ fling(direction: UiDirection, speed: number, displayId: number): Promise<void>
 | --- | --- | --- | --- |
 | direction | [UiDirection](#uidirection10) | 是 | 进行抛滑的方向。 |
 | speed | number | 是 | 滑动速率，取值范围为200-40000的整数，默认值为600，单位：px/s。为不在范围内的非负数或为null/undefined时设为默认值600。为负数时抛出401错误码。 |
-| displayId | number | 是 | 指定设备屏幕ID，取值范围：大于等于0的整数。 **说明：** 传入displayId不存在时，将抛出17000007异常。 |
+| displayId | number | 是 | 指定设备屏幕ID，取值范围：大于等于0的整数。 **说明：** 传入displayId不存在时，将抛出401错误码。 |
 
 返回值：
 
@@ -4772,7 +4775,7 @@ mouseScroll(p: Point, down: boolean, d: number, key1?: number, key2?: number): P
 | --- | --- | --- | --- |
 | p | [Point](#point9) | 是 | 鼠标滚轮操作的目标坐标。 |
 | down | boolean | 是 | 滚轮滑动方向是否向下。true表示向下滚动。false表示向上滚动。 |
-| d | number | 是 | 鼠标滚轮滚动的格数，取值大于等于0的整数，每格对应目标点位移120px。为负数时抛出401错误码。 |
+| d | number | 是 | 鼠标滚轮滚动的格数，取值大于等于0的整数，每格对应在鼠标光标位置滚动120px。为负数时抛出401错误码。 |
 | key1 | number | 否 | 指定的第一个键码值，取值范围：[KeyCode键码值](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-keycode#keycode)，默认值为0。 |
 | key2 | number | 否 | 指定的第二个键码值，取值范围：[KeyCode键码值](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-keycode#keycode)，默认值为0。 |
 
@@ -4898,7 +4901,7 @@ mouseScroll(p: Point, down: boolean, d: number, key1?: number, key2?: number, sp
 | --- | --- | --- | --- |
 | p | [Point](#point9) | 是 | 鼠标滚轮操作的目标坐标。 |
 | down | boolean | 是 | 滚轮滑动方向是否向下。true表示向下滚动。false表示向上滚动。 |
-| d | number | 是 | 鼠标滚轮滚动的格数，取值大于等于0的整数，每格对应目标点位移120px。为负数时抛出401错误码。 |
+| d | number | 是 | 鼠标滚轮滚动的格数，取值大于等于0的整数，每格对应在鼠标光标位置滚动120px。为负数时抛出401错误码。 |
 | key1 | number | 否 | 指定的第一个键码值，取值范围：[KeyCode键码值](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-keycode#keycode)，默认值为0。 |
 | key2 | number | 否 | 指定的第二个键码值，取值范围：[KeyCode键码值](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-keycode#keycode)，默认值为0。 |
 | speed | number | 否 | 鼠标滚轮滚动的速度，范围：1-500的整数，单位：格/秒。为不在范围内的非负数或为null/undefined时设为默认值20。为负数时抛出401错误码。 |
@@ -5211,9 +5214,9 @@ async function demo() {
 }
 ```
 
-#### [h2]mouseDrag
+#### [h2]mouseDragWithOptions
 
-mouseDrag(from: Point, to: Point, touchOptions?: TouchOptions, keyOptions?: KeyOptions): Promise<void>
+mouseDragWithOptions(from: Point, to: Point, touchOptions?: TouchOptions, keyOptions?: KeyOptions): Promise<void>
 
 按住鼠标左键从起始坐标点拖拽至终点坐标点，支持指定触摸选项和按键选项。使用Promise异步回调。该接口支持鼠标跨屏拖拽操作。
 
@@ -5266,7 +5269,7 @@ async function demo() {
     key2: 2019   // C键
   };
   // 鼠标拖拽并同时按下Ctrl+C组合键
-  await driver.mouseDrag({ x: 100, y: 100 }, { x: 200, y: 200 }, touchOptions, keyOptions);
+  await driver.mouseDragWithOptions({ x: 100, y: 100 }, { x: 200, y: 200 }, touchOptions, keyOptions);
 }
 ```
 
@@ -5442,7 +5445,7 @@ touchPadTwoFingersScroll(point: Point, direction: UiDirection, d: number, speed?
 | --- | --- | --- | --- |
 | point | [Point](#point9) | 是 | 触摸板双指滚动时鼠标光标的位置。 |
 | direction | [UiDirection](#uidirection10) | 是 | 触摸板双指滚动的方向。 |
-| d | number | 是 | 触摸板双指滚动的格数，取值为大于等于0的整数，每格对应目标点位移120px。为负数时抛出17000007错误码。 |
+| d | number | 是 | 触摸板双指滚动的格数，取值为大于等于0的整数，每格对应在鼠标光标位置滚动120px。为负数时抛出17000007错误码。 |
 | speed | number | 否 | 触摸板双指滚动的速度，范围：1-500的整数，单位：格/秒。为不在范围内的非负数或为null/undefined时设为默认值20。为负数时抛出17000007错误码。 |
 
 返回值：
@@ -6904,7 +6907,7 @@ async function demo() {
 
 once(type: 'windowChange', windowChangeType: WindowChangeType, options: WindowChangeOptions, callback: Callback<UIElementInfo>): void
 
-开始监听指定类型的窗口变化事件，支持设置事件监听的扩展配置，监听到指定窗口变化事件时触发callback回调。仅支持[自由多窗模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#free-multi-window-mode自由多窗模式)的窗口监听。
+开始监听指定类型的窗口变化事件，支持设置事件监听的扩展配置，监听到指定窗口变化事件时触发callback回调。仅支持[自由多窗模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#free-windows自由多窗模式)的窗口监听。
 
 元服务API： 从API version 22开始，该接口支持在元服务中使用。
 
@@ -7061,7 +7064,7 @@ text(txt: string, pattern?: MatchPattern): By
 // xxx.test.ets
 import { BY, By } from '@kit.TestKit';
 
-let by: By = BY.text('123'); // 使用静态构造器BY创建by对象，指定目标控件的text属性。
+let by: By = BY.text('123'); // 使用静态构造器BY创建By对象，指定目标控件的text属性。
 ```
 
 #### [h2]key(deprecated)
@@ -7092,7 +7095,7 @@ key(key: string): By
 // xxx.test.ets
 import { By, BY } from '@kit.TestKit';
 
-let by: By = BY.key('123'); // 使用静态构造器BY创建by对象，指定目标控件的key值属性。
+let by: By = BY.key('123'); // 使用静态构造器BY创建By对象，指定目标控件的key值属性。
 ```
 
 #### [h2]id(deprecated)
@@ -7123,7 +7126,7 @@ id(id: number): By
 // xxx.test.ets
 import { By, BY } from '@kit.TestKit';
 
-let by: By = BY.id(123); // 使用静态构造器BY创建by对象，指定目标控件的id属性。
+let by: By = BY.id(123); // 使用静态构造器BY创建By对象，指定目标控件的id属性。
 ```
 
 #### [h2]type(deprecated)
@@ -7154,7 +7157,7 @@ type(tp: string): By
 // xxx.test.ets
 import { By, BY } from '@kit.TestKit';
 
-let by: By = BY.type('Button'); // 使用静态构造器BY创建by对象，指定目标控件的控件类型属性。
+let by: By = BY.type('Button'); // 使用静态构造器BY创建By对象，指定目标控件的控件类型属性。
 ```
 
 #### [h2]clickable(deprecated)
@@ -7185,7 +7188,7 @@ clickable(b?: boolean): By
 // xxx.test.ets
 import { By, BY } from '@kit.TestKit';
 
-let by: By = BY.clickable(true); // 使用静态构造器BY创建by对象，指定目标控件的可点击状态属性。
+let by: By = BY.clickable(true); // 使用静态构造器BY创建By对象，指定目标控件的可点击状态属性。
 ```
 
 #### [h2]scrollable(deprecated)
@@ -7216,7 +7219,7 @@ scrollable(b?: boolean): By
 // xxx.test.ets
 import { By, BY } from '@kit.TestKit';
 
-let by: By = BY.scrollable(true); // 使用静态构造器BY创建by对象，指定目标控件的可滑动状态属性。
+let by: By = BY.scrollable(true); // 使用静态构造器BY创建By对象，指定目标控件的可滑动状态属性。
 ```
 
 #### [h2]enabled(deprecated)
@@ -7247,7 +7250,7 @@ enabled(b?: boolean): By
 // xxx.test.ets
 import { By, BY } from '@kit.TestKit';
 
-let by: By = BY.enabled(true); // 使用静态构造器BY创建by对象，指定目标控件的使能状态属性。
+let by: By = BY.enabled(true); // 使用静态构造器BY创建By对象，指定目标控件的使能状态属性。
 ```
 
 #### [h2]focused(deprecated)
@@ -7278,7 +7281,7 @@ focused(b?: boolean): By
 // xxx.test.ets
 import { By, BY } from '@kit.TestKit';
 
-let by: By = BY.focused(true); // 使用静态构造器BY创建by对象，指定目标控件的获焦状态属性。
+let by: By = BY.focused(true); // 使用静态构造器BY创建By对象，指定目标控件的获焦状态属性。
 ```
 
 #### [h2]selected(deprecated)
@@ -7309,7 +7312,7 @@ selected(b?: boolean): By
 // xxx.test.ets
 import { By, BY } from '@kit.TestKit';
 
-let by: By = BY.selected(true); // 使用静态构造器BY创建by对象，指定目标控件的被选中状态属性。
+let by: By = BY.selected(true); // 使用静态构造器BY创建By对象，指定目标控件的被选中状态属性。
 ```
 
 #### [h2]isBefore(deprecated)
@@ -7340,7 +7343,7 @@ isBefore(by: By): By
 // xxx.test.ets
 import { By, BY } from '@kit.TestKit';
 
-// 使用静态构造器BY创建by对象，指定目标控件位于给出的特征属性控件之前。
+// 使用静态构造器BY创建By对象，指定目标控件位于给出的特征属性控件之前。
 let by: By = BY.type('Button').isBefore(BY.text('123')); // 查找text为123之前的第一个Button组件
 ```
 
@@ -7372,7 +7375,7 @@ isAfter(by: By): By
 // xxx.test.ets
 import { By, BY } from '@kit.TestKit';
 
-// 使用静态构造器BY创建by对象，指定目标控件位于给出的特征属性控件之后。
+// 使用静态构造器BY创建By对象，指定目标控件位于给出的特征属性控件之后。
 let by: By = BY.type('Text').isAfter(BY.text('123')); // 查找 text为123之后的第一个Text组件
 ```
 
@@ -7615,7 +7618,7 @@ async function demo() {
   if (await button.isClickable()) {
     console.info('This button can be Clicked');
   } else {
-    console.info('This button can not be Clicked');
+    console.info('This button cannot be Clicked');
   }
 }
 ```
@@ -7648,7 +7651,7 @@ async function demo() {
   if (await scrollBar.isScrollable()) {
     console.info('This scrollBar can be operated');
   } else {
-    console.info('This scrollBar can not be operated');
+    console.info('This scrollBar cannot be operated');
   }
 }
 ```
@@ -7681,7 +7684,7 @@ async function demo() {
   if (await button.isEnabled()) {
     console.info('This button can be operated');
   } else {
-    console.info('This button can not be operated');
+    console.info('This button cannot be operated');
   }
 }
 ```
@@ -7826,7 +7829,7 @@ async function demo() {
 
 #### UiDriver(deprecated)
 
-UiDriver类为uitest测试框架的总入口，提供控件匹配/查找，按键注入，坐标点击/滑动，截图等API。
+UiDriver类为UiTest测试框架的总入口，提供控件匹配/查找，按键注入，坐标点击/滑动，截图等API。
 
 该类提供的方法除UiDriver.create()以外的所有方法都使用Promise方式作为异步方法，需使用await方式调用。
 
@@ -8082,8 +8085,8 @@ UiDriver对象采取如下操作：在目标坐标点单击。使用Promise异�
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| x | number | 是 | 目标点的横坐标信息，取值范围：大于等于0的整数。 |
-| y | number | 是 | 目标点的纵坐标信息，取值范围：大于等于0的整数。 |
+| x | number | 是 | 目标点的横坐标信息，取值范围：大于等于0的整数，单位：px。 |
+| y | number | 是 | 目标点的纵坐标信息，取值范围：大于等于0的整数，单位：px。 |
 
 返回值：
 
@@ -8117,8 +8120,8 @@ UiDriver对象采取如下操作：在目标坐标点双击。使用Promise异�
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| x | number | 是 | 目标点的横坐标信息，取值范围：大于等于0的整数。 |
-| y | number | 是 | 目标点的纵坐标信息，取值范围：大于等于0的整数。 |
+| x | number | 是 | 目标点的横坐标信息，取值范围：大于等于0的整数，单位：px。 |
+| y | number | 是 | 目标点的纵坐标信息，取值范围：大于等于0的整数，单位：px。 |
 
 返回值：
 
@@ -8152,8 +8155,8 @@ UiDriver对象采取如下操作：在目标坐标点长按。使用Promise异�
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| x | number | 是 | 目标点的横坐标信息，取值范围：大于等于0的整数。 |
-| y | number | 是 | 目标点的纵坐标信息，取值范围：大于等于0的整数。 |
+| x | number | 是 | 目标点的横坐标信息，取值范围：大于等于0的整数，单位：px。 |
+| y | number | 是 | 目标点的纵坐标信息，取值范围：大于等于0的整数，单位：px。 |
 
 返回值：
 
@@ -8187,10 +8190,10 @@ UiDriver对象采取如下操作：从给出的起始坐标点滑向给出的目
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| startx | number | 是 | 起始点的横坐标信息，取值范围：大于等于0的整数。 |
-| starty | number | 是 | 起始点的纵坐标信息，取值范围：大于等于0的整数。 |
-| endx | number | 是 | 目的点的横坐标信息，取值范围：大于等于0的整数。 |
-| endy | number | 是 | 目的点的纵坐标信息，取值范围：大于等于0的整数。 |
+| startx | number | 是 | 起始点的横坐标信息，取值范围：大于等于0的整数，单位：px。 |
+| starty | number | 是 | 起始点的纵坐标信息，取值范围：大于等于0的整数，单位：px。 |
+| endx | number | 是 | 目的点的横坐标信息，取值范围：大于等于0的整数，单位：px。 |
+| endy | number | 是 | 目的点的纵坐标信息，取值范围：大于等于0的整数，单位：px。 |
 
 返回值：
 

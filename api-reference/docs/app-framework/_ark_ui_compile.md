@@ -2,8 +2,8 @@
 title: "编译错误码"
 upstream_id: "harmonyos-references/_ark_ui_compile"
 catalog: "harmonyos-references"
-content_hash: "387008b4d788"
-synced_at: "2026-07-09T00:58:50.605642"
+content_hash: "6a5b972999f2"
+synced_at: "2026-07-28T16:49:51.401474"
 ---
 
 # 编译错误码
@@ -36,7 +36,7 @@ synced_at: "2026-07-09T00:58:50.605642"
 
 错误描述
 
-@BuilderParam装饰的变量只能被@Builder装饰的函数初始化。
+@BuilderParam装饰的变量只能被@Builder或@LocalBuilder装饰的函数初始化。
 
 可能原因
 
@@ -1206,7 +1206,7 @@ A class can not be decorated by '@Observed' and '@ObservedV2' at the same time.
 
 错误描述
 
-一个类不能同时被'@Observed'和'@ObservedV2'修饰。
+一个类不能同时被'@Observed'和'@ObservedV2'装饰。
 
 可能原因
 
@@ -1228,7 +1228,7 @@ The 'xxx' can decorate only member variables in a 'class'.
 
 可能原因
 
-开发者使用@Type等装饰器装饰了class中的变量导致报错。
+开发者使用@Type等装饰器装饰了class中的方法导致报错。
 
 处理步骤
 

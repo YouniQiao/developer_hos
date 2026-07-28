@@ -2,13 +2,13 @@
 title: "Radio"
 upstream_id: "harmonyos-references/ts-basic-components-radio"
 catalog: "harmonyos-references"
-content_hash: "cfdf5104fdda"
-synced_at: "2026-07-09T00:57:54.163643"
+content_hash: "5724e6a15824"
+synced_at: "2026-07-28T16:44:30.864509"
 ---
 
 # Radio
 
-单选框，提供相应的用户交互选择项。
+单选框，提供单选类型的用户交互选择项。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -47,9 +47,9 @@ Radio(options: RadioOptions)
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | value | string | 否 | 否 | 当前单选框的值。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| group | string | 否 | 否 | 当前单选框的所属群组名称，相同group的Radio只能有一个被选中。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| group | string | 否 | 否 | 当前单选框的所属群组名称，相同group的单选框只能有一个被选中。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | indicatorType12+ | [RadioIndicatorType](#radioindicatortype12枚举说明) | 否 | 是 | 配置单选框的选中样式。未设置时按照RadioIndicatorType.TICK进行显示。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| indicatorBuilder12+ | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 否 | 是 | 配置单选框的选中样式为自定义组件。自定义组件与Radio组件为中心点对齐显示。indicatorBuilder设置为undefined时，按照RadioIndicatorType.TICK进行显示。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| indicatorBuilder12+ | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 否 | 是 | 配置单选框的选中样式为自定义组件。自定义组件与Radio组件以中心点对齐显示。indicatorBuilder设置为undefined时，按照RadioIndicatorType.TICK进行显示。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### RadioIndicatorType12+枚举说明
 
@@ -231,11 +231,11 @@ type OnRadioChangeCallback = (isChecked: boolean) => void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| isChecked | boolean | 是 | 单选框的状态。 值为true时，表示从未选中变为选中。值为false时，表示从选中变为未选中。 |
+| isChecked | boolean | 是 | 单选框状态变化后的新选中状态。 值为true时，表示从未选中变为选中。值为false时，表示从选中变为未选中。 |
 
 #### RadioStyle10+对象说明
 
-单选框的颜色。
+单选框的样式。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -263,13 +263,13 @@ type OnRadioChangeCallback = (isChecked: boolean) => void
 | --- | --- | --- | --- | --- |
 | value | string | 否 | 否 | 当前单选框的值。 |
 | checked | boolean | 否 | 否 | 设置单选框的选中状态。 默认值：false 值为true时，单选框被选中。值为false时，单选框不被选中。 |
-| triggerChange | Callback | 否 | 否 | 触发单选框选中状态变化。 值为true时，表示从未选中变为选中。值为false时，表示从选中变为未选中。 |
+| triggerChange | Callback | 否 | 否 | 用于触发单选框选中状态变化的回调函数。 调用时传入true将单选框设置为选中状态，传入false设置为未选中状态。 |
 
 #### 示例
 
 #### [h2]示例1 （设置底板颜色）
 
-该示例通过配置checkedBackgroundColor实现自定义单选框的底板颜色。
+该示例通过配置checkedBackgroundColor以自定义单选框的底板颜色。
 
 ```
 // xxx.ets
@@ -318,11 +318,11 @@ struct RadioExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253396.gif)
+ ![](./img/zh-cn_image_0000002655848600.gif)
 
 #### [h2]示例2 （设置选中样式）
 
-该示例通过配置indicatorType、indicatorBuilder实现自定义选中样式。
+该示例通过配置indicatorType和indicatorBuilder以自定义选中样式。
 
 ```
 // xxx.ets
@@ -332,7 +332,7 @@ struct RadioExample {
   @Builder
   indicatorBuilder() {
     // $r('app.media.star')需要替换为开发者所需的图像资源文件。
-    Image($r("app.media.star"))
+    Image($r('app.media.star'))
   }
   build() {
     Flex({ direction: FlexDirection.Row, justifyContent: FlexAlign.Center, alignItems: ItemAlign.Center }) {
@@ -374,7 +374,7 @@ struct RadioExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612579.gif)
+ ![](./img/zh-cn_image_0000002686088027.gif)
 
 #### [h2]示例3（设置自定义样式）
 
@@ -407,9 +407,9 @@ function buildRadio(config: RadioConfiguration) {
       .backgroundColor('#2787D9')
       .onClick(() => {
         if (config.checked) {
-          config.triggerChange(false);
+          config.triggerChange(false); // 触发单选框选中状态变化，设置为未选中
         } else {
-          config.triggerChange(true);
+          config.triggerChange(true); // 触发单选框选中状态变化，设置为选中
         }
       })
   }
@@ -417,7 +417,7 @@ function buildRadio(config: RadioConfiguration) {
 
 @Entry
 @Component
-struct refreshExample {
+struct RadioExample {
   build() {
     Column({ space: 50 }) {
       Row() {
@@ -439,4 +439,4 @@ struct refreshExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413288.gif)
+ ![](./img/zh-cn_image_0000002685928199.gif)

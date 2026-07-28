@@ -2,8 +2,8 @@
 title: "Webview错误码"
 upstream_id: "harmonyos-references/errorcode-webview"
 catalog: "harmonyos-references"
-content_hash: "8f8c1053563f"
-synced_at: "2026-07-09T00:58:56.542846"
+content_hash: "7ee9c5e66977"
+synced_at: "2026-07-28T16:49:58.630688"
 ---
 
 # Webview错误码
@@ -26,7 +26,7 @@ WebviewController还没有和具体的Web组件关联。
 
 处理步骤
 
-请检查WebviewController对象是否已与Web组件关联，可以通过[onControllerAttached()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#oncontrollerattached10)接口进行检查。详情可以参考[Web组件调用WebviewController相关接口报17100001错误定位指南](https://developer.huawei.com/consumer/cn/doc/architecture-guides/educate-v1_1-ts_18-0000002334531357)。
+请检查WebviewController对象是否已与Web组件关联，可以通过[onControllerAttached()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#oncontrollerattached10)接口进行检查。详情可以参考[Web组件调用WebviewController相关接口报17100001错误](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-125)定位指南。
 
 #### 17100002 URL格式错误
 
@@ -366,6 +366,24 @@ The port number is not within the allowed range.
 处理步骤
 
 检查使用的端口号是否在允许的取值范围内。
+
+#### 17100024 AIPageCommand格式错误
+
+错误信息
+
+Command format error. The command parameter does not conform to the JSON format requirements.
+
+错误描述
+
+AIPageCommand参数格式错误。
+
+可能原因
+
+调用[WebviewController.executeAIPageCommand](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#executeaipagecommand)时，传入的command参数不是合法的JSON对象字符串，或命令字段不符合格式要求。
+
+处理步骤
+
+检查command参数是否为合法的JSON对象字符串，并确认JSON对象中包含字符串类型的method字段。
 
 #### 17100101 使用了错误的网络错误码
 

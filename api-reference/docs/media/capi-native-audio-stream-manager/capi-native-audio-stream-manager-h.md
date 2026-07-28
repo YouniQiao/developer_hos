@@ -2,8 +2,8 @@
 title: "native_audio_stream_manager.h"
 upstream_id: "harmonyos-references/capi-native-audio-stream-manager-h"
 catalog: "harmonyos-references"
-content_hash: "4320ff40ff07"
-synced_at: "2026-07-09T01:00:10.003037"
+content_hash: "c3c7eb85dbb1"
+synced_at: "2026-07-28T16:51:27.504414"
 ---
 
 # native_audio_stream_manager.h
@@ -113,7 +113,7 @@ OH_AudioCommon_Result OH_AudioStreamManager_IsAcousticEchoCancelerSupported(OH_A
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_AudioStreamManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiostreammanager) *streamManager | 音频流管理器句柄。通过 [OH_AudioManager_GetAudioStreamManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-stream-manager-h#oh_audiomanager_getaudiostreammanager)获取句柄。 |
-| [OH_AudioStream_SourceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_sourcetype) sourceType | 指向[OH_AudioStream_SourceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_sourcetype)，用于设置音频输入流的使用场景。 |
+| [OH_AudioStream_SourceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_sourcetype) sourceType | 指定音频输入流的使用场景。 |
 | bool *supported | 查询指定的source type是否支持回声消除的结果。true表示支持回声消除，false表示不支持回声消除。 |
 
 返回：

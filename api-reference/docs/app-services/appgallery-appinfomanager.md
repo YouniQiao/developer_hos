@@ -2,8 +2,8 @@
 title: "appInfoManager（应用元数据管理服务）"
 upstream_id: "harmonyos-references/appgallery-appinfomanager"
 catalog: "harmonyos-references"
-content_hash: "aa960183b337"
-synced_at: "2026-07-09T01:01:15.058805"
+content_hash: "33a0c3a262ce"
+synced_at: "2026-07-28T16:52:34.299925"
 ---
 
 # appInfoManager（应用元数据管理服务）
@@ -149,9 +149,7 @@ selectDynamicIcon(iconId: string): Promise<void>
 | 401 | Parameter error. |
 | 1006800009 | System internal error. |
 | 1006800011 | Select dynamic icon failed. |
-| 1006800013 | Failed to switch to the custom icon because a custom theme icon is currently in use. |
-
-![](./img/note_3.0-zh-cn.png) 从版本6.0.0(20)开始，该接口支持返回1006800013错误码。
+| 1006800013 | Failed to switch to the custom icon because a custom theme icon is currently in use. 适用版本：6.0.0(20)+ |
 
 示例：
 

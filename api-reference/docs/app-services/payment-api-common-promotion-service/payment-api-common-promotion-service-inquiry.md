@@ -2,8 +2,8 @@
 title: "查询用户可用平台券"
 upstream_id: "harmonyos-references/payment-api-common-promotion-service-inquiry"
 catalog: "harmonyos-references"
-content_hash: "2ddea5a2abc2"
-synced_at: "2026-07-09T01:01:35.575844"
+content_hash: "f59db7a980e1"
+synced_at: "2026-07-28T16:52:58.151547"
 ---
 
 # 查询用户可用平台券
@@ -57,7 +57,6 @@ Content-Type: application/json
                 "bundleType": "ATOMIC_SERVICE",
                 "deviceType": "phone",
                 "osType": "HMOS",
-                "productModel": "ALN-AL00",
                 "tradeOrderAmount": 200
             }
         },
@@ -68,7 +67,6 @@ Content-Type: application/json
                 "bundleType": "ATOMIC_SERVICE",
                 "deviceType": "phone",
                 "osType": "HMOS",
-                "productModel": "ALN-AL00",
                 "tradeOrderAmount": 300
             }
         }

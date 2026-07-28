@@ -2,17 +2,17 @@
 title: "QRCode"
 upstream_id: "harmonyos-references/ts-basic-components-qrcode"
 catalog: "harmonyos-references"
-content_hash: "33afa61a6bb6"
-synced_at: "2026-07-09T17:24:30.570180"
+content_hash: "d11b931ee718"
+synced_at: "2026-07-28T16:46:17.175017"
 ---
 
 # QRCode
 
-用于显示单个二维码的组件。
+QRCode组件用于显示单个二维码，支持自定义二维码颜色、背景颜色及内容不透明度，适用于需要展示二维码以供扫描获取字符串信息的场景。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 该组件从API version 7开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+- 该组件从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 - 二维码组件的像素点数量与内容有关，组件尺寸过小可能导致内容无法展示，此时需要适当调整组件尺寸。
 - 该组件当前仅支持生成二维码，涉及扫码的业务场景，推荐使用[Scan Kit（统一扫码服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-kit-guide)。
 
@@ -36,7 +36,7 @@ QRCode(value: ResourceStr)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 是 | 二维码内容字符串。最大支持512个字符，若超出，则截取前512个字符。 从API version 20开始，支持Resource类型。 **说明：** 设置为null时与设置字符串“null”效果一致；设置为undefined时与设置字符串“undefined”效果一致；当传入空字符串时，将生成无效二维码。 |
+| value | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 是 | 二维码内容字符串。最大支持512个字符，若超出，则截取前512个字符。 从API version 20开始，支持Resource类型。 **说明：** 设置为null时与设置字符串"null"效果一致；设置为undefined时与设置字符串"undefined"效果一致；当传入空字符串时，将生成无效二维码。 |
 
 #### 属性
 
@@ -133,7 +133,7 @@ struct QRCodeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664209887.png)
+ ![](./img/zh-cn_image_0000002655848818.png)
 
 #### [h2]示例2（设置背景颜色为透明）
 
@@ -158,4 +158,4 @@ struct QRCodeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664329947.png)
+ ![](./img/zh-cn_image_0000002686088249.png)

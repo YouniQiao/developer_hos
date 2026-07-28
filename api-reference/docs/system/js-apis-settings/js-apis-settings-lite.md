@@ -2,8 +2,8 @@
 title: "@ohos.settingsLite (设置信息)"
 upstream_id: "harmonyos-references/js-apis-settings-lite"
 catalog: "harmonyos-references"
-content_hash: "1422ebcd80ec"
-synced_at: "2026-07-21T16:25:44.073335"
+content_hash: "93be39b6e250"
+synced_at: "2026-07-28T16:50:58.831927"
 ---
 
 # @ohos.settingsLite (设置信息)
@@ -108,6 +108,20 @@ settingsLite.isDoubleClickAppForSelf({
 
 系统能力： SystemCapability.Applications.Settings.Core.Lite
 
-| 名称 | 类型 | 说明 |
-| --- | --- | --- |
-| onResult | (result: boolean) => void | 双击下按键的默认启动应用为当前应用则返回true，否则返回false。 |
+模型约束： 此接口仅可在FA模型下使用。
+
+#### [h2]onResult
+
+onResult(result: boolean):void
+
+双击结果回调。
+
+系统能力： SystemCapability.Applications.Settings.Core.Lite
+
+模型约束： 此接口仅可在FA模型下使用。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| result | boolean | 是 | 返回检查结果 |

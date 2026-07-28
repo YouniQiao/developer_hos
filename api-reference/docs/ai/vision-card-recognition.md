@@ -2,8 +2,8 @@
 title: "CardRecognition（卡证识别控件）"
 upstream_id: "harmonyos-references/vision-card-recognition"
 catalog: "harmonyos-references"
-content_hash: "509f827527cf"
-synced_at: "2026-07-09T01:01:46.108835"
+content_hash: "a955c8e58cde"
+synced_at: "2026-07-28T16:53:17.366615"
 ---
 
 # CardRecognition（卡证识别控件）
@@ -18,7 +18,7 @@ synced_at: "2026-07-09T01:01:46.108835"
 
 ```
 import { CardRecognition, CardRecognitionResult, CardType, CardSide,
-CardRecognitionConfig, ShootingMode, CardContentConfig, BankCardConfig } from '@kit.VisionKit';
+CardRecognitionConfig, ShootingMode, CardContentConfig, BankCardConfig, IdCardConfig } from '@kit.VisionKit';
 ```
 
 #### CardRecognition
@@ -42,6 +42,20 @@ CardRecognitionConfig, ShootingMode, CardContentConfig, BankCardConfig } from '@
 | callback(deprecated) | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#callback) | 是 | - | 卡证识别结果的返回。callback和onResult参数同时配置时只有callback生效。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 **说明：** 从5.1.1(19)开始废弃。建议使用onResult替代。 |
 | onResult | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#callback) | 是 | - | 卡证识别结果的返回。callback和onResult参数同时配置时只有callback生效。 **元服务API：** 从版本5.1.1(19)开始，该接口支持在元服务中使用。 **起始版本：** 5.1.1(19) |
 | cardRecognitionConfig | [CardRecognitionConfig](#cardrecognitionconfig) | 否 | - | 卡证识别配置项。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+
+#### [h2]build
+
+build(): void
+
+用于创建[CardRecognition](#cardrecognition)对象的构造函数，开发者无需调用此方法。
+
+元服务API： 从版本5.0.0(12)开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.AI.Component.CardRecognition
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+起始版本： 5.0.0(12)
 
 #### CardType
 
@@ -100,7 +114,7 @@ CardRecognitionConfig, ShootingMode, CardContentConfig, BankCardConfig } from '@
 | --- | --- | --- | --- | --- |
 | code | number | 否 | 否 | 返回的结果码（200：识别成功，-1：识别失败）。 |
 | cardType | [CardType](#cardtype) | 否 | 是 | 卡证类型。默认值：CARD_AUTO。 |
-| cardInfo | Record> | 否 | 是 | 卡证信息。默认值：undefined。 对于双面卡证，包含信息为"front"和"back"。 对于单面卡证，包含信息为"main"。 更多信息参考 [卡证信息](#卡证信息)。 |
+| cardInfo | Record> | 否 | 是 | 卡证信息。默认值：undefined。 对于双面卡证，包含信息为“front”和“back”。 对于单面卡证，包含信息为“main”。更多信息参考 [卡证信息](#卡证信息)。 |
 
 #### CardRecognitionResult
 
@@ -118,7 +132,7 @@ CardRecognitionConfig, ShootingMode, CardContentConfig, BankCardConfig } from '@
 | --- | --- | --- | --- | --- |
 | code | number | 否 | 否 | 返回的结果码： 200：识别成功。 1008701001：未识别。 1008701002：识别失败。 1008701003：部分识别失败。 1008701004：未完成识别。 |
 | cardType | [CardType](#cardtype) | 否 | 是 | 卡证类型。默认值：CARD_AUTO。 |
-| cardInfo | Record> | 否 | 是 | 卡证信息。默认值：undefined。 对于双面卡证，包含信息为"front"和"back"。 对于单面卡证，包含信息为"main"。 更多信息参考 [卡证信息](#卡证信息)。 |
+| cardInfo | Record> | 否 | 是 | 卡证信息。默认值：undefined。 对于双面卡证，包含信息为“front”和“back”。 对于单面卡证，包含信息为“main”。 更多信息参考 [卡证信息](#卡证信息)。 |
 
 #### CardRecognitionConfig
 
@@ -134,7 +148,7 @@ CardRecognitionConfig, ShootingMode, CardContentConfig, BankCardConfig } from '@
 | --- | --- | --- | --- | --- |
 | defaultShootingMode | [ShootingMode](#shootingmode) | 否 | 是 | 拍摄模式，默认值：ShootingMode.MANUAL。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
 | isPhotoSelectionSupported | boolean | 否 | 是 | 是否支持从图库选图。 - true为显示图库按钮并支持从图库选图。 - false为不显示图库按钮且不支持从图库选图。 默认值：true。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
-| setCardMargins | number | 否 | 是 | 设置经裁剪的卡证图片预留边距。范围[10,10000]。 若设定值大于原图某边边距，此边边距取原图，不做裁剪。 默认值：10。单位：px。 **元服务API：** 从版本5.0.3(15)开始，该接口支持在元服务中使用。 **起始版本：** 5.0.3(15) |
+| setCardMargins | number | 否 | 是 | 设置经裁剪的卡证图片预留边距。范围[10,10000]。 若设定值大于原图某边边距，此边边距取原图，不做裁剪。 若设定值小于最小值10，则使用默认值10。 默认值：10。单位：px。 **元服务API：** 从版本5.0.3(15)开始，该接口支持在元服务中使用。 **起始版本：** 5.0.3(15) |
 | cardContentConfig | [CardContentConfig](#cardcontentconfig) | 否 | 是 | 卡证内容配置。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
 
 #### ShootingMode

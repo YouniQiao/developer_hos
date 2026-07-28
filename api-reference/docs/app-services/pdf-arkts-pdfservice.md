@@ -2,15 +2,18 @@
 title: "pdfService（PDF服务）"
 upstream_id: "harmonyos-references/pdf-arkts-pdfservice"
 catalog: "harmonyos-references"
-content_hash: "d3e640985757"
-synced_at: "2026-07-09T01:01:36.992932"
+content_hash: "3484bce4fdb9"
+synced_at: "2026-07-28T16:52:59.428541"
 ---
 
 # pdfService（PDF服务）
 
-本模块为应用提供统一的管理PDF页面的页眉页脚、水印和背景、文档的多种批注风格和书签便捷的PDF能力。
+本模块为应用提供统一的管理PDF页面的页眉页脚、水印和背景、文档的多种批注风格和书签等便捷的PDF能力。
 
-注： 涉及到尺寸和坐标的属性都是以点（Points）为单位，一英寸等于72Points。
+注：
+
+1. 涉及到尺寸和坐标的属性都是以点（Points）为单位，一英寸等于72Points。
+2. 对PDF文件进行编辑操作后，需要调用[saveDocument](#savedocument)接口将PDF文件保存，确保编辑操作生效。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -22,13 +25,11 @@ synced_at: "2026-07-09T01:01:36.992932"
 import { pdfService } from '@kit.PDFKit';
 ```
 
-#### 注意事项
-
-对PDF文件进行编辑操作后，需要调用[saveDocument](#savedocument)接口将PDF文件保存，确保编辑操作生效。
-
 #### PdfDocument
 
 PDF文档类。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -39,6 +40,8 @@ PDF文档类。
 constructor()
 
 构造函数。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -55,6 +58,8 @@ let pdfDocument = new pdfService.PdfDocument();
 loadDocument(path: string, password?: string, onProgress?: (progress: number) => number): ParseResult
 
 加载指定文件路径。由于loadDocument不支持重复调用，因此在二次调用之前，必须先通过releaseDocument释放当前已加载的文档，以确保资源正确释放并避免潜在的冲突或异常。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -92,6 +97,8 @@ releaseDocument(): void
 
 释放PDF文档。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -118,6 +125,8 @@ saveDocument(path: string, onProgress?: (progress: number) => number): boolean
 保存文档。
 
 ![](./img/note_3.0-zh-cn.png) 由于文档不可同时读写，如果需要覆盖回原文档，请创建临时文档作为过渡。具体请参见下方示例代码。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -184,6 +193,8 @@ createDocument(width: number, height: number): boolean
 
 创建空白文档。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -215,6 +226,8 @@ pdfDocument.createDocument(600, 900);
 isEncrypted(path: string): boolean
 
 文档是否加密。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -252,6 +265,8 @@ removeSecurity(): boolean
 
 删除文档加密锁。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -282,6 +297,8 @@ getPageCount(): number
 
 获取文档页数。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -311,6 +328,8 @@ if (pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 getPage(index: number): PdfPage
 
 获取指定页的对象。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -347,7 +366,9 @@ if (pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 
 insertBlankPage(index: number, width: number, height: number): PdfPage
 
-在指定位置插入PDF页。
+在指定位置插入PDF空白页，原位置PDF页顺序后移。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -387,6 +408,8 @@ if (pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 insertPageFromDocument(document: PdfDocument, fromIndex: number, pageCount: number, index: number): PdfPage
 
 将其他Document的Page添加到当前Document，Page中的批注不支持插入到当前Document。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -434,6 +457,8 @@ deletePage(index: number, count: number): void
 
 删除指定位置PDF页。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -464,13 +489,17 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 
 movePage(index: number, dest: number): boolean
 
-将指定页面移到索引位置。
+将index索引的页面插入到dest指定的位置，原dest索引的页面顺序后移。
 
-![](./img/note_3.0-zh-cn.png) movePage(2, 3)，不会有变化，2是第3页，3是第4页，第3页只能移动到第4页后面，就是第5页，应该是movePage(2, 4)，顺序：0，1，3，2，4。
+![](./img/note_3.0-zh-cn.png) 例如原页面顺序是0，1，2，3，4
 
-movePage(3, 2)，会有变化，顺序：0，1，3，2，4。
+movePage(2, 3)，Page[2]移动到Page[3]的位置，原Page[3]后移，顺序不变：0，1，2，3，4。
 
-![](./img/zh-cn_image_0000002631414516.jpg)
+movePage(2, 4)，Page[2]移动到Page[4]的位置，原Page[4]后移，顺序变为：0，1，3，2，4。
+
+movePage(3, 2)，Page[3]移动到Page[2]的位置，原Page[2]后移，顺序变为：0，1，3，2，4。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -510,6 +539,8 @@ getFontWeight(): number
 
 获取字体粗细。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -540,6 +571,8 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 setFontWeight(weight: number): void
 
 设置字体粗细。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -572,6 +605,8 @@ getMetadata(): Metadata
 
 获取PDF元数据，包括作者、创建者、创建日期等。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -602,6 +637,8 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 convertToImage(path: string, format: ImageFormat, onProgress?: (progress: number) => number): boolean
 
 转换PDF文档为图片。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -646,6 +683,8 @@ getRootBookmark(): Bookmark
 
 获取PDF文档第一个根书签。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -676,6 +715,8 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 getRootBookmarks(): Array<Bookmark>
 
 PDF文档获取根书签。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -708,6 +749,8 @@ createBookmark(): Bookmark
 
 创建PDF文档书签。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -738,6 +781,8 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 removeBookmark(bookmark: Bookmark): boolean
 
 移除PDF文档书签。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -778,6 +823,8 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 insertBookmark(bookmark: Bookmark, parent: Bookmark, position: number): boolean
 
 插入PDF文档书签。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -822,6 +869,8 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 addHeaderFooter(info: HeaderFooterInfo, startIndex: number, endIndex: number, oddPages: boolean, evenPages: boolean): void
 
 插入PDF文档页眉页脚。该方法属于耗时业务，需要遍历每一页去添加页眉页脚，添加页面较多时建议放到线程中去处理。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -876,6 +925,8 @@ getHeaderFooter(): HeaderFooterInfo
 
 获取PDF文档页眉页脚。没有页眉页脚的PDF文档获取的HeaderFooterInfo的属性是默认值。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -905,6 +956,8 @@ hasHeaderFooter(): boolean
 
 PDF文档是否有页眉页脚。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -933,6 +986,8 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 removeHeaderFooter(): boolean
 
 删除PDF文档页眉页脚。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -964,6 +1019,8 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 addWatermark(info: WatermarkInfo, startIndex: number, endIndex: number, oddPages: boolean, evenPages: boolean): void
 
 插入PDF文档水印。该方法属于耗时业务，需要遍历每一页去添加水印，添加页面较多时建议放到线程中去处理。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1041,6 +1098,8 @@ getWatermark(): WatermarkInfo
 
 获取PDF文档水印。没有水印的PDF文档获取的WatermarkInfo的属性是默认值。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -1070,6 +1129,8 @@ hasWatermark(): boolean
 
 PDF文档是否有水印。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -1098,6 +1159,8 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 removeWatermark(): boolean
 
 删除PDF文档水印。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1130,6 +1193,8 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 addBackground(info: BackgroundInfo, startIndex: number, endIndex: number, oddPages: boolean, evenPages: boolean): void
 
 插入PDF文档背景。该方法属于耗时业务，需要遍历每一页去添加背景，添加页面较多时建议放到线程中去处理。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1173,7 +1238,9 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 
 getBackground(): BackgroundInfo
 
-获取PDF文档背景信息 。没有背景的PDF文档获取的BackgroundInfo的属性是默认值。
+获取PDF文档背景信息。没有背景的PDF文档获取的BackgroundInfo的属性是默认值。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1206,6 +1273,8 @@ hasBackground(): boolean
 
 PDF文档是否有背景。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -1234,6 +1303,8 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 removeBackground(): boolean
 
 删除PDF文档背景。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1268,6 +1339,8 @@ setPdfPassword(password: string): boolean
 
 ![](./img/note_3.0-zh-cn.png) 加密后的文件仅在支持AES-256的PDF阅读软件中正常打开。若使用不支持AES-256的软件打开，可能会因兼容性问题导致打开失败，并提示“密码错误”。请尝试使用支持AES-256的软件打开该文件。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.5(17)
@@ -1299,9 +1372,11 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 
 #### [h2]getPixelMapWithPages
 
-getPixelMapWithPages(pageIndices: number[], matrices: PdfMatrix[], bitmapWidth: number, bitmapHeight: number, pixelOptions?: PixelOptions): image.PixelMap
+getPixelMapWithPages(pageIndices: number[], matrices: PdfMatrix[], bitmapWidth: number, bitmapHeight: number, options?: PixelOptions): image.PixelMap
 
 获取多个页面合并后的pixelMap，最多支持指定16张PDF页面。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1315,7 +1390,7 @@ getPixelMapWithPages(pageIndices: number[], matrices: PdfMatrix[], bitmapWidth: 
 | matrices | [PdfMatrix](#pdfmatrix)[] | 是 | 坐标变换矩阵数组，用于在渲染时对页面内容做缩放、平移、旋转等。与pageIndices数组一一对应。 |
 | bitmapWidth | number | 是 | 渲染后图像的宽度，单位为Points（一英寸等于72Points），取值范围：大于0。 |
 | bitmapHeight | number | 是 | 渲染后图像的高度，单位为Points（一英寸等于72Points），取值范围：大于0。 |
-| pixelOptions | [PixelOptions](#pixeloptions) | 否 | PDF页面转图片参数。 |
+| options | [PixelOptions](#pixeloptions) | 否 | PDF页面转图片参数。 |
 
 返回值：
 
@@ -1329,11 +1404,11 @@ getPixelMapWithPages(pageIndices: number[], matrices: PdfMatrix[], bitmapWidth: 
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [1011301001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-pdf#section1011301001-数组大小不匹配) | Page indices and matrix size do not match. |
-| [1011301002](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-pdf#section1011301002-页码值超出范围) | Page index is out of range. |
-| [1011301003](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-pdf#section1011301003-尺寸超出最大值) | Bitmap size exceeds the maximum allowed limit. |
-| [1011301004](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-pdf#section1011301004-创建bitmap失败) | Failed to create bitmap. |
-| [1011301005](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-pdf#section1011301005-bitmap渲染失败) | Failed to render bitmap. |
+| [1011301001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-pdf#section1011301001-数组大小不匹配) | The arrays of pageIndices and matrices do not match. |
+| [1011301002](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-pdf#section1011301002-页码值超出范围) | Invalid page number. |
+| [1011301003](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-pdf#section1011301003-尺寸超出最大值) | The number of pixels in the bitmap exceeds the upper limit. |
+| [1011301004](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-pdf#section1011301004-创建bitmap失败) | Failed to create a bitmap. |
+| [1011301005](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-pdf#section1011301005-bitmap渲染失败) | Failed to render the bitmap. |
 | [1011301006](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-pdf#section1011301006-pdf文档未加载) | The PDF document is not loaded. |
 
 示例：
@@ -1374,6 +1449,8 @@ if (pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 searchKey(text: string, listener: SearchKeyCallback, options?: SearchOptions): Promise<void>
 
 对PDF文件执行搜索关键词操作。使用Promise异步回调。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1430,6 +1507,8 @@ type SearchKeyCallback = (results: SearchResultData[]) => boolean
 
 搜索关键词的回调函数，每完成一页内容的搜索回调一次。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 6.0.1(21)
@@ -1450,6 +1529,8 @@ type SearchKeyCallback = (results: SearchResultData[]) => boolean
 
 搜索设置项。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 6.0.1(21)
@@ -1466,6 +1547,8 @@ type SearchKeyCallback = (results: SearchResultData[]) => boolean
 
 搜索关键词的结果数据。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 6.0.1(21)
@@ -1479,6 +1562,8 @@ type SearchKeyCallback = (results: SearchResultData[]) => boolean
 #### Metadata
 
 PDF元数据类型。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1499,6 +1584,8 @@ PDF元数据类型。
 
 PDF页面的批注类。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -1515,6 +1602,8 @@ PDF页面的批注类。
 getPdfPage(): PdfPage
 
 获取PDF页面。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1548,6 +1637,8 @@ getAnnotationIndex(): number
 
 获取PDF页面批注的索引。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -1579,6 +1670,8 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 getAnnotationInfo(): PdfAnnotationInfo
 
 获取PDF页面的当前批注的信息。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1620,6 +1713,8 @@ moveTo(x: number, y: number): void
 
 增量移动PDF页面批注x，y的距离。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -1657,6 +1752,8 @@ isMarkup(): boolean
 
 当前批注是否为标记类型批注。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -1691,6 +1788,8 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 
 PDF页面的批注信息。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -1713,6 +1812,8 @@ PDF页面的批注信息。
 
 PDF页面的文本批注类，继承[PdfAnnotationInfo](#pdfannotationinfo)。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -1728,6 +1829,8 @@ PDF页面的文本批注类，继承[PdfAnnotationInfo](#pdfannotationinfo)。
 #### LinkAnnotationInfo
 
 PDF页面的链接类型注释的信息，继承[PdfAnnotationInfo](#pdfannotationinfo)。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1746,6 +1849,8 @@ PDF页面的链接类型注释的信息，继承[PdfAnnotationInfo](#pdfannotati
 
 PDF页面的自由文本类型注释的信息，继承[PdfAnnotationInfo](#pdfannotationinfo)。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -1762,6 +1867,8 @@ PDF页面的自由文本类型注释的信息，继承[PdfAnnotationInfo](#pdfan
 #### SquareAnnotationInfo
 
 PDF页面的方块类型标注信息类，继承[PdfAnnotationInfo](#pdfannotationinfo)。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1780,6 +1887,8 @@ PDF页面的方块类型标注信息类，继承[PdfAnnotationInfo](#pdfannotati
 
 PDF页面的椭圆型标注的信息类，继承[PdfAnnotationInfo](#pdfannotationinfo)。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -1797,6 +1906,8 @@ PDF页面的椭圆型标注的信息类，继承[PdfAnnotationInfo](#pdfannotati
 
 PDF页面的多边形批注信息类，继承[PdfAnnotationInfo](#pdfannotationinfo)。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -1810,6 +1921,8 @@ PDF页面的多边形批注信息类，继承[PdfAnnotationInfo](#pdfannotationi
 #### LineAnnotationInfo
 
 PDF页面的线型标注信息类，继承[PdfAnnotationInfo](#pdfannotationinfo)。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1829,6 +1942,8 @@ PDF页面的线型标注信息类，继承[PdfAnnotationInfo](#pdfannotationinfo
 
 PDF页面的折线类型标注的信息类，继承[PdfAnnotationInfo](#pdfannotationinfo)。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -1841,6 +1956,8 @@ PDF页面的折线类型标注的信息类，继承[PdfAnnotationInfo](#pdfannot
 #### HighlightAnnotationInfo
 
 PDF页面的高亮类型标注信息类，继承[PdfAnnotationInfo](#pdfannotationinfo)。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1855,6 +1972,8 @@ PDF页面的高亮类型标注信息类，继承[PdfAnnotationInfo](#pdfannotati
 
 PDF页面的下划线类型标注的信息类，继承[PdfAnnotationInfo](#pdfannotationinfo)。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -1866,6 +1985,8 @@ PDF页面的下划线类型标注的信息类，继承[PdfAnnotationInfo](#pdfan
 #### StrikethroughAnnotationInfo
 
 PDF页面的删除线类型批注的信息类，继承[PdfAnnotationInfo](#pdfannotationinfo)。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1879,6 +2000,8 @@ PDF页面的删除线类型批注的信息类，继承[PdfAnnotationInfo](#pdfan
 
 PDF页面的墨水类型注释信息类，继承[PdfAnnotationInfo](#pdfannotationinfo)。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -1891,6 +2014,8 @@ PDF页面的墨水类型注释信息类，继承[PdfAnnotationInfo](#pdfannotati
 #### StampAnnotationInfo
 
 PDF页面的图章类型注释的信息类，继承[PdfAnnotationInfo](#pdfannotationinfo)。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1907,6 +2032,8 @@ PDF页面的图章类型注释的信息类，继承[PdfAnnotationInfo](#pdfannot
 #### PdfPoint
 
 PDF页面的点位置类。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1925,6 +2052,8 @@ constructor()
 
 用于创建点位置类对象。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -1940,6 +2069,8 @@ let pdfPoint = new pdfService.PdfPoint();
 #### PdfBorder
 
 PDF页面的边框类。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1959,6 +2090,8 @@ constructor()
 
 用于创建边框类对象。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -1974,6 +2107,8 @@ let pdfBorder = new pdfService.PdfBorder();
 #### PdfRect
 
 PDF页面的矩形类。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -1994,6 +2129,8 @@ constructor()
 
 用于创建矩形类对象。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -2009,6 +2146,8 @@ let pdfRect = new pdfService.PdfRect();
 #### PdfMatrix
 
 PDF页面的坐标变换矩阵。包含 x, y, width, height,rotate。x, y指定图像左上角相对于页面的偏移；width, height指定图像的宽度和高度，单位为Points；rotate指定旋转角度。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -2030,6 +2169,8 @@ constructor()
 
 用于创建矩形区域的PDF矩阵类对象。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -2046,6 +2187,8 @@ let pdfMatrix = new pdfService.PdfMatrix();
 
 PDF页面类。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -2055,6 +2198,8 @@ PDF页面类。
 getDocument(): PdfDocument
 
 获取PDFDocument对象。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -2086,6 +2231,8 @@ getAnnotations(): Array<PdfAnnotation>
 
 获取文档批注。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -2115,6 +2262,8 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 addAnnotation(annotationInfo: PdfAnnotationInfo): PdfAnnotation
 
 在当前页添加批注。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -2157,6 +2306,8 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 setAnnotation(annotation: PdfAnnotation, annotationInfo: PdfAnnotationInfo): void
 
 在当前页设置批注。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -2205,6 +2356,8 @@ removeAnnotation(annotation: PdfAnnotation): void
 
 删除当前页批注。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -2243,6 +2396,8 @@ getIndex(): number
 
 获取当前页的索引。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -2272,6 +2427,8 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 getWidth(): number
 
 获取当前页的宽。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -2303,6 +2460,8 @@ getHeight(): number
 
 获取当前页的高。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -2332,6 +2491,8 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 setBox(boxtype: BoxType, rect: PdfRect): void
 
 设置页边界。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -2369,6 +2530,8 @@ getBox(boxtype: BoxType): PdfRect
 
 获取页边界。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -2405,6 +2568,8 @@ setRotation(rotation: RotationAngle): void
 
 设置指定页面的显示旋转角度。旋转角度为顺时针方向的固定值，可选值包括 0、90、180、270 度。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -2434,6 +2599,8 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 getRotation(): RotationAngle
 
 获取页面的旋转角度。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -2465,6 +2632,8 @@ getPagePixelMap(): image.PixelMap
 
 获取当前页的图片。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -2494,6 +2663,8 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 getCustomPagePixelMap(matrix: PdfMatrix, isGray: boolean, drawAnnotations: boolean): image.PixelMap
 
 获取指定PdfPage区间的图片内容。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -2534,6 +2705,8 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 getAreaPixelMap(matrix: PdfMatrix, bitmapwidth: number, bitmapHeight: number, isGray: boolean, drawAnnotations: boolean): image.PixelMap
 
 将指定 PDF 页面渲染为像素图（PixelMap）。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -2576,6 +2749,8 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 addTextObject(text: string, x: number, y: number, style: TextStyle): void
 
 添加文本内容，只可按行添加。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -2621,6 +2796,8 @@ addImageObject(path: string, x: number, y: number, width: number, height: number
 
 在PDF文档的页面中添加图片。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -2659,6 +2836,8 @@ getGraphicsObjects(): Array<GraphicsObject>
 
 获取所有图形对象。按位置顺序返回，如从左向右、从上向下。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -2688,6 +2867,8 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 deleteGraphicsObject(object: GraphicsObject): void
 
 删除指定的[GraphicsObject](#graphicsobject)类型对象。需要配合getGraphicsObjects使用，且调用之后会实际删除PDF页面中的GraphicsObject对象。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -2723,6 +2904,8 @@ release(): void
 
 释放已加载的PDF页面。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -2743,9 +2926,11 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 
 #### [h2]getAreaPixelMapWithOptions
 
-getAreaPixelMapWithOptions(matrix:PdfMatrix,bitmapwidth:number,bitmapHeight:number,options?:PixelOptions):image.PixelMap
+getAreaPixelMapWithOptions(matrix: PdfMatrix,bitmapwidth: number,bitmapHeight: number,options?: PixelOptions): image.PixelMap
 
 获取当前PDF页面pixelMap类型的图片。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -2801,6 +2986,8 @@ getTextContent(): string
 
 页面中的图片、水印等元素不支持文本提取，返回空字符串。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 6.1.0(23)
@@ -2833,6 +3020,8 @@ if (loadResult === pdfService.ParseResult.PARSE_SUCCESS) {
 
 图形对象的类型。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -2853,6 +3042,8 @@ if (loadResult === pdfService.ParseResult.PARSE_SUCCESS) {
 
 文本对象的类型，继承[GraphicsObject](#graphicsobject)。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -2871,6 +3062,8 @@ if (loadResult === pdfService.ParseResult.PARSE_SUCCESS) {
 
 图片对象的类型，继承[GraphicsObject](#graphicsobject)。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -2885,6 +3078,8 @@ if (loadResult === pdfService.ParseResult.PARSE_SUCCESS) {
 
 书签对象的相关方法。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -2894,6 +3089,8 @@ if (loadResult === pdfService.ParseResult.PARSE_SUCCESS) {
 isRootBookmark(): boolean
 
 是否是根书签。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -2928,6 +3125,8 @@ getParent(): Bookmark
 
 获取书签父类相关的信息。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -2960,6 +3159,8 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 hasChild(): boolean
 
 是否有子书签。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -2994,6 +3195,8 @@ getChildren(): Array<Bookmark>
 
 获取子书签列表。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -3026,6 +3229,8 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 getDestInfo(): DestInfo
 
 获取书签的跳转信息。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -3072,6 +3277,8 @@ setDestInfo(info: DestInfo): void
 
 设置书签的跳转信息。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -3116,6 +3323,8 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 getBookmarkInfo(): BookmarkInfo
 
 获取书签信息。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -3162,6 +3371,8 @@ setBookmarkInfo(info: BookmarkInfo): void
 
 设置书签信息。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -3205,6 +3416,8 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 
 书签类的相关属性。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -3224,6 +3437,8 @@ constructor()
 
 用于创建书签类对象。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -3240,6 +3455,8 @@ let bookmarkInfo = new pdfService.BookmarkInfo();
 
 页眉页脚类的相关属性。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -3248,27 +3465,29 @@ let bookmarkInfo = new pdfService.BookmarkInfo();
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| fontInfo | [FontInfo](#fontinfo) | 否 | 否 | 字体的信息。 |
-| textSize | number | 否 | 否 | 页眉页脚文本大小，必须大于0，单位为Points（一英寸等于72Points）。 |
-| charset | [CharsetType](#charsettype) | 否 | 否 | 文本字符集。 |
-| underline | boolean | 否 | 否 | 下划线是否添加，true表示是，false表示否。 |
-| textColor | number | 否 | 是 | 文字颜色，取值范围0x000000 ~ 0xFFFFFF。 (例如：0xFF0000代表蓝色，0x0000FF代表红色) |
-| leftMargin | number | 否 | 是 | 页眉页脚左间距，必须大于等于0，单位为Points（一英寸等于72Points）。 |
-| topMargin | number | 否 | 是 | 页眉页脚顶部间距，必须大于等于0，单位为Points（一英寸等于72Points）。 |
-| rightMargin | number | 否 | 是 | 页眉页脚右间距，必须大于等于0，单位为Points（一英寸等于72Points）。 |
-| bottomMargin | number | 否 | 是 | 页眉页脚底部间距，必须大于等于0，单位为Points（一英寸等于72Points）。 |
-| headerLeftText | string | 否 | 是 | 页眉左边文字。 |
-| headerCenterText | string | 否 | 是 | 页眉中间文字。 |
-| headerRightText | string | 否 | 是 | 页眉右边文字。 |
-| footerLeftText | string | 否 | 是 | 页脚左边文字。 |
-| footerCenterText | string | 否 | 是 | 页脚中间文字。 |
-| footerRightText | string | 否 | 是 | 页脚右边文字。 |
+| fontInfo | [FontInfo](#fontinfo) | 否 | 否 | 字体的信息。默认值为fontName:""，空字体名（无自定义字体）。 |
+| textSize | number | 否 | 否 | 页眉页脚文本大小，必须大于0，单位为Points（一英寸等于72Points）。默认值：0，0Points（无指定）。 |
+| charset | [CharsetType](#charsettype) | 否 | 否 | 文本字符集。默认值：0，PDF_FONT_ANSI_CHARSET （ANSI字符集）。 |
+| underline | boolean | 否 | 否 | 下划线是否添加，true表示是，false表示否。默认值：false，无下划线。 |
+| textColor | number | 否 | 否 | 文字颜色，取值范围0x000000 ~ 0xFFFFFF。默认值：0，表示黑色。 （例如：0xFF0000代表蓝色，0x0000FF代表红色） |
+| leftMargin | number | 否 | 否 | 页眉页脚左间距，必须大于等于0，单位为Points（一英寸等于72Points）。默认值：0，表示无左边距。 |
+| topMargin | number | 否 | 否 | 页眉页脚顶部间距，必须大于等于0，单位为Points（一英寸等于72Points）。默认值：0，表示无顶部边距。 |
+| rightMargin | number | 否 | 否 | 页眉页脚右间距，必须大于等于0，单位为Points（一英寸等于72Points）。默认值：0，表示无右边距。 |
+| bottomMargin | number | 否 | 否 | 页眉页脚底部间距，必须大于等于0，单位为Points（一英寸等于72Points）。默认值：0，表示无底部边距。 |
+| headerLeftText | string | 否 | 否 | 页眉左边文字。默认值：""，表示无文本。 |
+| headerCenterText | string | 否 | 否 | 页眉中间文字。默认值：""，表示无文本。 |
+| headerRightText | string | 否 | 否 | 页眉右边文字。默认值：""，表示无文本。 |
+| footerLeftText | string | 否 | 否 | 页脚左边文字。默认值：""，表示无文本。 |
+| footerCenterText | string | 否 | 否 | 页脚中间文字。默认值：""，表示无文本。 |
+| footerRightText | string | 否 | 否 | 页脚右边文字。默认值：""，表示无文本。 |
 
 #### [h2]constructor
 
 constructor()
 
 用于创建页眉页脚类对象。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -3286,6 +3505,8 @@ let headerFooterInfo = new pdfService.HeaderFooterInfo();
 
 水印类的相关属性，自己属于父类。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -3294,21 +3515,23 @@ let headerFooterInfo = new pdfService.HeaderFooterInfo();
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| watermarkType | [WatermarkType](#watermarktype) | 否 | 否 | 水印类型。 |
-| isOnTop | boolean | 否 | 否 | 是否置顶，true表示是，false表示否。 |
-| scale | number | 否 | 否 | 缩放，必须大于0，小于等于5。 |
-| rotation | number | 否 | 否 | 旋转。 |
-| opacity | number | 否 | 否 | 透明度，取值范围 0~1。 |
-| horizontalAlignment | [WatermarkAlignment](#watermarkalignment) | 否 | 否 | 水平对齐。 |
-| horizontalSpace | number | 否 | 否 | 表示水印与页面边缘的水平距离，必须大于等于0，单位为Points（一英寸等于72Points）。 |
-| verticalAlignment | [WatermarkAlignment](#watermarkalignment) | 否 | 否 | 垂直对齐。 |
-| verticalSpace | number | 否 | 否 | 表示水印与页面边缘的垂直距离，必须大于等于0，单位为Points（一英寸等于72Points）。 |
+| watermarkType | [WatermarkType](#watermarktype) | 否 | 否 | 水印类型。默认值：0，表示无水印。 |
+| isOnTop | boolean | 否 | 否 | 是否置顶，true表示是，false表示否。默认值：false。 |
+| scale | number | 否 | 否 | 缩放，必须大于0，小于等于5。默认值：0，表示无缩放。 |
+| rotation | number | 否 | 否 | 旋转。默认值：0，表示无旋转。 |
+| opacity | number | 否 | 否 | 透明度，取值范围 0~1。默认值：0，表示完全透明。 |
+| horizontalAlignment | [WatermarkAlignment](#watermarkalignment) | 否 | 否 | 水平对齐。默认值：0，表示垂直置顶。 |
+| horizontalSpace | number | 否 | 否 | 表示水印与页面边缘的水平距离，必须大于等于0，单位为Points（一英寸等于72Points）。默认值：0，表示无水平间距。 |
+| verticalAlignment | [WatermarkAlignment](#watermarkalignment) | 否 | 否 | 垂直对齐。默认值：0，表示垂直置顶。 |
+| verticalSpace | number | 否 | 否 | 表示水印与页面边缘的垂直距离，必须大于等于0，单位为Points（一英寸等于72Points）。默认值：0，表示无垂直间距。 |
 
 #### [h2]constructor
 
 constructor()
 
 用于创建水印类对象。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -3323,6 +3546,8 @@ let watermarkInfo = new pdfService.WatermarkInfo();
 #### TextWatermarkInfo
 
 文本水印类的相关属性，继承[WatermarkInfo](#watermarkinfo)。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -3339,6 +3564,8 @@ let watermarkInfo = new pdfService.WatermarkInfo();
 
 图片水印类的相关属性，继承[WatermarkInfo](#watermarkinfo)。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -3351,6 +3578,8 @@ let watermarkInfo = new pdfService.WatermarkInfo();
 
 背景类的相关属性。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -3359,22 +3588,24 @@ let watermarkInfo = new pdfService.WatermarkInfo();
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| imagePath | string | 否 | 否 | 图片路径（图片路径不填则背景色必填）。 |
-| backgroundColor | number | 否 | 否 | 背景颜色（背景色不填则图片路径必填） ，取值范围0x000000 ~ 0xFFFFFF。 (例如：0xFF0000代表蓝色，0x0000FF代表红色) |
-| isOnTop | boolean | 否 | 否 | 是否置顶，true表示是，false表示否。 |
-| scale | number | 否 | 否 | 缩放，必须大于0，小于等于5。 |
-| rotation | number | 否 | 否 | 旋转。 |
-| opacity | number | 否 | 否 | 透明度，取值范围0~1。 |
-| horizontalAlignment | [BackgroundAlignment](#backgroundalignment) | 否 | 否 | 水平对齐。 |
-| horizontalSpace | number | 否 | 否 | 水平间距，必须大于等于0，单位为英寸（一英寸等于72Points）。 |
-| verticalAlignment | [BackgroundAlignment](#backgroundalignment) | 否 | 否 | 垂直对齐。 |
-| verticalSpace | number | 否 | 否 | 垂直间距，必须大于等于0，单位为英寸（一英寸等于72Points）。 |
+| imagePath | string | 否 | 否 | 图片路径（图片路径不填则背景色必填）。默认值：""，空字符串（无背景图片）。 |
+| backgroundColor | number | 否 | 否 | 背景颜色（背景色不填则图片路径必填）默认值：0，表示无色。 ，取值范围0x000000 ~ 0xFFFFFF。 （例如：0xFF0000代表蓝色，0x0000FF代表红色） |
+| isOnTop | boolean | 否 | 否 | 是否置顶，true表示是，false表示否。默认值：false。 |
+| scale | number | 否 | 否 | 缩放，必须大于0，小于等于5。默认值：0，表示无缩放。 |
+| rotation | number | 否 | 否 | 旋转。默认值：0，表示无旋转（0度）。 |
+| opacity | number | 否 | 否 | 透明度，取值范围0~1。默认值：0，表示完全透明。 |
+| horizontalAlignment | [BackgroundAlignment](#backgroundalignment) | 否 | 否 | 水平对齐。默认值：0，表示垂直置顶。 |
+| horizontalSpace | number | 否 | 否 | 水平间距，必须大于等于0，单位为英寸（一英寸等于72Points）。默认值：0，表示无水平间距。 |
+| verticalAlignment | [BackgroundAlignment](#backgroundalignment) | 否 | 否 | 垂直对齐。默认值：0，表示垂直置顶。 |
+| verticalSpace | number | 否 | 否 | 垂直间距，必须大于等于0，单位为英寸（一英寸等于72Points）。默认值：0，表示无垂直间距。 |
 
 #### [h2]constructor
 
 constructor()
 
 用于创建背景类对象。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -3392,6 +3623,8 @@ let backgroundInfo = new pdfService.BackgroundInfo();
 
 批注链接跳转，属于父类。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.1.0(18)
@@ -3407,6 +3640,8 @@ let backgroundInfo = new pdfService.BackgroundInfo();
 constructor()
 
 用于创建批注链接类对象。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -3424,6 +3659,8 @@ let pdfAction = new pdfService.PdfAction();
 
 页面内的跳转，继承[PdfAction](#pdfaction)。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.1.0(18)
@@ -3436,6 +3673,8 @@ let pdfAction = new pdfService.PdfAction();
 
 超链接跳转，继承[PdfAction](#pdfaction)。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.1.0(18)
@@ -3447,6 +3686,8 @@ let pdfAction = new pdfService.PdfAction();
 #### PixelOptions
 
 PDF页面转图片相关参数选项。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -3466,6 +3707,8 @@ constructor()
 
 用于创建图片类参数选项的对象。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.1.0(18)
@@ -3479,6 +3722,8 @@ let pixelOptions = new pdfService.PixelOptions();
 #### FontInfo
 
 字体类。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -3497,6 +3742,8 @@ constructor()
 
 用于创建字体类对象。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -3512,6 +3759,8 @@ let fontInfo = new pdfService.FontInfo();
 #### DestInfo
 
 书签跳转信息。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -3535,6 +3784,8 @@ constructor()
 
 用于创建书签跳转类对象。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -3550,6 +3801,8 @@ let destInfo = new pdfService.DestInfo();
 #### TextStyle
 
 文本样式的类型。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -3569,6 +3822,8 @@ let destInfo = new pdfService.DestInfo();
 
 线框枚举类型。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -3586,6 +3841,8 @@ let destInfo = new pdfService.DestInfo();
 
 批注标识举类型枚举。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -3600,6 +3857,8 @@ let destInfo = new pdfService.DestInfo();
 
 文本批注状态类型枚举。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -3612,6 +3871,8 @@ let destInfo = new pdfService.DestInfo();
 #### HighlightMode
 
 文本高亮模式类型枚举。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -3628,6 +3889,8 @@ let destInfo = new pdfService.DestInfo();
 
 文本对齐方式枚举。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -3641,6 +3904,8 @@ let destInfo = new pdfService.DestInfo();
 #### LineEndStyle
 
 线条端点的线条样式枚举。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -3663,6 +3928,8 @@ let destInfo = new pdfService.DestInfo();
 
 打开文档返回值枚举。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -3680,6 +3947,8 @@ let destInfo = new pdfService.DestInfo();
 
 页面布局显示方式枚举。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -3692,6 +3961,8 @@ let destInfo = new pdfService.DestInfo();
 #### PageFit
 
 页面适配方式枚举。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -3708,6 +3979,8 @@ let destInfo = new pdfService.DestInfo();
 
 旋转角度枚举。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -3723,6 +3996,8 @@ let destInfo = new pdfService.DestInfo();
 
 图片类型枚举。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -3736,6 +4011,8 @@ let destInfo = new pdfService.DestInfo();
 #### AnnotationType
 
 批注类型枚举。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -3763,6 +4040,8 @@ let destInfo = new pdfService.DestInfo();
 
 页边界枚举。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -3779,6 +4058,8 @@ let destInfo = new pdfService.DestInfo();
 
 图形对象类型枚举。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -3794,6 +4075,8 @@ let destInfo = new pdfService.DestInfo();
 #### CharsetType
 
 字符集对象类型枚举。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -3823,6 +4106,8 @@ let destInfo = new pdfService.DestInfo();
 
 页面适合模式枚举。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -3838,6 +4123,8 @@ let destInfo = new pdfService.DestInfo();
 
 页面水印类型枚举。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -3850,6 +4137,8 @@ let destInfo = new pdfService.DestInfo();
 #### WatermarkAlignment
 
 文档水印位置类型枚举
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -3868,6 +4157,8 @@ let destInfo = new pdfService.DestInfo();
 
 文档背景位置类型枚举。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
 起始版本： 5.0.0(12)
@@ -3884,6 +4175,8 @@ let destInfo = new pdfService.DestInfo();
 #### PdfActionType
 
 链接跳转类型。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 

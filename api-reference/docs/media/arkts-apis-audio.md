@@ -1,22 +1,21 @@
 ---
-
 title: "模块描述"
 upstream_id: "harmonyos-references/arkts-apis-audio"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T01:00:06.808299"
-content_hash: "142c088aec61"
+content_hash: "232e4828457f"
+synced_at: "2026-07-28T16:51:25.145239"
 ---
-
 
 # 模块描述
 
 音频管理提供基础的音频控制能力，包括音量调节、设备管理、数据采集及渲染。
 
-该模块提供以下音频相关的常用功能：
+本模块提供以下音频相关的常用功能：
 
 - [AudioManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiomanager)：音频管理器。
-- [AudioRenderer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiorenderer)：音频渲染，用于播放PCM（Pulse Code Modulation）音频数据。
-- [AudioCapturer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiocapturer)：音频采集，用于录制PCM音频数据。
+- [AudioDeviceEnhanceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiodeviceenhancemanager)：音频设备增强管理器。
+- [AudioRenderer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiorenderer)：音频渲染器，用于播放PCM（Pulse Code Modulation）音频数据。
+- [AudioCapturer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiocapturer)：音频采集器，用于录制PCM音频数据。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 

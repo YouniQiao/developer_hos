@@ -2,8 +2,8 @@
 title: "drawable_descriptor.h"
 upstream_id: "harmonyos-references/capi-drawable-descriptor-h"
 catalog: "harmonyos-references"
-content_hash: "e3d468ab7a25"
-synced_at: "2026-07-09T00:58:33.035559"
+content_hash: "17b20defb23a"
+synced_at: "2026-07-28T16:49:17.658296"
 ---
 
 # drawable_descriptor.h
@@ -33,8 +33,8 @@ synced_at: "2026-07-09T00:58:33.035559"
 | [ArkUI_DrawableDescriptor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-drawabledescriptor) | ArkUI_DrawableDescriptor | 定义DrawableDescriptor对象。 |
 | [OH_PixelmapNative](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image-nativemodule-oh-pixelmapnative) | - | 使用Image Kit定义的Native侧的OH_PixelmapNative对象。 |
 | [OH_PixelmapNative*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-oh-pixelmapnative8h) | OH_PixelmapNativeHandle | 定义OH_PixelmapNative对象指针类型。 |
-| [ArkUI_Node](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-node-descriptor) | - | 定义ArkUI native组件实例对象。 **起始版本：** 22 |
-| [ArkUI_Node*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-node8h) | ArkUI_NodeHandle | 定义ArkUI native组件实例对象指针定义。 **起始版本：** 22 |
+| [ArkUI_Node](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-node-descriptor) | - | 定义ArkUI Native组件实例对象，供ArkUI_NodeHandle指针在Native接口中标识和传递组件实例。 **起始版本：** 22 |
+| [ArkUI_Node*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-node8h) | ArkUI_NodeHandle | 定义 ArkUI Native 组件实例对象指针，用于在 ArkUI Native 接口中标识和传递组件实例，例如创建、挂载、移除或销毁组件节点。 **起始版本：** 22 |
 | [ArkUI_DrawableDescriptor_AnimationController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-drawabledescriptoranimationcontroller) | ArkUI_DrawableDescriptor_AnimationController | 定义DrawableDescriptor动图控制器对象。 **起始版本：** 22 |
 
 #### [h2]枚举
@@ -67,7 +67,7 @@ synced_at: "2026-07-09T00:58:33.035559"
 | [int32_t OH_ArkUI_DrawableDescriptor_CreateAnimationController(ArkUI_DrawableDescriptor* drawableDescriptor, ArkUI_NodeHandle node, ArkUI_DrawableDescriptor_AnimationController** controller)](#oh_arkui_drawabledescriptor_createanimationcontroller) | 创建动图控制器。 |
 | [void OH_ArkUI_DrawableDescriptor_DisposeAnimationController( ArkUI_DrawableDescriptor_AnimationController* controller)](#oh_arkui_drawabledescriptor_disposeanimationcontroller) | 销毁动图控制器。 |
 | [int32_t OH_ArkUI_DrawableDescriptor_StartAnimation(ArkUI_DrawableDescriptor_AnimationController* controller)](#oh_arkui_drawabledescriptor_startanimation) | 从首帧开始播放。 |
-| [int32_t OH_ArkUI_DrawableDescriptor_StopAnimation(ArkUI_DrawableDescriptor_AnimationController* controller)](#oh_arkui_drawabledescriptor_stopanimation) | 停止动图播放并回到首帧。 |
+| [int32_t OH_ArkUI_DrawableDescriptor_StopAnimation(ArkUI_DrawableDescriptor_AnimationController* controller)](#oh_arkui_drawabledescriptor_stopanimation) | 停止动图播放。停止后的位置由OH_ArkUI_DrawableDescriptor_SetAnimationStopMode设置的停止模式决定。 |
 | [int32_t OH_ArkUI_DrawableDescriptor_ResumeAnimation(ArkUI_DrawableDescriptor_AnimationController* controller)](#oh_arkui_drawabledescriptor_resumeanimation) | 从当前帧恢复动图播放。 |
 | [int32_t OH_ArkUI_DrawableDescriptor_PauseAnimation(ArkUI_DrawableDescriptor_AnimationController* controller)](#oh_arkui_drawabledescriptor_pauseanimation) | 暂停动图的播放，保持在当前帧。 |
 | [int32_t OH_ArkUI_DrawableDescriptor_GetAnimationStatus(ArkUI_DrawableDescriptor_AnimationController* controller, DrawableDescriptor_AnimationStatus* status)](#oh_arkui_drawabledescriptor_getanimationstatus) | 获取动图的播放状态。 |
@@ -149,9 +149,7 @@ ArkUI_DrawableDescriptor* OH_ArkUI_DrawableDescriptor_CreateFromAnimatedPixelMap
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_PixelmapNativeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-oh-pixelmapnative8h)* array | PixelMap图片数组对象指针。 |
-| int32_t size | PixelMap图片数组大小。 |
-
-返回：
+| int32_t size | PixelMap图片数组大小，单位为元素个数，必须为正整数；传入 NULL 数组或 size 返回：
 
 | 类型 | 说明 |
 | --- | --- |
@@ -348,7 +346,7 @@ int32_t OH_ArkUI_DrawableDescriptor_SetAnimationFrameDurations(ArkUI_DrawableDes
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 输入参数错误。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 输入参数错误。 |
 
 #### [h2]OH_ArkUI_DrawableDescriptor_GetAnimationFrameDurations()
 
@@ -373,7 +371,7 @@ int32_t OH_ArkUI_DrawableDescriptor_GetAnimationFrameDurations(ArkUI_DrawableDes
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 输入参数错误。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 输入参数错误。 |
 
 #### [h2]OH_ArkUI_DrawableDescriptor_SetAnimationAutoPlay()
 
@@ -391,13 +389,13 @@ int32_t OH_ArkUI_DrawableDescriptor_SetAnimationAutoPlay(ArkUI_DrawableDescripto
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_DrawableDescriptor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-drawabledescriptor)* drawableDescriptor | DrawableDescriptor对象指针。 |
-| uint32_t autoPlay | 是否自动播放。 1表示自动播放，0表示不自动播放。 默认值为1。 |
+| uint32_t autoPlay | 控制动图是否自动播放。 1表示自动播放，0表示不自动播放。 默认值为1。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 输入参数错误。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 输入参数错误。 |
 
 #### [h2]OH_ArkUI_DrawableDescriptor_GetAnimationAutoPlay()
 
@@ -421,7 +419,7 @@ int32_t OH_ArkUI_DrawableDescriptor_GetAnimationAutoPlay(ArkUI_DrawableDescripto
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 输入参数错误。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 输入参数错误。 |
 
 #### [h2]OH_ArkUI_DrawableDescriptor_SetAnimationStopMode()
 
@@ -430,7 +428,7 @@ int32_t OH_ArkUI_DrawableDescriptor_SetAnimationStopMode(ArkUI_DrawableDescripto
 ```
  描述：
 
-设置动图停止模式。
+设置动图的停止模式。
 
 起始版本： 24
 
@@ -445,7 +443,7 @@ int32_t OH_ArkUI_DrawableDescriptor_SetAnimationStopMode(ArkUI_DrawableDescripto
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 输入参数错误。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 输入参数错误。 |
 
 #### [h2]OH_ArkUI_DrawableDescriptor_GetAnimationStopMode()
 
@@ -454,7 +452,7 @@ int32_t OH_ArkUI_DrawableDescriptor_GetAnimationStopMode(const ArkUI_DrawableDes
 ```
  描述：
 
-获取动图停止模式。
+获取动图的停止模式。
 
 起始版本： 24
 
@@ -469,7 +467,7 @@ int32_t OH_ArkUI_DrawableDescriptor_GetAnimationStopMode(const ArkUI_DrawableDes
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 输入参数错误。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 输入参数错误。 |
 
 #### [h2]OH_ArkUI_DrawableDescriptor_CreateAnimationController()
 
@@ -478,7 +476,7 @@ int32_t OH_ArkUI_DrawableDescriptor_CreateAnimationController(ArkUI_DrawableDesc
 ```
  描述：
 
-创建动图控制器。
+创建动图控制器。当需要手动控制动图播放（如逐帧播放、暂停、跳转到指定帧、设置单帧时长）而非使用自动播放时，通过本接口获取控制器，再调用 StartAnimation/Pause 等控制接口。
 
 起始版本： 22
 
@@ -486,15 +484,15 @@ int32_t OH_ArkUI_DrawableDescriptor_CreateAnimationController(ArkUI_DrawableDesc
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkUI_DrawableDescriptor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-drawabledescriptor)* drawableDescriptor | DrawableDescriptor对象指针。 |
-| [ArkUI_NodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-node8h) node | 组件节点指针。 |
-| [ArkUI_DrawableDescriptor_AnimationController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-drawabledescriptoranimationcontroller)** controller | DrawableDescriptor动图控制器对象指针。 |
+| [ArkUI_DrawableDescriptor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-drawabledescriptor)* drawableDescriptor | DrawableDescriptor对象指针。必须是通过[OH_ArkUI_DrawableDescriptor_CreateFromAnimatedPixelMap](#oh_arkui_drawabledescriptor_createfromanimatedpixelmap)创建的动图对象。 |
+| [ArkUI_NodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-node8h) node | 组件节点指针。必须是有效的ArkUI组件节点。 |
+| [ArkUI_DrawableDescriptor_AnimationController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-drawabledescriptoranimationcontroller)** controller | DrawableDescriptor动图控制器对象指针。输出参数，调用成功时返回控制器指针。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 输入参数错误。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 输入参数错误。 |
 
 #### [h2]OH_ArkUI_DrawableDescriptor_DisposeAnimationController()
 
@@ -534,7 +532,7 @@ int32_t OH_ArkUI_DrawableDescriptor_StartAnimation(ArkUI_DrawableDescriptor_Anim
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 输入参数错误。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 输入参数错误。 |
 
 #### [h2]OH_ArkUI_DrawableDescriptor_StopAnimation()
 
@@ -557,7 +555,7 @@ int32_t OH_ArkUI_DrawableDescriptor_StopAnimation(ArkUI_DrawableDescriptor_Anima
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 输入参数错误。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 输入参数错误。 |
 
 #### [h2]OH_ArkUI_DrawableDescriptor_ResumeAnimation()
 
@@ -580,7 +578,7 @@ int32_t OH_ArkUI_DrawableDescriptor_ResumeAnimation(ArkUI_DrawableDescriptor_Ani
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 输入参数错误。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 输入参数错误。 |
 
 #### [h2]OH_ArkUI_DrawableDescriptor_PauseAnimation()
 
@@ -603,7 +601,7 @@ int32_t OH_ArkUI_DrawableDescriptor_PauseAnimation(ArkUI_DrawableDescriptor_Anim
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 输入参数错误。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 输入参数错误。 |
 
 #### [h2]OH_ArkUI_DrawableDescriptor_GetAnimationStatus()
 
@@ -627,4 +625,4 @@ int32_t OH_ArkUI_DrawableDescriptor_GetAnimationStatus(ArkUI_DrawableDescriptor_
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 输入参数错误。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 输入参数错误。 |

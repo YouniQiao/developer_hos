@@ -2,8 +2,8 @@
 title: "Enums"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-e"
 catalog: "harmonyos-references"
-content_hash: "74d380c9ac95"
-synced_at: "2026-07-09T01:00:47.471571"
+content_hash: "30e3c00808da"
+synced_at: "2026-07-28T16:52:04.310102"
 ---
 
 # Enums
@@ -79,6 +79,7 @@ PhotoSubtype是不同[PhotoAsset](https://developer.huawei.com/consumer/cn/doc/h
 | VIDEO | 1026 | 视频相册。 |
 | IMAGE12+ | 1031 | 图片相册。 |
 | SOURCE_GENERIC23+ | 2049 | 来源相册。 |
+| SOURCE_GENERIC_FROM_FILE_MANAGER | 2050 | 来自文件管理的来源相册。 **模型约束：** 此接口仅可在Stage模型下使用。 **起始版本：** 26.0.0 |
 | ANY | 2147483647 | 任意相册。 |
 
 #### PositionType16+
@@ -107,7 +108,7 @@ PhotoSubtype是不同[PhotoAsset](https://developer.huawei.com/consumer/cn/doc/h
 | SIZE | 'size' | 文件大小（单位：字节）。动态照片的size包括图片和视频的总大小。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | DATE_ADDED | 'date_added' | 文件创建时的Unix时间戳（单位：秒）。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | DATE_MODIFIED | 'date_modified' | 文件修改时的Unix时间戳（单位：秒）。修改文件名不会改变此值，当文件内容发生修改时才会更新。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
-| DURATION | 'duration' | 持续时间（单位：毫秒）。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| DURATION | 'duration' | 持续时间（单位：毫秒）。在API version 23之前，动态照片的duration将返回0；在API version 23及之后，返回动态照片附带视频片段的时长，异常场景返回-1。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | WIDTH | 'width' | 图片宽度（单位：像素）。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | HEIGHT | 'height' | 图片高度（单位：像素）。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | DATE_TAKEN | 'date_taken' | 拍摄时的Unix时间戳（单位：秒）。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
@@ -128,8 +129,8 @@ PhotoSubtype是不同[PhotoAsset](https://developer.huawei.com/consumer/cn/doc/h
 | MEDIA_SUFFIX18+ | 'media_suffix' | 文件的后缀名。 |
 | OWNER_ALBUM_ID22+ | 'owner_album_id' | 照片所属的相册id。 |
 | ASPECT_RATIO22+ | 'aspect_ratio' | 图片和视频的宽高比。 ​**模型约束**：此接口仅可在Stage模型下使用。 |
-| CHANGE_TIME23+ | 'change_time' | 照片的更改时间。 |
-| LOCAL_ASSET_SIZE | 'local_asset_size' | 本地文件的实际大小。 - 该属性仅表示本地文件大小，默认值为0表示纯云文件或尚未识别的本地文件大小。 - 当本地文件为动态照片且模式发生变化时，该属性会发生变化。例如：当图库中的动态照片处于“关闭动态”状态时，该属性仅表示封面帧大小。 **起始版本：** 26.0.0 ​**模型约束：** 此接口仅可在Stage模型下使用。 |
+| CHANGE_TIME23+ | 'change_time' | 照片的更改时间（单位：秒）。 |
+| LOCAL_ASSET_SIZE | 'local_asset_size' | 本地文件的实际大小（单位：字节）。 - 该属性仅表示本地文件大小，默认值为0表示纯云文件或尚未识别的本地文件大小。 - 当本地文件为动态照片且模式发生变化时，该属性会发生变化。例如：当图库中的动态照片处于“关闭动态”状态时，该属性仅表示封面帧大小。 **起始版本：** 26.0.0 ​**模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### AlbumKeys
 
@@ -142,7 +143,7 @@ PhotoSubtype是不同[PhotoAsset](https://developer.huawei.com/consumer/cn/doc/h
 | URI | 'uri' | 相册uri。 |
 | ALBUM_NAME | 'album_name' | 相册名字。 |
 | ALBUM_LPATH23+ | 'lpath' | 相册的虚拟路径。 支持的相册及对应的lpath值： - 相机应用相册：'/DCIM/Camera' - 截图应用相册：'/Pictures/Screenshots' - 屏幕录制应用相册：'/Pictures/Screenrecords' - 用户创建的相册：'/Pictures/Users/{用户自定义相册名称}' |
-| CHANGE_TIME23+ | 'change_time' | 相册的更改时间。 |
+| CHANGE_TIME23+ | 'change_time' | 相册的更改时间（单位：秒）。 |
 
 #### ResourceType11+
 

@@ -2,8 +2,8 @@
 title: "SkillInfo"
 upstream_id: "harmonyos-references/js-apis-bundlemanager-skillinfo"
 catalog: "harmonyos-references"
-content_hash: "7cb477dc76ed"
-synced_at: "2026-07-09T00:57:10.704496"
+content_hash: "15dc0c2519c5"
+synced_at: "2026-07-28T16:40:40.902929"
 ---
 
 # SkillInfo
@@ -43,6 +43,8 @@ import { skillManager } from '@kit.AbilityKit';
 | srcEntries | Array | 是 | 是 | 实现技能的代码文件路径列表。当应用调用[skillManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-skillmanager)接口，传入的[SkillInfoFlag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-skillmanager#skillinfoflag)不包含GET_SKILL_INFO_WITH_SRC_ENTRIES时，该字段将返回默认值为undefined，开发者使用时需要进行有效值判断以防代码异常。 |
 | permissions | Array | 是 | 是 | 调用该技能所需要的权限列表。当应用调用[skillManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-skillmanager)接口，传入的[SkillInfoFlag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-skillmanager#skillinfoflag)不包含GET_SKILL_INFO_WITH_PERMISSIONS时，该字段将返回默认值为undefined，开发者使用时需要进行有效值判断以防代码异常。 |
 | requestPermissions | Array | 是 | 是 | 技能所在的模块申请的权限。当应用调用[skillManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-skillmanager)接口，传入的[SkillInfoFlag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-skillmanager#skillinfoflag)不包含GET_SKILL_INFO_WITH_REQUEST_PERMISSIONS时，该字段将返回默认值为undefined，开发者使用时需要进行有效值判断以防代码异常。 |
+| version | string | 是 | 是 | 技能的版本号，格式为主版本号.次版本号.补丁版本号。 |
+| visibility | string | 是 | 是 | 技能的可见性，支持的取值如下： - "private"：私有，仅当前应用可见。 - "system"：系统级，系统应用和当前应用可见。 - "public"：公开，所有应用都可见。 |
 
 #### SkillType
 

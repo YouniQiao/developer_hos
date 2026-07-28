@@ -2,8 +2,8 @@
 title: "FIDO2_PublicKeyCredentialUserEntity"
 upstream_id: "harmonyos-references/_f_i_d_o2___public_key_credential_user_entity"
 catalog: "harmonyos-references"
-content_hash: "e3ee21cdff44"
-synced_at: "2026-07-09T00:59:19.127719"
+content_hash: "ac5919c803f5"
+synced_at: "2026-07-28T16:50:31.856671"
 ---
 
 # FIDO2_PublicKeyCredentialUserEntity
@@ -14,7 +14,9 @@ synced_at: "2026-07-09T00:59:19.127719"
 
 起始版本： 6.0.0(20)
 
-相关模块： [FIDO2](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey)
+相关模块： [FIDO2（通行密钥服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey)
+
+所在头文件： [fido2_api.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication_capi_header_fido2)
 
 #### 汇总
 

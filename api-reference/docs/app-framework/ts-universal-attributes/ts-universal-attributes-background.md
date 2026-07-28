@@ -2,8 +2,8 @@
 title: "背景设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-background"
 catalog: "harmonyos-references"
-content_hash: "16a152ce2684"
-synced_at: "2026-07-09T00:57:38.457230"
+content_hash: "dfe7280ab001"
+synced_at: "2026-07-28T16:42:02.136089"
 ---
 
 # 背景设置
@@ -358,7 +358,7 @@ backgroundBlurStyle(style: Optional<BlurStyle>, options?: BackgroundBlurStyleOpt
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | style | Optional | 是 | 背景模糊样式。模糊样式中封装了模糊半径、蒙版颜色、蒙版透明度、饱和度、亮度五个参数。 当style的值为undefined时，恢复为默认关闭模糊的背景。 |
-| options | [BackgroundBlurStyleOptions](#backgroundblurstyleoptions10对象说明) | 否 | 背景模糊选项。 该参数在ArkTS卡片中，暂不支持使用。 |
+| options | [BackgroundBlurStyleOptions](#backgroundblurstyleoptions10对象说明) | 否 | 背景模糊选项。用于配置模糊激活策略和不生效时的背景色。不传入时使用默认激活策略[BlurStyleActivePolicy](#blurstyleactivepolicy14).ALWAYS_ACTIVE。 该参数在ArkTS卡片中，暂不支持使用。 |
 | sysOptions | [SystemAdaptiveOptions](#systemadaptiveoptions19) | 否 | 系统自适应调节参数。 默认值：{ disableSystemAdaptation: false } |
 
 返回值：
@@ -373,7 +373,7 @@ backgroundBlurStyle(style: Optional<BlurStyle>, options?: BackgroundBlurStyleOpt
 
 backdropBlur(value: number, options?: BlurOptions): T
 
-为组件添加背景模糊效果，支持自定义设置模糊半径和灰阶参数。
+为组件添加背景模糊效果，对组件背后的视觉内容进行采样和模糊处理，支持自定义设置模糊半径和灰阶参数。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -398,7 +398,7 @@ backdropBlur(value: number, options?: BlurOptions): T
 
 backdropBlur(radius: Optional<number>, options?: BlurOptions): T
 
-为组件添加背景模糊效果，支持自定义设置模糊半径和灰阶参数。与[backdropBlur](#backdropblur)相比，radius参数新增了对undefined类型的支持。
+为组件添加背景模糊效果，对组件背后的视觉内容进行采样和模糊处理，支持自定义设置模糊半径和灰阶参数。与[backdropBlur](#backdropblur)相比，radius参数新增了对undefined类型的支持。
 
 卡片能力： 从API version 18开始，该接口支持在ArkTS卡片中使用。
 
@@ -412,7 +412,7 @@ backdropBlur(radius: Optional<number>, options?: BlurOptions): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| radius | Optional | 是 | 为当前组件添加背景模糊效果，入参为模糊半径，模糊半径越大越模糊，为0时不模糊。当radius的值为undefined时，恢复为默认无模糊的背景。 取值范围：[0, +∞) 默认值：0 |
+| radius | Optional | 是 | 为当前组件添加背景模糊效果，入参为模糊半径，模糊半径越大越模糊，为0时不模糊。当radius的值为undefined时，恢复为默认无模糊的背景。 取值范围：[0, +∞) 默认值：0 单位：px |
 | options | [BlurOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-foreground-blur-style#bluroptions11) | 否 | 灰阶模糊参数。对图像中的黑白色进行色阶调整，使其趋于灰色更为柔和美观，对图像中的彩色调整没有效果。 默认值：grayscale: [0,0] |
 
 返回值：
@@ -598,7 +598,7 @@ backgroundImageResizable(value: ResizableOptions): T
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-系统能力：SystemCapability.ArkUI.ArkUI.Full
+系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
@@ -622,7 +622,7 @@ backgroundBrightness(params: BackgroundBrightnessOptions): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| params | [BackgroundBrightnessOptions](#backgroundbrightnessoptions12对象说明) | 是 | 设置组件背景提亮效果，包括：亮度变化速率，提亮程度。 |
+| params | [BackgroundBrightnessOptions](#backgroundbrightnessoptions12对象说明) | 是 | 设置组件背景提亮效果，包括：亮度变化速率、提亮程度。 |
 
 返回值：
 
@@ -646,7 +646,7 @@ backgroundBrightness(options: Optional<BackgroundBrightnessOptions>): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | Optional | 是 | 设置组件背景提亮效果，包括：亮度变化速率，提亮程度。 当options的值为undefined时，恢复为无提亮效果的背景。 |
+| options | Optional | 是 | 设置组件背景提亮效果，包括：亮度变化速率、提亮程度。 当options的值为undefined时，恢复为无提亮效果的背景。 |
 
 返回值：
 
@@ -752,7 +752,7 @@ struct BackgroundExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413028.png)
+ ![](./img/zh-cn_image_0000002686087763.png)
 
 #### [h2]示例2（设置背景模糊样式）
 
@@ -766,7 +766,7 @@ struct BackgroundBlurStyleDemo {
   build() {
     Column() {
       Row() {
-        Text("Thin Material")
+        Text('Thin Material')
       }
       .width('50%')
       .height('50%')
@@ -782,7 +782,7 @@ struct BackgroundBlurStyleDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732259.png)
+ ![](./img/zh-cn_image_0000002685927935.png)
 
 #### [h2]示例3（设置组件背景）
 
@@ -816,7 +816,7 @@ struct BackgroundExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253138.png)
+ ![](./img/zh-cn_image_0000002656008256.png)
 
 #### [h2]示例4（设置组件背景提亮效果）
 
@@ -850,15 +850,15 @@ struct BackgroundBrightnessDemo {
 
 rate和lightUpDegree参数值为0.5,0.5：
 
-![](./img/zh-cn_image_0000002661612323.png)
+![](./img/zh-cn_image_0000002655848336.png)
 
 修改rate和lightUpDegree参数值为0.5,-0.1：
 
-![](./img/zh-cn_image_0000002631413030.png)
+![](./img/zh-cn_image_0000002686087765.png)
 
 去掉backgroundBrightness的设置，效果如下：
 
-![](./img/zh-cn_image_0000002661732263.png)
+![](./img/zh-cn_image_0000002685927937.png)
 
 #### [h2]示例5（设置模糊属性）
 
@@ -878,7 +878,7 @@ struct BlurEffectsExample {
         Text('blur')
           .blur(5).margin(10)
         Text('blur')
-          .blur(10, undefined).margin(10) // 内容模糊半径为5，禁用系统自适应优化策略。
+          .blur(10, undefined).margin(10) // 内容模糊半径为10，不设置灰阶。
         Text('blur')
           .blur(15).margin(10)
       }.width('90%').height(40)
@@ -898,7 +898,7 @@ struct BlurEffectsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253140.png)
+ ![](./img/zh-cn_image_0000002656008258.png)
 
 #### [h2]示例6（设置文字异形模糊效果）
 
@@ -975,7 +975,7 @@ struct Index {
         }
         // blendMode采用离屏渲染，SRC_OVER模式下会将当前组件内容覆盖显示在下方画布之上
         .blendMode(BlendMode.SRC_OVER, BlendApplyType.OFFSCREEN)
-        // backgroundEffect配置组件背景的圆角、饱和度、亮度及动态RGBA颜色
+        // backgroundEffect配置组件背景的模糊半径、饱和度、亮度及动态RGBA颜色
         .backgroundEffect({
           radius: this.rad,
           saturation: this.satVal,
@@ -997,7 +997,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612325.jpeg)
+ ![](./img/zh-cn_image_0000002655848338.jpeg)
 
 #### [h2]示例7（模糊效果对比）
 
@@ -1053,7 +1053,7 @@ struct BackGroundBlur {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413032.png)
+ ![](./img/zh-cn_image_0000002686087767.png)
 
 #### [h2]示例8（设置P3色域背景效果）
 
@@ -1079,7 +1079,7 @@ struct P3BackgroundDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732265.png)
+ ![](./img/zh-cn_image_0000002685927939.png)
 
 #### [h2]示例9（设置组件背景扩展）
 
@@ -1131,4 +1131,4 @@ struct BackgroundExtension {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253142.png)
+ ![](./img/zh-cn_image_0000002656008260.png)

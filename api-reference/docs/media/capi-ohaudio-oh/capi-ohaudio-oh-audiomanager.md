@@ -2,19 +2,19 @@
 title: "OH_AudioManager"
 upstream_id: "harmonyos-references/capi-ohaudio-oh-audiomanager"
 catalog: "harmonyos-references"
-content_hash: "cb126ce06ade"
-synced_at: "2026-07-09T01:00:10.744502"
+content_hash: "3a52211c9eab"
+synced_at: "2026-07-28T16:51:29.309331"
 ---
 
 # OH_AudioManager
 
 ```
-typedef struct OH_AudioManager OH_AudioManager
+typedef struct OH_AudioManager OH_AudioManager;
 ```
 
 #### 概述
 
-声明音频管理器。用于管理音频管理相关功能。
+声明音频管理器。用于管理音频相关功能。
 
 起始版本： 12
 

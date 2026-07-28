@@ -1,28 +1,26 @@
 ---
-
 title: "通用事件"
 upstream_id: "harmonyos-references/js-lite-common-events"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T00:58:26.605511"
-content_hash: "2132d2763316"
+content_hash: "bae93022ca0e"
+synced_at: "2026-07-28T16:49:06.955570"
 ---
-
 
 # 通用事件
 
 #### 事件说明
 
-相对于私有事件，大部分组件都可以绑定如下事件。
+相对于私有事件，支持通用事件的组件可以绑定点击、长按、滑动等通用事件，用于响应用户基础交互操作，具体支持情况请以对应组件文档为准。
 
 | 名称 | 参数 | 描述 |
 | --- | --- | --- |
 | click | - | 点击动作触发该事件。 |
 | longpress | - | 长按动作触发该事件。 |
-| swipe5+ | SwipeEvent | 组件上快速滑动后触发。 |
+| swipe5+ | [SwipeEvent](#swipeevent) | 组件上快速滑动后触发。 |
 
 #### BaseEvent
 
-基础事件类型。
+BaseEvent是基础事件类型，用于描述事件类型、触发时间、设备信息和目标对象等通用事件基础信息，便于在事件处理过程中获取统一的事件上下文。
 
 | 属性 | 类型 | 说明 |
 | --- | --- | --- |
@@ -33,7 +31,7 @@ content_hash: "2132d2763316"
 
 #### SwipeEvent
 
-继承自[BaseEvent](#baseevent)。
+SwipeEvent继承自[BaseEvent](#baseevent)，用于描述组件上快速滑动触发的事件信息，包含滑动方向属性，适用于处理组件滑动交互场景。
 
 | 属性 | 类型 | 说明 |
 | --- | --- | --- |

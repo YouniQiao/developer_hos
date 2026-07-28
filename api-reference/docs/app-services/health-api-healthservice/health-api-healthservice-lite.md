@@ -2,8 +2,8 @@
 title: "healthService (运动健康联动服务)(Lite)"
 upstream_id: "harmonyos-references/health-api-healthservice-lite"
 catalog: "harmonyos-references"
-content_hash: "8c4f622fd7b9"
-synced_at: "2026-07-09T01:01:19.889043"
+content_hash: "34060d8b61c1"
+synced_at: "2026-07-28T16:52:38.661457"
 ---
 
 # healthService (运动健康联动服务)(Lite)
@@ -174,7 +174,7 @@ type ConfigType = number | string | boolean
 | **名称** | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
 | linkageType | [LinkageType](#linkagetype) | 否 | 否 | 联动类型。 |
-| sportType | number | 否 | 否 | 运动类型，参见[锻炼记录类型常量](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-exercisedequencehelper-lite)子数据类型id。 |
+| sportType | number | 否 | 否 | 运动类型，参见[锻炼记录类型常量](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-exercisesequencehelper-lite)子数据类型id。 |
 | activityGoals | [Goal](#goal)[] | 否 | 是 | 联动运动目标，若未填写，默认为空。 |
 | extensionConfig | Record | 否 | 是 | 扩展配置项，若未填写，默认为空。 |
 
@@ -334,7 +334,7 @@ import healthService from '@hms.health.service';
 try {
   healthService.workout.pause();
 } catch (err) {
-  //
+  // 异常处理流程
 }
 ```
 
@@ -411,7 +411,7 @@ try {
 }
 ```
 
-#### [h2]workout.onData
+#### [h2]workout.onData(deprecated)
 
 onData(dataType: undefined, listener: Callback<SampleReal[]>): void
 
@@ -424,6 +424,10 @@ onData(dataType: undefined, listener: Callback<SampleReal[]>): void
 模型约束： 此接口仅可在FA模型下使用。
 
 起始版本： 6.1.1(24)
+
+废弃版本： 26.0.0
+
+替代接口： [workout.onData](#workoutondata)
 
 参数：
 
@@ -458,7 +462,53 @@ try {
 }
 ```
 
-#### [h2]workout.offData
+#### [h2]workout.onData
+
+onData(listener: Callback<SampleReal[]>): void
+
+订阅所有类型的数据，使用callback异步回调。
+
+![](./img/note_3.0-zh-cn.png) 该接口调用前，需先使用[start](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthservice-lite#workoutstart)方法确保联动已经开启。
+
+系统能力： SystemCapability.Health.HealthService.Lite
+
+模型约束： 此接口仅可在FA模型下使用。
+
+起始版本： 26.0.0
+
+参数：
+
+| **参数名** | **类型** | 必填 | **说明** |
+| --- | --- | --- | --- |
+| listener | Callback | 是 | 回调函数，返回联动运动数据。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. For the app, ensure that you have requested Health Service Kit, selected the product type, and enabled required data read and write permissions, and that the user has granted authorization. |
+| [1009104001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104001-联动已开启) | Sports service busy. Workout has already been started by another app. |
+| [1009104003](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104003-非法指令) | Invalid command. The API is called when workout is not started. |
+| [1009104999](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104999-通用错误码) | System internal error. |
+
+示例：
+
+```
+import healthService from '@hms.health.service';
+
+try {
+  const callback = (sampleReals) => {
+    // 运动数据回调处理流程
+  };
+  healthService.workout.onData(callback);
+} catch (err) {
+  // 异常处理流程
+}
+```
+
+#### [h2]workout.offData(deprecated)
 
 offData(dataType: undefined, listener?: Callback<SampleReal[]>): void
 
@@ -468,9 +518,13 @@ offData(dataType: undefined, listener?: Callback<SampleReal[]>): void
 
 系统能力： SystemCapability.Health.HealthService.Lite
 
+模型约束： 此接口仅可在FA模型下使用。
+
 起始版本： 6.1.1(24)
 
-模型约束： 此接口仅可在FA模型下使用。
+废弃版本： 26.0.0
+
+替代接口： [workout.offData](#workoutoffdata)
 
 参数：
 
@@ -499,6 +553,51 @@ try {
     // 数据回调处理流程
   };
   healthService.workout.offData(undefined, callback);
+} catch (err) {
+  // 异常处理流程
+}
+```
+
+#### [h2]workout.offData
+
+offData(listener?: Callback<SampleReal[]>): void
+
+取消订阅所有类型的数据。
+
+![](./img/note_3.0-zh-cn.png) 该接口调用前，需先使用[start](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthservice-lite#workoutstart)方法确保联动已经开启。
+
+系统能力： SystemCapability.Health.HealthService.Lite
+
+模型约束： 此接口仅可在FA模型下使用。
+
+起始版本： 26.0.0
+
+参数：
+
+| **参数名** | **类型** | 必填 | **说明** |
+| --- | --- | --- | --- |
+| listener | Callback | 否 | 需要取消订阅的回调函数，若不填写则代表取消所有监听。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. For the app, ensure that you have requested Health Service Kit, selected the product type, and enabled required data read and write permissions, and that the user has granted authorization. |
+| [1009104001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104001-联动已开启) | Sports service busy. Workout has already been started by another app. |
+| [1009104999](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104999-通用错误码) | Internal system error. |
+
+示例：
+
+```
+import healthService from '@hms.health.service';
+
+try {
+  const callback = (sampleReals) => {
+    // 数据回调处理流程
+  };
+  healthService.workout.offData(callback);
 } catch (err) {
   // 异常处理流程
 }

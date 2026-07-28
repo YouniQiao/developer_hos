@@ -2,15 +2,15 @@
 title: "crypto_asym_cipher.h"
 upstream_id: "harmonyos-references/capi-crypto-asym-cipher-h"
 catalog: "harmonyos-references"
-content_hash: "853af63acbfc"
-synced_at: "2026-07-09T00:59:12.381229"
+content_hash: "fcd57698f5e6"
+synced_at: "2026-07-28T16:50:21.730142"
 ---
 
 # crypto_asym_cipher.h
 
 #### 概述
 
-定义非对称密钥加密API。
+定义非对称加解密接口。
 
 引用文件： <CryptoArchitectureKit/crypto_asym_cipher.h>
 
@@ -28,8 +28,8 @@ synced_at: "2026-07-09T00:59:12.381229"
 
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
-| [OH_CryptoAsymCipher](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptoasymcipherapi-oh-cryptoasymcipher) | OH_CryptoAsymCipher | 定义非对称加密结构。 |
-| [OH_CryptoSm2CiphertextSpec](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptoasymcipherapi-oh-cryptosm2ciphertextspec) | OH_CryptoSm2CiphertextSpec | 定义SM2密文规格结构。 |
+| [OH_CryptoAsymCipher](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptoasymcipherapi-oh-cryptoasymcipher) | OH_CryptoAsymCipher | 非对称加解密结构体，表示非对称加解密上下文。 |
+| [OH_CryptoSm2CiphertextSpec](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptoasymcipherapi-oh-cryptosm2ciphertextspec) | OH_CryptoSm2CiphertextSpec | SM2密文规格结构体，表示SM2密文规格。 |
 
 #### [h2]枚举
 
@@ -41,13 +41,13 @@ synced_at: "2026-07-09T00:59:12.381229"
 
 | 名称 | 描述 |
 | --- | --- |
-| [OH_Crypto_ErrCode OH_CryptoAsymCipher_Create(const char *algoName, OH_CryptoAsymCipher **ctx)](#oh_cryptoasymcipher_create) | 根据给定的算法名称创建非对称加密。 注意：创建的资源必须通过[OH_CryptoAsymCipher_Destroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-asym-cipher-h#oh_cryptoasymcipher_destroy)销毁。 |
-| [OH_Crypto_ErrCode OH_CryptoAsymCipher_Init(OH_CryptoAsymCipher *ctx, Crypto_CipherMode mode, OH_CryptoKeyPair *key)](#oh_cryptoasymcipher_init) | 初始化非对称加密。 |
-| [OH_Crypto_ErrCode OH_CryptoAsymCipher_Final(OH_CryptoAsymCipher *ctx, const Crypto_DataBlob *in, Crypto_DataBlob *out)](#oh_cryptoasymcipher_final) | 完成非对称加密。 注意：使用完成后必须通过[OH_Crypto_FreeDataBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_freedatablob)释放out内存。 |
-| [void OH_CryptoAsymCipher_Destroy(OH_CryptoAsymCipher *ctx)](#oh_cryptoasymcipher_destroy) | 销毁非对称加密上下文。 |
+| [OH_Crypto_ErrCode OH_CryptoAsymCipher_Create(const char *algoName, OH_CryptoAsymCipher **ctx)](#oh_cryptoasymcipher_create) | 根据给定的算法名称创建非对称加解密上下文。 注意：创建的资源必须通过[OH_CryptoAsymCipher_Destroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-asym-cipher-h#oh_cryptoasymcipher_destroy)销毁。 |
+| [OH_Crypto_ErrCode OH_CryptoAsymCipher_Init(OH_CryptoAsymCipher *ctx, Crypto_CipherMode mode, OH_CryptoKeyPair *key)](#oh_cryptoasymcipher_init) | 使用给定的加解密模式和密钥初始化非对称加解密上下文。 |
+| [OH_Crypto_ErrCode OH_CryptoAsymCipher_Final(OH_CryptoAsymCipher *ctx, const Crypto_DataBlob *in, Crypto_DataBlob *out)](#oh_cryptoasymcipher_final) | 结束加解密操作。 注意：使用完成后必须通过[OH_Crypto_FreeDataBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_freedatablob)释放out内存。 |
+| [void OH_CryptoAsymCipher_Destroy(OH_CryptoAsymCipher *ctx)](#oh_cryptoasymcipher_destroy) | 销毁非对称加解密上下文。 |
 | [OH_Crypto_ErrCode OH_CryptoSm2CiphertextSpec_Create(Crypto_DataBlob *sm2Ciphertext, OH_CryptoSm2CiphertextSpec **spec)](#oh_cryptosm2ciphertextspec_create) | 创建SM2密文规格。 注意：创建的资源必须通过[OH_CryptoSm2CiphertextSpec_Destroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-asym-cipher-h#oh_cryptosm2ciphertextspec_destroy)销毁。 |
-| [OH_Crypto_ErrCode OH_CryptoSm2CiphertextSpec_GetItem(OH_CryptoSm2CiphertextSpec *spec, CryptoSm2CiphertextSpec_item item, Crypto_DataBlob *out)](#oh_cryptosm2ciphertextspec_getitem) | 获取SM2密文规格中的指定项。 注意：使用完成后必须通过[OH_Crypto_FreeDataBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_freedatablob)释放out内存。 |
-| [OH_Crypto_ErrCode OH_CryptoSm2CiphertextSpec_SetItem(OH_CryptoSm2CiphertextSpec *spec, CryptoSm2CiphertextSpec_item item, Crypto_DataBlob *in)](#oh_cryptosm2ciphertextspec_setitem) | 设置SM2密文规格中的指定项。 |
+| [OH_Crypto_ErrCode OH_CryptoSm2CiphertextSpec_GetItem(OH_CryptoSm2CiphertextSpec *spec, CryptoSm2CiphertextSpec_item item, Crypto_DataBlob *out)](#oh_cryptosm2ciphertextspec_getitem) | 获取SM2密文的指定项。 注意：使用完成后必须通过[OH_Crypto_FreeDataBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_freedatablob)释放out内存。 |
+| [OH_Crypto_ErrCode OH_CryptoSm2CiphertextSpec_SetItem(OH_CryptoSm2CiphertextSpec *spec, CryptoSm2CiphertextSpec_item item, Crypto_DataBlob *in)](#oh_cryptosm2ciphertextspec_setitem) | 设置SM2密文规格的指定项。 |
 | [OH_Crypto_ErrCode OH_CryptoSm2CiphertextSpec_Encode(OH_CryptoSm2CiphertextSpec *spec, Crypto_DataBlob *out)](#oh_cryptosm2ciphertextspec_encode) | 将SM2密文规格编码为DER格式密文。 注意：使用完成后必须通过[OH_Crypto_FreeDataBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_freedatablob)释放out内存。 |
 | [void OH_CryptoSm2CiphertextSpec_Destroy(OH_CryptoSm2CiphertextSpec *spec)](#oh_cryptosm2ciphertextspec_destroy) | 销毁SM2密文规格。 |
 
@@ -80,7 +80,7 @@ OH_Crypto_ErrCode OH_CryptoAsymCipher_Create(const char *algoName, OH_CryptoAsym
 ```
  描述
 
-根据给定的算法名称创建非对称加密。
+根据给定的算法名称创建非对称加解密上下文。
 
 注意：创建的资源必须通过[OH_CryptoAsymCipher_Destroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-asym-cipher-h#oh_cryptoasymcipher_destroy)销毁。
 
@@ -90,14 +90,18 @@ OH_Crypto_ErrCode OH_CryptoAsymCipher_Create(const char *algoName, OH_CryptoAsym
 
 | 参数项 | 描述 |
 | --- | --- |
-| const char *algoName | 用于生成加密的算法名称。 例如"RSA|PKCS1_OAEP|SHA384|MGF1_SHA384", "SM2|SM3"。 |
-| [OH_CryptoAsymCipher](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptoasymcipherapi-oh-cryptoasymcipher) **ctx | 指向非对称加密上下文的指针。 |
+| const char *algoName | [in] 非对称加解密算法名称，不能为NULL。取值如下： - RSA算法PKCS1填充模式：取值为"RSA|PKCS1"。 - RSA算法OAEP填充模式：格式为"RSA|PKCS1_OAEP|摘要|MGF1摘要"，示例："RSA|PKCS1_OAEP|SHA256|MGF1_SHA256"。摘要支持"MD5"、"SHA1"、"SHA224"、"SHA256"、"SHA384"、"SHA512"。MGF1摘要支持"MGF1_SHA1"、"MGF1_SHA224"、"MGF1_SHA256"、"MGF1_SHA384"、"MGF1_SHA512"。 - RSA算法NoPadding填充模式：取值为"RSA|NoPadding"。 - SM2算法：格式为"SM2|摘要"，示例："SM2|SM3"。摘要支持"MD5"、"SHA1"、"SHA224"、"SHA256"、"SHA384"、"SHA512"、"SM3"。 |
+| [OH_CryptoAsymCipher](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptoasymcipherapi-oh-cryptoasymcipher) **ctx | [out] 指向非对称加解密上下文指针的指针。ctx不能为NULL，*ctx必须为NULL。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_PARAMETER_CHECK_FAILED：参数检查失败。 CRYPTO_OPERTION_ERROR：调用三方算法库API出错。 |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | - - CRYPTO_SUCCESS：操作成功。 - - - CRYPTO_PARAMETER_CHECK_FAILED：algoName或ctx为NULL。 - - - CRYPTO_NOT_SUPPORTED：不支持的算法。 - - - CRYPTO_MEMORY_ERROR：内存分配失败。 - - - CRYPTO_OPERTION_ERROR：加解密操作失败。 - - |
+
+参考：
+
+[OH_CryptoAsymCipher_Init](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-asym-cipher-h#oh_cryptoasymcipher_init) 初始化非对称加解密上下文。
 
 #### [h2]OH_CryptoAsymCipher_Init()
 
@@ -106,7 +110,7 @@ OH_Crypto_ErrCode OH_CryptoAsymCipher_Init(OH_CryptoAsymCipher *ctx, Crypto_Ciph
 ```
  描述
 
-初始化非对称加密。
+使用给定的加解密模式和密钥初始化非对称加解密上下文。
 
 起始版本： 20
 
@@ -114,19 +118,19 @@ OH_Crypto_ErrCode OH_CryptoAsymCipher_Init(OH_CryptoAsymCipher *ctx, Crypto_Ciph
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_CryptoAsymCipher](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptoasymcipherapi-oh-cryptoasymcipher) *ctx | 非对称加密上下文。 |
-| [Crypto_CipherMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#crypto_ciphermode) mode | 加密模式是加密还是解密。 |
-| [OH_CryptoKeyPair](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptoasymkeyapi-oh-cryptokeypair) *key | 非对称密钥。 |
+| [OH_CryptoAsymCipher](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptoasymcipherapi-oh-cryptoasymcipher) *ctx | [in] 非对称加解密上下文。不能为NULL。 |
+| [Crypto_CipherMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#crypto_ciphermode) mode | [in] 加解密模式，加密或解密。 |
+| [OH_CryptoKeyPair](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptoasymkeyapi-oh-cryptokeypair) *key | [in] 非对称密钥。不能为NULL。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_PARAMETER_CHECK_FAILED：参数检查失败。 CRYPTO_OPERTION_ERROR：调用三方算法库API出错。 |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | - - CRYPTO_SUCCESS：操作成功。 - - - CRYPTO_PARAMETER_CHECK_FAILED：ctx或key为NULL。 - - - CRYPTO_NOT_SUPPORTED：不支持的操作或算法。 - - - CRYPTO_MEMORY_ERROR：内存操作失败。 - - - CRYPTO_OPERTION_ERROR：加解密初始化失败。 - - |
 
 参考：
 
-[OH_CryptoAsymCipher_Final](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-asym-cipher-h#oh_cryptoasymcipher_final)
+[OH_CryptoAsymCipher_Final](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-asym-cipher-h#oh_cryptoasymcipher_final) 结束加解密操作。
 
 #### [h2]OH_CryptoAsymCipher_Final()
 
@@ -135,7 +139,7 @@ OH_Crypto_ErrCode OH_CryptoAsymCipher_Final(OH_CryptoAsymCipher *ctx, const Cryp
 ```
  描述
 
-完成非对称加密。
+结束加解密操作。
 
 注意：使用完成后必须通过[OH_Crypto_FreeDataBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_freedatablob)释放out内存。
 
@@ -145,19 +149,15 @@ OH_Crypto_ErrCode OH_CryptoAsymCipher_Final(OH_CryptoAsymCipher *ctx, const Cryp
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_CryptoAsymCipher](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptoasymcipherapi-oh-cryptoasymcipher) *ctx | 非对称加密上下文。 |
-| [const Crypto_DataBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptocommonapi-crypto-datablob) *in | 要加密或解密的数据。 |
-| [Crypto_DataBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptocommonapi-crypto-datablob) *out | 最终加密或解密的数据。 |
+| [OH_CryptoAsymCipher](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptoasymcipherapi-oh-cryptoasymcipher) *ctx | [in] 非对称加解密上下文。不能为NULL。 |
+| [const Crypto_DataBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptocommonapi-crypto-datablob) *in | [in] 待加密或解密的数据。不能为NULL。 |
+| [Crypto_DataBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptocommonapi-crypto-datablob) *out | [out] 指向用于存储加密或解密结果的Crypto_DataBlob结构体的指针。不能为NULL。调用前需将out初始化为{0}，不要预分配out->data内存。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_PARAMETER_CHECK_FAILED：参数检查失败。 CRYPTO_OPERTION_ERROR：调用三方算法库API出错。 |
-
-参考：
-
-[OH_CryptoAsymCipher_Init](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-asym-cipher-h#oh_cryptoasymcipher_init)
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | - - CRYPTO_SUCCESS：操作成功。 - - - CRYPTO_PARAMETER_CHECK_FAILED：ctx、in或out为NULL。 - - - CRYPTO_NOT_SUPPORTED：不支持的操作或算法。 - - - CRYPTO_MEMORY_ERROR：内存分配失败。 - - - CRYPTO_OPERTION_ERROR：加解密完成失败。可能的原因：RSA加密时明文超过密钥长度和填充模式允许 的最大长度；RSA解密时密钥错误或密文损坏；SM2解密时密钥错误或密文损坏；SM2密文的ASN.1结构无效。 - - |
 
 #### [h2]OH_CryptoAsymCipher_Destroy()
 
@@ -166,13 +166,15 @@ void OH_CryptoAsymCipher_Destroy(OH_CryptoAsymCipher *ctx)
 ```
  描述
 
-销毁非对称加密上下文。
+销毁非对称加解密上下文。
+
+起始版本： 20
 
 参数：
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_CryptoAsymCipher](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptoasymcipherapi-oh-cryptoasymcipher) *ctx | 非对称加密上下文。 |
+| [OH_CryptoAsymCipher](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptoasymcipherapi-oh-cryptoasymcipher) *ctx | [in] 非对称加解密上下文。 |
 
 #### [h2]OH_CryptoSm2CiphertextSpec_Create()
 
@@ -191,14 +193,20 @@ OH_Crypto_ErrCode OH_CryptoSm2CiphertextSpec_Create(Crypto_DataBlob *sm2Cipherte
 
 | 参数项 | 描述 |
 | --- | --- |
-| [Crypto_DataBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptocommonapi-crypto-datablob) *sm2Ciphertext | SM2密文DER格式数据，如果为NULL则创建空的SM2密文规格。 |
-| [OH_CryptoSm2CiphertextSpec](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptoasymcipherapi-oh-cryptosm2ciphertextspec) **spec | 输出的SM2密文规格。 |
+| [Crypto_DataBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptocommonapi-crypto-datablob) *sm2Ciphertext | [in] DER格式的SM2密文，如果为NULL则创建空的SM2密文规格。 |
+| [OH_CryptoSm2CiphertextSpec](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptoasymcipherapi-oh-cryptosm2ciphertextspec) **spec | [out] 指向SM2密文规格指针的指针。spec不能为NULL，*spec必须为NULL。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_PARAMETER_CHECK_FAILED：参数检查失败。 CRYPTO_OPERTION_ERROR：调用三方算法库API出错。 |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | - - CRYPTO_SUCCESS：操作成功。 - - - CRYPTO_PARAMETER_CHECK_FAILED：spec为NULL。 - - - CRYPTO_NOT_SUPPORTED：不支持的操作或算法。 - - - CRYPTO_MEMORY_ERROR：内存分配失败。 - - - CRYPTO_OPERTION_ERROR：解析SM2密文失败。可能的原因：输入数据不是有效的DER编码SM2密文。 - - |
+
+参考：
+
+[OH_CryptoSm2CiphertextSpec_GetItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-asym-cipher-h#oh_cryptosm2ciphertextspec_getitem) 获取SM2密文的指定项。
+
+[OH_CryptoSm2CiphertextSpec_SetItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-asym-cipher-h#oh_cryptosm2ciphertextspec_setitem) 设置SM2密文规格的指定项。
 
 #### [h2]OH_CryptoSm2CiphertextSpec_GetItem()
 
@@ -207,7 +215,7 @@ OH_Crypto_ErrCode OH_CryptoSm2CiphertextSpec_GetItem(OH_CryptoSm2CiphertextSpec 
 ```
  描述
 
-获取SM2密文规格中的指定项。
+获取SM2密文的指定项。
 
 注意：使用完成后必须通过[OH_Crypto_FreeDataBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_freedatablob)释放out内存。
 
@@ -217,15 +225,15 @@ OH_Crypto_ErrCode OH_CryptoSm2CiphertextSpec_GetItem(OH_CryptoSm2CiphertextSpec 
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_CryptoSm2CiphertextSpec](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptoasymcipherapi-oh-cryptosm2ciphertextspec) *spec | SM2密文规格。 |
-| [CryptoSm2CiphertextSpec_item](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-asym-cipher-h#cryptosm2ciphertextspec_item) item | SM2密文规格项。 |
-| [Crypto_DataBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptocommonapi-crypto-datablob) *out | 输出数据。 |
+| [OH_CryptoSm2CiphertextSpec](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptoasymcipherapi-oh-cryptosm2ciphertextspec) *spec | [in] SM2密文规格。不能为NULL。 |
+| [CryptoSm2CiphertextSpec_item](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-asym-cipher-h#cryptosm2ciphertextspec_item) item | [in] SM2密文规格项。 |
+| [Crypto_DataBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptocommonapi-crypto-datablob) *out | [out] 指向用于存储输出数据的Crypto_DataBlob结构体的指针。不能为NULL。调用前需将out初始化为{0}，不要预分配out->data内存。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_PARAMETER_CHECK_FAILED：参数检查失败。 CRYPTO_OPERTION_ERROR：调用三方算法库API出错。 |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | - - CRYPTO_SUCCESS：操作成功。 - - - CRYPTO_PARAMETER_CHECK_FAILED：spec或out为NULL。 - - - CRYPTO_NOT_SUPPORTED：不支持的操作或算法。 - - - CRYPTO_MEMORY_ERROR：内存分配失败。 - - - CRYPTO_OPERTION_ERROR：加解密操作失败。 - - |
 
 #### [h2]OH_CryptoSm2CiphertextSpec_SetItem()
 
@@ -234,7 +242,7 @@ OH_Crypto_ErrCode OH_CryptoSm2CiphertextSpec_SetItem(OH_CryptoSm2CiphertextSpec 
 ```
  描述
 
-设置SM2密文规格中的指定项。
+设置SM2密文规格的指定项。
 
 起始版本： 20
 
@@ -242,15 +250,19 @@ OH_Crypto_ErrCode OH_CryptoSm2CiphertextSpec_SetItem(OH_CryptoSm2CiphertextSpec 
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_CryptoSm2CiphertextSpec](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptoasymcipherapi-oh-cryptosm2ciphertextspec) *spec | SM2密文规格。 |
-| [CryptoSm2CiphertextSpec_item](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-asym-cipher-h#cryptosm2ciphertextspec_item) item | SM2密文规格项。 |
-| [Crypto_DataBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptocommonapi-crypto-datablob) *in | 输入数据。 |
+| [OH_CryptoSm2CiphertextSpec](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptoasymcipherapi-oh-cryptosm2ciphertextspec) *spec | [in] SM2密文规格。不能为NULL。 |
+| [CryptoSm2CiphertextSpec_item](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-asym-cipher-h#cryptosm2ciphertextspec_item) item | [in] SM2密文规格项。 |
+| [Crypto_DataBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptocommonapi-crypto-datablob) *in | [in] 输入数据。不能为NULL。本接口会对输入数据进行深拷贝，调用者在接口返回后可立即释放in。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_PARAMETER_CHECK_FAILED：参数检查失败。 CRYPTO_OPERTION_ERROR：调用三方算法库API出错。 |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | - - CRYPTO_SUCCESS：操作成功。 - - - CRYPTO_PARAMETER_CHECK_FAILED：spec或in为NULL、in->data为NULL或in->len为0。 - - - CRYPTO_NOT_SUPPORTED：不支持的操作或算法。 - - - CRYPTO_MEMORY_ERROR：深拷贝的内存分配失败。 - - - CRYPTO_OPERTION_ERROR：加解密操作失败。 - - |
+
+参考：
+
+[OH_CryptoSm2CiphertextSpec_Encode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-asym-cipher-h#oh_cryptosm2ciphertextspec_encode) 将SM2密文规格编码为DER格式密文。
 
 #### [h2]OH_CryptoSm2CiphertextSpec_Encode()
 
@@ -269,14 +281,14 @@ OH_Crypto_ErrCode OH_CryptoSm2CiphertextSpec_Encode(OH_CryptoSm2CiphertextSpec *
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_CryptoSm2CiphertextSpec](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptoasymcipherapi-oh-cryptosm2ciphertextspec) *spec | SM2密文规格。 |
-| [Crypto_DataBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptocommonapi-crypto-datablob) *out | 输出数据。 |
+| [OH_CryptoSm2CiphertextSpec](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptoasymcipherapi-oh-cryptosm2ciphertextspec) *spec | [in] SM2密文规格。不能为NULL。 |
+| [Crypto_DataBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptocommonapi-crypto-datablob) *out | [out] 指向用于存储编码数据的Crypto_DataBlob结构体的指针。不能为NULL。调用前需将out初始化为{0}，不要预分配out->data内存。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_PARAMETER_CHECK_FAILED：参数检查失败。 CRYPTO_OPERTION_ERROR：调用三方算法库API出错。 |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | - - CRYPTO_SUCCESS：操作成功。 - - - CRYPTO_PARAMETER_CHECK_FAILED：spec或out为NULL， 或SM2密文字段（C1X、C1Y、C2、C3）未设置，或C3（hashData）长度不为32字节。 - - - CRYPTO_NOT_SUPPORTED：不支持的操作或算法。 - - - CRYPTO_MEMORY_ERROR：内存操作失败。 - - - CRYPTO_OPERTION_ERROR：编码失败。 - - |
 
 #### [h2]OH_CryptoSm2CiphertextSpec_Destroy()
 
@@ -293,4 +305,4 @@ void OH_CryptoSm2CiphertextSpec_Destroy(OH_CryptoSm2CiphertextSpec *spec)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_CryptoSm2CiphertextSpec](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptoasymcipherapi-oh-cryptosm2ciphertextspec) *spec | SM2密文规格。 |
+| [OH_CryptoSm2CiphertextSpec](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptoasymcipherapi-oh-cryptosm2ciphertextspec) *spec | [in] SM2密文规格。 |

@@ -2,8 +2,8 @@
 title: "ArkUI_ListItemSwipeActionItem"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-listitemswipeactionitem"
 catalog: "harmonyos-references"
-content_hash: "7e4c89b6b21e"
-synced_at: "2026-07-09T00:58:43.397415"
+content_hash: "dd385f10124c"
+synced_at: "2026-07-28T16:49:34.938732"
 ---
 
 # ArkUI_ListItemSwipeActionItem
@@ -14,7 +14,7 @@ typedef struct ArkUI_ListItemSwipeActionItem ArkUI_ListItemSwipeActionItem
 
 #### 概述
 
-定义ListItemSwipeActionOption方法内Item的配置信息。
+定义列表项侧滑操作项的配置信息。
 
 起始版本： 12
 

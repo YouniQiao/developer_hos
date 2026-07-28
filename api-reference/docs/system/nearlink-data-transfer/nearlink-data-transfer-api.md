@@ -2,8 +2,8 @@
 title: "dataTransfer（星闪数传能力）"
 upstream_id: "harmonyos-references/nearlink-data-transfer-api"
 catalog: "harmonyos-references"
-content_hash: "bfb423f98f9d"
-synced_at: "2026-07-09T00:59:27.276961"
+content_hash: "e30e05fa38a6"
+synced_at: "2026-07-28T16:50:41.978313"
 ---
 
 # dataTransfer（星闪数传能力）
@@ -63,15 +63,15 @@ createPort(uuid: string): void
 | 201 | Permission denied. |
 | 401 | Invalid parameter. |
 | 801 | Capability not supported. |
-| 1009700003 | Nearlink is off. |
+| 1009700003 | NearLink is off. |
 | 1009700020 | The UUID is already registered. |
-| 1009700021 | Port is exceeds the upper limit. |
+| 1009700021 | The number of ports exceeds the upper limit. |
 | 1009700099 | Operation failed. |
 
 示例：
 
 ```
-import { dataTransfer} from '@kit.NearLinkKit';
+import { dataTransfer } from '@kit.NearLinkKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
@@ -112,14 +112,14 @@ destroyPort(uuid: string): void
 | 201 | Permission denied. |
 | 401 | Invalid parameter. |
 | 801 | Capability not supported. |
-| 1009700003 | Nearlink is off. |
+| 1009700003 | NearLink is off. |
 | 1009700022 | The UUID is not registered. |
 | 1009700099 | Operation failed. |
 
 示例：
 
 ```
-import { dataTransfer} from '@kit.NearLinkKit';
+import { dataTransfer } from '@kit.NearLinkKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
@@ -166,13 +166,13 @@ connect(params: ConnectionParams): Promise<void>
 | 201 | Permission denied. |
 | 401 | Invalid parameter. |
 | 801 | Capability not supported. |
-| 1009700003 | Nearlink is off. |
+| 1009700003 | NearLink is off. |
 | 1009700099 | Operation failed. |
 
 示例：
 
 ```
-import { dataTransfer} from '@kit.NearLinkKit';
+import { dataTransfer } from '@kit.NearLinkKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
@@ -227,13 +227,13 @@ disconnect(params: ConnectionParams): Promise<void>
 | 201 | Permission denied. |
 | 401 | Invalid parameter. |
 | 801 | Capability not supported. |
-| 1009700003 | Nearlink is off. |
+| 1009700003 | NearLink is off. |
 | 1009700099 | Operation failed. |
 
 示例：
 
 ```
-import { dataTransfer} from '@kit.NearLinkKit';
+import { dataTransfer } from '@kit.NearLinkKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
@@ -288,7 +288,7 @@ on(type: 'connectionStateChanged', callback: Callback<ConnectionResult>): void
 示例：
 
 ```
-import { dataTransfer} from '@kit.NearLinkKit';
+import { dataTransfer } from '@kit.NearLinkKit';
 import { BusinessError, Callback } from '@kit.BasicServicesKit';
 
 let callback: Callback<dataTransfer.ConnectionResult> = (data: dataTransfer.ConnectionResult) => {
@@ -319,7 +319,7 @@ off(type: 'connectionStateChanged', callback?: Callback<ConnectionResult>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 事件回调类型，支持的事件为'connectionStateChange'，表示数传连接状态发生变化的事件。 |
+| type | string | 是 | 事件回调类型，支持的事件为'connectionStateChanged'，表示数传连接状态发生变化的事件。 |
 | callback | Callback | 否 | 回调函数，返回与远端设备端口连接参数的协商结果。 填写该参数则取消当前callback订阅。不填写该参数则取消该type对应的所有回调。 |
 
 错误码：
@@ -336,7 +336,7 @@ off(type: 'connectionStateChanged', callback?: Callback<ConnectionResult>): void
 示例：
 
 ```
-import { dataTransfer} from '@kit.NearLinkKit';
+import { dataTransfer } from '@kit.NearLinkKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
@@ -437,14 +437,14 @@ writeData(params: DataParams): Promise<void>
 | 201 | Permission denied. |
 | 401 | Invalid parameter. |
 | 801 | Capability not supported. |
-| 1009700003 | Nearlink is off. |
-| 1009700023 | Write data congest. |
+| 1009700003 | NearLink is off. |
+| 1009700023 | The data writing process is congested. |
 | 1009700099 | Operation failed. |
 
 示例：
 
 ```
-import { dataTransfer} from '@kit.NearLinkKit';
+import { dataTransfer } from '@kit.NearLinkKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
@@ -504,7 +504,7 @@ on(type: 'readData', callback: Callback<DataParams>): void
 示例：
 
 ```
-import { dataTransfer} from '@kit.NearLinkKit';
+import { dataTransfer } from '@kit.NearLinkKit';
 import { BusinessError, Callback } from '@kit.BasicServicesKit';
 
 let callback: Callback<dataTransfer.DataParams> = (data: dataTransfer.DataParams) => {
@@ -552,7 +552,7 @@ off(type: 'readData', callback?: Callback<DataParams>): void
 示例：
 
 ```
-import { dataTransfer} from '@kit.NearLinkKit';
+import { dataTransfer } from '@kit.NearLinkKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
 try {

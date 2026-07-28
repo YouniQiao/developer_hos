@@ -1,12 +1,10 @@
 ---
-
 title: "概述"
 upstream_id: "harmonyos-references/account-api-obtain-token-overview"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T01:01:12.364630"
-content_hash: "6a7a07990f4e"
+content_hash: "cf0fc078ea4e"
+synced_at: "2026-07-28T16:52:29.727527"
 ---
-
 
 # 概述
 
@@ -19,3 +17,5 @@ content_hash: "6a7a07990f4e"
 - **解析凭证** 提供对凭证的解析能力，应用可通过该场景获取凭证携带的关键信息（如应用Client ID、用户身份、有效期）。
 - **取消用户级凭证授权** 当用户主动解除授权或应用需要终止服务时，可通过该场景立即废弃凭证。
 - **获取应用级凭证** 通过应用的Client ID和Client Secret获取应用级凭证Access Token，用于调用应用级权限管控接口（如[通过OpenID获取UnionID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-unionid)）。
+- **扫码授权** **获取二维码信息** [扫码授权登录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-authorize-by-qrcode)场景下，应用调用该接口获取二维码信息，然后生成二维码供用户扫码授权登录。
+- **获取用户级凭证** [扫码授权登录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-authorize-by-qrcode)场景下，应用服务端通过设备码轮询该接口，获取Access Token、Refresh Token、ID Token。

@@ -2,8 +2,8 @@
 title: "@ohos.WorkSchedulerExtensionAbility (延迟任务调度回调)"
 upstream_id: "harmonyos-references/js-apis-workschedulerextensionability"
 catalog: "harmonyos-references"
-content_hash: "b7fd216981bb"
-synced_at: "2026-07-09T00:58:56.617420"
+content_hash: "2e70161ecfa0"
+synced_at: "2026-07-28T16:49:58.809739"
 ---
 
 # @ohos.WorkSchedulerExtensionAbility (延迟任务调度回调)
@@ -20,6 +20,20 @@ synced_at: "2026-07-09T00:58:56.617420"
 ```
 import { WorkSchedulerExtensionAbility } from '@kit.BackgroundTasksKit';
 ```
+
+#### 约束限制
+
+为保障系统安全性和稳定性，防止WorkSchedulerExtensionAbility滥用系统资源，系统对其能力进行管控，不支持以下模块的引用：
+
+[@ohos.resourceschedule.backgroundTaskManager (后台任务管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resourceschedule-backgroundtaskmanager)
+
+[@ohos.backgroundTaskManager (后台任务管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-backgroundtaskmanager)
+
+[@ohos.multimedia.camera (相机管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera)
+
+[@ohos.multimedia.audio (音频管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio)
+
+[@ohos.multimedia.media (媒体服务)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media)
 
 #### WorkSchedulerExtensionContext10+
 

@@ -2,13 +2,13 @@
 title: "@ohos.curves (插值计算)"
 upstream_id: "harmonyos-references/js-apis-curve"
 catalog: "harmonyos-references"
-content_hash: "56cc57b986bc"
-synced_at: "2026-07-09T00:57:31.084767"
+content_hash: "27ded3b03050"
+synced_at: "2026-07-28T16:41:14.212655"
 ---
 
 # @ohos.curves (插值计算)
 
-本模块提供设置动画插值曲线功能，用于构造阶梯曲线对象、三阶贝塞尔曲线对象和弹簧曲线对象。
+本模块提供设置动画插值曲线功能，用于构造阶梯曲线对象、三阶贝塞尔曲线对象、弹簧曲线对象、弹性动画曲线对象、弹性跟手动画曲线对象、插值器弹簧曲线对象和自定义曲线对象。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -68,7 +68,7 @@ initCurve(curve?: Curve): ICurve
 
 ```
 import { curves } from '@kit.ArkUI';
-curves.initCurve(Curve.EaseIn) // 创建一个默认先慢后快插值曲线
+curves.initCurve(Curve.EaseIn); // 创建一个默认先慢后快插值曲线
 ```
 
 #### curves.stepsCurve9+
@@ -98,14 +98,14 @@ stepsCurve(count: number, end: boolean): ICurve
 
 ```
 import { curves } from '@kit.ArkUI';
-curves.stepsCurve(9, true)  // 创建一个阶梯曲线
+curves.stepsCurve(9, true);  // 创建一个阶梯曲线
 ```
 
 #### curves.cubicBezierCurve9+
 
 cubicBezierCurve(x1: number, y1: number, x2: number, y2: number): ICurve
 
-构造三阶贝塞尔曲线对象，确保曲线的值在0到1之间。
+构造三阶贝塞尔曲线对象，曲线的两个控制点横坐标x1、x2的取值范围限定在0到1之间。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -130,14 +130,14 @@ cubicBezierCurve(x1: number, y1: number, x2: number, y2: number): ICurve
 
 ```
 import { curves } from '@kit.ArkUI';
-curves.cubicBezierCurve(0.1, 0.0, 0.1, 1.0) // 创建一个三阶贝塞尔曲线
+curves.cubicBezierCurve(0.1, 0.0, 0.1, 1.0); // 创建一个三阶贝塞尔曲线
 ```
 
 #### curves.springCurve9+
 
 springCurve(velocity: number, mass: number, stiffness: number, damping: number): ICurve
 
-构造弹簧曲线对象，曲线形状由弹簧参数决定，动画时长受animation、animateTo中的duration参数控制。
+构造弹簧曲线对象，曲线形状由弹簧参数决定，动画时长受动画参数中的时长参数控制。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -162,7 +162,7 @@ springCurve(velocity: number, mass: number, stiffness: number, damping: number):
 
 ```
 import { curves } from '@kit.ArkUI';
-curves.springCurve(10, 1, 228, 30) // 创建一个弹簧插值曲线
+curves.springCurve(10, 1, 228, 30); // 创建一个弹簧插值曲线
 ```
 
 #### curves.springMotion9+
@@ -180,23 +180,23 @@ springMotion(response?: number, dampingFraction?: number, overlapDuration?: numb
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | response | number | 否 | 弹簧自然振动周期，决定弹簧复位的速度。 默认值：0.55 单位：秒 取值范围：(0, +∞) **说明：** 设置小于等于0的值时，按默认值0.55处理。 |
-| dampingFraction | number | 否 | 阻尼系数。 0表示无阻尼，一直处于震荡状态； 大于0小于1的值为欠阻尼，运动过程中会超出目标值； 等于1为临界阻尼； 大于1为过阻尼，运动过程中逐渐趋于目标值。 默认值：0.825 单位：秒 取值范围：[0, +∞) **说明：** 设置小于0的值时，按默认值0.825处理。 |
+| dampingFraction | number | 否 | 阻尼系数。 0表示无阻尼，一直处于震荡状态； 大于0小于1的值为欠阻尼，运动过程中会超出目标值； 等于1为临界阻尼； 大于1为过阻尼，运动过程中逐渐趋于目标值。 默认值：0.825 取值范围：[0, +∞) **说明：** 设置小于0的值时，按默认值0.825处理。 |
 | overlapDuration | number | 否 | 弹性动画衔接时长。发生动画继承时，如果前后两个弹性动画response不一致，response参数会在overlapDuration时间内平滑过渡。 默认值：0 单位：秒 取值范围：[0, +∞) **说明：** 设置小于0的值时，按默认值0处理。 弹性动画曲线为物理曲线，[animation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-animatorproperty)、[animateTo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-explicit-animation)、[pageTransition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-page-transition-animation)中的duration参数不生效，动画持续时间取决于springMotion动画曲线参数和之前的速度。时间不能归一，故不能通过该曲线的interpolate函数获得插值。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| [ICurve](#icurve9) | 曲线对象。 **说明:** 弹性动画曲线为物理曲线，[animation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-animatorproperty)、[animateTo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-explicit-animation)、[pageTransition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-page-transition-animation)中的duration参数不生效，动画持续时间取决于springMotion动画曲线参数和之前的速度。时间不能归一，故不能通过该曲线的[interpolate](#interpolate9)函数获得插值。 |
+| [ICurve](#icurve9) | 曲线对象。 **说明：** 弹性动画曲线为物理曲线，[animation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-animatorproperty)、[animateTo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-explicit-animation)、[pageTransition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-page-transition-animation)中的duration参数不生效，动画持续时间取决于springMotion动画曲线参数和之前的速度。时间不能归一，故不能通过该曲线的[interpolate](#interpolate9)函数获得插值。 |
 
 示例：
 
 ```
-import { curves } from '@kit.ArkUI'
-curves.springMotion() // 创建一个默认弹性动画曲线
-curves.springMotion(0.5) // 创建指定response、其余参数默认的弹性动画曲线
-curves.springMotion(0.5, 0.6) // 创建指定response和dampingFraction、其余参数默认的弹性动画曲线
-curves.springMotion(0.5, 0.6, 0) // 创建三个参数均自定义的弹性动画曲线
+import { curves } from '@kit.ArkUI';
+curves.springMotion(); // 创建一个默认弹性动画曲线
+curves.springMotion(0.5); // 创建指定response、其余参数默认的弹性动画曲线
+curves.springMotion(0.5, 0.6); // 创建指定response和dampingFraction、其余参数默认的弹性动画曲线
+curves.springMotion(0.5, 0.6, 0); // 创建三个参数均自定义的弹性动画曲线
 ```
 
 #### curves.responsiveSpringMotion9+
@@ -214,27 +214,27 @@ responsiveSpringMotion(response?: number, dampingFraction?: number, overlapDurat
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | response | number | 否 | 解释同springMotion中的response。 默认值：0.15 单位：秒 取值范围：(0, +∞) **说明：** 设置小于等于0的值时，按默认值0.15处理。 |
-| dampingFraction | number | 否 | 解释同springMotion中的dampingFraction。 默认值：0.86 单位：秒 取值范围：[0, +∞) **说明：** 设置小于0的值时，按默认值0.86处理。 |
+| dampingFraction | number | 否 | 解释同springMotion中的dampingFraction。 默认值：0.86 取值范围：[0, +∞) **说明：** 设置小于0的值时，按默认值0.86处理。 |
 | overlapDuration | number | 否 | 解释同springMotion中的overlapDuration。 默认值：0.25 单位：秒 取值范围：[0, +∞) **说明：** 设置小于0的值时，按默认值0.25处理。 弹性跟手动画曲线为springMotion的一种特例，仅默认值不同。如果使用自定义参数的弹性曲线，推荐使用springMotion构造曲线。如果使用跟手动画，推荐使用默认参数的弹性跟手动画曲线。 [animation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-animatorproperty)、[animateTo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-explicit-animation)、[pageTransition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-page-transition-animation)中的duration参数不生效，动画持续时间取决于responsiveSpringMotion动画曲线参数和之前的速度，也不能通过该曲线的interpolate函数获得插值。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| [ICurve](#icurve9) | 曲线对象。 **说明:** 1、弹性跟手动画曲线为springMotion的一种特例，仅默认值不同。如果使用自定义参数的弹性曲线，推荐使用springMotion构造曲线；如果使用跟手动画，推荐使用默认参数的弹性跟手动画曲线。 2、[animation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-animatorproperty)、[animateTo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-explicit-animation)、[pageTransition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-page-transition-animation)中的duration参数不生效，动画持续时间取决于responsiveSpringMotion动画曲线参数和之前的速度，也不能通过该曲线的[interpolate](#interpolate9)函数获得插值。 |
+| [ICurve](#icurve9) | 曲线对象。 **说明：** 1、弹性跟手动画曲线为springMotion的一种特例，仅默认值不同。如果使用自定义参数的弹性曲线，推荐使用springMotion构造曲线；如果使用跟手动画，推荐使用默认参数的弹性跟手动画曲线。 2、[animation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-animatorproperty)、[animateTo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-explicit-animation)、[pageTransition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-page-transition-animation)中的duration参数不生效，动画持续时间取决于responsiveSpringMotion动画曲线参数和之前的速度，也不能通过该曲线的[interpolate](#interpolate9)函数获得插值。 |
 
 示例：
 
 ```
-import { curves } from '@kit.ArkUI'
-curves.responsiveSpringMotion() // 创建一个默认弹性跟手动画曲线
+import { curves } from '@kit.ArkUI';
+curves.responsiveSpringMotion(); // 创建一个默认弹性跟手动画曲线
 ```
 
 #### curves.interpolatingSpring10+
 
 interpolatingSpring(velocity: number, mass: number, stiffness: number, damping: number): ICurve
 
-构造插值器弹簧曲线对象，生成一条从0到1的动画曲线，实际动画值根据曲线进行插值计算。动画时间由曲线参数决定，不受animation、animateTo中的duration参数控制。
+构造插值器弹簧曲线对象，生成一条从0到1的动画曲线，实际动画值根据曲线进行插值计算。动画时间由曲线参数决定，不受动画参数中的时长参数控制。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -255,13 +255,13 @@ interpolatingSpring(velocity: number, mass: number, stiffness: number, damping: 
 
 | 类型 | 说明 |
 | --- | --- |
-| [ICurve](#icurve9) | 曲线对象。 **说明:** 弹性动画曲线为物理曲线，[animation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-animatorproperty)、[animateTo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-explicit-animation)、[pageTransition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-page-transition-animation)中的duration参数不生效，动画持续时间取决于interpolatingSpring动画曲线参数。时间不能归一，故不能通过该曲线的[interpolate](#interpolate9)函数获得插值。 |
+| [ICurve](#icurve9) | 曲线对象。 **说明：** 弹性动画曲线为物理曲线，[animation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-animatorproperty)、[animateTo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-explicit-animation)、[pageTransition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-page-transition-animation)等动画参数中的duration参数不生效，动画持续时间取决于interpolatingSpring动画曲线参数。时间不能归一，故不能通过该曲线的[interpolate](#interpolate9)函数获得插值。 |
 
 示例：
 
 ```
-import { curves } from '@kit.ArkUI'
-curves.interpolatingSpring(10, 1, 228, 30) // 创建一个时长由弹簧参数决定的弹簧插值曲线
+import { curves } from '@kit.ArkUI';
+curves.interpolatingSpring(10, 1, 228, 30); // 创建一个时长由弹簧参数决定的弹簧插值曲线
 ```
 
 #### curves.customCurve10+
@@ -291,11 +291,11 @@ customCurve(interpolate: (fraction: number) => number): ICurve
 示例：
 
 ```
-import { curves } from '@kit.ArkUI'
-let interpolate = (fraction:number):number => {
-  return Math.sqrt(fraction)
-}
-let curve = curves.customCurve(interpolate) // 创建一个用户自定义插值曲线
+import { curves } from '@kit.ArkUI';
+let interpolate = (fraction: number): number => {
+  return Math.sqrt(fraction);
+};
+let curve = curves.customCurve(interpolate); // 创建一个用户自定义插值曲线
 ```
 
 #### ICurve9+
@@ -322,14 +322,14 @@ interpolate(fraction: number): number
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 返回归一化time时间点对应的曲线插值。 |
+| number | 返回归一化时间点对应的曲线插值。 |
 
 示例：
 
 ```
 import { curves } from '@kit.ArkUI'
-let curveValue = curves.initCurve(Curve.EaseIn) // 创建一个默认先慢后快插值曲线
-let value: number = curveValue.interpolate(0.5) // 计算得到时间到一半时的插值
+let curveValue = curves.initCurve(Curve.EaseIn); // 创建一个默认先慢后快插值曲线
+let interpolatedValue: number = curveValue.interpolate(0.5); // 计算得到时间到一半时的插值
 ```
 
 #### curves.init(deprecated)
@@ -338,7 +338,7 @@ init(curve?: Curve): string
 
 插值曲线的初始化函数，可以根据入参创建一个插值曲线对象。
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃。建议使用[Curves.initCurve](#curvesinitcurve9)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃。建议使用[curves.initCurve](#curvesinitcurve9)替代。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -360,7 +360,7 @@ steps(count: number, end: boolean): string
 
 构造阶梯曲线对象。
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃。建议使用[Curves. stepsCurve](#curvesstepscurve9)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃。建议使用[curves.stepsCurve](#curvesstepscurve9)替代。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -381,9 +381,9 @@ steps(count: number, end: boolean): string
 
 cubicBezier(x1: number, y1: number, x2: number, y2: number): string
 
-构造三阶贝塞尔曲线对象，曲线的值必须处于0-1之间。
+构造三阶贝塞尔曲线对象，曲线的两个控制点横坐标x1、x2的取值范围限定在0到1之间。
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃。建议使用[Curves.cubicBezierCurve](#curvescubicbeziercurve9)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃。建议使用[curves.cubicBezierCurve](#curvescubicbeziercurve9)替代。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -408,7 +408,7 @@ spring(velocity: number, mass: number, stiffness: number, damping: number): stri
 
 构造弹簧曲线对象。
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃。建议使用[Curves.springCurve](#curvesspringcurve9)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃。建议使用[curves.springCurve](#curvesspringcurve9)替代。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -452,8 +452,8 @@ struct ImageComponent {
           this.heightSize = curve.interpolate(0.5) * this.heightSize;
         })
         .animation({ duration: 2000, curve: curves.stepsCurve(9, true) })
-    }.width("100%").height("100%")
+    }.width('100%').height('100%')
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612257.gif)
+ ![](./img/zh-cn_image_0000002655848270.gif)

@@ -2,8 +2,8 @@
 title: "OH_AudioStreamInfo"
 upstream_id: "harmonyos-references/capi-ohaudio-oh-audiostreaminfo"
 catalog: "harmonyos-references"
-content_hash: "32f46271c479"
-synced_at: "2026-07-09T01:00:11.528832"
+content_hash: "558175c7c8b6"
+synced_at: "2026-07-28T16:51:30.399506"
 ---
 
 # OH_AudioStreamInfo
@@ -14,7 +14,7 @@ typedef struct OH_AudioStreamInfo {...} OH_AudioStreamInfo
 
 #### 概述
 
-定义音频流信息，用于描述基本音频格式。
+定义音频流信息结构体，用于描述基本音频格式。
 
 起始版本： 19
 
@@ -28,7 +28,7 @@ typedef struct OH_AudioStreamInfo {...} OH_AudioStreamInfo
 
 | 名称 | 描述 |
 | --- | --- |
-| int32_t samplingRate | 音频流采样率。 |
+| int32_t samplingRate | 音频流采样率。单位为赫兹（Hz）。 |
 | [OH_AudioChannelLayout](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-channel-layout-h#oh_audiochannellayout) channelLayout | 音频流声道布局。 |
 | [OH_AudioStream_EncodingType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_encodingtype) encodingType | 音频流编码类型。 |
 | [OH_AudioStream_SampleFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_sampleformat) sampleFormat | 音频流采样格式。 |

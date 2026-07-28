@@ -2,8 +2,8 @@
 title: "元能力子系统错误码"
 upstream_id: "harmonyos-references/errorcode-ability"
 catalog: "harmonyos-references"
-content_hash: "55bcba8551d6"
-synced_at: "2026-07-09T00:57:14.235945"
+content_hash: "1c2512bd4a6c"
+synced_at: "2026-07-28T16:40:47.455179"
 ---
 
 # 元能力子系统错误码
@@ -744,6 +744,24 @@ Creating a new instance is not supported.
 处理步骤
 
 删除参数[CREATE_APP_INSTANCE_KEY](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-wantconstant#params)。
+
+#### 16000082 UIAbility正在启动中
+
+错误信息
+
+The UIAbility is being started.
+
+错误描述
+
+UIAbility正在启动中，onCreate或onWindowStageCreate生命周期回调尚未完成。
+
+可能原因
+
+UIAbility仍处于启动阶段，onCreate或onWindowStageCreate回调尚未执行完成。
+
+处理步骤
+
+等待UIAbility完成onCreate或onWindowStageCreate生命周期回调后再执行相关操作。
 
 #### 16000083 不允许该类型ExtensionAbility启动指定Ability
 
@@ -1943,7 +1961,7 @@ The specified agentId does not exist.
 
 处理步骤
 
-1. 检查一下目标应用的静态配置信息，重新传入正确的agentId。
+1. 检查目标应用的静态配置信息，重新传入正确的agentId。
 
 #### 35600002 IPC消息发送失败
 
@@ -1982,6 +2000,42 @@ Maximum connections from the same caller have been reached.
 处理步骤
 
 调用方断开一些连接后重新发起连接。
+
+#### 16000161 当前进程的处理流程尚未结束，无法调用此API
+
+错误信息
+
+Delayed process exit is not pending in the current process, and this API cannot be called.
+
+错误描述
+
+在当前进程中，由于延迟退出进程未处于等待状态，因此无法调用此API。
+
+可能原因
+
+调用方在调用该API前，未启用当前进程延迟退出功能。
+
+处理步骤
+
+调用方先调用启用当前进程延迟退出接口，再调用该API。
+
+#### 16000162 当前的进程中仍有其他UIAbility，无法调用此API
+
+错误信息
+
+The current process still has another UIAbility, and this API cannot be called.
+
+错误描述
+
+当前的进程中仍有其他UIAbility，此API无法被调用。
+
+可能原因
+
+调用方当前进程中还存在其他的UIAbility。
+
+处理步骤
+
+调用方保证当前进程中只有一个UIAbility且处于退出状态。
 
 #### 35600004 指定的AgentCard版本低于当前版本
 

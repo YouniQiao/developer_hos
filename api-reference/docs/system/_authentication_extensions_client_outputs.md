@@ -2,8 +2,8 @@
 title: "AuthenticationExtensionsClientOutputs"
 upstream_id: "harmonyos-references/_authentication_extensions_client_outputs"
 catalog: "harmonyos-references"
-content_hash: "093ce3eb6ba5"
-synced_at: "2026-07-09T00:59:17.978407"
+content_hash: "3cff051ba2a7"
+synced_at: "2026-07-28T16:50:30.507652"
 ---
 
 # AuthenticationExtensionsClientOutputs
@@ -14,7 +14,9 @@ synced_at: "2026-07-09T00:59:17.978407"
 
 起始版本： 6.0.0(20)
 
-相关模块： [FIDO2](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey)
+相关模块： [FIDO2（通行密钥服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey)
+
+所在头文件： [fido2_api.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication_capi_header_fido2)
 
 #### 汇总
 

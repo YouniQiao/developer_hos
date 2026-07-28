@@ -2,8 +2,8 @@
 title: "avimage_generator.h"
 upstream_id: "harmonyos-references/capi-avimage-generator-h"
 catalog: "harmonyos-references"
-content_hash: "77efd72bde9f"
-synced_at: "2026-07-09T01:00:40.420207"
+content_hash: "3ae634910811"
+synced_at: "2026-07-28T16:51:57.941330"
 ---
 
 # avimage_generator.h
@@ -63,7 +63,7 @@ OH_AVImageGenerator* OH_AVImageGenerator_Create(void)
 #### [h2]OH_AVImageGenerator_SetFDSource()
 
 ```
-OH_AVErrCode OH_AVImageGenerator_SetFDSource(OH_AVImageGenerator* generator,int32_t fd, int64_t offset, int64_t size)
+OH_AVErrCode OH_AVImageGenerator_SetFDSource(OH_AVImageGenerator* generator, int32_t fd, int64_t offset, int64_t size)
 ```
  描述
 
@@ -91,7 +91,7 @@ OH_AVErrCode OH_AVImageGenerator_SetFDSource(OH_AVImageGenerator* generator,int3
 #### [h2]OH_AVImageGenerator_FetchFrameByTime()
 
 ```
-OH_AVErrCode OH_AVImageGenerator_FetchFrameByTime(OH_AVImageGenerator* generator,int64_t timeUs, OH_AVImageGenerator_QueryOptions options, OH_PixelmapNative** pixelMap)
+OH_AVErrCode OH_AVImageGenerator_FetchFrameByTime(OH_AVImageGenerator* generator, int64_t timeUs, OH_AVImageGenerator_QueryOptions options, OH_PixelmapNative** pixelMap)
 ```
  描述
 
@@ -109,7 +109,7 @@ OH_AVErrCode OH_AVImageGenerator_FetchFrameByTime(OH_AVImageGenerator* generator
 | --- | --- |
 | [OH_AVImageGenerator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avimagegenerator-oh-avimagegenerator)* generator | 指向OH_AVImageGenerator实例的指针。 |
 | int64_t timeUs | 需要获取的视频帧在视频中的时间点，单位为微秒（μs）。 |
-| [OH_AVImageGenerator_QueryOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avimage-generator-base-h#oh_avimagegenerator_queryoptions) options | 关于给定时间Us和视频帧之间关系的时间选项。 |
+| [OH_AVImageGenerator_QueryOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avimage-generator-base-h#oh_avimagegenerator_queryoptions) options | 指定如何根据给定时间点查找视频帧的选项。 |
 | [OH_PixelmapNative](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image-nativemodule-oh-pixelmapnative)** pixelMap | 获取的视频帧对象。 |
 
 返回：

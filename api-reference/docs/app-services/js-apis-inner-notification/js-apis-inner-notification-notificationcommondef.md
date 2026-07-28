@@ -2,13 +2,13 @@
 title: "NotificationCommonDef"
 upstream_id: "harmonyos-references/js-apis-inner-notification-notificationcommondef"
 catalog: "harmonyos-references"
-content_hash: "baffff20bfc2"
-synced_at: "2026-07-09T01:01:28.380351"
+content_hash: "f716c7aec058"
+synced_at: "2026-07-28T16:52:47.269065"
 ---
 
 # NotificationCommonDef
 
-描述应用的包信息。
+NotificationCommonDef中定义了通知相关接口中使用的通用数据结构。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 9开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -20,8 +20,8 @@ synced_at: "2026-07-09T01:01:28.380351"
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| bundle | string | 否 | 否 | 应用程序的包名。 |
-| uid | number | 否 | 是 | 应用程序的UID。从[ApplicationInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-applicationinfo#applicationinfo-1)获取，默认为0。 应用分身场景下，此参数为必填项。 |
+| bundle | string | 否 | 否 | 应用的包名。 |
+| uid | number | 否 | 是 | 应用的UID。从[ApplicationInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-applicationinfo#applicationinfo-1)获取，默认为0。 应用分身场景下，此参数为必填项。 |
 
 #### GrantedBundleInfo22+
 
@@ -31,9 +31,9 @@ synced_at: "2026-07-09T01:01:28.380351"
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| bundleName | string | 否 | 否 | 应用程序的包名。 |
-| appIndex | number | 是 | 否 | 应用包的分身索引标识，仅在分身应用中生效。从[ApplicationInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-applicationinfo#applicationinfo-1)中appIndex获取。 |
-| appName | string | 是 | 是 | 标识应用的名称。从[ApplicationInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-applicationinfo#applicationinfo-1)中label获取。 |
+| bundleName | string | 否 | 否 | 应用的包名。 |
+| appIndex | number | 是 | 否 | 应用的分身索引标识，仅在分身应用中生效。从[ApplicationInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-applicationinfo#applicationinfo-1)中appIndex获取。 |
+| appName | string | 是 | 是 | 应用的名称。从[ApplicationInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-applicationinfo#applicationinfo-1)中label获取。 |
 
 #### UserGrantSetting
 

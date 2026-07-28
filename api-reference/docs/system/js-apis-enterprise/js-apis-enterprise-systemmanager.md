@@ -1,12 +1,12 @@
 ---
-title: "@ohos.enterprise.systemManager （系统管理）"
+title: "@ohos.enterprise.systemManager（系统管理）"
 upstream_id: "harmonyos-references/js-apis-enterprise-systemmanager"
 catalog: "harmonyos-references"
-content_hash: "d83172ede55f"
-synced_at: "2026-07-09T00:59:52.825680"
+content_hash: "3eed1534c216"
+synced_at: "2026-07-28T16:51:11.187797"
 ---
 
-# @ohos.enterprise.systemManager （系统管理）
+# @ohos.enterprise.systemManager（系统管理）
 
 本模块提供系统管理能力。
 
@@ -41,7 +41,7 @@ setNTPServer(admin: Want, server: string): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
-| server | string | 是 | NTP服务器地址（以","分隔，如"ntpserver1.com,ntpserver2.com"。最大长度96字节，包括结束符）。 |
+| server | string | 是 | NTP服务器地址（以","分隔，如"ntpserver1.com,ntpserver2.com"。最大长度96字节，包括null终止符（\0））。 |
 
 错误码：
 
@@ -511,6 +511,127 @@ systemManager.getUpdateAuthData(wantTemp).then((result: string) => {
 });
 ```
 
+#### systemManager.setOtaUpdateNonceEnable
+
+setOtaUpdateNonceEnable(admin: Want, isEnable: boolean): void
+
+设置OTA更新时Nonce的启用状态（默认为启用状态）。启用后，系统将在OTA更新过程中校验Nonce的有效性，从而防止重放攻击，提升系统安全性。
+
+![](./img/note_3.0-zh-cn.png) 为保障系统安全，若非内网升级等特殊业务需求，不建议禁用Nonce校验。
+
+起始版本： 26.0.0
+
+需要权限： ohos.permission.ENTERPRISE_MANAGE_SYSTEM
+
+系统能力： SystemCapability.Customization.EnterpriseDeviceManager
+
+设备行为差异： 该接口在PC/2in1企业设备中可正常调用，在其他设备中返回801错误码。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+冲突规则： [配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
+| isEnable | boolean | 是 | true表示启用OTA更新Nonce，false表示禁用OTA更新Nonce。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[企业设备管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprisedevicemanager)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 9200001 | The application is not an administrator application of the device. |
+| 9200002 | The administrator application does not have permission to manage the device. |
+| 9200016 | Service timeout. |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
+
+示例：
+
+```
+import { systemManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+// 需根据实际情况进行替换
+let isEnable: boolean = true;
+try {
+  systemManager.setOtaUpdateNonceEnable(wantTemp, isEnable);
+  console.info('Succeeded in setting OTA update Nonce enable.');
+} catch (err) {
+  console.error(`Failed to set OTA update Nonce enable. Code is ${err.code}, message is ${err.message}`);
+}
+```
+
+#### systemManager.isOtaUpdateNonceEnable
+
+isOtaUpdateNonceEnable(admin: Want): boolean
+
+查询OTA更新Nonce是否启用。
+
+起始版本： 26.0.0
+
+需要权限： ohos.permission.ENTERPRISE_MANAGE_SYSTEM
+
+系统能力： SystemCapability.Customization.EnterpriseDeviceManager
+
+设备行为差异： 该接口在PC/2in1企业设备中可正常调用，在其他设备中返回801错误码。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+冲突规则： [配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| boolean | 返回true表示OTA更新Nonce已启用，返回false表示OTA更新Nonce已禁用。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[企业设备管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprisedevicemanager)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 9200001 | The application is not an administrator application of the device. |
+| 9200002 | The administrator application does not have permission to manage the device. |
+| 9200016 | Service timeout. |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
+
+示例：
+
+```
+import { systemManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // 需根据实际情况进行替换
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+try {
+  let result: boolean = systemManager.isOtaUpdateNonceEnable(wantTemp);
+  console.info(`Succeeded in querying OTA update Nonce enable: ${result}`);
+} catch (err) {
+  console.error(`Failed to query OTA update Nonce enable. Code is ${err.code}, message is ${err.message}`);
+}
+```
+
 #### systemManager.addDisallowedNearLinkProtocols20+
 
 addDisallowedNearLinkProtocols(admin: Want, protocols: Array<NearLinkProtocol>, accountId: number): void
@@ -533,7 +654,7 @@ addDisallowedNearLinkProtocols(admin: Want, protocols: Array<NearLinkProtocol>, 
 | --- | --- | --- | --- |
 | admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
 | protocols | Array | 是 | 星闪协议列表。 |
-| accountId | number | 是 | 用户ID，取值范围：大于等于0。 accountId可以通过[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9)等接口来获取。 |
+| accountId | number | 是 | 用户ID，取值范围：大于等于0。 accountId可以通过[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9-1)等接口来获取。 |
 
 错误码：
 
@@ -596,7 +717,7 @@ removeDisallowedNearLinkProtocols(admin: Want, protocols: Array<NearLinkProtocol
 | --- | --- | --- | --- |
 | admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
 | protocols | Array | 是 | 星闪协议列表。 |
-| accountId | number | 是 | 用户ID，取值范围：大于等于0。 accountId可以通过[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9)等接口来获取。 |
+| accountId | number | 是 | 用户ID，取值范围：大于等于0。 accountId可以通过[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9-1)等接口来获取。 |
 
 错误码：
 
@@ -655,7 +776,7 @@ getDisallowedNearLinkProtocols(admin: Want, accountId: number): Array<NearLinkPr
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
-| accountId | number | 是 | 用户ID，取值范围：大于等于0。 accountId可以通过[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9)等接口来获取。 |
+| accountId | number | 是 | 用户ID，取值范围：大于等于0。 accountId可以通过[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9-1)等接口来获取。 |
 
 返回值：
 
@@ -770,7 +891,7 @@ getInstallLocalEnterpriseAppEnabled(admin: Want | null): boolean
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 API version 24之前，调用本接口查询系统当前是否支持本地安装企业应用。当设备有多个MDM应用时，传入admin查询对应admin设置的策略。从API version 24开始，admin新增支持传入null，传入null时查询整机实际生效的策略。 |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 API version 24之前，调用本接口查询系统当前是否支持本地安装企业应用。当设备存在多个MDM应用时，传入admin查询对应admin设置的策略。从API version 24开始，admin新增支持传入null，传入null时查询整机实际生效的策略。 |
 
 返回值：
 
@@ -864,7 +985,7 @@ try {
 
 #### systemManager.getAutoUnlockAfterReboot20+
 
-getAutoUnlockAfterReboot(admin: Want): boolean
+getAutoUnlockAfterReboot(admin: Want | null): boolean
 
 获取设备是否重启自动解锁。
 
@@ -880,7 +1001,7 @@ getAutoUnlockAfterReboot(admin: Want): boolean
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，API版本26.0.0之前，传入Want时查询对应企业设备管理应用设置的策略。从API版本26.0.0开始，新增支持传入null时查询实际生效的策略。 |
 
 返回值：
 
@@ -1042,7 +1163,7 @@ try {
 
 #### systemManager.getKeyEventPolicies23+
 
-getKeyEventPolicies(admin: Want): Array<KeyEventPolicy>
+getKeyEventPolicies(admin: Want | null): Array<KeyEventPolicy>
 
 获取按键事件处理策略。
 
@@ -1058,7 +1179,7 @@ getKeyEventPolicies(admin: Want): Array<KeyEventPolicy>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，API版本26.0.0之前，传入Want时查询对应企业设备管理应用设置的策略。从API版本26.0.0开始，新增支持传入null时查询实际生效的策略。 |
 
 返回值：
 
@@ -1147,6 +1268,7 @@ startCollectLog(admin: Want): Promise<void>
 
 ```
 import { Want } from '@kit.AbilityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
 import { systemManager } from '@kit.MDMKit';
 
 let wantTemp: Want = {
@@ -1266,6 +1388,7 @@ setActivationLockDisabled(admin: Want, isDisabled: boolean, credential?: string)
 
 ```
 import { Want } from '@kit.AbilityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
 import { systemManager } from '@kit.MDMKit';
 
 let wantTemp: Want = {
@@ -1325,6 +1448,7 @@ isActivationLockDisabled(admin: Want): Promise<boolean>
 
 ```
 import { Want } from '@kit.AbilityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
 import { systemManager } from '@kit.MDMKit';
 
 let wantTemp: Want = {
@@ -1371,7 +1495,7 @@ setInstallLocalEnterpriseAppEnabledForAccount(admin: Want, isEnable: boolean, ac
 | --- | --- | --- | --- |
 | admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
 | isEnable | boolean | 是 | 是否支持本地安装企业应用。true表示支持，false表示不支持。 |
-| accountId | number | 是 | 用户ID，取值范围：大于等于0。 accountId可以通过[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9)等接口来获取。 |
+| accountId | number | 是 | 用户ID，取值范围：大于等于0。 accountId可以通过[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9-1)等接口来获取。 |
 
 错误码：
 
@@ -1425,8 +1549,8 @@ getInstallLocalEnterpriseAppEnabledForAccount(admin: Want | null, accountId: num
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备有多个MDM应用时，传入admin查询对应admin设置的策略。传入null时查询整机实际生效的策略。 |
-| accountId | number | 是 | 用户ID，取值范围：大于等于0。 accountId可以通过[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9)等接口来获取。 |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，传入admin查询对应admin设置的策略。传入null时查询整机实际生效的策略。 |
+| accountId | number | 是 | 用户ID，取值范围：大于等于0。 accountId可以通过[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9-1)等接口来获取。 |
 
 返回值：
 
@@ -1493,7 +1617,7 @@ try {
 | delayUpdateTime | number | 否 | 是 | 表示延迟升级时间（单位：小时）。 |
 | installStartTime | number | 否 | 是 | 表示指定安装窗口起始时间（时间戳）。 |
 | installEndTime | number | 否 | 是 | 表示指定安装窗口结束时间（时间戳）。 |
-| disableSystemOtaUpdate20+ | boolean | 否 | 是 | 表示是否禁用在公网环境下升级。true表示禁用公网升级，false表示不禁用公网升级。如果作为[systemManager.setOtaUpdatePolicy](#systemmanagersetotaupdatepolicy)的入参，该字段可缺省，缺省时保持当前配置不变。当前配置可通过[systemManager.getOtaUpdatePolicy](#systemmanagergetotaupdatepolicy)接口获取。禁用公网升级后，可以采用内网升级。推荐使用[restrictions.setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicy)禁用公网升级。 |
+| disableSystemOtaUpdate20+ | boolean | 否 | 是 | 表示是否禁用在公网环境下升级。true表示禁用公网升级，false表示不禁用公网升级。如果作为[systemManager.setOtaUpdatePolicy](#systemmanagersetotaupdatepolicy)的入参，该字段可缺省，缺省时保持当前配置不变。当前配置可通过[systemManager.getOtaUpdatePolicy](#systemmanagergetotaupdatepolicy)接口获取。禁用公网升级后，可以采用内网升级。推荐使用[restrictions.setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated)禁用公网升级。 |
 
 #### PolicyType
 

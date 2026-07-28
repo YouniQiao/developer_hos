@@ -2,8 +2,8 @@
 title: "通过Authorization Code获取GroupUnionID"
 upstream_id: "harmonyos-references/account-api-get-groupunionid-code"
 catalog: "harmonyos-references"
-content_hash: "40620ddb2a52"
-synced_at: "2026-07-09T01:01:14.155367"
+content_hash: "8d65196f5f90"
+synced_at: "2026-07-28T16:52:31.509236"
 ---
 
 # 通过Authorization Code获取GroupUnionID
@@ -180,6 +180,7 @@ public class GetGroupUnionIDByCodeDemo {
         request.add(new BasicNameValuePair("client_id", clientId));
         request.add(new BasicNameValuePair("grant_type", grantType));
         request.add(new BasicNameValuePair("supportAlg", "PS256"));
+        // need_group_union_id传入true，用于获取group_union_id字段，如不传或传false则响应中不返回group_union_id字段
         request.add(new BasicNameValuePair("need_group_union_id", "true"));
         httpPost.setHeader("Content-Type", "application/x-www-form-urlencoded");
         httpPost.setEntity(new UrlEncodedFormEntity(request));
@@ -206,24 +207,23 @@ public class GetGroupUnionIDByCodeDemo {
 
 | 业务响应主错误码 | 业务响应子错误码 | 描述 | 解决方法 |
 | --- | --- | --- | --- |
-| 1101 | 12304 | client_secret不正确。 | 请前往AppGallery Connect（简称AGC）确认client_secret是否正确。 |
 | 1101 | 20002 | client_id格式不正确。 | 检查client_id是否满足正则：^[0-9]{1,64}$。 |
-| 1101 | 20003 | client_id格式不正确或系统不存在。 | - 检查client_id是否满足正则：^[0-9]{1,64}$。 - 请前往AppGallery Connect（简称AGC）确认client_id是否存在。 |
-| 1101 | 20085 | client_secret为空。 | 请按照接口参数的要求，传入正确的client_secret参数。 |
+| 1101 | 20085 | 在grant_type参数传authorization_code时，client_secret传参为空。 | 请按照接口参数的要求，传入正确的client_secret参数。 |
 | 1101 | 20152 | code格式不正确。 | 检查code格式是否满足正则：^[0-9a-zA-Z=/\\+]+$。 该错误码出现可能场景： - code参数被篡改，导致格式不符。 - 请求头的Content-Type为application/x-www-form-urlencoded，但实际代码调用时，未对请求body体进行URLEncode处理，可参考[示例代码](#示例代码)组装参数。 |
-| 1101 | 20154 | code中的client_id和入参不一致。 | 检查入参client_id是否与[配置Client ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id)中的值一致。 |
+| 1101 | 20154 | code解析得到的Client ID与入参client_id不一致。 | 检查入参client_id是否与[配置Client ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id)中的值一致。 |
 | 1101 | 20155 | code过期，code只有5分钟有效期，超过有效期后将无法继续使用。 | 请引导用户重新授权，获取新的code再重试。 |
 | 1101 | 20156 | code已经被使用过。 | code只能用一次，请重新获取code再重试。 |
 | 1101 | 20158 | code已失效。正常code有效期为5分钟，但是由于用户的行为（如更改密码、取消应用的授权等行为），导致华为服务器提前失效已颁发的code。 | 请引导用户重新授权，获取新的code再重试。 |
-| 1101 | 20171 | client_secret为空。 | 请按照接口参数的要求，传入正确的client_secret参数。 |
+| 1101 | 20171 | 在grant_type参数传“device_code”、“refresh_token”或“client_credentials”时，client_secret传参为空。 | 请按照接口参数的要求，grant_type参数请固定传“authorization_code”，并且传入正确的client_secret参数。 |
 | 1101 | 20172 | client_secret格式不正确。 | 检查client_secret格式是否满足正则：^[0-9a-zA-Z=/\\+]+$。 |
-| 1101 | 20182 | grant_type值不正确。 | grant_type可选值如下： - “authorization_code”：该场景用于[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token)。 - “refresh_token”： 该场景用于[刷新用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-refresh-token)。 - “client_credentials”：该场景用于[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)。 |
+| 1101 | 20182 | grant_type值不正确。 | grant_type可选值如下： - “authorization_code”：该场景用于[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token)。 - “device_code”：该场景用于[扫码授权登录-获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token-for-qrcode)。 - “refresh_token”： 该场景用于[刷新用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-refresh-token)。 - “client_credentials”：该场景用于[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)。 当前场景请固定传”authorization_code“。 |
 | 1102 | 20001 | client_id为空。 | 请按照接口参数的要求，传入正确的client_id参数。 |
 | 1102 | 20151 | code为空。 | 请按照接口参数的要求，传入正确的code参数。 |
-| 1102 | 20181 | grant_type为空。 | grant_type可选值如下： - “authorization_code”：该场景用于[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token)。 - “refresh_token”： 该场景用于[刷新用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-refresh-token)。 - “client_credentials”：该场景用于[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)。 |
+| 1102 | 20181 | grant_type为空。 | grant_type可选值如下： - “authorization_code”：该场景用于[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token)。 - “device_code”：该场景用于[扫码授权登录-获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token-for-qrcode)。 - “refresh_token”： 该场景用于[刷新用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-refresh-token)。 - “client_credentials”：该场景用于[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)。 当前场景请固定传”authorization_code“。 |
 | 1103 | 20153 | 无效的code。 | code被篡改或伪造的code导致，请排查code参数是否与获取到的code一致。 |
 | 1203 | 12303 | client_id在系统不存在。 | 请前往AppGallery Connect（简称AGC）确认client_id是否存在。 |
 | 1203 | 12304 | 无效的client_secret。 | 入参client_id和client_secret不匹配导致，请检查参数。 |
-| 1203 | 500 | 系统内部错误。 | 系统内部处理错误，建议业务打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
-| 1203 | 100300 | 系统处理异常。 | 请重试，若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 1203 | 100301 | 参数处理异常。 | 参数处理异常，建议按照接口入参要求，检查参数是否符合规范。若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
 | 1203 | 100502 | 开发者账号的关联主体账号组未查询到。 | 请参考[添加账号组成员](https://developer.huawei.com/consumer/cn/doc/start/aai-0000001265430513)，将应用的开发者账号加入关联主体账号组后重试。 |
+| 1203 | 500 | 系统内部错误。 | 系统内部处理错误，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 1203 | 1203 | 系统未知异常。 | 系统未知异常，建议打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |

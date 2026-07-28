@@ -2,8 +2,8 @@
 title: "文件管理错误码"
 upstream_id: "harmonyos-references/errorcode-filemanagement"
 catalog: "harmonyos-references"
-content_hash: "06b0e6f9184c"
-synced_at: "2026-07-09T00:59:02.015569"
+content_hash: "78d88cb4c5e3"
+synced_at: "2026-07-28T16:50:05.454725"
 ---
 
 # 文件管理错误码
@@ -722,7 +722,7 @@ No data available
 
 重新请求数据。
 
-#### [h2]13900038 对于定义的数据类型,值太大
+#### [h2]13900038 对于定义的数据类型，值太大
 
 错误信息
 
@@ -1030,6 +1030,10 @@ mmap不支持映射此文件。
 
 Invalid file name
 
+错误描述
+
+文件名非法。
+
 可能原因
 
 文件名存在非法字符。
@@ -1043,6 +1047,10 @@ Invalid file name
 错误信息
 
 Invalid URI
+
+错误描述
+
+非法URI。
 
 可能原因
 
@@ -1058,6 +1066,10 @@ URI不合法。
 
 Invalid file name extension
 
+错误描述
+
+文件名后缀非法。
+
 可能原因
 
 按照文件类型命名。
@@ -1071,6 +1083,10 @@ Invalid file name extension
 错误信息
 
 File already in the recycle bin
+
+错误描述
+
+文件已进入回收站。
 
 可能原因
 
@@ -1086,6 +1102,10 @@ File already in the recycle bin
 
 System inner fail
 
+错误描述
+
+系统内部错误。
+
 可能原因
 
 系统异常，发生未知错误。
@@ -1100,6 +1120,10 @@ System inner fail
 
 Member is not a valid PhotoKey
 
+错误描述
+
+成员名非法。
+
 可能原因
 
 传入的字符串不是类或接口的成员名。
@@ -1107,6 +1131,34 @@ Member is not a valid PhotoKey
 处理步骤
 
 确保传入的字符串为类或接口的成员名。
+
+#### [h2]14000016 操作类型不支持
+
+错误信息
+
+Operation Not Support
+
+错误描述
+
+当前操作类型不被支持。
+
+可能原因
+
+1. 对非Moving Photo类型的资源执行了Moving Photo相关操作。
+2. 对已通过添加/移动/移除的资源，再次操作相同的URI。
+3. 之前的资源创建/修改请求还未提交就再次修改（包含 CREATE_FROM_URI/GET_WRITE_CACHE_HANDLER/ADD_RESOURCE 操作）。
+4. 对非视频类型（MediaType.VIDEO）的资源执行了视频增强等视频专属操作。
+5. 对非用户相册或高亮相册执行了不允许的操作。
+
+处理步骤
+
+1. 确认资源类型。 如执行Moving Photo相关操作（如setMovingPhotoEffectMode）需确保资源是Moving Photo类型。
+2. 如执行视频增强操作（如setVideoEnhancementAttr）需要确保MediaType为VIDEO类型。
+3. 避免重复操作。 在调用addAssets/removeAssets/moveAssets前，检查是否已执行过此操作，避免连续重复调用。
+4. 完成提交后再修改。 在调用createImageAssetRequest/createVideoAssetRequest/getWriteCacheHandler/addResource后，需调用[applyChanges](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-photoaccesshelper#applychanges11)提交生效。
+5. 提交生效后才能对创建的资产发起新的修改请求。
+6. 确认相册类型。 addAssets/removeAssets 仅支持用户相册和高亮相册。
+7. 系统相册（如相机、截屏相册）不支持这些操作。
 
 #### 空间统计错误码
 
@@ -1180,7 +1232,7 @@ Unmount failed
 
 处理步骤
 
-检查外卡文件是否被线程占用, 杀掉占用线程。
+检查外卡文件是否被线程占用，杀掉占用线程。
 
 #### [h2]13600005 卷状态错误
 
@@ -1419,6 +1471,276 @@ Failed to query the system data size.
 处理步骤
 
 重启设备后重试。
+
+#### [h2]13600021 获取分区表失败
+
+错误信息
+
+Get partition table failed.
+
+错误描述
+
+获取分区表失败。
+
+可能原因
+
+1.磁盘处于不可操作状态。
+
+2.内部流程执行失败或内部错误。
+
+处理步骤
+
+1.建议重新插拔设备后重试。
+
+2.请通过“华为开发者联盟官网”->“支持”，[在线提单](https://developer.huawei.com/consumer/cn/support/)方式获取支持。
+
+#### [h2]13600022 创建分区失败
+
+错误信息
+
+Create partition failed.
+
+错误描述
+
+创建分区失败。
+
+可能原因
+
+1.分区参数非法。
+
+2.磁盘未分配空间不足。
+
+3.内部流程执行失败或内部错误。
+
+处理步骤
+
+1.确认分区参数（起始扇区、结束扇区）是否在有效范围内。
+
+2.确认磁盘是否有足够的未分配空间。
+
+3.请通过“华为开发者联盟官网”->“支持”，[在线提单](https://developer.huawei.com/consumer/cn/support/)方式获取支持。
+
+#### [h2]13600023 删除分区失败
+
+错误信息
+
+Delete partition failed.
+
+错误描述
+
+删除分区失败。
+
+可能原因
+
+1.磁盘处于不可操作状态。
+
+2.内部流程执行失败或内部错误。
+
+处理步骤
+
+1.建议重新插拔设备后重试。
+
+2.请通过“华为开发者联盟官网”->“支持”，[在线提单](https://developer.huawei.com/consumer/cn/support/)方式获取支持。
+
+#### [h2]13600024 光盘为空
+
+错误信息
+
+Empty disc.
+
+错误描述
+
+光盘为空。
+
+可能原因
+
+光盘中没有数据或未被正确识别。
+
+处理步骤
+
+1.确认光盘已正确放入光驱。
+
+2.确认光盘包含有效数据。
+
+#### [h2]13600025 写入ISO文件失败
+
+错误信息
+
+Failed to write the ISO file.
+
+错误描述
+
+写入ISO文件失败。
+
+可能原因
+
+1.ISO文件损坏或格式不正确。
+
+2.写入过程中发生I/O错误。
+
+3.光盘写入权限不足。
+
+处理步骤
+
+1.检查ISO文件完整性。
+
+2.确认光盘状态正常且可写入。
+
+3.重试写入操作。
+
+#### [h2]13600026 擦除操作失败
+
+错误信息
+
+Erase operation failed.
+
+错误描述
+
+擦除操作失败。
+
+可能原因
+
+擦除过程中光驱被用户拔出。
+
+处理步骤
+
+重新插入光驱，并等待擦除完成。
+
+#### [h2]13600027 源数据未找到
+
+错误信息
+
+Source data not found.
+
+错误描述
+
+源数据未找到。
+
+可能原因
+
+1.源文件路径错误或文件不存在。
+
+2.源数据已被删除或移动。
+
+处理步骤
+
+1.确认源文件路径正确。
+
+2.确认源文件存在且可访问。
+
+#### [h2]13600028 刻录操作失败
+
+错误信息
+
+Burn operation failed.
+
+错误描述
+
+刻录操作失败。
+
+可能原因
+
+1.光驱硬件故障或连接异常。
+
+2.刻录过程中断或超时。
+
+3.光盘质量不佳或已损坏。
+
+处理步骤
+
+1.检查光驱已连接且处于正常识别的空闲状态。
+
+2.更换质量良好的光盘。
+
+3.降低刻录速度后重试。
+
+#### [h2]13600029 无正在进行的操作
+
+错误信息
+
+No ongoing operation.
+
+错误描述
+
+无正在进行的操作。
+
+可能原因
+
+查询不存在或未开始的刻录任务。
+
+处理步骤
+
+确认是否有正在进行的刻录操作。
+
+#### [h2]13600030 校验失败
+
+错误信息
+
+Verification failed.
+
+错误描述
+
+校验失败。
+
+可能原因
+
+1.刻录数据与源数据不一致。
+
+2.光盘读取错误。
+
+3.数据传输过程中出现错误。
+
+处理步骤
+
+1.重新进行刻录操作。
+
+2.检查光盘质量和光驱状态。
+
+3.验证源数据完整性。
+
+#### [h2]13600031 数据不匹配
+
+错误信息
+
+Data mismatch.
+
+错误描述
+
+数据不匹配。
+
+可能原因
+
+刻录后的数据与原始源数据存在差异。
+
+处理步骤
+
+1.重新刻录并校验数据。
+
+2.检查源文件在刻录过程中是否被修改。
+
+3.更换光盘或光驱后重试。
+
+#### [h2]13600032 格式化分区失败
+
+错误信息
+
+Format partition failed.
+
+错误描述
+
+格式化分区失败。
+
+可能原因
+
+1.磁盘处于不可操作状态。
+
+2.内部流程执行失败或内部错误。
+
+处理步骤
+
+1.建议重新插拔设备后重试。
+
+2.请通过“华为开发者联盟官网”->“支持”，[在线提单](https://developer.huawei.com/consumer/cn/support/)方式获取支持。
 
 #### 公共文件访问错误码
 

@@ -2,8 +2,8 @@
 title: "BusinessRiskIntelligentDetection（业务风险检测）"
 upstream_id: "harmonyos-references/errorcode-devicesecurity-brid"
 catalog: "harmonyos-references"
-content_hash: "80e227c6fac4"
-synced_at: "2026-07-09T17:26:07.831918"
+content_hash: "e2ea27f1d3ca"
+synced_at: "2026-07-28T16:50:26.904458"
 ---
 
 # BusinessRiskIntelligentDetection（业务风险检测）
@@ -14,7 +14,9 @@ synced_at: "2026-07-09T17:26:07.831918"
 
 错误信息
 
-Internal error.
+- Internal error.
+- Internal error. API call limit exceeded.
+- Internal error. Internal interface invocation exception.
 
 错误描述
 
@@ -68,7 +70,7 @@ Access cloud server fail.
 
 错误信息
 
-Verify cloud capability fail.
+Verify capability fail.
 
 错误描述
 

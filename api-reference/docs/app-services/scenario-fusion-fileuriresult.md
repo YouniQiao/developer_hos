@@ -2,17 +2,13 @@
 title: "fileUriService（文件路径转换API）"
 upstream_id: "harmonyos-references/scenario-fusion-fileuriresult"
 catalog: "harmonyos-references"
-content_hash: "6aadd3fe6cc7"
-synced_at: "2026-07-09T01:01:38.766071"
+content_hash: "5f9e13bb058f"
+synced_at: "2026-07-28T16:53:02.763118"
 ---
 
 # fileUriService（文件路径转换API）
 
 本模块为开发者在HarmonyOS 4及以下到HarmonyOS 5及以上的升级场景和克隆场景，调用该接口可以将源文件路径转换为目标文件路径。
-
-模型约束： 此接口仅可在Stage模型下使用。
-
-系统能力： SystemCapability.ScenarioFusionComponent.FileUriService
 
 起始版本： 5.0.2(14)
 
@@ -98,7 +94,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 try {
   // '/storage/emulated/0/Pictures/test.gif'表示test.gif的文件路径。
   let sourceFileUris: Array<string> =
-    ['100','content://media/external/files/10', '/storage/emulated/0/Pictures/test.gif',
+    ['100', 'content://media/external/files/10', '/storage/emulated/0/Pictures/test.gif',
       '/storage/emulated/0/media/com.test/test.mp4'];
   fileUriService.convertFileUris(sourceFileUris).then(result => {
     hilog.info(0x0000, 'testTag', 'succeeded in converting file uris');
@@ -116,7 +112,7 @@ try {
           hilog.info(0x0000, 'testTag', 'converted file path: %{public}s', data.targetUri);
           break;
       }
-    })
+    });
   }).catch((error: BusinessError) => {
     hilog.error(0x0000, 'testTag', 'Promise error: %{public}d %{public}s', error.code, error.message);
   });

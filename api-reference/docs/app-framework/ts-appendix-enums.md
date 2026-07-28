@@ -2,11 +2,13 @@
 title: "枚举说明"
 upstream_id: "harmonyos-references/ts-appendix-enums"
 catalog: "harmonyos-references"
-content_hash: "c853b24fbc64"
-synced_at: "2026-07-09T17:24:59.731163"
+content_hash: "92c6008779d8"
+synced_at: "2026-07-28T16:48:52.612957"
 ---
 
 # 枚举说明
+
+本文档汇总ArkUI开发中的公共枚举，供开发者查询枚举值的含义和适用场景。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 7开始支持，后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -252,11 +254,11 @@ synced_at: "2026-07-09T17:24:59.731163"
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-| 名称 | 说明 | 动效参数 | 默认缩放比 |
-| --- | --- | --- | --- |
-| LIGHT | 小面积（轻盈） | 弹簧动效， 刚性：410，阻尼：38，初始速度：1 | 90% |
-| MIDDLE | 中面积（稳定） | 弹簧动效， 刚性：350，阻尼：35，初始速度：0.5 | 95% |
-| HEAVY | 大面积（厚重） | 弹簧动效， 刚性：240，阻尼：28，初始速度：0 | 95% |
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| LIGHT | 0 | 小面积（轻盈），弹簧动效，刚性：410，阻尼：38，初始速度：1，默认缩放比90%。 |
+| MIDDLE | 1 | 中面积（稳定），弹簧动效，刚性：350，阻尼：35，初始速度：0.5，默认缩放比95%。 |
+| HEAVY | 2 | 大面积（厚重），弹簧动效，刚性：240，阻尼：28，初始速度：0，默认缩放比95%。 |
 
 #### Color
 
@@ -270,17 +272,17 @@ synced_at: "2026-07-09T17:24:59.731163"
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| Black | 0x000000 | ![](./img/zh-cn_image_0000002634010974.png) |
-| Blue | 0x0000ff | ![](./img/zh-cn_image_0000002664210125.png) |
-| Brown | 0xa52a2a | ![](./img/zh-cn_image_0000002664330183.png) |
-| Gray | 0x808080 | ![](./img/zh-cn_image_0000002633851072.png) |
-| Grey | 0x808080 | ![](./img/zh-cn_image_0000002633851072.png) |
-| Green | 0x008000 | ![](./img/zh-cn_image_0000002634010976.png) |
-| Orange | 0xffa500 | ![](./img/zh-cn_image_0000002664210127.png) |
-| Pink | 0xffc0cb | ![](./img/zh-cn_image_0000002664330185.png) |
-| Red | 0xff0000 | ![](./img/zh-cn_image_0000002633851074.png) |
-| White | 0xffffff | ![](./img/zh-cn_image_0000002634010978.png) |
-| Yellow | 0xffff00 | ![](./img/zh-cn_image_0000002664210129.png) |
+| Black | 0x000000 | ![](./img/zh-cn_image_0000002656008972.png) |
+| Blue | 0x0000ff | ![](./img/zh-cn_image_0000002655849052.png) |
+| Brown | 0xa52a2a | ![](./img/zh-cn_image_0000002686088483.png) |
+| Gray | 0x808080 | ![](./img/zh-cn_image_0000002685928653.png) |
+| Grey | 0x808080 | ![](./img/zh-cn_image_0000002685928653.png) |
+| Green | 0x008000 | ![](./img/zh-cn_image_0000002656008974.png) |
+| Orange | 0xffa500 | ![](./img/zh-cn_image_0000002655849054.png) |
+| Pink | 0xffc0cb | ![](./img/zh-cn_image_0000002686088485.png) |
+| Red | 0xff0000 | ![](./img/zh-cn_image_0000002685928655.png) |
+| White | 0xffffff | ![](./img/zh-cn_image_0000002656008976.png) |
+| Yellow | 0xffff00 | ![](./img/zh-cn_image_0000002655849056.png) |
 | Transparent9+ | rgba(0,0,0,0) | 透明色 |
 
 #### ColorSpace20+
@@ -354,7 +356,7 @@ synced_at: "2026-07-09T17:24:59.731163"
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| BEGIN(deprecated) | 0 | 表冠开始转动。 **说明：** 从API version 18 开始支持，从API version 24 开始废弃。 |
+| BEGIN(deprecated) | 0 | 表冠开始转动。 **说明：** 从API version 18开始支持，从API version 24开始废弃。 |
 | UPDATE | 1 | 表冠转动中。 |
 | END | 2 | 表冠停止转动。 |
 
@@ -414,6 +416,23 @@ synced_at: "2026-07-09T17:24:59.731163"
 | --- | --- | --- |
 | DEFAULT | 0 | 白底蓝字（深色主题下为黑底蓝字）。 |
 | HIGHLIGHT | 1 | 蓝底白字。 |
+
+#### DialogDisplayMode
+
+弹窗在子窗口中的显示模式。
+
+起始版本： 26.0.0
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| SCREEN_BASED | 0 | 弹窗在屏幕居中显示。 |
+| WINDOW_BASED | 1 | 弹窗在应用窗口居中显示。 |
 
 #### Direction
 
@@ -738,7 +757,7 @@ FontWeight是字重[fontWeight](https://developer.huawei.com/consumer/cn/doc/har
 
 #### GestureCollectIntervention
 
-定义手势和事件收集的干预操作类型。
+定义手势和事件收集的干预操作类型，适用于手势和事件收集过程中需要按优先级保留或丢弃部分手势的场景。
 
 起始版本： 26.0.0
 
@@ -755,6 +774,61 @@ FontWeight是字重[fontWeight](https://developer.huawei.com/consumer/cn/doc/har
 | DISCARD_HIGHER | 2 | 丢弃已经收集到的高优先级手势和事件。会丢弃已收集的右侧兄弟节点和当前节点上的手势。将继续处理低优先级手势的收集流程（左侧兄弟节点和祖先节点）。 |
 | DISCARD_SELF | 3 | 丢弃当前节点自身的手势和事件。当前节点的手势和事件将从手势树中排除。兄弟节点（左侧和右侧）以及祖先节点的手势仍会继续收集。 |
 | DISCARD_LOWER_PRIORITY_SIBLINGS | 4 | 丢弃左侧兄弟节点中待收集的手势和事件。当前节点以及已收集的右侧兄弟节点的手势和事件将被保留。将继续处理父节点以及祖先节点的收集流程。 |
+
+#### GestureShortcut
+
+组件的智慧手势响应优先级枚举。
+
+起始版本： 26.0.0
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| PRIMARY | 0 | 智慧手势响应优先级。当前智慧手势响应配置仅支持该取值。 |
+
+#### SmartGestureAction
+
+智慧手势操作类型枚举。
+
+起始版本： 26.0.0
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| NONE | 0 | 无动作。 |
+| PAGE_FORWARD | 1 | 向前翻页。包括向下和向右。 |
+| SCROLL_FORWARD | 2 | 向前滚动。包括向下和向右。 |
+| SELECT | 3 | 选中组件。 |
+| CLICK | 4 | 点击组件。 |
+| BACK_PRESS | 5 | 返回。 |
+
+#### OperateIntention
+
+智慧手势原始操作意图枚举。
+
+起始版本： 26.0.0
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| TAP | 0 | 敲一敲。 |
+| SLIDE_FORWARD | 1 | 划一划。 |
+| BACK_PRESS | 2 | 翻腕。 |
 
 #### HorizontalAlign
 
@@ -797,12 +871,12 @@ FontWeight是字重[fontWeight](https://developer.huawei.com/consumer/cn/doc/har
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| Default | 0 | 默认触摸测试效果。自身及子节点响应触摸测试，但阻塞兄弟节点的触摸测试，不影响祖先节点的触摸测试。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| Block | 1 | 自身响应触摸测试，阻塞子节点、兄弟节点和祖先节点的触摸测试。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| Transparent | 2 | 自身和子节点均响应触摸测试，不会阻塞兄弟节点和祖先节点的触摸测试。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| None | 3 | 自身不响应触摸测试，不会阻塞子节点、兄弟节点和祖先节点的触摸测试。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| BLOCK_HIERARCHY20+ | 4 | 自身和子节点响应触摸测试，阻止所有优先级较低的兄弟节点和父节点参与触摸测试。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| BLOCK_DESCENDANTS20+ | 5 | 自身不响应触摸测试，并且所有的后代（孩子，孙子等）也不响应触摸测试，不会影响祖先节点的触摸测试。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| Default | 0 | 默认触摸测试效果。自身及子节点响应触摸测试，但阻塞兄弟节点的触摸测试，不影响祖先节点的触摸测试。 **卡片能力：** 从API版本26.0.0开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| Block | 1 | 自身响应触摸测试，阻塞子节点、兄弟节点和祖先节点的触摸测试。 **卡片能力：** 从API版本26.0.0开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| Transparent | 2 | 自身和子节点均响应触摸测试，不会阻塞兄弟节点和祖先节点的触摸测试。 **卡片能力：** 从API版本26.0.0开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| None | 3 | 自身不响应触摸测试，不会阻塞子节点、兄弟节点和祖先节点的触摸测试。 **卡片能力：** 从API版本26.0.0开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| BLOCK_HIERARCHY20+ | 4 | 自身和子节点响应触摸测试，阻止所有优先级较低的兄弟节点和父节点参与触摸测试。 **卡片能力：** 从API版本26.0.0开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| BLOCK_DESCENDANTS20+ | 5 | 自身不响应触摸测试，并且所有的后代（孩子、孙子等）也不响应触摸测试，不会影响祖先节点的触摸测试。 **卡片能力：** 从API版本26.0.0开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### HeightBreakpoint13+
 
@@ -830,21 +904,21 @@ FontWeight是字重[fontWeight](https://developer.huawei.com/consumer/cn/doc/har
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| Fill | 0 | 不保持宽高比进行放大缩小，使得图片或视频充满显示边界，对齐方式为水平居中。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002664330187.png) |
-| Contain | 1 | 保持宽高比进行缩小或者放大，使得图片或视频完全显示在显示边界内，对齐方式为水平居中。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002633851076.png) |
-| Cover | 2 | 保持宽高比进行缩小或者放大，使得图片或视频两边都大于或等于显示边界，对齐方式为水平居中。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002634010980.png) |
-| Auto | 3 | 图片或视频会根据其自身尺寸和组件的尺寸进行适当缩放，以在保持比例的同时填充视图，对齐方式为水平居中。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002664210131.png) |
-| None | 5 | 保持原有尺寸进行显示，对齐方式为水平居中。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002664330189.png) |
-| ScaleDown | 6 | 保持宽高比进行显示，图片或视频缩小或者保持不变，对齐方式为水平居中。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002633851078.png) |
-| TOP_START12+ | 7 | 图片或视频显示在组件的顶部起始端，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002634010982.png) |
-| TOP12+ | 8 | 图片或视频显示在组件的顶部横向居中，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002664210133.png) |
-| TOP_END12+ | 9 | 图片或视频显示在组件的顶部尾端，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002664330191.png) |
-| START12+ | 10 | 图片或视频显示在组件的起始端纵向居中，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002633851080.png) |
-| CENTER12+ | 11 | 图片或视频显示在组件的横向和纵向居中，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002634010984.png) |
-| END12+ | 12 | 图片或视频显示在组件的尾端纵向居中，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002664210135.png) |
-| BOTTOM_START12+ | 13 | 图片或视频显示在组件的底部起始端，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002664330193.png) |
-| BOTTOM12+ | 14 | 图片或视频显示在组件的底部横向居中，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002633851082.png) |
-| BOTTOM_END12+ | 15 | 图片或视频显示在组件的底部尾端，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002634010986.png) |
+| Fill | 0 | 不保持宽高比进行放大缩小，使得图片或视频充满显示边界，对齐方式为水平居中。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002686088487.png) |
+| Contain | 1 | 保持宽高比进行缩小或者放大，使得图片或视频完全显示在显示边界内，对齐方式为水平居中。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002685928657.png) |
+| Cover | 2 | 保持宽高比进行缩小或者放大，使得图片或视频两边都大于或等于显示边界，对齐方式为水平居中。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002656008978.png) |
+| Auto | 3 | 图片或视频会根据其自身尺寸和组件的尺寸进行适当缩放，以在保持比例的同时填充视图，对齐方式为水平居中。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002655849058.png) |
+| None | 5 | 保持原有尺寸进行显示，对齐方式为水平居中。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002686088489.png) |
+| ScaleDown | 6 | 保持宽高比进行显示，图片或视频缩小或者保持不变，对齐方式为水平居中。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002685928659.png) |
+| TOP_START12+ | 7 | 图片或视频显示在组件的顶部起始端，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002656008980.png) |
+| TOP12+ | 8 | 图片或视频显示在组件的顶部横向居中，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002655849060.png) |
+| TOP_END12+ | 9 | 图片或视频显示在组件的顶部尾端，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002686088491.png) |
+| START12+ | 10 | 图片或视频显示在组件的起始端纵向居中，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002685928661.png) |
+| CENTER12+ | 11 | 图片或视频显示在组件的横向和纵向居中，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002656008982.png) |
+| END12+ | 12 | 图片或视频显示在组件的尾端纵向居中，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002655849062.png) |
+| BOTTOM_START12+ | 13 | 图片或视频显示在组件的底部起始端，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002686088493.png) |
+| BOTTOM12+ | 14 | 图片或视频显示在组件的底部横向居中，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002685928663.png) |
+| BOTTOM_END12+ | 15 | 图片或视频显示在组件的底部尾端，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002656008984.png) |
 | MATRIX15+ | 16 | 配合[imageMatrix](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-image#imagematrix15)使用，使图像在Image组件自定义位置显示，且保持原有尺寸。不支持svg图源。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### ItemAlign
@@ -952,7 +1026,7 @@ FontWeight是字重[fontWeight](https://developer.huawei.com/consumer/cn/doc/har
 | --- | --- | --- |
 | Down | 0 | 按键按下。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | Up | 1 | 按键松开。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| CANCEL | 3 | 取消按键事件。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| CANCEL | 3 | 取消按键事件。在[全局基础输入事件监听](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-inputeventmonitor)场景中，当Up事件被阻止传递后自动补发CANCEL事件。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### LineJoinStyle
 
@@ -1111,7 +1185,7 @@ FontWeight是字重[fontWeight](https://developer.huawei.com/consumer/cn/doc/har
 
 type Nullable<T> = T | undefined
 
-在使用该类型时，该类型的对象可以是自定义类型，也可以是undefined。
+在使用该类型时，其值可以是泛型参数T所指定的类型，也可以是undefined。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1121,7 +1195,7 @@ type Nullable<T> = T | undefined
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 表示该类型声明的对象是自定义类型。 |
+| T | 表示泛型参数T所指定的类型。 |
 | undefined | 表示该类型声明的对象是undefined。 |
 
 #### ObscuredReasons10+
@@ -1178,20 +1252,20 @@ type Nullable<T> = T | undefined
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-| 名称 | 说明 |
-| --- | --- |
-| Left | 气泡提示位于组件左侧，与组件左侧中心对齐。 |
-| Right | 气泡提示位于组件右侧，与组件右侧中心对齐。 |
-| Top | 气泡提示位于组件上侧，与组件上侧中心对齐。 |
-| Bottom | 气泡提示位于组件下侧，与组件下侧中心对齐。 |
-| TopLeft | 气泡提示位于组件上侧，从API version 9开始，与组件左侧边缘对齐。 |
-| TopRight | 气泡提示位于组件上侧，从API version 9开始，与组件右侧边缘对齐。 |
-| BottomLeft | 气泡提示位于组件下侧，从API version 9开始，与组件左侧边缘对齐。 |
-| BottomRight | 气泡提示位于组件下侧，从API version 9开始，与组件右侧边缘对齐。 |
-| LeftTop9+ | 气泡提示位于组件左侧，与组件上侧边缘对齐。 |
-| LeftBottom9+ | 气泡提示位于组件左侧，与组件下侧边缘对齐。 |
-| RightTop9+ | 气泡提示位于组件右侧，与组件上侧边缘对齐。 |
-| RightBottom9+ | 气泡提示位于组件右侧，与组件下侧边缘对齐。 |
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| Left | 0 | 气泡提示位于组件左侧，与组件左侧中心对齐。 |
+| Right | 1 | 气泡提示位于组件右侧，与组件右侧中心对齐。 |
+| Top | 2 | 气泡提示位于组件上侧，与组件上侧中心对齐。 |
+| Bottom | 3 | 气泡提示位于组件下侧，与组件下侧中心对齐。 |
+| TopLeft | 4 | 气泡提示位于组件上侧，从API version 9开始，与组件左侧边缘对齐。 |
+| TopRight | 5 | 气泡提示位于组件上侧，从API version 9开始，与组件右侧边缘对齐。 |
+| BottomLeft | 6 | 气泡提示位于组件下侧，从API version 9开始，与组件左侧边缘对齐。 |
+| BottomRight | 7 | 气泡提示位于组件下侧，从API version 9开始，与组件右侧边缘对齐。 |
+| LeftTop9+ | 8 | 气泡提示位于组件左侧，与组件上侧边缘对齐。 |
+| LeftBottom9+ | 9 | 气泡提示位于组件左侧，与组件下侧边缘对齐。 |
+| RightTop9+ | 10 | 气泡提示位于组件右侧，与组件上侧边缘对齐。 |
+| RightBottom9+ | 11 | 气泡提示位于组件右侧，与组件下侧边缘对齐。 |
 
 #### PixelRoundCalcPolicy11+
 
@@ -1257,7 +1331,7 @@ type Nullable<T> = T | undefined
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| BREAKPOINT_DEFAULT | 0 | 针对List和Swiper组件：在组件宽度属于sm及更小的断点区间时显示1列，属于md断点区间时显示2列，属于lg及更大的断点区间时显示3列。 针对Grid和WaterFlow组件：在组件宽度属于sm及更小的断点区间时显示2列，属于md断点区间时显示3列，属于lg及更大的断点区间时显示5列。 |
+| BREAKPOINT_DEFAULT | 0 | 针对List和Swiper组件：在组件宽度属于sm及更小的断点区间时显示1列，属于md断点区间时显示2列，属于lg及更大的断点区间时显示3列。 针对Grid、WaterFlow和LazyVWaterFlowLayout组件：在组件宽度属于sm及更小的断点区间时显示2列，属于md断点区间时显示3列，属于lg及更大的断点区间时显示5列。LazyVWaterFlowLayout组件从API版本26.0.0开始支持。 |
 | BREAKPOINT_SM1MD2LG3 | 1 | 在组件宽度属于sm及更小的断点区间时显示1列，属于md断点区间时显示2列，属于lg及更大的断点区间时显示3列。 |
 | BREAKPOINT_SM2MD3LG5 | 2 | 在组件宽度属于sm及更小的断点区间时显示2列，属于md断点区间时显示3列，属于lg及更大的断点区间时显示5列。 |
 
@@ -1318,22 +1392,22 @@ type Nullable<T> = T | undefined
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| CENTER | 0 | 保持动画终态的内容大小，并且内容始终与组件保持中心对齐。 ![](./img/zh-cn_image_0000002664210137.png) |
-| TOP | 1 | 保持动画终态的内容大小，并且内容始终与组件保持顶部中心对齐。 ![](./img/zh-cn_image_0000002664330195.png) |
-| BOTTOM | 2 | 保持动画终态的内容大小，并且内容始终与组件保持底部中心对齐。 ![](./img/zh-cn_image_0000002633851084.png) |
-| LEFT | 3 | 保持动画终态的内容大小，并且内容始终与组件保持左侧对齐。 ![](./img/zh-cn_image_0000002634010988.png) |
-| RIGHT | 4 | 保持动画终态的内容大小，并且内容始终与组件保持右侧对齐。 ![](./img/zh-cn_image_0000002664210139.png) |
-| TOP_LEFT | 5 | 保持动画终态的内容大小，并且内容始终与组件保持左上角对齐。 ![](./img/zh-cn_image_0000002664330197.png) |
-| TOP_RIGHT | 6 | 保持动画终态的内容大小，并且内容始终与组件保持右上角对齐。 ![](./img/zh-cn_image_0000002633851086.png) |
-| BOTTOM_LEFT | 7 | 保持动画终态的内容大小，并且内容始终与组件保持左下角对齐。 ![](./img/zh-cn_image_0000002634010990.png) |
-| BOTTOM_RIGHT | 8 | 保持动画终态的内容大小，并且内容始终与组件保持右下角对齐。 ![](./img/zh-cn_image_0000002664210141.png) |
-| RESIZE_FILL | 9 | 不考虑动画终态内容的宽高比，并且内容始终缩放到组件的大小。 ![](./img/zh-cn_image_0000002664330199.png) |
-| RESIZE_CONTAIN | 10 | 保持动画终态内容的宽高比进行缩小或放大，使内容完整显示在组件内，且与组件保持中心对齐。 ![](./img/zh-cn_image_0000002633851088.png) |
-| RESIZE_CONTAIN_TOP_LEFT | 11 | 保持动画终态内容的宽高比进行缩小或放大，使内容完整显示在组件内。当组件宽方向有剩余时，内容与组件保持左侧对齐，当组件高方向有剩余时，内容与组件保持顶部对齐。 ![](./img/zh-cn_image_0000002634010992.png) |
-| RESIZE_CONTAIN_BOTTOM_RIGHT | 12 | 保持动画终态内容的宽高比进行缩小或放大，使内容完整显示在组件内。当组件宽方向有剩余时，内容与组件保持右侧对齐，当组件高方向有剩余时，内容与组件保持底部对齐。 ![](./img/zh-cn_image_0000002664210143.png) |
-| RESIZE_COVER | 13 | 保持动画终态内容的宽高比进行缩小或放大，使内容两边都大于或等于组件两边，且与组件保持中心对齐，显示内容的中间部分。 ![](./img/zh-cn_image_0000002664330201.png) |
-| RESIZE_COVER_TOP_LEFT | 14 | 保持动画终态内容的宽高比进行缩小或放大，使内容的两边都恰好大于或等于组件两边。当内容宽方向有剩余时，内容与组件保持左侧对齐，显示内容的左侧部分。当内容高方向有剩余时，内容与组件保持顶部对齐，显示内容的顶侧部分。 ![](./img/zh-cn_image_0000002633851090.png) |
-| RESIZE_COVER_BOTTOM_RIGHT | 15 | 保持动画终态内容的宽高比进行缩小或放大，使内容的两边都恰好大于或等于组件两边。当内容宽方向有剩余时，内容与组件保持右侧对齐，显示内容的右侧部分。当内容高方向有剩余时，内容与组件保持底部对齐，显示内容的底侧部分。 ![](./img/zh-cn_image_0000002634010994.png) |
+| CENTER | 0 | 保持动画终态的内容大小，并且内容始终与组件保持中心对齐。 ![](./img/zh-cn_image_0000002655849064.png) |
+| TOP | 1 | 保持动画终态的内容大小，并且内容始终与组件保持顶部中心对齐。 ![](./img/zh-cn_image_0000002686088495.png) |
+| BOTTOM | 2 | 保持动画终态的内容大小，并且内容始终与组件保持底部中心对齐。 ![](./img/zh-cn_image_0000002685928665.png) |
+| LEFT | 3 | 保持动画终态的内容大小，并且内容始终与组件保持左侧对齐。 ![](./img/zh-cn_image_0000002656008986.png) |
+| RIGHT | 4 | 保持动画终态的内容大小，并且内容始终与组件保持右侧对齐。 ![](./img/zh-cn_image_0000002655849066.png) |
+| TOP_LEFT | 5 | 保持动画终态的内容大小，并且内容始终与组件保持左上角对齐。 ![](./img/zh-cn_image_0000002686088497.png) |
+| TOP_RIGHT | 6 | 保持动画终态的内容大小，并且内容始终与组件保持右上角对齐。 ![](./img/zh-cn_image_0000002685928667.png) |
+| BOTTOM_LEFT | 7 | 保持动画终态的内容大小，并且内容始终与组件保持左下角对齐。 ![](./img/zh-cn_image_0000002656008988.png) |
+| BOTTOM_RIGHT | 8 | 保持动画终态的内容大小，并且内容始终与组件保持右下角对齐。 ![](./img/zh-cn_image_0000002655849068.png) |
+| RESIZE_FILL | 9 | 不考虑动画终态内容的宽高比，并且内容始终缩放到组件的大小。 ![](./img/zh-cn_image_0000002686088499.png) |
+| RESIZE_CONTAIN | 10 | 保持动画终态内容的宽高比进行缩小或放大，使内容完整显示在组件内，且与组件保持中心对齐。 ![](./img/zh-cn_image_0000002685928669.png) |
+| RESIZE_CONTAIN_TOP_LEFT | 11 | 保持动画终态内容的宽高比进行缩小或放大，使内容完整显示在组件内。当组件宽方向有剩余时，内容与组件保持左侧对齐，当组件高方向有剩余时，内容与组件保持顶部对齐。 ![](./img/zh-cn_image_0000002656008990.png) |
+| RESIZE_CONTAIN_BOTTOM_RIGHT | 12 | 保持动画终态内容的宽高比进行缩小或放大，使内容完整显示在组件内。当组件宽方向有剩余时，内容与组件保持右侧对齐，当组件高方向有剩余时，内容与组件保持底部对齐。 ![](./img/zh-cn_image_0000002655849070.png) |
+| RESIZE_COVER | 13 | 保持动画终态内容的宽高比进行缩小或放大，使内容两边都大于或等于组件两边，且与组件保持中心对齐，显示内容的中间部分。 ![](./img/zh-cn_image_0000002686088501.png) |
+| RESIZE_COVER_TOP_LEFT | 14 | 保持动画终态内容的宽高比进行缩小或放大，使内容的两边都恰好大于或等于组件两边。当内容宽方向有剩余时，内容与组件保持左侧对齐，显示内容的左侧部分。当内容高方向有剩余时，内容与组件保持顶部对齐，显示内容的顶侧部分。 ![](./img/zh-cn_image_0000002685928671.png) |
+| RESIZE_COVER_BOTTOM_RIGHT | 15 | 保持动画终态内容的宽高比进行缩小或放大，使内容的两边都恰好大于或等于组件两边。当内容宽方向有剩余时，内容与组件保持右侧对齐，显示内容的右侧部分。当内容高方向有剩余时，内容与组件保持底部对齐，显示内容的底侧部分。 ![](./img/zh-cn_image_0000002656008992.png) |
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -1402,7 +1476,7 @@ type Nullable<T> = T | undefined
 | Down | 0 | 手指按下时触发。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | Up | 1 | 手指抬起时触发。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | Move | 2 | 手指按压并在屏幕上移动时触发。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| Cancel | 3 | 触摸事件取消时触发。例如：1.手指按住屏幕同时点击Home键返回桌面，此时会触发Cancel；2.折叠屏手机，应用在按住屏幕的情况下折叠手机切换到外屏，此时触发Cancel事件；3.手指触摸过程中存在手写笔操作，手指的触摸操作会收到Cancel事件。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| Cancel | 3 | 触摸事件取消时触发。例如：1、手指按住屏幕同时点击Home键返回桌面，此时会触发Cancel；2、折叠屏手机，应用在按住屏幕的情况下折叠手机切换到外屏，此时触发Cancel事件；3.手指触摸过程中存在手写笔操作，手指的触摸操作会收到Cancel事件。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | HOVER_ENTER20+ | 9 | 无障碍模式下，手指按下时触发。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | HOVER_MOVE20+ | 10 | 无障碍模式下，触摸移动时触发。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | HOVER_EXIT20+ | 11 | 无障碍模式下，抬手时触发。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
@@ -1439,7 +1513,7 @@ type Nullable<T> = T | undefined
 
 #### CompetitionStrategy24+
 
-定义分发的事件是否为竞争手势，竞争场景手势原始节点和目标节点只有一个节点会响应手势，非竞争场景可以同时响应。
+定义分发的事件是否为竞争手势，竞争场景下手势原始节点和目标节点只有一个节点会响应手势，非竞争场景下手势原始节点和目标节点可以同时响应。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -1629,6 +1703,8 @@ type Nullable<T> = T | undefined
 
 #### Week
 
+定义星期枚举值。
+
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
@@ -1684,12 +1760,12 @@ type Nullable<T> = T | undefined
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-| 名称 | 说明 |
-| --- | --- |
-| SURFACE | 用于EGL/OpenGLES和媒体数据写入，单独展示开发者定制的绘制内容到屏幕上。背景色设置为黑色时走显示子系统（DSS）。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| COMPONENT(deprecated) | 使用[XComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-xcomponent)作为容器组件，支持在其中执行非UI逻辑以动态加载显示内容。 **说明：** 从API version 10开始支持，从API version 12开始废弃，建议使用其他容器组件替代。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| TEXTURE | 用于EGL/OpenGLES和媒体数据写入，开发者定制的绘制内容将与XComponent组件的内容合成后展示到屏幕上。1、保持帧同步，保持在同一帧将图形处理器（GPU）纹理和ArkUI其他的绘制指令统一发给渲染服务(RenderService)。2、动效和系统组件统一。3、走图形处理器（GPU）合成，相比surface可能走显示子系统（DSS）功耗更高。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| NODE(deprecated) | 用于Native UI节点的占位容器，开发者通过Native接口开发的页面组件可展示在此容器区域内。 **说明：** 从API version 12开始支持，从API version 20开始废弃，推荐使用[ContentSlot](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-contentslot)组件替代。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| SURFACE | 0 | 用于EGL/OpenGLES和媒体数据写入，单独展示开发者定制的绘制内容到屏幕上。背景色设置为黑色时走显示子系统（DSS）。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| COMPONENT(deprecated) | 1 | 使用[XComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-xcomponent)作为容器组件，支持在其中执行非UI逻辑以动态加载显示内容。 **说明：** 从API version 10开始支持，从API version 12开始废弃，建议使用其他容器组件替代。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| TEXTURE | 2 | 用于EGL/OpenGLES和媒体数据写入，开发者定制的绘制内容将与XComponent组件的内容合成后展示到屏幕上。1、保持帧同步，保持在同一帧将图形处理器（GPU）纹理和ArkUI其他的绘制指令统一发给渲染服务(RenderService)。2、动效和系统组件统一。3、走图形处理器（GPU）合成，相比surface可能走显示子系统（DSS）功耗更高。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| NODE(deprecated) | 3 | 用于Native UI节点的占位容器，开发者通过Native接口开发的页面组件可展示在此容器区域内。 **说明：** 从API version 12开始支持，从API version 20开始废弃，推荐使用[ContentSlot](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-contentslot)组件替代。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 
 #### InputEventSubTypeMask
 

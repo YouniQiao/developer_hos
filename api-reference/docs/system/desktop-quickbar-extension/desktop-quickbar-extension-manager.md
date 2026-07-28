@@ -2,8 +2,8 @@
 title: "quickBarManager（快捷栏管理服务）"
 upstream_id: "harmonyos-references/desktop-quickbar-extension-manager"
 catalog: "harmonyos-references"
-content_hash: "1c13da085788"
-synced_at: "2026-07-09T00:59:45.980445"
+content_hash: "761d68e4c203"
+synced_at: "2026-07-28T16:51:02.614265"
 ---
 
 # quickBarManager（快捷栏管理服务）
@@ -828,5 +828,323 @@ try {
   await quickBarManager.setWindowToGroup(context, '80', 'group_one');
 } catch (error) {
   console.error(`setWindowToGroup failed. error code: ${error.code}, error message: ${error.message}`);
+}
+```
+
+#### ProgressState
+
+快捷栏进度状态。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.PCService.QuickBarManager
+
+起始版本： 26.0.0
+
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| NO_PROGRESS | 0 | 无进度状态。 |
+| NORMAL | 1 | 正常状态。 |
+| PAUSED | 2 | 暂停状态。 |
+| ERROR | 3 | 错误状态。 |
+
+#### quickBarManager.setQuickBarCombineIcon
+
+setQuickBarCombineIcon(context: common.Context, combineIcon: image.PixelMap): Promise<void>
+
+设置快捷栏融合图标。使用promise异步回调。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+需要权限： ohos.permission.SET_ABILITY_INSTANCE_INFO
+
+系统能力： SystemCapability.PCService.QuickBarManager
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| context | [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context#context) | 是 | 上下文信息。 |
+| combineIcon | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 是 | 快捷栏图标信息，支持JPEG、PNG、GIF、WebP、BMP、SVG、ICO、DNG等图片类型。 **说明：** 建议使用512vp * 512vp大小的图片。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，无返回值。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-statusbar-extension)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 201 | Permission denied. |
+| 1020210009 | Invalid parameter. |
+| 1020210010 | Quick bar icon not found. |
+| 1020210011 | The API is called too frequently. |
+
+示例：
+
+```
+import { quickBarManager } from '@kit.DeskTopExtensionKit';
+import { resourceManager } from '@kit.LocalizationKit';
+import { image } from '@kit.ImageKit';
+
+const context: Context | undefined = this.getUIContext().getHostContext();
+if (context === undefined) {
+  return;
+}
+// 获取resourceManager资源管理器
+const resourceMgr: resourceManager.ResourceManager = context.resourceManager;
+// 创建图标的pixelMap，需在资源rawfile文件夹中预置icon.png图片
+const fileData = resourceMgr.getRawFileContentSync('icon.png');
+const imageSource = image.createImageSource(fileData.buffer);
+const imagePixelMap = await imageSource.createPixelMap();
+
+try {
+  await quickBarManager.setQuickBarCombineIcon(context, imagePixelMap);
+  console.info('setQuickBarCombineIcon success');
+} catch (error) {
+  console.error(`setQuickBarCombineIcon failed. error code: ${error.code}, error message: ${error.message}`);
+}
+```
+
+#### quickBarManager.setQuickBarLayeredIcon
+
+setQuickBarLayeredIcon(context: common.Context, foregroundIcon: image.PixelMap, backgroundIcon: image.PixelMap): Promise<void>
+
+设置快捷栏分层图标。使用promise异步回调。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+需要权限： ohos.permission.SET_ABILITY_INSTANCE_INFO
+
+系统能力： SystemCapability.PCService.QuickBarManager
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| context | [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context#context) | 是 | 上下文信息。 |
+| foregroundIcon | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 是 | 快捷栏前景图标信息，支持JPEG、PNG、GIF、WebP、BMP、SVG、ICO、DNG等图片类型。 **说明：** 建议使用512vp * 512vp大小的图片。 |
+| backgroundIcon | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 是 | 快捷栏背景图标信息，支持JPEG、PNG、GIF、WebP、BMP、SVG、ICO、DNG等图片类型。 **说明：** 建议使用512vp * 512vp大小的图片。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，无返回值。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-statusbar-extension)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 201 | Permission denied. |
+| 1020210009 | Invalid parameter. |
+| 1020210010 | Quick bar icon not found. |
+| 1020210011 | The API is called too frequently. |
+
+示例：
+
+```
+import { quickBarManager } from '@kit.DeskTopExtensionKit';
+import { resourceManager } from '@kit.LocalizationKit';
+import { image } from '@kit.ImageKit';
+
+const context: Context | undefined = this.getUIContext().getHostContext();
+if (context === undefined) {
+  return;
+}
+// 获取resourceManager资源管理器
+const resourceMgr: resourceManager.ResourceManager = context.resourceManager;
+// 创建前景图的pixelMap，需在资源rawfile文件夹中预置foreground.png图片
+const foregroundFileData = resourceMgr.getRawFileContentSync('foreground.png');
+const foregroundImageSource = image.createImageSource(foregroundFileData.buffer);
+const foregroundPixelMap = await foregroundImageSource.createPixelMap();
+
+// 创建背景图的pixelMap，需在资源rawfile文件夹中预置background.png图片
+const backgroundFileData = resourceMgr.getRawFileContentSync('background.png');
+const backgroundImageSource = image.createImageSource(backgroundFileData.buffer);
+const backgroundPixelMap = await backgroundImageSource.createPixelMap();
+
+try {
+  await quickBarManager.setQuickBarLayeredIcon(context, foregroundPixelMap, backgroundPixelMap);
+  console.info('setQuickBarLayeredIcon success');
+} catch (error) {
+  console.error(`setQuickBarLayeredIcon failed. error code: ${error.code}, error message: ${error.message}`);
+}
+```
+
+#### quickBarManager.setProgressState
+
+setProgressState(context: common.Context, state: ProgressState): Promise<void>
+
+在快捷栏图标上设置进度条状态。使用promise异步回调。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+需要权限： ohos.permission.SET_ABILITY_INSTANCE_INFO
+
+系统能力： SystemCapability.PCService.QuickBarManager
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| context | [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context#context) | 是 | 上下文信息。 |
+| state | [ProgressState](#progressstate) | 是 | 快捷栏图标上显示的进度状态。 取值范围如下： - NO_PROGRESS (0)：无进度状态。 - NORMAL (1)：正常状态。 - PAUSED (2)：暂停状态。 - ERROR (3)：错误状态。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，无返回值。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-statusbar-extension)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 201 | Permission denied. |
+| 1020210009 | Invalid parameter. |
+| 1020210010 | Quick bar icon not found. |
+| 1020210011 | The API is called too frequently. |
+
+示例：
+
+```
+import { quickBarManager } from '@kit.DeskTopExtensionKit';
+
+const context: Context | undefined = this.getUIContext().getHostContext();
+if (context === undefined) {
+  return;
+}
+
+try {
+  // 设置进度状态为NORMAL
+  await quickBarManager.setProgressState(context, quickBarManager.ProgressState.NORMAL);
+  console.info('setProgressState success');
+} catch (error) {
+  console.error(`setProgressState failed. error code: ${error.code}, error message: ${error.message}`);
+}
+```
+
+#### quickBarManager.setProgressValue
+
+setProgressValue(context: common.Context, completed: number, total: number): Promise<void>
+
+在快捷栏图标上设置进度条。使用promise异步回调。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+需要权限： ohos.permission.SET_ABILITY_INSTANCE_INFO
+
+系统能力： SystemCapability.PCService.QuickBarManager
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| context | [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context#context) | 是 | 上下文信息。 |
+| completed | number | 是 | 已完成的进度值。 取值范围：[0, 100]，且小于等于total的值。 |
+| total | number | 是 | 总进度值。 取值范围：(0, 100]，且大于等于completed的值。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，无返回值。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-statusbar-extension)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 201 | Permission denied. |
+| 1020210009 | Invalid parameter. |
+| 1020210010 | Quick bar icon not found. |
+| 1020210011 | The API is called too frequently. |
+
+示例：
+
+```
+import { quickBarManager } from '@kit.DeskTopExtensionKit';
+
+const context: Context | undefined = this.getUIContext().getHostContext();
+if (context === undefined) {
+  return;
+}
+
+const completed: number = 50;
+const total: number = 100;
+
+try {
+  await quickBarManager.setProgressValue(context, completed, total);
+  console.info('setProgressValue success');
+} catch (error) {
+  console.error(`setProgressValue failed. error code: ${error.code}, error message: ${error.message}`);
+}
+```
+
+#### quickBarManager.isQuickBarCapabilitySupported
+
+isQuickBarCapabilitySupported(context: common.Context): Promise<boolean>
+
+检查是否支持快捷栏功能。使用promise异步回调。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.PCService.QuickBarManager
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| context | [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context#context) | 是 | 上下文信息。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，返回**true**表示支持快捷栏功能，返回**false**表示不支持。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-statusbar-extension)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 1020210011 | The API is called too frequently. |
+
+示例：
+
+```
+import { quickBarManager } from '@kit.DeskTopExtensionKit';
+
+const context: Context | undefined = this.getUIContext().getHostContext();
+if (context === undefined) {
+  return;
+}
+
+try {
+  const isSupported: boolean = await quickBarManager.isQuickBarCapabilitySupported(context);
+  console.info(`isQuickBarCapabilitySupported result: ${isSupported}`);
+} catch (error) {
+  console.error(`isQuickBarCapabilitySupported failed. error code: ${error.code}, error message: ${error.message}`);
 }
 ```

@@ -2,8 +2,8 @@
 title: "JsLeakWatcher错误码"
 upstream_id: "harmonyos-references/errorcode-jsleakwatcher"
 catalog: "harmonyos-references"
-content_hash: "38b4ba2a3d3f"
-synced_at: "2026-07-09T01:00:05.929822"
+content_hash: "22e17fddfed8"
+synced_at: "2026-07-28T16:51:24.309175"
 ---
 
 # JsLeakWatcher错误码
@@ -22,9 +22,8 @@ The parameter isEnabled is invalid.
 
 可能原因
 
-1.传入参数isEnabled的类型错误。
-
-2.必填参数未指定。
+1. 传入参数isEnabled的类型错误。
+2. 必填参数未指定。
 
 处理步骤
 
@@ -42,11 +41,9 @@ The parameter config is invalid.
 
 可能原因
 
-1.传入参数config的类型错误。
-
-2.必填参数未指定。
-
-3.参数校验失败。该参数为字符串类型数组，数组元素必须包含：XComponent，NodeContainer，Window，CustomComponent和Ability中一个或者多个。
+1. 传入参数config的类型错误。
+2. 必填参数未指定。
+3. 参数校验失败。该参数为字符串类型数组，数组元素必须包含：XComponent、NodeContainer、Window、CustomComponent或Ability中一个或者多个。
 
 处理步骤
 
@@ -64,11 +61,9 @@ The parameter callback is invalid.
 
 可能原因
 
-1.传入参数callback的类型错误。
-
-2.必填参数未指定。
-
-3.参数校验失败。校验callback回调函数入参是一个包含两个元素字符串类型数组。
+1. 传入参数callback的类型错误。
+2. 必填参数未指定。
+3. 参数校验失败。校验callback回调函数入参是一个包含两个元素字符串类型数组。
 
 处理步骤
 

@@ -2,8 +2,8 @@
 title: "HandWrite"
 upstream_id: "harmonyos-references/pen-handwrite-c"
 catalog: "harmonyos-references"
-content_hash: "663f02b5d7b2"
-synced_at: "2026-07-09T00:59:59.053970"
+content_hash: "0e0b6cb25825"
+synced_at: "2026-07-28T16:51:17.589168"
 ---
 
 # HandWrite
@@ -34,13 +34,19 @@ synced_at: "2026-07-09T00:59:59.053970"
 
 | 名称 | 描述 |
 | --- | --- |
-| enum [Handwrite_ErrCode](#handwrite_errcode) { E_NO_ERROR = 0, E_PARAMS = 401, E_INNER_ERROR = 1010400001 } | 定义手写错误码。 |
+| enum [Handwrite_ErrCode](#handwrite_errcode) { E_NO_ERROR = 0, E_PARAMS = 401, E_INNER_ERROR = 1010400001, E_PERMISSION = 201 } | 定义手写错误码。 |
 
 #### [h2]函数
 
 | 名称 | 函数 |
 | --- | --- |
 | int32_t [HMS_HandWrite_GetPredictPoint](#hms_handwrite_getpredictpoint)(const [HandWrite_HistoricalPoint](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pen-handwrite-struct-historicalpoint)* event, int32_t size, float *predictPointX, float *predictPointY) | 此接口用于获取预测点。 |
+
+#### [h2]函数
+
+| 名称 | 函数 |
+| --- | --- |
+| int32_t [HMS_HandWrite_SetRefreshDelayOff](#hms_handwrite_setrefreshdelayoff)(const char* xcomponentId, const bool enable) | 此接口用于提升手写笔书写时延。 |
 
 #### 枚举类型说明
 
@@ -57,9 +63,10 @@ enum Handwrite_ErrCode
 
 | 枚举值 | 描述 |
 | --- | --- |
-| E_NO_ERROR | 执行成功。 |
-| E_PARAMS | 输入参数无效。 |
-| E_INNER_ERROR | 系统内部错误，相关资源加载失败。 |
+| E_NO_ERROR = 0 | 执行成功。 |
+| E_PARAMS = 401 | 输入参数无效。 |
+| E_INNER_ERROR = 1010400001 | 系统内部错误，相关资源加载失败。 |
+| E_PERMISSION = 201 | 权限校验失败。 **起始版本：** 26.0.0 |
 
 #### 函数说明
 
@@ -75,8 +82,6 @@ int32_t HMS_HandWrite_GetPredictPoint(const HandWrite_HistoricalPoint* event,
 
 起始版本： 6.0.0(20)
 
-参数：
-
 | 名称 | 描述 |
 | --- | --- |
 | event | 指示输入的历史点。 |
@@ -89,5 +94,31 @@ int32_t HMS_HandWrite_GetPredictPoint(const HandWrite_HistoricalPoint* event,
 E_NO_ERROR 0 - 执行成功。
 
 E_PARAMS 401 - 输入参数无效。
+
+E_INNER_ERROR 1010400001 - 系统内部错误，相关资源加载失败。
+
+#### 函数说明
+
+#### [h2]HMS_HandWrite_SetRefreshDelayOff()
+
+```
+int32_t HMS_HandWrite_SetRefreshDelayOff(const char* xcomponentId, const bool enable)
+```
+ 描述
+
+此接口用于笔记类应用提升手写笔书写时延。
+
+起始版本： 26.0.0
+
+| 名称 | 描述 |
+| --- | --- |
+| xcomponentId | 自绘制控件的id。 |
+| enable | 启用或禁用加速功能。 |
+
+返回： 手写错误码HandWrite_ErrCode：
+
+E_NO_ERROR 0 - 执行成功。
+
+E_PERMISSION 201 - 权限校验失败。
 
 E_INNER_ERROR 1010400001 - 系统内部错误，相关资源加载失败。

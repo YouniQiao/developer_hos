@@ -2,17 +2,23 @@
 title: "安全区域"
 upstream_id: "harmonyos-references/ts-universal-attributes-expand-safe-area"
 catalog: "harmonyos-references"
-content_hash: "325b8891dd27"
-synced_at: "2026-07-09T00:57:38.941936"
+content_hash: "ee7a72c46114"
+synced_at: "2026-07-28T16:42:06.574580"
 ---
 
 # 安全区域
 
-安全区域是指页面的显示区域，默认情况下开发者开发的界面都布局在安全区域内，不与系统设置的避让区比如状态栏、导航栏区域重叠。提供属性方法允许开发者设置组件绘制内容突破安全区域的限制，通过[expandSafeArea](#expandsafearea)属性支持组件不改变布局情况下扩展其绘制区域至安全区外，通过设置[setKeyboardAvoidMode](#setkeyboardavoidmode11)来配置虚拟键盘弹出时页面的避让模式。页面中有标题栏等文字不希望和避让区重叠时，建议对组件设置expandSafeArea属性实现沉浸式效果，也可直接通过窗口接口[setWindowLayoutFullScreen](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowlayoutfullscreen9)实现全屏沉浸式效果。
+安全区域是指页面的显示区域，默认情况下开发者开发的界面都布局在安全区域内，不与系统设置的避让区（如状态栏、导航栏）重叠。提供属性方法允许开发者设置组件绘制内容突破安全区域限制：
+
+- 通过[expandSafeArea](#expandsafearea)属性支持组件在不改变布局情况下扩展其绘制区域至安全区外。
+- 通过设置[setKeyboardAvoidMode](#setkeyboardavoidmode11)来配置虚拟键盘弹出时页面的避让模式。
+- 通过[ignoreLayoutSafeArea](#ignorelayoutsafearea20)属性扩展组件布局时的安全区域，组件布局位置及大小可能改变。
+
+页面中有标题栏等文字不希望和避让区重叠时，建议对组件设置expandSafeArea属性实现沉浸式效果，也可直接通过窗口接口[setWindowLayoutFullScreen](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowlayoutfullscreen9)实现全屏沉浸式效果。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 从API version 10开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+- 从API version 10开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 - 本模块接口仅可在Stage模型下使用。
 - 摄像头挖孔区域不属于避让区，页面默认不避让挖孔。
 - 从API version 12开始，可在module.json5中添加以下配置项，摄像头挖孔区域会视为避让区，实现页面默认避让挖孔： "metadata": [ { "name": "avoid_cutout", "value": "true", } ],
@@ -21,15 +27,15 @@ synced_at: "2026-07-09T00:57:38.941936"
 
 expandSafeArea(types?: Array<SafeAreaType>, edges?: Array<SafeAreaEdge>): T
 
-控制组件扩展其安全区域。
+控制组件扩展其安全区域，实现沉浸式效果。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 设置expandSafeArea属性进行组件绘制扩展时，建议组件尺寸不要设置固定宽高（百分比除外），当设置固定宽高（包括设置'auto'）时，扩展安全区域的方向只支持[SafeAreaEdge.TOP, SafeAreaEdge.START]，扩展后的组件尺寸保持不变。
+- 设置expandSafeArea属性进行组件绘制扩展时，建议组件尺寸不要设置固定宽高（百分比除外）。若设置固定宽高或'auto'，则扩展安全区域的方向只支持向上（SafeAreaEdge.TOP）和向起始方向（SafeAreaEdge.START，LTR模式下表示左侧，RTL模式下表示右侧）扩展，且扩展后的组件尺寸保持不变。
 - 安全区域不会限制内部组件的布局和大小，不会裁剪内部组件。
 - 当父容器为滚动容器时，组件设置expandSafeArea属性后，自身不会延伸，但仍可触发其子节点中设置了expandSafeArea的延伸范围更新。
 - 设置expandSafeArea()时，不传参，走默认值处理；设置expandSafeArea([],[])时，相当于入参是空数组，此时expandSafeArea属性设置无效。
-- 组件设置expandSafeArea生效的条件为： 1.type为SafeAreaType.KEYBOARD时默认生效，表现为组件不避让键盘。 2.设置其他type，组件的边界与安全区域重合时组件能够延伸到安全区域下。例如：设备顶部状态栏高度100，那么组件在屏幕中的绝对位置需要为0 元服务API： 从API version 11开始，该接口支持在元服务中使用。
+- 组件设置expandSafeArea生效的条件为： 1.type为SafeAreaType.KEYBOARD时默认生效，表现为组件不避让键盘。 2.设置其他type时，仅当组件边界与安全区域重合，组件才能延伸到安全区域下。例如：设备顶部状态栏高度为100，组件在屏幕中的绝对位置需要为0 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -37,8 +43,8 @@ expandSafeArea(types?: Array<SafeAreaType>, edges?: Array<SafeAreaEdge>): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| types | Array | 否 | 配置扩展安全区域的类型。未添加[Metadata](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-metadata)配置项时，页面不避让挖孔，CUTOUT类型不生效。 默认值：[SafeAreaType.SYSTEM, SafeAreaType.CUTOUT, SafeAreaType.KEYBOARD] 非法值：按默认值处理。 |
-| edges | Array | 否 | 配置扩展安全区域的边缘。 默认值：[SafeAreaEdge.TOP, SafeAreaEdge.BOTTOM, SafeAreaEdge.START, SafeAreaEdge.END] 非法值：按默认值处理。 扩展至所有避让区域。 |
+| types | Array | 否 | 配置扩展安全区域的类型。默认值包含SafeAreaType.CUTOUT，但未添加[Metadata](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-metadata)配置项时，页面不避让挖孔，CUTOUT类型不生效。 默认值：[SafeAreaType.SYSTEM, SafeAreaType.CUTOUT, SafeAreaType.KEYBOARD] 非法值：按默认值处理。 |
+| edges | Array | 否 | 配置扩展安全区域的边缘，默认扩展至所有避让区域。 默认值：[SafeAreaEdge.TOP, SafeAreaEdge.BOTTOM, SafeAreaEdge.START, SafeAreaEdge.END]。 非法值：按默认值处理。 |
 
 返回值：
 
@@ -57,7 +63,7 @@ expandSafeArea(types?: Array<SafeAreaType>, edges?: Array<SafeAreaEdge>): T
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
 | SYSTEM | 0 | 系统默认非安全区域，包括状态栏、导航栏。 |
-| CUTOUT | 1 | 设备的非安全区域，例如刘海屏或挖孔屏区域。 |
+| CUTOUT | 1 | 设备的非安全区域，例如刘海屏或挖孔屏区域。未添加Metadata配置项时，CUTOUT类型不生效。 |
 | KEYBOARD | 2 | 软键盘区域。 |
 
 #### SafeAreaEdge
@@ -79,7 +85,7 @@ expandSafeArea(types?: Array<SafeAreaType>, edges?: Array<SafeAreaEdge>): T
 
 setKeyboardAvoidMode(value: KeyboardAvoidMode): void
 
-设置虚拟键盘抬起时页面的避让模式。
+设置虚拟键盘抬起时页面的避让模式。支持OFFSET（上抬）、RESIZE（压缩）和NONE（不避让）三种模式。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -89,13 +95,15 @@ setKeyboardAvoidMode(value: KeyboardAvoidMode): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [KeyboardAvoidMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-e#keyboardavoidmode11) | 是 | 虚拟键盘抬起时页面的避让模式。 默认值：KeyboardAvoidMode.OFFSET，键盘抬起时默认避让模式为上抬。 setKeyboardAvoidMode传入异常值时，该属性设置不生效。 |
+| value | [KeyboardAvoidMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-e#keyboardavoidmode11) | 是 | 虚拟键盘抬起时页面的避让模式。可选值：OFFSET（上抬）、RESIZE（压缩）、NONE（不避让）。 默认值：KeyboardAvoidMode.OFFSET，键盘抬起时默认避让模式为上抬。 setKeyboardAvoidMode传入异常值时，该属性设置不生效。 |
 
 ![](./img/note_3.0-zh-cn.png) KeyboardAvoidMode.RESIZE模式会压缩页面大小，页面中设置百分比宽高的组件会跟随页面压缩，而直接设置宽高的组件会按设置的固定大小布局。设置KeyboardAvoidMode的RESIZE模式时，expandSafeArea([SafeAreaType.KEYBOARD],[SafeAreaEdge.BOTTOM])不生效。
 
 KeyboardAvoidMode.NONE模式配置页面不避让键盘，页面会被抬起的键盘遮盖。
 
 setKeyboardAvoidMode针对页面生效，对于弹窗类组件不生效，比如Dialog、Popup、Menu、BindSheet、BindContentCover、Toast、OverlayManager。弹窗类组件的避让模式可以参考[CustomDialogControllerOptions对象说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-methods-custom-dialog-box#customdialogcontrolleroptions对象说明)。
+
+在性能敏感/高负载场景下，键盘和应用界面的动效可能不完全同步，导致动效过程中出现键盘与应用界面间露出间隙的现象，此时可以通过配置[expandSafeArea](#expandsafearea)的方式使应用背景铺满屏幕，避免不良视觉效果。
 
 #### getKeyboardAvoidMode11+
 
@@ -117,7 +125,7 @@ getKeyboardAvoidMode(): KeyboardAvoidMode
 
 ignoreLayoutSafeArea(types?: Array<LayoutSafeAreaType>, edges?: Array<LayoutSafeAreaEdge>): T
 
-扩展组件布局时的安全区。
+扩展组件布局时的安全区域，组件布局位置及大小可能改变，与expandSafeArea（仅扩展绘制区域，布局不变）机制不同。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -127,8 +135,8 @@ ignoreLayoutSafeArea(types?: Array<LayoutSafeAreaType>, edges?: Array<LayoutSafe
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| types | Array | 否 | 扩展布局安全区域的类型。 默认值：[LayoutSafeAreaType.SYSTEM]，扩展至所有安全区域，比如：状态栏，导航栏和组件级安全区（[safeAreaPadding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#safeareapadding14)）。 非法值：按默认值处理。 |
-| edges | Array | 否 | 扩展布局安全区的边缘，并且支持镜像能力。 默认值：[LayoutSafeAreaEdge.ALL]，扩展组件所有边缘。 非法值：按默认值处理。 |
+| types | Array | 否 | 扩展布局安全区域的类型。 默认值：[LayoutSafeAreaType.SYSTEM]，扩展至系统安全区域，例如：状态栏、导航栏、挖孔区和组件级安全区（[safeAreaPadding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#safeareapadding14)）。 非法值：按默认值处理。 |
+| edges | Array | 否 | 扩展布局安全区域的边缘，并且支持镜像能力。 默认值：[LayoutSafeAreaEdge.ALL]，扩展组件所有边缘。 非法值：按默认值处理。 |
 
 返回值：
 
@@ -170,7 +178,7 @@ ignoreLayoutSafeArea(types?: Array<LayoutSafeAreaType>, edges?: Array<LayoutSafe
 | END20+ | 3 | 尾部区域。LTR模式时表示右侧区域，RTL模式表示左侧区域。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | VERTICAL20+ | 4 | 垂直区域。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | HORIZONTAL20+ | 5 | 水平区域。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
-| ALL20+ | 6 | 全部区域。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| ALL20+ | 6 | 全部边缘。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 
 #### 示例
 
@@ -196,7 +204,7 @@ struct SafeAreaExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732281.png)
+ ![](./img/zh-cn_image_0000002685927955.png)
 
 #### [h2]示例2（同时设置固定宽高和expandSafeArea属性）
 
@@ -227,7 +235,7 @@ struct SafeAreaExample2 {
 ```
  如下图：Column组件扩展至了顶部状态栏[SafeAreaEdge.TOP]，未扩展至底部导航条[SafeAreaEdge.BOTTOM]，扩展后的组件高度维持设置值不变。
 
-![](./img/zh-cn_image_0000002631253160.png)
+![](./img/zh-cn_image_0000002656008276.png)
 
 #### [h2]示例3（键盘避让时固定背景图位置）
 
@@ -270,7 +278,7 @@ struct SafeAreaExample3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612343.gif)
+ ![](./img/zh-cn_image_0000002655848356.gif)
 
 #### [h2]示例4（设置键盘避让模式为压缩）
 
@@ -322,7 +330,7 @@ struct KeyboardAvoidExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413050.gif)
+ ![](./img/zh-cn_image_0000002686087785.gif)
 
 #### [h2]示例5（设置键盘避让模式为上抬）
 
@@ -374,7 +382,7 @@ struct KeyboardAvoidExample2 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732283.gif)
+ ![](./img/zh-cn_image_0000002685927957.gif)
 
 #### [h2]示例6（切换避让模式）
 
@@ -432,7 +440,7 @@ struct KeyboardAvoidExample3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253162.gif)
+ ![](./img/zh-cn_image_0000002656008278.gif)
 
 #### [h2]示例7（滚动类容器扩展安全区）
 
@@ -497,7 +505,7 @@ struct ExpandSafeAreaTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612345.png)
+ ![](./img/zh-cn_image_0000002655848358.png)
 
 #### [h2]示例8（ignoreLayoutSafeArea延伸组件布局范围）
 
@@ -537,7 +545,7 @@ struct IgnoreLayoutSafeAreaTest1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413052.jpg)
+ ![](./img/zh-cn_image_0000002686087787.jpg)
 
 #### [h2]示例9（ignoreLayoutSafeArea配合LayoutPolicy.matchParent延伸组件布局范围）
 
@@ -575,7 +583,7 @@ struct IgnoreLayoutSafeAreaTest2 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732285.jpg)
+ ![](./img/zh-cn_image_0000002685927959.jpg)
 
 #### [h2]示例10（expandSafeArea与ignoreLayoutSafeArea的区别）
 
@@ -646,4 +654,4 @@ struct IgnoreLayoutSafeAreaTest3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253164.jpg)
+ ![](./img/zh-cn_image_0000002656008280.jpg)

@@ -2,8 +2,8 @@
 title: "picker"
 upstream_id: "harmonyos-references/js-components-basic-picker"
 catalog: "harmonyos-references"
-content_hash: "ba8179ccd7e9"
-synced_at: "2026-07-09T17:25:03.638005"
+content_hash: "dde9b57f1ec5"
+synced_at: "2026-07-28T16:49:00.046318"
 ---
 
 # picker
@@ -217,7 +217,7 @@ import promptAction from '@ohos.promptAction';
 
 export default {
     data: {
-        selectList: ["text", "data", "time", "datetime", "multitext"],
+        selectList: ["text", "date", "time", "datetime", "multitext"],
         rangetext: ['15', "20", "25"],
         multitext: [["a", "b", "c"], ["e", "f", "g"], ["h", "i"], ["k", "l", "m"]],
         textvalue: 'default textvalue',
@@ -251,7 +251,7 @@ export default {
         })
     },
     dateonchange(e) {
-        this.datevalue = e.year + "-" + e.month + "-" + e.day;
+        this.datevalue = e.year + "-" + (e.month + 1) + "-" + e.day;
         promptAction.showToast({
             message: "date:" + e.year + "-" + (e.month + 1) + "-" + e.day
         })
@@ -280,7 +280,7 @@ export default {
         })
     },
     datetimeonchange(e) {
-        this.datetimevalue = e.year + "-" + e.month + "-" + e.day + " " + e.hour + ":" + e.minute;
+        this.datetimevalue = e.year + "-" + (e.month + 1) + "-" + e.day + " " + e.hour + ":" + e.minute;
         promptAction.showToast({
             message: "Time:" + (e.month + 1) + "-" + e.day + " " + e.hour + ":" + e.minute
         })
@@ -302,8 +302,8 @@ export default {
         })
     },
     popup_picker() {
-        this.$element("picker_text").show();
+        this.$element("picker0").show();
     },
 }
 ```
- ![](./img/zh-cn_image_0000002664210175.gif)
+ ![](./img/zh-cn_image_0000002655849102.gif)

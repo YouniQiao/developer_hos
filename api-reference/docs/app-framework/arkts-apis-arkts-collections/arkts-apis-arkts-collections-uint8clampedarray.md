@@ -2,19 +2,19 @@
 title: "Class (Uint8ClampedArray)"
 upstream_id: "harmonyos-references/arkts-apis-arkts-collections-uint8clampedarray"
 catalog: "harmonyos-references"
-content_hash: "5b329982758a"
-synced_at: "2026-07-09T00:57:24.382048"
+content_hash: "ecfc460bb65e"
+synced_at: "2026-07-28T16:40:55.905386"
 ---
 
 # Class (Uint8ClampedArray)
 
-一种线性数据结构，底层基于[ArrayBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-collections-arraybuffer)实现。
+一种线性数据结构，底层基于[ArrayBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-collections-arraybuffer)实现。且对元素数值有钳制，小于0的会被钳制为0，大于255的会被钳制为255，不同于Uint8Array的截断处理。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 12开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
 此模块仅支持在ArkTS文件（文件后缀为.ets）中导入使用。
 
-装饰器类型：@Sendable
+装饰器类型：[@Sendable](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable#sendable装饰器)
 
 #### 导入模块
 
@@ -48,7 +48,7 @@ constructor()
 
 错误码：
 
-以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -64,7 +64,7 @@ let uint8ClampedArray: collections.Uint8ClampedArray = new collections.Uint8Clam
 
 constructor(length: number)
 
-构造函数，用于创建一个指定长度的ArkTS Uint8ClampedArray对象。
+构造函数，用于创建一个指定长度的ArkTS Uint8ClampedArray对象，所有元素初始值为0。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -74,7 +74,7 @@ constructor(length: number)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| length | number | 是 | 用于指定ArkTS Uint8ClampedArray的长度。 |
+| length | number | 是 | 用于指定ArkTS Uint8ClampedArray的长度。取值范围为非负整数。 |
 
 错误码：
 
@@ -95,7 +95,7 @@ let uint8ClampedArray: collections.Uint8ClampedArray = new collections.Uint8Clam
 
 constructor(elements: Iterable<number>)
 
-构造函数，以Iterable创建一个ArkTS Uint8ClampedArray对象。
+构造函数，以Iterable创建一个ArkTS Uint8ClampedArray对象，且ArkTS Uint8ClampedArray中的各元素都会经过钳位处理。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -128,7 +128,7 @@ let array: collections.Uint8ClampedArray = new collections.Uint8ClampedArray(set
 
 constructor(array: ArrayLike<number> | ArrayBuffer)
 
-构造函数，以ArrayLike或ArkTS ArrayBuffer创建一个ArkTS Uint8ClampedArray对象。
+构造函数，以ArrayLike或ArkTS ArrayBuffer创建一个ArkTS Uint8ClampedArray对象，且ArkTS Uint8ClampedArray中的各元素都会经过钳位处理。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -138,7 +138,7 @@ constructor(array: ArrayLike<number> | ArrayBuffer)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| array | ArrayLike | ArrayBuffer | 是 | 用于构造ArkTS Uint8ClampedArray的对象。当参数类型是ArrayBuffer时buffer所占的字节数须是4的整数倍。 |
+| array | ArrayLike | ArrayBuffer | 是 | 用于构造ArkTS Uint8ClampedArray的对象。 |
 
 错误码：
 
@@ -158,7 +158,7 @@ let array: collections.Uint8ClampedArray = new collections.Uint8ClampedArray(arr
  
 ```
 // 例2 从一个ArrayBuffer构造对象
-let arrayBuffer: collections.ArrayBuffer = new collections.ArrayBuffer(12);
+let arrayBuffer: collections.ArrayBuffer = new collections.ArrayBuffer(10);
 let array: collections.Uint8ClampedArray = new collections.Uint8ClampedArray(arrayBuffer);
 ```
  
@@ -175,7 +175,7 @@ let uint8ClampedArray2: collections.Uint8ClampedArray = new collections.Uint8Cla
 
 constructor(buffer: ArrayBuffer, byteOffset?: number, length?: number)
 
-构造函数，以ArrayBuffer创建一个ArkTS Uint8ClampedArray对象。
+构造函数，以ArrayBuffer创建一个ArkTS Uint8ClampedArray对象，且ArkTS Uint8ClampedArray和ArrayBuffer共享内存。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -185,9 +185,9 @@ constructor(buffer: ArrayBuffer, byteOffset?: number, length?: number)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| buffer | ArrayBuffer | 是 | 用于构造ArkTS Uint8ClampedArray的ArrayBuffer对象。buffer所占的字节数须是4的整数倍。 |
-| byteOffset | number | 否 | 指定buffer的字节偏移，从0开始，默认为0。 |
-| length | number | 否 | 指定ArkTS Uint8ClampedArray的长度，默认为0。 |
+| buffer | ArrayBuffer | 是 | 用于构造ArkTS Uint8ClampedArray的ArrayBuffer对象。 |
+| byteOffset | number | 否 | 指定buffer的字节偏移，取值为非负整数且须小于buffer.byteLength，从0开始，默认为0。 |
+| length | number | 否 | 指定ArkTS Uint8ClampedArray的长度，默认为0。byteOffset和length的总和不能超过buffer.byteLength。 |
 
 错误码：
 
@@ -202,7 +202,7 @@ constructor(buffer: ArrayBuffer, byteOffset?: number, length?: number)
 ```
 let uint8ClampedArray: collections.Uint8ClampedArray = collections.Uint8ClampedArray.from([1, 2, 3, 4, 5, 6]);
 console.info("byteLength: " + uint8ClampedArray.buffer.byteLength); // byteLength: 6
-// 从uint8ClampedArray对应buffer第1个字节开始，长度为5
+// 从uint8ClampedArray对应buffer第1个字节开始，长度为5，uint8ClampedArray1和uint8ClampedArray共享内存
 let uint8ClampedArray1: collections.Uint8ClampedArray = new collections.Uint8ClampedArray(uint8ClampedArray.buffer, 1, 5);
 console.info("[" + uint8ClampedArray1 + "]"); // [2, 3, 4, 5, 6]
 ```
@@ -211,7 +211,7 @@ console.info("[" + uint8ClampedArray1 + "]"); // [2, 3, 4, 5, 6]
 
 static from(arrayLike: ArrayLike<number>): Uint8ClampedArray
 
-从一个ArrayLike或者可迭代对象中创建一个ArkTS Uint8ClampedArray对象。
+从一个ArrayLike中创建一个ArkTS Uint8ClampedArray对象。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -250,7 +250,7 @@ static from<T>(arrayLike: ArrayLike<T>, mapFn: TypedArrayFromMapFn<T, number>): 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| arrayLike | ArrayLike | 是 | 用于构造ArrayLike对象。 |
+| arrayLike | ArrayLike | 是 | 用于构造ArkTS Uint8ClampedArray的ArrayLike对象。 |
 | mapFn | [TypedArrayFromMapFn](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-collections-types#typedarrayfrommapfn) | 是 | 映射函数。 |
 
 返回值：
@@ -296,8 +296,8 @@ static from(arrayLike: Iterable<number>, mapFn?: TypedArrayFromMapFn<number, num
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| arrayLike | Iterable | 是 | 用于构造的可迭代对象。 |
-| mapFn | [TypedArrayFromMapFn](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-collections-types#typedarrayfrommapfn) | 否 | 映射函数。如果省略，则不对元素进行加工处理。 |
+| arrayLike | Iterable | 是 | 用于构造ArkTS Uint8ClampedArray的可迭代对象。 |
+| mapFn | [TypedArrayFromMapFn](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-collections-types#typedarrayfrommapfn) | 否 | 映射函数。如果省略，则不对元素进行转换，直接使用原始值。 |
 
 返回值：
 
@@ -355,7 +355,7 @@ console.info(arr.toString()); // 预期输出：1,2,3,4
 
 toString(): string
 
-ArkTS Uint8ClampedArray转换为字符串。
+将ArkTS Uint8ClampedArray转换为字符串，各元素值以逗号分隔拼接。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -388,7 +388,7 @@ console.info(stringArray); // 预期输出：1,2,3,4,5
 
 toLocaleString(): string
 
-根据当前应用的系统地区获取符合当前文化习惯的数字表示形式，让每个元素调用自己的toLocaleString方法把数字转换为字符串，然后使用逗号将每个元素的结果字符串按照顺序拼接成字符串。
+根据当前应用的系统地区，将每个元素转换为本地化字符串，并使用逗号按顺序拼接成结果字符串。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -422,7 +422,7 @@ console.info(stringArray); // 预期输出：100,110,120
 
 copyWithin(target: number, start: number, end?: number): Uint8ClampedArray
 
-从ArkTS Uint8ClampedArray指定范围内的元素依次拷贝到目标位置。
+从ArkTS Uint8ClampedArray指定范围内的元素依次拷贝到自身buffer内目标位置，覆盖目标范围内原有数据。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -459,7 +459,7 @@ let copied: collections.Uint8ClampedArray = array.copyWithin(3, 1, 3);
 
 some(predicate: TypedArrayPredicateFn<number, Uint8ClampedArray>): boolean
 
-测试ArkTS Uint8ClampedArray中是否存在元素满足指定条件。
+测试ArkTS Uint8ClampedArray中是否存在元素满足指定条件，存在则返回true，否则返回false。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -547,7 +547,7 @@ fill(value: number, start?: number, end?: number): Uint8ClampedArray
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 待填充的值。 |
+| value | number | 是 | 待填充的值，取值范围为0~255，超出范围的值会被钳制到范围内（小于0的自动修正为0。大于255的自动修正为255）。 |
 | start | number | 否 | 开始填充的索引，如果start 返回值：
 
 | 类型 | 说明 |
@@ -737,7 +737,7 @@ indexOf(searchElement: number, fromIndex?: number): number
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | searchElement | number | 是 | 待索引的值。 |
-| fromIndex | number | 否 | 搜索的起始下标。默认值为0。如果下标大于等于ArkTS Uint8ClampedArray的长度，则返回-1。如果提供的下标值是负数，则被当做距离数组尾部的偏移，从前到后搜索。 |
+| fromIndex | number | 否 | 从前到后搜索的起始下标。默认值为0。如果提供的下标值是负数，则被当做距离数组尾部的偏移。如果fromIndex的值导致搜索区间和数组范围没有重叠，则返回-1。 |
 
 返回值：
 
@@ -779,7 +779,7 @@ lastIndexOf(searchElement: number, fromIndex?: number): number
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | searchElement | number | 是 | 待索引的值。 |
-| fromIndex | number | 否 | 搜索的起始下标。默认值为0。如果下标大于等于ArkTS Uint8ClampedArray的长度，则返回-1。如果提供的下标值是负数，则被当做距离数组尾部的偏移，从后到前搜索。 |
+| fromIndex | number | 否 | 从后到前搜索的起始下标。默认值为ArkTS Uint8Array的长度减1。如果提供的下标值是负数，则被当做距离数组尾部的偏移。如果fromIndex的值导致搜索区间和数组范围没有重叠，则返回-1。 |
 
 返回值：
 
@@ -789,7 +789,7 @@ lastIndexOf(searchElement: number, fromIndex?: number): number
 
 错误码：
 
-以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -945,7 +945,7 @@ reduceRight(callbackFn: TypedArrayReduceCallback<number, number, Uint8ClampedArr
 
 错误码：
 
-以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -1025,7 +1025,7 @@ reduceRight<U = number>(callbackFn: TypedArrayReduceCallback<U, number, Uint8Cla
 
 错误码：
 
-以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -1044,7 +1044,7 @@ console.info(reducedValue + ''); // 预期输出： 16
 
 reverse(): Uint8ClampedArray
 
-反转ArkTS Uint8ClampedArray。
+反转ArkTS Uint8ClampedArray中元素的顺序，并返回反转后的ArkTS Uint8ClampedArray对象。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1058,7 +1058,7 @@ reverse(): Uint8ClampedArray
 
 错误码：
 
-以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -1076,7 +1076,7 @@ let reversed: collections.Uint8ClampedArray = array.reverse(); // Uint8ClampedAr
 
 set(array: ArrayLike<number>, offset?: number): void
 
-将传入的ArrayLike元素依次写入到指定的起始位置。
+将传入的ArrayLike元素依次写入到ArkTS Uint8ClampedArray中，从起始位置开始依次替换原有元素。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1087,7 +1087,7 @@ set(array: ArrayLike<number>, offset?: number): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | array | ArrayLike | 是 | 用于设置的ArrayLike对象。 |
-| offset | number | 否 | 写入的起始位置。默认为0。 |
+| offset | number | 否 | 写入的起始位置，取值为非负整数，且offset与array.length之和不能超过ArkTS Uint8ClampedArray的长度。默认为0。 |
 
 错误码：
 
@@ -1110,7 +1110,7 @@ array.set([1, 2, 3], 3); // Uint8ClampedArray [0, 0, 0, 1, 2, 3, 0, 0]
 
 slice(start?: number, end?: number): Uint8ClampedArray
 
-返回一个新的ArkTS Uint8ClampedArray对象，其包含原ArkTS Uint8ClampedArray指定范围的内容。
+返回一个新的ArkTS Uint8ClampedArray对象，其拷贝了原ArkTS Uint8ClampedArray指定范围的内容。和[subarray](#subarray)不同，本方法生成的是独立副本，不会影响原ArkTS Uint8ClampedArray对象。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1188,7 +1188,7 @@ array.sort((a: number, b: number) => b - a); // Uint8ClampedArray [5, 4, 3, 2, 1
 
 subarray(begin?: number, end?: number): Uint8ClampedArray
 
-从指定的位置截取数组，返回一个新的、基于相同ArkTS ArrayBuffer的ArkTS Uint8ClampedArray对象。
+从指定的位置截取数组，返回一个新的、基于相同ArkTS ArrayBuffer的ArkTS Uint8ClampedArray对象。和[slice](#slice)不同，本方法生成的不是独立副本，会影响原ArkTS Uint8ClampedArray对象。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1235,7 +1235,7 @@ at(index: number): number | undefined
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| index | number | 是 | 要返回的Array元素的索引（从零开始），取值为整数。如果index 返回值：
+| index | number | 是 | 要返回的ArkTS Uint8ClampedArray元素的索引（从零开始），取值为整数。如果index 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
@@ -1302,7 +1302,7 @@ console.info("includes: " + array.includes(3, 3)); // includes: false
 
 entries(): IterableIterator<[number, number]>
 
-返回一个新的迭代器对象，该对象包含ArkTS Uint8ClampedArray中每个元素的键值对。
+返回一个新的迭代器对象，该对象包含ArkTS Uint8ClampedArray中每个元素的键值对。迭代器遍历期间不能使用会改变ArkTS Uint8ClampedArray数组内容的方法。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1316,7 +1316,7 @@ entries(): IterableIterator<[number, number]>
 
 错误码：
 
-以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -1337,7 +1337,7 @@ console.info("value: " + iterator.next().value); // value: 2,33
 
 keys(): IterableIterator<number>
 
-返回一个新的迭代器对象，该对象包含ArkTS Uint8ClampedArray中每个元素的键（下标）。
+返回一个新的迭代器对象，该对象包含ArkTS Uint8ClampedArray中每个元素的键（下标）。迭代器遍历期间不能使用会改变ArkTS Uint8ClampedArray数组内容的方法。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1351,7 +1351,7 @@ keys(): IterableIterator<number>
 
 错误码：
 
-以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -1372,7 +1372,7 @@ for (const key of iterator) {
 
 values(): IterableIterator<number>
 
-返回一个新的迭代器对象，该对象包含ArkTS Uint8ClampedArray中每个元素的值。
+返回一个新的迭代器对象，该对象包含ArkTS Uint8ClampedArray中每个元素的值。迭代器遍历期间不能使用会改变ArkTS Uint8ClampedArray数组内容的方法。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1386,7 +1386,7 @@ values(): IterableIterator<number>
 
 错误码：
 
-以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -1407,7 +1407,7 @@ for (const value of iterator) {
 
 [Symbol.iterator](): IterableIterator<number>
 
-返回一个迭代器，迭代器的每一项都是一个 JavaScript 对象，并返回该对象。
+返回一个迭代器对象，用于遍历ArkTS Uint8Array中的每个元素值。迭代器遍历期间不能使用会改变ArkTS Uint8ClampedArray数组内容的方法。
 
 ![](./img/note_3.0-zh-cn.png) 本接口不支持在.ets文件中使用。
 
@@ -1419,11 +1419,11 @@ for (const value of iterator) {
 
 | 类型 | 说明 |
 | --- | --- |
-| IterableIterator | 返回一个迭代器。 |
+| IterableIterator | 包含每个元素值的迭代器对象。 |
 
 错误码：
 
-以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -1453,13 +1453,13 @@ for (let item of uint8ClampedArray) {
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| index | number | 是 | 所需代码单元的从零开始的索引。 |
+| index | number | 是 | 所需元素的从零开始的索引。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 返回number数据类型。 |
+| number | 指定索引位置的元素。 |
 
 示例：
 

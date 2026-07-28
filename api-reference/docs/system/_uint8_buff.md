@@ -2,8 +2,8 @@
 title: "Uint8Buff"
 upstream_id: "harmonyos-references/_uint8_buff"
 catalog: "harmonyos-references"
-content_hash: "0862ed5868b9"
-synced_at: "2026-07-09T00:59:19.248342"
+content_hash: "f2589ba4bc86"
+synced_at: "2026-07-28T16:50:32.022308"
 ---
 
 # Uint8Buff
@@ -14,7 +14,9 @@ synced_at: "2026-07-09T00:59:19.248342"
 
 起始版本： 6.0.0(20)
 
-相关模块： [FIDO2](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey)
+相关模块： [FIDO2（通行密钥服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey)
+
+所在头文件： [fido2_api.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication_capi_header_fido2)
 
 #### 汇总
 

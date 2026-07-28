@@ -2,14 +2,14 @@
 title: "OH_AudioSession_Strategy"
 upstream_id: "harmonyos-references/capi-ohaudio-oh-audiosession-strategy"
 catalog: "harmonyos-references"
-content_hash: "b90b4330d182"
-synced_at: "2026-07-09T01:00:10.910480"
+content_hash: "adb20102b7a0"
+synced_at: "2026-07-28T16:51:29.316783"
 ---
 
 # OH_AudioSession_Strategy
 
 ```
-typedef struct OH_AudioSession_Strategy {...} OH_AudioSession_Strategy
+typedef struct OH_AudioSession_Strategy {...} OH_AudioSession_Strategy;
 ```
 
 #### 概述

@@ -2,8 +2,8 @@
 title: "@ohos.graphics.text (文本模块)"
 upstream_id: "harmonyos-references/js-apis-graphics-text"
 catalog: "harmonyos-references"
-content_hash: "40704652f111"
-synced_at: "2026-07-09T01:00:54.817856"
+content_hash: "bf31450a9c99"
+synced_at: "2026-07-28T16:52:10.537377"
 ---
 
 # @ohos.graphics.text (文本模块)
@@ -921,11 +921,12 @@ EllipsisMode.START和EllipsisMode.MIDDLE仅在单行超长文本生效。
 | --- | --- | --- | --- | --- |
 | decoration | [Decoration](#decoration) | 否 | 是 | 装饰线设置，默认不使用装饰线。 |
 | color | [common2D.Color](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-common2d#color) | 否 | 是 | 文字颜色，默认为白色。 |
-| fontWeight | [FontWeight](#fontweight) | 否 | 是 | 字重，默认为W400。 目前只有系统默认字体支持字重的调节，其他字体设置字重值小于semi-bold（即W600）时字体粗细无变化，当设置字重值大于等于semi-bold（即W600）时可能会触发伪加粗效果。 |
+| fontWeight | [FontWeight](#fontweight) | 否 | 是 | 字重，默认为W400。 在HarmonyOS 6.1.1之前，仅系统字体中的可变字体支持字重调节；从HarmonyOS 6.1.1开始，系统字体与三方注册字体中的可变字体均支持字重调节。非可变字体设置字重值小于semi-bold（即W600）时字体粗细无变化，设置字重值大于等于semi-bold（即W600）时可能会触发伪加粗效果。 |
 | fontWidth21+ | [FontWidth](#fontwidth) | 否 | 是 | 字体宽度，默认为NORMAL。 |
 | fontStyle | [FontStyle](#fontstyle) | 否 | 是 | 字体样式，默认为常规样式。 |
 | baseline | [TextBaseline](#textbaseline) | 否 | 是 | 文本基线类型，默认为ALPHABETIC。 |
 | fontFamilies | Array | 否 | 是 | 字体家族名称列表，默认为空，匹配系统字体。 |
+| fontTypefaces | Array | 否 | 是 | 指定排版字体对象数组，用于优先使用指定的字体对象进行文本塑形，跳过字体匹配流程。当数组中某个字体对象无法塑形部分文字时，未能塑形的文字将使用系统字体进行塑形。默认为空数组，表示不指定字体对象，使用默认字体匹配流程。 当fontTypefaces与[fontFamilies](#textstyle)同时设置时，fontTypefaces优先级更高。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | fontSize | number | 否 | 是 | 字体大小，浮点数，默认为14.0，单位为物理像素px。 |
 | letterSpacing | number | 否 | 是 | 字符间距，正数拉开字符距离，如果为负数则拉近字符距离，浮点数，单位为物理像素px，默认为0.0。 |
 | wordSpacing | number | 否 | 是 | 单词间距，浮点数，单位为物理像素px，默认为0.0。 |
@@ -959,7 +960,7 @@ EllipsisMode.START和EllipsisMode.MIDDLE仅在单行超长文本生效。
 | fontFamilies | Array | 否 | 是 | 字体家族名称列表，默认为空，匹配系统字体。 |
 | fontStyle | [FontStyle](#fontstyle) | 否 | 是 | 字体样式，默认为常规样式。 |
 | fontWidth | [FontWidth](#fontwidth) | 否 | 是 | 字体宽度，默认为NORMAL。 |
-| fontWeight | [FontWeight](#fontweight) | 否 | 是 | 字重，默认为W400。系统默认字体支持字重调节，其他字体设置字重值小于W600时无变化，大于等于W600时可能触发伪加粗效果。 |
+| fontWeight | [FontWeight](#fontweight) | 否 | 是 | 字重，默认为W400。在HarmonyOS 6.1.1之前，仅系统字体中的可变字体支持字重调节；从HarmonyOS 6.1.1开始，系统字体与三方注册字体中的可变字体均支持字重调节。非可变字体设置字重值小于W600时字体粗细无变化，设置字重值大于等于W600时可能会触发伪加粗效果。 |
 | fontSize | number | 否 | 是 | 字体大小，浮点数，默认14.0，单位为物理像素px。 |
 | height | number | 否 | 是 | 行高缩放倍数，浮点数，默认为1.0。 |
 | leading | number | 否 | 是 | 自定义应用于支柱的行距，浮点数，单位为物理像素px，默认为-1.0。 |
@@ -998,6 +999,8 @@ EllipsisMode.START和EllipsisMode.MIDDLE仅在单行超长文本生效。
 | variationAxisRecords24+ | Array | 否 | 是 | 字体可变轴记录数组，用于描述字体支持的可变轴信息。非可变字体此字段为undefined。 **元服务API**：从API version 24开始，该接口支持在元服务中使用。 |
 | variationInstanceRecords24+ | Array | 否 | 是 | 字体可变实例记录数组，用于描述字体支持的可变实例信息。非可变字体此字段为undefined。 **元服务API**：从API version 24开始，该接口支持在元服务中使用。 |
 | index23+ | number | 否 | 是 | 字体索引，字体文件为ttc类型时有效，ttf类型统一为0。 **元服务API**：从API version 23开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| languages | Array | 否 | 是 | 字体语言，默认为undefined。 **起始版本：** 26.0.0 **元服务API**：从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| fontFeatures | Array | 否 | 是 | 字体特性，默认为undefined。 **起始版本：** 26.0.0 **元服务API**：从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### FontVariationAxis24+
 
@@ -1247,7 +1250,7 @@ loadFontSyncWithCheck(name: string, path: string | Resource, index?: number): vo
 | 25900005 | Failed to get the file size. |
 | 25900006 | Failed to read the file. |
 | 25900007 | Empty file. |
-| 25900008 | Corrupt file. |
+| 25900008 | Corrupted file. |
 
 示例：
 
@@ -1326,7 +1329,7 @@ loadFontWithCheck(name: string, path: string | Resource, index?: number): Promis
 | 25900005 | Failed to get the file size. |
 | 25900006 | Failed to read the file. |
 | 25900007 | Empty file. |
-| 25900008 | Corrupt file. |
+| 25900008 | Corrupted file. |
 
 示例：
 
@@ -1587,6 +1590,7 @@ struct Index {
 | compressHeadPunctuation23+ | boolean | 否 | 是 | 设置文本排版时是否使能行首标点压缩。true表示使能行首标点压缩，false表示不使能行首标点压缩，默认值为false。 **说明：** 1. 需要字体文件支持[FontFeature](#fontfeature)中的"ss08"特性，否则无法压缩。 2. 在行首标点压缩范围内的标点才在本特性作用范围内。 **元服务API：** 从API version 23开始，该接口支持在元服务中使用。 |
 | includeFontPadding23+ | boolean | 否 | 是 | 设置文本排版时是否使能首尾行padding。true表示使能首尾行padding，false表示不使能首尾行padding，默认值为false。 **元服务API：** 从API version 23开始，该接口支持在元服务中使用。 |
 | fallbackLineSpacing23+ | boolean | 否 | 是 | 设置文本排版时是否使能行高回退，当设置的行高小于实际行高时，将行高回退为实际行高。true表示使能行高回退，false表示不使能行高回退，默认值为false。 **元服务API：** 从API version 23开始，该接口支持在元服务中使用。 |
+| punctuationOverflow | boolean | 否 | 是 | 设置文本排版时是否使能行尾标点悬挂。true表示使能行尾标点悬挂，允许行尾单个标点超出排版宽度而不换行，false表示不使能行尾标点悬挂，默认值为false。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | orphanCharOptimization | boolean | 否 | 是 | 设置文本排版时是否使能孤字优化。孤字优化通过更高效地处理孤立字符（段落尾行首字符）来改善文本布局。使能后，它会调整换行点以尽可能避免孤立字符。孤字优化特性需在[wordBreak](#wordbreak)为非BREAK_ALL并且待排版文本首个[TextStyle](#textstyle)的[locale](#textstyle)为“zh-Hans”或“zh-Hant”时生效。true表示使能孤字优化，false表示不使能孤字优化，默认值为false。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | firstLineHeadIndent | number | 否 | 是 | 设置段落首行缩进，缩进值需大于等于0，默认值为0。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | tailIndents | Array | 否 | 是 | 设置行尾缩进数组，数组中每个元素代表一行缩进值，当实际文本行数超过缩进数组个数时，超过行的缩进为数组最后一个值，缩进值需全大于等于0，默认为空数组。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
@@ -1627,11 +1631,11 @@ struct Index {
 | CENTER_OF_ROW_BOX | 5 | 居中对齐。 |
 | FOLLOW_PARAGRAPH20+ | 6 | 跟随文本排版对齐。 |
 
-![](./img/zh-cn_image_0000002661613785.png)
+![](./img/zh-cn_image_0000002656009724.png)
 
 ![](./img/note_3.0-zh-cn.png) 示意图展示了后三种对齐方式，前三种对齐方式在文本基线对齐方式上类似，比较位置是文本基线，即绿色线条部分。
 
-![](./img/zh-cn_image_0000002631414496.png)
+![](./img/zh-cn_image_0000002655849802.png)
 
 #### PlaceholderSpan
 
@@ -1823,7 +1827,7 @@ struct Index {
 ```
  ![](./img/note_3.0-zh-cn.png) 示意图展示了点击按钮后layout接口示例代码的运行结果。
 
-![](./img/zh-cn_image_0000002661733723.png)
+![](./img/zh-cn_image_0000002686089233.png)
 
 #### [h2]layoutWithConstraints24+
 
@@ -2877,6 +2881,73 @@ function numberToRGBA(colorNum: number): common2D.Color {
 }
 ```
 
+#### [h2]forceReuseRasterResult
+
+forceReuseRasterResult(isForce: boolean): void
+
+设置是否强制复用光栅化结果。设置后，在下次调用[paint](#paint)绘制时生效。true表示强制复用光栅化结果，false表示允许更新光栅化结果，默认值为false。
+
+系统能力：SystemCapability.Graphics.Drawing
+
+元服务API：从API版本26.0.0开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| isForce | boolean | 是 | 是否强制复用光栅化结果。true表示强制复用光栅化结果，false表示允许更新光栅化结果。 |
+
+示例：
+
+```
+// Index.ets
+import { text, drawing } from '@kit.ArkGraphics2D'
+import { image } from '@kit.ImageKit'
+ 
+function textFunc(pixelmap: PixelMap) {
+  let canvas = new drawing.Canvas(pixelmap);
+  let textData = "Hello World";
+  let myTextStyle: text.TextStyle = {
+    color: { alpha: 255, red: 255, green: 0, blue: 0 },
+    fontSize: 33,
+  };
+  let myParagraphStyle: text.ParagraphStyle = {
+    textStyle: myTextStyle
+  };
+  let fontCollection = new text.FontCollection();
+  let paragraphBuilder = new text.ParagraphBuilder(myParagraphStyle, fontCollection);
+  paragraphBuilder.addText(textData);
+  let paragraph = paragraphBuilder.build();
+  paragraph.layoutSync(200);
+  paragraph.forceReuseRasterResult(true);
+  paragraph.paint(canvas, 0, 0);
+}
+
+@Entry
+@Component
+struct Index {
+  @State pixelmap?: PixelMap = undefined;
+  fun: Function = textFunc;
+  build() {
+    Column() {
+      Image(this.pixelmap).width(200).height(200);
+      Button("Click").onClick(() => {
+        if (this.pixelmap == undefined) {
+          const color: ArrayBuffer = new ArrayBuffer(160000);
+          let opts: image.InitializationOptions = { editable: true, pixelFormat: 3, size: { height: 200, width: 200 } }
+          this.pixelmap = image.createPixelMapSync(color, opts);
+        }
+        this.fun(this.pixelmap);
+      })
+    }
+  }
+}
+```
+
 #### LineTypeset18+
 
 保存着文本内容以及样式的载体，可以用于计算单行排版信息。
@@ -3489,15 +3560,15 @@ struct Index {
 
 ![](./img/note_3.0-zh-cn.png) 示意图展示文本行排版参数：width（包含左右空格的文本行宽度）、ascent（上升高度最高点）、descent（下降高度最低点）、leading（行间距）、top（当前行最高点）、baseline（字符基线）、bottom（当前行最低点）、next line top（下一行最高点）。
 
-![](./img/zh-cn_image_0000002631254602.png)
+![](./img/zh-cn_image_0000002685929401.png)
 
 示意图展示了字符串为" a b "的排版边界。
 
-![](./img/zh-cn_image_0000002661613787.png)
+![](./img/zh-cn_image_0000002656009726.png)
 
 示意图展示了字符串为"j"或"E"的排版边界。
 
-![](./img/zh-cn_image_0000002631414498.png)
+![](./img/zh-cn_image_0000002655849804.png)
 
 #### CaretOffsetsCallback18+
 
@@ -3712,11 +3783,11 @@ getTypographicBounds(): TypographicBounds
 
 ![](./img/note_3.0-zh-cn.png) 示意图展示了字符串为" a b "的排版边界。
 
-![](./img/zh-cn_image_0000002661613787.png)
+![](./img/zh-cn_image_0000002656009726.png)
 
 示意图展示了字符串为"j"或"E"的排版边界。
 
-![](./img/zh-cn_image_0000002631414498.png)
+![](./img/zh-cn_image_0000002655849804.png)
 
 系统能力：SystemCapability.Graphics.Drawing
 
@@ -3743,11 +3814,11 @@ getImageBounds(): common2D.Rect
 
 ![](./img/note_3.0-zh-cn.png) 示意图展示了字符串为" a b "的图像边界。
 
-![](./img/zh-cn_image_0000002661733725.png)
+![](./img/zh-cn_image_0000002686089235.png)
 
 示意图展示了字符串为"j"或"E"的图像边界。
 
-![](./img/zh-cn_image_0000002631254604.png)
+![](./img/zh-cn_image_0000002685929403.png)
 
 系统能力：SystemCapability.Graphics.Drawing
 
@@ -4249,11 +4320,11 @@ getImageBounds(): common2D.Rect
 
 ![](./img/note_3.0-zh-cn.png) 示意图展示了字符串为" a b "的图像边界。
 
-![](./img/zh-cn_image_0000002661733725.png)
+![](./img/zh-cn_image_0000002686089235.png)
 
 示意图展示了字符串为"j"或"E"的图像边界。
 
-![](./img/zh-cn_image_0000002631254604.png)
+![](./img/zh-cn_image_0000002685929403.png)
 
 系统能力：SystemCapability.Graphics.Drawing
 
@@ -4279,11 +4350,11 @@ getTypographicBounds(): TypographicBounds
 
 ![](./img/note_3.0-zh-cn.png) 示意图展示了字符串为" a b "的排版边界。
 
-![](./img/zh-cn_image_0000002661613787.png)
+![](./img/zh-cn_image_0000002656009726.png)
 
 示意图展示了字符串为"j"或"E"的排版边界。
 
-![](./img/zh-cn_image_0000002631414498.png)
+![](./img/zh-cn_image_0000002655849804.png)
 
 系统能力：SystemCapability.Graphics.Drawing
 
@@ -4354,6 +4425,85 @@ advancesRange = runs[0].getAdvances({start:0, end:-10}); // -10是非法参数�
 let advancesNull = runs[0].getAdvances(null); // null是非法参数，将返回undefined
 ```
 
+#### [h2]getTextStyle
+
+getTextStyle(): TextStyle
+
+获取该排版单元的文本样式。
+
+系统能力：SystemCapability.Graphics.Drawing
+
+元服务API：从API版本26.0.0开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+起始版本： 26.0.0
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| [TextStyle](#textstyle) | 该排版单元的文本样式。 **说明：** 1.textStyle.color、textStyle.textShadows.color、textStyle.backgroundRect.color、textStyle.decoration.color属性：返回32位无符号整型颜色数值。示例：返回值4278190080，对应纯黑色十六进制颜色值0xFF000000，等价于[common2D.Color](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-common2d#color)对象参数：alpha=255、red=0、green=0、blue=0，示例中提供numberToRGBA转换方法作为参考。 2.textStyle.ellipsis和textStyle.ellipsisMode为段落属性，不支持通过本接口获取，应使用[getParagraphStyle()](#getparagraphstyle)。 |
+
+示例：
+
+```
+// Index.ets
+import { text } from "@kit.ArkGraphics2D"
+import { common2D } from '@kit.ArkGraphics2D'
+import { JSON } from "@kit.ArkTS";
+
+function textFunc() {
+  let textStyle: text.TextStyle = {
+    color: { alpha: 255, red: 255, green: 0, blue: 0 },
+    fontSize: 33,
+  };
+  let paragraphStyle: text.ParagraphStyle = {
+    textStyle: textStyle,
+    align: text.TextAlign.END,
+  };
+  let fontCollection = new text.FontCollection();
+  let paragraphBuilder = new text.ParagraphBuilder(paragraphStyle, fontCollection);
+  paragraphBuilder.addText("Hello World");
+  let paragraph = paragraphBuilder.build();
+  paragraph.layoutSync(50);
+  let lines = paragraph.getTextLines();
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    let runs = line.getGlyphRuns();
+    for (let j = 0; j < runs.length; j++) {
+      const run = runs[j];
+      const runStyle = run.getTextStyle();
+      console.info(`print line [${i}] run [${j}] textStyle: ${JSON.stringify(runStyle)}`);
+      if (runStyle?.color != undefined && typeof runStyle?.color == 'number') {
+        let textColor: common2D.Color = numberToRGBA(runStyle?.color);
+        console.info(`Print text color ARGB: ${textColor.alpha}, ${textColor.red}, ${textColor.green}, ${textColor.blue}`);
+      }
+    }
+  }
+}
+
+@Entry
+@Component
+struct Index {
+  build() {
+    Column() {
+      Button("Click").onClick((e: ClickEvent) => {
+        textFunc();
+      })
+    }
+  }
+}
+
+function numberToRGBA(colorNum: number): common2D.Color {
+  const alpha = (colorNum >>> 24) & 0xFF;
+  const red = (colorNum >>> 16) & 0xFF;
+  const green = (colorNum >>> 8) & 0xFF;
+  const blue = colorNum & 0xFF;
+  return { alpha: alpha, red: red, green: green, blue: blue };
+}
+```
+
 #### TextTab18+
 
 段落风格的文本制表符，储存了对齐方式和位置。
@@ -4371,15 +4521,15 @@ let advancesNull = runs[0].getAdvances(null); // null是非法参数，将返回
 
 alignment为CENTER，location为200，文本为"12/t345"：
 
-![](./img/zh-cn_image_0000002661613789.png)
+![](./img/zh-cn_image_0000002656009728.png)
 
 alignment为LEFT，location为100，文本为"abccccccccc/tdef"：
 
-![](./img/zh-cn_image_0000002631414500.png)
+![](./img/zh-cn_image_0000002655849806.png)
 
 alignment为RIGHT，location为100，文本为"aabcdef/tg hi/tjkl/tmno/tp qr"：
 
-![](./img/zh-cn_image_0000002661733727.png)
+![](./img/zh-cn_image_0000002686089237.png)
 
 #### SystemFontType14+
 

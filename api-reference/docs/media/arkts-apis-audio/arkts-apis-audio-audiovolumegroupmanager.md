@@ -2,8 +2,8 @@
 title: "Interface (AudioVolumeGroupManager)"
 upstream_id: "harmonyos-references/arkts-apis-audio-audiovolumegroupmanager"
 catalog: "harmonyos-references"
-content_hash: "7a01f2b7a190"
-synced_at: "2026-07-09T01:00:09.128801"
+content_hash: "6ed235ccce99"
+synced_at: "2026-07-28T16:51:26.618582"
 ---
 
 # Interface (AudioVolumeGroupManager)
@@ -1006,12 +1006,12 @@ let rendererInfo: audio.AudioRendererInfo = {
 
 audio.getAudioManager().getRoutingManager().getPreferOutputDeviceForRendererInfo(rendererInfo).then((data) => {
   audioVolumeGroupManager.getMaxAmplitudeForOutputDevice(data[0]).then((value) => {
-    console.info(`Succeeded in getting maxAmplitude for input device. Amplitude: ${value}.`);
+    console.info(`Succeeded in getting maxAmplitude for output device. Amplitude: ${value}.`);
   }).catch((err: BusinessError) => {
-    console.error(`Failed to get maxAmplitude for input device. Code: ${err.code}, message: ${err.message}`);
+    console.error(`Failed to get maxAmplitude for output device. Code: ${err.code}, message: ${err.message}`);
   })
 }).catch((err: BusinessError) => {
-  console.error(`Failed to get preferred input device for capturer info. Code: ${err.code}, message: ${err.message}`);
+  console.error(`Failed to get prefer output device for renderer info. Code: ${err.code}, message: ${err.message}`);
 })
 ```
 
@@ -1021,7 +1021,7 @@ setMicrophoneMute(mute: boolean, callback: AsyncCallback<void>): void
 
 设置麦克风静音状态。使用callback异步回调。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 11开始废弃，替代接口仅面向系统应用开放。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 11开始废弃。
 
 需要权限： ohos.permission.MANAGE_AUDIO_CONFIG，该权限仅系统应用可申请。
 
@@ -1054,7 +1054,7 @@ setMicrophoneMute(mute: boolean): Promise<void>
 
 设置麦克风静音状态。使用Promise异步回调。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 11开始废弃，替代接口仅面向系统应用开放。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 11开始废弃。
 
 需要权限： ohos.permission.MANAGE_AUDIO_CONFIG，该权限仅系统应用可申请。
 

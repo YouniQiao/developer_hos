@@ -2,8 +2,8 @@
 title: "recoveryKey（企业恢复密钥）"
 upstream_id: "harmonyos-references/dataguard-recoverykey"
 catalog: "harmonyos-references"
-content_hash: "794a299af68e"
-synced_at: "2026-07-09T00:59:16.899605"
+content_hash: "fc54bcf2b610"
+synced_at: "2026-07-28T16:50:29.398395"
 ---
 
 # recoveryKey（企业恢复密钥）
@@ -37,7 +37,7 @@ import { recoveryKey } from '@kit.EnterpriseDataGuardKit';
 | iv | Uint8Array | 否 | 否 | AES-GCM-256加密时使用的iv。 |
 | tag | Uint8Array | 否 | 否 | AES-GCM-256加密时使用的tag。 |
 
-#### getEnterpriseRecoveryKey
+#### recoveryKey.getEnterpriseRecoveryKey
 
 getEnterpriseRecoveryKey(userId: number): Promise<EnterpriseRecoveryKeyInfo>
 
@@ -71,10 +71,11 @@ getEnterpriseRecoveryKey(userId: number): Promise<EnterpriseRecoveryKeyInfo>
 | --- | --- |
 | 201 | Permission denied. |
 | 401 | The parameter check failed. |
-| 1014400001 | System service exception. |
-| 1014400201 | Invalid device type, current device is not enterprise device. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
+| 1014400001 | System service error. |
+| 1014400201 | Invalid device type. The current device is not an enterprise device. |
 | 1014400202 | Invalid userId. |
-| 1014400203 | Enterprise recovery key is already existed. |
+| 1014400203 | The enterprise recovery key already exists. |
 
 示例：
 
@@ -103,7 +104,7 @@ async function getEnterpriseRecoveryKey() {
 }
 ```
 
-#### getAuthChallenge
+#### recoveryKey.getAuthChallenge
 
 getAuthChallenge(): Promise<Uint8Array>
 
@@ -130,8 +131,9 @@ getAuthChallenge(): Promise<Uint8Array>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 1014400001 | System service exception. |
-| 1014400201 | Invalid device type, current device is not enterprise device. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
+| 1014400001 | System service error. |
+| 1014400201 | Invalid device type. The current device is not an enterprise device. |
 
 示例：
 
@@ -147,11 +149,11 @@ recoveryKey.getAuthChallenge().then((challenge: Uint8Array) => {
 });
 ```
 
-#### updateEnterpriseCertificate
+#### recoveryKey.updateEnterpriseCertificate
 
 updateEnterpriseCertificate(signature: Uint8Array, cert: Uint8Array): Promise<number>
 
-更新企业公钥证书流程，需要先调用[getAuthChallenge](#getauthchallenge)接口获取挑战值并[签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/recoverykey-signature)。使用Promise异步回调。
+更新企业公钥证书流程，需要先调用[getAuthChallenge](#recoverykeygetauthchallenge)接口获取挑战值并[签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/recoverykey-signature)。使用Promise异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -182,10 +184,11 @@ updateEnterpriseCertificate(signature: Uint8Array, cert: Uint8Array): Promise<nu
 | --- | --- |
 | 201 | Permission denied. |
 | 401 | The parameter check failed. |
-| 1014400001 | System service exception. |
-| 1014400201 | Invalid device type, current device is not enterprise device. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
+| 1014400001 | System service error. |
+| 1014400201 | Invalid device type. The current device is not an enterprise device. |
 | 1014400204 | Invalid signature. |
-| 1014400205 | Invalid cert. |
+| 1014400205 | Invalid certificate. |
 
 示例：
 
@@ -193,9 +196,9 @@ updateEnterpriseCertificate(signature: Uint8Array, cert: Uint8Array): Promise<nu
 import { BusinessError } from '@kit.BasicServicesKit';
 import { recoveryKey } from '@kit.EnterpriseDataGuardKit';
 
-// 在实际应用中，signature 应替换为由企业的公钥、私钥和挑战值生成的签名。
+// 在实际应用中，signature应替换为由企业的公钥、私钥和挑战值生成的签名。
 let signature: Uint8Array = new Uint8Array([0]);
-// 在实际应用中，cert 应需替换为企业证书数据。
+// 在实际应用中，cert应替换为企业证书数据。
 let cert: Uint8Array = new Uint8Array([0]);
 recoveryKey.updateEnterpriseCertificate(signature, cert).then((ret: number) => {
   console.info(`Succeeded in updating certificate. result is: ${ret}`);
@@ -204,11 +207,11 @@ recoveryKey.updateEnterpriseCertificate(signature, cert).then((ret: number) => {
 });
 ```
 
-#### deleteEnterpriseRecoveryKey
+#### recoveryKey.deleteEnterpriseRecoveryKey
 
 deleteEnterpriseRecoveryKey(userId: number, signature: Uint8Array): Promise<number>
 
-删除企业恢复密钥相关数据，需要先调[getAuthChallenge](#getauthchallenge)接口获取挑战值并[签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/recoverykey-signature)。使用Promise异步回调。
+删除企业恢复密钥相关数据，需要先调[getAuthChallenge](#recoverykeygetauthchallenge)接口获取挑战值并[签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/recoverykey-signature)。使用Promise异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -239,8 +242,9 @@ deleteEnterpriseRecoveryKey(userId: number, signature: Uint8Array): Promise<numb
 | --- | --- |
 | 201 | Permission denied. |
 | 401 | The parameter check failed. |
-| 1014400001 | System service exception. |
-| 1014400201 | Invalid device type, current device is not enterprise device. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
+| 1014400001 | System service error. |
+| 1014400201 | Invalid device type. The current device is not an enterprise device. |
 | 1014400202 | Invalid userId. |
 | 1014400204 | Invalid signature. |
 
@@ -252,7 +256,7 @@ import { recoveryKey } from '@kit.EnterpriseDataGuardKit';
 
 async function deleteEnterpriseRecoveryKey() {
   try {
-    // 在实际应用中，signature 应替换为由企业的公钥、私钥和挑战值生成的签名。
+    // 在实际应用中，signature应替换为由企业的公钥、私钥和挑战值生成的签名。
     let signature: Uint8Array = new Uint8Array([0]);
     let accountManager: osAccount.AccountManager = osAccount.getAccountManager();
     let userId: number = await accountManager.getOsAccountLocalId();
@@ -267,7 +271,7 @@ async function deleteEnterpriseRecoveryKey() {
 }
 ```
 
-#### verifyUserIdentityEnterprise
+#### recoveryKey.verifyUserIdentityEnterprise
 
 verifyUserIdentityEnterprise(userId: number, userType: number, pinCode: string): Promise<void>
 
@@ -287,7 +291,7 @@ verifyUserIdentityEnterprise(userId: number, userType: number, pinCode: string):
 | --- | --- | --- | --- |
 | userId | number | 是 | 需要导出企业恢复密钥的用户ID。 |
 | userType | number | 是 | [用户类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#osaccounttype)。可以通过调用[getOsAccountType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccounttype9)获取。 |
-| pinCode | string | 是 | 用户锁屏密码，字符长度不超过64位。 |
+| pinCode | string | 是 | 用户锁屏密码，字符长度不超过64个字符。 |
 
 返回值：
 
@@ -302,9 +306,10 @@ verifyUserIdentityEnterprise(userId: number, userType: number, pinCode: string):
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 1014400001 | System service exception. |
-| 1014400103 | Authentication is failed. |
-| 1014400201 | Invalid device type, current device is not enterprise device. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
+| 1014400001 | System service error. |
+| 1014400103 | Identity authentication failed. |
+| 1014400201 | Invalid device type. The current device is not an enterprise device. |
 | 1014400202 | Invalid userId. |
 
 示例：
@@ -334,7 +339,7 @@ async function verifyUserIdentityEnterprise(pinCode: string) {
 }
 ```
 
-#### verifyUserByDialog
+#### recoveryKey.verifyUserByDialog
 
 verifyUserByDialog(userId: number): Promise<void>
 
@@ -367,10 +372,11 @@ verifyUserByDialog(userId: number): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 1014400001 | System service exception. |
-| 1014400006 | The user canceled the identity authentication process. |
-| 1014400102 | Identity authentication timed out. |
-| 1014400201 | Invalid device type, current device is not enterprise device. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
+| 1014400001 | System service error. |
+| 1014400006 | The user canceled the identity verification process. |
+| 1014400102 | User identity authentication timed out. |
+| 1014400201 | Invalid device type. The current device is not an enterprise device. |
 | 1014400202 | Invalid userId. |
 
 示例：
@@ -394,11 +400,11 @@ async function getEnterpriseRecoveryKeyForPinByDialog() {
 }
 ```
 
-#### getEnterpriseRecoveryKeyForResettingPin
+#### recoveryKey.getEnterpriseRecoveryKeyForResettingPin
 
 getEnterpriseRecoveryKeyForResettingPin(userId: number, userType: number): Promise<EnterpriseRecoveryKeyInfo>
 
-导出用于重置锁屏密码的企业恢复密钥。先需要调用[verifyUserIdentityEnterprise](#verifyuseridentityenterprise)或[verifyUserByDialog](#verifyuserbydialog)接口验证身份，并在30秒内调用此接口。若超时后调用，系统会返回异常代码[1014400001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprise-dataguard#section1014400001-系统内部错误)。使用Promise异步回调。
+导出用于重置锁屏密码的企业恢复密钥。先需要调用[verifyUserIdentityEnterprise](#recoverykeyverifyuseridentityenterprise)或[verifyUserByDialog](#recoverykeyverifyuserbydialog)接口验证身份，并在30秒内调用此接口。若超时后调用，系统会返回异常代码[1014400001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprise-dataguard#section1014400001-系统服务异常)。使用Promise异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -428,8 +434,9 @@ getEnterpriseRecoveryKeyForResettingPin(userId: number, userType: number): Promi
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 1014400001 | System service exception. |
-| 1014400201 | Invalid device type, current device is not enterprise device. |
+| 801 | Capability not supported. 适用版本：26.0.0+ |
+| 1014400001 | System service error. |
+| 1014400201 | Invalid device type. The current device is not an enterprise device. |
 | 1014400202 | Invalid userId. |
 
 示例：
@@ -463,5 +470,98 @@ async function getEnterpriseRecoveryKeyForResettingPin() {
   } catch (e) {
     console.error(`Failed to getEnterpriseRecoveryKeyForResettingPin. Code: ${e.code}, message: ${e.message}`);
   }
+}
+```
+
+#### recoveryKey.isRecoveryKeySupported
+
+isRecoveryKeySupported(): boolean
+
+检查设备是否支持解密数据恢复密钥。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.PCService.RecoveryKeyService
+
+起始版本： 26.0.0
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| boolean | 布尔值，返回true表示支持解密数据恢复密钥，否则返回false。 |
+
+示例：
+
+```
+import { recoveryKey } from '@kit.EnterpriseDataGuardKit';
+
+try {
+  let isSupported: boolean = recoveryKey.isRecoveryKeySupported();
+  console.info(`Succeeded in determining whether the device supports RecoveryKey. isSupported: ${isSupported}`);
+} catch (e) {
+  console.error(`Failed to determine whether the device supports RecoveryKey. Code: ${e.code}, message: ${e.message}.`);
+}
+```
+
+#### recoveryKey.isRecoveryKeyForResettingPinSupported
+
+isRecoveryKeyForResettingPinSupported(): boolean
+
+检查设备是否支持重置锁屏密码恢复密钥。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.PCService.RecoveryKeyService
+
+起始版本： 26.0.0
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| boolean | 布尔值，返回true表示支持重置锁屏密码恢复密钥，否则返回false。 |
+
+示例：
+
+```
+import { recoveryKey } from '@kit.EnterpriseDataGuardKit';
+
+try {
+  let isSupported: boolean = recoveryKey.isRecoveryKeyForResettingPinSupported();
+  console.info(`Succeeded in determining whether the device supports RecoveryKey for reset pinCode. isSupported: ${isSupported}`);
+} catch (e) {
+  console.error(`Failed to determine whether the device supports RecoveryKey for reset pinCode. Code: ${e.code}, message: ${e.message}.`);
+}
+```
+
+#### recoveryKey.isDataVolumeRecoveryKeySupported
+
+isDataVolumeRecoveryKeySupported(): boolean
+
+检查设备是否支持数据盘恢复密钥。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.PCService.RecoveryKeyService
+
+起始版本： 26.0.0
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| boolean | 布尔值，返回true表示支持数据盘恢复密钥，否则返回false。 |
+
+示例：
+
+```
+import { recoveryKey } from '@kit.EnterpriseDataGuardKit';
+
+try {
+  let isSupported: boolean = recoveryKey.isDataVolumeRecoveryKeySupported();
+  console.info(`Succeeded in determining whether the device supports data volume RecoveryKey. isSupported: ${isSupported}`);
+} catch (e) {
+  console.error(`Failed to determine whether the device supports data volume RecoveryKey. Code: ${e.code}, message: ${e.message}.`);
 }
 ```

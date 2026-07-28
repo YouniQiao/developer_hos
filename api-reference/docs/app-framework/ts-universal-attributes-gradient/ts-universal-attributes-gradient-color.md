@@ -2,8 +2,8 @@
 title: "颜色渐变"
 upstream_id: "harmonyos-references/ts-universal-attributes-gradient-color"
 catalog: "harmonyos-references"
-content_hash: "fd5b009cbf44"
-synced_at: "2026-07-09T00:57:40.012584"
+content_hash: "e5cb631d324b"
+synced_at: "2026-07-28T16:42:18.729716"
 ---
 
 # 颜色渐变
@@ -58,7 +58,7 @@ linearGradient(options: Optional<LinearGradientOptions>): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 线性渐变。 当options的值为undefined时，恢复为无线性渐变的效果。 |
+| options | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 线性渐变的配置选项。 当options的值为undefined时，恢复为无线性渐变的效果。 |
 
 返回值：
 
@@ -83,7 +83,7 @@ linearGradient(options: Optional<LinearGradientOptions>): T
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | angle7+ | number | string | 否 | 是 | 线性渐变的起始角度。角度为0度时渐变方向为从下往上（即0点方向）。0点方向顺时针旋转为正向角度。 取值范围：(-∞,+∞)，设置的值大于0时，按顺时针方向，小于0时，按逆时针方向。 默认值：180 角度为字符串时，合法的取值为纯数字或纯数字后带"deg"（度）、"rad"（弧度）、"grad"（梯度）、"turn"（圈）单位，例如："90"、 "90deg"、"1.57rad"。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 |
-| direction7+ | [GradientDirection](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#gradientdirection) | 否 | 是 | 线性渐变的方向，设置angle为非undefined后不生效。设置为GradientDirection.None时，按默认方向渐变。默认值：GradientDirection.Bottom。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 |
+| direction7+ | [GradientDirection](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#gradientdirection) | 否 | 是 | 线性渐变的方向，设置angle为非undefined后，direction不生效。设置为GradientDirection.None时，按默认方向渐变。默认值：GradientDirection.Bottom。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 |
 | colors7+ | Array | 否 | 否 | 指定渐变色颜色和其对应的百分比位置的数组，设置非法颜色直接跳过。ResourceColor表示颜色，number表示该颜色所处的位置，取值范围为[0, 1.0]，设置的值小于0时，按0处理，设置的值大于1.0时，按1.0处理。0表示需要设置渐变色的开始处，1.0表示渐变色的结束处。为了实现多个颜色渐变效果，多个数组中的number类型参数应递增设置。如果后一个数组中的number类型参数小于前一个数组的number类型参数，将按照等于前一个数组number值处理。 默认值：[]，无渐变效果。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 |
 | repeating7+ | boolean | 否 | 是 | 为渐变的颜色重复着色。 默认值：false。 true：允许为渐变的颜色重复着色。 false：不允许为渐变的颜色重复着色。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 |
 
@@ -129,7 +129,7 @@ sweepGradient(options: Optional<SweepGradientOptions>): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 角度渐变。 当options的值为undefined时，恢复为无角度渐变的效果。 |
+| options | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 角度渐变的配置选项。 当options的值为undefined时，恢复为无角度渐变的效果。 |
 
 返回值：
 
@@ -157,8 +157,8 @@ sweepGradient(options: Optional<SweepGradientOptions>): T
 | start7+ | number | string | 否 | 是 | 角度渐变的起点。 默认值：0。 角度为字符串时，合法的取值为纯数字或纯数字后带"deg"（度）、"rad"（弧度）、"grad"（梯度）、"turn"（圈）单位。例如："90"、 "90deg"、"1.57rad"。取值有0到360度的限制，转换为度的单位之后，值在0到360度之间，设置为小于0度的值时，按值为0度处理，设置为大于360度的值时，按值为360度处理。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 |
 | end7+ | number | string | 否 | 是 | 角度渐变的终点。 默认值：0。 角度为字符串时，合法的取值为纯数字或纯数字后带"deg"（度）、"rad"（弧度）、"grad"（梯度）、"turn"（圈）单位。例如："90"、 "90deg"、"1.57rad"。取值有0到360度的限制，转换为度的单位之后，值在0到360度之间，设置为小于0度的值时，按值为0度处理，设置为大于360度的值时，按值为360度处理。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 |
 | rotation7+ | number | string | 否 | 是 | 角度渐变的旋转角度。默认值：0。 角度为字符串时，合法的取值为纯数字或纯数字后带"deg"（度）、"rad"（弧度）、"grad"（梯度）、"turn"（圈）单位。例如："90"、 "90deg"、"1.57rad"。取值有0到360度的限制，转换为度的单位之后，值在0到360度之间，设置为小于0度的值时，按值为0度处理，设置为大于360度的值时，按值为360度处理。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 |
-| colors7+ | Array | 否 | 否 | 指定渐变色颜色和其对应的百分比位置的数组，设置非法颜色直接跳过。ResourceColor表示颜色。number表示该颜色所处的位置，取值范围为[0, 1.0]，设置的值小于0时，按0处理，设置的值大于1.0时，按1.0处理。0表示需要设置渐变色的开始处，1.0表示渐变色的结束处。为了实现多个颜色渐变效果，多个数组中的number类型参数应递增设置。如果后一个数组中的number类型参数小于前一个数组的number类型参数，将按照等于前一个数组number值处理。 默认值：[]，无渐变效果。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 |
-| metricsColors20+ | Array | 否 | 是 | 指定渐变色颜色和其对应的百分比位置的数组，设置非法颜色直接跳过。设置metricsColors时colors失效。每个渐变ColorMetrics的色域属性应当统一，设置不同色域属性则认为非法。默认值为透明色。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| colors7+ | Array | 否 | 否 | 指定渐变颜色和其对应的百分比位置的数组，设置非法颜色直接跳过。ResourceColor表示颜色。number表示该颜色所处的位置，取值范围为[0, 1.0]，设置的值小于0时，按0处理，设置的值大于1.0时，按1.0处理。0表示需要设置渐变色的开始处，1.0表示渐变色的结束处。为了实现多个颜色渐变效果，多个数组中的number类型参数应递增设置。如果后一个数组中的number类型参数小于前一个数组的number类型参数，将按照等于前一个数组number值处理。 默认值：[]，无渐变效果。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 |
+| metricsColors20+ | Array | 否 | 是 | 指定渐变颜色和其对应的百分比位置的数组，设置非法颜色直接跳过。设置metricsColors时colors失效。每个渐变ColorMetrics的色域属性应当统一，设置不同色域属性则认为非法。默认值为透明色。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | repeating7+ | boolean | 否 | 是 | 为渐变的颜色重复着色。 默认值：false true：允许为渐变的颜色重复着色。 false：不允许为渐变的颜色重复着色。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 |
 
 ![](./img/note_3.0-zh-cn.png) metricsColors参数的约束：
@@ -207,7 +207,7 @@ radialGradient(options: Optional<RadialGradientOptions>): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 径向渐变。 当options的值为undefined时，恢复为无径向渐变的效果。 |
+| options | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 径向渐变的配置选项。 当options的值为undefined时，恢复为无径向渐变的效果。 |
 
 返回值：
 
@@ -233,7 +233,7 @@ radialGradient(options: Optional<RadialGradientOptions>): T
 | --- | --- | --- | --- | --- |
 | center7+ | [[Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length), Length] | 否 | 否 | 径向渐变的中心点，即相对于当前组件左上角的坐标。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 |
 | radius7+ | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 否 | 径向渐变的半径。 取值范围：[0,+∞)。设置的值小于0时，按值为0处理。设置的值为undefined时，系统会自适应渐变半径。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 |
-| colors7+ | Array | 否 | 否 | 指定渐变色颜色和其对应的百分比位置的数组，设置非法颜色直接跳过。 默认值：[]，无渐变效果。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 |
+| colors7+ | Array | 否 | 否 | 指定渐变颜色和其对应的百分比位置的数组，设置非法颜色直接跳过。 默认值：[]，无渐变效果。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 |
 | repeating7+ | boolean | 否 | 是 | 为渐变的颜色重复着色。默认值：false。 true：允许为渐变的颜色重复着色。 false：不允许为渐变的颜色重复着色。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 |
 
 ![](./img/note_3.0-zh-cn.png) colors参数的约束：
@@ -276,7 +276,7 @@ struct ColorGradientExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413074.png)
+ ![](./img/zh-cn_image_0000002685927977.png)
 
 #### [h2]示例2（颜色按旋转角度渐变）
 
@@ -338,7 +338,7 @@ struct ColorGradientExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732303.png)
+ ![](./img/zh-cn_image_0000002656008298.png)
 
 #### [h2]示例3（颜色按径向渐变）
 
@@ -376,4 +376,4 @@ struct ColorGradientExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253182.png)
+ ![](./img/zh-cn_image_0000002655848378.png)

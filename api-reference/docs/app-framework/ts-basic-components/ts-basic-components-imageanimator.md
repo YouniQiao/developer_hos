@@ -2,8 +2,8 @@
 title: "ImageAnimator"
 upstream_id: "harmonyos-references/ts-basic-components-imageanimator"
 catalog: "harmonyos-references"
-content_hash: "19b7ce74b96b"
-synced_at: "2026-07-09T17:24:13.611676"
+content_hash: "c623ca0acfbc"
+synced_at: "2026-07-28T16:45:23.273069"
 ---
 
 # ImageAnimator
@@ -37,7 +37,7 @@ ImageAnimator()
 
 images(value: Array<ImageFrameInfo>)
 
-设置图片帧信息集合。不支持动态更新，动态更新可能会导致不可预期的行为。
+设置图片帧信息集合。不支持动态更新，否则可能导致显示错乱、帧切换异常或内存上涨等问题（该属性按非动态更新设计，运行时修改不保证生效）。
 
 卡片能力： 从API version 10开始，该接口支持在ArkTS卡片中使用。
 
@@ -67,7 +67,7 @@ state(value: AnimationStatus)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [AnimationStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#animationstatus) | 是 | 默认为初始状态，用于控制播放状态。 默认值：AnimationStatus.Initial |
+| value | [AnimationStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#animationstatus) | 是 | 用于控制播放状态。 默认值：AnimationStatus.Initial |
 
 #### [h2]duration
 
@@ -85,7 +85,7 @@ duration(value: number)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 播放时长。 value为0时，不播放图片。 value平均分配给单张图片的播放时长小于一帧时间，将导致播放异常。 设置为负数时，取默认值。 value的改变只会在下一次循环开始时生效。 单位：毫秒 默认值：1000ms |
+| value | number | 是 | 播放时长。 value为0时，不播放图片。 value平均分配给单张图片的播放时长小于一帧时间，将导致播放异常。 设置为负数时，取默认值1000毫秒。 value的改变只会在下一次循环开始时生效。 单位：毫秒 默认值：1000 |
 
 #### [h2]reverse
 
@@ -103,7 +103,7 @@ reverse(value: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | boolean | 是 | 播放方向。 false表示从第1张图片播放到最后1张图片，true表示从最后1张图片播放到第1张图片。 默认值：false |
+| value | boolean | 是 | 播放方向。 false表示从第1张图片播放到最后1张图片，true表示从最后1张图片播放到第1张图片。 动画结束后保留哪一帧还与[fillMode](#fillmode)属性有关，详见fillMode说明。 默认值：false |
 
 #### [h2]fixedSize
 
@@ -171,7 +171,7 @@ iterations(value: number)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 默认播放一次，设置为-1时表示无限次播放，设置为小于-1的负数时取默认值。设置为浮点数时，数值向下取整。 默认值：1 |
+| value | number | 是 | 默认播放一次；-1表示无限次播放，小于-1的负数取默认值1；浮点数向下取整。 默认值：1 |
 
 #### [h2]monitorInvisibleArea17+
 
@@ -189,7 +189,7 @@ monitorInvisibleArea(monitorInvisibleArea: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| monitorInvisibleArea | boolean | 是 | 当设置为true时，组件将基于系统的[onVisibleAreaChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-component-visible-area-change-event#onvisibleareachange)可见性判定，控制组件的暂停和播放。 当组件的运行状态为[AnimationStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#animationstatus)的Running时，若判定组件不可见，则自动执行暂停操作；若判定为可见，则自动恢复播放。 当设置为false时，组件的暂停和播放不受到onVisibleAreaChange影响。 默认值：false **说明：** 当该属性由true动态修改为false时，组件将依据当前的[AnimationStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#animationstatus)状态进行处理。 例如，若当前状态为Running且因[onVisibleAreaChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-component-visible-area-change-event#onvisibleareachange)的不可见回调暂停，则在属性由true改为false后，组件会从上次暂停的位置重新开始播放。 由该属性导致的不可见暂停和可见暂停操作不会改变用户设置的[state](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-imageanimator#state)值。 |
+| monitorInvisibleArea | boolean | 是 | 当设置为true时，组件将基于系统的[onVisibleAreaChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-component-visible-area-change-event#onvisibleareachange)可见性判定，控制组件的暂停和播放。 当组件的运行状态为[AnimationStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#animationstatus)的Running时，若判定组件不可见，则自动执行暂停操作；若判定为可见，则自动恢复播放。 当设置为false时，组件的暂停和播放不受到onVisibleAreaChange影响。 默认值：false **说明：** 当该属性由true动态修改为false时，组件将依据当前的[AnimationStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#animationstatus)状态进行处理。 例如，若当前状态为Running且因[onVisibleAreaChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-component-visible-area-change-event#onvisibleareachange)的不可见回调暂停，则在属性由true改为false后，组件会从上次暂停的位置重新开始播放。 由该属性导致的不可见暂停和可见播放操作不会改变用户设置的[state](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-imageanimator#state)值。 |
 
 #### ImageFrameInfo对象说明
 
@@ -268,7 +268,7 @@ onRepeat(event: () => void)
 
 onCancel(event: () => void)
 
-状态回调，动画返回最初状态时触发。
+状态回调，动画取消时触发。当state被设置为[AnimationStatus.Initial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#animationstatus)时触发；触发后图片显示回到第一帧（正播）或最后一帧（逆播）。与[onFinish](#onfinish)的区别在于：onCancel对应回到Initial初始状态，onFinish对应动画自然结束或停止（Stopped）状态。
 
 卡片能力： 从API version 10开始，该接口支持在ArkTS卡片中使用。
 
@@ -280,13 +280,13 @@ onCancel(event: () => void)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| event | () => void | 是 | 状态回调，动画返回最初状态时触发。 |
+| event | () => void | 是 | 状态回调，动画取消时触发。当state被设置为AnimationStatus.Initial时触发；触发后图片显示回到第一帧（正播）或最后一帧（逆播）。 |
 
 #### [h2]onFinish
 
 onFinish(event: () => void)
 
-状态回调，动画播放完成时或者停止播放时触发。
+状态回调，动画播放完成时（iterations设置的轮次全部播完且动画自然结束）或者停止播放时（state被切换为[AnimationStatus.Stopped](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#animationstatus)）触发。当动画处于[AnimationStatus.Initial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#animationstatus)状态时返回初始状态不会触发该事件，对应触发的是onCancel。
 
 卡片能力： 从API version 10开始，该接口支持在ArkTS卡片中使用。
 
@@ -298,7 +298,7 @@ onFinish(event: () => void)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| event | () => void | 是 | 状态回调，动画播放完成时或者停止播放时触发。 |
+| event | () => void | 是 | 状态回调，动画播放完成时（iterations轮次全部播完且动画自然结束）或者停止播放时（state被切换为AnimationStatus.Stopped）触发。 |
 
 #### 示例
 
@@ -387,7 +387,7 @@ struct ImageAnimatorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002634010666.gif)
+ ![](./img/zh-cn_image_0000002686088175.gif)
 
 #### [h2]示例2（播放PixelMap动画）
 
@@ -476,8 +476,8 @@ struct ImageAnimatorExample {
   }
 
   private async getPixmapFromMedia(resource: Resource) {
-    let unit8Array = await this.getUIContext().getHostContext()?.resourceManager?.getMediaContent(resource.id);
-    let imageSource = image.createImageSource(unit8Array?.buffer.slice(0, unit8Array.buffer.byteLength));
+    let uint8Array = await this.getUIContext().getHostContext()?.resourceManager?.getMediaContent(resource.id);
+    let imageSource = image.createImageSource(uint8Array?.buffer.slice(0, uint8Array.buffer.byteLength));
     let createPixelMap: image.PixelMap = await imageSource.createPixelMap({
       desiredPixelFormat: image.PixelMapFormat.RGBA_8888
     });
@@ -486,7 +486,7 @@ struct ImageAnimatorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664209815.gif)
+ ![](./img/zh-cn_image_0000002685928345.gif)
 
 #### [h2]示例3（设置不可见自动停播）
 
@@ -563,7 +563,7 @@ struct ImageAnimatorAutoPauseTest {
               .fontSize(16)
               .textAlign(TextAlign.Center)
               .margin({ top: 10 })
-          }, (item: string) => item)
+          }, (item: number) => item.toString())
         }.width('100%')
       }
       .scrollable(ScrollDirection.Vertical) // 滚动方向纵向
@@ -588,4 +588,4 @@ struct ImageAnimatorAutoPauseTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664329875.gif)
+ ![](./img/zh-cn_image_0000002656008666.gif)

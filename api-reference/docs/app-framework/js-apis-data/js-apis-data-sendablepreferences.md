@@ -2,8 +2,8 @@
 title: "@ohos.data.sendablePreferences (共享用户首选项)"
 upstream_id: "harmonyos-references/js-apis-data-sendablepreferences"
 catalog: "harmonyos-references"
-content_hash: "6e15ff788144"
-synced_at: "2026-07-09T00:57:16.159934"
+content_hash: "ec9373f4fc7a"
+synced_at: "2026-07-28T16:40:48.649287"
 ---
 
 # @ohos.data.sendablePreferences (共享用户首选项)
@@ -54,7 +54,7 @@ getPreferences(context: Context, options: Options): Promise<Preferences>
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 应用上下文。 |
-| options | [Options](#options) | 是 | 与Preferences实例相关的配置选项。 |
+| options | [Options](#options) | 是 | 与Preferences实例相关的配置选项。name字段为必填字段，名称长度需大于零且小于等于255字节，名称中不能包含'/'且不能以'/'结尾。dataGroupId为可选字段。 |
 
 返回值：
 
@@ -167,7 +167,7 @@ deletePreferences(context: Context, options: Options): Promise<void>
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 应用上下文。 |
-| options | [Options](#options) | 是 | 与Preferences实例相关的配置选项。 |
+| options | [Options](#options) | 是 | 与Preferences实例相关的配置选项。name字段为必填字段，名称长度需大于零且小于等于255字节，名称中不能包含'/'且不能以'/'结尾。dataGroupId为可选字段。 |
 
 返回值：
 
@@ -320,7 +320,7 @@ Preferences实例配置选项。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| name | string | 否 | 否 | Preferences实例的名称。 |
+| name | string | 否 | 否 | Preferences实例的名称。名称长度需大于零且小于等于255字节，名称中不能包含'/'且不能以'/'结尾。 |
 | dataGroupId | string|null | 否 | 是 | 应用组ID，需要向应用市场获取，详见[dataGroupId申请流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ime-kit-security#共享沙箱介绍)。基于dataGroupId的数据共享支持两种场景：1.同一应用的不同进程间共享，只支持三方应用中输入法和输入法的扩展场景使用；2.不同应用间的数据共享，只支持系统应用使用。 为可选参数。指定在此dataGroupId对应的沙箱路径下创建Preferences实例。当此参数不填时，默认在本应用沙箱目录下创建Preferences实例。 **模型约束：** 此属性仅在Stage模型下可用。 |
 
 #### Preferences

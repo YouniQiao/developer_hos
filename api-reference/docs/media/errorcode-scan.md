@@ -2,8 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-scan"
 catalog: "harmonyos-references"
-content_hash: "ab53c8e62dab"
-synced_at: "2026-07-09T01:00:49.379917"
+content_hash: "6d9aadb3e1f5"
+synced_at: "2026-07-28T16:52:06.070498"
 ---
 
 # ArkTS API错误码
@@ -12,27 +12,63 @@ synced_at: "2026-07-09T01:00:49.379917"
 
 #### 1000500001 内部错误
 
-#### [h2]算法异常
+根据实际错误原因的不同，Scan Kit会上报不同的错误信息，具体如下。
+
+#### [h2]Failed to encode
 
 错误信息
 
-- Internal error. Failed to encode.
-- Internal error. Failed to decode.
-- Internal error. Failed to decode image.
+Internal error. Failed to encode.
 
 错误描述
 
-算法异常。
+码图生成失败。
 
 可能原因
 
-码图生成或图像识码时算法出现错误。
+码图生成时算法出现错误。
 
 处理步骤
 
-尝试重新调用码图生成或图像识码接口。
+尝试重新调用码图生成接口[createBarcode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-generatebarcode#createbarcode)。
 
-#### [h2]码图生成失败
+#### [h2]Failed to decode
+
+错误信息
+
+Internal error. Failed to decode.
+
+错误描述
+
+图片识码失败。
+
+可能原因
+
+图片识码时算法出现错误。
+
+处理步骤
+
+尝试重新调用图片识码接口[decode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-imagedecode#decode)。
+
+#### [h2]Failed to decode image
+
+错误信息
+
+Internal error. Failed to decode image.
+
+错误描述
+
+图像数据识码失败。
+
+可能原因
+
+图像数据识码时算法出现错误。
+
+处理步骤
+
+尝试重新调用图像数据识码接口[decodeImage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-imagedecode#decodeimage)。
+
+#### [h2]Failed to create pixelMap
 
 错误信息
 
@@ -40,7 +76,7 @@ Internal error. Failed to create pixelMap.
 
 错误描述
 
-码图生成失败，创建pixelMap失败。
+码图生成时创建pixelMap失败。
 
 可能原因
 
@@ -48,9 +84,9 @@ Internal error. Failed to create pixelMap.
 
 处理步骤
 
-尝试重新调用生成码图接口。
+尝试重新调用码图生成接口[createBarcode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-generatebarcode#createbarcode)。
 
-#### [h2]图片获取失败
+#### [h2]Failed to read file
 
 错误信息
 
@@ -58,7 +94,7 @@ Internal error. Failed to read file.
 
 错误描述
 
-读取文件失败。
+图片识码时读取传入的图片路径失败。
 
 可能原因
 
@@ -68,16 +104,15 @@ Internal error. Failed to read file.
 
 检查传入的uri。
 
-#### [h2]获取系统context失败
+#### [h2]Get context failed
 
 错误信息
 
-- Internal error. Get UI content failed.
-- Internal error. Get context failed.
+Internal error. Get context failed.
 
 错误描述
 
-获取系统context失败。
+默认界面扫码时获取系统context失败。
 
 可能原因
 
@@ -85,9 +120,27 @@ Internal error. Failed to read file.
 
 处理步骤
 
-排查context入参。
+参考[UIAbilityContext获取方式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-stage#获取uiabilitycontextuiability组件的上下文)排查context入参。
 
-#### [h2]获取callback失败
+#### [h2]Get UI content failed
+
+错误信息
+
+Internal error. Get UI content failed.
+
+错误描述
+
+默认界面扫码时获取UI内容失败。
+
+可能原因
+
+传入的context错误，导致获取UI内容失败。
+
+处理步骤
+
+参考[UIAbilityContext获取方式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-stage#获取uiabilitycontextuiability组件的上下文)排查context入参。
+
+#### [h2]Get callback failed
 
 错误信息
 
@@ -105,27 +158,61 @@ Internal error. Get callback failed.
 
 排查Callback入参。
 
-#### [h2]接口调用顺序错误
+#### [h2]This interface must be invoked after the customScan.start interface
 
 错误信息
 
-- Internal error. This interface must be invoked after the customScan.start interface.
-- Internal error. This interface cannot be used after the camera session is paused.
-- Internal error. ScanOption is null, please call customScan.init first.
+Internal error. This interface must be invoked after the customScan.start interface.
 
 错误描述
 
-接口调用顺序错误。
+接口调用顺序错误，调用当前接口时没有先调用start接口。
 
 可能原因
 
-未按开发指南的业务流程调用接口，如未调用customScan.init接口，直接调用customScan.start接口。
+未按业务流程调用接口，如未调用start接口，直接调用getFlashLightStatus。
 
 处理步骤
 
-调整接口调用顺序，可参考自定义界面扫码的[业务流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-customscan#业务流程)。例如：先调用customScan.init接口，再调用customScan.start。
+调整接口调用顺序，可参考自定义界面扫码的[业务流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-customscan#业务流程)。例如：先调用[start](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-customscan-api#start)接口，再调用[getFlashLightStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-customscan-api#getflashlightstatus)。
 
-#### [h2]接口调用不被允许
+#### [h2]This interface cannot be used after the camera session is paused
+
+错误信息
+
+Internal error. This interface cannot be used after the camera session is paused.
+
+错误描述
+
+接口调用顺序错误，调用当前接口时先调用了stop接口。
+
+可能原因
+
+未按业务流程调用接口，如调用了stop接口后，又调用getFlashLightStatus。
+
+处理步骤
+
+调整接口调用顺序，可参考自定义界面扫码的[业务流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-customscan#业务流程)。例如：在调用[getFlashLightStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-customscan-api#getflashlightstatus)接口前，确保没有调用[stop](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-customscan-api#stop)。
+
+#### [h2]ScanOption is null, please call customScan.init first
+
+错误信息
+
+Internal error. ScanOption is null, please call customScan.init first.
+
+错误描述
+
+接口调用顺序错误，调用start接口时没有先调用init。
+
+可能原因
+
+未调用init接口，直接调用start。
+
+处理步骤
+
+调整接口调用顺序，可参考自定义界面扫码的[业务流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-customscan#业务流程)。先调用[init](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-customscan-api#init)接口，再调用[start](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-customscan-api#start)。
+
+#### [h2]The interface can't be used in promise interface
 
 错误信息
 
@@ -133,50 +220,21 @@ Internal error. The interface can't be used in promise interface.
 
 错误描述
 
-该接口不允许在customScan.start的Promise方式中调用。
+该接口不允许在start的Promise方式中调用。
 
 可能原因
 
-customScan.start的Promise方式中调用了customScan.rescan接口。
+start的Promise方式中调用了rescan接口。
 
 处理步骤
 
-使用customScan.start的Callback方式再调用customScan.rescan接口。
+使用[start](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-customscan-api#start-1)的Callback方式再调用[rescan](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-customscan-api#rescan)接口。
 
-#### [h2]分辨率不匹配
-
-错误信息
-
-Internal error. The width and height of viewControl do not match the width and height supported by the camera.
-
-错误描述
-
-传入的ViewControl宽高比例与相机分辨率不匹配。
-
-可能原因
-
-传入的ViewControl宽高比例与相机分辨率不匹配。
-
-处理步骤
-
-检查ViewControl的宽高比例。
-
-#### [h2]相机错误
+#### [h2]CustomScan stop session failed
 
 错误信息
 
-- Internal error. CustomScan stop session failed.
-- Internal error. Open camera flash failed.
-- Internal error. Close camera flash failed.
-- Internal error. Camera setZoom failed.
-- Internal error. Camera getZoom failed.
-- Internal error. Camera setFocusPoint failed.
-- Internal error. Reset focus mode failed.
-- Internal error. Camera config captureSession failed.
-- Internal error. Camera create cameraManager failed.
-- Internal error. Camera create camera session failed.
-- Internal error. Camera restart camera session failed.
-- Internal error. Camera create preview output failed.
+Internal error. CustomScan stop session failed.
 
 错误描述
 
@@ -184,22 +242,263 @@ Internal error. The width and height of viewControl do not match the width and h
 
 可能原因
 
-- 相机流暂停失败。
-- 开启闪光灯失败。
-- 关闭闪光灯失败。
-- 设置变焦比失败。
-- 获取变焦比失败。
-- 设置变焦点失败。
-- 重置对焦模式失败。
-- 相机配流失败。
-- 相机创建cameraManager失败。
-- 相机创建session失败。
-- 相机重启失败。
-- 相机创建预览流失败。
+扫码相机流暂停失败。
 
 处理步骤
 
-建议尝试重新创建业务。
+检查扫码相机流是否已启动，若未启动，尝试重新创建扫码相机流；检查扫码相机流是否已暂停。
+
+#### [h2]CustomScan release failed
+
+错误信息
+
+Internal error. CustomScan release failed.
+
+错误描述
+
+相机错误。
+
+可能原因
+
+扫码相机流释放失败。
+
+处理步骤
+
+检查扫码相机流是否已启动，若未启动，尝试重新创建扫码相机流；检查扫码相机流是否已释放。
+
+#### [h2]Open camera flash failed, flashlight is not available
+
+错误信息
+
+Internal error. Open camera flash failed, flashlight is not available.
+
+错误描述
+
+开启闪光灯失败。
+
+可能原因
+
+闪光灯不可用。
+
+处理步骤
+
+检查设备闪光灯是否正常。
+
+#### [h2]Close camera flash failed, flashlight is not available
+
+错误信息
+
+Internal error. Close camera flash failed, flashlight is not available.
+
+错误描述
+
+关闭闪光灯失败。
+
+可能原因
+
+闪光灯不可用。
+
+处理步骤
+
+检查设备闪光灯是否正常。
+
+#### [h2]Camera setZoom failed
+
+错误信息
+
+Internal error. Camera setZoom failed.
+
+错误描述
+
+设置变焦比失败。
+
+可能原因
+
+相机异常。
+
+处理步骤
+
+检查扫码相机流是否已启动，若未启动，尝试重新创建扫码相机流。
+
+#### [h2]Camera getZoom failed
+
+错误信息
+
+Internal error. Camera getZoom failed.
+
+错误描述
+
+获取变焦比失败。
+
+可能原因
+
+相机异常。
+
+处理步骤
+
+检查扫码相机流是否已启动，若未启动，尝试重新创建扫码相机流。
+
+#### [h2]Camera setFocusPoint failed
+
+错误信息
+
+Internal error. Camera setFocusPoint failed.
+
+错误描述
+
+设置相机焦点失败。
+
+可能原因
+
+相机异常。
+
+处理步骤
+
+检查扫码相机流是否已启动，若未启动，尝试重新创建扫码相机流。
+
+#### [h2]Reset focus mode failed
+
+错误信息
+
+Internal error. Reset focus mode failed.
+
+错误描述
+
+设置连续自动对焦模式失败。
+
+可能原因
+
+相机异常。
+
+处理步骤
+
+检查扫码相机流是否已启动，若未启动，尝试重新创建扫码相机流。
+
+#### [h2]Camera config captureSession failed
+
+错误信息
+
+Internal error. Camera config captureSession failed.
+
+错误描述
+
+相机异常。
+
+可能原因
+
+相机配流失败。
+
+处理步骤
+
+建议尝试释放扫码相机流，然后重新创建业务。
+
+#### [h2]Camera create cameraManager failed
+
+错误信息
+
+Internal error. Camera create cameraManager failed.
+
+错误描述
+
+相机异常。
+
+可能原因
+
+相机创建cameraManager失败。
+
+处理步骤
+
+建议尝试释放扫码相机流，然后重新创建业务。
+
+#### [h2]Camera create camera session failed
+
+错误信息
+
+Internal error. Camera create camera session failed.
+
+错误描述
+
+相机异常。
+
+可能原因
+
+相机创建session失败。
+
+处理步骤
+
+建议尝试释放扫码相机流，然后重新创建业务。
+
+#### [h2]Camera restart camera session failed
+
+错误信息
+
+Internal error. Camera restart camera session failed.
+
+错误描述
+
+相机异常。
+
+可能原因
+
+相机重启失败。
+
+处理步骤
+
+建议尝试释放扫码相机流，然后重新创建业务。
+
+#### [h2]Camera create preview output failed
+
+错误信息
+
+Internal error. Camera create preview output failed.
+
+错误描述
+
+相机异常。
+
+可能原因
+
+相机创建预览流失败。
+
+处理步骤
+
+建议尝试释放扫码相机流，然后重新创建业务。
+
+#### [h2]Camera get supported output capability failed
+
+错误信息
+
+Internal error. Camera get supported output capability failed.
+
+错误描述
+
+相机异常。
+
+可能原因
+
+查询指定相机支持的输出能力失败。
+
+处理步骤
+
+建议尝试释放扫码相机流，然后重新创建业务。
+
+#### [h2]Capability not supported. Failed to call the API due to limited device capabilities
+
+错误信息
+
+Internal error. Capability not supported. Failed to call the API due to limited device capabilities.
+
+错误描述
+
+该设备不支持此API，因此无法正常调用。
+
+可能原因
+
+可能出现该错误码的场景为：该设备已支持该API所属的Syscap，但是并不支持此API。
+
+处理步骤
+
+应避免在该设备上使用此API，或在代码中通过判断来规避异常场景下应用在不同设备上运行所产生的影响。
 
 #### 1000500002 用户取消扫码
 
@@ -217,4 +516,4 @@ The user canceled the barcode scanning.
 
 处理步骤
 
-使用[scanBarcode.startScanForResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-scanbarcode-api#scanbarcodestartscanforresult)会返回此错误码，请根据使用场景处理用户取消默认界面扫码后的业务流程。
+使用[startScanForResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-scanbarcode-api#startscanforresult)会返回此错误码，请根据使用场景处理用户取消默认界面扫码后的业务流程。

@@ -2,8 +2,8 @@
 title: "日历服务错误码"
 upstream_id: "harmonyos-references/errorcode-calendarmanager"
 catalog: "harmonyos-references"
-content_hash: "0f21e493abf9"
-synced_at: "2026-07-09T01:01:15.572297"
+content_hash: "427c57220093"
+synced_at: "2026-07-28T16:52:34.730431"
 ---
 
 # 日历服务错误码
@@ -56,7 +56,7 @@ The specified account was not found.
 
 错误信息
 
-Internal program error.
+Internal program errors.
 
 错误描述
 

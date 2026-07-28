@@ -2,8 +2,8 @@
 title: "Http_RequestOptions"
 upstream_id: "harmonyos-references/capi-netstack-http-requestoptions"
 catalog: "harmonyos-references"
-content_hash: "04cee1db7f9a"
-synced_at: "2026-07-09T00:59:30.506073"
+content_hash: "42dda11cd587"
+synced_at: "2026-07-28T16:50:46.515923"
 ---
 
 # Http_RequestOptions
@@ -31,8 +31,8 @@ typedef struct Http_RequestOptions {...} Http_RequestOptions
 | const char *method | HTTP请求方法。 |
 | uint32_t priority | HTTP请求优先级。 |
 | [Http_Headers](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-netstack-http-headers) *headers | HTTP请求头，指向Http_Headers的指针，参考[Http_Headers](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-netstack-http-headers)。 |
-| uint32_t readTimeout | 读取超时时间。 |
-| uint32_t connectTimeout | 连接超时时间。 |
+| uint32_t readTimeout | 读取超时时间。单位：ms。 |
+| uint32_t connectTimeout | 连接超时时间。单位：ms。 |
 | [Http_HttpProtocol](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-net-http-type-h#http_httpprotocol) httpProtocol | 使用的协议，参考[Http_HttpProtocol](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-net-http-type-h#http_httpprotocol)。 |
 | [Http_Proxy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-netstack-http-proxy) *httpProxy | 代理配置信息，表示是否使用代理，默认不使用代理，参考[Http_Proxy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-netstack-http-proxy)。 |
 | const char *caPath | 证书路径，如果设置了此参数，系统将使用用户指定路径的CA证书（开发者需保证该路径下CA证书的可访问性），否则将使用系统预设CA证书。 |

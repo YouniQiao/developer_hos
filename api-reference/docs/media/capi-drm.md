@@ -1,12 +1,12 @@
 ---
-title: "Drm"
+title: "DRM"
 upstream_id: "harmonyos-references/capi-drm"
 catalog: "harmonyos-references"
-content_hash: "5fb4333a5542"
-synced_at: "2026-07-09T01:00:27.827611"
+content_hash: "220a5482f98f"
+synced_at: "2026-07-28T16:51:45.859034"
 ---
 
-# Drm
+# DRM
 
 #### 概述
 
@@ -25,5 +25,5 @@ synced_at: "2026-07-09T01:00:27.827611"
 | --- | --- |
 | [native_drm_common.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-drm-common-h) | 定义DRM数据类型。 |
 | [native_drm_err.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-drm-err-h) | 定义DRM错误码。 |
-| [native_mediakeysession.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-mediakeysession-h) | 定义Drm MediaKeySession API。提供以下功能： 生成媒体密钥请求、处理媒体密钥响应、事件监听、获取内容保护级别、检查媒体密钥状态、删除媒体密钥等。 |
-| [native_mediakeysystem.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-mediakeysystem-h) | 定义Drm MediaKeySystem API。提供以下功能： 查询是否支持特定的drm、创建媒体密钥会话、获取和设置配置、获取统计信息、获取内容保护级别、生成提供请求、处理提供响应、事件监听、获取内容防护级别、管理离线媒体密钥等。 |
+| [native_mediakeysession.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-mediakeysession-h) | 定义DRM MediaKeySession API。提供以下功能： 生成媒体密钥请求、处理媒体密钥响应、事件监听、获取内容保护级别、检查媒体密钥状态、删除媒体密钥等。 |
+| [native_mediakeysystem.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-mediakeysystem-h) | 定义DRM MediaKeySystem API。提供以下功能： 查询是否支持特定的DRM、创建媒体密钥会话、获取和设置配置、获取统计信息、获取内容保护级别、生成提供请求、处理提供响应、事件监听、管理离线媒体密钥等。 |

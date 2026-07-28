@@ -2,8 +2,8 @@
 title: "NetStack_CertBlob"
 upstream_id: "harmonyos-references/capi-netstack-netstack-certblob"
 catalog: "harmonyos-references"
-content_hash: "079e397fb6b5"
-synced_at: "2026-07-09T00:59:29.804973"
+content_hash: "b771536e0d7a"
+synced_at: "2026-07-28T16:50:45.537939"
 ---
 
 # NetStack_CertBlob
@@ -29,5 +29,5 @@ struct NetStack_CertBlob {...}
 | 名称 | 描述 |
 | --- | --- |
 | enum [NetStack_CertType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-net-ssl-c-type-h#netstack_certtype) type | 证书类型。 |
-| uint32_t size | 证书内容长度。 |
+| uint32_t size | 证书内容长度。单位：Byte。 |
 | uint8_t *data | 证书内容。 |

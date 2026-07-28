@@ -2,8 +2,8 @@
 title: "imageSuperResolution（图像超分）"
 upstream_id: "harmonyos-references/core-vision-image-super-resolution-api"
 catalog: "harmonyos-references"
-content_hash: "a62d4cb873f4"
-synced_at: "2026-07-09T01:01:42.392663"
+content_hash: "835ce049513b"
+synced_at: "2026-07-28T16:53:11.950343"
 ---
 
 # imageSuperResolution（图像超分）
@@ -22,7 +22,7 @@ import { imageSuperResolution } from '@kit.CoreVisionKit';
 
 图像超分处理响应类。
 
-继承自[Response](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/core-vision-vision-base-api#response)。
+继承自[visionBase.Response](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/core-vision-vision-base-api#response)。
 
 系统能力： SystemCapability.AI.Vision.VisionBase
 
@@ -32,13 +32,13 @@ import { imageSuperResolution } from '@kit.CoreVisionKit';
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| pixelMap | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 否 | 否 | 超分处理后的图片。 |
+| pixelMap | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 否 | 否 | 经过超分后的图片,在提高图像质量的同时，像素也同步放大四倍。 |
 
 #### ImageSRAnalyzer
 
 图像超分分析器类。
 
-继承自[Analyzer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/core-vision-vision-base-api#analyzer)。
+继承自[visionBase.Analyzer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/core-vision-vision-base-api#analyzer)。
 
 系统能力： SystemCapability.AI.Vision.VisionBase
 
@@ -84,7 +84,8 @@ async function createImageSRAnalyzer() {
     hilog.info(0x0000, 'ImageSR', 'success to created ImageSRAnalyzer');
     return analyzer;
   } catch (error) {
-    hilog.error(0x0000, 'ImageSR', 'Failed to create ImageSRAnalyzer: %{public}s', JSON.stringify(error));
+    const err: BusinessError = error as BusinessError;
+    hilog.error(0x0000, 'ImageSR', `Failed to create ImageSRAnalyzer code: ${err.code}, message: ${err.message}`);
     return null;
   }
 }
@@ -106,7 +107,7 @@ process(request: visionBase.Request): Promise<ISPResponse>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| request | [visionBase.Request](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/core-vision-vision-base-api#request) | 是 | 图像超分请求参数。 |
+| request | [visionBase.Request](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/core-vision-vision-base-api#request) | 是 | 图像实例，图片超分接口仅支持传入一张图片，不支持传入多张图片，详细内容请参考[约束与限制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-introduction#约束与限制)。 |
 
 返回值：
 
@@ -151,7 +152,6 @@ async function processImageSuperResolution() {
   let file = await fileIo.open(uri, fileIo.OpenMode.READ_ONLY);
   imageSource = image.createImageSource(file.fd);
   inputImage = await imageSource.createPixelMap();
-  hilog.info(0x0000, 'ImageSR', 'inputImage:', inputImage);
   if (!inputImage) {
     return;
   }
@@ -173,9 +173,11 @@ async function processImageSuperResolution() {
     };
     request.inputData = imageData
     const response = await analyzer.process(request);
-    hilog.info(0x0000, 'ImageSR', 'Super resolution completed, output pixelMap: %{public}s', response.pixelMap);
+    hilog.info(0x0000, 'ImageSR',
+      `Super resolution completed size:${JSON.stringify(response.pixelMap.getImageInfoSync().size)}`);
   } catch (error) {
-    hilog.error(0x0000, 'ImageSR', 'Failed to process super resolution: %{public}s', JSON.stringify(error));
+    const err: BusinessError = error as BusinessError;
+    hilog.error(0x0000, 'ImageSR', `Failed to process super resolution code: ${err.code}, message: ${err.message}`);
   }
 
   // 释放资源
@@ -192,9 +194,8 @@ async function processImageSuperResolution() {
 @Entry
 @Component
 struct Page {
-
   build() {
-    Column(){
+    Column() {
       Button('processImageSuperResolution').onClick(() => {
         // 调用函数
         void processImageSuperResolution();
@@ -252,9 +253,8 @@ async function destroyImageSRAnalyzer() {
 @Entry
 @Component
 struct Page {
-
   build() {
-    Column(){
+    Column() {
       Button('destroyImageSRAnalyzer').onClick(() => {
         // 调用函数
         void destroyImageSRAnalyzer();

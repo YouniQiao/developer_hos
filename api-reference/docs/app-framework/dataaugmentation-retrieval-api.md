@@ -2,8 +2,8 @@
 title: "retrieval（智慧化数据平台）"
 upstream_id: "harmonyos-references/dataaugmentation-retrieval-api"
 catalog: "harmonyos-references"
-content_hash: "30d0fa194dc8"
-synced_at: "2026-07-09T00:59:02.874525"
+content_hash: "c4f29241e9ba"
+synced_at: "2026-07-28T16:50:06.085519"
 ---
 
 # retrieval（智慧化数据平台）
@@ -39,7 +39,7 @@ getRetriever(config: RetrievalConfig): Promise<Retriever>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| config | [RetrievalConfig](#retrievalconfig) | 是 | 检索器的配置信息。 |
+| config | [RetrievalConfig](#retrievalconfig) | 是 | 检索器的配置信息。该参数用于配置检索器的行为，包括不同检索回路的配置信息数组。其中，channelConfigs字段为必填项，表示不同检索回路的配置信息数组。 |
 
 返回值：
 
@@ -325,7 +325,7 @@ async retrieve() {
       recallName:"invIdxRecall"
     }
 
-    // 这里 floatArray 时输入的 query 的表征向量，根据实际情况需要修改
+    // 这里 floatArray 是输入的query的表征向量，根据实际情况需要修改。可通过向量化接口生成，也可由开发者自行提供
     let floatArray = new Float32Array([0.006954, -0.079041, 0.046173, 0.157959, -0.017212, 0.037018, -0.072083, -0.028488, -0.099854, 0.044037, -0.008911, -0.063049, 0.035950, -0.105835, 0.057739, 0.060364, -0.062042, 0.044159, 0.143188, 0.123901, -0.069641, -0.061920, -0.086731, -0.092468, 0.092957, -0.027649, -0.005497, -0.039276, 0.017502, -0.046570, -0.115906, 0.081177, -0.153931, -0.040588, 0.123474, -0.099060, 0.062042, 0.026352, -0.041382, -0.099548, 0.071167, -0.120850, 0.082642, 0.026398, -0.035614, -0.008545, -0.076660, -0.031067, 0.192017, -0.052582, 0.005310, 0.052734, 0.199463, 0.075195, -0.070740, -0.035950, 0.073120, 0.089172, 0.075989, 0.003582, 0.050201, -0.012787, 0.016647, -0.053619, 0.001906, -0.060181, -0.068359, -0.114502, -0.045013, 0.004547, -0.004673, -0.148071, 0.126343, 0.019394, -0.063110, -0.055908, 0.071228, 0.002369, 0.041412, 0.126709, -0.053467, 0.127808, 0.055420, 0.206177, 0.002169, -0.001452, 0.095520, -0.042511, 0.099243, -0.164185, 0.093384, -0.014618, -0.129150, -0.238770, -0.085327, 0.051300, -0.020004, 0.010063, -0.084351, -0.003567, 0.064941, -0.205322, -0.158936, -0.074768, 0.104370, 0.197021, -0.080688, -0.066772, -0.036346, 0.034912, -0.019760, 0.110474, 0.128662, 0.094727, 0.024948, -0.033356, -0.081848, 0.054474, -0.065857, -0.156494, 0.002527, 0.097595, -0.027420, 0.039185, 0.063965, 0.220093, 0.029556, -0.115417]);
 
     let vectorQuery:retrieval.VectorQuery = {
@@ -481,7 +481,7 @@ async retrieve() {
 | --- | --- | --- | --- | --- |
 | recallConditions | Array | 否 | 否 | 召回的条件，数组中的每个元素对应一个召回操作。 |
 | rerankMethod | [RerankMethod](#rerankmethod) | 否 | 是 | 重排方法。其参数rerankType默认值为RRF算法，参数parameters默认值遵循[RecallCondition](#recallcondition)中相应检索回路的参数。 |
-| resultCount | number | 否 | 是 | 重排后允许返回结果的最大数量。默认值为500。必须为正整数。 |
+| resultCount | number | 否 | 是 | 重排后允许返回结果的最大数量。默认值为500。必须为大于等于1的正整数。 |
 | explanation | [ExplanationConfig](#explanationconfig) | 否 | 是 | 检索解释 |
 
 #### ExplanationConfig
@@ -740,7 +740,7 @@ type InvertedIndexStrategy = Bm25Strategy | ExactMatchingStrategy | ProximityStr
 | --- | --- | --- | --- | --- |
 | column | [ColumnName](#columnname) | 否 | 否 | 待匹配向量字段名。必须为指定的向量数据库中存在的向量类型字段。 |
 | value | Float32Array | 否 | 是 | 向量列的向量值。 如果未定义value字段，系统将尝试将原始query生成向量。目前在PC上支持自动生成。 从HarmonyOS 6.0.0 Beta2版本开始，此参数由“必填”变更为“可选”。 |
-| similarityThreshold | number | 否 | 是 | 向量阈值，用于过滤不相似向量的阈值。默认值为1，取值范围最小值为0，最大值为[VectorRerankParameter](#vectorrerankparameter)中有效thresholds的最小值。 |
+| similarityThreshold | number | 否 | 是 | 向量阈值，用于过滤不相似向量的阈值。默认值为1，取值范围为[0, [VectorRerankParameter](#vectorrerankparameter)中有效thresholds的最小值]，包含边界值。 |
 
 #### RerankMethod
 
@@ -851,8 +851,8 @@ type RerankParameter = InvertedIndexRerankParameter| VectorRerankParameter
 | columns | Record | 否 | 否 | 召回列及其内容。 |
 | score | number | 否 | 否 | 检索重排后的最终得分，其反映了重排记录与查询词之间的相似度。score取值大于等于0。 |
 | recallScores | Record> | 否 | 否 | 每路召回的得分，其反映了每路召回对该结果的相关性评估。key为该路RecallCondition的scoreKey； - 如果这里没有体现RetrievalCondition中的某一路RecallCondition的scoreKey，则代表该路召回认为该结果相关性过低不予召回。 |
-| features | Record | 否 | 否 | 不同倒排策略的得分。目前支持的倒排策略及得分为： - "exact_phase"：文档字段精确命中查询语句的得分。 - "out_of_order_phase"：文档字段命中近似乱序匹配策略的得分。 - "token_bm25"：文档字段bm25策略得分。 - "core_count"：文档单个匹配字段内核心词总数。 |
-| similarityLevel | [SimilarityLevel](#similaritylevel) | 否 | 否 | 根据语义向量距离以及文本匹配程度，对检索结果按照相关性分档，方便对结果进行进一步筛选并且过滤。 |
+| features | Record | 否 | 否 | 不同倒排策略的得分，用于评估检索结果在不同策略下的表现。目前支持的倒排策略及得分为： - "exact_phase"：文档字段精确命中查询语句的得分。 - "out_of_order_phase"：文档字段命中近似乱序匹配策略的得分。 - "token_bm25"：文档字段bm25策略得分。 - "core_count"：文档单个匹配字段内核心词总数。 |
+| similarityLevel | [SimilarityLevel](#similaritylevel) | 否 | 否 | 根据语义向量距离以及文本匹配程度，对检索结果按照相关性分档，方便对结果进行进一步筛选和过滤。取值包括NONE（保留值）、LOW（语义相似）、MEDIUM（语义中等）、HIGH（语义差异大）。 |
 
 #### RecallScore
 
@@ -882,6 +882,6 @@ type RerankParameter = InvertedIndexRerankParameter| VectorRerankParameter
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
 | NONE | 0 | 保留值，暂无特定含义。 |
-| LOW | 1 | 结果和Query的语义向量距离小，表示语义更相似。 |
-| MEDIUM | 2 | 结果和Query的语义向量距离中等，表示语义相似性中等。 |
-| HIGH | 3 | 结果和Query的语义向量距离大，表示语义差异较大，相关性低。 |
+| LOW | 1 | 结果和Query的语义向量距离小，表示语义更相似。该等级表示检索结果与查询词具有高度语义相关性。 |
+| MEDIUM | 2 | 结果和Query的语义向量距离中等，表示语义相似性中等。该等级表示检索结果与查询词具有中等语义相关性。 |
+| HIGH | 3 | 结果和Query的语义向量距离大，表示语义差异较大，相关性低。该等级表示检索结果与查询词具有较低语义相关性。 |

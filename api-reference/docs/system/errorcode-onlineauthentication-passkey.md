@@ -1,12 +1,10 @@
 ---
-
 title: "通行密钥"
 upstream_id: "harmonyos-references/errorcode-onlineauthentication-passkey"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T00:59:17.957312"
-content_hash: "1184f991d43b"
+content_hash: "d6a14cd57d6b"
+synced_at: "2026-07-28T16:50:30.544295"
 ---
-
 
 # 通行密钥
 
@@ -227,6 +225,24 @@ The number of credentials has reached the maximum limit.
 处理步骤
 
 提示用户去密码保险箱中删除多余的通行密钥。系统最多支持存储500个通行密钥，每个应用最多存储20个通行密钥。
+
+#### 1021300013 用户认证失败切换其他认证方式
+
+错误信息
+
+Switched to the custom authentication process.
+
+错误描述
+
+当前的认证操作被用户从控件取消，返回这个错误码，标识使用应用自定义认证。例如用户点击使用自定义认证，返回到应用自定义认证流程。
+
+可能原因
+
+用户认证失败后取消认证。
+
+处理步骤
+
+重新调用认证接口，发起认证。
 
 #### 1021310001 无效CTAP命令
 

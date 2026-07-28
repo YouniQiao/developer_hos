@@ -2,8 +2,8 @@
 title: "OpenGTX_FrameRenderInfo"
 upstream_id: "harmonyos-references/_open_g_t_x___frame_render_info"
 catalog: "harmonyos-references"
-content_hash: "15a5f0b3b1dc"
-synced_at: "2026-07-09T01:01:07.988665"
+content_hash: "8ccb9d5a175e"
+synced_at: "2026-07-28T16:52:25.000601"
 ---
 
 # OpenGTX_FrameRenderInfo
@@ -24,8 +24,8 @@ synced_at: "2026-07-09T01:01:07.988665"
 
 | 名称 | 描述 |
 | --- | --- |
-| [OpenGTX_Vector3](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_open_g_t_x___vector3) [mainCameraPosition](#maincameraposition) | 主摄像头的位置。x、y、z的取值范围均为[-360, 360]，超出取值范围则该值不生效，并且返回 [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败)错误码。单位：deg。 |
-| [OpenGTX_Vector3](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_open_g_t_x___vector3) [mainCameraRotate](#maincamerarotate) | 主摄像头的转动，包括偏航、俯仰、侧滚。x、y、z的取值范围均为[-360,360]，超出取值范围则该值不生效，并且返回[401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败)错误码。单位：deg。 |
+| [OpenGTX_Vector3](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_open_g_t_x___vector3) [mainCameraPosition](#maincameraposition) | 主摄像头的位置。x、y、z的取值范围均为[-360, 360]，超出取值范围则该值不生效，并且返回[401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败)错误码。单位：deg。 |
+| [OpenGTX_Vector3](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_open_g_t_x___vector3) [mainCameraRotate](#maincamerarotate) | 主摄像头的转动，包括偏航、俯仰、侧滚。x、y、z的取值范围均为[-360, 360]，超出取值范围则该值不生效，并且返回[401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败)错误码。单位：deg。 |
 
 #### 结构体成员变量说明
 
@@ -36,7 +36,7 @@ OpenGTX_Vector3 OpenGTX_FrameRenderInfo::mainCameraPosition
 ```
  描述
 
-主摄像头的位置。
+主摄像头的位置。x、y、z的取值范围均为[-360, 360]，超出取值范围则该值不生效，并且返回[401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败)错误码。单位：deg。
 
 #### [h2]mainCameraRotate
 
@@ -45,4 +45,4 @@ OpenGTX_Vector3 OpenGTX_FrameRenderInfo::mainCameraRotate
 ```
  描述
 
-主摄像头的转动，包括偏航、俯仰、侧滚。x、y、z的取值范围均为[-360,360]，超出取值范围则该值不生效，并且返回[401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败)错误码。单位：deg。
+主摄像头的转动，包括偏航、俯仰、侧滚。x、y、z的取值范围均为[-360, 360]，超出取值范围则该值不生效，并且返回[401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败)错误码。单位：deg。

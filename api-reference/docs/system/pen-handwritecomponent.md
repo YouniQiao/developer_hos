@@ -2,8 +2,8 @@
 title: "HandwriteComponent（手写套件组件）"
 upstream_id: "harmonyos-references/pen-handwritecomponent"
 catalog: "harmonyos-references"
-content_hash: "30ef09393774"
-synced_at: "2026-07-09T00:59:58.945931"
+content_hash: "b87b80ce80e8"
+synced_at: "2026-07-28T16:51:17.722916"
 ---
 
 # HandwriteComponent（手写套件组件）
@@ -17,7 +17,7 @@ synced_at: "2026-07-09T00:59:58.945931"
 #### 导入模块
 
 ```
-import { HandwriteController,HandwriteComponent, PenHspInfo, PenType } from '@kit.Penkit';
+import { HandwriteController,HandwriteComponent, PenHspInfo, PenType, HiddenToolType, HiddenConfig } from '@kit.Penkit';
 ```
 
 #### HandwriteComponent
@@ -29,8 +29,6 @@ import { HandwriteController,HandwriteComponent, PenHspInfo, PenType } from '@ki
 系统能力： SystemCapability.Stylus.Handwrite
 
 起始版本： 5.0.0(12)
-
-参数：
 
 | 名称 | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
@@ -44,8 +42,9 @@ import { HandwriteController,HandwriteComponent, PenHspInfo, PenType } from '@ki
 | maxCanvasHeight | number | 否 | 是 | 长画布最大高度。单位vp。取值范围：大于0。默认为无限大。 **起始版本**：6.1.0(23) |
 | scaleDisabled | boolean | 否 | 是 | 是否禁用画布缩放。true代表禁用缩放，false代表不禁用缩放。默认为false。设置scaleDisabled为true时，用户将无法通过手势缩放画布，适用于固定比例展示的场景。 **起始版本**：6.1.0(23) |
 | onDidScroll | [DidScrollCallback](#didscrollcallback) | 否 | 是 | 画布滚动时的回调。当需要监听画布滚动位置时，可使用此回调。 **起始版本**：6.1.0(23) |
+| hiddenTools | [HiddenConfig](#hiddenconfig) | 否 | 是 | 自定义手写工具（隐藏不需要的手写工具）。 **起始版本**：26.0.0 |
 
-#### build
+#### [h2]build
 
 build(): void
 
@@ -139,10 +138,46 @@ type DidScrollCallback = (yOffset: number) => void
 
 参数：
 
-| 参数名 | 类型 | 只读 | 可选 | 说明 |
+| 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | penType | [PenType](#pentype) | 否 | 否 | 笔刷类型。 5.1.0(18)版本仅支持通过number类型传参。 |
 | penWidth | number | 否 | 否 | 笔宽。各笔刷默认笔宽和取值范围如下： - 钢笔 4(2-10) - 圆珠笔 4(2-10) - 铅笔 8(4-20) - 马克笔 32(16-80) - 荧光笔 32(16-80) - 马赛克笔 40(8-40) - 橡皮擦 50(10-120) - 激光笔 20(8-48) |
+
+#### HiddenConfig
+
+隐藏工具栏上的特定工具。适用于为应用程序构建手写工具栏的场景。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Stylus.Handwrite
+
+起始版本： 26.0.0
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| hiddenOptionalTools | [HiddenToolType](#hiddentooltype)[] | 否 | 是 | 可隐藏的工具类集合。默认为[]。 |
+| hiddenArcBox | boolean | 否 | 是 | 设置是否隐藏手写波轮菜单。true为隐藏，false为不隐藏，默认为false。 |
+
+#### HiddenToolType
+
+可隐藏的手写工具枚举类型。适用于为应用程序构建手写工具栏的场景。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Stylus.Handwrite
+
+起始版本： 26.0.0
+
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| PEN | 1 | 钢笔。 |
+| PENCIL | 3 | 铅笔。 |
+| MARKER | 4 | 马克笔。 |
+| HIGHLIGHTER_BRUSH | 5 | 荧光笔。 |
+| MOSAIC | 7 | 马赛克笔。 |
+| LASSO | 1048576 | 套索。 |
+| LASER | 3145728 | 激光笔。 |
+| GRAPHICS_TOOLS | 4194304 | 图形工具。 |
 
 示例:
 
@@ -151,7 +186,9 @@ import {
   HandwriteController,
   HandwriteComponent,
   PenType,
-  PenHspInfo
+  PenHspInfo,
+  HiddenToolType,
+  HiddenConfig
 } from '@kit.Penkit';
 
 @Entry
@@ -186,6 +223,10 @@ struct HandWriteDemoComp {
           heightRatio: 1, // 可选属性，自定义画布大小，高度占比（0-1）。
           maxCanvasHeight: 5000, // 可选属性，自定义画布最大高度。
           scaleDisabled: false, // 可选属性，是否禁止缩放。
+          hiddenTools: {
+            hiddenOptionalTools: [HiddenToolType.PENCIL], // 可选属性，设置需要隐藏的工具类集合。
+            hiddenArcBox: false  // 可选属性，设置是否隐藏波轮菜单。
+          } as HiddenConfig, // 可选属性，隐藏不需要的手写工具。
           onInit: () => {
             // 画布初始化完成时的回调。此时可以调用接口加载和显示笔记内容。
             this.controller?.load(this.initPath);

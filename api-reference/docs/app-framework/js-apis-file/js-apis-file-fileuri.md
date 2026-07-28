@@ -2,11 +2,13 @@
 title: "@ohos.file.fileuri (文件URI)"
 upstream_id: "harmonyos-references/js-apis-file-fileuri"
 catalog: "harmonyos-references"
-content_hash: "2231012ff3d5"
-synced_at: "2026-07-09T00:58:59.590984"
+content_hash: "04e5717aae9d"
+synced_at: "2026-07-28T16:50:01.868566"
 ---
 
 # @ohos.file.fileuri (文件URI)
+
+fileuri继承自[uri](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-uri)。
 
 该模块提供通过PATH获取文件统一资源标识符（Uniform Resource Identifier，URI），后续可通过使用[@ohos.file.fs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs)进行相关open、read、write等操作，实现文件分享。
 
@@ -76,28 +78,6 @@ let path = pathDir + '/test';
 let uri = fileUri.getUriFromPath(path);  // file://<packageName>/data/storage/el2/base/haps/entry/files/test
 let fileUriObject = new fileUri.FileUri(uri);
 console.info("The name of FileUri is " + fileUriObject.name);
-```
-
-#### [h2]toString10+
-
-toString(): string
-
-系统能力：SystemCapability.FileManagement.AppFileService
-
-返回字符串类型URI。
-
-返回值：
-
-| 类型 | 说明 |
-| --- | --- |
-| string | 返回字符串类型URI。 |
-
-示例：
-
-```
-let path = pathDir + '/test';
-let fileUriObject = new fileUri.FileUri(path);
-console.info("The uri of FileUri is " + fileUriObject.toString());
 ```
 
 #### [h2]getFullDirectoryUri11+

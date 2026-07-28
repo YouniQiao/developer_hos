@@ -2,8 +2,8 @@
 title: "net_http_type.h"
 upstream_id: "harmonyos-references/capi-net-http-type-h"
 catalog: "harmonyos-references"
-content_hash: "5576478ca942"
-synced_at: "2026-07-09T00:59:29.194448"
+content_hash: "6334f72c9b13"
+synced_at: "2026-07-28T16:50:44.715830"
 ---
 
 # net_http_type.h
@@ -283,7 +283,7 @@ typedef void (*Http_OnDataReceiveCallback)(const char *data, size_t length)
 | 参数项 | 描述 |
 | --- | --- |
 | const char *data | 响应体。 |
-| size_t length | 响应体的长度。 |
+| size_t length | 响应体的长度。单位：Byte。 |
 
 #### [h2]Http_OnProgressCallback()
 
@@ -300,8 +300,8 @@ typedef void (*Http_OnProgressCallback)(uint64_t totalSize, uint64_t transferred
 
 | 参数项 | 描述 |
 | --- | --- |
-| uint64_t totalSize | 数据总大小。 |
-| uint64_t transferredSize | 已传输的数据大小。 |
+| uint64_t totalSize | 数据总大小。单位：Byte。 |
+| uint64_t transferredSize | 已传输的数据大小。单位：Byte。 |
 
 #### [h2]Http_OnHeaderReceiveCallback()
 

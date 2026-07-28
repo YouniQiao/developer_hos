@@ -2,8 +2,8 @@
 title: "native_avcapability.h"
 upstream_id: "harmonyos-references/capi-native-avcapability-h"
 catalog: "harmonyos-references"
-content_hash: "7480c49a52fb"
-synced_at: "2026-07-09T01:00:14.383120"
+content_hash: "b92528ea1fcb"
+synced_at: "2026-07-28T16:51:33.390833"
 ---
 
 # native_avcapability.h
@@ -48,7 +48,7 @@ synced_at: "2026-07-09T01:00:14.383120"
 | [OH_AVCapability **OH_AVCodec_GetCapabilityList(OH_AVCodecType codecType, uint32_t *count)](#oh_avcodec_getcapabilitylist) | 获取指定编解码器类型的能力列表。此功能会根据提供的编解码器类型检索出系统支持的所有匹配的编解码器能力。 |
 | [bool OH_AVCapability_IsHardware(OH_AVCapability *capability)](#oh_avcapability_ishardware) | 检查能力实例是否描述了硬件编解码器。 |
 | [bool OH_AVCapability_IsSecure(OH_AVCapability *capability)](#oh_avcapability_issecure) | 检查能力实例是否描述了一个DRM解码器。 |
-| [const char *OH_AVCapability_GetName(OH_AVCapability *capability)](#oh_avcapability_getname) | 获取编解码器名称。 |
+| [const char *OH_AVCapability_GetName(OH_AVCapability *capability)](#oh_avcapability_getname) | 获取对应的编解码器名称。 |
 | [const char *OH_AVCapability_GetMimeType(OH_AVCapability *capability)](#oh_avcapability_getmimetype) | 获取编解码器的MIME类型。 |
 | [bool OH_AVCapability_CheckMimeType(OH_AVCapability *capability, const char *mimeType)](#oh_avcapability_checkmimetype) | 检查编解码器的MIME类型是否与指定的MIME类型匹配。 |
 | [int32_t OH_AVCapability_GetMaxSupportedInstances(OH_AVCapability *capability)](#oh_avcapability_getmaxsupportedinstances) | 获取编解码器支持的最大实例数。 |
@@ -134,6 +134,7 @@ enum OH_AVCapabilityFeature
 | VIDEO_ENCODER_LONG_TERM_REFERENCE = 1 | 编解码器支持长期参考帧特性，只用于视频编码场景。 |
 | VIDEO_LOW_LATENCY = 2 | 编解码器支持低时延特性，只用于视频解码场景。 |
 | VIDEO_ENCODER_B_FRAME = 7 | 编解码器支持B帧特性，只用于视频编码场景。 **起始版本：** 20 |
+| VIDEO_DECODER_OUTPUT_IN_DECODING_ORDER = 8 | 解码器支持按解码顺序输出帧特性，只用于视频解码场景。 **起始版本：** 26.0.0 |
 | VIDEO_ENCODER_PREPROC_DOWNSAMPLING = 9 | 编码器支持视频编码前处理降采样特性，该能力仅适用于视频编码器。 仅当编码器通过[OH_VideoEncoder_CreatePrimaryWithPreproc](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avcodec-videoencoder-h#oh_videoencoder_createprimarywithpreproc)或[OH_VideoEncoder_CreateSecondaryFromPrimary](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avcodec-videoencoder-h#oh_videoencoder_createsecondaryfromprimary)接口创建时，方可启用该能力。 **起始版本：** 26.0.0 |
 | VIDEO_ENCODER_PREPROC_CROP = 10 | 编码器支持视频编码前处理裁剪特性，该特性仅适用于视频编码器。 仅当编码器通过[OH_VideoEncoder_CreatePrimaryWithPreproc](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avcodec-videoencoder-h#oh_videoencoder_createprimarywithpreproc)或[OH_VideoEncoder_CreateSecondaryFromPrimary](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avcodec-videoencoder-h#oh_videoencoder_createsecondaryfromprimary)接口创建时，方可启用该能力。 **起始版本：** 26.0.0 |
 
@@ -273,7 +274,7 @@ const char *OH_AVCapability_GetName(OH_AVCapability *capability)
 ```
  描述
 
-获取编解码器名称。
+获取对应的编解码器名称。
 
 系统能力： SystemCapability.Multimedia.Media.CodecBase
 
@@ -832,7 +833,7 @@ OH_AVErrCode OH_AVCapability_GetVideoSupportedPixelFormats(OH_AVCapability *capa
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_AVCapability](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avcapability-oh-avcapability) *capability | 视频编解码能力指针。如果给的是音频编解码器能力指针，会导致未定义行为。 |
-| const int32_t **pixelFormats | 输出参数。指向视频像素格式数组的指针。 |
+| const int32_t **pixelFormats | 输出参数。指向视频像素格式数组的指针。参考[OH_AVPixelFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avformat-h#oh_avpixelformat)。 |
 | uint32_t *pixelFormatNum | 输出参数。像素格式数组的元素数目。 |
 
 返回：
@@ -886,7 +887,7 @@ OH_AVErrCode OH_AVCapability_GetSupportedProfiles(OH_AVCapability *capability, c
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_AVCapability](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avcapability-oh-avcapability) *capability | 编解码能力指针。 |
-| const int32_t **profiles | 输出参数。指向档次数组的指针。 |
+| const int32_t **profiles | 输出参数。指向档次数组的指针。例如，H.264档次参考[OH_AVCProfile](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avcodec-base-h#oh_avcprofile)。 |
 | uint32_t *profileNum | 输出参数。档次数组的元素数目。 |
 
 返回：
@@ -914,7 +915,7 @@ OH_AVErrCode OH_AVCapability_GetSupportedLevelsForProfile(OH_AVCapability *capab
 | --- | --- |
 | [OH_AVCapability](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avcapability-oh-avcapability) *capability | 编解码能力指针。 |
 | int32_t profile | 编解码器档次。 |
-| const int32_t **levels | 输出参数。指向级别数组的指针。 |
+| const int32_t **levels | 输出参数。指向级别数组的指针。例如，H.264级别参考[OH_AVCLevel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avcodec-base-h#oh_avclevel)。 |
 | uint32_t *levelNum | 输出参数。级别数组的元素数目。 |
 
 返回：

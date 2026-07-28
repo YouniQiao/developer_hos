@@ -2,8 +2,8 @@
 title: "@ohos.arkui.drawableDescriptor (DrawableDescriptor)"
 upstream_id: "harmonyos-references/js-apis-arkui-drawabledescriptor"
 catalog: "harmonyos-references"
-content_hash: "968972a59579"
-synced_at: "2026-07-09T17:23:18.768326"
+content_hash: "c45ecfa38a61"
+synced_at: "2026-07-28T16:40:58.930365"
 ---
 
 # @ohos.arkui.drawableDescriptor (DrawableDescriptor)
@@ -23,7 +23,9 @@ import {
   LayeredDrawableDescriptor,
   AnimatedDrawableDescriptor,
   AnimationOptions,
-  AnimationController
+  AnimationController,
+  PictureDrawableDescriptor,
+  HdrCompositionConfig
 } from '@kit.ArkUI';
 ```
 
@@ -101,6 +103,14 @@ getPixelMap(): image.PixelMap
 | --- | --- |
 | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | PixelMap |
 
+错误码：
+
+以下错误码的详细介绍请参见[DrawableDescriptor错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-drawable-descriptor)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 111002 | The native memory referenced by the drawableDescriptor has been released. 适用版本：26.0.0+ |
+
 示例：
 
 示例请参考[LayeredDrawableDescriptor](#layereddrawabledescriptor)中的示例代码。
@@ -130,6 +140,7 @@ loadSync(): DrawableDescriptorLoadedResult
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 111001 | resource loading failed. |
+| 111002 | The native memory referenced by the drawableDescriptor has been released. 适用版本：26.0.0+ |
 
 示例：
 
@@ -160,10 +171,88 @@ load(): Promise<DrawableDescriptorLoadedResult>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 111001 | resource loading failed. |
+| 111002 | The native memory referenced by the drawableDescriptor has been released. 适用版本：26.0.0+ |
 
 示例：
 
 示例请参考[DrawableDescriptorLoadedResult](#drawabledescriptorloadedresult21)中的示例代码。
+
+#### [h2]release
+
+release(): void
+
+释放DrawableDescriptor持有的资源。调用release后，该对象将不可用，再调用[getPixelMap](#getpixelmap)、[getForeground](#getforeground)、[getBackground](#getbackground)、[getMask](#getmask)、[loadSync](#loadsync21)、[load](#load21)等接口会抛出111002错误。重复调用release不会崩溃。
+
+起始版本： 26.0.0
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+示例：
+
+```
+import { DrawableDescriptor } from '@kit.ArkUI';
+
+@Entry
+@Component
+struct Index {
+  private resManager = this.getUIContext().getHostContext()?.resourceManager;
+  // $r('app.media.startIcon')需要替换为开发者所需的图像资源文件。
+  private drawable: DrawableDescriptor | undefined =
+    this.resManager?.getDrawableDescriptor($r('app.media.startIcon').id);
+
+  build() {
+    Column() {
+      Button('release')
+        .onClick(() => {
+          this.drawable?.release()
+        })
+      Button('isReleased')
+        .onClick(() => {
+          let released = this.drawable?.isReleased()
+          console.info(`isReleased = ${released}`)
+        })
+    }
+  }
+}
+```
+
+#### [h2]isReleased
+
+isReleased(): boolean
+
+查询DrawableDescriptor是否已被释放。返回true表示已释放，此时调用[getPixelMap](#getpixelmap)、[getForeground](#getforeground)、[getBackground](#getbackground)、[getMask](#getmask)、[loadSync](#loadsync21)、[load](#load21)等接口会抛出111002错误；返回false表示未释放，对象可正常使用。
+
+起始版本： 26.0.0
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| boolean | DrawableDescriptor是否已被释放。true表示已释放，false表示未释放。 |
+
+#### [h2]invalidate
+
+invalidate(): void
+
+重新绘制DrawableDescriptor。当前仅支持[PictureDrawableDescriptor](#picturedrawabledescriptor)类型，其他DrawableDescriptor子类型触发后无效果。若DrawableDescriptor未绑定任何组件，则不会执行任何操作。
+
+起始版本： 26.0.0
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 #### PixelMapDrawableDescriptor12+
 
@@ -185,7 +274,53 @@ PixelMapDrawableDescriptor的构造函数。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| src | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 否 | 图片资源参数，支持传入PixelMap图片数据。 |
+| src | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 否 | PixelMap类型参数，存储 PixelMap 图片数据。 |
+
+#### [h2]constructor
+
+constructor(src?: image.PixelMap | ResourceStr)
+
+PixelMapDrawableDescriptor的构造函数，通过PixelMap类型或者ResourceStr创建。
+
+起始版本： 26.0.0
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| src | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)|[ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 图片资源参数，支持传入PixelMap图片数据，或应用资源、系统资源、沙箱路径（file:///）和Base64字符串用于创建PixelMapDrawableDescriptor。 |
+
+示例：
+
+通过ResourceStr创建PixelMapDrawableDescriptor，示例代码如下。
+
+```
+// xxx.ets
+import { DrawableDescriptor, PixelMapDrawableDescriptor } from '@kit.ArkUI';
+
+@Entry
+@Component
+struct PixelMapDrawableDescriptorExample {
+  // 使用Resource创建PixelMapDrawableDescriptor
+  // $r('app.media.icon')需要替换为开发者所需的图像资源文件。
+  @State drawable: DrawableDescriptor = new PixelMapDrawableDescriptor($r('app.media.icon'))
+
+  build() {
+    Column() {
+      Image(this.drawable)
+        .width(100)
+        .height(100)
+        .margin({ bottom: 20 })
+    }
+  }
+}
+```
 
 #### LayeredDrawableDescriptor
 
@@ -322,6 +457,14 @@ getForeground(): DrawableDescriptor
 | --- | --- |
 | [DrawableDescriptor](#drawabledescriptor) | DrawableDescriptor对象。 |
 
+错误码：
+
+以下错误码的详细介绍请参见[DrawableDescriptor错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-drawable-descriptor)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 111002 | The native memory referenced by the drawableDescriptor has been released. 适用版本：26.0.0+ |
+
 示例：
 
 ```
@@ -384,6 +527,14 @@ getBackground(): DrawableDescriptor
 | --- | --- |
 | [DrawableDescriptor](#drawabledescriptor) | DrawableDescriptor对象。 |
 
+错误码：
+
+以下错误码的详细介绍请参见[DrawableDescriptor错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-drawable-descriptor)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 111002 | The native memory referenced by the drawableDescriptor has been released. 适用版本：26.0.0+ |
+
 示例：
 
 ```
@@ -440,6 +591,14 @@ getMask(): DrawableDescriptor
 | 类型 | 说明 |
 | --- | --- |
 | [DrawableDescriptor](#drawabledescriptor) | DrawableDescriptor对象。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[DrawableDescriptor错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-drawable-descriptor)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 111002 | The native memory referenced by the drawableDescriptor has been released. 适用版本：26.0.0+ |
 
 示例：
 
@@ -546,7 +705,6 @@ setBlendMode(mode: drawing.BlendMode): void
 
 ```
 import { DrawableDescriptor, LayeredDrawableDescriptor } from '@kit.ArkUI';
-import { image } from '@kit.ImageKit';
 import { drawing } from '@kit.ArkGraphics2D';
 
 @Entry
@@ -618,7 +776,7 @@ struct Index {
 示例：
 
 ```
-import { AnimationOptions, AnimatedDrawableDescriptor } from '@kit.ArkUI';
+import { AnimationOptions, AnimatedDrawableDescriptor, DrawableDescriptor } from '@kit.ArkUI';
 import { image } from '@kit.ImageKit';
 
 @Entry
@@ -1058,6 +1216,138 @@ struct Example {
           console.info(`animation status = ${this.statusToString(status)}`)
         })
     }
+  }
+}
+```
+
+#### HdrCompositionConfig
+
+HDR合成配置选项。
+
+起始版本： 26.0.0
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| rect | [Rectangle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-touch-target#rectangle对象说明) | 否 | 否 | HDR合成的矩形区域。 |
+
+#### PictureDrawableDescriptor
+
+支持通过传入Picture对象创建PictureDrawableDescriptor对象。继承自[DrawableDescriptor](#drawabledescriptor)。
+
+起始版本： 26.0.0
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+#### [h2]constructor
+
+constructor(src: image.Picture)
+
+PictureDrawableDescriptor的构造函数。
+
+起始版本： 26.0.0
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| src | image.[Picture](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-picture) | 是 | 用于创建PictureDrawableDescriptor的Picture对象。 |
+
+#### [h2]setHdrComposition
+
+setHdrComposition(config: HdrCompositionConfig): void
+
+设置HDR合成配置。
+
+起始版本： 26.0.0
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| config | [HdrCompositionConfig](#hdrcompositionconfig) | 是 | HDR合成配置。 |
+
+示例：
+
+```
+import { PictureDrawableDescriptor } from '@kit.ArkUI';
+import { image } from '@kit.ImageKit';
+
+@Entry
+@Component
+struct PictureDrawableDescriptorInvalidateTest {
+  @State drawable: PictureDrawableDescriptor | undefined = undefined;
+
+  async createPictureDrawableDescriptor() {
+    let resMgr = this.getUIContext().getHostContext()?.resourceManager
+    if (resMgr) {
+      try {
+        // $r('app.media.heic')需要替换为开发者所需的图像资源文件。
+        let uint8buffer = resMgr.getMediaContentSync($r('app.media.heic').id)
+        let imageSource = image.createImageSource(uint8buffer.buffer)
+        // 配置解码选项，请求解码GAINMAP和LHDR_GAINMAP辅助图用于HDR合成。
+        let options: image.DecodingOptionsForPicture = {
+          desiredAuxiliaryPictures: [image.AuxiliaryPictureType.GAINMAP, image.AuxiliaryPictureType.LHDR_GAINMAP],
+          desiredPixelFormat: image.PixelMapFormat.NV12
+        }
+        let picture = await imageSource.createPicture(options)
+        let drawable = new PictureDrawableDescriptor(picture)
+        imageSource.release()
+        this.drawable = drawable
+      } catch (error) {
+        console.error(`get media content failed`)
+      }
+    }
+  }
+
+  build() {
+    Column() {
+      Image(this.drawable)
+        .width(300)
+        .height(225)
+        .borderColor(Color.Red)
+        .borderWidth(1)
+
+      Button("创建PictureDrawableDescriptor对象").onClick((event: ClickEvent) => {
+        this.createPictureDrawableDescriptor()
+      })
+
+      Button("触发一次重建").onClick((event: ClickEvent) => {
+        // 设置HDR合成配置，指定合成矩形区域的位置和大小。
+        this.drawable?.setHdrComposition({
+          rect: {
+            x: 200,
+            y: 200,
+            width: 300,
+            height: 300
+          }
+        })
+        this.drawable?.invalidate()
+      })
+    }
+    .height('100%')
+    .width('100%')
   }
 }
 ```

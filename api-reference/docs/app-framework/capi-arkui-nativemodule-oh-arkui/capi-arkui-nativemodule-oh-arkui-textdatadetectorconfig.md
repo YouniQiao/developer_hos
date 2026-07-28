@@ -2,8 +2,8 @@
 title: "OH_ArkUI_TextDataDetectorConfig"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-oh-arkui-textdatadetectorconfig"
 catalog: "harmonyos-references"
-content_hash: "54b03599369b"
-synced_at: "2026-07-09T00:58:48.036082"
+content_hash: "50851821af52"
+synced_at: "2026-07-28T16:49:47.915570"
 ---
 
 # OH_ArkUI_TextDataDetectorConfig
@@ -20,4 +20,4 @@ typedef struct OH_ArkUI_TextDataDetectorConfig OH_ArkUI_TextDataDetectorConfig
 
 相关模块： [ArkUI_NativeModule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule)
 
-所在头文件： [native_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h)
+所在头文件： [text.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-text-h)

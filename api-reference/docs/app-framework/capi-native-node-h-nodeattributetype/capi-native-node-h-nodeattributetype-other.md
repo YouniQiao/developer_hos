@@ -2,8 +2,8 @@
 title: "ArkUI_NodeAttributeType（其他）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-other"
 catalog: "harmonyos-references"
-content_hash: "b81e4357b84a"
-synced_at: "2026-07-09T00:58:36.439151"
+content_hash: "db8baf25c4f7"
+synced_at: "2026-07-28T16:49:22.556103"
 ---
 
 # ArkUI_NodeAttributeType（其他）
@@ -14,7 +14,7 @@ enum ArkUI_NodeAttributeType
 
 #### 概述
 
-定义ArkUI在Native侧可以设置的其他属性样式集合，包含组件交互、获焦、离屏渲染和点击距离等属性设置。
+定义ArkUI在Native侧可以设置的其他属性样式集合，包含组件交互、获焦、离屏渲染、点击距离和反色能力等属性设置。适用于需要在Native侧精细控制组件交互状态、焦点管理、渲染优化和手势识别精度等场景，帮助开发者提升组件的交互可控性和渲染性能表现。
 
 起始版本： 12
 
@@ -27,7 +27,7 @@ enum ArkUI_NodeAttributeType
 ```
 NODE_ENABLED = 6
 ```
- 设置组件是否可交互，支持属性设置，属性重置和属性获取。
+ 设置组件是否可交互，支持属性设置、属性重置和属性获取。
 
 作为属性设置方法参数、属性获取方法返回值[ArkUI_AttributeItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-attributeitem)格式如下。
 
@@ -37,20 +37,20 @@ NODE_ENABLED = 6
 
 | 参数项 | 描述 |
 | --- | --- |
-| .value[0].i32 | false表示不可交互，true表示可交互。 |
+| .value[0].i32 | 0表示不可交互，1表示可交互。默认值为1。传入小于0时不生效，传入大于1时使用默认值。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| .value[0].i32 | 0表示不可交互，1表示可交互。 |
+| .value[0].i32 | 返回值为0表示不可交互，返回值为1表示可交互。 |
 
 #### NODE_FOCUSABLE
 
 ```
 NODE_FOCUSABLE = 39
 ```
- 获焦属性，支持属性设置，属性重置和属性获取。
+ 获焦属性，用于控制组件是否可接收焦点，适用于键盘导航、无障碍辅助等场景。支持属性设置、属性重置和属性获取。
 
 作为属性设置方法参数、属性获取方法返回值[ArkUI_AttributeItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-attributeitem)格式如下。
 
@@ -60,13 +60,13 @@ NODE_FOCUSABLE = 39
 
 | 参数项 | 描述 |
 | --- | --- |
-| .value[0].i32 | 参数类型为1表示可获焦，为0表示不可获焦。默认为不可获焦。 |
+| .value[0].i32 | 取值为0或1，参数值为1表示可获焦，为0表示不可获焦。默认为不可获焦。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| .value[0].i32 | 参数类型为1表示可获焦，为0表示不可获焦。 |
+| .value[0].i32 | 返回值为1表示可获焦，为0表示不可获焦。 |
 
 #### NODE_RENDER_GROUP
 
@@ -83,20 +83,20 @@ NODE_RENDER_GROUP = 80
 
 | 参数项 | 描述 |
 | --- | --- |
-| .value[0].i32 | 参数类型为1表示当前组件与子组件需要先整体离屏渲染绘制后再与父控件融合绘制，参数类型为0表示不需要整体离屏渲染绘制后再与父控件融合绘制。默认值为0。 |
+| .value[0].i32 | 参数值为1表示当前组件与子组件需要先整体离屏渲染绘制后再与父控件融合绘制，参数值为0表示不需要整体离屏渲染绘制后再与父控件融合绘制。默认值为0。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| .value[0].i32 | 参数类型为1表示当前组件与子组件完成整体离屏渲染绘制，参数类型为0表示当前组件与子组件未完成整体离屏渲染绘制。 |
+| .value[0].i32 | 参数值为1表示当前组件与子组件完成整体离屏渲染绘制，参数值为0表示当前组件与子组件未完成整体离屏渲染绘制。 |
 
 #### NODE_CLICK_DISTANCE
 
 ```
 NODE_CLICK_DISTANCE = 97
 ```
- 组件所绑定的点击手势移动距离限制，支持属性设置。
+ 设置组件点击手势的移动距离限制，支持属性设置。
 
 作为属性设置方法参数[ArkUI_AttributeItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-attributeitem)格式如下。
 
@@ -106,7 +106,7 @@ NODE_CLICK_DISTANCE = 97
 
 | 参数项 | 描述 |
 | --- | --- |
-| .value[0].f32 | 表示识别点击手势时允许手指在该范围内移动，单位为vp。 |
+| .value[0].f32 | 表示识别点击手势时允许手指在设定的距离阈值内移动，取值范围为[0, +∞)，小于0使用默认值，单位为vp。默认值是无限大。较小的值适合对点击精度要求高的场景，较大的值适合对点击容错性要求高的场景。 |
 
 #### NODE_ALLOW_FORCE_DARK
 

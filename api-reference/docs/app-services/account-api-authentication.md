@@ -2,8 +2,8 @@
 title: "@hms.core.authentication (华为账号应用统一认证服务)"
 upstream_id: "harmonyos-references/account-api-authentication"
 catalog: "harmonyos-references"
-content_hash: "f6848ac13633"
-synced_at: "2026-07-09T01:01:12.021140"
+content_hash: "40c3e268371f"
+synced_at: "2026-07-28T16:52:29.378061"
 ---
 
 # @hms.core.authentication (华为账号应用统一认证服务)
@@ -293,7 +293,7 @@ getMobileNumberConsistency(request: ConsistencyRequest): Promise<ConsistencyResu
 
 系统能力： SystemCapability.AuthenticationServices.HuaweiID.Auth
 
-设备行为差异： 对于6.1.1(24)及之前版本，该接口在Phone、PC/2in1、Tablet中可正常调用，在其他设备类型中返回801错误码。对于26.0.0及之后版本，该接口在Phone、PC/2in1、Tablet、TV、Car中可正常调用，在其他设备类型中返回801错误码。
+设备行为差异： 对于6.1.1(24)及之前版本，该接口在Phone、PC/2in1、Tablet中可正常调用，在其他设备类型中返回801错误码。对于26.0.0及之后版本，该接口在Phone、PC/2in1、Tablet、TV中可正常调用，在其他设备类型中返回801错误码。
 
 起始版本： 5.0.0(12)
 

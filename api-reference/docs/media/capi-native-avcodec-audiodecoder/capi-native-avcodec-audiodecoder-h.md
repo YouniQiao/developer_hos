@@ -2,8 +2,8 @@
 title: "native_avcodec_audiodecoder.h"
 upstream_id: "harmonyos-references/capi-native-avcodec-audiodecoder-h"
 catalog: "harmonyos-references"
-content_hash: "588e879e1af1"
-synced_at: "2026-07-09T01:00:17.015117"
+content_hash: "91f673af2e0c"
+synced_at: "2026-07-28T16:51:35.763616"
 ---
 
 # native_avcodec_audiodecoder.h
@@ -376,7 +376,7 @@ OH_AVFormat *OH_AudioDecoder_GetOutputDescription(OH_AVCodec *codec)
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_AVFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-core-oh-avformat) * | 返回OH_AVFormat句柄指针，生命周期将使用下一个GetOutputDescription刷新，或使用OH_AVCodec销毁。 |
+| [OH_AVFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-core-oh-avformat) * | 返回OH_AVFormat句柄指针。 |
 
 #### [h2]OH_AudioDecoder_SetParameter()
 

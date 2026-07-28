@@ -2,8 +2,8 @@
 title: "@ohos.bluetooth.connection (蓝牙connection模块)"
 upstream_id: "harmonyos-references/js-apis-bluetooth-connection"
 catalog: "harmonyos-references"
-content_hash: "cfc46272c1e1"
-synced_at: "2026-07-09T00:59:23.821783"
+content_hash: "2513f4c24b10"
+synced_at: "2026-07-28T16:50:36.890971"
 ---
 
 # @ohos.bluetooth.connection (蓝牙connection模块)
@@ -26,6 +26,8 @@ type ProfileConnectionState = constant.ProfileConnectionState
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
+模型约束：此接口仅可在Stage模型下使用。
+
 | 类型 | 说明 |
 | --- | --- |
 | [constant.ProfileConnectionState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bluetooth-constant#profileconnectionstate) | 蓝牙设备的Profile协议连接状态。 |
@@ -37,6 +39,8 @@ type ProfileId = constant.ProfileId
 枚举，蓝牙Profile协议。
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 | 类型 | 说明 |
 | --- | --- |
@@ -50,6 +54,8 @@ type ProfileUuids = constant.ProfileUuids
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
+模型约束：此接口仅可在Stage模型下使用。
+
 | 类型 | 说明 |
 | --- | --- |
 | [constant.ProfileUuids](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bluetooth-constant#profileuuids12) | 蓝牙Profile协议的UUID。 |
@@ -61,6 +67,8 @@ type MajorClass = constant.MajorClass
 蓝牙设备的主要类型。蓝牙标准协议字段。
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 | 类型 | 说明 |
 | --- | --- |
@@ -74,6 +82,8 @@ type MajorMinorClass = constant.MajorMinorClass
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
+模型约束：此接口仅可在Stage模型下使用。
+
 | 类型 | 说明 |
 | --- | --- |
 | [constant.MajorMinorClass](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bluetooth-constant#majorminorclass) | 蓝牙设备的子类型。 |
@@ -85,6 +95,8 @@ type BluetoothAddress = common.BluetoothAddress
 描述蓝牙设备地址信息的参数结构，包括地址与地址类型。
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 | 类型 | 说明 |
 | --- | --- |
@@ -104,6 +116,8 @@ pairDevice(deviceId: string, callback: AsyncCallback<void>): void
 元服务API：从API version 12开始，该接口支持在元服务中使用。
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -153,6 +167,8 @@ pairDevice(deviceId: string): Promise<void>
 元服务API：从API version 12开始，该接口支持在元服务中使用。
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -208,6 +224,8 @@ pairDevice(deviceId: BluetoothAddress): Promise<void>
 需要权限：ohos.permission.ACCESS_BLUETOOTH
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -268,6 +286,8 @@ getRemoteDeviceName(deviceId: string): string
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
+模型约束：此接口仅可在Stage模型下使用。
+
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
@@ -318,6 +338,8 @@ getRemoteDeviceName(deviceId: string, alias?: boolean): string
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
+模型约束：此接口仅可在Stage模型下使用。
+
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
@@ -366,6 +388,8 @@ getRemoteDeviceClass(deviceId: string): DeviceClass
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
+模型约束：此接口仅可在Stage模型下使用。
+
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
@@ -384,6 +408,7 @@ getRemoteDeviceClass(deviceId: string): DeviceClass
 
 | 错误码ID | 错误信息 |
 | --- | --- |
+| 201 | Permission denied. 适用版本：10-17 |
 | 401 | Invalid parameter. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
 | 801 | Capability not supported. |
 | 2900001 | Service stopped. |
@@ -410,6 +435,8 @@ getRemoteDeviceTransport(deviceId: string): BluetoothTransport
 - 从API version 21开始，此接口支持使用对端设备的实际MAC地址获取设备的传输类型。
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -458,6 +485,8 @@ getRemoteProfileUuids(deviceId: string, callback: AsyncCallback<Array<ProfileUui
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
+模型约束：此接口仅可在Stage模型下使用。
+
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
@@ -503,6 +532,8 @@ getRemoteProfileUuids(deviceId: string): Promise<Array<ProfileUuids>>
 需要权限：ohos.permission.ACCESS_BLUETOOTH
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -554,6 +585,8 @@ getLocalName(): string
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
+模型约束：此接口仅可在Stage模型下使用。
+
 返回值：
 
 | 类型 | 说明 |
@@ -588,11 +621,16 @@ getPairedDevices(): Array<string>
 
 获取已配对蓝牙设备的地址集合。
 
-需要权限：ohos.permission.ACCESS_BLUETOOTH
+需要权限：
+
+- API版本26.0.0+：ohos.permission.ACCESS_BLUETOOTH 或 (ohos.permission.ACCESS_BLUETOOTH 和 ohos.permission.GET_BLUETOOTH_PEERS_MAC)
+- API版本10-24：ohos.permission.ACCESS_BLUETOOTH
 
 元服务API：从API version 12开始，该接口支持在元服务中使用。
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 返回值：
 
@@ -636,6 +674,8 @@ getPairState(deviceId: string): BondState
 元服务API：从API version 12开始，该接口支持在元服务中使用。
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -683,6 +723,8 @@ getProfileConnectionState(profileId?: ProfileId): ProfileConnectionState
 需要权限：ohos.permission.ACCESS_BLUETOOTH
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -734,6 +776,8 @@ setDevicePairingConfirmation(deviceId: string, accept: boolean): void
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
+模型约束：此接口仅可在Stage模型下使用。
+
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
@@ -780,6 +824,8 @@ setDevicePinCode(deviceId: string, code: string, callback: AsyncCallback<void>):
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
+模型约束：此接口仅可在Stage模型下使用。
+
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
@@ -824,6 +870,8 @@ setDevicePinCode(deviceId: string, code: string): Promise<void>
 需要权限：ohos.permission.ACCESS_BLUETOOTH
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -880,6 +928,8 @@ setLocalName(name: string): void
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
+模型约束：此接口仅可在Stage模型下使用。
+
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
@@ -919,6 +969,8 @@ setBluetoothScanMode(mode: ScanMode, duration: number): void
 需要权限：ohos.permission.ACCESS_BLUETOOTH
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -961,6 +1013,8 @@ getBluetoothScanMode(): ScanMode
 需要权限：ohos.permission.ACCESS_BLUETOOTH
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 返回值：
 
@@ -1008,6 +1062,8 @@ startBluetoothDiscovery(): void
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
+模型约束：此接口仅可在Stage模型下使用。
+
 错误码：
 
 以下错误码的详细介绍请参见[蓝牙服务子系统错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-bluetoothmanager)。
@@ -1051,6 +1107,8 @@ stopBluetoothDiscovery(): void
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
+模型约束：此接口仅可在Stage模型下使用。
+
 错误码：
 
 以下错误码的详细介绍请参见[蓝牙服务子系统错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-bluetoothmanager)。
@@ -1083,6 +1141,8 @@ isBluetoothDiscovering(): boolean
 需要权限：ohos.permission.ACCESS_BLUETOOTH
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 返回值：
 
@@ -1128,6 +1188,8 @@ setRemoteDeviceName(deviceId: string, name: string): Promise<void>
 元服务API：从API version 12开始，该接口支持在元服务中使用。
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -1182,6 +1244,8 @@ getRemoteDeviceBatteryInfo(deviceId: string): Promise<BatteryInfo>
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
+模型约束：此接口仅可在Stage模型下使用。
+
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
@@ -1229,6 +1293,8 @@ on(type: 'batteryChange', callback: Callback<BatteryInfo>): void
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
+模型约束：此接口仅可在Stage模型下使用。
+
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
@@ -1268,6 +1334,8 @@ off(type: 'batteryChange', callback?: Callback<BatteryInfo>): void
 需要权限：ohos.permission.ACCESS_BLUETOOTH
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -1310,11 +1378,16 @@ on(type: 'bluetoothDeviceFind', callback: Callback<Array<string>>): void
 - 该上报方式只支持获取设备地址信息。
 - 推荐使用API version 18开始支持的[connection.on('discoveryResult')](#connectionondiscoveryresult18)扫描上报方式，可获取到更多设备信息，包括设备地址、设备信号强度、设备名称和设备类型。
 
-需要权限：ohos.permission.ACCESS_BLUETOOTH
+需要权限：
+
+- API版本26.0.0+：ohos.permission.ACCESS_BLUETOOTH 或 (ohos.permission.ACCESS_BLUETOOTH 和 ohos.permission.GET_BLUETOOTH_PEERS_MAC)
+- API版本10-24：ohos.permission.ACCESS_BLUETOOTH
 
 元服务API：从API version 12开始，该接口支持在元服务中使用。
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -1330,7 +1403,7 @@ on(type: 'bluetoothDeviceFind', callback: Callback<Array<string>>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 401 | Invalid parameter. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 401 | Invalid parameter. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. 适用版本：10-24 |
 | 801 | Capability not supported. |
 | 2900099 | Operation failed. |
 
@@ -1359,6 +1432,8 @@ off(type: 'bluetoothDeviceFind', callback?: Callback<Array<string>>): void
 元服务API：从API version 12开始，该接口支持在元服务中使用。
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -1398,9 +1473,14 @@ on(type: 'bondStateChange', callback: Callback<BondStateParam>): void
 
 订阅蓝牙配对状态变化事件。使用Callback异步回调。
 
-需要权限：ohos.permission.ACCESS_BLUETOOTH
+需要权限：
+
+- API版本26.0.0+：ohos.permission.ACCESS_BLUETOOTH 或 (ohos.permission.ACCESS_BLUETOOTH 和 ohos.permission.GET_BLUETOOTH_PEERS_MAC)
+- API版本10-24：ohos.permission.ACCESS_BLUETOOTH
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -1416,7 +1496,7 @@ on(type: 'bondStateChange', callback: Callback<BondStateParam>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 401 | Invalid parameter. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 401 | Invalid parameter. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. 适用版本：10-24 |
 | 801 | Capability not supported. |
 | 2900099 | Operation failed. |
 
@@ -1443,6 +1523,8 @@ off(type: 'bondStateChange', callback?: Callback<BondStateParam>): void
 需要权限：ohos.permission.ACCESS_BLUETOOTH
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -1483,9 +1565,14 @@ on(type: 'pinRequired', callback: Callback<PinRequiredParam>): void
 
 订阅配对请求事件。使用Callback异步回调。
 
-需要权限：ohos.permission.ACCESS_BLUETOOTH
+需要权限：
+
+- API版本26.0.0+：ohos.permission.ACCESS_BLUETOOTH 或 (ohos.permission.ACCESS_BLUETOOTH 和 ohos.permission.GET_BLUETOOTH_PEERS_MAC)
+- API版本10-24：ohos.permission.ACCESS_BLUETOOTH
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -1501,7 +1588,7 @@ on(type: 'pinRequired', callback: Callback<PinRequiredParam>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 401 | Invalid parameter. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 401 | Invalid parameter. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. 适用版本：10-24 |
 | 801 | Capability not supported. |
 | 2900099 | Operation failed. |
 
@@ -1528,6 +1615,8 @@ off(type: 'pinRequired', callback?: Callback<PinRequiredParam>): void
 需要权限：ohos.permission.ACCESS_BLUETOOTH
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -1571,9 +1660,14 @@ on(type: 'discoveryResult', callback: Callback<Array<DiscoveryResult>>): void
 - 可扫描到的设备类型包括传统蓝牙设备和低功耗蓝牙设备。
 - 该上报方式支持获取设备地址、设备信号强度、设备名称和设备类型。
 
-需要权限：ohos.permission.ACCESS_BLUETOOTH
+需要权限：
+
+- API版本26.0.0+：ohos.permission.ACCESS_BLUETOOTH 或 (ohos.permission.ACCESS_BLUETOOTH 和 ohos.permission.GET_BLUETOOTH_PEERS_MAC)
+- API版本18-24：ohos.permission.ACCESS_BLUETOOTH
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -1589,7 +1683,7 @@ on(type: 'discoveryResult', callback: Callback<Array<DiscoveryResult>>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 401 | Invalid parameter. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 401 | Invalid parameter. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. 适用版本：18-24 |
 | 801 | Capability not supported. |
 | 2900099 | Operation failed. |
 
@@ -1616,6 +1710,8 @@ off(type: 'discoveryResult', callback?: Callback<Array<DiscoveryResult>>): void
 需要权限：ohos.permission.ACCESS_BLUETOOTH
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -1659,6 +1755,8 @@ onScanModeChange(callback: Callback<ScanMode>): void
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
+模型约束：此接口仅可在Stage模型下使用。
+
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
@@ -1697,6 +1795,8 @@ offScanModeChange(callback?: Callback<ScanMode>): void
 需要权限：ohos.permission.ACCESS_BLUETOOTH
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -1737,6 +1837,8 @@ getLastConnectionTime(deviceId: string): Promise<number>
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
+模型约束：此接口仅可在Stage模型下使用。
+
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
@@ -1755,7 +1857,7 @@ getLastConnectionTime(deviceId: string): Promise<number>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Invalid parameter. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
 | 801 | Capability not supported. |
 | 2900001 | Service stopped. |
 | 2900003 | Bluetooth disabled. |
@@ -1787,11 +1889,11 @@ connectAllowedProfiles(deviceId: string, callback: AsyncCallback<void>): void
 - 需要与接口[connection.disconnectAllowedProfiles](#connectiondisconnectallowedprofiles)配合使用。
 - 从API version 21开始，此接口支持使用对端设备的实际MAC地址进行profile连接。
 
-需要权限： ohos.permission.ACCESS_BLUETOOTH
+需要权限：ohos.permission.ACCESS_BLUETOOTH
 
-系统能力：: SystemCapability.Communication.Bluetooth.Core
+系统能力：SystemCapability.Communication.Bluetooth.Core
 
-模型约束： 此接口仅可在Stage模型下使用。
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -1842,11 +1944,11 @@ connectAllowedProfiles(deviceId: string): Promise<void>
 - 需要与接口[connection.disconnectAllowedProfiles](#connectiondisconnectallowedprofiles)配合使用。
 - 从API version 21开始，此接口支持使用对端设备的实际MAC地址进行profile连接。
 
-需要权限： ohos.permission.ACCESS_BLUETOOTH
+需要权限：ohos.permission.ACCESS_BLUETOOTH
 
-系统能力：: SystemCapability.Communication.Bluetooth.Core
+系统能力：SystemCapability.Communication.Bluetooth.Core
 
-模型约束： 此接口仅可在Stage模型下使用。
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -1896,13 +1998,13 @@ disconnectAllowedProfiles(deviceId: string): Promise<void>
 
 - 需要与接口[connection.connectAllowedProfiles](#connectionconnectallowedprofiles16)配合使用。
 
-起始版本： 26.0.0
+起始版本：26.0.0
 
-需要权限： ohos.permission.ACCESS_BLUETOOTH
+需要权限：ohos.permission.ACCESS_BLUETOOTH
 
-系统能力：: SystemCapability.Communication.Bluetooth.Core
+系统能力：SystemCapability.Communication.Bluetooth.Core
 
-模型约束： 此接口仅可在Stage模型下使用。
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -1946,11 +2048,11 @@ getVirtualAddressByHash(algorithmType: HashAlgorithmType, hashValue: string): st
 
 当[HashAlgorithmType](#hashalgorithmtype24)为HASH_ALGORITHM_SHA256时，应使用大写实际MAC地址通过SHA256算法生成对应的哈希值（十六进制64位），取后32位作为输入，哈希值字母不区分大小写。
 
-需要权限： ohos.permission.ACCESS_BLUETOOTH
+需要权限：ohos.permission.ACCESS_BLUETOOTH
 
-模型约束： 此接口仅可在Stage模型下使用。
+系统能力：SystemCapability.Communication.Bluetooth.Core
 
-系统能力： SystemCapability.Communication.Bluetooth.Core
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -1998,13 +2100,13 @@ onAclStateChange(callback: Callback<AclStateResult>): void
 
 订阅蓝牙ACL链路连接状态变化事件。当触发蓝牙ACL链路连接与断开连接时，如订阅此事件，则会收到携带对应设备的地址与连接状态的回调函数。
 
-起始版本： 26.0.0
+起始版本：26.0.0
 
 需要权限：ohos.permission.ACCESS_BLUETOOTH 或 (ohos.permission.ACCESS_BLUETOOTH 和 ohos.permission.GET_BLUETOOTH_PEERS_MAC)
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
-模型约束： 此接口仅可在Stage模型下使用。
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -2041,13 +2143,13 @@ offAclStateChange(callback?: Callback<AclStateResult>): void
 
 取消订阅蓝牙ACL链路连接状态变化事件。
 
-起始版本： 26.0.0
+起始版本：26.0.0
 
 需要权限：ohos.permission.ACCESS_BLUETOOTH 或 (ohos.permission.ACCESS_BLUETOOTH 和 ohos.permission.GET_BLUETOOTH_PEERS_MAC)
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
-模型约束： 此接口仅可在Stage模型下使用。
+模型约束：此接口仅可在Stage模型下使用。
 
 参数：
 
@@ -2084,17 +2186,22 @@ try {
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
+模型约束：此接口仅可在Stage模型下使用。
+
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | deviceId | string | 否 | 否 | 配对中的对端设备地址。 |
 | state | [BondState](#bondstate) | 否 | 否 | 配对状态。 |
 | cause12+ | [UnbondCause](#unbondcause12) | 否 | 否 | 配对失败的原因。 |
+| causeMessage | string | 否 | 是 | 配对失败的具体原因，例如：本端业务主动删除配对时，返回：USER_REMOVED。 **起始版本**：26.0.0 |
 
 #### PinRequiredParam
 
 描述配对请求的参数结构。
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
@@ -2106,6 +2213,8 @@ try {
 描述蓝牙设备的类型。
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
@@ -2120,6 +2229,8 @@ try {
 只有支持蓝牙标准协议定义的电量信息AT（Attention）命令（包括：+XEVENT和IPHONEACCEV）的设备才支持上报有效的电量信息。
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
@@ -2137,6 +2248,8 @@ try {
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
+模型约束：此接口仅可在Stage模型下使用。
+
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
 | TRANSPORT_BR_EDR | 0 | 传统蓝牙（Basic Rate/Enhanced Data Rate，BR/EDR）设备传输方式。 |
@@ -2149,6 +2262,8 @@ try {
 枚举，表示扫描模式。该模式决定设备是否可被发现或可被连接。
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
@@ -2167,6 +2282,8 @@ try {
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
+模型约束：此接口仅可在Stage模型下使用。
+
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
 | BOND_STATE_INVALID | 0 | 未配对状态。 |
@@ -2178,6 +2295,8 @@ try {
 枚举，配对失败原因。
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
@@ -2193,6 +2312,8 @@ try {
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
+模型约束：此接口仅可在Stage模型下使用。
+
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
 | DEVICE_NORMAL_CHARGE_NOT_CHARGED | 0 | 不支持超级快充能力的设备当前处于未充电状态。 |
@@ -2205,6 +2326,8 @@ try {
 扫描到设备后，上报的扫描结果。
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
+
+模型约束：此接口仅可在Stage模型下使用。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
@@ -2219,9 +2342,9 @@ try {
 
 哈希算法是一种数学函数，通过对输入数据进行复杂计算，生成一个唯一且固定长度的字符串（即哈希值）。常用于数据完整性校验、数字签名等场景。
 
-模型约束： 此接口仅可在Stage模型下使用。
+系统能力：SystemCapability.Communication.Bluetooth.Core
 
-系统能力： SystemCapability.Communication.Bluetooth.Core
+模型约束：此接口仅可在Stage模型下使用。
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
@@ -2231,11 +2354,11 @@ try {
 
 描述ACL连接状态的参数结构。
 
-起始版本： 26.0.0
+起始版本：26.0.0
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
-模型约束： 此接口仅可在Stage模型下使用。
+模型约束：此接口仅可在Stage模型下使用。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
@@ -2246,11 +2369,11 @@ try {
 
 枚举，表示ACL连接状态。
 
-起始版本： 26.0.0
+起始版本：26.0.0
 
-系统能力： SystemCapability.Communication.Bluetooth.Core
+系统能力：SystemCapability.Communication.Bluetooth.Core
 
-模型约束： 此接口仅可在Stage模型下使用。
+模型约束：此接口仅可在Stage模型下使用。
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |

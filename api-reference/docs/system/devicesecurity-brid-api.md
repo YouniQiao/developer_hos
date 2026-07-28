@@ -2,19 +2,15 @@
 title: "BusinessRiskIntelligentDetection（业务风险检测）"
 upstream_id: "harmonyos-references/devicesecurity-brid-api"
 catalog: "harmonyos-references"
-content_hash: "ee144d542424"
-synced_at: "2026-07-09T00:59:14.844649"
+content_hash: "d3c8acaa26c0"
+synced_at: "2026-07-28T16:50:25.649024"
 ---
 
 # BusinessRiskIntelligentDetection（业务风险检测）
 
-- 识别当前设备的涉诈行为风险。
+本模块提供识别当前设备的涉诈行为风险能力和自动化点击、设备农场等作弊行为检测能力。
 
 起始版本： 5.0.0(12)
-
-- 提供自动化点击、设备农场等作弊行为检测能力。
-
-起始版本： 6.0.0(20)
 
 #### 导入模块
 
@@ -36,7 +32,7 @@ import { businessRiskIntelligentDetection } from '@kit.DeviceSecurityKit';
 | --- | --- | --- | --- | --- |
 | nonce | Uint8Array | 否 | 否 | 开发者应用传入的一个随机生成的nonce值，用于防重放攻击，在检测结果中会包含该值。nonce值必须为24至80字节之间。 |
 | algorithm | [SigningAlgorithm](#signingalgorithm) | 否 | 否 | 数字签名算法。 |
-| version | number | 否 | 是 | 检测结果消息格式的版本，默认值为1，可选1、2和3。 从5.1.0(18)开始，增加取值1和2。 取值为1时，检测结果Tag标签中不带时间属性和风险等级。 取值为2时，检测结果的Tag标签中带有时间属性和风险等级，其中时间属性表示该标签对应线索的最后一次发生时间，风险等级表示该标签对应的风险级别。 从26.0.0开始，增加取值为3。 取值为3时，检测结果的Tag标签中带有时间属性、风险等级和风控因子，其中时间属性表示该标签对应线索的最后一次发生时间，风险等级表示该标签对应的风险级别，风控因子表示该标签对应的风险因子。 |
+| version | number | 否 | 是 | 检测结果消息格式的版本，默认值为1，可选1、2和3。 取值为1时，检测结果Tag标签中不带时间属性和风险等级。 取值为2时，检测结果的Tag标签中带有时间属性和风险等级。其中时间属性表示该标签对应线索的最后一次发生时间，风险等级表示该标签对应的风险级别。 从26.0.0开始，增加取值为3。 取值为3时，检测结果的Tag标签中带有时间属性、风险等级和风控因子。其中时间属性表示该标签对应线索的最后一次发生时间，风险等级表示该标签对应的风险级别，风控因子表示该标签对应的风险因子。 **起始版本：** 5.1.0(18) |
 
 #### SimulatedClickDetectionRequest
 
@@ -80,9 +76,9 @@ import { businessRiskIntelligentDetection } from '@kit.DeviceSecurityKit';
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| ES256 | 0 | SHA256withECDSA。 |
+| ES256 | 0 | SHA256withECDSA算法。 |
 
-#### detectFraudRisk
+#### businessRiskIntelligentDetection.detectFraudRisk
 
 detectFraudRisk(params: [FraudDetectionRequest](#frauddetectionrequest)): Promise<string>
 
@@ -108,15 +104,15 @@ detectFraudRisk(params: [FraudDetectionRequest](#frauddetectionrequest)): Promis
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-brid)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-brid)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Invalid parameters. |
-| 1012500001 | Internal error. |
+| 1012500001 | Internal error. API call limit exceeded. Internal error. Internal interface invocation exception. |
 | 1012500002 | The network is unreachable. |
 | 1012500003 | Access cloud server fail. |
-| 1012500004 | Verify cloud capability fail. |
+| 1012500004 | Verify capability fail. |
 
 示例：
 
@@ -126,7 +122,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 
-const TAG = "[BusinessRiskIntelligentDetectionModel]";
+const TAG = '[BusinessRiskIntelligentDetectionModel]';
 
 let rand = cryptoFramework.createRandom();
 let len = 48;
@@ -149,7 +145,7 @@ try {
 }
 ```
 
-#### detectSimulatedClickRisk
+#### businessRiskIntelligentDetection.detectSimulatedClickRisk
 
 detectSimulatedClickRisk(params: [SimulatedClickDetectionRequest](#simulatedclickdetectionrequest)): Promise<string>
 
@@ -182,7 +178,7 @@ detectSimulatedClickRisk(params: [SimulatedClickDetectionRequest](#simulatedclic
 | 1012500001 | Internal error. |
 | 1012500002 | The network is unreachable. |
 | 1012500003 | Access cloud server fail. |
-| 1012500004 | Verify cloud capability fail. |
+| 1012500004 | Verify capability fail. |
 | 1012500005 | The interface access frequency exceeds the limit. |
 | 1012500006 | Internal timeout. |
 | 1012500007 | Invalid parameters. |
@@ -194,7 +190,7 @@ import { businessRiskIntelligentDetection } from '@kit.DeviceSecurityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
-const TAG = "BusinessRiskIntelligentDetectionJsTest";
+const TAG = 'BusinessRiskIntelligentDetectionJsTest';
 
 let params = {
   version: 1
@@ -213,7 +209,7 @@ try {
 }
 ```
 
-#### detectSimulatedClickRiskEnhanced
+#### businessRiskIntelligentDetection.detectSimulatedClickRiskEnhanced
 
 detectSimulatedClickRiskEnhanced(params: SimulatedClickDetectionEnhancedRequest): Promise<string>
 
@@ -243,7 +239,7 @@ detectSimulatedClickRiskEnhanced(params: SimulatedClickDetectionEnhancedRequest)
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 1012500001 | Internal error |
+| 1012500001 | Internal error. |
 | 1012500002 | The network is unreachable. |
 | 1012500003 | Access cloud server fail. |
 | 1012500005 | The interface access frequency exceeds the limit. |
@@ -258,7 +254,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 
-const TAG = "BusinessRiskIntelligentDetectionJsTest";
+const TAG = 'BusinessRiskIntelligentDetectionJsTest';
 
 let nonceLength = 48;
 let nonceBlob = cryptoFramework.createRandom().generateRandomSync(nonceLength);

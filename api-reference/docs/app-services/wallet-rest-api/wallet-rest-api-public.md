@@ -2,8 +2,8 @@
 title: "公共接口"
 upstream_id: "harmonyos-references/wallet-rest-api-public"
 catalog: "harmonyos-references"
-content_hash: "76f0dcf22365"
-synced_at: "2026-07-09T01:01:39.960276"
+content_hash: "f6d1b2ebd4a5"
+synced_at: "2026-07-28T16:53:06.958314"
 ---
 
 # 公共接口
@@ -25,7 +25,7 @@ Request Header
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| Content-Type | 是 | String | 取值为：application/x-www-form-urlencoded |
+| Content-Type | 是 | String | 数据格式，取值为：application/x-www-form-urlencoded。 |
 
 Request Body
 
@@ -38,6 +38,8 @@ Request Body
 #### [h2]请求示例
 
 ```
+POST /oauth2/v3/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
 grant_type=client_credentials&client_id=<客户端ID>&client_secret=<客户端密钥>
 ```
 
@@ -47,7 +49,7 @@ Response Header
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| Content-Type | 是 | String | 取值为：application/json;charset=UTF-8 |
+| Content-Type | 是 | String | 数据格式，取值为：application/json;charset=UTF-8。 |
 
 Response Body
 
@@ -60,6 +62,8 @@ Response Body
 #### [h2]响应示例
 
 ```
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8
 {
   "access_token": "<返回的Access Token>",
   "expires_in": 3600,
@@ -116,25 +120,28 @@ Request Header
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| Content-Type | 是 | String | 取值为：application/json;charset=UTF-8 |
-| Authorization | 是 | String | [申请钥匙卡片](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-carkey#申请钥匙卡片)时linkDevicePass参数中的token值，用于校验该请求是否合法。 |
+| Content-Type | 是 | String | 数据格式，取值为：application/json;charset=UTF-8。 |
+| Authorization | 是 | String | [申请ICCE钥匙](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-carkey#申请icce钥匙)时linkDevicePass参数中的token值，用于校验该请求是否合法。 |
 
 Request Body
 
-| 父节点参数 | 子节点参数 | 参数类型 | 是否可选 | 描述 |
+| 父节点参数 | 子节点参数 | 参数类型 | 是否必选 | 描述 |
 | --- | --- | --- | --- | --- |
-| requestBody | passTypeIdentifier | String | 必选 | [创建Wallet Kit服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-preparations)时注册的服务号，需要开发者到华为AGC网站申请。 |
-| requestBody | serialNumber | String | 必选 | 车钥匙卡片在华为钱包云服务器中的卡号，回调时以便发卡方根据此值识别具体的卡券记录。 |
-| requestBody | passVersion | String | 可选 | 版本号，固定10.0。 |
-| requestBody | userDeviceId | String | 必选 | 用户在当前设备上的唯一标识。 |
-| requestBody | transId | String | 必选 | 随机数。 |
-| signature | - | String | 必选 | Applet的身份私钥对requestBody的Hash值的签名。 |
-| certificate | signature | String | 必选 | 钱包云服务使用钱包服务器私钥对publicKey的签名值。DK业务管理服务收到该请求后，需要使用钱包云服务公钥对其进行验签。 |
-| certificate | publicKey | String | 必选 | Applet的身份公钥。 |
+| requestBody | passTypeIdentifier | String | 是 | 创建Wallet Kit服务时注册的服务号，需要开发者到华为AGC网站申请。 |
+| requestBody | serialNumber | String | 是 | 车钥匙卡片在华为钱包云服务器中的卡号，回调时以便发卡方根据此值识别具体的卡券记录。 |
+| requestBody | passVersion | String | 否 | 版本号，固定“固定10.0”。 |
+| requestBody | userDeviceId | String | 是 | 用户在当前设备上的唯一标识。 |
+| requestBody | transId | String | 是 | 请求唯一标识，为随机数。 |
+| signature | - | String | 是 | Applet的身份私钥对requestBody的Hash值的签名。 |
+| certificate | signature | String | 是 | 钱包云服务使用钱包服务器私钥对publicKey的签名值。DK业务管理服务收到该请求后，需要使用钱包云服务公钥对其进行验签。 |
+| certificate | publicKey | String | 是 | Applet的身份公钥。 |
 
 #### [h2]请求示例
 
 ```
+POST /v1/passes/registrations HTTP/1.1
+Content-Type: application/json;charset=UTF-8
+Authorization: Bearer bKyECwrVGw********************e
 {
   "requestBody": {
     "passTypeIdentifier": "Replace with the Service ID you applied on AGC",
@@ -157,25 +164,27 @@ Response Header
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| Content-Type | 是 | String | 取值为：application/json;charset=UTF-8 |
+| Content-Type | 是 | String | 数据格式，取值为：application/json;charset=UTF-8。 |
 
 Response Body
 
-| 父节点参数 | 子节点参数 | 参数类型 | 是否可选 | 描述 |
+| 父节点参数 | 子节点参数 | 参数类型 | 是否必选 | 描述 |
 | --- | --- | --- | --- | --- |
-| Httpstatus | - | String | 必选 | 接口网络状态码。 |
-| response | certificate | Certificate | 可选 | DK业务管理服务使用[创建Wallet Kit服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-preparations)步骤5生成的私钥对publicKey进行签名后返回。 |
+| Httpstatus | - | String | 是 | 接口网络状态码，参考[REST API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-error-code)进行处理。 |
+| response | certificate | Certificate | 否 | DK业务管理服务使用创建Wallet Kit服务步骤5生成的私钥对publicKey进行签名后返回。 |
 
 Certificate参数类型说明
 
-| certificate子节点参数 | 参数类型 | 是否可选 | 描述 |
+| certificate子节点参数 | 参数类型 | 是否必选 | 描述 |
 | --- | --- | --- | --- |
-| signature | String | 必选 | 钱包云服务使用钱包服务器私钥对publicKey的签名值。DK业务管理服务收到该请求后，需要使用钱包云服务公钥对其进行验签。 |
-| publicKey | String | 必选 | Applet的身份公钥。 |
+| signature | String | 是 | 钱包云服务使用钱包服务器私钥对publicKey的签名值。DK业务管理服务收到该请求后，需要使用钱包云服务公钥对其进行验签。 |
+| publicKey | String | 是 | Applet的身份公钥。 |
 
 #### [h2]响应示例
 
 ```
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8
 {
   "httpStatus": "0",
   "response": {
@@ -227,7 +236,7 @@ Certificate参数类型说明
 
 #### 获取个人化数据Token
 
-华为钱包APP经由钱包云服务中转后向三方业务管理服务平台获取token（个人化数据请求报文里参与计算hash）。
+华为钱包App经由钱包云服务中转后向三方业务管理服务平台获取token（个人化数据请求报文里参与计算hash）。
 
 #### [h2]接口原型
 
@@ -242,25 +251,28 @@ Request Header
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| Content-Type | 是 | String | 取值为：application/json;charset=UTF-8 |
-| Authorization | 是 | String | [申请钥匙卡片](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-carkey#申请钥匙卡片)时linkDevicePass参数中的token值，用于校验该请求是否合法。 |
+| Content-Type | 是 | String | 数据格式，取值为：application/json;charset=UTF-8。 |
+| Authorization | 是 | String | [申请ICCE钥匙](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-carkey#申请icce钥匙)时linkDevicePass参数中的token值，用于校验该请求是否合法。 |
 
 Request Body
 
-| 父节点参数 | 子节点参数 | 参数类型 | 是否可选 | 描述 |
+| 父节点参数 | 子节点参数 | 参数类型 | 是否必选 | 描述 |
 | --- | --- | --- | --- | --- |
-| requestBody | passTypeIdentifier | String | 必选 | [创建Wallet Kit服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-preparations)时注册的服务号，需要开发者到华为AGC网站申请。 |
-| requestBody | serialNumber | String | 必选 | 车钥匙卡片在华为钱包云服务器中的卡号，回调时以便发卡方根据此值识别具体的卡券记录。 |
-| requestBody | passVersion | String | 可选 | 版本号，固定10.0。 |
-| requestBody | userDeviceId | String | 必选 | 用户在当前设备上的唯一标识。 |
-| requestBody | transId | String | 必选 | 随机数。 |
-| signature | - | String | 必选 | Applet的身份私钥对requestBody的Hash值的签名。 |
-| certificate | signature | String | 必选 | 在[设备认证](#设备认证)接口返回的certificate的签名。 DK业务管理服务使用[创建Wallet Kit服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-preparations)步骤5生成的私钥对Applet的身份公钥签名信息。 |
-| certificate | publicKey | String | 必选 | 在[设备认证](#设备认证)接口返回的certificate里的Applet的身份公钥。 |
+| requestBody | passTypeIdentifier | String | 是 | 创建Wallet Kit服务时注册的服务号，需要开发者到华为AGC网站申请。 |
+| requestBody | serialNumber | String | 是 | 车钥匙卡片在华为钱包云服务器中的卡号，回调时以便发卡方根据此值识别具体的卡券记录。 |
+| requestBody | passVersion | String | 否 | 版本号，固定“固定10.0”。 |
+| requestBody | userDeviceId | String | 是 | 用户在当前设备上的唯一标识。 |
+| requestBody | transId | String | 是 | 请求唯一标识，为随机数。 |
+| signature | - | String | 是 | Applet的身份私钥对requestBody的Hash值的签名。 |
+| certificate | signature | String | 是 | 在[设备认证](#设备认证)接口返回的certificate的签名。 DK业务管理服务使用创建Wallet Kit服务步骤5生成的私钥对Applet的身份公钥签名信息。 |
+| certificate | publicKey | String | 是 | 在[设备认证](#设备认证)接口返回的certificate里的Applet的身份公钥。 |
 
 #### [h2]请求示例
 
 ```
+POST /v1/passes/requestPersonalizeToken HTTP/1.1
+Content-Type: application/json;charset=UTF-8
+Authorization: Bearer bKyECwrVGw********************e
 {
   "requestBody": {
     "passTypeIdentifier": "Replace with the Service ID you applied on AGC",
@@ -283,18 +295,20 @@ Response Header
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| Content-Type | 是 | String | 取值为：application/json;charset=UTF-8 |
+| Content-Type | 是 | String | 数据格式，取值为：application/json;charset=UTF-8。 |
 
 Response Body
 
-| 父节点参数 | 子节点参数 | 参数类型 | 是否可选 | 描述 |
+| 父节点参数 | 子节点参数 | 参数类型 | 是否必选 | 描述 |
 | --- | --- | --- | --- | --- |
-| Httpstatus | - | String | 必选 | 接口网络状态码。 |
-| response | token | String | 必选 | 个人化token。 |
+| Httpstatus | - | String | 是 | 接口网络状态码，参考[REST API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-error-code)进行处理。 |
+| response | token | String | 是 | 个人化token。 |
 
 #### [h2]响应示例
 
 ```
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8
 {
   "httpStatus": "0",
   "response": {
@@ -338,7 +352,7 @@ Response Body
 
 #### 获取个人化数据
 
-华为钱包APP经由钱包云服务中转后向三方业务管理服务获取个人化数据。
+华为钱包App经由钱包云服务中转后向三方业务管理服务获取个人化数据。
 
 #### [h2]接口原型
 
@@ -353,30 +367,33 @@ Request Header
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| Content-Type | 是 | String | 取值为：application/json;charset=UTF-8 |
+| Content-Type | 是 | String | 数据格式，取值为：application/json;charset=UTF-8。 |
 | Authorization | 是 | String | [获取个人化数据Token](#获取个人化数据token)返回的token值，用于校验该请求是否合法。 |
 
 Request Body
 
-| 父节点参数 | 子节点参数 | 参数类型 | 是否可选 | 描述 |
+| 父节点参数 | 子节点参数 | 参数类型 | 是否必选 | 描述 |
 | --- | --- | --- | --- | --- |
-| requestBody | cardSEId | String | 必选 | Applet唯一标识，可以用于车端秘钥分散 |
-| requestBody | passTypeIdentifier | String | 必选 | [创建Wallet Kit服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-preparations)时注册的服务号，需要开发者到华为AGC网站申请。 |
-| requestBody | serialNumber | String | 必选 | 车钥匙卡片在华为钱包云服务器中的卡号，回调时以便发卡方根据此值识别具体的卡券记录。 |
-| requestBody | passVersion | String | 可选 | 版本号，固定10.0。 |
-| requestBody | userDeviceId | String | 必选 | 用户在当前设备上的唯一标识。 |
-| requestBody | personalizePublicKey | String | 必选 | Applet的个人化公钥，用于加密个人化字段值。 |
-| requestBody | personalizeCert | String | 必选 | Applet身份私钥对个人化公钥personalizePublicKey的签名。 |
-| requestBody | personalizeCertType | String | 必选 | 固定值，默认为私钥签名。 |
-| requestBody | transPublicKey | String | 必选 | 用于加密返回的对称秘钥，用于对返回的数据做数字信封。 |
-| requestBody | transId | String | 必选 | 事务流水，用于拼接返回的对称秘钥。 |
-| signature | - | String | 必选 | Applet的身份私钥对requestBody的Hash值的签名。[获取个人化数据Token](#获取个人化数据token)作为其中requestbody一个key参与Hash值计算。 |
-| certificate | signature | String | 必选 | 在[设备认证](#设备认证)接口返回的certificate的签名。 DK业务管理服务使用[创建Wallet Kit服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-preparations)步骤5生成的私钥对Applet的身份公钥签名信息。 |
-| certificate | publicKey | String | 必选 | 在[设备认证](#设备认证)接口返回的certificate里的Applet的身份公钥。 |
+| requestBody | cardSEId | String | 是 | Applet唯一标识，可以用于车端秘钥分散 |
+| requestBody | passTypeIdentifier | String | 是 | 创建Wallet Kit服务时注册的服务号，需要开发者到华为AGC网站申请。 |
+| requestBody | serialNumber | String | 是 | 车钥匙卡片在华为钱包云服务器中的卡号，回调时以便发卡方根据此值识别具体的卡券记录。 |
+| requestBody | passVersion | String | 否 | 版本号，固定“固定10.0”。 |
+| requestBody | userDeviceId | String | 是 | 用户在当前设备上的唯一标识。 |
+| requestBody | personalizePublicKey | String | 是 | Applet的个人化公钥，用于加密个人化字段值。 |
+| requestBody | personalizeCert | String | 是 | Applet身份私钥对个人化公钥personalizePublicKey的签名。 |
+| requestBody | personalizeCertType | String | 是 | 固定值，默认为私钥签名。 |
+| requestBody | transPublicKey | String | 是 | 用于加密返回的对称秘钥，用于对返回的数据做数字信封。 |
+| requestBody | transId | String | 是 | 事务流水，用于拼接返回的对称秘钥。 |
+| signature | - | String | 是 | Applet的身份私钥对requestBody的Hash值的签名。[获取个人化数据Token](#获取个人化数据token)作为其中requestbody一个key参与Hash值计算。 |
+| certificate | signature | String | 是 | 在[设备认证](#设备认证)接口返回的certificate的签名。 DK业务管理服务使用创建Wallet Kit服务步骤5生成的私钥对Applet的身份公钥签名信息。 |
+| certificate | publicKey | String | 是 | 在[设备认证](#设备认证)接口返回的certificate里的Applet的身份公钥。 |
 
 #### [h2]请求示例
 
 ```
+POST /v1/passes/requestPersonalize HTTP/1.1
+Content-Type: application/json;charset=UTF-8
+Authorization: Bearer bKyECwrVGw********************e
 {
   "requestBody": {
     "cardSEId": "xxxxxxxxxxxxxxxx",
@@ -404,31 +421,33 @@ Response Header
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| Content-Type | 是 | String | 取值为：application/json;charset=UTF-8 |
+| Content-Type | 是 | String | 数据格式，取值为：application/json;charset=UTF-8。 |
 
 Response Body
 
-| 父节点参数 | 子节点参数 | 参数类型 | 是否可选 | 描述 |
+| 父节点参数 | 子节点参数 | 参数类型 | 是否必选 | 描述 |
 | --- | --- | --- | --- | --- |
-| Httpstatus | - | String | 必选 | 接口网络状态码。 |
-| response | encryptSessionKey | String | 必选 | DK业务管理服务使用请求中的transPublicKey加密生成的sessionKey。采用Base64编码，加密前的字段说明：三方生成AES128的aesKey和aesIv，用于加密生成encryptAppletPersonalizeFields和encryptDevicePass。使用请求中transPublicKey字段加密transId+aesKey+aesIv，对结果进行base64编码即得到encryptSessionKey。加密算法: RSA/ECB/OAEPWithSHA-256AndMGF1Padding。 |
-| response | encryptDevicePass | String | 可选 | 空字符串"" |
-| response | encryptAppletPersonalizeFields | String | 必选 | 用于蓝牙/NFC刷卡时的认证以及数据加解密操作。DK业务管理服务通过生成的sessionKey加密Applet的个人化参数密文。采用Base64编码 |
-| signature | - | String | 必选 | DK业务管理服务使用[创建Wallet Kit服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-preparations)步骤5生成的私钥对response的Hash值进行签名。 |
+| Httpstatus | - | String | 是 | 接口网络状态码，参考[REST API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-error-code)进行处理。 |
+| response | encryptSessionKey | String | 是 | DK业务管理服务使用请求中的transPublicKey加密生成的sessionKey。采用Base64编码，加密前的字段说明：三方生成AES128的aesKey和aesIv，用于加密生成encryptAppletPersonalizeFields和encryptDevicePass。使用请求中transPublicKey字段加密transId+aesKey+aesIv，对结果进行base64编码即得到encryptSessionKey。加密算法: RSA/ECB/OAEPWithSHA-256AndMGF1Padding。 |
+| response | encryptDevicePass | String | 否 | 空字符串"" |
+| response | encryptAppletPersonalizeFields | String | 是 | 用于蓝牙/NFC刷卡时的认证以及数据加解密操作。DK业务管理服务通过生成的sessionKey加密Applet的个人化参数密文。采用Base64编码 |
+| signature | - | String | 是 | DK业务管理服务使用创建Wallet Kit服务步骤5生成的私钥对response的Hash值进行签名。 |
 
-| encryptAppletPersonalizeFields子节点参数 | 类型 | 是否可选 | 存储格式 | 描述 |
+| encryptAppletPersonalizeFields子节点参数 | 类型 | 是否必选 | 存储格式 | 描述 |
 | --- | --- | --- | --- | --- |
-| temp_key | String | 必选 | - | aesKey(AES128的key)，长度16字节，用于加密CardId，cardPrivateInfo信息。temp_key：aesKey明文之前拼接一个固定的十六进制字符前缀"34810233"后，使用Applet个人化公钥appletPublicKey对其进行加密。加密算法RSA/NONE/OAEPWithSHA1AndMGF1Padding。 |
-| temp_iv | String | 必选 | - | aesIv(AES128的iv)，长度16字节，用于applet解密写卡数据。temp_iv：aesIv使用Applet个人化公钥appletPublicKey加密。加密算法RSA/NONE/OAEPWithSHA1AndMGF1Padding。 |
-| card_id | String | 必选 | 9F3B + Lc + CardId | CardId即发卡方发放的卡片唯一标识（和"生成钥匙卡片"中的serialNumber保持一致），长度16字节。使用TLV格式存储：T=9F3B，Lc=10，V=CardId；加密方式：使用aesKey，aesIv对整个TLV加密，并转换成十六进制字符串。CBC模式加密，加密算法：AES/CBC/NoPadding。 |
-| card_key | String | 必选 | - | 发卡方发放的卡片密钥，16字节，一张卡支持1个秘钥，计算SessionKey时使用。使用"34010133"作为前缀拼接后加密；使用Applet个人化公钥appletPublicKey对拼接后的十六进制字符进行加密。加密算法RSA/NONE/OAEPWithSHA1AndMGF1Padding。 |
-| card_info | String | 必选 | 9F05 + Lc + CardInfo1 + 9F31 + Lc + CardAuthParameter | 发卡方发放的卡片私有信息，允许在AUTH认证之前读取（GetProcessData步骤），TLV格式存储（多个TLV数据拼接）。加密方式：TLV明文数据补800...00到16字节整数倍，使用aesKey，aesIv加密后的结果，并转换成十六进制字符串。CBC模式加密，加密算法：AES/CBC/NoPadding。 |
-| card_privateInfo | String | 必选 | - | 发卡方发放的卡片私有信息，如卡片有效期、权限等信息，在AUTH认证之后读取（ReadBinary步骤），三方自行解析。加密方式：数据明文后补800...00到16字节整数倍，使用aesKey，aesIv加密后的结果，并转换成十六进制字符串。CBC模式加密，加密算法：AES/CBC/NoPadding。 |
-| card_key_iv | String | 必选 | Lc + CardKeyIV | 交易流程协商的SessionKey使用（需要同步下发到车端），16字节，如您无需使用此值，请传入全0。 |
+| temp_key | String | 是 | - | aesKey(AES128的key)，长度16字节，用于加密CardId，cardPrivateInfo信息。temp_key：aesKey明文之前拼接一个固定的十六进制字符前缀"34810233"后，使用Applet个人化公钥appletPublicKey对其进行加密。加密算法RSA/NONE/OAEPWithSHA1AndMGF1Padding。 |
+| temp_iv | String | 是 | - | aesIv(AES128的iv)，长度16字节，用于applet解密写卡数据。temp_iv：aesIv使用Applet个人化公钥appletPublicKey加密。加密算法RSA/NONE/OAEPWithSHA1AndMGF1Padding。 |
+| card_id | String | 是 | 9F3B + Lc + CardId | CardId即发卡方发放的卡片唯一标识（和"生成钥匙卡片"中的serialNumber保持一致），长度16字节。使用TLV格式存储：T=9F3B，Lc=10，V=CardId；加密方式：使用aesKey，aesIv对整个TLV加密，并转换成十六进制字符串。CBC模式加密，加密算法：AES/CBC/NoPadding。 |
+| card_key | String | 是 | - | 发卡方发放的卡片密钥，16字节，一张卡支持1个秘钥，计算SessionKey时使用。使用"34010133"作为前缀拼接后加密；使用Applet个人化公钥appletPublicKey对拼接后的十六进制字符进行加密。加密算法RSA/NONE/OAEPWithSHA1AndMGF1Padding。 |
+| card_info | String | 是 | 9F05 + Lc + CardInfo1 + 9F31 + Lc + CardAuthParameter | 发卡方发放的卡片私有信息，允许在AUTH认证之前读取（GetProcessData步骤），TLV格式存储（多个TLV数据拼接）。加密方式：TLV明文数据补800...00到16字节整数倍，使用aesKey，aesIv加密后的结果，并转换成十六进制字符串。CBC模式加密，加密算法：AES/CBC/NoPadding。 |
+| card_privateInfo | String | 是 | - | 发卡方发放的卡片私有信息，如卡片有效期、权限等信息，在AUTH认证之后读取（ReadBinary步骤），三方自行解析。加密方式：数据明文后补800...00到16字节整数倍，使用aesKey，aesIv加密后的结果，并转换成十六进制字符串。CBC模式加密，加密算法：AES/CBC/NoPadding。 |
+| card_key_iv | String | 是 | Lc + CardKeyIV | 交易流程协商的SessionKey使用（需要同步下发到车端），16字节，如您无需使用此值，请传入全0。 |
 
 #### [h2]响应示例
 
 ```
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8
 {
   "httpStatus": "0",
   "response": {
@@ -486,4 +505,257 @@ Response Body
         response.setSignature(signature);
         return response;
     }
+```
+
+#### NFC相关事件回调通知接口
+
+用户进行华为钱包NFC能力相关操作时，华为钱包服务器调用此API通知开发者服务器。
+
+#### [h2]接口原型
+
+- **承载协议**：HTTPS POST
+- **接口方向**：钱包云服务->三方业务管理服务
+- **接口URL**：开发者在华为AGC网站上提供的NFC回调地址
+- **数据格式**： 请求消息：Content-Type: application/json;charset=UTF-8 响应消息：Content-Type: application/json;charset=UTF-8
+
+#### [h2]请求参数
+
+Request Header
+
+| 参数 | 是否必选 | 参数类型 | 描述 |
+| --- | --- | --- | --- |
+| HMSSignType | 是 | String | 签名方式，固定值：SHA256WithRSA/PSS。 |
+| HMSSign | 是 | String | 签名值 |
+| Version | 是 | String | 回调接口版本号，固定值：V2。 |
+
+Request Body
+
+| 参数 | 是否必选 | 参数类型 | 描述 |
+| --- | --- | --- | --- |
+| eventId | 是 | String | 事件ID。若钱包服务器多次重试发送回调通知，开发者服务器可以用此参数去重。 |
+| eventTime | 是 | String | 事件发生时间（UTC时间）："yyyy-MM-dd'T'HH:mm:ss:SSS'Z'" |
+| eventType | 是 | String | 事件类型： RECEIVE_CARD：用户领取NFC卡券。 DELETE_CARD：删除NFC卡券。 SWIPE_CARD：用户使用NFC卡券刷卡。 |
+| passNumber | 是 | String | 卡券号，即serialNumber。 |
+| passTypeIdentifier | 是 | String | 开发者在AGC网站注册的服务号。 |
+| sceneType | 是 | String | 场景类型： USER_OPERATION_DELETE_CARD：用户在华为钱包App里删卡，或用户在华为钱包App退出华为账号触发删卡。 RESTORE_FACTORY_SETTINGS：用户恢复手机出厂设置触发删卡。 REMOTE_DELETE_CARD：华为服务器删卡，如用户挂失场景。 THIRD_PARTY_DELETE_CARD：开发者删卡。 |
+| pushToken | 是 | String | 账号及设备关联的唯一标识。 |
+| noticeToken | 是 | String | NFC事件对应的标识，用于调用用户使用NFC能力后推送消息接口。此标识有效时间为3分钟。 |
+
+#### [h2]请求示例
+
+```
+POST /api/callback HTTP/1.1
+HMSSignType: SHA256WithRSA/PSS
+HMSSign: u+H1Oe3fXV9mGCES89XA7tSjp8+TELYgG4bKyECwrVGwwExH********************g
+Version: V2
+{
+  "requestBody": {
+    "eventId": "0a1f133471c4102c8171f845919906f3",
+    "eventTime": "2020-04-27T07:40:24.259Z",
+    "eventType": "DELETE_CARD",
+    "passNumber": "40001",
+    "passTypeIdentifier": "hwpass.com.partner.examplepasstype"
+ },
+  "certificate": {
+    "publicKey": "xxx",
+    "signature": "xxx"
+  },
+  "signature": "xxx"
+}
+```
+
+#### [h2]响应参数
+
+Response Header
+
+| 参数 | 是否必选 | 参数类型 | 描述 |
+| --- | --- | --- | --- |
+| Content-Type | 是 | String | 数据格式，取值为：application/json;charset=UTF-8。 |
+
+Response Body
+
+| 参数 | 是否必选 | 参数类型 | 描述 |
+| --- | --- | --- | --- |
+| returnCode | 是 | String | 响应码，参考[REST API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-error-code)进行处理。 |
+| returnDesc | 是 | String | 错误描述 |
+
+#### [h2]响应示例
+
+```
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "returnCode": "0",
+  "returnDesc": "success",
+}
+```
+
+#### [h2]调用示例
+
+```
+@Data
+public class CallbackRequest {
+    // 事件id，随机值
+      private String eventId;
+    // 模板id
+    private String modelId;
+    // 卡实例id
+       private String instanceId;
+    // 事件发生时间
+       private String eventTime;
+    // 事件类型，RECEIVE_CARD/DELETE_CARD/TASK_RESULT_NOTIFY
+    private String eventType;
+    // 服务号
+       private String passTypeIdentifier;
+    // 场景类型
+       private String sceneType;
+}
+// 三方接收Wallet Kit云侧回调请求
+public HwWalletObject getHwCallback(@RequestBody CallbackRequest request, @RequestHeaders Map<String, String> headers) {
+    // 获取请求头签名信息
+    String version = headerMaps.get("version");
+       String signType = headerMaps.get("HMSSignType");
+       String sign = headerMaps.get("HMSSign");
+    // 对请求体进行验签
+    String signContent = ToStringUtil.signString(request);
+    String verifyHwSignPubKey = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1+b2/q6KEJfvI65xJLXhPMT8YRUO618zsgaW4pNGZ+r/mwfFC1EOZbcBp7sV0IaxSWeMy0WNyJPSh/JltuiC1R93hfA0Kh3DlaRWaDgJz9VC1b+aPjUOx+uqndOEFiZcKGGnM60YPXfyo7xCDH76/WsWR0G4Ov6MoYQ76RAUT0t+G0oumYGgdLYwx5hJ1ywDKPXszj7A/mKHtWJKiylPIhUK2mLwKR8Y/+3dLNuNomvb7miVgeBFiriwGS1FolQMu433zEugAqRgsiasZAKfVK1BChPmiC812IMS1UPhz1wwpXzzkjQ1YQUGjnbHpooKobeCyctKKgF27F84egpzsQIDAQAB";
+    verifySignature(signContent, verifyHwSignPubKey, sign);
+    // 获取华为侧回调请求体信息，包括eventType、instanceId
+       String eventType = request.getEventType();
+       String instanceId = request.getInstanceId();
+       // 三方视自己业务情况进行业务逻辑处理，根据事件类型对相应卡进行状态更新等操作
+
+       // 响应成功
+       BaseResponse response = new BaseResponse();
+       response.setReturnCode(“0”);
+       response.setReturnDesc(“success”);
+       return response;
+}
+// 签名验签过程中对请求体字段按序排列生成待签名明文字符串工具类
+public class ToStringUtil {
+    public static String signString(Object obj) {
+        if (obj == null) {
+            return StringUtils.EMPTY;
+        }
+        if (obj instanceof Map) {
+            return signStringFromMap((Map<?, ?>) obj);
+        }
+        return signStringFromObject(obj);
+    }
+
+    private static String signStringFromMap(Map<?, ?> map) {
+        if (map == null || map.isEmpty()) {
+            return StringUtils.EMPTY;
+        }
+        String result = map.entrySet().stream()
+                .filter(entry -> !isEmptyValue(entry.getValue()))
+                .sorted(Comparator.comparing(e -> String.valueOf(e.getKey())))
+                .map(entry -> entry.getKey() + "=" + convertValueToString(entry.getValue()))
+                .collect(Collectors.joining("&"));
+        return result;
+    }
+
+    private static String signStringFromObject(Object obj) {
+        Class<?> clazz = obj.getClass();
+        List<Field> fields = Arrays.asList(clazz.getDeclaredFields());
+        String result = fields.stream()
+                .filter(field -> {
+                    field.setAccessible(true);
+                    try {
+                        Object value = field.get(obj);
+                        return !isEmptyValue(value);
+                    } catch (Exception e) {
+                        return false;
+                    }
+                })
+                .sorted(Comparator.comparing(Field::getName))
+                .map(field -> {
+                    try {
+                        field.setAccessible(true);
+                        Object value = field.get(obj);
+                        return field.getName() + "=" + convertValueToString(value);
+                    } catch (Exception e) {
+                        return null;
+                    }
+                })
+                .filter(Objects::nonNull)
+                .collect(Collectors.joining("&"));
+        return result;
+    }
+
+    private static boolean isEmptyValue(Object value) {
+        if (value == null) {
+            return true;
+        }
+        if (value instanceof String) {
+            return StringUtils.isEmpty((String) value);
+        }
+        return false;
+    }
+
+    private static String convertValueToString(Object value) {
+        if (value == null) {
+            return StringUtils.EMPTY;
+        }
+        if (value instanceof Map) {
+            return signStringFromMap((Map<?, ?>) value);
+        }
+        if (value instanceof List) {
+            return ((List<?>) value).stream()
+                    .map(ToStringUtil::convertValueToString)
+                    .collect(Collectors.joining(","));
+        }
+        return String.valueOf(value);
+    }
+}
+// 使用SHA256WithRSA/PSS算法进行签名验签工具类
+public class RsaUtil {
+    private static final String SIGN_ALGORITHMS256 = "SHA256WithRSA/PSS";
+    private static final BouncyCastleProvider BOUNCY_CASTLE_PROVIDER = new BouncyCastleProvider();
+    static {
+        if (Security.getProvider("BC") == null) {
+            Security.addProvider(new BouncyCastleProvider());
+        }
+    }
+
+    public static String sign(String content, String privateKey) {
+        String charset = "utf-8";
+        try {
+            PKCS8EncodedKeySpec privatePKCS8 = new PKCS8EncodedKeySpec(Base64.getDecoder().decode(privateKey));
+            KeyFactory keyFactory = KeyFactory.getInstance("RSA");
+            PrivateKey priKey = keyFactory.generatePrivate(privatePKCS8);
+
+            java.security.Signature signatureObj = java.security.Signature.getInstance(SIGN_ALGORITHMS256);
+            signatureObj.initSign(priKey);
+            signatureObj.update(content.getBytes(charset));
+
+            byte[] signed = signatureObj.sign();
+            return Base64.getEncoder().encodeToString(signed);
+        } catch (Exception e) {
+            throw new IllegalArgumentException("Get signature failed. Error: " + e.getMessage());
+        }
+    }
+
+    public static String encrypt(byte[] bytes, String publicKey, String algorithm) throws Exception {
+        Key key = getPublicKey(publicKey);
+        Cipher cipher = Cipher.getInstance(algorithm, BOUNCY_CASTLE_PROVIDER);
+        cipher.init(Cipher.ENCRYPT_MODE, key);
+        byte[] b1 = cipher.doFinal(bytes);
+        return Base64.getEncoder().encodeToString(b1);
+    }
+
+    public static PublicKey getPublicKey(String key) throws Exception {
+        X509EncodedKeySpec keySpec = new X509EncodedKeySpec(Base64.getDecoder().decode(key));
+        KeyFactory keyFactory = KeyFactory.getInstance("RSA");
+        return keyFactory.generatePublic(keySpec);
+    }
+
+    public static boolean verifySignature(String content, String publicKey, String sign) throws Exception {
+        PublicKey key = getPublicKey(publicKey);
+        Signature signature = Signature.getInstance(SIGN_ALGORITHMS256);
+        signature.initVerify(key);
+        signature.update(content.getBytes());
+        return signature.verify(Base64.getDecoder().decode(sign.getBytes()));
+    }
+}
 ```

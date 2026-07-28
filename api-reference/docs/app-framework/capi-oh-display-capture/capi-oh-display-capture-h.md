@@ -2,8 +2,8 @@
 title: "oh_display_capture.h"
 upstream_id: "harmonyos-references/capi-oh-display-capture-h"
 catalog: "harmonyos-references"
-content_hash: "ff1ea042b9dd"
-synced_at: "2026-07-09T00:58:37.526578"
+content_hash: "603377b8672d"
+synced_at: "2026-07-28T16:49:26.221882"
 ---
 
 # oh_display_capture.h
@@ -43,7 +43,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_CaptureScreenPixelmap(uin
 
 需要权限：
 
-- API版本22+：ohos.permission.CUSTOM_SCREEN_CAPTURE或ohos.permission.CUSTOM_SCREEN_RECORDING
+- API版本22+：ohos.permission.CUSTOM_SCREEN_CAPTURE 或 ohos.permission.CUSTOM_SCREEN_RECORDING
 - API版本14-21：ohos.permission.CUSTOM_SCREEN_CAPTURE
 
 起始版本： 14
@@ -61,4 +61,4 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_CaptureScreenPixelmap(uin
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_NO_PERMISSION，表示权限校验失败，应用无权限使用该API，需要申请权限。 返回DISPLAY_MANAGER_ERROR_INVALID_PARAM，表示参数检查失败。 返回DISPLAY_MANAGER_ERROR_DEVICE_NOT_SUPPORTED，表示该设备不支持此API。 返回DISPLAY_MANAGER_ERROR_SYSTEM_ABNORMAL，表示系统服务工作异常。 |

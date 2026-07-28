@@ -2,8 +2,8 @@
 title: "图像类型定义"
 upstream_id: "harmonyos-references/ts-image-common"
 catalog: "harmonyos-references"
-content_hash: "6e1c6b84a0c0"
-synced_at: "2026-07-09T17:24:18.449510"
+content_hash: "ea9e52888396"
+synced_at: "2026-07-28T16:45:40.412039"
 ---
 
 # 图像类型定义
@@ -99,7 +99,7 @@ constructor()
 
 getImageAnalyzerSupportTypes(): ImageAnalyzerType[]
 
-获取对应组件支持的AI分析类型。
+获取此控制器已绑定组件所支持的AI分析类型。调用前需先通过 Image/ImageAnimator 等组件的 aiController 属性将本控制器绑定到组件，否则返回空数组。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -120,6 +120,8 @@ getImageAnalyzerSupportTypes(): ImageAnalyzerType[]
 #### [h2]属性
 
 元服务API： 从 API version 21开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 

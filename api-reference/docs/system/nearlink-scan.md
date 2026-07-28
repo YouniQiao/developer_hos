@@ -2,8 +2,8 @@
 title: "scan（星闪扫描能力）"
 upstream_id: "harmonyos-references/nearlink-scan"
 catalog: "harmonyos-references"
-content_hash: "4e194cbc2c6a"
-synced_at: "2026-07-09T00:59:26.798838"
+content_hash: "5add3a5b0e1e"
+synced_at: "2026-07-28T16:50:42.193742"
 ---
 
 # scan（星闪扫描能力）
@@ -54,7 +54,7 @@ startScan(filters: Array<ScanFilters>, options?: ScanOptions): Promise<void>
 | 201 | Permission denied. |
 | 401 | Invalid parameter. |
 | 801 | Capability not supported. |
-| 1009700003 | Nearlink is off. |
+| 1009700003 | NearLink is off. |
 | 1009700099 | Operation failed. |
 
 示例：
@@ -116,7 +116,7 @@ startScan(filters: Array<ScanFilters> | null, options?: ScanOptions): Promise<vo
 | --- | --- |
 | 201 | Permission denied. |
 | 801 | Capability not supported. |
-| 1009700003 | Nearlink is off. |
+| 1009700003 | NearLink is off. |
 | 1009700099 | Operation failed. |
 
 示例：
@@ -180,7 +180,7 @@ stopScan(): Promise<void>
 | --- | --- |
 | 201 | Permission denied. |
 | 801 | Capability not supported. |
-| 1009700003 | Nearlink is off. |
+| 1009700003 | NearLink is off. |
 | 1009700099 | Operation failed. |
 
 示例：
@@ -327,6 +327,7 @@ try {
 | manufacturerId | number | 否 | 是 | 表示厂商ID，取值范围[1, 65535]，若未配置则默认不过滤该字段。 |
 | manufacturerData | ArrayBuffer | 否 | 是 | 表示厂商数据，若未配置则默认不过滤该字段。配置该字段需同时配置manufacturerId。 |
 | manufacturerDataMask | ArrayBuffer | 否 | 是 | 表示厂商数据掩码，若未配置则默认不过滤该字段。配置该字段需同时配置manufacturerData，且二者长度必须一致。 |
+| rssi | number | 否 | 是 | 过滤信号强度大于或等于该信号强度门限值的广播报文，取值范围[-128, 127]，单位：dBm。建议设置[-90, 20]范围内的门限值。 |
 
 #### ScanOptions
 
@@ -340,8 +341,8 @@ try {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| scanMode | [ScanMode](#scanmode) | 否 | 是 | 表示扫描模式。默认值为'SCAN_MODE_LOW_POWER' |
-| duration | number | 否 | 是 | 表示扫描持续时间。单位second，取值范围[10, 60]，默认值为全时段扫描 |
+| scanMode | [ScanMode](#scanmode) | 否 | 是 | 表示扫描模式。默认值为'SCAN_MODE_LOW_POWER'。 |
+| duration | number | 否 | 是 | 表示扫描持续时间。单位second，取值范围[10, 60]，默认值为全时段扫描。 |
 
 #### ScanMode
 

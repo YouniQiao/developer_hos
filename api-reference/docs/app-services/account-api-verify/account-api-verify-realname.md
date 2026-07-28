@@ -2,8 +2,8 @@
 title: "实名信息校验"
 upstream_id: "harmonyos-references/account-api-verify-realname"
 catalog: "harmonyos-references"
-content_hash: "944ba8b01344"
-synced_at: "2026-07-09T01:01:13.815830"
+content_hash: "9df2fa48b210"
+synced_at: "2026-07-28T16:52:31.400768"
 ---
 
 # 实名信息校验
@@ -200,7 +200,7 @@ public class VerifyRealNameDemo {
     request.add(new BasicNameValuePair("access_token", accessToken));
     request.add(new BasicNameValuePair("sceneID", String.valueOf(sceneID)));
     request.add(new BasicNameValuePair("realName", encryptBySHA512(realName)));
-    request.add(new BasicNameValuePair("ctfCode", encryptBySHA512(ctfCode.toLowerCase(Locale.US))));
+    request.add(new BasicNameValuePair("ctfCode", encryptBySHA512(ctfCode.toUpperCase(Locale.US))));
     if (ctfType != null) {
       request.add(new BasicNameValuePair("ctfType", String.valueOf(ctfType)));
     }

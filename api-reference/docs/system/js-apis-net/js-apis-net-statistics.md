@@ -2,8 +2,8 @@
 title: "@ohos.net.statistics (流量管理)"
 upstream_id: "harmonyos-references/js-apis-net-statistics"
 catalog: "harmonyos-references"
-content_hash: "62544bb27a60"
-synced_at: "2026-07-09T00:59:28.071863"
+content_hash: "c488f74a5f21"
+synced_at: "2026-07-28T16:50:43.054514"
 ---
 
 # @ohos.net.statistics (流量管理)
@@ -556,6 +556,7 @@ getUidRxBytes(uid: number, callback: AsyncCallback<number>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
+| 201 | Permission denied. 适用版本：26.0.0+ |
 | 401 | Parameter error. |
 | 2100002 | Failed to connect to the service. |
 | 2100003 | System internal error. |
@@ -611,6 +612,7 @@ getUidRxBytes(uid: number): Promise<number>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
+| 201 | Permission denied. 适用版本：26.0.0+ |
 | 401 | Parameter error. |
 | 2100002 | Failed to connect to the service. |
 | 2100003 | System internal error. |
@@ -656,6 +658,7 @@ getUidTxBytes(uid: number, callback: AsyncCallback<number>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
+| 201 | Permission denied. 适用版本：26.0.0+ |
 | 401 | Parameter error. |
 | 2100002 | Failed to connect to the service. |
 | 2100003 | System internal error. |
@@ -711,6 +714,7 @@ getUidTxBytes(uid: number): Promise<number>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
+| 201 | Permission denied. 适用版本：26.0.0+ |
 | 401 | Parameter error. |
 | 2100002 | Failed to connect to the service. |
 | 2100003 | System internal error. |

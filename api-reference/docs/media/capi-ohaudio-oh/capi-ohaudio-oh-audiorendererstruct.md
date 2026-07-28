@@ -2,19 +2,19 @@
 title: "OH_AudioRendererStruct"
 upstream_id: "harmonyos-references/capi-ohaudio-oh-audiorendererstruct"
 catalog: "harmonyos-references"
-content_hash: "be963df20c08"
-synced_at: "2026-07-09T01:00:11.762579"
+content_hash: "940ac21bea20"
+synced_at: "2026-07-28T16:51:30.747065"
 ---
 
 # OH_AudioRendererStruct
 
 ```
-typedef struct OH_AudioRendererStruct OH_AudioRenderer
+typedef struct OH_AudioRendererStruct OH_AudioRenderer;
 ```
 
 #### 概述
 
-声明输出音频流。输出音频流的实例被用来播放音频数据。
+声明输出音频渲染器。输出音频渲染器的实例被用来播放音频数据。
 
 起始版本： 10
 

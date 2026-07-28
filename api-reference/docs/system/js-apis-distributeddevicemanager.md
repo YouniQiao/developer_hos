@@ -2,8 +2,8 @@
 title: "@ohos.distributedDeviceManager (设备管理)"
 upstream_id: "harmonyos-references/js-apis-distributeddevicemanager"
 catalog: "harmonyos-references"
-content_hash: "9526038aab10"
-synced_at: "2026-07-09T00:59:25.799355"
+content_hash: "39a342e2bd56"
+synced_at: "2026-07-28T16:50:41.483591"
 ---
 
 # @ohos.distributedDeviceManager (设备管理)
@@ -657,7 +657,7 @@ try {
 
 bindTarget(deviceId: string, bindParam: {[key: string]: Object;} , callback: AsyncCallback<{deviceId: string;}>): void
 
-认证设备。使用callback异步回调。
+认证设备，将发现的不可信设备通过认证流程绑定为可信设备（HarmonyOS产品的设备，登录相同华为账号后自动触发认证，用户无需通过此接口触发认证）。认证过程中，系统会根据bindParam中指定的认证类型发起认证请求，认证成功后设备将加入可信设备列表，可通过getAvailableDeviceListSync查询。当不再需要与目标设备进行分布式业务时，可调用unbindTarget解除绑定。使用callback异步回调。
 
 需要权限：ohos.permission.DISTRIBUTED_DATASYNC
 
@@ -723,7 +723,7 @@ try {
 
 unbindTarget(deviceId: string): void
 
-解除认证设备。
+解除认证设备，用于在不再需要与目标设备进行分布式业务时，解除与该设备的认证关系（HarmonyOS产品的设备，退出华为账号后，与周边同账号设备的可信关系自动解除，用户无需通过此接口触发同账号设备的可信关系解除认证）。与bindTarget方法配合使用，仅能解除已通过bindTarget认证绑定的可信设备。解除后设备将从可信设备列表中移除，可通过getAvailableDeviceListSync或getAvailableDeviceList查询确认。
 
 需要权限：ohos.permission.DISTRIBUTED_DATASYNC
 

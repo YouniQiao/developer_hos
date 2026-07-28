@@ -2,8 +2,8 @@
 title: "Interface (MovingPhoto)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-movingphoto"
 catalog: "harmonyos-references"
-content_hash: "d7955841966e"
-synced_at: "2026-07-09T01:00:47.138295"
+content_hash: "00c504af8e1a"
+synced_at: "2026-07-28T16:52:03.773490"
 ---
 
 # Interface (MovingPhoto)
@@ -126,7 +126,7 @@ requestContent(imageFileUri: string, videoFileUri: string): Promise<void>
 | --- | --- |
 | 201 | Permission denied |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 14000011 | System inner fail. |
+| 14000011 | System inner fail. Possible causes: 1. The database is corrupted; 2. The file system is abnormal; 3. The IPC request timed out. |
 
 示例：
 
@@ -220,7 +220,7 @@ requestContent(resourceType: ResourceType, fileUri: string): Promise<void>
 | --- | --- |
 | 201 | Permission denied |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 14000011 | System inner fail. |
+| 14000011 | System inner fail. Possible causes: 1. The database is corrupted; 2. The file system is abnormal; 3. The IPC request timed out. |
 
 示例：
 
@@ -308,7 +308,7 @@ requestContent(resourceType: ResourceType): Promise<ArrayBuffer>
 | --- | --- |
 | 201 | Permission denied |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
-| 14000011 | System inner fail. |
+| 14000011 | System inner fail. Possible causes: 1. The database is corrupted; 2. The file system is abnormal; 3. The IPC request timed out. |
 
 示例：
 

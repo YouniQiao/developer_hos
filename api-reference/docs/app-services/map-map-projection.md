@@ -2,8 +2,8 @@
 title: "Interface (Projection)"
 upstream_id: "harmonyos-references/map-map-projection"
 catalog: "harmonyos-references"
-content_hash: "97ff1602a15a"
-synced_at: "2026-07-09T01:01:25.061119"
+content_hash: "58d7b3802fa5"
+synced_at: "2026-07-28T16:52:43.221681"
 ---
 
 # Interface (Projection)
@@ -50,7 +50,7 @@ fromScreenLocation(point: mapCommon.MapPoint): mapCommon.LatLng
 
 | **参数名** | **类型** | 必填 | **说明** |
 | --- | --- | --- | --- |
-| point | [mapCommon.MapPoint](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#mappoint) | 是 | 屏幕上的坐标点，单位：px，异常值不处理。 |
+| point | [mapCommon.MapPoint](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#mappoint) | 是 | 屏幕上的坐标点，异常值不处理。 |
 
 返回值：
 
@@ -66,6 +66,43 @@ let point: mapCommon.MapPoint = {
   positionY: 10
 };
 let latLng: mapCommon.LatLng = projection.fromScreenLocation(point);
+```
+
+#### [h2]fromScreenLocation
+
+fromScreenLocation(point: mapCommon.MapPoint, altitude: number): mapCommon.LatLng
+
+将屏幕像素点坐标转换成经纬度坐标。屏幕位置是以相对于地图界面的左上角的屏幕像素指定的。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.Map.Core
+
+起始版本： 26.0.0
+
+参数：
+
+| **参数名** | **类型** | 必填 | **说明** |
+| --- | --- | --- | --- |
+| point | [mapCommon.MapPoint](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#mappoint) | 是 | 屏幕上的坐标点，异常值不处理。 |
+| altitude | number | 是 | 相对于地面的高度，单位：m，默认值：0，异常值按默认值处理。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| [mapCommon.LatLng](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#latlng) | 经纬度坐标。 |
+
+示例：
+
+```
+let point: mapCommon.MapPoint = {
+  positionX: 10,
+  positionY: 10
+};
+let latLng: mapCommon.LatLng = projection.fromScreenLocation(point, 100);
 ```
 
 #### [h2]toScreenLocation
@@ -92,15 +129,53 @@ toScreenLocation(position: mapCommon.LatLng): mapCommon.MapPoint
 
 | 类型 | 说明 |
 | --- | --- |
-| [mapCommon.MapPoint](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#mappoint) | 屏幕上的坐标点，单位：px。 |
+| [mapCommon.MapPoint](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#mappoint) | 屏幕上的坐标点。 |
 
 示例：
 
 ```
-let position: mapCommon.MapPoint = projection.toScreenLocation({
+let position: mapCommon.LatLng = {
   latitude: 31.984,
   longitude: 118.766
-});
+}
+let mapPoint: mapCommon.MapPoint = projection.toScreenLocation(position)
+```
+
+#### [h2]toScreenLocation
+
+toScreenLocation(position: mapCommon.LatLng, altitude: number): mapCommon.MapPoint
+
+将经纬度坐标转换为屏幕上的对应点坐标。该屏幕坐标是相对于地图左上角而非整个屏幕的像素点坐标。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.Map.Core
+
+起始版本： 26.0.0
+
+参数：
+
+| **参数名** | **类型** | 必填 | **说明** |
+| --- | --- | --- | --- |
+| position | [mapCommon.LatLng](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#latlng) | 是 | 经纬度坐标，异常值不处理。 |
+| altitude | number | 是 | 相对于地面的高度，单位：m，默认值：0，异常值按默认值处理。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| [mapCommon.MapPoint](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#mappoint) | 屏幕上的坐标点。 |
+
+示例：
+
+```
+let position: mapCommon.LatLng = {
+  latitude: 31.984,
+  longitude: 118.766
+}
+let mapPoint: mapCommon.MapPoint = projection.toScreenLocation(position, 100)
 ```
 
 #### [h2]getVisibleRegion

@@ -2,8 +2,8 @@
 title: "Filter"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-filter"
 catalog: "harmonyos-references"
-content_hash: "42a8f6b7cb44"
-synced_at: "2026-07-09T00:58:15.192771"
+content_hash: "79af8054d1e2"
+synced_at: "2026-07-28T16:48:17.625152"
 ---
 
 # Filter
@@ -135,7 +135,7 @@ struct Index {
         }
       }) {
         List({ initialIndex: 0 }) {
-          ForEach(this.arr, (item: string, index: number) => {
+          ForEach(this.arr, (item: number, index: number) => {
             ListItem() {
               Text(item.toString())
                 .width('100%')
@@ -156,4 +156,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732927.png)
+ ![](./img/zh-cn_image_0000002685928607.png)

@@ -2,8 +2,8 @@
 title: "uds.h"
 upstream_id: "harmonyos-references/capi-uds-h"
 catalog: "harmonyos-references"
-content_hash: "a71ec8089491"
-synced_at: "2026-07-09T00:57:20.413693"
+content_hash: "fafc781634d6"
+synced_at: "2026-07-28T16:40:52.893872"
 ---
 
 # uds.h
@@ -294,7 +294,7 @@ int OH_UdsPlainText_SetContent(OH_UdsPlainText* pThis, const char* content)
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsPlainText_SetAbstract()
 
@@ -318,7 +318,7 @@ int OH_UdsPlainText_SetAbstract(OH_UdsPlainText* pThis, const char* abstract)
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsHyperlink_Create()
 
@@ -445,7 +445,7 @@ int OH_UdsHyperlink_SetUrl(OH_UdsHyperlink* pThis, const char* url)
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsHyperlink_SetDescription()
 
@@ -469,7 +469,7 @@ int OH_UdsHyperlink_SetDescription(OH_UdsHyperlink* pThis, const char* descripti
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsHtml_Create()
 
@@ -596,7 +596,7 @@ int OH_UdsHtml_SetContent(OH_UdsHtml* pThis, const char* content)
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsHtml_SetPlainContent()
 
@@ -620,7 +620,7 @@ int OH_UdsHtml_SetPlainContent(OH_UdsHtml* pThis, const char* plainContent)
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsAppItem_Create()
 
@@ -654,7 +654,7 @@ void OH_UdsAppItem_Destroy(OH_UdsAppItem* pThis)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示一个指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
+| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
 
 #### [h2]OH_UdsAppItem_GetType()
 
@@ -671,7 +671,7 @@ const char* OH_UdsAppItem_GetType(OH_UdsAppItem* pThis)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示一个指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
+| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
 
 返回：
 
@@ -694,7 +694,7 @@ const char* OH_UdsAppItem_GetId(OH_UdsAppItem* pThis)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示一个指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
+| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
 
 返回：
 
@@ -717,7 +717,7 @@ const char* OH_UdsAppItem_GetName(OH_UdsAppItem* pThis)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示一个指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
+| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
 
 返回：
 
@@ -740,7 +740,7 @@ const char* OH_UdsAppItem_GetIconId(OH_UdsAppItem* pThis)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示一个指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
+| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
 
 返回：
 
@@ -763,7 +763,7 @@ const char* OH_UdsAppItem_GetLabelId(OH_UdsAppItem* pThis)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示一个指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
+| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
 
 返回：
 
@@ -786,7 +786,7 @@ const char* OH_UdsAppItem_GetBundleName(OH_UdsAppItem* pThis)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示一个指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
+| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
 
 返回：
 
@@ -809,7 +809,7 @@ const char* OH_UdsAppItem_GetAbilityName(OH_UdsAppItem* pThis)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示一个指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
+| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
 
 返回：
 
@@ -832,14 +832,14 @@ int OH_UdsAppItem_SetId(OH_UdsAppItem* pThis, const char* appId)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示一个指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
+| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
 | const char* appId | 表示应用ID。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsAppItem_SetName()
 
@@ -856,14 +856,14 @@ int OH_UdsAppItem_SetName(OH_UdsAppItem* pThis, const char* appName)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示一个指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
+| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
 | const char* appName | 表示应用名称。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsAppItem_SetIconId()
 
@@ -880,14 +880,14 @@ int OH_UdsAppItem_SetIconId(OH_UdsAppItem* pThis, const char* appIconId)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示一个指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
+| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
 | const char* appIconId | 表示图片ID。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsAppItem_SetLabelId()
 
@@ -904,14 +904,14 @@ int OH_UdsAppItem_SetLabelId(OH_UdsAppItem* pThis, const char* appLabelId)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示一个指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
+| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
 | const char* appLabelId | 表示标签ID。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsAppItem_SetBundleName()
 
@@ -928,14 +928,14 @@ int OH_UdsAppItem_SetBundleName(OH_UdsAppItem* pThis, const char* bundleName)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示一个指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
+| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
 | const char* bundleName | 表示bundle名称。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsAppItem_SetAbilityName()
 
@@ -952,14 +952,14 @@ int OH_UdsAppItem_SetAbilityName(OH_UdsAppItem* pThis, const char* abilityName)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示一个指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
+| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
 | const char* abilityName | 表示ability名称。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsFileUri_Create()
 
@@ -1086,7 +1086,7 @@ int OH_UdsFileUri_SetFileUri(OH_UdsFileUri* pThis, const char* fileUri)
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsFileUri_SetFileType()
 
@@ -1110,7 +1110,7 @@ int OH_UdsFileUri_SetFileType(OH_UdsFileUri* pThis, const char* fileType)
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsPixelMap_Create()
 
@@ -1209,7 +1209,7 @@ int OH_UdsPixelMap_SetPixelMap(OH_UdsPixelMap* pThis, OH_PixelmapNative* pixelma
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsArrayBuffer_Create()
 
@@ -1249,7 +1249,7 @@ int OH_UdsArrayBuffer_Destroy(OH_UdsArrayBuffer* buffer)
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsArrayBuffer_SetData()
 
@@ -1274,7 +1274,7 @@ int OH_UdsArrayBuffer_SetData(OH_UdsArrayBuffer* buffer, unsigned char* data, un
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsArrayBuffer_GetData()
 
@@ -1299,7 +1299,7 @@ int OH_UdsArrayBuffer_GetData(OH_UdsArrayBuffer* buffer, unsigned char** data, u
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsContentForm_Create()
 
@@ -1381,7 +1381,7 @@ int OH_UdsContentForm_GetThumbData(OH_UdsContentForm* pThis, unsigned char** thu
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 若返回UDMF_ERR，表示出现了内部系统错误。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 若返回UDMF_ERR，表示内部数据错误。可能的原因是服务故障或者内存不足等。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsContentForm_GetDescription()
 
@@ -1452,7 +1452,7 @@ int OH_UdsContentForm_GetAppIcon(OH_UdsContentForm* pThis, unsigned char** appIc
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 若返回UDMF_ERR，表示出现了内部系统错误。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 若返回UDMF_ERR，表示内部数据错误。可能的原因是服务故障或者内存不足等。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsContentForm_GetAppName()
 
@@ -1523,7 +1523,7 @@ int OH_UdsContentForm_SetThumbData(OH_UdsContentForm* pThis, const unsigned char
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsContentForm_SetDescription()
 
@@ -1547,7 +1547,7 @@ int OH_UdsContentForm_SetDescription(OH_UdsContentForm* pThis, const char* descr
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsContentForm_SetTitle()
 
@@ -1571,7 +1571,7 @@ int OH_UdsContentForm_SetTitle(OH_UdsContentForm* pThis, const char* title)
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsContentForm_SetAppIcon()
 
@@ -1596,7 +1596,7 @@ int OH_UdsContentForm_SetAppIcon(OH_UdsContentForm* pThis, const unsigned char* 
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsContentForm_SetAppName()
 
@@ -1620,7 +1620,7 @@ int OH_UdsContentForm_SetAppName(OH_UdsContentForm* pThis, const char* appName)
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsContentForm_SetLinkUri()
 
@@ -1644,7 +1644,7 @@ int OH_UdsContentForm_SetLinkUri(OH_UdsContentForm* pThis, const char* linkUri)
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsPlainText_GetDetails()
 
@@ -1668,7 +1668,7 @@ int OH_UdsPlainText_GetDetails(OH_UdsPlainText* pThis, OH_UdsDetails* details)
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsPlainText_SetDetails()
 
@@ -1686,13 +1686,13 @@ int OH_UdsPlainText_SetDetails(OH_UdsPlainText* pThis, const OH_UdsDetails* deta
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_UdsPlainText](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsplaintext)* pThis | 表示指向纯文本类型[OH_UdsPlainText](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsplaintext)实例的指针。 |
-| [const OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)* details | 表示指向字典类型[OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)实例的指针，该指针不能为空。 |
+| const [OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)* details | 表示指向字典类型[OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)实例的指针，该指针不能为空。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsHyperlink_GetDetails()
 
@@ -1716,7 +1716,7 @@ int OH_UdsHyperlink_GetDetails(OH_UdsHyperlink* pThis, OH_UdsDetails* details)
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsHyperlink_SetDetails()
 
@@ -1734,13 +1734,13 @@ int OH_UdsHyperlink_SetDetails(OH_UdsHyperlink* pThis, const OH_UdsDetails* deta
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_UdsHyperlink](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udshyperlink)* pThis | 表示指向超链接类型[OH_UdsHyperlink](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udshyperlink)实例的指针。 |
-| [const OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)* details | 表示指向字典类型[OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)实例的指针，该指针不能为空。 |
+| const [OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)* details | 表示指向字典类型[OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)实例的指针，该指针不能为空。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsHtml_GetDetails()
 
@@ -1764,7 +1764,7 @@ int OH_UdsHtml_GetDetails(OH_UdsHtml* pThis, OH_UdsDetails* details)
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsHtml_SetDetails()
 
@@ -1782,13 +1782,13 @@ int OH_UdsHtml_SetDetails(OH_UdsHtml* pThis, const OH_UdsDetails* details)
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_UdsHtml](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udshtml)* pThis | 表示指向超文本标记语言类型[OH_UdsHtml](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udshtml)实例的指针。 |
-| [const OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)* details | 表示指向字典类型[OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)实例的指针，该指针不能为空。 |
+| const [OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)* details | 表示指向字典类型[OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)实例的指针，该指针不能为空。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsAppItem_GetDetails()
 
@@ -1805,14 +1805,14 @@ int OH_UdsAppItem_GetDetails(OH_UdsAppItem* pThis, OH_UdsDetails* details)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示一个指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
+| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
 | [OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)* details | 该参数是输出参数，表示指向字典类型[OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)实例的指针，该指针不能为空。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsAppItem_SetDetails()
 
@@ -1829,14 +1829,14 @@ int OH_UdsAppItem_SetDetails(OH_UdsAppItem* pThis, const OH_UdsDetails* details)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示一个指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
-| [const OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)* details | 表示指向字典类型[OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)实例的指针，该指针不能为空。 |
+| [OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)* pThis | 表示指向桌面图标类型[OH_UdsAppItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsappitem)对象的指针。 |
+| const [OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)* details | 表示指向字典类型[OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)实例的指针，该指针不能为空。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsFileUri_GetDetails()
 
@@ -1860,7 +1860,7 @@ int OH_UdsFileUri_GetDetails(OH_UdsFileUri* pThis, OH_UdsDetails* details)
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsFileUri_SetDetails()
 
@@ -1878,13 +1878,13 @@ int OH_UdsFileUri_SetDetails(OH_UdsFileUri* pThis, const OH_UdsDetails* details)
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_UdsFileUri](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsfileuri)* pThis | 表示指向文件Uri类型[OH_UdsFileUri](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsfileuri)实例的指针。 |
-| [const OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)* details | 表示指向字典类型[OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)实例的指针，该指针不能为空。 |
+| const [OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)* details | 表示指向字典类型[OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)实例的指针，该指针不能为空。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsPixelMap_GetDetails()
 
@@ -1908,7 +1908,7 @@ int OH_UdsPixelMap_GetDetails(OH_UdsPixelMap* pThis, OH_UdsDetails* details)
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsPixelMap_SetDetails()
 
@@ -1926,13 +1926,13 @@ int OH_UdsPixelMap_SetDetails(OH_UdsPixelMap* pThis, const OH_UdsDetails* detail
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_UdsPixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udspixelmap)* pThis | 表示指向像素图片类型[OH_UdsPixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udspixelmap)实例的指针。 |
-| [const OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)* details | 表示指向字典类型[OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)实例的指针，该指针不能为空。 |
+| const [OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)* details | 表示指向字典类型[OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)实例的指针，该指针不能为空。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsDetails_Create()
 
@@ -1951,7 +1951,7 @@ OH_UdsDetails* OH_UdsDetails_Create()
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_UdsDetails*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails) | 执行成功则返回一个指向字典类型[OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)实例对象的指针，否则返回nullptr。 |
+| [OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)* | 执行成功则返回一个指向字典类型[OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)实例对象的指针，否则返回nullptr。 |
 
 #### [h2]OH_UdsDetails_Destroy()
 
@@ -1985,7 +1985,7 @@ bool OH_UdsDetails_HasKey(const OH_UdsDetails* pThis, const char* key)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [const OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)* pThis | 表示指向字典类型[OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)实例的指针。 |
+| const [OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)* pThis | 表示指向字典类型[OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)实例的指针。 |
 | const char* key | 表示字典类型中键值对的键。 |
 
 返回：
@@ -2016,7 +2016,7 @@ int OH_UdsDetails_Remove(OH_UdsDetails* pThis, const char* key)
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsDetails_Clear()
 
@@ -2039,7 +2039,7 @@ int OH_UdsDetails_Clear(OH_UdsDetails* pThis)
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsDetails_SetValue()
 
@@ -2064,7 +2064,7 @@ int OH_UdsDetails_SetValue(OH_UdsDetails* pThis, const char* key, const char* va
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的错误码。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
 
 #### [h2]OH_UdsDetails_GetValue()
 
@@ -2081,7 +2081,7 @@ const char* OH_UdsDetails_GetValue(const OH_UdsDetails* pThis, const char* key)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [const OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)* pThis | 表示指向字典类型[OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)实例的指针。 |
+| const [OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)* pThis | 表示指向字典类型[OH_UdsDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udsdetails)实例的指针。 |
 | const char* key | 表示字典类型中键值对的键。 |
 
 返回：
@@ -2164,4 +2164,4 @@ int OH_UdsFileUri_SetAuthPolicy(OH_UdsFileUri* pThis, uint32_t authPolicy)
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行的状态代码。 返回UDMF_E_OK表示执行成功。 返回UDMF_E_INVALID_PARAM表示传入了无效参数。 具体请参见[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |
+| int | 返回执行的状态代码。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。具体请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 |

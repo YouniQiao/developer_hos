@@ -2,13 +2,15 @@
 title: "@ohos.file.PhotoPickerComponent (PhotoPicker组件)"
 upstream_id: "harmonyos-references/ohos-file-photopickercomponent"
 catalog: "harmonyos-references"
-content_hash: "dbf5f2fae65c"
-synced_at: "2026-07-21T16:26:57.175458"
+content_hash: "24e75b1b181b"
+synced_at: "2026-07-28T16:52:05.228702"
 ---
 
 # @ohos.file.PhotoPickerComponent (PhotoPicker组件)
 
 应用可以在布局中嵌入PhotoPicker组件，通过此组件，应用无需申请权限，即可实现媒体文件选择功能。在用户选择媒体文件后，应用即可访问用户选中的图片或视频文件。仅包含读权限。
+
+需要注意的是PhotoPickerComponent不能嵌套使用，且不建议在PhotoPickerComponent上覆盖设置了overlay属性的组件，将导致PhotoPickerComponent无法接受手势事件。
 
 请注意PhotoPickerComponent不支持嵌套，且不应在其上覆盖设置overlay属性或更高层级组件，以免导致手势事件失效。
 
@@ -58,7 +60,7 @@ PhotoPickerComponent({ pickerOptions?: PickerOptions, onSelect?: (uri: string) =
 | onSelect | (uri: string) => void | 否 | - | 用户在Picker组件中勾选图片时产生的回调事件，将图片uri报给应用。 **元服务API**：从API version 12开始，该接口支持在元服务中使用。 |
 | onDeselect | (uri: string) => void | 否 | - | 用户在Picker组件中取消勾选图片时产生的回调事件，同时也会将图片uri报给应用。 **元服务API**：从API version 12开始，该接口支持在元服务中使用。 |
 | onItemClicked | (itemInfo: [ItemInfo](#iteminfo), clickType: [ClickType](#clicktype)) => boolean | 否 | - | 用户在picker组件中点击宫格产生的回调事件。 点击图片（缩略图宫格）时，返回值为true则勾选此图片，否则不响应勾选，URI不授权；点击相机宫格，返回值为true则拉起系统相机，否则不拉起相机，由应用自行处理。 **元服务API**：从API version 12开始，该接口支持在元服务中使用。 |
-| onItemClickedNotify23+ | [ItemClickedNotifyCallback](#itemclickednotifycallback23) | 否 | - | 用户在picker组件中点击宫格产生的回调事件。 应用可执行自身是否选中逻辑，需要配合addData方法一同使用，通过ADD_ITEM_CLICK_RESULT进行选中或不选中。若未设置选中结果，在2秒或PhotoPicker被关闭时取消授权。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API**：从API version 23开始，该接口支持在元服务中使用。 |
+| onItemClickedNotify23+ | [ItemClickedNotifyCallback](#itemclickednotifycallback23) | 否 | - | 用户在picker组件中点击宫格产生的回调事件。 应用可执行自身是否选中逻辑，需要配合addData方法一同使用，通过SET_ITEM_CLICK_RESULT进行选中或不选中。若未设置选中结果，在2秒或PhotoPicker被关闭时取消授权。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API**：从API version 23开始，该接口支持在元服务中使用。 |
 | onPinchGridSwitched23+ | [PinchGridSwitchedCallback](#pinchgridswitchedcallback23) | 否 | - | 宫格捏合时产生的回调事件。仅在[GridPinchModeType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#gridpinchmodetype23)配置为FULL_FUNCTION_GRID时被触发。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API**：从API version 23开始，该接口支持在元服务中使用。 |
 | onEnterPhotoBrowser | (photoBrowserInfo: [PhotoBrowserInfo](#photobrowserinfo)) => boolean | 否 | - | 点击进入大图时产生的回调事件，将大图相关信息报给应用。不对返回值做特殊处理。 **元服务API**：从API version 12开始，该接口支持在元服务中使用。 |
 | onExitPhotoBrowser | (photoBrowserInfo: [PhotoBrowserInfo](#photobrowserinfo)) => boolean | 否 | - | 退出大图时产生的回调事件，将大图相关信息报给应用。不对返回值做特殊处理。 **元服务API**：从API version 12开始，该接口支持在元服务中使用。 |
@@ -74,6 +76,7 @@ PhotoPickerComponent({ pickerOptions?: PickerOptions, onSelect?: (uri: string) =
 | onScrollStopAtEnd23+ | [ScrollStopAtEndCallback](#scrollstopatendcallback23) | 否 | - | 用户在Picker组件滑动停止、处于宫格内容结束位置时的回调。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API**：从API version 23开始，该接口支持在元服务中使用。 |
 | onPhotoBrowserChangeStart23+ | [PhotoBrowserChangeStartCallback](#photobrowserchangestartcallback23) | 否 | - | 宫格视图进入到大图视图、大图浏览切换时产生的回调。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API**：从API version 23开始，该接口支持在元服务中使用。 |
 | onError23+ | [ErrorCallback](#errorcallback23) | 否 | - | 使用PhotoPickerComponent组件发生错误时产生的回调。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API**：从API version 23开始，该接口支持在元服务中使用。 |
+| onPhotoBrowserZoom | [PhotoBrowserZoomCallback](#photobrowserzoomcallback) | 否 | - | PhotoPickerComponent进入大图后，双指放大缩小时的回调。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **起始版本：** 26.0.0 |
 
 #### PickerOptions
 
@@ -432,6 +435,26 @@ PhotoPickerComponent产生错误时的回调。
 | --- | --- | --- | --- |
 | pickerError | [PickerError](#pickererror23) | 是 | 产生的错误的基本信息。 |
 
+#### PhotoBrowserZoomCallback
+
+export type PhotoBrowserZoomCallback = (scale: number) => void
+
+PhotoPickerComponent进入大图后，大图放大缩小时的回调。
+
+起始版本： 26.0.0
+
+元服务API： 从API version 26.0.0开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力：SystemCapability.FileManagement.PhotoAccessHelper.Core
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| scale | number | 是 | 图片相比原图放大缩小的比例。 |
+
 #### PickerController
 
 应用可通过PickerController向picker组件发送数据。
@@ -708,7 +731,7 @@ completed(): Promise<CompletedResult>
 | width | number | 否 | 是 | 图片、视频的宽（单位：像素）。 当[ItemType](#itemtype)为THUMBNAIL时支持，否则为空。 **元服务API**：从API version 12开始，该接口支持在元服务中使用。 |
 | height | number | 否 | 是 | 图片、视频的高（单位：像素）。 当[ItemType](#itemtype)为THUMBNAIL时支持，否则为空。 **元服务API**：从API version 12开始，该接口支持在元服务中使用。 |
 | size | number | 否 | 是 | 图片、视频的大小（单位：字节）。 当[ItemType](#itemtype)为THUMBNAIL时支持，否则为空。 **模型约束**：此接口仅可在Stage模型下使用。 **元服务API**：从API version 12开始，该接口支持在元服务中使用。 |
-| duration | number | 否 | 是 | 视频的持续时间（单位：毫秒）。 当[ItemType](#itemtype)为THUMBNAIL时支持，否则为空。 **元服务API**：从API version 12开始，该接口支持在元服务中使用。 |
+| duration | number | 否 | 是 | 视频的持续时间（单位：毫秒）。在API version 23之前，动态照片的duration将返回0；在API version 23及之后，返回动态照片附带视频片段的时长，异常场景返回-1。 当[ItemType](#itemtype)为THUMBNAIL时支持，否则为空。 **元服务API**：从API version 12开始，该接口支持在元服务中使用。 |
 | photoSubType21+ | [photoAccessHelper.PhotoSubtype](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#photosubtype12) | 否 | 是 | 图片类型，包括DEFAULT、MOVING_PHOTO和BURST。 非特殊类型图片默认为DEFAULT（0）。 **元服务API**：从API version 21开始，该接口支持在元服务中使用。 |
 | dynamicRangeType21+ | [photoAccessHelper.DynamicRangeType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#dynamicrangetype12) | 否 | 是 | 媒体文件动态范围模型，包括HDR和SDR。 对于movingPhoto专指封面图片的动态范围类型。 **元服务API**：从API version 21开始，该接口支持在元服务中使用。 |
 | orientation21+ | number | 否 | 是 | 图片/视频方向信息。 1.“TOP-left”，图像未旋转。 2.“TOP-right”，镜像水平翻转。 3.“Bottom-right”，图像旋转180°。 4.“Bottom-left”，镜像垂直翻转。 5.“Left-top”，先镜像水平翻转，再顺时针旋转270°。 6.“Right-top”，顺时针旋转90°。 7.“Right-bottom”，先镜像水平翻转，再顺时针旋转90°。 8.“Left-bottom”，顺时针旋转270°。 携带镜像信息的图片无论旋转与否其宽高属性都与原图保持一致，无镜像信息的图片其宽高属性会更新为旋转后的结果。 **元服务API**：从API version 21开始，该接口支持在元服务中使用。 |
@@ -848,6 +871,8 @@ completed(): Promise<CompletedResult>
 | appAlbumFilters23+ | Array | 否 | 是 | 仅显示与指定bundle name对应的相册内容。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API**：从API version 23开始，该接口支持在元服务中使用。 |
 | autoPlayScenes23+ | Array | 否 | 是 | 设置动态照片播放模式。长度限制为2个，超出取前2个，多余的会自动忽略。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 23开始，该接口支持在元服务中使用。 |
 | backgroundOpacity24+ | number | 否 | 是 | 支持配置picker背景透明度。取值范围为[0, 1]，0表示完全透明，1表示完全不透明。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API**：从API version 24开始，该接口支持在元服务中使用。 |
+| gridMargin | [Margin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#margin) | 否 | 是 | 设置组件宫格页边距。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
+| photoBrowserMargin | [Margin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#margin) | 否 | 是 | 设置组件大图页边距。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
 
 #### PickerError23+
 

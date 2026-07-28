@@ -2,8 +2,8 @@
 title: "@ohos.app.ability.insightIntentProvider (意图提供方管理能力)"
 upstream_id: "harmonyos-references/js-apis-app-ability-insightintentprovider"
 catalog: "harmonyos-references"
-content_hash: "6e73fe4bb90f"
-synced_at: "2026-07-09T00:57:04.675518"
+content_hash: "b7c468a26d7b"
+synced_at: "2026-07-28T16:40:33.305802"
 ---
 
 # @ohos.app.ability.insightIntentProvider (意图提供方管理能力)
@@ -24,9 +24,9 @@ import { insightIntentProvider } from '@kit.AbilityKit';
 
 sendExecuteResult(instanceId: number, result: insightIntent.ExecuteResult): Promise<void>
 
-如果意图提供方需要在业务处理的特定流程中主动发送意图执行结果，可以先通过[setReturnModeForUIAbilityForeground接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintentcontext#insightintentcontextsetreturnmodeforuiabilityforeground23)或[setReturnModeForUIExtensionAbility接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintentcontext#insightintentcontextsetreturnmodeforuiextensionability23)将意图执行结果返回形式[ReturnMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintent#returnmode23)设置为FUNCTION，然后调用该接口发送意图执行结果，适用于[配置类意图](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insight-intent-config-development)。使用Promise异步回调。
+如果意图提供方需要在业务处理的特定流程中主动发送意图执行结果，可以先通过[setReturnModeForUIAbilityForeground](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintentcontext#insightintentcontextsetreturnmodeforuiabilityforeground23)或[setReturnModeForUIExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintentcontext#insightintentcontextsetreturnmodeforuiextensionability23)将意图执行结果返回形式[ReturnMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintent#returnmode23)设置为FUNCTION，然后调用该接口发送意图执行结果，适用于[配置类意图](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insight-intent-config-development)。使用Promise异步回调。
 
-意图执行结果返回形式[ReturnMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintent#returnmode23)设置为FUNCTION后，应用将无需再通过[onExecuteInUIAbilityForegroundMode接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintentexecutor#onexecuteinuiabilityforegroundmode)或[onExecuteInUIExtensionAbility接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintentexecutor#onexecuteinuiextensionability)的返回值返回意图执行结果。
+意图执行结果返回形式[ReturnMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintent#returnmode23)设置为FUNCTION后，应用将无需再通过[onExecuteInUIAbilityForegroundMode接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintentexecutor#onexecuteinuiabilityforegroundmode)或[onExecuteInUIExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintentexecutor#onexecuteinuiextensionability)的返回值返回意图执行结果。
 
 模型约束：此接口仅可在Stage模型下使用。
 
@@ -150,7 +150,7 @@ struct Index {
 
 sendIntentResult(instanceId: number, result: insightIntent.IntentResult<T>): Promise<void>
 
-如果意图提供方需要在业务处理的特定流程中主动发送意图执行结果，可以先通过[setReturnModeForUIAbilityForeground接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintentcontext#insightintentcontextsetreturnmodeforuiabilityforeground23)或[setReturnModeForUIExtensionAbility接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintentcontext#insightintentcontextsetreturnmodeforuiextensionability23)将意图执行结果返回形式[ReturnMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintent#returnmode23)设置为FUNCTION，然后调用该接口发送意图执行结果。适用于[@InsightIntentEntry](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintentdecorator#insightintententry)修饰的[装饰器类意图](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insight-intent-decorator-development)。使用Promise异步回调。
+如果意图提供方需要在业务处理的特定流程中主动发送意图执行结果，可以先通过[setReturnModeForUIAbilityForeground](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintentcontext#insightintentcontextsetreturnmodeforuiabilityforeground23)或[setReturnModeForUIExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintentcontext#insightintentcontextsetreturnmodeforuiextensionability23)将意图执行结果返回形式[ReturnMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintent#returnmode23)设置为FUNCTION，然后调用该接口发送意图执行结果。适用于[@InsightIntentEntry](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintentdecorator#insightintententry)修饰的[装饰器类意图](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insight-intent-decorator-development)。使用Promise异步回调。
 
 意图执行结果返回形式[ReturnMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintent#returnmode23)设置为FUNCTION后，应用将无需再通过[onExecute接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintententryexecutor#onexecute)的返回值返回意图执行结果。
 
@@ -211,9 +211,6 @@ class PlayVideoResultDef {
   executeMode: [insightIntent.ExecuteMode.UI_ABILITY_FOREGROUND],
 })
 export default class PlayVideo extends InsightIntentEntryExecutor<PlayVideoResultDef> {
-  entityId: string = 'zhz';
-  episodeId: string = '50';
-  episodeNumber: number = 12;
 
   onExecute(): Promise<insightIntent.IntentResult<PlayVideoResultDef>> {
     console.info('testTag', 'PlayVideo onExecute success')

@@ -2,18 +2,18 @@
 title: "Scroll"
 upstream_id: "harmonyos-references/ts-container-scroll"
 catalog: "harmonyos-references"
-content_hash: "a284923620f0"
-synced_at: "2026-07-09T00:57:48.757125"
+content_hash: "242520bbabb4"
+synced_at: "2026-07-28T16:43:28.505285"
 ---
 
 # Scroll
 
-可滚动的容器组件，当子组件的布局尺寸超过父组件的尺寸时，内容可以滚动。
+可滚动的容器组件，当子组件的布局尺寸超过父组件的尺寸时，内容可以滚动。支持设置滚动方向、滚动条、边缘效果、嵌套滚动以及自由滚动缩放等能力，适用于内容超出显示区域或需要复杂滚动交互的场景。
 
 ![](./img/note_3.0-zh-cn.png)
 
 - 该组件从API version 7开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
-- 该组件嵌套List子组件滚动时，若List不设置宽高，则默认全部加载，在对性能有要求的场景下建议指定List的宽高，最佳实践请参考[懒加载优化性能-Scroll嵌套List导致按需加载失效](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-lazyforeach-optimization#section6296154115367)。
+- 该组件嵌套List子组件滚动时，若List不设置宽高，则默认全部加载。在对性能有要求的场景下，开发者应指定List的宽高，以避免默认全部加载影响性能。最佳实践请参考[懒加载优化性能——Scroll嵌套List导致按需加载失效](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-lazyforeach-optimization#section6296154115367)。
 - 该组件滚动的前提是主轴方向大小小于内容大小。
 - Scroll组件通用属性[clip](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sharp-clipping#clip12)的默认值为true。
 - Scroll组件的高度超出屏幕显示范围时，可以通过设置通用属性[layoutWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#layoutweight)让Scroll高度适应主轴的剩余空间。
@@ -40,7 +40,7 @@ Scroll(scroller?: Scroller)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| scroller | [Scroller](#scroller) | 否 | 可滚动组件的控制器。用于与可滚动组件进行绑定。 **说明：** 不允许和其他滚动类组件，如：[ArcList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-arclist)、[List](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list)、[Grid](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-grid)、[Scroll](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scroll)和[WaterFlow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-waterflow)绑定同一个滚动控制对象。 |
+| scroller | [Scroller](#scroller) | 否 | 可滚动组件的控制器。用于与可滚动组件进行绑定，并通过控制器接口控制滚动；不传入时，无法通过控制器接口控制该Scroll组件。 **说明：** 不允许和其他滚动类组件，如：[ArcList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-arclist)、[List](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list)、[Grid](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-grid)、[Scroll](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scroll)和[WaterFlow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-waterflow)绑定同一个滚动控制对象。 |
 
 #### 属性
 
@@ -50,7 +50,7 @@ Scroll(scroller?: Scroller)
 
 scrollable(value: ScrollDirection)
 
-设置滚动方向。该值被修改后会重置滚动偏移量。
+设置滚动方向。该值被修改后会重置滚动偏移量。可根据布局选择竖直滚动、水平滚动或自由滚动。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -68,7 +68,7 @@ scrollable(value: ScrollDirection)
 
 scrollBar(barState: BarState)
 
-设置滚动条状态。如果容器组件无法滚动，则滚动条不显示。如果容器组件的子组件大小为无穷大，则滚动条不支持拖动和伴随滚动。
+设置滚动条状态。如果容器组件无法滚动，则滚动条不显示。如果容器组件的子组件大小为无穷大，则滚动条不支持拖动和伴随滚动。可用于控制滚动条是否常驻显示、自动显示或隐藏。
 
 从API version 10开始，当滚动组件存在圆角时，为避免滚动条被圆角截断，滚动条会自动计算距顶部和底部的避让距离。
 
@@ -96,7 +96,7 @@ scrollBarColor(color: Color | number | string)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| color | [Color](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#color) | number | string | 是 | 滚动条的颜色。 默认值：'#66182431' number为HEX格式颜色，支持rgb或者argb，示例：0xffffff。 string为rgb或者argb格式颜色，示例：'#ffffff'。 |
+| color | [Color](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#color) | number | string | 是 | 滚动条的颜色。 默认值：'#66182431' number为HEX格式颜色，支持rgb或者argb，取值范围：[0x0, 0xFFFFFFFF]，示例：0xffffff。 string为rgb或者argb格式颜色，示例：'#ffffff'。 |
 
 #### [h2]scrollBarColor22+
 
@@ -114,13 +114,13 @@ scrollBarColor(color: Color | number | string | Resource)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| color | [Color](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#color) | number | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 是 | 滚动条的颜色。 默认值：'#66182431' number为HEX格式颜色，支持rgb或者argb，示例：0xffffff。string为rgb或者argb格式颜色，示例：'#ffffff'。 |
+| color | [Color](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#color) | number | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 是 | 滚动条的颜色。 默认值：'#66182431' number为HEX格式颜色，支持rgb或者argb，取值范围：[0x0, 0xFFFFFFFF]，示例：0xffffff。string为rgb或者argb格式颜色，示例：'#ffffff'。 |
 
 #### [h2]scrollBarWidth
 
 scrollBarWidth(value: number | string)
 
-设置滚动条的宽度，不支持百分比设置。宽度设置后，滚动条正常状态和按压状态宽度均为滚动条的宽度值。如果滚动条的宽度超过Scroll组件主轴方向的高度，则滚动条的宽度会变为默认值。
+设置滚动条的宽度，不支持百分比设置。宽度设置后，滚动条正常状态和按压状态宽度均为滚动条的宽度值。如果滚动条的宽度超过Scroll组件主轴方向的可视尺寸，则滚动条的宽度会变为默认值4vp。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -130,13 +130,13 @@ scrollBarWidth(value: number | string)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | string | 是 | 滚动条的宽度。 默认值：4 单位：vp 取值范围：设置为小于0的值时，按默认值处理。设置为0时，不显示滚动条。 |
+| value | number | string | 是 | 滚动条的宽度。 默认值：4 单位：vp 取值范围：设置为小于0的值时，按4vp处理。设置为0时，不显示滚动条。 |
 
 #### [h2]scrollBarWidth
 
 scrollBarWidth(value: number | string | Resource)
 
-设置滚动条的宽度，不支持百分比设置。宽度设置后，滚动条正常状态和按压状态宽度均为滚动条的宽度值。如果滚动条的宽度超过Scroll组件主轴方向的高度，则滚动条的宽度会变为4vp，支持Resource资源类型。
+设置滚动条的宽度，不支持百分比设置。宽度设置后，滚动条正常状态和按压状态宽度均为滚动条的宽度值。如果滚动条的宽度超过Scroll组件主轴方向的可视尺寸，则滚动条的宽度会变为默认值4vp，支持Resource资源类型。
 
 未通过该接口设置时，设置滚动条的宽度为4vp。
 
@@ -152,13 +152,13 @@ scrollBarWidth(value: number | string | Resource)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 是 | 滚动条的宽度。 单位：vp 取值范围：[0, +∞)。设置为小于0的值时，按4vp处理。设置为0时，不显示滚动条。 |
+| value | number | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 是 | 滚动条的宽度。 默认值：4 单位：vp 取值范围：[0, +∞)。设置为小于0的值时，按4vp处理。设置为0时，不显示滚动条。 |
 
 #### [h2]scrollSnap10+
 
 scrollSnap(value: ScrollSnapOptions)
 
-设置Scroll组件的限位滚动模式。
+设置Scroll组件的限位滚动模式，用于实现分页滚动、卡片对齐等需要滚动结束后定位到指定位置的场景。
 
 限位动画期间[onWillScroll](#onwillscroll12)事件上报的滚动操作来源类型为ScrollSource.FLING。
 
@@ -172,7 +172,7 @@ scrollSnap(value: ScrollSnapOptions)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [ScrollSnapOptions](#scrollsnapoptions10对象说明) | 是 | Scroll组件的限位滚动模式。 |
+| value | [ScrollSnapOptions](#scrollsnapoptions10对象说明) | 是 | Scroll组件的限位滚动模式。该对象包含snapAlign（对齐方式）、snapPagination（分页点）、enableSnapToStart（是否在开头限位）和enableSnapToEnd（是否在末尾限位）等属性。 |
 
 #### [h2]edgeEffect
 
@@ -189,13 +189,13 @@ edgeEffect(edgeEffect: EdgeEffect, options?: EdgeEffectOptions)
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | edgeEffect | [EdgeEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#edgeeffect) | 是 | Scroll组件的边缘滑动效果，支持弹簧效果和阴影效果。 默认值：EdgeEffect.None |
-| options11+ | [EdgeEffectOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scrollable-common#edgeeffectoptions11对象说明) | 否 | 组件内容大小小于组件自身时，是否开启滑动效果。设置为{ alwaysEnabled: true }会开启滑动效果，{ alwaysEnabled: false }不开启。 默认值：{ alwaysEnabled: true } **模型约束：** 此接口仅可在Stage模型下使用。 |
+| options11+ | [EdgeEffectOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scrollable-common#edgeeffectoptions11对象说明) | 否 | 组件内容大小小于组件自身时，是否开启滑动效果。设置为{ alwaysEnabled: true }会开启滑动效果，{ alwaysEnabled: false }不开启；不传入时使用默认值。 默认值：{ alwaysEnabled: true } **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### [h2]enableScrollInteraction10+
 
 enableScrollInteraction(value: boolean)
 
-设置是否支持滚动手势。
+设置是否支持滚动手势。可用于在自定义拖动、自定义滚动等业务需要接管滑动手势的场景中，临时禁用滚动组件的用户手势滚动。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -215,7 +215,7 @@ enableScrollInteraction(value: boolean)
 
 nestedScroll(value: NestedScrollOptions)
 
-设置前后两个方向的嵌套滚动模式，实现与父组件的滚动联动。
+设置前后两个方向的嵌套滚动模式，实现与父组件的滚动联动。适用于页面内列表与外层滚动区域联动等嵌套滚动场景。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -227,13 +227,13 @@ nestedScroll(value: NestedScrollOptions)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [NestedScrollOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scrollable-common#nestedscrolloptions10对象说明) | 是 | 嵌套滚动选项。 默认值：{ scrollForward: NestedScrollMode.SELF_ONLY, scrollBackward: NestedScrollMode.SELF_ONLY } Scroll设置[enablePaging](#enablepaging11)或者[scrollSnap](#scrollsnap10)，并同时设置父组件优先的嵌套滚动时，嵌套滚动不生效。 |
+| value | [NestedScrollOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scrollable-common#nestedscrolloptions10对象说明) | 是 | 嵌套滚动选项，用于配置前后两个方向的嵌套滚动模式，包含scrollForward（向前滚动模式）和scrollBackward（向后滚动模式）字段。NestedScrollMode.SELF_ONLY表示仅自身滚动，NestedScrollMode.SELF_FIRST表示自身优先滚动，NestedScrollMode.PARENT_FIRST表示父组件优先滚动，NestedScrollMode.PARALLEL表示自身和父组件同时滚动。 默认值：{ scrollForward: NestedScrollMode.SELF_ONLY, scrollBackward: NestedScrollMode.SELF_ONLY } Scroll设置[enablePaging](#enablepaging11)或者[scrollSnap](#scrollsnap10)，并同时设置父组件优先的嵌套滚动时，嵌套滚动不生效。 |
 
 #### [h2]friction10+
 
 friction(value: number | Resource)
 
-设置摩擦系数，手动划动滚动区域时生效，仅影响惯性滚动过程，对惯性滚动过程中的链式效果有间接影响。
+设置摩擦系数，手动滑动滚动区域时生效，仅影响惯性滚动过程，对惯性滚动过程中的链式效果有间接影响。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -251,7 +251,7 @@ friction(value: number | Resource)
 
 enablePaging(value: boolean)
 
-设置是否支持划动翻页。如果同时设置了划动翻页enablePaging和限位滚动scrollSnap，则scrollSnap优先生效，enablePaging不生效。
+设置是否支持滑动翻页。如果同时设置了滑动翻页enablePaging和限位滚动scrollSnap，则scrollSnap优先生效，enablePaging不生效。可用于书籍翻页、卡片分页浏览等场景。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -263,13 +263,13 @@ enablePaging(value: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | boolean | 是 | 是否支持划动翻页。设置为true支持滑动翻页，false不支持。 默认值：false |
+| value | boolean | 是 | 是否支持滑动翻页。设置为true支持滑动翻页，false不支持。 默认值：false |
 
 #### [h2]initialOffset12+
 
 initialOffset(value: OffsetOptions)
 
-设置初始滚动偏移量。只在首次布局时生效，后续动态修改该属性值不生效。
+设置初始滚动偏移量。只在首次布局时生效，后续动态修改该属性值不生效。可用于页面首次显示时定位到指定滚动位置。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -343,7 +343,7 @@ zoomScale(scale: number)
 
 enableBouncesZoom(enable: boolean)
 
-启用过缩放回弹效果。
+设置是否启用过缩放回弹效果。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -355,7 +355,7 @@ enableBouncesZoom(enable: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| enable | boolean | 是 | 启用过缩放回弹效果。设置为true表示启用该效果，设置为false表示禁用该效果。 默认值：true |
+| enable | boolean | 是 | 是否启用过缩放回弹效果。当用户缩放超出最大或最小缩放比例时，释放手势后内容会回弹到最大或最小缩放比例。设置为true表示启用该效果，设置为false表示禁用该效果。 默认值：true |
 
 #### ScrollDirection枚举说明
 
@@ -405,10 +405,10 @@ FREE（自由滚动）模式下支持的能力：
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| snapAlign | [ScrollSnapAlign](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list#scrollsnapalign10枚举说明) | 否 | 否 | 设置Scroll组件限位滚动时的对齐方式。 **说明：** 1.该属性默认值为ScrollSnapAlign.NONE。 |
-| snapPagination | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | Array | 否 | 是 | 设置Scroll组件限位滚动时的分页点。 **说明：** 1.当属性为Dimension时，Dimension表示每页的大小，系统按照该大小进行分页。 2.当属性为Array时，每个Dimension表示分页点，系统按照分页点进行分页。每个Dimension的范围为[0,可滑动距离]。 3.当该属性不填或者Dimension为小于等于0的输入时，按异常值，无限位滚动处理。当该属性值为Array数组时，数组中的数值必须为单调递增。 4.当输入为百分比时，实际的大小为Scroll组件的视口与百分比数值之积。 |
-| enableSnapToStart | boolean | 否 | 是 | 在Scroll组件限位滚动模式下，该属性设置为true后，不允许Scroll在开头和第一页间自由滑动，该属性设置为false后，允许Scroll在开头和第一页间自由滑动。 **说明：** 1.该属性值默认为true。 2.该属性仅当snapPagination属性为Array时生效，不支持Dimension。 |
-| enableSnapToEnd | boolean | 否 | 是 | 在Scroll组件限位滚动模式下，该属性设置为true后，不允许Scroll在最后一页和末尾间自由滑动，该属性设置为false后，允许Scroll在最后一页和末尾间自由滑动。 **说明：** 1.该属性值默认为true。 2.该属性仅当snapPagination属性为Array时生效，不支持Dimension。 |
+| snapAlign | [ScrollSnapAlign](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list#scrollsnapalign10枚举说明) | 否 | 否 | 设置Scroll组件限位滚动时的对齐方式。 **说明：** 1. 该属性默认值为ScrollSnapAlign.NONE。 |
+| snapPagination | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | Array | 否 | 是 | 设置Scroll组件限位滚动时的分页点。 **说明：** 1. 当属性为Dimension时，Dimension表示每页的大小，系统按照该大小进行分页。 2. 当属性为Array时，每个Dimension表示分页点，系统按照分页点进行分页。每个Dimension的范围为[0,可滑动距离]。 3. 当该属性不填或者Dimension为小于等于0的输入时，按异常值，无限位滚动处理。当该属性值为Array数组时，数组中的数值必须为单调递增。 4. 当输入为百分比时，实际的大小为Scroll组件的视口与百分比数值之积。 |
+| enableSnapToStart | boolean | 否 | 是 | 在Scroll组件限位滚动模式下，该属性设置为true后，不允许Scroll在开头和第一页间自由滑动，该属性设置为false后，允许Scroll在开头和第一页间自由滑动。 **说明：** 1. 该属性值默认为true。 2. 该属性仅当snapPagination属性为Array时生效，不支持Dimension。 |
+| enableSnapToEnd | boolean | 否 | 是 | 在Scroll组件限位滚动模式下，该属性设置为true后，不允许Scroll在最后一页和末尾间自由滑动，该属性设置为false后，允许Scroll在最后一页和末尾间自由滑动。 **说明：** 1. 该属性值默认为true。 2. 该属性仅当snapPagination属性为Array时生效，不支持Dimension。 |
 
 #### 事件
 
@@ -456,11 +456,9 @@ onScroll(event: (xOffset: number, yOffset: number) => void)
 
 触发该事件的条件：
 
-1、滚动组件触发滚动时触发，支持键鼠操作等其他触发滚动的输入设置。
-
-2、通过滚动控制器API接口调用。
-
-3、越界回弹。
+1. 滚动组件触发滚动时触发，支持键鼠操作等其他触发滚动的输入设置。
+2. 通过滚动控制器API接口调用。
+3. 越界回弹。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 12开始废弃，建议使用[onWillScroll](#onwillscroll12)替代。
 
@@ -485,11 +483,9 @@ onWillScroll(handler: ScrollOnWillScrollCallback)
 
 触发该事件的条件：
 
-1、滚动组件触发滚动时触发，支持键鼠操作等其他触发滚动的输入设置。
-
-2、通过滚动控制器API接口调用。
-
-3、越界回弹。
+1. 滚动组件触发滚动时触发，支持键鼠操作等其他触发滚动的输入设置。
+2. 通过滚动控制器API接口调用。
+3. 越界回弹。
 
 ![](./img/note_3.0-zh-cn.png) 滚动事件的回调函数在滚动过程中会被频繁触发，因此应避免在该回调函数中执行耗时操作，以防止应用出现卡顿和丢帧的问题。最佳实践请参考[主线程耗时操作优化指导-高频回调场景](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-time-optimization-of-the-main-thread#section10112623611)。
 
@@ -515,11 +511,9 @@ onDidScroll(handler: ScrollOnScrollCallback)
 
 触发该事件的条件：
 
-1、滚动组件触发滚动时触发，支持键鼠操作等其他触发滚动的输入设置。
-
-2、通过滚动控制器API接口调用。
-
-3、越界回弹。
+1. 滚动组件触发滚动时触发，支持键鼠操作等其他触发滚动的输入设置。
+2. 通过滚动控制器API接口调用。
+3. 越界回弹。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -541,11 +535,7 @@ onScrollEdge(event: OnScrollEdgeCallback)
 
 触发该事件的条件：
 
-1、滚动组件滚动到边缘时触发，支持键鼠操作等其他触发滚动的输入设置。
-
-2、通过滚动控制器API接口调用。
-
-3、越界回弹。
+1. 滚动组件滚动到边缘时触发，支持键鼠操作等其他触发滚动的输入设置。 2. 通过滚动控制器API接口调用。 3. 越界回弹。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -565,9 +555,7 @@ onScrollEnd(event: () => void)
 
 触发该事件的条件：
 
-1、滚动组件触发滚动后停止，支持键鼠操作等其他触发滚动的输入设置。
-
-2、通过滚动控制器API接口调用后停止，带过渡动效。
+1. 滚动组件触发滚动后停止，支持键鼠操作等其他触发滚动的输入设置。 2. 通过滚动控制器API接口调用后停止，带过渡动效。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，建议使用[onScrollStop](#onscrollstop9)替代。
 
@@ -587,9 +575,7 @@ onScrollStart(event: VoidCallback)
 
 触发该事件的条件：
 
-1、滚动组件开始滚动时触发，支持键鼠操作等其他触发滚动的输入设置。
-
-2、通过滚动控制器API接口调用后开始，带过渡动效。
+1. 滚动组件开始滚动时触发，支持键鼠操作等其他触发滚动的输入设置。 2. 通过滚动控制器API接口调用后开始，带过渡动效。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -609,9 +595,7 @@ onScrollStop(event: VoidCallback)
 
 触发该事件的条件：
 
-1、滚动组件触发滚动后停止，支持键鼠操作等其他触发滚动的输入设置。
-
-2、通过滚动控制器API接口调用后开始，带过渡动效。
+1. 滚动组件触发滚动后停止，支持键鼠操作等其他触发滚动的输入设置。 2. 通过滚动控制器API接口调用后开始，带过渡动效。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -695,7 +679,7 @@ Scroll滚动时触发的回调。
 | --- | --- | --- | --- |
 | xOffset | number | 是 | 相对于上一帧水平方向的偏移量，Scroll中的内容向左滚动时偏移量为正，向右滚动时偏移量为负。 单位vp。 |
 | yOffset | number | 是 | 相对于上一帧竖直方向的偏移量，Scroll中的内容向上滚动时偏移量为正，向下滚动时偏移量为负。 单位vp。 |
-| scrollState | [ScrollState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list#scrollstate枚举说明) | 是 | 当前滚动状态。 |
+| scrollState | [ScrollState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list#scrollstate枚举说明) | 是 | 当前滚动状态。Idle表示空闲状态，Scroll表示滚动状态，Fling表示惯性滚动状态。 |
 
 ![](./img/note_3.0-zh-cn.png) 若通过[onScrollFrameBegin](#onscrollframebegin9)事件和[scrollBy](#scrollby9)方法实现容器嵌套滚动，需设置子滚动节点的EdgeEffect为None。如Scroll嵌套List滚动时，List组件的[edgeEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list#edgeeffect)属性需设置为EdgeEffect.None。
 
@@ -717,8 +701,8 @@ Scroll滚动前触发的回调。
 | --- | --- | --- | --- |
 | xOffset | number | 是 | 相对于上一帧水平方向的偏移量，Scroll中的内容向左滚动时偏移量为正，向右滚动时偏移量为负。 单位vp。 |
 | yOffset | number | 是 | 相对于上一帧竖直方向的偏移量，Scroll中的内容向上滚动时偏移量为正，向下滚动时偏移量为负。 单位vp。 |
-| scrollState | [ScrollState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list#scrollstate枚举说明) | 是 | 当前滚动状态。 |
-| scrollSource | [ScrollSource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#scrollsource12) | 是 | 当前滚动操作的来源。 |
+| scrollState | [ScrollState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list#scrollstate枚举说明) | 是 | 当前滚动状态。Idle表示空闲状态，Scroll表示滚动状态，Fling表示惯性滚动状态。 |
+| scrollSource | [ScrollSource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#scrollsource12) | 是 | 当前滚动操作的来源，如DRAG表示拖拽触发，FLING表示惯性滑动触发，SCROLLER表示Scroller不带动效方法触发，SCROLLER_ANIMATION表示Scroller带动效方法触发。 |
 
 返回值：
 
@@ -742,7 +726,7 @@ type OnScrollEdgeCallback = (side: Edge) => void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| side | [Edge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#edge) | 是 | 滚动到的边缘位置。 |
+| side | [Edge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#edge) | 是 | 滚动到的边缘位置。竖直方向滚动时，Edge.Top和Edge.Start表示起始边缘，Edge.Bottom和Edge.End表示末尾边缘。水平方向滚动时，Edge.Center表示水平方向起始位置，Edge.Baseline表示水平方向末尾位置。 |
 
 #### OnScrollFrameBeginCallback18+
 
@@ -761,13 +745,13 @@ Scroll每帧滚动前触发的回调。
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | offset | number | 是 | 即将发生的滑动量，单位vp。 |
-| state | [ScrollState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list#scrollstate枚举说明) | 是 | 当前滑动状态。 |
+| state | [ScrollState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list#scrollstate枚举说明) | 是 | 当前滑动状态。Idle表示空闲状态，Scroll表示滚动状态，Fling表示惯性滚动状态。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| [OnScrollFrameBeginHandlerResult](#onscrollframebeginhandlerresult18对象说明) | 返回实际滑动量。 |
+| [OnScrollFrameBeginHandlerResult](#onscrollframebeginhandlerresult18对象说明) | 返回实际滑动量，Scroll将按照返回值中的offsetRemain进行滚动。 |
 
 #### OnScrollFrameBeginHandlerResult18+对象说明
 
@@ -807,13 +791,12 @@ Scroll每帧缩放完成时触发的回调。
 
 可滚动容器组件的控制器，可以将此组件绑定至容器组件，然后通过它控制容器组件的滚动。同一个控制器不可以控制多个容器组件，目前支持绑定到ArcList、ArcScrollBar、List、Scroll、ScrollBar、Grid、WaterFlow上。
 
-![](./img/note_3.0-zh-cn.png) 1、Scroller控制器与滚动容器组件的绑定发生在组件创建阶段。
+![](./img/note_3.0-zh-cn.png)
 
-2、Scroller控制器与滚动容器组件绑定后才可以正常调用Scroller方法，否则根据调用接口不同会不生效或者抛异常。
-
-3、以[aboutToAppear](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#abouttoappear)为例，aboutToAppear在创建自定义组件的新实例后，在执行其build()方法之前执行。因此如果滚动组件在自定义组件build内，在该自定义组件aboutToAppear执行时，内部滚动组件还没有创建，是不能正常调用上述Scroller方法的。
-
-4、以[onAppear](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-show-hide#onappear)为例，组件挂载显示后触发此回调。因此在滚动组件的onAppear回调执行时，滚动组件已经创建并已经和Scroller绑定成功，是可以正常调用Scroller方法的。
+1. Scroller控制器与滚动容器组件的绑定发生在组件创建阶段。
+2. Scroller控制器与滚动容器组件绑定后才可以正常调用Scroller方法，否则根据调用接口不同会不生效或者抛异常。
+3. 以[aboutToAppear](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#abouttoappear)为例，aboutToAppear在创建自定义组件的新实例后，在执行其build()方法之前执行。因此如果滚动组件在自定义组件build内，在该自定义组件aboutToAppear执行时，内部滚动组件还没有创建，是不能正常调用上述Scroller方法的。
+4. 以[onAppear](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-show-hide#onappear)为例，组件挂载显示后触发此回调。因此在滚动组件的onAppear回调执行时，滚动组件已经创建并已经和Scroller绑定成功，是可以正常调用Scroller方法的。
 
 #### [h2]导入对象
 
@@ -835,7 +818,7 @@ Scroller的构造函数。
 
 scrollTo(options: ScrollOptions)
 
-滑动到指定位置。
+滑动到指定位置，可用于目录跳转、返回顶部、搜索结果定位等场景。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -852,13 +835,13 @@ scrollTo(options: ScrollOptions)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [ScrollOptions](#scrolloptions18对象说明) | 是 | 滑动到指定位置的参数。 |
+| options | [ScrollOptions](#scrolloptions18对象说明) | 是 | 滑动到指定位置的参数，包含xOffset、yOffset、animation、canOverScroll等字段，用于指定滚动目标位置和滚动行为。 |
 
 #### [h2]scrollEdge
 
 scrollEdge(value: Edge, options?: ScrollEdgeOptions)
 
-滚动到容器边缘，不区分滚动轴方向，Edge.Top和Edge.Start表现相同，Edge.Bottom和Edge.End表现相同。
+滚动到容器边缘，不区分滚动轴方向，Edge.Top和Edge.Start表现相同，Edge.Bottom和Edge.End表现相同。可用于返回顶部、跳转到内容末尾等场景。
 
 Scroll组件默认有动画，Grid、List、WaterFlow组件默认无动画。
 
@@ -871,13 +854,13 @@ Scroll组件默认有动画，Grid、List、WaterFlow组件默认无动画。
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | value | [Edge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#edge) | 是 | 滚动到的边缘位置。 |
-| options12+ | [ScrollEdgeOptions](#scrolledgeoptions12对象说明) | 否 | 设置滚动到边缘位置的模式。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| options12+ | [ScrollEdgeOptions](#scrolledgeoptions12对象说明) | 否 | 设置滚动到边缘位置的模式，可通过velocity字段设置固定滚动速度。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### [h2]fling12+
 
 fling(velocity: number): void
 
-滚动类组件根据传入的初始速度进行惯性滚动。
+滚动类组件根据传入的初始速度进行惯性滚动，可用于模拟抛滑效果。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -889,7 +872,7 @@ fling(velocity: number): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| velocity | number | 是 | 惯性滚动的初始速度值。单位：vp/s **说明：** velocity值设置为0，视为异常值，本次滚动不生效。如果值为正数，则向顶部滚动；如果值为负数，则向底部滚动。 |
+| velocity | number | 是 | 惯性滚动的初始速度值。单位：vp/s **说明：** velocity值设置为0时，本次滚动不生效且不会产生滚动动画。如果值为正数，则向顶部滚动；如果值为负数，则向底部滚动。 |
 
 错误码：
 
@@ -914,7 +897,7 @@ scrollPage(value: ScrollPageOptions)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [ScrollPageOptions](#scrollpageoptions14对象说明) | 是 | 设置翻页模式。 |
+| value | [ScrollPageOptions](#scrollpageoptions14对象说明) | 是 | 设置翻页模式。包含next（是否向下翻页）和animation（是否开启翻页动画）字段，用于指定翻页行为。 |
 
 #### [h2]scrollPage(deprecated)
 
@@ -941,7 +924,7 @@ currentOffset(): OffsetResult
 
 ![](./img/note_3.0-zh-cn.png)
 
-1. 当Scroller没有和组件绑定时，该接口会返回undefined，但是接口中没有声明，推荐使用[offset](#offset23)函数。
+1. 当Scroller没有和组件绑定时，该接口会返回undefined，但是接口中没有声明。推荐使用[offset](#offset23)函数，其返回类型显式包含undefined。
 2. Grid、List、WaterFlow组件有懒加载机制，组件内容没有加载并布局完成时，内容总偏移量通过估算得到，估算结果可能会有误差。其中List组件可以通过[childrenMainSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list#childrenmainsize12)属性解决估算不准确的问题，Grid与WaterFlow估算不准暂无解决方案。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
@@ -952,7 +935,7 @@ currentOffset(): OffsetResult
 
 | 类型 | 说明 |
 | --- | --- |
-| [OffsetResult11+](#offsetresult11对象说明) | 返回当前的滚动总偏移量。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| [OffsetResult11+](#offsetresult11对象说明) | 返回当前的滚动总偏移量。xOffset表示水平滚动总偏移量，yOffset表示竖直滚动总偏移量。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### [h2]offset23+
 
@@ -970,7 +953,7 @@ offset(): OffsetResult | undefined
 
 | 类型 | 说明 |
 | --- | --- |
-| [OffsetResult](#offsetresult11对象说明) | undefined | 返回当前的滚动总偏移量。当Scroller没有和组件绑定时，该接口会返回undefined。 |
+| [OffsetResult](#offsetresult11对象说明) | undefined | 返回当前的滚动总偏移量。xOffset表示水平滚动总偏移量，yOffset表示竖直滚动总偏移量。当Scroller没有和组件绑定时，该接口会返回undefined。 |
 
 #### [h2]scrollToIndex
 
@@ -978,17 +961,15 @@ scrollToIndex(value: number, smooth?: boolean, align?: ScrollAlign, options?: Sc
 
 滑动到指定Index，支持设置滑动额外偏移量。
 
-开启smooth动效时，会对经过的所有item进行加载和布局计算，当大量加载item时会导致性能问题，建议先调用scrollToIndex不带动画跳转到目标附近位置，再调用scrollToIndex带动画滚动到目标位置。
+开启smooth动画时，会对经过的所有item进行加载和布局计算。当大量加载item时会导致性能问题，开发者应先调用scrollToIndex不带动画跳转到目标附近位置，再调用scrollToIndex带动画滚动到目标位置，以优化性能。
 
-![](./img/note_3.0-zh-cn.png) 1.仅支持ArcList、Grid、List、WaterFlow组件。
+![](./img/note_3.0-zh-cn.png)
 
-2.在[LazyForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-rendering-control-lazyforeach)、[ForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-rendering-control-foreach)、[Repeat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-rendering-control-repeat)刷新数据源时，需确保在数据刷新完成之后再调用此接口。
-
-3.从API version 11开始，在List中支持[contentStartOffset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list#contentstartoffset11)和[contentEndOffset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list#contentendoffset11)。从API version 22开始，在Grid和Waterflow组件中支持设置[contentStartOffset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scrollable-common#contentstartoffset22)和[contentEndOffset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scrollable-common#contentendoffset22)。
-
-- 当滚动容器组件设置contentStartOffset时，如果ScrollAlign设置为START，滚动结束时，指定item首部会与滚动容器组件contentStartOffset处对齐。
-- 当滚动容器组件设置contentEndOffset时，如果ScrollAlign设置为END，滚动结束时，指定item尾部会与滚动容器组件contentEndOffset处对齐。
-- 当滚动容器组件设置contentStartOffset或contentEndOffset时，如果ScrollAlign设置为AUTO，且指定item完全处于显示区内，不做调整；否则依照滚动距离最短的原则，将指定item首部与滚动组件contentStartOffset处对齐，或指定item尾部与滚动组件contentEndOffset处对齐，使指定item完全显示。
+1. 仅支持ArcList、Grid、List、WaterFlow组件。
+2. 在[LazyForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-rendering-control-lazyforeach)、[ForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-rendering-control-foreach)、[Repeat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-rendering-control-repeat)刷新数据源时，需确保在数据刷新完成之后再调用此接口。
+3. 从API version 11开始，在List中支持[contentStartOffset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list#contentstartoffset11)和[contentEndOffset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list#contentendoffset11)。从API version 22开始，在Grid和WaterFlow组件中支持设置[contentStartOffset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scrollable-common#contentstartoffset22)和[contentEndOffset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scrollable-common#contentendoffset22)。 当滚动容器组件设置contentStartOffset时，如果ScrollAlign设置为START，滚动结束时，指定item首部会与滚动容器组件contentStartOffset处对齐。
+4. 当滚动容器组件设置contentEndOffset时，如果ScrollAlign设置为END，滚动结束时，指定item尾部会与滚动容器组件contentEndOffset处对齐。
+5. 当滚动容器组件设置contentStartOffset或contentEndOffset时，如果ScrollAlign设置为AUTO，且指定item完全处于显示区内，不做调整；否则依照滚动距离最短的原则，将指定item首部与滚动组件contentStartOffset处对齐，或指定item尾部与滚动组件contentEndOffset处对齐，使指定item完全显示。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -999,9 +980,9 @@ scrollToIndex(value: number, smooth?: boolean, align?: ScrollAlign, options?: Sc
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | value | number | 是 | 要滑动到的目标元素在当前容器中的索引值。 **说明：** value值设置成负值或者大于当前容器子组件的最大索引值，视为异常值，本次跳转不生效。 |
-| smooth | boolean | 否 | 设置滑动到列表项在列表中的索引值时是否有动效，true表示有动效，false表示没有动效。 默认值：false。 |
-| align | [ScrollAlign](#scrollalign10枚举说明) | 否 | 指定滑动到的元素与当前容器的对齐方式。 List中的默认值为：ScrollAlign.START。Grid中默认值为：ScrollAlign.AUTO。WaterFlow中的默认值为：ScrollAlign.START。 **说明：** 仅List、Grid、WaterFlow组件支持该参数。 |
-| options12+ | [ScrollToIndexOptions](#scrolltoindexoptions12对象说明) | 否 | 设置滑动到指定Index的选项，如额外偏移量。 默认值：0，单位：vp。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| smooth | boolean | 否 | 设置滑动到列表项在列表中的索引值时是否有动画，true表示有动画，false表示没有动画。不传入时默认无动画。 默认值：false。 |
+| align | [ScrollAlign](#scrollalign10枚举说明) | 否 | 指定滑动到的元素与当前容器的对齐方式，可根据期望item首部、尾部或居中显示选择对应对齐方式。 默认值：List为ScrollAlign.START，Grid为ScrollAlign.AUTO，WaterFlow为ScrollAlign.START。 **说明：** 仅List、Grid、WaterFlow组件支持该参数。 |
+| options12+ | [ScrollToIndexOptions](#scrolltoindexoptions12对象说明) | 否 | 设置滑动到指定Index的选项，包含extraOffset字段，用于指定滚动后的额外偏移量。 不传入时无额外偏移量。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### [h2]scrollBy9+
 
@@ -1108,13 +1089,13 @@ getItemIndex(x: number, y: number): number
 | x | number | 是 | x轴坐标，单位为vp。 |
 | y | number | 是 | y轴坐标，单位为vp。 |
 
-![](./img/note_3.0-zh-cn.png) 非法值返回的索引为-1。
+![](./img/note_3.0-zh-cn.png) 坐标未命中子组件时，返回-1。
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 返回子组件的索引。 |
+| number | 返回坐标命中的子组件索引。坐标未命中子组件时，返回-1。 |
 
 错误码：
 
@@ -1134,7 +1115,7 @@ contentSize(): SizeResult
 ![](./img/note_3.0-zh-cn.png)
 
 - Grid、List、WaterFlow和Scroll组件主轴方向内容大小为所有子组件布局后的总大小，交叉轴方向内容大小为组件自身交叉轴方向大小减去padding和border后的大小。
-- Grid、List、WaterFlow组件有懒加载机制，该接口依赖已布局的子节点进行估算。如果组件内容没有布局完成且子组件高度不一致，估算结果可能会有误差，需要开发者去适配，比如List组件可以通过childrenMainSize属性解决估算不准问题。
+- Grid、List、WaterFlow组件有懒加载机制，该接口依赖已布局的子节点进行估算。如果组件内容没有布局完成且子组件高度不一致，估算结果可能会有误差，开发者需要适配。例如，List组件可以通过childrenMainSize属性解决估算不准问题。
 - 如果应用动态增删子节点，则需要应用动态获取内容总大小，来保证接口获取结果的即时性。
 - 当Scroll组件设置scrollable为ScrollDirection.FREE自由滚动模式时，获取到的内容总大小为子组件缩放后的总大小。
 - 当Scroll组件设置scrollable为ScrollDirection.None不可滚动时，获取到的内容总大小为0。
@@ -1150,7 +1131,7 @@ contentSize(): SizeResult
 
 | 类型 | 说明 |
 | --- | --- |
-| [SizeResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-layout#sizeresult10) | 滚动组件内容总大小，包括内容宽度和高度。 单位：vp |
+| [SizeResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-layout#sizeresult10) | 滚动组件内容总大小。主轴方向内容大小为所有子组件布局后的总大小，交叉轴方向内容大小为组件自身交叉轴方向大小减去padding和border后的大小。 单位：vp |
 
 错误码：
 
@@ -1192,8 +1173,8 @@ getFrameNode(): FrameNode | undefined
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| xOffset | number | 否 | 否 | 水平滑动偏移。 返回值单位为vp。 |
-| yOffset | number | 否 | 否 | 竖直滑动偏移。 返回值单位为vp。 |
+| xOffset | number | 否 | 否 | 水平滑动偏移。 单位：vp。 |
+| yOffset | number | 否 | 否 | 竖直滑动偏移。 单位：vp。 |
 
 #### ScrollAnimationOptions12+对象说明
 
@@ -1269,8 +1250,8 @@ getFrameNode(): FrameNode | undefined
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| xOffset | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | 否 | 是 | 水平滚动偏移。 默认值：0 |
-| yOffset | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | 否 | 是 | 垂直滚动偏移。 默认值：0 |
+| xOffset | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | 否 | 是 | 水平滚动偏移。 默认值：0 参数类型为number时单位为vp。 |
+| yOffset | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | 否 | 是 | 垂直滚动偏移。 默认值：0 参数类型为number时单位为vp。 |
 
 #### ScrollEdgeOptions12+对象说明
 
@@ -1284,7 +1265,7 @@ getFrameNode(): FrameNode | undefined
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| velocity | number | 否 | 是 | 设置滚动到容器边缘的固定速度。如果设置小于等于0的值，参数不生效。 默认值：0 单位： vp/s |
+| velocity | number | 否 | 是 | 设置滚动到容器边缘的固定速度。未设置或设置小于等于0的值时，固定速度设置不生效。 默认值：0 单位：vp/s |
 
 #### ScrollOptions18+对象说明
 
@@ -1300,9 +1281,9 @@ getFrameNode(): FrameNode | undefined
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| xOffset10+ | number | string | 否 | 否 | 水平滚动总偏移量。 **说明：** 该参数值不支持设置百分比。 仅滚动轴为x轴时生效。 取值范围：当值小于0时，不带动画的滚动，按0处理。带动画的滚动，默认滚动到起始位置后停止，可通过设置animation参数，使滚动在越界时启动回弹动画。 参数类型为number时单位为vp。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| yOffset10+ | number | string | 否 | 否 | 垂直滚动总偏移量。 **说明：** 该参数值不支持设置百分比。 仅滚动轴为y轴时生效。 取值范围：当值小于0时，不带动画的滚动，按0处理。带动画的滚动，默认滚动到起始位置后停止，可通过设置animation参数，使滚动在越界时启动回弹动画。 参数类型为number时单位为vp。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| animation10+ | [ScrollAnimationOptions](#scrollanimationoptions12对象说明) | boolean | 否 | 是 | 动画配置。 - ScrollAnimationOptions: 自定义滚动动效。 - boolean: 使能默认弹簧动效。 默认值： ScrollAnimationOptions: { duration: 1000, curve: Curve.Ease, canOverScroll: false } boolean: false **说明：** 当前List、Scroll、Grid、WaterFlow均支持boolean类型和ICurve曲线。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| xOffset10+ | number | string | 否 | 否 | 水平滚动总偏移量。 **说明：** 不支持设置百分比。 仅滚动轴为x轴时生效。 取值范围：当值小于0时，不带动画的滚动，按0处理。带动画的滚动，默认滚动到起始位置后停止，可通过设置animation参数，使滚动在越界时启动回弹动画。 参数类型为number时单位为vp。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| yOffset10+ | number | string | 否 | 否 | 垂直滚动总偏移量。 **说明：** 不支持设置百分比。 仅滚动轴为y轴时生效。 取值范围：当值小于0时，不带动画的滚动，按0处理。带动画的滚动，默认滚动到起始位置后停止，可通过设置animation参数，使滚动在越界时启动回弹动画。 参数类型为number时单位为vp。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| animation10+ | [ScrollAnimationOptions](#scrollanimationoptions12对象说明) | boolean | 否 | 是 | 动画配置。 - ScrollAnimationOptions：自定义滚动动效。 - boolean：使能默认弹簧动效。 默认值： ScrollAnimationOptions：{ duration: 1000, curve: Curve.Ease, canOverScroll: false } boolean：false **说明：** 当前List、Scroll、Grid、WaterFlow均支持boolean类型和ICurve曲线。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | canOverScroll20+ | boolean | 否 | 是 | 滚动目标位置是否可以超出边界停留。仅当组件的edgeEffect设置为EdgeEffect.Spring时，滚动能够越界停留。 设置为true时滚动可以在过界后停留，设置为false时滚动无法在过界后停留。 默认值：false **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 
 #### UIScrollEvent19+
@@ -1315,7 +1296,7 @@ UIScrollEvent继承于[UIScrollableCommonEvent](https://developer.huawei.com/con
 
 setOnWillScroll(callback: ScrollOnWillScrollCallback | undefined): void
 
-设置[onWillScroll](#onwillscroll12)事件的回调。
+[onWillScroll](#onwillscroll12)事件的回调。
 
 方法入参为undefined时，会重置事件回调。
 
@@ -1335,7 +1316,7 @@ setOnWillScroll(callback: ScrollOnWillScrollCallback | undefined): void
 
 setOnDidScroll(callback: ScrollOnScrollCallback | undefined): void
 
-设置[onDidScroll](#ondidscroll12)事件的回调。
+[onDidScroll](#ondidscroll12)事件的回调。
 
 方法入参为undefined时，会重置事件回调。
 
@@ -1360,6 +1341,7 @@ setOnDidScroll(callback: ScrollOnScrollCallback | undefined): void
 ```
 // xxx.ets
 import { curves } from '@kit.ArkUI';
+import { BusinessError } from '@kit.BasicServicesKit';
 
 @Entry
 @Component
@@ -1390,7 +1372,7 @@ struct ScrollExample {
       .friction(0.6)
       .edgeEffect(EdgeEffect.None)
       .onWillScroll((xOffset: number, yOffset: number, scrollState: ScrollState) => {
-        console.info(xOffset + ' ' + yOffset);
+        console.info(`onWillScroll xOffset = ${xOffset}, yOffset = ${yOffset}, scrollState = ${scrollState}`);
       })
       .onScrollEdge((side: Edge) => {
         console.info('To the edge');
@@ -1401,7 +1383,7 @@ struct ScrollExample {
 
       Button('scroll 150')
         .height('5%')
-        .onClick(() => { // 点击后下滑指定距离150.0vp
+        .onClick(() => { // 下滑150.0vp
           this.scroller.scrollBy(0, 150);
         })
         .margin({ top: 10, left: 20 })
@@ -1438,7 +1420,8 @@ struct ScrollExample {
           try {
             this.scroller.fling(-3000);
           } catch (error) {
-            console.error('Failed to execute fling scroll:', error);
+            let err: BusinessError = error as BusinessError;
+            console.error(`Failed to execute fling scroll. Code: ${err.code}, message: ${err.message}`);
           }
         })
         .margin({ top: 260, left: 20 })
@@ -1452,7 +1435,7 @@ struct ScrollExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612489.gif)
+ ![](./img/zh-cn_image_0000002686087933.gif)
 
 #### [h2]示例2（嵌套滚动实现方式一）
 
@@ -1494,7 +1477,7 @@ struct NestedScroll {
                   .textAlign(TextAlign.Center)
                   .backgroundColor(Color.White)
               }.width('100%').height(100)
-            }, (item: string) => item)
+            }, (item: number) => item.toString())
           }
           .width('100%')
           .height('50%')
@@ -1528,7 +1511,7 @@ struct NestedScroll {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413198.gif)
+ ![](./img/zh-cn_image_0000002685928105.gif)
 
 #### [h2]示例3（嵌套滚动实现方式二）
 
@@ -1595,7 +1578,7 @@ struct StickyNestedScroll {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732427.gif)
+ ![](./img/zh-cn_image_0000002656008426.gif)
 
 #### [h2]示例4（嵌套滚动父组件向子组件传递滚动）
 
@@ -1689,7 +1672,7 @@ struct NestedScroll {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253308.gif)
+ ![](./img/zh-cn_image_0000002655848506.gif)
 
 #### [h2]示例5（设置限位滚动）
 
@@ -1724,7 +1707,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612491.gif)
+ ![](./img/zh-cn_image_0000002686087935.gif)
 
 #### [h2]示例6（获取子组件索引）
 
@@ -1732,24 +1715,28 @@ struct Index {
 
 ```
 // xxx.ets
+import { BusinessError } from '@kit.BasicServicesKit';
+
 @Entry
 @Component
 struct ListExample {
   private arr: number[] = [];
   private scroller: ListScroller = new ListScroller();
   @State listSpace: number = 10;
-  @State listChildrenSize: ChildrenMainSize = new ChildrenMainSize(100);
+  @State listChildrenSize: ChildrenMainSize = new ChildrenMainSize(120);
   @State listIndex: number = -1;
-  @State itemBackgroundColorArr: boolean[] = [false];
+  @State itemBackgroundColorArr: boolean[] = [];
   aboutToAppear(){
     // 初始化数据源。
     for (let i = 0; i < 10; i++) {
       this.arr.push(i);
+      this.itemBackgroundColorArr.push(false);
     }
     try {
       this.listChildrenSize.splice(0, 5, [100, 100, 100, 100, 100]);
     } catch (error) {
-      console.info('Failed to splice childrenMainSize for first 5 items:', error);
+      let err: BusinessError = error as BusinessError;
+      console.error(`Failed to splice childrenMainSize for first 5 items. Code: ${err.code}, message: ${err.message}`);
     }
   }
   build() {
@@ -1779,9 +1766,12 @@ struct ListExample {
               try {
                 this.listIndex = this.scroller.getItemIndex(event.fingerList[0].localX, event.fingerList[0].localY);
               } catch (error) {
-                console.error('Failed to get item index from scroller:', error);
+                let err: BusinessError = error as BusinessError;
+                console.error(`Failed to get item index from scroller. Code: ${err.code}, message: ${err.message}`);
               }
-              this.itemBackgroundColorArr[this.listIndex] = true;
+              if (this.listIndex >= 0 && this.listIndex < this.itemBackgroundColorArr.length) {
+                this.itemBackgroundColorArr[this.listIndex] = true;
+              }
             }
           })
       )
@@ -1789,7 +1779,7 @@ struct ListExample {
         TapGesture({ count: 1 })
           .onAction((event: GestureEvent) => {
             if (event) {
-              this.itemBackgroundColorArr.splice(0,this.itemBackgroundColorArr.length);
+              this.itemBackgroundColorArr = this.arr.map(() => false);
             }
           })
       )
@@ -1801,7 +1791,7 @@ struct ListExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413200.gif)
+ ![](./img/zh-cn_image_0000002685928107.gif)
 
 #### [h2]示例7（设置边缘渐隐）
 
@@ -1829,7 +1819,7 @@ struct ScrollExample {
               .fontSize(16)
               .textAlign(TextAlign.Center)
               .margin({ top: 10 })
-          }, (item: string) => item)
+          }, (item: number) => item.toString())
         }.width('100%')
       }
       .fadingEdge(true,{fadingEdgeLength:LengthMetrics.vp(80)})
@@ -1838,7 +1828,7 @@ struct ScrollExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732429.gif)
+ ![](./img/zh-cn_image_0000002656008428.gif)
 
 #### [h2]示例8（单边边缘效果）
 
@@ -1865,7 +1855,7 @@ struct ScrollExample {
               .fontSize(16)
               .textAlign(TextAlign.Center)
               .margin({ top: 10 })
-          }, (item: string) => item)
+          }, (item: number) => item.toString())
         }.width('100%')
       }
       .edgeEffect(EdgeEffect.Spring,{alwaysEnabled:true,effectEdge:EffectEdge.START})
@@ -1873,9 +1863,9 @@ struct ScrollExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253310.gif)
+ ![](./img/zh-cn_image_0000002655848508.gif)
 
-#### [h2]示例9（划动翻页效果）
+#### [h2]示例9（滑动翻页效果）
 
 该示例通过[enablePaging](#enablepaging11)接口，实现了Scroll组件滑动翻页效果。
 
@@ -1906,7 +1896,7 @@ struct EnablePagingExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612493.gif)
+ ![](./img/zh-cn_image_0000002686087937.gif)
 
 #### [h2]示例10（设置过界停留）
 
@@ -1919,7 +1909,7 @@ import { curves } from '@kit.ArkUI';
 @Entry
 @Component
 struct StickyNestedScroll {
-  scroller: Scroller = new Scroller;
+  scroller: Scroller = new Scroller();
 
   build() {
     Column() {
@@ -1968,7 +1958,7 @@ struct StickyNestedScroll {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413202.gif)
+ ![](./img/zh-cn_image_0000002685928109.gif)
 
 #### [h2]示例11（自由滚动和缩放）
 
@@ -2003,7 +1993,7 @@ struct ScrollZoomExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732431.gif)
+ ![](./img/zh-cn_image_0000002656008430.gif)
 
 #### [h2]示例12（获取内容总大小）
 
@@ -2042,7 +2032,7 @@ struct ScrollExample1 {
               this.contentHeight = this.scroller.contentSize().height;
             } catch (error) {
               let err: BusinessError = error as BusinessError;
-              console.error(`Failed to get contentSize of the grid, code=${err.code}, message=${err.message}`);
+              console.error(`Failed to get contentSize. Code: ${err.code}, message: ${err.message}`);
             }
           })
         // 将获取到的内容尺寸信息通过文本进行呈现
@@ -2077,7 +2067,7 @@ struct ScrollExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253312.gif)
+ ![](./img/zh-cn_image_0000002655848510.gif)
 
 #### [h2]示例13（设置滚动事件）
 
@@ -2104,12 +2094,12 @@ class MyNodeController extends NodeController {
     // 设置OnWillScroll事件
     scrollEvent?.setOnWillScroll((xOffset: number, yOffset: number, scrollState: ScrollState,
       scrollSource: ScrollSource) => {
-      console.info('onWillScroll xOffset = ${xOffset}, yOffset = ${yOffset}, scrollState = ${scrollState}, scrollSource = ${scrollSource}');
+      console.info(`onWillScroll xOffset = ${xOffset}, yOffset = ${yOffset}, scrollState = ${scrollState}, scrollSource = ${scrollSource}`);
     });
 
     // 设置OnDidScroll事件
-    scrollEvent?.setOnDidScroll((scrollOffset: number, scrollState: ScrollState) => {
-      console.info('onDidScroll scrollOffset = ${scrollOffset}, scrollState = ${scrollState}');
+    scrollEvent?.setOnDidScroll((xOffset: number, yOffset: number, scrollState: ScrollState) => {
+      console.info(`onDidScroll xOffset = ${xOffset}, yOffset = ${yOffset}, scrollState = ${scrollState}`);
     });
 
     // 设置OnReachStart事件
@@ -2134,7 +2124,7 @@ class MyNodeController extends NodeController {
 
     // 设置OnScrollFrameBegin事件
     scrollEvent?.setOnScrollFrameBegin((offset: number, state: ScrollState) => {
-      console.info('onScrollFrameBegin offset = ${offset}, state = ${state}');
+      console.info(`onScrollFrameBegin offset = ${offset}, state = ${state}`);
       return undefined;
     });
   }
@@ -2149,7 +2139,7 @@ struct Index {
 
   aboutToAppear() {
     for (let i = 0; i < 30; i++) {
-      this.numbers.push('${i+1}');
+      this.numbers.push(`${i + 1}`);
     }
   }
 

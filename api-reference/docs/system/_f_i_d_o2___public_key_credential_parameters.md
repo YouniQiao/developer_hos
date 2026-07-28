@@ -2,8 +2,8 @@
 title: "FIDO2_PublicKeyCredentialParameters"
 upstream_id: "harmonyos-references/_f_i_d_o2___public_key_credential_parameters"
 catalog: "harmonyos-references"
-content_hash: "8f6a56b00000"
-synced_at: "2026-07-09T00:59:18.982622"
+content_hash: "6c1b4149a1d8"
+synced_at: "2026-07-28T16:50:31.696239"
 ---
 
 # FIDO2_PublicKeyCredentialParameters
@@ -14,7 +14,9 @@ synced_at: "2026-07-09T00:59:18.982622"
 
 起始版本： 6.0.0(20)
 
-相关模块： [FIDO2](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey)
+相关模块： [FIDO2（通行密钥服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey)
+
+所在头文件： [fido2_api.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication_capi_header_fido2)
 
 #### 汇总
 
@@ -23,7 +25,7 @@ synced_at: "2026-07-09T00:59:18.982622"
 | 名称 | 描述 |
 | --- | --- |
 | [FIDO2_PublicKeyCredentialType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey#fido2_publickeycredentialtype-1) [type](#type) | PublicKey凭证类型。 |
-| [FIDO2_Algorithm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey#fido2_algorithm-1) [alg](#alg) | 算法。 |
+| [FIDO2_Algorithm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey#fido2_algorithm-1) [alg](#alg) | 凭证所使用的密码算法。 |
 
 #### 结构体成员变量说明
 
@@ -34,7 +36,7 @@ FIDO2_Algorithm FIDO2_PublicKeyCredentialParameters::alg
 ```
  描述
 
-算法。
+凭证所使用的密码算法。
 
 #### [h2]type
 

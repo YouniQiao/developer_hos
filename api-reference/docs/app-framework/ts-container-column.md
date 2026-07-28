@@ -2,17 +2,17 @@
 title: "Column"
 upstream_id: "harmonyos-references/ts-container-column"
 catalog: "harmonyos-references"
-content_hash: "e35f23a9c1e8"
-synced_at: "2026-07-09T00:57:45.239464"
+content_hash: "5b9288a59f9d"
+synced_at: "2026-07-28T16:43:12.293772"
 ---
 
 # Column
 
-沿垂直方向布局的容器。
+沿垂直方向布局的容器。适用于需要将多个子组件按垂直方向依次排列的场景，如列表项、表单项、卡片内容等。支持设置子组件间距、对齐方式等属性，能够快速实现垂直方向的线性布局。
 
-![](./img/note_3.0-zh-cn.png) 该组件从API version 7开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+![](./img/note_3.0-zh-cn.png) 该组件从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
-Column未设置高度或宽度时，在主轴或交叉轴方向上自适应子组件大小。
+Column未设置高度或宽度时，在主轴（垂直方向）或交叉轴（水平方向）方向上自适应子组件大小。
 
 #### 子组件
 
@@ -38,13 +38,15 @@ Column(options?: ColumnOptions)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options18+ | [ColumnOptions](#columnoptions18对象说明) | 否 | 纵向布局元素的配置选项，可设置子组件的垂直方向间距。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| options18+ | [ColumnOptions](#columnoptions18对象说明) | 否 | Column组件的间距配置选项。通过space属性设置纵向布局元素垂直方向间距。当需要为子组件设置固定垂直间距时传入此参数；省略时不设置子组件间距。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### [h2]Column18+
 
 Column(options?: ColumnOptions | ColumnOptionsV2)
 
 创建垂直方向线性布局容器，可以设置子组件的间距。
+
+![](./img/note_3.0-zh-cn.png) 在复杂界面中使用多组件嵌套时，若布局组件的嵌套层数过深或嵌套的组件数量过多，将会产生额外开销。建议通过移除冗余节点、利用布局边界减少布局计算、合理采用渲染控制语法及布局组件方法来优化性能。最佳实践请参考[布局优化指导](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-improve-layout-performance)。
 
 卡片能力： 从API version 18开始，该接口支持在ArkTS卡片中使用。
 
@@ -58,7 +60,7 @@ Column(options?: ColumnOptions | ColumnOptionsV2)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [ColumnOptions](#columnoptions18对象说明) | [ColumnOptionsV2](#columnoptionsv218对象说明) | 否 | 纵向布局元素的配置选项，可设置子组件的垂直方向间距。 |
+| options | [ColumnOptions](#columnoptions18对象说明) | [ColumnOptionsV2](#columnoptionsv218对象说明) | 否 | Column组件的间距配置选项。通过space属性设置纵向布局元素垂直方向间距，space支持设置number、string或Resource类型。当需要为子组件设置固定垂直间距时传入此参数；省略时不设置子组件间距。 |
 
 #### ColumnOptions18+对象说明
 
@@ -76,7 +78,7 @@ Column(options?: ColumnOptions | ColumnOptionsV2)
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| space7+ | string | number | 否 | 是 | 纵向布局元素垂直方向间距。 space为负数或者[justifyContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-column#justifycontent8)设置为FlexAlign.SpaceBetween、FlexAlign.SpaceAround、FlexAlign.SpaceEvenly时，space不生效。 默认值：0 非法值：按默认值处理。 单位：vp **说明：** space取值是大于等于0的数字，或者可以转换为数字的字符串。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| space7+ | string | number | 否 | 是 | 纵向布局元素垂直方向间距。 space为负数或者[justifyContent](#justifycontent8)设置为FlexAlign.SpaceBetween、FlexAlign.SpaceAround、FlexAlign.SpaceEvenly时，space不生效。 取值范围：[0, +∞) 默认值：0 非法值：按默认值处理。 单位：vp **说明：** space取值是大于等于0的数字，或者可以转换为非负数字的字符串。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 
 #### ColumnOptionsV218+对象说明
 
@@ -92,7 +94,7 @@ Column(options?: ColumnOptions | ColumnOptionsV2)
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| space | [SpaceType](#spacetype18) | 否 | 是 | 纵向布局元素垂直方向间距。 space为负数或者justifyContent设置为FlexAlign.SpaceBetween、FlexAlign.SpaceAround、FlexAlign.SpaceEvenly时，space不生效。 默认值：0 单位：vp 非法值：按默认值处理。 **说明：** space取值是大于等于0的数字，或者可以转换为数字的字符串，或者可以转换为数字的Resource类型数据。 |
+| space | [SpaceType](#spacetype18) | 否 | 是 | 设置纵向布局元素垂直方向间距。 space为负数或者[justifyContent](#justifycontent8)设置为FlexAlign.SpaceBetween、FlexAlign.SpaceAround、FlexAlign.SpaceEvenly时，space不生效。 取值范围：[0, +∞) 默认值：0 单位：vp 非法值：按默认值处理。 **说明：** space取值是大于等于0的数字，或者可以转换为非负数字的字符串，或者可以转换为数字的Resource类型数据。 |
 
 #### SpaceType18+
 
@@ -110,8 +112,8 @@ Column组件构造函数中space支持的数据类型，取值类型为下表类
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 表示类型为数字，可取任意值。 |
-| string | 表示值类型为字符串，可取任意值。 |
+| number | 表示类型为数字，取值为大于等于0的数字。取负数或非法值时，按默认值0处理。 |
+| string | 表示值类型为字符串，取值为可以转换为非负数字的字符串。取负数或不可转换的字符串时，按默认值0处理。 |
 | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 表示值为资源引用类型，取值为从系统资源或者应用资源中引入的数据值。 |
 
 #### 属性
@@ -152,7 +154,7 @@ justifyContent(value: FlexAlign)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [FlexAlign](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#flexalign) | 是 | 子组件在垂直方向上的对齐格式。 默认值：FlexAlign.Start |
+| value | [FlexAlign](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#flexalign) | 是 | 子组件在垂直方向上的对齐格式。 默认值：FlexAlign.Start **说明：** 若子组件不设置[flexShrink](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-flex-layout#flexshrink)，FlexAlign.Center和FlexAlign.End可能失效，详见下方说明。设置为FlexAlign.SpaceBetween、FlexAlign.SpaceAround、FlexAlign.SpaceEvenly时，[space](#columnoptions18对象说明)属性不生效。 |
 
 ![](./img/note_3.0-zh-cn.png) Column布局时若子组件不设置[flexShrink](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-flex-layout#flexshrink)则默认不会压缩子组件，即所有子组件主轴大小累加可超过容器主轴，此时FlexAlign.Center和FlexAlign.End会失效。
 
@@ -174,7 +176,7 @@ reverse(isReversed: Optional<boolean>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| isReversed | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 子组件在垂直方向上的排列是否反转。 默认值：true，设置true表示子组件在垂直方向上反转排列，设置false表示子组件在垂直方向上正序排列。 |
+| isReversed | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 子组件在垂直方向上的排列是否反转。 默认值：true。设置true表示子组件在垂直方向上反转排列，设置false表示子组件在垂直方向上正序排列。 |
 
 ![](./img/note_3.0-zh-cn.png) 若未设置reverse属性，主轴方向不反转；若设置了reverse属性，且参数值为undefined，则视为默认值true，主轴方向反转。
 
@@ -260,7 +262,7 @@ struct ColumnExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732383.png)
+ ![](./img/zh-cn_image_0000002686087889.png)
 
 #### [h2]示例2（设置反转属性）
 
@@ -289,4 +291,4 @@ struct ColumnReverseSample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253264.png)
+ ![](./img/zh-cn_image_0000002685928061.png)

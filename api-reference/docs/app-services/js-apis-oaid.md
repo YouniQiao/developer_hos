@@ -2,13 +2,13 @@
 title: "@ohos.identifier.oaid (开放匿名设备标识服务)"
 upstream_id: "harmonyos-references/js-apis-oaid"
 catalog: "harmonyos-references"
-content_hash: "cccbef6a7187"
-synced_at: "2026-07-09T01:01:14.180403"
+content_hash: "4005faaf3e0a"
+synced_at: "2026-07-28T16:52:32.253274"
 ---
 
 # @ohos.identifier.oaid (开放匿名设备标识服务)
 
-本模块提供开放匿名设备标识符（Open Anonymous Device Identifier, OAID，以下简称OAID）的获取和重置能力。
+本模块提供开放匿名设备标识符（Open Anonymous Device Identifier, OAID，以下简称OAID）的获取能力。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 10开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -55,6 +55,7 @@ import { hilog } from '@kit.PerformanceAnalysisKit';
 
 void identifier.getOAID().then((data: string) => {
   const oaid: string = data;
+  hilog.info(0x0000, 'testTag', `Succeeded in getting OAID: ${oaid}`);
 }).catch((error: BusinessError) => {
   hilog.error(0x0000, 'testTag', `Failed to get oaid. Code is ${error.code}, message is ${error.message}`);
 });
@@ -97,5 +98,6 @@ identifier.getOAID((err: BusinessError, data: string) => {
     return;
   }
   const oaid: string = data;
+  hilog.info(0x0000, 'testTag', `Succeeded in getting OAID: ${oaid}`);
 });
 ```

@@ -2,19 +2,19 @@
 title: "OH_AudioCapturer_Callbacks_Struct"
 upstream_id: "harmonyos-references/capi-ohaudio-oh-audiocapturer-callbacks-struct"
 catalog: "harmonyos-references"
-content_hash: "33abec0b964e"
-synced_at: "2026-07-09T01:00:11.917707"
+content_hash: "1089ea699016"
+synced_at: "2026-07-28T16:51:30.427127"
 ---
 
 # OH_AudioCapturer_Callbacks_Struct
 
 ```
-typedef struct OH_AudioCapturer_Callbacks_Struct {...} OH_AudioCapturer_Callbacks
+typedef struct OH_AudioCapturer_Callbacks_Struct {...} OH_AudioCapturer_Callbacks;
 ```
 
 #### 概述
 
-声明输入音频流的回调函数指针。
+声明用于音频采集器的回调函数指针。
 
 为了避免不可预期的行为，在设置音频回调函数时，请确保该结构体的每一个成员变量都被自定义的回调方法或空指针初始化。可参考[推荐使用OHAudio开发音频录制功能(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ohaudio-for-recording)。
 
@@ -26,7 +26,7 @@ typedef struct OH_AudioCapturer_Callbacks_Struct {...} OH_AudioCapturer_Callback
 
 请分别使用以下回调类型替代：
 
-[OH_AudioCapturer_OnReadDataCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiocapturer-h#oh_audiocapturer_onreaddatacallback)、 [OH_AudioCapturer_OnDeviceChangeCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiocapturer-h#oh_audiocapturer_ondevicechangecallback)、 [OH_AudioCapturer_OnInterruptCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiocapturer-h#oh_audiocapturer_oninterruptcallback) 以及 [OH_AudioCapturer_OnErrorCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiocapturer-h#oh_audiocapturer_onerrorcallback)。
+[OH_AudioCapturer_OnReadDataCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiocapturer-h#oh_audiocapturer_onreaddatacallback)、[OH_AudioCapturer_OnDeviceChangeCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiocapturer-h#oh_audiocapturer_ondevicechangecallback)、[OH_AudioCapturer_OnInterruptCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiocapturer-h#oh_audiocapturer_oninterruptcallback) 以及 [OH_AudioCapturer_OnErrorCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiocapturer-h#oh_audiocapturer_onerrorcallback)。
 
 相关模块： [OHAudio](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio)
 

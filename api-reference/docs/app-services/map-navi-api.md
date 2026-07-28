@@ -2,8 +2,8 @@
 title: "navi（路径规划）"
 upstream_id: "harmonyos-references/map-navi-api"
 catalog: "harmonyos-references"
-content_hash: "fd16a62d2b43"
-synced_at: "2026-07-09T01:01:27.189568"
+content_hash: "e3ebf87eae81"
+synced_at: "2026-07-28T16:52:45.701979"
 ---
 
 # navi（路径规划）
@@ -1259,16 +1259,16 @@ console.info("Succeeded in snapping to roads.");
 | overviewPolyline | Array | 否 | 是 | 表示该路线的编码后的折线经纬度。 |
 | optimizedWaypoints | Array | 否 | 是 | 当isViaType = false且optimize = true 时才会有结果，表示进行路径优化之后途经点的索引。 |
 | bounds | Array | 否 | 是 | 路线边界范围。 |
-| trafficLightCount | number | 否 | 是 | 红绿灯个数。 |
-| isDestinationInRestrictedArea | boolean | 否 | 是 | 终点是否在限制区域。 - true：在限制区域 - false：不在限制区域 |
-| isDestinationInDiffTimeZone | boolean | 否 | 是 | 目的地是否在不同时区。 - true：在不同时区 - false：在相同时区 |
-| isCrossCountry | boolean | 否 | 是 | 是否穿越国境线。 - true：穿越国境线 - false：不穿越国境线 |
-| isCrossMultiCountries | boolean | 否 | 是 | 是否穿越多条国境线。 - true：穿越多条国境线 - false：不穿越多条国境线 |
-| hasRestrictedRoad | boolean | 否 | 是 | 此路段是否包含私家/限制用途。 - true：包含私家/限制用途 - false：不包含私家/限制用途 |
-| hasRoughRoad | boolean | 否 | 是 | 此路段是否经过崎岖道路。 - true：经过崎岖道路 - false：不经过崎岖道路 |
-| hasFerry | boolean | 否 | 是 | 是否途经轮渡。 - true：途经轮渡 - false：不途经轮渡 |
-| hasTolls | boolean | 否 | 是 | 此路段是否含收费站。 - true：含收费站 - false：不含收费站 |
-| hasStairs | boolean | 否 | 是 | 此路段是否含有阶梯。 - true：含有阶梯 - false：不含有阶梯 |
+| trafficLightCount | number | 否 | 是 | 红绿灯个数，默认值：0。 |
+| isDestinationInRestrictedArea | boolean | 否 | 是 | 终点是否在限制区域，默认值：false。 - true：在限制区域。 - false：不在限制区域。 |
+| isDestinationInDiffTimeZone | boolean | 否 | 是 | 目的地是否在不同时区，默认值：false。 - true：在不同时区。 - false：在相同时区。 |
+| isCrossCountry | boolean | 否 | 是 | 是否穿越国境线，默认值：false。 - true：穿越国境线。 - false：不穿越国境线。 |
+| isCrossMultiCountries | boolean | 否 | 是 | 是否穿越多条国境线，默认值：false。 - true：穿越多条国境线。 - false：不穿越多条国境线。 |
+| hasRestrictedRoad | boolean | 否 | 是 | 此路段是否包含私家/限制用途，默认值：false。 - true：包含私家/限制用途。 - false：不包含私家/限制用途。 |
+| hasRoughRoad | boolean | 否 | 是 | 此路段是否经过崎岖道路，默认值：false。 - true：经过崎岖道路。 - false：不经过崎岖道路。 |
+| hasFerry | boolean | 否 | 是 | 是否途经轮渡，默认值：false。 - true：途经轮渡。 - false：不途经轮渡。 |
+| hasTolls | boolean | 否 | 是 | 此路段是否含收费站，默认值：false。 - true：含收费站。 - false：不含收费站。 |
+| hasStairs | boolean | 否 | 是 | 此路段是否含有阶梯，默认值：false。 - true：含有阶梯。 - false：不含有阶梯。 |
 
 #### RouteStep
 
@@ -1290,11 +1290,11 @@ console.info("Succeeded in snapping to roads.");
 | endLocation | [mapCommon.LatLng](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#latlng) | 否 | 否 | 目的地的经纬度。 |
 | endAddress | string | 否 | 是 | endLocation对应的地址详情。 |
 | viaWaypoints | Array | 否 | 是 | 途经点信息。 |
-| distance | number | 否 | 是 | 行驶/步行/骑行距离，单位：m。 |
+| distance | number | 否 | 是 | 行驶/步行/骑行距离，单位：m，默认值：0。 |
 | distanceDescription | string | 否 | 是 | distance的文本描述。 |
-| duration | number | 否 | 是 | 行驶/步行/骑行时长，单位：s。 |
+| duration | number | 否 | 是 | 行驶/步行/骑行时长，单位：s，默认值：0。 |
 | durationDescription | string | 否 | 是 | duration的文本描述。 |
-| durationInTraffic | number | 否 | 是 | 基于实时路况计算出来的行驶/步行/骑行时长，单位：s。 |
+| durationInTraffic | number | 否 | 是 | 基于实时路况计算出来的行驶/步行/骑行时长，单位：s，默认值：0。 |
 | durationInTrafficDescription | string | 否 | 是 | durationInTraffic的文本描述。 |
 
 #### RouteRoad
@@ -1319,8 +1319,8 @@ console.info("Succeeded in snapping to roads.");
 | duration | number | 否 | 否 | 行驶/步行/骑行时长，单位：s。 |
 | durationDescription | string | 否 | 是 | duration的文本描述。 |
 | roadName | string | 否 | 是 | 路名。 |
-| action | string | 否 | 是 | 当前步骤要执行的操作。取值包括： - turn_slight_left：向左微转 - turn_sharp_left：向左急转 - turn_left：左转 - turn_slight_right：向右微转 - turn_sharp_right：向右急转 - turn_right：右转 - straight：直行 - end：终点 - waypoint：途经点 |
-| orientation | number | 否 | 是 | 道路方向。取值包括： 0：双向 1：正向 2：反向 |
+| action | string | 否 | 是 | 当前步骤要执行的操作。取值包括： - turn_slight_left：向左微转。 - turn_sharp_left：向左急转。 - turn_left：左转。 - turn_slight_right：向右微转。 - turn_sharp_right：向右急转。 - turn_right：右转。 - straight：直行。 - end：终点。 - waypoint：途经点。 |
+| orientation | number | 否 | 是 | 道路方向，默认值：0。取值包括： 0：双向。 1：正向。 2：反向。 |
 | instruction | string | 否 | 是 | 文字指引。 |
 | trafficSegments | Array | 否 | 是 | 路况信息。 |
 
@@ -1742,8 +1742,8 @@ console.info("Succeeded in snapping to roads.");
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| BUS | bus | 公交。 |
-| SUBWAY | subway | 地铁。 |
+| BUS | 'bus' | 公交。 |
+| SUBWAY | 'subway' | 地铁。 |
 
 #### MatrixResult
 

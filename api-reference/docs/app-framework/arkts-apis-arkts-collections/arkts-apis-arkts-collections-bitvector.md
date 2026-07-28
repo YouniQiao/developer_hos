@@ -2,8 +2,8 @@
 title: "Class (BitVector)"
 upstream_id: "harmonyos-references/arkts-apis-arkts-collections-bitvector"
 catalog: "harmonyos-references"
-content_hash: "7ca407e1a5ca"
-synced_at: "2026-07-09T00:57:24.438556"
+content_hash: "e1335da6b8c3"
+synced_at: "2026-07-28T16:40:56.317034"
 ---
 
 # Class (BitVector)
@@ -56,7 +56,7 @@ let bitVector: collections.BitVector = new collections.BitVector(0); // 初始�
 
 #### push
 
-push(element:number): boolean
+push(element: number): boolean
 
 在BitVector尾部插入元素。
 
@@ -680,5 +680,5 @@ bitVector.push(1);
 bitVector.push(0);
 bitVector.push(1);
 bitVector.push(0); // bitVector: [0, 1, 0, 1, 0]
-console.info("BitVector Element Index at 1: " + bitVector[1]);
+console.info("BitVector Element Index at 1: " + bitVector[1]); // bitVector 1
 ```

@@ -2,8 +2,8 @@
 title: "avmetadata_extractor.h"
 upstream_id: "harmonyos-references/capi-avmetadata-extractor-h"
 catalog: "harmonyos-references"
-content_hash: "7685bd1c8705"
-synced_at: "2026-07-09T01:00:40.895973"
+content_hash: "a3a004e7d8ac"
+synced_at: "2026-07-28T16:51:58.774571"
 ---
 
 # avmetadata_extractor.h
@@ -40,9 +40,9 @@ synced_at: "2026-07-09T01:00:40.895973"
 | [OH_AVErrCode OH_AVMetadataExtractor_FetchFrameByTime(OH_AVMetadataExtractor *extractor, int64_t timeUs, OH_AVMedia_SeekMode seekMode, const OH_AVMetadataExtractor_OutputParam* outputParam, OH_PixelmapNative** pixelMap)](#oh_avmetadataextractor_fetchframebytime) | 从视频源中提取指定时间点的图像。该函数必须在设置资源之后使用。 |
 | [typedef void (*OH_AVMetadataExtractor_OnFrameFetched)(OH_AVMetadataExtractor *extractor, const OH_AVMetadataExtractor_FrameInfo* frameInfo, OH_AVErrCode code, void* userData)](#oh_avmetadataextractor_onframefetched) | 定义用于获取AVMetadataExtractor捕获帧的回调函数。注意：frameInfo会在回调后自动释放，但用户需要使用[OH_PixelmapNative_Destroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-pixelmap-native-h#oh_pixelmapnative_destroy)手动释放frameInfo.image，避免内存泄漏。 |
 | [OH_AVErrCode OH_AVMetadataExtractor_FetchFramesByTimes(OH_AVMetadataExtractor *extractor, int64_t timesUs[], uint16_t timesUsSize, OH_AVMedia_SeekMode seekMode, const OH_AVMetadataExtractor_OutputParam* outputParam, OH_AVMetadataExtractor_OnFrameFetched onFrameInfoCallback, void* userData)](#oh_avmetadataextractor_fetchframesbytimes) | 从视频源中异步提取多个指定时间点的图像。该函数必须在设置资源之后使用。 |
-| [void OH_AVMetadataExtractor_CancelAllFetchFrames(OH_AVMetadataExtractor *extractor)](#oh_avmetadataextractor_cancelallfetchframes) | 取消所有由[OH_AVMetadataExtractor_FetchFramesByTimes](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avmetadata-extractor-h#oh_avmetadataextractor_fetchframesbytimes)发起的批量获取图像操作。在[OH_AVMetadataExtractor_OnFrameFetched](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avmetadata-extractor-h#oh_avmetadataextractor_onframefetched)回调中，挂起的获取操作被取消，并标记结果为已取消。 |
-| [OH_AVFormat *OH_AVMetadataExtractor_GetTrackDescription(OH_AVMetadataExtractor *extractor, uint32_t index)](#oh_avmetadataextractor_gettrackdescription) | 从媒体源中获取指定索引的轨道描述信息。该函数必须在设置资源之后使用。 |
-| [OH_AVFormat *OH_AVMetadataExtractor_GetCustomInfo(OH_AVMetadataExtractor *extractor)](#oh_avmetadataextractor_getcustominfo) | 从媒体源中获取自定义元数据信息。该函数必须在设置资源之后使用。 |
+| [void OH_AVMetadataExtractor_CancelAllFetchFrames(OH_AVMetadataExtractor *extractor)](#oh_avmetadataextractor_cancelallfetchframes) | 取消所有由[OH_AVMetadataExtractor_FetchFramesByTimes](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avmetadata-extractor-h#oh_avmetadataextractor_fetchframesbytimes)发起的批量获取图像操作。在[OH_AVMetadataExtractor_OnFrameFetched](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avmetadata-extractor-h#oh_avmetadataextractor_onframefetched)回调中，挂起的获取操作被取消，回调函数的code参数将返回表示取消的错误码。 |
+| [OH_AVFormat *OH_AVMetadataExtractor_GetTrackDescription(OH_AVMetadataExtractor *extractor, uint32_t index)](#oh_avmetadataextractor_gettrackdescription) | 从媒体资源中获取指定索引的轨道描述信息。该函数必须在设置资源之后使用。 |
+| [OH_AVFormat *OH_AVMetadataExtractor_GetCustomInfo(OH_AVMetadataExtractor *extractor)](#oh_avmetadataextractor_getcustominfo) | 从媒体资源中获取自定义元数据信息。该函数必须在设置资源之后使用。 |
 | [OH_AVErrCode OH_AVMetadataExtractor_SetMediaSource(OH_AVMetadataExtractor *extractor, OH_AVMediaSource *source)](#oh_avmetadataextractor_setmediasource) | 为提取器设置媒体源。 |
 | [OH_AVMetadataExtractor* OH_AVMetadataExtractor_Create(void)](#oh_avmetadataextractor_create) | 创建OH_AVMetadataExtractor实例。 |
 | [OH_AVErrCode OH_AVMetadataExtractor_SetFDSource(OH_AVMetadataExtractor* extractor, int32_t fd, int64_t offset, int64_t size)](#oh_avmetadataextractor_setfdsource) | 通过媒体文件描述符设置数据源。 |
@@ -109,7 +109,7 @@ bool OH_AVMetadataExtractor_OutputParam_SetSize(OH_AVMetadataExtractor_OutputPar
 
 | 类型 | 说明 |
 | --- | --- |
-| bool | 成功返回true，失败返回false。 可能失败的原因：outputParam为空指针。 |
+| bool | 成功返回true，失败返回false。 可能失败的原因：输入的outputParam为空指针。 |
 
 #### [h2]OH_AVMetadataExtractor_FetchFrameByTime()
 
@@ -127,7 +127,7 @@ OH_AVErrCode OH_AVMetadataExtractor_FetchFrameByTime(OH_AVMetadataExtractor *ext
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_AVMetadataExtractor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avmetadataextractor-oh-avmetadataextractor) *extractor | 指向OH_AVMetadataExtractor实例的指针。 |
-| int64_t timeUs | 要从视频资源中提取图像的时间位置（单位：微秒）。 |
+| int64_t timeUs | 要从视频源中提取图像的时间位置，单位为微秒（μs）。 |
 | [OH_AVMedia_SeekMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avmedia-base-h#oh_avmedia_seekmode) seekMode | 定义指定时间与关键帧之间关系的跳转模式。详见[OH_AVMedia_SeekMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avmedia-base-h#oh_avmedia_seekmode)。 |
 | [const OH_AVMetadataExtractor_OutputParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avmetadataextractor-oh-avmetadataextractor-outputparam)* outputParam | 图像的输出参数，例如图像的高度或者宽度。详见[OH_AVMetadataExtractor_OutputParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avmetadataextractor-oh-avmetadataextractor-outputparam)。若为空指针，使用视频的原始尺寸。注意：用户需要使用[OH_PixelmapNative_Destroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-pixelmap-native-h#oh_pixelmapnative_destroy)在使用pixelMap后将其释放。 |
 | [OH_PixelmapNative](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image-nativemodule-oh-pixelmapnative)** pixelMap | 用于接收从视频源提取的图像，详见[OH_PixelmapNative](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image-nativemodule-oh-pixelmapnative)。 |
@@ -185,7 +185,7 @@ void OH_AVMetadataExtractor_CancelAllFetchFrames(OH_AVMetadataExtractor *extract
 ```
  描述
 
-取消所有由[OH_AVMetadataExtractor_FetchFramesByTimes](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avmetadata-extractor-h#oh_avmetadataextractor_fetchframesbytimes)发起的批量获取图像操作。在[OH_AVMetadataExtractor_OnFrameFetched](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avmetadata-extractor-h#oh_avmetadataextractor_onframefetched)回调中，挂起的获取操作被取消，并标记结果为已取消。
+取消所有由[OH_AVMetadataExtractor_FetchFramesByTimes](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avmetadata-extractor-h#oh_avmetadataextractor_fetchframesbytimes)发起的批量获取图像操作。在[OH_AVMetadataExtractor_OnFrameFetched](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avmetadata-extractor-h#oh_avmetadataextractor_onframefetched)回调中，挂起的获取操作被取消，回调函数的code参数将返回表示取消的错误码。
 
 起始版本： 23
 
@@ -202,7 +202,7 @@ OH_AVFormat *OH_AVMetadataExtractor_GetTrackDescription(OH_AVMetadataExtractor *
 ```
  描述
 
-从媒体源中获取指定索引的轨道描述信息。该函数必须在设置资源之后使用。
+从媒体资源中获取指定索引的轨道描述信息。该函数必须在设置资源之后使用。
 
 起始版本： 23
 
@@ -226,7 +226,7 @@ OH_AVFormat *OH_AVMetadataExtractor_GetCustomInfo(OH_AVMetadataExtractor *extrac
 ```
  描述
 
-从媒体源中获取自定义元数据信息。该函数必须在设置资源之后使用。
+从媒体资源中获取自定义元数据信息。该函数必须在设置资源之后使用。
 
 起始版本： 23
 
@@ -386,7 +386,7 @@ OH_AVErrCode OH_AVMetadataExtractor_Release(OH_AVMetadataExtractor* extractor)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_AVMetadataExtractor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avmetadataextractor-oh-avmetadataextractor)* extractor | 指向OH_AVMetadataExtractor实例指针。 |
+| [OH_AVMetadataExtractor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avmetadataextractor-oh-avmetadataextractor)* extractor | 指向OH_AVMetadataExtractor实例的指针。 |
 
 返回：
 

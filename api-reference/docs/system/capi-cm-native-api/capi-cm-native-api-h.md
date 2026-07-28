@@ -2,8 +2,8 @@
 title: "cm_native_api.h"
 upstream_id: "harmonyos-references/capi-cm-native-api-h"
 catalog: "harmonyos-references"
-content_hash: "7391384f468a"
-synced_at: "2026-07-09T00:59:19.791416"
+content_hash: "171376fd6d80"
+synced_at: "2026-07-28T16:50:32.547416"
 ---
 
 # cm_native_api.h
@@ -14,7 +14,7 @@ synced_at: "2026-07-09T00:59:19.791416"
 
 引用文件： <device_certificate/certmanager/cm_native_api.h>
 
-库： libohcert_manager.so
+库： libohcert_manager.z.so
 
 系统能力： SystemCapability.Security.CertificateManager
 

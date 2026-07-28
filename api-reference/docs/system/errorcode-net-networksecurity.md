@@ -2,8 +2,8 @@
 title: "网络安全校验错误码"
 upstream_id: "harmonyos-references/errorcode-net-networksecurity"
 catalog: "harmonyos-references"
-content_hash: "d6444fc22b2f"
-synced_at: "2026-07-09T00:59:31.865350"
+content_hash: "56cbc5517581"
+synced_at: "2026-07-28T16:50:48.576837"
 ---
 
 # 网络安全校验错误码
@@ -322,6 +322,26 @@ Certificate is untrusted.
 1. 确保证书由可信的证书颁发机构（CA）颁发。
 2. 确保证书的签名密钥与客户端的预期密钥匹配。
 3. 如果证书由不可信的CA颁发，需要更新为由可信的CA颁发的证书。
+
+#### 2305062 主机名验证失败
+
+错误信息
+
+Invalid hostname.
+
+错误描述
+
+证书中的主机名与传入的主机名不匹配。
+
+可能原因
+
+证书的主题备用名称（SAN）或通用名称（CN）字段与传入的主机名不匹配。
+
+处理步骤
+
+1. 检查证书的SAN或CN字段是否包含正确的主机名。
+2. 确保传入的主机名参数与服务器的主机名一致。
+3. 如果证书由第三方颁发，联系证书颁发机构更正证书中的主机名信息。
 
 #### 2305069 无效的证书验证上下文
 

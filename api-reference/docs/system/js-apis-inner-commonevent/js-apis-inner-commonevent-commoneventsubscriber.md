@@ -2,8 +2,8 @@
 title: "commonEventSubscriber"
 upstream_id: "harmonyos-references/js-apis-inner-commonevent-commoneventsubscriber"
 catalog: "harmonyos-references"
-content_hash: "ceb8811e642f"
-synced_at: "2026-07-09T00:59:41.591098"
+content_hash: "568f2bfff228"
+synced_at: "2026-07-28T16:50:58.946076"
 ---
 
 # commonEventSubscriber
@@ -12,7 +12,7 @@ synced_at: "2026-07-09T00:59:41.591098"
 
 #### CommonEventSubscriber
 
-表示公共事件的订阅者。
+表示公共事件的订阅者。CommonEventSubscriber提供了对有序公共事件的处理能力，包括获取和设置事件传递的Code和Data数据、查询当前公共事件是否为有序或粘性公共事件、中止或清理有序公共事件的中止状态、结束对当前有序公共事件的处理，以及获取订阅者的订阅信息等，适用于订阅者需要对接收到的公共事件进行数据处理和流程控制的场景。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -20,7 +20,7 @@ synced_at: "2026-07-09T00:59:41.591098"
 
 #### [h2]使用说明
 
-在使用CommonEventSubscriber的功能前，需要通过commonEventManager.createSubscriber获取subscriber对象。
+在使用CommonEventSubscriber的功能前，需要通过[commonEventManager.createSubscriberSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-commoneventmanager#commoneventmanagercreatesubscribersync10)获取subscriber对象。
 
 ```
 import { commonEventManager } from '@kit.BasicServicesKit';
@@ -40,7 +40,7 @@ subscriber = commonEventManager.createSubscriberSync(subscribeInfo);
 
 getCode(callback: AsyncCallback<number>): void
 
-获取有序公共事件传递的数据（number类型）。使用callback异步回调。
+获取有序公共事件传递的数据。使用callback异步回调。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -50,7 +50,7 @@ getCode(callback: AsyncCallback<number>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback | 是 | 回调函数。返回有序公共事件传递的数据（number类型）。 |
+| callback | AsyncCallback | 是 | 回调函数。当获取有序公共事件传递的数据（number类型）成功时，err为undefined，data为获取到的数据；否则err为错误对象。 |
 
 错误码：
 
@@ -58,14 +58,14 @@ getCode(callback: AsyncCallback<number>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 
 示例：
 
 ```
 subscriber.getCode((err: BusinessError, code: number) => {
   if (err) {
-    console.error(`Failed to get code. Code is ${err.code}, message is ${err.message}`);
+    console.error(`Failed to get code. Code: ${err.code}, message: ${err.message}`);
     return;
   }
   console.info(`Succeeded in getting code, code is ${JSON.stringify(code)}`);
@@ -76,7 +76,7 @@ subscriber.getCode((err: BusinessError, code: number) => {
 
 getCode(): Promise<number>
 
-获取有序公共事件传递的数据（number类型）。使用Promise异步回调。
+获取有序公共事件传递的数据。使用Promise异步回调。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -102,7 +102,7 @@ subscriber.getCode().then((code: number) => {
 
 getCodeSync(): number
 
-获取有序公共事件传递的数据（number类型）。
+同步获取有序公共事件传递的数据。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -112,7 +112,7 @@ getCodeSync(): number
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 表示有序公共事件传递的数据（number类型）。 |
+| number | 有序公共事件传递的数据。 |
 
 示例：
 
@@ -125,7 +125,7 @@ console.info(`Succeeded in getting code, code is ${JSON.stringify(code)}`);
 
 setCode(code: number, callback: AsyncCallback<void>): void
 
-设置有序公共事件传递的数据（number类型）。使用callback异步回调。
+设置有序公共事件传递的数据。使用callback异步回调。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -135,7 +135,7 @@ setCode(code: number, callback: AsyncCallback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| code | number | 是 | 有序公共事件传递的数据（number类型）。 |
+| code | number | 是 | 有序公共事件传递的数据。 |
 | callback | AsyncCallback | 是 | 回调函数。当设置有序公共事件传递的数据（number类型）成功时，err为undefined，否则为错误对象。 |
 
 错误码：
@@ -144,7 +144,7 @@ setCode(code: number, callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 
 示例：
 
@@ -162,7 +162,7 @@ subscriber.setCode(1, (err: BusinessError) => {
 
 setCode(code: number): Promise<void>
 
-设置有序公共事件传递的数据（number类型）。使用Promise异步回调。
+设置有序公共事件传递的数据。使用Promise异步回调。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -172,7 +172,7 @@ setCode(code: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| code | number | 是 | 有序公共事件传递的数据（number类型）。 |
+| code | number | 是 | 有序公共事件传递的数据。 |
 
 返回值：
 
@@ -186,7 +186,7 @@ setCode(code: number): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 
 示例：
 
@@ -202,7 +202,7 @@ subscriber.setCode(1).then(() => {
 
 setCodeSync(code: number): void
 
-设置有序公共事件传递的数据（number类型）。
+同步设置有序公共事件传递的数据。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -212,7 +212,7 @@ setCodeSync(code: number): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| code | number | 是 | 有序公共事件传递的数据（number类型）。 |
+| code | number | 是 | 有序公共事件传递的数据。 |
 
 错误码：
 
@@ -220,7 +220,7 @@ setCodeSync(code: number): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 
 示例：
 
@@ -237,7 +237,7 @@ try {
 
 getData(callback: AsyncCallback<string>): void
 
-获取有序公共事件传递的数据（string类型）。使用callback异步回调。
+获取有序公共事件传递的数据。使用callback异步回调。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -247,7 +247,7 @@ getData(callback: AsyncCallback<string>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback | 是 | 回调函数。返回有序公共事件传递的数据（string类型）。 |
+| callback | AsyncCallback | 是 | 回调函数。当获取有序公共事件传递的数据（string类型）成功时，err为undefined，data为获取到的数据；否则err为错误对象。 |
 
 错误码：
 
@@ -255,7 +255,7 @@ getData(callback: AsyncCallback<string>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 
 示例：
 
@@ -274,7 +274,7 @@ subscriber.getData((err: BusinessError, data: string) => {
 
 getData(): Promise<string>
 
-获取有序公共事件传递的数据（string类型）。使用Promise异步回调。
+获取有序公共事件传递的数据。使用Promise异步回调。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -300,7 +300,7 @@ subscriber.getData().then((data: string) => {
 
 getDataSync(): string
 
-获取有序公共事件传递的数据（string类型）。
+同步获取有序公共事件传递的数据。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -310,7 +310,7 @@ getDataSync(): string
 
 | 类型 | 说明 |
 | --- | --- |
-| string | 有序公共事件传递的数据（string类型）。 |
+| string | 有序公共事件传递的数据。 |
 
 示例：
 
@@ -323,7 +323,7 @@ console.info(`Succeeded in getting data, data is ${data}`);
 
 setData(data: string, callback: AsyncCallback<void>): void
 
-设置有序公共事件传递的数据（string类型）。使用callback异步回调。
+设置有序公共事件传递的数据。使用callback异步回调。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -333,7 +333,7 @@ setData(data: string, callback: AsyncCallback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| data | string | 是 | 有序公共事件传递的数据（string类型）。 |
+| data | string | 是 | 有序公共事件传递的数据（string类型），长度不超过65536字符，若超过限制，接口设置失效。 |
 | callback | AsyncCallback | 是 | 回调函数。当设置有序公共事件传递的数据（string类型）成功时，err为undefined，否则为错误对象。 |
 
 错误码：
@@ -342,7 +342,7 @@ setData(data: string, callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 
 示例：
 
@@ -360,7 +360,7 @@ subscriber.setData('publish_data_changed', (err: BusinessError) => {
 
 setData(data: string): Promise<void>
 
-设置有序公共事件传递的数据（string类型）。使用Promise异步回调。
+设置有序公共事件传递的数据。使用Promise异步回调。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -370,7 +370,7 @@ setData(data: string): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| data | string | 是 | 有序公共事件传递的数据（string类型）。 |
+| data | string | 是 | 有序公共事件传递的数据，长度不超过65536字符，若超过限制，接口设置失效。 |
 
 返回值：
 
@@ -384,7 +384,7 @@ setData(data: string): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 
 示例：
 
@@ -400,7 +400,7 @@ subscriber.setData('publish_data_changed').then(() => {
 
 setDataSync(data: string): void
 
-设置有序公共事件传递的数据（string类型）。
+同步设置有序公共事件传递的数据。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -410,7 +410,7 @@ setDataSync(data: string): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| data | string | 是 | 有序公共事件传递的数据（string类型）。 |
+| data | string | 是 | 有序公共事件传递的数据，长度不超过65536字符，若超过限制，接口设置失效。 |
 
 错误码：
 
@@ -418,7 +418,7 @@ setDataSync(data: string): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 
 示例：
 
@@ -433,9 +433,9 @@ try {
 
 #### [h2]setCodeAndData
 
-setCodeAndData(code: number, data: string, callback:AsyncCallback<void>): void
+setCodeAndData(code: number, data: string, callback: AsyncCallback<void>): void
 
-设置有序公共事件数据。使用callback异步回调。
+设置有序公共事件传递的数据。使用callback异步回调。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -445,8 +445,8 @@ setCodeAndData(code: number, data: string, callback:AsyncCallback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| code | number | 是 | 有序公共事件传递的数据（number类型）。 |
-| data | string | 是 | 有序公共事件传递的数据（string类型）。 |
+| code | number | 是 | 有序公共事件传递的数据。 |
+| data | string | 是 | 有序公共事件传递的数据，长度不超过65536字符，若超过限制，接口设置失效。 |
 | callback | AsyncCallback | 是 | 回调函数。当设置有序公共事件传递的数据成功时，err为undefined，否则为错误对象。 |
 
 错误码：
@@ -455,7 +455,7 @@ setCodeAndData(code: number, data: string, callback:AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 
 示例：
 
@@ -483,8 +483,8 @@ setCodeAndData(code: number, data: string): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| code | number | 是 | 有序公共事件传递的数据（number类型）。 |
-| data | string | 是 | 有序公共事件传递的数据（string类型）。 |
+| code | number | 是 | 有序公共事件传递的数据。 |
+| data | string | 是 | 有序公共事件传递的数据，长度不超过65536字符，若超过限制，接口设置失效。 |
 
 返回值：
 
@@ -498,7 +498,7 @@ setCodeAndData(code: number, data: string): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 
 示例：
 
@@ -514,7 +514,7 @@ subscriber.setCodeAndData(1, 'publish_data_changed').then(() => {
 
 setCodeAndDataSync(code: number, data: string): void
 
-设置有序公共事件传递的数据。
+同步设置有序公共事件传递的数据。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -524,8 +524,8 @@ setCodeAndDataSync(code: number, data: string): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| code | number | 是 | 有序公共事件传递的数据（number类型）。 |
-| data | string | 是 | 有序公共事件传递的数据（string类型）。 |
+| code | number | 是 | 有序公共事件传递的数据。 |
+| data | string | 是 | 有序公共事件传递的数据，长度不超过65536字符，若超过限制，接口设置失效。 |
 
 错误码：
 
@@ -533,7 +533,7 @@ setCodeAndDataSync(code: number, data: string): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 
 示例：
 
@@ -558,7 +558,7 @@ isOrderedCommonEvent(callback: AsyncCallback<boolean>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback | 是 | 回调函数。返回true表示有序公共事件；返回false表示无序公共事件。 |
+| callback | AsyncCallback | 是 | 回调函数。当查询成功时，err为undefined，data为true表示有序公共事件，data为false表示不是有序公共事件；否则err为错误对象。 |
 
 错误码：
 
@@ -566,14 +566,14 @@ isOrderedCommonEvent(callback: AsyncCallback<boolean>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 
 示例：
 
 ```
-subscriber.isOrderedCommonEvent((err: BusinessError, isOrdered:boolean) => {
+subscriber.isOrderedCommonEvent((err: BusinessError, isOrdered: boolean) => {
   if (err) {
-    console.error(`isOrderedCommonEvent failed, code is ${err.code}, message is ${err.message}`);
+    console.error(`Failed to check ordered common event. Code: ${err.code}, message: ${err.message}`);
     return;
   }
   console.info(`isOrderedCommonEvent ${JSON.stringify(isOrdered)}`);
@@ -597,7 +597,7 @@ isOrderedCommonEvent(): Promise<boolean>
 示例：
 
 ```
-subscriber.isOrderedCommonEvent().then((isOrdered:boolean) => {
+subscriber.isOrderedCommonEvent().then((isOrdered: boolean) => {
   console.info(`isOrderedCommonEvent ${JSON.stringify(isOrdered)}`);
 }).catch((err: BusinessError) => {
   console.error(`isOrderedCommonEvent failed, code is ${err.code}, message is ${err.message}`);
@@ -608,7 +608,7 @@ subscriber.isOrderedCommonEvent().then((isOrdered:boolean) => {
 
 isOrderedCommonEventSync(): boolean
 
-查询当前公共事件是否为有序公共事件。
+同步查询当前公共事件是否为有序公共事件。
 
 系统能力： SystemCapability.Notification.CommonEvent
 
@@ -629,7 +629,7 @@ console.info(`isOrderedCommonEventSync ${JSON.stringify(isOrdered)}`);
 
 isStickyCommonEvent(callback: AsyncCallback<boolean>): void
 
-检查当前公共事件是否为一个粘性事件。使用callback异步回调。
+查询当前公共事件是否为一个粘性公共事件。使用callback异步回调。
 
 系统能力： SystemCapability.Notification.CommonEvent
 
@@ -637,7 +637,7 @@ isStickyCommonEvent(callback: AsyncCallback<boolean>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback | 是 | 回调函数。返回true表示是粘性公共事件；返回false表示不是粘性公共事件。 |
+| callback | AsyncCallback | 是 | 回调函数。当查询成功时，err为undefined，data为true表示是粘性公共事件，data为false表示不是粘性公共事件；否则err为错误对象。 |
 
 错误码：
 
@@ -645,12 +645,12 @@ isStickyCommonEvent(callback: AsyncCallback<boolean>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 
 示例：
 
 ```
-subscriber.isStickyCommonEvent((err: BusinessError, isSticky:boolean) => {
+subscriber.isStickyCommonEvent((err: BusinessError, isSticky: boolean) => {
   if (err) {
     console.error(`isStickyCommonEvent failed, code is ${err.code}, message is ${err.message}`);
     return;
@@ -663,7 +663,7 @@ subscriber.isStickyCommonEvent((err: BusinessError, isSticky:boolean) => {
 
 isStickyCommonEvent(): Promise<boolean>
 
-检查当前公共事件是否为一个粘性事件。使用Promise异步回调。
+查询当前公共事件是否为一个粘性公共事件。使用Promise异步回调。
 
 系统能力： SystemCapability.Notification.CommonEvent
 
@@ -676,7 +676,7 @@ isStickyCommonEvent(): Promise<boolean>
 示例：
 
 ```
-subscriber.isStickyCommonEvent().then((isSticky:boolean) => {
+subscriber.isStickyCommonEvent().then((isSticky: boolean) => {
   console.info(`isStickyCommonEvent ${JSON.stringify(isSticky)}`);
 }).catch((err: BusinessError) => {
   console.error(`isStickyCommonEvent failed, code is ${err.code}, message is ${err.message}`);
@@ -687,7 +687,7 @@ subscriber.isStickyCommonEvent().then((isSticky:boolean) => {
 
 isStickyCommonEventSync(): boolean
 
-检查当前公共事件是否为一个粘性事件。
+同步检查当前公共事件是否为一个粘性公共事件。
 
 系统能力： SystemCapability.Notification.CommonEvent
 
@@ -724,7 +724,7 @@ abortCommonEvent(callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 
 示例：
 
@@ -778,7 +778,7 @@ subscriber.finishCommonEvent().then(() => {
 
 abortCommonEventSync(): void
 
-添加有序公共事件的中止状态。当该接口与[finishCommonEvent](#finishcommonevent9)配合使用时，可以中止当前的有序公共事件，使该公共事件不再向下一个订阅者传递。
+同步添加有序公共事件的中止状态。当该接口与[finishCommonEvent](#finishcommonevent9)配合使用时，可以中止当前的有序公共事件，使该公共事件不再向下一个订阅者传递。
 
 系统能力： SystemCapability.Notification.CommonEvent
 
@@ -813,7 +813,7 @@ clearAbortCommonEvent(callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 
 示例：
 
@@ -867,7 +867,7 @@ subscriber.finishCommonEvent().then(() => {
 
 clearAbortCommonEventSync(): void
 
-清理有序公共事件的中止状态。当该接口与[finishCommonEvent](#finishcommonevent9)配合使用时，可以使该公共事件继续向下一个订阅者传递。
+同步清理有序公共事件的中止状态。当该接口与[finishCommonEvent](#finishcommonevent9)配合使用时，可以使该公共事件继续向下一个订阅者传递。
 
 系统能力： SystemCapability.Notification.CommonEvent
 
@@ -894,7 +894,7 @@ getAbortCommonEvent(callback: AsyncCallback<boolean>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback | 是 | 回调函数。返回true表示当前有序公共事件处于中止状态；返回false表示当前有序公共事件没有处于中止状态。 |
+| callback | AsyncCallback | 是 | 当查询成功时，err为undefined，data为true表示当前有序公共事件处于中止状态，data为false表示当前有序公共事件未处于中止状态；否则err为错误对象。 |
 
 错误码：
 
@@ -902,7 +902,7 @@ getAbortCommonEvent(callback: AsyncCallback<boolean>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 
 示例：
 
@@ -928,7 +928,7 @@ getAbortCommonEvent(): Promise<boolean>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象。返回true表示当前有序公共事件处于中止状态；返回false表示当前有序公共事件没有处于中止状态。 |
+| Promise | Promise对象。返回true表示当前有序公共事件处于中止状态；返回false表示当前有序公共事件未处于中止状态。 |
 
 示例：
 
@@ -944,7 +944,7 @@ subscriber.getAbortCommonEvent().then((abortEvent: boolean) => {
 
 getAbortCommonEventSync(): boolean
 
-获取当前有序公共事件是否处于中止状态。
+同步获取当前有序公共事件是否处于中止状态。
 
 系统能力： SystemCapability.Notification.CommonEvent
 
@@ -952,7 +952,7 @@ getAbortCommonEventSync(): boolean
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | 返回true表示当前有序公共事件处于中止状态；返回false表示当前有序公共事件没有处于中止状态。 |
+| boolean | 返回true表示当前有序公共事件处于中止状态；返回false表示当前有序公共事件未处于中止状态。 |
 
 示例：
 
@@ -975,7 +975,7 @@ getSubscribeInfo(callback: AsyncCallback<CommonEventSubscribeInfo>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback | 是 | 回调函数。返回订阅者的订阅信息。 |
+| callback | AsyncCallback | 是 | 回调函数。当获取成功时，err为undefined，data为订阅者的订阅信息；否则err为错误对象 |
 
 错误码：
 
@@ -983,7 +983,7 @@ getSubscribeInfo(callback: AsyncCallback<CommonEventSubscribeInfo>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 
 示例：
 
@@ -1027,7 +1027,7 @@ subscriber.getSubscribeInfo().then((subscribeInfo: commonEventManager.CommonEven
 
 getSubscribeInfoSync(): CommonEventSubscribeInfo
 
-获取订阅者的订阅信息。
+同步获取订阅者的订阅信息。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -1042,8 +1042,8 @@ getSubscribeInfoSync(): CommonEventSubscribeInfo
 示例：
 
 ```
-let subscribeInfo1: commonEventManager.CommonEventSubscribeInfo = subscriber.getSubscribeInfoSync();
-console.info(`Succeeded in getting subscribe info, subscribe info is ${JSON.stringify(subscribeInfo1)}`);
+let subscribeInfo: commonEventManager.CommonEventSubscribeInfo = subscriber.getSubscribeInfoSync();
+console.info(`Succeeded in getting subscribe info, subscribe info is ${JSON.stringify(subscribeInfo)}`);
 ```
 
 #### [h2]finishCommonEvent9+
@@ -1066,7 +1066,7 @@ finishCommonEvent(callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 
 示例：
 

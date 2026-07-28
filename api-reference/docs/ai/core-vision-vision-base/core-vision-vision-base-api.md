@@ -2,13 +2,13 @@
 title: "visionBase（Core Vision Kit基类）"
 upstream_id: "harmonyos-references/core-vision-vision-base-api"
 catalog: "harmonyos-references"
-content_hash: "f071d4f1cb9f"
-synced_at: "2026-07-09T01:01:42.164915"
+content_hash: "3db9d4492201"
+synced_at: "2026-07-28T16:53:11.379404"
 ---
 
 # visionBase（Core Vision Kit基类）
 
-visionBase作为一个基础的视觉能力库，封装基本资源对象，视觉能力场景常用对象，数据结构，常用方法。减少冗余代码书写简化功能接口使用，而不必重复"造轮子"。开发者可以将它理解为一个"工具箱"，里面装着一些常用的"工具"，利用visionBase基类，会更高效、更标准地实现各自的功能。visionBase提供了Core Vision Kit AI能力所需的基础设施，如数据结构、接口模型、生命周期管理等。
+visionBase作为一个基础的视觉能力库，封装了基本资源对象、数据结构、常用方法等视觉能力场景中的常用元素。减少冗余代码书写，简化功能接口使用，而不必重复“造轮子”。可以将visionBase理解为一个“工具箱”，里面装着一些常用的“工具”，利用visionBase基类，会更高效、更标准地实现各自的功能。visionBase提供了Core Vision Kit AI能力所需的基础设施，如数据结构、接口模型、生命周期管理等。
 
 起始版本： 5.0.0(12)
 
@@ -20,7 +20,7 @@ import { visionBase } from '@kit.CoreVisionKit';
 
 #### SceneMode
 
-场景模式的枚举类。
+场景模式的枚举类。用于指示该请求对应的业务场景模式，引擎服务端将根据此模式设置任务优先级。
 
 系统能力： SystemCapability.AI.Vision.VisionBase
 
@@ -77,8 +77,8 @@ type InputData = ImageData | ImageData[]
 | --- | --- | --- | --- | --- |
 | left | number | 否 | 否 | 边界框左上角的x坐标。 |
 | top | number | 否 | 否 | 边界框左上角的y坐标。 |
-| height | number | 否 | 否 | 边界框高度，单位为像素。 |
-| width | number | 否 | 否 | 边界框宽度，单位为像素。 |
+| height | number | 否 | 否 | 边界框高度，单位：px。 |
+| width | number | 否 | 否 | 边界框宽度，单位：px。 |
 
 #### Point
 
@@ -107,9 +107,9 @@ type InputData = ImageData | ImageData[]
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| yaw | number | 否 | 否 | 表示绕垂直轴（Y轴）旋转的角度，也称为"偏航角"，决定了物体在水平面上的朝向。取值范围[-180,180]。 |
-| pitch | number | 否 | 否 | 表示绕水平轴（X轴）旋转的角度，也称为"俯仰角"，决定了物体在垂直平面上的朝向。取值范围[-180,180]。 |
-| roll | number | 否 | 否 | 表示绕前后轴（Z轴）旋转的角度，也称为"翻滚角"，决定了物体在前后方向上的朝向。取值范围[-180,180]。 |
+| yaw | number | 否 | 否 | 表示绕垂直轴（Y轴）旋转的角度，也称为“偏航角”，决定了物体在水平面上的朝向。取值范围[-180,180]。 |
+| pitch | number | 否 | 否 | 表示绕水平轴（X轴）旋转的角度，也称为“俯仰角”，决定了物体在垂直平面上的朝向。取值范围[-180,180]。 |
+| roll | number | 否 | 否 | 表示绕前后轴（Z轴）旋转的角度，也称为“翻滚角”，决定了物体在前后方向上的朝向。取值范围[-180,180]。 |
 
 #### DownloadStartData
 
@@ -235,7 +235,7 @@ type InputData = ImageData | ImageData[]
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| requestId | string | 否 | 是 | 请求的唯一标识。开发者可用来跟踪和管理自己的请求。默认值为空字符串。 |
+| requestId | string | 否 | 是 | 请求的唯一标识，用于开发者跟踪和管理自己的请求，与Request请求一一对应。默认值为空字符串。 |
 
 #### Analyzer
 
@@ -273,7 +273,7 @@ destroy(): Promise<void>
 
 on(type: 'downloadStart', callback: Callback<DownloadStartData>): void
 
-订阅模型下载开始事件。该方法为预留接口，当前版本暂不支持。
+订阅模型下载开始事件。当模型开始下载时触发。该方法为预留接口，当前版本暂不支持。
 
 系统能力： SystemCapability.AI.Vision.VisionBase
 
@@ -285,7 +285,7 @@ on(type: 'downloadStart', callback: Callback<DownloadStartData>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 事件类型，固定字符串'downloadStart'，表示模型开始下载事件。 |
+| type | string | 是 | 事件类型，值为'downloadStart'，表示模型开始下载事件。 |
 | callback | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#callback) | 是 | 回调函数，当模型开始下载时触发，返回开始下载的资源标识信息。 |
 
 错误码：
@@ -334,7 +334,7 @@ on(type: 'downloadComplete', callback: Callback<DownloadCompleteData>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 事件类型，固定字符串'downloadComplete'，表示模型下载完成事件。 |
+| type | string | 是 | 事件类型，值为'downloadComplete'，表示模型下载完成事件。 |
 | callback | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#callback) | 是 | 回调函数，当模型下载完成时触发，返回完成下载的资源标识符及版本号。 |
 
 错误码：
@@ -383,7 +383,7 @@ on(type: 'downloadCancel', callback: Callback<DownloadCancelData>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 事件类型，固定字符串'downloadCancel'，表示模型下载取消事件。 |
+| type | string | 是 | 事件类型，值为'downloadCancel'，表示模型下载取消事件。 |
 | callback | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#callback) | 是 | 回调函数，当模型下载被取消时触发，返回取消下载的资源标识信息。 |
 
 错误码：
@@ -432,7 +432,7 @@ on(type: 'downloadStatus', callback: Callback<DownloadStatusData>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 事件类型，固定字符串'downloadStatus'，表示模型下载状态事件。 |
+| type | string | 是 | 事件类型，值为'downloadStatus'，表示模型下载状态事件。 |
 | callback | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#callback) | 是 | 回调函数，当模型下载状态发生变化时触发，返回当前下载状态信息。 |
 
 错误码：
@@ -481,7 +481,7 @@ on(type: 'downloadProgress', callback: Callback<DownloadProgressData>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 事件类型，固定字符串'downloadProgress'，表示模型下载进度事件。 |
+| type | string | 是 | 事件类型，值为'downloadProgress'，表示模型下载进度事件。 |
 | callback | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#callback) | 是 | 回调函数，当模型下载进度更新时触发，返回当前下载进度信息。 |
 
 错误码：
@@ -572,7 +572,7 @@ struct Page {
 
 off(type: 'downloadComplete', callback?: Callback<DownloadCompleteData>): void
 
-取消订阅模型下载完成事件。该方法为预留接口，当前版本暂不支持。
+取消注册模型下载完成事件的监听器。该方法为预留接口，当前版本暂不支持。
 
 系统能力： SystemCapability.AI.Vision.VisionBase
 

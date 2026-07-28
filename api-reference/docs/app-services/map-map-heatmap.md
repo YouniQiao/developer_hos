@@ -2,8 +2,8 @@
 title: "Interface (Heatmap)"
 upstream_id: "harmonyos-references/map-map-heatmap"
 catalog: "harmonyos-references"
-content_hash: "1c99d509ac36"
-synced_at: "2026-07-09T01:01:26.469916"
+content_hash: "f119f37d7332"
+synced_at: "2026-07-28T16:52:44.630821"
 ---
 
 # Interface (Heatmap)
@@ -30,6 +30,7 @@ import { map, mapCommon } from '@kit.MapKit';
 
 ```
 let data: mapCommon.WeightedLatLng[] = [];
+// 生成500个随机坐标点，用于热力图数据
 for (let i = 0; i < 500; i++) {
   data.push({
     point: {

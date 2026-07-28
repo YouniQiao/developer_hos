@@ -2,19 +2,19 @@
 title: "手势公共接口"
 upstream_id: "harmonyos-references/ts-gesture-common"
 catalog: "harmonyos-references"
-content_hash: "0b7933a35f36"
-synced_at: "2026-07-09T00:57:45.786986"
+content_hash: "6d667f84dc71"
+synced_at: "2026-07-28T16:43:11.891781"
 ---
 
 # 手势公共接口
 
-为开发者提供手势相关的公共接口。
+为开发者提供手势相关的公共接口，包括手势公共配置、手势识别器、手势事件信息、手势类型等能力，适用于在应用中识别、控制和处理点击、长按、滑动、捏合等手势交互场景。
 
-![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 7开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
 #### GestureInterface11+
 
-定义Gesture接口。
+Gesture接口用于配置手势的公共属性，支持设置手势标志和手势响应的输入类型。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -62,7 +62,7 @@ allowedTypes(types: Array<SourceTool>): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| types | Array | 是 | 手势响应的输入类型。 |
+| types | Array | 是 | 手势响应的输入类型数组。 |
 
 返回值：
 
@@ -136,7 +136,7 @@ getId(): string
 
 getUniqueId(): number
 
-返回当前组件的唯一id。
+返回当前组件的唯一ID。与getId()返回的组件标识不同，该接口返回组件的唯一ID；当接口参数需要组件唯一ID（如isHostBelongsTo的uniqueId）时，使用该接口获取。
 
 起始版本： 26.0.0
 
@@ -150,11 +150,11 @@ getUniqueId(): number
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 当前组件的唯一id。 |
+| number | 当前组件的唯一ID。 |
 
 #### TouchRecognizer20+
 
-触摸识别器对象。
+触摸识别器对象，支持获取触摸目标信息、取消当前触摸交互以及判断绑定节点是否属于指定组件子树，适用于触摸处理和事件分发控制场景。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -184,7 +184,7 @@ getEventTargetInfo(): EventTargetInfo
 
 cancelTouch(): void
 
-向当前触摸识别器发送触摸取消事件的信息。
+向当前触摸识别器发送触摸取消事件，适用于页面状态变化、弹窗打断或业务逻辑需要主动终止当前触摸交互的场景。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -196,7 +196,7 @@ cancelTouch(): void
 
 isHostBelongsTo(uniqueId: number): boolean
 
-返回当前触摸识别器绑定节点是否为传入组件的后代节点。
+返回当前触摸识别器绑定节点是否为传入组件的后代节点，适用于触摸处理或手势分发过程中判断事件是否来自目标组件子树的场景。
 
 起始版本： 26.0.0
 
@@ -210,7 +210,7 @@ isHostBelongsTo(uniqueId: number): boolean
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| uniqueId | number | 是 | 组件的唯一ID。可以通过[getUniqueId](#getuniqueid)接口获取该ID。 |
+| uniqueId | number | 是 | 组件的唯一ID。可以通过[getUniqueId](#getuniqueid)接口获取该ID。 取值无法匹配到组件唯一ID时返回false。 |
 
 返回值：
 
@@ -220,7 +220,7 @@ isHostBelongsTo(uniqueId: number): boolean
 
 #### GestureRecognizer12+
 
-手势识别器对象。
+手势识别器对象，支持查询手势标志、类型、状态、目标组件信息，控制识别器使能状态、阻止当前识别过程并判断绑定节点是否属于指定组件子树，适用于手势识别状态管理和手势竞争处理场景。
 
 #### [h2]getTag12+
 
@@ -380,13 +380,13 @@ getFingerCount(): number
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 预设手指识别数阈值。 取值范围：[1, 10], 整数。 |
+| number | 预设手指识别数阈值。 取值范围：[1, 10]，整数。 |
 
 #### [h2]isFingerCountLimit18+
 
 isFingerCountLimit(): boolean
 
-返回预设手势是否会检测触摸屏幕上手指识别数量。
+返回预设手势是否会检测触摸屏幕上的手指数量。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -398,13 +398,13 @@ isFingerCountLimit(): boolean
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | 预设手势是否会检测触摸屏幕上手指识别数量。当绑定手势事件且会检测触摸屏幕上手指的数量时，返回true。当绑定手势事件且不会检测触摸屏幕上手指的数量时，返回false。 |
+| boolean | 预设手势是否会检测触摸屏幕上的手指数量。当绑定手势事件且会检测触摸屏幕上的手指数量时，返回true。当绑定手势事件且不会检测触摸屏幕上的手指数量时，返回false。 |
 
 #### [h2]preventBegin20+
 
 preventBegin(): void
 
-在手指全部抬起前阻止手势识别器参与当前手势识别。如果系统已确定该手势识别器的结果（无论成功与否），调用此接口将无效。此方法与GestureRecognizer.[setEnabled](#setenabled12)(isEnabled: boolean)不同，[setEnabled](#setenabled12)并不会阻止手势识别器对象参与手势识别过程，而只会影响手势对应的回调函数是否执行。
+在手指全部抬起前阻止手势识别器参与当前手势识别，适用于自定义手势竞争、根据业务条件临时放弃当前手势识别的场景。如果系统已确定该手势识别器的结果（无论成功与否），调用此接口将无效。此方法与GestureRecognizer.[setEnabled](#setenabled12)(isEnabled: boolean)不同，[setEnabled](#setenabled12)并不会阻止手势识别器对象参与手势识别过程，而只会影响手势对应的回调函数是否执行。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -416,7 +416,7 @@ preventBegin(): void
 
 isHostBelongsTo(uniqueId: number): boolean
 
-返回当前手势识别器绑定节点是否为传入组件的后代节点。
+返回当前手势识别器绑定节点是否为传入组件的后代节点，适用于触摸处理或手势分发过程中判断事件是否来自目标组件子树的场景。
 
 起始版本： 26.0.0
 
@@ -430,7 +430,7 @@ isHostBelongsTo(uniqueId: number): boolean
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| uniqueId | number | 是 | 组件的唯一ID。可以通过[getUniqueId](#getuniqueid)接口获取该ID。 |
+| uniqueId | number | 是 | 组件的唯一ID。可以通过[getUniqueId](#getuniqueid)接口获取该ID。 取值为异常值时返回false。 |
 
 返回值：
 
@@ -440,7 +440,7 @@ isHostBelongsTo(uniqueId: number): boolean
 
 #### TapRecognizer18+
 
-点击手势识别器对象，继承自[GestureRecognizer](#gesturerecognizer12)。
+点击手势识别器对象，继承自[GestureRecognizer](#gesturerecognizer12)，支持获取点击次数阈值，适用于查询单击或多次点击手势的识别配置。
 
 #### [h2]getTapCount18+
 
@@ -462,7 +462,7 @@ getTapCount(): number
 
 #### LongPressRecognizer18+
 
-长按手势识别器对象，继承于[GestureRecognizer](#gesturerecognizer12)。
+长按手势识别器对象，继承于[GestureRecognizer](#gesturerecognizer12)，支持查询长按是否重复触发、触发时长阈值和可识别最大移动距离，适用于长按手势识别配置查询场景。
 
 #### [h2]isRepeat18+
 
@@ -504,7 +504,7 @@ getDuration(): number
 
 getAllowableMovement(): number
 
-获取长按手势识别器识别的手势的最大移动距离。
+获取长按手势识别器可识别的最大移动距离。
 
 元服务API： 从API version 22开始，该接口支持在元服务中使用。
 
@@ -520,13 +520,13 @@ getAllowableMovement(): number
 
 #### SwipeRecognizer18+
 
-快滑手势识别器对象，继承于[GestureRecognizer](#gesturerecognizer12)。
+快滑手势识别器对象，继承于[GestureRecognizer](#gesturerecognizer12)，支持查询快滑手势的速度阈值和滑动方向，适用于快滑手势识别配置查询场景。
 
 #### [h2]getVelocityThreshold18+
 
 getVelocityThreshold(): number
 
-返回预设快滑手势识别器识别滑动最小速度阈值。
+返回预设快滑手势识别器识别滑动最小速度阈值，默认最小速度为100vp/s。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -538,7 +538,7 @@ getVelocityThreshold(): number
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 预设快滑手势识别器识别滑动最小速度阈值，单位为vp/s。 取值范围：[0, +∞) |
+| number | 预设快滑手势识别器识别滑动最小速度阈值，单位为vp/s。未配置速度阈值时，返回默认值100vp/s。 取值范围：[0, +∞) |
 
 #### [h2]getDirection18+
 
@@ -560,7 +560,7 @@ getDirection(): SwipeDirection
 
 #### PinchRecognizer18+
 
-捏合手势识别器对象，继承于[GestureRecognizer](#gesturerecognizer12)。
+捏合手势识别器对象，继承于[GestureRecognizer](#gesturerecognizer12)，支持查询捏合手势的最小识别距离阈值，适用于缩放类手势识别配置查询场景。
 
 #### [h2]getDistance18+
 
@@ -582,7 +582,7 @@ getDistance(): number
 
 #### RotationRecognizer18+
 
-旋转手势识别器对象，继承于[GestureRecognizer](#gesturerecognizer12)。
+旋转手势识别器对象，继承于[GestureRecognizer](#gesturerecognizer12)，支持查询触发旋转手势的最小角度阈值，适用于旋转交互的手势识别配置查询场景。
 
 #### [h2]getAngle18+
 
@@ -604,7 +604,7 @@ getAngle(): number
 
 #### PanRecognizer12+
 
-滑动手势识别器对象，继承于[GestureRecognizer](#gesturerecognizer12)。
+滑动手势识别器对象，继承于[GestureRecognizer](#gesturerecognizer12)，支持查询滑动手势属性、识别方向、最小滑动距离以及不同输入源的滑动阈值，适用于滑动手势识别配置查询场景。
 
 #### [h2]getPanGestureOptions12+
 
@@ -646,7 +646,7 @@ getDirection(): PanDirection
 
 getDistance(): number
 
-返回当前滑动手势识别器触发的最小滑动距离。
+返回当前滑动手势识别器触发的最小滑动距离，默认滑动阈值为5vp。
 
 元服务API： 从API version 19开始，该接口支持在元服务中使用。
 
@@ -658,13 +658,13 @@ getDistance(): number
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 当前滑动手势识别器触发的最小滑动距离。单位：vp |
+| number | 当前滑动手势识别器触发的最小滑动距离。未配置最小滑动距离时，返回默认滑动阈值5vp。单位：vp |
 
 #### [h2]getDistanceMap19+
 
 getDistanceMap(): Map<SourceTool, number>
 
-返回滑动手势识别器在不同输入源的情况下触发的最小滑动距离。
+返回滑动手势识别器在不同输入源的情况下触发的最小滑动距离，默认滑动阈值为5vp。
 
 ![](./img/note_3.0-zh-cn.png) 仅支持对通过Pan手势初始化配置修改的设备类型进行阈值查询。对于默认滑动阈值，可通过查询[SourceTool](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-settings#sourcetool枚举说明9).Unknown类型获取。其他未主动设置的类型则无法获取。
 
@@ -715,8 +715,8 @@ getDistanceMap(): Map<SourceTool, number>
 | pinchCenterX | number | 否 | 否 | 捏合手势中心点相对于当前组件元素原始区域左上角的x轴坐标，单位为vp，用于PinchGesture手势触发场景。 取值范围：[0, +∞) **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | pinchCenterY | number | 否 | 否 | 捏合手势中心点相对于当前组件元素原始区域左上角的y轴坐标，单位为vp，用于PinchGesture手势触发场景。 取值范围：[0, +∞) **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | speed8+ | number | 否 | 否 | 快滑手势速度，即所有手指相对当前组件元素原始区域滑动的平均速度，单位为vp/s，用于SwipeGesture手势触发场景。 取值范围：[0, +∞) **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| fingerList8+ | [FingerInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#fingerinfo8对象说明)[] | 否 | 否 | 输入源为触屏产生的手势，fingerList中会包含触发事件的所有触点信息；由鼠标发起的手势，fingerList中只会有一条记录；触摸板的事件大类与鼠标一致，所以由触摸板发起的手势，fingerList只会携带一条记录。 **说明：** 1. 手指索引编号与位置对应，即fingerList[index]的id为index。先按下且未参与当前手势触发的手指在fingerList中对应位置为空。 2. 当使用键盘或手柄触发手势时，不存在手指信息，fingerList为空。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| fingerInfos20+ | [FingerInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#fingerinfo8对象说明)[] | 否 | 是 | 由触屏产生的手势，fingerInfos中会包含触发事件的所有触点信息；由鼠标发起的手势，fingerInfos中只会有一条记录；触摸板的事件大类与鼠标一致，所以由触摸板发起的手势，fingerInfos只会携带一条记录。 **说明：** fingerInfos只会记录参与触摸的有效手指信息，先按下但未参与当前手势触发的手指在fingerInfos中不会显示。默认值为空数组[]，返回空数组时，表示当前无有效触点信息。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| fingerList8+ | [FingerInfo](#fingerinfo8对象说明)[] | 否 | 否 | 输入源为触屏产生的手势，fingerList中会包含触发事件的所有触点信息；由鼠标发起的手势，fingerList中只会有一条记录；触摸板的事件大类与鼠标一致，所以由触摸板发起的手势，fingerList只会携带一条记录。 **说明：** 1. 手指索引编号与位置对应，即fingerList[index]的id为index。先按下且未参与当前手势触发的手指在fingerList中对应位置为空。 2. 当使用键盘或手柄触发手势时，不存在手指信息，fingerList为空。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| fingerInfos20+ | [FingerInfo](#fingerinfo8对象说明)[] | 否 | 是 | 由触屏产生的手势，fingerInfos中会包含触发事件的所有触点信息；由鼠标发起的手势，fingerInfos中只会有一条记录；触摸板的事件大类与鼠标一致，所以由触摸板发起的手势，fingerInfos只会携带一条记录。 **说明：** fingerInfos只会记录参与触摸的有效手指信息，先按下但未参与当前手势触发的手指在fingerInfos中不会显示。默认值为空数组[]，返回空数组时，表示当前无有效触点信息。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | velocityX10+ | number | 否 | 否 | 用于[PanGesture](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-gestures-pangesture)手势中，获取当前手势的x轴方向速度。坐标轴原点为屏幕左上角，分正负方向速度，从左往右为正，反之为负。单位为vp/s。 取值范围：(-∞, +∞) **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | velocityY10+ | number | 否 | 否 | 用于[PanGesture](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-gestures-pangesture)手势中，获取当前手势的y轴方向速度。坐标轴原点为屏幕左上角，分正负方向速度，从上往下为正，反之为负。单位为vp/s。 取值范围：(-∞, +∞) **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | velocity10+ | number | 否 | 否 | 用于[PanGesture](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-gestures-pangesture)手势中，获取当前手势的主方向速度。为xy轴方向速度的平方和的算术平方根。单位为vp/s。 取值范围：[0, +∞) **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
@@ -786,8 +786,8 @@ getDistanceMap(): Map<SourceTool, number>
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | tag | string | 否 | 是 | 手势标志。 **说明：** 未设置事件标志tag属性时，tag不返回或返回undefined。 |
-| type | [GestureControl.GestureType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#gesturetype11) | 否 | 否 | 手势类型。 **说明：** 当手势为未暴露类型的系统内置手势事件时，type的值为-1。 |
-| isSystemGesture | boolean | 否 | 否 | 当前手势是否为组件自带手势。true表示是，false表示否。 默认值：false |
+| type | [GestureControl.GestureType](#gesturetype11) | 否 | 否 | 手势类型。 **说明：** 当手势为未暴露类型的系统内置手势事件时，type的值为-1。 |
+| isSystemGesture | boolean | 否 | 否 | 当前手势是否为系统内置手势。true表示是，false表示否。 默认值：false |
 
 #### FingerInfo8+对象说明
 
@@ -799,22 +799,22 @@ getDistanceMap(): Map<SourceTool, number>
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| id | number | 否 | 否 | 手指的索引编号，由按下手指的数量决定，按下一根手指为0，之后每按下1根手指索引编号加一。 **说明：** 鼠标（索引编号为1001）、手写笔（索引编号为102）、鼠标滚轮（索引编号为0）、触摸板双指滑动（索引编号为0）的索引编号也会被转化为手指的索引编号。 取值范围：[0, 9) **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| id | number | 否 | 否 | 手指的索引编号，由按下手指的数量决定，按下一根手指为0，之后每按下1根手指索引编号加一。 **说明：** 鼠标（索引编号为1001）、手写笔（索引编号为102）、鼠标滚轮（索引编号为0）、触摸板双指滑动（索引编号为0）的索引编号也会被转化为手指的索引编号。 取值范围：[0, 10)、102、1001。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | globalX | number | 否 | 否 | 相对于应用窗口左上角的x轴坐标，单位为vp。 取值范围：[0, +∞) **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | globalY | number | 否 | 否 | 相对于应用窗口左上角的y轴坐标，单位为vp。 取值范围：[0, +∞) **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | localX | number | 否 | 否 | 相对于当前组件元素原始区域左上角的x轴坐标，单位为vp。 取值范围：[0, +∞) **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | localY | number | 否 | 否 | 相对于当前组件元素原始区域左上角的y轴坐标，单位为vp。 取值范围：[0, +∞) **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | displayX12+ | number | 否 | 否 | 相对于屏幕左上角的x轴坐标，单位为vp。 取值范围：[0, +∞) **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | displayY12+ | number | 否 | 否 | 相对于屏幕左上角的y轴坐标，单位为vp。 取值范围：[0, +∞) **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| hand15+ | [InteractionHand](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#interactionhand15) | 否 | 是 | 表示事件是由左手点击还是右手点击触发。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| globalDisplayX20+ | number | 否 | 是 | 相对于全局屏幕的左上角的X坐标，单位为vp。 取值范围：[0, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| globalDisplayY20+ | number | 否 | 是 | 相对于全局屏幕的左上角的Y坐标，单位为vp。 取值范围：[0, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| hand15+ | [InteractionHand](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#interactionhand15) | 否 | 是 | 表示事件是由左手点击还是右手点击触发。未返回时，表示当前事件无左手或右手点击信息。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| globalDisplayX20+ | number | 否 | 是 | 相对于全局屏幕的左上角的X坐标，单位为vp。未返回时，表示当前无全局屏幕X坐标信息。 取值范围：[0, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| globalDisplayY20+ | number | 否 | 是 | 相对于全局屏幕的左上角的Y坐标，单位为vp。未返回时，表示当前无全局屏幕Y坐标信息。 取值范围：[0, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### [h2]getCurrentLocalPosition
 
 getCurrentLocalPosition?(): Coordinate2D
 
-获取手指位置相对于当前组件实时位置的左上角坐标。
+获取手指位置相对于当前组件实时位置左上角的坐标。
 
 起始版本： 26.0.0
 
@@ -828,7 +828,7 @@ getCurrentLocalPosition?(): Coordinate2D
 
 | 类型 | 说明 |
 | --- | --- |
-| [Coordinate2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#coordinate2d) | 手指位置相对于当前组件实时位置的左上角坐标。 |
+| [Coordinate2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#coordinate2d) | 手指位置相对于当前组件实时位置左上角的坐标。 |
 
 #### GestureType
 
@@ -860,8 +860,8 @@ type GestureType = TapGesture | LongPressGesture | PanGesture | PinchGesture | S
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| fingerList | [FingerInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#fingerinfo8对象说明)[] | 否 | 否 | 触发事件的所有手指信息。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| fingerInfos20+ | [FingerInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#fingerinfo8对象说明)[] | 否 | 是 | 参与触发事件的所有有效触点信息。默认值为空数组[]，返回空数组时，表示当前无有效触点信息。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| fingerList | [FingerInfo](#fingerinfo8对象说明)[] | 否 | 否 | 触发事件的所有手指信息。输入源为触屏产生的手势，fingerList中会包含触发事件的所有触点信息；由鼠标发起的手势，fingerList中只会有一条记录；触摸板的事件大类与鼠标一致，所以由触摸板发起的手势，fingerList只会携带一条记录。 **说明：** 1. 手指索引编号与位置对应，即fingerList[index]的id为index。先按下且未参与当前手势触发的手指在fingerList中对应位置为空。 2. 当使用键盘或手柄触发手势时，不存在手指信息，fingerList为空。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| fingerInfos20+ | [FingerInfo](#fingerinfo8对象说明)[] | 否 | 是 | 参与触发事件的所有有效触点信息。由触屏产生的手势，fingerInfos中会包含触发事件的所有触点信息；由鼠标发起的手势，fingerInfos中只会有一条记录；触摸板的事件大类与鼠标一致，所以由触摸板发起的手势，fingerInfos只会携带一条记录。 **说明：** fingerInfos只会记录参与触摸的有效手指信息，先按下但未参与当前手势触发的手指在fingerInfos中不会显示。默认值为空数组[]，返回空数组时，表示当前无有效触点信息。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 
 #### TapGestureEvent11+对象说明
 
@@ -875,7 +875,7 @@ type GestureType = TapGesture | LongPressGesture | PanGesture | PinchGesture | S
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| tapLocation20+ | [EventLocationInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-gestures-tapgesture#eventlocationinfo20) | 否 | 是 | 获取点击手势的坐标信息。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| tapLocation20+ | [EventLocationInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-gestures-tapgesture#eventlocationinfo20) | 否 | 是 | 获取点击手势的坐标信息。未返回时，表示当前无点击手势坐标信息。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 
 #### LongPressGestureEvent11+对象说明
 
@@ -903,11 +903,11 @@ type GestureType = TapGesture | LongPressGesture | PanGesture | PinchGesture | S
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| offsetX | number | 否 | 否 | 手势事件x轴相对当前组件元素原始区域的偏移量，单位为vp，从左向右滑动offsetX为正，反之为负。 |
-| offsetY | number | 否 | 否 | 手势事件y轴相对当前组件元素原始区域的偏移量，单位为vp，从上向下滑动offsetY为正，反之为负。 |
-| velocityX | number | 否 | 否 | 获取当前手势的x轴方向速度。坐标轴原点为屏幕左上角，分正负方向速度，从左往右为正，反之为负。单位为vp/s。 |
-| velocityY | number | 否 | 否 | 获取当前手势的y轴方向速度。坐标轴原点为屏幕左上角，分正负方向速度，从上往下为正，反之为负。单位为vp/s。 |
-| velocity | number | 否 | 否 | 获取当前的主方向速度。为xy轴方向速度的平方和的算术平方根。单位为vp/s。 |
+| offsetX | number | 否 | 否 | 手势事件x轴相对当前组件元素原始区域的偏移量，单位为vp，从左向右滑动offsetX为正，反之为负。 取值范围：(-∞, +∞) |
+| offsetY | number | 否 | 否 | 手势事件y轴相对当前组件元素原始区域的偏移量，单位为vp，从上向下滑动offsetY为正，反之为负。 取值范围：(-∞, +∞) |
+| velocityX | number | 否 | 否 | 获取当前手势的x轴方向速度。坐标轴原点为屏幕左上角，分正负方向速度，从左往右为正，反之为负。单位为vp/s。 取值范围：(-∞, +∞) |
+| velocityY | number | 否 | 否 | 获取当前手势的y轴方向速度。坐标轴原点为屏幕左上角，分正负方向速度，从上往下为正，反之为负。单位为vp/s。 取值范围：(-∞, +∞) |
+| velocity | number | 否 | 否 | 获取当前的主方向速度。为xy轴方向速度的平方和的算术平方根。单位为vp/s。 取值范围：[0, +∞) |
 
 #### PinchGestureEvent11+对象说明
 
@@ -921,9 +921,9 @@ type GestureType = TapGesture | LongPressGesture | PanGesture | PinchGesture | S
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| scale | number | 否 | 否 | 缩放比例。 |
-| pinchCenterX | number | 否 | 否 | 捏合手势中心点相对于当前组件元素原始区域左上角x轴坐标，单位为vp。 |
-| pinchCenterY | number | 否 | 否 | 捏合手势中心点相对于当前组件元素原始区域左上角y轴坐标，单位为vp。 |
+| scale | number | 否 | 否 | 缩放比例。 取值范围：[0, +∞) |
+| pinchCenterX | number | 否 | 否 | 捏合手势中心点相对于当前组件元素原始区域左上角x轴坐标，单位为vp。 取值范围：[0, +∞) |
+| pinchCenterY | number | 否 | 否 | 捏合手势中心点相对于当前组件元素原始区域左上角y轴坐标，单位为vp。 取值范围：[0, +∞) |
 
 #### RotationGestureEvent11+对象说明
 
@@ -952,4 +952,4 @@ type GestureType = TapGesture | LongPressGesture | PanGesture | PinchGesture | S
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | angle | number | 否 | 否 | 表示快滑手势的角度，即手指滑动的瞬时方向与水平正方向的夹角，单位为deg。 **说明：** 以水平正方向为基准，滑动方向位于水平正方向顺时针侧时，角度范围为0到180度；位于水平正方向逆时针侧时，角度范围为0到-180度。 |
-| speed | number | 否 | 否 | 快滑手势速度，即所有手指相对当前组件元素原始区域滑动的平均速度，单位为vp/s。 |
+| speed | number | 否 | 否 | 快滑手势速度，即所有手指相对当前组件元素原始区域滑动的平均速度，单位为vp/s。 取值范围：[0, +∞) |

@@ -2,8 +2,8 @@
 title: "native_audio_volume_manager.h"
 upstream_id: "harmonyos-references/capi-native-audio-volume-manager-h"
 catalog: "harmonyos-references"
-content_hash: "4072ef245783"
-synced_at: "2026-07-09T01:00:09.700112"
+content_hash: "36e067d18b21"
+synced_at: "2026-07-28T16:51:28.085802"
 ---
 
 # native_audio_volume_manager.h
@@ -38,7 +38,7 @@ synced_at: "2026-07-09T01:00:09.700112"
 | --- | --- | --- |
 | [typedef void (*OH_AudioVolumeManager_OnStreamVolumeChangeCallback)(void *userData, OH_AudioStream_Usage usage, int32_t volumeLevel, bool updateUi)](#oh_audiovolumemanager_onstreamvolumechangecallback) | OH_AudioVolumeManager_OnStreamVolumeChangeCallback | 音量变化回调函数的原型定义，用于传递给[OH_AudioVolumeManager_RegisterStreamVolumeChangeCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-volume-manager-h#oh_audiovolumemanager_registerstreamvolumechangecallback)。 |
 | [typedef void (*OH_AudioVolumeManager_OnRingerModeChangeCallback)(void *userData, OH_AudioRingerMode ringerMode)](#oh_audiovolumemanager_onringermodechangecallback) | OH_AudioVolumeManager_OnRingerModeChangeCallback | 铃声模式变化回调函数的原型定义，用于传递给[OH_AudioVolumeManager_RegisterRingerModeChangeCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-volume-manager-h#oh_audiovolumemanager_registerringermodechangecallback)。 |
-| [OH_AudioCommon_Result OH_AudioManager_GetAudioVolumeManager(OH_AudioVolumeManager **volumeManager)](#oh_audiomanager_getaudiovolumemanager) | - | 使用音量管理器相关功能，首先需要获取音量管理器实例。 |
+| [OH_AudioCommon_Result OH_AudioManager_GetAudioVolumeManager(OH_AudioVolumeManager **volumeManager)](#oh_audiomanager_getaudiovolumemanager) | - | 获取音量管理器实例。 使用音量管理器相关功能，首先需要获取音量管理器实例。 |
 | [OH_AudioCommon_Result OH_AudioVolumeManager_GetMaxVolumeByUsage(OH_AudioVolumeManager *volumeManager, OH_AudioStream_Usage usage, int32_t *maxVolumeLevel)](#oh_audiovolumemanager_getmaxvolumebyusage) | - | 获取指定用途类型音频流的最大音量等级。 |
 | [OH_AudioCommon_Result OH_AudioVolumeManager_GetMinVolumeByUsage(OH_AudioVolumeManager *volumeManager, OH_AudioStream_Usage usage, int32_t *minVolumeLevel)](#oh_audiovolumemanager_getminvolumebyusage) | - | 获取指定用途类型音频流的最小音量等级。 |
 | [OH_AudioCommon_Result OH_AudioVolumeManager_GetVolumeByUsage(OH_AudioVolumeManager *volumeManager, OH_AudioStream_Usage usage, int32_t *volumeLevel)](#oh_audiovolumemanager_getvolumebyusage) | - | 获取指定用途类型音频流的系统音量等级。 |
@@ -96,6 +96,8 @@ OH_AudioCommon_Result OH_AudioManager_GetAudioVolumeManager(OH_AudioVolumeManage
 ```
  描述
 
+获取音量管理器实例。
+
 使用音量管理器相关功能，首先需要获取音量管理器实例。
 
 起始版本： 20
@@ -104,7 +106,7 @@ OH_AudioCommon_Result OH_AudioManager_GetAudioVolumeManager(OH_AudioVolumeManage
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_AudioVolumeManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiovolumemanager) **volumeManager | 指向OH_AudioVolumeManager用于接收创建的音量管理器实例。 |
+| [OH_AudioVolumeManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiovolumemanager) **volumeManager | 指向OH_AudioVolumeManager指针的地址，用于接收获取的音量管理器实例。 |
 
 返回：
 
@@ -127,7 +129,7 @@ OH_AudioCommon_Result OH_AudioVolumeManager_GetMaxVolumeByUsage(OH_AudioVolumeMa
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_AudioVolumeManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiovolumemanager) *volumeManager | 指向OH_AudioVolumeManager用于接收创建的音量管理器实例。 |
+| [OH_AudioVolumeManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiovolumemanager) *volumeManager | 指向通过[OH_AudioManager_GetAudioVolumeManager](#oh_audiomanager_getaudiovolumemanager)获取的音量管理器实例。 |
 | [OH_AudioStream_Usage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_usage) usage | 用于映射特定音量类型的音频流用途类型。 |
 | int32_t *maxVolumeLevel | 用于接收返回的最大音量。 |
 
@@ -152,7 +154,7 @@ OH_AudioCommon_Result OH_AudioVolumeManager_GetMinVolumeByUsage(OH_AudioVolumeMa
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_AudioVolumeManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiovolumemanager) *volumeManager | 指向OH_AudioVolumeManager用于接收创建的音量管理器实例。 |
+| [OH_AudioVolumeManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiovolumemanager) *volumeManager | 指向通过[OH_AudioManager_GetAudioVolumeManager](#oh_audiomanager_getaudiovolumemanager)获取的音量管理器实例。 |
 | [OH_AudioStream_Usage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_usage) usage | 用于映射特定音量类型的音频流用途类型。 |
 | int32_t *minVolumeLevel | 用于接收返回的最小音量。 |
 
@@ -177,7 +179,7 @@ OH_AudioCommon_Result OH_AudioVolumeManager_GetVolumeByUsage(OH_AudioVolumeManag
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_AudioVolumeManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiovolumemanager) *volumeManager | 指向OH_AudioVolumeManager用于接收创建的音量管理器实例。 |
+| [OH_AudioVolumeManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiovolumemanager) *volumeManager | 指向通过[OH_AudioManager_GetAudioVolumeManager](#oh_audiomanager_getaudiovolumemanager)获取的音量管理器实例。 |
 | [OH_AudioStream_Usage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_usage) usage | 用于映射特定音量类型的音频流用途类型。 |
 | int32_t *volumeLevel | 用于接收返回的系统音量。 |
 
@@ -202,7 +204,7 @@ OH_AudioCommon_Result OH_AudioVolumeManager_IsMuteByUsage(OH_AudioVolumeManager 
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_AudioVolumeManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiovolumemanager) *volumeManager | 指向OH_AudioVolumeManager用于接收创建的音量管理器实例。 |
+| [OH_AudioVolumeManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiovolumemanager) *volumeManager | 指向通过[OH_AudioManager_GetAudioVolumeManager](#oh_audiomanager_getaudiovolumemanager)获取的音量管理器实例。 |
 | [OH_AudioStream_Usage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_usage) usage | 用于映射特定音量类型的音频流用途类型。 |
 | bool *muted | 用于接收返回的音频流是否静音。true表示静音，false表示未静音。 |
 
@@ -227,7 +229,7 @@ OH_AudioCommon_Result OH_AudioVolumeManager_RegisterStreamVolumeChangeCallback(O
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_AudioVolumeManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiovolumemanager) *volumeManager | 指向OH_AudioVolumeManager用于接收创建的音量管理器实例。 |
+| [OH_AudioVolumeManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiovolumemanager) *volumeManager | 指向通过[OH_AudioManager_GetAudioVolumeManager](#oh_audiomanager_getaudiovolumemanager)获取的音量管理器实例。 |
 | [OH_AudioStream_Usage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_usage) usage | 监听用于映射特定音量类型的音频流用途类型。 |
 | [OH_AudioVolumeManager_OnStreamVolumeChangeCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-volume-manager-h#oh_audiovolumemanager_onstreamvolumechangecallback) callback | 监听的音频流音量发生时，将调用此回调函数[OH_AudioVolumeManager_OnStreamVolumeChangeCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-volume-manager-h#oh_audiovolumemanager_onstreamvolumechangecallback)。 |
 | void *userData | 用户自定义数据指针。 |
@@ -253,7 +255,7 @@ OH_AudioCommon_Result OH_AudioVolumeManager_UnregisterStreamVolumeChangeCallback
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_AudioVolumeManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiovolumemanager) *volumeManager | 指向OH_AudioVolumeManager用于接收创建的音量管理器实例。 |
+| [OH_AudioVolumeManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiovolumemanager) *volumeManager | 指向通过[OH_AudioManager_GetAudioVolumeManager](#oh_audiomanager_getaudiovolumemanager)获取的音量管理器实例。 |
 | [OH_AudioVolumeManager_OnStreamVolumeChangeCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-volume-manager-h#oh_audiovolumemanager_onstreamvolumechangecallback) callback | 指向[OH_AudioVolumeManager_RegisterStreamVolumeChangeCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-volume-manager-h#oh_audiovolumemanager_registerstreamvolumechangecallback)传入的回调函数，用于取消注册。 |
 
 返回：
@@ -277,7 +279,7 @@ OH_AudioCommon_Result OH_AudioVolumeManager_GetRingerMode(OH_AudioVolumeManager 
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_AudioVolumeManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiovolumemanager) *volumeManager | 指向OH_AudioVolumeManager用于接收创建的音量管理器实例。 |
+| [OH_AudioVolumeManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiovolumemanager) *volumeManager | 指向通过[OH_AudioManager_GetAudioVolumeManager](#oh_audiomanager_getaudiovolumemanager)获取的音量管理器实例。 |
 | [OH_AudioRingerMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-common-h#oh_audioringermode) *ringerMode | 用于接收返回的铃声模式。 |
 
 返回：
@@ -301,7 +303,7 @@ OH_AudioCommon_Result OH_AudioVolumeManager_RegisterRingerModeChangeCallback(OH_
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_AudioVolumeManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiovolumemanager) *volumeManager | 指向OH_AudioVolumeManager用于接收创建的音量管理器实例。 |
+| [OH_AudioVolumeManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiovolumemanager) *volumeManager | 指向通过[OH_AudioManager_GetAudioVolumeManager](#oh_audiomanager_getaudiovolumemanager)获取的音量管理器实例。 |
 | [OH_AudioVolumeManager_OnRingerModeChangeCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-volume-manager-h#oh_audiovolumemanager_onringermodechangecallback) callback | 监听的铃声模式发生切换时，将调用此回调函数[OH_AudioVolumeManager_OnRingerModeChangeCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-volume-manager-h#oh_audiovolumemanager_onringermodechangecallback)。 |
 | void *userData | 用户自定义数据指针。 |
 
@@ -326,7 +328,7 @@ OH_AudioCommon_Result OH_AudioVolumeManager_UnregisterRingerModeChangeCallback(O
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_AudioVolumeManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiovolumemanager) *volumeManager | 指向OH_AudioVolumeManager用于接收创建的音量管理器实例。 |
+| [OH_AudioVolumeManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiovolumemanager) *volumeManager | 指向通过[OH_AudioManager_GetAudioVolumeManager](#oh_audiomanager_getaudiovolumemanager)获取的音量管理器实例。 |
 | [OH_AudioVolumeManager_OnRingerModeChangeCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-volume-manager-h#oh_audiovolumemanager_onringermodechangecallback) callback | 指向[OH_AudioVolumeManager_RegisterRingerModeChangeCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-volume-manager-h#oh_audiovolumemanager_registerringermodechangecallback)传入的回调函数，用于取消注册。 |
 
 返回：

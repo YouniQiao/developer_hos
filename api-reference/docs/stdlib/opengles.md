@@ -2,8 +2,8 @@
 title: "OpenGL ES"
 upstream_id: "harmonyos-references/opengles"
 catalog: "harmonyos-references"
-content_hash: "7a7c8a3cb4e5"
-synced_at: "2026-07-09T01:01:48.556880"
+content_hash: "3b344a29089f"
+synced_at: "2026-07-28T16:53:22.893633"
 ---
 
 # OpenGL ES
@@ -44,7 +44,7 @@ libEGL.so
 
 #### 相关参考
 
-针对OpenGL ES的使用和相关开发，需要同步了解NDK的开发过程，以及XComponent组件等的使用。具体可参考:
+针对OpenGL ES的使用和相关开发，需要同步了解NDK的开发过程，以及XComponent组件等的使用。具体可参考：
 
 - [NDK开发参考](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-development-overview)
 - [Node-API参考](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/napi)
@@ -141,7 +141,7 @@ int32_t Init(void *window, int32_t width,  int32_t height)
     // 绑定EGL Context和Surface
     eglMakeCurrent(mEGLDisplay, mEGLSurface, mEGLSurface, mEGLContext);
     
-    // 创建着色点程序
+    // 创建着色器程序
     const char* g_vertexShader =
         "#version 300 es\n"
         "in vec4 a_pos;\n"
@@ -397,7 +397,7 @@ EGLBoolean eglGetConfigs(EGLDisplay display, // EGL显示连接句柄，标识�
            }
        }
 ```
- 如上所示遍历configs每个配置，使用eglGetConfigAttrib查询该配置下特定属性的值，将该值保存在第4个参数中，并判断值是否是自己需要的，如果需要则保存该配置，以待使用。调用成功则返回EGL_TRUE，调用失败则返回EGL_FALSE。 如果返回EGL_FALSE，可以使用eglGetError查询失败的原因，如果返回EGL_BAD ATTRIBUTE则attribute不是有效的属性。
+ 如上所示遍历configs每个配置，使用eglGetConfigAttrib查询该配置下特定属性的值，将该值保存在第4个参数中，并判断值是否是自己需要的，如果需要则保存该配置，以待使用。调用成功则返回EGL_TRUE，调用失败则返回EGL_FALSE。 如果返回EGL_FALSE，可以使用eglGetError查询失败的原因，如果返回EGL_BAD_ATTRIBUTE则attribute不是有效的属性。
 
 ```
 EGLBoolean eglGetConfigAttrib(EGLDisplay display,     // EGL 显示连接句柄，标识了要进行配置选择的显示连接
@@ -595,7 +595,7 @@ void glLinkProgram(GLuint program);
 ```
  glLinkProgram函数用于链接一个着色器程序对象，将附加到该程序对象的着色器链接成一个可执行的渲染管线。
 
-参数program是要链接的着色器程序对象的标识符。链接着色器程序时，OpenGL将会执行以下操作：将各个着色器对象中的代码合并成一个可执行的渲染管线。执行连接器优化，以优化渲染管线的性能。并将Uniform变量和Uniform块的信息进行绑定。
+参数program是要链接的着色器程序对象的标识符。链接着色器程序时，OpenGL将会执行以下操作：将各个着色器对象中的代码合并成一个可执行的渲染管线。执行链接器优化，以优化渲染管线的性能。并将Uniform变量和Uniform块的信息进行绑定。
 
 ```
 void glUseProgram(GLuint program);
@@ -764,7 +764,7 @@ void glVertexAttribPointer(GLuint index,         // 指定要修改的顶点数�
                            GLint size,           // 指定每个顶点属性的分量个数
                            GLenum type,          // 指定每个顶点属性分量的类型
                            GLboolean normalized, // 指定在访问顶点数据时是否将其映射到[0, 1]或[-1, 1]范围内
-                           GLsizei stride,       // 指定顶点属性之间的偏移量,如果是精密性排列可以设置为0
+                           GLsizei stride,       // 指定顶点属性之间的偏移量,如果是紧密排列可以设置为0
                            const void *offset);  // 属性在缓冲区中的偏移量，允许在缓冲区中指定一个位置开始读取数据。
 ```
  

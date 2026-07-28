@@ -2,8 +2,8 @@
 title: "advertising（星闪广播能力）"
 upstream_id: "harmonyos-references/nearlink-advertising"
 catalog: "harmonyos-references"
-content_hash: "6f769dacd3e7"
-synced_at: "2026-07-09T00:59:26.516993"
+content_hash: "1ddf9479f5e4"
+synced_at: "2026-07-28T16:50:41.915848"
 ---
 
 # advertising（星闪广播能力）
@@ -177,7 +177,7 @@ startAdvertising(advertisingParams: AdvertisingParams): Promise<number>
 | 201 | Permission denied. |
 | 401 | Invalid parameter. |
 | 801 | Capability not supported. |
-| 1009700003 | Nearlink is off. |
+| 1009700003 | NearLink is off. |
 | 1009700099 | Operation failed. |
 
 示例：
@@ -267,7 +267,7 @@ stopAdvertising(advertisingId: number): Promise<void>
 | 201 | Permission denied. |
 | 401 | Invalid parameter. |
 | 801 | Capability not supported. |
-| 1009700003 | Nearlink is off. |
+| 1009700003 | NearLink is off. |
 | 1009700099 | Operation failed. |
 
 示例：
@@ -306,7 +306,7 @@ on(type: 'advertisingStateChange', callback: Callback<AdvertisingStateChangeInfo
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 事件回调类型，支持的事件为'advertisingStateChange'，表示星闪广播状态事件。 当调用[sle.startAdvertising](#startadvertising)、[sle.stopAdvertising](#stopadvertising)时，均会触发该事件。 |
+| type | string | 是 | 事件回调类型，支持的事件为'advertisingStateChange'，表示星闪广播状态事件。 当调用[advertising.startAdvertising](#startadvertising)、[advertising.stopAdvertising](#stopadvertising)时，均会触发该事件。 |
 | callback | Callback | 是 | 回调函数，返回广播状态变化数据。 |
 
 错误码：

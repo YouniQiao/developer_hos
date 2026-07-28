@@ -2,8 +2,8 @@
 title: "HTTP错误码"
 upstream_id: "harmonyos-references/errorcode-net-http"
 catalog: "harmonyos-references"
-content_hash: "d2894aa01365"
-synced_at: "2026-07-09T00:59:31.221080"
+content_hash: "b44a0ed57f8e"
+synced_at: "2026-07-28T16:50:47.980895"
 ---
 
 # HTTP错误码
@@ -292,13 +292,15 @@ Operation timeout.
 2. 数据读写超时（readTimeout默认60000ms）。
 3. 网络不稳定导致响应延迟。
 4. 服务器负载过高，处理速度缓慢。
+5. 调用[connection.addCustomDnsRule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-net-connection#connectionaddcustomdnsrule11)设置了自定义DNS规则，导致域名解析到过期或错误的IP地址，连接无法建立。
 
 处理步骤
 
 1. 检查网络连接状态，确认网络稳定。
 2. 根据实际情况调整readTimeout或connectTimeout参数。
 3. 排查服务器负载情况。
-4. 可查看日志关键词"HttpClient CURLcode result 28"定位该错误。
+4. 检查是否通过[connection.addCustomDnsRule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-net-connection#connectionaddcustomdnsrule11)设置了自定义DNS规则，若设置的IP地址已过期或错误，调用[removeCustomDnsRule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-net-connection#connectionremovecustomdnsrule11)或[clearCustomDnsRules](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-net-connection#connectionclearcustomdnsrules11)清除规则后重试。
+5. 可查看日志关键词"HttpClient CURLcode result 28"定位该错误。
 
 #### 2300047 重定向次数达到最大值
 
@@ -369,13 +371,15 @@ Failed to receive data from the peer.
 1. 网络连接中断或不稳定。
 2. 服务器关闭了连接。
 3. 对端发送数据过程中出现异常。
+4. 调用[connection.addCustomDnsRule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-net-connection#connectionaddcustomdnsrule11)设置了自定义DNS规则，但规则中IP地址已失效，导致向错误的地址发送请求后无法接收响应。
 
 处理步骤
 
 1. 检查网络连接状态。
 2. 确认服务器端是否正常运行。
 3. 重新发起请求尝试。
-4. 可查看日志关键词"HttpClient CURLcode result 56"定位该错误。
+4. 检查是否通过[connection.addCustomDnsRule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-net-connection#connectionaddcustomdnsrule11)设置了自定义DNS规则，若设置的IP地址已过期或错误，调用[removeCustomDnsRule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-net-connection#connectionremovecustomdnsrule11)或[clearCustomDnsRules](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-net-connection#connectionclearcustomdnsrules11)清除规则后重试，确保域名解析到正确的IP地址。
+5. 可查看日志关键词"HttpClient CURLcode result 56"定位该错误。
 
 #### 2300058 本地SSL证书错误
 

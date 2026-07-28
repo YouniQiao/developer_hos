@@ -2,8 +2,8 @@
 title: "HML语法参考"
 upstream_id: "harmonyos-references/js-service-widget-syntax-hml"
 catalog: "harmonyos-references"
-content_hash: "23735fea7d66"
-synced_at: "2026-07-09T00:58:29.205430"
+content_hash: "c57f279e9aef"
+synced_at: "2026-07-28T16:49:11.713650"
 ---
 
 # HML语法参考
@@ -27,7 +27,7 @@ HML是一套类HTML的标记语言，通过组件，事件构建出页面的内�
 ```
 <!-- xxx.hml -->
 <div class="item-container">
-  <text>{{content}}</text>            <!-- 输出：Hello World！-->
+  <text>{{content}}</text>            <!-- 输出：Hello World!-->
   <text>{{key1}} {{key2}}</text>       <!-- 输出：Hello World-->
   <text>key1 {{key1}}</text>           <!-- 输出：key1 Hello-->
   <text>{{flag1 && flag2}}</text>      <!-- 输出：false-->
@@ -53,7 +53,7 @@ HML是一套类HTML的标记语言，通过组件，事件构建出页面的内�
 - key值支持对象操作符和数组操作符，如{{key.value}}、{{key[0]}}。
 - 支持字符串拼接、逻辑运算和三元表达式。
 - 字符串拼接： 支持变量跟变量：{{key1}}{{key2}}等
-- 支持常量跟变量： "my name is {{name}}， i am from {{city}}." "key1 {{key1}}"
+- 支持常量跟变量： "my name is {{name}}， I am from {{city}}." "key1 {{key1}}"
 
 逻辑运算：
 
@@ -74,7 +74,7 @@ HML是一套类HTML的标记语言，通过组件，事件构建出页面的内�
 
 卡片的事件需要在json文件的actions字段下进行声明。卡片仅支持click通用事件，事件的定义只能是直接命令式，事件定义必须包含action字段，用以说明事件类型。卡片支持两种事件类型：跳转事件(router)和消息事件(message)。跳转事件可以跳转到卡片提供方的应用，消息事件可以将开发者自定义信息传递给卡片提供方。事件参数支持变量，变量以"{{}}"修饰。跳转事件中若定义了params字段，则在被拉起应用的onStart的intent中，可用"params"作为key将跳转事件定义的params字段的值取到。
 
-- 跳转事件格式 通过定义ability名称和携带的参数字段params直接跳转，可用"params"作为key提取到跳转事件定义的params字段值。 选择器 样例 默认值 样例描述 action string "router" 事件类型。 - "router"：用于应用跳转。 - "message"：自定义点击事件。 abilityName string - 跳转ability名。 params Object - 跳转应用携带的额外参数。 
+- 跳转事件格式 通过定义ability名称和携带的参数字段params直接跳转，可用"params"作为key提取到跳转事件定义的params字段值。 选择器 样例 默认值 样例描述 action string "router" 事件类型。 - "router"：用于应用跳转。 abilityName string - 跳转ability名。 params Object - 跳转应用携带的额外参数。 
 ```
 {
   "data": {
@@ -90,7 +90,7 @@ HML是一套类HTML的标记语言，通过组件，事件构建出页面的内�
 }
 ```
 
-- 消息事件格式 选择器 样例 默认值 样例描述 action string message 表示事件类型。 params Object - 跳转应用携带的额外参数。 
+- 消息事件格式 选择器 样例 默认值 样例描述 action string message 表示事件类型。 - "message"：自定义点击事件。 params Object - 跳转应用携带的额外参数。 
 ```
 {
   "actions": {

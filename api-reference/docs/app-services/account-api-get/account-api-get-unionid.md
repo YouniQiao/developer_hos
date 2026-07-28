@@ -2,8 +2,8 @@
 title: "通过OpenID获取UnionID"
 upstream_id: "harmonyos-references/account-api-get-unionid"
 catalog: "harmonyos-references"
-content_hash: "9b81eaeeeab2"
-synced_at: "2026-07-09T01:01:13.545678"
+content_hash: "59660c23a059"
+synced_at: "2026-07-28T16:52:31.406564"
 ---
 
 # 通过OpenID获取UnionID
@@ -174,4 +174,4 @@ public class OpenIdToUnionIdDemo {
 | 501 | 服务分发异常。 | - 检查请求URL中nsp_svc是否正确 - 若确认请求URL与文档一致，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
 | 1302 | 接口流控。 | 业务调用频率过高，单应用调用并发请低于100TPS。 |
 | 31204 | access_token已失效。 | 通过[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)获取的access_token不会出现此错误。请严格按照接口入参要求，使用[获取应用级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-app-token)方式获取access_token并重试。 |
-| 150028 | open_id参数为空或超长。 | 请检查open_id是否为空或者超过256的字符长度。具体格式要求请参考[OpenID和UnionID的格式说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-9) |
+| 150028 | open_id参数非法。 | open_id参数非法，可能原因： - open_id参数为空。 - open_id参数格式错误，具体格式要求请参考[OpenID和UnionID的格式说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-9)。 |

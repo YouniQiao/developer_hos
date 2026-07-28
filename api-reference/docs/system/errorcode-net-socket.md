@@ -2,8 +2,8 @@
 title: "Socket错误码"
 upstream_id: "harmonyos-references/errorcode-net-socket"
 catalog: "harmonyos-references"
-content_hash: "2817f1e42365"
-synced_at: "2026-07-09T00:59:31.329757"
+content_hash: "ee36e3c4775a"
+synced_at: "2026-07-28T16:50:48.231695"
 ---
 
 # Socket错误码
@@ -469,7 +469,7 @@ SSL is null.
 
 错误描述
 
-SSL/TLS上下文为空，参数错误。
+SSL/TLS连接对象为空，参数错误。
 
 可能原因
 
@@ -557,7 +557,7 @@ TLS系统调用发生不可恢复的致命I/O错误。
 
 处理步骤
 
-1. 请参阅日志中的Linux系统内核错误码errno以了解详细信息。
+1. 请参阅日志中的内核通用错误码errno以了解详细信息。
 2. 检查网络连接状态。
 3. 尝试重新建立TLS连接。
 

@@ -2,8 +2,8 @@
 title: "Class (Animation)"
 upstream_id: "harmonyos-references/map-map-animation"
 catalog: "harmonyos-references"
-content_hash: "7087f3a39e38"
-synced_at: "2026-07-09T01:01:25.117445"
+content_hash: "29a34b21a99e"
+synced_at: "2026-07-28T16:52:43.368598"
 ---
 
 # Class (Animation)
@@ -16,7 +16,7 @@ import { map } from '@kit.MapKit';
 
 #### Animation
 
-动画抽象类。
+动画抽象类。Animation类用于控制地图元素的动画效果，支持旋转、缩放、平移等多种动画类型，适用于地图交互增强、路径动画展示等场景。
 
 ![](./img/note_3.0-zh-cn.png) 动画持续时间默认值为250ms；
 

@@ -2,17 +2,17 @@
 title: "ContainerSpan"
 upstream_id: "harmonyos-references/ts-basic-components-containerspan"
 catalog: "harmonyos-references"
-content_hash: "38d9aeaf5f8a"
-synced_at: "2026-07-09T00:57:57.669228"
+content_hash: "aec76becb516"
+synced_at: "2026-07-28T16:45:00.290257"
 ---
 
 # ContainerSpan
 
-[Text](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text)组件的子组件，用于统一管理多个[Span](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-span)、[ImageSpan](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-imagespan)的背景色及圆角弧度。
+[Text](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text)组件的子组件，用于统一管理多个[Span](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-span)、[ImageSpan](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-imagespan)的背景色及圆角弧度，适用于需要为文本片段和图片组合设置统一背景样式的场景。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 该组件从API version 11开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+- 该组件从API version 11开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 - 本模块接口仅可在Stage模型下使用。
 
 #### 子组件
@@ -35,7 +35,7 @@ ContainerSpan()
 
 textBackgroundStyle(style: TextBackgroundStyle)
 
-设置文本背景样式。子组件在不设置该属性时，将继承此属性值。
+设置文本背景样式。子组件在不设置该属性时，将继承此属性值。未通过该接口设置时，默认背景颜色为Color.Transparent，圆角弧度为0。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 12开始，该接口支持在[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)中调用。
 
@@ -47,7 +47,7 @@ textBackgroundStyle(style: TextBackgroundStyle)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| style | [TextBackgroundStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-span#textbackgroundstyle11对象说明) | 是 | 文本背景样式。 默认值： { color: Color.Transparent, radius: 0 } |
+| style | [TextBackgroundStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-span#textbackgroundstyle11对象说明) | 是 | 文本背景样式，用于设置ContainerSpan组件内Span和ImageSpan的文本背景颜色和圆角弧度。子组件不设置该属性时将继承此样式。 |
 
 #### [h2]attributeModifier12+
 
@@ -63,7 +63,7 @@ attributeModifier(modifier: AttributeModifier<ContainerSpanAttribute>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| modifier | [AttributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifiert) | 是 | 动态设置组件的属性。 |
+| modifier | [AttributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifiert) | 是 | 动态设置组件的属性。开发者需自定义类继承AttributeModifier接口，在applyNormalAttribute方法中接收ContainerSpanAttribute实例并动态修改ContainerSpan的属性值。 |
 
 #### 事件
 
@@ -92,7 +92,7 @@ struct Index {
           Span('   Hello World !   ').fontSize('16fp').fontColor(Color.White)
         }
         .textBackgroundStyle({
-          color: "#7F007DFF",
+          color: '#7F007DFF',
           radius: {
             topLeft: 12,
             topRight: 12,
@@ -105,7 +105,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612685.png)
+ ![](./img/zh-cn_image_0000002656008630.png)
 
 #### [h2]示例2（通过attributeModifier设置背景样式）
 
@@ -117,7 +117,7 @@ import { ContainerSpanModifier } from '@kit.ArkUI';
 class MyContainerSpanModifier extends ContainerSpanModifier {
   applyNormalAttribute(instance: ContainerSpanAttribute): void {
     super.applyNormalAttribute?.(instance);
-    this.textBackgroundStyle({ color: "#7F007DFF", radius: "12vp" });
+    this.textBackgroundStyle({ color: '#7F007DFF', radius: '12vp' });
   }
 }
 
@@ -142,4 +142,4 @@ struct ContainerSpanModifierExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413396.png)
+ ![](./img/zh-cn_image_0000002655848710.png)

@@ -2,15 +2,15 @@
 title: "native_render.h"
 upstream_id: "harmonyos-references/capi-native-render-h"
 catalog: "harmonyos-references"
-content_hash: "9f9709fcb9c8"
-synced_at: "2026-07-09T00:58:37.420666"
+content_hash: "dbc7f0389466"
+synced_at: "2026-07-28T16:49:23.732935"
 ---
 
 # native_render.h
 
 #### 概述
 
-提供NativeRender接口的类型定义。更多详细介绍请参考[构建渲染节点](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-embed-render-components)。
+提供NativeRender接口的类型定义，支持创建和管理渲染节点、设置渲染属性、自定义绘制内容，以及配置遮罩、裁剪和模糊效果，适用于在Native侧构建和管理自定义渲染节点树、扩展自定义绘制效果的场景。更多详细介绍请参考[构建渲染节点](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-embed-render-components)。
 
 引用文件： <arkui/native_render.h>
 
@@ -30,24 +30,25 @@ synced_at: "2026-07-09T00:58:37.420666"
 
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
-| [ArkUI_RenderNode*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) | ArkUI_RenderNodeHandle | 渲染节点指针。 |
-| [ArkUI_RenderContentModifier*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendercontentmodifierhandle) | ArkUI_RenderContentModifierHandle | 内容修改器指针。 |
-| [ArkUI_FloatProperty*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-floatpropertyhandle) | ArkUI_FloatPropertyHandle | 浮点数属性指针。 |
-| [ArkUI_Vector2Property*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-vector2propertyhandle) | ArkUI_Vector2PropertyHandle | 二维向量属性指针。 |
-| [ArkUI_ColorProperty*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-colorpropertyhandle) | ArkUI_ColorPropertyHandle | 颜色属性指针。 |
+| [ArkUI_RenderNode*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) | ArkUI_RenderNodeHandle | 定义渲染节点指针，用于在ArkUI_RenderNodeUtils相关接口中表示和传递渲染节点对象。 |
+| [ArkUI_RenderContentModifier*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendercontentmodifierhandle) | ArkUI_RenderContentModifierHandle | 定义渲染内容修改器指针，用于引用内容修改器。内容修改器可挂载到渲染节点，并附加渲染属性或设置onDraw回调。 |
+| [ArkUI_FloatProperty*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-floatpropertyhandle) | ArkUI_FloatPropertyHandle | 定义ArkUI原生浮点渲染属性指针，用于创建、传递并管理目标内容修改器上的浮点属性。 |
+| [ArkUI_Vector2Property*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-vector2propertyhandle) | ArkUI_Vector2PropertyHandle | 定义二维向量属性指针，用于在ArkUI原生渲染属性接口中创建、附加、设置、获取和释放二维向量属性。 |
+| [ArkUI_ColorProperty*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-colorpropertyhandle) | ArkUI_ColorPropertyHandle | 定义颜色属性指针，用于表示ArkUI中的颜色属性。 |
 | [ArkUI_FloatAnimatableProperty*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-floatanimatablepropertyhandle) | ArkUI_FloatAnimatablePropertyHandle | 可动画的浮点数属性指针。 |
 | [ArkUI_Vector2AnimatableProperty*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-vector2animatablepropertyhandle) | ArkUI_Vector2AnimatablePropertyHandle | 可动画的二维向量属性指针。 |
 | [ArkUI_ColorAnimatableProperty*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-coloranimatablepropertyhandle) | ArkUI_ColorAnimatablePropertyHandle | 可动画的颜色属性指针。 |
-| [ArkUI_RectShape](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rectshapeoption) | ArkUI_RectShapeOption | 范围形状结构体。 |
-| [ArkUI_NodeBorderStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nodeborderstyleoption) | ArkUI_NodeBorderStyleOption | 边框样式配置项。 |
-| [ArkUI_NodeBorderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nodeborderwidthoption) | ArkUI_NodeBorderWidthOption | 边框宽度配置项。 |
+| [ArkUI_RectShape](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rectshapeoption) | ArkUI_RectShapeOption | 定义矩形形状配置项，用于在ArkUI渲染节点中描述矩形或椭圆形的形状范围，可作为创建遮罩或裁剪配置项的输入。 |
+| [ArkUI_NodeBorderStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nodeborderstyleoption) | ArkUI_NodeBorderStyleOption | 定义边框样式配置项，用于设置节点边框的样式类型，支持实线、虚线、点线等多种样式。 |
+| [ArkUI_NodeBorderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nodeborderwidthoption) | ArkUI_NodeBorderWidthOption | 定义边框宽度配置项，用于配置渲染节点各边的边框宽度。 |
 | [ArkUI_NodeBorderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nodebordercoloroption) | ArkUI_NodeBorderColorOption | 边框颜色配置项。 |
-| [ArkUI_NodeBorderRadius](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nodeborderradiusoption) | ArkUI_NodeBorderRadiusOption | 边框弧度配置项。 |
-| [ArkUI_CircleShape](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-circleshapeoption) | ArkUI_CircleShapeOption | 圆形形状配置项。 |
-| [ArkUI_RoundRectShape](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-roundrectshapeoption) | ArkUI_RoundRectShapeOption | 圆角矩形形状配置项。 |
-| [ArkUI_CommandPath](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-commandpathoption) | ArkUI_CommandPathOption | 自定义路径配置项。 |
-| [ArkUI_RenderNodeMaskOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodemaskoption) | ArkUI_RenderNodeMaskOption | 节点遮罩配置项。 |
-| [ArkUI_RenderNodeClipOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodeclipoption) | ArkUI_RenderNodeClipOption | 节点裁剪配置项。 |
+| [ArkUI_NodeBorderRadius](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nodeborderradiusoption) | ArkUI_NodeBorderRadiusOption | 边框半径配置项。 |
+| [ArkUI_CircleShape](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-circleshapeoption) | ArkUI_CircleShapeOption | 定义圆形形状配置项，用于在ArkUI_RenderNodeUtils中创建圆形形状，并配置圆心坐标和半径，作为RenderNode的遮罩或裁剪形状。 |
+| [ArkUI_RoundRectShape](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-roundrectshapeoption) | ArkUI_RoundRectShapeOption | 定义圆角矩形形状配置项，用于配置圆角矩形形状，并可用于创建渲染节点遮罩或裁剪。 |
+| [ArkUI_CommandPath](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-commandpathoption) | ArkUI_CommandPathOption | 定义自定义绘制路径配置项，用于为渲染节点创建基于路径的遮罩或裁剪效果。 |
+| [ArkUI_RenderNodeMaskOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodemaskoption) | ArkUI_RenderNodeMaskOption | 定义渲染节点遮罩配置项，用于通过矩形、圆角矩形、圆形、椭圆形或自定义绘制路径描述渲染节点的遮罩区域，并作为[OH_ArkUI_RenderNodeUtils_SetMask](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-render-h#oh_arkui_rendernodeutils_setmask)的入参为渲染节点应用遮罩。 |
+| [ArkUI_RenderNodeClipOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodeclipoption) | ArkUI_RenderNodeClipOption | 定义渲染节点裁剪配置项，用于通过矩形、圆角矩形、圆形、椭圆形或自定义绘制路径描述渲染节点的裁剪区域，并作为[OH_ArkUI_RenderNodeUtils_SetClip](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-render-h#oh_arkui_rendernodeutils_setclip)的入参为渲染节点应用裁剪。 |
+| [ArkUI_RenderBlurStyleOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodeblurstyleoption) | ArkUI_RenderBlurStyleOption | 定义模糊样式结构体。 |
 
 #### [h2]函数
 
@@ -71,16 +72,16 @@ synced_at: "2026-07-09T00:58:37.420666"
 | [int32_t OH_ArkUI_RenderNodeUtils_GetChildrenCount(ArkUI_RenderNodeHandle node, int32_t* count)](#oh_arkui_rendernodeutils_getchildrencount) | - | 获取指定渲染节点的子渲染节点数量。 |
 | [int32_t OH_ArkUI_RenderNodeUtils_SetBackgroundColor(ArkUI_RenderNodeHandle node, uint32_t color)](#oh_arkui_rendernodeutils_setbackgroundcolor) | - | 为渲染节点设置背景颜色。 |
 | [int32_t OH_ArkUI_RenderNodeUtils_GetBackgroundColor(ArkUI_RenderNodeHandle node, uint32_t* color)](#oh_arkui_rendernodeutils_getbackgroundcolor) | - | 获取渲染节点的背景颜色。 |
-| [int32_t OH_ArkUI_RenderNodeUtils_SetClipToFrame(ArkUI_RenderNodeHandle node, int32_t clipToFrame)](#oh_arkui_rendernodeutils_setcliptoframe) | - | 设置是否对当前渲染节点裁剪。 |
-| [int32_t OH_ArkUI_RenderNodeUtils_GetClipToFrame(ArkUI_RenderNodeHandle node, int32_t* clipToFrame)](#oh_arkui_rendernodeutils_getcliptoframe) | - | 获取是否对当前渲染节点裁剪。 |
-| [int32_t OH_ArkUI_RenderNodeUtils_SetClipToBounds(ArkUI_RenderNodeHandle node, int32_t clipToBounds)](#oh_arkui_rendernodeutils_setcliptobounds) | - | 设置是否对当前渲染节点边界裁剪。 |
-| [int32_t OH_ArkUI_RenderNodeUtils_GetClipToBounds(ArkUI_RenderNodeHandle node, int32_t* clipToBounds)](#oh_arkui_rendernodeutils_getcliptobounds) | - | 获取是否对当前渲染节点边界裁剪。 |
+| [int32_t OH_ArkUI_RenderNodeUtils_SetClipToFrame(ArkUI_RenderNodeHandle node, int32_t clipToFrame)](#oh_arkui_rendernodeutils_setcliptoframe) | - | 设置是否按当前渲染节点的frame区域裁剪。 |
+| [int32_t OH_ArkUI_RenderNodeUtils_GetClipToFrame(ArkUI_RenderNodeHandle node, int32_t* clipToFrame)](#oh_arkui_rendernodeutils_getcliptoframe) | - | 获取是否按当前渲染节点的frame区域裁剪。 |
+| [int32_t OH_ArkUI_RenderNodeUtils_SetClipToBounds(ArkUI_RenderNodeHandle node, int32_t clipToBounds)](#oh_arkui_rendernodeutils_setcliptobounds) | - | 设置是否按当前渲染节点的边界裁剪。 |
+| [int32_t OH_ArkUI_RenderNodeUtils_GetClipToBounds(ArkUI_RenderNodeHandle node, int32_t* clipToBounds)](#oh_arkui_rendernodeutils_getcliptobounds) | - | 获取是否按当前渲染节点的边界裁剪。 |
 | [int32_t OH_ArkUI_RenderNodeUtils_SetOpacity(ArkUI_RenderNodeHandle node, float opacity)](#oh_arkui_rendernodeutils_setopacity) | - | 为渲染节点设置不透明度值。 |
 | [int32_t OH_ArkUI_RenderNodeUtils_GetOpacity(ArkUI_RenderNodeHandle node, float* opacity)](#oh_arkui_rendernodeutils_getopacity) | - | 获取渲染节点的不透明度值。 |
 | [int32_t OH_ArkUI_RenderNodeUtils_SetSize(ArkUI_RenderNodeHandle node, int32_t width, int32_t height)](#oh_arkui_rendernodeutils_setsize) | - | 为渲染节点设置尺寸。 |
 | [int32_t OH_ArkUI_RenderNodeUtils_GetSize(ArkUI_RenderNodeHandle node, int32_t* width, int32_t* height)](#oh_arkui_rendernodeutils_getsize) | - | 获取渲染节点的尺寸。 |
 | [int32_t OH_ArkUI_RenderNodeUtils_SetPosition(ArkUI_RenderNodeHandle node, int32_t x, int32_t y)](#oh_arkui_rendernodeutils_setposition) | - | 为渲染节点设置位置坐标。 |
-| [int32_t OH_ArkUI_RenderNodeUtils_GetPosition(ArkUI_RenderNodeHandle node, int32_t* x, int32_t* y)](#oh_arkui_rendernodeutils_getposition) | - | 获取渲染节点的位置坐标。该坐标是渲染节点布局后相对父节点的位置偏移，单位为px。该坐标是父节点对该节点进行布局之后的结果，因此布局之后生效的offset属性和不参与布局的position属性不影响该坐标。 |
+| [int32_t OH_ArkUI_RenderNodeUtils_GetPosition(ArkUI_RenderNodeHandle node, int32_t* x, int32_t* y)](#oh_arkui_rendernodeutils_getposition) | - | 获取渲染节点的位置坐标。该坐标是父节点布局该节点后得到的、相对父节点的位置偏移，单位为px；布局后生效的offset属性和不参与布局的position属性不影响该坐标。 |
 | [int32_t OH_ArkUI_RenderNodeUtils_SetPivot(ArkUI_RenderNodeHandle node, float x, float y)](#oh_arkui_rendernodeutils_setpivot) | - | 为渲染节点的变换设置中心点。 |
 | [int32_t OH_ArkUI_RenderNodeUtils_GetPivot(ArkUI_RenderNodeHandle node, float* x, float* y)](#oh_arkui_rendernodeutils_getpivot) | - | 获取渲染节点的中心点坐标。 |
 | [int32_t OH_ArkUI_RenderNodeUtils_SetScale(ArkUI_RenderNodeHandle node, float x, float y)](#oh_arkui_rendernodeutils_setscale) | - | 为渲染节点设置缩放因子。 |
@@ -110,7 +111,7 @@ synced_at: "2026-07-09T00:58:37.420666"
 | [int32_t OH_ArkUI_RenderNodeUtils_GetBorderRadius(ArkUI_RenderNodeHandle node, ArkUI_NodeBorderRadiusOption** borderRadius)](#oh_arkui_rendernodeutils_getborderradius) | - | 获取渲染节点的边框角半径。 |
 | [int32_t OH_ArkUI_RenderNodeUtils_SetMask(ArkUI_RenderNodeHandle node, ArkUI_RenderNodeMaskOption* mask)](#oh_arkui_rendernodeutils_setmask) | - | 使用遮罩配置为渲染节点应用遮罩。 |
 | [int32_t OH_ArkUI_RenderNodeUtils_SetClip(ArkUI_RenderNodeHandle node, ArkUI_RenderNodeClipOption* clip)](#oh_arkui_rendernodeutils_setclip) | - | 使用裁剪配置为渲染节点应用裁剪。 |
-| [int32_t OH_ArkUI_RenderNodeUtils_SetMarkNodeGroup(ArkUI_RenderNodeHandle node, bool markNodeGroup)](#oh_arkui_rendernodeutils_setmarknodegroup) | - | 标记是否优先绘制该节点及其子节点。 |
+| [int32_t OH_ArkUI_RenderNodeUtils_SetMarkNodeGroup(ArkUI_RenderNodeHandle node, bool markNodeGroup)](#oh_arkui_rendernodeutils_setmarknodegroup) | - | 设置是否将目标节点及其子树组成节点组。 |
 | [int32_t OH_ArkUI_RenderNodeUtils_SetBounds(ArkUI_RenderNodeHandle node, int32_t x, int32_t y, int32_t width, int32_t height)](#oh_arkui_rendernodeutils_setbounds) | - | 为渲染节点设置边界。 |
 | [int32_t OH_ArkUI_RenderNodeUtils_GetBounds(ArkUI_RenderNodeHandle node, int32_t* x, int32_t* y, int32_t* width, int32_t* height)](#oh_arkui_rendernodeutils_getbounds) | - | 获取渲染节点的边界。 |
 | [int32_t OH_ArkUI_RenderNodeUtils_SetDrawRegion(ArkUI_RenderNodeHandle node, float x, float y, float w, float h)](#oh_arkui_rendernodeutils_setdrawregion) | - | 为渲染节点设置绘制区域。 |
@@ -147,31 +148,31 @@ synced_at: "2026-07-09T00:58:37.420666"
 | [int32_t OH_ArkUI_RenderNodeUtils_SetColorAnimatablePropertyValue(ArkUI_ColorAnimatablePropertyHandle property, uint32_t value)](#oh_arkui_rendernodeutils_setcoloranimatablepropertyvalue) | - | 设置可动画的颜色属性的值。 |
 | [int32_t OH_ArkUI_RenderNodeUtils_GetColorAnimatablePropertyValue(ArkUI_ColorAnimatablePropertyHandle property, uint32_t* value)](#oh_arkui_rendernodeutils_getcoloranimatablepropertyvalue) | - | 获取可动画的颜色属性的值。 |
 | [void OH_ArkUI_RenderNodeUtils_DisposeColorAnimatableProperty(ArkUI_ColorAnimatablePropertyHandle property)](#oh_arkui_rendernodeutils_disposecoloranimatableproperty) | - | 释放可动画的颜色属性。 |
-| [int32_t OH_ArkUI_RenderNodeUtils_SetContentModifierOnDraw(ArkUI_RenderContentModifierHandle modifier, void* userData, void (callback)(ArkUI_DrawContext* context, void userData))](#oh_arkui_rendernodeutils_setcontentmodifierondraw) | - | 设置内容修改器的onDraw函数。 |
+| [int32_t OH_ArkUI_RenderNodeUtils_SetContentModifierOnDraw(ArkUI_RenderContentModifierHandle modifier, void* userData, void (callback)(ArkUI_DrawContext* context, void userData))](#oh_arkui_rendernodeutils_setcontentmodifierondraw) | - | 设置内容修改器的onDraw回调。 |
 | [ArkUI_RectShapeOption* OH_ArkUI_RenderNodeUtils_CreateRectShapeOption()](#oh_arkui_rendernodeutils_createrectshapeoption) | - | 创建矩形形状。 |
 | [void OH_ArkUI_RenderNodeUtils_DisposeRectShapeOption(ArkUI_RectShapeOption* option)](#oh_arkui_rendernodeutils_disposerectshapeoption) | - | 释放矩形形状。 |
 | [void OH_ArkUI_RenderNodeUtils_SetRectShapeOptionEdgeValue(ArkUI_RectShapeOption* option, float edgeValue, ArkUI_EdgeDirection direction)](#oh_arkui_rendernodeutils_setrectshapeoptionedgevalue) | - | 设置矩形形状的边缘值。 |
 | [ArkUI_NodeBorderStyleOption* OH_ArkUI_RenderNodeUtils_CreateNodeBorderStyleOption()](#oh_arkui_rendernodeutils_createnodeborderstyleoption) | - | 创建节点边框样式。 |
 | [void OH_ArkUI_RenderNodeUtils_DisposeNodeBorderStyleOption(ArkUI_NodeBorderStyleOption* option)](#oh_arkui_rendernodeutils_disposenodeborderstyleoption) | - | 释放节点边框样式。 |
-| [void OH_ArkUI_RenderNodeUtils_SetNodeBorderStyleOptionEdgeStyle(ArkUI_NodeBorderStyleOption* option, ArkUI_BorderStyle edgeStyle, ArkUI_EdgeDirection direction)](#oh_arkui_rendernodeutils_setnodeborderstyleoptionedgestyle) | - | 设置节点边框样式的边缘值。 |
+| [void OH_ArkUI_RenderNodeUtils_SetNodeBorderStyleOptionEdgeStyle(ArkUI_NodeBorderStyleOption* option, ArkUI_BorderStyle edgeStyle, ArkUI_EdgeDirection direction)](#oh_arkui_rendernodeutils_setnodeborderstyleoptionedgestyle) | - | 设置节点边框的边缘样式。 |
 | [ArkUI_NodeBorderWidthOption* OH_ArkUI_RenderNodeUtils_CreateNodeBorderWidthOption()](#oh_arkui_rendernodeutils_createnodeborderwidthoption) | - | 创建节点边框宽度。 |
 | [void OH_ArkUI_RenderNodeUtils_DisposeNodeBorderWidthOption(ArkUI_NodeBorderWidthOption* option)](#oh_arkui_rendernodeutils_disposenodeborderwidthoption) | - | 释放节点边框宽度。 |
-| [void OH_ArkUI_RenderNodeUtils_SetNodeBorderWidthOptionEdgeWidth(ArkUI_NodeBorderWidthOption* option, float edgeWidth, ArkUI_EdgeDirection direction)](#oh_arkui_rendernodeutils_setnodeborderwidthoptionedgewidth) | - | 设置节点边框宽度的边缘值。 |
+| [void OH_ArkUI_RenderNodeUtils_SetNodeBorderWidthOptionEdgeWidth(ArkUI_NodeBorderWidthOption* option, float edgeWidth, ArkUI_EdgeDirection direction)](#oh_arkui_rendernodeutils_setnodeborderwidthoptionedgewidth) | - | 设置节点边框的边缘宽度。 |
 | [ArkUI_NodeBorderColorOption* OH_ArkUI_RenderNodeUtils_CreateNodeBorderColorOption()](#oh_arkui_rendernodeutils_createnodebordercoloroption) | - | 创建节点边框颜色。 |
 | [void OH_ArkUI_RenderNodeUtils_DisposeNodeBorderColorOption(ArkUI_NodeBorderColorOption* option)](#oh_arkui_rendernodeutils_disposenodebordercoloroption) | - | 释放节点边框颜色。 |
-| [void OH_ArkUI_RenderNodeUtils_SetNodeBorderColorOptionEdgeColor(ArkUI_NodeBorderColorOption* option, uint32_t edgeColor, ArkUI_EdgeDirection direction)](#oh_arkui_rendernodeutils_setnodebordercoloroptionedgecolor) | - | 设置节点边框颜色的边缘值。 |
+| [void OH_ArkUI_RenderNodeUtils_SetNodeBorderColorOptionEdgeColor(ArkUI_NodeBorderColorOption* option, uint32_t edgeColor, ArkUI_EdgeDirection direction)](#oh_arkui_rendernodeutils_setnodebordercoloroptionedgecolor) | - | 设置节点边框的边缘颜色。 |
 | [ArkUI_NodeBorderRadiusOption* OH_ArkUI_RenderNodeUtils_CreateNodeBorderRadiusOption()](#oh_arkui_rendernodeutils_createnodeborderradiusoption) | - | 创建节点边框半径。 |
 | [void OH_ArkUI_RenderNodeUtils_DisposeNodeBorderRadiusOption(ArkUI_NodeBorderRadiusOption* option)](#oh_arkui_rendernodeutils_disposenodeborderradiusoption) | - | 释放节点边框半径。 |
-| [void OH_ArkUI_RenderNodeUtils_SetNodeBorderRadiusOptionCornerRadius(ArkUI_NodeBorderRadiusOption* option, uint32_t cornerRadius, ArkUI_CornerDirection direction)](#oh_arkui_rendernodeutils_setnodeborderradiusoptioncornerradius) | - | 设置节点边框半径的边缘值。 |
+| [void OH_ArkUI_RenderNodeUtils_SetNodeBorderRadiusOptionCornerRadius(ArkUI_NodeBorderRadiusOption* option, uint32_t cornerRadius, ArkUI_CornerDirection direction)](#oh_arkui_rendernodeutils_setnodeborderradiusoptioncornerradius) | - | 设置节点指定角的边框半径。 |
 | [ArkUI_CircleShapeOption* OH_ArkUI_RenderNodeUtils_CreateCircleShapeOption()](#oh_arkui_rendernodeutils_createcircleshapeoption) | - | 创建圆形形状。 |
 | [void OH_ArkUI_RenderNodeUtils_DisposeCircleShapeOption(ArkUI_CircleShapeOption* option)](#oh_arkui_rendernodeutils_disposecircleshapeoption) | - | 释放圆形形状。 |
-| [void OH_ArkUI_RenderNodeUtils_SetCircleShapeOptionCenterX(ArkUI_CircleShapeOption* option, float centerX)](#oh_arkui_rendernodeutils_setcircleshapeoptioncenterx) | - | 设置圆形形状的圆心x轴坐标值。 |
-| [void OH_ArkUI_RenderNodeUtils_SetCircleShapeOptionCenterY(ArkUI_CircleShapeOption* option, float centerY)](#oh_arkui_rendernodeutils_setcircleshapeoptioncentery) | - | 设置圆形形状的圆心y轴坐标值。 |
+| [void OH_ArkUI_RenderNodeUtils_SetCircleShapeOptionCenterX(ArkUI_CircleShapeOption* option, float centerX)](#oh_arkui_rendernodeutils_setcircleshapeoptioncenterx) | - | 设置圆形形状的圆心X轴坐标值。 |
+| [void OH_ArkUI_RenderNodeUtils_SetCircleShapeOptionCenterY(ArkUI_CircleShapeOption* option, float centerY)](#oh_arkui_rendernodeutils_setcircleshapeoptioncentery) | - | 设置圆形形状的圆心Y轴坐标值。 |
 | [void OH_ArkUI_RenderNodeUtils_SetCircleShapeOptionRadius(ArkUI_CircleShapeOption* option, float radius)](#oh_arkui_rendernodeutils_setcircleshapeoptionradius) | - | 设置圆形形状的半径值。 |
 | [ArkUI_RoundRectShapeOption* OH_ArkUI_RenderNodeUtils_CreateRoundRectShapeOption()](#oh_arkui_rendernodeutils_createroundrectshapeoption) | - | 创建圆角矩形形状。 |
 | [void OH_ArkUI_RenderNodeUtils_DisposeRoundRectShapeOption(ArkUI_RoundRectShapeOption* option)](#oh_arkui_rendernodeutils_disposeroundrectshapeoption) | - | 释放圆角矩形形状。 |
 | [void OH_ArkUI_RenderNodeUtils_SetRoundRectShapeOptionEdgeValue(ArkUI_RoundRectShapeOption* option, float edgeValue, ArkUI_EdgeDirection direction)](#oh_arkui_rendernodeutils_setroundrectshapeoptionedgevalue) | - | 设置圆角矩形形状的边缘值。 |
-| [void OH_ArkUI_RenderNodeUtils_SetRoundRectShapeOptionCornerXY(ArkUI_RoundRectShapeOption* option, float x, float y, ArkUI_CornerDirection direction)](#oh_arkui_rendernodeutils_setroundrectshapeoptioncornerxy) | - | 设置目标角的坐标值。 |
+| [void OH_ArkUI_RenderNodeUtils_SetRoundRectShapeOptionCornerXY(ArkUI_RoundRectShapeOption* option, float x, float y, ArkUI_CornerDirection direction)](#oh_arkui_rendernodeutils_setroundrectshapeoptioncornerxy) | - | 设置指定角的X轴和Y轴圆角半径。 |
 | [ArkUI_CommandPathOption* OH_ArkUI_RenderNodeUtils_CreateCommandPathOption()](#oh_arkui_rendernodeutils_createcommandpathoption) | - | 创建自定义绘制路径。 |
 | [void OH_ArkUI_RenderNodeUtils_DisposeCommandPathOption(ArkUI_CommandPathOption* option)](#oh_arkui_rendernodeutils_disposecommandpathoption) | - | 释放自定义绘制路径。 |
 | [void OH_ArkUI_RenderNodeUtils_SetCommandPathOptionCommands(ArkUI_CommandPathOption* option, char* commands)](#oh_arkui_rendernodeutils_setcommandpathoptioncommands) | - | 设置自定义绘制路径的命令值。 |
@@ -190,8 +191,20 @@ synced_at: "2026-07-09T00:58:37.420666"
 | [ArkUI_RenderNodeClipOption* OH_ArkUI_RenderNodeUtils_CreateRenderNodeClipOptionFromOvalShape(ArkUI_RectShapeOption* shape)](#oh_arkui_rendernodeutils_createrendernodeclipoptionfromovalshape) | - | 从椭圆形形状创建裁剪。 |
 | [ArkUI_RenderNodeClipOption* OH_ArkUI_RenderNodeUtils_CreateRenderNodeClipOptionFromCommandPath(ArkUI_CommandPathOption* path)](#oh_arkui_rendernodeutils_createrendernodeclipoptionfromcommandpath) | - | 从自定义绘制路径创建裁剪。 |
 | [void OH_ArkUI_RenderNodeUtils_DisposeRenderNodeClipOption(ArkUI_RenderNodeClipOption* option)](#oh_arkui_rendernodeutils_disposerendernodeclipoption) | - | 释放渲染节点裁剪。 |
-| [void OH_ArkUI_RenderNodeUtils_SetRectShapeOptionValue(ArkUI_RectShapeOption* option, float x, float y, float width, float height)](#oh_arkui_rendernodeutils_setrectshapeoptionvalue) | - | 为矩形形状选项设置边框矩形范围。该函数通过指定位置和尺寸来定义矩形的几何框架。 |
-| [void OH_ArkUI_RenderNodeUtils_SetRoundRectShapeOptionValue(ArkUI_RoundRectShapeOption* option, float x, float y, float width, float height)](#oh_arkui_rendernodeutils_setroundrectshapeoptionvalue) | - | 为圆角矩形形状选项设置边框矩形范围。该函数通过指定位置和尺寸来定义圆角矩形的几何框架。 |
+| [void OH_ArkUI_RenderNodeUtils_SetRectShapeOptionValue(ArkUI_RectShapeOption* option, float x, float y, float width, float height)](#oh_arkui_rendernodeutils_setrectshapeoptionvalue) | - | 设置矩形形状选项的边框矩形范围。 |
+| [void OH_ArkUI_RenderNodeUtils_SetRoundRectShapeOptionValue(ArkUI_RoundRectShapeOption* option, float x, float y, float width, float height)](#oh_arkui_rendernodeutils_setroundrectshapeoptionvalue) | - | 设置圆角矩形形状选项的边框矩形范围。 |
+| [ArkUI_RenderBlurStyleOption* OH_ArkUI_RenderNodeUtils_CreateBlurStyleOption()](#oh_arkui_rendernodeutils_createblurstyleoption) | - | 创建一个模糊样式对象。 |
+| [void OH_ArkUI_RenderNodeUtils_DisposeBlurStyleOption(ArkUI_RenderBlurStyleOption* option)](#oh_arkui_rendernodeutils_disposeblurstyleoption) | - | 销毁一个模糊样式对象。 |
+| [int32_t OH_ArkUI_RenderNodeUtils_SetBlurStyleOptionRadius(ArkUI_RenderBlurStyleOption* option, float radius)](#oh_arkui_rendernodeutils_setblurstyleoptionradius) | - | 为目标模糊样式设置模糊半径。 |
+| [int32_t OH_ArkUI_RenderNodeUtils_SetBackgroundBlurOption(ArkUI_RenderNodeHandle node, ArkUI_RenderBlurStyleOption* option)](#oh_arkui_rendernodeutils_setbackgroundbluroption) | - | 为渲染节点设置背景模糊样式，适用于模糊节点背后内容的场景。 |
+| [int32_t OH_ArkUI_RenderNodeUtils_ResetBackgroundBlurOption(ArkUI_RenderNodeHandle node)](#oh_arkui_rendernodeutils_resetbackgroundbluroption) | - | 为渲染节点重置背景模糊样式。 |
+| [int32_t OH_ArkUI_RenderNodeUtils_SetForegroundBlurOption(ArkUI_RenderNodeHandle node, ArkUI_RenderBlurStyleOption* option)](#oh_arkui_rendernodeutils_setforegroundbluroption) | - | 为渲染节点设置前景模糊样式，适用于模糊节点前景层的场景。 |
+| [int32_t OH_ArkUI_RenderNodeUtils_ResetForegroundBlurOption(ArkUI_RenderNodeHandle node)](#oh_arkui_rendernodeutils_resetforegroundbluroption) | - | 为渲染节点重置前景模糊样式。 |
+| [int32_t OH_ArkUI_RenderNodeUtils_SetContentBlurOption(ArkUI_RenderNodeHandle node, ArkUI_RenderBlurStyleOption* option)](#oh_arkui_rendernodeutils_setcontentbluroption) | - | 为渲染节点设置内容模糊样式，适用于模糊节点自身绘制内容的场景。 |
+| [int32_t OH_ArkUI_RenderNodeUtils_ResetContentBlurOption(ArkUI_RenderNodeHandle node)](#oh_arkui_rendernodeutils_resetcontentbluroption) | - | 为渲染节点重置内容模糊样式。 |
+| [ArkUI_ErrorCode OH_ArkUI_RenderNodeUtils_InsertRenderNodeAt(ArkUI_NodeHandle node, ArkUI_RenderNodeHandle child, int32_t position)](#oh_arkui_rendernodeutils_insertrendernodeat) | - | 在父自定义节点下的指定位置插入子渲染节点。 |
+| [ArkUI_ErrorCode OH_ArkUI_RenderNodeUtils_GetRenderNodeChildrenCount(ArkUI_NodeHandle node, int32_t* count)](#oh_arkui_rendernodeutils_getrendernodechildrencount) | - | 获取父自定义节点在混合挂载顺序中的全部子节点数量。 |
+| [ArkUI_ErrorCode OH_ArkUI_RenderNodeUtils_GetRenderNodeAt(ArkUI_NodeHandle node, int32_t position, ArkUI_RenderNodeHandle* child)](#oh_arkui_rendernodeutils_getrendernodeat) | - | 获取父自定义节点在混合挂载顺序中指定位置子节点对应的渲染节点句柄。 |
 
 #### 函数说明
 
@@ -204,7 +217,7 @@ int32_t OH_ArkUI_RenderNodeUtils_AddRenderNode(ArkUI_NodeHandle node, ArkUI_Rend
 
 向父自定义节点添加子渲染节点。
 
-父节点仅支持[ArkUI_NodeType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#arkui_nodetype)中ARKUI_NODE_CUSTOM类型的节点，每个自定义节点只能挂载一个ArkUI_RenderNodeHandle，customNode无法挂载其他ArkUI_NodeHandle。
+父节点仅支持[ArkUI_NodeType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#arkui_nodetype)中ARKUI_NODE_CUSTOM类型的节点。默认使用[OH_ARKUI_NODE_MOUNT_POLICY_SINGLE_IF_RENDER_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#oh_arkui_nodemountpolicy)挂载策略时，自定义节点只能挂载一个子渲染节点，且不能同时挂载其他类型的子节点。从API版本26.0.0开始，可通过[OH_ArkUI_NativeModule_SetChildMountPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#oh_arkui_nativemodule_setchildmountpolicy)将挂载策略设置为OH_ARKUI_NODE_MOUNT_POLICY_MIXED，以支持混合挂载多个子节点。
 
 起始版本： 20
 
@@ -219,7 +232,7 @@ int32_t OH_ArkUI_RenderNodeUtils_AddRenderNode(ArkUI_NodeHandle node, ArkUI_Rend
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_NOT_CUSTOM_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点非自定义节点。 [ARKUI_ERROR_CODE_CHILD_EXISTED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点已存在子节点。 [ARKUI_ERROR_CODE_RENDER_PARENT_EXISTED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标渲染节点存在父节点。 [ARKUI_ERROR_CODE_RENDER_HAS_INVALID_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 当前渲染节点从FrameNode中获取且该FrameNode已被取消接纳为附属节点或销毁。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_NOT_CUSTOM_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点非自定义节点。 [ARKUI_ERROR_CODE_CHILD_EXISTED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 使用非OH_ARKUI_NODE_MOUNT_POLICY_MIXED挂载策略时，父节点已有子节点。 [ARKUI_ERROR_CODE_RENDER_PARENT_EXISTED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标渲染节点存在父节点。 [ARKUI_ERROR_CODE_RENDER_HAS_INVALID_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 当前渲染节点从FrameNode中获取且该FrameNode已被取消接纳为附属节点或销毁。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_RemoveRenderNode()
 
@@ -229,6 +242,8 @@ int32_t OH_ArkUI_RenderNodeUtils_RemoveRenderNode(ArkUI_NodeHandle node, ArkUI_R
  描述：
 
 从父节点移除指定的子渲染节点。
+
+父节点仅支持[ArkUI_NodeType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#arkui_nodetype)中ARKUI_NODE_CUSTOM类型的节点。
 
 起始版本： 20
 
@@ -243,7 +258,7 @@ int32_t OH_ArkUI_RenderNodeUtils_RemoveRenderNode(ArkUI_NodeHandle node, ArkUI_R
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_NOT_CUSTOM_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点非自定义节点。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_NOT_CUSTOM_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点非自定义节点。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_ClearRenderNodeChildren()
 
@@ -253,6 +268,8 @@ int32_t OH_ArkUI_RenderNodeUtils_ClearRenderNodeChildren(ArkUI_NodeHandle node)
  描述：
 
 清除父节点内的子渲染节点。
+
+父节点仅支持[ArkUI_NodeType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#arkui_nodetype)中ARKUI_NODE_CUSTOM类型的节点。
 
 起始版本： 20
 
@@ -266,7 +283,7 @@ int32_t OH_ArkUI_RenderNodeUtils_ClearRenderNodeChildren(ArkUI_NodeHandle node)
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_NOT_CUSTOM_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点非自定义节点。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_NOT_CUSTOM_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点非自定义节点。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_Invalidate()
 
@@ -289,7 +306,7 @@ int32_t OH_ArkUI_RenderNodeUtils_Invalidate(ArkUI_NodeHandle node)
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_CreateNode()
 
@@ -299,6 +316,8 @@ ArkUI_RenderNodeHandle OH_ArkUI_RenderNodeUtils_CreateNode()
  描述：
 
 创建渲染节点。
+
+使用完毕后调用[OH_ArkUI_RenderNodeUtils_DisposeNode](#oh_arkui_rendernodeutils_disposenode)销毁并释放资源。
 
 起始版本： 20
 
@@ -329,7 +348,7 @@ int32_t OH_ArkUI_RenderNodeUtils_DisposeNode(ArkUI_RenderNodeHandle node)
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_AddChild()
 
@@ -353,7 +372,7 @@ int32_t OH_ArkUI_RenderNodeUtils_AddChild(ArkUI_RenderNodeHandle node, ArkUI_Ren
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 [ARKUI_ERROR_CODE_RENDER_HAS_INVALID_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 当前渲染节点从FrameNode中获取且该FrameNode已被取消接纳为附属节点或销毁。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 [ARKUI_ERROR_CODE_RENDER_HAS_INVALID_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 当前渲染节点从FrameNode中获取且该FrameNode已被取消接纳为附属节点或销毁。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_InsertChildAfter()
 
@@ -377,7 +396,7 @@ int32_t OH_ArkUI_RenderNodeUtils_InsertChildAfter(ArkUI_RenderNodeHandle node, A
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 [ARKUI_ERROR_CODE_RENDER_HAS_INVALID_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 当前渲染节点从FrameNode中获取且该FrameNode已被取消接纳为附属节点或销毁。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 [ARKUI_ERROR_CODE_RENDER_HAS_INVALID_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 当前渲染节点从FrameNode中获取且该FrameNode已被取消接纳为附属节点或销毁。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_RemoveChild()
 
@@ -401,7 +420,7 @@ int32_t OH_ArkUI_RenderNodeUtils_RemoveChild(ArkUI_RenderNodeHandle node, ArkUI_
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_ClearChildren()
 
@@ -424,7 +443,7 @@ int32_t OH_ArkUI_RenderNodeUtils_ClearChildren(ArkUI_RenderNodeHandle node)
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetChild()
 
@@ -442,14 +461,14 @@ int32_t OH_ArkUI_RenderNodeUtils_GetChild(ArkUI_RenderNodeHandle node, int32_t i
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) node | 目标父渲染节点。 |
-| int32_t index | 子节点的从零开始的索引。 |
+| int32_t index | 子节点索引，取值范围为[0, 子节点数量-1]。index小于0时返回[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)；index大于等于子节点数量时返回[ARKUI_ERROR_CODE_RENDER_CHILD_NOT_EXIST](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
 | [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle)* child | 用于接收子节点的渲染节点指针。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_CHILD_NOT_EXIST](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 未找到对应的渲染子节点。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_CHILD_NOT_EXIST](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 未找到对应的渲染子节点。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetFirstChild()
 
@@ -473,7 +492,7 @@ int32_t OH_ArkUI_RenderNodeUtils_GetFirstChild(ArkUI_RenderNodeHandle node, ArkU
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_CHILD_NOT_EXIST](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 未找到对应的渲染子节点。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_CHILD_NOT_EXIST](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 未找到对应的渲染子节点。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetNextSibling()
 
@@ -497,7 +516,7 @@ int32_t OH_ArkUI_RenderNodeUtils_GetNextSibling(ArkUI_RenderNodeHandle node, Ark
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_CHILD_NOT_EXIST](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 未找到对应的渲染子节点。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_CHILD_NOT_EXIST](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 未找到对应的渲染子节点。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetPreviousSibling()
 
@@ -521,7 +540,7 @@ int32_t OH_ArkUI_RenderNodeUtils_GetPreviousSibling(ArkUI_RenderNodeHandle node,
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_CHILD_NOT_EXIST](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 未找到对应的渲染子节点。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_CHILD_NOT_EXIST](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 未找到对应的渲染子节点。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetChildren()
 
@@ -530,7 +549,9 @@ int32_t OH_ArkUI_RenderNodeUtils_GetChildren(ArkUI_RenderNodeHandle node, ArkUI_
 ```
  描述：
 
-获取父渲染节点的所有子渲染节点，调用者负责释放返回的子节点数组。
+获取父渲染节点的所有子渲染节点。
+
+调用者负责释放返回的子节点数组。
 
 起始版本： 20
 
@@ -546,7 +567,7 @@ int32_t OH_ArkUI_RenderNodeUtils_GetChildren(ArkUI_RenderNodeHandle node, ArkUI_
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetChildrenCount()
 
@@ -570,7 +591,7 @@ int32_t OH_ArkUI_RenderNodeUtils_GetChildrenCount(ArkUI_RenderNodeHandle node, i
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_SetBackgroundColor()
 
@@ -594,7 +615,7 @@ int32_t OH_ArkUI_RenderNodeUtils_SetBackgroundColor(ArkUI_RenderNodeHandle node,
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetBackgroundColor()
 
@@ -618,7 +639,7 @@ int32_t OH_ArkUI_RenderNodeUtils_GetBackgroundColor(ArkUI_RenderNodeHandle node,
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_SetClipToFrame()
 
@@ -627,7 +648,9 @@ int32_t OH_ArkUI_RenderNodeUtils_SetClipToFrame(ArkUI_RenderNodeHandle node, int
 ```
  描述：
 
-设置是否对当前渲染节点裁剪。
+设置是否按当前渲染节点的frame区域裁剪。
+
+frame区域由节点大小和位置确定。与[OH_ArkUI_RenderNodeUtils_SetClipToBounds](#oh_arkui_rendernodeutils_setcliptobounds)按节点边界裁剪（配置圆角时使用圆角边界）不同，本接口始终使用frame矩形；如需按自定义形状裁剪，请使用[OH_ArkUI_RenderNodeUtils_SetClip](#oh_arkui_rendernodeutils_setclip)。设置为1时，超出裁剪区域的内容会被截断。
 
 起始版本： 20
 
@@ -636,13 +659,13 @@ int32_t OH_ArkUI_RenderNodeUtils_SetClipToFrame(ArkUI_RenderNodeHandle node, int
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) node | 目标渲染节点。 |
-| int32_t clipToFrame | 整数（1 = 裁剪到框架，0 = 不裁剪）。 默认值：0。 |
+| int32_t clipToFrame | 是否按frame区域裁剪。 1：裁剪；0：不裁剪。 默认值：0。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_PARAM_OUT_OF_RANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 参数值超出范围。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_PARAM_OUT_OF_RANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 参数值超出范围。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetClipToFrame()
 
@@ -651,7 +674,7 @@ int32_t OH_ArkUI_RenderNodeUtils_GetClipToFrame(ArkUI_RenderNodeHandle node, int
 ```
  描述：
 
-获取是否对当前渲染节点裁剪。
+获取是否按当前渲染节点的frame区域裁剪。
 
 起始版本： 20
 
@@ -660,13 +683,13 @@ int32_t OH_ArkUI_RenderNodeUtils_GetClipToFrame(ArkUI_RenderNodeHandle node, int
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) node | 目标渲染节点。 |
-| int32_t* clipToFrame | 用于接收裁剪状态（1 或 0）的整数指针。 默认值：0。 |
+| int32_t* clipToFrame | 用于接收是否按frame区域裁剪的状态值。 1：裁剪；0：不裁剪。 默认值：0。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_SetClipToBounds()
 
@@ -675,7 +698,9 @@ int32_t OH_ArkUI_RenderNodeUtils_SetClipToBounds(ArkUI_RenderNodeHandle node, in
 ```
  描述：
 
-设置是否对当前渲染节点边界裁剪。
+设置是否按当前渲染节点的边界裁剪。
+
+节点配置圆角时，使用圆角边界；设置为1时，超出裁剪区域的内容会被截断。
 
 起始版本： 20
 
@@ -684,13 +709,13 @@ int32_t OH_ArkUI_RenderNodeUtils_SetClipToBounds(ArkUI_RenderNodeHandle node, in
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) node | 目标渲染节点。 |
-| int32_t clipToBounds | 裁剪标志（1：裁剪到边界，0：不裁剪）。 默认值：0。 |
+| int32_t clipToBounds | 是否按节点边界裁剪。 1：裁剪；0：不裁剪。 默认值：0。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_PARAM_OUT_OF_RANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 参数值超出范围。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_PARAM_OUT_OF_RANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 参数值超出范围。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetClipToBounds()
 
@@ -699,7 +724,9 @@ int32_t OH_ArkUI_RenderNodeUtils_GetClipToBounds(ArkUI_RenderNodeHandle node, in
 ```
  描述：
 
-获取是否对当前渲染节点边界裁剪。
+获取是否按当前渲染节点的边界裁剪。
+
+节点配置圆角时，使用圆角边界。
 
 起始版本： 20
 
@@ -708,13 +735,13 @@ int32_t OH_ArkUI_RenderNodeUtils_GetClipToBounds(ArkUI_RenderNodeHandle node, in
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) node | 目标渲染节点。 |
-| int32_t* clipToBounds | 整数指针（1 = 根据边界裁剪，0 = 不裁剪）。 默认值：0。 |
+| int32_t* clipToBounds | 用于接收是否按节点边界裁剪的状态值。 1：裁剪；0：不裁剪。 默认值：0。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_SetOpacity()
 
@@ -738,7 +765,7 @@ int32_t OH_ArkUI_RenderNodeUtils_SetOpacity(ArkUI_RenderNodeHandle node, float o
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_PARAM_OUT_OF_RANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 参数值超出范围。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_PARAM_OUT_OF_RANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 参数值超出范围。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetOpacity()
 
@@ -762,7 +789,7 @@ int32_t OH_ArkUI_RenderNodeUtils_GetOpacity(ArkUI_RenderNodeHandle node, float* 
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_SetSize()
 
@@ -780,14 +807,14 @@ int32_t OH_ArkUI_RenderNodeUtils_SetSize(ArkUI_RenderNodeHandle node, int32_t wi
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) node | 目标渲染节点。 |
-| int32_t width | 宽度值（以像素为单位）。 默认值：0，单位：px。取值大于等于0，传入负值时返回[ARKUI_ERROR_CODE_PARAM_OUT_OF_RANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode)。 |
-| int32_t height | 高度值（以像素为单位）。 默认值：0，单位：px。取值大于等于0，传入负值时返回[ARKUI_ERROR_CODE_PARAM_OUT_OF_RANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode)。 |
+| int32_t width | 宽度值，单位：px。 默认值：0。取值大于等于0，传入负值时返回[ARKUI_ERROR_CODE_PARAM_OUT_OF_RANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
+| int32_t height | 高度值，单位：px。 默认值：0。取值大于等于0，传入负值时返回[ARKUI_ERROR_CODE_PARAM_OUT_OF_RANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_PARAM_OUT_OF_RANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 参数值超出范围。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_PARAM_OUT_OF_RANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 参数值超出范围。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetSize()
 
@@ -805,14 +832,14 @@ int32_t OH_ArkUI_RenderNodeUtils_GetSize(ArkUI_RenderNodeHandle node, int32_t* w
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) node | 目标渲染节点。 |
-| int32_t* width | 用于接收宽度值（以像素为单位）的指针。 默认值：0，单位：px。 |
-| int32_t* height | 用于接收高度值（以像素为单位）的指针。 默认值：0，单位：px。 |
+| int32_t* width | 用于接收宽度值的指针，单位：px，接收值的取值范围为[0, INT_MAX]。 默认值：0。 |
+| int32_t* height | 用于接收高度值的指针，单位：px，接收值的取值范围为[0, INT_MAX]。 默认值：0。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_SetPosition()
 
@@ -837,7 +864,7 @@ int32_t OH_ArkUI_RenderNodeUtils_SetPosition(ArkUI_RenderNodeHandle node, int32_
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetPosition()
 
@@ -846,7 +873,7 @@ int32_t OH_ArkUI_RenderNodeUtils_GetPosition(ArkUI_RenderNodeHandle node, int32_
 ```
  描述：
 
-获取渲染节点的位置坐标。该坐标是渲染节点布局后相对父节点的位置偏移，单位为px。该坐标是父节点对该节点进行布局之后的结果，因此布局之后生效的offset属性和不参与布局的position属性不影响该坐标。
+获取渲染节点的位置坐标。该坐标是父节点布局该节点后得到的、相对父节点的位置偏移，单位为px；布局后生效的offset属性和不参与布局的position属性不影响该坐标。
 
 起始版本： 20
 
@@ -862,7 +889,7 @@ int32_t OH_ArkUI_RenderNodeUtils_GetPosition(ArkUI_RenderNodeHandle node, int32_
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_SetPivot()
 
@@ -880,14 +907,14 @@ int32_t OH_ArkUI_RenderNodeUtils_SetPivot(ArkUI_RenderNodeHandle node, float x, 
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) node | 目标渲染节点。 |
-| float x | 中心点的X坐标（标准取值范围：0.0-1.0）。 默认值：0.5。 |
-| float y | 中心点的Y坐标（标准取值范围：0.0-1.0）。 默认值：0.5。 |
+| float x | 中心点归一化X坐标，标准取值范围为[0.0, 1.0]。接口不校验该范围，超出范围时仍按传入值设置。 默认值：0.5。 |
+| float y | 中心点归一化Y坐标，标准取值范围为[0.0, 1.0]。接口不校验该范围，超出范围时仍按传入值设置。 默认值：0.5。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetPivot()
 
@@ -912,7 +939,7 @@ int32_t OH_ArkUI_RenderNodeUtils_GetPivot(ArkUI_RenderNodeHandle node, float* x,
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_SetScale()
 
@@ -937,7 +964,7 @@ int32_t OH_ArkUI_RenderNodeUtils_SetScale(ArkUI_RenderNodeHandle node, float x, 
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetScale()
 
@@ -962,7 +989,7 @@ int32_t OH_ArkUI_RenderNodeUtils_GetScale(ArkUI_RenderNodeHandle node, float* x,
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_SetTranslation()
 
@@ -987,7 +1014,7 @@ int32_t OH_ArkUI_RenderNodeUtils_SetTranslation(ArkUI_RenderNodeHandle node, flo
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetTranslation()
 
@@ -1005,14 +1032,14 @@ int32_t OH_ArkUI_RenderNodeUtils_GetTranslation(ArkUI_RenderNodeHandle node, flo
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) node | 目标渲染节点。 |
-| float* x | 用于接收水平平移量的指针。 默认值：0。 |
-| float* y | 用于接收垂直平移量的指针。 默认值：0。 |
+| float* x | 用于接收水平平移量的指针，单位：px。 默认值：0。 |
+| float* y | 用于接收垂直平移量的指针，单位：px。 默认值：0。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_SetRotation()
 
@@ -1038,7 +1065,7 @@ int32_t OH_ArkUI_RenderNodeUtils_SetRotation(ArkUI_RenderNodeHandle node, float 
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetRotation()
 
@@ -1064,7 +1091,7 @@ int32_t OH_ArkUI_RenderNodeUtils_GetRotation(ArkUI_RenderNodeHandle node, float*
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_SetTransform()
 
@@ -1074,6 +1101,8 @@ int32_t OH_ArkUI_RenderNodeUtils_SetTransform(ArkUI_RenderNodeHandle node, float
  描述：
 
 为渲染节点设置变换矩阵。
+
+该接口用于通过一个4x4矩阵统一控制渲染节点的缩放、旋转、平移、倾斜和透视投影效果。
 
 起始版本： 20
 
@@ -1129,7 +1158,7 @@ m30, m31, m32, m33]
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_PARAM_OUT_OF_RANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 参数超出范围。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_PARAM_OUT_OF_RANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 参数超出范围。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_SetShadowColor()
 
@@ -1153,7 +1182,7 @@ int32_t OH_ArkUI_RenderNodeUtils_SetShadowColor(ArkUI_RenderNodeHandle node, uin
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetShadowColor()
 
@@ -1171,13 +1200,13 @@ int32_t OH_ArkUI_RenderNodeUtils_GetShadowColor(ArkUI_RenderNodeHandle node, uin
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) node | 目标渲染节点。 |
-| uint32_t* color | 用于存储获取到的ARGB颜色值的整数指针。 默认值：0xFF000000。 **颜色字节布局说明：** - 位24-31：Alpha通道（0x00完全透明，0xFF完全不透明）。 - 位16-23：红色通道。 - 位8-15：绿色通道。 - 位0-7：蓝色通道。 |
+| uint32_t* color | 用于接收ARGB颜色值的整数指针。未设置阴影颜色时，接收值为0x00000000（完全透明）。 **颜色字节布局说明：** - 位24-31：Alpha通道（0x00完全透明，0xFF完全不透明）。 - 位16-23：红色通道。 - 位8-15：绿色通道。 - 位0-7：蓝色通道。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_SetShadowOffset()
 
@@ -1202,7 +1231,7 @@ int32_t OH_ArkUI_RenderNodeUtils_SetShadowOffset(ArkUI_RenderNodeHandle node, in
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetShadowOffset()
 
@@ -1227,7 +1256,7 @@ int32_t OH_ArkUI_RenderNodeUtils_GetShadowOffset(ArkUI_RenderNodeHandle node, in
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_SetShadowAlpha()
 
@@ -1245,13 +1274,13 @@ int32_t OH_ArkUI_RenderNodeUtils_SetShadowAlpha(ArkUI_RenderNodeHandle node, flo
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) node | 目标渲染节点。 |
-| float alpha | 阴影 Alpha 值（0.0-1.0）。 默认值：0。 |
+| float alpha | 阴影Alpha值，取值范围为[0.0, 1.0]。传入范围外的值时返回[ARKUI_ERROR_CODE_PARAM_OUT_OF_RANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_PARAM_OUT_OF_RANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 参数超出范围。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_PARAM_OUT_OF_RANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 参数超出范围。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetShadowAlpha()
 
@@ -1269,13 +1298,13 @@ int32_t OH_ArkUI_RenderNodeUtils_GetShadowAlpha(ArkUI_RenderNodeHandle node, flo
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) node | 目标渲染节点。 |
-| float* alpha | 用于接收阴影 Alpha 值的指针。 默认值：1。 |
+| float* alpha | 用于接收阴影Alpha值的指针。未设置阴影相关属性时，接收值为-1.0，表示未配置；设置阴影相关属性后，接收值的取值范围为[0.0, 1.0]。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_SetShadowElevation()
 
@@ -1293,13 +1322,13 @@ int32_t OH_ArkUI_RenderNodeUtils_SetShadowElevation(ArkUI_RenderNodeHandle node,
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) node | 目标渲染节点。 |
-| float elevation | 高度值。 默认值：0。 |
+| float elevation | 阴影高度值，单位：px。取值范围为[0, +∞)，传入负值时返回[ARKUI_ERROR_CODE_PARAM_OUT_OF_RANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 默认值：0。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_PARAM_OUT_OF_RANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 参数超出范围。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_PARAM_OUT_OF_RANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 参数超出范围。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetShadowElevation()
 
@@ -1317,13 +1346,13 @@ int32_t OH_ArkUI_RenderNodeUtils_GetShadowElevation(ArkUI_RenderNodeHandle node,
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) node | 目标渲染节点。 |
-| float* elevation | 用于接收高度值的指针。 默认值：0。 |
+| float* elevation | 用于接收阴影高度值的指针，单位：px，接收值的取值范围为[0, +∞)。未设置阴影高度时，接收值为0。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_SetShadowRadius()
 
@@ -1341,13 +1370,13 @@ int32_t OH_ArkUI_RenderNodeUtils_SetShadowRadius(ArkUI_RenderNodeHandle node, fl
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) node | 目标渲染节点。 |
-| float radius | 半径值。 默认值：0。取值大于等于0，传入负值时返回[ARKUI_ERROR_CODE_PARAM_OUT_OF_RANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode)。 |
+| float radius | 阴影半径，单位：px。取值范围为[0, +∞)，传入负值时返回[ARKUI_ERROR_CODE_PARAM_OUT_OF_RANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_PARAM_OUT_OF_RANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 参数超出范围。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_PARAM_OUT_OF_RANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 参数超出范围。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetShadowRadius()
 
@@ -1365,13 +1394,13 @@ int32_t OH_ArkUI_RenderNodeUtils_GetShadowRadius(ArkUI_RenderNodeHandle node, fl
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) node | 目标渲染节点。 |
-| float* radius | 用于接收半径值的指针。 默认值：0。 |
+| float* radius | 用于接收阴影半径值的指针，单位：px。设置阴影半径后，接收值的取值范围为[0, +∞)；未设置阴影半径时，API版本26.0.0之前接收值为0，从API版本26.0.0开始接收值为-1。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_SetBorderStyle()
 
@@ -1395,7 +1424,7 @@ int32_t OH_ArkUI_RenderNodeUtils_SetBorderStyle(ArkUI_RenderNodeHandle node, Ark
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetBorderStyle()
 
@@ -1419,7 +1448,7 @@ int32_t OH_ArkUI_RenderNodeUtils_GetBorderStyle(ArkUI_RenderNodeHandle node, Ark
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_SetBorderWidth()
 
@@ -1428,7 +1457,9 @@ int32_t OH_ArkUI_RenderNodeUtils_SetBorderWidth(ArkUI_RenderNodeHandle node, Ark
 ```
  描述：
 
-为渲染节点设置边框宽度，边框宽度需小于节点尺寸。
+为渲染节点设置边框宽度。
+
+边框宽度需小于节点尺寸。
 
 起始版本： 20
 
@@ -1443,7 +1474,7 @@ int32_t OH_ArkUI_RenderNodeUtils_SetBorderWidth(ArkUI_RenderNodeHandle node, Ark
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetBorderWidth()
 
@@ -1467,7 +1498,7 @@ int32_t OH_ArkUI_RenderNodeUtils_GetBorderWidth(ArkUI_RenderNodeHandle node, Ark
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_SetBorderColor()
 
@@ -1491,7 +1522,7 @@ int32_t OH_ArkUI_RenderNodeUtils_SetBorderColor(ArkUI_RenderNodeHandle node, Ark
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetBorderColor()
 
@@ -1515,7 +1546,7 @@ int32_t OH_ArkUI_RenderNodeUtils_GetBorderColor(ArkUI_RenderNodeHandle node, Ark
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_SetBorderRadius()
 
@@ -1533,13 +1564,13 @@ int32_t OH_ArkUI_RenderNodeUtils_SetBorderRadius(ArkUI_RenderNodeHandle node, Ar
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) node | 目标渲染节点。 |
-| [ArkUI_NodeBorderRadiusOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nodeborderradiusoption)* borderRadius | 边框半径的指针。 结构体指针内默认值：0。 |
+| [ArkUI_NodeBorderRadiusOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nodeborderradiusoption)* borderRadius | 边框半径的指针。 各角半径默认值均为0，单位：px。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetBorderRadius()
 
@@ -1557,13 +1588,13 @@ int32_t OH_ArkUI_RenderNodeUtils_GetBorderRadius(ArkUI_RenderNodeHandle node, Ar
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) node | 目标渲染节点。 |
-| [ArkUI_NodeBorderRadiusOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nodeborderradiusoption)** borderRadius | 用于接收边框半径的指针。 结构体指针内默认值：0。 |
+| [ArkUI_NodeBorderRadiusOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nodeborderradiusoption)** borderRadius | 用于接收边框半径的指针。 各角半径默认值均为0，单位：px。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_SetMask()
 
@@ -1573,6 +1604,8 @@ int32_t OH_ArkUI_RenderNodeUtils_SetMask(ArkUI_RenderNodeHandle node, ArkUI_Rend
  描述：
 
 使用遮罩配置为渲染节点应用遮罩。
+
+遮罩图层范围由节点边界确定，遮罩形状超出节点边界的部分不显示。调用[OH_ArkUI_RenderNodeUtils_SetDrawRegion](#oh_arkui_rendernodeutils_setdrawregion)不会扩大遮罩图层范围。
 
 遮罩创建方式如下：
 
@@ -1593,7 +1626,7 @@ int32_t OH_ArkUI_RenderNodeUtils_SetMask(ArkUI_RenderNodeHandle node, ArkUI_Rend
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_SetClip()
 
@@ -1603,6 +1636,8 @@ int32_t OH_ArkUI_RenderNodeUtils_SetClip(ArkUI_RenderNodeHandle node, ArkUI_Rend
  描述：
 
 使用裁剪配置为渲染节点应用裁剪。
+
+裁剪形状可超出节点边界；如需显示节点边界外的绘制内容，应调用[OH_ArkUI_RenderNodeUtils_SetDrawRegion](#oh_arkui_rendernodeutils_setdrawregion)设置覆盖该内容的绘制区域，最终显示仍受其他裁剪条件影响。
 
 起始版本： 20
 
@@ -1617,7 +1652,7 @@ int32_t OH_ArkUI_RenderNodeUtils_SetClip(ArkUI_RenderNodeHandle node, ArkUI_Rend
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_SetMarkNodeGroup()
 
@@ -1626,7 +1661,9 @@ int32_t OH_ArkUI_RenderNodeUtils_SetMarkNodeGroup(ArkUI_RenderNodeHandle node, b
 ```
  描述：
 
-标记是否优先绘制该节点及其子节点。
+设置是否将目标节点及其子树组成节点组。
+
+设置为true时，系统会生成包含该节点及其子树的离屏缓存，以复用绘制结果，适用于子树内容固定、仅对整体应用动效的场景。与截屏、模糊、亮度调节或混合操作同时使用时，可能出现显示异常或性能下降。
 
 起始版本： 20
 
@@ -1635,13 +1672,13 @@ int32_t OH_ArkUI_RenderNodeUtils_SetMarkNodeGroup(ArkUI_RenderNodeHandle node, b
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) node | 目标渲染节点。 |
-| bool markNodeGroup | 布尔值，是否优先绘制该节点及其子节点。 true：优先绘制节点及其子节点；false：不优先绘制节点及其子节点。 |
+| bool markNodeGroup | 是否将目标节点及其子树组成节点组。 true：组成节点组并进行离屏渲染；false：不组成节点组。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_SetBounds()
 
@@ -1661,14 +1698,14 @@ int32_t OH_ArkUI_RenderNodeUtils_SetBounds(ArkUI_RenderNodeHandle node, int32_t 
 | [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) node | 目标渲染节点。 |
 | int32_t x | 边界左上角的X坐标（以像素为单位）。 默认值：0。 |
 | int32_t y | 边界左上角的Y坐标（以像素为单位）。 默认值：0。 |
-| int32_t width | 边界的宽度（以像素为单位）。 默认值：0。取值大于等于0，传入负值时返回[ARKUI_ERROR_CODE_PARAM_OUT_OF_RANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode)。 |
-| int32_t height | 边界的高度（以像素为单位）。 默认值：0。取值大于等于0，传入负值时返回[ARKUI_ERROR_CODE_PARAM_OUT_OF_RANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode)。 |
+| int32_t width | 边界的宽度（以像素为单位）。 默认值：0。取值大于等于0，传入负值时返回[ARKUI_ERROR_CODE_PARAM_OUT_OF_RANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
+| int32_t height | 边界的高度（以像素为单位）。 默认值：0。取值大于等于0，传入负值时返回[ARKUI_ERROR_CODE_PARAM_OUT_OF_RANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_PARAM_OUT_OF_RANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 参数超出范围。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_PARAM_OUT_OF_RANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 参数超出范围。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetBounds()
 
@@ -1688,14 +1725,14 @@ int32_t OH_ArkUI_RenderNodeUtils_GetBounds(ArkUI_RenderNodeHandle node, int32_t*
 | [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) node | 目标渲染节点。 |
 | int32_t* x | 用于接收边界左上角X坐标（以像素为单位）的指针。 默认值：0。 |
 | int32_t* y | 用于接收边界左上角Y坐标（以像素为单位）的指针。 默认值：0。 |
-| int32_t* width | 用于接收边界宽度（以像素为单位）的指针。 默认值：0。 |
-| int32_t* height | 用于接收边界高度（以像素为单位）的指针。 默认值：0。 |
+| int32_t* width | 用于接收边界宽度（以像素为单位）的指针，接收值的取值范围为[0, INT_MAX]。 默认值：0。 |
+| int32_t* height | 用于接收边界高度（以像素为单位）的指针，接收值的取值范围为[0, INT_MAX]。 默认值：0。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_SetDrawRegion()
 
@@ -1704,7 +1741,9 @@ int32_t OH_ArkUI_RenderNodeUtils_SetDrawRegion(ArkUI_RenderNodeHandle node, floa
 ```
  描述：
 
-为渲染节点设置绘制区域，该绘制区域主要用于超出边界导致的绘制问题，建议根据实际绘制范围设置大小。
+为渲染节点设置绘制区域。
+
+该绘制区域由节点局部坐标系中的x、y、w、h定义。该区域与节点自身范围合并，参与节点绘制范围和脏区计算；绘制内容超出节点边界时，应使该区域覆盖全部超出部分。该接口不改变节点边界，也不扩大遮罩图层范围。
 
 起始版本： 20
 
@@ -1713,16 +1752,16 @@ int32_t OH_ArkUI_RenderNodeUtils_SetDrawRegion(ArkUI_RenderNodeHandle node, floa
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) node | 目标渲染节点。 |
-| float x | 边界左上角的X坐标（以像素为单位）。 |
-| float y | 边界左上角的Y坐标（以像素为单位）。 |
-| float w | 边界的宽度（以像素为单位）。 |
-| float h | 边界的高度（以像素为单位）。 |
+| float x | 绘制区域左上角相对节点局部坐标系原点的X坐标，单位：px。 |
+| float y | 绘制区域左上角相对节点局部坐标系原点的Y坐标，单位：px。 |
+| float w | 绘制区域的宽度，单位：px。 |
+| float h | 绘制区域的高度，单位：px。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_AttachContentModifier()
 
@@ -1732,6 +1771,8 @@ int32_t OH_ArkUI_RenderNodeUtils_AttachContentModifier(ArkUI_RenderNodeHandle no
  描述：
 
 为渲染节点添加内容修改器。
+
+该接口用于通过onDraw回调扩展节点的自定义绘制内容。
 
 起始版本： 20
 
@@ -1746,7 +1787,7 @@ int32_t OH_ArkUI_RenderNodeUtils_AttachContentModifier(ArkUI_RenderNodeHandle no
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。从API version 22开始支持。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_CreateContentModifier()
 
@@ -1756,6 +1797,8 @@ ArkUI_RenderContentModifierHandle OH_ArkUI_RenderNodeUtils_CreateContentModifier
  描述：
 
 创建内容修改器。
+
+该接口用于保存绘制属性并设置onDraw回调，再附加到渲染节点。使用完毕后调用[OH_ArkUI_RenderNodeUtils_DisposeContentModifier](#oh_arkui_rendernodeutils_disposecontentmodifier)释放。
 
 起始版本： 20
 
@@ -1791,20 +1834,22 @@ int32_t OH_ArkUI_RenderNodeUtils_AttachFloatProperty(ArkUI_RenderContentModifier
 
 为目标内容修改器附加浮点属性。
 
+该接口用于在绘制回调中传递或更新浮点型绘制参数。
+
 起始版本： 20
 
 参数：
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkUI_RenderContentModifierHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendercontentmodifierhandle) modifier | 为目标内容修改器设置浮点属性。 |
+| [ArkUI_RenderContentModifierHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendercontentmodifierhandle) modifier | 待附加属性的目标内容修改器。 |
 | [ArkUI_FloatPropertyHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-floatpropertyhandle) property | 浮点属性。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_AttachVector2Property()
 
@@ -1815,20 +1860,22 @@ int32_t OH_ArkUI_RenderNodeUtils_AttachVector2Property(ArkUI_RenderContentModifi
 
 为目标内容修改器附加二维向量属性。
 
+该接口用于在绘制回调中传递或更新二维坐标、偏移等绘制参数。
+
 起始版本： 20
 
 参数：
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkUI_RenderContentModifierHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendercontentmodifierhandle) modifier | 为目标内容修改器设置二维向量属性。 |
+| [ArkUI_RenderContentModifierHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendercontentmodifierhandle) modifier | 待附加属性的目标内容修改器。 |
 | [ArkUI_Vector2PropertyHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-vector2propertyhandle) property | 二维向量属性。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_AttachColorProperty()
 
@@ -1839,20 +1886,22 @@ int32_t OH_ArkUI_RenderNodeUtils_AttachColorProperty(ArkUI_RenderContentModifier
 
 为目标内容修改器附加颜色属性。
 
+该接口用于在绘制回调中传递或更新颜色绘制参数。
+
 起始版本： 20
 
 参数：
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkUI_RenderContentModifierHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendercontentmodifierhandle) modifier | 为目标内容修改器设置颜色属性。 |
+| [ArkUI_RenderContentModifierHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendercontentmodifierhandle) modifier | 待附加属性的目标内容修改器。 |
 | [ArkUI_ColorPropertyHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-colorpropertyhandle) property | 颜色属性。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_AttachFloatAnimatableProperty()
 
@@ -1863,20 +1912,22 @@ int32_t OH_ArkUI_RenderNodeUtils_AttachFloatAnimatableProperty(ArkUI_RenderConte
 
 为目标内容修改器附加可动画的浮点属性。
 
+该接口用于在绘制回调中配置随动画变化的浮点型绘制参数。
+
 起始版本： 20
 
 参数：
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkUI_RenderContentModifierHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendercontentmodifierhandle) modifier | 为目标内容修改器设置可动画的浮点属性。 |
+| [ArkUI_RenderContentModifierHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendercontentmodifierhandle) modifier | 待附加属性的目标内容修改器。 |
 | [ArkUI_FloatAnimatablePropertyHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-floatanimatablepropertyhandle) property | 可动画的浮点属性。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_AttachVector2AnimatableProperty()
 
@@ -1887,20 +1938,22 @@ int32_t OH_ArkUI_RenderNodeUtils_AttachVector2AnimatableProperty(ArkUI_RenderCon
 
 为目标内容修改器附加可动画的二维向量属性。
 
+该接口用于在绘制回调中配置随动画变化的二维坐标、偏移等绘制参数。
+
 起始版本： 20
 
 参数：
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkUI_RenderContentModifierHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendercontentmodifierhandle) modifier | 为目标内容修改器设置可动画的二维向量属性。 |
+| [ArkUI_RenderContentModifierHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendercontentmodifierhandle) modifier | 待附加属性的目标内容修改器。 |
 | [ArkUI_Vector2AnimatablePropertyHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-vector2animatablepropertyhandle) property | 可动画的二维向量属性。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_AttachColorAnimatableProperty()
 
@@ -1911,20 +1964,22 @@ int32_t OH_ArkUI_RenderNodeUtils_AttachColorAnimatableProperty(ArkUI_RenderConte
 
 为目标内容修改器附加可动画的颜色属性。
 
+该接口用于在绘制回调中配置随动画变化的颜色绘制参数。
+
 起始版本： 20
 
 参数：
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkUI_RenderContentModifierHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendercontentmodifierhandle) modifier | 为目标内容修改器设置可动画的颜色属性。 |
+| [ArkUI_RenderContentModifierHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendercontentmodifierhandle) modifier | 待附加属性的目标内容修改器。 |
 | [ArkUI_ColorAnimatablePropertyHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-coloranimatablepropertyhandle) property | 可动画的颜色属性。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_CreateFloatProperty()
 
@@ -1934,6 +1989,8 @@ ArkUI_FloatPropertyHandle OH_ArkUI_RenderNodeUtils_CreateFloatProperty(float val
  描述：
 
 创建浮点属性。
+
+使用完毕后调用[OH_ArkUI_RenderNodeUtils_DisposeFloatProperty](#oh_arkui_rendernodeutils_disposefloatproperty)释放。
 
 起始版本： 20
 
@@ -1971,7 +2028,7 @@ int32_t OH_ArkUI_RenderNodeUtils_SetFloatPropertyValue(ArkUI_FloatPropertyHandle
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetFloatPropertyValue()
 
@@ -1995,7 +2052,7 @@ int32_t OH_ArkUI_RenderNodeUtils_GetFloatPropertyValue(ArkUI_FloatPropertyHandle
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_DisposeFloatProperty()
 
@@ -2022,6 +2079,8 @@ ArkUI_Vector2PropertyHandle OH_ArkUI_RenderNodeUtils_CreateVector2Property(float
  描述：
 
 创建二维向量属性。
+
+使用完毕后调用[OH_ArkUI_RenderNodeUtils_DisposeVector2Property](#oh_arkui_rendernodeutils_disposevector2property)释放。
 
 起始版本： 20
 
@@ -2061,7 +2120,7 @@ int32_t OH_ArkUI_RenderNodeUtils_SetVector2PropertyValue(ArkUI_Vector2PropertyHa
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetVector2PropertyValue()
 
@@ -2086,7 +2145,7 @@ int32_t OH_ArkUI_RenderNodeUtils_GetVector2PropertyValue(ArkUI_Vector2PropertyHa
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_DisposeVector2Property()
 
@@ -2114,13 +2173,15 @@ ArkUI_ColorPropertyHandle OH_ArkUI_RenderNodeUtils_CreateColorProperty(uint32_t 
 
 创建颜色属性。
 
+使用完毕后调用[OH_ArkUI_RenderNodeUtils_DisposeColorProperty](#oh_arkui_rendernodeutils_disposecolorproperty)释放。
+
 起始版本： 20
 
 参数：
 
 | 参数项 | 描述 |
 | --- | --- |
-| uint32_t value | 属性值。 |
+| uint32_t value | 用于初始化颜色属性的ARGB颜色值，格式为0xAARRGGBB，其中A、R、G、B分别表示Alpha、红、绿、蓝通道。 |
 
 返回：
 
@@ -2144,13 +2205,13 @@ int32_t OH_ArkUI_RenderNodeUtils_SetColorPropertyValue(ArkUI_ColorPropertyHandle
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_ColorPropertyHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-colorpropertyhandle) property | 颜色属性。 |
-| uint32_t value | 属性值。 |
+| uint32_t value | 要设置的ARGB颜色值，格式为0xAARRGGBB，其中A、R、G、B分别表示Alpha、红、绿、蓝通道。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetColorPropertyValue()
 
@@ -2168,13 +2229,13 @@ int32_t OH_ArkUI_RenderNodeUtils_GetColorPropertyValue(ArkUI_ColorPropertyHandle
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_ColorPropertyHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-colorpropertyhandle) property | 颜色属性。 |
-| uint32_t* value | 用于接收属性值的指针。 |
+| uint32_t* value | 用于接收ARGB颜色值的指针。颜色值格式为0xAARRGGBB，其中A、R、G、B分别表示Alpha、红、绿、蓝通道。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_DisposeColorProperty()
 
@@ -2201,6 +2262,8 @@ ArkUI_FloatAnimatablePropertyHandle OH_ArkUI_RenderNodeUtils_CreateFloatAnimatab
  描述：
 
 创建可动画的浮点属性。
+
+该接口用于保存可随动画变化的浮点型绘制参数。使用完毕后调用[OH_ArkUI_RenderNodeUtils_DisposeFloatAnimatableProperty](#oh_arkui_rendernodeutils_disposefloatanimatableproperty)释放。
 
 起始版本： 20
 
@@ -2238,7 +2301,7 @@ int32_t OH_ArkUI_RenderNodeUtils_SetFloatAnimatablePropertyValue(ArkUI_FloatAnim
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetFloatAnimatablePropertyValue()
 
@@ -2262,7 +2325,7 @@ int32_t OH_ArkUI_RenderNodeUtils_GetFloatAnimatablePropertyValue(ArkUI_FloatAnim
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_DisposeFloatAnimatableProperty()
 
@@ -2289,6 +2352,8 @@ ArkUI_Vector2AnimatablePropertyHandle OH_ArkUI_RenderNodeUtils_CreateVector2Anim
  描述：
 
 创建可动画的二维向量属性。
+
+该接口用于保存可随动画变化的二维坐标、偏移等绘制参数。使用完毕后调用[OH_ArkUI_RenderNodeUtils_DisposeVector2AnimatableProperty](#oh_arkui_rendernodeutils_disposevector2animatableproperty)释放。
 
 起始版本： 20
 
@@ -2328,7 +2393,7 @@ int32_t OH_ArkUI_RenderNodeUtils_SetVector2AnimatablePropertyValue(ArkUI_Vector2
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetVector2AnimatablePropertyValue()
 
@@ -2353,7 +2418,7 @@ int32_t OH_ArkUI_RenderNodeUtils_GetVector2AnimatablePropertyValue(ArkUI_Vector2
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_DisposeVector2AnimatableProperty()
 
@@ -2381,13 +2446,15 @@ ArkUI_ColorAnimatablePropertyHandle OH_ArkUI_RenderNodeUtils_CreateColorAnimatab
 
 创建可动画的颜色属性。
 
+该接口用于保存可随动画变化的颜色绘制参数。使用完毕后调用[OH_ArkUI_RenderNodeUtils_DisposeColorAnimatableProperty](#oh_arkui_rendernodeutils_disposecoloranimatableproperty)释放。
+
 起始版本： 20
 
 参数：
 
 | 参数项 | 描述 |
 | --- | --- |
-| uint32_t value | 属性值。 |
+| uint32_t value | 用于初始化可动画颜色属性的ARGB颜色值，格式为0xAARRGGBB，其中A、R、G、B分别表示Alpha、红、绿、蓝通道。 |
 
 返回：
 
@@ -2411,13 +2478,13 @@ int32_t OH_ArkUI_RenderNodeUtils_SetColorAnimatablePropertyValue(ArkUI_ColorAnim
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_ColorAnimatablePropertyHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-coloranimatablepropertyhandle) property | 可动画的颜色属性。 |
-| uint32_t value | 属性值。 |
+| uint32_t value | 要设置的ARGB颜色值，格式为0xAARRGGBB，其中A、R、G、B分别表示Alpha、红、绿、蓝通道。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_GetColorAnimatablePropertyValue()
 
@@ -2435,13 +2502,13 @@ int32_t OH_ArkUI_RenderNodeUtils_GetColorAnimatablePropertyValue(ArkUI_ColorAnim
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_ColorAnimatablePropertyHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-coloranimatablepropertyhandle) property | 可动画的颜色属性。 |
-| uint32_t* value | 用于接收属性值的指针。 |
+| uint32_t* value | 用于接收ARGB颜色值的指针。颜色值格式为0xAARRGGBB，其中A、R、G、B分别表示Alpha、红、绿、蓝通道。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_DisposeColorAnimatableProperty()
 
@@ -2467,7 +2534,9 @@ int32_t OH_ArkUI_RenderNodeUtils_SetContentModifierOnDraw(ArkUI_RenderContentMod
 ```
  描述：
 
-设置内容修改器的onDraw函数。
+设置内容修改器的onDraw回调。
+
+该回调用于在内容修改器绘制阶段执行自定义绘制逻辑。
 
 起始版本： 20
 
@@ -2477,13 +2546,13 @@ int32_t OH_ArkUI_RenderNodeUtils_SetContentModifierOnDraw(ArkUI_RenderContentMod
 | --- | --- |
 | [ArkUI_RenderContentModifierHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendercontentmodifierhandle) modifier | 目标内容修改器。 |
 | void* userData | 要传递给回调的自定义数据。 |
-| void (callback)([ArkUI_DrawContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-drawcontext) context, void* userData) | 绘制事件接收回调。 |
+| void (*callback)([ArkUI_DrawContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-drawcontext)* context, void* userData) | 绘制事件接收回调。context表示绘制上下文；userData表示调用本接口时传入的自定义数据。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_CreateRectShapeOption()
 
@@ -2493,6 +2562,8 @@ ArkUI_RectShapeOption* OH_ArkUI_RenderNodeUtils_CreateRectShapeOption()
  描述：
 
 创建矩形形状。
+
+使用完毕后调用[OH_ArkUI_RenderNodeUtils_DisposeRectShapeOption](#oh_arkui_rendernodeutils_disposerectshapeoption)释放。
 
 起始版本： 20
 
@@ -2526,7 +2597,9 @@ void OH_ArkUI_RenderNodeUtils_SetRectShapeOptionEdgeValue(ArkUI_RectShapeOption*
 ```
  描述：
 
-设置矩形形状的边缘值。当设置左边界和上边界为负数时，因显示涉及到图层叠加效果，会导致部分超出节点内容部分无法绘制。
+设置矩形形状的边缘值。
+
+左边缘或上边缘可取负值，负值表示对应边缘位于节点原点左侧或上方。形状用于遮罩时，超出节点边界的部分不显示；用于裁剪且需显示节点边界外内容时，应通过[OH_ArkUI_RenderNodeUtils_SetDrawRegion](#oh_arkui_rendernodeutils_setdrawregion)设置覆盖该内容的绘制区域。
 
 起始版本： 20
 
@@ -2535,7 +2608,7 @@ void OH_ArkUI_RenderNodeUtils_SetRectShapeOptionEdgeValue(ArkUI_RectShapeOption*
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_RectShapeOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rectshapeoption)* option | 指向矩形形状的指针。 |
-| float edgeValue | 矩形形状的边缘值。 |
+| float edgeValue | 矩形形状的边缘值，单位：px。 |
 | [ArkUI_EdgeDirection](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_edgedirection) direction | 要设置边缘值的矩形方向。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_CreateNodeBorderStyleOption()
@@ -2546,6 +2619,8 @@ ArkUI_NodeBorderStyleOption* OH_ArkUI_RenderNodeUtils_CreateNodeBorderStyleOptio
  描述：
 
 创建节点边框样式。
+
+使用完毕后调用[OH_ArkUI_RenderNodeUtils_DisposeNodeBorderStyleOption](#oh_arkui_rendernodeutils_disposenodeborderstyleoption)释放。
 
 起始版本： 20
 
@@ -2579,7 +2654,7 @@ void OH_ArkUI_RenderNodeUtils_SetNodeBorderStyleOptionEdgeStyle(ArkUI_NodeBorder
 ```
  描述：
 
-设置节点边框样式的边缘值。
+设置节点边框的边缘样式。
 
 起始版本： 20
 
@@ -2588,7 +2663,7 @@ void OH_ArkUI_RenderNodeUtils_SetNodeBorderStyleOptionEdgeStyle(ArkUI_NodeBorder
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_NodeBorderStyleOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nodeborderstyleoption)* option | 指向节点边框样式的指针。 |
-| [ArkUI_BorderStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_borderstyle) edgeStyle | 节点边框样式的边缘边框样式值。 |
+| [ArkUI_BorderStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_borderstyle) edgeStyle | 节点边框的边缘样式值。 |
 | [ArkUI_EdgeDirection](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_edgedirection) direction | 边缘的方向。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_CreateNodeBorderWidthOption()
@@ -2599,6 +2674,8 @@ ArkUI_NodeBorderWidthOption* OH_ArkUI_RenderNodeUtils_CreateNodeBorderWidthOptio
  描述：
 
 创建节点边框宽度。
+
+使用完毕后调用[OH_ArkUI_RenderNodeUtils_DisposeNodeBorderWidthOption](#oh_arkui_rendernodeutils_disposenodeborderwidthoption)释放。
 
 起始版本： 20
 
@@ -2632,7 +2709,7 @@ void OH_ArkUI_RenderNodeUtils_SetNodeBorderWidthOptionEdgeWidth(ArkUI_NodeBorder
 ```
  描述：
 
-设置节点边框宽度的边缘值。
+设置节点边框的边缘宽度。
 
 起始版本： 20
 
@@ -2641,7 +2718,7 @@ void OH_ArkUI_RenderNodeUtils_SetNodeBorderWidthOptionEdgeWidth(ArkUI_NodeBorder
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_NodeBorderWidthOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nodeborderwidthoption)* option | 指向节点边框宽度的指针。 |
-| float edgeWidth | 节点边框宽度的边缘宽度值。 取值范围：[0, +∞) |
+| float edgeWidth | 节点边框的边缘宽度值，单位：px。取值范围为[0, +∞)；传入负值时，对应边缘的宽度保持不变。 |
 | [ArkUI_EdgeDirection](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_edgedirection) direction | 边缘的方向。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_CreateNodeBorderColorOption()
@@ -2652,6 +2729,8 @@ ArkUI_NodeBorderColorOption* OH_ArkUI_RenderNodeUtils_CreateNodeBorderColorOptio
  描述：
 
 创建节点边框颜色。
+
+使用完毕后调用[OH_ArkUI_RenderNodeUtils_DisposeNodeBorderColorOption](#oh_arkui_rendernodeutils_disposenodebordercoloroption)释放。
 
 起始版本： 20
 
@@ -2685,7 +2764,7 @@ void OH_ArkUI_RenderNodeUtils_SetNodeBorderColorOptionEdgeColor(ArkUI_NodeBorder
 ```
  描述：
 
-设置节点边框颜色的边缘值。
+设置节点边框的边缘颜色。
 
 起始版本： 20
 
@@ -2694,7 +2773,7 @@ void OH_ArkUI_RenderNodeUtils_SetNodeBorderColorOptionEdgeColor(ArkUI_NodeBorder
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_NodeBorderColorOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nodebordercoloroption)* option | 指向节点边框颜色的指针。 |
-| uint32_t edgeColor | 节点边框颜色的边缘颜色值。 |
+| uint32_t edgeColor | 节点边框的边缘颜色值，ARGB格式为0xAARRGGBB，其中A、R、G、B分别表示Alpha、红、绿、蓝通道。 |
 | [ArkUI_EdgeDirection](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_edgedirection) direction | 边缘的方向。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_CreateNodeBorderRadiusOption()
@@ -2705,6 +2784,8 @@ ArkUI_NodeBorderRadiusOption* OH_ArkUI_RenderNodeUtils_CreateNodeBorderRadiusOpt
  描述：
 
 创建节点边框半径。
+
+使用完毕后调用[OH_ArkUI_RenderNodeUtils_DisposeNodeBorderRadiusOption](#oh_arkui_rendernodeutils_disposenodeborderradiusoption)释放。
 
 起始版本： 20
 
@@ -2738,7 +2819,7 @@ void OH_ArkUI_RenderNodeUtils_SetNodeBorderRadiusOptionCornerRadius(ArkUI_NodeBo
 ```
  描述：
 
-设置节点边框半径的边缘值。请注意，入参cornerRadius为uint32_t，仅支持传入正整数。
+设置节点指定角的边框半径。
 
 起始版本： 20
 
@@ -2747,8 +2828,8 @@ void OH_ArkUI_RenderNodeUtils_SetNodeBorderRadiusOptionCornerRadius(ArkUI_NodeBo
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_NodeBorderRadiusOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nodeborderradiusoption)* option | 指向节点边框半径的指针。 |
-| uint32_t cornerRadius | 节点边框半径的边缘半径值。 |
-| [ArkUI_CornerDirection](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_cornerdirection) direction | 边缘的方向。 |
+| uint32_t cornerRadius | 节点指定角的边框半径，单位：px，取值为非负整数。 |
+| [ArkUI_CornerDirection](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_cornerdirection) direction | 角的方向。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_CreateCircleShapeOption()
 
@@ -2758,6 +2839,8 @@ ArkUI_CircleShapeOption* OH_ArkUI_RenderNodeUtils_CreateCircleShapeOption()
  描述：
 
 创建圆形形状。
+
+使用完毕后调用[OH_ArkUI_RenderNodeUtils_DisposeCircleShapeOption](#oh_arkui_rendernodeutils_disposecircleshapeoption)释放。
 
 起始版本： 20
 
@@ -2791,7 +2874,7 @@ void OH_ArkUI_RenderNodeUtils_SetCircleShapeOptionCenterX(ArkUI_CircleShapeOptio
 ```
  描述：
 
-设置圆形形状的圆心x轴坐标值。
+设置圆形形状的圆心X轴坐标值。
 
 起始版本： 20
 
@@ -2800,7 +2883,7 @@ void OH_ArkUI_RenderNodeUtils_SetCircleShapeOptionCenterX(ArkUI_CircleShapeOptio
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_CircleShapeOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-circleshapeoption)* option | 指向圆形形状的指针。 |
-| float centerX | 圆心x轴坐标值。 |
+| float centerX | 圆心X轴坐标值，单位：px。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_SetCircleShapeOptionCenterY()
 
@@ -2809,7 +2892,7 @@ void OH_ArkUI_RenderNodeUtils_SetCircleShapeOptionCenterY(ArkUI_CircleShapeOptio
 ```
  描述：
 
-设置圆形形状的圆心y轴坐标值。
+设置圆形形状的圆心Y轴坐标值。
 
 起始版本： 20
 
@@ -2818,7 +2901,7 @@ void OH_ArkUI_RenderNodeUtils_SetCircleShapeOptionCenterY(ArkUI_CircleShapeOptio
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_CircleShapeOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-circleshapeoption)* option | 指向圆形形状的指针。 |
-| float centerY | 圆心y轴坐标值。 |
+| float centerY | 圆心Y轴坐标值，单位：px。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_SetCircleShapeOptionRadius()
 
@@ -2846,6 +2929,8 @@ ArkUI_RoundRectShapeOption* OH_ArkUI_RenderNodeUtils_CreateRoundRectShapeOption(
  描述：
 
 创建圆角矩形形状。
+
+使用完毕后调用[OH_ArkUI_RenderNodeUtils_DisposeRoundRectShapeOption](#oh_arkui_rendernodeutils_disposeroundrectshapeoption)释放。
 
 起始版本： 20
 
@@ -2881,6 +2966,8 @@ void OH_ArkUI_RenderNodeUtils_SetRoundRectShapeOptionEdgeValue(ArkUI_RoundRectSh
 
 设置圆角矩形形状的边缘值。
 
+左边缘或上边缘可取负值，负值表示对应边缘位于节点原点左侧或上方。形状用于遮罩时，超出节点边界的部分不显示；用于裁剪且需显示节点边界外内容时，应通过[OH_ArkUI_RenderNodeUtils_SetDrawRegion](#oh_arkui_rendernodeutils_setdrawregion)设置覆盖该内容的绘制区域。
+
 起始版本： 20
 
 参数：
@@ -2888,7 +2975,7 @@ void OH_ArkUI_RenderNodeUtils_SetRoundRectShapeOptionEdgeValue(ArkUI_RoundRectSh
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_RoundRectShapeOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-roundrectshapeoption)* option | 指向圆角矩形形状的指针。 |
-| float edgeValue | 圆角矩形形状的边缘值。 |
+| float edgeValue | 圆角矩形形状的边缘值，单位：px。 |
 | [ArkUI_EdgeDirection](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_edgedirection) direction | 要设置边缘值的矩形方向。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_SetRoundRectShapeOptionCornerXY()
@@ -2898,7 +2985,7 @@ void OH_ArkUI_RenderNodeUtils_SetRoundRectShapeOptionCornerXY(ArkUI_RoundRectSha
 ```
  描述：
 
-设置目标角的坐标值。
+设置指定角的X轴和Y轴圆角半径。
 
 起始版本： 20
 
@@ -2907,8 +2994,8 @@ void OH_ArkUI_RenderNodeUtils_SetRoundRectShapeOptionCornerXY(ArkUI_RoundRectSha
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_RoundRectShapeOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-roundrectshapeoption)* option | 指向圆角矩形形状的指针。 |
-| float x | 目标角的X坐标（以像素为单位）。 |
-| float y | 目标角的Y坐标（以像素为单位）。 |
+| float x | 指定角的X轴圆角半径，单位：px。 |
+| float y | 指定角的Y轴圆角半径，单位：px。 |
 | [ArkUI_CornerDirection](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_cornerdirection) direction | 角的方向。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_CreateCommandPathOption()
@@ -2919,6 +3006,8 @@ ArkUI_CommandPathOption* OH_ArkUI_RenderNodeUtils_CreateCommandPathOption()
  描述：
 
 创建自定义绘制路径。
+
+使用完毕后调用[OH_ArkUI_RenderNodeUtils_DisposeCommandPathOption](#oh_arkui_rendernodeutils_disposecommandpathoption)释放。
 
 起始版本： 20
 
@@ -2972,6 +3061,8 @@ ArkUI_RenderNodeMaskOption* OH_ArkUI_RenderNodeUtils_CreateRenderNodeMaskOptionF
 
 从矩形形状创建遮罩。
 
+使用完毕后调用[OH_ArkUI_RenderNodeUtils_DisposeRenderNodeMaskOption](#oh_arkui_rendernodeutils_disposerendernodemaskoption)释放。
+
 起始版本： 20
 
 参数：
@@ -2984,7 +3075,7 @@ ArkUI_RenderNodeMaskOption* OH_ArkUI_RenderNodeUtils_CreateRenderNodeMaskOptionF
 
 | 类型 | 说明 |
 | --- | --- |
-| [ArkUI_RenderNodeMaskOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodemaskoption) | 指向渲染节点遮罩的指针。 |
+| [ArkUI_RenderNodeMaskOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodemaskoption)* | 指向渲染节点遮罩的指针。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_CreateRenderNodeMaskOptionFromRoundRectShape()
 
@@ -2994,6 +3085,8 @@ ArkUI_RenderNodeMaskOption* OH_ArkUI_RenderNodeUtils_CreateRenderNodeMaskOptionF
  描述：
 
 从圆角矩形形状创建遮罩。
+
+使用完毕后调用[OH_ArkUI_RenderNodeUtils_DisposeRenderNodeMaskOption](#oh_arkui_rendernodeutils_disposerendernodemaskoption)释放。
 
 起始版本： 20
 
@@ -3007,7 +3100,7 @@ ArkUI_RenderNodeMaskOption* OH_ArkUI_RenderNodeUtils_CreateRenderNodeMaskOptionF
 
 | 类型 | 说明 |
 | --- | --- |
-| [ArkUI_RenderNodeMaskOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodemaskoption) | 指向渲染节点遮罩的指针。 |
+| [ArkUI_RenderNodeMaskOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodemaskoption)* | 指向渲染节点遮罩的指针。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_CreateRenderNodeMaskOptionFromCircleShape()
 
@@ -3017,6 +3110,8 @@ ArkUI_RenderNodeMaskOption* OH_ArkUI_RenderNodeUtils_CreateRenderNodeMaskOptionF
  描述：
 
 从圆形形状创建遮罩。
+
+使用完毕后调用[OH_ArkUI_RenderNodeUtils_DisposeRenderNodeMaskOption](#oh_arkui_rendernodeutils_disposerendernodemaskoption)释放。
 
 起始版本： 20
 
@@ -3030,7 +3125,7 @@ ArkUI_RenderNodeMaskOption* OH_ArkUI_RenderNodeUtils_CreateRenderNodeMaskOptionF
 
 | 类型 | 说明 |
 | --- | --- |
-| [ArkUI_RenderNodeMaskOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodemaskoption) | 指向渲染节点遮罩的指针。 |
+| [ArkUI_RenderNodeMaskOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodemaskoption)* | 指向渲染节点遮罩的指针。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_CreateRenderNodeMaskOptionFromOvalShape()
 
@@ -3040,6 +3135,8 @@ ArkUI_RenderNodeMaskOption* OH_ArkUI_RenderNodeUtils_CreateRenderNodeMaskOptionF
  描述：
 
 从椭圆形形状创建遮罩。
+
+使用完毕后调用[OH_ArkUI_RenderNodeUtils_DisposeRenderNodeMaskOption](#oh_arkui_rendernodeutils_disposerendernodemaskoption)释放。
 
 起始版本： 20
 
@@ -3053,7 +3150,7 @@ ArkUI_RenderNodeMaskOption* OH_ArkUI_RenderNodeUtils_CreateRenderNodeMaskOptionF
 
 | 类型 | 说明 |
 | --- | --- |
-| [ArkUI_RenderNodeMaskOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodemaskoption) | 指向渲染节点遮罩的指针。 |
+| [ArkUI_RenderNodeMaskOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodemaskoption)* | 指向渲染节点遮罩的指针。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_CreateRenderNodeMaskOptionFromCommandPath()
 
@@ -3063,6 +3160,8 @@ ArkUI_RenderNodeMaskOption* OH_ArkUI_RenderNodeUtils_CreateRenderNodeMaskOptionF
  描述：
 
 从自定义绘制路径创建遮罩。
+
+使用完毕后调用[OH_ArkUI_RenderNodeUtils_DisposeRenderNodeMaskOption](#oh_arkui_rendernodeutils_disposerendernodemaskoption)释放。
 
 起始版本： 20
 
@@ -3076,7 +3175,7 @@ ArkUI_RenderNodeMaskOption* OH_ArkUI_RenderNodeUtils_CreateRenderNodeMaskOptionF
 
 | 类型 | 说明 |
 | --- | --- |
-| [ArkUI_RenderNodeMaskOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodemaskoption) | 指向渲染节点遮罩的指针。 |
+| [ArkUI_RenderNodeMaskOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodemaskoption)* | 指向渲染节点遮罩的指针。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_DisposeRenderNodeMaskOption()
 
@@ -3111,7 +3210,7 @@ void OH_ArkUI_RenderNodeUtils_SetRenderNodeMaskOptionFillColor(ArkUI_RenderNodeM
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_RenderNodeMaskOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodemaskoption)* mask | 指向渲染节点遮罩的指针。 |
-| uint32_t fillColor | 遮罩的填充颜色。 |
+| uint32_t fillColor | 遮罩的填充颜色，ARGB格式为0xAARRGGBB，其中A、R、G、B分别表示Alpha、红、绿、蓝通道。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_SetRenderNodeMaskOptionStrokeColor()
 
@@ -3129,7 +3228,7 @@ void OH_ArkUI_RenderNodeUtils_SetRenderNodeMaskOptionStrokeColor(ArkUI_RenderNod
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_RenderNodeMaskOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodemaskoption)* mask | 指向渲染节点遮罩的指针。 |
-| uint32_t strokeColor | 遮罩的描边颜色。 |
+| uint32_t strokeColor | 遮罩的描边颜色，ARGB格式为0xAARRGGBB，其中A、R、G、B分别表示Alpha、红、绿、蓝通道。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_SetRenderNodeMaskOptionStrokeWidth()
 
@@ -3138,7 +3237,9 @@ void OH_ArkUI_RenderNodeUtils_SetRenderNodeMaskOptionStrokeWidth(ArkUI_RenderNod
 ```
  描述：
 
-设置渲染节点遮罩的描边宽度。以边框路径为中心进行相应宽度的绘制。
+设置渲染节点遮罩的描边宽度。
+
+以边框路径为中心进行相应宽度的绘制。
 
 起始版本： 20
 
@@ -3147,7 +3248,7 @@ void OH_ArkUI_RenderNodeUtils_SetRenderNodeMaskOptionStrokeWidth(ArkUI_RenderNod
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_RenderNodeMaskOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodemaskoption)* mask | 指向渲染节点遮罩的指针。 |
-| float strokeWidth | 遮罩的描边宽度。 取值范围：(0, +∞)，当取值为负数或0时，绘制时会被设定成1像素。 |
+| float strokeWidth | 遮罩的描边宽度，单位：px。取值大于0时按设定宽度绘制；取值为0或负数时，按设备空间1px宽的细线绘制。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_CreateRenderNodeClipOptionFromRectShape()
 
@@ -3157,6 +3258,8 @@ ArkUI_RenderNodeClipOption* OH_ArkUI_RenderNodeUtils_CreateRenderNodeClipOptionF
  描述：
 
 从矩形形状创建裁剪。
+
+使用完毕后调用[OH_ArkUI_RenderNodeUtils_DisposeRenderNodeClipOption](#oh_arkui_rendernodeutils_disposerendernodeclipoption)释放。
 
 起始版本： 20
 
@@ -3181,6 +3284,8 @@ ArkUI_RenderNodeClipOption* OH_ArkUI_RenderNodeUtils_CreateRenderNodeClipOptionF
 
 从圆角矩形形状创建裁剪。
 
+使用完毕后调用[OH_ArkUI_RenderNodeUtils_DisposeRenderNodeClipOption](#oh_arkui_rendernodeutils_disposerendernodeclipoption)释放。
+
 起始版本： 20
 
 参数：
@@ -3203,6 +3308,8 @@ ArkUI_RenderNodeClipOption* OH_ArkUI_RenderNodeUtils_CreateRenderNodeClipOptionF
  描述：
 
 从圆形形状创建裁剪。
+
+使用完毕后调用[OH_ArkUI_RenderNodeUtils_DisposeRenderNodeClipOption](#oh_arkui_rendernodeutils_disposerendernodeclipoption)释放。
 
 起始版本： 20
 
@@ -3227,6 +3334,8 @@ ArkUI_RenderNodeClipOption* OH_ArkUI_RenderNodeUtils_CreateRenderNodeClipOptionF
 
 从椭圆形形状创建裁剪。
 
+使用完毕后调用[OH_ArkUI_RenderNodeUtils_DisposeRenderNodeClipOption](#oh_arkui_rendernodeutils_disposerendernodeclipoption)释放。
+
 起始版本： 20
 
 参数：
@@ -3249,6 +3358,8 @@ ArkUI_RenderNodeClipOption* OH_ArkUI_RenderNodeUtils_CreateRenderNodeClipOptionF
  描述：
 
 从自定义绘制路径创建裁剪。
+
+使用完毕后调用[OH_ArkUI_RenderNodeUtils_DisposeRenderNodeClipOption](#oh_arkui_rendernodeutils_disposerendernodeclipoption)释放。
 
 起始版本： 20
 
@@ -3284,7 +3395,7 @@ void OH_ArkUI_RenderNodeUtils_DisposeRenderNodeClipOption(ArkUI_RenderNodeClipOp
 #### [h2]OH_ArkUI_RenderNodeUtils_GetRenderNode()
 
 ```
-int32_t OH_ArkUI_RenderNodeUtils_GetRenderNode(ArkUI_NodeHandle node, ArkUI_RenderNodeHandle* renderNode);
+int32_t OH_ArkUI_RenderNodeUtils_GetRenderNode(ArkUI_NodeHandle node, ArkUI_RenderNodeHandle* renderNode)
 ```
  描述：
 
@@ -3303,7 +3414,7 @@ int32_t OH_ArkUI_RenderNodeUtils_GetRenderNode(ArkUI_NodeHandle node, ArkUI_Rend
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_NOT_ADOPTED_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_errorcode) 该节点未被接纳为附属节点。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_RENDER_NOT_ADOPTED_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 该节点未被接纳为附属节点。 |
 
 #### [h2]OH_ArkUI_RenderNodeUtils_SetRectShapeOptionValue()
 
@@ -3312,7 +3423,7 @@ void OH_ArkUI_RenderNodeUtils_SetRectShapeOptionValue(ArkUI_RectShapeOption* opt
 ```
  描述：
 
-为矩形形状选项设置边框矩形范围。该函数通过指定位置和尺寸来定义矩形的几何框架。
+设置矩形形状选项的边框矩形范围。
 
 起始版本： 26.0.0
 
@@ -3333,7 +3444,7 @@ void OH_ArkUI_RenderNodeUtils_SetRoundRectShapeOptionValue(ArkUI_RoundRectShapeO
 ```
  描述：
 
-为圆角矩形形状选项设置边框矩形范围。该函数通过指定位置和尺寸来定义圆角矩形的几何框架。
+设置圆角矩形形状选项的边框矩形范围。
 
 起始版本： 26.0.0
 
@@ -3346,3 +3457,292 @@ void OH_ArkUI_RenderNodeUtils_SetRoundRectShapeOptionValue(ArkUI_RoundRectShapeO
 | float y | 矩形左上角的Y坐标，用于确定上边界位置。 |
 | float width | 矩形宽度，表示从X坐标起的水平跨度，用于确定右侧边界的位置，即矩形右下角的X坐标 = x + width。 |
 | float height | 矩形高度，表示从Y坐标起的垂直跨度，用于确定底部边界的位置，即矩形右下角的Y坐标 = y + height。 |
+
+#### [h2]OH_ArkUI_RenderNodeUtils_CreateBlurStyleOption()
+
+```
+ArkUI_RenderBlurStyleOption* OH_ArkUI_RenderNodeUtils_CreateBlurStyleOption()
+```
+ 描述：
+
+创建一个模糊样式对象。
+
+使用完毕后调用[OH_ArkUI_RenderNodeUtils_DisposeBlurStyleOption](#oh_arkui_rendernodeutils_disposeblurstyleoption)销毁并释放资源。
+
+起始版本： 26.0.0
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| [ArkUI_RenderBlurStyleOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodeblurstyleoption)* | 模糊样式对象的指针。模糊半径默认值是0.0。 |
+
+#### [h2]OH_ArkUI_RenderNodeUtils_DisposeBlurStyleOption()
+
+```
+void OH_ArkUI_RenderNodeUtils_DisposeBlurStyleOption(ArkUI_RenderBlurStyleOption* option)
+```
+ 描述：
+
+销毁一个模糊样式对象。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_RenderBlurStyleOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodeblurstyleoption)* option | [ArkUI_RenderBlurStyleOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodeblurstyleoption)指针，待销毁的目标模糊样式对象的指针。 |
+
+#### [h2]OH_ArkUI_RenderNodeUtils_SetBlurStyleOptionRadius()
+
+```
+int32_t OH_ArkUI_RenderNodeUtils_SetBlurStyleOptionRadius(ArkUI_RenderBlurStyleOption* option, float radius)
+```
+ 描述：
+
+为目标模糊样式设置模糊半径。
+
+模糊半径用于控制模糊的密度，半径越大，模糊处理的密度越大；设置为0时不进行模糊处理。对于背景模糊处理，半径达到80px时可实现良好的磨砂玻璃效果；应避免使用超过200px的模糊半径，否则将导致性能下降。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_RenderBlurStyleOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodeblurstyleoption)* option | [ArkUI_RenderBlurStyleOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodeblurstyleoption)指针，要设置模糊半径的目标模糊样式的指针。 |
+| float radius | 要设置的模糊半径。 取值范围：[0, +∞)。 单位：px。 传入负值时返回[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 |
+
+#### [h2]OH_ArkUI_RenderNodeUtils_SetBackgroundBlurOption()
+
+```
+int32_t OH_ArkUI_RenderNodeUtils_SetBackgroundBlurOption(ArkUI_RenderNodeHandle node, ArkUI_RenderBlurStyleOption* option)
+```
+ 描述：
+
+为渲染节点设置背景模糊样式，适用于模糊节点背后内容的场景。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) node | ArkUI_RenderNodeHandle指针，要设置背景模糊样式的目标渲染节点。 |
+| [ArkUI_RenderBlurStyleOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodeblurstyleoption)* option | [ArkUI_RenderBlurStyleOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodeblurstyleoption)指针，要设置的模糊样式的指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 |
+
+#### [h2]OH_ArkUI_RenderNodeUtils_ResetBackgroundBlurOption()
+
+```
+int32_t OH_ArkUI_RenderNodeUtils_ResetBackgroundBlurOption(ArkUI_RenderNodeHandle node)
+```
+ 描述：
+
+为渲染节点重置背景模糊样式。
+
+重置后无背景模糊样式。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) node | ArkUI_RenderNodeHandle指针，要重置背景模糊样式的目标渲染节点。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 |
+
+#### [h2]OH_ArkUI_RenderNodeUtils_SetForegroundBlurOption()
+
+```
+int32_t OH_ArkUI_RenderNodeUtils_SetForegroundBlurOption(ArkUI_RenderNodeHandle node, ArkUI_RenderBlurStyleOption* option)
+```
+ 描述：
+
+为渲染节点设置前景模糊样式，适用于模糊节点前景层的场景。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) node | ArkUI_RenderNodeHandle指针，要设置前景模糊样式的目标渲染节点。 |
+| [ArkUI_RenderBlurStyleOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodeblurstyleoption)* option | [ArkUI_RenderBlurStyleOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodeblurstyleoption)指针，要设置的模糊样式的指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 |
+
+#### [h2]OH_ArkUI_RenderNodeUtils_ResetForegroundBlurOption()
+
+```
+int32_t OH_ArkUI_RenderNodeUtils_ResetForegroundBlurOption(ArkUI_RenderNodeHandle node)
+```
+ 描述：
+
+为渲染节点重置前景模糊样式。
+
+重置后无前景模糊样式。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) node | ArkUI_RenderNodeHandle指针，要重置前景模糊样式的目标渲染节点。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 |
+
+#### [h2]OH_ArkUI_RenderNodeUtils_SetContentBlurOption()
+
+```
+int32_t OH_ArkUI_RenderNodeUtils_SetContentBlurOption(ArkUI_RenderNodeHandle node, ArkUI_RenderBlurStyleOption* option)
+```
+ 描述：
+
+为渲染节点设置内容模糊样式，适用于模糊节点自身绘制内容的场景。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) node | ArkUI_RenderNodeHandle指针，要设置内容模糊样式的目标渲染节点。 |
+| [ArkUI_RenderBlurStyleOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodeblurstyleoption)* option | [ArkUI_RenderBlurStyleOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodeblurstyleoption)指针，要设置的模糊样式的指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 |
+
+#### [h2]OH_ArkUI_RenderNodeUtils_ResetContentBlurOption()
+
+```
+int32_t OH_ArkUI_RenderNodeUtils_ResetContentBlurOption(ArkUI_RenderNodeHandle node)
+```
+ 描述：
+
+为渲染节点重置内容模糊样式。
+
+重置后无内容模糊样式。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) node | ArkUI_RenderNodeHandle指针，要重置内容模糊样式的目标渲染节点。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_RENDER_IS_FROM_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点是从一个FrameNode获取的。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 |
+
+#### [h2]OH_ArkUI_RenderNodeUtils_InsertRenderNodeAt()
+
+```
+ArkUI_ErrorCode OH_ArkUI_RenderNodeUtils_InsertRenderNodeAt(ArkUI_NodeHandle node, ArkUI_RenderNodeHandle child, int32_t position)
+```
+ 描述：
+
+在父自定义节点下的指定位置插入子渲染节点。
+
+默认使用[OH_ARKUI_NODE_MOUNT_POLICY_SINGLE_IF_RENDER_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#oh_arkui_nodemountpolicy)挂载策略，待插入的子渲染节点必须是父节点的唯一子节点；可通过[OH_ArkUI_NativeModule_SetChildMountPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#oh_arkui_nativemodule_setchildmountpolicy)将挂载策略设置为OH_ARKUI_NODE_MOUNT_POLICY_MIXED，以混合挂载多个子节点。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_NodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-node8h) node | 目标父节点，仅支持[ArkUI_NodeType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#arkui_nodetype)中的ARKUI_NODE_CUSTOM类型。 |
+| [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) child | 将要插入的子渲染节点。 |
+| int32_t position | 插入子渲染节点的索引，取值范围为[0, 当前子节点数量]；等于当前子节点数量时等同于添加操作。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| [ArkUI_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 [ARKUI_ERROR_CODE_NOT_CUSTOM_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标节点非自定义节点。 [ARKUI_ERROR_CODE_CHILD_EXISTED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 使用非OH_ARKUI_NODE_MOUNT_POLICY_MIXED挂载策略时，父节点已有子节点。 [ARKUI_ERROR_CODE_RENDER_PARENT_EXISTED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 目标渲染节点存在父节点。 [ARKUI_ERROR_CODE_RENDER_HAS_INVALID_FRAME_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 当前渲染节点从FrameNode中获取且该FrameNode已被取消接纳为附属节点或销毁。 |
+
+#### [h2]OH_ArkUI_RenderNodeUtils_GetRenderNodeChildrenCount()
+
+```
+ArkUI_ErrorCode OH_ArkUI_RenderNodeUtils_GetRenderNodeChildrenCount(ArkUI_NodeHandle node, int32_t* count)
+```
+ 描述：
+
+获取父自定义节点在混合挂载顺序中的全部子节点数量。
+
+计数包含普通节点和渲染节点。父节点需为ARKUI_NODE_CUSTOM类型，并已通过[OH_ArkUI_NativeModule_SetChildMountPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#oh_arkui_nativemodule_setchildmountpolicy)设置OH_ARKUI_NODE_MOUNT_POLICY_MIXED策略；否则返回[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_NodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-node8h) node | 待查询的父节点。 |
+| int32_t* count | 用于接收子节点数量的指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| [ArkUI_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 |
+
+#### [h2]OH_ArkUI_RenderNodeUtils_GetRenderNodeAt()
+
+```
+ArkUI_ErrorCode OH_ArkUI_RenderNodeUtils_GetRenderNodeAt(ArkUI_NodeHandle node, int32_t position, ArkUI_RenderNodeHandle* child)
+```
+ 描述：
+
+获取父自定义节点在混合挂载顺序中指定位置子节点对应的渲染节点句柄。
+
+父节点需为ARKUI_NODE_CUSTOM类型，并已通过[OH_ArkUI_NativeModule_SetChildMountPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#oh_arkui_nativemodule_setchildmountpolicy)设置OH_ARKUI_NODE_MOUNT_POLICY_MIXED策略；否则返回[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_NodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-node8h) node | 目标父节点。 |
+| int32_t position | 子节点的索引，取值范围为[0, 当前子节点数量-1]。 |
+| [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle)* child | 用于接收指定位置子节点对应的渲染节点句柄的指针，不可为空。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| [ArkUI_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_CAPI_INIT_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) CAPI初始化失败。 |

@@ -2,8 +2,8 @@
 title: "@ohos.arkui.uiMaterial (系统材质)"
 upstream_id: "harmonyos-references/arkts-apis-uimaterial"
 catalog: "harmonyos-references"
-content_hash: "09c491be8004"
-synced_at: "2026-07-09T00:57:30.837389"
+content_hash: "70d538e0f4ae"
+synced_at: "2026-07-28T16:41:14.116871"
 ---
 
 # @ohos.arkui.uiMaterial (系统材质)
@@ -24,7 +24,7 @@ import { uiMaterial } from '@kit.ArkUI';
 
 沉浸式材质类，继承自[Material](#material)。
 
-沉浸式材质根据设备算力有分档表现，设备算力的高、中、低档由设备厂商决定，定义在系统配置文件中。在高算力和中算力设备上，通过材质层滤镜属性[materialFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-filter-effect#materialfilter23)和阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)属性实现材质效果，当systemMaterial属性生效后，已设置的背景色属性[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)会被恢复为透明色，已设置的边框宽度[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)属性会被恢复为无边框效果。在低算力设备上，通过背景色[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、边框颜色[borderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#bordercolor)、边框宽度[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)、阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)属性实现材质效果。同一材质的效果，会受到系统设置应用中沉浸光感配置项的影响，不同强弱程度的沉浸光感配置下，材质的参数和效果存在差异。
+沉浸式材质根据设备算力有分档表现，设备算力的高、中、低档由设备厂商决定，定义在系统配置文件中。在高算力和中算力设备上，通过材质层滤镜属性[materialFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-filter-effect#materialfilter23)和阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)属性实现材质效果，当[systemMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemmaterial)属性生效后，已设置的背景色属性[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)会被恢复为透明色，已设置的边框宽度[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)属性会被恢复为无边框效果。在低算力设备上，通过背景色[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、边框颜色[borderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#bordercolor)、边框宽度[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)、阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)属性实现材质效果。同一材质的效果，会受到系统设置应用中沉浸光感配置项的影响，不同强弱程度的沉浸光感配置下，材质的参数和效果存在差异。
 
 #### [h2]constructor
 
@@ -66,7 +66,7 @@ static get empty(): Material
 
 返回空材质对象，用于组件单独关闭沉浸式系统材质效果。使用方式为uiMaterial.Material.empty。
 
-在enable模式下，可通过设置systemMaterial(uiMaterial.Material.empty)来单独关闭某个组件的沉浸式系统材质效果。如果组件未支持组件级沉浸式系统材质接口，则无法通过此方法关闭材质效果。
+在使能模式下，可通过设置systemMaterial(uiMaterial.Material.empty)来单独关闭某个组件的沉浸式系统材质效果。如果组件未支持组件级沉浸式系统材质接口，则无法通过此方法关闭材质效果。
 
 起始版本： 26.0.0
 
@@ -113,7 +113,7 @@ static get empty(): Material
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
 | DEFAULT | 0 | 默认模式。[弹出框Dialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-base-dialog-overview)、[即时反馈（Toast）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-toast)、[AlphabetIndexer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-alphabet-indexer)在组件本身未设置背景颜色、模糊参数和阴影参数时默认开启沉浸式系统材质；[Text](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text)设置[copyOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#copyoption9)后长按或双击触发的文本菜单默认开启沉浸式系统材质；其他组件由应用主动设置。 |
-| ENABLE | 1 | 使能模式。[弹出框Dialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-base-dialog-overview)、[即时反馈（Toast）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-toast)、[AlphabetIndexer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-alphabet-indexer)、[Select](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-select)、[菜单控制](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu)、[Toggle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toggle)、[SegmentButton](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-segmentbutton)、[SegmentButtonV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-segmentbuttonv2)、[bindSheet](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#bindsheet)组件默认开启沉浸式系统材质；[Text](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text)设置[copyOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#copyoption9)后长按或双击触发的文本菜单默认开启沉浸式系统材质。此模式下，沉浸式系统材质样式生效的优先级高于组件本身设置的背景色、模糊、阴影和边框样式。其他组件需开发者主动设置。 |
+| ENABLE | 1 | 使能模式。[弹出框Dialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-base-dialog-overview)、[即时反馈（Toast）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-toast)、[AlphabetIndexer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-alphabet-indexer)、[ChipGroup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-chipgroup)、[Chip](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-chip)、[Select](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-select)、[菜单控制](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu)、[Toggle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toggle)、[SegmentButton](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-segmentbutton)、[SegmentButtonV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-segmentbuttonv2)、[Slider](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-slider)、[SelectionMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-selectionmenu)组件默认开启沉浸式系统材质；[Text](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text)设置[copyOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#copyoption9)后长按或双击触发的文本菜单默认开启沉浸式系统材质。此模式下，沉浸式系统材质样式生效的优先级高于组件本身设置的背景色、模糊、阴影和边框样式。其他组件需开发者主动设置。 |
 | DISABLE | 2 | 禁用模式。所有组件禁止开启沉浸式系统材质，即使主动为组件设置沉浸式系统材质参数也不会生效。 |
 
 #### MaterialInfo
@@ -131,7 +131,7 @@ static get empty(): Material
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | state | [MaterialState](#materialstate) | 否 | 否 | 材质使能状态配置。 |
-| type | [MaterialType](#materialtype) | 否 | 否 | 材质类型标识，表示当前配置对应的材质类型。该值仅用于类型标识，不映射到底层功能。 |
+| type | [MaterialType](#materialtype) | 否 | 否 | 系统材质类型标识，表示当前配置对应的材质类型。该值仅用于类型标识，不映射到底层功能。 |
 
 #### uiMaterial.getMaterialInfo
 
@@ -175,7 +175,7 @@ getMaterialInfo(): MaterialInfo
 
 #### LightEffectOptions
 
-沉浸式材质的光感交互反馈配置。用于自定义反馈光感的颜色。
+沉浸式材质的光感交互反馈配置。光感交互反馈是指组件在用户触摸交互时，材质表面呈现动态光感变化的视觉效果。用于自定义反馈光感的颜色。
 
 起始版本： 26.0.0
 
@@ -205,10 +205,10 @@ getMaterialInfo(): MaterialInfo
 | --- | --- | --- | --- | --- |
 | style | [ImmersiveStyle](#immersivestyle) | 否 | 是 | 材质样式。不同样式对应不同的材质参数，影响材质的厚度。 **说明**：该参数仅对高算力和中算力设备的显示效果生效。 默认值：uiMaterial.ImmersiveStyle.REGULAR |
 | materialColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 材质层赋色。对于高算力和中算力设备，若不设置该参数或该参数为undefined，不额外混合纯色效果；若设置该参数为有效颜色值，该参数会为材质滤镜再混合一层纯色效果，若该颜色为纯不透明的颜色，会遮挡材质滤镜效果。对于低算力设备，若不设置该参数或该参数为undefined，生效低算力设备材质自带的背景色效果；若设置该参数为有效颜色值，该参数作为背景色[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)属性值。 **说明**：该参数对所有档位的算力设备的显示效果生效。 默认值：undefined |
-| colorInvert | boolean | 否 | 是 | 设置了材质对象的节点的子树是否自动适配材质到背景色的反色。 若为false，则不会自动反色。 若为true，则只有材质参数足够薄时才会自动反色。具体能反色的材质由系统定义，材质样式至少为THIN或ULTRA_THIN，且与设置应用的沉浸光感的强弱配置相关。材质越薄、沉浸光感越强，越容易符合反色材质的要求。 自动反色能力仅对部分属性接口设置特殊资源（见下表1）值时生效，生效的属性接口包括： Text组件的[fontColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#fontcolor)， Button组件的[fontColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#fontcolor)， SymbolGlyph组件的[fontColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-symbolglyph#fontcolor)， Image组件的[fillColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-image#fillcolor)， Search组件的[placeholderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-search#placeholdercolor)、[fontColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-search#fontcolor10)，[searchIcon](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-search#searchicon10)中的图标颜色、[cancelButton](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-search#cancelbutton10)中的图标颜色、[caretStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-search#caretstyle10)中的光标颜色，[searchButton](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-search#searchbutton) 中的按钮颜色， TabContent组件的[tabBar](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabcontent#tabbar)属性使用[BottomTabBarStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabcontent#bottomtabbarstyle9)， Chip组件的[prefixIcon](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-chip#prefixiconoptions)、suffixIcon属性的[fillColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-chip#iconcommonoptions)，[label](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-chip#labeloptions)属性的[fontColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-chip#labeloptions)， ChipGroup组件的[itemStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-chipgroup#chipgroup-1)的[fontColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-chipgroup#chipitemstyle)， TextArea组件的[fontColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textarea#fontcolor)、[placeholderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textarea#placeholdercolor)， TextInput组件的[fontColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textinput#fontcolor)、[placeholderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textinput#placeholdercolor)， SegmentButton组件的[fontColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-segmentbutton#属性-1)， Swiper组件的[fontColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-swiper#fontcolor)， 样式时其中的文本和图标颜色。 **说明**：该参数仅对高算力和中算力设备的显示效果生效。 默认值：false |
-| applyShadow | boolean | 否 | 是 | 是否添加材质的阴影效果。 当该参数为true时，材质中的阴影效果固定生效，优先于[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)通用属性。当该参数为false时，shadow通用属性生效，材质的阴影效果不生效。 **说明**：该参数仅对所有档位的算力设备的显示效果生效。 默认值：true |
+| colorInvert | boolean | 否 | 是 | 设置了材质对象的节点的子树是否自动适配材质到背景色的反色。 若为false，则不会自动反色。 若为true，则只有材质参数足够薄时才会自动反色。具体能反色的材质由系统定义，材质样式至少为THIN或ULTRA_THIN，且与设置应用的沉浸光感的强弱配置相关。材质越薄、沉浸光感越强，越容易符合反色材质的要求。 自动反色能力仅对部分属性接口设置特殊资源（见下表1）值时生效，生效的属性接口包括： Text组件的[fontColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#fontcolor)， Button组件的[fontColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#fontcolor)， SymbolGlyph组件的[fontColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-symbolglyph#fontcolor)， Image组件的[fillColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-image#fillcolor)， Search组件的[placeholderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-search#placeholdercolor)、[fontColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-search#fontcolor10)，[searchIcon](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-search#searchicon10)中的图标颜色、[cancelButton](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-search#cancelbutton10)中的图标颜色、[caretStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-search#caretstyle10)中的光标颜色，[searchButton](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-search#searchbutton) 中的按钮颜色， TabContent组件的[tabBar](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabcontent#tabbar)属性使用[BottomTabBarStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabcontent#bottomtabbarstyle9)， Chip组件的[prefixIcon](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-chip#prefixiconoptions)、suffixIcon属性的[fillColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-chip#iconcommonoptions)，[label](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-chip#labeloptions)属性的[fontColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-chip#labeloptions)， ChipGroup组件的[itemStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-chipgroup#chipgroup-1)的[fontColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-chipgroup#chipitemstyle)， TextArea组件的[fontColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textarea#fontcolor)、[placeholderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textarea#placeholdercolor)， TextInput组件的[fontColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textinput#fontcolor)、[placeholderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textinput#placeholdercolor)， SegmentButton组件的[fontColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-segmentbutton#属性-1)， Swiper组件的[fontColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-swiper#fontcolor)， 使用以上接口时，其中的文本和图标颜色会自动反色。 **说明**：该参数仅对高算力和中算力设备的显示效果生效。 默认值：false |
+| applyShadow | boolean | 否 | 是 | 是否添加材质的阴影效果。 当该参数为true时，材质中的阴影效果固定生效，优先于[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)通用属性。当该参数为false时，shadow通用属性生效，材质的阴影效果不生效。 **说明**：该参数对所有档位的算力设备的显示效果生效。 默认值：true |
 | interactive | boolean | 否 | 是 | 是否启用交互形变效果。 当该参数为true时，启用交互形变效果。当该参数为false时，不启用交互形变效果。 **说明**：该参数对所有档位的算力设备的显示效果生效。 默认值：false |
-| lightEffect | [LightEffectOptions](#lighteffectoptions) | null | 否 | 是 | 光感交互反馈效果参数。当该参数为null时，禁用光感交互反馈效果。 **说明**：该参数对所有档位的算力设备的显示效果生效。 默认值：undefined，不设置光感交互反馈效果。 |
+| lightEffect | [LightEffectOptions](#lighteffectoptions) | null | 否 | 是 | 光感交互反馈效果参数。传入LightEffectOptions对象时启用光感交互反馈；传入null时显式禁用光感交互反馈效果；不传入时默认为undefined，取决于组件是否默认有交互光感效果。 **说明**：该参数仅对支持沉浸式材质的高算力和中算力设备的显示效果生效。 默认值：undefined，不设置光感交互反馈效果。 |
 
 表1 特殊资源值对应的深浅色值
 
@@ -265,7 +265,7 @@ struct SystemMaterialPage {
 
         Column({ space: 30 }) {
           Column() {
-            Text("ULTRA_THIN")
+            Text('ULTRA_THIN')
           }
           .width(328)
           .height(56)
@@ -277,7 +277,7 @@ struct SystemMaterialPage {
           }))
 
           Column() {
-            Text("THIN")
+            Text('THIN')
           }
           .width(328)
           .height(56)
@@ -289,7 +289,7 @@ struct SystemMaterialPage {
           }))
 
           Column() {
-            Text("REGULAR")
+            Text('REGULAR')
           }
           .width(328)
           .height(56)
@@ -301,7 +301,7 @@ struct SystemMaterialPage {
           }))
 
           Column() {
-            Text("THICK")
+            Text('THICK')
           }
           .width(328)
           .height(56)
@@ -313,7 +313,7 @@ struct SystemMaterialPage {
           }))
 
           Column() {
-            Text("ULTRA_THICK")
+            Text('ULTRA_THICK')
           }
           .width(328)
           .height(56)
@@ -337,15 +337,15 @@ struct SystemMaterialPage {
 ```
  在低算力设备上表现：
 
-![](./img/zh-cn_image_0000002661610567.jpg)
+![](./img/zh-cn_image_0000002655846460.jpg)
 
 在中算力设备上表现：
 
-![](./img/zh-cn_image_0000002631411276.jpg)
+![](./img/zh-cn_image_0000002686085889.jpg)
 
 在高算力设备上表现：
 
-![](./img/zh-cn_image_0000002661730505.jpg)
+![](./img/zh-cn_image_0000002685926061.jpg)
 
 #### [h2]示例2（获取材质配置信息并使用空材质关闭沉浸式系统材质）
 
@@ -414,21 +414,22 @@ struct MaterialInfoPage {
     .height('100%')
     .justifyContent(FlexAlign.Center)
     // $r('app.media.img')需要替换为开发者所需的图像资源文件
-    .backgroundImage($r('app.media.img')).backgroundImageSize(ImageSize.FILL)
+    .backgroundImage($r('app.media.img'))
+    .backgroundImageSize(ImageSize.FILL)
   }
 }
 ```
  在高算力设备上表现：
 
-![](./img/zh-cn_image_0000002631412962.jpg)
+![](./img/zh-cn_image_0000002655848268.jpg)
 
 在中算力设备上表现：
 
-![](./img/zh-cn_image_0000002661732193.jpg)
+![](./img/zh-cn_image_0000002686087697.jpg)
 
 在低算力设备上表现：
 
-![](./img/zh-cn_image_0000002631253072.jpg)
+![](./img/zh-cn_image_0000002685927869.jpg)
 
 #### [h2]示例3（设置组件材质的交互形变效果）
 
@@ -437,7 +438,7 @@ struct MaterialInfoPage {
 从API版本26.0.0开始，新增interactive接口。
 
 ```
-import { uiMaterial } from '@kit.ArkUI'
+import { uiMaterial } from '@kit.ArkUI';
 
 @Entry
 @Component
@@ -448,7 +449,7 @@ struct Index {
       Image($r('app.media.startIcon'))
       Column() {
         Column() {
-          Text("Context")
+          Text('Context')
         }
         .margin({ bottom: 100 })
         .width(248)
@@ -465,7 +466,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631411270.gif)
+ ![](./img/zh-cn_image_0000002686085883.gif)
 
 #### [h2]示例4（设置组件材质的光感交互反馈效果）
 
@@ -482,6 +483,7 @@ struct LightEffect {
   @State itemsKey: number[] = [0, 1, 2];
   @State circleRadius: number = 40;
   @State spaceValue: number = 10;
+  // 创建沉浸式材质对象，启用交互形变和光感交互反馈效果（lightEffect.color为undefined时使用默认白色光感颜色）
   @State myMaterial: uiMaterial.Material = new uiMaterial.ImmersiveMaterial({
     style: uiMaterial.ImmersiveStyle.ULTRA_THIN,
     interactive: true,
@@ -511,4 +513,4 @@ struct LightEffect {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661730499.gif)
+ ![](./img/zh-cn_image_0000002656008190.gif)

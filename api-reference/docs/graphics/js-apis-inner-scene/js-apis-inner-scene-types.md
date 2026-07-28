@@ -2,13 +2,13 @@
 title: "SceneType"
 upstream_id: "harmonyos-references/js-apis-inner-scene-types"
 catalog: "harmonyos-references"
-content_hash: "c881110595dd"
-synced_at: "2026-07-17T16:19:32.887075"
+content_hash: "18dfa337ab20"
+synced_at: "2026-07-28T16:52:22.322778"
 ---
 
 # SceneType
 
-本模块提供3D图形中常用的数据类型。
+本模块提供ArkGraphics 3D中常用的数据类型。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -45,7 +45,7 @@ import { Vec2, Vec3, Vec4, Quaternion, Aabb, Color, Rect, RenderingPipelineType,
 
 #### Vec4
 
-四维向量，通常用于表示4D空间中的点、方向或向量变换，由x、y、z和w四个分量组成，增加第四个分量为各种计算和变换增加了规整性和便捷性。
+四维向量，通常用于表示4D空间中的点、方向或向量变换，由x、y、z和w四个分量组成。
 
 系统能力： SystemCapability.ArkUi.Graphics3D
 
@@ -228,11 +228,11 @@ import { Vec2, Vec3, Vec4, Quaternion, Aabb, Color, Rect, RenderingPipelineType,
 
 以radius=0.5，height=1，segmentCount=20为例，生成圆柱体的网格以及UV布局如下：
 
-![](./img/zh-cn_image_0000002671435619.png)
+![](./img/zh-cn_image_0000002656009730.png)
 
 #### Mat4x423+
 
-相机矩阵，它是一个将三维世界坐标映射到二维图像坐标的数学工具。
+4x4矩阵类型，可用于坐标变换。
 
 系统能力： SystemCapability.ArkUi.Graphics3D
 

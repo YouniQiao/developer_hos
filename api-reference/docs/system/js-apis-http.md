@@ -2,8 +2,8 @@
 title: "@ohos.net.http (数据请求)"
 upstream_id: "harmonyos-references/js-apis-http"
 catalog: "harmonyos-references"
-content_hash: "e85399e4ecd8"
-synced_at: "2026-07-09T00:59:27.520004"
+content_hash: "09851695b489"
+synced_at: "2026-07-28T16:50:43.234870"
 ---
 
 # @ohos.net.http (数据请求)
@@ -241,8 +241,9 @@ HTTP错误码映射关系：2300000 + curl错误码。更多常用错误码可�
 | 2300077 | The SSL CA certificate does not exist or is inaccessible. |
 | 2300078 | Remote file not found. |
 | 2300094 | Authentication error. |
-| 2300997 | Cleartext traffic not permitted. |
-| 2300998 | It is not allowed to access this domain. |
+| 2300996 | The request was intercepted by the HTTP global interceptor. 适用版本：26.0.0+ |
+| 2300997 | Cleartext traffic not permitted. 适用版本：18+ |
+| 2300998 | It is not allowed to access this domain. 适用版本：12+ |
 | 2300999 | Internal error. |
 
 示例：
@@ -328,8 +329,9 @@ HTTP错误码映射关系：2300000 + curl错误码。更多常用错误码可�
 | 2300077 | The SSL CA certificate does not exist or is inaccessible. |
 | 2300078 | Remote file not found. |
 | 2300094 | Authentication error. |
-| 2300997 | Cleartext traffic not permitted. |
-| 2300998 | It is not allowed to access this domain. |
+| 2300996 | The request was intercepted by the HTTP global interceptor. 适用版本：26.0.0+ |
+| 2300997 | Cleartext traffic not permitted. 适用版本：18+ |
+| 2300998 | It is not allowed to access this domain. 适用版本：12+ |
 | 2300999 | Internal error. |
 
 示例：
@@ -445,8 +447,9 @@ HTTP错误码映射关系：2300000 + curl错误码。更多常用错误码可�
 | 2300077 | The SSL CA certificate does not exist or is inaccessible. |
 | 2300078 | Remote file not found. |
 | 2300094 | Authentication error. |
-| 2300997 | Cleartext traffic not permitted. |
-| 2300998 | It is not allowed to access this domain. |
+| 2300996 | The request was intercepted by the HTTP global interceptor. 适用版本：26.0.0+ |
+| 2300997 | Cleartext traffic not permitted. 适用版本：18+ |
+| 2300998 | It is not allowed to access this domain. 适用版本：12+ |
 | 2300999 | Internal error. |
 
 示例：
@@ -558,8 +561,9 @@ HTTP错误码映射关系：2300000 + curl错误码。更多常用错误码可�
 | 2300077 | The SSL CA certificate does not exist or is inaccessible. |
 | 2300078 | Remote file not found. |
 | 2300094 | Authentication error. |
-| 2300997 | Cleartext traffic not permitted. |
-| 2300998 | It is not allowed to access this domain. |
+| 2300996 | The request was intercepted by the HTTP global interceptor. 适用版本：26.0.0+ |
+| 2300997 | Cleartext traffic not permitted. 适用版本：18+ |
+| 2300998 | It is not allowed to access this domain. 适用版本：12+ |
 | 2300999 | Internal error. |
 
 示例：
@@ -636,8 +640,9 @@ HTTP错误码映射关系：2300000 + curl错误码。更多常用错误码可�
 | 2300077 | The SSL CA certificate does not exist or is inaccessible. |
 | 2300078 | Remote file not found. |
 | 2300094 | Authentication error. |
-| 2300997 | Cleartext traffic not permitted. |
-| 2300998 | It is not allowed to access this domain. |
+| 2300996 | The request was intercepted by the HTTP global interceptor. 适用版本：26.0.0+ |
+| 2300997 | Cleartext traffic not permitted. 适用版本：18+ |
+| 2300998 | It is not allowed to access this domain. 适用版本：12+ |
 | 2300999 | Internal error. |
 
 示例：
@@ -741,8 +746,9 @@ HTTP错误码映射关系：2300000 + curl错误码。更多常用错误码可�
 | 2300077 | The SSL CA certificate does not exist or is inaccessible. |
 | 2300078 | Remote file not found. |
 | 2300094 | Authentication error. |
-| 2300997 | Cleartext traffic not permitted. |
-| 2300998 | It is not allowed to access this domain. |
+| 2300996 | The request was intercepted by the HTTP global interceptor. 适用版本：26.0.0+ |
+| 2300997 | Cleartext traffic not permitted. 适用版本：18+ |
+| 2300998 | It is not allowed to access this domain. 适用版本：12+ |
 | 2300999 | Internal error. |
 
 示例：
@@ -844,6 +850,7 @@ HTTP错误码映射关系：2300000 + curl错误码。更多常用错误码可�
 | 2300077 | The SSL CA certificate does not exist or is inaccessible. |
 | 2300078 | Remote file not found. |
 | 2300094 | Authentication error. |
+| 2300996 | The request was intercepted by the HTTP global interceptor. |
 | 2300997 | Cleartext traffic not permitted. |
 | 2300998 | It is not allowed to access this domain. |
 | 2300999 | Internal error. |
@@ -1071,7 +1078,7 @@ once(type: "headersReceive", callback: Callback<Object>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 订阅的事件类型：'headersReceive'。 |
+| type | string | 是 | 订阅事件，固定为'headersReceive'。headersReceive：响应头接收事件。 |
 | callback | Callback | 是 | 回调函数。返回HTTP响应头对象。 |
 
 示例：
@@ -1099,7 +1106,7 @@ on(type: "dataReceive", callback: Callback<ArrayBuffer>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 订阅事件，固定为'headersReceive'。headersReceive：响应头接收事件。 |
+| type | string | 是 | 订阅的事件类型，'dataReceive'。 |
 | callback | Callback | 是 | 回调函数。当订阅成功时，err为undefined，data为获取到的HTTP流式数据接收数据，类型为ArrayBuffer；否则为错误对象。 |
 
 示例：
@@ -1520,8 +1527,8 @@ HTTP请求交互的详细信息。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| sendSize | number | 否 | 否 | 每次发送的数据量(单位：字节)。 |
-| totalSize | number | 否 | 否 | 总共要发送的数据量(单位：字节)。 |
+| sendSize | number | 否 | 否 | 每次发送的数据量(单位：Byte)。 |
+| totalSize | number | 否 | 否 | 总共要发送的数据量(单位：Byte)。 |
 
 #### MultiFormData11+
 
@@ -1950,7 +1957,7 @@ TLS配置。
 
 #### RemoteValidation18+
 
-type RemoteValidation = 'system' | 'skip'
+type RemoteValidation = 'system' | 'skip' | ValidationCallback
 
 验证远程服务器身份的方式。
 
@@ -1962,6 +1969,64 @@ type RemoteValidation = 'system' | 'skip'
 | --- | --- |
 | 'system' | 表示使用系统CA验证远端服务器身份，值固定为'system'字符串，是未配置时的默认值。 |
 | 'skip' | 表示跳过验证远端服务器身份流程，值固定为'skip'字符串。 |
+| [ValidationCallback](#validationcallback) | 表示使用自定义验证方式验证远端服务器身份。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 |
+
+#### X509Cert
+
+type X509Cert = cert.X509Cert
+
+X509证书对象。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力：SystemCapability.Communication.NetStack
+
+| 类型 | 说明 |
+| --- | --- |
+| [cert.X509Cert](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-cert#x509cert) | X509证书对象。 |
+
+#### ValidationContext
+
+验证远端服务器身份时的证书上下文信息，作为[ValidationCallback](#validationcallback)的参数传入。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力：SystemCapability.Communication.NetStack
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| pemCerts | string[] | 否 | 否 | PEM格式的证书原始数据。 |
+| x509Certs | [X509Cert](#x509cert)[] | 否 | 否 | X509证书链。 |
+| host | string | 否 | 否 | 本次请求的目标主机名。 |
+| ip | string | 否 | 否 | 本次请求实际连接的IP地址。 |
+
+#### ValidationCallback
+
+type ValidationCallback = (context: ValidationContext) => boolean | Promise<boolean>
+
+自定义远端服务器身份验证回调函数。开发者可通过此回调实现自定义的证书验证逻辑，支持同步或异步返回验证结果。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力：SystemCapability.Communication.NetStack
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| context | [ValidationContext](#validationcontext) | 是 | 证书验证上下文，包含证书链、主机名和IP地址等信息。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| boolean | Promise | 返回布尔值表示验证是否通过。true表示验证通过，false表示验证不通过。支持返回Promise对象，用于异步验证场景。 |
 
 #### AuthenticationType18+
 

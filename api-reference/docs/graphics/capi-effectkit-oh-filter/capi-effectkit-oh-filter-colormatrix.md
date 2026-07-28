@@ -2,14 +2,16 @@
 title: "OH_Filter_ColorMatrix"
 upstream_id: "harmonyos-references/capi-effectkit-oh-filter-colormatrix"
 catalog: "harmonyos-references"
-content_hash: "8c612343477b"
-synced_at: "2026-07-09T01:01:01.457788"
+content_hash: "b93a1fc2b1df"
+synced_at: "2026-07-28T16:52:17.135316"
 ---
 
 # OH_Filter_ColorMatrix
 
 ```
-struct OH_Filter_ColorMatrix {...}
+struct OH_Filter_ColorMatrix {
+    // ...
+};
 ```
 
 #### 概述

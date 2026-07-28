@@ -2,8 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-map"
 catalog: "harmonyos-references"
-content_hash: "568b5d45367e"
-synced_at: "2026-07-09T01:01:27.662487"
+content_hash: "e90bc0c96351"
+synced_at: "2026-07-28T16:52:46.019929"
 ---
 
 # ArkTS API错误码
@@ -46,7 +46,7 @@ Failed to connect to the Map Kit server.
 处理步骤
 
 1. 检查设备网络状态。
-2. 清除旧证书配置后，重新自动签名，并配置client_id和证书指纹；从HarmonyOS 5.0.2(14)版本开始，可参考[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-config-agc)进行配置。 ![](./img/zh-cn_image_0000002631254614.png) ![](./img/zh-cn_image_0000002661613799.png)
+2. 清除旧证书配置后，重新自动签名，并配置client_id和证书指纹；从HarmonyOS 5.0.2(14)版本开始，可参考[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-config-agc)进行配置。 ![](./img/zh-cn_image_0000002685929413.png) ![](./img/zh-cn_image_0000002656009738.png)
 3. 如未解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。
 
 #### 1002600003 应用身份校验失败
@@ -70,12 +70,12 @@ App authentication failed.
 
 处理步骤
 
-1. 检查module.json5文件中配置的client_id与AGC上是否一致。 ![](./img/zh-cn_image_0000002631414510.png) ![](./img/zh-cn_image_0000002661733737.png)
+1. 检查module.json5文件中配置的client_id与AGC上是否一致。 ![](./img/zh-cn_image_0000002655849816.png) ![](./img/zh-cn_image_0000002686089247.png)
 2. 重新生成公钥指纹（[自动生成签名证书指纹](https://developer.huawei.com/consumer/cn/doc/app/agc-help-signature-info-0000001628566748#section958212134217)/[手动生成签名证书指纹](https://developer.huawei.com/consumer/cn/doc/app/agc-help-signature-info-0000001628566748#section2049119231438)），然后在AGC上[配置公钥指纹](https://developer.huawei.com/consumer/cn/doc/app/agc-help-cert-fingerprint-0000002278002933)。
 3. 检查设备网络状态后重新尝试。
 4. 将设备的系统时间往后调整1天。
 5. 请根据[开通地图服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-config-agc#开通地图服务)，先打开地图服务开关，然后重新[申请调试Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-debugprofile-0000001914423102)，并[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
-6. 自动签名证书不匹配有两种解决方案： 方案一：将本地已生成的csr签名，通过AGC重新生成新的调试证书，然后通过新的调试证书选择生成新的指纹证书。 自动签名默认已生成的csr签名在如下图路径下，马赛克部分为用户名。 ![](./img/zh-cn_image_0000002631254616.png) 在AGC上新增证书，将上述所选csr文件选中并生成新的调试证书。 ![](./img/zh-cn_image_0000002661613801.png) 然后添加公钥指纹，选中刚才自己生成调试证书即可。（需注意，配置完成后由于鉴权缓存，可能还是无法马上显示地图，须清除缓存或者将设备的系统时间往后调整1天，才能立刻显示地图。） ![](./img/zh-cn_image_0000002631414512.png) 方案二：将本地配置自动签名证书和AGC上调试证书全部删除，重新生成新的自动签名，调试证书会自动生成，并用新的调试证书生成公钥指纹。 将build-profile.json5文件下signingConfigs参数删除。 ![](./img/zh-cn_image_0000002661733739.png) 将config文件夹下所有内容删除。 ![](./img/zh-cn_image_0000002631254618.png) 将AGC上自动签名生成的调试证书删除。 ![](./img/zh-cn_image_0000002661613803.png) 将旧证书删除后生成新的自动签名，调试证书会被同步创建，然后用新生成的调试证书生成新的指纹即可。（需注意，配置完成后由于鉴权缓存，可能还是无法马上显示地图，须清除缓存或者将设备的系统时间往后调整1天，才能立刻显示地图。） ![](./img/zh-cn_image_0000002631414514.png)
+6. 自动签名证书不匹配有两种解决方案： 方案一：将本地已生成的csr签名，通过AGC重新生成新的调试证书，然后通过新的调试证书选择生成新的指纹证书。 自动签名默认已生成的csr签名在如下图路径下，马赛克部分为用户名。 ![](./img/zh-cn_image_0000002685929415.png) 在AGC上新增证书，将上述所选csr文件选中并生成新的调试证书。 ![](./img/zh-cn_image_0000002656009740.png) 然后添加公钥指纹，选中刚才自己生成调试证书即可。（需注意，配置完成后由于鉴权缓存，可能还是无法马上显示地图，须清除缓存或者将设备的系统时间往后调整1天，才能立刻显示地图。） ![](./img/zh-cn_image_0000002655849818.png) 方案二：将本地配置自动签名证书和AGC上调试证书全部删除，重新生成新的自动签名，调试证书会自动生成，并用新的调试证书生成公钥指纹。 将build-profile.json5文件下signingConfigs参数删除。 ![](./img/zh-cn_image_0000002686089249.png) 将config文件夹下所有内容删除。 ![](./img/zh-cn_image_0000002685929417.png) 将AGC上自动签名生成的调试证书删除。 ![](./img/zh-cn_image_0000002656009742.png) 将旧证书删除后生成新的自动签名，调试证书会被同步创建，然后用新生成的调试证书生成新的指纹即可。（需注意，配置完成后由于鉴权缓存，可能还是无法马上显示地图，须清除缓存或者将设备的系统时间往后调整1天，才能立刻显示地图。） ![](./img/zh-cn_image_0000002655849820.png)
 7. 如未解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。
 
 #### 1002600004 应用没有开通地图服务权限
@@ -96,7 +96,7 @@ The Map permission is not enabled.
 处理步骤
 
 1. [开通地图服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-config-agc#开通地图服务)。
-2. 配置client_id。 ![](./img/zh-cn_image_0000002661733741.png)
+2. 配置client_id。 ![](./img/zh-cn_image_0000002686089251.png)
 3. 如未解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。
 
 #### 1002600005 网络不可用
@@ -299,7 +299,97 @@ The heatmap ID already exists.
 
 处理步骤
 
-尝试更换ID或请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。
+尝试更换ID，如果不能解决可以[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。
+
+#### 1002600017 该应用缺少地图信号预测功能的权限
+
+错误信息
+
+The app lacks permission for the map signal prediction capability.
+
+错误描述
+
+该应用缺少地图信号预测功能的权限。
+
+可能原因
+
+该应用缺少地图信号预测功能的权限。
+
+处理步骤
+
+尝试[开通信号预测能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-map-signal-line#开通信号预测能力)。
+
+#### 1002600018 信号路线中的signalId已存在
+
+错误信息
+
+signalId in the signal route already exists.
+
+错误描述
+
+信号路线中的signalId已存在。
+
+可能原因
+
+信号路线中的signalId已存在。
+
+处理步骤
+
+更改signalId，如果不能解决可以[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。
+
+#### 1002600019 路线长度超过最大限制200公里
+
+错误信息
+
+The route length exceeds the maximum limit of 200 km.
+
+错误描述
+
+路线长度超过最大限制200公里。
+
+可能原因
+
+路线长度超过最大限制200公里。
+
+处理步骤
+
+减少路线长度，如果不能解决可以[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。
+
+#### 1002600020 无效的运营商
+
+错误信息
+
+Invalid carrier.
+
+错误描述
+
+无效的运营商。
+
+可能原因
+
+未插SIM卡。
+
+处理步骤
+
+检查SIM卡是否正常，如果不能解决可以[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。
+
+#### 1002600021 路由信号不可预测
+
+错误信息
+
+The route signal is unpredictable.
+
+错误描述
+
+路由信号不可预测。
+
+可能原因
+
+传入的经纬度无法预测出路线结果。
+
+处理步骤
+
+建议检查传入的经纬度数据，然后重新调用[信号路线](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#addsignalline)接口。
 
 #### 1002600999 未知错误
 

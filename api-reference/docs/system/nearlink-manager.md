@@ -2,8 +2,8 @@
 title: "manager（星闪开关能力）"
 upstream_id: "harmonyos-references/nearlink-manager"
 catalog: "harmonyos-references"
-content_hash: "c799facdfffb"
-synced_at: "2026-07-09T00:59:26.519117"
+content_hash: "759ebf0bdbfc"
+synced_at: "2026-07-28T16:50:41.886819"
 ---
 
 # manager（星闪开关能力）
@@ -171,7 +171,7 @@ getLocalName(): string
 | --- | --- |
 | 201 | Permission denied. |
 | 801 | Capability not supported. |
-| 1009700003 | Nearlink is off. |
+| 1009700003 | NearLink is off. |
 | 1009700099 | Operation failed. |
 
 示例：
@@ -182,7 +182,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
   let name: string = manager.getLocalName();
-  console.info('state:' + JSON.stringify(name));
+  console.info('name:' + JSON.stringify(name));
 } catch (err) {
   console.error('errCode: ' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);
 }
@@ -216,7 +216,7 @@ getPairedDevices(): Array<string>
 | --- | --- |
 | 201 | Permission denied. |
 | 801 | Capability not supported. |
-| 1009700003 | Nearlink is off. |
+| 1009700003 | NearLink is off. |
 | 1009700099 | Operation failed. |
 
 示例：
@@ -627,6 +627,7 @@ try {
 | preState | [PairingState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-constant#pairingstate) | 否 | 否 | 本次上报之前的配对状态。 |
 | state | [PairingState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-constant#pairingstate) | 否 | 否 | 当前配对状态。 |
 | reason | [PairingReason](#pairingreason) | 否 | 否 | 原因值。 |
+| reasonMsg | string | 否 | 是 | 原因详情。该字段仅用于日志信息，不应用于逻辑处理。 **起始版本：** 26.0.0 |
 
 #### PairingRequestParam
 
@@ -660,6 +661,7 @@ try {
 | preState | [ConnectionState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-constant#connectionstate) | 否 | 否 | 本次上报之前的连接状态。 |
 | state | [ConnectionState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-constant#connectionstate) | 否 | 否 | 当前连接状态。 |
 | connectionReason | [ConnectionReason](#connectionreason) | 否 | 否 | 原因值。 |
+| reasonMsg | string | 否 | 是 | 原因详情。该字段仅用于日志信息，不应用于逻辑处理。 **起始版本：** 26.0.0 |
 
 #### NearlinkState
 
@@ -695,7 +697,7 @@ try {
 | PAIRING_REASON_PROFILE_UNSUPPORTED | 2 | 表示对端设备不支持服务导致配对失败。 **起始版本：** 5.1.0(18) |
 | PAIRING_REASON_EXCEED_ACB_MAX | 3 | 表示连接设备数已达上限导致配对失败。 **起始版本：** 5.1.0(18) |
 | PAIRING_REASON_REMOTE_CANCELED | 4 | 表示对端设备取消配对导致配对失败。 **起始版本：** 5.1.0(18) |
-| PAIRING_REASON_LOCAL_CANCELED | 5 | 表示本端设备取消配对导致配对失败。 **起始版本**：5.1.0(18) |
+| PAIRING_REASON_LOCAL_CANCELED | 5 | 表示本端设备取消配对导致配对失败。 **起始版本：** 5.1.0(18) |
 
 #### PairingType
 

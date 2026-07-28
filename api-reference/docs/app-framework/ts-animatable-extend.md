@@ -1,12 +1,12 @@
 ---
-title: "定义可动画属性 (@AnimatableExtend)"
+title: "@AnimatableExtend：定义可动画属性"
 upstream_id: "harmonyos-references/ts-animatable-extend"
 catalog: "harmonyos-references"
-content_hash: "abf80fbf04de"
-synced_at: "2026-07-09T00:58:13.939350"
+content_hash: "f0fdd521f7eb"
+synced_at: "2026-07-28T16:47:56.604252"
 ---
 
-# 定义可动画属性 (@AnimatableExtend)
+# @AnimatableExtend：定义可动画属性
 
 @AnimatableExtend装饰器用于自定义可动画的属性方法，该装饰器内定义的函数在动画过程中会被逐帧调用，直到动画结束。该装饰器的常见用途有：
 
@@ -45,7 +45,7 @@ synced_at: "2026-07-09T00:58:13.939350"
 
 plus(rhs: AnimatableArithmetic<T>): AnimatableArithmetic<T>
 
-定义数据类型的加法运算规则。
+定义该数据类型的加法运算规则。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -55,7 +55,7 @@ plus(rhs: AnimatableArithmetic<T>): AnimatableArithmetic<T>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| rhs | [AnimatableArithmetic](#animatablearithmetict) | 是 | 加法运算的对象。 |
+| rhs | [AnimatableArithmetic](#animatablearithmetict) | 是 | 与自身进行加法运算的另一个数据对象。 |
 
 返回值：
 
@@ -77,7 +77,7 @@ subtract(rhs: AnimatableArithmetic<T>): AnimatableArithmetic<T>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| rhs | [AnimatableArithmetic](#animatablearithmetict) | 是 | 减法运算的对象。 |
+| rhs | [AnimatableArithmetic](#animatablearithmetict) | 是 | 与自身进行减法运算的另一个数据对象。 |
 
 返回值：
 
@@ -121,7 +121,7 @@ equals(rhs: AnimatableArithmetic<T>): boolean
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| rhs | [AnimatableArithmetic](#animatablearithmetict) | 是 | 和自身比较相等的另一个数据对象。 |
+| rhs | [AnimatableArithmetic](#animatablearithmetict) | 是 | 与当前对象判断是否相等的另一个数据对象。 |
 
 返回值：
 
@@ -160,7 +160,7 @@ struct AnimatablePropertyExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732911.gif)
+ ![](./img/zh-cn_image_0000002685928579.gif)
 
 #### [h2]示例2（折线的动画效果）
 
@@ -172,8 +172,8 @@ class Point {
   y: number
 
   constructor(x: number, y: number) {
-    this.x = x
-    this.y = y
+    this.x = x;
+    this.y = y;
   }
 
   plus(rhs: Point): Point {
@@ -265,7 +265,7 @@ struct AnimatablePropertyExample {
     Column() {
       Polyline()
         .animatablePoints(this.points)
-        .animation({ duration: 1000, curve: Curve.Ease })// 设置动画参数
+        .animation({ duration: 1000, curve: Curve.Ease }) // 设置动画参数
         .size({ height: 220, width: 300 })
         .fill(Color.Green)
         .stroke(Color.Red)
@@ -286,4 +286,4 @@ struct AnimatablePropertyExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253790.gif)
+ ![](./img/zh-cn_image_0000002656008900.gif)

@@ -2,13 +2,13 @@
 title: "@ohos.account.distributedAccount (分布式账号管理)"
 upstream_id: "harmonyos-references/js-apis-distributed-account"
 catalog: "harmonyos-references"
-content_hash: "6c23b303580a"
-synced_at: "2026-07-09T00:59:39.360723"
+content_hash: "8f510e88b830"
+synced_at: "2026-07-28T16:50:56.255191"
 ---
 
 # @ohos.account.distributedAccount (分布式账号管理)
 
-本模块提供管理分布式账号的一些基础功能，主要包括查询和更新账号登录状态。
+本模块提供管理分布式账号的一些基础功能，主要包括查询和更新账号登录状态。适用于多设备协同场景，提升跨设备账号管理的一致性和用户体验。典型使用场景包括多设备协同、分布式数据同步、跨设备能力调用等。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -22,7 +22,7 @@ import { distributedAccount } from '@kit.BasicServicesKit';
 
 getDistributedAccountAbility(): DistributedAccountAbility
 
-获取分布式账号单实例对象。
+获取分布式账号的单实例对象。
 
 系统能力： SystemCapability.Account.OsAccount
 
@@ -35,12 +35,13 @@ getDistributedAccountAbility(): DistributedAccountAbility
 示例：
 
 ```
+// 获取分布式账号的单实例对象
 const accountAbility: distributedAccount.DistributedAccountAbility = distributedAccount.getDistributedAccountAbility();
 ```
 
 #### DistributedAccountAbility
 
-提供查询和更新分布式账号登录状态方法（需要先获取分布式账号的单实例对象）。
+提供查询和更新分布式账号登录状态方法（使用前需要先获取分布式账号的单实例对象）。
 
 #### [h2]getOsAccountDistributedInfo9+
 
@@ -56,7 +57,7 @@ getOsAccountDistributedInfo(callback: AsyncCallback<DistributedInfo>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback | 是 | 回调参数。当获取分布式账号信息成功，err为undefined，data为获取到的分布式账号信息对象；否则为错误对象。 |
+| callback | AsyncCallback | 是 | 回调函数。当获取分布式账号信息成功时，err为undefined，data为获取到的分布式账号信息对象；否则err为错误对象。 |
 
 错误码：
 
@@ -73,6 +74,7 @@ getOsAccountDistributedInfo(callback: AsyncCallback<DistributedInfo>): void
 ```
 import { BusinessError } from '@kit.BasicServicesKit';
 
+// 获取分布式账号的单实例对象
 const accountAbility: distributedAccount.DistributedAccountAbility = distributedAccount.getDistributedAccountAbility();
 try {
   accountAbility.getOsAccountDistributedInfo(
@@ -119,6 +121,7 @@ getOsAccountDistributedInfo(): Promise<DistributedInfo>
 ```
 import { BusinessError } from '@kit.BasicServicesKit';
 
+// 获取分布式账号的单实例对象
 const accountAbility: distributedAccount.DistributedAccountAbility = distributedAccount.getDistributedAccountAbility();
 try {
   accountAbility.getOsAccountDistributedInfo().then((data: distributedAccount.DistributedInfo) => {
@@ -138,7 +141,7 @@ queryOsAccountDistributedInfo(callback: AsyncCallback<DistributedInfo>): void
 
 获取分布式账号信息。使用callback异步回调。
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃。建议使用[getOsAccountDistributedInfo](#getosaccountdistributedinfo9)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，建议使用[getOsAccountDistributedInfo](#getosaccountdistributedinfo9)替代。
 
 系统能力： SystemCapability.Account.OsAccount
 
@@ -148,13 +151,14 @@ queryOsAccountDistributedInfo(callback: AsyncCallback<DistributedInfo>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback | 是 | 回调函数。当获取分布式账号信息成功，err为undefined，data为获取到的分布式账号信息对象；否则为错误对象。 |
+| callback | AsyncCallback | 是 | 回调函数。当获取分布式账号信息成功时，err为undefined，data为获取到的分布式账号信息对象；否则err为错误对象。 |
 
 示例：
 
 ```
 import { BusinessError } from '@kit.BasicServicesKit';
 
+// 获取分布式账号的单实例对象
 const accountAbility: distributedAccount.DistributedAccountAbility = distributedAccount.getDistributedAccountAbility();
 accountAbility.queryOsAccountDistributedInfo(
   (err: BusinessError, data: distributedAccount.DistributedInfo) => {
@@ -172,7 +176,7 @@ queryOsAccountDistributedInfo(): Promise<DistributedInfo>
 
 获取分布式账号信息。使用Promise异步回调。
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃。建议使用[getOsAccountDistributedInfo](#getosaccountdistributedinfo9-1)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，建议使用[getOsAccountDistributedInfo](#getosaccountdistributedinfo9-1)替代。
 
 系统能力： SystemCapability.Account.OsAccount
 
@@ -189,6 +193,7 @@ queryOsAccountDistributedInfo(): Promise<DistributedInfo>
 ```
 import { BusinessError } from '@kit.BasicServicesKit';
 
+// 获取分布式账号的单实例对象
 const accountAbility: distributedAccount.DistributedAccountAbility = distributedAccount.getDistributedAccountAbility();
 accountAbility.queryOsAccountDistributedInfo().then((data: distributedAccount.DistributedInfo) => {
   console.info('distributed information: ' + JSON.stringify(data));
@@ -212,7 +217,7 @@ setOsAccountDistributedInfo(accountInfo: DistributedInfo, callback: AsyncCallbac
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | accountInfo | [DistributedInfo](#distributedinfo) | 是 | 分布式账号信息。 |
-| callback | AsyncCallback | 是 | 回调函数。当更新分布式账号信息成功时，err为undefined，否则为错误对象。 |
+| callback | AsyncCallback | 是 | 回调函数。当更新分布式账号信息成功时，err为undefined，否则err为错误对象。 |
 
 错误码：
 
@@ -231,7 +236,9 @@ setOsAccountDistributedInfo(accountInfo: DistributedInfo, callback: AsyncCallbac
 ```
 import { BusinessError } from '@kit.BasicServicesKit';
 
+// 获取分布式账号的单实例对象
 const accountAbility: distributedAccount.DistributedAccountAbility = distributedAccount.getDistributedAccountAbility();
+// 示例值，实际使用时请通过getOsAccountDistributedInfo获取真实分布式账号信息
 let accountInfo: distributedAccount.DistributedInfo =
   { id: '12345', name: 'ZhangSan', event: 'Ohos.account.event.LOGIN' };
 try {
@@ -268,7 +275,7 @@ setOsAccountDistributedInfo(accountInfo: DistributedInfo): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，无返回结果的Promise对象。 |
+| Promise | Promise对象，无返回结果。 |
 
 错误码：
 
@@ -287,7 +294,9 @@ setOsAccountDistributedInfo(accountInfo: DistributedInfo): Promise<void>
 ```
 import { BusinessError } from '@kit.BasicServicesKit';
 
+// 获取分布式账号的单实例对象
 const accountAbility: distributedAccount.DistributedAccountAbility = distributedAccount.getDistributedAccountAbility();
+// 示例值，实际使用时请通过getOsAccountDistributedInfo获取真实分布式账号信息
 let accountInfo: distributedAccount.DistributedInfo =
   { id: '12345', name: 'ZhangSan', event: 'Ohos.account.event.LOGIN' };
 try {
@@ -308,7 +317,7 @@ updateOsAccountDistributedInfo(accountInfo: DistributedInfo, callback: AsyncCall
 
 更新分布式账号信息。使用callback异步回调。
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃。建议使用[setOsAccountDistributedInfo](#setosaccountdistributedinfo9)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，建议使用[setOsAccountDistributedInfo](#setosaccountdistributedinfo9)替代。
 
 系统能力： SystemCapability.Account.OsAccount
 
@@ -319,14 +328,16 @@ updateOsAccountDistributedInfo(accountInfo: DistributedInfo, callback: AsyncCall
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | accountInfo | [DistributedInfo](#distributedinfo) | 是 | 分布式账号信息。 |
-| callback | AsyncCallback | 是 | 回调函数。当更新分布式账号信息成功时，err为undefined，否则为错误对象。 |
+| callback | AsyncCallback | 是 | 回调函数。当更新分布式账号信息成功时，err为undefined，否则err为错误对象。 |
 
 示例：
 
 ```
 import { BusinessError } from '@kit.BasicServicesKit';
 
+// 获取分布式账号的单实例对象
 const accountAbility: distributedAccount.DistributedAccountAbility = distributedAccount.getDistributedAccountAbility();
+// 示例值，实际使用时请通过getOsAccountDistributedInfo获取真实分布式账号信息
 let accountInfo: distributedAccount.DistributedInfo =
   { id: '12345', name: 'ZhangSan', event: 'Ohos.account.event.LOGIN' };
 accountAbility.updateOsAccountDistributedInfo(accountInfo, (err: BusinessError) => {
@@ -344,7 +355,7 @@ updateOsAccountDistributedInfo(accountInfo: DistributedInfo): Promise<void>
 
 更新分布式账号信息。使用Promise异步回调。
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃。建议使用[setOsAccountDistributedInfo](#setosaccountdistributedinfo9-1)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，建议使用[setOsAccountDistributedInfo](#setosaccountdistributedinfo9-1)替代。
 
 系统能力： SystemCapability.Account.OsAccount
 
@@ -360,14 +371,16 @@ updateOsAccountDistributedInfo(accountInfo: DistributedInfo): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，无返回结果的Promise对象。 |
+| Promise | Promise对象，无返回结果。 |
 
 示例：
 
 ```
 import { BusinessError } from '@kit.BasicServicesKit';
 
+// 获取分布式账号的单实例对象
 const accountAbility: distributedAccount.DistributedAccountAbility = distributedAccount.getDistributedAccountAbility();
+// 示例值，实际使用时请通过getOsAccountDistributedInfo获取真实分布式账号信息
 let accountInfo: distributedAccount.DistributedInfo =
   { id: '12345', name: 'ZhangSan', event: 'Ohos.account.event.LOGIN' };
 accountAbility.updateOsAccountDistributedInfo(accountInfo).then(() => {
@@ -379,7 +392,7 @@ accountAbility.updateOsAccountDistributedInfo(accountInfo).then(() => {
 
 #### DistributedInfo
 
-提供操作系统账号的分布式信息。
+提供操作系统账号的分布式账号信息。
 
 系统能力： SystemCapability.Account.OsAccount
 
@@ -388,10 +401,10 @@ accountAbility.updateOsAccountDistributedInfo(accountInfo).then(() => {
 | name | string | 否 | 否 | 分布式账号名称，非空字符串。 |
 | id | string | 否 | 否 | 分布式账号UID，非空字符串。 |
 | event | string | 否 | 否 | 分布式账号登录状态，包括登录、登出、Token失效和注销，分别对应以下字符串： - Ohos.account.event.LOGIN - Ohos.account.event.LOGOUT - Ohos.account.event.TOKEN_INVALID - Ohos.account.event.LOGOFF |
-| nickname9+ | string | 否 | 是 | 分布式账号的昵称，默认为空。 |
-| avatar9+ | string | 否 | 是 | 分布式账号的头像，默认为空。 |
-| status10+ | [DistributedAccountStatus](#distributedaccountstatus10) | 是 | 是 | 分布式账号的状态，枚举类型，默认为未登录状态。 |
-| scalableData8+ | object | 否 | 是 | 分布式账号扩展信息，根据业务所需，以k-v形式传递定制化信息，默认为空。 |
+| nickname9+ | string | 否 | 是 | 分布式账号的昵称，当需要显示用户昵称时设置。不设置时默认为空，不影响账号功能使用。 |
+| avatar9+ | string | 否 | 是 | 分布式账号的头像，当需要显示用户头像时设置。不设置时默认为空，不影响账号功能使用。 |
+| status10+ | [DistributedAccountStatus](#distributedaccountstatus10) | 是 | 是 | 分布式账号的状态，枚举类型。当需要查询或设置账号登录状态时使用。不设置时默认为NOT_LOGGED_IN（未登录状态）。 |
+| scalableData8+ | object | 否 | 是 | 分布式账号扩展信息，当需要传递定制化业务信息时设置，以k-v形式传递。不设置时默认为空，不影响账号基本功能。 |
 
 #### DistributedAccountStatus10+
 

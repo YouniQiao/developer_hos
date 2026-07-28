@@ -2,8 +2,8 @@
 title: "CollaborationService (跨设备互通组件)"
 upstream_id: "harmonyos-references/servicecollaboration-collaborationservice"
 catalog: "harmonyos-references"
-content_hash: "0af5565b8bd5"
-synced_at: "2026-07-09T00:59:36.843157"
+content_hash: "a0c80656acf7"
+synced_at: "2026-07-28T16:50:53.925546"
 ---
 
 # CollaborationService (跨设备互通组件)
@@ -223,7 +223,7 @@ onState: (stateCode: number, bufferType: string, buffer: ArrayBuffer) => void
 
 状态码：
 
-以下部分错误状态的详细介绍请参见[ArkTS 错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-servicecollaboration)。
+以下部分错误状态的详细介绍请参见[错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-servicecollaboration)。
 
 | 状态码ID | 错误信息 |
 | --- | --- |

@@ -2,8 +2,8 @@
 title: "picker-view"
 upstream_id: "harmonyos-references/js-components-basic-picker-view"
 catalog: "harmonyos-references"
-content_hash: "0ca48a2de875"
-synced_at: "2026-07-09T17:25:03.467585"
+content_hash: "c124856bc032"
+synced_at: "2026-07-28T16:49:00.241357"
 ---
 
 # picker-view
@@ -28,7 +28,7 @@ synced_at: "2026-07-09T17:25:03.467585"
 
 | 名称 | 类型 | 默认值 | 必填 | 描述 |
 | --- | --- | --- | --- | --- |
-| range | Array | - | 否 | 设置文本选择器的取值范围。 使用时需要使用数据绑定的方式range ={{data}}，js中声明相应变量data：["15","20","25"]。 |
+| range | Array | - | 否 | 设置文本选择器的取值范围。 使用时需要使用数据绑定的方式range ={{data}}，js中声明相应变量data: ['15', '20', '25']。 |
 | selected | string | 0 | 否 | 设置文本选择器的默认选择值，该值需要为range的索引。 |
 | indicatorprefix | string | - | 否 | 文本选择器选定值增加的前缀字段。 |
 | indicatorsuffix | string | - | 否 | 文本选择器选定值增加的后缀字段。 |
@@ -65,7 +65,7 @@ synced_at: "2026-07-09T17:25:03.467585"
 | 名称 | 类型 | 默认值 | 必填 | 描述 |
 | --- | --- | --- | --- | --- |
 | columns | number | - | 是 | 设置多列文本选择器的列数。 |
-| range | 二维Array | - | 否 | 设置多列文本选择器的选择值，该值为二维数组。长度表示多少列，数组的每项表示每列的数据，如 [["a","b"], ["c","d"]]。 使用时需要使用数据绑定的方式range ={{data}}，js中声明相应变量data：[["a","b"], ["c","d"]]。 |
+| range | 二维Array | - | 否 | 设置多列文本选择器的选择值，该值为二维数组。长度表示多少列，数组的每项表示每列的数据，如 [["a","b"], ["c","d"]]。 使用时需要使用数据绑定的方式range ={{data}}，js中声明相应变量data: [['a', 'b'], ['c', 'd']]。 |
 | selected | Array | [0,0,0,…] | 否 | 设置多列文本选择器的默认值，每一列被选中项对应的索引构成的数组，该取值表示选择器界面的默认选择值。 |
 
 #### 样式
@@ -164,7 +164,7 @@ export default {
     },
 }
 ```
- ![](./img/zh-cn_image_0000002664330233.gif)
+ ![](./img/zh-cn_image_0000002686088533.gif)
 
 #### [h2]时间选择器
 
@@ -221,7 +221,7 @@ export default {
   },
 }
 ```
- ![](./img/zh-cn_image_0000002633851122.png)
+ ![](./img/zh-cn_image_0000002685928703.png)
 
 #### [h2]日期选择器
 
@@ -262,7 +262,7 @@ export default {
     },
 }
 ```
- ![](./img/zh-cn_image_0000002634011026.png)
+ ![](./img/zh-cn_image_0000002656009024.png)
 
 #### [h2]日期时间选择器
 
@@ -303,7 +303,7 @@ export default {
     },
 }
 ```
- ![](./img/zh-cn_image_0000002664210177.png)
+ ![](./img/zh-cn_image_0000002655849104.png)
 
 #### [h2]多列文本选择器
 
@@ -349,4 +349,4 @@ export default {
     },
 }
 ```
- ![](./img/zh-cn_image_0000002664330235.png)
+ ![](./img/zh-cn_image_0000002686088535.png)

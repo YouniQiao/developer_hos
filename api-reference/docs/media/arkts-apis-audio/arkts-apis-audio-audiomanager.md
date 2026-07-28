@@ -2,8 +2,8 @@
 title: "Interface (AudioManager)"
 upstream_id: "harmonyos-references/arkts-apis-audio-audiomanager"
 catalog: "harmonyos-references"
-content_hash: "fc4d0b33228a"
-synced_at: "2026-07-09T01:00:07.820279"
+content_hash: "3b58ba888f0a"
+synced_at: "2026-07-28T16:51:25.703663"
 ---
 
 # Interface (AudioManager)
@@ -269,6 +269,83 @@ import { audio } from '@kit.AudioKit';
 let audioSpatializationManager: audio.AudioSpatializationManager = audioManager.getSpatializationManager();
 ```
 
+#### getDeviceEnhanceManager()
+
+getDeviceEnhanceManager(): AudioDeviceEnhanceManager
+
+获取音频设备增强管理器实例。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Multimedia.Audio.DeviceEnhance
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| [AudioDeviceEnhanceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiodeviceenhancemanager) | 返回一个AudioDeviceEnhanceManager实例。 |
+
+示例：
+
+```
+import { audio } from '@kit.AudioKit';
+
+let audioDeviceEnhanceManager: audio.AudioDeviceEnhanceManager = audioManager.getDeviceEnhanceManager();
+```
+
+#### getDebuggingManager
+
+getDebuggingManager(): AudioDebuggingManager
+
+获取音频调试管理器实例。该实例为单例，获取后可重复使用。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Multimedia.Audio.Core
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| [AudioDebuggingManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiodebuggingmanager) | 返回AudioDebuggingManager实例。 |
+
+示例：
+
+```
+import { audio } from '@kit.AudioKit';
+let debugManager: audio.AudioDebuggingManager = audioManager.getDebuggingManager();
+```
+
+#### getRecordingManager
+
+getRecordingManager(): AudioRecordingManager
+
+获取录音策略管理器。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Multimedia.Audio.Capturer
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| [AudioRecordingManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiorecordingmanager) | AudioRecordingManager实例。 |
+
+示例：
+
+```
+import { audio } from '@kit.AudioKit';
+
+let audioRecordingManager: audio.AudioRecordingManager = audioManager.getRecordingManager();
+```
+
 #### setAudioParameter(deprecated)
 
 setAudioParameter(key: string, value: string, callback: AsyncCallback<void>): void
@@ -277,7 +354,7 @@ setAudioParameter(key: string, value: string, callback: AsyncCallback<void>): vo
 
 接口根据硬件设备的支持能力扩展音频配置。支持的参数与产品和设备强相关，非通用参数，示例代码内使用样例参数。
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 11开始废弃，替代接口仅面向系统应用开放。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 11开始废弃。
 
 需要权限： ohos.permission.MODIFY_AUDIO_SETTINGS
 
@@ -313,7 +390,7 @@ setAudioParameter(key: string, value: string): Promise<void>
 
 接口根据硬件设备的支持能力扩展音频配置。支持的参数与产品和设备强相关，非通用参数，示例代码内使用样例参数。
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 11开始废弃，替代接口仅面向系统应用开放。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 11开始废弃。
 
 需要权限： ohos.permission.MODIFY_AUDIO_SETTINGS
 
@@ -348,7 +425,7 @@ getAudioParameter(key: string, callback: AsyncCallback<string>): void
 
 本接口的使用场景为：根据硬件设备的支持能力扩展音频配置。在不同的设备平台上，所支持的音频参数会存在差异。示例代码内使用样例参数，实际支持的音频配置参数见具体设备平台的资料描述。
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 11开始废弃，替代接口仅面向系统应用开放。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 11开始废弃。
 
 系统能力： SystemCapability.Multimedia.Audio.Core
 
@@ -381,7 +458,7 @@ getAudioParameter(key: string): Promise<string>
 
 本接口的使用场景为：根据硬件设备的支持能力扩展音频配置。在不同的设备平台上，所支持的音频参数会存在差异。示例代码内使用样例参数，实际支持的音频配置参数见具体设备平台的资料描述。
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 11开始废弃，替代接口仅面向系统应用开放。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 11开始废弃。
 
 系统能力： SystemCapability.Multimedia.Audio.Core
 
@@ -411,10 +488,7 @@ setVolume(volumeType: AudioVolumeType, volume: number, callback: AsyncCallback<v
 
 设置指定流的音量等级。使用callback异步回调。
 
-![](./img/note_3.0-zh-cn.png)
-
-- 从API version 7开始支持，从API version 9开始废弃，替代接口仅面向系统应用开放。
-- 应用无法直接调节系统音量，建议通过系统音量面板组件调节音量。具体样例和介绍请查看API文档：[音量面板](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-multimedia-avvolumepanel)。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，建议使用[AVVolumePanel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-multimedia-avvolumepanel#avvolumepanel)替代。
 
 需要权限： ohos.permission.ACCESS_NOTIFICATION_POLICY
 
@@ -450,10 +524,7 @@ setVolume(volumeType: AudioVolumeType, volume: number): Promise<void>
 
 设置指定流的音量等级。使用Promise异步回调。
 
-![](./img/note_3.0-zh-cn.png)
-
-- 从API version 7开始支持，从API version 9开始废弃，替代接口仅面向系统应用开放。
-- 应用无法直接调节系统音量，建议通过系统音量面板组件调节音量。具体样例和介绍请查看API文档：[音量面板](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-multimedia-avvolumepanel)。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，建议使用[AVVolumePanel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-multimedia-avvolumepanel#avvolumepanel)替代。
 
 需要权限： ohos.permission.ACCESS_NOTIFICATION_POLICY
 
@@ -673,7 +744,7 @@ mute(volumeType: AudioVolumeType, mute: boolean, callback: AsyncCallback<void>):
 
 当该音量流可设置的最小音量不能为0时，不支持静音操作。例如：闹钟和通话。
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅面向系统应用开放。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，建议使用[AVVolumePanel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-multimedia-avvolumepanel#avvolumepanel)替代。
 
 系统能力： SystemCapability.Multimedia.Audio.Volume
 
@@ -707,7 +778,7 @@ mute(volumeType: AudioVolumeType, mute: boolean): Promise<void>
 
 当该音量流可设置的最小音量不能为0时，不支持静音操作。例如：闹钟和通话。
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅面向系统应用开放。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，建议使用[AVVolumePanel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-multimedia-avvolumepanel#avvolumepanel)替代。
 
 系统能力： SystemCapability.Multimedia.Audio.Volume
 
@@ -860,7 +931,7 @@ setRingerMode(mode: AudioRingMode, callback: AsyncCallback<void>): void
 
 设置铃声模式。使用callback异步回调。
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅面向系统应用开放。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃。
 
 需要权限： ohos.permission.ACCESS_NOTIFICATION_POLICY
 
@@ -895,7 +966,7 @@ setRingerMode(mode: AudioRingMode): Promise<void>
 
 设置铃声模式。使用Promise异步回调。
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅面向系统应用开放。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃。
 
 需要权限： ohos.permission.ACCESS_NOTIFICATION_POLICY
 
@@ -1168,7 +1239,7 @@ setMicrophoneMute(mute: boolean, callback: AsyncCallback<void>): void
 
 设置麦克风静音状态。使用callback异步回调。
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅面向系统应用开放。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃。
 
 需要权限： ohos.permission.MICROPHONE
 
@@ -1201,7 +1272,7 @@ setMicrophoneMute(mute: boolean): Promise<void>
 
 设置麦克风静音状态。使用Promise异步回调。
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅面向系统应用开放。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃。
 
 需要权限： ohos.permission.MICROPHONE
 

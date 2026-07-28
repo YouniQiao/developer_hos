@@ -2,8 +2,8 @@
 title: "OH_AVRecorder_Config"
 upstream_id: "harmonyos-references/capi-avrecorder-oh-avrecorder-config"
 catalog: "harmonyos-references"
-content_hash: "1081e3a71a53"
-synced_at: "2026-07-09T01:00:43.053153"
+content_hash: "d2f079f1570f"
+synced_at: "2026-07-28T16:52:00.433020"
 ---
 
 # OH_AVRecorder_Config
@@ -34,4 +34,4 @@ typedef struct OH_AVRecorder_Config {...} OH_AVRecorder_Config
 | char* url | 定义文件URL，格式为fd://xx。 |
 | [OH_AVRecorder_FileGenerationMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avrecorder-base-h#oh_avrecorder_filegenerationmode) fileGenerationMode | 指定录制输出文件的生成模式。 |
 | [OH_AVRecorder_Metadata](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avrecorder-oh-avrecorder-metadata) metadata | 包含录制媒体的附加元数据。 |
-| int32_t maxDuration | 指定录制的最大时长，单位为秒。 |
+| int32_t maxDuration | 指定录制的最大时长，单位为秒（s）。值小于等于0时表示无时长限制，默认值为0。达到最大录制时长后自动停止录制。 |

@@ -2,8 +2,8 @@
 title: "@ohos.net.policy (网络策略管理)"
 upstream_id: "harmonyos-references/js-apis-net-policy"
 catalog: "harmonyos-references"
-content_hash: "9a0d5b435008"
-synced_at: "2026-07-09T00:59:27.188973"
+content_hash: "d1dc31a68f87"
+synced_at: "2026-07-28T16:50:42.625792"
 ---
 
 # @ohos.net.policy (网络策略管理)
@@ -40,7 +40,7 @@ showAppNetPolicySettings(context: Context): Promise<void>
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-设备行为差异：该接口在Phone、2in1、Tablet设备中可正常调用，在其他设备调用不生效。
+设备行为差异：该接口在Phone和Tablet设备中可正常调用，在其他设备调用不生效。
 
 参数：
 
@@ -91,7 +91,7 @@ getNetAccessPolicy(): Promise<NetAccessPolicy>
 
 错误码：
 
-以下错误码的详细介绍参见[应用联网错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-net-policy)。
+以下错误码的详细介绍参见[策略管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-net-policy)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |

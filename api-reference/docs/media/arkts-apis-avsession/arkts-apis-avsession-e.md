@@ -2,8 +2,8 @@
 title: "Enums"
 upstream_id: "harmonyos-references/arkts-apis-avsession-e"
 catalog: "harmonyos-references"
-content_hash: "4295846402a1"
-synced_at: "2026-07-09T01:00:17.823683"
+content_hash: "52931a3e6d37"
+synced_at: "2026-07-28T16:51:36.624234"
 ---
 
 # Enums
@@ -142,10 +142,15 @@ synced_at: "2026-07-09T01:00:17.823683"
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| DEVICE_TYPE_LOCAL | 0 | 本地播放类型。 **系统能力：** SystemCapability.Multimedia.AVSession.Core |
-| DEVICE_TYPE_BLUETOOTH | 10 | 蓝牙设备。 **系统能力：** SystemCapability.Multimedia.AVSession.Core |
-| DEVICE_TYPE_TV | 2 | 电视。 **系统能力：** SystemCapability.Multimedia.AVSession.AVCast |
-| DEVICE_TYPE_SMART_SPEAKER | 3 | 音箱设备。 **系统能力：** SystemCapability.Multimedia.AVSession.AVCast |
+| DEVICE_TYPE_LOCAL | 0 | 本地播放类型设备。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.Multimedia.AVSession.Core |
+| DEVICE_TYPE_TV | 2 | 电视设备。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.Multimedia.AVSession.AVCast |
+| DEVICE_TYPE_SMART_SPEAKER | 3 | 音箱设备。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.Multimedia.AVSession.AVCast |
+| DEVICE_TYPE_CAR | 4 | 车载设备。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.Multimedia.AVSession.AVCast |
+| DEVICE_TYPE_PAD | 6 | 平板设备。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.Multimedia.AVSession.AVCast |
+| DEVICE_TYPE_DEFAULT_CAST_PLUS_STREAM | 7 | 支持Cast+协议的默认设备。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.Multimedia.AVSession.AVCast |
+| DEVICE_TYPE_2IN1 | 8 | PC/2in1设备。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.Multimedia.AVSession.AVCast |
+| DEVICE_TYPE_BLUETOOTH | 10 | 蓝牙设备。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.Multimedia.AVSession.Core |
+| DEVICE_TYPE_HIPLAY | 15 | HiPlay设备。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.Multimedia.AVSession.AVCast |
 
 #### LoopMode10+
 
@@ -296,5 +301,7 @@ synced_at: "2026-07-09T01:00:17.823683"
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
+| REQUIRE_ABILITY_LIST | 'requireAbilityList' | 作为[setExtras](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-avsession#setextras10)接口传入的键，用于向系统设置应用所需的能力列表。 **系统能力：** SystemCapability.Multimedia.AVSession.Core |
+| SUPPORT_URL_CASTING | 'url-cast' | 作为[setExtras](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-avsession#setextras10)接口，给REQUIRE_ABILITY_LIST键传入能力列表的值，用于通知系统当前应用支持URL投播功能。 [setExtras](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-avsession#setextras10)接口传入入参{[avSession.ExtraKey.REQUIRE_ABILITY_LIST]: [avSession.ExtraKey.SUPPORT_URL_CASTING]}表示当前应用支持投播功能。 **系统能力：** SystemCapability.Multimedia.AVSession.AVCast |
 | DLNA_CURRENT_URI_METADATA | 'CurrentURIMetadata' | [AVMediaDescription](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-i#avmediadescription10)中extras属性可传入的键，值传入string类型。 用于DLNA投播场景下，在发送给对端的报文中，为CurrentURIMetaData标签添加内容。 **系统能力：** SystemCapability.Multimedia.AVSession.AVCast |
 | DLNA_DIDL_LITE | 'DIDL-Lite' | [AVMediaDescription](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-i#avmediadescription10)中extras属性可传入的键，值传入string类型。 用于DLNA投播场景下，在发送给对端的报文中，为DIDL-Lite标签添加内容。 **系统能力：** SystemCapability.Multimedia.AVSession.AVCast |

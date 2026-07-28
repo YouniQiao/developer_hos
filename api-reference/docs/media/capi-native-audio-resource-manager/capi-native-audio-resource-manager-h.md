@@ -2,8 +2,8 @@
 title: "native_audio_resource_manager.h"
 upstream_id: "harmonyos-references/capi-native-audio-resource-manager-h"
 catalog: "harmonyos-references"
-content_hash: "f33555b784b2"
-synced_at: "2026-07-09T01:00:10.143866"
+content_hash: "10f01ef75166"
+synced_at: "2026-07-28T16:51:28.026532"
 ---
 
 # native_audio_resource_manager.h
@@ -62,7 +62,7 @@ OH_AudioCommon_Result OH_AudioManager_GetAudioResourceManager(OH_AudioResourceMa
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_AudioResourceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audioresourcemanager) **resourceManager | 指向OH_AudioResourceManager用于接收创建的音频资源管理器实例。 |
+| [OH_AudioResourceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audioresourcemanager) **resourceManager | 指向OH_AudioResourceManager指针的地址，用于接收创建的音频资源管理器实例。 |
 
 返回：
 
@@ -87,7 +87,7 @@ OH_AudioCommon_Result OH_AudioResourceManager_CreateWorkgroup(OH_AudioResourceMa
 | --- | --- |
 | [OH_AudioResourceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audioresourcemanager) *resourceManager | 指向[OH_AudioManager_GetAudioResourceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-resource-manager-h#oh_audiomanager_getaudioresourcemanager)创建的音频资源管理器实例OH_AudioResourceManager。 |
 | const char *name | 要创建的音频工作组的名称。 |
-| [OH_AudioWorkgroup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audioworkgroup) **group | 指向OH_AudioWorkgroup用于接收返回的音频工作组实例的指针。 |
+| [OH_AudioWorkgroup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audioworkgroup) **group | 指向OH_AudioWorkgroup指针的地址，用于接收返回的音频工作组实例的指针。 |
 
 返回：
 
@@ -183,8 +183,8 @@ OH_AudioCommon_Result OH_AudioWorkgroup_Start(OH_AudioWorkgroup *group, uint64_t
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_AudioWorkgroup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audioworkgroup) *group | 指向[OH_AudioResourceManager_CreateWorkgroup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-resource-manager-h#oh_audioresourcemanager_createworkgroup)创建的音频工作组实例OH_AudioWorkgroup。 |
-| uint64_t startTime | 当前音频工作组启动的时间点。 |
-| uint64_t deadlineTime | 当前音频工作组预期完成的时间。 |
+| uint64_t startTime | 当前音频工作组启动的时间点，单位为毫秒（ms）。 |
+| uint64_t deadlineTime | 当前音频工作组预期完成的时间，单位为毫秒（ms）。 |
 
 返回：
 

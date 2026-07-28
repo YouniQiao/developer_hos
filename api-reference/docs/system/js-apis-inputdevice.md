@@ -2,8 +2,8 @@
 title: "@ohos.multimodalInput.inputDevice (输入设备)"
 upstream_id: "harmonyos-references/js-apis-inputdevice"
 catalog: "harmonyos-references"
-content_hash: "8d2b9593f095"
-synced_at: "2026-07-09T00:59:48.914806"
+content_hash: "0a8b49a5002a"
+synced_at: "2026-07-28T16:51:06.981486"
 ---
 
 # @ohos.multimodalInput.inputDevice (输入设备)
@@ -18,6 +18,7 @@ synced_at: "2026-07-09T00:59:48.914806"
 
 ```
 import { inputDevice } from '@kit.InputKit';
+import { BusinessError } from '@kit.BasicServicesKit';
 ```
 
 #### inputDevice.getDeviceList9+
@@ -67,7 +68,7 @@ struct Index {
           } catch (error) {
             console.error(`Failed to get device id list, Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`);
           }
-        })
+        });
     }
   }
 }
@@ -319,7 +320,7 @@ const DOMAIN = 0x0000;
 @Component
 struct Index {
   @State isPhysicalKeyboardExist: boolean = false;
-  @State message: string = "Click to obtain the device list and monitor device hot-plug events";
+  @State message: string = 'Click to obtain the device list and monitor device hot-plug events';
   keyboards: Map<number, inputDevice.KeyboardType> = new Map();
 
   build() {
@@ -339,7 +340,7 @@ struct Index {
                       this.keyboards.set(data[i], type);
                     }
                   }).catch((error: BusinessError) => {
-                    console.error(`Failed to connect KeyBoard, Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`);
+                    console.error(`Failed to get keyboard type, Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`);
                   });
                 }
               }).catch((error: BusinessError) => {
@@ -359,7 +360,7 @@ struct Index {
                     this.keyboards.set(data.deviceId, type);
                   }
                 }).catch((error: BusinessError) => {
-                  console.error(`Failed to get DeviceId, Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`);
+                  console.error(`Failed to get keyboard type, Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`);
                 });
                 if (this.keyboards.get(data.deviceId) === inputDevice.KeyboardType.ALPHABETIC_KEYBOARD &&
                   data.type === 'remove') {
@@ -368,11 +369,11 @@ struct Index {
                   this.keyboards.delete(data.deviceId);
                 }
               });
-              this.message = "Device monitoring enabled successfully"
+              this.message = 'Device monitoring enabled successfully'
             } catch (error) {
               // 打印错误日志
               hilog.error(DOMAIN, 'InputDevice', `Execute failed, error: %{public}s`,
-                JSON.stringify(error, ["code", "message"]));
+                JSON.stringify(error, ['code', 'message']));
               this.message = `Failed to enable device monitoring. Click to retry. Error message:${JSON.stringify(error,
                 ["code", "message"])}`
             }
@@ -427,7 +428,7 @@ struct Index {
             // 监听设备热插拔事件
             inputDevice.on('change', callback);
           } catch (error) {
-            console.error(`Failed to listen device event , Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`);
+            console.error(`Failed to listen to device event, Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`);
           }
 
           // 取消指定的监听。
@@ -435,7 +436,7 @@ struct Index {
             // 取消监听设备热插拔事件
             inputDevice.off('change', callback);
           } catch (error) {
-            console.error(`Failed to cancel listening device event, Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`);
+            console.error(`Failed to cancel listening to device event, Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`);
           }
 
           // 取消所有监听。
@@ -785,10 +786,10 @@ struct Index {
         .onClick(() => {
           // 查询ID为1的输入设备对于17、22和2055按键的支持情况。
           try {
-            let supportResult: Array<Boolean> = inputDevice.supportKeysSync(1, [17, 22, 2055])
-            console.info(`Succeeded in querying support keys, result: ${JSON.stringify(supportResult)}.`)
+            let supportResult: Array<Boolean> = inputDevice.supportKeysSync(1, [17, 22, 2055]);
+            console.info(`Succeeded in querying support keys, result: ${JSON.stringify(supportResult)}.`);
           } catch (error) {
-            console.error(`Failed to query support key, Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`)
+            console.error(`Failed to query support key, Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`);
           }
         })
     }
@@ -952,10 +953,10 @@ struct Index {
         .onClick(() => {
           // 示例查询设备ID为1的设备键盘类型。
           try {
-            let type: inputDevice.KeyboardType = inputDevice.getKeyboardTypeSync(1)
-            console.info(`Succeeded in getting keyboard type: ${JSON.stringify(type)}.`)
+            let type: inputDevice.KeyboardType = inputDevice.getKeyboardTypeSync(1);
+            console.info(`Succeeded in getting keyboard type: ${JSON.stringify(type)}.`);
           } catch (error) {
-            console.error(`Failed to get keyboard type, Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`)
+            console.error(`Failed to get keyboard type, Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`);
           }
         })
     }
@@ -1156,8 +1157,8 @@ struct Index {
 | version9+ | number | 否 | 否 | 输入设备的版本信息。 |
 | phys9+ | string | 否 | 否 | 输入设备的物理地址。 |
 | uniq9+ | string | 否 | 否 | 输入设备的唯一标识。 |
-| isVirtual23+ | boolean | 否 | 是 | 输入设备是否为虚拟设备。 true表示是虚拟设备，false表示是非虚拟设备。 |
-| isLocal23+ | boolean | 否 | 是 | 输入设备是否为本地设备。 true表示是本地设备，false表示是非本地设备。 |
+| isVirtual23+ | boolean | 否 | 是 | 输入设备是否为虚拟设备。 true表示是虚拟设备，false表示是非虚拟设备。当该字段不存在时，默认值为false。 |
+| isLocal23+ | boolean | 否 | 是 | 输入设备是否为本地设备。 true表示是本地设备，false表示是非本地设备。当该字段不存在时，默认值为false。 |
 
 #### AxisType9+
 

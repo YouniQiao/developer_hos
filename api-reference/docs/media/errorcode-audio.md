@@ -2,8 +2,8 @@
 title: "Audio错误码"
 upstream_id: "harmonyos-references/errorcode-audio"
 catalog: "harmonyos-references"
-content_hash: "bbb1b68ef990"
-synced_at: "2026-07-09T01:00:13.017962"
+content_hash: "a56cf178f679"
+synced_at: "2026-07-28T16:51:32.134531"
 ---
 
 # Audio错误码
@@ -133,12 +133,161 @@ System error.
 
 错误描述
 
-系统处理异常。
+系统处理异常导致的音频接口处理失败。不同接口返回该错误码的原因不同，需要结合失败接口和系统日志进行排查。
 
 可能原因
 
-系统处理异常，比如系统服务重启、跨进程调用异常等。
+1. 系统服务重启、跨进程调用异常等系统处理异常。
+2. 接口参数、应用权限或对象状态校验异常。对于自API版本20起新增的音频API，6800301错误码不包含本语义的信息。接口是否可能涉及此问题，以接口文档声明的错误码说明为准。
+3. 音频焦点抢占失败。仅有需要激活音频焦点的音频流启动类接口（如AudioRenderer的[start](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiorenderer#start8)接口、AudioCapturer的[start](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiocapturer#start8)接口），可能由于音频焦点抢占失败返回此错误码，其他不涉及焦点激活的接口不会因该原因返回此错误码。
 
 处理步骤
 
-系统内部通用错误，出现的情况不明确，建议尝试重新创建业务，或直接上报系统错误。
+1. 根据返回错误码6800301的接口约束和系统日志，参考下文的常见问题案例，检查调用参数、应用权限和业务状态，排除应用侧异常。
+2. 排除应用侧异常后，再尝试恢复业务，避免在异常状态下反复重试。
+
+以下为AudioCapturer业务返回错误码6800301时的常见问题案例。
+
+#### [h2]调用createAudioCapturer创建AudioCapturer失败-音频流类型异常
+
+调用[createAudioCapturer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-f#audiocreateaudiocapturer8)返回错误码6800301时，根据系统日志按照以下场景进行排查。
+
+判断依据
+
+应用进程日志提示Invalid sourceType。
+
+```
+<应用进程名>: [CheckAndReportErrorEvent]Invalid sourceType -1!
+```
+ 以上日志格式，从API版本20开始支持。
+
+可能原因
+
+AudioCapturerInfo.source不在接口支持的音频源类型范围内。
+
+处理步骤
+
+根据[SourceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#sourcetype8)检查source的取值。
+
+#### [h2]调用createAudioCapturer创建AudioCapturer失败-音频流参数异常
+
+判断依据
+
+应用进程日志出现以下任一信息：
+
+```
+<应用进程名>: [CheckCapturerAudioStreamInfo]Unsupported audio capturer parameter
+<应用进程名>: [IsRecordChannelRelatedInfoValid]AudioStream: Invalid source channel 0
+<应用进程名>: [IsRecordChannelRelatedInfoValid]AudioStream: Invalid source channel layout
+<应用进程名>: [IsRecordChannelRelatedInfoValid]AudioStream: not matched source channel and channel layout
+```
+ 以上日志格式，从API版本23开始支持。
+
+可能原因
+
+1. samplingRate、sampleFormat或encodingType参数值非法。Unsupported audio capturer parameter日志不能单独区分具体字段，需要结合应用入参排查。
+2. channels或channelLayout参数值非法。
+3. channels与channelLayout不匹配。
+
+处理步骤
+
+1. 根据[AudioStreamInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-i#audiostreaminfo8)检查采样率、采样格式、编码类型、声道数和声道布局。
+2. 由于channelLayout参数中隐含了声道数信息，需要确保声道布局的声道数和channels的值匹配。当channelLayout为CH_LAYOUT_UNKNOWN(0x0)时，不参与匹配校验。如需明确的声道布局，请根据channels显式设置对应布局。
+
+#### [h2]调用createAudioCapturer创建AudioCapturer失败-麦克风未授权
+
+调用[createAudioCapturer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-f#audiocreateaudiocapturer8)返回错误码6800301时，根据系统日志按照以下场景依次排查。
+
+判断依据
+
+使用Mic音频源（即[SourceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#sourcetype8)为SOURCE_TYPE_MIC、SOURCE_TYPE_VOICE_RECOGNITION、SOURCE_TYPE_VOICE_COMMUNICATION、SOURCE_TYPE_VOICE_MESSAGE或SOURCE_TYPE_LIVE）创建AudioCapturer失败，系统日志提示麦克风未授权。各音频源的权限要求请参考[使用AudioCapturer开发音频录制功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-audiocapturer-for-recording)。
+
+系统音频服务进程可能出现以下一条或多条日志：
+
+```
+audio_server: [VerifyClientPermission]Permission denied [...], [ohos.permission.MICROPHONE]
+audio_server: [CheckRecorderPermission]Check record permission failed: No permission.
+audio_server: [CreateAudioProcessInner]Create audio process failed, no permission
+```
+ CheckRecorderPermission和CreateAudioProcessInner日志从API版本11开始支持；VerifyClientPermission日志从API版本12开始支持。
+
+可能原因
+
+1. 应用未声明ohos.permission.MICROPHONE权限。
+2. 应用未向用户申请麦克风授权，或用户拒绝授权。
+
+处理步骤
+
+1. 确认应用已在module.json5中声明[ohos.permission.MICROPHONE](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-all-user#ohospermissionmicrophone)权限。
+2. 创建AudioCapturer前，检查应用是否已获得麦克风授权。未授权时，按照[向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)完成授权申请。
+3. 用户拒绝授权时，不再创建使用Mic音频源的AudioCapturer，并在应用界面提示用户授权或停止录音操作。
+
+#### [h2]调用start启动AudioCapturer失败-AudioCapturer状态异常
+
+AudioCapturer创建成功，但调用[start](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiocapturer#start8)返回错误码6800301时，根据系统日志按照以下场景排查。
+
+判断依据
+
+系统日志提示当前状态不支持启动。
+
+应用进程的典型日志如下：
+
+```
+<应用进程名>: [CheckStateAndReportErrorEvent]Start failed. Illegal state 2.
+<应用进程名>: [CheckStateAndReportErrorEvent]Start failed. Illegal state 4.
+```
+ 以上日志格式，从API版本18开始支持。
+
+日志中的状态值为2时，表示AudioCapturer处于STATE_RUNNING状态，通常为重复调用start()；状态值为4时，表示AudioCapturer处于STATE_RELEASED状态，通常为实例释放后继续调用start()。
+
+可能原因
+
+应用可能存在重复启动、释放后继续调用、异步状态转换未完成等情况。
+
+处理步骤
+
+1. 调用start()前检查[AudioState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#audiostate8)。只有AudioCapturer处于STATE_PREPARED、STATE_PAUSED或STATE_STOPPED状态时才启动采集。
+2. 通过[on('stateChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiocapturer#onstatechange8)监听状态变化，避免重复启动，避免在实例释放后继续操作。
+3. 按照“创建实例 -> 注册回调 -> 启动录制 -> 停止录制 -> 释放资源”的顺序调用。完整状态检查请参考使用AudioCapturer开发音频录制功能中的[完整示例](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-audiocapturer-for-recording#完整示例)。
+
+#### [h2]调用start启动AudioCapturer失败-激活音频焦点失败
+
+判断依据
+
+日志提示激活音频焦点失败。
+
+应用进程的典型日志如下：
+
+```
+<应用进程名>: [Start]ActivateAudioInterrupt Failed
+```
+ 以上日志格式，从API版本10开始支持。
+
+可能原因
+
+设备上同时存在其他录音、通话等音频业务，当前流启动被焦点策略拦截。
+
+处理步骤
+
+参考[录音并发策略说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-recording-concurrency)，确认当前录音场景是否允许与其他音频业务并发，并根据并发策略调整业务启动时机或录音流类型。
+
+#### [h2]调用start启动AudioCapturer失败-底层录音流启动异常
+
+判断依据
+
+若根据6800301系统处理异常下的音频流类型异常、麦克风未授权、AudioCapturer状态异常、激活音频焦点失败等案例进行排查后，应用进程仍出现以下一条或多条日志，说明可能发生系统侧异常：
+
+```
+<应用进程名>: [StartAudioStream]Start call server failed: ...
+<应用进程名>: [StartImpl]Start audio stream failed
+```
+ StartAudioStream日志从API版本11开始支持；StartImpl日志从API版本12开始支持。
+
+可能原因
+
+底层录音流、音频服务或输入设备在启动阶段发生系统异常。
+
+处理步骤
+
+1. 先根据前述案例排除对象状态、应用权限、音频焦点和录音并发问题。
+2. 停止并释放当前AudioCapturer，重新创建后重试一次。避免无条件反复重试。

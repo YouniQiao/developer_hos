@@ -2,8 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-agent-framework"
 catalog: "harmonyos-references"
-content_hash: "a916923f360e"
-synced_at: "2026-07-09T01:01:40.448858"
+content_hash: "19abb3a601f5"
+synced_at: "2026-07-28T16:53:08.736254"
 ---
 
 # ArkTS API错误码
@@ -14,7 +14,7 @@ synced_at: "2026-07-09T01:01:40.448858"
 
 错误信息
 
-Parameter error.
+Invalid parameter.
 
 错误描述
 
@@ -99,3 +99,21 @@ Internal error.
 处理步骤
 
 建议到应用市场下载最新版的小艺app。
+
+#### 1022420001 内存分配失败
+
+错误信息
+
+Memory allocation failed.
+
+错误描述
+
+创建对象时内存分配失败。
+
+可能原因
+
+设备内存不足。
+
+处理步骤
+
+检查设备的内存占用，重启Agent所在的App。

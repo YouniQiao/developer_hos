@@ -2,8 +2,8 @@
 title: "liveViewManager"
 upstream_id: "harmonyos-references/liveview-liveviewmanager"
 catalog: "harmonyos-references"
-content_hash: "53194fa8618e"
-synced_at: "2026-07-09T01:01:23.672630"
+content_hash: "b119c70d3b1e"
+synced_at: "2026-07-28T16:52:41.177512"
 ---
 
 # liveViewManager
@@ -109,6 +109,7 @@ startLiveView(liveView: LiveView): Promise<LiveViewResult>
 | [1003500006](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-error-code#section1003500006-实况窗已存在) | The liveView already exists. |
 | [1003500007](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-error-code#section1003500007-无法连接服务器) | Couldn't connect to server. |
 | [1003500008](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-error-code#section1003500008-实况窗频度超过限制) | Over max number liveViews per second. |
+| [1003500021](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-error-code#section1003500021-系统无法找到实况窗卡片自定义扩展区的extensionability) | The system failed to find the ExtensionAbility instance for the custom Live View widget template. 适用版本：26.0.0+ |
 
 示例：
 
@@ -123,37 +124,37 @@ async function startLiveView(): Promise<void> {
     // 定义创建的liveView
     let liveView: liveViewManager.LiveView = {
       id: 123,
-      event: "PICK_UP",
+      event: 'PICK_UP',
       sequence: 1,
       isMute: false,
       liveViewData: {
         primary: {
-          title: "餐品已备好",
+          title: '餐品已备好',
           content: [
-            { text: "请前往" },
-            { text: "一号窗口", textColor: "#FFFF0000" }
+            { text: '请前往' },
+            { text: '一号窗口', textColor: '#FFFF0000' }
           ],
           keepTime: 1,
-          clickAction: await buildWantAgent(),
+          clickAction: await buildWantAgent(), // 用于构建点击动作的跳转代理
           extensionData: {
-            text: "待取餐",
+            text: '待取餐',
             type: liveViewManager.ExtensionType.EXTENSION_TYPE_COMMON_TEXT
           },
           layoutData: {
             layoutType: liveViewManager.LayoutType.LAYOUT_TYPE_PICKUP,
-            title: "取餐码",
-            content: "72988",
-            underlineColor: "#FFFF0000",
-            descPic: "coffee.jpg"
+            title: '取餐码',
+            content: '72988',
+            underlineColor: '#FFFF0000',
+            descPic: 'coffee.jpg'
           }
         },
         capsule: {
           type: liveViewManager.CapsuleType.CAPSULE_TYPE_TEXT,
           status: 1,
-          icon: "coffee.jpg",
-          title: "待取餐",
-          content: "取餐码：72988",
-          backgroundColor: "#FF308977"
+          icon: 'coffee.jpg',
+          title: '待取餐',
+          content: '取餐码：72988',
+          backgroundColor: '#FF308977'
         }
       }
     };
@@ -233,6 +234,7 @@ updateLiveView(liveView: LiveView): Promise<LiveViewResult>
 | [1003500009](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-error-code#section1003500009-实况窗id不存在) | The liveView does not exist. |
 | [1003500010](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-error-code#section1003500010-实况窗已结束) | The liveView has ended. |
 | [1003500011](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-error-code#section1003500011-实况窗顺序不正确) | The liveView sequence is incorrect. |
+| [1003500021](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-error-code#section1003500021-系统无法找到实况窗卡片自定义扩展区的extensionability) | The system failed to find the ExtensionAbility instance for the custom Live View widget template. 适用版本：26.0.0+ |
 
 示例：
 
@@ -247,37 +249,37 @@ async function updateLiveView(): Promise<void> {
     // 定义更新的liveView
     let liveView: liveViewManager.LiveView = {
       id: 123,
-      event: "PICK_UP",
+      event: 'PICK_UP',
       sequence: 2,
       isMute: false,
       liveViewData: {
         primary: {
-          title: "餐品已备好",
+          title: '餐品已备好',
           content: [
-            { text: "请前往" },
-            { text: "一号窗口", textColor: "#FFFF0000" }
+            { text: '请前往' },
+            { text: '一号窗口', textColor: '#FFFF0000' }
           ],
           keepTime: 1,
-          clickAction: await buildWantAgent(),
+          clickAction: await buildWantAgent(), // 用于构建点击动作的跳转代理
           extensionData: {
-            text: "待取餐",
+            text: '待取餐',
             type: liveViewManager.ExtensionType.EXTENSION_TYPE_COMMON_TEXT
           },
           layoutData: {
             layoutType: liveViewManager.LayoutType.LAYOUT_TYPE_PICKUP,
-            title: "取餐码",
-            content: "72988",
-            underlineColor: "#FFFF0000",
-            descPic: "coffee.jpg"
+            title: '取餐码',
+            content: '72988',
+            underlineColor: '#FFFF0000',
+            descPic: 'coffee.jpg'
           }
         },
         capsule: {
           type: liveViewManager.CapsuleType.CAPSULE_TYPE_TEXT,
           status: 1,
-          icon: "coffee.jpg",
-          title: "待取餐",
-          content: "取餐码：72988",
-          backgroundColor: "#FF308977"
+          icon: 'coffee.jpg',
+          title: '待取餐',
+          content: '取餐码：72988',
+          backgroundColor: '#FF308977'
         }
       }
     };
@@ -357,6 +359,7 @@ stopLiveView(liveView: LiveView): Promise<LiveViewResult>
 | [1003500009](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-error-code#section1003500009-实况窗id不存在) | The liveView does not exist. |
 | [1003500010](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-error-code#section1003500010-实况窗已结束) | The liveView has ended. |
 | [1003500011](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-error-code#section1003500011-实况窗顺序不正确) | The liveView sequence is incorrect. |
+| [1003500021](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-error-code#section1003500021-系统无法找到实况窗卡片自定义扩展区的extensionability) | The system failed to find the ExtensionAbility instance for the custom Live View widget template. 适用版本：26.0.0+ |
 
 示例：
 
@@ -371,37 +374,37 @@ async function stopLiveView(): Promise<void> {
     // 定义要结束的liveView
     let liveView: liveViewManager.LiveView = {
       id: 123,
-      event: "PICK_UP",
+      event: 'PICK_UP',
       sequence: 3,
       isMute: false,
       liveViewData: {
         primary: {
-          title: "餐品已备好",
+          title: '餐品已备好',
           content: [
-            { text: "请前往" },
-            { text: "一号窗口", textColor: "#FFFF0000" }
+            { text: '请前往' },
+            { text: '一号窗口', textColor: '#FFFF0000' }
           ],
           keepTime: 1,
-          clickAction: await buildWantAgent(),
+          clickAction: await buildWantAgent(), // 用于构建点击动作的跳转代理
           extensionData: {
-            text: "待取餐",
+            text: '待取餐',
             type: liveViewManager.ExtensionType.EXTENSION_TYPE_COMMON_TEXT
           },
           layoutData: {
             layoutType: liveViewManager.LayoutType.LAYOUT_TYPE_PICKUP,
-            title: "取餐码",
-            content: "72988",
-            underlineColor: "#FFFF0000",
-            descPic: "coffee.jpg"
+            title: '取餐码',
+            content: '72988',
+            underlineColor: '#FFFF0000',
+            descPic: 'coffee.jpg'
           }
         },
         capsule: {
           type: liveViewManager.CapsuleType.CAPSULE_TYPE_TEXT,
           status: 1,
-          icon: "coffee.jpg",
-          title: "待取餐",
-          content: "取餐码：72988",
-          backgroundColor: "#FF308977"
+          icon: 'coffee.jpg',
+          title: '待取餐',
+          content: '取餐码：72988',
+          backgroundColor: '#FF308977'
         }
       }
     };
@@ -595,6 +598,7 @@ startLiveViewByTrigger(liveView: LiveView, trigger:Trigger): Promise<LiveViewRes
 | [1003500018](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-error-code#section1003500018-基于地理位置的实况窗提醒开关关闭) | Geofencing-based liveView is not enabled. |
 | [1003500019](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-error-code#section1003500019-位置功能的开关关闭) | The location switch is off. |
 | [1003500020](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-error-code#section1003500020-感知与提醒的开关关闭) | The "Awareness & suggestions" switch of the location-based service is turned off. |
+| [1003500021](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-error-code#section1003500021-系统无法找到实况窗卡片自定义扩展区的extensionability) | The system failed to find the ExtensionAbility instance for the custom Live View widget template. 适用版本：26.0.0+ |
 
 示例：
 
@@ -609,32 +613,32 @@ async function startLiveViewByTrigger(): Promise<void> {
     // 定义创建的liveView
     let liveView: liveViewManager.LiveView = {
       id: 0, // 实况窗ID，开发者生成。
-      event: "EXPRESS", // 实况窗的应用场景。EXPRESS：快递。
+      event: 'EXPRESS', // 实况窗的应用场景。EXPRESS：快递。
       liveViewData: {
         primary: {
-          title: "快递已送达",
+          title: '快递已送达',
           content: [
-            { text: "请前往" },
-            { text: " XXX店 ", textColor: "#FF0A59F7" },
-            { text: "取快递" },
+            { text: '请前往' },
+            { text: ' XXX店 ', textColor: '#FF0A59F7' },
+            { text: '取快递' }
           ],
           keepTime: 15,
-          clickAction: await buildWantAgent(),
+          clickAction: await buildWantAgent(), // 用于构建点击动作的跳转代理
           layoutData: {
             layoutType: liveViewManager.LayoutType.LAYOUT_TYPE_PICKUP,
-            title: "快递码",
-            content: "72988",
-            underlineColor: "#FF0A59F7",
-            descPic: "express.png" // 扩展区右侧产品描述图，取值为“/resources/rawfile”路径下的文件名或image.PixelMap
+            title: '快递码',
+            content: '72988',
+            underlineColor: '#FF0A59F7',
+            descPic: 'express.png' // 扩展区右侧产品描述图，取值为“/resources/rawfile”路径下的文件名或image.PixelMap
           }
         },
         capsule: {
           type: liveViewManager.CapsuleType.CAPSULE_TYPE_TEXT,
           status: 1,
-          icon: "express.jpg",
-          title: "快递码",
-          content: "快递码：72988",
-          backgroundColor: "#FF308977"
+          icon: 'express.jpg',
+          title: '快递码',
+          content: '快递码：72988',
+          backgroundColor: '#FF308977'
         }
       }
     };
@@ -732,6 +736,7 @@ stopLiveViewByTrigger(liveView: LiveView, trigger:Trigger): Promise<LiveViewResu
 | [1003500018](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-error-code#section1003500018-基于地理位置的实况窗提醒开关关闭) | Geofencing-based liveView is not enabled. |
 | [1003500019](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-error-code#section1003500019-位置功能的开关关闭) | The location switch is off. |
 | [1003500020](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-error-code#section1003500020-感知与提醒的开关关闭) | The "Awareness & suggestions" switch of the location-based service is turned off. |
+| [1003500021](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-error-code#section1003500021-系统无法找到实况窗卡片自定义扩展区的extensionability) | The system failed to find the ExtensionAbility instance for the custom Live View widget template. 适用版本：26.0.0+ |
 
 示例：
 
@@ -746,32 +751,32 @@ async function stopLiveViewByTrigger(): Promise<void> {
     // 定义要结束的liveView
     let liveView: liveViewManager.LiveView = {
       id: 0, // 实况窗ID，开发者生成。
-      event: "EXPRESS", // 实况窗的应用场景。EXPRESS：快递。
+      event: 'EXPRESS', // 实况窗的应用场景。EXPRESS：快递。
       liveViewData: {
         primary: {
-          title: "快递已送达",
+          title: '快递已送达',
           content: [
-            { text: "请前往" },
-            { text: " XXX店 ", textColor: "#FF0A59F7" },
-            { text: "取快递" },
+            { text: '请前往' },
+            { text: ' XXX店 ', textColor: '#FF0A59F7' },
+            { text: '取快递' }
           ],
           keepTime: 15,
-          clickAction: await buildWantAgent(),
+          clickAction: await buildWantAgent(), // 用于构建点击动作的跳转代理
           layoutData: {
             layoutType: liveViewManager.LayoutType.LAYOUT_TYPE_PICKUP,
-            title: "快递码",
-            content: "72988",
-            underlineColor: "#FF0A59F7",
-            descPic: "express.png" // 扩展区右侧产品描述图，取值为“/resources/rawfile”路径下的文件名或image.PixelMap
+            title: '快递码',
+            content: '72988',
+            underlineColor: '#FF0A59F7',
+            descPic: 'express.png' // 扩展区右侧产品描述图，取值为“/resources/rawfile”路径下的文件名或image.PixelMap
           }
         },
         capsule: {
           type: liveViewManager.CapsuleType.CAPSULE_TYPE_TEXT,
           status: 1,
-          icon: "express.jpg",
-          title: "快递码",
-          content: "快递码：72988",
-          backgroundColor: "#FF308977"
+          icon: 'express.jpg',
+          title: '快递码',
+          content: '快递码：72988',
+          backgroundColor: '#FF308977'
         }
       }
     };
@@ -931,12 +936,13 @@ async function buildWantAgent(): Promise<Want> {
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | id | number | 否 | 否 | 实况窗唯一标识，取值范围为[-2147483648, 2147483647]，由开发者自行生成。对应Push Kit中LiveViewPayload的[activityId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#liveviewpayload-实况窗消息)字段。 |
-| event | string | 否 | 否 | 实况窗的应用场景。 **●** TAXI：出行打车。 **●** DELIVERY：即时配送（外卖、生鲜）。 **●** FLIGHT：航班。 **●** TRAIN：高铁/火车。 **●** QUEUE：排队。 **●** PICK_UP：取餐。 **●** SCORE：赛事比分。 **●** RENT：共享租赁。 **●** TIMER：计时。 **●** WORKOUT：运动锻炼。 **●** NAVIGATION：导航。 **●** CHECK_IN：打卡。 **●** EXPRESS：快递。 **●** PROGRESS：进度类型。 使用对应场景需要申请权益，详情请参见[实况窗权益说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-rights)。 |
+| event | string | 否 | 否 | 实况窗的应用场景。 **●** TAXI：出行打车。 **●** DELIVERY：即时配送（外卖、生鲜）。 **●** FLIGHT：航班。 **●** TRAIN：高铁/火车。 **●** QUEUE：排队。 **●** PICK_UP：取餐。 **●** SCORE：赛事比分。 **●** RENT：共享租赁。 **●** TIMER：计时。 **●** WORKOUT：运动锻炼。 **●** NAVIGATION：导航。 **●** CHECK_IN：打卡。 **●** EXPRESS：快递。 **●** PROGRESS：进度类型。 **●** TRADE：金融交易。 使用对应场景需要申请权益，详情请参见[实况窗权益说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-rights)。 |
 | subEvent | string | 否 | 是 | 实况窗的应用子场景。主要用于统计子业务场景的实况窗数量，使用对应子场景无需额外申请权益。 **●** 即时配送（外卖、生鲜）场景(event为"DELIVERY") FOOD：美食、GOODS：商超、MEDICINE：买药、BACHELOR：跑腿、GROUPBUY：拼团 **●** 导航场景(event为"NAVIGATION") DRIVING：驾车、WALKING：步行、CYCLING：骑行、BUS：公交、METRO：地铁 **●** 出行打车场景(event为"TAXI") STANDARD：普通即时打车、SPECIAL：专车、HITCHHIKING：顺风车、CARPOOLING：拼车 **●** 排队场景(event为"QUEUE") RESTAURANT：餐饮排号、HOSPITAL：就诊排号、BANK：银行排号、GOVERNMENT：政务中心排号、ATTRACTION：景区排号 **●** 共享租赁场景(event为"RENT") BICYCLE：共享单车、EBIKE：共享电动车或助力车、POWERBANK：共享充电宝、CAR：共享汽车 **●** 运动锻炼场景(event为"WORKOUT") RUNNING：跑步、CYCLING：骑行、WALKING：步行 **●** 进度类型场景(event为"PROGRESS") UPLOAD：文件上传、DOWNLOAD：文件下载、IMPORT：资源导入、EXPORT：资源导出、BACKUP：备份、RECOVER：恢复 **起始版本：** 26.0.0 |
 | sequence | number | 否 | 是 | 支持实况窗消息更新和结束保序能力，取值范围为[0, 2147483647]，新的实况窗版本号需大于当前展示实况窗版本号，否则更新和结束会失败。若不传入参数值，Live View Kit不会自动生成（此时，调用getActiveLiveView接口查询实况信息，返回结果中sequence：4294967295为无效值，该无效值不允许用来更新实况），也不会校验实况窗版本号。对应Push Kit中的[version](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#liveviewpayload-实况窗消息)字段。 |
 | isMute | boolean | 否 | 是 | 消息提醒方式。若您在创建或更改实况窗状态时不传入此字段，则始终默认静默提醒。 **●** true：静默提醒。 **●** false：铃声震动提醒。 |
 | timer | [LiveViewTimer](#liveviewtimer) | 否 | 是 | 实况窗计时器，展示时每秒刷新一次。 配置了计时器后，可以在部分字段中使用占位符：**${placeholder.timer}**，系统会将占位符替换为计时器。 当前支持使用占位符的字段： **●** liveViewData.primary.[title](#primarydata) **●** liveViewData.primary.[content](#primarydata) **●** liveViewData.primary.layoutData.[content](#pickuplayout) **●** liveViewData.primary.layoutData.[competitionTime](#scorelayout) **起始版本：** 5.0.0(12) |
-| lifeCycleMode | [LifeCycleMode](#lifecyclemode) | 否 | 是 | 实况窗生命周期模式，控制实况窗是否随应用进程结束自动结束。默认为常规生命周期，需要由开发者主动调用API结束实况窗，不跟随应用进程结束而自动结束。 仅在创建实况时生效，并且在以下场景中传入该字段不生效： **●** 当event为导航场景/运动健康场景 **●** 当调用startLiveViewByTrigger注册由条件触发创建的实况窗 说明：不传lifeCycleMode与传入lifeCycleMode为STOP_BY_APP时效果一样。 **起始版本：** 26.0.0 |
+| lifeCycleMode | [LifeCycleMode](#lifecyclemode) | 否 | 是 | 实况窗生命周期模式，控制实况窗是否随应用进程结束自动结束。默认为常规生命周期，需要由开发者主动调用API结束实况窗，不跟随应用进程结束而自动结束。 仅在创建实况时生效，并且在以下场景中传入该字段不生效： **●** 当event为导航场景/运动锻炼场景 **●** 当调用startLiveViewByTrigger注册由条件触发创建的实况窗 **说明：** 不传lifeCycleMode与传入lifeCycleMode为STOP_BY_APP时效果一样。 **起始版本：** 26.0.0 |
+| shareUrl | string | 否 | 是 | 用于查看实时活动进展的网页链接，若传入该参数，其值不能为以下值：null/undefined/空字符串/全为空格的字符串，仅支持HTTPS协议的网页链接，即只支持以"https://"开头的网页链接，长度小于128，若不满足以上条件，则shareUrl字段不生效且不支持实况分享。 **说明：** 分享实况窗到HarmonyOS 7.0.0及以上设备时，用户点击由分享创建的实况窗卡片后，会直接跳转至该链接。若分享到旧版本系统或非HarmonyOS设备时，用户直接点击社交分享消息中的该链接查看实时活动进展。 **起始版本：** 26.0.0 |
 | liveViewData | [LiveViewData](#liveviewdata) | 否 | 否 | 实况窗详细信息。 |
 
 #### LiveViewTimer
@@ -1013,7 +1019,7 @@ async function buildWantAgent(): Promise<Want> {
 | keepTime | number | 否 | 是 | 实况窗存档时间，在结束实况窗后，通知仍保留在通知中心的时长，取值范围[0,3600]，单位：s。**传入值为0，表示实况窗在通知中心直接结束，不保留显示。** |
 | clickAction | [WantAgent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-wantagent) | 否 | 创建：否 更新或结束：是 | 点击实况窗默认动作，请调用wantAgent.[getWantAgent()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-wantagent#wantagentgetwantagent-1)来构造。 |
 | extensionData | [ExtensionData](#extensiondata) | 否 | 是 | 辅助区内容。 |
-| [layoutData](#layoutdata) | [ProgressLayout](#progresslayout) | [PickupLayout](#pickuplayout) | [FlightLayout](#flightlayout) | [ScoreLayout](#scorelayout) | [NavigationLayout](#navigationlayout) | 否 | 创建：否 更新或结束：是 | 扩展区数据。 **说明：** 从5.0.0(12)版本开始，新增支持参数类型NavigationLayout。 |
+| [layoutData](#layoutdata) | [ProgressLayout](#progresslayout) | [PickupLayout](#pickuplayout) | [FlightLayout](#flightlayout) | [ScoreLayout](#scorelayout) | [NavigationLayout](#navigationlayout) | [CustomLayout](#customlayout) | 否 | 创建：否 更新或结束：是 | 扩展区数据。 **说明：** 从5.0.0(12)版本开始，新增支持参数类型NavigationLayout。 从26.0.0版本开始，新增支持参数类型CustomLayout。 |
 | liveViewLockScreenPicture | string | image.[PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 否 | 是 | 锁屏沉浸实况窗大图样式在指定路径下的文件名。传入实际存在的图片时，用户在锁屏下点击实况胶囊中的应用图标、长按实况胶囊内容或长按卡片内容，会进入沉浸态，展示大图。不传入或传入图片不存在时，用户点击行为不会进入沉浸态。 **●** string类型的取值为在“/resources/rawfile”路径下的文件名，长度小于256。 示例：图片文件“icon.png”存放在应用的“/resources/rawfile”路径下，则取值为“icon.png”。 **●** 建议使用大小约为1000*1000的图片，不支持GIF格式的图片文件。 **起始版本：** 5.0.0(12) |
 | liveViewLockScreenAbilityName | string | 否 | 是 | [LiveViewLockScreenExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-lock-screen-ability)（锁屏沉浸实况窗扩展Ability）的名称，仅创建实况窗时生效，传入时值不可为空，长度最大为128。若在创建实况窗时与liveViewLockScreenPicture同时传入，则仅本字段生效。 **起始版本：** 5.0.0(12) |
 | liveViewLockScreenAbilityParameters | Record | 否 | 是 | 用户自定义向[LiveViewLockScreenExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-lock-screen-ability)（锁屏沉浸实况窗扩展Ability）传入的参数，填值时不能为空，key-value键值对最多50个，传入后可在ability的onSessionCreate()中，通过want.parameters获取。 **起始版本：** 5.0.0(12) |
@@ -1044,7 +1050,7 @@ async function buildWantAgent(): Promise<Want> {
 
 辅助区元素对应的API字段：
 
-![](./img/zh-cn_image_0000002631254608.png)
+![](./img/zh-cn_image_0000002685929407.png)
 
 - 1 实况卡片辅助区类型，对应type字段: 当辅助区类型为ExtensionType.EXTENSION_TYPE_COMMON_TEXT时，辅助区显示普通文本，使用API字段text传入文本内容。
 - 当辅助区类型为ExtensionType.EXTENSION_TYPE_CAPSULE_TEXT时，辅助区显示实况胶囊文本，使用API字段text传入文本内容。
@@ -1190,7 +1196,7 @@ async function buildWantAgent(): Promise<Want> {
 
 卡片元素对应的API字段：
 
-![](./img/zh-cn_image_0000002661613793.png)
+![](./img/zh-cn_image_0000002656009732.png)
 
 - 1 进度百分比，对应progress字段。
 - 2 进度条进度的颜色，对应color字段。
@@ -1222,7 +1228,7 @@ async function buildWantAgent(): Promise<Want> {
 
 卡片元素对应的API字段：
 
-![](./img/zh-cn_image_0000002631414504.png)
+![](./img/zh-cn_image_0000002655849810.png)
 
 - 1 扩展区标题，对应title字段。
 - 2 扩展区内容，对应content字段。
@@ -1250,7 +1256,7 @@ async function buildWantAgent(): Promise<Want> {
 
 卡片元素对应的API字段：
 
-![](./img/zh-cn_image_0000002661733731.png)
+![](./img/zh-cn_image_0000002686089241.png)
 
 - 1 左侧文本标题，对应firstTitle字段。
 - 2 左侧文本内容，对应firstContent字段。
@@ -1292,7 +1298,7 @@ async function buildWantAgent(): Promise<Want> {
 
 卡片元素对应的API字段：
 
-![](./img/zh-cn_image_0000002631254610.png)
+![](./img/zh-cn_image_0000002685929409.png)
 
 - 1 左侧主队名称，对应hostName字段。
 - 2 左侧主队图标，对应hostIcon字段。
@@ -1330,7 +1336,7 @@ async function buildWantAgent(): Promise<Want> {
 
 卡片元素对应的API字段：
 
-![](./img/zh-cn_image_0000002661613795.png)
+![](./img/zh-cn_image_0000002656009734.png)
 
 - 1 当前导航方向，对应currentNavigationIcon字段。
 - 2 导航方向的箭头集合图片，对应navigationIcons字段。
@@ -1350,13 +1356,30 @@ async function buildWantAgent(): Promise<Want> {
 | navigationIcons | Array | 否 | 是 | 导航方向的箭头集合图片，支持1-11个。创建时不传，则不展示扩展区。 **●** 当此参数类型为string时，取值为在“/resources/rawfile”路径下的本地资源文件名，长度最大为128。 示例：图片文件“icon.png”存放在应用的“/resources/rawfile”路径下，则取值为“icon.png”。 若本地资源不存在，创建时失败，更新或结束时导航模板扩展区不更新。 **说明：** 为确保在系统深浅模式下的显示效果，系统将对png、svg格式图片做赋色处理，其他格式图片保留原样显示不支持赋色。具体参考 [卡片模板](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-live-view-0000001955186861#section1511241615274) 的 "导航定制模板"说明。 **●** 当此参数类型为image.[PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)时，传入图片的PixelMap实例大小有如下限制： 对于26.0.0之前版本，不大于30KB；从26.0.0开始，不大于192KB。 |
 | isNavigationIconsDisplayed | boolean | 否 | 是 | 控制导航方向的箭头集合图片是否展示。更新或结束未填时，继承上一次状态变更时的值。其他情况不传值时默认为展示。 **●** true：展示 **●** false：不展示 **起始版本**：5.0.3(15) |
 
+#### CustomLayout
+
+自定义模板扩展区参数，继承[LayoutData](#layoutdata)。当[layoutType](#layouttype)为LayoutType.LAYOUT_TYPE_CUSTOM时，使用此类型。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.LiveView.LiveViewService
+
+设备行为差异： 该接口在Phone、Tablet中可正常调用，在其他设备类型中无效果。
+
+起始版本： 26.0.0
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| abilityName | string | 否 | 否 | [LiveViewCardExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-card-ability)（实况窗卡片自定义扩展区的扩展Ability）的名称。若传入该参数，其值不能为以下值：null/undefined/空字符串/全为空格的字符串，长度小于128。 |
+| abilityParameters | Record | 否 | 是 | [LiveViewCardExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-card-ability)（实况窗卡片自定义扩展区的扩展Ability）传入的自定义参数。填值时不能为空，key-value键值对最多50个，传入后可在LiveViewCardExtensionAbility的onRender()中，通过param获取。 |
+
 #### CapsuleData
 
 定义实况胶囊基本属性的基类。
 
 胶囊元素对应的API字段：
 
-![](./img/zh-cn_image_0000002631414506.png)
+![](./img/zh-cn_image_0000002655849812.png)
 
 - 1 实况胶囊类型，对应type字段。
 - 2 实况胶囊的图标，对应icon字段。
@@ -1388,7 +1411,7 @@ async function buildWantAgent(): Promise<Want> {
 
 胶囊元素对应的API字段：
 
-![](./img/zh-cn_image_0000002661733733.png)
+![](./img/zh-cn_image_0000002686089243.png)
 
 - 1 实况胶囊主文本，对应title字段。
 - 2 实况胶囊副文本，对应content字段。
@@ -1412,7 +1435,7 @@ async function buildWantAgent(): Promise<Want> {
 
 胶囊元素对应的API字段：
 
-![](./img/zh-cn_image_0000002631254612.png)
+![](./img/zh-cn_image_0000002685929411.png)
 
 - 1 实况胶囊副文本，对应content字段。
 - 2 实况胶囊计时器初始值，对应time字段。计时器正计时或倒计时，由isCountdown字段控制。计时器是否暂停，由isPaused字段控制。
@@ -1438,7 +1461,7 @@ async function buildWantAgent(): Promise<Want> {
 
 胶囊元素对应的API字段：
 
-![](./img/zh-cn_image_0000002661613797.png)
+![](./img/zh-cn_image_0000002656009736.png)
 
 - 1 进度值显示数值占比或百分比，由indeterminate字段控制： indeterminate为false：展示数值占比，格式为x/y（x对应progress字段，y对应max字段）。
 - indeterminate为true：展示百分比，格式为(x/y)*100% （x对应progress字段，y对应max字段）。
@@ -1464,7 +1487,7 @@ async function buildWantAgent(): Promise<Want> {
 
 外屏元素对应的API字段：
 
-![](./img/zh-cn_image_0000002631414508.png)
+![](./img/zh-cn_image_0000002655849814.png)
 
 - 1 外屏标题，对应title字段。
 - 2 外屏内容，对应content字段。
@@ -1541,6 +1564,7 @@ async function buildWantAgent(): Promise<Want> {
 | LAYOUT_TYPE_FLIGHT | 5 | 左右文本类型。适用于火车、航班出行场景，用于显示行程信息，包括出发地、目的地与时间。 |
 | LAYOUT_TYPE_SCORE | 7 | 赛事类型。适用于体育赛事和电竞赛事比分场景，用于展示队伍比分。 |
 | LAYOUT_TYPE_NAVIGATION | 8 | 导航类型。适用于导航出行场景，用于展示导航信息。 **起始版本：** 5.0.0(12) |
+| LAYOUT_TYPE_CUSTOM | 100 | 自定义类型。适用于需要在扩展区展示自定义丰富内容的实时活动场景，仅在已有模板都不适用的情况下才允许使用。 **起始版本：** 26.0.0 **说明：** 当API版本小于26.0.0且LayoutType='LAYOUT_TYPE_CUSTOM'时，创建和更新实况窗失败，需要开发者针对新旧版本进行适配处理，请参考[ArkTS API兼容性保护](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/arkts-api-compatibility-warning-elim)。 |
 
 #### ExtensionType
 
@@ -1561,7 +1585,7 @@ async function buildWantAgent(): Promise<Want> {
 | EXTENSION_TYPE_CAPSULE_TEXT | 2 | 辅助区显示实况胶囊文本。 |
 | EXTENSION_TYPE_PIC | 3 | 辅助区显示图片。 |
 | EXTENSION_TYPE_ICON | 4 | 辅助区显示图标。 |
-| EXTENSION_TYPE_PROGRESS | 5 | 辅助区显示进度环。 **起始版本：** 26.0.0 **说明：** 当API版本小于26.0.0且ExtensionType赋此值时，创建和更新实况窗失败，需要开发者针对新旧版本进行适配处理。 |
+| EXTENSION_TYPE_PROGRESS | 5 | 辅助区显示进度环。 **起始版本：** 26.0.0 **说明：** 当API版本小于26.0.0且ExtensionType='EXTENSION_TYPE_PROGRESS'值时，创建和更新实况窗失败，需要开发者针对新旧版本进行适配处理，请参考[ArkTS API兼容性保护](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/arkts-api-compatibility-warning-elim)。 |
 
 #### ActionType
 

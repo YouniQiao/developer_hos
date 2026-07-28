@@ -2,8 +2,8 @@
 title: "DeviceVerify（应用设备状态检测）"
 upstream_id: "harmonyos-references/devicesecurity-deviceverify-api"
 catalog: "harmonyos-references"
-content_hash: "9afd4394f2df"
-synced_at: "2026-07-09T00:59:14.238799"
+content_hash: "8c6a6af6750a"
+synced_at: "2026-07-28T16:50:24.776207"
 ---
 
 # DeviceVerify（应用设备状态检测）
@@ -18,11 +18,13 @@ synced_at: "2026-07-09T00:59:14.238799"
 import { deviceCertificate } from '@kit.DeviceSecurityKit';
 ```
 
-#### [h2]getDeviceToken
+#### getDeviceToken
 
 getDeviceToken(): Promise<string>
 
 获取本设备的DeviceToken。使用Promise异步回调。
+
+![](./img/caution_3.0-zh-cn.png) 该接口涉及端云协同，需要联网等耗时操作，因此不要在UI线程中执行，避免阻塞UI线程。
 
 模型约束： 此接口仅可在Stage模型下使用。
 

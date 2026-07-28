@@ -2,8 +2,8 @@
 title: "@ohos.web.WebNativeMessagingExtensionContext (Web Native Messaging Extension Context)"
 upstream_id: "harmonyos-references/arkts-apis-web-webnativemessagingextensioncontext"
 catalog: "harmonyos-references"
-content_hash: "a1df60c4af5c"
-synced_at: "2026-07-09T17:25:37.575177"
+content_hash: "f8e846608699"
+synced_at: "2026-07-28T16:49:54.214186"
 ---
 
 # @ohos.web.WebNativeMessagingExtensionContext (Web Native Messaging Extension Context)
@@ -62,7 +62,7 @@ startAbility(want: Want, options?: StartOptions): Promise<void>
 | 16000009 | An ability cannot be started or stopped in Wukong mode. |
 | 16000010 | The call with the continuation and prepare continuation flag is forbidden. |
 | 16000011 | The context does not exist. |
-| 16000012 | The application is controlled by the AppGallery and cannot be started. |
+| 16000012 | The application is controlled. |
 | 16000013 | The application is controlled by EDM. |
 | 16000019 | No matching ability is found. |
 | 16000050 | Internal error. Possible causes: 1. Failed to connect to the system service; 2. The system service failed to communicate with dependency module. |
@@ -95,7 +95,7 @@ export class MyWebNativeMessagingExtension extends WebNativeMessagingExtensionAb
         console.info('Ability started successfully');
     } catch (err) {
         console.error(`Failed to start ability. Code: ${(err as BusinessError).code},
-        Message: ${e(err as BusinessError)rr.message}`);
+        Message: ${(err as BusinessError).message}`);
     }
   }
 }
@@ -107,7 +107,7 @@ startAbilityForResult(want: Want, options?: StartOptions): Promise<AbilityResult
 
 启动一个UIAbility，开发者可以通过回调函数接收被拉起的UIAbility退出时的返回结果。使用Promise异步回调。
 
-UIAbility被启动后，有如下情况:
+UIAbility被启动后，有如下情况：
 
 - 正常情况下可通过调用[terminateSelfWithResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext#terminateselfwithresult)接口使之终止并且返回结果给调用方。
 - 异常情况下比如销毁UIAbility会返回异常信息给调用方，异常信息中resultCode为-1。

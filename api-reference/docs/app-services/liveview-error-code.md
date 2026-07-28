@@ -2,8 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/liveview-error-code"
 catalog: "harmonyos-references"
-content_hash: "7ef8f15d5d4b"
-synced_at: "2026-07-09T01:01:22.918517"
+content_hash: "e61fefc31fca"
+synced_at: "2026-07-28T16:52:41.354579"
 ---
 
 # ArkTS API错误码
@@ -370,3 +370,22 @@ The "Awareness & suggestions" switch of the location-based service is turned off
 处理步骤
 
 需要用户选择设置->隐私和安全->位置->最底部"系统服务"，打开访问“感知与提醒”开关。
+
+#### 1003500021 系统无法找到实况窗卡片自定义扩展区的ExtensionAbility
+
+错误信息
+
+The system failed to find the ExtensionAbility instance for the custom Live View widget template.
+
+错误描述
+
+找不到实况窗卡片自定义扩展区的[LiveViewCardExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-card-ability)，导致实况窗创建失败。
+
+可能原因
+
+开发者在创建实况窗卡片自定义扩展区时，传入的[CustomLayout.abilityName](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-liveviewmanager#customlayout)不存在。
+
+处理步骤
+
+1. 需要开发者在工程内创建一个ExtensionAbility类型的组件并且继承[LiveViewCardExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-card-ability)。
+2. 开发者在创建实况窗卡片自定义扩展区时，传入的[CustomLayout.abilityName](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-liveviewmanager#customlayout)为开发者创建的该ExtensionAbility类型的组件的名称。

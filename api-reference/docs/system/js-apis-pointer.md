@@ -2,8 +2,8 @@
 title: "@ohos.multimodalInput.pointer (鼠标光标)"
 upstream_id: "harmonyos-references/js-apis-pointer"
 catalog: "harmonyos-references"
-content_hash: "2fb4b8b486a9"
-synced_at: "2026-07-09T00:59:49.576982"
+content_hash: "bf1ae95a058a"
+synced_at: "2026-07-28T16:51:08.019001"
 ---
 
 # @ohos.multimodalInput.pointer (鼠标光标)
@@ -18,6 +18,7 @@ synced_at: "2026-07-09T00:59:49.576982"
 
 ```
 import { pointer } from '@kit.InputKit';
+import { BusinessError } from '@kit.BasicServicesKit';
 ```
 
 #### pointer.setPointerVisible
@@ -69,7 +70,7 @@ struct Index {
           } catch (error) {
             console.error(`Failed to set pointer cursor visible, Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`);
           }
-        })
+        });
     }
   }
 }
@@ -355,7 +356,7 @@ struct Index {
         .onClick(() => {
           // 获取应用内最近一个窗口
           window.getLastWindow(this.getUIContext().getHostContext(), (error: BusinessError, win: window.Window) => {
-            if (error.code) {
+            if (error) {
               console.error(`Failed to obtain the top window, Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`);
               return;
             }
@@ -457,7 +458,7 @@ struct Index {
 
 getPointerStyleSync(windowId: number): PointerStyle
 
-查询指定窗口的鼠标样式类型，如向东箭头、向西箭头、向南箭头、向北箭头等。
+查询指定窗口的鼠标样式类型，如向东箭头、向西箭头、向南箭头、向北箭头等。此接口仅支持获取本应用进程内窗口的鼠标样式类型。
 
 系统能力：SystemCapability.MultimodalInput.Input.Pointer
 
@@ -584,7 +585,7 @@ setPointerStyle(windowId: number, pointerStyle: PointerStyle): Promise<void>
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | windowId | number | 是 | 窗口ID。取值范围为大于等于0的整数。 窗口ID合法并且对应窗口存在时，可以设置窗口的鼠标光标样式。 窗口ID合法但窗口不存在时，也可以设置鼠标光标样式。 设置结果可通过[getPointerStyle](#pointergetpointerstyle-1)获取。 |
-| pointerStyle | [PointerStyle](#pointerstyle) | 是 | 鼠标样式。 |
+| pointerStyle | [PointerStyle](#pointerstyle) | 是 | 鼠标样式。不能传入DEVELOPER_DEFINED_ICON作为参数。 |
 
 返回值：
 
@@ -646,7 +647,7 @@ struct Index {
 
 setPointerStyleSync(windowId: number, pointerStyle: PointerStyle): void
 
-设置指定窗口的鼠标样式类型，使用同步方式返回结果。
+设置指定窗口的鼠标样式类型，使用同步方式返回结果。此接口仅支持设置本应用进程内窗口的鼠标样式类型，如需通过UIExtensionAbility进程设置宿主窗口的鼠标样式类型，请参阅[setCursor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-cursorcontroller#setcursor12)。
 
 系统能力：SystemCapability.MultimodalInput.Input.Pointer
 
@@ -655,7 +656,7 @@ setPointerStyleSync(windowId: number, pointerStyle: PointerStyle): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | windowId | number | 是 | 窗口ID。取值范围为大于等于0的整数。 窗口ID合法并且对应窗口存在时，可以设置窗口的鼠标光标样式。 窗口ID合法但窗口不存在时，也可以设置鼠标光标样式。 设置结果可通过[getPointerStyleSync](#pointergetpointerstylesync10)获取。 |
-| pointerStyle | [PointerStyle](#pointerstyle) | 是 | 鼠标样式。 |
+| pointerStyle | [PointerStyle](#pointerstyle) | 是 | 鼠标样式。不能传入DEVELOPER_DEFINED_ICON作为参数。 |
 
 错误码：
 
@@ -695,7 +696,7 @@ struct Index {
               pointer.setPointerStyleSync(windowId, pointer.PointerStyle.CROSS);
               console.info(`Succeeded in setting pointer style.`);
             } catch (error) {
-              console.error(`Failed to get pointer size, Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`);
+              console.error(`Failed to set pointer style, Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`);
             }
           });
         })
@@ -737,58 +738,58 @@ struct Index {
 
 | 名称 | 值 | 说明 | 图示 |
 | --- | --- | --- | --- |
-| DEFAULT | 0 | 默认 | ![](./img/zh-cn_image_0000002631254252.png) |
-| EAST | 1 | 向东箭头 | ![](./img/zh-cn_image_0000002661613433.png) |
-| WEST | 2 | 向西箭头 | ![](./img/zh-cn_image_0000002631414146.png) |
-| SOUTH | 3 | 向南箭头 | ![](./img/zh-cn_image_0000002661733375.png) |
-| NORTH | 4 | 向北箭头 | ![](./img/zh-cn_image_0000002631254254.png) |
-| WEST_EAST | 5 | 向西东箭头 | ![](./img/zh-cn_image_0000002661613435.png) |
-| NORTH_SOUTH | 6 | 向北南箭头 | ![](./img/zh-cn_image_0000002631414148.png) |
-| NORTH_EAST | 7 | 向东北箭头 | ![](./img/zh-cn_image_0000002661733377.png) |
-| NORTH_WEST | 8 | 向西北箭头 | ![](./img/zh-cn_image_0000002631254256.png) |
-| SOUTH_EAST | 9 | 向东南箭头 | ![](./img/zh-cn_image_0000002661613437.png) |
-| SOUTH_WEST | 10 | 向西南箭头 | ![](./img/zh-cn_image_0000002631414150.png) |
-| NORTH_EAST_SOUTH_WEST | 11 | 东北西南调整 | ![](./img/zh-cn_image_0000002661733379.png) |
-| NORTH_WEST_SOUTH_EAST | 12 | 西北东南调整 | ![](./img/zh-cn_image_0000002631254258.png) |
-| CROSS | 13 | 准确选择 | ![](./img/zh-cn_image_0000002661613441.png) |
-| CURSOR_COPY | 14 | 复制 | ![](./img/zh-cn_image_0000002631414152.png) |
-| CURSOR_FORBID | 15 | 不可用 | ![](./img/zh-cn_image_0000002661733381.png) |
-| COLOR_SUCKER | 16 | 取色器 | ![](./img/zh-cn_image_0000002631254260.png) |
-| HAND_GRABBING | 17 | 并拢的手 | ![](./img/zh-cn_image_0000002661613443.png) |
-| HAND_OPEN | 18 | 张开的手 | ![](./img/zh-cn_image_0000002631414154.png) |
-| HAND_POINTING | 19 | 手形指针 | ![](./img/zh-cn_image_0000002661733383.png) |
-| HELP | 20 | 帮助选择 | ![](./img/zh-cn_image_0000002631254262.png) |
-| MOVE | 21 | 移动 | ![](./img/zh-cn_image_0000002661613445.png) |
-| RESIZE_LEFT_RIGHT | 22 | 内部左右调整 | ![](./img/zh-cn_image_0000002631414156.png) |
-| RESIZE_UP_DOWN | 23 | 内部上下调整 | ![](./img/zh-cn_image_0000002661733385.png) |
-| SCREENSHOT_CHOOSE | 24 | 截图十字准星 | ![](./img/zh-cn_image_0000002631254264.png) |
-| SCREENSHOT_CURSOR | 25 | 截图 | ![](./img/zh-cn_image_0000002661613447.png) |
-| TEXT_CURSOR | 26 | 文本选择 | ![](./img/zh-cn_image_0000002631414158.png) |
-| ZOOM_IN | 27 | 放大 | ![](./img/zh-cn_image_0000002661733387.png) |
-| ZOOM_OUT | 28 | 缩小 | ![](./img/zh-cn_image_0000002631254266.png) |
-| MIDDLE_BTN_EAST | 29 | 向东滚动 | ![](./img/zh-cn_image_0000002661613449.png) |
-| MIDDLE_BTN_WEST | 30 | 向西滚动 | ![](./img/zh-cn_image_0000002631414160.png) |
-| MIDDLE_BTN_SOUTH | 31 | 向南滚动 | ![](./img/zh-cn_image_0000002661733389.png) |
-| MIDDLE_BTN_NORTH | 32 | 向北滚动 | ![](./img/zh-cn_image_0000002631254268.png) |
-| MIDDLE_BTN_NORTH_SOUTH | 33 | 向南北滚动 | ![](./img/zh-cn_image_0000002661613451.png) |
-| MIDDLE_BTN_NORTH_EAST | 34 | 向东北滚动 | ![](./img/zh-cn_image_0000002631414162.png) |
-| MIDDLE_BTN_NORTH_WEST | 35 | 向西北滚动 | ![](./img/zh-cn_image_0000002661733391.png) |
-| MIDDLE_BTN_SOUTH_EAST | 36 | 向东南滚动 | ![](./img/zh-cn_image_0000002631254270.png) |
-| MIDDLE_BTN_SOUTH_WEST | 37 | 向西南滚动 | ![](./img/zh-cn_image_0000002661613453.png) |
-| MIDDLE_BTN_NORTH_SOUTH_WEST_EAST | 38 | 四向锥形移动 | ![](./img/zh-cn_image_0000002631414164.png) |
-| HORIZONTAL_TEXT_CURSOR10+ | 39 | 垂直文本选择 | ![](./img/zh-cn_image_0000002661733393.png) |
-| CURSOR_CROSS10+ | 40 | 十字光标 | ![](./img/zh-cn_image_0000002631254272.png) |
-| CURSOR_CIRCLE10+ | 41 | 圆形光标 | ![](./img/zh-cn_image_0000002661613455.png) |
-| LOADING10+ | 42 | 正在载入动画光标 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 | ![](./img/zh-cn_image_0000002631414166.png) |
-| RUNNING10+ | 43 | 后台运行中动画光标 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 | ![](./img/zh-cn_image_0000002661733395.png) |
-| MIDDLE_BTN_EAST_WEST18+ | 44 | 向东西滚动 | ![](./img/zh-cn_image_0000002631254274.png) |
-| RUNNING_LEFT22+ | 45 | 后台运行中动画光标(拓展1) | ![](./img/zh-cn_image_0000002661613457.png) |
-| RUNNING_RIGHT22+ | 46 | 后台运行中动画光标(拓展2) | ![](./img/zh-cn_image_0000002631414168.png) |
-| AECH_DEVELOPER_DEFINED_ICON22+ | 47 | 圆形自定义光标 | ![](./img/zh-cn_image_0000002661733397.png) |
-| SCREENRECORDER_CURSOR20+ | 48 | 录屏光标 | ![](./img/zh-cn_image_0000002631254276.png) |
-| LASER_CURSOR22+ | 49 | 悬浮光标。手写笔进入空鼠模式时使用该光标，无法直接设置 。 空鼠模式支持通过手写笔在空中转动来控制屏幕上虚拟光标的移动，并借助笔身按键实现上下翻页功能，用于演示PPT、隔空操作等场景。 | ![](./img/zh-cn_image_0000002661613459.png) |
-| LASER_CURSOR_DOT22+ | 50 | 点击光标。手写笔进入空鼠模式时使用该光标，无法直接设置 。 空鼠模式支持通过手写笔在空中转动来控制屏幕上虚拟光标的移动，并借助笔身按键实现上下翻页功能，用于演示PPT、隔空操作等场景。 | ![](./img/zh-cn_image_0000002631414170.png) |
-| LASER_CURSOR_DOT_RED22+ | 51 | 激光笔光标。手写笔进入空鼠模式时使用该光标，无法直接设置 。 空鼠模式支持通过手写笔在空中转动来控制屏幕上虚拟光标的移动，并借助笔身按键实现上下翻页功能，用于演示PPT、隔空操作等场景。 | ![](./img/zh-cn_image_0000002661733399.png) |
+| DEFAULT | 0 | 默认 | ![](./img/zh-cn_image_0000002686088887.png) |
+| EAST | 1 | 向东箭头 | ![](./img/zh-cn_image_0000002685929055.png) |
+| WEST | 2 | 向西箭头 | ![](./img/zh-cn_image_0000002656009380.png) |
+| SOUTH | 3 | 向南箭头 | ![](./img/zh-cn_image_0000002655849458.png) |
+| NORTH | 4 | 向北箭头 | ![](./img/zh-cn_image_0000002686088889.png) |
+| WEST_EAST | 5 | 向西东箭头 | ![](./img/zh-cn_image_0000002685929057.png) |
+| NORTH_SOUTH | 6 | 向北南箭头 | ![](./img/zh-cn_image_0000002656009382.png) |
+| NORTH_EAST | 7 | 向东北箭头 | ![](./img/zh-cn_image_0000002655849460.png) |
+| NORTH_WEST | 8 | 向西北箭头 | ![](./img/zh-cn_image_0000002686088891.png) |
+| SOUTH_EAST | 9 | 向东南箭头 | ![](./img/zh-cn_image_0000002685929059.png) |
+| SOUTH_WEST | 10 | 向西南箭头 | ![](./img/zh-cn_image_0000002656009384.png) |
+| NORTH_EAST_SOUTH_WEST | 11 | 东北西南调整 | ![](./img/zh-cn_image_0000002655849462.png) |
+| NORTH_WEST_SOUTH_EAST | 12 | 西北东南调整 | ![](./img/zh-cn_image_0000002686088893.png) |
+| CROSS | 13 | 准确选择 | ![](./img/zh-cn_image_0000002685929061.png) |
+| CURSOR_COPY | 14 | 复制 | ![](./img/zh-cn_image_0000002656009386.png) |
+| CURSOR_FORBID | 15 | 不可用 | ![](./img/zh-cn_image_0000002655849464.png) |
+| COLOR_SUCKER | 16 | 取色器 | ![](./img/zh-cn_image_0000002686088895.png) |
+| HAND_GRABBING | 17 | 并拢的手 | ![](./img/zh-cn_image_0000002685929063.png) |
+| HAND_OPEN | 18 | 张开的手 | ![](./img/zh-cn_image_0000002656009388.png) |
+| HAND_POINTING | 19 | 手形指针 | ![](./img/zh-cn_image_0000002655849466.png) |
+| HELP | 20 | 帮助选择 | ![](./img/zh-cn_image_0000002686088897.png) |
+| MOVE | 21 | 移动 | ![](./img/zh-cn_image_0000002685929065.png) |
+| RESIZE_LEFT_RIGHT | 22 | 内部左右调整 | ![](./img/zh-cn_image_0000002656009390.png) |
+| RESIZE_UP_DOWN | 23 | 内部上下调整 | ![](./img/zh-cn_image_0000002655849468.png) |
+| SCREENSHOT_CHOOSE | 24 | 截图十字准星 | ![](./img/zh-cn_image_0000002686088899.png) |
+| SCREENSHOT_CURSOR | 25 | 截图 | ![](./img/zh-cn_image_0000002685929067.png) |
+| TEXT_CURSOR | 26 | 文本选择 | ![](./img/zh-cn_image_0000002656009392.png) |
+| ZOOM_IN | 27 | 放大 | ![](./img/zh-cn_image_0000002655849470.png) |
+| ZOOM_OUT | 28 | 缩小 | ![](./img/zh-cn_image_0000002686088901.png) |
+| MIDDLE_BTN_EAST | 29 | 向东滚动 | ![](./img/zh-cn_image_0000002685929069.png) |
+| MIDDLE_BTN_WEST | 30 | 向西滚动 | ![](./img/zh-cn_image_0000002656009394.png) |
+| MIDDLE_BTN_SOUTH | 31 | 向南滚动 | ![](./img/zh-cn_image_0000002655849472.png) |
+| MIDDLE_BTN_NORTH | 32 | 向北滚动 | ![](./img/zh-cn_image_0000002686088903.png) |
+| MIDDLE_BTN_NORTH_SOUTH | 33 | 向南北滚动 | ![](./img/zh-cn_image_0000002685929071.png) |
+| MIDDLE_BTN_NORTH_EAST | 34 | 向东北滚动 | ![](./img/zh-cn_image_0000002656009396.png) |
+| MIDDLE_BTN_NORTH_WEST | 35 | 向西北滚动 | ![](./img/zh-cn_image_0000002655849474.png) |
+| MIDDLE_BTN_SOUTH_EAST | 36 | 向东南滚动 | ![](./img/zh-cn_image_0000002686088905.png) |
+| MIDDLE_BTN_SOUTH_WEST | 37 | 向西南滚动 | ![](./img/zh-cn_image_0000002685929073.png) |
+| MIDDLE_BTN_NORTH_SOUTH_WEST_EAST | 38 | 四向锥形移动 | ![](./img/zh-cn_image_0000002656009398.png) |
+| HORIZONTAL_TEXT_CURSOR10+ | 39 | 水平文本选择 | ![](./img/zh-cn_image_0000002655849476.png) |
+| CURSOR_CROSS10+ | 40 | 十字光标 | ![](./img/zh-cn_image_0000002686088907.png) |
+| CURSOR_CIRCLE10+ | 41 | 圆形光标 | ![](./img/zh-cn_image_0000002685929075.png) |
+| LOADING10+ | 42 | 正在载入动画光标 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 | ![](./img/zh-cn_image_0000002656009400.png) |
+| RUNNING10+ | 43 | 后台运行中动画光标 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 | ![](./img/zh-cn_image_0000002655849478.png) |
+| MIDDLE_BTN_EAST_WEST18+ | 44 | 向东西滚动 | ![](./img/zh-cn_image_0000002686088909.png) |
+| RUNNING_LEFT22+ | 45 | 后台运行中动画光标(拓展1) | ![](./img/zh-cn_image_0000002685929077.png) |
+| RUNNING_RIGHT22+ | 46 | 后台运行中动画光标(拓展2) | ![](./img/zh-cn_image_0000002656009402.png) |
+| AECH_DEVELOPER_DEFINED_ICON22+ | 47 | 圆形自定义光标 | ![](./img/zh-cn_image_0000002655849480.png) |
+| SCREENRECORDER_CURSOR20+ | 48 | 录屏光标 | ![](./img/zh-cn_image_0000002686088911.png) |
+| LASER_CURSOR22+ | 49 | 悬浮光标。手写笔进入空鼠模式时使用该光标，无法直接设置 。 空鼠模式支持通过手写笔在空中转动来控制屏幕上虚拟光标的移动，并借助笔身按键实现上下翻页功能，用于演示PPT、隔空操作等场景。 | ![](./img/zh-cn_image_0000002685929079.png) |
+| LASER_CURSOR_DOT22+ | 50 | 点击光标。手写笔进入空鼠模式时使用该光标，无法直接设置 。 空鼠模式支持通过手写笔在空中转动来控制屏幕上虚拟光标的移动，并借助笔身按键实现上下翻页功能，用于演示PPT、隔空操作等场景。 | ![](./img/zh-cn_image_0000002656009404.png) |
+| LASER_CURSOR_DOT_RED22+ | 51 | 激光笔光标。手写笔进入空鼠模式时使用该光标，无法直接设置 。 空鼠模式支持通过手写笔在空中转动来控制屏幕上虚拟光标的移动，并借助笔身按键实现上下翻页功能，用于演示PPT、隔空操作等场景。 | ![](./img/zh-cn_image_0000002655849482.png) |
 | DEVELOPER_DEFINED_ICON22+ | -100 | 自定义光标，开发者可使用[setCustomCursor](#pointersetcustomcursor15)设置自定义光标，不支持使用[setPointerStyle](#pointersetpointerstyle-1)直接设置。 | 自定义光标样式，通过接口设置。该参数用于getPointerStyle在特定场景（在设置自定义光标样式的窗口上获取样式）下返回数据，不能作为setCustomCursor、setPointerStyle接口入参使用。 |
 
 #### pointer.setCustomCursor11+
@@ -841,7 +842,7 @@ struct Index {
         .onClick(() => {
           // app_icon为示例资源，请开发者根据实际需求配置资源文件。
           this.getUIContext()?.getHostContext()?.resourceManager.getMediaContent(
-            $r("app.media.app_icon").id, (error: BusinessError, svgFileData: Uint8Array) => {
+            $r('app.media.app_icon').id, (error: BusinessError, svgFileData: Uint8Array) => {
             const svgBuffer: ArrayBuffer = svgFileData.buffer.slice(0);
             let svgImageSource: image.ImageSource = image.createImageSource(svgBuffer);
             let svgDecodingOptions: image.DecodingOptions = { desiredSize: { width: 50, height: 50 } };
@@ -887,7 +888,7 @@ struct Index {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| followSystem | boolean | 否 | 否 | 是否根据系统设置调整光标大小。false表示使用自定义光标样式大小，true表示根据系统设置调整光标大小，可调整范围为：[光标资源图大小，256×256]。 |
+| followSystem | boolean | 否 | 否 | 是否根据系统设置调整光标大小。false表示使用自定义光标样式大小，true表示根据系统设置调整光标大小，可调整范围为：[光标资源图大小, 256×256]。 |
 
 #### pointer.setCustomCursor15+
 
@@ -905,7 +906,7 @@ setCustomCursor(windowId: number, cursor: CustomCursor, config: CursorConfig): P
 | --- | --- | --- | --- |
 | windowId | number | 是 | 窗口ID。取值为大于0的整数。 |
 | cursor | [CustomCursor](#customcursor15) | 是 | 自定义光标资源。 |
-| config | [CursorConfig](#cursorconfig15) | 是 | 自定义光标配置，用于配置是否根据系统设置调整光标大小。如果CursorConfig中followSystem设置为true，则光标大小的可调整范围为：[光标资源图大小，256×256]。 |
+| config | [CursorConfig](#cursorconfig15) | 是 | 自定义光标配置，用于配置是否根据系统设置调整光标大小。如果CursorConfig中followSystem设置为true，则光标大小的可调整范围为：[光标资源图大小, 256×256]。 |
 
 返回值：
 
@@ -939,7 +940,7 @@ struct Index {
         .onClick(() => {
           // app_icon为示例资源，请开发者根据实际需求配置资源文件。
           this.getUIContext()?.getHostContext()?.resourceManager.getMediaContent(
-            $r("app.media.app_icon").id, (error: BusinessError, svgFileData: Uint8Array) => {
+            $r('app.media.app_icon').id, (error: BusinessError, svgFileData: Uint8Array) => {
             const svgBuffer: ArrayBuffer = svgFileData.buffer.slice(0);
             let svgImageSource: image.ImageSource = image.createImageSource(svgBuffer);
             let svgDecodingOptions: image.DecodingOptions = { desiredSize: { width: 50, height: 50 } };
@@ -972,7 +973,7 @@ struct Index {
 
 setCustomCursorSync(windowId: number, pixelMap: image.PixelMap, focusX?: number, focusY?: number): void
 
-设置指定窗口的自定义光标样式，使用同步方式进行设置。
+设置指定窗口的自定义光标样式，使用同步方式进行设置。此接口仅支持设置本应用进程内窗口的自定义光标样式，如需通过UIExtensionAbility进程设置宿主窗口的自定义光标样式，请参阅[setCustomCursor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-cursorcontroller#setcustomcursor)。
 
 应用窗口布局改变、热区切换、页面跳转、光标移出再回到窗口、光标在窗口不同区域移动，以上场景可能导致光标切换回系统样式，需要开发者重新设置光标样式。
 
@@ -1012,7 +1013,7 @@ struct Index {
         .onClick(() => {
           // app_icon为示例资源，请开发者根据实际需求配置资源文件。
           this.getUIContext()?.getHostContext()?.resourceManager.getMediaContent(
-            $r("app.media.app_icon").id, (error: BusinessError, svgFileData: Uint8Array) => {
+            $r('app.media.app_icon').id, (error: BusinessError, svgFileData: Uint8Array) => {
             const svgBuffer = svgFileData.buffer;
             let svgImageSource: image.ImageSource = image.createImageSource(svgBuffer);
             // 光标图片宽高

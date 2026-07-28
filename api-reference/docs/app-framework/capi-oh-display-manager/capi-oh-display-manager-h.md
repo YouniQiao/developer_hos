@@ -2,8 +2,8 @@
 title: "oh_display_manager.h"
 upstream_id: "harmonyos-references/capi-oh-display-manager-h"
 catalog: "harmonyos-references"
-content_hash: "c41bc6bafa4b"
-synced_at: "2026-07-09T00:58:38.768825"
+content_hash: "d56f1305436e"
+synced_at: "2026-07-28T16:49:26.894313"
 ---
 
 # oh_display_manager.h
@@ -92,7 +92,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayId(uint6
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_INVALID_PARAM，表示参数检查失败。 返回DISPLAY_MANAGER_ERROR_SYSTEM_ABNORMAL，表示系统服务工作异常。 |
 
 #### [h2]OH_NativeDisplayManager_GetDefaultDisplayWidth()
 
@@ -115,7 +115,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayWidth(in
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_INVALID_PARAM，表示参数检查失败。 返回DISPLAY_MANAGER_ERROR_SYSTEM_ABNORMAL，表示系统服务工作异常。 |
 
 #### [h2]OH_NativeDisplayManager_GetDefaultDisplayHeight()
 
@@ -138,7 +138,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayHeight(i
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_INVALID_PARAM，表示参数检查失败。 返回DISPLAY_MANAGER_ERROR_SYSTEM_ABNORMAL，表示系统服务工作异常。 |
 
 #### [h2]OH_NativeDisplayManager_GetDefaultDisplayRotation()
 
@@ -161,7 +161,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayRotation
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_INVALID_PARAM，表示参数检查失败。 返回DISPLAY_MANAGER_ERROR_SYSTEM_ABNORMAL，表示系统服务工作异常。 |
 
 #### [h2]OH_NativeDisplayManager_GetDefaultDisplayOrientation()
 
@@ -184,7 +184,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayOrientat
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_INVALID_PARAM，表示参数检查失败。 返回DISPLAY_MANAGER_ERROR_SYSTEM_ABNORMAL，表示系统服务工作异常。 |
 
 #### [h2]OH_NativeDisplayManager_GetDefaultDisplayVirtualPixelRatio()
 
@@ -207,7 +207,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayVirtualP
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_INVALID_PARAM，表示参数检查失败。 返回DISPLAY_MANAGER_ERROR_SYSTEM_ABNORMAL，表示系统服务工作异常。 |
 
 #### [h2]OH_NativeDisplayManager_GetDefaultDisplayRefreshRate()
 
@@ -230,7 +230,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayRefreshR
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_INVALID_PARAM，表示参数检查失败。 返回DISPLAY_MANAGER_ERROR_SYSTEM_ABNORMAL，表示系统服务工作异常。 |
 
 #### [h2]OH_NativeDisplayManager_GetDefaultDisplayDensityDpi()
 
@@ -253,7 +253,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayDensityD
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_INVALID_PARAM，表示参数检查失败。 返回DISPLAY_MANAGER_ERROR_SYSTEM_ABNORMAL，表示系统服务工作异常。 |
 
 #### [h2]OH_NativeDisplayManager_GetDefaultDisplayDensityPixels()
 
@@ -270,13 +270,13 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayDensityP
 
 | 参数项 | 描述 |
 | --- | --- |
-| float *densityPixels | 设备逻辑像素的密度，代表物理像素与逻辑像素的缩放系数，该参数为浮点数，受densityDPI范围限制，取值范围在[0.5，4.0]。一般取值1.0、3.0等，实际取值取决于不同设备提供的densityDpi。此处作为出参返回。 |
+| float *densityPixels | 设备逻辑像素的密度，代表物理像素与逻辑像素的缩放系数，该参数为浮点数，受densityDPI范围限制，取值范围在[0.5, 4.0]。一般取值1.0、3.0等，实际取值取决于不同设备提供的densityDpi。此处作为出参返回。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_INVALID_PARAM，表示参数检查失败。 返回DISPLAY_MANAGER_ERROR_SYSTEM_ABNORMAL，表示系统服务工作异常。 |
 
 #### [h2]OH_NativeDisplayManager_GetDefaultDisplayScaledDensity()
 
@@ -299,7 +299,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayScaledDe
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_INVALID_PARAM，表示参数检查失败。 返回DISPLAY_MANAGER_ERROR_SYSTEM_ABNORMAL，表示系统服务工作异常。 |
 
 #### [h2]OH_NativeDisplayManager_GetDefaultDisplayDensityXdpi()
 
@@ -322,7 +322,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayDensityX
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_INVALID_PARAM，表示参数检查失败。 返回DISPLAY_MANAGER_ERROR_SYSTEM_ABNORMAL，表示系统服务工作异常。 |
 
 #### [h2]OH_NativeDisplayManager_GetDefaultDisplayDensityYdpi()
 
@@ -345,7 +345,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayDensityY
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_INVALID_PARAM，表示参数检查失败。 返回DISPLAY_MANAGER_ERROR_SYSTEM_ABNORMAL，表示系统服务工作异常。 |
 
 #### [h2]OH_NativeDisplayManager_CreateDefaultDisplayCutoutInfo()
 
@@ -368,7 +368,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_CreateDefaultDisplayCutou
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_INVALID_PARAM，表示参数检查失败。 返回DISPLAY_MANAGER_ERROR_SYSTEM_ABNORMAL，表示系统服务工作异常。 |
 
 #### [h2]OH_NativeDisplayManager_DestroyDefaultDisplayCutoutInfo()
 
@@ -391,7 +391,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_DestroyDefaultDisplayCuto
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_INVALID_PARAM，表示参数检查失败。 |
 
 #### [h2]OH_NativeDisplayManager_IsFoldable()
 
@@ -433,7 +433,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetFoldDisplayMode(Native
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_INVALID_PARAM，表示参数检查失败。 返回DISPLAY_MANAGER_ERROR_DEVICE_NOT_SUPPORTED，表示该设备不支持此API。 |
 
 #### [h2]OH_NativeDisplayManager_DisplayChangeCallback()
 
@@ -450,7 +450,7 @@ typedef void (*OH_NativeDisplayManager_DisplayChangeCallback)(uint64_t displayId
 
 | 参数项 | 描述 |
 | --- | --- |
-| uint64_t displayId | 屏幕状态发生变化的编号。 |
+| uint64_t displayId | 屏幕状态发生变化的屏幕ID号。 |
 
 #### [h2]OH_NativeDisplayManager_RegisterDisplayChangeListener()
 
@@ -474,7 +474,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_RegisterDisplayChangeList
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_INVALID_PARAM，表示参数检查失败。 返回DISPLAY_MANAGER_ERROR_SYSTEM_ABNORMAL，表示系统服务工作异常。 |
 
 #### [h2]OH_NativeDisplayManager_UnregisterDisplayChangeListener()
 
@@ -497,7 +497,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_UnregisterDisplayChangeLi
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_INVALID_PARAM，表示参数检查失败。 返回DISPLAY_MANAGER_ERROR_SYSTEM_ABNORMAL，表示系统服务工作异常。 |
 
 #### [h2]OH_NativeDisplayManager_FoldDisplayModeChangeCallback()
 
@@ -538,7 +538,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_RegisterFoldDisplayModeCh
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_INVALID_PARAM，表示参数检查失败。 返回DISPLAY_MANAGER_ERROR_DEVICE_NOT_SUPPORTED，表示该设备不支持此API。 返回DISPLAY_MANAGER_ERROR_SYSTEM_ABNORMAL，表示系统服务工作异常。 |
 
 #### [h2]OH_NativeDisplayManager_UnregisterFoldDisplayModeChangeListener()
 
@@ -561,7 +561,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_UnregisterFoldDisplayMode
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_INVALID_PARAM，表示参数检查失败。 返回DISPLAY_MANAGER_ERROR_DEVICE_NOT_SUPPORTED，表示该设备不支持此API。 返回DISPLAY_MANAGER_ERROR_SYSTEM_ABNORMAL，表示系统服务工作异常。 |
 
 #### [h2]OH_NativeDisplayManager_CreateAllDisplays()
 
@@ -584,7 +584,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_CreateAllDisplays(NativeD
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_INVALID_PARAM，表示参数检查失败。 返回DISPLAY_MANAGER_ERROR_SYSTEM_ABNORMAL，表示系统服务工作异常。 |
 
 #### [h2]OH_NativeDisplayManager_DestroyAllDisplays()
 
@@ -625,7 +625,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_CreateDisplayById(uint32_
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_INVALID_PARAM，表示参数检查失败。 返回DISPLAY_MANAGER_ERROR_SYSTEM_ABNORMAL，表示系统服务工作异常。 |
 
 #### [h2]OH_NativeDisplayManager_DestroyDisplay()
 
@@ -665,7 +665,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_CreatePrimaryDisplay(Nati
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_INVALID_PARAM，表示参数检查失败。 返回DISPLAY_MANAGER_ERROR_SYSTEM_ABNORMAL，表示系统服务工作异常。 |
 
 #### [h2]OH_NativeDisplayManager_AvailableAreaChangeCallback()
 
@@ -711,7 +711,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_RegisterAvailableAreaChan
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_ILLEGAL_PARAM，表示非法参数。 返回DISPLAY_MANAGER_ERROR_SYSTEM_ABNORMAL，表示系统服务工作异常。 |
 
 #### [h2]OH_NativeDisplayManager_UnregisterAvailableAreaChangeListener()
 
@@ -739,7 +739,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_UnregisterAvailableAreaCh
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_ILLEGAL_PARAM，表示非法参数。 返回DISPLAY_MANAGER_ERROR_SYSTEM_ABNORMAL，表示系统服务工作异常。 |
 
 #### [h2]OH_NativeDisplayManager_CreateAvailableArea()
 
@@ -768,7 +768,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_CreateAvailableArea(uint6
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_ILLEGAL_PARAM，表示非法参数。 返回DISPLAY_MANAGER_ERROR_SYSTEM_ABNORMAL，表示系统服务工作异常。 |
 
 #### [h2]OH_NativeDisplayManager_DestroyAvailableArea()
 
@@ -791,7 +791,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_DestroyAvailableArea(Nati
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_ILLEGAL_PARAM，表示非法参数。 |
 
 #### [h2]OH_NativeDisplayManager_DisplayAddCallback()
 
@@ -832,7 +832,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_RegisterDisplayAddListene
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_ILLEGAL_PARAM，表示非法参数。 返回DISPLAY_MANAGER_ERROR_SYSTEM_ABNORMAL，表示系统服务工作异常。 |
 
 #### [h2]OH_NativeDisplayManager_UnregisterDisplayAddListener()
 
@@ -855,7 +855,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_UnregisterDisplayAddListe
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_ILLEGAL_PARAM，表示非法参数。 返回DISPLAY_MANAGER_ERROR_SYSTEM_ABNORMAL，表示系统服务工作异常。 |
 
 #### [h2]OH_NativeDisplayManager_DisplayRemoveCallback()
 
@@ -896,7 +896,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_RegisterDisplayRemoveList
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_ILLEGAL_PARAM，表示非法参数。 返回DISPLAY_MANAGER_ERROR_SYSTEM_ABNORMAL，表示系统服务工作异常。 |
 
 #### [h2]OH_NativeDisplayManager_UnregisterDisplayRemoveListener()
 
@@ -919,7 +919,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_UnregisterDisplayRemoveLi
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_ILLEGAL_PARAM，表示非法参数。 返回DISPLAY_MANAGER_ERROR_SYSTEM_ABNORMAL，表示系统服务工作异常。 |
 
 #### [h2]OH_NativeDisplayManager_GetDisplaySourceMode()
 
@@ -943,7 +943,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDisplaySourceMode(uint
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_SYSTEM_ABNORMAL，表示系统服务工作异常。 |
 
 #### [h2]OH_NativeDisplayManager_GetDisplayPosition()
 
@@ -972,4 +972,4 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDisplayPosition(uint64
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回屏幕管理接口的通用状态码，具体可见[NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode)。 当前仅支持主屏幕和扩展屏幕查询屏幕位置信息，其他屏幕查询会返回DISPLAY_MANAGER_ERROR_ILLEGAL_PARAM。 |
+| [NativeDisplayManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_errorcode) | 返回DISPLAY_MANAGER_OK，表示操作成功。 返回DISPLAY_MANAGER_ERROR_SYSTEM_ABNORMAL，表示系统服务工作异常。 当前仅支持主屏幕和扩展屏幕查询屏幕位置信息，其他屏幕查询会返回DISPLAY_MANAGER_ERROR_ILLEGAL_PARAM。 |

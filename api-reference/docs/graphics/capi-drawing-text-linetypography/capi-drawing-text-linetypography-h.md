@@ -2,8 +2,8 @@
 title: "drawing_text_lineTypography.h"
 upstream_id: "harmonyos-references/capi-drawing-text-linetypography-h"
 catalog: "harmonyos-references"
-content_hash: "012a83d08b99"
-synced_at: "2026-07-09T01:00:58.385700"
+content_hash: "2f42d35bdf06"
+synced_at: "2026-07-28T16:52:13.796088"
 ---
 
 # drawing_text_lineTypography.h
@@ -125,7 +125,7 @@ OH_Drawing_TextLine* OH_Drawing_LineTypographyCreateLine(OH_Drawing_LineTypograp
 | --- | --- |
 | [OH_Drawing_LineTypography](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-linetypography)* lineTypography | 指向排版行对象[OH_Drawing_LineTypography](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-linetypography)的指针，由[OH_Drawing_CreateLineTypography](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-text-linetypography-h#oh_drawing_createlinetypography)获取。 |
 | size_t startIndex | 表示计算排版的起始位置，整数，取值范围为[0, 文本字符总数)。 |
-| size_t count | 表示从指定排版起始位置开始进行排版的字符个数，取值为[0,文本字符总数)的整数，startIndex和count之和不能大于文本字符总数。 可以先使用[OH_Drawing_LineTypographyGetLineBreak](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-text-linetypography-h#oh_drawing_linetypographygetlinebreak)获得合理的可用于进行排版的字符总数。如果该值设置为0，则返回nullptr。 |
+| size_t count | 表示从指定排版起始位置开始进行排版的字符个数，取值为[0,文本字符总数)的整数，startIndex和count之和不能大于文本字符总数。 可以先使用[OH_Drawing_LineTypographyGetLineBreak](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-text-linetypography-h#oh_drawing_linetypographygetlinebreak)获得合理的可用于进行排版的字符总数。如果该值设置为0，则返回自startIndex开始到文本末尾的内容。 |
 
 返回：
 

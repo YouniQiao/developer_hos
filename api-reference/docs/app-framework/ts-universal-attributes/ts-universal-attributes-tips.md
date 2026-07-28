@@ -2,8 +2,8 @@
 title: "Tips控制"
 upstream_id: "harmonyos-references/ts-universal-attributes-tips"
 catalog: "harmonyos-references"
-content_hash: "e63c24034c13"
-synced_at: "2026-07-21T16:23:35.470308"
+content_hash: "a99e446df6d7"
+synced_at: "2026-07-28T16:42:38.236350"
 ---
 
 # Tips控制
@@ -22,7 +22,7 @@ bindTips(message: TipsMessageType, options?: TipsOptions): T
 
 为组件绑定Tips悬浮气泡。
 
-![](./img/note_3.0-zh-cn.png) 当绑定bindTips的组件设置通用属性[enable](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-enable#enabled)为false时，仍支持弹出悬浮气泡。
+![](./img/note_3.0-zh-cn.png) 当绑定bindTips的组件设置通用属性[enabled](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-enable#enabled)为false时，仍支持弹出悬浮气泡。
 
 元服务API： 从API version 19开始，该接口支持在元服务中使用。
 
@@ -32,7 +32,7 @@ bindTips(message: TipsMessageType, options?: TipsOptions): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| message | [TipsMessageType](#tipsmessagetype) | 是 | 弹窗信息内容。 |
+| message | [TipsMessageType](#tipsmessagetype) | 是 | 悬浮气泡信息内容。 |
 | options | [TipsOptions](#tipsoptions类型说明) | 否 | 配置悬浮气泡的参数。 默认值： { appearingTime: 700, disappearingTime: 300, appearingTimeWithContinuousOperation: 300, disappearingTimeWithContinuousOperation: 0, enableArrow: true, arrowPointPosition: ArrowPointPosition.CENTER, arrowWidth: 16,arrowHeight: 8, showAtAnchor: TipsAnchorType.TARGET } |
 
 返回值：
@@ -58,13 +58,13 @@ bindTips(message: TipsMessageType, options?: TipsOptions): T
 | arrowWidth | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | 否 | 是 | 设置气泡箭头宽度。若所设置的宽度超过所在边的长度减去两倍的气泡圆角大小，则不绘制气泡箭头。 默认值：16 单位：vp **说明：** 不支持设置百分比。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 |
 | arrowHeight | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | 否 | 是 | 设置气泡箭头高度。 默认值：8 单位：vp **说明：** 不支持设置百分比。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 |
 | showAtAnchor20+ | [TipsAnchorType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#tipsanchortype20) | 否 | 是 | 设置Tips跟随类型。 默认值：TipsAnchorType.TARGET **说明：** Tips的跟随类型为TipsAnchorType.CURSOR时，Tips不显示箭头。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
-| systemMaterial | [SystemUiMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemuimaterial) | 否 | 是 | 设置组件的系统材质。 默认值：undefined，会清除由该接口设置的材质效果。 **说明：** 不同系统材质对应不同的属性影响效果，该接口影响背景色[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、边框颜色[borderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#bordercolor)、边框宽度[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)、阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)，当设置系统材质时，上述接口不生效。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
+| systemMaterial | [SystemUiMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemuimaterial) | 否 | 是 | 设置悬浮气泡的系统材质。 默认值：undefined，会清除由该接口设置的材质效果。 **说明：** 不同系统材质对应不同的属性影响效果，该接口影响背景色[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、边框颜色[borderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#bordercolor)、边框宽度[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)、阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)，当设置系统材质时，上述接口不生效。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
 
 #### TipsMessageType
 
 type TipsMessageType = ResourceStr | StyledString
 
-悬浮气泡弹窗信息。
+悬浮气泡信息类型。
 
 元服务API： 从API version 19开始，该接口支持在元服务中使用。
 
@@ -103,7 +103,7 @@ struct TipsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002677827451.gif)
+ ![](./img/zh-cn_image_0000002655848414.gif)
 
 #### [h2]示例2（多个悬浮气泡的显示和消失）
 
@@ -141,7 +141,7 @@ struct TipsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002677667603.gif)
+ ![](./img/zh-cn_image_0000002686087843.gif)
 
 #### [h2]示例3（设置悬浮气泡的系统材质视效）
 
@@ -175,8 +175,8 @@ struct TipsExample {
 ```
  未设置系统材质时：
 
-![](./img/zh-cn_image_0000002647585994.gif)
+![](./img/zh-cn_image_0000002656006378.gif)
 
 设置系统材质后：
 
-![](./img/zh-cn_image_0000002677825635.gif)
+![](./img/zh-cn_image_0000002655846458.gif)

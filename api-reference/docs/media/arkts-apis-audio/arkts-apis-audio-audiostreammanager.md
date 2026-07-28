@@ -2,8 +2,8 @@
 title: "Interface (AudioStreamManager)"
 upstream_id: "harmonyos-references/arkts-apis-audio-audiostreammanager"
 catalog: "harmonyos-references"
-content_hash: "bb67b0de5ade"
-synced_at: "2026-07-09T01:00:08.272388"
+content_hash: "41be837ce2e2"
+synced_at: "2026-07-28T16:51:26.761099"
 ---
 
 # Interface (AudioStreamManager)
@@ -590,7 +590,7 @@ getAudioEffectInfoArraySync(usage: StreamUsage): AudioEffectInfoArray
 
 | 类型 | 说明 |
 | --- | --- |
-| [AudioEffectInfoArray](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiostreammanager#getaudioeffectinfoarray10) | 返回当前音效模式的信息。 |
+| [AudioEffectInfoArray](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-t#audioeffectinfoarray10) | 返回当前音效模式的信息。 |
 
 错误码：
 
@@ -619,7 +619,7 @@ try {
 
 isAcousticEchoCancelerSupported(sourceType: SourceType): boolean
 
-查询指定的source type是否支持回声消除。
+查询指定的音源类型是否支持回声消除。
 
 系统能力： SystemCapability.Multimedia.Audio.Capturer
 

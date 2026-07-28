@@ -2,8 +2,8 @@
 title: "ArkUI_PixelRoundPolicy"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-pixelroundpolicy"
 catalog: "harmonyos-references"
-content_hash: "970a4ad406dd"
-synced_at: "2026-07-09T00:58:44.780218"
+content_hash: "093c8de07980"
+synced_at: "2026-07-28T16:49:37.409957"
 ---
 
 # ArkUI_PixelRoundPolicy
@@ -20,4 +20,4 @@ typedef struct ArkUI_PixelRoundPolicy ArkUI_PixelRoundPolicy
 
 相关模块： [ArkUI_NativeModule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule)
 
-所在头文件： [native_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h)
+所在头文件： [layout.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-layout-h)

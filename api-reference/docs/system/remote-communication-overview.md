@@ -2,8 +2,8 @@
 title: "RemoteCommunication"
 upstream_id: "harmonyos-references/remote-communication-overview"
 catalog: "harmonyos-references"
-content_hash: "93d33b04a8ef"
-synced_at: "2026-07-09T00:59:33.532876"
+content_hash: "e32148e54f5b"
+synced_at: "2026-07-28T16:50:51.076123"
 ---
 
 # RemoteCommunication
@@ -3376,7 +3376,7 @@ Rcp_QuicErrorCode HMS_Rcp_QuicConnDestroy (Rcp_QuicConn *conn)
 ```
  描述
 
-销毁quic连接对象。释放quic连接资源。
+销毁QUIC连接，完成后触发[Rcp_QuicConnectionOnClosed](#rcp_quicconnectiononclosed)事件。请勿对同一个[Rcp_QuicConn](#rcp_quicconn)实例重复执行此操作。
 
 起始版本： 26.0.0
 

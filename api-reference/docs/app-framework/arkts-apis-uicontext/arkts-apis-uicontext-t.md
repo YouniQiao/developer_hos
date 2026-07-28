@@ -2,11 +2,13 @@
 title: "Types"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-t"
 catalog: "harmonyos-references"
-content_hash: "e61e5eada6c1"
-synced_at: "2026-07-09T00:57:30.156510"
+content_hash: "705caef26a86"
+synced_at: "2026-07-28T16:41:13.091140"
 ---
 
 # Types
+
+本文件介绍ArkUI UIContext相关类型，包括自定义组件构建、UIObserver事件监听回调、节点标识、光标样式和上下文等类型。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -47,13 +49,13 @@ type ClickEventListenerCallback = (event: ClickEvent, node?: FrameNode) => void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | event | [ClickEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-click#clickevent) | 是 | 触发事件监听的点击事件的相关信息。 |
-| node | [FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode) | 否 | 触发事件监听的点击事件所绑定的组件。 |
+| node | [FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode) | 否 | 触发事件监听的点击事件所绑定的组件。不传入该参数时，默认值为undefined。 |
 
 #### PanListenerCallback19+
 
 type PanListenerCallback = (event: GestureEvent, current: GestureRecognizer, node?: FrameNode) => void
 
-Pan手势事件监听函数类型。
+Pan手势事件监听函数类型，可用于需要监听组件拖拽、平移等Pan手势交互的场景。
 
 元服务API： 从API version 19开始，该接口支持在元服务中使用。
 
@@ -67,7 +69,7 @@ Pan手势事件监听函数类型。
 | --- | --- | --- | --- |
 | event | [GestureEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#gestureevent对象说明) | 是 | 触发事件监听的手势事件的相关信息。 |
 | current | [GestureRecognizer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#gesturerecognizer12) | 是 | 触发事件监听的手势识别器的相关信息。 |
-| node | [FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode) | 否 | 触发事件监听的手势事件所绑定的组件。 |
+| node | [FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode) | 否 | 触发事件监听的手势事件所绑定的组件。不传入该参数时，默认值为undefined。 |
 
 #### GestureEventListenerCallback12+
 
@@ -102,8 +104,8 @@ type NodeIdentity = string | number
 
 | 类型 | 说明 |
 | --- | --- |
-| string | 指定组件id，该id通过通用属性[id](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-component-id#id)设置。 |
-| number | 系统分配的唯一标识的节点UniqueID，可通过[getUniqueId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#getuniqueid12)获取。 |
+| string | 指定组件ID，该ID通过通用属性[id](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-component-id#id)设置。 |
+| number | 系统分配的节点唯一标识UniqueID，可通过[getUniqueId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#getuniqueid12)获取。 |
 
 #### NodeRenderStateChangeCallback20+
 
@@ -121,8 +123,8 @@ type NodeRenderStateChangeCallback = (state: NodeRenderState, node?: FrameNode) 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| state | [NodeRenderState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-e#noderenderstate20) | 是 | 触发事件监听的手势事件的相关信息。 |
-| node | [FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode) | 否 | 触发事件监听的手势事件所绑定的组件，如果组件被释放将返回null。 |
+| state | [NodeRenderState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-e#noderenderstate20) | 是 | 节点当前的渲染状态，用于表示被监控节点是否处于可渲染状态。 |
+| node | [FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode) | 否 | 触发渲染状态变化监听的组件。当需要获取发生渲染状态变化的组件节点信息时，可通过该参数获取；如果组件被释放将返回null。不传入该参数时，默认值为undefined。 |
 
 #### GestureListenerCallback20+
 
@@ -160,7 +162,7 @@ type PointerStyle = pointer.PointerStyle
 
 type Context = common.Context
 
-当前组件所在Ability的上下文。
+当前组件所在Ability（应用组件）的上下文。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 

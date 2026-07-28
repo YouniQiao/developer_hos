@@ -2,8 +2,8 @@
 title: "AR Engine"
 upstream_id: "harmonyos-references/arengine-capi-arengine"
 catalog: "harmonyos-references"
-content_hash: "9457a3c52fbb"
-synced_at: "2026-07-09T01:00:51.029113"
+content_hash: "0abb0495e636"
+synced_at: "2026-07-28T16:52:07.998949"
 ---
 
 # AR Engine
@@ -190,7 +190,7 @@ synced_at: "2026-07-09T01:00:51.029113"
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARConfig_SetRemoteSensorMode](#hms_arengine_arconfig_setremotesensormode)(const [AREngine_ARSession](#arengine_arsession) *session, [AREngine_ARConfig](#arengine_arconfig) *config, [AREngine_RemoteSensorMode](#arengine_remotesensormode) remoteSensorMode) | 设置远程传感器模式。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARConfig_SetPhotoStreamSize](#hms_arengine_arconfig_setphotostreamsize)(const [AREngine_ARSession](#arengine_arsession) *session, [AREngine_ARConfig](#arengine_arconfig) *config, uint32_t width, uint32_t height) | 当[AREngine_ARImageStreamMode](#arengine_arimagestreammode)为ARENGINE_IMAGE_STREAM_MODE_PREVIEW_AND_PHOTO时，设置从拍照流获取图像的分辨率。仅支持4:3大小分辨率。如果超出这个范围，系统会自动设置图像分辨率为该设备在4:3宽高比下的最高分辨率。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARConfig_SetImageStreamMode](#hms_arengine_arconfig_setimagestreammode)(const [AREngine_ARSession](#arengine_arsession) *session, [AREngine_ARConfig](#arengine_arconfig) *config, [AREngine_ARImageStreamMode](#arengine_arimagestreammode) mode) | 设置图像流模式。 |
-| [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARConfig_GetImageStreamMode](#hms_arengine_arconfig_getimagestreammode)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARConfig](#arengine_arconfig) *config, [AREngine_ARImageStreamMode](#arengine_arimagestreammode) outMode) | 获取图像流模式。 |
+| [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARConfig_GetImageStreamMode](#hms_arengine_arconfig_getimagestreammode)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARConfig](#arengine_arconfig) *config, [AREngine_ARImageStreamMode](#arengine_arimagestreammode) *outMode) | 获取图像流模式。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARFace_AcquireBlendShapes](#hms_arengine_arface_acquireblendshapes)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARFace](#arengine_arface) *face, [AREngine_ARFaceBlendShapes](#arengine_arfaceblendshapes) **outBlendShapes) | 获取人脸微表情对象。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARFace_AcquireGeometry](#hms_arengine_arface_acquiregeometry)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARFace](#arengine_arface) *face, [AREngine_ARFaceGeometry](#arengine_arfacegeometry) **outGeometry) | 获取人脸拓扑结构对象，即人脸Mesh对象。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARFace_AcquireViewMatrix](#hms_arengine_arface_acquireviewmatrix)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARFace](#arengine_arface) *face, float *outColMajor4x4, int32_t colMajor4x4Num) | 获取当前人脸的面视图矩阵。 |
@@ -213,7 +213,7 @@ synced_at: "2026-07-09T01:00:51.029113"
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARFrame_AcquireCameraImage](#hms_arengine_arframe_acquirecameraimage)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARFrame](#arengine_arframe) *frame, [AREngine_ARImage](#arengine_arimage) **outImage) | 获取相机的当前帧的图像。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARFrame_AcquireCameraPhotoImage](#hms_arengine_arframe_acquirecameraphotoimage)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARFrame](#arengine_arframe) *frame, [HMS_AREngine_PhotoAvailableCallback](#hms_arengine_photoavailablecallback) photoCallback) | 获取当前帧的拍照流图片。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARFrame_AcquireDepthConfidenceImage](#hms_arengine_arframe_acquiredepthconfidenceimage)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARFrame](#arengine_arframe) *frame, [AREngine_ARImage](#arengine_arimage) **outConfidenceImage) | 获取当前帧的深度置信度图像。 |
-| [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARFrame_AcquireDepthImage16Bits](#hms_arengine_arframe_acquiredepthimage16bits)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARFrame](#arengine_arframe) *frame, [AREngine_ARImage](#arengine_arimage) **outDepthImage); | 获取当前帧的深度图像。 |
+| [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARFrame_AcquireDepthImage16Bits](#hms_arengine_arframe_acquiredepthimage16bits)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARFrame](#arengine_arframe) *frame, [AREngine_ARImage](#arengine_arimage) **outDepthImage) | 获取当前帧的深度图像。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARFrame_AcquirePointCloud](#hms_arengine_arframe_acquirepointcloud)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARFrame](#arengine_arframe) *frame, [AREngine_ARPointCloud](#arengine_arpointcloud) **outPointCloud) | 返回当前帧的点云数据。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARFrame_AcquireSceneMesh](#hms_arengine_arframe_acquirescenemesh)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARFrame](#arengine_arframe) *frame, [AREngine_ARSceneMesh](#arengine_arscenemesh) **outSceneMesh) | 获取当前帧的mesh信息。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARFrame_AcquireSemanticDenseData](#hms_arengine_arframe_acquiresemanticdensedata)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARFrame](#arengine_arframe) *frame, [AREngine_ARSemanticDenseData](#arengine_arsemanticdensedata) **outSemanticDenseData) | 获取当前帧的高精几何重建对象数据。 |
@@ -237,7 +237,7 @@ synced_at: "2026-07-09T01:00:51.029113"
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARImage_GetFormat](#hms_arengine_arimage_getformat)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARImage](#arengine_arimage) *image, [AREngine_ARImageFormat](#arengine_arimageformat) *outFormat) | 获取当前帧的图像格式。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARImage_GetHeight](#hms_arengine_arimage_getheight)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARImage](#arengine_arimage) *image, int32_t *outHeight) | 获取当前帧的图像数据的高度。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARImage_GetWidth](#hms_arengine_arimage_getwidth)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARImage](#arengine_arimage) *image, int32_t *outWidth) | 获取当前帧的图像数据的宽度。 |
-| [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARImage_GetNativeBuffer](#hms_arengine_arimage_getnativebuffer)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARImage](#arengine_arimage) *image, [OH_NativeBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativebuffer) **outNativeBuffer); | 获取当前帧图像对象的NativeBuffer数据。 |
+| [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARImage_GetNativeBuffer](#hms_arengine_arimage_getnativebuffer)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARImage](#arengine_arimage) *image, [OH_NativeBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativebuffer) **outNativeBuffer) | 获取当前帧图像对象的NativeBuffer数据。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARImage_GetPlaneCount](#hms_arengine_arimage_getplanecount)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARImage](#arengine_arimage) *image, int32_t *outCount) | 获取当前帧图像的平面数量。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARImage_GetPlaneData](#hms_arengine_arimage_getplanedata)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARImage](#arengine_arimage) *image, int32_t planeIndex, const uint8_t **outData, int32_t *outLength) | 获取当前帧图像的平面数据。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARImage_GetPlanePixelStride](#hms_arengine_arimage_getplanepixelstride)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARImage](#arengine_arimage) *image, int32_t planeIndex, int32_t *outPixelStride) | 获取图像中两个连续像素的起点之间的字节距离。像素步幅始终大于0。 |
@@ -291,7 +291,7 @@ synced_at: "2026-07-09T01:00:51.029113"
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARSession_Update](#hms_arengine_arsession_update)([AREngine_ARSession](#arengine_arsession) *session, [AREngine_ARFrame](#arengine_arframe) *outFrame) | 更新AR Engine的计算结果。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARSession_OpenFlash](#hms_arengine_arsession_openflash)(const [AREngine_ARSession](#arengine_arsession) *session) | 打开设备的闪光灯。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARSession_CloseFlash](#hms_arengine_arsession_closeflash)(const [AREngine_ARSession](#arengine_arsession) *session) | 关闭设备的闪光灯。 |
-| [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARTarget_GetAxisAlignedBoundingBox](#hms_arengine_artarget_getaxisalignedboundingbox)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARTarget](#arengine_artarget) *target, float *outAabb, int32_t aabbSize) | 获取语义物体最小外接包围盒坐标，坐标格式为（xmin，ymin，zmin，xmax，ymax，zmax)。 |
+| [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARTarget_GetAxisAlignedBoundingBox](#hms_arengine_artarget_getaxisalignedboundingbox)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARTarget](#arengine_artarget) *target, float *outAabb, int32_t aabbSize) | 获取语义物体最小外接包围盒坐标，坐标格式为（xmin，ymin，zmin，xmax，ymax，zmax）。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARTarget_GetCenterPose](#hms_arengine_artarget_getcenterpose)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARTarget](#arengine_artarget) *target, [AREngine_ARPose](#arengine_arpose) *outARPose) | 获取从目标语义对象的局部坐标系到世界坐标系转换的位姿对象。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARTarget_GetRadius](#hms_arengine_artarget_getradius)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARTarget](#arengine_artarget) *target, float *radius) | 获取语义物体的球体半径。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARTarget_GetShapeType](#hms_arengine_artarget_getshapetype)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARTarget](#arengine_artarget) *target, [AREngine_ARTargetShapeLabel](#arengine_artargetshapelabel) *shape) | 获取语义物体的形状类型。 |
@@ -715,7 +715,7 @@ AR特性类别。
 
 | 枚举值 | 描述 |
 | --- | --- |
-| ARENGINE_FEATURE_TYPE_SLAM | 运动跟踪及平面识别特性。 |
+| ARENGINE_FEATURE_TYPE_SLAM | 运动跟踪、命中检测及平面识别特性。 |
 | ARENGINE_FEATURE_TYPE_DEPTH | 深度估计特性。 |
 | ARENGINE_FEATURE_TYPE_MESH | 环境Mesh识别特性。 |
 | ARENGINE_FEATURE_TYPE_IMAGE | 图像跟踪特性。 |
@@ -3542,7 +3542,7 @@ AREngine_ARStatus HMS_AREngine_ARConfig_SetRemoteSensorMode(const AREngine_ARSes
 ```
  描述
 
-设置预览更新模式。
+设置远程传感器模式。
 
 设备行为差异： 该接口在部分Phone、部分Tablet、TV中可正常调用，在不支持的设备中无法正常调用。可使用[HMS_AREngine_CheckSupported](#hms_arengine_checksupported)接口查询能力是否支持。
 

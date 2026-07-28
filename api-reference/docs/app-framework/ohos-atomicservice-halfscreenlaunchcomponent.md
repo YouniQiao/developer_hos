@@ -2,8 +2,8 @@
 title: "HalfScreenLaunchComponent"
 upstream_id: "harmonyos-references/ohos-atomicservice-halfscreenlaunchcomponent"
 catalog: "harmonyos-references"
-content_hash: "660099aefed1"
-synced_at: "2026-07-09T17:24:51.700476"
+content_hash: "bb16e5522668"
+synced_at: "2026-07-28T16:47:50.987802"
 ---
 
 # HalfScreenLaunchComponent
@@ -48,6 +48,11 @@ HalfScreenLaunchComponent({ content: Callback<void>, appId: string, options?: At
 | onError | [ErrorCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#errorcallback) | 否 | - | 被拉起的元服务扩展在运行过程中发生异常时触发本回调。 |
 | onTerminated | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#callback) | 否 | - | 被拉起的嵌入式运行元服务通过点击元服务退出按钮、手势侧滑、调用[terminateSelfWithResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext#terminateselfwithresult)或者[terminateSelf](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext#terminateself)正常退出时，触发本回调函数。 |
 | onReceive20+ | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#callback)> | 否 | - | 被拉起的嵌入式运行元服务通过[@ohos.window (窗口)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window)调用API时，触发本回调。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+
+![](./img/note_3.0-zh-cn.png)
+
+- 若元服务通过调用[terminateSelfWithResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext#terminateselfwithresult)退出，其携带的信息会传给回调函数的入参；
+- 若元服务通过调用[terminateSelf](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext#terminateself)退出，上述回调函数的入参中，"code"取默认值"0"，"want"为"undefined"。
 
 #### 示例
 

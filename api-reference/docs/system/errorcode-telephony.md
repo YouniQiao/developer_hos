@@ -1,12 +1,10 @@
 ---
-
 title: "电话子系统错误码"
 upstream_id: "harmonyos-references/errorcode-telephony"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T00:59:38.850988"
-content_hash: "c84d3f22a06b"
+content_hash: "7f94fa3081b9"
+synced_at: "2026-07-28T16:50:55.842630"
 ---
-
 
 # 电话子系统错误码
 
@@ -173,6 +171,42 @@ UT未连接。
 处理步骤
 
 断开Wi-Fi，再重发UT请求。
+
+#### 8401002 输入号码错误
+
+错误信息
+
+Invalid input call number.
+
+错误描述
+
+输入的号码不合法。
+
+可能原因
+
+用户查询卡A的呼叫转移状态，当前卡A并未插在当前手机内。
+
+处理步骤
+
+将卡A插入当前手机内。
+
+#### 8401003 操作频繁
+
+错误信息
+
+Operation too frequent.
+
+错误描述
+
+操作过于频繁。
+
+可能原因
+
+在30s内连续查询同一类型的呼叫转移状态。
+
+处理步骤
+
+30s后重新操作。
 
 #### 3120001 服务连接失败
 

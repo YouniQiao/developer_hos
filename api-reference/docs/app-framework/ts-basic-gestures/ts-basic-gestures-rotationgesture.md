@@ -2,15 +2,15 @@
 title: "RotationGesture"
 upstream_id: "harmonyos-references/ts-basic-gestures-rotationgesture"
 catalog: "harmonyos-references"
-content_hash: "3e7720502a6d"
-synced_at: "2026-07-09T00:57:44.389578"
+content_hash: "285825152581"
+synced_at: "2026-07-28T16:43:08.018786"
 ---
 
 # RotationGesture
 
-用于触发旋转手势，最少需要2指，最多5指，最小改变度数为1度。该手势不支持通过触控板双指旋转操作触发。
+用于触发旋转手势，最少需要2指，最多5指，最小角度变化为1度，适用于需要识别用户多指旋转操作并实现旋转类交互的场景。该手势不支持通过触控板双指旋转操作触发。
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
 #### 接口
 
@@ -56,7 +56,7 @@ RotationGesture(options?: RotationGestureHandlerOptions)
 
 onActionStart(event: (event: GestureEvent) => void)
 
-Rotation手势识别成功后触发的回调。
+旋转手势识别成功后触发的回调。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -66,13 +66,13 @@ Rotation手势识别成功后触发的回调。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| event | (event: [GestureEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#gestureevent对象说明)) => void | 是 | 手势事件回调函数。 |
+| event | (event: [GestureEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#gestureevent对象说明)) => void | 是 | 手势事件回调函数。GestureEvent的fingerList元素中，手指索引编号与位置相对应，即fingerList[index]的id为index；对于先按下但未参与当前手势触发的手指，fingerList中对应的位置为空，建议优先使用fingerInfos。 |
 
 #### [h2]onActionUpdate
 
 onActionUpdate(event: (event: GestureEvent) => void)
 
-Rotation手势移动过程中触发的回调。
+旋转手势移动过程中触发的回调。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -88,7 +88,7 @@ Rotation手势移动过程中触发的回调。
 
 onActionEnd(event: (event: GestureEvent) => void)
 
-Rotation手势识别成功，当抬起最后一根满足手势触发条件的手指后触发的回调。
+旋转手势识别成功，当抬起最后一根满足手势触发条件的手指后触发的回调。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -104,7 +104,7 @@ Rotation手势识别成功，当抬起最后一根满足手势触发条件的手
 
 onActionCancel(event: () => void)
 
-Rotation手势识别成功，接收到触摸取消事件触发的回调。该回调不返回手势事件信息。
+旋转手势识别成功，接收到触摸取消事件时触发的回调。该回调不返回手势事件信息。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -114,13 +114,13 @@ Rotation手势识别成功，接收到触摸取消事件触发的回调。该回
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| event | () => void | 是 | 手势事件回调函数。 |
+| event | () => void | 是 | 手势事件回调函数，用于处理旋转手势取消事件；该回调不接收参数，不返回手势事件信息。 |
 
 #### [h2]onActionCancel18+
 
 onActionCancel(event: Callback<GestureEvent>)
 
-Rotation手势识别成功，接收到触摸取消事件触发的回调。与[onActionCancel](#onactioncancel)相比，该回调返回手势事件信息。
+旋转手势识别成功，接收到触摸取消事件时触发的回调。与[onActionCancel](#onactioncancel)相比，该回调返回手势事件信息。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -132,7 +132,7 @@ Rotation手势识别成功，接收到触摸取消事件触发的回调。与[on
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| event | Callback | 是 | 手势事件回调函数。 |
+| event | Callback | 是 | 手势事件回调函数，用于接收旋转手势取消时的手势事件信息，回调参数为GestureEvent对象。 |
 
 #### 示例
 
@@ -160,21 +160,23 @@ struct RotationGestureExample {
       // 双指旋转触发该手势事件
       .gesture(
       RotationGesture()
-        .onActionStart((event: GestureEvent) => {
-          console.info('Rotation start')
+        .onActionStart(() => {
+          console.info('Rotation start');
         })
         .onActionUpdate((event: GestureEvent) => {
           if (event) {
-            this.angle = this.rotateValue + event.angle
+            // 根据本次手势变化角度和已保存旋转角度，更新组件当前旋转角度。
+            this.angle = this.rotateValue + event.angle;
           }
         })
-        .onActionEnd((event: GestureEvent) => {
-          this.rotateValue = this.angle
-          console.info('Rotation end')
+        .onActionEnd(() => {
+          // 手势结束时保存当前旋转角度，作为下一次旋转计算的初始值。
+          this.rotateValue = this.angle;
+          console.info('Rotation end');
         })
       )
     }.width('100%')
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732373.png)
+ ![](./img/zh-cn_image_0000002686087879.png)

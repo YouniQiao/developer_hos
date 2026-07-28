@@ -2,8 +2,8 @@
 title: "TrustedAppService（可信应用服务）"
 upstream_id: "harmonyos-references/devicesecurity-taas-api"
 catalog: "harmonyos-references"
-content_hash: "0ffc71169725"
-synced_at: "2026-07-09T00:59:15.140881"
+content_hash: "fed93ef2963c"
+synced_at: "2026-07-28T16:50:25.456675"
 ---
 
 # TrustedAppService（可信应用服务）
@@ -382,7 +382,7 @@ await trustedAppService.initializeAttestContext(user_data, options2).then(
 | ATTEST_ERROR_LOCATION_SERVICE_UNAVAILABLE | 1011500014 | 位置服务不可用。 **元服务API：** 从版本5.0.2(14)开始，该接口支持在元服务中使用。 |
 | ATTEST_ERROR_LOCATION_SWITCH_OFF | 1011500015 | 位置信息开关关闭。 **元服务API：** 从版本5.0.2(14)开始，该接口支持在元服务中使用。 |
 | ATTEST_ERROR_LOCATION_FAILED | 1011500016 | 位置信息获取失败。 **元服务API：** 从版本5.0.2(14)开始，该接口支持在元服务中使用。 |
-| ATTEST_ERROR_SIGNATURE_VERIFICATION_FAILED | 1011500017 | 签名验签失败。 **起始版本：** 5.1.0(18) |
+| ATTEST_ERROR_SIGNATURE_VERIFICATION_FAILED | 1011500017 | 签名验证失败。 **起始版本：** 5.1.0(18) |
 | ATTEST_ERROR_SECIMAGE_PROCESS_FAILED | 1011500018 | 安全图像处理失败。 **起始版本：** 5.1.0(18) |
 
 #### finalizeAttestContext
@@ -471,7 +471,7 @@ getCurrentSecureLocation(timeout : number, priority: LocatingPriority): Promise<
 
 | 参数名 | **类型** | 必填 | **说明** |
 | --- | --- | --- | --- |
-| timeout | number | 是 | 单次位置请求的超时时间，单位是毫秒（milliseconds），最小为1000毫秒。取值范围为大于等于1000。 |
+| timeout | number | 是 | 单次位置请求的超时时间，单位：毫秒（milliseconds），最小为1000毫秒。取值范围为大于等于1000。 |
 | priority | [LocatingPriority](#locatingpriority) | 是 | 获取安全地理位置的优先级策略。 |
 
 返回值：
@@ -545,9 +545,9 @@ getCurrentSecureLocation(timeout : number, priority: LocatingPriority): Promise<
 | --- | --- | --- | --- | --- |
 | latitude | number | 否 | 否 | 纬度，正值表示北纬，负值表示南纬。取值范围为-90到90。仅支持WGS84坐标系。 |
 | longitude | number | 否 | 否 | 经度，正值表示东经，负值表示西经。取值范围为-180到180。仅支持WGS84坐标系。 |
-| altitude | number | 否 | 否 | 高度，单位米。 |
-| accuracy | number | 否 | 否 | 精度，单位米，取值大于等于0。 |
-| timestamp | number | 否 | 否 | 时间戳，单位毫秒，取值大于等于0。 |
+| altitude | number | 否 | 否 | 高度，单位：米。 |
+| accuracy | number | 否 | 否 | 精度，单位：米，取值大于等于0。 |
+| timestamp | number | 否 | 否 | 时间戳，单位：毫秒，取值大于等于0。 |
 
 示例：
 
@@ -698,12 +698,12 @@ procSecImageTransform(srcSecImage: ArrayBuffer, procParams: SecImageProcParamsAr
 
 | **名称** | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
-| x | number | 否 | 否 | 裁剪区域左上角点在水平方向（横向）上相对于整个图像左边界的偏移量，取值范围在 0 到 640 之间的偶数。单位是像素（pixel）。 |
-| y | number | 否 | 否 | 裁剪区域左上角点在垂直方向（纵向）上相对于整个图像上边界的偏移量，取值范围在 0 到 480 之间的偶数。单位是像素（pixel）。 |
-| width | number | 否 | 否 | 裁剪区域的宽度，即横向的长度，取值范围在 0 到 640 之间的偶数，且需满足 x 与 width 的和不大于 640。单位是像素（pixel）。 |
-| height | number | 否 | 否 | 裁剪区域的高度，即纵向的长度，取值范围在 0 到 480 之间的偶数，且需满足 y 与 height 的和不大于 480。单位是像素（pixel）。 |
+| x | number | 否 | 否 | 裁剪区域左上角点在水平方向（横向）上相对于整个图像左边界的偏移量，取值范围在 0 到 640 之间的偶数。单位：像素（pixel）。 |
+| y | number | 否 | 否 | 裁剪区域左上角点在垂直方向（纵向）上相对于整个图像上边界的偏移量，取值范围在 0 到 480 之间的偶数。单位：像素（pixel）。 |
+| width | number | 否 | 否 | 裁剪区域的宽度，即横向的长度，取值范围在 0 到 640 之间的偶数，且需满足 x 与 width 的和不大于 640。单位：像素（pixel）。 |
+| height | number | 否 | 否 | 裁剪区域的高度，即纵向的长度，取值范围在 0 到 480 之间的偶数，且需满足 y 与 height 的和不大于 480。单位：像素（pixel）。 |
 
-![](./img/zh-cn_image_0000002631254238.jpg)
+![](./img/zh-cn_image_0000002686088875.jpg)
 
 #### SecImageBuffer
 
@@ -845,4 +845,264 @@ await trustedAppService.procSecImageTransform(srcSecImageBuffer, options).then(
     hilog.error(0x0000, 'testTag', `Failed to process secureImage cropping, code:${err.code}, message:${err.message}`);
   }
 );
+```
+
+#### ImageAuthData
+
+待验证的图像数据。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Security.TrustedAppService.ContentTrustCredentials
+
+起始版本： 26.0.0
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| buffer | Uint8Array | 否 | 否 | 图片数据数组或图片URL。 |
+| imageSize | number | 否 | 否 | 图片数据大小。 |
+| bufferType | [BufferType](#buffertype) | 是 | 否 | 图片数据形式。 |
+| imageFormat | [ImageFormat](#imageformat) | 是 | 否 | 图片格式类型。 |
+
+#### BufferType
+
+图片数据形式，[ImageAuthData](#imageauthdata)结构体参数之一。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Security.TrustedAppService.ContentTrustCredentials
+
+起始版本： 26.0.0
+
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| BUFFER_TYPE_DATA | 0 | 数组形式图片。 |
+| BUFFER_TYPE_URL | 1 | URL字符串形式图片。 |
+
+#### ImageFormat
+
+图片格式类型，[ImageAuthData](#imageauthdata)结构体参数之一。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Security.TrustedAppService.ContentTrustCredentials
+
+起始版本： 26.0.0
+
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| IMAGE_TYPE_JPEG | 0 | 图片格式：JPEG。 |
+| IMAGE_TYPE_DNG | 1 | 图片格式：DNG。 |
+| IMAGE_TYPE_HEIF | 2 | 图片格式：HEIF。 |
+
+#### ContentTrustCredentialsErrorCode
+
+内容证真能力对应错误码。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Security.TrustedAppService.ContentTrustCredentials
+
+起始版本： 26.0.0
+
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| CONTENT_TRUST_CREDENTIAL_ERROR_BAD_IMAGE_TYPE | 1027200001 | 错误的图片类型。 |
+| CONTENT_TRUST_CREDENTIAL_ERROR_OUT_OF_STORE | 1027200002 | 存储空间不足。 |
+| CONTENT_TRUST_CREDENTIAL_ERROR_WRONG_SIGN_CERT_PARAM | 1027200003 | 错误的签名证书信息。 |
+| CONTENT_TRUST_CREDENTIAL_ERROR_CHECK_IMAGE_HASH_FAILED | 1027200004 | 图片哈希检测失败。 |
+| CONTENT_TRUST_CREDENTIAL_ERROR_SIGN_FAILED | 1027200005 | 图片签名计算失败。 |
+| CONTENT_TRUST_CREDENTIAL_ERROR_VERIFY_FAILED | 1027200006 | 验证签名计算失败。 |
+| CONTENT_TRUST_CREDENTIAL_ERROR_NO_SIGN_ASSERTION | 1027200007 | 图片签名中没有签名assertion。 |
+| CONTENT_TRUST_CREDENTIAL_ERROR_NO_SIGN_MANIFEST | 1027200008 | 图片签名中没有签名manifest。 |
+| CONTENT_TRUST_CREDENTIAL_ERROR_WRONG_CERT_CHAINS | 1027200009 | 签名信息中证书链验证失败或证书链根证书无效。 |
+| CONTENT_TRUST_CREDENTIAL_ERROR_PLATFORM_NOT_SUPPORTED | 1027200010 | 该平台不支持此接口。 |
+| CONTENT_TRUST_CREDENTIAL_ERROR_BAD_METADATA | 1027200011 | 签名的metadata信息错误。 |
+| CONTENT_TRUST_CREDENTIAL_ERROR_CLAIM_INVALID | 1027200012 | 签名claim信息无效。 |
+| CONTENT_TRUST_CREDENTIAL_ERROR_FILE_OPERATION_FAILED | 1027200013 | 文件操作失败。 |
+| CONTENT_TRUST_CREDENTIAL_ERROR_ILLEGAL_ARGUMENT | 1027200014 | 函数入参无效。 |
+
+#### hasImageSignature
+
+hasImageSignature(data: ImageAuthData): Promise<boolean>
+
+检测图片中是否存在内容证真签名。使用Promise异步回调。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Security.TrustedAppService.ContentTrustCredentials
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| data | [ImageAuthData](#imageauthdata) | 是 | 图片数据结构体。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，返回true表示存在证真签名，返回false表示不存在证真签名。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[可信服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-taas)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 401 | invalid params type. |
+| 1027200001 | Incorrect image format. |
+| 1027200007 | No signature assertion found in the image. |
+| 1027200008 | No signature manifest found in the image signature. |
+| 1027200010 | APIs not supported on the platform. |
+| 1027200013 | File operation failed. |
+| 1027200014 | argument is invalid. |
+
+示例：
+
+```
+import { mediaAuthVerify } from '@kit.DeviceSecurityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+import { hilog } from '@kit.PerformanceAnalysisKit';
+
+const imageBuffer = new Uint8Array([0xFF, 0xD8, 0xFF, 0xE0, 0x00, 0x10, 0x4A, 0x46, 0x49, 0x46, 0x00, 0x01, 0x01, 0x01, 0x00, 0x60, 0x00, 0x60, 0x00, 0x00, 0xFF, 0xDB, 0x00, 0x43, 0x00, 0x08, 0x06, 0x06, 0x07, 0x06, 0x05, 0x08, 0x07, 0x07, 0x07, 0x09, 0x09, 0x08, 0x0A, 0x0C, 0x14, 0x0D, 0x0C, 0x0B, 0x0B, 0x0C, 0x19, 0x12, 0x13, 0x0F, 0x14, 0x1D, 0x1A, 0x1F, 0x1E, 0x1D, 0x1A, 0x1C, 0x1C, 0x20, 0x24, 0x2E, 0x27, 0x20, 0x22, 0x2C, 0x23, 0x1C, 0x1C, 0x28, 0x37, 0x29, 0x2C, 0x30, 0x31, 0x34, 0x34, 0x34, 0x1F, 0x27, 0x39, 0x3D, 0x38, 0x32, 0x3C, 0x2E, 0x33, 0x34, 0x32, 0xFF, 0xC0, 0x00, 0x0B, 0x08, 0x00, 0x01, 0x00, 0x01, 0x01, 0x01, 0x11, 0x00, 0xFF, 0xC4, 0x00, 0x14, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0xC4, 0x00, 0x14, 0x10, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0xDA, 0x00, 0x08, 0x01, 0x01, 0x00, 0x00, 0x3F, 0x00, 0x37, 0xFF, 0xD9]); // 数据均为示例值，仅用于展示如何检查是否有签名，实际请使用经过相机签名后的图片。
+const data:mediaAuthVerify.ImageAuthData = {
+  buffer: imageBuffer,
+  imageSize: imageBuffer.length,
+  bufferType: mediaAuthVerify.BufferType.BUFFER_TYPE_DATA,
+  imageFormat: mediaAuthVerify.ImageFormat.IMAGE_TYPE_JPEG,
+};
+try {
+  const result = await mediaAuthVerify.hasImageSignature(data);
+} catch (error) {
+  let err = error as BusinessError;
+  hilog.error(0x0000, 'testTag', `Failed to check image signature, code:${err.code}, message:${err.message}`);
+}
+```
+
+#### verifyImageSignature
+
+verifyImageSignature(data: ImageAuthData): Promise<Uint8Array>
+
+对图片中内容证真内容进行验证签名操作，调用成功时返回内容证真内容的manifest数据，使用Promise异步回调。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Security.TrustedAppService.ContentTrustCredentials
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| data | [ImageAuthData](#imageauthdata) | 是 | 图片数据。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，返回验证签名后manifest数据对象。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[可信服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-taas)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 401 | invalid params type. |
+| 1027200001 | Incorrect image format. |
+| 1027200004 | Image data hash check failed. |
+| 1027200006 | Signature verification failed. |
+| 1027200007 | No signature assertion found in the image signature. |
+| 1027200008 | No signature manifest found in the image signature. |
+| 1027200009 | Certificate chain verification failed or the root certificate is invalid in the signature information. |
+| 1027200010 | APIs not supported on the platform. |
+| 1027200012 | Invalid claim information during signature verification. |
+| 1027200013 | File operation failed. |
+| 1027200014 | argument is invalid. |
+
+示例：
+
+```
+import { mediaAuthVerify } from '@kit.DeviceSecurityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+import { hilog } from '@kit.PerformanceAnalysisKit';
+
+const imageBuffer = new Uint8Array([0xFF, 0xD8, 0xFF, 0xE0, 0x00, 0x10, 0x4A, 0x46, 0x49, 0x46, 0x00, 0x01, 0x01, 0x01, 0x00, 0x60, 0x00, 0x60, 0x00, 0x00, 0xFF, 0xDB, 0x00, 0x43, 0x00, 0x08, 0x06, 0x06, 0x07, 0x06, 0x05, 0x08, 0x07, 0x07, 0x07, 0x09, 0x09, 0x08, 0x0A, 0x0C, 0x14, 0x0D, 0x0C, 0x0B, 0x0B, 0x0C, 0x19, 0x12, 0x13, 0x0F, 0x14, 0x1D, 0x1A, 0x1F, 0x1E, 0x1D, 0x1A, 0x1C, 0x1C, 0x20, 0x24, 0x2E, 0x27, 0x20, 0x22, 0x2C, 0x23, 0x1C, 0x1C, 0x28, 0x37, 0x29, 0x2C, 0x30, 0x31, 0x34, 0x34, 0x34, 0x1F, 0x27, 0x39, 0x3D, 0x38, 0x32, 0x3C, 0x2E, 0x33, 0x34, 0x32, 0xFF, 0xC0, 0x00, 0x0B, 0x08, 0x00, 0x01, 0x00, 0x01, 0x01, 0x01, 0x11, 0x00, 0xFF, 0xC4, 0x00, 0x14, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0xC4, 0x00, 0x14, 0x10, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0xDA, 0x00, 0x08, 0x01, 0x01, 0x00, 0x00, 0x3F, 0x00, 0x37, 0xFF, 0xD9]); // 数据均为示例值，仅用于展示如何检查是否有签名，实际请使用经过相机签名后的图片。
+const data:mediaAuthVerify.ImageAuthData = {
+  buffer: imageBuffer,
+  imageSize: imageBuffer.length,
+  bufferType: mediaAuthVerify.BufferType.BUFFER_TYPE_DATA,
+  imageFormat: mediaAuthVerify.ImageFormat.IMAGE_TYPE_JPEG,
+};
+try {
+  const result = await mediaAuthVerify.verifyImageSignature(data);
+} catch (error) {
+  let err = error as BusinessError;
+  hilog.error(0x0000, 'testTag', `Failed to verify image signature, code:${err.code}, message:${err.message}`);
+}
+```
+
+#### parseImageMetadata
+
+parseImageMetadata(manifests: Uint8Array): Promise<string>
+
+从验证签名获得的manifest数据中解析获得其json格式结果。此接口需要在调用[verifyImageSignature](#verifyimagesignature)接口成功后调用。使用Promise异步回调。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Security.TrustedAppService.ContentTrustCredentials
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| manifests | Uint8Array | 是 | 图片验证签名后manifest信息。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，返回验证签名后manifest的json格式字符串。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[可信服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-taas)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 401 | The input argument is invalid. |
+| 1027200002 | Insufficient storage space for the service. |
+| 1027200010 | APIs not supported on the platform. |
+| 1027200014 | argument is invalid. |
+
+示例：
+
+```
+import { mediaAuthVerify } from '@kit.DeviceSecurityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+import { hilog } from '@kit.PerformanceAnalysisKit';
+import { util } from '@kit.ArkTS';
+
+const file = "/data/local/testpic/pics/jpgpic.jpg";// 此路径为示例值，仅用于展示如何传递URL内容，实际请使用正确图片URL。
+let encoder = new util.TextEncoder();
+let imageBuffer = encoder.encodeInto(file);
+const data:mediaAuthVerify.ImageAuthData = {
+  buffer: imageBuffer,
+  imageSize: imageBuffer.length,
+  bufferType: mediaAuthVerify.BufferType.BUFFER_TYPE_DATA,
+  imageFormat: mediaAuthVerify.ImageFormat.IMAGE_TYPE_JPEG,
+};
+try {
+  let manifest = await mediaAuthVerify.verifyImageSignature(data);
+  let stringResult = await mediaAuthVerify.parseImageMetadata(manifest);
+} catch (error) {
+  let err = error as BusinessError;
+  hilog.error(0x0000, 'testTag', `Failed to verify image signature, code:${err.code}, message:${err.message}`);
+}
 ```

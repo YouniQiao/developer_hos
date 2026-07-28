@@ -2,8 +2,8 @@
 title: "Interface (MvtOverlay)"
 upstream_id: "harmonyos-references/map-map-mvtoverlay"
 catalog: "harmonyos-references"
-content_hash: "5db6a1f6ca41"
-synced_at: "2026-07-09T01:01:26.196390"
+content_hash: "b43190c0de81"
+synced_at: "2026-07-28T16:52:44.792310"
 ---
 
 # Interface (MvtOverlay)
@@ -81,6 +81,7 @@ addLayers(layers: mapCommon.MvtLayer[]): void
 ```
 let renderLayers: Array<mapCommon.MvtLayer> = []
 let staticLayerIds = [-12, -8, -4, 0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44];
+// 构建一组具有不同 sourceLayer ID的图层，用于动态渲染
 for (let index = 0; index < staticLayerIds.length; index++) {
   let layer: mapCommon.MvtLayer = {
     id: index.toString(),
@@ -175,7 +176,7 @@ for (let index = 0; index < staticLayerIds.length; index++) {
   renderLayers.push(layer)
 }
 let layerIds = ['111'];
-
+// 创建新的图层列表并更新图层
 mvtOverlay.changeLayers(renderLayers, layerIds);
 ```
 

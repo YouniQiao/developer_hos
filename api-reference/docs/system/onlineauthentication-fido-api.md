@@ -2,8 +2,8 @@
 title: "FIDO"
 upstream_id: "harmonyos-references/onlineauthentication-fido-api"
 catalog: "harmonyos-references"
-content_hash: "936dfcd36170"
-synced_at: "2026-07-09T00:59:17.535267"
+content_hash: "fdd6e7e1d893"
+synced_at: "2026-07-28T16:50:29.681384"
 ---
 
 # FIDO
@@ -62,7 +62,7 @@ UAF字典对象，包含原始的UAF协议消息和附加数据。
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | uafProtocolMessage | string | 否 | 否 | UAF协议消息。长度由不同三方服务器限制。注意其中若有challenge、transaction等字段，则包含上述字段的TA请求报文不可超过2048字节。 |
-| additionalData | string | 否 | 是 | UAF附加数据。长度由不同三方服务器限制，默认值为空。该字段格式为json string，具体格式{"key": value}。 - 当key为isGuideToSetBiometrics，表示用户未设置生物特征的情况下，使用系统跳转能力引导用户去设置生物特征。value取值为true、false。 - true：使用系统跳转能力。 - false：不使用系统跳转能力。 当不传入isGuideToSetBiometrics，则表示不使用系统跳转能力。 **起始版本：** 6.0.0(20) - 当key为navigationButtonText，表示支持开发者自定义认证方式，在用户生物认证失败并点击切换认证方式按钮时，提示用户拉起自定义的认证界面。 - 当value为任意文本时，表示开启自定义认证功能，此时传入的文本为切换认证方式按钮显示的文本。 当不传入navigationButtonText，则表示不使用自定义认证功能。 **起始版本：** 6.0.1(21) - 当key为algorithmMode，表示支持开发者选择密码算法模式。 - 当前value取值支持传入'default'、'SM'。 - 'default'：使用FIDO标准默认支持的国际通用算法。 - 'SM'：FIDO已支持国密化，传入此值表示使用中国国密算法。 当不传入algorithmMode，则使用FIDO协议默认支持的国际通用算法。 **起始版本：** 6.1.0(23) |
+| additionalData | string | 否 | 是 | UAF附加数据。长度由不同三方服务器限制，默认值为空。该字段格式为json string，具体格式{"key": value}。 - 当key为isGuideToSetBiometrics，表示用户未设置生物特征的情况下，使用系统跳转能力引导用户去设置生物特征。value取值为true、false。 - true：使用系统跳转能力。 - false：不使用系统跳转能力。 当不传入isGuideToSetBiometrics，则表示不使用系统跳转能力。 **起始版本：** 6.0.0(20) - 当key为navigationButtonText，表示支持开发者自定义认证方式，在用户生物认证失败并点击切换认证方式按钮时，提示用户拉起自定义的认证界面。 - 当value为任意文本时，表示开启自定义认证功能，此时传入的文本为切换认证方式按钮显示的文本。 当不传入navigationButtonText，则表示不使用自定义认证功能。 **起始版本：** 6.0.1(21) - 当key为algorithmMode，表示支持开发者选择密码算法模式。 - 当前value取值支持传入'default'、'SM'。 - 'default'：使用FIDO标准默认支持的国际通用算法。 - 'SM'：FIDO已支持国密化，传入此值表示使用中国国密算法。 当不传入algorithmMode，则使用FIDO协议默认支持的国际通用算法。 **起始版本：** 6.1.0(23) - 当key为isReturnAuthLock，表示用户认证失败的次数超过了上限，触发防爆模式，认证被锁定，返回特定错误码。value取值为true，false。 - true：用户身份认证被锁定，返回1005900018错误码。 - false：用户身份认证被锁定，不返回1005900018错误码。 当不传入isReturnAuthLock，则表示认证被锁定，不返回1005900018错误码。 **起始版本：** 26.0.0 |
 
 示例：
 
@@ -160,7 +160,7 @@ PNG图片特征对象。
 | authenticationAlgorithm | number | 是 | 否 | 支持的鉴别算法。 目前支持ALG_SIGN_SECP256R1_ECDSA_SHA256_RAW算法（0x0001）。 |
 | attestationTypes | Array | 是 | 否 | 支持的鉴别类型列表。 目前支持TAG_ATTESTATION_BASIC_FULL(0x3E07)。 |
 | userVerification | number | 是 | 否 | 用户认证方式。 2：指纹。 16：人脸。 |
-| keyProtection | number | 是 | 否 | 秘钥保护类型。 目前支持KEY_PROTECTION_TEE 0x0004。 |
+| keyProtection | number | 是 | 否 | 密钥保护类型。 目前支持KEY_PROTECTION_TEE 0x0004。 |
 | matcherProtection | number | 是 | 否 | 认证设备保护类型。 目前支持MATCHER_PROTECTION_TEE 0x0002。 |
 | attachmentHint | number | 是 | 否 | 认证设备连接方式。 目前支持ATTACHMENT_HINT_INTERNAL 0x0001。 |
 | isSecondFactorOnly | boolean | 是 | 否 | 认证器是否仅能作为第二因子使用。 目前不支持，返回值为false。 |
@@ -207,7 +207,7 @@ discover(context: common.Context): Promise<DiscoveryData>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| context | [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context#context) | 是 | ability的context。 |
+| context | [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context#context) | 是 | 当前ability的应用上下文信息。 |
 
 返回值:
 
@@ -217,7 +217,7 @@ discover(context: common.Context): Promise<DiscoveryData>
 
 错误码:
 
-以下错误码的详细介绍请参见[FIDO免密认证错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-onlineauthentication-fido)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[FIDO免密认证错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-onlineauthentication-fido)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -274,7 +274,7 @@ checkPolicy(context: common.Context, uafRequest: UAFMessage): Promise<void>
 
 错误码：
 
-以下错误码的详细介绍请参见[FIDO免密认证错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-onlineauthentication-fido)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[FIDO免密认证错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-onlineauthentication-fido)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -294,8 +294,8 @@ checkPolicy(context: common.Context, uafRequest: UAFMessage): Promise<void>
   let context: Context = uiContext.getHostContext() as common.UIAbilityContext;
   // 从FIDO服务器获取报文message
   let uafMessage: fido.UAFMessage = {
-    uafProtocolMessage: '', // uafProtocolMessage为从FIDO服务器获取的报文
-    additionalData: ''
+    uafProtocolMessage: '{\"header\":{\"upv\":{\"major\":1,\"minor\":0},\"op\":\"Reg\",\"appID\":\"\",\"serverData\":\"xxx\",\"exts\":[{\"id\":\"downloadCer\",\"data\":\"pkcs10\",\"fail_if_unknown\":false}]},\"challenge\":\"bB5D8JaaXskeEMau7Zuffybppbcb4S6_iszUTz5T6n0\",\"username\":\"testName100_2_10\",\"policy\":{\"accepted\":[[{\"aaid\":[\"xxx\"],\"attachmentHint\":1,\"authenticationAlgorithms\":[99],\"authenticatorVersion\":1}]]}}', // uafProtocolMessage为从FIDO服务器获取的报文
+    additionalData: '{"isGuideToSetBiometrics":true}'
   };
   try {
     await fido.checkPolicy(context, uafMessage);
@@ -339,7 +339,7 @@ processUAFOperation(context: common.Context, uafRequest: UAFMessage, channelBind
 
 错误码：
 
-以下错误码的详细介绍请参见[FIDO免密认证错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-onlineauthentication-fido)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[FIDO免密认证错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-onlineauthentication-fido)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -410,7 +410,7 @@ notifyUAFResult(context: common.Context, uafResponse: UAFMessage): Promise<void>
 
 错误码：
 
-以下错误码的详细介绍请参见[FIDO免密认证错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-onlineauthentication-fido)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[FIDO免密认证错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-onlineauthentication-fido)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -429,8 +429,8 @@ notifyUAFResult(context: common.Context, uafResponse: UAFMessage): Promise<void>
   let context: Context = uiContext.getHostContext() as common.UIAbilityContext;
   // 从FIDO服务器获取报文message
   let uafMessage: fido.UAFMessage = {
-    uafProtocolMessage: '', // uafProtocolMessage为从FIDO服务器获取的报文
-    additionalData: ''
+    uafProtocolMessage: '{\"header\":{\"upv\":{\"major\":1,\"minor\":0},\"op\":\"Reg\",\"appID\":\"\",\"serverData\":\"xxx\",\"exts\":[{\"id\":\"downloadCer\",\"data\":\"pkcs10\",\"fail_if_unknown\":false}]},\"challenge\":\"bB5D8JaaXskeEMau7Zuffybppbcb4S6_iszUTz5T6n0\",\"username\":\"testName100_2_10\",\"policy\":{\"accepted\":[[{\"aaid\":[\"xxx\"],\"attachmentHint\":1,\"authenticationAlgorithms\":[99],\"authenticatorVersion\":1}]]}}', // uafProtocolMessage为从FIDO服务器获取的报文
+    additionalData: '{"isGuideToSetBiometrics":true}'
   };
   try {
     await fido.notifyUAFResult(context, uafMessage);

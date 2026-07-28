@@ -1,12 +1,10 @@
 ---
-
 title: "应用事件打点错误码"
 upstream_id: "harmonyos-references/errorcode-hiappevent"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T01:00:05.949344"
-content_hash: "9c61992336e4"
+content_hash: "fc4800faa448"
+synced_at: "2026-07-28T16:51:24.159773"
 ---
-
 
 # 应用事件打点错误码
 
@@ -16,7 +14,7 @@ content_hash: "9c61992336e4"
 
 错误信息
 
-Function disabled. Possible caused by the param disable in ConfigOption is true.
+Function disabled. Possibly caused by the param disable in ConfigOption is true.
 
 错误描述
 
@@ -89,7 +87,7 @@ Invalid event name. Possible causes: 1. Contain invalid characters; 2. Length is
 
 错误信息
 
-Invalid number of event parameters. Possible caused by the number of parameters is over 32.
+Invalid number of event parameters. Possibly caused by the number of parameters is over 32.
 
 错误描述
 
@@ -230,7 +228,7 @@ Invalid filtering event domain. Possible causes: 1. Contain invalid characters; 
 
 错误信息
 
-Invalid row value. Possible caused by the row value is less than zero.
+Invalid row value. Possibly caused by the row value is less than zero.
 
 错误描述
 
@@ -248,7 +246,7 @@ Invalid row value. Possible caused by the row value is less than zero.
 
 错误信息
 
-Invalid size value. Possible caused by the size value is less than zero.
+Invalid size value. Possibly caused by the size value is less than zero.
 
 错误描述
 
@@ -266,7 +264,7 @@ Invalid size value. Possible caused by the size value is less than zero.
 
 错误信息
 
-Invalid timeout value. Possible caused by the timeout value is less than zero.
+Invalid timeout value. Possibly caused by the timeout value is less than zero.
 
 错误描述
 
@@ -284,7 +282,7 @@ Invalid timeout value. Possible caused by the timeout value is less than zero.
 
 错误信息
 
-Invalid max storage quota value. Possible caused by incorrectly formatted.
+Invalid max storage quota value. Possibly caused by incorrectly formatted.
 
 错误描述
 
@@ -305,7 +303,7 @@ Invalid max storage quota value. Possible caused by incorrectly formatted.
 
 错误信息
 
-Invalid size value. Possible caused by the size value is less than or equal to zero.
+Invalid size value. Possibly caused by the size value is less than or equal to zero.
 
 错误描述
 

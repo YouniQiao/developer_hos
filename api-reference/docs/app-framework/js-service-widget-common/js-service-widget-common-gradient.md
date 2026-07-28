@@ -2,8 +2,8 @@
 title: "渐变样式"
 upstream_id: "harmonyos-references/js-service-widget-common-gradient"
 catalog: "harmonyos-references"
-content_hash: "af37f8e4f11f"
-synced_at: "2026-07-09T00:58:29.840379"
+content_hash: "2c5adecd2aad"
+synced_at: "2026-07-28T16:49:12.330731"
 ---
 
 # 渐变样式
@@ -53,22 +53,22 @@ background: repeating-linear-gradient(direction/angle, color, color, ...);
   background: linear-gradient(red, #00ff00);
 }
 ```
- ![](./img/zh-cn_image_0000002631254124.png)
+ ![](./img/zh-cn_image_0000002656009254.png)
 2. 45度夹角渐变。 
 ```
 /* 45度夹角，从红色渐变到绿色 */
 background: linear-gradient(45deg, rgb(255, 0, 0),rgb(0, 255, 0));
 ```
- ![](./img/zh-cn_image_0000002661613307.png)
+ ![](./img/zh-cn_image_0000002655849332.png)
 3. 设置方向从左向右渐变。 
 ```
 /* 从左向右渐变，在距离左边90px和距离左边360px (600*0.6) 之间270px宽度形成渐变 */
 background: linear-gradient(to right, rgb(255, 0, 0) 90px, rgb(0, 255, 0) 60%);
 ```
- ![](./img/zh-cn_image_0000002631414018.png)
+ ![](./img/zh-cn_image_0000002686088763.png)
 4. 重复渐变。 
 ```
-/* 从左向右重复渐变，重复渐变区域30px（60-30）透明度0.5 */
+/* 从左向右重复渐变，重复渐变区域30vp（60-30）透明度0.5 */
 background: repeating-linear-gradient(to right, rgba(255, 255, 0, 1) 30vp,rgba(0, 0, 255, .5) 60vp);
 ```
- ![](./img/zh-cn_image_0000002661733247.png)
+ ![](./img/zh-cn_image_0000002685928931.png)

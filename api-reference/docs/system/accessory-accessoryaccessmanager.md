@@ -2,13 +2,13 @@
 title: "accessoryAccessManager（配件接入管理）"
 upstream_id: "harmonyos-references/accessory-accessoryaccessmanager"
 catalog: "harmonyos-references"
-content_hash: "830bbbf89b0e"
-synced_at: "2026-07-09T00:59:22.758719"
+content_hash: "5a24cc1f96fc"
+synced_at: "2026-07-28T16:50:35.650025"
 ---
 
 # accessoryAccessManager（配件接入管理）
 
-配件接入管理模块面向华为分享生态合作配件设备及其生态应用提供关联唤醒、系统服务关联、按需调度和安全授信管理等能力。
+配件接入管理模块面向华为生态合作配件设备及其生态应用提供关联唤醒、系统服务关联、按需调度和安全授信管理等能力。
 
 起始版本： 26.0.0
 
@@ -151,7 +151,7 @@ import { accessoryAccessManager } from '@kit.AccessoryKit';
 
 #### AccessEvent
 
-枚举类型，配件设备接入事件。
+枚举类型，配件设备接入事件。触发参考[showAccessPicker接口事件回调数据结构说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/accessory-dev-guides#showaccesspicker接口事件回调数据结构说明)。
 
 系统能力： SystemCapability.Collaboration.Accessory.AccessManager
 
@@ -197,9 +197,9 @@ import { accessoryAccessManager } from '@kit.AccessoryKit';
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| accessEvent | [AccessEvent](#accessevent) | 否 | 否 | 配件设备接入事件。 |
+| accessEvent | [AccessEvent](#accessevent) | 否 | 否 | 配件设备接入事件，事件触发流程参考[showAccessPicker接口事件回调数据结构说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/accessory-dev-guides#showaccesspicker接口事件回调数据结构说明)。 |
 | attachServiceInfo | [AttachServiceInfo](#attachserviceinfo) | 否 | 是 | 挂载服务信息。 |
-| errorCode | number | 否 | 是 | 接入事件错误码。 |
+| errorCode | number | 否 | 是 | 接入事件错误码。 0：正常结果； 10000：用户取消，正常流程下，点击X按钮； 10001：超时； 10002：鉴权失败，需检查productId是否正确； 10003：弹窗异常； 10004：发起授信异常； 10005：授信失败； 10006：服务挂载失败。 |
 | errorDesc | string | 否 | 是 | 接入事件错误描述。 |
 
 #### DetachServiceEvent
@@ -237,7 +237,7 @@ showAccessPicker(items: Array<PickerItemInfo>, callback: Callback<AccessEventInf
 
 模型约束： 此模块的接口仅可在Stage模型下使用。
 
-需要权限： 如使用该接口需申请权限ohos.permission.ALLOW_ACCESSORY_ACCESS，该能力受限开放。权限申请方式请参考[申请使用受限权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)。
+需要权限： 如使用该接口需申请权限ohos.permission.ALLOW_ACCESSORY_ACCESS，该能力受限开放。权限申请方式请参考[申请受限权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)。
 
 起始版本： 26.0.0
 
@@ -245,8 +245,8 @@ showAccessPicker(items: Array<PickerItemInfo>, callback: Callback<AccessEventInf
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| items | Array | 是 | 接入的选择项信息数组。 |
-| callback | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#callback) | 是 | 回调函数，返回配件接入事件信息对象。 |
+| items | Array | 是 | 接入的选择项信息数组，当前支持数量为1，传入多个时默认取第一个。 |
+| callback | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#callback) | 是 | 回调函数，返回配件接入事件信息对象。回调结果参考[showAccessPicker接口事件回调数据结构说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/accessory-dev-guides#showaccesspicker接口事件回调数据结构说明)。 |
 
 返回值：
 
@@ -273,7 +273,7 @@ const TAG = 'Demo';
 
 let briefDesc: accessoryAccessManager.StringResourceInfo = {
   'bundleName': 'com.huawei.accessoryDemo',
-  'moduleName': 'EntryAbility',
+  'moduleName': 'entry',
   'stringResourceId': $r('app.string.EntryAbility_desc').id,
 }
 let wakeupInfo: accessoryAccessManager.WakeupInfo = {
@@ -282,11 +282,31 @@ let wakeupInfo: accessoryAccessManager.WakeupInfo = {
   'abilityName': 'EntryAbility',
   'briefDesc': briefDesc
 }
+
+let shareBriefDesc: accessoryAccessManager.StringResourceInfo = {
+  'bundleName': 'com.huawei.accessoryDemo',
+  'moduleName': 'entry',
+  'stringResourceId': $r('app.string.EntryAbility_desc').id,
+}
+
+let shareWakeupInfo: accessoryAccessManager.WakeupInfo = {
+  'wakeupType': accessoryAccessManager.WakeupType.START_ABILITY_BY_CALL,
+  'bundleName': 'com.huawei.accessoryDemo',
+  'abilityName': 'EntryAbility',
+  'briefDesc': shareBriefDesc
+}
+
 let serviceInfo: Array<accessoryAccessManager.ServiceInfo> = [
   {
     serviceName: accessoryAccessManager.ServiceName.PARTNER_APP_ACCESSORY_COLLABORATION,
     parameters: {
-      serviceName: wakeupInfo
+      'serviceName': wakeupInfo
+    }
+  },
+  {
+    serviceName: accessoryAccessManager.ServiceName.PARTNER_SHARE_SERVICE,
+    parameters: {
+      'bundleName': 'com.huawei.accessoryDemo',
     }
   }
 ];
@@ -312,11 +332,22 @@ let items: Array<accessoryAccessManager.PickerItemInfo> = [
   {
     discoveryType: accessoryAccessManager.DiscoveryType.PARTNER_BLE_CONNECT,
     hasScreen: true,
-    bleAddress: 'bleAddress',
+    bleAddress: 'XX:XX:XX:XX:XX:XX',
     bleMtuSize: 1,
-    productId: 'productId',
-    subProductId: 'subProductId',
-    displayName: '有屏设备',
+    productId: 'XXXXX',
+    subProductId: '',
+    displayName: 'xxxx',
+    displayImage: pixelMap,
+    requestAttachServiceInfo: serviceInfo
+  },
+  {
+    discoveryType: accessoryAccessManager.DiscoveryType.PARTNER_BLE_CONNECT,
+    hasScreen: true,
+    bleAddress: 'XX:XX:XX:XX:XX:XX',
+    bleMtuSize: 1,
+    productId: 'XXXXX',
+    subProductId: '',
+    displayName: 'xxxx',
     displayImage: pixelMap,
     requestAttachServiceInfo: serviceInfo
   }
@@ -342,7 +373,7 @@ modifyDisplayName(accessoryId: string, displayName: string): number
 
 模型约束： 此模块的接口仅可在Stage模型下使用。
 
-需要权限： 如使用该接口需申请权限ohos.permission.ALLOW_ACCESSORY_ACCESS，该能力受限开放。权限申请方式请参考[申请使用受限权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)。
+需要权限： 如使用该接口需申请权限ohos.permission.ALLOW_ACCESSORY_ACCESS，该能力受限开放。权限申请方式请参考[申请受限权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)。
 
 起始版本： 26.0.0
 
@@ -392,7 +423,7 @@ queryAttachedService(): Array<AttachServiceInfo>
 
 模型约束： 此模块的接口仅可在Stage模型下使用。
 
-需要权限： 如使用该接口需申请权限ohos.permission.ALLOW_ACCESSORY_ACCESS，该能力受限开放。权限申请方式请参考[申请使用受限权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)。
+需要权限： 如使用该接口需申请权限ohos.permission.ALLOW_ACCESSORY_ACCESS，该能力受限开放。权限申请方式请参考[申请受限权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)。
 
 起始版本： 26.0.0
 
@@ -429,7 +460,7 @@ detachService(attachId: number, callback: Callback<DetachServiceEvent>): number
 
 模型约束： 此模块的接口仅可在Stage模型下使用。
 
-需要权限： 如使用该接口需申请权限ohos.permission.ALLOW_ACCESSORY_ACCESS，该能力受限开放。权限申请方式请参考[申请使用受限权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)。
+需要权限： 如使用该接口需申请权限ohos.permission.ALLOW_ACCESSORY_ACCESS，该能力受限开放。权限申请方式请参考[申请受限权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)。
 
 起始版本： 26.0.0
 
@@ -560,7 +591,7 @@ registerConnectListener(attachId: number, stateCallback: Callback<ChannelEventIn
 
 模型约束： 此模块的接口仅可在Stage模型下使用。
 
-需要权限： 如使用该接口需申请权限ohos.permission.ALLOW_ACCESSORY_ACCESS，该能力受限开放。权限申请方式请参考[申请使用受限权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)。
+需要权限： 如使用该接口需申请权限ohos.permission.ALLOW_ACCESSORY_ACCESS，该能力受限开放。权限申请方式请参考[申请受限权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)。
 
 起始版本： 26.0.0
 
@@ -623,7 +654,7 @@ unregisterConnectListener(attachId: number): number
 
 模型约束： 此模块的接口仅可在Stage模型下使用。
 
-需要权限： 如使用该接口需申请权限ohos.permission.ALLOW_ACCESSORY_ACCESS，该能力受限开放。权限申请方式请参考[申请使用受限权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)。
+需要权限： 如使用该接口需申请权限ohos.permission.ALLOW_ACCESSORY_ACCESS，该能力受限开放。权限申请方式请参考[申请受限权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)。
 
 起始版本： 26.0.0
 
@@ -671,7 +702,7 @@ connect(connectRequestInfo: ConnectRequestInfo): number
 
 模型约束： 此模块的接口仅可在Stage模型下使用。
 
-需要权限： 如使用该接口需申请权限ohos.permission.ALLOW_ACCESSORY_ACCESS，该能力受限开放。权限申请方式请参考[申请使用受限权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)。
+需要权限： 如使用该接口需申请权限ohos.permission.ALLOW_ACCESSORY_ACCESS，该能力受限开放。权限申请方式请参考[申请受限权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)。
 
 起始版本： 26.0.0
 
@@ -730,7 +761,7 @@ disconnect(attachId: number): number
 
 模型约束： 此模块的接口仅可在Stage模型下使用。
 
-需要权限： 如使用该接口需申请权限ohos.permission.ALLOW_ACCESSORY_ACCESS，该能力受限开放。权限申请方式请参考[申请使用受限权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)。
+需要权限： 如使用该接口需申请权限ohos.permission.ALLOW_ACCESSORY_ACCESS，该能力受限开放。权限申请方式请参考[申请受限权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)。
 
 起始版本： 26.0.0
 

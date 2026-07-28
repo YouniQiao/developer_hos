@@ -2,8 +2,8 @@
 title: "@ohos.bundle (Bundle模块)"
 upstream_id: "harmonyos-references/js-apis-bundle"
 catalog: "harmonyos-references"
-content_hash: "e25368c2d957"
-synced_at: "2026-07-17T16:15:59.031972"
+content_hash: "8277b6ab42a9"
+synced_at: "2026-07-28T16:40:42.002952"
 ---
 
 # @ohos.bundle (Bundle模块)
@@ -441,7 +441,7 @@ bundle.getBundleInfo(bundleName, bundleFlags, options, (err, data) => {
 
 getAllApplicationInfo(bundleFlags: number, userId?: number): Promise<Array<ApplicationInfo>>
 
-获取指定用户下所有已安装的应用信息，使用promise异步回调。
+获取指定用户下所有已安装的应用信息，使用Promise异步回调。
 
 需要权限：
 

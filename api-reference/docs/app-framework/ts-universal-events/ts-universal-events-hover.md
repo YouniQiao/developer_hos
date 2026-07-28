@@ -2,24 +2,24 @@
 title: "悬浮事件"
 upstream_id: "harmonyos-references/ts-universal-events-hover"
 catalog: "harmonyos-references"
-content_hash: "7aae755ccae6"
-synced_at: "2026-07-09T17:23:30.601173"
+content_hash: "a7e15eb08d7b"
+synced_at: "2026-07-28T16:41:55.377590"
 ---
 
 # 悬浮事件
 
-光标滑动或手写笔在屏幕上悬浮移动扫过组件时触发。
+光标滑动或手写笔在屏幕上悬浮移动扫过组件时触发，用于监听鼠标或手写笔进入、退出组件以及在组件上方悬浮移动等交互状态，适用于根据悬浮状态更新组件样式、展示位置信息等交互反馈场景。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 从API version 8开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+- 从API version 8开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 - 目前支持通过外接鼠标以及触控板触发。部分手写笔（当前在华为智慧屏MateTV、MateTV Pro中使用灵犀手写笔时无法响应悬浮事件）不支持悬浮事件，具体取决于硬件能力。
 
 #### onHover
 
 onHover(event: (isHover: boolean, event: HoverEvent) => void): T
 
-鼠标或手写笔进入或退出组件时，触发hover事件。
+鼠标或手写笔进入或退出组件时，触发悬浮事件。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -29,13 +29,13 @@ onHover(event: (isHover: boolean, event: HoverEvent) => void): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| event | (isHover: boolean, event: [HoverEvent](#hoverevent10对象说明)) => void | 是 | 鼠标的状态信息。 event表示设置阻塞事件冒泡属性，并获取鼠标或手写笔悬浮的位置坐标，从API version 11开始支持。 isHover表示鼠标或手写笔是否悬浮在组件上，进入时为true， 离开时为false。 |
+| event | (isHover: boolean, event: [HoverEvent](#hoverevent10对象说明)) => void | 是 | 鼠标或手写笔进入或退出组件时触发的回调函数。isHover表示鼠标或手写笔是否悬浮在组件上，进入时为true，离开时为false。event为HoverEvent对象，用于获取鼠标或手写笔悬浮的位置坐标，并可设置阻塞事件冒泡属性，从API version 11开始支持。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，可用于链式调用。 |
 
 #### onHoverMove15+
 
@@ -53,13 +53,13 @@ onHoverMove(event: Callback<HoverEvent>): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| event | Callback | 是 | 设置阻塞事件冒泡属性，并获取手写笔悬浮的位置坐标。 |
+| event | Callback | 是 | 悬浮移动事件触发时调用的回调函数，回调参数为HoverEvent对象，用于获取手写笔悬浮的位置坐标，并可设置阻塞事件冒泡属性。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，可用于链式调用。 |
 
 #### HoverEvent10+对象说明
 
@@ -71,13 +71,13 @@ onHoverMove(event: Callback<HoverEvent>): T
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| x15+ | number | 否 | 是 | 鼠标光标或手写笔位置在当前组件为基准的[组件坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-glossary#组件坐标系)中的X坐标。 单位：vp 取值范围：[0, +∞) **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
-| y15+ | number | 否 | 是 | 鼠标光标或手写笔位置在当前组件为基准的[组件坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-glossary#组件坐标系)中的Y坐标。 单位：vp 取值范围：[0, +∞) **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
+| x15+ | number | 否 | 是 | 鼠标光标或手写笔位置在以当前组件为基准的[组件坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-glossary#组件坐标系)中的X坐标。 单位：vp 取值范围：[0, +∞) **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
+| y15+ | number | 否 | 是 | 鼠标光标或手写笔位置在以当前组件为基准的[组件坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-glossary#组件坐标系)中的Y坐标。 单位：vp 取值范围：[0, +∞) **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
 | windowX15+ | number | 否 | 是 | 鼠标光标或手写笔位置在当前应用窗口坐标系中的X坐标。 单位：vp 取值范围：[0, +∞) **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
 | windowY15+ | number | 否 | 是 | 鼠标光标或手写笔位置在当前应用窗口坐标系中的Y坐标。 单位：vp 取值范围：[0, +∞) **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
 | displayX15+ | number | 否 | 是 | 鼠标光标或手写笔位置在当前应用屏幕坐标系中的X坐标。 单位：vp 取值范围：[0, +∞) **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
 | displayY15+ | number | 否 | 是 | 鼠标光标或手写笔位置在当前应用屏幕坐标系中的Y坐标。 单位：vp 取值范围：[0, +∞) **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
-| stopPropagation | () => void | 否 | 否 | 阻塞[事件冒泡](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-basic-principles#事件冒泡)。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| stopPropagation | () => void | 否 | 否 | 阻塞[事件冒泡](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-basic-principles#事件冒泡)，可用于组件已处理悬浮事件后，阻止该事件继续向父组件传递，避免父组件重复响应同一事件。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | globalDisplayX20+ | number | 否 | 是 | 鼠标光标或手写笔位置在[全局坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#global-coordinate-system全局坐标系)中的X坐标。 单位：vp 取值范围：(-∞, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | globalDisplayY20+ | number | 否 | 是 | 鼠标光标或手写笔位置在[全局坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#global-coordinate-system全局坐标系)中的Y坐标。 单位：vp 取值范围：(-∞, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 
@@ -124,15 +124,15 @@ struct HoverEventExample {
 
 未悬浮时的文本内容与背景颜色：
 
-![](./img/zh-cn_image_0000002633850366.png)
+![](./img/zh-cn_image_0000002685927927.png)
 
 手写笔悬浮时改变文本内容与背景颜色：
 
-![](./img/zh-cn_image_0000002634010270.png)
+![](./img/zh-cn_image_0000002656008248.png)
 
 #### [h2]示例2（使用onHoverMove）
 
-从API version 15开始，该示例设置了按钮的[onHoverMove](#onhovermove15)事件。当手写笔悬浮在按钮时，UI界面会显示当前手写笔悬浮状的位置。
+从API version 15开始，该示例设置了按钮的[onHoverMove](#onhovermove15)事件。当手写笔悬浮在按钮上时，UI会显示手写笔当前悬浮的位置。
 
 ```
 // xxx.ets
@@ -160,4 +160,4 @@ struct OnHoverMoveEventExample {
 
 手写笔悬浮在Button组件上时，UI不断刷新笔尖的位置信息：
 
-![](./img/zh-cn_image_0000002664209419.png)
+![](./img/zh-cn_image_0000002655848328.png)

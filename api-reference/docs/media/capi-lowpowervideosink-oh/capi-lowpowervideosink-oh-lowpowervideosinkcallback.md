@@ -2,21 +2,21 @@
 title: "OH_LowPowerVideoSinkCallback"
 upstream_id: "harmonyos-references/capi-lowpowervideosink-oh-lowpowervideosinkcallback"
 catalog: "harmonyos-references"
-content_hash: "148c5acb33d1"
-synced_at: "2026-07-09T01:00:44.799584"
+content_hash: "434ed86c7ce8"
+synced_at: "2026-07-28T16:52:01.871983"
 ---
 
 # OH_LowPowerVideoSinkCallback
 
 ```
-typedef struct OH_LowPowerVideoSinkCallback OH_LowPowerVideoSinkCallback
+typedef struct OH_LowPowerVideoSinkCallback OH_LowPowerVideoSinkCallback;
 ```
 
 #### 概述
 
-包含了LowPowerVideoSink回调函数指针的集合。
+包含了OH_LowPowerVideoSink回调函数指针的集合。
 
-应用需注册此实例结构体到[OH_LowPowerVideoSink](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpowervideosink-oh-lowpowervideosink)实例中，并对回调上报的信息进行处理，保证LowPowerVideoSink的正常运行。
+应用需注册此实例结构体到[OH_LowPowerVideoSink](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpowervideosink-oh-lowpowervideosink)实例中，并对回调上报的信息进行处理，保证OH_LowPowerVideoSink的正常运行。
 
 起始版本： 20
 

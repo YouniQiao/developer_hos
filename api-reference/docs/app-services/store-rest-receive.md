@@ -2,8 +2,8 @@
 title: "归因结果回传"
 upstream_id: "harmonyos-references/store-rest-receive"
 catalog: "harmonyos-references"
-content_hash: "d402c788ed07"
-synced_at: "2026-07-09T01:01:15.419097"
+content_hash: "81767d500e7d"
+synced_at: "2026-07-28T16:52:34.429615"
 ---
 
 # 归因结果回传
@@ -25,7 +25,7 @@ Request Body
 
 | 参数 | 参数类型 | 是否必选 | 是否参与签名 | 描述 |
 | --- | --- | --- | --- | --- |
-| ad_tech_id | String | 否 | 是 | 归因成功的分发平台id，分发平台向应用归因云侧注册角色时，由应用归因服务分配，长度固定为8个字符如果接收方为分发平台，该id即分发平台自身的id。 如果接收方为归因监测平台/开发者，该id为归因监测平台/开发者注册转化时指定分发平台列表中归因成功的分发平台id。 |
+| ad_tech_id | String | 否 | 是 | 归因成功的分发平台id，分发平台向应用归因云侧注册角色时，由应用归因服务分配，长度固定为8个字符。 如果接收方为分发平台，该id即分发平台自身的id。 如果接收方为归因监测平台/开发者，该id为归因监测平台/开发者注册转化时指定分发平台列表中归因成功的分发平台id。 |
 | campaign_id | String | 否 | 是 | 本次转化归因到的营销任务id，仅当满足回传条件时携带。 |
 | source_id | String | 否 | 是 | 媒体应用id，长度不超过64个字符，仅当满足回传条件时携带。 |
 | destination_id | String | 否 | 是 | 开发者应用id，长度不超过64个字符 。 **说明：** 您的应用ID参考[查看应用基本信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-appinfo-0000001100014694)获取。 |
@@ -42,7 +42,6 @@ Request Body
 #### 请求示例
 
 ```
-POST https://xxxxxxxx/attribution/report-attribution
 Content-Type: application/json
 {
     "ad_tech_id":"12345678",

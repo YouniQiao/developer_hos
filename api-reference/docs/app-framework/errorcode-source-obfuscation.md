@@ -2,15 +2,15 @@
 title: "源码混淆错误码"
 upstream_id: "harmonyos-references/errorcode-source-obfuscation"
 catalog: "harmonyos-references"
-content_hash: "7fdd1a4f16be"
-synced_at: "2026-07-09T00:57:27.273801"
+content_hash: "b1fcf72c3e48"
+synced_at: "2026-07-28T16:40:58.668615"
 ---
 
 # 源码混淆错误码
 
 从API version 18开始，提供源码混淆错误码。开发者在编译遇到此类错误时，可通过本文档查询错误码的含义、可能原因及建议的处理步骤。
 
-![](./img/note_3.0-zh-cn.png) 以下仅介绍本模块特有错误码，通用错误码请参考[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+![](./img/note_3.0-zh-cn.png) 以下仅介绍本模块特有错误码，通用错误码请参考[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。有关源码混淆工具的说明，请参考[ArkGuard源码混淆工具概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation-overview)。
 
 #### 10804001 混淆规则配置文件缺失
 
@@ -24,11 +24,11 @@ Failed to open obfuscation config file from {path}.
 
 可能原因
 
-本模块build-profile.json5文件中的arkOptions.obfuscation.ruleOptions字段中对应的混淆规则配置文件不存在或者路径有误。
+本模块build-profile.json5文件中的arkOptions.obfuscation.ruleOptions字段所指定的混淆规则配置文件不存在或者路径有误。
 
 处理步骤
 
-检查{path}是否存在，路径是否有误。具体可以参考[混淆配置规则文件示例](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation-guide#开启源码混淆步骤)。
+检查{path}是否存在，路径是否有误。具体可以参考[混淆规则配置文件示例](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation-guide#开启源码混淆步骤)。
 
 #### 10804002 nameCache.json文件内容格式错误
 

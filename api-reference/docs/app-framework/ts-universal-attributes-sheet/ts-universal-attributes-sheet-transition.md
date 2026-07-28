@@ -2,8 +2,8 @@
 title: "半模态转场"
 upstream_id: "harmonyos-references/ts-universal-attributes-sheet-transition"
 catalog: "harmonyos-references"
-content_hash: "b8a08068064e"
-synced_at: "2026-07-24T16:43:27.681262"
+content_hash: "2b4c23fa2210"
+synced_at: "2026-07-28T16:42:45.251198"
 ---
 
 # 半模态转场
@@ -20,7 +20,7 @@ synced_at: "2026-07-24T16:43:27.681262"
 
 bindSheet(isShow: boolean, builder: CustomBuilder, options?: SheetOptions): T
 
-给组件绑定半模态页面，点击后显示模态页面。
+给组件绑定半模态页面，点击后显示半模态页面。
 
 ![](./img/note_3.0-zh-cn.png) 该接口不支持在[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)中调用。
 
@@ -81,7 +81,7 @@ bindSheet(isShow: boolean, builder: CustomBuilder, options?: SheetOptions): T
 | borderStyle12+ | [BorderStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#borderstyle) | [EdgeStyles](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#edgestyles9) | 否 | 是 | 设置半模态页面的边框样式。 默认值：BorderStyle.Solid 如果使用borderStyle属性，需要和borderWidth属性一起使用。 **说明：** 底部弹窗时，底部边框样式设置无效。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | width12+ | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | 否 | 是 | 设置半模态页面的宽度。 百分比参数方式：以父元素宽的百分比来设置半模态页面的宽度。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | shadow12+ | [ShadowOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadowoptions对象说明) | [ShadowStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadowstyle10枚举说明) | 否 | 是 | 设置半模态页面的阴影。 2in1设备默认值：ShadowStyle.OUTER_FLOATING_SM。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| uiContext12+ | [UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext) | 否 | 是 | 在UIContext实例对应的窗口中显示半模态。 **说明：** 使用[openBindSheet](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#openbindsheet12)启动的半模态页面，不支持设置、更新该属性。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| uiContext12+ | [UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext) | 否 | 是 | 在UIContext实例对应的窗口中显示半模态。不传入时默认在当前UIContext对应的窗口中显示半模态。当需要在指定窗口中显示半模态时传入此参数。 **说明：** 使用[openBindSheet](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#openbindsheet12)启动的半模态页面，不支持设置、更新该属性。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | mode12+ | [SheetMode](#sheetmode12枚举说明) | 否 | 是 | 设置半模态页面的显示层级。 默认值：SheetMode.OVERLAY **说明：** 1. 半模态显示期间mode属性不支持动态切换，两种模式的显示层级完全不同，无法做到显示期间同一个半模态从一个层级变换到另一个层级。建议在使用时明确诉求固定mode值。 2. 设置SheetMode.EMBEDDED时不支持设置UIContext属性，两者对应的半模态显示层级效果互相冲突。 3. 使用[openBindSheet](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#openbindsheet12)启动半模态页面，若未传入有效的targetId，则不支持设置为SheetMode.EMBEDDED，默认为SheetMode.OVERLAY。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | scrollSizeMode12+ | [ScrollSizeMode](#scrollsizemode12枚举说明) | 否 | 是 | 设置半模态面板滑动时，内容区域刷新时机。 默认值：ScrollSizeMode.FOLLOW_DETENT **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | keyboardAvoidMode13+ | [SheetKeyboardAvoidMode](#sheetkeyboardavoidmode13枚举说明) | 否 | 是 | 设置半模态激活输入法时对软键盘的避让方式。 **默认值：** TRANSLATE_AND_SCROLL **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
@@ -95,8 +95,8 @@ bindSheet(isShow: boolean, builder: CustomBuilder, options?: SheetOptions): T
 | showInSubWindow19+ | boolean | 否 | 是 | 半模态是否在独立子窗中显示。 默认值：false **说明：** 1. 若属性值为true，半模态可以在独立子窗口中展示，并且可以超过应用窗口范围。 2. 若属性值为false，半模态只能在应用窗口范围内展示。 3. 不建议在showInSubWindow为true的弹窗嵌套显示另一个showInSubWindow为true的弹窗，半模态可能会影响其他组件行为。 4. 不建议在showInSubWindow为true的弹窗中使用CalendarPicker、CalendarPickerDialog、DatePickerDialog、TextPickerDialog、TimePickerDialog等picker组件，半模态会影响上述组件行为。 5. 半模态显示期间该属性不支持动态切换。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 |
 | enableFloatingDragBar20+ | boolean | 否 | 是 | 控制条是否悬浮显示，true为悬浮显示，false为不悬浮显示。 默认值：false **说明：** 悬浮效果只在控制条显示的场景生效，且控制条不占位。 title传入[CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8)时enableFloatingDragBar始终为false。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | modalTransition20+ | [ModalTransition](#modaltransition) | 否 | 是 | bindSheet全屏模态样式的系统转场方式。 默认值：ModalTransition.DEFAULT **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
-| radiusRenderStrategy23+ | [RenderStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#renderstrategy22) | 否 | 是 | 设置组件绘制圆角的模式。 默认值：RenderStrategy.FAST **说明**: 当半模态设置模糊时，可通过设置为OFFSCREEN离屏模式解决半模态顶部或顶部圆角区域内显示效果异常问题。popup样式不支持设置组件绘制圆角模式。 **元服务API：** 从API version 23开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| systemMaterial | [SystemUiMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemuimaterial) | 否 | 是 | 设置组件的系统材质。 默认值：undefined，会清除由该接口设置的材质效果。 **说明**: 不同系统材质对应不同的属性影响效果，该接口影响背景色[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、边框颜色[borderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#bordercolor)、边框宽度[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)、阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)，不建议与上述接口一起使用。使用示例请参考[示例10（半模态设置系统材质）](#示例10半模态设置系统材质)。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| radiusRenderStrategy23+ | [RenderStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#renderstrategy22) | 否 | 是 | 设置组件绘制圆角的模式。 默认值：RenderStrategy.FAST **说明**: 当半模态设置模糊时，可通过设置为OFFSCREEN离屏模式解决半模态顶部和底部圆角区域内显示效果异常问题。popup样式不支持设置组件绘制圆角模式。 **元服务API：** 从API version 23开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| systemMaterial | [SystemUiMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemuimaterial) | 否 | 是 | 设置组件的系统材质。 默认值：undefined，会清除由该接口设置的材质效果。 **说明：** 不同系统材质对应不同的属性影响效果，该接口影响背景色[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、边框颜色[borderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#bordercolor)、边框宽度[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)、阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)，不建议与上述接口一起使用。使用示例请参考[示例10（半模态设置系统材质）](#示例10半模态设置系统材质)。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### SheetSize枚举说明
 
@@ -116,7 +116,7 @@ bindSheet(isShow: boolean, builder: CustomBuilder, options?: SheetOptions): T
 
 元服务API： 从API version 14开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.ArkUI.ArkUI.Full
+系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
@@ -182,7 +182,7 @@ bindSheet(isShow: boolean, builder: CustomBuilder, options?: SheetOptions): T
 | --- | --- |
 | height | 高度只支持全屏高度。 |
 | detents | 无挡位能力。 |
-| dragBar | 不支持DragBar。 |
+| dragBar | 不支持控制条。 |
 | onDetentsDidChange | 无挡位能力。 |
 | uiContext | 不支持指定显示层级。 |
 | mode | 不支持指定显示层级。 |
@@ -213,9 +213,9 @@ bindSheet全屏模态样式不支持的接口
 | height | 高度只支持全屏高度。 |
 | width | 宽度只支持全屏宽度。 |
 | detents | 无挡位能力。 |
-| dragBar | 不支持拖动条。 |
+| dragBar | 不支持控制条。 |
 | onDetentsDidChange | 无挡位能力。 |
-| showClose | 不支持显示关闭按钮。 |
+| showClose | 不支持显示关闭图标。 |
 | title | 不支持显示标题栏。 |
 | uiContext | 不支持指定显示层级。 |
 | mode | 不支持指定显示层级。 |
@@ -233,7 +233,7 @@ bindSheet全屏模态样式不支持的接口
 | maskColor | 不支持蒙层颜色。 |
 | enableOutsideInteractive | 不支持设置是否允许交互。 |
 | effectEdge | 不支持边缘回弹效果。 |
-| enableFloatingDragBar | 不支持浮动拖动条。 |
+| enableFloatingDragBar | 不支持悬浮控制条。 |
 | onWillSpringBackWhenDismiss | 无回弹效果。 |
 
 #### SheetDismiss11+
@@ -259,7 +259,7 @@ bindSheet全屏模态样式不支持的接口
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | title | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 否 | 半模态面板的主标题。 |
-| subtitle | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 半模态面板的副标题。 |
+| subtitle | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 半模态面板的副标题。不传入时默认不显示副标题。当需要在标题下方补充说明文字时传入此参数。 |
 
 #### SheetMode12+枚举说明
 
@@ -401,7 +401,7 @@ struct SheetTransitionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002649779872.gif)
+ ![](./img/zh-cn_image_0000002656008352.gif)
 
 #### [h2]示例2（设置三个不同高度的挡位）
 
@@ -453,7 +453,7 @@ struct SheetTransitionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002649939780.gif)
+ ![](./img/zh-cn_image_0000002655848432.gif)
 
 #### [h2]示例3（使用边框宽度和颜色）
 
@@ -508,11 +508,11 @@ struct SheetTransitionExample {
 ```
  从左至右显示语言模式示例图
 
-![](./img/zh-cn_image_0000002679859613.png)
+![](./img/zh-cn_image_0000002686087861.png)
 
 从右至左显示语言模式示例图
 
-![](./img/zh-cn_image_0000002680019433.png)
+![](./img/zh-cn_image_0000002685928033.png)
 
 #### [h2]示例4（使用关闭回调函数）
 
@@ -555,7 +555,7 @@ struct bindSheetExample {
             }
           }),
 
-          onWillSpringBackWhenDismiss: ((SpringBackAction: SpringBackAction) => {
+          onWillSpringBackWhenDismiss: ((springBackAction: SpringBackAction) => {
           // 没有注册springBack，下拉半模态页面无回弹行为
           // SpringBackAction.springBack();
           }),
@@ -564,7 +564,7 @@ struct bindSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002649779874.gif)
+ ![](./img/zh-cn_image_0000002656008354.gif)
 
 #### [h2]示例5（设置内容区刷新时机）
 
@@ -614,13 +614,13 @@ struct Index {
   }
 }
 ```
- 跟手触发挡位切换时，松手才触发面板内容高度刷新
+ 跟手触发挡位切换时，松手才触发面板内容高度刷新。
 
-![](./img/zh-cn_image_0000002649939782.gif)
+![](./img/zh-cn_image_0000002655848434.gif)
 
-跟手触发挡位切换时，跟手时期就会触发面板内容高度刷新
+跟手触发挡位切换时，跟手时期就会触发面板内容高度刷新。
 
-![](./img/zh-cn_image_0000002679859615.gif)
+![](./img/zh-cn_image_0000002686087863.gif)
 
 #### [h2]示例6（设置压缩模态内容）
 
@@ -736,7 +736,7 @@ struct ListenKeyboardHeightChange {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002680019435.gif)
+ ![](./img/zh-cn_image_0000002685928035.gif)
 
 #### [h2]示例7（镜像场景下如何设置圆角属性）
 
@@ -788,11 +788,11 @@ struct SheetTransitionExample {
 ```
  从左至右显示语言模式示例图
 
-![](./img/zh-cn_image_0000002649779876.png)
+![](./img/zh-cn_image_0000002656008356.png)
 
 从右至左显示语言模式示例图
 
-![](./img/zh-cn_image_0000002649939784.png)
+![](./img/zh-cn_image_0000002655848436.png)
 
 #### [h2]示例8（半模态Side侧边样式）
 
@@ -828,7 +828,7 @@ struct SheetSideExample {
       TextInput()
         .margin({ top: 5 })
       Text('改变半模态交互模式')
-        .fontSize(22).fontColor(0xFFFFFF).fontWeight(FontWeight.Bold).textAlign(TextAlign.Center)
+        .fontSize(22).fontColor(Color.White).fontWeight(FontWeight.Bold).textAlign(TextAlign.Center)
         .width('100%').height(50).backgroundColor('#2ebd82')
       Button("change enableOutsideInteractive = " + this.enableOutsideInteractive)
         .margin({ top: 5 })
@@ -893,7 +893,7 @@ struct SheetSideExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002679859617.gif)
+ ![](./img/zh-cn_image_0000002686087865.gif)
 
 #### [h2]示例9（半模态ContentCover全屏样式）
 
@@ -925,7 +925,7 @@ struct ContentCoverExample {
     Column() {
       Button("Show Content Cover Sheet")
         .onClick(() => {
-          this.isShow = true
+          this.isShow = true;
         })
         .fontSize(20)
         .margin(10)
@@ -935,16 +935,16 @@ struct ContentCoverExample {
           backgroundColor: '#ffd5d5d5',
           maskColor: '#ff707070',
           onWillAppear: () => {
-            console.info("ContentCover onWillAppear.")
+            console.info("ContentCover onWillAppear.");
           },
           onAppear: () => {
-            console.info("ContentCover onAppear.")
+            console.info("ContentCover onAppear.");
           },
           onWillDisappear: () => {
-            console.info("ContentCover onWillDisappear.")
+            console.info("ContentCover onWillDisappear.");
           },
           onDisappear: () => {
-            console.info("ContentCover onDisappear.")
+            console.info("ContentCover onDisappear.");
           },
         })
     }
@@ -955,7 +955,7 @@ struct ContentCoverExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002680019437.gif)
+ ![](./img/zh-cn_image_0000002685928037.gif)
 
 #### [h2]示例10（半模态设置系统材质）
 
@@ -1017,4 +1017,4 @@ struct SheetMaterialExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002649778040.jpg)
+ ![](./img/zh-cn_image_0000002686085887.jpg)

@@ -2,13 +2,13 @@
 title: "Class (PdfData)"
 upstream_id: "harmonyos-references/arkts-apis-webview-pdfdata"
 catalog: "harmonyos-references"
-content_hash: "1c9abfa0bd24"
-synced_at: "2026-07-09T00:58:50.469570"
+content_hash: "5d88152ba714"
+synced_at: "2026-07-28T16:49:51.355092"
 ---
 
 # Class (PdfData)
 
-PdfData是Web组件用于封装网页生成PDF数据流的类。当应用需要将Web组件加载的网页内容以PDF格式保存时，通过[WebviewController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller)的[createPdf](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#createpdf14)方法将网页内容转换为PDF数据流，该方法在回调或Promise中以PdfData对象返回。应用再通过PdfData的pdfArrayBuffer方法获取Uint8Array格式的数据流，结合文件IO接口将数据写入本地PDF文件。
+PdfData是Web组件用于封装网页生成的PDF数据流的类。当应用需要将Web组件加载的网页内容以PDF格式保存时，通过[WebviewController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller)的[createPdf](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#createpdf14)方法将网页内容转换为PDF数据流，该方法在回调或Promise中以PdfData对象返回。应用再通过PdfData的pdfArrayBuffer方法获取Uint8Array格式的数据流，结合文件IO接口将数据写入本地PDF文件。
 
 PdfData适用于需要离线保存网页内容、生成网页PDF报告等场景。使用时需先加载Web组件并确保网页内容已渲染完成，再调用createPdf生成PDF数据流。
 
@@ -31,4 +31,4 @@ pdfArrayBuffer(): Uint8Array
 
 | 类型 | 说明 |
 | --- | --- |
-| Uint8Array | 数据流。 |
+| Uint8Array | 网页生成的PDF数据流，可结合文件IO接口将数据写入本地PDF文件。 |

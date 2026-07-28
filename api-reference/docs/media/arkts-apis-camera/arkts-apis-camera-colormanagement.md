@@ -2,8 +2,8 @@
 title: "Interface (ColorManagement)"
 upstream_id: "harmonyos-references/arkts-apis-camera-colormanagement"
 catalog: "harmonyos-references"
-content_hash: "ea377340fb58"
-synced_at: "2026-07-09T01:00:21.453184"
+content_hash: "08097f2d6742"
+synced_at: "2026-07-28T16:51:39.568667"
 ---
 
 # Interface (ColorManagement)
@@ -38,6 +38,8 @@ P3广色域与HDR高动态范围成像：
 应用针对不同模式使能HDR效果、设置的色彩空间以及设置相机输出流[Profile](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-i#profile)中的[CameraFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-e#cameraformat)一一对应关系可参考下表。例如，在录像模式下若需要选择HDR拍摄，相机预览输出流和录像输出流[Profile](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-i#profile)中的[CameraFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-e#cameraformat)可选择CAMERA_FORMAT_YCRCB_P010，色彩空间ColorSpace可选择设置BT2020_HLG_LIMIT。
 
 在拍照模式下，若需要获取HDR高显效果的图片，可通过设置色彩空间（ColorSpace）为DISPLAY_P3或BT2020_HLG实现。其中BT2020_HLG能够表示更广的色域，需要搭配使用预览输出格式（Profile.format）P010（CAMERA_FORMAT_YCRCB_P010/CAMERA_FORMAT_YCBCR_P010）来提升图像质感。
+
+在录像模式下，通过设置色彩空间为H_LOG, 可以录制LOG视频（不支持前置与微距）。
 
 从API version 23开始，可以通过接口[getSupportedFullOutputCapability](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-cameramanager#getsupportedfulloutputcapability23)查询是否支持拍照模式下的预览P010格式。
 

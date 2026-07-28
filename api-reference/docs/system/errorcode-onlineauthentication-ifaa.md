@@ -2,8 +2,8 @@
 title: "IFAA"
 upstream_id: "harmonyos-references/errorcode-onlineauthentication-ifaa"
 catalog: "harmonyos-references"
-content_hash: "b904d046d068"
-synced_at: "2026-07-09T00:59:17.404352"
+content_hash: "eaff29a1f6fa"
+synced_at: "2026-07-28T16:50:30.079836"
 ---
 
 # IFAA
@@ -26,9 +26,8 @@ System Interruption.
 
 处理步骤
 
-1 重启系统。
-
-2 重试操作。
+1. 重启系统。
+2. 重试操作。
 
 #### 1006100002 服务异常
 

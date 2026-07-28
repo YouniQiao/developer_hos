@@ -2,8 +2,8 @@
 title: "自定义弹窗 (CustomDialog)"
 upstream_id: "harmonyos-references/ts-methods-custom-dialog-box"
 catalog: "harmonyos-references"
-content_hash: "3dad78900b4c"
-synced_at: "2026-07-09T00:58:09.524560"
+content_hash: "69a25c4f03a1"
+synced_at: "2026-07-28T16:47:15.940790"
 ---
 
 # 自定义弹窗 (CustomDialog)
@@ -56,9 +56,9 @@ constructor(value: CustomDialogControllerOptions)
 
 open()
 
-显示自定义弹窗内容，允许多次使用，但如果弹框为SubWindow模式，则该弹框不允许再弹出SubWindow弹框。
+显示自定义弹窗内容，允许多次使用，但如果弹窗为SubWindow模式（showInSubWindow为true），则该弹窗不允许再弹出SubWindow模式的弹窗。
 
-![](./img/note_3.0-zh-cn.png) 不支持在输入法类型窗口中使用子窗（showInSubwindow为true）的CustomDialog，详情见输入法框架的约束与限制说明[createPanel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethodengine#createpanel10-1)。
+![](./img/note_3.0-zh-cn.png) 不支持在输入法类型窗口中使用子窗口（showInSubWindow为true）的CustomDialog，详情见输入法框架的约束与限制说明[createPanel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethodengine#createpanel10-1)。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -68,11 +68,11 @@ open()
 
 close()
 
+关闭显示的自定义弹窗，若已关闭，则不生效。
+
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
-
-关闭显示的自定义弹窗，若已关闭，则不生效。
 
 #### [h2]getState20+
 
@@ -116,25 +116,26 @@ type PromptActionCommonState = import('../api/@ohos.promptAction').promptAction.
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| builder | [CustomDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-custom-dialog) | 否 | 否 | 自定义弹窗内容构造器。 **说明：** 若builder构造器使用回调函数作为入参，请注意使用this绑定问题，如builder: custombuilder({ callback: ()=> {...}})。 若在builder中监听数据变化可以使用@Link或@Consume，而其他方式如@Prop、@ObjectLink不适用此场景。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| cancel | () => void | 否 | 是 | 返回、ESC键和点击遮障层弹窗退出时的回调。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| autoCancel | boolean | 否 | 是 | 是否允许点击遮障层退出，true表示关闭弹窗。false表示不关闭弹窗。 默认值：true **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| builder | [CustomDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-custom-dialog) | 否 | 否 | 自定义弹窗内容构造器。 **说明：** 若builder构造器使用回调函数作为入参，请注意使用this绑定问题，如builder: CustomBuilder({ callback: ()=> {...}})。 若在builder中监听数据变化可以使用@Link或@Consume，而其他方式如@Prop、@ObjectLink不适用此场景。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| cancel | () => void | 否 | 是 | 返回、ESC键和点击遮罩层弹窗退出时的回调。未设置时不执行任何操作。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| autoCancel | boolean | 否 | 是 | 是否允许点击遮罩层退出，true表示关闭弹窗。false表示不关闭弹窗。 默认值：true **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | alignment | [DialogAlignment](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-methods-alert-dialog-box#dialogalignment枚举说明) | 否 | 是 | 弹窗在竖直方向上的对齐方式。 默认值：DialogAlignment.Default **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | offset | [Offset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#offset) | 否 | 是 | 弹窗相对alignment所在位置的偏移量。 默认值：{ dx: 0, dy: 0 } **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| customStyle | boolean | 否 | 是 | 弹窗容器样式是否自定义。值为true表示弹窗容器样式不能自定义，值为false表示弹窗容器样式能自定义。 默认值：false 设置为false时： 1. 默认圆角为32vp。 2. 未设置弹窗宽度高度：弹窗容器的宽度根据栅格系统自适应。高度自适应自定义的内容节点。 3. 设置弹窗宽度高度：弹窗容器的宽度不超过默认样式下的最大宽度（自定义节点设置100%的宽度），弹窗容器的高度不超过默认样式下的最大高度（自定义节点设置100%的高度）。 4. 受安全区域的影响，弹窗显示区域将排除安全区域。例如在PC/2in1设备上避让屏幕边缘以及窗口标题栏。 设置为true时： 1. 圆角为0，弹窗背景色为透明色。 2. 不支持设置弹窗宽度、高度、边框宽度、边框样式、边框颜色以及阴影宽度。 3. 弹窗显示区域为屏幕。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| customStyle | boolean | 否 | 是 | 弹窗容器样式是否自定义。值为true表示弹窗容器样式能自定义，值为false表示弹窗容器样式不能自定义。 默认值：false 设置为false时： 1. 默认圆角为32vp。 2. 未设置弹窗宽度高度：弹窗容器的宽度根据栅格系统自适应。高度自适应自定义的内容节点。 3. 设置弹窗宽度高度：弹窗容器的宽度不超过默认样式下的最大宽度（自定义节点设置100%的宽度），弹窗容器的高度不超过默认样式下的最大高度（自定义节点设置100%的高度）。 4. 受安全区域的影响，弹窗显示区域将排除安全区域。例如在PC/2in1设备上避让屏幕边缘以及窗口标题栏。 设置为true时： 1. 圆角为0，弹窗背景色为透明色。 2. 不支持设置弹窗宽度、高度、边框宽度、边框样式、边框颜色以及阴影宽度。 3. 弹窗显示区域为屏幕。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | gridCount8+ | number | 否 | 是 | 弹窗宽度占[栅格宽度](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-grid-layout)的个数。 默认为按照窗口大小自适应，异常值按默认值处理，最大栅格数为系统最大栅格数。 取值范围：大于等于0的整数。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| maskColor10+ | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 自定义蒙层颜色。 默认值：0x33000000 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| maskRect10+ | [Rectangle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-methods-alert-dialog-box#rectangle8类型说明) | 否 | 是 | 弹窗遮蔽层区域，在遮蔽层区域内的事件不透传，在遮蔽层区域外的事件透传。 默认值：{ x: 0, y: 0, width: '100%', height: '100%' } **说明：** showInSubWindow为true时，maskRect不生效。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| openAnimation10+ | [AnimateParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-explicit-animation#animateparam对象说明) | 否 | 是 | 自定义设置弹窗弹出的动画效果相关参数。 **说明**： tempo默认值为1，当设置小于等于0的值时按默认值处理。 iterations默认值为1，默认播放一次，设置为其他数值时按默认值处理。 playMode控制动画播放模式，默认值为PlayMode.Normal，设置为其他数值时按照默认值处理。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| closeAnimation10+ | [AnimateParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-explicit-animation#animateparam对象说明) | 否 | 是 | 自定义设置弹窗关闭的动画效果相关参数。 **说明**： tempo默认值为1，当设置小于等于0的值时按默认值处理。 iterations默认值为1，默认播放一次，设置为其他数值时按默认值处理。 playMode控制动画播放模式，默认值为PlayMode.Normal，设置为其他数值时按照默认值处理。 页面转场切换时，建议使用默认关闭动效。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| showInSubWindow10+ | boolean | 否 | 是 | 某弹框需要显示在主窗口之外时，是否在子窗口显示此弹窗。值为true表示在子窗口显示弹窗。 默认值：false，弹窗显示在应用内，而非独立子窗口。 **说明**：showInSubWindow为true的弹窗无法触发显示另一个showInSubWindow为true的弹窗。不建议在showInSubWindow为true的弹窗中使用CalendarPicker、CalendarPickerDialog、DatePickerDialog、TextPickerDialog、TimePickerDialog、Toast组件，弹窗会影响上述组件行为。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| maskColor10+ | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 自定义遮罩层颜色。 默认值：0x33000000 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| maskRect10+ | [Rectangle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-methods-alert-dialog-box#rectangle8类型说明) | 否 | 是 | 弹窗遮罩层区域，在遮罩层区域内的事件不透传，在遮罩层区域外的事件透传。 默认值：{ x: 0, y: 0, width: '100%', height: '100%' } **说明：** showInSubWindow为true时，maskRect不生效。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| openAnimation10+ | [AnimateParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-explicit-animation#animateparam对象说明) | 否 | 是 | 自定义设置弹窗弹出的动画效果相关参数。未设置时使用系统默认弹出动画。 **说明**： tempo默认值为1，当设置小于等于0的值时按默认值处理。 iterations默认值为1，默认播放一次，设置为其他数值时按默认值处理。 playMode控制动画播放模式，默认值为PlayMode.Normal，设置为其他值时按照默认值处理。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| closeAnimation10+ | [AnimateParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-explicit-animation#animateparam对象说明) | 否 | 是 | 自定义设置弹窗关闭的动画效果相关参数。 **说明**： tempo默认值为1，当设置小于等于0的值时按默认值处理。 iterations默认值为1，默认播放一次，设置为其他数值时按默认值处理。 playMode控制动画播放模式，默认值为PlayMode.Normal，设置为其他值时按照默认值处理。 页面转场时，建议使用默认关闭动效。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| showInSubWindow10+ | boolean | 否 | 是 | 某弹窗需要显示在主窗口之外时，是否在子窗口显示此弹窗。值为true表示在子窗口显示弹窗。 默认值：false，弹窗显示在应用内，而非独立子窗口。 **说明**：showInSubWindow为true的弹窗无法触发显示另一个showInSubWindow为true的弹窗。不建议在showInSubWindow为true的弹窗中使用CalendarPicker、CalendarPickerDialog、DatePickerDialog、TextPickerDialog、TimePickerDialog、Toast组件，弹窗会影响上述组件行为。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| displayModeInSubWindow | [DialogDisplayMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#dialogdisplaymode) | 否 | 是 | 弹窗在子窗口中的显示模式。取值范围及显示效果请参考[DialogDisplayMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#dialogdisplaymode)枚举说明，例如SCREEN_BASED表示弹窗在屏幕居中显示，WINDOW_BASED表示弹窗在应用窗口居中显示。 默认值：DialogDisplayMode.SCREEN_BASED **说明**： 仅当showInSubWindow设置为true时生效。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
 | backgroundColor10+ | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 设置弹窗背板填充。 默认值：Color.Transparent **说明：** 如果同时设置了内容构造器的背景色，则backgroundColor会被内容构造器的背景色覆盖。 backgroundColor会与模糊属性backgroundBlurStyle叠加产生效果，如果不符合预期，可将backgroundBlurStyle设置为BlurStyle.NONE，即可取消模糊。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | cornerRadius10+ | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | [BorderRadiuses](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#borderradiuses9) | 否 | 是 | 设置背板的圆角半径。 可分别设置4个圆角的半径。 默认值：{ topLeft: '32vp', topRight: '32vp', bottomLeft: '32vp', bottomRight: '32vp' } **说明**：自定义弹窗默认的背板圆角半径为32vp，如果需要使用cornerRadius属性，请和[borderRadius](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderradius)属性一起使用。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| isModal11+ | boolean | 否 | 是 | 弹窗是否为模态窗口。值为true表示为模态窗口且有蒙层，不可与弹窗周围其他控件进行交互，即蒙层区域无法事件透传。值为false表示为非模态窗口且无蒙层，可以与弹窗周围其他控件进行交互。 默认值：true **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| onWillDismiss12+ | Callback | 否 | 是 | 交互式关闭回调函数。 **说明：** 1.当用户执行点击遮障层关闭、侧滑（左滑/右滑）、三键back、键盘ESC关闭交互操作时，如果注册该回调函数，则不会立刻关闭弹窗。在回调函数中可以通过reason得到阻拦关闭弹窗的操作类型，从而根据原因选择是否能关闭弹窗。当前组件返回的reason中，暂不支持CLOSE_BUTTON的枚举值。 2.在onWillDismiss回调中，不能再做onWillDismiss拦截。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| isModal11+ | boolean | 否 | 是 | 弹窗是否为模态窗口。值为true表示为模态窗口且有遮罩层，不可与弹窗周围其他控件进行交互，即遮罩层区域无法事件透传。值为false表示为非模态窗口且无遮罩层，可以与弹窗周围其他控件进行交互。 默认值：true **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| onWillDismiss12+ | Callback | 否 | 是 | 交互式关闭回调函数。 **说明：** 1.当用户执行点击遮罩层关闭、侧滑（左滑/右滑）、三键back、键盘ESC关闭交互操作时，如果注册该回调函数，则不会立刻关闭弹窗。在回调函数中可以通过reason得到阻拦关闭弹窗的操作类型，从而根据原因选择是否能关闭弹窗。当前组件返回的reason中，暂不支持CLOSE_BUTTON的枚举值。 2.在onWillDismiss回调中，不能再做onWillDismiss拦截。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | borderWidth12+ | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | [EdgeWidths](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#edgewidths9) | 否 | 是 | 设置弹窗背板的边框宽度。 可分别设置4个边框宽度。 默认值：0。 百分比参数方式：以父元素弹窗宽的百分比来设置弹窗的边框宽度。 当弹窗左边框和右边框大于弹窗宽度，弹窗上边框和下边框大于弹窗高度，显示可能不符合预期。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| borderColor12+ | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | [EdgeColors](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#edgecolors9) | 否 | 是 | 设置弹窗背板的边框颜色。 默认值：Color.Black 如果使用borderColor属性，需要和borderWidth属性一起使用。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| borderStyle12+ | [BorderStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#borderstyle) | [EdgeStyles](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#edgestyles9) | 否 | 是 | 设置弹窗背板的边框样式。 默认值：BorderStyle.Solid 如果使用borderStyle属性，需要和borderWidth属性一起使用。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| borderColor12+ | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | [EdgeColors](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#edgecolors9) | 否 | 是 | 设置弹窗背板的边框颜色。 默认值：Color.Black 如果使用borderColor属性，需要和borderWidth属性一起使用。当borderWidth为0时，borderColor不生效。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| borderStyle12+ | [BorderStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#borderstyle) | [EdgeStyles](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#edgestyles9) | 否 | 是 | 设置弹窗背板的边框样式。 默认值：BorderStyle.Solid 如果使用borderStyle属性，需要和borderWidth属性一起使用。当borderWidth为0时，borderStyle不生效。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | width12+ | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | 否 | 是 | 设置弹窗背板的宽度。 **说明：** - 弹窗宽度默认最大值：400vp。 - 百分比参数方式：弹窗参考宽度为所在窗口的宽度，在此基础上调小或调大。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | height12+ | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | 否 | 是 | 设置弹窗背板的高度。 **说明：** - 弹窗高度默认最大值：0.9 *（窗口高度 - 安全区域）。 - 百分比参数方式：弹窗参考高度为（窗口高度 - 安全区域），在此基础上调小或调大。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | shadow12+ | [ShadowOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadowoptions对象说明) | [ShadowStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadowstyle10枚举说明) | 否 | 是 | 设置弹窗背板的阴影。 当设备为2in1时，默认场景下获焦阴影值为ShadowStyle.OUTER_FLOATING_MD，失焦为ShadowStyle.OUTER_FLOATING_SM。其他设备默认无阴影。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
@@ -142,7 +143,7 @@ type PromptActionCommonState = import('../api/@ohos.promptAction').promptAction.
 | backgroundBlurStyleOptions19+ | [BackgroundBlurStyleOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundblurstyleoptions10对象说明) | 否 | 是 | 背景模糊效果。默认值请参考BackgroundBlurStyleOptions类型说明。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 |
 | backgroundEffect19+ | [BackgroundEffectOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundeffectoptions11) | 否 | 是 | 背景效果参数。默认值请参考BackgroundEffectOptions类型说明。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 |
 | keyboardAvoidMode12+ | [KeyboardAvoidMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-popup#keyboardavoidmode12枚举说明) | 否 | 是 | 用于设置弹窗是否在拉起软键盘时进行自动避让。 默认值：KeyboardAvoidMode.DEFAULT **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| enableHoverMode14+ | boolean | 否 | 是 | 是否响应悬停态，值为true时，响应悬停态。 默认值：false，默认不响应。 **说明：** PC/2in1设备弹窗默认显示在上半屏，在enableHoverMode设置为true时，可以通过设置hoverModeArea参数显示在下半屏。其他设备弹窗在enableHoverMode设置为true时默认显示在下半屏，可以通过设置hoverModeArea参数显示在上半屏。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
+| enableHoverMode14+ | boolean | 否 | 是 | 是否响应悬停态。值为true时响应悬停态，值为false时不响应悬停态。 默认值：false，默认不响应。 **说明：** PC/2in1设备弹窗默认显示在上半屏，在enableHoverMode设置为true时，可以通过设置hoverModeArea参数显示在下半屏。其他设备弹窗在enableHoverMode设置为true时默认显示在下半屏，可以通过设置hoverModeArea参数显示在上半屏。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
 | hoverModeArea14+ | [HoverModeAreaType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#hovermodeareatype14) | 否 | 是 | 悬停态下弹窗默认展示区域。 默认值：HoverModeAreaType.BOTTOM_SCREEN。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
 | onWillAppear19+ | Callback | 否 | 是 | 弹窗显示动效前的事件回调。 **说明：** 1.正常时序依次为：onWillAppear>>onDidAppear>>onWillDisappear>>onDidDisappear。 2.在onWillAppear内设置改变弹窗显示效果的回调事件，二次弹出生效。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 |
 | onDidAppear19+ | Callback | 否 | 是 | 弹窗弹出后的事件回调。 **说明：** 1.正常时序依次为：onWillAppear>>onDidAppear>>onWillDisappear>>onDidDisappear。 2.在onDidAppear内设置改变弹窗显示效果的回调事件，二次弹出生效。 3.快速点击弹出，关闭弹窗时，onWillDisappear在onDidAppear前生效。 4.弹窗入场动效未完成时彻底关闭弹窗，动效打断，onDidAppear不会触发。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 |
@@ -166,7 +167,7 @@ type PromptActionCommonState = import('../api/@ohos.promptAction').promptAction.
 
 #### DismissDialogAction12+
 
-Dialog关闭的信息。
+弹窗关闭的信息。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -178,8 +179,8 @@ Dialog关闭的信息。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| dismiss | Callback | 否 | 否 | Dialog关闭回调函数。开发者需要退出时调用，不需要退出时无需调用。 |
-| reason | [DismissReason](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-popup#dismissreason12枚举说明) | 否 | 否 | Dialog无法关闭原因。根据开发者需要选择不同操作下，Dialog是否需要关闭。 |
+| dismiss | Callback | 否 | 否 | 弹窗关闭回调函数。开发者需要退出时调用，不需要退出时无需调用。 |
+| reason | [DismissReason](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-popup#dismissreason12枚举说明) | 否 | 否 | 弹窗无法关闭原因。根据开发者需要选择不同操作下，弹窗是否需要关闭。 |
 
 #### 示例
 
@@ -329,11 +330,13 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732859.gif)
+ ![](./img/zh-cn_image_0000002685928525.gif)
 
 #### [h2]示例2（可在主窗外弹出的弹窗）
 
 在2in1设备上设置[showInSubWindow](#customdialogcontrolleroptions对象说明)为true时，可以弹出在主窗外显示的弹窗。
+
+从API版本26.0.0开始，[CustomDialogControllerOptions](#customdialogcontrolleroptions对象说明)新增displayModeInSubWindow属性。
 
 ```
 // xxx.ets
@@ -367,7 +370,7 @@ struct CustomDialogUser {
       cancel: ()=> { this.onCancel(); },
       confirm: ()=> { this.onAccept(); }
     }),
-    cancel: this.existApp,
+    cancel: this.exitApp,
     autoCancel: true,
     onWillDismiss:(dismissDialogAction: DismissDialogAction)=> {
       console.info(`reason= ${dismissDialogAction.reason}`);
@@ -383,6 +386,8 @@ struct CustomDialogUser {
     offset: { dx: 0, dy: -20 },
     gridCount: 4,
     showInSubWindow: true,
+    // 从API版本26.0.0开始，新增displayModeInSubWindow属性
+    displayModeInSubWindow: DialogDisplayMode.SCREEN_BASED,
     isModal: true,
     customStyle: false,
     cornerRadius: 10,
@@ -401,7 +406,7 @@ struct CustomDialogUser {
     console.info('Callback when the second button is clicked');
   }
 
-  existApp() {
+  exitApp() {
     console.info('Click the callback in the blank area');
   }
 
@@ -417,11 +422,11 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253738.jpg)
+ ![](./img/zh-cn_image_0000002656008848.jpg)
 
 #### [h2]示例3（设置弹窗的样式）
 
-该示例定义了CustomDialog的样式，包括宽度、高度、背景色、阴影等。
+该示例展示了CustomDialog的样式，包括宽度、高度、背景色、阴影等。
 
 ```
 // xxx.ets
@@ -455,11 +460,11 @@ struct CustomDialogUser {
       cancel: ()=> { this.onCancel(); },
       confirm: ()=> { this.onAccept(); }
     }),
-    cancel: this.existApp,
+    cancel: this.exitApp,
     autoCancel: true,
     onWillDismiss:(dismissDialogAction: DismissDialogAction)=> {
       console.info(`reason= ${dismissDialogAction.reason}`);
-      console.info('dialog onWillDismiss')
+      console.info('dialog onWillDismiss');
       if (dismissDialogAction.reason == DismissReason.PRESS_BACK) {
         dismissDialogAction.dismiss();
       }
@@ -492,7 +497,7 @@ struct CustomDialogUser {
     console.info('Callback when the second button is clicked');
   }
 
-  existApp() {
+  exitApp() {
     console.info('Click the callback in the blank area');
   }
 
@@ -508,7 +513,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612921.gif)
+ ![](./img/zh-cn_image_0000002655848928.gif)
 
 #### [h2]示例4（悬停态弹窗）
 
@@ -601,7 +606,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413630.gif)
+ ![](./img/zh-cn_image_0000002686088359.gif)
 
 #### [h2]示例5（获取弹窗的状态）
 
@@ -765,7 +770,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732861.gif)
+ ![](./img/zh-cn_image_0000002685928527.gif)
 
 #### [h2]示例7（自定义带loading的弹窗）
 
@@ -869,11 +874,11 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253740.gif)
+ ![](./img/zh-cn_image_0000002656008850.gif)
 
 #### [h2]示例8（不使用keyboardAvoidDistance调整弹窗与软键盘的间距）
 
-该示例通过监听键盘变化，调整布局[margin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#margin)的[bottom](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#margin)，实现与使用[keyboardAvoidDistance](#customdialogcontrolleroptions对象说明)调整弹窗与软键盘的间距一样的效果。
+该示例通过监听键盘变化，调整布局[margin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#margin)的bottom属性，实现与使用[keyboardAvoidDistance](#customdialogcontrolleroptions对象说明)调整弹窗与软键盘的间距一样的效果。
 
 从API version 15开始，在CustomDialogControllerOptions中新增了keyboardAvoidDistance属性。
 
@@ -969,6 +974,7 @@ struct CustomDialogUser {
       // 获取底部导航栏高度
       let navigationArea = this.windowClass?.getWindowAvoidArea(window.AvoidAreaType.TYPE_NAVIGATION_INDICATOR);
       this.navigationBarHeight = navigationArea.bottomRect.height;
+      // 监听窗口避让区域变化（如键盘显示/隐藏），动态调整弹窗与键盘的间距
       this.windowClass?.on('avoidAreaChange', (data) => {
         if (data.type == window.AvoidAreaType.TYPE_KEYBOARD) {
           this.isKeyboardShow = data.area.bottomRect.height > 0;
@@ -980,6 +986,7 @@ struct CustomDialogUser {
   // 在自定义组件即将析构销毁时将dialogController置空
   aboutToDisappear() {
     this.dialogController = null; // 将dialogController置空
+    // 注销窗口避让区域变化事件监听，避免内存泄漏
     this.windowClass?.off('avoidAreaChange')
   }
 
@@ -1007,7 +1014,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612923.gif)
+ ![](./img/zh-cn_image_0000002655848930.gif)
 
 #### [h2]示例9（弹窗生命周期）
 
@@ -1049,7 +1056,7 @@ struct Example3 {
       cancel: ()=> { this.onCancel(); },
       confirm: ()=> { this.onAccept(); }
     }),
-    cancel: this.existApp,
+    cancel: this.exitApp,
     autoCancel: true,
     alignment: DialogAlignment.Bottom,
     onWillDismiss:(dismissDialogAction: DismissDialogAction)=> {
@@ -1089,7 +1096,7 @@ struct Example3 {
     console.info('CustomDialog Callback when the second button is clicked');
   }
 
-  existApp() {
+  exitApp() {
     console.info('CustomDialog Click the callback in the blank area');
   }
   build() {
@@ -1103,7 +1110,7 @@ struct Example3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413632.gif)
+ ![](./img/zh-cn_image_0000002686088361.gif)
 
 #### [h2]示例10（不同customStyle下的弹窗示例）
 
@@ -1188,7 +1195,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732863.gif)
+ ![](./img/zh-cn_image_0000002685928529.gif)
 
 #### [h2]示例11（自定义背景模糊效果参数）
 
@@ -1249,7 +1256,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253742.png)
+ ![](./img/zh-cn_image_0000002656008852.png)
 
 #### [h2]示例12（自定义背景效果参数）
 
@@ -1311,7 +1318,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612925.png)
+ ![](./img/zh-cn_image_0000002655848932.png)
 
 #### [h2]示例13（自定义弹窗动态刷新宽度）
 
@@ -1361,7 +1368,7 @@ struct CustomDialogUser {
           .height(50)
         Slider({ min: 60, max: 100, step: 5 })
           .showTips(true, this.currentWidth + '%')
-          .onChange((value: number, mode: SliderChangeMode) => {
+          .onChange((value: number) => {
             this.currentWidth = value;
           }).width(200)
       }
@@ -1377,7 +1384,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413634.gif)
+ ![](./img/zh-cn_image_0000002686088363.gif)
 
 #### [h2]示例14（设置弹窗的系统材质）
 
@@ -1434,4 +1441,4 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732865.png)
+ ![](./img/zh-cn_image_0000002685928531.png)

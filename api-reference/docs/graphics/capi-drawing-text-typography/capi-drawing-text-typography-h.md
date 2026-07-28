@@ -2,8 +2,8 @@
 title: "drawing_text_typography.h"
 upstream_id: "harmonyos-references/capi-drawing-text-typography-h"
 catalog: "harmonyos-references"
-content_hash: "f0a580318e22"
-synced_at: "2026-07-09T01:00:59.642732"
+content_hash: "28d0842e095e"
+synced_at: "2026-07-28T16:52:15.322234"
 ---
 
 # drawing_text_typography.h
@@ -68,6 +68,7 @@ synced_at: "2026-07-09T01:00:59.642732"
 | [OH_Drawing_LineHeightStyle](#oh_drawing_lineheightstyle) | OH_Drawing_LineHeightStyle | 行高缩放基数样式枚举。默认样式为TEXT_LINE_HEIGHT_BY_FONT_SIZE。 |
 | [OH_Drawing_TextStyleAttributeId](#oh_drawing_textstyleattributeid) | OH_Drawing_TextStyleAttributeId | 文本样式属性枚举。 |
 | [OH_Drawing_TypographyStyleAttributeId](#oh_drawing_typographystyleattributeid) | OH_Drawing_TypographyStyleAttributeId | 排版样式属性枚举。 针对排版样式和文本样式中的共有属性，建议优先使用文本样式属性（可由[OH_Drawing_TextStyleAttributeId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-text-typography-h#oh_drawing_textstyleattributeid)获取）。 |
+| [OH_Drawing_TypographyAttributeId](#oh_drawing_typographyattributeid) | OH_Drawing_TypographyAttributeId | 排版属性枚举。 |
 
 #### [h2]函数
 
@@ -84,7 +85,7 @@ synced_at: "2026-07-09T01:00:59.642732"
 | [void OH_Drawing_DestroyTextStyle(OH_Drawing_TextStyle* style)](#oh_drawing_destroytextstyle) | 释放被OH_Drawing_TextStyle对象占据的内存。 |
 | [void OH_Drawing_SetTextStyleColor(OH_Drawing_TextStyle* style, uint32_t color)](#oh_drawing_settextstylecolor) | 设置文本颜色。 |
 | [void OH_Drawing_SetTextStyleFontSize(OH_Drawing_TextStyle* style, double fontSize)](#oh_drawing_settextstylefontsize) | 设置字号。 |
-| [void OH_Drawing_SetTextStyleFontWeight(OH_Drawing_TextStyle* style, int fontWeight)](#oh_drawing_settextstylefontweight) | 设置字重。目前只有系统默认字体支持字重的调节，其他字体设置字重值小于semi-bold时字体粗细无变化，当设置字重值大于等于semi-bold时可能会触发伪加粗效果。 |
+| [void OH_Drawing_SetTextStyleFontWeight(OH_Drawing_TextStyle* style, int fontWeight)](#oh_drawing_settextstylefontweight) | 设置字重。在HarmonyOS 6.1.1之前，仅系统字体中的可变字体支持字重调节；从HarmonyOS 6.1.1开始，系统字体与三方注册字体中的可变字体均支持字重调节。非可变字体设置字重值小于semi-bold时字体粗细无变化，设置字重值大于等于semi-bold时可能会触发伪加粗效果。 |
 | [void OH_Drawing_SetTextStyleBaseLine(OH_Drawing_TextStyle* style, int baseline)](#oh_drawing_settextstylebaseline) | 设置文本样式的字体基线位置。 |
 | [void OH_Drawing_SetTextStyleDecoration(OH_Drawing_TextStyle* style, int decoration)](#oh_drawing_settextstyledecoration) | 设置指定文本样式中的装饰线类型，只能设置一个装饰线类型，添加多个需要使用[OH_Drawing_AddTextStyleDecoration](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-text-typography-h#oh_drawing_addtextstyledecoration)。 |
 | [void OH_Drawing_AddTextStyleDecoration(OH_Drawing_TextStyle* style, int decoration)](#oh_drawing_addtextstyledecoration) | 新增指定装饰，可同时显示多种装饰线。 |
@@ -161,7 +162,7 @@ synced_at: "2026-07-09T01:00:59.642732"
 | [void OH_Drawing_DestroyFontDescriptor(OH_Drawing_FontDescriptor* descriptor)](#oh_drawing_destroyfontdescriptor) | 释放字体描述对象占用的内存。 |
 | [OH_Drawing_FontParser* OH_Drawing_CreateFontParser(void)](#oh_drawing_createfontparser) | 构造字体解析对象，用于解析系统字体。 |
 | [void OH_Drawing_DestroyFontParser(OH_Drawing_FontParser* parser)](#oh_drawing_destroyfontparser) | 释放字体解析对象占用的内存。 |
-| [char** OH_Drawing_FontParserGetSystemFontList(OH_Drawing_FontParser* fontParser, size_t* num)](#oh_drawing_fontparsergetsystemfontlist) | 获取系统字体名称列表，此接口仅在2in1、phone设备上可用。 |
+| [char** OH_Drawing_FontParserGetSystemFontList(OH_Drawing_FontParser* fontParser, size_t* num)](#oh_drawing_fontparsergetsystemfontlist) | 获取系统字体名称列表，此接口仅在2in1、Phone设备上可用。 |
 | [void OH_Drawing_DestroySystemFontList(char** fontList, size_t num)](#oh_drawing_destroysystemfontlist) | 释放系统字体名称列表占用的内存。 |
 | [OH_Drawing_FontDescriptor* OH_Drawing_FontParserGetFontByName(OH_Drawing_FontParser* fontParser, const char* name)](#oh_drawing_fontparsergetfontbyname) | 根据传入的系统字体名称获取系统字体的相关信息。 |
 | [OH_Drawing_LineMetrics* OH_Drawing_TypographyGetLineMetrics(OH_Drawing_Typography* typography)](#oh_drawing_typographygetlinemetrics) | 获取排版对象的行位置信息，该接口需要在[OH_Drawing_TypographyLayout](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-text-typography-h#oh_drawing_typographylayout)接口调用之后调用。不再需要[OH_Drawing_LineMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-linemetrics)时，请使用[OH_Drawing_DestroyLineMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-text-typography-h#oh_drawing_destroylinemetrics)接口释放该对象的指针。 |
@@ -169,14 +170,14 @@ synced_at: "2026-07-09T01:00:59.642732"
 | [void OH_Drawing_DestroyLineMetrics(OH_Drawing_LineMetrics* lineMetrics)](#oh_drawing_destroylinemetrics) | 释放行位置信息对象占用的内存。 |
 | [bool OH_Drawing_TypographyGetLineMetricsAt(OH_Drawing_Typography* typography,int lineNumber, OH_Drawing_LineMetrics* lineMetric)](#oh_drawing_typographygetlinemetricsat) | 获取排版对象的指定行位置信息，该接口需要在[OH_Drawing_TypographyLayout](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-text-typography-h#oh_drawing_typographylayout)接口调用之后调用。 |
 | [bool OH_Drawing_TypographyGetLineInfo(OH_Drawing_Typography* typography, int lineNumber, bool oneLine,bool includeWhitespace, OH_Drawing_LineMetrics* drawingLineMetrics)](#oh_drawing_typographygetlineinfo) | 获取排版对象中指定行的位置信息或指定行第一个字符的位置信息，该接口需要在[OH_Drawing_TypographyLayout](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-text-typography-h#oh_drawing_typographylayout)接口调用之后调用。 |
-| [void OH_Drawing_SetTypographyTextFontWeight(OH_Drawing_TypographyStyle* style, int weight)](#oh_drawing_settypographytextfontweight) | 设置排版样式默认字重。目前只有系统默认字体支持字重的调节，其他字体设置字重值小于semi-bold时字体粗细无变化，当设置字重值大于等于semi-bold时可能会触发伪加粗效果。 |
+| [void OH_Drawing_SetTypographyTextFontWeight(OH_Drawing_TypographyStyle* style, int weight)](#oh_drawing_settypographytextfontweight) | 设置排版样式默认字重。在HarmonyOS 6.1.1之前，仅系统字体中的可变字体支持字重调节；从HarmonyOS 6.1.1开始，系统字体与三方注册字体中的可变字体均支持字重调节。非可变字体设置字重值小于semi-bold时字体粗细无变化，设置字重值大于等于semi-bold时可能会触发伪加粗效果。 |
 | [void OH_Drawing_SetTypographyTextFontStyle(OH_Drawing_TypographyStyle* style, int fontStyle)](#oh_drawing_settypographytextfontstyle) | 设置排版样式默认的字体样式。 |
 | [void OH_Drawing_SetTypographyTextFontFamily(OH_Drawing_TypographyStyle* style, const char* fontFamily)](#oh_drawing_settypographytextfontfamily) | 设置字体家族的名称。 |
 | [void OH_Drawing_SetTypographyTextFontSize(OH_Drawing_TypographyStyle* style, double fontSize)](#oh_drawing_settypographytextfontsize) | 设置文本排版字号。 |
 | [void OH_Drawing_SetTypographyTextFontHeight(OH_Drawing_TypographyStyle* style, double fontHeight)](#oh_drawing_settypographytextfontheight) | 设置文本排版字体高度。 |
 | [void OH_Drawing_SetTypographyTextHalfLeading(OH_Drawing_TypographyStyle* style, bool halfLeading)](#oh_drawing_settypographytexthalfleading) | 设置文本排版是否为一半行间距。 |
 | [void OH_Drawing_SetTypographyTextUseLineStyle(OH_Drawing_TypographyStyle* style, bool useLineStyle)](#oh_drawing_settypographytextuselinestyle) | 设置文本排版是否启用行样式。 |
-| [void OH_Drawing_SetTypographyTextLineStyleFontWeight(OH_Drawing_TypographyStyle* style, int weight)](#oh_drawing_settypographytextlinestylefontweight) | 设置排版样式中支柱样式的文本样式字重。目前只有系统默认字体支持字重的调节，其他字体设置字重值小于semi-bold时字体粗细无变化，当设置字重值大于等于semi-bold时可能会触发伪加粗效果。 |
+| [void OH_Drawing_SetTypographyTextLineStyleFontWeight(OH_Drawing_TypographyStyle* style, int weight)](#oh_drawing_settypographytextlinestylefontweight) | 设置排版样式中支柱样式的文本样式字重。在HarmonyOS 6.1.1之前，仅系统字体中的可变字体支持字重调节；从HarmonyOS 6.1.1开始，系统字体与三方注册字体中的可变字体均支持字重调节。非可变字体设置字重值小于semi-bold时字体粗细无变化，设置字重值大于等于semi-bold时可能会触发伪加粗效果。 |
 | [void OH_Drawing_SetTypographyTextLineStyleFontStyle(OH_Drawing_TypographyStyle* style, int fontStyle)](#oh_drawing_settypographytextlinestylefontstyle) | 设置文本排版样式中支柱样式的字体样式。 |
 | [void OH_Drawing_SetTypographyTextLineStyleFontFamilies(OH_Drawing_TypographyStyle* style,int fontFamiliesNumber, const char* fontFamilies[])](#oh_drawing_settypographytextlinestylefontfamilies) | 设置文本排版行样式字体类型。 |
 | [void OH_Drawing_SetTypographyTextLineStyleFontSize(OH_Drawing_TypographyStyle* style, double lineStyleFontSize)](#oh_drawing_settypographytextlinestylefontsize) | 设置文本排版行样式字号。 |
@@ -293,6 +294,8 @@ synced_at: "2026-07-09T01:00:59.642732"
 | [OH_Drawing_ErrorCode OH_Drawing_GetTypographyStyleAttributeBool(OH_Drawing_TypographyStyle* style, OH_Drawing_TypographyStyleAttributeId id, bool* value)](#oh_drawing_gettypographystyleattributebool) | 获取bool类型排版样式的属性。 |
 | [OH_Drawing_ErrorCode OH_Drawing_SetTypographyStyleAttributeDoubleArray(OH_Drawing_TypographyStyle* style, OH_Drawing_TypographyStyleAttributeId id, double* arrayValue, size_t arrayLength)](#oh_drawing_settypographystyleattributedoublearray) | 设置浮点数数组类型排版样式的属性。 |
 | [OH_Drawing_ErrorCode OH_Drawing_GetTypographyStyleAttributeDoubleArray(const OH_Drawing_TypographyStyle* style, OH_Drawing_TypographyStyleAttributeId id, double** arrayValue, size_t* arrayLength)](#oh_drawing_gettypographystyleattributedoublearray) | 获取浮点数数组类型排版样式的属性。 |
+| [OH_Drawing_ErrorCode OH_Drawing_SetTypographyAttributeBool(OH_Drawing_Typography* typography, OH_Drawing_TypographyAttributeId id, bool value)](#oh_drawing_settypographyattributebool) | 设置bool类型的排版属性。 |
+| [OH_Drawing_ErrorCode OH_Drawing_GetTypographyAttributeBool(const OH_Drawing_Typography* typography, OH_Drawing_TypographyAttributeId id, bool* value)](#oh_drawing_gettypographyattributebool) | 获取bool类型排版的属性。 |
 | [void OH_Drawing_DestroyPositionAndAffinity(OH_Drawing_PositionAndAffinity* positionAndAffinity)](#oh_drawing_destroypositionandaffinity) | 释放[OH_Drawing_PositionAndAffinity](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-positionandaffinity)对象持有的内存。 |
 | [OH_Drawing_Range* OH_Drawing_TypographyGetCharacterRangeForGlyphRangeWithBuffer(OH_Drawing_Typography* typography, size_t glyphRangeStart, size_t glyphRangeEnd, OH_Drawing_Range** actualGlyphRange, OH_Drawing_TextEncoding textEncodingType)](#oh_drawing_typographygetcharacterrangeforglyphrangewithbuffer) | 获取指定字形范围对应的字符范围。 |
 | [OH_Drawing_PositionAndAffinity* OH_Drawing_TypographyGetCharacterPositionAtCoordinateWithBuffer(OH_Drawing_Typography* typography, double dx, double dy, OH_Drawing_TextEncoding textEncodingType)](#oh_drawing_typographygetcharacterpositionatcoordinatewithbuffer) | 获取与指定坐标最接近的字符位置信息。 |
@@ -434,7 +437,7 @@ enum OH_Drawing_PlaceholderVerticalAlignment
 | ALIGNMENT_TOP_OF_ROW_BOX | 行框顶部对齐。 |
 | ALIGNMENT_BOTTOM_OF_ROW_BOX | 行框底部对齐。 |
 | ALIGNMENT_CENTER_OF_ROW_BOX | 行框中心对齐。 |
-| ALIGNMENT_FOLLOW_PARAGRAPH20+ | 跟随文本垂直对齐方式。 |
+| ALIGNMENT_FOLLOW_PARAGRAPH | 跟随文本垂直对齐方式。 **起始版本：** 20 |
 
 #### [h2]OH_Drawing_TextVerticalAlignment
 
@@ -726,6 +729,23 @@ enum OH_Drawing_TypographyStyleAttributeId
 | TYPOGRAPHY_STYLE_ATTR_D_FIRST_LINE_HEAD_INDENT = 10 | 段落首行缩进。缩进值需大于等于0。 **起始版本：** 26.0.0 |
 | TYPOGRAPHY_STYLE_ATTR_DA_LINE_TAIL_INDENT = 11 | 行尾缩进数组。 缩进数组值需全部大于等于0，数组中每个元素代表一行缩进值，当实际文本行数超过缩进数组个数时，超过行的缩进为数组最后一个值。 **起始版本：** 26.0.0 |
 
+#### [h2]OH_Drawing_TypographyAttributeId
+
+```
+enum OH_Drawing_TypographyAttributeId
+```
+ 描述
+
+排版属性枚举。
+
+系统能力： SystemCapability.Graphic.Graphic2D.NativeDrawing
+
+起始版本： 26.0.0
+
+| 枚举项 | 描述 |
+| --- | --- |
+| TYPOGRAPHY_ATTR_B_FORCE_REUSE_RASTER_RESULT = 0 | 是否强制复用光栅化结果。设置后，在下次调用[OH_Drawing_TypographyPaint](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-text-typography-h#oh_drawing_typographypaint)绘制时生效。 true表示强制复用光栅化结果，false表示允许更新光栅化结果，默认值为false。 |
+
 #### 函数说明
 
 #### [h2]OH_Drawing_CreateTypographyStyle()
@@ -965,7 +985,7 @@ void OH_Drawing_SetTextStyleFontWeight(OH_Drawing_TextStyle* style, int fontWeig
 ```
  描述
 
-设置字重。目前只有系统默认字体支持字重的调节，其他字体设置字重值小于semi-bold时字体粗细无变化，当设置字重值大于等于semi-bold时可能会触发伪加粗效果。
+设置字重。在HarmonyOS 6.1.1之前，仅系统字体中的可变字体支持字重调节；从HarmonyOS 6.1.1开始，系统字体与三方注册字体中的可变字体均支持字重调节。非可变字体设置字重值小于semi-bold时字体粗细无变化，设置字重值大于等于semi-bold时可能会触发伪加粗效果。
 
 系统能力： SystemCapability.Graphic.Graphic2D.NativeDrawing
 
@@ -2699,7 +2719,7 @@ char** OH_Drawing_FontParserGetSystemFontList(OH_Drawing_FontParser* fontParser,
 ```
  描述
 
-获取系统字体名称列表，此接口仅在2in1、phone设备上可用。
+获取系统字体名称列表，此接口仅在2in1、Phone设备上可用。
 
 系统能力： SystemCapability.Graphic.Graphic2D.NativeDrawing
 
@@ -2896,7 +2916,7 @@ void OH_Drawing_SetTypographyTextFontWeight(OH_Drawing_TypographyStyle* style, i
 ```
  描述
 
-设置排版样式默认字重。目前只有系统默认字体支持字重的调节，其他字体设置字重值小于semi-bold时字体粗细无变化，当设置字重值大于等于semi-bold时可能会触发伪加粗效果。
+设置排版样式默认字重。在HarmonyOS 6.1.1之前，仅系统字体中的可变字体支持字重调节；从HarmonyOS 6.1.1开始，系统字体与三方注册字体中的可变字体均支持字重调节。非可变字体设置字重值小于semi-bold时字体粗细无变化，设置字重值大于等于semi-bold时可能会触发伪加粗效果。
 
 系统能力： SystemCapability.Graphic.Graphic2D.NativeDrawing
 
@@ -3036,7 +3056,7 @@ void OH_Drawing_SetTypographyTextLineStyleFontWeight(OH_Drawing_TypographyStyle*
 ```
  描述
 
-设置排版样式中支柱样式的文本样式字重。目前只有系统默认字体支持字重的调节，其他字体设置字重值小于semi-bold时字体粗细无变化，当设置字重值大于等于semi-bold时可能会触发伪加粗效果。
+设置排版样式中支柱样式的文本样式字重。在HarmonyOS 6.1.1之前，仅系统字体中的可变字体支持字重调节；从HarmonyOS 6.1.1开始，系统字体与三方注册字体中的可变字体均支持字重调节。非可变字体设置字重值小于semi-bold时字体粗细无变化，设置字重值大于等于semi-bold时可能会触发伪加粗效果。
 
 系统能力： SystemCapability.Graphic.Graphic2D.NativeDrawing
 
@@ -5745,6 +5765,60 @@ OH_Drawing_ErrorCode OH_Drawing_GetTypographyStyleAttributeDoubleArray(const OH_
 | 类型 | 说明 |
 | --- | --- |
 | [OH_Drawing_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-error-code-h#oh_drawing_errorcode) | 函数执行结果。 返回OH_DRAWING_SUCCESS，表示执行成功。 返回OH_DRAWING_ERROR_INCORRECT_PARAMETER，表示参数style或者arrayValue为空指针或arrayLength为0。 返回OH_DRAWING_ERROR_ATTRIBUTE_ID_MISMATCH，表示传入属性id与调用函数不匹配。 |
+
+#### [h2]OH_Drawing_SetTypographyAttributeBool()
+
+```
+OH_Drawing_ErrorCode OH_Drawing_SetTypographyAttributeBool(OH_Drawing_Typography* typography, OH_Drawing_TypographyAttributeId id, bool value)
+```
+ 描述
+
+设置bool类型的排版属性。
+
+系统能力： SystemCapability.Graphic.Graphic2D.NativeDrawing
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [OH_Drawing_Typography](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-typography)* typography | 指向排版对象[OH_Drawing_Typography](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-typography)的指针，由[OH_Drawing_CreateTypography](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-text-typography-h#oh_drawing_createtypography)获取。 |
+| [OH_Drawing_TypographyAttributeId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-text-typography-h#oh_drawing_typographyattributeid) id | 排版属性id，指定要设置的bool类型属性。 |
+| bool value | 要设置的bool值。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| [OH_Drawing_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-error-code-h#oh_drawing_errorcode) | 函数返回执行结果。 返回OH_DRAWING_SUCCESS，表示执行成功。 返回OH_DRAWING_ERROR_INCORRECT_PARAMETER，表示参数typography为空指针。 返回OH_DRAWING_ERROR_ATTRIBUTE_ID_MISMATCH，表示传入属性id与调用函数不匹配。 |
+
+#### [h2]OH_Drawing_GetTypographyAttributeBool()
+
+```
+OH_Drawing_ErrorCode OH_Drawing_GetTypographyAttributeBool(const OH_Drawing_Typography* typography, OH_Drawing_TypographyAttributeId id, bool* value)
+```
+ 描述
+
+获取bool类型排版的属性。
+
+系统能力： SystemCapability.Graphic.Graphic2D.NativeDrawing
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [const OH_Drawing_Typography](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-typography)* typography | 指向排版对象[OH_Drawing_Typography](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-typography)的指针，由[OH_Drawing_CreateTypography](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-text-typography-h#oh_drawing_createtypography)获取。 |
+| [OH_Drawing_TypographyAttributeId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-text-typography-h#oh_drawing_typographyattributeid) id | 排版样式属性id。 |
+| bool* value | 指向bool类型属性的指针。作为出参使用。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| [OH_Drawing_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-error-code-h#oh_drawing_errorcode) | 函数返回执行结果。 返回OH_DRAWING_SUCCESS，表示执行成功。 返回OH_DRAWING_ERROR_INCORRECT_PARAMETER，表示参数typography或value为空指针。 返回OH_DRAWING_ERROR_ATTRIBUTE_ID_MISMATCH，表示传入属性id与调用函数不匹配。 |
 
 #### [h2]OH_Drawing_DestroyPositionAndAffinity()
 
