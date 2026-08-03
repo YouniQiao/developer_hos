@@ -2,8 +2,8 @@
 title: "healthFields (运动健康数据字段)"
 upstream_id: "harmonyos-references/health-api-healthfields"
 catalog: "harmonyos-references"
-content_hash: "365f00ffd670"
-synced_at: "2026-07-09T01:01:20.336063"
+content_hash: "a06110da2a00"
+synced_at: "2026-08-03T17:12:26.709068"
 ---
 
 # healthFields (运动健康数据字段)
@@ -1722,7 +1722,7 @@ type SkiingDetail = MountainHikeDetail
 
 | **名称** | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
-| skinStatus | number | 否 | 否 | 皮肤状态。 取值参考如下： 0：未选中 1：好 2：出油 4：干燥 8：粉刺 16：冒痘 |
+| skinStatus | string | 否 | 否 | 皮肤状态。 取值参考如下： 0：未选中 1：好 2：出油 4：干燥 8：粉刺 16：冒痘 |
 
 #### SkinTemperature
 

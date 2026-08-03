@@ -2,8 +2,8 @@
 title: "cloudFunction (云函数模块)"
 upstream_id: "harmonyos-references/cloudfoundation-cloudfunction"
 catalog: "harmonyos-references"
-content_hash: "f36c08c29fd5"
-synced_at: "2026-07-09T01:01:16.512441"
+content_hash: "16faa80014d0"
+synced_at: "2026-08-03T17:12:24.276614"
 ---
 
 # cloudFunction (云函数模块)
@@ -74,7 +74,7 @@ cloudFunction.call({
     return;
   }
   hilog.info(0x0000, 'testTag', `Succeeded in calling the function, result: ${JSON.stringify(value.result)}`);
-})
+});
 ```
 
 #### call
@@ -136,7 +136,7 @@ cloudFunction.call({
   hilog.info(0x0000, 'testTag', `Succeeded in calling the function, result: ${JSON.stringify(value.result)}`);
 }).catch((err: BusinessError) => {
   hilog.error(0x0000, 'testTag', `Failed to call the function, code: ${err.code}, message: ${err.message}`);
-})
+});
 ```
 
 #### FunctionParams

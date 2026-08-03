@@ -2,8 +2,8 @@
 title: "Interfaces (其他)"
 upstream_id: "harmonyos-references/arkts-apis-window-i"
 catalog: "harmonyos-references"
-content_hash: "1e638b51b1b4"
-synced_at: "2026-07-28T16:41:44.442656"
+content_hash: "b85c8a7c1bbf"
+synced_at: "2026-08-03T17:09:38.245463"
 ---
 
 # Interfaces (其他)
@@ -137,7 +137,7 @@ synced_at: "2026-07-28T16:41:44.442656"
 
 ![](./img/note_3.0-zh-cn.png) 示意图展示了leftRect、topRect、rightRect、bottomRect的含义。
 
-![](./img/zh-cn_image_0000002656008236.png)
+![](./img/zh-cn_image_0000002689559447.png)
 
 #### UIEnvAvoidAreaVP23+
 
@@ -511,9 +511,11 @@ synced_at: "2026-07-28T16:41:44.442656"
 
 #### Callback15+
 
-#### [h2](data: T)15+
+Callback<T, V = void> {
 
-(data: T): V
+(data: T): V;
+
+}
 
 通用回调函数。
 

@@ -2,8 +2,8 @@
 title: "OH_AVRecorder_Location"
 upstream_id: "harmonyos-references/capi-avrecorder-oh-avrecorder-location"
 catalog: "harmonyos-references"
-content_hash: "6107bef32b4b"
-synced_at: "2026-07-28T16:52:00.192416"
+content_hash: "74e538c33f73"
+synced_at: "2026-08-03T17:12:02.674073"
 ---
 
 # OH_AVRecorder_Location
@@ -14,7 +14,7 @@ typedef struct OH_AVRecorder_Location {...} OH_AVRecorder_Location
 
 #### 概述
 
-提供媒体资源的地理位置信息。
+OH_AVRecorder_Location用于提供媒体资源的地理位置信息，支持在音视频录制过程中标注纬度和经度，适用于需要在录制结果中嵌入地理位置的场景，如在视频拍摄时标记拍摄地点、运动记录应用中标记轨迹位置、旅行日记应用中记录行程坐标等场景，便于后续按位置检索和分类管理媒体资源。
 
 起始版本： 18
 
@@ -28,5 +28,5 @@ typedef struct OH_AVRecorder_Location {...} OH_AVRecorder_Location
 
 | 名称 | 描述 |
 | --- | --- |
-| float latitude | 地理位置的纬度，取值范围[-90, 90]，单位：度。超出范围时返回错误。 |
-| float longitude | 地理位置的经度，取值范围[-180, 180]，单位：度。超出范围时返回错误。 |
+| float latitude | 纬度，取值范围[-90, 90]，单位：度（°）。需与longitude配合使用以提供完整的地理位置信息，超出范围时将导致错误。 |
+| float longitude | 经度，取值范围[-180, 180]，单位：度（°）。需与latitude配合使用以提供完整的地理位置信息，超出范围时将导致错误。 |

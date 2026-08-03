@@ -2,8 +2,8 @@
 title: "LiveViewCardExtensionAbility"
 upstream_id: "harmonyos-references/liveview-card-ability"
 catalog: "harmonyos-references"
-content_hash: "6f88fbbb2378"
-synced_at: "2026-07-28T16:52:40.955191"
+content_hash: "432981a22c30"
+synced_at: "2026-08-03T17:12:28.343866"
 ---
 
 # LiveViewCardExtensionAbility
@@ -36,6 +36,8 @@ import { LiveViewCardExtensionAbility } from '@kit.LiveViewKit';
 
 起始版本： 26.0.0
 
+#### [h2]属性
+
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | context | [LiveViewCardExtensionContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-card-context) | 否 | 否 | LiveViewCardExtensionAbility的上下文环境，继承自[ExtensionContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-extensioncontext)。 |
@@ -60,7 +62,7 @@ onRender(param: Record<string, string>): CardInfo
 | --- | --- | --- | --- |
 | param | Record | 是 | 开发者创建实况窗卡片自定义扩展区时传入的参数[CustomLayout.abilityParameters](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-liveviewmanager#customlayout) 默认会携带以下key值（由系统赋值，开发者手动修改也不会生效）： 'ohos.extra.param.key.colorMode'：实况卡片深浅色模式（dark：深色模式；light：浅色模式） 'ohos.extra.param.key.fontColor'：实况卡片字体颜色（"#ARGB"16进制格式，长度为9） 'ohos.extra.param.key.contentWidth'：实况窗卡片自定义扩展区的宽度（单位为vp；自定义扩展区左右边界距离实况窗卡片边界各为12vp）。 |
 
-#### [h2]CardInfo
+#### CardInfo
 
 onRender函数接口返回的卡片渲染信息对象。
 
@@ -77,7 +79,7 @@ onRender函数接口返回的卡片渲染信息对象。
 | pagePath | string | 否 | 否 | 待加载到系统中的扩展区域页面的路径，系统将渲染该页面。 |
 | storage | [LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage) | 否 | 是 | 页面级UI状态存储单元，用于传递pagePath内容的状态属性。 |
 
-示例：
+#### 示例
 
 ```
 import { LiveViewCardExtensionAbility } from '@kit.LiveViewKit';

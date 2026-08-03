@@ -2,8 +2,8 @@
 title: "HdsTabs"
 upstream_id: "harmonyos-references/ui-design-hdstabs"
 catalog: "harmonyos-references"
-content_hash: "09604511e635"
-synced_at: "2026-07-09T17:25:58.849029"
+content_hash: "919bb30a6c76"
+synced_at: "2026-08-03T17:10:48.137048"
 ---
 
 # HdsTabs
@@ -24,12 +24,12 @@ HdsTabs组件是根视图容器，一般作为Page页面的根容器使用。Hds
 6.0.1(21)及之前版本：
 
 ```
-import { HdsTabs, HdsTabsAttribute, HdsTabsController } from '@kit.UIDesignKit';
+import { HdsTabs, HdsTabsAttribute, HdsTabsController, bleedIconStyle, CustomTabBuilder } from '@kit.UIDesignKit';
 ```
  6.0.2(22)及之后版本：
 
 ```
-import { HdsTabs, HdsTabsController } from '@kit.UIDesignKit';
+import { HdsTabs, HdsTabsController, bleedIconStyle, CustomTabBuilder } from '@kit.UIDesignKit';
 ```
 
 #### 子组件
@@ -548,7 +548,7 @@ barFloatingStyle(barFloatingStyle?: Optional<HdsTabsFloatingStyle>)
 | barBottomMargin | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 页签栏与HdsTabs底部距离。 默认值：页签栏距离底部0vp。 |
 | gradientMask | [HdsTabsBackgroundStyle](#hdstabsbackgroundstyle) | 否 | 是 | 背板蒙层的样式设置，可用来设置背板蒙层的高度和颜色。 默认值：蒙层颜色浅色模式是#CCF1F3F5，深色模式是#99000000。蒙层高度等于页签栏默认高度加16vp。 **说明：** 蒙层高度不可设置为0。 |
 | miniBar | [HdsTabsMiniBar](#hdstabsminibar) | 否 | 是 | 迷你栏的属性配置。 默认值：undefined，表示没有迷你栏。 |
-| adaptToHandedness | boolean | 否 | 是 | 左右跟手开关。 true：跟手。 false：不跟手。 默认值：false。 |
+| adaptToHandedness | boolean | 否 | 是 | 左右跟手开关。 true：跟手。 false：不跟手。 默认值：false。 **说明：** 左右手跟手能力依赖底层硬件，部分历史设备硬件能力不支持。 |
 | lightColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 页签栏光效颜色。 默认值：深色模式#33E5E5E5，浅色模式#33fffffff。 |
 | barOpacity | number | 否 | 是 | 页签栏透明度，1表示不透明，0表示完全透明。 默认值：1。 |
 | thermoCtrl | boolean | 否 | 是 | 温控开关。 true：开启温控。 false：不开启温控。 默认值：false。 |
@@ -883,7 +883,7 @@ onContentWillChange(handler: OnTabsContentWillChangeCallback)
 
 onTabBarClick(event: Callback<number>)
 
-Tab页签点击后触发的事件。
+Tab页签点击后触发的事件回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -897,7 +897,7 @@ Tab页签点击后触发的事件。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| event | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 是 | 被点击的index索引，索引从0开始计算。 |
+| event | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 是 | 返回被点击的页签索引，索引从0开始计算。 |
 
 #### [h2]onSelected
 
@@ -1181,7 +1181,7 @@ struct Index {
 
 | 常显 | 常隐 | 跟手 |
 | --- | --- | --- |
-| ![](./img/zh-cn_image_0000002664330567.gif) | ![](./img/zh-cn_image_0000002633851456.gif) | ![](./img/zh-cn_image_0000002634011360.gif) |
+| ![](./img/zh-cn_image_0000002659441054.gif) | ![](./img/zh-cn_image_0000002659600982.gif) | ![](./img/zh-cn_image_0000002689560565.gif) |
 
 #### [h2]支持渐变模糊
 
@@ -1224,7 +1224,7 @@ struct Index {
 ```
  效果：
 
-![](./img/zh-cn_image_0000002664210511.png)
+![](./img/zh-cn_image_0000002689680389.png)
 
 #### [h2]支持出血效果
 
@@ -1272,7 +1272,7 @@ struct Index {
 ```
  效果：
 
-![](./img/zh-cn_image_0000002664330569.jpg)
+![](./img/zh-cn_image_0000002659441056.jpg)
 
 #### [h2]页签半屏居中对齐布局
 
@@ -1317,7 +1317,7 @@ struct Index {
 ```
  效果：
 
-![](./img/zh-cn_image_0000002633851458.jpg)
+![](./img/zh-cn_image_0000002659600984.jpg)
 
 #### [h2]页签栏悬浮样式
 
@@ -1402,4 +1402,4 @@ struct Index {
 ```
  效果：
 
-![](./img/zh-cn_image_0000002634011362.gif)
+![](./img/zh-cn_image_0000002689560567.gif)

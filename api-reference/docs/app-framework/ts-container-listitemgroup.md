@@ -2,8 +2,8 @@
 title: "ListItemGroup"
 upstream_id: "harmonyos-references/ts-container-listitemgroup"
 catalog: "harmonyos-references"
-content_hash: "b17358c89215"
-synced_at: "2026-07-28T16:43:24.321986"
+content_hash: "2b435ec27ffd"
+synced_at: "2026-08-03T17:09:45.396488"
 ---
 
 # ListItemGroup
@@ -300,7 +300,7 @@ struct ListItemGroupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928087.gif)
+ ![](./img/zh-cn_image_0000002659600036.gif)
 
 #### [h2]示例2（设置卡片样式）
 
@@ -361,7 +361,7 @@ interface ArrObject {
   itemStyles: number[];
 }
 ```
- ![](./img/zh-cn_image_0000002656008408.jpeg)
+ ![](./img/zh-cn_image_0000002689559619.jpeg)
 
 #### [h2]示例3（设置Header/Footer）
 
@@ -498,7 +498,7 @@ struct ListItemGroupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848488.gif)
+ ![](./img/zh-cn_image_0000002689679443.gif)
 
 #### [h2]示例4（设置多列布局）
 
@@ -661,4 +661,78 @@ struct ListItemGroupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087917.gif)
+ ![](./img/zh-cn_image_0000002659440110.gif)
+
+#### [h2]示例5（设置悬浮态）
+
+该示例通过将ListItemGroup的[headerStyle](#listitemgroupoptions对象说明)设置为[ListItemGroupHeaderFooterStyle.FLOATING](#listitemgroupheaderfooterstyle)，实现分组头部在滚动时悬浮显示的效果。
+
+```
+// xxx.ets
+export interface ContactGroup {
+  letter: string;
+  names: string[];
+}
+
+@Entry
+@Component
+struct Index {
+  private scroller: Scroller = new Scroller();
+  @State groups: ContactGroup[] = [];
+
+  aboutToAppear(): void {
+    this.groups = [
+      {
+        letter: 'A',
+        names: ['Alice', 'Anna', 'Aaron']
+      },
+      {
+        letter: 'B',
+        names: ['Bob', 'Bella', 'Brian']
+      },
+      {
+        letter: 'C',
+        names: ['Cindy', 'Charlie']
+      },
+      {
+        letter: 'D',
+        names: ['David', 'Diana', 'Doris']
+      }
+    ]
+  }
+
+  @Builder
+  private GroupHeader(letter: string) {
+    Row() {
+      Text(letter)
+        .fontSize("16.0fp")
+        .size({width: 40, height: 28})
+        .textAlign(TextAlign.Center)
+    }.margin({left: 14, right: 14})
+  }
+
+  build() {
+    List({ scroller: this.scroller , space: 8}) {
+      ForEach(this.groups, (group: ContactGroup) => {
+        ListItemGroup({ header: this.GroupHeader(group.letter), headerStyle: ListItemGroupHeaderFooterStyle.FLOATING }) {
+          ForEach(group.names, (name: string) => {
+            ListItem() {
+              Text(name)
+                .fontSize(16)
+                .fontColor('#182431')
+                .width('100%')
+                .height(72)
+                .padding({ left: 16 })
+            }
+          }, (name: string) => name)
+        }
+      }, (group: ContactGroup) => group.letter)
+    }
+    .height('100%')
+    .width('100%')
+    .scrollBar(BarState.Off)
+    .sticky(StickyStyle.Header)
+  }
+}
+```
+ ![](./img/zh-cn_image_0000002659600038.gif)

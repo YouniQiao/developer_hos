@@ -2,8 +2,8 @@
 title: "HdsSideMenu"
 upstream_id: "harmonyos-references/ui-design-hdssidemenu"
 catalog: "harmonyos-references"
-content_hash: "9e5bac44d1cd"
-synced_at: "2026-07-09T17:25:57.888788"
+content_hash: "e402afb1b08a"
+synced_at: "2026-08-03T17:10:48.061156"
 ---
 
 # HdsSideMenu
@@ -18,7 +18,7 @@ synced_at: "2026-07-09T17:25:57.888788"
 import { HdsSideMenu, HdsSideMenuMainItem, HdsSideMenuSubItem, HdsSideMenuBadgeParam} from '@kit.UIDesignKit';
 ```
 
-#### 接口
+#### HdsSideMenu
 
 HdsSideMenu({items?: HdsSideMenuMainItem[], selectedIndex: number, $selectedIndex?: OnSelectedIndexChange, maxItemTextLines?: number})
 
@@ -359,4 +359,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002634011358.png)
+ ![](./img/zh-cn_image_0000002689560563.png)

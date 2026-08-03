@@ -2,8 +2,8 @@
 title: "SecurityAudit"
 upstream_id: "harmonyos-references/devicesecurity-capi-securityaudit"
 catalog: "harmonyos-references"
-content_hash: "d758acac349f"
-synced_at: "2026-07-28T16:50:27.886378"
+content_hash: "4cb8e5027056"
+synced_at: "2026-08-03T17:10:57.562863"
 ---
 
 # SecurityAudit
@@ -61,7 +61,7 @@ synced_at: "2026-07-28T16:50:27.886378"
 | int32_t [HMS_SecurityAudit_AddFilter](#hms_securityaudit_addfilter) (const [SecurityAudit_Client](#securityaudit_client) *client, [SecurityAudit_Notify_Event](#securityaudit_notify_event) event, const [SecurityAudit_Filter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-capi-structs-securityaudit-filter) *filter) | 为通知事件添加过滤条件。 |
 | int32_t [HMS_SecurityAudit_RemoveFilter](#hms_securityaudit_removefilter) (const [SecurityAudit_Client](#securityaudit_client) *client, [SecurityAudit_Notify_Event](#securityaudit_notify_event) event, const [SecurityAudit_Filter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-capi-structs-securityaudit-filter) *filter) | 删除通知事件的过滤条件。 |
 | int32_t [HMS_SecurityAudit_NewAuthClient](#hms_securityaudit_newauthclient) ([SecurityAudit_AuthClient](#securityaudit_authclient) **client, [SecurityAudit_Handler](#securityaudit_handler) handler) | 创建一个新的阻断类事件客户端（超时默认放行）。 |
-| int32_t [HMS_SecurityAudit_NewAuthClientWithConfiguration](#hms_securityaudit_newauthclientwithconfiguration) ([SecurityAudit_AuthClient](#securityaudit_authclient) **outOwnedClient, [SecurityAudit_Handler](#securityaudit_handler) handler, [SecurityAudit_AuthClientConfiguration](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-capi-structs-securityaudit-authclientconfiguration) *configuration) | 创建一个新的阻断类事件客户端（可配置超时默认阻断策略）。 |
+| int32_t [HMS_SecurityAudit_NewAuthClientWithConfiguration](#hms_securityaudit_newauthclientwithconfiguration) ([SecurityAudit_AuthClient](#securityaudit_authclient) **outOwnedClient, [SecurityAudit_Handler](#securityaudit_handler) handler, const [SecurityAudit_AuthClientConfiguration](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-capi-structs-securityaudit-authclientconfiguration) *configuration) | 创建一个新的阻断类事件客户端（可配置超时默认阻断策略）。 |
 | int32_t [HMS_SecurityAudit_CreateAuthClientConfiguration](#hms_securityaudit_createauthclientconfiguration) ([SecurityAudit_AuthClientConfiguration](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-capi-structs-securityaudit-authclientconfiguration) **outOwnedConfiguration) | 创建阻断类事件客户端配置对象。 |
 | int32_t [HMS_SecurityAudit_DestroyAuthClientConfiguration](#hms_securityaudit_destroyauthclientconfiguration) ([SecurityAudit_AuthClientConfiguration](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-capi-structs-securityaudit-authclientconfiguration) *configuration) | 销毁阻断类事件客户端配置对象。 |
 | int32_t [HMS_SecurityAudit_AuthClientConfiguration_SetTimeoutAuthResult](#hms_securityaudit_authclientconfiguration_settimeoutauthresult) ([SecurityAudit_AuthClientConfiguration](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-capi-structs-securityaudit-authclientconfiguration) *configuration, [SecurityAudit_AuthResult](#securityaudit_authresult) authResult) | 设置超时默认授权结果。 |
@@ -806,7 +806,7 @@ int32_t HMS_SecurityAudit_AuthClientConfiguration_SetTimeoutAuthResult(SecurityA
 #### [h2]HMS_SecurityAudit_NewAuthClientWithConfiguration()
 
 ```
-int32_t HMS_SecurityAudit_NewAuthClientWithConfiguration(SecurityAudit_AuthClient** outOwnedClient, SecurityAudit_Handler handler, SecurityAudit_AuthClientConfiguration* configuration)
+int32_t HMS_SecurityAudit_NewAuthClientWithConfiguration(SecurityAudit_AuthClient** outOwnedClient, SecurityAudit_Handler handler, const SecurityAudit_AuthClientConfiguration* configuration)
 ```
  描述
 

@@ -2,8 +2,8 @@
 title: "crypto_sym_cipher.h"
 upstream_id: "harmonyos-references/capi-crypto-sym-cipher-h"
 catalog: "harmonyos-references"
-content_hash: "50c90fc3b25e"
-synced_at: "2026-07-28T16:50:22.964004"
+content_hash: "9ca4baedd20a"
+synced_at: "2026-08-03T17:10:53.792461"
 ---
 
 # crypto_sym_cipher.h
@@ -95,7 +95,7 @@ OH_Crypto_ErrCode OH_CryptoSymCipherParams_Create(OH_CryptoSymCipherParams **par
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | - - CRYPTO_SUCCESS：操作成功。 - - - CRYPTO_INVALID_PARAMS：params为NULL。 - - - CRYPTO_NOT_SUPPORTED：不支持的操作或算法。 - - - CRYPTO_MEMORY_ERROR：内存操作失败。 - - - CRYPTO_OPERTION_ERROR：加解密操作失败。 - - |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_INVALID_PARAMS：params为NULL。 CRYPTO_NOT_SUPPORTED：不支持的操作或算法。 CRYPTO_MEMORY_ERROR：内存操作失败。 CRYPTO_OPERTION_ERROR：加解密操作失败。 |
 
 参考：
 
@@ -124,7 +124,7 @@ OH_Crypto_ErrCode OH_CryptoSymCipherParams_SetParam(OH_CryptoSymCipherParams *pa
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | - - CRYPTO_SUCCESS：操作成功。 - - - CRYPTO_INVALID_PARAMS：params或value为NULL，或paramsType无法识别。 - - - CRYPTO_NOT_SUPPORTED：不支持的操作或算法。 - - - CRYPTO_MEMORY_ERROR：内存操作失败。 - - - CRYPTO_OPERTION_ERROR：加解密操作失败。 - - |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_INVALID_PARAMS：params或value为NULL，或paramsType无法识别。 CRYPTO_NOT_SUPPORTED：不支持的操作或算法。 CRYPTO_MEMORY_ERROR：内存操作失败。 CRYPTO_OPERTION_ERROR：加解密操作失败。 |
 
 #### [h2]OH_CryptoSymCipherParams_Destroy()
 
@@ -167,7 +167,7 @@ OH_Crypto_ErrCode OH_CryptoSymCipher_Create(const char *algoName, OH_CryptoSymCi
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | - - CRYPTO_SUCCESS：操作成功。 - - - CRYPTO_INVALID_PARAMS：ctx为NULL或algoName为NULL。 - - - CRYPTO_NOT_SUPPORTED：不支持的算法。 - - - CRYPTO_MEMORY_ERROR：内存分配失败。 - - - CRYPTO_PARAMETER_CHECK_FAILED：参数无效。 [since 20] - - - CRYPTO_OPERTION_ERROR：加解密操作失败。 - - |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_INVALID_PARAMS：ctx为NULL或algoName为NULL。 CRYPTO_NOT_SUPPORTED：不支持的算法。 CRYPTO_MEMORY_ERROR：内存分配失败。 CRYPTO_PARAMETER_CHECK_FAILED：参数无效。适用版本：20+ CRYPTO_OPERTION_ERROR：加解密操作失败。 |
 
 参考：
 
@@ -197,7 +197,7 @@ OH_Crypto_ErrCode OH_CryptoSymCipher_Init(OH_CryptoSymCipher *ctx, Crypto_Cipher
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | - - CRYPTO_SUCCESS：操作成功。 - - - CRYPTO_INVALID_PARAMS：ctx或key为NULL，或非ECB模式下IV缺失或长度错误。 - - - CRYPTO_NOT_SUPPORTED：不支持的操作。 - - - CRYPTO_MEMORY_ERROR：内存分配失败。 - - - CRYPTO_PARAMETER_CHECK_FAILED：参数无效。 [since 20] - - - CRYPTO_OPERTION_ERROR：加解密初始化失败。可能的原因：密钥长度与算法不匹配。 - - |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_INVALID_PARAMS：ctx或key为NULL，或非ECB模式下IV缺失或长度错误。 CRYPTO_NOT_SUPPORTED：不支持的操作。 CRYPTO_MEMORY_ERROR：内存分配失败。 CRYPTO_PARAMETER_CHECK_FAILED：参数无效。适用版本：20+ CRYPTO_OPERTION_ERROR：加解密初始化失败。可能的原因：密钥长度与算法不匹配。 |
 
 参考：
 
@@ -230,7 +230,7 @@ OH_Crypto_ErrCode OH_CryptoSymCipher_Update(OH_CryptoSymCipher *ctx, Crypto_Data
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | - - CRYPTO_SUCCESS：操作成功。 - - - CRYPTO_INVALID_PARAMS：ctx、in或out为NULL。 - - - CRYPTO_NOT_SUPPORTED：不支持的操作或算法。 - - - CRYPTO_MEMORY_ERROR：内存操作失败。 - - - CRYPTO_PARAMETER_CHECK_FAILED：参数无效。 [since 20] - - - CRYPTO_OPERTION_ERROR：加解密更新失败。 - - |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_INVALID_PARAMS：ctx、in或out为NULL。 CRYPTO_NOT_SUPPORTED：不支持的操作或算法。 CRYPTO_MEMORY_ERROR：内存操作失败。 CRYPTO_PARAMETER_CHECK_FAILED：参数无效。适用版本：20+ CRYPTO_OPERTION_ERROR：加解密更新失败。 |
 
 参考：
 
@@ -261,7 +261,7 @@ OH_Crypto_ErrCode OH_CryptoSymCipher_Final(OH_CryptoSymCipher *ctx, Crypto_DataB
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | - - CRYPTO_SUCCESS：操作成功。 - - - CRYPTO_INVALID_PARAMS：ctx或out为NULL。 - - - CRYPTO_NOT_SUPPORTED：不支持的操作或算法。 - - - CRYPTO_MEMORY_ERROR：内存操作失败。 - - - CRYPTO_PARAMETER_CHECK_FAILED：参数无效。 [since 20] - - - CRYPTO_OPERTION_ERROR：加解密完成失败。可能的原因：解密时IV或密钥错误；AEAD（GCM/CCM） 认证标签验证失败（TAG、AAD、密文或密钥错误）；分组密码（如AES-CBC/ECB）解密时密文长度不是分组大小的整数倍；分组密码使用NoPadding 加密时明文长度不是分组大小的整数倍。 - - |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_INVALID_PARAMS：ctx或out为NULL。 CRYPTO_NOT_SUPPORTED：不支持的操作或算法。 CRYPTO_MEMORY_ERROR：内存操作失败。 CRYPTO_PARAMETER_CHECK_FAILED：参数无效。适用版本：20+ CRYPTO_OPERTION_ERROR：加解密完成失败。可能的原因： 解密时IV或密钥错误；AEAD（GCM/CCM）认证标签验证失败（TAG、AAD、密文或密钥错误）； 分组密码（如AES-CBC/ECB）解密时密文长度不是分组大小的整数倍； 分组密码使用NoPadding加密时明文长度不是分组大小的整数倍。 |
 
 #### [h2]OH_CryptoSymCipher_GetAlgoName()
 

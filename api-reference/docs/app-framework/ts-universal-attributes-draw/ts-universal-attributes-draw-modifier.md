@@ -2,8 +2,8 @@
 title: "自定义绘制设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-draw-modifier"
 catalog: "harmonyos-references"
-content_hash: "13a1eef1ee1b"
-synced_at: "2026-07-28T16:42:54.443296"
+content_hash: "a0e23fababd6"
+synced_at: "2026-08-03T17:09:43.242808"
 ---
 
 # 自定义绘制设置
@@ -51,7 +51,7 @@ DrawModifier可设置遮罩层（drawOverlay23+）、前景（drawForeground20+�
 
 自定义层级示例图
 
-![](./img/zh-cn_image_0000002686087871.png)
+![](./img/zh-cn_image_0000002659440064.png)
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -228,7 +228,7 @@ invalidate(): void
 
 请参考[示例1（通过DrawModifier进行自定义绘制）](#示例1通过drawmodifier进行自定义绘制)。
 
-#### [h2]DrawContext
+#### DrawContext
 
 type DrawContext = import('../api/arkui/Graphics').DrawContext
 
@@ -438,7 +438,7 @@ struct DrawModifierExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928043.gif)
+ ![](./img/zh-cn_image_0000002659599992.gif)
 
 #### [h2]示例2（通过DrawModifier对容器的前景进行自定义绘制）
 
@@ -502,4 +502,4 @@ struct DrawModifierExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008364.png)
+ ![](./img/zh-cn_image_0000002689559575.png)

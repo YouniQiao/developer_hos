@@ -2,8 +2,8 @@
 title: "HdsActionBar"
 upstream_id: "harmonyos-references/ui-design-hdsactionbar"
 catalog: "harmonyos-references"
-content_hash: "67c02d0a3d19"
-synced_at: "2026-07-09T00:59:10.051903"
+content_hash: "ba2ccb3ea98d"
+synced_at: "2026-08-03T17:10:48.107585"
 ---
 
 # HdsActionBar
@@ -18,7 +18,7 @@ synced_at: "2026-07-09T00:59:10.051903"
 import { HdsActionBar } from '@kit.UIDesignKit';
 ```
 
-#### 接口
+#### HdsActionBar
 
 HdsActionBar({ primaryButton?: ActionBarButton, primaryButtonBuilder?: CustomBuilder, primaryButtonBuilderWidth?: LengthMetrics, startButtons?: Array<ActionBarButton>, endButtons?: Array<ActionBarButton>, actionBarStyle?: ActionBarStyle, isExpand?: boolean, $isExpand?: Callback<boolean>, blurStrategy?: BlurStrategy})
 
@@ -37,7 +37,7 @@ HdsActionBar核心操作组件。
 | 参数名 | 类型 | 必填 | 装饰器类型 | 说明 |
 | --- | --- | --- | --- | --- |
 | primaryButton | [ActionBarButton](#actionbarbutton) | 否 | @Param | 主按钮。 |
-| primaryButtonBuilder | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 否 | @BuilderParam | 自定义主按钮。 **说明**：primaryButtonBuilder优先级高于primaryButton。 |
+| primaryButtonBuilder | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 否 | @BuilderParam | 自定义主按钮。 primaryButtonBuilder优先级高于primaryButton。 **说明**：设置primaryButtonBuilder时必须同时设置primaryButtonBuilderWidth属性。 |
 | primaryButtonBuilderWidth | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | @Param | 主按钮是自定义组件时，需要设置主按钮宽度。 |
 | startButtons | Array | 否 | @Param | HdsActionBar布局起始位置按钮组。 |
 | endButtons | Array | 否 | @Param | HdsActionBar布局末尾位置按钮组。 |
@@ -272,4 +272,4 @@ struct TestActionBar {
 ```
  效果图：
 
-![](./img/zh-cn_image_0000002631254232.gif)
+![](./img/zh-cn_image_0000002689680387.gif)

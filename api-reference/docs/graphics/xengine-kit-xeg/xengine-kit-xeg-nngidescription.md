@@ -2,8 +2,8 @@
 title: "XEG_NNGIDescription"
 upstream_id: "harmonyos-references/xengine-kit-xeg-nngidescription"
 catalog: "harmonyos-references"
-content_hash: "9f5998b75114"
-synced_at: "2026-07-09T01:01:10.898970"
+content_hash: "3a8b68131cfc"
+synced_at: "2026-08-03T17:12:20.456524"
 ---
 
 # XEG_NNGIDescription
@@ -39,8 +39,8 @@ synced_at: "2026-07-09T01:01:10.898970"
 | VkImageView [trainingInputBaseColorMetallicImage](#traininginputbasecolormetallicimage) | 训练输入基础颜色图像，不能为空，格式必须是至少3通道数据，RGB通道分别存储红绿蓝分量，忽略alpha通道信息。其分辨率和[XEG_NNGICreateInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/xengine-kit-xeg-nngicreateinfo)中trainingSize的分辨率保持一致。 |
 | VkImageView [trainingInputGIImage](#traininginputgiimage) | 训练输入GI图像，不能为空，格式必须是至少3通道数据，RGB通道分别存储红绿蓝分量的辐射度值，忽略alpha通道信息。该训练图像的GI结果的质量越高，推理输出的GI结果的质量就越高。其分辨率和[XEG_NNGICreateInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/xengine-kit-xeg-nngicreateinfo)中trainingSize的分辨率保持一致。 |
 | VkAabbPositionsKHR [sceneAabb](#sceneaabb) | 渲染包围盒范围。 |
-| bool [isSceneUnbounded](#issceneunbounded) = false | 渲染场景是否无界，true表示场景无边界，false表示场景有边界，当前只支持false。 |
-| float [spatialScaleFactor](#spatialscalefactor) = 0 | 场景缩放因子，对于有界场景，无需设置，XEngine根据sceneAabb计算该值，对于无界场景，建议设置为平均深度。 |
+| bool [isSceneUnbounded](#issceneunbounded) | 渲染场景是否无界，true表示场景无边界，false表示场景有边界，当前只支持false。 |
+| float [spatialScaleFactor](#spatialscalefactor) | 场景缩放因子，对于有界场景，无需设置，XEngine根据sceneAabb计算该值，对于无界场景，建议设置为平均深度。 |
 
 #### 结构体成员变量说明
 
@@ -101,7 +101,7 @@ VkImageView XEG_NNGIDescription::inferenceOutputGIImage
 #### [h2]isSceneUnbounded
 
 ```
-bool XEG_NNGIDescription::isSceneUnbounded = false
+bool XEG_NNGIDescription::isSceneUnbounded
 ```
  描述
 
@@ -128,7 +128,7 @@ VkAabbPositionsKHR XEG_NNGIDescription::sceneAabb
 #### [h2]spatialScaleFactor
 
 ```
-float XEG_NNGIDescription::spatialScaleFactor = 0
+float XEG_NNGIDescription::spatialScaleFactor
 ```
  描述
 

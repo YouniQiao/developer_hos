@@ -2,8 +2,8 @@
 title: "Audio错误码"
 upstream_id: "harmonyos-references/errorcode-audio"
 catalog: "harmonyos-references"
-content_hash: "a56cf178f679"
-synced_at: "2026-07-28T16:51:32.134531"
+content_hash: "b5e6a0c255f3"
+synced_at: "2026-08-03T17:11:43.635963"
 ---
 
 # Audio错误码
@@ -291,3 +291,21 @@ AudioCapturer创建成功，但调用[start](https://developer.huawei.com/consum
 
 1. 先根据前述案例排除对象状态、应用权限、音频焦点和录音并发问题。
 2. 停止并释放当前AudioCapturer，重新创建后重试一次。避免无条件反复重试。
+
+#### [h2]AudioSessionManager调用activateAudioSession/deactivateAudioSession/clearSelectedMediaInputDevice处理失败-系统异常
+
+判断依据
+
+从API版本26.0.0开始，调用[activateAudioSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiosessionmanager#activateaudiosession12)、[deactivateAudioSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiosessionmanager#deactivateaudiosession12)、[clearSelectedMediaInputDevice](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiosessionmanager#clearselectedmediainputdevice21)会返回错误码6800301。调用对应接口时，应用捕获到的错误信息如下：
+
+- "System error. Activate audio session fail."
+- "System error. Deactivate audio session fail."
+- "System error. Clear selected input device fail."
+
+可能原因
+
+系统服务异常无响应。
+
+处理步骤
+
+尝试重试或[提单](https://gitcode.com/openharmony/docs/issues/create/choose)处理。

@@ -2,8 +2,8 @@
 title: "@ohos.nearlink.remoteDevice (对端设备的连接能力)"
 upstream_id: "harmonyos-references/js-apis-nearlink-remote-device"
 catalog: "harmonyos-references"
-content_hash: "752e6ff59e36"
-synced_at: "2026-07-28T16:50:38.911841"
+content_hash: "c5988ccac817"
+synced_at: "2026-08-03T17:11:06.301704"
 ---
 
 # @ohos.nearlink.remoteDevice (对端设备的连接能力)
@@ -128,6 +128,261 @@ let device: remoteDevice.RemoteDevice;
 try {
   device = remoteDevice.createRemoteDevice(addr);
   console.info('device: ' + JSON.stringify(device));
+} catch (err) {
+  console.error('errCode: ' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);
+}
+```
+
+#### remoteDevice.onPairingStateChange
+
+onPairingStateChange(callback: Callback<PairingStateParam>): void
+
+订阅配对请求事件。使用callback异步回调。
+
+应用需具备ohos.permission.ACCESS_NEARLINK权限，方可接收此事件上报。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Communication.NearLink.Base
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| callback | Callback | 是 | 回调函数，返回订阅的配对状态变化结果。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 801 | Capability not supported because the chip does not support it. |
+| 36100099 | Operation failed. |
+
+示例：
+
+```
+import { manager } from '@kit.ConnectivityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let onPairingStateEvent:(data: manager.PairingStateParam) => void = (data: manager.PairingStateParam) => {
+  console.info('onPairingStateChange addr: ' + data.address + 'state:' + data.state);
+};
+try {
+  manager.onPairingStateChange(onPairingStateEvent);
+} catch (err) {
+  console.error('errCode: ' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);
+}
+```
+
+#### remoteDevice.offPairingStateChange
+
+offPairingStateChange(callback?: Callback<PairingStateParam>): void
+
+取消订阅配对请求事件。使用callback异步回调。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Communication.NearLink.Base
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| callback | Callback | 否 | 回调函数，返回订阅的配对状态变化结果。 填写该参数则取消当前callback订阅。不填写该参数则取消该type对应的所有回调。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 801 | Capability not supported because the chip does not support it. |
+| 36100099 | Operation failed. |
+
+示例：
+
+```
+import { manager } from '@kit.ConnectivityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+try {
+  manager.offPairingStateChange();
+} catch (err) {
+  console.error('errCode: ' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);
+}
+```
+
+#### remoteDevice.onConnectionStateChange
+
+onConnectionStateChange(callback: Callback<ConnectionStateParam>): void
+
+订阅连接状态变化事件。使用callback异步回调。
+
+应用需具备ohos.permission.ACCESS_NEARLINK权限，方可接收此事件上报。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Communication.NearLink.Base
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| callback | Callback | 是 | 回调函数，返回订阅的连接状态变化事件上报结果。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 801 | Capability not supported because the chip does not support it. |
+| 36100099 | Operation failed. |
+
+示例：
+
+```
+import { manager } from '@kit.ConnectivityKit';
+import { BusinessError, Callback } from '@kit.BasicServicesKit';
+
+let callback: Callback<manager.ConnectionStateParam> = (data: manager.ConnectionStateParam) => {
+  console.info('data:' + JSON.stringify(data));
+};
+try {
+  manager.onConnectionStateChange(callback);
+} catch (err) {
+  console.error('errCode: ' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);
+}
+```
+
+#### remoteDevice.offConnectionStateChange
+
+offConnectionStateChange(callback?: Callback<ConnectionStateParam>): void
+
+取消订阅连接状态变化事件。使用callback异步回调。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Communication.NearLink.Base
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| callback | Callback | 否 | 回调函数，返回订阅的连接状态变化事件上报结果。 填写该参数则取消当前callback订阅。不填写该参数则取消该type对应的所有回调。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 801 | Capability not supported because the chip does not support it. |
+| 36100099 | Operation failed. |
+
+示例：
+
+```
+import { manager } from '@kit.ConnectivityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+try {
+  manager.offConnectionStateChange();
+} catch (err) {
+  console.error('errCode: ' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);
+}
+```
+
+#### remoteDevice.onAcbStateChange
+
+onAcbStateChange(callback: Callback<AcbStateParam>): void
+
+订阅逻辑链路连接状态变化事件。使用callback异步回调。
+
+应用需具备ohos.permission.ACCESS_NEARLINK权限，方可接收此事件上报。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Communication.NearLink.Base
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| callback | Callback | 是 | 回调函数，返回订阅的逻辑链路连接状态变化事件上报结果。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 801 | Capability not supported because the chip does not support it. |
+| 36100099 | Operation failed. |
+
+示例：
+
+```
+import { manager } from '@kit.ConnectivityKit';
+import { BusinessError, Callback } from '@kit.BasicServicesKit';
+
+let callback: Callback<manager.AcbStateParam> = (data: manager.AcbStateParam) => {
+  console.info('data:' + JSON.stringify(data));
+};
+try {
+  manager.onAcbStateChange(callback);
+} catch (err) {
+  console.error('errCode: ' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);
+}
+```
+
+#### remoteDevice.offAcbStateChange
+
+offAcbStateChange(callback?: Callback<AcbStateParam>): void
+
+取消订阅逻辑链路连接状态变化事件。使用callback异步回调。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Communication.NearLink.Base
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| callback | Callback | 否 | 回调函数，返回订阅的逻辑链路连接状态变化事件上报结果。 填写该参数则取消当前callback订阅。不填写该参数则取消该type对应的所有回调。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 801 | Capability not supported because the chip does not support it. |
+| 36100099 | Operation failed. |
+
+示例：
+
+```
+import { manager } from '@kit.ConnectivityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+try {
+  manager.offAcbStateChange();
 } catch (err) {
   console.error('errCode: ' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);
 }
@@ -494,176 +749,6 @@ try {
 | manufacturerData | string | 否 | 否 | 厂商信息。 |
 | modelData | string | 否 | 否 | 设备型号信息。 |
 
-#### [h2]remoteDevice.onPairingStateChange
-
-onPairingStateChange(callback: Callback<PairingStateParam>): void
-
-订阅配对请求事件。使用callback异步回调。
-
-应用需具备ohos.permission.ACCESS_NEARLINK权限，方可接收此事件上报。
-
-起始版本： 26.0.0
-
-模型约束： 此接口仅可在Stage模型下使用。
-
-系统能力： SystemCapability.Communication.NearLink.Base
-
-参数：
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback | 是 | 回调函数，返回订阅的配对状态变化结果。 |
-
-错误码：
-
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 801 | Capability not supported because the chip does not support it. |
-| 36100099 | Operation failed. |
-
-示例：
-
-```
-import { manager } from '@kit.ConnectivityKit';
-import { BusinessError } from '@kit.BasicServicesKit';
-
-let onPairingStateEvent:(data: manager.PairingStateParam) => void = (data: manager.PairingStateParam) => {
-  console.info('onPairStateChange addr: ' + data.address + 'state:' + data.state);
-};
-try {
-  manager.onPairingStateChange(onPairingStateEvent);
-} catch (err) {
-  console.error('errCode: ' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);
-}
-```
-
-#### [h2]remoteDevice.offPairingStateChange
-
-offPairingStateChange(callback?: Callback<PairingStateParam>): void
-
-取消订阅配对请求事件。使用callback异步回调。
-
-起始版本： 26.0.0
-
-模型约束： 此接口仅可在Stage模型下使用。
-
-系统能力： SystemCapability.Communication.NearLink.Base
-
-参数：
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback | 否 | 回调函数，返回订阅的配对状态变化结果。 填写该参数则取消当前callback订阅。不填写该参数则取消该type对应的所有回调。 |
-
-错误码：
-
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 801 | Capability not supported because the chip does not support it. |
-| 36100099 | Operation failed. |
-
-示例：
-
-```
-import { manager } from '@kit.ConnectivityKit';
-import { BusinessError } from '@kit.BasicServicesKit';
-
-try {
-  manager.offPairingStateChange();
-} catch (err) {
-  console.error('errCode: ' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);
-}
-```
-
-#### [h2]remoteDevice.onConnectionStateChange
-
-onConnectionStateChange(callback: Callback<ConnectionStateParam>): void
-
-订阅连接状态变化事件。使用callback异步回调。
-
-应用需具备ohos.permission.ACCESS_NEARLINK权限，方可接收此事件上报。
-
-起始版本： 26.0.0
-
-模型约束： 此接口仅可在Stage模型下使用。
-
-系统能力： SystemCapability.Communication.NearLink.Base
-
-参数：
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback | 是 | 回调函数，返回订阅的连接状态变化事件上报结果。 |
-
-错误码：
-
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 801 | Capability not supported because the chip does not support it. |
-| 36100099 | Operation failed. |
-
-示例：
-
-```
-import { manager } from '@kit.ConnectivityKit';
-import { BusinessError, Callback } from '@kit.BasicServicesKit';
-
-let callback: Callback<manager.ConnectionStateParam> = (data: manager.ConnectionStateParam) => {
-  console.info('data:' + JSON.stringify(data));
-};
-try {
-  manager.onConnectionStateChange(callback);
-} catch (err) {
-  console.error('errCode: ' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);
-}
-```
-
-#### [h2]remoteDevice.offConnectionStateChange
-
-offConnectionStateChange(callback?: Callback<ConnectionStateParam>): void
-
-取消订阅连接状态变化事件。使用callback异步回调。
-
-起始版本： 26.0.0
-
-模型约束： 此接口仅可在Stage模型下使用。
-
-系统能力： SystemCapability.Communication.NearLink.Base
-
-参数：
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback | 否 | 回调函数，返回订阅的连接状态变化事件上报结果。 填写该参数则取消当前callback订阅。不填写该参数则取消该type对应的所有回调。 |
-
-错误码：
-
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 801 | Capability not supported because the chip does not support it. |
-| 36100099 | Operation failed. |
-
-示例：
-
-```
-import { manager } from '@kit.ConnectivityKit';
-import { BusinessError } from '@kit.BasicServicesKit';
-
-try {
-  manager.offConnectionStateChange();
-} catch (err) {
-  console.error('errCode: ' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);
-}
-```
-
 #### [h2]ConnectionStateParam
 
 订阅的连接状态变化事件上报结果。
@@ -702,91 +787,6 @@ try {
 | CONNECTION_FAIL_SERVICE_DISCOVERY | 5 | 表示服务发现失败（可能服务发现超时）。 |
 | CONNECTION_FAIL_NO_AVAILABLE_SERVICE | 6 | 表示没有可连接/可用的profile。 |
 | CONNECTION_FAIL_CONNECTION_NUM_LIMITED | 7 | 表示连接数超出限制。 |
-
-#### [h2]remoteDevice.onAcbStateChange
-
-onAcbStateChange(callback: Callback<AcbStateParam>): void
-
-订阅逻辑链路连接状态变化事件。使用callback异步回调。
-
-应用需具备ohos.permission.ACCESS_NEARLINK权限，方可接收此事件上报。
-
-起始版本： 26.0.0
-
-模型约束： 此接口仅可在Stage模型下使用。
-
-系统能力： SystemCapability.Communication.NearLink.Base
-
-参数：
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback | 是 | 回调函数，返回订阅的逻辑链路连接状态变化事件上报结果。 |
-
-错误码：
-
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 801 | Capability not supported because the chip does not support it. |
-| 36100099 | Operation failed. |
-
-示例：
-
-```
-import { manager } from '@kit.ConnectivityKit';
-import { BusinessError, Callback } from '@kit.BasicServicesKit';
-
-let callback: Callback<manager.AcbStateParam> = (data: manager.AcbStateParam) => {
-  console.info('data:' + JSON.stringify(data));
-};
-try {
-  manager.onAcbStateChange(callback);
-} catch (err) {
-  console.error('errCode: ' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);
-}
-```
-
-#### [h2]remoteDevice.offAcbStateChange
-
-offAcbStateChange(callback?: Callback<AcbStateParam>): void
-
-取消订阅逻辑链路连接状态变化事件。使用callback异步回调。
-
-起始版本： 26.0.0
-
-模型约束： 此接口仅可在Stage模型下使用。
-
-系统能力： SystemCapability.Communication.NearLink.Base
-
-参数：
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback | 否 | 回调函数，返回订阅的逻辑链路连接状态变化事件上报结果。 填写该参数则取消当前callback订阅。不填写该参数则取消该type对应的所有回调。 |
-
-错误码：
-
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 801 | Capability not supported because the chip does not support it. |
-| 36100099 | Operation failed. |
-
-示例：
-
-```
-import { manager } from '@kit.ConnectivityKit';
-import { BusinessError } from '@kit.BasicServicesKit';
-
-try {
-  manager.offAcbStateChange();
-} catch (err) {
-  console.error('errCode: ' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);
-}
-```
 
 #### [h2]PairingStateParam
 

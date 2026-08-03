@@ -2,8 +2,8 @@
 title: "手势拦截增强"
 upstream_id: "harmonyos-references/ts-gesture-blocking-enhancement"
 catalog: "harmonyos-references"
-content_hash: "b6e217e008e9"
-synced_at: "2026-07-28T16:43:11.331712"
+content_hash: "bdc21485b91a"
+synced_at: "2026-08-03T17:09:44.437642"
 ---
 
 # 手势拦截增强
@@ -20,6 +20,8 @@ synced_at: "2026-07-28T16:43:11.331712"
 shouldBuiltInRecognizerParallelWith(callback: ShouldBuiltInRecognizerParallelWithCallback): T
 
 提供系统内置手势与响应链上其他组件的手势设置并行关系的回调事件。此接口对应的C API接口为[setInnerGestureParallelTo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativegestureapi-1#setinnergestureparallelto)。
+
+当前该接口不支持将系统组合组件中的内置手势（如[Tabs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabs)组件等）与其他手势设置并行关系。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -457,7 +459,7 @@ struct FatherControlChild {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848454.gif)
+ ![](./img/zh-cn_image_0000002689679409.gif)
 
 #### [h2]示例2（嵌套场景下拦截内部容器手势）
 
@@ -548,7 +550,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087883.gif)
+ ![](./img/zh-cn_image_0000002659440076.gif)
 
 #### [h2]示例3（拦截手势获取属性）
 
@@ -631,7 +633,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928055.gif)
+ ![](./img/zh-cn_image_0000002659600004.gif)
 
 #### [h2]示例4（手势触发成功时取消子组件上的Touch事件）
 
@@ -829,7 +831,7 @@ struct FatherControlChild {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008376.gif)
+ ![](./img/zh-cn_image_0000002689559587.gif)
 
 #### [h2]示例5（自定义手势识别器是否参与手势处理）
 
@@ -917,7 +919,7 @@ struct TouchTestDoneExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848456.gif)
+ ![](./img/zh-cn_image_0000002689679411.gif)
 
 #### [h2]示例6（自定义干预事件和手势的收集结果）
 
@@ -999,7 +1001,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087885.gif)
+ ![](./img/zh-cn_image_0000002659440078.gif)
 
 示例对应的组件树如下图所示。
 
@@ -1153,4 +1155,4 @@ struct FatherControlChild {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848454.gif)
+ ![](./img/zh-cn_image_0000002689679409.gif)

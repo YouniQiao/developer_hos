@@ -2,13 +2,13 @@
 title: "@ohos.systemDateTime (系统时间、时区)"
 upstream_id: "harmonyos-references/js-apis-date-time"
 catalog: "harmonyos-references"
-content_hash: "38aa2fdc6f4d"
-synced_at: "2026-07-09T17:26:38.797349"
+content_hash: "19229d1055e0"
+synced_at: "2026-08-03T17:11:22.554362"
 ---
 
 # @ohos.systemDateTime (系统时间、时区)
 
-本模块主要由系统时间和系统时区功能组成。开发者可以获取系统时间及系统时区。
+本模块主要由系统时间和系统时区功能组成。开发者可以获取系统时间（含Unix纪元时间和系统启动时间）、系统日期、系统时区及自动设置时间开关状态，支持同步和异步两种获取方式，适用于需要在应用中展示当前时间、进行时间计算或处理时区相关业务的场景。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 9开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -22,12 +22,12 @@ import { systemDateTime } from '@kit.BasicServicesKit';
 
 定义获取时间的枚举类型。
 
-系统能力: SystemCapability.MiscServices.Time
+系统能力： SystemCapability.MiscServices.Time
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| STARTUP | 0 | 自系统启动以来经过的毫秒数，包括深度睡眠时间。 |
-| ACTIVE | 1 | 自系统启动以来经过的毫秒数，不包括深度睡眠时间。 |
+| STARTUP | 0 | 自系统启动以来经过的时间，包括深度睡眠时间。 |
+| ACTIVE | 1 | 自系统启动以来经过的时间，不包括深度睡眠时间。 |
 
 #### systemDateTime.getCurrentTime(deprecated)
 
@@ -35,7 +35,7 @@ getCurrentTime(isNano: boolean, callback: AsyncCallback<number>): void
 
 获取自Unix纪元以来经过的时间，使用callback异步回调。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 12开始废弃，建议使用[systemDateTime.getTime10+](#systemdatetimegettime10)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 12开始废弃。建议使用[systemDateTime.getTime10+](#systemdatetimegettime10)替代。
 
 系统能力： SystemCapability.MiscServices.Time
 
@@ -62,14 +62,14 @@ import { BusinessError } from '@kit.BasicServicesKit';
 try {
   systemDateTime.getCurrentTime(true, (error: BusinessError, time: number) => {
     if (error) {
-      console.error(`Failed to get currentTime. message: ${error.message}, code: ${error.code}`);
+      console.error(`Failed to get currentTime. Code: ${error.code}, message: ${error.message}`);
       return;
     }
     console.info(`Succeeded in getting currentTime : ${time}`);
   });
-} catch(e) {
-  let error = e as BusinessError;
-  console.error(`Failed to get currentTime. message: ${error.message}, code: ${error.code}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get currentTime. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -79,7 +79,7 @@ getCurrentTime(callback: AsyncCallback<number>): void
 
 获取自Unix纪元以来经过的时间，使用callback异步回调。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 12开始废弃，建议使用[systemDateTime.getTime10+](#systemdatetimegettime10)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 12开始废弃。建议使用[systemDateTime.getTime10+](#systemdatetimegettime10)替代。
 
 系统能力： SystemCapability.MiscServices.Time
 
@@ -105,14 +105,14 @@ import { BusinessError } from '@kit.BasicServicesKit';
 try {
   systemDateTime.getCurrentTime((error: BusinessError, time: number) => {
     if (error) {
-      console.error(`Failed to get currentTime. message: ${error.message}, code: ${error.code}`);
+      console.error(`Failed to get currentTime. Code: ${error.code}, message: ${error.message}`);
       return;
     }
     console.info(`Succeeded in getting currentTime : ${time}`);
   });
-} catch(e) {
-  let error = e as BusinessError;
-  console.error(`Failed to get currentTime. message: ${error.message}, code: ${error.code}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get currentTime. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -122,7 +122,7 @@ getCurrentTime(isNano?: boolean): Promise<number>
 
 获取自Unix纪元以来经过的时间，使用Promise异步回调。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 12开始废弃，建议使用[systemDateTime.getTime10+](#systemdatetimegettime10)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 12开始废弃。建议使用[systemDateTime.getTime10+](#systemdatetimegettime10)替代。
 
 系统能力： SystemCapability.MiscServices.Time
 
@@ -130,7 +130,7 @@ getCurrentTime(isNano?: boolean): Promise<number>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| isNano | boolean | 否 | 返回结果是否为纳秒数,默认值为false。 - true：表示返回结果为纳秒数（ns）。 - false：表示返回结果为毫秒数（ms）。 |
+| isNano | boolean | 否 | 返回结果是否为纳秒数，默认值为false。 - true：表示返回结果为纳秒数（ns）。 - false：表示返回结果为毫秒数（ms）。 |
 
 返回值：
 
@@ -155,11 +155,11 @@ try {
   systemDateTime.getCurrentTime().then((time: number) => {
     console.info(`Succeeded in getting currentTime : ${time}`);
   }).catch((error: BusinessError) => {
-    console.error(`Failed to get currentTime. message: ${error.message}, code: ${error.code}`);
+    console.error(`Failed to get currentTime. Code: ${error.code}, message: ${error.message}`);
   });
-} catch(e) {
-  let error = e as BusinessError;
-  console.error(`Failed to get currentTime. message: ${error.message}, code: ${error.code}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get currentTime. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -169,7 +169,7 @@ getRealActiveTime(isNano: boolean, callback: AsyncCallback<number>): void
 
 获取自系统启动以来经过的时间，不包括深度睡眠时间，使用callback异步回调。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 12开始废弃，建议使用[systemDateTime.getUptime10+](#systemdatetimegetuptime10)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 12开始废弃。建议使用[systemDateTime.getUptime10+](#systemdatetimegetuptime10)替代。
 
 系统能力： SystemCapability.MiscServices.Time
 
@@ -196,14 +196,14 @@ import { BusinessError } from '@kit.BasicServicesKit';
 try {
   systemDateTime.getRealActiveTime(true, (error: BusinessError, time: number) => {
     if (error) {
-      console.error(`Failed to get real active time. message: ${error.message}, code: ${error.code}`);
+      console.error(`Failed to get real active time. Code: ${error.code}, message: ${error.message}`);
       return;
     }
     console.info(`Succeeded in getting real active time : ${time}`);
   });
-} catch(e) {
-  let error = e as BusinessError;
-  console.error(`Failed to get real active time. message: ${error.message}, code: ${error.code}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get real active time. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -213,7 +213,7 @@ getRealActiveTime(callback: AsyncCallback<number>): void
 
 获取自系统启动以来经过的时间，不包括深度睡眠时间，使用callback异步回调。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 12开始废弃，建议使用[systemDateTime.getUptime10+](#systemdatetimegetuptime10)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 12开始废弃。建议使用[systemDateTime.getUptime10+](#systemdatetimegetuptime10)替代。
 
 系统能力： SystemCapability.MiscServices.Time
 
@@ -239,14 +239,14 @@ import { BusinessError } from '@kit.BasicServicesKit';
 try {
   systemDateTime.getRealActiveTime((error: BusinessError, time: number) => {
     if (error) {
-      console.error(`Failed to get real active time. message: ${error.message}, code: ${error.code}`);
+      console.error(`Failed to get real active time. Code: ${error.code}, message: ${error.message}`);
       return;
     }
     console.info(`Succeeded in getting real active time : ${time}`);
   });
-} catch(e) {
-  let error = e as BusinessError;
-  console.error(`Failed to get real active time. message: ${error.message}, code: ${error.code}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get real active time. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -256,7 +256,7 @@ getRealActiveTime(isNano?: boolean): Promise<number>
 
 获取自系统启动以来经过的时间，不包括深度睡眠时间，使用Promise异步回调。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 12开始废弃，建议使用[systemDateTime.getUptime10+](#systemdatetimegetuptime10)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 12开始废弃。建议使用[systemDateTime.getUptime10+](#systemdatetimegetuptime10)替代。
 
 系统能力： SystemCapability.MiscServices.Time
 
@@ -264,7 +264,7 @@ getRealActiveTime(isNano?: boolean): Promise<number>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| isNano | boolean | 否 | 返回结果是否为纳秒数,默认值为false。 - true：表示返回结果为纳秒数（ns）。 - false：表示返回结果为毫秒数（ms）。 |
+| isNano | boolean | 否 | 返回结果是否为纳秒数，默认值为false。 - true：表示返回结果为纳秒数（ns）。 - false：表示返回结果为毫秒数（ms）。 |
 
 返回值：
 
@@ -289,11 +289,11 @@ try {
   systemDateTime.getRealActiveTime().then((time: number) => {
     console.info(`Succeeded in getting real active time : ${time}`);
   }).catch((error: BusinessError) => {
-    console.error(`Failed to get real active time. message: ${error.message}, code: ${error.code}`);
+    console.error(`Failed to get real active time. Code: ${error.code}, message: ${error.message}`);
   });
-} catch(e) {
-  let error = e as BusinessError;
-  console.error(`Failed to get real active time. message: ${error.message}, code: ${error.code}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get real active time. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -303,7 +303,7 @@ getRealTime(isNano: boolean, callback: AsyncCallback<number>): void
 
 获取自系统启动以来经过的时间，包括深度睡眠时间，使用callback异步回调。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 12开始废弃，建议使用[systemDateTime.getUptime10+](#systemdatetimegetuptime10)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 12开始废弃。建议使用[systemDateTime.getUptime10+](#systemdatetimegetuptime10)替代。
 
 系统能力： SystemCapability.MiscServices.Time
 
@@ -330,14 +330,14 @@ import { BusinessError } from '@kit.BasicServicesKit';
 try {
   systemDateTime.getRealTime(true, (error: BusinessError, time: number) => {
     if (error) {
-      console.error(`Failed to get real time. message: ${error.message}, code: ${error.code}`);
+      console.error(`Failed to get real time. Code: ${error.code}, message: ${error.message}`);
       return;
     }
     console.info(`Succeeded in getting real time : ${time}`);
   });
-} catch(e) {
-  let error = e as BusinessError;
-  console.error(`Failed to get real time. message: ${error.message}, code: ${error.code}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get real time. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -347,7 +347,7 @@ getRealTime(callback: AsyncCallback<number>): void
 
 获取自系统启动以来经过的时间，包括深度睡眠时间，使用callback异步回调。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 12开始废弃，建议使用[systemDateTime.getUptime10+](#systemdatetimegetuptime10)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 12开始废弃。建议使用[systemDateTime.getUptime10+](#systemdatetimegetuptime10)替代。
 
 系统能力： SystemCapability.MiscServices.Time
 
@@ -373,14 +373,14 @@ import { BusinessError } from '@kit.BasicServicesKit';
 try {
   systemDateTime.getRealTime((error: BusinessError, time: number) => {
     if (error) {
-      console.error(`Failed to get real time. message: ${error.message}, code: ${error.code}`);
+      console.error(`Failed to get real time. Code: ${error.code}, message: ${error.message}`);
       return;
     }
     console.info(`Succeeded in getting real time : ${time}`);
   });
-} catch(e) {
-  let error = e as BusinessError;
-  console.error(`Failed to get real time. message: ${error.message}, code: ${error.code}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get real time. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -390,7 +390,7 @@ getRealTime(isNano?: boolean): Promise<number>
 
 获取自系统启动以来经过的时间，包括深度睡眠时间，使用Promise异步回调。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 12开始废弃，建议使用[systemDateTime.getUptime10+](#systemdatetimegetuptime10)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 12开始废弃。建议使用[systemDateTime.getUptime10+](#systemdatetimegetuptime10)替代。
 
 系统能力： SystemCapability.MiscServices.Time
 
@@ -398,7 +398,7 @@ getRealTime(isNano?: boolean): Promise<number>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| isNano | boolean | 否 | 返回结果是否为纳秒数,默认值为false。 - true：表示返回结果为纳秒数（ns）。 - false：表示返回结果为毫秒数（ms）。 |
+| isNano | boolean | 否 | 返回结果是否为纳秒数，默认值为false。 - true：表示返回结果为纳秒数（ns）。 - false：表示返回结果为毫秒数（ms）。 |
 
 返回值：
 
@@ -423,11 +423,11 @@ try {
   systemDateTime.getRealTime().then((time: number) => {
     console.info(`Succeeded in getting real time : ${time}`);
   }).catch((error: BusinessError) => {
-    console.error(`Failed to get real time. message: ${error.message}, code: ${error.code}`);
+    console.error(`Failed to get real time. Code: ${error.code}, message: ${error.message}`);
   });
-} catch(e) {
-  let error = e as BusinessError;
-  console.error(`Failed to get real time. message: ${error.message}, code: ${error.code}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get real time. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -435,7 +435,7 @@ try {
 
 getTime(isNanoseconds?: boolean): number
 
-使用同步方式获取自Unix纪元以来到当前系统时间所经过的时间。
+获取自Unix纪元以来到当前系统时间所经过的时间，使用同步方式。
 
 系统能力： SystemCapability.MiscServices.Time
 
@@ -457,10 +457,10 @@ getTime(isNanoseconds?: boolean): number
 import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
-  let time: number = systemDateTime.getTime(true)
-} catch(e) {
-  let error = e as BusinessError;
-  console.error(`Failed to get time. message: ${error.message}, code: ${error.code}`);
+  let time: number = systemDateTime.getTime(true);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get time. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -468,7 +468,7 @@ try {
 
 getUptime(timeType: TimeType, isNanoseconds?: boolean): number
 
-使用同步方式获取自系统启动以来经过的时间。
+使用同步方式获取自系统启动以来经过的时间。可根据TimeType选择获取包含深度睡眠时间的总启动时长（STARTUP，适用于统计设备总运行时长等场景）或不包含深度睡眠时间的活跃运行时长（ACTIVE，适用于性能监控、活跃时长统计等场景）。
 
 系统能力： SystemCapability.MiscServices.Time
 
@@ -500,9 +500,9 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
   let time: number = systemDateTime.getUptime(systemDateTime.TimeType.ACTIVE, false);
-} catch(e) {
-  let error = e as BusinessError;
-  console.error(`Failed to get uptime. message: ${error.message}, code: ${error.code}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get uptime. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -512,7 +512,7 @@ getDate(callback: AsyncCallback<Date>): void
 
 获取当前系统日期，使用callback异步回调。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 10开始废弃，建议使用如何将时间格式的字符串string转换为Date对象中的new Date()方法替代，new Date()返回Date实例对象。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 10开始废弃。建议使用new Date()方法替代（详见“如何将时间格式的字符串string转换为Date对象“文档），new Date()返回Date实例对象。
 
 系统能力： SystemCapability.MiscServices.Time
 
@@ -538,14 +538,14 @@ import { BusinessError } from '@kit.BasicServicesKit';
 try {
   systemDateTime.getDate((error: BusinessError, date: Date) => {
     if (error) {
-      console.error(`Failed to get date. message: ${error.message}, code: ${error.code}`);
+      console.error(`Failed to get date. Code: ${error.code}, message: ${error.message}`);
       return;
     }
     console.info(`Succeeded in getting date : ${date}`);
   });
-} catch(e) {
-  let error = e as BusinessError;
-  console.error(`Failed to get date. message: ${error.message}, code: ${error.code}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get date. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -555,7 +555,7 @@ getDate(): Promise<Date>
 
 获取当前系统日期，使用Promise异步回调。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 10开始废弃，建议使用如何将时间格式的字符串string转换为Date对象中的new Date()方法替代，new Date()返回Date实例对象。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 10开始废弃。建议使用new Date()方法替代（详见“如何将时间格式的字符串string转换为Date对象“文档），new Date()返回Date实例对象。
 
 系统能力： SystemCapability.MiscServices.Time
 
@@ -582,11 +582,11 @@ try {
   systemDateTime.getDate().then((date: Date) => {
     console.info(`Succeeded in getting date : ${date}`);
   }).catch((error: BusinessError) => {
-    console.error(`Failed to get date. message: ${error.message}, code: ${error.code}`);
+    console.error(`Failed to get date. Code: ${error.code}, message: ${error.message}`);
   });
-} catch(e) {
-  let error = e as BusinessError;
-  console.error(`Failed to get date. message: ${error.message}, code: ${error.code}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get date. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -610,16 +610,16 @@ getTimezone(callback: AsyncCallback<string>): void
 import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
-  systemDateTime.getTimezone((error: BusinessError, data: string) => {
+  systemDateTime.getTimezone((error: BusinessError, timezone: string) => {
     if (error) {
-      console.error(`Failed to get timezone. message: ${error.message}, code: ${error.code}`);
+      console.error(`Failed to get timezone. Code: ${error.code}, message: ${error.message}`);
       return;
     }
-    console.info(`Succeeded in get timezone : ${data}`);
+    console.info(`Succeeded in getting timezone: ${timezone}`);
   });
-} catch(e) {
-  let error = e as BusinessError;
-  console.error(`Failed to get timezone. message: ${error.message}, code: ${error.code}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get timezone. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -643,14 +643,14 @@ getTimezone(): Promise<string>
 import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
-  systemDateTime.getTimezone().then((data: string) => {
-    console.info(`Succeeded in getting timezone: ${data}`);
+  systemDateTime.getTimezone().then((timezone: string) => {
+    console.info(`Succeeded in getting timezone: ${timezone}`);
   }).catch((error: BusinessError) => {
-    console.error(`Failed to get timezone. message: ${error.message}, code: ${error.code}`);
+    console.error(`Failed to get timezone. Code: ${error.code}, message: ${error.message}`);
   });
-} catch(e) {
-  let error = e as BusinessError;
-  console.error(`Failed to get timezone. message: ${error.message}, code: ${error.code}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get timezone. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -675,15 +675,15 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
   let timezone: string = systemDateTime.getTimezoneSync();
-} catch(e) {
-  let error = e as BusinessError;
-  console.error(`Failed to get timezone. message: ${error.message}, code: ${error.code}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get timezone. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
 #### 支持的系统时区
 
-支持的系统时区及各时区与0时区相比的偏移量(单位：h)可见下表。
+支持的系统时区及各时区与0时区相比的标准时间偏移量（单位：h）可见下表。
 
 | 时区 | 偏移量 |
 | --- | --- |
@@ -691,22 +691,22 @@ try {
 | America/Argentina/Buenos_Aires | -3 |
 | Australia/Sydney | 10 |
 | America/Noronha | -2 |
-| America/St_Johns | -3 |
+| America/St_Johns | -3.5 |
 | Africa/Kinshasa | 1 |
-| America/Santiago | -3 |
+| America/Santiago | -4 |
 | Asia/Shanghai | 8 |
 | Asia/Nicosia | 3 |
 | Europe/Berlin | 2 |
 | America/Guayaquil | -5 |
 | Europe/Madrid | 2 |
 | Pacific/Pohnpei | 11 |
-| America/Godthab | -2 |
+| America/Godthab | -1 |
 | Asia/Jakarta | 7 |
 | Pacific/Tarawa | 12 |
 | Asia/Almaty | 6 |
 | Pacific/Majuro | 12 |
 | Asia/Ulaanbaatar | 8 |
-| America/Mexico_City | -5 |
+| America/Mexico_City | -6 |
 | Asia/Kuala_Lumpur | 8 |
 | Pacific/Auckland | 12 |
 | Pacific/Tahiti | -10 |
@@ -748,8 +748,8 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
   let status: boolean = systemDateTime.getAutoTimeStatus();
-} catch(e) {
-  let error = e as BusinessError;
-  console.error(`Failed to get autotime status. message: ${error.message}, code: ${error.code}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`Failed to get autotime status. Code: ${error.code}, message: ${error.message}`);
 }
 ```

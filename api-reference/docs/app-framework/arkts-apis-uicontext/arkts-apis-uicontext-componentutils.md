@@ -2,8 +2,8 @@
 title: "Class (ComponentUtils)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-componentutils"
 catalog: "harmonyos-references"
-content_hash: "b5f627251af5"
-synced_at: "2026-07-28T16:41:02.074851"
+content_hash: "b7498401abaa"
+synced_at: "2026-08-03T17:09:34.979163"
 ---
 
 # Class (ComponentUtils)
@@ -23,7 +23,9 @@ getRectangleById(id: string): componentUtils.ComponentInfo
 
 获取组件大小、位置、平移、缩放、旋转及仿射矩阵属性信息。
 
-![](./img/note_3.0-zh-cn.png) 该接口需要在目标组件布局完成以后获取目标组件区域大小信息，建议在[布局回调](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-inspector)中使用该接口。如果组件动态创建但未挂载到组件树，则无法通过该接口获取经过测量与布局后的组件信息。因为此时组件一般未经过UI框架的测量与布局，请确保组件已挂载到组件树后再尝试获取组件信息。该接口返回的组件位置为布局位置，某些属性计算不支持，如[translate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#translate)、[offset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-location#offset)、[markAnchor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-location#markanchor)、[scale](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#scale)、[transform](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#transform)、[Edges](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#edges12)和[LocalizedEdges](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#localizededges12)类型的[position](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-location#position)等，可以使用替代接口[getPositionToWindowWithTransform](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#getpositiontowindowwithtransform12)。
+![](./img/note_3.0-zh-cn.png) 该接口需要在目标组件布局完成以后获取目标组件区域大小信息，建议在[布局回调](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-inspector)中使用该接口。如果组件动态创建但未挂载到组件树，则无法通过该接口获取经过测量与布局后的组件信息。因为此时组件一般未经过UI框架的测量与布局，请确保组件已挂载到组件树后再尝试获取组件信息。
+
+该接口返回的组件位置为布局位置，某些属性计算不支持，如位置设置类[offset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-location#offset)、[markAnchor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-location#markanchor)、[Edges](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#edges12)和[LocalizedEdges](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#localizededges12)类型的[position](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-location#position)，以及图形变换类[rotate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#rotate)、[translate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#translate)、[scale](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#scale)、[transform](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#transform)。可使用替代接口[getPositionToWindowWithTransform](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#getpositiontowindowwithtransform12)，获取组件相对于窗口且带有绘制属性的位置偏移。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 

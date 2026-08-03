@@ -2,8 +2,8 @@
 title: "页面间转场 (pageTransition)"
 upstream_id: "harmonyos-references/ts-page-transition-animation"
 catalog: "harmonyos-references"
-content_hash: "e550d26bb058"
-synced_at: "2026-07-28T16:47:06.405878"
+content_hash: "f472bda8c5a4"
+synced_at: "2026-08-03T17:09:57.857384"
 ---
 
 # 页面间转场 (pageTransition)
@@ -15,6 +15,10 @@ synced_at: "2026-07-28T16:47:06.405878"
 为了实现更好的转场效果，推荐使用[Navigation组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-architecture)和[模态转场](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-modal-transition)。
 
 #### PageTransitionEnter
+
+定义PageTransitionEnter组件。
+
+#### [h2]PageTransitionEnter
 
 PageTransitionEnter(value: PageTransitionOptions)
 
@@ -59,6 +63,10 @@ onEnter(event: PageTransitionCallback): PageTransitionEnterInterface
 ```
 
 #### PageTransitionExit
+
+定义PageTransitionExit组件。
+
+#### [h2]PageTransitionExit
 
 PageTransitionExit(value: PageTransitionOptions)
 
@@ -360,7 +368,7 @@ struct Page1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848908.gif)
+ ![](./img/zh-cn_image_0000002659440526.gif)
 
 自定义方式2：配置了当前页面的入场动画为从左侧滑入，退场为平移加透明度变化。
 
@@ -419,7 +427,7 @@ struct Page1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088339.gif)
+ ![](./img/zh-cn_image_0000002659600454.gif)
 
 #### [h2]示例2（设置退入场平移效果）
 
@@ -504,7 +512,7 @@ struct Page1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928507.gif)
+ ![](./img/zh-cn_image_0000002689560037.gif)
 
 自定义方式2：使用系统默认的退入场效果，将系统语言排版模式改为RTL。
 
@@ -563,4 +571,4 @@ struct Page1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008830.gif)
+ ![](./img/zh-cn_image_0000002689679861.gif)

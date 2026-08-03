@@ -2,8 +2,8 @@
 title: "时间滑动选择器弹窗 (TimePickerDialog)"
 upstream_id: "harmonyos-references/ts-methods-timepicker-dialog"
 catalog: "harmonyos-references"
-content_hash: "76472f28b68a"
-synced_at: "2026-07-28T16:47:28.188809"
+content_hash: "9474f82646bd"
+synced_at: "2026-08-03T17:09:59.636121"
 ---
 
 # 时间滑动选择器弹窗 (TimePickerDialog)
@@ -78,7 +78,7 @@ static show(options?: TimePickerDialogOptions)
 | enableHoverMode14+ | boolean | 否 | 是 | 是否响应悬停态。悬停态指折叠屏等设备处于悬停折叠状态时的交互模式，而非鼠标悬停。 - true：响应悬停态。 - false：不响应悬停态。 默认值：false **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | hoverModeArea14+ | [HoverModeAreaType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#hovermodeareatype14) | 否 | 是 | 悬停态下弹窗默认展示区域。仅在enableHoverMode为true时生效。 默认值：HoverModeAreaType.BOTTOM_SCREEN **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | onEnterSelectedArea18+ | Callback | 否 | 是 | 滑动过程中，当前滑动列滑动距离超过选中项高度的一半，选项进入分割线区域内，触发该回调。与onChange事件的差别在于，该事件在滑动过程中实时触发，适合需要实时监听滑动场景；onChange在选项归位至选中项位置后触发，适合需要确认最终选中值的场景。 **说明：** 当enableCascade设置为true时，由于上午/下午列与小时列存在联动关系，不建议使用该回调。该回调标识的是滑动过程中选项进入分割线区域内的节点，而联动变化的选项并不涉及滑动，因此，回调的返回值中，仅当前滑动列的值会正常变化，其余未滑动列的值保持不变。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| enableCascade18+ | boolean | 否 | 是 | 设置上午和下午的标识是否根据小时数自动切换，仅在useMilitaryTime设置为false时生效。 - true：自动切换。 - false：不自动切换。 默认值：false 当enableCascade设置为true时，需要loop参数同时为true才能生效。loop用于控制选择器是否循环滚动。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| enableCascade18+ | boolean | 否 | 是 | 设置上午和下午的标识是否根据小时数自动切换，仅在useMilitaryTime设置为false时生效。 - true：自动切换。 - false：不自动切换。 默认值：false **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | enableHapticFeedback18+ | boolean | 否 | 是 | 设置是否开启触控反馈。 - true：开启触控反馈。 - false：不开启触控反馈。 默认值：true **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 **说明：** 1. 设置为true后，其生效情况取决于系统的硬件是否支持。 2. 开启触控反馈时，需要在工程的src/main/module.json5文件的"module"内配置requestPermissions字段开启振动权限，配置如下： "requestPermissions": [{"name": "ohos.permission.VIBRATE"}] |
 | systemMaterial | [SystemUiMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemuimaterial) | 否 | 是 | 设置弹窗的系统材质。 **说明：** - 默认值：[ImmersiveOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#immersiveoptions)的style为ImmersiveStyle.ULTRA_THICK的[ImmersiveMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#immersivematerial)对象。设置undefined时与默认值保持一致。 - 不同的材质具有不同的效果，该接口影响背景色[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、背景模糊[backgroundBlurStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundblurstyle9)、背景效果[backgroundEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundeffect11)、边框颜色[borderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#bordercolor)、边框宽度[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)、阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)，当设置系统材质时，上述接口不生效。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
 
@@ -152,7 +152,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928541.gif)
+ ![](./img/zh-cn_image_0000002689560071.gif)
 
 #### [h2]示例2（自定义样式）
 
@@ -210,7 +210,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008864.png)
+ ![](./img/zh-cn_image_0000002689679895.png)
 
 #### [h2]示例3（悬停态弹窗）
 
@@ -265,7 +265,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848944.gif)
+ ![](./img/zh-cn_image_0000002659440562.gif)
 
 #### [h2]示例4（设置弹窗位置）
 
@@ -299,7 +299,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088375.png)
+ ![](./img/zh-cn_image_0000002659600490.png)
 
 #### [h2]示例5（设置遮蔽区）
 
@@ -332,7 +332,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928543.png)
+ ![](./img/zh-cn_image_0000002689560073.png)
 
 #### [h2]示例6（设置弹窗背板）
 
@@ -367,7 +367,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008866.png)
+ ![](./img/zh-cn_image_0000002689679897.png)
 
 #### [h2]示例7（设置时间滑动选择器弹窗的起始时间）
 
@@ -403,7 +403,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848946.png)
+ ![](./img/zh-cn_image_0000002659440564.png)
 
 #### [h2]示例8（设置时间滑动选择器弹窗的结束时间）
 
@@ -439,7 +439,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088377.png)
+ ![](./img/zh-cn_image_0000002659600492.png)
 
 #### [h2]示例9（设置上午下午跟随时间联动）
 
@@ -474,7 +474,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928545.gif)
+ ![](./img/zh-cn_image_0000002689560075.gif)
 
 #### [h2]示例10（自定义背景模糊效果参数）
 
@@ -508,7 +508,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008868.png)
+ ![](./img/zh-cn_image_0000002689679899.png)
 
 #### [h2]示例11（自定义背景效果参数）
 
@@ -543,4 +543,4 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848948.png)
+ ![](./img/zh-cn_image_0000002659440566.png)

@@ -2,8 +2,8 @@
 title: "Media错误码"
 upstream_id: "harmonyos-references/errorcode-media"
 catalog: "harmonyos-references"
-content_hash: "ffd93f30c562"
-synced_at: "2026-07-09T01:00:45.973898"
+content_hash: "eb1459bfde80"
+synced_at: "2026-08-03T17:12:04.518015"
 ---
 
 # Media错误码
@@ -37,11 +37,13 @@ Operation not allowed.
 
 错误描述
 
-当前操作不允许。
+1. 当前状态不支持此操作。
+2. 此应用录屏当前实例数量超过2个或此设备创建录屏实例数超过16个。
 
-可能原因
+处理步骤
 
-当前状态不支持此操作。
+1. 先确认当前状态是否支持此操作，再把实例切换到正确状态进行正确操作。
+2. 释放所有已经创建的实例。
 
 处理步骤
 

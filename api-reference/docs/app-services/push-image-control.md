@@ -2,8 +2,8 @@
 title: "图片风控"
 upstream_id: "harmonyos-references/push-image-control"
 catalog: "harmonyos-references"
-content_hash: "fb4026503c35"
-synced_at: "2026-07-09T01:01:38.187825"
+content_hash: "e90abf48ffb8"
+synced_at: "2026-08-03T17:12:39.209370"
 ---
 
 # 图片风控
@@ -97,7 +97,7 @@ Response Body
 | 200 | 成功。 | - |
 | 400 | 参数错误。 | 请检查业务响应码并根据业务响应码进一步排查问题。 |
 | 401 | 鉴权失败。 | 请检查HTTP请求头中Authorization参数里面的JWT。 |
-| 404 | 找不到服务。 | 请检查请求URI是否正确。 |
+| 404 | 找不到服务。 | 请检查请求URL是否正确。 |
 | 500 | 服务内部错误。 | 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
 | 502 | 请求连接异常，常见于网络状况不稳定。 | 建议稍后重试，或通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
 

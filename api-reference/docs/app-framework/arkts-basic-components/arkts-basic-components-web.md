@@ -2,8 +2,8 @@
 title: "组件描述"
 upstream_id: "harmonyos-references/arkts-basic-components-web"
 catalog: "harmonyos-references"
-content_hash: "a6f74b4a23d0"
-synced_at: "2026-07-09T17:25:37.843143"
+content_hash: "8348a2f80f03"
+synced_at: "2026-08-03T17:10:35.997057"
 ---
 
 # 组件描述
@@ -41,6 +41,7 @@ Web组件是ArkWeb Kit提供的具有网页显示能力的UI组件，用于在�
 - [WebResourceError](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-webresourceerror)：资源管理错误。
 - [WebResourceRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-webresourcerequest)：资源获取请求。
 - [WebResourceResponse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-webresourceresponse)：资源获取响应。
+- [VerifyPinHandler](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-verifypinhandler)：PIN码验证请求。
 
 #### 需要权限
 

@@ -2,8 +2,8 @@
 title: "手势公共接口"
 upstream_id: "harmonyos-references/ts-gesture-common"
 catalog: "harmonyos-references"
-content_hash: "6d667f84dc71"
-synced_at: "2026-07-28T16:43:11.891781"
+content_hash: "79eefeec7956"
+synced_at: "2026-08-03T17:09:44.480265"
 ---
 
 # 手势公共接口
@@ -292,7 +292,7 @@ setEnabled(isEnabled: boolean): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| isEnabled | boolean | 是 | 手势识别器的使能状态。true表示当前手势识别器能够回调应用事件，false表示当前手势识别器不回调应用事件。 |
+| isEnabled | boolean | 是 | 手势识别器的使能状态。true表示当前手势识别器能够回调应用事件，false表示当前手势识别器不回调应用事件。 当前仅支持[PanRecognizer](#panrecognizer12)设置生效。 |
 
 #### [h2]isEnabled12+
 

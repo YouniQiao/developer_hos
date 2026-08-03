@@ -2,8 +2,8 @@
 title: "@ohos.wifiManager (WLAN)"
 upstream_id: "harmonyos-references/js-apis-wifimanager"
 catalog: "harmonyos-references"
-content_hash: "70761a27b20c"
-synced_at: "2026-07-28T16:50:38.801340"
+content_hash: "f7902b41f677"
+synced_at: "2026-08-03T17:11:05.816229"
 ---
 
 # @ohos.wifiManager (WLAN)
@@ -1545,7 +1545,7 @@ getLinkedInfoSync(): WifiLinkedInfo;
 | ipAddress | number | 否 | 否 | WLAN连接的IP地址。 1. IP地址在WiFi连接信息和"设置 > 关于本机 > 状态信息"中可以查看。 2. ipAddress值为number类型，需要转换为IP常用格式，具体请参考[IP格式转换](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-connectivity-4)。 |
 | connState | [ConnState](#connstate) | 否 | 否 | WLAN连接状态。 |
 | channelWidth10+ | [WifiChannelWidth](#wifichannelwidth) | 否 | 否 | 当前连接热点的信道带宽。 |
-| wifiStandard10+ | [WifiStandard](#wifistandard10) | 否 | 否 | 当前路由器所支持的最高协议版本。 |
+| wifiStandard10+ | [WifiStandard](#wifistandard10) | 否 | 否 | 当前路由器支持的最高Wi-Fi标准。 |
 | supportedWifiCategory12+ | [WifiCategory](#wificategory12) | 否 | 否 | 当前手机连接Wi-Fi后支持的最高协议版本。 |
 | isHiLinkNetwork12+ | boolean | 否 | 否 | 热点是否支持hilink，true表示支持， false表示不支持。 |
 | wifiLinkType18+ | [WifiLinkType](#wifilinktype18) | 否 | 是 | Wi-Fi7连接类型。 |

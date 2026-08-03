@@ -2,8 +2,8 @@
 title: "OH_AVRecorder_MetadataTemplate"
 upstream_id: "harmonyos-references/capi-avrecorder-oh-avrecorder-metadatatemplate"
 catalog: "harmonyos-references"
-content_hash: "4e1137f7c2a3"
-synced_at: "2026-07-09T01:00:42.812126"
+content_hash: "9f426a4a92aa"
+synced_at: "2026-08-03T17:12:02.740523"
 ---
 
 # OH_AVRecorder_MetadataTemplate
@@ -14,7 +14,7 @@ typedef struct OH_AVRecorder_MetadataTemplate {...} OH_AVRecorder_MetadataTempla
 
 #### 概述
 
-定义元数据的基本模板。
+定义音视频录制过程中元数据的基本模板，通过键值对（key-value）形式组织元数据信息，适用于需要在录制输出中附加自定义元数据（如标题、作者、描述等）的场景。
 
 起始版本： 18
 
@@ -28,5 +28,5 @@ typedef struct OH_AVRecorder_MetadataTemplate {...} OH_AVRecorder_MetadataTempla
 
 | 名称 | 描述 |
 | --- | --- |
-| char* key | 元数据的键值。 |
-| char* value | 元数据的内容。 |
+| char* key | 元数据的键。 |
+| char* value | 元数据的值。 |

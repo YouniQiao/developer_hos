@@ -2,8 +2,8 @@
 title: "XEG_TemporalUpscaleDescription"
 upstream_id: "harmonyos-references/xengine-kit-xeg-temporalupscaledescription"
 catalog: "harmonyos-references"
-content_hash: "81b0e572f634"
-synced_at: "2026-07-09T01:01:11.236135"
+content_hash: "35fc8b39ccb0"
+synced_at: "2026-08-03T17:12:20.899255"
 ---
 
 # XEG_TemporalUpscaleDescription
@@ -32,7 +32,7 @@ synced_at: "2026-07-09T01:01:11.236135"
 | float [jitterX](#jitterx) | 相机在X方向上的抖动，通常为超分依赖的前序渲染过程中应用的亚像素抖动，包含在相机的投影矩阵中；在ndc坐标系下，其取值范围是 [-1/width, 1/width], width是输入inputTexture纹理的宽度（像素数）。 |
 | float [jitterY](#jittery) | 相机在Y方向上的抖动，通常为超分依赖的前序渲染过程中应用的亚像素抖动，包含在相机的投影矩阵中；在ndc坐标系下，其取值范围是 [-1/height, 1/height], height是输入inputTexture纹理的高度（像素数）。 |
 | bool [resetHistory](#resethistory) | 是否重置历史帧数据，true表示重置，false表示不重置。在历史帧未使用超分，当前帧开始使用超分的情况下建议设置为true。 |
-| float [steadyLevel](#steadylevel) | 画面偏向当前帧（鬼影少但可能存在闪烁）还是历史帧（鬼影多但是更稳定）的平衡程度。取值范围为[0.0, 1.0]，如果该值不在以上范围内，则会发生未定义行为，例如渲染效果不正确或程序崩溃，值越大越偏向历史帧。 |
+| float [steadyLevel](#steadylevel) | 画面偏向当前帧（鬼影少但可能存在闪烁）还是历史帧（鬼影多但是更稳定）的平衡程度。取值范围为[0.0, 1.0]，如果该值不在以上范围内，则会发生未定义行为，例如渲染效果不正确或程序崩溃，值越大越偏向历史帧。建议根据实际需求选择合适的值，例如在需要减少鬼影时可设置为较小值，需要减少闪烁可以设置为较大值，推荐值为0.5。 |
 
 #### 结构体成员变量说明
 
@@ -115,4 +115,4 @@ float XEG_TemporalUpscaleDescription::steadyLevel
 ```
  描述
 
-画面偏向当前帧（鬼影少但可能存在闪烁）还是历史帧（鬼影多但是更稳定）的平衡程度。取值范围为[0.0, 1.0]，如果该值不在以上范围内，则会发生未定义行为，例如渲染效果不正确或程序崩溃，值越大越偏向历史帧。
+画面偏向当前帧（鬼影少但可能存在闪烁）还是历史帧（鬼影多但是更稳定）的平衡程度。取值范围为[0.0, 1.0]，如果该值不在以上范围内，则会发生未定义行为，例如渲染效果不正确或程序崩溃，值越大越偏向历史帧。建议根据实际需求选择合适的值，例如在需要减少鬼影时可设置为较小值，需要减少闪烁可以设置为较大值，推荐值为0.5。

@@ -2,8 +2,8 @@
 title: "smartMobilityCommon (智慧出行场景)"
 upstream_id: "harmonyos-references/car-smartmobilitycommon"
 catalog: "harmonyos-references"
-content_hash: "0fa61a49bacc"
-synced_at: "2026-07-28T16:51:12.069982"
+content_hash: "9f9f8a35062b"
+synced_at: "2026-08-03T17:11:31.074851"
 ---
 
 # smartMobilityCommon (智慧出行场景)
@@ -91,7 +91,7 @@ getSmartMobilityAwareness(): SmartMobilityAwareness
 
 系统能力： SystemCapability.CarService.DistributedEngine
 
-设备行为差异：对于6.0.0(22)及之前的版本，该接口在Phone中可正常调用，在其他设备类型中返回801错误码。在6.1.0(23)及之后版本，该接口在Phone、Tablet中均可正常调用，在其它设备中无效果。对于26.0.0及之后的版本，该接口在Phone、Tablet、Car中均可正常调用，在其它设备中无效果。
+设备行为差异：对于6.0.0(22)及之前的版本，该接口在Phone中可正常调用，在其他设备类型中返回801错误码。在6.1.0(23)及之后版本，该接口在Phone、Tablet中均可正常调用，在其它设备中无效果。
 
 需要权限： ohos.permission.ACCESS_CAR_DISTRIBUTED_ENGINE
 
@@ -139,7 +139,7 @@ on(type: 'smartMobilityEvent', smartMobilityTypes: SmartMobilityType[],callback:
 
 系统能力： SystemCapability.CarService.DistributedEngine
 
-设备行为差异：对于6.0.0(22)及之前的版本，该接口在Phone中可正常调用，在其他设备类型中返回801错误码。在6.1.0(23)及之后版本，该接口在Phone、Tablet中均可正常调用，在其它设备中无效果。对于26.0.0及之后的版本，该接口在Phone、Tablet、Car中均可正常调用，在其它设备中无效果。
+设备行为差异：对于6.0.0(22)及之前的版本，该接口在Phone中可正常调用，在其他设备类型中返回801错误码。在6.1.0(23)及之后版本，该接口在Phone、Tablet中均可正常调用，在其它设备中无效果。
 
 需要权限： ohos.permission.ACCESS_CAR_DISTRIBUTED_ENGINE
 
@@ -196,7 +196,7 @@ off(type: 'smartMobilityEvent', smartMobilityTypes: SmartMobilityType[], callbac
 
 系统能力： SystemCapability.CarService.DistributedEngine
 
-设备行为差异：对于6.0.0(22)及之前的版本，该接口在Phone中可正常调用，在其他设备类型中返回801错误码。在6.1.0(23)及之后版本，该接口在Phone、Tablet中均可正常调用，在其它设备中无效果。对于26.0.0及之后的版本，该接口在Phone、Tablet、Car中均可正常调用，在其它设备中无效果。
+设备行为差异：对于6.0.0(22)及之前的版本，该接口在Phone中可正常调用，在其他设备类型中返回801错误码。在6.1.0(23)及之后版本，该接口在Phone、Tablet中均可正常调用，在其它设备中无效果。
 
 需要权限： ohos.permission.ACCESS_CAR_DISTRIBUTED_ENGINE
 
@@ -254,7 +254,7 @@ getSmartMobilityEvent(type: SmartMobilityType, eventName: string): SmartMobility
 
 系统能力： SystemCapability.CarService.DistributedEngine
 
-设备行为差异：对于6.0.0(22)及之前的版本，该接口在Phone中可正常调用，在其他设备类型中返回801错误码。在6.1.0(23)及之后版本，该接口在Phone、Tablet中均可正常调用，在其它设备中无效果。对于26.0.0及之后的版本，该接口在Phone、Tablet、Car中均可正常调用，在其它设备中无效果。
+设备行为差异：对于6.0.0(22)及之前的版本，该接口在Phone中可正常调用，在其他设备类型中返回801错误码。在6.1.0(23)及之后版本，该接口在Phone、Tablet中均可正常调用，在其它设备中无效果。
 
 需要权限： ohos.permission.ACCESS_CAR_DISTRIBUTED_ENGINE
 
@@ -315,7 +315,7 @@ on(type: 'smartMobilityStatus', smartMobilityTypes: SmartMobilityType[], callbac
 
 系统能力： SystemCapability.CarService.DistributedEngine
 
-设备行为差异：对于6.0.0(22)及之前的版本，该接口在Phone中可正常调用，在其他设备类型中返回801错误码。在6.1.0(23)及之后版本，该接口在Phone、Tablet中均可正常调用，在其它设备中无效果。对于26.0.0及之后的版本，该接口在Phone、Tablet、Car中均可正常调用，在其它设备中无效果。
+设备行为差异：对于6.0.0(22)及之前的版本，该接口在Phone中可正常调用，在其他设备类型中返回801错误码。在6.1.0(23)及之后版本，该接口在Phone、Tablet中均可正常调用，在其它设备中无效果。
 
 需要权限： ohos.permission.ACCESS_CAR_DISTRIBUTED_ENGINE
 
@@ -372,7 +372,7 @@ off(type: 'smartMobilityStatus', smartMobilityTypes: SmartMobilityType[], callba
 
 系统能力： SystemCapability.CarService.DistributedEngine
 
-设备行为差异：对于6.0.0(22)及之前的版本，该接口在Phone中可正常调用，在其他设备类型中返回801错误码。在6.1.0(23)及之后版本，该接口在Phone、Tablet中均可正常调用，在其它设备中无效果。对于26.0.0及之后的版本，该接口在Phone、Tablet、Car中均可正常调用，在其它设备中无效果。
+设备行为差异：对于6.0.0(22)及之前的版本，该接口在Phone中可正常调用，在其他设备类型中返回801错误码。在6.1.0(23)及之后版本，该接口在Phone、Tablet中均可正常调用，在其它设备中无效果。
 
 需要权限： ohos.permission.ACCESS_CAR_DISTRIBUTED_ENGINE
 
@@ -429,7 +429,7 @@ getSmartMobilityStatus(type: SmartMobilityType): SmartMobilityInfo
 
 系统能力： SystemCapability.CarService.DistributedEngine
 
-设备行为差异：对于6.0.0(22)及之前的版本，该接口在Phone中可正常调用，在其他设备类型中返回801错误码。在6.1.0(23)及之后版本，该接口在Phone、Tablet中均可正常调用，在其它设备中无效果。对于26.0.0及之后的版本，该接口在Phone、Tablet、Car中均可正常调用，在其它设备中无效果。
+设备行为差异：对于6.0.0(22)及之前的版本，该接口在Phone中可正常调用，在其他设备类型中返回801错误码。在6.1.0(23)及之后版本，该接口在Phone、Tablet中均可正常调用，在其它设备中无效果。
 
 需要权限： ohos.permission.ACCESS_CAR_DISTRIBUTED_ENGINE
 

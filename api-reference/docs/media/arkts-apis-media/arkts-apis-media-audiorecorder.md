@@ -2,8 +2,8 @@
 title: "废弃的Interface (AudioRecorder, deprecated)"
 upstream_id: "harmonyos-references/arkts-apis-media-audiorecorder"
 catalog: "harmonyos-references"
-content_hash: "35efae995854"
-synced_at: "2026-07-09T01:00:39.207094"
+content_hash: "4ceb003c10ee"
+synced_at: "2026-08-03T17:12:00.217232"
 ---
 
 # 废弃的Interface (AudioRecorder, deprecated)
@@ -42,7 +42,7 @@ prepare(config: AudioRecorderConfig): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 201 | permission denied |
+| 201 | permission denied. 适用版本：12+ |
 
 示例：
 

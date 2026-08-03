@@ -2,8 +2,8 @@
 title: "pushCommon（推送服务公共信息）"
 upstream_id: "harmonyos-references/push-pushcommon"
 catalog: "harmonyos-references"
-content_hash: "2c920a264528"
-synced_at: "2026-07-09T01:01:37.296445"
+content_hash: "99f70eef63ae"
+synced_at: "2026-08-03T17:12:38.533755"
 ---
 
 # pushCommon（推送服务公共信息）
@@ -144,8 +144,8 @@ PushPayload是推送服务向应用传递数据的核心接口，开发者可以
 | title | string | 否 | 是 | 扩展通知标题，将作为发布通知时NotificationRequest对象的[title](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-notification-notificationcontent#notificationbasiccontent)。 **说明：** title从5.0.0(12)起变更为非必填字段。 |
 | text | string | 否 | 是 | 扩展通知内容，将作为发布通知时NotificationRequest对象的[text](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-notification-notificationcontent#notificationbasiccontent)。 **说明：** text从5.0.0(12)起变更为非必填字段。 |
 | overlayIcon | image.[PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 否 | 是 | 扩展通知的叠加图标，将作为发布通知时NotificationRequest对象的[overlayIcon](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-notification-notificationrequest#notificationrequest-1)。 **说明：** 图片长*宽建议小于128*128像素，若超过49152像素，则图片不展示。 |
-| badgeNumber | number | 否 | 是 | 增加的角标数量，取值范围(0, 100)，在应用的桌面图标上呈现。该参数将作为发布通知时NotificationRequest对象的[badgeNumber](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-notification-notificationrequest)。 |
-| setBadgeNumber | number | 否 | 是 | 设置的角标数量，取值范围[0, 100)，在应用的桌面图标上呈现。与badgeNumber同时返回时，优先于badgeNumber，将作为发布通知时NotificationRequest对象的[setBadgeNumber](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationmanager)。 **说明：** 起始版本：5.0.0(12)。 |
+| badgeNumber | number | 否 | 是 | 增加的角标数量，取值范围为全体整数，当badgeNumber取值小于或等于0时，将忽略本次角标设定。在应用的桌面图标上呈现。该参数将作为发布通知时NotificationRequest对象的[badgeNumber](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-notification-notificationrequest)。 |
+| setBadgeNumber | number | 否 | 是 | 设置的角标数量，取值范围为全体整数，当设置的角标数量小于或等于0时，清除角标。与badgeNumber同时返回时，优先于badgeNumber，将作为发布通知时NotificationRequest对象的[setBadgeNumber](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationmanager)。 **说明：** 起始版本：5.0.0(12)。 |
 | wantAgent | [RemoteWantAgent](#remotewantagent) | 否 | 是 | 点击事件时可以替换的数据，将作为发布通知时NotificationRequest对象的[wantAgent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-notification-notificationrequest)。 |
 
 #### RemoteWantAgent

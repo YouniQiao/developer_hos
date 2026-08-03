@@ -2,8 +2,8 @@
 title: "cloudCommon (公共模块)"
 upstream_id: "harmonyos-references/cloudfoundation-cloudcommon"
 catalog: "harmonyos-references"
-content_hash: "2a155a830260"
-synced_at: "2026-07-09T01:01:16.230170"
+content_hash: "03ceb1ad1a2e"
+synced_at: "2026-08-03T17:12:24.262085"
 ---
 
 # cloudCommon (公共模块)
@@ -61,8 +61,8 @@ cloudCommon.init({
   authProvider: authProvider,
   functionOptions: { timeout: 10 * 1000 },
   storageOptions: { mode: request.agent.Mode.BACKGROUND, network: request.agent.Network.ANY },
-  databaseOptions: { schema: "schema.json", traceId: "traceId" }
-})
+  databaseOptions: { schema: 'schema.json', traceId: 'traceId' }
+});
 ```
 
 #### CloudOptions
@@ -162,8 +162,8 @@ cloudCommon.init({
   authProvider: authProvider,
   functionOptions: { timeout: 10 * 1000 },
   storageOptions: { mode: request.agent.Mode.BACKGROUND, network: request.agent.Network.ANY },
-  databaseOptions: { schema: "schema.json", traceId: "traceId" }
-})
+  databaseOptions: { schema: 'schema.json', traceId: 'traceId' }
+});
 ```
 
 - 方式二： 1. 使用华为账号服务的[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token)接口获取refresh_token，然后基于refresh_token换取access_token自定义AuthProvider。可参考如下示例代码换取：
@@ -177,7 +177,7 @@ let accessToken = '';
 export class MyAuthProvider implements cloudCommon.AuthProvider {
   async getAccessToken(isForceRefresh: boolean): Promise<string> {
     let data =
-      "grant_type=refresh_token&client_id=xxxx&client_secret=xxxx&refresh_token=";
+      'grant_type=refresh_token&client_id=xxxx&client_secret=xxxx&refresh_token=';
     let refreshToken =
       encodeURIComponent('xxxx'); // xxxx为使用华为账号服务获取用户级凭证接口获取的refresh_token
     // access_token过期则强制刷新
@@ -190,9 +190,9 @@ export class MyAuthProvider implements cloudCommon.AuthProvider {
           header: {
             'Content-Type': 'application/x-www-form-urlencoded'
           },
-          extraData: data,
+          extraData: data
         };
-        let url = "https://oauth-login.cloud.huawei.com/oauth2/v3/token";
+        let url = 'https://oauth-login.cloud.huawei.com/oauth2/v3/token';
         let resp = await httpRequest.request(url, ohosOptions);
         accessToken = JSON.parse(resp.result.toString()).access_token;
       } catch (err) {
@@ -215,8 +215,8 @@ cloudCommon.init({
   authProvider: authProvider,
   functionOptions: { timeout: 10 * 1000 },
   storageOptions: { mode: request.agent.Mode.BACKGROUND, network: request.agent.Network.ANY },
-  databaseOptions: { schema: "schema.json", traceId: "traceId" }
-})
+  databaseOptions: { schema: 'schema.json', traceId: 'traceId' }
+});
 ```
 
 #### FunctionOptions

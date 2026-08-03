@@ -2,8 +2,8 @@
 title: "crypto_sym_key.h"
 upstream_id: "harmonyos-references/capi-crypto-sym-key-h"
 catalog: "harmonyos-references"
-content_hash: "f6b70187c6a1"
-synced_at: "2026-07-28T16:50:22.814905"
+content_hash: "9a17d46de208"
+synced_at: "2026-08-03T17:10:53.880598"
 ---
 
 # crypto_sym_key.h
@@ -68,7 +68,7 @@ OH_Crypto_ErrCode OH_CryptoSymKeyGenerator_Create(const char *algoName, OH_Crypt
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | - - CRYPTO_SUCCESS：操作成功。 - - - CRYPTO_INVALID_PARAMS：ctx为NULL或algoName为NULL。 - - - CRYPTO_NOT_SUPPORTED：不支持的算法。 - - - CRYPTO_MEMORY_ERROR：内存分配失败。 - - - CRYPTO_OPERTION_ERROR：密码操作失败。 - - |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_INVALID_PARAMS：ctx为NULL或algoName为NULL。 CRYPTO_NOT_SUPPORTED：不支持的算法。 CRYPTO_MEMORY_ERROR：内存分配失败。 CRYPTO_OPERTION_ERROR：密码操作失败。 |
 
 参考：
 
@@ -100,7 +100,7 @@ OH_Crypto_ErrCode OH_CryptoSymKeyGenerator_Generate(OH_CryptoSymKeyGenerator *ct
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | - - CRYPTO_SUCCESS：操作成功。 - - - CRYPTO_INVALID_PARAMS：ctx或keyCtx为NULL。 - - - CRYPTO_NOT_SUPPORTED：不支持的操作或算法。 - - - CRYPTO_MEMORY_ERROR：内存操作失败。 - - - CRYPTO_INVALID_CALL：无效的函数调用。可能的原因：算法不支持随机生成密钥 （如RC2、RC4、Blowfish、CAST），请使用OH_CryptoSymKeyGenerator_Convert接口。[since 26.0.0] - - - CRYPTO_OPERTION_ERROR：密码操作失败。 - - |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_INVALID_PARAMS：ctx或keyCtx为NULL。 CRYPTO_NOT_SUPPORTED：不支持的操作或算法。 CRYPTO_MEMORY_ERROR：内存操作失败。 CRYPTO_INVALID_CALL：无效的函数调用。可能的原因：算法不支持随机生成密钥（如RC2、RC4、Blowfish、CAST），请使用OH_CryptoSymKeyGenerator_Convert接口。适用版本：26.0.0+ CRYPTO_OPERTION_ERROR：密码操作失败。 |
 
 #### [h2]OH_CryptoSymKeyGenerator_Convert()
 
@@ -127,7 +127,7 @@ OH_Crypto_ErrCode OH_CryptoSymKeyGenerator_Convert(OH_CryptoSymKeyGenerator *ctx
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | - - CRYPTO_SUCCESS：操作成功。 - - - CRYPTO_INVALID_PARAMS：ctx、keyData或keyCtx为NULL。 - - - CRYPTO_NOT_SUPPORTED：不支持的操作或算法。 - - - CRYPTO_MEMORY_ERROR：内存分配失败。 - - - CRYPTO_OPERTION_ERROR：密码操作失败。 - - |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_INVALID_PARAMS：ctx、keyData或keyCtx为NULL。 CRYPTO_NOT_SUPPORTED：不支持的操作或算法。 CRYPTO_MEMORY_ERROR：内存分配失败。 CRYPTO_OPERTION_ERROR：密码操作失败。 |
 
 #### [h2]OH_CryptoSymKeyGenerator_GetAlgoName()
 
@@ -216,7 +216,7 @@ OH_Crypto_ErrCode OH_CryptoSymKey_GetKeyData(OH_CryptoSymKey *keyCtx, Crypto_Dat
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | - - CRYPTO_SUCCESS：操作成功。 - - - CRYPTO_INVALID_PARAMS：keyCtx或out为NULL。 - - - CRYPTO_NOT_SUPPORTED：不支持的操作或算法。 - - - CRYPTO_MEMORY_ERROR：内存操作失败。 - - - CRYPTO_OPERTION_ERROR：密码操作失败。 - - |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_INVALID_PARAMS：keyCtx或out为NULL。 CRYPTO_NOT_SUPPORTED：不支持的操作或算法。 CRYPTO_MEMORY_ERROR：内存操作失败。 CRYPTO_OPERTION_ERROR：密码操作失败。 |
 
 #### [h2]OH_CryptoSymKey_Destroy()
 

@@ -2,8 +2,8 @@
 title: "HdsSideBar"
 upstream_id: "harmonyos-references/ui-design-hdssidebar"
 catalog: "harmonyos-references"
-content_hash: "df5fa1cf8712"
-synced_at: "2026-07-09T17:25:57.532759"
+content_hash: "9511178bdcac"
+synced_at: "2026-08-03T17:10:47.856707"
 ---
 
 # HdsSideBar
@@ -18,7 +18,7 @@ synced_at: "2026-07-09T17:25:57.532759"
 import { HdsSideBar } from '@kit.UIDesignKit';
 ```
 
-#### 接口
+#### HdsSideBar
 
 HdsSideBar({contentAreaMask?: boolean, isShowSideBar?: boolean, $isShowSideBar?: Callback<boolean>, minSideBarWidth?: Length, maxSideBarWidth?: Length, minContentWidth?: Length, sideBarColor?: ResourceColor, contentColor?: ResourceColor, sideBarWidth?: Length, autoHide?: boolean, isSideBarBlur?: boolean, sideBarPosition?: SideBarPosition, onChange?: Callback<boolean>, sideBarPanelBuilder: CustomBuilder, contentPanelBuilder: CustomBuilder, sideBarContainerType?: SideBarContainerType, scaleContentEnabled?: boolean, swipeEnabled?: boolean})
 
@@ -36,7 +36,7 @@ HdsSideBar({contentAreaMask?: boolean, isShowSideBar?: boolean, $isShowSideBar?:
 | --- | --- | --- | --- | --- |
 | contentAreaMask | boolean | 否 | @Param | 设置HdsSideBar组件侧边栏悬浮显示的场景下内容区是否有蒙层。 true：内容区有蒙层。false：内容区没有蒙层。 默认值：true。 |
 | isShowSideBar | boolean | 否 | @Param | 设置HdsSideBar组件是否显示侧边栏。 true：显示侧边栏。 false：不显示侧边栏。 默认值：true。 |
-| $isShowSideBar | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 否 | @Event | HdsSideBar组件侧边栏控制按钮点击后，是否显示侧边栏的回调。 |
+| $isShowSideBar | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 否 | @Event | HdsSideBar组件侧边栏控制按钮点击后，是否显示侧边栏的回调。 true：显示侧边栏。 false：不显示侧边栏。 |
 | minSideBarWidth | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | @Param | 设置HdsSideBar组件侧边栏的最小宽度。 默认值：200vp。 |
 | maxSideBarWidth | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | @Param | 设置HdsSideBar组件侧边栏的最大宽度。 默认值：280vp。 |
 | minContentWidth | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | @Param | 设置HdsSideBar组件内容区可显示的最小宽度。 默认值：360vp。 |
@@ -77,7 +77,8 @@ import { HdsSideBar } from '@kit.UIDesignKit';
 struct Index {
   @Local isShowSidebar: boolean = true;
 
-  @Builder // 左侧侧边栏区
+  // 左侧侧边栏区
+  @Builder
   SideBarPanelBuilder() {
     Column() {
       Text('左侧侧边栏区')
@@ -87,7 +88,8 @@ struct Index {
     .margin(40)
   }
 
-  @Builder // 右侧内容区
+  // 右侧内容区
+  @Builder
   ContentPanelBuilder() {
     Text('右侧内容区')
       .margin(40)
@@ -134,4 +136,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664330565.gif)
+ ![](./img/zh-cn_image_0000002659441052.gif)

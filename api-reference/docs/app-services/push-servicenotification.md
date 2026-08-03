@@ -2,13 +2,13 @@
 title: "serviceNotification（服务通知）"
 upstream_id: "harmonyos-references/push-servicenotification"
 catalog: "harmonyos-references"
-content_hash: "ff400c105953"
-synced_at: "2026-07-09T01:01:37.566041"
+content_hash: "8a9a15243d31"
+synced_at: "2026-08-03T17:12:38.737240"
 ---
 
 # serviceNotification（服务通知）
 
-为了向用户提供更好的服务和更优的体验，Push Kit为开发者提供了消息订阅能力，支持通过Push Token订阅和通过账号订阅两种类型。其中仅HarmonyOS应用支持通过Push Token订阅（仅对受邀应用开放申请），仅HarmonyOS元服务支持[通过账号订阅](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-subscription)。
+为了向用户提供更好的服务和更优的体验，Push Kit为开发者提供了消息订阅能力，支持通过Push Token订阅和通过账号订阅两种类型。通过Push Token订阅可通过申请开通订阅通知消息自分类权益，发送对应的订阅消息。HarmonyOS元服务支持[通过账号订阅](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-subscription)。
 
 开发者在选用订阅模板后，基于该模板向用户发起订阅请求，Push Kit将向用户弹出授权弹窗。仅当用户同意订阅后，开发者方可向用户推送该订阅模板对应的消息，从而实现完整的服务闭环。
 
@@ -343,8 +343,8 @@ export default class EntryAbility extends UIAbility {
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| SUBSCRIBE_WITH_TOKEN | 0 | 表示通过Push Token订阅，**仅应用支持通过Push Token订阅**。 |
-| SUBSCRIBE_WITH_HUAWEI_ID | 1 | 表示通过华为账号订阅，**仅元服务支持通过账号订阅**。详情请参见[推送基于账号的订阅消息](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-send-sub-noti)。 |
+| SUBSCRIBE_WITH_TOKEN | 0 | 表示通过Push Token订阅，当应用使用通过Push Token订阅能力时，使用该值。 |
+| SUBSCRIBE_WITH_HUAWEI_ID | 1 | 表示通过华为账号订阅，当元服务使用通过账号订阅能力时，使用该值。详情请参见[推送基于账号的订阅消息](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-send-sub-noti)。 |
 
 #### SubscribeNotificationSetting
 

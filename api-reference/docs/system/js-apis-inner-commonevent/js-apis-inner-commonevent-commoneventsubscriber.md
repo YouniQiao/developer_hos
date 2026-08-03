@@ -2,8 +2,8 @@
 title: "commonEventSubscriber"
 upstream_id: "harmonyos-references/js-apis-inner-commonevent-commoneventsubscriber"
 catalog: "harmonyos-references"
-content_hash: "568f2bfff228"
-synced_at: "2026-07-28T16:50:58.946076"
+content_hash: "234c108063a0"
+synced_at: "2026-08-03T17:11:22.133867"
 ---
 
 # commonEventSubscriber
@@ -50,7 +50,7 @@ getCode(callback: AsyncCallback<number>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback | 是 | 回调函数。当获取有序公共事件传递的数据（number类型）成功时，err为undefined，data为获取到的数据；否则err为错误对象。 |
+| callback | AsyncCallback | 是 | 回调函数。当获取有序公共事件传递的数据成功时，err为undefined，data为获取到的数据；否则err为错误对象。 |
 
 错误码：
 
@@ -86,7 +86,7 @@ getCode(): Promise<number>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象。返回有序公共事件传递的数据（number类型）。 |
+| Promise | Promise对象。返回有序公共事件传递的数据。 |
 
 示例：
 
@@ -136,7 +136,7 @@ setCode(code: number, callback: AsyncCallback<void>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | code | number | 是 | 有序公共事件传递的数据。 |
-| callback | AsyncCallback | 是 | 回调函数。当设置有序公共事件传递的数据（number类型）成功时，err为undefined，否则为错误对象。 |
+| callback | AsyncCallback | 是 | 回调函数。当设置有序公共事件传递的数据成功时，err为undefined，否则为错误对象。 |
 
 错误码：
 
@@ -247,7 +247,7 @@ getData(callback: AsyncCallback<string>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback | 是 | 回调函数。当获取有序公共事件传递的数据（string类型）成功时，err为undefined，data为获取到的数据；否则err为错误对象。 |
+| callback | AsyncCallback | 是 | 回调函数。当获取有序公共事件传递的数据成功时，err为undefined，data为获取到的数据；否则err为错误对象。 |
 
 错误码：
 
@@ -260,7 +260,7 @@ getData(callback: AsyncCallback<string>): void
 示例：
 
 ```
-// 获取有序公共事件传递的数据（string类型）回调
+// 获取有序公共事件传递的数据回调
 subscriber.getData((err: BusinessError, data: string) => {
   if (err) {
     console.error(`Failed to get data. Code is ${err.code}, message is ${err.message}`);
@@ -284,7 +284,7 @@ getData(): Promise<string>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象。返回有序公共事件传递的数据（string类型）。 |
+| Promise | Promise对象。返回有序公共事件传递的数据。 |
 
 示例：
 
@@ -333,8 +333,8 @@ setData(data: string, callback: AsyncCallback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| data | string | 是 | 有序公共事件传递的数据（string类型），长度不超过65536字符，若超过限制，接口设置失效。 |
-| callback | AsyncCallback | 是 | 回调函数。当设置有序公共事件传递的数据（string类型）成功时，err为undefined，否则为错误对象。 |
+| data | string | 是 | 有序公共事件传递的数据，长度不超过65536字符，若超过限制，接口设置失效。 |
+| callback | AsyncCallback | 是 | 回调函数。当设置有序公共事件传递的数据成功时，err为undefined，否则为错误对象。 |
 
 错误码：
 

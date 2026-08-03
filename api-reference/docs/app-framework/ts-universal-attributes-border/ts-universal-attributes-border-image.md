@@ -2,8 +2,8 @@
 title: "图片边框设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-border-image"
 catalog: "harmonyos-references"
-content_hash: "cadeb60ab68e"
-synced_at: "2026-07-28T16:42:11.201582"
+content_hash: "267d62ffbdc9"
+synced_at: "2026-08-03T17:09:41.252892"
 ---
 
 # 图片边框设置
@@ -102,7 +102,6 @@ struct Index {
         Text('This is gradient color.').textAlign(TextAlign.Center).height(50).width(200)
           .borderImage({
             source: {
-              angle: 90,
               direction: GradientDirection.Left,
               colors: [[0xAEE1E1, 0.0], [0xD3E0DC, 0.3], [0xFCD1D1, 1.0]],
               repeating: false
@@ -119,7 +118,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008284.png)
+ ![](./img/zh-cn_image_0000002689559495.png)
 
 #### [h2]示例2（动态调整属性值）
 
@@ -218,7 +217,7 @@ struct BorderImage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848364.gif)
+ ![](./img/zh-cn_image_0000002689679319.gif)
 
 #### [h2]示例3（使用LocalizedEdgeWidths类型值）
 
@@ -377,4 +376,4 @@ struct BorderImage {
 ```
  显示语言示例图
 
-![](./img/zh-cn_image_0000002686087793.png)
+![](./img/zh-cn_image_0000002659439986.png)

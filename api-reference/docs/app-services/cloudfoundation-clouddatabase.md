@@ -2,8 +2,8 @@
 title: "cloudDatabase (云数据库模块)"
 upstream_id: "harmonyos-references/cloudfoundation-clouddatabase"
 catalog: "harmonyos-references"
-content_hash: "370fef05cb4a"
-synced_at: "2026-07-09T01:01:16.926102"
+content_hash: "7b2f9dc3da18"
+synced_at: "2026-08-03T17:12:24.925431"
 ---
 
 # cloudDatabase (云数据库模块)
@@ -49,7 +49,7 @@ zone(zone: string): DatabaseZone
 ```
 import { cloudDatabase } from '@kit.CloudFoundationKit';
 
-let databaseZone = cloudDatabase.zone("storageArea");
+let databaseZone = cloudDatabase.zone('storageArea');
 ```
 
 #### DatabaseZone
@@ -117,17 +117,17 @@ class BookInfo extends cloudDatabase.DatabaseObject{
   public naturalbase_ClassName(): string {
     return 'BookInfo';
   }
-  public key_string: string | undefined;
-  public key_boolean: boolean | undefined;
-  public key_byte: number | undefined;
-  public key_short: number | undefined;
-  public key_integer: number | undefined;
-  public key_long: number | undefined;
-  public key_float: number | undefined;
-  public key_double: number | undefined;
-  public key_text: string | undefined;
-  public key_date: Date | undefined;
-  public key_byte_array: Uint8Array | undefined;
+  public keyString: string | undefined;
+  public keyBoolean: boolean | undefined;
+  public keyByte: number | undefined;
+  public keyShort: number | undefined;
+  public keyInteger: number | undefined;
+  public keyLong: number | undefined;
+  public keyFloat: number | undefined;
+  public keyDouble: number | undefined;
+  public keyText: string | undefined;
+  public keyDate: Date | undefined;
+  public keyByteArray: Uint8Array | undefined;
 }
 
 export { BookInfo };
@@ -143,7 +143,7 @@ async () => {
   try {
     let databaseZone = cloudDatabase.zone('storageArea');
     let condition = new cloudDatabase.DatabaseQuery(BookInfo);
-    condition.equalTo('key_string', 'string_123');
+    condition.equalTo('keyString', 'string_123');
     let bookInfoArray = await databaseZone.query(condition);
     hilog.info(0x0000, 'testTag', `Succeeded in querying data, result: ${JSON.stringify(bookInfoArray)}`);
   } catch (err) {
@@ -200,7 +200,7 @@ import { BookInfo } from 'xx/BookInfo'; // xx是BookInfo文件的路径
 // 创建一个BookInfo的类继承cloudDatabase.DatabaseObject，内容与使用Promise异步回调的query接口示例一致
 let databaseZone = cloudDatabase.zone('storageArea');
 let condition = new cloudDatabase.DatabaseQuery(BookInfo);
-condition.equalTo('key_string', 'string_123');
+condition.equalTo('keyString', 'string_123');
 databaseZone.query(condition, (err: BusinessError, bookInfoArray) => {
   if (err) {
     hilog.error(0x0000, 'testTag', `Failed to query data, code: ${err.code}, message: ${err.message}`);
@@ -266,8 +266,8 @@ async () => {
   try {
     let databaseZone = cloudDatabase.zone('storageArea');
     let condition = new cloudDatabase.DatabaseQuery(BookInfo);
-    condition.lessThan('key_integer', 100);
-    let count = await databaseZone.calculateQuery(condition, 'key_integer', cloudDatabase.QueryCalculate.AVERAGE);
+    condition.lessThan('keyInteger', 100);
+    let count = await databaseZone.calculateQuery(condition, 'keyInteger', cloudDatabase.QueryCalculate.AVERAGE);
     hilog.info(0x0000, 'testTag', `Succeeded in calculating queried data, result: ${count}`);
   } catch (err) {
     hilog.error(0x0000, 'testTag', `Failed to calculate queried data, code: ${err.code}, message: ${err.message}`);
@@ -325,8 +325,8 @@ import { BookInfo } from 'xx/BookInfo'; // xx是BookInfo文件的路径
 // 创建一个BookInfo的类继承cloudDatabase.DatabaseObject，内容与使用Promise异步回调的query接口示例一致
 let databaseZone = cloudDatabase.zone('storageArea');
 let condition = new cloudDatabase.DatabaseQuery(BookInfo);
-condition.lessThan('key_integer', 100);
-databaseZone.calculateQuery(condition, 'key_integer', cloudDatabase.QueryCalculate.AVERAGE,
+condition.lessThan('keyInteger', 100);
+databaseZone.calculateQuery(condition, 'keyInteger', cloudDatabase.QueryCalculate.AVERAGE,
   (err: BusinessError, num) => {
     if (err) {
       hilog.error(0x0000, 'testTag', `Failed to calculate queried data, code: ${err.code}, message: ${err.message}`);
@@ -390,11 +390,11 @@ async () => {
   try {
     let databaseZone = cloudDatabase.zone('storageArea');
     let book = new BookInfo();
-    book.key_string = 'string_12';
-    book.key_integer = 90;
+    book.keyString = 'string_12';
+    book.keyInteger = 90;
     let book1 = new BookInfo();
-    book1.key_string = 'string_1234';
-    book1.key_integer = 101;
+    book1.keyString = 'string_1234';
+    book1.keyInteger = 101;
     let num = await databaseZone.upsert([book, book1]);
     hilog.info(0x0000, 'testTag', `Succeeded in upserting data, result: ${num}`);
   } catch (err) {
@@ -451,11 +451,11 @@ import { BookInfo } from 'xx/BookInfo'; // xx是BookInfo文件的路径
 // 创建一个BookInfo的类继承cloudDatabase.DatabaseObject，内容与使用Promise异步回调的query接口示例一致
 let databaseZone = cloudDatabase.zone('storageArea');
 let book = new BookInfo();
-book.key_string = 'string_12';
-book.key_integer = 90;
+book.keyString = 'string_12';
+book.keyInteger = 90;
 let book1 = new BookInfo();
-book1.key_string = 'string_1234';
-book1.key_integer = 101;
+book1.keyString = 'string_1234';
+book1.keyInteger = 101;
 databaseZone.upsert([book, book1], (err: BusinessError, num) => {
   if (err) {
     hilog.error(0x0000, 'testTag', `Failed to upsert data, code: ${err.code}, message: ${err.message}`);
@@ -519,7 +519,7 @@ async () => {
   try {
     let databaseZone = cloudDatabase.zone('storageArea');
     let condition = new cloudDatabase.DatabaseQuery(BookInfo);
-    condition.lessThan('key_integer', 100);
+    condition.lessThan('keyInteger', 100);
     let bookArray = await databaseZone.query(condition);
     let deleteNum = await databaseZone.delete(bookArray);
     hilog.info(0x0000, 'testTag', `Succeeded in deleting a book, result: ${deleteNum}`);
@@ -578,7 +578,7 @@ async () => {
   // 创建一个BookInfo的类继承cloudDatabase.DatabaseObject，内容与使用Promise异步回调的query接口示例一致
   let databaseZone = cloudDatabase.zone('storageArea');
   let condition = new cloudDatabase.DatabaseQuery(BookInfo);
-  condition.lessThan('key_integer', 100);
+  condition.lessThan('keyInteger', 100);
   try {
     let bookArray = await databaseZone.query(condition);
     databaseZone.delete(bookArray, (err: BusinessError, num) => {
@@ -634,7 +634,7 @@ import { cloudDatabase } from '@kit.CloudFoundationKit';
 // 创建一个BookInfo的类继承cloudDatabase.DatabaseObject，内容与使用Promise异步回调的query接口示例一致
 class BookInfo extends cloudDatabase.DatabaseObject{
   public naturalbase_ClassName(): string {
-    return "BookInfo";
+    return 'BookInfo';
   }
 }
 
@@ -715,6 +715,15 @@ constructor(entityClass: new () => T)
 | --- | --- | --- | --- |
 | entityClass | new () => T | 是 | 数据对象的实体类。 |
 
+示例：
+
+```
+import { cloudDatabase } from '@kit.CloudFoundationKit';
+import { BookInfo } from 'xx/BookInfo'; // xx是BookInfo文件的路径
+
+let condition = new cloudDatabase.DatabaseQuery(BookInfo);
+```
+
 #### [h2]equalTo
 
 equalTo(fieldName: string, value: FieldType): DatabaseQuery<T>
@@ -753,7 +762,7 @@ async () => {
   // 创建一个BookInfo的类继承cloudDatabase.DatabaseObject，内容与使用Promise异步回调的query接口示例一致
   let databaseZone = cloudDatabase.zone('storageArea');
   let condition = new cloudDatabase.DatabaseQuery(BookInfo);
-  condition.equalTo('key_string', 'string_123');
+  condition.equalTo('keyString', 'string_123');
   try {
     let bookInfoArray = await databaseZone.query(condition);
     hilog.info(0x0000, 'testTag', `Succeeded in querying data, result: ${JSON.stringify(bookInfoArray)}`);
@@ -801,7 +810,7 @@ async () => {
   // 创建一个BookInfo的类继承cloudDatabase.DatabaseObject，内容与使用Promise异步回调的query接口示例一致
   let databaseZone = cloudDatabase.zone('storageArea');
   let condition = new cloudDatabase.DatabaseQuery(BookInfo);
-  condition.notEqualTo('key_string', 'string_123');
+  condition.notEqualTo('keyString', 'string_123');
   try {
     let bookInfoArray = await databaseZone.query(condition);
     hilog.info(0x0000, 'testTag', `Succeeded in querying data, result: ${JSON.stringify(bookInfoArray)}`);
@@ -849,7 +858,7 @@ async () => {
   // 创建一个BookInfo的类继承cloudDatabase.DatabaseObject，内容与使用Promise异步回调的query接口示例一致
   let databaseZone = cloudDatabase.zone('storageArea');
   let condition = new cloudDatabase.DatabaseQuery(BookInfo);
-  condition.beginsWith('key_string', 'key');
+  condition.beginsWith('keyString', 'key');
   try {
     let bookInfoArray = await databaseZone.query(condition);
     hilog.info(0x0000, 'testTag', `Succeeded in querying data, result: ${JSON.stringify(bookInfoArray)}`);
@@ -897,7 +906,7 @@ async () => {
   // 创建一个BookInfo的类继承cloudDatabase.DatabaseObject，内容与使用Promise异步回调的query接口示例一致
   let databaseZone = cloudDatabase.zone('storageArea');
   let condition = new cloudDatabase.DatabaseQuery(BookInfo);
-  condition.endsWith('key_string', 'string');
+  condition.endsWith('keyString', 'string');
   try {
     let bookInfoArray = await databaseZone.query(condition);
     hilog.info(0x0000, 'testTag', `Succeeded in querying data, result: ${JSON.stringify(bookInfoArray)}`);
@@ -945,7 +954,7 @@ async () => {
   // 创建一个BookInfo的类继承cloudDatabase.DatabaseObject，内容与使用Promise异步回调的query接口示例一致
   let databaseZone = cloudDatabase.zone('storageArea');
   let condition = new cloudDatabase.DatabaseQuery(BookInfo);
-  condition.contains('key_string', 'string');
+  condition.contains('keyString', 'string');
   try {
     let bookInfoArray = await databaseZone.query(condition);
     hilog.info(0x0000, 'testTag', `Succeeded in querying data, result: ${JSON.stringify(bookInfoArray)}`);
@@ -993,7 +1002,7 @@ async () => {
   // 创建一个BookInfo的类继承cloudDatabase.DatabaseObject，内容与使用Promise异步回调的query接口示例一致
   let databaseZone = cloudDatabase.zone('storageArea');
   let condition = new cloudDatabase.DatabaseQuery(BookInfo);
-  condition.greaterThan('key_integer', 100);
+  condition.greaterThan('keyInteger', 100);
   try {
     let bookInfoArray = await databaseZone.query(condition);
     hilog.info(0x0000, 'testTag', `Succeeded in querying data, result: ${JSON.stringify(bookInfoArray)}`);
@@ -1041,7 +1050,7 @@ async () => {
   // 创建一个BookInfo的类继承cloudDatabase.DatabaseObject，内容与使用Promise异步回调的query接口示例一致
   let databaseZone = cloudDatabase.zone('storageArea');
   let condition = new cloudDatabase.DatabaseQuery(BookInfo);
-  condition.greaterThanOrEqualTo('key_integer', 100);
+  condition.greaterThanOrEqualTo('keyInteger', 100);
   try {
     let bookInfoArray = await databaseZone.query(condition);
     hilog.info(0x0000, 'testTag', `Succeeded in querying data, result: ${JSON.stringify(bookInfoArray)}`);
@@ -1089,7 +1098,7 @@ async () => {
   // 创建一个BookInfo的类继承cloudDatabase.DatabaseObject，内容与使用Promise异步回调的query接口示例一致
   let databaseZone = cloudDatabase.zone('storageArea');
   let condition = new cloudDatabase.DatabaseQuery(BookInfo);
-  condition.lessThan('key_integer', 100);
+  condition.lessThan('keyInteger', 100);
   try {
     let bookInfoArray = await databaseZone.query(condition);
     hilog.info(0x0000, 'testTag', `Succeeded in querying data, result: ${JSON.stringify(bookInfoArray)}`);
@@ -1137,7 +1146,7 @@ async () => {
   // 创建一个BookInfo的类继承cloudDatabase.DatabaseObject，内容与使用Promise异步回调的query接口示例一致
   let databaseZone = cloudDatabase.zone('storageArea');
   let condition = new cloudDatabase.DatabaseQuery(BookInfo);
-  condition.lessThanOrEqualTo('key_integer', 100);
+  condition.lessThanOrEqualTo('keyInteger', 100);
   try {
     let bookInfoArray = await databaseZone.query(condition);
     hilog.info(0x0000, 'testTag', `Succeeded in querying data, result: ${JSON.stringify(bookInfoArray)}`);
@@ -1185,7 +1194,7 @@ async () => {
   // 创建一个BookInfo的类继承cloudDatabase.DatabaseObject，内容与使用Promise异步回调的query接口示例一致
   let databaseZone = cloudDatabase.zone('storageArea');
   let condition = new cloudDatabase.DatabaseQuery(BookInfo);
-  condition.in('key_integer', [100, 200]);
+  condition.in('keyInteger', [100, 200]);
   try {
     let bookInfoArray = await databaseZone.query(condition);
     hilog.info(0x0000, 'testTag', `Succeeded in querying data, result: ${JSON.stringify(bookInfoArray)}`);
@@ -1232,7 +1241,7 @@ async () => {
   // 创建一个BookInfo的类继承cloudDatabase.DatabaseObject，内容与使用Promise异步回调的query接口示例一致
   let databaseZone = cloudDatabase.zone('storageArea');
   let condition = new cloudDatabase.DatabaseQuery(BookInfo);
-  condition.isNull('key_date');
+  condition.isNull('keyDate');
   try {
     let bookInfoArray = await databaseZone.query(condition);
     hilog.info(0x0000, 'testTag', `Succeeded in querying data, result: ${JSON.stringify(bookInfoArray)}`);
@@ -1279,7 +1288,7 @@ async () => {
   // 创建一个BookInfo的类继承cloudDatabase.DatabaseObject，内容与使用Promise异步回调的query接口示例一致
   let databaseZone = cloudDatabase.zone('storageArea');
   let condition = new cloudDatabase.DatabaseQuery(BookInfo);
-  condition.isNotNull('key_date');
+  condition.isNotNull('keyDate');
   try {
     let bookInfoArray = await databaseZone.query(condition);
     hilog.info(0x0000, 'testTag', `Succeeded in querying data, result: ${JSON.stringify(bookInfoArray)}`);
@@ -1326,7 +1335,7 @@ async () => {
   // 创建一个BookInfo的类继承cloudDatabase.DatabaseObject，内容与使用Promise异步回调的query接口示例一致
   let databaseZone = cloudDatabase.zone('storageArea');
   let condition = new cloudDatabase.DatabaseQuery(BookInfo);
-  condition.orderByAsc('key_integer');
+  condition.orderByAsc('keyInteger');
   try {
     let bookInfoArray = await databaseZone.query(condition);
     hilog.info(0x0000, 'testTag', `Succeeded in querying data, result: ${JSON.stringify(bookInfoArray)}`);
@@ -1373,7 +1382,7 @@ async () => {
   // 创建一个BookInfo的类继承cloudDatabase.DatabaseObject，内容与使用Promise异步回调的query接口示例一致
   let databaseZone = cloudDatabase.zone('storageArea');
   let condition = new cloudDatabase.DatabaseQuery(BookInfo);
-  condition.orderByDesc('key_integer');
+  condition.orderByDesc('keyInteger');
   try {
     let bookInfoArray = await databaseZone.query(condition);
     hilog.info(0x0000, 'testTag', `Succeeded in querying data, result: ${JSON.stringify(bookInfoArray)}`);
@@ -1464,7 +1473,7 @@ async () => {
   // 创建一个BookInfo的类继承cloudDatabase.DatabaseObject，内容与使用Promise异步回调的query接口示例一致
   let databaseZone = cloudDatabase.zone('storageArea');
   let condition = new cloudDatabase.DatabaseQuery(BookInfo);
-  condition.lessThan('key_integer', 100);
+  condition.lessThan('keyInteger', 100);
   condition.limit(4, 1);
   try {
     let bookInfoArray = await databaseZone.query(condition);
@@ -1512,7 +1521,7 @@ async () => {
   // 创建一个BookInfo的类继承cloudDatabase.DatabaseObject，内容与使用Promise异步回调的query接口示例一致
   let databaseZone = cloudDatabase.zone('storageArea');
   let condition = new cloudDatabase.DatabaseQuery(BookInfo);
-  condition.beginGroup().equalTo('string_string', 'string_123').endGroup();
+  condition.beginGroup().equalTo('keyString', 'string_123').endGroup();
   try {
     let bookInfoArray = await databaseZone.query(condition);
     hilog.info(0x0000, 'testTag', `Succeeded in querying data, result: ${JSON.stringify(bookInfoArray)}`);
@@ -1559,7 +1568,7 @@ async () => {
   // 创建一个BookInfo的类继承cloudDatabase.DatabaseObject，内容与使用Promise异步回调的query接口示例一致
   let databaseZone = cloudDatabase.zone('storageArea');
   let condition = new cloudDatabase.DatabaseQuery(BookInfo);
-  condition.beginGroup().equalTo('string_string', 'string_123').endGroup();
+  condition.beginGroup().equalTo('keyString', 'string_123').endGroup();
   try {
     let bookInfoArray = await databaseZone.query(condition);
     hilog.info(0x0000, 'testTag', `Succeeded in querying data, result: ${JSON.stringify(bookInfoArray)}`);
@@ -1610,7 +1619,7 @@ async () => {
   // 创建一个BookInfo的类继承cloudDatabase.DatabaseObject，内容与使用Promise异步回调的query接口示例一致
   let databaseZone = cloudDatabase.zone('storageArea');
   let condition = new cloudDatabase.DatabaseQuery(BookInfo);
-  condition.equalTo('string_string', 'string_123').or().lessThan('key_integer', 50);
+  condition.equalTo('keyString', 'string_123').or().lessThan('keyInteger', 50);
   try {
     let bookInfoArray = await databaseZone.query(condition);
     hilog.info(0x0000, 'testTag', `Succeeded in querying data, result: ${JSON.stringify(bookInfoArray)}`);
@@ -1661,7 +1670,7 @@ async () => {
   // 创建一个BookInfo的类继承cloudDatabase.DatabaseObject，内容与使用Promise异步回调的query接口示例一致
   let databaseZone = cloudDatabase.zone('storageArea');
   let condition = new cloudDatabase.DatabaseQuery(BookInfo);
-  condition.equalTo('string_string', 'string_123').and().lessThan('key_integer', 50);
+  condition.equalTo('keyString', 'string_123').and().lessThan('keyInteger', 50);
   try {
     let bookInfoArray = await databaseZone.query(condition);
     hilog.info(0x0000, 'testTag', `Succeeded in querying data, result: ${JSON.stringify(bookInfoArray)}`);

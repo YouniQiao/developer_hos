@@ -2,8 +2,8 @@
 title: "Interface (Window)"
 upstream_id: "harmonyos-references/arkts-apis-window-window"
 catalog: "harmonyos-references"
-content_hash: "d444eb6c7b01"
-synced_at: "2026-07-28T16:41:44.962207"
+content_hash: "601b5739665b"
+synced_at: "2026-08-03T17:09:39.584544"
 ---
 
 # Interface (Window)
@@ -30,7 +30,7 @@ showWindow(callback: AsyncCallback<void>): void
 
 显示当前窗口，使用callback异步回调，支持系统窗口、应用子窗口、模态窗和全局悬浮窗，或将已显示的应用主窗口层级提升至顶部。
 
-![](./img/note_3.0-zh-cn.png) 调用该接口前，建议先通过[loadContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-windowstage#loadcontent9)方法或者[setUIContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setuicontent9-1)方法完成页面加载。如果应用主窗口没有完成页面加载，直接调用该接口，界面会一直显示启动界面；如果系统窗口、应用子窗口、模态窗和全局悬浮窗没有完成页面加载，直接调用该接口，窗口会处于前台，但不可见。
+![](./img/note_3.0-zh-cn.png) 调用该接口前，建议先通过[loadContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-windowstage#loadcontent9)方法或者[setUIContent](#setuicontent9-1)方法完成页面加载。如果应用主窗口没有完成页面加载，直接调用该接口，界面会一直显示启动界面；如果系统窗口、应用子窗口、模态窗和全局悬浮窗没有完成页面加载，直接调用该接口，窗口会处于前台，但不可见。
 
 系统能力： SystemCapability.WindowManager.WindowManager.Core
 
@@ -108,7 +108,7 @@ showWindow(): Promise<void>
 
 显示当前窗口，使用Promise异步回调，支持系统窗口、应用子窗口、模态窗和全局悬浮窗，或将已显示的应用主窗口层级提升至顶部。
 
-![](./img/note_3.0-zh-cn.png) 调用该接口前，建议优先通过[loadContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-windowstage#loadcontent9)方法或者[setUIContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setuicontent9-1)方法完成页面加载。如果应用主窗口没有完成页面加载，直接调用该接口，界面会一直显示启动界面；如果系统窗口、应用子窗口、模态窗和全局悬浮窗没有完成页面加载，直接调用该接口，窗口会处于前台，但不可见。
+![](./img/note_3.0-zh-cn.png) 调用该接口前，建议优先通过[loadContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-windowstage#loadcontent9)方法或者[setUIContent](#setuicontent9-1)方法完成页面加载。如果应用主窗口没有完成页面加载，直接调用该接口，界面会一直显示启动界面；如果系统窗口、应用子窗口、模态窗和全局悬浮窗没有完成页面加载，直接调用该接口，窗口会处于前台，但不可见。
 
 系统能力： SystemCapability.WindowManager.WindowManager.Core
 
@@ -187,7 +187,7 @@ showWindow(options: ShowWindowOptions): Promise<void>
 
 仅支持除TYPE_DIALOG类型的窗口和模态子窗口（即使用setSubWindowModal启用了子窗的模态属性）之外的应用子窗口、应用主窗、全局悬浮窗以及系统窗口。
 
-![](./img/note_3.0-zh-cn.png) 调用该接口前，建议优先通过[loadContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-windowstage#loadcontent9)方法或者[setUIContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setuicontent9-1)方法完成页面加载。如果应用主窗口没有完成页面加载，直接调用该接口，界面会一直显示启动界面；如果系统窗口、应用子窗口和全局悬浮窗没有完成页面加载，直接调用该接口，窗口会处于前台，但不可见。
+![](./img/note_3.0-zh-cn.png) 调用该接口前，建议优先通过[loadContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-windowstage#loadcontent9)方法或者[setUIContent](#setuicontent9-1)方法完成页面加载。如果应用主窗口没有完成页面加载，直接调用该接口，界面会一直显示启动界面；如果系统窗口、应用子窗口和全局悬浮窗没有完成页面加载，直接调用该接口，窗口会处于前台，但不可见。
 
 系统能力： SystemCapability.Window.SessionManager
 
@@ -465,7 +465,7 @@ moveWindowToAsync(x: number, y: number): Promise<void>
 
 移动窗口位置，使用Promise异步回调。调用生效后返回，回调中可使用[getWindowProperties()](#getwindowproperties9)（见示例）立即获取最终生效结果。
 
-该接口仅在窗口为自由悬浮窗口模式（即窗口模式为window.WindowStatusType.FLOATING，窗口模式可通过[getWindowStatus()](#getwindowstatus12)获取）时调用生效，在其他窗口模式下调用返回错误码1300010错误码。
+该接口仅在窗口为自由悬浮窗口模式（即窗口模式为window.WindowStatusType.FLOATING，窗口模式可通过[getWindowStatus()](#getwindowstatus12)获取）时调用生效，在其他窗口模式下调用返回错误码1300010。
 
 在自由悬浮窗口模式下，不同类型窗口的移动行为如下：
 
@@ -533,7 +533,7 @@ moveWindowToAsync(x: number, y: number, moveConfiguration?: MoveConfiguration): 
 
 移动窗口位置，支持配置moveConfiguration参数指定窗口移动的目标屏幕ID，使用Promise异步回调。调用生效后返回，回调中可使用[getWindowProperties()](#getwindowproperties9)（见示例）立即获取最终生效结果。
 
-该接口仅在窗口为自由悬浮窗口模式（即窗口模式为window.WindowStatusType.FLOATING，窗口模式可通过[getWindowStatus()](#getwindowstatus12)获取）时调用生效，在其他窗口模式下调用返回错误码1300010错误码。
+该接口仅在窗口为自由悬浮窗口模式（即窗口模式为window.WindowStatusType.FLOATING，窗口模式可通过[getWindowStatus()](#getwindowstatus12)获取）时调用生效，在其他窗口模式下调用返回错误码1300010。
 
 在自由悬浮窗口模式下，不同类型窗口的移动行为如下：
 
@@ -606,7 +606,7 @@ moveWindowToGlobal(x: number, y: number): Promise<void>
 
 基于屏幕坐标移动窗口位置，使用Promise异步回调。调用生效后返回，回调中可使用[getWindowProperties()](#getwindowproperties9)（见示例）立即获取最终生效结果。
 
-该接口仅在窗口为自由悬浮窗口模式（即窗口模式为window.WindowStatusType.FLOATING，窗口模式可通过[getWindowStatus()](#getwindowstatus12)获取）时调用生效，在其他窗口模式下调用返回错误码1300010错误码。
+该接口仅在窗口为自由悬浮窗口模式（即窗口模式为window.WindowStatusType.FLOATING，窗口模式可通过[getWindowStatus()](#getwindowstatus12)获取）时调用生效，在其他窗口模式下调用返回错误码1300010。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -667,7 +667,7 @@ moveWindowToGlobal(x: number, y: number, moveConfiguration?: MoveConfiguration):
 
 基于屏幕坐标移动窗口位置，支持配置moveConfiguration参数指定窗口移动的目标屏幕ID，使用Promise异步回调。调用生效后返回，回调中可使用[getWindowProperties()](#getwindowproperties9)（见示例）立即获取最终生效结果。
 
-该接口仅在窗口为自由悬浮窗口模式（即窗口模式为window.WindowStatusType.FLOATING，窗口模式可通过[getWindowStatus()](#getwindowstatus12)获取）时调用生效，在其他窗口模式下调用返回错误码1300010错误码。
+该接口仅在窗口为自由悬浮窗口模式（即窗口模式为window.WindowStatusType.FLOATING，窗口模式可通过[getWindowStatus()](#getwindowstatus12)获取）时调用生效，在其他窗口模式下调用返回错误码1300010。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -733,7 +733,7 @@ moveWindowToGlobalDisplay(x: number, y: number): Promise<void>
 
 基于[全局坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#global-coordinate-system全局坐标系)移动窗口位置，使用Promise异步回调。
 
-该接口仅在窗口为自由悬浮窗口模式（即窗口模式为window.WindowStatusType.FLOATING，窗口模式可通过[getWindowStatus()](#getwindowstatus12)获取）时调用生效，在其他窗口模式下调用返回错误码1300010错误码。
+该接口仅在窗口为自由悬浮窗口模式（即窗口模式为window.WindowStatusType.FLOATING，窗口模式可通过[getWindowStatus()](#getwindowstatus12)获取）时调用生效，在其他窗口模式下调用返回错误码1300010。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -3113,7 +3113,7 @@ export default class EntryAbility extends UIAbility {
   onWindowStageCreate(windowStage: window.WindowStage) {
     console.info('onWindowStageCreate');
     let storage: LocalStorage = new LocalStorage();
-    let newValue: Number = 121;
+    let newValue: number = 121;
     storage.setOrCreate('storageSimpleProp', newValue);
     try {
       let windowClass: window.Window = windowStage.getMainWindowSync();
@@ -10112,7 +10112,7 @@ struct Index {
         Blank('160')
           .color(Color.Red)
           .onTouch((event: TouchEvent) => {
-            if(event.type == TouchType.Down){
+            if (event.type == TouchType.Down) {
               this.isTouchDown = true;
             } else if (event.type === TouchType.Move && this.isTouchDown) {
               try {
@@ -10207,7 +10207,7 @@ struct Index {
         Blank('160')
           .color(Color.Red)
           .onTouch((event: TouchEvent) => {
-            if(event.type == TouchType.Down){
+            if (event.type == TouchType.Down) {
               this.isTouchDown = true;
             } else if (event.type === TouchType.Move && this.isTouchDown) {
               try {
@@ -11504,7 +11504,7 @@ convertOrientationAndRotation(from: RotationInfoType, to: RotationInfoType, valu
 
 ![](./img/note_3.0-zh-cn.png) 示意图和表格展示了直板机窗口方向、屏幕方向和屏幕角度的关系。
 
-![](./img/zh-cn_image_0000002685927915.png)
+![](./img/zh-cn_image_0000002659599864.png)
 
 | 屏幕角度 | 屏幕方向 | 窗口方向 |
 | --- | --- | --- |
@@ -11981,7 +11981,7 @@ resetSize(width: number, height: number, callback: AsyncCallback<void>): void
 
 应用主窗口与子窗口存在大小限制，默认宽度范围：[320, 1920]，默认高度范围：[240, 1920]，单位为vp。
 
-应用主窗口与子窗口的最小宽度与最小高度可由产品端进行配置，配置后的最小宽度与最小高度以产品段配置值为准，具体尺寸限制范围可以通过[getWindowLimits](#getwindowlimits11)接口进行查询。
+应用主窗口与子窗口的最小宽度与最小高度可由产品端进行配置，配置后的最小宽度与最小高度以产品端配置值为准，具体尺寸限制范围可以通过[getWindowLimits](#getwindowlimits11)接口进行查询。
 
 系统窗口存在大小限制，宽度范围：(0, 1920]，高度范围：(0, 1920]，单位为vp。
 
@@ -12028,7 +12028,7 @@ resetSize(width: number, height: number): Promise<void>
 
 应用主窗口与子窗口存在大小限制，默认宽度范围：[320, 1920]，默认高度范围：[240, 1920]，单位为vp。
 
-应用主窗口与子窗口的最小宽度与最小高度可由产品端进行配置，配置后的最小宽度与最小高度以产品段配置值为准，具体尺寸限制范围可以通过[getWindowLimits](#getwindowlimits11)接口进行查询。
+应用主窗口与子窗口的最小宽度与最小高度可由产品端进行配置，配置后的最小宽度与最小高度以产品端配置值为准，具体尺寸限制范围可以通过[getWindowLimits](#getwindowlimits11)接口进行查询。
 
 系统窗口存在大小限制，宽度范围：(0, 1920]，高度范围：(0, 1920]，单位为vp。
 

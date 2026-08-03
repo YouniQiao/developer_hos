@@ -2,8 +2,8 @@
 title: "@ohos.bundle (Bundle模块)"
 upstream_id: "harmonyos-references/js-apis-bundle"
 catalog: "harmonyos-references"
-content_hash: "8277b6ab42a9"
-synced_at: "2026-07-28T16:40:42.002952"
+content_hash: "bad099bff1ec"
+synced_at: "2026-08-03T17:09:22.645377"
 ---
 
 # @ohos.bundle (Bundle模块)
@@ -31,13 +31,13 @@ import bundle from '@ohos.bundle';
 
 #### bundle.getApplicationInfodeprecated
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
-
 getApplicationInfo(bundleName: string, bundleFlags: number, userId?: number): Promise<ApplicationInfo>
 
 根据给定的Bundle名称获取ApplicationInfo。使用Promise异步回调。
 
 获取调用方自己的信息时不需要权限。
+
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
 
 需要权限：
 
@@ -81,13 +81,13 @@ bundle.getApplicationInfo(bundleName, bundleFlags, userId)
 
 #### bundle.getApplicationInfodeprecated
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
-
 getApplicationInfo(bundleName: string, bundleFlags: number, userId: number, callback: AsyncCallback<ApplicationInfo>): void
 
 根据给定的Bundle名称获取指定用户下的ApplicationInfo，使用callback异步回调。
 
 获取调用方自己的信息时不需要权限。
+
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
 
 需要权限：
 
@@ -126,13 +126,13 @@ bundle.getApplicationInfo(bundleName, bundleFlags, userId, (err, data) => {
 
 #### bundle.getApplicationInfodeprecated
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
-
 getApplicationInfo(bundleName: string, bundleFlags: number, callback: AsyncCallback<ApplicationInfo>): void
 
 根据给定的Bundle名称获取ApplicationInfo，使用callback异步回调。
 
 获取调用方自己的信息时不需要权限。
+
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
 
 需要权限：
 
@@ -169,11 +169,11 @@ bundle.getApplicationInfo(bundleName, bundleFlags, (err, data) => {
 
 #### bundle.getAllBundleInfodeprecated
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
-
 getAllBundleInfo(bundleFlag: BundleFlag, userId?: number): Promise<Array<BundleInfo>>
 
 获取指定用户所有的BundleInfo，使用Promise形式异步回调。
+
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
 
 需要权限：
 
@@ -215,11 +215,11 @@ bundle.getAllBundleInfo(bundleFlag, userId)
 
 #### bundle.getAllBundleInfodeprecated
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
-
 getAllBundleInfo(bundleFlag: BundleFlag, callback: AsyncCallback<Array<BundleInfo>>): void
 
 获取当前用户所有的BundleInfo，使用callback异步回调。
+
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
 
 需要权限：
 
@@ -254,11 +254,11 @@ bundle.getAllBundleInfo(bundleFlag, (err, data) => {
 
 #### bundle.getAllBundleInfodeprecated
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
-
 getAllBundleInfo(bundleFlag: BundleFlag, userId: number, callback: AsyncCallback<Array<BundleInfo>>): void
 
 获取系统中指定用户下所有的BundleInfo，使用callback异步回调。
+
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
 
 需要权限：
 
@@ -295,13 +295,13 @@ bundle.getAllBundleInfo(bundleFlag, userId, (err, data) => {
 
 #### bundle.getBundleInfodeprecated
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，建议使用[getBundleInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundleinfo14-2)替代。
-
 getBundleInfo(bundleName: string, bundleFlags: number, options?: BundleOptions): Promise<BundleInfo>
 
 根据给定的Bundle名称获取BundleInfo，使用Promise异步回调。
 
 获取调用方自己的信息时不需要权限。
+
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，建议使用[getBundleInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundleinfo14-2)替代。
 
 需要权限：
 
@@ -347,13 +347,13 @@ bundle.getBundleInfo(bundleName, bundleFlags, options)
 
 #### bundle.getBundleInfodeprecated
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，建议使用[getBundleInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundleinfo14-1)替代。
-
 getBundleInfo(bundleName: string, bundleFlags: number, callback: AsyncCallback<BundleInfo>): void
 
 根据给定的Bundle名称获取BundleInfo，使用callback异步回调。
 
 获取调用方自己的信息时不需要权限。
+
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，建议使用[getBundleInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundleinfo14-1)替代。
 
 需要权限：
 
@@ -390,13 +390,13 @@ bundle.getBundleInfo(bundleName, bundleFlags, (err, data) => {
 
 #### bundle.getBundleInfodeprecated
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，建议使用[getBundleInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundleinfo14)替代。
-
 getBundleInfo(bundleName: string, bundleFlags: number, options: BundleOptions, callback: AsyncCallback<BundleInfo>): void
 
 根据给定的Bundle名称获取BundleInfo，使用callback异步回调。
 
 获取调用方自己的信息时不需要权限。
+
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，建议使用[getBundleInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundleinfo14)替代。
 
 需要权限：
 
@@ -437,11 +437,11 @@ bundle.getBundleInfo(bundleName, bundleFlags, options, (err, data) => {
 
 #### bundle.getAllApplicationInfodeprecated
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
-
 getAllApplicationInfo(bundleFlags: number, userId?: number): Promise<Array<ApplicationInfo>>
 
 获取指定用户下所有已安装的应用信息，使用Promise异步回调。
+
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
 
 需要权限：
 
@@ -483,11 +483,11 @@ bundle.getAllApplicationInfo(bundleFlags, userId)
 
 #### bundle.getAllApplicationInfodeprecated
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
-
 getAllApplicationInfo(bundleFlags: number, userId: number, callback: AsyncCallback<Array<ApplicationInfo>>): void
 
 获取指定用户下所有已安装的应用信息，使用callback异步回调。
+
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
 
 需要权限：
 
@@ -524,11 +524,11 @@ bundle.getAllApplicationInfo(bundleFlags, userId, (err, data) => {
 
 #### bundle.getAllApplicationInfodeprecated
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
-
 getAllApplicationInfo(bundleFlags: number, callback: AsyncCallback<Array<ApplicationInfo>>): void
 
 获取调用方所在用户下已安装的应用信息，使用callback异步回调。
+
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
 
 需要权限：
 
@@ -563,11 +563,11 @@ bundle.getAllApplicationInfo(bundleFlags, (err, data) => {
 
 #### bundle.getBundleArchiveInfodeprecated
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
-
 getBundleArchiveInfo(hapFilePath: string, bundleFlags: number) : Promise<BundleInfo>
 
 获取有关HAP中包含的应用程序包的信息，使用Promise异步回调。
+
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
 
 系统能力：
 
@@ -605,11 +605,11 @@ bundle.getBundleArchiveInfo(hapFilePath, bundleFlags)
 
 #### bundle.getBundleArchiveInfodeprecated
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
-
 getBundleArchiveInfo(hapFilePath: string, bundleFlags: number, callback: AsyncCallback<BundleInfo>) : void
 
 获取有关HAP中包含的应用程序包的信息，使用callback异步回调。
+
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
 
 系统能力：
 
@@ -642,13 +642,13 @@ bundle.getBundleArchiveInfo(hapFilePath, bundleFlags, (err, data) => {
 
 #### bundle.getAbilityInfodeprecated
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
-
 getAbilityInfo(bundleName: string, abilityName: string): Promise<AbilityInfo>
 
 通过Bundle名称和组件名获取Ability组件信息，使用Promise形式异步回调。
 
 获取调用方自己的信息时不需要权限。
+
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
 
 需要权限：
 
@@ -690,13 +690,13 @@ bundle.getAbilityInfo(bundleName, abilityName)
 
 #### bundle.getAbilityInfodeprecated
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
-
 getAbilityInfo(bundleName: string, abilityName: string, callback: AsyncCallback<AbilityInfo>): void
 
 通过Bundle名称和组件名获取Ability组件信息，使用callback异步回调。
 
 获取调用方自己的信息时不需要权限。
+
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
 
 需要权限：
 
@@ -733,13 +733,13 @@ bundle.getAbilityInfo(bundleName, abilityName, (err, data) => {
 
 #### bundle.getAbilityLabel8+ deprecated
 
-![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
-
 getAbilityLabel(bundleName: string, abilityName: string): Promise<string>
 
 通过Bundle名称和ability名称获取应用名称，使用Promise异步回调。
 
 获取调用方自己的信息时不需要权限。
+
+![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
 
 需要权限：
 
@@ -781,13 +781,13 @@ bundle.getAbilityLabel(bundleName, abilityName)
 
 #### bundle.getAbilityLabel8+ deprecated
 
-![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
-
 getAbilityLabel(bundleName: string, abilityName: string, callback : AsyncCallback<string>): void
 
 通过Bundle名称和Ability组件名获取应用名称，使用callback异步回调。
 
 获取调用方自己的信息时不需要权限。
+
+![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
 
 需要权限：
 
@@ -824,11 +824,11 @@ bundle.getAbilityLabel(bundleName, abilityName, (err, data) => {
 
 #### bundle.isAbilityEnabled8+ deprecated
 
-![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
-
 isAbilityEnabled(info: AbilityInfo): Promise<boolean>
 
 根据给定的AbilityInfo查询ability是否已经启用，使用Promise异步回调。
+
+![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
 
 系统能力：
 
@@ -866,11 +866,11 @@ bundle.getAbilityInfo(bundleName, abilityName).then((abilityInfo) => {
 
 #### bundle.isAbilityEnabled8+ deprecated
 
-![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
-
 isAbilityEnabled(info : AbilityInfo, callback : AsyncCallback<boolean>): void
 
 根据给定的AbilityInfo查询ability是否已经启用，使用callback异步回调。
+
+![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
 
 系统能力：
 
@@ -904,11 +904,11 @@ bundle.getAbilityInfo(bundleName, abilityName).then((abilityInfo) => {
 
 #### bundle.isApplicationEnabled8+ deprecated
 
-![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
-
 isApplicationEnabled(bundleName: string): Promise<boolean>
 
 根据给定的bundleName查询指定应用程序是否已经启用，使用Promise异步回调。
+
+![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
 
 系统能力：
 
@@ -944,11 +944,11 @@ bundle.isApplicationEnabled(bundleName)
 
 #### bundle.isApplicationEnabled8+ deprecated
 
-![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
-
 isApplicationEnabled(bundleName: string, callback : AsyncCallback<boolean>): void
 
 根据给定的bundleName查询指定应用程序是否已经启用，使用callback异步回调。
+
+![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
 
 系统能力：
 
@@ -979,13 +979,13 @@ bundle.isApplicationEnabled(bundleName, (err, data) => {
 
 #### bundle.queryAbilityByWantdeprecated
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
-
 queryAbilityByWant(want: Want, bundleFlags: number, userId?: number): Promise<Array<AbilityInfo>>
 
 根据给定的意图获取Ability组件信息，使用Promise异步回调。
 
 获取调用方自己的信息时不需要权限。
+
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
 
 需要权限：
 
@@ -1033,13 +1033,13 @@ bundle.queryAbilityByWant(want, bundleFlags, userId)
 
 #### bundle.queryAbilityByWantdeprecated
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
-
 queryAbilityByWant(want: Want, bundleFlags: number, userId: number, callback: AsyncCallback<Array<AbilityInfo>>): void
 
 根据给定的意图获取指定用户下Ability信息，使用callback异步回调。
 
 获取调用方自己的信息时不需要权限。
+
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
 
 需要权限：
 
@@ -1082,13 +1082,13 @@ bundle.queryAbilityByWant(want, bundleFlags, userId, (err, data) => {
 
 #### bundle.queryAbilityByWantdeprecated
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
-
 queryAbilityByWant(want: Want, bundleFlags: number, callback: AsyncCallback<Array<AbilityInfo>>): void
 
 根据给定的意图获取Ability信息，使用callback异步回调。
 
 获取调用方自己的信息时不需要权限。
+
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
 
 需要权限：
 
@@ -1129,11 +1129,11 @@ bundle.queryAbilityByWant(want, bundleFlags, (err, data) => {
 
 #### bundle.getLaunchWantForBundledeprecated
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
-
 getLaunchWantForBundle(bundleName: string): Promise<Want>
 
 查询拉起指定应用的want对象，使用Promise异步回调。
+
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
 
 需要权限：
 
@@ -1173,11 +1173,11 @@ bundle.getLaunchWantForBundle(bundleName)
 
 #### bundle.getLaunchWantForBundledeprecated
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
-
 getLaunchWantForBundle(bundleName: string, callback: AsyncCallback<Want>): void
 
 查询拉起指定应用的want对象，使用callback异步回调。
+
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，替代接口仅向系统应用开放。
 
 需要权限：
 
@@ -1212,11 +1212,11 @@ bundle.getLaunchWantForBundle(bundleName, (err, data) => {
 
 #### bundle.getNameForUid8+ deprecated
 
-![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[getBundleNameByUid](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundlenamebyuid14-1)替代。
-
 getNameForUid(uid: number): Promise<string>
 
 通过uid获取对应的Bundle名称，使用Promise异步回调。
+
+![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[getBundleNameByUid](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundlenamebyuid14-1)替代。
 
 系统能力：
 
@@ -1250,13 +1250,13 @@ bundle.getNameForUid(uid)
   })
 ```
 
-#### bundle.8+ deprecated
-
-![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[getBundleNameByUid](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundlenamebyuid14)替代。
+#### bundle.getNameForUid8+ deprecated
 
 getNameForUid(uid: number, callback: AsyncCallback<string>) : void
 
 通过uid获取对应的Bundle名称，使用callback异步回调。
+
+![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[getBundleNameByUid](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundlenamebyuid14)替代。
 
 系统能力：
 
@@ -1287,13 +1287,13 @@ bundle.getNameForUid(uid, (err, data) => {
 
 #### bundle.getAbilityIcon8+ deprecated
 
-![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[resourceManager.getMediaContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager#getmediacontent9)替代。
-
 getAbilityIcon(bundleName: string, abilityName: string): Promise<image.PixelMap>
 
 通过bundleName和abilityName获取对应Icon的[PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)，使用Promise异步回调。
 
 获取调用方自己的信息时不需要权限。
+
+![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[resourceManager.getMediaContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager#getmediacontent9)替代。
 
 需要权限：
 
@@ -1335,13 +1335,13 @@ bundle.getAbilityIcon(bundleName, abilityName)
 
 #### bundle.getAbilityIcon8+ deprecated
 
-![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[resourceManager.getMediaContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager#getmediacontent9)替代。
-
 getAbilityIcon(bundleName: string, abilityName: string, callback: AsyncCallback<image.PixelMap>): void
 
 通过bundleName和abilityName获取对应Icon的[PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)，使用callback异步回调。
 
 获取调用方自己的信息时不需要权限。
+
+![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[resourceManager.getMediaContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager#getmediacontent9)替代。
 
 需要权限：
 

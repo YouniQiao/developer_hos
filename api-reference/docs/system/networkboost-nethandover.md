@@ -2,13 +2,13 @@
 title: "netHandover（连接迁移）"
 upstream_id: "harmonyos-references/networkboost-nethandover"
 catalog: "harmonyos-references"
-content_hash: "1da1fe8d2fa1"
-synced_at: "2026-07-09T17:26:28.194435"
+content_hash: "3bb385ba2d30"
+synced_at: "2026-08-03T17:11:14.575923"
 ---
 
 # netHandover（连接迁移）
 
-本模块提供网络连接迁移能力，以便在弱网环境下，系统发起多网迁移（WiFi<->蜂窝，主卡<->副卡等）的过程中，给应用提供连接迁移开始和完成通知，应用根据连接迁移通知的建议进行重建，快速恢复业务，给用户带来平滑、高速、低时延的上网体验。
+本模块提供网络连接迁移能力，以便在弱网环境下，系统发起多网迁移（Wi-Fi与蜂窝网络切换，主卡与副卡切换等）的过程中，给应用提供连接迁移开始和完成通知，应用根据连接迁移通知的建议进行重建，快速恢复业务，给用户带来平滑、高速、低时延的上网体验。
 
 起始版本： 5.0.0(12)
 
@@ -43,7 +43,7 @@ on(type: 'handoverChange', callback: Callback<HandoverInfo>): void
 
 错误码：
 
-涉及错误码均为通用错误码，[通用错误码详细描述查看](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -96,7 +96,7 @@ off(type: 'handoverChange', callback?: Callback<HandoverInfo>): void
 
 错误码：
 
-涉及错误码均为通用错误码，[通用错误码详细描述查看](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -140,7 +140,7 @@ setHandoverMode(mode: HandoverMode): void
 
 错误码：
 
-涉及错误码均为通用错误码，[通用错误码详细描述查看](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -530,8 +530,8 @@ try {
 | handoverContinue | boolean | 否 | 否 | 是否还有HandoverComplete消息。 true表示还有新链路待激活，系统还会上报HandoverComplete消息，一般发生在连接迁移到多个网络的场景。 false表示当前已经是最后一个HandoverComplete消息，连接迁移流程完成。 |
 | oldPathLifetime | number | 否 | 否 | 老链路的剩余生存时长，单位为s，取值为任意正整数或0。 |
 | oldDataSpeedAction | [DataSpeedAction](#dataspeedaction) | 否 | 否 | 老链路发包建议。 |
-| pathTypeChanged | boolean | 否 | 否 | 新老链路类型是否发生变更。true表示发生变化，如WiFi蜂窝。false表示没有发生变化。 |
-| newNetHandle | [connection.NetHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-net-connection#nethandle) | 否 | 是 | 新链路的NetHandle信息。 |
+| pathTypeChanged | boolean | 否 | 否 | 新老链路类型是否发生变更。true表示发生变化，如Wi-Fi切换到蜂窝。false表示没有发生变化。 |
+| newNetHandle | [connection.NetHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-net-connection#nethandle) | 否 | 是 | 若连接迁移成功，newNetHandle为新链路的NetHandle信息，若连接迁移失败，则不返回该信息，此时视为无新链路，新链路NetHandle中的netdId默认为0。 |
 | reEstAction | [ReEstAction](#reestaction) | 否 | 否 | 链路重建类型。 |
 | newDataSpeedAction | [DataSpeedAction](#dataspeedaction) | 否 | 否 | 新链路发包建议。 |
 
@@ -752,9 +752,9 @@ try {
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
 | DEFAULT | 0 | 表示应用需要使用同样的远端IP，进行重建链路。 |
-| QUERY_DNS | 1 | 表示数据链路类型发生变化，比如WiFi 蜂窝，或者是数据链路所在的运营商信息等变化。 |
+| QUERY_DNS | 1 | 表示数据链路类型发生变化，比如Wi-Fi切换到蜂窝，或者是数据链路所在的运营商信息等变化。 |
 | CHANGE_REMOTE_IP | 2 | 表示应用需要使用不同的远端IP进行重建。 |
-| CHANGE_IP_VERSION | 3 | 表示应用需要修改IP类型进行重建，比如IPV4 IPV6。 |
+| CHANGE_IP_VERSION | 3 | 表示应用需要修改IP类型进行重建，比如IPv4修改为IPv6或者IPv6修改为IPv4。 |
 | NO_EST | 4 | 表示应用应该在老链路进行立即重试，再次发起网络资源请求和交互，无需重建链路。 |
 
 #### ErrorResult

@@ -2,8 +2,8 @@
 title: "@ohos.file.PhotoPickerComponent (PhotoPicker组件)"
 upstream_id: "harmonyos-references/ohos-file-photopickercomponent"
 catalog: "harmonyos-references"
-content_hash: "24e75b1b181b"
-synced_at: "2026-07-28T16:52:05.228702"
+content_hash: "6c4f995daeef"
+synced_at: "2026-08-03T17:12:06.040744"
 ---
 
 # @ohos.file.PhotoPickerComponent (PhotoPicker组件)
@@ -65,7 +65,7 @@ PhotoPickerComponent({ pickerOptions?: PickerOptions, onSelect?: (uri: string) =
 | onEnterPhotoBrowser | (photoBrowserInfo: [PhotoBrowserInfo](#photobrowserinfo)) => boolean | 否 | - | 点击进入大图时产生的回调事件，将大图相关信息报给应用。不对返回值做特殊处理。 **元服务API**：从API version 12开始，该接口支持在元服务中使用。 |
 | onExitPhotoBrowser | (photoBrowserInfo: [PhotoBrowserInfo](#photobrowserinfo)) => boolean | 否 | - | 退出大图时产生的回调事件，将大图相关信息报给应用。不对返回值做特殊处理。 **元服务API**：从API version 12开始，该接口支持在元服务中使用。 |
 | onPickerControllerReady | () => void | 否 | - | 当pickerController可用时产生的回调事件。 调用PickerController相关接口需在该回调后才能生效。 **元服务API**：从API version 12开始，该接口支持在元服务中使用。 |
-| onPhotoBrowserChanged | (browserItemInfo: [BaseItemInfo](#baseiteminfo)) => boolean | 否 | - | 大图左右滑动时产生的回调事件，将大图相关信息报给应用。仅在多选模式下生效。不对返回值做特殊处理。 **元服务API**：从API version 12开始，该接口支持在元服务中使用。 |
+| onPhotoBrowserChanged | (browserItemInfo: [BaseItemInfo](#baseiteminfo)) => boolean | 否 | - | 大图左右滑动时产生的回调事件，将大图相关信息报给应用。仅在多选模式下生效。不对返回值做特殊处理。 **注意：** 返回信息只包含[BaseItemInfo](#baseiteminfo)中的uri、photoSubType和mimeType。 **元服务API**：从API version 12开始，该接口支持在元服务中使用。 |
 | onSelectedItemsDeleted13+ | [ItemsDeletedCallback](#itemsdeletedcallback13) | 否 | - | 已勾选的图片被删除时产生的回调，并将被删除图片的相关信息回调给应用。 **元服务API**：从API version 13开始，该接口支持在元服务中使用。 |
 | onExceedMaxSelected13+ | [ExceedMaxSelectedCallback](#exceedmaxselectedcallback13) | 否 | - | 选择达到最大选择数量（最大图片选择数量或者是最大视频选择数量亦或是总的最大选择数量）之后再次点击勾选时产生的回调。 - 若选择的数量达到了最大图片选择数量且未达到总的最大选择数量则回调的参数exceedMaxCountType为[MaxCountType](#maxcounttype).PHOTO_MAX_COUNT。 - 若选择的数量达到了最大视频选择数量且未达到总的最大选择数量则回调的参数exceedMaxCountType为[MaxCountType](#maxcounttype).VIDEO_MAX_COUNT。 - 只要选择的数量达到了总的最大选择数量则回调的参数exceedMaxCountType为[MaxCountType](#maxcounttype).TOTAL_MAX_COUNT。 **元服务API**：从API version 13开始，该接口支持在元服务中使用。 |
 | onCurrentAlbumDeleted13+ | [CurrentAlbumDeletedCallback](#currentalbumdeletedcallback13) | 否 | - | 当前相册被删除时产生的回调。 当前相册是指通过pickerController.[setData](#setdata)([DataType](#datatype).SET_ALBUM_URI, currentAlbumUri)接口设置给宫格组件的相册，即“currentAlbumUri”。 当前相册被删除后若使用方刷新自己的相册标题栏，使用方可以设置自己的标题栏名称为默认的相册名例如“图片和视频”、“图片”或“视频”，然后通过pickerController.[setData](#setdata)([DataType](#datatype).SET_ALBUM_URI, '')接口传空串去刷新宫格页为默认相册。 **元服务API**：从API version 13开始，该接口支持在元服务中使用。 |
@@ -397,7 +397,7 @@ type PhotoBrowserChangeStartCallback = (targetPhotoInfo: BaseItemInfo) => void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| targetPhotoInfo | [BaseItemInfo](#baseiteminfo) | 是 | 照片的基本信息。 |
+| targetPhotoInfo | [BaseItemInfo](#baseiteminfo) | 是 | 照片的基本信息。 **注意：** 返回信息只包含[BaseItemInfo](#baseiteminfo)中的uri、photoSubType、mimeType和movingPhotoBadgeState。 |
 
 #### PinchGridSwitchedCallback23+
 
@@ -437,7 +437,7 @@ PhotoPickerComponent产生错误时的回调。
 
 #### PhotoBrowserZoomCallback
 
-export type PhotoBrowserZoomCallback = (scale: number) => void
+type PhotoBrowserZoomCallback = (scale: number) => void
 
 PhotoPickerComponent进入大图后，大图放大缩小时的回调。
 

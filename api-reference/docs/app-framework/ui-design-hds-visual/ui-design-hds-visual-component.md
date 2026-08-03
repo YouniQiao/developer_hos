@@ -2,8 +2,8 @@
 title: "HdsVisualComponent"
 upstream_id: "harmonyos-references/ui-design-hds-visual-component"
 catalog: "harmonyos-references"
-content_hash: "333767620daf"
-synced_at: "2026-07-09T00:59:10.311534"
+content_hash: "236d0eeab2dd"
+synced_at: "2026-08-03T17:10:48.191580"
 ---
 
 # HdsVisualComponent
@@ -82,8 +82,6 @@ scene(sceneType: HdsSceneType, controller: HdsSceneController, callback?: HdsSce
 视效场景。
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-卡片能力： 从6.0.2(22)开始，该接口支持在ArkTS卡片中使用。
 
 系统能力： SystemCapability.UIDesign.HDSComponent.Core
 
@@ -273,4 +271,4 @@ struct EdgeFlowLightVisualComponent {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631414130.gif)
+ ![](./img/zh-cn_image_0000002659600986.gif)

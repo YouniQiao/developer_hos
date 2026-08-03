@@ -2,8 +2,8 @@
 title: "ServiceCollaborationCallback"
 upstream_id: "harmonyos-references/servicecollaborationcallback"
 catalog: "harmonyos-references"
-content_hash: "0cd075009c52"
-synced_at: "2026-07-09T00:59:37.212839"
+content_hash: "69e2b2dde048"
+synced_at: "2026-08-03T17:11:19.290881"
 ---
 
 # ServiceCollaborationCallback
@@ -44,7 +44,7 @@ int32_t(* ServiceCollaborationCallback::OnDataCallback) (ServiceCollaborationEve
 | --- | --- |
 | [ServiceCollaborationEventCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/servicecollaboration-capi-module#servicecollaborationeventcode-1) code | 错误码。 |
 | [ServiceCollaborationDataType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/servicecollaboration-capi-module#servicecollaborationdatatype-1) dataType | 回传数据类型。 |
-| uint32_t dataSize | 数据大小，单位是字节。 |
+| uint32_t dataSize | 数据大小，单位：byte。 |
 | char *data | 数据。 |
 
 #### [h2]OnEvent

@@ -2,8 +2,8 @@
 title: "事件"
 upstream_id: "harmonyos-references/arkts-basic-components-web-events"
 catalog: "harmonyos-references"
-content_hash: "47ee4c8b9e1f"
-synced_at: "2026-07-09T17:25:38.433049"
+content_hash: "17bb6e967f00"
+synced_at: "2026-08-03T17:10:37.054042"
 ---
 
 # 事件
@@ -2367,7 +2367,7 @@ struct WebComponent {
 
 onGeolocationShow(callback: Callback<OnGeolocationShowEvent>)
 
-通知用户收到地理位置信息获取请求，需配置"ohos.permission.LOCATION"、"ohos.permission.APPROXIMATELY_LOCATION"权限。使用callback异步回调。
+通知用户收到地理位置信息获取请求，需配置"ohos.permission.LOCATION"、"ohos.permission.APPROXIMATELY_LOCATION"权限。使用callback异步回调。用于显示自定义的位置权限申请弹窗、实现位置服务说明、根据应用需求选择是否授权，提供更好的位置权限管理体验。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -2400,7 +2400,7 @@ struct WebComponent {
       console.error("context is undefined");
       return;
     }
-    // 向用户请求位置权限，对整个应用生效
+    // 请求位置权限，对整个应用生效
     atManager.requestPermissionsFromUser(context, ["ohos.permission.LOCATION", "ohos.permission.APPROXIMATELY_LOCATION"]).then((data) => {
       console.info('data:' + JSON.stringify(data));
       console.info('data permissions:' + data.permissions);
@@ -2425,13 +2425,13 @@ struct WebComponent {
                 value: 'onConfirm',
                 action: () => {
                   // 允许此站点位置权限请求
-                  // invoke的第三个参数表示是否记住当前弹窗的选择状态，如果传入true，则下次不再弹出对话框
+                  // invoke的第三个参数表示是否记住当前弹窗的选择状态，传入true则下次不再弹出对话框
                   event.geolocation.invoke(event.origin, true, false);
                 }
               },
               cancel: () => {
                 // 不允许此站点位置权限请求
-                // invoke的第三个参数表示是否记住当前弹窗的选择状态，如果传入true，则下次不再弹出对话框
+                // invoke的第三个参数表示是否记住当前弹窗的选择状态，传入true则下次不再弹出对话框
                 event.geolocation.invoke(event.origin, false, false);
               }
             })
@@ -2469,7 +2469,7 @@ function showPosition(position){
 
 onGeolocationHide(callback: () => void)
 
-通知用户先前被调用[onGeolocationShow](#ongeolocationshow)时收到地理位置信息获取请求已被取消。
+通知用户先前被调用[onGeolocationShow](#ongeolocationshow)时收到地理位置信息获取请求已被取消。用于清理定位相关资源，优化资源使用。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -3346,6 +3346,9 @@ onLoadIntercept(callback: Callback<OnLoadInterceptEvent, boolean>)
 
 ![](./img/note_3.0-zh-cn.png)
 
+- onLoadIntercept是在页面导航前同步触发的回调，回调返回前当前导航处于挂起状态。
+- 禁止在回调中直接调用会触发新导航的接口（如[refresh()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#refresh)、[loadurl()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#loadurl)、[setCustomUserAgent()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#setcustomuseragent10)等），否则会导致回调重入或导航状态混乱。
+- 如需在拦截后重新加载页面，应在回调返回后通过[setTimeout()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-timer#settimeout)等异步方法延迟调用。
 - onLoadIntercept无法获取到完整的headers，如需获取完整headers建议在[onInterceptRequest](#oninterceptrequest9)或者通过WebSchemeHandler的[onRequestStart](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webschemehandler#onrequeststart12)中获取。
 
 系统能力： SystemCapability.Web.Webview.Core

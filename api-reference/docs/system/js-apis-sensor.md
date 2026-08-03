@@ -2,8 +2,8 @@
 title: "@ohos.sensor (传感器)"
 upstream_id: "harmonyos-references/js-apis-sensor"
 catalog: "harmonyos-references"
-content_hash: "e388f31e85d4"
-synced_at: "2026-07-28T16:51:19.992220"
+content_hash: "58af06d5a89b"
+synced_at: "2026-08-03T17:11:35.647575"
 ---
 
 # @ohos.sensor (传感器)
@@ -3764,7 +3764,7 @@ off(type: SensorId.LINEAR_ACCELEROMETER, sensorInfoParam?: SensorInfoParam, call
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | [SensorId](#sensorid9).LINEAR_ACCELEROMETER | 是 | 传感器类型，该值固定为SensorId.LINEAR_ACCELERATION。 |
+| type | [SensorId](#sensorid9).LINEAR_ACCELEROMETER | 是 | 传感器类型，该值固定为SensorId.LINEAR_ACCELEROMETER。 |
 | sensorInfoParam | [SensorInfoParam](#sensorinfoparam19) | 否 | 传感器传入设置参数，可指定deviceId和sensorIndex，用于取消指定设备上指定传感器的订阅。不传入时默认取消本地设备该类型所有传感器的订阅。 |
 | callback | Callback | 否 | 需要取消订阅的回调函数，若无此参数，则取消订阅当前类型的所有回调函数。 |
 

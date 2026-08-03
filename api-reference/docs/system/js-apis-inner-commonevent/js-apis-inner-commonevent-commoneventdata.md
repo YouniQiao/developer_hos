@@ -2,8 +2,8 @@
 title: "CommonEventData"
 upstream_id: "harmonyos-references/js-apis-inner-commonevent-commoneventdata"
 catalog: "harmonyos-references"
-content_hash: "2677121a0f6e"
-synced_at: "2026-07-28T16:50:58.061908"
+content_hash: "be9c03fffdcc"
+synced_at: "2026-08-03T17:11:21.957476"
 ---
 
 # CommonEventData
@@ -22,6 +22,6 @@ synced_at: "2026-07-28T16:50:58.061908"
 | --- | --- | --- | --- | --- |
 | event | string | 否 | 否 | 表示当前接收的公共事件名称。 |
 | bundleName | string | 否 | 是 | 表示发布公共事件的应用包名，默认为空字符串。 |
-| code | number | 否 | 是 | 表示订阅者接收到的公共事件数据（number类型）。该字段取值与发布者使用[commonEventManager.publish](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-commoneventmanager#commoneventmanagerpublish-1)发布公共事件时，通过[CommonEventPublishData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-commonevent-commoneventpublishdata)中的code字段传递的数据一致。取值范围[-2147483648, 2147483647]，默认值为0。 |
-| data | string | 否 | 是 | 表示订阅者接收到的公共事件数据（string类型），数据大小不超过64KB。该字段取值与发布者使用[commonEventManager.publish](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-commoneventmanager#commoneventmanagerpublish-1)发布公共事件时，通过[CommonEventPublishData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-commonevent-commoneventpublishdata)中的data字段传递的数据一致。 |
+| code | number | 否 | 是 | 表示订阅者接收到的公共事件数据。该字段取值与发布者使用[commonEventManager.publish](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-commoneventmanager#commoneventmanagerpublish-1)发布公共事件时，通过[CommonEventPublishData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-commonevent-commoneventpublishdata)中的code字段传递的数据一致。取值范围[-2147483648, 2147483647]，默认值为0。 |
+| data | string | 否 | 是 | 表示订阅者接收到的公共事件数据，数据大小不超过64KB。该字段取值与发布者使用[commonEventManager.publish](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-commoneventmanager#commoneventmanagerpublish-1)发布公共事件时，通过[CommonEventPublishData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-commonevent-commoneventpublishdata)中的data字段传递的数据一致。 |
 | parameters | {[key: string]: any} | 否 | 是 | 表示订阅者接收到的公共事件的附加信息。该字段取值与发布者使用[commonEventManager.publish](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-commoneventmanager#commoneventmanagerpublish-1)发布公共事件时，通过[CommonEventPublishData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-commonevent-commoneventpublishdata)中的parameters字段传递的数据一致。 |

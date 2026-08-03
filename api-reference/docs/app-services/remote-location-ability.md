@@ -2,8 +2,8 @@
 title: "RemoteLocationExtensionAbility（定位扩展Ability）"
 upstream_id: "harmonyos-references/remote-location-ability"
 catalog: "harmonyos-references"
-content_hash: "923333664f5b"
-synced_at: "2026-07-09T01:01:37.638933"
+content_hash: "646e97bad922"
+synced_at: "2026-08-03T17:12:39.208893"
 ---
 
 # RemoteLocationExtensionAbility（定位扩展Ability）
@@ -18,13 +18,17 @@ RemoteLocationExtensionAbility为定位扩展Ability，提供获取消息数据�
 - 不允许调用通知API、卡片API。
 - 生命周期根据场景受控，默认小于10秒，超过10秒子进程生命周期结束。
 
-执行ExtensionAbility失败可能会返回错误，请按具体报错信息排查，详请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-error-code)。
+执行ExtensionAbility失败可能会返回错误，请按具体报错信息排查，详见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-error-code)。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.Push.PushService
 
 起始版本： 4.1.0(11)
+
+#### 约束限制
+
+为保障系统安全性和稳定性，防止RemoteLocationExtensionAbility滥用系统资源，系统对其能力进行管控， 不支持部分模块的引用，详情请参考[附录](#附录)。
 
 #### 导入模块
 
@@ -156,3 +160,15 @@ export default class RemoteLocationExtAbility extends RemoteLocationExtensionAbi
   }
 }
 ```
+
+#### 附录
+
+RemoteLocationExtensionAbility不支持以下模块的引用。
+
+| Kit | 模块 |
+| --- | --- |
+| Notification Kit | [@ohos.notification (Notification模块)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notification) [@ohos.notificationManager (NotificationManager模块)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationmanager) |
+| Form Kit | [@ohos.app.form.formProvider (formProvider)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formprovider) [@ohos.app.form.formInfo (formInfo)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-forminfo) [@ohos.app.form.formBindingData (卡片数据绑定类)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formbindingdata) [@ohos.app.form.FormExtensionAbility (FormExtensionAbility)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formextensionability) [@ohos.application.formBindingData (卡片数据绑定类)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-application-formbindingdata) [@ohos.application.formInfo (formInfo)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-application-forminfo) [@ohos.application.formProvider (formProvider)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-application-formprovider) |
+| ArkUI | [@ohos.prompt (弹窗)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-prompt) [@ohos.promptAction (弹窗)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction) [@ohos.window (窗口)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-window) |
+| Live View Kit | [core.liveview.liveViewManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-liveviewmanager) |
+| Call Service Kit | [telephony.voipCall](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/call-voipcall) |

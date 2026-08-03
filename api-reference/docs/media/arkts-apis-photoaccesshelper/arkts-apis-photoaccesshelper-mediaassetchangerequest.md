@@ -2,8 +2,8 @@
 title: "Class (MediaAssetChangeRequest)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-mediaassetchangerequest"
 catalog: "harmonyos-references"
-content_hash: "d72b86617ec4"
-synced_at: "2026-07-28T16:52:03.370636"
+content_hash: "31f141f68532"
+synced_at: "2026-08-03T17:12:05.257009"
 ---
 
 # Class (MediaAssetChangeRequest)
@@ -627,7 +627,12 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 
 saveCameraPhoto(): void
 
-保存相机拍摄的照片。
+拍照场景下，使用该接口保存相机拍摄的照片资源。
+
+![](./img/note_3.0-zh-cn.png)
+
+- 非YUV拍摄模式下，照片资源保存的编码格式与[CameraFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-e#cameraformat)保持一致。
+- YUV拍摄模式下，该接口无法指定编码格式，图片资源保存为默认的jpg格式。
 
 系统能力：SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -662,7 +667,13 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, asse
 
 saveCameraPhoto(imageFileType: ImageFileType): void
 
-保存相机拍摄的照片。需要指定保存的类型。
+拍照场景下，使用该接口保存相机拍摄的照片资源。
+
+![](./img/note_3.0-zh-cn.png)
+
+- 非YUV拍摄模式下，照片资源保存的编码格式与[CameraFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-e#cameraformat)保持一致。
+- YUV拍摄模式下，该接口根据[ImageFileType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#imagefiletype13)将YUV对象编码为指定格式。
+- 当该接口与[addResource](#addresource11-1)组合使用时，照片资源保存的编码格式与[addResource](#addresource11-1)添加资源的编码格式保持一致。
 
 系统能力：SystemCapability.FileManagement.PhotoAccessHelper.Core
 

@@ -2,8 +2,8 @@
 title: "滚动组件通用接口"
 upstream_id: "harmonyos-references/ts-container-scrollable-common"
 catalog: "harmonyos-references"
-content_hash: "3bb2a87f8ceb"
-synced_at: "2026-07-28T16:43:50.315920"
+content_hash: "90a5826d5cc5"
+synced_at: "2026-08-03T17:09:47.999524"
 ---
 
 # 滚动组件通用接口
@@ -335,7 +335,7 @@ clipContent(clip: ContentClipMode | RectShape): T
 
 设置滚动容器的内容层裁剪区域。
 
-从API版本26.0.0开始，内容层裁剪区域内的子组件支持正常显示。API版本26.0.0以前的版本，当List、Grid和WaterFlow组件的内容层裁剪区域大于组件自身时，完全在组件区域外但在裁剪区域内的子组件默认不会显示。若需要显示，可将组件的cachedCount属性的show参数设置为true。但由于cachedCount属性设置的预加载子组件仅在空闲时隙执行，在组件大小变化、数据更新等场景下可能存在更新不及时导致闪烁的问题。
+从API版本26.0.0开始，内容层裁剪区域内的子组件支持正常显示。API版本26.0.0以前的版本，当[List](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list)组件的内容层裁剪区域大于组件自身时，完全在组件区域外但在裁剪区域内的子组件默认不会显示。若需要显示，可将组件的cachedCount属性的show参数设置为true。但由于cachedCount属性设置的预加载子组件仅在空闲时隙执行，在组件大小变化、数据更新等场景下可能存在更新不及时导致闪烁的问题。
 
 元服务API： 从API version 14开始，该接口支持在元服务中使用。
 
@@ -966,7 +966,7 @@ List/Grid组件编辑模式选项属性参数对象。
 
 下图是组件配置了边距属性后的示意图，可理解每种枚举对应的裁剪区域。
 
-![](./img/zh-cn_image_0000002685928135.png)
+![](./img/zh-cn_image_0000002689559667.png)
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
@@ -1456,7 +1456,7 @@ struct ListExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087903.gif)
+ ![](./img/zh-cn_image_0000002659440096.gif)
 
 #### [h2]示例2（设置边缘渐隐）
 
@@ -1500,7 +1500,7 @@ struct ListExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008398.gif)
+ ![](./img/zh-cn_image_0000002689559609.gif)
 
 #### [h2]示例3（设置裁剪区域）
 
@@ -1560,7 +1560,7 @@ struct ScrollExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008458.gif)
+ ![](./img/zh-cn_image_0000002689679491.gif)
 
 #### [h2]示例4（设置滚动条边距）
 
@@ -1616,4 +1616,4 @@ struct ListExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848536.gif)
+ ![](./img/zh-cn_image_0000002659440158.gif)

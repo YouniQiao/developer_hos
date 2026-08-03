@@ -2,8 +2,8 @@
 title: "HdsNavigation"
 upstream_id: "harmonyos-references/ui-design-hdsnavigation"
 catalog: "harmonyos-references"
-content_hash: "0597ee474534"
-synced_at: "2026-07-28T16:50:14.102511"
+content_hash: "2d7ebfb44360"
+synced_at: "2026-08-03T17:10:48.873323"
 ---
 
 # HdsNavigation
@@ -867,7 +867,7 @@ type BuilderType = ComponentContent | BuilderOptions
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-系统能力： SystemCapability.UIDesign.HDSComponent.Core
+系统能力： SystemCapability.UIDesign.HDSComponent.Full
 
 起始版本： 26.0.0
 
@@ -1281,7 +1281,7 @@ HdsNavigation标题栏动态显隐配置信息。
 
 #### BuilderOptions
 
-构建标题栏中的自定义组件配置信息。
+构建导航标题栏中的自定义组件配置信息。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -1422,7 +1422,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655849430.gif)
+ ![](./img/zh-cn_image_0000002659441046.gif)
 
 #### [h2]设置菜单消息提醒
 
@@ -1485,7 +1485,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088861.jpg)
+ ![](./img/zh-cn_image_0000002659600974.jpg)
 
 #### [h2]设置自定义区域
 
@@ -1572,7 +1572,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685929029.jpg)
+ ![](./img/zh-cn_image_0000002689560557.jpg)
 
 #### [h2]设置标题栏的动态显隐
 
@@ -1638,7 +1638,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656009354.gif)
+ ![](./img/zh-cn_image_0000002689680381.gif)
 
 #### [h2]设置标题栏图标样式
 
@@ -1713,7 +1713,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655849432.jpg)
+ ![](./img/zh-cn_image_0000002659441048.jpg)
 
 #### [h2]半模态标题栏样式
 
@@ -1805,7 +1805,7 @@ struct SheetTransitionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088863.jpg)
+ ![](./img/zh-cn_image_0000002659600976.jpg)
 
 #### [h2]图标上绑定自定义menu
 
@@ -1897,7 +1897,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685929031.gif)
+ ![](./img/zh-cn_image_0000002689560559.gif)
 
 #### [h2]设置应用内多窗图标
 
@@ -1949,7 +1949,7 @@ struct MultiWindowEntryInAPPTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656009356.jpg)
+ ![](./img/zh-cn_image_0000002689680383.jpg)
 
 #### [h2]设置HdsNavigation双栏模式
 
@@ -2015,7 +2015,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655849434.gif)
+ ![](./img/zh-cn_image_0000002659441050.gif)
 
 #### [h2]设置标题栏沉浸式样式
 
@@ -2122,7 +2122,7 @@ struct Index {
 
 执行上述代码展示的效果如下。
 
-![](./img/zh-cn_image_0000002686088865.gif)
+![](./img/zh-cn_image_0000002659600978.gif)
 
 #### [h2]通过onReady获取栈
 
@@ -2261,4 +2261,4 @@ struct NavigationExample2 {
 
 执行上述代码，效果展示如下。
 
-![](./img/zh-cn_image_0000002685929033.gif)
+![](./img/zh-cn_image_0000002689560561.gif)

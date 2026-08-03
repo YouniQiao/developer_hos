@@ -2,8 +2,8 @@
 title: "XEG_DDGICreateInfo"
 upstream_id: "harmonyos-references/xengine-kit-xeg-ddgicreateinfo"
 catalog: "harmonyos-references"
-content_hash: "9e41993faeb3"
-synced_at: "2026-07-09T01:01:10.229023"
+content_hash: "da8c6363ff17"
+synced_at: "2026-08-03T17:12:20.161563"
 ---
 
 # XEG_DDGICreateInfo
@@ -27,8 +27,8 @@ synced_at: "2026-07-09T01:01:10.229023"
 | XEG_StructureType [sType](#stype) | 识别此结构的[XEG_StructureType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/xengine-kit-xengine#xeg_structuretype)值，必须是XEG_STRUCTURE_TYPE_DDGI_CREATE_INFO。 |
 | const void * [pNext](#pnext) | 指向扩展结构的指针。 |
 | XEG_RTGIQualityMode [qualityMode](#qualitymode) | 输出图像的质量模式，必须为[XEG_RTGIQualityMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/xengine-kit-xengine#xeg_rtgiqualitymode)中的枚举值。 |
-| uint32_t [numberVolume](#numbervolume) | 需要同时渲染的最大体积数量，范围为[1, 9]。 |
-| VkExtent2D [scaledView](#scaledview) | 渲染宽高缩小倍率，建议范围为[1, 4]，必须不小于1。 |
+| uint32_t [numberVolume](#numbervolume) | 需要同时渲染的最大体积数量，范围为[1, 9]，若超出范围，将被限制为范围内最接近该数值的值。 |
+| VkExtent2D [scaledView](#scaledview) | 渲染宽高缩小倍率，不能小于1，建议范围为[1, 4]，数值越大，性能越好，但画质会相应下降。 |
 | VkExtent2D [viewSize](#viewsize) | 输出GI图像的渲染宽高。 |
 | bool [enableCloud](#enablecloud) | 是否开启端云模式，true为开启，false为关闭。 |
 
@@ -50,7 +50,7 @@ uint32_t XEG_DDGICreateInfo::numberVolume
 ```
  描述
 
-需要同时渲染的最大体积数量，范围为[1, 9]。
+需要同时渲染的最大体积数量，范围为[1, 9]，若超出范围，将被限制为范围内最接近该数值的值。
 
 #### [h2]pNext
 
@@ -77,7 +77,7 @@ VkExtent2D XEG_DDGICreateInfo::scaledView
 ```
  描述
 
-渲染宽高缩小倍率，建议范围为[1, 4]，必须不小于1。
+渲染宽高缩小倍率，不能小于1，建议范围为[1, 4]，数值越大，性能越好，但画质会相应下降。
 
 #### [h2]sType
 

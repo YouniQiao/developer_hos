@@ -2,13 +2,13 @@
 title: "@ohos.util (util工具函数)"
 upstream_id: "harmonyos-references/js-apis-util"
 catalog: "harmonyos-references"
-content_hash: "663227ed1824"
-synced_at: "2026-07-28T16:40:58.297319"
+content_hash: "82019a706760"
+synced_at: "2026-08-03T17:09:33.146661"
 ---
 
 # @ohos.util (util工具函数)
 
-该模块主要提供常用的工具函数，实现字符串编解码（[TextEncoder](#textencoder)，[TextDecoder](#textdecoder)）、有理数运算（[RationalNumber8+](#rationalnumber8)）、缓冲区管理（[LRUCache9+](#lrucache9)）、范围判断（[ScopeHelper9+](#scopehelper9)）、Base64编解码（[Base64Helper9+](#base64helper9)）、内置对象类型检查（[types8+](#types8)）、对方法进行插桩和替换（[Aspect11+](#aspect11)）、堆内存阈值配置（[HeapMemoryThreshold24+](#heapmemorythreshold24)）等功能。
+该模块主要提供常用的工具函数，实现字符串编解码（[TextEncoder](#textencoder)，[TextDecoder](#textdecoder)）、有理数运算（[RationalNumber8+](#rationalnumber8)）、缓冲区管理（[LRUCache9+](#lrucache9)）、范围判断（[ScopeHelper9+](#scopehelper9)）、Base64编解码（[Base64Helper9+](#base64helper9)）、内置对象类型检查（[types8+](#types8)）、对方法进行插桩和替换（[Aspect11+](#aspect11)）、虚拟机维测能力（[ArkTSVM23+](#arktsvm23)）、二进制流解码（[StringDecoder12+](#stringdecoder12)）、堆内存阈值配置（[HeapMemoryThreshold24+](#heapmemorythreshold24)）等功能。此外还提供获取对象Hash值（[util.getHash12+](#utilgethash12)）、获取主线程栈追踪信息（[util.getMainThreadStackTrace20+](#utilgetmainthreadstacktrace20)）等工具函数。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -22,7 +22,7 @@ import { util } from '@kit.ArkTS';
 
 format(format: string, ...args: Object[]): string
 
-使用样式化字符串将输入内容按特定格式输出。
+使用样式化字符串将输入内容按特定格式输出，适用于日志输出、用户界面文本格式化等场景。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -33,7 +33,7 @@ format(format: string, ...args: Object[]): string
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | format | string | 是 | 格式化字符串，可以包含零个或多个占位符，用于指定要插入的参数的位置和格式。 |
-| ...args | Object[] | 否 | 替换format参数中占位符的数据，此参数缺失时，默认返回第一个参数。 |
+| ...args | Object[] | 否 | 替换format参数中占位符的数据，此参数缺失时，直接返回格式化字符串本身。 |
 
 返回值：
 
@@ -49,10 +49,10 @@ format(format: string, ...args: Object[]): string
 | %d | 将参数作为十进制整数进行格式化输出，用于除Symbol和BigInt之外的所有值。 |
 | %i | 将字符串转换为十进制整数，用于除BigInt和Symbol之外的所有值。 |
 | %f | 将字符串转换为浮点数，用于除BigInt和Symbol之外的所有值。 |
-| %j | 将JavaScript对象转换为JSON字符串进行格式化输出。 |
+| %j | 将JavaScript对象序列化为JSON字符串进行格式化输出。 |
 | %o | 用于将JavaScript对象进行格式化输出，将对象转换为字符串表示，但不包含对象的原型链信息。 |
 | %O | 用于将JavaScript对象进行格式化输出，将对象转换为字符串表示。 |
-| %c | 只在浏览器环境中有效。其余环境不会产生样式效果。 |
+| %c | CSS样式占位符，仅在浏览器环境中有效，用于指定格式化输出的样式；其余环境会忽略该占位符。 |
 | %% | 转义百分号的特殊格式化占位符。 |
 
 示例：
@@ -125,7 +125,7 @@ console.info(formattedString);
 
 errnoToString(errno: number): string
 
-获取系统错误码对应的详细信息。
+获取系统错误码对应的详细信息。适用于系统调用出错时将数字错误码转换为可读的描述信息，便于开发者快速定位和排查系统级错误，常用于错误日志记录和错误提示显示。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -141,7 +141,7 @@ errnoToString(errno: number): string
 
 | 类型 | 说明 |
 | --- | --- |
-| string | 错误码对应的详细信息。 |
+| string | 错误码对应的详细信息，包含可读的错误描述文本，便于开发者定位问题。 |
 
 示例：
 
@@ -185,7 +185,7 @@ callbackWrapper(original: Function): (err: Object, value: Object)=>void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| original | Function | 是 | 异步函数。 |
+| original | Function | 是 | 异步函数，要求函数返回Promise对象。该异步函数的resolve值会作为回调的第二个参数传入，reject原因会作为回调的第一个参数传入。 |
 
 返回值：
 
@@ -227,7 +227,7 @@ cb(args, (err : Object, ret : string) => {
 
 promisify(original: (err: Object, value: Object) => void): Function
 
-接收一个采用“错误优先”回调模式的函数，即以(err, value) => callback作为最后一个参数，并返回其Promise函数。
+接收一个采用"错误优先"回调模式的函数，即以(err, value) => callback作为最后一个参数，并返回其Promise函数。适用于将旧版回调式异步API转换为Promise风格，以便使用async/await语法进行调用，从而简化异步代码编写。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -243,7 +243,7 @@ promisify(original: (err: Object, value: Object) => void): Function
 
 | 类型 | 说明 |
 | --- | --- |
-| Function | 返回一个 Promise 的函数。 |
+| Function | 返回一个Promise函数，该Promise在原始回调函数成功执行时resolve为回调的value值，在原始回调函数执行出错时reject为错误对象。 |
 
 示例：
 
@@ -277,7 +277,7 @@ generateRandomUUID(entropyCache?: boolean): string
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| entropyCache | boolean | 否 | 是否使用已缓存的UUID，true表示使用缓存的UUID，false表示不使用缓存的UUID，默认true。 |
+| entropyCache | boolean | 否 | 是否使用已缓存的UUID，true表示使用缓存的UUID以提升性能（最多缓存128个UUID，缓存用尽后会重新生成以保证随机性），false表示不使用缓存的UUID，默认true。 |
 
 返回值：
 
@@ -297,7 +297,7 @@ console.info("RFC 4122 Version 4 UUID:" + uuid);
 
 generateRandomBinaryUUID(entropyCache?: boolean): Uint8Array
 
-使用加密安全随机数生成器生成随机的RFC 4122版本4的UUID。
+使用加密安全随机数生成器生成随机的RFC 4122版本4的Uint8Array类型UUID。为了提升性能，此接口会默认使用缓存，即入参为true，最多可缓存128个随机的UUID。当缓存中128个UUID用尽后，会重新生成，以保证UUID的随机性。如需禁用缓存，请将入参设置为false。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -337,13 +337,13 @@ parseUUID(uuid: string): Uint8Array
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| uuid | string | 是 | UUID字符串。 |
+| uuid | string | 是 | UUID字符串，必须符合RFC 4122版本规范。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| Uint8Array | 返回表示此UUID的Uint8Array，如果解析失败，则抛出SyntaxError。 |
+| Uint8Array | 返回表示此UUID的Uint8Array，如果解析失败，则抛出异常，错误码为10200002。 |
 
 错误码：
 
@@ -382,7 +382,7 @@ printf(format: string, ...args: Object[]): string
 
 | 类型 | 说明 |
 | --- | --- |
-| string | 按特定格式式样化后的字符串。 |
+| string | 按特定格式式样化后的字符串，包含根据格式说明符处理后的参数值。 |
 
 示例：
 
@@ -437,7 +437,7 @@ promiseWrapper(original: (err: Object, value: Object) => void): Object
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| original | (err: Object, value: Object) => void | 是 | 异步函数。 |
+| original | (err: Object, value: Object) => void | 是 | 采用错误优先回调模式的函数，第一个参数err是拒绝原因，第二个参数value是已解决的值。 |
 
 返回值：
 
@@ -453,7 +453,7 @@ getHash(object: object): number
 
 首次获取时，则计算Hash值并保存到对象的Hash域（返回随机的Hash值）；后续获取时，直接从Hash域中返回Hash值（同一对象多次返回值保持不变）。
 
-元服务API：从API version 12开始，该接口支持在元服务中使用。
+元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Utils.Lang
 
@@ -461,13 +461,13 @@ getHash(object: object): number
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| object | object | 是 | 需要获取Hash值的对象。 |
+| object | object | 是 | 需要获取Hash值的非原始类型对象。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| number | Hash值。 |
+| number | 对象的Hash值，首次获取时返回随机值，同一对象多次获取返回值保持不变。 |
 
 示例：
 
@@ -492,7 +492,7 @@ getMainThreadStackTrace(): string
 
 该接口可能对主线程性能产生影响，建议仅在必要时使用，如日志记录、错误分析或调试场景。
 
-元服务API：从API version 20开始，该接口支持在元服务中使用。
+元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Utils.Lang
 
@@ -524,7 +524,7 @@ MultithreadingDetectionOptions是一个接口类，用于配置[ArkTSVM.setMulti
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| abort | boolean | 否 | 是 | 控制检测到多线程问题时是否崩溃。true表示崩溃，false表示不崩溃。默认true。 |
+| abort | boolean | 否 | 是 | 控制检测到多线程问题时是否崩溃。传入true表示检测到多线程问题时立即崩溃，适用于开发调试阶段需要快速暴露多线程问题的场景；传入false表示不崩溃仅上报故障信息，适用于生产环境需要保持服务可用性的场景。默认true。 |
 | frequency | number | 否 | 是 | 多线程安全检测的粒度，表示每发生多少次函数调用进行一次多线程安全检测，该值越大采样频率越低，对应用性能影响越小，但可能漏检部分多线程安全使用问题场景，范围为[100, 2147483647]，默认100。 |
 | interval | number | 否 | 是 | 多线程安全检测的上报故障时间间隔，仅不崩溃时生效，范围为[0,1440]，单位为分钟，默认5分钟。（不建议设为5分钟以下，有严重的性能影响。） |
 
@@ -536,7 +536,7 @@ ArkTSVM是一个类，用于给开发者提供虚拟机的诊断与维护能力�
 
 static setMultithreadingDetectionEnabled(enabled: boolean, options?: MultithreadingDetectionOptions): void
 
-若enabled为true则开启，为false则关闭。开启多线程安全检测，多线程问题的cppcrash文件里会包含多线程信息。关闭多线程安全检测，则多线程问题的cppcrash文件里不会包含多线程信息。
+若enabled为true则开启，为false则关闭。开启多线程安全检测，多线程问题的C/C++崩溃转储文件（cppcrash文件）里会包含多线程信息（如线程ID、锁状态等）。关闭多线程安全检测，则C/C++崩溃转储文件（cppcrash文件）里不会包含多线程信息。
 
 options是用于配置多线程安全检测的行为参数。
 
@@ -578,7 +578,7 @@ util.ArkTSVM.setMultithreadingDetectionEnabled(true, {
 
 static getAllVMHeapMemoryInfo(): Promise<HeapMemoryInfo[]>
 
-获取所有VM线程的堆内存信息，包括线程ID、线程名称、堆类型和堆对象大小。使用Promise异步回调。
+获取所有VM线程的堆内存信息，包括线程ID、线程名称、堆类型和堆对象大小，适用于内存泄漏排查、内存使用分析等场景。使用Promise异步回调。
 
 接口获取到的堆包含两种类型：local堆，即应用进程中每个ArkTS线程独有的虚拟机堆；shared堆，即应用进程中所有ArkTS线程共享的虚拟机堆。
 
@@ -615,7 +615,7 @@ util.ArkTSVM.getAllVMHeapMemoryInfo().then(
 
 static enableLocalHandleDetection(): void
 
-EventHandler和libuv的异步事件循环机制在执行异步任务时，任务会跳出当前handle scope范围。若开发者在任务回调中未添加scope，将导致内存泄漏。调用该接口后，可确保这两个机制的任务在scope范围内执行，从而避免内存泄漏。
+EventHandler和libuv的异步事件循环机制在执行异步任务时，任务将不在当前handle scope的管理范围内执行，创建的napi_value不会被自动回收。若开发者在任务回调中未添加scope，将导致内存泄漏。调用该接口后，可确保这两个机制的任务在scope范围内执行，从而避免内存泄漏。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -718,7 +718,7 @@ static setTrackGlobalRef(enable: boolean): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| enable | boolean | 是 | 是否开启追踪。true表示开启追踪，false表示关闭追踪。 |
+| enable | boolean | 是 | 是否开启追踪。true表示开启追踪（可能带来一定的内存和性能开销），false表示关闭追踪。建议在不需要调试时设置为false以避免性能开销。 |
 
 示例：
 
@@ -763,7 +763,7 @@ try {
 
 static onVMHeapMemoryPressure(callback: Callback<string>, heapMemoryThreshold: HeapMemoryThreshold): boolean
 
-注册一个回调函数，在虚拟机主线程完成垃圾回收后，如果堆内存超过预警阈值则触发回调执行。
+注册一个回调函数，在虚拟机主线程完成垃圾回收后，如果堆内存超过预警阈值则触发回调执行，适用于主动内存管理（在内存压力较大时触发资源清理）、OOM预防等场景。
 
 虚拟机是通过统计存活对象大小来判断是否达到内存预警阈值，由于虚拟机堆存在一定内存碎片以及浮动垃圾，无法保证在OOM前肯定会触发到回调。
 
@@ -776,7 +776,7 @@ static onVMHeapMemoryPressure(callback: Callback<string>, heapMemoryThreshold: H
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | callback | Callback | 是 | 垃圾回收后内存达到预警阈值时触发的回调函数，字符串参数表示内存压力事件的类型。目前事件的类型有三种取值，"LocalHeapMemPressure"，"SharedHeapMemPressure"，"ProcessHeapMemPressure"。 |
-| heapMemoryThreshold | [HeapMemoryThreshold](#heapmemorythreshold24) | 是 | 堆内存预警阈值配置，以百分比设置，取值范围为[70, 95]。 |
+| heapMemoryThreshold | [HeapMemoryThreshold](#heapmemorythreshold24) | 是 | 堆内存预警阈值配置，以百分比设置，取值范围为[70, 95]。超出范围时自动限制到有效区间。 |
 
 返回值：
 
@@ -807,7 +807,7 @@ console.info('Registration result: ' + result);
 
 static offVMHeapMemoryPressure(): void
 
-取消已注册的内存预警回调函数。
+取消已注册的内存预警回调函数。此接口需要在主线程调用。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -854,7 +854,7 @@ util.ArkTSVM.offVMHeapMemoryPressure();
 
 解码相关选项参数，包含两个属性fatal和ignoreBOM。
 
-元服务API：从API version 11开始，该接口支持在元服务中使用。
+元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Utils.Lang
 
@@ -867,7 +867,7 @@ util.ArkTSVM.offVMHeapMemoryPressure();
 
 用于配置decodeToString方法在解码字节流时的行为参数。
 
-元服务API：从API version 12开始，该接口支持在元服务中使用。
+元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Utils.Lang
 
@@ -879,7 +879,7 @@ util.ArkTSVM.offVMHeapMemoryPressure();
 
 解码是否跟随附加数据块相关选项参数。
 
-元服务API：从API version 11开始，该接口支持在元服务中使用。
+元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Utils.Lang
 
@@ -895,7 +895,7 @@ Aspect类用于封装提供切面能力（Aspect Oriented Programming，简写AO
 
 static addBefore(targetClass: Object, methodName: string, isStatic: boolean, before: Function): void
 
-在指定的类对象的原方法执行前插入一个函数。执行addBefore接口后，先运行插入的函数逻辑，再执行指定类对象的原方法。
+在指定的类对象的原方法执行前插入一个函数，适用于日志记录、性能监控、权限校验等需要在方法执行前进行拦截处理的场景。执行addBefore接口后，先运行插入的函数逻辑，再执行指定类对象的原方法。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1030,7 +1030,7 @@ console.info('result is ' + result);
 console.info('asp.msg is ' + asp.msg);
 // 输出结果：asp.msg is msg111
 
-// 前后插桩的例子
+// 分别添加前置和后置插桩的例子
 class AroundTest {
   foo(arg: string) {
     console.info('execute foo with arg ' + arg);
@@ -1053,7 +1053,7 @@ util.Aspect.addAfter(AroundTest, 'foo', false, () => {
 
 static replace(targetClass: Object, methodName: string, isStatic: boolean, instead: Function) : void
 
-将指定类的原方法替换为另一个函数。replace接口执行完成后，调用指定的类方法时，仅执行替换后的逻辑。最终返回替换函数执行完毕的返回值。
+将指定类的原方法替换为另一个函数，适用于行为替换、兼容性适配、条件执行等需要完全改变方法实现逻辑的场景。replace接口执行完成后，调用指定的类方法时，仅执行替换后的逻辑。最终返回替换函数执行完毕的返回值。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1119,13 +1119,13 @@ TextDecoder用于将字节数组解码为字符串，支持utf-8、utf-16le/be�
 | --- | --- | --- | --- | --- |
 | encoding | string | 是 | 否 | 编码格式。 - 支持格式：utf-8、ibm866、iso-8859-2、iso-8859-3、iso-8859-4、iso-8859-5、iso-8859-6、iso-8859-7、iso-8859-8、iso-8859-8-i、iso-8859-10、iso-8859-13、iso-8859-14、iso-8859-15、koi8-r、koi8-u、macintosh、windows-874、windows-1250、windows-1251、windows-1252、windows-1253、windows-1254、windows-1255、windows-1256、windows-1257、windows-1258、x-mac-cyrillic、gbk、gb18030、big5、euc-jp、iso-2022-jp、shift_jis、euc-kr、utf-16be、utf-16le、gb2312、iso-8859-1。 |
 | fatal | boolean | 是 | 否 | 是否显示致命错误，true表示显示，false表示不显示。 |
-| ignoreBOM | boolean | 是 | 否 | 是否忽略BOM（byte order marker）标记，默认值为false，表示解码结果包含BOM标记。 |
+| ignoreBOM | boolean | 是 | 否 | 是否忽略BOM（byte order marker）标记，true表示忽略BOM标记，false表示解码结果包含BOM标记，默认值为false。 |
 
 #### [h2]constructor9+
 
 constructor()
 
-TextDecoder的构造函数。
+TextDecoder的构造函数，创建一个默认编码格式为'utf-8'的TextDecoder实例，fatal默认为false，ignoreBOM默认为false。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1146,7 +1146,7 @@ static create(encoding?: string, options?: TextDecoderOptions): TextDecoder
 
 替代有参构造函数的功能。
 
-元服务API：从API version 11开始，该接口支持在元服务中使用。
+元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Utils.Lang
 
@@ -1154,14 +1154,14 @@ static create(encoding?: string, options?: TextDecoderOptions): TextDecoder
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| encoding | string | 否 | 编码格式，默认值是'utf-8'。 |
+| encoding | string | 否 | 编码格式，支持格式参见[encoding属性](#属性)，默认值是'utf-8'。 |
 | options | [TextDecoderOptions](#textdecoderoptions11) | 否 | 解码相关选项参数，存在两个属性fatal和ignoreBOM。此参数不填时，对应各属性取其默认值。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| [TextDecoder](#textdecoder) | 返回一个TextDecoder对象。 |
+| [TextDecoder](#textdecoder) | 返回一个用于将字节数组按指定编码格式解码为字符串的TextDecoder对象。 |
 
 示例：
 
@@ -1184,7 +1184,7 @@ decodeToString(input: Uint8Array, options?: DecodeToStringOptions): string
 
 ![](./img/note_3.0-zh-cn.png) 该接口会正常解析值为\0的字节，将其转换为Unicode字符\u0000（空字符），不会导致解码中断或错误。
 
-元服务API：从API version 12开始，该接口支持在元服务中使用。
+元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Utils.Lang
 
@@ -1193,7 +1193,7 @@ decodeToString(input: Uint8Array, options?: DecodeToStringOptions): string
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | input | Uint8Array | 是 | 需要解码的数组。 |
-| options | [DecodeToStringOptions](#decodetostringoptions12) | 否 | 解码相关选项参数。默认undefined。 |
+| options | [DecodeToStringOptions](#decodetostringoptions12) | 否 | 解码相关选项参数，用于控制解码行为。当需要以流式方式分块处理数据且保留不完整字节序列时传入此参数并设置stream为true；不传入时默认为undefined，即不保留不完整字节序列，直接在当前调用中解码。 |
 
 返回值：
 
@@ -1246,7 +1246,7 @@ decodeWithStream(input: Uint8Array, options?: DecodeWithStreamOptions): string
 
 ![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 12开始废弃，建议使用[decodeToString12+](#decodetostring12)替代。
 
-元服务API：从API version 11开始，该接口支持在元服务中使用。
+元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Utils.Lang
 
@@ -1255,7 +1255,7 @@ decodeWithStream(input: Uint8Array, options?: DecodeWithStreamOptions): string
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | input | Uint8Array | 是 | 符合格式需要解码的数组。 |
-| options | [DecodeWithStreamOptions](#decodewithstreamoptions11) | 否 | 解码相关选项参数。 |
+| options | [DecodeWithStreamOptions](#decodewithstreamoptions11) | 否 | 解码相关选项参数。此参数不填时，对应各属性取其默认值。 |
 
 返回值：
 
@@ -1302,7 +1302,7 @@ TextDecoder的构造函数。
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | encoding | string | 否 | 编码格式，默认值是'utf-8'。 |
-| options | { fatal?: boolean; ignoreBOM?: boolean } | 否 | 解码相关选项参数，存在两个属性fatal和ignoreBOM。 |
+| options | { fatal?: boolean; ignoreBOM?: boolean } | 否 | 解码相关选项参数，存在两个属性fatal和ignoreBOM。此参数不填时，对应各属性取其默认值。 |
 
 表1 options
 
@@ -1332,7 +1332,7 @@ decode(input: Uint8Array, options?: { stream?: false }): string
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | input | Uint8Array | 是 | 符合格式需要解码的数组。 |
-| options | { stream?: false } | 否 | 解码相关选项参数。 |
+| options | { stream?: false } | 否 | 解码相关选项参数。不传此参数时，stream默认为false，即不跟随附加数据块。 |
 
 表2 options
 
@@ -1369,7 +1369,7 @@ console.info("retStr = " + retStr);
 
 #### [h2]属性
 
-元服务API：从API version 11开始，该接口支持在元服务中使用。
+元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Utils.Lang
 
@@ -1398,9 +1398,9 @@ TextEncoder将字符串编码为字节数组，支持多种编码格式。
 
 constructor()
 
-TextEncoder的构造函数。
+TextEncoder的构造函数，创建一个默认编码格式为'utf-8'的TextEncoder实例。
 
-元服务API：从API version 11开始，该接口支持在元服务中使用。
+元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Utils.Lang
 
@@ -1416,7 +1416,7 @@ constructor(encoding?: string)
 
 TextEncoder的构造函数。
 
-元服务API：从API version 11开始，该接口支持在元服务中使用。
+元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Utils.Lang
 
@@ -1424,7 +1424,7 @@ TextEncoder的构造函数。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| encoding | string | 否 | 编码格式，默认值为'utf-8'。 |
+| encoding | string | 否 | 编码格式，支持格式参见[encoding属性](#属性-2)，默认值为'utf-8'。 |
 
 示例：
 
@@ -1438,7 +1438,7 @@ static create(encoding?: string): TextEncoder
 
 创建TextEncoder对象的方法。
 
-元服务API：从API version 12开始，该接口支持在元服务中使用。
+元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Utils.Lang
 
@@ -1452,7 +1452,7 @@ static create(encoding?: string): TextEncoder
 
 | 类型 | 说明 |
 | --- | --- |
-| [TextEncoder](#textencoder) | 返回一个TextEncoder对象。 |
+| [TextEncoder](#textencoder) | 返回一个用于将字符串按指定编码格式编码为字节数组的TextEncoder对象。 |
 
 示例：
 
@@ -1466,7 +1466,7 @@ encodeInto(input?: string): Uint8Array
 
 将输入参数编码后输出Uint8Array对象。
 
-元服务API：从API version 11开始，该接口支持在元服务中使用。
+元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Utils.Lang
 
@@ -1480,7 +1480,7 @@ encodeInto(input?: string): Uint8Array
 
 | 类型 | 说明 |
 | --- | --- |
-| Uint8Array | 返回编码后的Uint8Array对象。 |
+| Uint8Array | 返回编码后的Uint8Array对象。当入参为空字符串时，返回undefined。 |
 
 示例：
 
@@ -1497,7 +1497,7 @@ encodeIntoUint8Array(input: string, dest: Uint8Array): EncodeIntoUint8ArrayInfo
 
 对字符串进行编码，将结果存储到dest数组。
 
-元服务API：从API version 11开始，该接口支持在元服务中使用。
+元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Utils.Lang
 
@@ -1567,7 +1567,7 @@ console.info("uint8 = " + uint8);
 
 encode(input?: string): Uint8Array
 
-将输入参数编码后输出对应文本。
+将输入字符串编码后输出对应的Uint8Array字节数组。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，建议使用[encodeInto9+](#encodeinto9)替代。
 
@@ -1596,13 +1596,13 @@ console.info("result = " + result);
 
 #### RationalNumber8+
 
-RationalNumber主要用于有理数的比较，并提供获取分子和分母的方法。使用toString()方法可以将有理数转换为字符串形式，使用该类可以方便地进行有理数的各种操作。
+RationalNumber主要用于有理数的比较，并提供获取分子和分母的方法。RationalNumber内部以分子和分母存储有理数，创建时会自动对分数进行简化。需要注意的是：当分母为0时，有理数表示为Infinity；当分子和分母均为0时，有理数表示为NaN（非数字）。使用[toString()](#tostring8)方法可以将有理数转换为字符串形式，使用该类可以方便地进行有理数的各种操作。
 
 #### [h2]constructor9+
 
 constructor()
 
-RationalNumber的构造函数。
+RationalNumber的构造函数，创建一个默认分子为0、分母为1的RationalNumber实例。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1634,7 +1634,7 @@ static parseRationalNumber(numerator: number,denominator: number): RationalNumbe
 
 | 类型 | 说明 |
 | --- | --- |
-| [RationalNumber](#rationalnumber8) | RationalNumber对象。 |
+| [RationalNumber](#rationalnumber8) | 具有给定分子和分母的RationalNumber有理数对象。 |
 
 示例：
 
@@ -1658,13 +1658,13 @@ static createRationalFromString(rationalString: string): RationalNumber
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| rationalString | string | 是 | 字符串格式。 |
+| rationalString | string | 是 | 有理数字符串格式，如"3/4"。若传入小数类型字符串格式，不会拦截但会输出错误信息。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| [RationalNumber](#rationalnumber8)​ | RationalNumber对象。 |
+| [RationalNumber](#rationalnumber8)​ | 由给定字符串创建的RationalNumber有理数对象。 |
 
 示例：
 
@@ -1751,7 +1751,7 @@ equals(obj: Object): boolean
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| obj | Object | 是 | 其他类型对象。 |
+| obj | Object | 是 | 用于与当前RationalNumber对象比较的对象，传入非RationalNumber类型时返回false。 |
 
 返回值：
 
@@ -1876,7 +1876,7 @@ console.info("result = " + result);
 
 #### [h2]isZero8+
 
-isZero():boolean
+isZero(): boolean
 
 检查当前RationalNumber对象是否为0。
 
@@ -1942,7 +1942,7 @@ console.info("result = " + result);
 
 #### [h2]isFinite8+
 
-isFinite():boolean
+isFinite(): boolean
 
 检查RationalNumber对象是否表示一个有限值。
 
@@ -2020,10 +2020,7 @@ RationalNumber的构造函数。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| numerator | number | 是 | 分子，整数类型。 |
-| denominator | number | 是 | 分母，整数类型。 |
-
-示例：
+| numerator | number | 是 | 分子，整数类型。取值范围：-Number.MAX_VALUE 示例：
 
 ```
 let rationalNumber = new util.RationalNumber(1,2);
@@ -2075,10 +2072,7 @@ static getCommonDivisor(number1: number,number2: number): number
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| number1 | number | 是 | 整数类型。 |
-| number2 | number | 是 | 整数类型。 |
-
-返回值：
+| number1 | number | 是 | 整数类型。-Number.MAX_VALUE 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
@@ -2096,7 +2090,7 @@ LRUCache用于在缓存空间不足时，将近期最少使用的数据替换为
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| length | number | 是 | 否 | 当前缓冲区中值的总数。 |
+| length | number | 是 | 否 | 当前缓存中值的总数。 |
 
 示例：
 
@@ -2123,19 +2117,19 @@ constructor(capacity?: number)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| capacity | number | 否 | 指示要为缓冲区自定义的容量，不传默认值为64，最大值不能超过2147483647。 |
+| capacity | number | 否 | 指示要为缓冲区自定义的容量，取值范围为[0, 2147483647]，默认值为64。 |
 
 示例：
 
 ```
-let pro = new util.LRUCache<number, number>();
+let lruCache = new util.LRUCache<number, number>();
 ```
 
 #### [h2]updateCapacity9+
 
 updateCapacity(newCapacity: number): void
 
-更新缓冲区容量为指定值，如果newCapacity小于或等于0，则抛出异常。当缓冲区中值的总数大于指定容量时，会执行删除操作。
+更新缓存容量为指定值，如果newCapacity小于或等于0，则抛出异常。当缓存中值的总数大于指定容量时，会执行删除操作。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -2145,7 +2139,7 @@ updateCapacity(newCapacity: number): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| newCapacity | number | 是 | 指示要为缓冲区自定义的容量，最大值不能超过2147483647。 |
+| newCapacity | number | 是 | 指示要为缓冲区自定义的容量，取值范围为[0, 2147483647]。 |
 
 示例：
 
@@ -2158,7 +2152,7 @@ pro.updateCapacity(100);
 
 toString(): string
 
-返回对象的字符串表示。
+返回对象的字符串表示，格式为LRUCache[ maxSize = 缓存区最大值, hits = 查询匹配成功次数, misses = 查询匹配失败次数, hitRate = 查询匹配率 ]。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -2186,7 +2180,7 @@ console.info(pro.toString());
 
 getCapacity(): number
 
-获取当前缓冲区的容量。
+获取当前缓存的容量。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -2211,7 +2205,7 @@ console.info('result = ' + result);
 
 clear(): void
 
-清除当前缓冲区中的键值对。
+清除当前缓冲区中的键值对，并触发afterRemoval回调方法执行后续操作。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -2300,7 +2294,7 @@ console.info('result = ' + result);
 
 getRemovalCount(): number
 
-获取缓冲区键值对的回收次数。
+获取缓存键值对的回收次数。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -2355,7 +2349,7 @@ console.info('result = ' + result);
 
 getPutCount(): number
 
-获取将值添加到缓冲区的次数。
+获取将值添加到缓存的次数。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -2381,7 +2375,7 @@ console.info('result = ' + result);
 
 isEmpty(): boolean
 
-检查缓冲区是否为空。
+检查缓存是否为空。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -2391,7 +2385,7 @@ isEmpty(): boolean
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | 如果缓冲区不包含任何值，则返回true。 |
+| boolean | 如果缓存不包含任何值，则返回true；否则返回false。 |
 
 示例：
 
@@ -2407,7 +2401,7 @@ console.info('result = ' + result);
 
 get(key: K): V | undefined
 
-返回键对应的值。当键不在缓冲区中时，通过[createDefault9+](#createdefault9)接口创建，若createDefault创建的值不为undefined时，此时会调用[afterRemoval9+](#afterremoval9)接口，返回createDefault创建的值。
+返回键对应的值。当键不在缓存中时，通过[createDefault](#createdefault9)接口创建，若createDefault创建的值不为undefined时，此时会调用[afterRemoval](#afterremoval9)接口，返回createDefault创建的值。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -2439,7 +2433,7 @@ console.info('result = ' + result);
 
 put(key: K,value: V): V
 
-将键值对添加到缓冲区，返回与添加的键关联的值。当缓冲区中值的总数超过容量时，执行删除操作。
+将键值对添加到缓存，返回与添加的键关联的值。当缓存中值的总数超过容量时，执行删除操作。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -2471,7 +2465,7 @@ console.info('result = ' + result);
 
 values(): V[]
 
-获取当前缓冲区中所有值，从最近最少访问到最近访问的顺序列表。
+获取当前缓存中所有值，从最近最少访问到最近访问的顺序列表。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -2507,7 +2501,7 @@ console.info('result = ' + result);
 
 keys(): K[]
 
-获取当前缓冲区中所有键，从最近最少访问到最近访问的顺序列表。
+获取当前缓存中所有键，从最近最少访问到最近访问的顺序列表。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -2543,7 +2537,7 @@ console.info('result = ' + result);
 
 remove(key: K): V | undefined
 
-从当前缓冲区中删除指定的键及其关联的值，并返回键关联的值。如果指定的键不存在，则返回undefined。
+从当前缓存中删除指定的键及其关联的值，并返回键关联的值。如果指定的键不存在，则返回undefined。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -2553,13 +2547,13 @@ remove(key: K): V | undefined
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| key | K | 是 | 要删除的键值。 |
+| key | K | 是 | 要删除的键。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| V | undefined | 返回一个包含已删除键值对的Optional对象；如果key不存在，则返回undefined，如果key为null，则抛出异常。 |
+| V | undefined | 返回与已删除键关联的值；如果key不存在，则返回undefined，如果key为null，则抛出异常。 |
 
 示例：
 
@@ -2675,7 +2669,7 @@ lru.clear();             // 清空整个缓冲区
 
 contains(key: K): boolean
 
-检查当前缓冲区是否包含指定的键。
+检查当前缓存是否包含指定的键。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -2691,7 +2685,7 @@ contains(key: K): boolean
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | 如果缓冲区包含指定的键，则返回 true。 |
+| boolean | 如果缓存包含指定的键，则返回true；否则返回false。 |
 
 示例：
 
@@ -2707,7 +2701,7 @@ console.info('result = ' + result);
 
 createDefault(key: K): V
 
-如果在缓冲区未匹配到键，则执行后续操作，参数表示未匹配的键，返回与键关联的值，默认返回undefined。
+如果在缓存中未匹配到键，则执行后续操作，参数表示未匹配的键，返回与键关联的值，默认返回undefined。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -2748,7 +2742,7 @@ entries(): IterableIterator<[K, V]>
 
 | 类型 | 说明 |
 | --- | --- |
-| IterableIterator | 返回一个可迭代数组。 |
+| IterableIterator | 返回一个迭代器对象，用于按插入顺序遍历当前缓冲区中的所有键值对[key, value]。 |
 
 示例：
 
@@ -2867,7 +2861,7 @@ type ScopeType = ScopeComparable | number
 
 #### ScopeHelper9+
 
-ScopeHelper接口用于描述一个字段的有效范围。构造函数用于创建具有指定下限和上限的对象，并要求这些对象必须具有可比性。
+ScopeHelper接口用于描述一个字段的有效范围，常用于输入值范围校验、配置参数区间判断等场景。构造函数用于创建具有指定下限和上限的对象，并要求这些对象必须具有可比性。通过ScopeHelper，开发者可以方便地进行范围交集、并集计算以及值是否在范围内的判断，避免无效数据进入业务逻辑。
 
 #### [h2]constructor9+
 
@@ -2883,8 +2877,8 @@ constructor(lowerObj: ScopeType, upperObj: ScopeType)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| lowerObj | [ScopeType](#scopetype8) | 是 | 指定作用域实例的下限。 |
-| upperObj | [ScopeType](#scopetype8) | 是 | 指定作用域实例的上限。 |
+| lowerObj | [ScopeType](#scopetype8) | 是 | 指定作用域实例的下限，需具有可比性。 |
+| upperObj | [ScopeType](#scopetype8) | 是 | 指定作用域实例的上限，需具有可比性。 |
 
 示例：
 
@@ -3294,7 +3288,7 @@ expand(value: ScopeType): ScopeHelper
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [ScopeType](#scopetype8) | 是 | 传入一个给定值。 |
+| value | [ScopeType](#scopetype8) | 是 | 要检查是否在当前范围内的值。 |
 
 返回值：
 
@@ -3506,11 +3500,11 @@ Base64Helper类提供Base64编解码和Base64URL编解码功能。Base64编码�
 
 constructor()
 
-Base64Helper的构造函数。
+Base64Helper的构造函数，创建一个用于Base64编解码的Base64Helper实例。
 
 系统能力： SystemCapability.Utils.Lang
 
-元服务API：从API version 11开始，该接口支持在元服务中使用。
+元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
 示例：
 
@@ -3524,7 +3518,7 @@ encodeSync(src: Uint8Array, options?: Type): Uint8Array
 
 通过输入参数编码后输出Uint8Array对象。
 
-元服务API：从API version 11开始，该接口支持在元服务中使用。
+元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Utils.Lang
 
@@ -3557,7 +3551,7 @@ encodeToStringSync(src: Uint8Array, options?: Type): string
 
 将输入的Uint8Array字节数组进行Base64编码，返回一个字符串结果。该方法支持多种编码格式，包括标准Base64编码、MIME格式的Base64编码（带有换行符）、URL安全格式的Base64编码等。
 
-元服务API：从API version 11开始，该接口支持在元服务中使用。
+元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Utils.Lang
 
@@ -3651,7 +3645,7 @@ decodeSync(src: Uint8Array | string, options?: Type): Uint8Array
 
 将输入参数解码后输出对应Uint8Array对象。
 
-元服务API：从API version 11开始，该接口支持在元服务中使用。
+元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Utils.Lang
 
@@ -3686,7 +3680,7 @@ encode(src: Uint8Array, options?: Type): Promise<Uint8Array>
 
 将输入参数异步编码后输出对应Uint8Array对象。使用Promise异步回调。
 
-元服务API：从API version 11开始，该接口支持在元服务中使用。
+元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Utils.Lang
 
@@ -3701,7 +3695,7 @@ encode(src: Uint8Array, options?: Type): Promise<Uint8Array>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，返回异步编码后新分配的Uint8Array对象。 |
+| Promise | Promise对象。编码成功时resolve为新分配的Uint8Array对象，编码失败时reject为错误对象。 |
 
 示例：
 
@@ -3718,7 +3712,7 @@ base64Helper.encode(array).then((val) => {
 
 encodeToString(src: Uint8Array, options?: Type): Promise<string>
 
-将输入参数异步编码后输出对应文本。
+将输入参数异步编码后输出对应文本。使用Promise异步回调。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -3735,7 +3729,7 @@ encodeToString(src: Uint8Array, options?: Type): Promise<string>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | 返回异步编码后的字符串。 |
+| Promise | Promise对象。编码成功时resolve为Base64编码后的字符串，编码失败时reject为错误对象。 |
 
 示例：
 
@@ -3757,7 +3751,7 @@ base64Helper.encodeToString(array, util.Type.MIME).then((val) => {
 
 decode(src: Uint8Array | string, options?: Type): Promise<Uint8Array>
 
-将输入参数异步解码后输出对应Uint8Array对象。
+将输入参数异步解码后输出对应Uint8Array对象。使用Promise异步回调。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -3797,9 +3791,9 @@ base64Helper.decode(array, util.Type.MIME).then((val) => {
 
 constructor(encoding?: string)
 
-StringDecoder的构造函数。
+StringDecoder的构造函数，创建一个默认编码为'utf-8'的StringDecoder实例。
 
-元服务API：从API version 12开始，该接口支持在元服务中使用。
+元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Utils.Lang
 
@@ -3821,7 +3815,7 @@ write(chunk: string | Uint8Array): string
 
 返回一个解码后的字符串，确保Uint8Array末尾的任何不完整的多字节字符从返回的字符串中被过滤，并保存在一个内部的buffer中用于下次调用。
 
-元服务API：从API version 12开始，该接口支持在元服务中使用。
+元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Utils.Lang
 
@@ -3835,7 +3829,7 @@ write(chunk: string | Uint8Array): string
 
 | 类型 | 说明 |
 | --- | --- |
-| string | 返回解码后的字符串。 |
+| string | 返回解码后的字符串，不完整的多字节字符已从返回值中过滤，并保存在内部缓冲区中供下次调用处理。 |
 
 示例：
 
@@ -3853,7 +3847,7 @@ end(chunk?: string | Uint8Array): string
 
 结束解码过程，以字符串形式返回存储在内部缓冲区中的所有剩余输入。
 
-元服务API：从API version 12开始，该接口支持在元服务中使用。
+元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Utils.Lang
 
@@ -3861,13 +3855,13 @@ end(chunk?: string | Uint8Array): string
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| chunk | string | Uint8Array | 否 | 需要解码的字符串。默认为undefined。 |
+| chunk | string | Uint8Array | 否 | 需要解码的最后一部分数据。当还有剩余数据需要在结束解码时一并处理时传入此参数；不传入时默认为undefined，即仅返回内部缓冲区中存储的不完整字节序列的解码结果，不再处理新数据。要解码的字符串。默认为undefined。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| string | 返回解码后的字符串。 |
+| string | 返回存储在内部缓冲区中的所有剩余解码内容组成的字符串。 |
 
 示例：
 
@@ -3890,10 +3884,10 @@ Base64编码格式枚举。
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| BASIC | 0 | 表示BASIC编码格式。**元服务API**：从API version 11开始，该接口支持在元服务中使用。 |
-| MIME | 1 | 表示MIME编码格式。**元服务API**：从API version 11开始，该接口支持在元服务中使用。 |
-| BASIC_URL_SAFE12+ | 2 | 表示BASIC_URL_SAFE编码格式。 从API version 12开始支持此枚举。**元服务API**：从API version 12开始，该接口支持在元服务中使用。 |
-| MIME_URL_SAFE12+ | 3 | 表示MIME_URL_SAFE编码格式。 从API version 12开始支持此枚举。**元服务API**：从API version 12开始，该接口支持在元服务中使用。 |
+| BASIC | 0 | 表示BASIC编码格式。**元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| MIME | 1 | 表示MIME编码格式。**元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| BASIC_URL_SAFE12+ | 2 | 表示BASIC_URL_SAFE编码格式。 从API version 12开始支持此枚举。**元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| MIME_URL_SAFE12+ | 3 | 表示MIME_URL_SAFE编码格式。 从API version 12开始支持此枚举。**元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 
 #### types8+
 
@@ -3903,7 +3897,7 @@ types为不同类型的内置对象提供类型检查，可以避免由于类型
 
 constructor()
 
-Types的构造函数。
+Types的构造函数，创建一个用于内置对象类型检查的types实例。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -4112,7 +4106,7 @@ isBooleanObject(value: Object): boolean
 
 检查value是否为Boolean对象。
 
-![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 14开始废弃，没有替代接口。
+![](./img/note_3.0-zh-cn.png) 从 API version 8开始支持，从API version 14开始废弃。没有替代接口。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -4287,7 +4281,7 @@ static napi_value Init(napi_env env, napi_value exports)
 }
 EXTERN_C_END
 // 此处已省略模块注册的代码, 你可能需要自行注册Testexternal方法
-...
+// ...
 ```
  
 ```
@@ -4575,7 +4569,7 @@ isMap(value: Object): boolean
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | 如果是Map类型返回则返回true，否则返回false。 |
+| boolean | 如果是Map类型则返回true，否则返回false。 |
 
 示例：
 
@@ -4898,7 +4892,7 @@ isSymbolObject(value: Object): boolean
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | 如果是Symbol对象类型为则返回true，否则返回false。 |
+| boolean | 如果是Symbol对象类型则返回true，否则返回false。 |
 
 示例：
 
@@ -5293,7 +5287,7 @@ onFinalization(heldValue: T): void
 
 #### AutoFinalizerCleaner22+
 
-AutoFinalizerCleaner是用于关联对象生命周期与资源清理逻辑的工具类。主要的作用是将实现了AutoFinalizer<T>接口的对象与特定值绑定，当对象被回收时自动触发资源清理回调。
+AutoFinalizerCleaner是用于关联对象生命周期与资源清理逻辑的工具类，需要和AutoFinalizer<T>一起使用。主要的作用是将实现了AutoFinalizer<T>接口的对象与特定值绑定，当对象被回收时自动触发资源清理回调。只使用AutoFinalizerCleaner而不实现AutoFinalizer接口没有任何功能。
 
 #### [h2]register22+
 
@@ -5366,7 +5360,7 @@ constructor(capacity?: number)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| capacity | number | 否 | 指示要为缓冲区自定义的容量，默认值为64。 |
+| capacity | number | 否 | 指示要为缓冲区自定义的容量，取值范围为[0, 2147483647]，默认值为64。 |
 
 示例：
 
@@ -5388,7 +5382,7 @@ updateCapacity(newCapacity: number): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| newCapacity | number | 是 | 指示要为缓冲区自定义的容量。 |
+| newCapacity | number | 是 | 指示要为缓冲区自定义的容量，取值范围为[0, 2147483647]。 |
 
 示例：
 
@@ -5454,7 +5448,7 @@ console.info("result = " + result);
 
 clear(): void
 
-清除当前缓冲区中的键值对，后续调用afterRemoval()方法执行操作。
+清除当前缓冲区中的键值对，后续调用[afterRemoval](#afterremoval9)方法执行操作。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[LRUCache.clear9+](#clear9)替代。
 
@@ -5617,7 +5611,7 @@ isEmpty(): boolean
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | 如果当前缓冲区不包含任何值，则返回true。 |
+| boolean | 如果当前缓冲区不包含任何值，则返回true；否则返回false。 |
 
 示例：
 
@@ -5633,7 +5627,7 @@ console.info("result = " + result);
 
 get(key: K): V | undefined
 
-表示要查询的键。
+返回键对应的值。当键不在缓冲区中时，返回undefined。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[LRUCache.get9+](#get9)替代。
 
@@ -5675,7 +5669,7 @@ put(key: K,value: V): V
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| key | K | 是 | 要添加的密钥。 |
+| key | K | 是 | 要添加的键。 |
 | value | V | 是 | 指示与要添加的键关联的值。 |
 
 返回值：
@@ -5761,7 +5755,7 @@ remove(key: K): V | undefined
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| key | K | 是 | 要删除的密钥。 |
+| key | K | 是 | 要删除的键。 |
 
 返回值：
 
@@ -5843,7 +5837,7 @@ contains(key: K): boolean
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | 如果缓冲区包含指定的键，则返回 true。 |
+| boolean | 如果缓冲区包含指定的键，则返回true；否则返回false。 |
 
 示例：
 
@@ -5859,7 +5853,7 @@ console.info('result = ' + result);
 
 createDefault(key: K): V
 
-如果未计算特定键的值，则执行后续操作，参数表示丢失的键，返回与键关联的值。
+当缓冲区中未匹配到指定键时，执行后续处理逻辑，参数表示未匹配到的键，返回与该键关联的值，默认返回undefined。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[LRUCache.createDefault9+](#createdefault9)替代。
 

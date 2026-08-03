@@ -2,15 +2,15 @@
 title: "服务通知"
 upstream_id: "harmonyos-references/push-api-service-noti"
 catalog: "harmonyos-references"
-content_hash: "7481d069aec1"
-synced_at: "2026-07-09T01:01:38.281286"
+content_hash: "66dedd1cb2e7"
+synced_at: "2026-08-03T17:12:39.563908"
 ---
 
 # 服务通知
 
 #### 功能介绍
 
-元服务通过调用[requestSubscribeNotification](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-servicenotification#servicenotificationrequestsubscribenotification)获取用户授权后，可调用服务通知REST API，完成订阅消息下发功能。
+元服务通过调用[requestSubscribeNotification](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-servicenotification#servicenotificationrequestsubscribenotification-1)获取用户授权后，可调用服务通知REST API，完成订阅消息下发功能。
 
 #### 约束与限制
 
@@ -138,7 +138,7 @@ Authorization: Bearer eyJr*****OiIx---****.eyJh*****iJodHR--***.QRod*****4Gp---*
 | 200 | 成功。 | - |
 | 400 | 参数错误。 | 请检查业务响应码并根据业务响应码进一步排查问题。 |
 | 401 | 鉴权失败。 | 请检查HTTP头中Authorization参数。 |
-| 404 | 找不到服务。 | 请检查请求URI是否正确。 |
+| 404 | 找不到服务。 | 请检查请求URL是否正确。 |
 | 500 | 服务内部错误。 | 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
 | 502 | 请求连接异常，常见于网络状况不稳定。 | 建议稍后重试，或通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
 | 503 | 流量控制。 | · 平均分配发送速度。 · 平均分布推送时间段，不要集中发送。 **说明：** 单日单项目最多10万次，流控100tps。 |

@@ -2,8 +2,8 @@
 title: "jsvm_types.h"
 upstream_id: "harmonyos-references/capi-jsvm-types-h"
 catalog: "harmonyos-references"
-content_hash: "be3f0a1794e2"
-synced_at: "2026-07-09T01:01:47.394029"
+content_hash: "e21ff3fcd06a"
+synced_at: "2026-08-03T17:12:47.386529"
 ---
 
 # jsvm_types.h
@@ -23,6 +23,12 @@ synced_at: "2026-07-09T01:01:47.394029"
 相关模块： [JSVM](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm)
 
 #### 汇总
+
+#### [h2]宏定义
+
+| 名称 | 描述 |
+| --- | --- |
+| **JSVM_CDECL** | 用于指定函数的C调用约定，主要应用于回调函数指针的声明，以确保跨平台下回调函数使用统一的C调用约定。 当预处理指令_WIN32检查到为Windows平台时：JSVM_CDECL被赋值为"__cdecl"，表示使用C调用约定。当预处理指令_WIN32检查到不是Windows平台时：无须标记，JSVM_CDECL为空。 |
 
 #### [h2]结构体
 
@@ -361,8 +367,8 @@ enum JSVM_CacheType
 
 | 枚举项 | 描述 |
 | --- | --- |
-| JSVM_CACHE_TYPE_JS | JS 缓存, 由接口 OH_JSVM_CreateCodeCache 生成。 |
-| JSVM_CACHE_TYPE_WASM | WebAssembly 缓存, 由接口 OH_JSVM_CreateWasmCache 生成。 |
+| JSVM_CACHE_TYPE_JS | JS 缓存，由接口 OH_JSVM_CreateCodeCache 生成。 |
+| JSVM_CACHE_TYPE_WASM | WebAssembly 缓存，由接口 OH_JSVM_CreateWasmCache 生成。 |
 
 #### [h2]JSVM_MicrotaskPolicy
 
@@ -393,12 +399,12 @@ JSVM 内部 Trace 事件的类别。
 
 | 枚举项 | 描述 |
 | --- | --- |
-| JSVM_TRACE_VM | 采集 JSVM 主要接口调用, 例如执行 js 脚本。 |
-| JSVM_TRACE_COMPILE | 采集编译相关的接口调用, 例如后台编译。 |
-| JSVM_TRACE_EXECUTE | 采集与运行状态相关的接口调用, 例如中断与微任务。 |
+| JSVM_TRACE_VM | 采集 JSVM 主要接口调用，例如执行 js 脚本。 |
+| JSVM_TRACE_COMPILE | 采集编译相关的接口调用，例如后台编译。 |
+| JSVM_TRACE_EXECUTE | 采集与运行状态相关的接口调用，例如中断与微任务。 |
 | JSVM_TRACE_RUNTIME | 采集外部函数调用相关信息。 |
 | JSVM_TRACE_STACK_TRACE | 采集 JSVM 中堆栈相关信息。 |
-| JSVM_TRACE_WASM | 采集主要的 WASM 相关接口调用, 例如编译与实例化 WASM 模块。 |
+| JSVM_TRACE_WASM | 采集主要的 WASM 相关接口调用，例如编译与实例化 WASM 模块。 |
 | JSVM_TRACE_WASM_DETAILED | 采集更多更细节的 WASM 相关接口调用，例如后台编译、跳板编译。 |
 
 #### [h2]JSVM_CBTriggerTimeForGC

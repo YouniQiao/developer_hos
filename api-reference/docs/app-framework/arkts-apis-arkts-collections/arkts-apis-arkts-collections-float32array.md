@@ -2,8 +2,8 @@
 title: "Class (Float32Array)"
 upstream_id: "harmonyos-references/arkts-apis-arkts-collections-float32array"
 catalog: "harmonyos-references"
-content_hash: "952217200f67"
-synced_at: "2026-07-28T16:40:56.045954"
+content_hash: "cb7c2aebd014"
+synced_at: "2026-08-03T17:09:32.016981"
 ---
 
 # Class (Float32Array)
@@ -24,15 +24,15 @@ import { collections } from '@kit.ArkTS';
 
 #### 属性
 
-系统能力： SystemCapability.Utils.Lang
-
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.Utils.Lang
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | buffer | ArrayBuffer | 是 | 否 | ArkTS Float32Array底层使用的buffer。 |
 | byteLength | number | 是 | 否 | ArkTS Float32Array所占的字节数。 |
-| byteOffset | number | 是 | 否 | ArkTS Float32Array距离其ArrayBuffer起始位置的偏移。 |
+| byteOffset | number | 是 | 否 | ArkTS Float32Array距离其ArrayBuffer起始位置的字节偏移。 |
 | length | number | 是 | 否 | ArkTS Float32Array元素个数。 |
 | BYTES_PER_ELEMENT | number | 是 | 否 | ArkTS Float32Array中每个元素所占的字节数。 |
 
@@ -42,9 +42,9 @@ constructor()
 
 构造函数，用于创建一个空ArkTS Float32Array对象。
 
-系统能力： SystemCapability.Utils.Lang
-
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.Utils.Lang
 
 错误码：
 
@@ -57,6 +57,7 @@ constructor()
 示例：
 
 ```
+// 创建空的Float32Array对象
 let float32Array: collections.Float32Array = new collections.Float32Array();
 ```
 
@@ -78,7 +79,7 @@ constructor(length: number)
 
 错误码：
 
-以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -109,7 +110,7 @@ constructor(elements: Iterable<number>)
 
 错误码：
 
-以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -120,7 +121,7 @@ constructor(elements: Iterable<number>)
 ```
 // 从一个Iterable构造对象，Float32Array [1, 2, 3]
 let set: Set<number> = new Set<number>([1, 2, 3]);
-let array: collections.Float32Array = new collections.Float32Array(set);
+let float32Array: collections.Float32Array = new collections.Float32Array(set);
 ```
 
 #### constructor
@@ -137,11 +138,11 @@ constructor(array: ArrayLike<number> | ArrayBuffer)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| array | ArrayLike | ArrayBuffer | 是 | 用于构造ArkTS Float32Array的对象。当参数类型是ArrayBuffer时buffer所占的字节数须是4的整数倍。 |
+| array | ArrayLike | ArrayBuffer | 是 | 用于构造ArkTS Float32Array的对象。当参数类型是ArrayBuffer时buffer所占的字节数需是4的整数倍。 |
 
 错误码：
 
-以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -152,13 +153,13 @@ constructor(array: ArrayLike<number> | ArrayBuffer)
 ```
 // 例1 从一个ArrayLike构造对象
 let arrayLike = [1, 3, 5];
-let array: collections.Float32Array = new collections.Float32Array(arrayLike);
+let float32Array: collections.Float32Array = new collections.Float32Array(arrayLike);
 ```
  
 ```
 // 例2 从一个ArrayBuffer构造对象
 let arrayBuffer: collections.ArrayBuffer = new collections.ArrayBuffer(12);
-let array: collections.Float32Array = new collections.Float32Array(arrayBuffer);
+let float32Array: collections.Float32Array = new collections.Float32Array(arrayBuffer);
 ```
  
 ```
@@ -184,11 +185,11 @@ constructor(buffer: ArrayBuffer, byteOffset?: number, length?: number)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| buffer | ArrayBuffer | 是 | 用于构造ArkTS Float32Array的ArrayBuffer对象。buffer所占的字节数须是4的整数倍。 |
-| byteOffset | number | 否 | 指定buffer的字节偏移，从0开始，默认为0。 |
+| buffer | ArrayBuffer | 是 | 用于构造ArkTS Float32Array的ArrayBuffer对象。buffer所占的字节数需是4的整数倍。 |
+| byteOffset | number | 否 | 指定buffer的字节偏移，从0开始，默认值为0。byteOffset需为4的整数倍。 |
 | length | number | 否 | 指定ArkTS Float32Array的长度，默认值为0。取值需为非负整数，且需满足byteOffset + length * 4 错误码：
 
-以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -247,7 +248,7 @@ static from<T>(arrayLike: ArrayLike<T>, mapFn: TypedArrayFromMapFn<T, number>): 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| arrayLike | ArrayLike | 是 | 用于构造ArrayLike对象。 |
+| arrayLike | ArrayLike | 是 | 用于构造ArkTS Float32Array的ArrayLike对象。 |
 | mapFn | [TypedArrayFromMapFn](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-collections-types#typedarrayfrommapfn) | 是 | 映射函数。 |
 
 返回值：
@@ -290,7 +291,7 @@ static from(arrayLike: Iterable<number>, mapFn?: TypedArrayFromMapFn<number, num
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| arrayLike | Iterable | 是 | 用于构造的可迭代对象。 |
+| arrayLike | Iterable | 是 | 用于构造ArkTS Float32Array的可迭代对象。 |
 | mapFn | [TypedArrayFromMapFn](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-collections-types#typedarrayfrommapfn) | 否 | 映射函数。如果省略，则不对元素进行加工处理。 |
 
 返回值：
@@ -339,15 +340,16 @@ static of(...items: number[]): Float32Array
 示例：
 
 ```
-let arr: collections.Float32Array = collections.Float32Array.of(1, 2, 3, 4);
-console.info(arr.toString()); // 预期输出：1,2,3,4
+// 通过可变参数创建Float32Array对象
+let float32Array: collections.Float32Array = collections.Float32Array.of(1, 2, 3, 4);
+console.info(float32Array.toString()); // 预期输出：1,2,3,4
 ```
 
 #### toString18+
 
 toString(): string
 
-ArkTS Float32Array转换为字符串。
+将ArkTS Float32Array转换为字符串，各元素以逗号分隔拼接。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -361,7 +363,7 @@ ArkTS Float32Array转换为字符串。
 
 错误码：
 
-以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -371,8 +373,8 @@ ArkTS Float32Array转换为字符串。
 示例：
 
 ```
-let array = new collections.Float32Array([1, 2, 3, 4, 5]);
-let stringArray = array.toString();
+let float32Array = new collections.Float32Array([1, 2, 3, 4, 5]);
+let stringArray = float32Array.toString(); // 将Float32Array转换为字符串
 console.info(stringArray); // 预期输出：1,2,3,4,5
 ```
 
@@ -394,7 +396,7 @@ toLocaleString(): string
 
 错误码：
 
-以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -428,11 +430,11 @@ copyWithin(target: number, start: number, end?: number): Float32Array
 
 | 类型 | 说明 |
 | --- | --- |
-| Float32Array | 修改后的Float32Array。 |
+| Float32Array | 修改后的ArkTS Float32Array。 |
 
 错误码：
 
-以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -442,9 +444,9 @@ copyWithin(target: number, start: number, end?: number): Float32Array
 示例：
 
 ```
-let array: collections.Float32Array = collections.Float32Array.from([1, 2, 3, 4, 5, 6, 7, 8]);
+let float32Array: collections.Float32Array = collections.Float32Array.from([1, 2, 3, 4, 5, 6, 7, 8]);
 // Float32Array [1, 2, 3, 2, 3, 6, 7, 8]
-let copied: collections.Float32Array = array.copyWithin(3, 1, 3);
+let copied: collections.Float32Array = float32Array.copyWithin(3, 1, 3);
 ```
 
 #### some
@@ -471,7 +473,7 @@ some(predicate: TypedArrayPredicateFn<number, Float32Array>): boolean
 
 错误码：
 
-以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -483,6 +485,7 @@ some(predicate: TypedArrayPredicateFn<number, Float32Array>): boolean
 ```
 let arrayLike = [-10, 20, -30, 40, -50];
 let float32Array: collections.Float32Array = new collections.Float32Array(arrayLike);
+// 测试是否存在小于0的元素
 float32Array.some((element: number) => element < 0); // true
 ```
 
@@ -510,7 +513,7 @@ every(predicate: TypedArrayPredicateFn<number, Float32Array>): boolean
 
 错误码：
 
-以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -522,6 +525,7 @@ every(predicate: TypedArrayPredicateFn<number, Float32Array>): boolean
 ```
 let arrayLike = [-10, 20, -30, 40, -50];
 let float32Array: collections.Float32Array = new collections.Float32Array(arrayLike);
+// 判断是否所有元素都大于0
 float32Array.every((element: number) => element > 0);  // false
 ```
 
@@ -548,7 +552,7 @@ fill(value: number, start?: number, end?: number): Float32Array
 
 错误码：
 
-以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -559,8 +563,11 @@ fill(value: number, start?: number, end?: number): Float32Array
 
 ```
 let arrayLike = [1, 2, 3];
+// 使用4填充所有元素
 new collections.Float32Array(arrayLike).fill(4); // Float32Array [4, 4, 4]
+// 从索引1开始填充4
 new collections.Float32Array(arrayLike).fill(4, 1); // Float32Array [1, 4, 4]
+// 从索引1到2（不含2）填充4
 new collections.Float32Array(arrayLike).fill(4, 1, 2); // Float32Array [1, 4, 3]
 ```
 
@@ -588,7 +595,7 @@ filter(predicate: TypedArrayPredicateFn<number, Float32Array>): Float32Array
 
 错误码：
 
-以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -627,7 +634,7 @@ find(predicate: TypedArrayPredicateFn<number, Float32Array>): number | undefined
 
 错误码：
 
-以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -666,7 +673,7 @@ findIndex(predicate: TypedArrayPredicateFn<number, Float32Array>): number
 
 错误码：
 
-以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -698,7 +705,7 @@ forEach(callbackFn: TypedArrayForEachCallback<number, Float32Array>): void
 
 错误码：
 
-以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -709,8 +716,9 @@ forEach(callbackFn: TypedArrayForEachCallback<number, Float32Array>): void
 
 ```
 let float32Array: collections.Float32Array = collections.Float32Array.from([1, 2, 3]);
+// 遍历Float32Array中的每个元素
 float32Array.forEach((value: number, index: number, array: collections.Float32Array) => {
-  console.info(`Element ${value} at index ${index}`);
+  console.info("Element " + value + " at index " + index);
 });
 ```
 
@@ -739,7 +747,7 @@ indexOf(searchElement: number, fromIndex?: number): number
 
 错误码：
 
-以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -822,7 +830,7 @@ join(separator?: string): string
 
 错误码：
 
-以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -856,11 +864,11 @@ map(callbackFn: TypedArrayMapCallback<number, Float32Array>): Float32Array
 
 | 类型 | 说明 |
 | --- | --- |
-| Float32Array | 新ArkTS Float32Array对象。 |
+| Float32Array | 包含回调函数处理后结果的新ArkTS Float32Array对象。 |
 
 错误码：
 
-以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -898,7 +906,7 @@ reduce(callbackFn: TypedArrayReduceCallback<number, number, Float32Array>): numb
 
 错误码：
 
-以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -917,7 +925,7 @@ let reducedValue: number = array.reduce((accumulator: number, value: number) => 
 
 reduceRight(callbackFn: TypedArrayReduceCallback<number, number, Float32Array>): number
 
-反向遍历ArkTS Float32Array，对ArkTS Float32Array中的每个元素执行归约函数，并返回最终的归约结果。
+反向遍历ArkTS Float32Array，对每个元素执行归约函数，并返回最终的归约结果。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -967,7 +975,7 @@ reduce<U = number>(callbackFn: TypedArrayReduceCallback<U, number, Float32Array>
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | callbackFn | [TypedArrayReduceCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-collections-types#typedarrayreducecallback) | 是 | 归约函数。 |
-| initialValue | U | 是 | 初始值。 |
+| initialValue | U | 是 | 归约函数首次调用时的初始累加值。 |
 
 返回值：
 
@@ -977,7 +985,7 @@ reduce<U = number>(callbackFn: TypedArrayReduceCallback<U, number, Float32Array>
 
 错误码：
 
-以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -996,7 +1004,7 @@ let reducedValue: number = array.reduce((accumulator: number, value: number) => 
 
 reduceRight<U = number>(callbackFn: TypedArrayReduceCallback<U, number, Float32Array>, initialValue: U): U
 
-反向遍历ArkTS Float32Array，对ArkTS Float32Array中的每个元素执行归约函数，且接收一个初始值作为归约函数首次调用的参数，并返回最终的归约结果。
+反向遍历ArkTS Float32Array，对每个元素执行归约函数，且接收一个初始值作为归约函数首次调用的参数，并返回最终的归约结果。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -1007,7 +1015,7 @@ reduceRight<U = number>(callbackFn: TypedArrayReduceCallback<U, number, Float32A
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | callbackFn | [TypedArrayReduceCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-collections-types#typedarrayreducecallback) | 是 | 归约函数。 |
-| initialValue | U | 是 | 初始值。 |
+| initialValue | U | 是 | 归约函数首次调用时的初始累加值。 |
 
 返回值：
 
@@ -1036,7 +1044,7 @@ console.info(reducedValue + ''); // 预期输出：16
 
 reverse(): Float32Array
 
-反转ArkTS Float32Array。
+反转ArkTS Float32Array中元素的顺序。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1079,11 +1087,11 @@ set(array: ArrayLike<number>, offset?: number): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | array | ArrayLike | 是 | 用于设置的ArrayLike对象。 |
-| offset | number | 否 | 写入的起始位置。默认为0。 |
+| offset | number | 否 | 写入的起始位置。默认值为0。取值为非负整数，且offset + array.length不超过当前Float32Array的长度。 |
 
 错误码：
 
-以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -1102,7 +1110,7 @@ array.set([1, 2, 3], 3); // Float32Array [0, 0, 0, 1, 2, 3, 0, 0]
 
 slice(start?: number, end?: number): Float32Array
 
-返回一个新的ArkTS Float32Array对象，其包含原ArkTS Float32Array指定范围的内容。
+返回一个新的ArkTS Float32Array对象，其包含原ArkTS Float32Array指定范围的内容。与subarray不同，slice返回的对象不会影响原数组。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1116,11 +1124,11 @@ slice(start?: number, end?: number): Float32Array
 
 | 类型 | 说明 |
 | --- | --- |
-| Float32Array | 新的ArkTS Float32Array对象。 |
+| Float32Array | 包含原ArkTS Float32Array指定范围元素的新的ArkTS Float32Array对象。 |
 
 错误码：
 
-以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -1160,7 +1168,7 @@ sort(compareFn?: TypedArrayCompareFn<number>): Float32Array
 
 错误码：
 
-以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -1197,11 +1205,11 @@ subarray(begin?: number, end?: number): Float32Array
 
 | 类型 | 说明 |
 | --- | --- |
-| Float32Array | 新的ArkTS Float32Array对象。 |
+| Float32Array | 基于相同ArrayBuffer的新ArkTS Float32Array对象。 |
 
 错误码：
 
-以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -1230,7 +1238,7 @@ at(index: number): number | undefined
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| index | number | 是 | 要返回的Array元素的索引（从零开始），取值为整数。如果index 返回值：
+| index | number | 是 | 要返回的ArkTS Float32Array元素的索引（从零开始），取值为整数。如果index 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
@@ -1238,7 +1246,7 @@ at(index: number): number | undefined
 
 错误码：
 
-以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -1248,17 +1256,17 @@ at(index: number): number | undefined
 示例：
 
 ```
-let array: collections.Float32Array = collections.Float32Array.from([1, 2, 3, 4, 5]);
-console.info("element: " + array.at(2));  // element: 3
-console.info("element: " + array.at(-1)); // element: 5
-console.info("element: " + array.at(6));  // element: undefined
+let float32Array: collections.Float32Array = collections.Float32Array.from([1, 2, 3, 4, 5]);
+console.info("element: " + float32Array.at(2));  // element: 3
+console.info("element: " + float32Array.at(-1)); // element: 5
+console.info("element: " + float32Array.at(6));  // element: undefined
 ```
 
 #### includes
 
 includes(searchElement: number, fromIndex?: number): boolean
 
-判断ArkTS Float32Array是否包含特定元素。
+判断ArkTS Float32Array是否包含指定元素。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1277,7 +1285,7 @@ includes(searchElement: number, fromIndex?: number): boolean
 
 错误码：
 
-以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -1307,7 +1315,7 @@ entries(): IterableIterator<[number, number]>
 
 | 类型 | 说明 |
 | --- | --- |
-| IterableIterator | 新的迭代器对象。 |
+| IterableIterator | 包含ArkTS Float32Array中每个元素键值对的迭代器对象。 |
 
 错误码：
 
@@ -1377,7 +1385,7 @@ values(): IterableIterator<number>
 
 | 类型 | 说明 |
 | --- | --- |
-| IterableIterator | 新的迭代器对象。 |
+| IterableIterator | 包含ArkTS Float32Array中每个元素值的迭代器对象。 |
 
 错误码：
 
@@ -1428,9 +1436,9 @@ for (const value of iterator) {
 
 ```
 let float32Array: collections.Float32Array = collections.Float32Array.from([1, 2, 3, 4, 5, 6]);
-
+// 通过迭代器遍历Float32Array
 for (let item of float32Array) {
-  console.info(`value : ${item}`);
+  console.info("value : " + item);
 }
 ```
 
@@ -1448,17 +1456,18 @@ for (let item of float32Array) {
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| index | number | 是 | 所需代码单元的从零开始的索引。 |
+| index | number | 是 | 从0开始的元素索引。取值范围为[0, Float32Array.length - 1]。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 返回number数据类型。 |
+| number | 返回指定索引位置的元素值。 |
 
 示例：
 
 ```
 let float32Array = collections.Float32Array.from([1, 2, 4]);
+// 通过索引访问Float32Array中的元素
 console.info("Element at index 1: ", float32Array[1]);
 ```

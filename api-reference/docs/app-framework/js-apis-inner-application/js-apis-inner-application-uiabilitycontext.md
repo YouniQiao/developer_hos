@@ -2,8 +2,8 @@
 title: "UIAbilityContext"
 upstream_id: "harmonyos-references/js-apis-inner-application-uiabilitycontext"
 catalog: "harmonyos-references"
-content_hash: "44fe2ed1d950"
-synced_at: "2026-07-28T16:40:39.782122"
+content_hash: "e5a36d51932b"
+synced_at: "2026-08-03T17:09:21.265519"
 ---
 
 # UIAbilityContext
@@ -167,7 +167,7 @@ startAbility(want: Want, options: StartOptions, callback: AsyncCallback<void>): 
 | 16000019 | No matching ability is found. 适用版本：12+ |
 | 16000050 | Internal error. |
 | 16000053 | The ability is not on the top of the UI. |
-| 16000055 | Installation-free timed out. 适用版本：12+ |
+| 16000055 | Installation-free timed out. |
 | 16000067 | The StartOptions check failed. 适用版本：12+ |
 | 16000068 | The ability is already running. 适用版本：12+ |
 | 16300003 | The target application is not the current application. 适用版本：12+ |

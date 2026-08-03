@@ -2,8 +2,8 @@
 title: "oh_commonevent.h"
 upstream_id: "harmonyos-references/capi-oh-commonevent-h"
 catalog: "harmonyos-references"
-content_hash: "673ce5f7b420"
-synced_at: "2026-07-28T16:51:00.335850"
+content_hash: "6a1a9b0897b1"
+synced_at: "2026-08-03T17:11:23.635388"
 ---
 
 # oh_commonevent.h
@@ -1217,7 +1217,7 @@ CommonEvent_ErrCode OH_CommonEvent_Publish(const char* event)
 
 | 类型 | 说明 |
 | --- | --- |
-| [CommonEvent_ErrCode](#commonevent_errcode) | 返回错误码。 返回[COMMONEVENT_ERR_OK](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-commonevent-h#commonevent_errcode)表示成功。 返回[COMMONEVENT_ERR_INVALID_PARAMETER](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-commonevent-h#commonevent_errcode)表示参数错误。 返回[COMMONEVENT_ERR_SENDING_LIMIT_EXCEEDED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-commonevent-h#commonevent_errcode)表示事件发送频率过高。 返回[COMMONEVENT_ERR_SENDING_REQUEST_FAILED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-commonevent-h#commonevent_errcode)表示IPC请求发送失败。 返回[COMMONEVENT_ERR_INIT_UNDONE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-commonevent-h#commonevent_errcode)表示公共事件服务未初始化。 返回[COMMONEVENT_ERR_NOT_SYSTEM_SERVICE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-commonevent-h#commonevent_errcode)表示三方应用无法发送系统公共事件。 |
+| [CommonEvent_ErrCode](#commonevent_errcode) | 返回错误码。 返回[COMMONEVENT_ERR_OK](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-commonevent-h#commonevent_errcode)表示成功。 返回[COMMONEVENT_ERR_INVALID_PARAMETER](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-commonevent-h#commonevent_errcode)表示参数错误。 返回[COMMONEVENT_ERR_SENDING_LIMIT_EXCEEDED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-commonevent-h#commonevent_errcode)表示事件发送频率过高。 返回[COMMONEVENT_ERR_SENDING_REQUEST_FAILED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-commonevent-h#commonevent_errcode)表示IPC请求发送失败。 返回[COMMONEVENT_ERR_INIT_UNDONE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-commonevent-h#commonevent_errcode)表示公共事件服务未初始化。 |
 
 #### [h2]OH_CommonEvent_PublishWithInfo()
 

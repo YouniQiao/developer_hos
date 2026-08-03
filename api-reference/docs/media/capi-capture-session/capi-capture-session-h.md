@@ -2,8 +2,8 @@
 title: "capture_session.h"
 upstream_id: "harmonyos-references/capi-capture-session-h"
 catalog: "harmonyos-references"
-content_hash: "542005168b3b"
-synced_at: "2026-07-28T16:51:43.007614"
+content_hash: "bbca424c97a6"
+synced_at: "2026-08-03T17:11:50.624384"
 ---
 
 # capture_session.h
@@ -2488,7 +2488,7 @@ Camera_ErrorCode OH_CaptureSession_GetColorTintRange(const Camera_CaptureSession
 
 获取支持配置的白平衡色调调节范围。
 
-起始版本： 26
+起始版本： 26.0.0
 
 参数：
 
@@ -2513,7 +2513,7 @@ Camera_ErrorCode OH_CaptureSession_GetColorTint(const Camera_CaptureSession* ses
 
 获取当前白平衡的色调调节值。
 
-起始版本： 26
+起始版本： 26.0.0
 
 参数：
 
@@ -2537,7 +2537,7 @@ Camera_ErrorCode OH_CaptureSession_SetColorTint(Camera_CaptureSession* session, 
 
 设置白平衡的色调调节值。设置前，建议通过[OH_CaptureSession_GetColorTintRange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-capture-session-h#oh_capturesession_getcolortintrange)获取支持配置的白平衡色调调节范围。
 
-起始版本： 26
+起始版本： 26.0.0
 
 参数：
 

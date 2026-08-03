@@ -2,8 +2,8 @@
 title: "hiappevent_param.h"
 upstream_id: "harmonyos-references/capi-hiappevent-param-h"
 catalog: "harmonyos-references"
-content_hash: "13d31ed7a058"
-synced_at: "2026-07-28T16:51:22.370475"
+content_hash: "98b658e4bd98"
+synced_at: "2026-08-03T17:11:37.269694"
 ---
 
 # hiappevent_param.h
@@ -197,6 +197,6 @@ synced_at: "2026-07-28T16:51:22.370475"
 ```
  描述
 
-用于APP_CRASH事件，是否使能minidump。
+用于设置APP_CRASH事件中的CPP_CRASH类型的日志规格，是否在CPP_CRASH场景收集minidump日志。
 
 起始版本： 26.0.0

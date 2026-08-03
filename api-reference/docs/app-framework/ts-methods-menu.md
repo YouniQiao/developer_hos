@@ -2,8 +2,8 @@
 title: "ContextMenu"
 upstream_id: "harmonyos-references/ts-methods-menu"
 catalog: "harmonyos-references"
-content_hash: "70cf2858dee3"
-synced_at: "2026-07-28T16:47:04.171427"
+content_hash: "70af55f962e2"
+synced_at: "2026-08-03T17:09:57.572913"
 ---
 
 # ContextMenu
@@ -14,7 +14,7 @@ synced_at: "2026-07-28T16:47:04.171427"
 
 #### ContextMenu.close(deprecated)
 
-static close(): void
+static close()
 
 在页面范围内关闭通过[bindContextMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#bindcontextmenu12)绑定的菜单。常用于页面跳转、拖拽开始等需要主动关闭已显示菜单的交互场景。
 
@@ -70,4 +70,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008826.gif)
+ ![](./img/zh-cn_image_0000002689679857.gif)

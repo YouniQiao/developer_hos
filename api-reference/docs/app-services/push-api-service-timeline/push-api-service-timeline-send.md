@@ -2,8 +2,8 @@
 title: "服务动态推送接口"
 upstream_id: "harmonyos-references/push-api-service-timeline-send"
 catalog: "harmonyos-references"
-content_hash: "4ea1943301e7"
-synced_at: "2026-07-09T01:01:38.361988"
+content_hash: "1ad5a48947c7"
+synced_at: "2026-08-03T17:12:39.802303"
 ---
 
 # 服务动态推送接口
@@ -187,7 +187,7 @@ Authorization: Bearer eyJr*****OiIx---****.eyJh*****iJodHR--***.QRod*****4Gp---*
 | 200 | 成功。 | - |
 | 400 | 参数错误。 | 请检查业务响应码并根据业务响应码进一步排查问题。 |
 | 401 | 鉴权失败。 | 请检查HTTP头中Authorization参数。 |
-| 404 | 找不到服务。 | 请检查请求URI是否正确。 |
+| 404 | 找不到服务。 | 请检查请求URL是否正确。 |
 | 500 | 服务内部错误。 | 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
 | 502 | 请求连接异常，常见于网络状况不稳定。 | 建议稍后重试，或通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
 | 503 | 流量控制。 | · 平均分配发送速度。 · 平均分布推送时间段，不要集中发送。 |

@@ -2,8 +2,8 @@
 title: "@ohos.hidebug (Debug调试)"
 upstream_id: "harmonyos-references/js-apis-hidebug"
 catalog: "harmonyos-references"
-content_hash: "345ebf9d0062"
-synced_at: "2026-07-28T16:51:21.012881"
+content_hash: "850e9c9e06ac"
+synced_at: "2026-08-03T17:11:36.370850"
 ---
 
 # @ohos.hidebug (Debug调试)
@@ -564,7 +564,7 @@ trace单位流量实测方法：limitSize设置为最大值500M，调用startApp
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| tags | number[] | 是 | trace范围，详情请见[tags](#hidebugtags12)。 |
+| tags | number[] | 是 | trace范围，详情请见[tags](#tags12)。 |
 | flag | TraceFlag | 是 | 详情请见[TraceFlag](#traceflag12)。 |
 | limitSize | number | 是 | 开启trace文件大小限制，单位为Byte，取值范围（0, 500MB]。超出范围时返回错误码401。 |
 
@@ -1032,7 +1032,7 @@ VM内存信息。
 | threadId | number | 否 | 否 | 线程号。 |
 | cpuUsage | number | 否 | 否 | 线程CPU使用率。 |
 
-#### hidebug.tags12+
+#### tags12+
 
 #### [h2]常量
 

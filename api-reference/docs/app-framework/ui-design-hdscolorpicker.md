@@ -2,8 +2,8 @@
 title: "HdsColorPicker (颜色选择器组件)"
 upstream_id: "harmonyos-references/ui-design-hdscolorpicker"
 catalog: "harmonyos-references"
-content_hash: "2ab4c2a7f681"
-synced_at: "2026-07-28T16:50:15.410475"
+content_hash: "7c4d0b90b540"
+synced_at: "2026-08-03T17:10:48.970616"
 ---
 
 # HdsColorPicker (颜色选择器组件)
@@ -46,7 +46,7 @@ HdsColorPicker({initialColor?: string, onColorSelected: HdsColorSelectedCallback
 
 | 名称 | 类型 | 必填 | 装饰器类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| initialColor | string | 否 | @Param | 设置颜色选择器的初始颜色，颜色值支持十六进制ARGB标准颜色格式（如'#FFFF0000'）。 |
+| initialColor | string | 否 | @Param | 设置颜色选择器的初始颜色，颜色值支持十六进制ARGB标准颜色格式（如'#FFFF0000'）。 默认值：undefined。 |
 | onColorSelected | [HdsColorSelectedCallback](#hdscolorselectedcallback) | 是 | @Event | 颜色选择回调，当用户选择颜色时触发。 |
 | initialFavoriteColors | Array | 否 | @Param @Once | 设置颜色选择器的初始收藏颜色列表，颜色值支持十六进制ARGB标准颜色格式（如'#FFFF0000'）。 **说明**：@Once装饰器，仅在组件首次渲染时生效，后续更新不会触发重新渲染。 |
 | onFavoriteColorsUpdate | [HdsFavoritesUpdateCallback](#hdsfavoritesupdatecallback) | 否 | @Event | 收藏颜色更新回调，当收藏颜色列表发生变化时触发，最多可收藏并显示72个颜色值。 |
@@ -124,7 +124,7 @@ type HdsFavoritesUpdateCallback = (favoritesList: Array<string>) => void
 HdsColorPicker提供完整的颜色选择与收藏管理功能：
 
 ```
-import { HdsColorPicker, HdsColorPickerTabType, HdsColorPickerOptions } from '@kit.UIDesignKit';
+import { HdsColorPicker, HdsColorPickerTabType } from '@kit.UIDesignKit';
 
 @Entry
 @ComponentV2
@@ -189,4 +189,4 @@ struct ColorPickerExample {
 
 执行上述示例中的代码，进行颜色选择，效果如下：
 
-![](./img/zh-cn_image_0000002656009366.gif)
+![](./img/zh-cn_image_0000002689680393.gif)

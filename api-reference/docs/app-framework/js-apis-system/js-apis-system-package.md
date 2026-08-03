@@ -2,8 +2,8 @@
 title: "@system.package (应用管理)"
 upstream_id: "harmonyos-references/js-apis-system-package"
 catalog: "harmonyos-references"
-content_hash: "72dbcbfce529"
-synced_at: "2026-07-09T00:57:11.320524"
+content_hash: "f30fa0b88e1f"
+synced_at: "2026-08-03T17:09:22.123347"
 ---
 
 # @system.package (应用管理)
@@ -21,11 +21,11 @@ import Package from '@system.package';
 
 #### package.hasInstalled(deprecated)
 
-![](./img/note_3.0-zh-cn.png) 从API version 3开始支持，从API version 9开始废弃，建议使用[getBundleInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundleinfo14)替代。
-
 hasInstalled(options: CheckPackageHasInstalledOptions): void
 
 查询指定应用是否存在，或者应用是否安装。
+
+![](./img/note_3.0-zh-cn.png) 从API version 3开始支持，从API version 9开始废弃，建议使用[getBundleInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundleinfo14)替代。
 
 系统能力： SystemCapability.BundleManager.BundleFramework
 

@@ -2,13 +2,19 @@
 title: "AssetAccelerationExtensionAbility（资源加速ExtensionAbility）"
 upstream_id: "harmonyos-references/graphics-accelerate-extensionability"
 catalog: "harmonyos-references"
-content_hash: "0c579c31c6a8"
-synced_at: "2026-07-09T01:01:05.977041"
+content_hash: "27f4b0eb63fe"
+synced_at: "2026-08-03T17:12:17.151716"
 ---
 
 # AssetAccelerationExtensionAbility（资源加速ExtensionAbility）
 
-本模块为资源包后台下载框架，为资源包后台下载提供关键的生命周期函数。在后台下载任务成功/失败/结束后支持调用相应的回调函数。本模块存在如下约束：
+本模块为资源包后台下载框架，为资源包后台下载提供关键的生命周期函数。在后台下载任务成功、失败、结束后支持调用相应的回调函数。
+
+起始版本： 5.1.0(18)
+
+#### 约束限制
+
+本模块存在如下约束：
 
 - AssetAccelerationExtensionAbility为轻量、独立的子进程，不允许唤醒主进程。
 - assetDownloadManager提供的接口仅支持调用如下方法： [assetDownloadManager.fetchManifestUrl](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/graphics-accelerate-assetdownloadmanager#assetdownloadmanagerfetchmanifesturl)
@@ -20,11 +26,13 @@ synced_at: "2026-07-09T01:01:05.977041"
 - [assetDownloadManager.limitDownloadTaskSpeed](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/graphics-accelerate-assetdownloadmanager#assetdownloadmanagerlimitdownloadtaskspeed)
 - [assetDownloadManager.reportDownloadProgress](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/graphics-accelerate-assetdownloadmanager#assetdownloadmanagerreportdownloadprogress)
 
-模型约束： 此接口仅可在Stage模型下使用。
+为保障系统安全性和稳定性，防止AssetAccelerationExtensionAbility滥用系统资源，系统对其能力进行管控，不支持以下模块的引用：
 
-系统能力： SystemCapability.GraphicsGame.AssetAcceleration
-
-起始版本： 5.1.0(18)
+- [@ohos.resourceschedule.backgroundTaskManager (后台任务管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resourceschedule-backgroundtaskmanager)
+- [@ohos.backgroundTaskManager (后台任务管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-backgroundtaskmanager)
+- [@ohos.multimedia.camera (相机管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera)
+- [@ohos.multimedia.audio (音频管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio)
+- [@ohos.multimedia.media (媒体服务)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media)
 
 #### 导入模块
 
@@ -122,7 +130,7 @@ import { assetDownloadManager, AssetAccelerationExtensionAbility, AssetAccelerat
 // 此处以AssetAccelExtAbility继承AssetAccelerationExtensionAbility为例
 export default class AssetAccelExtAbility extends AssetAccelerationExtensionAbility {
   async onDownloadContentRequest(requestType: ContentRequestType, manifestUrl: string,
-    assetAccelerationExtensionInfo: AssetAccelerationExtensionInfo):
+    _assetAccelerationExtensionInfo: AssetAccelerationExtensionInfo):
         Promise<assetDownloadManager.AssetDownloadConfig[]> {
     const context = this.context as common.ExtensionContext; // 若接口需要使用common.Context类型的上下文，可以从this.context中获取类型为common.ExtensionContext的上下文对象。
     console.info('AssetAccelDemo', `application file directory = ${context.filesDir}`);
@@ -178,7 +186,7 @@ import { AssetAccelerationExtensionAbility, AssetAccelerationExtensionInfo, Cont
 // 此处以AssetAccelExtAbility继承AssetAccelerationExtensionAbility为例
 export default class AssetAccelExtAbility extends AssetAccelerationExtensionAbility {
   async onDownloadWithAppControl(requestType: ContentRequestType, manifestUrl: string,
-    assetAccelerationExtensionInfo: AssetAccelerationExtensionInfo): Promise<boolean> {
+    _assetAccelerationExtensionInfo: AssetAccelerationExtensionInfo): Promise<boolean> {
     const context = this.context as common.ExtensionContext; // 若接口需要使用common.Context类型的上下文，可以从this.context中获取类型为common.ExtensionContext的上下文对象。
     console.info('AssetAccelDemo', `application file directory = ${context.filesDir}`);
     console.info('AssetAccelDemo', `onDownloadWithAppControl enter, requestType: ${requestType}, manifestUrl: ${manifestUrl}.`);

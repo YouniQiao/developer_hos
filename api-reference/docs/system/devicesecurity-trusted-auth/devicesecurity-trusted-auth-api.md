@@ -2,8 +2,8 @@
 title: "TrustedAuthentication（数字盾服务）"
 upstream_id: "harmonyos-references/devicesecurity-trusted-auth-api"
 catalog: "harmonyos-references"
-content_hash: "d8557da52eba"
-synced_at: "2026-07-28T16:50:26.192099"
+content_hash: "00d1b810c35d"
+synced_at: "2026-08-03T17:10:56.728327"
 ---
 
 # TrustedAuthentication（数字盾服务）
@@ -18,7 +18,7 @@ synced_at: "2026-07-28T16:50:26.192099"
 import { trustedAuthentication } from '@kit.DeviceSecurityKit';
 ```
 
-#### enableTrustedAuthentication
+#### trustedAuthentication.enableTrustedAuthentication
 
 enableTrustedAuthentication(challenge: Uint8Array, pwdInfo: PasswordInfo, label: TUILable): Promise<AuthInfo>
 
@@ -30,7 +30,7 @@ enableTrustedAuthentication(challenge: Uint8Array, pwdInfo: PasswordInfo, label:
 
 系统能力： SystemCapability.Security.TrustedAuthentication
 
-设备行为差异： 对于6.1.1(24)之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于6.1.1(24)及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#checkconfirmuitextformat)查询能力是否支持。
+设备行为差异： 对于6.1.1(24)之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于6.1.1(24)及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#trustedauthenticationcheckconfirmuitextformat)查询能力是否支持。
 
 起始版本： 6.0.0(20)
 
@@ -73,7 +73,7 @@ import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 import { resourceManager } from '@kit.LocalizationKit';
 import { common } from '@kit.AbilityKit';
 
-const TAG = "TrustedAuthenticationJsTest";
+const TAG = 'TrustedAuthenticationJsTest';
 try {
   const rand = cryptoFramework.createRandom();
   const len: number = 32;
@@ -99,7 +99,7 @@ try {
 }
 ```
 
-#### modifyTrustedAuthenticationPwd
+#### trustedAuthentication.modifyTrustedAuthenticationPwd
 
 modifyTrustedAuthenticationPwd(challenge: Uint8Array, pwdInfo: PasswordInfo, authID: bigint, label: TUILable): Promise<AuthToken>
 
@@ -111,7 +111,7 @@ modifyTrustedAuthenticationPwd(challenge: Uint8Array, pwdInfo: PasswordInfo, aut
 
 系统能力： SystemCapability.Security.TrustedAuthentication
 
-设备行为差异： 对于6.1.1(24)之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于6.1.1(24)及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#checkconfirmuitextformat)查询能力是否支持。
+设备行为差异： 对于6.1.1(24)之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于6.1.1(24)及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#trustedauthenticationcheckconfirmuitextformat)查询能力是否支持。
 
 起始版本： 6.0.0(20)
 
@@ -157,7 +157,7 @@ import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 import { resourceManager } from '@kit.LocalizationKit';
 import { common } from '@kit.AbilityKit';
 
-const TAG = "TrustedAuthenticationJsTest";
+const TAG = 'TrustedAuthenticationJsTest';
 
 try {
  const rand = cryptoFramework.createRandom();
@@ -185,7 +185,7 @@ try {
 }
 ```
 
-#### disableTrustedAuthentication
+#### trustedAuthentication.disableTrustedAuthentication
 
 disableTrustedAuthentication(challenge: Uint8Array, needAuth: boolean, authID: bigint, label: TUILable): Promise<AuthToken>
 
@@ -197,7 +197,7 @@ disableTrustedAuthentication(challenge: Uint8Array, needAuth: boolean, authID: b
 
 系统能力： SystemCapability.Security.TrustedAuthentication
 
-设备行为差异： 对于6.1.1(24)之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于6.1.1(24)及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#checkconfirmuitextformat)查询能力是否支持。
+设备行为差异： 对于6.1.1(24)之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于6.1.1(24)及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#trustedauthenticationcheckconfirmuitextformat)查询能力是否支持。
 
 起始版本： 6.0.0(20)
 
@@ -243,7 +243,7 @@ import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 import { resourceManager } from '@kit.LocalizationKit';
 import { common } from '@kit.AbilityKit';
 
-const TAG = "TrustedAuthenticationJsTest";
+const TAG = 'TrustedAuthenticationJsTest';
 
 try {
  const rand = cryptoFramework.createRandom();
@@ -265,7 +265,7 @@ try {
 }
 ```
 
-#### trustedAuthentication
+#### trustedAuthentication.trustedAuthentication
 
 trustedAuthentication(challenge: Uint8Array, authID: bigint, label: TUILable): Promise<AuthToken>
 
@@ -277,7 +277,7 @@ trustedAuthentication(challenge: Uint8Array, authID: bigint, label: TUILable): P
 
 系统能力： SystemCapability.Security.TrustedAuthentication
 
-设备行为差异： 对于6.1.1(24)之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于6.1.1(24)及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#checkconfirmuitextformat)查询能力是否支持。
+设备行为差异： 对于6.1.1(24)之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于6.1.1(24)及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#trustedauthenticationcheckconfirmuitextformat)查询能力是否支持。
 
 起始版本： 6.0.0(20)
 
@@ -320,7 +320,7 @@ import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 import { resourceManager } from '@kit.LocalizationKit';
 import { common } from '@kit.AbilityKit';
 
-const TAG = "TrustedAuthenticationJsTest";
+const TAG = 'TrustedAuthenticationJsTest';
 
 try {
  const rand = cryptoFramework.createRandom();
@@ -342,7 +342,7 @@ try {
 }
 ```
 
-#### procContentAuthentication
+#### trustedAuthentication.procContentAuthentication
 
 procContentAuthentication(challenge: Uint8Array, authID: bigint, authMsg: AuthReqParams, label: TUILable): Promise<AuthToken>
 
@@ -354,7 +354,7 @@ procContentAuthentication(challenge: Uint8Array, authID: bigint, authMsg: AuthRe
 
 系统能力： SystemCapability.Security.TrustedAuthentication
 
-设备行为差异： 对于6.1.1(24)之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于6.1.1(24)及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#checkconfirmuitextformat)查询能力是否支持。
+设备行为差异： 对于6.1.1(24)之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于6.1.1(24)及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#trustedauthenticationcheckconfirmuitextformat)查询能力是否支持。
 
 起始版本： 6.0.0(20)
 
@@ -371,7 +371,7 @@ procContentAuthentication(challenge: Uint8Array, authID: bigint, authMsg: AuthRe
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象。 当使用密码认证时，返回结果包括交易数据信息的authToken。 当使用生物特征进行认证时，返回结果为临时authToken，在经过生物认证通过后，需使用[getBiometricAuthToken](#getbiometricauthtoken)获取正式签发的包含交易信息的authToken。 |
+| Promise | Promise对象。 当使用密码认证时，返回结果包括交易数据信息的authToken。 当使用生物特征进行认证时，返回结果为临时authToken，在经过生物认证通过后，需使用[getBiometricAuthToken](#trustedauthenticationgetbiometricauthtoken)获取正式签发的包含交易信息的authToken。 |
 
 错误码：
 
@@ -399,7 +399,7 @@ import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 import { resourceManager } from '@kit.LocalizationKit';
 import { common } from '@kit.AbilityKit';
 
-const TAG = "TrustedAuthenticationJsTest";
+const TAG = 'TrustedAuthenticationJsTest';
 
 try {
  const rand = cryptoFramework.createRandom();
@@ -425,7 +425,7 @@ try {
 }
 ```
 
-#### getBiometricAuthToken
+#### trustedAuthentication.getBiometricAuthToken
 
 getBiometricAuthToken(operType: OperateType, tuiAuthToken: Uint8Array, bioAuthToken: Uint8Array): Promise<AuthToken>
 
@@ -437,7 +437,7 @@ getBiometricAuthToken(operType: OperateType, tuiAuthToken: Uint8Array, bioAuthTo
 
 系统能力： SystemCapability.Security.TrustedAuthentication
 
-设备行为差异： 对于6.1.1(24)之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于6.1.1(24)及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#checkconfirmuitextformat)查询能力是否支持。
+设备行为差异： 对于6.1.1(24)之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于6.1.1(24)及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#trustedauthenticationcheckconfirmuitextformat)查询能力是否支持。
 
 起始版本： 6.0.0(20)
 
@@ -446,7 +446,7 @@ getBiometricAuthToken(operType: OperateType, tuiAuthToken: Uint8Array, bioAuthTo
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | operType | [OperateType](#operatetype) | 是 | 获取生物特征authToken操作类型，详见[OperateType](#operatetype)。 |
-| tuiAuthToken | Uint8Array | 是 | 当操作类型为OPERATE_TYPE_BIOMETRIC_AUTH时，tuiAuthToken表示通过密码认证（即[trustedAuthentication](#trustedauthentication)）获取的authToken信息。 当操作类型为OPERATE_TYPE_CONTENT_AUTH时，tuiAuthToken表示通过交易信息临时确认（即[procContentAuthentication](#proccontentauthentication)）获取的authToken信息。 |
+| tuiAuthToken | Uint8Array | 是 | 当操作类型为OPERATE_TYPE_BIOMETRIC_AUTH时，tuiAuthToken表示通过密码认证（即[trustedAuthentication](#trustedauthenticationtrustedauthentication)）获取的authToken信息。 当操作类型为OPERATE_TYPE_CONTENT_AUTH时，tuiAuthToken表示通过交易信息临时确认（即[procContentAuthentication](#trustedauthenticationproccontentauthentication)）获取的authToken信息。 |
 | bioAuthToken | Uint8Array | 是 | 生物特征认证获取的authToken，要求tuiAuthToken和bioAuthToken获取时使用同一个challenge，即保障两个authToken通过同一次会话获取。 |
 
 返回值：
@@ -479,15 +479,16 @@ import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 import { resourceManager } from '@kit.LocalizationKit';
 import { common } from '@kit.AbilityKit';
 
-const TAG = "TrustedAuthenticationJsTest";
-async function PwdVerify(challenge: Uint8Array, resourceMgr:resourceManager.ResourceManager):Promise<trustedAuthentication.AuthToken> {
+const TAG = 'TrustedAuthenticationJsTest';
+async function PwdVerify(challenge: Uint8Array,
+  resourceMgr:resourceManager.ResourceManager):Promise<trustedAuthentication.AuthToken> {
   try {
     const authID: bigint = 11842183505170721246n; // 实际填充为从服务器获取到的账号对应的credentialID值
     const fileData : Uint8Array = await resourceMgr.getRawFileContent('test_logo_rgba.png'); // 实际使用时请替换为应用要在TUI界面展示的logo图片名称
     const buffer = fileData.buffer;
     const label:trustedAuthentication.TUILable = {
       image: buffer as ArrayBuffer,
-      title: "数字盾密码认证",
+      title: "数字盾密码认证"
     }
     const result = await trustedAuthentication.trustedAuthentication(challenge, authID, label);
     return result;
@@ -507,7 +508,7 @@ authTypeList[0] = userAuth.UserAuthType.FINGERPRINT;
 authTypeList[1] = userAuth.UserAuthType.FACE;
 
 const authParam : userAuth.AuthParam = {
-  challenge:  challengeID,
+  challenge: challengeID,
   authType: authTypeList,
   authTrustLevel: userAuth.AuthTrustLevel.ATL4
 };
@@ -517,9 +518,9 @@ const widgetParam: userAuth.WidgetParam = {
 };
 
 try {
-  const userAuthInstance = await userAuth.getUserAuthInstance(authParam, widgetParam);
+  const userAuthInstance = userAuth.getUserAuthInstance(authParam, widgetParam);
   userAuthInstance.on('result', {
-    onResult (result) {
+    onResult(result) {
       let authTokenData = result.token;
       let operType = trustedAuthentication.OperateType.OPERATE_TYPE_BIOMETRIC_AUTH;
       trustedAuthentication.getBiometricAuthToken(operType, TuiAuthToken.authToken, authTokenData).then((newAuthToken) => {
@@ -535,7 +536,7 @@ try {
 }
 ```
 
-#### importData
+#### trustedAuthentication.importData
 
 importData(data: ArrayBuffer, authID: bigint): Promise<void>
 
@@ -547,7 +548,7 @@ importData(data: ArrayBuffer, authID: bigint): Promise<void>
 
 系统能力： SystemCapability.Security.TrustedAuthentication
 
-设备行为差异： 对于6.1.1(24)之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于6.1.1(24)及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#checkconfirmuitextformat)查询能力是否支持。
+设备行为差异： 对于6.1.1(24)之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于6.1.1(24)及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#trustedauthenticationcheckconfirmuitextformat)查询能力是否支持。
 
 起始版本： 6.0.0(20)
 
@@ -582,7 +583,7 @@ import { trustedAuthentication} from '@kit.DeviceSecurityKit';
 import { BusinessError} from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
-const TAG = "TrustedAuthenticationJsTest";
+const TAG = 'TrustedAuthenticationJsTest';
 
 try {
  const authID: bigint = 1687413472599354502n;
@@ -596,7 +597,7 @@ try {
 }
 ```
 
-#### exportData
+#### trustedAuthentication.exportData
 
 exportData(authID: bigint, label: TUILable): Promise<ArrayBuffer>
 
@@ -608,7 +609,7 @@ exportData(authID: bigint, label: TUILable): Promise<ArrayBuffer>
 
 系统能力： SystemCapability.Security.TrustedAuthentication
 
-设备行为差异： 对于6.1.1(24)之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于6.1.1(24)及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#checkconfirmuitextformat)查询能力是否支持。
+设备行为差异： 对于6.1.1(24)之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于6.1.1(24)及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#trustedauthenticationcheckconfirmuitextformat)查询能力是否支持。
 
 起始版本： 6.0.0(20)
 
@@ -646,7 +647,7 @@ import { hilog } from '@kit.PerformanceAnalysisKit';
 import { resourceManager } from '@kit.LocalizationKit';
 import { common } from '@kit.AbilityKit';
 
-const TAG = "TrustedAuthenticationJsTest";
+const TAG = 'TrustedAuthenticationJsTest';
 
 try {
  const credentialID: bigint = 1687413472599354502n;
@@ -665,7 +666,7 @@ try {
 }
 ```
 
-#### checkConfirmUITextFormat
+#### trustedAuthentication.checkConfirmUITextFormat
 
 checkConfirmUITextFormat(text: string): Promise<TextCheckResult>
 
@@ -711,7 +712,7 @@ import { trustedAuthentication} from '@kit.DeviceSecurityKit';
 import { BusinessError} from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
-const TAG = "TrustedAuthenticationJsTest";
+const TAG = 'TrustedAuthenticationJsTest';
 
 try {
  const text: string = "检查将在TUI呈现的text是否可以正常展示";
@@ -729,7 +730,7 @@ try {
 import { trustedAuthentication} from '@kit.DeviceSecurityKit';
 import { BusinessError} from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
-const TAG = "TrustedAuthenticationJsTest";
+const TAG = 'TrustedAuthenticationJsTest';
 
 async function isSupportTUI():Promise<boolean> {
   if (canIUse('SystemCapability.Security.TrustedAuthentication')) {
@@ -749,7 +750,7 @@ async function isSupportTUI():Promise<boolean> {
 let supportFlag:boolean = await isSupportTUI();
 ```
 
-#### getRemainAuthTimes
+#### trustedAuthentication.getRemainAuthTimes
 
 getRemainAuthTimes(authID: bigint): Promise<number>
 
@@ -761,7 +762,7 @@ getRemainAuthTimes(authID: bigint): Promise<number>
 
 系统能力： SystemCapability.Security.TrustedAuthentication
 
-设备行为差异： 对于6.1.1(24)之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于6.1.1(24)及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#checkconfirmuitextformat)查询能力是否支持。
+设备行为差异： 对于6.1.1(24)之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于6.1.1(24)及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#trustedauthenticationcheckconfirmuitextformat)查询能力是否支持。
 
 起始版本： 6.0.0(20)
 
@@ -795,7 +796,7 @@ import { trustedAuthentication} from '@kit.DeviceSecurityKit';
 import { BusinessError} from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
-const TAG = "TrustedAuthenticationJsTest";
+const TAG = 'TrustedAuthenticationJsTest';
 
 try {
  const authID: bigint = 1687413472599354502n;
@@ -806,7 +807,7 @@ try {
 }
 ```
 
-#### disableTrustedBioAuthentication
+#### trustedAuthentication.disableTrustedBioAuthentication
 
 disableTrustedBioAuthentication(authID: bigint, authType: AuthType): Promise<void>
 
@@ -818,7 +819,7 @@ disableTrustedBioAuthentication(authID: bigint, authType: AuthType): Promise<voi
 
 系统能力： SystemCapability.Security.TrustedAuthentication
 
-设备行为差异： 对于6.1.1(24)之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于6.1.1(24)及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#checkconfirmuitextformat)查询能力是否支持。
+设备行为差异： 对于6.1.1(24)之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于6.1.1(24)及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#trustedauthenticationcheckconfirmuitextformat)查询能力是否支持。
 
 起始版本： 6.0.0(20)
 
@@ -827,7 +828,7 @@ disableTrustedBioAuthentication(authID: bigint, authType: AuthType): Promise<voi
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | authID | bigint | 是 | 密码创建时获取的authID信息。 |
-| authType | AuthType | 是 | 仅支持AUTH_TYPE_FACE、AUTH_TYPE_FINGERPRINT |
+| authType | AuthType | 是 | 仅支持AUTH_TYPE_FACE、AUTH_TYPE_FINGERPRINT。 |
 
 返回值：
 
@@ -854,7 +855,7 @@ import { trustedAuthentication} from '@kit.DeviceSecurityKit';
 import { BusinessError} from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
-const TAG = "TrustedAuthenticationJsTest";
+const TAG = 'TrustedAuthenticationJsTest';
 
 try {
  const authID: bigint = 1687413472599354502n;
@@ -949,8 +950,8 @@ TUI页面下的定制信息，包括定制图像logo和页面标题。
 | **名称** | 值 | **说明** |
 | --- | --- | --- |
 | AUTH_TYPE_FACE | 2 | 人脸认证 |
-| AUTH_TYPE_FINGERPRINT | 4 | 指纹认证 |
-| AUTH_TYPE_TUI_PIN | 32 | TUI密码认证 |
+| AUTH_TYPE_FINGERPRINT | 4 | 指纹认证。 |
+| AUTH_TYPE_TUI_PIN | 32 | TUI密码认证。 |
 
 #### PasswordType
 
@@ -966,8 +967,8 @@ TUI页面下的定制信息，包括定制图像logo和页面标题。
 
 | **名称** | 值 | **说明** |
 | --- | --- | --- |
-| PASSWORD_TYPE_DIGITAL | 0 | 纯数字密码类型 |
-| PASSWORD_TYPE_MIXED | 1 | 数字、字符混合密码类型 |
+| PASSWORD_TYPE_DIGITAL | 0 | 纯数字密码类型。 |
+| PASSWORD_TYPE_MIXED | 1 | 数字、字符混合密码类型。 |
 
 #### OperateType
 
@@ -983,8 +984,8 @@ TUI页面下的定制信息，包括定制图像logo和页面标题。
 
 | **名称** | 值 | **说明** |
 | --- | --- | --- |
-| OPERATE_TYPE_BIOMETRIC_AUTH | 1 | 生物特征与密码认证绑定操作 |
-| OPERATE_TYPE_CONTENT_AUTH | 2 | 使用生物特征进行交易认证操作 |
+| OPERATE_TYPE_BIOMETRIC_AUTH | 1 | 生物特征与密码认证绑定操作。 |
+| OPERATE_TYPE_CONTENT_AUTH | 2 | 使用生物特征进行交易认证操作。 |
 
 #### AuthReqParams
 
@@ -1034,26 +1035,26 @@ TUI界面文本信息是否可以单行显示的检查结果。
 
 | **名称** | 值 | **说明** |
 | --- | --- | --- |
-| TRUSTED_AUTH_ERROR_NO_PERMISSION | 1019100001 | 权限校验失败 |
+| TRUSTED_AUTH_ERROR_NO_PERMISSION | 1019100001 | 权限校验失败。 |
 | TRUSTED_AUTH_ERROR_ILLEGAL_ARGUMENT | 1019100002 | 参数检查失败 |
-| TRUSTED_AUTH_ERROR_PWD_LIMIT_REACHED | 1019100003 | 密码认证连续失败次数达到应用定义的最大次数 |
-| TRUSTED_AUTH_ERROR_PWD_DELETE_FAILED | 1019100004 | 删除密码失败 |
-| TRUSTED_AUTH_ERROR_VERIFY_FAILED | 1019100005 | 密码认证失败 |
-| TRUSTED_AUTH_ERROR_CHECK_CONFIRM_TEXT_FAILED | 1019100006 | 输入文本信息检查失败 |
-| TRUSTED_AUTH_ERROR_NOT_SUPPORT_IMAGE | 1019100007 | 不支持的图片格式 |
-| TRUSTED_AUTH_ERROR_USER_REQ_CANCEL | 1019100008 | 用户取消操作 |
-| TRUSTED_AUTH_ERROR_EXPORT_DATA_FAILED | 1019100009 | 备份数据导出失败 |
-| TRUSTED_AUTH_ERROR_IMPORT_DATA_FAILED | 1019100010 | 备份数据导入失败 |
-| TRUSTED_AUTH_ERROR_INVALID_CONTENT | 1019100011 | 不合法的TUI认证信息 |
-| TRUSTED_AUTH_ERROR_INVALID_AUTH_ID | 1019100012 | 无效的authID |
-| TRUSTED_AUTH_ERROR_SET_PWD_FAILED | 1019100013 | 创建密码失败 |
-| TRUSTED_AUTH_ERROR_MODIFY_PWD_FAILED | 1019100014 | 修改密码失败 |
-| TRUSTED_AUTH_ERROR_BIO_RESIGN_FAILED | 1019100015 | 生物认证authToken签发失败 |
-| TRUSTED_AUTH_FEATURE_INITIALIZATION_FAILED | 1019100016 | 数字盾服务未使能 |
-| TRUSTED_AUTH_ERROR_GET_REMAIN_TIME | 1019100017 | 获取数字盾剩余认证次数失败 |
-| TRUSTED_AUTH_ERROR_DISABLE_BIO_AUTH | 1019100018 | 解绑指定生物特征认证能力失败 |
-| TRUSTED_AUTH_ERROR_BIO_MISMATCH | 1019100019 | 认证的生物特征与绑定的生物特征不匹配 |
-| TRUSTED_AUTH_ERROR_BIO_REPEATED_BIND | 1019100020 | 已绑定对应的生物特征 |
-| TRUSTED_AUTH_ERROR_NOT_BIND_BIO | 1019100021 | 对应生物特征未绑定 |
-| TRUSTED_AUTH_ERROR_BIO_ID_INVALID | 1019100024 | 绑定的生物特征ID已失效 **起始版本：** 26.0.0 |
+| TRUSTED_AUTH_ERROR_PWD_LIMIT_REACHED | 1019100003 | 密码认证连续失败次数达到应用定义的最大次数。 |
+| TRUSTED_AUTH_ERROR_PWD_DELETE_FAILED | 1019100004 | 删除密码失败。 |
+| TRUSTED_AUTH_ERROR_VERIFY_FAILED | 1019100005 | 密码认证失败。 |
+| TRUSTED_AUTH_ERROR_CHECK_CONFIRM_TEXT_FAILED | 1019100006 | 输入文本信息检查失败。 |
+| TRUSTED_AUTH_ERROR_NOT_SUPPORT_IMAGE | 1019100007 | 不支持的图片格式。 |
+| TRUSTED_AUTH_ERROR_USER_REQ_CANCEL | 1019100008 | 用户取消操作。 |
+| TRUSTED_AUTH_ERROR_EXPORT_DATA_FAILED | 1019100009 | 备份数据导出失败。 |
+| TRUSTED_AUTH_ERROR_IMPORT_DATA_FAILED | 1019100010 | 备份数据导入失败。 |
+| TRUSTED_AUTH_ERROR_INVALID_CONTENT | 1019100011 | 不合法的TUI认证信息。 |
+| TRUSTED_AUTH_ERROR_INVALID_AUTH_ID | 1019100012 | 无效的authID。 |
+| TRUSTED_AUTH_ERROR_SET_PWD_FAILED | 1019100013 | 创建密码失败。 |
+| TRUSTED_AUTH_ERROR_MODIFY_PWD_FAILED | 1019100014 | 修改密码失败。 |
+| TRUSTED_AUTH_ERROR_BIO_RESIGN_FAILED | 1019100015 | 生物认证authToken签发失败。 |
+| TRUSTED_AUTH_FEATURE_INITIALIZATION_FAILED | 1019100016 | 数字盾服务未使能。 |
+| TRUSTED_AUTH_ERROR_GET_REMAIN_TIME | 1019100017 | 获取数字盾剩余认证次数失败。 |
+| TRUSTED_AUTH_ERROR_DISABLE_BIO_AUTH | 1019100018 | 解绑指定生物特征认证能力失败。 |
+| TRUSTED_AUTH_ERROR_BIO_MISMATCH | 1019100019 | 认证的生物特征与绑定的生物特征不匹配。 |
+| TRUSTED_AUTH_ERROR_BIO_REPEATED_BIND | 1019100020 | 已绑定对应的生物特征。 |
+| TRUSTED_AUTH_ERROR_NOT_BIND_BIO | 1019100021 | 对应生物特征未绑定。 |
+| TRUSTED_AUTH_ERROR_BIO_ID_INVALID | 1019100024 | 绑定的生物特征ID已失效。 **起始版本：** 26.0.0 |
 | TRUSTED_AUTH_ERROR_TUI_OCCUPIED | 1019100025 | TUI界面被其他应用占用。 **起始版本：** 6.1.1(24) |

@@ -2,8 +2,8 @@
 title: "cloudStorage (云存储模块)"
 upstream_id: "harmonyos-references/cloudfoundation-cloudstorage"
 catalog: "harmonyos-references"
-content_hash: "aa4004e8044e"
-synced_at: "2026-07-09T01:01:16.723775"
+content_hash: "88c577bf8103"
+synced_at: "2026-08-03T17:12:24.399314"
 ---
 
 # cloudStorage (云存储模块)
@@ -159,7 +159,7 @@ bucket.uploadFile(context, { // context表示应用上下文
   });
 }).catch((err: BusinessError) => {
   hilog.error(0x0000, 'testTag', `Failed to upload file, code: ${err.code}, message: ${err.message}`);
-})
+});
 ```
 
 #### [h2]uploadFile
@@ -319,7 +319,7 @@ bucket.downloadFile(context, { // context表示应用上下文
   });
 }).catch((err: BusinessError) => {
   hilog.error(0x0000, 'testTag', `Failed to download file, code: ${err.code}, message: ${err.message}`);
-})
+});
 ```
 
 #### [h2]downloadFile
@@ -455,7 +455,7 @@ bucket.getDownloadURL('cloudPath').then((downloadURL: string) => {
   hilog.info(0x0000, 'testTag', `Succeeded in getting download URL: ${downloadURL}`);
 }).catch((err: BusinessError) => {
   hilog.error(0x0000, 'testTag', `Failed to get download URL, code: ${err.code}, message: ${err.message}`);
-})
+});
 ```
 
 #### [h2]getDownloadURL
@@ -566,7 +566,7 @@ bucket.deleteFile('cloudPath').then(() => {
   hilog.info(0x0000, 'testTag', `Succeeded in deleting file.`);
 }).catch((err: BusinessError) => {
   hilog.error(0x0000, 'testTag', `Failed to delete file, code: ${err.code}, message: ${err.message}`);
-})
+});
 ```
 
 #### [h2]deleteFile
@@ -678,14 +678,14 @@ bucket.list('').then((result: cloudStorage.ListResults) => {
   hilog.info(0x0000, 'testTag', `Succeeded in listing files, result: ${JSON.stringify(result)}`);
 }).catch((err: BusinessError) => {
   hilog.error(0x0000, 'testTag', `Failed to list files, code: ${err.code}, message: ${err.message}`);
-})
+});
 
 // 获取指定文件夹some_directory下的文件列表
 bucket.list('some_directory/').then((result: cloudStorage.ListResults) => {
   hilog.info(0x0000, 'testTag', `Succeeded in listing files, result: ${JSON.stringify(result)}`);
 }).catch((err: BusinessError) => {
   hilog.error(0x0000, 'testTag', `Failed to list files, code: ${err.code}, message: ${err.message}`);
-})
+});
 ```
 
 #### [h2]list
@@ -806,7 +806,7 @@ bucket.getMetadata('cloudPath').then((data: cloudStorage.Metadata) => {
   hilog.info(0x0000, 'testTag', `Succeeded in getting metadata: ${JSON.stringify(data)}`);
 }).catch((err: BusinessError) => {
   hilog.error(0x0000, 'testTag', `Failed to get metadata, code: ${err.code}, message: ${err.message}`);
-})
+});
 ```
 
 #### [h2]getMetadata
@@ -916,14 +916,14 @@ let bucket: cloudStorage.StorageBucket = cloudStorage.bucket();
 // cloudPath是云侧文件路径，支持传入“文件目录/文件名”，或仅传入文件名。
 bucket.setMetadata('cloudPath', {
   customMetadata: {
-    key1: "value1",
-    key2: "value2"
+    key1: 'value1',
+    key2: 'value2'
   }
 }).then((data: cloudStorage.Metadata) => {
   hilog.info(0x0000, 'testTag', `Succeeded in setting metadata: ${JSON.stringify(data)}`);
 }).catch((err: BusinessError) => {
   hilog.error(0x0000, 'testTag', `Failed to set metadata, code: ${err.code}, message: ${err.message}`);
-})
+});
 ```
 
 #### [h2]setMetadata
@@ -974,8 +974,8 @@ let bucket: cloudStorage.StorageBucket = cloudStorage.bucket();
 // cloudPath是云侧文件路径，支持传入“文件目录/文件名”，或仅传入文件名。
 bucket.setMetadata('cloudPath', {
   customMetadata: {
-    key1: "value1",
-    key2: "value2"
+    key1: 'value1',
+    key2: 'value2'
   }
 }, (err: BusinessError, data: cloudStorage.Metadata) => {
   if (err) {

@@ -2,8 +2,8 @@
 title: "请求体参数说明"
 upstream_id: "harmonyos-references/push-scenariozed-api-request-param"
 catalog: "harmonyos-references"
-content_hash: "84f481246925"
-synced_at: "2026-07-28T16:53:01.573905"
+content_hash: "17783f710a61"
+synced_at: "2026-08-03T17:12:39.723027"
 ---
 
 # 请求体参数说明
@@ -16,7 +16,7 @@ synced_at: "2026-07-28T16:53:01.573905"
 | ttl | 否 | Integer | 消息缓存时间，单位：s。在用户设备离线时，消息在Push服务器进行缓存，在消息缓存时间内用户设备上线，消息会下发，超过缓存时间后消息会丢弃，**默认值为86400秒（1天）** ，最大值为1296000秒（15天）。 **说明：** 推送应用内通话消息场景、推送通知消息（VOIP消息类型）场景以及推送语音播报消息（VOIP消息类型）场景，ttl建议设置为30~60秒。 |
 | biTag | 否 | String | 批量任务消息标识，[消息回执](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-msg-receipt)时会返回给应用服务器，长度最大64字节。 |
 | receiptId | 否 | String | 输入一个唯一的回执ID指定本次下行消息的回执地址及配置，该回执ID可以在[配置回执参数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-msg-receipt#配置回执参数)中查看。 |
-| collapseKey | 否 | Integer | 用户设备离线时，Push服务器对离线消息缓存机制的控制方式，用户设备上线后缓存消息会再次下发，取值如下： -1：对该取值的所有离线消息都缓存（**默认值**） 0~100：离线消息缓存分组标识，对离线消息进行分组缓存，每个应用每一组只缓存一条最新的离线消息 如果您发送了10条消息，其中前5条的collapseKey为1，后5条的collapseKey为2，那么待用户上线后collapseKey为1和2的分别下发最新的一条消息给最终用户。 **说明：** collapseKey字段只对push-type为0或2的消息生效。 0：通知消息 2：语音播报消息 |
+| collapseKey | 否 | Integer | 用户设备离线时，Push服务器对离线消息缓存机制的控制方式，用户设备上线后缓存消息会再次下发，取值如下： -1：对该取值的所有离线消息都缓存（**默认值**）。 0~100：离线消息缓存分组标识，对离线消息进行分组缓存，每个应用每一组只缓存一条最新的离线消息。 如果您发送了10条消息，其中前5条的collapseKey为1，后5条的collapseKey为2，那么待用户上线后collapseKey为1和2的分别下发最新的一条消息给最终用户。 **说明：** collapseKey字段只对push-type为0或2的消息生效。 0：通知消息 2：语音播报消息 |
 
 #### target
 
@@ -36,7 +36,7 @@ synced_at: "2026-07-28T16:53:01.573905"
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| category | 是 | String | 通知消息类型。完成[申请通知消息自分类权益](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-apply-right#申请通知消息自分类权益)后，用于标识消息类型，不同的通知消息类型影响消息展示和提醒方式。取值如下： **服务与通讯类** · IM：即时聊天 · VOIP：语音通话邀请、视频通话邀请 · MISS_CALL：未接通话消息提醒 · SUBSCRIPTION：订阅 · TRAVEL：出行 · HEALTH：健康 · WORK：工作事项提醒 · ACCOUNT：账号动态 · EXPRESS：订单&物流 · FINANCE：财务 · DEVICE_REMINDER：设备提醒 · MAIL：邮件 · PLAY_VOICE：语音播报 **说明：** PLAY_VOICE（语音播报）消息仅可发送push-type为2的语音播报消息。 2：语音播报消息 **资讯营销类** · MARKETING：新闻、内容推荐、社交动态、产品促销、财经动态、生活资讯、调研、功能推荐、运营活动（仅对内容进行标识，不会加快消息发送），统称为资讯营销类消息。 **说明：** · 若您仅需发送MARKETING（资讯营销类）消息，则无需申请通知消息自分类权益。MARKETING消息与其他分类的通知消息存在不同的频控策略，详情请参见[通知消息推送数量管理规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-apply-right#通知消息推送数量管理规则)。若消息被频控，请参考[频控FAQ](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-5)进行问题排查。 |
+| category | 是 | String | 通知消息类型。完成[申请通知消息自分类权益](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-apply-right#申请通知消息自分类权益)后，用于标识消息类型，不同的通知消息类型影响消息展示和提醒方式。取值如下： **服务与通讯类** · IM：即时聊天 · VOIP：语音通话邀请、视频通话邀请 · MISS_CALL：未接通话消息提醒 · SUBSCRIPTION：订阅 · TRAVEL：出行 · HEALTH：健康 · WORK：工作事项提醒 · ACCOUNT：账号动态 · EXPRESS：订单&物流 · FINANCE：财务 · DEVICE_REMINDER：设备提醒 · MAIL：邮件 · PLAY_VOICE：语音播报 **说明：** PLAY_VOICE（语音播报）消息仅可发送push-type为2的语音播报消息。 **资讯营销类** · MARKETING：新闻、内容推荐、社交动态、产品促销、财经动态、生活资讯、调研、功能推荐、运营活动（仅对内容进行标识，不会加快消息发送），统称为资讯营销类消息。 **说明：** · 若您仅需发送MARKETING（资讯营销类）消息，则无需申请通知消息自分类权益。MARKETING消息与其他分类的通知消息存在不同的频控策略，详情请参见[通知消息推送数量管理规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-apply-right#通知消息推送数量管理规则)。若消息被频控，请参考[频控FAQ](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-5)进行问题排查。 |
 | title | 是 | String | 通知消息标题。（注意消息体大小限制，详情参见[使用约束](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-intro#使用约束)） |
 | body | 是 | String | 通知消息内容。（注意消息体大小限制，详情参见[使用约束](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-intro#使用约束)） |
 | image | 否 | String | 通知右侧大图标URL，URL使用的协议必须是HTTPS协议。（注意消息体大小限制，详情参见[使用约束](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-intro#使用约束)） **说明：** · Wearable不支持右侧大图标样式。 · 支持图片格式为PNG、JPG、JPEG、BMP，图片像素的总字节数不超过192KB，若超过则图片不展示。 · 6.1.0(23)版本新增支持WEBP格式图片。 |
@@ -50,7 +50,7 @@ synced_at: "2026-07-28T16:53:01.573905"
 | inboxContent | 否 | Array [String] | 多行文本样式的内容，当style为3时，本字段必填，最多支持3条内容，每条最大长度1024且无法完全展示时以“...”截断。详情参见[inboxContent](#inboxcontent示例) 。 **说明：** Wearable不支持多行文本样式。 |
 | clickAction | 是 | [ClickAction](#clickaction) Object | 点击消息动作，详情请参见[ClickAction](#clickaction)结构体。 |
 | badge | 否 | [AlertBadge](#alertbadge) Object | 通知消息角标控制参数，详情请参见[AlertBadge](#alertbadge)结构体，不设置时应用不显示角标数字，若当前已存在角标，则角标数字不变化。 **说明：** Wearable、TV不支持通知角标样式。 |
-| sound | 否 | String | 自定义消息通知铃声。此处设置的铃声文件必须放在应用的/resources/rawfile路径下。例如设置为**alert.mp3**，对应应用本地的**​/resources/rawfile/alert.mp3** 文件。支持的文件格式包括MP3、WAV、MPEG等，如果不设置，则用默认系统铃声。 当请求不携带**soundDuration**字段时，建议铃声时长不超过30秒，若超过30秒则截断处理；当请求携带**soundDuration**字段时，详情请参见**soundDuration**字段说明。 **说明：** Wearable、TV、PC/2in1不支持自定义铃声。 当category取值为MARKETING时，为静默通知，自定义铃声无效。 |
+| sound | 否 | String | 自定义消息通知铃声。此处设置的铃声文件必须放在应用的/resources/rawfile路径下。例如设置为**alert.mp3**，对应应用本地的**​/resources/rawfile/alert.mp3** 文件。支持的文件格式包括MP3、WAV、MPEG等，如果不设置，则用默认系统铃声。 当请求不携带**soundDuration**字段时，建议铃声时长不超过30秒，若超过30秒则截断处理；当请求携带**soundDuration**字段时，详情请参见**soundDuration**字段说明。 **说明：** · Wearable、TV、PC/2in1不支持自定义铃声。 · 当category取值为MARKETING时，为静默通知，自定义铃声无效。 |
 | soundDuration | 否 | Integer | 自定义消息通知铃声时长。需要配合sound字段使用，只有当请求同时携带sound字段，soundDuration字段才会生效。仅支持数字，单位：s，取值范围 [1, 60]。 sound字段传入的自定义消息通知铃声会播放至soundDuration字段值后停止，若自定义消息通知铃声对应的时长不足soundDuration字段值则会循环播放，在达到soundDuration字段值后停止。 |
 | foregroundShow | 否 | Boolean | 应用在前台时是否展示通知消息。 true：默认值，应用在前后台都展示通知消息，此时[receiveMessage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-pushservice#pushservicereceivemessage)不会被触发，无法获取消息数据。 false：应用只在后台展示通知消息；应用在前台时，通知消息将不会展示，但可以通过[receiveMessage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-pushservice#pushservicereceivemessage)接收通知消息自行完成业务处理，详情请参见[应用在前台时处理通知消息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-send-alert#应用在前台时处理通知消息)。 **说明：** foregroundShow字段仅对push-type为0的通知消息生效。 |
 | priorityScene | 否 | String | 消息的优先通知类型。取值如下： · PRIMARY_CONTACT：重要联系人消息 · AT_ME：@我 · URGENT_MESSAGE：加急消息 · SCHEDULE_REMINDER：日程待办提醒 **说明：** 发送优先通知消息需要开通[优先通知权益](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/priority-notification-permission-guidelines)。 |
@@ -108,7 +108,7 @@ synced_at: "2026-07-28T16:53:01.573905"
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| setNum | 是 | Integer | 角标设置数字（大于等于0小于100的整数）。 |
+| setNum | 是 | Integer | 角标设置数字（大于等于0小于100的整数），应用角标实际显示数字。 |
 
 #### ExtensionPayload 语音播报消息
 
@@ -117,7 +117,7 @@ synced_at: "2026-07-28T16:53:01.573905"
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
 | notification | 是 | [Notification](#notification) Object | 通知消息结构体，详情请参见[Notification](#notification)结构体。 **说明：** notification.category必填，且取值为“PLAY_VOICE”，发送语音播报消息前请先申请推送语音播报消息权益，请参见[申请推送语音播报消息权益](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-apply-right#申请推送语音播报消息权益)。 |
-| extraData | 是 | String | 语音播报消息的额外数据。（注意消息体大小限制，详情参见[使用约束](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-intro#使用约束)） extraData数据获取请参见[示例代码](https://gitcode.com/HarmonyOS_Samples/push-kit-sample-code-clientdemo-arkts/blob/master/entry/src/main/ets/entryability/RemoteNotificationExtAbility.ets) |
+| extraData | 是 | String | 语音播报消息的额外数据。（注意消息体大小限制，详情参见[使用约束](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-intro#使用约束)） extraData数据获取请参见[示例代码](https://gitcode.com/HarmonyOS_Samples/push-kit-sample-code-clientdemo-arkts/blob/master/entry/src/main/ets/abilities/PushMessageAbility.ets) |
 
 #### FormUpdatePayload 卡片刷新消息
 
@@ -179,7 +179,7 @@ synced_at: "2026-07-28T16:53:01.573905"
 | mute | 否 | Boolean | 标识消息更新是否需要提醒。 true：静默提醒 **（默认值）** false：铃声震动提醒 |
 | version | 否 | Integer | 更新实况窗通知的版本号，大于等于0，新的实况窗通知版本号需**大于**当前实况窗通知版本号，否则会刷新失败。 |
 | activityData | 是 | [ActivityData](#activitydata) Object | 实况窗通知详细数据，具体字段请参见[ActivityData](#activitydata)结构体。 |
-| subEvent | 否 | String | 业务子场景取值，内容只允许包含英文、数字及下划线。主要用于子业务场景的运营统计，使用对应子场景无需额外申请权益。 相关场景的取值请参考实况窗服务[subEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-liveviewmanager#liveview) **起始版本：** 26.0.0 |
+| subEvent | 否 | String | 业务子场景取值，内容只允许包含英文、数字及下划线。主要用于子业务场景的运营统计，使用对应子场景无需额外申请权益。 相关场景的取值请参考实况窗服务[subEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-liveviewmanager#liveview)。 **起始版本：** 26.0.0 |
 | trigger | 否 | [Trigger](#trigger) Object | 延迟触发实况的围栏信息。 **说明：** Wearable设备不支持该特性，携带该字段的消息将作为普通实况窗消息展示。 |
 | shareUrl | 否 | String | 实况分享H5页面url链接。url必须以"https://"协议开头，长度范围[1, 127]。当url不满足字段要求，shareUrl字段不生效。 **起始版本：** 26.0.0 |
 
@@ -309,7 +309,7 @@ synced_at: "2026-07-28T16:53:01.573905"
 
 #### [h2]Extend
 
-![](./img/zh-cn_image_0000002685929421.png)
+![](./img/zh-cn_image_0000002689561045.png)
 
 - 1 实况卡片辅助区类型，对应type字段： 当辅助区类型为1时，辅助区显示普通文本，使用API字段text传入文本内容。
 - 当辅助区类型为2时，辅助区显示胶囊文本，使用API字段text传入文本内容。
@@ -327,7 +327,7 @@ synced_at: "2026-07-28T16:53:01.573905"
 
 #### [h2]Game
 
-![](./img/zh-cn_image_0000002656009746.png)
+![](./img/zh-cn_image_0000002689680865.png)
 
 - 1 左侧队伍名称，对应host中的[name](#team)字段。
 - 2 左侧队伍图标，对应host中的[icon](#team)和[iconUrl](#team)字段。
@@ -374,10 +374,10 @@ synced_at: "2026-07-28T16:53:01.573905"
 
 | 图示 | 说明 |
 | --- | --- |
-| ![](./img/zh-cn_image_0000002655849824.png) | 定义实况胶囊基本属性的基类： · 1 胶囊布局类型，对应type字段。 · 2 实况胶囊的图标，对应icon和iconUrl字段。 · 3 实况胶囊的尾部图标，对应tailIcon和tailIconUrl字段。 · 4 实况胶囊副文本是否展示，对应isContentDisplayed字段。 · 5 实况胶囊尾部图标是否展示，对应isTailIconDisplayed字段。 |
-| ![](./img/zh-cn_image_0000002686089255.png) | type为1时展示该内容： · 1 胶囊状态主文本，对应title字段。 · 2 胶囊内容，对应content字段。 |
-| ![](./img/zh-cn_image_0000002685929423.png) | type为2时展示该内容： · 1 胶囊内容，对应content字段。 · 2 胶囊计时器初始值，对应capsuleTimer中的[time](#capsuletimer)字段。 · 3 是否倒计时显示计时器，对应capsuleTimer中的[countDown](#capsuletimer)字段。 · 4 胶囊计时器是否暂停，对应capsuleTimer中的[pause](#capsuletimer)字段。 |
-| ![](./img/zh-cn_image_0000002656009748.png) | type为3时展示该内容： · 1 进度最大值，对应progress中的[max](#progress)字段。 · 2 进度当前值，对应progress中的[progress](#progress)字段。 · 3 进度显示类型，对应progress中的[indeterminate](#progress)字段。 · 4 胶囊内容，对应content字段。 |
+| ![](./img/zh-cn_image_0000002659441534.png) | 定义实况胶囊基本属性的基类： · 1 胶囊布局类型，对应type字段。 · 2 实况胶囊的图标，对应icon和iconUrl字段。 · 3 实况胶囊的尾部图标，对应tailIcon和tailIconUrl字段。 · 4 实况胶囊副文本是否展示，对应isContentDisplayed字段。 · 5 实况胶囊尾部图标是否展示，对应isTailIconDisplayed字段。 |
+| ![](./img/zh-cn_image_0000002659601462.png) | type为1时展示该内容： · 1 胶囊状态主文本，对应title字段。 · 2 胶囊内容，对应content字段。 |
+| ![](./img/zh-cn_image_0000002689561047.png) | type为2时展示该内容： · 1 胶囊内容，对应content字段。 · 2 胶囊计时器初始值，对应capsuleTimer中的[time](#capsuletimer)字段。 · 3 是否倒计时显示计时器，对应capsuleTimer中的[countDown](#capsuletimer)字段。 · 4 胶囊计时器是否暂停，对应capsuleTimer中的[pause](#capsuletimer)字段。 |
+| ![](./img/zh-cn_image_0000002689680867.png) | type为3时展示该内容： · 1 进度最大值，对应progress中的[max](#progress)字段。 · 2 进度当前值，对应progress中的[progress](#progress)字段。 · 3 进度显示类型，对应progress中的[indeterminate](#progress)字段。 · 4 胶囊内容，对应content字段。 |
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
@@ -406,7 +406,7 @@ synced_at: "2026-07-28T16:53:01.573905"
 
 #### [h2]SingleTextBlock
 
-![](./img/zh-cn_image_0000002655849826.png)
+![](./img/zh-cn_image_0000002659441536.png)
 
 - 1 辅助标记文本，对应firstLine字段。
 - 2 强调文本内容，对应secondLine字段。
@@ -421,7 +421,7 @@ synced_at: "2026-07-28T16:53:01.573905"
 
 #### [h2]FirstTextBlock
 
-![](./img/zh-cn_image_0000002686089257.png)
+![](./img/zh-cn_image_0000002659601464.png)
 
 - 1 左侧首行文本，对应firstLine字段。
 - 2 左侧次行文本内容，对应secondLine字段。
@@ -436,7 +436,7 @@ synced_at: "2026-07-28T16:53:01.573905"
 
 #### [h2]LastTextBlock
 
-![](./img/zh-cn_image_0000002685929425.png)
+![](./img/zh-cn_image_0000002689561049.png)
 
 - 3 右侧首行文本，对应firstLine字段。
 - 4 右侧次行文本内容，对应secondLine字段。
@@ -456,7 +456,7 @@ synced_at: "2026-07-28T16:53:01.573905"
 
 #### [h2]RichProgress
 
-![](./img/zh-cn_image_0000002656009750.png)
+![](./img/zh-cn_image_0000002689680869.png)
 
 - 1 进度百分比，对应progress字段。
 - 2 进度指示器左侧的进度点及节点图标的颜色，对应color字段。
@@ -484,7 +484,7 @@ synced_at: "2026-07-28T16:53:01.573905"
 
 #### [h2]ExternalData
 
-![](./img/zh-cn_image_0000002655849828.png)
+![](./img/zh-cn_image_0000002659441538.png)
 
 - 1 自定义的外屏通知标题，对应title字段。
 - 2 自定义的外屏通知内容，对应body字段。
@@ -521,4 +521,4 @@ synced_at: "2026-07-28T16:53:01.573905"
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| extraData | 是 | String | 传递给应用的数据，应用根据数据自行处理相关逻辑，展示应用内通话消息相关信息。（注意消息体大小限制，详情参见[使用约束](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-intro#使用约束)） extraData数据获取请参考[示例代码](https://gitcode.com/harmonyos_samples/push-kit-sample-code-clientdemo-arkts/blob/master/entry/src/main/ets/service/VoipCallService.ets)。 |
+| extraData | 是 | String | 传递给应用的数据，应用根据数据自行处理相关逻辑，展示应用内通话消息相关信息。（注意消息体大小限制，详情参见[使用约束](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-intro#使用约束)） extraData数据获取请参考[示例代码](https://gitcode.com/harmonyos_samples/push-kit-sample-code-clientdemo-arkts/blob/master/entry/src/main/ets/abilities/PushMessageAbility.ets)。 |
