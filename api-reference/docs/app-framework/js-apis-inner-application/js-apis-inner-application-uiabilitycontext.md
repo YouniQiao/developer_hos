@@ -2,8 +2,8 @@
 title: "UIAbilityContext"
 upstream_id: "harmonyos-references/js-apis-inner-application-uiabilitycontext"
 catalog: "harmonyos-references"
-content_hash: "e5a36d51932b"
-synced_at: "2026-08-03T17:09:21.265519"
+content_hash: "90c09497e8ff"
+synced_at: "2026-08-04T17:00:37.379675"
 ---
 
 # UIAbilityContext
@@ -920,6 +920,8 @@ connectServiceExtensionAbility(want: Want, options: ConnectOptions): number
 
 ![](./img/note_3.0-zh-cn.png) 组件启动规则详见：[组件启动规则（Stage模型）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/component-startup-rules)。
 
+该接口不支持应用分身。
+
 系统能力：SystemCapability.Ability.AbilityRuntime.Core
 
 参数：
@@ -1579,6 +1581,8 @@ requestDialogService(want: Want, result: AsyncCallback<dialogRequest.RequestResu
 
 ![](./img/note_3.0-zh-cn.png) 组件启动规则详见：[组件启动规则（Stage模型）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/component-startup-rules)。
 
+该接口不支持应用分身。
+
 系统能力：SystemCapability.Ability.AbilityRuntime.Core
 
 参数：
@@ -1653,6 +1657,8 @@ requestDialogService(want: Want): Promise<dialogRequest.RequestResult>
 启动一个支持模态弹框的ServiceExtensionAbility。ServiceExtensionAbility被启动后，应用弹出模态弹框，通过调用[setRequestResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-dialogrequest#requestcallbacksetrequestresult)接口返回结果给调用者。使用Promise异步回调。仅支持在主线程调用。
 
 ![](./img/note_3.0-zh-cn.png) 组件启动规则详见：[组件启动规则（Stage模型）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/component-startup-rules)。
+
+该接口不支持应用分身。
 
 系统能力：SystemCapability.Ability.AbilityRuntime.Core
 
@@ -2585,6 +2591,8 @@ startUIServiceExtensionAbility(want: Want): Promise<void>
 
 ![](./img/note_3.0-zh-cn.png) 组件启动规则详见：[组件启动规则（Stage模型）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/component-startup-rules)。
 
+该接口不支持应用分身。
+
 元服务API：从API version 14开始，该接口支持在元服务中使用。
 
 系统能力：SystemCapability.Ability.AbilityRuntime.Core
@@ -2669,6 +2677,8 @@ connectUIServiceExtensionAbility(want: Want, callback: UIServiceExtensionConnect
 连接一个UIServiceExtensionAbility。使用Promise异步回调。
 
 ![](./img/note_3.0-zh-cn.png) 组件启动规则详见：[组件启动规则（Stage模型）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/component-startup-rules)。
+
+该接口不支持应用分身。
 
 元服务API：从API version 14开始，该接口支持在元服务中使用。
 
@@ -3133,6 +3143,8 @@ stopAppServiceExtensionAbility(want: Want): Promise<void>
 
 ![](./img/note_3.0-zh-cn.png) 该接口的调用方必须为[AppServiceExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-appserviceextensionability)所属应用或者在AppServiceExtensionAbility支持的应用清单（即[extensionAbilities标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#extensionabilities标签)的appIdentifierAllowList属性）中的应用。
 
+该接口不支持应用分身。
+
 系统能力：SystemCapability.Ability.AbilityRuntime.Core
 
 设备行为差异：该接口仅在PC/2in1设备中可正常调用，在其他设备中返回801错误码。
@@ -3206,6 +3218,8 @@ connectAppServiceExtensionAbility(want: Want, callback: ConnectOptions): number
 将当前UIAbility连接到[AppServiceExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-appserviceextensionability)。通过返回的proxy与AppServiceExtensionAbility进行通信，以使用AppServiceExtensionAbility对外提供的能力。仅支持在主线程调用。
 
 ![](./img/note_3.0-zh-cn.png) 如果[AppServiceExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-appserviceextensionability)实例未启动，该接口的调用方必须为AppServiceExtensionAbility所属应用或者在AppServiceExtensionAbility支持的应用清单（即[extensionAbilities标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#extensionabilities标签)的appIdentifierAllowList属性）中的应用。
+
+该接口不支持应用分身。
 
 系统能力：SystemCapability.Ability.AbilityRuntime.Core
 
@@ -3422,6 +3436,8 @@ startSelfUIAbilityInCurrentProcess(want: Want, specifiedFlag: string, options?: 
 - 只能冷启动目标UIAbility，如果目标UIAbility实例已经启动过，则启动失败。
 - 通过该接口启动的UIAbility实例，将运行在调用方所在的进程中。其他关于目标UIAbility的进程相关的策略（例如在[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中通过isolationProcess或isolationMode字段来指定进程），均不会生效。
 
+该接口不支持应用分身。
+
 系统能力：SystemCapability.Ability.AbilityRuntime.Core
 
 设备行为差异：
@@ -3507,6 +3523,8 @@ restartApp(want: Want): Promise<void>
 在元服务调用本接口成功后的3秒内，再次调用本接口、[restartSelfAtomicService()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-abilitymanager#abilitymanagerrestartselfatomicservice20)或[ApplicationContext.restartApp()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-applicationcontext#applicationcontextrestartapp12)接口中的任一接口，系统将返回错误码16000064。
 
 在应用调用本接口成功后的3秒内，若再次调用本接口或[ApplicationContext.restartApp()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-applicationcontext#applicationcontextrestartapp12)接口中的任一接口，系统将返回错误码16000064。
+
+该接口不支持通过Want指定appCloneIndex来切换分身，仅支持在当前分身内重启。
 
 元服务API：从API version 22开始，该接口支持在元服务中使用。
 
@@ -3716,6 +3734,8 @@ startSelfUIAbilityInChildProcess(want: Want, specifiedFlag: string): Promise<voi
 在子进程中启动当前应用的UIAbility，子进程中的UIAbility支持加载Native模块。使用Promise异步回调。
 
 ![](./img/note_3.0-zh-cn.png) 子进程生命周期跟随父进程，父进程退出时子进程自动退出。
+
+该接口不支持应用分身。
 
 起始版本： 26.0.0
 

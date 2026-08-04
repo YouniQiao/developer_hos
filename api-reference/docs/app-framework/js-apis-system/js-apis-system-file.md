@@ -2,8 +2,8 @@
 title: "@system.file (文件存储)"
 upstream_id: "harmonyos-references/js-apis-system-file"
 catalog: "harmonyos-references"
-content_hash: "da175bb8393e"
-synced_at: "2026-07-09T00:59:01.205354"
+content_hash: "9d5de4e9f248"
+synced_at: "2026-08-04T17:02:04.753285"
 ---
 
 # @system.file (文件存储)
@@ -1342,7 +1342,7 @@ export default {
 | uri | string | 否 | 否 | 本地文件URI。由于轻量级穿戴设备底层文件系统的限制，该值必须满足以下要求： 1. URI 中不得包含以下特殊字符：\"*+,:;?[]\ |
 | encoding | string | 否 | 是 | 编码格式，缺省为UTF-8。 |
 | position | number | 否 | 是 | 读取的起始位置，单位为Byte，默认为文件的起始位置。 |
-| length | number | 否 | 是 | 读取的长度，单位为Byte，默认值为4096。 |
+| length | number | 否 | 是 | 读取的长度，取值范围为[1, 4096]，单位为Byte。参数为空时，默认值为4096。 |
 | success | (data: FileReadTextResponse) => void | 否 | 是 | 接口调用成功的回调函数。data为[FileReadTextResponse](#filereadtextresponse)。 |
 | fail | (data: string, code: number) => void | 否 | 是 | 接口调用失败的回调函数。 data为错误信息。 code为可能返回的错误码： 202：出现参数错误。 300：出现I/O错误。 301：文件或目录不存在。 302：要读取的文件内容超过4KB。 |
 | complete | () => void | 否 | 是 | 接口调用结束的回调函数。 |

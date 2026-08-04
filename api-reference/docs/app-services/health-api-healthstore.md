@@ -2,8 +2,8 @@
 title: "healthStore (运动健康数据服务)"
 upstream_id: "harmonyos-references/health-api-healthstore"
 catalog: "harmonyos-references"
-content_hash: "68b45a81db9c"
-synced_at: "2026-07-09T01:01:20.566882"
+content_hash: "6357939096cf"
+synced_at: "2026-08-04T17:04:11.717844"
 ---
 
 # healthStore (运动健康数据服务)
@@ -359,8 +359,8 @@ ExerciseSequence<K extends Record<string, [ExerciseSummary](#exercisesummary)> =
 | --- | --- | --- | --- | --- |
 | exerciseType | [SubDataType](#subdatatype) | 否 | 否 | 锻炼记录子数据类型。 |
 | duration | number | 否 | 是 | 锻炼时长，单位：ms，若未填写，默认为结束时间减去开始时间。 取值范围：(0, ∞) |
-| summaries | Pick | 否 | 否 | 统计数据，锻炼记录关联的统计数据类型参考[exerciseSequenceHelper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-exercisedequencehelper)定义的模型。 |
-| details | Pick | 否 | 是 | 详情数据，锻炼记录关联的详情数据类型参考[exerciseSequenceHelper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-exercisedequencehelper)定义的模型，若未填写，默认为空。 |
+| summaries | Pick | 否 | 否 | 统计数据，锻炼记录关联的统计数据类型参考[exerciseSequenceHelper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-exercisesequencehelper)定义的模型。 |
+| details | Pick | 否 | 是 | 详情数据，锻炼记录关联的详情数据类型参考[exerciseSequenceHelper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-exercisesequencehelper)定义的模型，若未填写，默认为空。 |
 
 #### ExerciseSequenceDeleteRequest
 
@@ -494,8 +494,6 @@ type HealthValueType = number | string | boolean | undefined
 
 运动健康数据值类型。
 
-元服务API： 从版本5.0.0(12)开始，该接口支持在元服务中使用。
-
 系统能力： SystemCapability.Health.HealthStore
 
 起始版本： 5.0.0(12)
@@ -504,10 +502,10 @@ type HealthValueType = number | string | boolean | undefined
 
 | 类型 | **说明** |
 | --- | --- |
-| number | 表示值类型为数字，可取任意值。 |
-| string | 表示值类型为字符串，可取任意值。 |
-| boolean | 表示值类型为布尔类型，可取true或false，具体含义以实际使用场景为准。 |
-| undefined | 表示值类型为undefined，取值为空。 **起始版本：** 6.0.1(21) |
+| number | 表示值类型为数字，可取任意值。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| string | 表示值类型为字符串，可取任意值。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| boolean | 表示值类型为布尔类型，可取true或false，具体含义以实际使用场景为准。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| undefined | 表示值类型为undefined，取值为空。 **起始版本：** 6.0.1(21) **元服务API：** 从版本6.0.1(21)开始，该接口支持在元服务中使用。 |
 
 #### PaceValueType
 
@@ -624,7 +622,7 @@ SequenceReadOptions<DK extends Record<string, [SequencePoint](#sequencepoint)[]>
 | 名称 | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
 | withDetails | boolean | 否 | 是 | 是否读取全部详情。true为读取全部详情，false为不读取详情，若未填写，则withPartialDetails参数生效。 |
-| withPartialDetails | (keyof DK)[] | 否 | 是 | 读取部分详情数据类型（若需要读取部分详情，withDetails参数不能填写），锻炼记录与健康记录关联的详情数据类型分别参考[exerciseSequenceHelper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-exercisedequencehelper)与[healthSequenceHelper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthsequencehelper)定义的模型。 |
+| withPartialDetails | (keyof DK)[] | 否 | 是 | 读取部分详情数据类型（若需要读取部分详情，withDetails参数不能填写），锻炼记录与健康记录关联的详情数据类型分别参考[exerciseSequenceHelper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-exercisesequencehelper)与[healthSequenceHelper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthsequencehelper)定义的模型。 |
 
 #### SequenceValueType
 

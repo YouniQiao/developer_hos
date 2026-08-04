@@ -2,8 +2,8 @@
 title: "remoteDevice（对端设备的连接能力）"
 upstream_id: "harmonyos-references/nearlink-remote-device"
 catalog: "harmonyos-references"
-content_hash: "7c260f871163"
-synced_at: "2026-07-28T16:50:42.185726"
+content_hash: "125d7ddde548"
+synced_at: "2026-08-04T17:02:32.678183"
 ---
 
 # remoteDevice（对端设备的连接能力）
@@ -114,7 +114,6 @@ createRemoteDevice(address: string): RemoteDevice
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Invalid parameter. |
 | 801 | Capability not supported. |
 
 示例：

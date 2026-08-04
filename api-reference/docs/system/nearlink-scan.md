@@ -2,8 +2,8 @@
 title: "scan（星闪扫描能力）"
 upstream_id: "harmonyos-references/nearlink-scan"
 catalog: "harmonyos-references"
-content_hash: "5add3a5b0e1e"
-synced_at: "2026-07-28T16:50:42.193742"
+content_hash: "874b0e6af814"
+synced_at: "2026-08-04T17:02:32.395789"
 ---
 
 # scan（星闪扫描能力）
@@ -22,7 +22,7 @@ import { scan } from '@kit.NearLinkKit';
 
 startScan(filters: Array<ScanFilters>, options?: ScanOptions): Promise<void>
 
-发起星闪扫描。使用Promise异步回调。
+发起指定过滤器的星闪扫描。使用Promise异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -85,7 +85,7 @@ try {
 
 startScan(filters: Array<ScanFilters> | null, options?: ScanOptions): Promise<void>
 
-发起星闪扫描。使用Promise异步回调。
+启动星闪扫描并允许过滤器参数设为null，使用Promise异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -327,7 +327,7 @@ try {
 | manufacturerId | number | 否 | 是 | 表示厂商ID，取值范围[1, 65535]，若未配置则默认不过滤该字段。 |
 | manufacturerData | ArrayBuffer | 否 | 是 | 表示厂商数据，若未配置则默认不过滤该字段。配置该字段需同时配置manufacturerId。 |
 | manufacturerDataMask | ArrayBuffer | 否 | 是 | 表示厂商数据掩码，若未配置则默认不过滤该字段。配置该字段需同时配置manufacturerData，且二者长度必须一致。 |
-| rssi | number | 否 | 是 | 过滤信号强度大于或等于该信号强度门限值的广播报文，取值范围[-128, 127]，单位：dBm。建议设置[-90, 20]范围内的门限值。 |
+| rssi | number | 否 | 是 | 过滤信号强度大于或等于该信号强度门限值的广播报文，取值范围[-128, 127]，单位：dBm。建议设置[-90, 20]范围内的门限值。 **起始版本：** 26.0.0 |
 
 #### ScanOptions
 

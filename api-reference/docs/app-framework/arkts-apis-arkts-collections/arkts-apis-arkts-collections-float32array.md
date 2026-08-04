@@ -2,8 +2,8 @@
 title: "Class (Float32Array)"
 upstream_id: "harmonyos-references/arkts-apis-arkts-collections-float32array"
 catalog: "harmonyos-references"
-content_hash: "cb7c2aebd014"
-synced_at: "2026-08-03T17:09:32.016981"
+content_hash: "5b95a77a3fa8"
+synced_at: "2026-08-04T17:00:49.726096"
 ---
 
 # Class (Float32Array)
@@ -607,7 +607,7 @@ filter(predicate: TypedArrayPredicateFn<number, Float32Array>): Float32Array
 ```
 let array: collections.Float32Array = collections.Float32Array.from([0, 1, 2, 3, 4]);
 // Float32Array [0, 2, 4]
-let filtered: collections.Float32Array = array.filter((element: number) => element % 2 == 0);
+let filtered: collections.Float32Array = array.filter((element: number) => element % 2 === 0);
 ```
 
 #### find

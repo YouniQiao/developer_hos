@@ -2,8 +2,8 @@
 title: "IAP"
 upstream_id: "harmonyos-references/iap-iap"
 catalog: "harmonyos-references"
-content_hash: "ea476955974a"
-synced_at: "2026-07-17T16:19:45.970629"
+content_hash: "85c2161ad9bb"
+synced_at: "2026-08-04T17:04:13.138730"
 ---
 
 # IAP
@@ -134,7 +134,7 @@ import { iap } from '@kit.IAPKit';
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
 | USER_CANCELED | 1001860000 | 用户取消当前操作。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 |
-| SYSTEM_ERROR | 1001860001 | 通用失败错误码。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| SYSTEM_ERROR | 1001860001 | 系统内部错误。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 |
 | APP_NOT_AUTHORIZED | 1001860002 | 应用未被授权访问接口。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 |
 | INVALID_PRODUCT | 1001860003 | 无效的商品信息。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 |
 | FREQUENT_CALLS | 1001860004 | 接口访问过频。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 |
@@ -1599,7 +1599,7 @@ showManagedSubscriptions(context: common.Context, uiParameter: UIWindowParameter
 
 系统能力： SystemCapability.Payment.IAP
 
-设备行为差异： 该接口在Phone、Tablet、2in1、TV、Car设备中可正常调用，在其他设备中返回801错误码。
+设备行为差异： 该接口在Phone、Tablet、2in1、TV设备中可正常调用，在其他设备中返回801错误码。
 
 起始版本： 5.0.0(12)
 

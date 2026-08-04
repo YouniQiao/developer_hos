@@ -2,8 +2,8 @@
 title: "Class (Set)"
 upstream_id: "harmonyos-references/arkts-apis-arkts-collections-set"
 catalog: "harmonyos-references"
-content_hash: "cfee55d9828c"
-synced_at: "2026-08-03T17:09:31.425025"
+content_hash: "32d290fd5b2b"
+synced_at: "2026-08-04T17:00:48.760477"
 ---
 
 # Class (Set)
@@ -123,8 +123,8 @@ const mapper = new Map([
 ]);
 // 通过标准Map的values()方法获取迭代器，构造ArkTS Set对象
 let newSet = new collections.Set<string>(mapper.values());
-console.info(newSet.has("a").toString()); // Expected output: true
-console.info(newSet.has("b").toString()); // Expected output: true
+console.info(`has a: ${newSet.has("a")}`); // Expected output: has a: true
+console.info(`has b: ${newSet.has("b")}`); // Expected output: has b: true
 ```
 
 #### entries
@@ -159,10 +159,10 @@ entries(): IterableIterator<[T, T]>
 const mySet = new collections.Set<number>([0, 1, 2, 3]);
 // 获取Set的entries迭代器
 const iterator = mySet.entries();
-// Expected output: [0, 0]
-console.info(iterator.next().value);
-// Expected output: [1, 1]
-console.info(iterator.next().value);
+// Expected output: entry: [0, 0]
+console.info(`entry: ${iterator.next().value}`);
+// Expected output: entry: [1, 1]
+console.info(`entry: ${iterator.next().value}`);
 ```
 
 #### keys
@@ -197,10 +197,10 @@ keys(): IterableIterator<T>
 const mySet = new collections.Set<number>([0, 1, 2, 3]);
 // 获取Set的keys迭代器
 const iterator = mySet.keys();
-// Expected output: 0
-console.info(iterator.next().value);
-// Expected output: 1
-console.info(iterator.next().value);
+// Expected output: key: 0
+console.info(`key: ${iterator.next().value}`);
+// Expected output: key: 1
+console.info(`key: ${iterator.next().value}`);
 ```
 
 #### values
@@ -236,10 +236,10 @@ values(): IterableIterator<T>
 const mySet = new collections.Set<number>([0, 1, 2, 3]);
 // 获取values迭代器
 const iterator = mySet.values();
-// Expected output: 0
-console.info(iterator.next().value);
-// Expected output: 1
-console.info(iterator.next().value);
+// Expected output: value: 0
+console.info(`value: ${iterator.next().value}`);
+// Expected output: value: 1
+console.info(`value: ${iterator.next().value}`);
 ```
  
 ```
@@ -255,8 +255,8 @@ for (let value of valueIter) {
   }
 }
 
-// Expected output: 2
-console.info("size:" + mySet.size);
+// Expected output: size: 2
+console.info(`size: ${mySet.size}`);
 ```
 
 #### clear
@@ -283,12 +283,12 @@ clear(): void
 ```
 // 创建Set对象
 const mySet = new collections.Set<number>([0, 1]);
-// Expected output: 2
-console.info("size:" + mySet.size);
+// Expected output: size: 2
+console.info(`size: ${mySet.size}`);
 // 清除Set中的所有元素
 mySet.clear();
-// Expected output: 0
-console.info("size:" + mySet.size);
+// Expected output: size: 0
+console.info(`size: ${mySet.size}`);
 ```
 
 #### delete
@@ -328,14 +328,14 @@ delete(value: T): boolean
 // 创建Set对象
 const mySet = new collections.Set<string>(["hello", "world"]);
 // 删除Set中的指定元素
-// Expected result: true
-console.info("result:" + mySet.delete("hello"));
+// Expected result: result: true
+console.info(`result: ${mySet.delete("hello")}`);
 // 判断元素是否仍存在
-// Expected result: false
-console.info("result:" + mySet.has("hello"));
+// Expected result: result: false
+console.info(`result: ${mySet.has("hello")}`);
 // 再次删除已删除的元素
-// Expected result: false
-console.info("result:" + mySet.delete("hello"));
+// Expected result: result: false
+console.info(`result: ${mySet.delete("hello")}`);
 ```
 
 #### forEach
@@ -376,16 +376,16 @@ callbackFn的参数说明：
 ```
 // 正例：
 // 遍历Set中每个元素
-new collections.Set<string>(["foo", "bar", "baz"]).forEach((value1, value2, set) => {
-  console.info(`s[${value1}] = ${value2}`);
+new collections.Set<string>(["foo", "bar", "baz"]).forEach((value, value2, set) => {
+  console.info(`s[${value}] = ${value2}`);
 });
 ```
  
 ```
 // 反例：
-new collections.Set<string>(["foo", "bar", "baz"]).forEach((value1, value2, set) => {
+new collections.Set<string>(["foo", "bar", "baz"]).forEach((value, value2, set) => {
   // Throw exception `Concurrent modification error.`
-  set.delete(value1);
+  set.delete(value);
 });
 ```
 
@@ -426,10 +426,10 @@ has(value: T): boolean
 // 创建Set对象
 const mySet = new collections.Set<string>(["hello", "world"]);
 // 判断Set中是否存在指定元素
-// Expected output: true
-console.info("result:" + mySet.has("hello"));
-// Expected output: true
-console.info("result:" + mySet.has("world"));
+// Expected output: result: true
+console.info(`result: ${mySet.has("hello")}`);
+// Expected output: result: true
+console.info(`result: ${mySet.has("world")}`);
 ```
 
 #### add
@@ -516,6 +516,6 @@ let mySet = new collections.Set<number>([1, 2, 3, 4, 5]);
 let values: Array<number> = Array.from(mySet.values());
 // 遍历并输出每个元素
 for (let item of values) {
-  console.info("value: " + item);
+  console.info(`value: ${item}`);
 }
 ```

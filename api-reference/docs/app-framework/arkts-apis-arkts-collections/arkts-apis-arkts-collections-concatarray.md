@@ -2,8 +2,8 @@
 title: "Interface (ConcatArray)"
 upstream_id: "harmonyos-references/arkts-apis-arkts-collections-concatarray"
 catalog: "harmonyos-references"
-content_hash: "7c61fb70c2a5"
-synced_at: "2026-07-28T16:40:56.271717"
+content_hash: "455858375506"
+synced_at: "2026-08-04T17:00:49.633964"
 ---
 
 # Interface (ConcatArray)

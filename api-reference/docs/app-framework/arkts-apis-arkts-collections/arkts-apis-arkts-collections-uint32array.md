@@ -2,8 +2,8 @@
 title: "Class (Uint32Array)"
 upstream_id: "harmonyos-references/arkts-apis-arkts-collections-uint32array"
 catalog: "harmonyos-references"
-content_hash: "04cfa51fdca1"
-synced_at: "2026-08-03T17:09:32.518142"
+content_hash: "a8aefb73e359"
+synced_at: "2026-08-04T17:00:49.430044"
 ---
 
 # Class (Uint32Array)
@@ -201,10 +201,10 @@ constructor(buffer: ArrayBuffer, byteOffset?: number, length?: number)
 
 ```
 let uint32Array: collections.Uint32Array = collections.Uint32Array.from([1, 2, 3, 4, 5, 6]);
-console.info("byteLength: " + uint32Array.buffer.byteLength); // byteLength: 24
-// 从uint32Array对应buffer第4个字节开始，长度为5
+console.info(`byteLength: ${uint32Array.buffer.byteLength}`); // byteLength: 24
+// 从uint32Array对应buffer第5个字节开始，长度为5
 let uint32Array1: collections.Uint32Array = new collections.Uint32Array(uint32Array.buffer, 4, 5);
-console.info("[" + uint32Array1 + "]"); // [2, 3, 4, 5, 6]
+console.info(`[${uint32Array1}]`); // [2, 3, 4, 5, 6]
 ```
 
 #### from
@@ -800,10 +800,10 @@ lastIndexOf(searchElement: number, fromIndex?: number): number
 
 ```
 let array: collections.Uint32Array = collections.Uint32Array.from([3, 5, 9]);
-console.info(array.lastIndexOf(3) + ''); // 预期输出：0
-console.info(array.lastIndexOf(7) + ''); // 预期输出：-1
-console.info(array.lastIndexOf(9, 2) + ''); // 预期输出：2
-console.info(array.lastIndexOf(9, -2) + ''); // 预期输出：-1
+console.info(`${array.lastIndexOf(3)}`); // 预期输出：0
+console.info(`${array.lastIndexOf(7)}`); // 预期输出：-1
+console.info(`${array.lastIndexOf(9, 2)}`); // 预期输出：2
+console.info(`${array.lastIndexOf(9, -2)}`); // 预期输出：-1
 ```
 
 #### join
@@ -957,7 +957,7 @@ reduceRight(callbackFn: TypedArrayReduceCallback<number, number, Uint32Array>): 
 ```
 let array: collections.Uint32Array = collections.Uint32Array.from([1, 2, 3, 4, 5]);
 let reducedValue: number = array.reduceRight((accumulator: number, value: number) => accumulator + value);
-console.info(reducedValue + ''); // 预期输出： 15
+console.info(`${reducedValue}`); // 预期输出： 15
 ```
 
 #### reduce
@@ -1037,7 +1037,7 @@ reduceRight<U = number>(callbackFn: TypedArrayReduceCallback<U, number, Uint32Ar
 ```
 let array: collections.Uint32Array = collections.Uint32Array.from([1, 2, 3, 4, 5]);
 let reducedValue: number = array.reduceRight((accumulator: number, value: number) => accumulator + value, 1);
-console.info(reducedValue + ''); // 预期输出： 16
+console.info(`${reducedValue}`); // 预期输出： 16
 ```
 
 #### reduce
@@ -1294,9 +1294,9 @@ at(index: number): number | undefined
 
 ```
 let array: collections.Uint32Array = collections.Uint32Array.from([1, 2, 3, 4, 5]);
-console.info("element: " + array.at(2));  // element: 3
-console.info("element: " + array.at(-1)); // element: 5
-console.info("element: " + array.at(6));  // element: undefined
+console.info(`element: ${array.at(2)}`);  // element: 3
+console.info(`element: ${array.at(-1)}`); // element: 5
+console.info(`element: ${array.at(6)}`);  // element: undefined
 ```
 
 #### includes
@@ -1333,9 +1333,9 @@ includes(searchElement: number, fromIndex?: number): boolean
 
 ```
 let array: collections.Uint32Array = collections.Uint32Array.from([1, 2, 3]);
-console.info("includes: " + array.includes(2));    // includes: true
-console.info("includes: " + array.includes(4));    // includes: false
-console.info("includes: " + array.includes(3, 3)); // includes: false
+console.info(`includes: ${array.includes(2)}`);    // includes: true
+console.info(`includes: ${array.includes(4)}`);    // includes: false
+console.info(`includes: ${array.includes(3, 3)}`); // includes: false
 ```
 
 #### entries
@@ -1368,9 +1368,9 @@ entries(): IterableIterator<[number, number]>
 ```
 let array: collections.Uint32Array = collections.Uint32Array.from([11, 22, 33]);
 let iterator: IterableIterator<[number, number]> = array.entries();
-console.info("value: " + iterator.next().value); // value: 0,11
-console.info("value: " + iterator.next().value); // value: 1,22
-console.info("value: " + iterator.next().value); // value: 2,33
+console.info(`value: ${iterator.next().value}`); // value: 0,11
+console.info(`value: ${iterator.next().value}`); // value: 1,22
+console.info(`value: ${iterator.next().value}`); // value: 2,33
 ```
 
 #### keys
@@ -1404,7 +1404,7 @@ keys(): IterableIterator<number>
 let array: collections.Uint32Array = collections.Uint32Array.from([1, 2, 3, 4, 5]);
 let iterator: IterableIterator<number> = array.keys();
 for (const key of iterator) {
-  console.info("" + key); // 依次输出 0,1,2,3,4
+  console.info(`${key}`); // 依次输出 0,1,2,3,4
 }
 ```
 
@@ -1439,7 +1439,7 @@ values(): IterableIterator<number>
 let array: collections.Uint32Array = collections.Uint32Array.from([1, 2, 3, 4, 5]);
 let iterator: IterableIterator<number> = array.values();
 for (const value of iterator) {
-  console.info("" + value); // 依次输出 1,2,3,4,5
+  console.info(`${value}`); // 依次输出 1,2,3,4,5
 }
 ```
 
@@ -1506,5 +1506,5 @@ for (let item of uint32Array) {
 
 ```
 let uint32Array = collections.Uint32Array.from([1, 2, 4]);
-console.info("Element at index 1: ", uint32Array[1]);
+console.info(`Element at index 1: ${uint32Array[1]}`);
 ```

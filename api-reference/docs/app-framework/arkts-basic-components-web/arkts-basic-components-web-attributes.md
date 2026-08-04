@@ -2,8 +2,8 @@
 title: "属性"
 upstream_id: "harmonyos-references/arkts-basic-components-web-attributes"
 catalog: "harmonyos-references"
-content_hash: "6be76d519932"
-synced_at: "2026-07-28T16:49:55.327125"
+content_hash: "70c38955e75a"
+synced_at: "2026-08-04T17:01:57.587493"
 ---
 
 # 属性
@@ -4563,7 +4563,7 @@ enableFullscreenVideoOverlay(enabled: boolean)
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-设备行为差异： 该接口在Phone/Tablet设备中可正常调用，在其他设备中无效。
+设备行为差异： 该接口在PC/2in1设备中无效果，在其他设备中可正常调用。
 
 参数：
 

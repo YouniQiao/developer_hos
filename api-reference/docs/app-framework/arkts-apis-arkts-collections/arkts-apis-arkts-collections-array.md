@@ -2,8 +2,8 @@
 title: "Class (Array)"
 upstream_id: "harmonyos-references/arkts-apis-arkts-collections-array"
 catalog: "harmonyos-references"
-content_hash: "31a98bf18f44"
-synced_at: "2026-07-09T00:57:22.810664"
+content_hash: "25d51a985ad3"
+synced_at: "2026-08-04T17:00:49.049773"
 ---
 
 # Class (Array)
@@ -50,7 +50,7 @@ constructor()
 
 错误码：
 
-以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -107,7 +107,7 @@ ArkTS Array的构造函数，通过开发者提供的元素进行初始化。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| items | T[] | 否 | 初始化ArkTS Array的元素。 |
+| items | T[] | 否 | 初始化ArkTS Array的元素，默认值为空数组。 |
 
 错误码：
 
@@ -120,7 +120,7 @@ ArkTS Array的构造函数，通过开发者提供的元素进行初始化。
 示例：
 
 ```
-let arrayPara  = [1,2,3];
+let arrayPara = [1,2,3];
 let array = new collections.Array<number>(...arrayPara);
 ```
 
@@ -149,7 +149,7 @@ static create<T>(arrayLength: number, initialValue: T): Array<T>
 
 错误码：
 
-以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -185,7 +185,7 @@ static from<T>(arrayLike: ArrayLike<T>): Array<T>
 
 错误码：
 
-以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -195,13 +195,13 @@ static from<T>(arrayLike: ArrayLike<T>): Array<T>
 
 ```
 // 正例
-let array : Array<string> = ['str1', 'str2', 'str3']; // 原生Array<T>，T是Sendable数据类型。
+let array: Array<string> = ['str1', 'str2', 'str3']; // 原生Array<T>，T是Sendable数据类型。
 let sendableArray = collections.Array.from<string>(array); // 返回Sendable Array<T>
 ```
  
 ```
 // 反例
-let array : Array<Array<string>> = [['str1', 'str2', 'str3'], ['str4', 'str5', 'str6'], ['str7', 'str8', 'str9']]; // 原生Array<T>，T是非Sendable数据类型。
+let array: Array<Array<string>> = [['str1', 'str2', 'str3'], ['str4', 'str5', 'str6'], ['str7', 'str8', 'str9']]; // 原生Array<T>，T是非Sendable数据类型。
 let sendableArray = collections.Array.from<Array<string>>(array); // 打印异常信息：Parameter error.Only accept sendable value
 ```
 
@@ -229,7 +229,7 @@ static from<T>(iterable: Iterable<T>): Array<T>
 
 错误码：
 
-以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -243,7 +243,7 @@ const mapper = new Map([
   ['2', 'b'],
 ]);
 let newArray: collections.Array<string> = collections.Array.from(mapper.values());
-console.info(newArray.toString()); // 预期输出： a,b
+console.info(newArray.toString()); // 预期输出： a, b
 ```
 
 #### from18+
@@ -303,7 +303,7 @@ static from<U, T>(arrayLike: ArrayLike<U> | Iterable<U>, mapFn: ArrayFromMapFn<U
 示例：
 
 ```
-let array : Array<number> = [1, 2, 3]; // 原生Array<T>
+let array: Array<number> = [1, 2, 3]; // 原生Array<T>
 let newArray = collections.Array.from<number, string>(array, (value, index) => value + "." + index); // 返回新的 Array<T>
 console.info(newArray.toString()); // 预期输出： 1.0, 2.1, 3.2
 ```
@@ -335,7 +335,7 @@ static isArray(value: Object | undefined | null): boolean
 ```
 let arr: collections.Array<string> = new collections.Array('a', 'b', 'c', 'd');
 let result: boolean = collections.Array.isArray(arr);
-console.info(result + ''); // 预期输出： true
+console.info(String(result)); // 预期输出： true
 ```
 
 #### of18+
@@ -389,7 +389,7 @@ copyWithin(target: number, start: number, end?: number): Array<T>
 
 错误码：
 
-以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -419,7 +419,7 @@ lastIndexOf(searchElement: T, fromIndex?: number): number
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | searchElement | T | 是 | 待索引的值。 |
-| fromIndex | number | 否 | 搜索的起始下标。默认值为0。如果下标大于等于ArkTS Array的长度，则返回-1。如果fromIndex 返回值：
+| fromIndex | number | 否 | 搜索的起始下标。默认值为-1。如果下标大于等于ArkTS Array的长度，则返回-1。如果fromIndex 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
@@ -427,7 +427,7 @@ lastIndexOf(searchElement: T, fromIndex?: number): number
 
 错误码：
 
-以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -438,10 +438,10 @@ lastIndexOf(searchElement: T, fromIndex?: number): number
 
 ```
 let array: collections.Array<number> = collections.Array.from([3, 5, 9]);
-console.info(array.lastIndexOf(3) + ''); // 预期输出： 0
-console.info(array.lastIndexOf(7) + ''); // 预期输出： -1
-console.info(array.lastIndexOf(9, 2) + ''); // 预期输出： 2
-console.info(array.lastIndexOf(9, -2) + ''); // 预期输出： -1
+console.info(String(array.lastIndexOf(3))); // 预期输出： 0
+console.info(String(array.lastIndexOf(7))); // 预期输出： -1
+console.info(String(array.lastIndexOf(9, 2))); // 预期输出： 2
+console.info(String(array.lastIndexOf(9, -2))); // 预期输出： -1
 ```
 
 #### some18+
@@ -468,7 +468,7 @@ some(predicate: ArrayPredicateFn<T, Array<T>>): boolean
 
 错误码：
 
-以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -479,7 +479,7 @@ some(predicate: ArrayPredicateFn<T, Array<T>>): boolean
 
 ```
 let newArray: collections.Array<number> = collections.Array.from([-10, 20, -30, 40, -50]);
-console.info(newArray.some((element: number) => element < 0) + ''); // 预期输出： true
+console.info(String(newArray.some((element: number) => element < 0))); // 预期输出： true
 ```
 
 #### reduceRight18+
@@ -506,7 +506,7 @@ reduceRight(callbackFn: ArrayReduceCallback<T, T, Array<T>>): T
 
 错误码：
 
-以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -518,7 +518,7 @@ reduceRight(callbackFn: ArrayReduceCallback<T, T, Array<T>>): T
 ```
 let array = new collections.Array<number>(1, 2, 3, 4, 5);
 let reducedValue = array.reduceRight((accumulator, value) => accumulator + value); // 累加所有元素
-console.info(reducedValue + ''); // 预期输出： 15
+console.info(String(reducedValue)); // 预期输出： 15
 ```
 
 #### reduceRight18+
@@ -546,7 +546,7 @@ reduceRight<U = T>(callbackFn: ArrayReduceCallback<U, T, Array<T>>, initialValue
 
 错误码：
 
-以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -559,7 +559,7 @@ reduceRight<U = T>(callbackFn: ArrayReduceCallback<U, T, Array<T>>, initialValue
 // 此处使用一个初始值为0的累加器，并将其与Array中的每个元素相加，最终返回累加后的总和
 let array = new collections.Array<number>(1, 2, 3, 4, 5);
 let reducedValue = array.reduceRight<number>((accumulator: number, value: number) => accumulator + value, 0); // 累加所有元素，初始值为0
-console.info(reducedValue + ''); // 预期输出： 15
+console.info(String(reducedValue)); // 预期输出： 15
 ```
 
 #### pop
@@ -568,7 +568,7 @@ pop(): T | undefined
 
 从ArkTS Array中移除并返回最后一个元素。如果Array为空，则返回undefined，且Array不发生变化。
 
-元服务API：从API version 12 开始，该接口支持在元服务中使用。
+元服务API：从API version 12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Utils.Lang
 
@@ -580,7 +580,7 @@ pop(): T | undefined
 
 错误码：
 
-以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -608,7 +608,7 @@ push(...items: T[]): number
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| items | T[] | 否 | 要添加到Array末尾的元素。 |
+| items | T[] | 否 | 要添加到Array末尾的元素，默认值为空数组。 |
 
 返回值：
 
@@ -688,7 +688,7 @@ shift(): T | undefined
 
 错误码：
 
-以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -720,7 +720,7 @@ reverse(): Array<T>
 
 错误码：
 
-以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -749,7 +749,7 @@ unshift(...items: T[]): number
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| items | T[] | 否 | 要插入到Array首端的元素。 |
+| items | T[] | 否 | 要插入到Array首端的元素，默认值为空数组。 |
 
 返回值：
 
@@ -803,7 +803,7 @@ ArkTS数组转换为字符串。
 ```
 let array = new collections.Array<number>(1, 2, 3, 4, 5);
 let stringArray = array.toString();
-console.info(stringArray); // 预期输出：1,2,3,4,5
+console.info(stringArray); // 预期输出： 1, 2, 3, 4, 5
 ```
 
 #### slice
@@ -991,7 +991,7 @@ let array = new collections.Array<string>('a', 'b', 'c');
 let mappedArray = array.map((value, index, array) => {
   return value.toUpperCase(); // 将每个字符串元素转换为大写
 });
-console.info("" + mappedArray); // 输出: A, B, C
+console.info(String(mappedArray)); // 输出: A, B, C
 ```
 
 #### filter
@@ -1116,7 +1116,7 @@ at(index: number): T | undefined
 
 返回Array中指定索引位置的元素。
 
-元服务API：从API version 12 开始，该接口支持在元服务中使用。
+元服务API：从API version 12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Utils.Lang
 
@@ -1164,7 +1164,7 @@ entries(): IterableIterator<[number, T]>
 
 错误码：
 
-以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -1197,7 +1197,7 @@ keys(): IterableIterator<number>
 
 错误码：
 
-以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -1210,7 +1210,7 @@ keys(): IterableIterator<number>
 let array = new collections.Array<number>(1, 2, 3, 4, 5);
 let iterator = array.keys();
 for (const key of iterator) {
-  console.info("" + key); // 依次输出 0,1,2,3,4
+  console.info(String(key)); // 依次输出 0,1,2,3,4
 }
 ```
 
@@ -1232,7 +1232,7 @@ values(): IterableIterator<T>
 
 错误码：
 
-以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -1245,7 +1245,7 @@ values(): IterableIterator<T>
 let array = new collections.Array<number>(1, 2, 3, 4, 5);
 let iterator = array.values();
 for(const value of iterator) {
-  console.info("" + value); // 依次输出 1,2,3,4,5
+  console.info(String(value)); // 依次输出 1,2,3,4,5
 }
 ```
 
@@ -1378,7 +1378,7 @@ fill(value: T, start?: number, end?: number): Array<T>
 | --- | --- | --- | --- |
 | value | T | 是 | 要填充的值。 |
 | start | number | 否 | 开始填充的索引。默认值为0。如果start 数组长度或start > end，则不做填充。填充过程中包含start位置下标所在的元素。 |
-| end | number | 否 | 结束填充的索引（不包括该元素）。如果省略或end > 数组长度，则填充到Array的最后一个元素。如果end end，则不做填充。填充过程中不包含end位置下标所在的元素。 |
+| end | number | 否 | 结束填充的索引（不包括该元素）。如果end 数组长度，则填充到Array的最后一个元素。如果start > end，则不做填充。填充过程中不包含end位置下标所在的元素。 |
 
 返回值：
 
@@ -1416,7 +1416,7 @@ shrinkTo(arrayLength: number): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| arrayLength | number | 是 | Array的新长度。如果arrayLength >= array.length，则Array不变。 |
+| arrayLength | number | 是 | Array的新长度。取值应为非负整数，否则会抛出异常。如果arrayLength >= array.length，则Array不变。 |
 
 错误码：
 
@@ -1451,7 +1451,7 @@ extendTo(arrayLength: number, initialValue: T): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| arrayLength | number | 是 | Array的新长度。如果arrayLength 错误码：
+| arrayLength | number | 是 | Array的新长度。取值应为非负整数，否则会抛出异常。如果arrayLength 错误码：
 
 以下错误码详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
@@ -1484,7 +1484,7 @@ concat(...items: ConcatArray<T>[]): Array<T>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| items | ConcatArray[] | 否 | 拼接两个或多个数组。 |
+| items | ConcatArray[] | 否 | 拼接两个或多个数组，省略时返回原数组的浅拷贝。 |
 
 返回值：
 
@@ -1525,7 +1525,7 @@ splice(start: number): Array<T>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| start | number | 是 | 开始索引。如果-array.length =返回值：
+| start | number | 是 | 开始索引。如果-array.length 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
@@ -1571,7 +1571,7 @@ every(predicate: ArrayPredicateFn<T, Array<T>>): boolean
 
 错误码：
 
-以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -1616,7 +1616,7 @@ toLocaleString(): string
 // 当前应用所在系统为法国地区
 let array = new collections.Array<number | string>(1000, 'Test', 53621);
 let stringArray = array.toLocaleString();
-console.info(stringArray); // 预期输出：1,000,Test,53,621
+console.info(stringArray); // 预期输出：1, 000, Test, 53, 621
 ```
 
 #### splice
@@ -1633,7 +1633,7 @@ splice(start: number, deleteCount: number, ...items: T[]): Array<T>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| start | number | 是 | 开始索引。如果-array.length =返回值：
+| start | number | 是 | 开始索引。如果-array.length 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
@@ -1682,7 +1682,7 @@ let removeArray = array.splice(2, 2, 6, 7, 8); // array内容变为[1, 2, 6, 7, 
 
 错误码：
 
-以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
+以下错误码的详细介绍请参考[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -1691,7 +1691,7 @@ let removeArray = array.splice(2, 2, 6, 7, 8); // array内容变为[1, 2, 6, 7, 
 示例：
 
 ```
-let array= new collections.Array<number>(1, 2, 3, 4);
+let array = new collections.Array<number>(1, 2, 3, 4);
 
 for (let item of array) {
   console.info(`value : ${item}`);
@@ -1732,5 +1732,5 @@ for (let item of array) {
 
 ```
 let array = new collections.Array<number>(1, 2, 4);
-console.info("Element at index 1: ", array[1]);
+console.info(`Element at index 1: ${array[1]}`);
 ```

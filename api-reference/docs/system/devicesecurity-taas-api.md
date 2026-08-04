@@ -2,8 +2,8 @@
 title: "TrustedAppService（可信应用服务）"
 upstream_id: "harmonyos-references/devicesecurity-taas-api"
 catalog: "harmonyos-references"
-content_hash: "fed93ef2963c"
-synced_at: "2026-07-28T16:50:25.456675"
+content_hash: "a04e7ec1374b"
+synced_at: "2026-08-04T17:02:19.328975"
 ---
 
 # TrustedAppService（可信应用服务）
@@ -15,7 +15,7 @@ synced_at: "2026-07-28T16:50:25.456675"
 #### 导入模块
 
 ```
-import { trustedAppService } from '@kit.DeviceSecurityKit';
+import { trustedAppService, contentTrustVerify } from '@kit.DeviceSecurityKit';
 ```
 
 #### createAttestKey
@@ -703,7 +703,7 @@ procSecImageTransform(srcSecImage: ArrayBuffer, procParams: SecImageProcParamsAr
 | width | number | 否 | 否 | 裁剪区域的宽度，即横向的长度，取值范围在 0 到 640 之间的偶数，且需满足 x 与 width 的和不大于 640。单位：像素（pixel）。 |
 | height | number | 否 | 否 | 裁剪区域的高度，即纵向的长度，取值范围在 0 到 480 之间的偶数，且需满足 y 与 height 的和不大于 480。单位：像素（pixel）。 |
 
-![](./img/zh-cn_image_0000002686088875.jpg)
+![](./img/zh-cn_image_0000002692987371.jpg)
 
 #### SecImageBuffer
 
@@ -864,6 +864,21 @@ await trustedAppService.procSecImageTransform(srcSecImageBuffer, options).then(
 | bufferType | [BufferType](#buffertype) | 是 | 否 | 图片数据形式。 |
 | imageFormat | [ImageFormat](#imageformat) | 是 | 否 | 图片格式类型。 |
 
+#### ImageBufferFormat
+
+图片数组类型。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Security.TrustedAppService.ContentTrustCredentials
+
+起始版本： 26.0.0
+
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| IMAGE_DATA_TYPE_DATAFLOW | 0 | 图片类型为数据流。 |
+| IMAGE_DATA_TYPE_URL | 1 | 图片类型为URL。 |
+
 #### BufferType
 
 图片数据形式，[ImageAuthData](#imageauthdata)结构体参数之一。
@@ -963,19 +978,19 @@ hasImageSignature(data: ImageAuthData): Promise<boolean>
 示例：
 
 ```
-import { mediaAuthVerify } from '@kit.DeviceSecurityKit';
+import { contentTrustVerify } from '@kit.DeviceSecurityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
 const imageBuffer = new Uint8Array([0xFF, 0xD8, 0xFF, 0xE0, 0x00, 0x10, 0x4A, 0x46, 0x49, 0x46, 0x00, 0x01, 0x01, 0x01, 0x00, 0x60, 0x00, 0x60, 0x00, 0x00, 0xFF, 0xDB, 0x00, 0x43, 0x00, 0x08, 0x06, 0x06, 0x07, 0x06, 0x05, 0x08, 0x07, 0x07, 0x07, 0x09, 0x09, 0x08, 0x0A, 0x0C, 0x14, 0x0D, 0x0C, 0x0B, 0x0B, 0x0C, 0x19, 0x12, 0x13, 0x0F, 0x14, 0x1D, 0x1A, 0x1F, 0x1E, 0x1D, 0x1A, 0x1C, 0x1C, 0x20, 0x24, 0x2E, 0x27, 0x20, 0x22, 0x2C, 0x23, 0x1C, 0x1C, 0x28, 0x37, 0x29, 0x2C, 0x30, 0x31, 0x34, 0x34, 0x34, 0x1F, 0x27, 0x39, 0x3D, 0x38, 0x32, 0x3C, 0x2E, 0x33, 0x34, 0x32, 0xFF, 0xC0, 0x00, 0x0B, 0x08, 0x00, 0x01, 0x00, 0x01, 0x01, 0x01, 0x11, 0x00, 0xFF, 0xC4, 0x00, 0x14, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0xC4, 0x00, 0x14, 0x10, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0xDA, 0x00, 0x08, 0x01, 0x01, 0x00, 0x00, 0x3F, 0x00, 0x37, 0xFF, 0xD9]); // 数据均为示例值，仅用于展示如何检查是否有签名，实际请使用经过相机签名后的图片。
-const data:mediaAuthVerify.ImageAuthData = {
+const data:contentTrustVerify.ImageAuthData = {
   buffer: imageBuffer,
   imageSize: imageBuffer.length,
-  bufferType: mediaAuthVerify.BufferType.BUFFER_TYPE_DATA,
-  imageFormat: mediaAuthVerify.ImageFormat.IMAGE_TYPE_JPEG,
+  bufferType: contentTrustVerify.BufferType.BUFFER_TYPE_DATA,
+  imageFormat: contentTrustVerify.ImageFormat.IMAGE_TYPE_JPEG,
 };
 try {
-  const result = await mediaAuthVerify.hasImageSignature(data);
+  const result = await contentTrustVerify.hasImageSignature(data);
 } catch (error) {
   let err = error as BusinessError;
   hilog.error(0x0000, 'testTag', `Failed to check image signature, code:${err.code}, message:${err.message}`);
@@ -1027,19 +1042,19 @@ verifyImageSignature(data: ImageAuthData): Promise<Uint8Array>
 示例：
 
 ```
-import { mediaAuthVerify } from '@kit.DeviceSecurityKit';
+import { contentTrustVerify } from '@kit.DeviceSecurityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
 const imageBuffer = new Uint8Array([0xFF, 0xD8, 0xFF, 0xE0, 0x00, 0x10, 0x4A, 0x46, 0x49, 0x46, 0x00, 0x01, 0x01, 0x01, 0x00, 0x60, 0x00, 0x60, 0x00, 0x00, 0xFF, 0xDB, 0x00, 0x43, 0x00, 0x08, 0x06, 0x06, 0x07, 0x06, 0x05, 0x08, 0x07, 0x07, 0x07, 0x09, 0x09, 0x08, 0x0A, 0x0C, 0x14, 0x0D, 0x0C, 0x0B, 0x0B, 0x0C, 0x19, 0x12, 0x13, 0x0F, 0x14, 0x1D, 0x1A, 0x1F, 0x1E, 0x1D, 0x1A, 0x1C, 0x1C, 0x20, 0x24, 0x2E, 0x27, 0x20, 0x22, 0x2C, 0x23, 0x1C, 0x1C, 0x28, 0x37, 0x29, 0x2C, 0x30, 0x31, 0x34, 0x34, 0x34, 0x1F, 0x27, 0x39, 0x3D, 0x38, 0x32, 0x3C, 0x2E, 0x33, 0x34, 0x32, 0xFF, 0xC0, 0x00, 0x0B, 0x08, 0x00, 0x01, 0x00, 0x01, 0x01, 0x01, 0x11, 0x00, 0xFF, 0xC4, 0x00, 0x14, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0xC4, 0x00, 0x14, 0x10, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0xDA, 0x00, 0x08, 0x01, 0x01, 0x00, 0x00, 0x3F, 0x00, 0x37, 0xFF, 0xD9]); // 数据均为示例值，仅用于展示如何检查是否有签名，实际请使用经过相机签名后的图片。
-const data:mediaAuthVerify.ImageAuthData = {
+const data:contentTrustVerify.ImageAuthData = {
   buffer: imageBuffer,
   imageSize: imageBuffer.length,
-  bufferType: mediaAuthVerify.BufferType.BUFFER_TYPE_DATA,
-  imageFormat: mediaAuthVerify.ImageFormat.IMAGE_TYPE_JPEG,
+  bufferType: contentTrustVerify.BufferType.BUFFER_TYPE_DATA,
+  imageFormat: contentTrustVerify.ImageFormat.IMAGE_TYPE_JPEG,
 };
 try {
-  const result = await mediaAuthVerify.verifyImageSignature(data);
+  const result = await contentTrustVerify.verifyImageSignature(data);
 } catch (error) {
   let err = error as BusinessError;
   hilog.error(0x0000, 'testTag', `Failed to verify image signature, code:${err.code}, message:${err.message}`);
@@ -1084,7 +1099,7 @@ parseImageMetadata(manifests: Uint8Array): Promise<string>
 示例：
 
 ```
-import { mediaAuthVerify } from '@kit.DeviceSecurityKit';
+import { contentTrustVerify } from '@kit.DeviceSecurityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 import { util } from '@kit.ArkTS';
@@ -1092,15 +1107,15 @@ import { util } from '@kit.ArkTS';
 const file = "/data/local/testpic/pics/jpgpic.jpg";// 此路径为示例值，仅用于展示如何传递URL内容，实际请使用正确图片URL。
 let encoder = new util.TextEncoder();
 let imageBuffer = encoder.encodeInto(file);
-const data:mediaAuthVerify.ImageAuthData = {
+const data:contentTrustVerify.ImageAuthData = {
   buffer: imageBuffer,
   imageSize: imageBuffer.length,
-  bufferType: mediaAuthVerify.BufferType.BUFFER_TYPE_DATA,
-  imageFormat: mediaAuthVerify.ImageFormat.IMAGE_TYPE_JPEG,
+  bufferType: contentTrustVerify.BufferType.BUFFER_TYPE_DATA,
+  imageFormat: contentTrustVerify.ImageFormat.IMAGE_TYPE_JPEG,
 };
 try {
-  let manifest = await mediaAuthVerify.verifyImageSignature(data);
-  let stringResult = await mediaAuthVerify.parseImageMetadata(manifest);
+  let manifest = await contentTrustVerify.verifyImageSignature(data);
+  let stringResult = await contentTrustVerify.parseImageMetadata(manifest);
 } catch (error) {
   let err = error as BusinessError;
   hilog.error(0x0000, 'testTag', `Failed to verify image signature, code:${err.code}, message:${err.message}`);

@@ -2,8 +2,8 @@
 title: "@Env：环境变量"
 upstream_id: "harmonyos-references/ts-env-system-property"
 catalog: "harmonyos-references"
-content_hash: "bc93ea40b25b"
-synced_at: "2026-08-03T17:10:09.658554"
+content_hash: "ce375ff17a13"
+synced_at: "2026-08-04T17:01:18.524612"
 ---
 
 # @Env：环境变量
@@ -103,8 +103,6 @@ type EnvDecorator = (value: SystemProperties) => PropertyDecorator
 | WINDOW_SIZE_PX23+ | 'system.window.size.px' | [@Env](#env)变量参数，通过@Env(SystemProperties.WINDOW_SIZE_PX)可获取[Size](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#size7)实例。 当该装饰器声明在[@Component](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#component)或[@ComponentV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#componentv2)中时，用于获取当前自定义组件所在窗口的大小信息，单位为px。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束**：此接口仅可在Stage模型下使用。 |
 | WINDOW_AVOID_AREA23+ | 'system.window.avoidarea' | [@Env](#env)变量参数，通过@Env(SystemProperties.WINDOW_AVOID_AREA)可获取[UIEnvWindowAvoidAreaInfoVP](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#uienvwindowavoidareainfovp23)实例。 当该装饰器声明在[@Component](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#component)或[@ComponentV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#componentv2)中时，用于获取当前自定义组件所在窗口的避让区域信息，单位为vp。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束**：此接口仅可在Stage模型下使用。 |
 | WINDOW_AVOID_AREA_PX23+ | 'system.window.avoidarea.px' | [@Env](#env)变量参数，通过@Env(SystemProperties.WINDOW_AVOID_AREA_PX)可获取[UIEnvWindowAvoidAreaInfoPX](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#uienvwindowavoidareainfopx23)实例。 当该装饰器声明在[@Component](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#component)或[@ComponentV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#componentv2)中时，用于获取当前自定义组件所在窗口的避让区域信息，单位为px。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束**：此接口仅可在Stage模型下使用。 |
-| WINDOW_DISPLAY_ID | 'system.window.displayid' | [@Env](#env)变量参数，通过@Env(SystemProperties.WINDOW_DISPLAY_ID)可获取number类型的值。 当该装饰器声明在[@Component](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#component)或[@ComponentV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#componentv2)中时，用于获取当前自定义组件所在窗口的屏幕ID。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束**：此接口仅可在Stage模型下使用。 |
-| WINDOW_SYSTEM_DENSITY | 'system.window.density.system' | [@Env](#env)变量参数，通过@Env(SystemProperties.WINDOW_SYSTEM_DENSITY)可获取number类型的值。 当该装饰器声明在[@Component](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#component)或[@ComponentV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#componentv2)中时，用于获取当前自定义组件所在窗口的系统显示大小缩放系数。该参数为浮点数，取值范围为[0.5, 4.0]或-1.0。4.0表示窗口可显示的最大显示大小缩放系数，-1.0表示窗口使用系统显示大小缩放系数。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束**：此接口仅可在Stage模型下使用。 |
 
 #### SystemEnvKey
 

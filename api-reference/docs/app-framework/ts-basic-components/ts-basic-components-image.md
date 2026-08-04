@@ -2,8 +2,8 @@
 title: "Image"
 upstream_id: "harmonyos-references/ts-basic-components-image"
 catalog: "harmonyos-references"
-content_hash: "7d919bf4e7f7"
-synced_at: "2026-07-28T16:45:21.882920"
+content_hash: "bf9a40f053c6"
+synced_at: "2026-08-04T17:01:07.855176"
 ---
 
 # Image
@@ -458,6 +458,8 @@ syncLoad(value: boolean)
 
 当组件的参数类型为[AnimatedDrawableDescriptor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-drawabledescriptor#animateddrawabledescriptor12)时设置该属性不生效。
 
+[alt](#alt)占位图始终为异步加载，syncLoad对其不生效。
+
 如果加载图片时出现闪烁，设置syncLoad为true。详情请参见[并发优化](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-click-to-click-response-optimization#section715115119192)。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
@@ -520,13 +522,13 @@ colorFilter(value: ColorFilter | DrawingColorFilter)
 
 如果输入的滤镜矩阵如下：
 
-![](./img/zh-cn_image_0000002655848706.png)
+![](./img/zh-cn_image_0000002692866737.png)
 
 像素点为[R, G, B, A]，色值的范围[0, 255]
 
 则过滤后的颜色为 [R’, G’, B’, A’]
 
-![](./img/zh-cn_image_0000002686088137.png)
+![](./img/zh-cn_image_0000002692986637.png)
 
 该属性的具体使用可以参考[示例9](#示例9为图像设置颜色滤镜效果)。
 
@@ -842,7 +844,7 @@ antialiased(isAntialiased: Optional<boolean>)
 
 图1 设置EdgeWidths效果图
 
-![](./img/zh-cn_image_0000002685928327.png)
+![](./img/zh-cn_image_0000002662946856.png)
 
 #### ImageAlt22+
 
@@ -889,15 +891,15 @@ antialiased(isAntialiased: Optional<boolean>)
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| AUTO | 0 | 读取图片携带的EXIF元数据作为显示方向，支持旋转和镜像。 [PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)和[DrawableDescriptor](#drawabledescriptor10)类型的图片不包含头信息，调用该接口时图片显示效果不变化。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002656008648.png) |
+| AUTO | 0 | 读取图片携带的EXIF元数据作为显示方向，支持旋转和镜像。 [PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)和[DrawableDescriptor](#drawabledescriptor10)类型的图片不包含头信息，调用该接口时图片显示效果不变化。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002663106752.png) |
 | UP | 1 | 默认按照当前图片的像素数据进行显示，不做任何处理。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
-| RIGHT | 2 | 将当前图片顺时针旋转90度后显示。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002655848728.png) |
-| DOWN | 3 | 将当前图片顺时针旋转180度后显示。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002686088159.png) |
-| LEFT | 4 | 将当前图片顺时针旋转270度后显示。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002685928329.png) |
-| UP_MIRRORED20+ | 5 | 将当前图片水平翻转后显示。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002656008650.png) |
-| RIGHT_MIRRORED20+ | 6 | 将当前图片水平翻转再顺时针旋转90度后显示。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002655848730.png) |
-| DOWN_MIRRORED20+ | 7 | 将当前图片垂直翻转后显示。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002686088161.png) |
-| LEFT_MIRRORED20+ | 8 | 将当前图片水平翻转再顺时针旋转270度后显示。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002685928331.png) |
+| RIGHT | 2 | 将当前图片顺时针旋转90度后显示。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002692866759.png) |
+| DOWN | 3 | 将当前图片顺时针旋转180度后显示。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002692986659.png) |
+| LEFT | 4 | 将当前图片顺时针旋转270度后显示。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002662946858.png) |
+| UP_MIRRORED20+ | 5 | 将当前图片水平翻转后显示。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002663106754.png) |
+| RIGHT_MIRRORED20+ | 6 | 将当前图片水平翻转再顺时针旋转90度后显示。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002692866761.png) |
+| DOWN_MIRRORED20+ | 7 | 将当前图片垂直翻转后显示。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002692986661.png) |
+| LEFT_MIRRORED20+ | 8 | 将当前图片水平翻转再顺时针旋转270度后显示。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002662946860.png) |
 
 #### ImageSourceSize18+对象说明
 
@@ -1046,7 +1048,7 @@ onError(callback: ImageErrorCallback)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | [ImageErrorCallback](#imageerrorcallback9) | 是 | 图片加载异常时触发的回调。 **说明：** 建议开发者使用此回调，可快速确认图片加载失败时的具体原因，参见[ImageError](#imageerror9)的错误信息详细介绍。 |
+| callback | [ImageErrorCallback](#imageerrorcallback9) | 是 | 图片加载异常时触发的回调。 **说明：** 建议开发者使用此回调，可快速确认图片加载失败时的具体原因，参见[ImageError](#imageerror9)的错误信息详细介绍；网络相关的超时上报，重试次数等规格细节，参见[CacheDownloadOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-request-cachedownload#cachedownloadoptions)。 |
 
 #### [h2]onFinish
 
@@ -1210,7 +1212,7 @@ struct ImageExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008652.gif)
+ ![](./img/zh-cn_image_0000002663106756.gif)
 
 #### [h2]示例2（下载与显示静态网络图片）
 
@@ -1274,7 +1276,7 @@ struct ImageExample2 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848732.png)
+ ![](./img/zh-cn_image_0000002692866763.png)
 
 #### [h2]示例3（下载与显示网络gif图片）
 
@@ -1355,7 +1357,7 @@ struct ImageExample3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088163.gif)
+ ![](./img/zh-cn_image_0000002692986663.gif)
 
 #### [h2]示例5（开启图像AI分析）
 
@@ -1407,7 +1409,7 @@ struct ImageExample4 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928333.gif)
+ ![](./img/zh-cn_image_0000002662946862.gif)
 
 #### [h2]示例6（通过slice拉伸图片）
 
@@ -1475,7 +1477,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008654.gif)
+ ![](./img/zh-cn_image_0000002663106758.gif)
 
 #### [h2]示例7（通过lattice拉伸图片）
 
@@ -1520,7 +1522,7 @@ struct drawingLatticeTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848734.png)
+ ![](./img/zh-cn_image_0000002692866765.png)
 
 #### [h2]示例8（播放PixelMap数组动画）
 
@@ -1599,7 +1601,7 @@ struct ImageExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088165.gif)
+ ![](./img/zh-cn_image_0000002692986665.gif)
 
 #### [h2]示例9（为图像设置颜色滤镜效果）
 
@@ -1666,7 +1668,7 @@ struct ImageExample3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928335.gif)
+ ![](./img/zh-cn_image_0000002662946864.gif)
 
 #### [h2]示例10（为图像设置填充效果）
 
@@ -1716,7 +1718,7 @@ struct ImageExample{
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008656.gif)
+ ![](./img/zh-cn_image_0000002663106760.gif)
 
 #### [h2]示例11（切换显示不同类型图片）
 
@@ -1745,7 +1747,7 @@ struct ImageContentExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848736.gif)
+ ![](./img/zh-cn_image_0000002692866767.gif)
 
 #### [h2]示例12（配置隐私隐藏）
 
@@ -1769,7 +1771,7 @@ struct ImageExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088167.gif)
+ ![](./img/zh-cn_image_0000002692986667.gif)
 
 #### [h2]示例13（为图片设置扫光效果）
 
@@ -1857,7 +1859,7 @@ struct ImageExample11 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928337.gif)
+ ![](./img/zh-cn_image_0000002662946866.gif)
 
 #### [h2]示例14（为图片添加变换效果）
 
@@ -1925,7 +1927,7 @@ struct Test {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008658.jpeg)
+ ![](./img/zh-cn_image_0000002663106762.jpeg)
 
 #### [h2]示例15（通过sourceSize设置图片解码尺寸）
 
@@ -1957,7 +1959,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848738.png)
+ ![](./img/zh-cn_image_0000002692866769.png)
 
 #### [h2]示例16（通过renderMode设置图片的渲染模式）
 
@@ -1982,7 +1984,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088169.png)
+ ![](./img/zh-cn_image_0000002692986669.png)
 
 #### [h2]示例17（通过objectRepeat设置图片的重复样式）
 
@@ -2007,7 +2009,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928339.png)
+ ![](./img/zh-cn_image_0000002662946868.png)
 
 #### [h2]示例18（设置SVG图片的填充颜色）
 
@@ -2056,7 +2058,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008660.png)
+ ![](./img/zh-cn_image_0000002663106764.png)
 
 #### [h2]示例19（设置HDR图源动态提亮）
 
@@ -2146,7 +2148,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848740.png)
+ ![](./img/zh-cn_image_0000002692866771.png)
 
 #### [h2]示例21（设置图像内容的显示方向）
 
@@ -2239,7 +2241,7 @@ struct OrientationExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088171.png)
+ ![](./img/zh-cn_image_0000002692986671.png)
 
 #### [h2]示例22（获取图片的exif信息并设置图像内容的显示方向）
 
@@ -2358,7 +2360,7 @@ struct Example {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928341.png)
+ ![](./img/zh-cn_image_0000002662946870.png)
 
 #### [h2]示例23（动态切换SVG图片的填充颜色）
 
@@ -2417,7 +2419,7 @@ struct fillColorMetricsDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008662.gif)
+ ![](./img/zh-cn_image_0000002663106766.gif)
 
 #### [h2]示例24（使用应用沙箱路径显示图片）
 
@@ -2451,7 +2453,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848742.png)
+ ![](./img/zh-cn_image_0000002692866773.png)
 
 #### [h2]示例25（使用相对路径显示图片）
 
@@ -2472,7 +2474,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848742.png)
+ ![](./img/zh-cn_image_0000002692866773.png)
 
 #### [h2]示例26（使用supportSvg2属性时，SVG图片的显示效果）
 
@@ -2508,7 +2510,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088173.png)
+ ![](./img/zh-cn_image_0000002692986673.png)
 
 #### [h2]示例27（使用ContentTransition属性实现图片淡入淡出切换效果）
 
@@ -2540,7 +2542,7 @@ struct ImageExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928343.gif)
+ ![](./img/zh-cn_image_0000002662946872.gif)
 
 #### [h2]示例28（使用alt属性设置加载过程中和加载失败时的占位图）
 
@@ -2578,7 +2580,7 @@ struct ImageExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008664.gif)
+ ![](./img/zh-cn_image_0000002663106768.gif)
 
 #### [h2]示例29（使用onError回调监听网络图片加载异常信息）
 
@@ -2649,4 +2651,4 @@ struct ImageExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848744.png)
+ ![](./img/zh-cn_image_0000002692866775.png)

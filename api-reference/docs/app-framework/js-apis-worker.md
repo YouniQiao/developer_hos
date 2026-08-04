@@ -2,8 +2,8 @@
 title: "@ohos.worker (启动一个Worker)"
 upstream_id: "harmonyos-references/js-apis-worker"
 catalog: "harmonyos-references"
-content_hash: "79cffb33427d"
-synced_at: "2026-08-03T17:09:34.031830"
+content_hash: "ac4613af18fe"
+synced_at: "2026-08-04T17:00:52.241008"
 ---
 
 # @ohos.worker (启动一个Worker)
@@ -41,10 +41,10 @@ Worker构造函数的选项，用于为Worker添加其他信息。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| type | 'classic' | 'module' | 否 | 是 | Worker执行脚本的模式类型，暂不支持module类型，默认值为"classic"。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| name | string | 否 | 是 | Worker的名称。 默认值为undefined，此时线程名称为'WorkerThread'。 非默认值情况下，对应的线程名称带有'WorkerThread_'前缀。比如name为'testName'时，对应的线程名称为'WorkerThread_testName'。 线程名称可通过[HeapMemoryInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-util#heapmemoryinfo24)的threadName获取。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| shared | boolean | 否 | 是 | 表示Worker共享功能，此接口暂不支持。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| priority18+ | [ThreadWorkerPriority](#threadworkerpriority18) | 否 | 是 | 表示Worker线程优先级。默认值为MEDIUM。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| type | 'classic' | 'module' | 否 | 是 | Worker执行脚本的模式类型，暂不支持module类型，默认值为"classic"。 **元服务API**： 从API version 11开始，该接口支持在元服务中使用。 |
+| name | string | 否 | 是 | Worker的名称。 默认值为undefined，此时线程名称为'WorkerThread'。 非默认值情况下，对应的线程名称带有'WorkerThread_'前缀。比如name为'testName'时，对应的线程名称为'WorkerThread_testName'。 线程名称可通过[HeapMemoryInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-util#heapmemoryinfo24)的threadName获取。 **元服务API**： 从API version 11开始，该接口支持在元服务中使用。 |
+| shared | boolean | 否 | 是 | 表示Worker共享功能，此接口暂不支持。 **元服务API**： 从API version 12开始，该接口支持在元服务中使用。 |
+| priority18+ | [ThreadWorkerPriority](#threadworkerpriority18) | 否 | 是 | 表示Worker线程优先级。默认值为MEDIUM。 **元服务API**： 从API version 18开始，该接口支持在元服务中使用。 |
 
 #### ThreadWorkerPriority18+
 
@@ -73,7 +73,7 @@ Worker线程的优先级枚举，各优先级对应关系请参考[QoS等级定�
 | --- | --- | --- | --- | --- |
 | onexit9+ | (code: number) => void | 否 | 是 | 回调函数。表示Worker线程销毁时被调用的事件处理程序，该处理程序在宿主线程中执行。回调函数的code参数类型为number，异常退出时code为1，正常退出时code为0。默认值为undefined。 **元服务API**：从API version 11开始，该属性支持在元服务中使用。 |
 | onerror9+ | (err: [ErrorEvent](#errorevent)) => void | 否 | 是 | 回调函数，用于处理onmessage回调函数中同步代码产生的异常，处理程序在宿主线程中执行。回调函数的err类型为[ErrorEvent](#errorevent)，表示收到的异常数据。默认值为undefined。 **元服务API**：从API version 11开始，该属性支持在元服务中使用。 |
-| onAllErrors18+ | [ErrorCallback](#errorcallback18) | 否 | 是 | 回调函数。表示Worker线程生命周期内发生异常被调用的事件处理程序，处理程序在宿主线程中执行。 **元服务API**：从API version 18开始，该属性支持在元服务中使用。 |
+| onAllErrors18+ | [ErrorCallback](#errorcallback18) | 否 | 是 | 回调函数。表示Worker线程生命周期内发生异常被调用的事件处理程序，处理程序在宿主线程中执行。默认值为undefined。 **元服务API**：从API version 18开始，该属性支持在元服务中使用。 |
 | onmessage9+ | (event: [MessageEvents](#messageevents9)) => void | 否 | 是 | 回调函数。表示宿主线程接收到来自其创建的Worker通过workerPort.[postMessage](#postmessage9-3)或workerPort.[postMessageWithSharedSendable](#postmessagewithsharedsendable12-1)接口发送的消息时被调用的事件处理程序，处理程序在宿主线程中执行。其中回调函数中event类型为[MessageEvents](#messageevents9)，表示收到的Worker线程发送的消息数据。默认值为undefined。 **元服务API**：从API version 11开始，该属性支持在元服务中使用。 |
 | onmessageerror9+ | (event: [MessageEvents](#messageevents9)) => void | 否 | 是 | 回调函数。用于处理Worker对象接收到的无法被序列化的消息。该处理程序在宿主线程中执行，event类型为[MessageEvents](#messageevents9)，表示收到的Worker消息数据。默认值为undefined。 **元服务API**：从API version 11开始，该属性支持在元服务中使用。 |
 

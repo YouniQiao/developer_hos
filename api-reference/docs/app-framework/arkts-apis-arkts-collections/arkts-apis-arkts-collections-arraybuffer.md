@@ -2,8 +2,8 @@
 title: "Class (ArrayBuffer)"
 upstream_id: "harmonyos-references/arkts-apis-arkts-collections-arraybuffer"
 catalog: "harmonyos-references"
-content_hash: "280651cdbca2"
-synced_at: "2026-07-09T00:57:22.546275"
+content_hash: "3ce7d90929b2"
+synced_at: "2026-08-04T17:00:48.807342"
 ---
 
 # Class (ArrayBuffer)
@@ -77,11 +77,13 @@ slice(begin: number, end?: number): ArrayBuffer
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| begin | number | 是 | 开始索引，如果begin 返回值：
+| begin | number | 否 | 开始索引。如果begin arrayBuffer.byteLength，则截取到arrayBuffer.byteLength位置。默认为原ArkTS ArrayBuffer的长度。 |
+
+返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| ArrayBuffer | 新的ArkTS ArrayBuffer对象。 |
+| ArrayBuffer | collections.ArrayBuffer |
 
 错误码：
 

@@ -2,15 +2,15 @@
 title: "@Extend：扩展组件样式"
 upstream_id: "harmonyos-references/ts-custom-component-decorator-extend"
 catalog: "harmonyos-references"
-content_hash: "4221260c802e"
-synced_at: "2026-07-28T16:47:57.750180"
+content_hash: "d28f0de879b1"
+synced_at: "2026-08-04T17:01:13.523570"
 ---
 
 # @Extend：扩展组件样式
 
 @Extend装饰器用于扩展指定组件的样式，支持在装饰的函数中统一定义多个样式属性，并可通过参数传递实现样式的灵活复用，适用于需要将相同样式应用到多个组件、减少样式代码重复的场景。
 
-开发指南参考：[@Extend装饰器：定义扩展组件样式（ArkTS-Dyn）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-extend)。
+开发指南参考：[@Extend装饰器：定义扩展组件样式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-extend)。
 
 ![](./img/note_3.0-zh-cn.png)
 

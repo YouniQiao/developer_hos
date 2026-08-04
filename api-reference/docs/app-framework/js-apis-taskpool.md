@@ -2,8 +2,8 @@
 title: "@ohos.taskpool (启动任务池)"
 upstream_id: "harmonyos-references/js-apis-taskpool"
 catalog: "harmonyos-references"
-content_hash: "fc98f669e172"
-synced_at: "2026-07-28T16:40:57.296251"
+content_hash: "c696daa7cbfc"
+synced_at: "2026-08-04T17:00:51.945037"
 ---
 
 # @ohos.taskpool (启动任务池)
@@ -2239,7 +2239,7 @@ function testWithArray(args: [number, string]): string {
   return "success";
 }
 
-let task1: taskpool.Task = new taskpool.GenericsTask<[string], string>(printArgs, "this is my first LongTask");
+let task1: taskpool.Task = new taskpool.GenericsTask<[string], string>(printArgs, "this is my first GenericsTask");
 
 let task2: taskpool.Task = new taskpool.GenericsTask<[number, string, number], string>(testWithThreeParams, 100, "test", 100);
 

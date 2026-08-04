@@ -2,8 +2,8 @@
 title: "SysCap (系统能力)"
 upstream_id: "harmonyos-references/js-apis-syscap"
 catalog: "harmonyos-references"
-content_hash: "20610deb8d80"
-synced_at: "2026-07-09T01:01:46.017506"
+content_hash: "1eb52abb7eba"
+synced_at: "2026-08-04T17:04:33.659382"
 ---
 
 # SysCap (系统能力)
@@ -18,7 +18,7 @@ canIUse(syscap: string): boolean
 
 查询系统是否具备某个系统能力。
 
-元服务API（仅ArkTS-Dyn）： 从API version 11开始，该接口支持在元服务中使用。
+元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 

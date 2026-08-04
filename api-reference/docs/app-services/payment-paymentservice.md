@@ -2,8 +2,8 @@
 title: "paymentService (鸿蒙支付服务)"
 upstream_id: "harmonyos-references/payment-paymentservice"
 catalog: "harmonyos-references"
-content_hash: "a1b289ca0d0b"
-synced_at: "2026-07-28T16:52:49.653228"
+content_hash: "3d0815930806"
+synced_at: "2026-08-04T17:04:19.071148"
 ---
 
 # paymentService (鸿蒙支付服务)
@@ -621,7 +621,7 @@ requestBindCard(context: common.UIAbilityContext | common.UIExtensionContext): P
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error.Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
+| 401 | Parameter error.Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
 | 1001930000 | The operation was canceled by the user. |
 | 1001930011 | Network connection error. |

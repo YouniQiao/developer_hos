@@ -2,8 +2,8 @@
 title: "上传下载错误码"
 upstream_id: "harmonyos-references/errorcode-request"
 catalog: "harmonyos-references"
-content_hash: "a385f344137b"
-synced_at: "2026-07-09T00:59:44.785900"
+content_hash: "e0520ea92e65"
+synced_at: "2026-08-04T17:02:57.386239"
 ---
 
 # 上传下载错误码
@@ -22,7 +22,7 @@ Invalid file or file system error.
 
 可能原因
 
-该错误码表示文件操作异常，可能原因是文件权限不足。具体原因可参考[BusinessError](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#businesserror)中的错误信息message。
+该错误码表示文件操作异常，可能原因是文件权限不足。具体原因可参考[BusinessError](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#businesserror)中的错误信息message以及[13400001错误的处理方法](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faq-basics-service-kit-20)。
 
 处理步骤
 
