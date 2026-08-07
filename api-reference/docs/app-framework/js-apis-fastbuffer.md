@@ -2,8 +2,8 @@
 title: "@ohos.fastbuffer (FastBuffer)"
 upstream_id: "harmonyos-references/js-apis-fastbuffer"
 catalog: "harmonyos-references"
-content_hash: "c82f140f3434"
-synced_at: "2026-07-28T16:40:57.222757"
+content_hash: "6c87a3448b43"
+synced_at: "2026-08-07T15:56:11.099205"
 ---
 
 # @ohos.fastbuffer (FastBuffer)
@@ -709,7 +709,7 @@ let buf = fastbuffer.from('buffer');
 // 获取entries迭代器
 let entryIterator = buf.entries();
 // 获取迭代器的第一个元素
-let nextEntry: IteratorResult<Object[]> = entryIterator.next();
+let nextEntry: IteratorResult<[number, number]> = entryIterator.next();
 // 遍历迭代器输出每个[key, value]对
 while (!nextEntry.done) {
   console.info('fastbuffer: ' + nextEntry.value);

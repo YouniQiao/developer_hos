@@ -2,8 +2,8 @@
 title: "ApplicationContext (应用上下文)"
 upstream_id: "harmonyos-references/js-apis-inner-application-applicationcontext"
 catalog: "harmonyos-references"
-content_hash: "e48fa89bb80e"
-synced_at: "2026-07-28T16:40:38.635554"
+content_hash: "619e7843293b"
+synced_at: "2026-08-07T15:55:53.761124"
 ---
 
 # ApplicationContext (应用上下文)
@@ -1497,8 +1497,6 @@ enableDelayedProcessExit(): Promise<void>
 
 起始版本：26.0.0
 
-元服务API：从API版本26.0.0开始，该接口支持在元服务中使用。
-
 模型约束：此接口仅可在Stage模型下使用。
 
 系统能力：SystemCapability.Ability.AbilityRuntime.Core
@@ -1551,8 +1549,6 @@ disableDelayedProcessExit(): Promise<void>
 
 起始版本：26.0.0
 
-元服务API：从API版本26.0.0开始，该接口支持在元服务中使用。
-
 模型约束：此接口仅可在Stage模型下使用。
 
 系统能力：SystemCapability.Ability.AbilityRuntime.Core
@@ -1602,8 +1598,6 @@ startSelfUIAbility(want: Want): Promise<void>
 当前进程延迟退出期间，在当前进程启动一个自身UIAbility，启动成功后，当前进程不再退出。
 
 起始版本：26.0.0
-
-元服务API：从API版本26.0.0开始，该接口支持在元服务中使用。
 
 模型约束：此接口仅可在Stage模型下使用。
 

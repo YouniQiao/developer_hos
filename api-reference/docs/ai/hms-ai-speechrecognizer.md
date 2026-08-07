@@ -2,8 +2,8 @@
 title: "speechRecognizer（语音识别）"
 upstream_id: "harmonyos-references/hms-ai-speechrecognizer"
 catalog: "harmonyos-references"
-content_hash: "f5c7a42ea3f7"
-synced_at: "2026-07-28T16:53:10.970538"
+content_hash: "c67dda2b8f81"
+synced_at: "2026-08-07T15:59:49.254789"
 ---
 
 # speechRecognizer（语音识别）
@@ -48,7 +48,7 @@ createEngine(createEngineParams: CreateEngineParams, callback: AsyncCallback<Spe
 | 1002200001 | Create engine failed. |
 | 1002200006 | The engine of SpeechRecognition is busy. |
 | 1002200008 | The engine of SpeechRecognition is being destroyed. |
-| 1002200009 | Internal Service Error. 适用版本：5.1.0(10)+ |
+| 1002200009 | Internal Service Error. 适用版本：5.1.0(18)+ |
 
 示例：
 
@@ -123,7 +123,7 @@ createEngine(createEngineParams: CreateEngineParams): Promise<SpeechRecognitionE
 | 1002200001 | Create engine failed. |
 | 1002200006 | The engine of SpeechRecognition is busy. |
 | 1002200008 | The engine of SpeechRecognition is being destroyed. |
-| 1002200009 | Internal Service Error. 适用版本：5.1.0(10)+ |
+| 1002200009 | Internal Service Error. 适用版本：5.1.0(18)+ |
 
 示例：
 
@@ -197,7 +197,7 @@ listLanguages(params: LanguageQuery, callback: AsyncCallback<Array<string>>): vo
 | --- | --- |
 | 401 | The parameter check failed. |
 | 1002200007 | The engine is not initialized. |
-| 1002200009 | Internal Service Error. 适用版本：5.1.0(10)+ |
+| 1002200009 | Internal Service Error. 适用版本：5.1.0(18)+ |
 
 示例：
 
@@ -265,7 +265,7 @@ listLanguages(params: LanguageQuery): Promise<Array<string>>
 | --- | --- |
 | 401 | The parameter check failed. |
 | 1002200007 | The engine is not initialized. |
-| 1002200009 | Internal Service Error. 适用版本：5.1.0(10)+ |
+| 1002200009 | Internal Service Error. 适用版本：5.1.0(18)+ |
 
 示例：
 

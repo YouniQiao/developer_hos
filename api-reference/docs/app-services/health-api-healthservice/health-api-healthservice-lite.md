@@ -2,8 +2,8 @@
 title: "healthService (运动健康联动服务)(Lite)"
 upstream_id: "harmonyos-references/health-api-healthservice-lite"
 catalog: "harmonyos-references"
-content_hash: "34060d8b61c1"
-synced_at: "2026-07-28T16:52:38.661457"
+content_hash: "0cdd1ce7465b"
+synced_at: "2026-08-07T15:59:29.103514"
 ---
 
 # healthService (运动健康联动服务)(Lite)
@@ -491,7 +491,7 @@ onData(listener: Callback<SampleReal[]>): void
 | [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. For the app, ensure that you have requested Health Service Kit, selected the product type, and enabled required data read and write permissions, and that the user has granted authorization. |
 | [1009104001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104001-联动已开启) | Sports service busy. Workout has already been started by another app. |
 | [1009104003](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104003-非法指令) | Invalid command. The API is called when workout is not started. |
-| [1009104999](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104999-通用错误码) | System internal error. |
+| [1009104999](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104999-通用错误码) | Internal system error. |
 
 示例：
 

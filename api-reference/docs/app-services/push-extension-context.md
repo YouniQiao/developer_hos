@@ -2,8 +2,8 @@
 title: "PushExtensionContext（推送扩展Context）"
 upstream_id: "harmonyos-references/push-extension-context"
 catalog: "harmonyos-references"
-content_hash: "12aa9360b8be"
-synced_at: "2026-07-09T01:01:37.541584"
+content_hash: "2ecd330472dc"
+synced_at: "2026-08-07T15:59:44.078828"
 ---
 
 # PushExtensionContext（推送扩展Context）
@@ -27,5 +27,7 @@ import { PushExtensionContext } from '@kit.PushKit';
 模型约束： 属性仅可在Stage模型下使用。
 
 系统能力： SystemCapability.Push.PushService
+
+设备行为差异： 对于5.1.0(18)以前版本，该属性在Phone、Tablet、PC/2in1中可正常使用，在其他设备类型中无效果。对于5.1.0(18)版本，该属性在Phone、Tablet、PC/2in1、Wearable中可正常使用，在其他设备类型中无效果。对于5.1.1(19)及之后版本，该属性在Phone、Tablet、PC/2in1、Wearable、TV中均可正常使用。
 
 起始版本： 4.0.0(10)

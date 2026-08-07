@@ -2,8 +2,8 @@
 title: "RiskControlEngine（星盾机密风控引擎）"
 upstream_id: "harmonyos-references/devicesecurity-riskcontrolengine-api"
 catalog: "harmonyos-references"
-content_hash: "643ab4f5ed5e"
-synced_at: "2026-07-28T16:50:25.192622"
+content_hash: "61cb34d3640c"
+synced_at: "2026-08-07T15:57:44.910126"
 ---
 
 # RiskControlEngine（星盾机密风控引擎）
@@ -105,7 +105,7 @@ type ValueType = number | boolean | string
 | --- | --- | --- | --- | --- |
 | result | string | 否 | 否 | 一个JSON Web Signature格式的字符串，使用Base64URL编码，如果发生异常或错误，则返回错误码。 |
 
-#### importRiskFactors
+#### riskControlEngine.importRiskFactors
 
 importRiskFactors(data: ImportData): Promise<void>
 
@@ -179,7 +179,7 @@ try {
 }
 ```
 
-#### getRiskControlResult
+#### riskControlEngine.getRiskControlResult
 
 getRiskControlResult(req: RiskControlDetectionRequest): Promise<RiskControlDetectionResponse>
 

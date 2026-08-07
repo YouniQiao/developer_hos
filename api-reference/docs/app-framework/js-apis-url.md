@@ -2,8 +2,8 @@
 title: "@ohos.url (URL字符串解析)"
 upstream_id: "harmonyos-references/js-apis-url"
 catalog: "harmonyos-references"
-content_hash: "d73559706835"
-synced_at: "2026-08-03T17:09:33.009188"
+content_hash: "2a4a25873a7f"
+synced_at: "2026-08-07T15:56:10.072628"
 ---
 
 # @ohos.url (URL字符串解析)
@@ -475,14 +475,12 @@ console.info(params.toString()); // Output 'fod=1&bard=2&fod=3'
 
 ![](./img/note_3.0-zh-cn.png) 在解析URL字符串时，如果入参中的port内容是当前protocol的默认端口，那么port将被解析为空字符串。默认端口为：
 
-| 协议 | 默认端口 |
-| --- | --- |
-| http: | 80 |
-| https: | 443 |
-| ftp: | 21 |
-| gopher: | 70 |
-| ws: | 80 |
-| wss: | 443 |
+- http: 80
+- https: 443
+- ftp: 21
+- gopher: 70
+- ws: 80
+- wss: 443
 
 示例：
 
@@ -530,7 +528,7 @@ URL的构造函数。与[parseURL](#parseurl9)方法功能相同，但parseURL�
 let baseUrl = 'https://username:password@host:8080';
 let rootPathUrl = new url.URL("/", baseUrl); // Output 'https://username:password@host:8080/';
 let absoluteUrl = new url.URL(baseUrl); // Output 'https://username:password@host:8080/';
-new url.URL('path/path1', b); // Output 'https://username:password@host:8080/path/path1';
+new url.URL('path/path1', absoluteUrl); // Output 'https://username:password@host:8080/path/path1';
 let relativePathUrl = new url.URL('/path/path1', absoluteUrl);  // Output 'https://username:password@host:8080/path/path1';
 new url.URL('/path/path1', relativePathUrl); // Output 'https://username:password@host:8080/path/path1';
 new url.URL('/path/path1', rootPathUrl); // Output 'https://username:password@host:8080/path/path1';

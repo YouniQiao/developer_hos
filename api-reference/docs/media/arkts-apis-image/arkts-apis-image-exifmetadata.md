@@ -2,8 +2,8 @@
 title: "Class (ExifMetadata)"
 upstream_id: "harmonyos-references/arkts-apis-image-exifmetadata"
 catalog: "harmonyos-references"
-content_hash: "fc3c570a42b1"
-synced_at: "2026-07-28T16:51:48.245120"
+content_hash: "c7059bb9945d"
+synced_at: "2026-08-07T15:58:51.673359"
 ---
 
 # Class (ExifMetadata)
@@ -12,7 +12,10 @@ ExifMetadata implements Metadata
 
 Exif（Exchangeable image file format）元数据。
 
-![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 23开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
+![](./img/note_3.0-zh-cn.png)
+
+- 本模块首批接口从API version 23开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
+- 应用通过[PhotoAccessHelper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-photoaccesshelper)查询媒体库图片，在读取gpsLatitude、gpsLongitude、gpsAltitude、gpsTimestamp等GPS相关属性前，应先声明并向用户申请[ohos.permission.MEDIA_LOCATION](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-all-user#ohospermissionmedia_location)权限。如果GPS相关属性返回全为0或为空，请先检查该权限是否已获授权，并确认原始图片是否包含GPS信息。
 
 #### 导入模块
 

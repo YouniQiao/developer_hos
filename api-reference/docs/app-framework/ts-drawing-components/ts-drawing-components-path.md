@@ -2,8 +2,8 @@
 title: "Path"
 upstream_id: "harmonyos-references/ts-drawing-components-path"
 catalog: "harmonyos-references"
-content_hash: "f3d753b0befe"
-synced_at: "2026-07-28T16:46:51.711010"
+content_hash: "447bd3a1780c"
+synced_at: "2026-08-07T15:56:37.212508"
 ---
 
 # Path
@@ -30,15 +30,13 @@ new Path(options?: PathOptions)
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
-模型约束： 从API version 18开始，使用PathOptions参数时，此接口仅可在Stage模型下使用。
-
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [PathOptions](#pathoptions18对象说明) | 否 | Path组件绘制属性的配置对象。 省略时不设置绘制属性，组件按默认尺寸显示。默认尺寸根据路径内容自动计算宽度和高度。 异常值undefined和null按照无效值处理，本次设置不生效。 |
+| options | [PathOptions](#pathoptions18对象说明) | 否 | Path组件绘制属性的配置对象。 省略时不设置绘制属性，组件按默认尺寸显示。默认尺寸根据路径内容自动计算宽度和高度。 异常值undefined和null按照无效值处理，本次设置不生效。 **说明：**从API version 18开始，使用PathOptions参数时需在Stage模型下使用。 |
 
 #### [h2]Path
 
@@ -50,15 +48,13 @@ Path(options?: PathOptions)
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
-模型约束： 从API version 18开始，使用PathOptions参数时，此接口仅可在Stage模型下使用。
-
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [PathOptions](#pathoptions18对象说明) | 否 | Path组件绘制属性的配置对象。 省略时不设置绘制属性，组件按默认尺寸显示。默认尺寸根据路径内容自动计算宽度和高度。 异常值undefined和null按照无效值处理，本次设置不生效。 |
+| options | [PathOptions](#pathoptions18对象说明) | 否 | Path组件绘制属性的配置对象。 省略时不设置绘制属性，组件按默认尺寸显示。默认尺寸根据路径内容自动计算宽度和高度。 异常值undefined和null按照无效值处理，本次设置不生效。 **说明：**从API version 18开始，使用PathOptions参数时需在Stage模型下使用。 |
 
 #### PathOptions18+对象说明
 
@@ -205,7 +201,7 @@ struct PathExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848896.png)
+ ![](./img/zh-cn_image_0000002698223007.png)
 
 #### [h2]示例2（使用不同参数类型绘制路径）
 
@@ -241,7 +237,7 @@ struct PathTypeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088327.png)
+ ![](./img/zh-cn_image_0000002698142917.png)
 
 #### [h2]示例3（使用attributeModifier动态设置Path组件的属性）
 
@@ -281,4 +277,4 @@ struct PathModifierDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928495.png)
+ ![](./img/zh-cn_image_0000002668303252.png)

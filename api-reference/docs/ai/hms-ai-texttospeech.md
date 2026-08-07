@@ -2,8 +2,8 @@
 title: "textToSpeech（文本转语音）"
 upstream_id: "harmonyos-references/hms-ai-texttospeech"
 catalog: "harmonyos-references"
-content_hash: "2cedccdec5e0"
-synced_at: "2026-07-28T16:53:10.665638"
+content_hash: "98f84e4a097f"
+synced_at: "2026-08-07T15:59:48.952302"
 ---
 
 # textToSpeech（文本转语音）
@@ -188,7 +188,7 @@ listVoices(queryParams: VoiceQuery): Promise<VoiceInfo[]>
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Core Speech Kit错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-corespeech)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -383,7 +383,7 @@ listVoices(params: VoiceQuery, callback: AsyncCallback<Array<VoiceInfo>>): void
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Core Speech Kit错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-corespeech)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -451,7 +451,7 @@ listVoices(params: VoiceQuery): Promise<Array<VoiceInfo>>
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Core Speech Kit错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-corespeech)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -1019,7 +1019,7 @@ onData?: OnDataCallback
 
 合成播报过程中回调此接口，返回请求ID，音频流信息，音频附加信息如格式、时长等。若需要返回音频流信息，请实现此接口。
 
-![](./img/note_3.0-zh-cn.png) 调用方在播放音频前需要按照sequence(#synthesisresponse)对音频流进行排序, 避免播放时音频流顺序错乱。
+![](./img/note_3.0-zh-cn.png) 调用方在播放音频前需要按照[sequence](#synthesisresponse)对音频流进行排序, 避免播放时音频流顺序错乱。
 
 元服务API： 从版本6.1.1(24)开始，该接口支持在元服务中使用。
 

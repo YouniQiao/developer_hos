@@ -2,8 +2,8 @@
 title: "Interface (AVSession)"
 upstream_id: "harmonyos-references/arkts-apis-avsession-avsession"
 catalog: "harmonyos-references"
-content_hash: "aa33bcb87f34"
-synced_at: "2026-07-28T16:51:37.033010"
+content_hash: "a683986e1cd8"
+synced_at: "2026-08-07T15:58:41.625028"
 ---
 
 # Interface (AVSession)
@@ -1401,7 +1401,7 @@ if (currentAVSession !== undefined) {
 
 setBackgroundPlayMode(mode: BackgroundPlayMode): Promise<void>
 
-设置后台播放模式。使用promise异步回调。
+设置后台播放模式。使用Promise异步回调。
 
 建议与应用内"是否支持后台播放开关"关联。如未设置，'audio'类型会话默认值为ENABLE_BACKGROUND_PLAY；'video'类型会话默认值为DISABLE_BACKGROUND_PLAY。
 

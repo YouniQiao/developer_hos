@@ -2,8 +2,8 @@
 title: "Context (Stage模型的上下文基类)"
 upstream_id: "harmonyos-references/js-apis-inner-application-context"
 catalog: "harmonyos-references"
-content_hash: "abc71aba69fe"
-synced_at: "2026-07-28T16:40:38.790092"
+content_hash: "7692fc04be09"
+synced_at: "2026-08-07T15:55:54.269007"
 ---
 
 # Context (Stage模型的上下文基类)
@@ -17,8 +17,8 @@ Context是Stage模型的上下文基类，主要用于访问特定应用程序�
 
 #### 不同类型Context的继承和持有关系
 
-- 不同类型Context的继承关系如下： ![](./img/zh-cn_image_0000002656008162.png)
-- 不同类型Context的持有关系如下： ![](./img/zh-cn_image_0000002655848242.png)
+- 不同类型Context的继承关系如下： ![](./img/zh-cn_image_0000002668302586.png)
+- 不同类型Context的持有关系如下： ![](./img/zh-cn_image_0000002668462466.png)
 
 ![](./img/note_3.0-zh-cn.png) [UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)是指UI实例上下文，用于关联窗口与UI页面。与本文档中的应用上下文Context无直接关联，不存在继承或持有关系。
 
@@ -42,7 +42,7 @@ Context提供了ability或application的上下文的能力，包括访问特定�
 | applicationInfo | [ApplicationInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-applicationinfo) | 否 | 否 | 当前应用程序的信息。 **元服务API**：从API version 11开始，该接口支持在元服务中使用。 |
 | cacheDir | string | 否 | 否 | 缓存目录，详情参考[应用沙箱目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)。 **元服务API**：从API version 11开始，该接口支持在元服务中使用。 |
 | tempDir | string | 否 | 否 | 临时目录，详情参考[应用沙箱目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)。 **元服务API**：从API version 11开始，该接口支持在元服务中使用。 |
-| resourceDir11+ | string | 否 | 否 | 资源目录。 **说明**：需要开发者手动在\\resource路径下创建resfile目录。创建的resfile目录仅支持以只读方式访问。 **元服务API**：从API version 11开始，该接口支持在元服务中使用。 |
+| resourceDir11+ | string | 否 | 否 | 资源目录。 **说明**：需要开发者手动在\\resources路径下创建resfile目录。创建的resfile目录仅支持以只读方式访问。 **元服务API**：从API version 11开始，该接口支持在元服务中使用。 |
 | filesDir | string | 否 | 否 | 文件目录，详情参考[应用沙箱目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)。 **元服务API**：从API version 11开始，该接口支持在元服务中使用。 |
 | databaseDir | string | 否 | 否 | 数据库目录，详情参考[应用沙箱目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)。 **元服务API**：从API version 11开始，该接口支持在元服务中使用。 |
 | preferencesDir | string | 否 | 否 | preferences目录，详情参考[应用沙箱目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)。 **元服务API**：从API version 11开始，该接口支持在元服务中使用。 |

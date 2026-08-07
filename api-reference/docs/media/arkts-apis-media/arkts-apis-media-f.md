@@ -2,8 +2,8 @@
 title: "Functions"
 upstream_id: "harmonyos-references/arkts-apis-media-f"
 catalog: "harmonyos-references"
-content_hash: "c9fbeafa7048"
-synced_at: "2026-07-28T16:51:55.679606"
+content_hash: "dd48f2d9cb83"
+synced_at: "2026-08-07T15:58:58.001315"
 ---
 
 # Functions
@@ -554,7 +554,7 @@ createMediaSourceWithUrl(url: string, headers?: Record<string, string>): MediaSo
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| url | string | 是 | - 流媒体预下载媒体来源url，支持的流媒体格式：HLS、HTTP-FLV、Dash、Https。 - 本地m3u8的fd路径。 |
+| url | string | 是 | - 流媒体预下载媒体来源url，支持的流媒体格式：HLS、HTTP-FLV、Dash、HTTPS。 - 本地m3u8的fd路径。 |
 | headers | Record | 否 | 支持流媒体预下载HttpHeader自定义。不传时为网络请求默认的HttpHeader。 |
 
 返回值：

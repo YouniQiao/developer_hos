@@ -2,15 +2,15 @@
 title: "@ohos.selectionInput.SelectionExtensionContext (划词扩展上下文)"
 upstream_id: "harmonyos-references/js-apis-selectioninput-selectionextensioncontext"
 catalog: "harmonyos-references"
-content_hash: "f16568980af9"
-synced_at: "2026-07-28T16:50:57.563528"
+content_hash: "de1f94b73a77"
+synced_at: "2026-08-07T15:58:10.319230"
 ---
 
 # @ohos.selectionInput.SelectionExtensionContext (划词扩展上下文)
 
 SelectionExtensionContext是[SelectionExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-selectioninput-selectionextensionability)的上下文，继承自[ExtensionContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-extensioncontext)。
 
-每个SelectionExtensionAbility组件实例化时，系统都会自动创建对应的SelectionExtensionContext。开发者可以通过SelectionExtensionContext拉起同应用内其他Ability。适用于在划词扩展场景中需要跳转至应用内其他Ability的情况，帮助用户在划词操作后快速获取与划词内容关联的功能或信息。
+每个SelectionExtensionAbility组件实例化时，系统都会自动创建对应的SelectionExtensionContext。开发者可以通过SelectionExtensionContext调用[startAbility](#startability)接口拉起同应用内其他Ability。适用于在划词扩展场景中需要跳转至应用内其他Ability的情况，帮助用户在划词操作后快速获取与划词内容关联的功能或信息。
 
 ![](./img/note_3.0-zh-cn.png)
 

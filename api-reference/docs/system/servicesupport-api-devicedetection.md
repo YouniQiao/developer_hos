@@ -2,23 +2,24 @@
 title: "deviceDetection (设备硬件一致性检测)"
 upstream_id: "harmonyos-references/servicesupport-api-devicedetection"
 catalog: "harmonyos-references"
-content_hash: "116d7b015200"
-synced_at: "2026-07-28T16:51:11.839037"
+content_hash: "124cb817df40"
+synced_at: "2026-08-07T15:58:21.855535"
 ---
 
 # deviceDetection (设备硬件一致性检测)
 
-本模块提供设备检测能力，包括获取设备硬件一致性校验结果。
+本模块提供终端设备核心部件的正品检测服务，包括屏幕、电池和主板的一致性检测。
 
 起始版本： 26.0.0
 
 #### 导入模块
 
 ```
+import { BusinessError } from "@kit.BasicServicesKit";
 import { deviceDetection } from "@kit.ServiceSupportKit";
 ```
 
-#### getDeviceComponentVerificationDetails
+#### deviceDetection.getDeviceComponentVerificationDetails
 
 getDeviceComponentVerificationDetails(): Promise<DeviceComponentVerificationResult>
 
@@ -53,6 +54,7 @@ getDeviceComponentVerificationDetails(): Promise<DeviceComponentVerificationResu
 示例：
 
 ```
+import { BusinessError } from "@kit.BasicServicesKit";
 import { deviceDetection } from "@kit.ServiceSupportKit";
 
 // 创建初始化结果对象
@@ -65,7 +67,7 @@ try {
 } catch (error) {
   // 捕获异常
   const err: BusinessError = error as BusinessError;
-  console.error('enter into getDeviceComponentVerificationDetails catch' + JSON.stringify(err));
+  console.error('enter into getDeviceComponentVerificationDetails catch, code is: ' + err.code + ' message is: ' + err.message);
 }
 ```
 
@@ -110,9 +112,9 @@ try {
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| MOTHERBOARD | MOTHERBOARD | 硬件类型：主板。 |
-| BATTERY | BATTERY | 硬件类型：电池。 |
-| SCREEN | SCREEN | 硬件类型：屏幕。 |
+| MOTHERBOARD | 'MOTHERBOARD' | 硬件类型：主板。 |
+| BATTERY | 'BATTERY' | 硬件类型：电池。 |
+| SCREEN | 'SCREEN' | 硬件类型：屏幕。 |
 
 #### ResultType
 

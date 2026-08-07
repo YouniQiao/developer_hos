@@ -2,8 +2,8 @@
 title: "gamePerformance（游戏场景感知）"
 upstream_id: "harmonyos-references/gameservice-gameperformance"
 catalog: "harmonyos-references"
-content_hash: "4e5275dbf670"
-synced_at: "2026-07-09T01:01:18.744219"
+content_hash: "eb66ee5ab420"
+synced_at: "2026-08-07T15:59:28.801423"
 ---
 
 # gamePerformance（游戏场景感知）
@@ -97,7 +97,7 @@ GPU性能信息类。
 
 | **名称** | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
-| bundleName | string | 否 | 否 | 游戏包名。字符长度范围：[1, 128]。 |
+| bundleName | string | 否 | 否 | 游戏包名。最大长度为128且不能为空。 |
 | appVersion | string | 否 | 否 | 游戏版本号。字符长度范围：[1, 64]。 |
 | engineType | number | 否 | 是 | 游戏引擎类型。 1：UNITY 2：UNREAL4 3：MESSIAH 4：COCOS 200：OTHERS |
 | engineVersion | string | 否 | 是 | 游戏引擎版本号。字符长度范围：[0, 64]。 |
@@ -345,7 +345,7 @@ updateGameInfo<T extends BaseGameInfo>(gameInfo: T): Promise<void>
 
 | **参数名** | **类型** | **必填** | **说明** |
 | --- | --- | --- | --- |
-| gameInfo | [BaseGameInfo](#basegameinfo) | 是 | 游戏基本信息。 |
+| gameInfo | T | 是 | 游戏基本信息，T为继承自[BaseGameInfo](#basegameinfo)的组件属性类型。 |
 
 返回值：
 

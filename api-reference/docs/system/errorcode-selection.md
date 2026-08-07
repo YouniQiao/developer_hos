@@ -2,19 +2,19 @@
 title: "划词服务错误码"
 upstream_id: "harmonyos-references/errorcode-selection"
 catalog: "harmonyos-references"
-content_hash: "abc75a8d0484"
-synced_at: "2026-07-28T16:51:02.290983"
+content_hash: "89c299f7e2c4"
+synced_at: "2026-08-07T15:58:14.739126"
 ---
 
 # 划词服务错误码
 
 ![](./img/note_3.0-zh-cn.png) 以下仅介绍本模块特有错误码，通用错误码请参考[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
-#### 33600001 划词服务异常
+#### 33600001 划词服务调用异常
 
 错误信息
 
-Selection service exception.
+Selection service invocation exception.
 
 错误描述
 
@@ -65,7 +65,7 @@ The application calling the API does not match the application selected in the s
 
 可能原因
 
-调用划词接口的应用不是用户在系统设置中选定的划词应用。
+调用划词服务接口的应用不是用户在系统设置中选定的划词应用。
 
 处理步骤
 

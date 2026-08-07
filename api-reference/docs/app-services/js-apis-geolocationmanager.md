@@ -2,8 +2,8 @@
 title: "@ohos.geoLocationManager (位置服务)"
 upstream_id: "harmonyos-references/js-apis-geolocationmanager"
 catalog: "harmonyos-references"
-content_hash: "b8d6ab29c3bb"
-synced_at: "2026-07-28T16:52:42.162117"
+content_hash: "abe2446a04e1"
+synced_at: "2026-08-07T15:59:32.773613"
 ---
 
 # @ohos.geoLocationManager (位置服务)
@@ -2957,8 +2957,8 @@ try {
     "additionSize": 0
   }
   let location2: geoLocationManager.Location = {
-    "latitude": 30.12,
-    "longitude": 120.11,
+    "latitude": 31.12,
+    "longitude": 121.11,
     "altitude": 0,
     "accuracy": 0,
     "speed": 0,

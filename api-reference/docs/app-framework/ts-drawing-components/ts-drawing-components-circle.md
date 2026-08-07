@@ -2,8 +2,8 @@
 title: "Circle"
 upstream_id: "harmonyos-references/ts-drawing-components-circle"
 catalog: "harmonyos-references"
-content_hash: "e01d808d2ec2"
-synced_at: "2026-07-28T16:46:41.637110"
+content_hash: "ae442d98c7e0"
+synced_at: "2026-08-07T15:56:36.388899"
 ---
 
 # Circle
@@ -75,7 +75,7 @@ Circle(value?: CircleOptions)
 
 #### [h2]stroke
 
-stroke(value: ResourceColor | ColorMetrics): CircleAttribute
+stroke(value: ResourceColor | ColorMetrics)
 
 设置边框颜色，支持使用[ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12)描述颜色，可进行HDR提亮。支持[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)动态设置属性。不设置时，默认边框颜色为[Color](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#color).Transparent，即没有边框。异常值undefined和null按照默认值处理，NaN和Infinity按照[Color](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#color).Black处理。
 
@@ -95,7 +95,7 @@ stroke(value: ResourceColor | ColorMetrics): CircleAttribute
 
 #### [h2]fill
 
-fill(value: ResourceColor | ColorMetrics): CircleAttribute
+fill(value: ResourceColor | ColorMetrics)
 
 设置填充区域的颜色，支持使用[ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12)描述颜色，可进行HDR提亮。支持[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)动态设置属性。不设置时，默认填充颜色为[Color](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#color).Black。异常值undefined、null、NaN和Infinity按照默认值处理。与通用属性foregroundColor同时设置时，后设置的属性生效。
 
@@ -140,7 +140,7 @@ struct CircleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008808.png)
+ ![](./img/zh-cn_image_0000002668463120.png)
 
 #### [h2]示例2（宽和高使用不同参数类型绘制圆）
 
@@ -163,7 +163,7 @@ struct CircleTypeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848888.png)
+ ![](./img/zh-cn_image_0000002698222999.png)
 
 #### [h2]示例3（使用attributeModifier动态设置Circle组件的属性）
 
@@ -200,7 +200,7 @@ struct CircleModifierDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088317.png)
+ ![](./img/zh-cn_image_0000002698142909.png)
 
 #### [h2]示例4（使用ColorMetrics设置HDR填充和边框颜色）
 
@@ -242,4 +242,4 @@ struct CircleHDRDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928487.png)
+ ![](./img/zh-cn_image_0000002668303244.png)

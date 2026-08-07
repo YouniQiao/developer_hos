@@ -2,8 +2,8 @@
 title: "Flex布局"
 upstream_id: "harmonyos-references/ts-universal-attributes-flex-layout"
 catalog: "harmonyos-references"
-content_hash: "bc0012c23c3c"
-synced_at: "2026-07-28T16:42:05.672728"
+content_hash: "4e0d63802773"
+synced_at: "2026-08-07T15:56:23.937822"
 ---
 
 # Flex布局
@@ -13,21 +13,17 @@ Flex布局提供灵活的组件排列和对齐能力，可以动态分配容器�
 ![](./img/note_3.0-zh-cn.png)
 
 - 从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
-- 仅[Flex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-flex)、[Column](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-column)、[Row](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-row)和[DynamicLayout](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-dynamiclayout)支持下述四种属性，[GridRow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-gridrow)仅支持设置[alignSelf](#alignself)。
-
-![](./img/note_3.0-zh-cn.png)
-
 - **flexBasis**：设置组件的基准尺寸，作为布局的初始参考值，优先级高于width/height。
 - **flexGrow**：定义组件在父容器有剩余空间时的扩展比例，剩余空间按各组件flexGrow比例分配。
 - **flexShrink**：定义组件在父容器空间不足时的压缩比例，超出的尺寸按各组件flexShrink比例分摊。
-
-flexBasis设定基准尺寸，flexGrow控制扩展行为，flexShrink控制压缩行为，三者可单独使用或组合使用。
+- flexBasis设定基准尺寸，flexGrow控制扩展行为，flexShrink控制压缩行为，三者可单独使用或组合使用。
+- 仅当父组件为[Flex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-flex)、[Column](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-column)、[Row](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-row)和[DynamicLayout](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-dynamiclayout)时设置下述四种属性生效，父组件为[GridRow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-gridrow)时设置[alignSelf](#alignself)生效。
 
 #### flexBasis
 
 flexBasis(value: number | string): T
 
-设置组件的基准尺寸。仅Flex、Column、Row和DynamicLayout容器支持此属性。设置后组件会以该基准尺寸作为初始尺寸参与布局计算。当父容器为Column、Row时，需设置主轴方向的尺寸。Column和Row在未设置主轴尺寸（width/height/size）时仍遵守默认布局行为，在主轴上自适应子组件尺寸，此时可能影响flexBasis的效果。
+设置组件的基准尺寸。仅作为Flex、Column、Row和DynamicLayout容器的子组件时支持设置此属性。设置后组件会以该基准尺寸作为初始尺寸参与布局计算。当父容器为Column、Row时，需设置主轴方向的尺寸。Column和Row在未设置主轴尺寸（width/height/size）时仍遵守默认布局行为，在主轴上自适应子组件尺寸，此时可能影响flexBasis的效果。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -51,7 +47,7 @@ flexBasis(value: number | string): T
 
 flexGrow(value: number): T
 
-设置组件在父容器的剩余空间所占比例。仅Flex、Column、Row和DynamicLayout容器支持此属性。设置后组件会根据比例扩展占据剩余空间。当父容器为Column、Row时，需设置主轴方向的尺寸。Column和Row在未设置主轴尺寸（width/height/size）时仍遵守默认布局行为，在主轴上自适应子组件尺寸，此时可能影响flexGrow的剩余空间分配效果。
+设置组件在父容器剩余空间中所占的比例。仅作为Flex、Column、Row和DynamicLayout容器的子组件时支持设置此属性。设置后组件会根据比例扩展占据父容器的剩余空间。当父容器为Column、Row时，需设置主轴方向的尺寸。Column和Row在未设置主轴尺寸（width/height/size）时仍遵守默认布局行为，在主轴上自适应子组件尺寸，此时可能影响flexGrow的剩余空间分配效果。设置该属性会触发二次布局，在对性能有严格要求的场景下建议使用[layoutWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#layoutweight)替代。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -75,7 +71,7 @@ flexGrow(value: number): T
 
 flexShrink(value: number): T
 
-设置父容器空间不足时，压缩尺寸分配给此属性所在组件的比例。仅Flex、Column、Row和DynamicLayout容器支持此属性。当父容器为Column、Row时，父容器需设置主轴方向的尺寸（即width/height/size），此时flexShrink才生效。Column和Row在未设置主轴尺寸（width/height/size）时仍遵守默认布局行为，在主轴上自适应子组件尺寸，此时flexShrink不生效。
+设置父容器空间不足时，压缩尺寸分配给此属性所在组件的比例。仅作为Flex、Column、Row和DynamicLayout容器的子组件时支持设置此属性。当父容器为Column、Row时，父容器需设置主轴方向的尺寸（即width/height/size），此时flexShrink才生效。Column和Row在未设置主轴尺寸（width/height/size）时仍遵守默认布局行为，在主轴上自适应子组件尺寸，此时flexShrink不生效。设置该属性会触发二次布局，在对性能有严格要求的场景下建议使用[layoutWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#layoutweight)替代。
 
 ![](./img/note_3.0-zh-cn.png) 使用[getInspectorByKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-component-id#getinspectorbykey9)获取flexShrink属性时，如果该节点未设置flexShrink属性，默认返回1（与Flex容器的默认值一致，与Column、Row容器的默认值0不同）。
 
@@ -211,4 +207,4 @@ struct FlexExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087783.png)
+ ![](./img/zh-cn_image_0000002698222461.png)

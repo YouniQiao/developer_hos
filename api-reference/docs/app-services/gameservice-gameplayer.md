@@ -2,8 +2,8 @@
 title: "gamePlayer（基础游戏服务）"
 upstream_id: "harmonyos-references/gameservice-gameplayer"
 catalog: "harmonyos-references"
-content_hash: "f2e999bbc865"
-synced_at: "2026-07-09T01:01:18.852391"
+content_hash: "97fcbf3eabe8"
+synced_at: "2026-08-07T15:59:28.236843"
 ---
 
 # gamePlayer（基础游戏服务）
@@ -259,7 +259,7 @@ import { gamePlayer } from '@kit.GameServiceKit';
 | CALLS_FREQUENT | 1002000021 | API调用过于频繁。 **起始版本：** 6.0.1(21) |
 | PAY_PRODUCT_INVALID | 1002000050 | 无效的商品信息。 **起始版本：** 6.0.1(21) |
 | PAY_PRODUCT_OWNED | 1002000051 | 由于已经拥有该商品，购买失败。 **起始版本：** 6.0.1(21) |
-| PAY_PRODUCT_NOT_OWNED | 1002000052 | 由于未拥有该商品，发货失败。 **起始版本：** 6.0.1(21) |
+| PAY_PRODUCT_NOT_OWNED | 1002000052 | 由于未支付该商品，发货失败。 **起始版本：** 6.0.1(21) |
 | PAY_PRODUCT_CONSUMED | 1002000053 | 此次购买已经完成发货，无需重复发货。 **起始版本：** 6.0.1(21) |
 | PAY_ACCOUNT_REGION_UNSUPPORTED | 1002000054 | 用户账号所在服务地不在IAP Kit支持结算的国家/地区中。 **起始版本：** 6.0.1(21) |
 | PAY_DEAL_REJECTED | 1002000056 | 用户交易被拒绝。 **起始版本：** 6.0.1(21) |
@@ -488,10 +488,10 @@ getLocalPlayer(context: common.UIAbilityContext): Promise<GSKLocalPlayer>
 | 1002000003 | The HUAWEI ID is not signed in or not authorized. |
 | 1002000004 | User cancels real name authentication or not real name. |
 | 1002000005 | The country or region of the signed-in Huawei ID does not support. |
-| 1002000006 | User is underage and has no playable time. |
-| 1002000011 | Agreement not agreed. |
-| 1002000014 | This interface is not available for this game. |
-| 1002000017 | Illegal application identity. |
+| 1002000006 | User is underage and has no playable time. 适用版本：5.0.0(12)+ |
+| 1002000011 | Agreement not agreed. 适用版本：5.0.0(12)+ |
+| 1002000014 | This interface is not available for this game. 适用版本：5.0.0(12)+ |
+| 1002000017 | Illegal application identity. 适用版本：5.0.0(12)+ |
 
 示例：
 
@@ -564,10 +564,10 @@ getLocalPlayer(context: common.UIAbilityContext, callback: AsyncCallback<GSKLoca
 | 1002000003 | The HUAWEI ID is not signed in or not authorized. |
 | 1002000004 | User cancels real name authentication or not real name. |
 | 1002000005 | The country or region of the signed-in Huawei ID does not support. |
-| 1002000006 | User is underage and has no playable time. |
-| 1002000011 | Agreement not agreed. |
-| 1002000014 | This interface is not available for this game. |
-| 1002000017 | Illegal application identity. |
+| 1002000006 | User is underage and has no playable time. 适用版本：5.0.0(12)+ |
+| 1002000011 | Agreement not agreed. 适用版本：5.0.0(12)+ |
+| 1002000014 | This interface is not available for this game. 适用版本：5.0.0(12)+ |
+| 1002000017 | Illegal application identity. 适用版本：5.0.0(12)+ |
 
 示例：
 
@@ -1128,7 +1128,7 @@ try {
 
 | **名称** | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
-| gameAppId | string | 否 | 否 | 小游戏APP ID。小游戏APP ID来源于开发者在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)中创建小游戏时自动生成的APP ID，具体请参见[为小游戏创建APP ID](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-minigame-0000002434138360#section16423184171915d)。 最大长度64个字符。 |
+| gameAppId | string | 否 | 否 | 小游戏APP ID。小游戏APP ID来源于开发者在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)中创建小游戏时自动生成的APP ID，具体请参见[为小游戏创建APP ID](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-minigame-0000002434138360#section16423184171915)。 最大长度64个字符。 |
 | extraData | string | 否 | 是 | 附加信息，要求JSON String格式，可以将额外需要传入的字段以key:value的形式设置在JSON String中，并通过该参数传入。例如： let extraData = "{"key1":"value1","key2":"value2"}"; |
 
 #### MiniGamePlayer

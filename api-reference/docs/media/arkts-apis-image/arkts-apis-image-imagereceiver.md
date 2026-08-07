@@ -2,8 +2,8 @@
 title: "Interface (ImageReceiver)"
 upstream_id: "harmonyos-references/arkts-apis-image-imagereceiver"
 catalog: "harmonyos-references"
-content_hash: "ad6c21392aed"
-synced_at: "2026-07-09T01:00:29.851167"
+content_hash: "16644272ebaf"
+synced_at: "2026-08-07T15:58:51.148336"
 ---
 
 # Interface (ImageReceiver)
@@ -51,7 +51,7 @@ getReceivingSurfaceId(callback: AsyncCallback<string>): void
 | --- | --- | --- | --- |
 | callback | AsyncCallback | 是 | 回调函数，当获取surface id成功，err为undefined，data为获取到的surface id；否则为错误对象。 |
 
-示例:
+示例：
 
 ```
 import { BusinessError } from '@kit.BasicServicesKit';
@@ -101,7 +101,7 @@ readLatestImage(callback: AsyncCallback<Image>): void
 
 从ImageReceiver读取最新的图片。使用callback异步回调。
 
-![](./img/caution_3.0-zh-cn.png) 此接口需要在[on](#on9)回调触发后调用，才能正常的接收到数据。且此接口返回的[Image](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-image)对象使用完毕后需要调用[release](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-image#release9)方法释放，释放后才可以继续接收新的数据。
+![](./img/caution_3.0-zh-cn.png) 此接口需要在[on](#on9)回调触发后调用，才能正常地接收到数据。且此接口返回的[Image](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-image)对象使用完毕后需要调用[release](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-image#release9)方法释放，释放后才可以继续接收新的数据。
 
 系统能力： SystemCapability.Multimedia.Image.ImageReceiver
 
@@ -127,6 +127,7 @@ async function ReadLatestImage(receiver : image.ImageReceiver) {
       imgComponent: image.Component) => {
       if (err || imgComponent === undefined) {
         console.error('Failed to getComponent.');
+        return;
       }
       if (imgComponent.byteBuffer) {
         // 处理二进制图像数据。
@@ -145,7 +146,7 @@ readLatestImage(): Promise<Image>
 
 从ImageReceiver读取最新的图片。使用Promise异步回调。
 
-![](./img/caution_3.0-zh-cn.png) 此接口需要在[on](#on9)回调触发后调用，才能正常的接收到数据。且此接口返回的[Image](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-image)对象使用完毕后需要调用[release](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-image#release9)方法释放，释放后才可以继续接收新的数据。
+![](./img/caution_3.0-zh-cn.png) 此接口需要在[on](#on9)回调触发后调用，才能正常地接收到数据。且此接口返回的[Image](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-image)对象使用完毕后需要调用[release](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-image#release9)方法释放，释放后才可以继续接收新的数据。
 
 系统能力： SystemCapability.Multimedia.Image.ImageReceiver
 
@@ -167,6 +168,7 @@ async function ReadLatestImage(receiver : image.ImageReceiver) {
       imgComponent: image.Component) => {
       if (err || imgComponent === undefined) {
         console.error('Failed to getComponent.');
+        return;
       }
       if (imgComponent.byteBuffer) {
         // 处理二进制图像数据。
@@ -187,7 +189,7 @@ readNextImage(callback: AsyncCallback<Image>): void
 
 从ImageReceiver读取下一张图片。使用callback异步回调。
 
-![](./img/caution_3.0-zh-cn.png) 此接口需要在[on](#on9)回调触发后调用，才能正常的接收到数据。且此接口返回的[Image](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-image)对象使用完毕后需要调用[release](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-image#release9)方法释放，释放后才可以继续接收新的数据。
+![](./img/caution_3.0-zh-cn.png) 此接口需要在[on](#on9)回调触发后调用，才能正常地接收到数据。且此接口返回的[Image](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-image)对象使用完毕后需要调用[release](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-image#release9)方法释放，释放后才可以继续接收新的数据。
 
 系统能力： SystemCapability.Multimedia.Image.ImageReceiver
 
@@ -213,6 +215,7 @@ async function ReadNextImage(receiver : image.ImageReceiver) {
       imgComponent: image.Component) => {
       if (err || imgComponent === undefined) {
         console.error('Failed to getComponent.');
+        return;
       }
       if (imgComponent.byteBuffer) {
         // 处理二进制图像数据。
@@ -231,7 +234,7 @@ readNextImage(): Promise<Image>
 
 从ImageReceiver读取下一张图片。使用Promise异步回调。
 
-![](./img/caution_3.0-zh-cn.png) 此接口需要在[on](#on9)回调触发后调用，才能正常的接收到数据。且此接口返回的[Image](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-image)对象使用完毕后需要调用[release](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-image#release9)方法释放，释放后才可以继续接收新的数据。
+![](./img/caution_3.0-zh-cn.png) 此接口需要在[on](#on9)回调触发后调用，才能正常地接收到数据。且此接口返回的[Image](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-image)对象使用完毕后需要调用[release](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-image#release9)方法释放，释放后才可以继续接收新的数据。
 
 系统能力： SystemCapability.Multimedia.Image.ImageReceiver
 
@@ -253,6 +256,7 @@ async function ReadNextImage(receiver : image.ImageReceiver) {
       imgComponent: image.Component) => {
       if (err || imgComponent === undefined) {
         console.error('Failed to getComponent.');
+        return;
       }
       if (imgComponent.byteBuffer) {
         // 处理二进制图像数据。

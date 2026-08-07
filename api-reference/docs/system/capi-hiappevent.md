@@ -2,8 +2,8 @@
 title: "HiAppEvent"
 upstream_id: "harmonyos-references/capi-hiappevent"
 catalog: "harmonyos-references"
-content_hash: "bdf6e34a4ac9"
-synced_at: "2026-07-09T01:00:03.173455"
+content_hash: "cc7853a12bee"
+synced_at: "2026-08-07T15:58:30.249817"
 ---
 
 # HiAppEvent
@@ -11,6 +11,8 @@ synced_at: "2026-07-09T01:00:03.173455"
 #### 概述
 
 HiAppEvent模块提供应用事件打点功能。记录应用运行过程中上报的故障事件、统计事件、安全事件和用户行为事件。基于事件信息，开发者可以分析应用的运行状态。
+
+系统能力： SystemCapability.HiviewDFX.HiAppEvent
 
 起始版本： 8
 

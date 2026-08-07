@@ -2,15 +2,15 @@
 title: "USB服务错误码"
 upstream_id: "harmonyos-references/errorcode-usb"
 catalog: "harmonyos-references"
-content_hash: "65cdebdecb82"
-synced_at: "2026-07-09T00:59:44.749724"
+content_hash: "509c1765f13e"
+synced_at: "2026-08-07T15:58:14.066604"
 ---
 
 # USB服务错误码
 
 ![](./img/note_3.0-zh-cn.png) 以下仅介绍本模块特有错误码，通用错误码请参考[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
-#### 14400001 连接USB设备被拒绝
+#### 14400001 USB设备访问权限被拒绝
 
 错误信息
 
@@ -18,7 +18,7 @@ Access right denied. Call requestRight to get the USBDevicePipe access right fir
 
 错误描述
 
-当调用USB模块部分接口时，如果没有相关权限，会报此错误码。
+当调用USB模块部分接口时，如果没有相关权限，需先调用requestRight方法申请权限，会报此错误码。
 
 可能原因
 
@@ -38,7 +38,7 @@ Service exception. Possible causes: No accessory is plugged in.
 
 服务异常。
 
-可能原因：
+可能原因
 
 没有配件插入。
 
@@ -54,7 +54,7 @@ Database operation exception.
 
 错误描述
 
-数据库操作异常。
+数据库操作异常，可能由于数据库读写冲突或资源未正确释放导致。
 
 处理步骤
 
@@ -119,7 +119,7 @@ Resource busy. Possible causes: 1. The transfer has already been submitted. 2. T
 
 处理步骤
 
-检查[usbManager.claimInterface](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-usbmanager#usbmanagerclaiminterface)接口是否调用成功。
+1. 若传输任务已提交，等待当前传输完成或取消后再重新操作。
 
 #### 14400008 没有设备(连接已断开)
 
@@ -157,7 +157,7 @@ Insufficient memory. Possible causes: 1. Memory allocation failed.
 
 错误信息
 
-Other USB error. Possible causes:Unrecognized discard error code.
+Other USB error. Possible causes: Unrecognized discard error code.
 
 错误描述
 
@@ -165,7 +165,7 @@ Other USB error. Possible causes:Unrecognized discard error code.
 
 处理步骤
 
-查阅设备相关资料，尝试重新操作。
+查阅USB设备及API参考文档，重新执行触发错误的操作。
 
 #### 14400011 未找到正在进行的传输
 
@@ -193,7 +193,7 @@ I/O通道异常，实际读/写操作失败。
 
 处理步骤
 
-尝试重新操作。
+检查USB设备连接状态和I/O通道是否正常，确认无误后重新执行读/写操作；如持续出现I/O错误，请检查传输参数配置是否正确。
 
 #### 14400013 参数合法性检查失败
 
@@ -230,7 +230,7 @@ Serial port management exception.
 
 处理步骤
 
-检查是否连接设备，重新通过串口列表获取端口号。
+排查程序异常原因，重新启动服务后，通过串口列表获取端口号。
 
 #### 31400002 没有串口设备访问权限
 
@@ -268,7 +268,7 @@ PortId does not exist.
 
 插拔设备，再次尝试打开。
 
-#### 31400004 端口正在被其他应用程序使用
+#### 31400004 串口设备被占用
 
 错误信息
 
@@ -280,7 +280,7 @@ The serial port device is occupied.
 
 可能原因
 
-重复打开串口设备。
+串口设备被其他应用程序占用。
 
 处理步骤
 
@@ -322,15 +322,15 @@ Data transfer timed out.
 
 请检查对端设备是否发起数据传输。
 
-#### 31400007 IO异常
+#### 31400007 I/O异常
 
 错误信息
 
-IO exception. Possible causes: 1. The transfer was canceled. 2. The device offered more data than allowed.
+I/O exception. Possible causes: 1. The transfer was canceled. 2. The device offered more data than allowed.
 
 错误描述
 
-IO异常。
+I/O异常。
 
 可能原因
 
@@ -339,4 +339,5 @@ IO异常。
 
 处理步骤
 
-设置符合传输场景要求的缓冲区大小后，重新启动传输任务。
+1. 检查传输任务是否被异常取消，排查取消原因后重新发起传输。
+2. 设置符合传输场景要求的缓冲区大小后，重新启动传输任务。

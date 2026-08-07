@@ -2,8 +2,8 @@
 title: "RemoteLocationExtensionAbility（定位扩展Ability）"
 upstream_id: "harmonyos-references/remote-location-ability"
 catalog: "harmonyos-references"
-content_hash: "646e97bad922"
-synced_at: "2026-08-03T17:12:39.208893"
+content_hash: "573d66bd09ad"
+synced_at: "2026-08-07T15:59:44.135441"
 ---
 
 # RemoteLocationExtensionAbility（定位扩展Ability）
@@ -42,6 +42,8 @@ import { RemoteLocationExtensionAbility } from '@kit.PushKit';
 
 系统能力： SystemCapability.Push.PushService
 
+设备行为差异： 该属性在Phone、Tablet、PC/2in1中可正常使用，在其他设备类型中无效果。
+
 起始版本： 4.1.0(11)
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
@@ -57,6 +59,8 @@ onReceiveMessage(payload: pushCommon.PushPayload): Promise<void>
 模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.Push.PushService
+
+设备行为差异： 该接口在Phone、Tablet、PC/2in1中可正常调用，在其他设备类型中无效果。
 
 起始版本： 4.1.0(11)
 
@@ -126,6 +130,8 @@ onDestroy(): void
 
 系统能力： SystemCapability.Push.PushService
 
+设备行为差异： 该接口在Phone、Tablet、PC/2in1中可正常调用，在其他设备类型中无效果。
+
 起始版本： 4.1.0(11)
 
 示例：
@@ -169,6 +175,4 @@ RemoteLocationExtensionAbility不支持以下模块的引用。
 | --- | --- |
 | Notification Kit | [@ohos.notification (Notification模块)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notification) [@ohos.notificationManager (NotificationManager模块)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationmanager) |
 | Form Kit | [@ohos.app.form.formProvider (formProvider)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formprovider) [@ohos.app.form.formInfo (formInfo)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-forminfo) [@ohos.app.form.formBindingData (卡片数据绑定类)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formbindingdata) [@ohos.app.form.FormExtensionAbility (FormExtensionAbility)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formextensionability) [@ohos.application.formBindingData (卡片数据绑定类)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-application-formbindingdata) [@ohos.application.formInfo (formInfo)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-application-forminfo) [@ohos.application.formProvider (formProvider)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-application-formprovider) |
-| ArkUI | [@ohos.prompt (弹窗)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-prompt) [@ohos.promptAction (弹窗)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction) [@ohos.window (窗口)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-window) |
-| Live View Kit | [core.liveview.liveViewManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-liveviewmanager) |
 | Call Service Kit | [telephony.voipCall](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/call-voipcall) |

@@ -2,8 +2,8 @@
 title: "@ohos.util.LinkedList (线性容器LinkedList)"
 upstream_id: "harmonyos-references/js-apis-linkedlist"
 catalog: "harmonyos-references"
-content_hash: "3d966b9848af"
-synced_at: "2026-07-28T16:40:57.791512"
+content_hash: "47b554067ebf"
+synced_at: "2026-08-07T15:56:11.232238"
 ---
 
 # @ohos.util.LinkedList (线性容器LinkedList)
@@ -835,7 +835,7 @@ getFirst(): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回对应元素，如果元素为undefined则返回undefined，为null则返回null。 |
+| T | 返回对应元素，若元素为空则返回undefined。 |
 
 错误码：
 

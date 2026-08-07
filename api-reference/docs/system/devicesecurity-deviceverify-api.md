@@ -2,8 +2,8 @@
 title: "DeviceVerify（应用设备状态检测）"
 upstream_id: "harmonyos-references/devicesecurity-deviceverify-api"
 catalog: "harmonyos-references"
-content_hash: "8c6a6af6750a"
-synced_at: "2026-07-28T16:50:24.776207"
+content_hash: "89b4812f4bf2"
+synced_at: "2026-08-07T15:57:44.755233"
 ---
 
 # DeviceVerify（应用设备状态检测）
@@ -18,7 +18,7 @@ synced_at: "2026-07-28T16:50:24.776207"
 import { deviceCertificate } from '@kit.DeviceSecurityKit';
 ```
 
-#### getDeviceToken
+#### deviceCertificate.getDeviceToken
 
 getDeviceToken(): Promise<string>
 
@@ -47,7 +47,7 @@ getDeviceToken(): Promise<string>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-deviceverify#section201-权限校验失败) | has no permission. |
-| [1003300005](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-deviceverify#section1003300005-内部异常) | internal error. |
+| [1003300005](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-deviceverify#section1003300005-内部异常) | internal error. Possible causes: 1. IPC communication failed; 2. Memory operation error; 3. Access device certificate failed. |
 | [1003300006](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-deviceverify#section1003300006-访问云端服务器异常) | access cloud server fail. |
 
 示例：

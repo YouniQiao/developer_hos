@@ -2,8 +2,8 @@
 title: "Interfaces (其他)"
 upstream_id: "harmonyos-references/arkts-apis-camera-i"
 catalog: "harmonyos-references"
-content_hash: "3d5d2a88784a"
-synced_at: "2026-07-28T16:51:42.215693"
+content_hash: "3d2b26610157"
+synced_at: "2026-08-07T15:58:46.948360"
 ---
 
 # Interfaces (其他)
@@ -271,7 +271,7 @@ synced_at: "2026-07-28T16:51:42.215693"
 
 实际预览流的宽高指的是相机输出流的分辨率，请参考[profile](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-i#profile)中的size。
 
-预览流的数据获取请参考[双路预览(ArkTs)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-dual-channel-preview)。
+预览流的数据获取请参考[双路预览(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-dual-channel-preview)。
 
 元服务API： 从API version 19开始，该接口支持在元服务中使用。
 

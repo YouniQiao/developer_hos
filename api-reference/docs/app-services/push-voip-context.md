@@ -2,8 +2,8 @@
 title: "VoIPExtensionContext（应用内通话消息扩展Context）（废弃）"
 upstream_id: "harmonyos-references/push-voip-context"
 catalog: "harmonyos-references"
-content_hash: "a83c7c191e07"
-synced_at: "2026-07-09T01:01:37.542978"
+content_hash: "0db242e347e8"
+synced_at: "2026-08-07T15:59:43.964860"
 ---
 
 # VoIPExtensionContext（应用内通话消息扩展Context）（废弃）
@@ -29,6 +29,8 @@ import { VoIPExtensionContext } from '@kit.PushKit';
 模型约束： 属性仅可在Stage模型下使用。
 
 系统能力： SystemCapability.Push.PushService
+
+设备行为差异： 对于6.1.0(23)以前版本，该属性在Phone、Tablet中可正常使用，在其他设备类型中无效果。对于6.1.0(23)及之后版本，该属性在Phone、Tablet、PC/2in1中可正常使用，在其他设备类型中无效果。
 
 起始版本： 4.1.0(11)
 

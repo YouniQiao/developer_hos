@@ -2,8 +2,8 @@
 title: "@ohos.app.ability.AbilityConstant (Ability相关常量)"
 upstream_id: "harmonyos-references/js-apis-app-ability-abilityconstant"
 catalog: "harmonyos-references"
-content_hash: "5f556f827461"
-synced_at: "2026-07-28T16:40:32.118474"
+content_hash: "f5d3b4e3bc96"
+synced_at: "2026-08-07T15:55:48.512194"
 ---
 
 # @ohos.app.ability.AbilityConstant (Ability相关常量)
@@ -156,7 +156,7 @@ exitSubReason取值的含义如下：
 - 3005：Kernel锁异常清理。
 - 3006：省电模式清理。
 - 3007：模块高耗电异常清理。
-- 3030：应急模式、超级省电模式或睡眠模式的清理，具体错误原因可通过[LaunchParam.lastExitMessage](#launchparam)区分。
+- 3042：应急模式或超级省电模式清理，具体错误原因可通过[LaunchParam.lastExitMessage](#launchparam)区分。
 
 [LastExitReason](#lastexitreason)为RESOURCE_CONTROL时：
 
@@ -276,7 +276,7 @@ export default class MyAbility extends UIAbility {
 | WINDOW_MODE_FULLSCREEN | 1 | 全屏模式。仅在2in1和Tablet设备上生效。 |
 | WINDOW_MODE_SPLIT_PRIMARY | 100 | 支持应用内拉起Ability时设置为分屏，左侧分屏。仅在Tablet设备、PC/2in1设备，以及支持横屏桌面且处于展开状态的折叠屏设备上生效。 |
 | WINDOW_MODE_SPLIT_SECONDARY | 101 | 支持应用内拉起Ability时设置为分屏，右侧分屏。仅在Tablet设备、PC/2in1设备，以及支持横屏桌面且处于展开状态的折叠屏设备上生效。 |
-| WINDOW_MODE_SPLIT | 105 | 支持应用内拉起Ability时设置为分屏，新增窗口默认显示在焦点窗口右侧。仅在折叠屏和Tablet设备上生效。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
+| WINDOW_MODE_SPLIT | 105 | 支持应用内拉起Ability时设置为分屏，新增窗口默认显示在焦点窗口右侧。仅在折叠屏和Tablet设备上生效。 **起始版本：** 26.0.0 |
 
 示例：
 
@@ -424,7 +424,7 @@ export default class MyAbility extends UIAbility {
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| TERMINATE_IMMEDIATELY | 0 | 表示立即执行结束动作，默认值。 |
+| TERMINATE_IMMEDIATELY | 0 | 表示立即执行结束动作。 |
 | CANCEL | 1 | 表示取消结束动作。 |
 
 示例：

@@ -2,8 +2,8 @@
 title: "@ohos.util.stream (数据流基类stream)"
 upstream_id: "harmonyos-references/js-apis-stream"
 catalog: "harmonyos-references"
-content_hash: "b2373a0672fd"
-synced_at: "2026-08-03T17:09:33.687181"
+content_hash: "dbe4ce3e70f5"
+synced_at: "2026-08-07T15:56:11.481974"
 ---
 
 # @ohos.util.stream (数据流基类stream)
@@ -112,7 +112,7 @@ writableStream.write("test", "utf8");
 
 end(chunk?: string | Uint8Array, encoding?: string, callback?: Function): Writable
 
-结束可写流的写入操作。如果属性writableCorked的值大于0，会置零该值并输出缓冲区剩余数据。如果传入chunk参数且不为空值时，则根据实际运行情况，通过write或者doWrite将其作为最后一块数据写入。其中通过doWrite写入时，encoding参数的合法性检查依赖doWrite。end单独使用（不使用write）并传入chunk参数的情况下，必然通过doWrite写入。使用callback异步回调。
+结束可写流的写入操作。如果属性writableCorked的值大于0，会将该属性的值置0，并输出缓冲区剩余数据。如果传入chunk参数且不为空值时，则根据实际运行情况，通过write或者doWrite将其作为最后一块数据写入。其中通过doWrite写入时，encoding参数的合法性检查依赖doWrite。end单独使用（不使用write）并传入chunk参数的情况下，必然通过doWrite写入。使用callback异步回调。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1125,7 +1125,7 @@ console.info("duplexStream result", result); // duplexStream result true
 
 end(chunk?: string | Uint8Array, encoding?: string, callback?: Function): Writable
 
-结束双工流的写入操作。如果属性writableCorked的值大于0，会置零该值并输出缓冲区剩余数据。如果传入chunk参数，则根据实际运行情况，通过write或者doWrite将其作为最后一块数据写入。其中通过doWrite写入时，encoding参数的合法性检查依赖doWrite。end单独使用（不使用write）并传入chunk参数的情况下，必然通过doWrite写入。使用callback异步回调。
+结束双工流的写入操作。如果属性writableCorked的值大于0，会将该属性的值置0，并输出缓冲区剩余数据。如果传入chunk参数，则根据实际运行情况，通过write或者doWrite将其作为最后一块数据写入。其中通过doWrite写入时，encoding参数的合法性检查依赖doWrite。end单独使用（不使用write）并传入chunk参数的情况下，必然通过doWrite写入。使用callback异步回调。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 

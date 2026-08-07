@@ -2,8 +2,8 @@
 title: "@ohos.xml (XML解析与生成)"
 upstream_id: "harmonyos-references/js-apis-xml"
 catalog: "harmonyos-references"
-content_hash: "7aeebb068dcc"
-synced_at: "2026-08-03T17:09:33.959752"
+content_hash: "1ab81be93aef"
+synced_at: "2026-08-07T15:56:11.583844"
 ---
 
 # @ohos.xml (XML解析与生成)
@@ -305,7 +305,7 @@ import { util } from '@kit.ArkTS';
 
 let arrayBuffer = new ArrayBuffer(2048);
 let thatSer = new xml.XmlSerializer(arrayBuffer);
-thatSer.setCDATA('root SYSTEM')
+thatSer.setCDATA('root SYSTEM');
 let uint8 = new Uint8Array(arrayBuffer);
 let result = util.TextDecoder.create().decodeToString(uint8);
 console.info(result); // <![CDATA[root SYSTEM]]>

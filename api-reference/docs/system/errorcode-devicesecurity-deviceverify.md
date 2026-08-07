@@ -2,8 +2,8 @@
 title: "DeviceVerify（应用设备状态检测）"
 upstream_id: "harmonyos-references/errorcode-devicesecurity-deviceverify"
 catalog: "harmonyos-references"
-content_hash: "55412be6bf6e"
-synced_at: "2026-07-09T00:59:15.215393"
+content_hash: "81094de49d27"
+synced_at: "2026-08-07T15:57:45.434918"
 ---
 
 # DeviceVerify（应用设备状态检测）
@@ -33,7 +33,7 @@ has no permission.
 
 错误信息
 
-internal error.
+internal error. Possible causes: 1. IPC communication failed; 2. Memory operation error; 3. Access device certificate failed.
 
 错误描述
 

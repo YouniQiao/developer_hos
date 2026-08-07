@@ -2,8 +2,8 @@
 title: "Interface (AudioManager)"
 upstream_id: "harmonyos-references/arkts-apis-audio-audiomanager"
 catalog: "harmonyos-references"
-content_hash: "3b58ba888f0a"
-synced_at: "2026-07-28T16:51:25.703663"
+content_hash: "7311d4001b6d"
+synced_at: "2026-08-07T15:58:33.622762"
 ---
 
 # Interface (AudioManager)
@@ -671,7 +671,7 @@ getMinVolume(volumeType: AudioVolumeType): Promise<number>
 
 ```
 audioManager.getMinVolume(audio.AudioVolumeType.MEDIA).then((value: number) => {
-  console.info(`Promised returned to indicate that the minimum volume is obtained. ${value}`);
+  console.info(`Promise returned to indicate that the minimum volume is obtained. ${value}`);
 });
 ```
 
@@ -732,7 +732,7 @@ getMaxVolume(volumeType: AudioVolumeType): Promise<number>
 
 ```
 audioManager.getMaxVolume(audio.AudioVolumeType.MEDIA).then((data: number) => {
-  console.info('Promised returned to indicate that the maximum volume is obtained.');
+  console.info('Promise returned to indicate that the maximum volume is obtained.');
 });
 ```
 

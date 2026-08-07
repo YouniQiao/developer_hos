@@ -2,8 +2,8 @@
 title: "@hms.security.confidentialSpace (机密空间服务)"
 upstream_id: "harmonyos-references/confidentialspace-confidentialspace"
 catalog: "harmonyos-references"
-content_hash: "7f6e057349c2"
-synced_at: "2026-07-28T16:50:19.664965"
+content_hash: "7247ddbf229e"
+synced_at: "2026-08-07T15:57:42.377942"
 ---
 
 # @hms.security.confidentialSpace (机密空间服务)
@@ -30,11 +30,23 @@ import { confidentialSpace } from '@kit.ConfidentialSpaceKit';
 
 | **名称** | **类型** | **只读** | **可选** | **说明** |
 | --- | --- | --- | --- | --- |
-| dataAppErrorCode | number | 是 | 否 | 数据应用产生的原始错误码。 |
+| dataAppErrorCode | number | 是 | 否 | 数据应用产生的原始错误码。取值应为[1, 32]内的整数。 |
 
 #### DataAppHandle
 
 数据应用句柄，表示一个数据应用实例。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Security.ConfidentialSpace
+
+#### [h2]constructor
+
+private constructor()
+
+DataAppHandle仅提供私有构造函数，不能直接实例化。创建本类对象请参见[runApp](#confidentialspacerunapp)。
 
 起始版本： 26.0.0
 
@@ -69,7 +81,7 @@ try {
   hilog.error(0x0000, TAG, `Failed to run app. code=${e.code}, message=${e.message}`);
   return;
 }
-// ..
+// ...
 handle.stop();
 ```
 

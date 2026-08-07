@@ -2,8 +2,8 @@
 title: "PushExtensionAbility（推送扩展Ability）"
 upstream_id: "harmonyos-references/push-extension-ability"
 catalog: "harmonyos-references"
-content_hash: "14378cc8562e"
-synced_at: "2026-08-03T17:12:38.864423"
+content_hash: "53a0b967d637"
+synced_at: "2026-08-07T15:59:44.054404"
 ---
 
 # PushExtensionAbility（推送扩展Ability）
@@ -42,6 +42,8 @@ import { PushExtensionAbility } from '@kit.PushKit';
 
 系统能力： SystemCapability.Push.PushService
 
+设备行为差异： 对于5.1.0(18)以前版本，该属性在Phone、Tablet、PC/2in1中可正常使用，在其他设备类型中无效果。对于5.1.0(18)版本，该属性在Phone、Tablet、PC/2in1、Wearable中可正常使用，在其他设备类型中无效果。对于5.1.1(19)及之后版本，该属性在Phone、Tablet、PC/2in1、Wearable、TV中均可正常使用。
+
 起始版本： 4.0.0(10)
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
@@ -57,6 +59,8 @@ onReceiveMessage(payload: pushCommon.PushPayload): void
 模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.Push.PushService
+
+设备行为差异： 对于5.1.0(18)以前版本，该接口在Phone、Tablet、PC/2in1中可正常使用，在其他设备类型中无效果。对于5.1.0(18)版本，该接口在Phone、Tablet、PC/2in1、Wearable中可正常使用，在其他设备类型中无效果。对于5.1.1(19)及之后版本，该接口在Phone、Tablet、PC/2in1、Wearable、TV中均可正常使用。
 
 起始版本： 4.0.0(10)
 
@@ -109,6 +113,8 @@ onDestroy(): void
 模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.Push.PushService
+
+设备行为差异： 对于5.1.0(18)以前版本，该接口在Phone、Tablet、PC/2in1中可正常使用，在其他设备类型中无效果。对于5.1.0(18)版本，该接口在Phone、Tablet、PC/2in1、Wearable中可正常使用，在其他设备类型中无效果。对于5.1.1(19)及之后版本，该接口在Phone、Tablet、PC/2in1、Wearable、TV中均可正常使用。
 
 起始版本： 4.0.0(10)
 

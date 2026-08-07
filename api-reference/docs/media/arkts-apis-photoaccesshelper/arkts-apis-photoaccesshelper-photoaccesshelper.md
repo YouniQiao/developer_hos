@@ -2,8 +2,8 @@
 title: "Interface (PhotoAccessHelper)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-photoaccesshelper"
 catalog: "harmonyos-references"
-content_hash: "52f1c1252fb5"
-synced_at: "2026-07-28T16:52:04.975943"
+content_hash: "4ee64166988d"
+synced_at: "2026-08-07T15:59:05.217191"
 ---
 
 # Interface (PhotoAccessHelper)
@@ -1274,7 +1274,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 
 requestPhotoUrisReadPermissionEx(srcFileUris: Array<string>): Promise<RequestReadPermissionResult>
 
-应用调用接口为未授权的URI授权。使用promise异步回调。
+应用调用接口为未授权的URI授权。使用Promise异步回调。
 
 返回授权结果，其中包含已创建并授予保存权限的URI列表以及无效的URI列表。
 

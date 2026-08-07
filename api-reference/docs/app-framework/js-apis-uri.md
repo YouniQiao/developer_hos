@@ -2,8 +2,8 @@
 title: "@ohos.uri (URI字符串解析)"
 upstream_id: "harmonyos-references/js-apis-uri"
 catalog: "harmonyos-references"
-content_hash: "80a84271ecf1"
-synced_at: "2026-08-03T17:09:32.871621"
+content_hash: "5c14b4a55d04"
+synced_at: "2026-08-07T15:56:10.042067"
 ---
 
 # @ohos.uri (URI字符串解析)
@@ -105,7 +105,7 @@ console.info(uriObj4.query); // foo=1&bar=2
 const uriObj5 = new uri.URI('dataability:///com.example.DataAbility');
 console.info(uriObj5.host); // null
 console.info(uriObj5.fragment); // null
-console.info(uriObj5.path); // /com.example.DataAbility:
+console.info(uriObj5.path); // /com.example.DataAbility
 console.info(uriObj5.scheme); // dataability
 console.info(uriObj5.userInfo); // null
 console.info(uriObj5.port); // -1

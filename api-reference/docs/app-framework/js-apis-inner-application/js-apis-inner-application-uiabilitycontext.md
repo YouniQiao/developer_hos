@@ -2,8 +2,8 @@
 title: "UIAbilityContext"
 upstream_id: "harmonyos-references/js-apis-inner-application-uiabilitycontext"
 catalog: "harmonyos-references"
-content_hash: "90c09497e8ff"
-synced_at: "2026-08-04T17:00:37.379675"
+content_hash: "8cf846dd06e2"
+synced_at: "2026-08-07T15:55:55.408117"
 ---
 
 # UIAbilityContext
@@ -3695,7 +3695,7 @@ startSelf(): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 801 | Capability not supported, because starting self to foreground from background is not supported in current devive or current UIAbility is a non-native UIAbility. |
+| 801 | Capability not supported, because starting self to foreground from background is not supported in current device or current UIAbility is a non-native UIAbility. |
 | 16000011 | The context does not exist. |
 | 16000050 | Internal error. Connect to system service failed. |
 | 16000082 | The UIAbility is being started. The UIAbility has not completed onCreate or onWindowStageCreate. |

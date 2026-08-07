@@ -2,8 +2,8 @@
 title: "ICU4C"
 upstream_id: "harmonyos-references/icu4c"
 catalog: "harmonyos-references"
-content_hash: "420d76cb1d28"
-synced_at: "2026-07-09T01:01:48.805686"
+content_hash: "c0d51fcd4dc0"
+synced_at: "2026-08-07T15:59:55.514915"
 ---
 
 # ICU4C
@@ -38,7 +38,7 @@ synced_at: "2026-07-09T01:01:48.805686"
 ```
 #include <unicode/uloc.h>
 ```
- 其次在CMakeLists.txt中添加以下动态库:
+ 其次在CMakeLists.txt中添加以下动态库：
 
 ```
 libicu.so

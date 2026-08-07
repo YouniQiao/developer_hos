@@ -2,8 +2,8 @@
 title: "Interface (PhotoAsset)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-photoasset"
 catalog: "harmonyos-references"
-content_hash: "5cd96f1d6d30"
-synced_at: "2026-07-28T16:52:04.110168"
+content_hash: "815b04c7a55b"
+synced_at: "2026-08-07T15:59:05.219742"
 ---
 
 # Interface (PhotoAsset)
@@ -578,7 +578,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 clone(title: string): Promise<PhotoAsset>
 
-克隆资产，可设置文件名，但不支持修改文件类型。使用promise异步回调。
+克隆资产，可设置文件名，但不支持修改文件类型。使用Promise异步回调。
 
 需要权限：ohos.permission.WRITE_IMAGEVIDEO
 
@@ -697,7 +697,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 getReadOnlyFd(): Promise<number>
 
-以只读方式打开当前文件。使用promise异步回调。
+以只读方式打开当前文件。使用Promise异步回调。
 
 返回的文件描述符在使用完毕后需要调用close进行释放。
 

@@ -2,8 +2,8 @@
 title: "动态属性设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-attribute-modifier"
 catalog: "harmonyos-references"
-content_hash: "e8c4def63a98"
-synced_at: "2026-07-28T16:42:46.285788"
+content_hash: "9472d14057dc"
+synced_at: "2026-08-07T15:56:26.673737"
 ---
 
 # 动态属性设置
@@ -237,6 +237,7 @@ applyHoveredAttribute?(instance: T): void
 | ParticleAttribute | Particle的[属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-particle-animation#属性)。 |
 | UIPickerComponentAttribute22+ | UIPickerComponent的[属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-ui-picker-component#属性)。 |
 | UIExtensionComponentAttribute | UIExtensionComponent的[属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-uiextension#属性)。 |
+| ContainerReaderAttribute | ContainerReader的[属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-containerreader#属性)。 **起始版本：** 26.0.0 |
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -341,6 +342,7 @@ applyHoveredAttribute?(instance: T): void
 | SymbolGlyphModifier | - |
 | ParticleModifier | - |
 | UIPickerComponentModifier22+ | - |
+| ContainerReaderModifier | **起始版本：** 26.0.0 |
 
 未暴露的组件Modifier可以使用CommonModifier。
 
@@ -402,7 +404,7 @@ struct AttributeDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008358.gif)
+ ![](./img/zh-cn_image_0000002668302792.gif)
 
 #### [h2]示例2（组件绑定Modifier实现按压态效果）
 
@@ -438,7 +440,7 @@ struct AttributePressedDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008358.gif)
+ ![](./img/zh-cn_image_0000002668302792.gif)
 
 #### [h2]示例3（自定义Modifier不支持感知@State装饰的状态数据变化）
 
@@ -494,7 +496,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848438.gif)
+ ![](./img/zh-cn_image_0000002668462670.gif)
 
 #### [h2]示例4（Modifier和自定义Modifier的属性同时生效）
 
@@ -558,7 +560,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087867.gif)
+ ![](./img/zh-cn_image_0000002698222551.gif)
 
 #### [h2]示例5（组件绑定Modifier获焦样式）
 
@@ -602,7 +604,7 @@ struct AttributeDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928039.gif)
+ ![](./img/zh-cn_image_0000002698142461.gif)
 
 #### [h2]示例6（组件绑定Modifier禁用状态的样式）
 
@@ -640,7 +642,7 @@ struct AttributeDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008360.gif)
+ ![](./img/zh-cn_image_0000002668302794.gif)
 
 #### [h2]示例7（组件绑定Modifier选中状态样式）
 
@@ -685,7 +687,7 @@ struct AttributeDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848440.gif)
+ ![](./img/zh-cn_image_0000002668462672.gif)
 
 #### [h2]示例8（自定义组件绑定Modifier实现按压态效果）
 
@@ -734,7 +736,7 @@ struct ChildComponent {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087869.gif)
+ ![](./img/zh-cn_image_0000002698222555.gif)
 
 #### [h2]示例9（组件绑定Modifier实现鼠标悬浮态效果）
 
@@ -773,4 +775,4 @@ struct AttributeHoveredDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928041.gif)
+ ![](./img/zh-cn_image_0000002698142463.gif)

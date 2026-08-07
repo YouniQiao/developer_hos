@@ -2,8 +2,8 @@
 title: "insightIntent"
 upstream_id: "harmonyos-references/intents-arkts-api-insightintent"
 catalog: "harmonyos-references"
-content_hash: "b4c01ce859b5"
-synced_at: "2026-07-09T01:01:42.246811"
+content_hash: "6321e98b87a5"
+synced_at: "2026-08-07T15:59:49.902996"
 ---
 
 # insightIntent
@@ -106,6 +106,8 @@ shareIntent(context: common.BaseContext, intents: InsightIntent[], callback: Asy
 | --- | --- |
 | 401 | The parameter check failed. |
 | 1000101101 | The application has not been registered with the InsightIntent. |
+| 1000101102 | HUAWEI Assistant has stopped providing services. 适用版本：4.0.0(10)-5.1.0(18) |
+| 1000101103 | The switch of the app in the Data source has been turned off. 适用版本：4.0.0(10)-5.1.0(18) |
 | 1000101104 | The number of sharing times exceeds the limit. |
 | 1000101105 | The size of a single shared data exceeds the limit. |
 | 1000101106 | Exceeded the maximum number of sharing times of all applications. |
@@ -218,6 +220,8 @@ shareIntent(context: common.BaseContext, intents: InsightIntent[]): Promise<void
 | --- | --- |
 | 401 | The parameter check failed. |
 | 1000101101 | The application has not been registered with the InsightIntent. |
+| 1000101102 | HUAWEI Assistant has stopped providing services. 适用版本：4.0.0(10)-5.1.0(18) |
+| 1000101103 | The switch of the app in the Data source has been turned off. 适用版本：4.0.0(10)-5.1.0(18) |
 | 1000101104 | The number of sharing times exceeds the limit. |
 | 1000101105 | The size of a single shared data exceeds the limit. |
 | 1000101106 | Exceeded the maximum number of sharing times of all applications. |
@@ -666,6 +670,7 @@ getSid(context: common.BaseContext, renew: boolean): Promise<string>
 | 401 | The parameter check failed. |
 | 1000101101 | The application has not been registered with the InsightIntent. |
 | 1000101102 | HUAWEI Assistant has stopped providing services. |
+| 1000101103 | The switch of the app in the Data source has been turned off. 适用版本：5.0.0(12)-5.1.0(18) |
 | 1000101107 | Too many Service Open ID renew requests. |
 | 1000101201 | The service is abnormal. |
 

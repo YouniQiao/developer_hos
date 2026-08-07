@@ -2,8 +2,8 @@
 title: "Interface (ImageSource)"
 upstream_id: "harmonyos-references/arkts-apis-image-imagesource"
 catalog: "harmonyos-references"
-content_hash: "84a14d09d56f"
-synced_at: "2026-07-28T16:51:47.950880"
+content_hash: "5f34ac797cfd"
+synced_at: "2026-08-07T15:58:52.052537"
 ---
 
 # Interface (ImageSource)
@@ -188,6 +188,8 @@ getImageProperty(key:PropertyKey, options?: ImagePropertyOptions): Promise<strin
 
 该接口仅支持JPEG、PNG、HEIF12+、WEBP23+和DNG23+（不同硬件设备支持情况不同）文件，且需要包含Exif信息。
 
+![](./img/note_3.0-zh-cn.png) 应用使用[PhotoAccessHelper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-photoaccesshelper)查询媒体库中的图片，并通过返回的PhotoAsset获取图片数据。在使用本接口读取[PropertyKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#propertykey7)中的GPS_LATITUDE、GPS_LONGITUDE、GPS_ALTITUDE、GPS_TIME_STAMP和GPS_DATE_STAMP等GPS相关字段前，应先声明并向用户申请[ohos.permission.MEDIA_LOCATION](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-all-user#ohospermissionmedia_location)权限。如果上述字段返回全为0或为空，请先检查该权限是否已获授权，并确认原始图片是否包含GPS信息。
+
 系统能力： SystemCapability.Multimedia.Image.ImageSource
 
 参数：
@@ -246,6 +248,8 @@ getImageProperties(key: Array<PropertyKey>): Promise<Record<PropertyKey, string|
 
 该接口仅支持JPEG、PNG、HEIF、WEBP23+和DNG23+（不同硬件设备支持情况不同）文件，且需要包含Exif信息。
 
+![](./img/note_3.0-zh-cn.png) 应用使用[PhotoAccessHelper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-photoaccesshelper)查询媒体库中的图片，并通过返回的PhotoAsset获取图片数据。在使用本接口读取[PropertyKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#propertykey7)中的GPS_LATITUDE、GPS_LONGITUDE、GPS_ALTITUDE、GPS_TIME_STAMP和GPS_DATE_STAMP等GPS相关字段前，应先声明并向用户申请[ohos.permission.MEDIA_LOCATION](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-all-user#ohospermissionmedia_location)权限。如果上述字段返回全为0或为空，请先检查该权限是否已获授权，并确认原始图片是否包含GPS信息。
+
 系统能力： SystemCapability.Multimedia.Image.ImageSource
 
 参数：
@@ -281,8 +285,14 @@ async function GetImageProperties(imageSourceObj : image.ImageSource) {
   let key = [image.PropertyKey.IMAGE_WIDTH, image.PropertyKey.IMAGE_LENGTH];
   imageSourceObj.getImageProperties(key).then((data) => {
     console.info(JSON.stringify(data));
-  }).catch((err: BusinessError) => {
-    console.error(`Failed to get the properties, error.code ${err.code}, error.message ${err.message}`);
+  }).catch((err: BusinessError | BusinessError[]) => {
+    if (Array.isArray(err)) {
+      (err as BusinessError[]).forEach(e => {
+        console.error(`Failed to get the properties, error.code ${e.code}, error.message ${e.message}`);
+      });
+    } else {
+      console.error(`Failed to get the properties, error.code ${err.code}, error.message ${err.message}`);
+    }
   });
 }
 ```
@@ -297,6 +307,7 @@ getImagePropertySync(key:PropertyKey): string
 
 - 该方法仅支持JPEG、PNG、HEIF、WEBP23+和DNG23+（不同硬件设备支持情况不同）文件，且需要包含Exif信息。
 - Exif信息是图片的元数据，包含拍摄时间、相机型号、光圈、焦距、ISO等。
+- 应用使用[PhotoAccessHelper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-photoaccesshelper)查询媒体库中的图片，并通过返回的PhotoAsset获取图片数据。在使用本接口读取[PropertyKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#propertykey7)中的GPS_LATITUDE、GPS_LONGITUDE、GPS_ALTITUDE、GPS_TIME_STAMP和GPS_DATE_STAMP等GPS相关字段前，应先声明并向用户申请[ohos.permission.MEDIA_LOCATION](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-all-user#ohospermissionmedia_location)权限。如果上述字段返回全为0或为空，请先检查该权限是否已获授权，并确认原始图片是否包含GPS信息。
 - 该方法为同步方法，调用时会阻塞当前线程，不建议在主线程中调用，否则可能导致应用卡顿、掉帧或响应延迟。具体场景参考[耗时任务并发场景简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/time-consuming-task-overview)。
 
 系统能力： SystemCapability.Multimedia.Image.ImageSource
@@ -528,9 +539,10 @@ readImageMetadata(propertyKeys?: string[], index?: number): Promise<ImageMetadat
 
 该接口仅支持JPEG、PNG、HEIF、WebP、DNG、GIF、TIFF、HEIFS、JFIF和AVIS（不同硬件设备支持情况不同）文件，且需要包含Exif信息。
 
-![](./img/note_3.0-zh-cn.png) 读取DNG格式图片时，该接口对部分propertyKeys有特殊处理。以下字段的字符串取值请参考[PropertyKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#propertykey7)中的值：
+![](./img/note_3.0-zh-cn.png)
 
-- NewSubfileType、ImageWidth、ImageLength、DefaultCropSize、Orientation、Compression、PhotometricInterpretation、PlanarConfiguration、RowsPerStrip、StripOffsets、StripByteCounts、SamplesPerPixel、BitsPerSample、YCbCrCoefficients、YCbCrSubSampling、YCbCrPositioning、ReferenceBlackWhite、XResolution、YResolution、ResolutionUnit字段：返回主图相关的字段值。
+- 应用使用[PhotoAccessHelper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-photoaccesshelper)查询媒体库中的图片，并通过返回的PhotoAsset获取图片数据。使用本接口时，propertyKeys应传入GPSLatitude、GPSLongitude、GPSAltitude、GPSTimeStamp和GPSDateStamp等GPS相关Exif标签字符串。在读取这些字段前，应先声明并向用户申请[ohos.permission.MEDIA_LOCATION](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-all-user#ohospermissionmedia_location)权限。如果上述字段返回全为0或为空，请先检查该权限是否已获授权，并确认原始图片是否包含GPS信息。
+- 读取DNG格式图片时，该接口对部分propertyKeys有特殊处理。以下字段的字符串取值请参考[PropertyKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#propertykey7)中的值： NewSubfileType、ImageWidth、ImageLength、DefaultCropSize、Orientation、Compression、PhotometricInterpretation、PlanarConfiguration、RowsPerStrip、StripOffsets、StripByteCounts、SamplesPerPixel、BitsPerSample、YCbCrCoefficients、YCbCrSubSampling、YCbCrPositioning、ReferenceBlackWhite、XResolution、YResolution、ResolutionUnit字段：返回主图相关的字段值。
 - ImageUniqueID字段：根据规范进行校验，不符合规范时会返回空字符串。
 - ExifVersion、FlashpixVersion、ColorSpace字段：当图片中不存在该标签时，返回错误码。
 - DNGVersion字段：当版本号小于1.0.0.0时，统一返回1.0.0.0。

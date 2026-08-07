@@ -2,8 +2,8 @@
 title: "Interface (Picture)"
 upstream_id: "harmonyos-references/arkts-apis-image-picture"
 catalog: "harmonyos-references"
-content_hash: "5e551e645915"
-synced_at: "2026-07-28T16:51:48.770093"
+content_hash: "eef5860a99a7"
+synced_at: "2026-08-07T15:58:52.405790"
 ---
 
 # Interface (Picture)
@@ -232,7 +232,7 @@ getGainmapPixelmap(): PixelMap | null
 
 | 类型 | 说明 |
 | --- | --- |
-| [PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | null | 返回Pixelmap对象，如果没有则返回null。 |
+| [PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | null | 返回PixelMap对象，如果没有则返回null。 |
 
 示例：
 

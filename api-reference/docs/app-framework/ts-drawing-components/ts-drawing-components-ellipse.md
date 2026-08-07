@@ -2,8 +2,8 @@
 title: "Ellipse"
 upstream_id: "harmonyos-references/ts-drawing-components-ellipse"
 catalog: "harmonyos-references"
-content_hash: "aea222e988b5"
-synced_at: "2026-07-28T16:46:44.091265"
+content_hash: "a3295a2f315d"
+synced_at: "2026-08-07T15:56:36.476583"
 ---
 
 # Ellipse
@@ -26,8 +26,6 @@ new Ellipse(options?: EllipseOptions)
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
-模型约束： 从API version 18开始，使用EllipseOptions参数时需在Stage模型下使用。
-
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
@@ -36,7 +34,7 @@ new Ellipse(options?: EllipseOptions)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [EllipseOptions](#ellipseoptions18对象说明) | 否 | 椭圆绘制配置选项，包含宽度和高度设置。不传入时使用默认尺寸（宽度和高度均为0）。 异常值undefined和null按照无效值处理，本次设置不生效。 |
+| options | [EllipseOptions](#ellipseoptions18对象说明) | 否 | 椭圆绘制配置选项，包含宽度和高度设置。不传入时使用默认尺寸（宽度和高度均为0）。 异常值undefined和null按照无效值处理，本次设置不生效。 **说明：**从API version 18开始，使用EllipseOptions参数时需在Stage模型下使用。 |
 
 #### [h2]Ellipse
 
@@ -46,8 +44,6 @@ Ellipse(options?: EllipseOptions)
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
-模型约束： 从API version 18开始，使用EllipseOptions参数时需在Stage模型下使用。
-
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
@@ -56,7 +52,7 @@ Ellipse(options?: EllipseOptions)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [EllipseOptions](#ellipseoptions18对象说明) | 否 | 椭圆绘制配置选项，包含宽度和高度设置。不传入时使用默认尺寸（宽度和高度均为0）。 异常值undefined和null按照无效值处理，本次设置不生效。 |
+| options | [EllipseOptions](#ellipseoptions18对象说明) | 否 | 椭圆绘制配置选项，包含宽度和高度设置。不传入时使用默认尺寸（宽度和高度均为0）。 异常值undefined和null按照无效值处理，本次设置不生效。 **说明：**从API version 18开始，使用EllipseOptions参数时需在Stage模型下使用。 |
 
 #### EllipseOptions18+对象说明
 
@@ -107,7 +103,7 @@ struct EllipseExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008772.png)
+ ![](./img/zh-cn_image_0000002668463084.png)
 
 #### [h2]示例2（宽和高使用不同参数类型绘制椭圆）
 
@@ -130,7 +126,7 @@ struct EllipseTypeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008810.png)
+ ![](./img/zh-cn_image_0000002668463122.png)
 
 #### [h2]示例3（使用attributeModifier动态设置Ellipse组件的属性）
 
@@ -167,4 +163,4 @@ struct EllipseModifierDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848890.png)
+ ![](./img/zh-cn_image_0000002698223001.png)

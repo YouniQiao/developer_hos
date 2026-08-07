@@ -2,8 +2,8 @@
 title: "@ohos.deviceInfo (设备信息)"
 upstream_id: "harmonyos-references/js-apis-device-info"
 catalog: "harmonyos-references"
-content_hash: "fd90cc490f33"
-synced_at: "2026-08-04T17:02:51.377811"
+content_hash: "a4fa0831ca47"
+synced_at: "2026-08-07T15:58:09.278259"
 ---
 
 # @ohos.deviceInfo (设备信息)
@@ -65,7 +65,7 @@ import { deviceInfo } from '@kit.BasicServicesKit';
 | buildTime | string | 是 | 构建时间。 示例：default |
 | buildRootHash | string | 是 | 构建版本Hash。 示例：default |
 | udid7+ | string | 是 | 设备Udid。 **说明**：数据长度为65字节。可作为设备唯一识别码。 **需要权限**：ohos.permission.sec.ACCESS_UDID(该权限只允许系统应用及企业类应用申请) 示例：9D6AABD147XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXE5536412 |
-| distributionOSName10+ | string | 是 | 发行版系统名称。 示例：OpenHarmony |
+| distributionOSName10+ | string | 是 | 发行版系统名称。 示例：HarmonyOS |
 | distributionOSVersion10+ | string | 是 | 发行版系统版本号。格式为x.x.x，x是数字 示例：5.0.0 |
 | distributionOSApiVersion10+ | number | 是 | 发行版系统API版本。 示例：50001 |
 | distributionOSApiName13+ | string | 是 | 发行版系统API版本名称。 **说明**：不建议用于版本号判断。 示例：5.0.1 |

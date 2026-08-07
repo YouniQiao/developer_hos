@@ -2,8 +2,8 @@
 title: "voipCall (应用内通话管理)"
 upstream_id: "harmonyos-references/call-voipcall"
 catalog: "harmonyos-references"
-content_hash: "b04dab83494d"
-synced_at: "2026-07-28T16:52:35.003697"
+content_hash: "698bc9983464"
+synced_at: "2026-08-07T15:59:26.529558"
 ---
 
 # voipCall (应用内通话管理)
@@ -196,7 +196,7 @@ on(type: 'voipCallUiEvent', callback: Callback<VoipCallUiEventInfo>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. |
+| 401 | Parameter error. The type of parameter should match or the number of parameters must match. |
 | 1007200001 | Invalid parameter value. |
 | 1007200002 | Operation failed. Cannot connect to service. |
 | 1007200003 | System internal error. |
@@ -238,7 +238,7 @@ off(type: 'voipCallUiEvent', callback?: Callback<VoipCallUiEventInfo>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. |
+| 401 | Parameter error. The type of parameter should match or the number of parameters must match. |
 | 1007200001 | Invalid parameter value. |
 | 1007200002 | Operation failed. Cannot connect to service. |
 | 1007200003 | System internal error. |
@@ -285,7 +285,7 @@ reportIncomingCall(voipCallAttribute: VoipCallAttribute): Promise<ErrorReason>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. |
+| 401 | Parameter error. The type of parameter should match or the number of parameters must match. |
 | 1007200001 | Invalid parameter value. |
 | 1007200002 | Operation failed. Cannot connect to service. |
 | 1007200003 | System internal error. |
@@ -389,7 +389,7 @@ reportOutgoingCall(voipCallAttribute: VoipCallAttribute): Promise<ErrorReason>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. |
+| 401 | Parameter error. The type of parameter should match or the number of parameters must match. |
 | 1007200001 | Invalid parameter value. |
 | 1007200002 | Operation failed. Cannot connect to service. |
 | 1007200003 | System internal error. |
@@ -493,7 +493,7 @@ reportCallAudioEventChange(callId: string, callAudioEvent: CallAudioEvent): Prom
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. |
+| 401 | Parameter error. The type of parameter should match or the number of parameters must match. |
 | 1007200001 | Invalid parameter value. |
 | 1007200002 | Operation failed. Cannot connect to service. |
 | 1007200003 | System internal error. |
@@ -570,7 +570,7 @@ reportCallStateChange(callId: string, callState: VoipCallState): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. |
+| 401 | Parameter error. The type of parameter should match or the number of parameters must match. |
 | 1007200001 | Invalid parameter value. |
 | 1007200002 | Operation failed. Cannot connect to service. |
 | 1007200003 | System internal error. |
@@ -621,7 +621,7 @@ reportCallStateChange(callId: string, callState: VoipCallState, callType: VoipCa
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. |
+| 401 | Parameter error. The type of parameter should match or the number of parameters must match. |
 | 1007200001 | Invalid parameter value. |
 | 1007200002 | Operation failed. Cannot connect to service. |
 | 1007200003 | System internal error. |
@@ -669,7 +669,7 @@ reportIncomingCallError(callId: string, voipCallFailureCause: VoipCallFailureCau
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. |
+| 401 | Parameter error. The type of parameter should match or the number of parameters must match. |
 | 1007200001 | Invalid parameter value. |
 | 1007200002 | Operation failed. Cannot connect to service. |
 | 1007200003 | System internal error. |

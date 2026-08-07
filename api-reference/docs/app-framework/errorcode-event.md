@@ -1,12 +1,10 @@
 ---
-
 title: "交互事件错误码"
 upstream_id: "harmonyos-references/errorcode-event"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T00:58:49.036897"
-content_hash: "564f2a373190"
+content_hash: "6d4c783a8226"
+synced_at: "2026-08-07T15:57:19.106907"
 ---
-
 
 # 交互事件错误码
 
@@ -137,6 +135,24 @@ No component hit to response to the event.
 处理步骤
 
 为组件添加该事件的监听，或使用支持响应该事件的组件。
+
+#### 180006 不支持输入事件类型
+
+错误信息
+
+Input event type not supported.
+
+错误描述
+
+不支持输入事件类型。
+
+可能原因
+
+当前接口不支持传入的输入事件类型。
+
+处理步骤
+
+根据接口说明，传入该接口支持类型的输入事件对象。
 
 #### 180102 不支持手势识别器类型
 

@@ -2,8 +2,8 @@
 title: "Interface (PixelMap)"
 upstream_id: "harmonyos-references/arkts-apis-image-pixelmap"
 catalog: "harmonyos-references"
-content_hash: "88c06073f0b5"
-synced_at: "2026-07-28T16:51:49.936497"
+content_hash: "c61daeeb33e0"
+synced_at: "2026-08-07T15:58:52.718261"
 ---
 
 # Interface (PixelMap)
@@ -1960,7 +1960,11 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 function createAlphaPixelmapSync(pixelMap: image.PixelMap) {
   try {
-    let pixelmap: image.PixelMap = pixelMap.createAlphaPixelmapSync();
+    let alphaPixelMap: image.PixelMap = pixelMap.createAlphaPixelmapSync();
+    if (alphaPixelMap == undefined) {
+      console.error(`Failed to create alpha PixelMap.`);
+      return;
+    }
     console.info('Succeeded in creating alpha PixelMap.');
   } catch (e) {
     const err = e as BusinessError;

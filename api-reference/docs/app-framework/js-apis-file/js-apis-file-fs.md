@@ -2,8 +2,8 @@
 title: "@ohos.file.fs (文件管理)"
 upstream_id: "harmonyos-references/js-apis-file-fs"
 catalog: "harmonyos-references"
-content_hash: "1f4de866bc84"
-synced_at: "2026-08-03T17:10:41.576430"
+content_hash: "16562753eef4"
+synced_at: "2026-08-07T15:57:31.601762"
 ---
 
 # @ohos.file.fs (文件管理)
@@ -7633,7 +7633,7 @@ filter(name: string): boolean
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| offset | number | 否 | 是 | 期望读取文件位置，单位为Byte（基于当前filePointer加上offset的位置）。可选，默认从偏移指针（filePointer）开始读。 |
+| offset | number | 否 | 是 | 期望读取文件位置，单位为Byte。可选，默认从当前位置开始读。 |
 | length | number | 否 | 是 | 期望读取数据的长度，单位为Byte。可选，默认缓冲区长度。 |
 
 #### ReadTextOptions11+
@@ -7656,7 +7656,7 @@ filter(name: string): boolean
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| offset | number | 否 | 是 | 期望写入文件位置，单位为Byte（基于当前filePointer加上offset的位置）。可选，默认从偏移指针（filePointer）开始写。 **元服务API**：从API version 11开始，该接口支持在元服务中使用。 |
+| offset | number | 否 | 是 | 期望写入文件位置，单位为Byte。可选，默认从当前位置开始写。 **元服务API**：从API version 11开始，该接口支持在元服务中使用。 |
 | length | number | 否 | 是 | 期望写入数据的长度，单位为Byte。可选，默认缓冲区长度。 **元服务API**：从API version 11开始，该接口支持在元服务中使用。 |
 | encoding | string | 否 | 是 | 当数据是string类型时有效，表示数据的编码方式。默认 'utf-8'。仅支持 'utf-8'。 |
 

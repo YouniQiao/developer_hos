@@ -1,12 +1,12 @@
 ---
-title: "Console (控制台)"
+title: "Class (Console)"
 upstream_id: "harmonyos-references/js-apis-logs"
 catalog: "harmonyos-references"
-content_hash: "8d2bb387430d"
-synced_at: "2026-07-09T01:01:45.924953"
+content_hash: "043bcd9ebd23"
+synced_at: "2026-08-07T15:59:52.768605"
 ---
 
-# Console (控制台)
+# Class (Console)
 
 本模块提供了一个简单的调试控制台，类似于浏览器提供的JavaScript控制台机制。
 
@@ -367,14 +367,16 @@ static group(...arguments: Object[]): void
 
 ```
 console.info("outer");
-// outer
 console.group();
 console.info("level 1");
-//   level 1
 console.group("in level1");
-//   in level1
 console.info("level 2");
-//     level 2
+/**
+ * outer
+ *   level 1
+ *   in level1
+ *     level 2
+ */
 ```
 
 #### console.groupCollapsed10+
@@ -397,14 +399,16 @@ static groupCollapsed(...arguments: Object[]): void
 
 ```
 console.groupCollapsed("outer");
-// outer
 console.groupCollapsed();
 console.info("level 1");
-//   level 1
 console.groupCollapsed("in level1");
-//   in level1
 console.info("level 2");
-//     level 2
+/**
+ * outer
+ *   level 1
+ *   in level1
+ *     level 2
+ */
 ```
 
 #### console.groupEnd10+
@@ -421,13 +425,15 @@ static groupEnd(): void
 
 ```
 console.info("outer");
-// outer
 console.group();
 console.info("level 1");
-//   level 1
 console.groupEnd();
 console.info("outer");
-// outer
+/**
+ * outer
+ *   level 1
+ * outer
+ */
 ```
 
 #### console.table10+
@@ -586,11 +592,13 @@ static trace(...arguments: Object[]): void
 
 ```
 console.trace();
-// Trace:
-//     xxxxxxxxxx(当前堆栈信息)
 console.trace("Show the trace");
-// Trace: Show the trace
-//     xxxxxxxxxx(当前堆栈信息)
+/**
+ * Trace:
+ *     xxxxxxxxxx(当前堆栈信息)
+ * Trace: Show the trace
+ *     xxxxxxxxxx(当前堆栈信息)
+ */
 ```
 
 #### console.traceHybridStack12+
@@ -607,6 +615,8 @@ static traceHybridStack(): void
 
 ```
 console.traceHybridStack();
-// TraceHybridStack:
-//     xxxxxxxxxx(当前线程混合堆栈信息)
+/**
+ * TraceHybridStack:
+ *     xxxxxxxxxx(当前线程混合堆栈信息)
+ */
 ```

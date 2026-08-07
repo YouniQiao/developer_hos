@@ -2,8 +2,8 @@
 title: "RemoteNotificationExtensionAbility（通知扩展Ability）"
 upstream_id: "harmonyos-references/push-remote-notification-extension-ability"
 catalog: "harmonyos-references"
-content_hash: "af97ec10174e"
-synced_at: "2026-08-03T17:12:38.616018"
+content_hash: "27145be562ca"
+synced_at: "2026-08-07T15:59:43.767676"
 ---
 
 # RemoteNotificationExtensionAbility（通知扩展Ability）
@@ -42,6 +42,8 @@ import { RemoteNotificationExtensionAbility } from '@kit.PushKit';
 
 系统能力： SystemCapability.Push.PushService
 
+设备行为差异： 对于5.1.0(18)以前版本，该属性在Phone、Tablet、PC/2in1中可正常使用，在其他设备类型中无效果。对于5.1.0(18)~6.0.2(22)版本，该属性在Phone、Tablet、PC/2in1、Wearable中可正常使用，在其他设备类型中无效果。对于6.1.0(23)及之后版本，该属性在Phone、Tablet、PC/2in1、Wearable、TV中均可正常使用。
+
 起始版本： 4.1.0(11)
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
@@ -57,6 +59,8 @@ onReceiveMessage(remoteNotificationInfo: pushCommon.RemoteNotificationInfo): Pro
 模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.Push.PushService
+
+设备行为差异： 对于5.1.0(18)以前版本，该接口在Phone、Tablet、PC/2in1中可正常使用，在其他设备类型中无效果。对于5.1.0(18)~6.0.2(22)版本，该接口在Phone、Tablet、PC/2in1、Wearable中可正常使用，在其他设备类型中无效果。对于6.1.0(23)及之后版本，该接口在Phone、Tablet、PC/2in1、Wearable、TV中均可正常使用。
 
 起始版本： 4.1.0(11)
 
@@ -130,6 +134,8 @@ onDestroy(): void
 模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.Push.PushService
+
+设备行为差异： 对于5.1.0(18)以前版本，该接口在Phone、Tablet、PC/2in1中可正常使用，在其他设备类型中无效果。对于5.1.0(18)~6.0.2(22)版本，该接口在Phone、Tablet、PC/2in1、Wearable中可正常使用，在其他设备类型中无效果。对于6.1.0(23)及之后版本，该接口在Phone、Tablet、PC/2in1、Wearable、TV中均可正常使用。
 
 起始版本： 4.1.0(11)
 
