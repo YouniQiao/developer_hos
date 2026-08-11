@@ -2,8 +2,8 @@
 title: "@ohos.url (URL字符串解析)"
 upstream_id: "harmonyos-references/js-apis-url"
 catalog: "harmonyos-references"
-content_hash: "2a4a25873a7f"
-synced_at: "2026-08-07T15:56:10.072628"
+content_hash: "1877532e119f"
+synced_at: "2026-08-11T16:01:10.679287"
 ---
 
 # @ohos.url (URL字符串解析)
@@ -507,11 +507,11 @@ console.info("toString " + urlObj.toString()); // toString http://testhost/direc
 
 #### [h2]constructor(deprecated)
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，建议使用[parseURL9+](#parseurl9)替代。
-
 constructor(url: string, base?: string | URL)
 
 URL的构造函数。与[parseURL](#parseurl9)方法功能相同，但parseURL为静态工厂方法，推荐使用parseURL来创建URL对象。
+
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，建议使用[parseURL9+](#parseurl9)替代。
 
 系统能力： SystemCapability.Utils.Lang
 

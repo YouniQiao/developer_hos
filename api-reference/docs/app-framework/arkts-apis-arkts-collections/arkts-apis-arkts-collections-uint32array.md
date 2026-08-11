@@ -2,8 +2,8 @@
 title: "Class (Uint32Array)"
 upstream_id: "harmonyos-references/arkts-apis-arkts-collections-uint32array"
 catalog: "harmonyos-references"
-content_hash: "a8aefb73e359"
-synced_at: "2026-08-04T17:00:49.430044"
+content_hash: "8cc051235266"
+synced_at: "2026-08-11T16:01:09.047323"
 ---
 
 # Class (Uint32Array)
@@ -1468,7 +1468,6 @@ for (const value of iterator) {
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 10200011 | The Symbol.iterator method cannot be bound. |
-| 10200201 | Concurrent modification error. |
 
 示例：
 

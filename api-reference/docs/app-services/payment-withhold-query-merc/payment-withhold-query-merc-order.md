@@ -2,8 +2,8 @@
 title: "通过mercOrderNo查询订单信息"
 upstream_id: "harmonyos-references/payment-withhold-query-merc-order"
 catalog: "harmonyos-references"
-content_hash: "7580be42edf4"
-synced_at: "2026-07-09T01:01:31.791213"
+content_hash: "3426ff319c17"
+synced_at: "2026-08-11T16:04:22.260049"
 ---
 
 # 通过mercOrderNo查询订单信息
@@ -72,7 +72,7 @@ Response Body
 | appId | 否 | String | 应用ID。获取方式请参见[AppID管理及关联](https://developer.huawei.com/consumer/cn/doc/pay-docs/hwzf-appidguanli-0000001757041165)。 |
 | sysTransOrderNo | 否 | String | 华为支付系统订单号。 |
 | mercOrderNo | 是 | String | 商户订单号，由商户自己生成，商户需保证订单信息唯一性。最大长度46。 |
-| orderStatus | 是 | String | 订单状态。 - TRX_SUCCESS：交易成功 - TRX_FAILED：交易失败 - TRX_APPLY：交易处理中 - TRX_PROC：交易处理中 |
+| orderStatus | 是 | String | 订单状态。 - TRX_SUCCESS：交易成功 - TRX_FAILED：交易失败 - TRX_APPLY：交易处理中 |
 | payload | 否 | String | 预留信息，如商户请求时传递该参数，此时会原样返回。 |
 | currency | 是 | String | 交易币种单位，最大长度为3。 CNY （默认，当前仅支持该币种单位） |
 | totalAmount | 是 | Long | 订单总金额，单位：分。 |

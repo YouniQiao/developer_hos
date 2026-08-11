@@ -2,8 +2,8 @@
 title: "@ohos.busManager.serial (串口通信管理)"
 upstream_id: "harmonyos-references/js-apis-busmanager-serial"
 catalog: "harmonyos-references"
-content_hash: "f56c16909b57"
-synced_at: "2026-08-07T15:58:09.546553"
+content_hash: "29848b75d9f7"
+synced_at: "2026-08-11T16:02:51.929928"
 ---
 
 # @ohos.busManager.serial (串口通信管理)
@@ -20,7 +20,7 @@ import { serial } from '@kit.BasicServicesKit';
 
 #### serial.getSerialPortList
 
-getSerialPortList(): Promise<[SerialPort](#serialport)[]>
+getSerialPortList(): Promise<SerialPort[]>
 
 查询串口设备列表，返回[SerialPort](#serialport)对象数组。使用Promise异步回调。用于需要识别可用串口设备的场景，如工业设备连接、物联网设备管理、嵌入式系统调试等应用。
 
@@ -79,7 +79,7 @@ serial.getSerialPortList().then((portList: serial.SerialPort[]) => {
 
 #### [h2]open
 
-open(config?: [SerialConfigs](#serialconfigs)): Promise<void>
+open(config?: SerialConfigs): Promise<void>
 
 打开串口设备。使用Promise异步回调。用于建立与串口设备的通信连接，如传感器数据采集、设备控制命令发送、串口打印机等场景。
 
@@ -445,6 +445,11 @@ port.drain().then(() => {
 setRts(enable: boolean): Promise<void>
 
 设置RTS（请求发送）信号状态。使用Promise异步回调。需在串口打开后调用。用于控制硬件流控的请求发送信号，如启用RTS/CTS硬件流控时控制发送权、与支持硬件流控的设备通信等场景。
+
+调用顺序：
+
+- 必须先调用open()打开串口，才能调用setRts()设置RTS信号
+- 未调用open()就调用setRts()会抛出错误码35700005（Port not open）
 
 与setDtr的区别： setRts和setDtr分别控制RTS/CTS和DTR/DSR两种硬件信号。RTS/CTS主要用于数据流控制，可通过SerialConfigs.rtscts启用自动流控；DTR/DSR主要用于设备状态控制和检测，用于特殊协议或设备状态管理。
 

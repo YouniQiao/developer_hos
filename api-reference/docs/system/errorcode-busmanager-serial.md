@@ -2,8 +2,8 @@
 title: "串口管理错误码"
 upstream_id: "harmonyos-references/errorcode-busmanager-serial"
 catalog: "harmonyos-references"
-content_hash: "ead481700942"
-synced_at: "2026-08-07T15:58:14.073412"
+content_hash: "5f1abe7c8bfe"
+synced_at: "2026-08-11T16:02:57.337684"
 ---
 
 # 串口管理错误码
@@ -129,7 +129,7 @@ Port not open.
 
 状态转换说明：
 
-- 调用open()后，串口处于打开状态，可以调用[onDataRead](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-busmanager-serial#ondataread)、[write](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-busmanager-serial#write)等接口。onDataRead需与offDataRead配对调用，在close()前应先调用offDataRead取消订阅。
+- 调用open()后，串口处于打开状态，可以调用[onDataRead](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-busmanager-serial#ondataread)、[write](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-busmanager-serial#write)等接口。onDataRead需与offDataRead配对调用，onDisconnect需与offDisconnect配对调用。在close()前应先调用offDataRead和offDisconnect取消订阅。
 - 调用close()后，串口处于关闭状态，上述接口将无法使用。
 - 必须在串口打开状态下才能进行读写等操作。
 

@@ -2,8 +2,8 @@
 title: "USB服务错误码"
 upstream_id: "harmonyos-references/errorcode-usb"
 catalog: "harmonyos-references"
-content_hash: "509c1765f13e"
-synced_at: "2026-08-07T15:58:14.066604"
+content_hash: "a34bd593932e"
+synced_at: "2026-08-11T16:02:57.301306"
 ---
 
 # USB服务错误码
@@ -248,7 +248,7 @@ Access denied. Call requestSerialRight to request user authorization first.
 
 处理步骤
 
-调用requestSerialRight 申请访问权限。
+调用requestSerialRight()方法申请访问权限。建议调用顺序：先调用requestSerialRight获取权限，再调用Open接口打开设备。
 
 #### 31400003 端口号不存在
 

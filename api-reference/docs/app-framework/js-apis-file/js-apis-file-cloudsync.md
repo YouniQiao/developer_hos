@@ -2,8 +2,8 @@
 title: "@ohos.file.cloudSync (端云同步能力)"
 upstream_id: "harmonyos-references/js-apis-file-cloudsync"
 catalog: "harmonyos-references"
-content_hash: "ccd747f013bd"
-synced_at: "2026-07-28T16:50:02.591883"
+content_hash: "27009f9603cc"
+synced_at: "2026-08-11T16:02:14.010172"
 ---
 
 # @ohos.file.cloudSync (端云同步能力)
@@ -455,7 +455,7 @@ fileSync.getLastSyncTime((err: BusinessError, timeStamp: number) => {
 
 系统能力：SystemCapability.FileManagement.DistributedFileService.CloudSync.Core
 
-#### [h2]construct11+
+#### [h2]constructor11+
 
 constructor()
 
@@ -1428,7 +1428,7 @@ cloudSync.unregisterChange(uri);
 
 端云文件版本管理类。支持对端云文件的历史版本进行管理，提供获取文件历史版本信息列表的能力，通过历史版本信息，可将历史版本下载到本地；并提供历史版本文件替换当前本地文件的能力，针对版本冲突，提供查询冲突标志，解除冲突标志的能力。
 
-#### [h2]construct20+
+#### [h2]constructor20+
 
 constructor()
 

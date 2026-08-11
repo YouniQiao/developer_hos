@@ -2,8 +2,8 @@
 title: "GamePerformance"
 upstream_id: "harmonyos-references/gameservice-game-performance"
 catalog: "harmonyos-references"
-content_hash: "4a11a2ed962f"
-synced_at: "2026-07-09T01:01:19.564086"
+content_hash: "8933eef14233"
+synced_at: "2026-08-11T16:04:12.305864"
 ---
 
 # GamePerformance
@@ -508,7 +508,7 @@ enum GamePerformance_ErrorCode
 | GAME_PERFORMANCE_PARAM_INVALID | 无效参数。 |
 | GAME_PERFORMANCE_INTERNAL_ERROR | 系统内部错误。 |
 | GAME_PERFORMANCE_AUTH_FAILED | 鉴权失败。 |
-| GAME_PERFORMANCE_INVALID_REQUEST | 非法请求。 |
+| GAME_PERFORMANCE_INVALID_REQUEST | 无效请求。 |
 | GAME_PERFORMANCE_PARAM_ERROR | 参数错误。 起始版本：6.0.2(22) |
 
 #### [h2]GamePerformance_GameType
@@ -1570,7 +1570,7 @@ GamePerformance_ErrorCode HMS_GamePerformance_Init (GamePerformance_InitParamete
 
 | 类型 | 说明 |
 | --- | --- |
-| [GamePerformance_ErrorCode](#gameperformance_errorcode-1) | GAME_PERFORMANCE_SUCCESS：成功。 GAME_PERFORMANCE_PARAM_INVALID：无效参数。 GAME_PERFORMANCE_INTERNAL_ERROR：系统内部错误。 GAME_PERFORMANCE_AUTH_FAILED：认证失败。 |
+| [GamePerformance_ErrorCode](#gameperformance_errorcode-1) | GAME_PERFORMANCE_SUCCESS：成功。 GAME_PERFORMANCE_PARAM_INVALID：无效参数。 GAME_PERFORMANCE_INTERNAL_ERROR：系统内部错误。 GAME_PERFORMANCE_AUTH_FAILED：鉴权失败。 |
 
 #### [h2]HMS_GamePerformance_InitParameters_SetAppVersion()
 
@@ -2053,7 +2053,7 @@ GamePerformance_ErrorCode HMS_GamePerformance_RegisterThermalLevelChangedCallbac
 
 | 名称 | 描述 |
 | --- | --- |
-| types[] | 注册回调的设备性能信息类型[GamePerformance_DeviceInfoType](#gameperformance_deviceinfotype-1)。 |
+| types | 注册回调的设备性能信息类型[GamePerformance_DeviceInfoType](#gameperformance_deviceinfotype-1)。 |
 | size | types数组的长度。 |
 | callback | 回调函数[GamePerformance_ThermalLevelChangedCallback](#gameperformance_thermallevelchangedcallback)。 |
 | userData | 用户指定数据。用户自定义任意类型，callback透传返回。 |

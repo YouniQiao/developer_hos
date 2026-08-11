@@ -2,8 +2,8 @@
 title: "@ohos.net.netFirewall (网络防火墙)"
 upstream_id: "harmonyos-references/js-apis-net-netfirewall"
 catalog: "harmonyos-references"
-content_hash: "cc1dec6e0d55"
-synced_at: "2026-07-28T16:50:43.447929"
+content_hash: "77560930bb73"
+synced_at: "2026-08-11T16:02:41.281598"
 ---
 
 # @ohos.net.netFirewall (网络防火墙)
@@ -137,15 +137,17 @@ addNetFirewallRule(rule: NetFirewallRule): Promise<number>
 5. 显式阻止规则
 6. 默认允许策略
 7. 防火墙IP规则和域名规则冲突时（域名解析的IP与IP规则的IP相同，规则行为冲突）： 若以域名方式访问，则域名规则优先级高于IP规则，不受域名解析出的IP的规则影响。
-8. 若以IP方式访问，遵循以下原则： 域名规则放行，若以IP方式访问之前经历过域名解析过程，则IP规则拦截或者默认策略拦截是不生效的，最终以IP方式访问是放行的。
-9. 域名规则放行，若以IP方式访问之前未经历过域名解析过程，则IP规则拦截或者默认策略拦截是生效的，最终以IP方式访问是拦截的。
-10. 域名规则拦截，则IP规则放行或者默认策略放行是生效的，最终以IP方式访问是放行的。
-11. 规则类型补充说明： 当addNetFirewallRule的入参rule.type配置为RULE_IP时： 若rule.action为RULE_ALLOW，且rule.localIps、rule.remoteIps均不配置，规则生效为全IP段允许通行；
-12. 若rule.action 为RULE_DENY，且rule.localIps、rule.remoteIps均不配置，规则生效为全IP段拦截。
-13. 当addNetFirewallRule的入参rule.type配置为RULE_DOMAIN时，若rule.domains未配置，该规则不生效。
-14. 防火墙规则添加上限说明： 单个系统用户ID添加的防火墙规则上限是1000，若超过该上限，则报错29400001。
-15. 所有的系统用户ID添加的防火墙规则总和的上限是2000，若超过该上限，则报错29400001。
-16. 所有的系统用户ID添加的模糊域名规则总和的上限是100，若超过该上限，则报错29400005。
+8. 若以IP方式访问，遵循以下原则： 域名规则放行时，IP规则或默认策略的拦截均不生效，最终以IP方式访问放行。
+9. 域名规则拦截时，IP规则或默认策略的放行仍生效，最终以IP方式访问放行。
+10. 系统侧识别域名访问与IP访问的方式： 若目标IP与系统网络层域名缓存表中的IP地址匹配，则认为应用侧以域名形式访问；
+11. 若目标IP未匹配上系统网络层域名缓存表中的任意IP地址，则认为应用侧以IP形式访问；
+12. 其中，系统网络层会主动查询防火墙配置的DNS信息，并缓存对应的IP地址，使域名放行规则生效。
+13. 规则类型补充说明： 当addNetFirewallRule的入参rule.type配置为RULE_IP时： 若rule.action为RULE_ALLOW，且rule.localIps、rule.remoteIps均不配置，规则生效为全IP段允许通行；
+14. 若rule.action 为RULE_DENY，且rule.localIps、rule.remoteIps均不配置，规则生效为全IP段拦截。
+15. 当addNetFirewallRule的入参rule.type配置为RULE_DOMAIN时，若rule.domains未配置，该规则不生效。
+16. 防火墙规则添加上限说明： 单个系统用户ID添加的防火墙规则上限是1000，若超过该上限，则报错29400001。
+17. 所有的系统用户ID添加的防火墙规则总和的上限是2000，若超过该上限，则报错29400001。
+18. 所有的系统用户ID添加的模糊域名规则总和的上限是100，若超过该上限，则报错29400005。
 
 需要权限：ohos.permission.MANAGE_NET_FIREWALL
 

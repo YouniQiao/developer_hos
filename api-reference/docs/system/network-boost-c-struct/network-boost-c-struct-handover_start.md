@@ -2,15 +2,15 @@
 title: "NetworkBoost_HandoverStart"
 upstream_id: "harmonyos-references/network-boost-c-struct-handover_start"
 catalog: "harmonyos-references"
-content_hash: "dd1df1facc88"
-synced_at: "2026-07-09T00:59:32.580430"
+content_hash: "3a254d6af410"
+synced_at: "2026-08-11T16:02:46.109372"
 ---
 
 # NetworkBoost_HandoverStart
 
 #### 概述
 
-连接迁移开始信息。
+连接迁移开始信息。该结构体用于配置连接迁移开始时的相关参数，通常系统发起多网迁移（Wi-Fi与蜂窝网络切换，主卡与副卡切换等）开始时使用，其主要作用是设置迁移过程中的超时时间和老链路的发包建议，以保证迁移过程的稳定性和效率。
 
 起始版本： 5.1.0(18)
 

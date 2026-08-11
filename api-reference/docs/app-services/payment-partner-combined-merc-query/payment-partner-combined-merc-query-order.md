@@ -2,8 +2,8 @@
 title: "通过combinedMercOrderNo查询订单信息"
 upstream_id: "harmonyos-references/payment-partner-combined-merc-query-order"
 catalog: "harmonyos-references"
-content_hash: "f184f0d9e532"
-synced_at: "2026-07-09T01:01:34.032249"
+content_hash: "5229ce411373"
+synced_at: "2026-08-11T16:04:24.491711"
 ---
 
 # 通过combinedMercOrderNo查询订单信息
@@ -68,7 +68,7 @@ Response Body
 | combinedSysTransOrderNo | 否 | String | 华为支付合单支付交易订单号。 |
 | combinedMercOrderNo | 否 | String | 合单支付商户主订单号，由商户在创建合单支付订单时生成，商户需保证订单信息唯一性。最大长度46。 |
 | combinedAppId | 否 | String | 商户申请并关联的应用id。 |
-| orderStatus | 是 | String | 订单状态。 - TRX_SUCCESS：交易成功 - TRX_FAILED：交易失败 - TRX_APPLY：交易处理中 - TRX_PROC：交易处理中 |
+| orderStatus | 是 | String | 订单状态。 - TRX_SUCCESS：交易成功 - TRX_FAILED：交易失败 - TRX_APPLY：交易处理中 |
 | payload | 否 | String | 合单商户下单时传入的预留字段，原样返回。 |
 | subOrders | 否 | [SubOrderResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-model#suborderresult) | 合单支付子订单信息。 |
 | payer | 否 | [PayerOut](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-model#payerout) | 用户支付时客户端信息。 |

@@ -2,8 +2,8 @@
 title: "@ohos.display (屏幕属性)"
 upstream_id: "harmonyos-references/js-apis-display"
 catalog: "harmonyos-references"
-content_hash: "c48f334151d2"
-synced_at: "2026-07-28T16:41:45.614265"
+content_hash: "1ccd7d37ae6b"
+synced_at: "2026-08-11T16:01:17.605718"
 ---
 
 # @ohos.display (屏幕属性)
@@ -1773,9 +1773,9 @@ promise.then((data: Array<display.Display>) => {
 | rotation | number | 是 | 否 | 显示设备的屏幕顺时针旋转角度。 值为0时，表示显示设备屏幕顺时针旋转为0°，表示显示设备的标准显示方向； 值为1时，表示显示设备屏幕顺时针旋转为90°； 值为2时，表示显示设备屏幕顺时针旋转为180°； 值为3时，表示显示设备屏幕顺时针旋转为270°。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | width | number | 是 | 否 | 显示设备的屏幕宽度，单位为px，该参数为整数。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | height | number | 是 | 否 | 显示设备的屏幕高度，单位为px，该参数为整数。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| densityDPI | number | 是 | 否 | 显示设备的物理像素密度，表示每英寸上的像素点数。该参数为浮点数，单位为px。一般取值160.0、480.0等，实际能取到的值取决于不同设备设置里提供的可选值。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| densityDPI | number | 是 | 否 | 显示设备的物理像素密度，表示每英寸上的像素点数。该参数为浮点数。一般取值160.0、480.0等，实际能取到的值取决于不同设备设置里提供的可选值。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | orientation10+ | [Orientation](#orientation10) | 是 | 否 | 表示显示设备当前显示的方向。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| densityPixels | number | 是 | 否 | 显示设备逻辑像素的密度，代表物理像素与逻辑像素的缩放系数，计算方式为：![](./img/zh-cn_image_0000002655848316.jpg) 该参数为浮点数，受densityDPI范围限制，取值范围在[0.5, 4.0]。一般取值1.0、3.0等，实际取值取决于不同设备提供的densityDPI。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| densityPixels | number | 是 | 否 | 显示设备逻辑像素的密度，代表物理像素与逻辑像素的缩放系数，计算方式为：![](./img/zh-cn_image_0000002704274203.jpg) 该参数为浮点数，受densityDPI范围限制，取值范围在[0.5, 4.0]。一般取值1.0、3.0等，实际取值取决于不同设备提供的densityDPI。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | scaledDensity | number | 是 | 否 | 显示设备上的字体的缩放因子。该参数为浮点数，通常与densityPixels相同。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | xDPI | number | 是 | 否 | x轴方向中每英寸屏幕的确切物理像素值，该参数为浮点数。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | yDPI | number | 是 | 否 | y轴方向中每英寸屏幕的确切物理像素值，该参数为浮点数。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |

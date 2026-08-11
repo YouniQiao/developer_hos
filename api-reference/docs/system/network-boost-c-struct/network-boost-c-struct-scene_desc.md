@@ -2,8 +2,8 @@
 title: "NetworkBoost_SceneDesc"
 upstream_id: "harmonyos-references/network-boost-c-struct-scene_desc"
 catalog: "harmonyos-references"
-content_hash: "3ff4feb98a8c"
-synced_at: "2026-07-09T17:26:29.425598"
+content_hash: "6a3c8a5fe338"
+synced_at: "2026-08-11T16:02:46.718124"
 ---
 
 # NetworkBoost_SceneDesc
@@ -56,7 +56,7 @@ uint32_t NetworkBoost_SceneDesc::startTime
 ```
  描述
 
-表示要经过多长时间进入到sceneEvent事件，单位为s。
+表示要经过多长时间进入到sceneEvent事件，单位为ms。
 
 #### duration
 
@@ -65,4 +65,4 @@ uint32_t NetworkBoost_SceneDesc::duration
 ```
  描述
 
-预计本次设置的业务场景会持续的时长，单位为s。
+预计本次设置的业务场景会持续的时长，单位为ms。

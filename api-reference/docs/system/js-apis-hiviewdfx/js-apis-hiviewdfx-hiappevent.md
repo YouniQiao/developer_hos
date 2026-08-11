@@ -2,8 +2,8 @@
 title: "@ohos.hiviewdfx.hiAppEvent (应用事件打点)"
 upstream_id: "harmonyos-references/js-apis-hiviewdfx-hiappevent"
 catalog: "harmonyos-references"
-content_hash: "cca03d510420"
-synced_at: "2026-07-28T16:51:22.060701"
+content_hash: "da8f7738a406"
+synced_at: "2026-08-11T16:03:12.389764"
 ---
 
 # @ohos.hiviewdfx.hiAppEvent (应用事件打点)
@@ -602,7 +602,7 @@ let eventPkg: hiAppEvent.AppEventPackage | null = holder4.takeNext();
 
 write(info: AppEventInfo, callback: AsyncCallback<void>): void
 
-应用事件打点方法，将AppEventInfo类型的事件进行存储，使用callback方式作为异步回调。通过此接口写入的事件对象是开发者自定义的对象，为了避免与系统事件产生冲突混淆，不建议写入系统事件（[Event](#hiappeventevent)中定义的系统事件名称常量）。此接口写入的事件可通过订阅事件观察者（[addWatcher](#hiappeventaddwatcher)）进行订阅。
+应用事件打点方法，将AppEventInfo类型的事件进行存储，使用callback方式作为异步回调。通过此接口写入的事件对象是开发者自定义的对象，为了避免与系统事件产生冲突混淆，不建议写入系统事件（[Event](#event)中定义的系统事件名称常量）。此接口写入的事件可通过订阅事件观察者（[addWatcher](#hiappeventaddwatcher)）进行订阅。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -612,7 +612,7 @@ write(info: AppEventInfo, callback: AsyncCallback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| info | [AppEventInfo](#appeventinfo) | 是 | 应用事件对象。其内部定义的事件名称建议避免与[Event](#hiappeventevent)中定义的系统事件名称常量产生冲突。 |
+| info | [AppEventInfo](#appeventinfo) | 是 | 应用事件对象。其内部定义的事件名称建议避免与[Event](#event)中定义的系统事件名称常量产生冲突。 |
 | callback | AsyncCallback | 是 | 打点回调函数。 |
 
 错误码：
@@ -664,7 +664,7 @@ hiAppEvent.write({
 
 write(info: AppEventInfo): Promise<void>
 
-应用事件打点方法，将AppEventInfo类型的事件进行存储，使用Promise方式作为异步回调。通过此接口写入的事件对象是开发者自定义的对象，为了避免与系统事件产生冲突混淆，不建议写入系统事件（[Event](#hiappeventevent)中定义的系统事件名称常量）。此接口写入的事件可通过订阅事件观察者（[addWatcher](#hiappeventaddwatcher)）进行处理。
+应用事件打点方法，将AppEventInfo类型的事件进行存储，使用Promise方式作为异步回调。通过此接口写入的事件对象是开发者自定义的对象，为了避免与系统事件产生冲突混淆，不建议写入系统事件（[Event](#event)中定义的系统事件名称常量）。此接口写入的事件可通过订阅事件观察者（[addWatcher](#hiappeventaddwatcher)）进行处理。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -674,7 +674,7 @@ write(info: AppEventInfo): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| info | [AppEventInfo](#appeventinfo) | 是 | 应用事件对象。其中的事件名称建议避免与[Event](#hiappeventevent)中定义的系统事件名称常量冲突混淆。 |
+| info | [AppEventInfo](#appeventinfo) | 是 | 应用事件对象。其中的事件名称建议避免与[Event](#event)中定义的系统事件名称常量冲突混淆。 |
 
 返回值：
 
@@ -1253,7 +1253,7 @@ type ParamType = number | string | boolean | Array<string>
 | SECURITY | 3 | 安全类型事件。 |
 | BEHAVIOR | 4 | 行为类型事件。 |
 
-#### hiAppEvent.domain11+
+#### domain11+
 
 #### [h2]常量
 
@@ -1267,7 +1267,7 @@ type ParamType = number | string | boolean | Array<string>
 | --- | --- | --- | --- |
 | OS | string | 是 | 系统领域。 |
 
-#### hiAppEvent.event
+#### event
 
 #### [h2]常量
 
@@ -1295,7 +1295,7 @@ type ParamType = number | string | boolean | Array<string>
 | SCROLL_ARKWEB_FLING_JANK23+ | string | 是 | ArkWeb抛滑丢帧事件。系统事件名称常量。 **元服务API：** 从API version 23开始，该参数支持在元服务中使用。 |
 | appFreezeWarning | string | 是 | 应用冻屏告警事件。系统事件名称常量。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
 
-#### hiAppEvent.param
+#### param
 
 #### [h2]常量
 

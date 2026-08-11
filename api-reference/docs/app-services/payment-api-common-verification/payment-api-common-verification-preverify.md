@@ -1,12 +1,10 @@
 ---
-
 title: "实名信息预验证"
 upstream_id: "harmonyos-references/payment-api-common-verification-preverify"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T01:01:34.776069"
-content_hash: "471fa7434e86"
+content_hash: "1b7b4d4e0030"
+synced_at: "2026-08-11T16:04:24.884448"
 ---
-
 
 # 实名信息预验证
 
@@ -39,8 +37,8 @@ Request Body
 | 参数 | 是否必选 | 类型 | 说明 |
 | --- | --- | --- | --- |
 | credentialType | 是 | String | 证件类型。 01：身份证 |
-| credentialIdNo | 是 | String | 经过sha256做哈希处理后的证件编号。最大长度为128。 |
-| realName | 是 | String | 经过sha256做哈希处理后的用户姓名。最大长度为128。 |
+| credentialIdNo | 是 | String | 经过sha512做哈希处理后的证件编号。最大长度为128。 |
+| realName | 是 | String | 经过sha512做哈希处理后的用户姓名。最大长度为128。 |
 | openId | 是 | String | 用户对外展示的ID（获取方式请参见[获取用户信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-user-info-overview)）。长度范围为1-512。 **说明：** 入参中的实名信息，必须和 openId用户下的实名信息保持一致。 |
 
 #### 请求示例

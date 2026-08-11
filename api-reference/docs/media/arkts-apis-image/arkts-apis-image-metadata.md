@@ -2,8 +2,8 @@
 title: "Interface (Metadata)"
 upstream_id: "harmonyos-references/arkts-apis-image-metadata"
 catalog: "harmonyos-references"
-content_hash: "32d045c8c56e"
-synced_at: "2026-07-09T01:00:29.844453"
+content_hash: "b05dd68fd08b"
+synced_at: "2026-08-11T16:03:34.043068"
 ---
 
 # Interface (Metadata)
@@ -27,7 +27,7 @@ getProperties(key: Array<string>): Promise<Record<string, string | null>>
 
 获取图像中属性的值。使用Promise异步回调。
 
-如要查询属性值信息请参考[PropertyKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#propertykey7)、[FragmentMapPropertyKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#fragmentmappropertykey13)和[GifPropertyKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#gifpropertykey20)和[HeifsPropertyKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#heifspropertykey23)。
+如要查询属性值信息请参考[PropertyKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#propertykey7)、[FragmentMapPropertyKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#fragmentmappropertykey13)、[GifPropertyKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#gifpropertykey20)和[HeifsPropertyKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#heifspropertykey23)。
 
 系统能力： SystemCapability.Multimedia.Image.Core
 
@@ -49,7 +49,7 @@ getProperties(key: Array<string>): Promise<Record<string, string | null>>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error.Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types;3.Parameter verification failed; |
+| 401 | Parameter error.Possible causes:1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed. |
 | 7600202 | Unsupported metadata. Possible causes: 1. Unsupported metadata type. 2. The metadata type does not match the auxiliary picture type. |
 
 示例：
@@ -86,7 +86,7 @@ setProperties(records: Record<string, string | null>): Promise<void>
 
 批量设置图片元数据中的指定属性的值。使用Promise异步回调。
 
-如要查询属性值信息请参考[PropertyKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#propertykey7)、[FragmentMapPropertyKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#fragmentmappropertykey13)和[GifPropertyKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#gifpropertykey20)和[HeifsPropertyKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#heifspropertykey23)。
+如要查询属性值信息请参考[PropertyKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#propertykey7)、[FragmentMapPropertyKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#fragmentmappropertykey13)、[GifPropertyKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#gifpropertykey20)和[HeifsPropertyKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#heifspropertykey23)。
 
 系统能力： SystemCapability.Multimedia.Image.Core
 
@@ -149,7 +149,7 @@ getAllProperties(): Promise<Record<string, string | null>>
 
 获取图片中所有元数据的属性和值。使用Promise异步回调。
 
-如要查询属性值信息请参考[PropertyKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#propertykey7)、[FragmentMapPropertyKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#fragmentmappropertykey13)和[GifPropertyKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#gifpropertykey20)和[HeifsPropertyKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#heifspropertykey23)。
+如要查询属性值信息请参考[PropertyKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#propertykey7)、[FragmentMapPropertyKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#fragmentmappropertykey13)、[GifPropertyKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#gifpropertykey20)和[HeifsPropertyKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#heifspropertykey23)。
 
 系统能力： SystemCapability.Multimedia.Image.Core
 

@@ -2,8 +2,8 @@
 title: "hicollie.h"
 upstream_id: "harmonyos-references/capi-hicollie-h"
 catalog: "harmonyos-references"
-content_hash: "5b99d1a9b0a1"
-synced_at: "2026-07-28T16:51:22.428574"
+content_hash: "e3b2d5f9bc04"
+synced_at: "2026-08-11T16:03:12.961883"
 ---
 
 # hicollie.h
@@ -106,14 +106,14 @@ enum HiCollie_Flag
 
 | 枚举项 | 描述 |
 | --- | --- |
-| OH_THREAD_BLOCK_3S | 主线程超时一个周期。 **起始版本：** 24 |
-| OH_THREAD_BLOCK_6S | 主线程超时两个周期。 **起始版本：** 24 |
-| OH_LIFECYCLE_HALF_TIMEOUT | Ability生命周期超时一个周期。 **起始版本：** 24 |
-| OH_LIFECYCLE_TIMEOUT | Ability生命周期超时两个周期。 **起始版本：** 24 |
-| OH_APP_INPUT_BLOCK | 输入事件超时。 **起始版本：** 24 |
-| OH_BUSINESS_THREAD_BLOCK_3S | 通过[OH_HiCollie_Report](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hicollie-h#oh_hicollie_report)上报3S冻屏事件。 **起始版本：** 24 |
-| OH_BUSINESS_THREAD_BLOCK_6S | 通过[OH_HiCollie_Report](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hicollie-h#oh_hicollie_report)上报6S冻屏事件。 **起始版本：** 24 |
-| OH_BUSINESS_INPUT_BLOCK | 通过[OH_HiCollie_ReportInputBlock](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hicollie-h#oh_hicollie_reportinputblock)上报冻屏事件。 **起始版本：** 24 |
+| OH_THREAD_BLOCK_3S | 主线程超时一个周期。 |
+| OH_THREAD_BLOCK_6S | 主线程超时两个周期。 |
+| OH_LIFECYCLE_HALF_TIMEOUT | Ability生命周期超时一个周期。 |
+| OH_LIFECYCLE_TIMEOUT | Ability生命周期超时两个周期。 |
+| OH_APP_INPUT_BLOCK | 输入事件超时。 |
+| OH_BUSINESS_THREAD_BLOCK_3S | 通过[OH_HiCollie_Report](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hicollie-h#oh_hicollie_report)上报3S冻屏事件。 |
+| OH_BUSINESS_THREAD_BLOCK_6S | 通过[OH_HiCollie_Report](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hicollie-h#oh_hicollie_report)上报6S冻屏事件。 |
+| OH_BUSINESS_INPUT_BLOCK | 通过[OH_HiCollie_ReportInputBlock](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hicollie-h#oh_hicollie_reportinputblock)上报冻屏事件。 |
 
 #### 函数说明
 

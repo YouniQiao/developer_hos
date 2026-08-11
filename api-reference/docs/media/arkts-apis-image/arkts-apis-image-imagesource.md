@@ -2,8 +2,8 @@
 title: "Interface (ImageSource)"
 upstream_id: "harmonyos-references/arkts-apis-image-imagesource"
 catalog: "harmonyos-references"
-content_hash: "5f34ac797cfd"
-synced_at: "2026-08-07T15:58:52.052537"
+content_hash: "9396389ca976"
+synced_at: "2026-08-11T16:03:34.757926"
 ---
 
 # Interface (ImageSource)
@@ -881,7 +881,7 @@ createPicture(options?: DecodingOptionsForPicture): Promise<Picture>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error.Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types; 3.Parameter verification failed. |
+| 401 | Parameter error.Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed. |
 | 7700203 | Unsupported options. For example, unsupported desiredPixelFormat causes a failure in converting an image into the desired pixel format. 适用版本：24+ |
 | 7700301 | Decode failed. |
 

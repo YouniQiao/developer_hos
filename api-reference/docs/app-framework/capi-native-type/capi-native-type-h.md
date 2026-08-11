@@ -2,8 +2,8 @@
 title: "native_type.h"
 upstream_id: "harmonyos-references/capi-native-type-h"
 catalog: "harmonyos-references"
-content_hash: "e934bd0f6319"
-synced_at: "2026-07-28T16:49:25.077833"
+content_hash: "ef74d1828005"
+synced_at: "2026-08-11T16:01:52.271447"
 ---
 
 # native_type.h
@@ -1451,7 +1451,7 @@ void OH_ArkUI_ListItemSwipeActionOption_SetStart(ArkUI_ListItemSwipeActionOption
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkUI_ListItemSwipeActionOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-listitemswipeactionoption)* option | ListItemSwipeActionItem实例。 |
+| [ArkUI_ListItemSwipeActionOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-listitemswipeactionoption)* option | ListItemSwipeActionOption实例。 |
 | [ArkUI_ListItemSwipeActionItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-listitemswipeactionitem)* item | 布局信息。 |
 
 #### [h2]OH_ArkUI_ListItemSwipeActionOption_SetEnd()
@@ -1469,7 +1469,7 @@ void OH_ArkUI_ListItemSwipeActionOption_SetEnd(ArkUI_ListItemSwipeActionOption* 
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkUI_ListItemSwipeActionOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-listitemswipeactionoption)* option | ListItemSwipeActionItem实例。 |
+| [ArkUI_ListItemSwipeActionOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-listitemswipeactionoption)* option | ListItemSwipeActionOption实例。 |
 | [ArkUI_ListItemSwipeActionItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-listitemswipeactionitem)* item | 布局信息。 |
 
 #### [h2]OH_ArkUI_ListItemSwipeActionOption_SetEdgeEffect()
@@ -1487,7 +1487,7 @@ void OH_ArkUI_ListItemSwipeActionOption_SetEdgeEffect(ArkUI_ListItemSwipeActionO
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkUI_ListItemSwipeActionOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-listitemswipeactionoption)* option | ListItemSwipeActionItem实例。 |
+| [ArkUI_ListItemSwipeActionOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-listitemswipeactionoption)* option | ListItemSwipeActionOption实例。 |
 | [ArkUI_ListItemSwipeEdgeEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_listitemswipeedgeeffect) edgeEffect | 边缘滑动效果。 |
 
 #### [h2]OH_ArkUI_ListItemSwipeActionOption_GetEdgeEffect()
@@ -1505,7 +1505,7 @@ int32_t OH_ArkUI_ListItemSwipeActionOption_GetEdgeEffect(ArkUI_ListItemSwipeActi
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkUI_ListItemSwipeActionOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-listitemswipeactionoption)* option | ListItemSwipeActionItem实例。 |
+| [ArkUI_ListItemSwipeActionOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-listitemswipeactionoption)* option | ListItemSwipeActionOption实例。 |
 
 返回：
 
@@ -1528,7 +1528,7 @@ void OH_ArkUI_ListItemSwipeActionOption_SetOnOffsetChange(ArkUI_ListItemSwipeAct
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkUI_ListItemSwipeActionOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-listitemswipeactionoption)* option | ListItemSwipeActionItem实例。 |
+| [ArkUI_ListItemSwipeActionOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-listitemswipeactionoption)* option | ListItemSwipeActionOption实例。 |
 | callback | 回调事件。offset 滑动偏移量，单位vp。 |
 
 #### [h2]OH_ArkUI_ListItemSwipeActionOption_SetOnOffsetChangeWithUserData()
@@ -1546,7 +1546,7 @@ void OH_ArkUI_ListItemSwipeActionOption_SetOnOffsetChangeWithUserData(ArkUI_List
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkUI_ListItemSwipeActionOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-listitemswipeactionoption)* option | ListItemSwipeActionItem实例。 |
+| [ArkUI_ListItemSwipeActionOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-listitemswipeactionoption)* option | ListItemSwipeActionOption实例。 |
 | void* userData | 用户自定义数据。 |
 | callback | 回调事件。offset 滑动偏移量，单位vp。 |
 

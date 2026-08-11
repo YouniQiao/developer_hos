@@ -2,8 +2,8 @@
 title: "属性"
 upstream_id: "harmonyos-references/arkts-basic-components-web-attributes"
 catalog: "harmonyos-references"
-content_hash: "70c38955e75a"
-synced_at: "2026-08-04T17:01:57.587493"
+content_hash: "c5c3936429e7"
+synced_at: "2026-08-11T16:02:08.399332"
 ---
 
 # 属性
@@ -3234,7 +3234,7 @@ struct WebComponent {
 
 enableFollowSystemFontWeight(follow: boolean)
 
-设置Web组件是否开启字重跟随系统设置变化。当属性没有显式调用时，Web组件默认开启字重跟随系统设置变化。
+设置Web组件是否开启字重跟随系统设置变化。当属性没有显式调用时，Web组件默认字重不跟随系统设置变化。
 
 ![](./img/note_3.0-zh-cn.png) 目前该能力只支持前端文本元素跟随变化，暂不支持canvas元素、内嵌docx和pdf格式中的文本跟随变化。
 
@@ -3244,7 +3244,7 @@ enableFollowSystemFontWeight(follow: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| follow | boolean | 是 | 设置Web组件是否开启字重跟随系统设置变化。 true表示字重跟随系统设置中的字体粗细变化，系统设置改变时字重跟随变化。false表示字重不再跟随系统设置中的字体粗细变化，系统设置改变时维持当前字重不变。 传入undefined或null时为true。 |
+| follow | boolean | 是 | 设置Web组件是否开启字重跟随系统设置变化。 true表示字重跟随系统设置中的字体粗细变化，系统设置改变时字重跟随变化。false表示字重不再跟随系统设置中的字体粗细变化，系统设置改变时维持当前字重不变。 传入undefined或null时为false。 |
 
 示例：
 

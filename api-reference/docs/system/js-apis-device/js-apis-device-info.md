@@ -2,8 +2,8 @@
 title: "@ohos.deviceInfo (设备信息)"
 upstream_id: "harmonyos-references/js-apis-device-info"
 catalog: "harmonyos-references"
-content_hash: "a4fa0831ca47"
-synced_at: "2026-08-07T15:58:09.278259"
+content_hash: "cd65d36006fd"
+synced_at: "2026-08-11T16:02:52.050484"
 ---
 
 # @ohos.deviceInfo (设备信息)
@@ -33,8 +33,8 @@ import { deviceInfo } from '@kit.BasicServicesKit';
 | 名称 | 类型 | 只读 | 说明 |
 | --- | --- | --- | --- |
 | deviceType | string | 是 | 设备类型。详细请参考[deviceTypes标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#devicetypes标签)。 **元服务API**：从API版本11开始，该接口支持在元服务中使用。 示例：phone |
-| manufacture | string | 是 | 设备厂家名称。 示例：HUAWEI |
-| brand | string | 是 | 设备品牌名称。 **元服务API**：从API版本11开始，该接口支持在元服务中使用。 示例：HUAWEI |
+| manufacture | string | 是 | 设备厂家名称。 |
+| brand | string | 是 | 设备品牌名称。 **元服务API**：从API版本11开始，该接口支持在元服务中使用。 |
 | marketName | string | 是 | 外部产品系列。 示例：HUAWEI Mate 60 Pro |
 | productSeries | string | 是 | 产品系列。 示例：ALN |
 | productModel | string | 是 | 认证型号。 **元服务API**：从API版本11开始，该接口支持在元服务中使用。 示例：ALN-AL00 |
@@ -47,7 +47,7 @@ import { deviceInfo } from '@kit.BasicServicesKit';
 | abiList | string | 是 | 应用二进制接口（Abi）。 示例：arm64-v8a |
 | securityPatchTag | string | 是 | 安全补丁级别。 示例：2024/1/1 |
 | displayVersion | string | 是 | 产品版本。可以使用版本号中的DEM字段来识别门店演示样机。 示例：ALN-AL00 5.0.0.1(XXX) |
-| incrementalVersion | string | 是 | 差异版本号。 示例：default |
+| incrementalVersion | string | 是 | 差异版本号。 示例：6.1.1.120 |
 | osReleaseType | string | 是 | 系统的发布类型，取值为： - Canary：面向特定开发者发布的早期预览版本，不承诺API稳定性。 - Beta：面向开发者公开发布的Beta版本，不承诺API稳定性。 - Release：面向开发者公开发布的正式版本，承诺API稳定性。 示例：Canary1/Beta2/Release |
 | osFullName | string | 是 | 系统版本，版本格式OpenHarmony-x.x.x.x。 **元服务API**：从API版本11开始，该接口支持在元服务中使用。 示例：OpenHarmony-5.0.0.1(Canary1) |
 | majorVersion | number | 是 | Major版本号，随主版本更新增加，值为osFullName中的第一位数值，建议直接使用deviceInfo.majorVersion获取，可提升效率，不建议开发者解析osFullName获取。 示例：5 |
@@ -58,7 +58,7 @@ import { deviceInfo } from '@kit.BasicServicesKit';
 | sdkMinorApiVersion | number | 是 | 系统软件Minor API版本。**从** API 26.0.0 版本开始，系统API版本格式：sdkApiVersion.sdkMinorApiVersion.sdkPatchApiVersion。 **模型约束：** 此接口仅可在Stage模型下使用。 **起始版本**：26.0.0 **元服务API**：从API版本26.0.0开始，该接口支持在元服务中使用。 示例：0 |
 | sdkPatchApiVersion | number | 是 | 系统软件Patch API版本。**从** API 26.0.0 版本开始，系统API版本格式：sdkApiVersion.sdkMinorApiVersion.sdkPatchApiVersion。 **模型约束：** 此接口仅可在Stage模型下使用。 **起始版本**：26.0.0 **元服务API**：从API版本26.0.0开始，该接口支持在元服务中使用。 示例：0 |
 | firstApiVersion | number | 是 | 首个版本系统软件API版本。 示例：3 |
-| versionId | string | 是 | 版本ID。由deviceType、manufacture、brand、productSeries、osFullName、productModel、softwareModel、sdkApiVersion、incrementalVersion、buildType拼接组成。 示例：wearable/HUAWEI/HUAWEI/TAS/OpenHarmony-5.0.0.1/TAS-AL00/TAS-AL00/12/default/release:nolog |
+| versionId | string | 是 | 版本ID。由deviceType、manufacture、brand、productSeries、osFullName、productModel、softwareModel、sdkApiVersion、incrementalVersion、buildType拼接组成。 |
 | buildType | string | 是 | 构建类型。 示例：default |
 | buildUser | string | 是 | 构建用户。 示例：default |
 | buildHost | string | 是 | 构建主机。 示例：default |
@@ -72,10 +72,10 @@ import { deviceInfo } from '@kit.BasicServicesKit';
 | distributionOSReleaseType10+ | string | 是 | 发行版系统类型。 示例：Release |
 | ODID12+ | string | 是 | ODID（Open Developer Identifier，开发者匿名设备标识符）。 **ODID值会在以下场景重新生成**： 手机恢复出厂设置。 同一设备上同一个开发者(developerId相同)的应用全部卸载后重新安装时。 **ODID生成规则**： 根据签名信息里developerId解析出的groupId生成，developerId规则为groupId.developerId，若无groupId则取整个developerId作为groupId。 同一设备上运行的同一个开发者(developerId相同)的应用，ODID相同。 同一个设备上不同开发者(developerId不同)的应用，ODID不同。 不同设备上同一个开发者(developerId相同)的应用，ODID不同。 不同设备上不同开发者(developerId不同)的应用，ODID不同。 **说明**：数据长度为37字节(包含结束符)。 示例：1234a567-XXXX-XXXX-XXXX-XXXXXXXXXXXX |
 | diskSN15+ | string | 是 | 硬盘序列号。 **说明** ：该字段只能在部分2in1设备上进行查询，其他设备查询结果为空。 **需要权限**：ohos.permission.ACCESS_DISK_PHY_INFO 示例：2502EM400567 |
-| performanceClass19+ | [PerformanceClassLevel](#performanceclasslevel19) | 是 | 描述设备能力等级，基于CPU、内存、存储读写性能和屏幕分辨率等因素综合评估。 **使用场景**：用于根据设备能力进行性能适配，如调整动画复杂度、选择不同质量的资源、动态控制功能特性等。 示例：CLASS_LEVEL_HIGH |
+| performanceClass19+ | [PerformanceClassLevel](#performanceclasslevel19) | 是 | 描述设备能力等级，基于CPU、内存、存储读写性能和屏幕分辨率等因素综合评估。 **使用场景**：用于根据设备能力进行性能适配，如调整动画复杂度、选择不同质量的资源、动态控制功能特性等。 示例：0 |
 | chipType21+ | string | 是 | 当前设备CPU芯片型号。 示例：xxxxx |
 | bootCount21+ | number | 是 | 当前设备重启次数，获取失败时返回-1。 示例：100 |
-| deviceColor | string | 是 | 当前设备颜色。如果无法获取，则返回空字符串 **模型约束：** 此接口仅可在Stage模型下使用。 **起始版本**：26.0.0 示例：blue |
+| deviceColor | string | 是 | 当前设备颜色。如果无法获取，则返回空字符串 **模型约束：** 此接口仅可在Stage模型下使用。 **起始版本**：26.0.0 示例：gold |
 | **错误码：** | | | |
 
 以下错误码的详细介绍请参见[deviceInfo错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-device-info)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
@@ -95,11 +95,11 @@ let deviceTypeInfo: string = deviceInfo.deviceType;
 console.info('the value of the deviceType is :' + deviceTypeInfo);
 
 let manufactureInfo: string = deviceInfo.manufacture;
-// 输出结果：the value of the manufacture is :HUAWEI
+// 输出结果：the value of the manufacture is :XXXX
 console.info('the value of the manufactureInfo is :' + manufactureInfo);
 
 let brandInfo: string = deviceInfo.brand;
-// 输出结果：the value of the brand is :HUAWEI
+// 输出结果：the value of the brand is :XXXX
 console.info('the value of the device brand is :' + brandInfo);
 
 let marketNameInfo: string = deviceInfo.marketName;
@@ -190,7 +190,7 @@ let firstApiVersionInfo: number = deviceInfo.firstApiVersion;
 console.info('the value of the deviceInfo firstApiVersion is :' + firstApiVersionInfo);
 
 let versionIdInfo: string = deviceInfo.versionId;
-// 输出结果：the value of the versionId is :wearable/HUAWEI/HUAWEI/TAS/OpenHarmony-5.0.0.1/TAS-AL00/TAS-AL00/12/default/release:nolog
+// 输出结果：the value of the versionId is :wearable/XXXX/XXXX/TAS/HarmonyOS-5.0.0.1/TAS-AL00/TAS-AL00/12/default/release:nolog
 console.info('the value of the deviceInfo versionId is :' + versionIdInfo);
 
 let buildTypeInfo: string = deviceInfo.buildType;
