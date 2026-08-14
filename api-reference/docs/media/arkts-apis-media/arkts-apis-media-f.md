@@ -2,8 +2,8 @@
 title: "Functions"
 upstream_id: "harmonyos-references/arkts-apis-media-f"
 catalog: "harmonyos-references"
-content_hash: "dd48f2d9cb83"
-synced_at: "2026-08-07T15:58:58.001315"
+content_hash: "0854d04808c6"
+synced_at: "2026-08-14T15:55:29.425584"
 ---
 
 # Functions
@@ -911,7 +911,7 @@ createMediaSourceWithDirectory(path: string): Promise<MediaSource | undefined>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 5411007 | The directory specified by the path parameter does not exist or unaccessed. |
+| 5411007 | The directory specified by the path parameter does not exist or inaccessible. |
 
 示例：
 

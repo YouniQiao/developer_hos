@@ -2,8 +2,8 @@
 title: "ArkUI_PointF"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-pointf"
 catalog: "harmonyos-references"
-content_hash: "703230f1bd22"
-synced_at: "2026-07-28T16:49:33.945341"
+content_hash: "f8b43efd03da"
+synced_at: "2026-08-14T15:53:38.695888"
 ---
 
 # ArkUI_PointF
@@ -20,7 +20,7 @@ typedef struct {...} ArkUI_PointF
 
 相关模块： [ArkUI_NativeModule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule)
 
-所在头文件： [native_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h)
+所在头文件： [native_type_visual.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h)
 
 #### 汇总
 

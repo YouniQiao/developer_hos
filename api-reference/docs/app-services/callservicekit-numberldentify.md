@@ -2,8 +2,8 @@
 title: "numberIdentify (号码识别查询基本能力)"
 upstream_id: "harmonyos-references/callservicekit-numberldentify"
 catalog: "harmonyos-references"
-content_hash: "a95df2dbad2b"
-synced_at: "2026-07-09T01:01:16.224605"
+content_hash: "48be6cdb9acc"
+synced_at: "2026-08-14T15:55:58.418222"
 ---
 
 # numberIdentify (号码识别查询基本能力)
@@ -57,12 +57,12 @@ isSupportEnterpriseNumberIdentify(context: Context): Promise<boolean>
 
 ```
 import { numberIdentify } from '@kit.CallServiceKit';
-import type {common} from '@kit.AbilityKit'
+import type {common} from '@kit.AbilityKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
 let context = this.getUIContext().getHostContext() as common.UIAbilityContext;
 let isSupport = await numberIdentify.isSupportEnterpriseNumberIdentify(context);
-hilog.info(0, 'TAG',`isSupport:${isSupport}`);
+hilog.info(0, 'TAG', `isSupport:${isSupport}`);
 ```
 
 #### queryNumberIdentifySwitchState
@@ -102,13 +102,13 @@ queryNumberIdentifySwitchState(context: Context):SwitchState
 示例：
 
 ```
-import type {common} from '@kit.AbilityKit'
+import type {common} from '@kit.AbilityKit';
 import { numberIdentify } from '@kit.CallServiceKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
  
 let context = this.getUIContext().getHostContext() as common.UIAbilityContext;
 let switchState = numberIdentify.queryNumberIdentifySwitchState(context);
-hilog.info(0, 'TAG',`switchState is:${JSON.stringify(switchState)}`);
+hilog.info(0, 'TAG', `switchState is:${JSON.stringify(switchState)}`);
 ```
 
 #### SwitchState

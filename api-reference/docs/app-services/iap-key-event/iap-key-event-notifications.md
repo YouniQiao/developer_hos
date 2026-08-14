@@ -2,8 +2,8 @@
 title: "服务端关键事件通知"
 upstream_id: "harmonyos-references/iap-key-event-notifications"
 catalog: "harmonyos-references"
-content_hash: "e63a6c5164bb"
-synced_at: "2026-07-09T01:01:22.146122"
+content_hash: "28e23cefca58"
+synced_at: "2026-08-14T15:56:03.183485"
 ---
 
 # 服务端关键事件通知
@@ -53,7 +53,7 @@ synced_at: "2026-07-09T01:01:22.146122"
 
 关键事件通知处理流程建议如下：
 
-![](./img/zh-cn_image_0000002631414502.png)
+![](./img/zh-cn_image_0000002709528101.png)
 
 1. IAP服务器发送订单/订阅关键事件通知。
 2. 应用服务器收到通知请求后，从通知中获取购买Token。
@@ -67,6 +67,8 @@ synced_at: "2026-07-09T01:01:22.146122"
 不允许开发者服务器设置IP允许清单用于限制华为侧的出口IP地址。IP允许清单本身并不能提高安全性且会给业务发展带来约束，在消息层面已有更安全的JWS签名机制条件下，没有存在价值。不遵守该约定而导致的后果将由开发者自行承担。
 
 必须在开发前在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)中配置开发者服务器的回调地址，地址必须支持HTTPS协议且具有合法商用证书，出于安全考虑，cipher需要支持ECDHE-RSA-AES128-GCM-SHA256、ECDHE-ECDSA-AES128-GCM-SHA256、ECDHE-RSA-AES256-GCM-SHA384或ECDHE-ECDSA-AES256-GCM-SHA384中至少一种，否则无法正常接收通知消息。
+
+华为IAP关键事件通知仅通过IPv4链路发送，请确保回调地址支持IPv4访问。若回调地址仅支持IPv6，将无法正常接收通知消息。
 
 #### 接口原型
 

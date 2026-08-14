@@ -2,8 +2,8 @@
 title: "ArkUI_ScaleOptions"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-scaleoptions"
 catalog: "harmonyos-references"
-content_hash: "637ea20b7f07"
-synced_at: "2026-07-28T16:49:34.066607"
+content_hash: "3f34f4b134d1"
+synced_at: "2026-08-14T15:53:38.833241"
 ---
 
 # ArkUI_ScaleOptions
@@ -20,7 +20,7 @@ typedef struct {...} ArkUI_ScaleOptions
 
 相关模块： [ArkUI_NativeModule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule)
 
-所在头文件： [native_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h)
+所在头文件： [native_type_visual.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h)
 
 #### 汇总
 

@@ -2,8 +2,8 @@
 title: "ArkUI_RotationOptions"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-rotationoptions"
 catalog: "harmonyos-references"
-content_hash: "b8cf54575a1d"
-synced_at: "2026-07-28T16:49:34.245555"
+content_hash: "83744bf6e3f1"
+synced_at: "2026-08-14T15:53:38.952682"
 ---
 
 # ArkUI_RotationOptions
@@ -20,7 +20,7 @@ typedef struct {...} ArkUI_RotationOptions
 
 相关模块： [ArkUI_NativeModule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule)
 
-所在头文件： [native_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h)
+所在头文件： [native_type_visual.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h)
 
 #### 汇总
 

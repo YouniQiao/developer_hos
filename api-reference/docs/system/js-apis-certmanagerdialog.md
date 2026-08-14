@@ -2,8 +2,8 @@
 title: "@ohos.security.certManagerDialog (证书管理对话框模块)"
 upstream_id: "harmonyos-references/js-apis-certmanagerdialog"
 catalog: "harmonyos-references"
-content_hash: "ef2a34cfd433"
-synced_at: "2026-07-28T16:50:32.104804"
+content_hash: "0f598583b0c9"
+synced_at: "2026-08-14T15:54:21.542675"
 ---
 
 # @ohos.security.certManagerDialog (证书管理对话框模块)
@@ -187,7 +187,7 @@ try {
   }).catch((error: Error) => {
     let err = error as BusinessError;
     console.error(`Failed to open certificate manager dialog. Code: ${err.code}, message: ${err.message}`);
-  })
+  });
 } catch (error) {
   console.error(`Failed to open certificate manager dialog. Code: ${error.code}, message: ${error.message}`);
 }
@@ -205,7 +205,7 @@ openInstallCertificateDialog(context: common.Context, certType: CertificateType,
 
 设备行为差异：
 
-1. 入参certType为CA_CERT时，该接口在PC/2in1设备中可以正常调用，在其他设备中会返回29700004错误码。从版本26.0.0开始，可以通过[supportsCACertDialog](#certificatemanagerdialogsupportscacertdialog)来判断本设备是否支持打开CA证书安装对话框。
+1. 入参certType为CA_CERT时，该接口在PC/2in1设备中可以正常调用，在其他设备中会返回29700004错误码。从API版本26.0.0开始，可以通过[supportsCACertDialog](#certificatemanagerdialogsupportscacertdialog)来判断本设备是否支持打开CA证书安装对话框。
 2. 入参certType为CREDENTIAL_USER或CREDENTIAL_SYSTEM时，在PC/2in1、phone和tablet设备中可以正常调用。
 
 模型约束： 此接口仅可在Stage模型下使用。
@@ -256,7 +256,7 @@ let certificateType: certificateManagerDialog.CertificateType = certificateManag
 let certificateScope: certificateManagerDialog.CertificateScope = certificateManagerDialog.CertificateScope.CURRENT_USER;
 /* 安装的CA证书数据需要业务赋值，本例数据非CA证书数据 */
 let caCert: Uint8Array = new Uint8Array([
-  0x30, 0x82, 0x0b, 0xc1, 0x02, 0x01,
+  0x30, 0x82, 0x0b, 0xc1, 0x02, 0x01
 ]);
 try {
   certificateManagerDialog.openInstallCertificateDialog(context, certificateType, certificateScope, caCert).then((uri: string) => {
@@ -264,7 +264,7 @@ try {
   }).catch((error: Error) => {
     let err = error as BusinessError;
     console.error(`Failed to open install certificate dialog. Code: ${err.code}, message: ${err.message}`);
-  })
+  });
 } catch (error) {
   console.error(`Failed to open install certificate dialog. Code: ${error.code}, message: ${error.message}`);
 }
@@ -280,7 +280,7 @@ openUninstallCertificateDialog(context: common.Context, certType: CertificateTyp
 
 系统能力： SystemCapability.Security.CertificateManagerDialog
 
-设备行为差异： 该接口在PC/2in1设备可正常调用，在其他设备中返回29700004错误码。从版本26.0.0开始，可以通过[supportsCACertDialog](#certificatemanagerdialogsupportscacertdialog)来判断是否支持打开CA证书卸载对话框。
+设备行为差异： 该接口在PC/2in1设备可正常调用，在其他设备中返回29700004错误码。从API版本26.0.0开始，可以通过[supportsCACertDialog](#certificatemanagerdialogsupportscacertdialog)来判断是否支持打开CA证书卸载对话框。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -332,7 +332,7 @@ try {
   }).catch((error: Error) => {
     let err = error as BusinessError;
     console.error(`Failed to open uninstall certificate dialog. Code: ${err.code}, message: ${err.message}`);
-  })
+  });
 } catch (error) {
   console.error(`Failed to open uninstall certificate dialog. Code: ${error.code}, message: ${error.message}`);
 }
@@ -348,7 +348,7 @@ openCertificateDetailDialog(context: common.Context, cert: Uint8Array, property:
 
 系统能力： SystemCapability.Security.CertificateManagerDialog
 
-设备行为差异： 该接口在PC/2in1设备可正常调用，在其他设备中返回29700004错误码。从版本26.0.0开始，可以通过[supportsCACertDialog](#certificatemanagerdialogsupportscacertdialog)来判断是否支持打开CA证书详情对话框。
+设备行为差异： 该接口在PC/2in1设备可正常调用，在其他设备中返回29700004错误码。从API版本26.0.0开始，可以通过[supportsCACertDialog](#certificatemanagerdialogsupportscacertdialog)来判断是否支持打开CA证书详情对话框。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -390,7 +390,7 @@ import { UIContext } from '@kit.ArkUI';
 let context: common.Context = new UIContext().getHostContext() as common.Context;
 /* 安装的CA证书数据需要业务赋值，本例数据非CA证书数据 */
 let caCert: Uint8Array = new Uint8Array([
-  0x30, 0x82, 0x0b, 0xc1, 0x02, 0x01,
+  0x30, 0x82, 0x0b, 0xc1, 0x02, 0x01
 ]);
 let property: certificateManagerDialog.CertificateDialogProperty = {
   showInstallButton: false /* 不显示安装按钮 */
@@ -401,7 +401,7 @@ try {
   }).catch((error: Error) => {
     let err = error as BusinessError;
     console.error(`Failed to open certificate detail dialog. Code: ${err.code}, message: ${err.message}`);
-  })
+  });
 } catch (error) {
   console.error(`Failed to open certificate detail dialog. Code: ${error.code}, message: ${error.message}`);
 }
@@ -456,7 +456,7 @@ let context: common.Context = new UIContext().getHostContext() as common.Context
 try {
   /* 打开证书管理对话框的证书凭据授权页面。 */
   certificateManagerDialog.openAuthorizeDialog(context).then((uri: string) => {
-    console.info(`Succeeded in authorizing certificate, uri: ${uri}`)
+    console.info(`Succeeded in authorizing certificate, uri: ${uri}`);
   }).catch((error: Error) => {
     let err = error as BusinessError;
     console.error(`Failed to authorize certificate. Code: ${err.code}, message: ${err.message}`);
@@ -530,7 +530,7 @@ let authorizeRequest: certificateManagerDialog.AuthorizeRequest = { certTypes: c
 try {
   certificateManagerDialog.openAuthorizeDialog(context, authorizeRequest).then((certReference: certificateManagerDialog.CertReference) => {
     let reference = certReference;
-    console.info(`Succeeded in opening authorize dialog.`)
+    console.info(`Succeeded in opening authorize dialog.`);
   }).catch((error: Error) => {
     let err = error as BusinessError;
     console.error(`Failed to open authorize dialog. Code: ${err.code}, message: ${err.message}`);
@@ -595,11 +595,11 @@ import { UIContext } from '@kit.ArkUI';
 /* context为应用的上下文信息，调用方自行获取，此处仅为示例 */
 let context: common.Context = new UIContext().getHostContext() as common.Context;
 /* keyUri为证书凭据的唯一标识符，调用方自行获取，此处仅为示例 */
-let keyUri: string = "test"
-let ukeyAuthRequest: certificateManagerDialog.UkeyAuthRequest = { keyUri: keyUri }
+let keyUri: string = "test";
+let ukeyAuthRequest: certificateManagerDialog.UkeyAuthRequest = { keyUri: keyUri };
 try {
   certificateManagerDialog.openUkeyAuthDialog(context, ukeyAuthRequest).then(() => {
-    console.info(`Succeeded in opening ukey authorization dialog`)
+    console.info(`Succeeded in opening ukey authorization dialog`);
   }).catch((error: Error) => {
     let err = error as BusinessError;
     console.error(`Failed to open ukey authorization dialog. Code: ${err.code}, message: ${err.message}`);
@@ -645,7 +645,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 try {
   /* 判断设备是否支持打开CA证书管理对话框。 */
   let isSupport: boolean = certificateManagerDialog.supportsCACertDialog();
-  console.info(`Succeeded in checking whether the device supports CA dialog.`)
+  console.info(`Succeeded in checking whether the device supports CA dialog.`);
 } catch (err) {
   let error = err as BusinessError;
   console.error(`Failed to check whether the device supports CA dialog. Code: ${error.code}, message: ${error.message}`);

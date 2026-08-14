@@ -2,8 +2,8 @@
 title: "@ohos.pasteboard (剪贴板)"
 upstream_id: "harmonyos-references/js-apis-pasteboard"
 catalog: "harmonyos-references"
-content_hash: "bb4f197bf195"
-synced_at: "2026-08-11T16:02:52.696919"
+content_hash: "c71f065e9870"
+synced_at: "2026-08-14T15:54:42.562752"
 ---
 
 # @ohos.pasteboard (剪贴板)
@@ -639,7 +639,7 @@ struct PasteboardTest {
 
 #### PasteDataRecord7+
 
-对于剪贴板中内容记录的抽象定义，称之为条目。剪贴板内容部分由一个或者多个条目构成，例如一条文本内容、一份HTML、一个URI或者一个Want。
+对于剪贴板中内容记录的抽象定义，称之为条目。剪贴板内容部分由一个或者多个条目构成，例如一条文本内容、一份HTML、一个URI或者一个Want。不支持在创建PasteDataRecord之后，修改PasteDataRecord的默认数据类型的值，应在创建PasteDataRecord时指定正确的默认数据类型的值。如需刷新PasteDataRecord的属性值，请使用[addEntry](#addentry14)。
 
 #### [h2]属性
 
@@ -649,13 +649,13 @@ struct PasteboardTest {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| htmlText | string | 是 | 否 | HTML内容，需符合标准HTML格式。 |
-| want | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 否 | Want内容。 |
-| mimeType | string | 是 | 否 | 默认数据类型。 |
-| plainText | string | 是 | 否 | 纯文本内容。 |
-| uri | string | 是 | 否 | URI内容，需符合标准URI格式。 |
-| pixelMap9+ | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 是 | 否 | PixelMap内容。 |
-| data9+ | Record | 是 | 否 | 自定义数据内容。 |
+| htmlText | string | 否 | 否 | HTML内容，需符合标准HTML格式。对此属性的修改无效，如需刷新属性值，请使用[addEntry](#addentry14)。 |
+| want | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 否 | 否 | Want内容。对此属性的修改无效，如需刷新属性值，请使用[addEntry](#addentry14)。 |
+| mimeType | string | 否 | 否 | 默认数据类型。对此属性的修改无效。 |
+| plainText | string | 否 | 否 | 纯文本内容。对此属性的修改无效，如需刷新属性值，请使用[addEntry](#addentry14)。 |
+| uri | string | 否 | 否 | URI内容，需符合标准URI格式。对此属性的修改无效，如需刷新属性值，请使用[addEntry](#addentry14)。 |
+| pixelMap9+ | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 否 | 否 | PixelMap内容。对此属性的修改无效，如需刷新属性值，请使用[addEntry](#addentry14)。 |
+| data9+ | Record | 否 | 否 | 自定义数据内容。对此属性的修改无效。 |
 
 #### [h2]toPlainText9+
 

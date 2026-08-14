@@ -2,8 +2,8 @@
 title: "媒体查询"
 upstream_id: "harmonyos-references/js-lite-components-common-mediaquery"
 catalog: "harmonyos-references"
-content_hash: "025522266779"
-synced_at: "2026-07-28T16:49:07.305316"
+content_hash: "112f285572dc"
+synced_at: "2026-08-14T15:53:13.360950"
 ---
 
 # 媒体查询
@@ -11,9 +11,9 @@ synced_at: "2026-07-28T16:49:07.305316"
 ![](./img/note_3.0-zh-cn.png)
 
 - 从API version 8 开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
-- media属性值默认为设备的真实尺寸大小、物理像素和真实的屏幕分辨率。
+- media属性值默认为设备的真实尺寸大小和物理像素。
 
-媒体查询（Media Query）应用十分广泛，开发者经常需要根据设备的大致类型或者特定的特征和设备参数（例如屏幕分辨率）来修改应用的样式。使用媒体查询针对设备和应用的属性信息，可以设计出相匹配的布局样式。
+媒体查询（Media Query）应用十分广泛，开发者经常需要根据设备的大致类型或者特定的特征和设备参数（例如屏幕尺寸）来修改应用的样式。使用媒体查询针对设备和应用的属性信息，可以设计出相匹配的布局样式。
 
 #### CSS语法规则
 
@@ -65,6 +65,7 @@ synced_at: "2026-07-28T16:49:07.305316"
 | aspect-ratio | 应用页面显示区域的宽度与高度的比值。 例如：aspect-ratio: 1/2 |
 | min-aspect-ratio | 应用页面显示区域的宽度与高度的最小比值。 |
 | max-aspect-ratio | 应用页面显示区域的宽度与高度的最大比值。 |
+| device-type | 设备的类型。 可选值：liteWearable、smartVision。 |
 | round-screen | 屏幕类型，圆形屏幕为 true， 非圆形屏幕为 false。 |
 
 #### 通用媒体特征示例代码

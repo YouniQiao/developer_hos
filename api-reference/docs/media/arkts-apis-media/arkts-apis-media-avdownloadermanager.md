@@ -2,8 +2,8 @@
 title: "Interface (AVDownloaderManager)"
 upstream_id: "harmonyos-references/arkts-apis-media-avdownloadermanager"
 catalog: "harmonyos-references"
-content_hash: "16e15620a37a"
-synced_at: "2026-07-28T16:51:55.464016"
+content_hash: "bebb81e1571d"
+synced_at: "2026-08-14T15:55:29.411339"
 ---
 
 # Interface (AVDownloaderManager)
@@ -49,7 +49,7 @@ async function test() {
 
 #### setRequestTimeout
 
-setRequestTimeout(expired: number): void
+setRequestTimeout(timeout: number): void
 
 设置HTTP请求的网络超时时间。超时后下载任务将失败。
 
@@ -63,7 +63,7 @@ setRequestTimeout(expired: number): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| expired | number | 是 | 超时时间，单位为毫秒。 取值限定为整数。 - 若不设置，使用默认超时时间，默认时间为60000毫秒。 - 若值小于等于0，表示无超时限制。 |
+| timeout | number | 是 | 超时时间，单位为毫秒。 取值限定为整数。 - 若不设置，使用默认超时时间，默认时间为60000毫秒。 - 若值小于等于0，表示无超时限制。 |
 
 示例：
 

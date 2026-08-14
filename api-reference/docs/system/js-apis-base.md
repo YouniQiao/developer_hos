@@ -2,8 +2,8 @@
 title: "@ohos.base (公共回调信息)"
 upstream_id: "harmonyos-references/js-apis-base"
 catalog: "harmonyos-references"
-content_hash: "af9bc40416a8"
-synced_at: "2026-07-28T16:50:58.445054"
+content_hash: "b8373562eeec"
+synced_at: "2026-08-14T15:54:42.940051"
 ---
 
 # @ohos.base (公共回调信息)
@@ -114,4 +114,4 @@ BusinessError<T = void> extends Error { code: number; data?: T; }
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | code | number | 否 | 否 | 接口调用失败返回的错误码信息。 |
-| data | T | 否 | 是 | 接口调用失败时返回的附加错误信息。如果不填，则错误对象不包含附加数据。 |
+| data9+ | T | 否 | 是 | 接口调用失败时返回的附加错误信息。如果不填，则错误对象不包含附加数据。 |

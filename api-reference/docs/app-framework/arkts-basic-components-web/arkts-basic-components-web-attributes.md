@@ -2,8 +2,8 @@
 title: "属性"
 upstream_id: "harmonyos-references/arkts-basic-components-web-attributes"
 catalog: "harmonyos-references"
-content_hash: "c5c3936429e7"
-synced_at: "2026-08-11T16:02:08.399332"
+content_hash: "6a74910e18c5"
+synced_at: "2026-08-14T15:53:56.125404"
 ---
 
 # 属性
@@ -1440,16 +1440,16 @@ struct WebComponent {
                         this.dialogController.close()
                     }
                     let popController: webview.WebviewController = new webview.WebviewController();
+                    // 将新窗口对应WebviewController返回给Web内核。
+                    // 若不调用event.handler.setWebController接口，会造成渲染进程阻塞。
+                    // 如果没有创建新窗口，调用event.handler.setWebController接口时设置成null，通知Web没有创建新窗口。
+                    event.handler.setWebController(popController);
                     this.dialogController = new CustomDialogController({
                         builder: NewWebViewComp({ webviewController1: popController }),
                         // isModal设置为false，防止新窗口被销毁而无法触发onActivateContent回调
                         isModal: false
                     })
                     this.dialogController.open();
-                    // 将新窗口对应WebviewController返回给Web内核。
-                    // 若不调用event.handler.setWebController接口，会造成render进程阻塞。
-                    // 如果没有创建新窗口，调用event.handler.setWebController接口时设置成null，通知Web没有创建新窗口。
-                    event.handler.setWebController(popController);
                 })
         }
     }

@@ -2,8 +2,8 @@
 title: "ExceptionPromptV2"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-exceptionpromptv2"
 catalog: "harmonyos-references"
-content_hash: "4438f90902bc"
-synced_at: "2026-07-28T16:48:14.789797"
+content_hash: "b46eafe6867e"
+synced_at: "2026-08-14T15:52:50.537826"
 ---
 
 # ExceptionPromptV2
@@ -216,14 +216,13 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008926.png)
+ ![](./img/zh-cn_image_0000002679807484.png)
 
 #### [h2]示例2（设置弹窗类型的异常提示）
 
 从API版本26.0.0开始，该示例使用自定义弹窗设置弹窗类型的异常提示。
 
 ```
-import { promptAction } from '@kit.ArkUI';
 import { ExceptionPromptV2, MarginTypeV2, PromptOptionsV2 } from '@kit.ArkUI';
 
 @Entry
@@ -271,7 +270,7 @@ struct Index1 {
         .margin({ top: 420 })
         .zIndex(999)
         .onClick(() => {
-          promptAction.openCustomDialog({
+          this.getUIContext().getPromptAction().openCustomDialog({
             builder: () => {
               this.customDialogComponent()
             },
@@ -339,7 +338,7 @@ struct Index1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655849006.gif)
+ ![](./img/zh-cn_image_0000002709527299.gif)
 
 #### [h2]示例3（设置Symbol类型图标）
 
@@ -382,4 +381,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088437.png)
+ ![](./img/zh-cn_image_0000002679967348.png)

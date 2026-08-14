@@ -2,8 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-service-support-kit"
 catalog: "harmonyos-references"
-content_hash: "526f4cc28aa8"
-synced_at: "2026-07-28T16:51:11.882096"
+content_hash: "1d8b6b6e8be7"
+synced_at: "2026-08-14T15:54:53.851662"
 ---
 
 # ArkTS API错误码
@@ -71,7 +71,7 @@ Network error.
 
 错误信息
 
-HiviewCare privacy statement not accepted.
+Smart Diagnosis privacy statement not accepted.
 
 错误描述
 

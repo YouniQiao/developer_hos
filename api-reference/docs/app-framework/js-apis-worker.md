@@ -2,8 +2,8 @@
 title: "@ohos.worker (启动一个Worker)"
 upstream_id: "harmonyos-references/js-apis-worker"
 catalog: "harmonyos-references"
-content_hash: "ac4613af18fe"
-synced_at: "2026-08-04T17:00:52.241008"
+content_hash: "931579507d9f"
+synced_at: "2026-08-14T15:52:21.229883"
 ---
 
 # @ohos.worker (启动一个Worker)
@@ -280,7 +280,7 @@ postMessageWithSharedSendable(message: Object, transfer?: ArrayBuffer[]): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | message | Object | 是 | 发送至Worker的数据，该数据对象必须是可序列化对象，序列化支持类型见[序列化支持类型](#序列化支持类型)。如果需要共享数据，支持类型见[Sendable支持的数据类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable#sendable支持的数据类型)。 |
-| transfer | ArrayBuffer[] | 否 | 可转移的ArrayBuffer实例对象数组。该数组中对象的所有权将转移到Worker线程，在宿主线程中变为不可用，仅在Worker线程中可用，数组不可传入null。默认值为空数组。 |
+| transfer | ArrayBuffer[] | 否 | 可转移的ArrayBuffer实例对象数组。该数组中对象的所有权将转移到Worker线程，在宿主线程中变为不可用，仅在Worker线程中可用，数组不可传入null。默认值为undefined。 |
 
 错误码：
 

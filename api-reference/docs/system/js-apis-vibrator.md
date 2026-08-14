@@ -2,8 +2,8 @@
 title: "@ohos.vibrator (振动)"
 upstream_id: "harmonyos-references/js-apis-vibrator"
 catalog: "harmonyos-references"
-content_hash: "dbdd389e96bc"
-synced_at: "2026-07-28T16:51:19.332500"
+content_hash: "d4f64a04a235"
+synced_at: "2026-08-14T15:54:59.370974"
 ---
 
 # @ohos.vibrator (振动)
@@ -304,7 +304,7 @@ struct Index {
             if (rawFd != undefined) {
               try {
                 vibrator.startVibration({
-                  type: "file",
+                  type: 'file',
                   hapticFd: { fd: rawFd.fd, offset: rawFd.offset, length: rawFd.length }
                 }, {
                   id: 0,
@@ -715,7 +715,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 function vibratorDemo() {
   // 查询所有马达设备信息。
   const vibratorInfoList: vibrator.VibratorInfo[] = vibrator.getVibratorInfoSync();
-  // 根据实际业务逻辑获取目标马达, 例如查找本地马达，此处示例仅做展示，开发者需要自行调整筛选逻辑。
+  // 根据实际业务逻辑获取目标马达，例如查找本地马达，此处示例仅做展示，开发者需要自行调整筛选逻辑。
   const targetVibrator = vibratorInfoList.find((vibrator: vibrator.VibratorInfo) => {
     return vibrator.isLocalVibrator;
   });
@@ -972,7 +972,7 @@ getEffectInfoSync(effectId: string, param?: VibratorInfoParam): EffectInfo
 
 通过设备ID和马达ID获取预置振动效果信息，用于判断该预置振动效果是否受指定设备的指定马达支持。
 
-用于多设备多马达场景下确认指定设备的指定马达是否支持某个预置振动效果，不传param时默认查询本地设备。适用于触发振动前确认效果可用性，避免在不支持的设备或马达上触发振动效果不佳。返回EffectInfo对象，isEffectSupported字段指示是否支持该预置振动效果：返回true时可直接用于startVibration (#vibratorstartvibration9)，返回false时使用该effectId触发振动可能效果不佳。
+用于多设备多马达场景下确认指定设备的指定马达是否支持某个预置振动效果，不传param时默认查询本地设备。适用于触发振动前确认效果可用性，避免在不支持的设备或马达上触发振动效果不佳。返回EffectInfo对象，isEffectSupported字段指示是否支持该预置振动效果：返回true时可直接用于startVibration (#vibratorstartvibration9)，返回false时使用该effectId触发振动可能效果不佳。如果需要跨设备查询预置振动效果是否支持，请使用getEffectInfoSync；如果仅查询本地设备，请使用isSupportEffect。
 
 系统能力：SystemCapability.Sensors.MiscDevice
 
@@ -1113,7 +1113,7 @@ off(type: 'vibratorStateChange', callback?: Callback<VibratorStatusEvent>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 监听类型，该值固定为vibratorStateChange，表示马达上下线状态变化事件。 |
-| callback | Callback | 否 | 需要注销的回调函数。不传此参数时注销所有vibratorStateChange类型的回调。使用场景：若仅需注销特定回调则传入对应callback；若需注销全部回调则不传此参数。 |
+| callback | Callback | 否 | 回调函数，需要注销的回调函数。不传此参数时注销所有vibratorStateChange类型的回调。使用场景：若仅需注销特定回调则传入对应callback；若需注销全部回调则不传此参数。 |
 
 错误码：
 
@@ -1153,7 +1153,7 @@ try {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| timestamp | number | 否 | 否 | 报告事件的时间戳。单位：ms。 |
+| timestamp | number | 否 | 否 | 报告事件的时间戳。单位：ms（毫秒）。 |
 | deviceId | number | 否 | 否 | 设备的ID。可用于[startVibration](#vibratorstartvibration9)和[stopVibration](#vibratorstopvibration19)等接口指定目标设备。 |
 | vibratorCount | number | 否 | 否 | 设备上的马达的数量。 |
 | isVibratorOnline | boolean | 否 | 否 | 指示设备的上线和下线状态。true表示设备上线，可用于触发振动；false表示设备下线，此时该设备的振动不可用。 |
@@ -1256,8 +1256,8 @@ addContinuousEvent(time: number, duration: number, options?: ContinuousParam): V
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| time | number | 是 | 长振事件的起始时间。单位：ms。取值范围：[0,1800000]区间内所有整数。使用场景：用于指定长振事件在振动序列中的起始时间点，多个事件间time值不能重叠。 |
-| duration | number | 是 | 长振事件的持续时间。单位：ms。取值范围：(0,5000]区间内所有整数。 |
+| time | number | 是 | 长振事件的起始时间。单位：ms（毫秒）。取值范围：[0,1800000]区间内所有整数。使用场景：用于指定长振事件在振动序列中的起始时间点，多个事件间time值不能重叠。 |
+| duration | number | 是 | 长振事件的持续时间。单位：ms（毫秒）。取值范围：(0,5000]区间内所有整数。 |
 | options | [ContinuousParam](#continuousparam18) | 否 | 可选参数，用于指定长振事件的振动强度、频率、振动调节曲线和通道编号。不填时使用各参数的默认值（intensity默认100，frequency默认50，index默认0）。 |
 
 返回值：
@@ -1314,7 +1314,7 @@ try {
 
 addTransientEvent(time: number, options?: TransientParam): VibratorPatternBuilder;
 
-添加短振事件的方法, 添加后使用[build](#build18)方法生成[VibratorPattern](#vibratorpattern18)对象。适用于点击、按键等短促振动反馈场景，返回VibratorPatternBuilder对象，支持链式调用继续添加振动事件。
+添加短振事件的方法，添加后使用[build](#build18)方法生成[VibratorPattern](#vibratorpattern18)对象。适用于点击、按键等短促振动反馈场景，返回VibratorPatternBuilder对象，支持链式调用继续添加振动事件。
 
 系统能力：SystemCapability.Sensors.MiscDevice
 
@@ -1322,7 +1322,7 @@ addTransientEvent(time: number, options?: TransientParam): VibratorPatternBuilde
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| time | number | 是 | 短振事件的起始时间。单位：ms。取值范围：[0,1800000]区间内所有整数。使用场景：用于指定短振事件在振动序列中的起始时间点，多个事件间time值不能重叠。 |
+| time | number | 是 | 短振事件的起始时间。单位：ms（毫秒）。取值范围：[0,1800000]区间内所有整数。使用场景：用于指定短振事件在振动序列中的起始时间点，多个事件间time值不能重叠。 |
 | options | [TransientParam](#transientparam18) | 否 | 可选参数，用于指定短振事件的振动强度、频率和通道编号。不填时使用各参数的默认值（intensity默认100，frequency默认50，index默认0）。 |
 
 返回值：
@@ -1482,7 +1482,7 @@ type VibrateEffect = VibrateTime | VibratePreset | VibrateFromFile | VibrateFrom
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | type | 'time' | 否 | 否 | 值为'time'，按照指定时长触发马达振动。固定值，不可更改。 |
-| duration | number | 否 | 否 | 马达持续振动时长。单位：ms。取值范围：(0,1800000]区间内所有整数。由于实际产品厂商驱动对器件保护设计规格不同，不同设备实际最大振动时长会有差异。建议值：单次触发长振动一般建议不超过10000（10秒），以最大化用户体验。 |
+| duration | number | 否 | 否 | 马达持续振动时长。单位：ms（毫秒）。取值范围：(0,1800000]区间内所有整数。由于实际产品厂商驱动对器件保护设计规格不同，不同设备实际最大振动时长会有差异。建议值：单次触发长振动一般建议不超过10000（10秒），以最大化用户体验。 |
 
 #### VibratePreset9+
 
@@ -1523,8 +1523,8 @@ type VibrateEffect = VibrateTime | VibratePreset | VibrateFromFile | VibrateFrom
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | fd | number | 否 | 否 | 资源文件描述符。可通过[fileIo.open](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#fileioopen)从沙箱路径获取或通过[getRawFd](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager#getrawfd9)从HAP资源获取。 |
-| offset | number | 否 | 是 | 距文件起始位置的偏移量。单位：字节。默认值：文件起始位置（0）。取值范围：不可超出文件有效范围。使用场景：适用于振动配置文件中包含多种振动效果、需要指定从特定偏移位置开始振动的场景。不填写时默认从文件起始位置开始。 |
-| length | number | 否 | 是 | 资源长度。单位：字节。默认值：从偏移位置至文件结尾的长度。取值范围：不可超出文件有效范围。使用场景：适用于振动配置文件中包含多种振动效果、需要指定特定长度振动的场景。不填写时默认读取从偏移位置至文件结尾的全部内容。 |
+| offset | number | 否 | 是 | 距文件起始位置的偏移量。单位：B（字节）。默认值：文件起始位置（0）。取值范围：不可超出文件有效范围。使用场景：适用于振动配置文件中包含多种振动效果、需要指定从特定偏移位置开始振动的场景。不填写时默认从文件起始位置开始。 |
+| length | number | 否 | 是 | 资源长度。单位：B（字节）。默认值：从偏移位置至文件结尾的长度。取值范围：不可超出文件有效范围。使用场景：适用于振动配置文件中包含多种振动效果、需要指定特定长度振动的场景。不填写时默认读取从偏移位置至文件结尾的全部内容。 |
 
 #### VibratorEventType18+
 
@@ -1545,7 +1545,7 @@ type VibrateEffect = VibrateTime | VibratePreset | VibrateFromFile | VibrateFrom
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| time | number | 否 | 否 | 起始时间偏移。单位：ms。用于指定振动调节曲线中该调节点的时间位置。 |
+| time | number | 否 | 否 | 起始时间偏移。单位：ms（毫秒）。用于指定振动调节曲线中该调节点的时间位置。 |
 | intensity | number | 否 | 是 | 可选参数，相对事件振动强度增益。取值范围：[0,1]。默认值：1。使用场景：适用于精细调节振动强度的交互反馈场景，值越大振动越强。不填写时默认使用最大增益。 |
 | frequency | number | 否 | 是 | 可选参数，相对事件振动频率变化。取值范围：[-100,100]内所有整数。默认值：0。使用场景：适用于精细调节振动频率的交互反馈场景，正值频率升高，负值频率降低。不填写时默认不改变频率。 |
 
@@ -1558,8 +1558,8 @@ type VibrateEffect = VibrateTime | VibratePreset | VibrateFromFile | VibrateFrom
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | eventType | VibratorEventType | 否 | 否 | 振动事件类型。CONTINUOUS（0）表示长振，TRANSIENT（1）表示短振。 |
-| time | number | 否 | 否 | 振动起始时间。单位：ms。取值范围：[0,1800000]区间内所有整数。用于指定振动事件在序列中的起始时间点。 |
-| duration | number | 否 | 是 | 可选参数，表示振动持续时间。单位：ms。取值范围：(0,5000]区间所有整数。默认值：短振默认48，长振默认1000。使用场景：适用于长振和短振交互反馈场景。不填写时使用对应类型的默认持续时间。 |
+| time | number | 否 | 否 | 振动起始时间。单位：ms（毫秒）。取值范围：[0,1800000]区间内所有整数。用于指定振动事件在序列中的起始时间点，多个事件间time值不能重叠。 |
+| duration | number | 否 | 是 | 可选参数，表示振动持续时间。单位：ms（毫秒）。取值范围：(0,5000]区间所有整数。默认值：短振默认48，长振默认1000。使用场景：适用于长振和短振交互反馈场景。不填写时使用对应类型的默认持续时间。 |
 | intensity | number | 否 | 是 | 可选参数，表示振动强度。取值范围：[0,100]区间所有整数。默认值：100。不填写时默认使用最大强度。 |
 | frequency | number | 否 | 是 | 可选参数，表示振动频率。取值范围：[0,100]区间内所有整数。默认值：50。不填写时默认使用中等频率。 |
 | index | number | 否 | 是 | 可选参数，表示马达通道编号。取值范围：[0,2]区间内所有整数。默认值：0。使用场景：不同通道对应不同的马达器件，适用于多马达设备的精细控制场景。不填写时默认使用通道0。 |
@@ -1573,7 +1573,7 @@ type VibrateEffect = VibrateTime | VibratePreset | VibrateFromFile | VibrateFrom
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| time | number | 否 | 否 | 振动绝对起始时间。单位：ms。 |
+| time | number | 否 | 否 | 振动绝对起始时间。单位：ms（毫秒）。 |
 | events | Array | 否 | 否 | 振动事件数组。由[VibratorPatternBuilder](#vibratorpatternbuilder18)的addContinuousEvent和addTransientEvent方法添加后通过build方法生成。同一VibratorPattern中多个VibratorEvent的time值不能重叠。 |
 
 #### ContinuousParam18+
@@ -1586,7 +1586,7 @@ type VibrateEffect = VibrateTime | VibratePreset | VibrateFromFile | VibrateFrom
 | --- | --- | --- | --- | --- |
 | intensity | number | 否 | 是 | 可选参数，表示振动强度。取值范围：[0,100]内所有整数。默认值：100。不填写时默认使用最大强度。 |
 | frequency | number | 否 | 是 | 可选参数，表示振动频率。取值范围：[0,100]内所有整数。默认值：50。不填写时默认使用中等频率。 |
-| points | [VibratorCurvePoint](#vibratorcurvepoint18)[] | 否 | 是 | 可选参数，表示振动调节曲线数组。数组中元素个数最少设置4个，最大设置16个。 |
+| points | [VibratorCurvePoint](#vibratorcurvepoint18)[] | 否 | 是 | 可选参数，表示振动调节曲线数组。使用场景：适用于需要精细控制振动强度和频率变化趋势的交互反馈场景。数组中元素个数最少设置4个，最大设置16个。 |
 | index | number | 否 | 是 | 可选参数，表示通道编号。取值范围：[0,2]区间内所有整数。默认值：0。使用场景：不同通道对应不同的马达器件，适用于多马达设备的精细控制场景。不填写时默认使用通道0。 |
 
 #### TransientParam18+
@@ -1664,7 +1664,7 @@ vibrate(duration: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| duration | number | 是 | 马达振动时长。单位：ms。取值范围：(0,1800000]区间的所有整数。由于实际产品厂商驱动对器件保护设计规格不同，不同设备实际最大振动时长会有差异。建议值：单次触发长振动一般建议不超过10000（10秒），以最大化用户体验。 |
+| duration | number | 是 | 马达振动时长。单位：ms（毫秒）。取值范围：(0,1800000]区间的所有整数。由于实际产品厂商驱动对器件保护设计规格不同，不同设备实际最大振动时长会有差异。建议值：单次触发长振动一般建议不超过10000（10秒），以最大化用户体验。 |
 
 返回值：
 
@@ -1701,7 +1701,7 @@ vibrate(duration: number, callback?: AsyncCallback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| duration | number | 是 | 马达振动时长。单位：ms。取值范围：(0,1800000]区间的所有整数。由于实际产品厂商驱动对器件保护设计规格不同，不同设备实际最大振动时长会有差异。建议值：单次触发长振动一般建议不超过10000（10秒），以最大化用户体验。 |
+| duration | number | 是 | 马达振动时长。单位：ms（毫秒）。取值范围：(0,1800000]区间的所有整数。由于实际产品厂商驱动对器件保护设计规格不同，不同设备实际最大振动时长会有差异。建议值：单次触发长振动一般建议不超过10000（10秒），以最大化用户体验。 |
 | callback | AsyncCallback | 否 | 回调函数，当马达振动成功，err为undefined，否则为错误对象。使用场景：不填写时仅触发振动不获取回调结果。 |
 
 示例：

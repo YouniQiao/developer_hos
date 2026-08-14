@@ -2,8 +2,8 @@
 title: "deviceDetection (设备硬件一致性检测)"
 upstream_id: "harmonyos-references/servicesupport-api-devicedetection"
 catalog: "harmonyos-references"
-content_hash: "124cb817df40"
-synced_at: "2026-08-07T15:58:21.855535"
+content_hash: "be082e8c70f7"
+synced_at: "2026-08-14T15:54:53.737899"
 ---
 
 # deviceDetection (设备硬件一致性检测)
@@ -49,7 +49,7 @@ getDeviceComponentVerificationDetails(): Promise<DeviceComponentVerificationResu
 | 1029600001 | Insufficient memory. |
 | 1029600101 | Service exception. |
 | 1029600301 | Network error. |
-| 1029600302 | HiviewCare privacy statement not accepted. |
+| 1029600302 | Smart Diagnosis privacy statement not accepted. |
 
 示例：
 

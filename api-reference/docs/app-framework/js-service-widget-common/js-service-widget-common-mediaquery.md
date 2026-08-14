@@ -2,8 +2,8 @@
 title: "媒体查询"
 upstream_id: "harmonyos-references/js-service-widget-common-mediaquery"
 catalog: "harmonyos-references"
-content_hash: "997fd1e9fdcc"
-synced_at: "2026-07-28T16:49:12.428098"
+content_hash: "7a62a1028cfa"
+synced_at: "2026-08-14T15:53:17.047051"
 ---
 
 # 媒体查询
@@ -99,6 +99,7 @@ media属性值默认为设备的真实尺寸大小、物理像素和真实的屏
 | min-device-height | 设备的最小高度。 |
 | max-device-height | 设备的最大高度。 |
 | device-width | 设备的宽度。 |
+| device-type | 设备的类型。 支持的取值包括：default、phone、tablet、tv、car、wearable、2in1。 |
 | min-device-width | 设备的最小宽度。 |
 | max-device-width | 设备的最大宽度。 |
 | round-screen | 屏幕类型，圆形屏幕为true， 非圆形屏幕为 false。 |

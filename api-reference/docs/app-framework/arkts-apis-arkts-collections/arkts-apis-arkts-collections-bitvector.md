@@ -2,8 +2,8 @@
 title: "Class (BitVector)"
 upstream_id: "harmonyos-references/arkts-apis-arkts-collections-bitvector"
 catalog: "harmonyos-references"
-content_hash: "adfc0f3723ae"
-synced_at: "2026-08-11T16:01:09.341976"
+content_hash: "44daf5aba22a"
+synced_at: "2026-08-14T15:52:17.476840"
 ---
 
 # Class (BitVector)
@@ -197,7 +197,7 @@ setBitsByRange(element: number, fromIndex: number, toIndex: number): void
 | --- | --- | --- | --- |
 | element | number | 是 | 待设置的bit值，0表示0，其余值表示1。 |
 | fromIndex | number | 是 | 范围起始索引，包含本索引值。fromIndex = toIndex时，则会抛出错误。 |
-| toIndex | number | 是 | 范围终止索引，不包含本索引值。toIndex length时，则会抛出错误。 |
+| toIndex | number | 是 | 范围终止索引，不包含本索引值。toIndex = length时，则会抛出错误。 |
 
 错误码：
 
@@ -273,7 +273,7 @@ getBitsByRange(fromIndex: number, toIndex: number): BitVector
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | fromIndex | number | 是 | 范围起始索引，包含本索引值。fromIndex = toIndex时，则会抛出错误。 |
-| toIndex | number | 是 | 范围终止索引，不包含本索引值。toIndex length时，则会抛出错误。 |
+| toIndex | number | 是 | 范围终止索引，不包含本索引值。toIndex = length时，则会抛出错误。 |
 
 返回值：
 
@@ -364,7 +364,7 @@ getBitCountByRange(element: number, fromIndex: number, toIndex: number): number
 | --- | --- | --- | --- |
 | element | number | 是 | 待统计的bit值，0表示0，其余值表示1。 |
 | fromIndex | number | 是 | 范围起始索引，包含本索引值。fromIndex = toIndex时，则会抛出错误。 |
-| toIndex | number | 是 | 范围终止索引，不包含本索引值。toIndex length时，则会抛出错误。 |
+| toIndex | number | 是 | 范围终止索引，不包含本索引值。toIndex = length时，则会抛出错误。 |
 
 返回值：
 
@@ -411,7 +411,7 @@ getIndexOf(element: number, fromIndex: number, toIndex: number): number
 | --- | --- | --- | --- |
 | element | number | 是 | 待查找的bit值，0表示0，其余值表示1。 |
 | fromIndex | number | 是 | 范围起始索引，包含本索引值。fromIndex = toIndex时，则会抛出错误。 |
-| toIndex | number | 是 | 范围终止索引，不包含本索引值。toIndex length时，则会抛出错误。 |
+| toIndex | number | 是 | 范围终止索引，不包含本索引值。toIndex = length时，则会抛出错误。 |
 
 返回值：
 

@@ -2,15 +2,15 @@
 title: "native_audio_converter.h"
 upstream_id: "harmonyos-references/capi-native-audio-converter-h"
 catalog: "harmonyos-references"
-content_hash: "97f16b15551c"
-synced_at: "2026-07-09T01:00:09.892090"
+content_hash: "471451ec878e"
+synced_at: "2026-08-14T15:55:05.957892"
 ---
 
 # native_audio_converter.h
 
 #### 概述
 
-声明输入音频格式、输出音频格式底层数据结构和格式转换接口的定义。
+声明输入音频格式、输出音频格式底层数据结构和格式转换接口。
 
 引用文件： <ohaudiosuite/native_audio_converter.h>
 
@@ -117,8 +117,8 @@ OH_AudioConverter_Result OH_AudioConverter_Create(const OH_AudioConverter_Format
 
 | 参数项 | 描述 |
 | --- | --- |
-| const [OH_AudioConverter_Format](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-audioconverter-oh-audioconverter-format)* inputFormat | 配置指向输入音频格式的指针。 |
-| const [OH_AudioConverter_Format](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-audioconverter-oh-audioconverter-format)* outputFormat | 配置指向输出音频格式的指针。 |
+| const [OH_AudioConverter_Format](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-audioconverter-oh-audioconverter-format)* inputFormat | 指向输入音频格式的指针。 |
+| const [OH_AudioConverter_Format](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-audioconverter-oh-audioconverter-format)* outputFormat | 指向输出音频格式的指针。 |
 | [OH_AudioConverter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-audioconverter-oh-audioconverterstruct)** converter | 指向可用的音频转换器的指针。 |
 
 返回：
@@ -168,7 +168,7 @@ outInputData指向的内存必须保持有效，直到OH_AudioConverter_Process�
 | --- | --- |
 | void* userData | 传递给回调函数的用户自定义数据。 |
 | const void** outInputData | 指向回调函数设置的指向输入音频数据缓冲区的指针。 |
-| [OH_AudioConverter_InputStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-converter-h#oh_audioconverter_inputstatus)* outStatus | 通过回调函数设置，以通知转换器数据流状态是否可用。 |
+| [OH_AudioConverter_InputStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-converter-h#oh_audioconverter_inputstatus)* outStatus | 通过回调函数设置，用于通知转换器输入数据的状态。 |
 
 返回：
 
@@ -194,7 +194,7 @@ OH_AudioConverter_Result OH_AudioConverter_SetInputCallback(OH_AudioConverter* c
 | --- | --- |
 | [OH_AudioConverter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-audioconverter-oh-audioconverterstruct)* converter | 由[OH_AudioConverter_Create](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-converter-h#oh_audioconverter_create)函数创建转换器。 |
 | [OH_AudioConverter_RequestDataCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-converter-h#oh_audioconverter_requestdatacallback) callback | 回调函数用于写入音频数据。 |
-| userData | 指向将传递给回调函数的应用程序数据结构的指针。 |
+| void* userData | 指向将传递给回调函数的应用程序数据结构的指针。 |
 
 返回：
 
@@ -221,7 +221,7 @@ OH_AudioConverter_Result OH_AudioConverter_Process(OH_AudioConverter* converter,
 | [OH_AudioConverter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-audioconverter-oh-audioconverterstruct)* converter | 由[OH_AudioConverter_Create](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-converter-h#oh_audioconverter_create)函数创建转换器。 |
 | void* outputData | 指向调用者分配的输出缓冲区的指针。 |
 | int32_t outputCapacity | 调用者指定的输出缓冲区大小。 |
-| outputSize | 系统实际写入输出缓冲区数据的大小。 |
+| int32_t* outputSize | 系统实际写入输出缓冲区数据的大小。 |
 
 返回：
 

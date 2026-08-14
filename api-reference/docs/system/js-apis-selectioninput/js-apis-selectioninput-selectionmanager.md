@@ -2,8 +2,8 @@
 title: "@ohos.selectionInput.selectionManager (划词管理)"
 upstream_id: "harmonyos-references/js-apis-selectioninput-selectionmanager"
 catalog: "harmonyos-references"
-content_hash: "3d7c78f14e7a"
-synced_at: "2026-08-07T15:58:10.929286"
+content_hash: "ccba20d488af"
+synced_at: "2026-08-14T15:54:42.483942"
 ---
 
 # @ohos.selectionInput.selectionManager (划词管理)
@@ -136,7 +136,7 @@ getSelectionContent(): Promise<string>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 33600001 | Selection service exception. |
+| 33600001 | Selection service invocation exception. |
 | 33600004 | The interface is called too frequently. |
 | 33600005 | The interface is called at the wrong time. |
 | 33600006 | The current application is prohibited from accessing content. |

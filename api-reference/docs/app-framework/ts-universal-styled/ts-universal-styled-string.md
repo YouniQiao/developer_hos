@@ -2,8 +2,8 @@
 title: "属性字符串"
 upstream_id: "harmonyos-references/ts-universal-styled-string"
 catalog: "harmonyos-references"
-content_hash: "969efa527368"
-synced_at: "2026-07-28T16:45:16.779420"
+content_hash: "9200bde2bfe3"
+synced_at: "2026-08-14T15:52:38.620201"
 ---
 
 # 属性字符串
@@ -1587,7 +1587,7 @@ struct StyledStringProcessDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008638.png)
+ ![](./img/zh-cn_image_0000002679807198.png)
 
 #### [h2]示例2（设置事件）
 
@@ -1676,7 +1676,7 @@ struct StyledStringBindEventsDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848718.png)
+ ![](./img/zh-cn_image_0000002709527013.png)
 
 #### [h2]示例3（设置文本样式）
 
@@ -1865,7 +1865,7 @@ struct StyledStringSetTextStyleDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088149.png)
+ ![](./img/zh-cn_image_0000002679967062.png)
 
 #### [h2]示例4（设置图片）
 
@@ -1999,7 +1999,7 @@ struct StyledStringSetImageDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928319.gif)
+ ![](./img/zh-cn_image_0000002709646871.gif)
 
 #### [h2]示例5（设置文本行高和段落样式）
 
@@ -2158,7 +2158,7 @@ struct StyledStringSetLineheightParagraphstyleDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008640.png)
+ ![](./img/zh-cn_image_0000002679807200.png)
 
 #### [h2]示例6（设置自定义绘制Span）
 
@@ -2319,7 +2319,7 @@ struct StyledStringSetCustomspanDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848720.gif)
+ ![](./img/zh-cn_image_0000002709527015.gif)
 
 #### [h2]示例7（支持存储自定义扩展信息）
 
@@ -2369,7 +2369,7 @@ struct StyledStringSetUserdataspanDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088151.gif)
+ ![](./img/zh-cn_image_0000002679967064.gif)
 
 #### [h2]示例8（设置超链接）
 
@@ -2402,7 +2402,7 @@ struct StyledStringSetUrlstyleDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928321.gif)
+ ![](./img/zh-cn_image_0000002709646873.gif)
 
 #### [h2]示例9 （给图片设置colorFilter）
 
@@ -2472,7 +2472,7 @@ struct StyledStringSetImageColorfilterDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008642.gif)
+ ![](./img/zh-cn_image_0000002679807202.gif)
 
 #### [h2]示例10（属性字符串的插入、删除、替换）
 
@@ -2547,7 +2547,7 @@ struct StyledStringModifyDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848722.gif)
+ ![](./img/zh-cn_image_0000002709527017.gif)
 
 #### [h2]示例11（属性字符串的文本描边）
 
@@ -2621,7 +2621,7 @@ struct StyledStringStrokewidthStrokecolorDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088153.png)
+ ![](./img/zh-cn_image_0000002679967066.png)
 
 #### [h2]示例12（fromHtml和toHtml互相转换）
 
@@ -2690,7 +2690,7 @@ struct StyledStringHtmlConvertDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928323.gif)
+ ![](./img/zh-cn_image_0000002709646875.gif)
 
 #### [h2]示例13（多装饰线与加粗装饰线）
 
@@ -2760,7 +2760,7 @@ struct StyledStringSetDecorationstyleDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008644.png)
+ ![](./img/zh-cn_image_0000002679807204.png)
 
 #### [h2]示例14（获取以vp为单位的图片尺寸）
 
@@ -2858,7 +2858,7 @@ struct StyledStringImageAttachmentInterfaceDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848724.gif)
+ ![](./img/zh-cn_image_0000002709527019.gif)
 
 #### [h2]示例15（设置段落自定义缩进）
 
@@ -2976,7 +2976,7 @@ struct leadingMarginSpanDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088155.gif)
+ ![](./img/zh-cn_image_0000002679967068.gif)
 
 #### [h2]示例16（使用supportSvg2属性时，SVG图片的显示效果）
 
@@ -3045,7 +3045,7 @@ struct StyledStringProcessDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928307.png)
+ ![](./img/zh-cn_image_0000002709646861.png)
 
 #### [h2]示例17（设置字体配置）
 
@@ -3152,7 +3152,7 @@ struct StyledStringFontConfigsDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928325.png)
+ ![](./img/zh-cn_image_0000002709646877.png)
 
 #### [h2]示例18（fromHtml转换）
 
@@ -3186,7 +3186,7 @@ struct html_convert_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008646.png)
+ ![](./img/zh-cn_image_0000002679807206.png)
 
 #### [h2]示例19（设置可变字体的属性）
 
@@ -3236,7 +3236,7 @@ struct StyledStringExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848630.gif)
+ ![](./img/zh-cn_image_0000002709526925.gif)
 
 #### [h2]示例20（设置文本着色器效果）
 
@@ -3365,7 +3365,7 @@ struct ShaderColorStyle {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848726.png)
+ ![](./img/zh-cn_image_0000002709527021.png)
 
 #### [h2]示例21（设置文本尾部缩进）
 
@@ -3408,7 +3408,7 @@ struct TailIndentsExample {
     ])
 
   styledString3:StyledString =
-    new StyledString('设置tailIndents数组\n设置tailIndents数组\n设置tailIndents数组\n设置tailIndents数组\n设置tailIndents数组', [
+    new StyledString('设置tailIndents数组_设置tailIndents数组_设置tailIndents数组_设置tailIndents数组_设置tailIndents数组_设置tailIndents数组', [
       {
         start: 0,
         length: 120,
@@ -3447,6 +3447,7 @@ struct TailIndentsExample {
         .textAlign(TextAlign.End)
         .borderWidth(1)
         .borderColor(Color.Blue)
+        .width('100%')
 
       Text(undefined, { controller: this.txtController3 })
         .onAppear(() => {
@@ -3455,10 +3456,11 @@ struct TailIndentsExample {
         .textAlign(TextAlign.End)
         .borderWidth(1)
         .borderColor(Color.Blue)
+        .width('100%')
     }
     .height('100%')
     .width('100%')
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088157.png)
+ ![](./img/zh-cn_image_0000002679967070.png)

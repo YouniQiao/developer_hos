@@ -2,8 +2,8 @@
 title: "ArcList"
 upstream_id: "harmonyos-references/ts-container-arclist"
 catalog: "harmonyos-references"
-content_hash: "c35a0ab1f168"
-synced_at: "2026-07-28T16:43:24.356092"
+content_hash: "d55372f437de"
+synced_at: "2026-08-14T15:52:33.246370"
 ---
 
 # ArcList
@@ -227,7 +227,7 @@ scrollBarColor(color: Optional<ColorMetrics>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| color | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 设置滚动条颜色。 默认值：ColorMetrics.numeric(0xA9FFFFFF) |
+| color | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 设置滚动条颜色。 默认值：ColorMetrics.numeric(0xA9FFFFFF) 异常值undefined和null按照无效值处理，本次设置不生效。 |
 
 #### [h2]flingSpeedLimit
 
@@ -243,7 +243,7 @@ flingSpeedLimit(speed: Optional<number>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| speed | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 惯性滚动动效开始时的最大初始速度。设置为小于等于0的值时，按默认值处理。 默认值：9000 单位：vp/s 取值范围：(0, +∞) |
+| speed | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 惯性滚动动效开始时的最大初始速度。设置为小于等于0的值时，按默认值处理。 默认值：9000 单位：vp/s 取值范围：(0, +∞) 异常值undefined和null按照无效值处理，本次设置不生效。 |
 
 #### [h2]childrenMainSize
 
@@ -494,4 +494,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928089.png)
+ ![](./img/zh-cn_image_0000002709646643.png)

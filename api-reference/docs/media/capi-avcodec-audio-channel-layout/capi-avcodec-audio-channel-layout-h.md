@@ -2,8 +2,8 @@
 title: "avcodec_audio_channel_layout.h"
 upstream_id: "harmonyos-references/capi-avcodec-audio-channel-layout-h"
 catalog: "harmonyos-references"
-content_hash: "734e36222d16"
-synced_at: "2026-07-28T16:51:35.917494"
+content_hash: "9a7ad4b35429"
+synced_at: "2026-08-14T15:55:11.708781"
 ---
 
 # avcodec_audio_channel_layout.h
@@ -30,8 +30,8 @@ synced_at: "2026-07-28T16:51:35.917494"
 
 | 名称 | 描述 |
 | --- | --- |
-| [AudioChannelSet](#audiochannelset) | 音频声道数集合，将每一个声道数映射为int64的变量。(API11废弃) |
-| [AudioChannelLayout](#audiochannellayout) | 音频声道数类型，将用户申请的解码器输出格式表示为编解码器的声道类型。(API11废弃) |
+| [AudioChannelSet](#audiochannelset) | 音频声道数集合，将每一个声道数映射为uint64_t的变量。(API11废弃) |
+| [AudioChannelLayout](#audiochannellayout) | 音频声道布局类型，将用户申请的解码器输出格式表示为编解码器的声道布局类型。(API11废弃) |
 
 #### 枚举类型说明
 
@@ -42,7 +42,7 @@ enum AudioChannelSet : uint64_t
 ```
  描述
 
-音频声道数集合，将每一个声道数映射为int64的变量。
+音频声道数集合，将每一个声道数映射为uint64_t的变量。
 
 系统能力： SystemCapability.Multimedia.Media.CodecBase
 

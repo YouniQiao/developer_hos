@@ -2,8 +2,8 @@
 title: "model.h"
 upstream_id: "harmonyos-references/capi-model-h"
 catalog: "harmonyos-references"
-content_hash: "bea55e64b2b6"
-synced_at: "2026-07-09T01:01:44.330402"
+content_hash: "143feca1e5df"
+synced_at: "2026-08-14T15:56:21.820380"
 ---
 
 # model.h
@@ -33,6 +33,12 @@ synced_at: "2026-07-09T01:01:44.330402"
 | OH_AI_CallBackParam | [OH_AI_CallBackParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mindspore-oh-ai-callbackparam) | 回调函数中传入的算子信息。 |
 | void * | [OH_AI_ModelHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mindspore-oh-ai-modelhandle) | 指向模型对象的指针。 |
 | void * | [OH_AI_TrainCfgHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mindspore-oh-ai-traincfghandle) | 指向训练配置对象的指针。 |
+
+#### [h2]宏定义
+
+| 名称 | 描述 |
+| --- | --- |
+| OH_AI_MAX_SHAPE_NUM 32 | 张量最大维度数。 **起始版本：** 9 |
 
 #### [h2]函数
 

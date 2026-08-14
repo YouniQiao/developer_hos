@@ -2,8 +2,8 @@
 title: "layout.h"
 upstream_id: "harmonyos-references/capi-layout-h"
 catalog: "harmonyos-references"
-content_hash: "0d006732705d"
-synced_at: "2026-07-28T16:49:18.545495"
+content_hash: "3bacad40d6b1"
+synced_at: "2026-08-14T15:53:20.738237"
 ---
 
 # layout.h
@@ -794,7 +794,7 @@ const char* OH_ArkUI_BarrierOption_GetReferencedId(ArkUI_BarrierOption* barrierS
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_BarrierOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-barrieroption)* barrierStyle | 屏障信息。 |
-| index | 屏障索引值。 |
+| int32_t index | 屏障索引值。 |
 | int32_t referencedIndex | 依赖的组件Id索引值。 |
 
 返回：
@@ -878,7 +878,7 @@ void OH_ArkUI_AlignmentRuleOption_SetStart(ArkUI_AlignmentRuleOption* option, co
 | --- | --- |
 | [ArkUI_AlignmentRuleOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-alignmentruleoption)* option | 相对容器中子组件的对齐规则信息。 |
 | const char* id | 左对齐锚点的组件的id值。 |
-| value | 相对于锚点组件的对齐方式。 |
+| [ArkUI_HorizontalAlignment](#arkui_horizontalalignment) alignment | 相对于锚点组件的对齐方式。 |
 
 #### [h2]OH_ArkUI_AlignmentRuleOption_SetEnd()
 
@@ -897,7 +897,7 @@ void OH_ArkUI_AlignmentRuleOption_SetEnd(ArkUI_AlignmentRuleOption* option, cons
 | --- | --- |
 | [ArkUI_AlignmentRuleOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-alignmentruleoption)* option | 相对容器中子组件的对齐规则信息。 |
 | const char* id | 右对齐锚点的组件的id值。 |
-| value | 相对于锚点组件的对齐方式。 |
+| [ArkUI_HorizontalAlignment](#arkui_horizontalalignment) alignment | 相对于锚点组件的对齐方式。 |
 
 #### [h2]OH_ArkUI_AlignmentRuleOption_SetCenterHorizontal()
 
@@ -916,7 +916,7 @@ void OH_ArkUI_AlignmentRuleOption_SetCenterHorizontal(ArkUI_AlignmentRuleOption*
 | --- | --- |
 | [ArkUI_AlignmentRuleOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-alignmentruleoption)* option | 相对容器中子组件的对齐规则信息。 |
 | const char* id | 横向居中锚点的组件的id值。 |
-| value | 相对于锚点组件的对齐方式 |
+| [ArkUI_HorizontalAlignment](#arkui_horizontalalignment) alignment | 相对于锚点组件的对齐方式 |
 
 #### [h2]OH_ArkUI_AlignmentRuleOption_SetTop()
 
@@ -935,7 +935,7 @@ void OH_ArkUI_AlignmentRuleOption_SetTop(ArkUI_AlignmentRuleOption* option, cons
 | --- | --- |
 | [ArkUI_AlignmentRuleOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-alignmentruleoption)* option | 相对容器中子组件的对齐规则信息。 |
 | const char* id | 顶部对齐锚点的组件的id值。 |
-| value | 相对于锚点组件的对齐方式 |
+| [ArkUI_VerticalAlignment](#arkui_verticalalignment) alignment | 相对于锚点组件的对齐方式 |
 
 #### [h2]OH_ArkUI_AlignmentRuleOption_SetBottom()
 
@@ -954,7 +954,7 @@ void OH_ArkUI_AlignmentRuleOption_SetBottom(ArkUI_AlignmentRuleOption* option, c
 | --- | --- |
 | [ArkUI_AlignmentRuleOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-alignmentruleoption)* option | 相对容器中子组件的对齐规则信息。 |
 | const char* id | 底部对齐锚点的组件的id值。 |
-| value | 相对于锚点组件的对齐方式 |
+| [ArkUI_VerticalAlignment](#arkui_verticalalignment) alignment | 相对于锚点组件的对齐方式 |
 
 #### [h2]OH_ArkUI_AlignmentRuleOption_SetCenterVertical()
 
@@ -973,7 +973,7 @@ void OH_ArkUI_AlignmentRuleOption_SetCenterVertical(ArkUI_AlignmentRuleOption* o
 | --- | --- |
 | [ArkUI_AlignmentRuleOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-alignmentruleoption)* option | 相对容器中子组件的对齐规则信息。 |
 | const char* id | 纵向居中锚点的组件的id值。 |
-| value | 相对于锚点组件的对齐方式。 |
+| [ArkUI_VerticalAlignment](#arkui_verticalalignment) alignment | 相对于锚点组件的对齐方式。 |
 
 #### [h2]OH_ArkUI_AlignmentRuleOption_SetBiasHorizontal()
 
@@ -1009,7 +1009,7 @@ void OH_ArkUI_AlignmentRuleOption_SetBiasVertical(ArkUI_AlignmentRuleOption* opt
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_AlignmentRuleOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-alignmentruleoption)* option | 相对容器中子组件的对齐规则信息。 |
-| horizontal | 垂直方向上的bias值。 |
+| float vertical | 垂直方向上的bias值。 |
 
 #### [h2]OH_ArkUI_AlignmentRuleOption_GetStartId()
 

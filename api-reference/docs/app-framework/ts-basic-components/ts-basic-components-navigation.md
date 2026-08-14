@@ -2,8 +2,8 @@
 title: "Navigation"
 upstream_id: "harmonyos-references/ts-basic-components-navigation"
 catalog: "harmonyos-references"
-content_hash: "e7affabbd510"
-synced_at: "2026-07-28T16:43:55.004076"
+content_hash: "df1946219c91"
+synced_at: "2026-08-14T15:52:36.186364"
 ---
 
 # Navigation
@@ -787,7 +787,7 @@ Navigation导航控制器，以栈的数据结构管理Navigation中所有的子
 
 3.在应用处于后台状态下，调用NavPathStack的栈操作方法，会在应用再次回到前台状态时触发刷新。
 
-#### [h2]constructor
+#### [h2]constructor10+
 
 constructor()
 
@@ -1639,7 +1639,7 @@ setPathStack(pathStack: Array<NavPathInfo>, animated?: boolean): void
 
 路由页面信息。
 
-#### [h2]constructor
+#### [h2]constructor10+
 
 constructor(name: string, param: unknown, onPop?: import('../api/@ohos.base').Callback<PopInfo>, isEntry?: boolean)
 
@@ -2374,7 +2374,7 @@ struct NavigationExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008460.png)
+ ![](./img/zh-cn_image_0000002679807020.png)
 
 #### [h2]示例2（使用导航控制器方法）
 
@@ -2637,7 +2637,7 @@ export struct PageTwo {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002655848538.gif)
+ ![](./img/zh-cn_image_0000002709526833.gif)
 
 #### [h2]示例3（设置可交互转场动画）
 
@@ -3119,7 +3119,7 @@ export class CustomTransition {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002686087967.gif)
+ ![](./img/zh-cn_image_0000002679966884.gif)
 
 #### [h2]示例4（Navigation带参返回）
 
@@ -3408,7 +3408,7 @@ export struct PageTwo {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002685928139.gif)
+ ![](./img/zh-cn_image_0000002709646693.gif)
 
 #### [h2]示例5（设置背景颜色和模糊效果）
 
@@ -3702,7 +3702,7 @@ export const EFFECT_OPTION_2: BackgroundEffectOptions = {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002656008462.gif)
+ ![](./img/zh-cn_image_0000002679807022.gif)
 
 #### [h2]示例6（嵌套场景下获取外层栈）
 
@@ -3771,7 +3771,7 @@ export function PageOneBuilder(name: string) {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002655848540.gif)
+ ![](./img/zh-cn_image_0000002709526835.gif)
 
 #### [h2]示例7（通过onReady获取栈）
 
@@ -3881,7 +3881,7 @@ struct NavigationExample2 {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002686087969.gif)
+ ![](./img/zh-cn_image_0000002679966886.gif)
 
 #### [h2]示例8（NavDestination生命周期时序）
 
@@ -4000,7 +4000,7 @@ struct NavigationExample3 {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002685928141.gif)
+ ![](./img/zh-cn_image_0000002709646695.gif)
 
 #### [h2]示例9（标题栏布局效果）
 
@@ -4071,7 +4071,7 @@ struct NavigationExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008464.gif)
+ ![](./img/zh-cn_image_0000002679807024.gif)
 
 #### [h2]示例10（定义导航控制器派生类）
 
@@ -4219,7 +4219,7 @@ export class NewParam {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002655848542.gif)
+ ![](./img/zh-cn_image_0000002709526837.gif)
 
 #### [h2]示例11（使用Symbol组件）
 
@@ -4368,7 +4368,7 @@ export struct NavigationMenu {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002686087971.gif)
+ ![](./img/zh-cn_image_0000002679966888.gif)
 
 #### [h2]示例12（设置自定义标题栏边距）
 
@@ -4615,7 +4615,7 @@ export class SubTitleTextModifier extends TextModifier {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002685928143.gif)
+ ![](./img/zh-cn_image_0000002709646697.gif)
 
 #### [h2]示例13（自定义转场动画）
 
@@ -4860,7 +4860,7 @@ export class CustomTransition {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002656008466.gif)
+ ![](./img/zh-cn_image_0000002679807026.gif)
 
 #### [h2]示例14（设置Navigation双栏模式）
 
@@ -4995,7 +4995,7 @@ struct NavigationExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848544.gif)
+ ![](./img/zh-cn_image_0000002709526839.gif)
 
 #### [h2]示例15（Navigation工具栏自适应）
 
@@ -5065,7 +5065,7 @@ struct NavigationExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087973.gif)
+ ![](./img/zh-cn_image_0000002679966890.gif)
 
 #### [h2]示例16（Navigation使用NavDestination作为导航页）
 
@@ -5150,7 +5150,7 @@ struct Index {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002685928145.gif)
+ ![](./img/zh-cn_image_0000002709646699.gif)
 
 #### [h2]示例17（使用新增导航控制器方法）
 
@@ -5418,7 +5418,7 @@ export struct PageTwo {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002656008468.gif)
+ ![](./img/zh-cn_image_0000002679807028.gif)
 
 #### [h2]示例18（设置Navigation可恢复）
 
@@ -5583,7 +5583,7 @@ export struct NavigationMenu {
 4. 输入"aa force-stop 工程包名 -p pid值 -r RESOURCE_CONTROL"进行回车，模拟资源使用不当导致的应用退出。
 5. 点击应用重新进入，可发现页面依然是点击跳转按钮后的页面。
 
-![](./img/zh-cn_image_0000002655848546.gif)
+![](./img/zh-cn_image_0000002709526841.gif)
 
 #### [h2]示例19（设置ScrollEffectOptions开启标题栏滚动模糊）
 
@@ -5652,7 +5652,7 @@ struct NavigationExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087975.gif)
+ ![](./img/zh-cn_image_0000002679966892.gif)
 
 #### [h2]示例20（设置systemMaterial开启标题栏材质效果）
 
@@ -5789,4 +5789,4 @@ struct NavigationTitleMaterialDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928147.gif)
+ ![](./img/zh-cn_image_0000002709646701.gif)

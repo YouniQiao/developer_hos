@@ -2,8 +2,8 @@
 title: "Class (WebviewController)"
 upstream_id: "harmonyos-references/arkts-apis-webview-webviewcontroller"
 catalog: "harmonyos-references"
-content_hash: "4023ec675a27"
-synced_at: "2026-08-03T17:10:35.692840"
+content_hash: "15cecdeb27eb"
+synced_at: "2026-08-14T15:53:53.897727"
 ---
 
 # Class (WebviewController)
@@ -9542,7 +9542,7 @@ getHitTest(): WebHitTestType
 
 获取当前被点击区域的元素类型。
 
-![](./img/note_3.0-zh-cn.png) 从API version11开始支持，从API version 18开始废弃。建议使用[getLastHitTest](#getlasthittest18)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 18开始废弃。建议使用[getLastHitTest](#getlasthittest18)替代。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -9595,7 +9595,7 @@ getHitTestValue(): HitTestValue
 
 获取当前被点击区域的元素信息。
 
-![](./img/note_3.0-zh-cn.png) 从API version11开始支持，从API version 18开始废弃。建议使用[getLastHitTest](#getlasthittest18)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 18开始废弃。建议使用[getLastHitTest](#getlasthittest18)替代。
 
 系统能力： SystemCapability.Web.Webview.Core
 

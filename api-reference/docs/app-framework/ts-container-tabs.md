@@ -2,8 +2,8 @@
 title: "Tabs"
 upstream_id: "harmonyos-references/ts-container-tabs"
 catalog: "harmonyos-references"
-content_hash: "e309fea5028a"
-synced_at: "2026-07-28T16:44:04.494493"
+content_hash: "b57b472d6478"
+synced_at: "2026-08-14T15:52:35.971743"
 ---
 
 # Tabs
@@ -54,7 +54,7 @@ Tabs组件参数，设置Tabs的页签位置，当前显示页签的索引，Tab
 | barPosition7+ | [BarPosition](#barposition枚举说明) | 否 | 是 | 设置Tabs的页签位置。页签的具体位置受vertical属性影响：vertical为true时Start位于左侧、End位于右侧；vertical为false时Start位于顶部、End位于底部。 默认值：BarPosition.Start。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | index7+ | number | 否 | 是 | 设置当前显示页签的索引。 默认值：0 **说明：** 设置为小于0的值时按默认值显示。 可选值为[0, TabContent子节点数量-1]。 直接修改index跳页时，切换动效不生效。 使用TabsController的[changeIndex](#changeindex)时，默认生效切换动效，可以设置[animationDuration](#animationduration)为0关闭动画。 从API version 10开始，该参数支持[$$](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-two-way-sync)双向绑定变量。 Tabs重建、系统资源切换（如系统字体切换、系统深浅色切换）或者组件属性变化时，会跳转到index对应的页面。若需要在上述情况下不跳转，建议使用双向绑定。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | controller7+ | [TabsController](#tabscontroller) | 否 | 是 | 设置Tabs控制器。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| barModifier15+ | [CommonModifier](#commonmodifier15) | 否 | 是 | 设置TabBar的[通用属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-attributes)，用于通过CommonModifier统一管理TabBar的样式、布局等通用属性。当需要动态修改TabBar的通用属性或实现属性的状态管理时传入此参数，不传入时TabBar使用默认样式和布局，无额外通用属性设置。 **说明：** 动态置为undefined时会保持当前状态不变，不会重置各通用属性。 由一个CommonModifier切换为另一个CommonModifier时，重复属性会进行覆盖，非重复属性会同时生效，不会重置前一个CommonModifier的通用属性。 Tabs的[barWidth](#barwidth)、[barHeight](#barheight)、[barBackgroundColor](#barbackgroundcolor10)、[barBackgroundBlurStyle](#barbackgroundblurstyle18)、[barBackgroundEffect](#barbackgroundeffect18)属性会覆盖CommonModifier的[width](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#width)、[height](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#height)、[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor18)、[backgroundBlurStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundblurstyle18)、[backgroundEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundeffect18)属性。 [align](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-location#align)属性仅在[BarMode.Scrollable](#barmode10-1)模式下生效，且Tabs为横向时还需[nonScrollableLayoutStyle](#scrollablebarmodeoptions10对象说明)未设置或设置为异常值时才能生效。 [TabContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabcontent)组件的[tabBar](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabcontent#tabbar18)属性为底部页签样式时不支持拖拽功能。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
+| barModifier | [CommonModifier](#commonmodifier15) | 否 | 是 | 设置TabBar的[通用属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-attributes)，用于通过CommonModifier统一管理TabBar的样式、布局等通用属性。当需要动态修改TabBar的通用属性或实现属性的状态管理时传入此参数，不传入时TabBar使用默认样式和布局，无额外通用属性设置。 **说明：** 动态置为undefined时会保持当前状态不变，不会重置各通用属性。 由一个CommonModifier切换为另一个CommonModifier时，重复属性会进行覆盖，非重复属性会同时生效，不会重置前一个CommonModifier的通用属性。 Tabs的[barWidth](#barwidth)、[barHeight](#barheight)、[barBackgroundColor](#barbackgroundcolor10)、[barBackgroundBlurStyle](#barbackgroundblurstyle18)、[barBackgroundEffect](#barbackgroundeffect18)属性会覆盖CommonModifier的[width](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#width)、[height](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#height)、[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor18)、[backgroundBlurStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundblurstyle18)、[backgroundEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundeffect18)属性。 [align](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-location#align)属性仅在[BarMode.Scrollable](#barmode10-1)模式下生效，且Tabs为横向时还需[nonScrollableLayoutStyle](#scrollablebarmodeoptions10对象说明)未设置或设置为异常值时才能生效。 [TabContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabcontent)组件的[tabBar](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabcontent#tabbar18)属性为底部页签样式时不支持拖拽功能。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
 
 #### BarPosition枚举说明
 
@@ -1376,7 +1376,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928153.gif)
+ ![](./img/zh-cn_image_0000002709646707.gif)
 
 #### [h2]示例2（设置Scrollable模式下的TabBar的布局样式）
 
@@ -1493,7 +1493,7 @@ struct TabsExample6 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008476.gif)
+ ![](./img/zh-cn_image_0000002679807036.gif)
 
 #### [h2]示例3（自定义页签切换联动）
 
@@ -1569,7 +1569,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848554.gif)
+ ![](./img/zh-cn_image_0000002709526849.gif)
 
 #### [h2]示例4（分割线基本属性）
 
@@ -1678,7 +1678,7 @@ struct TabsDivider1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087983.gif)
+ ![](./img/zh-cn_image_0000002679966900.gif)
 
 #### [h2]示例5（设置TabBar渐隐）
 
@@ -1790,7 +1790,7 @@ struct TabsOpaque {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928155.gif)
+ ![](./img/zh-cn_image_0000002709646709.gif)
 
 #### [h2]示例6（设置TabBar叠加在TabContent内容上）
 
@@ -1841,7 +1841,7 @@ struct barHeightTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008478.gif)
+ ![](./img/zh-cn_image_0000002679807038.gif)
 
 #### [h2]示例7（设置TabBar栅格化可见区域）
 
@@ -1944,7 +1944,7 @@ struct TabsExample5 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848556.gif)
+ ![](./img/zh-cn_image_0000002709526851.gif)
 
 #### [h2]示例8（自定义Tabs页面切换动画）
 
@@ -2033,7 +2033,7 @@ struct TabsCustomAnimationExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087985.gif)
+ ![](./img/zh-cn_image_0000002679966902.gif)
 
 #### [h2]示例9（页面切换拦截）
 
@@ -2125,7 +2125,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928157.gif)
+ ![](./img/zh-cn_image_0000002709646711.gif)
 
 #### [h2]示例10（自定义TabBar切换动画）
 
@@ -2296,7 +2296,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008480.gif)
+ ![](./img/zh-cn_image_0000002679807040.gif)
 
 #### [h2]示例11（预加载子节点）
 
@@ -2424,7 +2424,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848558.gif)
+ ![](./img/zh-cn_image_0000002709526853.gif)
 
 #### [h2]示例13（页面懒加载和释放）
 
@@ -2531,7 +2531,7 @@ struct TabsSwiperExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087987.gif)
+ ![](./img/zh-cn_image_0000002679966904.gif)
 
 #### [h2]示例14（设置翻页动效）
 
@@ -2604,7 +2604,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928159.gif)
+ ![](./img/zh-cn_image_0000002709646713.gif)
 
 #### [h2]示例15（页签超出TabBar区域显示）
 
@@ -2695,7 +2695,7 @@ struct TabsBarModifierExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008482.gif)
+ ![](./img/zh-cn_image_0000002679807042.gif)
 
 #### [h2]示例16（页签对齐布局）
 
@@ -2799,7 +2799,7 @@ struct TabsBarModifierExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848560.gif)
+ ![](./img/zh-cn_image_0000002709526855.gif)
 
 #### [h2]示例17（Tabs与TabBar同步切换）
 
@@ -2876,7 +2876,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087989.gif)
+ ![](./img/zh-cn_image_0000002679966906.gif)
 
 #### [h2]示例18（释放Tabs子组件）
 
@@ -3003,7 +3003,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928161.png)
+ ![](./img/zh-cn_image_0000002709646715.png)
 
 #### [h2]示例20（设置边缘滑动效果）
 
@@ -3059,7 +3059,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008484.gif)
+ ![](./img/zh-cn_image_0000002679807044.gif)
 
 #### [h2]示例21（Tabs设置翻页动画曲线）
 
@@ -3150,7 +3150,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848562.gif)
+ ![](./img/zh-cn_image_0000002709526857.gif)
 
 #### [h2]示例22（监听Tabs页面滑动事件）
 
@@ -3250,7 +3250,7 @@ struct TabsDidScrollExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087991.gif)
+ ![](./img/zh-cn_image_0000002679966908.gif)
 
 #### [h2]示例23（Tabs嵌套滚动）
 
@@ -3316,7 +3316,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928163.gif)
+ ![](./img/zh-cn_image_0000002709646717.gif)
 
 #### [h2]示例24（TabBar悬浮样式）
 
@@ -3367,4 +3367,4 @@ struct TabsFloatingStyleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008486.gif)
+ ![](./img/zh-cn_image_0000002679807046.gif)

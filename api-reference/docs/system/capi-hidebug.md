@@ -2,15 +2,15 @@
 title: "HiDebug"
 upstream_id: "harmonyos-references/capi-hidebug"
 catalog: "harmonyos-references"
-content_hash: "c088852499c5"
-synced_at: "2026-07-09T01:00:03.339910"
+content_hash: "a75bd606bf34"
+synced_at: "2026-08-14T15:55:00.979128"
 ---
 
 # HiDebug
 
 #### 概述
 
-提供调试功能。本模块函数可用于获取cpu usage、memory、heap、capture trace等。
+提供调试功能。本模块函数可用于获取CPU usage、memory、heap、capture trace等。
 
 起始版本： 12
 

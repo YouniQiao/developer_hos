@@ -2,8 +2,8 @@
 title: "传感器错误码"
 upstream_id: "harmonyos-references/errorcode-sensor"
 catalog: "harmonyos-references"
-content_hash: "dea2d8d6b2f2"
-synced_at: "2026-07-28T16:51:20.019050"
+content_hash: "170eb8a81696"
+synced_at: "2026-08-14T15:54:59.141548"
 ---
 
 # 传感器错误码
@@ -45,4 +45,4 @@ The sensor is not supported by the device.
 
 处理步骤
 
-返回14500102表示设备不支持该传感器。请检查设备是否支持该传感器类型，或使用[getsensorlist](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-sensor#sensorgetsensorlist9)接口获取设备支持的传感器列表，选择设备支持的传感器类型。
+返回14500102表示设备不支持该传感器。请检查设备是否支持该传感器类型，或使用[getSensorList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-sensor#sensorgetsensorlist9)接口获取设备支持的传感器列表，选择设备支持的传感器类型。

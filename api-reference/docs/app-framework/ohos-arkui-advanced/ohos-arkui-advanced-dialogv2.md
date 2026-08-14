@@ -2,8 +2,8 @@
 title: "DialogV2"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-dialogv2"
 catalog: "harmonyos-references"
-content_hash: "69035d51d00f"
-synced_at: "2026-07-28T16:48:09.126406"
+content_hash: "d40a22dc0f59"
+synced_at: "2026-08-14T15:52:50.189765"
 ---
 
 # DialogV2
@@ -290,7 +290,7 @@ AdvancedDialogV2Button的构造函数。
 上图下文弹出框，包含imageRes、content等内容。
 
 ```
-import { TipsDialogV2, AdvancedDialogV2Button, UIContext, ButtonRole  } from '@kit.ArkUI';
+import { TipsDialogV2, AdvancedDialogV2Button, UIContext } from '@kit.ArkUI';
 
 @Entry
 @ComponentV2
@@ -350,7 +350,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848996.png)
+ ![](./img/zh-cn_image_0000002709527289.png)
 
 #### [h2]示例2（纯列表弹出框）
 
@@ -419,7 +419,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848954.png)
+ ![](./img/zh-cn_image_0000002709527247.png)
 
 #### [h2]示例3（文本与勾选弹出框）
 
@@ -486,14 +486,14 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088385.png)
+ ![](./img/zh-cn_image_0000002679967296.png)
 
 #### [h2]示例4（纯文本弹出框）
 
 纯文本弹出框，包含primaryTitle、secondaryTitle、content等内容。
 
 ```
-import { AlertDialogV2, AdvancedDialogV2Button, UIContext, ButtonRole  } from '@kit.ArkUI';
+import { AlertDialogV2, AdvancedDialogV2Button, UIContext } from '@kit.ArkUI';
 
 @Entry
 @ComponentV2
@@ -545,7 +545,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928553.png)
+ ![](./img/zh-cn_image_0000002709647105.png)
 
 #### [h2]示例5（进度加载类弹出框）
 
@@ -589,7 +589,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008876.gif)
+ ![](./img/zh-cn_image_0000002679807434.gif)
 
 #### [h2]示例6（使用WithTheme自定义主题的弹出框）
 
@@ -647,14 +647,14 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088427.png)
+ ![](./img/zh-cn_image_0000002679967338.png)
 
 #### [h2]示例7（自定义内容弹出框）
 
 支持自定义内容弹出框，包含contentBuilder、buttons等内容。
 
 ```
-import { CustomContentDialogV2, AdvancedDialogV2Button, UIContext, ButtonStyleMode, ButtonRole  } from '@kit.ArkUI';
+import { CustomContentDialogV2, AdvancedDialogV2Button, UIContext } from '@kit.ArkUI';
 
 @Entry
 @ComponentV2
@@ -707,7 +707,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928597.png)
+ ![](./img/zh-cn_image_0000002709647147.png)
 
 #### [h2]示例8（跟手弹出框）
 
@@ -764,4 +764,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008918.png)
+ ![](./img/zh-cn_image_0000002679807476.png)

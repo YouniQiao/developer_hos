@@ -2,8 +2,8 @@
 title: "@ohos.arkui.observer (无感监听)"
 upstream_id: "harmonyos-references/js-apis-arkui-observer"
 catalog: "harmonyos-references"
-content_hash: "e235becbabca"
-synced_at: "2026-07-28T16:40:59.871370"
+content_hash: "e6811c684bbf"
+synced_at: "2026-08-14T15:52:21.100200"
 ---
 
 # @ohos.arkui.observer (无感监听)
@@ -57,7 +57,7 @@ NavDestination组件状态。
 
 #### RouterPageState
 
-routerPage生命周期触发时对应的状态。RouterPageState用于[RouterPageInfo](#routerpageinfo)中，作为[routerPageUpdate](#uiobserveronrouterpageupdate11)无感监听的返回值。
+routerPage生命周期触发时对应的状态。RouterPageState用于[RouterPageInfo](#routerpageinfo)中，作为[routerPageUpdate](#uiobserveronrouterpageupdate)无感监听的返回值。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -579,7 +579,7 @@ struct Index {
 }
 ```
 
-#### uiObserver.on('routerPageUpdate')11+
+#### uiObserver.on('routerPageUpdate')
 
 on(type: 'routerPageUpdate', context: UIAbilityContext | UIContext, callback: Callback<RouterPageInfo>): void
 
@@ -633,7 +633,7 @@ export default class EntryAbility extends UIAbility {
 }
 ```
 
-#### uiObserver.off('routerPageUpdate')11+
+#### uiObserver.off('routerPageUpdate')
 
 off(type: 'routerPageUpdate', context: UIAbilityContext | UIContext, callback?: Callback<RouterPageInfo>): void
 

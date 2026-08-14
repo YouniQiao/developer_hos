@@ -2,8 +2,8 @@
 title: "native_type.h"
 upstream_id: "harmonyos-references/capi-native-type-h"
 catalog: "harmonyos-references"
-content_hash: "ef74d1828005"
-synced_at: "2026-08-11T16:01:52.271447"
+content_hash: "9f80621b0204"
+synced_at: "2026-08-14T15:53:27.588916"
 ---
 
 # native_type.h
@@ -3098,7 +3098,7 @@ uint32_t OH_ArkUI_SelectedDragPreviewStyle_GetColor(ArkUI_SelectedDragPreviewSty
 
 | 类型 | 说明 |
 | --- | --- |
-| uint32_t color | 选中态拖拽文本预览样式的背景，格式为RGBA。 |
+| uint32_t | 选中态拖拽文本预览样式的背景，格式为RGBA。 |
 
 #### [h2]OH_ArkUI_DecorationStyleOptions_SetTextDecorationType()
 
@@ -3360,7 +3360,7 @@ ArkUI_ErrorCode OH_ArkUI_TextDataDetectorConfig_RegisterOnDetectResultUpdateCall
 | --- | --- |
 | [OH_ArkUI_TextDataDetectorConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-oh-arkui-textdatadetectorconfig)* config | 指向[OH_ArkUI_TextDataDetectorConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-oh-arkui-textdatadetectorconfig)对象的指针。 |
 | void* userData | 用户数据。 |
-| void (*callback)(const char* result | 识别结果更新回调。result 识别到的文本实体内容。length 选中文本的结束位置。userData 用户自定义数据，对应OH_ArkUI_TextDataDetectorConfig_RegisterOnDetectResultUpdateCallback接口的入参userData。 |
+| void (*callback)(const char* result, int32_t length, void* userData) | 识别结果更新回调。result 识别到的文本实体内容。length 选中文本的结束位置。userData 用户自定义数据，对应OH_ArkUI_TextDataDetectorConfig_RegisterOnDetectResultUpdateCallback接口的入参userData。 |
 
 返回：
 
@@ -5349,7 +5349,7 @@ ArkUI_ErrorCode OH_ArkUI_TextEditorSelectionMenuOptions_RegisterOnMenuShowCallba
 | --- | --- |
 | [OH_ArkUI_TextEditorSelectionMenuOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions)* options | 指向[OH_ArkUI_TextEditorSelectionMenuOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions)对象的指针。 |
 | void* userData | 用户数据。 |
-| void (*callback)(int32_t start | 菜单显示的回调函数。start 选中内容的起始偏移量。end 选中内容的结束偏移量。callbackUserData 用户数据。 |
+| void (*callback)(int32_t start, int32_t end, void* callbackUserData) | 菜单显示的回调函数。start 选中内容的起始偏移量。end 选中内容的结束偏移量。callbackUserData 用户数据。 |
 
 返回：
 
@@ -5374,7 +5374,7 @@ ArkUI_ErrorCode OH_ArkUI_TextEditorSelectionMenuOptions_RegisterOnMenuHideCallba
 | --- | --- |
 | [OH_ArkUI_TextEditorSelectionMenuOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions)* options | 指向[OH_ArkUI_TextEditorSelectionMenuOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions)对象的指针。 |
 | void* userData | 用户数据。 |
-| void (*callback)(int32_t start | 菜单隐藏的回调函数。start 选中内容的起始偏移量。end 选中内容的结束偏移量。callbackUserData 用户数据。 |
+| void (*callback)(int32_t start, int32_t end, void* callbackUserData) | 菜单隐藏的回调函数。start 选中内容的起始偏移量。end 选中内容的结束偏移量。callbackUserData 用户数据。 |
 
 返回：
 
@@ -5399,7 +5399,7 @@ ArkUI_ErrorCode OH_ArkUI_TextEditorSelectionMenuOptions_RegisterOnMenuAppearCall
 | --- | --- |
 | [OH_ArkUI_TextEditorSelectionMenuOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions)* options | 指向[OH_ArkUI_TextEditorSelectionMenuOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions)对象的指针。 |
 | void* userData | 用户数据。 |
-| void (*callback)(int32_t start | 菜单出现的回调函数。start 选中内容的起始偏移量。end 选中内容的结束偏移量。callbackUserData 用户数据。 |
+| void (*callback)(int32_t start, int32_t end, void* callbackUserData) | 菜单出现的回调函数。start 选中内容的起始偏移量。end 选中内容的结束偏移量。callbackUserData 用户数据。 |
 
 返回：
 

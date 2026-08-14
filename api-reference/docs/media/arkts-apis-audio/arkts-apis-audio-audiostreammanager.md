@@ -2,8 +2,8 @@
 title: "Interface (AudioStreamManager)"
 upstream_id: "harmonyos-references/arkts-apis-audio-audiostreammanager"
 catalog: "harmonyos-references"
-content_hash: "b12de4f2f15b"
-synced_at: "2026-08-03T17:11:39.937451"
+content_hash: "09af5cbb9cf3"
+synced_at: "2026-08-14T15:55:05.103414"
 ---
 
 # Interface (AudioStreamManager)
@@ -412,7 +412,7 @@ isActiveSync(volumeType: AudioVolumeType): boolean
 
 获取指定音频流是否为活跃状态。同步返回结果。
 
-![](./img/note_3.0-zh-cn.png) 从API版本9开始支持，从API版本20开始废弃，建议使用[isStreamActive](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiostreammanager#isstreamactive20)替代。注意替代接口与原接口入参存在差异，例如[StreamUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage)中提供了STREAM_USAGE_MUSIC、STREAM_USAGE_MOVIE、STREAM_USAGE_AUDIOBOOK、STREAM_USAGE_GAME等更细分的类型，而[AudioVolumeType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#audiovolumetype)中这些类型统一归入MEDIA类型。具体映射关系请参考[音量控制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-right-streamusage-for-playback#音量控制)中常见的播放流类型与音量类型的对应关系，迁移时根据实际业务场景选择对应的StreamUsage值。
+![](./img/note_3.0-zh-cn.png) 从API version 10开始支持，从API version 20开始废弃，建议使用[isStreamActive](#isstreamactive20)替代。注意替代接口与原接口入参存在差异，例如[StreamUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage)中提供了STREAM_USAGE_MUSIC、STREAM_USAGE_MOVIE、STREAM_USAGE_AUDIOBOOK、STREAM_USAGE_GAME等更细分的类型，而[AudioVolumeType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#audiovolumetype)中这些类型统一归入MEDIA类型。具体映射关系请参考[音量控制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-right-streamusage-for-playback#音量控制)中常见的播放流类型与音量类型的对应关系，迁移时根据实际业务场景选择对应的StreamUsage值。
 
 系统能力： SystemCapability.Multimedia.Audio.Renderer
 

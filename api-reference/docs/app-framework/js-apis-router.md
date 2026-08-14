@@ -2,8 +2,8 @@
 title: "@ohos.router (页面路由)(不推荐)"
 upstream_id: "harmonyos-references/js-apis-router"
 catalog: "harmonyos-references"
-content_hash: "11995cab5fc8"
-synced_at: "2026-07-28T16:41:18.206410"
+content_hash: "0a025c7d78e4"
+synced_at: "2026-08-14T15:52:24.197385"
 ---
 
 # @ohos.router (页面路由)(不推荐)
@@ -1656,7 +1656,7 @@ struct Second {
       Text(this.text)
         .fontSize(30)
         .onClick(() => {
-          this.secondData = (this.data['array'][1]).toString();
+          this.secondData = (this.data.array[1]).toString();
         })
         .margin({ top: 20 })
       Text(`第一页传来的数值:${this.secondData}`)
@@ -2005,4 +2005,4 @@ export default {
     }
 }
 ```
- ![](./img/zh-cn_image_0000002655848282.gif)
+ ![](./img/zh-cn_image_0000002679806760.gif)

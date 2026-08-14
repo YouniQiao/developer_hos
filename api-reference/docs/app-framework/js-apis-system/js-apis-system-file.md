@@ -2,8 +2,8 @@
 title: "@system.file (文件存储)"
 upstream_id: "harmonyos-references/js-apis-system-file"
 catalog: "harmonyos-references"
-content_hash: "9d5de4e9f248"
-synced_at: "2026-08-04T17:02:04.753285"
+content_hash: "7a35a551f687"
+synced_at: "2026-08-14T15:54:03.287925"
 ---
 
 # @system.file (文件存储)
@@ -14,6 +14,11 @@ synced_at: "2026-08-04T17:02:04.753285"
 - 对于支持该模块的其他设备类型，该模块从API Version 10开始不再维护，推荐使用新接口[@ohos.file.fs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs)。
 
 本模块首批接口从API version 3开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
+
+以下ArkTS示例URI说明：
+
+1. URI只能是internal://app/xxx格式。
+2. internal://app/为固定前缀，表示应用根目录，xxx为开发者自行创建的目录或文件名。
 
 #### 导入模块
 

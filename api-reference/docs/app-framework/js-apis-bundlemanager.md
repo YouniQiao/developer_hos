@@ -2,8 +2,8 @@
 title: "@ohos.bundle.bundleManager (应用程序包管理模块)"
 upstream_id: "harmonyos-references/js-apis-bundlemanager"
 catalog: "harmonyos-references"
-content_hash: "58b7f30fe271"
-synced_at: "2026-07-28T16:40:37.014412"
+content_hash: "e8cfda3fdbcd"
+synced_at: "2026-08-14T15:52:02.614826"
 ---
 
 # @ohos.bundle.bundleManager (应用程序包管理模块)
@@ -907,7 +907,7 @@ getBundleInfo(bundleName: string, bundleFlags: number, userId: number, callback:
 | bundleName | string | 是 | 表示要查询的应用Bundle名称。 |
 | [bundleFlags](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundleflag) | number | 是 | 指定返回的BundleInfo所包含的信息。 |
 | userId | number | 是 | 表示用户ID，可以通过[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9)获取。 |
-| callback | AsyncCallback | 是 | [AsyncCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#asynccallback)，当获取成功时，err为undefined，data为获取到的bundleInfo；否则为错误对象。 |
+| callback | AsyncCallback | 是 | [AsyncCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#asynccallback)，当获取成功时，err为undefined，data为获取到的BundleInfo；否则为错误对象。 |
 
 错误码：
 

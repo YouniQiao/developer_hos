@@ -2,8 +2,8 @@
 title: "事件"
 upstream_id: "harmonyos-references/arkts-basic-components-web-events"
 catalog: "harmonyos-references"
-content_hash: "17bb6e967f00"
-synced_at: "2026-08-03T17:10:37.054042"
+content_hash: "d9c7154f4498"
+synced_at: "2026-08-14T15:53:55.344198"
 ---
 
 # 事件
@@ -2652,14 +2652,14 @@ struct WebComponent {
             this.dialogController.close();
           }
           let popController: webview.WebviewController = new webview.WebviewController();
+          // 将新窗口对应WebviewController返回给Web内核。
+          // 若不调用event.handler.setWebController接口，会造成渲染进程阻塞。
+          // 如果没有创建新窗口，调用event.handler.setWebController接口时设置成null，通知Web没有创建新窗口。
+          event.handler.setWebController(popController);
           this.dialogController = new CustomDialogController({
             builder: NewWebViewComp({ webviewController1: popController })
           })
           this.dialogController.open();
-          // 将新窗口对应WebviewController返回给Web内核。
-          // 若不调用event.handler.setWebController接口，会造成render进程阻塞。
-          // 如果没有创建新窗口，调用event.handler.setWebController接口时设置成null，通知Web没有创建新窗口。
-          event.handler.setWebController(popController);
         })
     }
   }
@@ -2756,14 +2756,14 @@ build() {
           this.dialogController.close();
         }
         let popController: webview.WebviewController = new webview.WebviewController();
+        // 将新窗口对应WebviewController返回给Web内核。
+        // 若不调用event.handler.setWebController接口，会造成渲染进程阻塞。
+        // 如果没有创建新窗口，在调用event.handler.setWebController接口时应设置成null，以通知Web没有创建新窗口。
+        event.handler.setWebController(popController);
         this.dialogController = new CustomDialogController({
           builder: NewWebViewComp({ webviewController1: popController })
         })
         this.dialogController.open();
-        // 将新窗口对应WebviewController返回给Web内核。
-        // 若不调用event.handler.setWebController接口，会造成render进程阻塞。
-        // 如果没有创建新窗口，在调用event.handler.setWebController接口时应设置成null，以通知Web没有创建新窗口。
-        event.handler.setWebController(popController);
       })
     }
   }
@@ -2857,14 +2857,14 @@ struct WebComponent {
             this.dialogController.close()
           }
           let popController: webview.WebviewController = new webview.WebviewController();
+          // 将新窗口对应WebviewController返回给Web内核。
+          // 若不调用event.handler.setWebController接口，会造成渲染进程阻塞。
+          event.handler.setWebController(popController);
           this.dialogController = new CustomDialogController({
             builder: NewWebViewComp({ webviewController1: popController }),
             isModal: false
           })
           this.dialogController.open();
-          // 将新窗口对应WebviewController返回给Web内核。
-          // 若不调用event.handler.setWebController接口，会造成render进程阻塞。
-          event.handler.setWebController(popController);
         })
     }
   }

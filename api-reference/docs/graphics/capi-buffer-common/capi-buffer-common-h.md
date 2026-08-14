@@ -2,8 +2,8 @@
 title: "buffer_common.h"
 upstream_id: "harmonyos-references/capi-buffer-common-h"
 catalog: "harmonyos-references"
-content_hash: "8d55d2056059"
-synced_at: "2026-07-28T16:52:10.689849"
+content_hash: "efee7ca4f091"
+synced_at: "2026-08-14T15:55:41.759030"
 ---
 
 # buffer_common.h
@@ -97,7 +97,7 @@ API version 12之前，使用该枚举请引用native_buffer.h头文件；从API
 | OH_COLORSPACE_DISPLAY_BT2020_HLG | 等同于 OH_COLORSPACE_BT2020_HLG_FULL。 |
 | OH_COLORSPACE_DISPLAY_BT2020_PQ | 等同于OH_COLORSPACE_BT2020_PQ_FULL。 |
 | OH_COLORSPACE_BT2020_LOG_FULL | 色域范围为BT2020，传递函数为PRIV_LOG，转换矩阵为BT2020，数据范围为RANGE_FULL。 **起始版本：** 26.0.0 |
-| OH_COLORSPACE_BT2020_LOG_LIMIT | 色域范围为BT2020，传递函数为PRIV_LOG，转换矩阵为BT2020，数据范围为RANGE_LIMIT。 **起始版本：** 26.0.0 |
+| OH_COLORSPACE_BT2020_LOG_LIMIT | 色域范围为BT2020，传递函数为PRIV_LOG，转换矩阵为BT2020，数据范围为RANGE_LIMITED。 **起始版本：** 26.0.0 |
 
 #### [h2]OH_NativeBuffer_MetadataType
 

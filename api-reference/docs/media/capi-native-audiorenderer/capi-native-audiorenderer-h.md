@@ -2,8 +2,8 @@
 title: "native_audiorenderer.h"
 upstream_id: "harmonyos-references/capi-native-audiorenderer-h"
 catalog: "harmonyos-references"
-content_hash: "94b0a7e4db18"
-synced_at: "2026-07-28T16:51:28.378657"
+content_hash: "6de46bbc5656"
+synced_at: "2026-08-14T15:55:06.617324"
 ---
 
 # native_audiorenderer.h
@@ -875,7 +875,7 @@ OH_AudioStream_Result OH_AudioRenderer_SetDefaultOutputDevice(OH_AudioRenderer* 
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_AudioStream_Result](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_result) | AUDIOSTREAM_SUCCESS：函数执行成功。 AUDIOSTREAM_ERROR_INVALID_PARAM： 1. 参数renderer为nullptr; 2. 参数deviceType无效。 AUDIOSTREAM_ERROR_ILLEGAL_STATE：执行状态异常。 AUDIOSTREAM_ERROR_SYSTEM：出现系统错误。 |
+| [OH_AudioStream_Result](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_result) | AUDIOSTREAM_SUCCESS：函数执行成功。 AUDIOSTREAM_ERROR_INVALID_PARAM： 1. 参数renderer为nullptr。 2. 参数deviceType无效。 AUDIOSTREAM_ERROR_ILLEGAL_STATE：执行状态异常。 AUDIOSTREAM_ERROR_SYSTEM：出现系统错误。 |
 
 #### [h2]OH_AudioRenderer_OnInterruptCallback()
 

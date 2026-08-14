@@ -2,8 +2,8 @@
 title: "Class (Uint32Array)"
 upstream_id: "harmonyos-references/arkts-apis-arkts-collections-uint32array"
 catalog: "harmonyos-references"
-content_hash: "8cc051235266"
-synced_at: "2026-08-11T16:01:09.047323"
+content_hash: "3cbd9e1a7872"
+synced_at: "2026-08-14T15:52:18.133444"
 ---
 
 # Class (Uint32Array)
@@ -187,7 +187,7 @@ constructor(buffer: ArrayBuffer, byteOffset?: number, length?: number)
 | --- | --- | --- | --- |
 | buffer | [ArrayBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-collections-arraybuffer) | 是 | 用于构造ArkTS Uint32Array的[ArrayBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-collections-arraybuffer)对象。buffer所占的字节数需是4的整数倍。 |
 | byteOffset | number | 否 | 指定buffer的字节偏移，需为非负整数且为4的整数倍。默认值为0。 |
-| length | number | 否 | 指定ArkTS Uint32Array的长度，需为非负整数。默认值为0，此时表示从byteOffset开始到buffer末尾的全部元素。 |
+| length | number | 否 | 指定ArkTS Uint32Array的长度，需为非负整数。默认值为0。 |
 
 错误码：
 

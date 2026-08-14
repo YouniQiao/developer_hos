@@ -2,8 +2,8 @@
 title: "drag_and_drop.h"
 upstream_id: "harmonyos-references/capi-drag-and-drop-h"
 catalog: "harmonyos-references"
-content_hash: "78855ea9c44d"
-synced_at: "2026-07-28T16:49:17.989041"
+content_hash: "4d90dc404ec9"
+synced_at: "2026-08-14T15:53:21.214259"
 ---
 
 # drag_and_drop.h
@@ -1611,7 +1611,7 @@ int32_t OH_ArkUI_DragEvent_RequestDragEndPending(ArkUI_DragEvent* event, int32_t
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_DRAG_DROP_OPERATION_NOT_ALLOWED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 当前阶段不允许该操作。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_DRAG_DROP_OPERATION_NOT_ALLOWED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 当前拖拽事件处理阶段不允许执行请求的操作。 |
 
 #### [h2]OH_ArkUI_NotifyDragResult()
 
@@ -1635,12 +1635,12 @@ int32_t OH_ArkUI_NotifyDragResult(int32_t requestIdentify, ArkUI_DragResult resu
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_DRAG_DROP_OPERATION_NOT_ALLOWED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 当前阶段不允许该操作。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_DRAG_DROP_OPERATION_NOT_ALLOWED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 当前拖拽事件处理阶段不允许执行请求的操作。 |
 
 #### [h2]OH_ArkUI_NotifySuggestedDropOperation()
 
 ```
-int32_t OH_ArkUI_NotifySuggestedDropOperation(int32_t requestIdentify, ArkUI_DropOperation operation)
+int32_t OH_ArkUI_NotifySuggestedDropOperation(int32_t requestIdentity, ArkUI_DropOperation operation)
 ```
  描述：
 
@@ -1652,7 +1652,7 @@ int32_t OH_ArkUI_NotifySuggestedDropOperation(int32_t requestIdentify, ArkUI_Dro
 
 | 参数项 | 描述 |
 | --- | --- |
-| int32_t requestIdentify | 由[OH_ArkUI_DragEvent_RequestDragEndPending](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drag-and-drop-h#oh_arkui_dragevent_requestdragendpending)返回的标识符，用来标识本次拖拽事件。 |
+| int32_t requestIdentity | 由[OH_ArkUI_DragEvent_RequestDragEndPending](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drag-and-drop-h#oh_arkui_dragevent_requestdragendpending)返回的标识符，用来标识本次拖拽事件。 |
 | [ArkUI_DropOperation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drag-and-drop-h#arkui_dropoperation) operation | 落入行为类型[ArkUI_DropOperation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drag-and-drop-h#arkui_dropoperation)。 |
 
 返回：
@@ -1676,7 +1676,7 @@ int32_t OH_ArkUI_NotifyDisableDefaultDropAnimation(int32_t requestIdentity, bool
 
 | 参数项 | 描述 |
 | --- | --- |
-| int32_t requestIdentify | 由[OH_ArkUI_DragEvent_RequestDragEndPending](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drag-and-drop-h#oh_arkui_dragevent_requestdragendpending)返回的标识符，用来标识本次拖拽事件。 |
+| int32_t requestIdentity | 由[OH_ArkUI_DragEvent_RequestDragEndPending](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drag-and-drop-h#oh_arkui_dragevent_requestdragendpending)返回的标识符，用来标识本次拖拽事件。 |
 | bool disable | 通知是否禁用系统默认落入动画。true表示禁用系统默认落入动画，false表示使用系统默认落入动画。 |
 
 返回：
@@ -1706,7 +1706,7 @@ int32_t OH_ArkUI_NotifyDragEndPendingDone(int32_t requestIdentify)
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_DRAG_DROP_OPERATION_NOT_ALLOWED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 当前阶段不允许该操作。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_DRAG_DROP_OPERATION_NOT_ALLOWED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 当前拖拽事件处理阶段不允许执行请求的操作。 |
 
 #### [h2]OH_ArkUI_EnableDropDisallowedBadge()
 

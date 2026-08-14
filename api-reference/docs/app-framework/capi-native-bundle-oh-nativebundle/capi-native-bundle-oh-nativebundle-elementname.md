@@ -2,8 +2,8 @@
 title: "OH_NativeBundle_ElementName"
 upstream_id: "harmonyos-references/capi-native-bundle-oh-nativebundle-elementname"
 catalog: "harmonyos-references"
-content_hash: "d0d33b229745"
-synced_at: "2026-07-09T00:57:13.498100"
+content_hash: "48d585c42aa9"
+synced_at: "2026-08-14T15:52:08.175121"
 ---
 
 # OH_NativeBundle_ElementName
@@ -30,4 +30,4 @@ elementName信息。
 | --- | --- |
 | char* bundleName | 应用包名。 |
 | char* moduleName | 模块名称。 |
-| char* abilityName | 组件名。 |
+| char* abilityName | Ability名称。 |
