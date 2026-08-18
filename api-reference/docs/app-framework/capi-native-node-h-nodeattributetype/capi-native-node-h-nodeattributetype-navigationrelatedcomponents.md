@@ -2,8 +2,8 @@
 title: "ArkUI_NodeAttributeType（导航类组件相关属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-navigationrelatedcomponents"
 catalog: "harmonyos-references"
-content_hash: "9a7b5c44129d"
-synced_at: "2026-07-28T16:49:21.104031"
+content_hash: "16ee58b6aa38"
+synced_at: "2026-08-18T15:32:36.607673"
 ---
 
 # ArkUI_NodeAttributeType（导航类组件相关属性）
@@ -61,14 +61,14 @@ NODE_SWIPER_AUTO_PLAY = 1001001
 | 参数项 | 描述 |
 | --- | --- |
 | .value[0].i32 | 控制子组件是否自动播放，0表示不自动播放，1表示自动播放，默认值为0。 |
-| .value[1]?.i32 | 手指按下时是否停止自动播放，0表示停止自动播放，1表示不停止自动播放，默认值为0。该参数从API version 16开始支持。 |
+| .value[1]?.i32 | 手指按下时是否停止自动播放，0表示不停止自动播放，1表示停止自动播放，默认值为1。该参数从API version 16开始支持。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
 | .value[0].i32 | 子组件是否自动播放，0表示不自动播放，1表示自动播放。 |
-| .value[1].i32 | 手指按下是否停止自动播放，0表示停止，1表示不停止。该参数从API version 16开始支持。 |
+| .value[1].i32 | 手指按下是否停止自动播放，0表示不停止自动播放，1表示停止自动播放。该参数从API version 16开始支持。 |
 
 #### NODE_SWIPER_SHOW_INDICATOR
 

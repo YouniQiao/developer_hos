@@ -1,12 +1,10 @@
 ---
-
 title: "证书管理对话框错误码"
 upstream_id: "harmonyos-references/errorcode-certmanagerdialog"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T00:59:20.111046"
-content_hash: "c6d1f198f679"
+content_hash: "cd262f5bb379"
+synced_at: "2026-08-18T15:33:19.597622"
 ---
-
 
 # 证书管理对话框错误码
 
@@ -72,7 +70,7 @@ The API is not supported on this device.
 
 错误信息
 
-The operation does not comply with the device security policy, such as the device does not allow users to manage the ca certificate of the global user.
+The operation does not comply with the device security policy, such as the device does not allow users to manage the CA certificate of the global user.
 
 可能原因
 

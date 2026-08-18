@@ -2,8 +2,8 @@
 title: "Menu"
 upstream_id: "harmonyos-references/ts-basic-components-menu"
 catalog: "harmonyos-references"
-content_hash: "63da32ff7d51"
-synced_at: "2026-07-28T16:47:01.480704"
+content_hash: "a18326fc7b87"
+synced_at: "2026-08-18T15:32:15.525274"
 ---
 
 # Menu
@@ -271,7 +271,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928501.png)
+ ![](./img/zh-cn_image_0000002712846227.png)
 
 #### [h2]示例2（设置symbol类型图标）
 
@@ -344,7 +344,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008824.png)
+ ![](./img/zh-cn_image_0000002683286366.png)
 
 #### [h2]示例3（设置Menu子菜单展开符号）
 
@@ -409,14 +409,14 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848904.gif)
+ ![](./img/zh-cn_image_0000002713006101.gif)
 
 #### [h2]示例4（设置分割线样式）
 
 该示例通过设置menuItemDivider和menuItemGroupDivider属性实现分割线样式。
 
 ```
-import { LengthMetrics, DividerMode } from '@kit.ArkUI'
+import { LengthMetrics } from '@kit.ArkUI'
 
 @Entry
 @Component
@@ -458,7 +458,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088335.png)
+ ![](./img/zh-cn_image_0000002683126506.png)
 
 #### [h2]示例5（设置自定义菜单项的多级菜单）
 
@@ -514,4 +514,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928503.jpg)
+ ![](./img/zh-cn_image_0000002712846229.jpg)

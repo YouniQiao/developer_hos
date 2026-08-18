@@ -2,8 +2,8 @@
 title: "Rdb_KeyData"
 upstream_id: "harmonyos-references/capi-rdb-rdb-keydata"
 catalog: "harmonyos-references"
-content_hash: "4f2636c76566"
-synced_at: "2026-07-28T16:40:52.722733"
+content_hash: "2ea24e22f3de"
+synced_at: "2026-08-18T15:31:52.309441"
 ---
 
 # Rdb_KeyData
@@ -15,6 +15,8 @@ union Rdb_KeyData { ... }
 #### 概述
 
 存放变化的具体数据。
+
+起始版本： 11
 
 相关模块： [RDB](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb)
 

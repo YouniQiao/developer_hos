@@ -2,8 +2,8 @@
 title: "Interfaces (其他)"
 upstream_id: "harmonyos-references/arkts-apis-webview-i"
 catalog: "harmonyos-references"
-content_hash: "11fc12c1be3b"
-synced_at: "2026-07-28T16:49:53.853884"
+content_hash: "f431975fe4ec"
+synced_at: "2026-08-18T15:32:55.709677"
 ---
 
 # Interfaces (其他)
@@ -159,17 +159,6 @@ Web组件预编译JavaScript生成字节码缓存的配置对象，用于控制�
 | --- | --- | --- | --- | --- |
 | type | [WebHitTestType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-e#webhittesttype) | 否 | 否 | 当前被点击区域的元素类型。 |
 | extra | string | 否 | 否 | 点击区域的附加参数信息。若被点击区域为图片或链接，则附加参数信息为其url地址。 |
-
-#### ControllerAttachState20+
-
-WebViewController与Web组件的绑定状态。
-
-系统能力： SystemCapability.Web.Webview.Core
-
-| 名称 | 值 | 说明 |
-| --- | --- | --- |
-| UNATTACHED | 0 | 未绑定状态。 |
-| ATTACHED | 1 | 已绑定状态。 |
 
 #### BlanklessInfo20+
 

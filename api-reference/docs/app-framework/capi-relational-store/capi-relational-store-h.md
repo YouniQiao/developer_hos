@@ -2,8 +2,8 @@
 title: "relational_store.h"
 upstream_id: "harmonyos-references/capi-relational-store-h"
 catalog: "harmonyos-references"
-content_hash: "5684e6ea4ceb"
-synced_at: "2026-07-28T16:40:51.781265"
+content_hash: "1cc9d86dbaeb"
+synced_at: "2026-08-18T15:31:51.648449"
 ---
 
 # relational_store.h
@@ -98,7 +98,7 @@ synced_at: "2026-07-28T16:40:51.781265"
 | [int OH_Rdb_ExecuteV2(OH_Rdb_Store *store, const char *sql, const OH_Data_Values *args, OH_Data_Value **result)](#oh_rdb_executev2) | - | 执行有返回值的SQL语句，支持向量数据库。 |
 | [int OH_Rdb_ExecuteByTrxId(OH_Rdb_Store *store, int64_t trxId, const char *sql)](#oh_rdb_executebytrxid) | - | 使用指定的事务ID执行无返回值的SQL语句，仅支持向量数据库。 |
 | [OH_Cursor *OH_Rdb_ExecuteQuery(OH_Rdb_Store *store, const char *sql)](#oh_rdb_executequery) | - | 根据指定SQL语句查询数据库中的数据，支持向量数据库。 |
-| [OH_Cursor *OH_Rdb_ExecuteQueryV2(OH_Rdb_Store *store, const char *sql, const OH_Data_Values *args)](#oh_rdb_executequeryv2) | - | 根据指定SQL语句查询数据库中的数据，支持向量数据库。 |
+| [OH_Cursor *OH_Rdb_ExecuteQueryV2(OH_Rdb_Store *store, const char *sql, const OH_Data_Values *args)](#oh_rdb_executequeryv2) | - | 根据指定SQL语句查询数据库中的数据，支持SQL参数绑定，支持向量数据库。 |
 | [int OH_Rdb_BeginTransaction(OH_Rdb_Store *store)](#oh_rdb_begintransaction) | - | 在开始执行SQL语句之前，开始事务。 |
 | [int OH_Rdb_RollBack(OH_Rdb_Store *store)](#oh_rdb_rollback) | - | 回滚已经执行的SQL语句。使用前需先调用[OH_Rdb_BeginTransaction](#oh_rdb_begintransaction)开始事务。 |
 | [int OH_Rdb_Commit(OH_Rdb_Store *store)](#oh_rdb_commit) | - | 提交已执行的SQL语句。使用前需先调用[OH_Rdb_BeginTransaction](#oh_rdb_begintransaction)开始事务。 |
@@ -1203,7 +1203,7 @@ int OH_Rdb_ExecuteV2(OH_Rdb_Store *store, const char *sql, const OH_Data_Values 
 | --- | --- |
 | [OH_Rdb_Store](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-rdb-store) *store | 指向[OH_Rdb_Store](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-rdb-store)实例的指针。 |
 | const char *sql | 指定要执行的SQL语句。 |
-| const [OH_Data_Values](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-data-values) *args | 可选参数，指向[OH_Data_Values](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-data-values)实例的指针。 |
+| const [OH_Data_Values](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-data-values) *args | 表示SQL语句中参数的值，指向OH_Data_Values实例的指针。SQL语句完整时，args可填写为nullptr。 |
 | [OH_Data_Value](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-data-value) **result | 执行成功时指向[OH_Data_Value](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-data-value)实例的指针，作为出参使用。使用完成后，必须通过[OH_Value_Destroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-data-value-h#oh_value_destroy)接口释放内存。 |
 
 返回：
@@ -1282,7 +1282,7 @@ OH_Cursor *OH_Rdb_ExecuteQueryV2(OH_Rdb_Store *store, const char *sql, const OH_
 ```
  描述
 
-根据指定SQL语句查询数据库中的数据，支持向量数据库。
+根据指定SQL语句查询数据库中的数据，支持SQL参数绑定，支持向量数据库。
 
 起始版本： 18
 
@@ -1292,7 +1292,7 @@ OH_Cursor *OH_Rdb_ExecuteQueryV2(OH_Rdb_Store *store, const char *sql, const OH_
 | --- | --- |
 | [OH_Rdb_Store](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-rdb-store) *store | 指向[OH_Rdb_Store](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-rdb-store)实例的指针。 |
 | const char *sql | 指定要执行的SQL语句。 |
-| const OH_Data_Values *args | 可选参数，指向[OH_Data_Values](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-data-values)实例的指针。 |
+| const [OH_Data_Values](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-data-values) *args | 表示SQL语句中参数的值，指向OH_Data_Values实例的指针。SQL语句完整时，args可填写为nullptr。 |
 
 返回：
 
@@ -2166,7 +2166,7 @@ OH_Cursor *OH_Rdb_QuerySqlWithoutRowCount(OH_Rdb_Store *store, const char *sql, 
 | --- | --- |
 | [OH_Rdb_Store](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-rdb-store) *store | 指向[OH_Rdb_Store](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-rdb-store)实例的指针。 |
 | const char *sql | 要执行的SQL语句。 |
-| [const OH_Data_Values](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-data-values) *args | 指向[OH_Data_Values](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-data-values)实例的指针。SQL语句完整时，args可填写为nullptr。 |
+| const [OH_Data_Values](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-data-values) *args | 表示SQL语句中参数的值，指向OH_Data_Values实例的指针。SQL语句完整时，args可填写为nullptr。 |
 
 返回：
 

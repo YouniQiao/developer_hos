@@ -2,8 +2,8 @@
 title: "@ohos.security.certManager (证书管理模块)"
 upstream_id: "harmonyos-references/js-apis-certmanager"
 catalog: "harmonyos-references"
-content_hash: "73f5e7e17df0"
-synced_at: "2026-08-14T15:54:22.090566"
+content_hash: "89a356e0647b"
+synced_at: "2026-08-18T15:33:19.273711"
 ---
 
 # @ohos.security.certManager (证书管理模块)
@@ -331,9 +331,9 @@ import { certificateManager } from '@kit.DeviceCertificateKit';
 let keystore: Uint8Array = new Uint8Array([
   0x30, 0x82, 0x0b, 0xc1, 0x02, 0x01
 ]);
-let keystorePwd: string = "123456";
+let keystorePwd: string = '123456';
 try {
-  certificateManager.installPrivateCertificate(keystore, keystorePwd, "test", (err, cmResult) => {
+  certificateManager.installPrivateCertificate(keystore, keystorePwd, 'test', (err, cmResult) => {
     if (err != null) {
       console.error(`Failed to install private certificate. Code: ${err.code}, message: ${err.message}`);
     } else {
@@ -392,7 +392,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 let keystore: Uint8Array = new Uint8Array([
   0x30, 0x82, 0x0b, 0xc1, 0x02, 0x01
 ]);
-let keystorePwd: string = "123456";
+let keystorePwd: string = '123456';
 try {
   certificateManager.installPrivateCertificate(keystore, keystorePwd, 'test').then((cmResult) => {
     let uri: string = cmResult?.uri ?? '';
@@ -453,7 +453,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 let keystore: Uint8Array = new Uint8Array([
   0x30, 0x82, 0x0b, 0xc1, 0x02, 0x01
 ]);
-let keystorePwd: string = "123456";
+let keystorePwd: string = '123456';
 try {
   /* 安装凭据在首次解锁设备后可以使用。 */
   let level = certificateManager.AuthStorageLevel.EL2;
@@ -793,9 +793,9 @@ try {
   let result: certificateManager.CMResult = certificateManager.installUserTrustedCertificateSync(certData, certificateManager.CertScope.CURRENT_USER);
   let certUri = result.uri;
   if (certUri === undefined) {
-    console.error("The result of install user trusted certificate is undefined.");
+    console.error('The result of install user trusted certificate is undefined.');
   } else {
-    console.info("Succeeded in installing user trusted certificate.");
+    console.info('Succeeded in installing user trusted certificate.');
   }
 } catch (error) {
   console.error(`Failed to install user trusted certificate. Code: ${error.code}, message: ${error.message}`);
@@ -834,7 +834,7 @@ uninstallUserTrustedCertificateSync(certUri: string) : void
 ```
 import { certificateManager } from '@kit.DeviceCertificateKit';
 
-let certUri: string = "test"; /* 业务删除证书，需要使用证书的标识符，此处省略 */
+let certUri: string = 'test'; /* 业务删除证书，需要使用证书的标识符，此处省略 */
 try {
   certificateManager.uninstallUserTrustedCertificateSync(certUri);
 } catch (error) {
@@ -1719,7 +1719,7 @@ try {
     certType: certificateManager.CertType.CA_CERT_SYSTEM
   };
   let systemCAPath = certificateManager.getCertificateStorePath(property1);
-  console.info(`Success to get system ca path: ${systemCAPath}`);
+  console.info(`Succeeded in getting system CA path: ${systemCAPath}`);
 
   /* 获取当前用户的用户CA存储位置 */
   let property2: certificateManager.CertStoreProperty = {
@@ -1727,7 +1727,7 @@ try {
     certScope: certificateManager.CertScope.CURRENT_USER
   };
   let userCACurrentPath = certificateManager.getCertificateStorePath(property2);
-  console.info(`Success to get current user's user ca path: ${userCACurrentPath}`);
+  console.info(`Succeeded in getting current user's user CA path: ${userCACurrentPath}`);
 
   /* 获取设备公共的用户CA存储位置 */
   let property3: certificateManager.CertStoreProperty = {
@@ -1735,7 +1735,7 @@ try {
     certScope: certificateManager.CertScope.GLOBAL_USER
   };
   let globalCACurrentPath = certificateManager.getCertificateStorePath(property3);
-  console.info(`Success to get global user's user ca path: ${globalCACurrentPath}`);
+  console.info(`Succeeded in getting global user's user CA path: ${globalCACurrentPath}`);
 
   /* 获取SM算法系统CA的存储位置 */
   let property4: certificateManager.CertStoreProperty = {
@@ -1743,7 +1743,7 @@ try {
     certAlg: certificateManager.CertAlgorithm.SM
   };
   let smSystemCAPath = certificateManager.getCertificateStorePath(property4);
-  console.info(`Success to get SM system ca path: ${smSystemCAPath}`);
+  console.info(`Succeeded in getting SM system CA path: ${smSystemCAPath}`);
 } catch (error) {
   console.error(`Failed to get store path. Code: ${error.code}, message: ${error.message}`);
 }
@@ -1802,8 +1802,12 @@ let ukeyInfo: certificateManager.UkeyInfo = { /* USB凭据的属性信息，此�
 };
 try {
   certificateManager.getUkeyCertificate(keyUri, ukeyInfo).then((cmResult) => {
-    let list = cmResult.credentialDetailList;
-    console.info('Succeeded in getting detail of USB Key certificate.');
+    if (cmResult?.credentialDetailList === undefined) {
+      console.info('The result of getting detail of USB Key certificate is undefined.');
+    } else {
+      let list = cmResult.credentialDetailList;
+      console.info('Succeeded in getting detail of USB Key certificate.');
+    }
   }).catch((error: Error) => {
     let err = error as BusinessError;
     console.error(`Failed to get detail of USB Key certificate. Code: ${err.code}, message: ${err.message}`);

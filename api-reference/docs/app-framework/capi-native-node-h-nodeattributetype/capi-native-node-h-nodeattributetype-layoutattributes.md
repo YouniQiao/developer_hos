@@ -2,8 +2,8 @@
 title: "ArkUI_NodeAttributeType（布局属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-layoutattributes"
 catalog: "harmonyos-references"
-content_hash: "a44a86efc063"
-synced_at: "2026-07-28T16:49:20.712806"
+content_hash: "d03863deae5f"
+synced_at: "2026-08-18T15:32:36.831835"
 ---
 
 # ArkUI_NodeAttributeType（布局属性）
@@ -276,25 +276,25 @@ NODE_BORDER_COLOR = 19
 
 | 参数项 | 描述 |
 | --- | --- |
-| .value[0].u32 | 统一设置四条边的边框颜色，使用0xargb表示，如0xFFFF11FF。 |
+| .value[0].u32 | 统一设置四条边的边框颜色，使用0xARGB表示，如0xFFFF11FF。 |
 
 2：分别设置四条边的边框颜色。
 
 | 参数项 | 描述 |
 | --- | --- |
-| .value[0].u32 | 设置上侧边框颜色，使用0xargb表示，默认值为0xFF000000。 |
-| .value[1].u32 | 设置右侧边框颜色，使用0xargb表示，默认值为0xFF000000。 |
-| .value[2].u32 | 设置下侧边框颜色，使用0xargb表示，默认值为0xFF000000。 |
-| .value[3].u32 | 设置左侧边框颜色，使用0xargb表示，默认值为0xFF000000。 |
+| .value[0].u32 | 设置上侧边框颜色，使用0xARGB表示，默认值为0xFF000000。 |
+| .value[1].u32 | 设置右侧边框颜色，使用0xARGB表示，默认值为0xFF000000。 |
+| .value[2].u32 | 设置下侧边框颜色，使用0xARGB表示，默认值为0xFF000000。 |
+| .value[3].u32 | 设置左侧边框颜色，使用0xARGB表示，默认值为0xFF000000。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| .value[0].u32 | 上侧边框颜色，使用0xargb表示，如0xFFFF11FF。 |
-| .value[1].u32 | 右侧边框颜色，使用0xargb表示，如0xFFFF11FF。 |
-| .value[2].u32 | 下侧边框颜色，使用0xargb表示，如0xFFFF11FF。 |
-| .value[3].u32 | 左侧边框颜色，使用0xargb表示，如0xFFFF11FF。 |
+| .value[0].u32 | 上侧边框颜色，使用0xARGB表示，如0xFFFF11FF。 |
+| .value[1].u32 | 右侧边框颜色，使用0xARGB表示，如0xFFFF11FF。 |
+| .value[2].u32 | 下侧边框颜色，使用0xARGB表示，如0xFFFF11FF。 |
+| .value[3].u32 | 左侧边框颜色，使用0xARGB表示，如0xFFFF11FF。 |
 
 #### NODE_BORDER_STYLE
 

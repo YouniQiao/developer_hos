@@ -2,15 +2,15 @@
 title: "dlp_permission_api.h"
 upstream_id: "harmonyos-references/capi-dlp-permission-api-h"
 catalog: "harmonyos-references"
-content_hash: "67fa3718ffdd"
-synced_at: "2026-07-09T00:59:14.491164"
+content_hash: "95bba617ca49"
+synced_at: "2026-08-18T15:33:14.262545"
 ---
 
 # dlp_permission_api.h
 
 #### 概述
 
-声明用于跨设备的文件的权限管理、加密存储、授权访问等能力的接口。
+声明用于跨设备的文件权限管理、加密存储、授权访问等能力的接口。
 
 库： libohdlp_permission.so
 
@@ -101,7 +101,7 @@ DLP_ErrCode OH_DLP_GetDlpPermissionInfo(DLP_FileAccess *dlpFileAccess, uint32_t 
 | 参数项 | 描述 |
 | --- | --- |
 | [DLP_FileAccess](#dlp_fileaccess) *dlpFileAccess | 表示DLP文件针对用户的授权类型，例如：只读。 |
-| uint32_t *flags | 表示DLP文件的详细操作权限，操作权限的具体含义为： 0x00000000-表示无文件权限。 0x00000001-表示文件的查看权限。 0x00000002-表示文件的保存权限。 0x00000004-表示文件的另存为权限。 0x00000008-表示文件的编辑权限。 0x00000010-表示文件的截屏权限。 0x00000020-表示文件的共享屏幕权限。 0x00000040-表示文件的录屏权限。 0x00000080-表示文件的复制权限。 0x00000100-表示文件的打印权限。 0x00000200-表示文件的导出权限。 0x00000400-表示文件的修改文件权限。 |
+| uint32_t *flags | 表示DLP文件的详细操作权限，具体含义为： 0x00000000-表示无文件权限。 0x00000001-表示文件的查看权限。 0x00000002-表示文件的保存权限。 0x00000004-表示文件的另存为权限。 0x00000008-表示文件的编辑权限。 0x00000010-表示文件的截屏权限。 0x00000020-表示文件的共享屏幕权限。 0x00000040-表示文件的录屏权限。 0x00000080-表示文件的复制权限。 0x00000100-表示文件的打印权限。 0x00000200-表示文件的导出权限。 0x00000400-表示文件的修改文件权限。 |
 
 返回：
 
@@ -124,7 +124,7 @@ DLP_ErrCode OH_DLP_GetOriginalFileName(const char *fileName, char **originalFile
 
 | 参数项 | 描述 |
 | --- | --- |
-| const char *fileName | 指定要查询的文件名。 |
+| const char *fileName | 指定要查询的文件名。长度不超过256字节。 |
 | char **originalFileName | DLP文件的原始文件名。 |
 
 返回：

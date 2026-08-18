@@ -2,8 +2,8 @@
 title: "OH_VBucket"
 upstream_id: "harmonyos-references/capi-rdb-oh-vbucket"
 catalog: "harmonyos-references"
-content_hash: "af58f0ce92de"
-synced_at: "2026-07-09T00:57:19.790451"
+content_hash: "a0ace5379b72"
+synced_at: "2026-08-18T15:31:52.041739"
 ---
 
 # OH_VBucket
@@ -41,7 +41,7 @@ typedef struct {...} OH_VBucket
 | [int (*clear)(OH_VBucket *bucket)](#clear) | 清空OH_VBucket对象。 |
 | [int (*destroy)(OH_VBucket *bucket)](#destroy) | 销毁OH_VBucket对象，并回收该对象占用的内存。 |
 
-#### [h2]成员函数说明
+#### 成员函数说明
 
 #### [h2]putText()
 
@@ -59,7 +59,7 @@ int (*putText)(OH_VBucket *bucket, const char *field, const char *value)
 | 参数项 | 描述 |
 | --- | --- |
 | OH_VBucket *bucket | 表示指向OH_VBucket实例的指针。 |
-| const char *field | 数据库表中的列名，不能为空。 |
+| const char *field | 数据库表中的列名，不能为空指针。 |
 | const char *value | 数据库表中指定列名对应的值。 |
 
 返回：

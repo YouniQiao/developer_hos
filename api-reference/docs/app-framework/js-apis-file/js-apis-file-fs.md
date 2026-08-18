@@ -2,8 +2,8 @@
 title: "@ohos.file.fs (文件管理)"
 upstream_id: "harmonyos-references/js-apis-file-fs"
 catalog: "harmonyos-references"
-content_hash: "16562753eef4"
-synced_at: "2026-08-07T15:57:31.601762"
+content_hash: "449239f56db8"
+synced_at: "2026-08-18T15:33:02.223281"
 ---
 
 # @ohos.file.fs (文件管理)
@@ -2592,10 +2592,10 @@ fileIo.readLines(filePath, options).then((readerIterator: fileIo.ReaderIterator)
 
 系统能力：SystemCapability.FileManagement.File.FileIO
 
-| 名称 | 类型 | 说明 |
-| --- | --- | --- |
-| done | boolean | 迭代器是否已完成迭代。true：已完成迭代；false：未完成迭代。 |
-| value | string | 逐行读取的文件文本内容。 |
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| done | boolean | 否 | 否 | 迭代器是否已完成迭代。true：已完成迭代；false：未完成迭代。 |
+| value | string | 否 | 否 | 逐行读取的文件文本内容。 |
 
 #### fileIo.readText
 
@@ -3516,13 +3516,6 @@ listFileExt(path: string, options?: ListFileExtOptions): Promise<string[]>
 
 接口抛出错误码的详细介绍请参见[基础文件IO错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-filemanagement#基础文件io错误码)。
 
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 13900002 | No such file or directory. |
-| 13900011 | Out of memory. |
-| 13900018 | Not a directory. |
-| 13900020 | Invalid argument. |
-
 示例：
 
 ```
@@ -3580,13 +3573,6 @@ listFileExtSync(path: string, options?: ListFileExtOptions): string[]
 错误码：
 
 接口抛出错误码的详细介绍请参见[基础文件IO错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-filemanagement#基础文件io错误码)。
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 13900002 | No such file or directory. |
-| 13900011 | Out of memory. |
-| 13900018 | Not a directory. |
-| 13900020 | Invalid argument. |
 
 示例：
 
@@ -4774,7 +4760,7 @@ AtomicFile是一个用于对文件进行原子读写操作的类。
 
 constructor(path: string)
 
-对于给定路径的文件创建一个AtomicFile类。
+对于给定路径的文件创建一个AtomicFile实例。
 
 系统能力：SystemCapability.FileManagement.File.FileIO
 
@@ -7560,10 +7546,10 @@ filter(name: string): boolean
 
 系统能力：SystemCapability.FileManagement.File.FileIO
 
-| 名称 | 类型 | 说明 |
-| --- | --- | --- |
-| srcFile | string | 源冲突文件路径。 |
-| destFile | string | 目标冲突文件路径。 |
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| srcFile | string | 否 | 否 | 源冲突文件路径。 |
+| destFile | string | 否 | 否 | 目标冲突文件路径。 |
 
 #### Options11+
 
@@ -7571,9 +7557,9 @@ filter(name: string): boolean
 
 系统能力：SystemCapability.FileManagement.File.FileIO
 
-| 名称 | 类型 | 说明 |
-| --- | --- | --- |
-| encoding | string | 文件编码方式。可选项。 |
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| encoding | string | 否 | 是 | 文件编码方式。可选项。 |
 
 #### WhenceType11+
 
@@ -7595,14 +7581,7 @@ filter(name: string): boolean
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| LOCAL | 1 | 文件在本地存在。 |
-| CLOUD | 2 | 文件在云端存在。 |
-
-#### AccessModeType12+
-
-枚举，表示需要校验的具体权限。若不填，默认校验文件是否存在。
-
-元服务API：从API version 12开始，该接口支持在元服务中使用。
+| LOCAL | 1 元服务API：从API version 12开始，该接口支持在元服务中使用。
 
 系统能力：SystemCapability.FileManagement.File.FileIO
 
@@ -7644,8 +7623,6 @@ filter(name: string): boolean
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| offset | number | 否 | 是 | 期望读取文件的位置，单位为Byte。可选，默认从当前位置开始读取。 |
-| length | number | 否 | 是 | 期望读取数据的长度，单位为Byte。可选，默认文件长度。 |
 | encoding | string | 否 | 是 | 当数据是 string 类型时有效，表示数据的编码方式，默认 'utf-8'，仅支持 'utf-8'。 **元服务API**：从API version 11开始，该接口支持在元服务中使用。 |
 
 #### WriteOptions11+
@@ -7658,7 +7635,6 @@ filter(name: string): boolean
 | --- | --- | --- | --- | --- |
 | offset | number | 否 | 是 | 期望写入文件位置，单位为Byte。可选，默认从当前位置开始写。 **元服务API**：从API version 11开始，该接口支持在元服务中使用。 |
 | length | number | 否 | 是 | 期望写入数据的长度，单位为Byte。可选，默认缓冲区长度。 **元服务API**：从API version 11开始，该接口支持在元服务中使用。 |
-| encoding | string | 否 | 是 | 当数据是string类型时有效，表示数据的编码方式。默认 'utf-8'。仅支持 'utf-8'。 |
 
 #### ListFileExtOptions
 
@@ -7771,7 +7747,7 @@ rs.close();
 
 #### [h2]seek12+
 
-seek(offset: number, whence?: WhenceType): number;
+seek(offset: number, whence?: WhenceType): number
 
 调整可写流的偏移指针位置。
 

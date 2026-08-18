@@ -2,8 +2,8 @@
 title: "ScrollBar"
 upstream_id: "harmonyos-references/ts-basic-components-scrollbar"
 catalog: "harmonyos-references"
-content_hash: "578af99ec9fd"
-synced_at: "2026-07-28T16:43:44.561607"
+content_hash: "072f12612ff1"
+synced_at: "2026-08-18T15:32:09.178152"
 ---
 
 # ScrollBar
@@ -162,7 +162,7 @@ struct ScrollBarExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848528.gif)
+ ![](./img/zh-cn_image_0000002713005729.gif)
 
 #### 示例2（不设置子节点）
 
@@ -208,14 +208,14 @@ struct ScrollBarExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087957.gif)
+ ![](./img/zh-cn_image_0000002683126130.gif)
 
 #### 示例3（支持嵌套滚动）
 
 从API version 14开始，可通过[enableNestedScroll](#enablenestedscroll14)属性使ScrollBar组件支持嵌套滚动。本示例同时使用从API version 20开始支持的[scrollBarColor](#scrollbarcolor20)属性设置滚动条颜色。
 
 ```
-import { ColorMetrics, EdgeEffect, NestedScrollMode } from '@kit.ArkUI'
+import { ColorMetrics } from '@kit.ArkUI'
 
 @Entry
 @Component
@@ -279,4 +279,4 @@ struct StickyNestedScroll {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928129.gif)
+ ![](./img/zh-cn_image_0000002712845855.gif)

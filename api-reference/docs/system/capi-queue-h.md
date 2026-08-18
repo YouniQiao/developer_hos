@@ -2,8 +2,8 @@
 title: "queue.h"
 upstream_id: "harmonyos-references/capi-queue-h"
 catalog: "harmonyos-references"
-content_hash: "4ace7403cb56"
-synced_at: "2026-07-28T16:51:05.106016"
+content_hash: "510ce912d3bc"
+synced_at: "2026-08-18T15:33:44.204023"
 ---
 
 # queue.h
@@ -61,7 +61,7 @@ synced_at: "2026-07-28T16:51:05.106016"
 | [FFRT_C_API void ffrt_queue_wait(ffrt_task_handle_t handle)](#ffrt_queue_wait) | 等待队列中的任务执行完成。 |
 | [FFRT_C_API int ffrt_queue_cancel(ffrt_task_handle_t handle)](#ffrt_queue_cancel) | 取消队列中的任务。已开始执行的任务无法被取消。 |
 | [FFRT_C_API ffrt_queue_t ffrt_get_main_queue(void)](#ffrt_get_main_queue) | 获取应用主线程队列。 |
-| [FFRT_C_API ffrt_queue_t ffrt_get_current_queue(void)](#ffrt_get_current_queue) | 获取应用Worker（ArkTS）线程队列。(API18废弃) |
+| [FFRT_C_API ffrt_queue_t ffrt_get_current_queue(void)](#ffrt_get_current_queue) | 获取应用Worker（ArkTS）线程队列。 |
 
 #### 枚举类型说明
 

@@ -2,8 +2,8 @@
 title: "@ohos.app.ability.errorManager (错误管理模块)"
 upstream_id: "harmonyos-references/js-apis-app-ability-errormanager"
 catalog: "harmonyos-references"
-content_hash: "cc69413150a9"
-synced_at: "2026-07-28T16:40:36.297232"
+content_hash: "5b4a3a0f4745"
+synced_at: "2026-08-18T15:31:40.565516"
 ---
 
 # @ohos.app.ability.errorManager (错误管理模块)
@@ -370,7 +370,7 @@ on(type: 'globalUnhandledRejectionDetected', observer: GlobalObserver): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 填写'globalUnhandledRejectionDetected'，表示注册被拒绝Promise监听器。 回调函数入参：(reason: Error | any, promise: Promise) => void，其中reason为被拒绝的理由（通常是Error类型），Promise为被拒绝的Promise对象。 |
+| type | string | 是 | 填写'globalUnhandledRejectionDetected'，表示注册被拒绝Promise监听器。 |
 | observer | [GlobalObserver](#globalobserver18) | 是 | 注册被拒绝Promise的callback。 |
 
 错误码：
@@ -543,6 +543,7 @@ off(type: 'loopObserver', observer?: LoopObserver): void
 
 ```
 import { errorManager } from '@kit.AbilityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
   errorManager.off('loopObserver');
@@ -879,7 +880,7 @@ setDefaultFreezeObserver(defaultObserver?: FreezeObserver) : FreezeObserver
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| defaultObserver | [FreezeObserver](#freezeobserver18) | 否 | 新注册的错误处理器，默认值为空。 当参数为空时，后续注册的处理器将无法与前序已注册的处理器建立关联，从而中断链式调用。 |
+| defaultObserver | [FreezeObserver](#freezeobserver18) | 否 | 新注册的freeze观察者，默认值为空。 当参数为空时，后续注册的处理器将无法与前序已注册的处理器建立关联，从而中断链式调用。 |
 
 返回值：
 
@@ -986,7 +987,7 @@ type FreezeObserver = () => void
 
 type GlobalObserver = (reason: GlobalError) => void
 
-定义异常监听，可以作为[errorManager.on('globalErrorOccurred')](#errormanageronglobalerroroccurred18)和[errorManager.on('globalUnhandledRejectionDetected')](#errormanageronglobalunhandledrejectiondetected18)的入参，用于监听应用事件处理超时的情况。通过回调机制实时获取消息实际执行时间，帮助开发者及时发现和定位故障问题。
+定义异常监听，可以作为[errorManager.on('globalErrorOccurred')](#errormanageronglobalerroroccurred18)和[errorManager.on('globalUnhandledRejectionDetected')](#errormanageronglobalunhandledrejectiondetected18)的入参，用于监听全局异常事件和未捕获的Promise rejection。通过回调机制获取异常详情，帮助开发者及时发现和定位故障问题。
 
 元服务API：从API version 18开始，该接口支持在元服务中使用。
 
@@ -1029,6 +1030,8 @@ type GlobalObserver = (reason: GlobalError) => void
 #### ErrorHandler21+
 
 type ErrorHandler = (errObject: Error) => void
+
+定义错误处理器函数类型，用于处理JS异常，作为[errorManager.setDefaultErrorHandler](#errormanagersetdefaulterrorhandler21)的参数类型，在异常发生时被调用，接收异常对象并执行自定义错误处理逻辑。
 
 元服务API：从API version 21开始，该接口支持在元服务中使用。
 

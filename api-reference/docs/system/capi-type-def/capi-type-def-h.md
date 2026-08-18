@@ -2,8 +2,8 @@
 title: "type_def.h"
 upstream_id: "harmonyos-references/capi-type-def-h"
 catalog: "harmonyos-references"
-content_hash: "2513aa477ab8"
-synced_at: "2026-07-28T16:51:05.720026"
+content_hash: "234d5af80c1a"
+synced_at: "2026-08-18T15:33:44.455348"
 ---
 
 # type_def.h
@@ -28,7 +28,7 @@ synced_at: "2026-07-28T16:51:05.720026"
 
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
-| int | ffrt_qos_t | QoS类型，用于设置任务的Qos等级。 |
+| int | ffrt_qos_t | QoS类型，用于设置任务的QoS等级。 |
 | int | ffrt_timer_t | 定时器句柄，用于标识已创建的定时器。 |
 | using qos = int | - | QoS类型。 **起始版本：** 10 |
 

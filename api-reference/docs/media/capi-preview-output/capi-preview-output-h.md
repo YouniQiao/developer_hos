@@ -2,8 +2,8 @@
 title: "preview_output.h"
 upstream_id: "harmonyos-references/capi-preview-output-h"
 catalog: "harmonyos-references"
-content_hash: "ff9103ac200f"
-synced_at: "2026-07-28T16:51:43.024404"
+content_hash: "8d547cad35f7"
+synced_at: "2026-08-18T15:34:10.936760"
 ---
 
 # preview_output.h
@@ -542,7 +542,7 @@ bool OH_PreviewOutput_IsLogViewAssistSupported(const Camera_PreviewOutput* previ
 
 | 参数项 | 描述 |
 | --- | --- |
-| [Camera_PreviewOutput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-camera-previewoutput)* previewOutput | 预览输出实例。 |
+| const [Camera_PreviewOutput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-camera-previewoutput)* previewOutput | 预览输出实例。 |
 
 返回：
 

@@ -2,8 +2,8 @@
 title: "metadata_output.h"
 upstream_id: "harmonyos-references/capi-metadata-output-h"
 catalog: "harmonyos-references"
-content_hash: "fee3d61bb9c9"
-synced_at: "2026-07-28T16:51:42.619837"
+content_hash: "0915121e7ac9"
+synced_at: "2026-08-18T15:34:10.607377"
 ---
 
 # metadata_output.h
@@ -318,7 +318,7 @@ Camera_ErrorCode OH_MetadataOutput_RegisterMetadataObjectExtAvailableCallback(Ca
 | --- | --- |
 | [Camera_MetadataOutput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-camera-metadataoutput)* metadataOutput | 元数据输出实例的指针。 |
 | void* context | 用户提供的上下文指针。 |
-| [OH_MetadataOutput_OnMetadataObjectExtAvailable](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-metadata-output-h#oh_metadataoutput_onmetadataobjectextavailable)* callback | 监听元数据对象上报事件的回调的指针。 |
+| [OH_MetadataOutput_OnMetadataObjectExtAvailable](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-metadata-output-h#oh_metadataoutput_onmetadataobjectextavailable) callback | 监听元数据对象上报事件的回调的指针。 |
 
 返回：
 
@@ -343,7 +343,7 @@ Camera_ErrorCode OH_MetadataOutput_UnregisterMetadataObjectExtAvailableCallback(
 | --- | --- |
 | [Camera_MetadataOutput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-camera-metadataoutput)* metadataOutput | 元数据输出实例的指针。 |
 | void* context | 用户提供的上下文指针。 |
-| [OH_MetadataOutput_OnMetadataObjectExtAvailable](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-metadata-output-h#oh_metadataoutput_onmetadataobjectextavailable)* callback | 监听元数据对象上报事件的回调的指针。 |
+| [OH_MetadataOutput_OnMetadataObjectExtAvailable](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-metadata-output-h#oh_metadataoutput_onmetadataobjectextavailable) callback | 监听元数据对象上报事件的回调的指针。 |
 
 返回：
 
@@ -368,7 +368,7 @@ Camera_ErrorCode OH_MetadataOutput_RegisterErrorExtCallback(Camera_MetadataOutpu
 | --- | --- |
 | [Camera_MetadataOutput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-camera-metadataoutput)* metadataOutput | 元数据输出实例的指针。 |
 | void* context | 用户提供的上下文指针。 |
-| [OH_MetadataOutput_OnErrorExt](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-metadata-output-h#oh_metadataoutput_onerrorext)* callback | 监听错误事件的回调的指针。 |
+| [OH_MetadataOutput_OnErrorExt](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-metadata-output-h#oh_metadataoutput_onerrorext) callback | 监听错误事件的回调的指针。 |
 
 返回：
 
@@ -393,7 +393,7 @@ Camera_ErrorCode OH_MetadataOutput_UnregisterErrorExtCallback(Camera_MetadataOut
 | --- | --- |
 | [Camera_MetadataOutput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-camera-metadataoutput)* metadataOutput | 元数据输出实例的指针。 |
 | void* context | 用户提供的上下文指针。 |
-| [OH_MetadataOutput_OnErrorExt](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-metadata-output-h#oh_metadataoutput_onerrorext)* callback | 监听错误事件的回调的指针。 |
+| [OH_MetadataOutput_OnErrorExt](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-metadata-output-h#oh_metadataoutput_onerrorext) callback | 监听错误事件的回调的指针。 |
 
 返回：
 
@@ -416,7 +416,7 @@ bool OH_MetadataOutput_IsLockMetadataObjectTrackingSupported(const Camera_Metada
 
 | 参数项 | 描述 |
 | --- | --- |
-| [Camera_MetadataOutput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-camera-metadataoutput)* metadataOutput | MetadataOutput实例的指针。 |
+| const [Camera_MetadataOutput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-camera-metadataoutput)* metadataOutput | MetadataOutput实例的指针。 |
 
 返回：
 

@@ -1,12 +1,10 @@
 ---
-
 title: "拖拽事件错误码"
 upstream_id: "harmonyos-references/errorcode-drag-event"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T00:58:48.443709"
-content_hash: "689b124d5444"
+content_hash: "1dd17cfaad8f"
+synced_at: "2026-08-18T15:32:50.975800"
 ---
-
 
 # 拖拽事件错误码
 
@@ -20,7 +18,7 @@ Data not found.
 
 错误描述
 
-当开发者调用DragEvent的[getData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#getdata10)接口时，若还未获取到数据，会抛出此错误码。
+当开发者调用DragEvent的[getData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#getdata10)接口时，若还未获取到数据，会抛出此错误码。该错误码为string类型。
 
 可能原因
 
@@ -38,7 +36,7 @@ Data error.
 
 错误描述
 
-当开发者调用DragEvent的[getData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#getdata10)接口时，若取得的数据有错误，会抛出此错误码。
+当开发者调用DragEvent的[getData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#getdata10)接口时，若取得的数据有错误，会抛出此错误码。该错误码为string类型。
 
 可能原因
 
@@ -56,7 +54,7 @@ Operation not allowed for current phase.
 
 错误描述
 
-如果开发者在非[onDrop](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondrop)阶段调用仅支持该阶段调用的接口，会抛出此错误码。
+如果开发者在非[onDrop](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondrop)阶段调用仅支持该阶段调用的接口，会抛出此错误码。该错误码为string类型。
 
 可能原因
 
@@ -74,7 +72,7 @@ Operation failed.
 
 错误描述
 
-如果开发者在数据未加载或加载完成后调用[cancelDataLoading](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-dragcontroller#canceldataloading15)接口，会抛出此错误码。
+如果开发者在数据未加载或加载完成后调用[cancelDataLoading](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-dragcontroller#canceldataloading15)接口，会抛出此错误码。该错误码为string类型。
 
 可能原因
 

@@ -2,8 +2,8 @@
 title: "crypto_sym_key.h"
 upstream_id: "harmonyos-references/capi-crypto-sym-key-h"
 catalog: "harmonyos-references"
-content_hash: "9a17d46de208"
-synced_at: "2026-08-03T17:10:53.880598"
+content_hash: "3c45f29b8a8b"
+synced_at: "2026-08-18T15:33:12.886259"
 ---
 
 # crypto_sym_key.h
@@ -11,6 +11,8 @@ synced_at: "2026-08-03T17:10:53.880598"
 #### 概述
 
 定义对称密钥接口。
+
+引用文件： <CryptoArchitectureKit/crypto_sym_key.h>
 
 库： libohcrypto.so
 

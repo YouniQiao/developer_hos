@@ -2,8 +2,8 @@
 title: "交互事件错误码"
 upstream_id: "harmonyos-references/errorcode-event"
 catalog: "harmonyos-references"
-content_hash: "6d4c783a8226"
-synced_at: "2026-08-07T15:57:19.106907"
+content_hash: "d8dcf53dbe14"
+synced_at: "2026-08-18T15:32:51.432626"
 ---
 
 # 交互事件错误码
@@ -18,7 +18,7 @@ Component does not support prevent function.
 
 错误描述
 
-组件不支持阻止默认事件。
+组件不支持阻止默认事件。该错误码为string类型。
 
 可能原因
 
@@ -36,7 +36,7 @@ The component does not support specific properties or events.
 
 错误描述
 
-组件不支持特定的属性或者事件。
+组件不支持特定的属性或者事件。该错误码为string类型。
 
 可能原因
 
@@ -54,7 +54,7 @@ Component is not a scroll container.
 
 错误描述
 
-非滚动类容器。
+非滚动类容器。该错误码为string类型。
 
 可能原因
 
@@ -72,7 +72,7 @@ Buffer is not large enough.
 
 错误描述
 
-存储区大小不足。
+存储区大小不足。该错误码为string类型。
 
 可能原因
 
@@ -90,7 +90,7 @@ The input event pointer is not a cloned event pointer.
 
 错误描述
 
-该事件不是克隆事件。
+该事件不是克隆事件。该错误码为string类型。
 
 可能原因
 
@@ -108,7 +108,7 @@ The component status is abnormal.
 
 错误描述
 
-组件状态异常。
+组件状态异常。该错误码为string类型。
 
 可能原因
 
@@ -126,7 +126,7 @@ No component hit to response to the event.
 
 错误描述
 
-未命中可响应事件的组件。
+未命中可响应事件的组件。该错误码为string类型。
 
 可能原因
 
@@ -144,7 +144,7 @@ Input event type not supported.
 
 错误描述
 
-不支持输入事件类型。
+不支持输入事件类型。该错误码为string类型。
 
 可能原因
 
@@ -162,7 +162,7 @@ The gesture recognizer type is not supported.
 
 错误描述
 
-不支持手势识别器类型。
+不支持手势识别器类型。该错误码为string类型。
 
 可能原因
 

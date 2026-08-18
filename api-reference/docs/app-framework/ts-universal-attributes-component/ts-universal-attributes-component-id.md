@@ -2,8 +2,8 @@
 title: "组件标识"
 upstream_id: "harmonyos-references/ts-universal-attributes-component-id"
 catalog: "harmonyos-references"
-content_hash: "754ab8105d11"
-synced_at: "2026-07-28T16:42:01.230781"
+content_hash: "dcf62beddc25"
+synced_at: "2026-08-18T15:32:03.553030"
 ---
 
 # 组件标识
@@ -363,6 +363,8 @@ struct IdExample {
               windowY: rect.top + (rect.bottom - rect.top) / 2, // 相对于应用窗口左上角的垂直方向坐标
               displayX: rect.left + (rect.right - rect.left) / 2, // 相对于设备屏幕左上角的水平方向坐标
               displayY: rect.top + (rect.bottom - rect.top) / 2, // 相对于设备屏幕左上角的垂直方向坐标
+              screenX: rect.left + (rect.right - rect.left) / 2, // 相对于应用窗口左上角的水平方向坐标
+              screenY: rect.top + (rect.bottom - rect.top) / 2, // 相对于应用窗口左上角的垂直方向坐标
             };
             sendTouchEvent(touchPoint); // 发送触摸事件
             touchPoint.type = TouchType.Up;
@@ -387,6 +389,8 @@ struct IdExample {
             windowY: rect.top + (rect.bottom - rect.top) / 2, // 相对于应用窗口左上角的垂直方向坐标
             displayX: rect.left + (rect.right - rect.left) / 2, // 相对于设备屏幕左上角的水平方向坐标
             displayY: rect.top + (rect.bottom - rect.top) / 2, // 相对于设备屏幕左上角的垂直方向坐标
+            screenX: rect.left + (rect.right - rect.left) / 2, // 相对于应用窗口左上角的水平方向坐标
+            screenY: rect.top + (rect.bottom - rect.top) / 2, // 相对于应用窗口左上角的垂直方向坐标
             stopPropagation: () => {
             },
             timestamp: 1,

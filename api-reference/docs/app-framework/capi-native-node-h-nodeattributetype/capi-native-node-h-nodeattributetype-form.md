@@ -2,8 +2,8 @@
 title: "ArkUI_NodeAttributeType（表单类组件相关属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-form"
 catalog: "harmonyos-references"
-content_hash: "d5445c177125"
-synced_at: "2026-07-28T16:49:21.449032"
+content_hash: "a625afcec920"
+synced_at: "2026-08-18T15:32:36.803553"
 ---
 
 # ArkUI_NodeAttributeType（表单类组件相关属性）
@@ -699,13 +699,13 @@ NODE_SLIDER_ENABLE_HAPTIC_FEEDBACK = 17013
 
 | 参数项 | 描述 |
 | --- | --- |
-| .value[0].f32 | 是否开启触控反馈。默认值：true，true表示开启触控反馈，false则表示不开启触控反馈。 |
+| .value[0].i32 | 是否开启触控反馈。默认值：true，true表示开启触控反馈，false则表示不开启触控反馈。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| .value[0].f32 | 是否开启触控反馈。 |
+| .value[0].i32 | 是否开启触控反馈。 |
 
 #### NODE_SLIDER_PREFIX
 

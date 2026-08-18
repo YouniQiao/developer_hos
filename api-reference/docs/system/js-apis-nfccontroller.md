@@ -2,8 +2,8 @@
 title: "@ohos.nfc.controller (标准NFC)"
 upstream_id: "harmonyos-references/js-apis-nfccontroller"
 catalog: "harmonyos-references"
-content_hash: "b12a4308c67e"
-synced_at: "2026-07-28T16:50:37.369609"
+content_hash: "2e15f59a8e9e"
+synced_at: "2026-08-18T15:33:22.596107"
 ---
 
 # @ohos.nfc.controller (标准NFC)
@@ -39,7 +39,7 @@ isNfcAvailable(): boolean
 
 查询设备是否有NFC能力。
 
-![](./img/note_3.0-zh-cn.png) 从 API version 7 开始支持，从 API version 9 开始废弃，建议使用[canIUse("SystemCapability.Communication.NFC.Core")](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/init#caniuse)替代。
+![](./img/note_3.0-zh-cn.png) 从 API version 7 开始支持，从 API version 9 开始废弃，建议使用[canIUse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/syscap__ndk_8h#caniuse)替代。
 
 系统能力： SystemCapability.Communication.NFC.Core
 

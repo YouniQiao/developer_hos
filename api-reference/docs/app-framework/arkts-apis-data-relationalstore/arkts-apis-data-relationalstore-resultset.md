@@ -2,8 +2,8 @@
 title: "Interface (ResultSet)"
 upstream_id: "harmonyos-references/arkts-apis-data-relationalstore-resultset"
 catalog: "harmonyos-references"
-content_hash: "94a2a3d84f26"
-synced_at: "2026-07-28T16:40:49.058084"
+content_hash: "0001e87bfe7e"
+synced_at: "2026-08-18T15:31:49.898648"
 ---
 
 # Interface (ResultSet)
@@ -1101,7 +1101,7 @@ getRows(maxCount: number, position?: number): Promise<Array<ValuesBucket>>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise> | 返回maxCount条数据，剩余数据不足maxCount条则返回剩余数据，返回空数组时代表已经遍历到结果集的末尾。当结果集中包含重名列时，返回值会不符合预期，建议使用[getRowsData](#getrowsdata23)接口获取。 |
+| Promise> | Promise对象，返回maxCount条数据，剩余数据不足maxCount条则返回剩余数据，返回空数组时代表已经遍历到结果集的末尾。当结果集中包含重名列时，返回值会不符合预期，建议使用[getRowsData](#getrowsdata23)接口获取。 |
 
 错误码：
 
@@ -1225,7 +1225,7 @@ getRowsData(maxCount: number, position?: number): Promise<RowsData>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | 返回maxCount条数据，剩余数据不足maxCount条则返回剩余数据，返回空数组时代表已经遍历到结果集的末尾。支持获取包含重名列的值。 |
+| Promise | Promise对象，返回maxCount条数据，剩余数据不足maxCount条则返回剩余数据，返回空数组时代表已经遍历到结果集的末尾。支持获取包含重名列的值。 |
 
 错误码：
 

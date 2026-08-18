@@ -2,8 +2,8 @@
 title: "@ohos.data.uniformTypeDescriptor (标准化数据定义与描述)"
 upstream_id: "harmonyos-references/js-apis-data-uniformtypedescriptor"
 catalog: "harmonyos-references"
-content_hash: "cf51cebbd140"
-synced_at: "2026-07-28T16:40:50.115171"
+content_hash: "3acedb02ed22"
+synced_at: "2026-08-18T15:31:50.237127"
 ---
 
 # @ohos.data.uniformTypeDescriptor (标准化数据定义与描述)
@@ -85,7 +85,7 @@ import { uniformTypeDescriptor } from '@kit.ArkData';
 | EFX_FAX12+ | 'com.js.efx-fax' | 电子传真文件类型，归属类型为FAX。 |
 | XBITMAP_IMAGE12+ | 'general.xbitmap-image' | X Window系统（X11）中使用的位图图像格式，归属类型为IMAGE。 |
 | GIF12+ | 'general.gif' | GIF图像类型，归属类型为IMAGE。 |
-| TGA_IMAGE12+ | 'com.truevision.tga-image' | 标签图形（TaggedGraphics）图像类型，归属类型为IMAGE。 |
+| TGA_IMAGE12+ | 'com.truevision.tga-image' | Truevision Graphics Adapter图像文件格式，归属类型为IMAGE。 |
 | SGI_IMAGE12+ | 'com.sgi.sgi-image' | 硅图（Silicon Graphics）图像类型，归属类型为IMAGE。 |
 | OPENEXR_IMAGE12+ | 'com.ilm.openexr-image' | 开放标准的高动态范围图像格式类型，归属类型为IMAGE。 |
 | FLASHPIX_IMAGE12+ | 'com.kodak.flashpix.image' | FlashPix 图像文件类型，归属类型为IMAGE。 |

@@ -2,8 +2,8 @@
 title: "Enums"
 upstream_id: "harmonyos-references/arkts-apis-webview-e"
 catalog: "harmonyos-references"
-content_hash: "ae19703db0f1"
-synced_at: "2026-07-28T16:49:53.996258"
+content_hash: "6f61a1452960"
+synced_at: "2026-08-18T15:32:55.475354"
 ---
 
 # Enums
@@ -461,3 +461,14 @@ Web软键盘自动控制模式。
 | TABLET | 'Tablet' | 平板，字符串类型。 |
 | WATCH | 'Watch' | 手表，字符串类型。 |
 | XR | 'XR' | VR+AR设备，字符串类型。 |
+
+#### ControllerAttachState20+
+
+WebviewController与Web组件的绑定状态。
+
+系统能力： SystemCapability.Web.Webview.Core
+
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| UNATTACHED | 0 | 未绑定状态。 |
+| ATTACHED | 1 | 已绑定状态。 |

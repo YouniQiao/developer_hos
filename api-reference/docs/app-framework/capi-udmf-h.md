@@ -2,8 +2,8 @@
 title: "udmf.h"
 upstream_id: "harmonyos-references/capi-udmf-h"
 catalog: "harmonyos-references"
-content_hash: "92f9a4cf2c6b"
-synced_at: "2026-07-28T16:40:52.020965"
+content_hash: "5d1e51b53bc8"
+synced_at: "2026-08-18T15:31:51.736167"
 ---
 
 # udmf.h
@@ -48,11 +48,16 @@ synced_at: "2026-07-28T16:40:52.020965"
 | [Udmf_ProgressIndicator](#udmf_progressindicator) | Udmf_ProgressIndicator | 定义进度条指示选项，可选择是否采用系统默认进度显示。 |
 | [Udmf_Visibility](#udmf_visibility) | Udmf_Visibility | 定义数据的可见性等级。 |
 
+#### 宏定义
+
+| 名称 | 描述 |
+| --- | --- |
+| UDMF_KEY_BUFFER_LEN (512) | 统一数据对象唯一标识符最小空间长度。 **起始版本：** 12 |
+
 #### [h2]函数
 
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
-| [UDMF_KEY_BUFFER_LEN (512)](#udmf_key_buffer_len) | - | 统一数据对象唯一标识符最小空间长度。 |
 | [typedef void (*OH_Udmf_DataProgressListener)(OH_Udmf_ProgressInfo* progressInfo, OH_UdmfData* data)](#oh_udmf_dataprogresslistener) | OH_Udmf_DataProgressListener | 定义获取进度信息和数据的监听回调函数。 使用时需要判断数据是否返回空指针。只有当进度达到100%时，才会返回数据。 |
 | [OH_UdmfData* OH_UdmfData_Create()](#oh_udmfdata_create) | - | 创建统一数据对象[OH_UdmfData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfdata)指针及实例对象。当不再需要使用指针时，请使用[OH_UdmfData_Destroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-h#oh_udmfdata_destroy)销毁实例对象，否则会导致内存泄漏。 |
 | [void OH_UdmfData_Destroy(OH_UdmfData* pThis)](#oh_udmfdata_destroy) | - | 销毁统一数据对象[OH_UdmfData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfdata)指针指向的实例对象。 |
@@ -508,17 +513,6 @@ int OH_UdmfOptions_SetVisibility(OH_UdmfOptions* pThis, Udmf_Visibility visibili
 | 类型 | 说明 |
 | --- | --- |
 | int | 返回执行结果。请参阅错误码定义[Udmf_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-err-code-h#udmf_errcode)。 若返回UDMF_E_OK，表示执行成功。 若返回UDMF_E_INVALID_PARAM，表示传入了无效参数。 |
-
-#### [h2]UDMF_KEY_BUFFER_LEN()
-
-```
-UDMF_KEY_BUFFER_LEN (512)
-```
- 描述
-
-统一数据对象唯一标识符最小空间长度。
-
-起始版本： 12
 
 #### [h2]OH_Udmf_DataProgressListener()
 
@@ -1925,7 +1919,7 @@ int OH_Udmf_SetUnifiedDataByOptions(OH_UdmfOptions* options, OH_UdmfData *unifie
 | --- | --- |
 | [OH_UdmfOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfoptions)* options | 指向数据操作选项[OH_UdmfOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfoptions)实例的指针。 |
 | [OH_UdmfData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfdata) *unifiedData | 指向统一数据对象[OH_UdmfData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfdata)实例的指针。 |
-| char *key | 成功将数据设置到数据库后对应数据的唯一标识符，内存大小不小于[UDMF_KEY_BUFFER_LEN](#udmf_key_buffer_len)。 |
+| char *key | 成功将数据设置到数据库后对应数据的唯一标识符，内存大小不小于[UDMF_KEY_BUFFER_LEN](#宏定义)。 |
 | unsigned int keyLen | 唯一标识符参数的空间大小。 |
 
 返回：

@@ -1,12 +1,10 @@
 ---
-
 title: "焦点错误码"
 upstream_id: "harmonyos-references/errorcode-focus"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T00:58:48.662196"
-content_hash: "5b71adf63799"
+content_hash: "ab850ed1caf3"
+synced_at: "2026-08-18T15:32:51.014244"
 ---
-
 
 # 焦点错误码
 
@@ -20,7 +18,7 @@ the component cannot be focused.
 
 错误描述
 
-当前节点无法获得焦点。
+当前节点无法获得焦点。该错误码为string类型。
 
 可能原因
 
@@ -38,7 +36,7 @@ This component has an unfocusable ancestor.
 
 错误描述
 
-当前节点对应的祖先节点中存在无法获焦节点。
+当前节点对应的祖先节点中存在无法获焦节点。该错误码为string类型。
 
 可能原因
 
@@ -56,7 +54,7 @@ the component is not on tree or does not exist.
 
 错误描述
 
-传入的id指向不存在、未挂树或者不可见节点。
+传入的id指向不存在、未挂树或者不可见节点。该错误码为string类型。
 
 可能原因
 

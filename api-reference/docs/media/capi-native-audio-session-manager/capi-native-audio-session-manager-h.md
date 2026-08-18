@@ -2,8 +2,8 @@
 title: "native_audio_session_manager.h"
 upstream_id: "harmonyos-references/capi-native-audio-session-manager-h"
 catalog: "harmonyos-references"
-content_hash: "17927aceffa0"
-synced_at: "2026-07-09T01:00:10.218332"
+content_hash: "70e45536f033"
+synced_at: "2026-08-18T15:34:00.296738"
 ---
 
 # native_audio_session_manager.h
@@ -140,7 +140,7 @@ enum OH_AudioSession_OutputDeviceChangeRecommendedAction
 
 | 枚举项 | 描述 |
 | --- | --- |
-| DEVICE_CHANGE_RECOMMEND_TO_CONTINUE = 0 | 推荐继续播放（该事件作为播放维持提示，作用是告知应用本次设备变动音频无需停止播放，但‌不可将其作为启动音频播放的判断依据）。 |
+| DEVICE_CHANGE_RECOMMEND_TO_CONTINUE = 0 | 推荐继续播放（该事件作为播放维持提示，作用是告知应用本次设备变动音频无需停止播放，但不可将其作为启动音频播放的判断依据）。 |
 | DEVICE_CHANGE_RECOMMEND_TO_STOP = 1 | 推荐停止播放。 |
 
 #### [h2]OH_AudioSession_DeactivatedReason
@@ -186,7 +186,7 @@ typedef void (*OH_AudioSession_StateChangedCallback)(OH_AudioSession_StateChange
 ```
  描述
 
-这个函数指针将指向用于监听音频会话状态变更事件的回调函数。
+该函数指针将指向用于监听音频会话状态变更事件的回调函数。
 
 起始版本： 20
 
@@ -631,7 +631,7 @@ OH_AudioCommon_Result OH_AudioSessionManager_GetAvailableDevices(OH_AudioSession
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_AudioCommon_Result](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-common-h#oh_audiocommon_result) | AUDIOCOMMON_RESULT_SUCCESS：函数执行成功。 AUDIOCOMMON_RESULT_ERROR_INVALID_PARAM： 1.参数audioSessionManager为nullptr； 2.参数deviceUsage无效; 3.参数audioDeviceDescriptorArray为nullptr。 AUDIOCOMMON_RESULT_ERROR_SYSTEM：系统异常，例如系统服务异常退出等。 |
+| [OH_AudioCommon_Result](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-common-h#oh_audiocommon_result) | AUDIOCOMMON_RESULT_SUCCESS：函数执行成功。 AUDIOCOMMON_RESULT_ERROR_INVALID_PARAM： 1.参数audioSessionManager为nullptr； 2.参数deviceUsage无效； 3.参数audioDeviceDescriptorArray为nullptr。 AUDIOCOMMON_RESULT_ERROR_SYSTEM：系统异常，例如系统服务异常退出等。 |
 
 #### [h2]OH_AudioSessionManager_RegisterAvailableDevicesChangeCallback()
 
@@ -865,7 +865,7 @@ OH_AudioCommon_Result OH_AudioSessionManager_EnableMuteSuggestionWhenMixWithOthe
 ```
  描述
 
-启用混音播放下接收静音播放建议通知功能。通常，当使用混音模式时，如果有其他应用的音频同时播放，此时两者会混合播放。部分场景下（如游戏或广播），应用可以通过启用静音建议通知，以给用户提供更好的体验。如果启用此功能，当订阅音频会话状态更改事件后静音建议和取消静音建议提示将通过[OH_AudioSession_StateChangedCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-session-manager-h#oh_audiosession_statechangedcallback)回调发送，该回调由[OH_AudioSessionManager_RegisterStateChangeCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-session-manager-h#oh_audiosessionmanager_registerstatechangecallback)注册。
+启用混音播放下接收静音播放建议通知功能。通常，当使用混音模式时，如果有其他应用的音频同时播放，此时两者会混合播放。部分场景下（如游戏或广播），应用可以通过启用静音建议通知，以为用户提供更好的体验。如果启用此功能，当订阅音频会话状态更改事件后静音建议和取消静音建议提示将通过[OH_AudioSession_StateChangedCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-session-manager-h#oh_audiosession_statechangedcallback)回调发送，该回调由[OH_AudioSessionManager_RegisterStateChangeCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-session-manager-h#oh_audiosessionmanager_registerstatechangecallback)注册。
 
 收到静音建议表示其他应用程序开始播放音频，且播放的音频和本应用的音频不能混音。此功能仅支持已设置[OH_AudioSession_Scene](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-session-manager-h#oh_audiosession_scene)并激活模式为[OH_AudioSession_ConcurrencyMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-session-base-h#oh_audiosession_concurrencymode).CONCURRENCY_MIX_WITH_OTHERS的音频会话使用。
 

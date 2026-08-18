@@ -2,8 +2,8 @@
 title: "native_mediakeysystem.h"
 upstream_id: "harmonyos-references/capi-native-mediakeysystem-h"
 catalog: "harmonyos-references"
-content_hash: "2b6a3e6cb2a0"
-synced_at: "2026-07-09T01:00:28.872176"
+content_hash: "57c5ccfd9a8e"
+synced_at: "2026-08-18T15:34:13.662724"
 ---
 
 # native_mediakeysystem.h
@@ -12,7 +12,7 @@ synced_at: "2026-07-09T01:00:28.872176"
 
 定义Drm MediaKeySystem API。提供以下功能：
 
-查询是否支持特定的drm、创建媒体密钥会话、获取和设置配置、获取统计信息、获取内容保护级别、生成提供请求、处理提供响应、事件监听、获取内容防护级别、管理离线媒体密钥等。
+查询是否支持特定的DRM、创建媒体密钥会话、获取和设置配置、获取统计信息、获取内容保护级别、生成提供请求、处理提供响应、事件监听、获取内容防护级别、管理离线媒体密钥等。
 
 引用文件： <multimedia/drm_framework/native_mediakeysystem.h>
 
