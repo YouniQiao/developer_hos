@@ -2,8 +2,8 @@
 title: "Interface (ImagePacker)"
 upstream_id: "harmonyos-references/arkts-apis-image-imagepacker"
 catalog: "harmonyos-references"
-content_hash: "fc1739526b54"
-synced_at: "2026-07-28T16:51:48.347590"
+content_hash: "3818ac8d8e10"
+synced_at: "2026-08-21T15:36:48.852145"
 ---
 
 # Interface (ImagePacker)
@@ -162,6 +162,8 @@ async function PackToData() {
 packing(picture: Picture, options: PackingOption): Promise<ArrayBuffer>
 
 将图像压缩或重新编码。使用Promise异步回调。
+
+![](./img/note_3.0-zh-cn.png) 接口的编码对象为Picture，仅支持"image/jpeg"和"image/heic（或者image/heif）"格式。
 
 系统能力： SystemCapability.Multimedia.Image.ImagePacker
 

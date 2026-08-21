@@ -1,12 +1,10 @@
 ---
-
 title: "前景属性设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-foreground-effect"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T00:57:39.572869"
-content_hash: "8260cb7973f3"
+content_hash: "297726c9b73e"
+synced_at: "2026-08-21T15:33:34.630027"
 ---
-
 
 # 前景属性设置
 
@@ -21,7 +19,7 @@ content_hash: "8260cb7973f3"
 
 foregroundEffect(options: ForegroundEffectOptions): T
 
-设置组件的前景属性。
+设置组件的前景效果。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -31,7 +29,7 @@ foregroundEffect(options: ForegroundEffectOptions): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [ForegroundEffectOptions](#foregroundeffectoptions12) | 是 | 设置组件前景属性包括：模糊半径。 |
+| options | [ForegroundEffectOptions](#foregroundeffectoptions) | 是 | 设置组件前景效果，包括：模糊半径。效果仅在组件范围内生效，与backgroundEffect、blur等接口连用时超出组件范围的效果无法生效。 |
 
 返回值：
 
@@ -39,7 +37,7 @@ foregroundEffect(options: ForegroundEffectOptions): T
 | --- | --- |
 | T | 返回当前组件。 |
 
-#### ForegroundEffectOptions12+
+#### ForegroundEffectOptions
 
 前景效果参数。
 
@@ -62,7 +60,7 @@ foregroundEffect(options: ForegroundEffectOptions): T
 struct Index {
   build() {
     Row() {
-      // $r("app.media.icon")需要替换为开发者所需的图像资源文件。
+      // $r('app.media.icon')需要替换为开发者所需的图像资源文件。
       Image($r('app.media.icon'))
           .width(100)
           .height(100)
@@ -78,4 +76,4 @@ struct Index {
 
 radius表示模糊半径，数值越大，效果越模糊。
 
-![](./img/zh-cn_image_0000002656349609.jpg)
+![](./img/zh-cn_image_0000002689299842.jpg)

@@ -2,8 +2,8 @@
 title: "证书管理对话框错误码"
 upstream_id: "harmonyos-references/errorcode-certmanagerdialog"
 catalog: "harmonyos-references"
-content_hash: "cd262f5bb379"
-synced_at: "2026-08-18T15:33:19.597622"
+content_hash: "58afc95356da"
+synced_at: "2026-08-21T15:35:33.598857"
 ---
 
 # 证书管理对话框错误码
@@ -15,6 +15,10 @@ synced_at: "2026-08-18T15:33:19.597622"
 错误信息
 
 Internal error. Possible causes: 1. IPC communication failed; 2. Memory operation error; 3. File operation error.
+
+错误描述
+
+内部错误。可能原因：1. IPC通信失败；2. 内存操作错误；3. 文件操作错误。
 
 可能原因
 
@@ -30,6 +34,10 @@ Internal error. Possible causes: 1. IPC communication failed; 2. Memory operatio
 
 The user cancels the installation operation.
 
+错误描述
+
+用户在证书管理对话框中取消操作。
+
 可能原因
 
 调用API时用户取消操作。
@@ -43,6 +51,10 @@ The user cancels the installation operation.
 错误信息
 
 The user install certificate failed in the certificate manager dialog, such as the certificate is in an invalid format.
+
+错误描述
+
+用户在证书管理对话框中安装证书失败，例如证书格式无效。
 
 可能原因
 
@@ -58,6 +70,10 @@ The user install certificate failed in the certificate manager dialog, such as t
 
 The API is not supported on this device.
 
+错误描述
+
+当前设备不支持该接口。
+
 可能原因
 
 调用API时当前设备非PC设备。
@@ -71,6 +87,10 @@ The API is not supported on this device.
 错误信息
 
 The operation does not comply with the device security policy, such as the device does not allow users to manage the CA certificate of the global user.
+
+错误描述
+
+该操作不符合设备安全策略，例如设备不允许用户管理全局用户的CA证书。
 
 可能原因
 
@@ -86,6 +106,10 @@ The operation does not comply with the device security policy, such as the devic
 
 The input parameters validation failed.
 
+错误描述
+
+入参校验失败。
+
 可能原因
 
 参数格式异常或参数范围无效。
@@ -98,7 +122,11 @@ The input parameters validation failed.
 
 错误信息
 
-No Available certificate for authorization
+No available certificate for authorization.
+
+错误描述
+
+没有可用的证书用于授权。
 
 可能原因
 

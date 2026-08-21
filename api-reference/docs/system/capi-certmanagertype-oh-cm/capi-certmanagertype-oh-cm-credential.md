@@ -2,8 +2,8 @@
 title: "OH_CM_Credential"
 upstream_id: "harmonyos-references/capi-certmanagertype-oh-cm-credential"
 catalog: "harmonyos-references"
-content_hash: "da2ab00a436e"
-synced_at: "2026-07-09T00:59:19.761870"
+content_hash: "86e94de3597d"
+synced_at: "2026-08-21T15:35:33.156609"
 ---
 
 # OH_CM_Credential
@@ -28,11 +28,11 @@ typedef struct {...} OH_CM_Credential
 
 | 名称 | 描述 |
 | --- | --- |
-| uint32_t isExist | 表示证书数据是否存在。 |
+| uint32_t isExist | 表示证书数据是否存在。取值原则：0表示不存在，1表示存在。 |
 | char type[OH_CM_MAX_LEN_TYPE_NAME] | 表示凭据的类型，最大长度为8字节，数据包含终止符'\0'字符。 |
 | char alias[OH_CM_MAX_LEN_CERT_ALIAS] | 表示凭据的别名，最大长度为128字节，数据包含终止符'\0'字符。 |
 | char keyUri[OH_CM_MAX_LEN_URI] | 表示凭据的唯一标识，最大长度为256字节，数据包含终止符'\0'字符。 |
 | uint32_t certNum | 表示凭据中包含的证书个数。 |
-| uint32_t keyNum | 表示凭据中包含的秘钥个数。 |
+| uint32_t keyNum | 表示凭据中包含的密钥个数。 |
 | [OH_CM_Blob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-certmanagertype-oh-cm-blob) credData | 表示凭据二进制数据，最大长度为20480字节。 |
 | [OH_CM_CertificatePurpose](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cm-native-type-h#oh_cm_certificatepurpose) certPurpose | 表示证书凭据的用途。 |

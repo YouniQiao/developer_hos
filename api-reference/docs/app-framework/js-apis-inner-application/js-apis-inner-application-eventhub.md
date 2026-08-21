@@ -2,8 +2,8 @@
 title: "EventHub"
 upstream_id: "harmonyos-references/js-apis-inner-application-eventhub"
 catalog: "harmonyos-references"
-content_hash: "5f12ef81254d"
-synced_at: "2026-07-09T00:57:09.260913"
+content_hash: "4dc6e3da0caa"
+synced_at: "2026-08-21T15:33:00.987084"
 ---
 
 # EventHub
@@ -12,7 +12,7 @@ EventHub是系统提供的基于发布-订阅模式实现的事件通信机制�
 
 主要用于[UIAbility组件与UI的数据通信](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-data-sync-with-ui)。
 
-不同的Context对象拥有不同的EventHub对象，不同EventHub对象之间无法直接通信。事件的订阅、取消订阅、触发都作用在某一个具体的EventHub对象上。
+不同的Context对象拥有不同的EventHub对象，不同EventHub对象之间无法直接通信。事件的订阅、取消订阅、触发都作用在某一个具体的EventHub对象上。当Context对象发生变更，其关联的EventHub即随之失效。例如，应用创建分身时会触发ApplicationContext刷新，此前应用在该ApplicationContext上的EventHub将失效。
 
 由于Worker、Taskpool通过Actor模型实现[多线程并发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-thread-concurrency-overview#多线程并发模型)，不同虚拟机实例之间拥有独占的内存，因此EventHub对象不能用于线程间的数据通信。
 

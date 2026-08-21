@@ -2,8 +2,8 @@
 title: "CanvasRenderingContext2D对象"
 upstream_id: "harmonyos-references/js-components-canvas-canvasrenderingcontext2d"
 catalog: "harmonyos-references"
-content_hash: "979572b86ba7"
-synced_at: "2026-07-09T00:58:24.038192"
+content_hash: "1dcbc8dcb50d"
+synced_at: "2026-08-21T15:34:16.366224"
 ---
 
 # CanvasRenderingContext2D对象
@@ -43,8 +43,8 @@ export default {
 }
 ```
 
-- 示意图（关闭抗锯齿） ![](./img/zh-cn_image_0000002661613087.png)
-- 示意图（开启抗锯齿） ![](./img/zh-cn_image_0000002631413798.png)
+- 示意图（关闭抗锯齿） ![](./img/zh-cn_image_0000002689140692.png)
+- 示意图（开启抗锯齿） ![](./img/zh-cn_image_0000002718980269.png)
 
 #### 属性
 
@@ -88,7 +88,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661733027.png)
+ ![](./img/zh-cn_image_0000002689300576.png)
 
 #### [h2]lineWidth
 
@@ -110,7 +110,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253908.png)
+ ![](./img/zh-cn_image_0000002718860149.png)
 
 #### [h2]strokeStyle
 
@@ -133,7 +133,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661613089.png)
+ ![](./img/zh-cn_image_0000002689140694.png)
 
 #### [h2]lineCap
 
@@ -159,7 +159,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413800.png)
+ ![](./img/zh-cn_image_0000002718980271.png)
 
 #### [h2]lineJoin
 
@@ -186,7 +186,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661733029.png)
+ ![](./img/zh-cn_image_0000002689300578.png)
 
 #### [h2]miterLimit
 
@@ -213,7 +213,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253910.png)
+ ![](./img/zh-cn_image_0000002718860151.png)
 
 #### [h2]font
 
@@ -235,7 +235,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661613091.png)
+ ![](./img/zh-cn_image_0000002689140696.png)
 
 #### [h2]textAlign
 
@@ -271,7 +271,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413802.png)
+ ![](./img/zh-cn_image_0000002718980273.png)
 
 #### [h2]textBaseline
 
@@ -306,7 +306,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661733031.png)
+ ![](./img/zh-cn_image_0000002689300580.png)
 
 #### [h2]globalAlpha
 
@@ -332,7 +332,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253912.png)
+ ![](./img/zh-cn_image_0000002718860153.png)
 
 #### [h2]lineDashOffset
 
@@ -356,7 +356,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661613093.png)
+ ![](./img/zh-cn_image_0000002689140698.png)
 
 #### [h2]globalCompositeOperation
 
@@ -405,7 +405,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413804.png)
+ ![](./img/zh-cn_image_0000002718980275.png)
 
 示例中，新绘制内容是蓝色矩形，现有绘制内容是红色矩形。
 
@@ -431,7 +431,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661733033.png)
+ ![](./img/zh-cn_image_0000002689300582.png)
 
 #### [h2]shadowColor
 
@@ -455,7 +455,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253914.png)
+ ![](./img/zh-cn_image_0000002718860155.png)
 
 #### [h2]shadowOffsetX
 
@@ -480,7 +480,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661613095.png)
+ ![](./img/zh-cn_image_0000002689140700.png)
 
 #### [h2]shadowOffsetY
 
@@ -505,7 +505,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413806.png)
+ ![](./img/zh-cn_image_0000002718980277.png)
 
 #### [h2]imageSmoothingEnabled
 
@@ -532,7 +532,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661733035.png)
+ ![](./img/zh-cn_image_0000002689300584.png)
 
 #### 方法
 
@@ -572,7 +572,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253916.png)
+ ![](./img/zh-cn_image_0000002718860157.png)
 
 #### [h2]clearRect
 
@@ -612,7 +612,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661613097.png)
+ ![](./img/zh-cn_image_0000002689140702.png)
 
 #### [h2]strokeRect
 
@@ -650,7 +650,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413808.png)
+ ![](./img/zh-cn_image_0000002718980279.png)
 
 #### [h2]fillText
 
@@ -688,7 +688,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661733037.png)
+ ![](./img/zh-cn_image_0000002689300586.png)
 
 #### [h2]strokeText
 
@@ -726,7 +726,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253918.png)
+ ![](./img/zh-cn_image_0000002718860159.png)
 
 #### [h2]measureText
 
@@ -770,7 +770,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661613099.png)
+ ![](./img/zh-cn_image_0000002689140704.png)
 
 #### [h2]stroke
 
@@ -803,7 +803,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413810.png)
+ ![](./img/zh-cn_image_0000002718980281.png)
 
 #### [h2]beginPath
 
@@ -837,7 +837,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661733039.png)
+ ![](./img/zh-cn_image_0000002689300588.png)
 
 #### [h2]moveTo
 
@@ -876,7 +876,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253920.png)
+ ![](./img/zh-cn_image_0000002718860161.png)
 
 #### [h2]lineTo
 
@@ -915,7 +915,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661613101.png)
+ ![](./img/zh-cn_image_0000002689140706.png)
 
 #### [h2]closePath
 
@@ -949,7 +949,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413812.png)
+ ![](./img/zh-cn_image_0000002718980283.png)
 
 #### [h2]createPattern
 
@@ -996,7 +996,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661733041.png)
+ ![](./img/zh-cn_image_0000002689300590.png)
 
 #### [h2]bezierCurveTo
 
@@ -1039,7 +1039,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253922.png)
+ ![](./img/zh-cn_image_0000002718860163.png)
 
 #### [h2]quadraticCurveTo
 
@@ -1080,7 +1080,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661613103.png)
+ ![](./img/zh-cn_image_0000002689140708.png)
 
 #### [h2]arc
 
@@ -1122,7 +1122,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413814.png)
+ ![](./img/zh-cn_image_0000002718980285.png)
 
 #### [h2]arcTo
 
@@ -1163,7 +1163,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661733043.png)
+ ![](./img/zh-cn_image_0000002689300592.png)
 
 #### [h2]ellipse
 
@@ -1207,7 +1207,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253924.png)
+ ![](./img/zh-cn_image_0000002718860165.png)
 
 #### [h2]rect
 
@@ -1246,7 +1246,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661613105.png)
+ ![](./img/zh-cn_image_0000002689140710.png)
 
 #### [h2]fill
 
@@ -1276,7 +1276,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413816.png)
+ ![](./img/zh-cn_image_0000002718980287.png)
 
 #### [h2]clip
 
@@ -1310,7 +1310,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661733045.png)
+ ![](./img/zh-cn_image_0000002689300594.png)
 
 #### [h2]rotate
 
@@ -1346,7 +1346,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253926.png)
+ ![](./img/zh-cn_image_0000002718860167.png)
 
 #### [h2]scale
 
@@ -1384,13 +1384,13 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661613107.png)
+ ![](./img/zh-cn_image_0000002689140712.png)
 
 #### [h2]transform
 
 transform(scaleX: number, skewX: number, skewY: number, scaleY: number, translateX: number, translateY: number): void
 
-transform方法对应一个变换矩阵，想对一个图形进行变化的时候，只要设置此变换矩阵相应的参数，对图形的各个定点的坐标分别乘以这个矩阵，就能得到新的定点的坐标。矩阵变换效果可叠加。
+transform方法对应一个变换矩阵，当需要对一个图形进行变换的时候，只要设置此变换矩阵相应的参数，对图形的各个顶点的坐标分别乘以这个矩阵，就能得到新的顶点的坐标。矩阵变换效果可叠加。
 
 ![](./img/note_3.0-zh-cn.png) 变换后的坐标计算方式（x和y为变换前坐标，x'和y'为变换后坐标）：
 
@@ -1436,7 +1436,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413818.png)
+ ![](./img/zh-cn_image_0000002718980289.png)
 
 #### [h2]setTransform
 
@@ -1480,7 +1480,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661733047.png)
+ ![](./img/zh-cn_image_0000002689300596.png)
 
 #### [h2]translate
 
@@ -1518,11 +1518,11 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253928.png)
+ ![](./img/zh-cn_image_0000002718860169.png)
 
-#### [h2]createPath2D6+
+#### [h2]createPath2D
 
-createPath2D(path: Path2D, cmds: string): Path2D
+createPath2D(path?: Path2D): Path2D
 
 创建一个Path2D对象。
 
@@ -1532,12 +1532,33 @@ createPath2D(path: Path2D, cmds: string): Path2D
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| path | Path2D | 是 | Path2D对象。 |
-| cmds | string | 是 | SVG的Path描述字符串。 |
+| path | Path2D | 否 | Path2D对象。 默认值：空的Path2D对象。 |
 
 返回值：
 
-[Path2D对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-canvas-path2d)
+| 类型 | 说明 |
+| --- | --- |
+| Path2D | 返回创建的[Path2D对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-canvas-path2d)。 |
+
+#### [h2]createPath2D
+
+createPath2D(cmds?: string): Path2D
+
+创建一个Path2D对象。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| cmds | string | 否 | SVG的Path描述字符串。 默认值：""。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Path2D | 返回创建的[Path2D对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-canvas-path2d)。 |
 
 示例：
 
@@ -1567,7 +1588,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661613109.png)
+ ![](./img/zh-cn_image_0000002689140714.png)
 
 #### [h2]drawImage
 
@@ -1613,7 +1634,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413820.png)
+ ![](./img/zh-cn_image_0000002718980291.png)
 
 #### [h2]restore
 
@@ -1673,9 +1694,9 @@ export default {
 
 #### [h2]createLinearGradient6+
 
-createLinearGradient(x0: number, y0: number, x1: number, y1: number): Object
+createLinearGradient(x0: number, y0: number, x1: number, y1: number): CanvasGradient
 
-创建一个线性渐变色，返回CanvasGradient对象，请参考[CanvasGradient对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-canvas-canvasgradient)。
+创建一个线性渐变色，返回[CanvasGradient对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-canvas-canvasgradient)。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -1692,7 +1713,7 @@ createLinearGradient(x0: number, y0: number, x1: number, y1: number): Object
 
 | 类型 | 说明 |
 | --- | --- |
-| Object | 返回创建的CanvasGradient对象。 |
+| CanvasGradient | 返回创建的CanvasGradient对象。 |
 
 示例：
 
@@ -1722,13 +1743,13 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661733049.png)
+ ![](./img/zh-cn_image_0000002689300598.png)
 
 #### [h2]createRadialGradient6+
 
-createRadialGradient(x0: number, y0: number, r0: number, x1: number, y1: number, r1: number): Object
+createRadialGradient(x0: number, y0: number, r0: number, x1: number, y1: number, r1: number): CanvasGradient
 
-创建一个径向渐变色，返回CanvasGradient对象，请参考CanvasGradient。
+创建一个径向渐变色，返回[CanvasGradient对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-canvas-canvasgradient)。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -1747,7 +1768,7 @@ createRadialGradient(x0: number, y0: number, r0: number, x1: number, y1: number,
 
 | 类型 | 说明 |
 | --- | --- |
-| Object | 返回创建的CanvasGradient对象。 |
+| CanvasGradient | 返回创建的CanvasGradient对象。 |
 
 示例：
 
@@ -1777,7 +1798,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253930.png)
+ ![](./img/zh-cn_image_0000002718860171.png)
 
 #### [h2]createImageData
 
@@ -1950,7 +1971,7 @@ export default {
     }
 }
 ```
- ![](./img/zh-cn_image_0000002661613111.png)
+ ![](./img/zh-cn_image_0000002689140716.png)
 
 #### [h2]putImageData
 
@@ -1994,7 +2015,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413822.png)
+ ![](./img/zh-cn_image_0000002718980293.png)
 
 #### [h2]getPixelMap9+
 
@@ -2041,7 +2062,7 @@ export default {
 
 #### [h2]setLineDash
 
-setLineDash(segments: Array): void
+setLineDash(segments: Array<number>): void
 
 设置画布的虚线样式。
 
@@ -2074,11 +2095,11 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661733053.png)
+ ![](./img/zh-cn_image_0000002689300600.png)
 
 #### [h2]getLineDash
 
-getLineDash(): Array
+getLineDash(): Array<number>
 
 获得当前画布的虚线样式。
 
@@ -2149,4 +2170,4 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253932.png)
+ ![](./img/zh-cn_image_0000002718860173.png)

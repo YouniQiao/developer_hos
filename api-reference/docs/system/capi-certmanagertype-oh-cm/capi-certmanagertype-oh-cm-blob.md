@@ -2,8 +2,8 @@
 title: "OH_CM_Blob"
 upstream_id: "harmonyos-references/capi-certmanagertype-oh-cm-blob"
 catalog: "harmonyos-references"
-content_hash: "93dd4ddc8324"
-synced_at: "2026-07-09T00:59:19.588158"
+content_hash: "d6fd2208f3bf"
+synced_at: "2026-08-21T15:35:33.029479"
 ---
 
 # OH_CM_Blob
@@ -28,5 +28,5 @@ typedef struct {...} OH_CM_Blob
 
 | 名称 | 描述 |
 | --- | --- |
-| uint32_t size | 数据大小。 |
+| uint32_t size | 数据大小。单位：Byte。 |
 | uint8_t *data | 指向数据内存的指针。 |

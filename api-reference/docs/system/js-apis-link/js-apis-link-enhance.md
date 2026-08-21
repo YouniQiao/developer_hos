@@ -2,8 +2,8 @@
 title: "@ohos.distributedsched.linkEnhance (增强连接)"
 upstream_id: "harmonyos-references/js-apis-link-enhance"
 catalog: "harmonyos-references"
-content_hash: "3a6be278c953"
-synced_at: "2026-07-28T16:50:41.221678"
+content_hash: "0fd9c847838e"
+synced_at: "2026-08-21T15:35:41.184206"
 ---
 
 # @ohos.distributedsched.linkEnhance (增强连接)
@@ -303,7 +303,7 @@ on(type: 'connectionAccepted', callback: Callback<Connection>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 32390206 | Parameter invalid. |
+| 32390206 | Invalid parameter. |
 
 示例：
 
@@ -360,7 +360,7 @@ off(type: 'connectionAccepted', callback?: Callback<Connection>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 32390206 | Parameter invalid. |
+| 32390206 | Invalid parameter. |
 
 示例：
 
@@ -417,7 +417,7 @@ on(type: 'serverStopped', callback: Callback<number>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 32390206 | Parameter invalid. |
+| 32390206 | Invalid parameter. |
 
 示例：
 
@@ -474,7 +474,7 @@ off(type: 'serverStopped', callback?: Callback<number>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 32390206 | Parameter invalid. |
+| 32390206 | Invalid parameter. |
 
 示例：
 

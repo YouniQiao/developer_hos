@@ -2,8 +2,8 @@
 title: "native_mediakeysystem.h"
 upstream_id: "harmonyos-references/capi-native-mediakeysystem-h"
 catalog: "harmonyos-references"
-content_hash: "57c5ccfd9a8e"
-synced_at: "2026-08-18T15:34:13.662724"
+content_hash: "182825cf00ce"
+synced_at: "2026-08-21T15:36:47.122888"
 ---
 
 # native_mediakeysystem.h
@@ -155,7 +155,7 @@ Drm_ErrCode OH_MediaKeySystem_GetMediaKeySystems(DRM_MediaKeySystemDescription *
 
 | 类型 | 说明 |
 | --- | --- |
-| [Drm_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-drm-err-h#drm_errcode) | DRM_ERR_OK：执行成功。 DRM_ERR_INVALID_VAL：可能原因： 1.输入参数descs为空指针或输入参数count为空指针。 2.输入参数descs长度不足。 DRM_ERR_UNKNOWN：发生内部错误，请查看日志详细信息。 |
+| [Drm_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-drm-err-h#drm_errcode) | DRM_ERR_OK：执行成功。 DRM_ERR_INVALID_VAL： 输入参数descs为空指针。 输入参数count为空指针。 输入参数descs长度不足。 DRM_ERR_UNKNOWN：发生内部错误，请查看日志详细信息。 |
 
 #### [h2]OH_MediaKeySystem_IsSupported()
 
@@ -251,7 +251,7 @@ Drm_ErrCode OH_MediaKeySystem_Create(const char *name, MediaKeySystem **mediaKey
 
 | 类型 | 说明 |
 | --- | --- |
-| [Drm_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-drm-err-h#drm_errcode) | DRM_ERR_OK：执行成功。 DRM_ERR_INVALID_VAL：可能原因： 1.输入参数name为空指针或长度为0。 2.输入参数mediaKeySystem为空指针。 DRM_ERR_UNKNOWN：发生内部错误，请查看日志详细信息。 DRM_ERR_SERVICE_DIED：服务死亡。 DRM_ERR_MAX_SYSTEM_NUM_REACHED：已创建的MediaKeySystem数量达到最大限制(64个)。 |
+| [Drm_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-drm-err-h#drm_errcode) | DRM_ERR_OK：执行成功。 DRM_ERR_INVALID_VAL： 输入参数name为空指针。 输入参数name长度为0。 输入参数mediaKeySystem为空指针。 DRM_ERR_UNKNOWN：发生内部错误，请查看日志详细信息。 DRM_ERR_SERVICE_DIED：服务死亡。 DRM_ERR_MAX_SYSTEM_NUM_REACHED：已创建的MediaKeySystem数量达到最大限制(64个)。 |
 
 #### [h2]OH_MediaKeySystem_SetConfigurationString()
 
@@ -444,7 +444,7 @@ Drm_ErrCode OH_MediaKeySystem_CreateMediaKeySession(MediaKeySystem *mediaKeySyst
 | 参数项 | 描述 |
 | --- | --- |
 | [MediaKeySystem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drm-mediakeysystem) *mediaKeySystem | MediaKeySystem实例。 |
-| [DRM_ContentProtectionLevel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-drm-common-h#drm_contentprotectionlevel) *level | 内容保护级别。 |
+| [DRM_ContentProtectionLevel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-drm-common-h#drm_contentprotectionlevel) *level | 内容保护级别。可通过[OH_MediaKeySystem_GetMaxContentProtectionLevel](#oh_mediakeysystem_getmaxcontentprotectionlevel)接口先获取设备支持的最大内容保护级别。 |
 | [MediaKeySession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drm-mediakeysession) **mediaKeySession | MediaKeySession实例。 |
 
 返回：

@@ -2,8 +2,8 @@
 title: "@ohos.notification (Notification模块)"
 upstream_id: "harmonyos-references/js-apis-notification"
 catalog: "harmonyos-references"
-content_hash: "85dd6da6855f"
-synced_at: "2026-07-09T01:01:29.932986"
+content_hash: "d8db2efe1ef1"
+synced_at: "2026-08-21T15:37:38.879906"
 ---
 
 # @ohos.notification (Notification模块)
@@ -14,7 +14,7 @@ synced_at: "2026-07-09T01:01:29.932986"
 
 本模块首批接口从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
-通知订阅和取消订阅仅对系统应用开放。
+[通知订阅](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-glossary#notification-subscription通知订阅)和取消订阅仅对系统应用开放。
 
 #### 导入模块
 
@@ -338,7 +338,7 @@ getSlot(slotType: SlotType, callback: AsyncCallback<NotificationSlot>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| slotType | [SlotType](#slottype) | 是 | 通知渠道类型，目前分为社交通信、服务提醒、内容咨询和其他类型。 |
+| slotType | [SlotType](#slottype) | 是 | [通知渠道](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-glossary#notification-slot通知渠道)类型，目前分为社交通信、服务提醒、内容咨询和其他类型。 |
 | callback | AsyncCallback | 是 | 表示被指定的回调方法。 |
 
 示例：
@@ -370,7 +370,7 @@ getSlot(slotType: SlotType): Promise<NotificationSlot>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| slotType | [SlotType](#slottype) | 是 | 通知渠道类型，目前分为社交通信、服务提醒、内容咨询和其他类型。 |
+| slotType | [SlotType](#slottype) | 是 | [通知渠道](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-glossary#notification-slot通知渠道)类型，目前分为社交通信、服务提醒、内容咨询和其他类型。 |
 
 返回值：
 
@@ -459,7 +459,7 @@ removeSlot(slotType: SlotType, callback: AsyncCallback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| slotType | [SlotType](#slottype) | 是 | 通知渠道类型,目前分为社交通信、服务提醒、内容咨询和其他类型。 |
+| slotType | [SlotType](#slottype) | 是 | [通知渠道](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-glossary#notification-slot通知渠道)类型,目前分为社交通信、服务提醒、内容咨询和其他类型。 |
 | callback | AsyncCallback | 是 | 表示被指定的回调方法。 |
 
 示例：
@@ -491,7 +491,7 @@ removeSlot(slotType: SlotType): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| slotType | [SlotType](#slottype) | 是 | 通知渠道类型,目前分为社交通信、服务提醒、内容咨询和其他类型。 |
+| slotType | [SlotType](#slottype) | 是 | [通知渠道](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-glossary#notification-slot通知渠道)类型,目前分为社交通信、服务提醒、内容咨询和其他类型。 |
 
 返回值：
 
@@ -751,7 +751,7 @@ Notification.cancelGroup(groupName).then(() => {
 
 isSupportTemplate(templateName: string, callback: AsyncCallback<boolean>): void
 
-在使用[通知模板](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-notification-notificationtemplate)发布通知前，可以通过该接口查询是否支持对应的通知模板。使用callback异步回调。
+在使用通知模板[NotificationTemplate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-notification-notificationtemplate)发布通知前，可以通过该接口查询是否支持对应的通知模板。使用callback异步回调。
 
 系统能力：SystemCapability.Notification.Notification
 
@@ -783,7 +783,7 @@ Notification.isSupportTemplate(templateName, isSupportTemplateCallback);
 
 isSupportTemplate(templateName: string): Promise<boolean>
 
-在使用[通知模板](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-notification-notificationtemplate)发布通知前，可以通过该接口查询是否支持对应的通知模板。使用callback异步回调。
+在使用通知模板[NotificationTemplate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-notification-notificationtemplate)发布通知前，可以通过该接口查询是否支持对应的通知模板。使用callback异步回调。
 
 系统能力：SystemCapability.Notification.Notification
 
@@ -872,7 +872,7 @@ Notification.requestEnableNotification().then(() => {
 
 isDistributedEnabled(callback: AsyncCallback<boolean>): void
 
-查询设备是否支持分布式通知（Callback形式）。
+查询设备是否支持[分布式通知](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-glossary#distributed-notification分布式通知)（Callback形式）。
 
 系统能力：SystemCapability.Notification.Notification
 
@@ -902,7 +902,7 @@ Notification.isDistributedEnabled(isDistributedEnabledCallback);
 
 isDistributedEnabled(): Promise<boolean>
 
-查询设备是否支持分布式通知（Promise形式）。
+查询设备是否支持[分布式通知](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-glossary#distributed-notification分布式通知)（Promise形式）。
 
 系统能力：SystemCapability.Notification.Notification
 
@@ -1004,7 +1004,7 @@ Notification.isDistributedEnabled().then((data: boolean) => {
 | 名称 | 类型 | 可读 | 可写 | 说明 |
 | --- | --- | --- | --- | --- |
 | title | string | 是 | 是 | 通知标题。 |
-| text | string | 是 | 是 | 通知内容。 |
+| text | string | 是 | 是 | [通知内容](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-glossary#notification-content通知内容)。 |
 | additionalText | string | 是 | 是 | 通知附加内容，是对通知内容的补充。 |
 
 #### NotificationLongTextContent
@@ -1016,7 +1016,7 @@ Notification.isDistributedEnabled().then((data: boolean) => {
 | 名称 | 类型 | 可读 | 可写 | 说明 |
 | --- | --- | --- | --- | --- |
 | title | string | 是 | 是 | 通知标题。 |
-| text | string | 是 | 是 | 通知内容。 |
+| text | string | 是 | 是 | [通知内容](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-glossary#notification-content通知内容)。 |
 | additionalText | string | 是 | 是 | 通知附加内容，是对通知内容的补充。 |
 | longText | string | 是 | 是 | 通知的长文本。 |
 | briefText | string | 是 | 是 | 通知概要内容，是对通知内容的总结。 |
@@ -1031,7 +1031,7 @@ Notification.isDistributedEnabled().then((data: boolean) => {
 | 名称 | 类型 | 可读 | 可写 | 说明 |
 | --- | --- | --- | --- | --- |
 | title | string | 是 | 是 | 通知标题。 |
-| text | string | 是 | 是 | 通知内容。 |
+| text | string | 是 | 是 | [通知内容](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-glossary#notification-content通知内容)。 |
 | additionalText | string | 是 | 是 | 通知附加内容，是对通知内容的补充。 |
 | briefText | string | 是 | 是 | 通知概要内容，是对通知内容的总结。 |
 | longTitle | string | 是 | 是 | 通知展开时的标题。 |
@@ -1046,7 +1046,7 @@ Notification.isDistributedEnabled().then((data: boolean) => {
 | 名称 | 类型 | 可读 | 可写 | 说明 |
 | --- | --- | --- | --- | --- |
 | title | string | 是 | 是 | 通知标题。 |
-| text | string | 是 | 是 | 通知内容。 |
+| text | string | 是 | 是 | [通知内容](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-glossary#notification-content通知内容)。 |
 | additionalText | string | 是 | 是 | 通知附加内容，是对通知内容的补充。 |
 | briefText | string | 是 | 是 | 通知概要内容，是对通知内容的总结。 |
 | expandedTitle | string | 是 | 是 | 通知展开时的标题。 |
@@ -1060,8 +1060,8 @@ Notification.isDistributedEnabled().then((data: boolean) => {
 
 | 名称 | 类型 | 可读 | 可写 | 说明 |
 | --- | --- | --- | --- | --- |
-| contentType | [notification.ContentType](#contenttype) | 是 | 是 | 通知内容类型。 |
-| normal | [NotificationBasicContent](#notificationbasiccontent) | 是 | 是 | 基本类型通知内容。 |
+| contentType | [notification.ContentType](#contenttype) | 是 | 是 | [通知内容类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-glossary#content-type通知内容类型)。 |
+| normal | [NotificationBasicContent](#notificationbasiccontent) | 是 | 是 | 基本类型[通知内容](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-glossary#notification-content通知内容)。 |
 | longText | [NotificationLongTextContent](#notificationlongtextcontent) | 是 | 是 | 长文本类型通知内容。 |
 | multiLine | [NotificationMultiLineContent](#notificationmultilinecontent) | 是 | 是 | 多行类型通知内容。 |
 | picture | [NotificationPictureContent](#notificationpicturecontent) | 是 | 是 | 图片类型通知内容。 |
@@ -1074,7 +1074,7 @@ Notification.isDistributedEnabled().then((data: boolean) => {
 
 | 名称 | 类型 | 可读 | 可写 | 说明 |
 | --- | --- | --- | --- | --- |
-| content | [NotificationContent](#notificationcontent) | 是 | 是 | 通知内容。 |
+| content | [NotificationContent](#notificationcontent) | 是 | 是 | [通知内容](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-glossary#notification-content通知内容)。 |
 | id | number | 是 | 是 | 通知ID。 |
 | slotType | [notification.SlotType](#slottype) | 是 | 是 | 通道类型。 |
 | isOngoing | boolean | 是 | 是 | 是否进行时通知。 |
@@ -1091,9 +1091,9 @@ Notification.isDistributedEnabled().then((data: boolean) => {
 | isCountDown | boolean | 是 | 是 | 是否显示倒计时时间。 |
 | isFloatingIcon | boolean | 是 | 是 | 是否显示状态栏图标。 |
 | label | string | 是 | 是 | 通知标签。 |
-| badgeIconStyle | number | 是 | 是 | 通知角标类型。 |
+| badgeIconStyle | number | 是 | 是 | [通知角标](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-glossary#notification-badge通知角标)类型。 |
 | showDeliveryTime | boolean | 是 | 是 | 是否显示分发时间。 |
-| actionButtons | Array | 是 | 是 | 通知按钮，最多两个按钮。 |
+| actionButtons | Array | 是 | 是 | [通知按钮](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-glossary#notification-button通知按钮)，最多两个按钮。 |
 | smallIcon | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 是 | 是 | 通知小图标。可选字段，大小不超过30KB。 |
 | largeIcon | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 是 | 是 | 通知大图标。可选字段，大小不超过30KB。 |
 | creatorBundleName | string | 是 | 否 | 创建通知的包名。 |
@@ -1101,9 +1101,9 @@ Notification.isDistributedEnabled().then((data: boolean) => {
 | creatorPid | number | 是 | 否 | 创建通知的PID。 |
 | creatorUserId8+ | number | 是 | 否 | 创建通知的UserId。 |
 | hashCode | string | 是 | 否 | 通知唯一标识。 |
-| groupName8+ | string | 是 | 是 | 组通知名称。 |
+| groupName8+ | string | 是 | 是 | [组通知](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-glossary#group-notification组通知)名称。 |
 | template8+ | [NotificationTemplate](#notificationtemplate8) | 是 | 是 | 通知模板。 |
-| distributedOption8+ | [DistributedOptions](#distributedoptions8) | 是 | 是 | 分布式通知的选项。 |
+| distributedOption8+ | [DistributedOptions](#distributedoptions8) | 是 | 是 | [分布式通知](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-glossary#distributed-notification分布式通知)的选项。 |
 | notificationFlags8+ | [NotificationFlags](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-notification-notificationflags) | 是 | 否 | 获取NotificationFlags。 |
 | removalWantAgent9+ | [WantAgent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-wantagent) | 是 | 是 | 当移除通知时，通知将被重定向到的WantAgent实例。 |
 | badgeNumber9+ | number | 是 | 是 | 应用程序图标上显示的通知数。 |
@@ -1116,7 +1116,7 @@ Notification.isDistributedEnabled().then((data: boolean) => {
 
 | 名称 | 类型 | 可读 | 可写 | 说明 |
 | --- | --- | --- | --- | --- |
-| isDistributed | boolean | 是 | 是 | 是否为分布式通知。 |
+| isDistributed | boolean | 是 | 是 | 是否为[分布式通知](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-glossary#distributed-notification分布式通知)。 |
 | supportDisplayDevices | Array | 是 | 是 | 可以同步通知到的设备列表。 |
 | supportOperateDevices | Array | 是 | 是 | 可以打开通知的设备列表。 |
 
@@ -1129,10 +1129,10 @@ Notification.isDistributedEnabled().then((data: boolean) => {
 | 名称 | 类型 | 可读 | 可写 | 说明 |
 | --- | --- | --- | --- | --- |
 | type | [notification.SlotType](#slottype) | 是 | 是 | 通道类型。 |
-| level | [notification.SlotLevel](#slotlevel) | 是 | 是 | 通知级别，不设置则根据通知渠道类型有默认值。 |
+| level | [notification.SlotLevel](#slotlevel) | 是 | 是 | 通知级别，不设置则根据[通知渠道](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-glossary#notification-slot通知渠道)类型有默认值。 |
 | desc | string | 是 | 是 | 通知渠道描述信息。 |
 | badgeFlag | boolean | 是 | 是 | 是否显示角标。 |
-| bypassDnd | boolean | 是 | 是 | 设置是否在系统中绕过免打扰模式。 |
+| bypassDnd | boolean | 是 | 是 | 设置是否在系统中绕过[免打扰模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-glossary#do-not-disturb-mode免打扰模式)。 |
 | lockscreenVisibility | number | 是 | 是 | 在锁定屏幕上显示通知的模式。 |
 | vibrationEnabled | boolean | 是 | 是 | 是否可振动。 |
 | sound | string | 是 | 是 | 通知提示音。 |

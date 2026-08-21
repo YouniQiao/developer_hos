@@ -2,8 +2,8 @@
 title: "native_render.h"
 upstream_id: "harmonyos-references/capi-native-render-h"
 catalog: "harmonyos-references"
-content_hash: "dbc7f0389466"
-synced_at: "2026-07-28T16:49:23.732935"
+content_hash: "5b91e7ecbaae"
+synced_at: "2026-08-21T15:34:31.139596"
 ---
 
 # native_render.h
@@ -30,22 +30,22 @@ synced_at: "2026-07-28T16:49:23.732935"
 
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
-| [ArkUI_RenderNode*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) | ArkUI_RenderNodeHandle | 定义渲染节点指针，用于在ArkUI_RenderNodeUtils相关接口中表示和传递渲染节点对象。 |
-| [ArkUI_RenderContentModifier*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendercontentmodifierhandle) | ArkUI_RenderContentModifierHandle | 定义渲染内容修改器指针，用于引用内容修改器。内容修改器可挂载到渲染节点，并附加渲染属性或设置onDraw回调。 |
-| [ArkUI_FloatProperty*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-floatpropertyhandle) | ArkUI_FloatPropertyHandle | 定义ArkUI原生浮点渲染属性指针，用于创建、传递并管理目标内容修改器上的浮点属性。 |
-| [ArkUI_Vector2Property*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-vector2propertyhandle) | ArkUI_Vector2PropertyHandle | 定义二维向量属性指针，用于在ArkUI原生渲染属性接口中创建、附加、设置、获取和释放二维向量属性。 |
-| [ArkUI_ColorProperty*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-colorpropertyhandle) | ArkUI_ColorPropertyHandle | 定义颜色属性指针，用于表示ArkUI中的颜色属性。 |
-| [ArkUI_FloatAnimatableProperty*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-floatanimatablepropertyhandle) | ArkUI_FloatAnimatablePropertyHandle | 可动画的浮点数属性指针。 |
-| [ArkUI_Vector2AnimatableProperty*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-vector2animatablepropertyhandle) | ArkUI_Vector2AnimatablePropertyHandle | 可动画的二维向量属性指针。 |
-| [ArkUI_ColorAnimatableProperty*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-coloranimatablepropertyhandle) | ArkUI_ColorAnimatablePropertyHandle | 可动画的颜色属性指针。 |
-| [ArkUI_RectShape](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rectshapeoption) | ArkUI_RectShapeOption | 定义矩形形状配置项，用于在ArkUI渲染节点中描述矩形或椭圆形的形状范围，可作为创建遮罩或裁剪配置项的输入。 |
-| [ArkUI_NodeBorderStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nodeborderstyleoption) | ArkUI_NodeBorderStyleOption | 定义边框样式配置项，用于设置节点边框的样式类型，支持实线、虚线、点线等多种样式。 |
-| [ArkUI_NodeBorderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nodeborderwidthoption) | ArkUI_NodeBorderWidthOption | 定义边框宽度配置项，用于配置渲染节点各边的边框宽度。 |
-| [ArkUI_NodeBorderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nodebordercoloroption) | ArkUI_NodeBorderColorOption | 边框颜色配置项。 |
-| [ArkUI_NodeBorderRadius](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nodeborderradiusoption) | ArkUI_NodeBorderRadiusOption | 边框半径配置项。 |
-| [ArkUI_CircleShape](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-circleshapeoption) | ArkUI_CircleShapeOption | 定义圆形形状配置项，用于在ArkUI_RenderNodeUtils中创建圆形形状，并配置圆心坐标和半径，作为RenderNode的遮罩或裁剪形状。 |
-| [ArkUI_RoundRectShape](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-roundrectshapeoption) | ArkUI_RoundRectShapeOption | 定义圆角矩形形状配置项，用于配置圆角矩形形状，并可用于创建渲染节点遮罩或裁剪。 |
-| [ArkUI_CommandPath](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-commandpathoption) | ArkUI_CommandPathOption | 定义自定义绘制路径配置项，用于为渲染节点创建基于路径的遮罩或裁剪效果。 |
+| [ArkUI_RenderNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle) | ArkUI_RenderNodeHandle | 定义渲染节点指针，用于在ArkUI_RenderNodeUtils相关接口中表示和传递渲染节点对象。 |
+| [ArkUI_RenderContentModifierHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendercontentmodifierhandle) | ArkUI_RenderContentModifierHandle | 定义渲染内容修改器指针，用于引用内容修改器。内容修改器可挂载到渲染节点，并附加渲染属性或设置onDraw回调。 |
+| [ArkUI_FloatPropertyHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-floatpropertyhandle) | ArkUI_FloatPropertyHandle | 定义ArkUI原生浮点渲染属性指针，用于创建、传递并管理目标内容修改器上的浮点属性。 |
+| [ArkUI_Vector2PropertyHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-vector2propertyhandle) | ArkUI_Vector2PropertyHandle | 定义二维向量属性指针，用于在ArkUI原生渲染属性接口中创建、附加、设置、获取和释放二维向量属性。 |
+| [ArkUI_ColorPropertyHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-colorpropertyhandle) | ArkUI_ColorPropertyHandle | 定义颜色属性指针，用于表示ArkUI中的颜色属性。 |
+| [ArkUI_FloatAnimatablePropertyHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-floatanimatablepropertyhandle) | ArkUI_FloatAnimatablePropertyHandle | 可动画的浮点数属性指针。 |
+| [ArkUI_Vector2AnimatablePropertyHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-vector2animatablepropertyhandle) | ArkUI_Vector2AnimatablePropertyHandle | 可动画的二维向量属性指针。 |
+| [ArkUI_ColorAnimatablePropertyHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-coloranimatablepropertyhandle) | ArkUI_ColorAnimatablePropertyHandle | 可动画的颜色属性指针。 |
+| [ArkUI_RectShapeOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rectshapeoption) | ArkUI_RectShapeOption | 定义矩形形状配置项，用于在ArkUI渲染节点中描述矩形或椭圆形的形状范围，可作为创建遮罩或裁剪配置项的输入。 |
+| [ArkUI_NodeBorderStyleOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nodeborderstyleoption) | ArkUI_NodeBorderStyleOption | 定义边框样式配置项，用于设置节点边框的样式类型，支持实线、虚线、点线等多种样式。 |
+| [ArkUI_NodeBorderWidthOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nodeborderwidthoption) | ArkUI_NodeBorderWidthOption | 定义边框宽度配置项，用于配置渲染节点各边的边框宽度。 |
+| [ArkUI_NodeBorderColorOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nodebordercoloroption) | ArkUI_NodeBorderColorOption | 边框颜色配置项。 |
+| [ArkUI_NodeBorderRadiusOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nodeborderradiusoption) | ArkUI_NodeBorderRadiusOption | 边框半径配置项。 |
+| [ArkUI_CircleShapeOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-circleshapeoption) | ArkUI_CircleShapeOption | 定义圆形形状配置项，用于在ArkUI_RenderNodeUtils中创建圆形形状，并配置圆心坐标和半径，作为RenderNode的遮罩或裁剪形状。 |
+| [ArkUI_RoundRectShapeOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-roundrectshapeoption) | ArkUI_RoundRectShapeOption | 定义圆角矩形形状配置项，用于配置圆角矩形形状，并可用于创建渲染节点遮罩或裁剪。 |
+| [ArkUI_CommandPathOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-commandpathoption) | ArkUI_CommandPathOption | 定义自定义绘制路径配置项，用于为渲染节点创建基于路径的遮罩或裁剪效果。 |
 | [ArkUI_RenderNodeMaskOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodemaskoption) | ArkUI_RenderNodeMaskOption | 定义渲染节点遮罩配置项，用于通过矩形、圆角矩形、圆形、椭圆形或自定义绘制路径描述渲染节点的遮罩区域，并作为[OH_ArkUI_RenderNodeUtils_SetMask](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-render-h#oh_arkui_rendernodeutils_setmask)的入参为渲染节点应用遮罩。 |
 | [ArkUI_RenderNodeClipOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodeclipoption) | ArkUI_RenderNodeClipOption | 定义渲染节点裁剪配置项，用于通过矩形、圆角矩形、圆形、椭圆形或自定义绘制路径描述渲染节点的裁剪区域，并作为[OH_ArkUI_RenderNodeUtils_SetClip](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-render-h#oh_arkui_rendernodeutils_setclip)的入参为渲染节点应用裁剪。 |
 | [ArkUI_RenderBlurStyleOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodeblurstyleoption) | ArkUI_RenderBlurStyleOption | 定义模糊样式结构体。 |

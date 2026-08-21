@@ -2,8 +2,8 @@
 title: "Path2D对象"
 upstream_id: "harmonyos-references/js-components-canvas-path2d"
 catalog: "harmonyos-references"
-content_hash: "370eb6d324af"
-synced_at: "2026-07-09T00:58:23.760790"
+content_hash: "6b83ad0738ee"
+synced_at: "2026-08-21T15:34:16.689349"
 ---
 
 # Path2D对象
@@ -14,7 +14,7 @@ synced_at: "2026-07-09T00:58:23.760790"
 
 #### addPath
 
-addPath(path: Object): void
+addPath(path: Path2D): void
 
 将另一个路径添加到当前的路径对象中。
 
@@ -22,7 +22,7 @@ addPath(path: Object): void
 
 | 参数 | 类型 | 描述 |
 | --- | --- | --- |
-| path | Object | 需要添加到当前路径的路径对象。 |
+| path | Path2D | 需要添加到当前路径的路径对象。 |
 
 示例：
 
@@ -46,7 +46,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661733055.png)
+ ![](./img/zh-cn_image_0000002689300602.png)
 
 #### setTransform
 
@@ -86,7 +86,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253934.png)
+ ![](./img/zh-cn_image_0000002718860175.png)
 
 #### closePath
 
@@ -118,7 +118,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661613115.png)
+ ![](./img/zh-cn_image_0000002689140720.png)
 
 #### moveTo
 
@@ -157,7 +157,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413826.png)
+ ![](./img/zh-cn_image_0000002718980297.png)
 
 #### lineTo
 
@@ -197,7 +197,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661733057.png)
+ ![](./img/zh-cn_image_0000002689300604.png)
 
 #### bezierCurveTo
 
@@ -238,7 +238,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253936.png)
+ ![](./img/zh-cn_image_0000002718860177.png)
 
 #### quadraticCurveTo
 
@@ -277,7 +277,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661613117.png)
+ ![](./img/zh-cn_image_0000002689140722.png)
 
 #### arc
 
@@ -317,7 +317,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413828.png)
+ ![](./img/zh-cn_image_0000002718980299.png)
 
 #### arcTo
 
@@ -356,7 +356,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661733059.png)
+ ![](./img/zh-cn_image_0000002689300606.png)
 
 #### ellipse
 
@@ -398,7 +398,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253938.png)
+ ![](./img/zh-cn_image_0000002718860179.png)
 
 #### rect
 
@@ -436,4 +436,4 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661613119.png)
+ ![](./img/zh-cn_image_0000002689140724.png)

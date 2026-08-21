@@ -2,8 +2,8 @@
 title: "ArkUI_NodeAttributeType（动效、视效相关属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-animator"
 catalog: "harmonyos-references"
-content_hash: "f7e6b8d3bd9f"
-synced_at: "2026-07-28T16:49:20.710058"
+content_hash: "9e23affa8ec4"
+synced_at: "2026-08-21T15:34:28.416451"
 ---
 
 # ArkUI_NodeAttributeType（动效、视效相关属性）
@@ -470,8 +470,8 @@ NODE_CUSTOM_SHADOW = 29
 | .value[1]?.i32 | 是否开启智能取色，0代表不开启（使用固定颜色），1代表开启（自动从组件周围取色适配背景），默认不开启。当需要阴影颜色自动适配周围背景时传入1。 |
 | .value[2]?.f32 | 阴影X轴偏移量，单位为px，默认值0.0。 |
 | .value[3]?.f32 | 阴影Y轴偏移量，单位为px，默认值0.0。 |
-| .value[4]?.i32 | 阴影类型[ArkUI_ShadowType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_shadowtype)，默认值为ARKUI_SHADOW_TYPE_COLOR。 |
-| .value[5]?.u32 | 阴影颜色，0xargb格式，形如 0xFFFF0000 表示红色。 |
+| .value[4]?.i32 | 阴影类型，参数类型为[ArkUI_ShadowType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_shadowtype)，默认值为ARKUI_SHADOW_TYPE_COLOR。 |
+| .value[5]?.u32 | 智能取色关闭（.value[1]为0）时表示阴影颜色，0xARGB格式，形如0xFFFF0000表示红色，不传入时默认值为0xFF000000（黑色）；智能取色开启（.value[1]为1）时表示颜色策略，取[ArkUI_ColorStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_colorstrategy)枚举值。 |
 | .value[6]?.u32 | 阴影是否内部填充，0表示不填充，1表示填充。 |
 
 返回：
@@ -482,8 +482,8 @@ NODE_CUSTOM_SHADOW = 29
 | .value[1].i32 | 是否开启智能取色。 |
 | .value[2].f32 | 阴影X轴偏移量，单位为px。 |
 | .value[3].f32 | 阴影Y轴偏移量，单位为px。 |
-| .value[4].i32 | 阴影类型[ArkUI_ShadowType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_shadowtype)，默认值为ARKUI_SHADOW_TYPE_COLOR。 |
-| .value[5].u32 | 阴影颜色，0xargb格式，形如 0xFFFF0000 表示红色。 |
+| .value[4].i32 | 阴影类型，参数类型为[ArkUI_ShadowType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_shadowtype)，默认值为ARKUI_SHADOW_TYPE_COLOR。枚举值包括：ARKUI_SHADOW_TYPE_COLOR（颜色阴影）、ARKUI_SHADOW_TYPE_BLUR（模糊阴影）。 |
+| .value[5].u32 | 阴影颜色，0xARGB格式，形如0xFFFF0000表示红色。 |
 | .value[6].u32 | 阴影是否内部填充，0表示不填充，1表示填充。 |
 
 #### NODE_BACKGROUND_BLUR_STYLE
@@ -1216,9 +1216,9 @@ NODE_BACKDROP_BLUR = 99
 
 | 参数项 | 描述 |
 | --- | --- |
-| .value[0].f32 | 表示背景模糊半径，取值范围[0,+∞)。单位px，默认值0.0。 |
-| .value[1]?.f32 | 表示灰阶模糊参数，对黑色的提亮程度，取值范围为[0,127]。 |
-| .value[2]?.f32 | 表示灰阶模糊参数，对白色的压暗程度，取值范围为[0,127]。 |
+| .value[0].f32 | 表示背景模糊半径，取值范围[0,+∞)，超出范围时返回错误码[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。单位px，默认值0.0。 |
+| .value[1]?.f32 | 表示灰阶模糊参数，对黑色的提亮程度，取值范围为[0,127]。不传入时默认值为0，当需要精细调整模糊效果中黑色区域的提亮程度时传入此参数。 |
+| .value[2]?.f32 | 表示灰阶模糊参数，对白色的压暗程度，取值范围为[0,127]。不传入时默认值为0，当需要精细调整模糊效果中白色区域的压暗程度时传入此参数。 |
 
 返回：
 
@@ -1349,7 +1349,7 @@ NODE_SYSTEM_MATERIAL = 127
 
 仅支持系统材质的设备可使用此属性。否则，当设置此属性时，将返回错误码[ARKUI_ERROR_CODE_ATTRIBUTE_OR_EVENT_NOT_SUPPORTED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。设备是否支持系统材质可通过调用[OH_ArkUI_NativeModule_GetSystemMaterialSupported](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-material-h#oh_arkui_nativemodule_getsystemmaterialsupported)获取。
 
-材质效果在不同算力的设备上表现不同。算力等级由[ArkUI_MaterialLevel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-material-h#arkui_materiallevel)定义，可通过[OH_ArkUI_NativeModule_GetGlobalMaterialLevel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-material-h#oh_arkui_nativemodule_getglobalmateriallevel)获取。在算力等级为[ARKUI_MATERIAL_LEVEL_SMOOTH](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-material-h#arkui_materiallevel)的设备上，会影响背景颜色、边框宽度、边框颜色、阴影等属性。在算力等级为[ARKUI_MATERIAL_LEVEL_EXQUISITE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-material-h#arkui_materiallevel)或[ARKUI_MATERIAL_LEVEL_GENTLE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-material-h#arkui_materiallevel)的设备上，会影响阴影属性并在系统材质层添加滤镜效果，可产生类似玻璃的效果。
+材质效果在不同算力的设备上表现不同。算力等级由[ArkUI_MaterialLevel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-material-h#arkui_materiallevel)定义，可通过[OH_ArkUI_NativeModule_GetGlobalMaterialLevel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-material-h#oh_arkui_nativemodule_getglobalmateriallevel)获取。在算力等级为[ARKUI_MATERIAL_LEVEL_SMOOTH](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-material-h#arkui_materiallevel)的设备上，设置NODE_SYSTEM_MATERIAL会覆盖NODE_SHADOW/NODE_CUSTOM_SHADOW的阴影效果、NODE_OUTLINE_COLOR的外描边颜色、NODE_OUTLINE_WIDTH的外描边宽度，并改变组件背景颜色。在算力等级为[ARKUI_MATERIAL_LEVEL_EXQUISITE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-material-h#arkui_materiallevel)或[ARKUI_MATERIAL_LEVEL_GENTLE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-material-h#arkui_materiallevel)的设备上，会影响阴影属性并在系统材质层添加滤镜效果，可产生类似玻璃的效果。
 
 作为属性设置方法参数、属性获取方法返回值[ArkUI_AttributeItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-attributeitem)格式如下。
 

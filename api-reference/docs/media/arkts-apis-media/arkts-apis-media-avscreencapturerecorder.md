@@ -2,8 +2,8 @@
 title: "Interface (AVScreenCaptureRecorder)"
 upstream_id: "harmonyos-references/arkts-apis-media-avscreencapturerecorder"
 catalog: "harmonyos-references"
-content_hash: "53e10f432a4d"
-synced_at: "2026-08-14T15:55:29.487777"
+content_hash: "ce447f88b04b"
+synced_at: "2026-08-21T15:36:56.451483"
 ---
 
 # Interface (AVScreenCaptureRecorder)
@@ -49,7 +49,7 @@ init(config: AVScreenCaptureRecordConfig): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. Return by promise. |
 | 5400103 | IO error. Return by promise. |
 | 5400105 | Service died. Return by promise. |
 

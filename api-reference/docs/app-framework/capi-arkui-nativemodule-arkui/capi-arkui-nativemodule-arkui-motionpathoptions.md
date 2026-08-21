@@ -2,8 +2,8 @@
 title: "ArkUI_MotionPathOptions"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-motionpathoptions"
 catalog: "harmonyos-references"
-content_hash: "44819cf67c04"
-synced_at: "2026-07-09T00:58:44.838532"
+content_hash: "a4d215e817ac"
+synced_at: "2026-08-21T15:34:44.951024"
 ---
 
 # ArkUI_MotionPathOptions
@@ -20,4 +20,4 @@ typedef struct ArkUI_MotionPathOptions ArkUI_MotionPathOptions
 
 相关模块： [ArkUI_NativeModule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule)
 
-所在头文件： [native_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h)
+所在头文件： [native_type_visual.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h)

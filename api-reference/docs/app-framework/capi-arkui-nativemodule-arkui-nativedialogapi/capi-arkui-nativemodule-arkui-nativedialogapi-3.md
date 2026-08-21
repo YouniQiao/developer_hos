@@ -2,8 +2,8 @@
 title: "ArkUI_NativeDialogAPI_3"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-nativedialogapi-3"
 catalog: "harmonyos-references"
-content_hash: "de05e1b12835"
-synced_at: "2026-07-28T16:49:29.077022"
+content_hash: "e19b9af7bd6c"
+synced_at: "2026-08-21T15:34:36.601119"
 ---
 
 # ArkUI_NativeDialogAPI_3
@@ -102,7 +102,7 @@ int32_t (*registerOnWillAppear)(ArkUI_NativeDialogHandle handle, void* userData,
 | --- | --- |
 | [ArkUI_NativeDialogHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativedialog8h) handle | 指向自定义弹窗控制器的指针。 |
 | void* userData | 用户自定义数据。 |
-| callback | 自定义弹窗显示之前的回调函数。 |
+| void (callback)(void userData) | 自定义弹窗显示之前的回调函数。 |
 
 返回：
 
@@ -129,7 +129,7 @@ int32_t (*registerOnDidAppear)(ArkUI_NativeDialogHandle handle, void* userData, 
 | --- | --- |
 | [ArkUI_NativeDialogHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativedialog8h) handle | 指向自定义弹窗控制器的指针。 |
 | void* userData | 用户自定义数据。 |
-| callback | 自定义弹窗显示之后的回调函数。 |
+| void (callback)(void userData) | 自定义弹窗显示之后的回调函数。 |
 
 返回：
 
@@ -156,7 +156,7 @@ int32_t (*registerOnWillDisappear)(ArkUI_NativeDialogHandle handle, void* userDa
 | --- | --- |
 | [ArkUI_NativeDialogHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativedialog8h) handle | 指向自定义弹窗控制器的指针。 |
 | void* userData | 用户自定义数据。 |
-| callback | 自定义弹窗关闭之前的回调函数。 |
+| void (callback)(void userData) | 自定义弹窗关闭之前的回调函数。 |
 
 返回：
 
@@ -183,7 +183,7 @@ int32_t (*registerOnDidDisappear)(ArkUI_NativeDialogHandle handle, void* userDat
 | --- | --- |
 | [ArkUI_NativeDialogHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativedialog8h) handle | 指向自定义弹窗控制器的指针。 |
 | void* userData | 用户自定义数据。 |
-| callback | 自定义弹窗关闭之后的回调函数。 |
+| void (callback)(void userData) | 自定义弹窗关闭之后的回调函数。 |
 
 返回：
 

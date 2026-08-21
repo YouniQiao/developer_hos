@@ -2,8 +2,8 @@
 title: "InstantShapeGenerator（一笔成形功能）"
 upstream_id: "harmonyos-references/pen-instantsshapegenerator"
 catalog: "harmonyos-references"
-content_hash: "d58cb4a26ad4"
-synced_at: "2026-07-09T00:59:58.738923"
+content_hash: "40bb375d03ab"
+synced_at: "2026-08-21T15:36:17.919318"
 ---
 
 # InstantShapeGenerator（一笔成形功能）
@@ -44,8 +44,6 @@ import { InstantShapeGenerator, ShapeInfo } from '@kit.Penkit';
 
 起始版本： 5.0.0(12)
 
-参数：
-
 | **名称** | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
 | shapePath | [Path2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-components-canvas-path2d) | 否 | 否 | 图形对象。 |
@@ -56,7 +54,7 @@ import { InstantShapeGenerator, ShapeInfo } from '@kit.Penkit';
 
 ```
 private shapeInfo : ShapeInfo = {
-shapePath: '',
+shapePath: new Path2D(),
 shapeString: '',
 shapeType: 0
 }
@@ -249,7 +247,7 @@ aboutToDisappear(){
 
 #### onShapeRecognized
 
-onShapeRecognized(callback: Callback<ShapeInfo>): [InstantShapeGenerator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pen-instantsshapegenerator)
+onShapeRecognized(callback: Callback<ShapeInfo>): InstantShapeGenerator
 
 注册识别完成时的回调方法。使用callback异步回调。
 

@@ -2,8 +2,8 @@
 title: "Class (ClientAuthenticationHandler)"
 upstream_id: "harmonyos-references/arkts-basic-components-web-clientauthenticationhandler"
 catalog: "harmonyos-references"
-content_hash: "1320a6e282fe"
-synced_at: "2026-07-09T00:58:53.496807"
+content_hash: "22a639c38d07"
+synced_at: "2026-08-21T15:34:58.555744"
 ---
 
 # Class (ClientAuthenticationHandler)
@@ -45,7 +45,7 @@ confirm(authUri : string): void
 
 通知Web组件使用指定的凭据(从证书管理模块获得)。
 
-![](./img/note_3.0-zh-cn.png) 需要配置权限：ohos.permission.ACCESS_CERT_MANAGER。
+![](./img/note_3.0-zh-cn.png) authUri参数需通过系统证书管理器获取，需配置ohos.permission.ACCESS_CERT_MANAGER权限。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -74,6 +74,8 @@ confirm(authUri : string): void
 confirm(identity: string, credentialTypeOrCertChainFile: CredentialType | string): void
 
 通知Web组件使用从证书管理模块获取的指定凭据和凭据类型。
+
+![](./img/note_3.0-zh-cn.png) identity参数需通过系统证书管理器获取，需配置ohos.permission.ACCESS_CERT_MANAGER权限。
 
 系统能力： SystemCapability.Web.Webview.Core
 

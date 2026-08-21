@@ -2,8 +2,8 @@
 title: "Slider"
 upstream_id: "harmonyos-references/ts-basic-components-slider"
 catalog: "harmonyos-references"
-content_hash: "782f5d738fac"
-synced_at: "2026-07-28T16:44:37.564690"
+content_hash: "6c67ec478e05"
+synced_at: "2026-08-21T15:33:42.710624"
 ---
 
 # Slider
@@ -47,7 +47,7 @@ Slider(options?: SliderOptions)
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| value | number | 否 | 是 | 当前进度值。 默认值：与属性min的取值一致。 从API version 10开始，该属性支持[$$](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-two-way-sync)双向绑定变量。 该属性支持[!!](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-binding#系统组件参数双向绑定)双向绑定变量。 取值范围： [min, max] 小于min时取min，大于max时取max。 $$运算符为系统组件提供TS变量的引用，使TS变量和slider组件的value值保持同步。详细使用示例请参考[示例7（设置滑动条的双向绑定）](#示例7设置滑动条的双向绑定)。 |
+| value | number | 否 | 是 | 当前进度值。 默认值：与属性min的取值一致。 从API version 10开始，该属性支持[$$](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-two-way-sync)双向绑定变量。 该属性支持[!!](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-binding#系统组件参数双向绑定)双向绑定变量。 取值范围： [min, max] 小于min时取min，大于max时取max。 $$运算符为系统组件提供TS变量的引用，使TS变量和Slider组件的value值保持同步。详细使用示例请参考[示例7（设置滑动条的双向绑定）](#示例7设置滑动条的双向绑定)。 |
 | min | number | 否 | 是 | 设置最小值。 默认值：0 |
 | max | number | 否 | 是 | 设置最大值。 默认值：100 **说明：** 当min >= max时，min取默认值0，max取默认值100。 当value不在[min, max]范围内时，取min或者max，靠近min取min，靠近max取max。 |
 | step | number | 否 | 是 | 设置Slider滑动步长。 默认值：1 取值范围：[0.01, max - min] **说明：** 若设置的step值小于0或大于max - min值，则按默认值显示。 |
@@ -1087,7 +1087,7 @@ struct SliderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928207.gif)
+ ![](./img/zh-cn_image_0000002718979765.gif)
 
 #### [h2]示例2（设置滑动条样式）
 
@@ -1141,7 +1141,7 @@ struct SliderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008530.png)
+ ![](./img/zh-cn_image_0000002689300070.png)
 
 #### [h2]示例3（自定义滑动条）
 
@@ -1258,7 +1258,7 @@ struct SliderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848610.gif)
+ ![](./img/zh-cn_image_0000002718859647.gif)
 
 #### [h2]示例4（设置滑动条渐变色）
 
@@ -1340,7 +1340,7 @@ struct SliderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088037.gif)
+ ![](./img/zh-cn_image_0000002689140192.gif)
 
 #### [h2]示例5（滑动条设置前后缀内容）
 
@@ -1556,7 +1556,7 @@ struct SliderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928209.jpeg)
+ ![](./img/zh-cn_image_0000002718979767.jpeg)
 
 #### [h2]示例6（滑动条设置刻度点无障碍文本）
 
@@ -1623,7 +1623,7 @@ struct SliderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008532.png)
+ ![](./img/zh-cn_image_0000002689300072.png)
 
 #### [h2]示例7（设置滑动条的双向绑定）
 
@@ -1655,7 +1655,7 @@ struct SliderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848612.gif)
+ ![](./img/zh-cn_image_0000002718859649.gif)
 
 #### [h2]示例8（滑块设置渐变色）
 
@@ -1773,7 +1773,7 @@ struct SliderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088039.png)
+ ![](./img/zh-cn_image_0000002689140194.png)
 
 #### [h2]示例9（设置滑轨的背景颜色）
 
@@ -1816,7 +1816,7 @@ struct SliderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928211.png)
+ ![](./img/zh-cn_image_0000002718979769.png)
 
 #### [h2]示例10（设置滑动条的系统材质）
 
@@ -1850,4 +1850,4 @@ struct SliderSystemMaterial {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008534.png)
+ ![](./img/zh-cn_image_0000002689300074.png)

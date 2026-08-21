@@ -2,8 +2,8 @@
 title: "基础类型定义"
 upstream_id: "harmonyos-references/ts-types"
 catalog: "harmonyos-references"
-content_hash: "b79de166523c"
-synced_at: "2026-07-28T16:48:52.203084"
+content_hash: "e54a69836fa0"
+synced_at: "2026-08-21T15:34:07.237463"
 ---
 
 # 基础类型定义
@@ -122,7 +122,7 @@ type ResourceStr = string | Resource
 
 #### Padding
 
-type Padding = { top: Length; right: Length; bottom: Length; left: Length; }
+type Padding = { top?: Length; right?: Length; bottom?: Length; left?: Length; }
 
 内边距类型，用于描述组件不同方向的内边距。
 
@@ -200,7 +200,7 @@ type LocalizedMargin = LocalizedPadding
 
 #### EdgeWidths9+
 
-type EdgeWidths = { top: Length; right: Length; bottom: Length; left: Length; }
+type EdgeWidths = { top?: Length; right?: Length; bottom?: Length; left?: Length; }
 
 边框宽度类型，用于描述组件边框不同方向的宽度。
 
@@ -260,7 +260,7 @@ type EdgeWidth = EdgeWidths
 
 #### BorderRadiuses9+
 
-type BorderRadiuses = { topLeft: Length; topRight: Length; bottomLeft: Length; bottomRight: Length; }
+type BorderRadiuses = { topLeft?: Length; topRight?: Length; bottomLeft?: Length; bottomRight?: Length; }
 
 圆角类型，用于描述组件边框圆角半径。
 
@@ -302,7 +302,7 @@ type BorderRadiuses = { topLeft: Length; topRight: Length; bottomLeft: Length; b
 
 #### EdgeColors9+
 
-type EdgeColors = { top: ResourceColor; right: ResourceColor; bottom: ResourceColor; left: ResourceColor; }
+type EdgeColors = { top?: ResourceColor; right?: ResourceColor; bottom?: ResourceColor; left?: ResourceColor; }
 
 边框颜色，用于描述组件边框四条边的颜色。
 
@@ -344,7 +344,7 @@ type EdgeColors = { top: ResourceColor; right: ResourceColor; bottom: ResourceCo
 
 #### EdgeStyles9+
 
-type EdgeStyles = { top: BorderStyle; right: BorderStyle; bottom: BorderStyle; left: BorderStyle; }
+type EdgeStyles = { top?: BorderStyle; right?: BorderStyle; bottom?: BorderStyle; left?: BorderStyle; }
 
 边框样式，用于描述组件边框四条边的样式。
 
@@ -1021,11 +1021,11 @@ type ResponsiveFillType = PresetFillType
 
 以水平方向Bias为例，其值为组件到左锚点的距离 Dstart与组件到水平方向锚点间总距离 Dstart + Dend的比值。镜像语言下，Dstart为组件到右锚点的距离。下图中Dwidth表示组件宽度。
 
-![](./img/zh-cn_image_0000002655849050.png)
+![](./img/zh-cn_image_0000002718860085.png)
 
 竖直方向同理，其值为组件到上锚点的距离Dtop与组件到竖直方向锚点间总距离Dtop + Dbottom的比值。下图中Dheight表示组件高度。
 
-![](./img/zh-cn_image_0000002686088481.png)
+![](./img/zh-cn_image_0000002689140630.png)
 
 卡片能力： 从API version 11开始，该接口支持在ArkTS卡片中使用。
 

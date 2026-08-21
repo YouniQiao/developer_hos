@@ -2,8 +2,8 @@
 title: "qos.h"
 upstream_id: "harmonyos-references/capi-qos-h"
 catalog: "harmonyos-references"
-content_hash: "c24e7c9a2bce"
-synced_at: "2026-07-28T16:51:11.404784"
+content_hash: "2d87b16b0ddd"
+synced_at: "2026-08-21T15:36:12.827543"
 ---
 
 # qos.h
@@ -70,7 +70,7 @@ synced_at: "2026-07-28T16:51:11.404784"
 #### [h2]OH_QoS_GewuSession
 
 ```
-typedef unsigned int OH_QoS_GewuSession;
+typedef unsigned int OH_QoS_GewuSession
 ```
  描述
 
@@ -81,7 +81,7 @@ typedef unsigned int OH_QoS_GewuSession;
 #### [h2]OH_QoS_GewuRequest
 
 ```
-typedef unsigned int OH_QoS_GewuRequest;
+typedef unsigned int OH_QoS_GewuRequest
 ```
  描述
 

@@ -2,8 +2,8 @@
 title: "@ohos.account.osAccount (系统账号管理)"
 upstream_id: "harmonyos-references/js-apis-osaccount"
 catalog: "harmonyos-references"
-content_hash: "379e9875bb35"
-synced_at: "2026-07-28T16:50:57.304496"
+content_hash: "1e2fdebe11bc"
+synced_at: "2026-08-21T15:35:57.331293"
 ---
 
 # @ohos.account.osAccount (系统账号管理)
@@ -3249,7 +3249,7 @@ accountManager.getOsAccountDomainInfo(localId).then((domainAccountInfo: osAccoun
 
 #### [h2]updateAccountInfo18+
 
-updateAccountInfo(oldAccountInfo: DomainAccountInfo, newAccountInfo: DomainAccountInfo): Promise<void>
+static updateAccountInfo(oldAccountInfo: DomainAccountInfo, newAccountInfo: DomainAccountInfo): Promise<void>
 
 修改指定域账号信息。使用Promise异步回调。
 

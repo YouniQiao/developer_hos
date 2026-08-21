@@ -2,8 +2,8 @@
 title: "Popup控制"
 upstream_id: "harmonyos-references/ts-universal-attributes-popup"
 catalog: "harmonyos-references"
-content_hash: "57e1a115e8fc"
-synced_at: "2026-07-28T16:42:38.685749"
+content_hash: "037aebe26eaa"
+synced_at: "2026-08-21T15:33:36.471248"
 ---
 
 # Popup控制
@@ -92,7 +92,7 @@ bindPopup(show: boolean, popup: PopupOptions | CustomPopupOptions): T
 | backgroundEffect | [BackgroundEffectOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundeffectoptions11) | 否 | 是 | 背景效果参数。默认值请参考BackgroundEffectOptions类型说明。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
 | placementOnTop(deprecated) | boolean | 否 | 是 | 是否在组件上方显示，默认值为false。取值为true：气泡显示到绑定组件的上方，取值false：气泡显示到绑定组件的下方。 **说明：** 从API version 7开始支持，从API version 10开始废弃，建议使用placement替代。 |
 | colorMode | [AnchoredColorMode](#anchoredcolormode) | 否 | 是 | 设置气泡深浅色模式，默认跟随绑定组件深浅色模式。 默认值：AnchoredColorMode.FOLLOW_TARGET **说明：** 1. 仅当绑定组件使用了[WithTheme](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-with-theme#接口)标签时，该属性才会生效。 2. 该属性仅影响组件的默认样式，以及开发者设置的涉及深浅色资源的属性。 3. 设置为AnchoredColorMode.FOLLOW_SYSTEM时，模糊材质可以跟随，文字颜色以及涉及深浅色资源的属性仍保持跟随绑定组件的深浅色配置。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| levelMode | [LevelMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#levelmode15枚举说明) | 否 | 是 | 设置气泡的显示层级模式。 默认值：LevelMode.OVERLAY **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| levelMode | [LevelMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#levelmode15) | 否 | 是 | 设置气泡的显示层级模式。 默认值：LevelMode.OVERLAY **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### PopupMessageOptions10+类型说明
 
@@ -182,7 +182,7 @@ bindPopup(show: boolean, popup: PopupOptions | CustomPopupOptions): T
 | systemMaterial | [SystemUiMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemuimaterial) | 否 | 是 | 设置组件的系统材质。 默认值：undefined，会清除由该接口设置的材质效果。 **说明：** 不同系统材质对应不同的属性影响效果，该接口影响背景色[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、边框颜色[borderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#bordercolor)、边框宽度[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)、阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)，当设置系统材质时，上述接口不生效。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
 | backgroundBlurStyleOptions | [BackgroundBlurStyleOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundblurstyleoptions10对象说明) | 否 | 是 | 背景模糊效果。默认值请参考BackgroundBlurStyleOptions类型说明。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
 | backgroundEffect | [BackgroundEffectOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundeffectoptions11) | 否 | 是 | 背景效果参数。默认值请参考BackgroundEffectOptions类型说明。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
-| levelMode | [LevelMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#levelmode15枚举说明) | 否 | 是 | 设置气泡的显示层级模式。 默认值：LevelMode.OVERLAY **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| levelMode | [LevelMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#levelmode15) | 否 | 是 | 设置气泡的显示层级模式。 默认值：LevelMode.OVERLAY **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### PopupCommonOptions18+类型说明
 
@@ -225,7 +225,7 @@ bindPopup(show: boolean, popup: PopupOptions | CustomPopupOptions): T
 | systemMaterial | [SystemUiMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemuimaterial) | 否 | 是 | 设置组件的系统材质。 默认值：undefined，会清除由该接口设置的材质效果。 **说明：** 不同系统材质对应不同的属性影响效果，该接口影响背景色[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、边框颜色[borderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#bordercolor)、边框宽度[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)、阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)，当设置系统材质时，上述接口不生效。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
 | backgroundBlurStyleOptions | [BackgroundBlurStyleOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundblurstyleoptions10对象说明) | 否 | 是 | 背景模糊效果。默认值请参考BackgroundBlurStyleOptions类型说明。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
 | backgroundEffect | [BackgroundEffectOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundeffectoptions11) | 否 | 是 | 背景效果参数。默认值请参考BackgroundEffectOptions类型说明。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
-| levelMode | [LevelMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#levelmode15枚举说明) | 否 | 是 | 设置气泡的显示层级模式。 默认值：LevelMode.OVERLAY **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| levelMode | [LevelMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#levelmode15) | 否 | 是 | 设置气泡的显示层级模式。 默认值：LevelMode.OVERLAY **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### PopupStateChangeParam18+类型说明
 
@@ -243,7 +243,7 @@ bindPopup(show: boolean, popup: PopupOptions | CustomPopupOptions): T
 
 #### PopupStateChangeCallback18+
 
-type PopupStateChangeCallback = (event: PopupStateChangeParam) => void;
+type PopupStateChangeCallback = (event: PopupStateChangeParam) => void
 
 气泡状态变化事件回调。
 
@@ -405,7 +405,7 @@ struct PopupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928009.gif)
+ ![](./img/zh-cn_image_0000002689139992.gif)
 
 #### [h2]示例2（设置气泡的文本样式）
 
@@ -451,7 +451,7 @@ struct PopupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008330.gif)
+ ![](./img/zh-cn_image_0000002718979567.gif)
 
 #### [h2]示例3（设置气泡的样式）
 
@@ -498,7 +498,7 @@ struct PopupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848410.gif)
+ ![](./img/zh-cn_image_0000002689299872.gif)
 
 #### [h2]示例4（设置气泡的动效）
 
@@ -567,7 +567,7 @@ struct PopupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087839.gif)
+ ![](./img/zh-cn_image_0000002718859449.gif)
 
 #### [h2]示例5（为气泡添加事件）
 
@@ -621,7 +621,7 @@ struct PopupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928011.gif)
+ ![](./img/zh-cn_image_0000002689139994.gif)
 
 #### [h2]示例6（为气泡拦截退出事件）
 
@@ -678,7 +678,7 @@ struct PopupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008332.gif)
+ ![](./img/zh-cn_image_0000002718979569.gif)
 
 #### [h2]示例7（为气泡内外描边设置线性渐变）
 
@@ -728,7 +728,7 @@ struct PopupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848412.gif)
+ ![](./img/zh-cn_image_0000002689299874.gif)
 
 #### [h2]示例8（设置气泡避让绑定的组件模式）
 
@@ -760,7 +760,7 @@ struct PopupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087841.gif)
+ ![](./img/zh-cn_image_0000002718859451.gif)
 
 #### [h2]示例9（设置Popup的系统材质视觉效果）
 
@@ -808,11 +808,11 @@ struct PopupExample {
 ```
  未设置系统材质时：
 
-![](./img/zh-cn_image_0000002686085885.png)
+![](./img/zh-cn_image_0000002718977607.png)
 
 设置系统材质后：
 
-![](./img/zh-cn_image_0000002685926057.png)
+![](./img/zh-cn_image_0000002689297910.png)
 
 #### [h2]示例10（自定义气泡背景效果参数）
 
@@ -883,7 +883,7 @@ struct PopupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928013.gif)
+ ![](./img/zh-cn_image_0000002689139996.gif)
 
 #### [h2]示例11（设置气泡的显示层级模式）
 
@@ -943,4 +943,4 @@ struct PageTwo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008334.gif)
+ ![](./img/zh-cn_image_0000002718979571.gif)

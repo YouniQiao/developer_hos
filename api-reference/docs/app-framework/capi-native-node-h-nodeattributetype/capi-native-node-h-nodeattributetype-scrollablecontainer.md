@@ -2,8 +2,8 @@
 title: "ArkUI_NodeAttributeType（滚动容器类组件相关属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-scrollablecontainer"
 catalog: "harmonyos-references"
-content_hash: "c66606c9d199"
-synced_at: "2026-07-28T16:49:21.428836"
+content_hash: "f53f1f46734d"
+synced_at: "2026-08-21T15:34:28.534817"
 ---
 
 # ArkUI_NodeAttributeType（滚动容器类组件相关属性）
@@ -131,7 +131,7 @@ NODE_SCROLL_EDGE_EFFECT = 1002004
 | --- | --- |
 | .value[0].i32 | 边缘滑动效果，参数类型[ArkUI_EdgeEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scroll-h#arkui_edgeeffect)，Grid、Scroll、WaterFlow组件默认值为[ARKUI_EDGE_EFFECT_NONE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scroll-h#arkui_edgeeffect)，List组件默认值为[ARKUI_EDGE_EFFECT_SPRING](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scroll-h#arkui_edgeeffect)。 |
 | .value[1]?.i32 | 可选值，组件内容大小小于组件自身时，设置是否开启滑动效果，开启为1，关闭为0，List、Grid、WaterFlow组件默认值为0，Scroll组件默认值为1。 |
-| .value[2]?.i32 | 边缘效果生效的方向，参数类型[ArkUI_EffectEdge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scroll-h#arkui_effectedge)，默认值[ARKUI_EFFECT_EDGE_START](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scroll-h#arkui_effectedge) | [ARKUI_EFFECT_EDGE_END](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scroll-h#arkui_effectedge)。 该参数从API version 18开始支持。 |
+| .value[2]?.i32 | 边缘效果生效的方向，参数类型[ArkUI_EffectEdge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scroll-h#arkui_effectedge)，默认值[ARKUI_EFFECT_EDGE_START](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scroll-h#arkui_effectedge) | [ARKUI_EFFECT_EDGE_END](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scroll-h#arkui_effectedge)。 该参数从API version 16开始支持。 |
 
 返回：
 
@@ -139,7 +139,7 @@ NODE_SCROLL_EDGE_EFFECT = 1002004
 | --- | --- |
 | .value[0].i32 | 边缘滑动效果，参数类型[ArkUI_EdgeEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scroll-h#arkui_edgeeffect)。 |
 | .value[1].i32 | 组件内容大小小于组件自身时，设置是否开启滑动效果，开启为1，关闭为0。 |
-| .value[2].i32 | 边缘效果生效的方向，参数类型[ArkUI_EffectEdge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scroll-h#arkui_effectedge)。该参数从API version 18开始支持。 |
+| .value[2].i32 | 边缘效果生效的方向，参数类型[ArkUI_EffectEdge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scroll-h#arkui_effectedge)。该参数从API version 16开始支持。 |
 
 #### NODE_SCROLL_ENABLE_SCROLL_INTERACTION
 

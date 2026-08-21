@@ -2,8 +2,8 @@
 title: "页面间转场 (pageTransition)"
 upstream_id: "harmonyos-references/ts-page-transition-animation"
 catalog: "harmonyos-references"
-content_hash: "f472bda8c5a4"
-synced_at: "2026-08-03T17:09:57.857384"
+content_hash: "c9de37fbd3ef"
+synced_at: "2026-08-21T15:33:49.873062"
 ---
 
 # 页面间转场 (pageTransition)
@@ -268,8 +268,6 @@ type PageTransitionCallback = (type: RouteType, progress: number) => void
 
 页面转场时的滑入滑出效果。
 
-元服务API： 从API version 11开始，该接口支持在元服务中使用。
-
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 | 名称 | 值 | 说明 |
@@ -368,7 +366,7 @@ struct Page1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002659440526.gif)
+ ![](./img/zh-cn_image_0000002718859943.gif)
 
 自定义方式2：配置了当前页面的入场动画为从左侧滑入，退场为平移加透明度变化。
 
@@ -427,7 +425,7 @@ struct Page1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002659600454.gif)
+ ![](./img/zh-cn_image_0000002689140488.gif)
 
 #### [h2]示例2（设置退入场平移效果）
 
@@ -512,7 +510,7 @@ struct Page1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002689560037.gif)
+ ![](./img/zh-cn_image_0000002718980063.gif)
 
 自定义方式2：使用系统默认的退入场效果，将系统语言排版模式改为RTL。
 
@@ -571,4 +569,4 @@ struct Page1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002689679861.gif)
+ ![](./img/zh-cn_image_0000002689300372.gif)

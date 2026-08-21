@@ -2,8 +2,8 @@
 title: "@ohos.runningLock (RunningLock锁)"
 upstream_id: "harmonyos-references/js-apis-runninglock"
 catalog: "harmonyos-references"
-content_hash: "1efbfb1b2f07"
-synced_at: "2026-07-28T16:50:56.745333"
+content_hash: "4228762f4199"
+synced_at: "2026-08-21T15:35:57.393953"
 ---
 
 # @ohos.runningLock (RunningLock锁)
@@ -51,7 +51,7 @@ isSupported(type: RunningLockType): boolean
 ```
 try {
     let isSupported = runningLock.isSupported(runningLock.RunningLockType.PROXIMITY_SCREEN_CONTROL);
-    console.info('BACKGROUND type supported: ' + isSupported);
+    console.info('PROXIMITY_SCREEN_CONTROL type supported: ' + isSupported);
 } catch(err) {
     console.error('check supported failed, err: ' + err);
 }

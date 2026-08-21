@@ -1,12 +1,12 @@
 ---
-title: "@ohos.usb (USB管理)(已停止维护)"
+title: "@ohos.usb (USB管理)"
 upstream_id: "harmonyos-references/js-apis-usb-deprecated"
 catalog: "harmonyos-references"
-content_hash: "ab6a2c1b3a25"
-synced_at: "2026-07-09T00:59:41.991199"
+content_hash: "5276b0545e88"
+synced_at: "2026-08-21T15:36:00.348284"
 ---
 
-# @ohos.usb (USB管理)(已停止维护)
+# @ohos.usb (USB管理)
 
 本模块主要提供管理USB设备的相关功能，包括查询USB设备列表、批量数据传输、控制命令传输、权限控制等。
 
@@ -506,8 +506,8 @@ USB配置，一个[USBDevice](#usbdevice)中可以含有多个配置。
 | attributes | number | 是 | 配置的属性。 |
 | maxPower | number | 是 | 最大功耗，以毫安为单位。 |
 | name | string | 是 | 配置的名称，可以为空。 |
-| isRemoteWakeup | boolean | 是 | 检查当前配置是否支持远程唤醒。 |
-| isSelfPowered | boolean | 是 | 检查当前配置是否支持独立电源。 |
+| isRemoteWakeup | boolean | 是 | 检查当前配置是否支持远程唤醒。true表示支持，false表示不支持。 |
+| isSelfPowered | boolean | 是 | 检查当前配置是否支持独立电源。true表示支持，false表示不支持。 |
 | interfaces | Array | 是 | 配置支持的接口属性。 |
 
 #### USBDevice
@@ -522,7 +522,7 @@ USB设备信息。
 | devAddress | number | 是 | 设备地址。 |
 | serial | string | 是 | 序列号。 |
 | name | string | 是 | 设备名字。 |
-| manufacturerName | string | 是 | 产商信息。 |
+| manufacturerName | string | 是 | 厂商信息。 |
 | productName | string | 是 | 产品信息。 |
 | version | string | 是 | 版本。 |
 | vendorId | number | 是 | 厂商ID。 |

@@ -2,8 +2,8 @@
 title: "libuv"
 upstream_id: "harmonyos-references/libuv"
 catalog: "harmonyos-references"
-content_hash: "017bf7ecdfcc"
-synced_at: "2026-07-09T01:01:48.839509"
+content_hash: "d03245333955"
+synced_at: "2026-08-21T15:38:00.408061"
 ---
 
 # libuv
@@ -497,7 +497,7 @@ libhilog_ndk.z.so
 
 #### libuv使用指导
 
-重要：libuv NDK中所有依赖uv_run的接口在当前系统的应用主循环中无法及时生效，并且可能会导致卡顿掉帧的现象。因此不建议直接在JS主线程上使用libuv NDK接口，对于异步任务执行及与使用线程安全函数与主线程通信，开发者可以直接调用Node-API接口来实现相关功能。
+重要：libuv NDK中所有依赖uv_run的接口在当前系统的应用主循环中无法及时生效，并且可能会导致卡顿掉帧的现象。因此不建议直接在JS主线程上使用libuv NDK接口，对于异步任务执行及使用线程安全函数与主线程通信，开发者可以直接调用Node-API接口来实现相关功能。
 
 #### [h2]libuv接口与Node-API接口对应关系
 
@@ -619,21 +619,21 @@ napi_status napi_release_threadsafe_function(napi_threadsafe_function function,
 
 | 接口类型 | 接口汇总 |
 | --- | --- |
-| [loop概念及相关接口](#libuv中的事件循环) | uv_loop_init |
-| [loop概念及相关接口](#libuv中的事件循环) | uv_loop_close |
-| [loop概念及相关接口](#libuv中的事件循环) | uv_default_loop |
-| [loop概念及相关接口](#libuv中的事件循环) | uv_run |
-| [loop概念及相关接口](#libuv中的事件循环) | uv_loop_alive |
-| [loop概念及相关接口](#libuv中的事件循环) | uv_stop |
-| [Handle概念及相关接口](#libuv中的handles和requests) | uv_poll_* |
-| [Handle概念及相关接口](#libuv中的handles和requests) | uv_timer_* |
-| [Handle概念及相关接口](#libuv中的handles和requests) | uv_async_* |
-| [Handle概念及相关接口](#libuv中的handles和requests) | uv_signal_* |
-| [Handle概念及相关接口](#libuv中的handles和requests) | uv_fs_* |
-| [Request概念及相关接口](#libuv中的handles和requests) | uv_random |
-| [Request概念及相关接口](#libuv中的handles和requests) | uv_getaddrinfo |
-| [Request概念及相关接口](#libuv中的handles和requests) | uv_getnameinfo |
-| [Request概念及相关接口](#libuv中的handles和requests) | uv_queue_work |
+| [libuv中的事件循环概念及相关接口](#libuv中的事件循环) | uv_loop_init |
+| [libuv中的事件循环概念及相关接口](#libuv中的事件循环) | uv_loop_close |
+| [libuv中的事件循环概念及相关接口](#libuv中的事件循环) | uv_default_loop |
+| [libuv中的事件循环概念及相关接口](#libuv中的事件循环) | uv_run |
+| [libuv中的事件循环概念及相关接口](#libuv中的事件循环) | uv_loop_alive |
+| [libuv中的事件循环概念及相关接口](#libuv中的事件循环) | uv_stop |
+| [libuv中的handles和requests概念及相关接口](#libuv中的handles和requests) | uv_poll_* |
+| [libuv中的handles和requests概念及相关接口](#libuv中的handles和requests) | uv_timer_* |
+| [libuv中的handles和requests概念及相关接口](#libuv中的handles和requests) | uv_async_* |
+| [libuv中的handles和requests概念及相关接口](#libuv中的handles和requests) | uv_signal_* |
+| [libuv中的handles和requests概念及相关接口](#libuv中的handles和requests) | uv_fs_* |
+| [libuv中的handles和requests概念及相关接口](#libuv中的handles和requests) | uv_random |
+| [libuv中的handles和requests概念及相关接口](#libuv中的handles和requests) | uv_getaddrinfo |
+| [libuv中的handles和requests概念及相关接口](#libuv中的handles和requests) | uv_getnameinfo |
+| [libuv中的handles和requests概念及相关接口](#libuv中的handles和requests) | uv_queue_work |
 | [线程间通信原理及相关接口](#线程间通信) | uv_async_init |
 | [线程间通信原理及相关接口](#线程间通信) | uv_async_send |
 | [线程池概念及相关接口](#线程池) | uv_queue_work |
@@ -841,7 +841,7 @@ export const testTimerAsyncSend:() => number;
 
 提示：所有形如uv_xxx_init的函数，即使它是以线程安全的方式实现的，但使用时要注意，避免多个线程同时调用uv_xxx_init，否则它依旧会引起多线程资源竞争的问题。最好的方式是在事件循环线程中调用该函数。
 
-注：uv_async_send函数被调用后，回调函数是被异步触发的。如果调用了多次uv_async_send，libuv只保证至少有一次回调会被执行。这就可能导致一旦对同一句柄触发了多次uv_async_send，libuv对回调的处理可能会违背开发者的预期。多次对同一个async句柄进行send操作，还会导致任意两次相同句柄send操作之间提交的的其他async_cb任务丢失。 而在Native侧，可以保证回调的执行次数和开发者调用napi_call_threadsafe_function的次数保持一致。
+注：uv_async_send函数被调用后，回调函数是被异步触发的。如果调用了多次uv_async_send，libuv只保证至少有一次回调会被执行。这就可能导致一旦对同一句柄触发了多次uv_async_send，libuv对回调的处理可能会违背开发者的预期。多次对同一个async句柄进行send操作，还会导致任意两次相同句柄send操作之间提交的其他async_cb任务丢失。 而在Native侧，可以保证回调的执行次数和开发者调用napi_call_threadsafe_function的次数保持一致。
 
 非线程安全函数：
 
@@ -1218,7 +1218,7 @@ int uv_async_send(uv_async_t* handle)
 1. uv_async_t从调用uv_async_init开始后就一直处于活跃状态，除非用uv_close将其关闭。
 2. uv_async_t的执行顺序严格按照uv_async_init的顺序，而非通过uv_async_send的顺序来执行的。因此按照初始化的顺序来管理好时序问题是必要的。
 
-![](./img/zh-cn_image_0000002631414528.jpg)
+![](./img/zh-cn_image_0000002689141414.jpg)
 
 示例代码：
 
@@ -1311,7 +1311,7 @@ after_work_cb：loop所在线程要执行的回调函数。
 
 下图为原生libuv的线程池工作流程，图中流程已简化，默认句柄的pending标志为1，worker线程个数不代表线程池中线程的真实数量。
 
-![](./img/zh-cn_image_0000002661733755.jpg)
+![](./img/zh-cn_image_0000002718980991.jpg)
 
 2. 异步任务提交注意事项
 
@@ -1331,7 +1331,7 @@ after_work_cb：loop所在线程要执行的回调函数。
 
 另外，在应用主线程中，所有的异步任务尽管最终都是通过libuv得到执行的。但是在当前系统中，libuv的线程池已经对接到了FFRT中，任何抛向libuv的异步任务都会在FFRT的线程中得到调度。应用主线程的回调函数也通过PostTask接口插入到eventhandler的队列上。这就意味着FFRT线程上的异步任务完成后不再通过uv_async_send的方式触发主线程的回调。过程如下图:
 
-![](./img/zh-cn_image_0000002631254636.jpg)
+![](./img/zh-cn_image_0000002689301298.jpg)
 
 我们总结了五种类型的请求任务是直接可以按照正常用法在应用主循环中生效的：
 

@@ -2,8 +2,8 @@
 title: "关键帧动画 (keyframeAnimateTo)"
 upstream_id: "harmonyos-references/ts-keyframeanimateto"
 catalog: "harmonyos-references"
-content_hash: "4289fda2174b"
-synced_at: "2026-07-09T17:24:43.386042"
+content_hash: "4ee778adb5a1"
+synced_at: "2026-08-21T15:33:49.465263"
 ---
 
 # 关键帧动画 (keyframeAnimateTo)
@@ -15,6 +15,8 @@ synced_at: "2026-07-09T17:24:43.386042"
 - 从API version 11开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
 - 本模块接口仅可在Stage模型下使用。
 - 该接口为[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)类的成员函数，需要通过UIContext实例对象调用。
+
+#### keyframeAnimateTo
 
 keyframeAnimateTo(param: KeyframeAnimateParam, keyframes: Array<KeyframeState>): void
 
@@ -39,12 +41,12 @@ keyframeAnimateTo(param: KeyframeAnimateParam, keyframes: Array<KeyframeState>):
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| delay | number | 否 | 是 | 动画的整体延时时间，单位为ms（毫秒），默认不延时播放。 默认值：0 **说明：** delay>=0为延迟播放，delay void | 否 | 是 | 动画播放完成回调。当keyframe动画所有次数播放完成后调用。在设置的开发者选项中关闭过渡动画，或UIAbility从前台切换至后台时会立即结束仍在播放中的有限循环keyframe动画，触发播放完成回调。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| expectedFrameRateRange19+ | [ExpectedFrameRateRange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-explicit-animation#expectedframeraterange11) | 否 | 是 | 设置动画的期望帧率。 **默认值：**{min:0, max:0, expected:0}，即跟随应用帧率。 **说明：** 开发者通过设置有效的期望帧率后，系统会收集设置的请求帧率，进行决策和分发，在渲染管线上进行分频，尽量能够满足开发者的期望帧率。开发者设置的期望帧率值不能代表最终实际效果，会受限于系统能力和屏幕刷新率。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 |
+| delay | number | 否 | 是 | 动画的整体延迟时间，单位为ms（毫秒），默认不延迟播放。 默认值：0 取值范围：(-∞, +∞) **说明：** delay>=0为延迟播放，delay void | 否 | 是 | 动画播放完成回调。当keyframe动画所有次数播放完成后调用。当iterations设置为0时，无动画效果，不触发该回调；当iterations设置为-1（无限播放）时，动画不会播放完成，不触发该回调。在系统设置的开发者选项中关闭过渡动画，或UIAbility从前台切换至后台时会立即结束仍在播放中的有限循环keyframe动画，触发播放完成回调。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| expectedFrameRateRange19+ | [ExpectedFrameRateRange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-explicit-animation#expectedframeraterange11) | 否 | 是 | 设置动画的期望帧率范围。 默认值：{min:0, expected:0, max:0}，即跟随应用帧率。 **说明：** 开发者通过设置有效的期望帧率后，系统会收集设置的请求帧率，进行综合评估和调度，在渲染管线上进行帧率调节，尽量满足开发者的期望帧率。开发者设置的期望帧率值不能代表最终实际效果，会受限于系统能力和屏幕刷新率。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 |
 
 #### KeyframeState对象说明
 
-设置关键帧选项。
+关键帧状态设置。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -79,7 +81,7 @@ struct KeyframeDemo {
       Circle()
         .width(100)
         .height(100)
-        .fill("#46B1E3")
+        .fill('#46B1E3')
         .margin(100)
         .scale({ x: this.myScale, y: this.myScale })
         .onClick(() => {
@@ -93,7 +95,7 @@ struct KeyframeDemo {
               iterations: 3,
               delay: 200,
               onFinish: () => {
-                console.info("keyframe animate finish");
+                console.info('keyframe animate finish');
               },
               expectedFrameRateRange: {
                 min: 10,
@@ -123,4 +125,4 @@ struct KeyframeDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664209999.gif)
+ ![](./img/zh-cn_image_0000002689300370.gif)

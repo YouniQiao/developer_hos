@@ -2,8 +2,8 @@
 title: "div"
 upstream_id: "harmonyos-references/js-service-widget-container-div"
 catalog: "harmonyos-references"
-content_hash: "052967bd78b7"
-synced_at: "2026-07-09T00:58:30.714522"
+content_hash: "c59d6f3ad156"
+synced_at: "2026-08-21T15:34:23.127266"
 ---
 
 # div
@@ -28,7 +28,7 @@ synced_at: "2026-07-09T00:58:30.714522"
 | --- | --- | --- | --- | --- |
 | flex-direction | string | row | 否 | flex容器主轴方向。可选项有： - column：垂直方向从上到下。 - row：水平方向从左到右。 |
 | flex-wrap | string | nowrap | 否 | flex容器是单行还是多行显示，该值暂不支持动态修改。可选项有： - nowrap：不换行，单行显示。 - wrap：换行，多行显示。 |
-| justify-content | string | flex-start | 否 | flex容器当前行的主轴对齐格式。可选项有： - flex-start：项目位于容器的开头。 - flex-end：项目位于容器的结尾。 - center：项目位于容器的中心。 - space-between：项目位于各行之间留有空白的容器内。 - space-around：项目位于各行之前、之间、之后都留有空白的容器内。 - space-evenly5+: 均匀排列每个元素，每个元素之间的间隔相等。 |
+| justify-content | string | flex-start | 否 | flex容器当前行的主轴对齐格式。可选项有： - flex-start：项目位于容器的开头。 - flex-end：项目位于容器的结尾。 - center：项目位于容器的中心。 - space-between：项目位于各行之间留有空白的容器内。 - space-around：项目位于各行之前、之间、之后都留有空白的容器内。 - space-evenly5+： 均匀排列每个元素，每个元素之间的间隔相等。 |
 | align-items | string | stretch | 否 | flex容器当前行的交叉轴对齐格式，可选值为： - stretch：弹性元素在交叉轴方向被拉伸到与容器相同的高度或宽度。 - flex-start：元素向交叉轴起点对齐。 - flex-end：元素向交叉轴终点对齐。 - center：元素在交叉轴居中。 |
 | align-content | string | flex-start | 否 | 交叉轴中有额外的空间时，多行内容对齐格式，可选值为： - flex-start：所有行从交叉轴起点开始填充。第一行的交叉轴起点边和容器的交叉轴起点边对齐。接下来的每一行紧跟前一行。 - flex-end：所有行从交叉轴末尾开始填充。最后一行的交叉轴终点和容器的交叉轴终点对齐。同时所有后续行与前一个对齐。 - center：所有行朝向容器的中心填充。每行互相紧挨，相对于容器居中对齐。容器的交叉轴起点边和第一行的距离相等于容器的交叉轴终点边和最后一行的距离。 - space-between：所有行在容器中平均分布。相邻两行间距相等。容器的交叉轴起点边和终点边分别与第一行和最后一行的边对齐。 - space-around：所有行在容器中平均分布，相邻两行间距相等。容器的交叉轴起点边和终点边分别与第一行和最后一行的距离是相邻两行间距的一半。 |
 | display | string | flex | 否 | 确定该元素视图框的类型，该值暂不支持动态修改。可选值为： - flex：弹性布局 - none：不渲染此元素 |
@@ -88,7 +88,7 @@ synced_at: "2026-07-09T00:58:30.714522"
   background-color: #41ba41;
 }
 ```
- **2*4卡片** ![](./img/zh-cn_image_0000002661613309.png)
+ **2*4卡片** ![](./img/zh-cn_image_0000002718860367.png)
 2. Flex Wrap样式 
 ```
 <!-- xxx.hml -->
@@ -133,4 +133,4 @@ synced_at: "2026-07-09T00:58:30.714522"
   background-color: #41ba41;
 }
 ```
- **4*4卡片** ![](./img/zh-cn_image_0000002631414020.png)
+ **4*4卡片** ![](./img/zh-cn_image_0000002689140912.png)
