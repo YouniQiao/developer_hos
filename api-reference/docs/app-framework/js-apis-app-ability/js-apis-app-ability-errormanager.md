@@ -2,8 +2,8 @@
 title: "@ohos.app.ability.errorManager (错误管理模块)"
 upstream_id: "harmonyos-references/js-apis-app-ability-errormanager"
 catalog: "harmonyos-references"
-content_hash: "5b4a3a0f4745"
-synced_at: "2026-08-18T15:31:40.565516"
+content_hash: "994ba8927666"
+synced_at: "2026-08-24T15:39:41.461021"
 ---
 
 # @ohos.app.ability.errorManager (错误管理模块)
@@ -866,7 +866,12 @@ setDefaultFreezeObserver(defaultObserver?: FreezeObserver) : FreezeObserver
 
 如果传入非法参数或在子线程调用，将抛出错误码并返回undefined，因此建议使用try-catch逻辑进行处理。
 
-![](./img/note_3.0-zh-cn.png) 该接口请勿与[on('freeze')](#errormanageronfreeze18)或[off('freeze')](#errormanagerofffreeze18)接口混用。
+![](./img/note_3.0-zh-cn.png) 该接口以下场景会返回空指针，使用返回值前必须进行判空处理，避免空指针解引用导致应用崩溃：
+
+1. 开发者注册的处理器为空时。
+2. 首次注册时，上一次注册的处理器为空。
+
+该接口请勿与[on('freeze')](#errormanageronfreeze18)或[off('freeze')](#errormanagerofffreeze18)接口混用。
 
 起始版本： 26.0.0
 
@@ -886,7 +891,7 @@ setDefaultFreezeObserver(defaultObserver?: FreezeObserver) : FreezeObserver
 
 | 类型 | 说明 |
 | --- | --- |
-| [FreezeObserver](#freezeobserver18) | 返回上一次注册的错误处理器。 |
+| [FreezeObserver](#freezeobserver18) | 返回上一次注册的处理器。 |
 
 错误码：
 
@@ -1001,7 +1006,7 @@ type GlobalObserver = (reason: GlobalError) => void
 
 #### GlobalError18+
 
-有关异常事件名字、消息、错误堆栈信息、异常线程名称和类型的对象。
+有关异常事件名字、消息、错误堆栈信息、异常线程名称和类型的对象。继承自Error。
 
 元服务API：从API version 18开始，该接口支持在元服务中使用。
 

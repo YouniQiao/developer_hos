@@ -2,8 +2,8 @@
 title: "@ohos.annotation (注解)"
 upstream_id: "harmonyos-references/js-apis-annotation"
 catalog: "harmonyos-references"
-content_hash: "a099893f6fbd"
-synced_at: "2026-07-28T16:50:58.442509"
+content_hash: "eaa98cb2bb9f"
+synced_at: "2026-08-24T15:41:51.524480"
 ---
 
 # @ohos.annotation (注解)
@@ -193,8 +193,6 @@ async function savePhotoToGallerySuppress(context: common.UIAbilityContext) {
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-起始版本： 23
 
 系统能力： SystemCapability.Base
 

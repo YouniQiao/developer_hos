@@ -2,8 +2,8 @@
 title: "ArcList"
 upstream_id: "harmonyos-references/ts-container-arclist"
 catalog: "harmonyos-references"
-content_hash: "d55372f437de"
-synced_at: "2026-08-14T15:52:33.246370"
+content_hash: "5266aa1e3113"
+synced_at: "2026-08-24T15:40:14.367977"
 ---
 
 # ArcList
@@ -35,7 +35,7 @@ import { ArcList } from '@kit.ArkUI';
 
 #### 子组件
 
-仅支持[ArcListItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-arclistitem)子组件。
+仅支持[ArcListItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-arclistitem)和自定义组件。自定义组件在ArcList下使用时，请使用ArcListItem作为自定义组件的顶层组件，请勿直接给自定义组件设置属性和事件方法，因为ArcList通过ArcListItem管理子组件的布局和事件处理，直接设置可能导致部分功能无法正常生效。
 
 ![](./img/note_3.0-zh-cn.png) ArcList的子组件索引值计算规则：
 
@@ -494,4 +494,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002709646643.png)
+ ![](./img/zh-cn_image_0000002722885627.png)

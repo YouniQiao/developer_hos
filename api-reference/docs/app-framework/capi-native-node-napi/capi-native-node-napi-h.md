@@ -2,8 +2,8 @@
 title: "native_node_napi.h"
 upstream_id: "harmonyos-references/capi-native-node-napi-h"
 catalog: "harmonyos-references"
-content_hash: "5dbe60bffba4"
-synced_at: "2026-07-28T16:49:22.812561"
+content_hash: "99641622ef5c"
+synced_at: "2026-08-24T15:40:51.311023"
 ---
 
 # native_node_napi.h
@@ -564,9 +564,7 @@ int32_t OH_ArkUI_PostFrameCallback(ArkUI_ContextHandle uiContext, void* userData
 | --- | --- |
 | [ArkUI_ContextHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-context8h) uiContext | [UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-api#uicontext)对象指针，用以绑定实例。 |
 | void* userData | 自定义事件参数，当事件触发时在回调参数中携带回来。 |
-| callback | 自定义回调函数，签名为void (*callback)(uint64_t nanoTimestamp, uint32_t frameCount, void* userData)，用于在下一帧渲染时执行。其中nanoTimestamp表示帧信号的时间戳，frameCount表示帧号，userData表示注册时传入并在回调触发时携带回来的自定义数据。 |
-| uint64_t nanoTimestamp | 帧信号的时间戳，单位：ns。 |
-| uint32_t frameCount | 帧号。 |
+| void (*callback)(uint64_t nanoTimestamp, uint32_t frameCount, void* userData) | 自定义回调函数，签名为void (*callback)(uint64_t nanoTimestamp, uint32_t frameCount, void* userData)，用于在下一帧渲染时执行。其中nanoTimestamp表示帧信号的时间戳，frameCount表示帧号，userData表示注册时传入并在回调触发时携带回来的自定义数据。 |
 
 返回：
 
@@ -591,9 +589,7 @@ int32_t OH_ArkUI_PostIdleCallback(ArkUI_ContextHandle uiContext, void* userData,
 | --- | --- |
 | [ArkUI_ContextHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-context8h) uiContext | UIContext对象指针，用以绑定实例。 |
 | void* userData | 自定义事件参数，当自定义回调函数触发时在回调参数中携带回来。 |
-| callback | 自定义回调函数，签名为void (*callback)(uint64_t nanoTimeLeft, uint32_t frameCount, void* userData)，用于在下一帧渲染结束后，剩余时间大于1ms时执行。其中nanoTimeLeft表示距离当前帧截止时间的剩余时间，frameCount表示帧号，userData表示注册时传入并在回调触发时携带回来的自定义数据。 |
-| uint64_t nanoTimeLeft | 距离当前帧截止时间的剩余时间，单位：ns。 |
-| uint32_t frameCount | 帧号。 |
+| void (*callback)(uint64_t nanoTimeLeft, uint32_t frameCount, void* userData) | 自定义回调函数，签名为void (*callback)(uint64_t nanoTimeLeft, uint32_t frameCount, void* userData)，用于在下一帧渲染结束后，剩余时间大于1ms时执行。其中nanoTimeLeft表示距离当前帧截止时间的剩余时间，frameCount表示帧号，userData表示注册时传入并在回调触发时携带回来的自定义数据。 |
 
 返回：
 

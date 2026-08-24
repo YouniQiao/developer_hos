@@ -2,8 +2,8 @@
 title: "camera.h"
 upstream_id: "harmonyos-references/capi-camera-h"
 catalog: "harmonyos-references"
-content_hash: "71c4712a7ee8"
-synced_at: "2026-07-28T16:51:42.286710"
+content_hash: "812c8db24e82"
+synced_at: "2026-08-24T15:42:25.404380"
 ---
 
 # camera.h
@@ -96,6 +96,7 @@ synced_at: "2026-07-28T16:51:42.286710"
 | [OH_Camera_OISAxes](#oh_camera_oisaxes) | OH_Camera_OISAxes | 光学防抖（OIS）轴枚举。 |
 | [OH_Camera_ExposureState](#oh_camera_exposurestate) | OH_Camera_ExposureState | 枚举相机曝光状态。 |
 | [OH_Camera_MetadataObjectEmotion](#oh_camera_metadataobjectemotion) | OH_Camera_MetadataObjectEmotion | 元数据对象情绪类型枚举。 |
+| [OH_Camera_AutomotiveCameraPosition](#oh_camera_automotivecameraposition) | OH_Camera_AutomotiveCameraPosition | Car设备摄像头位置的枚举。 |
 
 #### [h2]函数
 

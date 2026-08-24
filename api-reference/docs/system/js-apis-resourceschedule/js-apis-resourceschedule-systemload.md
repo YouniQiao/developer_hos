@@ -2,8 +2,8 @@
 title: "@ohos.resourceschedule.systemload (性能功耗热融合档位)"
 upstream_id: "harmonyos-references/js-apis-resourceschedule-systemload"
 catalog: "harmonyos-references"
-content_hash: "081ddc71c081"
-synced_at: "2026-08-18T15:33:39.143865"
+content_hash: "47314d3dc5a5"
+synced_at: "2026-08-24T15:41:51.805956"
 ---
 
 # @ohos.resourceschedule.systemload (性能功耗热融合档位)
@@ -102,9 +102,9 @@ try {
 
 #### systemLoad.getLevel
 
-getLevel(): Promise<[SystemLoadLevel](#systemloadlevel)>
+getLevel(): Promise<SystemLoadLevel>
 
-获取系统负载融合档位，使用promise异步回调。
+获取系统负载融合档位，使用Promise异步回调。
 
 系统能力: SystemCapability.ResourceSchedule.SystemLoad
 

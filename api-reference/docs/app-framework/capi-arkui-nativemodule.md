@@ -2,8 +2,8 @@
 title: "ArkUI_NativeModule"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule"
 catalog: "harmonyos-references"
-content_hash: "bef284f5f20e"
-synced_at: "2026-07-28T16:49:16.092707"
+content_hash: "7ee9c9d48e32"
+synced_at: "2026-08-24T15:40:48.331537"
 ---
 
 # ArkUI_NativeModule
@@ -56,6 +56,7 @@ synced_at: "2026-07-28T16:49:16.092707"
 | [native_node.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h) | 提供NativeNode接口的类型定义。 |
 | [native_node_napi.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-napi-h) | 提供将ArkTS侧的FrameNode转换为ArkUI_NodeHandle的方式。 |
 | [native_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h) | 提供NativeModule公共的类型定义。 |
+| [native_type_visual.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h) | 提供NativeModule视觉相关的类型定义。 |
 | [text.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-text-h) | 定义Text相关的枚举和接口。 |
 | [text_common.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-text-common-h) | 定义文本类组件通用的枚举和接口。 |
 | [text_input.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-text-input-h) | 定义TextInput相关的枚举和接口。 |
@@ -70,3 +71,4 @@ synced_at: "2026-07-28T16:49:16.092707"
 | [slider.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-slider-h) | 为NativeNode API提供Slider节点类型定义。 |
 | [styled_string.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-styled-string-h) | 提供ArkUI在Native侧的属性字符串能力。 |
 | [xcomponent.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-xcomponent-h) | XComponent组件的枚举类型定义。 |
+| [error_code.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h) | 定义ArkUI Native API的错误码枚举值。 |

@@ -2,8 +2,8 @@
 title: "图像效果"
 upstream_id: "harmonyos-references/ts-universal-attributes-image-effect"
 catalog: "harmonyos-references"
-content_hash: "bdfb8d1cfaec"
-synced_at: "2026-07-28T16:42:14.157476"
+content_hash: "026a678acc4e"
+synced_at: "2026-08-24T15:40:09.004479"
 ---
 
 # 图像效果
@@ -1341,7 +1341,7 @@ struct ImageEffectsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087797.png)
+ ![](./img/zh-cn_image_0000002723005417.png)
 
 #### [h2]示例2（设置组件线性渐变模糊效果）
 
@@ -1370,7 +1370,7 @@ struct ImageExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685927969.png)
+ ![](./img/zh-cn_image_0000002693046060.png)
 
 #### [h2]示例3（设置离屏渲染效果）
 
@@ -1422,7 +1422,7 @@ struct RenderGroupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008290.png)
+ ![](./img/zh-cn_image_0000002722885507.png)
 
 #### [h2]示例4（当前组件内容与下方画布内容混合）
 
@@ -1464,7 +1464,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848370.png)
+ ![](./img/zh-cn_image_0000002693205936.png)
 
 #### [h2]示例5（前景智能取反色）
 
@@ -1503,7 +1503,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087799.png)
+ ![](./img/zh-cn_image_0000002723005419.png)
 
 #### [h2]示例6（设置同层阴影不重叠效果）
 
@@ -1598,7 +1598,7 @@ struct UseShadowBatchingExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685927971.png)
+ ![](./img/zh-cn_image_0000002693046062.png)
 
 #### [h2]示例7（设置组件图像球面效果）
 
@@ -1630,11 +1630,11 @@ struct SphericalEffectExample {
 ```
  效果图如下：
 
-![](./img/zh-cn_image_0000002656008292.png)
+![](./img/zh-cn_image_0000002722885509.png)
 
 去掉sphericalEffect的设置，效果如下：
 
-![](./img/zh-cn_image_0000002655848372.png)
+![](./img/zh-cn_image_0000002693205938.png)
 
 #### [h2]示例8（设置组件图像渐亮效果）
 
@@ -1660,15 +1660,15 @@ struct LightUpExample {
 ```
  效果图如下：
 
-![](./img/zh-cn_image_0000002686087801.png)
+![](./img/zh-cn_image_0000002723005421.png)
 
 修改lightUpEffect参数值为0.2：
 
-![](./img/zh-cn_image_0000002685927973.png)
+![](./img/zh-cn_image_0000002693046064.png)
 
 去掉lightUpEffect的设置，效果如下：
 
-![](./img/zh-cn_image_0000002656008294.png)
+![](./img/zh-cn_image_0000002722885511.png)
 
 #### [h2]示例9（设置组件图像边缘像素扩展效果）
 
@@ -1700,11 +1700,11 @@ struct PixelStretchExample {
 ```
  效果图如下：
 
-![](./img/zh-cn_image_0000002655848374.png)
+![](./img/zh-cn_image_0000002693205940.png)
 
 去掉pixelStretchEffect的设置，原图效果如下：
 
-![](./img/zh-cn_image_0000002686087803.png)
+![](./img/zh-cn_image_0000002723005423.png)
 
 #### [h2]示例10（系统导航条智能反色）
 
@@ -1733,7 +1733,7 @@ struct Index {
 ```
  效果图如下：
 
-![](./img/zh-cn_image_0000002685927975.png)
+![](./img/zh-cn_image_0000002693046066.png)
 
 #### [h2]示例11（设置组件是否双面绘制）
 
@@ -1796,4 +1796,4 @@ struct DoubleSided {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008296.gif)
+ ![](./img/zh-cn_image_0000002722885513.gif)

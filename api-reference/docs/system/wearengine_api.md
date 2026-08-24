@@ -2,8 +2,8 @@
 title: "wearEngine（穿戴设备能力开放）"
 upstream_id: "harmonyos-references/wearengine_api"
 catalog: "harmonyos-references"
-content_hash: "5dac8958d3cb"
-synced_at: "2026-08-03T17:11:36.965611"
+content_hash: "4a1b77fcae69"
+synced_at: "2026-08-24T15:42:09.259387"
 ---
 
 # wearEngine（穿戴设备能力开放）
@@ -2239,7 +2239,7 @@ try {
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | bundleName | string | 否 | 否 | 应用名称。 |
-| fingerprint | string | 否 | 否 | [应用指纹，用于标识应用的唯一身份。](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_faq-9) |
+| fingerprint | string | 否 | 否 | 应用指纹，用于标识应用的唯一身份。 应用指纹获取请参考[如何获取应用指纹。](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_faq-9#harmonyos-50及之后版本设备的应用) |
 
 #### P2pResultCode
 
@@ -2545,7 +2545,7 @@ onAction(feedback: NotificationFeedback): void
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | type | [NotificationType](#notificationtype) | 否 | 否 | 通知的模板类型。 |
-| bundleName | string | 否 | 否 | 发送通知应用的包名。 |
+| bundleName | string | 否 | 否 | 发送通知应用的包名，取值范围：[1，28]，单位Byte。 |
 | title | string | 否 | 否 | 通知的标题，取值范围：[1，28)，单位Byte。 |
 | text | string | 否 | 否 | 通知的内容，取值范围：[1，400)，单位Byte。 |
 | buttons | [NotificationButton](#notificationbutton)[] | 否 | 是 | 通知按钮信息类，若未填写，默认为空。 |

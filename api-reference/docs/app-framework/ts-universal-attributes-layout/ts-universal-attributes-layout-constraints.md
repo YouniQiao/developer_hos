@@ -2,8 +2,8 @@
 title: "布局约束"
 upstream_id: "harmonyos-references/ts-universal-attributes-layout-constraints"
 catalog: "harmonyos-references"
-content_hash: "c4187df66069"
-synced_at: "2026-07-28T16:42:05.030583"
+content_hash: "cb1c66c2bee9"
+synced_at: "2026-08-24T15:40:07.995764"
 ---
 
 # 布局约束
@@ -27,7 +27,7 @@ aspectRatio(value: number): T
 
 适用于需要保持固定宽高比的组件，例如图片展示、视频播放器、响应式布局中保持比例等场景。
 
-设置aspectRatio属性后，组件宽高会受父组件内容区大小限制，[constraintSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#constraintsize)的优先级高于aspectRatio。当constraintSize设置的约束与aspectRatio计算结果冲突时，组件将优先遵循constraintSize的约束，此时aspectRatio可能无法生效。
+设置aspectRatio属性后，组件宽高会受父组件内容区大小限制，[constraintSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#constraintsize)的maxWidth/maxHeight优先级高于aspectRatio。当constraintSize设置的maxWidth/maxHeight约束与aspectRatio计算结果冲突时，组件将优先遵循constraintSize的maxWidth/maxHeight约束，此时aspectRatio可能无法生效。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -39,7 +39,7 @@ aspectRatio(value: number): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 指定当前组件的宽高比，取值范围(0, +∞)。 API version 9及以前，默认值：1.0。 API version 10及以后，默认值：无。 **说明：** 当需要保持组件的宽高比例时使用（如显示图片、视频等需要保持比例的内容）。 该属性设置为非法值（小于等于0）时不生效。API version 10及以后，未设置值时该属性不生效。 设置该属性后，组件宽高会受父组件内容区大小限制，constraintSize的优先级高于aspectRatio。 例如：Row仅设置宽度且无子组件时，若aspectRatio未设置或为负值，则高度为0。 |
+| value | number | 是 | 指定当前组件的宽高比，取值范围(0, +∞)。 API version 9及以前，默认值：1.0。 API version 10及以后，默认值：无。 **说明：** 当需要保持组件的宽高比例时使用（如显示图片、视频等需要保持比例的内容）。 该属性设置为非法值（小于等于0）时不生效。API version 10及以后，未设置值时该属性不生效。 设置该属性后，组件宽高会受父组件内容区大小限制，constraintSize的maxWidth/maxHeight优先级高于aspectRatio。 例如：Row仅设置宽度且无子组件时，若aspectRatio未设置或为负值，则高度为0。 |
 
 返回值：
 
@@ -133,11 +133,11 @@ struct AspectRatioExample {
 ```
  图1 竖屏显示
 
-![](./img/zh-cn_image_0000002685927953.png)
+![](./img/zh-cn_image_0000002693046044.png)
 
 图2 横屏显示
 
-![](./img/zh-cn_image_0000002656008274.png)
+![](./img/zh-cn_image_0000002722885491.png)
 
 #### [h2]示例2（设置组件显示优先级）
 
@@ -200,4 +200,4 @@ struct DisplayPriorityExample {
 ```
  横屏显示
 
-![](./img/zh-cn_image_0000002655848354.gif)
+![](./img/zh-cn_image_0000002693205920.gif)

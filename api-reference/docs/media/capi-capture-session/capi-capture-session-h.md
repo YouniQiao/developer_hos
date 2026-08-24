@@ -2,8 +2,8 @@
 title: "capture_session.h"
 upstream_id: "harmonyos-references/capi-capture-session-h"
 catalog: "harmonyos-references"
-content_hash: "bbca424c97a6"
-synced_at: "2026-08-03T17:11:50.624384"
+content_hash: "7c639d3d869c"
+synced_at: "2026-08-24T15:42:25.895148"
 ---
 
 # capture_session.h
@@ -2543,7 +2543,7 @@ Camera_ErrorCode OH_CaptureSession_SetColorTint(Camera_CaptureSession* session, 
 
 | 参数项 | 描述 |
 | --- | --- |
-| [const Camera_CaptureSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-camera-capturesession)* session | Camera_CaptureSession实例。 |
+| [Camera_CaptureSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-camera-capturesession)* session | Camera_CaptureSession实例。 |
 | int32_t colorTint | 色调调节值。 |
 
 返回：
@@ -3142,7 +3142,7 @@ typedef void (*OH_CaptureSession_OnExposureStateChange)(void* context, OH_Camera
 
 | 参数项 | 描述 |
 | --- | --- |
-| (void* context | 指向自定义上下文的指针。 |
+| void* context | 指向自定义上下文的指针。 |
 | [OH_Camera_ExposureState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-camera-h#oh_camera_exposurestate) exposureState | 当前曝光状态。 |
 
 #### [h2]OH_CaptureSession_RegisterExposureStateChangeCallback()
@@ -3308,7 +3308,7 @@ Camera_ErrorCode OH_CaptureSession_UnlockFocusTracking(Camera_CaptureSession* se
 
 | 参数项 | 描述 |
 | --- | --- |
-| [const Camera_CaptureSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-camera-capturesession)* session | 指向Camera_CaptureSession实例的指针。 |
+| [Camera_CaptureSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-camera-capturesession)* session | 指向Camera_CaptureSession实例的指针。 |
 
 返回：
 

@@ -2,8 +2,8 @@
 title: "Class (WebCookie)"
 upstream_id: "harmonyos-references/arkts-basic-components-web-webcookie"
 catalog: "harmonyos-references"
-content_hash: "f5b9fcadf806"
-synced_at: "2026-07-09T00:58:54.138851"
+content_hash: "33b50fcc89a1"
+synced_at: "2026-08-24T15:41:09.119433"
 ---
 
 # Class (WebCookie)
@@ -12,8 +12,8 @@ synced_at: "2026-07-09T00:58:54.138851"
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 该组件首批接口从API version 8开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
-- 本Class首批接口从API version 8开始支持。
+- 该组件从API version 8开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+- 本Class从API version 8开始支持。
 - 从API version 8开始支持，从API version 23开始不再维护，建议使用[WebCookieManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webcookiemanager)代替。
 - 示例效果请以真机运行为准。
 
@@ -33,7 +33,7 @@ setCookie()
 
 设置cookie，该方法为同步方法。设置成功返回true，否则返回false。
 
-![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[setCookie9+](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webcookiemanager#setcookiedeprecated)代替。
+![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[setCookie](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webcookiemanager#setcookiedeprecated)代替。
 
 系统能力： SystemCapability.Web.Webview.Core
 

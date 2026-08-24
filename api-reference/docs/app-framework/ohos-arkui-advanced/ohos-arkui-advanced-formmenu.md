@@ -2,8 +2,8 @@
 title: "FormMenu"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-formmenu"
 catalog: "harmonyos-references"
-content_hash: "62983596b8dd"
-synced_at: "2026-07-09T00:58:15.791805"
+content_hash: "75fbcc509a17"
+synced_at: "2026-08-24T15:40:32.847439"
 ---
 
 # FormMenu
@@ -133,11 +133,11 @@ struct Index {
             }
           },
           style: {
-            // options: {
-            //   startIcon: $r("app.media.icon"), // 菜单图标,可以自己提供。系统默认采用"sys.media.ic_public_add"
-            //   content: "添加到桌面",  // 菜单内容，可以自己提供。默认使用"sys.string.ohos_add_form_to_desktop"
-            //   endIcon: $r("app.media.icon") // 菜单图标，可以自己提供
-            // }
+            options: {
+              startIcon: $r("app.media.icon"), // 菜单图标，可以自己提供。系统默认采用"sys.media.ic_public_add"
+              content: "添加到桌面",  // 菜单内容，可以自己提供。默认使用"sys.string.ohos_add_form_to_desktop"
+              endIcon: $r("app.media.icon") // 菜单图标，可以自己提供
+            }
           }
         }
       )
@@ -218,10 +218,10 @@ struct WidgetCard {
 ```
  高级自定义控件界面
 
-![](./img/zh-cn_image_0000002661612997.jpeg)
+![](./img/zh-cn_image_0000002723006069.jpeg)
 
 调用高级自定义控件桌面加桌结果
 
-左侧是formbindingdata为空加桌结果，右侧是formbindingdata为{ data: 'share' }的加桌结果。
+左侧是formBindingData为空加桌结果，右侧是formBindingData为{ data: 'share' }的加桌结果。
 
-![](./img/zh-cn_image_0000002631413708.jpeg)
+![](./img/zh-cn_image_0000002693046708.jpeg)

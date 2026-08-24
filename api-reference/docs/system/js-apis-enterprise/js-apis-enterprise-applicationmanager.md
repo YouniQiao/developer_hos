@@ -2,8 +2,8 @@
 title: "@ohos.enterprise.applicationManager（应用管理）"
 upstream_id: "harmonyos-references/js-apis-enterprise-applicationmanager"
 catalog: "harmonyos-references"
-content_hash: "b6c0e34a703e"
-synced_at: "2026-07-28T16:51:10.487374"
+content_hash: "9399ac5a0f35"
+synced_at: "2026-08-24T15:42:01.464893"
 ---
 
 # @ohos.enterprise.applicationManager（应用管理）
@@ -842,6 +842,14 @@ addKeepAliveApps(admin: Want, bundleNames: Array<string>, accountId: number): vo
 
 如果需要在Phone/Tablet设备使用类似功能，可以调用[addUserNonStopApps](#applicationmanageraddusernonstopapps22)或者[addFreezeExemptedApps](#applicationmanageraddfreezeexemptedapps22)接口，具体功能请参考相关文档。
 
+![](./img/note_3.0-zh-cn.png)
+
+- 应用如果需要支持保活，其[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中的mainElement必须是UIAbility。只有当mainElement启动后，系统才会执行应用保活操作。
+- 在PC/2in1设备上，被保活的应用需要在启动后5秒内添加至状态栏。否则，系统将取消该应用的保活设置，并杀死保活重启的进程。
+- 当被保活的应用进程退出时，系统将尝试重启该进程，连续3次重启失败后将不再继续重启。
+- 被保活的应用卸载后，会将该应用从保活名单中移除。
+- 若应用添加到保活名单时未启动，后续启动时保活失败，将从保活名单中移除。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_APPLICATION
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
@@ -907,6 +915,14 @@ addKeepAliveApps(admin: Want, bundleNames: Array<string>, accountId: number, dis
 如果通过[addDisallowedRunningBundlesSync](#applicationmanageradddisallowedrunningbundlessync)接口将应用添加至应用禁止运行名单，就不能将应用添加至保活应用名单，否则会报9200010冲突错误码。
 
 如果需要在Phone/Tablet设备使用类似功能，可以调用[addUserNonStopApps](#applicationmanageraddusernonstopapps22)或者[addFreezeExemptedApps](#applicationmanageraddfreezeexemptedapps22)接口，具体功能请参考相关文档。
+
+![](./img/note_3.0-zh-cn.png)
+
+- 应用如果需要支持保活，其[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中的mainElement必须是UIAbility。只有当mainElement启动后，系统才会执行应用保活操作。
+- 在PC/2in1设备上，被保活的应用需要在启动后5秒内添加至状态栏。否则，系统将取消该应用的保活设置，并杀死保活重启的进程。
+- 当被保活的应用进程退出时，系统将尝试重启该进程，连续3次重启失败后将不再继续重启。
+- 被保活的应用卸载后，会将该应用从保活名单中移除。
+- 若应用添加到保活名单时未启动，后续启动时保活失败，将从保活名单中移除。
 
 需要权限： ohos.permission.ENTERPRISE_MANAGE_APPLICATION
 

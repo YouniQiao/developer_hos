@@ -2,8 +2,8 @@
 title: "SymbolGlyph"
 upstream_id: "harmonyos-references/ts-basic-components-symbolglyph"
 catalog: "harmonyos-references"
-content_hash: "4361a88342ad"
-synced_at: "2026-07-28T16:45:11.969003"
+content_hash: "72549c7be50e"
+synced_at: "2026-08-24T15:40:20.880628"
 ---
 
 # SymbolGlyph
@@ -170,7 +170,7 @@ renderingStrategy(value: SymbolRenderingStrategy)
 
 不同渲染策略效果可参考以下示意图。
 
-![](./img/zh-cn_image_0000002655848712.png)
+![](./img/zh-cn_image_0000002723005763.png)
 
 #### [h2]effectStrategy
 
@@ -292,7 +292,7 @@ shaderStyle(shader: Array<ShaderStyle | undefined> | ShaderStyle)
 
 symbolShadow(shadow: Optional<ShadowOptions>)
 
-设置SymbolGlyph组件的阴影效果。未通过该接口设置时，默认阴影效果为{radius：0,color：Color.Black,offsetX：0,offsetY：0}。
+设置SymbolGlyph组件的阴影效果。未通过该接口设置时，默认阴影效果为{radius: 0,color: Color.Black,offsetX: 0,offsetY: 0}。
 
 卡片能力： 从API version 20开始，该接口支持在ArkTS卡片中使用。
 
@@ -733,7 +733,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848714.gif)
+ ![](./img/zh-cn_image_0000002723005765.gif)
 
 #### [h2]示例2（设置动效和阴影）
 
@@ -836,7 +836,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088145.gif)
+ ![](./img/zh-cn_image_0000002693046406.gif)
 
 #### [h2]示例3（设置颜色渐变）
 
@@ -975,7 +975,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928315.jpeg)
+ ![](./img/zh-cn_image_0000002722885851.jpeg)
 
 #### [h2]示例4（设置SymbolGlyph颜色）
 
@@ -1025,7 +1025,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008636.jpeg)
+ ![](./img/zh-cn_image_0000002693206282.jpeg)
 
 #### [h2]示例5（设置字体粗细）
 
@@ -1088,4 +1088,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848716.png)
+ ![](./img/zh-cn_image_0000002723005767.png)

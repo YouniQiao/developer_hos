@@ -2,8 +2,8 @@
 title: "@hms.utilityApplication.screenTimeGuard.guardService（屏幕时间守护服务）"
 upstream_id: "harmonyos-references/screentimeguard-guardservice"
 catalog: "harmonyos-references"
-content_hash: "d410f9a6f3f8"
-synced_at: "2026-07-09T01:01:39.216099"
+content_hash: "423b6a233c67"
+synced_at: "2026-08-24T15:43:23.848858"
 ---
 
 # @hms.utilityApplication.screenTimeGuard.guardService（屏幕时间守护服务）
@@ -25,29 +25,30 @@ synced_at: "2026-07-09T01:01:39.216099"
 开发者可以使用[requestUserAuth](#requestuserauth)请求用户授予权限，并使用[getUserAuthStatus](#getuserauthstatus)查询当前的授权状态。若不再需要权限，管控应用可主动调用[revokeUserAuth](#revokeuserauth)以取消授权。
 
 ```
+// 以下为调用逻辑的伪代码
 guardService.requestUserAuth(this.getUIContext().getHostContext() as common.UIAbilityContext); // 请求用户授权
 guardService.getUserAuthStatus(); // 查询授权状态
 ... // 若授权成功，可以调用Screen Time Guard Kit相关接口
 guardService.revokeUserAuth(); // 取消授权
-... // 取消授权后，无法使用Screen Time Guard Kit相关接口
+... // 取消授权后，无法调用Screen Time Guard Kit相关接口
 ```
 
 #### [h2]应用访问管理
 
 应用访问管理能力指限制用户访问指定应用的相关功能，用户将无法打开被限制访问的应用。当前支持通过策略和直接两种方式来实现访问限制:
 
-- 策略方式 策略方式通过策略来限制对应用的访问，使用策略来表示在何时对哪些应用的访问进行限制。守护策略GuardStrategy是相关接口的核心参数，代表了一个具体策略对象，由策略名称、时间策略、应用信息和限制类型组成： [TimeStrategy](#timestrategy)：时间策略，代表了应用可用时长的不同形式，由时间策略类型和不同类型对应的时间参数组成，目前支持三种时间策略类型，以支持不同的管控场景：起止时间策略：通过设定开始时间和结束时间，可设定多个应用在该时间段内被限制访问，适用于固定时间段控制的场景。
+- 策略方式 策略方式通过策略来限制对应用的访问，使用策略来表示在何时对哪些应用的访问进行限制。守护策略[GuardStrategy](#guardstrategy)是相关接口的核心参数，代表了一个具体策略对象，由策略名称、时间策略、应用信息和限制类型组成： [TimeStrategy](#timestrategy)：时间策略，代表了应用可用时长的不同形式，由时间策略类型和不同类型对应的时间参数组成，目前支持三种时间策略类型，以支持不同的管控场景：起止时间策略：通过设定开始时间和结束时间，可设定多个应用在该时间段内被限制访问，适用于固定时间段控制的场景。
 - 总时长策略：通过设定一个时间长度，可限定多个应用在该时间长度内被限制访问，适用于使用时长限制的场景。
 - 共享时长策略：通过设定一个时间额度，可限定多个应用共同消耗该时间额度，若时间额度消耗完毕，则以上应用被限制访问，适用于多个应用共享时间额度的场景。
 
-[AppInfo](#appinfo)：应用信息，由一组应用对应的标识符（token）组成。token用于在接口调用中作为被管控应用的唯一标识符，以区分不同的被管控应用。token中不包含应用自身信息如包名、应用名等，保障用户数据隐私安全。具体token值可以使用应用选择模块中的[startAppPicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-app-picker#startapppicker)接口获取。[RestrictionType](#restrictiontype): 限制类型，用于选择被管控应用的范围，开发者可以指定策略生效对象是AppInfo对应的应用还是除AppInfo以外的应用。 要实现策略管控，开发者需要实例化一个守护策略对象，以下代码片段说明如何配置管控策略以实现时长管控功能。
+[AppInfo](#appinfo)：应用信息，由一组应用对应的标识符（token）组成。token用于在接口调用中作为被管控应用的唯一标识符，以区分不同的被管控应用。token中不包含应用自身信息如包名、应用名等，保障用户数据隐私安全。具体token值可以使用应用选择模块中的[startAppPicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-app-picker#startapppicker)接口获取。[RestrictionType](#restrictiontype): 限制类型，用于选择被管控应用的范围，开发者可以指定策略生效对象是AppInfo对应的应用还是除AppInfo以外的应用。 要实现策略管控，开发者需要实例化一个守护策略对象，以下代码片段说明如何配置守护策略以实现时长管控功能。
 
 ```
-guardService.addGuardStrategy(guardStrategy); // 添加管控策略，该策略可以被启动
-guardService.startGuardStrategy(guardStrategy.name); // 启动管控策略
-...
-guardService.stopGuardStrategy(guardStrategy.name);  // 停止管控策略
-guardService.removeGuardStrategy(guardStrategy.name); // 删除策略，该策略已无法再被启动
+// 以下为调用逻辑的伪代码
+guardService.addGuardStrategy(guardStrategy); // 添加守护策略，该策略可以被启动
+guardService.startGuardStrategy(guardStrategy.name); // 启动守护策略
+guardService.stopGuardStrategy(guardStrategy.name);  // 停止守护策略
+guardService.removeGuardStrategy(guardStrategy.name); // 删除守护策略，该策略已无法再被启动
 ```
  直接方式
 
@@ -407,7 +408,7 @@ function testAddGuardStrategy() {
       name: 'TestStrategy',
       timeStrategy: time,
       appInfo: info,
-      appRestrictionType: guardService.RestrictionType.BLOCKLIST_TYPE // 使用禁止清单类型，表示限制除指定应用外的所有应用访问
+      appRestrictionType: guardService.RestrictionType.BLOCKLIST_TYPE // 使用禁止清单类型，表示限制appInfo内的应用访问
    };
    guardService.addGuardStrategy(strategy)
       .then(() => {
@@ -542,7 +543,7 @@ function testUpdateGuardService() {
       name: 'TestStrategyChanged',
       timeStrategy: time,
       appInfo: info,
-      appRestrictionType: guardService.RestrictionType.BLOCKLIST_TYPE // 使用禁止清单类型，表示限制除指定应用外的所有应用访问
+      appRestrictionType: guardService.RestrictionType.BLOCKLIST_TYPE // 使用禁止清单类型，表示限制appInfo内的应用访问
    };
    // TestStrategy策略需提前通过addGuardStrategy接口添加
    guardService.updateGuardStrategy('TestStrategy', strategy)
@@ -858,7 +859,7 @@ import { guardService } from '@kit.ScreenTimeGuardKit';
 function testSetAppsRestriction() {
    let selectedTokens: string[] = []; // 可以通过调用startAppPicker接口获取相应的应用token并填充，本次初始化为空数组，表示未指定任何应用
    let appInfo: guardService.AppInfo = { appTokens: selectedTokens };
-   let restrictionType: guardService.RestrictionType = guardService.RestrictionType.BLOCKLIST_TYPE; // 使用禁止清单类型，表示限制除指定应用外的所有应用访问
+   let restrictionType: guardService.RestrictionType = guardService.RestrictionType.BLOCKLIST_TYPE; // 使用禁止清单类型，表示限制appInfo内的应用访问
    guardService.setAppsRestriction(appInfo, restrictionType)
       .then(() => {
          console.info('setAppsRestriction invoke success');
@@ -913,7 +914,7 @@ import { guardService } from '@kit.ScreenTimeGuardKit';
 function testReleaseAppsRestriction() {
    let selectedTokens: string[] = []; // 可以通过调用startAppPicker接口获取相应的应用token并填充，本次初始化为空数组，表示未指定任何应用
    let appInfo: guardService.AppInfo = { appTokens: selectedTokens };
-   let restrictionType: guardService.RestrictionType = guardService.RestrictionType.BLOCKLIST_TYPE; // 使用禁止清单类型，表示解除除指定应用外的所有应用访问限制
+   let restrictionType: guardService.RestrictionType = guardService.RestrictionType.BLOCKLIST_TYPE; // 使用禁止清单类型，表示解除appInfo内的应用访问限制
    guardService.releaseAppsRestriction(appInfo, restrictionType)
       .then(() => {
          console.info('releaseAppsRestriction invoke success');

@@ -2,8 +2,8 @@
 title: "获取二维码信息"
 upstream_id: "harmonyos-references/account-api-get-authorize-qrcode-info"
 catalog: "harmonyos-references"
-content_hash: "9ba19c2c5996"
-synced_at: "2026-07-28T16:52:30.671181"
+content_hash: "2082744c3dbd"
+synced_at: "2026-08-24T15:43:02.355315"
 ---
 
 # 获取二维码信息
@@ -94,7 +94,7 @@ Content-Type: application/json;charset=utf-8
 #### [h2]请求失败时
 
 ```
-HTTP/1.1 400 OK
+HTTP/1.1 400 Bad Request
 Content-Type: application/json;charset=utf-8
 
 {

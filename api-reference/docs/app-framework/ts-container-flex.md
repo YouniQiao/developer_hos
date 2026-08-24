@@ -2,8 +2,8 @@
 title: "Flex"
 upstream_id: "harmonyos-references/ts-container-flex"
 catalog: "harmonyos-references"
-content_hash: "0c7d8af487ff"
-synced_at: "2026-07-28T16:43:12.239208"
+content_hash: "246c29b6cf68"
+synced_at: "2026-08-24T15:40:13.157975"
 ---
 
 # Flex
@@ -55,7 +55,7 @@ Flex(value?: FlexOptions)
 | justifyContent | [FlexAlign](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#flexalign) | 否 | 是 | 所有子组件在Flex容器主轴上的对齐格式。设置后，子组件将按照指定的对齐方式在主轴方向上分布和排列。 默认值：FlexAlign.Start 异常值按默认值处理。 取值包括： - Start：首端对齐。 - Center：居中对齐。 - End：尾端对齐。 - SpaceBetween：两端对齐，子组件之间间距相等。 - SpaceAround：子组件两侧间距相等。 - SpaceEvenly：子组件之间及两端间距完全相等。 **说明：** 当justifyContent设置为SpaceBetween、SpaceAround、SpaceEvenly时，space参数不生效。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | alignItems | [ItemAlign](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#itemalign) | 否 | 是 | 所有子组件在Flex容器交叉轴上的对齐格式。设置后，子组件将按照指定的对齐方式在交叉轴方向上定位。 默认值：ItemAlign.Start 异常值按默认值处理。 取值包括： - Auto：使用父容器的对齐方式。 - Start：首部对齐。 - Center：居中对齐。 - End：尾部对齐。 - Stretch：拉伸填充。 - Baseline：基线对齐。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | alignContent | [FlexAlign](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#flexalign) | 否 | 是 | 当交叉轴存在额外空间时，多行内容之间的对齐方式。仅在wrap为Wrap或WrapReverse下生效。 默认值：FlexAlign.Start 异常值按默认值处理。 取值包括： - Start：首端对齐。 - Center：居中对齐。 - End：尾端对齐。 - SpaceBetween：两端对齐，行与行之间间距相等。 - SpaceAround：每行两侧间距相等。 - SpaceEvenly：行与行之间及两端间距完全相等。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| space12+ | [FlexSpaceOptions12+](#flexspaceoptions12) | 否 | 是 | 设置Flex容器子组件在主轴和交叉轴上的间距，包含main和cross两个属性。当需要调整子组件之间的间距时传入此参数，不传入时子组件之间无间距。 默认值：{main: LengthMetrics.px(0), cross: LengthMetrics.px(0)} 非法值：按默认值处理。 当space.main或space.cross的值为负数，或者justifyContent设置为FlexAlign.SpaceBetween、FlexAlign.SpaceAround、FlexAlign.SpaceEvenly时，space参数不生效。其中main属性在单行或多行布局时均生效，cross属性仅在wrap为Wrap或WrapReverse（多行布局）时生效。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| space12+ | [FlexSpaceOptions12+](#flexspaceoptions12) | 否 | 是 | 设置Flex容器子组件在主轴和交叉轴上的间距，包含main和cross两个属性。当需要调整子组件之间的间距时传入此参数，不传入时子组件之间无间距。 默认值：{main: LengthMetrics.px(0), cross: LengthMetrics.px(0)} 非法值：按默认值处理。 当space.main或space.cross的值为负数，或者justifyContent设置为FlexAlign.SpaceBetween、FlexAlign.SpaceAround、FlexAlign.SpaceEvenly时，space参数不生效。其中main属性在单行或多行布局时均生效，cross属性仅在wrap为Wrap或WrapReverse（多行布局）时生效。 space.main和space.cross均不支持设置百分比。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### FlexSpaceOptions12+
 
@@ -69,8 +69,8 @@ Flex(value?: FlexOptions)
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| main | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | Flex容器主轴上相邻子组件之间的间距。设置后，主轴方向相邻子组件之间将按指定间距进行分隔，在单行或多行布局时均生效。当space.main为负数，或者justifyContent设置为FlexAlign.SpaceBetween、FlexAlign.SpaceAround、FlexAlign.SpaceEvenly时，该参数不生效。 默认值：LengthMetrics.px(0) |
-| cross | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | Flex容器交叉轴上相邻行之间的间距。设置后，交叉轴方向相邻行之间将按指定间距进行分隔，仅在多行布局（wrap为Wrap或WrapReverse）时生效。当space.cross为负数，或者justifyContent设置为FlexAlign.SpaceBetween、FlexAlign.SpaceAround、FlexAlign.SpaceEvenly时，该参数不生效。 默认值：LengthMetrics.px(0) |
+| main | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | Flex容器主轴上相邻子组件之间的间距。设置后，主轴方向相邻子组件之间将按指定间距进行分隔，在单行或多行布局时均生效。当space.main为负数或设置百分比，或者justifyContent设置为FlexAlign.SpaceBetween、FlexAlign.SpaceAround、FlexAlign.SpaceEvenly时，该参数不生效。 默认值：LengthMetrics.px(0) |
+| cross | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | Flex容器交叉轴上相邻行之间的间距。设置后，交叉轴方向相邻行之间将按指定间距进行分隔，仅在多行布局（wrap为Wrap或WrapReverse）时生效。当space.cross为负数或设置百分比，或者justifyContent设置为FlexAlign.SpaceBetween、FlexAlign.SpaceAround、FlexAlign.SpaceEvenly时，该参数不生效。 默认值：LengthMetrics.px(0) |
 
 #### 属性
 
@@ -146,7 +146,7 @@ struct FlexExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928057.png)
+ ![](./img/zh-cn_image_0000002693046148.png)
 
 #### [h2]示例2（子组件单/多行排列）
 
@@ -195,7 +195,7 @@ struct FlexExample2 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008378.png)
+ ![](./img/zh-cn_image_0000002722885595.png)
 
 #### [h2]示例3（子组件在主轴上的对齐格式）
 
@@ -247,7 +247,7 @@ struct FlexExample3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848458.png)
+ ![](./img/zh-cn_image_0000002693206024.png)
 
 #### [h2]示例4（子组件在交叉轴上的对齐方式）
 
@@ -299,7 +299,7 @@ struct FlexExample4 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087887.png)
+ ![](./img/zh-cn_image_0000002723005507.png)
 
 #### [h2]示例5（多行内容的对齐方式）
 
@@ -363,7 +363,7 @@ struct FlexExample5 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928059.png)
+ ![](./img/zh-cn_image_0000002693046150.png)
 
 #### [h2]示例6（子组件单/多行排列时的主/交叉轴间距）
 
@@ -413,7 +413,7 @@ struct FlexExample6 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008380.png)
+ ![](./img/zh-cn_image_0000002722885597.png)
 
 #### [h2]示例7（宽度自适应的Flex容器）
 
@@ -468,4 +468,4 @@ struct FlexExample7 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848460.png)
+ ![](./img/zh-cn_image_0000002693206026.png)

@@ -2,8 +2,8 @@
 title: "camera_manager.h"
 upstream_id: "harmonyos-references/capi-camera-manager-h"
 catalog: "harmonyos-references"
-content_hash: "f1ba6c63f62f"
-synced_at: "2026-07-28T16:51:43.059796"
+content_hash: "9faefe36ff57"
+synced_at: "2026-08-24T15:42:25.742094"
 ---
 
 # camera_manager.h
@@ -944,7 +944,7 @@ Camera_ErrorCode OH_CameraManager_SetTorchModeOnWithLevel(Camera_Manager* camera
 
 | 参数项 | 描述 |
 | --- | --- |
-| [const Camera_Manager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-camera-manager)* cameraManager | 相机管理器实例。 |
+| [Camera_Manager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-camera-manager)* cameraManager | 相机管理器实例。 |
 | double torchLevel | 目标亮度水平。取值范围为[0.0, 1.0]。 |
 
 返回：

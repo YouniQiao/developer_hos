@@ -2,8 +2,8 @@
 title: "@ohos.measure (文本计算)"
 upstream_id: "harmonyos-references/js-apis-measure"
 catalog: "harmonyos-references"
-content_hash: "247ae765d0cb"
-synced_at: "2026-07-09T00:57:30.987404"
+content_hash: "989634f35f2b"
+synced_at: "2026-08-24T15:40:03.470122"
 ---
 
 # @ohos.measure (文本计算)
@@ -107,7 +107,7 @@ static measureTextSize(options: MeasureOptions): SizeOptions
 
 | 类型 | 说明 |
 | --- | --- |
-| [SizeOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#sizeoptions) | 返回文本所占布局宽度和高度。 **说明:** 文本宽度以及高度返回值单位均为px。 |
+| [SizeOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#sizeoptions) | 返回文本所占布局宽度和高度。 **说明：** 文本宽度以及高度返回值单位均为px。 |
 
 ![](./img/note_3.0-zh-cn.png) 直接使用MeasureText可能导致[UI上下文不明确](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-global-interface#ui上下文不明确)的问题，推荐通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getMeasureUtils](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getmeasureutils12)方法获取当前UI上下文关联的[MeasureUtils](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-measureutils)实例。
 

@@ -2,8 +2,8 @@
 title: "OH_Camera"
 upstream_id: "harmonyos-references/capi-oh-camera"
 catalog: "harmonyos-references"
-content_hash: "9ddaf1c328ba"
-synced_at: "2026-07-09T01:00:24.182918"
+content_hash: "862b8884ad5f"
+synced_at: "2026-08-24T15:42:25.083308"
 ---
 
 # OH_Camera
@@ -47,3 +47,4 @@ synced_at: "2026-07-09T01:00:24.182918"
 | [photo_output.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-photo-output-h) | 声明拍照输出概念。 |
 | [preview_output.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-preview-output-h) | 声明预览输出概念。 |
 | [video_output.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-video-output-h) | 声明录像输出概念。 |
+| [metadata_object_ext.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-metadata-object-ext-h) | 声明元数据对象扩展概念。 **起始版本：** 26.0.0 |
