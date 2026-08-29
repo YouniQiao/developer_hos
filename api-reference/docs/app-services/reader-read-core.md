@@ -2,8 +2,8 @@
 title: "readerCore（阅读核心能力）"
 upstream_id: "harmonyos-references/reader-read-core"
 catalog: "harmonyos-references"
-content_hash: "1f88c5d6eac3"
-synced_at: "2026-07-09T01:01:38.654934"
+content_hash: "a9fe40fa6f01"
+synced_at: "2026-08-29T18:18:34.216493"
 ---
 
 # readerCore（阅读核心能力）
@@ -70,10 +70,10 @@ constructor(nodeType: string, nodeDataId: string)
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| PAGE_WAITING | 1 | 等待加载。 |
-| PAGE_LOADING | 2 | 加载中。 |
-| PAGE_ON_SHOW | 3 | 加载成功。 |
-| OPEN_BOOK_FAIL | 4 | 加载失败。 |
+| PAGE_WAITING | 1 | 初始化成功，正在等待排版引擎通知。 |
+| PAGE_LOADING | 2 | 初始化成功，等待排版结果。 |
+| PAGE_ON_SHOW | 3 | 排版成功并显示阅读页面。 |
+| OPEN_BOOK_FAIL | 4 | 排版失败，未成功加载页面。 |
 
 #### PageDataInfo
 
@@ -210,7 +210,7 @@ struct Reader {
     this.init();
   }
 
-  private async init(){
+  private async init() {
     let context = this.getUIContext().getHostContext() as common.UIAbilityContext;
     await this.readerComponentController.init(context);
     hilog.info(0x0000, 'testTag', `init succeeded`);
@@ -277,7 +277,7 @@ struct Reader {
     this.registerBookParser();
   }
 
-  private async registerBookParser(){
+  private async registerBookParser() {
     // 通过提前导入到应用沙箱目录中的书籍文件，初始化书籍解析器
     let context = this.getUIContext().getHostContext() as common.UIAbilityContext;
     let filePath: string = `${context.filesDir}/abc.epub`;
@@ -362,7 +362,7 @@ struct Reader {
       scaledDensity: display.getDefaultDisplaySync().scaledDensity > 0 ? display.getDefaultDisplaySync().scaledDensity :
         1,
       viewPortWidth: 1260, // 视口宽度，需要根据设备实际情况获取，否则会导致阅读界面异常
-      viewPortHeight: 2720, // 视口高度，需要根据设备实际情况获取，否则会导致阅读界面异常
+      viewPortHeight: 2720 // 视口高度，需要根据设备实际情况获取，否则会导致阅读界面异常
     };
 
     let context = this.getUIContext().getHostContext() as common.UIAbilityContext;
@@ -454,7 +454,7 @@ struct Reader {
     await this.readerComponentController.init(context);
     this.readerComponentController.registerBookParser(bookParserHandler);
     // 调用startPlay接口初始化书籍内容显示
-    this.readerComponentController.startPlay(spineIndex || 0, domPos);
+    await this.readerComponentController.startPlay(spineIndex || 0, domPos);
     hilog.info(0x0000, 'testTag', `startPlay succeeded`);
   }
 
@@ -517,7 +517,7 @@ struct Reader {
     this.flipPage();
   }
 
-  private async flipPage(){
+  private async flipPage() {
     let context = this.getUIContext().getHostContext() as common.UIAbilityContext;
     await this.readerComponentController.init(context);
     // 翻下一页
@@ -569,7 +569,7 @@ struct Reader {
     this.releaseBook();
   }
 
-  private async releaseBook(){
+  private async releaseBook() {
     let context = this.getUIContext().getHostContext() as common.UIAbilityContext;
     await this.readerComponentController.init(context);
     // 释放加载书籍时的资源
@@ -628,7 +628,7 @@ struct Reader {
     this.registerListener();
   }
 
-  private async registerListener(){
+  private async registerListener() {
     let context = this.getUIContext().getHostContext() as common.UIAbilityContext;
     await this.readerComponentController.init(context)
     // 此处只演示方法调用，实际触发回调，需要配合startPlay接口使用
@@ -752,14 +752,14 @@ struct Reader {
     this.registerListener();
   }
 
-  private async registerListener(){
+  private async registerListener() {
     let context = this.getUIContext().getHostContext() as common.UIAbilityContext;
     await this.readerComponentController.init(context);
     // 此处只演示方法调用，实际触发回调，需要配合startPlay接口使用
     this.readerComponentController.on('resourceRequest', this.resourceRequest);
   }
 
-  private resourceRequest: bookParser.CallbackRes<string,ArrayBuffer> = (fileName: string): ArrayBuffer => {
+  private resourceRequest: bookParser.CallbackRes<string, ArrayBuffer> = (fileName: string): ArrayBuffer => {
     if (this.isFont(fileName)) {
       let res = $rawfile(this.selectFontPath);
       let context = this.getUIContext().getHostContext();
@@ -774,7 +774,7 @@ struct Reader {
   }
 
   private isFont(filePath: string): boolean {
-    let options = [".ttf", ".woff2", ".otf"];
+    let options = ['.ttf', '.woff2', '.otf'];
     let path = filePath.toLowerCase();
     let result = path.indexOf(options[0]) != -1 || path.indexOf(options[1]) != -1 || path.indexOf(options[2]) != -1;
     hilog.info(0x0000, 'testTag', 'isFont = ' + result);
@@ -832,7 +832,7 @@ struct Reader {
     this.unregisterListener();
   }
 
-  private async unregisterListener(){
+  private async unregisterListener() {
     let context = this.getUIContext().getHostContext() as common.UIAbilityContext;
     await this.readerComponentController.init(context);
     this.readerComponentController.off('resourceRequest');

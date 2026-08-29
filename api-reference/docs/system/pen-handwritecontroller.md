@@ -2,8 +2,8 @@
 title: "HandwriteController (手写套件功能)"
 upstream_id: "harmonyos-references/pen-handwritecontroller"
 catalog: "harmonyos-references"
-content_hash: "beef8a46d508"
-synced_at: "2026-07-28T16:51:17.367687"
+content_hash: "f4080db54872"
+synced_at: "2026-08-29T18:17:12.691501"
 ---
 
 # HandwriteController (手写套件功能)
@@ -17,19 +17,18 @@ synced_at: "2026-07-28T16:51:17.367687"
 ```
 import { HandwriteController } from '@kit.Penkit';
 ```
- 本模块提供以下方法，完成手写内容的加载和保存等功能。
 
-| 方法名称 | 说明 |
-| --- | --- |
-| [load](#load) | 从指定路径加载笔记文件。 |
-| [save](#save) | 保存手写内容。 |
-| [onLoad](#onload) | 加载完成时的回调接口。 |
-| [getContentRange](#getcontentrange) | 获取笔迹范围。 |
-| [getThumbnail](#getthumbnail) | 获取缩略图数据。 |
-| [Rect](#rect) | Rect信息参数，表示矩形区域。 |
-| [scrollTo](#scrollto) | 设置长画布的滚动位置。 |
+#### HandwriteController
 
-#### load
+手写套件的主要功能入口类。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Stylus.Handwrite
+
+起始版本： 5.0.0(12)
+
+#### [h2]load
 
 load(path: string): void
 
@@ -59,7 +58,7 @@ load(path: string): void
 
 具体代码示例见[示例](#示例)。
 
-#### save
+#### [h2]save
 
 save(path: string): Promise<void>
 
@@ -95,7 +94,7 @@ save(path: string): Promise<void>
 
 具体代码示例见[示例](#示例)。
 
-#### onLoad
+#### [h2]onLoad
 
 onLoad(callback: AsyncCallback<string>): void
 
@@ -121,7 +120,7 @@ onLoad(callback: AsyncCallback<string>): void
 | --- | --- |
 | 1010400001 | load failed. |
 
-#### getContentRange
+#### [h2]getContentRange
 
 getContentRange(): Rect
 
@@ -139,7 +138,7 @@ getContentRange(): Rect
 | --- | --- |
 | [Rect](#rect) | Rect信息参数，表示内容涵盖的矩形区域。 |
 
-#### getThumbnail
+#### [h2]getThumbnail
 
 getThumbnail(rect: Rect): Promise<PixelMap>
 
@@ -163,24 +162,7 @@ getThumbnail(rect: Rect): Promise<PixelMap>
 | --- | --- |
 | Promise | Promise对象，返回缩略图的数据。 |
 
-#### Rect
-
-Rect信息参数，表示矩形区域。
-
-模型约束： 此接口仅可在Stage模型下使用。
-
-系统能力： SystemCapability.Stylus.Handwrite
-
-起始版本： 6.0.0(20)
-
-| 名称 | 类型 | 说明 |
-| --- | --- | --- |
-| left | number | 矩形左侧的位置。单位：手写套件组件[HandwriteComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pen-handwritecomponent)宽度的1/1000。 |
-| top | number | 矩形顶部的位置。单位：手写套件组件[HandwriteComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pen-handwritecomponent)宽度的1/1000。 |
-| right | number | 矩形右侧的位置。单位：手写套件组件[HandwriteComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pen-handwritecomponent)宽度的1/1000。 |
-| bottom | number | 矩形底部的位置。单位：手写套件组件[HandwriteComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pen-handwritecomponent)宽度的1/1000。 |
-
-#### scrollTo
+#### [h2]scrollTo
 
 scrollTo(yOffset: number): void
 
@@ -201,6 +183,23 @@ scrollTo(yOffset: number): void
 示例：
 
 具体代码示例见[示例](#示例)。
+
+#### Rect
+
+Rect信息参数，表示矩形区域。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Stylus.Handwrite
+
+起始版本： 6.0.0(20)
+
+| 名称 | 类型 | 说明 |
+| --- | --- | --- |
+| left | number | 矩形左侧的位置。单位：手写套件组件[HandwriteComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pen-handwritecomponent)宽度的1/1000。 |
+| top | number | 矩形顶部的位置。单位：手写套件组件[HandwriteComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pen-handwritecomponent)宽度的1/1000。 |
+| right | number | 矩形右侧的位置。单位：手写套件组件[HandwriteComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pen-handwritecomponent)宽度的1/1000。 |
+| bottom | number | 矩形底部的位置。单位：手写套件组件[HandwriteComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pen-handwritecomponent)宽度的1/1000。 |
 
 #### **示例**
 

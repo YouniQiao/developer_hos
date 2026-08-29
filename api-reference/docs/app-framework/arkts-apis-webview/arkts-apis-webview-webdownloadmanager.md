@@ -2,8 +2,8 @@
 title: "Class (WebDownloadManager)"
 upstream_id: "harmonyos-references/arkts-apis-webview-webdownloadmanager"
 catalog: "harmonyos-references"
-content_hash: "a14baabf9ef7"
-synced_at: "2026-07-09T00:58:51.080574"
+content_hash: "c7714457d122"
+synced_at: "2026-08-29T18:15:58.377760"
 ---
 
 # Class (WebDownloadManager)
@@ -28,9 +28,11 @@ import { webview } from '@kit.ArkWeb';
 
 static setDownloadDelegate(delegate: WebDownloadDelegate): void
 
-设置用于接收从WebDownloadManager触发的下载进度的委托。
+设置接收从WebDownloadManager触发的下载进度的委托。
 
-![](./img/note_3.0-zh-cn.png) 在调用本接口前，若尚未创建Web组件且未执行[initializeWebEngine](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#initializewebengine)方法完成Web内核初始化，必须先调用initializeWebEngine方法进行初始化，否则接口调用无效。
+![](./img/note_3.0-zh-cn.png)
+
+- 在调用本接口前，若尚未创建Web组件且未执行[initializeWebEngine](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#initializewebengine)方法，必须先调用该方法完成Web内核初始化，否则接口调用无效。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -61,21 +63,21 @@ struct WebComponent {
         .onClick(() => {
           try {
             this.delegate.onBeforeDownload((webDownloadItem: webview.WebDownloadItem) => {
-              console.info("will start a download.");
+              console.info('will start a download.');
               // 传入一个下载路径，并开始下载。
-              webDownloadItem.start("/data/storage/el2/base/cache/web/" + webDownloadItem.getSuggestedFileName());
+              webDownloadItem.start('/data/storage/el2/base/cache/web/' + webDownloadItem.getSuggestedFileName());
             })
             this.delegate.onDownloadUpdated((webDownloadItem: webview.WebDownloadItem) => {
-              console.info("download update percent complete: " + webDownloadItem.getPercentComplete());
+              console.info('download update percent complete: ' + webDownloadItem.getPercentComplete());
               this.download = webDownloadItem;
             })
             this.delegate.onDownloadFailed((webDownloadItem: webview.WebDownloadItem) => {
-              console.error("download failed guid: " + webDownloadItem.getGuid());
+              console.error('download failed guid: ' + webDownloadItem.getGuid());
               // 序列化失败的下载到一个字节数组。
               this.failedData = webDownloadItem.serialize();
             })
             this.delegate.onDownloadFinish((webDownloadItem: webview.WebDownloadItem) => {
-              console.info("download finish guid: " + webDownloadItem.getGuid());
+              console.info('download finish guid: ' + webDownloadItem.getGuid());
             })
             this.controller.setDownloadDelegate(this.delegate);
             webview.WebDownloadManager.setDownloadDelegate(this.delegate);
@@ -133,9 +135,12 @@ struct WebComponent {
 
 static resumeDownload(webDownloadItem: WebDownloadItem): void
 
-恢复一个失败的下载任务。
+恢复一个失败的下载任务，需通过[WebDownloadItem.deserialize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webdownloaditem#deserialize11)方法获取反序列化后的对象，仅适用于之前失败的下载任务。
 
-![](./img/note_3.0-zh-cn.png) 在调用本接口前，若尚未创建Web组件且未执行initializeWebEngine方法完成Web内核初始化，必须先调用initializeWebEngine方法进行初始化，否则接口调用无效。
+![](./img/note_3.0-zh-cn.png)
+
+- 在调用本接口前，若尚未创建Web组件且未执行initializeWebEngine方法完成Web内核初始化，必须先调用initializeWebEngine方法进行初始化，否则接口调用无效。
+- 必须先调用[setDownloadDelegate](#setdownloaddelegate11)设置下载委托，否则会抛出错误码17100018。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -143,7 +148,7 @@ static resumeDownload(webDownloadItem: WebDownloadItem): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| webDownloadItem | [WebDownloadItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webdownloaditem) | 是 | 待恢复的下载任务。 |
+| webDownloadItem | [WebDownloadItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webdownloaditem) | 是 | 从序列化数据恢复的下载任务。 |
 
 错误码：
 
@@ -174,21 +179,21 @@ struct WebComponent {
         .onClick(() => {
           try {
             this.delegate.onBeforeDownload((webDownloadItem: webview.WebDownloadItem) => {
-              console.info("will start a download.");
+              console.info('will start a download.');
               // 传入一个下载路径，并开始下载。
-              webDownloadItem.start("/data/storage/el2/base/cache/web/" + webDownloadItem.getSuggestedFileName());
+              webDownloadItem.start('/data/storage/el2/base/cache/web/' + webDownloadItem.getSuggestedFileName());
             })
             this.delegate.onDownloadUpdated((webDownloadItem: webview.WebDownloadItem) => {
-              console.info("download update percent complete: " + webDownloadItem.getPercentComplete());
+              console.info('download update percent complete: ' + webDownloadItem.getPercentComplete());
               this.download = webDownloadItem;
             })
             this.delegate.onDownloadFailed((webDownloadItem: webview.WebDownloadItem) => {
-              console.error("download failed guid: " + webDownloadItem.getGuid());
+              console.error('download failed guid: ' + webDownloadItem.getGuid());
               // 序列化失败的下载到一个字节数组。
               this.failedData = webDownloadItem.serialize();
             })
             this.delegate.onDownloadFinish((webDownloadItem: webview.WebDownloadItem) => {
-              console.info("download finish guid: " + webDownloadItem.getGuid());
+              console.info('download finish guid: ' + webDownloadItem.getGuid());
             })
             this.controller.setDownloadDelegate(this.delegate);
             webview.WebDownloadManager.setDownloadDelegate(this.delegate);

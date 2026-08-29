@@ -2,13 +2,13 @@
 title: "@ohos.wantAgent (WantAgent模块)"
 upstream_id: "harmonyos-references/js-apis-wantagent"
 catalog: "harmonyos-references"
-content_hash: "1c0746101daa"
-synced_at: "2026-07-28T16:40:41.811252"
+content_hash: "f765f0608b36"
+synced_at: "2026-08-29T18:12:06.514836"
 ---
 
 # @ohos.wantAgent (WantAgent模块)
 
-WantAgent模块提供了创建WantAgent实例、获取实例的用户ID、获取want信息、比较WantAgent实例和获取bundle名称等能力。
+WantAgent模块提供了创建WantAgent实例、获取实例的用户ID、获取Want信息、比较WantAgent实例和获取Bundle名称等能力。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 7开始支持，从API version 9废弃，替换模块为[@ohos.app.ability.wantAgent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-wantagent)。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -44,7 +44,7 @@ import { BusinessError } from '@ohos.base';
 // getWantAgent回调
 function getWantAgentCallback(err: BusinessError, data: _WantAgent) {
     if (err.code) {
-        console.info('getWantAgent Callback err:' + JSON.stringify(err));
+        console.error('getWantAgent Callback err:' + JSON.stringify(err));
     } else {
         console.info('getWantAgent Callback success');
     }
@@ -793,7 +793,7 @@ wantAgent.getWantAgent({
 | UNKNOWN_TYPE | 0 | 不识别的类型。 |
 | START_ABILITY | 1 | 开启一个有页面的Ability。 |
 | START_ABILITIES | 2 | 开启多个有页面的Ability。 |
-| START_SERVICE | 3 | 开启一个无页面的ability。 |
+| START_SERVICE | 3 | 开启一个无页面的Ability。 |
 | SEND_COMMON_EVENT | 4 | 发送一个公共事件。 |
 
 #### CompleteData
@@ -804,9 +804,9 @@ wantAgent.getWantAgent({
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| info | WantAgent | 否 | 否 | 触发的wantAgent。 |
-| want | Want | 否 | 否 | 存在的被触发的want。 |
-| finalCode | number | 否 | 否 | 触发wantAgent的请求代码。 |
+| info | WantAgent | 否 | 否 | 触发的WantAgent。 |
+| want | Want | 否 | 否 | 存在的被触发的Want。 |
+| finalCode | number | 否 | 否 | 触发WantAgent的请求代码。 |
 | finalData | string | 否 | 否 | 公共事件收集的最终数据。 |
 | extraInfo | { [key: string]: any } | 否 | 是 | 额外数据。 |
 

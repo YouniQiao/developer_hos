@@ -2,15 +2,15 @@
 title: "拖拽事件错误码"
 upstream_id: "harmonyos-references/errorcode-drag-event"
 catalog: "harmonyos-references"
-content_hash: "1dd17cfaad8f"
-synced_at: "2026-08-18T15:32:50.975800"
+content_hash: "28e02396606e"
+synced_at: "2026-08-29T18:15:55.069357"
 ---
 
 # 拖拽事件错误码
 
-![](./img/note_3.0-zh-cn.png) 以下仅介绍本模块特有错误码，通用错误码请参考[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+![](./img/note_3.0-zh-cn.png) 本文档介绍拖拽事件模块特有的错误码，涵盖数据获取、操作阶段和数据加载过程中的常见异常，帮助开发者识别错误原因并采取对应的处理措施。通用错误码请参考[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
-#### 190001 数据未取得
+#### 190001 数据未找到
 
 错误信息
 
@@ -36,7 +36,7 @@ Data error.
 
 错误描述
 
-当开发者调用DragEvent的[getData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#getdata10)接口时，若取得的数据有错误，会抛出此错误码。该错误码为string类型。
+当开发者调用DragEvent的[getData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#getdata10)接口时，若获取的数据有错误，会抛出此错误码。该错误码为string类型。
 
 可能原因
 
@@ -54,11 +54,11 @@ Operation not allowed for current phase.
 
 错误描述
 
-如果开发者在非[onDrop](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondrop)阶段调用仅支持该阶段调用的接口，会抛出此错误码。该错误码为string类型。
+如果开发者在非[onDrop](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondrop)阶段调用仅支持在该阶段调用的接口，会抛出此错误码。该错误码为string类型。
 
 可能原因
 
-当前所处阶段错误。
+当前处于非[onDrop](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondrop)阶段。
 
 处理步骤
 
@@ -72,7 +72,7 @@ Operation failed.
 
 错误描述
 
-如果开发者在数据未加载或加载完成后调用[cancelDataLoading](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-dragcontroller#canceldataloading15)接口，会抛出此错误码。该错误码为string类型。
+如果开发者未在拖拽释放后的数据加载过程中调用[cancelDataLoading](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-dragcontroller#canceldataloading15)接口，会抛出此错误码。该错误码为string类型。
 
 可能原因
 

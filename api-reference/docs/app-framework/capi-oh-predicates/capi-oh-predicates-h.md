@@ -2,8 +2,8 @@
 title: "oh_predicates.h"
 upstream_id: "harmonyos-references/capi-oh-predicates-h"
 catalog: "harmonyos-references"
-content_hash: "254abc44a232"
-synced_at: "2026-07-09T00:57:18.727080"
+content_hash: "a2936afeeeb4"
+synced_at: "2026-08-29T18:12:14.772149"
 ---
 
 # oh_predicates.h
@@ -40,9 +40,9 @@ synced_at: "2026-07-09T00:57:18.727080"
 
 | 名称 | 描述 |
 | --- | --- |
-| [int OH_Predicates_NotLike(OH_Predicates *predicates, const char *field, const char *pattern)](#oh_predicates_notlike) | 设置OH_Predicates以匹配数据类型为字符串且值不类似于指定值的字段。 此方法类似于SQL语句中的“Not like”。 |
-| [int OH_Predicates_Glob(OH_Predicates *predicates, const char *field, const char *pattern)](#oh_predicates_glob) | 设置OH_Predicates以匹配指定字段（数据类型为字符串）且值包含通配符的字段。 与like方法不同，此方法的输入参数区分大小写。 |
-| [int OH_Predicates_NotGlob(OH_Predicates *predicates, const char *field, const char *pattern)](#oh_predicates_notglob) | 设置OH_Predicates以不匹配指定字段（数据类型为字符串）且值包含通配符的字段。 与Not Like方法不同，此方法的输入参数区分大小写。 |
+| [int OH_Predicates_NotLike(OH_Predicates *predicates, const char *field, const char *pattern)](#oh_predicates_notlike) | 设置OH_Predicates以匹配数据类型为字符串且值不类似于指定值的字段。 此方法类似于SQL语句中的“Not Like”。 |
+| [int OH_Predicates_Glob(OH_Predicates *predicates, const char *field, const char *pattern)](#oh_predicates_glob) | 设置OH_Predicates以匹配指定字段（数据类型为字符串）且值包含通配符的字段。 与“Like”方法不同，此方法的输入参数区分大小写。 |
+| [int OH_Predicates_NotGlob(OH_Predicates *predicates, const char *field, const char *pattern)](#oh_predicates_notglob) | 设置OH_Predicates以不匹配指定字段（数据类型为字符串）且值包含通配符的字段。 与“Not Like”方法不同，此方法的输入参数区分大小写。 |
 | [int OH_Predicates_Having(OH_Predicates *predicates, const char *conditions, const OH_Data_Values *values)](#oh_predicates_having) | 设置OH_Predicates以指定条件来过滤分组结果，这些结果将出现在最终结果中。 |
 
 #### 枚举类型说明
@@ -74,7 +74,7 @@ int OH_Predicates_NotLike(OH_Predicates *predicates, const char *field, const ch
 
 设置OH_Predicates以匹配数据类型为字符串且值不类似于指定值的字段。
 
-此方法类似于SQL语句中的“Not like”。
+此方法类似于SQL语句中的“Not Like”。
 
 起始版本： 20
 
@@ -82,9 +82,9 @@ int OH_Predicates_NotLike(OH_Predicates *predicates, const char *field, const ch
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_Predicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-predicates) *predicates | 表示指向[OH_Predicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-predicates)实例的指针。 |
+| [OH_Predicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-predicates) *predicates | 表示指向[OH_Predicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-predicates)实例的指针，不能为空。 |
 | const char *field | 表示数据库表中的列名，不能为空。 |
-| const char *pattern | 表示谓词不匹配的模式，不能为空。 |
+| const char *pattern | 表示要比较的指定值，不能为空。 |
 
 返回：
 
@@ -101,7 +101,7 @@ int OH_Predicates_Glob(OH_Predicates *predicates, const char *field, const char 
 
 设置OH_Predicates以匹配指定字段（数据类型为字符串）且值包含通配符的字段。
 
-与like方法不同，此方法的输入参数区分大小写。
+与“Like”方法不同，此方法的输入参数区分大小写。
 
 起始版本： 20
 
@@ -109,9 +109,9 @@ int OH_Predicates_Glob(OH_Predicates *predicates, const char *field, const char 
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_Predicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-predicates) *predicates | 表示指向[OH_Predicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-predicates)实例的指针。 |
+| [OH_Predicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-predicates) *predicates | 表示指向[OH_Predicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-predicates)实例的指针，不能为空。 |
 | const char *field | 表示数据库表中的列名，不能为空。 |
-| const char *pattern | 表示谓词匹配的样式，不能为空。 |
+| const char *pattern | 表示与谓词匹配的值，不能为空。 |
 
 返回：
 
@@ -128,7 +128,7 @@ int OH_Predicates_NotGlob(OH_Predicates *predicates, const char *field, const ch
 
 设置OH_Predicates以不匹配指定字段（数据类型为字符串）且值包含通配符的字段。
 
-与Not Like方法不同，此方法的输入参数区分大小写。
+与“Not Like”方法不同，此方法的输入参数区分大小写。
 
 起始版本： 20
 
@@ -136,9 +136,9 @@ int OH_Predicates_NotGlob(OH_Predicates *predicates, const char *field, const ch
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_Predicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-predicates) *predicates | 表示指向[OH_Predicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-predicates)实例的指针。 |
+| [OH_Predicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-predicates) *predicates | 表示指向[OH_Predicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-predicates)实例的指针，不能为空。 |
 | const char *field | 表示数据库表中的列名，不能为空。 |
-| const char *pattern | 表示谓词不匹配的样式，不能为空。 |
+| const char *pattern | 表示要比较的指定值，不能为空。 |
 
 返回：
 
@@ -161,9 +161,9 @@ int OH_Predicates_Having(OH_Predicates *predicates, const char *conditions, cons
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_Predicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-predicates) *predicates | 表示指向[OH_Predicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-predicates)实例的指针。 |
+| [OH_Predicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-predicates) *predicates | 表示指向[OH_Predicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-predicates)实例的指针，不能为空。 |
 | const char *conditions | 表示having子句中的过滤条件，不能为空且不能为空字符串。 |
-| const [OH_Data_Values](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-data-values) *values | 表示指向[OH_Data_Values](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-data-values)实例的指针。 |
+| const [OH_Data_Values](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-data-values) *values | 表示指向[OH_Data_Values](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-data-values)实例的指针，不能为空。 |
 
 返回：
 

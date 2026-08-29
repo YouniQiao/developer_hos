@@ -2,8 +2,8 @@
 title: "Types"
 upstream_id: "harmonyos-references/arkts-apis-window-t"
 catalog: "harmonyos-references"
-content_hash: "f2b4dd601620"
-synced_at: "2026-07-09T00:57:34.340796"
+content_hash: "b406154277ce"
+synced_at: "2026-08-29T18:12:37.346762"
 ---
 
 # Types
@@ -75,13 +75,13 @@ type RotationChangeCallback<T, U> = (info: T) => U
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| info | T | 是 | 回调函数调用时系统传入[RotationChangeInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#rotationchangeinfo19)类型的参数。 |
+| info | T | 是 | 旋转事件信息，系统传入[RotationChangeInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#rotationchangeinfo19)类型的参数，用于通知开发者旋转变化时的窗口信息。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| U | 回调函数需要返回[RotationChangeResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#rotationchangeresult19) | void类型的返回值。 |
+| U | 回调函数需要返回[RotationChangeResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#rotationchangeresult19) | void类型的返回值，应用指定旋转后的窗口位置；当返回void时，系统不更改窗口位置。 |
 
 #### WindowEventListener
 

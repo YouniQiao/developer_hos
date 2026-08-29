@@ -2,11 +2,13 @@
 title: "Interface (PhotoAccessHelper)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-photoaccesshelper"
 catalog: "harmonyos-references"
-content_hash: "4ee64166988d"
-synced_at: "2026-08-07T15:59:05.217191"
+content_hash: "6af11e057410"
+synced_at: "2026-08-29T18:17:46.878172"
 ---
 
 # Interface (PhotoAccessHelper)
+
+PhotoAccessHelper提供图片和视频资源的访问管理能力，支持获取、创建、删除媒体资产，管理相册，监听资产变化等操作。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 10开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -26,7 +28,7 @@ getAssets(options: FetchOptions, callback: AsyncCallback<FetchResult<PhotoAsset>
 
 需要权限：ohos.permission.READ_IMAGEVIDEO
 
-通过picker的方式调用该接口来查询指定URI对应的图片或视频资源，不需要申请'ohos.permission.READ_IMAGEVIDEO'权限，详情请参考[指定URI获取图片或视频资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-photoviewpicker#指定uri获取图片或视频资源)。
+通过picker的方式调用该接口查询指定URI的图片或视频资源时，无需申请'ohos.permission.READ_IMAGEVIDEO'权限，详情请参考[指定URI获取图片或视频资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-photoviewpicker#指定uri获取图片或视频资源)。
 
 参数：
 
@@ -65,6 +67,10 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
   };
 
   phAccessHelper.getAssets(fetchOptions, async (err, fetchResult) => {
+    if (err) {
+      console.error(`fetchResult fail with error: ${err.code}, ${err.message}`);
+      return;
+    }
     if (fetchResult !== undefined) {
       console.info('fetchResult success');
       let photoAsset: photoAccessHelper.PhotoAsset = await fetchResult.getFirstObject();
@@ -413,7 +419,7 @@ createPhotoAsset(photoType: PhotoType, extension: string, title?: string): Promi
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | photoType | [PhotoType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#phototype) | 是 | 创建的文件类型。例如：IMAGE或者VIDEO类型。 |
-| extension | string | 是 | 文件名后缀参数。例如：'jpg'。 |
+| extension | string | 是 | 文件名后缀参数。例如：'jpg'、'png'、'mp4'等。 |
 | title | string | 否 | 图片或视频资产的标题。 |
 
 返回值：
@@ -542,8 +548,6 @@ getAlbums(type: AlbumType, subtype: AlbumSubtype, callback: AsyncCallback<FetchR
 错误码：
 
 以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[文件管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-filemanagement)。
-
-在API version 13及之前的版本，无相关权限返回错误码13900012；从API version 14开始，无相关权限返回错误码201。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -682,6 +686,7 @@ phAccessHelper的创建请参考[photoAccessHelper.getPhotoAccessHelper](https:/
 
 ```
 import { dataSharePredicates } from '@kit.ArkData';
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
 
 async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, context: Context) {
   console.info('registerChangeDemo');
@@ -694,7 +699,10 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
   let photoAsset: photoAccessHelper.PhotoAsset = await fetchResult.getFirstObject();
   if (photoAsset !== undefined) {
     console.info('photoAsset.displayName : ' + photoAsset.displayName);
-  }
+    } else {
+      console.error('photoAsset is undefined');
+      return;
+    }
   let onCallback1 = (changeData: photoAccessHelper.ChangeData) => {
       console.info('onCallback1 success, changData: ' + JSON.stringify(changeData));
     // file had changed, do something.
@@ -716,7 +724,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 
 unRegisterChange(uri: string, callback?: Callback<ChangeData>): void
 
-取消指定uri的监听，一个uri可以注册多个监听，存在多个callback监听时，可以取消指定注册的callback的监听；不指定callback时取消该uri的所有监听。
+取消对指定URI的监听。一个URI可注册多个监听。存在多个callback监听时，可取消指定callback监听。不指定callback时取消该URI的所有监听。
 
 系统能力：SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -757,7 +765,10 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
   let photoAsset: photoAccessHelper.PhotoAsset = await fetchResult.getFirstObject();
   if (photoAsset !== undefined) {
     console.info('photoAsset.displayName : ' + photoAsset.displayName);
-  }
+    } else {
+      console.error('photoAsset is undefined');
+      return;
+    }
   let onCallback1 = (changeData: photoAccessHelper.ChangeData) => {
     console.info('onCallback1 on');
   }
@@ -1431,6 +1442,7 @@ let onCallback2 = (changeData: photoAccessHelper.PhotoAssetChangeInfos) => {
   // file had changed, do something.
 }
 
+// 注册photoChange监听，用于监听媒体资产的变化，可以注册多个不同的callback。
 async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, context: Context){
   console.info('onPhotoChangeDemo.');
 
@@ -1488,6 +1500,7 @@ let onCallback2 = (changeData: photoAccessHelper.PhotoAssetChangeInfos) => {
   // file had changed, do something.
 }
 
+// 注册photoChange监听后，取消指定callback监听，演示取消监听的使用方法。
 async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, context: Context){
   console.info('offPhotoChangeDemo.');
 
@@ -1548,6 +1561,7 @@ let onCallback2 = (changeData: photoAccessHelper.AlbumChangeInfos) => {
   // file had changed, do something.
 }
 
+// 注册photoAlbumChange监听，用于监听相册的变化，可以注册多个不同的callback。
 async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, context: Context){
   console.info('onPhotoAlbumChangeDemo.');
 
@@ -1605,6 +1619,7 @@ let onCallback2 = (changeData: photoAccessHelper.AlbumChangeInfos) => {
   // file had changed, do something.
 }
 
+// 注册photoAlbumChange监听后，取消指定callback监听，演示取消监听的使用方法。
 async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, context: Context){
   console.info('onPhotoAlbumChangeDemo.');
 
@@ -1640,7 +1655,7 @@ getPhotoPickerComponentDefaultAlbumName(): Promise<string>
 
 错误码：
 
-以下错误码的详细介绍请参见[文件管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-filemanagement)。
+以下错误码的详细介绍请参见[媒体库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-medialibrary)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -1883,7 +1898,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
   console.info('getAlbumIdByLpath');
 
   try {
-      let albumId: number = await phAccessHelper.getAlbumIdByLpath('testLpath');
+      let albumId: number = await phAccessHelper.getAlbumIdByLpath('/DCIM/Camera');
       console.info('requestFile:: albumId: ', albumId);
 
       console.info('getAlbumIdByLpath completed.');
@@ -1937,6 +1952,7 @@ let onCallback2 = (changeData: photoAccessHelper.PhotoAssetChangeInfos) => {
   // 触发回调时，具体的操作。
 }
 
+// 获取相册和资产后，注册单个资产变化监听，演示onSinglePhotoChange的使用方法。
 async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, context: Context){
   console.info('onSinglePhotoChangeDemo.');
   let predicates: dataSharePredicates.DataSharePredicates = new dataSharePredicates.DataSharePredicates();
@@ -2015,6 +2031,7 @@ let onCallback3 = (changeData: photoAccessHelper.PhotoAssetChangeInfos) => {
   // 触发回调时，具体的操作。
 }
 
+// 获取相册和资产后，注册单个资产变化监听，然后演示不同方式取消监听的使用方法。
 async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, context: Context){
   console.info('onSinglePhotoChangeDemo.');
   let predicates: dataSharePredicates.DataSharePredicates = new dataSharePredicates.DataSharePredicates();
@@ -2094,6 +2111,7 @@ let onCallback2 = (changeData: photoAccessHelper.AlbumChangeInfos) => {
   // 触发回调时，具体的操作。
 }
 
+// 获取相册后，注册单个相册变化监听，演示onSinglePhotoAlbumChange的使用方法。
 async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, context: Context){
   console.info('onSinglePhotoAlbumChangeDemo.');
   let predicates: dataSharePredicates.DataSharePredicates = new dataSharePredicates.DataSharePredicates();
@@ -2147,7 +2165,7 @@ offSinglePhotoAlbumChange(album?: Album, callback?: Callback<AlbumChangeInfos>):
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 23800151 | The scenario parameter verification fails. Possible causes： 1. The same callback is unregistered repeatedly. 2. The uri of the album invalid. |
+| 23800151 | The scenario parameter verification fails. Possible causes: 1. The same callback is unregistered repeatedly. 2. The uri of the album invalid. |
 | 23800301 | Internal system error. You are advised to retry and check the logs. Possible causes: 1. The database is corrupted. 2. The file system is abnormal. 3. The IPC request timed out. |
 
 示例：
@@ -2170,6 +2188,7 @@ let onCallback3 = (changeData: photoAccessHelper.AlbumChangeInfos) => {
   // 触发回调时，具体的操作。
 }
 
+// 获取相册后，注册单个相册变化监听，然后演示不同方式取消监听的使用方法。
 async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, context: Context){
   console.info('onSinglePhotoChangeDemo.');
   let predicates: dataSharePredicates.DataSharePredicates = new dataSharePredicates.DataSharePredicates();
@@ -2354,13 +2373,16 @@ class MediaLibraryExample {
 
   onMediaLibraryAvailability = async () => {
     try {
+      // 定义媒体库可用性变化的回调处理函数。
       this.handleMediaLibraryChange = (
         changeData: photoAccessHelper.MediaLibraryAvailability
       ) => {
+        // 获取媒体库的可用状态和不可用原因。
         const availabilityStatus = changeData.availabilityStatus;
         const unavailabilityReason = changeData.unavailabilityReason;
-        console.info(`媒体库状态变化：状态=${availabilityStatus}，原因=${unavailabilityReason}`);
+        console.info(`媒体库状态变化: 状态=${availabilityStatus}, 原因=${unavailabilityReason}`);
       };
+      // 注册媒体库可用性监听。
       this.helper.onMediaLibraryAvailability(this.handleMediaLibraryChange);
       console.info('媒体库监听注册成功');
     } catch (err) {
@@ -2414,6 +2436,7 @@ class MediaLibraryExample {
 
   offMediaLibraryAvailability = async () => {
     try {
+      // 先注册媒体库可用性监听，然后取消注册，演示取消监听的使用方法。
       this.helper.onMediaLibraryAvailability(this.handleMediaLibraryChange);
       this.helper.offMediaLibraryAvailability(this.handleMediaLibraryChange);
       console.info('媒体库监听解除成功');

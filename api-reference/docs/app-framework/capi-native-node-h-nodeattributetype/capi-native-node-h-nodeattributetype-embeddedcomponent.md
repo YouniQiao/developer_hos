@@ -2,8 +2,8 @@
 title: "ArkUI_NodeAttributeType（EmbeddedComponent组件相关属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-embeddedcomponent"
 catalog: "harmonyos-references"
-content_hash: "e3df9398d70b"
-synced_at: "2026-07-28T16:49:22.548539"
+content_hash: "6ff292247953"
+synced_at: "2026-08-29T18:15:38.976910"
 ---
 
 # ArkUI_NodeAttributeType（EmbeddedComponent组件相关属性）
@@ -14,7 +14,7 @@ enum ArkUI_NodeAttributeType
 
 #### 概述
 
-定义ArkUI在Native侧可以设置的EmbeddedComponent组件相关属性样式集合。EmbeddedComponent适用于需要在当前应用页面内嵌入其他Ability（如系统设置、地图等）的UI界面的场景。
+定义ArkUI在Native侧可以设置的EmbeddedComponent组件相关属性样式集合，支持配置启动EmbeddedAbility的want参数以及控制嵌入式Ability的UI显示行为等运行选项，适用于需要在Native侧对嵌入式组件进行属性设置的场景。EmbeddedComponent适用于需要在当前应用页面内嵌入其他Ability（如系统设置、地图等）提供的UI页面的场景。
 
 起始版本： 12
 
@@ -31,7 +31,7 @@ NODE_EMBEDDED_COMPONENT_WANT = MAX_NODE_SCOPE_NUM * ARKUI_NODE_EMBEDDED_COMPONEN
 
 作为属性设置方法参数时，[ArkUI_AttributeItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-attributeitem)格式如下。
 
-起始版本： 12
+起始版本： 20
 
 参数：
 
@@ -48,7 +48,7 @@ NODE_EMBEDDED_COMPONENT_OPTION = 1016001
 
 作为属性设置方法参数时，[ArkUI_AttributeItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-attributeitem)格式如下。
 
-起始版本： 12
+起始版本： 20
 
 参数：
 

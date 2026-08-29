@@ -2,15 +2,15 @@
 title: "Class (MediaAssetsChangeRequest)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-mediaassetschangerequest"
 catalog: "harmonyos-references"
-content_hash: "decf4e9944fe"
-synced_at: "2026-07-28T16:52:02.921605"
+content_hash: "829027c9b85e"
+synced_at: "2026-08-29T18:17:45.887323"
 ---
 
 # Class (MediaAssetsChangeRequest)
 
 MediaAssetsChangeRequest implements [MediaChangeRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-i#mediachangerequest11).
 
-批量资产变更请求。
+批量媒体资产变更请求。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -37,7 +37,7 @@ constructor(assets: Array<PhotoAsset>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| assets | Array | 是 | 需要变更的资产数组。 |
+| assets | Array | 是 | 需要变更的媒体资产数组。 |
 
 错误码：
 
@@ -53,6 +53,7 @@ phAccessHelper的创建请参考[photoAccessHelper.getPhotoAccessHelper](https:/
 
 ```
 import { dataSharePredicates } from '@kit.ArkData';
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
 
 async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
   console.info('MediaAssetsChangeRequest constructorDemo');
@@ -97,6 +98,7 @@ phAccessHelper的创建请参考[photoAccessHelper.getPhotoAccessHelper](https:/
 
 ```
 import { dataSharePredicates } from '@kit.ArkData';
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
 async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {

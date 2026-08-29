@@ -2,8 +2,8 @@
 title: "modular_object_extension_manager.h"
 upstream_id: "harmonyos-references/capi-modular-object-extension-manager-h"
 catalog: "harmonyos-references"
-content_hash: "c2c4315ddfac"
-synced_at: "2026-07-28T16:40:44.403071"
+content_hash: "c6b7eeadeee9"
+synced_at: "2026-08-29T18:12:08.843497"
 ---
 
 # modular_object_extension_manager.h
@@ -52,6 +52,8 @@ synced_at: "2026-07-28T16:40:44.403071"
 | [AbilityRuntime_ErrorCode OH_AbilityRuntime_ReleaseAllExtensionInfos(OH_AbilityRuntime_AllModObjExtensionInfosHandle *allExtensionInfos)](#oh_abilityruntime_releaseallextensioninfos) | 释放由[OH_AbilityRuntime_AcquireSelfModularObjectExtensionInfos](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-extension-manager-h#oh_abilityruntime_acquireselfmodularobjectextensioninfos)获取的ModularObjectExtensionAbility信息集合。当不再需要使用ModularObjectExtensionAbility信息集合时，必须调用此接口释放相关资源，避免内存泄漏。 |
 | [AbilityRuntime_ErrorCode OH_AbilityRuntime_GetCountFromAllModObjExtensionInfos(OH_AbilityRuntime_AllModObjExtensionInfosHandle allExtensionInfos, size_t *count)](#oh_abilityruntime_getcountfromallmodobjextensioninfos) | 获取ModularObjectExtensionAbility信息集合中包含的ModularObjectExtensionAbility信息数量。返回的数量可用于确定遍历集合时的索引上限，配合[OH_AbilityRuntime_GetModObjExtensionInfoByIndex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-extension-manager-h#oh_abilityruntime_getmodobjextensioninfobyindex)逐个访问集合中的ModularObjectExtensionAbility信息。 |
 | [AbilityRuntime_ErrorCode OH_AbilityRuntime_GetModObjExtensionInfoByIndex(OH_AbilityRuntime_AllModObjExtensionInfosHandle allExtensionInfos, size_t index, OH_AbilityRuntime_ModObjExtensionInfoHandle *extensionInfo)](#oh_abilityruntime_getmodobjextensioninfobyindex) | 根据索引从ModularObjectExtensionAbility信息集合中获取指定的ModularObjectExtensionAbility信息。索引的有效范围为[0, count)，其中count可通过[OH_AbilityRuntime_GetCountFromAllModObjExtensionInfos](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-extension-manager-h#oh_abilityruntime_getcountfromallmodobjextensioninfos)获取。获取到的ModularObjectExtensionAbility信息句柄可用于查询该ModularObjectExtensionAbility的启动模式、进程模式、线程模式等属性。 |
+| [AbilityRuntime_ErrorCode OH_AbilityRuntime_ConnectModularObjectExtensionAbility(AbilityBase_Want *want, OH_AbilityRuntime_ConnectOptions *connectOptions, int64_t *connectionId)](#oh_abilityruntime_connectmodularobjectextensionability) | 连接ModularObjectExtensionAbility。 |
+| [AbilityRuntime_ErrorCode OH_AbilityRuntime_DisconnectModularObjectExtensionAbility(int64_t connectionId)](#oh_abilityruntime_disconnectmodularobjectextensionability) | 断开与ModularObjectExtensionAbility的连接。 |
 
 #### 枚举类型说明
 
@@ -85,8 +87,8 @@ enum OH_AbilityRuntime_ProcessMode
 | 枚举项 | 描述 |
 | --- | --- |
 | OH_ABILITY_RUNTIME_PROCESS_MODE_BUNDLE = 0 | 表示同一应用下的所有ModularObjectExtensionAbility实例共享一个进程。所有实例运行在同一进程中，减少系统资源消耗。 |
-| OH_ABILITY_RUNTIME_PROCESS_MODE_TYPE = 1 | 表示Ability名称相同的ModularObjectExtensionAbility实例共享一个进程。具有相同Ability名称的Extension实例被分配到同一进程中，不同Ability名称的实例运行在不同进程中。 |
-| OH_ABILITY_RUNTIME_PROCESS_MODE_INSTANCE = 2 | 表示每个ModularObjectExtensionAbility实例独占一个进程。每个Extension实例拥有独立的进程空间，实现最大程度的进程隔离，适用于对稳定性和安全性要求极高的场景。 |
+| OH_ABILITY_RUNTIME_PROCESS_MODE_TYPE = 1 | 表示Ability名称相同的ModularObjectExtensionAbility实例共享一个进程。具有相同Ability名称的ModularObjectExtensionAbility实例被分配到同一进程中，不同Ability名称的实例运行在不同进程中。 |
+| OH_ABILITY_RUNTIME_PROCESS_MODE_INSTANCE = 2 | 表示每个ModularObjectExtensionAbility实例独占一个进程。每个ModularObjectExtensionAbility实例拥有独立的进程空间，实现最大程度的进程隔离，适用于对稳定性和安全性要求极高的场景。 |
 
 #### [h2]OH_AbilityRuntime_ThreadMode
 
@@ -102,8 +104,8 @@ enum OH_AbilityRuntime_ThreadMode
 | 枚举项 | 描述 |
 | --- | --- |
 | OH_ABILITY_RUNTIME_THREAD_MODE_BUNDLE = 0 | 表示同一应用下的所有ModularObjectExtensionAbility实例共享一个线程。所有实例在同一线程中依次执行，资源开销最小，但需注意避免单实例阻塞影响其他实例。 |
-| OH_ABILITY_RUNTIME_THREAD_MODE_TYPE = 1 | 表示Ability名称相同的ModularObjectExtensionAbility实例共享一个线程。具有相同类型的Extension实例共享线程，不同类型的实例使用不同线程，在资源消耗与并发性能之间取得平衡。 |
-| OH_ABILITY_RUNTIME_THREAD_MODE_INSTANCE = 2 | 表示每个ModularObjectExtensionAbility实例独占一个线程。每个Extension实例拥有独立的线程，互不干扰，适用于需要高并发或对响应时间有严格要求的场景。 |
+| OH_ABILITY_RUNTIME_THREAD_MODE_TYPE = 1 | 表示Ability名称相同的ModularObjectExtensionAbility实例共享一个线程。具有相同Ability名称的ModularObjectExtensionAbility实例共享线程，不同Ability名称的实例使用不同线程，在资源消耗与并发性能之间取得平衡。 |
+| OH_ABILITY_RUNTIME_THREAD_MODE_INSTANCE = 2 | 表示每个ModularObjectExtensionAbility实例独占一个线程。每个ModularObjectExtensionAbility实例拥有独立的线程，互不干扰，适用于需要高并发或对响应时间有严格要求的场景。 |
 
 #### 函数说明
 
@@ -186,7 +188,7 @@ AbilityRuntime_ErrorCode OH_AbilityRuntime_GetModularObjectExtensionInfoElementN
 ```
  描述
 
-从指定的ModularObjectExtensionAbility信息中获取组件名称（[AbilityBase_Element](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilitybase-element)）。
+从指定的ModularObjectExtensionAbility信息中获取组件名称（[AbilityBase_Element](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilitybase-element)）。element中的bundleName、moduleName、abilityName为非拥有型指针，指向extensionInfo内部数据，请勿单独释放，仅在extensionInfo有效期间可用。
 
 起始版本： 26.0.0
 
@@ -234,7 +236,7 @@ AbilityRuntime_ErrorCode OH_AbilityRuntime_AcquireSelfModularObjectExtensionInfo
 ```
  描述
 
-获取当前应用所有已注册的ModularObjectExtensionAbility信息。该接口返回一个包含当前应用所有已注册的ModularObjectExtensionAbility信息集合句柄。开发者可通过[OH_AbilityRuntime_GetCountFromAllModObjExtensionInfos](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-extension-manager-h#oh_abilityruntime_getcountfromallmodobjextensioninfos)和[OH_AbilityRuntime_GetModObjExtensionInfoByIndex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-extension-manager-h#oh_abilityruntime_getmodobjextensioninfobyindex)遍历集合中的各个ModularObjectExtensionAbility信息，进而获取每个ModularObjectExtensionAbility的启动模式、进程模式、线程模式等属性。
+获取当前应用所有已注册的ModularObjectExtensionAbility信息，返回ModularObjectExtensionAbility信息集合句柄。通过[OH_AbilityRuntime_GetCountFromAllModObjExtensionInfos](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-extension-manager-h#oh_abilityruntime_getcountfromallmodobjextensioninfos)获取集合元素数量，使用[OH_AbilityRuntime_GetModObjExtensionInfoByIndex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-extension-manager-h#oh_abilityruntime_getmodobjextensioninfobyindex)按索引遍历各个ModularObjectExtensionAbility信息，获取启动模式、进程模式、线程模式等属性。使用完毕后需调用[OH_AbilityRuntime_ReleaseAllExtensionInfos](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-extension-manager-h#oh_abilityruntime_releaseallextensioninfos)释放以避免内存泄漏。
 
 起始版本： 26.0.0
 
@@ -310,7 +312,7 @@ AbilityRuntime_ErrorCode OH_AbilityRuntime_GetModObjExtensionInfoByIndex(OH_Abil
 ```
  描述
 
-根据索引从ModularObjectExtensionAbility信息集合中获取指定的ModularObjectExtensionAbility信息。索引的有效范围为[0, count)，其中count可通过[OH_AbilityRuntime_GetCountFromAllModObjExtensionInfos](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-extension-manager-h#oh_abilityruntime_getcountfromallmodobjextensioninfos)获取。获取到的ModularObjectExtensionAbility信息句柄可用于查询该ModularObjectExtensionAbility的启动模式、进程模式、线程模式等属性。
+根据索引从ModularObjectExtensionAbility信息集合中获取指定的ModularObjectExtensionAbility信息。索引的有效范围为[0, count)，其中count可通过[OH_AbilityRuntime_GetCountFromAllModObjExtensionInfos](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-extension-manager-h#oh_abilityruntime_getcountfromallmodobjextensioninfos)获取。获取到的ModularObjectExtensionAbility信息句柄可用于查询该ModularObjectExtensionAbility的启动模式、进程模式、线程模式等属性。返回的extensionInfo为非拥有型句柄，指向allExtensionInfos集合内部存储，请勿单独释放，仅在allExtensionInfos有效期间可用。
 
 起始版本： 26.0.0
 
@@ -338,6 +340,8 @@ AbilityRuntime_ErrorCode OH_AbilityRuntime_ConnectModularObjectExtensionAbility(
 连接ModularObjectExtensionAbility。
 
 起始版本： 26.0.0
+
+设备行为差异：该接口仅在PC/2in1设备中可正常调用，在其他设备中返回ABILITY_RUNTIME_ERROR_CODE_NOT_SUPPORTED错误码。
 
 参数：
 

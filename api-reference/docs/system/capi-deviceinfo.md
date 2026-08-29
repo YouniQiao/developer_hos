@@ -2,15 +2,15 @@
 title: "DeviceInfo"
 upstream_id: "harmonyos-references/capi-deviceinfo"
 catalog: "harmonyos-references"
-content_hash: "01d0019d9b6d"
-synced_at: "2026-07-09T00:59:42.393908"
+content_hash: "379cb3d12aaa"
+synced_at: "2026-08-29T18:16:58.408842"
 ---
 
 # DeviceInfo
 
 #### 概述
 
-提供查询终端设备信息的API。
+提供查询终端设备信息的API。该模块提供了获取设备类型、制造商、品牌、型号、版本信息等设备基础信息的能力，适用于需要根据设备特性进行适配、统计设备信息或进行设备管理的场景。这些API通过读取系统属性获取设备信息，返回值为指向常量字符串的指针。该指针指向系统内部存储的数据，调用者无需释放内存。
 
 起始版本： 10
 
@@ -18,4 +18,4 @@ synced_at: "2026-07-09T00:59:42.393908"
 
 | 名称 | 描述 |
 | --- | --- |
-| [deviceinfo.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-deviceinfo-h) | 声明用于查询终端设备信息的API。 |
+| [deviceinfo.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-deviceinfo-h) | 该模块提供了获取设备类型、制造商、品牌、型号、版本信息等设备基础信息的能力，适用于需要根据设备特性进行适配、统计设备信息或进行设备管理的场景。这些API通过读取系统属性获取设备信息，返回值为指向常量字符串的指针。该指针指向系统内部存储的数据，调用者无需释放内存。 |

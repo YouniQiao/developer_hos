@@ -1,16 +1,14 @@
 ---
-
 title: "点击控制"
 upstream_id: "harmonyos-references/ts-universal-attributes-click"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T00:58:19.195987"
-content_hash: "a7ee5c81b17b"
+content_hash: "ae185aa846bf"
+synced_at: "2026-08-29T18:15:25.997477"
 ---
-
 
 # 点击控制
 
-设置组件是否可以响应点击事件、触摸事件等手指交互事件。
+用于根据交互需求设置组件是否可以响应点击事件、触摸事件等手指交互事件，满足不同场景下对组件交互响应的控制需求。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -18,7 +16,7 @@ content_hash: "a7ee5c81b17b"
 
 touchable(value: boolean): T
 
-设置当前组件是否可以响应点击事件、触摸事件等手指交互事件。
+设置当前组件的交互响应能力。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，建议使用[hitTestBehavior](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-hit-test-behavior#hittestbehavior)替代。
 
@@ -42,27 +40,27 @@ touchable(value: boolean): T
 // xxx.ets
 @Entry
 @Component
-struct TouchAbleExample {
-  @State text1: string = ''
-  @State text2: string = ''
+struct TouchableExample {
+  @State text1: string = '';
+  @State text2: string = '';
 
   build() {
     Stack() {
       Rect()
         .fill(Color.Gray).width(150).height(150)
         .onClick(() => {
-          console.info(this.text1 = 'Rect Clicked')
+          console.info(this.text1 = 'Rect Clicked');
         })
         .overlay(this.text1, { align: Alignment.Bottom, offset: { x: 0, y: 20 } })
       Ellipse()
         .fill(Color.Pink).width(150).height(80)
         .touchable(false) // 点击Ellipse区域，不会打印 “Ellipse Clicked”
         .onClick(() => {
-          console.info(this.text2 = 'Ellipse Clicked')
+          console.info(this.text2 = 'Ellipse Clicked');
         })
         .overlay(this.text2, { align: Alignment.Bottom, offset: { x: 0, y: 20 } })
-    }.margin(100)
+    }.margin(100);
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470231.gif)
+ ![](./img/zh-cn_image_0000002701640214.gif)

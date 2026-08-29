@@ -2,8 +2,8 @@
 title: "sceneMap（场景化控件）"
 upstream_id: "harmonyos-references/map-scenemap"
 catalog: "harmonyos-references"
-content_hash: "4bf4eb81c8e7"
-synced_at: "2026-07-28T16:52:45.789769"
+content_hash: "d81472e28866"
+synced_at: "2026-08-29T18:18:22.642572"
 ---
 
 # sceneMap（场景化控件）
@@ -62,7 +62,7 @@ queryLocation(context: common.UIAbilityContext, options: LocationQueryOptions): 
 | 1002600002 | Failed to connect to the Map Kit server. |
 | 1002600003 | App authentication failed. |
 | 1002600004 | The Map permission is not enabled. |
-| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. 适用版本：5.1.0(18)+ |
 
 示例：
 

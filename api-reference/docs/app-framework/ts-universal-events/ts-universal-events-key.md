@@ -2,8 +2,8 @@
 title: "按键事件"
 upstream_id: "harmonyos-references/ts-universal-events-key"
 catalog: "harmonyos-references"
-content_hash: "df861d69c2ec"
-synced_at: "2026-07-28T16:41:50.299918"
+content_hash: "c59ba517f01d"
+synced_at: "2026-08-29T18:12:39.749720"
 ---
 
 # 按键事件
@@ -150,7 +150,7 @@ getModifierKeyState?(keys: Array<string>): boolean
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| keys | Array | 是 | 修饰键列表。支持修饰键 'Ctrl'| 'Alt' | 'Shift'。传入不支持的修饰键时，抛出401错误码。 **说明：** 此接口不支持在手写笔场景下使用。 |
+| keys | Array | 是 | 修饰键列表。支持修饰键 'Ctrl'| 'Alt' | 'Shift'。 **说明：** 此接口不支持在手写笔场景下使用。 |
 
 返回值：
 
@@ -217,7 +217,7 @@ struct KeyEventExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087749.gif)
+ ![](./img/zh-cn_image_0000002731518653.gif)
 
 #### [h2]示例2（获取Unicode码值）
 
@@ -260,7 +260,7 @@ struct KeyEventExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685927921.gif)
+ ![](./img/zh-cn_image_0000002701639456.gif)
 
 #### [h2]示例3（触发onKeyPreIme回调）
 
@@ -357,4 +357,4 @@ struct KeyEventExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008242.gif)
+ ![](./img/zh-cn_image_0000002731358677.gif)

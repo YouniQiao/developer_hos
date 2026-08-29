@@ -2,8 +2,8 @@
 title: "RichText"
 upstream_id: "harmonyos-references/ts-basic-components-richtext"
 catalog: "harmonyos-references"
-content_hash: "db693af827a7"
-synced_at: "2026-07-09T00:57:58.503975"
+content_hash: "ea63a8d6679e"
+synced_at: "2026-08-29T18:14:05.255927"
 ---
 
 # RichText
@@ -161,7 +161,7 @@ struct RichTextExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732629.png)
+ ![](./img/zh-cn_image_0000002731359073.png)
 
 加载本地资源文件。
 
@@ -181,7 +181,7 @@ struct RichTextComponent {
   }
 }
 ```
- 通过resources协议加载，适用Webview加载带有"#"路由的链接。
+ 通过resource协议加载，适用Webview加载带有"#"路由的链接。
 
 使用 resource://rawfile/ 协议前缀可以避免常规 $rawfile 方式在处理带有"#"路由链接时的局限性。当URL中包含"#"号时，"#"后面的内容会被视为锚点（fragment）。
 

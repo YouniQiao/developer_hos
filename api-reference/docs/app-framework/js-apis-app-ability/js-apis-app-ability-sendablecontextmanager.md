@@ -2,8 +2,8 @@
 title: "@ohos.app.ability.sendableContextManager (sendable上下文管理)"
 upstream_id: "harmonyos-references/js-apis-app-ability-sendablecontextmanager"
 catalog: "harmonyos-references"
-content_hash: "a24550db2cb6"
-synced_at: "2026-07-09T00:57:05.486392"
+content_hash: "a21e32651027"
+synced_at: "2026-08-29T18:11:58.486130"
 ---
 
 # @ohos.app.ability.sendableContextManager (sendable上下文管理)
@@ -461,11 +461,11 @@ workerPort.onmessage = (e: MessageEvents) => {
 }
 
 workerPort.onmessageerror = (e: MessageEvents) => {
-  hilog.info(0x0000, 'testTag', '%{public}s', 'onmessageerror');
+  hilog.error(0x0000, 'testTag', '%{public}s', 'onmessageerror');
 }
 
 workerPort.onerror = (e: ErrorEvent) => {
-  hilog.info(0x0000, 'testTag', '%{public}s', 'onerror');
+  hilog.error(0x0000, 'testTag', '%{public}s', 'onerror');
 }
 ```
 
@@ -576,11 +576,11 @@ workerPort.onmessage = (e: MessageEvents) => {
 }
 
 workerPort.onmessageerror = (e: MessageEvents) => {
-  hilog.info(0x0000, 'testTag', '%{public}s', 'onmessageerror');
+  hilog.error(0x0000, 'testTag', '%{public}s', 'onmessageerror');
 }
 
 workerPort.onerror = (e: ErrorEvent) => {
-  hilog.info(0x0000, 'testTag', '%{public}s', 'onerror');
+  hilog.error(0x0000, 'testTag', '%{public}s', 'onerror');
 }
 ```
 

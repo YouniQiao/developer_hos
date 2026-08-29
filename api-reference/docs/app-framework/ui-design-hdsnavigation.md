@@ -1,16 +1,16 @@
 ---
-title: "HdsNavigation"
+title: "HdsNavigation (导航根视图容器)"
 upstream_id: "harmonyos-references/ui-design-hdsnavigation"
 catalog: "harmonyos-references"
-content_hash: "2d7ebfb44360"
-synced_at: "2026-08-03T17:10:48.873323"
+content_hash: "6e9b79ee81bb"
+synced_at: "2026-08-29T18:16:18.627247"
 ---
 
-# HdsNavigation
+# HdsNavigation (导航根视图容器)
 
 本模块提供导航组件的能力，默认支持标题栏随内容区滚动的动态模糊样式。6.0.0(20)及以上版本，推荐使用[bindToScrollable](#bindtoscrollable)、[bindToNestedScrollable](#bindtonestedscrollable)属性绑定导航组件和可滚动容器组件后，再使用导航组件滚动相关的功能，从而获得更优的体验。如滚动生效动态模糊样式，标题栏随内容区滚动动态显隐功能等。
 
-HdsNavigation组件是路由导航的根视图容器，一般作为Page页面的根容器使用，其内部默认包含了标题栏、内容区和工具栏。其中内容区默认首页显示导航内容（HdsNavigation的子组件）或非首页显示（[HdsNavDestination](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ui-design-hdsnavdestination)的子组件），首页和非首页通过路由进行切换。
+HdsNavigation组件是路由导航的根视图容器，一般作为Page页面的根容器使用，其内部默认包含了标题栏、内容区和工具栏。其中内容区默认首页显示导航内容（HdsNavigation的子组件）或非首页显示（[HdsNavDestination (导航子页面容器)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ui-design-hdsnavdestination)的子组件），首页和非首页通过路由进行切换。
 
 起始版本： 5.1.0(18)
 
@@ -34,7 +34,7 @@ import { HdsNavigation } from '@kit.UIDesignKit';
 
 #### 子组件
 
-可以包含子组件。 推荐使用[NavPathStack](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#navpathstack10)配合[HdsNavDestination](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ui-design-hdsnavdestination)属性进行页面路由。
+可以包含子组件。 推荐使用[NavPathStack](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#navpathstack10)配合[HdsNavDestination (导航子页面容器)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ui-design-hdsnavdestination)属性进行页面路由。
 
 #### 接口
 
@@ -564,7 +564,7 @@ onNavBarStateChange(callback: Callback<boolean>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callBack | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 是 | 回调函数。返回true表示显示导航栏，返回false表示隐藏导航栏。 |
+| callback | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 是 | 回调函数。返回true表示显示导航栏，返回false表示隐藏导航栏。 |
 
 #### [h2]onNavigationModeChange
 
@@ -888,7 +888,7 @@ HdsNavigation标题栏背景板样式。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| backgroundColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 标题栏背景板背景色。 默认值： 模糊样式类型为COMMON_BLUR或GRADUAL_BLUR时，背景色默认值均为透明色。 模糊样式类型为GRADIENT_BLUR时，背景色生效线性径向渐变色，具体默认值分以下场景： - 若[ScrollEffectOptions](#scrolleffectoptions).enableScrollEffect为true，在[TitleBarStyleOptions](#titlebarstyleoptions).originalStyle中，backgroundColor默认值为透明色；在[TitleBarStyleOptions](#titlebarstyleoptions).scrollEffectStyle中，backgroundColor默认值为#99000000。 - 若[ScrollEffectOptions](#scrolleffectoptions).enableScrollEffect为false，仅在[TitleBarStyleOptions](#titlebarstyleoptions).originalStyle中，backgroundColor生效，默认值为透明色。 从6.1.0(23)开始，新增如下背景色默认规则： 当模糊样式类型为GRADIENT_BLUR并已配置systemMaterialEffect，或者模糊类型为IMMERSIVE_GRADIENT_BLUR时，对应默认值如下： - 若[ScrollEffectOptions](#scrolleffectoptions).enableScrollEffect为true，默认值为透明色；若[ScrollEffectOptions](#scrolleffectoptions).enableScrollEffect为false，默认值为$r('sys.color.comp_background_gray')。 - 仅当[ScrollEffectOptions](#scrolleffectoptions).enableScrollEffect为true时生效，默认值为$r('sys.color.comp_background_gray')。 |
+| backgroundColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 标题栏背景板背景色。 当模糊样式类型为COMMON_BLUR或GRADUAL_BLUR时，背景色默认值均为透明色。 当模糊样式类型为GRADIENT_BLUR或IMMERSIVE_GRADIENT_BLUR时，背景色生效线性径向渐变色。背景色生效规则及默认值分以下场景： 1. 当模糊样式类型为GRADIENT_BLUR时： -当[ScrollEffectOptions](#scrolleffectoptions).enableScrollEffect为false时，[TitleBarStyleOptions](#titlebarstyleoptions).originalStyle中的backgroundColor默认值为#99000000；[TitleBarStyleOptions](#titlebarstyleoptions).scrollEffectStyle中的backgroundColor不生效。 -当[ScrollEffectOptions](#scrolleffectoptions).enableScrollEffect为true时，TitleBarStyleOptions.originalStyle中的backgroundColor默认值为透明色，且不支持自定义配置。[TitleBarStyleOptions](#titlebarstyleoptions).scrollEffectStyle中的backgroundColor默认值为#99000000。 从API版本6.1.0(23)开始，新增如下背景色生效规则及默认值： 2. 当模糊样式类型为GRADIENT_BLUR并配置沉浸光感属性[TitleBarStyleOptions](#titlebarstyleoptions).systemMaterialEffect时： -当[ScrollEffectOptions](#scrolleffectoptions).enableScrollEffect为false时，[TitleBarStyleOptions](#titlebarstyleoptions).originalStyle中的backgroundColor默认值为$r('sys.color.comp_background_gray')。 -当[ScrollEffectOptions](#scrolleffectoptions).enableScrollEffect为true时，[TitleBarStyleOptions](#titlebarstyleoptions).originalStyle中的backgroundColor默认值为透明色；[TitleBarStyleOptions](#titlebarstyleoptions).scrollEffectStyle中的backgroundColor默认值为$r('sys.color.comp_background_gray')。 从API版本26.0.0开始，新增支持自定义配置[TitleBarStyleOptions](#titlebarstyleoptions).originalStyle中的backgroundColor。 3. 当模糊样式类型为IMMERSIVE_GRADIENT_BLUR时： - 当[ScrollEffectOptions](#scrolleffectoptions).enableScrollEffect为false时： 若未同时配置沉浸光感属性[TitleBarStyleOptions](#titlebarstyleoptions).systemMaterialEffect属性，[TitleBarStyleOptions](#titlebarstyleoptions).originalStyle中的backgroundColor默认值为#99000000，且不支持自定义配置。 若已同时配置沉浸光感属性[TitleBarStyleOptions](#titlebarstyleoptions).systemMaterialEffect属性，[TitleBarStyleOptions](#titlebarstyleoptions).originalStyle中的backgroundColor默认值为$r('sys.color.comp_background_gray')。 -当[ScrollEffectOptions](#scrolleffectoptions).enableScrollEffect为true时，[TitleBarStyleOptions](#titlebarstyleoptions).scrollEffectStyle中的backgroundColor默认值为$r('sys.color.comp_background_gray')；[TitleBarStyleOptions](#titlebarstyleoptions).originalStyle中的backgroundColor默认值为透明色。 从API版本26.0.0开始，若已同时配置沉浸光感属性[TitleBarStyleOptions](#titlebarstyleoptions).systemMaterialEffect属性，新增支持自定义配置[TitleBarStyleOptions](#titlebarstyleoptions).originalStyle中的backgroundColor。 |
 | maskExtraHeight | number | 否 | 是 | 标题栏模糊蒙层超出标题栏的额外高度。该配置只在模糊样式类型配置为GRADIENT_BLUR时生效。单位：vp。 默认值：32。单位：vp。 **起始版本：** 6.0.0(20) |
 | blurRadius | number | 否 | 是 | 标题栏模糊半径。仅在模糊样式类型配置为渐变模糊GRADIENT_BLUR及沉浸式渐变模糊IMMERSIVE_GRADIENT_BLUR时生效。取值范围为[0.0, 128.0]。超出取值范围时，按默认值处理。 默认值： - 作为[TitleBarStyleOptions](#titlebarstyleoptions).originalStyle中的属性时，当[ScrollEffectOptions](#scrolleffectoptions).enableScrollEffect为true时，默认值为0.0；当[ScrollEffectOptions](#scrolleffectoptions).enableScrollEffect为false，未配置systemMaterialEffect时，默认值为16.0，配置systemMaterialEffect时，默认值为12.0。 - 作为[TitleBarStyleOptions](#titlebarstyleoptions).scrollEffectStyle中的属性时，仅在[ScrollEffectOptions](#scrolleffectoptions).enableScrollEffect为true时生效，未配置systemMaterialEffect时，默认值为16.0，配置systemMaterialEffect时，默认值为12.0。 **起始版本：** 6.1.0(23) |
 
@@ -988,7 +988,7 @@ HdsNavigation标题栏的动态样式参数配置。
 | scrollEffectType | [ScrollEffectType](#scrolleffecttype) | 否 | 是 | 标题栏模糊样式类型。 默认值：ScrollEffectType.COMMON_BLUR。 |
 | enableRefreshOffsetChange | boolean | 否 | 是 | 是否响应内容区Refresh组件的滚动。 默认值：true。 - true：随内容区Refresh组件的滚动变化生效对应的标题栏样式。 - false：不随内容区Refresh组件的滚动变化生效对应的标题栏样式。 **起始版本：** 6.1.0(23) |
 | blurEffectiveStartOffset | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | 动态样式线性过渡的起始位置。当内容区滚动的总偏移量超过该值时，标题栏开始从[originalStyle](#titlebarstyleoptions)到[scrollEffectStyle](#titlebarstyleoptions)线性过渡。 取值范围[0,+∞)。 默认值：LengthMetric.vp(0)。 超出取值范围时，按默认值处理。 |
-| blurEffectiveEndOffset | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | 动态样式线性过渡的终点位置。当内容区滚动的总偏移量超过该值时，标题栏的动态样式过渡结束，固定为[scrollEffectStyle](#titlebarstyleoptions)。 取值范围[0,+∞)。 若设置数值小于blurEffectiveStartOffset，按默认值处理。 默认值： - 标题栏模糊样式类型设置为ScrollEffectType.COMMON_BLUR或者ScrollEffectType.GRADIENT_BLUR时，默认值为LengthMetric.vp(8)。 - 标题栏模糊样式类型设置为ScrollEffectType.GRADUAL_BLUR，默认值为LengthMetric.vp(56)。 |
+| blurEffectiveEndOffset | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | 动态样式线性过渡的终点位置。当内容区滚动的总偏移量超过该值时，标题栏的动态样式过渡结束，固定为[scrollEffectStyle](#titlebarstyleoptions)。 取值范围[0,+∞)。 若设置数值小于blurEffectiveStartOffset，按默认值处理。 默认值： - 标题栏模糊样式类型设置为ScrollEffectType.COMMON_BLUR时，默认值为LengthMetric.vp(8)。 - 标题栏模糊样式类型设置为ScrollEffectType.GRADIENT_BLUR时，默认值为LengthMetric.vp(8)。**起始版本：** 6.0.0(20) - 标题栏模糊样式类型设置为ScrollEffectType.GRADUAL_BLUR，默认值为LengthMetric.vp(56)。**起始版本：** 6.0.0(20) -标题栏模糊样式类型设置为ScrollEffectType.IMMERSIVE_GRADIENT_BLUR，默认值为LengthMetric.vp(56)。**起始版本：** 6.1.0(23) |
 
 #### TitleBarStyleOptions
 
@@ -1422,7 +1422,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002659441046.gif)
+ ![](./img/zh-cn_image_0000002701640568.gif)
 
 #### [h2]设置菜单消息提醒
 
@@ -1485,7 +1485,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002659600974.jpg)
+ ![](./img/zh-cn_image_0000002731359785.jpg)
 
 #### [h2]设置自定义区域
 
@@ -1572,7 +1572,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002689560557.jpg)
+ ![](./img/zh-cn_image_0000002701800480.jpg)
 
 #### [h2]设置标题栏的动态显隐
 
@@ -1638,7 +1638,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002689680381.gif)
+ ![](./img/zh-cn_image_0000002731519767.gif)
 
 #### [h2]设置标题栏图标样式
 
@@ -1713,7 +1713,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002659441048.jpg)
+ ![](./img/zh-cn_image_0000002701640570.jpg)
 
 #### [h2]半模态标题栏样式
 
@@ -1805,7 +1805,7 @@ struct SheetTransitionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002659600976.jpg)
+ ![](./img/zh-cn_image_0000002731359787.jpg)
 
 #### [h2]图标上绑定自定义menu
 
@@ -1897,7 +1897,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002689560559.gif)
+ ![](./img/zh-cn_image_0000002701800482.gif)
 
 #### [h2]设置应用内多窗图标
 
@@ -1949,7 +1949,7 @@ struct MultiWindowEntryInAPPTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002689680383.jpg)
+ ![](./img/zh-cn_image_0000002731519769.jpg)
 
 #### [h2]设置HdsNavigation双栏模式
 
@@ -2015,7 +2015,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002659441050.gif)
+ ![](./img/zh-cn_image_0000002701640572.gif)
 
 #### [h2]设置标题栏沉浸式样式
 
@@ -2122,14 +2122,14 @@ struct Index {
 
 执行上述代码展示的效果如下。
 
-![](./img/zh-cn_image_0000002659600978.gif)
+![](./img/zh-cn_image_0000002731359789.gif)
 
 #### [h2]通过onReady获取栈
 
 该示例主要演示如下两点功能：
 
 1. [NavPathStack](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#navpathstack10)无需声明为状态变量，也可以实现路由栈操作功能。
-2. [HdsNavDestination](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ui-design-hdsnavdestination)通过[onReady](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ui-design-hdsnavdestination#onready)事件能够拿到对应的NavPathInfo和所属的[NavPathStack](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#navpathstack10)。
+2. [HdsNavDestination (导航子页面容器)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ui-design-hdsnavdestination)通过[onReady](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ui-design-hdsnavdestination#onready)事件能够拿到对应的NavPathInfo和所属的[NavPathStack](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#navpathstack10)。
 
 示例：
 
@@ -2261,4 +2261,4 @@ struct NavigationExample2 {
 
 执行上述代码，效果展示如下。
 
-![](./img/zh-cn_image_0000002689560561.gif)
+![](./img/zh-cn_image_0000002701800484.gif)

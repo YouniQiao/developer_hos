@@ -2,8 +2,8 @@
 title: "Types"
 upstream_id: "harmonyos-references/arkts-apis-webview-t"
 catalog: "harmonyos-references"
-content_hash: "3c3678153f1d"
-synced_at: "2026-07-09T00:58:52.589576"
+content_hash: "97e7ae96c684"
+synced_at: "2026-08-29T18:15:59.437532"
 ---
 
 # Types
@@ -34,7 +34,7 @@ type WebMessage = ArrayBuffer | string
 
 type OnProxyConfigChangeCallback = () => void
 
-回调函数，回调成功表示代理设置成功。
+回调函数，在代理配置发生改变时被调用，回调成功表示代理设置成功。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -46,7 +46,7 @@ type OnProxyConfigChangeCallback = () => void
 
 type CreateNativeMediaPlayerCallback = (handler: NativeMediaPlayerHandler, mediaInfo: MediaInfo) => NativeMediaPlayerBridge
 
-[onCreateNativeMediaPlayer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#oncreatenativemediaplayer12)方法的参数。一个回调函数，创建一个播放器，用于接管网页中的媒体播放。
+[onCreateNativeMediaPlayer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#oncreatenativemediaplayer12)方法的参数。一个回调函数，在网页需要播放媒体时被调用，用于创建一个播放器接管网页中的媒体播放。通过接管机制，应用可以使用自定义播放器实现特殊功能或优化性能。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -54,14 +54,14 @@ type CreateNativeMediaPlayerCallback = (handler: NativeMediaPlayerHandler, media
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| handler | [NativeMediaPlayerHandler](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-nativemediaplayerhandler) | 是 | 通过该对象，将播放器的状态报告给 ArkWeb 内核。 |
+| handler | [NativeMediaPlayerHandler](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-nativemediaplayerhandler) | 是 | 通过该对象，将播放器的状态报告给ArkWeb内核。应用通过该对象上报播放、暂停、错误等状态事件，使ArkWeb内核能够同步网页中的媒体播放状态。 |
 | mediaInfo | [MediaInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-i#mediainfo12) | 是 | 网页媒体的信息。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeMediaPlayerBridge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-nativemediaplayerbridge) | 接管网页媒体的播放器和 ArkWeb 内核之间的一个接口类。 应用需要实现该接口类。 ArkWeb 内核通过该接口类的对象来控制应用创建的用来接管网页媒体的播放器。 如果应用返回了 null，则表示应用不接管这个媒体的播放，由 ArkWeb 内核来播放该媒体。 |
+| [NativeMediaPlayerBridge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-nativemediaplayerbridge) | 接管网页媒体播放器和ArkWeb内核之间的一个接口类。 应用需要实现该接口类。 ArkWeb内核通过该接口对象控制应用创建的媒体播放器。 如果应用返回了null，则表示应用不接管这个媒体的播放，由ArkWeb内核来播放该媒体。 |
 
 示例：
 

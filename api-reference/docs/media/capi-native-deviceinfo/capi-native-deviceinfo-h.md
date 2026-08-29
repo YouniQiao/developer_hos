@@ -2,8 +2,8 @@
 title: "native_deviceinfo.h"
 upstream_id: "harmonyos-references/capi-native-deviceinfo-h"
 catalog: "harmonyos-references"
-content_hash: "d8d6df570a64"
-synced_at: "2026-07-24T16:45:36.910526"
+content_hash: "20d4e62e5e4e"
+synced_at: "2026-08-29T18:17:27.563782"
 ---
 
 # native_deviceinfo.h
@@ -59,7 +59,7 @@ AVSession_ErrCode OH_DeviceInfo_GetAVCastCategory(AVSession_DeviceInfo *deviceIn
 | 参数项 | 描述 |
 | --- | --- |
 | [AVSession_DeviceInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-avsession-deviceinfo) *deviceInfo | 表示设备信息实例指针。 |
-| [AVSession_AVCastCategory](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avsession-base-h#avsession_avcastcategory) *aVCastCategory | 返回aVCastCategory值的指针变量。 |
+| [AVSession_AVCastCategory](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avsession-base-h#avsession_avcastcategory) *aVCastCategory | 输出参数，用于接收投播类别的指针变量。 |
 
 返回：
 
@@ -83,7 +83,7 @@ AVSession_ErrCode OH_DeviceInfo_GetDeviceId(AVSession_DeviceInfo *deviceInfo, ch
 | 参数项 | 描述 |
 | --- | --- |
 | [AVSession_DeviceInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-avsession-deviceinfo) *deviceInfo | 表示设备信息实例指针。 |
-| char **deviceId | 用于获取设备ID字符串指针。 |
+| char **deviceId | 输出参数，用于存储获取到的设备ID字符串指针。 |
 
 返回：
 
@@ -107,7 +107,7 @@ AVSession_ErrCode OH_DeviceInfo_GetDeviceName(AVSession_DeviceInfo *deviceInfo, 
 | 参数项 | 描述 |
 | --- | --- |
 | [AVSession_DeviceInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-avsession-deviceinfo) *deviceInfo | 表示设备信息实例指针。 |
-| char **deviceName | 用于获取设备名称字符串指针。 |
+| char **deviceName | 输出参数，用于存储获取到的设备名称字符串指针。 |
 
 返回：
 
@@ -131,7 +131,7 @@ AVSession_ErrCode OH_DeviceInfo_GetDeviceType(AVSession_DeviceInfo *deviceInfo, 
 | 参数项 | 描述 |
 | --- | --- |
 | [AVSession_DeviceInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-avsession-deviceinfo) *deviceInfo | 表示设备信息实例指针。 |
-| [AVSession_DeviceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avsession-base-h#avsession_devicetype) *deviceType | 返回设备类型的指针变量。 |
+| [AVSession_DeviceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avsession-base-h#avsession_devicetype) *deviceType | 输出参数，用于接收设备类型的指针，具体枚举值含义见AVSession_DeviceType。 |
 
 返回：
 
@@ -155,7 +155,7 @@ AVSession_ErrCode OH_DeviceInfo_GetSupportedProtocols(AVSession_DeviceInfo *devi
 | 参数项 | 描述 |
 | --- | --- |
 | [AVSession_DeviceInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-avsession-deviceinfo) *deviceInfo | 表示设备信息实例指针。 |
-| uint32_t *deviceProtocolType | 用于获取设备支持协议类型的指针。 |
+| uint32_t *deviceProtocolType | 输出参数，用于接收设备支持的协议类型的指针，返回值为协议类型的位掩码组合。 |
 
 返回：
 

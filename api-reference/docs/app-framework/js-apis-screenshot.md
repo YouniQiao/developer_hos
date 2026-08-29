@@ -2,8 +2,8 @@
 title: "@ohos.screenshot (屏幕截图)"
 upstream_id: "harmonyos-references/js-apis-screenshot"
 catalog: "harmonyos-references"
-content_hash: "07e6cc894d84"
-synced_at: "2026-07-28T16:41:46.107571"
+content_hash: "9b2d415eb824"
+synced_at: "2026-08-29T18:12:37.711759"
 ---
 
 # @ohos.screenshot (屏幕截图)
@@ -30,10 +30,10 @@ import { screenshot } from '@kit.ArkUI';
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| left | number | 否 | 否 | 表示截取图像区域的左边界，单位为px，该参数应为整数。 |
-| top | number | 否 | 否 | 表示截取图像区域的上边界，单位为px，该参数应为整数。 |
-| width | number | 否 | 否 | 表示截取图像区域的宽度，单位为px，该参数应为整数。 |
-| height | number | 否 | 否 | 表示截取图像区域的高度，单位为px，该参数应为整数。 |
+| left | number | 否 | 否 | 表示截取图像区域的左边界，单位为px，该参数应为非负整数。 |
+| top | number | 否 | 否 | 表示截取图像区域的上边界，单位为px，该参数应为非负整数。 |
+| width | number | 否 | 否 | 表示截取图像区域的宽度，单位为px，该参数应为正整数。 |
+| height | number | 否 | 否 | 表示截取图像区域的高度，单位为px，该参数应为正整数。 |
 
 #### CaptureOption14+
 
@@ -43,8 +43,8 @@ import { screenshot } from '@kit.ArkUI';
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| displayId | number | 否 | 是 | 表示截取图像的显示设备[Display](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#display)的ID号，默认为0，该参数应为大于或等于0的整数，非整数会报参数错误。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
-| blackWindowIds21+ | Array | 否 | 是 | 表示截取图像时不显示的窗口ID列表，默认为空。窗口ID应为大于0的整数，目前仅[闪控球窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-floatingball)生效，窗口ID为非闪控球窗口、非整数、小于等于0、或者不存在的窗口ID时报参数错误，错误码为401。推荐使用[getFloatingBallWindowInfo()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-floatingball#getfloatingballwindowinfo)方法获取闪控球窗口ID属性。 **元服务API：** 从API version 21开始，该接口支持在元服务中使用。 |
+| displayId | number | 否 | 是 | 表示截取图像的显示设备[Display](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#display)的ID号，默认为0，该参数应为大于或等于0的整数，非整数会报参数错误，错误码为[401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败)。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
+| blackWindowIds21+ | Array | 否 | 是 | 表示截取图像时不显示的窗口ID列表，默认为空。窗口ID应为大于0的整数，目前仅[闪控球窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-floatingball)生效，窗口ID为非闪控球窗口、非整数、小于等于0、或者不存在的窗口ID时报参数错误，错误码为[401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败)。推荐使用[getFloatingBallWindowInfo()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-floatingball#getfloatingballwindowinfo)方法获取闪控球窗口ID属性。 **元服务API：** 从API version 21开始，该接口支持在元服务中使用。 |
 
 #### PickInfo
 
@@ -89,7 +89,7 @@ pick(): Promise<PickInfo>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 801 | Capability not supported on this device. |
+| 801 | Capability not supported. |
 | 1400003 | This display manager service works abnormally. |
 
 示例：
@@ -153,7 +153,7 @@ capture(options?: CaptureOption): Promise<image.PixelMap>
 | --- | --- |
 | 201 | Permission verification failed. The application does not have the permission required to call the API. |
 | 401 | Parameter error. Possible causes: 1. Incorrect parameter types. 2. Parameter verification failed. |
-| 801 | Capability not supported on this device. |
+| 801 | Capability not supported. |
 | 1400003 | This display manager service works abnormally. |
 
 示例：
@@ -164,7 +164,7 @@ import { image } from '@kit.ImageKit';
 
 // 配置截图参数，指定截取displayId为0的屏幕
 let captureOption: screenshot.CaptureOption = {
-  "displayId": 0
+  displayId: 0
 };
 try {
   // 调用capture接口获取全屏截图

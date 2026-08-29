@@ -2,8 +2,8 @@
 title: "native_audiostream_base.h"
 upstream_id: "harmonyos-references/capi-native-audiostream-base-h"
 catalog: "harmonyos-references"
-content_hash: "67921bc84c22"
-synced_at: "2026-07-28T16:51:28.542352"
+content_hash: "516d9db3fa2f"
+synced_at: "2026-08-29T18:17:20.605006"
 ---
 
 # native_audiostream_base.h
@@ -59,8 +59,8 @@ synced_at: "2026-07-28T16:51:28.542352"
 | [OH_AudioStream_PrivacyType](#oh_audiostream_privacytype) | OH_AudioStream_PrivacyType | 用于标识对应播放音频流是否支持被其他应用录制。 |
 | [OH_AudioData_Callback_Result](#oh_audiodata_callback_result) | OH_AudioData_Callback_Result | 定义音频数据回调结果。 |
 | [OH_AudioStream_LatencyType](#oh_audiostream_latencytype) | OH_AudioStream_LatencyType | 定义音频时延类型。 |
-| [OH_AudioStream_PlaybackCaptureMode](#oh_audiostream_playbackcapturemode) | OH_AudioStream_PlaybackCaptureMode | 表示内录（录制设备内部应用的声音）的过滤类型，每种过滤类型可录制不同的播放流类型。该API暂不对外支持。 |
-| [OH_AudioStream_PlaybackCaptureStartState](#oh_audiostream_playbackcapturestartstate) | OH_AudioStream_PlaybackCaptureStartState | 定义内录的启动状态，该状态在调用[OH_AudioCapturer_RequestPlaybackCaptureStart](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiocapturer-h#oh_audiocapturer_requestplaybackcapturestart)函数后异步返回。该API暂不对外支持。 |
+| [OH_AudioStream_PlaybackCaptureMode](#oh_audiostream_playbackcapturemode) | OH_AudioStream_PlaybackCaptureMode | 表示内录（录制设备内部应用的声音）的过滤类型，每种过滤类型可录制不同的播放流类型。该API最初仅对特定系统应用可用，从API版本26.0.0开始，支持任意应用使用。 |
+| [OH_AudioStream_PlaybackCaptureStartState](#oh_audiostream_playbackcapturestartstate) | OH_AudioStream_PlaybackCaptureStartState | 定义内录的启动状态，该状态在调用[OH_AudioCapturer_RequestPlaybackCaptureStart](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiocapturer-h#oh_audiocapturer_requestplaybackcapturestart)函数后异步返回。该API最初仅对特定系统应用可用，从API版本26.0.0开始，支持任意应用使用。 |
 
 #### [h2]函数
 
@@ -91,6 +91,8 @@ enum OH_AudioStream_Result
 | AUDIOSTREAM_ERROR_ILLEGAL_STATE = 2 | 非法状态。 |
 | AUDIOSTREAM_ERROR_SYSTEM = 3 | 系统通用错误。 |
 | AUDIOSTREAM_ERROR_UNSUPPORTED_FORMAT = 4 | 不支持的音频格式，如不支持的编码类型、采样格式等。 **起始版本：** 19 |
+| AUDIOSTREAM_ERROR_UNSUPPORTED_ABILITY = 6800104 | 不支持的音频流能力，例如功能或配置不支持。 **起始版本：** 26.0.0 |
+| AUDIOSTREAM_ERROR_SERVICE_DIED = 6800302 | 音频服务进程异常结束。 **起始版本：** 26.0.0 |
 
 #### [h2]OH_AudioStream_Type
 
@@ -399,11 +401,11 @@ enum OH_AudioStream_DeviceChangeReason
 | 枚举项 | 描述 |
 | --- | --- |
 | REASON_UNKNOWN = 0 | 未知原因。 |
-| REASON_NEW_DEVICE_AVAILABLE = 1 | 新设备可用。 |
-| REASON_OLD_DEVICE_UNAVAILABLE = 2 | 旧设备不可用。当报告此原因时，应用程序应考虑暂停音频播放。 |
-| REASON_OVERRODE = 3 | 用户或系统强制选择切换。 |
-| REASON_SESSION_ACTIVATED = 4 | 音频会话激活触发的设备切换。 **起始版本：** 20 |
-| REASON_STREAM_PRIORITY_CHANGED = 5 | 更高优先级的音频流出现导致的系统设备切换。 **起始版本：** 20 |
+| REASON_NEW_DEVICE_AVAILABLE = 1 | 新设备可用。例如，音频播放过程中连接有线/蓝牙耳机。 |
+| REASON_OLD_DEVICE_UNAVAILABLE = 2 | 旧设备不可用。例如，音频播放过程中断开有线/蓝牙耳机。当报告此原因时，应用程序应考虑暂停音频播放。 |
+| REASON_OVERRODE = 3 | 用户或系统强制选择切换。例如，在播控中心强选设备。 |
+| REASON_SESSION_ACTIVATED = 4 | [音频会话管理(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-session-management)中激活音频会话触发的设备切换。 **起始版本：** 20 |
+| REASON_STREAM_PRIORITY_CHANGED = 5 | 更高优先级的音频流出现导致的系统设备切换。例如，音乐播放过程中来电，通话流优先级更高导致音乐设备被切换。 **起始版本：** 20 |
 
 #### [h2]OH_AudioStream_PrivacyType
 
@@ -462,7 +464,7 @@ enum OH_AudioStream_PlaybackCaptureMode
 ```
  描述
 
-表示内录（录制设备内部应用的声音）的过滤类型，每种过滤类型可录制不同的播放流类型。该API暂不对外支持。
+表示内录（录制设备内部应用的声音）的过滤类型，每种过滤类型可录制不同的播放流类型。该API最初仅对特定系统应用可用，从API版本26.0.0开始，支持任意应用使用。
 
 起始版本： 23
 
@@ -479,7 +481,7 @@ enum OH_AudioStream_PlaybackCaptureStartState
 ```
  描述
 
-定义内录的启动状态，该状态在调用[OH_AudioCapturer_RequestPlaybackCaptureStart](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiocapturer-h#oh_audiocapturer_requestplaybackcapturestart)函数后异步返回。该API暂不对外支持。
+定义内录的启动状态，该状态在调用[OH_AudioCapturer_RequestPlaybackCaptureStart](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiocapturer-h#oh_audiocapturer_requestplaybackcapturestart)函数后异步返回。该API最初仅对特定系统应用可用，从API版本26.0.0开始，支持任意应用使用。
 
 起始版本： 23
 

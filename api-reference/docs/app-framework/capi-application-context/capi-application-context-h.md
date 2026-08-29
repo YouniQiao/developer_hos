@@ -2,8 +2,8 @@
 title: "application_context.h"
 upstream_id: "harmonyos-references/capi-application-context-h"
 catalog: "harmonyos-references"
-content_hash: "15d75ad73b06"
-synced_at: "2026-07-28T16:40:43.359009"
+content_hash: "bf8fa5f4d495"
+synced_at: "2026-08-29T18:12:08.248961"
 ---
 
 # application_context.h
@@ -66,7 +66,7 @@ AbilityRuntime_ErrorCode OH_AbilityRuntime_ApplicationContextGetCacheDir(char* b
 | 参数项 | 描述 |
 | --- | --- |
 | char* buffer | 指向缓冲区的指针，用于接收本应用的应用级的缓存目录。 |
-| const int32_t bufferSize | 缓冲区大小，单位为字节。 |
+| int32_t bufferSize | 缓冲区大小，单位为字节。 |
 | int32_t* writeLength | 在返回[ABILITY_RUNTIME_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode)时，表示实际写入到缓冲区的字符串长度，单位为字节。 |
 
 返回：
@@ -114,7 +114,7 @@ AbilityRuntime_ErrorCode OH_AbilityRuntime_ApplicationContextGetBundleName(char*
 | 参数项 | 描述 |
 | --- | --- |
 | char* buffer | 指向缓冲区的指针，用于接收应用包名。 |
-| const int32_t bufferSize | 缓冲区大小，单位为字节。 |
+| int32_t bufferSize | 缓冲区大小，单位为字节。 |
 | int32_t* writeLength | 在返回[ABILITY_RUNTIME_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode)时，表示实际写入到缓冲区的字符串长度，单位为字节。 |
 
 返回：
@@ -130,7 +130,7 @@ AbilityRuntime_ErrorCode OH_AbilityRuntime_ApplicationContextGetTempDir(char* bu
 ```
  描述
 
-获取本应用的应用级的临时文件目录。该目录用于应用运行期间的临时文件，这些文件在应用退出或系统清理时可能被删除。
+获取本应用的应用级的临时文件目录。该目录用于存储应用运行期间的临时文件，这些文件在应用退出或系统清理时可能被删除。
 
 起始版本： 16
 

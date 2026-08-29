@@ -2,8 +2,8 @@
 title: "Class (ComponentSnapshot)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-componentsnapshot"
 catalog: "harmonyos-references"
-content_hash: "caac30eeff63"
-synced_at: "2026-07-28T16:41:01.422238"
+content_hash: "ee672ce6abf9"
+synced_at: "2026-08-29T18:12:22.800100"
 ---
 
 # Class (ComponentSnapshot)
@@ -90,7 +90,7 @@ struct SnapshotExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008172.gif)
+ ![](./img/zh-cn_image_0000002731358605.gif)
 
 #### get12+
 
@@ -636,11 +636,6 @@ struct SnapshotExample {
 createFromComponent<T extends Object>(content: ComponentContent<T>, delay?: number, checkImageStatus?: boolean, options?: componentSnapshot.SnapshotOptions): Promise<image.PixelMap>
 
 将传入的content对象进行截图。与createFromBuilder传入CustomBuilder由系统离屏构建不同，createFromComponent传入的是已构建的ComponentContent对象，适用于已经通过ComponentContent管理组件内容的场景（如弹窗、节点管理等）。使用Promise异步回调。
-
-![](./img/note_3.0-zh-cn.png)
-
-- 由于需要等待组件构建、渲染成功，截图的返回有一定的延迟，不适宜使用在对性能敏感的场景。
-- 部分执行耗时任务的组件可能无法及时在截图前加载完成，因此会截取不到加载成功后的图像。例如：加载网络图片的[Image](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-image)组件、[Web](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web)组件。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 

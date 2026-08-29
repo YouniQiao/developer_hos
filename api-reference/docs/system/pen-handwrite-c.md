@@ -2,8 +2,8 @@
 title: "HandWrite"
 upstream_id: "harmonyos-references/pen-handwrite-c"
 catalog: "harmonyos-references"
-content_hash: "0e0b6cb25825"
-synced_at: "2026-07-28T16:51:17.589168"
+content_hash: "836f7b7fd794"
+synced_at: "2026-08-29T18:17:12.995040"
 ---
 
 # HandWrite
@@ -34,7 +34,7 @@ synced_at: "2026-07-28T16:51:17.589168"
 
 | 名称 | 描述 |
 | --- | --- |
-| enum [Handwrite_ErrCode](#handwrite_errcode) { E_NO_ERROR = 0, E_PARAMS = 401, E_INNER_ERROR = 1010400001, E_PERMISSION = 201 } | 定义手写错误码。 |
+| [Handwrite_ErrCode](#handwrite_errcode) { E_NO_ERROR = 0, E_PARAMS = 401, E_INNER_ERROR = 1010400001, E_PERMISSION = 201 } | 定义手写错误码。 |
 
 #### [h2]函数
 

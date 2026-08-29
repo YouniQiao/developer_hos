@@ -2,13 +2,13 @@
 title: "@ohos.graphics.common2D (2D图形通用数据类型)"
 upstream_id: "harmonyos-references/js-apis-graphics-common2d"
 catalog: "harmonyos-references"
-content_hash: "70624f51ab27"
-synced_at: "2026-07-09T01:00:50.574962"
+content_hash: "25695c364acb"
+synced_at: "2026-08-29T18:17:49.336832"
 ---
 
 # @ohos.graphics.common2D (2D图形通用数据类型)
 
-本模块定义了一些2D图形领域的通用数据类型。
+本模块定义了一些2D图形领域的通用数据类型，包括颜色、矩形区域、坐标点等，适用于2D图形绘制等场景，为开发者提供了通用的图形数据结构，便于进行图形计算和渲染操作。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -38,7 +38,7 @@ ARGB格式的颜色描述。
 
 #### Rect
 
-矩形区域，通过2个坐标点可以描述出一个矩形区域，这2个点分别认为是矩形区域的左上角点与右下角点。
+矩形区域，通过左上角点和右下角点两个坐标点定义。
 
 元服务API： 从API version 22开始，该接口支持在元服务中使用。
 
@@ -66,7 +66,7 @@ ARGB格式的颜色描述。
 
 #### Color4f20+
 
-ARGB格式的颜色描述。
+ARGB格式的颜色描述，颜色分量值为0.0~1.0的浮点数。
 
 系统能力： SystemCapability.Graphics.Drawing
 

@@ -2,8 +2,8 @@
 title: "@ohos.app.agent.AgentExtensionAbility (智能体扩展组件)"
 upstream_id: "harmonyos-references/js-apis-app-agent-agentextensionability"
 catalog: "harmonyos-references"
-content_hash: "c12dcb7b22bf"
-synced_at: "2026-07-09T00:57:05.832390"
+content_hash: "e01ad8dff658"
+synced_at: "2026-08-29T18:11:59.087695"
 ---
 
 # @ohos.app.agent.AgentExtensionAbility (智能体扩展组件)
@@ -28,7 +28,7 @@ import { AgentExtensionAbility } from '@kit.AbilityKit';
 
 图1 AgentExtensionAbility生命周期
 
-![](./img/zh-cn_image_0000002661612229.png)
+![](./img/zh-cn_image_0000002701799282.png)
 
 - **onCreate** 当AgentExtensionAbility实例创建完成时，系统会触发该回调，开发者可在该回调中执行初始化逻辑（如定义变量、加载资源等）。
 - **onConnect** 当客户端连接AgentExtensionAbility成功后，系统会触发该回调。
@@ -147,7 +147,7 @@ export default class AgentExt extends AgentExtensionAbility {
 
 onData(proxy: AgentHostProxy, data: string): void
 
-当AgentExtensionAbility接收到客户端发送的数据时，系统会触发该回调。服务端可以在此回调中通过[AgentHostProxy.senddata](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-agenthostproxy#senddata)向客户端发送数据。
+当AgentExtensionAbility接收到客户端发送的数据时，系统会触发该回调。服务端可以在此回调中通过[AgentHostProxy.sendData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-agenthostproxy#senddata)向客户端发送数据。
 
 元服务API： 从API version 24开始，该接口支持在元服务中使用。
 

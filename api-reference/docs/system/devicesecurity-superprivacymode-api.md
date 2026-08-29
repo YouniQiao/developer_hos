@@ -2,8 +2,8 @@
 title: "SuperPrivacyMode（超级隐私模式）"
 upstream_id: "harmonyos-references/devicesecurity-superprivacymode-api"
 catalog: "harmonyos-references"
-content_hash: "b9a7afcad065"
-synced_at: "2026-07-28T16:50:26.751504"
+content_hash: "a189375289ee"
+synced_at: "2026-08-29T18:16:27.781327"
 ---
 
 # SuperPrivacyMode（超级隐私模式）
@@ -63,7 +63,7 @@ getSuperPrivacyMode(): Promise<SuperPrivacyMode>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 1006200002 | Internal error. |
-| 1006200005 | This device is not support SuperPrivacy. |
+| 1006200005 | Not support super privacy. |
 
 示例：
 
@@ -112,7 +112,7 @@ on(type: 'superPrivacyModeChange', callback: Callback<SuperPrivacyMode>): void
 | --- | --- |
 | 1006200001 | General error. |
 | 1006200002 | Internal error. |
-| 1006200005 | This device is not support SuperPrivacy. |
+| 1006200005 | Not support super privacy. |
 
 示例：
 
@@ -154,7 +154,7 @@ off(type: 'superPrivacyModeChange', callback?: Callback<SuperPrivacyMode>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 输入固定字符串'superPrivacyModeChange'，表示需要订阅的事件为'superPrivacyModeChange'。 |
+| type | string | 是 | 输入固定字符串'superPrivacyModeChange'，表示需要取消订阅的事件为'superPrivacyModeChange'。 |
 | callback | Callback | 否 | 回调函数，返回调用结果。如果传入了callback，则取消该callback的订阅，否则取消所有callback的订阅。 |
 
 错误码：
@@ -165,7 +165,7 @@ off(type: 'superPrivacyModeChange', callback?: Callback<SuperPrivacyMode>): void
 | --- | --- |
 | 1006200001 | General error. |
 | 1006200002 | Internal error. |
-| 1006200005 | This device is not support SuperPrivacy. |
+| 1006200005 | Not support super privacy. |
 
 示例：
 
@@ -287,7 +287,7 @@ getSuperPrivacyPolicies(): Promise<SuperPrivacyPolicyInfo>
 | --- | --- |
 | 1006200001 | General error. |
 | 1006200002 | Internal error. |
-| 1006200005 | Super Privacy is not supported by the device. |
+| 1006200005 | Not support super privacy. |
 
 示例：
 
@@ -335,7 +335,7 @@ onSuperPrivacyModeOrPolicyChange(callback: Callback<SuperPrivacyPolicyInfo>): vo
 | --- | --- |
 | 1006200001 | General error. |
 | 1006200002 | Internal error. |
-| 1006200005 | Super Privacy is not supported by the device. |
+| 1006200005 | Not support super privacy. |
 
 示例：
 

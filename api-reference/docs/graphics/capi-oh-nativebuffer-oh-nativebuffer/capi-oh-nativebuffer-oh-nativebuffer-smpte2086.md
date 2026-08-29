@@ -2,8 +2,8 @@
 title: "OH_NativeBuffer_Smpte2086"
 upstream_id: "harmonyos-references/capi-oh-nativebuffer-oh-nativebuffer-smpte2086"
 catalog: "harmonyos-references"
-content_hash: "950278882a96"
-synced_at: "2026-07-09T01:00:59.828324"
+content_hash: "136e171f3a52"
+synced_at: "2026-08-29T18:17:56.755843"
 ---
 
 # OH_NativeBuffer_Smpte2086
@@ -14,7 +14,7 @@ typedef struct OH_NativeBuffer_Smpte2086 {...} OH_NativeBuffer_Smpte2086
 
 #### 概述
 
-表示smpte2086静态元数据。
+表示SMPTE 2086静态元数据。
 
 起始版本： 12
 

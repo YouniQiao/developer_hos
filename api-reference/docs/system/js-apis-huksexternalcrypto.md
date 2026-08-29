@@ -2,8 +2,8 @@
 title: "@ohos.security.huksExternalCrypto (外部密钥管理)"
 upstream_id: "harmonyos-references/js-apis-huksexternalcrypto"
 catalog: "harmonyos-references"
-content_hash: "dd41784ee11d"
-synced_at: "2026-07-28T16:50:33.658505"
+content_hash: "b79af9bf45ba"
+synced_at: "2026-08-29T18:16:33.715495"
 ---
 
 # @ohos.security.huksExternalCrypto (外部密钥管理)
@@ -48,7 +48,7 @@ import { huksExternalCrypto } from '@kit.UniversalKeystoreKit';
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | tag | [HuksExternalCryptoTag](#huksexternalcryptotag) | 否 | 否 | 参数标签，用于区分参数。 |
-| value | boolean|number|bigint|Uint8Array | 否 | 否 | 标签对应值。 |
+| value | boolean | number | bigint | Uint8Array | 否 | 否 | 标签对应值。 |
 
 #### HuksExternalErrorInfo
 
@@ -63,7 +63,7 @@ import { huksExternalCrypto } from '@kit.UniversalKeystoreKit';
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | errno | number | 否 | 否 | 密钥管理扩展返回的错误码。 - 非0值：密钥管理扩展返回了详细错误信息，errno为具体错误码。 - 0值：密钥管理扩展未返回详细错误信息，errno为默认值0，开发者应通过接口异常的错误码判断错误原因。 |
-| errorDesc | string | 否 | 否 | 密钥管理扩展返回的错误描述。该字段的值与errno关联： - errno非0时：密钥管理扩展返回的描述，可能为空字符串（由扩展决定）。 - errno为0时：空字符串。 |
+| errorDesc | string | 否 | 否 | 密钥管理扩展返回的错误描述，长度为0~256字节。该字段的值与errno关联： - errno非0时：密钥管理扩展返回的描述，可能为空字符串（由扩展决定）。 - errno为0时：空字符串。 |
 
 #### HuksExternalPinAuthState
 
@@ -141,11 +141,11 @@ function stringToUint8Array(str: string) {
   return new Uint8Array(arr);
 }
 
-const providerName = "testProviderName";
+const providerName = 'testProviderName';
 const extProperties: Array<huksExternalCrypto.HuksExternalCryptoParam> = [
   {
     tag: huksExternalCrypto.HuksExternalCryptoTag.HUKS_EXT_CRYPTO_TAG_ABILITY_NAME,
-    value: stringToUint8Array("CryptoExtension")
+    value: stringToUint8Array('CryptoExtension')
   }
 ];
 huksExternalCrypto.registerProvider(providerName, extProperties)
@@ -204,11 +204,11 @@ function stringToUint8Array(str: string) {
   return new Uint8Array(arr);
 }
 
-const providerName = "testProviderName";
+const providerName = 'testProviderName';
 const extProperties: Array<huksExternalCrypto.HuksExternalCryptoParam> = [
   {
     tag: huksExternalCrypto.HuksExternalCryptoTag.HUKS_EXT_CRYPTO_TAG_ABILITY_NAME,
-    value: stringToUint8Array("CryptoExtension")
+    value: stringToUint8Array('CryptoExtension')
   }
 ];
 huksExternalCrypto.unregisterProvider(providerName, extProperties)
@@ -259,7 +259,14 @@ getUkeyPinAuthState(resourceId: string, params?: Array<HuksExternalCryptoParam>)
 ```
 import { huksExternalCrypto } from '@kit.UniversalKeystoreKit';
 
-const testResourceId = "{\"providerName\":\"testProviderName\", \"bundleName\":\"com.example.cryptoapplication\", \"abilityName\":\"CryptoExtension\",\"index\":{\"key\":\"testKey\"}}";
+const testResourceId = JSON.stringify({
+  providerName: "testProviderName",
+  bundleName: "com.example.cryptoapplication",
+  abilityName: "CryptoExtension",
+  index: {
+    key: "testKey"
+  } as ESObject
+});
 const extProperties: Array<huksExternalCrypto.HuksExternalCryptoParam> = [];
 huksExternalCrypto.getUkeyPinAuthState(testResourceId, extProperties)
     .then((data) => {
@@ -332,7 +339,7 @@ const testResourceId = JSON.stringify({
   } as ESObject
 });
 
-let propertyId = "SKF_EnumDev";
+let propertyId = 'SKF_EnumDev';
 const extProperties: Array<huksExternalCrypto.HuksExternalCryptoParam> = [];
 
 console.info('promise: await huksExternalCrypto getProperty.');
@@ -463,11 +470,11 @@ function stringToUint8Array(str: string) {
   return new Uint8Array(arr);
 }
 
-const providerName = "testProviderName";
-const abilityName = "CryptoExtension";
-const bundleName = "com.example.cryptoapplication";
+const providerName = 'testProviderName';
+const abilityName = 'CryptoExtension';
+const bundleName = 'com.example.cryptoapplication';
 // 资源信息，格式和内容由厂商自定义
-const resourceInfo = "vendor_defined_resource_info";
+const resourceInfo = 'vendor_defined_resource_info';
 
 const extProperties: Array<huksExternalCrypto.HuksExternalCryptoParam> = [
   {
@@ -675,7 +682,7 @@ const testResourceId = JSON.stringify({
   } as ESObject
 });
 
-const propertyId = "SKF_SetDevInfo";
+const propertyId = 'SKF_SetDevInfo';
 const extProperties: Array<huksExternalCrypto.HuksExternalCryptoParam> = [];
 
 async function testFunction() : Promise<void>
@@ -720,36 +727,23 @@ getErrorInfo(): HuksExternalErrorInfo
 ```
 import { huksExternalCrypto } from '@kit.UniversalKeystoreKit';
 
-function stringToUint8Array(str: string) {
-  let arr: number[] = [];
-  for (let i = 0, j = str.length; i < j; ++i) {
-    arr.push(str.charCodeAt(i));
-  }
-  return new Uint8Array(arr);
-}
-
 const resourceId = JSON.stringify({
   providerName: "testProviderName",
   bundleName: "com.example.cryptoapplication",
   abilityName: "CryptoExtension",
-  index: "testKey"
+  index: {
+    key: "testKey"
+  } as ESObject
 });
-const pin = "123456"; // 此处为示例，实际业务中应替换为真实的用户PIN码
-const params: Array<huksExternalCrypto.HuksExternalCryptoParam> = [
-  {
-    tag: huksExternalCrypto.HuksExternalCryptoTag.HUKS_EXT_CRYPTO_TAG_UKEY_PIN,
-    value: stringToUint8Array(pin)
-  }
-];
 
 async function testFunction() : Promise<void>
 {
   try {
-    await huksExternalCrypto.authUkeyPin(resourceId, params);
+    await huksExternalCrypto.openResource(resourceId);
   } catch (error) {
     const errorInfo = huksExternalCrypto.getErrorInfo();
-    console.info(`errno: ${errorInfo.errno}`);
-    console.info(`errorDesc: ${errorInfo.errorDesc}`);
+    console.error(`errno: ${errorInfo.errno}`);
+    console.error(`errorDesc: ${errorInfo.errorDesc}`);
   }
 }
 ```

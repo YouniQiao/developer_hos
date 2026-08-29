@@ -2,8 +2,8 @@
 title: "OH_ArkUI_BaselineOffsetStyle"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-oh-arkui-baselineoffsetstyle"
 catalog: "harmonyos-references"
-content_hash: "adfa9290a20b"
-synced_at: "2026-07-09T00:58:45.229586"
+content_hash: "9c9815072057"
+synced_at: "2026-08-29T18:15:50.824528"
 ---
 
 # OH_ArkUI_BaselineOffsetStyle
@@ -14,13 +14,15 @@ typedef struct OH_ArkUI_BaselineOffsetStyle OH_ArkUI_BaselineOffsetStyle
 
 #### 概述
 
-定义基线偏移量样式。
+定义基线偏移量样式，用于在属性字符串中设置文本的基线偏移量，使文本在垂直方向上相对于基线进行上移或下移，从而实现上下标等特殊排版效果。基线偏移量样式需通过创建样式对象、设置偏移值后应用到属性字符串中生效。
 
-可以通过[OH_ArkUI_BaselineOffsetStyle_Create](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-styled-string-h#oh_arkui_baselineoffsetstyle_create)接口创建对应的基线偏移量样式对象。
+调用[OH_ArkUI_BaselineOffsetStyle_Create](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-styled-string-h#oh_arkui_baselineoffsetstyle_create)接口创建基线偏移量样式对象。
 
-可以通过[OH_ArkUI_BaselineOffsetStyle_Destroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-styled-string-h#oh_arkui_baselineoffsetstyle_destroy)接口销毁基线偏移量样式对象。
+对象创建后，调用[OH_ArkUI_BaselineOffsetStyle_SetBaselineOffset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-styled-string-h#oh_arkui_baselineoffsetstyle_setbaselineoffset)接口设置基线偏移量值。
 
-对象创建后通过[OH_ArkUI_BaselineOffsetStyle_SetBaselineOffset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-styled-string-h#oh_arkui_baselineoffsetstyle_setbaselineoffset)接口设置具体的基线偏移量值。
+调用[OH_ArkUI_BaselineOffsetStyle_GetBaselineOffset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-styled-string-h#oh_arkui_baselineoffsetstyle_getbaselineoffset)接口获取基线偏移量值。
+
+使用完毕后，调用[OH_ArkUI_BaselineOffsetStyle_Destroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-styled-string-h#oh_arkui_baselineoffsetstyle_destroy)接口销毁基线偏移量样式对象。
 
 起始版本： 24
 

@@ -2,8 +2,8 @@
 title: "gamePlayer（基础游戏服务）"
 upstream_id: "harmonyos-references/gameservice-gameplayer"
 catalog: "harmonyos-references"
-content_hash: "97fcbf3eabe8"
-synced_at: "2026-08-07T15:59:28.236843"
+content_hash: "73a76ab9480c"
+synced_at: "2026-08-29T18:18:15.503094"
 ---
 
 # gamePlayer（基础游戏服务）
@@ -49,7 +49,10 @@ import { gamePlayer } from '@kit.GameServiceKit';
 
 起始版本： 4.0.0(10)
 
-![](./img/caution_3.0-zh-cn.png) gamePlayerId、teamPlayerId和thirdOpenId不能同时为空。
+![](./img/note_3.0-zh-cn.png) gamePlayerId、teamPlayerId、thirdOpenId的参数值要求如下：
+
+- 若是互通场景，teamPlayerId和thirdOpenId必须为空，需要传入gamePlayerId。
+- 若是绑定场景，gamePlayerId必须为空，需要传入teamPlayerId和thirdOpenId。
 
 | **名称** | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |

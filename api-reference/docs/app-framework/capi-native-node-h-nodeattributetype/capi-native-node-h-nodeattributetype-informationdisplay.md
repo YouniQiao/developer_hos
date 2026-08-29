@@ -2,8 +2,8 @@
 title: "ArkUI_NodeAttributeType（信息展示类组件相关属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-informationdisplay"
 catalog: "harmonyos-references"
-content_hash: "13668a5796d0"
-synced_at: "2026-07-28T16:49:21.453480"
+content_hash: "9e954fab95ee"
+synced_at: "2026-08-29T18:15:38.437590"
 ---
 
 # ArkUI_NodeAttributeType（信息展示类组件相关属性）
@@ -60,13 +60,13 @@ NODE_LOADING_PROGRESS_ENABLE_LOADING = 6001
 
 | 参数项 | 描述 |
 | --- | --- |
-| .value[0].i32 | 1时不显示动画，1时显示动画。默认值为1。 |
+| .value[0].i32 | 0时不显示动画，1时显示动画。默认值为1。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| .value[0].i32 | 1时不显示动画，1时显示动画。 |
+| .value[0].i32 | 0时不显示动画，1时显示动画。 |
 
 #### NODE_PROGRESS_VALUE
 

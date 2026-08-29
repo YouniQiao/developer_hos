@@ -2,8 +2,8 @@
 title: "OH_AudioConverter_Format"
 upstream_id: "harmonyos-references/capi-audioconverter-oh-audioconverter-format"
 catalog: "harmonyos-references"
-content_hash: "29607a828268"
-synced_at: "2026-07-09T01:00:12.432161"
+content_hash: "43c9846dbde9"
+synced_at: "2026-08-29T18:17:22.854372"
 ---
 
 # OH_AudioConverter_Format
@@ -18,7 +18,7 @@ typedef struct OH_AudioConverter_Format {...} OH_AudioConverter_Format
 
 起始版本： 26.0.0
 
-相关模块： [AudioConverter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-audioconverter)
+相关模块： [OHAudioSuite](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudiosuite)
 
 所在头文件： [native_audio_converter.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-converter-h)
 

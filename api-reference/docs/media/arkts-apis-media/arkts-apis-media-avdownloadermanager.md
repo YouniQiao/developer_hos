@@ -2,13 +2,13 @@
 title: "Interface (AVDownloaderManager)"
 upstream_id: "harmonyos-references/arkts-apis-media-avdownloadermanager"
 catalog: "harmonyos-references"
-content_hash: "bebb81e1571d"
-synced_at: "2026-08-14T15:55:29.411339"
+content_hash: "5d42b8838151"
+synced_at: "2026-08-29T18:17:40.556058"
 ---
 
 # Interface (AVDownloaderManager)
 
-离线下载任务管理接口，用于管理流媒体资源的离线下载任务，包括创建、暂停、恢复、移除下载任务以及监听下载状态和进度变化事件。通过[createAVDownloaderManager()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-f#mediacreateavdownloadermanager)创建实例。
+离线下载任务管理接口，用于管理媒体资源的离线下载任务，包括创建、暂停、恢复、移除下载任务以及监听下载状态和进度变化事件。适用于需要在应用内支持流媒体资源离线缓存、实现无网络环境下播放等场景，可帮助用户节省流量并提升弱网或离线场景下的媒体播放体验。通过[createAVDownloaderManager()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-f#mediacreateavdownloadermanager)创建实例。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -24,7 +24,7 @@ import { media } from '@kit.MediaKit';
 
 allowsCellularAccess(value: boolean): void
 
-设置下载任务的网络环境。默认情况下仅在Wi-Fi环境下进行下载。
+设置是否允许在蜂窝网络环境下进行下载。默认情况下仅在Wi-Fi环境下进行下载。如果设置不允许在蜂窝网络下载，但网络环境为蜂窝网络环境时，下载任务将暂停等待Wi-Fi环境可用后继续。
 
 起始版本： 26.0.0
 
@@ -63,7 +63,7 @@ setRequestTimeout(timeout: number): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| timeout | number | 是 | 超时时间，单位为毫秒。 取值限定为整数。 - 若不设置，使用默认超时时间，默认时间为60000毫秒。 - 若值小于等于0，表示无超时限制。 |
+| timeout | number | 是 | 超时时间，单位为毫秒。 取值限定为整数。 - 如果值大于0，表示超时时间，取值范围(0, +∞)。 - 如果值小于等于0，表示无超时限制，建议根据业务场景设置合理的超时时间以避免任务长时间挂起。 - 如果不设置，使用默认超时时间，默认时间为60000毫秒。 |
 
 示例：
 
@@ -78,7 +78,7 @@ async function test() {
 
 addAVDownloadTask(source: MediaSource): string
 
-根据媒体源创建一个离线下载任务。
+根据媒体源创建一个离线下载任务。默认情况下，下载任务仅在Wi-Fi环境下进行，如需在蜂窝网络环境下下载，请先设置allowsCellularAccess为true。
 
 起始版本： 26.0.0
 
@@ -103,8 +103,8 @@ addAVDownloadTask(source: MediaSource): string
 ```
 async function test() {
   let downloaderManager: media.AVDownloaderManager = await media.createAVDownloaderManager();
-  let headers: Record<string, string> = {"User-Agent" : "MyApp/1.0"};
-  let mediaSource: media.MediaSource = media.createMediaSourceWithUrl("http://example.com/video.mp4", headers);
+  let headers: Record<string, string> = {'User-Agent' : 'MyApp/1.0'};
+  let mediaSource: media.MediaSource = media.createMediaSourceWithUrl('http://example.com/video.mp4', headers);
   let taskId: string = downloaderManager.addAVDownloadTask(mediaSource);
   console.info(`Succeeded in adding download task, taskId: ${taskId}`);
 }
@@ -114,7 +114,7 @@ async function test() {
 
 removeDownloadTask(taskId?: string): void
 
-从离线下载管理器中移除下载任务。
+从离线下载管理器中移除离线下载任务，移除后该任务将停止下载并从管理器中删除。
 
 起始版本： 26.0.0
 
@@ -126,7 +126,7 @@ removeDownloadTask(taskId?: string): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| taskId | string | 否 | 要移除的离线下载任务ID。 默认值：不指定此参数时，清除所有离线下载任务。 |
+| taskId | string | 否 | 要移除的离线下载任务ID。 默认值：不指定此参数时，移除所有离线下载任务。 |
 
 错误码：
 
@@ -141,8 +141,8 @@ removeDownloadTask(taskId?: string): void
 ```
 async function test() {
   let downloaderManager: media.AVDownloaderManager = await media.createAVDownloaderManager();
-  let headers: Record<string, string> = {"User-Agent" : "MyApp/1.0"};
-  let mediaSource: media.MediaSource = media.createMediaSourceWithUrl("http://example.com/video.mp4", headers);
+  let headers: Record<string, string> = {'User-Agent' : 'MyApp/1.0'};
+  let mediaSource: media.MediaSource = media.createMediaSourceWithUrl('http://example.com/video.mp4', headers);
   let taskId: string = downloaderManager.addAVDownloadTask(mediaSource);
   downloaderManager.removeDownloadTask(taskId);
 }
@@ -152,7 +152,7 @@ async function test() {
 
 pauseDownloadTask(taskId?: string): void
 
-暂停指定下载任务。
+暂停指定离线下载任务，已下载的部分数据将保留，恢复后可从断点继续下载。任务需处于下载中状态，否则会返回错误码5400102。不指定任务ID时，暂停所有离线下载任务。暂停后的任务可通过resumeDownloadTask恢复。
 
 起始版本： 26.0.0
 
@@ -164,7 +164,7 @@ pauseDownloadTask(taskId?: string): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| taskId | string | 否 | 要暂停的下载任务ID。 默认值：不指定此参数时，暂停所有下载任务。 |
+| taskId | string | 否 | 要暂停的离线下载任务ID。 默认值：不指定此参数时，暂停所有下载任务。 |
 
 错误码：
 
@@ -180,8 +180,8 @@ pauseDownloadTask(taskId?: string): void
 ```
 async function test() {
   let downloaderManager: media.AVDownloaderManager = await media.createAVDownloaderManager();
-  let headers: Record<string, string> = {"User-Agent" : "MyApp/1.0"};
-  let mediaSource: media.MediaSource = media.createMediaSourceWithUrl("http://example.com/video.mp4", headers);
+  let headers: Record<string, string> = {'User-Agent' : 'MyApp/1.0'};
+  let mediaSource: media.MediaSource = media.createMediaSourceWithUrl('http://example.com/video.mp4', headers);
   let taskId: string = downloaderManager.addAVDownloadTask(mediaSource);
   downloaderManager.pauseDownloadTask(taskId);
 }
@@ -191,7 +191,7 @@ async function test() {
 
 resumeDownloadTask(taskId?: string): void
 
-恢复指定离线下载任务。
+恢复指定离线下载任务，从上次暂停的断点处继续下载。任务需处于暂停的状态，否则会返回错误码5400102。不指定任务ID时，恢复所有已暂停的离线下载任务。
 
 起始版本： 26.0.0
 
@@ -203,7 +203,7 @@ resumeDownloadTask(taskId?: string): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| taskId | string | 否 | 要恢复的离线下载任务ID。 默认值：不指定此参数时，恢复所有已暂停的离线下载任务。 |
+| taskId | string | 否 | 要恢复的离线下载任务ID，任务需处于已暂停状态。 默认值：不指定此参数时，恢复所有已暂停的离线下载任务。 |
 
 错误码：
 
@@ -219,8 +219,8 @@ resumeDownloadTask(taskId?: string): void
 ```
 async function test() {
   let downloaderManager: media.AVDownloaderManager = await media.createAVDownloaderManager();
-  let headers: Record<string, string> = {"User-Agent" : "MyApp/1.0"};
-  let mediaSource: media.MediaSource = media.createMediaSourceWithUrl("http://example.com/video.mp4", headers);
+  let headers: Record<string, string> = {'User-Agent' : 'MyApp/1.0'};
+  let mediaSource: media.MediaSource = media.createMediaSourceWithUrl('http://example.com/video.mp4', headers);
   let taskId: string = downloaderManager.addAVDownloadTask(mediaSource);
   downloaderManager.pauseDownloadTask(taskId);
   downloaderManager.resumeDownloadTask(taskId);
@@ -231,7 +231,7 @@ async function test() {
 
 getDownloadTasks(): Array<string>
 
-获取离线下载管理器中的当前所有下载任务。
+获取离线下载管理器中的当前所有离线下载任务。
 
 起始版本： 26.0.0
 
@@ -250,8 +250,8 @@ getDownloadTasks(): Array<string>
 ```
 async function test() {
   let downloaderManager: media.AVDownloaderManager = await media.createAVDownloaderManager();
-  let headers: Record<string, string> = {"User-Agent" : "MyApp/1.0"};
-  let mediaSource: media.MediaSource = media.createMediaSourceWithUrl("http://example.com/video.mp4", headers);
+  let headers: Record<string, string> = {'User-Agent' : 'MyApp/1.0'};
+  let mediaSource: media.MediaSource = media.createMediaSourceWithUrl('http://example.com/video.mp4', headers);
   let taskId: string = downloaderManager.addAVDownloadTask(mediaSource);
   let tasks: Array<string> = downloaderManager.getDownloadTasks();
   console.info(`Download tasks: ${tasks}`);
@@ -274,13 +274,13 @@ getTaskCacheDirectory(taskId: string): string
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| taskId | string | 是 | 要查询缓存目录的下载任务ID。 |
+| taskId | string | 是 | 要查询缓存目录的离线下载任务ID。取值应为当前管理器中已存在的任务ID。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| string | 离线下载任务在磁盘上的可访问路径。 |
+| string | 离线下载任务的缓存目录在磁盘上的路径。 |
 
 错误码：
 
@@ -295,8 +295,8 @@ getTaskCacheDirectory(taskId: string): string
 ```
 async function test() {
   let downloaderManager: media.AVDownloaderManager = await media.createAVDownloaderManager();
-  let headers: Record<string, string> = {"User-Agent" : "MyApp/1.0"};
-  let mediaSource: media.MediaSource = media.createMediaSourceWithUrl("http://example.com/video.mp4", headers);
+  let headers: Record<string, string> = {'User-Agent' : 'MyApp/1.0'};
+  let mediaSource: media.MediaSource = media.createMediaSourceWithUrl('http://example.com/video.mp4', headers);
   let taskId: string = downloaderManager.addAVDownloadTask(mediaSource);
   let cacheDir: string = downloaderManager.getTaskCacheDirectory(taskId);
   console.info(`Task cache directory: ${cacheDir}`);
@@ -319,7 +319,7 @@ getTaskStatus(taskId: string): AVDownloadTaskState
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| taskId | string | 是 | 要查询状态的下载任务ID。 |
+| taskId | string | 是 | 要查询状态的离线下载任务ID。取值应为当前管理器中已存在的任务ID。 |
 
 返回值：
 
@@ -340,8 +340,8 @@ getTaskStatus(taskId: string): AVDownloadTaskState
 ```
 async function test() {
   let downloaderManager: media.AVDownloaderManager = await media.createAVDownloaderManager();
-  let headers: Record<string, string> = {"User-Agent" : "MyApp/1.0"};
-  let mediaSource: media.MediaSource = media.createMediaSourceWithUrl("http://example.com/video.mp4", headers);
+  let headers: Record<string, string> = {'User-Agent' : 'MyApp/1.0'};
+  let mediaSource: media.MediaSource = media.createMediaSourceWithUrl('http://example.com/video.mp4', headers);
   let taskId: string = downloaderManager.addAVDownloadTask(mediaSource);
   let status: media.AVDownloadTaskState = downloaderManager.getTaskStatus(taskId);
   console.info(`Task status: ${status}`);
@@ -364,7 +364,7 @@ getTaskProgress(taskId: string): number
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| taskId | string | 是 | 要查询进度的下载任务ID。 |
+| taskId | string | 是 | 要查询进度的离线下载任务ID。取值应为当前管理器中已存在的任务ID。 |
 
 返回值：
 
@@ -385,8 +385,8 @@ getTaskProgress(taskId: string): number
 ```
 async function test() {
   let downloaderManager: media.AVDownloaderManager = await media.createAVDownloaderManager();
-  let headers: Record<string, string> = {"User-Agent" : "MyApp/1.0"};
-  let mediaSource: media.MediaSource = media.createMediaSourceWithUrl("http://example.com/video.mp4", headers);
+  let headers: Record<string, string> = {'User-Agent' : 'MyApp/1.0'};
+  let mediaSource: media.MediaSource = media.createMediaSourceWithUrl('http://example.com/video.mp4', headers);
   let taskId: string = downloaderManager.addAVDownloadTask(mediaSource);
   let progress: number = downloaderManager.getTaskProgress(taskId);
   console.info(`Task progress: ${progress}`);
@@ -438,7 +438,7 @@ onProgressChange(callback: OnAVDownloadProgressChangeHandle): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | [OnAVDownloadProgressChangeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-t#onavdownloadprogresschangehandle) | 是 | 进度变化事件的处理函数。由应用实现。 第一个参数为下载任务ID，第二个参数为下载进度值。 进度值范围[0.0-1.0]，若为-1则表示资源大小未知。 |
+| callback | [OnAVDownloadProgressChangeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-t#onavdownloadprogresschangehandle) | 是 | 进度变化事件的处理函数。由应用实现。 第一个参数为下载任务ID，第二个参数为下载进度值。 进度值取值范围为-1或[0.0, 1.0]。-1表示资源大小未知。 |
 
 示例：
 
@@ -467,7 +467,7 @@ offStatusChange(callback?: OnAVDownloadTaskStateHandle): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | [OnAVDownloadTaskStateHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-t#onavdownloadtaskstatehandle) | 否 | 状态变化事件的处理函数。 默认值：不指定此参数时，取消注册该事件的所有处理函数。 |
+| callback | [OnAVDownloadTaskStateHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-t#onavdownloadtaskstatehandle) | 否 | 状态变化事件的处理函数，必须是通过onStatusChange注册过的处理函数。 默认值：不指定此参数时，取消注册该事件的所有处理函数。 |
 
 示例：
 
@@ -494,7 +494,7 @@ offProgressChange(callback?: OnAVDownloadProgressChangeHandle): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | [OnAVDownloadProgressChangeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-t#onavdownloadprogresschangehandle) | 否 | 进度变化事件的处理函数。 默认值：不指定此参数时，取消注册该事件的所有处理函数。 |
+| callback | [OnAVDownloadProgressChangeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-t#onavdownloadprogresschangehandle) | 否 | 进度变化事件的处理函数，必须是通过onProgressChange注册过的处理函数。 默认值：不指定此参数时，取消注册该事件的所有处理函数。 |
 
 示例：
 
@@ -509,7 +509,7 @@ async function test() {
 
 release(): void
 
-释放AVDownloaderManager对象使用的资源。
+释放AVDownloaderManager对象使用的资源。调用此方法后，所有下载任务将被停止并移除，不可再通过该实例管理下载任务。
 
 起始版本： 26.0.0
 

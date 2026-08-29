@@ -2,13 +2,13 @@
 title: "@ohos.nearlink.scan (星闪扫描能力)"
 upstream_id: "harmonyos-references/js-apis-nearlink-scan"
 catalog: "harmonyos-references"
-content_hash: "96994f924c38"
-synced_at: "2026-07-28T16:50:38.808075"
+content_hash: "1dd95f15843b"
+synced_at: "2026-08-29T18:16:38.695586"
 ---
 
 # @ohos.nearlink.scan (星闪扫描能力)
 
-本模块提供了星闪扫描相关功能。
+本模块提供了星闪扫描相关功能，包括发起/停止扫描、订阅扫描结果等。
 
 起始版本： 26.0.0
 
@@ -22,7 +22,7 @@ import { scan } from '@kit.ConnectivityKit';
 
 startScan(filters: ScanFilters[] | null, options?: ScanOptions): Promise<void>
 
-发起星闪扫描。使用Promise异步回调。
+发起星闪扫描。使用Promise异步回调。需先调用[scan.onDeviceFound](#scanondevicefound)订阅扫描结果回调，本接口发起扫描后，扫描到的设备信息通过[scan.onDeviceFound](#scanondevicefound)回调上报。扫描完成后可调用[scan.stopScan](#scanstopscan)停止扫描。
 
 起始版本： 26.0.0
 
@@ -47,7 +47,7 @@ startScan(filters: ScanFilters[] | null, options?: ScanOptions): Promise<void>
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[星闪错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -69,7 +69,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 try {
   scan.startScan(null).then(() => {
     console.info('start scan without filter success');
-  }).catch ((err: BusinessError) => {
+  }).catch((err: BusinessError) => {
     console.error('errCode: ' + err.code + ', errMessage: ' + err.message);
   });
 } catch (err) {
@@ -84,7 +84,7 @@ let scanFilter: scan.ScanFilters = {
 try {
   scan.startScan([scanFilter]).then(() => {
     console.info('start scan with filter success');
-  }).catch ((err: BusinessError) => {
+  }).catch((err: BusinessError) => {
     console.error('errCode: ' + err.code + ', errMessage: ' + err.message);
   });
 } catch (err) {
@@ -114,7 +114,7 @@ stopScan(): Promise<void>
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[星闪错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -132,7 +132,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 try {
   scan.stopScan().then(() => {
     console.info('stop scan success');
-  }).catch ((err: BusinessError) => {
+  }).catch((err: BusinessError) => {
     console.error('errCode: ' + err.code + ', errMessage: ' + err.message);
   });
 } catch (err) {
@@ -158,7 +158,7 @@ onDeviceFound(callback: Callback<ScanResults[]>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | Callback‌ | 是 | 回调函数，返回星闪扫描结果数组对象。扫描结果携带远端设备的随机地址。 |
+| callback | Callback‌ | 是 | 回调函数，返回星闪扫描结果数组对象。扫描结果默认返回随机地址；应用若具备系统权限ohos.permission.GET_NEARLINK_PEER_MAC，则返回设备真实地址。 |
 
 错误码：
 
@@ -200,7 +200,7 @@ offDeviceFound(callback?: Callback<ScanResults[]>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | Callback | 否 | 回调函数，返回星闪扫描结果数组对象。 填写该参数则取消当前callback订阅。不填写该参数则取消该type对应的所有回调。 |
+| callback | Callback | 否 | 回调函数，返回星闪扫描结果数组对象。 填写该参数则取消当前callback订阅。不填写该参数则取消该事件对应的所有回调。 |
 
 错误码：
 
@@ -236,11 +236,11 @@ try {
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | address | string | 否 | 否 | 表示扫描到设备地址。地址格式参考：11:22:33:AA:BB:FF。 |
-| rssi | number | 否 | 否 | 表示扫描到的设备rssi值，取值范围[-128, 127]，单位dBm，其中127表示无效值。 |
+| rssi | number | 否 | 否 | 表示扫描到的设备rssi值，取值范围[-128, 127]，单位：dBm，其中127表示无效值。 |
 | data | ArrayBuffer | 否 | 否 | 表示广播包数据。 |
 | deviceName | string | 否 | 否 | 表示扫描到的设备名称。字符串长度范围[0, 30]。 |
 | isConnectable | boolean | 否 | 否 | 表示扫描到的广播是否可连接。true：可连接，false：不可连接 |
-| deviceClass | [nearlinkConstant.DeviceClass](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-nearlink-constant#deviceclass) | 否 | 是 | 表示扫描到的设备类型 |
+| deviceClass | [nearlinkConstant.DeviceClass](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-nearlink-constant#deviceclass) | 否 | 是 | 表示扫描到的设备类型。设备广播未携带设备类型信息时该字段不返回。 |
 
 #### ScanFilters
 
@@ -258,8 +258,8 @@ try {
 | deviceName | string | 否 | 是 | 表示设备名称，字符串长度范围[0, 30]。若未配置则默认不过滤该字段。 |
 | manufacturerId | number | 否 | 是 | 表示厂商ID，取值范围[1, 65535]，若未配置则默认不过滤该字段。 |
 | manufacturerData | ArrayBuffer | 否 | 是 | 表示厂商数据，若未配置则默认不过滤该字段。配置该字段需同时配置manufacturerId。 |
-| manufacturerDataMask | ArrayBuffer | 否 | 是 | 表示厂商数据掩码，若未配置则默认不过滤该字段。配置该字段需同时配置manufacturerData，且二者长度必须一致。 |
-| rssi | number | 否 | 是 | 过滤信号强度大于或等于该信号强度门限值的广播报文，取值范围[-128, 127]，单位：dBm。建议设置[-90, 20]范围内的门限值。 |
+| manufacturerDataMask | ArrayBuffer | 否 | 是 | 表示厂商数据掩码，若未配置则默认不过滤该字段。配置该字段需同时配置manufacturerData，且二者长度必须一致。掩码与厂商数据按位与运算，用于精确匹配厂商数据中指定比特位。 |
+| rssi | number | 否 | 是 | 过滤信号强度大于或等于该信号强度门限值的广播报文，取值范围[-128, 127]，单位：dBm。建议设置[-90, 20]范围内的门限值。若未配置则默认不对信号强度进行过滤。 |
 
 #### ScanOptions
 

@@ -2,15 +2,18 @@
 title: "Text"
 upstream_id: "harmonyos-references/ts-basic-components-text"
 catalog: "harmonyos-references"
-content_hash: "981476502577"
-synced_at: "2026-07-28T16:44:46.140395"
+content_hash: "d54e04f4c5c4"
+synced_at: "2026-08-29T18:13:52.777504"
 ---
 
 # Text
 
 Text组件用于显示文本内容，支持设置字体样式、文本对齐、行高、装饰线等属性，支持图文混排、文本选择、文本识别等功能，适用于需要展示文本信息的各类应用场景。
 
-![](./img/note_3.0-zh-cn.png) 该组件从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
+![](./img/note_3.0-zh-cn.png)
+
+- 该组件从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
+- 如需设置触摸文本组件外部时是否清除文本选中和手柄，可使用[setTextSelectionClearPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#settextselectionclearpolicy)接口。
 
 文本在组件区域显示效果与字体资源相关，默认字体排印可见[字体排印视觉指引](https://developer.huawei.com/consumer/cn/doc/design-guides/font-0000001828772001)。
 
@@ -631,7 +634,7 @@ fontFeature(value: string)
 
 fontFeature属性列表：
 
-![](./img/zh-cn_image_0000002656008536.png)
+![](./img/zh-cn_image_0000002701639750.png)
 
 设置fontFeature属性，fontFeature是OpenType字体的高级排版能力，如支持连字、数字等宽等特性，一般用在自定义字体中，其能力需要字体本身支持。
 
@@ -726,9 +729,9 @@ fontVariations(fontVariations: Array<FontVariation>)
 
 起始版本： 26.0.0
 
-模型约束： 此接口仅可在Stage模型下使用。
-
 元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -812,9 +815,9 @@ incrementalUpdatePolicy(policy: IncrementalUpdatePolicy | undefined)
 
 起始版本： 26.0.0
 
-模型约束： 此接口仅可在Stage模型下使用。
-
 元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -1269,6 +1272,8 @@ orphanCharOptimization(enabled: Optional<boolean>)
 起始版本： 26.0.0
 
 元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -1734,9 +1739,9 @@ onWillCopy(callback: Callback<string, boolean>)
 
 起始版本： 26.0.0
 
-模型约束： 此接口仅可在Stage模型下使用。
-
 元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -1781,7 +1786,7 @@ onMarqueeStateChange(callback: Callback<MarqueeState>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | Callback | 是 | 通过callback参数指定触发回调的状态，状态由MarqueeState枚举定义，例如开始滚动、完成一次滚动、滚动完成。 |
+| callback | Callback | 是 | 通过callback参数指定触发回调的状态，状态由MarqueeState枚举定义，例如开始滚动、完成一次滚动、滚动完成或停止滚动。 |
 
 #### TextOptions11+
 
@@ -1869,7 +1874,7 @@ getLayoutManager(): LayoutManager
 
 | 类型 | 说明 |
 | --- | --- |
-| [LayoutManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#layoutmanager12) | 布局管理器对象，用于获取文本布局信息，包括行数、字形位置、行信息、字符绘制区域等。 |
+| [LayoutManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#layoutmanager12) | 布局管理器对象，用于获取文本布局信息，包括行数、字形位置、行信息、字符绘制区域等。 **说明：** 当TextController还未绑定Text组件，或绑定的Text组件已被销毁/卸载时，会返回undefined。 |
 
 #### [h2]setTextSelection23+
 
@@ -1967,7 +1972,7 @@ Marquee状态回调的返回值。
 | --- | --- | --- |
 | START | 0 | 跑马灯滚动开始。 |
 | BOUNCE | 1 | 完成一次跑马灯滚动，如果循环次数不是1，将会多次返回。 |
-| FINISH | 2 | 跑马灯全部循环次数完成。 |
+| FINISH | 2 | 跑马灯全部循环次数完成或跑马灯停止滚动（例如[TextMarqueeOptions](#textmarqueeoptions18对象说明)中start被设置为false）。 |
 
 #### 示例
 
@@ -2050,7 +2055,7 @@ struct TextExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848616.gif)
+ ![](./img/zh-cn_image_0000002731358971.gif)
 
 #### [h2]示例2（设置文本样式）
 
@@ -2169,7 +2174,7 @@ struct TextExample2 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088043.gif)
+ ![](./img/zh-cn_image_0000002701799666.gif)
 
 #### [h2]示例3（设置文本超长省略）
 
@@ -2278,7 +2283,7 @@ struct TextExample3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928215.gif)
+ ![](./img/zh-cn_image_0000002731518951.gif)
 
 #### [h2]示例4（设置文本断行及折行）
 
@@ -2362,7 +2367,7 @@ struct TextExample4 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008538.gif)
+ ![](./img/zh-cn_image_0000002701639752.gif)
 
 #### [h2]示例5（设置文本选中和复制）
 
@@ -2415,7 +2420,7 @@ struct TextExample5 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848618.gif)
+ ![](./img/zh-cn_image_0000002731358973.gif)
 
 #### [h2]示例6（设置文本自适应和缩放倍数限制范围）
 
@@ -2459,7 +2464,7 @@ struct TextExample6 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088045.png)
+ ![](./img/zh-cn_image_0000002701799668.png)
 
 #### [h2]示例7（设置文本识别）
 
@@ -2499,16 +2504,6 @@ struct TextExample7 {
           .borderWidth(1)
           .padding(10)
           .width('100%')
-        Text(
-          '电话号码：' + this.phoneNumber + '\n' +
-            '时间：' + this.datetime
-        )
-          .fontSize(16)
-          .copyOption(CopyOptions.LocalDevice)
-          .textAlign(TextAlign.Center)
-          .borderWidth(1)
-          .padding(10)
-          .width('100%')
       }
       .width('100%')
       // 使用parallelGesture中的TapGesture替代onClick属性，达到非冒泡事件类似冒泡
@@ -2521,7 +2516,7 @@ struct TextExample7 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928217.png)
+ ![](./img/zh-cn_image_0000002731518953.png)
 
 #### [h2]示例8（文本绑定自定义菜单）
 
@@ -2642,7 +2637,7 @@ function MenuStyles() {
   .backgroundColor('#F0F0F0')
 }
 ```
- ![](./img/zh-cn_image_0000002656008540.gif)
+ ![](./img/zh-cn_image_0000002701639754.gif)
 
 #### [h2]示例9（设置文本特性与行间距）
 
@@ -2700,7 +2695,7 @@ struct TextExample9 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848620.png)
+ ![](./img/zh-cn_image_0000002731358975.png)
 
 #### [h2]示例10（获取文本信息）
 
@@ -2733,7 +2728,11 @@ struct TextExample10 {
           .fontSize(25)
           .borderWidth(1)
           .onAreaChange(() => {
+            // getLayoutManager在TextController未绑定Text或Text被销毁时会返回undefined，使用时需做判空处理
             let layoutManager: LayoutManager = this.controller.getLayoutManager();
+            if (!layoutManager) {
+              return;
+            }
             this.lineCount = 'LineCount: ' + layoutManager.getLineCount();
           })
 
@@ -2744,6 +2743,9 @@ struct TextExample10 {
         Button("相对组件坐标[150,50]字形信息")
           .onClick(() => {
             let layoutManager: LayoutManager = this.controller.getLayoutManager();
+            if (!layoutManager) {
+              return;
+            }
             let position: PositionWithAffinity = layoutManager.getGlyphPositionAtCoordinate(150, 50);
             this.glyphPositionAtCoordinate =
               '相对组件坐标[150,50] glyphPositionAtCoordinate position: ' + position.position + ' affinity: ' +
@@ -2756,6 +2758,9 @@ struct TextExample10 {
         Button('首行行信息、文本样式信息、以及字体属性信息')
           .onClick(() => {
             let layoutManager: LayoutManager = this.controller.getLayoutManager();
+            if (!layoutManager) {
+              return;
+            }
             let lineMetrics: LineMetrics = layoutManager.getLineMetrics(0);
             this.lineMetrics = 'lineMetrics is ' + JSON.stringify(lineMetrics) + '\n\n';
             let runMetrics = lineMetrics.runMetrics;
@@ -2770,6 +2775,9 @@ struct TextExample10 {
         Button('获取指定矩形宽度和高度下，文本中任意区间范围内字符或占位符的绘制区域信息')
           .onClick(() => {
             let layoutManager: LayoutManager = this.controller.getLayoutManager();
+            if (!layoutManager) {
+              return;
+            }
             let range: TextRange = { start: 0, end: 1 };
             let rectsForRangeInfo: text.TextBox[] =
               layoutManager.getRectsForRange(range, text.RectWidthStyle.TIGHT, text.RectHeightStyle.TIGHT);
@@ -2786,7 +2794,7 @@ struct TextExample10 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088047.gif)
+ ![](./img/zh-cn_image_0000002701799670.gif)
 
 #### [h2]示例11（实现键盘框选文本）
 
@@ -2814,7 +2822,7 @@ struct TextExample11 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928219.gif)
+ ![](./img/zh-cn_image_0000002731518955.gif)
 
 #### [h2]示例12（文本扩展自定义菜单）
 
@@ -2902,7 +2910,7 @@ struct TextExample12 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008542.gif)
+ ![](./img/zh-cn_image_0000002701639756.gif)
 
 #### [h2]示例13（配置隐私隐藏）
 
@@ -2924,7 +2932,7 @@ struct TextExample13 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848622.gif)
+ ![](./img/zh-cn_image_0000002731358977.gif)
 
 #### [h2]示例14（设置中西文自动间距）
 
@@ -2950,7 +2958,7 @@ struct TextExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088049.png)
+ ![](./img/zh-cn_image_0000002701799672.png)
 
 #### [h2]示例15（文本颜色按线性或径向渐变）
 
@@ -3017,7 +3025,7 @@ struct ShaderColorStyle {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928221.png)
+ ![](./img/zh-cn_image_0000002731518957.png)
 
 #### [h2]示例16（配置除去行尾空格）
 
@@ -3047,7 +3055,7 @@ struct TextExample16 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008544.png)
+ ![](./img/zh-cn_image_0000002701639758.png)
 
 #### [h2]示例17（文本垂直对齐）
 
@@ -3061,23 +3069,23 @@ struct TextExample14 {
   build() {
     Column({ space: 10 }) {
       Text() {
-        Span("Hello")
+        Span('Hello')
           .fontSize(50)
         // $r('app.media.startIcon')需要替换为开发者所需的图像资源文件。
         ImageSpan($r('app.media.startIcon'))
           .width(30).height(30)
           .verticalAlign(ImageSpanAlignment.FOLLOW_PARAGRAPH)// 从API version 20开始，支持ImageSpanAlignment.FOLLOW_PARAGRAPH
-        Span("World")
+        Span('World')
       }
       .textVerticalAlign(TextVerticalAlign.CENTER)
       .borderWidth(1)
     }
     .alignItems(HorizontalAlign.Center)
-    .width("100%")
+    .width('100%')
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848624.png)
+ ![](./img/zh-cn_image_0000002731358979.png)
 
 #### [h2]示例18（文本翻牌动效）
 
@@ -3098,7 +3106,7 @@ struct TextNumberTransition {
         .borderWidth(1)
         .fontSize(40)
         .contentTransition(this.numberTransition)
-      Button("change number")
+      Button('change number')
         .onClick(() => {
           this.number++;
         })
@@ -3110,7 +3118,7 @@ struct TextNumberTransition {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088051.gif)
+ ![](./img/zh-cn_image_0000002701799674.gif)
 
 #### [h2]示例19（文本内容区垂直对齐）
 
@@ -3135,7 +3143,7 @@ struct TextContentAlignExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928223.png)
+ ![](./img/zh-cn_image_0000002731518959.png)
 
 #### [h2]示例20（倍数行高和最大最小行高）
 
@@ -3178,7 +3186,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008546.png)
+ ![](./img/zh-cn_image_0000002701639760.png)
 
 #### [h2]示例21（文本设置显示最小行数）
 
@@ -3209,7 +3217,7 @@ struct TextExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848626.png)
+ ![](./img/zh-cn_image_0000002731358981.png)
 
 #### [h2]示例22（设置文本选择区域并高亮显示）
 
@@ -3229,7 +3237,7 @@ struct Index {
           .fontSize(25)
           .borderWidth(1)
           .copyOption(CopyOptions.LocalDevice)
-        Button("setTextSelection")
+        Button('setTextSelection')
           .onClick(() => {
             this.controller.setTextSelection(1, 6, { menuPolicy: MenuPolicy.HIDE })
           })
@@ -3240,7 +3248,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088053.gif)
+ ![](./img/zh-cn_image_0000002701799676.gif)
 
 #### [h2]示例23（设置行首标点符号压缩和行尾标点符号悬挂）
 
@@ -3292,7 +3300,7 @@ struct PunctuationDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928225.gif)
+ ![](./img/zh-cn_image_0000002731518961.gif)
 
 #### [h2]示例24（设置自适应间距）
 
@@ -3355,7 +3363,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008548.gif)
+ ![](./img/zh-cn_image_0000002701639762.gif)
 
 #### [h2]示例25（设置文本拖拽时的背板样式）
 
@@ -3381,7 +3389,7 @@ struct TextTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848628.png)
+ ![](./img/zh-cn_image_0000002731358983.png)
 
 #### [h2]示例26（设置文本排版方向）
 
@@ -3422,7 +3430,7 @@ struct TextExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088055.png)
+ ![](./img/zh-cn_image_0000002701799678.png)
 
 #### [h2]示例27（获取指定坐标和范围对应的文本信息）
 
@@ -3469,7 +3477,11 @@ struct TextExample10 {
 
       Button('相对组件坐标[150,50]字形信息')
         .onClick(() => {
+          // getLayoutManager在TextController未绑定Text或Text被销毁时会返回undefined，使用时需做判空处理
           let layoutManager: LayoutManager = this.textController.getLayoutManager();
+          if (!layoutManager) {
+            return;
+          }
           let position1: PositionWithAffinity = layoutManager.getGlyphPositionAtCoordinate(150, 50);
           this.str1 = '相对组件坐标[150,50] glyphPosition position: ' + position1.position +
             ' affinity: ' +
@@ -3496,7 +3508,7 @@ struct TextExample10 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928227.gif)
+ ![](./img/zh-cn_image_0000002731518963.gif)
 
 #### [h2]示例28（设置文本排版时是否使能孤字优化）
 
@@ -3534,7 +3546,7 @@ struct TextExample {
 ```
  该效果图会因设备尺寸差异有显示区别，仅供参考。
 
-![](./img/zh-cn_image_0000002656008550.png)
+![](./img/zh-cn_image_0000002701639764.png)
 
 #### [h2]示例29（设置可变字体的属性）
 
@@ -3563,7 +3575,7 @@ struct TextExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848630.gif)
+ ![](./img/zh-cn_image_0000002731358985.gif)
 
 #### [h2]示例30（设置图片预览菜单）
 
@@ -3609,7 +3621,7 @@ struct TextExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088057.gif)
+ ![](./img/zh-cn_image_0000002701799680.gif)
 
 #### [h2]示例31（设置属性字符串段落缓存策略）
 
@@ -3745,7 +3757,7 @@ struct StyledStringAppend {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928229.png)
+ ![](./img/zh-cn_image_0000002731518965.png)
 
 #### [h2]示例32（设置文本尾部缩进）
 
@@ -3790,7 +3802,7 @@ struct TailIndentsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008552.png)
+ ![](./img/zh-cn_image_0000002701639766.png)
 
 #### [h2]示例33（设置文本选择的AI菜单）
 
@@ -3818,4 +3830,127 @@ struct DataDetectorDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848632.gif)
+ ![](./img/zh-cn_image_0000002731358987.gif)
+
+#### [h2]示例34（长按含表情符号文本绘制渐变高亮背景）
+
+该示例通过[getLayoutManager](#getlayoutmanager12)接口获取文本的布局管理对象，使用[LayoutManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#layoutmanager12)中以UTF-16编码查询的[getCharacterPositionAtCoordinate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#getcharacterpositionatcoordinate)根据长按坐标获取字符位置与亲和性，再通过[getGlyphRangeForCharacterRange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#getglyphrangeforcharacterrange)获取对应的字形索引范围与实际字符范围，最后通过[getRectsForRange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#getrectsforrange14)获取文本矩形区域，并在[Canvas](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-components-canvas-canvas)上绘制渐变背景，实现对包含表情符号（字形簇）文本的高亮。
+
+从API版本26.0.0开始，新增带编码类型参数的getCharacterPositionAtCoordinate、getGlyphRangeForCharacterRange、getCharacterRangeForGlyphRange接口重载，以及TextEncoding枚举。
+
+```
+// xxx.ets
+import { LengthMetrics } from '@kit.ArkUI';
+import { text } from '@kit.ArkGraphics2D';
+
+const TEXT_CONTENT: string =
+  '这是一段包含表情符号的测试文本\u{1F60A}。长按文字可查看渐变高亮效果\u{1F389}。\n' +
+  '复杂表情符号\u{1F468}\u{200D}\u{1F469}\u{200D}\u{1F467}\u{200D}\u{1F466}也会被正确处理' +
+  '\u{1F3F3}\u{FE0F}\u{200D}\u{1F308}，再来一些emoji\u{1F680}\u{1F31F}\u{1F4BB}和中文混排。\n' +
+  '第三行：可以长按不同位置试试各种字符\u{1F600}\u{1F431}\u{1F409}。';
+
+@Entry
+@Component
+struct Utf16GlyphHighlightPage {
+  private textController: TextController = new TextController();
+  private canvasContext: CanvasRenderingContext2D = new CanvasRenderingContext2D(new RenderingContextSettings(true));
+  @State isCanvasReady: boolean = false;
+  @State resultInfo: string = '长按下方文字（含表情符号）查看渐变背景高亮效果';
+
+  aboutToAppear(): void {
+    const styledString = new MutableStyledString(TEXT_CONTENT, [{
+      start: 0, length: TEXT_CONTENT.length,
+      styledKey: StyledStringKey.FONT,
+      styledValue: new TextStyle({ fontSize: LengthMetrics.vp(24) })
+    }]);
+    this.textController.setStyledString(styledString);
+  }
+
+  build() {
+    Column() {
+      Text(this.resultInfo)
+        .fontSize(13).fontColor('#666666')
+        .padding({ left: 16, right: 16, top: 12, bottom: 8 })
+        .margin({ left: 12, right: 12, top: 12 })
+        .width('100%').height(110)
+      Stack({ alignContent: Alignment.TopStart }) {
+        Canvas(this.canvasContext).width('100%').height('100%')
+          .onReady(() => { this.isCanvasReady = true; })
+        Text(undefined, { controller: this.textController })
+          .gesture(LongPressGesture({ repeat: false, duration: 500 })
+            .onAction((event: GestureEvent) => { this.handleLongPress(event); }))
+      }
+      .layoutWeight(1).width('100%')
+      .padding({ left: 16, right: 16, top: 12 })
+      .margin({ left: 12, right: 12, bottom: 12 }).clip(true)
+    }.height('100%').width('100%')
+  }
+
+  private handleLongPress(event: GestureEvent): void {
+    // 处理流程：坐标转px -> getCharacterPositionAtCoordinate获取字符位置与亲和性 ->
+    //           依亲和性确定字符范围 -> getGlyphRangeForCharacterRange获取字形范围与实际字符范围 ->
+    //           getRectsForRange获取矩形区域 -> Canvas绘制渐变背景
+    if (!this.isCanvasReady) { this.resultInfo = 'Canvas 尚未就绪，请稍后重试'; return; }
+    const uiContext = this.getUIContext();
+    // 获取文本布局管理对象，用于后续的字符位置/字形范围/矩形区域查询
+    const layoutManager = this.textController.getLayoutManager();
+    if (!layoutManager) { this.resultInfo = 'LayoutManager 不可用'; return; }
+    const finger = event.fingerList[0];
+    if (!finger) { this.resultInfo = '未获取到手指信息'; return; }
+    // 将长按坐标从vp转换为px，供布局查询接口使用
+    const localXPx = uiContext.vp2px(finger.localX);
+    const localYPx = uiContext.vp2px(finger.localY);
+    // 以UTF-16编码查询距离长按坐标最近的字符位置及亲和性
+    const posAffinity = layoutManager.getCharacterPositionAtCoordinate(localXPx, localYPx, TextEncoding.TEXT_ENCODING_UTF16);
+    if (!posAffinity) { this.resultInfo = 'getCharacterPositionAtCoordinate 返回 undefined'; return; }
+    const index = posAffinity.position;
+    const affinity = posAffinity.affinity;
+    let charStart: number, charEnd: number;
+    if (affinity === text.Affinity.UPSTREAM) {
+      charStart = Math.max(0, index - 1); charEnd = index;
+    } else {
+      charStart = index; charEnd = index + 1;
+    }
+    // 根据字符范围查询对应的字形范围与实际字符范围（UTF-16编码）
+    const glyphRanges = layoutManager.getGlyphRangeForCharacterRange(
+      { start: charStart, end: charEnd }, TextEncoding.TEXT_ENCODING_UTF16);
+    if (!glyphRanges || glyphRanges.length === 0) {
+      this.resultInfo = `getGlyphRangeForCharacterRange 返回空, index=${index}, affinity=${affinity}`; return;
+    }
+    const actualRange: TextRange = glyphRanges.length >= 2 ? glyphRanges[1] : { start: charStart, end: charEnd };
+    // 根据实际字符范围获取文本矩形区域，用于绘制高亮背景
+    const textBoxes = layoutManager.getRectsForRange(actualRange, text.RectWidthStyle.TIGHT, text.RectHeightStyle.TIGHT);
+    if (!textBoxes || textBoxes.length === 0) {
+      this.resultInfo = `getRectsForRange 返回空, range=[${actualRange.start}, ${actualRange.end}]`; return;
+    }
+    this.drawGradientBackground(uiContext, textBoxes);
+    const affinityStr = affinity === text.Affinity.UPSTREAM ? 'UPSTREAM(0)' : 'DOWNSTREAM(1)';
+    this.resultInfo =
+      `坐标: (${finger.localX.toFixed(1)}, ${finger.localY.toFixed(1)})vp\n` +
+      `UTF16偏移: ${index}, 亲和性: ${affinityStr}\n` +
+      `传入范围: [${charStart}, ${charEnd}] -> 实际字符范围: [${actualRange.start}, ${actualRange.end}]\n` +
+      `矩形数: ${textBoxes.length}`;
+  }
+
+  private drawGradientBackground(uiContext: UIContext, textBoxes: TextBox[]): void {
+    const ctx = this.canvasContext;
+    ctx.clearRect(0, 0, 5000, 5000);
+    for (const box of textBoxes) {
+      const r = box.rect;
+      const l = uiContext.px2vp(r.left), t = uiContext.px2vp(r.top);
+      const w = uiContext.px2vp(r.right) - l, h = uiContext.px2vp(r.bottom) - t;
+      if (w <= 0 || h <= 0) continue;
+      const g = ctx.createLinearGradient(l, t, l + w, t + h);
+      g.addColorStop(0, 'rgba(187, 153, 255, 0.66)');
+      g.addColorStop(1, 'rgba(129, 229, 255, 0.66)');
+      ctx.fillStyle = g;
+      ctx.beginPath();
+      ctx.roundRect(l, t, w, h, 4);
+      ctx.fill();
+    }
+  }
+}
+```
+ 该效果图会因设备尺寸差异有显示区别，仅供参考。
+
+![](./img/zh-cn_image_0000002701799682.gif)

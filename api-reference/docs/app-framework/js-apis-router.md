@@ -2,8 +2,8 @@
 title: "@ohos.router (页面路由)(不推荐)"
 upstream_id: "harmonyos-references/js-apis-router"
 catalog: "harmonyos-references"
-content_hash: "0a025c7d78e4"
-synced_at: "2026-08-14T15:52:24.197385"
+content_hash: "71812a9611f3"
+synced_at: "2026-08-29T18:12:32.790473"
 ---
 
 # @ohos.router (页面路由)(不推荐)
@@ -68,8 +68,6 @@ pushUrl(options: RouterOptions): Promise<void>
 示例：
 
 ```
-import { router } from '@kit.ArkUI';
-
 import { BusinessError } from '@kit.BasicServicesKit';
 
 class InnerParams {
@@ -97,8 +95,8 @@ router.pushUrl({
   .then(() => {
     console.info(`pushUrl finish`);
   })
-  .catch((err: BusinessError) => {
-    console.error(`pushUrl failed. Code: ${err.code}, message: ${err.message}`);
+  .catch((err: ESObject) => {
+    console.error(`pushUrl failed, code is ${(err as BusinessError).code}, message is ${(err as BusinessError).message}`);
   });
 ```
 
@@ -140,8 +138,6 @@ pushUrl(options: RouterOptions, callback: AsyncCallback<void>): void
 示例：
 
 ```
-import { router } from '@kit.ArkUI';
-
 class InnerParams {
   data3: number[];
 
@@ -165,7 +161,7 @@ router.pushUrl({
   params: new RouterParams('message', [123, 456, 789])
 }, (err) => {
   if (err) {
-    console.error(`pushUrl failed. Code: ${err.code}, message: ${err.message}`);
+    console.error(`pushUrl failed, code is ${err.code}, message is ${err.message}`);
     return;
   }
   console.info('pushUrl success');
@@ -216,8 +212,6 @@ pushUrl(options: RouterOptions, mode: RouterMode): Promise<void>
 示例：
 
 ```
-import { router } from '@kit.ArkUI';
-
 import { BusinessError } from '@kit.BasicServicesKit';
 
 class InnerParams {
@@ -245,8 +239,8 @@ router.pushUrl({
   .then(() => {
     console.info(`pushUrl finish`);
   })
-  .catch((err: BusinessError) => {
-    console.error(`pushUrl failed. Code: ${err.code}, message: ${err.message}`);
+  .catch((err: ESObject) => {
+    console.error(`pushUrl failed, code is ${(err as BusinessError).code}, message is ${(err as BusinessError).message}`);
   })
 ```
 
@@ -289,8 +283,6 @@ pushUrl(options: RouterOptions, mode: RouterMode, callback: AsyncCallback<void>)
 示例：
 
 ```
-import { router } from '@kit.ArkUI';
-
 class InnerParams {
   data3: number[];
 
@@ -314,7 +306,7 @@ router.pushUrl({
   params: new RouterParams('message', [123, 456, 789])
 }, router.RouterMode.Standard, (err) => {
   if (err) {
-    console.error(`pushUrl failed. Code: ${err.code}, message: ${err.message}`);
+    console.error(`pushUrl failed, code is ${err.code}, message is ${err.message}`);
     return;
   }
   console.info('pushUrl success');
@@ -363,8 +355,6 @@ replaceUrl(options: RouterOptions): Promise<void>
 示例：
 
 ```
-import { router } from '@kit.ArkUI';
-
 import { BusinessError } from '@kit.BasicServicesKit';
 
 class RouterParams {
@@ -382,8 +372,8 @@ router.replaceUrl({
   .then(() => {
     console.info(`replaceUrl finish`);
   })
-  .catch((err: BusinessError) => {
-    console.error(`replaceUrl failed. Code: ${err.code}, message: ${err.message}`);
+  .catch((err: ESObject) => {
+    console.error(`replaceUrl failed, code is ${(err as BusinessError).code}, message is ${(err as BusinessError).message}`);
   })
 ```
 
@@ -391,7 +381,7 @@ router.replaceUrl({
 
 replaceUrl(options: RouterOptions, callback: AsyncCallback<void>): void
 
-用应用内的某个页面替换当前页面，并销毁被替换的页面。不支持设置页面转场动效，如需设置，推荐使用[Navigation组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-architecture)。
+用应用内的某个页面替换当前页面，并销毁被替换的页面。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -424,8 +414,6 @@ replaceUrl(options: RouterOptions, callback: AsyncCallback<void>): void
 示例：
 
 ```
-import { router } from '@kit.ArkUI';
-
 class RouterParams {
   data1: string;
 
@@ -439,7 +427,7 @@ router.replaceUrl({
   params: new RouterParams('message')
 }, (err) => {
   if (err) {
-    console.error(`replaceUrl failed. Code: ${err.code}, message: ${err.message}`);
+    console.error(`replaceUrl failed, code is ${err.code}, message is ${err.message}`);
     return;
   }
   console.info('replaceUrl success');
@@ -450,7 +438,7 @@ router.replaceUrl({
 
 replaceUrl(options: RouterOptions, mode: RouterMode): Promise<void>
 
-用应用内的某个页面替换当前页面，并销毁被替换的页面。不支持设置页面转场动效，如需设置，推荐使用[Navigation组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-architecture)。
+用应用内的某个页面替换当前页面，并销毁被替换的页面。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -489,8 +477,6 @@ replaceUrl(options: RouterOptions, mode: RouterMode): Promise<void>
 示例：
 
 ```
-import { router } from '@kit.ArkUI';
-
 import { BusinessError } from '@kit.BasicServicesKit';
 
 class RouterParams {
@@ -508,8 +494,8 @@ router.replaceUrl({
   .then(() => {
     console.info(`replaceUrl finish`);
   })
-  .catch((err: BusinessError) => {
-    console.error(`replaceUrl failed. Code: ${err.code}, message: ${err.message}`);
+  .catch((err: ESObject) => {
+    console.error(`replaceUrl failed, code is ${(err as BusinessError).code}, message is ${(err as BusinessError).message}`);
   })
 ```
 
@@ -517,7 +503,7 @@ router.replaceUrl({
 
 replaceUrl(options: RouterOptions, mode: RouterMode, callback: AsyncCallback<void>): void
 
-用应用内的某个页面替换当前页面，并销毁被替换的页面。不支持设置页面转场动效，如需设置，推荐使用[Navigation组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-architecture)。
+用应用内的某个页面替换当前页面，并销毁被替换的页面。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -551,8 +537,6 @@ replaceUrl(options: RouterOptions, mode: RouterMode, callback: AsyncCallback<voi
 示例：
 
 ```
-import { router } from '@kit.ArkUI';
-
 class RouterParams {
   data1: string;
 
@@ -566,7 +550,7 @@ router.replaceUrl({
   params: new RouterParams('message')
 }, router.RouterMode.Standard, (err) => {
   if (err) {
-    console.error(`replaceUrl failed. Code: ${err.code}, message: ${err.message}`);
+    console.error(`replaceUrl failed, code is ${err.code}, message is ${err.message}`);
     return;
   }
   console.info('replaceUrl success');
@@ -618,8 +602,6 @@ pushNamedRoute(options: NamedRouterOptions): Promise<void>
 示例：
 
 ```
-import { router } from '@kit.ArkUI';
-
 import { BusinessError } from '@kit.BasicServicesKit';
 
 class InnerParams {
@@ -647,11 +629,11 @@ router.pushNamedRoute({
   .then(() => {
     console.info(`pushNamedRoute finish`);
   })
-  .catch((err: BusinessError) => {
-    console.error(`pushNamedRoute failed. Code: ${err.code}, message: ${err.message}`);
+  .catch((err: ESObject) => {
+    console.error(`pushNamedRoute failed, code is ${(err as BusinessError).code}, message is ${(err as BusinessError).message}`);
   })
 ```
- 详细示例请参考：[UI开发-命名路由](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-routing#命名路由)。
+ 详细示例请参考：[UI开发-命名路由](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-routing#命名路由)
 
 #### router.pushNamedRoute(deprecated)
 
@@ -693,8 +675,6 @@ pushNamedRoute(options: NamedRouterOptions, callback: AsyncCallback<void>): void
 示例：
 
 ```
-import { router } from '@kit.ArkUI';
-
 class InnerParams {
   data3: number[];
 
@@ -718,7 +698,7 @@ router.pushNamedRoute({
   params: new RouterParams('message', [123, 456, 789])
 }, (err) => {
   if (err) {
-    console.error(`pushNamedRoute failed. Code: ${err.code}, message: ${err.message}`);
+    console.error(`pushNamedRoute failed, code is ${err.code}, message is ${err.message}`);
     return;
   }
   console.info('pushNamedRoute success');
@@ -771,8 +751,6 @@ pushNamedRoute(options: NamedRouterOptions, mode: RouterMode): Promise<void>
 示例：
 
 ```
-import { router } from '@kit.ArkUI';
-
 import { BusinessError } from '@kit.BasicServicesKit';
 
 class InnerParams {
@@ -800,8 +778,8 @@ router.pushNamedRoute({
   .then(() => {
     console.info(`pushNamedRoute finish`);
   })
-  .catch((err: BusinessError) => {
-    console.error(`pushNamedRoute failed. Code: ${err.code}, message: ${err.message}`);
+  .catch((err: ESObject) => {
+    console.error(`pushNamedRoute failed, code is ${(err as BusinessError).code}, message is ${(err as BusinessError).message}`);
   })
 ```
 
@@ -846,8 +824,6 @@ pushNamedRoute(options: NamedRouterOptions, mode: RouterMode, callback: AsyncCal
 示例：
 
 ```
-import { router } from '@kit.ArkUI';
-
 class InnerParams {
   data3: number[];
 
@@ -871,7 +847,7 @@ router.pushNamedRoute({
   params: new RouterParams('message', [123, 456, 789])
 }, router.RouterMode.Standard, (err) => {
   if (err) {
-    console.error(`pushNamedRoute failed. Code: ${err.code}, message: ${err.message}`);
+    console.error(`pushNamedRoute failed, code is ${err.code}, message is ${err.message}`);
     return;
   }
   console.info('pushNamedRoute success');
@@ -922,8 +898,6 @@ replaceNamedRoute(options: NamedRouterOptions): Promise<void>
 示例：
 
 ```
-import { router } from '@kit.ArkUI';
-
 import { BusinessError } from '@kit.BasicServicesKit';
 
 class RouterParams {
@@ -941,8 +915,8 @@ router.replaceNamedRoute({
   .then(() => {
     console.info(`replaceNamedRoute finish`);
   })
-  .catch((err: BusinessError) => {
-    console.error(`replaceNamedRoute failed. Code: ${err.code}, message: ${err.message}`);
+  .catch((err: ESObject) => {
+    console.error(`replaceNamedRoute failed, code is ${(err as BusinessError).code}, message is ${(err as BusinessError).message}`);
   })
 ```
 
@@ -985,8 +959,6 @@ replaceNamedRoute(options: NamedRouterOptions, callback: AsyncCallback<void>): v
 示例：
 
 ```
-import { router } from '@kit.ArkUI';
-
 class RouterParams {
   data1: string;
 
@@ -1000,7 +972,7 @@ router.replaceNamedRoute({
   params: new RouterParams('message')
 }, (err) => {
   if (err) {
-    console.error(`replaceNamedRoute failed. Code: ${err.code}, message: ${err.message}`);
+    console.error(`replaceNamedRoute failed, code is ${err.code}, message is ${err.message}`);
     return;
   }
   console.info('replaceNamedRoute success');
@@ -1052,8 +1024,6 @@ replaceNamedRoute(options: NamedRouterOptions, mode: RouterMode): Promise<void>
 示例：
 
 ```
-import { router } from '@kit.ArkUI';
-
 import { BusinessError } from '@kit.BasicServicesKit';
 
 class RouterParams {
@@ -1071,8 +1041,8 @@ router.replaceNamedRoute({
   .then(() => {
     console.info(`replaceNamedRoute finish`);
   })
-  .catch((err: BusinessError) => {
-    console.error(`replaceNamedRoute failed. Code: ${err.code}, message: ${err.message}`);
+  .catch((err: ESObject) => {
+    console.error(`replaceNamedRoute failed, code is ${(err as BusinessError).code}, message is ${(err as BusinessError).message}`);
   })
 ```
 
@@ -1116,8 +1086,6 @@ replaceNamedRoute(options: NamedRouterOptions, mode: RouterMode, callback: Async
 示例：
 
 ```
-import { router } from '@kit.ArkUI';
-
 class RouterParams {
   data1: string;
 
@@ -1131,7 +1099,7 @@ router.replaceNamedRoute({
   params: new RouterParams('message')
 }, router.RouterMode.Standard, (err) => {
   if (err) {
-    console.error(`replaceNamedRoute failed. Code: ${err.code}, message: ${err.message}`);
+    console.error(`replaceNamedRoute failed, code is ${err.code}, message is ${err.message}`);
     return;
   }
   console.info('replaceNamedRoute success');
@@ -1187,7 +1155,7 @@ back(index: number, params?: Object): void;
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | index | number | 是 | 返回目标页面的索引值，取值范围[1, 页面栈大小]，页面栈最大数量为32。从栈底到栈顶，index从1开始递增。索引不存在或超出页面栈有效范围时不响应。 |
-| params | Object | 否 | 页面返回时携带的参数。 **说明：** params参数只能传递可序列化的参数，不能传递方法和系统接口返回的对象（例如，媒体接口定义和返回的PixelMap对象）。建议开发者提取系统接口返回的对象中需要被传递的基础类型属性，自行构造object类型对象进行传递。 |
+| params | Object | 否 | 页面返回时携带的参数。 **说明：** params参数只能传递可序列化的参数，不能传递方法和接口返回的对象（例如，媒体接口定义和返回的PixelMap对象）。建议开发者提取接口返回的对象中需要被传递的基础类型属性，自行构造object类型对象进行传递。 |
 
 示例：
 
@@ -1310,8 +1278,6 @@ getStateByIndex(index: number): RouterState | undefined
 示例：
 
 ```
-import { router } from '@kit.ArkUI';
-
 let options: router.RouterState | undefined = router.getStateByIndex(1);
 if (options != undefined) {
   console.info('index = ' + options.index);
@@ -1353,8 +1319,6 @@ getStateByUrl(url: string): Array<RouterState>
 示例：
 
 ```
-import { router } from '@kit.ArkUI';
-
 let options: Array<router.RouterState> = router.getStateByUrl('pages/index');
 for (let i: number = 0; i < options.length; i++) {
   console.info('index = ' + options[i].index);
@@ -1375,7 +1339,7 @@ for (let i: number = 0; i < options.length; i++) {
 | index | number | 否 | 否 | 表示当前页面在页面栈中的索引。从栈底到栈顶，index从1开始递增。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | name | string | 否 | 否 | 表示当前页面的名称，即对应文件名。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | path | string | 否 | 否 | 表示当前页面的路径。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| params12+ | Object | 否 | 否 | 表示当前页面携带的参数。 **说明：** params参数只能传递可序列化的参数，不能传递方法和系统接口返回的对象（例如，媒体接口定义和返回的PixelMap对象）。建议开发者提取系统接口返回的对象中需要被传递的基础类型属性，自行构造object类型对象进行传递。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| params12+ | Object | 否 | 否 | 表示当前页面携带的参数。 **说明：** params参数只能传递可序列化的参数，不能传递方法和接口返回的对象（例如，媒体接口定义和返回的PixelMap对象）。建议开发者提取接口返回的对象中需要被传递的基础类型属性，自行构造object类型对象进行传递。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### router.showAlertBeforeBackPage(deprecated)
 
@@ -1417,7 +1381,7 @@ try {
     message: 'Message Info'
   });
 } catch (err) {
-  console.error(`showAlertBeforeBackPage failed. Code: ${(err as BusinessError).code}, message: ${(err as BusinessError).message}`);
+  console.error(`showAlertBeforeBackPage failed, code is ${(err as BusinessError).code}, message is ${(err as BusinessError).message}`);
 }
 ```
 
@@ -1492,7 +1456,7 @@ this.getUIContext().getRouter().getParams();
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | url | string | 否 | 否 | 表示目标页面的url，可以用以下两种格式： - 页面绝对路径，由配置文件中pages列表提供，例如： - pages/index/index - pages/detail/detail - 特殊值，如果url的值是"/"，则跳转到首页，首页默认为页面跳转配置项src数组的第一个数据项。 传入不存在或无效的url路径时，跳转失败，具体错误码参见各接口的错误码说明。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| params | Object | 否 | 是 | 表示路由跳转时要同时传递到目标页面的数据，切换到其他页面时，当前接收的数据失效。跳转到目标页面后，使用router.getParams()获取传递的参数，此外，在类web范式中，参数也可以在页面中直接使用，如this.keyValue(keyValue为跳转时params参数中的key值)，如果目标页面中已有该字段，则其值会被传入的字段值覆盖。 **说明：** params参数只能传递可序列化的参数，不能传递方法和系统接口返回的对象（例如，媒体接口定义和返回的PixelMap对象）。传入不可序列化的参数时，可能导致参数传递失败或应用运行异常。建议开发者提取系统接口返回的对象中需要被传递的基础类型属性，自行构造object类型对象进行传递。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| params | Object | 否 | 是 | 表示路由跳转时要同时传递到目标页面的数据，切换到其他页面时，当前接收的数据失效。跳转到目标页面后，使用router.getParams()获取传递的参数，此外，在类Web范式中，参数也可以在页面中直接使用，如this.keyValue(keyValue为跳转时params参数中的key值)，如果目标页面中已有该字段，则其值会被传入的字段值覆盖。 **说明：** params参数只能传递可序列化的参数，不能传递方法和接口返回的对象（例如，媒体接口定义和返回的PixelMap对象）。传入不可序列化的参数时，可能导致参数传递失败或应用运行异常。建议开发者提取接口返回的对象中需要被传递的基础类型属性，自行构造object类型对象进行传递。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | recoverable14+ | boolean | 否 | 是 | 表示对应的页面是否可恢复，默认为true。当为true时，表示可恢复，当为false时，表示不可恢复。 **说明：** 当应用退到后台，并且在未来的某个时间点，由于系统资源限制等原因被系统杀死，如果某个页面被设置成可恢复，那么该应用再次被拉到前台后系统可以恢复出页面，详细说明请参考[UIAbility备份恢复](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-recover-guideline)。 |
 
 ![](./img/note_3.0-zh-cn.png) 页面路由栈支持的最大Page数量为32。
@@ -1517,14 +1481,14 @@ this.getUIContext().getRouter().getParams();
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | name | string | 否 | 否 | 表示目标命名路由页面的name，需为已注册的命名路由名称。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 **系统能力：** SystemCapability.ArkUI.ArkUI.Full |
-| params | Object | 否 | 是 | 表示路由跳转时要同时传递到目标页面的数据，切换到其他页面时，当前接收的数据失效。跳转到目标页面后，使用router.getParams()获取传递的参数，此外，在类web范式中，参数也可以在页面中直接使用，如this.keyValue(keyValue为跳转时params参数中的key值)，如果目标页面中已有该字段，则其值会被传入的字段值覆盖。 **说明：** params参数只能传递可序列化的参数，不能传递方法和系统接口返回的对象（例如，媒体接口定义和返回的PixelMap对象）。传入不可序列化的参数时，可能导致参数传递失败或应用运行异常。建议开发者提取系统接口返回的对象中需要被传递的基础类型属性，自行构造object类型对象进行传递。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 **系统能力：** SystemCapability.ArkUI.ArkUI.Full |
+| params | Object | 否 | 是 | 表示路由跳转时要同时传递到目标页面的数据。跳转到目标页面后，使用router.getParams()获取传递的参数，此外，在类Web范式中，参数也可以在页面中直接使用，如this.keyValue(keyValue为跳转时params参数中的key值)，如果目标页面中已有该字段，则其值会被传入的字段值覆盖。 **说明：** params参数不能传递方法和接口返回的对象（例如，媒体接口定义和返回的PixelMap对象）。传入不可序列化的参数时，可能导致参数传递失败或应用运行异常。建议开发者提取接口返回的对象中需要被传递的基础类型属性，自行构造object类型对象进行传递。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 **系统能力：** SystemCapability.ArkUI.ArkUI.Full |
 | recoverable14+ | boolean | 否 | 是 | 表示对应的页面是否可恢复，默认为true。当为true时，表示可恢复，当为false时，表示不可恢复。 **说明：** 当应用退到后台，并且在未来的某个时间点，由于系统资源限制等原因被系统杀死，如果某个页面被设置成可恢复，那么该应用再次被拉到前台后系统可以恢复出页面，详细说明请参考[UIAbility备份恢复](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-recover-guideline)。 **系统能力：** SystemCapability.ArkUI.ArkUI.Lite |
 
 #### 完整示例
 
 #### [h2]基于JS扩展的类Web开发范式
 
-以下代码仅适用于javascript文件，不适用于ArkTS文件。
+以下代码仅适用于javascript文件，不适用于ArkTS文件
 
 ```
 // 在当前页面中
@@ -1590,8 +1554,8 @@ struct Index {
       .then(() => {
         console.info(`pushUrl finish`);
       })
-      .catch((err: BusinessError) => {
-        console.error(`pushUrl failed. Code: ${err.code}, message: ${err.message}`);
+      .catch((err: ESObject) => {
+        console.error(`pushUrl failed, code is ${(err as BusinessError).code}, message is ${(err as BusinessError).message}`);
       })
     }
 
@@ -1642,7 +1606,7 @@ class RouterParams {
 @Entry
 @Component
 struct Second {
-  private content: string = '这是第二页';
+  private content: string = "这是第二页";
   // 建议使用this.getUIContext().getRouter().getParams()
   @State text: string = (this.getUIContext().getRouter().getParams() as RouterParams).text;
   @State data: InnerParams = (this.getUIContext().getRouter().getParams() as RouterParams).data;
@@ -1689,8 +1653,6 @@ push(options: RouterOptions): void
 示例：
 
 ```
-import { router } from '@kit.ArkUI';
-
 class InnerParams {
   data3: number[];
 
@@ -1734,8 +1696,6 @@ replace(options: RouterOptions): void
 示例：
 
 ```
-import { router } from '@kit.ArkUI';
-
 class RouterParams {
   data1: string;
 
@@ -1769,8 +1729,6 @@ enableAlertBeforeBackPage(options: EnableAlertOptions): void
 示例：
 
 ```
-import { router } from '@kit.ArkUI';
-
 router.enableAlertBeforeBackPage({
   message: 'Message Info'
 });
@@ -1789,8 +1747,6 @@ disableAlertBeforeBackPage(): void
 示例：
 
 ```
-import { router } from '@kit.ArkUI';
-
 router.disableAlertBeforeBackPage();
 ```
 
@@ -1882,7 +1838,7 @@ pages
  
 ```
 // index.js
-import { router } from '@kit.ArkUI';
+import router from '@ohos.router';
 
 export default {
     data: {
@@ -1892,7 +1848,7 @@ export default {
     },
     replaceToRouterPage: function() {
         router.replace({
-            url: 'pages/routerPages/routerPage',
+            uri: 'pages/routerPages/routerPage',
             params: {
                 statusText: 'Opened by router.replace.'
             }
@@ -1979,7 +1935,7 @@ export default {
  
 ```
 // routerPage.js
-import { router } from '@kit.ArkUI';
+import router from '@ohos.router';
 
 export default {
     data: {
@@ -1989,7 +1945,7 @@ export default {
     },
     replaceToIndex: function() {
         router.replace({
-            url: 'pages/index/index',
+            uri: 'pages/index/index',
             params: {
                 statusText: 'Returned by router.replace.'
             }
@@ -2005,4 +1961,4 @@ export default {
     }
 }
 ```
- ![](./img/zh-cn_image_0000002679806760.gif)
+ ![](./img/zh-cn_image_0000002701799328.gif)

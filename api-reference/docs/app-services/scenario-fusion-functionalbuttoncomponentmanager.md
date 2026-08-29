@@ -2,8 +2,8 @@
 title: "functionalButtonComponentManager(场景化融合Button组件管理)"
 upstream_id: "harmonyos-references/scenario-fusion-functionalbuttoncomponentmanager"
 catalog: "harmonyos-references"
-content_hash: "24be6abc78fd"
-synced_at: "2026-07-28T16:53:03.836385"
+content_hash: "632724a3db06"
+synced_at: "2026-08-29T18:18:35.386667"
 ---
 
 # functionalButtonComponentManager(场景化融合Button组件管理)
@@ -730,7 +730,7 @@ struct Index {
             // OpenType.LAUNCH_APP表示该按钮用于启动应用。
             openType: functionalButtonComponentManager.OpenType.LAUNCH_APP,
             label: '打开APP',
-            // 当OpenType为functionButtonComponentManager.OpenType.LAUNCH_APP时，appParam为必填项。
+            // 当OpenType为functionalButtonComponentManager.OpenType.LAUNCH_APP时，appParam为必填项。
             appParam: {
               bundleName: 'xxx',
               abilityName: 'xxx'
@@ -1640,6 +1640,18 @@ onSubscribeLiveView(callback: AsyncCallback<SubscribeLiveViewResult>): Functiona
 | --- | --- |
 | [FunctionalButtonController](#functionalbuttoncontroller) | [FunctionalButton](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scenario-fusion-functionalbutton#functionalbutton)组件控制器。 |
 
+错误码：
+
+以下错误码的详细介绍请参见[ArkTS组件错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scenario-fusion)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| [1003500012](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scenario-fusion#section1003500012-实况窗订阅次数超出限制) | The number of subscription times exceeds the upper limit of 2000. |
+| [1003500013](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scenario-fusion#section1003500013-无效的实况窗订阅场景) | Invalid event type. |
+| [1003500014](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scenario-fusion#section1003500014-实况窗提醒时间距当前时间过长) | Time exceeds valid period. |
+| [1003500015](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scenario-fusion#section1003500015-实况窗订阅失败) | Subscribe failed. |
+| [1003500016](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scenario-fusion#section1003500016-实况窗订阅请求频次超限) | Request subscribe liveView exceed. |
+
 示例：
 
 ```
@@ -1828,7 +1840,7 @@ onRequestSubscribeMessage(callback: AsyncCallback<RequestSubscribeMessageResult>
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS组件错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scenario-fusion)。
+以下错误码的详细介绍请参见[ArkTS组件错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scenario-fusion)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -1912,7 +1924,7 @@ onShare(callback: AsyncCallback<void>): FunctionalButtonController
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS组件错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scenario-fusion)。
+以下错误码的详细介绍请参见[ArkTS组件错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scenario-fusion)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -1999,7 +2011,7 @@ onFeedback(callback: AsyncCallback<void>): FunctionalButtonController
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS组件错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scenario-fusion)。
+以下错误码的详细介绍请参见[ArkTS组件错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scenario-fusion)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -3066,4 +3078,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685929429.png)
+ ![](./img/zh-cn_image_0000002701640972.png)

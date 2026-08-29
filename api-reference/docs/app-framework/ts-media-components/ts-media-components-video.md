@@ -2,8 +2,8 @@
 title: "Video"
 upstream_id: "harmonyos-references/ts-media-components-video"
 catalog: "harmonyos-references"
-content_hash: "480790503402"
-synced_at: "2026-07-28T16:45:31.499190"
+content_hash: "454c68b9d408"
+synced_at: "2026-08-29T18:14:11.011832"
 ---
 
 # Video
@@ -920,7 +920,7 @@ interface FullscreenObject {
   fullscreen: boolean;
 }
 ```
- ![](./img/zh-cn_image_0000002655848746.gif)
+ ![](./img/zh-cn_image_0000002731519083.gif)
 
 #### [h2]示例2（图像分析功能）
 
@@ -1077,7 +1077,7 @@ struct VideoObject {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088177.png)
+ ![](./img/zh-cn_image_0000002701639882.png)
 
 #### [h2]示例5（onError事件上报错误码）
 
@@ -1119,7 +1119,7 @@ struct VideoErrorComponent {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928347.png)
+ ![](./img/zh-cn_image_0000002731359103.png)
 
 #### [h2]示例6（使用attributeModifier动态设置Video组件的属性及方法）
 
@@ -1240,13 +1240,13 @@ interface FullscreenObject {
   fullscreen: boolean;
 }
 ```
- ![](./img/zh-cn_image_0000002656008668.png)
+ ![](./img/zh-cn_image_0000002701799798.png)
 
 #### [h2]示例7（VideoControllerAsync用法）
 
 本示例展示VideoControllerAsync的[start](#start-1)、[pause](#pause-1)、[stop](#stop-1)、[reset](#reset)接口用法，通过Promise异步回调获取命令执行状态。
 
-从API version 26.0.0开始，新增VideoControllerAsync控制器及[start](#start-1)、[pause](#pause-1)、[stop](#stop-1)、[reset](#reset)接口。
+从API版本26.0.0开始，新增VideoControllerAsync控制器及[start](#start-1)、[pause](#pause-1)、[stop](#stop-1)、[reset](#reset)接口。
 
 ```
 import { BusinessError } from '@kit.BasicServicesKit';

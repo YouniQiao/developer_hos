@@ -2,23 +2,23 @@
 title: "Class (Matrix)"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing-matrix"
 catalog: "harmonyos-references"
-content_hash: "035555c0e5af"
-synced_at: "2026-07-09T01:00:52.417515"
+content_hash: "80a76701b04c"
+synced_at: "2026-08-29T18:17:50.528194"
 ---
 
 # Class (Matrix)
 
-矩阵对象。
+矩阵对象，用于图形的坐标变换，支持平移、旋转、缩放和倾斜等变换操作。通过矩阵变换可实现不同坐标系之间的映射。
 
-表示为3*3的矩阵，如下图所示：
+表示为3×3的矩阵，如下图所示：
 
-![](./img/zh-cn_image_0000002661733693.png)
+![](./img/zh-cn_image_0000002731520111.png)
 
-矩阵中的元素从左到右，从上到下分别表示水平缩放系数、水平倾斜系数、水平位移系数、垂直倾斜系数、垂直缩放系数、垂直位移系数、X轴透视系数、Y轴透视系数、透视缩放系数。
+矩阵中的元素从左到右，从上到下分别表示水平缩放因子、水平倾斜系数、水平位移系数、垂直倾斜系数、垂直缩放因子、垂直位移系数、x轴透视系数、y轴透视系数、透视缩放因子。
 
 设(x1, y1)为源坐标点，(x2, y2)为源坐标点通过矩阵变换后的坐标点，则两个坐标点的关系如下：
 
-![](./img/zh-cn_image_0000002631254572.png)
+![](./img/zh-cn_image_0000002701640914.png)
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -93,8 +93,8 @@ import { drawing } from '@kit.ArkGraphics2D';
 
 let matrix = new drawing.Matrix();
 matrix.setMatrix([1, 0.5, 1, 0.5, 1, 1, 1, 1, 1]);
-let isAff = matrix.isAffine();
-console.info('isAff :', isAff);
+let isAffine = matrix.isAffine();
+console.info('isAffine :', isAffine);
 ```
 
 #### rectStaysRect20+
@@ -127,7 +127,7 @@ console.info('isRect :', isRect);
 
 setSkew(kx: number, ky: number, px: number, py: number): void
 
-设置矩阵的倾斜系数。
+设置矩阵为单位矩阵，并围绕倾斜中心点(px, py)按(kx, ky)进行倾斜变换。与[setRotation](#setrotation12)、[setScale](#setscale12)、[setTranslation](#settranslation12)类似，均为重置矩阵后施加单一变换。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -154,7 +154,7 @@ matrix.setSkew(2, 0.5, 0.5, 2);
 
 setSinCos(sinValue: number, cosValue: number, px: number, py: number): void
 
-设置矩阵，使其围绕旋转中心(px, py)以指定的正弦值和余弦值旋转。
+设置矩阵为单位矩阵，使其围绕旋转中心点(px, py)以指定的正弦值和余弦值旋转。与[setRotation](#setrotation12)功能类似，但setRotation直接传入角度值，而本方法传入正弦值和余弦值。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -181,7 +181,7 @@ matrix.setSinCos(0, 1, 1, 0);
 
 setRotation(degree: number, px: number, py: number): void
 
-设置矩阵为单位矩阵，并围绕位于(px, py)的旋转轴点进行旋转。
+设置矩阵为单位矩阵，并围绕旋转中心点(px, py)进行旋转。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -190,8 +190,8 @@ setRotation(degree: number, px: number, py: number): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | degree | number | 是 | 角度，单位为度。正数表示顺时针旋转，负数表示逆时针旋转，该参数为浮点数。 |
-| px | number | 是 | 旋转轴点的横坐标，该参数为浮点数。单位为物理像素px。 |
-| py | number | 是 | 旋转轴点的纵坐标，该参数为浮点数。单位为物理像素px。 |
+| px | number | 是 | 旋转中心点的x轴坐标，该参数为浮点数。单位为物理像素px。 |
+| py | number | 是 | 旋转中心点的y轴坐标，该参数为浮点数。单位为物理像素px。 |
 
 错误码：
 
@@ -214,7 +214,7 @@ matrix.setRotation(90, 100, 100);
 
 setScale(sx: number, sy: number, px: number, py: number): void
 
-设置矩阵为单位矩阵围绕位于(px, py)的中心点，以sx和sy进行缩放后的结果。
+设置矩阵为单位矩阵，并围绕缩放中心点(px, py)按sx和sy进行缩放。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -222,10 +222,10 @@ setScale(sx: number, sy: number, px: number, py: number): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| sx | number | 是 | x轴方向缩放系数，为负数时可看作是先关于y = px作镜像翻转后再进行缩放，该参数为浮点数。 |
-| sy | number | 是 | y轴方向缩放系数，为负数时可看作是先关于x = py作镜像翻转后再进行缩放，该参数为浮点数。 |
-| px | number | 是 | 缩放中心点的横坐标，该参数为浮点数。单位为物理像素px。 |
-| py | number | 是 | 缩放中心点的纵坐标，该参数为浮点数。单位为物理像素px。 |
+| sx | number | 是 | x轴方向缩放因子，为负数时可看作是先关于x = px作镜像翻转后再进行缩放，该参数为浮点数。 |
+| sy | number | 是 | y轴方向缩放因子，为负数时可看作是先关于y = py作镜像翻转后再进行缩放，该参数为浮点数。 |
+| px | number | 是 | 缩放中心点的x轴坐标，该参数为浮点数。单位为物理像素px。 |
+| py | number | 是 | 缩放中心点的y轴坐标，该参数为浮点数。单位为物理像素px。 |
 
 错误码：
 
@@ -248,7 +248,7 @@ matrix.setScale(100, 100, 150, 150);
 
 setTranslation(dx: number, dy: number): void
 
-设置矩阵为单位矩阵平移(dx, dy)后的结果。
+设置矩阵为单位矩阵，并平移(dx, dy)。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -288,7 +288,7 @@ setMatrix(values: Array<number>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| values | Array | 是 | 长度为9的浮点数组，表示矩阵对象参数。数组中的值按下标从小，到大分别表示水平缩放系数、水平倾斜系数、水平位移系数、垂直倾斜系数、垂直缩放系数、垂直位移系数、X轴透视系数、Y轴透视系数、透视缩放系数。 |
+| values | Array | 是 | 长度为9的浮点数组，表示矩阵对象的各项参数。数组中的值按下标从小到大分别表示水平缩放因子、水平倾斜系数、水平位移系数（单位为物理像素px）、垂直倾斜系数、垂直缩放因子、垂直位移系数（单位为物理像素px）、x轴透视系数、y轴透视系数和透视缩放因子。 |
 
 错误码：
 
@@ -312,7 +312,7 @@ matrix.setMatrix(value);
 
 preConcat(matrix: Matrix): void
 
-将当前矩阵设置为当前矩阵左乘matrix的结果。
+将一个矩阵乘在当前矩阵的右侧，即新的变换在当前矩阵的变换之前应用。如果需要在当前矩阵的变换之后应用新变换，使用postConcat方法。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -320,7 +320,7 @@ preConcat(matrix: Matrix): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| matrix | [Matrix](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-matrix) | 是 | 表示矩阵对象，位于乘法表达式右侧。 |
+| matrix | [Matrix](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-matrix) | 是 | 表示用于运算的矩阵，位于乘法表达式右侧。 |
 
 错误码：
 
@@ -354,7 +354,7 @@ setMatrix(matrix: Array<number> | Matrix): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| matrix | Array | [Matrix](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-matrix) | 是 | 用于更新的数组或矩阵。 |
+| matrix | Array | [Matrix](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-matrix) | 是 | 用于更新的数组或矩阵。当类型为数组时，长度固定为9。 |
 
 示例：
 
@@ -371,7 +371,7 @@ matrix1.setMatrix(matrix2);
 
 setConcat(matrixA: Matrix, matrixB: Matrix): void
 
-用两个矩阵的乘积更新当前矩阵。
+用两个矩阵的乘积更新当前矩阵，即当前矩阵 = matrixA × matrixB。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -379,8 +379,8 @@ setConcat(matrixA: Matrix, matrixB: Matrix): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| matrixA | [Matrix](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-matrix) | 是 | 用于运算的矩阵A。 |
-| matrixB | [Matrix](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-matrix) | 是 | 用于运算的矩阵B。 |
+| matrixA | [Matrix](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-matrix) | 是 | 用于运算的矩阵A，位于乘法表达式左侧。 |
+| matrixB | [Matrix](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-matrix) | 是 | 用于运算的矩阵B，位于乘法表达式右侧。 |
 
 示例：
 
@@ -398,7 +398,7 @@ matrix1.setConcat(matrix2, matrix1);
 
 postConcat(matrix: Matrix): void
 
-用当前矩阵右乘一个矩阵。
+将一个矩阵乘在当前矩阵的左侧，即新的变换在当前矩阵的变换之后应用。如果需要在当前矩阵的变换之前应用新变换，使用preConcat方法。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -406,7 +406,7 @@ postConcat(matrix: Matrix): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| matrix | [Matrix](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-matrix) | 是 | 用于运算的矩阵。 |
+| matrix | [Matrix](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-matrix) | 是 | 表示用于运算的矩阵，位于乘法表达式左侧。 |
 
 示例：
 
@@ -419,6 +419,7 @@ if (matrix.isIdentity()) {
 } else {
   console.info("matrix is not identity.");
 }
+
 let matrix1 = new drawing.Matrix();
 matrix1.setMatrix([2, 1, 3, 1, 2, 1, 3, 1, 2]);
 let matrix2 = new drawing.Matrix();
@@ -438,7 +439,7 @@ isEqual(matrix: Matrix): boolean
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| matrix | [Matrix](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-matrix) | 是 | 另一个矩阵。 |
+| matrix | [Matrix](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-matrix) | 是 | 另一个矩阵，用来与当前矩阵比较是否相等。 |
 
 返回值：
 
@@ -584,7 +585,7 @@ for (let i = 0; i < 9; i++) {
 
 postRotate(degree: number, px: number, py: number): void
 
-将矩阵设置为矩阵右乘围绕轴心点旋转一定角度的单位矩阵后得到的矩阵。
+将矩阵设置为矩阵右乘围绕旋转中心点旋转degree角度的单位矩阵后得到的矩阵，即新的旋转变换在当前矩阵的变换之后应用。如果需要在当前矩阵的变换之前应用旋转变换，使用preRotate方法。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -593,8 +594,8 @@ postRotate(degree: number, px: number, py: number): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | degree | number | 是 | 旋转角度，单位为度。正数表示顺时针旋转，负数表示逆时针旋转，该参数为浮点数。 |
-| px | number | 是 | 旋转中心点的横坐标，该参数为浮点数。单位为物理像素px。 |
-| py | number | 是 | 旋转中心点的纵坐标，该参数为浮点数。单位为物理像素px。 |
+| px | number | 是 | 旋转中心点的x轴坐标，该参数为浮点数。单位为物理像素px。 |
+| py | number | 是 | 旋转中心点的y轴坐标，该参数为浮点数。单位为物理像素px。 |
 
 错误码：
 
@@ -621,7 +622,7 @@ console.info("matrix= "+matrix.getAll().toString());
 
 postScale(sx: number, sy: number, px: number, py: number): void
 
-将矩阵设置为矩阵右乘围绕轴心点按一定缩放系数缩放后的单位矩阵后得到的矩阵。
+将矩阵设置为矩阵右乘围绕缩放中心点按sx和sy缩放系数缩放后的单位矩阵后得到的矩阵，即新的缩放变换在当前矩阵的变换之后应用。如果需要在当前矩阵的变换之前应用缩放变换，使用preScale方法。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -629,10 +630,10 @@ postScale(sx: number, sy: number, px: number, py: number): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| sx | number | 是 | x轴方向缩放系数，负数表示先关于y = px作镜像翻转后再进行缩放，该参数为浮点数。 |
-| sy | number | 是 | y轴方向缩放系数，负数表示先关于x = py作镜像翻转后再进行缩放，该参数为浮点数。 |
-| px | number | 是 | 缩放中心点的横坐标，该参数为浮点数。单位为物理像素px。 |
-| py | number | 是 | 缩放中心点的纵坐标，该参数为浮点数。单位为物理像素px。 |
+| sx | number | 是 | x轴方向缩放因子，负数表示先关于x = px作镜像翻转后再进行缩放，该参数为浮点数。 |
+| sy | number | 是 | y轴方向缩放因子，负数表示先关于y = py作镜像翻转后再进行缩放，该参数为浮点数。 |
+| px | number | 是 | 缩放中心点的x轴坐标，该参数为浮点数。单位为物理像素px。 |
+| py | number | 是 | 缩放中心点的y轴坐标，该参数为浮点数。单位为物理像素px。 |
 
 错误码：
 
@@ -660,7 +661,7 @@ console.info("matrix= "+matrix.getAll().toString());
 
 postTranslate(dx: number, dy: number): void
 
-将矩阵设置为矩阵右乘平移一定距离后的单位矩阵后得到的矩阵。
+将矩阵设置为矩阵右乘平移dx和dy距离后的单位矩阵后得到的矩阵，即新的平移变换在当前矩阵的变换之后应用。如果需要在当前矩阵的变换之前应用平移变换，使用preTranslate方法。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -695,7 +696,7 @@ console.info("matrix= "+matrix.getAll().toString());
 
 preRotate(degree: number, px: number, py: number): void
 
-将矩阵设置为矩阵左乘围绕轴心点旋转一定角度的单位矩阵后得到的矩阵。
+将矩阵设置为矩阵左乘围绕旋转中心点旋转degree角度的单位矩阵后得到的矩阵，即新的旋转变换在当前矩阵的变换之前应用。如果需要在当前矩阵的变换之后应用旋转变换，使用postRotate方法。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -704,8 +705,8 @@ preRotate(degree: number, px: number, py: number): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | degree | number | 是 | 旋转角度，单位为度。正数表示顺时针旋转，负数表示逆时针旋转，该参数为浮点数。 |
-| px | number | 是 | 旋转中心点的横坐标，该参数为浮点数。单位为物理像素px。 |
-| py | number | 是 | 旋转中心点的纵坐标，该参数为浮点数。单位为物理像素px。 |
+| px | number | 是 | 旋转中心点的x轴坐标，该参数为浮点数。单位为物理像素px。 |
+| py | number | 是 | 旋转中心点的y轴坐标，该参数为浮点数。单位为物理像素px。 |
 
 错误码：
 
@@ -748,7 +749,7 @@ postSkew(kx: number, ky: number, px: number, py: number): void
 示例：
 
 ```
-import { drawing } from "@kit.ArkGraphics2D"
+import { drawing } from "@kit.ArkGraphics2D";
 
 let matrix = new drawing.Matrix();
 matrix.postSkew(2.0, 1.0, 2.0, 1.0);
@@ -774,7 +775,7 @@ preSkew(kx: number, ky: number, px: number, py: number): void
 示例：
 
 ```
-import { drawing } from "@kit.ArkGraphics2D"
+import { drawing } from "@kit.ArkGraphics2D";
 
 let matrix = new drawing.Matrix();
 matrix.preSkew(2.0, 1.0, 2.0, 1.0);
@@ -803,7 +804,7 @@ mapRadius(radius: number): number
 示例：
 
 ```
-import { drawing } from "@kit.ArkGraphics2D"
+import { drawing } from "@kit.ArkGraphics2D";
 
 let matrix = new drawing.Matrix();
 matrix.setMatrix([2, 1, 3, 1, 2, 1, 3, 1, 2]);
@@ -815,7 +816,7 @@ console.info('radius', radius);
 
 preScale(sx: number, sy: number, px: number, py: number): void
 
-将矩阵设置为矩阵左乘围绕轴心点按一定缩放系数缩放后的单位矩阵后得到的矩阵。
+将矩阵设置为矩阵左乘围绕缩放中心点按sx和sy缩放系数缩放后的单位矩阵后得到的矩阵，即新的缩放变换在当前矩阵的变换之前应用。如果需要在当前矩阵的变换之后应用缩放变换，使用postScale方法。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -823,10 +824,10 @@ preScale(sx: number, sy: number, px: number, py: number): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| sx | number | 是 | x轴方向缩放系数，为负数时可看作是先关于y = px作镜像翻转后再进行缩放，该参数为浮点数。 |
-| sy | number | 是 | y轴方向缩放系数，为负数时可看作是先关于x = py作镜像翻转后再进行缩放，该参数为浮点数。 |
-| px | number | 是 | 轴心点横坐标，该参数为浮点数。单位为物理像素px。 |
-| py | number | 是 | 轴心点纵坐标，该参数为浮点数。单位为物理像素px。 |
+| sx | number | 是 | x轴方向缩放因子，为负数时可看作是先关于x = px作镜像翻转后再进行缩放，该参数为浮点数。 |
+| sy | number | 是 | y轴方向缩放因子，为负数时可看作是先关于y = py作镜像翻转后再进行缩放，该参数为浮点数。 |
+| px | number | 是 | 缩放中心点的x轴坐标，该参数为浮点数。单位为物理像素px。 |
+| py | number | 是 | 缩放中心点的y轴坐标，该参数为浮点数。单位为物理像素px。 |
 
 错误码：
 
@@ -854,7 +855,7 @@ console.info("matrix"+matrix.getAll().toString());
 
 preTranslate(dx: number, dy: number): void
 
-将矩阵设置为矩阵左乘平移一定距离后的单位矩阵后得到的矩阵。
+将矩阵设置为矩阵左乘平移dx和dy距离后的单位矩阵后得到的矩阵，即新的平移变换在当前矩阵的变换之前应用。如果需要在当前矩阵的变换之后应用平移变换，使用postTranslate方法。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -916,7 +917,7 @@ mapPoints(src: Array<common2D.Point>): Array<common2D.Point>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| src | Array | 是 | 源点数组。 |
+| src | Array | 是 | 源点数组，作为矩阵变换的输入点。 |
 
 返回值：
 
@@ -976,7 +977,7 @@ mapRect(dst: common2D.Rect, src: common2D.Rect): boolean
 
 将目标矩形设置为源矩形通过矩阵变换后的图形的外接矩形。如下图所示，蓝色矩形为源矩形，假设黄色矩形为源矩形通过矩阵变换形成的图形，此时黄色矩形的边不与坐标轴平行，无法使用矩形对象表示，因此，将目标矩形设置为黄色矩形的外接矩形，即黑色矩形。
 
-![](./img/zh-cn_image_0000002661613757.png)
+![](./img/zh-cn_image_0000002731360131.png)
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -1026,15 +1027,15 @@ setRectToRect(src: common2D.Rect, dst: common2D.Rect, scaleToFit: ScaleToFit): b
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| src | [common2D.Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-common2d#rect) | 是 | 源矩形。 |
-| dst | [common2D.Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-common2d#rect) | 是 | 目标矩形。 |
+| src | [common2D.Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-common2d#rect) | 是 | 源矩形，用于指定映射的源区域。 |
+| dst | [common2D.Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-common2d#rect) | 是 | 目标矩形，用于指定映射的目标区域。 |
 | scaleToFit | [ScaleToFit](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-e#scaletofit12) | 是 | 源矩形到目标矩形的映射方式。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | 返回矩阵是否可以表示矩形之间的映射，true表示可以，false表示不可以。如果源矩形的宽高任意一个小于等于0，则返回false，并将矩阵设置为单位矩阵；如果目标矩形的宽高任意一个小于等于0，则返回true，并将矩阵设置为除透视缩放系数为1外其余值皆为0的矩阵。 |
+| boolean | 返回矩阵是否可以表示矩形之间的映射，true表示可以，false表示不可以。如果源矩形的宽高任意一个小于等于0，则返回false，并将矩阵设置为单位矩阵；如果目标矩形的宽高任意一个小于等于0，则返回true，并将矩阵设置为除透视缩放因子为1外其余值皆为0的矩阵。 |
 
 错误码：
 
@@ -1051,7 +1052,7 @@ import { drawing, common2D } from "@kit.ArkGraphics2D";
 
 let src: common2D.Rect = { left: 100, top: 100, right: 300, bottom: 300 };
 let dst: common2D.Rect = { left: 200, top: 200, right: 600, bottom: 600 };
-let scaleToFit: drawing.ScaleToFit = drawing.ScaleToFit.FILL_SCALE_TO_FIT
+let scaleToFit: drawing.ScaleToFit = drawing.ScaleToFit.FILL_SCALE_TO_FIT;
 let matrix = new drawing.Matrix();
 if (matrix.setRectToRect(src, dst, scaleToFit)) {
     console.info("matrix"+matrix.getAll().toString());
@@ -1072,7 +1073,7 @@ setPolyToPoly(src: Array<common2D.Point>, dst: Array<common2D.Point>, count: num
 | --- | --- | --- | --- |
 | src | Array | 是 | 源点数组，长度必须为count。 |
 | dst | Array | 是 | 目标点数组，长度必须为count。 |
-| count | number | 是 | 在src和dst点的数量，该参数为整数。 |
+| count | number | 是 | src和dst中点的数量，取值范围为[0, 4]，该参数为整数。 |
 
 返回值：
 

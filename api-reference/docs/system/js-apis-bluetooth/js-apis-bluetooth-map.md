@@ -2,13 +2,13 @@
 title: "@ohos.bluetooth.map (蓝牙map模块)"
 upstream_id: "harmonyos-references/js-apis-bluetooth-map"
 catalog: "harmonyos-references"
-content_hash: "9789b1e48eef"
-synced_at: "2026-07-09T00:59:23.420040"
+content_hash: "2494d2d68954"
+synced_at: "2026-08-29T18:16:37.070228"
 ---
 
 # @ohos.bluetooth.map (蓝牙map模块)
 
-本模块提供基于消息访问协议（Message Access Profile，[MAP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#map)）的蓝牙消息访问能力，支持获取连接状态等方法。
+本模块提供基于消息访问协议（Message Access Profile，[MAP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#map)）的蓝牙消息访问能力，支持创建MSE实例、获取和订阅设备间蓝牙消息服务连接状态等，适用于需要通过蓝牙协议进行消息访问与连接管理的场景。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 11开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -34,7 +34,7 @@ type BaseProfile = baseProfile.BaseProfile
 
 createMapMseProfile(): MapMseProfile
 
-创建蓝牙消息访问协议中的[MSE](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#mse)实例。通过该实例可使用本端作为MSE设备的接口，如：获取和其他设备间的蓝牙消息服务连接状态。
+创建蓝牙消息访问协议中的[MSE](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#mse)实例。通过该实例可使用本端作为MSE设备时提供的接口，如：获取和其他设备间的蓝牙消息服务连接状态。适用于蓝牙消息同步、车载蓝牙消息查看等场景。
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
@@ -42,7 +42,7 @@ createMapMseProfile(): MapMseProfile
 
 | 类型 | 说明 |
 | --- | --- |
-| MapMseProfile | 返回该profile的实例。 |
+| [MapMseProfile](#mapmseprofile) | 返回MapMseProfile实例，该实例可用于本端作为MSE设备进行蓝牙消息访问相关操作。 |
 
 错误码：
 

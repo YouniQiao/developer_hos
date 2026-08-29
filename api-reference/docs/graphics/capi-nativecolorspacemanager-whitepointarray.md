@@ -2,14 +2,14 @@
 title: "WhitePointArray"
 upstream_id: "harmonyos-references/capi-nativecolorspacemanager-whitepointarray"
 catalog: "harmonyos-references"
-content_hash: "8bacff9a447d"
-synced_at: "2026-07-28T16:52:15.706117"
+content_hash: "1e323ef1510a"
+synced_at: "2026-08-29T18:17:57.553954"
 ---
 
 # WhitePointArray
 
 ```
-typedef struct WhitePointArray {...} WhitePointArray
+typedef struct {...} WhitePointArray
 ```
 
 #### 概述

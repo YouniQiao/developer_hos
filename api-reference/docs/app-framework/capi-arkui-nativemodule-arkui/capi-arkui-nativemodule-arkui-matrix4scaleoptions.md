@@ -2,8 +2,8 @@
 title: "ArkUI_Matrix4ScaleOptions"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-matrix4scaleoptions"
 catalog: "harmonyos-references"
-content_hash: "88a3904f9b70"
-synced_at: "2026-08-14T15:53:38.493175"
+content_hash: "1bcefd968fa4"
+synced_at: "2026-08-29T18:15:47.972742"
 ---
 
 # ArkUI_Matrix4ScaleOptions
@@ -14,7 +14,7 @@ typedef struct ArkUI_Matrix4ScaleOptions ArkUI_Matrix4ScaleOptions
 
 #### 概述
 
-定义矩阵缩放变换的参数配置对象。
+定义4×4矩阵缩放变换的参数配置对象，各参数及其取值原则详见成员变量说明。
 
 起始版本： 24
 

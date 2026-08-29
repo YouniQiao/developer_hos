@@ -2,8 +2,8 @@
 title: "native_audio_converter.h"
 upstream_id: "harmonyos-references/capi-native-audio-converter-h"
 catalog: "harmonyos-references"
-content_hash: "471451ec878e"
-synced_at: "2026-08-14T15:55:05.957892"
+content_hash: "acff3b418df7"
+synced_at: "2026-08-29T18:17:20.539720"
 ---
 
 # native_audio_converter.h
@@ -20,7 +20,7 @@ synced_at: "2026-08-14T15:55:05.957892"
 
 起始版本： 26.0.0
 
-相关模块： [AudioConverter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-audioconverter)
+相关模块： [OHAudioSuite](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudiosuite)
 
 #### 汇总
 
@@ -28,8 +28,8 @@ synced_at: "2026-08-14T15:55:05.957892"
 
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
-| [OH_AudioConverter_Format](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-audioconverter-oh-audioconverter-format) | OH_AudioConverter_Format | 定义音频转换器的数据结构，用于描述音频格式。 |
-| [OH_AudioConverterStruct](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-audioconverter-oh-audioconverterstruct) | OH_AudioConverter | 声明音频格式转换器。 音频转换器的句柄用于执行与音频转换器相关的功能。 |
+| [OH_AudioConverter_Format](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-audioconverter-oh-audioconverter-format) | OH_AudioConverter_Format | 定义音频格式转换器的数据结构，用于描述音频格式。 |
+| [OH_AudioConverterStruct](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-audioconverter-oh-audioconverterstruct) | OH_AudioConverter | 声明音频格式转换器。 音频格式转换器的句柄用于执行与其相关的功能。 |
 
 #### [h2]枚举
 
@@ -42,11 +42,11 @@ synced_at: "2026-08-14T15:55:05.957892"
 
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
-| [OH_AudioConverter_Result OH_AudioConverter_Create(const OH_AudioConverter_Format* inputFormat, const OH_AudioConverter_Format* outputFormat, OH_AudioConverter** converter)](#oh_audioconverter_create) | - | 创建音频转换器。 |
-| [void OH_AudioConverter_Destroy(OH_AudioConverter* converter)](#oh_audioconverter_destroy) | - | 请求释放转换器。 |
+| [OH_AudioConverter_Result OH_AudioConverter_Create(const OH_AudioConverter_Format* inputFormat, const OH_AudioConverter_Format* outputFormat, OH_AudioConverter** converter)](#oh_audioconverter_create) | - | 创建音频格式转换器。 |
+| [void OH_AudioConverter_Destroy(OH_AudioConverter* converter)](#oh_audioconverter_destroy) | - | 销毁音频格式转换器。 |
 | [typedef int32_t (*OH_AudioConverter_RequestDataCallback)(void* userData, const void** outInputData, OH_AudioConverter_InputStatus* outStatus)](#oh_audioconverter_requestdatacallback) | OH_AudioConverter_RequestDataCallback | 请求数据的回调函数。转换器在[OH_AudioConverter_Process](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-converter-h#oh_audioconverter_process)期间调用此回调函数以主动请求输入音频数据。 调用者必须填充输出参数（outInputData，outStatus），并返回通过回调函数读取的数据大小。 单个回调返回的最大数据大小为400KB。 outInputData指向的内存必须保持有效，直到OH_AudioConverter_Process返回处理完成为止。 |
-| [OH_AudioConverter_Result OH_AudioConverter_SetInputCallback(OH_AudioConverter* converter, OH_AudioConverter_RequestDataCallback callback, void* userData)](#oh_audioconverter_setinputcallback) | - | 设置转换器请求数据回调函数。此函数绑定音频转换器的输入数据回调函数。回调函数由[OH_AudioConverter_Process](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-converter-h#oh_audioconverter_process)调用，获取输入音频数据并进行处理。 |
-| [OH_AudioConverter_Result OH_AudioConverter_Process(OH_AudioConverter* converter, void* outputData, int32_t outputCapacity, int32_t* outputSize)](#oh_audioconverter_process) | - | 执行音频格式转换处理函数。该函数执行音频转换过程，将输入音频转换为目标格式，需要注意：该函数必须在[OH_AudioConverter_SetInputCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-converter-h#oh_audioconverter_setinputcallback)之后调用，并且最终转换结果写入的输出缓冲区必须由调用方分配和管理。 |
+| [OH_AudioConverter_Result OH_AudioConverter_SetInputCallback(OH_AudioConverter* converter, OH_AudioConverter_RequestDataCallback callback, void* userData)](#oh_audioconverter_setinputcallback) | - | 设置转换器请求数据回调函数。此函数绑定音频格式转换器的输入数据回调函数。回调函数由[OH_AudioConverter_Process](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-converter-h#oh_audioconverter_process)调用，获取输入音频数据并进行处理。 |
+| [OH_AudioConverter_Result OH_AudioConverter_Process(OH_AudioConverter* converter, void* outputData, int32_t outputCapacity, int32_t* outputSize)](#oh_audioconverter_process) | - | 执行音频格式转换处理函数。该函数执行音频转换过程，将输入音频转换为目标格式，需要注意：该函数必须在[OH_AudioConverter_SetInputCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-converter-h#oh_audioconverter_setinputcallback)之后调用，并且最终转换结果写入的输出缓冲区必须由调用方分配和管理。即使回调返回AUDIOCONVERTER_INPUT_DATA_FINISHED，也必须重复调用此函数，直到返回AUDIOCONVERTER_SUCCESS且outputSize=0（表示所有缓存数据均已处理完成）。 |
 
 #### 枚举类型说明
 
@@ -64,12 +64,12 @@ enum OH_AudioConverter_Result
 | 枚举项 | 描述 |
 | --- | --- |
 | AUDIOCONVERTER_SUCCESS = 0 | 函数调用成功。 **起始版本：** 26.0.0 |
-| AUDIOCONVERTER_ERROR_INVALID_PARAM = 1 | 函数输入参数无效。例如传入的格式转换器指针为nullptr。 **起始版本：** 26.0.0 |
+| AUDIOCONVERTER_ERROR_INVALID_PARAM = 1 | 函数输入参数无效。例如传入的音频格式转换器指针为nullptr。 **起始版本：** 26.0.0 |
 | AUDIOCONVERTER_ERROR_UNSUPPORTED_FORMAT = 2 | 不支持的音频格式。例如不支持的编码类型、采样格式等。 **起始版本：** 26.0.0 |
-| AUDIOCONVERTER_ERROR_SYSTEM = 3 | 系统错误。例如使用已销毁的格式转换器执行格式转换。 **起始版本：** 26.0.0 |
+| AUDIOCONVERTER_ERROR_SYSTEM = 3 | 系统错误。例如使用已销毁的音频格式转换器执行格式转换。 **起始版本：** 26.0.0 |
 | AUDIOCONVERTER_ERROR_MEMORY_ALLOC_FAILED = 4 | 内存分配失败。例如内部输出数据缓冲区内存分配失败。 **起始版本：** 26.0.0 |
 | AUDIOCONVERTER_ERROR_BUFFER_TOO_SMALL = 5 | 输出缓存容量不足。例如设置的存储输出数据的容量不足以存储一帧输出数据量。 **起始版本：** 26.0.0 |
-| AUDIOCONVERTER_ERROR_NOT_INITIALIZED = 6 | 音频转换器实例未初始化。例如未创建格式转换器直接执行格式转换处理函数。 **起始版本：** 26.0.0 |
+| AUDIOCONVERTER_ERROR_NOT_INITIALIZED = 6 | 音频格式转换器实例未初始化。例如未创建音频格式转换器直接执行格式转换处理函数。 **起始版本：** 26.0.0 |
 | AUDIOCONVERTER_ERROR_CALLBACK_INVALID = 7 | 输入回调函数无效。例如输入回调函数返回数据量小于0或大于最大值400KB。 **起始版本：** 26.0.0 |
 | AUDIOCONVERTER_ERROR_CALLBACK_NOT_SET = 8 | 未设置回调函数。例如输入回调函数指针为nullptr。 **起始版本：** 26.0.0 |
 
@@ -101,7 +101,7 @@ OH_AudioConverter_Result OH_AudioConverter_Create(const OH_AudioConverter_Format
 ```
  描述
 
-创建音频转换器。
+创建音频格式转换器。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -109,7 +109,7 @@ OH_AudioConverter_Result OH_AudioConverter_Create(const OH_AudioConverter_Format
 - 支持的音频格式规范（适用于输入/输出）： 该转换器仅支持PCM（脉冲编码调制）音频格式。
 - 支持采样率：8000 Hz、11025 Hz、12000 Hz、16000 Hz、22050 Hz、24000 Hz、32000 Hz、44100 Hz、48000 Hz、 64000 Hz、88200 Hz、96000 Hz、176400 Hz和192000 Hz。
 - 支持声道布局：CH_LAYOUT_MONO、CH_LAYOUT_STEREO、CH_LAYOUT_STEREO_DOWNMIX、 CH_LAYOUT_2POINT1、CH_LAYOUT_3POINT0、CH_LAYOUT_SURROUND、CH_LAYOUT_3POINT1、CH_LAYOUT_4POINT0、CH_LAYOUT_QUAD_SIDE、 CH_LAYOUT_QUAD、CH_LAYOUT_2POINT0POINT2、CH_LAYOUT_4POINT1、CH_LAYOUT_5POINT0、CH_LAYOUT_5POINT0_BACK、 CH_LAYOUT_2POINT1POINT2、CH_LAYOUT_3POINT0POINT2、CH_LAYOUT_5POINT1、CH_LAYOUT_5POINT1_BACK、CH_LAYOUT_6POINT0、 CH_LAYOUT_3POINT1POINT2、CH_LAYOUT_6POINT0_FRONT、CH_LAYOUT_HEXAGONAL、CH_LAYOUT_6POINT1、CH_LAYOUT_6POINT1_BACK、 CH_LAYOUT_6POINT1_FRONT、CH_LAYOUT_7POINT0、CH_LAYOUT_7POINT0_FRONT、CH_LAYOUT_7POINT1、CH_LAYOUT_OCTAGONAL、 CH_LAYOUT_5POINT1POINT2、CH_LAYOUT_7POINT1_WIDE和CH_LAYOUT_7POINT1_WIDE_BACK。
-- 支持采样格式（位深）：SAMPLE_U8 （Unsigned 8位 PCM）、 SAMPLE_S16LE（Short 16位小端 PCM）、SAMPLE_S24LE（Short 24位小端 PCM）、 SAMPLE_S32LE（Short 32位小端 PCM）和SAMPLE_F32LE（Float 32位小端 PCM）。
+- 支持采样格式（位深）：SAMPLE_U8 (8-bit unsigned PCM)、 SAMPLE_S16LE (16-bit signed little-endian PCM)、SAMPLE_S24LE (24-bit signed little-endian PCM)、 SAMPLE_S32LE (32-bit signed little-endian PCM)和SAMPLE_F32LE (32-bit float little-endian PCM)。
 
 起始版本： 26.0.0
 
@@ -119,13 +119,13 @@ OH_AudioConverter_Result OH_AudioConverter_Create(const OH_AudioConverter_Format
 | --- | --- |
 | const [OH_AudioConverter_Format](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-audioconverter-oh-audioconverter-format)* inputFormat | 指向输入音频格式的指针。 |
 | const [OH_AudioConverter_Format](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-audioconverter-oh-audioconverter-format)* outputFormat | 指向输出音频格式的指针。 |
-| [OH_AudioConverter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-audioconverter-oh-audioconverterstruct)** converter | 指向可用的音频转换器的指针。 |
+| [OH_AudioConverter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-audioconverter-oh-audioconverterstruct)** converter | 指向可用的音频格式转换器的指针。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_AudioConverter_Result](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-converter-h#oh_audioconverter_result) | AUDIOCONVERTER_SUCCESS：创建格式转换器成功，可以正常执行后续流程。 AUDIOCONVERTER_ERROR_INVALID_PARAM：函数输入参数无效，需要检查传入的格式转换器指针是否非nullptr。 AUDIOCONVERTER_ERROR_UNSUPPORTED_FORMAT：音频输入/输出格式组合不支持，输入或输出格式超出允许范围，需要检查配置的音频格式。 AUDIOCONVERTER_ERROR_SYSTEM：系统错误，需要检查是否使用已销毁的格式转换器执行格式转换。 |
+| [OH_AudioConverter_Result](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-converter-h#oh_audioconverter_result) | AUDIOCONVERTER_SUCCESS：创建音频格式转换器成功，可以正常执行后续流程。 AUDIOCONVERTER_ERROR_INVALID_PARAM：函数输入参数无效，需要检查传入的音频格式转换器指针是否非nullptr。 AUDIOCONVERTER_ERROR_UNSUPPORTED_FORMAT：音频输入/输出格式组合不支持，输入或输出格式超出允许范围，需要检查配置的音频格式。 AUDIOCONVERTER_ERROR_SYSTEM：系统错误，需要检查是否使用已销毁的音频格式转换器执行格式转换。 |
 
 #### [h2]OH_AudioConverter_Destroy()
 
@@ -134,7 +134,7 @@ void OH_AudioConverter_Destroy(OH_AudioConverter* converter)
 ```
  描述
 
-请求释放转换器。
+销毁音频格式转换器。
 
 起始版本： 26.0.0
 
@@ -184,7 +184,7 @@ OH_AudioConverter_Result OH_AudioConverter_SetInputCallback(OH_AudioConverter* c
 ```
  描述
 
-设置转换器请求数据回调函数。此函数绑定音频转换器的输入数据回调函数。回调函数由[OH_AudioConverter_Process](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-converter-h#oh_audioconverter_process)调用，获取输入音频数据并进行处理。
+设置转换器请求数据回调函数。此函数绑定音频格式转换器的输入数据回调函数。回调函数由[OH_AudioConverter_Process](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-converter-h#oh_audioconverter_process)调用，获取输入音频数据并进行处理。
 
 起始版本： 26.0.0
 
@@ -200,7 +200,7 @@ OH_AudioConverter_Result OH_AudioConverter_SetInputCallback(OH_AudioConverter* c
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_AudioConverter_Result](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-converter-h#oh_audioconverter_result) | AUDIOCONVERTER_SUCCESS：设置输入回调函数成功，可以正常执行后续流程。 AUDIOCONVERTER_ERROR_INVALID_PARAM：函数输入参数无效，需要检查传入的格式转换器指针是否非nullptr。 AUDIOCONVERTER_ERROR_NOT_INITIALIZED：格式转换器未初始化，需要检查当前格式转换器是否有效。 AUDIOCONVERTER_ERROR_CALLBACK_INVALID：回调函数无效，需要检查输入回调函数返回数据量是否在允许范围内。 AUDIOCONVERTER_ERROR_CALLBACK_NOT_SET：回调函数未设置，需要检查回调函数指针是否非空。 AUDIOCONVERTER_ERROR_SYSTEM：系统错误，需要检查是否使用已销毁的格式转换器执行格式转换。 |
+| [OH_AudioConverter_Result](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-converter-h#oh_audioconverter_result) | AUDIOCONVERTER_SUCCESS：设置输入回调函数成功，可以正常执行后续流程。 AUDIOCONVERTER_ERROR_INVALID_PARAM：函数输入参数无效，需要检查传入的音频格式转换器指针是否非nullptr。 AUDIOCONVERTER_ERROR_NOT_INITIALIZED：音频格式转换器未初始化，需要检查当前音频格式转换器是否有效。 AUDIOCONVERTER_ERROR_CALLBACK_INVALID：回调函数无效，需要检查输入回调函数返回数据量是否在允许范围内。 AUDIOCONVERTER_ERROR_CALLBACK_NOT_SET：回调函数未设置，需要检查回调函数指针是否非空。 AUDIOCONVERTER_ERROR_SYSTEM：系统错误，需要检查是否使用已销毁的音频格式转换器执行格式转换。 |
 
 #### [h2]OH_AudioConverter_Process()
 
@@ -210,7 +210,7 @@ OH_AudioConverter_Result OH_AudioConverter_Process(OH_AudioConverter* converter,
 ```
  描述
 
-执行音频格式转换处理函数。该函数执行音频转换过程，将输入音频转换为目标格式，需要注意：该函数必须在[OH_AudioConverter_SetInputCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-converter-h#oh_audioconverter_setinputcallback)之后调用，并且最终转换结果写入的输出缓冲区必须由调用方分配和管理。
+执行音频格式转换处理函数。该函数执行音频转换过程，将输入音频转换为目标格式，需要注意：该函数必须在[OH_AudioConverter_SetInputCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-converter-h#oh_audioconverter_setinputcallback)之后调用，并且最终转换结果写入的输出缓冲区必须由调用方分配和管理。即使回调返回AUDIOCONVERTER_INPUT_DATA_FINISHED，也必须重复调用此函数，直到返回AUDIOCONVERTER_SUCCESS且outputSize=0（表示所有缓存数据均已处理完成）。
 
 起始版本： 26.0.0
 
@@ -227,4 +227,4 @@ OH_AudioConverter_Result OH_AudioConverter_Process(OH_AudioConverter* converter,
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_AudioConverter_Result](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-converter-h#oh_audioconverter_result) | AUDIOCONVERTER_SUCCESS：PCM音频数据格式转换成功，可以正常执行后续流程。 AUDIOCONVERTER_ERROR_INVALID_PARAM：函数输入参数无效，需要检查传入的格式转换器指针是否非nullptr。 AUDIOCONVERTER_ERROR_NOT_INITIALIZED：格式转换器未初始化，需要检查当前格式转换器是否有效。 AUDIOCONVERTER_ERROR_CALLBACK_INVALID：输入回调函数无效，需要检查输入回调函数返回数据量是否在允许范围内。 AUDIOCONVERTER_ERROR_CALLBACK_NOT_SET：回调函数未设置，需要检查回调函数是否已成功设置并且函数指针是否非空。 AUDIOCONVERTER_ERROR_BUFFER_TOO_SMALL：输出缓冲区容量不足，需要检查设置的存储输出数据的缓冲区容量是否足够存放一帧输出数据。 AUDIOCONVERTER_ERROR_SYSTEM：系统错误，需要检查是否使用已销毁的格式转换器执行格式转换。 |
+| [OH_AudioConverter_Result](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-converter-h#oh_audioconverter_result) | AUDIOCONVERTER_SUCCESS：PCM音频数据格式转换成功，可以正常执行后续流程。 AUDIOCONVERTER_ERROR_INVALID_PARAM：函数输入参数无效，需要检查传入的音频格式转换器指针是否非nullptr。 AUDIOCONVERTER_ERROR_NOT_INITIALIZED：音频格式转换器未初始化，需要检查当前音频格式转换器是否有效。 AUDIOCONVERTER_ERROR_CALLBACK_INVALID：输入回调函数无效，需要检查输入回调函数返回数据量是否在允许范围内。 AUDIOCONVERTER_ERROR_CALLBACK_NOT_SET：回调函数未设置，需要检查回调函数是否已成功设置并且函数指针是否非空。 AUDIOCONVERTER_ERROR_BUFFER_TOO_SMALL：输出缓冲区容量不足，需要检查设置的存储输出数据的缓冲区容量是否足够存放一帧输出数据。 AUDIOCONVERTER_ERROR_SYSTEM：系统错误，需要检查是否使用已销毁的音频格式转换器执行格式转换。 |

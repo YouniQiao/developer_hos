@@ -2,8 +2,8 @@
 title: "AbilityStageContext"
 upstream_id: "harmonyos-references/js-apis-inner-application-abilitystagecontext"
 catalog: "harmonyos-references"
-content_hash: "2a4761b470ab"
-synced_at: "2026-07-28T16:40:37.631827"
+content_hash: "c0aac236877b"
+synced_at: "2026-08-29T18:12:02.362707"
 ---
 
 # AbilityStageContext
@@ -28,9 +28,9 @@ import { common } from '@kit.AbilityKit';
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| currentHapModuleInfo | [HapModuleInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-hapmoduleinfo) | 否 | 否 | AbilityStage对应的ModuleInfo对象，可用来获取当前模块的名称、路径等信息。 |
+| currentHapModuleInfo | [HapModuleInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-hapmoduleinfo) | 否 | 否 | AbilityStage对应的HapModuleInfo对象，可用来获取当前模块的名称、路径等信息。 |
 | config | [Configuration](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-configuration) | 否 | 否 | 环境配置对象。 |
-| launchElement24+ | [ElementName](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-elementname) | 否 | 是 | 创建AbilityStage时的ElementName。 **元服务API**：从API version 24开始，该接口支持在元服务中使用。 |
+| launchElement24+ | [ElementName](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-elementname) | 否 | 是 | 创建AbilityStage时的元素名称信息。 **元服务API**：从API version 24开始，该接口支持在元服务中使用。 |
 
 示例：
 

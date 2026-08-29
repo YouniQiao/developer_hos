@@ -2,8 +2,8 @@
 title: "Chip"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-chip"
 catalog: "harmonyos-references"
-content_hash: "5b00adbcda44"
-synced_at: "2026-07-28T16:48:00.715258"
+content_hash: "e7937ef427b4"
+synced_at: "2026-08-29T18:15:06.408105"
 ---
 
 # Chip
@@ -66,12 +66,12 @@ ChipOptions定义Chip的样式及具体样式参数。
 | suffixSymbolOptions14+ | [ChipSuffixSymbolGlyphOptions](#chipsuffixsymbolglyphoptions14) | 否 | 是 | symbol类型后缀图标的无障碍朗读功能属性及点击事件回调等。 默认值：不设置对应属性。 值为undefined时，按默认值处理。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
 | backgroundColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | Chip背景颜色。 默认值：$r('sys.color.ohos_id_color_button_normal')。 值为undefined时，按默认值处理。赋值为非法值时，背景颜色透明。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | activatedBackgroundColor12+ | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | Chip激活态的背景颜色。 默认值：$r('sys.color.ohos_id_color_emphasize')。 值为undefined时，按默认值处理。赋值为非法值时，背景颜色透明。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| backgroundSystemMaterial | [uiMaterial.Material](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#material) | 否 | 是 | 设置组件系统材质样式。不同材质具有不同的效果，能够影响组件的[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、[border](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#border)、[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)等视觉属性。 默认值：undefined 值为undefined时，不应用材质样式。 **说明**：当设置backgroundSystemMaterial时，应将backgroundColor设为Color.Transparent，否则会与系统材质冲突；当backgroundSystemMaterial为undefined时，backgroundColor属性生效。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
-| activatedBackgroundSystemMaterial | [uiMaterial.Material](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#material) | 否 | 是 | 设置组件激活状态下的系统材质样式。不同材质具有不同的效果，能够影响组件的[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、[border](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#border)、[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)等视觉属性。 默认值：undefined 值为undefined时，不应用材质样式。 **说明**：当设置activatedBackgroundSystemMaterial时，应将activatedBackgroundColor设为Color.Transparent，否则会与系统材质冲突；当activatedBackgroundSystemMaterial为undefined时，activatedBackgroundColor属性生效。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
+| backgroundSystemMaterial | [uiMaterial.Material](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#material) | 否 | 是 | 设置组件系统材质样式。适用于需要实现沉浸式背景效果、半透明磨砂效果等场景。不同材质具有不同的效果，能够影响组件的[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、[border](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#border)、[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)等视觉属性。 默认值：undefined 值为undefined时，不应用材质样式。 **说明**：当设置backgroundSystemMaterial时，应将backgroundColor设为Color.Transparent，否则会与系统材质冲突；当backgroundSystemMaterial为undefined时，backgroundColor属性生效。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
+| activatedBackgroundSystemMaterial | [uiMaterial.Material](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#material) | 否 | 是 | 设置组件激活状态下的系统材质样式。适用于需要激活状态下保持或切换材质效果的交互场景，如标签选中、状态切换等。不同材质具有不同的效果，能够影响组件的[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、[border](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#border)、[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)等视觉属性。 默认值：undefined 值为undefined时，不应用材质样式。 **说明**：当设置activatedBackgroundSystemMaterial时，应将activatedBackgroundColor设为Color.Transparent，否则会与系统材质冲突；当activatedBackgroundSystemMaterial为undefined时，activatedBackgroundColor属性生效。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
 | borderRadius | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | 否 | 是 | Chip背景圆角半径大小，不支持百分比，传入百分比时按默认值处理。 取值范围：[0, +∞) 默认值：$r('sys.float.ohos_id_corner_radius_button')。 单位：vp 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | allowClose | boolean | 否 | 是 | 关闭图标是否显示。 默认值：true true：关闭图标显示；false：关闭图标不显示。 值为undefined时，按默认值处理。 **说明**：当suffixSymbol有传入参数时，allowClose不生效；当suffixSymbol没有传入参数而suffixIcon有传入参数时，allowClose不生效；当suffixSymbol和suffixIcon都没有传入参数时，allowClose决定是否显示关闭图标。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| onClose | ()=>void | 否 | 是 | 默认关闭图标点击事件。 值为undefined时，不触发关闭图标点击事件。 **说明**：仅当关闭图标显示时生效，即suffixSymbol和suffixIcon都未传入参数且allowClose为true时。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| onClicked12+ | Callback | 否 | 是 | Chip组件点击事件。 值为undefined时，Chip不能被点击。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| onClose | ()=>void | 否 | 是 | 默认关闭图标点击事件回调，无参数和返回值。当用户点击默认关闭图标时触发该回调。 值为undefined时，不触发关闭图标点击事件。 **说明**：仅当关闭图标显示时生效，即suffixSymbol和suffixIcon都未传入参数且allowClose为true时。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| onClicked12+ | Callback | 否 | 是 | Chip组件点击事件回调，无参数和返回值。当用户点击Chip组件时触发该回调。 值为undefined时，Chip不能被点击。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | direction12+ | [Direction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#direction) | 否 | 是 | 布局方向。 默认值：Direction.Auto。 值为undefined时，按默认值处理。 **使用场景**：常用于国际化场景，适配阿拉伯语等从右到左（RTL）阅读习惯的语言环境，实现界面镜像效果。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | closeOptions14+ | [CloseOptions](#closeoptions14) | 否 | 是 | 默认关闭图标的功能属性，包括无障碍朗读功能和字体大小等属性。仅在默认关闭图标显示时生效，即allowClose为true且suffixSymbol和suffixIcon均未设置传入参数时。 值为undefined时，按默认值处理。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
 | accessibilityDescription14+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | Chip组件的无障碍描述。用于向用户详细解释当前组件，开发人员应提供详尽的文本说明，协助用户理解即将执行的操作及其结果。特别是当这些结果无法仅从组件属性和无障碍文本中直接获知时。如果组件同时具备文本属性和无障碍说明属性，当组件被选中时，系统将首先播报组件的文本属性，随后播报无障碍说明属性的内容。 默认值：空字符串。 值为undefined时，按默认值处理。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
@@ -165,7 +165,7 @@ SuffixIconOptions定义后缀图标的属性。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| action | () => void | 否 | 是 | 后缀图标点击事件回调。 值为undefined时，不设定后缀图标事件。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| action | () => void | 否 | 是 | 后缀图标点击事件回调，无参数和返回值。当用户点击后缀图标时触发该回调。 值为undefined时，不设定后缀图标事件。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | accessibilityText14+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 后缀图标无障碍文本属性。当后缀图标不包含文本属性时，屏幕朗读选中后缀图标时不播报，使用者无法清楚地知道当前是否选中了后缀图标。开发人员可为此类图标设置无障碍文本，屏幕朗读选中时播报该文本内容。 默认值：‘ ’ 值为undefined时，按默认值处理。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
 | accessibilityDescription14+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 后缀图标的无障碍描述。此描述用于向用户详细解释后缀图标，开发人员应提供较为详尽的文本说明，以协助用户理解即将执行的操作及其可能产生的后果，特别是当这些后果无法仅从后缀图标的属性和无障碍文本中直接获知时。如果后缀图标同时具备文本属性和无障碍说明属性，当后缀图标被选中时，系统将首先播报后缀图标的文本属性，随后播报无障碍说明属性的内容。 默认值：‘ ’ 值为undefined时，按默认值处理。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
 | accessibilityLevel14+ | string | 否 | 是 | 后缀图标的无障碍重要性。用于控制后缀图标是否可被无障碍辅助服务识别。 支持的值为： "auto"：当前组件存在action时转化为"yes"，不存在action时，转化为"no"。 "yes"：当前组件可被无障碍辅助服务所识别。 "no"：当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants"：当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值："auto"。 值为undefined时，按默认值处理。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
@@ -198,7 +198,7 @@ symbol类型后缀图标的无障碍朗读功能属性及点击事件回调。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| action | [VoidCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#voidcallback12) | 否 | 是 | 后缀图标点击事件回调。 值为undefined时，不设定后缀图标事件。 默认值：undefined |
+| action | [VoidCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#voidcallback12) | 否 | 是 | 后缀图标点击事件回调，无参数和返回值。当用户点击后缀图标时触发该回调。 值为undefined时，不设定后缀图标事件。 默认值：undefined |
 | normalAccessibility | [AccessibilityOptions](#accessibilityoptions14) | 否 | 是 | 非激活态无障碍朗读功能属性。 默认值：undefined |
 | activatedAccessibility | [AccessibilityOptions](#accessibilityoptions14) | 否 | 是 | 激活态无障碍朗读功能属性。 默认值：undefined |
 
@@ -339,7 +339,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848980.png)
+ ![](./img/zh-cn_image_0000002731519317.png)
 
 #### [h2]示例2（设置默认后缀图标）
 
@@ -387,7 +387,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088411.png)
+ ![](./img/zh-cn_image_0000002701640118.png)
 
 #### [h2]示例3（不显示后缀图标）
 
@@ -434,7 +434,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928581.png)
+ ![](./img/zh-cn_image_0000002731359337.png)
 
 #### [h2]示例4（激活态操作块）
 
@@ -491,7 +491,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008902.gif)
+ ![](./img/zh-cn_image_0000002701800032.gif)
 
 #### [h2]示例5（设置symbol类型图标）
 
@@ -545,7 +545,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848982.gif)
+ ![](./img/zh-cn_image_0000002731519319.gif)
 
 #### [h2]示例6（设置镜像效果）
 
@@ -596,7 +596,7 @@ struct ChipPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088413.png)
+ ![](./img/zh-cn_image_0000002701640120.png)
 
 #### [h2]示例7（Image类型无障碍朗读）
 
@@ -970,4 +970,4 @@ struct ChipMaterialExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928583.png)
+ ![](./img/zh-cn_image_0000002731359339.png)

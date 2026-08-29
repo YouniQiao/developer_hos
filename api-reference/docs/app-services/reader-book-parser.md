@@ -2,8 +2,8 @@
 title: "bookParser（书籍解析能力）"
 upstream_id: "harmonyos-references/reader-book-parser"
 catalog: "harmonyos-references"
-content_hash: "a0eb173e90c8"
-synced_at: "2026-07-09T01:01:38.837021"
+content_hash: "8fd7f6ab23e9"
+synced_at: "2026-08-29T18:18:34.656749"
 ---
 
 # bookParser（书籍解析能力）
@@ -131,13 +131,13 @@ struct Reader {
     this.registerListener();
   }
 
-  private async registerListener(){
+  private async registerListener() {
     let context = this.getUIContext().getHostContext() as common.UIAbilityContext;
-    await this.readerComponentController.init(context)
+    await this.readerComponentController.init(context);
     this.readerComponentController.on('resourceRequest', this.resourceRequest);
   }
 
-  private resourceRequest: bookParser.CallbackRes<string,ArrayBuffer> = (fileName: string): ArrayBuffer => {
+  private resourceRequest: bookParser.CallbackRes<string, ArrayBuffer> = (fileName: string): ArrayBuffer => {
     if (this.isFont(fileName)) {
       let res = $rawfile(this.selectFontPath);
       let context = this.getUIContext().getHostContext();
@@ -152,7 +152,7 @@ struct Reader {
   }
 
   private isFont(filePath: string): boolean {
-    let options = [".ttf", ".woff2", ".otf"];
+    let options = ['.ttf', '.woff2', '.otf'];
     let path = filePath.toLowerCase();
     let result = path.indexOf(options[0]) != -1 || path.indexOf(options[1]) != -1 || path.indexOf(options[2]) != -1;
     hilog.info(0x0000, 'testTag', 'isFont = ' + result);
@@ -329,9 +329,9 @@ getCatalogList(): CatalogItem[]
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [1017000001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/reader-error-code#section1017000001) | Book parser is not initialized |
-| [1017000999](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/reader-error-code#section1017000999) | Other error |
-| [1017010002](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/reader-error-code#section1017010002) | Invalid request |
+| [1017000001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/reader-error-code#section1017000001) | Book parser is not initialized. |
+| [1017000999](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/reader-error-code#section1017000999) | Other error. |
+| [1017010002](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/reader-error-code#section1017010002) | Invalid request. |
 
 示例：
 

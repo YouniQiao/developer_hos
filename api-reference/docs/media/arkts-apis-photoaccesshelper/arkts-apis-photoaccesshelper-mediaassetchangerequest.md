@@ -2,8 +2,8 @@
 title: "Class (MediaAssetChangeRequest)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-mediaassetchangerequest"
 catalog: "harmonyos-references"
-content_hash: "31f141f68532"
-synced_at: "2026-08-03T17:12:05.257009"
+content_hash: "47bc0876574a"
+synced_at: "2026-08-29T18:17:45.908385"
 ---
 
 # Class (MediaAssetChangeRequest)
@@ -202,7 +202,7 @@ static createAssetRequest(context: Context, photoType: PhotoType, extension: str
 | --- | --- | --- | --- |
 | context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 传入Ability实例的上下文。 |
 | photoType | [PhotoType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#phototype) | 是 | 待创建的文件类型，IMAGE或者VIDEO类型。 |
-| extension | string | 是 | 文件扩展名，例如：'jpg'。 |
+| extension | string | 是 | 文件扩展名。必须为合法的图片或视频扩展名，如jpg、png、gif、mp4、mov等。 |
 | options | [CreateOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-i#createoptions) | 否 | 创建选项，例如：{title: 'testPhoto'}。 文件名中不允许出现非法英文字符，包括： . .. \ / : * ? " ' ` | { } [ ] |
 
 返回值：
@@ -378,7 +378,7 @@ getAsset(): PhotoAsset
 
 | 类型 | 说明 |
 | --- | --- |
-| [PhotoAsset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-photoasset) | 返回当前资产变更请求中的资产。 |
+| [PhotoAsset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-photoasset) | 返回当前资产变更请求中的资产。对于创建资产的变更请求，在调用接口applyChanges的提交生效之前，该接口会返回null。 |
 
 错误码：
 
@@ -510,6 +510,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
     let photoType: photoAccessHelper.PhotoType = photoAccessHelper.PhotoType.VIDEO;
     let extension: string = 'mp4';
     let assetChangeRequest: photoAccessHelper.MediaAssetChangeRequest = photoAccessHelper.MediaAssetChangeRequest.createAssetRequest(context, photoType, extension);
+    // 获取临时文件写句柄，用于写入数据。
     let fd: number = await assetChangeRequest.getWriteCacheHandler();
     console.info('getWriteCacheHandler successfully');
     // write data into fd..
@@ -632,7 +633,7 @@ saveCameraPhoto(): void
 ![](./img/note_3.0-zh-cn.png)
 
 - 非YUV拍摄模式下，照片资源保存的编码格式与[CameraFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-e#cameraformat)保持一致。
-- YUV拍摄模式下，该接口无法指定编码格式，图片资源保存为默认的jpg格式。
+- YUV拍摄模式下，该接口无法指定编码格式，图片资源保存为默认的jpg格式。从API版本13开始，如需指定编码格式，请使用[saveCameraPhoto](#savecameraphoto13)接口。
 
 系统能力：SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -698,7 +699,6 @@ phAccessHelper的创建请参考[photoAccessHelper.getPhotoAccessHelper](https:/
 
 ```
 import { dataSharePredicates } from '@kit.ArkData';
-import { image } from '@kit.ImageKit';
 
 async function example(context: Context, asset: photoAccessHelper.PhotoAsset) {
   console.info('saveCameraPhotoDemo');
@@ -718,7 +718,7 @@ async function example(context: Context, asset: photoAccessHelper.PhotoAsset) {
 
 discardCameraPhoto(): void
 
-删除相机拍摄的照片。
+删除相机拍摄的照片，照片将被移入回收站。
 
 系统能力：SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -753,7 +753,12 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, asse
 
 setOrientation(orientation: number): void
 
-修改图片的旋转角度。
+设置图片的显示旋转角度。本接口通过修改exif元数据实现对图片旋转角度的调整。
+
+![](./img/note_3.0-zh-cn.png)
+
+- bmp、gif、ico、svg图片本身不包含exif元数据信息，因此无法通过本接口调整旋转角度。
+- dng图片的exif元数据不支持编辑，因此无法通过本接口调整旋转角度。
 
 系统能力：SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -761,7 +766,7 @@ setOrientation(orientation: number): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| orientation | number | 是 | 待修改的图片旋转角度，且只能为0、90、180、270。 |
+| orientation | number | 是 | 待修改的图片旋转角度，单位：度（°），且只能为0°、90°、180°、270°。 |
 
 错误码：
 
@@ -790,6 +795,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
   let fetchResult: photoAccessHelper.FetchResult<photoAccessHelper.PhotoAsset> = await phAccessHelper.getAssets(fetchOption);
   let asset = await fetchResult.getFirstObject();
   let assetChangeRequest: photoAccessHelper.MediaAssetChangeRequest = new photoAccessHelper.MediaAssetChangeRequest(asset);
+  // 修改图片的旋转角度为90°（参数只能为0°、90°、180°、270°）。
   assetChangeRequest.setOrientation(90);
   phAccessHelper.applyChanges(assetChangeRequest).then(() => {
     console.info('apply setOrientation successfully');
@@ -813,7 +819,7 @@ setFavorite(favoriteState: boolean): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| favoriteState | boolean | 是 | 是否设置为收藏文件，true表示设置为收藏文件；false表示取消收藏。 |
+| favoriteState | boolean | 是 | 是否设置为收藏文件，true表示收藏；false表示取消收藏。 |
 
 错误码：
 
@@ -841,6 +847,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
   let fetchResult: photoAccessHelper.FetchResult<photoAccessHelper.PhotoAsset> = await phAccessHelper.getAssets(fetchOption);
   let asset = await fetchResult.getFirstObject();
   let assetChangeRequest: photoAccessHelper.MediaAssetChangeRequest = new photoAccessHelper.MediaAssetChangeRequest(asset);
+  // 将文件设置为收藏文件（入参为true表示收藏，false表示取消收藏）。
   assetChangeRequest.setFavorite(true);
   phAccessHelper.applyChanges(assetChangeRequest).then(() => {
     console.info('apply setFavorite successfully');

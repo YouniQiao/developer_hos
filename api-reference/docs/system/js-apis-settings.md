@@ -2,8 +2,8 @@
 title: "@ohos.settings (设置数据项名称)"
 upstream_id: "harmonyos-references/js-apis-settings"
 catalog: "harmonyos-references"
-content_hash: "4337fa60b1f5"
-synced_at: "2026-07-28T16:50:59.053253"
+content_hash: "9775548fe63b"
+synced_at: "2026-08-29T18:16:57.917945"
 ---
 
 # @ohos.settings (设置数据项名称)
@@ -939,7 +939,7 @@ settings.getURI(settings.display.SCREEN_BRIGHTNESS_STATUS).then((uri:string) => 
 
 getValue(dataAbilityHelper: DataAbilityHelper, name: string, callback: AsyncCallback<object>): void
 
-获取数据库中DEVICE_SHARED域指定数据项的值。使用callback异步回调。
+获取数据库中DEVICE_SHARD域指定数据项的值。使用callback异步回调。
 
 ![](./img/note_3.0-zh-cn.png) 从 API version 7开始支持，从API version 9开始废弃，建议使用[getValue()](#settingsgetvalue10)替代。
 

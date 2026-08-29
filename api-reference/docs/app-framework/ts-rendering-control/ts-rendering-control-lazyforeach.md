@@ -2,8 +2,8 @@
 title: "LazyForEach"
 upstream_id: "harmonyos-references/ts-rendering-control-lazyforeach"
 catalog: "harmonyos-references"
-content_hash: "356ac751e0e7"
-synced_at: "2026-07-28T16:48:46.542479"
+content_hash: "87912bdc7d83"
+synced_at: "2026-08-29T18:15:22.199527"
 ---
 
 # LazyForEach

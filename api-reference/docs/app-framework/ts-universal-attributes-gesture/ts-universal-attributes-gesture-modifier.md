@@ -2,13 +2,13 @@
 title: "动态手势设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-gesture-modifier"
 catalog: "harmonyos-references"
-content_hash: "605a5999e304"
-synced_at: "2026-07-28T16:42:50.119128"
+content_hash: "6b17f677b74e"
+synced_at: "2026-08-29T18:13:07.416869"
 ---
 
 # 动态手势设置
 
-动态设置组件绑定的手势，支持在属性设置时使用if/else语法，适用于需要根据组件状态或用户操作切换单一手势或手势组绑定的场景，可提升手势配置的灵活性。
+动态设置组件绑定的手势，支持在属性设置时使用if/else语法，适用于需要根据组件状态或用户操作切换手势绑定的场景，可提升手势配置的灵活性。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -43,15 +43,15 @@ gestureModifier(modifier: GestureModifier): T
 
 #### GestureModifier
 
-GestureModifier用于封装组件手势的动态设置逻辑。开发者需自定义class实现GestureModifier接口，并在applyGesture中根据需要设置或切换组件绑定的手势。
+GestureModifier用于封装组件手势的动态设置逻辑，开发者需自定义class实现GestureModifier接口，并在applyGesture中根据需要设置或切换组件绑定的手势。
 
 #### [h2]applyGesture
 
 applyGesture(event: UIGestureEvent): void
 
-手势应用函数，适用于需要根据组件状态或用户操作动态切换手势绑定的场景。
+手势更新函数，适用于需要根据组件状态或用户操作动态切换手势绑定的场景。
 
-开发者可根据需要自定义实现该方法，通过调用UIGestureEvent的[addGesture()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-uigestureevent#addgesture)方法对组件设置需要绑定的手势，支持使用if/else语法进行动态设置。若在当次手势操作过程中触发了组件上的手势动态切换，该切换效果在当次手势结束（所有手指抬起）后的下一次手势操作中生效。
+开发者可根据需要自定义实现该方法，对组件设置需要绑定的手势，支持使用if/else语法进行动态设置。若在当次手势操作过程中触发了组件上的手势动态切换，该切换效果在当次手势结束（所有手指抬起）后的下一次手势操作中生效。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -126,7 +126,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008362.png)
+ ![](./img/zh-cn_image_0000002701799492.png)
 
 #### [h2]示例2（动态绑定手势组）
 
@@ -203,4 +203,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848442.png)
+ ![](./img/zh-cn_image_0000002731518777.png)

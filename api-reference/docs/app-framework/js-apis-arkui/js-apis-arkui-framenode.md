@@ -2,8 +2,8 @@
 title: "FrameNode"
 upstream_id: "harmonyos-references/js-apis-arkui-framenode"
 catalog: "harmonyos-references"
-content_hash: "e35e642b7dc7"
-synced_at: "2026-07-28T16:41:23.319944"
+content_hash: "9d1cdd40fbde"
+synced_at: "2026-08-29T18:12:34.819688"
 ---
 
 # FrameNode
@@ -131,6 +131,16 @@ import { FrameNode, LayoutConstraint, ExpandMode, ChildrenCountMode, typeNode, N
 | currentUIStates | number | 是 | 回调触发时当前的UI状态。 可以通过位与运算判断当前包含哪些[UIState](#uistate20)状态。 位与运算方法：if ((currentUIStates & UIState.PRESSED) == UIState.PRESSED)。 当仅需判断当前是否仅处于单个状态时，可以直接判断：if (currentUIStates == UIState.PRESSED)。注意，此方式仅在当前仅有一个状态激活时有效，若需判断多个状态中是否包含某个状态，请使用位与运算。 |
 
 #### FrameNode
+
+FrameNode表示组件树的实体节点，支持节点树操作、自定义绘制与布局、位置查询、动画等能力。[NodeController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-nodecontroller)可通过[BuilderNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode)持有的FrameNode将其挂载到[NodeContainer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-nodecontainer)上，也可通过FrameNode获取[RenderNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-rendernode)，挂载到其他FrameNode上。适用于需要通过代码动态创建和管理组件节点树的场景，可实现声明式组件无法直接满足的灵活UI组合与自定义渲染需求。[getInspectorInfo返回结果$attrs映射表.xlsx](https://gitcode.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-arkui/figures/getInspectorInfo返回结果$attrs映射表.xlsx)。
+
+![](./img/note_3.0-zh-cn.png)
+
+- 当前不支持在预览器中使用FrameNode节点。
+- FrameNode节点暂不支持拖拽。
+- FrameNode对象不支持使用JSON序列化。
+- 在[UI上下文不明确](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-global-interface#ui上下文不明确)的场景中调用[FrameNode](#framenode-1)对象的接口时，建议使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)的[runScopedTask](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#runscopedtask)接口明确UI上下文，参考[执行绑定UI实例的闭包](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-global-interface#执行绑定ui实例的闭包)示例。
+- FrameNode的接口中，仅[Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt)类型的必选参数支持传入null或undefined。
 
 #### [h2]constructor
 
@@ -1850,7 +1860,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087727.gif)
+ ![](./img/zh-cn_image_0000002731518631.gif)
 
 #### [h2]commonAttribute12+
 
@@ -2379,7 +2389,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685927899.gif)
+ ![](./img/zh-cn_image_0000002701639434.gif)
 
 #### [h2]setCrossLanguageOptions15+
 
@@ -7717,7 +7727,7 @@ class MyNodeController extends NodeController {
     node.appendChild(col);
     // 创建marquee
     let marquee = typeNode.createNode(uiContext, 'Marquee');
-    marquee.initialize({ start: true, src: 'Marquee, if need display, src shall be long' });
+    marquee.initialize({ start: true, src: 'Marquee, if need display, src shall be long' })
       .width(100);
     col.appendChild(marquee);
     return node;
@@ -9257,7 +9267,7 @@ struct FrameNodeTypeTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008220.png)
+ ![](./img/zh-cn_image_0000002731358655.png)
 
 #### 节点操作示例
 
@@ -11117,7 +11127,7 @@ struct FrameNodeTypeTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848300.gif)
+ ![](./img/zh-cn_image_0000002701799346.gif)
 
 #### 动画创建与取消示例
 
@@ -11219,7 +11229,7 @@ struct CreateAnimationExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087729.gif)
+ ![](./img/zh-cn_image_0000002731518633.gif)
 
 #### 滚动事件示例
 
@@ -11424,7 +11434,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685927901.gif)
+ ![](./img/zh-cn_image_0000002701639436.gif)
 
 #### 检验NodeAdapter是否有效示例
 
@@ -11542,7 +11552,7 @@ struct ListNodeTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008222.gif)
+ ![](./img/zh-cn_image_0000002731358657.gif)
 
 #### 获取根节点示例
 

@@ -2,8 +2,8 @@
 title: "@ohos.app.ability.InsightIntentExecutor (意图执行基类)"
 upstream_id: "harmonyos-references/js-apis-app-ability-insightintentexecutor"
 catalog: "harmonyos-references"
-content_hash: "57995d93e212"
-synced_at: "2026-07-28T16:40:33.451219"
+content_hash: "2a1a8b59a453"
+synced_at: "2026-08-29T18:11:57.809898"
 ---
 
 # @ohos.app.ability.InsightIntentExecutor (意图执行基类)
@@ -199,6 +199,7 @@ export default class IntentExecutorImpl extends InsightIntentExecutor {
 
 ```
 import { InsightIntentExecutor, insightIntent } from '@kit.AbilityKit';
+import { hilog } from '@kit.PerformanceAnalysisKit';
 
 async function executeInsightIntent(param: Record<string, Object>): Promise<insightIntent.ExecuteResult> {
   return new Promise((resolve, reject) => {

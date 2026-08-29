@@ -2,8 +2,8 @@
 title: "Interface (PhotoOutput)"
 upstream_id: "harmonyos-references/arkts-apis-camera-photooutput"
 catalog: "harmonyos-references"
-content_hash: "1f31c6efdb11"
-synced_at: "2026-07-28T16:51:41.526583"
+content_hash: "4c212574c6bc"
+synced_at: "2026-08-29T18:17:29.903559"
 ---
 
 # Interface (PhotoOutput)
@@ -676,6 +676,8 @@ function getSupportedMovingPhotoVideoCodecType(photoOutput: camera.PhotoOutput):
 setMovingPhotoVideoCodecType(codecType: VideoCodecType): void
 
 设置动态照片短视频编码类型。
+
+设置之前，可先使用方法[getSupportedMovingPhotoVideoCodecTypes](#getsupportedmovingphotovideocodectypes13)查询设备支持的动态照片短视频编码类型。
 
 元服务API： 从API version 19开始，该接口支持在元服务中使用。
 

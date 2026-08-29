@@ -2,8 +2,8 @@
 title: "粒子动画 (Particle)"
 upstream_id: "harmonyos-references/ts-particle-animation"
 catalog: "harmonyos-references"
-content_hash: "fb394397cf8a"
-synced_at: "2026-07-28T16:47:09.506456"
+content_hash: "d7bca874761d"
+synced_at: "2026-08-29T18:14:46.203338"
 ---
 
 # 粒子动画 (Particle)
@@ -73,13 +73,13 @@ disturbanceFields(fields: Array<DisturbanceFieldOptions>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| fields | Array | 是 | 扰动场数组。 |
+| fields | Array | 是 | 扰动场数组。用于设置粒子运动轨迹的干扰效果，通过配置多个扰动场可对粒子施加排斥力或吸引力，改变粒子的运动轨迹。 |
 
 #### [h2]emitter12+
 
 emitter(value: Array<EmitterProperty>)
 
-支持发射器属性动态更新，包括发射速率、位置、大小和环形区域等参数。
+支持发射器属性动态更新。通过EmitterProperty中的index指定需要更新的发射器（按初始化参数中发射器的数组索引），可动态更新发射器的发射速率、位置、大小和环形区域参数。必须先通过Particle接口创建粒子动画并配置发射器，再通过emitter()属性动态更新对应发射器的参数，emitter()属性仅更新已有发射器的参数，不能新增发射器。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -157,12 +157,12 @@ interface ParticleOptions<
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | emitter | [EmitterOptions](#emitteroptions) | 否 | 否 | 粒子发射器配置。 |
-| color | [ParticleColorPropertyOptions](#particlecolorpropertyoptions)[/topic/body/section/table/tgroup/tbody/row/entry/color_updater {""}) (color_updater] | 否 | 是 | 粒子颜色配置。 **说明**： 默认值：{ range:[Color.White,Color.White] } 。图片粒子不支持设置颜色。 |
+| color | [ParticleColorPropertyOptions](#particlecolorpropertyoptions)[/topic/body/section/table/tgroup/tbody/row/entry/color_updater {""}) (color_updater] | 否 | 是 | 粒子颜色配置。 **说明**： 默认值：{ range:[Color.White,Color.White] }。图片粒子不支持设置颜色。 |
 | opacity | [ParticlePropertyOptions](#particlepropertyoptions) | 否 | 是 | 粒子透明度配置。 默认值：{ range:[1.0,1.0] } |
 | scale | [ParticlePropertyOptions](#particlepropertyoptions) | 否 | 是 | 粒子大小配置。 默认值：{ range:[1.0,1.0] } |
 | velocity | [VelocityOptions](#velocityoptions18) | 否 | 是 | 粒子速度配置。 **说明**： speed表示速度大小。angle表示速度的方向（单位：度），以元素几何中心为坐标原点，水平方向为X轴，正数表示顺时针方向旋转角度。 默认值：{ speed:[0.0,0.0],angle:[0.0,0.0] } |
 | acceleration | [AccelerationOptions](#accelerationoptions18) | 否 | 是 | 粒子加速度配置。 **说明**： speed表示加速度大小，angle表示加速度方向（单位：度）。 默认值：{ speed:{range:[0.0,0.0]},angle:{range:[0.0,0.0]} } |
-| spin | [ParticlePropertyOptions](#particlepropertyoptions) | 否 | 是 | 粒子自旋角度配置。 默认值：{range:[0.0,0.0]} 方向：正数表示顺时针旋转，负数表示逆时针旋转。 |
+| spin | [ParticlePropertyOptions](#particlepropertyoptions) | 否 | 是 | 粒子自旋角度配置，单位为度（°）。 默认值：{range:[0.0,0.0]} 方向：正数表示顺时针旋转，负数表示逆时针旋转。 |
 
 #### EmitterOptions
 
@@ -182,9 +182,9 @@ interface EmitterOptions<PARTICLE extends ParticleType> {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| particle | [EmitterParticleOptions](#emitterparticleoptions18) | 否 | 否 | 粒子配置。 -type表示粒子类型，可以选择图片或点。 -config表示对应类型的配置。 -config类型和type值有关联： 1. 如果type为ParticleType.POINT，则config类型为[PointParticleParameters](#pointparticleparameters) 。 2. 如果type为ParticleType.IMAGE，则config类型为[ImageParticleParameters](#imageparticleparameters) 。 -count表示发射的粒子总数，count取值>=-1，当count为-1表示粒子总数无限大。 -lifetime表示单个粒子的生命周期，默认值1000（即1000ms，1s），lifetime>=-1，当lifetime为-1表示粒子生命周期无限大。当lifetime | 否 | 是 | 发射器位置（距离组件左上角的位置。第一个参数为x方向上的相对偏移，第二个参数为y轴方向相对偏移。） 默认值：[0.0, 0.0] **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| size | [ParticleTuple](#particletuple18) | 否 | 是 | 发射窗口的大小。第一个参数为发射器宽，第二个参数为发射器高。 默认值：['100%','100%'](即发射窗口占满Particle组件) **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| annulusRegion20+ | [ParticleAnnulusRegion](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-particle-animation#particleannulusregion20) | 否 | 是 | 环形发射器参数。需要发射器形状为环形（即shape参数为ParticleEmitterShape.ANNULUS）时才生效，且对于环形发射器，形状信息必须通过annulusRegion参数指定，position和size不生效。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| particle | [EmitterParticleOptions](#emitterparticleoptions18) | 否 | 否 | 粒子配置。 -type表示粒子类型，可以选择图片或点。 -config表示对应类型的配置。 -config类型和type值有关联： 1. 如果type为ParticleType.POINT，则config类型为[PointParticleParameters](#pointparticleparameters) 。 2. 如果type为ParticleType.IMAGE，则config类型为[ImageParticleParameters](#imageparticleparameters) 。 -count表示发射的粒子总数，count取值>=-1，当count为-1表示粒子总数无限大。 -lifetime表示单个粒子的生命周期，默认值1000（即1000ms，1s），lifetime>=-1，当lifetime为-1表示粒子生命周期无限大。当lifetime | 否 | 是 | 发射器位置（距离组件左上角的位置。第一个参数为x方向上的相对偏移，第二个参数为y轴方向相对偏移。）。当发射器形状为环形（即shape为ParticleEmitterShape.ANNULUS）时，此属性不生效，需通过annulusRegion参数指定形状信息。 默认值：[0.0, 0.0] **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| size | [ParticleTuple](#particletuple18) | 否 | 是 | 发射器的大小。第一个参数为发射器宽，第二个参数为发射器高。当发射器形状为环形（即shape为ParticleEmitterShape.ANNULUS）时，此属性不生效，需通过annulusRegion参数指定形状信息。 默认值：['100%','100%'](即发射窗口占满Particle组件) **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| annulusRegion20+ | [ParticleAnnulusRegion](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-particle-animation#particleannulusregion20) | 否 | 是 | 环形发射器参数。需要发射器形状为环形（即shape参数为ParticleEmitterShape.ANNULUS）时才生效，且对于环形发射器，形状信息必须通过annulusRegion参数指定，position和size不生效。未设置时，发射器不使用环形区域参数。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 
 #### ParticleConfigs
 
@@ -275,7 +275,7 @@ interface ParticlePropertyOptions<TYPE, UPDATER extends ParticleUpdater> {
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | range | [ParticleTuple](#particletuple18) | 否 | 否 | 粒子初始属性值区间，粒子发射器生成粒子的属性值在range区间随机取值。 **说明** 各项属性的非法输入取默认值，当最大值小于最小值的时候取默认区间。TYPE为number。 不同属性的默认值不同： 1、opacity属性：range:[1.0,1.0]，取值范围为[0, 1]，默认值为1.0。 2、scale属性：range:[1.0,1.0]，取值范围为[0, 10000]，默认值为1.0。 3、acceleration加速度speed属性：range:[0.0,0.0]，取值范围为[0, 10000]，默认值为0.0。 4、acceleration加速度angle属性：range:[0.0,0.0]，取值范围为[-10000, 10000]，默认值为0.0。 5、spin属性：range:[0.0,0.0]，取值范围为[-10000, 10000]，默认值为0.0。 |
-| updater | [ParticleUpdaterOptions](#particleupdateroptions18) | 否 | 是 | 属性变化配置。属性变化类型type有三类： 1、当type为ParticleUpdater.NONE，表示无变化，则config类型为[ParticlePropertyUpdaterConfigs](#particlepropertyupdaterconfigs)[ParticleUpdater.NONE]。 2、当type为ParticleUpdater.RANDOM，表示变化类型为随机均匀变化，则config类型为[ParticlePropertyUpdaterConfigs](#particlepropertyupdaterconfigs)[ParticleUpdater.RANDOM]。 3、当type为ParticleUpdater.CURVE，表示变化类型为曲线变化，则config类型为[ParticlePropertyUpdaterConfigs](#particlepropertyupdaterconfigs)[ParticleUpdater.CURVE] 默认值：type默认为ParticleUpdater.NONE。 |
+| updater | [ParticleUpdaterOptions](#particleupdateroptions18) | 否 | 是 | 属性变化配置。属性变化类型type有三类： 1、当type为ParticleUpdater.NONE，表示无变化，则config类型为[ParticlePropertyUpdaterConfigs](#particlepropertyupdaterconfigs)[ParticleUpdater.NONE]。 2、当type为ParticleUpdater.RANDOM，表示变化类型为随机变化，则config类型为[ParticlePropertyUpdaterConfigs](#particlepropertyupdaterconfigs)[ParticleUpdater.RANDOM]。 3、当type为ParticleUpdater.CURVE，表示变化类型为曲线变化，则config类型为[ParticlePropertyUpdaterConfigs](#particlepropertyupdaterconfigs)[ParticleUpdater.CURVE] 默认值：type默认为ParticleUpdater.NONE。 |
 
 #### ParticlePropertyUpdaterConfigs
 
@@ -319,8 +319,8 @@ interface ParticlePropertyAnimation<T> {
 | --- | --- | --- | --- | --- |
 | from | T | 否 | 否 | 属性起始值。非法输入取对应属性的默认值。 |
 | to | T | 否 | 否 | 属性目标值。非法输入取对应属性的默认值。 |
-| startMillis | number | 否 | 否 | 动画开始时间。 单位：毫秒。 取值范围：[0, +∞)。 |
-| endMillis | number | 否 | 否 | 动画结束时间。 单位：毫秒。 取值范围：[0, +∞)。 |
+| startMillis | number | 否 | 否 | 动画开始时间。 单位：毫秒。 取值范围：[0, +∞)。传入负值时取默认值0。 |
+| endMillis | number | 否 | 否 | 动画结束时间。 单位：毫秒。 取值范围：[0, +∞)。传入负值时取默认值0。 |
 | curve | [Curve](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#curve) | [ICurve](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-curve#icurve9) | 否 | 是 | 设置动画曲线。 默认值：Curve.Linear |
 
 #### ParticleType
@@ -334,7 +334,7 @@ interface ParticlePropertyAnimation<T> {
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
 | POINT | 'point' | 点状粒子 |
-| IMAGE | 'image' | 图片粒子 |
+| IMAGE | 'image' | 图片粒子。 图片粒子不支持设置颜色。 |
 
 #### ParticleEmitterShape
 
@@ -347,7 +347,7 @@ interface ParticlePropertyAnimation<T> {
 | RECTANGLE | 'rectangle' | 粒子发射器为矩形。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | CIRCLE | 'circle' | 粒子发射器为圆形。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | ELLIPSE | 'ellipse' | 粒子发射器为椭圆形。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| ANNULUS20+ | 'annulus' | 粒子发射器为环形。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| ANNULUS20+ | 'annulus' | 粒子发射器为环形。使用此形状时必须配置annulusRegion参数，且position和size参数不生效。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 
 #### DistributionType12+
 
@@ -390,10 +390,10 @@ interface ParticlePropertyAnimation<T> {
 | shape | [DisturbanceFieldShape](#disturbancefieldshape12) | 否 | 是 | 场的形状。 默认为DisturbanceFieldShape.RECT。 |
 | size | [SizeT](#sizett12) | 否 | 是 | 场的大小，单位：vp。 默认值 {width:0, height:0}。 width和height的取值范围：[0, +∞)。 |
 | position | [PositionT](#positiontt12) | 否 | 是 | 场的位置，单位：vp。 默认值{x:0, y:0}。 x、y的取值范围：(-∞, +∞)。 |
-| feather | number | 否 | 是 | 羽化值，表示场从中心点到场边缘的衰减程度，取值范围0到100的整数，如果0则表示场是一个刚体，所有范围内的粒子都被排斥在外。羽化值越大场的缓和程度越大，场范围内出现越多靠近中心点的粒子。 默认值为0。 |
-| noiseScale | number | 否 | 是 | 噪声尺度，用于控制噪声图案的整体大小，取值大于等于0。 默认值1。 |
-| noiseFrequency | number | 否 | 是 | 噪声频率，频率越大噪声越细腻，取值大于等于0。 默认值1。 |
-| noiseAmplitude | number | 否 | 是 | 噪声振幅，噪声的波动的范围，振幅越大噪音之间差异越大。取值大于等于0。 默认值1。 |
+| feather | number | 否 | 是 | 羽化值，表示场从中心点到场边缘的衰减程度，取值范围为0到100的整数。取值为0时表示场是一个刚体，所有范围内的粒子都被排斥在外。羽化值越大场的缓和程度越大，场范围内出现越多靠近中心点的粒子。设置为负值或大于100时取默认值，设置为非整数时截断取整。 默认值为0。 |
+| noiseScale | number | 否 | 是 | 噪声尺度，用于控制噪声图案的整体大小，取值大于等于0。 默认值1。传入负值时取默认值1。 |
+| noiseFrequency | number | 否 | 是 | 噪声频率，频率越大噪声越细腻，取值大于等于0。 默认值1。传入负值时取默认值1。 |
+| noiseAmplitude | number | 否 | 是 | 噪声振幅，表示噪声值的波动范围，振幅越大波动范围越大。取值大于等于0。 默认值1。传入负值时取默认值1。 |
 
 #### DisturbanceFieldShape12+
 
@@ -418,17 +418,17 @@ interface ParticlePropertyAnimation<T> {
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | index | number | 否 | 否 | 索引，取整，按初始化参数中发射器的数组索引指定对应的发射器。异常默认值为0。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| emitRate | number | 否 | 是 | 发射器发射速率，即每秒发射粒子的数量。 未传入时保持其当前的发射速率， 传入值小于0时取默认值5。emitRate值超过5000时会极大影响性能，建议设置参数小于5000。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| position | [PositionT](#positiontt12) | 否 | 是 | 发射器位置的数组，只支持number类型。 未传入时保持其当前的发射器位置。需传入两个有效参数，若其中一个为异常值，则position不生效。 x、y的取值范围：(-∞, +∞)。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| size | [SizeT](#sizett12) | 否 | 是 | 发射窗口的大小，只支持number类型。 未传入时保持其当前发射窗口大小。需传入两个有效参数且都大于0，若其中一个为异常值，则size不生效。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| annulusRegion20+ | [ParticleAnnulusRegion](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-particle-animation#particleannulusregion20) | 否 | 是 | 环形发射器参数。需要对应index的发射器形状为环形才生效。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| emitRate | number | 否 | 是 | 发射器发射速率，即每秒发射粒子的数量。 未传入时保持其当前的发射速率， 传入值小于0时取默认值5。emitRate值超过5000时会严重影响性能，可能导致帧率大幅下降，建议设置参数小于5000。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| position | [PositionT](#positiontt12) | 否 | 是 | 发射器位置，只支持number类型。 未传入时保持其当前的发射器位置。需传入两个有效参数，若其中一个为异常值，则position不生效。当对应index的发射器形状为环形（ANNULUS）时，position不生效。 x、y的取值范围：(-∞, +∞)。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| size | [SizeT](#sizett12) | 否 | 是 | 发射器的大小，只支持number类型。 未传入时保持其当前发射器大小。需传入两个有效参数且都大于0，若其中一个为异常值，则size不生效。当对应index的发射器形状为环形（ANNULUS）时，size不生效。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| annulusRegion20+ | [ParticleAnnulusRegion](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-particle-animation#particleannulusregion20) | 否 | 是 | 环形发射器参数。需要对应index的发射器形状为环形才生效，且对于环形发射器，position和size不生效。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 
 #### ParticleTuple18+
 
 ```
 type ParticleTuple<T1, T2> = [T1, T2]
 ```
- 粒子元组，表示定义一些动画参数的类型。
+ 粒子元组，表示定义动画参数配置值对的类型。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -436,7 +436,7 @@ type ParticleTuple<T1, T2> = [T1, T2]
 
 | 类型 | 说明 |
 | --- | --- |
-| [T1, T2] | 一些动画参数的类型，可能是任何类型。 |
+| [T1, T2] | 动画参数配置值对的类型，T1和T2支持多种具体类型（如number、ResourceColor、Dimension等）。 |
 
 #### Particles18+
 
@@ -473,7 +473,7 @@ interface Particles<
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| particles10+ | Array > | 否 | 否 | 粒子动画的集合。每个粒子动画（[ParticleOptions](#particleoptions)）包含粒子发射，同时可配置粒子的颜色、透明度、大小、速度、加速度与旋转速度，详见[ParticleOptions](#particleoptions)属性说明。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| particles10+ | Array > | 否 | 否 | 粒子动画的集合。每个粒子动画（[ParticleOptions](#particleoptions)）包含粒子发射，同时可配置粒子的颜色、透明度、大小、速度、加速度与自旋角度，详见[ParticleOptions](#particleoptions)属性说明。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 
 #### VelocityOptions18+
 
@@ -488,7 +488,7 @@ interface Particles<
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | speed10+ | [ParticleTuple](#particletuple18) | 否 | 否 | 表示速度大小。 默认值：{range:[0.0,0.0]} **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| angle10+ | [ParticleTuple](#particletuple18) | 否 | 否 | 表示速度的方向（单位：度）。以元素几何中心为坐标原点，水平方向为X轴，正数表示顺时针方向旋转角度。 默认值：{range:[0.0,0.0]} **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| angle10+ | [ParticleTuple](#particletuple18) | 否 | 否 | 表示速度的方向，单位为度（°）。以元素几何中心为坐标原点，水平方向为X轴，正数表示顺时针方向旋转角度。 默认值：{range:[0.0,0.0]} **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 
 #### AccelerationOptions18+
 
@@ -511,8 +511,8 @@ declare interface AccelerationOptions<
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| speed10+ | [ParticlePropertyOptions](#particlepropertyoptions) | 否 | 是 | 表示加速度大小。 默认值：{range:[0.0,0.0]} **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| angle10+ | [ParticlePropertyOptions](#particlepropertyoptions) | 否 | 是 | 表示加速度方向（单位：度）。 默认值：{range:[0.0,0.0]} **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| speed10+ | [ParticlePropertyOptions](#particlepropertyoptions) | 否 | 是 | 表示加速度大小。单位：vp/s² 默认值：{range:[0.0,0.0]} **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| angle10+ | [ParticlePropertyOptions](#particlepropertyoptions) | 否 | 是 | 表示加速度方向，单位为度（°）。 默认值：{range:[0.0,0.0]} **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 
 #### EmitterParticleOptions18+
 
@@ -537,7 +537,7 @@ interface EmitterParticleOptions<PARTICLE extends ParticleType> {
 | --- | --- | --- | --- | --- |
 | type10+ | [PARTICLE](#particletype) | 否 | 否 | 表示粒子类型，可以选择图片或点。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | config10+ | [ParticleConfigs](#particleconfigs)[PARTICLE] | 否 | 否 | 表示对应类型的配置。 config类型和type值有关联： 1. 如果type为ParticleType.POINT，则config类型为[PointParticleParameters](#pointparticleparameters) 。 2. 如果type为ParticleType.IMAGE，则config类型为[ImageParticleParameters](#imageparticleparameters) 。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| count10+ | number | 否 | 否 | 表示发射的粒子总数，count取值>=-1,当count为-1表示粒子总数无限大。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| count10+ | number | 否 | 否 | 表示发射的粒子总数，count取值>=-1,当count为-1表示粒子总数无限大。 **说明：** 当count为-1时发射器将持续发射粒子，如果不需要持续产生大量粒子，建议不要将count设置为-1，可能对性能造成较大影响，建议配合合理的emitRate和lifetime设置以避免性能问题。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | lifetime10+ | number | 否 | 是 | 表示单个粒子的生命周期，默认值1000（即1000ms，1s），lifetime>=-1。当lifetime为-1表示粒子生命周期无限大。当lifetime 为规范匿名对象的定义，API 18版本修改了此处的元素定义。其中，保留了历史匿名对象的起始版本信息，会出现外层元素@since版本号高于内层元素版本号的情况，但这不影响接口的使用。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
@@ -597,7 +597,7 @@ interface ParticleColorUpdaterOptions<UPDATER extends ParticleUpdater> {
 - 当outerRadius小于innerRadius时（即外圆半径小于内圆半径时），会将当前较小的值作为新的内圆半径，将较大的值作为新的外圆半径。
 - 当endAngle小于startAngle时（即结束角度小于起始角度时），会将当前较小的值作为新的起始角度，将较大的值作为新的结束角度。
 
-![](./img/zh-cn_image_0000002656008834.png)
+![](./img/zh-cn_image_0000002701799962.png)
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -606,10 +606,10 @@ interface ParticleColorUpdaterOptions<UPDATER extends ParticleUpdater> {
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | center | [PositionT](#positiontt12) | 否 | 是 | 圆环的圆心坐标，组件的左上角为坐标原点。默认值：{x:LengthMetrics.percent(0.5),y:LengthMetrics.percent(0.5)} |
-| outerRadius | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 否 | 圆环的外圆半径。 |
-| innerRadius | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 否 | 圆环的内圆半径。 |
-| startAngle | number | 否 | 是 | 圆环的起始角度。 单位：度 默认值：0 |
-| endAngle | number | 否 | 是 | 圆环的结束角度。 单位：度 默认值：360 |
+| outerRadius | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 否 | 圆环的外圆半径。小于零或使用百分比单位时按零进行处理。当outerRadius小于innerRadius时，会将当前较小的值作为新的内圆半径，将较大的值作为新的外圆半径。 |
+| innerRadius | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 否 | 圆环的内圆半径。小于零或使用百分比单位时按零进行处理。当outerRadius小于innerRadius时，会将当前较小的值作为新的内圆半径，将较大的值作为新的外圆半径。 |
+| startAngle | number | 否 | 是 | 圆环的起始角度。 单位：度（°） 取值范围：(-∞, +∞) 默认值：0 |
+| endAngle | number | 否 | 是 | 圆环的结束角度。 单位：度（°） 取值范围：(-∞, +∞) 默认值：360 |
 
 #### Vector2T22+
 
@@ -681,10 +681,10 @@ type SizeT<T> = import('../api/arkui/Graphics').SizeT<T>
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| amplitude | number | 否 | 是 | 描述粒子波动场波的幅值。幅值越大，波动场的力越大。 取值范围：[0, +∞) 默认值：0 设置为负值时取默认值。 |
-| wavelength | number | 否 | 是 | 描述粒子波动场的波长，即一个波周期的变化距离。波长越大，则随距离的变化，波的变化越慢，波动越不明显。 取值范围：[0, +∞) 默认值：0 设置为负值时取默认值。 |
-| waveSpeed | number | 否 | 是 | 描述粒子波动场的波速。波速越大，则随时间的变化，波的变化越快，波动越明显。 取值范围：[0, +∞) 默认值：0 设置为负值时取默认值。 |
-| attenuation | number | 否 | 是 | 描述粒子波动场波的衰减系数。衰减系数越大，则随时间的变化，波的衰减越快。 取值范围：[0, 1] 默认值：0.0 设置的数值不在范围内时取默认值。 |
+| amplitude | number | 否 | 是 | 描述粒子波动场波的幅值。幅值越大，波动场的力越大，粒子在波动场作用下产生的位移变化越明显，波纹扩散效果越强烈。 取值范围：[0, +∞) 默认值：0 设置为负值时取默认值。 |
+| wavelength | number | 否 | 是 | 描述粒子波动场的波长，即一个波周期的变化距离。波长越大，则随距离的变化，波的变化越慢，波动越不明显，粒子受波动影响的周期变长。 取值范围：[0, +∞) 默认值：0 设置为负值时取默认值。 |
+| waveSpeed | number | 否 | 是 | 描述粒子波动场的波速。波速越大，则随时间的变化，波的变化越快，波动越明显，粒子受波动影响的响应越迅速。单位：vp/s。 取值范围：[0, +∞) 默认值：0 设置为负值时取默认值。 |
+| attenuation | number | 否 | 是 | 描述粒子波动场波的衰减系数。衰减系数越大，则随时间的变化，波的衰减越快，粒子受到的波动场力随时间迅速减弱，波纹扩散效果逐渐消失。 取值范围：[0, 1] 默认值：0.0 设置的数值不在范围内时取默认值。 |
 | center | [PositionT](#positiontt12) | 否 | 是 | 粒子波动场产生力的中心位置。组件的左上角为坐标原点。坐标单位为vp。 默认值：{x:0, y:0} |
 | region | [FieldRegion](#fieldregion22) | 否 | 是 | 粒子波动场影响的区域信息，其中区域信息包括区域形状、区域大小以及区域中心位置。 默认值：{shape:DisturbanceFieldShape.RECT, position:{x:0, y:0}, size:{width:0, height:0}} |
 
@@ -698,7 +698,7 @@ type SizeT<T> = import('../api/arkui/Graphics').SizeT<T>
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| velocity | [Vector2T](#vector2tt22) | 否 | 是 | 粒子速度场的各方向速度值。粒子只有在速度场作用范围内时获得该速度，离开速度场范围后不受该速度场影响，不获得该额外的速度。 默认值：{x:0, y:0} |
+| velocity | [Vector2T](#vector2tt22) | 否 | 是 | 粒子速度场的各方向速度值。粒子只有在速度场作用范围内时获得该速度，离开速度场范围后不受该速度场影响，不获得该额外的速度。单位：vp/s。 默认值：{x:0, y:0} |
 | region | [FieldRegion](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-particle-animation#fieldregion22) | 否 | 是 | 粒子速度场影响的区域信息，其中区域信息包括区域形状、区域大小以及区域中心位置。 默认值：{shape:DisturbanceFieldShape.RECT, position:{x:0, y:0}, size:{width:0, height:0}} |
 
 #### 示例
@@ -820,7 +820,7 @@ struct ParticleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848914.gif)
+ ![](./img/zh-cn_image_0000002731519249.gif)
 
 #### [h2]示例2（图片初始化粒子）
 
@@ -832,7 +832,6 @@ struct ParticleExample {
 struct ParticleExample {
   @State
   myCount: number = 100
-  flag: boolean = false;
 
   // 通过参数化配置减少重复代码，imageSrc为图片资源，scaleTo为缩放目标值，durationMs为动画持续时长
   private createImageParticle(imageSrc: ResourceStr, scaleTo: number, durationMs: number)
@@ -927,11 +926,11 @@ struct ParticleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088345.gif)
+ ![](./img/zh-cn_image_0000002701640048.gif)
 
 #### [h2]示例3（粒子扰动场的干扰下运动轨迹发生变化）
 
-该示例主要演示如何通过粒子扰动场的干扰下来实现运动轨迹发生变化的效果。
+演示粒子在扰动场干扰下运动轨迹变化的效果。
 
 ```
 @Entry
@@ -1054,7 +1053,7 @@ struct ParticleExample3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928513.gif)
+ ![](./img/zh-cn_image_0000002731359269.gif)
 
 #### [h2]示例4（调整粒子发射器位置）
 
@@ -1132,11 +1131,11 @@ struct ParticleExample4 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008836.gif)
+ ![](./img/zh-cn_image_0000002701799964.gif)
 
 #### [h2]示例5（环形发射器创建）
 
-该示例实现了粒子动画环形发射器每隔一秒钟沿着圆弧30度递增，周期性发射粒子，直至布满整个圆环。
+该示例演示如何创建环形发射器，粒子在整个圆环范围内（起始角度0到结束角度360）静态发射。
 
 ```
 import { LengthMetrics } from '@kit.ArkUI';
@@ -1218,7 +1217,7 @@ struct ParticleExample5 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848916.gif)
+ ![](./img/zh-cn_image_0000002731519251.gif)
 
 #### [h2]示例6（环形发射器更新）
 
@@ -1333,7 +1332,7 @@ struct ParticleExample6 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088347.gif)
+ ![](./img/zh-cn_image_0000002701640050.gif)
 
 #### [h2]示例7（设置波动场和速度场）
 
@@ -1461,4 +1460,4 @@ struct ParticleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928515.gif)
+ ![](./img/zh-cn_image_0000002731359271.gif)

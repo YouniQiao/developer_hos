@@ -1,12 +1,12 @@
 ---
-title: "mutableBuilder"
+title: "mutableBuilder: 实现全局@Builder动态更新"
 upstream_id: "harmonyos-references/ts-universal-mutablebuilder"
 catalog: "harmonyos-references"
-content_hash: "5dc22a909e39"
-synced_at: "2026-07-28T16:47:59.545744"
+content_hash: "ea78df4627df"
+synced_at: "2026-08-29T18:15:05.529836"
 ---
 
-# mutableBuilder
+# mutableBuilder: 实现全局@Builder动态更新
 
 使用mutableBuilder封装全局[@Builder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-builder-dynamic)，实现全局@Builder的动态切换。该功能适用于需要在运行时根据不同条件替换全局@Builder内容的场景（如根据状态切换不同的UI构建逻辑），提升了UI构建的灵活性。开发指南见[mutableBuilder：实现全局@Builder动态更新](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-mutablebuilder)。
 
@@ -22,7 +22,7 @@ mutableBuilder<Args extends Object[]>(builder: BuilderCallback): MutableBuilder<
 
 mutableBuilder是一个泛型函数，它返回一个MutableBuilder对象，只接受一个全局的@Builder函数作为其参数。
 
-该函数返回的[MutableBuilder](#mutablebuilder-2)对象中，builder属性方法只能在自定义组件内部使用。
+该函数返回的[MutableBuilder](#mutablebuilder-1)对象中，builder属性方法只能在自定义组件内部使用。
 
 元服务API： 从API version 22开始，该接口支持在元服务中使用。
 
@@ -38,7 +38,7 @@ mutableBuilder是一个泛型函数，它返回一个MutableBuilder对象，只�
 
 | 类型 | 说明 |
 | --- | --- |
-| [MutableBuilder](#mutablebuilder-2) MutableBuilder的实例，用于对[全局@Builder](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-builder#全局自定义构建函数)进行赋值和传递，实现全局@Builder的动态切换。 **示例：** 
+| [MutableBuilder](#mutablebuilder-1) MutableBuilder的实例，用于对[全局@Builder](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-builder#全局自定义构建函数)进行赋值和传递，实现全局@Builder的动态切换。 **示例：** 
 ```
 class TextContent {
   text: string = '';

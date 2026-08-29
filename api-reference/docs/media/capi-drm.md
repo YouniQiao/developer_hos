@@ -1,18 +1,18 @@
 ---
-title: "DRM"
+title: "Drm"
 upstream_id: "harmonyos-references/capi-drm"
 catalog: "harmonyos-references"
-content_hash: "220a5482f98f"
-synced_at: "2026-07-28T16:51:45.859034"
+content_hash: "3531efce7838"
+synced_at: "2026-08-29T18:17:33.308859"
 ---
 
-# DRM
+# Drm
 
 #### 概述
 
 提供数字版权保护能力的API。
 
-开发者可根据实际的开发需求，参考对应的开发指南及样例：
+开发者可根据开发需求，参考开发指南及样例：
 
 - [数字版权保护(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/drm-c-dev-guide)
 - [基于AVCodec播放DRM节目(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/drm-avcodec-integration)
@@ -23,7 +23,7 @@ synced_at: "2026-07-28T16:51:45.859034"
 
 | 名称 | 描述 |
 | --- | --- |
-| [native_drm_common.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-drm-common-h) | 定义DRM数据类型。 |
-| [native_drm_err.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-drm-err-h) | 定义DRM错误码。 |
+| [native_drm_common.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-drm-common-h) | 定义DRM数据类型，包括媒体密钥请求、内容保护级别、证书状态等核心数据结构，用于支持DRM（数字版权管理）功能的开发，帮助应用实现受版权保护的多媒体内容的播放和管理。 |
+| [native_drm_err.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-drm-err-h) | 定义DRM错误码，用于标识DRM模块在运行过程中可能出现的各种异常情况。开发者可基于错误码进行错误处理和问题定位，提高DRM应用的稳定性和可维护性，适用于需要处理DRM功能异常的场景。 |
 | [native_mediakeysession.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-mediakeysession-h) | 定义DRM MediaKeySession API。提供以下功能： 生成媒体密钥请求、处理媒体密钥响应、事件监听、获取内容保护级别、检查媒体密钥状态、删除媒体密钥等。 |
 | [native_mediakeysystem.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-mediakeysystem-h) | 定义DRM MediaKeySystem API。提供以下功能： 查询是否支持特定的DRM、创建媒体密钥会话、获取和设置配置、获取统计信息、获取内容保护级别、生成提供请求、处理提供响应、事件监听、管理离线媒体密钥等。 |

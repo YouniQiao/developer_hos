@@ -2,8 +2,8 @@
 title: "Interface (MediaKeySession)"
 upstream_id: "harmonyos-references/arkts-apis-drm-mediakeysession"
 catalog: "harmonyos-references"
-content_hash: "2d28d6a8050e"
-synced_at: "2026-07-09T01:00:28.273552"
+content_hash: "36209bb0574e"
+synced_at: "2026-08-29T18:17:33.224227"
 ---
 
 # Interface (MediaKeySession)
@@ -24,7 +24,7 @@ generateMediaKeyRequest(mimeType: string, initData: Uint8Array, mediaKeyType: nu
 
 生成媒体密钥请求。使用Promise异步回调。
 
-元服务API： 从API version 12开始，该接口支持在元服务中使用。
+元服务API： 从API版本12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -50,19 +50,19 @@ generateMediaKeyRequest(mimeType: string, initData: Uint8Array, mediaKeyType: nu
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | The parameter check failed. Possibly because: 1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types. 3.Parameter verification failed. |
-| 24700101 | All unknown errors |
-| 24700201 | Fatal service error, for example, service died |
+| 24700101 | All unknown errors. |
+| 24700201 | Fatal service error, for example, service died. |
 
 示例：
 
 ```
 import { drm } from '@kit.DrmKit';
 
-let mediaKeySystem: drm.MediaKeySystem = drm.createMediaKeySystem("com.wiseplay.drm");
+let mediaKeySystem: drm.MediaKeySystem = drm.createMediaKeySystem('com.wiseplay.drm');
 let mediaKeySession: drm.MediaKeySession = mediaKeySystem.createMediaKeySession();
 // pssh数据为版权保护系统描述头，封装在加密码流中，mp4文件中位于pssh box、dash码流中位于mpd及mp4的pssh box、hls+ts的码流位于m3u8及每个ts片段中，请按实际值传入。
 let uint8pssh = new Uint8Array([0x00, 0x00, 0x00, 0x00]);
-mediaKeySession.generateMediaKeyRequest("video/avc", uint8pssh, drm.MediaKeyType.MEDIA_KEY_TYPE_ONLINE).then((mediaKeyRequest: drm.MediaKeyRequest) =>{
+mediaKeySession.generateMediaKeyRequest('video/avc', uint8pssh, drm.MediaKeyType.MEDIA_KEY_TYPE_ONLINE).then((mediaKeyRequest: drm.MediaKeyRequest) =>{
   console.info('generateMediaKeyRequest' + mediaKeyRequest);
 });
 ```
@@ -73,7 +73,7 @@ processMediaKeyResponse(response: Uint8Array): Promise<Uint8Array>
 
 处理媒体密钥响应。使用Promise异步回调。
 
-元服务API： 从API version 12开始，该接口支持在元服务中使用。
+元服务API： 从API版本12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -96,8 +96,8 @@ processMediaKeyResponse(response: Uint8Array): Promise<Uint8Array>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | The parameter check failed. Possibly because: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed. |
-| 24700101 | All unknown errors |
-| 24700201 | Fatal service error, for example, service died |
+| 24700101 | All unknown errors. |
+| 24700201 | Fatal service error, for example, service died. |
 
 示例：
 
@@ -119,7 +119,7 @@ checkMediaKeyStatus(): MediaKeyStatus[]
 
 检查当前媒体密钥状态。
 
-元服务API： 从API version 12开始，该接口支持在元服务中使用。
+元服务API： 从API版本12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -135,15 +135,15 @@ checkMediaKeyStatus(): MediaKeyStatus[]
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 24700101 | All unknown errors |
-| 24700201 | Fatal service error, for example, service died |
+| 24700101 | All unknown errors. |
+| 24700201 | Fatal service error, for example, service died. |
 
 示例：
 
 ```
 import { drm } from '@kit.DrmKit';
 
-let mediaKeySystem: drm.MediaKeySystem = drm.createMediaKeySystem("com.wiseplay.drm");
+let mediaKeySystem: drm.MediaKeySystem = drm.createMediaKeySystem('com.wiseplay.drm');
 let mediaKeySession: drm.MediaKeySession = mediaKeySystem.createMediaKeySession();
 let keyStatus: drm.MediaKeyStatus[] =  mediaKeySession.checkMediaKeyStatus();
 ```
@@ -154,7 +154,7 @@ clearMediaKeys(): void
 
 清除当前媒体密钥。
 
-元服务API： 从API version 12开始，该接口支持在元服务中使用。
+元服务API： 从API版本12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -164,8 +164,8 @@ clearMediaKeys(): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 24700101 | All unknown errors |
-| 24700201 | Fatal service error, for example, service died |
+| 24700101 | All unknown errors. |
+| 24700201 | Fatal service error, for example, service died. |
 
 示例：
 
@@ -188,7 +188,7 @@ generateOfflineReleaseRequest(mediaKeyId: Uint8Array): Promise<Uint8Array>
 
 生成离线媒体密钥释放请求。使用Promise异步回调。
 
-元服务API： 从API version 12开始，该接口支持在元服务中使用。
+元服务API： 从API版本12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -211,8 +211,8 @@ generateOfflineReleaseRequest(mediaKeyId: Uint8Array): Promise<Uint8Array>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | The parameter check failed. Possibly because: 1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types. 3.Parameter verification failed. |
-| 24700101 | All unknown errors |
-| 24700201 | Fatal service error, for example, service died |
+| 24700101 | All unknown errors. |
+| 24700201 | Fatal service error, for example, service died. |
 
 示例：
 
@@ -236,7 +236,7 @@ processOfflineReleaseResponse(mediaKeyId: Uint8Array, response: Uint8Array): Pro
 
 如果设备上的DRM解决方案不支持离线媒体密钥释放，将抛出错误码24700101。
 
-元服务API： 从API version 12开始，该接口支持在元服务中使用。
+元服务API： 从API版本12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -260,8 +260,8 @@ processOfflineReleaseResponse(mediaKeyId: Uint8Array, response: Uint8Array): Pro
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | The parameter check failed. Possibly because: 1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types. 3.Parameter verification failed. |
-| 24700101 | All unknown errors |
-| 24700201 | Fatal service error, for example, service died |
+| 24700101 | All unknown errors. |
+| 24700201 | Fatal service error, for example, service died. |
 
 示例：
 
@@ -288,7 +288,7 @@ restoreOfflineMediaKeys(mediaKeyId: Uint8Array): Promise<void>
 
 恢复离线媒体密钥。使用Promise异步回调。
 
-元服务API： 从API version 12开始，该接口支持在元服务中使用。
+元服务API： 从API版本12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -311,8 +311,8 @@ restoreOfflineMediaKeys(mediaKeyId: Uint8Array): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | The parameter check failed. Possibly because: 1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types. 3.Parameter verification failed. |
-| 24700101 | All unknown errors |
-| 24700201 | Fatal service error, for example, service died |
+| 24700101 | All unknown errors. |
+| 24700201 | Fatal service error, for example, service died. |
 
 示例：
 
@@ -334,7 +334,7 @@ getContentProtectionLevel(): ContentProtectionLevel
 
 获取当前会话的内容保护级别。
 
-元服务API： 从API version 12开始，该接口支持在元服务中使用。
+元服务API： 从API版本12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -350,15 +350,15 @@ getContentProtectionLevel(): ContentProtectionLevel
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 24700101 | All unknown errors |
-| 24700201 | Fatal service error, for example, service died |
+| 24700101 | All unknown errors. |
+| 24700201 | Fatal service error, for example, service died. |
 
 示例：
 
 ```
 import { drm } from '@kit.DrmKit';
 
-let mediaKeySystem: drm.MediaKeySystem = drm.createMediaKeySystem("com.wiseplay.drm");
+let mediaKeySystem: drm.MediaKeySystem = drm.createMediaKeySystem('com.wiseplay.drm');
 let mediaKeySession: drm.MediaKeySession = mediaKeySystem.createMediaKeySession();
 let contentProtectionLevel: drm.ContentProtectionLevel = mediaKeySession.getContentProtectionLevel();
 console.info(`contentProtectionLevel: ${contentProtectionLevel}`);
@@ -370,7 +370,7 @@ requireSecureDecoderModule(mimeType: string): boolean
 
 是否需要安全解码。
 
-元服务API： 从API version 12开始，该接口支持在元服务中使用。
+元服务API： 从API版本12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -393,8 +393,8 @@ requireSecureDecoderModule(mimeType: string): boolean
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | The parameter check failed. Possibly because: 1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types. 3.Parameter verification failed. |
-| 24700101 | All unknown errors |
-| 24700201 | Fatal service error, for example, service died |
+| 24700101 | All unknown errors. |
+| 24700201 | Fatal service error, for example, service died. |
 
 示例：
 
@@ -403,7 +403,7 @@ import { drm } from '@kit.DrmKit';
 
 let mediaKeySystem: drm.MediaKeySystem = drm.createMediaKeySystem("com.wiseplay.drm");
 let mediaKeySession: drm.MediaKeySession = mediaKeySystem.createMediaKeySession();
-let status: boolean = mediaKeySession.requireSecureDecoderModule("video/avc");
+let status: boolean = mediaKeySession.requireSecureDecoderModule('video/avc');
 ```
 
 #### on('keyRequired')
@@ -412,7 +412,7 @@ on(type: 'keyRequired', callback: (eventInfo: EventInfo) => void): void
 
 监听密钥请求事件。使用callback异步回调。
 
-元服务API： 从API version 12开始，该接口支持在元服务中使用。
+元服务API： 从API版本12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -430,14 +430,14 @@ on(type: 'keyRequired', callback: (eventInfo: EventInfo) => void): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | The parameter check failed. Possibly because: 1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types. 3.Parameter verification failed. |
-| 24700101 | All unknown errors |
+| 24700101 | All unknown errors. |
 
 示例：
 
 ```
 import { drm } from '@kit.DrmKit';
 
-let mediaKeySystem: drm.MediaKeySystem = drm.createMediaKeySystem("com.wiseplay.drm");
+let mediaKeySystem: drm.MediaKeySystem = drm.createMediaKeySystem('com.wiseplay.drm');
 let mediaKeySession: drm.MediaKeySession = mediaKeySystem.createMediaKeySession();
 mediaKeySession.on('keyRequired', (eventInfo: drm.EventInfo) => {
   console.info('keyRequired ' + 'extra: ' + eventInfo.extraInfo + 'data: ' + eventInfo.info);
@@ -452,7 +452,7 @@ off(type: 'keyRequired', callback?: (eventInfo: EventInfo) => void): void
 
 该接口用于注销已在on('keyRequired')中注册的监听，当播放DRM节目需要获取媒体密钥时触发的事件。
 
-元服务API： 从API version 12开始，该接口支持在元服务中使用。
+元服务API： 从API版本12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -470,14 +470,14 @@ off(type: 'keyRequired', callback?: (eventInfo: EventInfo) => void): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | The parameter check failed. Possibly because: 1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types. 3.Parameter verification failed. |
-| 24700101 | All unknown errors |
+| 24700101 | All unknown errors. |
 
 示例：
 
 ```
 import { drm } from '@kit.DrmKit';
 
-let mediaKeySystem: drm.MediaKeySystem = drm.createMediaKeySystem("com.wiseplay.drm");
+let mediaKeySystem: drm.MediaKeySystem = drm.createMediaKeySystem('com.wiseplay.drm');
 let mediaKeySession: drm.MediaKeySession = mediaKeySystem.createMediaKeySession();
 mediaKeySession.off('keyRequired');
 ```
@@ -488,7 +488,7 @@ on(type: 'keyExpired', callback: (eventInfo: EventInfo) => void): void
 
 监听密钥过期事件。使用callback异步回调。
 
-元服务API： 从API version 12开始，该接口支持在元服务中使用。
+元服务API： 从API版本12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -506,14 +506,14 @@ on(type: 'keyExpired', callback: (eventInfo: EventInfo) => void): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | The parameter check failed. Possibly because: 1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types. 3.Parameter verification failed. |
-| 24700101 | All unknown errors |
+| 24700101 | All unknown errors. |
 
 示例：
 
 ```
 import { drm } from '@kit.DrmKit';
 
-let mediaKeySystem: drm.MediaKeySystem = drm.createMediaKeySystem("com.wiseplay.drm");
+let mediaKeySystem: drm.MediaKeySystem = drm.createMediaKeySystem('com.wiseplay.drm');
 let mediaKeySession: drm.MediaKeySession = mediaKeySystem.createMediaKeySession();
 mediaKeySession.on('keyExpired', (eventInfo: drm.EventInfo) => {
   console.info('keyExpired ' + 'extra: ' + eventInfo.extraInfo + 'data: ' + eventInfo.info);
@@ -526,7 +526,7 @@ off(type: 'keyExpired', callback?: (eventInfo: EventInfo) => void): void
 
 注销密钥过期事件监听。使用callback异步回调。
 
-元服务API： 从API version 12开始，该接口支持在元服务中使用。
+元服务API： 从API版本12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -544,14 +544,14 @@ off(type: 'keyExpired', callback?: (eventInfo: EventInfo) => void): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | The parameter check failed. Possibly because: 1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types. 3.Parameter verification failed. |
-| 24700101 | All unknown errors |
+| 24700101 | All unknown errors. |
 
 示例：
 
 ```
 import { drm } from '@kit.DrmKit';
 
-let mediaKeySystem: drm.MediaKeySystem = drm.createMediaKeySystem("com.wiseplay.drm");
+let mediaKeySystem: drm.MediaKeySystem = drm.createMediaKeySystem('com.wiseplay.drm');
 let mediaKeySession: drm.MediaKeySession = mediaKeySystem.createMediaKeySession();
 mediaKeySession.off('keyExpired');
 ```
@@ -562,7 +562,7 @@ on(type: 'vendorDefined', callback: (eventInfo: EventInfo) => void): void
 
 监听DRM解决方案自定义事件。使用callback异步回调。
 
-元服务API： 从API version 12开始，该接口支持在元服务中使用。
+元服务API： 从API版本12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -580,14 +580,14 @@ on(type: 'vendorDefined', callback: (eventInfo: EventInfo) => void): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | The parameter check failed. Possibly because: 1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types. 3.Parameter verification failed. |
-| 24700101 | All unknown errors |
+| 24700101 | All unknown errors. |
 
 示例：
 
 ```
 import { drm } from '@kit.DrmKit';
 
-let mediaKeySystem: drm.MediaKeySystem = drm.createMediaKeySystem("com.wiseplay.drm");
+let mediaKeySystem: drm.MediaKeySystem = drm.createMediaKeySystem('com.wiseplay.drm');
 let mediaKeySession: drm.MediaKeySession = mediaKeySystem.createMediaKeySession();
 mediaKeySession.on('vendorDefined', (eventInfo: drm.EventInfo) => {
   console.info('vendorDefined ' + 'extra: ' + eventInfo.extraInfo + 'data: ' + eventInfo.info);
@@ -600,7 +600,7 @@ off(type: 'vendorDefined', callback?: (eventInfo: EventInfo) => void): void
 
 注销DRM解决方案自定义事件监听。使用callback异步回调。
 
-元服务API： 从API version 12开始，该接口支持在元服务中使用。
+元服务API： 从API版本12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -618,14 +618,14 @@ off(type: 'vendorDefined', callback?: (eventInfo: EventInfo) => void): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | The parameter check failed. Possibly because: 1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types. 3.Parameter verification failed. |
-| 24700101 | All unknown errors |
+| 24700101 | All unknown errors. |
 
 示例：
 
 ```
 import { drm } from '@kit.DrmKit';
 
-let mediaKeySystem: drm.MediaKeySystem = drm.createMediaKeySystem("com.wiseplay.drm");
+let mediaKeySystem: drm.MediaKeySystem = drm.createMediaKeySystem('com.wiseplay.drm');
 let mediaKeySession: drm.MediaKeySession = mediaKeySystem.createMediaKeySession();
 mediaKeySession.off('vendorDefined');
 ```
@@ -636,7 +636,7 @@ on(type: 'expirationUpdate', callback: (eventInfo: EventInfo) => void): void
 
 监听密钥过期更新事件。使用callback异步回调。
 
-元服务API： 从API version 12开始，该接口支持在元服务中使用。
+元服务API： 从API版本12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -654,14 +654,14 @@ on(type: 'expirationUpdate', callback: (eventInfo: EventInfo) => void): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | The parameter check failed. Possibly because: 1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types. 3.Parameter verification failed. |
-| 24700101 | All unknown errors |
+| 24700101 | All unknown errors. |
 
 示例：
 
 ```
 import { drm } from '@kit.DrmKit';
 
-let mediaKeySystem: drm.MediaKeySystem = drm.createMediaKeySystem("com.wiseplay.drm");
+let mediaKeySystem: drm.MediaKeySystem = drm.createMediaKeySystem('com.wiseplay.drm');
 let mediaKeySession: drm.MediaKeySession = mediaKeySystem.createMediaKeySession();
 mediaKeySession.on('expirationUpdate', (eventInfo: drm.EventInfo) => {
   console.info('expirationUpdate ' + 'extra: ' + eventInfo.extraInfo + 'data: ' + eventInfo.info);
@@ -674,7 +674,7 @@ off(type: 'expirationUpdate', callback?: (eventInfo: EventInfo) => void): void
 
 注销过期更新事件监听。使用callback异步回调。
 
-元服务API： 从API version 12开始，该接口支持在元服务中使用。
+元服务API： 从API版本12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -692,14 +692,14 @@ off(type: 'expirationUpdate', callback?: (eventInfo: EventInfo) => void): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | The parameter check failed. Possibly because: 1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types. 3.Parameter verification failed. |
-| 24700101 | All unknown errors |
+| 24700101 | All unknown errors. |
 
 示例：
 
 ```
 import { drm } from '@kit.DrmKit';
 
-let mediaKeySystem: drm.MediaKeySystem = drm.createMediaKeySystem("com.wiseplay.drm");
+let mediaKeySystem: drm.MediaKeySystem = drm.createMediaKeySystem('com.wiseplay.drm');
 let mediaKeySession: drm.MediaKeySession = mediaKeySystem.createMediaKeySession();
 mediaKeySession.off('expirationUpdate');
 ```
@@ -710,7 +710,7 @@ on(type: 'keysChange', callback: (keyInfo: KeysInfo[], newKeyAvailable: boolean)
 
 监听密钥变化事件。使用callback异步回调。
 
-元服务API： 从API version 12开始，该接口支持在元服务中使用。
+元服务API： 从API版本12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -728,14 +728,14 @@ on(type: 'keysChange', callback: (keyInfo: KeysInfo[], newKeyAvailable: boolean)
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | The parameter check failed. Possibly because: 1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types. 3.Parameter verification failed. |
-| 24700101 | All unknown errors |
+| 24700101 | All unknown errors. |
 
 示例：
 
 ```
 import { drm } from '@kit.DrmKit';
 
-let mediaKeySystem: drm.MediaKeySystem = drm.createMediaKeySystem("com.wiseplay.drm");
+let mediaKeySystem: drm.MediaKeySystem = drm.createMediaKeySystem('com.wiseplay.drm');
 let mediaKeySession: drm.MediaKeySession = mediaKeySystem.createMediaKeySession();
 mediaKeySession.on('keysChange', (keyInfo: drm.KeysInfo[], newKeyAvailable: boolean) => {
   for (let i = 0; i < keyInfo.length; i++) {
@@ -750,7 +750,7 @@ off(type: 'keysChange', callback?: (keyInfo: KeysInfo[], newKeyAvailable: boolea
 
 注销密钥变化事件监听。使用callback异步回调。
 
-元服务API： 从API version 12开始，该接口支持在元服务中使用。
+元服务API： 从API版本12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -768,14 +768,14 @@ off(type: 'keysChange', callback?: (keyInfo: KeysInfo[], newKeyAvailable: boolea
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | The parameter check failed. Possibly because: 1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types. 3.Parameter verification failed. |
-| 24700101 | All unknown errors |
+| 24700101 | All unknown errors. |
 
 示例：
 
 ```
 import { drm } from '@kit.DrmKit';
 
-let mediaKeySystem: drm.MediaKeySystem = drm.createMediaKeySystem("com.wiseplay.drm");
+let mediaKeySystem: drm.MediaKeySystem = drm.createMediaKeySystem('com.wiseplay.drm');
 let mediaKeySession: drm.MediaKeySession = mediaKeySystem.createMediaKeySession();
 mediaKeySession.off('keysChange');
 ```
@@ -786,7 +786,7 @@ destroy(): void
 
 销毁MediaKeySession实例。
 
-元服务API： 从API version 12开始，该接口支持在元服务中使用。
+元服务API： 从API版本12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -796,15 +796,15 @@ destroy(): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 24700101 | All unknown errors |
-| 24700201 | Fatal service error, for example, service died |
+| 24700101 | All unknown errors. |
+| 24700201 | Fatal service error, for example, service died. |
 
 示例：
 
 ```
 import { drm } from '@kit.DrmKit';
 
-let mediaKeySystem: drm.MediaKeySystem = drm.createMediaKeySystem("com.wiseplay.drm");
+let mediaKeySystem: drm.MediaKeySystem = drm.createMediaKeySystem('com.wiseplay.drm');
 let mediaKeySession: drm.MediaKeySession = mediaKeySystem.createMediaKeySession();
 mediaKeySession.destroy();
 ```

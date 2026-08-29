@@ -2,8 +2,8 @@
 title: "CallerInfoQueryExtensionAbility (来去电信息查询扩展Ability)"
 upstream_id: "harmonyos-references/callservicekit-callerinfoquery-extension-ability"
 catalog: "harmonyos-references"
-content_hash: "d813e4413a7c"
-synced_at: "2026-07-09T01:01:16.044152"
+content_hash: "d8f6f00d2423"
+synced_at: "2026-08-29T18:18:13.034698"
 ---
 
 # CallerInfoQueryExtensionAbility (来去电信息查询扩展Ability)
@@ -66,7 +66,7 @@ onQueryCallerInfo(phoneNumber: string):Promise<CallerInfo>
 import { CallerInfoQueryExtensionAbility, CallerInfo } from '@kit.CallServiceKit';
 
 export default class EntryCallerInfoQueryExtAbility extends CallerInfoQueryExtensionAbility {
-  onQueryCallerInfo(phoneNumber: string): Promise<CallerInfo> {
+  async onQueryCallerInfo(phoneNumber: string): Promise<CallerInfo> {
     return new Promise<CallerInfo>((resolve, reject) => {
       let isSuccess = true;
       // 在此处实现根据号码查询企业联系人的业务逻辑

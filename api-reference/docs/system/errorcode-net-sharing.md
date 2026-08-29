@@ -1,12 +1,10 @@
 ---
-
 title: "网络共享错误码"
 upstream_id: "harmonyos-references/errorcode-net-sharing"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T00:59:31.240623"
-content_hash: "256227003645"
+content_hash: "092937ec711e"
+synced_at: "2026-08-29T18:16:48.097900"
 ---
-
 
 # 网络共享错误码
 
@@ -120,15 +118,13 @@ Bluetooth sharing failed.
 
 可能原因
 
-1.未开启蓝牙。
-
-2.没有连接网络，获取默认网络失败。
+1. 未开启蓝牙。
+2. 没有连接网络，获取默认网络失败。
 
 处理步骤
 
-1.点击蓝牙图标，开启蓝牙模式。
-
-2.检查网络的连接是否正常。
+1. 点击蓝牙图标，开启蓝牙模式。
+2. 检查网络的连接是否正常。
 
 #### 2202009 网络共享开启转发错误
 

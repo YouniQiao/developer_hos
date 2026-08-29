@@ -2,8 +2,8 @@
 title: "WaterFlow"
 upstream_id: "harmonyos-references/ts-container-waterflow"
 catalog: "harmonyos-references"
-content_hash: "36ffc1d1658b"
-synced_at: "2026-07-28T16:43:35.605516"
+content_hash: "05865ca6a872"
+synced_at: "2026-08-29T18:13:25.372730"
 ---
 
 # WaterFlow
@@ -1027,7 +1027,7 @@ struct WaterFlowDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008440.gif)
+ ![](./img/zh-cn_image_0000002731518853.gif)
 
 #### [h2]示例2（自动计算列数）
 
@@ -1098,7 +1098,7 @@ struct WaterFlowDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848518.png)
+ ![](./img/zh-cn_image_0000002701639654.png)
 
 #### [h2]示例3（使用分组）
 
@@ -1161,7 +1161,7 @@ struct WaterFlowDemo {
   oneColumnSection: SectionOptions = {
     itemsCount: 4,                     // 该分组包含4个FlowItem
     crossCount: 1,                     // 使用1列布局
-    columnsGap: '5vp',
+    columnsGap: 5,
     rowsGap: 10,
     margin: this.sectionMargin,
     // 回调函数：动态设置每个item的高度
@@ -1354,7 +1354,7 @@ struct WaterFlowDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087947.png)
+ ![](./img/zh-cn_image_0000002731358875.png)
 
 #### [h2]示例4（双指缩放改变列数）
 
@@ -1555,7 +1555,7 @@ struct WaterFlowDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928119.gif)
+ ![](./img/zh-cn_image_0000002701799570.gif)
 
 #### [h2]示例5（设置边缘渐隐效果）
 
@@ -1627,7 +1627,7 @@ struct WaterFlowDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008442.gif)
+ ![](./img/zh-cn_image_0000002731518855.gif)
 
 #### [h2]示例6（单边边缘效果）
 
@@ -1699,7 +1699,7 @@ struct WaterFlowDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848520.gif)
+ ![](./img/zh-cn_image_0000002701639656.gif)
 
 #### [h2]示例7（WaterFlow组件设置和改变尾部组件）
 
@@ -1809,7 +1809,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087949.gif)
+ ![](./img/zh-cn_image_0000002731358877.gif)
 
 #### [h2]示例8（WaterFlow组件实现下拉刷新）
 
@@ -1899,7 +1899,7 @@ struct WaterFlowDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928121.gif)
+ ![](./img/zh-cn_image_0000002701799572.gif)
 
 #### [h2]示例9（WaterFlow组件基于断点配置列数）
 
@@ -1970,15 +1970,15 @@ struct WaterFlowDemo {
 ```
  WaterFlow宽度属于sm及更小的断点区间时显示2列。
 
-![](./img/zh-cn_image_0000002656008444.png)
+![](./img/zh-cn_image_0000002731518857.png)
 
 WaterFlow宽度属于md断点区间时显示3列。
 
-![](./img/zh-cn_image_0000002655848522.png)
+![](./img/zh-cn_image_0000002701639658.png)
 
 WaterFlow宽度属于lg及更大的断点区间时显示5列。
 
-![](./img/zh-cn_image_0000002686087951.png)
+![](./img/zh-cn_image_0000002731358879.png)
 
 #### [h2]示例10（WaterFlow组件实现获取内容高度）
 
@@ -2082,7 +2082,7 @@ struct WaterFlowContentSizeDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928123.gif)
+ ![](./img/zh-cn_image_0000002701799574.gif)
 
 #### [h2]示例11（设置滚动事件）
 

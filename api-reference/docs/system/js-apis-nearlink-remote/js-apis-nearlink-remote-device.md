@@ -1,14 +1,14 @@
 ---
-title: "@ohos.nearlink.remoteDevice (对端设备的连接能力)"
+title: "@ohos.nearlink.remoteDevice (星闪远端设备连接能力)"
 upstream_id: "harmonyos-references/js-apis-nearlink-remote-device"
 catalog: "harmonyos-references"
-content_hash: "c5988ccac817"
-synced_at: "2026-08-03T17:11:06.301704"
+content_hash: "d44b25d35b1e"
+synced_at: "2026-08-29T18:16:38.458756"
 ---
 
-# @ohos.nearlink.remoteDevice (对端设备的连接能力)
+# @ohos.nearlink.remoteDevice (星闪远端设备连接能力)
 
-本模块提供了查询远端设备信息、发起配对等功能。
+本模块提供了星闪远端设备的管理能力，包括创建远端设备实例、发起配对、查询远端设备信息、订阅设备状态变化事件等。
 
 系统能力： SystemCapability.Communication.NearLink.Base
 
@@ -110,7 +110,7 @@ createRemoteDevice(address: string): RemoteDevice
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[星闪错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -137,7 +137,7 @@ try {
 
 onPairingStateChange(callback: Callback<PairingStateParam>): void
 
-订阅配对请求事件。使用callback异步回调。
+订阅配对状态变化事件。使用callback异步回调。
 
 应用需具备ohos.permission.ACCESS_NEARLINK权限，方可接收此事件上报。
 
@@ -155,7 +155,7 @@ onPairingStateChange(callback: Callback<PairingStateParam>): void
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[星闪错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -165,14 +165,14 @@ onPairingStateChange(callback: Callback<PairingStateParam>): void
 示例：
 
 ```
-import { manager } from '@kit.ConnectivityKit';
+import { remoteDevice } from '@kit.ConnectivityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
-let onPairingStateEvent:(data: manager.PairingStateParam) => void = (data: manager.PairingStateParam) => {
+let onPairingStateEvent:(data: remoteDevice.PairingStateParam) => void = (data: remoteDevice.PairingStateParam) => {
   console.info('onPairingStateChange addr: ' + data.address + 'state:' + data.state);
 };
 try {
-  manager.onPairingStateChange(onPairingStateEvent);
+  remoteDevice.onPairingStateChange(onPairingStateEvent);
 } catch (err) {
   console.error('errCode: ' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);
 }
@@ -182,7 +182,7 @@ try {
 
 offPairingStateChange(callback?: Callback<PairingStateParam>): void
 
-取消订阅配对请求事件。使用callback异步回调。
+取消订阅配对状态变化事件。使用callback异步回调。
 
 起始版本： 26.0.0
 
@@ -194,11 +194,11 @@ offPairingStateChange(callback?: Callback<PairingStateParam>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | Callback | 否 | 回调函数，返回订阅的配对状态变化结果。 填写该参数则取消当前callback订阅。不填写该参数则取消该type对应的所有回调。 |
+| callback | Callback | 否 | 回调函数，返回订阅的配对状态变化结果。 填写该参数则取消当前callback订阅。不填写该参数则取消该事件对应的所有回调。 |
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[星闪错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -208,11 +208,11 @@ offPairingStateChange(callback?: Callback<PairingStateParam>): void
 示例：
 
 ```
-import { manager } from '@kit.ConnectivityKit';
+import { remoteDevice } from '@kit.ConnectivityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
-  manager.offPairingStateChange();
+  remoteDevice.offPairingStateChange();
 } catch (err) {
   console.error('errCode: ' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);
 }
@@ -222,7 +222,7 @@ try {
 
 onConnectionStateChange(callback: Callback<ConnectionStateParam>): void
 
-订阅连接状态变化事件。使用callback异步回调。
+订阅连接状态变化事件。使用callback异步回调。与[remoteDevice.onAcbStateChange](#remotedeviceonacbstatechange)监听逻辑链路层级连接状态不同，本接口监听设备层级的连接状态变化。
 
 应用需具备ohos.permission.ACCESS_NEARLINK权限，方可接收此事件上报。
 
@@ -240,7 +240,7 @@ onConnectionStateChange(callback: Callback<ConnectionStateParam>): void
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[星闪错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -250,14 +250,14 @@ onConnectionStateChange(callback: Callback<ConnectionStateParam>): void
 示例：
 
 ```
-import { manager } from '@kit.ConnectivityKit';
+import { remoteDevice } from '@kit.ConnectivityKit';
 import { BusinessError, Callback } from '@kit.BasicServicesKit';
 
-let callback: Callback<manager.ConnectionStateParam> = (data: manager.ConnectionStateParam) => {
+let callback: Callback<remoteDevice.ConnectionStateParam> = (data: remoteDevice.ConnectionStateParam) => {
   console.info('data:' + JSON.stringify(data));
 };
 try {
-  manager.onConnectionStateChange(callback);
+  remoteDevice.onConnectionStateChange(callback);
 } catch (err) {
   console.error('errCode: ' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);
 }
@@ -279,11 +279,11 @@ offConnectionStateChange(callback?: Callback<ConnectionStateParam>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | Callback | 否 | 回调函数，返回订阅的连接状态变化事件上报结果。 填写该参数则取消当前callback订阅。不填写该参数则取消该type对应的所有回调。 |
+| callback | Callback | 否 | 回调函数，返回订阅的连接状态变化事件上报结果。 填写该参数则取消当前callback订阅。不填写该参数则取消该事件对应的所有回调。 |
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[星闪错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -293,11 +293,11 @@ offConnectionStateChange(callback?: Callback<ConnectionStateParam>): void
 示例：
 
 ```
-import { manager } from '@kit.ConnectivityKit';
+import { remoteDevice } from '@kit.ConnectivityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
-  manager.offConnectionStateChange();
+  remoteDevice.offConnectionStateChange();
 } catch (err) {
   console.error('errCode: ' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);
 }
@@ -307,7 +307,7 @@ try {
 
 onAcbStateChange(callback: Callback<AcbStateParam>): void
 
-订阅逻辑链路连接状态变化事件。使用callback异步回调。
+订阅逻辑链路连接状态变化事件。使用callback异步回调。适用于需要在逻辑链路建立或断开时触发相应处理的场景，如数据传输前的链路就绪检查或断连后的资源清理。与[remoteDevice.onConnectionStateChange](#remotedeviceonconnectionstatechange)监听设备层级连接状态不同，本接口监听逻辑链路层级的连接状态。
 
 应用需具备ohos.permission.ACCESS_NEARLINK权限，方可接收此事件上报。
 
@@ -325,7 +325,7 @@ onAcbStateChange(callback: Callback<AcbStateParam>): void
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[星闪错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -335,14 +335,14 @@ onAcbStateChange(callback: Callback<AcbStateParam>): void
 示例：
 
 ```
-import { manager } from '@kit.ConnectivityKit';
+import { remoteDevice } from '@kit.ConnectivityKit';
 import { BusinessError, Callback } from '@kit.BasicServicesKit';
 
-let callback: Callback<manager.AcbStateParam> = (data: manager.AcbStateParam) => {
+let callback: Callback<remoteDevice.AcbStateParam> = (data: remoteDevice.AcbStateParam) => {
   console.info('data:' + JSON.stringify(data));
 };
 try {
-  manager.onAcbStateChange(callback);
+  remoteDevice.onAcbStateChange(callback);
 } catch (err) {
   console.error('errCode: ' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);
 }
@@ -364,11 +364,11 @@ offAcbStateChange(callback?: Callback<AcbStateParam>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | Callback | 否 | 回调函数，返回订阅的逻辑链路连接状态变化事件上报结果。 填写该参数则取消当前callback订阅。不填写该参数则取消该type对应的所有回调。 |
+| callback | Callback | 否 | 回调函数，返回订阅的逻辑链路连接状态变化事件上报结果。 填写该参数则取消当前callback订阅。不填写该参数则取消该事件对应的所有回调。 |
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[星闪错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -378,11 +378,11 @@ offAcbStateChange(callback?: Callback<AcbStateParam>): void
 示例：
 
 ```
-import { manager } from '@kit.ConnectivityKit';
+import { remoteDevice } from '@kit.ConnectivityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
-  manager.offAcbStateChange();
+  remoteDevice.offAcbStateChange();
 } catch (err) {
   console.error('errCode: ' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);
 }
@@ -404,7 +404,7 @@ try {
 
 startPairing(): Promise<void>
 
-发起与远端设备的配对。使用Promise异步回调。发起配对后，将依据本端与远端设备的输入输出能力标识弹出不同类型的弹窗，需使用者进一步确认。
+发起与远端设备的配对。使用Promise异步回调。发起配对后，将依据本端与远端设备的输入输出能力标识（即设备是否具备显示、键盘输入等能力）弹出不同类型的弹窗，需使用者进一步确认。
 
 起始版本： 26.0.0
 
@@ -422,7 +422,7 @@ startPairing(): Promise<void>
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[星闪错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -440,9 +440,9 @@ let addr: string = '00:11:22:33:AA:FF'; // 扫描获取到的远端设备地址
 let device: remoteDevice.RemoteDevice;
 try {
   device = remoteDevice.createRemoteDevice(addr);
-  device.startPairing().then(()=>{
+  device.startPairing().then(() => {
     console.info('start pairing success');
-  }).catch ((err: BusinessError) => {
+  }).catch((err: BusinessError) => {
     console.error('errCode: ' + err.code + ', errMessage: ' + err.message);
   });
 } catch (err) {
@@ -472,7 +472,7 @@ getPairingState(): PairingState
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[星闪错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -515,11 +515,11 @@ getDeviceName(): string
 
 | 类型 | 说明 |
 | --- | --- |
-| string | 远端设备名称。最大长度为30。 |
+| string | 远端设备名称。最大长度为30个字符。 |
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[星闪错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -566,7 +566,7 @@ getDeviceClass(): DeviceClass
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[星闪错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -595,7 +595,7 @@ try {
 
 getConnectionState(): ConnectionState
 
-获取本端设备和远端设备的连接状态。
+获取本端设备和远端设备的连接状态。与[getAcbState](#getacbstate)获取逻辑链路（ACB）层级连接状态不同，本接口获取设备层级的连接状态。
 
 起始版本： 26.0.0
 
@@ -613,7 +613,7 @@ getConnectionState(): ConnectionState
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[星闪错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -642,7 +642,7 @@ try {
 
 getAcbState(): AcbState
 
-获取和远端设备的逻辑链路连接状态。
+获取和远端设备的逻辑链路连接状态。适用于需要确认逻辑链路是否就绪的场景，如在进行数据传输或消息通信前检查逻辑链路状态。与[getConnectionState](#getconnectionstate)获取设备层级连接状态不同，本接口获取逻辑链路（ACB）层级的连接状态。
 
 起始版本： 26.0.0
 
@@ -660,7 +660,7 @@ getAcbState(): AcbState
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[星闪错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -707,7 +707,7 @@ getDeviceInformation(): DeviceInformation
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[星闪错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -746,8 +746,8 @@ try {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| manufacturerData | string | 否 | 否 | 厂商信息。 |
-| modelData | string | 否 | 否 | 设备型号信息。 |
+| manufacturerData | string | 否 | 否 | 厂商信息。数据为二进制编码格式，可通过buffer.from(manufacturerData, 'binary')等方式解析。 |
+| modelData | string | 否 | 否 | 设备型号信息。数据为二进制编码格式，可通过buffer.from(modelData, 'binary')等方式解析。 |
 
 #### [h2]ConnectionStateParam
 
@@ -765,7 +765,7 @@ try {
 | preState | [ConnectionState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-nearlink-constant#connectionstate) | 否 | 否 | 本次上报之前的连接状态。 |
 | state | [ConnectionState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-nearlink-constant#connectionstate) | 否 | 否 | 当前连接状态。 |
 | connectionReason | [ConnectionReason](#connectionreason) | 否 | 否 | 原因值。 |
-| reasonMsg | string | 否 | 是 | 原因详情。该字段仅用于日志信息，不应用于逻辑处理。 |
+| reasonMsg | string | 否 | 是 | 原因详情。该字段仅用于日志信息，不应用于逻辑处理。无原因详情时，该字段默认为空字符串。 |
 
 #### [h2]ConnectionReason
 
@@ -781,7 +781,7 @@ try {
 | --- | --- | --- |
 | CONNECTION_SUCCESS | 0 | 表示连接成功。 |
 | CONNECTION_FAILURE | 1 | 表示连接失败。 |
-| CONNECTION_LOCAL_DISCONNECT | 2 | 表示本地设备主动断连。 |
+| CONNECTION_LOCAL_DISCONNECT | 2 | 表示本端设备主动断连。 |
 | CONNECTION_REMOTE_DISCONNECT | 3 | 表示远端设备主动断连。 |
 | CONNECTION_FAIL_ACB_CONNECTION | 4 | 表示ACB连接失败（可能因为远端设备关闭、设备距离过远）。 |
 | CONNECTION_FAIL_SERVICE_DISCOVERY | 5 | 表示服务发现失败（可能服务发现超时）。 |
@@ -804,7 +804,7 @@ try {
 | preState | [PairingState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-nearlink-constant#pairingstate) | 否 | 否 | 本次上报之前的配对状态。 |
 | state | [PairingState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-nearlink-constant#pairingstate) | 否 | 否 | 当前配对状态。 |
 | reason | [PairingReason](#pairingreason) | 否 | 否 | 原因值。 |
-| reasonMsg | string | 否 | 是 | 原因详情。该字段仅用于日志信息，不应用于逻辑处理。 |
+| reasonMsg | string | 否 | 是 | 原因详情。该字段仅用于日志信息，不应用于逻辑处理。无原因详情时，该字段默认为空字符串。 |
 
 #### [h2]PairingRequestParam
 
@@ -819,7 +819,7 @@ try {
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | address | string | 否 | 否 | 设备地址，表示收到该设备的配对请求上报。地址格式参考：11:22:33:AA:BB:FF。 |
-| passkey | string | 否 | 否 | 表示配对交互的配对码，显示给用户确认。长度固定为6，字符串内容为数字。 |
+| passkey | string | 否 | 否 | 表示配对交互的配对码，显示给用户确认。长度固定为6，字符串内容为数字。仅在pairingType为PAIRING_TYPE_PASSCODE或PAIRING_TYPE_NUMBER_COMPARE时该字段生效。 |
 | pairingType | [PairingType](#pairingtype) | 否 | 否 | 表示配对类型。 |
 
 #### [h2]PairingReason
@@ -838,7 +838,7 @@ try {
 | PAIRING_REASON_FAILURE | 1 | 表示配对失败。 |
 | PAIRING_REASON_ACB_CONNECTION_FAIL | 2 | 表示ACB连接失败，可能远端设备已断电或超出范围。 |
 | PAIRING_REASON_EXCEED_ACB_MAX | 3 | 表示连接设备数已达上限导致配对失败。 |
-| PAIRING_REASON_REMOTE_CANCELED | 4 | 表示对端设备取消配对导致配对失败。 |
+| PAIRING_REASON_REMOTE_CANCELED | 4 | 表示远端设备取消配对导致配对失败。 |
 | PAIRING_REASON_LOCAL_CANCELED | 5 | 表示本端设备取消配对导致配对失败。 |
 | PAIRING_REASON_AUTH_FAIL | 6 | 表示身份验证失败。 |
 

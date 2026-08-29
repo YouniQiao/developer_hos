@@ -2,8 +2,8 @@
 title: "@ohos.data.unifiedDataChannel (标准化数据通路)"
 upstream_id: "harmonyos-references/js-apis-data-unifieddatachannel"
 catalog: "harmonyos-references"
-content_hash: "471b021f00f8"
-synced_at: "2026-07-28T16:40:50.024420"
+content_hash: "77ddb2189962"
+synced_at: "2026-08-29T18:12:13.625995"
 ---
 
 # @ohos.data.unifiedDataChannel (标准化数据通路)
@@ -1013,7 +1013,7 @@ File类型数据，是[UnifiedRecord](#unifiedrecord)的子类，也是文件类
 
 ```
 import { unifiedDataChannel } from '@kit.ArkData';
-import { fileUri } from '@kit.CoreFileKit'
+import { fileUri } from '@kit.CoreFileKit';
 import { UIAbility } from '@kit.AbilityKit';
 import { window } from '@kit.ArkUI';
 
@@ -1052,7 +1052,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 import { unifiedDataChannel } from '@kit.ArkData';
-import { fileUri } from '@kit.CoreFileKit'
+import { fileUri } from '@kit.CoreFileKit';
 import { UIAbility } from '@kit.AbilityKit';
 import { window } from '@kit.ArkUI';
 
@@ -1083,7 +1083,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 import { unifiedDataChannel } from '@kit.ArkData';
-import { fileUri } from '@kit.CoreFileKit'
+import { fileUri } from '@kit.CoreFileKit';
 import { UIAbility } from '@kit.AbilityKit';
 import { window } from '@kit.ArkUI';
 
@@ -1114,7 +1114,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 import { unifiedDataChannel } from '@kit.ArkData';
-import { fileUri } from '@kit.CoreFileKit'
+import { fileUri } from '@kit.CoreFileKit';
 import { UIAbility } from '@kit.AbilityKit';
 import { window } from '@kit.ArkUI';
 
@@ -1145,7 +1145,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 import { unifiedDataChannel } from '@kit.ArkData';
-import { fileUri } from '@kit.CoreFileKit'
+import { fileUri } from '@kit.CoreFileKit';
 import { UIAbility } from '@kit.AbilityKit';
 import { window } from '@kit.ArkUI';
 
@@ -1508,9 +1508,9 @@ type DataLoadHandler = (acceptableInfo?: DataLoadInfo) => UnifiedData | null
 
 type DelayedDataLoadHandler = (acceptableInfo?: DataLoadInfo) => Promise<UnifiedData | null>
 
-用于延迟加载数据的处理函数。支持数据发送方根据接收方传入的信息，动态生成数据，实现更灵活、精准的数据交互策略。
+用于延迟加载数据的处理函数。支持数据发送方根据接收方传入的信息，动态生成数据，实现更灵活、精准的数据交互策略。使用Promise异步回调。
 
-该处理函数为异步函数，返回Promise对象，不阻塞主线程，可处理复杂业务逻辑、执行长耗时任务。
+该处理函数为异步函数，不阻塞主线程，可处理复杂业务逻辑、执行长耗时任务。
 
 元服务API： 从API version 22开始，该接口支持在元服务中使用。
 

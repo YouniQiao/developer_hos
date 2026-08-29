@@ -2,8 +2,8 @@
 title: "spatialRender"
 upstream_id: "harmonyos-references/spatial-recon-spatialrender"
 catalog: "harmonyos-references"
-content_hash: "d5d3688ca4f6"
-synced_at: "2026-07-28T16:52:25.969453"
+content_hash: "ec286ae1c6db"
+synced_at: "2026-08-29T18:18:05.768746"
 ---
 
 # spatialRender
@@ -20,7 +20,9 @@ import { spatialRender } from '@kit.SpatialReconKit';
 
 #### GSNode
 
-表示一个[3DGS（3D Gaussian Splatting）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/spatial-recon-glossary#section3dgs)渲染对象，帮助开发者操作3DGS模型。GSNode类继承自[Node](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-nodes#node)，使用方法请参考Node。
+表示一个3DGS（3D Gaussian Splatting）渲染对象，帮助开发者操作3DGS模型。GSNode类继承自[Node](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-nodes#node)，使用方法请参考Node。
+
+模型约束： 此模块的接口仅可在Stage模型下使用。
 
 系统能力：SystemCapability.Graphics.SpatialRender
 
@@ -65,9 +67,9 @@ setCamera(camera: Camera): void
 
 设置驱动分块选择的相机。
 
-系统能力：SystemCapability.Graphics.SpatialRender
-
 模型约束： 此模块的接口仅可在Stage模型下使用。
+
+系统能力：SystemCapability.Graphics.SpatialRender
 
 起始版本： 26.0.0
 
@@ -289,6 +291,8 @@ if (renderContext != null) {
 
 GSPlugin类封装了与3DGS相关的内容，包括3DGS插件ID和3DGS模型加载接口，帮助开发者实现对3DGS的自定义功能。
 
+模型约束： 此模块的接口仅可在Stage模型下使用。
+
 系统能力：SystemCapability.Graphics.SpatialRender
 
 起始版本： 6.0.1(21)
@@ -311,17 +315,19 @@ if (renderContext != null) {
 
 #### [h2]常量
 
+模型约束： 此模块的接口仅可在Stage模型下使用。
+
 系统能力：SystemCapability.Graphics.SpatialRender
 
 起始版本： 6.0.1(21)
 
-| 名称 | 类型 | 值 | 说明 |
-| --- | --- | --- | --- |
-| PLUGIN_ID | string | 1450021d-c57f-d9ff-7770-c24fb3f3321c | 表示3DGS插件ID。使用前需调用renderContext.loadPlugin(GSPlugin.PLUGIN_ID)加载插件。 |
-| RETRO_EFFECT_ID | string | a30c8a84-fbdc-4dbc-9511-5918f2ccbe49 | 表示复古效果ID。需先加载PLUGIN_ID，然后作为EffectParameters.effectId传入createEffect()创建效果实例。 |
-| COMIC_EFFECT_ID | string | f298d3c7-6215-4e7b-9c34-bd87a8d4a276 | 表示漫画效果ID。需先加载PLUGIN_ID，然后作为EffectParameters.effectId传入createEffect()创建效果实例。 |
-| OBRA_DINN_EFFECT_ID | string | 7a9c3b62-1f45-4e89-b6d7-3cd2a2e1a568 | 表示黑白bit效果ID。需先加载PLUGIN_ID，然后作为EffectParameters.effectId传入createEffect()创建效果实例。 |
-| COLOR_EDITING_EFFECT_ID | string | e026c2b8-b4ee-4c07-ab19-d77b181105e0 | 表示颜色编辑效果ID。需先加载PLUGIN_ID，然后作为EffectParameters.effectId传入createEffect()创建效果实例。 |
+| 名称 | 类型 | 说明 |
+| --- | --- | --- |
+| PLUGIN_ID | string | 表示3DGS插件ID。使用前需调用[renderContext.loadPlugin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene#loadplugin20)(GSPlugin.PLUGIN_ID)加载插件。 |
+| RETRO_EFFECT_ID | string | 表示复古效果ID。需先加载PLUGIN_ID，然后作为[EffectParameters](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene#effectparameters21).effectId传入[createEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene#createeffect21)创建效果实例。 |
+| COMIC_EFFECT_ID | string | 表示漫画效果ID。需先加载PLUGIN_ID，然后作为EffectParameters.effectId传入createEffect创建效果实例。 |
+| OBRA_DINN_EFFECT_ID | string | 表示黑白bit效果ID。需先加载PLUGIN_ID，然后作为EffectParameters.effectId传入createEffect创建效果实例。 |
+| COLOR_EDITING_EFFECT_ID | string | 表示颜色编辑效果ID。需先加载PLUGIN_ID，然后作为EffectParameters.effectId传入createEffect创建效果实例。 |
 
 开发者不需要感知各ID的具体值，推荐直接使用字符串变量。
 
@@ -330,6 +336,8 @@ if (renderContext != null) {
 static loadGSNode(scene: Scene, params: GSImportSettings, parent?: Node): Promise<GSNode>
 
 加载3DGS模型，使用Promise异步回调。
+
+模型约束： 此模块的接口仅可在Stage模型下使用。
 
 系统能力：SystemCapability.Graphics.SpatialRender
 
@@ -379,9 +387,9 @@ static loadTiledGSNode(scene: Scene, params: TiledGSImportSettings, parent?: Nod
 
 加载分块3DGS模型，使用Promise异步回调。
 
-系统能力：SystemCapability.Graphics.SpatialRender
-
 模型约束： 此模块的接口仅可在Stage模型下使用。
+
+系统能力：SystemCapability.Graphics.SpatialRender
 
 起始版本： 26.0.0
 
@@ -425,6 +433,8 @@ if (renderContext != null) {
 
 GSImportSettings类封装了加载3DGS模型的设置，包括模型路径和数据在文件中的偏移量。
 
+模型约束： 此模块的接口仅可在Stage模型下使用。
+
 系统能力：SystemCapability.Graphics.SpatialRender
 
 起始版本： 6.0.1(21)
@@ -464,9 +474,9 @@ if (renderContext != null) {
 
 TiledGSImportSettings类封装了加载分块3DGS模型的设置，包含清单文件路径。
 
-系统能力：SystemCapability.Graphics.SpatialRender
-
 模型约束： 此模块的接口仅可在Stage模型下使用。
+
+系统能力：SystemCapability.Graphics.SpatialRender
 
 起始版本： 26.0.0
 
@@ -501,6 +511,8 @@ if (renderContext != null) {
 #### RetroEffectParams
 
 RetroEffect参数，该类型为字符串枚举，该枚举值可在[Effect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-resources#effect21)的[getPropertyValue](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-resources#getpropertyvalue23)和[setPropertyValue](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-resources#setpropertyvalue23)方法中使用，用于声明属性的名称，以获取属性的当前值或更新属性的值。
+
+模型约束： 此模块的接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.Graphics.SpatialRender
 
@@ -548,6 +560,8 @@ if (renderContext != null) {
 
 RetroEffect接口封装了复古风格的效果参数，可实现自定义的复古风格。该类继承自[Effect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-resources#effect21)。
 
+模型约束： 此模块的接口仅可在Stage模型下使用。
+
 系统能力：SystemCapability.Graphics.SpatialRender
 
 起始版本： 6.0.1(21)
@@ -589,6 +603,8 @@ if (renderContext != null) {
 #### ComicEffectParams
 
 ComicEffect参数，该类型为字符串枚举，该枚举值可在[Effect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-resources#effect21)的[getPropertyValue](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-resources#getpropertyvalue23)和[setPropertyValue](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-resources#setpropertyvalue23)方法中使用，用于声明属性的名称，以获取属性的当前值或更新属性的值。
+
+模型约束： 此模块的接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.Graphics.SpatialRender
 
@@ -634,6 +650,8 @@ if (renderContext != null) {
 
 ComicEffect接口封装了漫画风格的效果的参数，可实现自定义的漫画风格。该类继承自[Effect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-resources#effect21)。
 
+模型约束： 此模块的接口仅可在Stage模型下使用。
+
 系统能力：SystemCapability.Graphics.SpatialRender
 
 起始版本： 6.0.1(21)
@@ -673,6 +691,8 @@ if (renderContext != null) {
 #### ObraDinnEffectParams
 
 ObraDinnEffect参数，该类型为字符串枚举，该枚举值可在[Effect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-resources#effect21)的[getPropertyValue](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-resources#getpropertyvalue23)和[setPropertyValue](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-resources#setpropertyvalue23)方法中使用，用于声明属性的名称，以获取属性的当前值或更新属性的值。
+
+模型约束： 此模块的接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.Graphics.SpatialRender
 
@@ -720,6 +740,8 @@ if (renderContext != null) {
 
 ObraDinnEffect接口封装了bit（黑白点阵）风格的效果参数，可实现自定义的bit风格。该类继承自[Effect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-resources#effect21)。
 
+模型约束： 此模块的接口仅可在Stage模型下使用。
+
 系统能力：SystemCapability.Graphics.SpatialRender
 
 起始版本： 6.0.1(21)
@@ -761,6 +783,8 @@ if (renderContext != null) {
 #### ColorEditingEffectParams
 
 ColorEditingEffect参数，该类型为字符串枚举，该枚举值可在[Effect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-resources#effect21)的[getPropertyValue](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-resources#getpropertyvalue23)和[setPropertyValue](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-resources#setpropertyvalue23)方法中使用，用于声明属性的名称，以获取属性的当前值或更新属性的值。
+
+模型约束： 此模块的接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.Graphics.SpatialRender
 
@@ -809,6 +833,8 @@ if (renderContext != null) {
 #### ColorEditingEffect
 
 ColorEditingEffect接口封装了颜色编辑风格的参数，可帮助开发者实现自定义的图像风格。该类继承自[Effect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-resources#effect21)。
+
+模型约束： 此模块的接口仅可在Stage模型下使用。
 
 系统能力：SystemCapability.Graphics.SpatialRender
 

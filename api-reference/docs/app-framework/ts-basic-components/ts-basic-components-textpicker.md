@@ -2,8 +2,8 @@
 title: "TextPicker"
 upstream_id: "harmonyos-references/ts-basic-components-textpicker"
 catalog: "harmonyos-references"
-content_hash: "01f41ccb531a"
-synced_at: "2026-07-28T16:44:27.318842"
+content_hash: "c925ef1dc969"
+synced_at: "2026-08-29T18:13:45.753230"
 ---
 
 # TextPicker
@@ -625,7 +625,7 @@ onScrollStop(callback: TextPickerScrollStopCallback)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | [TextPickerScrollStopCallback](#textpickerscrollstopcallback14) | 是 | 文本选择器的选项列滑动停止时触发该事件。 |
+| callback | [TextPickerScrollStopCallback](#textpickerscrollstopcallback14) | 是 | 文本选择器的选项列滑动停止时触发该事件。回调签名：(value: string | string[], index: number | number[]) => void，其中value为当前选中项的文本，index为当前选中项的索引值（从0开始）。 |
 
 #### [h2]onScrollStop18+
 
@@ -675,7 +675,7 @@ onEnterSelectedArea(callback: TextPickerEnterSelectedAreaCallback)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | [TextPickerEnterSelectedAreaCallback](#textpickerenterselectedareacallback18) | 是 | 滑动TextPicker过程中，选项进入分割线区域时触发的回调。 |
+| callback | [TextPickerEnterSelectedAreaCallback](#textpickerenterselectedareacallback18) | 是 | 滑动TextPicker过程中，选项进入分割线区域时触发的回调。回调签名：(value: string | string[], index: number | number[]) => void，其中value为当前选中项的文本，index为当前选中项的索引值（从0开始）。 |
 
 #### [h2]onAccept(deprecated)
 
@@ -889,7 +889,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928189.png)
+ ![](./img/zh-cn_image_0000002731518925.png)
 
 #### [h2]示例2（设置文本样式）
 
@@ -926,7 +926,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008512.gif)
+ ![](./img/zh-cn_image_0000002701639726.gif)
 
 #### [h2]示例3（设置无分割线样式）
 
@@ -957,7 +957,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848592.gif)
+ ![](./img/zh-cn_image_0000002731358947.gif)
 
 #### [h2]示例4（设置分割线样式）
 
@@ -993,7 +993,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088019.gif)
+ ![](./img/zh-cn_image_0000002701799642.gif)
 
 #### [h2]示例5（设置渐隐效果）
 
@@ -1024,7 +1024,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928191.gif)
+ ![](./img/zh-cn_image_0000002731518927.gif)
 
 #### [h2]示例6（设置选择项高度）
 
@@ -1052,7 +1052,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008514.png)
+ ![](./img/zh-cn_image_0000002701639728.png)
 
 #### [h2]示例7（设置循环滚动）
 
@@ -1091,7 +1091,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848594.gif)
+ ![](./img/zh-cn_image_0000002731358949.gif)
 
 #### [h2]示例8（设置选中项索引值）
 
@@ -1118,7 +1118,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088021.png)
+ ![](./img/zh-cn_image_0000002701799644.png)
 
 #### [h2]示例9（设置关闭文本样式变化动效与对应文本样式）
 
@@ -1154,7 +1154,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928193.jpeg)
+ ![](./img/zh-cn_image_0000002731518929.jpeg)
 
 #### [h2]示例10（设置选中项背景样式）
 
@@ -1215,7 +1215,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008516.gif)
+ ![](./img/zh-cn_image_0000002701639730.gif)
 
 #### [h2]示例11（设置文本的最大字号、最小字号、超长文本截断方式）
 
@@ -1262,4 +1262,4 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848596.gif)
+ ![](./img/zh-cn_image_0000002731358951.gif)

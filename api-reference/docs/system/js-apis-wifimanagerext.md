@@ -2,13 +2,13 @@
 title: "@ohos.wifiManagerExt (WLAN扩展接口)"
 upstream_id: "harmonyos-references/js-apis-wifimanagerext"
 catalog: "harmonyos-references"
-content_hash: "4227486b398e"
-synced_at: "2026-07-09T00:59:24.080502"
+content_hash: "89462547d110"
+synced_at: "2026-08-29T18:16:37.667136"
 ---
 
 # @ohos.wifiManagerExt (WLAN扩展接口)
 
-该模块主要提供WLAN扩展接口，供非通用类型产品使用。
+该模块主要提供Wi-Fi扩展接口，供非通用类型产品使用。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 9开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -24,7 +24,7 @@ import { wifiManagerExt } from '@kit.ConnectivityKit';
 
 enableHotspot(): void
 
-使能WLAN热点。
+启用Wi-Fi热点。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 10开始废弃。
 
@@ -34,7 +34,7 @@ enableHotspot(): void
 
 错误码：
 
-以下错误码的详细介绍请参见[WIFI错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-wifi)。
+以下错误码的详细介绍请参见[Wi-Fi错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-wifi)。
 
 | **错误码ID** | **错误信息** |
 | --- | --- |
@@ -49,7 +49,7 @@ enableHotspot(): void
 
   try {
       wifiManagerExt.enableHotspot();
-  }catch(error){
+  } catch (error) {
       console.error("failed: " + JSON.stringify(error));
   }
 ```
@@ -58,7 +58,7 @@ enableHotspot(): void
 
 disableHotspot(): void
 
-去使能WLAN热点。
+禁用Wi-Fi热点。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 10开始废弃。
 
@@ -68,7 +68,7 @@ disableHotspot(): void
 
 错误码：
 
-以下错误码的详细介绍请参见[WIFI错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-wifi)。
+以下错误码的详细介绍请参见[Wi-Fi错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-wifi)。
 
 | **错误码ID** | **错误信息** |
 | --- | --- |
@@ -106,7 +106,7 @@ getSupportedPowerMode(): Promise<Array<PowerMode>>
 
 错误码：
 
-以下错误码的详细介绍请参见[WIFI错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-wifi)。
+以下错误码的详细介绍请参见[Wi-Fi错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-wifi)。
 
 | **错误码ID** | **错误信息** |
 | --- | --- |
@@ -140,11 +140,11 @@ getSupportedPowerMode(callback: AsyncCallback<Array<PowerMode>>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback> | 是 | 回调函数。当操作成功时，err为0，data表示支持的功率模式。如果err为非0，表示处理出现错误。 |
+| callback | AsyncCallback> | 是 | 回调函数。当操作成功时，err为0，data表示支持的功率模式。如果err为非0，表示获取支持的功率模式操作出现错误。 |
 
 错误码：
 
-以下错误码的详细介绍请参见[WIFI错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-wifi)。
+以下错误码的详细介绍请参见[Wi-Fi错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-wifi)。
 
 | **错误码ID** | **错误信息** |
 | --- | --- |
@@ -184,7 +184,7 @@ getPowerMode(): Promise<PowerMode>
 
 错误码：
 
-以下错误码的详细介绍请参见[WIFI错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-wifi)。
+以下错误码的详细介绍请参见[Wi-Fi错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-wifi)。
 
 | **错误码ID** | **错误信息** |
 | --- | --- |
@@ -224,11 +224,11 @@ getPowerMode(callback: AsyncCallback<PowerMode>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback | 是 | 回调函数。当操作成功时，err为0，data表示功率模式。如果err为非0，表示处理出现错误。 |
+| callback | AsyncCallback | 是 | 回调函数。当操作成功时，err为0，data表示功率模式。如果err为非0，表示获取功率模式操作出现错误。 |
 
 错误码：
 
-以下错误码的详细介绍请参见[WIFI错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-wifi)。
+以下错误码的详细介绍请参见[Wi-Fi错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-wifi)。
 
 | **错误码ID** | **错误信息** |
 | --- | --- |
@@ -276,7 +276,7 @@ setPowerMode(mode: PowerMode) : void
 
 错误码：
 
-以下错误码的详细介绍请参见[WIFI错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-wifi)。
+以下错误码的详细介绍请参见[Wi-Fi错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-wifi)。
 
 | **错误码ID** | **错误信息** |
 | --- | --- |

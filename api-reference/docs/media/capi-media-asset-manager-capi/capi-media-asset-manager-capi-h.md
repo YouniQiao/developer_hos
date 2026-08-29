@@ -2,8 +2,8 @@
 title: "media_asset_manager_capi.h"
 upstream_id: "harmonyos-references/capi-media-asset-manager-capi-h"
 catalog: "harmonyos-references"
-content_hash: "dd4739d47322"
-synced_at: "2026-07-09T01:00:48.745172"
+content_hash: "2f7a3c8d9237"
+synced_at: "2026-08-29T18:17:47.598493"
 ---
 
 # media_asset_manager_capi.h
@@ -54,7 +54,7 @@ OH_MediaAssetManager* OH_MediaAssetManager_Create(void)
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_MediaAssetManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-oh-mediaassetmanager)* | 返回一个指向OH_MediaAssetManager实例的指针。 |
+| [OH_MediaAssetManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-oh-mediaassetmanager)* | 返回一个指向OH_MediaAssetManager实例的指针，用于请求和管理媒体库资源。 |
 
 #### [h2]OH_MediaAssetManager_RequestImageForPath()
 
@@ -75,7 +75,7 @@ MediaLibrary_RequestId OH_MediaAssetManager_RequestImageForPath(OH_MediaAssetMan
 | --- | --- |
 | [OH_MediaAssetManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-oh-mediaassetmanager)* manager | 指向OH_MediaAssetManager实例的指针。 |
 | const char* uri | 请求的图像资源的uri。 |
-| [MediaLibrary_RequestOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-medialibrary-requestoptions) requestOptions | 请求策略模式配置项。 |
+| [MediaLibrary_RequestOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-medialibrary-requestoptions) requestOptions | 请求策略模式配置项。用于指定资源请求的具体策略，如缓存策略、网络加载策略等。 |
 | const char* destPath | 请求资源的目标地址。 |
 | [OH_MediaLibrary_OnDataPrepared](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-media-asset-base-capi-h#oh_medialibrary_ondataprepared) callback | 媒体资源处理器，当所请求的媒体资源准备完成时会触发回调。 |
 
@@ -83,7 +83,7 @@ MediaLibrary_RequestId OH_MediaAssetManager_RequestImageForPath(OH_MediaAssetMan
 
 | 类型 | 说明 |
 | --- | --- |
-| [MediaLibrary_RequestId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-medialibrary-requestid) | 返回请求Id。 |
+| [MediaLibrary_RequestId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-medialibrary-requestid) | 返回请求ID，用于标识该图像资源请求，可用于后续取消请求操作。 |
 
 #### [h2]OH_MediaAssetManager_RequestVideoForPath()
 
@@ -104,7 +104,7 @@ MediaLibrary_RequestId OH_MediaAssetManager_RequestVideoForPath(OH_MediaAssetMan
 | --- | --- |
 | [OH_MediaAssetManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-oh-mediaassetmanager)* manager | 指向OH_MediaAssetManager实例的指针。 |
 | const char* uri | 请求的视频资源的uri。 |
-| [MediaLibrary_RequestOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-medialibrary-requestoptions) requestOptions | 请求策略模式配置项。 |
+| [MediaLibrary_RequestOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-medialibrary-requestoptions) requestOptions | 请求策略模式配置项。用于指定资源请求的具体策略，如缓存策略、网络加载策略等。 |
 | const char* destPath | 请求资源的目标地址。 |
 | [OH_MediaLibrary_OnDataPrepared](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-media-asset-base-capi-h#oh_medialibrary_ondataprepared) callback | 媒体资源处理器，当所请求的媒体资源准备完成时会触发回调。 |
 
@@ -112,7 +112,7 @@ MediaLibrary_RequestId OH_MediaAssetManager_RequestVideoForPath(OH_MediaAssetMan
 
 | 类型 | 说明 |
 | --- | --- |
-| [MediaLibrary_RequestId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-medialibrary-requestid) | 返回请求Id。 |
+| [MediaLibrary_RequestId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-medialibrary-requestid) | 返回请求ID，用于标识该视频资源请求，可用于后续取消请求操作。 |
 
 #### [h2]OH_MediaAssetManager_CancelRequest()
 
@@ -132,7 +132,7 @@ bool OH_MediaAssetManager_CancelRequest(OH_MediaAssetManager* manager, const Med
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_MediaAssetManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-oh-mediaassetmanager)* manager | 指向OH_MediaAssetManager实例的指针。 |
-| const [MediaLibrary_RequestId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-medialibrary-requestid) requestId | 待取消的请求Id。 |
+| const [MediaLibrary_RequestId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-medialibrary-requestid) requestId | 待取消的请求ID。 |
 
 返回：
 
@@ -157,11 +157,11 @@ MediaLibrary_ErrorCode OH_MediaAssetManager_RequestMovingPhoto(OH_MediaAssetMana
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_MediaAssetManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-oh-mediaassetmanager)* manager | [OH_MediaAssetManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-oh-mediaassetmanager)实例指针。 |
+| [OH_MediaAssetManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-oh-mediaassetmanager)* manager | 指向[OH_MediaAssetManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-oh-mediaassetmanager)实例的指针。 |
 | [OH_MediaAsset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-oh-mediaasset)* mediaAsset | 要请求的媒体文件对象的[OH_MediaAsset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-oh-mediaasset)实例。 |
 | [MediaLibrary_RequestOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-medialibrary-requestoptions) requestOptions | 用于图像请求策略模式的[MediaLibrary_RequestOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-medialibrary-requestoptions)。 |
-| [MediaLibrary_RequestId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-medialibrary-requestid)* requestId | 请求的[MediaLibrary_RequestId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-medialibrary-requestid)，出参。 |
-| [OH_MediaLibrary_OnMovingPhotoDataPrepared](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-media-asset-base-capi-h#oh_medialibrary_onmovingphotodataprepared) callback | 当请求的动态照片准备就绪时调用[OH_MediaLibrary_OnMovingPhotoDataPrepared](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-media-asset-base-capi-h#oh_medialibrary_onmovingphotodataprepared)。 |
+| [MediaLibrary_RequestId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-medialibrary-requestid)* requestId | 输出参数，本次请求的[MediaLibrary_RequestId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-medialibrary-requestid)。该ID可用于取消请求或跟踪请求状态。 |
+| [OH_MediaLibrary_OnMovingPhotoDataPrepared](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-media-asset-base-capi-h#oh_medialibrary_onmovingphotodataprepared) callback | 当请求的动态照片准备就绪时调用。 |
 
 返回：
 
@@ -186,11 +186,11 @@ MediaLibrary_ErrorCode OH_MediaAssetManager_RequestImage(OH_MediaAssetManager* m
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_MediaAssetManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-oh-mediaassetmanager)* manager | [OH_MediaAssetManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-oh-mediaassetmanager)实例指针。 |
+| [OH_MediaAssetManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-oh-mediaassetmanager)* manager | 指向[OH_MediaAssetManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-oh-mediaassetmanager)实例的指针。 |
 | [OH_MediaAsset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-oh-mediaasset)* mediaAsset | 要请求的媒体文件对象的[OH_MediaAsset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-oh-mediaasset)实例。 |
 | [MediaLibrary_RequestOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-medialibrary-requestoptions) requestOptions | 用于图像请求策略模式的[MediaLibrary_RequestOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-medialibrary-requestoptions)。 |
-| [MediaLibrary_RequestId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-medialibrary-requestid)* requestId | 请求的[MediaLibrary_RequestId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-medialibrary-requestid)，出参。 |
-| [OH_MediaLibrary_OnImageDataPrepared](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-media-asset-base-capi-h#oh_medialibrary_onimagedataprepared) callback | 当请求的图像源准备就绪时调用[OH_MediaLibrary_OnImageDataPrepared](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-media-asset-base-capi-h#oh_medialibrary_onimagedataprepared)。 |
+| [MediaLibrary_RequestId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-medialibrary-requestid)* requestId | 输出参数，请求的[MediaLibrary_RequestId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-medialibrary-requestid)。该ID可用于取消请求或跟踪请求状态。 |
+| [OH_MediaLibrary_OnImageDataPrepared](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-media-asset-base-capi-h#oh_medialibrary_onimagedataprepared) callback | 当请求的图像源准备就绪时调用。 |
 
 返回：
 
@@ -240,9 +240,9 @@ MediaLibrary_ErrorCode OH_MediaAssetManager_QuickRequestImage(OH_MediaAssetManag
 | --- | --- |
 | [OH_MediaAssetManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-oh-mediaassetmanager)* manager | OH_MediaAssetManager的实例指针。 |
 | [OH_MediaAsset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-oh-mediaasset)* mediaAsset | 要请求的媒体文件对象的OH_MediaAsset实例。 |
-| [MediaLibrary_RequestOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-medialibrary-requestoptions) requestOptions | 用于图像请求策略模式的MediaLibrary_RequestOptions。 |
+| [MediaLibrary_RequestOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-medialibrary-requestoptions) requestOptions | 图像请求策略模式的配置项。 |
 | [MediaLibrary_RequestId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-medialibrary-requestid)* requestId | 请求的MediaLibrary_RequestId，该参数为输出参数。 |
-| [OH_MediaLibrary_OnQuickImageDataPrepared](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-media-asset-base-capi-h#oh_medialibrary_onquickimagedataprepared) callback | 当请求的源数据准备就绪时，将会调用OH_MediaLibrary_OnQuickImageDataPrepared方法。 |
+| [OH_MediaLibrary_OnQuickImageDataPrepared](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-media-asset-base-capi-h#oh_medialibrary_onquickimagedataprepared) callback | 当请求的图像源数据准备就绪时调用。 |
 
 返回：
 

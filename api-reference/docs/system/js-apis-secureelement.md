@@ -2,8 +2,8 @@
 title: "@ohos.secureElement (安全单元的通道管理)"
 upstream_id: "harmonyos-references/js-apis-secureelement"
 catalog: "harmonyos-references"
-content_hash: "18581326da94"
-synced_at: "2026-07-09T00:59:24.518186"
+content_hash: "4f2c265a8203"
+synced_at: "2026-08-29T18:16:37.739432"
 ---
 
 # @ohos.secureElement (安全单元的通道管理)
@@ -41,9 +41,9 @@ import { omapi } from '@kit.ConnectivityKit';
 
 newSEService(type: 'serviceState', callback: Callback<ServiceState>): SEService
 
-建立一个可用于连接到系统中所有可用SE的新连接（服务）。连接过程较为耗时，所以此方法仅提供异步方式进行的。使用callback异步回调。
+建立一个可用于连接到系统中所有可用SE的新连接（服务）。连接过程较为耗时，所以此方法仅提供异步方式。使用callback异步回调。
 
-仅当指定的回调或者当[isConnected](#seserviceisconnected)方法返回true时，该返回SEService对象是可用的。
+仅当指定的回调或者当[isConnected](#seserviceisconnected)方法返回true时，返回的SEService对象是可用的。
 
 ![](./img/note_3.0-zh-cn.png) 从 API version 10 开始支持，从 API version 12 开始废弃，建议使用[createService](#omapicreateservice12)替代。
 
@@ -83,7 +83,7 @@ function secureElementDemo() {
     // 获取 service
     try {
         seService = omapi.newSEService("serviceState", (state) => {
-        hilog.info(0x0000, 'testTag', 'se service state = %{public}s', JSON.stringify(state));
+            hilog.info(0x0000, 'testTag', 'se service state = %{public}s', JSON.stringify(state));
         });
     } catch (error) {
         hilog.error(0x0000, 'testTag', 'newSEService error %{public}s', JSON.stringify(error));
@@ -97,11 +97,11 @@ function secureElementDemo() {
 
 #### omapi.createService12+
 
-createService(): Promise<SEService>;
+createService(): Promise<SEService>
 
 建立一个可用于连接到系统中所有可用SE的新连接（服务）。连接过程较为耗时，所以此方法仅提供异步方式。使用Promise异步回调。
 
-仅当[isConnected](#seserviceisconnected)方法返回true时，该返回SEService对象是可用的。
+仅当[isConnected](#seserviceisconnected)方法返回true时，返回的SEService对象是可用的。
 
 系统能力： SystemCapability.Communication.SecureElement
 
@@ -136,7 +136,7 @@ function secureElementDemo() {
             return;
         }
         hilog.info(0x0000, 'testTag', 'seservice state connected');
-    }).catch((error : BusinessError)=> {
+    }).catch((error : BusinessError) => {
         hilog.error(0x0000, 'testTag', 'createService error %{public}s', JSON.stringify(error));
     });
 }
@@ -144,7 +144,7 @@ function secureElementDemo() {
 
 #### omapi.on('stateChanged')18+
 
-on(type: 'stateChanged', callback: Callback<ServiceState>): void;
+on(type: 'stateChanged', callback: Callback<ServiceState>): void
 
 注册监听服务状态变化事件。
 
@@ -212,7 +212,7 @@ function seStateOffCb(data: omapi.ServiceState) {
 }
 
 function secureElementDemo() {
-    try{
+    try {
         omapi.createService().then((data) => {
             seService = data;
             if (seService == undefined || !seService.isConnected()) {
@@ -220,7 +220,7 @@ function secureElementDemo() {
                 return;
             }
             hilog.info(0x0000, 'testTag', 'seservice state connected');
-        }).catch((error : BusinessError)=> {
+        }).catch((error : BusinessError) => {
             hilog.error(0x0000, 'testTag', 'createService error %{public}s', JSON.stringify(error));
         });
         omapi.on('stateChanged', seStateOnCb);
@@ -229,7 +229,7 @@ function secureElementDemo() {
             hilog.error(0x0000, 'testTag', 'omapi on error %{public}s', JSON.stringify(error));
         }
     }
-    try{
+    try {
         omapi.off('stateChanged', seStateOffCb);
     } catch (error) {
         if (error as BusinessError) {
@@ -330,7 +330,7 @@ function secureElementDemo() {
             return;
         }
         hilog.info(0x0000, 'testTag', 'seservice state connected');
-    }).catch((error : BusinessError)=> {
+    }).catch((error : BusinessError) => {
         hilog.error(0x0000, 'testTag', 'createService error %{public}s', JSON.stringify(error));
     });
 }
@@ -460,7 +460,7 @@ try {
 
 isSecureElementPresent(): boolean
 
-检查当前Reader所对应的安全单元是否可用。
+检查当前Reader对应的安全单元是否可用。
 
 系统能力： SystemCapability.Communication.SecureElement
 
@@ -726,7 +726,7 @@ try {
 }
 ```
 
-#### [h2]Session. isClosed
+#### [h2]Session.isClosed
 
 isClosed(): boolean
 
@@ -849,7 +849,7 @@ function secureElementDemo() {
         // 改为在此channel上选择的App的aid
         seSession.openBasicChannel(aidArray).then((data) => {
             seChannel = data;
-        }).catch((error : BusinessError)=> {
+        }).catch((error : BusinessError) => {
             hilog.error(0x0000, 'testTag', 'openBasicChannel error %{public}s', JSON.stringify(error));
         });
     } catch (exception) {
@@ -972,7 +972,7 @@ function secureElementDemo() {
         // 改为在此channel上选择的App的aid
         seSession.openBasicChannel(aidArray, p2).then((data) => {
             seChannel = data;
-        }).catch((error : BusinessError)=> {
+        }).catch((error : BusinessError) => {
             hilog.error(0x0000, 'testTag', 'openBasicChannel error %{public}s', JSON.stringify(error));
         });
     } catch (exception) {
@@ -1095,7 +1095,7 @@ function secureElementDemo() {
         // 改为在此channel上选择的App的aid
         seSession.openLogicalChannel(aidArray).then((data) => {
             seChannel = data;
-        }).catch((error : BusinessError)=> {
+        }).catch((error : BusinessError) => {
             hilog.error(0x0000, 'testTag', 'openLogicalChannel error %{public}s', JSON.stringify(error));
         });
     } catch (exception) {
@@ -1218,7 +1218,7 @@ function secureElementDemo() {
         // 改为在此channel上选择的App的aid
         seSession.openLogicalChannel(aidArray, p2).then((data) => {
             seChannel = data;
-        }).catch((error : BusinessError)=> {
+        }).catch((error : BusinessError) => {
             hilog.error(0x0000, 'testTag', 'openLogicalChannel error %{public}s', JSON.stringify(error));
         });
     } catch (exception) {
@@ -1274,7 +1274,7 @@ let p2 : number = 0x00;
 // 在使用seSession之前，需要对seSession进行初始化
 function secureElementDemo() {
     try {
-    // 改为在此channel上选择的App的aid
+        // 改为在此channel上选择的App的aid
         seSession.openLogicalChannel(aidArray, p2, (error, data) => {
             if (error) {
                 hilog.error(0x0000, 'testTag', 'openLogicalChannel error %{public}s', JSON.stringify(error));
@@ -1380,7 +1380,7 @@ isBasicChannel(): boolean
 
 | **类型** | **说明** |
 | --- | --- |
-| boolean | true: 该Channel是基础Channel, false：该Channel逻辑Channel 。 |
+| boolean | 检查该Channel是否为基础Channel。true：该Channel是基础Channel，false：该Channel是逻辑Channel。 |
 
 错误码：
 
@@ -1578,12 +1578,12 @@ let seChannel : omapi.Channel;
 let cmdData = [0x01, 0x02, 0x03, 0x04]; // 请更改为正确的data
 try {
     seChannel.transmit(cmdData, (error, response) => {
-    if (error) {
-        hilog.error(0x0000, 'testTag', 'transmit error %{public}s', JSON.stringify(error));
-    } else {
-        // 若芯片捕获异常则response返回全0
-        hilog.info(0x0000, 'testTag', 'transmit response = %{public}s.', JSON.stringify(response));
-    }
+        if (error) {
+            hilog.error(0x0000, 'testTag', 'transmit error %{public}s', JSON.stringify(error));
+        } else {
+            // 若芯片捕获异常则response返回全0
+            hilog.info(0x0000, 'testTag', 'transmit response = %{public}s.', JSON.stringify(response));
+        }
     });
 } catch (exception) {
     hilog.error(0x0000, 'testTag', 'transmit exception %{public}s', JSON.stringify(exception));

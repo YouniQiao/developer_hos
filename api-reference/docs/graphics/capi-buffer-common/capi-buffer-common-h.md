@@ -2,8 +2,8 @@
 title: "buffer_common.h"
 upstream_id: "harmonyos-references/capi-buffer-common-h"
 catalog: "harmonyos-references"
-content_hash: "efee7ca4f091"
-synced_at: "2026-08-14T15:55:41.759030"
+content_hash: "c0b42fd22ec3"
+synced_at: "2026-08-29T18:17:52.494651"
 ---
 
 # buffer_common.h
@@ -29,7 +29,7 @@ synced_at: "2026-08-14T15:55:41.759030"
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
 | [OH_NativeBuffer_ColorXY](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativebuffer-oh-nativebuffer-colorxy) | OH_NativeBuffer_ColorXY | 表示基色的X和Y坐标。 |
-| [OH_NativeBuffer_Smpte2086](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativebuffer-oh-nativebuffer-smpte2086) | OH_NativeBuffer_Smpte2086 | 表示smpte2086静态元数据。 |
+| [OH_NativeBuffer_Smpte2086](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativebuffer-oh-nativebuffer-smpte2086) | OH_NativeBuffer_Smpte2086 | 表示SMPTE 2086静态元数据。 |
 | [OH_NativeBuffer_Cta861](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativebuffer-oh-nativebuffer-cta861) | OH_NativeBuffer_Cta861 | 表示CTA-861.3静态元数据。 |
 | [OH_NativeBuffer_StaticMetadata](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativebuffer-oh-nativebuffer-staticmetadata) | OH_NativeBuffer_StaticMetadata | 表示HDR静态元数据。 |
 
@@ -42,6 +42,8 @@ synced_at: "2026-08-14T15:55:41.759030"
 | [OH_NativeBuffer_MetadataKey](#oh_nativebuffer_metadatakey) | OH_NativeBuffer_MetadataKey | 表示OH_NativeBuffer的描述信息的键值，如HDR元数据，ROI元数据等。 |
 | [OH_NativeBuffer_Format](#oh_nativebuffer_format) | OH_NativeBuffer_Format | OH_NativeBuffer格式的枚举。 |
 | [OH_NativeBuffer_TransformType](#oh_nativebuffer_transformtype) | OH_NativeBuffer_TransformType | OH_NativeBuffer转换类型的枚举。 |
+| [OH_NativeBuffer_VideoDimensionType](#oh_nativebuffer_videodimensiontype) | OH_NativeBuffer_VideoDimensionType | 视频维度类型枚举。 |
+| [OH_NativeBuffer_3D_MetadataKey](#oh_nativebuffer_3d_metadatakey) | OH_NativeBuffer_3D_MetadataKey | NativeBuffer的3D元数据属性枚举。 |
 
 #### 枚举类型说明
 
@@ -238,3 +240,40 @@ API version 22之前，使用该枚举请引用native_buffer.h头文件；从API
 | NATIVEBUFFER_FLIP_V_ROT180 | 垂直翻转并旋转180度。 |
 | NATIVEBUFFER_FLIP_H_ROT270 | 水平翻转并旋转270度。 |
 | NATIVEBUFFER_FLIP_V_ROT270 | 垂直翻转并旋转270度。 |
+
+#### [h2]OH_NativeBuffer_VideoDimensionType
+
+```
+enum OH_NativeBuffer_VideoDimensionType
+```
+ 描述
+
+视频维度类型枚举。
+
+系统能力： SystemCapability.Graphic.Graphic2D.NativeBuffer
+
+起始版本： 26.0.0
+
+| 枚举项 | 描述 |
+| --- | --- |
+| OH_VIDEO_DIM_TYPE_2D = 0 | 二维视频。 |
+| OH_VIDEO_DIM_TYPE_3D_SBS | 三维视频，格式：左右排列。 |
+| OH_VIDEO_DIM_TYPE_3D_TAB | 三维视频，格式：上下排列。 |
+| OH_VIDEO_DIM_TYPE_BUTT | 无效视频维度类型。 |
+
+#### [h2]OH_NativeBuffer_3D_MetadataKey
+
+```
+enum OH_NativeBuffer_3D_MetadataKey
+```
+ 描述
+
+NativeBuffer的3D元数据属性枚举。
+
+系统能力： SystemCapability.Graphic.Graphic2D.NativeBuffer
+
+起始版本： 26.0.0
+
+| 枚举项 | 描述 |
+| --- | --- |
+| OH_VIDEO_DIM_TYPE | NativeBuffer视频维度类型，具体取值范围可见[OH_NativeBuffer_VideoDimensionType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-buffer-common-h#oh_nativebuffer_videodimensiontype)。 |

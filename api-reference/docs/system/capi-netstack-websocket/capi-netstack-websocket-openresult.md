@@ -2,8 +2,8 @@
 title: "WebSocket_OpenResult"
 upstream_id: "harmonyos-references/capi-netstack-websocket-openresult"
 catalog: "harmonyos-references"
-content_hash: "07c8a368d7b8"
-synced_at: "2026-07-09T00:59:29.953187"
+content_hash: "675a7940928a"
+synced_at: "2026-08-29T18:16:45.949421"
 ---
 
 # WebSocket_OpenResult
@@ -14,7 +14,7 @@ struct WebSocket_OpenResult {...}
 
 #### 概述
 
-websocket客户端来自服务端连接成功的参数。
+WebSocket客户端来自服务端连接成功的参数。
 
 起始版本： 11
 
@@ -28,5 +28,5 @@ websocket客户端来自服务端连接成功的参数。
 
 | 名称 | 描述 |
 | --- | --- |
-| uint32_t code | websocket客户端连接成功码。 |
-| const char *reason | websocket客户端连接成功原因。 |
+| uint32_t code | WebSocket客户端连接成功码。 |
+| const char *reason | WebSocket客户端连接成功原因。 |

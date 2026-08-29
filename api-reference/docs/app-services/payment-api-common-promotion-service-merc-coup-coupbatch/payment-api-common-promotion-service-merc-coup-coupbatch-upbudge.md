@@ -1,12 +1,10 @@
 ---
-
 title: "修改券批次预算"
 upstream_id: "harmonyos-references/payment-api-common-promotion-service-merc-coup-coupbatch-upbudge"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T01:01:35.333023"
-content_hash: "dc2b47d7dfb8"
+content_hash: "efefb6962501"
+synced_at: "2026-08-29T18:18:30.386319"
 ---
-
 
 # 修改券批次预算
 
@@ -36,10 +34,10 @@ Request Body
 | --- | --- | --- | --- |
 | requestNo | 是 | String | 请求号，由商户随机生成，不同请求要求唯一。最小长度为1，最大长度为64。 **说明**：用于保证幂等。对不同请求，requestNo的值要求不一样。对于相同请求，值要求一样，比如超时场景，可通过requestNo一样进行重试。 |
 | batchNo | 是 | String | 批次号。 |
-| targetMaxCoupons | 否 | Integer | 目标批次最大发放券个数。 **说明**：当couponCode = MERCHANT_UPLOAD时，该值需要和导入的券Code数量保持一致。 |
-| currentMaxCoupons | 否 | Integer | 当前批次最大发放券个数。 |
-| targetMaxCouponsByDay | 否 | Integer | 目标单天发放券上限个数。 |
-| currentMaxCouponsByDay | 否 | Integer | 当前单天发放券上限个数。 |
+| targetMaxCoupons | 否 | Integer | 目标批次最大发放券个数。取值范围：1~100000000。 **说明**：当couponCode = MERCHANT_UPLOAD时，该值需要和导入的券Code数量保持一致。 |
+| currentMaxCoupons | 否 | Integer | 当前批次最大发放券个数。取值范围：0~100000000。 |
+| targetMaxCouponsByDay | 否 | Integer | 目标单天发放券上限个数。取值范围：0~100000000。 |
+| currentMaxCouponsByDay | 否 | Integer | 当前单天发放券上限个数。取值范围：0~100000000。 |
 
 ![](./img/note_3.0-zh-cn.png) 以下几种情况会报错：
 

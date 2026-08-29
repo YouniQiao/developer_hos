@@ -2,8 +2,8 @@
 title: "ArkUI_SwiperArrowStyle"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-swiperarrowstyle"
 catalog: "harmonyos-references"
-content_hash: "b8a8d832e286"
-synced_at: "2026-07-28T16:49:36.839049"
+content_hash: "fb9e484b52d7"
+synced_at: "2026-08-29T18:15:49.856984"
 ---
 
 # ArkUI_SwiperArrowStyle
@@ -14,10 +14,10 @@ typedef struct ArkUI_SwiperArrowStyle ArkUI_SwiperArrowStyle
 
 #### 概述
 
-定义Swiper组件的导航箭头样式结构体，通过配置箭头位置、大小、颜色等属性实现翻页指引。
+定义Swiper组件的导航箭头样式。
 
 起始版本： 19
 
 相关模块： [ArkUI_NativeModule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule)
 
-所在头文件： [swiper.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-swiper-h)
+所在头文件： [native_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h)

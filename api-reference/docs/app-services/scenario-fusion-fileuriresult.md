@@ -2,8 +2,8 @@
 title: "fileUriService（文件路径转换API）"
 upstream_id: "harmonyos-references/scenario-fusion-fileuriresult"
 catalog: "harmonyos-references"
-content_hash: "5f9e13bb058f"
-synced_at: "2026-07-28T16:53:02.763118"
+content_hash: "75a2cbc5e792"
+synced_at: "2026-08-29T18:18:34.529873"
 ---
 
 # fileUriService（文件路径转换API）
@@ -60,7 +60,7 @@ convertFileUris(sourceFileUris: Array<string>): Promise<Array<FileUriResult>>
 
 系统能力： SystemCapability.ScenarioFusionComponent.FileUriService
 
-设备行为差异： 该接口在Phone、Tablet中可正常调用，在其他设备类型中返回801错误码。
+设备行为差异： 该接口在Phone、Tablet中可正常调用，从API版本26.0.0开始在Car、TV中可正常调用，在其他设备类型中返回801错误码。
 
 起始版本： 5.0.2(14)
 

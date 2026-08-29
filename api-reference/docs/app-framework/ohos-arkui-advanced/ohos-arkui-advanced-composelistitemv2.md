@@ -2,8 +2,8 @@
 title: "ComposeListItemV2"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-composelistitemv2"
 catalog: "harmonyos-references"
-content_hash: "9cf06562fa1e"
-synced_at: "2026-07-28T16:48:03.876835"
+content_hash: "df87bfb6ca26"
+synced_at: "2026-08-29T18:15:06.854818"
 ---
 
 # ComposeListItemV2
@@ -49,8 +49,8 @@ ComposeListItemV2({ contentItemV2?: ContentItemV2, operateItemV2?: OperateItemV2
 
 | 名称 | 类型 | 必填 | 装饰器类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| contentItemV2 | [ContentItemV2](#contentitemv2) | 否 | @Param | 定义列表项左侧以及中间元素。 |
-| operateItemV2 | [OperateItemV2](#operateitemv2) | 否 | @Param | 定义列表项右侧元素。 |
+| contentItemV2 | [ContentItemV2](#contentitemv2) | 否 | @Param | 定义列表项左侧以及中间元素。 默认不设置或设置为undefined时，不显示左侧和中间元素。 |
+| operateItemV2 | [OperateItemV2](#operateitemv2) | 否 | @Param | 定义列表项右侧元素。 默认不设置或设置为undefined时，不显示右侧元素。 |
 
 #### ContentItemV2
 
@@ -70,8 +70,8 @@ ComposeListItemV2({ contentItemV2?: ContentItemV2, operateItemV2?: OperateItemV2
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| iconStyle | [IconTypeV2](#icontypev2) | 否 | 是 | 左侧元素的图标样式。 默认不设置或设置为undefined，表示不显示icon图标资源。 **装饰器类型：** @Trace |
-| icon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 左侧元素的图标资源。 默认不设置或设置为undefined，表示不显示icon图标资源。 **装饰器类型：** @Trace |
+| iconStyle | [IconTypeV2](#icontypev2) | 否 | 是 | 左侧元素的图标类型。 默认不设置或设置为undefined，表示不显示icon图标资源。 **装饰器类型：** @Trace |
+| icon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 左侧元素的图标资源。 默认不设置或设置为undefined，表示不显示icon图标资源。 同时设置symbolStyle时，只显示Symbol图标。 **装饰器类型：** @Trace |
 | symbolStyle | [SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier#symbolglyphmodifier) | 否 | 是 | 左侧元素的Symbol图标资源，优先级大于icon，同时设置了icon和Symbol图标，只显示Symbol图标。 默认不设置或设置为undefined，Symbol图标不显示。 **装饰器类型：** @Trace |
 | primaryText | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 中间元素的标题内容。 默认不设置或设置为undefined，不显示标题内容。 **文字处理规则:** 文本超长后无限换行显示。 **装饰器类型：** @Trace |
 | secondaryText | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 中间元素的副标题内容。 默认不设置或设置为undefined，不显示副标题内容。 **文字处理规则:** 文本超长后无限换行显示。 **装饰器类型：** @Trace |
@@ -97,7 +97,7 @@ ContentItemV2的构造函数。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [ContentItemV2Options](#contentitemv2options) | 否 | 列表左侧属性配置。 |
+| options | [ContentItemV2Options](#contentitemv2options) | 否 | 列表左侧属性配置。 默认不设置或设置为undefined时，按各属性的默认效果创建对象。 |
 
 #### ContentItemV2Options
 
@@ -115,12 +115,12 @@ ContentItemV2构造函数的参数选项。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| iconStyle | [IconTypeV2](#icontypev2) | 否 | 是 | 左侧元素的图标样式。 |
-| icon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 左侧元素的图标资源。 |
-| symbolStyle | [SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier#symbolglyphmodifier) | 否 | 是 | 左侧元素的Symbol图标资源。 |
-| primaryText | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 中间元素的标题内容。 |
-| secondaryText | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 中间元素的副标题内容。 |
-| description | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 中间元素的描述内容。 |
+| iconStyle | [IconTypeV2](#icontypev2) | 否 | 是 | 左侧元素的图标类型。 默认不设置或设置为undefined时，不显示左侧图标资源。 |
+| icon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 左侧元素的图标资源。 默认不设置或设置为undefined时，不显示icon图标资源。 同时设置symbolStyle时，只显示Symbol图标。 |
+| symbolStyle | [SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier#symbolglyphmodifier) | 否 | 是 | 左侧元素的Symbol图标资源，优先级大于icon，同时设置时只显示Symbol图标。 默认不设置或设置为undefined时，不显示Symbol图标。 |
+| primaryText | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 中间元素的标题内容。 默认不设置或设置为undefined时，不显示标题内容。 文本超长后无限换行显示。 |
+| secondaryText | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 中间元素的副标题内容。 默认不设置或设置为undefined时，不显示副标题内容。 文本超长后无限换行显示。 |
+| description | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 中间元素的描述内容。 默认不设置或设置为undefined时，不显示描述内容。 文本超长后无限换行显示。 |
 
 #### IconTypeV2
 
@@ -172,8 +172,8 @@ ContentItemV2构造函数的参数选项。
 | toggle | [OperateCheckV2](#operatecheckv2) | 否 | 是 | 列表项右侧元素为开关。 默认不设置或设置为undefined，列表项右侧开关不显示。 **装饰器类型：** @Trace |
 | checkbox | [OperateCheckV2](#operatecheckv2) | 否 | 是 | 列表项右侧元素为多选框，大小为24*24vp。 默认不设置或设置为undefined，列表项右侧多选框不显示。 **装饰器类型：** @Trace |
 | radio | [OperateCheckV2](#operatecheckv2) | 否 | 是 | 列表项右侧元素为单选框，大小为24*24vp。 默认不设置或设置为undefined，列表项右侧单选框不显示。 **装饰器类型：** @Trace |
-| image | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 列表项右侧元素为图片，大小为48*48vp。 默认不设置或设置为undefined，列表项右侧图片不显示。 **装饰器类型：** @Trace |
-| symbolStyle | [SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier#symbolglyphmodifier) | 否 | 是 | 列表项右侧元素为Symbol图标资源，大小为48*48vp。 默认不设置或设置为undefined，列表项右侧Symbol图标不显示。 **装饰器类型：** @Trace |
+| image | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 列表项右侧元素为图片，大小为48*48vp。 默认不设置或设置为undefined，列表项右侧图片不显示。 同时设置symbolStyle时，只显示Symbol图标。 **装饰器类型：** @Trace |
+| symbolStyle | [SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier#symbolglyphmodifier) | 否 | 是 | 列表项右侧元素为Symbol图标资源，大小为48*48vp，优先级大于image，同时设置时只显示Symbol图标。 默认不设置或设置为undefined，列表项右侧Symbol图标不显示。 **装饰器类型：** @Trace |
 | text | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 列表项右侧元素为文字。 默认不设置或设置为undefined，列表项右侧文字不显示。 **装饰器类型：** @Trace |
 
 #### [h2]constructor
@@ -196,7 +196,7 @@ OperateItemV2的构造函数。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [OperateItemV2Options](#operateitemv2options) | 否 | 列表项右侧属性配置。 |
+| options | [OperateItemV2Options](#operateitemv2options) | 否 | 列表项右侧属性配置。 默认不设置或设置为undefined时，按各属性的默认效果创建对象。 |
 
 #### OperateItemV2Options
 
@@ -214,16 +214,16 @@ OperateItemV2构造函数的参数选项。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| arrow | [OperateIconV2](#operateiconv2) | 否 | 是 | 列表项右侧元素为箭头。 |
-| icon | [OperateIconV2](#operateiconv2) | 否 | 是 | 列表项右侧元素的第一个图标。 |
-| subIcon | [OperateIconV2](#operateiconv2) | 否 | 是 | 列表项右侧元素的第二个图标。 |
-| button | [OperateButtonV2](#operatebuttonv2) | 否 | 是 | 列表项右侧元素为按钮。 |
-| toggle | [OperateCheckV2](#operatecheckv2) | 否 | 是 | 列表项右侧元素为开关。 |
-| checkbox | [OperateCheckV2](#operatecheckv2) | 否 | 是 | 列表项右侧元素为多选框。 |
-| radio | [OperateCheckV2](#operatecheckv2) | 否 | 是 | 列表项右侧元素为单选框。 |
-| image | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 列表项右侧元素为图片。 |
-| symbolStyle | [SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier#symbolglyphmodifier) | 否 | 是 | 列表项右侧元素为Symbol图标资源。 |
-| text | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 列表项右侧元素为文字。 |
+| arrow | [OperateIconV2](#operateiconv2) | 否 | 是 | 列表项右侧元素为箭头。 默认不设置或设置为undefined时，不显示箭头。 |
+| icon | [OperateIconV2](#operateiconv2) | 否 | 是 | 列表项右侧元素的第一个图标。 默认不设置或设置为undefined时，不显示图标。 |
+| subIcon | [OperateIconV2](#operateiconv2) | 否 | 是 | 列表项右侧元素的第二个图标。 默认不设置或设置为undefined时，不显示第二个图标。 |
+| button | [OperateButtonV2](#operatebuttonv2) | 否 | 是 | 列表项右侧元素为按钮。 默认不设置或设置为undefined时，不显示按钮。 |
+| toggle | [OperateCheckV2](#operatecheckv2) | 否 | 是 | 列表项右侧元素为开关。 默认不设置或设置为undefined时，不显示开关。 |
+| checkbox | [OperateCheckV2](#operatecheckv2) | 否 | 是 | 列表项右侧元素为多选框。 默认不设置或设置为undefined时，不显示多选框。 |
+| radio | [OperateCheckV2](#operatecheckv2) | 否 | 是 | 列表项右侧元素为单选框。 默认不设置或设置为undefined时，不显示单选框。 |
+| image | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 列表项右侧元素为图片。 默认不设置或设置为undefined时，不显示图片。 同时设置symbolStyle时，只显示Symbol图标。 |
+| symbolStyle | [SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier#symbolglyphmodifier) | 否 | 是 | 列表项右侧元素为Symbol图标资源，优先级大于image，同时设置时只显示Symbol图标。 默认不设置或设置为undefined时，不显示Symbol图标。 |
+| text | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 列表项右侧元素为文字。 默认不设置或设置为undefined时，不显示文字。 |
 
 #### OperateIconV2
 
@@ -243,12 +243,12 @@ OperateItemV2构造函数的参数选项。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| value | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 否 | 列表项右侧图标/箭头资源。 **装饰器类型：** @Trace |
+| value | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 否 | 列表项右侧图标/箭头资源。 同时设置symbolStyle时，只显示Symbol图标。 **装饰器类型：** @Trace |
 | symbolStyle | [SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier#symbolglyphmodifier) | 否 | 是 | 列表项右侧Symbol图标/箭头资源，优先级大于value。 默认不设置或设置为undefined，Symbol图标不显示。 **装饰器类型：** @Trace |
-| action | [OnActionCallback](#onactioncallback) | 否 | 是 | 列表项右侧图标/箭头点击事件。 **装饰器类型：** @Trace |
+| action | [OnActionCallback](#onactioncallback) | 否 | 是 | 列表项右侧图标/箭头点击回调。 默认不设置或设置为undefined时，点击图标/箭头不触发回调。 **装饰器类型：** @Trace |
 | accessibilityText | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 列表项右侧图标/箭头的无障碍文本属性。当组件不包含文本属性时，屏幕朗读选中此组件时不播报，使用者无法清楚地知道当前选中了什么组件。为了解决此场景，开发人员可为不包含文字信息的组件设置无障碍文本，当屏幕朗读选中此组件时播报无障碍文本的内容，帮助屏幕朗读的使用者清楚地知道自己选中了什么组件。 默认值:"" **装饰器类型：** @Trace |
 | accessibilityDescription | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 列表项右侧图标/箭头的无障碍描述。此描述用于向用户详细解释当前组件，开发人员应为组件的这一属性提供较为详尽的文本说明，以协助用户理解即将执行的操作及其可能产生的后果。特别是当这些后果无法仅从组件的属性和无障碍文本中直接获知时。如果组件同时具备文本属性和无障碍说明属性，当组件被选中时，系统将首先播报组件的文本属性，随后播报无障碍说明属性的内容。 默认值为"单指双击即可执行"。 **装饰器类型：** @Trace |
-| accessibilityLevel | string | 否 | 是 | 列表项右侧图标/箭头的无障碍重要性。用于控制当前项是否可被无障碍辅助服务所识别。 支持的值为: "auto":当前组件会转换"no"。 "yes":当前组件可被无障碍辅助服务所识别。 "no":当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants":当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值:"auto" **装饰器类型：** @Trace |
+| accessibilityLevel | string | 否 | 是 | 列表项右侧图标/箭头的无障碍重要性。用于控制当前项是否可被无障碍辅助服务所识别。 支持的值为: "auto":当前组件是否可被无障碍辅助服务识别由无障碍服务和ArkUI综合判断。 "yes":当前组件可被无障碍辅助服务所识别。 "no":当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants":当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值:"auto" **装饰器类型：** @Trace |
 
 #### [h2]constructor
 
@@ -270,7 +270,7 @@ OperateIconV2的构造函数。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [OperateIconV2Options](#operateiconv2options) | 否 | 列表项右侧图标属性配置。 |
+| options | [OperateIconV2Options](#operateiconv2options) | 否 | 列表项右侧图标属性配置。 默认不设置或设置为undefined时，按各属性的默认效果创建对象。 |
 
 #### OperateIconV2Options
 
@@ -288,12 +288,12 @@ OperateIconV2构造函数的参数选项。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| value | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 列表项右侧图标/箭头资源。 |
-| symbolStyle | [SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier#symbolglyphmodifier) | 否 | 是 | 列表项右侧Symbol图标/箭头资源。 |
-| action | [OnActionCallback](#onactioncallback) | 否 | 是 | 列表项右侧图标/箭头点击事件。 |
+| value | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 列表项右侧图标/箭头资源。 默认值为""，不显示图标/箭头资源。 同时设置symbolStyle时，只显示Symbol图标。 |
+| symbolStyle | [SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier#symbolglyphmodifier) | 否 | 是 | 列表项右侧Symbol图标/箭头资源，优先级大于value，同时设置时只显示Symbol图标。 默认不设置或设置为undefined时，不显示Symbol图标。 |
+| action | [OnActionCallback](#onactioncallback) | 否 | 是 | 列表项右侧图标/箭头点击回调。 默认不设置或设置为undefined时，点击图标/箭头不触发回调。 |
 | accessibilityText | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 列表项右侧图标/箭头的无障碍文本属性。当组件不包含文本属性时，屏幕朗读选中此组件时不播报，使用者无法清楚地知道当前选中了什么组件。为了解决此场景，开发人员可为不包含文字信息的组件设置无障碍文本，当屏幕朗读选中此组件时播报无障碍文本的内容，帮助屏幕朗读的使用者清楚地知道自己选中了什么组件。 默认值:"" |
 | accessibilityDescription | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 列表项右侧图标/箭头的无障碍描述。此描述用于向用户详细解释当前组件，开发人员应为组件的这一属性提供较为详尽的文本说明，以协助用户理解即将执行的操作及其可能产生的后果。特别是当这些后果无法仅从组件的属性和无障碍文本中直接获知时。如果组件同时具备文本属性和无障碍说明属性，当组件被选中时，系统将首先播报组件的文本属性，随后播报无障碍说明属性的内容。 默认值为"单指双击即可执行"。 |
-| accessibilityLevel | string | 否 | 是 | 列表项右侧图标/箭头的无障碍重要性。用于控制当前项是否可被无障碍辅助服务所识别。 支持的值为: "auto":当前组件会转换"no"。 "yes":当前组件可被无障碍辅助服务所识别。 "no":当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants":当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值:"auto" |
+| accessibilityLevel | string | 否 | 是 | 列表项右侧图标/箭头的无障碍重要性。用于控制当前项是否可被无障碍辅助服务所识别。 支持的值为: "auto":当前组件是否可被无障碍辅助服务识别由无障碍服务和ArkUI综合判断。 "yes":当前组件可被无障碍辅助服务所识别。 "no":当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants":当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值:"auto" |
 
 #### OperateButtonV2
 
@@ -316,7 +316,7 @@ OperateIconV2构造函数的参数选项。
 | text | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 列表项右侧按钮文字。 默认值:"" **装饰器类型：** @Trace |
 | accessibilityText | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 列表项右侧按钮的无障碍文本属性。当组件不包含文本属性时，屏幕朗读选中此组件时不播报，使用者无法清楚地知道当前选中了什么组件。为了解决此场景，开发人员可为不包含文字信息的组件设置无障碍文本，当屏幕朗读选中此组件时播报无障碍文本的内容，帮助屏幕朗读的使用者清楚地知道自己选中了什么组件。 默认值:"" **装饰器类型：** @Trace |
 | accessibilityDescription | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 列表项右侧按钮的无障碍描述。此描述用于向用户详细解释当前组件，开发人员应为组件的这一属性提供较为详尽的文本说明，以协助用户理解即将执行的操作及其可能产生的后果。特别是当这些后果无法仅从组件的属性和无障碍文本中直接获知时。如果组件同时具备文本属性和无障碍说明属性，当组件被选中时，系统将首先播报组件的文本属性，随后播报无障碍说明属性的内容。 默认值:"单指双击即可执行"。 **装饰器类型：** @Trace |
-| accessibilityLevel | string | 否 | 是 | 列表项右侧按钮的无障碍重要性。用于控制当前项是否可被无障碍辅助服务所识别。 支持的值为: "auto":当前组件会转换"no"。 "yes":当前组件可被无障碍辅助服务所识别。 "no":当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants":当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值:"auto" **装饰器类型：** @Trace |
+| accessibilityLevel | string | 否 | 是 | 列表项右侧按钮的无障碍重要性。用于控制当前项是否可被无障碍辅助服务所识别。 支持的值为: "auto":当前组件是否可被无障碍辅助服务识别由无障碍服务和ArkUI综合判断。 "yes":当前组件可被无障碍辅助服务所识别。 "no":当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants":当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值:"auto" **装饰器类型：** @Trace |
 
 #### [h2]constructor
 
@@ -338,7 +338,7 @@ OperateButtonV2的构造函数。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [OperateButtonV2Options](#operatebuttonv2options) | 否 | 列表项右侧按钮属性配置。 |
+| options | [OperateButtonV2Options](#operatebuttonv2options) | 否 | 列表项右侧按钮属性配置。 默认不设置或设置为undefined时，按各属性的默认效果创建对象。 |
 
 #### OperateButtonV2Options
 
@@ -356,10 +356,10 @@ OperateButtonV2构造函数的参数选项。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| text | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 列表项右侧按钮文字。 |
+| text | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 列表项右侧按钮文字。 默认不设置或设置为undefined时，不显示按钮文字。 |
 | accessibilityText | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 列表项右侧按钮的无障碍文本属性。当组件不包含文本属性时，屏幕朗读选中此组件时不播报，使用者无法清楚地知道当前选中了什么组件。为了解决此场景，开发人员可为不包含文字信息的组件设置无障碍文本，当屏幕朗读选中此组件时播报无障碍文本的内容，帮助屏幕朗读的使用者清楚地知道自己选中了什么组件。 默认值:"" |
 | accessibilityDescription | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 列表项右侧按钮的无障碍描述。此描述用于向用户详细解释当前组件，开发人员应为组件的这一属性提供较为详尽的文本说明，以协助用户理解即将执行的操作及其可能产生的后果。特别是当这些后果无法仅从组件的属性和无障碍文本中直接获知时。如果组件同时具备文本属性和无障碍说明属性，当组件被选中时，系统将首先播报组件的文本属性，随后播报无障碍说明属性的内容。 默认值:"单指双击即可执行"。 |
-| accessibilityLevel | string | 否 | 是 | 列表项右侧按钮的无障碍重要性。用于控制当前项是否可被无障碍辅助服务所识别。 支持的值为: "auto":当前组件会转换"no"。 "yes":当前组件可被无障碍辅助服务所识别。 "no":当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants":当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值:"auto" |
+| accessibilityLevel | string | 否 | 是 | 列表项右侧按钮的无障碍重要性。用于控制当前项是否可被无障碍辅助服务所识别。 支持的值为: "auto":当前组件是否可被无障碍辅助服务识别由无障碍服务和ArkUI综合判断。 "yes":当前组件可被无障碍辅助服务所识别。 "no":当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants":当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值:"auto" |
 
 #### OperateCheckV2
 
@@ -380,10 +380,10 @@ OperateButtonV2构造函数的参数选项。
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | isCheck | boolean | 否 | 是 | 列表项右侧元素Switch/CheckBox/Radio选中状态。 isCheck默认值为false。 isCheck为true时，表示为选中。 isCheck为false时，表示为未选中。 **装饰器类型：** @Trace |
-| onChange | [OnChangeCallback](#onchangecallback) | 否 | 是 | 列表项右侧元素Switch/CheckBox/Radio选中状态改变时触发回调。 value为true时，表示从未选中变为选中。 value为false时，表示从选中变为未选中。 **装饰器类型：** @Trace |
+| onChange | [OnChangeCallback](#onchangecallback) | 否 | 是 | 列表项右侧元素Switch/CheckBox/Radio选中状态改变时触发回调。 value为true时，表示从未选中变为选中。 value为false时，表示从选中变为未选中。 默认不设置或设置为undefined时，状态改变不触发回调。 **装饰器类型：** @Trace |
 | accessibilityText | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 列表项右侧元素Switch/CheckBox/Radio的无障碍文本属性。当组件不包含文本属性时，屏幕朗读选中此组件时不播报，使用者无法清楚地知道当前选中了什么组件。为了解决此场景，开发人员可为不包含文字信息的组件设置无障碍文本，当屏幕朗读选中此组件时播报无障碍文本的内容，帮助屏幕朗读的使用者清楚地知道自己选中了什么组件。 默认值:"" **装饰器类型：** @Trace |
 | accessibilityDescription | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 列表项右侧元素Switch/CheckBox/Radio的无障碍描述。此描述用于向用户详细解释当前组件，开发人员应为组件的这一属性提供较为详尽的文本说明，以协助用户理解即将执行的操作及其可能产生的后果。特别是当这些后果无法仅从组件的属性和无障碍文本中直接获知时。如果组件同时具备文本属性和无障碍说明属性，当组件被选中时，系统将首先播报组件的文本属性，随后播报无障碍说明属性的内容。 默认跟随基础组件Switch/CheckBox/Radio播报规则。 **装饰器类型：** @Trace |
-| accessibilityLevel | string | 否 | 是 | 列表项右侧元素Switch/CheckBox/Radio的无障碍重要性。用于控制当前项是否可被无障碍辅助服务所识别。 支持的值为: "auto":当前组件会转换"no"。 "yes":当前组件可被无障碍辅助服务所识别。 "no":当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants":当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值:"auto" **装饰器类型：** @Trace |
+| accessibilityLevel | string | 否 | 是 | 列表项右侧元素Switch/CheckBox/Radio的无障碍重要性。用于控制当前项是否可被无障碍辅助服务所识别。 支持的值为: "auto":当前组件是否可被无障碍辅助服务识别由无障碍服务和ArkUI综合判断。 "yes":当前组件可被无障碍辅助服务所识别。 "no":当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants":当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值:"auto" **装饰器类型：** @Trace |
 
 #### [h2]constructor
 
@@ -405,7 +405,7 @@ OperateCheckV2的构造函数。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [OperateCheckV2Options](#operatecheckv2options) | 否 | 列表项右侧元素为Switch、CheckBox、Radio属性配置。 |
+| options | [OperateCheckV2Options](#operatecheckv2options) | 否 | 列表项右侧元素为Switch、CheckBox、Radio属性配置。 默认不设置或设置为undefined时，按各属性的默认效果创建对象。 |
 
 #### OperateCheckV2Options
 
@@ -423,11 +423,11 @@ OperateCheckV2构造函数的参数选项。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| isCheck | boolean | 否 | 是 | 列表项右侧元素Switch/CheckBox/Radio选中状态。 |
-| onChange | [OnChangeCallback](#onchangecallback) | 否 | 是 | 列表项右侧元素Switch/CheckBox/Radio选中状态改变时触发回调。 |
+| isCheck | boolean | 否 | 是 | 列表项右侧元素Switch/CheckBox/Radio选中状态。 值为true时表示选中，值为false时表示未选中。 |
+| onChange | [OnChangeCallback](#onchangecallback) | 否 | 是 | 列表项右侧元素Switch/CheckBox/Radio选中状态改变时触发回调。 默认不设置或设置为undefined时，状态改变不触发回调。 |
 | accessibilityText | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 列表项右侧元素Switch/CheckBox/Radio的无障碍文本属性。当组件不包含文本属性时，屏幕朗读选中此组件时不播报，使用者无法清楚地知道当前选中了什么组件。为了解决此场景，开发人员可为不包含文字信息的组件设置无障碍文本，当屏幕朗读选中此组件时播报无障碍文本的内容，帮助屏幕朗读的使用者清楚地知道自己选中了什么组件。 默认值:"" |
 | accessibilityDescription | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 列表项右侧元素Switch/CheckBox/Radio的无障碍描述。此描述用于向用户详细解释当前组件，开发人员应为组件的这一属性提供较为详尽的文本说明，以协助用户理解即将执行的操作及其可能产生的后果。特别是当这些后果无法仅从组件的属性和无障碍文本中直接获知时。如果组件同时具备文本属性和无障碍说明属性，当组件被选中时，系统将首先播报组件的文本属性，随后播报无障碍说明属性的内容。 默认跟随基础组件Switch/CheckBox/Radio播报规则。 |
-| accessibilityLevel | string | 否 | 是 | 列表项右侧元素Switch/CheckBox/Radio的无障碍重要性。用于控制当前项是否可被无障碍辅助服务所识别。 支持的值为: "auto":当前组件会转换"no"。 "yes":当前组件可被无障碍辅助服务所识别。 "no":当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants":当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值:"auto" |
+| accessibilityLevel | string | 否 | 是 | 列表项右侧元素Switch/CheckBox/Radio的无障碍重要性。用于控制当前项是否可被无障碍辅助服务所识别。 支持的值为: "auto":当前组件是否可被无障碍辅助服务识别由无障碍服务和ArkUI综合判断。 "yes":当前组件可被无障碍辅助服务所识别。 "no":当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants":当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值:"auto" |
 
 #### OnActionCallback
 
@@ -514,7 +514,7 @@ struct ComposeListItemV2Example {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928591.jpg)
+ ![](./img/zh-cn_image_0000002701800042.jpg)
 
 #### [h2]示例2(设置列表项右侧不同元素自定义播报)
 
@@ -605,7 +605,7 @@ struct ComposeListItemV2Example {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008912.png)
+ ![](./img/zh-cn_image_0000002731519329.png)
 
 #### [h2]示例3(设置Symbol类型图标)
 
@@ -687,4 +687,4 @@ struct ComposeListItemV2Example {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848992.png)
+ ![](./img/zh-cn_image_0000002701640130.png)

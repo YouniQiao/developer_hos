@@ -2,8 +2,8 @@
 title: "external_window.h"
 upstream_id: "harmonyos-references/capi-external-window-h"
 catalog: "harmonyos-references"
-content_hash: "91aec198390c"
-synced_at: "2026-07-28T16:52:15.368249"
+content_hash: "c8366972446f"
+synced_at: "2026-08-29T18:17:56.862086"
 ---
 
 # external_window.h
@@ -42,7 +42,7 @@ synced_at: "2026-07-28T16:52:15.368249"
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
 | [NativeWindowOperation](#nativewindowoperation) | NativeWindowOperation | OH_NativeWindow_NativeWindowHandleOpt函数中的操作码。 |
-| [OHScalingMode](#ohscalingmode) | OHScalingMode | 缩放模式Scaling Mode。 |
+| [OHScalingMode](#ohscalingmode) | OHScalingMode | 缩放模式。 |
 | [OHScalingModeV2](#ohscalingmodev2) | OHScalingModeV2 | 渲染缩放模式枚举。 |
 | [OHHDRMetadataKey](#ohhdrmetadatakey) | OHHDRMetadataKey | 枚举HDR元数据关键字。 |
 | [OHSurfaceSource](#ohsurfacesource) | OHSurfaceSource | 本地窗口内容来源类型枚举。 |
@@ -74,7 +74,7 @@ synced_at: "2026-07-28T16:52:15.368249"
 | [int32_t OH_NativeWindow_GetSurfaceId(OHNativeWindow *window, uint64_t *surfaceId)](#oh_nativewindow_getsurfaceid) | 通过OHNativeWindow获取对应的surfaceId。 本接口为非线程安全类型接口。 |
 | [int32_t OH_NativeWindow_CreateNativeWindowFromSurfaceId(uint64_t surfaceId, OHNativeWindow **window)](#oh_nativewindow_createnativewindowfromsurfaceid) | 通过surfaceId创建对应的OHNativeWindow。 本接口需要与[OH_NativeWindow_DestroyNativeWindow](#oh_nativewindow_destroynativewindow)接口配合使用，否则会存在内存泄漏。 如果存在并发释放OHNativeWindow的情况，需要通过[OH_NativeWindow_NativeObjectReference](#oh_nativewindow_nativeobjectreference)和[OH_NativeWindow_NativeObjectUnreference](#oh_nativewindow_nativeobjectunreference)对OHNativeWindow进行引用计数加一和减一。 通过surfaceId获取的surface需要是在本进程中创建的，不能跨进程获取surface。 本接口为非线程安全类型接口。 |
 | [int32_t OH_NativeWindow_NativeWindowSetScalingModeV2(OHNativeWindow* window, OHScalingModeV2 scalingMode)](#oh_nativewindow_nativewindowsetscalingmodev2) | 设置OHNativeWindow的渲染缩放模式。 本接口为非线程安全类型接口。 |
-| [int32_t OH_NativeWindow_GetLastFlushedBufferV2(OHNativeWindow *window, OHNativeWindowBuffer **buffer,int *fenceFd, float matrix[16])](#oh_nativewindow_getlastflushedbufferv2) | 从OHNativeWindow获取上次送回到buffer队列中的OHNativeWindowBuffer,与OH_NativeWindow_GetLastFlushedBuffer的差异在于matrix不同。 本接口需要与[OH_NativeWindow_NativeObjectUnreference](#oh_nativewindow_nativeobjectunreference)接口配合使用，否则会存在内存泄漏。 本接口为非线程安全类型接口。 |
+| [int32_t OH_NativeWindow_GetLastFlushedBufferV2(OHNativeWindow *window, OHNativeWindowBuffer **buffer,int *fenceFd, float matrix[16])](#oh_nativewindow_getlastflushedbufferv2) | 从OHNativeWindow获取上次送回到buffer队列中的OHNativeWindowBuffer，与OH_NativeWindow_GetLastFlushedBuffer的差异在于matrix不同。 本接口需要与[OH_NativeWindow_NativeObjectUnreference](#oh_nativewindow_nativeobjectunreference)接口配合使用，否则会存在内存泄漏。 本接口为非线程安全类型接口。 |
 | [void OH_NativeWindow_SetBufferHold(OHNativeWindow *window)](#oh_nativewindow_setbufferhold) | 启用单帧缓存机制，通过提前缓存一帧buffer并延迟显示，用于平滑帧率波动。 |
 | [int32_t OH_NativeWindow_WriteToParcel(OHNativeWindow *window, OHIPCParcel *parcel)](#oh_nativewindow_writetoparcel) | 将窗口对象写入IPC序列化对象中。 本接口为非线程安全类型接口。 |
 | [int32_t OH_NativeWindow_ReadFromParcel(OHIPCParcel *parcel, OHNativeWindow **window)](#oh_nativewindow_readfromparcel) | 从IPC序列化对象中读取窗口对象。 本接口将会创建一个OHNativeWindow，当窗口对象使用完，开发者需要与[OH_NativeWindow_DestroyNativeWindow](#oh_nativewindow_destroynativewindow)接口配合使用，否则会存在内存泄漏。 本接口为非线程安全类型接口。 |
@@ -86,6 +86,8 @@ synced_at: "2026-07-28T16:52:15.368249"
 | [int32_t OH_NativeWindow_PreAllocBuffers(OHNativeWindow *window, uint32_t allocBufferCnt)](#oh_nativewindow_preallocbuffers) | 通过OHNativeWindow对象提前申请多块OHNativeWindowBuffer，用以内容生产。 在调用本接口前，需要通过[OH_NativeWindow_NativeWindowHandleOpt](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-external-window-h#oh_nativewindow_nativewindowhandleopt)对OHNativeWindow设置宽高。 本接口为非线程安全类型接口。 |
 | [int32_t OH_NativeWindow_LockBuffer(OHNativeWindow* window, Region region, OHNativeWindowBuffer** buffer)](#oh_nativewindow_lockbuffer) | 通过OHNativeWindow对象申请一块OHNativeWindowBuffer，用以内容生产，并对该OHNativeWindowBuffer加锁。 本接口需要和[OH_NativeWindow_UnlockAndFlushBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-external-window-h#oh_nativewindow_unlockandflushbuffer)接口配合使用。 本接口对OHNativeWindowBuffer加锁后，需要调[OH_NativeWindow_UnlockAndFlushBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-external-window-h#oh_nativewindow_unlockandflushbuffer)接口解锁后才能重新对OHNativeWindowBuffer加锁。 若用本接口重复对OHNativeWindowBuffer加锁，会返回操作非法错误码。 本接口支持通过CPU上的内存读写直接渲染图像。 本接口为非线程安全类型接口。 |
 | [int32_t OH_NativeWindow_UnlockAndFlushBuffer(OHNativeWindow* window)](#oh_nativewindow_unlockandflushbuffer) | 通过OHNativeWindow将生产好内容的OHNativeWindowBuffer放回到Buffer队列中，用以内容消费，并对OHNativeWindowBuffer解锁。 本接口需要和[OH_NativeWindow_LockBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-external-window-h#oh_nativewindow_lockbuffer)接口配合使用。 若用本接口重复对OHNativeWindowBuffer解锁，会返回操作非法错误码。 本接口为非线程安全类型接口。 |
+| [int32_t OH_NativeWindow_Set3DMetadataValue(OHNativeWindow *window, OH_NativeBuffer_3D_MetadataKey metadataKey, int32_t size, uint8_t *metadata)](#oh_nativewindow_set3dmetadatavalue) | 为OHNativeWindow设置3D元数据属性值。 本接口为非线程安全类型接口。 |
+| [int32_t OH_NativeWindow_Get3DMetadataValue(OHNativeWindow *window, OH_NativeBuffer_3D_MetadataKey metadataKey, int32_t *size, uint8_t **metadata)](#oh_nativewindow_get3dmetadatavalue) | 获取OHNativeWindow的3D元数据属性值。 本接口为非线程安全类型接口。 |
 
 #### 枚举类型说明
 
@@ -114,14 +116,14 @@ OH_NativeWindow_NativeWindowHandleOpt函数中的操作码。
 | GET_STRIDE | 获取本地窗口缓冲区步幅，函数中的可变参数是[输出] int32_t *stride。 **废弃版本：** 16 **替代方案：** 使用[OH_NativeWindow_GetBufferHandleFromNative](#oh_nativewindow_getbufferhandlefromnative)接口获取BufferHandle实例，从[BufferHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativewindow-bufferhandle)实例中获取stride值。 |
 | SET_SWAP_INTERVAL | 设置本地窗口缓冲区交换间隔，函数中的可变参数是[输入] int32_t interval。 |
 | GET_SWAP_INTERVAL | 获取本地窗口缓冲区交换间隔，函数中的可变参数是[输出] int32_t *interval。 |
-| SET_TIMEOUT | 设置本地窗口请求缓冲区的超时等待时间，未手动设置时默认值为3000毫秒，函数中的可变参数是[输入] int32_t timeout, 单位为毫秒。 |
+| SET_TIMEOUT | 设置本地窗口请求缓冲区的超时等待时间，未手动设置时默认值为3000毫秒，函数中的可变参数是[输入] int32_t timeout，单位为毫秒。 |
 | GET_TIMEOUT | 获取本地窗口请求缓冲区的超时等待时间，未手动设置时默认值为3000毫秒，函数中的可变参数是[输出] int32_t *timeout，单位为毫秒。 |
 | SET_COLOR_GAMUT | 设置本地窗口缓冲区色彩空间，函数中的可变参数是[输入] int32_t colorGamut，取值具体可见[OH_NativeBuffer_ColorGamut](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-buffer-h#oh_nativebuffer_colorgamut)枚举值。 |
 | GET_COLOR_GAMUT | 获取本地窗口缓冲区色彩空间，函数中的可变参数是[输出] int32_t *colorGamut，取值具体可见[OH_NativeBuffer_ColorGamut](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-buffer-h#oh_nativebuffer_colorgamut)枚举值。 |
 | SET_TRANSFORM | 设置本地窗口缓冲区变换，函数中的可变参数是[输入] int32_t transform，取值具体可见[OH_NativeBuffer_TransformType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-buffer-common-h#oh_nativebuffer_transformtype)枚举值。 |
 | GET_TRANSFORM | 获取本地窗口缓冲区变换，函数中的可变参数是[输出] int32_t *transform，取值具体可见[OH_NativeBuffer_TransformType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-buffer-common-h#oh_nativebuffer_transformtype)枚举值。 |
 | SET_UI_TIMESTAMP | 设置本地窗口缓冲区UI时间戳，函数中的可变参数是[输入] uint64_t uiTimestamp。 |
-| GET_BUFFERQUEUE_SIZE | 获取内存队列大小，函数中的可变参数是[输出] int32_t *size。 **起始版本：** 12 |
+| GET_BUFFERQUEUE_SIZE | 获取缓冲区队列大小，函数中的可变参数是[输出] int32_t *size。 **起始版本：** 12 |
 | SET_SOURCE_TYPE | 设置本地窗口内容来源，函数中的可变参数是[输入] int32_t sourceType，取值具体可见[OHSurfaceSource](#ohsurfacesource)枚举值。 **起始版本：** 12 |
 | GET_SOURCE_TYPE | 获取本地窗口内容来源，函数中的可变参数是[输出] int32_t *sourceType，取值具体可见[OHSurfaceSource](#ohsurfacesource)枚举值。 **起始版本：** 12 |
 | SET_APP_FRAMEWORK_TYPE | 设置本地窗口应用框架名称，函数中的可变参数是[输入] char* frameworkType，最大支持64字节。 **起始版本：** 12 |
@@ -137,7 +139,7 @@ enum OHScalingMode
 ```
  描述
 
-缩放模式Scaling Mode。
+缩放模式。
 
 系统能力： SystemCapability.Graphic.Graphic2D.NativeWindow
 
@@ -544,7 +546,7 @@ BufferHandle *OH_NativeWindow_GetBufferHandleFromNative(OHNativeWindowBuffer *bu
 
 | 类型 | 说明 |
 | --- | --- |
-| [BufferHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativewindow-bufferhandle) | BufferHandle 返回一个指针，指向[BufferHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativewindow-bufferhandle)的结构体实例。 |
+| [BufferHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativewindow-bufferhandle)* | 返回一个指针，指向[BufferHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativewindow-bufferhandle)的结构体实例。 |
 
 #### [h2]OH_NativeWindow_NativeObjectReference()
 
@@ -904,7 +906,7 @@ int32_t OH_NativeWindow_GetLastFlushedBufferV2(OHNativeWindow *window, OHNativeW
 ```
  描述
 
-从OHNativeWindow获取上次送回到buffer队列中的OHNativeWindowBuffer,与OH_NativeWindow_GetLastFlushedBuffer的差异在于matrix不同。
+从OHNativeWindow获取上次送回到buffer队列中的OHNativeWindowBuffer，与OH_NativeWindow_GetLastFlushedBuffer的差异在于matrix不同。
 
 本接口需要与[OH_NativeWindow_NativeObjectUnreference](#oh_nativewindow_nativeobjectunreference)接口配合使用，否则会存在内存泄漏。
 
@@ -1256,3 +1258,63 @@ int32_t OH_NativeWindow_UnlockAndFlushBuffer(OHNativeWindow* window)
 | 类型 | 说明 |
 | --- | --- |
 | int32_t | 执行成功时返回NATIVE_ERROR_OK。 window是空指针时返回NATIVE_ERROR_INVALID_ARGUMENTS。 window的surface成员是空指针时返回NATIVE_ERROR_UNKNOWN。 其他返回值可参考[OHNativeErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-graphic-error-code-h#ohnativeerrorcode)。 |
+
+#### [h2]OH_NativeWindow_Set3DMetadataValue()
+
+```
+int32_t OH_NativeWindow_Set3DMetadataValue(OHNativeWindow *window, OH_NativeBuffer_3D_MetadataKey metadataKey, int32_t size, uint8_t *metadata)
+```
+ 描述
+
+为OHNativeWindow设置3D元数据属性值。
+
+本接口为非线程安全类型接口。
+
+系统能力： SystemCapability.Graphic.Graphic2D.NativeWindow
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [OHNativeWindow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativewindow-nativewindow) *window | 一个指向[OHNativeWindow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativewindow-nativewindow)的结构体实例的指针。 |
+| [OH_NativeBuffer_3D_MetadataKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-buffer-common-h#oh_nativebuffer_3d_metadatakey) metadataKey | OHNativeWindow的3D元数据类型。 |
+| int32_t size | uint8_t向量的大小。 |
+| uint8_t *metadata | 指向uint8_t向量的指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| int32_t | 执行成功时返回NATIVE_ERROR_OK。 window或metadata为空指针时返回NATIVE_ERROR_INVALID_ARGUMENTS。 设置3D元数据失败时返回NATIVE_ERROR_UNKNOWN。 传入不支持的metadataKey时返回NATIVE_ERROR_UNSUPPORTED。 其他返回值可参考[OHNativeErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-graphic-error-code-h#ohnativeerrorcode)。 |
+
+#### [h2]OH_NativeWindow_Get3DMetadataValue()
+
+```
+int32_t OH_NativeWindow_Get3DMetadataValue(OHNativeWindow *window, OH_NativeBuffer_3D_MetadataKey metadataKey, int32_t *size, uint8_t **metadata)
+```
+ 描述
+
+获取OHNativeWindow的3D元数据属性值。
+
+本接口为非线程安全类型接口。
+
+系统能力： SystemCapability.Graphic.Graphic2D.NativeWindow
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [OHNativeWindow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativewindow-nativewindow) *window | 一个指向[OHNativeWindow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativewindow-nativewindow)的结构体实例的指针。 |
+| [OH_NativeBuffer_3D_MetadataKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-buffer-common-h#oh_nativebuffer_3d_metadatakey) metadataKey | OHNativeWindow的3D元数据类型。 |
+| int32_t *size | uint8_t向量的大小。 |
+| uint8_t **metadata | 指向uint8_t向量的二级指针，作为出参使用。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| int32_t | 执行成功时返回NATIVE_ERROR_OK。 window、metadata或size为空指针时返回NATIVE_ERROR_INVALID_ARGUMENTS。 拷贝或分配内存失败，或者获取3D元数据失败时返回NATIVE_ERROR_UNKNOWN。 传入不支持的metadataKey时返回NATIVE_ERROR_UNSUPPORTED。 其他返回值可参考[OHNativeErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-graphic-error-code-h#ohnativeerrorcode)。 |

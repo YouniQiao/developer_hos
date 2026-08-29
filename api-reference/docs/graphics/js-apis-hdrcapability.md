@@ -2,13 +2,13 @@
 title: "@ohos.graphics.hdrCapability (HDR能力)"
 upstream_id: "harmonyos-references/js-apis-hdrcapability"
 catalog: "harmonyos-references"
-content_hash: "fe877c513014"
-synced_at: "2026-07-28T16:52:09.765101"
+content_hash: "00fafe4b91c9"
+synced_at: "2026-08-29T18:17:51.500497"
 ---
 
 # @ohos.graphics.hdrCapability (HDR能力)
 
-本模块提供HDR（High Dynamic Range，高动态显示范围）能力涉及到的相关枚举类型。HDR技术能够显著扩展图像的动态范围和色彩表现力，适用于视频播放、图像显示等场景，可解决传统SDR在高对比度场景下亮部过曝、暗部细节丢失的问题，带来更真实、更丰富的视觉体验。
+本模块提供HDR（高动态显示范围）能力涉及到的相关枚举类型。HDR技术能够显著扩展图像的动态范围和色彩表现力，适用于视频播放、图像显示等场景，可解决传统SDR在高对比度场景下亮部过曝、暗部细节丢失的问题，带来更真实、更丰富的视觉体验。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 11开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 

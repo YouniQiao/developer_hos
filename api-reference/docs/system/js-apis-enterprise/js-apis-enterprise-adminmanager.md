@@ -2,8 +2,8 @@
 title: "@ohos.enterprise.adminManager（admin权限管理）"
 upstream_id: "harmonyos-references/js-apis-enterprise-adminmanager"
 catalog: "harmonyos-references"
-content_hash: "da651acad87c"
-synced_at: "2026-07-28T16:51:09.811211"
+content_hash: "059b3d634ec7"
+synced_at: "2026-08-29T18:17:06.638203"
 ---
 
 # @ohos.enterprise.adminManager（admin权限管理）
@@ -24,7 +24,7 @@ import { adminManager } from '@kit.MDMKit';
 
 disableAdmin(admin: Want, userId?: number): Promise<void>
 
-解除激活指定用户的设备管理应用。使用Promise异步回调。
+解除激活指定用户的设备管理应用。使用Promise异步回调。调用成功后，指定的设备管理应用将被解除激活，不再具备设备管理能力。
 
 需要权限： ohos.permission.MANAGE_ENTERPRISE_DEVICE_ADMIN（仅系统应用支持申请）或ohos.permission.START_PROVISIONING_MESSAGE或ohos.permission.ENTERPRISE_DEACTIVATE_DEVICE_ADMIN
 
@@ -32,7 +32,7 @@ disableAdmin(admin: Want, userId?: number): Promise<void>
 
 - 从API version 20开始，支持申请ohos.permission.START_PROVISIONING_MESSAGE权限。仅当[BYOD](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-term#bring-your-own-device-byod自带设备办公)设备管理应用解除激活自身时，可以申请该权限。
 
-- API 19及之前的版本，需要申请ohos.permission.MANAGE_ENTERPRISE_DEVICE_ADMIN（仅系统应用支持申请）。
+- API version 19及之前的版本，需要申请ohos.permission.MANAGE_ENTERPRISE_DEVICE_ADMIN（仅系统应用支持申请）。
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
@@ -135,7 +135,7 @@ try {
 
 subscribeManagedEventSync(admin: Want, managedEvents: Array<ManagedEvent>): void
 
-订阅系统管理事件。
+订阅系统管理事件。调用成功后，当已订阅的系统管理事件发生时，设备管理应用将收到相应的通知。
 
 从API版本26.0.0开始，非超级设备管理应用调用该接口订阅[MANAGED_EVENT_POLICIES_CHANGED](#managedevent)事件时返回9200002错误码。
 
@@ -150,7 +150,7 @@ subscribeManagedEventSync(admin: Want, managedEvents: Array<ManagedEvent>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
-| managedEvents | Array | 是 | 订阅事件数组。 |
+| managedEvents | Array | 是 | 订阅事件数组，用于指定需要订阅的系统管理事件。数组元素为[ManagedEvent](#managedevent)枚举值，可订阅多个事件类型，如应用安装/卸载/启动/停止事件/系统更新事件等。 |
 
 错误码：
 
@@ -175,7 +175,8 @@ let wantTemp: Want = {
   bundleName: 'com.example.myapplication',
   abilityName: 'EnterpriseAdminAbility'
 };
-let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_BUNDLE_ADDED, adminManager.ManagedEvent.MANAGED_EVENT_BUNDLE_REMOVED];
+let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_BUNDLE_ADDED,
+  adminManager.ManagedEvent.MANAGED_EVENT_BUNDLE_REMOVED];
 
 try {
   adminManager.subscribeManagedEventSync(wantTemp, events);
@@ -189,7 +190,7 @@ try {
 
 unsubscribeManagedEventSync(admin: Want, managedEvents: Array<ManagedEvent>): void
 
-取消订阅系统管理事件。
+取消订阅系统管理事件。调用成功后，将不再收到已取消订阅的系统管理事件通知。
 
 需要权限： ohos.permission.ENTERPRISE_SUBSCRIBE_MANAGED_EVENT
 
@@ -202,7 +203,7 @@ unsubscribeManagedEventSync(admin: Want, managedEvents: Array<ManagedEvent>): vo
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
-| managedEvents | Array | 是 | 取消订阅事件数组。 |
+| managedEvents | Array | 是 | 取消订阅事件数组，用于指定需要取消订阅的系统管理事件。数组元素为[ManagedEvent](#managedevent)枚举值，应与订阅时传入的事件类型一致。 |
 
 错误码：
 
@@ -226,7 +227,8 @@ let wantTemp: Want = {
   bundleName: 'com.example.myapplication',
   abilityName: 'EnterpriseAdminAbility'
 };
-let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_BUNDLE_ADDED, adminManager.ManagedEvent.MANAGED_EVENT_BUNDLE_REMOVED];
+let events: Array<adminManager.ManagedEvent> = [adminManager.ManagedEvent.MANAGED_EVENT_BUNDLE_ADDED,
+  adminManager.ManagedEvent.MANAGED_EVENT_BUNDLE_REMOVED];
 
 try {
   adminManager.unsubscribeManagedEventSync(wantTemp, events);
@@ -365,7 +367,7 @@ getDelegatedBundleNames(admin: Want, policy: string): Array<string>
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
-| policy | string | 是 | 委托策略。 |
+| policy | string | 是 | [委托策略](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-appendix#可委托策略列表)。 |
 
 返回值：
 
@@ -434,7 +436,7 @@ startAdminProvision(admin: Want, type: AdminType, context: common.Context, param
 
 错误码：
 
-以下的错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -462,9 +464,9 @@ const context = this.getUIContext().getHostContext() as common.UIAbilityContext;
 try {
   console.info('context:' + JSON.stringify(context));
   adminManager.startAdminProvision(wantTemp, adminManager.AdminType.ADMIN_TYPE_BYOD, context, recordParameters);
-  console.info('startAdminProvision::success');
+  console.info('Succeeded in starting Admin Provision');
 } catch (error) {
-  console.error('startAdminProvision::errorCode: ' + error.code + ' errorMessage: ' + error.message);
+  console.error('Failed to start Admin Provision::errorCode: ' + error.code + ' errorMessage: ' + error.message);
 }
 ```
 
@@ -472,7 +474,7 @@ try {
 
 enableDeviceAdmin(admin: Want): Promise<void>
 
-[SDA](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-term#super-device-admin-sda超级设备管理员)应用通过该接口可以激活其他[DA](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-term#device-admin-da普通设备管理员)应用，使用Promise异步回调。该接口仅支持超级设备管理应用调用。
+[SDA](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-term#super-device-admin-sda超级设备管理员)应用通过该接口可以激活其他[DA](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-term#device-admin-da普通设备管理员)应用，使用Promise异步回调。调用成功后，指定的DA应用将被激活并具备设备管理能力。该接口仅支持超级设备管理应用调用。
 
 需要权限： ohos.permission.ENTERPRISE_MANAGE_DEVICE_ADMIN
 
@@ -529,7 +531,7 @@ adminManager.enableDeviceAdmin(wantTemp).catch((err: BusinessError) => {
 
 disableDeviceAdmin(admin: Want): Promise<void>
 
-[SDA](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-term#super-device-admin-sda超级设备管理员)应用通过该接口可以解除激活其他[DA](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-term#device-admin-da普通设备管理员)应用，使用Promise异步回调。该接口仅支持超级设备管理应用调用。
+[SDA](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-term#super-device-admin-sda超级设备管理员)应用通过该接口可以解除激活其他[DA](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-term#device-admin-da普通设备管理员)应用，使用Promise异步回调。调用成功后，指定的DA应用将被解除激活，不再具备设备管理能力。该接口仅支持超级设备管理应用调用。
 
 需要权限： ohos.permission.ENTERPRISE_MANAGE_DEVICE_ADMIN
 
@@ -627,7 +629,6 @@ enableSelfDeviceAdmin(admin: Want, credential: string): void
 ```
 import { Want } from '@kit.AbilityKit';
 import { adminManager } from '@kit.MDMKit';
-import { BusinessError } from '@kit.BasicServicesKit';
 
 let wantTemp: Want = {
   // 需根据实际情况进行替换
@@ -640,7 +641,7 @@ let credential: string = '{"enterpriseId": "123456", "appIdentifier": "123456", 
 
 try {
   adminManager.enableSelfDeviceAdmin(wantTemp, credential);
-  console.info(`succeed in enable self device admin.`);
+  console.info(`succeed in enabling self device admin.`);
 } catch (err) {
   console.error(`Failed to enable self device admin. Code: ${err.code}, message: ${err.message}`);
 }

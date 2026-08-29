@@ -2,8 +2,8 @@
 title: "RichEditor"
 upstream_id: "harmonyos-references/ts-basic-components-richeditor"
 catalog: "harmonyos-references"
-content_hash: "4b1f972148b4"
-synced_at: "2026-07-28T16:44:47.844237"
+content_hash: "93f693fe23f8"
+synced_at: "2026-08-29T18:13:59.722784"
 ---
 
 # RichEditor
@@ -223,7 +223,7 @@ AI菜单生效时，选中范围内需包括且仅包括一个完整的AI实体�
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| enable | boolean | undefined | 是 | 是否启用选择文本识别，true表示启用，false表示不启用。 默认值：true。 设置为undefined或null时，取默认值。 |
+| enable | boolean | undefined | 是 | 是否启用文本选择AI菜单功能，true表示启用，false表示不启用。 默认值：true。 设置为undefined或null时，取默认值。 |
 
 #### [h2]enablePreviewText12+
 
@@ -1059,8 +1059,8 @@ Span类型信息。
 | TEXT | 0 | Span类型为文字。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | IMAGE | 1 | Span类型为图像。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | MIXED | 2 | Span类型为图文混合。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| BUILDER12+ | 3 | Span类型为BuilderSpan。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| DEFAULT15+ | 4 | 注册此类型的菜单，但未注册TEXT、IMAGE、MIXED、BUILDER菜单时，文字类型、图像类型、图文混合类型、BuilderSpan类型都会触发并显示此类型对应的菜单。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
+| BUILDER12+ | 3 | Span类型为自定义布局。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| DEFAULT15+ | 4 | 注册此类型的菜单，但未注册TEXT、IMAGE、MIXED、BUILDER菜单时，文字类型、图像类型、图文混合类型、自定义布局类型都会触发并显示此类型对应的菜单。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
 
 #### RichEditorResponseType11+
 
@@ -1194,7 +1194,7 @@ RichEditorSymbolSpanStyle和RichEditorSymbolSpanStyleResult中fontWeight的转�
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | margin | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | [Margin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#margin) | 否 | 是 | 外边距类型，用于描述组件不同方向的外边距。 默认值：四个方向外边距均为0。 参数为Dimension类型时，四个方向外边距同时生效。 |
-| borderRadius | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | [BorderRadiuses](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#borderradiuses9) | 否 | 是 | 圆角类型，用于描述组件边框圆角半径。 默认值：圆角半径为0。 参数为Dimension类型时，不支持以Percentage形式设置 |
+| borderRadius | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | [BorderRadiuses](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#borderradiuses9) | 否 | 是 | 圆角类型，用于描述组件边框圆角半径。 默认值：圆角半径为0。 参数为Dimension类型时，不支持以Percentage形式设置。 |
 
 #### RichEditorOptions
 
@@ -2114,7 +2114,7 @@ SymbolSpan样式选项。
 
 #### RichEditorBuilderSpanOptions11+
 
-设置builder的偏移位置和样式。
+设置builder插入的偏移位置和样式。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -2530,7 +2530,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928265.gif)
+ ![](./img/zh-cn_image_0000002701639802.gif)
 
 #### [h2]示例2（绑定自定义键盘）
 
@@ -2580,7 +2580,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008588.gif)
+ ![](./img/zh-cn_image_0000002731359023.gif)
 
 #### [h2]示例3（绑定自定义菜单）
 
@@ -3112,7 +3112,7 @@ struct SelectionMenu {
 ```
  ![](./img/note_3.0-zh-cn.png) 系统暂未预置加粗、斜体等图标，示例代码使用系统默认图标，开发者使用时需自行替换icons中的资源。
 
-![](./img/zh-cn_image_0000002655848668.png)
+![](./img/zh-cn_image_0000002701799718.png)
 
 #### [h2]示例4（更新图片样式）
 
@@ -3353,7 +3353,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088097.gif)
+ ![](./img/zh-cn_image_0000002731519005.gif)
 
 #### [h2]示例5（Span绑定手势事件）
 
@@ -3453,7 +3453,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928267.gif)
+ ![](./img/zh-cn_image_0000002701639804.gif)
 
 #### [h2]示例6（更新和获取段落样式）
 
@@ -3550,7 +3550,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008590.gif)
+ ![](./img/zh-cn_image_0000002731359025.gif)
 
 #### [h2]示例7（更新预设样式与缩进）
 
@@ -3819,7 +3819,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848670.gif)
+ ![](./img/zh-cn_image_0000002701799720.gif)
 
 #### [h2]示例8（设置文本字重与阴影）
 
@@ -3902,7 +3902,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088099.gif)
+ ![](./img/zh-cn_image_0000002731519007.gif)
 
 #### [h2]示例9（添加用户自定义布局Span）
 
@@ -4198,7 +4198,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928269.gif)
+ ![](./img/zh-cn_image_0000002701639806.gif)
 
 #### [h2]示例10（使用和管理组件内的BuilderSpan）
 
@@ -4543,7 +4543,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008592.gif)
+ ![](./img/zh-cn_image_0000002731359027.gif)
 
 #### [h2]示例11（设置文本识别配置）
 
@@ -4645,7 +4645,7 @@ struct RichEditorDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848672.gif)
+ ![](./img/zh-cn_image_0000002701799722.gif)
 
 #### [h2]示例13（设置行高和字符间距）
 
@@ -4768,7 +4768,7 @@ struct RichEditorDemo03 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088101.png)
+ ![](./img/zh-cn_image_0000002731519009.png)
 
 #### [h2]示例14（自定义粘贴事件）
 
@@ -4802,7 +4802,7 @@ struct RichEditorDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928271.gif)
+ ![](./img/zh-cn_image_0000002701639808.gif)
 
 #### [h2]示例15（配置文字特性效果）
 
@@ -4853,7 +4853,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008594.png)
+ ![](./img/zh-cn_image_0000002731359029.png)
 
 #### [h2]示例16（自定义键盘避让）
 
@@ -4873,7 +4873,7 @@ struct RichEditorExample {
   CustomKeyboardBuilder() {
     Column() {
       Row() {
-        Button('增加特表情包').onClick(() => {
+        Button('增加表情包').onClick(() => {
           this.controller.addTextSpan("\uD83D\uDE0A",
             {
               style:
@@ -4936,7 +4936,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848674.gif)
+ ![](./img/zh-cn_image_0000002701799724.gif)
 
 #### [h2]示例17（查看编辑状态）
 
@@ -4975,7 +4975,7 @@ struct RichEditorOnEditingChange {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088105.gif)
+ ![](./img/zh-cn_image_0000002731519011.gif)
 
 #### [h2]示例18（配置文本变化回调）
 
@@ -5080,7 +5080,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928273.gif)
+ ![](./img/zh-cn_image_0000002701639810.gif)
 
 #### [h2]示例19（配置输入法回车键功能）
 
@@ -5114,7 +5114,7 @@ struct SoftKeyboardEnterTypeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008596.gif)
+ ![](./img/zh-cn_image_0000002731359031.gif)
 
 #### [h2]示例20（设置段落折行规则）
 
@@ -5192,7 +5192,7 @@ struct LineBreakStrategyExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848676.gif)
+ ![](./img/zh-cn_image_0000002701799726.gif)
 
 #### [h2]示例21（属性字符串基本功能）
 
@@ -5390,7 +5390,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088107.gif)
+ ![](./img/zh-cn_image_0000002731519013.gif)
 
 #### [h2]示例22（获取布局信息）
 
@@ -5460,7 +5460,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928275.gif)
+ ![](./img/zh-cn_image_0000002701639812.gif)
 
 #### [h2]示例23（设置系统默认菜单扩展项）
 
@@ -5555,11 +5555,11 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008598.gif)
+ ![](./img/zh-cn_image_0000002731359033.gif)
 
 #### [h2]示例24（组件部分常用属性）
 
-从API version 18开始，该示例通过[barState](#barstate13)属性设置组件滚动条的显示模式。通过[enableKeyboardOnFocus](#enablekeyboardonfocus12)属性设置组件通过点击以外的方式获焦时，是否主动拉起软键盘。通过[enableHapticFeedback](#enablehapticfeedback13)属性设置组件是否支持触感反馈。通过[getPreviewText](#getpreviewtext12)接口获取组件预上屏信息。通过[stopBackPress](#stopbackpress18)属性设置是否阻止返回键向其它组件或应用侧传递。
+从API version 18开始，该示例通过[barState](#barstate13)属性设置组件滚动条的显示模式。通过[enableKeyboardOnFocus](#enablekeyboardonfocus12)属性设置组件通过点击以外的方式获焦时，是否主动拉起软键盘。通过[enableHapticFeedback](#enablehapticfeedback13)属性设置组件是否支持触感反馈。通过[getPreviewText](#getpreviewtext12)接口获取组件预上屏信息。通过[stopBackPress](#stopbackpress18)属性设置是否阻止返回键向其他组件或应用侧传递。
 
 从API version 21开始，该示例通过[scrollBarColor](#scrollbarcolor21)属性设置RichEditor组件滚动条颜色。
 
@@ -5647,7 +5647,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848678.gif)
+ ![](./img/zh-cn_image_0000002701799728.gif)
 
 #### [h2]示例25（获取光标相对组件位置的矩形）
 
@@ -5700,7 +5700,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088109.gif)
+ ![](./img/zh-cn_image_0000002731519015.gif)
 
 #### [h2]示例26（设置最大行数和最大字符数）
 
@@ -5796,7 +5796,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928277.gif)
+ ![](./img/zh-cn_image_0000002701639814.gif)
 
 #### [h2]示例27（文本设置Url样式）
 
@@ -5837,7 +5837,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008600.gif)
+ ![](./img/zh-cn_image_0000002731359035.gif)
 
 #### [h2]示例28（开启带样式的撤销还原能力）
 
@@ -5976,7 +5976,7 @@ struct StyledUndo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848680.gif)
+ ![](./img/zh-cn_image_0000002701799730.gif)
 
 #### [h2]示例29（文本设置预设段落样式）
 
@@ -6071,7 +6071,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088111.gif)
+ ![](./img/zh-cn_image_0000002731519017.gif)
 
 #### [h2]示例30（设置装饰线粗细和多装饰线）
 
@@ -6200,7 +6200,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928279.gif)
+ ![](./img/zh-cn_image_0000002701639816.gif)
 
 #### [h2]示例31（设置开启中西文自动间距）
 
@@ -6306,7 +6306,7 @@ struct AutoSpacing {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008602.gif)
+ ![](./img/zh-cn_image_0000002731359037.gif)
 
 #### [h2]示例32（设置文本选择的AI菜单）
 
@@ -6337,7 +6337,7 @@ struct SelectedDataDetectorDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848682.gif)
+ ![](./img/zh-cn_image_0000002701799732.gif)
 
 #### [h2]示例33（设置监听输入法绑定事件）
 
@@ -6390,7 +6390,7 @@ struct SetOnWillAttachIME {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088113.gif)
+ ![](./img/zh-cn_image_0000002731519019.gif)
 
 #### [h2]示例34（删除输入框文本尾部字符）
 
@@ -6446,7 +6446,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928281.gif)
+ ![](./img/zh-cn_image_0000002701639818.gif)
 
 #### [h2]示例35（优化小语种文字显示）
 
@@ -6533,7 +6533,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008604.gif)
+ ![](./img/zh-cn_image_0000002731359039.gif)
 
 #### [h2]示例36（设置行首标点符号压缩和行尾标点符号悬挂）
 
@@ -6586,7 +6586,7 @@ struct PunctuationDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848684.gif)
+ ![](./img/zh-cn_image_0000002701799734.gif)
 
 #### [h2]示例37（设置拖动预览样式）
 
@@ -6617,7 +6617,7 @@ struct RichEditorDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088115.gif)
+ ![](./img/zh-cn_image_0000002731519021.gif)
 
 #### [h2]示例38（设置单行模式）
 
@@ -6657,7 +6657,7 @@ struct SingleLineDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928283.gif)
+ ![](./img/zh-cn_image_0000002701639820.gif)
 
 #### [h2]示例39（设置属性字符串样式的提示文本）
 
@@ -6736,7 +6736,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008606.png)
+ ![](./img/zh-cn_image_0000002731359041.png)
 
 #### [h2]示例40（设置孤立字符不成行）
 
@@ -6784,7 +6784,7 @@ struct RichEditorDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848686.jpg)
+ ![](./img/zh-cn_image_0000002701799736.jpg)
 
 #### [h2]示例41（设置水平滚动）
 
@@ -6827,7 +6827,7 @@ struct HorizontalScrollDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088117.gif)
+ ![](./img/zh-cn_image_0000002731519023.gif)
 
 #### [h2]示例42（设置文本着色器效果）
 
@@ -6929,7 +6929,7 @@ struct ShaderColorStyle {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928285.png)
+ ![](./img/zh-cn_image_0000002701639822.png)
 
 #### [h2]示例43（将指定范围的文字滚动到可视区内）
 
@@ -6966,4 +6966,4 @@ struct ScrollToVisibleDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008608.gif)
+ ![](./img/zh-cn_image_0000002731359043.gif)

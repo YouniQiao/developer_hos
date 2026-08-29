@@ -2,8 +2,8 @@
 title: "Context (Stage模型的上下文基类)"
 upstream_id: "harmonyos-references/js-apis-inner-application-context"
 catalog: "harmonyos-references"
-content_hash: "7692fc04be09"
-synced_at: "2026-08-07T15:55:54.269007"
+content_hash: "ea12e58f4ca3"
+synced_at: "2026-08-29T18:12:03.767002"
 ---
 
 # Context (Stage模型的上下文基类)
@@ -17,8 +17,8 @@ Context是Stage模型的上下文基类，主要用于访问特定应用程序�
 
 #### 不同类型Context的继承和持有关系
 
-- 不同类型Context的继承关系如下： ![](./img/zh-cn_image_0000002668302586.png)
-- 不同类型Context的持有关系如下： ![](./img/zh-cn_image_0000002668462466.png)
+- 不同类型Context的继承关系如下： ![](./img/zh-cn_image_0000002701639374.png)
+- 不同类型Context的持有关系如下： ![](./img/zh-cn_image_0000002731358595.png)
 
 ![](./img/note_3.0-zh-cn.png) [UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)是指UI实例上下文，用于关联窗口与UI页面。与本文档中的应用上下文Context无直接关联，不存在继承或持有关系。
 
@@ -50,7 +50,7 @@ Context提供了ability或application的上下文的能力，包括访问特定�
 | distributedFilesDir | string | 否 | 否 | 分布式文件目录，详情参考[应用沙箱目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)。 **元服务API**：从API version 11开始，该接口支持在元服务中使用。 |
 | cloudFileDir12+ | string | 否 | 否 | 云文件目录。 **元服务API**：从API version 12开始，该接口支持在元服务中使用。 |
 | logFileDir22+ | string | 否 | 否 | 日志文件目录。 **元服务API**：从API version 22开始，该接口支持在元服务中使用。 |
-| eventHub | [EventHub](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-eventhub) | 否 | 否 | 事件中心，提供订阅、取消订阅、触发事件对象。 **元服务API**：从API version 11开始，该接口支持在元服务中使用。 |
+| eventHub | [EventHub](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-eventhub) | 否 | 否 | 事件中心，提供订阅、取消订阅、触发事件的能力。 **元服务API**：从API version 11开始，该接口支持在元服务中使用。 |
 | area | contextConstant.[AreaMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-contextconstant#areamode) | 否 | 否 | 文件分区信息，按加密等级[AreaMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-contextconstant#areamode) 进行分区。 **元服务API**：从API version 11开始，该接口支持在元服务中使用。 |
 | processName18+ | string | 否 | 否 | 当前应用的进程名。 **元服务API**：从API version 18开始，该接口支持在元服务中使用。 |
 
@@ -261,7 +261,7 @@ export default class EntryAbility extends UIAbility {
 
 createAreaModeContext(areaMode: contextConstant.AreaMode): Context
 
-创建特定数据加密级别的应用上下文。开发者可以调用该接口创建不同加密级别的上下文，从而获取对应的沙箱路径。
+创建特定数据加密等级的应用上下文。开发者可以调用该接口创建不同加密级别的上下文，从而获取对应的沙箱路径。
 
 元服务API：从API version 18开始，该接口支持在元服务中使用。
 
@@ -336,6 +336,7 @@ createDisplayContext(displayId: number): Context
 ```
 import { common, UIAbility } from '@kit.AbilityKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
+import { BusinessError } from '@kit.BasicServicesKit';
 
 export default class EntryAbility extends UIAbility {
   onCreate() {

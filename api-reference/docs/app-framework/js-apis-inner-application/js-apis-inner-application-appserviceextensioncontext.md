@@ -2,8 +2,8 @@
 title: "AppServiceExtensionContext (应用后台服务扩展组件上下文)"
 upstream_id: "harmonyos-references/js-apis-inner-application-appserviceextensioncontext"
 catalog: "harmonyos-references"
-content_hash: "a0b20dad5f92"
-synced_at: "2026-07-09T00:57:08.897084"
+content_hash: "914ca13b6a04"
+synced_at: "2026-08-29T18:12:03.055697"
 ---
 
 # AppServiceExtensionContext (应用后台服务扩展组件上下文)
@@ -178,8 +178,8 @@ const TAG: string = '[AppServiceExtensionAbility]';
 export default class AppServiceExtension extends AppServiceExtensionAbility {
   connection: number = 0;
 
-  onCreate(localWant: Want) {
-    let want: Want = {
+  onCreate(want: Want) {
+    let wantInfo: Want = {
       bundleName: 'com.example.myapp',
       abilityName: 'MyAbility'
     };
@@ -197,7 +197,7 @@ export default class AppServiceExtension extends AppServiceExtensionAbility {
     };
 
     try {
-      this.connection = this.context.connectServiceExtensionAbility(want, callback);
+      this.connection = this.context.connectServiceExtensionAbility(wantInfo, callback);
     } catch (paramError) {
       commRemote = null;
       // 处理入参错误异常
@@ -232,7 +232,7 @@ disconnectServiceExtensionAbility(connection: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| connection | number | 是 | 在[connectServiceExtensionAbility](#connectserviceextensionability)中返回的连接id。 |
+| connection | number | 是 | 在[connectServiceExtensionAbility](#connectserviceextensionability)中返回的连接ID。 |
 
 返回值：
 

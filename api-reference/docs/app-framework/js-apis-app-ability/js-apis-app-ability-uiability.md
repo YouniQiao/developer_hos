@@ -2,8 +2,8 @@
 title: "@ohos.app.ability.UIAbility (带界面的应用组件)"
 upstream_id: "harmonyos-references/js-apis-app-ability-uiability"
 catalog: "harmonyos-references"
-content_hash: "fc72cee9c6e4"
-synced_at: "2026-07-28T16:40:34.417991"
+content_hash: "ae56bb0c4438"
+synced_at: "2026-08-29T18:11:58.645879"
 ---
 
 # @ohos.app.ability.UIAbility (带界面的应用组件)
@@ -20,7 +20,7 @@ UIAbility是包含UI界面的应用组件，继承自[Ability](https://developer
 
 图1 UIAbility生命周期状态
 
-![](./img/zh-cn_image_0000002655848238.png)
+![](./img/zh-cn_image_0000002731358591.png)
 
 - Create：表示UIAbility实例已创建。系统会在该状态下触发其[onCreate](#oncreate)回调函数，开发者可以在[onCreate](#oncreate)中执行初始化操作。
 - Foreground：表示UIAbility被拉到前台。系统会在该状态下触发其[onForeground](#onforeground)回调函数，开发者可以在[onForeground](#onforeground)中申请应用所需的资源。
@@ -33,7 +33,7 @@ UIAbility是包含UI界面的应用组件，继承自[Ability](https://developer
 
 图2 Call调用示意图
 
-![](./img/zh-cn_image_0000002685925359.png)
+![](./img/zh-cn_image_0000002731516071.png)
 
 - Caller UIAbility调用[startAbilityByCall()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext#startabilitybycall)接口获取[Caller](#caller)对象，并使用Caller对象的[call](#call)方法向Callee UIAbility发送数据。
 - Callee UIAbility持有一个[Callee](#callee)对象，通过Callee的[on](#on)方法注册回调函数，用于接收Caller对象发送的数据。
@@ -514,9 +514,9 @@ export default class MyUIAbility extends UIAbility {
 
 onContinue(wantParam: Record<string, Object>): AbilityConstant.OnContinueResult | Promise<AbilityConstant.OnContinueResult>
 
-当UIAbility准备跨端迁移时触发，可以保存待迁移的业务数据。
+当UIAbility准备跨端迁移时触发，可以保存待迁移的业务数据。支持同步返回和使用Promise异步调用。
 
-![](./img/note_3.0-zh-cn.png) 对于API version 18（不含18） 之前版本仅支持同步调用，从API version 18及后续版本可支持异步调用。
+![](./img/note_3.0-zh-cn.png) 对于API version 18之前的版本，仅支持同步调用；API version 18及后续版本，支持Promise异步调用。
 
 元服务API：从API version 11开始，该接口支持在元服务中使用。
 
@@ -781,9 +781,9 @@ export default class EntryAbility extends UIAbility {
     // 开发者定义预关闭动作
     // 例如拉起另一个ability，根据ability处理结果执行异步关闭
     let want: Want = {
-      bundleName: "com.example.myapplication",
-      moduleName: "entry",
-      abilityName: "SecondAbility"
+      bundleName: 'com.example.myapplication',
+      moduleName: 'entry',
+      abilityName: 'SecondAbility'
     }
     this.context.startAbilityForResult(want)
       .then((result) => {
@@ -796,7 +796,7 @@ export default class EntryAbility extends UIAbility {
       // 异常处理
       console.error('startAbilityForResult failed, err:' + JSON.stringify(err));
       this.context.terminateSelf();
-    })
+    });
 
     return true; // 已定义预关闭操作后，返回true表示UIAbility取消关闭
   }
@@ -1435,7 +1435,7 @@ on(method: string, callback: CalleeCallback): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | method | string | 是 | 由Caller和Callee双方约定好的方法名，Callee方通过该字段区分消息类型。 |
-| callback | [CalleeCallback](#calleecallback) | 是 | 一个[rpc.MessageSequence](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-rpc#messagesequence9)类型入参的js通知同步回调函数, 回调函数至少要返回一个空的[rpc.Parcelable](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-rpc#parcelable9)数据对象, 其他视为函数执行错误。 |
+| callback | [CalleeCallback](#calleecallback) | 是 | 一个[rpc.MessageSequence](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-rpc#messagesequence9)类型入参的js通知同步回调函数， 回调函数至少要返回一个空的[rpc.Parcelable](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-rpc#parcelable9)数据对象， 其他视为函数执行错误。 |
 
 错误码：
 

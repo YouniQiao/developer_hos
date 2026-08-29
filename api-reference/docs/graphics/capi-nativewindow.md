@@ -2,15 +2,15 @@
 title: "NativeWindow"
 upstream_id: "harmonyos-references/capi-nativewindow"
 catalog: "harmonyos-references"
-content_hash: "5ca6aeb6e31d"
-synced_at: "2026-07-09T01:00:54.080897"
+content_hash: "f4926eee2190"
+synced_at: "2026-08-29T18:17:52.139617"
 ---
 
 # NativeWindow
 
 #### 概述
 
-提供NativeWindow功能，作为数据生产者，可用来和egl对接。
+提供NativeWindow功能，作为数据生产者，可用来和EGL对接。
 
 起始版本： 8
 

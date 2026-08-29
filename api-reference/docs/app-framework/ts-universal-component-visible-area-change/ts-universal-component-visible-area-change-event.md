@@ -2,8 +2,8 @@
 title: "组件可见区域变化事件"
 upstream_id: "harmonyos-references/ts-universal-component-visible-area-change-event"
 catalog: "harmonyos-references"
-content_hash: "feffe6f4a8b3"
-synced_at: "2026-07-28T16:42:01.374362"
+content_hash: "d4474af9133a"
+synced_at: "2026-08-29T18:12:46.717662"
 ---
 
 # 组件可见区域变化事件
@@ -94,7 +94,7 @@ onVisibleAreaApproximateChange(options: VisibleAreaEventOptions, event: VisibleA
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | options | [VisibleAreaEventOptions](#visibleareaeventoptions12) | 是 | 可见区域变化相关的配置参数，用于设置可见区域回调阈值、期望计算间隔以及可见区域计算模式。 |
-| event | [VisibleAreaChangeCallback](#visibleareachangecallback12) | undefined | 是 | onVisibleAreaApproximateChange事件的回调函数。当组件可见面积与自身面积的比值达到options中设置的阈值时触发该回调，可见区域比例计算间隔由options中的expectedUpdateInterval参数决定。传入undefined表示不设置该回调。 |
+| event | [VisibleAreaChangeCallback](#visibleareachangecallback12) | undefined | 是 | onVisibleAreaChange事件的回调函数。当组件可见面积与自身面积的比值达到options中设置的阈值时触发该回调，可见区域比例计算间隔由options中的expectedUpdateInterval参数决定。 |
 
 返回值：
 
@@ -352,11 +352,11 @@ struct ScrollExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685927933.gif)
+ ![](./img/zh-cn_image_0000002731358689.gif)
 
-#### [h2]示例3 (设置measureFromViewport计算子组件超出父组件显示时的可见区域)
+#### [h2]示例3 (设置measureFromViewport子组件超出父组件显示)
 
-从API version 22开始，该示例展示onVisibleAreaChange事件设置measureFromViewport参数后的效果对比，主要差异体现在回调返回的组件可见比例（currentRatio）上。设置measureFromViewport为true时，返回的组件可见比例（currentRatio）更符合实际效果。由于不同设备的屏幕像素密度不同，可见区域变化事件的计算过程涉及小数取整，currentRatio可能存在微小差异。
+从API version 22开始，该示例展示onVisibleAreaChange事件设置measureFromViewport参数后的效果对比，主要差异体现在回调返回的组件可见比例（currentRatio）上。设置measureFromViewport为true时，返回的组件可见比例（currentRatio）更符合实际效果。该示例在不同设备上currentRatio会有微小差异。
 
 ```
 @Entry
@@ -464,4 +464,4 @@ struct OnVisibleAreaChangeSample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008254.jpg)
+ ![](./img/zh-cn_image_0000002701799384.jpg)

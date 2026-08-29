@@ -2,8 +2,8 @@
 title: "net_http_type.h"
 upstream_id: "harmonyos-references/capi-net-http-type-h"
 catalog: "harmonyos-references"
-content_hash: "6334f72c9b13"
-synced_at: "2026-07-28T16:50:44.715830"
+content_hash: "9de202024332"
+synced_at: "2026-08-29T18:16:44.558960"
 ---
 
 # net_http_type.h
@@ -66,7 +66,7 @@ synced_at: "2026-07-28T16:50:44.715830"
 | NET_HTTPMETHOD_DELETE "DELETE" | HTTP请求DELETE方法。 **起始版本：** 20 |
 | NET_HTTP_METHOD_POST "POST" | HTTP请求POST方法。 **起始版本：** 20 |
 | NET_HTTP_METHOD_PUT "PUT" | HTTP请求PUT方法。 **起始版本：** 20 |
-| NET_HTTP_METHOD_PATCH "CONNECT" | HTTP请求CONNECT方法。 **起始版本：** 20 |
+| NET_HTTP_METHOD_PATCH "PATCH" | HTTP请求PATCH方法。 **起始版本：** 20 |
 
 #### [h2]函数
 
@@ -125,6 +125,7 @@ enum Http_ErrCode
 | OH_HTTP_SSL_CA_NOT_EXIST = (OH_HTTP_NETSTACK_E_BASE + 77) | SSL CA证书不存在或无法访问。 |
 | OH_HTTP_REMOTE_FILE_NOT_FOUND = (OH_HTTP_NETSTACK_E_BASE + 78) | 远端文件未找到。 |
 | OH_HTTP_AUTHENTICATION_ERROR = (OH_HTTP_NETSTACK_E_BASE + 94) | 身份验证错误。 |
+| OH_HTTP_REQUEST_INTERCEPTED = (OH_HTTP_NETSTACK_E_BASE + 996) | 请求被HTTP全局拦截器拦截。 |
 | OH_HTTP_ACCESS_DOMAIN_NOT_ALLOWED = (OH_HTTP_NETSTACK_E_BASE + 998) | 不允许访问该域。 |
 | OH_HTTP_UNKNOWN_ERROR = (OH_HTTP_NETSTACK_E_BASE + 999) | 未知错误。 |
 

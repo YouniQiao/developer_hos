@@ -1,12 +1,12 @@
 ---
-title: "resultSet（结果集）"
+title: "resultSet (结果集)"
 upstream_id: "harmonyos-references/js-apis-data-resultset"
 catalog: "harmonyos-references"
-content_hash: "39576fc12352"
-synced_at: "2026-07-09T00:57:17.902162"
+content_hash: "437566e8b526"
+synced_at: "2026-08-29T18:12:13.917031"
 ---
 
-# resultSet（结果集）
+# resultSet (结果集)
 
 结果集是指用户调用关系型数据库查询接口之后返回的结果集合，提供了多种灵活的数据访问方式，以便用户获取各项数据。
 
@@ -28,8 +28,9 @@ let predicates = new dataRdb.RdbPredicates("EMPLOYEE");
 predicates.equalTo("AGE", 18);
 let promise = rdbStore.query(predicates, ["ID", "NAME", "AGE", "SALARY", "CODES"]);
 promise.then((resultSet) => {
-  console.info(TAG + "resultSet columnNames:" + resultSet.columnNames);
-  console.info(TAG + "resultSet columnCount:" + resultSet.columnCount);
+  console.info("resultSet columnNames:" + resultSet.columnNames);
+  console.info("resultSet columnCount:" + resultSet.columnCount);
+  resultSet.close();
 });
 ```
 
@@ -249,6 +250,7 @@ goToNextRow(): boolean
 let predicatesgoNext = new dataRdb.RdbPredicates("EMPLOYEE");
 let promisequerygoNext = rdbStore.query(predicatesgoNext, ["ID", "NAME", "AGE", "SALARY", "CODES"]);
 promisequerygoNext.then((resultSet) => {
+  resultSet.goToNextRow();
   resultSet.close();
 }).catch((err) => {
   console.error('query failed');
@@ -275,6 +277,7 @@ goToPreviousRow(): boolean
 let predicatesgoPrev = new dataRdb.RdbPredicates("EMPLOYEE");
 let promisequerygoPrev = rdbStore.query(predicatesgoPrev, ["ID", "NAME", "AGE", "SALARY", "CODES"]);
 promisequerygoPrev.then((resultSet) => {
+  resultSet.goToPreviousRow();
   resultSet.close();
 }).catch((err) => {
   console.error('query failed');

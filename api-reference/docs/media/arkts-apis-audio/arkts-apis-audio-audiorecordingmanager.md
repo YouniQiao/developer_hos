@@ -2,19 +2,20 @@
 title: "Interface (AudioRecordingManager)"
 upstream_id: "harmonyos-references/arkts-apis-audio-audiorecordingmanager"
 catalog: "harmonyos-references"
-content_hash: "c8988908fcf4"
-synced_at: "2026-07-28T16:51:25.511401"
+content_hash: "e885583aaba4"
+synced_at: "2026-08-29T18:17:18.286873"
 ---
 
 # Interface (AudioRecordingManager)
 
-录音策略管理，提供协同录音和录音控制能力。
+AudioRecordingManager是音频系统中的录音策略管理模块。本模块提供录音策略管理能力，包括协同录音和录音控制能力。当需要配置录音策略或管理系统录音控制面板时，使用本模块接口完成相关操作。
 
 在使用AudioRecordingManager的接口之前，需先通过[getRecordingManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiomanager#getrecordingmanager)获取AudioRecordingManager实例。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 本模块首批接口从API版本26.0.0开始支持。
+- 本模块首批接口从API版本7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
+- 本Interface首批接口从API版本26.0.0开始支持。
 - 本模块接口仅可在Stage模型下使用。
 
 #### 导入模块
@@ -72,6 +73,7 @@ let config: audio.SystemRecordControllerConfig = {
   sourceType: audio.SourceType.SOURCE_TYPE_MIC
 };
 
+// 启用系统录音控制面板，让用户选择录音设备。
 audioRecordingManager.enableSystemRecordController(true, config).then(() => {
   console.info('Succeeded in enabling system record controller.');
 }).catch((err: BusinessError) => {

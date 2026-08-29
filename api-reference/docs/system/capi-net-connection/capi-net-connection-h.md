@@ -2,8 +2,8 @@
 title: "net_connection.h"
 upstream_id: "harmonyos-references/capi-net-connection-h"
 catalog: "harmonyos-references"
-content_hash: "2dd270cf5c47"
-synced_at: "2026-07-28T16:50:44.200261"
+content_hash: "fdec23164c55"
+synced_at: "2026-08-29T18:16:44.166985"
 ---
 
 # net_connection.h
@@ -193,7 +193,7 @@ int32_t OH_NetConn_GetNetCapabilities(NetConn_NetHandle *netHandle, NetConn_NetC
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 0 - 成功。 201 - 缺少权限。 401 - 参数错误. 2100002 - 无法连接到服务。 2100003 - 内部错误。 |
+| int32_t | 0 - 成功。201 - 缺少权限。 401 - 参数错误。2100002 - 无法连接到服务。 2100003 - 内部错误。 |
 
 #### [h2]OH_NetConn_GetDefaultHttpProxy()
 
@@ -218,7 +218,7 @@ int32_t OH_NetConn_GetDefaultHttpProxy(NetConn_HttpProxy *httpProxy)
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 0 - 成功。 201 - 缺少权限。 401 - 参数错误. 2100002 - 无法连接到服务。 2100003 - 内部错误。 |
+| int32_t | 0 - 成功。201 - 缺少权限。 401 - 参数错误。2100002 - 无法连接到服务。 2100003 - 内部错误。 |
 
 #### [h2]OH_NetConn_GetAddrInfo()
 
@@ -372,6 +372,10 @@ int32_t OH_NetConn_RegisterDnsResolver(OH_NetConn_CustomDnsResolver resolver)
 
 起始版本： 13
 
+废弃版本： 26.0.0
+
+替代接口： OH_NetConn_RegisterCustomDnsResolver
+
 参数：
 
 | 参数项 | 描述 |
@@ -396,6 +400,10 @@ int32_t OH_NetConn_UnregisterDnsResolver(void)
 系统能力： SystemCapability.Communication.NetManager.Core
 
 起始版本： 13
+
+废弃版本： 26.0.0
+
+替代接口： OH_NetConn_UnregisterCustomDnsResolver
 
 返回：
 
@@ -524,7 +532,7 @@ int32_t OH_NetConn_RegisterAppHttpProxyCallback(OH_NetConn_AppHttpProxyChange ap
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_NetConn_AppHttpProxyChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-net-connection-type-h#oh_netconn_apphttpproxychange) appHttpProxyChange | 需要注册的监听回调。 |
-| uint32_t *callbackId | 回调注册后生成的id, 关联已注册的回调。 |
+| uint32_t *callbackId | 回调注册后生成的id，关联已注册的回调。 |
 
 返回：
 

@@ -2,8 +2,8 @@
 title: "手势拦截增强"
 upstream_id: "harmonyos-references/ts-gesture-blocking-enhancement"
 catalog: "harmonyos-references"
-content_hash: "bdc21485b91a"
-synced_at: "2026-08-03T17:09:44.437642"
+content_hash: "64965fadee89"
+synced_at: "2026-08-29T18:13:13.748575"
 ---
 
 # 手势拦截增强
@@ -136,7 +136,7 @@ type GestureRecognizerJudgeBeginCallback = (event: BaseGestureEvent, current: Ge
 | event | [BaseGestureEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#basegestureevent11对象说明) | 是 | 当前基础手势事件信息。 |
 | current | [GestureRecognizer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#gesturerecognizer12) | 是 | 当前即将响应的识别器对象。 |
 | recognizers | Array | 是 | 响应链上的其他手势识别器对象。 |
-| touchRecognizers20+ | Array | 否 | 响应链上的触摸识别器对象。未传入时，表示在当前手势绑定组件及其子孙组件没有可响应的触摸识别器。 |
+| touchRecognizers20+ | Array | 否 | 响应链上的Touch识别器对象。未传入时，表示在当前手势绑定组件及其子孙组件没有可响应的Touch识别器。 |
 
 返回值：
 
@@ -459,7 +459,7 @@ struct FatherControlChild {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002689679409.gif)
+ ![](./img/zh-cn_image_0000002731518789.gif)
 
 #### [h2]示例2（嵌套场景下拦截内部容器手势）
 
@@ -512,7 +512,7 @@ struct Index {
               Column().width('100%').height('100%').backgroundColor(Color.Pink)
             }.tabBar(new SubTabBarStyle('pink'))
           }
-          .onAnimationStart((_index: number, targetIndex: number) => {
+          .onAnimationStart((index: number, targetIndex: number) => {
             console.info(`ets onGestureRecognizerJudgeBegin child: ${targetIndex}`);
             this.innerSelectedIndex = targetIndex;
           })
@@ -542,7 +542,7 @@ struct Index {
           Column().width('100%').height('100%').backgroundColor(Color.Brown)
         }.tabBar(this.tabBuilder(2, 'brown'))
       }
-      .onAnimationStart((_index: number, targetIndex: number, _event: TabsAnimationEvent) => {
+      .onAnimationStart((index: number, targetIndex: number, event: TabsAnimationEvent) => {
         // 切换动画开始时触发该回调。目标页签显示下划线。
         this.selectedIndex = targetIndex;
       })
@@ -550,7 +550,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002659440076.gif)
+ ![](./img/zh-cn_image_0000002701639590.gif)
 
 #### [h2]示例3（拦截手势获取属性）
 
@@ -633,7 +633,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002659600004.gif)
+ ![](./img/zh-cn_image_0000002731358811.gif)
 
 #### [h2]示例4（手势触发成功时取消子组件上的Touch事件）
 
@@ -736,7 +736,7 @@ struct FatherControlChild {
       })
       .onGestureRecognizerJudgeBegin((event: BaseGestureEvent, current: GestureRecognizer,
         others: Array<GestureRecognizer>,
-        touchRecognizers?: Array<TouchRecognizer>) => { // 在识别器即将要成功时，查找子组件触摸识别器并取消其Touch事件
+        touchRecognizers?: Array<TouchRecognizer>) => { // 在识别器即将要成功时，查找子组件Touch识别器并取消其Touch事件
         if (current && touchRecognizers) {
           let target = current.getEventTargetInfo();
           if (target) {
@@ -802,7 +802,7 @@ struct FatherControlChild {
                 this.currentRecognizer.setEnabled(false)
               }
             }
-            this.lastOffset = event.offsetY;
+            this.lastOffset = event.offsetY
           })
       )
 
@@ -831,7 +831,7 @@ struct FatherControlChild {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002689559587.gif)
+ ![](./img/zh-cn_image_0000002701799506.gif)
 
 #### [h2]示例5（自定义手势识别器是否参与手势处理）
 
@@ -919,7 +919,7 @@ struct TouchTestDoneExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002689679411.gif)
+ ![](./img/zh-cn_image_0000002731518791.gif)
 
 #### [h2]示例6（自定义干预事件和手势的收集结果）
 
@@ -1001,7 +1001,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002659440078.gif)
+ ![](./img/zh-cn_image_0000002701639592.gif)
 
 示例对应的组件树如下图所示。
 
@@ -1155,4 +1155,4 @@ struct FatherControlChild {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002689679409.gif)
+ ![](./img/zh-cn_image_0000002731518789.gif)

@@ -2,8 +2,8 @@
 title: "oh_rdb_transaction.h"
 upstream_id: "harmonyos-references/capi-oh-rdb-transaction-h"
 catalog: "harmonyos-references"
-content_hash: "df153d7f4c39"
-synced_at: "2026-07-28T16:40:51.567827"
+content_hash: "55d310c83292"
+synced_at: "2026-08-29T18:12:14.820871"
 ---
 
 # oh_rdb_transaction.h
@@ -99,7 +99,7 @@ OH_RDB_TransOptions *OH_RdbTrans_CreateOptions(void)
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_RDB_TransOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-rdb-transoptions) | 执行成功时返回指向[OH_RDB_TransOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-rdb-transoptions)实例的指针。否则返回nullptr。 使用完成后，必须通过[OH_RdbTrans_DestroyOptions](#oh_rdbtrans_destroyoptions)接口释放内存。 |
+| [OH_RDB_TransOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-rdb-transoptions) * | 执行成功时返回指向[OH_RDB_TransOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-rdb-transoptions)实例的指针。否则返回NULL。 使用完成后，必须通过[OH_RdbTrans_DestroyOptions](#oh_rdbtrans_destroyoptions)接口释放内存。 |
 
 #### [h2]OH_RdbTrans_DestroyOptions()
 
@@ -350,7 +350,7 @@ int OH_RdbTrans_Delete(OH_Rdb_Transaction *trans, const OH_Predicates *predicate
 | --- | --- |
 | [OH_Rdb_Transaction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-rdb-transaction) *trans | 指向[OH_Rdb_Transaction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-rdb-transaction)实例的指针。 |
 | const [OH_Predicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-predicates) *predicates | 表示[OH_Predicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-predicates)指定的删除条件。 |
-| int64_t *changes | 表示删除成功的次数。 |
+| int64_t *changes | 输出参数，表示删除成功的次数。 |
 
 返回：
 
@@ -382,7 +382,7 @@ OH_Cursor *OH_RdbTrans_Query(OH_Rdb_Transaction *trans, const OH_Predicates *pre
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Cursor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-cursor) | 如果执行成功，则返回指向[OH_Cursor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-cursor)实例的指针。如果数据库已关闭或数据库没有响应，则返回空。 |
+| [OH_Cursor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-cursor) * | 如果执行成功，则返回指向[OH_Cursor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-cursor)实例的指针。如果数据库已关闭或数据库没有响应，则返回NULL。 |
 
 #### [h2]OH_RdbTrans_QuerySql()
 
@@ -407,7 +407,7 @@ OH_Cursor *OH_RdbTrans_QuerySql(OH_Rdb_Transaction *trans, const char *sql, cons
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Cursor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-cursor) | 如果执行成功，则返回指向[OH_Cursor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-cursor)实例的指针。如果数据库已关闭或数据库没有响应，则返回空。 |
+| [OH_Cursor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-cursor) * | 如果执行成功，则返回指向[OH_Cursor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-cursor)实例的指针。如果数据库已关闭或数据库没有响应，则返回NULL。 |
 
 #### [h2]OH_RdbTrans_Execute()
 
@@ -484,7 +484,7 @@ OH_Cursor *OH_RdbTrans_QueryWithoutRowCount(OH_Rdb_Transaction *trans, const OH_
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Cursor *](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-cursor) | 如果执行成功，则返回指向[OH_Cursor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-cursor)实例的指针。如果数据库已关闭或数据库没有响应，则返回nullptr。 |
+| [OH_Cursor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-cursor) * | 如果执行成功，则返回指向[OH_Cursor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-cursor)实例的指针。如果数据库已关闭或数据库没有响应，则返回NULL。 |
 
 #### [h2]OH_RdbTrans_QuerySqlWithoutRowCount()
 
@@ -509,7 +509,7 @@ OH_Cursor *OH_RdbTrans_QuerySqlWithoutRowCount(OH_Rdb_Transaction *trans, const 
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Cursor *](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-cursor) | 如果执行成功，则返回指向[OH_Cursor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-cursor)实例的指针。如果数据库已关闭或数据库没有响应，则返回nullptr。 |
+| [OH_Cursor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-cursor) * | 如果执行成功，则返回指向[OH_Cursor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-cursor)实例的指针。如果数据库已关闭或数据库没有响应，则返回NULL。 |
 
 #### [h2]OH_RdbTrans_BatchInsertWithReturning()
 

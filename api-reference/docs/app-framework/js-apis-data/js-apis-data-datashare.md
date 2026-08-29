@@ -2,8 +2,8 @@
 title: "@ohos.data.dataShare (数据共享)"
 upstream_id: "harmonyos-references/js-apis-data-datashare"
 catalog: "harmonyos-references"
-content_hash: "fafd8c8613fb"
-synced_at: "2026-07-28T16:40:48.606339"
+content_hash: "ac487f56a881"
+synced_at: "2026-08-29T18:12:12.180457"
 ---
 
 # @ohos.data.dataShare (数据共享)
@@ -259,7 +259,7 @@ off(event: 'dataChange', uris: string[], config: DataProxyConfig, callback?: Asy
 | event | string | 是 | 订阅的事件/回调类型，支持的事件为'dataChange'。 |
 | uris | string[] | 是 | 表示要取消订阅的共享配置对应的URI数组。 **说明：** 1. API版本26.0.0之前，数组最大长度为32；从API版本26.0.0开始，数组最大长度为64。 2. URI固定格式为"datashareproxy://{bundleName}/{path}"，其中bundleName为配置发布方应用的bundleName，path可随意填写，但同一应用内不允许重复，字符串长度不超过256个字节。 |
 | config | [DataProxyConfig](#dataproxyconfig20) | 是 | 表示数据代理操作的配置。 |
-| callback | AsyncCallback | 否 | 需要取消的回调函数。不填写则取消所有已注册的回调函数。 |
+| callback | AsyncCallback | 否 | 回调函数。当取消订阅成功时，err为undefined，data为获取到的DataProxyChangeInfo数组，包含变更类型、URI和变更的共享配置内容；否则为错误对象。不填写则取消所有已注册的回调函数。 |
 
 返回值：
 
@@ -313,7 +313,7 @@ publish(data: ProxyData[], config: DataProxyConfig): Promise<DataProxyResult[]>
 
 API版本26.0.0之前，每个应用支持最多32个共享配置；从API版本26.0.0开始，每个应用支持最多64个共享配置。
 
-从API版本26.0.0开始，支持发布多值类型配置，一个uri只能对应一种值类型。且配置发布后不允许使用publish更新已发布的多值类型uri。多值类型的操作接口见[putValue](#putvalue)，[removeValue](#removevalue)和[getValues](#getvalues)。
+从API版本26.0.0开始，支持发布多值类型配置，一个uri只能对应一种值类型。且配置发布后不允许使用publish更新已发布的多值类型uri。多值类型的操作接口见[putValue](#putvalue)、[removeValue](#removevalue)和[getValues](#getvalues)。
 
 系统能力： SystemCapability.DistributedDataManager.DataShare.Consumer
 
@@ -511,7 +511,7 @@ putValue(uri: string, key: number, value: ValueType, config: DataProxyConfig): P
 
 若传入的key不存在，则添加新的值；若传入的key已存在，则更新该key对应的值。
 
-默认情况下，单条数据（即URI）在单个应用中最多可添加10个值，每个值最大长度为4096字节。同时，单条数据（即一个URI）在单次应用中所有值总长度受限于数据[publish](#publish20)时指定的maxValueLength参数值。
+默认情况下，单条数据（即URI）在单个应用中最多可添加10个值，每个值最大长度为4096字节。同时，单条数据（即一个URI）在单个应用中所有值总长度受限于数据[publish](#publish20)时指定的maxValueLength参数值。
 
 起始版本： 26.0.0
 
@@ -589,7 +589,7 @@ removeValue(uri: string, key: number, config: DataProxyConfig): Promise<void>
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | uri | string | 是 | 要操作的数据所对应的URI。固定格式为"datashareproxy://{bundleName}/{path}"，其中bundleName为配置发布方应用的bundleName，path可随意填写，但同一应用内不允许重复，字符串长度不超过256个字节。 |
-| key | number | 是 | 添加的值所对应的Key。 取值范围为全体整数。 |
+| key | number | 是 | 要移除的值所对应的Key。 取值范围为全体整数。 |
 | config | [DataProxyConfig](#dataproxyconfig20) | 是 | 表示数据代理操作的配置。 |
 
 返回值：

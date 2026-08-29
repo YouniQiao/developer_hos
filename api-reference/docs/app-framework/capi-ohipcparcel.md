@@ -2,15 +2,15 @@
 title: "OHIPCParcel"
 upstream_id: "harmonyos-references/capi-ohipcparcel"
 catalog: "harmonyos-references"
-content_hash: "67855a3f4f80"
-synced_at: "2026-07-09T00:59:05.503709"
+content_hash: "2e9b758812d3"
+synced_at: "2026-08-29T18:16:14.497120"
 ---
 
 # OHIPCParcel
 
 #### 概述
 
-提供IPC序列化/反序列化C接口。
+提供IPC序列化/反序列化C接口，用于在IPC通信过程中对数据进行序列化和反序列化操作。
 
 系统能力： SystemCapability.Communication.IPC.Core
 

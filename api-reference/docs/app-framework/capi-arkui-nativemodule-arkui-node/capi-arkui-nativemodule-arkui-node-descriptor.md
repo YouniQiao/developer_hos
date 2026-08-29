@@ -2,8 +2,8 @@
 title: "ArkUI_Node"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-node-descriptor"
 catalog: "harmonyos-references"
-content_hash: "7849627d5584"
-synced_at: "2026-07-28T16:49:34.584563"
+content_hash: "90e1c0f313aa"
+synced_at: "2026-08-29T18:15:48.389861"
 ---
 
 # ArkUI_Node
@@ -20,4 +20,4 @@ struct ArkUI_Node
 
 相关模块： [ArkUI_NativeModule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule)
 
-所在头文件： [drawable_descriptor.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawable-descriptor-h)
+所在头文件： [native_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h)

@@ -2,13 +2,13 @@
 title: "@ohos.bluetooth.pan (蓝牙pan模块)"
 upstream_id: "harmonyos-references/js-apis-bluetooth-pan"
 catalog: "harmonyos-references"
-content_hash: "04f6905aa709"
-synced_at: "2026-07-28T16:50:36.450623"
+content_hash: "093b4f966de2"
+synced_at: "2026-08-29T18:16:36.733195"
 ---
 
 # @ohos.bluetooth.pan (蓝牙pan模块)
 
-本模块提供基于蓝牙个人局域网协议（Personal Area Networking，[PAN](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#pan)）的蓝牙共享网络能力，支持获取连接状态等方法。
+本模块提供基于蓝牙个人局域网协议（Personal Area Networking，[PAN](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#pan)）的蓝牙共享网络能力，支持本端作为[NAP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#nap)设备和[PANU](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#panu)设备查询PAN支持状态、网络共享状态及获取连接状态等，适用于需要通过蓝牙实现个人局域网共享网络的场景。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 10开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -46,7 +46,7 @@ createPanProfile(): PanProfile
 
 | 类型 | 说明 |
 | --- | --- |
-| PanProfile | 返回PAN实例。该类继承于[BaseProfile](#baseprofile)，因此可以使用其父类中的方法。 |
+| [PanProfile](#panprofile) | 返回PAN实例。该类继承于[BaseProfile](#baseprofile)，因此可以使用其父类中的方法。 |
 
 错误码：
 
@@ -70,7 +70,7 @@ try {
 
 #### PanProfile
 
-表示蓝牙PAN通信的实例。
+表示蓝牙PAN通信的实例，提供查询本端PAN支持状态、网络共享状态等能力，适用于蓝牙个人局域网共享网络场景。
 
 - 使用PanProfile方法之前需要创建该类的实例进行操作，通过[createPanProfile](#pancreatepanprofile)方法构造此实例。
 - 该类继承于[BaseProfile](#baseprofile)，因此可以使用其父类中的方法。
@@ -79,7 +79,7 @@ try {
 
 isPanSupported(): boolean
 
-本端作为NAP角色时使用，获取本端网络共享状态。
+本端作为NAP角色时使用，查询本端设备是否支持PAN能力。
 
 起始版本：26.0.0
 

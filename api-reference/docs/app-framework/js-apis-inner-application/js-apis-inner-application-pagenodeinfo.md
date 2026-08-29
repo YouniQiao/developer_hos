@@ -2,8 +2,8 @@
 title: "PageNodeInfo"
 upstream_id: "harmonyos-references/js-apis-inner-application-pagenodeinfo"
 catalog: "harmonyos-references"
-content_hash: "2c1a2925983b"
-synced_at: "2026-07-28T16:40:39.110950"
+content_hash: "08f54f33736e"
+synced_at: "2026-08-29T18:12:04.109596"
 ---
 
 # PageNodeInfo
@@ -11,6 +11,12 @@ synced_at: "2026-07-28T16:40:39.110950"
 用于自动填充的页面节点信息。
 
 起始版本： 26.0.0
+
+#### 导入模块
+
+```
+import { autoFillManager } from '@kit.AbilityKit';
+```
 
 #### PageNodeInfo
 

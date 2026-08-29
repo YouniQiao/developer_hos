@@ -2,8 +2,8 @@
 title: "酒店房卡接口"
 upstream_id: "harmonyos-references/wallet-rest-api-hotel"
 catalog: "harmonyos-references"
-content_hash: "af4843469733"
-synced_at: "2026-07-28T16:53:07.909212"
+content_hash: "4278817f40cc"
+synced_at: "2026-08-29T18:18:37.244605"
 ---
 
 # 酒店房卡接口
@@ -17,7 +17,7 @@ synced_at: "2026-07-28T16:53:07.909212"
 #### [h2]接口原型
 
 - **承载协议**：HTTPS POST
-- **接口方向**：三方业务管理服务->钱包云服务
+- **接口方向**：开发者业务管理服务->钱包云服务
 - **接口URL**：https://wallet-passentrust-drcn.cloud.huawei.com.cn/hmspass/v2/{cardType}/model
 - **数据格式**： 请求消息：Content-Type: application/json;charset=UTF-8 响应消息：Content-Type: application/json;charset=UTF-8
 
@@ -27,9 +27,9 @@ Request Header
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| Content-Type | 是 | String | 数据格式，取值为：Content-Type: application/json;charset=UTF-8。 |
+| Content-Type | 是 | String | 请求的数据类型，取值为：application/json;charset=UTF-8。 |
 | Authorization | 是 | String | 认证信息，将[获取AccessToken](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-public#获取accesstoken)获取到的“access_token”的值拼接在字符串“Bearer”之后，以空格符相隔，组成“Authorization”参数的值。 |
-| Accept | 是 | String | 响应的数据格式，取值为：Content-Type: application/json;charset=UTF-8。 |
+| Accept | 是 | String | 响应的数据格式，取值为：application/json;charset=UTF-8。 |
 
 Request Body
 
@@ -43,7 +43,7 @@ Request Body
 
 | appendFields参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| isCreateWhiteCard | 是 | String | 用于表明是否是NFC卡的标记： true：是NFC卡。 false：非NFC卡。 |
+| isCreateWhiteCard | 是 | String | 是否为NFC卡的标记。 true：NFC卡。 false：非NFC卡。 |
 
 | commonFields参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
@@ -57,9 +57,9 @@ Request Header
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| Content-Type | 是 | String | 数据格式，取值为：Content-Type: application/json;charset=UTF-8。 |
+| Content-Type | 是 | String | 请求的数据类型，取值为：application/json;charset=UTF-8。 |
 | Authorization | 是 | String | 认证信息，将[获取AccessToken](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-public#获取accesstoken)获取到的“access_token”的值拼接在字符串“Bearer”之后，以空格符相隔，组成“Authorization”参数的值。 |
-| Accept | 是 | String | 响应的数据格式，取值为：Content-Type: application/json;charset=UTF-8。 |
+| Accept | 是 | String | 响应的数据格式，取值为：application/json;charset=UTF-8。 |
 
 Request Body
 
@@ -80,15 +80,21 @@ Request Body
 | **status**参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
 | state | 是 | String | 状态值。取值如下： - active：生效 - inactive：未激活 - completed：已使用 - expired：已过期 |
-| effectTime | 是 | String | 生效时间，UTC格式。 |
-| expireTime | 是 | String | 失效时间，UTC格式。如果超过此时间，卡券自动按照expired状态处理。 |
+| effectTime | 否 | String | 生效时间，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。 |
+| expireTime | 否 | String | 失效时间，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。如果超过此时间，卡券自动按照expired状态处理。 |
+
+| localized参数 | 是否必选 | 参数类型 | 描述 |
+| --- | --- | --- | --- |
+| key | 否 | String | 国际化键名。无固定值，根据实际需要国际化的字段传入对应键名即可。 |
+| value | 否 | String | 国际化文本，对应语言的显示内容。 |
+| language | 否 | String | 语言代码，如zh-CN、en-US。 |
 
 | commonFields参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
 | ownerPassTypeIdentifier | 是 | String | 服务号，格式为：hwpass.xxx.xxx.xxx。 |
-| readerMatchValue | 是 | String | 酒店房卡标识，建议字节不超过20字节（第一字节：三方标识，第二字节：品牌/系列标识，后续字节保证在三方内唯一）, 只能包含0-9，A-F。 |
-| deviceType | 是 | String | 当前酒店房卡开通的设备类型，如Phone：手机，Wear：穿戴。 |
-| personalizedData | 否 | Object | 三方个性化数据。 |
+| readerMatchValue | 是 | String | 酒店房卡标识，建议不超过20个字节，第一字节表示开发者标识，第二字节表示品牌/系列标识，后续的字节用于保证开发者内唯一性。字符只能包含0-9和A-F。 |
+| deviceType | 是 | String | 当前酒店房卡开通的设备类型，Phone：手机，Wear：穿戴。 |
+| personalizedData | 否 | Object | 开发者个性化数据。 |
 | logo | 否 | String | 卡面logo，128*128px，大小钱包云服务
 - **接口URL**：https://wallet-passentrust-drcn.cloud.huawei.com.cn/hmspass/v2/{cardType}/instance/{instanceId}
 - **数据格式**： 请求消息：Content-Type: application/json;charset=UTF-8 响应消息：Content-Type: application/json;charset=UTF-8
@@ -99,9 +105,9 @@ Request Header
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| Content-Type | 是 | String | 数据格式，取值为：Content-Type: application/json;charset=UTF-8。 |
+| Content-Type | 是 | String | 请求的数据类型，取值为：application/json;charset=UTF-8。 |
 | Authorization | 是 | String | 认证信息，将[获取AccessToken](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-public#获取accesstoken)获取到的“access_token”的值拼接在字符串“Bearer”之后，以空格符相隔，组成“Authorization”参数的值。 |
-| Accept | 是 | String | 响应的数据格式，取值为：Content-Type: application/json;charset=UTF-8。 |
+| Accept | 是 | String | 响应的数据格式，取值为：application/json;charset=UTF-8。 |
 
 Request Body
 
@@ -110,7 +116,7 @@ Request Body
 #### [h2]请求示例
 
 ```
-POST /hmspass/v2/key_hotel/instance/100002 HTTP/1.1
+PATCH /hmspass/v2/key_hotel/instance/100002 HTTP/1.1
 Content-Type: application/json;charset=UTF-8
 Authorization: Bearer bKyECwrVGw********************e
 Accept: application/json;charset=UTF-8
@@ -128,15 +134,15 @@ Accept: application/json;charset=UTF-8
 
 #### [h2]响应参数
 
-模板预置成功，即http响应为200时，钱包云服务会将开发者业务管理服务请求的数据原样返回，即和上面的请求体中的数据一致；其他错误情况，可见[REST API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-error-code)。
+http响应为200时表示成功。其他错误情况，可见[REST API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-error-code)。
 
 #### [h2]调用示例
 
 ```
-public HwWalletObject invokeHwCreateKeyParkObject() {
+public HwWalletObject invokeHwCreateKeyHotelObject() {
     HwWalletObject request = new HwWalletObject();
-    request.setPassTypeIdentifier("hwpass.keypark.test");
-    request.setPassStyleIdentifier("keyParkModelTest");
+    request.setPassTypeIdentifier("hwpass.keyhotel.test");
+    request.setPassStyleIdentifier("keyHotelModelTest");
     request.setOrganizationPassId("20001");
     request.setSerialNumber("20001");
     Fields fields = new Fields();
@@ -150,7 +156,8 @@ public HwWalletObject invokeHwCreateKeyParkObject() {
     request.setFields(fields);
     HttpHeaders header = constructHttpHeaders();
     String baseUrl = "https://wallet-passentrust-drcn.cloud.huawei.com.cn/hmspass";
-    String walletServerUrl = baseUrl + "/v2/key_parkcard/instance";
+    // 100002仅为instanceId的示例值，实际使用时请替换为真实的instanceId。
+    String walletServerUrl = baseUrl + "/v2/key_hotel/instance/100002";
     HttpEntity<JSONObject> entity = new HttpEntity<>(JSONObject.parseObject(JSONObject.toJSONString(request)), header);
     ResponseEntity<JSONObject> exchange =
         REST_TEMPLATE.exchange(walletServerUrl, HttpMethod.PATCH, entity, JSONObject.class);
@@ -160,12 +167,12 @@ public HwWalletObject invokeHwCreateKeyParkObject() {
 
 #### 获取酒店个人化数据
 
-华为钱包App经由钱包云服务中转后向三方业务管理服务获取个人化数据。
+华为钱包App经由钱包云服务中转后向开发者业务管理服务获取个人化数据。
 
 #### [h2]接口原型
 
 - **承载协议**：HTTPS POST
-- **接口方向**：钱包云服务->三方业务管理服务
+- **接口方向**：钱包云服务->开发者业务管理服务
 - **接口URL**：{webServiceURL}/v1/passes/requestHotelPersonalize
 - **数据格式**： 请求消息：Content-Type: application/json;charset=UTF-8 响应消息：Content-Type: application/json;charset=UTF-8
 
@@ -175,7 +182,7 @@ Request Header
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| Content-Type | 是 | String | 数据格式，取值为：application/json;charset=UTF-8。 |
+| Content-Type | 是 | String | 请求的数据类型，取值为：application/json;charset=UTF-8。 |
 
 Request Body
 
@@ -183,7 +190,7 @@ Request Body
 | --- | --- | --- | --- | --- |
 | requestBody | passTypeIdentifier | String | 是 | 注册Wallet Kit服务时指定的服务号。 |
 | requestBody | serialNumber | String | 是 | Pass对象在发卡方的唯一键值，回调时以便发卡方根据此值识别具体的卡片记录。 |
-| requestBody | passVersion | String | 否 | 版本号，固定“固定10.0”。 |
+| requestBody | passVersion | String | 否 | 版本号，固定“10.0”。 |
 | requestBody | userDeviceId | String | 是 | 用户在当前设备上的唯一标识。 |
 | requestBody | transPublicKey | String | 是 | 用于加密返回的对称秘钥，用于对返回的数据做数字信封。 |
 | requestBody | timestamp | String | 是 | 时间戳，参与签名，用于防重放攻击。格式yyyymmddHH24MissSSS。 |
@@ -199,7 +206,7 @@ Content-Type: application/json;charset=UTF-8
 {
   "requestBody": {
     "transPublicKey": "xxx",
-    "passTypeIdentifier": "Replace with the Service ID you applied on AGC",
+    "passTypeIdentifier": "hwpass.xxx.xxx.xxx",
     "passVersion": "10.0",
     "serialNumber": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
     "transId": "858947076d58a5e66ee22b9ed1c43c4d",
@@ -218,13 +225,13 @@ Response Header
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| Content-Type | 是 | String | 数据格式，取值为：application/json;charset=UTF-8。 |
+| Content-Type | 是 | String | 响应的数据类型，取值为：application/json;charset=UTF-8。 |
 
 Response Body
 
 | 子节点参数 | 参数类型 | 是否必选 | 描述 |
 | --- | --- | --- | --- |
-| Httpstatus | String | 是 | 接口网络状态码，参考[REST API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-error-code)进行处理。 |
+| httpStatus | String | 是 | 接口网络状态码，参考[REST API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-error-code)进行处理。 |
 | resultCode | String | 是 | 0：空发写卡，需传入空发的个人化数据。1：仅开卡，不包含写卡的个人化数据，前台提示用户开卡完成，提示用户需要写卡后使用。 |
 | encryptSessionKey | String | 否 | 酒店云侧管理服务使用请求中的transPublicKey加密生成的sessionKey。采用Base64编码，resultCode取值为0时必选。 |
 | encryptDevicePass | String | 否 | 固定取值为空字符串：''。 |
@@ -248,12 +255,12 @@ Content-Type: application/json; charset=UTF-8
 
 #### 酒店房卡检测更新
 
-携带卡片唯一标识，申请检测用户信息是否有变化，由用户行为触发，每张卡片每年最多调用一次。若存在会员等级等信息变化，需通过酒店卡更新接口先更新完成，再应答结果，结果中包含是否有变化的检测结果。
+携带卡片唯一标识，申请检测用户信息是否有变化，由用户行为触发，每张卡片每日最多调用一次。若存在会员等级等信息变化，需通过酒店卡更新接口先更新完成，再应答结果，结果中包含是否有变化的检测结果。
 
 #### [h2]接口原型
 
 - **承载协议**：HTTPS POST
-- **接口方向**：钱包云服务->三方业务管理服务
+- **接口方向**：钱包云服务->开发者业务管理服务
 - **接口URL**：{webServiceURL}/v1/passes/detectChange
 - **数据格式**： 请求消息：Content-Type: application/json;charset=UTF-8 响应消息：Content-Type: application/json;charset=UTF-8
 
@@ -263,7 +270,7 @@ Request Header
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| Content-Type | 是 | String | 数据格式，取值为：application/json;charset=UTF-8。 |
+| Content-Type | 是 | String | 请求的数据类型，取值为：application/json;charset=UTF-8。 |
 
 Request Body
 
@@ -282,7 +289,7 @@ POST /v1/passes/detectChange HTTP/1.1
 Content-Type: application/json;charset=UTF-8
 {
   "requestBody": {
-    "passTypeIdentifier": "Replace with the Service ID you applied on AGC",
+    "passTypeIdentifier": "hwpass.xxx.xxx.xxx",
     "serialNumber": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
     "timestamp": "xxx",
     "detectMode": "xxx",
@@ -297,7 +304,7 @@ Response Header
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| Content-Type | 是 | String | 数据格式，取值为：application/json;charset=UTF-8。 |
+| Content-Type | 是 | String | 响应的数据类型，取值为：application/json;charset=UTF-8。 |
 
 Response Body
 

@@ -2,8 +2,8 @@
 title: "自定义手势判定"
 upstream_id: "harmonyos-references/ts-gesture-customize-judge"
 catalog: "harmonyos-references"
-content_hash: "5ed62d68277c"
-synced_at: "2026-07-28T16:43:10.314678"
+content_hash: "f0b8a9f986e8"
+synced_at: "2026-08-29T18:13:13.459819"
 ---
 
 # 自定义手势判定
@@ -38,69 +38,11 @@ onGestureJudgeBegin(callback: (gestureInfo: GestureInfo, event: BaseGestureEvent
 | --- | --- |
 | T | 返回当前组件。 |
 
-#### BaseEvent8+
-
-基础事件类型。
-
-#### [h2]属性
-
-系统能力： SystemCapability.ArkUI.ArkUI.Full
-
-| 名称 | 类型 | 只读 | 可选 | 说明 |
-| --- | --- | --- | --- | --- |
-| target | [EventTarget](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-click#eventtarget8) | 否 | 否 | 触发手势事件的元素对象。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| timestamp | number | 否 | 否 | 事件时间戳，触发事件时距离系统启动的时间间隔。 单位：ns 取值范围：[0, +∞) **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| source | [SourceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-settings#sourcetype枚举说明8) | 否 | 否 | 事件输入设备的类型。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| pressure9+ | number | 否 | 否 | 按压的压力大小。 默认值：0 取值范围：[0,1]，典型值0.913168，压感大小与数值正相关。在部分设备中，由于设备的硬件参数配置不同，可能会返回大于1的值。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| tiltX9+ | number | 否 | 否 | 手写笔在设备平面上的投影与设备平面X轴的夹角。 单位：deg 默认值：0 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| tiltY9+ | number | 否 | 否 | 手写笔在设备平面上的投影与设备平面Y轴的夹角。 单位：deg 默认值：0 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| rollAngle17+ | number | 否 | 是 | 手写笔与设备平面的夹角。 单位：deg **卡片能力：** 从API version 17开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 17开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| sourceTool9+ | [SourceTool](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-settings#sourcetool枚举说明9) | 否 | 否 | 事件输入源的类型。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| axisHorizontal12+ | number | 否 | 是 | 水平轴值。 默认值：0 **说明：** 当前仅在鼠标滚轮或触控板双指滑动触发的Pan手势，或使用Ctrl+鼠标滚轮触发的Pinch手势中可以获取。 对于Shift+鼠标滚轮触发的横向滚动场景，axisHorizontal为0，滚动值体现在axisVertical中。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| axisVertical12+ | number | 否 | 是 | 垂直轴值。 默认值：0 **说明：** 当前仅在鼠标滚轮或触控板双指滑动触发的Pan手势，或使用Ctrl+鼠标滚轮触发的Pinch手势中可以获取。 对于Shift+鼠标滚轮触发的横向滚动场景，滚动值体现在axisVertical中。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| axisPinch21+ | number | 否 | 是 | 双指缩放比例。 默认值：0 **说明：** 仅在触控板上通过双指缩放操作触发的Pinch手势，或在轴事件中，可以获取该值；在其他场景下，获取到的将是默认值。 缩放比例是指在双指缩放事件触发过程中，双指当前距离与最初按下时距离的比值。 取值范围：[0, +∞) **卡片能力：** 从API version 21开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 21开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| deviceId12+ | number | 否 | 是 | 触发当前事件的输入设备ID。 默认值：0 取值范围：[0, +∞) **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| targetDisplayId15+ | number | 否 | 是 | 事件发生的屏幕ID。 默认值：0 取值范围：[0, +∞) **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-
-#### [h2]getModifierKeyState12+
-
-getModifierKeyState?(keys: Array<string>): boolean
-
-获取修饰键按压状态，可用于在手势事件处理中判断Ctrl、Alt、Shift修饰键是否被按下，以处理组合键交互逻辑。报错信息请参考以下错误码。支持修饰键'Ctrl'|'Alt'|'Shift'。
-
-![](./img/note_3.0-zh-cn.png) 此接口不支持在手写笔场景下使用。
-
-模型约束： 此接口仅可在Stage模型下使用。
-
-元服务API： 从API version 12开始，该接口支持在元服务中使用。
-
-系统能力： SystemCapability.ArkUI.ArkUI.Full
-
-参数：
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| keys | Array | 是 | 修饰键列表，数组元素支持 'Ctrl'、'Alt'、'Shift'，用于查询指定修饰键是否均处于按压状态。 |
-
-返回值：
-
-| 类型 | 说明 |
-| --- | --- |
-| boolean | 返回修饰键按压状态。当修饰键均处于按压状态时返回true，否则返回false。 |
-
-错误码：
-
-以下错误码详细介绍请参考[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 401 | Parameter error. Possible causes: 1. Incorrect parameter types. 2. Parameter verification failed. |
-
 #### 示例
 
 #### [h2]示例1（自定义手势判定）
 
-该示例通过配置[onGestureJudgeBegin](#ongesturejudgebegin)实现了对长按、快滑、滑动、捏合和拖动手势的自定义判定。从API version 21开始，支持通过[BaseEvent](#baseevent8)的axisPinch属性获取双指缩放比例。
+该示例通过配置[onGestureJudgeBegin](#ongesturejudgebegin)实现了对长按、快滑、滑动、捏合和拖动手势的自定义判定。从API version 21开始，支持通过[BaseEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-click#baseevent8)的axisPinch属性获取双指缩放比例。
 
 ```
 // xxx.ets
@@ -192,7 +134,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087881.gif)
+ ![](./img/zh-cn_image_0000002701639588.gif)
 
 #### [h2]示例2（自定义区域手势判定）
 
@@ -219,8 +161,8 @@ struct Index {
         Stack({ alignContent: Alignment.Center }) {
           Column() {
             // 模拟上半区和下半区
-            Stack().width('200vp').height('100vp').backgroundColor(Color.Red)
-            Stack().width('200vp').height('100vp').backgroundColor(Color.Blue)
+            Stack().width('200').height('100').backgroundColor(Color.Red)
+            Stack().width('200').height('100').backgroundColor(Color.Blue)
           }.width('200vp').height('200vp')
 
           // Stack的下半区是绑定了拖动手势的图像区域
@@ -229,12 +171,12 @@ struct Index {
             .onDragStart(() => {
               this.promptAction.showToast({ message: 'Drag 下半区蓝色区域，Image响应' });
             })
-            .width('200vp').height('200vp')
+            .width('200').height('200')
           // Stack的上半区是绑定了长按手势的浮动区域
           Stack() {
           }
-          .width('200vp')
-          .height('200vp')
+          .width('200')
+          .height('200')
           .hitTestBehavior(HitTestMode.Transparent)
           .onGestureJudgeBegin((gestureInfo: GestureInfo, event: BaseGestureEvent) => {
             // 确定gestureInfo的tag标志是否有值
@@ -269,7 +211,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928053.gif)
+ ![](./img/zh-cn_image_0000002731358809.gif)
 
 #### [h2]示例3（实时监测参与手势的有效触点的数量及其简要信息）
 
@@ -333,7 +275,7 @@ struct GestureDetectorExample {
               })
           )
         )
-        .onGestureJudgeBegin((_gestureInfo: GestureInfo, event: BaseGestureEvent) => {
+        .onGestureJudgeBegin((gestureInfo: GestureInfo, event: BaseGestureEvent) => {
           // 获取 fingerInfos 信息
           if (event?.fingerInfos) {
             this.fingerCount = event.fingerInfos.length;
@@ -355,4 +297,4 @@ struct GestureDetectorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008374.gif)
+ ![](./img/zh-cn_image_0000002701799504.gif)

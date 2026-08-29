@@ -2,17 +2,17 @@
 title: "RDB"
 upstream_id: "harmonyos-references/capi-rdb"
 catalog: "harmonyos-references"
-content_hash: "3f48ff9b1657"
-synced_at: "2026-07-28T16:40:50.689610"
+content_hash: "c4228837eae9"
+synced_at: "2026-08-29T18:12:14.157368"
 ---
 
 # RDB
 
 #### 概述
 
-分布式数据管理（Distributed Data Manager，data）支持单设备的各种结构化数据的持久化，以及端云间的同步、共享功能。
+关系型数据库（RDB）支持单设备的各种结构化数据的持久化，以及端云间的同步、共享功能。
 
-分布式数据管理定义了一系列数据类型，可以对数据进行增删改查。
+关系型数据库定义了一系列数据类型，可以对数据进行增删改查。
 
 起始版本： 11
 
@@ -27,9 +27,9 @@ synced_at: "2026-07-28T16:40:50.689610"
 | [oh_data_values_buckets.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-data-values-buckets-h) | 提供与存储数据值相关的结构定义、函数和枚举。 |
 | [oh_predicates.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-predicates-h) | 表示关系型数据库（RDB）的谓词。 |
 | [oh_rdb_crypto_param.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-rdb-crypto-param-h) | 提供与关系型数据库加密参数相关的函数和枚举。 |
-| [oh_rdb_transaction.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-rdb-transaction-h) | 提供与数据库事务相关的函数和枚举。 |
+| [oh_rdb_transaction.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-rdb-transaction-h) | 提供与关系型数据库事务相关的函数和枚举。 |
 | [oh_rdb_types.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-rdb-types-h) | 提供与数据值相关的类型定义。 |
 | [oh_value_object.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-value-object-h) | 提供类型转换方法。 |
 | [oh_values_bucket.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-values-bucket-h) | 用于存储键值对的类型。 |
-| [relational_store.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-relational-store-h) | 提供管理关系数据库（RDB）方法的接口，未标注支持向量数据库的接口仅支持关系型数据库。 |
+| [relational_store.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-relational-store-h) | 提供管理关系型数据库（RDB）方法的接口，未标注支持向量数据库的接口仅支持关系型数据库。 |
 | [relational_store_error_code.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-relational-store-error-code-h) | 声明关系型数据库（RDB）的错误码信息。 |

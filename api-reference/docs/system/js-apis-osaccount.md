@@ -2,8 +2,8 @@
 title: "@ohos.account.osAccount (系统账号管理)"
 upstream_id: "harmonyos-references/js-apis-osaccount"
 catalog: "harmonyos-references"
-content_hash: "1e2fdebe11bc"
-synced_at: "2026-08-21T15:35:57.331293"
+content_hash: "a626f70249b8"
+synced_at: "2026-08-29T18:16:55.105620"
 ---
 
 # @ohos.account.osAccount (系统账号管理)
@@ -3336,8 +3336,8 @@ try {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| domain | string | 否 | 否 | 域名。 |
-| accountName | string | 否 | 否 | 域账号名。 |
+| domain | string | 否 | 否 | 域名。最大长度为128个字节。 |
+| accountName | string | 否 | 否 | 域账号名。最大长度为256个字节。 |
 | serverConfigId18+ | string | 否 | 是 | 域账号配置ID，默认为空字符串。 |
 | additionalInfo | Record | 否 | 是 | 域账号附加信息，默认为空。 **起始版本**： 26.0.0 **模型约束**：此接口仅可在Stage模型下使用。 |
 

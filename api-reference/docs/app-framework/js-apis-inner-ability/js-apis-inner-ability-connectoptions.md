@@ -2,8 +2,8 @@
 title: "ConnectOptions"
 upstream_id: "harmonyos-references/js-apis-inner-ability-connectoptions"
 catalog: "harmonyos-references"
-content_hash: "6270d80bd4a2"
-synced_at: "2026-07-09T00:57:08.145741"
+content_hash: "a0848f3e8bf4"
+synced_at: "2026-08-29T18:12:02.056977"
 ---
 
 # ConnectOptions
@@ -19,6 +19,8 @@ import { common } from '@kit.AbilityKit';
 ```
 
 #### ConnectOptions
+
+在连接指定的后台服务时作为入参，用于接收连接过程中的状态变化，如作为[connectServiceExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext#connectserviceextensionability)的入参，连接指定的ServiceExtensionAbility。
 
 #### [h2]onConnect
 

@@ -2,8 +2,8 @@
 title: "ArkUI_TouchTestInfo"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-touchtestinfo"
 catalog: "harmonyos-references"
-content_hash: "1c0d1eb52220"
-synced_at: "2026-07-28T16:49:42.219066"
+content_hash: "956f2bcbbe6d"
+synced_at: "2026-08-29T18:15:53.733693"
 ---
 
 # ArkUI_TouchTestInfo
@@ -14,11 +14,9 @@ typedef struct ArkUI_TouchTestInfo ArkUI_TouchTestInfo
 
 #### 概述
 
-定义触摸测试信息，用于设置命中测试策略和结果作用的子组件，并获取各子组件的触摸测试结果。
+定义触摸测试信息，用于在命中测试过程中获取触摸测试策略、参与命中测试的子组件ID及触摸测试信息项列表，适用于需要在子组件触摸事件中获取命中测试详细信息以自定义命中测试逻辑、优化触摸事件分发与响应的场景。
 
-当用户通过[registerNodeEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativenodeapi-1#registernodeevent)注册了[NODE_ON_CHILD_TOUCH_TEST](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#arkui_nodeeventtype)事件时，开发者才能在事件回调中获取此触摸测试信息结构体。
-
-该结构体支持设置触摸测试策略（取值原则参见[ArkUI_TouchTestStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ui-input-event-h#arkui_touchteststrategy)）和命中测试过程中需要作用的子组件ID，并可获取包含各子组件详细测试结果的触摸测试信息项数组。
+当用户通过[registerNodeEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativenodeapi-1#registernodeevent)注册了[NODE_ON_CHILD_TOUCH_TEST](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#arkui_nodeeventtype)事件时，才能接收到此事件。触摸测试信息包含触摸测试策略、命中测试过程中需要参与命中测试的子组件ID和触摸测试信息项的列表。
 
 起始版本： 22
 

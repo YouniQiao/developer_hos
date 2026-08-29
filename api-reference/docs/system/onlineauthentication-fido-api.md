@@ -2,19 +2,19 @@
 title: "FIDO"
 upstream_id: "harmonyos-references/onlineauthentication-fido-api"
 catalog: "harmonyos-references"
-content_hash: "fdd6e7e1d893"
-synced_at: "2026-07-28T16:50:29.681384"
+content_hash: "3cacbe276704"
+synced_at: "2026-08-29T18:16:29.963942"
 ---
 
 # FIDO
 
 本模块提供FIDO UAF本地免密认证能力，通过生物特征代替密码，支持免密登录，免密支付等业务场景，包括：
 
-1、开通FIDO免密身份认证功能。
+1、开通FIDO免密认证功能。
 
-2、使用FIDO免密身份认证功能。
+2、使用FIDO免密认证功能。
 
-3、关闭FIDO免密身份认证功能。
+3、关闭FIDO免密认证功能。
 
 起始版本： 4.1.0(11)
 
@@ -189,7 +189,7 @@ FIDO UAF客户端软件状态和可用的认证器数据。
 | clientVersion | [Version](#version) | 否 | 否 | FIDO UAF客户端版本。 |
 | availableAuthenticators | Array | 否 | 否 | 包含描述可使用UAF认证器的认证器结构数。 |
 
-#### discover
+#### fido.discover
 
 discover(context: common.Context): Promise<DiscoveryData>
 
@@ -245,7 +245,7 @@ discover(context: common.Context): Promise<DiscoveryData>
   // ...
 ```
 
-#### checkPolicy
+#### fido.checkPolicy
 
 checkPolicy(context: common.Context, uafRequest: UAFMessage): Promise<void>
 
@@ -309,7 +309,7 @@ checkPolicy(context: common.Context, uafRequest: UAFMessage): Promise<void>
   // ...
 ```
 
-#### processUAFOperation
+#### fido.processUAFOperation
 
 processUAFOperation(context: common.Context, uafRequest: UAFMessage, channelBindings?: ChannelBinding): Promise<UAFMessage>
 
@@ -381,11 +381,11 @@ processUAFOperation(context: common.Context, uafRequest: UAFMessage, channelBind
   // ...
 ```
 
-#### notifyUAFResult
+#### fido.notifyUAFResult
 
 notifyUAFResult(context: common.Context, uafResponse: UAFMessage): Promise<void>
 
-通知FIDO认证器FIDO免密身份认证功能的开启结果。使用Promise异步回调。
+通知FIDO认证器FIDO免密认证功能的开启结果。使用Promise异步回调。
 
 元服务API： 从版本5.0.0(12)开始，该接口支持在元服务中使用。
 

@@ -2,8 +2,8 @@
 title: "ArkUI_NativeAnimateAPI_1"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-nativeanimateapi-1"
 catalog: "harmonyos-references"
-content_hash: "31af6d55322b"
-synced_at: "2026-07-28T16:49:27.900379"
+content_hash: "8491995a22f1"
+synced_at: "2026-08-29T18:15:43.641005"
 ---
 
 # ArkUI_NativeAnimateAPI_1
@@ -14,7 +14,7 @@ typedef struct {...} ArkUI_NativeAnimateAPI_1
 
 #### 概述
 
-ArkUI提供的Native侧动画接口集合。
+ArkUI（方舟UI框架）提供的Native侧动画接口集合。
 
 起始版本： 12
 
@@ -28,7 +28,7 @@ ArkUI提供的Native侧动画接口集合。
 
 | 名称 | 描述 |
 | --- | --- |
-| [int32_t (*animateTo)(ArkUI_ContextHandle context, ArkUI_AnimateOption* option, ArkUI_ContextCallback* update,ArkUI_AnimateCompleteCallback* complete)](#animateto) | 触发显式动画。 |
+| [int32_t (*animateTo)(ArkUI_ContextHandle context, ArkUI_AnimateOption* option, ArkUI_ContextCallback* update, ArkUI_AnimateCompleteCallback* complete)](#animateto) | 触发显式动画。 |
 | [int32_t (*keyframeAnimateTo)(ArkUI_ContextHandle context, ArkUI_KeyframeAnimateOption* option)](#keyframeanimateto) | 触发关键帧动画。 |
 | [ArkUI_AnimatorHandle (*createAnimator)(ArkUI_ContextHandle context, ArkUI_AnimatorOption* option)](#createanimator) | 创建animator动画对象并返回其指针（调用者获取对象所有权）。 |
 | [void (*disposeAnimator)(ArkUI_AnimatorHandle animatorHandle)](#disposeanimator) | 销毁传入指针所指向的animator动画对象，并释放其内存，销毁后不可再使用该指针。 |
@@ -48,16 +48,16 @@ int32_t (*animateTo)(ArkUI_ContextHandle context, ArkUI_AnimateOption* option, A
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkUI_ContextHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-context8h) context | UI上下文实例，用于指定动画所在的UI上下文环境。 |
-| [ArkUI_AnimateOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animateoption)* option | 动画效果配置参数。 |
-| [ArkUI_ContextCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-contextcallback)* update | 指定动效的闭包函数。在闭包函数中产生的状态变化，系统会自动插入过渡动画。 **说明**：在闭包函数中要设置的组件属性，必须在调用animateTo之前已在组件上设置过。 |
+| [ArkUI_ContextHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-context8h) context | UI上下文实例，用于指定动画所在的UI上下文环境，不可为NULL。 |
+| [ArkUI_AnimateOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animateoption)* option | 动画效果配置参数，不可为NULL。 |
+| [ArkUI_ContextCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-contextcallback)* update | 指定动效的闭包函数。在闭包函数中产生的状态变化，系统会自动插入过渡动画。传参不可为NULL。 **说明**：在闭包函数中要设置的组件属性，必须在调用animateTo之前已在组件上设置过。 |
 | [ArkUI_AnimateCompleteCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animatecompletecallback)* complete | 动画播放完成回调函数。传参为NULL时不设置完成回调通知。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常，请检查传入参数的类型和有效性。可能原因：context无效、option为NULL或配置不合理。解决措施：确保context有效、option配置正确且非NULL。 |
 
 #### [h2]keyframeAnimateTo()
 
@@ -66,20 +66,20 @@ int32_t (*keyframeAnimateTo)(ArkUI_ContextHandle context, ArkUI_KeyframeAnimateO
 ```
  描述：
 
-关键帧动画接口。
+关键帧动画接口，通过指定关键帧定义属性在不同时间节点的值，系统根据插值算法自动计算中间帧的属性值实现平滑过渡。关键帧参数配置详见[ArkUI_KeyframeAnimateOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-keyframeanimateoption)。与animateTo的显式过渡动画不同，keyframeAnimateTo适用于需要在多个时间节点定义不同动画状态的场景。选取原则：仅需起始到结束状态的过渡动画时使用animateTo，需多关键帧精细控制动画过程时使用keyframeAnimateTo。
 
 参数：
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkUI_ContextHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-context8h) context | UI上下文实例，用于指定关键帧动画所在的UI上下文环境。 |
-| [ArkUI_KeyframeAnimateOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-keyframeanimateoption)* option | 关键帧动画参数。 |
+| [ArkUI_ContextHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-context8h) context | UI上下文实例，用于指定关键帧动画所在的UI上下文环境，不可为NULL。 |
+| [ArkUI_KeyframeAnimateOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-keyframeanimateoption)* option | 关键帧动画参数，设置关键帧动画的配置参数，包括关键帧的时间节点、动画属性值及过渡效果等，不可为NULL。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常，请检查传入参数的类型和有效性。可能原因：context无效、option为NULL或配置不合理。解决措施：确保context有效、option配置正确且非NULL。 |
 
 #### [h2]createAnimator()
 
@@ -88,14 +88,14 @@ ArkUI_AnimatorHandle (*createAnimator)(ArkUI_ContextHandle context, ArkUI_Animat
 ```
  描述：
 
-创建animator动画对象。
+创建animator动画对象并返回其指针。与animateTo/keyframeAnimateTo的触发式动画不同，createAnimator创建可持久控制的动画对象，适用于需要反复启动、停止、监听状态等精细控制的动画场景。选取原则：一次性过渡动画使用animateTo或keyframeAnimateTo，需持久控制动画生命周期时使用createAnimator。
 
 参数：
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkUI_ContextHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-context8h) context | UI上下文实例，用于指定动画所在的UI上下文环境。 |
-| [ArkUI_AnimatorOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animatoroption)* option | animator动画参数。 |
+| [ArkUI_ContextHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-context8h) context | UI上下文实例，用于指定动画所在的UI上下文环境，不可为NULL。 |
+| [ArkUI_AnimatorOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animatoroption)* option | animator动画参数，不可为NULL。 |
 
 返回：
 
@@ -110,10 +110,10 @@ void (*disposeAnimator)(ArkUI_AnimatorHandle animatorHandle)
 ```
  描述：
 
-销毁animator动画对象。
+销毁animator动画对象并释放其内存，销毁后不可再使用该handle。传入NULL或已销毁的句柄时，函数不执行销毁操作。
 
 参数：
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkUI_AnimatorHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animator8h) animatorHandle | animator动画对象。 |
+| [ArkUI_AnimatorHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animator8h) animatorHandle | animator动画对象，必须为由createAnimator创建的有效handle，不可传入已销毁的对象。 |

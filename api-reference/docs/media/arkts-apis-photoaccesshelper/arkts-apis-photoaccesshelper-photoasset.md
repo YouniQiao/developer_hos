@@ -2,8 +2,8 @@
 title: "Interface (PhotoAsset)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-photoasset"
 catalog: "harmonyos-references"
-content_hash: "815b04c7a55b"
-synced_at: "2026-08-07T15:59:05.219742"
+content_hash: "34497337d602"
+synced_at: "2026-08-29T18:17:47.082659"
 ---
 
 # Interface (PhotoAsset)
@@ -26,7 +26,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 | --- | --- | --- | --- | --- |
 | uri | string | 是 | 否 | 媒体文件资源URI（如：file://media/Photo/1/IMG_datetime_0001/displayName.jpg），详情参见用户文件URI介绍中的[媒体文件URI](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/user-file-uri-intro#媒体文件uri)。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | photoType | [PhotoType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#phototype) | 是 | 否 | 媒体文件类型。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
-| displayName | string | 是 | 否 | 显示文件名，包含后缀名。字符串长度的取值范围为[1, 255]。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| displayName | string | 是 | 否 | 显示文件名，包含后缀名。字符串长度的取值范围为[1, 255]字符。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 
 #### get
 
@@ -42,7 +42,7 @@ get(member: string): MemberType
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| member | string | 是 | 成员参数名称，在get时，除了'uri'、'media_type'、'subtype'和'display_name'四个属性之外，其他的属性都需要在fetchColumns中填入需要获取的[PhotoKeys](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#photokeys)，例如：get title属性fetchColumns: ['title']。 |
+| member | string | 是 | 成员参数名称，在get时，除了'uri'、'media_type'、'subtype'和'display_name'四个属性之外，其他的属性都需要在fetchColumns中填入需要获取的[PhotoKeys](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#photokeys)，例如：获取title属性时，需要在fetchColumns中填入['title']。 |
 
 返回值：
 
@@ -52,7 +52,7 @@ get(member: string): MemberType
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[文件管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-filemanagement)。
+以下错误码的详细介绍请参见[文件管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-filemanagement)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -97,8 +97,8 @@ set(member: string, value: string): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| member | string | 是 | 成员参数名称例如：[PhotoKeys](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#photokeys).TITLE。字符串长度的取值范围为[1, 255]。 |
-| value | string | 是 | 设置成员参数名称，只能修改[PhotoKeys](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#photokeys).TITLE的值。title的参数规格为： - 不应包含扩展名。 - 文件名字符串长度的取值范围为[1, 255]（资产文件名为标题+扩展名）。 - 不允许出现的非法英文字符，包括：. \ / : * ? " ' ` | { } [ ] |
+| member | string | 是 | 成员参数名称例如：[PhotoKeys](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#photokeys).TITLE。字符串长度的取值范围为[1, 255]字符。 |
+| value | string | 是 | 设置成员参数的值，只能修改[PhotoKeys](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#photokeys).TITLE的值。title的参数规格为： - 不应包含扩展名。 - 文件名字符串长度的取值范围为[1, 255]（资产文件名为标题+扩展名）。 - 不允许出现的非法英文字符，包括：. \ / : * ? " ' ` | { } [ ] |
 
 错误码：
 
@@ -157,7 +157,7 @@ commitModify(callback: AsyncCallback<void>): void
 
 以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[文件管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-filemanagement)。
 
-错误码14000001，请参考 [PhotoKeys](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#photokeys)获取有关文件名的格式和长度要求。
+错误码14000001表示显示名称无效，请参考[PhotoKeys](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#photokeys)中的DISPLAY_NAME字段获取有关文件名的格式和长度要求。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -182,14 +182,21 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
     fetchColumns: ['title'],
     predicates: predicates
   };
+  // 获取照片资源集合。
   let fetchResult: photoAccessHelper.FetchResult<photoAccessHelper.PhotoAsset> = await phAccessHelper.getAssets(fetchOption);
+  // 获取第一个照片资源对象。
   let photoAsset: photoAccessHelper.PhotoAsset = await fetchResult.getFirstObject();
+  if (photoAsset === undefined) {
+    console.error('photoAsset is undefined');
+    return;
+  }
   let title: string = photoAccessHelper.PhotoKeys.TITLE.toString();
+  // 获取当前标题值。
   let photoAssetTitle: photoAccessHelper.MemberType = photoAsset.get(title);
   console.info('photoAsset get photoAssetTitle = ', photoAssetTitle);
   photoAsset.set(title, 'newTitle2');
   photoAsset.commitModify((err) => {
-    if (err === undefined) {
+    if (!err) {
       let newPhotoAssetTitle: photoAccessHelper.MemberType = photoAsset.get(title);
       console.info('photoAsset get newPhotoAssetTitle = ', newPhotoAssetTitle);
     } else {
@@ -376,7 +383,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
     };
     let fetchResult: photoAccessHelper.FetchResult<photoAccessHelper.PhotoAsset> = await phAccessHelper.getAssets(fetchOption);
     let asset: photoAccessHelper.PhotoAsset = await fetchResult.getFirstObject();
-    let fd = await asset.open('rw');
+    let fd: number = await asset.getReadOnlyFd();
     console.info('file fd', fd);
     await asset.close(fd);
     console.info('asset close succeed.');
@@ -394,7 +401,7 @@ getThumbnail(callback: AsyncCallback<image.PixelMap>): void
 
 需要权限：ohos.permission.READ_IMAGEVIDEO
 
-元服务API：从API version 22开始，该接口支持在元服务中使用。
+元服务API： 从API version 22开始，该接口支持在元服务中使用。
 
 系统能力：SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -435,7 +442,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
   let asset: photoAccessHelper.PhotoAsset = await fetchResult.getFirstObject();
   console.info('asset displayName = ', asset.displayName);
   asset.getThumbnail((err, pixelMap) => {
-    if (err === undefined) {
+    if (!err) {
       console.info('getThumbnail successful ' + pixelMap);
     } else {
       console.error(`getThumbnail fail with error: ${err.code}, ${err.message}`);
@@ -460,7 +467,7 @@ getThumbnail(size: image.Size, callback: AsyncCallback<image.PixelMap>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| size | [image.Size](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-i#size) | 是 | 缩略图尺寸。 |
+| size | [image.Size](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-i#size) | 是 | 缩略图尺寸。取值原则：width和height为正整数，单位：像素（px）。 |
 | callback | AsyncCallback | 是 | 回调函数。当获取文件的缩略图成功，err为undefined，data为缩略图的PixelMap；否则为错误对象。 |
 
 错误码：
@@ -497,7 +504,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
     let asset = await fetchResult.getFirstObject();
     console.info('asset displayName = ', asset.displayName);
     asset.getThumbnail(size, (err, pixelMap) => {
-      if (err === undefined) {
+      if (!err) {
         console.info('getThumbnail successful ' + pixelMap);
       } else {
         console.error(`getThumbnail fail with error: ${err.code}, ${err.message}`);
@@ -525,7 +532,7 @@ getThumbnail(size?: image.Size): Promise<image.PixelMap>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| size | [image.Size](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-i#size) | 否 | 缩略图尺寸。 |
+| size | [image.Size](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-i#size) | 否 | 缩略图尺寸。取值原则：width和height为正整数，不传则使用默认尺寸256×256。单位：像素（px）。 |
 
 返回值：
 
@@ -588,13 +595,13 @@ clone(title: string): Promise<PhotoAsset>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| title | string | 是 | 克隆后资产的标题。参数规格为： - 不应包含扩展名。 - 文件名字符串长度的取值范围为[1, 255]（资产文件名为标题+扩展名）。 - 不允许出现的非法英文字符，包括：. \ / : * ? " ' ` | { } [ ] |
+| title | string | 是 | 克隆后资产的标题。参数规格为： - 不应包含扩展名。 - 文件名字符串长度的取值范围为[1, 255]字符（资产文件名为标题+扩展名）。 - 不允许出现的非法英文字符，包括：. \ / : * ? " ' ` | { } [ ] |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，返回[PhotoAsset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-photoasset)。 |
+| Promise | Promise对象，返回克隆后生成的新[PhotoAsset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-photoasset)对象。 |
 
 错误码：
 
@@ -683,7 +690,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
   let assetResult: photoAccessHelper.FetchResult<photoAccessHelper.PhotoAsset> = await phAccessHelper.getAssets(fetchOptions);
   let photoAsset: photoAccessHelper.PhotoAsset = await assetResult.getFirstObject();
   photoAsset.getReadOnlyFd((err, fd) => {
-    if (fd !== undefined) {
+    if (!err) {
       console.info('File fd' + fd);
       photoAsset.close(fd);
     } else {
@@ -749,7 +756,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
       return;
     }
     let fd: number = await photoAsset.getReadOnlyFd();
-    if (fd !== undefined) {
+    if (!err) {
       console.info('File fd' + fd);
       photoAsset.close(fd);
     } else {

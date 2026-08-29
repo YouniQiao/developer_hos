@@ -2,8 +2,8 @@
 title: "Scene"
 upstream_id: "harmonyos-references/js-apis-inner-scene"
 catalog: "harmonyos-references"
-content_hash: "04317d867b90"
-synced_at: "2026-07-24T16:46:15.962559"
+content_hash: "3fb29f133092"
+synced_at: "2026-08-29T18:18:03.655188"
 ---
 
 # Scene
@@ -50,9 +50,9 @@ function createShaderPromise(): Promise<Shader> {
         uri: $rawfile("shaders/custom_shader/custom_material_sample.shader") };
       let shader: Shader = await sceneFactory.createShader(sceneResourceParameter);
       resolve(shader);
-    }).catch((error: Error) => {
-      console.error('Scene load failed:', error);
-      reject(error);
+    }).catch((err: Error) => {
+      console.error(`Failed to load scene. Message: ${err.message}`);
+      reject(err);
     });
   });
 }
@@ -67,7 +67,7 @@ function createShaderPromise(): Promise<Shader> {
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | name | string | 否 | 否 | 要创建的节点名称，可由开发者自定义填写，用于标识场景节点。 |
-| path | string | 否 | 是 | 场景节点层次中的路径。用于指定创建的摄影机、灯光或节点在场景节点层次中的放置位置。每层之间使用'/'符号进行分割。如果未提供，则将其设置为根节点的子节点。默认值为undefined。 |
+| path | string | 否 | 是 | 场景节点层次中的路径。用于指定创建的相机、灯光或节点在场景节点层次中的放置位置。每层之间使用'/'符号进行分割。如果未提供，则将其设置为根节点的子节点。默认值为undefined。 |
 
 示例：
 
@@ -86,9 +86,9 @@ function createNodePromise() : Promise<Node> {
         path:"/rootNode_/empty_node" };
       let node: Node = await sceneFactory.createNode(sceneNodeParameter);
       resolve(node);
-    }).catch((error: Error) => {
-      console.error('Scene load failed:', error);
-      reject(error);
+    }).catch((err: Error) => {
+      console.error(`Failed to load scene. Message: ${err.message}`);
+      reject(err);
     });
   });
 }
@@ -103,7 +103,7 @@ function createNodePromise() : Promise<Node> {
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | node | [Node](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-nodes#node) | 否 | 否 | 被射线击中的3D场景节点，可通过该节点操作目标物体（如移动、旋转、隐藏）。 |
-| centerDistance | number | 否 | 否 | 命中物体包围盒中心到摄像机中心的距离，单位为世界坐标系下的场景单位（比如cm、m、km等），取值范围大于0。 |
+| centerDistance | number | 否 | 否 | 命中物体包围盒中心到相机中心的距离，单位为世界坐标系下的场景单位（比如cm、m、km等），取值范围大于0。 |
 | hitPosition | [Position3](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-types#position3) | 否 | 否 | 射线与物体碰撞点的精确世界坐标（{x: number, y: number, z: number}），单位为世界坐标系下的场景单位（比如cm、m、km等）。 |
 
 #### RaycastParameters20+
@@ -204,11 +204,11 @@ function createImageResource(): Promise<Image> {
 
 createImageStream(params: SceneResourceParameters): Promise<ImageStream>
 
-根据指定场景名称参数创建流图片，使用Promise异步回调。
+根据指定场景资源参数创建流图片，使用Promise异步回调。
 
-起始版本：26.0.0
+起始版本： 26.0.0
 
-模型约束：此接口仅可在Stage模型下使用。
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUi.Graphics3D
 
@@ -287,12 +287,12 @@ function createMeshResource(): Promise<MeshResource> {
     { x: 0, y: 1, z: 1 }
   ];
   geometry.indices = [
-    0, 1, 2, 2, 3, 0,     // front
-    4, 5, 6, 6, 7, 4,     // back
-    0, 4, 5, 5, 1, 0,     // bottom
-    1, 5, 6, 6, 2, 1,     // right
-    3, 2, 6, 6, 7, 3,     // top
-    3, 7, 4, 4, 0, 3      // left
+    0, 1, 2, 2, 3, 0, // front
+    4, 5, 6, 6, 7, 4, // back
+    0, 4, 5, 5, 1, 0, // bottom
+    1, 5, 6, 6, 2, 1, // right
+    3, 2, 6, 6, 7, 3, // top
+    3, 7, 4, 4, 0, 3  // left
   ];
   geometry.topology = PrimitiveTopology.TRIANGLE_LIST;
   geometry.normals = [
@@ -325,7 +325,7 @@ function createMeshResource(): Promise<MeshResource> {
     { r: 1, g: 1, b: 1, a: 1 },
     { r: 0, g: 0, b: 0, a: 1 }
   ];
-  // 加载图片资源，路径和文件名可根据项目实际资源自定义
+  // 创建网格资源，路径和文件名可根据项目实际资源自定义
   let sceneResourceParameter: SceneResourceParameters = {
     name: "cubeMesh",
     uri: $rawfile("image/Cube_BaseColor.png")
@@ -365,7 +365,7 @@ function createSamplerResource(): Promise<Sampler> {
     return Promise.reject(new Error("RenderContext is null"));
   }
   const renderResourceFactory: RenderResourceFactory = renderContext.getRenderResourceFactory();
-  // 加载图片资源，路径和文件名可根据项目实际资源自定义
+  // 创建采样器资源，路径和文件名可根据项目实际资源自定义
   let samplerParams: SceneResourceParameters = {
     name: "sampler1",
     uri: $rawfile("image/Cube_BaseColor.png")
@@ -477,9 +477,9 @@ function createCameraPromise(): Promise<Camera> {
       // 创建相机
       let camera: Camera = await sceneFactory.createCamera(sceneCameraParameter);
       resolve(camera);
-    }).catch((error: Error) => {
-      console.error('Scene load failed:', error);
-      reject(error);
+    }).catch((err: Error) => {
+      console.error(`Failed to load scene. Message: ${err.message}`);
+      reject(err);
     });
   });
 }
@@ -523,9 +523,9 @@ function createCameraPromise(): Promise<Camera> {
       // 创建相机
       let camera: Camera = await sceneFactory.createCamera(nodeParameter, camParameter);
       resolve(camera);
-    }).catch((error: Error) => {
-      console.error('Scene load failed:', error);
-      reject(error);
+    }).catch((err: Error) => {
+      console.error(`Failed to load scene. Message: ${err.message}`);
+      reject(err);
     });
   });
 }
@@ -567,9 +567,9 @@ function createLightPromise() : Promise<Light> {
       // 创建平行光
       let light: Light = await sceneFactory.createLight(sceneLightParameter, LightType.DIRECTIONAL);
       resolve(light);
-    }).catch((error: Error) => {
-      console.error('Scene load failed:', error);
-      reject(error);
+    }).catch((err: Error) => {
+      console.error(`Failed to load scene. Message: ${err.message}`);
+      reject(err);
     });
   });
 }
@@ -611,9 +611,9 @@ function createNodePromise(): Promise<Node> {
       // 创建节点
       let node: Node = await sceneFactory.createNode(sceneNodeParameter);
       resolve(node);
-    }).catch((error: Error) => {
-      console.error('Scene load failed:', error);
-      reject(error);
+    }).catch((err: Error) => {
+      console.error(`Failed to load scene. Message: ${err.message}`);
+      reject(err);
     });
   });
 }
@@ -655,9 +655,9 @@ function createMaterialPromise() : Promise<Material> {
       // 创建材质
       let material: Material = await sceneFactory.createMaterial(sceneMaterialParameter, MaterialType.SHADER);
       resolve(material);
-    }).catch((error: Error) => {
-      console.error('Scene load failed:', error);
-      reject(error);
+    }).catch((err: Error) => {
+      console.error(`Failed to load scene. Message: ${err.message}`);
+      reject(err);
     });
   });
 }
@@ -699,9 +699,9 @@ function createEnvironmentPromise(): Promise<Environment> {
       // 创建Environment
       let env: Environment = await sceneFactory.createEnvironment(sceneEnvironmentParameter);
       resolve(env);
-    }).catch((error: Error) => {
-      console.error('Scene load failed:', error);
-      reject(error);
+    }).catch((err: Error) => {
+      console.error(`Failed to load scene. Message: ${err.message}`);
+      reject(err);
     });
   });
 }
@@ -750,9 +750,9 @@ function createGeometryPromise() : Promise<Geometry> {
       // 根据场景节点参数和网格资源创建几何对象
       let geometry: Geometry = await sceneFactory.createGeometry({ name: "GeometryName" }, meshRes);
       resolve(geometry);
-    }).catch((error: Error) => {
-      console.error('Scene load failed:', error);
-      reject(error);
+    }).catch((err: Error) => {
+      console.error(`Failed to load scene. Message: ${err.message}`);
+      reject(err);
     });
   });
 }
@@ -795,9 +795,9 @@ function createEffect() : Promise<Effect> {
       let params: EffectParameters = {effectId: "e68a7f45-2d21-4a0d-9aef-7d9c825d3f12"};
       let effect: Effect = await sceneFactory.createEffect(params);
       resolve(effect);
-    }).catch((error: Error) => {
-      console.error('Scene load failed:', error);
-      reject(error);
+    }).catch((err: Error) => {
+      console.error(`Failed to load scene. Message: ${err.message}`);
+      reject(err);
     });
   });
 }
@@ -840,7 +840,7 @@ import { Scene, RenderContext, RenderResourceFactory } from '@kit.ArkGraphics3D'
 function getRenderResourceFactory(): void {
   const renderContext: RenderContext | null = Scene.getDefaultRenderContext();
   if (!renderContext) {
-    console.error("RenderContext is null");
+    console.error("Failed to get default render context");
     return;
   }
   const renderResourceFactory: RenderResourceFactory = renderContext.getRenderResourceFactory();
@@ -876,7 +876,7 @@ import { Scene, RenderContext } from '@kit.ArkGraphics3D';
 function loadPlugin(): Promise<boolean> {
   const renderContext: RenderContext | null = Scene.getDefaultRenderContext();
   if (!renderContext) {
-    console.error("RenderContext is null");
+    console.error("Failed to get default render context");
     return Promise.reject(new Error("RenderContext is null"));
   }
   return renderContext.loadPlugin("pluginName");
@@ -915,7 +915,7 @@ function registerResourcePath(): void {
     .then(() => {
       const renderContext: RenderContext | null = Scene.getDefaultRenderContext();
       if (!renderContext) {
-        console.error("RenderContext is null");
+        console.error("Failed to get default render context");
         return false;
       }
       // 注册路径检索名"myproto"及其对应的资产路径目录"OhosRawFile://shaders/custom_shader/"
@@ -926,9 +926,9 @@ function registerResourcePath(): void {
     })
     .then(result => {
       if (result) {
-        console.info("resource path registration success");
+        console.info("Succeeded in registering resource path");
       } else {
-        console.error("resource path registration failed");
+        console.error("Failed to register resource path");
       }
     });
 }
@@ -1060,8 +1060,8 @@ async function loadModelFromAbsolutePath(context: common.UIAbilityContext): Prom
   // 使用绝对路径加载模型
   Scene.load(load_uri).then((scene: Scene) => {
     // 加载成功后的逻辑处理
-  }).catch((error: string) => {
-    console.error('Scene load failed: ' + error);
+  }).catch((err: Error) => {
+    console.error(`Failed to load scene. Message: ${err.message}`);
   });
 }
 ```
@@ -1315,14 +1315,14 @@ function createComponentTest(): Promise<SceneComponent> {
   return Scene.load($rawfile("gltf/DamagedHelmet/glTF/DamagedHelmet.glb"))
     .then(scene => {
       if (!scene) {
-        return Promise.reject(new Error("Scene load failed"));
+        return Promise.reject(new Error("Failed to load scene"));
       }
       // RenderConfigurationComponent为引擎内置组件，创建时无需依赖插件
       return scene.createComponent(scene.root, "RenderConfigurationComponent");
     })
     .then(component => {
       if (!component) {
-        return Promise.reject(new Error("createComponent failed"));
+        return Promise.reject(new Error("Failed to create component"));
       }
       return component;
     });
@@ -1360,15 +1360,15 @@ function getComponentTest() {
   Scene.load($rawfile("gltf/DamagedHelmet/glTF/DamagedHelmet.glb"))
     .then(async (result: Scene | undefined) => {
       if (!result) {
-        console.error("Scene load failed");
+        console.error("Failed to load scene");
         return;
       }
       console.info("TEST getComponentTest");
       let component = result.getComponent(result.root, "myComponent");
       if (component) {
-        console.info("getComponent success");
+        console.info("Succeeded in getting component");
       } else {
-        console.warn("Component not found");
+        console.error("Failed to get component");
       }
     });
 }
@@ -1378,7 +1378,7 @@ function getComponentTest() {
 
 static getDefaultRenderContext(): RenderContext | null
 
-获取当前图形对象所关联的渲染环境信息。
+获取当前图形对象所关联的渲染上下文。
 
 系统能力： SystemCapability.ArkUi.Graphics3D
 
@@ -1397,9 +1397,9 @@ function getDefaultRenderContextTest() {
   console.info("TEST getDefaultRenderContextTest");
   const renderContext: RenderContext | null = Scene.getDefaultRenderContext();
   if (renderContext) {
-    console.info("getDefaultRenderContext success");
+    console.info("Succeeded in getting default render context");
   } else {
-    console.error("RenderContext is null");
+    console.error("Failed to get default render context");
   }
 }
 ```
@@ -1440,9 +1440,9 @@ function CloneNode() {
       let name = "cloneNode_";
       let clone = result.cloneNode(node, parent, name);
       if (clone) {
-        console.info("cloneNode success");
+        console.info("Succeeded in cloning node");
       } else {
-        console.error("cloneNode failed");
+        console.error("Failed to clone node");
       }
     });
 }

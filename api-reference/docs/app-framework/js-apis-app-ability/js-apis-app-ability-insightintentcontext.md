@@ -2,8 +2,8 @@
 title: "@ohos.app.ability.InsightIntentContext (意图执行上下文)"
 upstream_id: "harmonyos-references/js-apis-app-ability-insightintentcontext"
 catalog: "harmonyos-references"
-content_hash: "7b455d8cdf30"
-synced_at: "2026-07-28T16:40:33.142442"
+content_hash: "394b35351e84"
+synced_at: "2026-08-29T18:11:57.530624"
 ---
 
 # @ohos.app.ability.InsightIntentContext (意图执行上下文)
@@ -262,6 +262,7 @@ setReturnModeForUIAbilityForeground(returnMode: insightIntent.ReturnMode): void
 import { InsightIntentExecutor, insightIntent } from '@kit.AbilityKit';
 import { window } from '@kit.ArkUI';
 import { hilog } from '@kit.PerformanceAnalysisKit';
+import { BusinessError } from '@kit.BasicServicesKit';
 
 export default class InsightIntentExecutorUI extends InsightIntentExecutor {
   onExecuteInUIAbilityForegroundMode(name: string, param: Record<string, Object>,
@@ -329,6 +330,7 @@ setReturnModeForUIExtensionAbility(returnMode: insightIntent.ReturnMode): void
 ```
 import { InsightIntentExecutor, insightIntent, UIExtensionContentSession } from '@kit.AbilityKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
+import { BusinessError } from '@kit.BasicServicesKit';
 
 export default class InsightIntentExecutorUI extends InsightIntentExecutor {
   onExecuteInUIExtensionAbility(name: string, param: Record<string, Object>,
@@ -357,8 +359,8 @@ export default class InsightIntentExecutorUI extends InsightIntentExecutor {
       storage.setOrCreate('session', pageLoader);
       pageLoader.loadContent('pages/UIExtensionPage', storage);
     } catch (err) {
-      const err: BusinessError = err as BusinessError;
-      console.error(`Failed to loadContent. Code: ${err.code}, message: ${err.message}`);
+      const error: BusinessError = err as BusinessError;
+      console.error(`Failed to loadContent. Code: ${error.code}, message: ${error.message}`);
     }
     return result;
   }

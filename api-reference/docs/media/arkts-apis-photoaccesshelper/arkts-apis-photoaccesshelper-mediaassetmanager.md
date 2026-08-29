@@ -2,8 +2,8 @@
 title: "Class (MediaAssetManager)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-mediaassetmanager"
 catalog: "harmonyos-references"
-content_hash: "41f154a762fb"
-synced_at: "2026-07-28T16:52:03.479823"
+content_hash: "e89497bab0be"
+synced_at: "2026-08-29T18:17:46.394399"
 ---
 
 # Class (MediaAssetManager)
@@ -90,6 +90,10 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
   const handler = new MediaHandler();
 
   phAccessHelper.getAssets(fetchOptions, async (err, fetchResult) => {
+    if (err) {
+      console.error(`Failed to get assets. Code: ${err.code}, message: ${err.message}`);
+      return;
+    }
     console.info('fetchResult success');
     let photoAsset: photoAccessHelper.PhotoAsset = await fetchResult.getFirstObject();
     if (photoAsset === undefined) {
@@ -106,7 +110,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 
 static requestImageData(context: Context, asset: PhotoAsset, requestOptions: RequestOptions, dataHandler: MediaAssetDataHandler<ArrayBuffer>): Promise<string>
 
-根据不同的策略模式，请求图片资源数据。使用Promise异步回调。
+根据不同的策略模式，请求图片资源数据，适用于图片上传、滤镜处理等需要获取原始数据的场景。使用Promise异步回调。
 
 系统能力：SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -122,7 +126,7 @@ static requestImageData(context: Context, asset: PhotoAsset, requestOptions: Req
 | context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 传入Ability实例的上下文。 |
 | asset | [PhotoAsset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-photoasset) | 是 | 待请求的媒体文件对象。 |
 | requestOptions | [RequestOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-i#requestoptions11) | 是 | 图片请求策略模式配置项。 |
-| dataHandler | [MediaAssetDataHandler](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-mediaassetdatahandler) | 是 | 媒体资源处理器，当所请求的图片资源准备完成时会触发回调。 |
+| dataHandler | [MediaAssetDataHandler](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-mediaassetdatahandler) | 是 | 媒体资源处理器，请求完成时触发回调。 |
 
 返回值：
 
@@ -170,6 +174,10 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
   const handler = new MediaDataHandler();
 
   phAccessHelper.getAssets(fetchOptions, async (err, fetchResult) => {
+    if (err) {
+      console.error(`Failed to get assets. Code: ${err.code}, message: ${err.message}`);
+      return;
+    }
       console.info('fetchResult success');
       let photoAsset: photoAccessHelper.PhotoAsset = await fetchResult.getFirstObject();
       if (photoAsset === undefined) {
@@ -186,7 +194,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 
 static requestMovingPhoto(context: Context, asset: PhotoAsset, requestOptions: RequestOptions, dataHandler: MediaAssetDataHandler<MovingPhoto>): Promise<string>
 
-根据不同的策略模式，请求动态照片对象（动态照片对象可用于请求动态照片的资源数据）。使用Promise异步回调。
+根据不同的策略模式，请求动态照片对象，适用于查看动态照片。使用Promise异步回调。
 
 系统能力：SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -247,6 +255,10 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
   };
   // 请确保图库内存在动态照片。
   let assetResult: photoAccessHelper.FetchResult<photoAccessHelper.PhotoAsset> = await phAccessHelper.getAssets(fetchOptions);
+  if (!assetResult) {
+    console.error('Failed to get assets');
+    return;
+  }
   let asset: photoAccessHelper.PhotoAsset = await assetResult.getFirstObject();
   let requestOptions: photoAccessHelper.RequestOptions = {
     deliveryMode: photoAccessHelper.DeliveryMode.FAST_MODE,
@@ -256,7 +268,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
     let requestId: string = await photoAccessHelper.MediaAssetManager.requestMovingPhoto(context, asset, requestOptions, handler);
     console.info("moving photo requested successfully, requestId: " + requestId);
   } catch (err) {
-    console.error(`failed to request moving photo, error code is ${err.code}, message is ${err.message}`);
+    console.error(`Failed to request moving photo. Code: ${err.code}, message: ${err.message}`);
   }
 }
 ```
@@ -265,7 +277,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 
 static requestVideoFile(context: Context, asset: PhotoAsset, requestOptions: RequestOptions, fileUri: string, dataHandler: MediaAssetDataHandler<boolean>): Promise<string>
 
-根据不同的策略模式，请求视频资源数据到沙箱路径。使用Promise异步回调。
+根据不同的策略模式，请求视频资源数据到沙箱路径，适用于视频上传到服务器或播放器播放等场景。使用Promise异步回调。
 
 系统能力：SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -327,6 +339,10 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
   const handler = new MediaDataHandler();
   let fileUri = 'file://com.example.temptest/data/storage/el2/base/haps/entry/files/test.mp4';
   phAccessHelper.getAssets(fetchOptions, async (err, fetchResult) => {
+    if (err) {
+      console.error(`Failed to get assets. Code: ${err.code}, message: ${err.message}`);
+      return;
+    }
       console.info('fetchResult success');
       let photoAsset: photoAccessHelper.PhotoAsset = await fetchResult.getFirstObject();
       await photoAccessHelper.MediaAssetManager.requestVideoFile(context, photoAsset, requestOptions, fileUri, handler);
@@ -350,7 +366,7 @@ static cancelRequest(context: Context, requestId: string): Promise<void>
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 传入Ability实例的上下文。 |
-| requestId | string | 是 | 需要取消的请求id，requestImage等接口返回的有效请求id。 |
+| requestId | string | 是 | 需要取消的请求id，requestImage等接口返回的有效请求id。传入后会取消对应的请求操作，释放已分配的资源，该请求对应的回调将不会被触发。 |
 
 返回值：
 
@@ -379,7 +395,7 @@ async function example(context: Context) {
     await photoAccessHelper.MediaAssetManager.cancelRequest(context, requestId);
     console.info("request cancelled successfully");
   } catch (err) {
-    console.error(`cancelRequest failed with error: ${err.code}, ${err.message}`);
+    console.error(`Failed to cancel request. Code: ${err.code}, message: ${err.message}`);
   }
 }
 ```
@@ -399,8 +415,8 @@ static loadMovingPhoto(context: Context, imageFileUri: string, videoFileUri: str
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 传入AbilityContext或者UIExtensionContext的实例。 |
-| imageFileUri | string | 是 | 应用沙箱动态照片的图片uri。 示例：'file://com.example.temptest/data/storage/el2/base/haps/ImageFile.jpg' |
-| videoFileUri | string | 是 | 应用沙箱动态照片的视频uri。 示例：'file://com.example.temptest/data/storage/el2/base/haps/VideoFile.mp4' |
+| imageFileUri | string | 是 | 应用沙箱动态照片的图片URI，用于创建动态照片对象的图像组件。 示例：'file://com.example.temptest/data/storage/el2/base/haps/ImageFile.jpg' |
+| videoFileUri | string | 是 | 应用沙箱动态照片的视频URI，用于创建动态照片对象的视频组件。 示例：'file://com.example.temptest/data/storage/el2/base/haps/VideoFile.mp4' |
 
 返回值：
 
@@ -426,7 +442,7 @@ async function example(context: Context) {
     let videoFileUri: string = 'file://com.example.temptest/data/storage/el2/base/haps/VideoFile.mp4'; // 应用沙箱动态照片的视频uri。
     let movingPhoto: photoAccessHelper.MovingPhoto = await photoAccessHelper.MediaAssetManager.loadMovingPhoto(context, imageFileUri, videoFileUri);
   } catch (err) {
-    console.error(`loadMovingPhoto failed with error: ${err.code}, ${err.message}`);
+    console.error(`Failed to load moving photo. Code: ${err.code}, message: ${err.message}`);
   }
 }
 ```
@@ -435,7 +451,7 @@ async function example(context: Context) {
 
 static quickRequestImage(context: Context, asset: PhotoAsset, requestOptions: RequestOptions, dataHandler: QuickImageDataHandler<image.Picture>): Promise<string>
 
-根据不同的策略模式，快速请求图片资源。使用Promise异步回调。
+根据不同的策略模式，快速请求图片资源。适用于图片列表缩略图加载等对加载速度要求高的场景。使用Promise异步回调。
 
 系统能力：SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -495,6 +511,10 @@ async function example(context: Context) {
   const handler = new MediaHandler();
   let phAccessHelper = photoAccessHelper.getPhotoAccessHelper(context);
   phAccessHelper.getAssets(fetchOptions, async (err, fetchResult) => {
+    if (err) {
+      console.error(`Failed to get assets. Code: ${err.code}, message: ${err.message}`);
+      return;
+    }
       console.info('fetchResult success');
       let photoAsset: photoAccessHelper.PhotoAsset = await fetchResult.getFirstObject();
       await photoAccessHelper.MediaAssetManager.quickRequestImage(context, photoAsset, requestOptions, handler);

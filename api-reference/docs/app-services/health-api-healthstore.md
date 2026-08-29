@@ -2,13 +2,15 @@
 title: "healthStore (运动健康数据服务)"
 upstream_id: "harmonyos-references/health-api-healthstore"
 catalog: "harmonyos-references"
-content_hash: "6357939096cf"
-synced_at: "2026-08-04T17:04:11.717844"
+content_hash: "33007f176e1d"
+synced_at: "2026-08-29T18:18:16.517395"
 ---
 
 # healthStore (运动健康数据服务)
 
 本模块提供运动健康数据服务。
+
+![](./img/note_3.0-zh-cn.png) 针对系统能力SystemCapability.Health.HealthStore，请先使用[canIUse()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-syscap#caniuse)接口判断当前设备是否支持此syscap及对应接口。
 
 起始版本： 5.0.0(12)
 

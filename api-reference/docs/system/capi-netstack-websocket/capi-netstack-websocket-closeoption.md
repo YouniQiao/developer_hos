@@ -2,8 +2,8 @@
 title: "WebSocket_CloseOption"
 upstream_id: "harmonyos-references/capi-netstack-websocket-closeoption"
 catalog: "harmonyos-references"
-content_hash: "67cf5474cf02"
-synced_at: "2026-07-09T00:59:29.943391"
+content_hash: "b39b320f995d"
+synced_at: "2026-08-29T18:16:45.830889"
 ---
 
 # WebSocket_CloseOption
@@ -14,7 +14,7 @@ struct WebSocket_CloseOption {...}
 
 #### 概述
 
-websocket客户端主动关闭的参数。
+WebSocket客户端主动关闭的参数。
 
 起始版本： 11
 

@@ -2,8 +2,8 @@
 title: "OH_Drawing_FontAliasInfo"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-fontaliasinfo"
 catalog: "harmonyos-references"
-content_hash: "a6f51ead877a"
-synced_at: "2026-07-09T01:01:01.049926"
+content_hash: "1e5b2c39ee12"
+synced_at: "2026-08-29T18:17:58.293049"
 ---
 
 # OH_Drawing_FontAliasInfo
@@ -29,4 +29,4 @@ typedef struct OH_Drawing_FontAliasInfo {...} OH_Drawing_FontAliasInfo
 | 名称 | 描述 |
 | --- | --- |
 | char* familyName | 字体家族名。 |
-| int weight | 字体字重值，当字重值大于0时，表示此字体集只包含所指定weight的字体，当字重值等于0时，表示此字体集包含所有字体。 |
+| int weight | 字体字重值，当字重值大于0时，表示此字体集只包含所指定字重的字体，当字重值等于0时，表示此字体集包含所有字体。 |

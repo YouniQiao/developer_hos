@@ -2,8 +2,8 @@
 title: "Class (ConsoleMessage)"
 upstream_id: "harmonyos-references/arkts-basic-components-web-consolemessage"
 catalog: "harmonyos-references"
-content_hash: "1502c665a6ed"
-synced_at: "2026-07-09T00:58:53.214879"
+content_hash: "2335f294ec57"
+synced_at: "2026-08-29T18:16:00.089405"
 ---
 
 # Class (ConsoleMessage)
@@ -12,8 +12,8 @@ ConsoleMessage是Web组件中封装JavaScript控制台输出信息的对象。�
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 该组件首批接口从API version 8开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
-- 本Class首批接口从API version 8开始支持。
+- 该组件从API version 8开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+- 本Class从API version 8开始支持。
 - 示例效果请以真机运行为准。
 
 #### constructor(deprecated)
@@ -47,7 +47,7 @@ ConsoleMessage的构造函数。
 
 getLineNumber(): number
 
-获取ConsoleMessage的行号。
+获取控制台输出在网页源文件中的行号。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -55,13 +55,13 @@ getLineNumber(): number
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 返回ConsoleMessage的行号。 |
+| number | 返回控制台输出在网页源文件中的行号。 |
 
 #### getMessage
 
 getMessage(): string
 
-获取ConsoleMessage的日志信息。
+获取控制台输出的日志信息。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -69,7 +69,7 @@ getMessage(): string
 
 | 类型 | 说明 |
 | --- | --- |
-| string | 返回ConsoleMessage的日志信息。 |
+| string | 返回控制台输出的日志信息。 |
 
 #### getMessageLevel
 

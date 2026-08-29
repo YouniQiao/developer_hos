@@ -2,8 +2,8 @@
 title: "tagSession (标准NFC-Tag TagSession)"
 upstream_id: "harmonyos-references/js-apis-tagsession"
 catalog: "harmonyos-references"
-content_hash: "e5b7606a2af4"
-synced_at: "2026-07-09T00:59:24.468584"
+content_hash: "d54449f79941"
+synced_at: "2026-08-29T18:16:38.835389"
 ---
 
 # tagSession (标准NFC-Tag TagSession)
@@ -22,11 +22,11 @@ import { tag } from '@kit.ConnectivityKit';
 
 #### TagSession
 
-TagSession是所有[nfcTag技术类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-nfctech)的基类， 提供建立连接和发送数据等共同接口。
+TagSession是所有nfcTag技术类型[nfctech](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-nfctech)的基类，提供建立连接和发送数据等共同接口。
 
 需要通过其子类来访问以下接口。在下面的示例中 统一用 getXXX()表示获取子类实例的方法。
 
-具体使用时,请根据实际采用的nfcTag技术，选择对应的方法，具体请参见[nfcTag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-nfctag)文档。
+具体使用时，请根据实际采用的nfcTag技术，选择对应的方法，具体请参见[nfc-Tag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-nfctag)文档。
 
 #### [h2]getTagInfo(deprecated)
 
@@ -60,7 +60,7 @@ console.info("tag tagInfo: " + tagInfo);
 
 #### [h2]connectTag(deprecated)
 
-connectTag(): boolean;
+connectTag(): boolean
 
 和标签建立连接。在从标签读取数据或将数据写入标签之前，必须调用此方法。
 
@@ -90,7 +90,7 @@ console.info("connectStatus: " + connectStatus);
 
 #### [h2]connect9+
 
-connect(): void;
+connect(): void
 
 和标签建立连接。在从标签读取数据或将数据写入标签之前，必须调用此方法。
 
@@ -513,7 +513,7 @@ sendData(data: number[]): Promise<number[]>
 示例：
 
 ```
-import tag from '@kit.ConnectivityKit';
+import { tag } from '@kit.ConnectivityKit';
 import { BusinessError } from '@ohos.base';
 
 // 参考 @ohos.nfc.tag（标准NFC-Tag）中 tag.TagInfo 接口，tagInfo是nfc服务在分派标签时给出的对象
@@ -530,9 +530,9 @@ function tagSessionDemo() {
 
     let cmdData = [0x01, 0x02, 0x03, 0x04]; // 更改为正确的 data
     tag.getIsoDep(tagInfo).sendData(cmdData).then((response) => {
-    console.info("tagSession sendData Promise response: " + response);
-    }).catch((err : BusinessError)=> {
-    console.error("tagSession sendData Promise err: " + err);
+        console.info("tagSession sendData Promise response: " + response);
+    }).catch((err : BusinessError) => {
+        console.error("tagSession sendData Promise err: " + err);
     });
 }
 ```
@@ -574,7 +574,7 @@ function tagSessionDemo() {
     }
 
     let cmdData = [0x01, 0x02, 0x03, 0x04]; // 更改为正确的 data
-    tag.getIsoDep(tagInfo).sendData(cmdData, (err, response)=> {
+    tag.getIsoDep(tagInfo).sendData(cmdData, (err, response) => {
         if (err) {
             console.error("tagSession sendData AsyncCallback err: " + err);
         } else {
@@ -630,7 +630,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 // getXXX，可以是getIsoDep、getNdef、getMifareClassic...
 
 function tagSessionDemo() {
-// 如果没有连接，请先连接tag
+    // 如果没有连接，请先连接tag
     try {
         if (!tag.getIsoDep(tagInfo).isConnected()) {
             tag.getIsoDep(tagInfo).connect();
@@ -642,9 +642,9 @@ function tagSessionDemo() {
 
     let cmdData = [0x01, 0x02, 0x03, 0x04]; // 更改为正确的 data
     try {
-    tag.getIsoDep(tagInfo).transmit(cmdData).then((response) => {
+        tag.getIsoDep(tagInfo).transmit(cmdData).then((response) => {
         console.info("tagSession transmit Promise response: " + response);
-    }).catch((err : BusinessError)=> {
+    }).catch((err : BusinessError) => {
         console.error("tagSession transmit Promise err: " + err);
     });
     } catch (businessError) {
@@ -683,7 +683,7 @@ transmit(data: number[], callback: AsyncCallback<number[]>): void
 | 401 | The parameter check failed. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameters types. 3. Parameter verification failed. |
 | 801 | Capability not supported. |
 | 3100201 | The tag running state is abnormal in the service. |
-| 3100204 | The tag I/O operation failed.. |
+| 3100204 | The tag I/O operation failed. |
 
 示例：
 
@@ -706,7 +706,7 @@ function tagSessionDemo() {
 
     let cmdData = [0x01, 0x02, 0x03, 0x04]; // 更改为正确的 data
     try {
-        tag.getIsoDep(tagInfo).transmit(cmdData, (err, response)=> {
+        tag.getIsoDep(tagInfo).transmit(cmdData, (err, response) => {
             if (err) {
                 console.error("tagSession transmit AsyncCallback err: " + err);
             } else {

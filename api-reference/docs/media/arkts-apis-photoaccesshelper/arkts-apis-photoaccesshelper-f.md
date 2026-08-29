@@ -2,8 +2,8 @@
 title: "Functions"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-f"
 catalog: "harmonyos-references"
-content_hash: "84439a369d6e"
-synced_at: "2026-07-09T01:00:45.678424"
+content_hash: "44e57df36edf"
+synced_at: "2026-08-29T18:17:45.798198"
 ---
 
 # Functions
@@ -51,16 +51,17 @@ getPhotoAccessHelper(context: Context): PhotoAccessHelper
 示例：
 
 ```
-// 此处获取的phAccessHelper实例为全局对象，后续使用到phAccessHelper的地方默认为使用此处获取的对象，如未添加此段代码报phAccessHelper未定义的错误请自行添加。
+// phAccessHelper为全局对象，后续使用时请确保已获取该实例。
 // 请在组件内获取context，确保this.getUIContext().getHostContext()返回结果为UIAbilityContext
 import { common } from '@kit.AbilityKit';
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
 
 @Entry
 @Component
 struct Index {
   build() {
     Row() {
-      Button("example").onClick(async () => {
+        Button('example').onClick(async () => {
         let context: Context = this.getUIContext().getHostContext() as common.UIAbilityContext;
         let phAccessHelper = photoAccessHelper.getPhotoAccessHelper(context);
       }).width('100%')

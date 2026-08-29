@@ -2,15 +2,15 @@
 title: "deviceInfo错误码"
 upstream_id: "harmonyos-references/errorcode-device-info"
 catalog: "harmonyos-references"
-content_hash: "c32ce149b4be"
-synced_at: "2026-07-09T00:59:45.140112"
+content_hash: "dece29e8ca87"
+synced_at: "2026-08-29T18:17:01.548734"
 ---
 
 # deviceInfo错误码
 
 ![](./img/note_3.0-zh-cn.png) 以下仅介绍本模块特有错误码，通用错误码请参考[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
-#### 14700103 操作权限被拒绝
+#### 14700103 操作因权限被拒绝
 
 错误信息
 
@@ -26,4 +26,4 @@ The operation on the system permission is denied.
 
 处理步骤
 
-添加相应的权限。
+在配置文件中添加相应的权限，例如：{"name": "ohos.permission.sec.ACCESS_UDID"}。不同字段可能需要不同权限，请参考[@ohos.deviceInfo (设备信息)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-device-info)。

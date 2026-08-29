@@ -2,8 +2,8 @@
 title: "spatialEdit"
 upstream_id: "harmonyos-references/spatial-recon-spatialedit"
 catalog: "harmonyos-references"
-content_hash: "935513a78d13"
-synced_at: "2026-07-28T16:52:25.676442"
+content_hash: "0b53d9fe3af9"
+synced_at: "2026-08-29T18:18:05.988558"
 ---
 
 # spatialEdit
@@ -64,7 +64,7 @@ static editGSNode(node: spatialRender.GSNode): GSEdit | undefined
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| node | [GSNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/spatial-recon-spatialrender#gsnode) | 是 | 需要编辑的3DGS节点。 |
+| node | [spatialRender.GSNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/spatial-recon-spatialrender#gsnode) | 是 | 需要编辑的3DGS节点。 |
 
 返回值：
 
@@ -363,12 +363,6 @@ transform(matrix: Mat4x4): void
 | --- | --- | --- | --- |
 | matrix | [Mat4x4](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-types#mat4x423) | 是 | 4x4变换矩阵。 |
 
-返回值：
-
-| 类型 | 说明 |
-| --- | --- |
-| [GSEdit](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/spatial-recon-spatialedit#gsedit) | 3DGS模型编辑句柄。 |
-
 示例：
 
 ```
@@ -634,11 +628,13 @@ function SaveToPLY(context: Context) : void {
 
 #### [h2]extract3DMainBody
 
-extract3DMainBody(point: Vec2): Promise<boolean>
+extract3DMainBody(pressPoint: Vec2): Promise<boolean>
 
 根据按压的点集提取3D主体,调用完成后，抽取结果会覆盖内存中的GSNode数据，使用Promise异步回调。
 
 系统能力： SystemCapability.Graphics.SpatialEdit
+
+模型约束： 此模块的接口仅可在Stage模型下使用。
 
 起始版本： 26.0.0
 
@@ -646,7 +642,7 @@ extract3DMainBody(point: Vec2): Promise<boolean>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| point | [Vec2](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-types#vec2) | 是 | 屏幕位置坐标，用于指定提取主体的位置。 |
+| pressPoint | [Vec2](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-types#vec2) | 是 | 屏幕位置坐标，用于指定提取主体的位置。 |
 
 返回值：
 
@@ -671,9 +667,9 @@ function extract3DMainBody() : void {
     // 获取GSEdit实例
     let editor: spatialEdit.GSEdit = spatialEdit.GSEdit.editGSNode(gsNode);
 
-    let point: Vec2 = { x: 0.5, y: 0.5 };
+    let pressPoint: Vec2 = { x: 0.5, y: 0.5 };
     // 提取该位置的3D主体
-    let result: boolean = await editor.extract3DMainBody(point);
+    let result: boolean = await editor.extract3DMainBody(pressPoint);
   });
 }
 ```

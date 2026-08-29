@@ -2,8 +2,8 @@
 title: "numberIdentify (号码识别查询基本能力)"
 upstream_id: "harmonyos-references/callservicekit-numberldentify"
 catalog: "harmonyos-references"
-content_hash: "48be6cdb9acc"
-synced_at: "2026-08-14T15:55:58.418222"
+content_hash: "c25a79c187ac"
+synced_at: "2026-08-29T18:18:13.262974"
 ---
 
 # numberIdentify (号码识别查询基本能力)
@@ -44,7 +44,7 @@ isSupportEnterpriseNumberIdentify(context: Context): Promise<boolean>
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/call-error-code)。
+以下错误码的详细介绍请参见[电话子系统错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-telephony)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -91,7 +91,7 @@ queryNumberIdentifySwitchState(context: Context):SwitchState
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/call-error-code)。
+以下错误码的详细介绍请参见[电话子系统错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-telephony)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |

@@ -2,8 +2,8 @@
 title: "手势公共接口"
 upstream_id: "harmonyos-references/ts-gesture-common"
 catalog: "harmonyos-references"
-content_hash: "79eefeec7956"
-synced_at: "2026-08-03T17:09:44.480265"
+content_hash: "3d1bb0b313ec"
+synced_at: "2026-08-29T18:13:14.471072"
 ---
 
 # 手势公共接口
@@ -350,7 +350,7 @@ getEventTargetInfo(): EventTargetInfo
 
 #### [h2]isValid12+
 
-isValid(): boolean;
+isValid(): boolean
 
 返回当前手势识别器是否有效。
 
@@ -701,7 +701,7 @@ getDistanceMap(): Map<SourceTool, number>
 
 #### GestureEvent对象说明
 
-定义手势的事件信息。继承自[BaseEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-customize-judge#baseevent8)。
+定义手势的事件信息。继承自[BaseEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-click#baseevent8)。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -753,8 +753,6 @@ getDistanceMap(): Map<SourceTool, number>
 #### GestureType11+
 
 定义手势类型。
-
-模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -852,7 +850,7 @@ type GestureType = TapGesture | LongPressGesture | PanGesture | PinchGesture | S
 
 #### BaseGestureEvent11+对象说明
 
-基础手势事件类型。继承自[BaseEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-customize-judge#baseevent8)。
+基础手势事件类型。继承自[BaseEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-click#baseevent8)。
 
 模型约束： 此接口仅可在Stage模型下使用。
 

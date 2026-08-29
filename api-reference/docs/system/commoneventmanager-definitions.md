@@ -2,8 +2,8 @@
 title: "系统定义的公共事件"
 upstream_id: "harmonyos-references/commoneventmanager-definitions"
 catalog: "harmonyos-references"
-content_hash: "ba9220eeae92"
-synced_at: "2026-07-28T16:50:58.783575"
+content_hash: "e4b78dd188c1"
+synced_at: "2026-08-29T18:16:57.326116"
 ---
 
 # 系统定义的公共事件
@@ -20,7 +20,7 @@ synced_at: "2026-07-28T16:50:58.783575"
 
 表示用户重启应用包并终止其所有进程。
 
-在设备上指定用户重启应用包并终止其所有进程，将会触发事件通知服务发布该系统公共事件。
+在设备上指定用户重启应用包并终止其所有进程，将会触发事件通知服务发布该[系统公共事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-glossary#system-common-event系统公共事件)。
 
 ![](./img/note_3.0-zh-cn.png) 三方应用只能监听自身应用的重启事件。
 
@@ -186,7 +186,7 @@ synced_at: "2026-07-28T16:50:58.783575"
 
 取值： "usual.event.MANAGE_PACKAGE_STORAGE"
 
-#### [h2]COMMON_EVENT_SKILL_CHANGED26+
+#### [h2]COMMON_EVENT_SKILL_CHANGED
 
 表示设备上应用的skill发生变化的公共事件。
 
@@ -195,6 +195,8 @@ synced_at: "2026-07-28T16:50:58.783575"
 ![](./img/note_3.0-zh-cn.png) 应用默认只能接收自身应用的skill变化事件。
 
 申请ohos.permission.MANAGE_SKILL_PRIVILEGE权限后能接收自身应用和其他应用的skill变化事件。
+
+起始版本： 26.0.0
 
 系统能力： SystemCapability.Notification.CommonEvent
 
@@ -208,7 +210,7 @@ synced_at: "2026-07-28T16:50:58.783575"
 
 表示用户开启未成年人模式。
 
-在设备上开启未成年人模式，将会触发事件通知服务发布该系统公共事件。
+在设备上开启未成年人模式，将会触发事件通知服务发布该[系统公共事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-glossary#system-common-event系统公共事件)。
 
 系统能力： SystemCapability.Notification.CommonEvent
 
@@ -238,7 +240,7 @@ synced_at: "2026-07-28T16:50:58.783575"
 
 表示datashare服务可用。
 
-datashare服务启动完成后，将会触发事件通知服务发布该系统公共事件。
+datashare服务启动完成后，将会触发事件通知服务发布该[系统公共事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-glossary#system-common-event系统公共事件)。
 
 系统能力： SystemCapability.Notification.CommonEvent
 
@@ -254,7 +256,7 @@ datashare服务启动完成后，将会触发事件通知服务发布该系统�
 
 表示分屏行为的公共事件。
 
-启动最近任务窗口、创建或销毁分屏条，都会触发通知服务发布这个系统公共事件。
+启动最近任务窗口、创建或销毁分屏条，都会触发通知服务发布这个[系统公共事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-glossary#system-common-event系统公共事件)。
 
 系统能力： SystemCapability.Notification.CommonEvent
 
@@ -268,9 +270,9 @@ datashare服务启动完成后，将会触发事件通知服务发布该系统�
 
 #### [h2]COMMON_EVENT_SLOT_CHANGE
 
-表示通知渠道或通知开关发生变化。
+表示[通知渠道](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-glossary#notification-slot通知渠道)或通知开关发生变化。
 
-通知设置里修改应用的渠道参数、渠道开关，或者开启、关闭通知使能开关时，都会触发通知服务发布这个系统公共事件。
+[通知设置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-glossary#notification-setting通知设置)里修改应用的渠道参数、渠道开关，或者开启、关闭通知使能开关时，都会触发通知服务发布这个[系统公共事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-glossary#system-common-event系统公共事件)。
 
 系统能力： SystemCapability.Notification.CommonEvent
 
@@ -284,7 +286,7 @@ datashare服务启动完成后，将会触发事件通知服务发布该系统�
 
 表示设备上待机状态变化，触发公共事件发布动作。
 
-如果用户一段时间没有使用设备且屏幕已经关闭情况下，系统延迟后台应用程序CPU和网络访问，将会触发公共事件服务发布该系统公共事件。
+如果用户一段时间没有使用设备且屏幕已经关闭情况下，系统延迟后台应用程序CPU和网络访问，将会触发[公共事件服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-glossary#common-event-service-ces公共事件服务)发布该[系统公共事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-glossary#system-common-event系统公共事件)。
 
 系统能力： SystemCapability.Notification.CommonEvent
 
@@ -298,7 +300,7 @@ datashare服务启动完成后，将会触发事件通知服务发布该系统�
 
 表示USB设备状态发生变化。
 
-当USB断开或者连接时状态发生变化，将会触发事件通知服务发布该系统公共事件。
+当USB断开或者连接时状态发生变化，将会触发事件通知服务发布该[系统公共事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-glossary#system-common-event系统公共事件)。
 
 系统能力： SystemCapability.Notification.CommonEvent
 
@@ -762,7 +764,7 @@ datashare服务启动完成后，将会触发事件通知服务发布该系统�
 
 表示蓝牙HFP AG连接状态变化的公共事件的操作。
 
-当蓝牙HFP AG连接状态变化时，将会触发事件通知服务发布该系统公共事件。
+当蓝牙HFP AG连接状态变化时，将会触发事件通知服务发布该[系统公共事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-glossary#system-common-event系统公共事件)。
 
 系统能力： SystemCapability.Notification.CommonEvent
 
@@ -1082,7 +1084,7 @@ Wi-Fi连接状态发生改变。
 
 表示浏览器托管策略已更改。
 
-当浏览器托管策略发生变化，将会触发事件通知服务发布该系统公共事件。
+当浏览器托管策略发生变化，将会触发事件通知服务发布该[系统公共事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-glossary#system-common-event系统公共事件)。
 
 系统能力： SystemCapability.Notification.CommonEvent
 
@@ -1096,7 +1098,7 @@ Wi-Fi连接状态发生改变。
 
 设置系统语言的公共事件的动作。
 
-当设置系统语言时，将会触发事件通知服务发布该系统公共事件。
+当设置系统语言时，将会触发事件通知服务发布该[系统公共事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-glossary#system-common-event系统公共事件)。
 
 系统能力： SystemCapability.Notification.CommonEvent
 
@@ -1110,7 +1112,7 @@ Wi-Fi连接状态发生改变。
 
 表示网络连接状态变化。
 
-各类网络（以太网、Wi-Fi、蜂窝等）在连接状态变化时（断开、断开中、连接中、已连接等），将会触发事件通知服务发布该系统公共事件。
+各类网络（以太网、Wi-Fi、蜂窝等）在连接状态变化时（断开、断开中、连接中、已连接等），将会触发事件通知服务发布该[系统公共事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-glossary#system-common-event系统公共事件)。
 
 具体枚举值及其对应的连接状态如下表所示：
 
@@ -1155,7 +1157,7 @@ Wi-Fi连接状态发生改变。
 
 #### Telephony Kit
 
-电话服务子系统面向应用发布如下系统公共事件。
+电话服务子系统面向应用发布如下[系统公共事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-glossary#system-common-event系统公共事件)。
 
 #### [h2]COMMON_EVENT_SIM_STATE_CHANGED10+
 
@@ -1207,7 +1209,7 @@ Wi-Fi连接状态发生改变。
 
 #### AppGallery Kit
 
-AppGallery Kit面向应用发布如下系统公共事件。
+AppGallery Kit面向应用发布如下[系统公共事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-glossary#system-common-event系统公共事件)。
 
 #### [h2]COMMON_EVENT_PRIVACY_STATE_CHANGED11+
 
@@ -1223,7 +1225,7 @@ AppGallery Kit面向应用发布如下系统公共事件。
 
 #### Multimodalinput Kit
 
-Multimodalinput Kit面向应用发布如下系统公共事件。
+Multimodalinput Kit面向应用发布如下[系统公共事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-glossary#system-common-event系统公共事件)。
 
 #### [h2]COMMON_EVENT_TABLET_MODE_CHANGED23+
 

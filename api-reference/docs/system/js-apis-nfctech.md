@@ -2,8 +2,8 @@
 title: "nfctech (标准NFC-Tag Nfc 技术)"
 upstream_id: "harmonyos-references/js-apis-nfctech"
 catalog: "harmonyos-references"
-content_hash: "2bf6e70e67f4"
-synced_at: "2026-07-09T00:59:25.393409"
+content_hash: "72f061b0a6d2"
+synced_at: "2026-08-29T18:16:39.094683"
 ---
 
 # nfctech (标准NFC-Tag Nfc 技术)
@@ -22,7 +22,7 @@ import { tag } from '@kit.ConnectivityKit';
 
 #### NfcATag
 
-NfcATag 提供 NFC-A(ISO 14443-3A)技术的属性和I/O操作的访问，继承自[TagSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-tagsession)。
+NfcATag提供对NFC-A(ISO 14443-3A)技术的属性和I/O操作的访问，继承自[TagSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-tagsession)。
 
 TagSession是所有NFC Tag技术类型的基类， 提供建立连接和发送数据等共同接口。具体请参见[TagSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-tagsession)。
 
@@ -479,7 +479,7 @@ console.info("ndef ndefRecords number: " + ndefRecords.length);
 
 #### NdefTag9+
 
-提供对已格式化为NDEF的NFC标签的数据和操作的访问，继承自TagSession。
+NdefTag提供对已格式化为NDEF的NFC标签的数据和操作的访问，继承自[TagSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-tagsession)。
 
 TagSession是所有NFC Tag技术类型的基类，提供建立连接和发送数据等共同接口。具体请参见[TagSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-tagsession)。
 
@@ -614,7 +614,7 @@ function nfcTechDemo(){
         ndefTag.readNdef().then((ndefmessage : tag.NdefMessage) => {
             console.info("ndef readNdef Promise ndefmessage: " + ndefmessage);
         }).catch((err : BusinessError)=> {
-            console.error("ndef readNdef Promise err Code: ${err.code}, message: ${err.message}");
+            console.error(`ndef readNdef Promise err Code: ${err.code}, message: ${err.message}`);
         });
     } catch (businessError) {
         console.error(`ndef readNdef Promise catch businessError Code: ${(businessError as BusinessError).code}, message: ${(businessError as BusinessError).message}`);
@@ -1081,7 +1081,7 @@ function nfcTechDemo() {
 
     try {
         let sectorIndex = 1; // 将其更改为正确的 index
-        let key = [0x01, 0x02, 0x03, 0x04, 0x05, 0x06]  // 必须是6个字节，将其更改为正确的key
+        let key = [0x01, 0x02, 0x03, 0x04, 0x05, 0x06];  // 必须是6个字节，将其更改为正确的key
         mifareClassic.authenticateSector(sectorIndex, key, true).then(() => {
             console.info("mifareClassic authenticateSector Promise success.");
         }).catch((err : BusinessError)=> {
@@ -1144,7 +1144,7 @@ function nfcTechDemo() {
 
     try {
         let sectorIndex = 1; // 将其更改为正确的 index
-        let key = [0x01, 0x02, 0x03, 0x04, 0x05, 0x06]  // 必须是6个字节，将其更改为正确的key
+        let key = [0x01, 0x02, 0x03, 0x04, 0x05, 0x06];  // 必须是6个字节，将其更改为正确的key
         mifareClassic.authenticateSector(sectorIndex, key, true, (err : BusinessError)=> {
             if (err) {
                 console.error(`mifareClassic authenticateSector AsyncCallback errCode: ${err.code}, message: ${err.message}`);
@@ -1685,7 +1685,7 @@ function nfcTechDemo() {
 
 transferToBlock(blockIndex: number): Promise<void>
 
-将临时寄存器的值转移到指定的块。使用Promise异步异步回调。
+将临时寄存器的值转移到指定的块。使用Promise异步回调。
 
 需要权限： ohos.permission.NFC_TAG
 
@@ -2197,7 +2197,7 @@ MifareUltralightTag获取方式请参考[nfc-tag开发指南](https://developer.
 
 readMultiplePages(pageIndex: number): Promise<number[]>
 
-读取标签的4页数据，共16字节的数据。每个页面数据大小为4字节。使用Promise异步回调
+读取标签的4页数据，共16字节的数据。每个页面数据大小为4字节。使用Promise异步回调。
 
 需要权限： ohos.permission.NFC_TAG
 

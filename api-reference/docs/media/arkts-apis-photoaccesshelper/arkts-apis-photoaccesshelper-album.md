@@ -2,8 +2,8 @@
 title: "Interface (Album)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-album"
 catalog: "harmonyos-references"
-content_hash: "03e355b3212f"
-synced_at: "2026-07-09T01:00:46.777895"
+content_hash: "080fc3e608b0"
+synced_at: "2026-08-29T18:17:46.436677"
 ---
 
 # Interface (Album)
@@ -33,7 +33,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 
 commitModify(callback: AsyncCallback<void>): void
 
-更新相册属性修改到数据库中。使用callback异步回调。
+更新相册属性到数据库中。使用callback异步回调。
 
 需要权限：ohos.permission.WRITE_IMAGEVIDEO
 
@@ -82,7 +82,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
   }
   album.albumName = 'hello';
   album.commitModify((err) => {
-    if (err !== undefined) {
+    if (err) {
       console.error(`commitModify failed with error: ${err.code}, ${err.message}`);
     } else {
       console.info('commitModify successfully');
@@ -95,7 +95,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 commitModify(): Promise<void>
 
-更新相册属性修改到数据库中。使用Promise异步回调。
+更新相册属性到数据库中。使用Promise异步回调。
 
 需要权限：ohos.permission.WRITE_IMAGEVIDEO
 
@@ -144,6 +144,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
     return;
   }
   album.albumName = 'hello';
+  // 提交相册名称修改到数据库。
   album.commitModify().then(() => {
     console.info('commitModify successfully');
   }).catch((err: BusinessError) => {
@@ -156,7 +157,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 addAssets(assets: Array<PhotoAsset>, callback: AsyncCallback<void>): void
 
-向用户相册中添加图片或视频，需预置相册和文件资源。使用callback异步回调。
+向用户相册添加图片或视频，调用前需确保已获取相册对象并准备好资源文件。使用callback异步回调。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 10开始支持，从API version 11开始废弃。建议使用[MediaAlbumChangeRequest.addAssets](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-mediaalbumchangerequest#addassets11)替代。
 
@@ -168,7 +169,7 @@ addAssets(assets: Array<PhotoAsset>, callback: AsyncCallback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| assets | Array | 是 | 待添加到相册中的图片或视频数组。 |
+| assets | Array | 是 | 待添加到相册的图片或视频数组。 |
 | callback | AsyncCallback | 是 | 回调函数。当添加图片或视频成功，err为undefined，否则为错误对象。 |
 
 错误码：
@@ -206,7 +207,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
       return;
     }
     album.addAssets([asset], (err) => {
-      if (err === undefined) {
+      if (!err) {
         console.info('album addAssets successfully');
       } else {
         console.error(`album addAssets failed with error: ${err.code}, ${err.message}`);
@@ -222,7 +223,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 addAssets(assets: Array<PhotoAsset>): Promise<void>
 
-向用户相册添加图片或视频，需预置相册和文件资源。使用Promise异步回调。
+向用户相册添加图片或视频，调用前需确保已获取相册对象并准备好资源文件。使用Promise异步回调。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 10开始支持，从API version 11开始废弃。建议使用[MediaAlbumChangeRequest.addAssets](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-mediaalbumchangerequest#addassets11)替代。
 
@@ -277,6 +278,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
       console.error('addAssetsDemoPromise asset is undefined');
       return;
     }
+    // 向相册添加资源。
     album.addAssets([asset]).then(() => {
       console.info('album addAssets successfully');
     }).catch((err: BusinessError) => {
@@ -292,7 +294,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 removeAssets(assets: Array<PhotoAsset>, callback: AsyncCallback<void>): void
 
-从用户相册移除图片或视频，需预置相册和文件资源。使用callback异步回调。
+从用户相册中移除图片或视频，调用前需确保已获取相册对象并准备好资源文件。使用callback异步回调。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 10开始支持，从API version 11开始废弃。建议使用[MediaAlbumChangeRequest.removeAssets](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-mediaalbumchangerequest#removeassets11)替代。
 
@@ -342,7 +344,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
       return;
     }
     album.removeAssets([asset], (err) => {
-      if (err === undefined) {
+      if (!err) {
         console.info('album removeAssets successfully');
       } else {
         console.error(`album removeAssets failed with error: ${err.code}, ${err.message}`);
@@ -358,7 +360,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 removeAssets(assets: Array<PhotoAsset>): Promise<void>
 
-从用户相册中移除图片或视频，需预置相册和文件资源。使用Promise异步回调。
+从用户相册中移除图片或视频，调用前需确保已获取相册对象并准备好资源文件。使用Promise异步回调。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 10开始支持，从API version 11开始废弃。建议使用[MediaAlbumChangeRequest.removeAssets](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-mediaalbumchangerequest#removeassets11)替代。
 
@@ -417,6 +419,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
       console.error('removeAssetsPromise asset is undefined');
       return;
     }
+    // 从相册移除资源。
     album.removeAssets([asset]).then(() => {
       console.info('album removeAssets successfully');
     }).catch((err: BusinessError) => {

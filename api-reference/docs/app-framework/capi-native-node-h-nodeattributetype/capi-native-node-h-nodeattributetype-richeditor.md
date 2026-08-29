@@ -2,8 +2,8 @@
 title: "ArkUI_NodeAttributeType（富文本类组件相关属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-richeditor"
 catalog: "harmonyos-references"
-content_hash: "0d5c18d390cd"
-synced_at: "2026-07-28T16:49:22.643021"
+content_hash: "31e6483f28ec"
+synced_at: "2026-08-29T18:15:38.863206"
 ---
 
 # ArkUI_NodeAttributeType（富文本类组件相关属性）
@@ -250,7 +250,7 @@ NODE_TEXT_EDITOR_LAYOUT_MANAGER = 22010
 ```
 NODE_TEXT_EDITOR_ENABLE_SELECTED_DATA_DETECTOR = 22011
 ```
- TextEditor组件文本选择识别AI菜单开关，支持属性设置、属性重置和属性获取。启用后，用户选中特殊文本实体时将弹出AI识别菜单，提供基于选中文本内容的智能识别和操作选项。
+ TextEditor组件的AI菜单开关，用于控制选中特殊文本实体时是否弹出AI识别菜单。该功能支持属性的设置、重置与获取，启用后可基于选中文本内容提供智能识别及操作选项。
 
 作为属性设置方法参数、属性获取方法返回值[ArkUI_AttributeItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-attributeitem)格式如下。
 
@@ -352,7 +352,7 @@ NODE_TEXT_EDITOR_MAX_LINES = 22015
 
 | 参数项 | 描述 |
 | --- | --- |
-| .value[0].i32 | 文本编辑器最大行数限制，取值范围[0, +∞)。取值为0时按无穷大处理；设置为0、负数或未设置该属性时不限制行数。建议在需要固定显示高度的场景下设置该参数。 |
+| .value[0].i32 | 文本编辑器最大行数限制，取值范围：(0, +∞)。设置为0、负数或未设置该属性时，取默认值UINT32_MAX，不限制行数。建议在需要固定显示高度的场景下设置该参数。 |
 
 返回：
 
@@ -365,7 +365,7 @@ NODE_TEXT_EDITOR_MAX_LINES = 22015
 ```
 NODE_TEXT_EDITOR_ENABLE_HAPTIC_FEEDBACK = 22016
 ```
- TextEditor组件触觉反馈开关，启用后，在文本拖选等交互操作时将产生触觉反馈震动响应，支持属性设置、属性重置和属性获取。
+ TextEditor组件触感反馈开关，启用后，在文本拖选等交互操作时将产生触感反馈震动响应，支持属性设置、属性重置和属性获取。
 
 作为属性设置方法参数、属性获取方法返回值[ArkUI_AttributeItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-attributeitem)格式如下。
 
@@ -375,13 +375,13 @@ NODE_TEXT_EDITOR_ENABLE_HAPTIC_FEEDBACK = 22016
 
 | 参数项 | 描述 |
 | --- | --- |
-| .value[0].i32 | 是否在文本编辑器中启用触觉反馈，0表示不启用，1表示启用，默认值为1。 |
+| .value[0].i32 | 是否在文本编辑器中启用触感反馈，0表示不启用，1表示启用，默认值为1。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| .value[0].i32 | 是否启用了触觉反馈，0表示不启用，1表示启用。 |
+| .value[0].i32 | 是否启用了触感反馈，0表示不启用，1表示启用。 |
 
 #### NODE_TEXT_EDITOR_COPY_OPTIONS
 

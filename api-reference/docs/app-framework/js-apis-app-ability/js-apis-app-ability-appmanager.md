@@ -2,15 +2,15 @@
 title: "@ohos.app.ability.appManager (应用管理)"
 upstream_id: "harmonyos-references/js-apis-app-ability-appmanager"
 catalog: "harmonyos-references"
-content_hash: "6fc439887306"
-synced_at: "2026-07-09T00:57:07.551312"
+content_hash: "51184aa464b9"
+synced_at: "2026-08-29T18:12:00.096439"
 ---
 
 # @ohos.app.ability.appManager (应用管理)
 
 appManager模块提供应用管理的能力，包括查询当前系统是否处于稳定性测试场景、查询当前设备是否为RAM（Random Access Memory，随机存取存储器）受限设备、获取当前应用程序可以使用的最大内存值、获取有关运行进程的信息等。
 
-![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 9 开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
+![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 9开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
 #### 导入模块
 
@@ -68,7 +68,7 @@ import { appManager } from '@kit.AbilityKit';
 
 appManager.isRunningInStabilityTest((err, flag) => {
   if (err) {
-    console.error(`isRunningInStabilityTest fail, err: ${JSON.stringify(err)}`);
+    console.error(`isRunningInStabilityTest fail, code: ${err.code}, msg:${err.message}`);
   } else {
     console.info(`The result of isRunningInStabilityTest is: ${JSON.stringify(flag)}`);
   }
@@ -183,7 +183,7 @@ import { appManager } from '@kit.AbilityKit';
 
 appManager.isRamConstrainedDevice((err, data) => {
   if (err) {
-    console.error(`isRamConstrainedDevice fail, err: ${JSON.stringify(err)}`);
+    console.error(`isRamConstrainedDevice fail, code: ${err.code}, msg:${err.message}`);
   } else {
     console.info(`The result of isRamConstrainedDevice is: ${JSON.stringify(data)}`);
   }
@@ -204,7 +204,7 @@ getAppMemorySize(): Promise<number>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，返回当前应用程序可以使用的最大内存（RAM）值，可根据此值进行错误处理或其他自定义处理，单位是M。 |
+| Promise | Promise对象，返回当前应用程序可以使用的最大内存（RAM）值，可根据此值进行错误处理或其他自定义处理，单位是MB。 |
 
 错误码：
 
@@ -223,7 +223,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 appManager.getAppMemorySize().then((data) => {
   console.info(`The size of app memory is: ${JSON.stringify(data)}`);
 }).catch((error: BusinessError) => {
-  console.error(`error: ${JSON.stringify(error)}`);
+  console.error(`code: ${error.code}, msg:${error.message}`);
 });
 ```
 
@@ -241,7 +241,7 @@ getAppMemorySize(callback: AsyncCallback<number>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback | 是 | 回调函数。当接口调用成功，err为undefined，data为当前应用程序可以使用的最大内存（RAM）值，单位是M；否则为错误对象。可根据此值进行错误处理或其他自定义处理。 |
+| callback | AsyncCallback | 是 | 回调函数。当接口调用成功，err为undefined，data为当前应用程序可以使用的最大内存（RAM）值，单位是MB；否则为错误对象。可根据此值进行错误处理或其他自定义处理。 |
 
 错误码：
 
@@ -259,7 +259,7 @@ import { appManager } from '@kit.AbilityKit';
 
 appManager.getAppMemorySize((err, data) => {
   if (err) {
-    console.error(`getAppMemorySize fail, err: ${JSON.stringify(err)}`);
+    console.error(`getAppMemorySize fail, code: ${err.code}, msg:${err.message}`);
   } else {
     console.info(`The size of app memory is: ${JSON.stringify(data)}`);
   }
@@ -272,14 +272,15 @@ getRunningProcessInformation(): Promise<Array<ProcessInformation>>
 
 获取当前应用运行进程的相关信息。使用Promise异步回调。
 
-![](./img/note_3.0-zh-cn.png)
-
-- 对于API version 11之前的版本，该接口需要申请权限ohos.permission.GET_RUNNING_INFO（该权限仅系统应用可申请）。
-- 从API version 11开始，该接口仅用于获取调用方自身的进程信息，不再需要申请权限。
+![](./img/note_3.0-zh-cn.png) 从API version 11开始，该接口仅用于获取调用方自身的进程信息，不再需要申请权限。
 
 元服务API：从API version 11开始，该接口支持在元服务中使用。
 
 系统能力：SystemCapability.Ability.AbilityRuntime.Core
+
+需要权限：
+
+API版本9-10：ohos.permission.GET_RUNNING_INFO（该权限仅系统应用可申请）
 
 返回值：
 
@@ -304,7 +305,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 appManager.getRunningProcessInformation().then((data) => {
   console.info(`The running process information is: ${JSON.stringify(data)}`);
 }).catch((error: BusinessError) => {
-  console.error(`error: ${JSON.stringify(error)}`);
+  console.error(`code: ${error.code}, msg:${error.message}`);
 });
 ```
 
@@ -314,14 +315,15 @@ getRunningProcessInformation(callback: AsyncCallback<Array<ProcessInformation>>)
 
 获取当前应用运行进程的相关信息。使用callback异步回调。
 
-![](./img/note_3.0-zh-cn.png)
-
-- 对于API version 11之前的版本，该接口需要申请权限ohos.permission.GET_RUNNING_INFO（该权限仅系统应用可申请）。
-- 从API version 11开始，该接口仅用于获取调用方自身的进程信息，不再需要申请权限。
+![](./img/note_3.0-zh-cn.png) 从API version 11开始，该接口仅用于获取调用方自身的进程信息，不再需要申请权限。
 
 元服务API：从API version 11开始，该接口支持在元服务中使用。
 
 系统能力：SystemCapability.Ability.AbilityRuntime.Core
+
+需要权限：
+
+API版本9-10：ohos.permission.GET_RUNNING_INFO（该权限仅系统应用可申请）
 
 参数：
 
@@ -345,7 +347,7 @@ import { appManager } from '@kit.AbilityKit';
 
 appManager.getRunningProcessInformation((err, data) => {
   if (err) {
-    console.error(`getRunningProcessInformation fail, err: ${JSON.stringify(err)}`);
+    console.error(`getRunningProcessInformation fail, code: ${err.code}, msg:${err.message}`);
   } else {
     console.info(`The running process information is: ${JSON.stringify(data)}`);
   }
@@ -392,25 +394,25 @@ import { appManager } from '@kit.AbilityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
 let applicationStateObserver: appManager.ApplicationStateObserver = {
-  onForegroundApplicationChanged(appStateData) {
+  onForegroundApplicationChanged(appStateData: appManager.AppStateData) {
     console.info(`[appManager] onForegroundApplicationChanged: ${JSON.stringify(appStateData)}`);
   },
-  onAbilityStateChanged(abilityStateData) {
+  onAbilityStateChanged(abilityStateData: appManager.AbilityStateData) {
     console.info(`[appManager] onAbilityStateChanged: ${JSON.stringify(abilityStateData)}`);
   },
-  onProcessCreated(processData) {
+  onProcessCreated(processData: appManager.ProcessData) {
     console.info(`[appManager] onProcessCreated: ${JSON.stringify(processData)}`);
   },
-  onProcessDied(processData) {
+  onProcessDied(processData: appManager.ProcessData) {
     console.info(`[appManager] onProcessDied: ${JSON.stringify(processData)}`);
   },
-  onProcessStateChanged(processData) {
+  onProcessStateChanged(processData: appManager.ProcessData) {
     console.info(`[appManager] onProcessStateChanged: ${JSON.stringify(processData)}`);
   },
-  onAppStarted(appStateData) {
+  onAppStarted(appStateData: appManager.AppStateData) {
     console.info(`[appManager] onAppStarted: ${JSON.stringify(appStateData)}`);
   },
-  onAppStopped(appStateData) {
+  onAppStopped(appStateData: appManager.AppStateData) {
     console.info(`[appManager] onAppStopped: ${JSON.stringify(appStateData)}`);
   }
 };
@@ -441,7 +443,7 @@ on(type: 'applicationState', observer: ApplicationStateObserver, bundleNameList:
 | --- | --- | --- | --- |
 | type | string | 是 | 调用接口类型，固定填'applicationState'字符串。 |
 | observer | [ApplicationStateObserver](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-applicationstateobserver) | 是 | 应用状态监听器，用于监听应用的生命周期变化。 |
-| bundleNameList | Array | 是 | 表示需要注册监听的bundleName数组。最大值128。 |
+| bundleNameList | Array | 是 | 表示需要注册监听的bundleName数组。最大值128，超过这个数量将返回16000050错误码。 |
 
 返回值：
 
@@ -466,25 +468,25 @@ import { appManager } from '@kit.AbilityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
 let applicationStateObserver: appManager.ApplicationStateObserver = {
-  onForegroundApplicationChanged(appStateData) {
+  onForegroundApplicationChanged(appStateData: appManager.AppStateData) {
     console.info(`[appManager] onForegroundApplicationChanged: ${JSON.stringify(appStateData)}`);
   },
-  onAbilityStateChanged(abilityStateData) {
+  onAbilityStateChanged(abilityStateData: appManager.AbilityStateData) {
     console.info(`[appManager] onAbilityStateChanged: ${JSON.stringify(abilityStateData)}`);
   },
-  onProcessCreated(processData) {
+  onProcessCreated(processData: appManager.ProcessData) {
     console.info(`[appManager] onProcessCreated: ${JSON.stringify(processData)}`);
   },
-  onProcessDied(processData) {
+  onProcessDied(processData: appManager.ProcessData) {
     console.info(`[appManager] onProcessDied: ${JSON.stringify(processData)}`);
   },
-  onProcessStateChanged(processData) {
+  onProcessStateChanged(processData: appManager.ProcessData) {
     console.info(`[appManager] onProcessStateChanged: ${JSON.stringify(processData)}`);
   },
-  onAppStarted(appStateData) {
+  onAppStarted(appStateData: appManager.AppStateData) {
     console.info(`[appManager] onAppStarted: ${JSON.stringify(appStateData)}`);
   },
-  onAppStopped(appStateData) {
+  onAppStopped(appStateData: appManager.AppStateData) {
     console.info(`[appManager] onAppStopped: ${JSON.stringify(appStateData)}`);
   }
 };
@@ -544,25 +546,25 @@ let observerId = 0;
 
 // 1.注册应用状态监听器
 let applicationStateObserver: appManager.ApplicationStateObserver = {
-  onForegroundApplicationChanged(appStateData) {
+  onForegroundApplicationChanged(appStateData: appManager.AppStateData) {
     console.info(`[appManager] onForegroundApplicationChanged: ${JSON.stringify(appStateData)}`);
   },
-  onAbilityStateChanged(abilityStateData) {
+  onAbilityStateChanged(abilityStateData: appManager.AbilityStateData) {
     console.info(`[appManager] onAbilityStateChanged: ${JSON.stringify(abilityStateData)}`);
   },
-  onProcessCreated(processData) {
+  onProcessCreated(processData: appManager.ProcessData) {
     console.info(`[appManager] onProcessCreated: ${JSON.stringify(processData)}`);
   },
-  onProcessDied(processData) {
+  onProcessDied(processData: appManager.ProcessData) {
     console.info(`[appManager] onProcessDied: ${JSON.stringify(processData)}`);
   },
-  onProcessStateChanged(processData) {
+  onProcessStateChanged(processData: appManager.ProcessData) {
     console.info(`[appManager] onProcessStateChanged: ${JSON.stringify(processData)}`);
   },
-  onAppStarted(appStateData) {
+  onAppStarted(appStateData: appManager.AppStateData) {
     console.info(`[appManager] onAppStarted: ${JSON.stringify(appStateData)}`);
   },
-  onAppStopped(appStateData) {
+  onAppStopped(appStateData: appManager.AppStateData) {
     console.info(`[appManager] onAppStopped: ${JSON.stringify(appStateData)}`);
   }
 };
@@ -581,7 +583,7 @@ try {
   appManager.off('applicationState', observerId).then((data) => {
     console.info(`unregisterApplicationStateObserver success, data: ${JSON.stringify(data)}`);
   }).catch((err: BusinessError) => {
-    console.error(`unregisterApplicationStateObserver fail, err: ${JSON.stringify(err)}`);
+    console.error(`unregisterApplicationStateObserver fail, code: ${err.code}, msg:${err.message}`);
   });
 } catch (paramError) {
   let code = (paramError as BusinessError).code;
@@ -606,7 +608,7 @@ off(type: 'applicationState', observerId: number, callback: AsyncCallback<void>)
 | --- | --- | --- | --- |
 | type | string | 是 | 调用接口类型，固定填'applicationState'字符串。 |
 | observerId | number | 是 | 注册的应用状态监听器ID，即[on('applicationState')](#appmanageronapplicationstate14)返回的监听器ID。 |
-| callback | AsyncCallback | 是 | 回调函数。当取消注册应用程序状态观测器成功，err为undefined，否则为错误对象。 |
+| callback | AsyncCallback | 是 | 回调函数。当注销应用状态监听器成功，err为undefined，否则为错误对象。 |
 
 错误码：
 
@@ -628,25 +630,25 @@ let observerId = 0;
 
 // 1.注册应用状态监听器
 let applicationStateObserver: appManager.ApplicationStateObserver = {
-  onForegroundApplicationChanged(appStateData) {
+  onForegroundApplicationChanged(appStateData: appManager.AppStateData) {
     console.info(`[appManager] onForegroundApplicationChanged: ${JSON.stringify(appStateData)}`);
   },
-  onAbilityStateChanged(abilityStateData) {
+  onAbilityStateChanged(abilityStateData: appManager.AbilityStateData) {
     console.info(`[appManager] onAbilityStateChanged: ${JSON.stringify(abilityStateData)}`);
   },
-  onProcessCreated(processData) {
+  onProcessCreated(processData: appManager.ProcessData) {
     console.info(`[appManager] onProcessCreated: ${JSON.stringify(processData)}`);
   },
-  onProcessDied(processData) {
+  onProcessDied(processData: appManager.ProcessData) {
     console.info(`[appManager] onProcessDied: ${JSON.stringify(processData)}`);
   },
-  onProcessStateChanged(processData) {
+  onProcessStateChanged(processData: appManager.ProcessData) {
     console.info(`[appManager] onProcessStateChanged: ${JSON.stringify(processData)}`);
   },
-  onAppStarted(appStateData) {
+  onAppStarted(appStateData: appManager.AppStateData) {
     console.info(`[appManager] onAppStarted: ${JSON.stringify(appStateData)}`);
   },
-  onAppStopped(appStateData) {
+  onAppStopped(appStateData: appManager.AppStateData) {
     console.info(`[appManager] onAppStopped: ${JSON.stringify(appStateData)}`);
   }
 };
@@ -694,7 +696,7 @@ killProcessesByBundleName(bundleName: string, clearPageStack: boolean, appIndex?
 | --- | --- | --- | --- |
 | bundleName | string | 是 | 表示需要终止进程的应用包名。 |
 | clearPageStack | boolean | 是 | 表示是否清除页面堆栈。true表示清除，false表示不清除。 |
-| appIndex | number | 否 | 应用分身Id，默认值为0。取值为0时，表示终止主应用的所有进程。取值大于0时，表示终止指定分身应用的所有进程。 |
+| appIndex | number | 否 | 应用分身ID，不传该参数时默认值为0。取值范围：0~1000。取值为0时，表示终止主应用的所有进程。取值大于0时，表示终止指定分身应用的所有进程。 |
 
 返回值：
 
@@ -726,7 +728,7 @@ try {
   appManager.killProcessesByBundleName(bundleName, isClearPageStack, appIndex).then((data) => {
     console.info('killProcessesByBundleName success.');
   }).catch((err: BusinessError) => {
-    console.error(`killProcessesByBundleName fail, err: ${JSON.stringify(err)}`);
+    console.error(`killProcessesByBundleName fail, code: ${err.code}, msg:${err.message}`);
   });
 } catch (paramError) {
   let code = (paramError as BusinessError).code;
@@ -752,7 +754,7 @@ isAppRunning(bundleName: string, appCloneIndex?: number): Promise<boolean>
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | bundleName | string | 是 | 查询的应用包名。 |
-| appCloneIndex | number | 否 | 分身应用索引，默认值为0。取值范围：0~1000。取值为0时表示主应用；取值大于0时表示指定分身应用。 |
+| appCloneIndex | number | 否 | 分身应用索引，不传该参数时默认值为0。取值范围：0~1000。取值为0时表示判断主应用是否正在运行；取值大于0时表示判断指定分身应用是否正在运行。 |
 
 返回值：
 
@@ -767,7 +769,7 @@ isAppRunning(bundleName: string, appCloneIndex?: number): Promise<boolean>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3.Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 16000050 | Internal error. |
 | 16000073 | The app clone index is invalid. |
 
@@ -775,18 +777,17 @@ isAppRunning(bundleName: string, appCloneIndex?: number): Promise<boolean>
 
 ```
 import { appManager } from '@kit.AbilityKit';
-import { hilog } from '@kit.PerformanceAnalysisKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
-  let bundleName = "ohos.samples.etsclock";
+  let bundleName = 'ohos.samples.etsclock';
   appManager.isAppRunning(bundleName).then((data: boolean) => {
-      hilog.info(0x0000, 'testTag', `data: ${JSON.stringify(data)}`);
+      console.info(`data: ${JSON.stringify(data)}`);
     }).catch((err: BusinessError) => {
-      hilog.error(0x0000, 'testTag', `isAppRunning error, code: ${err.code}, msg:${err.message}`);
-    })
+      console.error(`isAppRunning error, code: ${err.code}, msg:${err.message}`);
+    });
 } catch (err) {
-  hilog.error(0x0000, 'testTag', `isAppRunning error, code: ${err.code}, msg:${err.message}`);
+  console.error(`isAppRunning error, code: ${err.code}, msg:${err.message}`);
 }
 ```
 
@@ -800,7 +801,7 @@ Ability状态信息。
 
 | 类型 | 说明 |
 | --- | --- |
-| [_AbilityStateData.default](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-abilitystatedata) | Ability状态信息。 |
+| _[AbilityStateData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-abilitystatedata).default | Ability状态信息。 |
 
 #### AppStateData14+
 
@@ -812,7 +813,7 @@ type AppStateData = _AppStateData.default
 
 | 类型 | 说明 |
 | --- | --- |
-| [_AppStateData.default](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-appstatedata) | 应用状态信息。 |
+| _[AppStateData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-appstatedata).default | 应用状态信息。 |
 
 #### ApplicationStateObserver14+
 
@@ -824,7 +825,7 @@ type ApplicationStateObserver = _ApplicationStateObserver.default
 
 | 类型 | 说明 |
 | --- | --- |
-| [_ApplicationStateObserver.default](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-applicationstateobserver) | 应用状态监听器。 |
+| _[ApplicationStateObserver](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-applicationstateobserver).default | 应用状态监听器。 |
 
 #### ProcessInformation
 
@@ -838,7 +839,7 @@ type ProcessInformation = _ProcessInformation
 
 | 类型 | 说明 |
 | --- | --- |
-| [_ProcessInformation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-processinformation) | 进程信息。 |
+| _[ProcessInformation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-processinformation) | 进程信息。 |
 
 #### ProcessData14+
 
@@ -850,4 +851,4 @@ type ProcessData = _ProcessData.default
 
 | 类型 | 说明 |
 | --- | --- |
-| [_ProcessData.default](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-processdata) | 进程数据。 |
+| _[ProcessData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-processdata).default | 进程数据。 |

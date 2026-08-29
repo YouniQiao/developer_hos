@@ -2,13 +2,13 @@
 title: "@ohos.enterprise.browser（浏览器管理）"
 upstream_id: "harmonyos-references/js-apis-enterprise-browser"
 catalog: "harmonyos-references"
-content_hash: "3b3aa86f747f"
-synced_at: "2026-07-28T16:51:09.412230"
+content_hash: "aaed0e2bd32c"
+synced_at: "2026-08-29T18:17:06.767300"
 ---
 
 # @ohos.enterprise.browser（浏览器管理）
 
-本模块提供浏览器管理能力，包括设置/取消浏览器策略、获取浏览器策略等。
+本模块提供浏览器管理能力，包括设置/取消浏览器策略、获取浏览器策略等。适用于企业设备管理、员工上网行为管控、安全合规审计等场景。
 
 浏览器策略指通过配置或管理浏览器行为的一系列规则和设置，以确保安全性、合规性、性能优化和用户体验的一致性。
 
@@ -28,7 +28,7 @@ import { browser } from '@kit.MDMKit';
 
 setPolicySync(admin: Want, appId: string, policyName: string, policyValue: string): void
 
-为指定的浏览器设置浏览器子策略。此策略仅对使用了华为webview的浏览器生效。
+为指定的浏览器设置浏览器子策略，适用于企业统一管理员工浏览器行为的场景。此策略仅对使用了华为webview的浏览器生效。
 
 需要权限： ohos.permission.ENTERPRISE_SET_BROWSER_POLICY
 
@@ -72,7 +72,9 @@ let wantTemp: Want = {
 
 // 此处参数appId的赋值应替换为开发者自己指定的浏览器的应用ID
 let appId: string = 'com.example.******_******/******5t5CoBM=';
+// 浏览器策略名称
 let policyName: string = 'InsecurePrivateNetworkRequestsAllowed';
+// 浏览器策略值
 let policyValue: string = '{"level":"mandatory","scope":"machine","source":"platform","value":true}';
 
 try {
@@ -85,9 +87,11 @@ try {
 
 #### browser.getPoliciesSync
 
-getPoliciesSync(admin: Want | null, appId: string): string
+getPoliciesSync(admin: Want, appId: string): string
 
-通过appid获取指定浏览器设置的策略。此策略仅对使用了华为webview的浏览器生效。
+通过appid获取指定浏览器设置的策略，适用于查询当前浏览器策略配置的场景，例如在企业设备管理应用中展示策略详情、验证策略是否生效等。此策略仅对使用了华为webview的浏览器生效。
+
+本接口通过传入Want查询对应企业设备管理应用设置的策略，如需查询实际生效的策略，请使用[browser.getPoliciesSync](#browsergetpoliciessync-1)接口。
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
@@ -97,7 +101,7 @@ getPoliciesSync(admin: Want | null, appId: string): string
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，API版本26.0.0之前，传入Want时查询对应企业设备管理应用设置的策略。从API版本26.0.0开始，新增支持传入null时查询实际生效的策略。 |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
 | appId | string | 是 | 应用ID，用于指定浏览器。详情信息可参考[什么是appId](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appid)。 |
 
 返回值：
@@ -133,6 +137,57 @@ let appId: string = 'com.example.******_******/******5t5CoBM=';
 try {
   let result: string = browser.getPoliciesSync(wantTemp, appId);
   console.info(`Succeeded in getting browser policies, result : ${JSON.stringify(result)}`);
+} catch (err) {
+  console.error(`Failed to get browser policies. Code is ${err.code}, message is ${err.message}`);
+}
+```
+
+#### browser.getPoliciesSync
+
+getPoliciesSync(admin: Want | null, appId: string): string
+
+通过appid获取指定浏览器设置的策略，适用于查询当前浏览器策略配置的场景，例如在企业设备管理应用中展示策略详情、验证策略是否生效等。此策略仅对使用了华为webview的浏览器生效。
+
+起始版本： 26.0.0
+
+系统能力： SystemCapability.Customization.EnterpriseDeviceManager
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，传入Want时查询对应企业设备管理应用设置的策略，传入null时查询实际生效的策略。 |
+| appId | string | 是 | 应用ID，用于指定浏览器。详情信息可参考[什么是appId](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appid)。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| string | 浏览器策略。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[企业设备管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprisedevicemanager)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 9200001 | The application is not an administrator application of the device. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+
+示例：
+
+```
+import { browser } from '@kit.MDMKit';
+
+// 此处参数appId的赋值应替换为开发者自己指定的浏览器的应用ID
+let appId: string = 'com.example.******_******/******5t5CoBM=';
+
+try {
+  // 参数需根据实际情况进行替换
+  let result: string = browser.getPoliciesSync(null, appId);
+  console.info(`Succeeded in getting browser policies, result : ${JSON.stringify(result)}`);
 } catch(err) {
   console.error(`Failed to get browser policies. Code is ${err.code}, message is ${err.message}`);
 }
@@ -142,7 +197,7 @@ try {
 
 setManagedBrowserPolicy(admin: Want, bundleName: string, policyName: string, policyValue: string): void
 
-为指定的浏览器设置浏览器策略，成功后会发布系统公共事件[COMMON_EVENT_MANAGED_BROWSER_POLICY_CHANGED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/commoneventmanager-definitions#common_event_managed_browser_policy_changed)。
+为指定的浏览器设置浏览器策略，适用于企业统一管理员工浏览器行为的场景，例如配置浏览器安全策略等。成功后会发布系统公共事件[COMMON_EVENT_MANAGED_BROWSER_POLICY_CHANGED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/commoneventmanager-definitions#common_event_managed_browser_policy_changed)。
 
 ![](./img/note_3.0-zh-cn.png) 在多MDM应用场景下，针对同一浏览器的同一策略，一旦被首个Admin配置并生效，其他Admin将无法配置。
 
@@ -159,8 +214,8 @@ setManagedBrowserPolicy(admin: Want, bundleName: string, policyName: string, pol
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
-| bundleName | string | 是 | 应用包名，用于指定浏览器。 |
-| policyName | string | 是 | 浏览器策略名。 |
+| bundleName | string | 是 | 应用包名，用于指定浏览器，表示应用的唯一标识。 |
+| policyName | string | 是 | 浏览器策略名，由接口调用方和指定浏览器约定。 |
 | policyValue | string | 是 | 浏览器策略值。当此值为空字符串时，表示取消浏览器策略名对应浏览器子策略。 |
 
 错误码：
@@ -186,8 +241,11 @@ let wantTemp: Want = {
   abilityName: 'EnterpriseAdminAbility'
 };
 // 需根据实际情况进行替换
+// 浏览器应用包名
 let bundleName: string = 'com.example.testbrowser';
+// 浏览器策略名称
 let policyName: string = 'InsecurePrivateNetworkRequestsAllowed';
+// 浏览器策略值
 let policyValue: string = '{"level":"mandatory","scope":"machine","source":"platform","value":true}';
 
 try {
@@ -202,7 +260,7 @@ try {
 
 getManagedBrowserPolicy(admin: Want, bundleName: string): ArrayBuffer
 
-通过应用包名获取指定浏览器的浏览器策略。
+通过应用包名获取指定浏览器的浏览器策略，适用于查询当前浏览器策略配置的场景，例如在企业设备管理应用中展示策略详情、验证策略是否生效等。
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
@@ -251,7 +309,7 @@ try {
   let decoder: util.TextDecoder = util.TextDecoder.create('utf-8');
   let stringData: string = decoder.decodeToString(intBuffer);
   console.info(`Succeeded in getting managed browser policy, result : ${stringData}`);
-} catch(err) {
+} catch (err) {
   console.error(`Failed to get managed browser policy. Code is ${err.code}, message is ${err.message}`);
 }
 ```
@@ -280,7 +338,7 @@ import { browser } from '@kit.MDMKit';
 try {
   let version: string = browser.getSelfManagedBrowserPolicyVersion();
   console.info(`Succeeded in getting self managed browser policy version, result : ${version}`);
-} catch(err) {
+} catch (err) {
   console.error(`Failed to get self managed browser policy version. Code is ${err.code}, message is ${err.message}`);
 }
 ```
@@ -313,7 +371,7 @@ try {
   let decoder: util.TextDecoder = util.TextDecoder.create('utf-8');
   let stringData: string = decoder.decodeToString(intBuffer);
   console.info(`Succeeded in getting self managed browser policy, result : ${stringData}`);
-} catch(err) {
+} catch (err) {
   console.error(`Failed to get self managed browser policy. Code is ${err.code}, message is ${err.message}`);
 }
 ```

@@ -2,8 +2,8 @@
 title: "通行密钥"
 upstream_id: "harmonyos-references/onlineauthentication-passkey-api"
 catalog: "harmonyos-references"
-content_hash: "2d27337bf00e"
-synced_at: "2026-07-28T16:50:30.652481"
+content_hash: "18c64428a1ce"
+synced_at: "2026-08-29T18:16:30.324904"
 ---
 
 # 通行密钥
@@ -541,7 +541,7 @@ Token binding协议，用于客户端与依赖方通信。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| id | Uint8Array | 否 | 否 | 凭据的标识符。长度限制0到64。 |
+| id | Uint8Array | 否 | 否 | 凭据的标识符。长度限制0到512。 |
 | displayName | string | 否 | 否 | 前台显示的用户名。长度限制0到512。 |
 | name | string | 否 | 否 | 用户名。长度限制0到512。 |
 
@@ -648,7 +648,7 @@ Token binding协议，用于客户端与依赖方通信。
 | uvm | [Uvm](#uvm) | 是 | 否 | 支持的平台认证器类型，人脸、指纹、PIN码。 |
 | isAvailable | boolean | 是 | 否 | true表示该认证器可用，false表示该认证器不可用。 |
 
-#### getClientCapabilities
+#### fido2.getClientCapabilities
 
 getClientCapabilities(context: common.Context): Promise<Map<ClientCapability, boolean>>
 
@@ -682,7 +682,7 @@ getClientCapabilities(context: common.Context): Promise<Map<ClientCapability, bo
 | --- | --- |
 | 801 | Device type error. 适用版本：6.0.1(21)+ |
 | 1021300007 | Unknown error. |
-| 1021300009 | Data error. |
+| 1021300009 | Data error. 适用版本：26.0.0+ |
 | 1021300011 | Failed to connect to the service. |
 
 示例：
@@ -715,7 +715,7 @@ struct Index {
 }
 ```
 
-#### getPlatformAuthenticators
+#### fido2.getPlatformAuthenticators
 
 getPlatformAuthenticators(context: common.Context): Promise<Array<AuthenticatorMetadata>>
 
@@ -749,7 +749,7 @@ getPlatformAuthenticators(context: common.Context): Promise<Array<AuthenticatorM
 | --- | --- |
 | 801 | Device type error. 适用版本：6.0.1(21)+ |
 | 1021300007 | Unknown error. |
-| 1021300009 | Data error. |
+| 1021300009 | Data error. 适用版本：26.0.0+ |
 | 1021300011 | Failed to connect to the service. |
 
 示例：
@@ -783,7 +783,7 @@ struct Index {
 }
 ```
 
-#### register
+#### fido2.register
 
 register(context: common.Context, options: CredentialCreationOptions, tokenBinding?: TokenBinding): Promise<PublicKeyAttestationCredential>
 
@@ -872,7 +872,7 @@ struct Index {
 }
 ```
 
-#### authenticate
+#### fido2.authenticate
 
 authenticate(context: common.Context, options: CredentialRequestOptions, tokenBinding?: TokenBinding): Promise<PublicKeyAssertionCredential>
 

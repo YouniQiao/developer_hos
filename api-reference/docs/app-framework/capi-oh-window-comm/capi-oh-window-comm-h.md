@@ -2,8 +2,8 @@
 title: "oh_window_comm.h"
 upstream_id: "harmonyos-references/capi-oh-window-comm-h"
 catalog: "harmonyos-references"
-content_hash: "721443a373e5"
-synced_at: "2026-07-09T00:58:37.164877"
+content_hash: "d113592cb225"
+synced_at: "2026-08-29T18:15:42.187043"
 ---
 
 # oh_window_comm.h
@@ -72,6 +72,7 @@ enum WindowManager_ErrorCode
 | WINDOW_MANAGER_ERRORCODE_INVALID_PARAM = 401 | 非法参数。 **起始版本：** 15 |
 | WINDOW_MANAGER_ERRORCODE_DEVICE_NOT_SUPPORTED = 801 | 设备不支持。 **起始版本：** 15 |
 | INVAILD_WINDOW_ID = 1000 | 非法窗口ID。 |
+| INVALID_WINDOW_ID = INVAILD_WINDOW_ID | 非法窗口ID。 **起始版本：** 26.0.0 |
 | SERVICE_ERROR = 2000 | 服务异常。 |
 | WINDOW_MANAGER_ERRORCODE_STATE_ABNORMAL = 1300002 | 窗口状态异常。 **起始版本：** 15 |
 | WINDOW_MANAGER_ERRORCODE_SYSTEM_ABNORMAL = 1300003 | 窗口管理器服务异常。 **起始版本：** 15 |

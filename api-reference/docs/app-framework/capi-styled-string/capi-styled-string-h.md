@@ -2,8 +2,8 @@
 title: "styled_string.h"
 upstream_id: "harmonyos-references/capi-styled-string-h"
 catalog: "harmonyos-references"
-content_hash: "ee2f1a7ae55b"
-synced_at: "2026-07-28T16:49:25.052277"
+content_hash: "8d4a152108d3"
+synced_at: "2026-08-29T18:15:41.372837"
 ---
 
 # styled_string.h
@@ -55,6 +55,7 @@ synced_at: "2026-07-28T16:49:25.052277"
 | --- | --- | --- |
 | [OH_ArkUI_StyledStringKey](#oh_arkui_styledstringkey) | OH_ArkUI_StyledStringKey | 属性字符串的样式类型枚举。 |
 | [OH_ArkUI_SuperscriptStyle](#oh_arkui_superscriptstyle) | OH_ArkUI_SuperscriptStyle | 定义文本上下角标样式枚举。 |
+| [OH_ArkUI_TextEncoding](#oh_arkui_textencoding) | OH_ArkUI_TextEncoding | 文本布局查询接口支持的文本编码类型。 |
 
 #### [h2]函数
 
@@ -63,7 +64,7 @@ synced_at: "2026-07-28T16:49:25.052277"
 | [ArkUI_StyledString* OH_ArkUI_StyledString_Create(OH_Drawing_TypographyStyle* style, OH_Drawing_FontCollection* collection)](#oh_arkui_styledstring_create) | 创建指向ArkUI_StyledString对象的指针。 |
 | [void OH_ArkUI_StyledString_Destroy(ArkUI_StyledString* handle)](#oh_arkui_styledstring_destroy) | 释放ArkUI_StyledString对象占用的内存。 |
 | [void OH_ArkUI_StyledString_PushTextStyle(ArkUI_StyledString* handle, OH_Drawing_TextStyle* style)](#oh_arkui_styledstring_pushtextstyle) | 将新的排版风格设置到当前格式化字符串样式栈顶。 |
-| [void OH_ArkUI_StyledString_AddText(ArkUI_StyledString* handle, const char* content)](#oh_arkui_styledstring_addtext) | 基于当前格式化字符串样式设置对应的文本内容。 |
+| [void OH_ArkUI_StyledString_AddText(ArkUI_StyledString* handle, const char* content)](#oh_arkui_styledstring_addtext) | 基于当前格式化字符串样式添加对应的文本内容。 |
 | [void OH_ArkUI_StyledString_PopTextStyle(ArkUI_StyledString* handle)](#oh_arkui_styledstring_poptextstyle) | 将当前格式化字符串对象中栈顶样式出栈。 |
 | [OH_Drawing_Typography* OH_ArkUI_StyledString_CreateTypography(ArkUI_StyledString* handle)](#oh_arkui_styledstring_createtypography) | 基于格式化字符串对象创建指向[OH_Drawing_Typography](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-typography)对象的指针，用于提前进行文本测算排版。[OH_Drawing_Typography](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-typography)对象的生命周期由应用管理，当应用销毁该对象时，应同步调用[NODE_TEXT_CONTENT_WITH_STYLED_STRING](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h-nodeattributetype-text#node_text_content_with_styled_string)对应的reset方法进行置空，避免野指针崩溃风险。 |
 | [void OH_ArkUI_StyledString_AddPlaceholder(ArkUI_StyledString* handle, OH_Drawing_PlaceholderSpan* placeholder)](#oh_arkui_styledstring_addplaceholder) | 向格式化字符串中添加占位符。 |
@@ -287,6 +288,9 @@ synced_at: "2026-07-28T16:49:25.052277"
 | [ArkUI_ErrorCode OH_ArkUI_TextLayoutManager_GetCharacterPositionAtCoordinate(ArkUI_TextLayoutManager* layoutManager, double dx, double dy, OH_Drawing_PositionAndAffinity** outPos)](#oh_arkui_textlayoutmanager_getcharacterpositionatcoordinate) | 获取距离指定坐标最近的字符的位置信息。与OH_ArkUI_TextLayoutManager_GetGlyphPositionAtCoordinate的区别：此方法返回字符级别的位置信息，适用于文本编辑、光标定位等基于字符编码的场景；而GetGlyphPositionAtCoordinate返回字形级别的位置信息，适用于渲染相关的精确定位场景。 |
 | [ArkUI_ErrorCode OH_ArkUI_TextLayoutManager_GetGlyphRangeForCharacterRange(ArkUI_TextLayoutManager* layoutManager, OH_Drawing_Range* charRange, OH_Drawing_Range** outGlyphRange, OH_Drawing_Range** outActualCharRange)](#oh_arkui_textlayoutmanager_getglyphrangeforcharacterrange) | 获取由指定字符范围所生成的字形范围。 |
 | [ArkUI_ErrorCode OH_ArkUI_TextLayoutManager_GetCharacterRangeForGlyphRange(ArkUI_TextLayoutManager* layoutManager, OH_Drawing_Range* glyphRange, OH_Drawing_Range** outCharRange, OH_Drawing_Range** outActualGlyphRange)](#oh_arkui_textlayoutmanager_getcharacterrangeforglyphrange) | 获取由指定字形范围所生成的字符范围。 |
+| [ArkUI_ErrorCode OH_ArkUI_TextLayoutManager_GetCharacterPositionAtCoordinateWithEncoding(ArkUI_TextLayoutManager* layoutManager, double dx, double dy, OH_ArkUI_TextEncoding encoding, OH_Drawing_PositionAndAffinity** outPos)](#oh_arkui_textlayoutmanager_getcharacterpositionatcoordinatewithencoding) | 根据指定编码类型，获取距离指定坐标最近的字符位置信息。 |
+| [ArkUI_ErrorCode OH_ArkUI_TextLayoutManager_GetGlyphRangeForCharacterRangeWithEncoding(ArkUI_TextLayoutManager* layoutManager, OH_Drawing_Range* charRange, OH_ArkUI_TextEncoding encoding, OH_Drawing_Range** outGlyphRange, OH_Drawing_Range** outActualCharRange)](#oh_arkui_textlayoutmanager_getglyphrangeforcharacterrangewithencoding) | 根据指定编码类型和文本字符范围，获取字形范围以及实际的字符范围。 |
+| [ArkUI_ErrorCode OH_ArkUI_TextLayoutManager_GetCharacterRangeForGlyphRangeWithEncoding(ArkUI_TextLayoutManager* layoutManager, OH_Drawing_Range* glyphRange, OH_ArkUI_TextEncoding encoding, OH_Drawing_Range** outCharRange, OH_Drawing_Range** outActualGlyphRange)](#oh_arkui_textlayoutmanager_getcharacterrangeforglyphrangewithencoding) | 根据指定编码类型和文本字形范围，获取字符范围以及实际的字形范围。 |
 | [ArkUI_ErrorCode OH_ArkUI_ParagraphStyle_SetLinearGradient(OH_ArkUI_ParagraphStyle* paragraphStyle, const OH_ArkUI_LinearGradientOptions* linearGradient)](#oh_arkui_paragraphstyle_setlineargradient) | 设置段落样式的线性渐变。 |
 | [ArkUI_ErrorCode OH_ArkUI_ParagraphStyle_GetLinearGradient(const OH_ArkUI_ParagraphStyle* paragraphStyle, OH_ArkUI_LinearGradientOptions* linearGradient)](#oh_arkui_paragraphstyle_getlineargradient) | 获取段落样式的线性渐变。 |
 | [ArkUI_ErrorCode OH_ArkUI_ParagraphStyle_SetRadialGradient(OH_ArkUI_ParagraphStyle* paragraphStyle, const OH_ArkUI_RadialGradientOptions* radialGradient)](#oh_arkui_paragraphstyle_setradialgradient) | 设置段落样式的径向渐变。 |
@@ -341,6 +345,22 @@ enum OH_ArkUI_SuperscriptStyle
 | OH_ARKUI_SUPERSCRIPTSTYLE_NORMAL = 0 | 普通文本样式，适用于不需要上下标效果的常规文本场景。 |
 | OH_ARKUI_SUPERSCRIPTSTYLE_SUPERSCRIPT = 1 | 上标文本样式，适用于数学公式中的指数表示（如x²）或脚注引用标记等场景。 |
 | OH_ARKUI_SUPERSCRIPTSTYLE_SUBSCRIPT = 2 | 下标文本样式，适用于化学式中的元素下标表示（如H₂O）或数学变量下标等场景。 |
+
+#### [h2]OH_ArkUI_TextEncoding
+
+```
+enum OH_ArkUI_TextEncoding
+```
+ 描述
+
+文本布局查询接口支持的文本编码类型。
+
+起始版本： 26.0.0
+
+| 枚举项 | 描述 |
+| --- | --- |
+| OH_ARKUI_TEXT_ENCODING_UTF8 = 0 | UTF-8编码。字符位置或字符范围按UTF-8字节偏移量计算。 |
+| OH_ARKUI_TEXT_ENCODING_UTF16 = 1 | UTF-16编码。字符位置或字符范围按UTF-16码元偏移量计算。 |
 
 #### 函数说明
 
@@ -414,7 +434,7 @@ void OH_ArkUI_StyledString_AddText(ArkUI_StyledString* handle, const char* conte
 ```
  描述
 
-基于当前格式化字符串样式设置对应的文本内容。所添加的文本将使用当前栈顶的排版样式，该样式由[OH_ArkUI_StyledString_PushTextStyle](#oh_arkui_styledstring_pushtextstyle)压入。当栈顶样式通过[OH_ArkUI_StyledString_PopTextStyle](#oh_arkui_styledstring_poptextstyle)出栈后，后续添加的文本将使用新的栈顶样式。
+基于当前格式化字符串样式添加对应的文本内容。所添加的文本将使用当前栈顶的排版样式，该样式由[OH_ArkUI_StyledString_PushTextStyle](#oh_arkui_styledstring_pushtextstyle)压入。当栈顶样式通过[OH_ArkUI_StyledString_PopTextStyle](#oh_arkui_styledstring_poptextstyle)出栈后，后续添加的文本将使用新的栈顶样式。
 
 起始版本： 12
 
@@ -476,7 +496,7 @@ void OH_ArkUI_StyledString_AddPlaceholder(ArkUI_StyledString* handle, OH_Drawing
 ```
  描述
 
-设置占位符，用于在格式化字符串中预留指定宽高的空白区域或嵌入自定义内容。其尺寸等信息由[OH_Drawing_PlaceholderSpan](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-placeholderspan)指定。
+添加占位符，用于在格式化字符串中预留指定宽高的空白区域或嵌入自定义内容。其尺寸等信息由[OH_Drawing_PlaceholderSpan](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-placeholderspan)指定。
 
 起始版本： 12
 
@@ -1652,7 +1672,7 @@ ArkUI_ErrorCode OH_ArkUI_SpanStyle_SetLength(OH_ArkUI_SpanStyle* spanStyle, int3
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_ArkUI_SpanStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-oh-arkui-spanstyle)* spanStyle | 指向[OH_ArkUI_SpanStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-oh-arkui-spanstyle)对象的指针。 |
-| int32_t length | 属性字符串样式对象的长度，需与[OH_ArkUI_SpanStyle_SetStart](#oh_arkui_spanstyle_setstart)配合使用以指定样式作用的范围。当length的值小于0或超出字符串长度与start的差值时，按字符串长度与start的差值处理。取值范围[0, 属性字符串的长度与参数start的差值]，按字符串长度与start的差值处理。 |
+| int32_t length | 属性字符串样式对象的长度，需与[OH_ArkUI_SpanStyle_SetStart](#oh_arkui_spanstyle_setstart)配合使用以指定样式作用的范围。取值范围[0, 属性字符串的长度与参数start的差值]。当length的值小于0或超出字符串长度与start的差值时，按字符串长度与start的差值处理。 |
 
 返回：
 
@@ -1743,7 +1763,11 @@ ArkUI_ErrorCode OH_ArkUI_SpanStyle_SetParagraphStyle(OH_ArkUI_SpanStyle* spanSty
 
 设置属性字符串样式对象的段落样式。
 
-![](./img/note_3.0-zh-cn.png) 此操作会替换[OH_ArkUI_SpanStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-oh-arkui-spanstyle)对象中已设置的其他类型样式。一个SpanStyle对象只能持有一种类型的样式，设置新类型样式后，之前已设置的其他类型样式（如已设置的TextStyle、GestureStyle等）将被清除。
+![](./img/note_3.0-zh-cn.png)
+
+- 此操作会替换[OH_ArkUI_SpanStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-oh-arkui-spanstyle)对象中已设置的其他类型样式。一个SpanStyle对象只能持有一种类型的样式，设置新类型样式后，之前已设置的其他类型样式（如已设置的TextStyle、GestureStyle等）将被清除。
+- 每个段落的段落样式按首个占位设置的段落样式生效，未设置时，段落按被绑定组件的段落样式生效。
+- 在API版本26.0.0之前，如果属性字符串段落内首个占位为OH_ArkUI_CustomSpan或OH_ArkUI_ImageAttachment时，设置在该段落上的段落样式不生效。从API版本26.0.0开始，设置段落样式生效。
 
 起始版本： 24
 
@@ -5554,7 +5578,7 @@ ArkUI_ErrorCode OH_ArkUI_TextLayoutManager_GetGlyphPositionAtCoordinate(ArkUI_Te
 ```
  描述
 
-获取距离给定坐标最近的字形(glyph)的位置信息。返回的位置索引基于字形单位而非字符单位——字形是渲染视觉单位，与字符(character)可能存在多对多映射关系。例如文本为“世界Hello”，其字形索引范围为[0, 7]，一个汉字占三个字符，其对应的字符索引范围为[0, 11]。
+获取距离给定坐标最近的字符位置信息。返回的位置索引为UTF-16字符偏移量而非字形偏移量。字形(glyph)为渲染视觉单位，与字符(character)可能存在多对多映射关系。例如文本为“世界Hello”，其字形索引范围为[0, 7]，对应的UTF-8字符索引范围为[0, 11]，UTF-16字符索引范围为[0, 7]。
 
 起始版本： 22
 
@@ -5671,6 +5695,93 @@ OH_Drawing_Range** outActualGlyphRange)
 | --- | --- |
 | [ArkUI_TextLayoutManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-textlayoutmanager)* layoutManager | 指向[ArkUI_TextLayoutManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-textlayoutmanager)对象的指针。 |
 | [OH_Drawing_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-range)* glyphRange | 指向[OH_Drawing_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-range)对象的指针，表示字形索引范围。 |
+| [OH_Drawing_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-range)** outCharRange | 指向[OH_Drawing_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-range)对象的二级指针，表示字符索引范围。 |
+| [OH_Drawing_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-range)** outActualGlyphRange | 指向[OH_Drawing_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-range)对象的二级指针，表示实际的字形索引范围。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| [ArkUI_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) | 返回结果。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 |
+
+#### [h2]OH_ArkUI_TextLayoutManager_GetCharacterPositionAtCoordinateWithEncoding()
+
+```
+ArkUI_ErrorCode OH_ArkUI_TextLayoutManager_GetCharacterPositionAtCoordinateWithEncoding(ArkUI_TextLayoutManager* layoutManager, double dx, double dy, OH_ArkUI_TextEncoding encoding, OH_Drawing_PositionAndAffinity** outPos)
+```
+ 描述
+
+根据指定编码类型，获取距离指定坐标最近的字符位置信息。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_TextLayoutManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-textlayoutmanager)* layoutManager | 指向[ArkUI_TextLayoutManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-textlayoutmanager)对象的指针。 |
+| double dx | 相对于控件的x坐标，单位为px。 |
+| double dy | 相对于控件的y坐标，单位为px。 |
+| [OH_ArkUI_TextEncoding](#oh_arkui_textencoding) encoding | 字符位置使用的编码类型。 |
+| [OH_Drawing_PositionAndAffinity](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-positionandaffinity)** outPos | 指向[OH_Drawing_PositionAndAffinity](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-positionandaffinity)对象的二级指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| [ArkUI_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) | 返回结果。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 |
+
+#### [h2]OH_ArkUI_TextLayoutManager_GetGlyphRangeForCharacterRangeWithEncoding()
+
+```
+ArkUI_ErrorCode OH_ArkUI_TextLayoutManager_GetGlyphRangeForCharacterRangeWithEncoding(ArkUI_TextLayoutManager* layoutManager, OH_Drawing_Range* charRange, OH_ArkUI_TextEncoding encoding,
+OH_Drawing_Range** outGlyphRange, OH_Drawing_Range** outActualCharRange)
+```
+ 描述
+
+根据指定编码类型和文本字符范围，获取字形范围以及实际的字符范围。
+
+![](./img/note_3.0-zh-cn.png) outGlyphRange、outActualCharRange返回的[OH_Drawing_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-range)对象在使用完成后，需通过[OH_Drawing_ReleaseRangeBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-text-typography-h#oh_drawing_releaserangebuffer)释放。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_TextLayoutManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-textlayoutmanager)* layoutManager | 指向[ArkUI_TextLayoutManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-textlayoutmanager)对象的指针。 |
+| [OH_Drawing_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-range)* charRange | 指向[OH_Drawing_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-range)对象的指针，表示字符索引范围。 |
+| [OH_ArkUI_TextEncoding](#oh_arkui_textencoding) encoding | 字符索引范围使用的编码类型。 |
+| [OH_Drawing_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-range)** outGlyphRange | 指向[OH_Drawing_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-range)对象的二级指针，表示字形索引范围。 |
+| [OH_Drawing_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-range)** outActualCharRange | 指向[OH_Drawing_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-range)对象的二级指针，表示实际的字符索引范围。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| [ArkUI_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) | 返回结果。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 |
+
+#### [h2]OH_ArkUI_TextLayoutManager_GetCharacterRangeForGlyphRangeWithEncoding()
+
+```
+ArkUI_ErrorCode OH_ArkUI_TextLayoutManager_GetCharacterRangeForGlyphRangeWithEncoding(ArkUI_TextLayoutManager* layoutManager, OH_Drawing_Range* glyphRange, OH_ArkUI_TextEncoding encoding,
+OH_Drawing_Range** outCharRange, OH_Drawing_Range** outActualGlyphRange)
+```
+ 描述
+
+根据指定编码类型和文本字形范围，获取字符范围以及实际的字形范围。
+
+![](./img/note_3.0-zh-cn.png) outCharRange、outActualGlyphRange返回的[OH_Drawing_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-range)对象在使用完成后，需通过[OH_Drawing_ReleaseRangeBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-text-typography-h#oh_drawing_releaserangebuffer)释放。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [ArkUI_TextLayoutManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-textlayoutmanager)* layoutManager | 指向[ArkUI_TextLayoutManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-textlayoutmanager)对象的指针。 |
+| [OH_Drawing_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-range)* glyphRange | 指向[OH_Drawing_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-range)对象的指针，表示字形索引范围。 |
+| [OH_ArkUI_TextEncoding](#oh_arkui_textencoding) encoding | 字符索引范围使用的编码类型。 |
 | [OH_Drawing_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-range)** outCharRange | 指向[OH_Drawing_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-range)对象的二级指针，表示字符索引范围。 |
 | [OH_Drawing_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-range)** outActualGlyphRange | 指向[OH_Drawing_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-range)对象的二级指针，表示实际的字形索引范围。 |
 

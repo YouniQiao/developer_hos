@@ -2,8 +2,8 @@
 title: "DialogV2"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-dialogv2"
 catalog: "harmonyos-references"
-content_hash: "d40a22dc0f59"
-synced_at: "2026-08-14T15:52:50.189765"
+content_hash: "8489644b47b6"
+synced_at: "2026-08-29T18:15:09.958974"
 ---
 
 # DialogV2
@@ -302,7 +302,7 @@ struct Index {
     // 构建提示弹出框，配置图片、内容、勾选状态和操作按钮
     TipsDialogV2({
       imageRes: $r('sys.media.ohos_ic_public_voice'),
-      content: '想要卸载这个APP嘛?',
+      content: '想要卸载这个APP吗?',
       title: 'TipsDialogV2',
       checkTips: '不再提示',
       checked: this.checked,
@@ -350,7 +350,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002709527289.png)
+ ![](./img/zh-cn_image_0000002701640134.png)
 
 #### [h2]示例2（纯列表弹出框）
 
@@ -419,7 +419,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002709527247.png)
+ ![](./img/zh-cn_image_0000002731519291.png)
 
 #### [h2]示例3（文本与勾选弹出框）
 
@@ -486,7 +486,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002679967296.png)
+ ![](./img/zh-cn_image_0000002701640092.png)
 
 #### [h2]示例4（纯文本弹出框）
 
@@ -545,7 +545,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002709647105.png)
+ ![](./img/zh-cn_image_0000002731359311.png)
 
 #### [h2]示例5（进度加载类弹出框）
 
@@ -589,14 +589,14 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002679807434.gif)
+ ![](./img/zh-cn_image_0000002701800006.gif)
 
 #### [h2]示例6（使用WithTheme自定义主题的弹出框）
 
 使用WithTheme自定义主题的弹出框，通过WithTheme包装LoadingDialogV2实现主题风格定制。
 
 ```
-import { CustomColors, CustomTheme, LoadingDialogV2, UIContext, WithTheme  } from '@kit.ArkUI';
+import { CustomColors, CustomTheme, LoadingDialogV2, UIContext } from '@kit.ArkUI';
 
 class CustomThemeImpl implements CustomTheme {
   colors?: CustomColors;
@@ -647,7 +647,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002679967338.png)
+ ![](./img/zh-cn_image_0000002731359353.png)
 
 #### [h2]示例7（自定义内容弹出框）
 
@@ -707,7 +707,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002709647147.png)
+ ![](./img/zh-cn_image_0000002701800048.png)
 
 #### [h2]示例8（跟手弹出框）
 
@@ -764,4 +764,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002679807476.png)
+ ![](./img/zh-cn_image_0000002731519335.png)

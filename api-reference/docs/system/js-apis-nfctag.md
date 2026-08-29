@@ -2,8 +2,8 @@
 title: "@ohos.nfc.tag (标准NFC-Tag)"
 upstream_id: "harmonyos-references/js-apis-nfctag"
 catalog: "harmonyos-references"
-content_hash: "917fdeafd194"
-synced_at: "2026-07-28T16:50:37.563391"
+content_hash: "500a28a9a2a8"
+synced_at: "2026-08-29T18:16:38.158189"
 ---
 
 # @ohos.nfc.tag (标准NFC-Tag)
@@ -17,7 +17,7 @@ synced_at: "2026-07-28T16:50:37.563391"
 ![](./img/note_3.0-zh-cn.png)
 
 1. 本模块首批接口从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
-2. 从API版本26.0.0开始请使用[canIUse("SystemCapability.Communication.NFC.Tag")](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/init#caniuse) && [nfcController.isNfcSupported](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-nfccontroller#nfccontrollerisnfcsupported)共同判断设备是否支持NFC能力更加准确，否则可能导致应用运行稳定性问题，参考[nfc-tag开发指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nfc-tag-access-guide)。
+2. API版本26.0.0前请使用[canIUse("SystemCapability.Communication.NFC.Tag")](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/syscap__ndk_8h#caniuse) && [nfcController.isNfcAvailable](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-nfccontroller#nfccontrollerisnfcsupported)判断设备是否支持NFC能力。从API版本26.0.0开始请使用[canIUse("SystemCapability.Communication.NFC.Tag")](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/syscap__ndk_8h#caniuse) && [nfcController.isNfcSupported](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-nfccontroller#nfccontrollerisnfcsupported)共同判断设备是否支持NFC能力更加准确，否则可能导致应用运行稳定性问题，参考[nfc-tag开发指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nfc-tag-access-guide)。
 3. 导入tag模块编辑器报错，在某个具体设备型号上能力可能超出工程默认设备定义的能力集范围，如需要使用此部分能力需额外配置自定义syscap，参考[syscap开发指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/syscap)。
 
 #### **导入模块**
@@ -26,7 +26,7 @@ synced_at: "2026-07-28T16:50:37.563391"
 import { tag } from '@kit.ConnectivityKit';
 ```
 
-#### **tag.TagInfo**
+#### **tag.TagInfo示例**
 
 在对相关Tag类型卡片进行读写之前，必须先获取[TagInfo](#taginfo)相关属性值，以确认设备读取到的Tag卡片支持哪些技术类型。这样Tag应用程序才能调用正确的接口和所读取到的Tag卡片进行通信。
 
@@ -60,7 +60,7 @@ export default class EntryAbility extends UIAbility {
             if (tagInfo.technology[i] == tag.ISO_DEP) {
                 isIsoDepTag = true;
             }
-        // 检查其他技术类型: tag.NFC_B/NFC_F/NFC_V/NDEF/MIFARE_CLASSIC/MIFARE_ULTRALIGHT/NDEF_FORMATABLE
+        // 检查其他技术类型：tag.NFC_B/NFC_F/NFC_V/NDEF/MIFARE_CLASSIC/MIFARE_ULTRALIGHT/NDEF_FORMATABLE
         }
 
         // 使用 NfcA APIs 去访问发现的标签
@@ -84,7 +84,7 @@ export default class EntryAbility extends UIAbility {
             }
             // 其他代码：对发现的标签执行读取或写入
         }
-        // 使用相同的代码来处理 "NfcA/NfcB/NfcF/NfcV/Ndef/MifareClassic/MifareUL/NdefFormatable".
+        // 使用相同的代码来处理 "NfcA/NfcB/NfcF/NfcV/Ndef/MifareClassic/MifareUL/NdefFormatable"。
     }
 }
 ```
@@ -545,7 +545,7 @@ registerForegroundDispatch(elementName: [ElementName](https://developer.huawei.c
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | elementName | [ElementName](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-elementname) | 是 | 所属应用读卡的页面信息（至少包含bundleName、abilityName这两项的赋值），不可以为空。 |
-| discTech | number[] | 是 | 前台应用指定的NFC读卡技术类型，不可以为空，至少指定一种读卡技术类型。每个number值表示所支持技术类型的常量值型，根据number值设置NFC读卡轮询的Tag技术类型（仅包含[NFC_A](#常量), [NFC_B](#常量), [NFC_F](#常量), [NFC_V](#常量)中的一种或多种）。 |
+| discTech | number[] | 是 | 前台应用指定的NFC读卡技术类型，不可以为空，至少指定一种读卡技术类型。每个number值表示所支持技术类型的常量值类型，根据number值设置NFC读卡轮询的Tag技术类型（仅包含[NFC_A](#常量), [NFC_B](#常量), [NFC_F](#常量), [NFC_V](#常量)中的一种或多种）。 |
 | callback | AsyncCallback | 是 | 前台读卡监听回调函数，返回读到的Tag信息，不可以为空。 |
 
 错误码：
@@ -671,7 +671,7 @@ on(type: 'readerMode', elementName: [ElementName](https://developer.huawei.com/c
 | --- | --- | --- | --- |
 | type | string | 是 | 要注册的回调类型，固定填"readerMode"字符串。 |
 | elementName | [ElementName](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-elementname) | 是 | 所属应用读卡的页面信息（至少包含bundleName、abilityName这两项的赋值），不可以为空。 |
-| discTech | number[] | 是 | 前台应用指定的NFC读卡技术类型，不可以为空，至少指定一种读卡技术类型。每个number值表示所支持技术类型的常量值型，根据number值设置NFC读卡轮询的Tag技术类型（仅包含[NFC_A](#常量), [NFC_B](#常量), [NFC_F](#常量), [NFC_V](#常量), [SKIP_NDEF](#常量)中的一种或多种）。 |
+| discTech | number[] | 是 | 前台应用指定的NFC读卡技术类型，不可以为空，至少指定一种读卡技术类型。每个number值表示所支持技术类型的常量值类型，根据number值设置NFC读卡轮询的Tag技术类型（仅包含[NFC_A](#常量), [NFC_B](#常量), [NFC_F](#常量), [NFC_V](#常量), [SKIP_NDEF](#常量)中的一种或多种）。 |
 | callback | AsyncCallback | 是 | 读卡器模式监听回调函数，返回读到的Tag信息，不可以为空。 |
 
 错误码：
@@ -806,7 +806,7 @@ on(type: 'readerModeWithInterval', elementName: ElementName, discTech: number[],
 | --- | --- | --- | --- |
 | type | string | 是 | 要注册的回调类型，固定填"readerModeWithInterval"字符串。 |
 | elementName | [ElementName](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-elementname) | 是 | 所属应用读卡的页面信息（至少包含bundleName、abilityName这两项的赋值）。 |
-| discTech | number[] | 是 | 前台应用指定的NFC读卡技术类型，至少指定一种读卡技术类型。每个number值表示所支持技术类型的常量值型，根据number值设置NFC读卡轮询的Tag技术类型（仅包含[NFC_A](#常量), [NFC_B](#常量), [NFC_F](#常量), [NFC_V](#常量), [SKIP_NDEF](#常量)中的一种或多种）。 |
+| discTech | number[] | 是 | 前台应用指定的NFC读卡技术类型，至少指定一种读卡技术类型。每个number值表示所支持技术类型的常量值类型，根据number值设置NFC读卡轮询的Tag技术类型（仅包含[NFC_A](#常量), [NFC_B](#常量), [NFC_F](#常量), [NFC_V](#常量), [SKIP_NDEF](#常量)中的一种或多种）。 |
 | callback | Callback | 是 | 读卡器模式监听回调函数，返回读到的Tag信息。 |
 | interval | number | 是 | 设置卡在位检测间隔，单位为ms。推荐范围100-2000，若传入负值则不生效，系统会使用默认卡在位间隔（150ms）。 |
 
@@ -1251,7 +1251,7 @@ createNdefMessage(data: number[]): [NdefMessage](https://developer.huawei.com/co
 ```
 import { tag } from '@kit.ConnectivityKit';
 
-let rawData = [0xD1, 0x01, 0x03, 0x54, 0x4E, 0x46, 0x43];  //必须是可以被解析的NDEF记录
+let rawData = [0xD1, 0x01, 0x03, 0x54, 0x4E, 0x46, 0x43];  // 必须是可以被解析的NDEF记录
 try {
     let ndefMessage : tag.NdefMessage = tag.ndef.createNdefMessage(rawData);
     console.info("ndef createNdefMessage, ndefMessage: " + ndefMessage);
@@ -1353,7 +1353,7 @@ NFC Tag有多种不同的技术类型，定义常量描述不同的技术类型�
 | MIFARE_CLASSIC | number | 8 | MIFARE Classic技术。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | MIFARE_ULTRALIGHT | number | 9 | MIFARE Ultralight技术。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | NFC_BARCODE18+ | number | 10 | BARCODE技术。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| SKIP_NDEF | number | 11 | 跳过NDEF检查的技术。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
+| SKIP_NDEF | number | 11 | 跳过NDEF检查的技术。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | RTD_TEXT9+ | number[] | [0x54] | 文本类型的NDEF Record，参考NDEF标签技术规范《NFCForum-TS-NDEF_1.0》的定义细节。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | RTD_URI9+ | number[] | [0x55] | URI类型的NDEF Record，参考NDEF标签技术规范《NFCForum-TS-NDEF_1.0》的定义细节。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 

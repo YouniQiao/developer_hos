@@ -2,8 +2,8 @@
 title: "@ohos.app.ability.Ability (Ability基类)"
 upstream_id: "harmonyos-references/js-apis-app-ability-ability"
 catalog: "harmonyos-references"
-content_hash: "8480cd4d5ffd"
-synced_at: "2026-07-09T00:57:02.827894"
+content_hash: "a5438041a74e"
+synced_at: "2026-08-29T18:11:55.221083"
 ---
 
 # @ohos.app.ability.Ability (Ability基类)
@@ -26,7 +26,7 @@ Ability基类及其子类的继承关系如下图所示。
 
 ![](./img/note_3.0-zh-cn.png) 部分ExtensionAbility组件（例如[FormExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formextensionability)、[InputMethodExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethod-extension-ability)等）与下图中的ExtensionAbility基类不存在继承关系，均未在图中列出。
 
-![](./img/zh-cn_image_0000002661612227.png)
+![](./img/zh-cn_image_0000002701799280.png)
 
 #### Ability.onConfigurationUpdate
 
@@ -35,6 +35,8 @@ onConfigurationUpdate(newConfig: Configuration): void
 当系统环境变量发生变化时，系统会触发该回调。开发者可以重写该回调实现对系统环境变量变化时的响应，例如当系统语言类型发生变化时，应用可以在回调中进行定制化的处理等。
 
 ![](./img/note_3.0-zh-cn.png) 该回调方法在实际触发时存在一定限制。例如如果开发者通过[setLanguage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-applicationcontext#applicationcontextsetlanguage11)接口设置应用的语言，即便系统语言发生变化，系统也不再触发onConfigurationUpdate回调。详见[使用场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/subscribe-system-environment-variable-changes#使用场景)。
+
+如果需要在页面中监控Ability的环境变量，可以使用[ApplicationContext.on('environment')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-applicationcontext#applicationcontextonenvironment)方法。
 
 元服务API：从API version 11开始，该接口支持在元服务中使用。
 
@@ -66,6 +68,8 @@ onMemoryLevel(level: AbilityConstant.MemoryLevel): void
 当整机可用内存变化到指定程度时，系统会触发该回调。开发者可以重写该回调实现对内存级别变化的响应，例如释放缓存数据等。
 
 ![](./img/note_3.0-zh-cn.png) onMemoryLevel回调运行在当前进程的主线程中，如果在该回调中做耗时的UI组件释放，会阻塞主线程任务，因此不建议在该回调中释放UI组件。
+
+如果需要在页面中监控Ability的环境变量，可以使用[ApplicationContext.on('environment')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-applicationcontext#applicationcontextonenvironment)方法。
 
 元服务API：从API version 11开始，该接口支持在元服务中使用。
 

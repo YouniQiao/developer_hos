@@ -2,8 +2,8 @@
 title: "ArkUI_NodeAttributeType（XComponent组件相关属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-xcomponent"
 catalog: "harmonyos-references"
-content_hash: "fb1a73bd009a"
-synced_at: "2026-07-28T16:49:22.264271"
+content_hash: "7d196bfd2086"
+synced_at: "2026-08-29T18:15:38.959895"
 ---
 
 # ArkUI_NodeAttributeType（XComponent组件相关属性）
@@ -14,7 +14,7 @@ enum ArkUI_NodeAttributeType
 
 #### 概述
 
-定义ArkUI在Native侧可以设置或获取的XComponent组件相关属性集合。
+定义ArkUI在Native侧可以设置或获取的XComponent组件相关属性集合，包括组件ID、组件类型、Surface宽高、Surface显示区域以及是否支持图像分析等属性，适用于需要在Native侧对XComponent组件的渲染区域和行为进行自定义配置与获取的场景。
 
 起始版本： 12
 
@@ -91,7 +91,7 @@ NODE_XCOMPONENT_SURFACE_SIZE = 12002
 ```
 NODE_XCOMPONENT_SURFACE_RECT = 12003
 ```
- XComponent组件所持有的Surface显示区域，支持属性设置和属性获取接口。
+ XComponent组件所持有的Surface显示区域，支持属性设置和属性获取接口。适用于需要在XComponent组件内指定局部区域进行渲染的场景，例如视频画面裁剪显示、画中画局部渲染等。
 
 作为属性设置方法参数、属性获取方法返回值[ArkUI_AttributeItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-attributeitem)格式如下。
 
@@ -120,7 +120,7 @@ NODE_XCOMPONENT_SURFACE_RECT = 12003
 ```
 NODE_XCOMPONENT_ENABLE_ANALYZER = 12004
 ```
- XComponent组件是否支持图像分析的属性，支持属性设置和属性获取接口。
+ XComponent组件是否支持图像分析的属性，支持属性设置和属性获取接口。开启后可对组件中显示的图像进行内容识别分析，适用于相机预览实时识别、图像内容理解等场景。
 
 作为属性设置方法参数、属性获取方法返回值[ArkUI_AttributeItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-attributeitem)格式如下。
 

@@ -2,8 +2,8 @@
 title: "@system.fetch (数据请求)"
 upstream_id: "harmonyos-references/js-apis-system-fetch"
 catalog: "harmonyos-references"
-content_hash: "b96595ba8b70"
-synced_at: "2026-07-09T00:59:30.918330"
+content_hash: "26bfa1aac44f"
+synced_at: "2026-08-29T18:16:47.858383"
 ---
 
 # @system.fetch (数据请求)
@@ -21,27 +21,19 @@ import fetch from '@system.fetch';
 
 #### fetch.fetch3+
 
+```
 fetch(options:{
-
-url: string;
-
-data?: string | object;
-
-header?: Object;
-
-method?: string;
-
-responseType?: string;
-
-success?: (data: FetchResponse) => void;
-
-fail?: (data: any, code: number) => void;
-
-complete?: () => void;
-
-} ): void
-
-通过网络获取数据。
+  url: string;
+  data?: string | object;
+  header?: Object;
+  method?: string;
+  responseType?: string;
+  success?: (data: FetchResponse) => void;
+  fail?: (data: any, code: number) => void;
+  complete?: () => void;
+}): void
+```
+ 通过网络获取数据。
 
 系统能力： SystemCapability.Communication.NetStack
 
@@ -55,7 +47,7 @@ complete?: () => void;
 | method | string | 否 | 请求方法默认为GET，可选值为：OPTIONS、GET、HEAD、POST、PUT、DELETE、TRACE。 |
 | responseType | string | 否 | 默认会根据服务器返回header中的Content-Type确定返回类型，支持文本和json格式。详见success返回值。 |
 | success | Function | 否 | 接口调用成功的回调函数，返回值为[FetchResponse](#fetchresponse3)。 |
-| fail | Function | 否 | 接口调用失败的回调函数。 |
+| fail | Function | 否 | 接口调用失败的回调函数，返回值为data, code。data固定为undefined，code为错误码，具体含义参考[curl错误码](https://curl.se/libcurl/c/libcurl-errors.html)。 |
 | complete | Function | 否 | 接口调用结束的回调函数。 |
 
 表1 data与Content-Type关系
@@ -96,8 +88,8 @@ fetch.fetch({
     console.info('fetch success');
     console.info(JSON.stringify(response));
   },
-  fail: () => {
-    console.error('fetch failed');
+  fail: (data: Object, code) => {
+    console.error('fetch failed, data: ' + JSON.stringify(data) + ', code: =' + code);
   }
 });
 ```
@@ -156,9 +148,9 @@ export default {
                 console.info('fetch success');
                 console.info(JSON.stringify(response));
             },
-            fail: function() {
+            fail: function(data, code) {
                 that.fontColor = '#FF0000';
-                that.result = 'FAILED';
+                that.result = 'FAILED code ' + code;
                 console.error('fetch failed');
             }
         });

@@ -2,14 +2,14 @@
 title: "OH_NativeBuffer_Planes"
 upstream_id: "harmonyos-references/capi-oh-nativebuffer-oh-nativebuffer-planes"
 catalog: "harmonyos-references"
-content_hash: "79269d616482"
-synced_at: "2026-07-09T01:01:00.031677"
+content_hash: "cb0c44b67201"
+synced_at: "2026-08-29T18:17:57.198569"
 ---
 
 # OH_NativeBuffer_Planes
 
 ```
-typedef struct OH_NativeBuffer_Planes {...} OH_NativeBuffer_Planes
+typedef struct {...} OH_NativeBuffer_Planes
 ```
 
 #### 概述

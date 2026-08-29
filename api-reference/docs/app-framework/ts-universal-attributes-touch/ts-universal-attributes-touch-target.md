@@ -2,8 +2,8 @@
 title: "触摸热区设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-touch-target"
 catalog: "harmonyos-references"
-content_hash: "f38e7993043a"
-synced_at: "2026-07-28T16:42:29.558481"
+content_hash: "c27b3eb9ad0c"
+synced_at: "2026-08-29T18:13:02.351934"
 ---
 
 # 触摸热区设置
@@ -105,7 +105,7 @@ responseRegionList(regions: Array<ResponseRegion>): T
 ![](./img/note_3.0-zh-cn.png)
 
 - x和y可以设置正负值百分比。当x设置为'100%'时表示热区往右偏移组件本身宽度大小，当x设置为'-100%'时表示热区往左偏移组件本身宽度大小。当y设置为'100%'时表示热区往下偏移组件本身高度大小，当y设置为'-100%'时表示热区往上偏移组件本身高度大小。
-- width和height设置百分比时，只能设置正值百分比。width：'100%'表示热区宽度设置为该组件本身的宽度。比如组件本身宽度是100vp，那么'100%'表示热区宽度也为100vp。height：'100%'表示热区高度设置为该组件本身的高度。设置为0或负值百分比时，采用默认值'100%'。
+- width和height设置百分比时，只能设置正值百分比。width：'100%'表示热区宽度设置为该组件本身的宽度。比如组件本身宽度是100vp，那么'100%'表示热区宽度也为100vp。height：'100%'表示热区高度设置为该组件本身的高度。
 - 百分比相对于组件自身宽高进行计算。
 - 当父组件设置[clip](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sharp-clipping#clip12)(true)时，子组件的响应会受到父组件触摸热区的影响，不在父组件触摸热区内的子组件无法响应手势和事件。
 - width和height不支持calc()的动态计算。
@@ -119,7 +119,7 @@ responseRegionList(regions: Array<ResponseRegion>): T
 - 当父组件设置[clip](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sharp-clipping#clip12)为true时，子组件的响应会受到父组件触摸热区的影响，不在父组件触摸热区内的子组件无法响应手势和事件。
 - 如果触摸热区未配置输入工具类型、触摸位置或大小，对应项采用默认值。
 - x和y的计算结果为正值时，分别代表向右偏移和向下偏移；当计算结果为负值时，分别代表向左偏移和向上偏移。
-- width和height采用string类型时，string需采用小写字符，否则不生效，支持calc()的动态计算。指定calc()的入参字符串格式为'宽高缩放比例 ± 宽高增量'，宽高缩放比例为百分比，宽高增量单位为px或vp；格式不符合要求或使用其他单位时不生效。例如'calc(80% + 10vp)'中，80%为宽高缩放比例、10vp为宽高增量。width和height采用LengthMetrics类型且单位为percent时，相对于组件自身宽高进行计算，percent(1)代表100%。当计算结果为负值时，采用默认值。
+- width和height采用string类型时，string需采用小写字符，否则不生效，支持calc()的动态计算。指定calc()的入参字符串格式为'宽高缩放比例 ± 宽高增量'，宽高缩放比例为百分比，宽高增量单位为px或vp。例如'calc(80% + 10vp)'中，80%为宽高缩放比例、10vp为宽高增量。width和height采用LengthMetrics类型且单位为percent时，相对于组件自身宽高进行计算，percent(1)代表100%。当计算结果为负值时，采用默认值。
 
 元服务API： 从API version 22开始，该接口支持在元服务中使用。
 
@@ -202,7 +202,7 @@ struct TouchTargetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087833.gif)
+ ![](./img/zh-cn_image_0000002701639540.gif)
 
 #### [h2]示例2（通过responseRegionList接口设置触摸热区）
 
@@ -259,7 +259,7 @@ struct TouchTargetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928005.gif)
+ ![](./img/zh-cn_image_0000002731358761.gif)
 
 #### [h2]示例3（设置鼠标的触摸热区以响应点击事件）
 
@@ -350,4 +350,4 @@ struct MouseResponseRegionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008326.gif)
+ ![](./img/zh-cn_image_0000002701799456.gif)

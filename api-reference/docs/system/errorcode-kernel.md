@@ -1,12 +1,10 @@
 ---
-
 title: "内核错误码"
 upstream_id: "harmonyos-references/errorcode-kernel"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T00:59:31.858309"
-content_hash: "342891d35b8b"
+content_hash: "8587ac2c0e87"
+synced_at: "2026-08-29T18:16:48.282877"
 ---
-
 
 # 内核错误码
 
@@ -129,7 +127,7 @@ content_hash: "342891d35b8b"
 | 117 | EUCLEAN | Structure needs cleaning |
 | 118 | ENOTNAM | Not a XENIX named type file |
 | 119 | ENAVAIL | No XENIX semaphores available |
-| 120 | EREMOTEIO | Is a named type file |
+| 120 | EISNAM | Is a named type file |
 | 121 | EREMOTEIO | Remote I/O error |
 | 122 | EDQUOT | Quota exceeded |
 | 123 | ENOMEDIUM | No medium found |

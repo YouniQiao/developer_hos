@@ -2,8 +2,8 @@
 title: "scsi_peripheral_types.h"
 upstream_id: "harmonyos-references/capi-scsi-peripheral-types-h"
 catalog: "harmonyos-references"
-content_hash: "25f40ef8628e"
-synced_at: "2026-07-09T00:59:55.021049"
+content_hash: "e3260f59727f"
+synced_at: "2026-08-29T18:17:09.702337"
 ---
 
 # scsi_peripheral_types.h
@@ -28,19 +28,31 @@ synced_at: "2026-07-09T00:59:55.021049"
 
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
-| [ScsiPeripheral_DeviceMemMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scsiperipheralddk-scsiperipheral-devicememmap) | ScsiPeripheral_DeviceMemMap | 通过调用OH_ScsiPeripheral_CreateDeviceMemMap创建的设备内存映射。使用该设备内存映射的缓冲区可以提供更好的性能。 |
-| [ScsiPeripheral_IORequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scsiperipheralddk-scsiperipheral-iorequest) | ScsiPeripheral_IORequest | 读/写操作的请求参数。 |
-| [ScsiPeripheral_Request](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scsiperipheralddk-scsiperipheral-request) | ScsiPeripheral_Request | 请求参数结构体。 |
-| [ScsiPeripheral_Response](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scsiperipheralddk-scsiperipheral-response) | ScsiPeripheral_Response | 响应参数结构体。 |
-| [ScsiPeripheral_TestUnitReadyRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scsiperipheralddk-scsiperipheral-testunitreadyrequest) | ScsiPeripheral_TestUnitReadyRequest | 命令（test unit ready）的请求结构体。 |
-| [ScsiPeripheral_InquiryRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scsiperipheralddk-scsiperipheral-inquiryrequest) | ScsiPeripheral_InquiryRequest | SCSI命令（inquiry）的请求结构体。 |
-| [ScsiPeripheral_InquiryInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scsiperipheralddk-scsiperipheral-inquiryinfo) | ScsiPeripheral_InquiryInfo | SCSI inquiry 数据。 |
-| [ScsiPeripheral_ReadCapacityRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scsiperipheralddk-scsiperipheral-readcapacityrequest) | ScsiPeripheral_ReadCapacityRequest | SCSI命令（read capacity）的请求结构体。 |
-| [ScsiPeripheral_CapacityInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scsiperipheralddk-scsiperipheral-capacityinfo) | ScsiPeripheral_CapacityInfo | SCSI read capacity 数据。 |
-| [ScsiPeripheral_RequestSenseRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scsiperipheralddk-scsiperipheral-requestsenserequest) | ScsiPeripheral_RequestSenseRequest | SCSI命令（Request Sense）的请求结构体。 |
-| [ScsiPeripheral_BasicSenseInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scsiperipheralddk-scsiperipheral-basicsenseinfo) | ScsiPeripheral_BasicSenseInfo | sense data的基本信息。 |
-| [ScsiPeripheral_VerifyRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scsiperipheralddk-scsiperipheral-verifyrequest) | ScsiPeripheral_VerifyRequest | SCSI命令（verify）的请求结构体。 |
-| [ScsiPeripheral_Device](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scsiperipheralddk-scsiperipheral-device) | ScsiPeripheral_Device | 不透明的SCSI设备结构体。 |
+| [ScsiPeripheral_DeviceMemMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scsiperipheralddk-scsiperipheral-devicememmap) | ScsiPeripheral_DeviceMemMap | 通过调用[OH_ScsiPeripheral_CreateDeviceMemMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scsi-peripheral-api-h#oh_scsiperipheral_createdevicememmap)创建的设备内存映射。使用该设备内存映射的缓冲区可以提供更好的性能。 |
+| [ScsiPeripheral_IORequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scsiperipheralddk-scsiperipheral-iorequest) | ScsiPeripheral_IORequest | 读/写操作的请求参数。该结构体定义了SCSI外设进行读/写操作时所需的请求参数，包括逻辑块起始地址、传输长度、控制信息等。 |
+| [ScsiPeripheral_Request](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scsiperipheralddk-scsiperipheral-request) | ScsiPeripheral_Request | SCSI请求参数结构体，用于构造与SCSI设备交互的请求参数，支持配置命令描述符块、数据缓冲区、超时时间等。 |
+| [ScsiPeripheral_Response](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scsiperipheralddk-scsiperipheral-response) | ScsiPeripheral_Response | SCSI响应参数结构体，包含状态、错误诊断数据、传输结果等，用于接收SCSI设备响应数据、判断命令是否成功。 |
+| [ScsiPeripheral_TestUnitReadyRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scsiperipheralddk-scsiperipheral-testunitreadyrequest) | ScsiPeripheral_TestUnitReadyRequest | SCSI命令（TEST UNIT READY）的请求结构体，通常用于确认逻辑单元是否就绪（逻辑单元是SCSI设备中可独立寻址的I/O操作实体）。 |
+| [ScsiPeripheral_InquiryRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scsiperipheralddk-scsiperipheral-inquiryrequest) | ScsiPeripheral_InquiryRequest | SCSI命令（INQUIRY）的请求结构体，通常用于查询设备的基本信息。 |
+| [ScsiPeripheral_InquiryInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scsiperipheralddk-scsiperipheral-inquiryinfo) | ScsiPeripheral_InquiryInfo | SCSI INQUIRY 数据，用于存储SCSI外设的INQUIRY命令查询结果。 |
+| [ScsiPeripheral_ReadCapacityRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scsiperipheralddk-scsiperipheral-readcapacityrequest) | ScsiPeripheral_ReadCapacityRequest | SCSI命令（READ CAPACITY）的请求结构体，用于发送读取存储容量的命令，可帮助获取设备的逻辑块大小和总块数。 |
+| [ScsiPeripheral_CapacityInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scsiperipheralddk-scsiperipheral-capacityinfo) | ScsiPeripheral_CapacityInfo | SCSI READ CAPACITY结构体。用于在开发SCSI设备驱动时获取设备的存储容量信息，支持进行分区管理、可用空间检查和存储资源分配等操作。 |
+| [ScsiPeripheral_RequestSenseRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scsiperipheralddk-scsiperipheral-requestsenserequest) | ScsiPeripheral_RequestSenseRequest | SCSI命令（REQUEST SENSE）的请求结构体，该命令通常用于获取设备的错误信息。 |
+| [ScsiPeripheral_BasicSenseInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scsiperipheralddk-scsiperipheral-basicsenseinfo) | ScsiPeripheral_BasicSenseInfo | SCSI Sense Data的基本信息结构体，用于封装SCSI命令执行后返回的sense数据。该结构体包含响应码、状态标志位以及各类信息字段，用于驱动程序获取和分析SCSI设备的错误状态和命令执行结果。 |
+| [ScsiPeripheral_VerifyRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scsiperipheralddk-scsiperipheral-verifyrequest) | ScsiPeripheral_VerifyRequest | SCSI命令（VERIFY）的请求结构体，该命令通常用于校验逻辑块的数据完整性。 |
+| [ScsiPeripheral_Device](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-scsiperipheralddk-scsiperipheral-device) | ScsiPeripheral_Device | 不透明的SCSI设备结构体，用于表示与SCSI外设交互的设备句柄。 |
+
+#### [h2]宏定义
+
+| 名称 | 描述 |
+| --- | --- |
+| SCSIPERIPHERAL_MIN_DESCRIPTOR_FORMAT_SENSE 8 | 描述符格式感知数据的最小长度。 **起始版本：** 18 |
+| SCSIPERIPHERAL_MIN_FIXED_FORMAT_SENSE 18 | 固定格式感知数据的最小长度。 **起始版本：** 18 |
+| SCSIPERIPHERAL_MAX_CMD_DESC_BLOCK_LEN 16 | 命令描述符块的最大长度。 **起始版本：** 18 |
+| SCSIPERIPHERAL_MAX_SENSE_DATA_LEN 252 | 感知数据的最大长度。 **起始版本：** 18 |
+| SCSIPERIPHERAL_VENDOR_ID_LEN 8 | 厂商标识符的长度。 **起始版本：** 18 |
+| SCSIPERIPHERAL_PRODUCT_ID_LEN 16 | 产品标识符的长度。 **起始版本：** 18 |
+| SCSIPERIPHERAL_PRODUCT_REV_LEN 4 | 产品修订版本号的长度。 **起始版本：** 18 |
 
 #### [h2]枚举
 
@@ -64,16 +76,16 @@ SCSI Peripheral DDK错误码。
 
 | 枚举项 | 描述 |
 | --- | --- |
-| SCSIPERIPHERAL_DDK_NO_PERM = 201 | 没有权限。 |
-| SCSIPERIPHERAL_DDK_INVALID_PARAMETER = 401 | 非法参数。 |
+| SCSIPERIPHERAL_DDK_NO_PERM = 201 | 没有权限。请确保应用已正确声明所需的权限。 |
+| SCSIPERIPHERAL_DDK_INVALID_PARAMETER = 401 | 非法参数。请检查参数是否符合要求。 |
 | SCSIPERIPHERAL_DDK_SUCCESS = 31700000 | 操作成功。 |
-| SCSIPERIPHERAL_DDK_MEMORY_ERROR = 31700001 | 与内存相关的错误，例如，内存不足、内存数据复制失败或内存申请失败。 |
-| SCSIPERIPHERAL_DDK_INVALID_OPERATION = 31700002 | 非法操作。 |
-| SCSIPERIPHERAL_DDK_IO_ERROR = 31700003 | 设备输入/输出操作失败。 |
-| SCSIPERIPHERAL_DDK_TIMEOUT = 31700004 | 传输超时。 |
-| SCSIPERIPHERAL_DDK_INIT_ERROR = 31700005 | DDK初始化错误，或者DDK未初始化。 |
-| SCSIPERIPHERAL_DDK_SERVICE_ERROR = 31700006 | 与SCSI Peripheral DDK服务的通信失败。 |
-| SCSIPERIPHERAL_DDK_DEVICE_NOT_FOUND = 31700007 | 设备未找到。 |
+| SCSIPERIPHERAL_DDK_MEMORY_ERROR = 31700001 | 与内存相关的错误，例如，内存不足、内存数据复制失败或内存申请失败。请检查内存状态和相关参数。 |
+| SCSIPERIPHERAL_DDK_INVALID_OPERATION = 31700002 | 非法操作。请检查操作逻辑是否正确。 |
+| SCSIPERIPHERAL_DDK_IO_ERROR = 31700003 | 设备输入/输出操作失败。请检查传输参数和设备规格。 |
+| SCSIPERIPHERAL_DDK_TIMEOUT = 31700004 | 传输超时。请检查超时参数和设备状态。 |
+| SCSIPERIPHERAL_DDK_INIT_ERROR = 31700005 | DDK初始化错误，或者DDK未初始化。请先初始化DDK服务。 |
+| SCSIPERIPHERAL_DDK_SERVICE_ERROR = 31700006 | 与SCSI Peripheral DDK服务的通信失败。请检查DDK服务是否正常运行。 |
+| SCSIPERIPHERAL_DDK_DEVICE_NOT_FOUND = 31700007 | 设备未找到。请确保传入的设备信息正确。 |
 
 #### [h2]ScsiPeripheral_Status
 
@@ -95,81 +107,4 @@ enum ScsiPeripheral_Status
 | SCSIPERIPHERAL_STATUS_RESERVATION_CONFLICT = 0x18 | 资源保留冲突。 |
 | SCSIPERIPHERAL_STATUS_TASK_SET_FULL = 0x28 | 任务集已满。 |
 | SCSIPERIPHERAL_STATUS_ACA_ACTIVE = 0x30 | ACA活动状态。 |
-| SCSIPERIPHERAL_STATUS_TASK_ABORTED = 0x40 | 任务已终止。 |
-
-#### [h2]SCSIPERIPHERAL_MIN_DESCRIPTOR_FORMAT_SENSE
-
-```
-SCSIPERIPHERAL_MIN_DESCRIPTOR_FORMAT_SENSE 8
-```
- 描述
-
-描述符格式感应数据的最小长度。
-
-起始版本： 18
-
-#### [h2]SCSIPERIPHERAL_MIN_FIXED_FORMAT_SENSE
-
-```
-SCSIPERIPHERAL_MIN_FIXED_FORMAT_SENSE 18
-```
- 描述
-
-固定格式感应数据的最小长度。
-
-起始版本： 18
-
-#### [h2]SCSIPERIPHERAL_MAX_CMD_DESC_BLOCK_LEN
-
-```
-SCSIPERIPHERAL_MAX_CMD_DESC_BLOCK_LEN 16
-```
- 描述
-
-命令描述块的最大长度。
-
-起始版本： 18
-
-#### [h2]SCSIPERIPHERAL_MAX_SENSE_DATA_LEN
-
-```
-SCSIPERIPHERAL_MAX_SENSE_DATA_LEN 252
-```
- 描述
-
-感应数据的最大长度。
-
-起始版本： 18
-
-#### [h2]SCSIPERIPHERAL_VENDOR_ID_LEN
-
-```
-SCSIPERIPHERAL_VENDOR_ID_LEN 8
-```
- 描述
-
-厂商标识符的长度。
-
-起始版本： 18
-
-#### [h2]SCSIPERIPHERAL_PRODUCT_ID_LEN
-
-```
-SCSIPERIPHERAL_PRODUCT_ID_LEN 16
-```
- 描述
-
-产品标识符的长度。
-
-起始版本： 18
-
-#### [h2]SCSIPERIPHERAL_PRODUCT_REV_LEN
-
-```
-SCSIPERIPHERAL_PRODUCT_REV_LEN 4
-```
- 描述
-
-产品修订版本号的长度。
-
-起始版本： 18
+| SCSIPERIPHERAL_STATUS_TASK_ABORTED = 0x40 | 任务已中止。 |

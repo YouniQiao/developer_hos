@@ -2,8 +2,8 @@
 title: "AR Engine错误码"
 upstream_id: "harmonyos-references/errorcode-ar-engine"
 catalog: "harmonyos-references"
-content_hash: "16743bb23640"
-synced_at: "2026-07-09T01:00:50.274072"
+content_hash: "62d430178402"
+synced_at: "2026-08-29T18:17:49.432164"
 ---
 
 # AR Engine错误码
@@ -24,11 +24,14 @@ API接口调用失败。
 
 可能原因
 
-该错误码表示一般运行异常，如内部创建对象失败。
+1. 内部创建对象失败。
+2. 内部运行异常。
+3. 当前设备可能不支持该特性。
 
 处理步骤
 
-请重启应用，如不能解决可[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/)，华为支持人员会及时处理。
+1. 请重启应用，如不能解决可[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/)，华为支持人员会及时处理。
+2. 可调用[HMS_AREngine_CheckSupported](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-capi-arengine#hms_arengine_checksupported)检查当前设备是否支持该特性。
 
 #### 1009200002 会话已暂停状态
 
@@ -186,11 +189,14 @@ Camera unavailable.
 
 可能原因
 
-应用其他场景占用了相机导致AR Engine无法打开相机。
+1. 应用其他场景占用了相机导致AR Engine无法打开相机。
+2. 相机服务异常，无法打开相机。
+3. 未正常申请相机权限。
 
 处理步骤
 
-排查应用在使用AR Engine时，是否存在其他打开相机场景，如不存在，可[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/)，华为支持人员会及时处理。
+1. 排查应用在使用AR Engine时，是否存在其他打开相机场景，如不存在，可[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/)，华为支持人员会及时处理。
+2. 请确认应用正确申请了相机权限。
 
 #### 1009200011 添加的图片数量超过最大数量
 

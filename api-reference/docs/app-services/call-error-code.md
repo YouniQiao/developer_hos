@@ -2,8 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/call-error-code"
 catalog: "harmonyos-references"
-content_hash: "079fd4e51fde"
-synced_at: "2026-07-09T01:01:16.232028"
+content_hash: "f3e17efa302f"
+synced_at: "2026-08-29T18:18:13.276299"
 ---
 
 # ArkTS API错误码
@@ -77,82 +77,6 @@ Call Service Kit内部错误。
 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
 
 #### 1007200999 未知错误
-
-错误信息
-
-Unknown error code.
-
-错误描述
-
-Call Service Kit未知错误。
-
-可能原因
-
-未知。
-
-处理步骤
-
-请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
-
-#### 8300001 参数无效
-
-错误信息
-
-Invalid parameter value.
-
-错误描述
-
-参数异常。
-
-可能原因
-
-1、参数数量错误，例如必填参数未传递等。
-
-2、上下文错误，最常见的是无效上下文，不是Stage模型上下文等。
-
-处理步骤
-
-1、请确认上述参数传递正确。
-
-2、也可以通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
-
-#### 8300002 无企业来电权限
-
-错误信息
-
-The enterprise permission is not verified.
-
-错误描述
-
-无企业来电权限。
-
-可能原因
-
-没有申请企业来电权限。
-
-处理步骤
-
-通过[申请接入](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/callservice-enterprise-contact-display#申请接入)申请企业来电权限，或通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
-
-#### 8300003 内部错误
-
-错误信息
-
-System internal error.
-
-错误描述
-
-Call Service Kit内部错误。
-
-可能原因
-
-查询企业应用超时或上下文中获取token失败。
-
-处理步骤
-
-请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
-
-#### 8300999 未知错误
 
 错误信息
 

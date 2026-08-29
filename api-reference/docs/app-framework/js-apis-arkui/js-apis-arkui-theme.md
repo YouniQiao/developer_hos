@@ -2,8 +2,8 @@
 title: "@ohos.arkui.theme(主题换肤)"
 upstream_id: "harmonyos-references/js-apis-arkui-theme"
 catalog: "harmonyos-references"
-content_hash: "ac26508e2233"
-synced_at: "2026-07-28T16:40:59.368661"
+content_hash: "3e0e1c91399f"
+synced_at: "2026-08-29T18:12:22.701438"
 ---
 
 # @ohos.arkui.theme(主题换肤)
@@ -74,10 +74,10 @@ import { Theme, ThemeControl, CustomColors, Colors, CustomTheme, CustomDarkColor
 | backgroundTertiary | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 否 | 三级背景颜色（实色，不透明）。 **影响组件：** 暂无组件使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | backgroundFourth | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 否 | 四级背景颜色（实色，不透明）。 **影响组件：** 暂无组件使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | backgroundEmphasize | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 否 | 高亮背景颜色（实色，不透明）。 **说明：** 当作为[CustomColors](#customcolors)的属性被使用时，若设置了brand，backgroundEmphasize在浅色模式和深色模式下的缺省值均为brand的颜色值叠加100%透明度。 **影响组件：** [Progress](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-progress)、[Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button)、[Slider](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-slider)。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| compForegroundPrimary | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 否 | 前景色。 **影响组件：** [QRCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-qrcode)。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| compForegroundPrimary | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 否 | 前背景。 **影响组件：** [QRCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-qrcode)。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | compBackgroundPrimary | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 否 | 白色背景。 **影响组件：** 暂无组件使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | compBackgroundPrimaryTran | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 否 | 白色透明背景。 **影响组件：** 暂无组件使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| compBackgroundPrimaryContrary | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 否 | 反转背景。 **影响组件：** [Toggle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toggle)、[Slider](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-slider)。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| compBackgroundPrimaryContrary | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 否 | 常亮背景。 **影响组件：** [Toggle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toggle)、[Slider](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-slider)。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | compBackgroundGray | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 否 | 灰色背景。 **影响组件：** 暂无组件使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | compBackgroundSecondary | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 否 | 二级背景。 **说明：** 从API版本26.0.0开始，当作为[CustomColors](#customcolors)的属性被使用时，若设置了container，compBackgroundSecondary在浅色模式和深色模式下的缺省值均为container的颜色值叠加10%透明度。 **影响组件：** [Swiper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-swiper)、[Slider](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-slider)。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | compBackgroundTertiary | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 否 | 三级背景。 **说明：** 从API版本26.0.0开始，当作为[CustomColors](#customcolors)的属性被使用时，若设置了container，compBackgroundTertiary在浅色模式下的缺省值为container的颜色值叠加5%透明度，在深色模式下的缺省值为container的颜色值叠加10%透明度。 **影响组件：** [EditableTitleBar](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-editabletitlebar)、[Progress](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-progress)、[AlphabetIndexer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-alphabet-indexer)、 [Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button)、[Select](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-select)、[Toggle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toggle)、 [Chip](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-chip)、[TextInput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textinput)、[Search](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-search)。从API版本26.0.0开始，新增[UIPickerComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-ui-picker-component)、[TextPicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textpicker)。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
@@ -107,7 +107,7 @@ import { Theme, ThemeControl, CustomColors, Colors, CustomTheme, CustomDarkColor
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | colors | [CustomColors](#customcolors) | 否 | 是 | 自定义浅色主题颜色资源。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| darkColors20+ | [CustomDarkColors](#customdarkcolors20) | 否 | 是 | 自定义深色主题颜色资源。 **说明**：如果未设置darkColors，则使用浅色模式下的colors配置，并且不会随着系统深浅色模式的切换而变化；如果对应颜色通过dark目录下的资源进行设置，则会优先使用dark目录下的资源。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| darkColors20+ | [CustomDarkColors](#customdarkcolors20) | 否 | 是 | 自定义深色主题颜色资源。 **说明**：如果未设置darkColors，颜色值将与浅色模式下的colors配置相同，并且不会随着颜色模式的变化而变化，除非该颜色是通过dark目录下的资源进行设置的。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 
 #### CustomColors
 
@@ -147,9 +147,9 @@ ThemeControl将自定义Theme应用于App组件内，实现App组件风格跟随
 
 #### [h2]setDefaultTheme
 
-setDefaultTheme(theme: [CustomTheme](#customtheme)): void
+setDefaultTheme(theme: CustomTheme): void
 
-将用户自定义Theme设置为应用级默认主题，以实现应用风格跟随Theme切换。若在页面中使用此接口设置应用级默认主题，需确保该接口在页面build前执行。若在UIAbility中使用此接口设置应用级默认主题，需确保该接口在onWindowStageCreate阶段里windowStage.[loadContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-windowstage#loadcontent9)接口调用完成的回调函数中执行。详细代码可参考[设置应用内组件自定义主题色](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/theme_skinning#设置应用内组件自定义主题色)。
+将用户自定义Theme设置应用级默认主题，以实现应用风格跟随Theme切换。若在页面中使用此接口设置应用级默认主题，需确保该接口在页面build前执行。若在UIAbility中使用此接口设置应用级默认主题，需确保该接口在onWindowStageCreate阶段里windowStage.[loadContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-windowstage#loadcontent9)接口调用完成的回调函数中执行。详细代码可参考[设置应用内组件自定义主题色](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/theme_skinning#设置应用内组件自定义主题色)。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -159,7 +159,7 @@ setDefaultTheme(theme: [CustomTheme](#customtheme)): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| theme | [CustomTheme](#customtheme) | 是 | 自定义主题风格对象。 |
+| theme | [CustomTheme](#customtheme) | 是 | 表示设置的自定义主题风格。 |
 
 #### 示例
 
@@ -171,9 +171,9 @@ setDefaultTheme(theme: [CustomTheme](#customtheme)): void
 import { CustomTheme, CustomColors, ThemeControl } from '@kit.ArkUI';
 // 自定义主题颜色
 class BlueColors implements CustomColors {
-  fontPrimary = '#FF707070'; // 一级文本字体颜色
-  backgroundPrimary = '#FF2787D9'; // 一级背景颜色
-  brand = '#FFEEAAFF'; // 品牌色
+  fontPrimary = "#FF707070";
+  backgroundPrimary = "#FF2787D9";
+  brand = "#FFEEAAFF"; // 品牌色
 }
 
 class PageCustomTheme implements CustomTheme {
@@ -184,9 +184,9 @@ class PageCustomTheme implements CustomTheme {
   }
 }
 // 创建实例
-const blueColorsTheme = new PageCustomTheme(new BlueColors());
-// 在页面build之前执行ThemeControl.setDefaultTheme，设置App默认样式风格为blueColorsTheme。
-ThemeControl.setDefaultTheme(blueColorsTheme);
+const BlueColorsTheme = new PageCustomTheme(new BlueColors());
+// 在页面build之前执行ThemeControl.setDefaultTheme，设置App默认样式风格为BlueColorsTheme。
+ThemeControl.setDefaultTheme(BlueColorsTheme);
 
 @Entry
 @Component
@@ -216,9 +216,9 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848250.png)
+ ![](./img/zh-cn_image_0000002701799294.png)
 
-![](./img/zh-cn_image_0000002686087679.png)
+![](./img/zh-cn_image_0000002731518581.png)
 
 #### [h2]示例2（设置组件主题色）
 
@@ -243,11 +243,11 @@ class AppColors implements CustomColors {
   }
 }
 
-@Entry({ routeName: 'text' })
+@Entry({ routeName: "text" })
 @Component
 struct TextPage {
   @State appColors: AppColors = new AppColors(
-    '#ff0000', '#0000ff', '#00ff00', '#ff00ff'
+    "#ff0000", "#0000ff", "#00ff00", "#ff00ff"
   );
   controller: TextClockController = new TextClockController();
   @State accumulateTime: number = 0;
@@ -279,4 +279,4 @@ struct TextPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685927851.png)
+ ![](./img/zh-cn_image_0000002701639384.png)

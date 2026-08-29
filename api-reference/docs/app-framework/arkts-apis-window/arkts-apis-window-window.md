@@ -2,8 +2,8 @@
 title: "Interface (Window)"
 upstream_id: "harmonyos-references/arkts-apis-window-window"
 catalog: "harmonyos-references"
-content_hash: "601b5739665b"
-synced_at: "2026-08-03T17:09:39.584544"
+content_hash: "5232fcfe5d8c"
+synced_at: "2026-08-29T18:12:37.265703"
 ---
 
 # Interface (Window)
@@ -48,7 +48,7 @@ showWindow(callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 
 示例：
 
@@ -126,7 +126,7 @@ showWindow(): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 
 示例：
 
@@ -185,7 +185,7 @@ showWindow(options: ShowWindowOptions): Promise<void>
 
 显示当前窗口或将已显示的应用主窗口的层级提升至顶部，支持传入参数来控制窗口显示的行为，使用Promise异步回调。
 
-仅支持除TYPE_DIALOG类型的窗口和模态子窗口（即使用setSubWindowModal启用了子窗的模态属性）之外的应用子窗口、应用主窗、全局悬浮窗以及系统窗口。
+仅支持除TYPE_DIALOG类型的窗口和模态子窗口（即使用setSubWindowModal启用了子窗口的模态属性）之外的应用子窗口、应用主窗口、全局悬浮窗口以及系统窗口。
 
 ![](./img/note_3.0-zh-cn.png) 调用该接口前，建议优先通过[loadContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-windowstage#loadcontent9)方法或者[setUIContent](#setuicontent9-1)方法完成页面加载。如果应用主窗口没有完成页面加载，直接调用该接口，界面会一直显示启动界面；如果系统窗口、应用子窗口和全局悬浮窗没有完成页面加载，直接调用该接口，窗口会处于前台，但不可见。
 
@@ -197,7 +197,7 @@ showWindow(options: ShowWindowOptions): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [ShowWindowOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#showwindowoptions20) | 是 | 显示子窗口或系统窗口时的参数。 |
+| options | [ShowWindowOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#showwindowoptions20) | 是 | 显示子窗口、应用主窗口、全局悬浮窗口或系统窗口时的参数。 |
 
 返回值：
 
@@ -211,9 +211,9 @@ showWindow(options: ShowWindowOptions): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 801 | Capability not supported. Function showWindow can not work correctly due to limited device capabilities. |
+| 801 | Capability not supported. Function showWindow cannot work correctly due to limited device capabilities. |
 | 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
-| 1300004 | Unauthorized operation. Possible cause: Invalid window type. Modal subwindow and dialog window can not set focusOnShow. |
+| 1300004 | Unauthorized operation. Possible cause: Invalid window type. Modal subwindow and dialog window cannot set focusOnShow. |
 | 1300016 | Parameter validation error. Possible cause: 1. The value of the parameter is out of the allowed range; 2. The length of the parameter exceeds the allowed length; 3. The parameter format is incorrect. |
 
 示例：
@@ -272,7 +272,7 @@ export default class EntryAbility extends UIAbility {
 
 destroyWindow(callback: AsyncCallback<void>): void
 
-销毁当前窗口，使用callback异步回调，支持系统窗口及应用子窗口，全局悬浮窗和模态窗。
+销毁当前窗口，使用callback异步回调，支持系统窗口、应用子窗口、全局悬浮窗口和模态窗口。
 
 系统能力： SystemCapability.WindowManager.WindowManager.Core
 
@@ -312,7 +312,7 @@ windowClass.destroyWindow((err) => {
 
 destroyWindow(): Promise<void>
 
-销毁当前窗口，使用Promise异步回调，支持系统窗口及应用子窗口，全局悬浮窗和模态窗。
+销毁当前窗口，使用Promise异步回调，支持系统窗口、应用子窗口、全局悬浮窗口和模态窗口。
 
 系统能力： SystemCapability.WindowManager.WindowManager.Core
 
@@ -379,7 +379,7 @@ moveWindowTo(x: number, y: number, callback: AsyncCallback<void>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: 1. The window is not created or destroyed. 2. The main windows in non-freeform window mode are not supported. |
 | 1300003 | This window manager service works abnormally. |
 
 示例：
@@ -439,7 +439,7 @@ moveWindowTo(x: number, y: number): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: 1. The window is not created or destroyed. 2. The main windows in non-freeform window mode are not supported. |
 | 1300003 | This window manager service works abnormally. |
 
 示例：
@@ -815,7 +815,7 @@ clientToGlobalDisplay(winX: number, winY: number): Position
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300010 | The operation in the current window status is invalid. |
 | 1300016 | Parameter error. Possible cause: 1. Invalid parameter range. |
 
@@ -861,7 +861,7 @@ globalDisplayToClient(globalDisplayX: number, globalDisplayY: number): Position
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300010 | The operation in the current window status is invalid. |
 | 1300016 | Parameter error. Possible cause: 1. Invalid parameter range. |
 
@@ -1157,7 +1157,7 @@ setWindowContainerColor(activeColor: string, inactiveColor: string): void
 
 系统能力： SystemCapability.Window.SessionManager
 
-设备行为差异： 在HarmonyOS 6.1.0之前，该接口在PC/2in1设备中可正常调用，在其他设备中返回801错误码；从HarmonyOS 6.1.0开始，该接口在2in1和Tablet设备中可正常调用，在其他设备中返回801错误码。
+设备行为差异： 在HarmonyOS 6.1.0之前，该接口在PC/2in1设备中可正常调用，在其他设备中返回801错误码；从HarmonyOS 6.1.0开始，该接口在PC/2in1和Tablet设备中可正常调用，在其他设备中返回801错误码。
 
 需要权限： ohos.permission.SET_WINDOW_TRANSPARENT
 
@@ -1177,7 +1177,7 @@ setWindowContainerColor(activeColor: string, inactiveColor: string): void
 | 201 | Permission verification failed. The application does not have the permission required to call the API. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
 | 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
-| 1300004 | Unauthorized operation. |
+| 1300004 | Unauthorized operation. Possible cause: Invalid window type. Only main windows are supported. |
 
 示例：
 
@@ -1250,8 +1250,8 @@ setWindowContainerModalColor(activeColor: string, inactiveColor: string): void
 | --- | --- |
 | 201 | Permission verification failed. The application does not have the permission required or a non-system application calls the API. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
-| 1300004 | Unauthorized operation. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
+| 1300004 | Unauthorized operation. Possible cause: Invalid window type. Only main windows are supported. |
 
 示例：
 
@@ -1259,6 +1259,7 @@ setWindowContainerModalColor(activeColor: string, inactiveColor: string): void
 // EntryAbility.ets
 import { UIAbility } from '@kit.AbilityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
+import { window } from '@kit.ArkUI';
 
 export default class EntryAbility extends UIAbility {
   onWindowStageCreate(windowStage: window.WindowStage) {
@@ -1599,7 +1600,7 @@ setTitleAndDockHoverShown(isTitleHoverShown?: boolean, isDockHoverShown?: boolea
 
 设置主窗口进入全屏模式时鼠标Hover到热区上是否显示窗口标题栏和Dock栏，使用Promise异步回调。
 
-系统能力：SystemCapability.Window.SessionManager
+系统能力： SystemCapability.Window.SessionManager
 
 设备行为差异： 该接口在支持并处于[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态的设备上可正常调用；在支持但不处于[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态的设备及不支持[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态的设备上调用返回801错误码。
 
@@ -1684,7 +1685,9 @@ setWindowLayoutFullScreen(isLayoutFullScreen: boolean): Promise<void>
 
 在HarmonyOS 5.0.2之前，该接口在所有设备中可正常调用。
 
-从HarmonyOS 5.0.2开始，该接口在支持并处于[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态的设备上调用不生效也不报错，切换到非[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态时生效；在支持但不处于[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态的设备及不支持[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态的设备上可正常调用。
+从HarmonyOS 5.0.2开始至HarmonyOS 5.1.1之前，该接口在支持并处于[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态的设备上调用不生效也不报错；在支持但不处于自由窗口状态的设备及不支持自由窗口状态的设备上可正常调用。
+
+从HarmonyOS 5.1.1开始，该接口在PC/2in1设备、其他设备的[电脑模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#pc-mode电脑模式)调用不生效也不报错；在其他设备和其他模式中可正常调用。
 
 参数：
 
@@ -1758,7 +1761,9 @@ setImmersiveModeEnabledState(enabled: boolean): void
 
 在HarmonyOS 5.0.2之前，该接口在所有设备中可正常调用。
 
-从HarmonyOS 5.0.2开始，该接口在支持并处于[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态的设备上调用不生效也不报错；在支持但不处于[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态的设备及不支持[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态的设备上可正常调用。
+从HarmonyOS 5.0.2开始至HarmonyOS 5.1.1之前，该接口在支持并处于[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态的设备上调用不生效也不报错；在支持但不处于自由窗口状态的设备及不支持自由窗口状态的设备上可正常调用。
+
+从HarmonyOS 5.1.1开始，该接口在PC/2in1设备、其他设备的[电脑模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#pc-mode电脑模式)调用不生效也不报错；在其他设备和其他模式中可正常调用。
 
 参数：
 
@@ -1798,7 +1803,7 @@ getImmersiveModeEnabledState(): boolean
 
 返回值与[setImmersiveModeEnabledState()](#setimmersivemodeenabledstate12)以及[setWindowLayoutFullScreen()](#setwindowlayoutfullscreen9)设置结果一致，若未调用上述两个接口则默认返回false。
 
-系统能力：SystemCapability.WindowManager.WindowManager.Core
+系统能力： SystemCapability.WindowManager.WindowManager.Core
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1920,7 +1925,7 @@ isImmersiveLayout(): boolean
 
 查询当前窗口是否处于[沉浸式布局](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/immersive-window-feature#沉浸式布局)。
 
-系统能力：SystemCapability.Window.SessionManager
+系统能力： SystemCapability.Window.SessionManager
 
 返回值：
 
@@ -1957,7 +1962,7 @@ setWindowDelayRaiseOnDrag(isEnabled: boolean): void
 
 调用此接口使能延迟抬升后，在跨窗拖拽场景，可拖拽组件所在窗口在鼠标左键按下时不会立即抬升，直到鼠标左键抬起。
 
-系统能力：SystemCapability.Window.SessionManager
+系统能力： SystemCapability.Window.SessionManager
 
 元服务API： 从API version 19开始，该接口支持在元服务中使用。
 
@@ -1975,7 +1980,7 @@ setWindowDelayRaiseOnDrag(isEnabled: boolean): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 801 | Capability not supported.function setWindowDelayRaiseOnDrag can not work correctly due to limited device capabilities. |
+| 801 | Capability not supported.function setWindowDelayRaiseOnDrag cannot work correctly due to limited device capabilities. |
 | 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 
 示例：
@@ -2021,7 +2026,7 @@ setDragKeyFramePolicy(keyFramePolicy: KeyFramePolicy): Promise<KeyFramePolicy>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300003 | This window manager service works abnormally. |
 | 1300004 | Unauthorized operation. |
 | 1300016 | Parameter error. Possible cause: 1. Invalid parameter range; 2. The parameter format is incorrect. |
@@ -2278,7 +2283,7 @@ export default class EntryAbility extends UIAbility {
       let systemBarProperties: window.SystemBarProperties = {
         statusBarColor: '#ff00ff',
         navigationBarColor: '#00ff00',
-        // 以下两个属性从API Version8开始支持
+        // 以下两个属性从API version 8开始支持
         statusBarContentColor: '#ffffff',
         navigationBarContentColor: '#00ffff'
       };
@@ -2506,7 +2511,7 @@ getWindowStateSnapshot(): Promise<string>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 801 | Capability not supported. Failed to call the api due to limited device capabilities. Possible cause: The device does not support the api itself. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. Possible cause: The device does not support the API itself. |
 | 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300003 | This window manager service works abnormally. Possible cause: The internal services of the window are not started normally. |
 
@@ -2517,7 +2522,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
   windowClass.getWindowStateSnapshot().then((data) => {
-    let jsonObj: object = JSON.parse(data);
+    let jsonObj: Record<string, Object> = JSON.parse(data);
     console.info(`Succeeded, data=${data}, isPcMode=${jsonObj["isPcMode"]}`);
   }).catch((err: BusinessError) => {
     console.error(`Failed. Cause code: ${err.code}, cancel message: ${err.message}`);
@@ -3526,7 +3531,7 @@ try {
 
 on(type: 'keyboardHeightChange', callback: Callback<number>): void
 
-开启固定态软键盘高度变化的监听。当软键盘从本窗口唤出且与窗口有重叠区域时，通知键盘高度变化。从API version 10开始，有关将软键盘设置为固定态或悬浮态的方法，请参见[changeFlag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethodengine#changeflag10)。
+开启固定态软键盘高度变化的监听。当软键盘从本窗口唤出且与窗口有重叠区域时，通知键盘高度变化。从API version 10开始，将软键盘设置为固定态或悬浮态的方法，请参见[changeFlag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethodengine#changeflag10)。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -3565,7 +3570,7 @@ try {
 
 off(type: 'keyboardHeightChange', callback?: Callback<number>): void
 
-关闭固定态软键盘高度变化的监听，使应用程序不再接收键盘高度变化的通知。从API version 10开始，有关将软键盘设置为固定态或悬浮态的方法，请参见[changeFlag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethodengine#changeflag10)。
+关闭固定态软键盘高度变化的监听，使应用不再接收键盘高度变化的通知。从API version 10开始，将软键盘设置为固定态或悬浮态的方法，请参见[changeFlag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethodengine#changeflag10)。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -3611,7 +3616,7 @@ on(type: 'keyboardWillShow', callback: Callback<KeyboardInfo>): void
 
 开启固定态软键盘即将开始显示的监听。此监听在固定态软键盘即将开始显示或软键盘由悬浮态切换为固定态时触发，仅对当前拉起或隐藏固定态软键盘的应用窗口生效。对于虚拟屏上应用拉起输入法键盘到主屏上，输入法键盘显隐通知只会给主屏上获焦窗口，而不是虚拟屏上应用窗口。
 
-改变软键盘为固定态或者悬浮态方法详细介绍请参见[changeFlag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethodengine#changeflag10)。
+将软键盘设置为固定态或悬浮态的方法请参见[changeFlag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethodengine#changeflag10)。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -3655,13 +3660,13 @@ try {
 
 off(type: 'keyboardWillShow', callback?: Callback<KeyboardInfo>): void
 
-关闭固定态软键盘即将开始显示的监听。改变输入法窗口为固定态或者悬浮态方法详细介绍请参见[changeFlag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethodengine#changeflag10)。
+关闭固定态软键盘即将开始显示的监听。将软键盘设置为固定态或悬浮态的方法请参见[changeFlag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethodengine#changeflag10)。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Window.SessionManager
 
-设备行为差异： 该接口在Phone设备、Tablet设备和PC/2in1设备上可正常调用，在其他设备中返回801错误码。
+设备行为差异： 该接口在Phone设备、Tablet设备和PC/2in1设备上可正常调用，在其他设备中不报错不生效。
 
 参数：
 
@@ -3704,7 +3709,7 @@ on(type: 'keyboardWillHide', callback: Callback<KeyboardInfo>): void
 
 开启固定态软键盘即将开始隐藏的监听。此监听在固定态软键盘即将开始隐藏或软键盘由固定态切换为悬浮态时触发，仅对当前拉起或隐藏固定态软键盘的应用窗口生效。对于虚拟屏上应用拉起输入法键盘到主屏上，输入法键盘显隐通知只会给主屏上获焦窗口，而不是虚拟屏上应用窗口。
 
-改变软键盘为固定态或者悬浮态方法详细介绍请参见[changeFlag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethodengine#changeflag10)。
+将软键盘设置为固定态或悬浮态的方法请参见[changeFlag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethodengine#changeflag10)。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -3754,7 +3759,7 @@ off(type: 'keyboardWillHide', callback?: Callback<KeyboardInfo>): void
 
 系统能力： SystemCapability.Window.SessionManager
 
-设备行为差异： 该接口在Phone设备、Tablet设备和PC/2in1设备上可正常调用，在其他设备中返回801错误码。
+设备行为差异： 该接口在Phone设备、Tablet设备和PC/2in1设备上可正常调用，在其他设备中不报错不生效。
 
 参数：
 
@@ -3797,7 +3802,7 @@ on(type: 'keyboardDidShow', callback: Callback<KeyboardInfo>): void
 
 开启固定态软键盘显示动画完成的监听。此监听在固定态软键盘显示动画完成或软键盘由悬浮态切换至固定态时触发，仅对当前拉起或隐藏固定态软键盘的应用窗口生效。对于虚拟屏上应用拉起输入法键盘到主屏上，输入法键盘显隐通知只会给主屏上获焦窗口，而不是虚拟屏上应用窗口。
 
-改变软键盘为固定态或者悬浮态方法详细介绍请参见[changeFlag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethodengine#changeflag10)。
+将软键盘设置为固定态或悬浮态的方法请参见[changeFlag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethodengine#changeflag10)。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -3839,7 +3844,7 @@ try {
 
 off(type: 'keyboardDidShow', callback?: Callback<KeyboardInfo>): void
 
-关闭固定态软键盘显示动画完成的监听。改变输入法窗口为固定态或者悬浮态方法详细介绍请参见[changeFlag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethodengine#changeflag10)。
+关闭固定态软键盘显示动画完成的监听。将软键盘设置为固定态或悬浮态的方法请参见[changeFlag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethodengine#changeflag10)。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -3887,7 +3892,7 @@ on(type: 'keyboardDidHide', callback: Callback<KeyboardInfo>): void
 
 开启固定态软键盘隐藏动画完成的监听。此监听在固定态软键盘隐藏动画完成或软键盘由固定态切换至悬浮态时触发，仅对当前拉起或隐藏固定态软键盘的应用窗口生效。对于虚拟屏上应用拉起输入法键盘到主屏上，输入法键盘显隐通知只会给主屏上获焦窗口，而不是虚拟屏上应用窗口。
 
-改变软键盘为固定态或者悬浮态方法详细介绍请参见[changeFlag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethodengine#changeflag10)。
+将软键盘设置为固定态或悬浮态的方法请参见[changeFlag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethodengine#changeflag10)。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -3929,7 +3934,7 @@ try {
 
 off(type: 'keyboardDidHide', callback?: Callback<KeyboardInfo>): void
 
-关闭固定态软键盘隐藏动画完成的监听。改变输入法窗口为固定态切换至悬浮态方法详细介绍请参见[changeFlag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethodengine#changeflag10)。
+关闭固定态软键盘隐藏动画完成的监听。将软键盘设置为固定态或悬浮态的方法请参见[changeFlag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethodengine#changeflag10)。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -4148,7 +4153,7 @@ on(type: 'screenshotAppEvent', callback: Callback<ScreenshotEventType>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300003 | This window manager service works abnormally. |
 
 示例：
@@ -4185,7 +4190,7 @@ off(type: 'screenshotAppEvent', callback?: Callback<ScreenshotEventType>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created. |
 | 1300003 | This window manager service works abnormally. |
 
 示例：
@@ -4257,7 +4262,7 @@ off(type: 'dialogTargetTouch', callback?: Callback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 监听事件，固定为'dialogTargetTouch'，即模态窗口所遮罩区域的点击事件。 |
+| type | string | 是 | 监听事件，固定为'dialogTargetTouch'，即模态窗口所遮罩区域的点击或触摸事件。 |
 | callback | Callback | 否 | 回调函数。当点击事件发生在模态窗口所遮罩区域的回调。若传入参数，则关闭该监听。若未传入参数，则关闭所有模态窗口所遮罩区域的点击事件的监听。 |
 
 错误码：
@@ -4389,7 +4394,7 @@ on(type: 'displayIdChange', callback: Callback<number>): void
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 
 示例：
 
@@ -4428,7 +4433,7 @@ off(type: 'displayIdChange', callback?: Callback<number>): void
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Incorrect parameter types; 2. Parameter verification failed. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created. |
 
 示例：
 
@@ -4478,7 +4483,7 @@ on(type: 'windowVisibilityChange', callback: Callback<boolean>): void
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300003 | This window manager service works abnormally. |
 
 示例：
@@ -4518,7 +4523,7 @@ off(type: 'windowVisibilityChange', callback?: Callback<boolean>): void
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Incorrect parameter types; 2. Parameter verification failed. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created. |
 | 1300003 | This window manager service works abnormally. |
 
 示例：
@@ -4545,9 +4550,9 @@ on(type: 'occlusionStateChanged', callback: Callback<OcclusionState>): void
 
 开启窗口可见性状态变化事件的监听，相较于[on('windowVisibilityChange')](#onwindowvisibilitychange11)接口，此接口回调函数参数可以判断部分可见状态。本接口返回的可见性与肉眼所见的可见性可能存在区别，如以下场景：
 
-- 非主窗口的阴影区域（可分别通过[setWindowShadowEnabled](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowshadowenabled20)和[setWindowShadowRadius](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowshadowradius17)设置是否显示阴影以及对应的阴影半径）被挡住也算遮挡，此时肉眼所见虽是完全可见，但实际返回的是部分可见。
+- 非主窗口的阴影区域（可分别通过[setWindowShadowEnabled](#setwindowshadowenabled20)和[setWindowShadowRadius](#setwindowshadowradius17)设置是否显示阴影以及对应的阴影半径）被挡住也算遮挡，此时肉眼所见虽是完全可见，但实际返回的是部分可见。
 - 上层窗口带有透明效果时（包括完全不透明之外的所有透明程度）不会遮挡下层窗口，此时下层窗口是可见的。
-- 窗口通过[setWindowMask](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowmask12)接口设置异形窗口蒙层时，不会影响窗口可见状态计算，窗口仍可见，即使掩码全部设置为0，窗口依然按照其原本矩形大小参与可见状态计算。
+- 窗口通过[setWindowMask](#setwindowmask12)接口设置异形窗口蒙层时，不会影响窗口可见状态计算，窗口仍可见，即使掩码全部设置为0，窗口依然按照其原本矩形大小参与可见状态计算。
 - 大多数处于动画效果下的窗口也不会遮挡住下层窗口，比如在手机设备上拖动智慧多窗悬浮窗时返回的下层窗口依然是可见的。
 
 系统能力： SystemCapability.Window.SessionManager
@@ -4566,7 +4571,7 @@ on(type: 'occlusionStateChanged', callback: Callback<OcclusionState>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300003 | This window manager service works abnormally. |
 
 示例：
@@ -4604,7 +4609,7 @@ off(type: 'occlusionStateChanged', callback?: Callback<OcclusionState>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created. |
 | 1300003 | This window manager service works abnormally. |
 
 示例：
@@ -4649,7 +4654,7 @@ on(type: 'frameMetricsMeasured', callback: Callback<FrameMetrics>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 
 示例：
 
@@ -4686,7 +4691,7 @@ off(type: 'frameMetricsMeasured', callback?: Callback<FrameMetrics>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created. |
 
 示例：
 
@@ -4733,7 +4738,7 @@ on(type: 'systemDensityChange', callback: Callback<number>): void
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 
 示例：
 
@@ -4778,7 +4783,7 @@ off(type: 'systemDensityChange', callback?: Callback<number>): void
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Incorrect parameter types; 2. Parameter verification failed. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created. |
 
 示例：
 
@@ -4813,7 +4818,7 @@ on(type: 'noInteractionDetected', timeout: number, callback: Callback<void>): vo
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 监听事件，固定为'noInteractionDetected'，即本窗口在指定超时时间内无交互的事件。 |
-| timeout | number | 是 | 指定本窗口在多长时间内无交互即回调，单位为秒(s)。该参数仅支持整数输入，负数和小数为非法参数。 |
+| timeout | number | 是 | 指定本窗口在多长时间内无交互即回调，单位为秒（s）。该参数仅支持整数输入，负数和小数为非法参数。 |
 | callback | Callback | 是 | 回调函数。当本窗口在指定超时时间内无交互事件时的回调。 |
 
 错误码：
@@ -4824,7 +4829,7 @@ on(type: 'noInteractionDetected', timeout: number, callback: Callback<void>): vo
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300003 | This window manager service works abnormally. |
 
 示例：
@@ -4864,7 +4869,7 @@ off(type: 'noInteractionDetected', callback?: Callback<void>): void
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Incorrect parameter types; 2. Parameter verification failed. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created. |
 | 1300003 | This window manager service works abnormally. |
 
 示例：
@@ -4989,7 +4994,7 @@ on(type: 'windowStatusDidChange', callback: Callback<WindowStatusType>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 
 示例：
 
@@ -5025,7 +5030,7 @@ off(type: 'windowStatusDidChange', callback?: Callback<WindowStatusType>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created. |
 
 示例：
 
@@ -5073,7 +5078,7 @@ setWindowGrayScale(grayScale: number): Promise<void>
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300003 | This window manager service works abnormally. |
 
 示例：
@@ -5128,7 +5133,7 @@ on(type: 'windowTitleButtonRectChange', callback: Callback<TitleButtonRect>): vo
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 
 示例：
 
@@ -5169,7 +5174,7 @@ off(type: 'windowTitleButtonRectChange', callback?: Callback<TitleButtonRect>): 
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Incorrect parameter types; 2. Parameter verification failed. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created. |
 
 示例：
 
@@ -5216,7 +5221,7 @@ on(type: 'windowRectChange', callback: Callback<RectChangeOptions>): void
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300003 | This window manager service works abnormally. |
 
 示例：
@@ -5256,7 +5261,7 @@ off(type: 'windowRectChange', callback?: Callback<RectChangeOptions>): void
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Incorrect parameter types; 2. Parameter verification failed. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created. |
 | 1300003 | This window manager service works abnormally. |
 
 示例：
@@ -5298,7 +5303,7 @@ on(type: 'rectChangeInGlobalDisplay', callback: Callback<RectChangeOptions>): vo
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300003 | This window manager service works abnormally. |
 
 示例：
@@ -5337,7 +5342,7 @@ off(type: 'rectChangeInGlobalDisplay', callback?: Callback<RectChangeOptions>): 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created. |
 | 1300003 | This window manager service works abnormally. |
 
 示例：
@@ -5392,8 +5397,8 @@ on(type: 'subWindowClose', callback: Callback<void>): void
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Incorrect parameter types; 2. Parameter verification failed. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
-| 1300004 | Unauthorized operation. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
+| 1300004 | Unauthorized operation. Possible cause: Invalid window type. Only subwindows are supported. |
 
 示例：
 
@@ -5434,8 +5439,8 @@ off(type: 'subWindowClose', callback?: Callback<void>): void
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Incorrect parameter types; 2. Parameter verification failed. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
-| 1300004 | Unauthorized operation. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created. |
+| 1300004 | Unauthorized operation. Possible cause: Invalid window type. Only subwindows are supported. |
 
 示例：
 
@@ -5487,8 +5492,8 @@ on(type: 'windowWillClose', callback: Callback<void, Promise<boolean>>): void
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Incorrect parameter types; 2. Parameter verification failed. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
-| 1300004 | Unauthorized operation. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
+| 1300004 | Unauthorized operation. Possible cause: Invalid window type. Not called from mainWindow or subWindow. |
 
 示例：
 
@@ -5550,8 +5555,8 @@ off(type: 'windowWillClose', callback?: Callback<void, Promise<boolean>>): void
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Incorrect parameter types; 2. Parameter verification failed. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
-| 1300004 | Unauthorized operation. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created. |
+| 1300004 | Unauthorized operation. Possible cause: Invalid window type. Not called from mainWindow or subWindow. |
 
 示例：
 
@@ -5610,7 +5615,7 @@ on(type: 'windowHighlightChange', callback: Callback<boolean>): void
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300003 | This window manager service works abnormally. |
 
 示例：
@@ -5650,7 +5655,7 @@ off(type: 'windowHighlightChange', callback?: Callback<boolean>): void
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created. |
 | 1300003 | This window manager service works abnormally. |
 
 示例：
@@ -5698,7 +5703,7 @@ on(type: 'rotationChange', callback: RotationChangeCallback<RotationChangeInfo, 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 监听事件，固定为'rotationChange'，即窗口旋转变化事件。 |
-| callback | RotationChangeCallback | 是 | 回调函数。返回窗口旋转信息[RotationChangeInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#rotationchangeinfo19)，应用返回当前窗口变化结果[RotationChangeResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#rotationchangeresult19)。 |
+| callback | [RotationChangeCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-t#rotationchangecallback19) | 是 | 回调函数。返回窗口旋转信息[RotationChangeInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#rotationchangeinfo19)，应用返回当前窗口变化结果[RotationChangeResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#rotationchangeresult19)。 |
 
 错误码：
 
@@ -5707,7 +5712,7 @@ on(type: 'rotationChange', callback: RotationChangeCallback<RotationChangeInfo, 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: 1. The window is not created or destroyed; 2. Internal task error. |
 | 1300003 | This window manager service works abnormally. |
 
 示例：
@@ -5816,7 +5821,7 @@ off(type: 'rotationChange', callback?: RotationChangeCallback<RotationChangeInfo
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: 1. The window is not created; 2. Internal task error. |
 | 1300003 | This window manager service works abnormally. |
 
 示例：
@@ -5839,7 +5844,7 @@ try {
 
 on(eventType: 'uiExtensionSecureLimitChange', callback: Callback<boolean>): void
 
-开启窗口内uiExtension安全限制变化事件的监听, 建议在窗口创建后立即监听。
+开启窗口内uiExtension安全限制变化事件的监听，建议在窗口创建后立即监听。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -5858,8 +5863,8 @@ on(eventType: 'uiExtensionSecureLimitChange', callback: Callback<boolean>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 801 | Capability not supported. Function on('uiExtensionSecureLimitChange') can not work correctly due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 801 | Capability not supported. Function on('uiExtensionSecureLimitChange') cannot work correctly due to limited device capabilities. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300003 | This window manager service works abnormally. |
 
 示例：
@@ -5897,8 +5902,8 @@ off(eventType: 'uiExtensionSecureLimitChange', callback?: Callback<boolean>): vo
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 801 | Capability not supported. Function off('uiExtensionSecureLimitChange') can not work correctly due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 801 | Capability not supported. Function off('uiExtensionSecureLimitChange') cannot work correctly due to limited device capabilities. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created. |
 | 1300003 | This window manager service works abnormally. |
 
 示例：
@@ -6010,7 +6015,7 @@ setWindowColorSpace(colorSpace:ColorSpace, callback: AsyncCallback<void>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | colorSpace | [ColorSpace](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#colorspace8) | 是 | 色域模式。 |
-| callback | AsyncCallback | 是 | 回调函数。 |
+| callback | AsyncCallback | 是 | 回调函数。当设置色域模式成功，err为undefined，否则为错误对象。 |
 
 错误码：
 
@@ -6214,9 +6219,9 @@ setWindowShadowEnabled(enable: boolean): Promise<void>
 | --- | --- |
 | 201 | Permission verification failed. The application does not have the permission required to call the API. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300003 | This window manager service works abnormally. |
-| 1300004 | Unauthorized operation. |
+| 1300004 | Unauthorized operation. Possible cause: Invalid window type. Only main windows are supported. |
 
 示例：
 
@@ -6261,24 +6266,24 @@ export default class EntryAbility extends UIAbility {
 
 setWindowBrightness(brightness: number, callback: AsyncCallback<void>): void
 
-主窗口设置窗口亮度。当窗口处于前台且获焦时，窗口亮度生效。使用callback异步回调。
+设置主窗口亮度。当窗口处于前台且获焦时，窗口亮度生效。使用callback异步回调。
 
 设置主窗口亮度只会影响当前设备内置屏的屏幕亮度，无法修改外接屏、[虚拟屏](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/display-terminology#虚拟屏)（如投屏所在的屏幕）的屏幕亮度（内置屏和外接屏具体请见[实体屏](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/display-terminology#实体屏)）。
 
-当接口入参为-1时，窗口亮度恢复为系统屏幕亮度（可以通过控制中心或快捷键调整）。
-
-当窗口退至后台时，窗口亮度失效，可以通过控制中心或快捷键调整。不建议连续调用或窗口退至后台时调用此接口，否则可能产生时序问题。
+不建议连续调用或窗口退至后台时调用此接口，否则可能产生时序问题。
 
 设备行为差异：
 
 - 针对TV设备：当前接口不生效也不报错。
-- 针对非2in1设备（不包含TV设备）： 在HarmonyOS 6.1.0之前，当前窗口的窗口亮度生效时，控制中心调整系统屏幕亮度不生效。
+- 针对非2in1设备（不包含TV设备）： 当接口入参为-1时，窗口亮度恢复为系统屏幕亮度（可以通过控制中心或快捷键调整）。
+- 当窗口退至后台时，窗口亮度失效，可以通过控制中心或快捷键调整。
+- 在HarmonyOS 6.1.0之前，当前窗口的窗口亮度生效时，控制中心调整系统屏幕亮度不生效。
 - 从HarmonyOS 6.1.0开始，当前窗口的窗口亮度生效时，控制中心可以调整系统屏幕亮度，同时会将当前窗口恢复为系统屏幕亮度。
 
 针对2in1设备：
 
 - 在HarmonyOS 5.0.2之前，窗口设置屏幕亮度生效时，控制中心或快捷键调整系统屏幕亮度不生效。
-- 从HarmonyOS 5.0.2开始，窗口亮度与系统屏幕亮度保持一致，可以通过本接口、控制中心或者快捷键设置系统屏幕亮度。
+- 从HarmonyOS 5.0.2开始，窗口亮度与系统屏幕亮度保持一致，可以通过本接口、控制中心或者快捷键设置系统屏幕亮度，但不支持通过本接口设置为-1来恢复系统屏幕亮度，传入-1时不生效也不报错，并且已设置的系统屏幕亮度在当前窗口退后台后也依然生效，不会恢复成设置前的屏幕亮度。
 
 系统能力： SystemCapability.WindowManager.WindowManager.Core
 
@@ -6349,24 +6354,24 @@ export default class EntryAbility extends UIAbility {
 
 setWindowBrightness(brightness: number): Promise<void>
 
-主窗口设置窗口亮度。当窗口处于前台且获焦时，窗口亮度生效。使用Promise异步回调。
+设置主窗口亮度。当窗口处于前台且获焦时，窗口亮度生效。使用Promise异步回调。
 
 设置主窗口亮度只会影响当前设备内置屏的屏幕亮度，无法修改外接屏、[虚拟屏](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/display-terminology#虚拟屏)（如投屏所在的屏幕）的屏幕亮度（内置屏和外接屏具体请见[实体屏](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/display-terminology#实体屏)）。
 
-当接口入参为-1时，窗口亮度恢复为系统屏幕亮度（可以通过控制中心或快捷键调整）。
-
-当窗口退至后台时，窗口亮度失效，可以通过控制中心或快捷键调整。不建议连续调用或窗口退至后台时调用此接口，否则可能产生时序问题。
+不建议连续调用或窗口退至后台时调用此接口，否则可能产生时序问题。
 
 设备行为差异：
 
 - 针对TV设备：当前接口不生效也不报错。
-- 针对非2in1设备（不包含TV设备）： 在HarmonyOS 6.1.0之前，当前窗口的窗口亮度生效时，控制中心调整系统屏幕亮度不生效。
+- 针对非2in1设备（不包含TV设备）： 当接口入参为-1时，窗口亮度恢复为系统屏幕亮度（可以通过控制中心或快捷键调整）。
+- 当窗口退至后台时，窗口亮度失效，可以通过控制中心或快捷键调整。
+- 在HarmonyOS 6.1.0之前，当前窗口的窗口亮度生效时，控制中心调整系统屏幕亮度不生效。
 - 从HarmonyOS 6.1.0开始，当前窗口的窗口亮度生效时，控制中心可以调整系统屏幕亮度，同时会将当前窗口恢复为系统屏幕亮度。
 
 针对2in1设备：
 
 - 在HarmonyOS 5.0.2之前，窗口设置屏幕亮度生效时，控制中心或快捷键调整系统屏幕亮度不生效。
-- 从HarmonyOS 5.0.2开始，窗口亮度与系统屏幕亮度保持一致，可以通过本接口、控制中心或者快捷键设置系统屏幕亮度。
+- 从HarmonyOS 5.0.2开始，窗口亮度与系统屏幕亮度保持一致，可以通过本接口、控制中心或者快捷键设置系统屏幕亮度，但不支持通过本接口设置为-1来恢复系统屏幕亮度，传入-1时不生效也不报错，并且已设置的系统屏幕亮度在当前窗口退后台后也依然生效，不会恢复成设置前的屏幕亮度。
 
 系统能力： SystemCapability.WindowManager.WindowManager.Core
 
@@ -6453,7 +6458,7 @@ setWindowFocusable(isFocusable: boolean, callback: AsyncCallback<void>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | isFocusable | boolean | 是 | 窗口是否可获焦。true表示支持；false表示不支持。设置为false时，该窗口不支持绑定输入法和接收键盘事件，如需处理输入逻辑，建议参考[不可获焦窗口中输入框与输入法交互指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-inputmethod-in-not-focusable-window)。 |
-| callback | AsyncCallback | 是 | 回调函数。 |
+| callback | AsyncCallback | 是 | 回调函数。当设置窗口可获焦属性成功，err为undefined，否则为错误对象。 |
 
 错误码：
 
@@ -6462,7 +6467,7 @@ setWindowFocusable(isFocusable: boolean, callback: AsyncCallback<void>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: 1. The window is not created or destroyed; 2. The screen of the window is not allowed to be focused. |
 | 1300003 | This window manager service works abnormally. |
 
 示例：
@@ -6516,7 +6521,7 @@ setWindowFocusable(isFocusable: boolean): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: 1. The window is not created or destroyed; 2. The screen of the window is not allowed to be focused. |
 | 1300003 | This window manager service works abnormally. |
 
 示例：
@@ -6554,7 +6559,7 @@ setWindowKeepScreenOn(isKeepScreenOn: boolean, callback: AsyncCallback<void>): v
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | isKeepScreenOn | boolean | 是 | 设置屏幕是否为常亮状态。true表示常亮；false表示不常亮。 |
-| callback | AsyncCallback | 是 | 回调函数。 |
+| callback | AsyncCallback | 是 | 回调函数。当设置屏幕常亮/不常亮成功，err为undefined，否则为错误对象。 |
 
 错误码：
 
@@ -6563,7 +6568,7 @@ setWindowKeepScreenOn(isKeepScreenOn: boolean, callback: AsyncCallback<void>): v
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300003 | This window manager service works abnormally. |
 
 示例：
@@ -6617,7 +6622,7 @@ setWindowKeepScreenOn(isKeepScreenOn: boolean): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300003 | This window manager service works abnormally. |
 
 示例：
@@ -6661,7 +6666,7 @@ setWindowPrivacyMode(isPrivacyMode: boolean, callback: AsyncCallback<void>): voi
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | isPrivacyMode | boolean | 是 | 窗口是否为隐私模式。true表示为隐私模式，false表示为非隐私模式。 |
-| callback | AsyncCallback | 是 | 回调函数。 |
+| callback | AsyncCallback | 是 | 回调函数。当设置隐私/非隐私模式成功，err为undefined，否则为错误对象。 |
 
 错误码：
 
@@ -7046,7 +7051,7 @@ setAspectRatio(ratio: number): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible cause: Invalid parameter range. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300004 | Unauthorized operation. Possible cause: Invalid window type. Only main windows are supported. |
 
 示例：
@@ -7111,7 +7116,7 @@ setAspectRatio(ratio: number, callback: AsyncCallback<void>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible cause: Invalid parameter range. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300004 | Unauthorized operation. Possible cause: Invalid window type. Only main windows are supported. |
 
 示例：
@@ -7184,7 +7189,7 @@ setContentAspectRatio(ratio: number, isPersistent?: boolean, needUpdateRect?: bo
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300003 | This window manager service works abnormally. |
 | 1300004 | Unauthorized operation. Possible cause: Invalid window type. Only main windows are supported. |
 | 1300016 | Parameter error. Possible cause: 1. Invalid parameter range. 2. Invalid parameter length. |
@@ -7240,8 +7245,8 @@ resetAspectRatio(): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 1300002 | This window state is abnormal. |
-| 1300004 | Unauthorized operation. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
+| 1300004 | Unauthorized operation. Possible cause: Invalid window type. Only main windows are supported. |
 
 示例：
 
@@ -7298,8 +7303,8 @@ resetAspectRatio(callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 1300002 | This window state is abnormal. |
-| 1300004 | Unauthorized operation. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
+| 1300004 | Unauthorized operation. Possible cause: Invalid window type. Only main windows are supported. |
 
 示例：
 
@@ -7664,7 +7669,7 @@ setResizeByDragEnabled(enable: boolean, callback: AsyncCallback<void>): void
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: 1. The window is not created or destroyed. 2. Invalid window type. Only main windows and child windows with decorations are supported. |
 | 1300003 | This window manager service works abnormally. |
 
 示例：
@@ -7718,7 +7723,7 @@ setResizeByDragEnabled(enable: boolean): Promise<void>
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: 1. The window is not created or destroyed. 2. Invalid window type. Only main windows and child windows with decorations are supported. |
 | 1300003 | This window manager service works abnormally. |
 
 示例：
@@ -8095,7 +8100,7 @@ getWindowLimits(): WindowLimits
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 
 示例：
 
@@ -8130,7 +8135,7 @@ getWindowLimitsVP(): WindowLimits
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 
 示例：
 
@@ -8181,7 +8186,7 @@ setWindowLimits(windowLimits: WindowLimits): Promise<WindowLimits>
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300003 | This window manager service works abnormally. |
 | 1300004 | Unauthorized operation. |
 
@@ -8255,7 +8260,7 @@ setWindowLimits(windowLimits: WindowLimits, isForcible: boolean): Promise<Window
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300003 | This window manager service works abnormally. |
 | 1300004 | Unauthorized operation. |
 
@@ -8289,7 +8294,7 @@ setWindowMask(windowMask: Array<Array<number>>): Promise<void>
 
 当异形窗口大小发生变化时，实际的显示内容为掩码大小和窗口大小的交集部分。
 
-异形窗口蒙层设置不会影响窗口可见状态(可通过[on('windowVisibilityChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#onwindowvisibilitychange11)或[on('occlusionStateChanged')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#onocclusionstatechanged22)监听）计算。即使掩码全部设置为0，窗口仍可见，窗口依然按照其原本矩形大小参与可见状态计算。
+异形窗口蒙层设置不会影响窗口可见状态（可通过[on('windowVisibilityChange')](#onwindowvisibilitychange11)或[on('occlusionStateChanged')](#onocclusionstatechanged22)监听）计算。即使掩码全部设置为0，窗口仍可见，窗口依然按照其原本矩形大小参与可见状态计算。
 
 该接口只在多个线程操作同一个窗口时可能返回错误码1300002。窗口被销毁场景下错误码返回401。
 
@@ -8354,7 +8359,7 @@ setWindowMaskWithAlpha(windowMask: Uint8Array, maskWidth: number, maskHeight: nu
 
 当异形窗口大小发生变化时，实际的显示内容为掩码大小和窗口大小的交集部分。
 
-异形窗口蒙层设置不会影响窗口可见状态（可通过[on('windowVisibilityChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#onwindowvisibilitychange11)或[on('occlusionStateChanged')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#onocclusionstatechanged22)监听）计算。即使掩码全部设置为0，窗口仍可见，窗口依然按照其原本矩形大小参与可见状态计算。
+异形窗口蒙层设置不会影响窗口可见状态（可通过[on('windowVisibilityChange')](#onwindowvisibilitychange11)或[on('occlusionStateChanged')](#onocclusionstatechanged22)监听）计算。即使掩码全部设置为0，窗口仍可见，窗口依然按照其原本矩形大小参与可见状态计算。
 
 系统能力： SystemCapability.Window.SessionManager
 
@@ -8506,7 +8511,7 @@ setTouchableAreas(rects: Array<Rect>): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission verification failed. The application does not have the permission required or a non-system application calls the API. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300003 | This window manager service works abnormally. |
 | 1300016 | Parameter error. Possible cause: Invalid parameter range. |
 
@@ -8578,6 +8583,8 @@ setWindowDecorVisible(isVisible: boolean): void
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Window.SessionManager
+
+设备行为差异： 该接口在支持并处于[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态的设备上可正常调用；在支持但不处于[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态的设备调用不报错不生效，切换到[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态后生效。在不支持[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态的设备上调用不报错不生效。
 
 参数：
 
@@ -8726,7 +8733,7 @@ try {
 
 setWindowTitleMoveEnabled(enabled: boolean): void
 
-禁止/使能主窗或子窗标题栏默认移动窗口和双击最大化的功能，当禁用标题栏默认移动窗口和双击最大化的功能时，可使用[startMoving()](#startmoving14)在应用热区中发起拖拽移动，使用[maximize()](#maximize12)实现最大化功能。如果使用Stage模型，该接口需要在[loadContent()](#loadcontent9)或[setUIContent()](#setuicontent9)调用生效后使用。
+禁止/使能主窗或子窗标题栏默认移动窗口和双击最大化的功能，当禁用该功能时，可使用[startMoving()](#startmoving14)在应用热区中发起拖拽移动，使用[maximize()](#maximize12)实现最大化功能。如果使用Stage模型，该接口需要在[loadContent()](#loadcontent9)或[setUIContent()](#setuicontent9)调用生效后使用。
 
 元服务API： 从API version 14开始，该接口支持在元服务中使用。
 
@@ -8749,7 +8756,7 @@ setWindowTitleMoveEnabled(enabled: boolean): void
 | 401 | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
 | 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
-| 1300004 | Unauthorized operation. |
+| 1300004 | Unauthorized operation. Possible cause: Invalid window type. Only main windows and subwindows are supported. |
 
 示例：
 
@@ -8808,9 +8815,9 @@ setSubWindowModal(isModal: boolean): Promise<void>
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300003 | This window manager service works abnormally. 适用版本：20+ |
-| 1300004 | Unauthorized operation. |
+| 1300004 | Unauthorized operation. Possible cause: Invalid window type. Only subwindows are supported. |
 
 示例：
 
@@ -9069,7 +9076,7 @@ getDecorButtonStyle(): DecorButtonStyle
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
 | 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300003 | This window manager service works abnormally. |
-| 1300004 | Unauthorized operation. |
+| 1300004 | Unauthorized operation. Possible cause: Invalid window type. Only main windows and subwindows are supported. |
 
 示例：
 
@@ -9128,7 +9135,7 @@ windowClass.setUIContent('pages/WindowPage').then(() => {
 
 getTitleButtonRect(): TitleButtonRect
 
-获取主窗口或启用标题栏的子窗口的标题栏上的最小化、最大化、关闭按钮矩形区域。
+对存在标题栏和三键区的窗口形态生效，获取主窗口或启用标题栏的子窗口的标题栏上的最小化、最大化、关闭按钮矩形区域。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -9205,7 +9212,7 @@ getWindowStatus(): WindowStatusType
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 
 示例：
 
@@ -9363,7 +9370,7 @@ createSubWindowWithOptions(name: string, options: SubWindowOptions): Promise<Win
 | --- | --- |
 | 401 | Parameter error. Possible cause: Incorrect parameter types. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. Possible cause: 1. The window is not created or destroyed; 2. Internal task error; 3. The subWindow has been created and can not be created again. 4. It is not allowed to create non-secure window when secure extension exists. |
+| 1300002 | This window state is abnormal. Possible cause: 1. The window is not created or destroyed; 2. Internal task error; 3. The subWindow has been created and cannot be created again. 4. It is not allowed to create non-secure window when secure extension exists. |
 | 1300003 | This window manager service works abnormally. |
 | 1300004 | Unauthorized operation. Possible cause: 1. Invalid window type. Only main windows, subwindows, and floating windows are supported; 2. When SubWindowOptions.zLevelAboveParentLoosened is true, only main windows are supported. |
 
@@ -9485,7 +9492,7 @@ getParentWindow(): Window
 | --- | --- |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
 | 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
-| 1300004 | Unauthorized operation. |
+| 1300004 | Unauthorized operation. Possible cause: Invalid window type. Not called from subWindow. |
 | 1300009 | The parent window is invalid. |
 
 示例：
@@ -9532,7 +9539,7 @@ setWindowTitleButtonVisible(isMaximizeButtonVisible: boolean, isMinimizeButtonVi
 | 401 | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
 | 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
-| 1300004 | Unauthorized operation. |
+| 1300004 | Unauthorized operation. Possible cause: Only main windows and subwindows with subwindowoptions.zlevelaboveparentloosened set to true are supported. |
 
 示例：
 
@@ -9560,7 +9567,7 @@ export default class EntryAbility extends UIAbility {
           mainWindow.setWindowTitleButtonVisible(false, false, false);
         }
       ).catch((err: BusinessError) => {
-          if(err.code){
+          if (err.code) {
             console.error(`Failed to obtain the main window. Cause code: ${err.code}, message: ${err.message}`);
           }
       });
@@ -9648,14 +9655,14 @@ struct Index {
     .height('100%')
     .width('100%')
     .onKeyEvent((event) => {
-      if(event) {
-        if(event.type === KeyType.Down) {
+      if (event) {
+        if (event.type === KeyType.Down) {
           keyUpEventAry = [];
         }
-        if(event.type === KeyType.Up) {
+        if (event.type === KeyType.Up) {
           keyUpEventAry.push(event.keyText);
           // 自定义快捷键 ctrl+T 执行主窗口置顶、取消置顶的操作
-          if(windowClass && keyUpEventAry.includes('KEYCODE_CTRL_LEFT') && keyUpEventAry.includes('KEYCODE_T')) {
+          if (windowClass && keyUpEventAry.includes('KEYCODE_CTRL_LEFT') && keyUpEventAry.includes('KEYCODE_T')) {
             let isWindowTopmost: boolean = false;
             windowClass.setWindowTopmost(isWindowTopmost);
           }
@@ -9690,10 +9697,10 @@ raiseToAppTop(): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: 1. The window is not created or destroyed; 2. The window is not shown. |
 | 1300003 | This window manager service works abnormally. |
-| 1300004 | Unauthorized operation. |
-| 1300009 | The parent window is invalid. |
+| 1300004 | Unauthorized operation. Possible cause: Invalid window type. Only subwindows are supported. |
+| 1300009 | The parent window is invalid. Possible cause: The parent window does not exist or has been destroyed. |
 
 示例：
 
@@ -9731,7 +9738,7 @@ setRaiseByClickEnabled(enable: boolean): Promise<void>
 
 禁止/使能子窗点击抬升功能。使用Promise异步回调。
 
-通常来说，点击一个子窗口，会将该子窗口显示抬升到应用内同一个父窗口下同类型子窗口的最上方，如果设置为false，那么点击子窗口的时候，不会将该子窗口进行抬升，而是保持不变。
+默认情况下，点击一个子窗口，会将该子窗口显示到最上层，如果设置为false，那么点击子窗口的时候，不会将该子窗口显示到最上层，而是保持原有层级不变。
 
 使用该接口需要先创建子窗口，并确保该子窗口调用[showWindow()](#showwindow9)并执行完毕。
 
@@ -9757,10 +9764,10 @@ setRaiseByClickEnabled(enable: boolean): Promise<void>
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: 1. The window is not created or destroyed; 2. The window is not shown. |
 | 1300003 | This window manager service works abnormally. |
-| 1300004 | Unauthorized operation. |
-| 1300009 | The parent window is invalid. |
+| 1300004 | Unauthorized operation. Possible cause: Invalid window type. Only subwindows are supported. |
+| 1300009 | The parent window is invalid. Possible cause: The parent window does not exist or has been destroyed. |
 
 示例：
 
@@ -9919,7 +9926,7 @@ setDialogBackGestureEnabled(enabled: boolean): Promise<void>
 
 设置模态窗口是否响应手势返回事件，非模态窗口调用返回1300004错误码。
 
-系统能力：SystemCapability.Window.SessionManager
+系统能力： SystemCapability.Window.SessionManager
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -9943,9 +9950,9 @@ setDialogBackGestureEnabled(enabled: boolean): Promise<void>
 | --- | --- |
 | 401 | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300003 | This window manager service works abnormally. |
-| 1300004 | Unauthorized operation. |
+| 1300004 | Unauthorized operation. Possible cause: Invalid window type. Only dialog windows are supported. |
 
 示例：
 
@@ -10016,7 +10023,7 @@ struct Index {
 
 enableDrag(enable: boolean): Promise<void>
 
-使能/禁止拖拽窗口，仅对系统窗口、应用子窗口、全局悬浮窗和模态窗口生效。使用Promise异步回调。
+使能/禁止拖拽窗口，仅对系统窗口、应用子窗口、全局悬浮窗口和模态窗口生效。使用Promise异步回调。
 
 使能后，将允许通过鼠标操作或触摸对窗口进行拉伸操作。
 
@@ -10041,9 +10048,9 @@ enableDrag(enable: boolean): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300003 | This window manager service works abnormally. |
-| 1300004 | Unauthorized operation. |
+| 1300004 | Unauthorized operation. Possible cause: 1.Invalid window type. Only system windows, application child windows, global floating windows and modal windows are supported. |
 
 示例：
 
@@ -10067,7 +10074,7 @@ startMoving(): Promise<void>
 
 开始移动窗口，使用Promise异步回调。
 
-[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态下，对系统窗口、应用主窗口、应用子窗口、全局悬浮窗和模态窗口生效。非自由窗口状态下，仅对系统窗口、应用子窗口、全局悬浮窗和模态窗口生效，应用主窗口调用该接口返回801或1300004错误码。
+[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态下，对系统窗口、应用主窗口、应用子窗口、全局悬浮窗口和模态窗口生效。非自由窗口状态下，仅对系统窗口、应用子窗口、全局悬浮窗口和模态窗口生效，应用主窗口调用该接口返回801或1300004错误码。
 
 仅在[onTouch](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-touch#ontouch)事件（其中，事件类型必须为TouchType.Down）的回调方法中调用此接口才会有移动效果，成功调用此接口后，窗口将跟随鼠标或触摸点移动。
 
@@ -10186,9 +10193,9 @@ startMoving(offsetX: number, offsetY: number): Promise<void>
 | 401 | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
 | 1300001 | Repeated operation. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: 1. The window is not created or destroyed. 2. Internal task error. |
 | 1300003 | This window manager service works abnormally. |
-| 1300004 | Unauthorized operation. |
+| 1300004 | Unauthorized operation. Possible cause: Invalid window type. |
 
 示例：
 
@@ -10262,7 +10269,7 @@ stopMoving(): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: 1. The window is not created or destroyed. 2. Internal task error. |
 | 1300003 | This window manager service works abnormally. |
 | 1300004 | Unauthorized operation. |
 
@@ -10471,7 +10478,7 @@ setSeparationTouchEnabled(enabled: boolean): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 801 | Capability not supported. Function can not work because the current device does not support this ability. |
+| 801 | Capability not supported. Function cannot work because the current device does not support this ability. |
 | 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300003 | This window manager service works abnormally. Possible cause: Internal IPC error. |
 
@@ -10515,7 +10522,7 @@ isSeparationTouchEnabled():boolean
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 801 | Capability not supported. Function can not work because the current device does not support this ability. |
+| 801 | Capability not supported. Function cannot work because the current device does not support this ability. |
 | 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300003 | This window manager service works abnormally. |
 
@@ -10564,7 +10571,7 @@ setReceiveDragEventEnabled(enabled: boolean): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 801 | Capability not supported. Function can not work because the current device does not support this ability. |
+| 801 | Capability not supported. Function cannot work because the current device does not support this ability. |
 | 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300003 | This window manager service works abnormally. Possible cause: Internal IPC error. |
 
@@ -10608,7 +10615,7 @@ isReceiveDragEventEnabled():boolean
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 801 | Capability not supported. Function can not work because the current device does not support this ability. |
+| 801 | Capability not supported. Function cannot work because the current device does not support this ability. |
 | 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300003 | This window manager service works abnormally. |
 
@@ -10678,7 +10685,7 @@ setWindowCornerRadius(cornerRadius: number): Promise<void>
 
 在调用此接口之前调用[getWindowCornerRadius()](#getwindowcornerradius17)接口可以获得窗口默认圆角半径值。
 
-系统能力：SystemCapability.Window.SessionManager
+系统能力： SystemCapability.Window.SessionManager
 
 设备行为差异：
 
@@ -10710,7 +10717,7 @@ setWindowCornerRadius(cornerRadius: number): Promise<void>
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
 | 1300002 | This window state is abnormal. Possible cause: 1. The window is not created or destroyed; 2. Internal task error. |
 | 1300003 | This window manager service works abnormally. |
-| 1300004 | Unauthorized operation. |
+| 1300004 | Unauthorized operation. Possible cause: Invalid window type. Only subwindows and float windows are supported. |
 
 示例：
 
@@ -10735,7 +10742,7 @@ getWindowCornerRadius(): number
 
 该接口用于获取子窗或全局悬浮窗的圆角半径值，在未调用[setWindowCornerRadius()](#setwindowcornerradius17)接口设置窗口圆角半径值时，调用此接口可获取窗口默认圆角半径值。
 
-系统能力：SystemCapability.Window.SessionManager
+系统能力： SystemCapability.Window.SessionManager
 
 设备行为差异：
 
@@ -10777,7 +10784,7 @@ setExclusivelyHighlighted(exclusivelyHighlighted: boolean): Promise<void>
 
 设置窗口独占激活态属性。独占激活态表示窗口获焦时，会导致当前父子窗口链中处于激活态的其他窗口失去激活态。使用Promise异步回调。
 
-此接口对主窗、模态窗不生效。
+此接口对主窗、模态窗和配置了模态属性的子窗不生效。
 
 系统能力： SystemCapability.Window.SessionManager
 
@@ -10805,7 +10812,7 @@ setExclusivelyHighlighted(exclusivelyHighlighted: boolean): Promise<void>
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
 | 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300003 | This window manager service works abnormally. |
-| 1300004 | Unauthorized operation. |
+| 1300004 | Unauthorized operation. Possible cause: Invalid window type. Main window, dialog window and the subwindow with modal attributes are not supported. |
 
 示例：
 
@@ -10850,7 +10857,7 @@ isWindowHighlighted(): boolean
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
-| 1300002 | This window state is abnormal Possible cause: The window is not created or destroyed. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 
 示例：
 
@@ -10905,9 +10912,9 @@ setFollowParentMultiScreenPolicy(enabled: boolean): Promise<void>
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
 | 801 | Capability not supported.Function setFollowParentMultiScreenPolicy can not work correctly due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300003 | This window manager service works abnormally. |
-| 1300004 | Unauthorized operation. |
+| 1300004 | Unauthorized operation. Possible cause: Invalid window type. Only subwindows are supported. |
 
 示例：
 
@@ -11286,7 +11293,7 @@ setSubWindowZLevel(zLevel: number): Promise<void>
 | 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300003 | This window manager service works abnormally. |
 | 1300004 | Unauthorized operation. Possible cause: Invalid window type. Only non-modal subwindows are supported. |
-| 1300009 | The parent window is invalid. |
+| 1300009 | The parent window is invalid. Possible cause: The parent window does not exist or has been destroyed. |
 
 示例：
 
@@ -11325,7 +11332,7 @@ export default class EntryAbility extends UIAbility {
 
 getSubWindowZLevel(): number
 
-获取当前子窗口层级级别。不支持主窗、系统窗调用。
+获取当前子窗口层级级别。
 
 非[独立子窗](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-type-overview#辅助窗口)支持调用。[独立子窗](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-type-overview#辅助窗口)调用该接口不生效也不报错，返回默认值0。
 
@@ -11348,8 +11355,8 @@ getSubWindowZLevel(): number
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 801 | Capability not supported. Function getSubWindowZLevel can not work correctly due to limited device capabilities. |
-| 1300002 | This window state is abnormal. |
-| 1300004 | Unauthorized operation. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
+| 1300004 | Unauthorized operation. Possible cause: Invalid window type. Only subwindows are supported. |
 
 示例：
 
@@ -11402,7 +11409,7 @@ isInFreeWindowMode(): boolean
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300003 | This window manager service works abnormally. |
 
 示例：
@@ -11435,7 +11442,7 @@ on(type: 'freeWindowModeChange', callback: Callback<boolean>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | 1300003 | This window manager service works abnormally. |
 
 示例：
@@ -11473,7 +11480,7 @@ off(type: 'freeWindowModeChange', callback?: Callback<boolean>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 1300002 | This window state is abnormal. |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created. |
 | 1300003 | This window manager service works abnormally. |
 
 示例：
@@ -11494,6 +11501,139 @@ try {
 }
 ```
 
+#### isInWindowPostureMode
+
+isInWindowPostureMode(mode: WindowPostureMode): boolean
+
+查询当前窗口是否处于指定的窗口姿态模式。
+
+系统能力： SystemCapability.Window.SessionManager
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| mode | [WindowPostureMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#windowposturemode) | 是 | 窗口姿态模式。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| boolean | 当前窗口是否处于指定的窗口姿态模式。true表示当前窗口处于指定的窗口姿态模式，false表示不处于。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[窗口错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-window)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
+| 1300003 | This window manager service works abnormally. Possible cause: The internal services of the window are not started normally. |
+| 1300016 | Parameter error. Possible cause: Invalid parameter range. |
+
+示例：
+
+```
+try {
+  let isInDesktopMode: boolean = windowClass.isInWindowPostureMode(window.WindowPostureMode.DESKTOP_MODE);
+  console.info(`isInDesktopMode: ${isInDesktopMode}`);
+} catch (exception) {
+  console.error(`Failed to check window posture mode. Cause code: ${exception.code}, message: ${exception.message}`);
+}
+```
+
+#### onWindowPostureModeChange
+
+onWindowPostureModeChange(mode: WindowPostureMode, callback: Callback<boolean>): void
+
+开启窗口所处指定姿态模式变化的监听。
+
+系统能力： SystemCapability.Window.SessionManager
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| mode | [WindowPostureMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#windowposturemode) | 是 | 监听的窗口姿态模式。 |
+| callback | Callback | 是 | 回调函数。当窗口所处指定窗口姿态模式变化时触发，返回当前窗口是否处于指定的窗口姿态模式，true表示处于，false表示不处于。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[窗口错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-window)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
+| 1300003 | This window manager service works abnormally. Possible cause: The internal services of the window are not started normally. |
+| 1300016 | Parameter error. Possible cause: Invalid parameter range. |
+
+示例：
+
+```
+try {
+  windowClass.onWindowPostureModeChange(window.WindowPostureMode.DESKTOP_MODE, (isInDesktopMode: boolean) => {
+    console.info(`Succeeded in enabling the listener for window posture mode changes. isInDesktopMode: ${isInDesktopMode}`);
+  });
+} catch (exception) {
+  console.error(`Failed to enable the listener for window posture mode changes. Cause code: ${exception.code}, message: ${exception.message}`);
+}
+```
+
+#### offWindowPostureModeChange
+
+offWindowPostureModeChange(mode: WindowPostureMode, callback?: Callback<boolean>): void
+
+关闭窗口所处指定姿态模式变化的监听。
+
+系统能力： SystemCapability.Window.SessionManager
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| mode | [WindowPostureMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#windowposturemode) | 是 | 监听的窗口姿态模式。 |
+| callback | Callback | 否 | 回调函数。返回当前窗口是否处于指定的窗口姿态模式。如果传入参数，则关闭该监听；如果不传入参数，则关闭所有注册到指定窗口姿态模式的监听。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[窗口错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-window)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 1300002 | This window state is abnormal. Possible cause: The window is not created or destroyed. |
+| 1300003 | This window manager service works abnormally. Possible cause: The internal services of the window are not started normally. |
+| 1300016 | Parameter error. Possible cause: Invalid parameter range. |
+
+示例：
+
+```
+const callback = (isInDesktopMode: boolean) => {
+  // ...
+}
+try {
+  // 通过on接口开启监听
+  windowClass.onWindowPostureModeChange(window.WindowPostureMode.DESKTOP_MODE, callback);
+  // 关闭指定callback的监听
+  windowClass.offWindowPostureModeChange(window.WindowPostureMode.DESKTOP_MODE, callback);
+  // 如果通过on开启多个callback进行监听，同时关闭所有监听
+  windowClass.offWindowPostureModeChange(window.WindowPostureMode.DESKTOP_MODE);
+} catch (exception) {
+  console.error(`Failed to disable the listener for window posture mode change. Cause code: ${exception.code}, message: ${exception.message}`);
+}
+```
+
 #### convertOrientationAndRotation23+
 
 convertOrientationAndRotation(from: RotationInfoType, to: RotationInfoType, value: number): number
@@ -11504,7 +11644,7 @@ convertOrientationAndRotation(from: RotationInfoType, to: RotationInfoType, valu
 
 ![](./img/note_3.0-zh-cn.png) 示意图和表格展示了直板机窗口方向、屏幕方向和屏幕角度的关系。
 
-![](./img/zh-cn_image_0000002659599864.png)
+![](./img/zh-cn_image_0000002701639450.png)
 
 | 屏幕角度 | 屏幕方向 | 窗口方向 |
 | --- | --- | --- |
@@ -11610,7 +11750,7 @@ export default class EntryAbility extends UIAbility {
       let systemBarProperties: window.SystemBarProperties = {
         statusBarColor: '#ff00ff',
         navigationBarColor: '#00ff00',
-        // 以下两个属性从API Version8开始支持
+        // 以下两个属性从API version 8开始支持
         statusBarContentColor: '#ffffff',
         navigationBarContentColor: '#00ffff'
       };
@@ -11723,7 +11863,9 @@ setWindowLayoutFullScreen(isLayoutFullScreen: boolean, callback: AsyncCallback<v
 
 在HarmonyOS 5.0.2之前，该接口在所有设备中可正常调用。
 
-从HarmonyOS 5.0.2开始，该接口在支持并处于[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态的设备上调用不生效也不报错；在支持但不处于[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态的设备及不支持[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态的设备上可正常调用。
+从HarmonyOS 5.0.2开始至HarmonyOS 5.1.1之前，该接口在支持并处于[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态的设备上调用不生效也不报错；在支持但不处于自由窗口状态的设备及不支持自由窗口状态的设备上可正常调用。
+
+从HarmonyOS 5.1.1开始，该接口在PC/2in1设备、其他设备的[电脑模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#pc-mode电脑模式)调用不生效也不报错；在其他设备和其他模式中可正常调用。
 
 参数：
 
@@ -12596,7 +12738,7 @@ export default class EntryAbility extends UIAbility {
       let systemBarProperties: window.SystemBarProperties = {
         statusBarColor: '#ff00ff',
         navigationBarColor: '#00ff00',
-        // 以下两个属性从API Version8开始支持
+        // 以下两个属性从API version 8开始支持
         statusBarContentColor: '#ffffff',
         navigationBarContentColor: '#00ffff'
       };
@@ -12660,7 +12802,7 @@ export default class EntryAbility extends UIAbility {
       let systemBarProperties: window.SystemBarProperties = {
         statusBarColor: '#ff00ff',
         navigationBarColor: '#00ff00',
-        // 以下两个属性从API Version8开始支持
+        // 以下两个属性从API version 8开始支持
         statusBarContentColor: '#ffffff',
         navigationBarContentColor: '#00ffff'
       };

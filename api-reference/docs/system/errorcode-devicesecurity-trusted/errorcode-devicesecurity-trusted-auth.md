@@ -2,8 +2,8 @@
 title: "TrustedAuthentication （数字盾服务）"
 upstream_id: "harmonyos-references/errorcode-devicesecurity-trusted-auth"
 catalog: "harmonyos-references"
-content_hash: "f8a74474cb0c"
-synced_at: "2026-07-09T00:59:15.896253"
+content_hash: "281b3b81b61b"
+synced_at: "2026-08-29T18:16:28.090717"
 ---
 
 # TrustedAuthentication （数字盾服务）
@@ -387,6 +387,24 @@ The corresponding biometric data has not been bound.
 处理步骤
 
 确认是否已经绑定对应生物特征。
+
+#### 1019100023 安全器件故障
+
+错误信息
+
+Secure element fault.
+
+错误描述
+
+安全器件故障。
+
+可能原因
+
+安全器件故障。
+
+处理步骤
+
+开通TEE安全级别数字盾。
 
 #### 1019100024 绑定的生物特征ID已失效
 

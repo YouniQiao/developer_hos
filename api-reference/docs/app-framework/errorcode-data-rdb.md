@@ -2,8 +2,8 @@
 title: "关系型数据库错误码"
 upstream_id: "harmonyos-references/errorcode-data-rdb"
 catalog: "harmonyos-references"
-content_hash: "6a962e1f168f"
-synced_at: "2026-07-28T16:40:55.282522"
+content_hash: "ef243f7e7c35"
+synced_at: "2026-08-29T18:12:18.097825"
 ---
 
 # 关系型数据库错误码
@@ -31,7 +31,7 @@ Inner error.
 3. 使用读连接进行写操作。读连接不可用于执行写库操作，仅可执行读库操作。
 4. 事务未提交时，调用[execute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-data-relationalstore-rdbstore#execute12)或者[executeSql](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-data-relationalstore-rdbstore#executesql)等接口依次执行删除触发器、删除表、重建表等DDL操作，后续再次执行类似操作时会出现失败。
 5. 并发查询和删除同一批数据。
-6. 根密钥生成失败。huks生成根密钥失败，无法进一步生成加密数据库的密钥，因此调用[getRdbStore](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-data-relationalstore-f#relationalstoregetrdbstore)等开库接口打开加密数据库会失败。
+6. 根密钥生成失败。HUKS生成根密钥失败，无法进一步生成加密数据库的密钥，因此调用[getRdbStore](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-data-relationalstore-f#relationalstoregetrdbstore)等开库接口打开加密数据库会失败。
 7. 远程查询时，没有查询到数据。在对端数据库中不存在要查询的数据的情况下，调用[remoteQuery](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-data-relationalstore-rdbstore#remotequery)接口进行远程查询，获取到结果集后，再调用[goToFirstRow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-data-relationalstore-resultset#gotofirstrow)等接口获取数据会失败。
 8. 数据管理服务启动失败。在数据管理服务启动失败的情况下，无法设置分布式表，因此调用[setDistributedTables](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-data-relationalstore-rdbstore#setdistributedtables)等设置分布式表接口会失败。
 
@@ -124,7 +124,7 @@ The current operation failed because the database is corrupted.
 11. 排查业务代码中是否存在db文件或wal文件被覆盖或者被替换的场景。 是：确保db文件和wal文件对应，并同步处理数据库文件异常。如果可以接受数据丢失，可删除原有数据库并重新创建；否则，请先完成数据库备份，再执行恢复操作。具体操作可参考[数据库备份与恢复](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-backup-and-restore)。
 12. 否：提供hilog系统日志，联系技术支撑人员定位。
 
-#### 14800012 结果集为空或指定位置不合法
+#### 14800012 结果集为空或指针索引越界
 
 错误信息
 
@@ -132,7 +132,7 @@ ResultSet is empty or pointer index is out of bounds.
 
 错误描述
 
-结果集为空或指定位置不合法。
+结果集为空或指针索引越界。
 
 可能原因
 
@@ -152,7 +152,7 @@ ResultSet is empty or pointer index is out of bounds.
 7. 排查表中是否存在符合查询条件的数据。 是：提供hilog系统日志，联系技术支撑人员定位。
 8. 否：确保查询条件符合预期，可以查询到数据。
 
-#### 14800013 列值为空或列类型与当前调用接口不兼容
+#### 14800013 列索引越界
 
 错误信息
 
@@ -160,7 +160,7 @@ Column index is out of bounds.
 
 错误描述
 
-列值为空或列类型与当前调用接口不兼容。
+列索引越界。
 
 可能原因
 
@@ -257,7 +257,7 @@ No data meets the condition.
 
 错误描述
 
-SQL语句有误，未查询到符合条件的数据。
+未查询到符合条件的数据。
 
 可能原因
 
@@ -293,7 +293,7 @@ The secret key is corrupted or lost.
 
 错误描述
 
-获取密钥失败。
+密钥损坏或丢失。
 
 可能原因
 

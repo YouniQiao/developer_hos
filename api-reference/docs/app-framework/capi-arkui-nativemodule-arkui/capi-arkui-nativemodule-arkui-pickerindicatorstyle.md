@@ -2,14 +2,14 @@
 title: "ArkUI_PickerIndicatorStyle"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-pickerindicatorstyle"
 catalog: "harmonyos-references"
-content_hash: "c84750910f73"
-synced_at: "2026-07-28T16:49:47.659450"
+content_hash: "aab55509211a"
+synced_at: "2026-08-29T18:15:54.209974"
 ---
 
 # ArkUI_PickerIndicatorStyle
 
 ```
-typedef struct {...} ArkUI_PickerIndicatorStyle
+typedef struct ArkUI_PickerIndicatorStyle ArkUI_PickerIndicatorStyle
 ```
 
 #### 概述

@@ -2,8 +2,8 @@
 title: "relational_store.h"
 upstream_id: "harmonyos-references/capi-relational-store-h"
 catalog: "harmonyos-references"
-content_hash: "1cc9d86dbaeb"
-synced_at: "2026-08-18T15:31:51.648449"
+content_hash: "e274cfce795d"
+synced_at: "2026-08-29T18:12:15.393022"
 ---
 
 # relational_store.h
@@ -132,7 +132,7 @@ synced_at: "2026-08-18T15:31:51.648449"
 | [int OH_Rdb_RekeyEx(OH_Rdb_Store *store, OH_Rdb_CryptoParam *param)](#oh_rdb_rekeyex) | - | 更改加密数据库密钥。 不支持对非WAL模式的数据库进行密钥更新。 手动更新时需要独占访问数据库，此时若存在任何未释放的结果集、事务或其他进程打开的数据库均会导致更新失败。 支持加密数据库的参数更新，以及加密数据库与非加密数据库之间的相互转换。 数据库越大，执行更新所需的时间越长。 加密参数变更需谨慎，调用OH_Rdb_CreateOrOpen时需要传入正确的加密参数，否则可能打开数据库失败。 |
 | [typedef void (*Rdb_CorruptedHandler)(void *context, OH_Rdb_ConfigV2 *config, OH_Rdb_Store *store)](#rdb_corruptedhandler) | Rdb_CorruptedHandler | 数据库异常处理的回调函数。 |
 | [int OH_Rdb_RegisterCorruptedHandler(const OH_Rdb_ConfigV2 *config, void *context, const Rdb_CorruptedHandler handler)](#oh_rdb_registercorruptedhandler) | - | 注册数据库异常处理。当数据库发生异常时，将调用异常处理的回调函数。 异常处理逻辑为用户自定义，回调时触发的业务需要用户自行保障。 每个路径只允许注册一次。 |
-| [int OH_Rdb_UnregisterCorruptedHandler(const OH_Rdb_ConfigV2 *config, void *context, const Rdb_CorruptedHandler handler)](#oh_rdb_unregistercorruptedhandler) | - | 取消注册的数据库异常处理的回调函数。 handler和context必须要和订阅时保持一致，否则取消失败。 |
+| [int OH_Rdb_UnregisterCorruptedHandler(const OH_Rdb_ConfigV2 *config, void *context, const Rdb_CorruptedHandler handler)](#oh_rdb_unregistercorruptedhandler) | - | 取消注册的数据库异常处理的回调函数。 handler和context必须要和注册时保持一致，否则取消失败。 |
 | [OH_Cursor *OH_Rdb_QueryWithoutRowCount(OH_Rdb_Store *store, OH_Predicates *predicates, const char * const columns[], int length)](#oh_rdb_querywithoutrowcount) | - | 根据指定条件查询数据库中的数据，不计算行数。 |
 | [OH_Cursor *OH_Rdb_QuerySqlWithoutRowCount(OH_Rdb_Store *store, const char *sql, const OH_Data_Values *args)](#oh_rdb_querysqlwithoutrowcount) | - | 执行有返回值的SQL语句，不计算行数，支持向量数据库。 |
 | [int OH_Rdb_BatchInsertWithReturning(OH_Rdb_Store *store, const char *table, const OH_Data_VBuckets *rows, Rdb_ConflictResolution resolution, OH_RDB_ReturningContext *context)](#oh_rdb_batchinsertwithreturning) | - | 将批量数据插入目标表，并将变更信息输出到上下文中。 |
@@ -581,7 +581,7 @@ int OH_Rdb_SetDbType(OH_Rdb_ConfigV2 *config, int dbType)
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_Rdb_ConfigV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-rdb-configv2) *config | 指向[OH_Rdb_ConfigV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-rdb-configv2)对象的指针，即与此RDB存储相关的数据库配置。 |
-| int dbType | 表示数据库的数据库类型[Rdb_DBType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-relational-store-h#rdb_dbtype)。 |
+| int dbType | 表示数据库的内核类型[Rdb_DBType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-relational-store-h#rdb_dbtype)。 |
 
 返回：
 
@@ -750,7 +750,7 @@ int OH_Rdb_SetPersistent(OH_Rdb_ConfigV2 *config, bool isPersistent)
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_Rdb_ConfigV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-rdb-configv2) *config | 指向[OH_Rdb_ConfigV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-rdb-configv2)实例的指针。 指示与此RDB存储相关的数据库的配置。 |
-| bool isPersistent | 指示数据库是否需要持久性。 |
+| bool isPersistent | 指示数据库是否需要持久化。true表示需要持久化，false表示不需要持久化，即内存数据库。 |
 
 返回：
 
@@ -1043,7 +1043,7 @@ int OH_Rdb_BatchInsert(OH_Rdb_Store *store, const char *table, const OH_Data_VBu
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_Rdb_Store](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-rdb-store) *store | 指向[OH_Rdb_Store](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-rdb-store)实例的指针。 |
-| const char *table | 要设置的分布式数据库表表名。 |
+| const char *table | 表示要插入数据的目标表名。 |
 | const [OH_Data_VBuckets](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-data-vbuckets) *rows | 表示要插入到表中的一组数据。 |
 | [Rdb_ConflictResolution](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-rdb-types-h#rdb_conflictresolution) resolution | 表示发生冲突时的解决策略。 |
 | int64_t *changes | 输出参数，表示插入成功的次数。 |
@@ -1569,7 +1569,7 @@ int OH_Rdb_SetDistributedTables(OH_Rdb_Store *store, const char *tables[], uint3
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_Rdb_Store](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-rdb-store) *store | 指向[OH_Rdb_Store](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-rdb-store)实例的指针。 |
-| const char *tables[] | 要设置的分布式数据库表表名。 |
+| const char *tables[] | 表示要插入数据的目标表名。 |
 | uint32_t count | 要设置的分布式数据库表的数量。 |
 | [Rdb_DistributedType](#rdb_distributedtype) type | 表的分布式类型[Rdb_DistributedType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-relational-store-h#rdb_distributedtype)。 |
 | const [Rdb_DistributedConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-rdb-distributedconfig) *config | 表的分布式配置信息[Rdb_DistributedConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-rdb-distributedconfig)。 |
@@ -1910,7 +1910,7 @@ OH_Cursor *OH_Rdb_QueryLockedRow(OH_Rdb_Store *store, OH_Predicates *predicates,
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Cursor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-cursor) | 如果查询成功则返回一个指向[OH_Cursor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-cursor)结构体实例的指针，否则返回NULL。 |
+| [OH_Cursor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-cursor) * | 如果查询成功则返回一个指向[OH_Cursor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-cursor)结构体实例的指针，否则返回NULL。 |
 
 #### [h2]OH_Rdb_CreateTransaction()
 
@@ -2105,7 +2105,7 @@ int OH_Rdb_UnregisterCorruptedHandler(const OH_Rdb_ConfigV2 *config, void *conte
 
 取消注册的数据库异常处理的回调函数。
 
-handler和context必须要和订阅时保持一致，否则取消失败。
+handler和context必须要和注册时保持一致，否则取消失败。
 
 起始版本： 22
 
@@ -2147,7 +2147,7 @@ OH_Cursor *OH_Rdb_QueryWithoutRowCount(OH_Rdb_Store *store, OH_Predicates *predi
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Cursor *](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-cursor) | 如果查询成功则返回一个指向[OH_Cursor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-cursor)结构体实例的指针。如果获取store失败或结果集为空，则返回nullptr。 |
+| [OH_Cursor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-cursor) * | 如果查询成功则返回一个指向[OH_Cursor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-cursor)结构体实例的指针。如果获取store失败或结果集为空，则返回nullptr。 |
 
 #### [h2]OH_Rdb_QuerySqlWithoutRowCount()
 

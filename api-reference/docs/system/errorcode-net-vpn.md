@@ -2,8 +2,8 @@
 title: "VPN错误码"
 upstream_id: "harmonyos-references/errorcode-net-vpn"
 catalog: "harmonyos-references"
-content_hash: "4d30301f8634"
-synced_at: "2026-07-09T00:59:31.521705"
+content_hash: "55894e6db4a1"
+synced_at: "2026-08-29T18:16:48.177989"
 ---
 
 # VPN错误码
@@ -58,15 +58,13 @@ System internal error.
 
 可能原因
 
-1.内存异常。
-
-2.空指针。
+1. 内存异常。
+2. 空指针。
 
 处理步骤
 
-1.检查内存空间是否充足，清理内存后重试。
-
-2.系统异常，请稍后重试或重启设备。如果问题仍然存在，收集完整日志后联系技术支持获取帮助。
+1. 检查内存空间是否充足，清理内存后重试。
+2. 系统异常，请稍后重试或重启设备。如果问题仍然存在，收集完整日志后联系技术支持获取帮助。
 
 #### 2203001 VPN创建失败
 
@@ -76,7 +74,7 @@ VPN creation denied, please check the user type.
 
 错误描述
 
-拒绝创建VPN，请检测当前用户的类型。
+拒绝创建VPN，请检查当前用户的类型。
 
 可能原因
 

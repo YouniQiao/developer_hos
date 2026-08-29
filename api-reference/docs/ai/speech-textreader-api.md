@@ -2,8 +2,8 @@
 title: "TextReader（朗读控件）"
 upstream_id: "harmonyos-references/speech-textreader-api"
 catalog: "harmonyos-references"
-content_hash: "a47fa1626d35"
-synced_at: "2026-07-28T16:53:16.978813"
+content_hash: "e39aaad6f303"
+synced_at: "2026-08-29T18:18:43.060912"
 ---
 
 # TextReader（朗读控件）
@@ -2308,7 +2308,7 @@ try {
 | isMinibarNeeded | boolean | 否 | 是 | 是否使用Minibar功能。 - 默认true：使用Minibar功能。 - 配置为false：不使用Minibar功能，这时hideMinibar、showMinibar 方法无效。 **起始版本：** 5.0.2(14) |
 | minibarParams | [MinibarParams](#minibarparams) | 否 | 是 | Minibar位置设置，默认吸附左边。 **起始版本：** 5.0.2(14) |
 | customFeatures | [CustomFeature[]](#customfeature) | 否 | 是 | 朗读控件的自定义功能，默认空。 **起始版本：** 5.0.2(14) |
-| displayTab | [DisplayTab](#displaytab) | 否 | 是 | 显示Tab页配置，默认显示封面和内容页。 **起始版本：** 5.0.2(14) |
+| displayTab | [DisplayTab](#displaytab) | 否 | 是 | 显示Tab页配置，默认显示封面和内容页。 **起始版本：** 5.0.2(14) **设备行为差异：** 该接口在PC/2in1中无效果，在其他设备类型中可正常调用。 |
 | reportProgressPeriod | number | 否 | 是 | 多久返回一次已播放时长日志信息，默认为0，表示不返回已播放时长日志信息。 单位：ms。 **起始版本：** 5.0.2(14) |
 
 #### StartParams
@@ -2464,7 +2464,7 @@ struct Index {
 | date | [TextInfo](#textinfo) | 否 | 是 | 文章的时间（例:Mon Jul 08 2024 21:25:41 GMT+0800）。 预留参数，暂未支持。 |
 | image | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 否 | 是 | 封面图图片。图片转为PixelMap后的最大大小为8MB。 若未传，采用默认封面图。 |
 | imageUrl | string | 否 | 是 | 文章封面图片链接。 若未传，采用默认封面图。图片的宽 * 高大于1024 * 2048时会进行压缩。 image和imageUrl同时存在的时候，image设置生效。 **起始版本：** 5.0.2(14) |
-| bodyInfo | string | 否 | 是 | [setArticle](#setarticle)以及[loadMore](#loadmore)接口必填。 实时朗读的正文信息。 对于6.0.2(22)及之前版本，正文中无标点符号和换行符的情况下，长度须小于等于10000字符。对于6.1.0(23)版本开始，正文长度支持10000字符以上。 |
+| bodyInfo | string | 否 | 是 | [setArticle](#setarticle)以及[loadMore](#loadmore)接口必填。 实时朗读的正文信息。 对于6.0.2(22)及之前版本，正文中无标点符号和换行符的情况下，长度须小于等于10000字符。对于6.1.0(23)及之后版本，正文长度支持10000字符以上。 |
 | bodyInfoObject | [BodyInfo](#bodyinfo) | 否 | 是 | 正文内容信息，默认空。与bodyInfo的区别是，bodyInfo只更新内容，bodyInfoObject会更新包含文章内容，封面图，文章标题等信息，若同时赋值，bodyInfoObject生效。 **起始版本：** 5.0.2(14) |
 | categoryObject | [CategoryInfo](#categoryinfo) | 否 | 是 | 文章分类信息，默认空。 **起始版本：** 5.0.2(14) |
 | audioInfo | [AudioInfo](#audioinfo)[] | 否 | 是 | 音频信息，默认空。 若配置此参数，则优先使用传入音频进行播报。 **起始版本：** 5.0.2(14) |
@@ -2552,7 +2552,7 @@ readInfo的正文内容信息
 
 #### ReadProgress
 
-朗读控件中的音频信息
+朗读控件中的朗读进度信息。
 
 系统能力： SystemCapability.AI.Component.TextReader
 

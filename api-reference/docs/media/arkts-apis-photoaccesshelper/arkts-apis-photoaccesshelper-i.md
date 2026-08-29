@@ -2,8 +2,8 @@
 title: "Interfaces (其他)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-i"
 catalog: "harmonyos-references"
-content_hash: "d4296c76ab60"
-synced_at: "2026-07-28T16:52:04.030734"
+content_hash: "591cd7a4c1ed"
+synced_at: "2026-08-29T18:17:46.658365"
 ---
 
 # Interfaces (其他)
@@ -41,7 +41,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 title参数的规格如下：
 
 - 不应包含扩展名。
-- 文件名字符串长度为1~255。
+- 文件名的字符串长度为1~255个字符。
 
 系统能力：SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -58,8 +58,8 @@ title参数的规格如下：
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| fetchColumns | Array | 否 | 否 | 检索条件，指定列名查询。 对于照片，如果该参数为空，默认查询'uri'、'media_type'、'subtype'和'display_name'，使用[get](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-photoasset#get)接口获取当前对象的其他属性时将会报错。示例：fetchColumns: ['uri', 'title']。 对于相册，如果该参数为空，默认查询'uri'和'album_name'。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
-| predicates | [dataSharePredicates.DataSharePredicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-datasharepredicates#datasharepredicates) | 否 | 否 | 谓词查询，显示过滤条件。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| fetchColumns | Array | 否 | 否 | 检索条件，指定列名查询。 对于照片，如果该参数为空，默认查询'uri'、'media_type'、'subtype'和'display_name'，使用[get](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-photoasset#get)接口获取除上述默认属性外的其他属性时将会报错。示例：fetchColumns: ['uri', 'title']。 对于相册，如果该参数为空，默认查询'uri'和'album_name'。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| predicates | [dataSharePredicates.DataSharePredicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-datasharepredicates#datasharepredicates) | 否 | 否 | 谓词查询，用于指定过滤条件。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 
 #### RequestOptions11+
 
@@ -69,9 +69,9 @@ title参数的规格如下：
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| deliveryMode | [DeliveryMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#deliverymode11) | 否 | 否 | 请求资源分发模式，可以指定对于该资源的请求策略，可被配置为快速模式，高质量模式，均衡模式三种策略。 |
+| deliveryMode | [DeliveryMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#deliverymode11) | 否 | 否 | 请求资源分发模式，可配置为快速模式、高质量模式、均衡模式三种策略。 |
 | compatibleMode15+ | [CompatibleMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#compatiblemode15) | 否 | 是 | 配置HDR视频资源转码模式，可指定配置为转码和不转码两种策略。默认为原视频资源内容模式即不转码。 |
-| mediaAssetProgressHandler15+ | [MediaAssetProgressHandler](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-mediaassetprogresshandler) | 否 | 是 | 配置HDR视频转码为SDR视频时的进度级回调。 |
+| mediaAssetProgressHandler15+ | [MediaAssetProgressHandler](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-mediaassetprogresshandler) | 否 | 是 | 配置HDR视频转码为SDR视频时的进度级回调。 当需要监控HDR视频转码进度时配置此参数。不填写时无法获取转码进度。 |
 
 #### ChangeData
 
@@ -82,7 +82,7 @@ title参数的规格如下：
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | type | [NotifyType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#notifytype) | 否 | 否 | ChangeData的通知类型。 |
-| uris | Array | 否 | 否 | 相同[NotifyType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#notifytype)的所有uri，可以是PhotoAsset或Album。 |
+| uris | Array | 否 | 否 | 相同[NotifyType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#notifytype)的所有URI字符串，对应PhotoAsset或Album的URI。 |
 | extraUris | Array | 否 | 否 | 相册中变动文件的uri数组。可能为undefined，使用前需要检查是否为undefined。 |
 
 #### TextContextInfo12+
@@ -262,8 +262,8 @@ picker内宫格的捏合模式。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| supportedHighResolution | boolean | 否 | 否 | 是否支持启用高分辨率资产。true表示支持，false表示不支持。 **元服务API:** 从API version 24开始，该接口支持在元服务中使用。 |
-| supportedMimeType | Array | 否 | 是 | 支持MIME types的类型。 - 配置image/heic表示应用支持heif格式。 - 配置image/jpeg表示应用仅支持jpeg格式不支持heif格式。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
+| supportedHighResolution | boolean | 否 | 否 | 表示应用是否支持获取高分辨率的媒体资源。true表示支持高分辨率资源请求，false表示仅支持标准分辨率资源。 **元服务API:** 从API version 24开始，该接口支持在元服务中使用。 |
+| supportedMimeType | Array | 否 | 是 | 支持的MIME类型。 - 配置image/heic表示应用支持heif格式。 - 配置image/jpeg表示应用仅支持jpeg格式不支持heif格式。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
 
 #### MediaLibraryAvailability
 

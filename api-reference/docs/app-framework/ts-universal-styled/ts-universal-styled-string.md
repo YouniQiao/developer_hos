@@ -2,8 +2,8 @@
 title: "属性字符串"
 upstream_id: "harmonyos-references/ts-universal-styled-string"
 catalog: "harmonyos-references"
-content_hash: "9200bde2bfe3"
-synced_at: "2026-08-14T15:52:38.620201"
+content_hash: "0b748a262b5b"
+synced_at: "2026-08-29T18:14:07.734379"
 ---
 
 # 属性字符串
@@ -1159,8 +1159,8 @@ invalidate(): void
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | fontSize | number | 否 | 否 | 设置文本字体大小。 单位：[fp](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-pixel-units#基本像素单位) **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| maxWidth | number | 否 | 是 | 自定义span所在父组件的内容区的最大宽度约束。 默认值：使用自身宽度。 单位：[px](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-pixel-units#基本像素单位) **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| layoutPolicy | [LayoutPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#layoutpolicy15) | 否 | 是 | 自定义span所在父组件的宽度布局策略。 **说明：** 当值为null或undefined时，表示父组件没有设置宽度布局策略。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| maxWidth | number | 否 | 是 | 自定义绘制Span所在父组件的内容区的最大宽度约束。 默认值：使用自身宽度。 单位：[px](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-pixel-units#基本像素单位) **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| layoutPolicy | [LayoutPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#layoutpolicy15) | 否 | 是 | 自定义绘制Span所在父组件的宽度布局策略。 **说明：** 当值为null或undefined时，表示父组件没有设置宽度布局策略。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### CustomSpanMetrics对象说明
 
@@ -1587,7 +1587,7 @@ struct StyledStringProcessDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002679807198.png)
+ ![](./img/zh-cn_image_0000002701799768.png)
 
 #### [h2]示例2（设置事件）
 
@@ -1676,7 +1676,7 @@ struct StyledStringBindEventsDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002709527013.png)
+ ![](./img/zh-cn_image_0000002731519055.png)
 
 #### [h2]示例3（设置文本样式）
 
@@ -1777,7 +1777,7 @@ struct StyledStringSetTextStyleDemo {
   build() {
     Column() {
       Column({ space: 10 }) {
-        // 显示配置了字体各种样式的属性字符串，Text组件亦配置冲突部分生效属性字符串配置，未冲突区间生效Text组件属性设置值
+        // 显示配了字体各种样式的属性字符串，Text组件亦配置冲突部分生效属性字符串配置，未冲突区间生效Text组件属性设置值
         Text(undefined, this.options)
           .fontColor(this.fontColor1)
           .font({ size: 20, weight: 500, style: FontStyle.Normal })
@@ -1865,7 +1865,7 @@ struct StyledStringSetTextStyleDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002679967062.png)
+ ![](./img/zh-cn_image_0000002701639854.png)
 
 #### [h2]示例4（设置图片）
 
@@ -1999,7 +1999,7 @@ struct StyledStringSetImageDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002709646871.gif)
+ ![](./img/zh-cn_image_0000002731359075.gif)
 
 #### [h2]示例5（设置文本行高和段落样式）
 
@@ -2158,7 +2158,7 @@ struct StyledStringSetLineheightParagraphstyleDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002679807200.png)
+ ![](./img/zh-cn_image_0000002701799770.png)
 
 #### [h2]示例6（设置自定义绘制Span）
 
@@ -2319,7 +2319,7 @@ struct StyledStringSetCustomspanDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002709527015.gif)
+ ![](./img/zh-cn_image_0000002731519057.gif)
 
 #### [h2]示例7（支持存储自定义扩展信息）
 
@@ -2369,7 +2369,7 @@ struct StyledStringSetUserdataspanDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002679967064.gif)
+ ![](./img/zh-cn_image_0000002701639856.gif)
 
 #### [h2]示例8（设置超链接）
 
@@ -2402,7 +2402,7 @@ struct StyledStringSetUrlstyleDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002709646873.gif)
+ ![](./img/zh-cn_image_0000002731359077.gif)
 
 #### [h2]示例9 （给图片设置colorFilter）
 
@@ -2472,7 +2472,7 @@ struct StyledStringSetImageColorfilterDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002679807202.gif)
+ ![](./img/zh-cn_image_0000002701799772.gif)
 
 #### [h2]示例10（属性字符串的插入、删除、替换）
 
@@ -2547,7 +2547,7 @@ struct StyledStringModifyDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002709527017.gif)
+ ![](./img/zh-cn_image_0000002731519059.gif)
 
 #### [h2]示例11（属性字符串的文本描边）
 
@@ -2621,7 +2621,7 @@ struct StyledStringStrokewidthStrokecolorDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002679967066.png)
+ ![](./img/zh-cn_image_0000002701639858.png)
 
 #### [h2]示例12（fromHtml和toHtml互相转换）
 
@@ -2690,7 +2690,7 @@ struct StyledStringHtmlConvertDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002709646875.gif)
+ ![](./img/zh-cn_image_0000002731359079.gif)
 
 #### [h2]示例13（多装饰线与加粗装饰线）
 
@@ -2760,7 +2760,7 @@ struct StyledStringSetDecorationstyleDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002679807204.png)
+ ![](./img/zh-cn_image_0000002701799774.png)
 
 #### [h2]示例14（获取以vp为单位的图片尺寸）
 
@@ -2858,7 +2858,7 @@ struct StyledStringImageAttachmentInterfaceDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002709527019.gif)
+ ![](./img/zh-cn_image_0000002731519061.gif)
 
 #### [h2]示例15（设置段落自定义缩进）
 
@@ -2976,7 +2976,7 @@ struct leadingMarginSpanDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002679967068.gif)
+ ![](./img/zh-cn_image_0000002701639860.gif)
 
 #### [h2]示例16（使用supportSvg2属性时，SVG图片的显示效果）
 
@@ -3045,7 +3045,7 @@ struct StyledStringProcessDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002709646861.png)
+ ![](./img/zh-cn_image_0000002701639844.png)
 
 #### [h2]示例17（设置字体配置）
 
@@ -3152,7 +3152,7 @@ struct StyledStringFontConfigsDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002709646877.png)
+ ![](./img/zh-cn_image_0000002731359081.png)
 
 #### [h2]示例18（fromHtml转换）
 
@@ -3182,11 +3182,11 @@ struct html_convert_demo {
         this.spanString = await StyledString.fromHtml(this.html);
         this.controller.setStyledString(this.spanString);
       }).margin(5)
-    }.width("100%").padding(20)
+    }.width('100%').padding(20)
   }
 }
 ```
- ![](./img/zh-cn_image_0000002679807206.png)
+ ![](./img/zh-cn_image_0000002701799776.png)
 
 #### [h2]示例19（设置可变字体的属性）
 
@@ -3236,7 +3236,7 @@ struct StyledStringExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002709526925.gif)
+ ![](./img/zh-cn_image_0000002731358985.gif)
 
 #### [h2]示例20（设置文本着色器效果）
 
@@ -3365,7 +3365,7 @@ struct ShaderColorStyle {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002709527021.png)
+ ![](./img/zh-cn_image_0000002731519063.png)
 
 #### [h2]示例21（设置文本尾部缩进）
 
@@ -3463,4 +3463,4 @@ struct TailIndentsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002679967070.png)
+ ![](./img/zh-cn_image_0000002701639862.png)

@@ -2,13 +2,13 @@
 title: "@ohos.enterprise.deviceControl（设备控制管理）"
 upstream_id: "harmonyos-references/js-apis-enterprise-devicecontrol"
 catalog: "harmonyos-references"
-content_hash: "5520158ff788"
-synced_at: "2026-07-28T16:51:09.782292"
+content_hash: "1b957459006e"
+synced_at: "2026-08-29T18:17:06.734633"
 ---
 
 # @ohos.enterprise.deviceControl（设备控制管理）
 
-本模块提供设备控制能力。
+本模块提供设备控制能力，用于企业设备管理场景。管理员可以通过本模块远程控制设备，包括设备重启、关机、锁屏、恢复出厂设置等操作，帮助企业实现设备统一管理和安全管控。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 12 开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -39,7 +39,7 @@ operateDevice(admin: Want, operate: string, addition?: string): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
-| operate | string | 是 | 要执行的操作。 - resetFactory：设备恢复出厂设置。接口调用后，设备将立即恢复出厂设置。恢复完成后，整机设备数据将全部被擦除且无法恢复。企业需要做好应用的安全设计，防止应用被攻击导致企业数据丢失。已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated)接口禁用了恢复出厂，需要先解除禁用。 - reboot：设备重启。 - shutDown：设备关机。 - lockScreen：设备锁屏。 - lockDevice：设备锁定。该能力使用后设备屏幕无法使用，按键无响应，仅支持锁屏文案定制，不支持在锁屏界面定制交互功能。在开发过程中，下发设备锁定策略前一定要预留逃生通道，并且确保逃生通道正常。建议开发时保留hdc能力与远程通信能力，通过hdc命令或者远程push能力能触发设备解锁定功能。 如果需要实现在屏幕锁定的情况下支持自定义行为的能力，建议使用[setAllowedKioskApps](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-applicationmanager#applicationmanagersetallowedkioskapps20)接口配置支持[Kiosk模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-kioskmanager#kioskmanagerenterkioskmode)。 - unlockDevice：设备解锁定。 在API version21之前，设备锁定和解锁定仅支持PC/2in1使用。从API version21开始，设备锁定和解锁定支持Phone和Tablet。 |
+| operate | string | 是 | 要执行的操作。仅支持以下操作类型： - resetFactory：设备恢复出厂设置。接口调用后，设备将立即恢复出厂设置。恢复完成后，整机设备数据将全部被擦除且无法恢复。企业需要做好应用的安全设计，防止应用被攻击导致企业数据丢失。已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated)接口禁用了恢复出厂，需要先解除禁用。 - reboot：设备重启。 - shutDown：设备关机。 - lockScreen：设备锁屏。 - lockDevice：设备锁定。该能力使用后设备屏幕无法使用，按键无响应，仅支持锁屏文案定制，不支持在锁屏界面定制交互功能。在开发过程中，下发设备锁定策略前一定要预留逃生通道，并且确保逃生通道正常。建议开发时保留hdc能力与远程通信能力，通过hdc命令或者远程push能力能触发设备解锁定功能。 如果需要实现在屏幕锁定的情况下支持自定义行为的能力，建议使用[setAllowedKioskApps](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-applicationmanager#applicationmanagersetallowedkioskapps20)接口配置支持[Kiosk模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-kioskmanager#kioskmanagerenterkioskmode)。 - unlockDevice：设备解锁定。 在API version21之前，设备锁定和解锁定仅支持PC/2in1使用。从API version21开始，设备锁定和解锁定支持Phone和Tablet。 |
 | addition | string | 否 | 执行时附加参数。若operate为lockDevice，表示屏幕锁定后展示的描述信息。 |
 
 错误码：
@@ -105,6 +105,7 @@ operateDevice(admin: Want, operation: Operation, addition?: string): void
 | 9200002 | The administrator application does not have permission to manage the device. |
 | 9200010 | A conflict policy has been configured. |
 | 9200012 | Parameter verification failed. |
+| 9201048 | Failed to operate the device. |
 | 201 | Permission verification failed. The application does not have the permission required to call the API. |
 | 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
 

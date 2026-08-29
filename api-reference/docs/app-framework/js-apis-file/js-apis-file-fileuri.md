@@ -2,15 +2,15 @@
 title: "@ohos.file.fileuri (文件URI)"
 upstream_id: "harmonyos-references/js-apis-file-fileuri"
 catalog: "harmonyos-references"
-content_hash: "04e5717aae9d"
-synced_at: "2026-07-28T16:50:01.868566"
+content_hash: "6cd271c53134"
+synced_at: "2026-08-29T18:16:07.178072"
 ---
 
 # @ohos.file.fileuri (文件URI)
 
 fileuri继承自[uri](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-uri)。
 
-该模块提供通过PATH获取文件统一资源标识符（Uniform Resource Identifier，URI），后续可通过使用[@ohos.file.fs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs)进行相关open、read、write等操作，实现文件分享。
+该模块提供通过路径获取文件统一资源标识符（Uniform Resource Identifier，URI）的能力，支持URI与应用沙箱路径之间的转换。后续可通过使用[@ohos.file.fs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs)进行open、read、write等操作，实现文件分享。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 9开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -41,14 +41,14 @@ export default class EntryAbility extends UIAbility {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| path10+ | string | 否 | 否 | 将uri转换成对应的沙箱路径path。 1、uri转path过程中会将uri中存在的ASCII码进行解码后拼接在原处，非系统接口生成的uri中可能存在ASCII码解析范围之外的字符，导致字符串无法正常拼接；2、转换处理为系统约定的字符串替换规则（规则随系统演进可能会发生变化），转换过程中不进行路径校验操作，无法保证转换结果的一定可以访问。 |
-| name10+ | string | 是 | 否 | 通过传入的uri获取到对应的文件名称。（如果文件名中存在ASCII码将会被解码处理后拼接在原处） **元服务API**：从API version 15开始，该接口支持在元服务中使用。 |
+| path10+ | string | 否 | 否 | 将URI转换成沙箱路径。1、URI转路径过程中会将URI中存在的百分号编码字符进行解码后拼接在原处，非系统接口生成的URI中可能存在不符合编码规范的字符，导致字符串无法正常拼接；2、转换处理为系统约定的字符串替换规则（规则随系统演进可能会发生变化），转换过程中不进行路径校验操作，无法保证转换结果一定可以访问。 |
+| name10+ | string | 是 | 否 | 通过传入的URI获取文件名称。如果文件名中存在百分号编码字符，将会被解码处理后拼接在原处。 **元服务API**：从API version 15开始，该接口支持在元服务中使用。 |
 
 #### [h2]constructor10+
 
 constructor(uriOrPath: string)
 
-constructor是FileUri的构造函数。
+constructor是FileUri的构造函数。传入路径时，可通过应用上下文获取应用沙箱路径，例如context.filesDir。
 
 元服务API：从API version 15开始，该接口支持在元服务中使用。
 
@@ -58,7 +58,7 @@ constructor是FileUri的构造函数。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| uriOrPath | string | 是 | URI或路径。URI类型： - 应用沙箱URI：file:/// - 公共目录文件类URI：file://docs/storage/Users/currentUser/ - 公共目录媒体类URI：file://media//IMG_DATETIME_ID/ |
+| uriOrPath | string | 是 | URI或路径。URI需符合以下格式之一，也可传入有效路径；格式无效时抛出错误码14300002： - 应用沙箱URI：file:/// - 公共目录文件类URI：file://docs/storage/Users/currentUser/ - 公共目录媒体类URI：file://media//IMG_DATETIME_ID/ |
 
 错误码：
 
@@ -74,17 +74,18 @@ constructor是FileUri的构造函数。
 示例：
 
 ```
+let pathDir = this.context.filesDir; // 获取应用沙箱路径。
 let path = pathDir + '/test';
 let uri = fileUri.getUriFromPath(path);  // file://<packageName>/data/storage/el2/base/haps/entry/files/test
 let fileUriObject = new fileUri.FileUri(uri);
-console.info("The name of FileUri is " + fileUriObject.name);
+console.info(`The name of FileUri is ${fileUriObject.name}`);
 ```
 
 #### [h2]getFullDirectoryUri11+
 
 getFullDirectoryUri(): string
 
-获取所在路径URI。URI指向文件则返回所在路径的URI，URI指向目录则不处理直接返回原串；URI指向的文件不存在或属性获取失败则返回空串。
+获取所在路径URI。URI指向文件则返回所在路径的URI，URI指向目录则不处理直接返回原串；如果URI指向的文件不存在，或无法获取文件属性，则返回空串。
 
 如果当前FileUri指向文件，将返回文件所在路径URI。如xxx/example.txt，将返回xxx。
 
@@ -115,6 +116,7 @@ getFullDirectoryUri(): string
 ```
 import { BusinessError } from '@kit.BasicServicesKit';
 try {
+  let pathDir = this.context.filesDir; // 获取应用沙箱路径。
   let path = pathDir + '/test.txt';
   let fileUriObject = new fileUri.FileUri(path);
   let directoryUri = fileUriObject.getFullDirectoryUri();
@@ -128,7 +130,7 @@ try {
 
 isRemoteUri(): boolean
 
-判断当前URI是否是远端URI。
+判断当前URI是否是远端URI。远端URI包含远端标识networkid。
 
 元服务API：从API version 15开始，该接口支持在元服务中使用。
 
@@ -138,7 +140,7 @@ isRemoteUri(): boolean
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | - 返回true，表示当前FileUri指向远端文件或目录，如xxx/example.txt?networkid=xxx。 - 返回false，表示当前FileUri指向本地的文件或目录。 |
+| boolean | - 返回true，表示当前FileUri指向远端URI，如file://com.example.demo/data/storage/el2/base/test.txt?networkid=xxxx。 - 返回false，表示当前FileUri指向本地URI。 |
 
 错误码：
 
@@ -151,13 +153,12 @@ isRemoteUri(): boolean
 示例：
 
 ```
-import { BusinessError } from '@kit.BasicServicesKit';
 function isRemoteUriExample() {
-  let uri = "file://com.example.demo/data/storage/el2/base/test.txt?networkid=xxxx";// ?networkid设备id，远端URI的标识
+  let uri = 'file://com.example.demo/data/storage/el2/base/test.txt?networkid=xxxx'; // ?networkid设备id，远端URI的标识
   let fileUriObject = new fileUri.FileUri(uri);
   let ret = fileUriObject.isRemoteUri();
   if (ret) {
-      console.info(`It is a remote uri.`);
+    console.info('It is a remote URI.');
   }
 }
 ```
@@ -166,7 +167,7 @@ function isRemoteUriExample() {
 
 getUriFromPath(path: string): string
 
-通过传入的路径path生成应用自己的URI；将path转URI时，路径中的中文及非数字字母的特殊字符将会被编码成对应的ASCII码，拼接在URI中。
+通过传入的路径path生成应用自己的URI；将path转URI时，路径中的中文及非数字字母的特殊字符将会被百分号编码，拼接在URI中。传入路径可通过应用上下文获取，例如context.filesDir。
 
 元服务API：从API version 15开始，该接口支持在元服务中使用。
 
@@ -176,13 +177,13 @@ getUriFromPath(path: string): string
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| path | string | 是 | 文件的沙箱路径。 |
+| path | string | 是 | 文件的沙箱路径。路径中的中文及非数字字母的特殊字符会被百分号编码；参数无效时抛出错误码401。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| string | 通过传入的路径path生成应用自己的URI；将path转URI时，路径中的中文及非数字字母的特殊字符将会被编码成对应的ASCII码，拼接在URI中。 |
+| string | 通过传入的路径path生成的URI。 |
 
 错误码：
 
@@ -190,11 +191,12 @@ getUriFromPath(path: string): string
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | The input parameter is invalid. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types |
+| 401 | The input parameter is invalid. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. |
 
 示例：
 
 ```
-let filePath = pathDir + "/test";
+let pathDir = this.context.filesDir; // 获取应用沙箱路径。
+let filePath = pathDir + '/test';
 let uri = fileUri.getUriFromPath(filePath);
 ```

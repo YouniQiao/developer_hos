@@ -2,13 +2,15 @@
 title: "Class (Brush)"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing-brush"
 catalog: "harmonyos-references"
-content_hash: "59d16c6fe900"
-synced_at: "2026-07-09T01:00:51.095039"
+content_hash: "4ed3dec00382"
+synced_at: "2026-08-29T18:17:49.888038"
 ---
 
 # Class (Brush)
 
-画刷对象，描述所绘制图形的填充信息。
+画刷对象，用于设置图形的填充样式，包括颜色、抗锯齿、混合模式、颜色滤波器、蒙版滤波器、着色器效果、阴影层效果及图像滤波器等，并支持获取颜色、透明度、抗锯齿等属性及重置画刷为初始状态。
+
+画刷需通过Canvas的[attachBrush](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-canvas#attachbrush)方法绑定到画布后生效，绘制完成后通过[detachBrush](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-canvas#detachbrush)方法解绑；画刷用于图形填充，画笔（Pen）用于图形描边，详见[Pen](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-pen)。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -26,7 +28,7 @@ import { drawing } from '@kit.ArkGraphics2D';
 
 constructor()
 
-构造一个新的画刷对象。
+构造一个新的画刷对象。默认配置：新建画刷默认抗锯齿关闭、混合模式为SRC_OVER，且未设置颜色滤波器、蒙版滤波器、着色器效果、阴影层效果和图像滤波器。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -75,7 +77,7 @@ const newBrush = new drawing.Brush(brush);
 
 setColor(color: common2D.Color) : void
 
-设置画刷的颜色。
+设置画刷的颜色。设置的颜色将作为图形填充的基础颜色，在未设置ShaderEffect时以该颜色进行渲染填充。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -83,7 +85,7 @@ setColor(color: common2D.Color) : void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| color | [common2D.Color](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-common2d#color) | 是 | ARGB格式的颜色，每个颜色通道的值是0到255之间的整数。 |
+| color | [common2D.Color](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-common2d#color) | 是 | ARGB格式的颜色，每个颜色通道的取值范围为[0, 255]的整数，传入范围内的浮点数会向下取整。 |
 
 错误码：
 
@@ -115,10 +117,10 @@ setColor(alpha: number, red: number, green: number, blue: number): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| alpha | number | 是 | ARGB格式颜色的透明度通道值，该参数是0到255之间的整数，传入范围内的浮点数会向下取整。 |
-| red | number | 是 | ARGB格式颜色的红色通道值，该参数是0到255之间的整数，传入范围内的浮点数会向下取整。 |
-| green | number | 是 | ARGB格式颜色的绿色通道值，该参数是0到255之间的整数，传入范围内的浮点数会向下取整。 |
-| blue | number | 是 | ARGB格式颜色的蓝色通道值，该参数是0到255之间的整数，传入范围内的浮点数会向下取整。 |
+| alpha | number | 是 | ARGB格式颜色的透明度通道值，取值范围为[0, 255]的整数，传入范围内的浮点数会向下取整。 |
+| red | number | 是 | ARGB格式颜色的红色通道值，取值范围为[0, 255]的整数，传入范围内的浮点数会向下取整。 |
+| green | number | 是 | ARGB格式颜色的绿色通道值，取值范围为[0, 255]的整数，传入范围内的浮点数会向下取整。 |
+| blue | number | 是 | ARGB格式颜色的蓝色通道值，取值范围为[0, 255]的整数，传入范围内的浮点数会向下取整。 |
 
 错误码：
 
@@ -141,7 +143,7 @@ brush.setColor(255, 255, 0, 0);
 
 setColor(color: number) : void
 
-设置画刷的颜色。
+设置画刷的颜色。与[setColor](#setcolor)的区别是支持通过16进制ARGB数值直接设置颜色。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -149,7 +151,7 @@ setColor(color: number) : void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| color | number | 是 | 16进制ARGB格式的颜色。 |
+| color | number | 是 | 16进制ARGB格式的颜色，以32位无符号整数表示，格式为0xAARRGGBB，其中AA为透明度通道，RR为红色通道，GG为绿色通道，BB为蓝色通道，取值范围均为0x00到0xFF，整体取值范围为[0x00000000, 0xFFFFFFFF]。 |
 
 错误码：
 
@@ -172,7 +174,7 @@ brush.setColor(0xffff0000);
 
 setColor4f(color4f: common2D.Color4f, colorSpace: colorSpaceManager.ColorSpaceManager | null): void
 
-设置画刷的颜色以及标准色域，与[setColor](#setcolor)区别在于可以单独设置色域，适用于需要单独设置色域的场景。
+设置画刷的颜色以及标准色域。与[setColor](#setcolor)的区别是可以单独设置色域，适用于需要单独设置色域的场景。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -180,17 +182,17 @@ setColor4f(color4f: common2D.Color4f, colorSpace: colorSpaceManager.ColorSpaceMa
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| color4f | [common2D.Color4f](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-common2d#color4f20) | 是 | ARGB格式的颜色，每个颜色通道的值是0.0-1.0之间的浮点数，大于1.0时，取1.0，小于0.0时，取0.0。 |
-| colorSpace | [colorSpaceManager.ColorSpaceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-colorspacemanager#colorspacemanager) | null | 是 | 标准色域对象，null表示使用SRGB色域。 |
+| color4f | [common2D.Color4f](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-common2d#color4f20) | 是 | ARGB格式的颜色，每个颜色通道的值是0.0-1.0之间的浮点数，大于1.0时，取1.0，小于0.0时，取0.0。颜色值在colorSpace参数指定的色域下进行映射。 |
+| colorSpace | [colorSpaceManager.ColorSpaceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-colorspacemanager#colorspacemanager) | null | 是 | 标准色域对象，需通过[colorSpaceManager.create()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-colorspacemanager#colorspacemanagercreate)方法创建，与color4f配合使用，决定color4f颜色值的映射色域。null表示使用sRGB色域。 |
 
 示例：
 
 ```
-import { common2D, drawing, colorSpaceManager } from "@kit.ArkGraphics2D";
+import { common2D, drawing, colorSpaceManager } from '@kit.ArkGraphics2D';
 
 const brush = new drawing.Brush();
 let colorSpace = colorSpaceManager.create(colorSpaceManager.ColorSpace.BT2020_HLG);
-let color4f:common2D.Color4f = {alpha:1, red:0.5, green:0.4, blue:0.7};
+let color4f: common2D.Color4f = { alpha: 1, red: 0.5, green: 0.4, blue: 0.7 };
 brush.setColor4f(color4f, colorSpace);
 ```
 
@@ -206,7 +208,7 @@ getColor(): common2D.Color
 
 | 类型 | 说明 |
 | --- | --- |
-| common2D.Color | 返回画刷的颜色。 |
+| common2D.Color | 返回画刷的颜色，为ARGB格式的颜色对象，包含alpha、red、green、blue四个通道值，每个通道取值范围为[0, 255]的整数。 |
 
 示例：
 
@@ -216,7 +218,7 @@ import { common2D, drawing } from '@kit.ArkGraphics2D';
 const color : common2D.Color = { alpha: 255, red: 255, green: 0, blue: 0 };
 const brush = new drawing.Brush();
 brush.setColor(color);
-let colorGet = brush.getColor();
+let currentColor = brush.getColor();
 ```
 
 #### getColor4f20+
@@ -231,16 +233,16 @@ getColor4f(): common2D.Color4f
 
 | 类型 | 说明 |
 | --- | --- |
-| [common2D.Color4f](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-common2d#color4f20) | 返回画刷的颜色。 |
+| [common2D.Color4f](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-common2d#color4f20) | 返回画刷的颜色，为浮点数格式的ARGB颜色对象，每个通道值为[0.0, 1.0]之间的浮点数。 |
 
 示例：
 
 ```
-import { common2D, drawing, colorSpaceManager } from "@kit.ArkGraphics2D";
+import { common2D, drawing, colorSpaceManager } from '@kit.ArkGraphics2D';
 
 const brush = new drawing.Brush();
 let colorSpace = colorSpaceManager.create(colorSpaceManager.ColorSpace.BT2020_HLG);
-let color4f:common2D.Color4f = {alpha:1, red:0.5, green:0.4, blue:0.7};
+let color4f: common2D.Color4f = { alpha: 1, red: 0.5, green: 0.4, blue: 0.7 };
 brush.setColor4f(color4f, colorSpace);
 let color = brush.getColor4f();
 ```
@@ -249,7 +251,7 @@ let color = brush.getColor4f();
 
 getHexColor(): number
 
-获取画刷的颜色。
+获取画刷颜色的16进制ARGB格式值。与[getColor](#getcolor12)的区别是返回值类型为16进制ARGB格式的32位无符号整数。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -267,15 +269,15 @@ import { common2D, drawing } from '@kit.ArkGraphics2D';
 let color : common2D.Color = { alpha: 255, red: 255, green: 0, blue: 0 };
 let brush = new drawing.Brush();
 brush.setColor(color);
-let hex_color: number = brush.getHexColor();
-console.info('getHexColor: ', hex_color.toString(16));
+let hexColor: number = brush.getHexColor();
+console.info('getHexColor: ', hexColor.toString(16));
 ```
 
 #### setAntiAlias
 
 setAntiAlias(aa: boolean) : void
 
-设置画刷是否开启抗锯齿。开启后，可以使得图形的边缘在显示时更平滑。未调用此接口设置时，系统默认关闭抗锯齿。
+设置画刷是否开启抗锯齿。开启后，图形边缘显示更平滑。未调用此接口设置时，系统默认关闭抗锯齿。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -329,7 +331,7 @@ let isAntiAlias = brush.isAntiAlias();
 
 setAlpha(alpha: number) : void
 
-设置画刷的透明度。
+设置画刷的透明度。调用setAlpha后，渲染时以setAlpha设置的透明度为准，覆盖setColor中Color对象的alpha通道值。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -337,7 +339,7 @@ setAlpha(alpha: number) : void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| alpha | number | 是 | 用于表示透明度的[0, 255]区间内的整数值，传入浮点类型时向下取整。 |
+| alpha | number | 是 | 用于表示透明度的取值范围为[0, 255]的整数，传入范围内的浮点数会向下取整。 |
 
 错误码：
 
@@ -368,7 +370,7 @@ getAlpha(): number
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 返回画刷的透明度，该返回值为0到255之间的整数。 |
+| number | 返回画刷的透明度，取值范围为[0, 255]的整数。 |
 
 示例：
 
@@ -383,7 +385,7 @@ let alpha = brush.getAlpha();
 
 setColorFilter(filter: ColorFilter | null) : void
 
-给画刷添加额外的颜色滤波器。
+设置画刷的颜色滤波器。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -391,7 +393,7 @@ setColorFilter(filter: ColorFilter | null) : void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| filter | [ColorFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-colorfilter) | null | 是 | 颜色滤波器。null表示清空颜色滤波器。 |
+| filter | [ColorFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-colorfilter) | null | 是 | 颜色滤波器，用于对绘制内容进行颜色调整（如伽马校正、颜色矩阵变换等）。null表示清空颜色滤波器。 |
 
 错误码：
 
@@ -415,7 +417,7 @@ brush.setColorFilter(colorFilter);
 
 setMaskFilter(filter: MaskFilter | null): void
 
-给画刷添加额外的蒙版滤镜。
+设置画刷的蒙版滤波器。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -423,7 +425,7 @@ setMaskFilter(filter: MaskFilter | null): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| filter | [MaskFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-maskfilter) | null | 是 | 蒙版滤镜。null表示清空蒙版滤镜。 |
+| filter | [MaskFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-maskfilter) | null | 是 | 蒙版滤波器，用于对绘制图形边缘进行模糊处理等场景。null表示清空蒙版滤波器。 |
 
 错误码：
 
@@ -436,12 +438,11 @@ setMaskFilter(filter: MaskFilter | null): void
 示例：
 
 ```
-import { RenderNode } from '@kit.ArkUI';
-import { common2D, drawing } from '@kit.ArkGraphics2D';
+import { RenderNode, DrawContext } from '@kit.ArkUI';
+import { drawing } from '@kit.ArkGraphics2D';
 
 class DrawingRenderNode extends RenderNode {
   draw(context : DrawContext) {
-    const canvas = context.canvas;
     const brush = new drawing.Brush();
     let maskFilter = drawing.MaskFilter.createBlurMaskFilter(drawing.BlurType.OUTER, 10);
     brush.setMaskFilter(maskFilter);
@@ -453,7 +454,7 @@ class DrawingRenderNode extends RenderNode {
 
 setShaderEffect(shaderEffect: ShaderEffect | null): void
 
-设置画刷着色器效果。
+设置画刷的着色器效果。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -461,7 +462,7 @@ setShaderEffect(shaderEffect: ShaderEffect | null): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| shaderEffect | [ShaderEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-shadereffect) | null | 是 | 着色器对象。null表示清空着色器效果。 |
+| shaderEffect | [ShaderEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-shadereffect) | null | 是 | 着色器效果对象，用于实现渐变填充、图案填充等复杂绘制效果。null表示清空着色器效果。 |
 
 错误码：
 
@@ -485,7 +486,7 @@ brush.setShaderEffect(shaderEffect);
 
 setShadowLayer(shadowLayer: ShadowLayer | null): void
 
-设置画刷阴影层效果。当前仅在绘制文字时生效。
+设置画刷的阴影层效果。当前仅在通过Canvas的[drawTextBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-canvas#drawtextblob)等方法绘制文字时生效。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -493,7 +494,7 @@ setShadowLayer(shadowLayer: ShadowLayer | null): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| shadowLayer | [ShadowLayer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-shadowlayer) | null | 是 | 阴影层对象。null表示清空阴影层效果。 |
+| shadowLayer | [ShadowLayer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-shadowlayer) | null | 是 | 阴影层对象，用于给画刷添加阴影效果。null表示清空阴影层效果。该阴影层效果仅在绘制文字时生效。 |
 
 错误码：
 
@@ -506,7 +507,7 @@ setShadowLayer(shadowLayer: ShadowLayer | null): void
 示例：
 
 ```
-import { RenderNode } from '@kit.ArkUI';
+import { RenderNode, DrawContext } from '@kit.ArkUI';
 import { common2D, drawing } from '@kit.ArkGraphics2D';
 
 class DrawingRenderNode extends RenderNode {
@@ -515,12 +516,12 @@ class DrawingRenderNode extends RenderNode {
     let font = new drawing.Font();
     font.setSize(60);
 
-    let textBlob = drawing.TextBlob.makeFromString("hello", font, drawing.TextEncoding.TEXT_ENCODING_UTF8);
+    let textBlob = drawing.TextBlob.makeFromString('hello', font, drawing.TextEncoding.TEXT_ENCODING_UTF8);
     let pen = new drawing.Pen();
     pen.setStrokeWidth(2.0);
 
-    let pen_color : common2D.Color = {alpha: 0xFF, red: 0xFF, green: 0x00, blue: 0x00};
-    pen.setColor(pen_color);
+    let penColor : common2D.Color = {alpha: 0xFF, red: 0xFF, green: 0x00, blue: 0x00};
+    pen.setColor(penColor);
     canvas.attachPen(pen);
     canvas.drawTextBlob(textBlob, 100, 100);
     canvas.detachPen();
@@ -533,8 +534,8 @@ class DrawingRenderNode extends RenderNode {
     canvas.detachPen();
 
     let brush = new drawing.Brush();
-    let brush_color : common2D.Color = {alpha: 0xFF, red: 0xFF, green: 0x00, blue: 0x00};
-    brush.setColor(brush_color);
+    let brushColor : common2D.Color = {alpha: 0xFF, red: 0xFF, green: 0x00, blue: 0x00};
+    brush.setColor(brushColor);
     canvas.attachBrush(brush);
     canvas.drawTextBlob(textBlob, 300, 100);
     canvas.detachBrush();
@@ -559,7 +560,7 @@ setBlendMode(mode: BlendMode) : void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| mode | [BlendMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-e#blendmode) | 是 | 颜色的混合模式。 |
+| mode | [BlendMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-e#blendmode) | 是 | 颜色的混合模式，用于控制绘制时源颜色与已有目标颜色的混合方式。未调用此接口设置时，系统默认的混合模式为SRC_OVER。 |
 
 错误码：
 
@@ -582,7 +583,7 @@ brush.setBlendMode(drawing.BlendMode.SRC);
 
 setImageFilter(filter: ImageFilter | null): void
 
-为画刷设置图像滤波器。
+设置画刷的图像滤波器。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -590,7 +591,7 @@ setImageFilter(filter: ImageFilter | null): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| filter | [ImageFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-imagefilter) | null | 是 | 图像滤波器，null表示清空图像滤波器效果。 |
+| filter | [ImageFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-imagefilter) | null | 是 | 图像滤波器，用于对绘制内容进行模糊、锐化等图像处理。null表示清空图像滤波器。 |
 
 错误码：
 
@@ -603,11 +604,11 @@ setImageFilter(filter: ImageFilter | null): void
 示例：
 
 ```
-import {drawing} from '@kit.ArkGraphics2D';
+import { drawing } from '@kit.ArkGraphics2D';
 
 let brush = new drawing.Brush();
-let imgFilter = drawing.ImageFilter.createBlurImageFilter(5, 10, drawing.TileMode.DECAL);
-brush.setImageFilter(imgFilter);
+let imageFilter = drawing.ImageFilter.createBlurImageFilter(5, 10, drawing.TileMode.DECAL);
+brush.setImageFilter(imageFilter);
 brush.setImageFilter(null);
 ```
 
@@ -623,24 +624,24 @@ getColorFilter(): ColorFilter
 
 | 类型 | 说明 |
 | --- | --- |
-| [ColorFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-colorfilter) | 返回颜色滤波器。 |
+| [ColorFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-colorfilter) | 返回画刷的颜色滤波器，用于对绘制内容进行颜色调整，如伽马校正、颜色矩阵变换等。 |
 
 示例：
 
 ```
-import {drawing} from '@kit.ArkGraphics2D';
+import { drawing } from '@kit.ArkGraphics2D';
 
 let brush = new drawing.Brush();
-let setColorFilter = drawing.ColorFilter.createSRGBGammaToLinear();
-brush.setColorFilter(setColorFilter);
-let filter = brush.getColorFilter();
+let colorFilter = drawing.ColorFilter.createSRGBGammaToLinear();
+brush.setColorFilter(colorFilter);
+let currentFilter = brush.getColorFilter();
 ```
 
 #### reset12+
 
 reset(): void
 
-重置当前画刷为初始状态。
+重置当前画刷为初始状态，清除已设置的颜色、透明度、抗锯齿、颜色滤波器、蒙版滤波器、着色器效果、阴影层效果、混合模式和图像滤波器等属性。初始状态的具体取值：抗锯齿关闭、混合模式为SRC_OVER，且未设置颜色滤波器、蒙版滤波器、着色器效果、阴影层效果和图像滤波器。如需使用上述属性，需要重新调用对应的set接口进行设置。
 
 系统能力： SystemCapability.Graphics.Drawing
 

@@ -2,13 +2,30 @@
 title: "@ohos.application.DistributedExtensionAbility (协同Extension)"
 upstream_id: "harmonyos-references/js-apis-distributedextensionability"
 catalog: "harmonyos-references"
-content_hash: "68614e13df35"
-synced_at: "2026-07-28T16:50:40.878898"
+content_hash: "c8703d37ef32"
+synced_at: "2026-08-29T18:16:40.056897"
 ---
 
 # @ohos.application.DistributedExtensionAbility (协同Extension)
 
-DistributedExtensionAbility模块提供分布式相关扩展能力，提供分布式创建、销毁、连接的生命周期回调。
+DistributedExtensionAbility（分布式扩展能力）模块提供了面向多设备限定协同场景（如：面向穿戴和手机间的专有通讯服务）下的扩展能力基类。
+
+该模块作为多设备限定协同场景扩展能力基类，主要包含以下能力：
+
+- **生命周期管理**：提供onCreate（创建）、onCollaborate（协同）、onDestroy（销毁）三个生命周期回调，覆盖协同Extension从创建到销毁的完整生命周期，使应用能够在不同阶段执行初始化、协同决策和资源清理等业务逻辑。
+- **协同决策**：通过onCollaborate回调，应用在被跨设备拉起过程中，可根据调用方传输的协同参数自主决定是否接受协同请求（ACCEPT/REJECT），从而灵活控制协同流程是否继续。
+- **上下文环境**：提供distributedExtensionContext上下文环境，支持连接和断开远端ServiceExtensionAbility，实现跨设备的服务调用与数据互通。
+
+协同Extension的核心类结构及其与上下文、自定义子类的关系如下图所示。
+
+![](./img/zh-cn_image_0000002731519783.png)
+
+如上图所示：
+
+- **继承关系**：DistributedExtensionContext 继承自 ExtensionContext（扩展上下文）；开发者自定义子类继承自 DistributedExtensionAbility。
+- **组合关系**：DistributedExtensionAbility 持有 context 属性，类型为 DistributedExtensionContext，提供连接/断开远端 ServiceExtensionAbility 等协同能力。
+
+开发者通过继承 DistributedExtensionAbility 并实现 onCreate、onCollaborate、onDestroy 生命周期回调，即可获得多设备限定协同场景相应能力。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 20开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -17,7 +34,7 @@ DistributedExtensionAbility模块提供分布式相关扩展能力，提供分�
 #### 导入模块
 
 ```
-import { DistributedExtensionAbility} from '@kit.DistributedServiceKit';
+import { DistributedExtensionAbility } from '@kit.DistributedServiceKit';
 ```
 
 #### DistributedExtensionAbility
@@ -32,7 +49,7 @@ import { DistributedExtensionAbility} from '@kit.DistributedServiceKit';
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| context | DistributedExtensionContext | 否 | 否 | DistributedExtension的上下文环境，继承自ExtensionContext。 |
+| context | DistributedExtensionContext | 否 | 否 | DistributedExtension（协同Extension）的上下文环境，继承自ExtensionContext。 |
 
 #### [h2]onCreate
 
@@ -50,7 +67,7 @@ Extension生命周期回调，在创建时回调，执行初始化业务逻辑�
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| want | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 当前Extension相关的Want类型信息，包括ability名称、bundle名称等。 |
+| want | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 当前Extension相关的Want信息，用于携带创建Extension所需的初始化配置信息。 |
 
 示例：
 
@@ -69,9 +86,9 @@ export default class DistributedExtension extends DistributedExtensionAbility {
 
 #### [h2]onCollaborate
 
-onCollaborate(wantParam: Record <string, Object>) : AbilityConstant.CollaborateResult
+onCollaborate(wantParam: Record<string, Object>): AbilityConstant.CollaborateResult
 
-多设备协作场景下返回协作结果的回调。
+Extension生命周期回调，在多设备限定协同场景下，协同方应用被拉起过程中返回是否接受协同的结果，返回结果决定协同流程是否继续。
 
 模型约束：此接口仅可在Stage模型下使用。
 
@@ -83,13 +100,13 @@ onCollaborate(wantParam: Record <string, Object>) : AbilityConstant.CollaborateR
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| wantParam | Record | 是 | want相关参数，仅支持key值取"ohos.extra.param.key.supportCollaborateIndex"。通过该key值可以获取到调用方传输的数据并进行相应的处理。 |
+| wantParam | Record | 是 | 协同回调参数，键值对对象，携带调用方传输的协同相关数据。开发者可通过"ohos.extra.param.key.supportCollaborateIndex"和"CollaborationValues"等key值获取这些数据，以决定是否接受协同请求及处理协同逻辑，影响协同流程是否继续。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| [AbilityConstant.CollaborateResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-abilityconstant#collaborateresult18) | 协同方应用是否接受协同。 |
+| [AbilityConstant.CollaborateResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-abilityconstant#collaborateresult18) | 表示协同方应用是否接受协同的结果。取值包括：**ACCEPT**表示接受协同，协同流程继续；**REJECT**表示拒绝协同，协同流程终止。 |
 
 示例
 
@@ -102,7 +119,8 @@ export default class DistributedExtension extends DistributedExtensionAbility {
     console.info(`DistributedExtension onCollabRequest Accept to the result of Ability collaborate`);
     let sessionId = -1;
     const collaborationValues = wantParam["CollaborationValues"] as abilityConnectionManager.CollaborationValues;
-    if (collaborationValues == undefined) {
+    if (!collaborationValues) {
+      console.error('Failed to get collaborationValues.');
       return sessionId;
     }
     console.info(`onCollab, collaborationValues: ${JSON.stringify(collaborationValues)}`);

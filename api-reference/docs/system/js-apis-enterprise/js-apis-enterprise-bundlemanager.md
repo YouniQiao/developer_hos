@@ -2,8 +2,8 @@
 title: "@ohos.enterprise.bundleManager（包管理）"
 upstream_id: "harmonyos-references/js-apis-enterprise-bundlemanager"
 catalog: "harmonyos-references"
-content_hash: "bf1b76f161a1"
-synced_at: "2026-07-28T16:51:10.329302"
+content_hash: "d3ffa8861911"
+synced_at: "2026-08-29T18:17:07.107354"
 ---
 
 # @ohos.enterprise.bundleManager（包管理）
@@ -134,9 +134,11 @@ try {
 
 #### bundleManager.getAllowedInstallBundlesSync
 
-getAllowedInstallBundlesSync(admin: Want | null, accountId?: number): Array<string>
+getAllowedInstallBundlesSync(admin: Want, accountId?: number): Array<string>
 
 获取当前/指定用户下的应用程序包安装允许名单。
+
+本接口通过传入Want查询对应企业设备管理应用设置的策略，如需查询实际生效的策略，请使用[bundleManager.getAllowedInstallBundlesSync](#bundlemanagergetallowedinstallbundlessync-1)接口。
 
 需要权限： ohos.permission.ENTERPRISE_SET_BUNDLE_INSTALL_POLICY
 
@@ -148,7 +150,7 @@ getAllowedInstallBundlesSync(admin: Want | null, accountId?: number): Array<stri
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，API版本26.0.0之前，传入Want时查询对应企业设备管理应用设置的策略。从API版本26.0.0开始，新增支持传入null时查询实际生效的策略。 |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
 | accountId | number | 否 | 用户ID，取值范围：大于等于0。 accountId可以通过@ohos.account.osAccount中的[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9-1)等接口来获取。 - 调用接口时，若传入accountId，表示指定用户。 - 调用接口时，若未传入accountId，表示当前用户。 |
 
 返回值：
@@ -182,6 +184,58 @@ let wantTemp: Want = {
 
 try {
   let result: Array<string> = bundleManager.getAllowedInstallBundlesSync(wantTemp, 100);
+  console.info(`Succeeded in getting allowed install bundles, result : ${JSON.stringify(result)}`);
+} catch (err) {
+  console.error(`Failed to get allowed install bundles. Code is ${err.code}, message is ${err.message}`);
+}
+```
+
+#### bundleManager.getAllowedInstallBundlesSync
+
+getAllowedInstallBundlesSync(admin: Want | null, accountId?: number): Array<string>
+
+获取当前/指定用户下的应用程序包安装允许名单。
+
+起始版本： 26.0.0
+
+需要权限： ohos.permission.ENTERPRISE_SET_BUNDLE_INSTALL_POLICY
+
+系统能力： SystemCapability.Customization.EnterpriseDeviceManager
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，传入Want时查询对应企业设备管理应用设置的策略，传入null时查询实际生效的策略。 |
+| accountId | number | 否 | 用户ID，取值范围：大于等于0。 accountId可以通过@ohos.account.osAccount中的[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9-1)等接口来获取。 - 调用接口时，若传入accountId，表示指定用户。 - 调用接口时，若未传入accountId，表示当前用户。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Array | 返回当前/指定用户下的应用程序包安装允许名单。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[企业设备管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprisedevicemanager)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 9200001 | The application is not an administrator application of the device. |
+| 9200002 | The administrator application does not have permission to manage the device. |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+
+示例：
+
+```
+import { bundleManager } from '@kit.MDMKit';
+
+try {
+  // 参数需根据实际情况进行替换
+  let result: Array<string> = bundleManager.getAllowedInstallBundlesSync(null, 100);
   console.info(`Succeeded in getting allowed install bundles, result : ${JSON.stringify(result)}`);
 } catch (err) {
   console.error(`Failed to get allowed install bundles. Code is ${err.code}, message is ${err.message}`);
@@ -291,7 +345,7 @@ let wantTemp: Want = {
 let appIds: Array<string> = ['com.example.******_******/******5t5CoBM='];
 
 try {
-  bundleManager.removeDisallowedInstallBundlesSync(wantTemp, appIds, 100)
+  bundleManager.removeDisallowedInstallBundlesSync(wantTemp, appIds, 100);
   console.info('Succeeded in removing disallowed install bundles.');
 } catch (err) {
   console.error(`Failed to remove disallowed install bundles. Code is ${err.code}, message is ${err.message}`);
@@ -300,9 +354,11 @@ try {
 
 #### bundleManager.getDisallowedInstallBundlesSync
 
-getDisallowedInstallBundlesSync(admin: Want | null, accountId?: number): Array<string>
+getDisallowedInstallBundlesSync(admin: Want, accountId?: number): Array<string>
 
 获取当前/指定用户下的应用程序包安装禁止名单。
+
+本接口通过传入Want查询对应企业设备管理应用设置的策略，如需查询实际生效的策略，请使用[bundleManager.getDisallowedInstallBundlesSync](#bundlemanagergetdisallowedinstallbundlessync-1)接口。
 
 需要权限： ohos.permission.ENTERPRISE_SET_BUNDLE_INSTALL_POLICY
 
@@ -314,14 +370,14 @@ getDisallowedInstallBundlesSync(admin: Want | null, accountId?: number): Array<s
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，API版本26.0.0之前，传入Want时查询对应企业设备管理应用设置的策略。从API版本26.0.0开始，新增支持传入null时查询实际生效的策略。 |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
 | accountId | number | 否 | 用户ID，取值范围：大于等于0。 accountId可以通过@ohos.account.osAccount中的[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9-1)等接口来获取。 - 调用接口时，若传入accountId，表示指定用户。 - 调用接口时，若未传入accountId，表示当前用户。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| Array | 返回当前/指定用户下的应用程序包安装允许名单。 |
+| Array | 返回当前/指定用户下的应用程序包安装禁止名单。 |
 
 错误码：
 
@@ -349,6 +405,59 @@ let wantTemp: Want = {
 try {
   // 参数需根据实际情况进行替换
   let result: Array<string> = bundleManager.getDisallowedInstallBundlesSync(wantTemp, 100);
+  console.info(`Succeeded in getting disallowed install bundles, result : ${JSON.stringify(result)}`);
+} catch (err) {
+  console.error(`Failed to get disallowed install bundles. Code is ${err.code}, message is ${err.message}`);
+}
+```
+
+#### bundleManager.getDisallowedInstallBundlesSync
+
+getDisallowedInstallBundlesSync(admin: Want | null, accountId?: number): Array<string>
+
+获取当前/指定用户下的应用程序包安装禁止名单。
+
+起始版本： 26.0.0
+
+需要权限： ohos.permission.ENTERPRISE_SET_BUNDLE_INSTALL_POLICY
+
+系统能力： SystemCapability.Customization.EnterpriseDeviceManager
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，传入Want时查询对应企业设备管理应用设置的策略，传入null时查询实际生效的策略。 |
+| accountId | number | 否 | 用户ID，取值范围：大于等于0。 accountId可以通过@ohos.account.osAccount中的[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9-1)等接口来获取。 - 调用接口时，若传入accountId，表示指定用户。 - 调用接口时，若未传入accountId，表示当前用户。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Array | 返回当前/指定用户下的应用程序包安装禁止名单。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[企业设备管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprisedevicemanager)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 9200001 | The application is not an administrator application of the device. |
+| 9200002 | The administrator application does not have permission to manage the device. |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+
+示例：
+
+```
+import { bundleManager } from '@kit.MDMKit';
+
+try {
+  // 参数需根据实际情况进行替换
+  // 参数需根据实际情况进行替换
+  let result: Array<string> = bundleManager.getDisallowedInstallBundlesSync(null, 100);
   console.info(`Succeeded in getting disallowed install bundles, result : ${JSON.stringify(result)}`);
 } catch (err) {
   console.error(`Failed to get disallowed install bundles. Code is ${err.code}, message is ${err.message}`);
@@ -469,9 +578,11 @@ try {
 
 #### bundleManager.getDisallowedUninstallBundlesSync
 
-getDisallowedUninstallBundlesSync(admin: Want | null, accountId?: number): Array<string>
+getDisallowedUninstallBundlesSync(admin: Want, accountId?: number): Array<string>
 
 获取当前/指定用户下包卸载禁止名单。
+
+本接口通过传入Want查询对应企业设备管理应用设置的策略，如需查询实际生效的策略，请使用[bundleManager.getDisallowedUninstallBundlesSync](#bundlemanagergetdisalloweduninstallbundlessync-1)接口。
 
 需要权限： ohos.permission.ENTERPRISE_SET_BUNDLE_INSTALL_POLICY
 
@@ -483,14 +594,14 @@ getDisallowedUninstallBundlesSync(admin: Want | null, accountId?: number): Array
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，API版本26.0.0之前，传入Want时查询对应企业设备管理应用设置的策略。从API版本26.0.0开始，新增支持传入null时查询实际生效的策略。 |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
 | accountId | number | 否 | 用户ID，取值范围：大于等于0。 accountId可以通过@ohos.account.osAccount中的[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9-1)等接口来获取。 - 调用接口时，若传入accountId，表示指定用户。 - 调用接口时，若未传入accountId，表示当前用户。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| Array | 返回当前/指定用户下的应用程序包安装允许名单。 |
+| Array | 返回当前/指定用户下的包卸载禁止名单。 |
 
 错误码：
 
@@ -524,11 +635,64 @@ try {
 }
 ```
 
+#### bundleManager.getDisallowedUninstallBundlesSync
+
+getDisallowedUninstallBundlesSync(admin: Want | null, accountId?: number): Array<string>
+
+获取当前/指定用户下包卸载禁止名单。
+
+起始版本： 26.0.0
+
+需要权限： ohos.permission.ENTERPRISE_SET_BUNDLE_INSTALL_POLICY
+
+系统能力： SystemCapability.Customization.EnterpriseDeviceManager
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，传入Want时查询对应企业设备管理应用设置的策略，传入null时查询实际生效的策略。 |
+| accountId | number | 否 | 用户ID，取值范围：大于等于0。 accountId可以通过@ohos.account.osAccount中的[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9-1)等接口来获取。 - 调用接口时，若传入accountId，表示指定用户。 - 调用接口时，若未传入accountId，表示当前用户。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Array | 返回当前/指定用户下的包卸载禁止名单。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[企业设备管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprisedevicemanager)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 9200001 | The application is not an administrator application of the device. |
+| 9200002 | The administrator application does not have permission to manage the device. |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+
+示例：
+
+```
+import { bundleManager } from '@kit.MDMKit';
+
+try {
+  // 参数需根据实际情况进行替换
+  // 参数需根据实际情况进行替换
+  let result: Array<string> = bundleManager.getDisallowedUninstallBundlesSync(null, 100);
+  console.info(`Succeeded in getting disallowed uninstall bundles, result : ${JSON.stringify(result)}`);
+} catch (err) {
+  console.error(`Failed to get disallowed uninstall bundles. Code is ${err.code}, message is ${err.message}`);
+}
+```
+
 #### bundleManager.uninstall
 
 uninstall(admin: Want, bundleName: string, userId?: number, isKeepData?: boolean): Promise<void>
 
-卸载当前/指定用户下的指定包接口，选择是否保留包数据（由isKeepData指定）。使用Promise异步回调。
+卸载当前/指定用户下的指定包，选择是否保留包数据（由isKeepData指定）。使用Promise异步回调。调用成功后，应用被卸载，数据根据isKeepData参数保留或删除。
 
 ![](./img/note_3.0-zh-cn.png) 当应用为不可卸载的预置应用或者通过[addDisallowedUninstallBundlesSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-bundlemanager#bundlemanageradddisalloweduninstallbundlessync)接口设置了不允许卸载时，调用此接口卸载应用会返回401错误码。
 
@@ -606,7 +770,7 @@ install(admin: Want, hapFilePaths: Array<string>, installParam?: InstallParam): 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
-| hapFilePaths | Array | 是 | 待安装应用包路径数组。应用包路径为应用沙箱路径(应用沙箱路径和真实路径的对应关系可参见：[应用沙箱路径和真实物理路径的对应关系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory#应用沙箱路径和真实物理路径的对应关系))等应用有权限访问的路径。 |
+| hapFilePaths | Array | 是 | 待安装应用包路径数组。应用包路径为应用沙箱路径(应用沙箱路径和真实路径的对应关系可参见：[应用沙箱路径和真实物理路径的对应关系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory#应用沙箱路径和真实物理路径的对应关系))等应用有权限访问的路径，所有路径必须属于同一应用。 |
 | installParam | [InstallParam](#installparam) | 否 | 应用包安装参数。 |
 
 返回值：
@@ -816,7 +980,7 @@ getInstalledBundleList(admin: Want, accountId: number): Promise<Array<BundleInfo
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
-| accountId | number | 是 | 用户ID，取值为正整数，取值范围：大于等于0。 accountId可以通过@ohos.account.osAccount中的[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9-1)等接口来获取。 |
+| accountId | number | 是 | 用户ID，取值范围：大于等于0。 accountId可以通过@ohos.account.osAccount中的[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9-1)等接口来获取。 |
 
 返回值：
 
@@ -872,7 +1036,7 @@ getInstalledBundleList(admin: Want, accountId: number, bundleInfoGetFlag: number
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
-| accountId | number | 是 | 用户ID，取值为正整数，取值范围：大于等于0。 accountId可以通过@ohos.account.osAccount中的[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9-1)等接口来获取。 |
+| accountId | number | 是 | 用户ID，取值范围：大于等于0。 accountId可以通过@ohos.account.osAccount中的[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9-1)等接口来获取。 |
 | [bundleInfoGetFlag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-bundlemanager#bundleinfogetflag23) | number | 是 | 指定返回的BundleInfo所包含的信息。 |
 
 返回值：
@@ -1024,9 +1188,11 @@ try {
 
 #### bundleManager.getInstallationAllowedAppDistributionTypes20+
 
-getInstallationAllowedAppDistributionTypes(admin: Want | null): Array<AppDistributionType>
+getInstallationAllowedAppDistributionTypes(admin: Want): Array<AppDistributionType>
 
 获取可安装的应用程序签名证书的分发类型。
+
+本接口通过传入Want查询对应企业设备管理应用设置的策略，如需查询实际生效的策略，请使用[bundleManager.getInstallationAllowedAppDistributionTypes](#bundlemanagergetinstallationallowedappdistributiontypes)接口。
 
 需要权限： ohos.permission.ENTERPRISE_SET_BUNDLE_INSTALL_POLICY
 
@@ -1038,7 +1204,7 @@ getInstallationAllowedAppDistributionTypes(admin: Want | null): Array<AppDistrib
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，API版本26.0.0之前，传入Want时查询对应企业设备管理应用设置的策略。从API版本26.0.0开始，新增支持传入null时查询实际生效的策略。 |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
 
 返回值：
 
@@ -1068,7 +1234,59 @@ let wantTemp: Want = {
   abilityName: 'EnterpriseAdminAbility'
 };
 try {
-  let result: Array<bundleManager.AppDistributionType> = bundleManager.getInstallationAllowedAppDistributionTypes(wantTemp);
+  let result: Array<bundleManager.AppDistributionType> =
+    bundleManager.getInstallationAllowedAppDistributionTypes(wantTemp);
+  console.info(`Succeeded in getting allowed appDistributionTypes. Result: ${JSON.stringify(result)}`);
+} catch (err) {
+  console.error(`Failed to get allowed appDistributionTypes. Code: ${err.code}, message: ${err.message}`);
+}
+```
+
+#### bundleManager.getInstallationAllowedAppDistributionTypes
+
+getInstallationAllowedAppDistributionTypes(admin: Want | null): Array<AppDistributionType>
+
+获取可安装的应用程序签名证书的分发类型。
+
+起始版本： 26.0.0
+
+需要权限： ohos.permission.ENTERPRISE_SET_BUNDLE_INSTALL_POLICY
+
+系统能力： SystemCapability.Customization.EnterpriseDeviceManager
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，传入Want时查询对应企业设备管理应用设置的策略，传入null时查询实际生效的策略。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Array | 应用程序签名证书的分发类型数组。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[企业设备管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprisedevicemanager)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 9200001 | The application is not an administrator application of the device. |
+| 9200002 | The administrator application does not have permission to manage the device. |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
+
+示例：
+
+```
+import { bundleManager } from '@kit.MDMKit';
+
+try {
+  // 参数需根据实际情况进行替换
+  let result: Array<bundleManager.AppDistributionType> =
+    bundleManager.getInstallationAllowedAppDistributionTypes(null);
   console.info(`Succeeded in getting allowed appDistributionTypes. Result: ${JSON.stringify(result)}`);
 } catch (err) {
   console.error(`Failed to get allowed appDistributionTypes. Code: ${err.code}, message: ${err.message}`);
@@ -1081,7 +1299,7 @@ installMarketApps(admin: Want, bundleNames: Array<string>): void
 
 下载并安装应用市场应用。
 
-![](./img/note_3.0-zh-cn.png) 本接口调用成功后会在桌面上生成应用下载任务，此任务与从应用市场下载所创建任务一致。下载安装结束后，安装结果会通过回调[EnterpriseAdminExtensionAbility.onMarketAppInstallResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterpriseadminextensionability#onmarketappinstallresult22)返回。
+![](./img/note_3.0-zh-cn.png) 本接口调用成功后会在桌面上生成应用下载任务，此任务与从应用市场下载所创建任务一致，静默下载无需跳转到应用市场。下载安装结束后，安装结果会通过回调[EnterpriseAdminExtensionAbility.onMarketAppInstallResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterpriseadminextensionability#onmarketappinstallresult22)返回。
 
 注意事项：
 
@@ -1130,11 +1348,11 @@ let wantTemp: Want = {
   abilityName: 'EnterpriseAdminAbility'
 };
 // 需根据实际情况进行替换
-let bundleNames: Array<string> = [ 'com.huaweicloud.m' ];
+let bundleNames: Array<string> = ['com.huaweicloud.m'];
 try {
   bundleManager.installMarketApps(wantTemp, bundleNames);
   console.info(`Succeeded in installing market apps.`);
-} catch(err) {
+} catch (err) {
   console.error(`Failed to install market apps. Code: ${err.code}, message: ${err.message}`);
 }
 ```
@@ -1217,7 +1435,7 @@ bundleManager.getInstalledBundleStorageStats(wantTemp, bundleNames, accountId).t
     "dataSize": 1216566
   },
   // ...
-]
+];
 ```
 
 #### InstallParam
@@ -1225,6 +1443,8 @@ bundleManager.getInstalledBundleStorageStats(wantTemp, bundleNames, accountId).t
 应用包安装需指定的参数信息。
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
@@ -1237,6 +1457,8 @@ bundleManager.getInstalledBundleStorageStats(wantTemp, bundleNames, accountId).t
 应用程序签名证书的分发类型。详细介绍请参见[ApplicationInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-applicationinfo#applicationinfo-1)的appDistributionType属性。
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
@@ -1252,6 +1474,8 @@ bundleManager.getInstalledBundleStorageStats(wantTemp, bundleNames, accountId).t
 描述应用包信息。
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
@@ -1274,6 +1498,8 @@ bundleManager.getInstalledBundleStorageStats(wantTemp, bundleNames, accountId).t
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | appId | string | 是 | 否 | 应用的appId，表示应用的唯一标识，详情信息可参考[什么是appId](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appid)。 |
@@ -1286,6 +1512,8 @@ bundleManager.getInstalledBundleStorageStats(wantTemp, bundleNames, accountId).t
 应用程序信息。
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
@@ -1322,6 +1550,8 @@ bundleManager.getInstalledBundleStorageStats(wantTemp, bundleNames, accountId).t
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | bundleName | string | 否 | 否 | 应用的bundle名称。 |
@@ -1333,6 +1563,8 @@ bundleManager.getInstalledBundleStorageStats(wantTemp, bundleNames, accountId).t
 包信息获取标志，指示需要获取的包信息的内容。
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |

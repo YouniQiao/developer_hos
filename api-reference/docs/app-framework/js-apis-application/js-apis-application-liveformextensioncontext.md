@@ -2,13 +2,13 @@
 title: "LiveFormExtensionContext"
 upstream_id: "harmonyos-references/js-apis-application-liveformextensioncontext"
 catalog: "harmonyos-references"
-content_hash: "e742153544ee"
-synced_at: "2026-07-09T00:59:03.215082"
+content_hash: "f7aa05c6b20b"
+synced_at: "2026-08-29T18:16:12.079069"
 ---
 
 # LiveFormExtensionContext
 
-LiveFormExtensionContext是[LiveFormExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-liveformextensionability)的上下文，继承自[ExtensionContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-extensioncontext)。
+LiveFormExtensionContext是[LiveFormExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-liveformextensionability)的上下文，继承自[ExtensionContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-extensioncontext)。它提供访问特定于LiveFormExtensionAbility资源的能力，支持在互动卡片中拉起应用页面，适用于需要在互动卡片中响应用户点击并跳转到应用页面的场景，解决了互动卡片无法主动拉起应用页面的限制问题。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 20开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -21,12 +21,12 @@ import { common } from '@kit.AbilityKit';
 ```
  ![](./img/note_3.0-zh-cn.png)
 
-- 在API version 22以前，需要通过import LiveFormExtensionContext from 'application/LiveFormExtensionContext'; 导入LiveFormExtensionContext。该导入方式在DevEco Studio中标红，但不影响编译运行，可以直接使用LiveFormExtensionContext。
-- 在API version 22及以后，支持通过import { common } from '@kit.AbilityKit'; 导入LiveFormExtensionContext，并通过common.LiveFormExtensionContext的方式使用。
+- 在API version 22以前，需要通过import LiveFormExtensionContext from 'application/LiveFormExtensionContext';导入。该导入方式在DevEco Studio中标红，但不影响编译运行，可以直接使用LiveFormExtensionContext。
+- 在API version 22及以后，支持通过import { common } from '@kit.AbilityKit';导入，并通过common.LiveFormExtensionContext的方式使用。
 
 #### LiveFormExtensionContext
 
-LiveFormExtensionContext提供允许访问特定于LiveFormExtensionAbility资源的能力，继承自[ExtensionContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-extensioncontext)。
+LiveFormExtensionContext提供访问特定于LiveFormExtensionAbility资源的能力。
 
 #### [h2]startAbilityByLiveForm
 
@@ -38,6 +38,10 @@ startAbilityByLiveForm(want: Want): Promise<void>
 
 该接口仅限在点击事件回调中调用，且需要直接调用，不支持延时后调用，否则会抛出错误码16501011。
 
+使用场景：
+
+- 互动卡片激活态中点击跳转到应用主页或详情页。
+
 模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.Ability.Form
@@ -48,7 +52,7 @@ startAbilityByLiveForm(want: Want): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| want | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 需要被拉起的应用页面信息。[仅支持使用显式want。](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-startup-with-explicit-want) |
+| want | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 需要被拉起的应用页面信息。取值原则：仅支持使用显式Want，必须包含bundleName和abilityName字段。详见[使用显式Want启动应用组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-startup-with-explicit-want)。 |
 
 返回值：
 
@@ -72,7 +76,7 @@ startAbilityByLiveForm(want: Want): Promise<void>
 
 ```
 // MyLiveFormExtensionAbility.ets
-import { formInfo, LiveFormInfo, LiveFormExtensionAbility } from '@kit.FormKit';
+import { LiveFormInfo, LiveFormExtensionAbility } from '@kit.FormKit';
 import { UIExtensionContentSession } from '@kit.AbilityKit';
 
 export default class MyLiveFormExtensionAbility extends LiveFormExtensionAbility {
@@ -115,8 +119,8 @@ struct MyLiveFormPage {
         .catch((err: BusinessError) => {
           console.error(`startAbilityByLiveForm failed, code is ${err?.code}, message is ${err?.message}`);
         });
-    } catch (e) {
-      console.error(`startAbilityByLiveForm failed, code is ${e?.code}, message is ${e?.message}`);
+    } catch (err) {
+      console.error(`startAbilityByLiveForm failed, code is ${err?.code}, message is ${err?.message}`);
     }
   }
 
@@ -138,7 +142,7 @@ struct MyLiveFormPage {
         return;
       }
       this.startAbilityByLiveForm();
-    })
+    });
   }
 }
 ```

@@ -2,8 +2,8 @@
 title: "基础类型定义"
 upstream_id: "harmonyos-references/ts-types"
 catalog: "harmonyos-references"
-content_hash: "e54a69836fa0"
-synced_at: "2026-08-21T15:34:07.237463"
+content_hash: "4ba3c22e56db"
+synced_at: "2026-08-29T18:15:25.555629"
 ---
 
 # 基础类型定义
@@ -65,6 +65,8 @@ type LengthMetricsUnit = import('../api/arkui/Graphics').LengthMetricsUnit
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 | 类型 | 说明 |
@@ -81,6 +83,8 @@ type LengthMetrics = import('../api/arkui/Graphics').LengthMetrics
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 | 类型 | 说明 |
@@ -96,6 +100,8 @@ declare type ColorMetrics = import('../api/arkui/Graphics').ColorMetrics
 卡片能力： 从API version 12开始，该接口支持在ArkTS卡片中使用。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -676,6 +682,8 @@ type CustomBuilderT<T> = (t: T) => void
 
 卡片能力： 从API version 11开始，该接口支持在ArkTS卡片中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | left | [Dimension](#dimension10) | 否 | 是 | 左侧外描边宽度。 |
@@ -891,7 +899,7 @@ type Callback<T, V = void> = (data: T) => V;
 
 #### DividerStyleOptions12+
 
-分割线样式属性集合，用于描述分割线相关信息。
+分割线样式属性集合, 用于描述分割线相关信息。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1021,11 +1029,11 @@ type ResponsiveFillType = PresetFillType
 
 以水平方向Bias为例，其值为组件到左锚点的距离 Dstart与组件到水平方向锚点间总距离 Dstart + Dend的比值。镜像语言下，Dstart为组件到右锚点的距离。下图中Dwidth表示组件宽度。
 
-![](./img/zh-cn_image_0000002718860085.png)
+![](./img/zh-cn_image_0000002701640188.png)
 
 竖直方向同理，其值为组件到上锚点的距离Dtop与组件到竖直方向锚点间总距离Dtop + Dbottom的比值。下图中Dheight表示组件高度。
 
-![](./img/zh-cn_image_0000002689140630.png)
+![](./img/zh-cn_image_0000002731359407.png)
 
 卡片能力： 从API version 11开始，该接口支持在ArkTS卡片中使用。
 

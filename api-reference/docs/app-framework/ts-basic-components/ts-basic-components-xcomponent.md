@@ -2,8 +2,8 @@
 title: "XComponent"
 upstream_id: "harmonyos-references/ts-basic-components-xcomponent"
 catalog: "harmonyos-references"
-content_hash: "ad5e00af0beb"
-synced_at: "2026-07-28T16:46:59.199395"
+content_hash: "3e76429179da"
+synced_at: "2026-08-29T18:14:37.746506"
 ---
 
 # XComponent
@@ -123,7 +123,7 @@ XComponent(value: {id: string, type: string, libraryname?: string, controller?: 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | type | [XComponentType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#xcomponenttype10) | 否 | 否 | 用于指定XComponent组件类型。 |
-| imageAIOptions | [ImageAIOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-image-common#imageaioptions12) | 否 | 是 | 给组件设置一个AI分析选项，通过此项可配置分析类型或绑定一个分析控制器。未设置时不配置AI分析选项，仅类型为SURFACE或TEXTURE时有效。 |
+| imageAIOptions | [ImageAIOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-image-common#imageaioptions12) | 否 | 是 | 给组件设置一个AI分析选项，通过此项可配置分析类型或绑定一个分析控制器，仅类型为SURFACE或TEXTURE时有效。未设置时不配置AI分析选项，可通过enableAnalyzer属性单独启用AI分析。 |
 
 #### 属性
 
@@ -265,7 +265,7 @@ HDR内容的高动态范围渲染类型。
 
 onLoad(callback: OnNativeLoadCallback)
 
-插件加载完成时回调事件。
+Native加载完成时回调事件。
 
 ![](./img/note_3.0-zh-cn.png) 仅当XComponent设置了libraryname参数时，会触发该回调；当未设置libraryname参数时，请使用[onSurfaceCreated](#onsurfacecreated12)等相关回调。
 
@@ -277,13 +277,13 @@ onLoad(callback: OnNativeLoadCallback)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | [OnNativeLoadCallback](#onnativeloadcallback18) | 是 | 插件加载完成时回调事件，用于获取XComponent实例对象的context。 |
+| callback | [OnNativeLoadCallback](#onnativeloadcallback18) | 是 | Native加载完成时回调事件，用于获取XComponent实例对象的context。 |
 
 #### [h2]onDestroy
 
 onDestroy(event: VoidCallback)
 
-插件卸载完成时回调事件。与[onSurfaceDestroyed](#onsurfacedestroyed12)的区别：onDestroy适用于设置libraryname参数的场景，回调无参数；onSurfaceDestroyed适用于未设置libraryname参数的场景，回调参数为surfaceId。
+Native卸载完成时回调事件。与[onSurfaceDestroyed](#onsurfacedestroyed12)的区别：onDestroy适用于设置libraryname参数的场景，回调无参数；onSurfaceDestroyed适用于未设置libraryname参数的场景，回调参数为surfaceId。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -293,7 +293,7 @@ onDestroy(event: VoidCallback)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| event | [VoidCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#voidcallback12) | 是 | 插件卸载完成时回调事件。 |
+| event | [VoidCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#voidcallback12) | 是 | Native卸载完成时回调事件。 |
 
 #### OnNativeLoadCallback18+
 
@@ -520,7 +520,7 @@ onSurfaceDestroyed(surfaceId: string): void
 
 startImageAnalyzer(config: ImageAnalyzerConfig): Promise<void>
 
-配置AI分析并启动AI分析功能，使用前需先启用图像AI分析能力[enableAnalyzer](#enableanalyzer12)，仅type为SURFACE或TEXTURE时有效。使用Promise异步回调。
+配置AI分析并启动AI分析功能，使用前需先启用图像AI分析能力[enableAnalyzer](#enableanalyzer12)，仅XComponent类型为SURFACE或TEXTURE时有效。使用Promise异步回调。
 
 该方法调用时，将截取调用时刻的画面帧进行分析，使用时需注意启动分析的时机，避免出现画面和分析内容不一致的情况。
 
@@ -562,7 +562,7 @@ AI分析功能依赖设备能力，不支持该能力的情况下，将返回错
 
 stopImageAnalyzer(): void
 
-停止AI分析功能，AI分析展示的内容将被销毁。仅type为SURFACE或TEXTURE时有效。
+停止AI分析功能，仅XComponent类型为SURFACE或TEXTURE时有效，须先调用[enableAnalyzer](#enableanalyzer12)和[startImageAnalyzer](#startimageanalyzer12)启用AI分析能力。调用后AI分析展示的内容将被销毁。
 
 ![](./img/note_3.0-zh-cn.png) 在startImageAnalyzer方法未返回结果时调用本方法，会触发其错误回调。
 
@@ -634,7 +634,7 @@ lockCanvas(): DrawingCanvas | null
 
 | 类型 | 说明 |
 | --- | --- |
-| [DrawingCanvas](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawingrenderingcontext#drawingcanvas对象说明) | null | 可用于向XComponent区域绘制的画布对象或者空对象null。 |
+| [DrawingCanvas](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawingrenderingcontext#drawingcanvas对象说明) | null | 可用于向XComponent区域绘制的画布对象；当无法获取画布对象时（如Surface未创建完成或画布已被占用未释放）返回null。 |
 
 ![](./img/note_3.0-zh-cn.png) 如果当前XComponent状态无法获取画布对象则将返回null。原因通常为：
 
@@ -818,8 +818,9 @@ struct XComponentExample {
           let surfaceId = this.xComponentController.getXComponentSurfaceId();
           nativeRender.ChangeColor(BigInt(surfaceId));
           let hasChangeColor: boolean = false;
-          if (nativeRender.GetXComponentStatus(BigInt(surfaceId))) {
-            hasChangeColor = nativeRender.GetXComponentStatus(BigInt(surfaceId)).hasChangeColor;
+          let status = nativeRender.GetXComponentStatus(BigInt(surfaceId));
+          if (status) {
+            hasChangeColor = status.hasChangeColor;
           }
           if (hasChangeColor) {
             this.currentStatus = "change color";
@@ -858,8 +859,9 @@ struct XComponentExample {
             console.info(`surface rect is ${this.xComponentController.getXComponentSurfaceRect()}`);
             nativeRender.DrawPattern(BigInt(surfaceId));
             let hasDraw: boolean = false;
-            if (nativeRender.GetXComponentStatus(BigInt(surfaceId))) {
-              hasDraw = nativeRender.GetXComponentStatus(BigInt(surfaceId)).hasDraw;
+            let status = nativeRender.GetXComponentStatus(BigInt(surfaceId));
+            if (status) {
+              hasDraw = status.hasDraw;
             }
             if (hasDraw) {
               this.currentStatus = "draw star";
@@ -868,11 +870,11 @@ struct XComponentExample {
           .margin(2)
       }.justifyContent(FlexAlign.Center)
     }
-    .width("100%")
+    .width('100%')
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088331.gif)
+ ![](./img/zh-cn_image_0000002701640034.gif)
 
 #### [h2]示例2（在Surface旋转过程中锁定）
 
@@ -981,7 +983,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928499.png)
+ ![](./img/zh-cn_image_0000002731359255.png)
 
 #### [h2]示例4（XComponent实现沉浸式效果）
 
@@ -1010,8 +1012,8 @@ struct Index {
   build() {
     Column() {
       XComponent({ type: XComponentType.SURFACE, controller: this.xcController })
-        .width("100%")
-        .height("100%")
+        .width('100%')
+        .height('100%')
         .onLoad(() => {
           // 请在此处设置Surface大小，过大可能会导致绘制时间长
           this.xcController.setXComponentSurfaceRect({surfaceWidth: this.screenWidth, surfaceHeight: this.screenHeight, offsetX: 0, offsetY: 0});
@@ -1028,7 +1030,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008822.jpeg)
+ ![](./img/zh-cn_image_0000002701799950.jpeg)
 
 #### [h2]示例5（设置XComponent持有Surface在渲染时是否需要被视为不透明）
 
@@ -1084,8 +1086,9 @@ struct Index {
         let surfaceId = this.xComponentController.getXComponentSurfaceId();
         nativeRender.ChangeColor(BigInt(surfaceId));
         let hasChangeColor: boolean = false;
-        if (nativeRender.GetXComponentStatus(BigInt(surfaceId))) {
-          hasChangeColor = nativeRender.GetXComponentStatus(BigInt(surfaceId)).hasChangeColor;
+        let status = nativeRender.GetXComponentStatus(BigInt(surfaceId));
+        if (status) {
+          hasChangeColor = status.hasChangeColor;
         }
         if (hasChangeColor) {
           this.currentStatus = "change color";
@@ -1107,8 +1110,9 @@ struct Index {
             let surfaceId = this.xComponentController.getXComponentSurfaceId();
             nativeRender.DrawPattern(BigInt(surfaceId));
             let hasDraw: boolean = false;
-            if (nativeRender.GetXComponentStatus(BigInt(surfaceId))) {
-              hasDraw = nativeRender.GetXComponentStatus(BigInt(surfaceId)).hasDraw;
+            let status = nativeRender.GetXComponentStatus(BigInt(surfaceId));
+            if (status) {
+              hasDraw = status.hasDraw;
             }
             if (hasDraw) {
               this.currentStatus = "draw star";
@@ -1127,4 +1131,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848902.jpeg)
+ ![](./img/zh-cn_image_0000002731519237.jpeg)

@@ -2,8 +2,8 @@
 title: "应用级变量的状态管理"
 upstream_id: "harmonyos-references/ts-state-management"
 catalog: "harmonyos-references"
-content_hash: "8290b9713d42"
-synced_at: "2026-07-28T16:48:45.915775"
+content_hash: "0958964ea448"
+synced_at: "2026-08-29T18:15:22.369043"
 ---
 
 # 应用级变量的状态管理
@@ -115,7 +115,7 @@ static link<T>(propName: string): SubscribedAbstractProperty<T>
 
 | 类型 | 说明 |
 | --- | --- |
-| [SubscribedAbstractProperty](#subscribedabstractproperty) | 返回双向绑定的数据，如果AppStorage中不存在对应的propName，则返回undefined。 |
+| [SubscribedAbstractProperty](#subscribedabstractpropertyt9) | 返回双向绑定的数据，如果AppStorage中不存在对应的propName，则返回undefined。 |
 
 示例：
 
@@ -147,7 +147,7 @@ static setAndLink<T>(propName: string, defaultValue: T): SubscribedAbstractPrope
 
 | 类型 | 说明 |
 | --- | --- |
-| [SubscribedAbstractProperty](#subscribedabstractproperty) | SubscribedAbstractProperty的实例，为AppStorage中propName对应属性的双向绑定的数据。 |
+| [SubscribedAbstractProperty](#subscribedabstractpropertyt9) | SubscribedAbstractProperty的实例，为AppStorage中propName对应属性的双向绑定的数据。 |
 
 示例：
 
@@ -177,7 +177,7 @@ static prop<T>(propName: string): SubscribedAbstractProperty<T>
 
 | 类型 | 说明 |
 | --- | --- |
-| [SubscribedAbstractProperty](#subscribedabstractproperty) | 返回单向绑定的数据，如果AppStorage中不存在对应的propName，则返回undefined。 |
+| [SubscribedAbstractProperty](#subscribedabstractpropertyt9) | 返回单向绑定的数据，如果AppStorage中不存在对应的propName，则返回undefined。 |
 
 示例：
 
@@ -209,7 +209,7 @@ static setAndProp<T>(propName: string, defaultValue: T): SubscribedAbstractPrope
 
 | 类型 | 说明 |
 | --- | --- |
-| [SubscribedAbstractProperty](#subscribedabstractproperty) | SubscribedAbstractProperty的实例，为AppStorage中propName对应属性的单向绑定的数据。 |
+| [SubscribedAbstractProperty](#subscribedabstractpropertyt9) | SubscribedAbstractProperty的实例，为AppStorage中propName对应属性的单向绑定的数据。 |
 
 示例：
 
@@ -342,7 +342,7 @@ static delete(propName: string): boolean
 属性的订阅者为：
 
 1. [@StorageLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#storagelink)、[@StorageProp](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#storageprop)装饰的变量。
-2. 通过[link](#link10)、[prop](#prop10)、[setAndLink](#setandlink10)、[setAndProp](#setandprop10)接口返回的[SubscribedAbstractProperty](#subscribedabstractproperty)的实例。
+2. 通过[link](#link10)、[prop](#prop10)、[setAndLink](#setandlink10)、[setAndProp](#setandprop10)接口返回的[SubscribedAbstractProperty](#subscribedabstractpropertyt9)的实例。
 
 如需删除这些订阅者，可通过以下方式：
 
@@ -503,7 +503,7 @@ static SetAndLink<T>(propName: string, defaultValue: T): SubscribedAbstractPrope
 
 | 类型 | 说明 |
 | --- | --- |
-| [SubscribedAbstractProperty](#subscribedabstractproperty) | SubscribedAbstractProperty的实例，为AppStorage中propName对应属性的双向绑定的数据。 |
+| [SubscribedAbstractProperty](#subscribedabstractpropertyt9) | SubscribedAbstractProperty的实例，为AppStorage中propName对应属性的双向绑定的数据。 |
 
 示例：
 
@@ -567,7 +567,7 @@ static SetAndProp<S>(propName: string, defaultValue: S): SubscribedAbstractPrope
 
 | 类型 | 说明 |
 | --- | --- |
-| [SubscribedAbstractProperty](#subscribedabstractproperty) | SubscribedAbstractProperty的实例，为AppStorage中propName对应属性的单向绑定的数据。 |
+| [SubscribedAbstractProperty](#subscribedabstractpropertyt9) | SubscribedAbstractProperty的实例，为AppStorage中propName对应属性的单向绑定的数据。 |
 
 示例：
 
@@ -1128,7 +1128,7 @@ link<T>(propName: string): SubscribedAbstractProperty<T>
 
 | 类型 | 说明 |
 | --- | --- |
-| [SubscribedAbstractProperty](#subscribedabstractproperty) | SubscribedAbstractProperty的实例，与LocalStorage中propName对应属性的双向绑定的数据，如果LocalStorage中不存在对应的propName，则返回undefined。 |
+| [SubscribedAbstractProperty](#subscribedabstractpropertyt9) | SubscribedAbstractProperty的实例，与LocalStorage中propName对应属性的双向绑定的数据，如果LocalStorage中不存在对应的propName，则返回undefined。 |
 
 示例：
 
@@ -1163,7 +1163,7 @@ setAndLink<T>(propName: string, defaultValue: T): SubscribedAbstractProperty<T>
 
 | 类型 | 说明 |
 | --- | --- |
-| [SubscribedAbstractProperty](#subscribedabstractproperty) | SubscribedAbstractProperty的实例，与LocalStorage中propName对应属性的双向绑定的数据。 |
+| [SubscribedAbstractProperty](#subscribedabstractpropertyt9) | SubscribedAbstractProperty的实例，与LocalStorage中propName对应属性的双向绑定的数据。 |
 
 示例：
 
@@ -1196,7 +1196,7 @@ prop<S>(propName: string): SubscribedAbstractProperty<S>
 
 | 类型 | 说明 |
 | --- | --- |
-| [SubscribedAbstractProperty](#subscribedabstractproperty) | SubscribedAbstractProperty的实例，为LocalStorage中propName对应属性的单向绑定的数据。如果LocalStorage中不存在对应的propName，则返回undefined。 |
+| [SubscribedAbstractProperty](#subscribedabstractpropertyt9) | SubscribedAbstractProperty的实例，为LocalStorage中propName对应属性的单向绑定的数据。如果LocalStorage中不存在对应的propName，则返回undefined。 |
 
 示例：
 
@@ -1231,7 +1231,7 @@ setAndProp<S>(propName: string, defaultValue: S): SubscribedAbstractProperty<S>
 
 | 类型 | 说明 |
 | --- | --- |
-| [SubscribedAbstractProperty](#subscribedabstractproperty) | SubscribedAbstractProperty的实例，为LocalStorage中propName对应属性的单向绑定的数据。 |
+| [SubscribedAbstractProperty](#subscribedabstractpropertyt9) | SubscribedAbstractProperty的实例，为LocalStorage中propName对应属性的单向绑定的数据。 |
 
 示例：
 
@@ -1250,7 +1250,7 @@ delete(propName: string): boolean
 属性的订阅者为：
 
 1. [@LocalStorageLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#localstoragelink)、[@LocalStorageProp](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#localstorageprop)装饰的变量。
-2. 通过[link](#link9)、[prop](#prop9)、[setAndLink](#setandlink9)、[setAndProp](#setandprop9)接口返回的[SubscribedAbstractProperty](#subscribedabstractproperty)的实例。
+2. 通过[link](#link9)、[prop](#prop9)、[setAndLink](#setandlink9)、[setAndProp](#setandprop9)接口返回的[SubscribedAbstractProperty](#subscribedabstractpropertyt9)的实例。
 
 如需删除这些订阅者，可通过以下方式：
 
@@ -1482,7 +1482,7 @@ let ref1: AbstractProperty<number> | undefined = AppStorage.ref('PropA');
 ref1?.info(); // ref1.info()='PropA'
 ```
 
-#### SubscribedAbstractProperty
+#### SubscribedAbstractProperty9+
 
 SubscribedAbstractProperty是[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)/[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)中属性的单/双向同步绑定对象，用于与AppStorage/LocalStorage中的属性建立数据同步关系。SubscribedAbstractProperty实例需要通过[aboutToBeDeleted](#abouttobedeleted10)接口手动释放，以取消同步关系并无效化实例。
 
@@ -1556,7 +1556,7 @@ prop3.set(undefined);
 
 abstract aboutToBeDeleted(): void
 
-取消[SubscribedAbstractProperty](#subscribedabstractproperty)实例对[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)/[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)的单向或双向同步关系，并无效化SubscribedAbstractProperty实例。即调用aboutToBeDeleted方法之后，不能再使用SubscribedAbstractProperty实例调用[set](#set9-1)或[get](#get9-1)方法。
+取消[SubscribedAbstractProperty](#subscribedabstractpropertyt9)实例对[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)/[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)的单向或双向同步关系，并无效化SubscribedAbstractProperty实例。即调用aboutToBeDeleted方法之后，不能再使用SubscribedAbstractProperty实例调用[set](#set9-1)或[get](#get9-1)方法。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 

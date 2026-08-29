@@ -2,8 +2,8 @@
 title: "virusRemediation（病毒检测与处置）"
 upstream_id: "harmonyos-references/enterprisethreatprotection-virusremediation-interface"
 catalog: "harmonyos-references"
-content_hash: "0952b843dd9c"
-synced_at: "2026-07-28T16:50:29.715557"
+content_hash: "3eac7e4894fc"
+synced_at: "2026-08-29T18:16:30.188324"
 ---
 
 # virusRemediation（病毒检测与处置）
@@ -329,6 +329,7 @@ openFile(path: string): Promise<number>
 import { fileIo } from '@kit.CoreFileKit';
 
 function openFilePromise() {
+  // 目标文件路径，此处为示例路径，实际使用时需替换为用户指定的真实路径
   let path: string = '/example/path/to/file.txt';
   virusRemediation.openFile(path).then((fd: number) => {
     console.info(`Succeeded in opening file. path: ${path} , fd: ${fd}.`);
@@ -445,6 +446,7 @@ isolateThreatFile(path: string): Promise<string>
 
 ```
 function isolateFilePromise() {
+  // 目标文件路径，此处为示例路径，实际使用时需替换为用户指定的真实路径
   let path: string = '/data/service/el2/test/test.txt';
   virusRemediation.isolateThreatFile(path).then((id: string) => {
     console.info(`Succeeded in isolating file. path: ${path} , id: ${id}.`);
@@ -497,6 +499,7 @@ restoreIsolatedFile(id: string): Promise<string>
 
 ```
 function restoreFilePromise() {
+  // 隔离文件ID，可通过queryIsolatedFiles()接口获取
   let id: string = 'example-id-12345';
   virusRemediation.restoreIsolatedFile(id).then((path: string) => {
     console.info(`Succeeded in restoring file. restore path: ${path} , id: ${id}.`);
@@ -548,6 +551,7 @@ removeIsolatedFile(id: string): Promise<void>
 
 ```
 function removeIsolatedFilePromise() {
+  // 隔离文件ID，可通过queryIsolatedFiles()接口获取
   let id: string = 'example-id-12345';
   virusRemediation.removeIsolatedFile(id).then(() => {
     console.info(`Succeeded in removing file.`);

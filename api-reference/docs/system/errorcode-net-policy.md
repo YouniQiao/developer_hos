@@ -1,12 +1,10 @@
 ---
-
 title: "策略管理错误码"
 upstream_id: "harmonyos-references/errorcode-net-policy"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T00:59:31.251986"
-content_hash: "21a4f2e08165"
+content_hash: "38f2c2197047"
+synced_at: "2026-08-29T18:16:48.113120"
 ---
-
 
 # 策略管理错误码
 
@@ -60,12 +58,10 @@ System internal error.
 
 可能原因
 
-1.内存异常。
-
-2.空指针。
+1. 内存异常。
+2. 空指针。
 
 处理步骤
 
-1.检查内存空间是否充足，清理内存后重试。
-
-2.系统异常，请稍后重试或重启设备。
+1. 检查内存空间是否充足，清理内存后重试。
+2. 系统异常，请稍后重试或重启设备。

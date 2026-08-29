@@ -2,8 +2,8 @@
 title: "voipCall (应用内通话管理)"
 upstream_id: "harmonyos-references/call-voipcall"
 catalog: "harmonyos-references"
-content_hash: "698bc9983464"
-synced_at: "2026-08-07T15:59:26.529558"
+content_hash: "147be2c1ba69"
+synced_at: "2026-08-29T18:18:13.465684"
 ---
 
 # voipCall (应用内通话管理)
@@ -520,12 +520,11 @@ export default class VoipExtAbility extends UIAbility {
         let content: Content = JSON.parse(data.data);
         let callId: string = content.callId;
 
-        let callAudioEvent : voipCall.CallAudioEvent = voipCall.CallAudioEvent.AUDIO_EVENT_MUTED;
+        let callAudioEvent: voipCall.CallAudioEvent = voipCall.CallAudioEvent.AUDIO_EVENT_MUTED;
 
         // 上报通话中静音、扬声器事件
-        voipCall.reportCallAudioEventChange(callId, callAudioEvent).then(() => {
-          hilog.info(0x0000, 'testTag', `Succeeded in reporting call audio event change.`);
-        });
+        await voipCall.reportCallAudioEventChange(callId, callAudioEvent);
+        hilog.info(0x0000, 'testTag', `Succeeded in reporting call audio event change.`);
       });
     } catch (err) {
       let e: BusinessError = err as BusinessError;
@@ -582,9 +581,8 @@ reportCallStateChange(callId: string, callState: VoipCallState): Promise<void>
 import { voipCall } from '@kit.CallServiceKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
-voipCall.reportCallStateChange("callId123", voipCall.VoipCallState.VOIP_CALL_STATE_ACTIVE).then(() => {
-  hilog.info(0x0000, 'testTag', `Succeeded in reporting call state change.`);
-});
+await voipCall.reportCallStateChange("callId123", voipCall.VoipCallState.VOIP_CALL_STATE_ACTIVE);
+hilog.info(0x0000, 'testTag', `Succeeded in reporting call state change.`);
 ```
 
 #### voipCall.reportCallStateChange
@@ -633,9 +631,8 @@ reportCallStateChange(callId: string, callState: VoipCallState, callType: VoipCa
 import { voipCall } from '@kit.CallServiceKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
-voipCall.reportCallStateChange("callId123", voipCall.VoipCallState.VOIP_CALL_STATE_ACTIVE, voipCall.VoipCallType.VOIP_CALL_VOICE).then(() => {
-  hilog.info(0x0000, 'testTag', `Succeeded in reporting call state change.`);
-});
+await voipCall.reportCallStateChange("callId123", voipCall.VoipCallState.VOIP_CALL_STATE_ACTIVE, voipCall.VoipCallType.VOIP_CALL_VOICE);
+hilog.info(0x0000, 'testTag', `Succeeded in reporting call state change.`);
 ```
 
 #### voipCall.reportIncomingCallError
@@ -681,9 +678,8 @@ reportIncomingCallError(callId: string, voipCallFailureCause: VoipCallFailureCau
 import { voipCall } from '@kit.CallServiceKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
-voipCall.reportIncomingCallError("callId123", voipCall.VoipCallFailureCause.OTHER).then(() => {
-  hilog.info(0x0000, 'testTag', `Succeeded in reporting incoming call error.`);
-});
+await voipCall.reportIncomingCallError("callId123", voipCall.VoipCallFailureCause.OTHER);
+hilog.info(0x0000, 'testTag', `Succeeded in reporting incoming call error.`);
 ```
 
 #### voipCall.reportCallAttributeChange
@@ -737,11 +733,10 @@ let updatedAttribute: voipCall.VoipCallAttribute = {
   voipCallState: voipCall.VoipCallState.VOIP_CALL_STATE_ACTIVE
 };
 
-voipCall.reportCallAttributeChange(updatedAttribute).then(errorReason => {
-  if (errorReason == voipCall.ErrorReason.ERROR_NONE) {
+let error = await voipCall.reportCallAttributeChange(updatedAttribute);
+if (error == voipCall.ErrorReason.ERROR_NONE) {
     hilog.info(0x0000, 'testTag', `Succeeded in reporting call attribute change.`);
-  } else {
-    hilog.error(0x0000, 'testTag', 'Failed to report call attribute change: %{public}d', errorReason);
-  }
-});
+} else {
+    hilog.error(0x0000, 'testTag', 'Failed to report call attribute change: %{public}d', error);
+}
 ```

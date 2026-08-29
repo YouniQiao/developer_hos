@@ -2,8 +2,8 @@
 title: "jsonObject（Entity返回参数说明）"
 upstream_id: "harmonyos-references/natural-language-json-object-api"
 catalog: "harmonyos-references"
-content_hash: "328180d6d9ac"
-synced_at: "2026-07-28T16:53:12.857005"
+content_hash: "42cd7d0bf2c4"
+synced_at: "2026-08-29T18:18:40.303369"
 ---
 
 # jsonObject（Entity返回参数说明）
@@ -22,10 +22,10 @@ synced_at: "2026-07-28T16:53:12.857005"
 | rrule | string | 否 | 周期标识，不一定准确，具体以repeat为准（参考数据，不建议使用）。 |
 | start | string | 否 | 开始时间。 示例如下： 1. 2021-08-28T08:00:00（日期和精确时间） 2. 2021-08-28TM（日期和模糊时间） 3. 2021-08-28（日期） 4. T08:00:00（周期时间，没有明确日期，例如“每天8点”） 5. TM（周期时间，没有明确日期，例如“每天早上”） **说明：** T为分隔符，T前面为年月日，T后面为时间点，可以是精确时间，可以是用粒度表示的模糊时间。 |
 | suggestStart | string | 否 | 具体开始时间。 大多数情况下，suggestStart与start相同，但在某些表面上是单个时间，但实际是时间段的时候两者有区别。当文本描述的是一个时间段（如“1月”）时，suggestStart提供该时间段的起始具体日期。 示例如下： 1. “1月”，start（2021-01），end（2021-01），suggestStart（2021-01-01），suggestEnd（2021-01-31） 2. “1月到3月”，start（2021-01），end（2021-03），suggestStart（2021-01-01），suggestEnd（2021-03-31） |
-| startTimestamp | number | 否 | 开始默认时间戳，因时间不一定完整，该时间戳不一定准确，具体以start和suggestStart为准（参考数据，不建议使用）。 |
+| startTimestamp | number | 否 | 开始时间戳（单位：ms）。当start为模糊时间时，该时间戳可能不准确，建议以suggestStart为准。 |
 | end | string | 否 | 结束时间。 |
 | suggestEnd | string | 否 | 具体结束时间。大多数情况下，suggestEnd与end相同，但在某些表面上是单个时间，但实际是时间段的时候两者有区别。 |
-| endTimestamp | number | 否 | 结束时间戳（参考数据，不建议使用）。 |
+| endTimestamp | number | 否 | 结束时间戳（单位：ms）。当end为模糊时间时，该时间戳可能不准确，建议以suggestEnd为准。 |
 | maxSection | string | 否 | 最大时间粒度。 P：精确时间。 M：早晨。 F：上午。 N：中午。 A：下午。 L：傍晚。 E：晚上。 W：凌晨。 |
 | minSection | string | 否 | 最小时间粒度。 |
 | isContainFuzzyTime | boolean | 是 | 是否包含模糊时间。true：包含；false：不包含。默认为false。 |

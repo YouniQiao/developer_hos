@@ -2,8 +2,8 @@
 title: "ArkWeb_ComponentAPI"
 upstream_id: "harmonyos-references/capi-web-arkweb-componentapi"
 catalog: "harmonyos-references"
-content_hash: "015f5603ab78"
-synced_at: "2026-07-09T00:58:56.271569"
+content_hash: "d86551bc5028"
+synced_at: "2026-08-29T18:16:03.752072"
 ---
 
 # ArkWeb_ComponentAPI
@@ -34,10 +34,10 @@ ArkWeb_ComponentAPI是ArkWeb在Native侧提供的用于监听Web组件生命周�
 
 | 名称 | 描述 |
 | --- | --- |
-| [void (*onControllerAttached)(const char* webTag, ArkWeb_OnComponentCallback callback, void* userData)](#oncontrollerattached) | 当Controller成功绑定到Web组件时触发该回调。 |
-| [void (*onPageBegin)(const char* webTag, ArkWeb_OnComponentCallback callback, void* userData)](#onpagebegin) | 网页开始加载时触发该回调，且只在主frame触发，iframe或者frameset的内容加载时不会触发此回调。 |
-| [void (*onPageEnd)(const char* webTag, ArkWeb_OnComponentCallback callback, void* userData)](#onpageend) | 网页加载完成时触发该回调，且只在主frame触发，iframe或者frameset的内容加载时不会触发此回调。 |
-| [void (*onDestroy)(const char* webTag, ArkWeb_OnComponentCallback callback, void* userData)](#ondestroy) | 当前Web组件销毁时触发该回调。 |
+| [void (*onControllerAttached)(const char* webTag, ArkWeb_OnComponentCallback callback, void* userData)](#oncontrollerattached) | 注册Controller绑定事件的回调。 |
+| [void (*onPageBegin)(const char* webTag, ArkWeb_OnComponentCallback callback, void* userData)](#onpagebegin) | 注册Web组件页面开始加载事件的回调，触发时只在主frame触发，iframe或者frameset的内容加载时不会触发此回调。 |
+| [void (*onPageEnd)(const char* webTag, ArkWeb_OnComponentCallback callback, void* userData)](#onpageend) | 注册Web组件页面加载完成事件的回调，触发时只在主frame触发，iframe或者frameset的内容加载时不会触发此回调。 |
+| [void (*onDestroy)(const char* webTag, ArkWeb_OnComponentCallback callback, void* userData)](#ondestroy) | 注册Web组件销毁事件的回调。 |
 
 #### 成员函数说明
 
@@ -48,7 +48,7 @@ void (*onControllerAttached)(const char* webTag, ArkWeb_OnComponentCallback call
 ```
  描述：
 
-当Controller成功绑定到Web组件时触发该回调。
+注册Controller绑定事件的回调监听器。说明：该回调需在UI线程中调用，调用前建议通过ARKWEB_MEMBER_MISSING宏校验函数指针是否存在。
 
 参数：
 
@@ -65,15 +65,15 @@ void (*onPageBegin)(const char* webTag, ArkWeb_OnComponentCallback callback, voi
 ```
  描述：
 
-网页开始加载时触发该回调，且只在主frame触发，iframe或者frameset的内容加载时不会触发此回调。
+网页开始加载时触发该回调，该回调只在主frame触发，不会为iframe或frameset内容加载触发。该回调需在UI线程中调用，调用前建议通过ARKWEB_MEMBER_MISSING宏校验函数指针是否存在。
 
 参数：
 
 | 参数项 | 描述 |
 | --- | --- |
 | const char* webTag | Web组件名称。 |
-| ArkWeb_OnComponentCallback callback | onPageBegin的回调函数。 |
-| void* userData | 用户自定义数据。 |
+| ArkWeb_OnComponentCallback callback | 网页开始加载时触发的回调函数，用于处理页面加载开始时的业务逻辑。 |
+| void* userData | 用户自定义数据指针，该数据会在回调触发时传递给回调函数，可用于保存上下文信息或状态数据。 |
 
 #### [h2]onPageEnd()
 
@@ -82,15 +82,15 @@ void (*onPageEnd)(const char* webTag, ArkWeb_OnComponentCallback callback, void*
 ```
  描述：
 
-网页加载完成时触发该回调，且只在主frame触发，iframe或者frameset的内容加载时不会触发此回调。
+网页加载完成时触发该回调，该回调只在主frame触发，不会为iframe或frameset内容加载触发。该回调需在UI线程中调用，调用前建议通过ARKWEB_MEMBER_MISSING宏校验函数指针是否存在。
 
 参数：
 
 | 参数项 | 描述 |
 | --- | --- |
 | const char* webTag | Web组件名称。 |
-| ArkWeb_OnComponentCallback callback | onPageEnd的回调函数。 |
-| void* userData | 用户自定义数据。 |
+| [ArkWeb_OnComponentCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkweb-type-h#arkweb_oncomponentcallback) callback | 网页加载完成时触发的回调函数，用于处理页面加载完成后的业务逻辑。 |
+| void* userData | 用户自定义数据指针，该数据会在回调触发时传递给回调函数，可用于保存上下文信息或状态数据。 |
 
 #### [h2]onDestroy()
 
@@ -107,4 +107,4 @@ void (*onDestroy)(const char* webTag, ArkWeb_OnComponentCallback callback, void*
 | --- | --- |
 | const char* webTag | Web组件名称。 |
 | ArkWeb_OnComponentCallback callback | onDestroy的回调函数。 |
-| void* userData | 用户自定义数据。 |
+| void* userData | 用户自定义数据指针。 |

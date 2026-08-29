@@ -2,8 +2,8 @@
 title: "connect_options.h"
 upstream_id: "harmonyos-references/capi-connect-options-h"
 catalog: "harmonyos-references"
-content_hash: "8f590651e275"
-synced_at: "2026-07-28T16:40:42.974589"
+content_hash: "b1f2bcf16336"
+synced_at: "2026-08-29T18:12:07.929025"
 ---
 
 # connect_options.h
@@ -61,8 +61,8 @@ typedef void (*OH_AbilityRuntime_ConnectOptions_OnConnectCallback)(OH_AbilityRun
 | 参数项 | 描述 |
 | --- | --- |
 | OH_AbilityRuntime_ConnectOptions *connectOptions | 指向[OH_AbilityRuntime_ConnectOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-connectoptions)实例的指针。 |
-| AbilityBase_Element *element | 表示ExtensionAbility的组件名称。 |
-| OHIPCRemoteProxy *proxy | 表示远端对象实例。 |
+| [AbilityBase_Element](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilitybase-element) *element | 表示ExtensionAbility的组件名称。 |
+| [OHIPCRemoteProxy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohipcparcel-ohipcremoteproxy) *proxy | 表示远端对象实例。 |
 
 #### [h2]OH_AbilityRuntime_ConnectOptions_OnDisconnectCallback()
 
@@ -80,7 +80,7 @@ typedef void (*OH_AbilityRuntime_ConnectOptions_OnDisconnectCallback)(OH_Ability
 | 参数项 | 描述 |
 | --- | --- |
 | OH_AbilityRuntime_ConnectOptions *connectOptions | 指向[OH_AbilityRuntime_ConnectOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-connectoptions)实例的指针。 |
-| AbilityBase_Element *element | 表示ExtensionAbility的组件名称。 |
+| [AbilityBase_Element](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilitybase-element) *element | 表示ExtensionAbility的组件名称。 |
 
 #### [h2]OH_AbilityRuntime_ConnectOptions_OnFailedCallback()
 
@@ -132,7 +132,7 @@ AbilityRuntime_ErrorCode OH_AbilityRuntime_DestroyConnectOptions(OH_AbilityRunti
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_AbilityRuntime_ConnectOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-connectoptions) *connectOptions | 待销毁的ConnectOptions对象。 |
+| [OH_AbilityRuntime_ConnectOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-connectoptions) *connectOptions | 指向待销毁的[OH_AbilityRuntime_ConnectOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-connectoptions)实例的指针。 |
 
 返回：
 

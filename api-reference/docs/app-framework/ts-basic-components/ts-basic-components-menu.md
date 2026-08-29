@@ -2,8 +2,8 @@
 title: "Menu"
 upstream_id: "harmonyos-references/ts-basic-components-menu"
 catalog: "harmonyos-references"
-content_hash: "a18326fc7b87"
-synced_at: "2026-08-18T15:32:15.525274"
+content_hash: "2293c028fd57"
+synced_at: "2026-08-29T18:14:38.362279"
 ---
 
 # Menu
@@ -58,7 +58,7 @@ font(value: Font)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [Font](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#font) | 是 | Menu中所有文本的字体样式。 默认值： { size: 16, family: 'HarmonyOS Sans', weight: FontWeight.Medium, style: FontStyle.Normal } |
+| value | [Font](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#font) | 是 | Menu中所有文本的字体样式。 默认值： { size: '16.0fp', family: 'HarmonyOS Sans', weight: FontWeight.Medium, style: FontStyle.Normal } |
 
 #### [h2]fontColor10+
 
@@ -271,7 +271,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002712846227.png)
+ ![](./img/zh-cn_image_0000002731359257.png)
 
 #### [h2]示例2（设置symbol类型图标）
 
@@ -344,14 +344,14 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002683286366.png)
+ ![](./img/zh-cn_image_0000002701799952.png)
 
 #### [h2]示例3（设置Menu子菜单展开符号）
 
 该示例通过配置subMenuExpandSymbol实现对Menu子菜单展开符号配置颜色和大小。
 
 ```
-import { SymbolGlyphModifier, SubMenuExpandingMode } from '@kit.ArkUI';
+import { SymbolGlyphModifier } from '@kit.ArkUI';
 
 @Entry
 @Component
@@ -409,7 +409,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002713006101.gif)
+ ![](./img/zh-cn_image_0000002731519239.gif)
 
 #### [h2]示例4（设置分割线样式）
 
@@ -458,7 +458,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002683126506.png)
+ ![](./img/zh-cn_image_0000002701640038.png)
 
 #### [h2]示例5（设置自定义菜单项的多级菜单）
 
@@ -514,4 +514,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002712846229.jpg)
+ ![](./img/zh-cn_image_0000002731359259.jpg)

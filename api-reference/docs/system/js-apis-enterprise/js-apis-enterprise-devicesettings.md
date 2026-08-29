@@ -2,13 +2,13 @@
 title: "@ohos.enterprise.deviceSettings（设备设置管理）"
 upstream_id: "harmonyos-references/js-apis-enterprise-devicesettings"
 catalog: "harmonyos-references"
-content_hash: "d9dad644f022"
-synced_at: "2026-07-28T16:51:10.203449"
+content_hash: "0fc32703f626"
+synced_at: "2026-08-29T18:17:07.477184"
 ---
 
 # @ohos.enterprise.deviceSettings（设备设置管理）
 
-本模块提供企业设备设置能力，包括设置、获取设备息屏时间等。
+本模块提供企业设备设置能力，支持设置和获取设备息屏时间、系统时间、电源策略、护眼模式、默认输入法、壁纸、隐藏设置项等。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 12开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -99,7 +99,7 @@ getValue(admin: Want, item: string): string
 
 | 类型 | 说明 |
 | --- | --- |
-| string | 策略类型值。 当item为screenOff时，返回设备息屏时间（单位：毫秒），对于PC/2in1设备，返回设备电池供电下的息屏时间（单位：毫秒）。 当item为powerPolicy时，返回电源策略，对于PC/2in1设备，返回设备电池供电下的电源策略，格式为JSON字符串:{"powerScene":xx,"powerPolicy":{"powerPolicyAction":xx,"delayTime":xx}}。powerScene为电源策略场景；delayTime为延迟时间（单位：毫秒）；powerPolicyAction为休眠策略。 电源策略场景： - 0：超时场景。 休眠策略： - 0：不执行动作。 - 1：自动进入睡眠。 - 2：强制进入睡眠。 - 3：进入休眠，该策略暂不生效。 - 4：关机。 当item为eyeComfort时，返回的value为护眼模式开关状态的字符串。 - on：全天开启护眼模式。 - off：关闭护眼模式。 - unknown：其他模式。 |
+| string | 策略类型值。 当item为screenOff时，返回设备息屏时间（单位：毫秒），对于PC/2in1设备，返回设备电池供电下的息屏时间（单位：毫秒）。 当item为powerPolicy时，返回电源策略，对于PC/2in1设备，返回设备电池供电下的电源策略，格式为JSON字符串：{"powerScene":xx,"powerPolicy":{"powerPolicyAction":xx,"delayTime":xx}}。powerScene为电源策略场景；delayTime为延迟时间（单位：毫秒）；powerPolicyAction为休眠策略。 电源策略场景： - 0：超时场景。 休眠策略： - 0：不执行动作。 - 1：自动进入睡眠。 - 2：强制进入睡眠。 - 3：进入休眠，该策略暂不生效。 - 4：关机。 当item为eyeComfort时，返回的value为护眼模式开关状态的字符串。 - on：全天开启护眼模式。 - off：关闭护眼模式。 - unknown：其他模式。 |
 
 错误码：
 
@@ -143,6 +143,8 @@ setHomeWallpaper(admin: Want, fd: number): Promise<void>
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 冲突规则： [配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)。
 
 参数：
@@ -175,7 +177,7 @@ setHomeWallpaper(admin: Want, fd: number): Promise<void>
 import { deviceSettings } from '@kit.MDMKit';
 import { common, Want } from '@kit.AbilityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
-import { fileIo as fs }  from '@kit.CoreFileKit';
+import { fileIo } from '@kit.CoreFileKit';
 
 let wantTemp: Want = {
   // 请根据实际情况修改
@@ -188,13 +190,13 @@ const context = this.getUIContext().getHostContext() as common.UIAbilityContext;
 // 参数根据实际情况进行替换
 let filename: string = "homewallpaper.jpg";
 let filePath: string = context.filesDir + '/' + filename;
-let fd: number = fs.openSync(filePath, fs.OpenMode.READ_WRITE).fd;
+let fd: number = fileIo.openSync(filePath, fileIo.OpenMode.READ_WRITE).fd;
 deviceSettings.setHomeWallpaper(wantTemp, fd).then(() => {
   console.info('Succeeded in setting home wallpaper');
 }).catch((err: BusinessError) => {
   console.error(`Failed to set home wallpaper. Code: ${err.code}, message: ${err.message}`);
 }).finally(() => {
-  fs.closeSync(fd);
+  fileIo.closeSync(fd);
 });
 ```
 
@@ -202,11 +204,13 @@ deviceSettings.setHomeWallpaper(wantTemp, fd).then(() => {
 
 setUnlockWallpaper(admin: Want, fd: number): Promise<void>
 
-设置锁屏壁纸，使用Promise异步回调。
+设置锁屏壁纸，使用Promise异步回调。企业设备管理应用可通过此接口统一设置企业设备的锁屏壁纸，用于企业形象展示或安全管控等场景。
 
 需要权限： ohos.permission.ENTERPRISE_SET_WALLPAPER
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 冲突规则： [配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)。
 
@@ -240,7 +244,7 @@ setUnlockWallpaper(admin: Want, fd: number): Promise<void>
 import { deviceSettings } from '@kit.MDMKit';
 import { common, Want } from '@kit.AbilityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
-import { fileIo as fs }  from '@kit.CoreFileKit';
+import { fileIo } from '@kit.CoreFileKit';
 
 let wantTemp: Want = {
   // 需根据实际情况进行替换
@@ -253,13 +257,13 @@ const context = this.getUIContext().getHostContext() as common.UIAbilityContext;
 // 参数根据实际情况进行替换
 let filename: string = "lockwallpaper.jpg";
 let filePath: string = context.filesDir + '/' + filename;
-let fd: number = fs.openSync(filePath, fs.OpenMode.READ_WRITE).fd;
+let fd: number = fileIo.openSync(filePath, fileIo.OpenMode.READ_WRITE).fd;
 deviceSettings.setUnlockWallpaper(wantTemp, fd).then(() => {
   console.info('Succeeded in setting lock wallpaper');
 }).catch((err: BusinessError) => {
   console.error(`Failed to set lock wallpaper. Code: ${err.code}, message: ${err.message}`);
 }).finally(() => {
-  fs.closeSync(fd);
+  fileIo.closeSync(fd);
 });
 ```
 
@@ -311,7 +315,7 @@ let wantTemp: Want = {
 try {
   // 需根据实际情况进行替换
   let accountId = 100;
-  let deviceName: string = "deviceName"
+  let deviceName: string = "deviceName";
   deviceSettings.setValueForAccount(wantTemp, deviceSettings.SettingsItem.DEVICE_NAME, accountId, deviceName);
   console.info('Succeeded in setting device name.');
 } catch (err) {
@@ -336,7 +340,7 @@ getValueForAccount(admin: Want, item: SettingsItem, accountId: number): string
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
-| item | [SettingsItem](#settingsitem24) | 是 | 设备设置策略类型。 |
+| item | [SettingsItem](#settingsitem24) | 是 | 设备设置策略类型。支持的策略类型包括：DEVICE_NAME（设备名称）、FLOATING_NAVIGATION（三键导航）。 |
 | accountId | number | 是 | 用户ID，取值范围：大于等于0。 accountId可以通过[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9-1)等接口来获取。 |
 
 返回值：
@@ -428,8 +432,8 @@ let wantTemp: Want = {
 let menusToHidden: Array<deviceSettings.SettingsMenu> = [
   // 需根据实际情况进行替换或增加
   deviceSettings.SettingsMenu.ACCOUNT_ID,
-  deviceSettings.SettingsMenu.WIFI,
-]
+  deviceSettings.SettingsMenu.WIFI
+];
 
 try {
   deviceSettings.addHiddenSettingsMenu(wantTemp, menusToHidden);
@@ -491,8 +495,8 @@ let wantTemp: Want = {
 let menusToHidden: Array<deviceSettings.SettingsMenu> = [
   // 需根据实际情况进行替换或增加
   deviceSettings.SettingsMenu.ACCOUNT_ID,
-  deviceSettings.SettingsMenu.WIFI,
-]
+  deviceSettings.SettingsMenu.WIFI
+];
 
 try {
   deviceSettings.removeHiddenSettingsMenu(wantTemp, menusToHidden);
@@ -567,7 +571,7 @@ try {
 
 setSwitchStatus(admin: Want, key: SwitchKey, status: SwitchStatus): void
 
-设置开关的状态。支持设置星闪、蓝牙、Wi-Fi、NFC的状态为开启或关闭，设置完毕后，用户可以手动开关。支持设置蓝牙、NFC的状态为强制开启，设置完毕后，用户不可以手动开关。若已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated) 接口禁用了某个开关，则通过本接口设置这个开关的状态会抛出错误码203，需通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated) 接口解除该开关禁用策略。当设备有多个MDM应用时，各MDM应用设置开关状态不存在冲突，最后设置的策略生效。开启(用户可手动开启、关闭)、关闭(用户可手动开启、关闭)、强制开启(用户不可手动关闭)三个状态可以随意切换，也不存在冲突。
+设置开关的状态。支持设置星闪、蓝牙、Wi-Fi、NFC的状态为开启或关闭，设置完毕后，用户可以手动开关。支持设置蓝牙、NFC的状态为强制开启，设置完毕后，用户不可以手动开关。若已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated) 接口禁用了某个开关，则通过本接口设置这个开关的状态会抛出错误码203，需通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated) 接口解除该开关禁用策略。当设备有多个MDM应用时，各MDM应用设置开关状态不存在冲突，最后设置的策略生效。开启（用户可手动开启、关闭）、关闭（用户可手动开启、关闭）、强制开启（用户不可手动关闭）三个状态可以随意切换，也不存在冲突。
 
 起始版本： 26.0.0
 
@@ -630,6 +634,8 @@ try {
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
 | DEVICE_NAME | 0 | 设备名称。 |
@@ -640,6 +646,8 @@ try {
 设置项列表。
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |

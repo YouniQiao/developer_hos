@@ -2,8 +2,8 @@
 title: "OHAudio"
 upstream_id: "harmonyos-references/capi-ohaudio"
 catalog: "harmonyos-references"
-content_hash: "83a5b3a6dfe1"
-synced_at: "2026-07-28T16:51:26.984714"
+content_hash: "f23e2a1a108b"
+synced_at: "2026-08-29T18:17:19.510875"
 ---
 
 # OHAudio
@@ -29,6 +29,9 @@ synced_at: "2026-07-28T16:51:26.984714"
 | [native_audio_volume_manager.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-volume-manager-h) | 声明音频音量管理器接口。该文件接口用于创建AudioVolumeManager。 |
 | [native_audiorenderer.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiorenderer-h) | 声明输出类型的音频流相关接口。 |
 | [native_audio_common.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-common-h) | 声明音频公共基础数据结构。 定义音频接口的公共返回值的类型。 |
+| [native_audio_accessory_common.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-accessory-common-h) | 声明外部音频配件设备接口的公共数据结构。 |
+| [native_audio_accessory_manager.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-accessory-manager-h) | 声明音频配件管理器相关接口。 |
+| [native_audio_accessory_input_stream_manager.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-accessory-input-stream-manager-h) | 声明音频配件输入流管理器相关接口。 |
 | [native_audio_device_base.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-device-base-h) | 定义音频设备参数的类型以及获取每个设备参数的接口。 |
 | [native_audiostream_base.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h) | 声明OHAudio基础的数据结构。 |
 | [native_audiostreambuilder.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostreambuilder-h) | 声明音频流构造器相关接口。 包含构造和销毁构造器，设置音频流属性、回调等相关接口。 |

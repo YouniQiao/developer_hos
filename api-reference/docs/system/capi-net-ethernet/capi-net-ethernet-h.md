@@ -2,8 +2,8 @@
 title: "net_ethernet.h"
 upstream_id: "harmonyos-references/capi-net-ethernet-h"
 catalog: "harmonyos-references"
-content_hash: "964e67884bbb"
-synced_at: "2026-07-28T16:50:44.841337"
+content_hash: "28d22eb23120"
+synced_at: "2026-08-29T18:16:44.838571"
 ---
 
 # net_ethernet.h
@@ -12,7 +12,7 @@ synced_at: "2026-07-28T16:50:44.841337"
 
 为以太网网卡模块提供C接口。
 
-引用文件： <network/net_ethernet/net_ethernet.h>
+引用文件： <network/netmanager_ext/net_ethernet.h>
 
 库： libnet_ethernet.so
 

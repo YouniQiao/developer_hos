@@ -2,8 +2,8 @@
 title: "电话子系统错误码"
 upstream_id: "harmonyos-references/errorcode-telephony"
 catalog: "harmonyos-references"
-content_hash: "7f94fa3081b9"
-synced_at: "2026-07-28T16:50:55.842630"
+content_hash: "5017c768c61b"
+synced_at: "2026-08-29T18:16:54.630603"
 ---
 
 # 电话子系统错误码
@@ -45,6 +45,24 @@ Service connection failed.
 处理步骤
 
 本次操作异常，请稍后重试。
+
+#### [h2]无企业来电权限
+
+错误信息
+
+The enterprise permission is not verified.
+
+错误描述
+
+无企业来电权限。
+
+可能原因
+
+可能没有申请企业来电权限。
+
+处理步骤
+
+[申请接入](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/callservice-enterprise-contact-display#申请接入)企业来电权限，或通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。
 
 #### 8300003 系统内部错误
 
@@ -98,7 +116,7 @@ Internal error.
 
 处理步骤
 
-操作异常，请稍后再试。
+本次操作异常，请稍后重试。
 
 #### 8301001 SIM卡未激活
 
@@ -314,4 +332,4 @@ Internal error.
 
 处理步骤
 
-操作异常，请稍后再试。
+本次操作异常，请稍后重试。

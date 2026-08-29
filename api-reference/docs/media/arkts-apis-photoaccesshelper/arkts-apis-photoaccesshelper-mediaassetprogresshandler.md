@@ -2,13 +2,13 @@
 title: "Interface (MediaAssetProgressHandler)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-mediaassetprogresshandler"
 catalog: "harmonyos-references"
-content_hash: "8ee8712a1420"
-synced_at: "2026-07-09T01:00:46.669532"
+content_hash: "5b623ad70e9b"
+synced_at: "2026-08-29T18:17:46.360243"
 ---
 
 # Interface (MediaAssetProgressHandler)
 
-媒体资产进度处理器，应用于onProgress方法中获取媒体资产进度。
+媒体资产进度处理器，用于接收媒体资产处理进度的回调。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -25,7 +25,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 
 onProgress(progress: number): void
 
-当所请求的视频资源返回进度时系统会回调此方法。
+当所请求的媒体资产返回进度时系统会回调此方法。
 
 系统能力：SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -33,4 +33,4 @@ onProgress(progress: number): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| progress | number | 是 | 返回的进度百分比，范围为[0, 100]。 |
+| progress | number | 是 | 传入的进度百分比，范围为[0, 100]。 |

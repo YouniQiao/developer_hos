@@ -2,13 +2,13 @@
 title: "Class (Tool)"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing-tool"
 catalog: "harmonyos-references"
-content_hash: "d8292dca5ad5"
-synced_at: "2026-07-09T01:00:53.063132"
+content_hash: "e7cc77a14253"
+synced_at: "2026-08-29T18:17:51.194542"
 ---
 
 # Class (Tool)
 
-本模块定义的工具类，仅提供静态的方法，主要完成其他模块和[common2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-common2d)中定义的数据结构的转换功能等操作。
+本模块定义的工具类，仅提供静态的方法，主要完成其他模块和[common2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-common2d)中定义的数据结构的转换功能。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -35,13 +35,13 @@ static makeColorFromResourceColor(resourceColor: ResourceColor): common2D.Color
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| resourceColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 是 | ResourceColor格式的颜色值（支持所有的4种输入，示例中提供13个示例输入）。其中第4种类型[Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource)只接受$r('belonging.type.name')构造方法，需要确保该资源在main/resources/base/element目录下已定义(app支持color、string和integer，sys只支持color)。 |
+| resourceColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 是 | ResourceColor格式的颜色值（支持所有的4种输入，示例中提供10个示例输入）。其中第4种类型[Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource)只接受$r('belonging.type.name')构造方法，需要确保该资源在main/resources/base/element目录下已定义(app支持color、string和integer，sys只支持color)。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| [common2D.Color](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-common2d#color) | 转换后的common2D.Color颜色对象，若转换失败则返回空指针。 |
+| [common2D.Color](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-common2d#color) | 转换后的common2D.Color颜色对象，若转换失败则返回undefined。 |
 
 错误码：
 
@@ -49,7 +49,7 @@ static makeColorFromResourceColor(resourceColor: ResourceColor): common2D.Color
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error.Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
 
 示例：
 

@@ -2,15 +2,122 @@
 title: "liveViewManager"
 upstream_id: "harmonyos-references/liveview-liveviewmanager"
 catalog: "harmonyos-references"
-content_hash: "b119c70d3b1e"
-synced_at: "2026-07-28T16:52:41.177512"
+content_hash: "a8eef6e7e47c"
+synced_at: "2026-08-29T18:18:19.102884"
 ---
 
 # liveViewManager
 
-本模块提供Live View Kit的基础能力，包括创建、更新和结束实况窗、获取实况窗和检查实况窗开关的功能。
+#### 模块概述
 
-起始版本： 4.1.0(11)
+Live View Kit（实况窗服务）是HarmonyOS提供的一种实时活动展示服务，支持应用将订单或者服务的实时状态信息呈现在设备关键界面（如通知中心、状态栏、横幅卡片、锁屏），帮助用户快速查看和即时处理正在进行的任务。
+
+本模块提供的基础能力包括：
+
+- 基础生命周期管理：提供创建、更新、结束实况通知接口（对应startLiveView、updateLiveView、stopLiveView接口），支持应用调用接口创建、更新和结束实况通知，在熄屏、锁屏、横幅、通知中心和状态栏等位置，展示用户关注事件（如外卖即时配送，出行打车订单）的实时进展。
+- 基于条件的生命周期管理：基于地理位置的实况窗提醒是从6.1.0(23)开始支持的高级功能。该功能允许开发者注册地理围栏条件，当设备进入或离开地理围栏后，自动触发实况窗的创建或结束，实现基于地理位置的实况窗提醒服务。
+- 实况窗信息查询：提供getActiveLiveView、isLiveViewEnabled、isGeofenceTriggerEnabled接口，支持应用在创建或更新实况窗之前查询实况相关信息和开关状态。
+- 模板管理：提供基于模板定义实况窗卡片、胶囊、小外屏等展示内容的能力，在锁屏、通知中心、状态栏等位置展示，建立开发者和用户的连接。
+- 提醒方式管理：支持配置实况通知是否响铃振动、状态栏胶囊动效、展开横幅提醒。
+
+#### [h2]基本概念
+
+- 应用场景event：是实况窗对象LiveView中用于标识应用场景类型的关键字段。该字段决定了实况窗的适用场景，开发者需根据实际业务选择对应的场景值。
+- 实况窗id：是实况窗对象LiveView中用于唯一标识一个实况窗的关键字段。由开发者自行生成，用于创建、更新、结束和查询实况窗。
+- 实况窗布局：实况窗在展示形态上分为卡片态和胶囊态两种。卡片态又分为固定区、辅助区和扩展区三个部分。
+- 固定区是用于显示实时活动的核心信息和用户最关注的动态内容，位于卡片顶部左侧和中间区域。
+- 辅助区用于显示实时活动的次要信息，位于卡片上固定区的右侧区域，若选择展示辅助区，则会挤占固定区宽度。
+- 扩展区用于显示实时活动的详细信息，位于卡片固定区和辅助区下方区域，支持进度可视化、强调文本、左右文本、赛事比分、导航定制样式。
+- 胶囊是实况窗在状态栏的展示形式，点击胶囊可展开实况窗横幅卡片查看详情。
+- 扩展区模板类型layoutType：是定义实况窗扩展区模板类型的枚举。扩展区是实况窗卡片中展示详细信息和进度的重要内容区域，不同的模板类型适用于不同的业务场景。
+- 存档时间keepTime：是用于控制实况窗结束后的存档时间。即在调用stopLiveView结束实况窗后，实况窗仍在通知中心保留展示的时长。
+
+#### [h2]关键Class/Interface介绍
+
+```
+  LiveView:  实况窗对象参数
+    ├── id
+    ├── event
+    ├── 其他参数......
+    └── LiveViewData: 实况窗详细信息
+        ├── PrimaryData: 卡片形态内容
+            ├── LayoutData: 扩展区数据
+                ├── ProgressLayout: 进度可视化模板扩展区参数
+                ├── FlightLayout: 左右文本模板扩展区参数
+                ├── ScoreLayout: 赛事比分模板扩展区参数
+                ├── PickupLayout: 强调文本模板扩展区参数
+                ├── NavigationLayout: 导航模板扩展区参数
+                └── CustomLayout: 自定义模板扩展区参数
+            └── ExtensionData: 辅助区内容
+        ├── CapsuleData: 实况胶囊形态内容
+            ├── TextCapsule: 文本胶囊参数
+            ├── TimerCapsule: 计时器胶囊参数
+            └── ProgressCapsule: 进度胶囊参数
+        └── ExternalData: 外屏形态模板参数
+```
+
+#### [h2]API组合使用关系
+
+- 本地实况窗创建、更新和结束流程
+
+```
+  1. 前置检查
+     isLiveViewEnabled()  检查应用实况窗开关是否开启，如开启则继续下一步。
+                                                   
+  2. 创建实况窗
+     startLiveView(liveView)  创建一个liveView实况窗实例。
+                                                  
+  3. 更新实况窗（可多次调用）
+     updateLiveView(liveView)  更新实况窗为liveView实例中的内容。
+                                                   
+  4. 结束实况窗
+     stopLiveView(liveView)  结束一个liveView实况窗实例。
+```
+
+- 通过条件触发创建实况窗的流程
+
+```
+  1. 前置检查
+     isGeofenceTriggerEnabled()  查询基于地理位置的实况窗提醒开关，如果开关使能，则继续下一步。
+                                                   
+  2. 注册一个由条件触发创建的实况窗
+     startLiveViewByTrigger(liveView，trigger)注册一个由条件trigger触发创建的liveView实况窗实例。
+                                                   
+  3. 等待条件满足
+     设备进入/离开指定地理围栏。
+                                                   
+  4. 条件触发
+     系统自动创建并展示实况（无需开发者调用接口创建）。
+                                                  
+  5. 实况窗结束
+     实况窗展示liveViewManager.Trigger.displayTime时长后自动结束。
+```
+
+- 通过条件触发结束实况窗的流程
+
+```
+  1. 前置检查
+     isLiveViewEnabled()  检查应用实况窗开关是否开启，如开启则继续下一步。
+                                                    
+  2. 创建实况窗
+     startLiveView(liveView)  创建一个liveView实况窗实例。
+                                                   
+  3. 更新实况窗（可选，可多次调用）
+     updateLiveView(liveView)  更新实况窗为liveView实例中的内容。
+ 
+  4. 前置检查
+     isGeofenceTriggerEnabled()  查询基于地理位置的实况窗提醒开关, 如果开关使能，则继续下一步。
+ 
+  5. 注册一个由条件触发结束的实况窗
+     stopLiveViewByTrigger(liveView, trigger)  注册一个由条件trigger触发结束的liveView实况窗实例。
+                                                 
+  6. 等待条件满足
+     设备进入/离开指定地理围栏。
+                                                  
+  7. 条件触发
+     系统自动结束实况窗（无需开发者调用接口结束）。
+```
+ 起始版本： 4.1.0(11)
 
 #### 导入模块
 
@@ -935,7 +1042,7 @@ async function buildWantAgent(): Promise<Want> {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| id | number | 否 | 否 | 实况窗唯一标识，取值范围为[-2147483648, 2147483647]，由开发者自行生成。对应Push Kit中LiveViewPayload的[activityId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#liveviewpayload-实况窗消息)字段。 |
+| id | number | 否 | 否 | 实况窗唯一标识，取值范围为[-2147483648, 2147483647]，由开发者自行生成。如果通过Push Kit REST API创建、更新和结束实况窗，对应Push Kit REST API中LiveViewPayload的[activityId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#liveviewpayload-实况窗消息)字段。 |
 | event | string | 否 | 否 | 实况窗的应用场景。 **●** TAXI：出行打车。 **●** DELIVERY：即时配送（外卖、生鲜）。 **●** FLIGHT：航班。 **●** TRAIN：高铁/火车。 **●** QUEUE：排队。 **●** PICK_UP：取餐。 **●** SCORE：赛事比分。 **●** RENT：共享租赁。 **●** TIMER：计时。 **●** WORKOUT：运动锻炼。 **●** NAVIGATION：导航。 **●** CHECK_IN：打卡。 **●** EXPRESS：快递。 **●** PROGRESS：进度类型。 **●** TRADE：金融交易。 使用对应场景需要申请权益，详情请参见[实况窗权益说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-rights)。 |
 | subEvent | string | 否 | 是 | 实况窗的应用子场景。主要用于统计子业务场景的实况窗数量，使用对应子场景无需额外申请权益。 **●** 即时配送（外卖、生鲜）场景(event为"DELIVERY") FOOD：美食、GOODS：商超、MEDICINE：买药、BACHELOR：跑腿、GROUPBUY：拼团 **●** 导航场景(event为"NAVIGATION") DRIVING：驾车、WALKING：步行、CYCLING：骑行、BUS：公交、METRO：地铁 **●** 出行打车场景(event为"TAXI") STANDARD：普通即时打车、SPECIAL：专车、HITCHHIKING：顺风车、CARPOOLING：拼车 **●** 排队场景(event为"QUEUE") RESTAURANT：餐饮排号、HOSPITAL：就诊排号、BANK：银行排号、GOVERNMENT：政务中心排号、ATTRACTION：景区排号 **●** 共享租赁场景(event为"RENT") BICYCLE：共享单车、EBIKE：共享电动车或助力车、POWERBANK：共享充电宝、CAR：共享汽车 **●** 运动锻炼场景(event为"WORKOUT") RUNNING：跑步、CYCLING：骑行、WALKING：步行 **●** 进度类型场景(event为"PROGRESS") UPLOAD：文件上传、DOWNLOAD：文件下载、IMPORT：资源导入、EXPORT：资源导出、BACKUP：备份、RECOVER：恢复 **起始版本：** 26.0.0 |
 | sequence | number | 否 | 是 | 支持实况窗消息更新和结束保序能力，取值范围为[0, 2147483647]，新的实况窗版本号需大于当前展示实况窗版本号，否则更新和结束会失败。若不传入参数值，Live View Kit不会自动生成（此时，调用getActiveLiveView接口查询实况信息，返回结果中sequence：4294967295为无效值，该无效值不允许用来更新实况），也不会校验实况窗版本号。对应Push Kit中的[version](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#liveviewpayload-实况窗消息)字段。 |
@@ -1050,7 +1157,7 @@ async function buildWantAgent(): Promise<Want> {
 
 辅助区元素对应的API字段：
 
-![](./img/zh-cn_image_0000002685929407.png)
+![](./img/zh-cn_image_0000002701640950.png)
 
 - 1 实况卡片辅助区类型，对应type字段: 当辅助区类型为ExtensionType.EXTENSION_TYPE_COMMON_TEXT时，辅助区显示普通文本，使用API字段text传入文本内容。
 - 当辅助区类型为ExtensionType.EXTENSION_TYPE_CAPSULE_TEXT时，辅助区显示实况胶囊文本，使用API字段text传入文本内容。
@@ -1196,7 +1303,7 @@ async function buildWantAgent(): Promise<Want> {
 
 卡片元素对应的API字段：
 
-![](./img/zh-cn_image_0000002656009732.png)
+![](./img/zh-cn_image_0000002731360167.png)
 
 - 1 进度百分比，对应progress字段。
 - 2 进度条进度的颜色，对应color字段。
@@ -1228,7 +1335,7 @@ async function buildWantAgent(): Promise<Want> {
 
 卡片元素对应的API字段：
 
-![](./img/zh-cn_image_0000002655849810.png)
+![](./img/zh-cn_image_0000002701800866.png)
 
 - 1 扩展区标题，对应title字段。
 - 2 扩展区内容，对应content字段。
@@ -1256,7 +1363,7 @@ async function buildWantAgent(): Promise<Want> {
 
 卡片元素对应的API字段：
 
-![](./img/zh-cn_image_0000002686089241.png)
+![](./img/zh-cn_image_0000002731520149.png)
 
 - 1 左侧文本标题，对应firstTitle字段。
 - 2 左侧文本内容，对应firstContent字段。
@@ -1298,7 +1405,7 @@ async function buildWantAgent(): Promise<Want> {
 
 卡片元素对应的API字段：
 
-![](./img/zh-cn_image_0000002685929409.png)
+![](./img/zh-cn_image_0000002701640952.png)
 
 - 1 左侧主队名称，对应hostName字段。
 - 2 左侧主队图标，对应hostIcon字段。
@@ -1336,7 +1443,7 @@ async function buildWantAgent(): Promise<Want> {
 
 卡片元素对应的API字段：
 
-![](./img/zh-cn_image_0000002656009734.png)
+![](./img/zh-cn_image_0000002731360169.png)
 
 - 1 当前导航方向，对应currentNavigationIcon字段。
 - 2 导航方向的箭头集合图片，对应navigationIcons字段。
@@ -1379,7 +1486,7 @@ async function buildWantAgent(): Promise<Want> {
 
 胶囊元素对应的API字段：
 
-![](./img/zh-cn_image_0000002655849812.png)
+![](./img/zh-cn_image_0000002701800868.png)
 
 - 1 实况胶囊类型，对应type字段。
 - 2 实况胶囊的图标，对应icon字段。
@@ -1411,7 +1518,7 @@ async function buildWantAgent(): Promise<Want> {
 
 胶囊元素对应的API字段：
 
-![](./img/zh-cn_image_0000002686089243.png)
+![](./img/zh-cn_image_0000002731520151.png)
 
 - 1 实况胶囊主文本，对应title字段。
 - 2 实况胶囊副文本，对应content字段。
@@ -1435,7 +1542,7 @@ async function buildWantAgent(): Promise<Want> {
 
 胶囊元素对应的API字段：
 
-![](./img/zh-cn_image_0000002685929411.png)
+![](./img/zh-cn_image_0000002701640954.png)
 
 - 1 实况胶囊副文本，对应content字段。
 - 2 实况胶囊计时器初始值，对应time字段。计时器正计时或倒计时，由isCountdown字段控制。计时器是否暂停，由isPaused字段控制。
@@ -1461,7 +1568,7 @@ async function buildWantAgent(): Promise<Want> {
 
 胶囊元素对应的API字段：
 
-![](./img/zh-cn_image_0000002656009736.png)
+![](./img/zh-cn_image_0000002731360171.png)
 
 - 1 进度值显示数值占比或百分比，由indeterminate字段控制： indeterminate为false：展示数值占比，格式为x/y（x对应progress字段，y对应max字段）。
 - indeterminate为true：展示百分比，格式为(x/y)*100% （x对应progress字段，y对应max字段）。
@@ -1487,7 +1594,7 @@ async function buildWantAgent(): Promise<Want> {
 
 外屏元素对应的API字段：
 
-![](./img/zh-cn_image_0000002655849814.png)
+![](./img/zh-cn_image_0000002701800870.png)
 
 - 1 外屏标题，对应title字段。
 - 2 外屏内容，对应content字段。

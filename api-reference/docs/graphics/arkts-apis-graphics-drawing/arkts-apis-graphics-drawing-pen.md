@@ -2,13 +2,13 @@
 title: "Class (Pen)"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing-pen"
 catalog: "harmonyos-references"
-content_hash: "2bf75bb49f0c"
-synced_at: "2026-07-09T01:00:52.447701"
+content_hash: "1966b2827241"
+synced_at: "2026-08-29T18:17:50.938715"
 ---
 
 # Class (Pen)
 
-画笔对象，描述所绘制图形形状的轮廓信息。
+画笔对象，用于描述所绘制图形形状的轮廓信息，支持设置颜色、线宽、抗锯齿、透明度、混合模式、转角样式、线帽样式，以及颜色滤波器、蒙版滤波器、路径效果、着色器、阴影层等绘制效果。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -58,7 +58,7 @@ constructor(pen: Pen)
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error.Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
 
 示例：
 
@@ -76,7 +76,7 @@ const newPen = new drawing.Pen(pen);
 
 setMiterLimit(miter: number): void
 
-设置折线尖角长度与线宽的最大比值，当画笔绘制一条折线，并且[JoinStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-e#joinstyle12)为MITER_JOIN时，若尖角长度与线宽的比值大于限制值，则该折角使用BEVEL_JOIN绘制。
+设置折线尖角长度与线宽的最大比值。当画笔绘制一条折线，并且[JoinStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-e#joinstyle12)为MITER_JOIN时，若尖角长度与线宽的比值大于该最大比值，则该转角使用BEVEL_JOIN绘制。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -84,7 +84,7 @@ setMiterLimit(miter: number): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| miter | number | 是 | 折线尖角长度与线宽的最大比值，负数在绘制时会被视作4.0处理，非负数正常生效，该参数为浮点数。 |
+| miter | number | 是 | 折线尖角长度与线宽的最大比值，负数在绘制时会被视作4.0处理，非负数按实际传入值生效，该参数为浮点数。 |
 
 错误码：
 
@@ -107,7 +107,7 @@ pen.setMiterLimit(5);
 
 getMiterLimit(): number
 
-获取折线尖角的限制值。
+获取折线尖角长度与线宽的最大比值。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -151,7 +151,7 @@ setImageFilter(filter: ImageFilter | null): void
 示例：
 
 ```
-import {drawing} from '@kit.ArkGraphics2D';
+import { drawing } from '@kit.ArkGraphics2D';
 
 let colorfilter = drawing.ColorFilter.createSRGBGammaToLinear();
 let imgFilter = drawing.ImageFilter.createFromColorFilter(colorfilter);
@@ -172,16 +172,16 @@ getColorFilter(): ColorFilter
 
 | 类型 | 说明 |
 | --- | --- |
-| [ColorFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-colorfilter) | 返回颜色滤波器。 |
+| [ColorFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-colorfilter) | 返回画笔当前设置的颜色滤波器，可用于查询当前画笔的颜色过滤效果。 |
 
 示例：
 
 ```
-import {drawing} from '@kit.ArkGraphics2D';
+import { drawing } from '@kit.ArkGraphics2D';
 
 let pen = new drawing.Pen();
-let colorfilter = drawing.ColorFilter.createLumaColorFilter();
-pen.setColorFilter(colorfilter);
+let colorFilter = drawing.ColorFilter.createLumaColorFilter();
+pen.setColorFilter(colorFilter);
 let filter = pen.getColorFilter();
 ```
 
@@ -205,7 +205,7 @@ setColor(color: common2D.Color) : void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error.Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types;3.Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 
 示例：
 
@@ -229,10 +229,10 @@ setColor(alpha: number, red: number, green: number, blue: number): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| alpha | number | 是 | ARGB格式颜色的透明度通道值，该参数是0到255之间的整数，传入范围内的浮点数会向下取整。 |
-| red | number | 是 | ARGB格式颜色的红色通道值，该参数是0到255之间的整数，传入范围内的浮点数会向下取整。 |
-| green | number | 是 | ARGB格式颜色的绿色通道值，该参数是0到255之间的整数，传入范围内的浮点数会向下取整。 |
-| blue | number | 是 | ARGB格式颜色的蓝色通道值，该参数是0到255之间的整数，传入范围内的浮点数会向下取整。 |
+| alpha | number | 是 | ARGB格式颜色的透明度通道值，该参数取值范围是[0, 255]，传入范围内的浮点数会向下取整，超出范围的值会被截断到0或255。 |
+| red | number | 是 | ARGB格式颜色的红色通道值，该参数取值范围是[0, 255]，传入范围内的浮点数会向下取整，超出范围的值会被截断到0或255。 |
+| green | number | 是 | ARGB格式颜色的绿色通道值，该参数取值范围是[0, 255]，传入范围内的浮点数会向下取整，超出范围的值会被截断到0或255。 |
+| blue | number | 是 | ARGB格式颜色的蓝色通道值，该参数取值范围是[0, 255]，传入范围内的浮点数会向下取整，超出范围的值会被截断到0或255。 |
 
 错误码：
 
@@ -263,7 +263,7 @@ setColor(color: number) : void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| color | number | 是 | 16进制ARGB格式的颜色。 |
+| color | number | 是 | 16进制ARGB格式的颜色，格式为0xAARRGGBB，其中AA表示透明度通道，RR表示红色通道，GG表示绿色通道，BB表示蓝色通道，各通道取值范围为00-FF，取值范围为[0x00000000, 0xFFFFFFFF]。超出有效范围的值会被截断处理。 |
 
 示例：
 
@@ -278,7 +278,7 @@ pen.setColor(0xffff0000);
 
 setColor4f(color4f: common2D.Color4f, colorSpace: colorSpaceManager.ColorSpaceManager | null): void
 
-设置画笔的颜色以及标准色域，与[setColor](#setcolor)区别在于可以单独设置色域，适用于需要单独设置色域的场景。
+设置画笔的颜色以及标准色域，与[setColor](#setcolor)的区别在于可以单独设置色域。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -286,7 +286,7 @@ setColor4f(color4f: common2D.Color4f, colorSpace: colorSpaceManager.ColorSpaceMa
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| color4f | [common2D.Color4f](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-common2d#color4f20) | 是 | ARGB格式的颜色，每个颜色通道的值是0.0-1.0之间的浮点数，大于1.0时，取1.0，小于0.0时，取0.0。 |
+| color4f | [common2D.Color4f](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-common2d#color4f20) | 是 | ARGB格式的颜色，浮点数，每个颜色通道值的范围为[0.0, 1.0]，超出范围的值会被截断到0.0或1.0。 |
 | colorSpace | [colorSpaceManager.ColorSpaceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-colorspacemanager#colorspacemanager) | null | 是 | 标准色域对象，null表示使用SRGB色域。 |
 
 示例：
@@ -296,7 +296,7 @@ import { common2D, drawing, colorSpaceManager } from "@kit.ArkGraphics2D";
 
 const pen = new drawing.Pen();
 let colorSpace = colorSpaceManager.create(colorSpaceManager.ColorSpace.BT2020_HLG);
-let color4f:common2D.Color4f = {alpha:1, red:0.5, green:0.4, blue:0.7};
+let color4f: common2D.Color4f = {alpha: 1, red: 0.5, green: 0.4, blue: 0.7};
 pen.setColor4f(color4f, colorSpace);
 ```
 
@@ -312,7 +312,7 @@ getColor(): common2D.Color
 
 | 类型 | 说明 |
 | --- | --- |
-| [common2D.Color](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-common2d#color) | 返回画笔的颜色。 |
+| [common2D.Color](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-common2d#color) | 返回画笔当前设置的颜色。 |
 
 示例：
 
@@ -329,7 +329,7 @@ let colorGet = pen.getColor();
 
 getColor4f(): common2D.Color4f
 
-获取画笔的颜色，与[getColor](#getcolor12)的区别在于返回值类型为浮点数，适用于需要浮点数类型的场景。
+获取画笔的颜色，与[getColor](#getcolor12)的区别在于返回值类型为[common2D.Color4f](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-common2d#color4f20)，颜色通道值为浮点数，适用于需要浮点数类型的场景。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -337,7 +337,7 @@ getColor4f(): common2D.Color4f
 
 | 类型 | 说明 |
 | --- | --- |
-| [common2D.Color4f](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-common2d#color4f20) | 返回画笔的颜色。 |
+| [common2D.Color4f](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-common2d#color4f20) | 返回画笔当前设置的颜色，为ARGB格式的浮点数表示，每个颜色通道的取值范围为[0.0, 1.0]。 |
 
 示例：
 
@@ -346,7 +346,7 @@ import { common2D, drawing, colorSpaceManager } from "@kit.ArkGraphics2D";
 
 const pen = new drawing.Pen();
 let colorSpace = colorSpaceManager.create(colorSpaceManager.ColorSpace.BT2020_HLG);
-let color4f:common2D.Color4f = {alpha:1, red:0.5, green:0.4, blue:0.7};
+let color4f: common2D.Color4f = {alpha: 1, red: 0.5, green: 0.4, blue: 0.7};
 pen.setColor4f(color4f, colorSpace);
 let color = pen.getColor4f();
 ```
@@ -373,8 +373,8 @@ import { common2D, drawing } from '@kit.ArkGraphics2D';
 let color : common2D.Color = { alpha: 255, red: 255, green: 0, blue: 0 };
 let pen = new drawing.Pen();
 pen.setColor(color);
-let hex_color: number = pen.getHexColor();
-console.info('getHexColor: ', hex_color.toString(16));
+let hexColor: number = pen.getHexColor();
+console.info('getHexColor: ', hexColor.toString(16));
 ```
 
 #### setStrokeWidth
@@ -389,7 +389,7 @@ setStrokeWidth(width: number) : void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| width | number | 是 | 表示线宽，该参数为浮点数。单位为物理像素px。 |
+| width | number | 是 | 表示线宽，该参数为浮点数，单位为物理像素px。 |
 
 错误码：
 
@@ -435,7 +435,7 @@ let width = pen.getWidth();
 
 setAntiAlias(aa: boolean) : void
 
-设置画笔是否开启抗锯齿。开启后，可以使得图形的边缘在显示时更平滑。未调用此接口设置时，系统默认关闭抗锯齿。
+设置画笔是否开启抗锯齿。开启后，使图形边缘在显示时更平滑。未调用此接口设置时，系统默认关闭抗锯齿。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -497,7 +497,7 @@ setAlpha(alpha: number) : void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| alpha | number | 是 | 用于表示透明度的[0, 255]区间内的整数值，传入浮点类型时向下取整。 |
+| alpha | number | 是 | 表示透明度，取值范围为[0, 255]，传入浮点类型时向下取整。 |
 
 错误码：
 
@@ -601,7 +601,6 @@ import { common2D, drawing } from '@kit.ArkGraphics2D';
 
 class DrawingRenderNode extends RenderNode {
   draw(context : DrawContext) {
-    const canvas = context.canvas;
     const pen = new drawing.Pen();
     pen.setStrokeWidth(5);
     pen.setColor({alpha: 255, red: 255, green: 0, blue: 0});
@@ -623,7 +622,7 @@ setPathEffect(effect: PathEffect | null): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| effect | [PathEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-patheffect) | null | 是 | 路径效果对象。null表示清空路径效果。 |
+| effect | [PathEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-patheffect) | null | 是 | 路径效果对象，用于设置虚线、转角等路径绘制样式。null表示清空路径效果。 |
 
 错误码：
 
@@ -663,7 +662,7 @@ setShaderEffect(shaderEffect: ShaderEffect | null): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| shaderEffect | [ShaderEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-shadereffect) | null | 是 | 着色器对象。null表示清空着色器效果。 |
+| shaderEffect | [ShaderEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-shadereffect) | null | 是 | 着色器效果对象。null表示清空着色器效果。 |
 
 错误码：
 
@@ -816,7 +815,7 @@ getJoinStyle(): JoinStyle
 
 | 类型 | 说明 |
 | --- | --- |
-| JoinStyle | 返回折线转角的样式。 |
+| [JoinStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-e#joinstyle12) | 返回折线转角的样式。 |
 
 示例：
 
@@ -831,7 +830,7 @@ class DrawingRenderNode extends RenderNode {
     pen.setStrokeWidth(5);
     pen.setColor({alpha: 255, red: 255, green: 0, blue: 0});
     pen.setJoinStyle(drawing.JoinStyle.ROUND_JOIN);
-    let joinStyle = pen.getJoinStyle();
+    pen.getJoinStyle();
   }
 }
 ```
@@ -887,7 +886,7 @@ getCapStyle(): CapStyle
 
 | 类型 | 说明 |
 | --- | --- |
-| CapStyle | 返回画笔的线帽样式。 |
+| [CapStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-e#capstyle12) | 返回画笔的线帽样式。 |
 
 示例：
 
@@ -902,7 +901,7 @@ class DrawingRenderNode extends RenderNode {
     pen.setStrokeWidth(5);
     pen.setColor({alpha: 255, red: 255, green: 0, blue: 0});
     pen.setCapStyle(drawing.CapStyle.SQUARE_CAP);
-    let capStyle = pen.getCapStyle();
+    pen.getCapStyle();
   }
 }
 ```
@@ -911,7 +910,7 @@ class DrawingRenderNode extends RenderNode {
 
 setDither(dither: boolean) : void
 
-开启画笔的抖动绘制效果。抖动绘制可以使得绘制出的颜色更加真实。
+设置画笔是否开启抖动绘制效果。抖动绘制使颜色更真实。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -950,8 +949,8 @@ getFillPath(src: Path, dst: Path): boolean
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| src | [Path](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-path) | 是 | 源路径对象。 |
-| dst | [Path](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-path) | 是 | 目标路径对象。 |
+| src | [Path](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-path) | 是 | 待提取轮廓的源路径对象。 |
+| dst | [Path](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-path) | 是 | 目标路径对象，用于存储根据画笔属性从src路径计算得到的轮廓结果。 |
 
 返回值：
 

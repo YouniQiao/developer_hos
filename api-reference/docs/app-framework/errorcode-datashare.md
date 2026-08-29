@@ -2,8 +2,8 @@
 title: "数据共享错误码"
 upstream_id: "harmonyos-references/errorcode-datashare"
 catalog: "harmonyos-references"
-content_hash: "7c3079a8de8e"
-synced_at: "2026-07-28T16:40:54.779012"
+content_hash: "730b21c4c749"
+synced_at: "2026-08-29T18:12:17.742794"
 ---
 
 # 数据共享错误码
@@ -36,6 +36,25 @@ Inner error.
 3. 开发者排查权限配置是否正确。
 4. 尝试重试，如果依然无法解决，可以提示用户重启应用、升级应用或升级设备版本。
 
+#### 15700011 URI不存在
+
+错误信息
+
+The URI does not exist.
+
+错误描述
+
+添加/删除模板异常或者开启/关闭静默访问传入的uri格式或者路径错误时，系统会产生此错误码。
+
+可能原因
+
+1. 入参uri路径不正确。
+2. 入参uri格式不正确。
+
+处理步骤
+
+咨询DataShare服务端提供者，获取正确的uri路径。
+
 #### 15700014 配置共享参数错误
 
 错误信息
@@ -61,7 +80,7 @@ The parameter format is incorrect or the value range is invalid.
 2. 检查接口传入的proxyData数组中是否有proxyData的value长度超过4096字节。
 3. 检查接口传入的URI数组的长度是否超过32。
 4. 检查接口传入的proxyData数组的长度是否超过32。
-5. 检查接口传入的URI数组或者proxyData数组中的URI是否满足格式校验： URI的固定格式为"datashareproxy://{bundleName}/{path}"，其中bundleName为配置发布方应用的bundleName，path可随意填写。
+5. 检查接口传入的URI数组或者proxyData数组中的URI是否满足格式校验： uri的固定格式为"datashareproxy://{bundleName}/{path}"，其中bundleName为配置发布方应用的bundleName，path可随意填写。
 
 #### 15700015 访问URI权限错误
 

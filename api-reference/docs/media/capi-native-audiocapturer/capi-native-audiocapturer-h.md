@@ -2,8 +2,8 @@
 title: "native_audiocapturer.h"
 upstream_id: "harmonyos-references/capi-native-audiocapturer-h"
 catalog: "harmonyos-references"
-content_hash: "b705c2e4e065"
-synced_at: "2026-07-28T16:51:27.242147"
+content_hash: "ae2ffd7f382e"
+synced_at: "2026-08-29T18:17:19.766983"
 ---
 
 # native_audiocapturer.h
@@ -52,9 +52,12 @@ synced_at: "2026-07-28T16:51:27.242147"
 | [typedef void (*OH_AudioCapturer_OnErrorCallback)(OH_AudioCapturer* capturer, void* userData, OH_AudioStream_Result error)](#oh_audiocapturer_onerrorcallback) | OH_AudioCapturer_OnErrorCallback | 音频录制流的错误事件回调函数。 |
 | [OH_AudioStream_Result OH_AudioCapturer_GetFastStatus(OH_AudioCapturer* capturer, OH_AudioStream_FastStatus* status)](#oh_audiocapturer_getfaststatus) | - | 获取音频录制过程中的运行状态，是否在低时延状态下工作。 |
 | [typedef void (*OH_AudioCapturer_OnFastStatusChange)(OH_AudioCapturer* capturer, void* userData, OH_AudioStream_FastStatus status)](#oh_audiocapturer_onfaststatuschange) | OH_AudioCapturer_OnFastStatusChange | 音频录制过程中低时延状态改变事件的回调函数。 |
-| [typedef void (*OH_AudioCapturer_OnPlaybackCaptureStartCallback)(OH_AudioCapturer* capturer, void* userData, OH_AudioStream_PlaybackCaptureStartState state)](#oh_audiocapturer_onplaybackcapturestartcallback) | OH_AudioCapturer_OnPlaybackCaptureStartCallback | 音频录制过程中用于内录（录制的是设备内部应用的声音）启动结果的回调函数。该API暂不对外支持。 |
-| [OH_AudioStream_Result OH_AudioCapturer_RequestPlaybackCaptureStart(OH_AudioCapturer* capturer, OH_AudioCapturer_OnPlaybackCaptureStartCallback callback, void* userData)](#oh_audiocapturer_requestplaybackcapturestart) | - | 异步请求启动内录流。该函数是非阻塞的，意味着系统在接收到启动请求后，将继续处理用户授权和内录流的启动。 最终结果将通过回调函数返回。该API暂不对外支持。 |
+| [typedef void (*OH_AudioCapturer_OnPlaybackCaptureStartCallback)(OH_AudioCapturer* capturer, void* userData, OH_AudioStream_PlaybackCaptureStartState state)](#oh_audiocapturer_onplaybackcapturestartcallback) | OH_AudioCapturer_OnPlaybackCaptureStartCallback | 音频录制过程中用于内录（录制的是设备内部应用的声音）启动结果的回调函数。该API最初仅对特定系统应用可用，从API版本26.0.0开始，支持任意应用使用。 |
+| [OH_AudioStream_Result OH_AudioCapturer_RequestPlaybackCaptureStart(OH_AudioCapturer* capturer, OH_AudioCapturer_OnPlaybackCaptureStartCallback callback, void* userData)](#oh_audiocapturer_requestplaybackcapturestart) | - | 异步请求启动内录流。该函数是非阻塞的，意味着系统在接收到启动请求后，将继续处理用户授权和内录流的启动。 最终结果将通过回调函数返回。该API最初仅对特定系统应用可用，从API版本26.0.0开始，支持任意应用使用。 |
 | [OH_AudioStream_Result OH_AudioCapturer_SetIndependentAudioSessionStrategy(OH_AudioCapturer* capturer, const OH_AudioSession_Strategy* strategy, uint32_t behavior)](#oh_audiocapturer_setindependentaudiosessionstrategy) | - | 设置独立的音频会话策略和行为参数。当音频采集器在运行状态时调用此接口后，必须重新调用接口[OH_AudioCapturer_Start](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiocapturer-h#oh_audiocapturer_start)使其生效。 |
+| [OH_AudioStream_Result OH_AudioCapturer_SetNoiseReductionMode(OH_AudioCapturer* capturer, OH_AudioNoiseReductionMode noiseReductionMode)](#oh_audiocapturer_setnoisereductionmode) | - | 设置当前录音流的降噪模式。 |
+| [OH_AudioStream_Result OH_AudioCapturer_GetNoiseReductionMode(OH_AudioCapturer* capturer, OH_AudioNoiseReductionMode* noiseReductionMode)](#oh_audiocapturer_getnoisereductionmode) | - | 获取当前录音流的降噪模式。 |
+| [OH_AudioStream_Result OH_AudioCapturer_GetSupportedNoiseReductionModes(OH_AudioCapturer* capturer, OH_AudioNoiseReductionMode* noiseReductionModeArray, uint32_t inModeArraySize, uint32_t *outModeArraySize)](#oh_audiocapturer_getsupportednoisereductionmodes) | - | 获取当前设备平台支持的录音降噪模式。 |
 | [typedef void (*OH_AudioCapturer_SensitiveRecordPermitCallback)(OH_AudioCapturer* capturer, void* userData, bool isPermitted)](#oh_audiocapturer_sensitiverecordpermitcallback) | OH_AudioCapturer_SensitiveRecordPermitCallback | 蜂窝通话录音场景下，风险提示语播放结束的回调函数。应用必须等待回调返回许可结果，且isPermitted为true时，方可开始蜂窝通话录音。 |
 
 #### 函数说明
@@ -626,7 +629,7 @@ typedef void (*OH_AudioCapturer_OnPlaybackCaptureStartCallback)(OH_AudioCapturer
 ```
  描述
 
-音频录制过程中用于内录（录制的是设备内部应用的声音）启动结果的回调函数。该API暂不对外支持。
+音频录制过程中用于内录（录制的是设备内部应用的声音）启动结果的回调函数。该API最初仅对特定系统应用可用，从API版本26.0.0开始，支持任意应用使用。
 
 起始版本： 23
 
@@ -647,7 +650,7 @@ OH_AudioStream_Result OH_AudioCapturer_RequestPlaybackCaptureStart(OH_AudioCaptu
 
 异步请求启动内录流。该函数是非阻塞的，意味着系统在接收到启动请求后，将继续处理用户授权和内录流的启动。
 
-最终结果将通过回调函数返回。该API暂不对外支持。
+最终结果将通过回调函数返回。该API最初仅对特定系统应用可用，从API版本26.0.0开始，支持任意应用使用。
 
 起始版本： 23
 
@@ -657,7 +660,7 @@ OH_AudioStream_Result OH_AudioCapturer_RequestPlaybackCaptureStart(OH_AudioCaptu
 | --- | --- |
 | [OH_AudioCapturer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiocapturerstruct)* capturer | 指向[OH_AudioStreamBuilder_GenerateCapturer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostreambuilder-h#oh_audiostreambuilder_generatecapturer)创建的音频流实例。 |
 | [OH_AudioCapturer_OnPlaybackCaptureStartCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiocapturer-h#oh_audiocapturer_onplaybackcapturestartcallback) callback | 用于接收启动请求最终结果的回调函数。 |
-| void* userData | 指向应用自定义的数据存储区域, 该结构将传递给回调函数。 |
+| void* userData | 指向应用自定义的数据存储区域，该结构将传递给回调函数。 |
 
 返回：
 
@@ -689,6 +692,86 @@ OH_AudioStream_Result OH_AudioCapturer_SetIndependentAudioSessionStrategy(OH_Aud
 | 类型 | 说明 |
 | --- | --- |
 | [OH_AudioStream_Result](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_result) | AUDIOSTREAM_SUCCESS：函数执行成功。 AUDIOSTREAM_ERROR_INVALID_PARAM：参数为空指针或超出范围。 AUDIOSTREAM_ERROR_ILLEGAL_STATE：执行状态异常。 |
+
+#### [h2]OH_AudioCapturer_SetNoiseReductionMode()
+
+```
+OH_AudioStream_Result OH_AudioCapturer_SetNoiseReductionMode(OH_AudioCapturer* capturer, OH_AudioNoiseReductionMode noiseReductionMode)
+```
+ 描述
+
+设置当前录音流的降噪模式。建议先调用[OH_AudioCapturer_GetSupportedNoiseReductionModes](#oh_audiocapturer_getsupportednoisereductionmodes)获取当前录音流支持的降噪模式后，再通过本接口进行设置。
+
+当前仅支持使用[AUDIOSTREAM_SOURCE_TYPE_VOICE_MESSAGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_sourcetype)创建的录音流进行降噪模式设置，其他录音流默认仅支持[AUDIO_NOISE_REDUCTION_MODE_FIDELITY](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-common-h#oh_audionoisereductionmode)。降噪效果受设备平台、音频设备和录音并发情况影响。存在多个录音流同时运行时，设置的降噪模式可能不生效。
+
+该接口仅可在录音流创建后未开始录音，或停止录音后调用；录音流处于运行态或已释放时调用将返回[AUDIOSTREAM_ERROR_ILLEGAL_STATE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_result)。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [OH_AudioCapturer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiocapturerstruct)* capturer | 指向[OH_AudioStreamBuilder_GenerateCapturer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostreambuilder-h#oh_audiostreambuilder_generatecapturer)创建的音频流实例。 |
+| [OH_AudioNoiseReductionMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-common-h#oh_audionoisereductionmode) noiseReductionMode | 要设置的降噪模式。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| [OH_AudioStream_Result](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_result) | AUDIOSTREAM_SUCCESS：函数执行成功。 AUDIOSTREAM_ERROR_INVALID_PARAM：参数capturer为nullptr，或参数noiseReductionMode无效。 AUDIOSTREAM_ERROR_ILLEGAL_STATE：录音流处于运行态或已释放。 AUDIOSTREAM_ERROR_UNSUPPORTED_ABILITY：设置的降噪模式不支持。 AUDIOSTREAM_ERROR_SERVICE_DIED：音频服务进程异常结束。 |
+
+#### [h2]OH_AudioCapturer_GetNoiseReductionMode()
+
+```
+OH_AudioStream_Result OH_AudioCapturer_GetNoiseReductionMode(OH_AudioCapturer* capturer, OH_AudioNoiseReductionMode* noiseReductionMode)
+```
+ 描述
+
+获取当前录音流的降噪模式。返回结果仅反映当前录音流的降噪模式。默认值为[AUDIO_NOISE_REDUCTION_MODE_FIDELITY](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-common-h#oh_audionoisereductionmode)。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [OH_AudioCapturer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiocapturerstruct)* capturer | 指向[OH_AudioStreamBuilder_GenerateCapturer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostreambuilder-h#oh_audiostreambuilder_generatecapturer)创建的音频流实例。 |
+| [OH_AudioNoiseReductionMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-common-h#oh_audionoisereductionmode)* noiseReductionMode | 指向接收当前降噪模式的变量。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| [OH_AudioStream_Result](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_result) | AUDIOSTREAM_SUCCESS：函数执行成功。 AUDIOSTREAM_ERROR_INVALID_PARAM：参数capturer为nullptr，或参数noiseReductionMode为nullptr。 |
+
+#### [h2]OH_AudioCapturer_GetSupportedNoiseReductionModes()
+
+```
+OH_AudioStream_Result OH_AudioCapturer_GetSupportedNoiseReductionModes(OH_AudioCapturer* capturer, OH_AudioNoiseReductionMode* noiseReductionModeArray, uint32_t inModeArraySize, uint32_t *outModeArraySize)
+```
+ 描述
+
+获取当前设备平台支持的录音降噪模式。当前仅使用[AUDIOSTREAM_SOURCE_TYPE_VOICE_MESSAGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_sourcetype)创建的录音流会根据设备平台查询支持的降噪模式，其他录音流默认仅返回[AUDIO_NOISE_REDUCTION_MODE_FIDELITY](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-common-h#oh_audionoisereductionmode)。返回结果仅考虑音频格式和设备平台，不考虑当前输入设备和录音并发情况。
+
+当支持的模式数量大于入参inModeArraySize时，仅向noiseReductionModeArray写入前inModeArraySize个模式，outModeArraySize等于inModeArraySize。建议应用预留较大的数组长度，例如20，以兼容后续新增模式。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [OH_AudioCapturer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiocapturerstruct)* capturer | 指向[OH_AudioStreamBuilder_GenerateCapturer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostreambuilder-h#oh_audiostreambuilder_generatecapturer)创建的音频流实例。 |
+| [OH_AudioNoiseReductionMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-common-h#oh_audionoisereductionmode)* noiseReductionModeArray | 指向应用分配的数组，用于接收支持的录音降噪模式，默认支持[AUDIO_NOISE_REDUCTION_MODE_FIDELITY](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-common-h#oh_audionoisereductionmode)。 |
+| uint32_t inModeArraySize | noiseReductionModeArray数组的元素个数。 |
+| uint32_t* outModeArraySize | 指向接收实际写入模式数量的变量。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| [OH_AudioStream_Result](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_result) | AUDIOSTREAM_SUCCESS：函数执行成功。 AUDIOSTREAM_ERROR_INVALID_PARAM：参数capturer为nullptr，或参数noiseReductionModeArray为nullptr，或参数outModeArraySize为nullptr。 AUDIOSTREAM_ERROR_SERVICE_DIED：音频服务进程死亡。 |
 
 #### [h2]OH_AudioCapturer_SensitiveRecordPermitCallback()
 

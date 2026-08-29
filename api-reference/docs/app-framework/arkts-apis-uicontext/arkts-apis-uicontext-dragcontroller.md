@@ -2,8 +2,8 @@
 title: "Class (DragController)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-dragcontroller"
 catalog: "harmonyos-references"
-content_hash: "f2540c5b7de5"
-synced_at: "2026-07-28T16:41:03.147925"
+content_hash: "a4a5664a0e8e"
+synced_at: "2026-08-29T18:12:24.829598"
 ---
 
 # Class (DragController)
@@ -82,13 +82,14 @@ struct DragControllerPage {
                 data: unifiedData,
                 extraParams: ''
               };
+              let eve: DragInfo = new DragInfo();
               this.getUIContext().getDragController().executeDrag(() => {
                 this.DraggingBuilder()
-              }, dragInfo, (err, dragEventParam) => {
-                if (dragEventParam.event) {
-                  if (dragEventParam.event.getResult() == DragResult.DRAG_SUCCESSFUL) {
+              }, dragInfo, (err, eve) => {
+                if (eve.event) {
+                  if (eve.event.getResult() == DragResult.DRAG_SUCCESSFUL) {
                     // ...
-                  } else if (dragEventParam.event.getResult() == DragResult.DRAG_FAILED) {
+                  } else if (eve.event.getResult() == DragResult.DRAG_FAILED) {
                     // ...
                   }
                 }
@@ -102,7 +103,7 @@ struct DragControllerPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848254.gif)
+ ![](./img/zh-cn_image_0000002701799298.gif)
 
 #### executeDrag11+
 
@@ -199,13 +200,14 @@ struct DragControllerPage {
                   },
                   extraInfo: 'DragItemInfoTest'
                 };
+                let eve: DragInfo = new DragInfo();
                 this.getUIContext()
                   .getDragController()
                   .executeDrag(dragItemInfo, dragInfo)
-                  .then((dragEventParam) => {
-                    if (dragEventParam.event.getResult() == DragResult.DRAG_SUCCESSFUL) {
+                  .then((eve) => {
+                    if (eve.event.getResult() == DragResult.DRAG_SUCCESSFUL) {
                       // ...
-                    } else if (dragEventParam.event.getResult() == DragResult.DRAG_FAILED) {
+                    } else if (eve.event.getResult() == DragResult.DRAG_FAILED) {
                       // ...
                     }
                   })
@@ -221,13 +223,13 @@ struct DragControllerPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087683.gif)
+ ![](./img/zh-cn_image_0000002731518585.gif)
 
 #### createDragAction11+
 
 createDragAction(customArray: Array<CustomBuilder | DragItemInfo>, dragInfo: dragController.DragInfo): dragController.DragAction
 
-创建拖拽的Action对象时，需要显式指定拖拽背板图（可多个）、拖拽的数据、跟手点等信息。当通过一个已创建的Action对象发起的拖拽未结束时，无法再次创建新的Action对象，接口会抛出异常。当Action对象的生命周期结束后，注册在该对象上的回调函数会失效。因此，需要在需要接收该对象回调期间持有该对象，并在每次发起拖拽前通过createDragAction返回新的对象覆盖旧值。
+创建拖拽的Action对象，需要显式指定拖拽背板图（可多个），以及拖拽的数据，跟手点等信息；当通过一个已创建的Action对象发起的拖拽未结束时，无法再次创建新的Action对象，接口会抛出异常；当Action对象的生命周期结束后，注册在该对象上的回调函数会失效，因此需要在一个尽量长的作用域下持有该对象，并在每次发起拖拽前通过createDragAction返回新的对象覆盖旧值。
 
 ![](./img/note_3.0-zh-cn.png) 建议控制传递的拖拽背板数量，避免因拖拽背板数量增加导致拖起耗时增加。
 
@@ -401,7 +403,7 @@ struct DragControllerPage {
 }
 ```
 
-![](./img/zh-cn_image_0000002685927855.gif)
+![](./img/zh-cn_image_0000002701639388.gif)
 
 #### getDragPreview11+
 
@@ -417,7 +419,7 @@ getDragPreview(): dragController.DragPreview
 
 | 类型 | 说明 |
 | --- | --- |
-| [dragController.DragPreview](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-dragcontroller#dragpreview11) | 返回一个代表拖拽背板的对象，提供背板样式设置的接口；在onDrop和onDragEnd回调中使用该对象设置背板样式不生效。 |
+| [dragController.DragPreview](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-dragcontroller#dragpreview11) | 一个代表拖拽背板的对象，提供背板样式设置的接口，在onDrop和onDragEnd回调中使用不生效。 |
 
 错误码： 通用错误码请参考[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
@@ -429,7 +431,7 @@ getDragPreview(): dragController.DragPreview
 
 setDragEventStrictReportingEnabled(enable: boolean): void
 
-当拖拽对象从父组件拖拽到子组件时，是否会触发父组件的onDragLeave回调。
+当目标从父组件拖拽到子组件时，通过该方法设置是否会触发父组件的onDragLeave的回调。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -439,7 +441,7 @@ setDragEventStrictReportingEnabled(enable: boolean): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| enable | boolean | 是 | 当拖拽对象从父组件拖拽到子组件时，是否会触发父组件的onDragLeave回调。true表示触发父组件的onDragLeave回调，false表示不触发。 |
+| enable | boolean | 是 | 将目标从父组件拖拽到子组件时，是否会触发父组件的onDragLeave的回调。true表示触发父组件的onDragLeave的回调，false表示不触发。 |
 
 示例：
 
@@ -582,7 +584,7 @@ struct NormalEts {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008176.gif)
+ ![](./img/zh-cn_image_0000002731358609.gif)
 
 #### enableDropDisallowedBadge20+
 
@@ -651,4 +653,4 @@ struct Index {
 }
 ```
 
-![](./img/zh-cn_image_0000002655848256.png)
+![](./img/zh-cn_image_0000002701799300.png)

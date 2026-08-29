@@ -2,8 +2,8 @@
 title: "@ohos.app.ability.ChildProcess (子进程基类)"
 upstream_id: "harmonyos-references/js-apis-app-ability-childprocess"
 catalog: "harmonyos-references"
-content_hash: "fc0da7d611b3"
-synced_at: "2026-07-09T00:57:03.745080"
+content_hash: "1a839adab8e8"
+synced_at: "2026-08-29T18:11:56.166066"
 ---
 
 # @ohos.app.ability.ChildProcess (子进程基类)
@@ -32,7 +32,7 @@ onStart(args?: ChildProcessArgs): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| args12+ | [ChildProcessArgs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-childprocessargs) | 否 | 传递到子进程的参数。 |
+| args12+ | [ChildProcessArgs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-childprocessargs) | 否 | 传递到子进程的参数。参数为可选，不传或传null时使用默认配置启动。 |
 
 示例：
 
@@ -44,7 +44,7 @@ export default class DemoProcess extends ChildProcess {
   onStart(args?: ChildProcessArgs) {
     let entryParams = args?.entryParams;
     let fd = args?.fds?.key1;
-    // ..
+    // ...
   }
 }
 ```

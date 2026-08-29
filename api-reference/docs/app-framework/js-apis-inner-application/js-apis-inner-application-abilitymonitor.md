@@ -2,13 +2,13 @@
 title: "AbilityMonitor"
 upstream_id: "harmonyos-references/js-apis-inner-application-abilitymonitor"
 catalog: "harmonyos-references"
-content_hash: "91d53a1893e5"
-synced_at: "2026-07-09T00:57:08.312519"
+content_hash: "f99911cdf75b"
+synced_at: "2026-08-29T18:12:02.144402"
 ---
 
 # AbilityMonitor
 
-本模块提供监听指定[UIAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability)生命周期状态变化的能力。开发者可以将AbilityMonitor作为[abilityDelegator.addAbilityMonitor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-abilitydelegator#addabilitymonitor9)的入参来注册监听。
+本模块提供监听指定[UIAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability)生命周期状态变化的能力。开发者可以将AbilityMonitor作为[abilityDelegator.addAbilityMonitor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-abilitydelegator#addabilitymonitor)的入参来注册监听。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 9 开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -20,7 +20,7 @@ import { abilityDelegatorRegistry } from '@kit.TestKit';
 
 #### 使用说明
 
-可以作为abilityDelegator中的[addAbilityMonitor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-abilitydelegator#addabilitymonitor9)的入参来监听指定Ability的生命周期变化。
+可以作为abilityDelegator中的[addAbilityMonitor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-abilitydelegator#addabilitymonitor)的入参来监听指定UIAbility的生命周期变化。
 
 #### AbilityMonitor
 

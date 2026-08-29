@@ -2,8 +2,8 @@
 title: "TextReaderIconV2（朗读听筒图标）"
 upstream_id: "harmonyos-references/speech-textreadericonv2"
 catalog: "harmonyos-references"
-content_hash: "c3d7bfec0c21"
-synced_at: "2026-07-09T01:01:45.263444"
+content_hash: "d5851968e505"
+synced_at: "2026-08-29T18:18:43.100517"
 ---
 
 # TextReaderIconV2（朗读听筒图标）
@@ -152,7 +152,9 @@ struct Index {
     TextReader.on('stateChange', (state: TextReader.ReadState) => {
       this.onStateChanged(state);
     });
-    TextReader.on('requestMore', () => this.onStateChanged);
+       TextReader.on('requestMore', () => {
+      TextReader.loadMore([], true);
+    });
   }
 
   onStateChanged = (state: TextReader.ReadState) => {
@@ -187,3 +189,12 @@ struct Index {
   }
 }
 ```
+ 组件如下图：
+
+静止状态
+
+![](./img/zh-cn_image_0000002731360193.png)
+
+播放状态
+
+![](./img/zh-cn_image_0000002701800890.png)

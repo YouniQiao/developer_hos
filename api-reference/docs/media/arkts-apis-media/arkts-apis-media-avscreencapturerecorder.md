@@ -2,8 +2,8 @@
 title: "Interface (AVScreenCaptureRecorder)"
 upstream_id: "harmonyos-references/arkts-apis-media-avscreencapturerecorder"
 catalog: "harmonyos-references"
-content_hash: "ce447f88b04b"
-synced_at: "2026-08-21T15:36:56.451483"
+content_hash: "3e8292d2c341"
+synced_at: "2026-08-29T18:17:41.081003"
 ---
 
 # Interface (AVScreenCaptureRecorder)
@@ -204,7 +204,7 @@ pauseRecording(): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 5400102 | Operation not allowed. Return by promise. |
+| 5400102 | Operation not be permitted. Return by promise. |
 | 5400103 | IO error. Return by promise. |
 | 5400105 | Service died. Return by promise. |
 
@@ -257,7 +257,7 @@ resumeRecording(): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 5400102 | Operation not allowed. Return by promise. |
+| 5400102 | Operation not be permitted. Return by promise. |
 | 5400103 | IO error. Return by promise. |
 | 5400105 | Service died. Return by promise. |
 

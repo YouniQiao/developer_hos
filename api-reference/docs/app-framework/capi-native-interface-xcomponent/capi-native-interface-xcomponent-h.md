@@ -2,15 +2,15 @@
 title: "native_interface_xcomponent.h"
 upstream_id: "harmonyos-references/capi-native-interface-xcomponent-h"
 catalog: "harmonyos-references"
-content_hash: "5435101ea6f3"
-synced_at: "2026-08-14T15:53:22.392236"
+content_hash: "335f2521957c"
+synced_at: "2026-08-29T18:15:38.609655"
 ---
 
 # native_interface_xcomponent.h
 
 #### 概述
 
-声明用于访问Native XComponent的API。
+声明用于访问Native XComponent的API。Native XComponent提供Surface生命周期管理、触摸事件、鼠标事件、按键事件、帧率控制、图像AI分析及无障碍接入等能力，适用于需要在ArkUI中嵌入自渲染内容（如游戏渲染、媒体播放等）的场景。
 
 引用文件： <ace/xcomponent/native_interface_xcomponent.h>
 
@@ -42,7 +42,7 @@ synced_at: "2026-08-14T15:53:22.392236"
 | [OH_NativeXComponent_ExtraMouseEventInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-nativexcomponent-extramouseeventinfo) | OH_NativeXComponent_ExtraMouseEventInfo | 提供封装的扩展的鼠标事件信息实例。 |
 | [OH_ArkUI_SurfaceHolder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-arkui-surfaceholder) | OH_ArkUI_SurfaceHolder | 提供封装的OH_ArkUI_SurfaceHolder实例。 |
 | [OH_ArkUI_SurfaceCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-arkui-surfacecallback) | OH_ArkUI_SurfaceCallback | 定义Surface生命周期回调函数。 |
-| [NativeWindow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-nativewindow) | OHNativeWindow | 提供封装的NativeWindow实例。 |
+| [OHNativeWindow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-nativewindow) | OHNativeWindow | 提供封装的NativeWindow实例。 |
 | [ArkUI_XComponentSurfaceConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-arkui-xcomponentsurfaceconfig) | ArkUI_XComponentSurfaceConfig | 定义XComponent组件持有的Surface选项，用于设置XComponent组件持有的Surface在渲染时是否被视为不透明。 |
 
 #### [h2]枚举
@@ -53,7 +53,7 @@ synced_at: "2026-08-14T15:53:22.392236"
 | [ArkUI_XComponent_ImageAnalyzerState](#arkui_xcomponent_imageanalyzerstate) | ArkUI_XComponent_ImageAnalyzerState | XComponent图像AI分析状态码。 |
 | [OH_NativeXComponent_TouchEventType](#oh_nativexcomponent_toucheventtype) | OH_NativeXComponent_TouchEventType | 触摸事件类型。 |
 | [OH_NativeXComponent_TouchPointToolType](#oh_nativexcomponent_touchpointtooltype) | OH_NativeXComponent_TouchPointToolType | 触摸点工具类型。 |
-| [OH_NativeXComponent_EventSourceType](#oh_nativexcomponent_eventsourcetype) | OH_NativeXComponent_EventSourceType | 触摸事件源类型。 |
+| [OH_NativeXComponent_EventSourceType](#oh_nativexcomponent_eventsourcetype) | OH_NativeXComponent_EventSourceType | 事件源类型。 |
 | [OH_NativeXComponent_MouseEventAction](#oh_nativexcomponent_mouseeventaction) | OH_NativeXComponent_MouseEventAction | 鼠标事件动作。 |
 | [OH_NativeXComponent_MouseEventButton](#oh_nativexcomponent_mouseeventbutton) | OH_NativeXComponent_MouseEventButton | 鼠标事件按键。 |
 | [OH_NativeXComponent_TouchEvent_SourceTool](#oh_nativexcomponent_touchevent_sourcetool) | OH_NativeXComponent_TouchEvent_SourceTool | 表示触摸事件的源工具类型。 |
@@ -99,7 +99,7 @@ synced_at: "2026-08-14T15:53:22.392236"
 | [int32_t OH_NativeXComponent_GetKeyEventNumLockState(OH_NativeXComponent_KeyEvent* keyEvent, bool* isNumLockOn)](#oh_nativexcomponent_getkeyeventnumlockstate) | 从按键事件中获取NumLock（小键盘锁定）键的状态信息。 |
 | [int32_t OH_NativeXComponent_GetKeyEventCapsLockState(OH_NativeXComponent_KeyEvent* keyEvent, bool* isCapsLockOn)](#oh_nativexcomponent_getkeyeventcapslockstate) | 从按键事件中获取CapsLock（大写锁定）键的状态信息。 |
 | [int32_t OH_NativeXComponent_GetKeyEventScrollLockState(OH_NativeXComponent_KeyEvent* keyEvent, bool* isScrollLockOn)](#oh_nativexcomponent_getkeyeventscrolllockstate) | 从按键事件中获取ScrollLock（滚动锁定）键的状态信息。 |
-| [int32_t OH_NativeXComponent_SetExpectedFrameRateRange(OH_NativeXComponent* component, OH_NativeXComponent_ExpectedRateRange* range)](#oh_nativexcomponent_setexpectedframeraterange) | 设置期望帧率范围。本接口适用于通过OH_NativeXComponent指针操作的场景。若使用NativeNode（ArkUI_NodeHandle）创建的XComponent，请使用[OH_ArkUI_XComponent_SetExpectedFrameRateRange](#oh_arkui_xcomponent_setexpectedframeraterange)。 |
+| [int32_t OH_NativeXComponent_SetExpectedFrameRateRange(OH_NativeXComponent* component, OH_NativeXComponent_ExpectedRateRange* range)](#oh_nativexcomponent_setexpectedframeraterange) | 设置期望帧率范围。本接口适用于通过OH_NativeXComponent指针操作的场景。若使用NativeNode（ArkUI_NodeHandle）创建的XComponent，请使用[OH_ArkUI_XComponent_SetExpectedFrameRateRange](#oh_arkui_xcomponent_setexpectedframeraterange)接口。 |
 | [int32_t OH_NativeXComponent_RegisterOnFrameCallback(OH_NativeXComponent* component, void (*callback)(OH_NativeXComponent* component, uint64_t timestamp, uint64_t targetTimestamp))](#oh_nativexcomponent_registeronframecallback) | 为此[OH_NativeXComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-nativexcomponent)实例注册显示更新回调，并使能每帧回调此函数。 |
 | [int32_t OH_NativeXComponent_UnregisterOnFrameCallback(OH_NativeXComponent* component)](#oh_nativexcomponent_unregisteronframecallback) | 为此[OH_NativeXComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-nativexcomponent)实例取消注册回调函数，并关闭每帧回调此函数。 |
 | [int32_t OH_NativeXComponent_AttachNativeRootNode(OH_NativeXComponent* component, ArkUI_NodeHandle root)](#oh_nativexcomponent_attachnativerootnode) | 将通过ArkUI的Native接口创建出来的UI组件挂载到当前XComponent上。 **配对调用：** 挂载的组件在不再需要时，必须调用[OH_NativeXComponent_DetachNativeRootNode](#oh_nativexcomponent_detachnativerootnode)卸载。 |
@@ -111,7 +111,7 @@ synced_at: "2026-08-14T15:53:22.392236"
 | [int32_t OH_NativeXComponent_RegisterSurfaceHideCallback(OH_NativeXComponent* component, void (*callback)(OH_NativeXComponent* component, void* window))](#oh_nativexcomponent_registersurfacehidecallback) | 为此[OH_NativeXComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-nativexcomponent)实例注册Surface隐藏回调，该回调在应用窗口已经从前台进入后台时触发。 |
 | [int32_t OH_NativeXComponent_GetTouchEventSourceType(OH_NativeXComponent* component, int32_t pointId, OH_NativeXComponent_EventSourceType* sourceType)](#oh_nativexcomponent_gettoucheventsourcetype) | 获取ArkUI XComponent触摸事件的输入设备类型。 |
 | [OH_NativeXComponent* OH_NativeXComponent_GetNativeXComponent(ArkUI_NodeHandle node)](#oh_nativexcomponent_getnativexcomponent) | 基于Native接口创建的组件实例获取[OH_NativeXComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-nativexcomponent)类型的指针。 |
-| [int32_t OH_NativeXComponent_GetNativeAccessibilityProvider(OH_NativeXComponent* component, ArkUI_AccessibilityProvider** handle)](#oh_nativexcomponent_getnativeaccessibilityprovider) | 获取ArkUI XComponent无障碍接入句柄，handle为地址（双重指针），用于接收返回的实例指针。 |
+| [int32_t OH_NativeXComponent_GetNativeAccessibilityProvider(OH_NativeXComponent* component, ArkUI_AccessibilityProvider** handle)](#oh_nativexcomponent_getnativeaccessibilityprovider) | 获取ArkUI XComponent无障碍接入Provider，handle为地址（双重指针），用于接收返回的实例指针。 |
 | [int32_t OH_NativeXComponent_RegisterKeyEventCallbackWithResult(OH_NativeXComponent* component, bool (*callback)(OH_NativeXComponent* component, void* window))](#oh_nativexcomponent_registerkeyeventcallbackwithresult) | 为此[OH_NativeXComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-nativexcomponent)实例注册带有返回值的按键事件回调。与[OH_NativeXComponent_RegisterKeyEventCallback](#oh_nativexcomponent_registerkeyeventcallback)不同，通过此接口注册的按键事件回调都必须返回一个结果，即true或false。当返回值为true时，该事件将不会继续分发；当返回值为false时，该事件将按照事件处理流程继续分发。如需控制按键事件是否继续分发，使用此接口；如仅需监听按键事件，可使用OH_NativeXComponent_RegisterKeyEventCallback。 |
 | [int32_t OH_ArkUI_XComponent_StartImageAnalyzer(ArkUI_NodeHandle node, void* userData, void (*callback)(ArkUI_NodeHandle node, ArkUI_XComponent_ImageAnalyzerState statusCode, void* userData))](#oh_arkui_xcomponent_startimageanalyzer) | 为此XComponent组件实例开始图像AI分析，适用于需要在应用中提供图像智能识别相关功能的场景，使用前需先使能图像AI分析能力。 |
 | [int32_t OH_ArkUI_XComponent_StopImageAnalyzer(ArkUI_NodeHandle node)](#oh_arkui_xcomponent_stopimageanalyzer) | 为此XComponent组件实例停止图像AI分析。使用前需先使能图像AI分析能力。 **方法关系（配对调用）：** 此方法为OH_ArkUI_XComponent_StartImageAnalyzer的配对方法，需在调用StartImageAnalyzer开始分析后，于分析完成或不再需要分析时调用此方法停止分析并释放相关资源。 |
@@ -168,8 +168,8 @@ enum anonymous
 | 枚举项 | 描述 |
 | --- | --- |
 | OH_NATIVEXCOMPONENT_RESULT_SUCCESS = 0 | 成功结果。 |
-| OH_NATIVEXCOMPONENT_RESULT_FAILED = -1 | 失败结果。 |
-| OH_NATIVEXCOMPONENT_RESULT_BAD_PARAMETER = -2 | 无效参数。 |
+| OH_NATIVEXCOMPONENT_RESULT_FAILED = -1 | 失败结果。表示接口执行失败，可能由以下原因导致：1. XComponent组件尚未完成初始化；2. Surface已被销毁或释放；3. 系统内部错误。请检查XComponent初始化状态和Surface生命周期后重试。 |
+| OH_NATIVEXCOMPONENT_RESULT_BAD_PARAMETER = -2 | 无效参数。表示传入的参数为空指针或不符合接口要求，请检查传入参数是否合法。 |
 
 #### [h2]ArkUI_XComponent_ImageAnalyzerState
 
@@ -246,10 +246,10 @@ enum OH_NativeXComponent_EventSourceType
 | 枚举项 | 描述 |
 | --- | --- |
 | OH_NATIVEXCOMPONENT_SOURCE_TYPE_UNKNOWN = 0 | 未知的输入源类型。 |
-| OH_NATIVEXCOMPONENT_SOURCE_TYPE_MOUSE = 1 | 表示输入源生成鼠标多点触摸事件。 |
+| OH_NATIVEXCOMPONENT_SOURCE_TYPE_MOUSE = 1 | 表示输入源生成鼠标事件。 |
 | OH_NATIVEXCOMPONENT_SOURCE_TYPE_TOUCHSCREEN = 2 | 表示输入源生成一个触摸屏多点触摸事件。 |
 | OH_NATIVEXCOMPONENT_SOURCE_TYPE_TOUCHPAD = 3 | 表示输入源生成一个触摸板多点触摸事件。 |
-| OH_NATIVEXCOMPONENT_SOURCE_TYPE_JOYSTICK = 4 | 表示输入源生成一个操纵杆多点触摸事件。 |
+| OH_NATIVEXCOMPONENT_SOURCE_TYPE_JOYSTICK = 4 | 表示输入源生成一个操纵杆事件。 |
 | OH_NATIVEXCOMPONENT_SOURCE_TYPE_KEYBOARD = 5 | 表示输入源生成一个键盘事件。 **起始版本：** 10 |
 
 #### [h2]OH_NativeXComponent_MouseEventAction
@@ -340,7 +340,7 @@ int32_t OH_NativeXComponent_GetXComponentId(OH_NativeXComponent* component, char
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 返回执行的状态代码。 [OH_NATIVEXCOMPONENT_RESULT_SUCCESS](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-interface-xcomponent-h#anonymous) - 执行成功。 [OH_NATIVEXCOMPONENT_RESULT_BAD_PARAMETER](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-interface-xcomponent-h#anonymous) - 传入参数异常。 |
+| int32_t | 返回执行的状态代码。 [OH_NATIVEXCOMPONENT_RESULT_SUCCESS](#anonymous) - 执行成功。 [OH_NATIVEXCOMPONENT_RESULT_BAD_PARAMETER](#anonymous) - 传入参数异常。 |
 
 #### [h2]OH_NativeXComponent_GetXComponentSize()
 
@@ -359,8 +359,8 @@ int32_t OH_NativeXComponent_GetXComponentSize(OH_NativeXComponent* component, co
 | --- | --- |
 | [OH_NativeXComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-nativexcomponent)* component | 表示指向[OH_NativeXComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-nativexcomponent)实例的指针。 |
 | const void* window | 表示NativeWindow句柄。 |
-| uint64_t* width | 表示指向当前Surface宽度的指针。单位：vp。 |
-| uint64_t* height | 表示指向当前Surface高度的指针。单位：vp。 |
+| uint64_t* width | 表示指向当前Surface宽度的指针。单位：px。 |
+| uint64_t* height | 表示指向当前Surface高度的指针。单位：px。 |
 
 返回：
 
@@ -485,7 +485,7 @@ int32_t OH_NativeXComponent_GetTouchPointTiltY(OH_NativeXComponent* component, u
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_NativeXComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-nativexcomponent)* component | 表示指向[OH_NativeXComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-nativexcomponent)实例的指针。 |
-| uint32_t pointIndex | 表示触摸点的指针索引。取值范围为[0, OH_NATIVE_XCOMPONENT_MAX_TOUCH_POINTS_NUMBER)，仅当传入的索引为当前触摸事件中的有效触点索引时可正确获取信息。 |
+| uint32_t pointIndex | 表示触摸点的索引。取值范围为[0, OH_NATIVE_XCOMPONENT_MAX_TOUCH_POINTS_NUMBER)，仅当传入的索引为当前触摸事件中的有效触点索引时可正确获取信息。 |
 | float* tiltY | 表示指向触摸点沿Y轴倾斜角度的指针。取值范围为[-90, 90]，单位：度。 |
 
 返回：
@@ -510,8 +510,8 @@ int32_t OH_NativeXComponent_GetTouchPointWindowX(OH_NativeXComponent* component,
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_NativeXComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-nativexcomponent)* component | 表示指向[OH_NativeXComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-nativexcomponent)实例的指针。 |
-| uint32_t pointIndex | 表示触摸点的指针索引。 |
-| float* windowX | 表示指向触摸点相对于应用窗口左上角的X坐标的指针。 |
+| uint32_t pointIndex | 表示触摸点的索引。取值范围[0, 当前触摸事件中的触摸点数量-1]，且不超过OH_NATIVE_XCOMPONENT_MAX_TOUCH_POINTS_NUMBER-1。传入越界索引时返回OH_NATIVEXCOMPONENT_RESULT_BAD_PARAMETER。 |
+| float* windowX | 表示指向触摸点相对于应用窗口左上角的X坐标的指针。单位：px。 |
 
 返回：
 
@@ -535,8 +535,8 @@ int32_t OH_NativeXComponent_GetTouchPointWindowY(OH_NativeXComponent* component,
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_NativeXComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-nativexcomponent)* component | 表示指向[OH_NativeXComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-nativexcomponent)实例的指针。 |
-| uint32_t pointIndex | 表示触摸点的指针索引。 |
-| float* windowY | 表示指向触摸点相对于应用窗口左上角的Y坐标的指针。 |
+| uint32_t pointIndex | 表示触摸点的指针索引。取值范围为[0, OH_NATIVE_XCOMPONENT_MAX_TOUCH_POINTS_NUMBER - 1]。 |
+| float* windowY | 表示指向触摸点相对于应用窗口左上角的Y坐标的指针。单位：px。 |
 
 返回：
 
@@ -561,7 +561,7 @@ int32_t OH_NativeXComponent_GetTouchPointDisplayX(OH_NativeXComponent* component
 | --- | --- |
 | [OH_NativeXComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-nativexcomponent)* component | 表示指向[OH_NativeXComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-nativexcomponent)实例的指针。 |
 | uint32_t pointIndex | 表示触摸点的指针索引。 |
-| float* displayX | 表示指向触摸点相对于应用所在屏幕左上角的X坐标的指针。 |
+| float* displayX | 表示指向触摸点相对于应用所在屏幕左上角的X坐标的指针。单位：px。 |
 
 返回：
 
@@ -586,7 +586,7 @@ int32_t OH_NativeXComponent_GetTouchPointDisplayY(OH_NativeXComponent* component
 | --- | --- |
 | [OH_NativeXComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-nativexcomponent)* component | 表示指向[OH_NativeXComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-nativexcomponent)实例的指针。 |
 | uint32_t pointIndex | 表示触摸点的指针索引。 |
-| float* displayY | 表示指向触摸点相对于应用所在屏幕左上角的Y坐标的指针。 |
+| float* displayY | 表示指向触摸点相对于应用所在屏幕左上角的Y坐标的指针。单位：px。 |
 
 返回：
 
@@ -1132,6 +1132,8 @@ int32_t OH_NativeXComponent_AttachNativeRootNode(OH_NativeXComponent* component,
  描述：
 
 将通过ArkUI的Native接口创建出来的UI组件挂载到当前XComponent上。
+
+![](./img/note_3.0-zh-cn.png) 挂载的组件在不再需要时，必须调用[OH_NativeXComponent_DetachNativeRootNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-interface-xcomponent-h#oh_nativexcomponent_detachnativerootnode)进行卸载，避免内存泄漏。
 
 起始版本： 12
 
@@ -1693,7 +1695,7 @@ OHNativeWindow* OH_ArkUI_XComponent_GetNativeWindow(OH_ArkUI_SurfaceHolder* surf
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeWindow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-nativewindow)* | 返回[OH_ArkUI_SurfaceHolder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-arkui-surfaceholder)实例关联的NativeWindow。 |
+| [OHNativeWindow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-nativewindow)* | 返回[OH_ArkUI_SurfaceHolder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-arkui-surfaceholder)实例关联的OHNativeWindow。 |
 
 #### [h2]OH_ArkUI_XComponent_SetAutoInitialize()
 
@@ -1956,7 +1958,7 @@ void OH_ArkUI_SurfaceCallback_SetSurfaceShowEvent(OH_ArkUI_SurfaceCallback* call
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_ArkUI_SurfaceCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-arkui-surfacecallback)* callback | 表示指向[OH_ArkUI_SurfaceCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-arkui-surfacecallback)实例的指针。 |
-| void (onSurfaceShow)(OH_ArkUI_SurfaceHolder surfaceHolder) | 表示Surface显示回调函数指针。- surfaceHolder: 表示指向[OH_ArkUI_SurfaceHolder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-arkui-surfaceholder)实例的指针。 |
+| void (*onSurfaceShow)(OH_ArkUI_SurfaceHolder* surfaceHolder) | 表示Surface显示回调函数指针。- surfaceHolder: 表示指向[OH_ArkUI_SurfaceHolder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-arkui-surfaceholder)实例的指针。 |
 
 #### [h2]OH_ArkUI_SurfaceCallback_SetSurfaceHideEvent()
 
@@ -1974,7 +1976,7 @@ void OH_ArkUI_SurfaceCallback_SetSurfaceHideEvent(OH_ArkUI_SurfaceCallback* call
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_ArkUI_SurfaceCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-arkui-surfacecallback)* callback | 表示指向[OH_ArkUI_SurfaceCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-arkui-surfacecallback)实例的指针。 |
-| void (onSurfaceHide)(OH_ArkUI_SurfaceHolder surfaceHolder) | 表示Surface隐藏回调函数指针。- surfaceHolder: 表示指向[OH_ArkUI_SurfaceHolder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-arkui-surfaceholder)实例的指针。 |
+| void (*onSurfaceHide)(OH_ArkUI_SurfaceHolder* surfaceHolder) | 表示Surface隐藏回调函数指针。- surfaceHolder: 表示指向[OH_ArkUI_SurfaceHolder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-arkui-surfaceholder)实例的指针。 |
 
 #### [h2]OH_ArkUI_XComponentSurfaceConfig_Create()
 

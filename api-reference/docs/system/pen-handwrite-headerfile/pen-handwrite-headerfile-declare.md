@@ -2,8 +2,8 @@
 title: "native_handwrite_api.h"
 upstream_id: "harmonyos-references/pen-handwrite-headerfile-declare"
 catalog: "harmonyos-references"
-content_hash: "fe5ae35a9700"
-synced_at: "2026-07-28T16:51:17.745079"
+content_hash: "ca8e03aa0030"
+synced_at: "2026-08-29T18:17:13.052664"
 ---
 
 # native_handwrite_api.h
@@ -34,7 +34,7 @@ synced_at: "2026-07-28T16:51:17.745079"
 
 | 名称 | 描述 |
 | --- | --- |
-| enum [Handwrite_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pen-handwrite-c#handwrite_errcode) { E_NO_ERROR = 0, E_PARAMS = 401, E_INNER_ERROR = 1010400001, E_PERMISSION = 201 } | 定义手写错误码。 |
+| [Handwrite_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pen-handwrite-c#handwrite_errcode) { E_NO_ERROR = 0, E_PARAMS = 401, E_INNER_ERROR = 1010400001, E_PERMISSION = 201 } | 定义手写错误码。 |
 
 #### [h2]函数
 

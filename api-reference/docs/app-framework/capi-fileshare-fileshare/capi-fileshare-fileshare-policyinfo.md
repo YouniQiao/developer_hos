@@ -2,8 +2,8 @@
 title: "FileShare_PolicyInfo"
 upstream_id: "harmonyos-references/capi-fileshare-fileshare-policyinfo"
 catalog: "harmonyos-references"
-content_hash: "5ecaba68ea8a"
-synced_at: "2026-07-09T00:59:01.233989"
+content_hash: "c412aa1a8956"
+synced_at: "2026-08-29T18:16:09.519581"
 ---
 
 # FileShare_PolicyInfo
@@ -14,7 +14,7 @@ typedef struct FileShare_PolicyInfo {...} FileShare_PolicyInfo
 
 #### 概述
 
-需要授予或使能权限URI的策略信息。
+需要授予或激活URI访问权限的策略信息，用于描述跨应用文件共享场景中的目标URI和访问模式。
 
 起始版本： 12
 
@@ -28,6 +28,6 @@ typedef struct FileShare_PolicyInfo {...} FileShare_PolicyInfo
 
 | 名称 | 描述 |
 | --- | --- |
-| char *uri | 需要授予或使能权限的URI。 |
-| unsigned int length | URI的字节长度。 |
-| unsigned int operationMode | 授予或使能权限的URI访问模式。 示例：FileShare_OperationMode.READ_MODE 、 FileShare_OperationMode.WRITE_MODE 或者 FileShare_OperationMode.READ_MODE|FileShare_OperationMode.WRITE_MODE。 |
+| char *uri | 需要授予或激活访问权限的URI，需符合系统URI格式规范。 |
+| unsigned int length | uri指向字符串的字节长度，不包含字符串结束符'\0'。 |
+| unsigned int operationMode | 授予或激活权限的URI访问模式。READ_MODE表示读取权限，WRITE_MODE表示写入权限。 示例：FileShare_OperationMode.READ_MODE、FileShare_OperationMode.WRITE_MODE， 或者 FileShare_OperationMode.READ_MODE|FileShare_OperationMode.WRITE_MODE。 |

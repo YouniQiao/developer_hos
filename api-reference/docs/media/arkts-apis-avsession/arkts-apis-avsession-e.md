@@ -2,8 +2,8 @@
 title: "Enums"
 upstream_id: "harmonyos-references/arkts-apis-avsession-e"
 catalog: "harmonyos-references"
-content_hash: "52931a3e6d37"
-synced_at: "2026-07-28T16:51:36.624234"
+content_hash: "00d9a1ba2bee"
+synced_at: "2026-08-29T18:17:26.593883"
 ---
 
 # Enums
@@ -76,7 +76,7 @@ synced_at: "2026-07-28T16:51:36.624234"
 | CALL_STATE_IDLE | 0 | 空闲状态。 |
 | CALL_STATE_INCOMING | 1 | 来电。 |
 | CALL_STATE_ACTIVE | 2 | 接通。 |
-| CALL_STATE_DIALING | 3 | 响铃。 |
+| CALL_STATE_DIALING | 3 | 拨号中。 |
 | CALL_STATE_WAITING | 4 | 等待接通。 |
 | CALL_STATE_HOLDING | 5 | 保持。 |
 | CALL_STATE_DISCONNECTING | 6 | 挂断。 |
@@ -89,7 +89,7 @@ synced_at: "2026-07-28T16:51:36.624234"
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| TAG_AUDIO_VIVID | 1 | AUDIO VIVID |
+| TAG_AUDIO_VIVID | 1 | 标识当前媒体资源的AUDIO VIVID属性。 |
 
 #### DecoderType19+
 
@@ -132,7 +132,7 @@ synced_at: "2026-07-28T16:51:36.624234"
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
 | CATEGORY_LOCAL | 0 | 本地播放，默认播放设备，声音从本机或者连接的蓝牙耳机设备出声。 |
-| CATEGORY_REMOTE | 1 | 远端播放，远端播放设备，声音从其他设备发出声音或者画面。 |
+| CATEGORY_REMOTE | 1 | 远端播放，声音从其他设备发出或画面在其他设备上显示。 |
 
 #### DeviceType10+
 
@@ -164,7 +164,7 @@ synced_at: "2026-07-28T16:51:36.624234"
 | --- | --- | --- |
 | LOOP_MODE_SEQUENCE | 0 | 顺序播放。 |
 | LOOP_MODE_SINGLE | 1 | 单曲循环。 |
-| LOOP_MODE_LIST | 2 | 表单循环。 |
+| LOOP_MODE_LIST | 2 | 列表循环。 |
 | LOOP_MODE_SHUFFLE | 3 | 随机播放。 |
 | LOOP_MODE_CUSTOM11+ | 4 | 自定义播放。 |
 
@@ -243,12 +243,12 @@ synced_at: "2026-07-28T16:51:36.624234"
 | ERR_CODE_CAST_CONTROL_PARSING_CONTAINER_MALFORMED13+ | 6613001 | 媒体容器比特流的格式解析错误。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.Multimedia.AVSession.AVCast |
 | ERR_CODE_CAST_CONTROL_PARSING_MANIFEST_MALFORMED13+ | 6613002 | 媒体清单解析错误。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.Multimedia.AVSession.AVCast |
 | ERR_CODE_CAST_CONTROL_PARSING_CONTAINER_UNSUPPORTED13+ | 6613003 | 文件的媒体容器格式/媒体容器特性不被支持。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.Multimedia.AVSession.AVCast |
-| ERR_CODE_CAST_CONTROL_PARSING_MANIFEST_UNSUPPORTED13+ | 6613004 | 媒体清单中不支持的特性。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.Multimedia.AVSession.AVCast |
+| ERR_CODE_CAST_CONTROL_PARSING_MANIFEST_UNSUPPORTED13+ | 6613004 | 媒体清单中不支持此功能。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.Multimedia.AVSession.AVCast |
 | ERR_CODE_CAST_CONTROL_DECODING_UNSPECIFIED13+ | 6614000 | 未指定的解码错误。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.Multimedia.AVSession.AVCast |
 | ERR_CODE_CAST_CONTROL_DECODING_INIT_FAILED13+ | 6614001 | 解码器初始化失败。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.Multimedia.AVSession.AVCast |
 | ERR_CODE_CAST_CONTROL_DECODING_QUERY_FAILED13+ | 6614002 | 解码器查询失败。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.Multimedia.AVSession.AVCast |
 | ERR_CODE_CAST_CONTROL_DECODING_FAILED13+ | 6614003 | 媒体样本解码失败。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.Multimedia.AVSession.AVCast |
-| ERR_CODE_CAST_CONTROL_DECODING_FORMAT_EXCEEDS_CAPABILITIES13+ | 6614004 | 设备的能力无法解码当前格式。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.Multimedia.AVSession.AVCast |
+| ERR_CODE_CAST_CONTROL_DECODING_FORMAT_EXCEEDS_CAPABILITIES13+ | 6614004 | 所需解码的内容格式超出设备能力导致失败。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.Multimedia.AVSession.AVCast |
 | ERR_CODE_CAST_CONTROL_DECODING_FORMAT_UNSUPPORTED13+ | 6614005 | 不支持的解码格式。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.Multimedia.AVSession.AVCast |
 | ERR_CODE_CAST_CONTROL_AUDIO_RENDERER_UNSPECIFIED13+ | 6615000 | 未指定的音频渲染器错误。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.Multimedia.AVSession.AVCast |
 | ERR_CODE_CAST_CONTROL_AUDIO_RENDERER_INIT_FAILED 13+ | 6615001 | 音频渲染器初始化失败。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.Multimedia.AVSession.AVCast |
@@ -272,9 +272,9 @@ synced_at: "2026-07-28T16:51:36.624234"
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| SECONDS_10 | 10 | 时间为10秒。 |
-| SECONDS_15 | 15 | 时间为15秒。 |
-| SECONDS_30 | 30 | 时间为30秒。 |
+| SECONDS_10 | 10 | 时间间隔为10s。 |
+| SECONDS_15 | 15 | 时间间隔为15s。 |
+| SECONDS_30 | 30 | 时间间隔为30s。 |
 
 #### BackgroundPlayMode24+
 

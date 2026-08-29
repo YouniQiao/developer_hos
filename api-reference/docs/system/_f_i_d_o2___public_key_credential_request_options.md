@@ -2,8 +2,8 @@
 title: "FIDO2_PublicKeyCredentialRequestOptions"
 upstream_id: "harmonyos-references/_f_i_d_o2___public_key_credential_request_options"
 catalog: "harmonyos-references"
-content_hash: "001a22fded25"
-synced_at: "2026-07-28T16:50:31.710778"
+content_hash: "2e7cc68a86be"
+synced_at: "2026-08-29T18:16:32.362840"
 ---
 
 # FIDO2_PublicKeyCredentialRequestOptions
@@ -30,7 +30,7 @@ synced_at: "2026-07-28T16:50:31.710778"
 | [FIDO2_PublicKeyCredentialDescriptorArray](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_f_i_d_o2___public_key_credential_descriptor_array) [allowCredentials](#allowcredentials) | 认证凭据的附加参数列表。默认空列表。可选。 |
 | [FIDO2_UserVerificationRequirement](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey#fido2_userverificationrequirement-1) [userVerification](#userverification) | 用户认证需求枚举。默认值为FIDO2_PREFERRED。可选。 |
 | [FIDO2_PublicKeyCredentialHintArray](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_f_i_d_o2___public_key_credential_hint_array) [hints](#hints) | 认证方式指示。默认值为[]。可选。 |
-| char * [extensions](#extensions) | 扩展名必须是表示Map object的JSON字符串。默认空。可选，最大长度为2048字符。 |
+| char * [extensions](#extensions) | 扩展名必须是表示Map object的JSON字符串。默认空。可选，最小长度为0字符，最大长度为2048字符。 |
 
 #### 结构体成员变量说明
 

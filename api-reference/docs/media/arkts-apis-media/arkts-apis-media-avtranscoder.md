@@ -2,13 +2,13 @@
 title: "Interface (AVTranscoder)"
 upstream_id: "harmonyos-references/arkts-apis-media-avtranscoder"
 catalog: "harmonyos-references"
-content_hash: "49cd6ebc248f"
-synced_at: "2026-07-28T16:51:56.430136"
+content_hash: "a8d23f37dd82"
+synced_at: "2026-08-29T18:17:41.140431"
 ---
 
 # Interface (AVTranscoder)
 
-视频转码管理接口，用于视频转码。在调用AVTranscoder的方法前，需要先通过[createAVTranscoder()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-f#mediacreateavtranscoder12)构建一个AVTranscoder实例。
+视频转码管理类，用于视频转码。在调用AVTranscoder的方法前，需要先通过[createAVTranscoder()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-f#mediacreateavtranscoder12)构建一个AVTranscoder实例。
 
 视频转码demo可参考：[视频转码开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-avtranscoder-for-transcodering)
 
@@ -89,8 +89,8 @@ async function test() {
   // 配置水印参数。
   let watermarkConfig: media.WatermarkConfiguration = {
       // 根据实际需求配置水印参数，单位为像素（px）。
-      top: 40,
-      left: 40,
+      top : 40,
+      left : 40,
       width: 200,
       height: 300,
   };
@@ -463,7 +463,7 @@ on(type: 'error', callback: ErrorCallback): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 转码错误事件回调类型'error'。转码过程中发生错误，触发该事件。 |
+| type | string | 是 | 转码错误事件回调类型'error'。 - 'error'：录制过程中发生错误，触发该事件。 |
 | callback | [ErrorCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#errorcallback) | 是 | 转码错误事件回调方法。 |
 
 错误码：
@@ -529,7 +529,7 @@ async function test() {
 
 on(type: 'complete', callback: Callback<void>): void
 
-注册转码完成事件，并通过注册的回调方法通知开发者。开发者只能注册一个完成事件的回调方法，当开发者重复注册时，以最后一次注册的回调接口为准。使用callback异步回调。
+注册转码完成事件，并通过注册的回调方法通知开发者。开发者只能注册一个进度更新事件的回调方法，当开发者重复注册时，以最后一次注册的回调接口为准。使用callback异步回调。
 
 当AVTranscoder上报complete事件时，当前转码操作已完成，开发者需要通过[release()](#release12)退出转码操作。
 
@@ -541,7 +541,7 @@ on(type: 'complete', callback: Callback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 完成事件回调类型，支持的事件：'complete'，在转码完成时系统会自动触发此事件。 |
+| type | string | 是 | 完成事件回调类型，支持的事件：'complete'，在转码过程中系统会自动触发此事件。 |
 | callback | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#callback) | 是 | 回调函数，返回完成事件回调方法。 |
 
 示例：

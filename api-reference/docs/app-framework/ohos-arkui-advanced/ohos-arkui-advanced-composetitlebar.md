@@ -2,13 +2,13 @@
 title: "ComposeTitleBar"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-composetitlebar"
 catalog: "harmonyos-references"
-content_hash: "939b8f094538"
-synced_at: "2026-07-28T16:48:03.593279"
+content_hash: "6a6c15465ce2"
+synced_at: "2026-08-29T18:15:07.064781"
 ---
 
 # ComposeTitleBar
 
-ComposeTitleBar是一种普通标题栏组件，支持设置标题、头像（可选）和副标题（可选），可用于一级页面、二级及其以上界面显示返回键。可快速构建统一风格的标题栏，简化页面开发，支持灵活的菜单项配置和图标自定义，帮助开发者快速实现导航和操作入口。
+一种普通标题栏，支持设置标题、头像（可选）和副标题（可选），可用于一级页面、二级及其以上界面配置返回键。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -40,10 +40,10 @@ ComposeTitleBar({item?: ComposeTitleBarMenuItem, title: ResourceStr, subtitle?: 
 
 | 名称 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| item | [ComposeTitleBarMenuItem](#composetitlebarmenuitem) | 否 | 用于左侧头像的单个菜单项目。不设置时标题栏左侧不显示头像。 |
-| title | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 是 | 标题栏的标题文本。 |
-| subtitle | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 副标题。不设置时不显示副标题。 |
-| menuItems | Array | 否 | 右侧菜单项目列表。不设置时标题栏右侧不显示菜单项目。 |
+| item | [ComposeTitleBarMenuItem](#composetitlebarmenuitem) | 否 | 用于左侧头像的单个菜单项目。 |
+| title | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 是 | 标题。 |
+| subtitle | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 副标题。 |
+| menuItems | Array | 否 | 右侧菜单项目列表。 |
 
 ![](./img/note_3.0-zh-cn.png) 入参对象不可为undefined，即ComposeTitleBar(undefined)。
 
@@ -55,14 +55,14 @@ ComposeTitleBar({item?: ComposeTitleBarMenuItem, title: ResourceStr, subtitle?: 
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| value | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 否 | 图标资源。如果同时设置了symbolStyle属性，则symbolStyle优先级更高。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| symbolStyle18+ | [SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier#symbolglyphmodifier) | 否 | 是 | Symbol图标资源，优先级大于value，item左侧头像不支持设置该属性。不设置时使用value属性指定的图标资源。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| label13+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 图标标签描述，用于设置图标的辅助文本信息。当未设置accessibilityText时，label可作为无障碍文本的默认值。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
-| isEnabled | boolean | 否 | 是 | 是否启用。默认值：false。 true表示启用，false表示禁用。 item参数不支持触发isEnabled属性。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| action | () => void | 否 | 是 | 点击菜单项时触发的回调函数。item参数不支持触发action事件。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| accessibilityLevel18+ | string | 否 | 是 | 标题栏右侧自定义按钮无障碍重要性，控制当前项是否可被无障碍辅助服务识别。仅适用于menuItems中的项，不适用于item参数。 支持的值为： "auto"：等同于"yes"。 "yes"：可被无障碍辅助服务识别。 "no"：不可被无障碍辅助服务识别。 "no-hide-descendants"：当前项及其子组件均不可被识别。 默认值："auto"。item参数不支持设置该属性。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| accessibilityText18+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 标题栏右侧自定义按钮的无障碍文本。当组件无文本属性时，屏幕朗读不会播报，设置此属性后屏幕朗读可播报该内容，帮助用户了解选中的组件。item属性不支持设置该属性。 默认值：有label时默认值为当前项label属性内容，未设置label时默认值为空字符串。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| accessibilityDescription18+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 标题栏右侧自定义按钮的无障碍描述，用于向用户详细解释组件功能和操作后果。组件被选中时，系统先播报文本属性，再播报无障碍描述内容。item属性不支持设置该属性。 默认值为“单指双击即可执行”。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| value | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 否 | 图标资源。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| symbolStyle18+ | [SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier#symbolglyphmodifier) | 否 | 是 | Symbol图标资源，优先级大于value，item左侧头像不支持设置该属性。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| label13+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 图标标签描述。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
+| isEnabled | boolean | 否 | 是 | 是否启用，默认禁用。 isEnabled为true时，表示为启用。 isEnabled为false时，表示为禁用。 item属性不支持触发isEnabled属性。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| action | () => void | 否 | 是 | 触发时的动作闭包，item属性不支持触发action事件。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| accessibilityLevel18+ | string | 否 | 是 | 标题栏右侧自定义按钮无障碍重要性。用于控制当前项是否可被无障碍辅助服务所识别。 支持的值为： "auto"：当前组件会转换'yes'。 "yes"：当前组件可被无障碍辅助服务所识别。 "no"：当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants"：当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值："auto"。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| accessibilityText18+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 标题栏右侧自定义按钮的无障碍文本属性。当组件不包含文本属性时，屏幕朗读选中此组件时不播报，使用者无法清楚地知道当前选中了什么组件。为了解决此场景，开发人员可为不包含文字信息的组件设置无障碍文本，当屏幕朗读选中此组件时播报无障碍文本的内容，帮助屏幕朗读的使用者清楚地知道自己选中了什么组件。 默认值：有label默认值为当前项label属性内容，没有设置label时，默认值为“ ”。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| accessibilityDescription18+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 标题栏右侧自定义按钮的无障碍描述。此描述用于向用户详细解释当前组件，开发人员应为组件的这一属性提供较为详尽的文本说明，以协助用户理解即将执行的操作及其可能产生的后果。特别是当这些后果无法仅从组件的属性和无障碍文本中直接获知时。如果组件同时具备文本属性和无障碍说明属性，当组件被选中时，系统将首先播报组件的文本属性，随后播报无障碍说明属性的内容。 默认值为“单指双击即可执行”。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 
 #### 事件
 
@@ -146,7 +146,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088423.png)
+ ![](./img/zh-cn_image_0000002731359349.png)
 
 #### [h2]示例2（右侧自定义按钮播报）
 
@@ -240,7 +240,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928593.png)
+ ![](./img/zh-cn_image_0000002701800044.png)
 
 #### [h2]示例3（设置Symbol类型图标）
 
@@ -321,4 +321,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008914.png)
+ ![](./img/zh-cn_image_0000002731519331.png)

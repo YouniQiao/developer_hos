@@ -2,8 +2,8 @@
 title: "触摸事件"
 upstream_id: "harmonyos-references/ts-universal-events-touch"
 catalog: "harmonyos-references"
-content_hash: "31d8394c4f89"
-synced_at: "2026-07-28T16:41:48.292907"
+content_hash: "3b2ebb50b779"
+synced_at: "2026-08-29T18:12:39.004987"
 ---
 
 # 触摸事件
@@ -40,7 +40,7 @@ onTouch(event: (event: TouchEvent) => void): T
 
 #### TouchEvent对象说明
 
-继承于[BaseEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-customize-judge#baseevent8)。在非事件注入场景下，changedTouches是按屏幕刷新率重采样的点，而touches是按器件刷新率上报的点，因此changedTouches与touches的数据可能不同。
+继承于[BaseEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-click#baseevent8)。在非事件注入场景下，changedTouches是按屏幕刷新率重采样的点，而touches是按器件刷新率上报的点，因此changedTouches与touches的数据可能不同。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -178,6 +178,7 @@ struct TouchExample {
             if (event.touches.length > 0) {
               this.text = 'TouchType:' + this.eventType
                 + '\nDistance between touch point and touch element:'
+                + '\n  id: ' + event.touches[0].id
                 + '\n  x: ' + event.touches[0].x + '\n  y: ' + event.touches[0].y
                 + '\n  width: ' + event.touches[0].width + '\n  height: ' + event.touches[0].height
                 + '\n  pressedTime: ' + event.touches[0].pressedTime
@@ -209,6 +210,7 @@ struct TouchExample {
             if (event.touches.length > 0) {
               this.text = 'TouchType:' + this.eventType
                 + '\nDistance between touch point and touch element:'
+                + '\n  id: ' + event.touches[0].id
                 + '\n  x: ' + event.touches[0].x + '\n  y: ' + event.touches[0].y
                 + '\n  width: ' + event.touches[0].width + '\n  height: ' + event.touches[0].height
                 + '\n  pressedTime: ' + event.touches[0].pressedTime
@@ -225,7 +227,7 @@ struct TouchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848318.gif)
+ ![](./img/zh-cn_image_0000002701799364.gif)
 
 #### [h2]示例2（获取组件实时位置）
 
@@ -259,4 +261,4 @@ struct GetCurrentLocalPositionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087747.gif)
+ ![](./img/zh-cn_image_0000002731518651.gif)

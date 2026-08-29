@@ -2,15 +2,15 @@
 title: "IPCKit"
 upstream_id: "harmonyos-references/capi-ipckit"
 catalog: "harmonyos-references"
-content_hash: "1159dabd5cfa"
-synced_at: "2026-07-28T16:50:09.899489"
+content_hash: "ab0c2f7bb526"
+synced_at: "2026-08-29T18:16:14.861628"
 ---
 
 # IPCKit
 
 #### 概述
 
-IPC（Inter-Process Communication，进程间通信）Kit提供了进程间通信的能力，支持跨进程数据传输、方法调用等功能，帮助开发者快速构建稳定可靠的进程间通信能力。开发者可以通过引用ipc_kit.h头文件，使用IPC Kit提供的API进行进程间通信开发。典型使用场景包括：多进程协作、服务间通信、跨进程数据共享等。
+IPC头文件包含入口，方便开发者引用。IPC（Inter-Process Communication，进程间通信）Kit提供了进程间通信的能力，支持跨进程数据传输、方法调用等功能，帮助开发者快速构建稳定可靠的进程间通信能力。开发者可以通过引用ipc_kit.h头文件，使用IPC Kit提供的API进行进程间通信开发。典型使用场景包括：多进程协作、服务间通信、跨进程数据共享等。
 
 系统能力： SystemCapability.Communication.IPC.Core
 

@@ -2,8 +2,8 @@
 title: "WebSocket_Header"
 upstream_id: "harmonyos-references/capi-netstack-websocket-header"
 catalog: "harmonyos-references"
-content_hash: "a39169d691a2"
-synced_at: "2026-07-09T00:59:30.153174"
+content_hash: "f575dd966ff7"
+synced_at: "2026-08-29T18:16:46.008783"
 ---
 
 # WebSocket_Header
@@ -14,7 +14,7 @@ struct WebSocket_Header {...}
 
 #### 概述
 
-websocket客户端增加header的链表节点。
+WebSocket客户端增加header的链表节点。
 
 起始版本： 11
 

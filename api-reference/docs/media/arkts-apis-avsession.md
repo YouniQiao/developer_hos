@@ -1,12 +1,10 @@
 ---
-
 title: "模块描述"
 upstream_id: "harmonyos-references/arkts-apis-avsession"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T01:00:16.835418"
-content_hash: "460729d480f4"
+content_hash: "339e7c2e5c08"
+synced_at: "2026-08-29T18:17:25.681240"
 ---
-
 
 # 模块描述
 
@@ -14,9 +12,9 @@ content_hash: "460729d480f4"
 
 该模块提供以下媒体会话相关的常用功能：
 
-- [AVSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-avsession) : 会话，可用于设置元数据、播放状态信息等操作。
-- [AVSessionController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-avsessioncontroller): 会话控制器，可用于查看会话ID，完成对会话发送命令及事件，获取会话元数据、播放状态信息等操作。
-- [AVCastController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-avcastcontroller): 投播控制器，可用于投播场景下，完成播放控制、远端播放状态监听、远端播放状态信息获取等操作。
+- [AVSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-avsession)：会话，可用于设置元数据、播放状态信息等操作。
+- [AVSessionController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-avsessioncontroller)：会话控制器，可用于查看会话ID，向会话发送命令及事件，获取会话元数据、播放状态信息等操作。
+- [AVCastController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-avcastcontroller)：投播控制器，可用于投播场景下，完成播放控制、远端播放状态监听、远端播放状态信息获取等操作。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 9开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 

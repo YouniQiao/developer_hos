@@ -2,8 +2,8 @@
 title: "属性"
 upstream_id: "harmonyos-references/arkts-basic-components-web-attributes"
 catalog: "harmonyos-references"
-content_hash: "6a74910e18c5"
-synced_at: "2026-08-14T15:53:56.125404"
+content_hash: "878817f178cf"
+synced_at: "2026-08-29T18:16:03.583626"
 ---
 
 # 属性
@@ -12,7 +12,7 @@ synced_at: "2026-08-14T15:53:56.125404"
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 该组件首批接口从API version 8开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+- 该组件从API version 8开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
 - 示例效果请以真机运行为准。
 
 #### 概述
@@ -31,7 +31,7 @@ domStorageAccess(domStorageAccess: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| domStorageAccess | boolean | 是 | 设置是否开启文档对象模型存储接口（DOM Storage API）权限。 true表示开启文档对象模型存储接口权限，false表示不开启文档对象模型存储接口权限。 传入undefined或null时为false。 |
+| domStorageAccess | boolean | 是 | 设置是否开启文档对象模型存储接口（DOM Storage API）权限。 true表示开启，false表示不开启。 传入undefined或null时为false。 |
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -69,7 +69,7 @@ fileAccess(fileAccess: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| fileAccess | boolean | 是 | 设置是否开启应用中文件系统的访问。 true表示开启应用中文件系统的访问。false表示不开启应用中文件系统的访问。 同时，当fileAccess为false的时候，仅只读资源目录/data/storage/el1/bundle/entry/resources/resfile里面的资源依然可以通过file协议访问，不受fileAccess管控。 API version 11及以前，传入undefined或null时为true，API version 12及以后传入undefined或null时为false。 |
+| fileAccess | boolean | 是 | 设置是否开启应用中文件系统的访问。 true表示开启，false表示不开启。 同时，当fileAccess为false的时候，仅只读资源目录/data/storage/el1/bundle/entry/resources/resfile里面的资源依然可以通过file协议访问，不受fileAccess管控。 API version 11及以前，传入undefined或null时为true，API version 12及以后传入undefined或null时为false。 |
 
 示例：
 
@@ -95,7 +95,7 @@ struct WebComponent {
 
 imageAccess(imageAccess: boolean)
 
-设置是否允许自动加载图片资源。当属性没有显式调用时，允许自动加载图片资源。
+设置是否允许自动加载图片资源。当属性没有显式调用时，默认允许。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -103,7 +103,7 @@ imageAccess(imageAccess: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| imageAccess | boolean | 是 | 设置是否允许自动加载图片资源。 true表示设置允许自动加载图片资源，false表示设置不允许自动加载图片资源。 传入undefined或null时为false。 |
+| imageAccess | boolean | 是 | 设置是否允许自动加载图片资源。 true表示允许，false表示不允许。 传入undefined或null时为false。 |
 
 示例：
 
@@ -129,7 +129,7 @@ struct WebComponent {
 
 javaScriptProxy(javaScriptProxy: JavaScriptProxy)
 
-将javaScriptProxy中的ArkTS对象注册到Web组件中，该对象将使用JavaScriptProxy中指定的名称注册到网页的所有框架中，包括所有iframe，这使得JavaScript可以调用javaScriptProxy中ArkTS对象的方法。当属性没有显式调用时，默认不将javaScriptProxy中的ArkTS对象注册到Web组件中。
+将javaScriptProxy中的ArkTS对象注册到Web组件中，该对象将使用JavaScriptProxy中指定的名称注册到网页的所有框架中，包括所有iframe，这使得JavaScript可以调用javaScriptProxy中ArkTS对象的方法。
 
 ![](./img/note_3.0-zh-cn.png) javaScriptProxy接口需要和[deleteJavaScriptRegister9+](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#deletejavascriptregister)接口配合使用，防止内存泄漏。
 
@@ -207,7 +207,7 @@ struct WebComponent {
 
 javaScriptAccess(javaScriptAccess: boolean)
 
-设置是否允许执行JavaScript脚本。当属性没有显式调用时，默认允许执行JavaScript脚本。
+设置是否允许执行JavaScript脚本。当属性没有显式调用时，默认允许。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -215,7 +215,7 @@ javaScriptAccess(javaScriptAccess: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| javaScriptAccess | boolean | 是 | 是否允许执行JavaScript脚本。 true表示允许执行JavaScript脚本，false表示不允许执行JavaScript脚本。 传入undefined或null时为false。 |
+| javaScriptAccess | boolean | 是 | 是否允许执行JavaScript脚本。 true表示允许，false表示不允许。 传入undefined或null时为false。 |
 
 示例：
 
@@ -240,7 +240,7 @@ struct WebComponent {
 
 overScrollMode(mode: OverScrollMode)
 
-设置Web过滚动模式。开启时，用户在Web根页面滑动到边缘会触发弹性动画弹回界面，但根页面上的内部页面不会触发回弹。该属性没有显式调用时，默认关闭过滚动模式。
+设置Web过滚动模式。开启时，用户在Web根页面滑动到边缘时，Web会通过弹性动画弹回界面，根页面上的内部页面不会触发回弹。该属性没有显式调用时，默认关闭。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -308,7 +308,7 @@ struct WebComponent {
 
 onlineImageAccess(onlineImageAccess: boolean)
 
-设置是否允许从网络加载图片资源（通过HTTP和HTTPS访问的资源）。当属性没有显式调用时，默认允许从网络加载图片资源。
+设置是否允许从网络加载图片资源（通过HTTP和HTTPS访问的资源）。当属性没有显式调用时，默认允许。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -316,7 +316,7 @@ onlineImageAccess(onlineImageAccess: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| onlineImageAccess | boolean | 是 | 设置是否允许从网络加载图片资源。 true表示设置允许从网络加载图片资源，false表示设置不允许从网络加载图片资源。 传入undefined或null时为false。 |
+| onlineImageAccess | boolean | 是 | 设置是否允许从网络加载图片资源。 true表示允许，false表示不允许。 传入undefined或null时为false。 |
 
 示例：
 
@@ -342,7 +342,7 @@ struct WebComponent {
 
 zoomAccess(zoomAccess: boolean)
 
-设置是否支持手势进行缩放。该属性没有显式调用时，默认支持手势进行缩放。
+设置是否支持手势进行缩放。该属性没有显式调用时，默认支持。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -350,7 +350,7 @@ zoomAccess(zoomAccess: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| zoomAccess | boolean | 是 | 设置是否支持手势进行缩放。 true表示设置支持手势进行缩放，false表示设置不支持手势进行缩放。 传入undefined或null时为false。 |
+| zoomAccess | boolean | 是 | 设置是否支持手势进行缩放。 true表示支持，false表示不支持。 传入undefined或null时为false。 |
 
 示例：
 
@@ -386,7 +386,7 @@ overviewModeAccess(overviewModeAccess: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| overviewModeAccess | boolean | 是 | 设置是否使用概览模式加载网页。 true表示设置使用概览模式加载网页，false表示设置不使用概览模式加载网页。 传入undefined或null时为false。 |
+| overviewModeAccess | boolean | 是 | 设置是否使用概览模式加载网页。 true表示使用，false表示不使用。 传入undefined或null时为false。 |
 
 示例：
 
@@ -484,7 +484,7 @@ struct WebComponent {
 
 mediaPlayGestureAccess(access: boolean)
 
-设置有声视频的自动播放是否需要用户手动点击，静音视频播放不受该接口管控。当该属性未显式设置时，默认有声视频的自动播放需要用户手动点击。
+设置有声视频的自动播放是否需要用户手动点击，静音视频播放不受该接口管控。当该属性未显式设置时，默认需要用户手动点击。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -492,7 +492,7 @@ mediaPlayGestureAccess(access: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| access | boolean | 是 | 设置有声视频的自动播放是否需要用户手动点击。 true表示设置有声视频的自动播放需要用户手动点击，false表示设置有声视频的自动播放不需要用户手动点击，能自动播放。 传入undefined或null时为false。 |
+| access | boolean | 是 | 设置有声视频的自动播放是否需要用户手动点击。 true表示需要用户手动点击，false表示不需要，能自动播放。 传入undefined或null时为false。 |
 
 示例：
 
@@ -538,7 +538,7 @@ struct WebComponent {
 
 multiWindowAccess(multiWindow: boolean)
 
-设置是否开启多窗口权限。当属性没有显式调用时，默认不开启多窗口权限。
+设置是否开启多窗口权限。当属性没有显式调用时，默认不开启。
 
 使能多窗口权限时，需要实现onWindowNew事件，示例代码参考[onWindowNew](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#onwindownew9)。
 
@@ -548,13 +548,13 @@ multiWindowAccess(multiWindow: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| multiWindow | boolean | 是 | 设置是否开启多窗口权限。 true表示设置开启多窗口权限，false表示设置不开启多窗口权限。 |
+| multiWindow | boolean | 是 | 设置是否开启多窗口权限。 true表示开启，false表示不开启。 |
 
 #### horizontalScrollBarAccess9+
 
 horizontalScrollBarAccess(horizontalScrollBar: boolean)
 
-设置是否显示横向滚动条，包括系统默认滚动条和用户自定义滚动条。该属性没有显式调用时，默认显示横向滚动条。
+设置是否显示横向滚动条，包括系统默认滚动条和用户自定义滚动条。该属性没有显式调用时，默认显示。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -567,7 +567,7 @@ horizontalScrollBarAccess(horizontalScrollBar: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| horizontalScrollBar | boolean | 是 | 设置是否显示横向滚动条。 true表示设置显示横向滚动条，false表示设置不显示横向滚动条。 传入undefined或null时为false。 |
+| horizontalScrollBar | boolean | 是 | 设置是否显示横向滚动条。 true表示显示，false表示不显示。 传入undefined或null时为false。 |
 
 示例：
 
@@ -598,7 +598,7 @@ struct WebComponent {
           try {
             this.controller.refresh();
           } catch (error) {
-            console.error(`ErrorCode: ${(error as BusinessError).code},  Message: ${(error as BusinessError).message}`);
+            console.error(`Failed to refresh Web. Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}`);
           }
         }).height('10%').width('40%')
       Web({ src: $rawfile('index.html'), controller: this.controller }).height('90%')
@@ -636,7 +636,7 @@ Scroll Test
 
 verticalScrollBarAccess(verticalScrollBar: boolean)
 
-设置是否显示纵向滚动条，包括系统默认滚动条和用户自定义滚动条。该属性没有显式调用时，默认显示纵向滚动条。
+设置是否显示纵向滚动条，包括系统默认滚动条和用户自定义滚动条。该属性没有显式调用时，默认显示。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -649,7 +649,7 @@ verticalScrollBarAccess(verticalScrollBar: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| verticalScrollBar | boolean | 是 | 设置是否显示纵向滚动条。 true表示设置显示纵向滚动条，false表示设置不显示纵向滚动条。 传入undefined或null时为false。 |
+| verticalScrollBar | boolean | 是 | 设置是否显示纵向滚动条。 true表示显示，false表示不显示。 传入undefined或null时为false。 |
 
 示例：
 
@@ -680,7 +680,7 @@ struct WebComponent {
           try {
             this.controller.refresh();
           } catch (error) {
-            console.error(`ErrorCode: ${(error as BusinessError).code},  Message: ${(error as BusinessError).message}`);
+            console.error(`Failed to refresh Web. Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}`);
           }
         }).height('10%').width('40%')
       Web({ src: $rawfile('index.html'), controller: this.controller }).height('90%')
@@ -753,7 +753,9 @@ struct WebComponent {
 
 copyOptions(value: CopyOptions)
 
-设置剪贴板复制范围选项。该属性没有显式调用时，默认支持复制后在当前设备内所有应用内粘贴。
+设置剪贴板复制范围选项。该属性没有显式调用时，默认支持复制后在当前设备所有应用内粘贴。
+
+![](./img/note_3.0-zh-cn.png) 当设置为CopyOptions.None时，[dataDetectorConfig](#datadetectorconfig20)中的enablePreviewMenu配置项无效。当[enableDataDetector](#enabledatadetector20)设置为true且此属性设置为CopyOptions.LocalDevice时，AI菜单功能将被激活。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -795,7 +797,7 @@ textZoomRatio(textZoomRatio: number)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| textZoomRatio | number | 是 | 要设置的页面的文本缩放百分比。 取值为整数，范围为(0, 2147483647]。 |
+| textZoomRatio | number | 是 | 要设置的页面的文本缩放百分比，100表示原始大小，大于100表示放大，小于100表示缩小。 取值为整数，范围为(0, 2147483647]。 |
 
 示例：
 
@@ -822,7 +824,7 @@ struct WebComponent {
 
 initialScale(percent: number)
 
-设置整体页面的缩放百分比。该属性没有显式调用时，默认缩放百分比为100。
+设置整体页面的缩放百分比。该属性没有显式调用时，默认为100。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -1055,7 +1057,7 @@ webFixedFont(family: string)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| family | string | 是 | 设置网页的fixed font字体库。 传入null或undefined时为monospace。 |
+| family | string | 是 | 设置网页的fixed font字体库，传入值为字体名称字符串，如"monospace"、"Arial"等。 传入null或undefined时为monospace。 |
 
 示例：
 
@@ -1266,7 +1268,7 @@ struct WebComponent {
 
 darkMode(mode: WebDarkMode)
 
-设置Web深色模式。当属性没有显式调用时，默认Web深色模式关闭。
+设置Web深色模式。当属性没有显式调用时，默认关闭。
 
 当深色模式开启时，Web将启用媒体查询prefers-color-scheme中网页所定义的深色样式，若网页未定义深色样式，则保持原状。如需开启强制深色模式，建议配合[forceDarkAccess](#forcedarkaccess9)使用。深色模式具体用法可参考[Web深色模式适配](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-set-dark-mode)。
 
@@ -1311,7 +1313,7 @@ forceDarkAccess(access: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| access | boolean | 是 | 设置网页是否开启强制深色模式。 true表示设置网页开启强制深色模式，false表示设置网页不开启强制深色模式。 传入null或undefined时为false。 |
+| access | boolean | 是 | 设置网页是否开启强制深色模式。 true表示开启，false表示设置不开启。 传入null或undefined时为false。 |
 
 示例：
 
@@ -1878,19 +1880,19 @@ Hello world!
 
 layoutMode(mode: WebLayoutMode)
 
-设置Web布局模式。当属性没有显式调用时，默认Web布局跟随系统模式。常见问题请参考[Web组件大小自适应页面内容布局](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-fit-content)。
+设置Web布局模式。当属性没有显式调用时，默认Web布局跟随系统模式（WebLayoutMode.NONE）。常见问题请参考[Web组件大小自适应页面内容布局](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-fit-content)。
 
-![](./img/note_3.0-zh-cn.png) 目前只支持两种Web布局模式，分别为Web布局跟随系统（WebLayoutMode.NONE）和Web组件高度基于前端页面高度的自适应网页布局（WebLayoutMode.FIT_CONTENT）。
+![](./img/note_3.0-zh-cn.png) 目前只支持两种Web布局模式，分别为
+
+- Web布局跟随系统（WebLayoutMode.NONE）。
+- Web组件高度基于前端页面高度的自适应网页布局（WebLayoutMode.FIT_CONTENT）。
 
 Web组件高度基于前端页面自适应布局有如下限制：
 
-- 如果Web组件宽或长度超过7680px，请在Web组件创建的时候指定RenderMode.SYNC_RENDER模式，否则会整个白屏。
-- Web组件创建后不支持动态切换layoutMode模式。
-- Web组件宽高规格：指定RenderMode.ASYNC_RENDER模式时，分别不超过7680px。
-- 频繁更改页面宽高会触发Web组件重新布局，影响体验。
-- 不支持瀑布流网页（下拉到底部加载更多）。
-- 不支持宽度自适应，仅支持高度自适应。
-- 由于高度自适应网页高度，您无法通过修改组件高度属性来修改组件高度。
+- 当layoutMode设置为WebLayoutMode.FIT_CONTENT [forceDisplayScrollBar](#forcedisplayscrollbar14)不支持常驻
+- [blankScreenDetectionConfig](#blankscreendetectionconfig22)不生效
+
+如果Web组件宽或长度超过7680px，请在Web组件创建的时候指定RenderMode.SYNC_RENDER模式，否则会整个白屏。 Web组件创建后不支持动态切换layoutMode模式。 Web组件宽高规格：指定RenderMode.ASYNC_RENDER模式时，分别不超过7680px。 频繁更改页面宽高会触发Web组件重新布局，影响体验。 不支持瀑布流网页（下拉到底部加载更多）。 不支持宽度自适应，仅支持高度自适应。 由于高度自适应网页高度，您无法通过修改组件高度属性来修改组件高度。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -2055,7 +2057,7 @@ struct WebComponent {
 
 enableScrollDirectionalLock(value: boolean, type: ScrollDirectionalLockType)
 
-设置Web组件滑动方向锁定。不调用该方法设置时，默认在嵌套滚动场景下支持滑动方向锁定。
+设置Web组件滑动方向锁定，防止用户在斜向滑动时同时触发水平和垂直滚动，提升滚动体验。不调用该方法设置时，默认在嵌套滚动场景下支持滑动方向锁定。ALL模式适用于所有需要锁定滑动的场景，NESTED_SCROLL模式仅适用于嵌套滚动场景。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -2138,6 +2140,8 @@ enableNativeEmbedMode(enabled: boolean)
 
 设置是否开启同层渲染功能。当该方法没有显式调用时，默认不开启同层渲染功能。
 
+![](./img/note_3.0-zh-cn.png) [registerNativeEmbedRule](#registernativeembedrule12)和[nativeEmbedOptions](#nativeembedoptions16)等接口依赖此属性开启时才生效。
+
 系统能力： SystemCapability.Web.Webview.Core
 
 参数：
@@ -2173,13 +2177,18 @@ forceDisplayScrollBar(enabled: boolean)
 
 全量展开模式下不支持滚动条常驻，即layoutMode为WebLayoutMode.FIT_CONTENT模式时，参数enabled为false。
 
+![](./img/note_3.0-zh-cn.png)
+
+- 该接口在当前应用的所有Web组件中全局生效。多个Web组件设置不同值时，以首次设置的值为准。
+- 建议使用[setScrollbarMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#setscrollbarmode23)设置当前应用所有Web组件的滚动条模式。若同时调用setScrollbarMode接口，forceDisplayScrollBar接口设置不生效。
+
 系统能力： SystemCapability.Web.Webview.Core
 
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| enabled | boolean | 是 | 滚动条是否常驻。 true表示滚动条常驻，false表示滚动条不常驻。 传入undefined或null时属性设置不生效。 |
+| enabled | boolean | 是 | 滚动条是否常驻。 true表示滚动条常驻，false表示滚动条不常驻。 当layoutMode为WebLayoutMode.FIT_CONTENT模式时，enabled参数强制为false，设置true也不生效。 传入undefined或null时属性设置不生效。 |
 
 示例：
 
@@ -2530,7 +2539,7 @@ enableNativeMediaPlayer(config: NativeMediaPlayerConfig)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| config | [NativeMediaPlayerConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-i#nativemediaplayerconfig12) | 是 | enable: 是否开启该功能。 shouldOverlay: 该功能开启后， 应用接管网页视频的播放器画面是否覆盖网页内容。 传入undefined或null时为{enable: false, shouldOverlay: false}。 |
+| config | [NativeMediaPlayerConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-i#nativemediaplayerconfig12) | 是 | 应用接管网页媒体播放功能的配置对象。包含以下属性：enable（boolean类型，是否开启该功能，默认为false），shouldOverlay（boolean类型，当功能开启后，应用接管网页视频的播放器画面是否覆盖网页内容，默认为false）。 传入undefined或null时为{enable: false, shouldOverlay: false}。 |
 
 示例：
 
@@ -2651,6 +2660,11 @@ editMenuOptions(editMenu: EditMenuOptions)
 
 设置Web组件自定义文本选择菜单。
 
+![](./img/note_3.0-zh-cn.png) 本接口与bindSelectionMenu功能类似，差异如下：
+
+- editMenuOptions：在系统默认菜单风格基础上添加扩展项，触发条件不变。
+- [bindSelectionMenu](#bindselectionmenu13)：完全自定义菜单风格和触发条件，由开发者定义。 两者不宜同时使用，建议根据自定义程度需求选择。
+
 用户可以通过该属性设置自定义的文本菜单。
 
 在[onCreateMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#oncreatemenu12)中，可以修改、增加、删除菜单选项，如果希望不显示文本菜单，需要返回空数组。
@@ -2720,11 +2734,13 @@ struct WebComponent {
     if (menuItem.id.equals(TextMenuItemId.CUT)) {
       // 用户自定义行为
       console.info("拦截 id：CUT")
-      return true; // 返回true不执行系统回调
+      // 返回true表示拦截此菜单项，不执行系统默认的剪切操作
+      return true;
     } else if (menuItem.id.equals(TextMenuItemId.COPY)) {
       // 用户自定义行为
       console.info("不拦截 id：COPY")
-      return false; // 返回false执行系统回调
+      // 返回false表示不拦截此菜单项，执行系统默认的复制操作
+      return false;
     } else if (menuItem.id.equals(TextMenuItemId.of('customItem1'))) {
       // 用户自定义行为
       console.info("拦截 id：customItem1")
@@ -2806,7 +2822,7 @@ enableHapticFeedback(enabled: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| enabled | boolean | 是 | 是否开启振动。 true表示开启振动，false表示不开启振动。 传入undefined或null时属性设置不生效。 |
+| enabled | boolean | 是 | 是否开启振动。 true表示开启振动，false表示不开启振动。 传入undefined或null时保持默认值，即开启振动。 |
 
 示例：
 
@@ -2858,7 +2874,7 @@ bindSelectionMenu(elementType: WebElementType, content: CustomBuilder, responseT
 | elementType | [WebElementType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-e#webelementtype13) | 是 | 菜单的类型。 |
 | content | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 是 | 菜单的内容。 |
 | responseType | [WebResponseType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-e#webresponsetype13) | 是 | 菜单的响应类型。 |
-| options | [SelectionMenuOptionsExt](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-i#selectionmenuoptionsext13) | 否 | 菜单的选项。 |
+| options | [SelectionMenuOptionsExt](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-i#selectionmenuoptionsext13) | 否 | 菜单的选项。传入undefined或null时使用默认配置。 |
 
 示例：
 
@@ -3003,7 +3019,7 @@ struct SelectionMenuLongPress {
                 }
               });
           } catch (error) {
-            console.error(`ErrorCode: ${(error as BusinessError).code},  Message: ${(error as BusinessError).message}`);
+            console.error(`Failed to clear selection. Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}`);
           }
           this.clearSelection()
         }).backgroundColor(Color.Pink)
@@ -3061,6 +3077,7 @@ struct SelectionMenuLongPress {
               this.previewImage = event.param.getSourceUrl();
             }
             this.linkURL = event.param.getLinkUrl()
+            // 返回true表示拦截系统默认的上下文菜单，使用自定义菜单
             return true;
           }
           return false;
@@ -3179,7 +3196,7 @@ struct SelectionMenuLongPress {
 
 blurOnKeyboardHideMode(mode: BlurOnKeyboardHideMode)
 
-设置当软键盘收起时Web元素失焦模式。
+设置当软键盘收起时Web元素失焦模式。当属性没有显式调用时，默认按[BlurOnKeyboardHideMode.SILENT](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-e#bluronkeyboardhidemode14)模式处理。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -3310,6 +3327,10 @@ enableWebAVSession(enabled: boolean)
 
 设置是否支持应用对接到播控中心。当属性没有显式设置时，默认支持应用对接到播控中心。
 
+![](./img/note_3.0-zh-cn.png)
+
+- 当enabled为false时，Web音视频不接入播控中心。若应用退至后台后，网页音频继续播放，Web组件代理申请AUDIO_PLAYBACK类型长时任务。API版本26.0.0及以上，系统会在通知栏显示对应的[长时任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/continuous-task)通知；删除该通知会停止对应的长时任务。
+
 系统能力： SystemCapability.Web.Webview.Core
 
 参数：
@@ -3412,6 +3433,8 @@ struct WebComponent {
 enableDataDetector(enable: boolean)
 
 设置是否识别网页文本特殊实体，如邮件、电话、网址等。该接口依赖设备底层具备文本识别能力，否则设置无效。该属性没有显式调用时，默认不启用。
+
+![](./img/note_3.0-zh-cn.png) [dataDetectorConfig](#datadetectorconfig20)和[enableSelectedDataDetector](#enableselecteddatadetector22)等属性依赖此属性开启时才能正常生效。
 
 当enableDataDetector设置为true，同时不设置[dataDetectorConfig](#datadetectorconfig20)属性时，默认识别所有类型的实体，所识别实体的color和decoration会被更改为如下样式：
 
@@ -3610,7 +3633,7 @@ struct WebComponent {
 
 gestureFocusMode(mode: GestureFocusMode)
 
-设置Web组件手势获焦模式。该属性没有显式调用时，默认表示手势按下时，任何手势均会使Web组件获焦。
+设置Web组件手势获焦模式，用于控制Web组件的焦点响应行为。该属性没有显式调用时，默认表示手势按下时，任何手势均会使Web组件获焦。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -4057,7 +4080,7 @@ enableDrag(value: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | boolean | 是 | 是否启用网页拖拽功能，true表示启用，false表示不启用。 |
+| value | boolean | 是 | 是否启用网页拖拽功能，true表示启用，false表示不启用。传入undefined或null时为true。 |
 | **示例：** | | | |
 
 ```
@@ -4111,7 +4134,7 @@ password(password: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| password | boolean | 是 | 设置为true时，表示允许Web保存密码。 设置为false时，表示不允许Web保存密码。 |
+| password | boolean | 是 | 设置为true时，表示允许Web保存密码。 设置为false时，表示不允许Web保存密码。 传入undefined或null时为false。 |
 
 #### textZoomAtio(deprecated)
 
@@ -4119,7 +4142,7 @@ textZoomAtio(textZoomAtio: number)
 
 设置页面的文本缩放百分比。
 
-![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[textZoomRatio9+](#textzoomratio9)代替。
+![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[textZoomRatio9+](#textzoomratio9)替代。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -4127,7 +4150,7 @@ textZoomAtio(textZoomAtio: number)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| textZoomAtio | number | 是 | 要设置的页面的文本缩放百分比。 取值范围为正整数。 默认值：100。 |
+| textZoomAtio | number | 是 | 要设置的页面的文本缩放百分比。100表示原始大小，大于100表示放大，小于100表示缩小。 取值范围为(0, 2147483647]。 |
 
 示例：
 
@@ -4198,7 +4221,7 @@ tableData(tableData: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| tableData | boolean | 是 | 设置为true时，表示允许Web保存表单数据。 设置为false时，表示不允许Web保存表单数据。 |
+| tableData | boolean | 是 | 设置为true时，表示允许Web保存表单数据。 设置为false时，表示不允许Web保存表单数据。 传入undefined或null时为true。 |
 
 #### wideViewModeAccess(deprecated)
 
@@ -4224,7 +4247,9 @@ Web组件自定义菜单扩展项接口，允许用户设置扩展项的文本�
 
 该接口只支持选中纯文本，当选中内容包含图片及其他非文本内容时，action信息中会显示乱码。
 
-![](./img/note_3.0-zh-cn.png) 从API version 12开始支持，从API version 20开始废弃。建议使用[editMenuOptions12+](#editmenuoptions12)替代。
+![](./img/note_3.0-zh-cn.png) 本接口在与[editMenuOptions](#editmenuoptions12)同时使用时，本接口不生效。
+
+从API version 12开始支持，从API version 20开始废弃。建议使用[editMenuOptions12+](#editmenuoptions12)替代。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -4362,6 +4387,7 @@ struct DemoPage {
   onCreateAISession = (id: string, params: string, result: OnAISessionCallback): boolean => {
     this.sessions.set(id, params); // 模拟创建AI会话
     console.info(`[AISession]onCreateAISession params: ${params}`);
+    // 通知调用方AI会话创建成功
     result(AISessionResultType.SUCCESS, "AISession created");
     return true;
   }
@@ -4369,6 +4395,7 @@ struct DemoPage {
   onExecuteAIAction = (id: string, params: string, result: OnAISessionCallback): void => {
     this.sessions.get(id); // 模拟取出会话，并执行动作
     console.info(`[AISession]onExecuteAIAction params: ${params}`);
+    // 模拟流式返回AI执行结果：多次调用RUNNING表示任务执行中、返回数据块，最后返回SUCCESS表示任务完成
     result(AISessionResultType.RUNNING, "AISession chunk 1\n");
     result(AISessionResultType.RUNNING, "AISession chunk 2\n");
     result(AISessionResultType.SUCCESS, "AISession chunk end\n");
@@ -4456,7 +4483,7 @@ struct DemoPage {
 
 scrollbarLayoutPolicy(policy: ScrollbarLayoutPolicy)
 
-选择Web组件内垂直滚动条的布局方式。
+选择Web组件内垂直滚动条的布局方式，用于适配不同语言的书写方向。CONTENT模式适用于需要跟随网页CSS direction属性的场景，SYSTEM模式适用于多语言应用中需要跟随系统语言方向设置的场景，如阿拉伯语、希伯来语等从右到左书写的语言。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -4468,7 +4495,7 @@ scrollbarLayoutPolicy(policy: ScrollbarLayoutPolicy)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| policy | [ScrollbarLayoutPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-e#scrollbarlayoutpolicy) | 是 | 设置Web组件内垂直滚动条布局模式，可选择跟随系统语言方向设置或网页css的direction属性设置。入参设置为： CONTENT，表示跟随网页css的direction属性设置。 SYSTEM，滚动条会根据系统语种的左右书写方向进行布局。对于从右向左书写的语言，滚动条将布局在左侧。对于网页内嵌套的多层滚动条均适用。 |
+| policy | [ScrollbarLayoutPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-e#scrollbarlayoutpolicy) | 是 | 设置Web组件内垂直滚动条布局模式。可选值：CONTENT（跟随网页css的direction属性设置），SYSTEM（根据系统语种的左右书写方向进行布局，对于从右向左书写的语言，滚动条将布局在左侧。对于网页内嵌套的多层滚动条均适用）。 |
 
 示例：
 
@@ -4497,7 +4524,7 @@ struct WebComponent {
 
 keyboardAppearance(mode: WebKeyboardAppearanceMode)
 
-设置键盘外观。不调用该方法时，默认跟随系统的沉浸式模式。
+设置键盘外观模式，用于控制Web组件内输入框弹出键盘的外观样式，包括沉浸式和非沉浸式模式。不调用该方法时，默认跟随系统的沉浸式模式。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -4569,7 +4596,7 @@ enableFullscreenVideoOverlay(enabled: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| enabled | boolean | 是 | 设置Web组件是否开启覆盖式全屏播放功能。 true表示开启该功能。 false表示不开启。 |
+| enabled | boolean | 是 | 设置Web组件是否开启覆盖式全屏播放功能。 true表示开启该功能。 false表示不开启。 传入undefined或null时为false。 |
 
 示例：
 
@@ -4586,6 +4613,48 @@ struct WebComponent {
     Column() {
       Web({ src: 'www.example.com', controller: this.controller })
       .enableFullscreenVideoOverlay(true)
+    }
+  }
+}
+```
+
+#### enableMediaNetworkProxy
+
+enableMediaNetworkProxy(enabled: boolean)
+
+设置Web组件是否开启媒体资源网络请求代理功能。当属性没有显式调用时，默认不开启该能力。
+
+![](./img/note_3.0-zh-cn.png)
+
+- 当前只支持HLS流媒体视频。
+
+起始版本： 26.0.0
+
+系统能力： SystemCapability.Web.Webview.Core
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| enabled | boolean | 是 | 设置Web组件是否开启媒体资源网络请求代理功能。 true表示开启该功能。 false表示不开启。 |
+
+示例：
+
+```
+// xxx.ets
+import { webview } from '@kit.ArkWeb';
+
+@Entry
+@Component
+struct WebComponent {
+  controller: webview.WebviewController = new webview.WebviewController();
+
+  build() {
+    Column() {
+      Web({ src: 'www.example.com', controller: this.controller })
+      .enableMediaNetworkProxy(true)
     }
   }
 }

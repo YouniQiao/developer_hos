@@ -2,8 +2,8 @@
 title: "ListItem"
 upstream_id: "harmonyos-references/ts-container-listitem"
 catalog: "harmonyos-references"
-content_hash: "4b6895cb8822"
-synced_at: "2026-07-28T16:43:22.871804"
+content_hash: "016fc51dfa8a"
+synced_at: "2026-08-29T18:13:21.455750"
 ---
 
 # ListItem
@@ -426,7 +426,7 @@ struct ListItemExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087913.gif)
+ ![](./img/zh-cn_image_0000002701639620.gif)
 
 #### [h2]示例2（设置划出组件）
 
@@ -447,15 +447,15 @@ struct ListItemExample2 {
   @Builder
   itemEnd() {
     Row() {
-      Button('Delete').margin('4vp')
-      Button('Set').margin('4vp').onClick(() => {
+      Button('Delete').margin(4)
+      Button('Set').margin(4).onClick(() => {
         try {
           this.scroller.closeAllSwipeActions();
         } catch (error) {
           console.error(`Failed to close all swipe actions. Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}`);
         }
       })
-    }.padding('4vp').justifyContent(FlexAlign.SpaceEvenly)
+    }.padding(4).justifyContent(FlexAlign.SpaceEvenly)
   }
 
   build() {
@@ -507,7 +507,7 @@ struct ListItemExample2 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928085.gif)
+ ![](./img/zh-cn_image_0000002731358841.gif)
 
 #### [h2]示例3（设置卡片样式）
 
@@ -520,7 +520,7 @@ struct ListItemExample2 {
 struct ListItemExample3 {
   build() {
     Column() {
-      List({ space: '4vp', initialIndex: 0 }) {
+      List({ space: 4, initialIndex: 0 }) {
         ListItemGroup({ style: ListItemGroupStyle.CARD }) {
           ForEach([ListItemStyle.CARD, ListItemStyle.CARD, ListItemStyle.NONE], (itemStyle: ListItemStyle, index?: number) => {
             ListItem({ style: itemStyle }) {
@@ -548,7 +548,7 @@ struct ListItemExample3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008406.jpeg)
+ ![](./img/zh-cn_image_0000002701799536.jpeg)
 
 #### [h2]示例4（通过ComponentContent设置划出组件）
 
@@ -571,11 +571,11 @@ class BuilderParams {
 @Builder
 function itemBuilder(params: BuilderParams) {
   Row() {
-    Button(params.text).margin('4vp')
-    Button('Set').margin('4vp').onClick(() => {
+    Button(params.text).margin(4)
+    Button('Set').margin(4).onClick(() => {
       params.scroller.closeAllSwipeActions();
     })
-  }.padding('4vp').justifyContent(FlexAlign.SpaceEvenly)
+  }.padding(4).justifyContent(FlexAlign.SpaceEvenly)
 }
 
 @Component
@@ -662,7 +662,7 @@ struct ListItemExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848486.gif)
+ ![](./img/zh-cn_image_0000002731518821.gif)
 
 #### [h2]示例5（通过ListItemSwipeActionManager管理划出菜单）
 
@@ -678,8 +678,8 @@ struct ListItemExample5 {
   @Builder
   itemAction(str: string) {
     Row() {
-      Button(str).margin('4vp')
-    }.padding('4vp').justifyContent(FlexAlign.SpaceEvenly)
+      Button(str).margin(4)
+    }.padding(4).justifyContent(FlexAlign.SpaceEvenly)
   }
 
   build() {
@@ -759,4 +759,4 @@ struct ListItemExample5 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087915.gif)
+ ![](./img/zh-cn_image_0000002701639622.gif)

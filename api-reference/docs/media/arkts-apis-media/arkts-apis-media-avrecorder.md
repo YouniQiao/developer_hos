@@ -2,8 +2,8 @@
 title: "Interface (AVRecorder)"
 upstream_id: "harmonyos-references/arkts-apis-media-avrecorder"
 catalog: "harmonyos-references"
-content_hash: "d219b48d14b8"
-synced_at: "2026-08-14T15:55:30.282670"
+content_hash: "785ce0d60bab"
+synced_at: "2026-08-29T18:17:41.006921"
 ---
 
 # Interface (AVRecorder)
@@ -304,7 +304,7 @@ getInputSurface(): Promise<string>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，返回获取的surfaceId。 |
+| Promise | Promise对象，返回surface中获取的surfaceBuffer。 |
 
 错误码：
 
@@ -441,7 +441,7 @@ setWillMuteWhenInterrupted(muteWhenInterrupted: boolean): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| muteWhenInterrupted | boolean | 是 | 设置当前录制音频流是否启用静音打断模式。true表示启用，音频流被打断时录制静音；false表示不启用，音频流被打断时停止录制。 |
+| muteWhenInterrupted | boolean | 是 | 设置当前录制音频流是否启用静音打断模式，true表示启用，false表示不启用，保持为默认打断模式。 |
 
 返回值：
 
@@ -1139,7 +1139,7 @@ avRecorder.getAudioCapturerMaxAmplitude().then((amplitude: number) => {
 
 getAvailableEncoder(callback: AsyncCallback<Array<EncoderInfo>>): void
 
-获取可用的编码器参数。适用于需要根据设备能力选择合适编码器的场景。使用callback异步回调。
+获取可用的编码器参数。使用callback异步回调。
 
 必须在非released/error状态下调用。
 
@@ -1185,7 +1185,7 @@ avRecorder.getAvailableEncoder((err: BusinessError, info: media.EncoderInfo[]) =
 
 getAvailableEncoder(): Promise<Array<EncoderInfo>>
 
-获取可用的编码器参数。适用于需要根据设备能力选择合适编码器的场景。使用Promise异步回调。
+获取可用的编码器参数。使用Promise异步回调。
 
 必须在非released/error状态下调用。
 

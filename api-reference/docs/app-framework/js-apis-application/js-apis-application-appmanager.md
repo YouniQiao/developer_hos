@@ -2,8 +2,8 @@
 title: "@ohos.application.appManager (appManager)"
 upstream_id: "harmonyos-references/js-apis-application-appmanager"
 catalog: "harmonyos-references"
-content_hash: "7a5a49a9c1c4"
-synced_at: "2026-07-09T00:57:11.046419"
+content_hash: "887b94223f55"
+synced_at: "2026-08-29T18:12:06.617375"
 ---
 
 # @ohos.application.appManager (appManager)
@@ -116,7 +116,7 @@ isRamConstrainedDevice(callback: AsyncCallback<boolean>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback | 是 | 以回调方式返回接口运行结果及当前设备是否为RAM受限设备，可进行错误处理或其他自定义处理。true：当前设备为RAM受限设备，false：当前设备为非RAM受限设备。 |
+| callback | AsyncCallback | 是 | 以回调方式返回接口运行结果及当前设备是否为RAM受限设备，可进行错误处理或其他自定义处理。返回true表示当前设备为RAM受限设备，返回false表示当前设备为非RAM受限设备。 |
 
 示例：
 
@@ -144,7 +144,7 @@ getAppMemorySize(): Promise<number>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，返回当前应用程序可以使用的最大内存（RAM）值，可根据此值进行错误处理或其他自定义处理，单位是M。 |
+| Promise | Promise对象，返回当前应用程序可以使用的最大内存（RAM）值，可根据此值进行错误处理或其他自定义处理，单位是MB。 |
 
 示例：
 
@@ -171,7 +171,7 @@ getAppMemorySize(callback: AsyncCallback<number>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback | 是 | 获取当前应用程序可以使用的最大内存（RAM）值，可根据此值进行错误处理或其他自定义处理，单位是M。使用callback异步回调。 |
+| callback | AsyncCallback | 是 | 以回调方式返回当前应用程序可以使用的最大内存（RAM）值，可根据此值进行错误处理或其他自定义处理，单位是MB。 |
 
 示例：
 
@@ -193,7 +193,7 @@ getProcessRunningInfos(): Promise<Array<ProcessRunningInfo>>
 
 获取有关运行进程的信息。使用Promise异步回调。
 
-从 API Version 9 开始废弃，建议使用[appManager.getRunningProcessInformation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-appmanager#appmanagergetrunningprocessinformation)替代。
+从 API version 9 开始废弃，建议使用[appManager.getRunningProcessInformation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-appmanager#appmanagergetrunningprocessinformation)替代。
 
 需要权限：ohos.permission.GET_RUNNING_INFO（该权限仅系统应用可申请）
 
@@ -224,7 +224,7 @@ getProcessRunningInfos(callback: AsyncCallback<Array<ProcessRunningInfo>>): void
 
 获取有关运行进程的信息。使用callback异步回调。
 
-从 API Version 9 开始废弃，建议使用[appManager.getRunningProcessInformation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-appmanager#appmanagergetrunningprocessinformation)替代。
+从API version 9开始废弃，建议使用[appManager.getRunningProcessInformation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-appmanager#appmanagergetrunningprocessinformation-1)替代。
 
 需要权限：ohos.permission.GET_RUNNING_INFO（该权限仅系统应用可申请）
 

@@ -2,8 +2,8 @@
 title: "@ohos.hiviewdfx.FaultLogExtensionContext (故障延迟通知上下文)"
 upstream_id: "harmonyos-references/js-apis-hiviewdfx-faultlogextensioncontext"
 catalog: "harmonyos-references"
-content_hash: "6a90b70fae45"
-synced_at: "2026-07-09T01:00:02.577215"
+content_hash: "71e7d2e34cac"
+synced_at: "2026-08-29T18:17:15.060086"
 ---
 
 # @ohos.hiviewdfx.FaultLogExtensionContext (故障延迟通知上下文)
@@ -35,5 +35,7 @@ export default class MyFaultLogExtension extends FaultLogExtensionAbility {
 #### FaultLogExtensionContext
 
 FaultLogExtensionContext是[FaultLogExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hiviewdfx-faultlogextensionability)的上下文环境。
+
+模型约束：此接口仅可在Stage模型下使用。
 
 系统能力：SystemCapability.HiviewDFX.Hiview.FaultLogger

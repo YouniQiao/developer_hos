@@ -2,8 +2,8 @@
 title: "@ohos.app.ability.AppServiceExtensionAbility (应用后台服务扩展组件)"
 upstream_id: "harmonyos-references/js-apis-app-ability-appserviceextensionability"
 catalog: "harmonyos-references"
-content_hash: "9f9fbf5e5f96"
-synced_at: "2026-07-28T16:40:31.979097"
+content_hash: "ef1f475a6543"
+synced_at: "2026-08-29T18:11:56.163827"
 ---
 
 # @ohos.app.ability.AppServiceExtensionAbility (应用后台服务扩展组件)
@@ -16,7 +16,7 @@ AppServiceExtensionAbility模块提供后台服务相关扩展能力，包括后
 
 #### 约束限制
 
-- 当前仅支持2in1设备。
+- 当前仅支持PC/2in1设备。
 - 应用集成AppServiceExtensionAbility的组件需要申请ACL权限（ohos.permission.SUPPORT_APP_SERVICE_EXTENSION）。该ACL权限当前只对企业普通应用开放申请，申请方式参考[权限申请指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
 - 为保障系统安全性和稳定性，防止AppServiceExtensionAbility滥用系统资源，系统对其能力进行管控，不支持[@ohos.window (窗口)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window)模块的引用。
 
@@ -24,7 +24,7 @@ AppServiceExtensionAbility模块提供后台服务相关扩展能力，包括后
 
 AppServiceExtensionAbility提供了[onCreate()](#oncreate)、[onRequest()](#onrequest)、[onConnect()](#onconnect)、[onDisconnect()](#ondisconnect)和[onDestroy()](#ondestroy)生命周期回调，开发者可根据需要重写对应的回调方法。下图展示了AppServiceExtensionAbility的生命周期。
 
-![](./img/zh-cn_image_0000002685927837.png)
+![](./img/zh-cn_image_0000002731518567.png)
 
 - **onCreate** 在AppServiceExtensionAbility实例创建时，系统会触发该回调。
 - **onDestroy** 在AppServiceExtensionAbility实例销毁时，系统会触发该回调。
@@ -56,7 +56,7 @@ AppServiceExtensionAbility模块提供后台服务相关扩展能力，包括后
 
 onCreate(want: Want): void
 
-在AppServiceExtensionAbility实例创建时，系统会触发该回调。应用可以在该接口中执行自己的业务逻辑初始化操作，例如注册公共事件监听等。
+在AppServiceExtensionAbility实例创建时，系统会触发该回调。应用可以在该接口中执行业务逻辑初始化操作，例如注册公共事件监听等。
 
 ![](./img/note_3.0-zh-cn.png) 如果AppServiceExtensionAbility实例已创建，再次启动或连接该实例时不会触发onCreate()回调。
 
@@ -89,7 +89,7 @@ export default class AppServiceExtAbility extends AppServiceExtensionAbility {
 
 onDestroy(): void
 
-在AppServiceExtensionAbility实例销毁时，系统会触发该回调。应用可以在该接口中执行资源清理等操作，如注销监听等。
+在AppServiceExtensionAbility实例销毁时，系统会触发该回调。应用可以在该接口中执行资源清理等操作，如注销监听。
 
 系统能力：SystemCapability.Ability.AbilityRuntime.Core
 
@@ -158,7 +158,7 @@ onConnect(want: Want): rpc.RemoteObject
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| want | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 调用方拉起当前AppServiceExtensionAbility实例时传递的Want类型信息，包括Ability名称、Bundle名称等。 |
+| want | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 调用方连接当前AppServiceExtensionAbility实例时传递的Want类型信息，包括Ability名称、Bundle名称等。 |
 
 返回值：
 

@@ -2,8 +2,8 @@
 title: "native_avdemuxer.h"
 upstream_id: "harmonyos-references/capi-native-avdemuxer-h"
 catalog: "harmonyos-references"
-content_hash: "0ece5c8bbaca"
-synced_at: "2026-07-28T16:51:33.524613"
+content_hash: "f85e8fe37560"
+synced_at: "2026-08-29T18:17:24.572701"
 ---
 
 # native_avdemuxer.h
@@ -85,6 +85,13 @@ DRM_MediaKeySystemInfo回调函数指针类型，返回解封装器实例，适�
 系统能力： SystemCapability.Multimedia.Media.Spliter
 
 起始版本： 12
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| [OH_AVDemuxer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avdemuxer-oh-avdemuxer) *demuxer | 指向OH_AVDemuxer实例的指针。 |
+| [DRM_MediaKeySystemInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avdemuxer-drm-mediakeysysteminfo) *mediaKeySystemInfo | 指向DRM信息的指针。 |
 
 #### [h2]OH_AVDemuxer_CreateWithSource()
 

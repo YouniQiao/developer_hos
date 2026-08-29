@@ -2,8 +2,8 @@
 title: "@ohos.bluetooth.a2dp (蓝牙a2dp模块)"
 upstream_id: "harmonyos-references/js-apis-bluetooth-a2dp"
 catalog: "harmonyos-references"
-content_hash: "a84792db0527"
-synced_at: "2026-07-09T00:59:22.546883"
+content_hash: "85a7c972a967"
+synced_at: "2026-08-29T18:16:35.828237"
 ---
 
 # @ohos.bluetooth.a2dp (蓝牙a2dp模块)
@@ -34,7 +34,7 @@ type BaseProfile = baseProfile.BaseProfile
 
 createA2dpSrcProfile(): A2dpSourceProfile
 
-创建蓝牙媒体[A2DP Source](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#a2dp-source)实例。通过该实例可以使用本端作为A2DP Source设备的方法，如：获取和其他设备间的蓝牙媒体音频播放状态。
+创建蓝牙媒体[A2DP Source](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#a2dp-source)实例。通过该实例，可以使用本端作为A2DP Source设备时提供的各项方法，如：获取和其他设备间的蓝牙媒体音频播放状态。
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
@@ -77,7 +77,7 @@ try {
 
 getPlayingState(deviceId: string): PlayingState
 
-获取本端和对端设备间的媒体音频播放状态。
+获取本端和对端设备间的媒体音频播放状态。例如，在音乐播放器应用中可用于检查蓝牙音频是否正在播放，从而同步更新界面的播放/暂停按钮状态。
 
 - 从API version 21开始，此接口支持使用对端设备的实际MAC地址获取媒体音频播放状态。
 
@@ -222,7 +222,7 @@ try {
 
 #### CodecBitRate19+
 
-枚举，蓝牙媒体音频编解码器的码率，表示单位时间内音频数据的传输量，单位为kbps。码率影响音频音质和文件大小。
+枚举，蓝牙媒体音频编解码器的码率，表示单位时间内音频数据的传输量，单位为kbps。码率影响音频音质和传输带宽。
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
@@ -236,13 +236,13 @@ try {
 | CODEC_BIT_RATE_480000 | 5 | 480kbps |
 | CODEC_BIT_RATE_640000 | 6 | 640kbps |
 | CODEC_BIT_RATE_960000 | 7 | 960kbps |
-| CODEC_BIT_RATE_ABR | 8 | 自适应码率（根据网络条件自动调整）。 |
+| CODEC_BIT_RATE_ABR | 8 | 自适应码率（根据蓝牙链路质量自动调整）。 |
 | CODEC_BIT_RATE_150000021+ | 9 | 1500kbps |
 | CODEC_BIT_RATE_230000021+ | 10 | 2300kbps |
 
 #### CodecFrameLength19+
 
-枚举，蓝牙媒体音频编解码器的帧长，表示一帧音频数据播放的时长。
+枚举，蓝牙媒体音频编解码器的帧长，表示一帧音频数据播放的时长，单位为ms。帧长影响音频传输的延迟和效率。
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 

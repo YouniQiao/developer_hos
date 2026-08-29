@@ -2,8 +2,8 @@
 title: "@ohos.abilityAccessCtrl (程序访问控制管理)"
 upstream_id: "harmonyos-references/js-apis-abilityaccessctrl"
 catalog: "harmonyos-references"
-content_hash: "99ab38b99f24"
-synced_at: "2026-07-28T16:40:35.585405"
+content_hash: "856ac07cb6cd"
+synced_at: "2026-08-29T18:11:59.806689"
 ---
 
 # @ohos.abilityAccessCtrl (程序访问控制管理)
@@ -40,7 +40,7 @@ synced_at: "2026-07-28T16:40:35.585405"
 
 - **[AtManager](#atmanager)：** 程序访问控制管理类，提供权限校验、权限弹窗申请、设置页授权引导和权限状态监听等能力。
 
-![](./img/zh-cn_image_0000002685927839.png)
+![](./img/zh-cn_image_0000002731518569.png)
 
 #### [h2]API组合使用关系说明
 
@@ -302,7 +302,7 @@ on(type: 'selfPermissionStateChange', permissionList: Array<Permissions>, callba
 | 12100001 | Invalid parameter. Possible causes: 1. The permissionList exceeds the size limit; 2. The permissionNames in the list are all invalid. |
 | 12100004 | The API is used repeatedly with the same input. |
 | 12100005 | The registration time has exceeded the limit. |
-| 12100007 | The service is abnormal. |
+| 12100007 | Service exception. |
 
 示例：
 
@@ -358,7 +358,7 @@ off(type: 'selfPermissionStateChange', permissionList: Array<Permissions>, callb
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
 | 12100004 | The API is not used in pair with "on". |
-| 12100007 | The service is abnormal. |
+| 12100007 | Service exception. |
 
 示例：
 
@@ -385,11 +385,11 @@ requestPermissionsFromUser(context: Context, permissionList: Array<Permissions>,
 
 用于UIAbility/UIExtensionAbility拉起弹窗请求[用户授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)，返回本次请求权限的授权结果。使用callback异步回调。
 
-适用于应用首次访问受保护资源前主动向用户申请 [user_grant](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview#user_grant用户授权) 权限的场景。
+适用于应用首次访问受保护资源前主动向用户申请[user_grant](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview#user_grant用户授权)权限的场景。
 
 如果用户拒绝授权，将无法通过此接口再次拉起授权弹窗。开发者可引导用户前往系统设置界面手动授权，或调用[requestPermissionOnSetting](#requestpermissiononsetting12)拉起权限设置弹窗，引导用户完成授权。
 
-![](./img/zh-cn_image_0000002656008160.png)
+![](./img/zh-cn_image_0000002701639372.png)
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -449,7 +449,7 @@ requestPermissionsFromUser(context: Context, permissionList: Array<Permissions>)
 
 用于UIAbility/UIExtensionAbility拉起弹窗请求[用户授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)，返回本次请求权限的授权结果。使用Promise异步回调。
 
-适用于应用首次访问受保护资源前主动向用户申请user_grant权限的场景。
+适用于应用首次访问受保护资源前主动向用户申请[user_grant](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview#user_grant用户授权)权限的场景。
 
 如果用户拒绝授权，将无法通过此接口再次拉起授权弹窗。开发者可引导用户前往系统设置界面手动授权，或调用[requestPermissionOnSetting](#requestpermissiononsetting12)拉起权限设置弹窗，引导用户完成授权。
 
@@ -480,7 +480,7 @@ requestPermissionsFromUser(context: Context, permissionList: Array<Permissions>)
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
 | 12100001 | (Deprecated in 12) Invalid parameter. The context is invalid when it does not belong to the application itself. |
-| 12100009 | Common inner error. An error occurs when creating the pop-up window or obtaining user operation results. |
+| 12100009 | Common inner error. An error occurs when creating the pop-up window or obtaining the user operation result. 适用版本：11+ |
 
 示例：
 
@@ -518,7 +518,7 @@ requestPermissionOnSetting(context: Context, permissionList: Array<Permissions>)
 
 在调用此接口前，应用需要先调用[requestPermissionsFromUser](#requestpermissionsfromuser9)。如果用户已在首次弹窗中授权，则调用当前接口不会拉起授权弹窗。
 
-![](./img/zh-cn_image_0000002655848240.png)
+![](./img/zh-cn_image_0000002731358593.png)
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -546,10 +546,11 @@ requestPermissionOnSetting(context: Context, permissionList: Array<Permissions>)
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 12100001 | Invalid parameter. Possible causes: 1. The context is invalid because it does not belong to the application itself; 2. The permission list contains the permission that is not declared in the module.json file; 3. The permission list is invalid because the permissions in it do not belong to the same permission group; 4. The permission list contains one or more system_grant permissions. |
-| 12100009 | Common inner error. An error occurs when creating the pop-up window or obtaining user operation result. |
+| 12100009 | Common inner error. An error occurs when creating the pop-up window or obtaining the user operation result. |
+| 12100010 | The request already exists. 适用版本：12-20 |
 | 12100011 | All permissions in the permission list have been granted. |
 | 12100012 | The permission list contains the permission that has not been revoked by the user. |
-| 12100014 | Unexpected permission. You cannot request this type of permission from users via a pop-up window. |
+| 12100014 | Unexpected permission. You cannot request this type of permission from users via a pop-up window. 适用版本：21+ |
 
 示例：
 
@@ -581,7 +582,7 @@ requestGlobalSwitch(context: Context, type: SwitchType): Promise<boolean>
 
 当应用需要使用相机、麦克风或定位等需要全局开关管控的功能时，如果对应的全局开关被关闭，应用可拉起此弹窗请求用户开启对应功能。如果当前全局开关的状态为开启，则不拉起弹窗。
 
-![](./img/zh-cn_image_0000002686087669.png)
+![](./img/zh-cn_image_0000002701799284.png)
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -609,7 +610,7 @@ requestGlobalSwitch(context: Context, type: SwitchType): Promise<boolean>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
-| 12100001 | Invalid parameter. Possible causes: 1. The context is invalid because it does not belong to the application itself; 2. The type of global switch is not support. |
+| 12100001 | Invalid parameter. Possible causes: 1. The context is invalid because it does not belong to the application itself; 2. The type of global switch is not supported. |
 | 12100009 | Common inner error. An error occurs when creating the pop-up window or obtaining user operation result. |
 | 12100013 | The specific global switch is already open. |
 
@@ -664,7 +665,7 @@ getSelfPermissionStatus(permissionName: Permissions): PermissionStatus
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 12100001 | Invalid parameter. The permissionName is empty or exceeds 256 characters. |
-| 12100007 | The service is abnormal. |
+| 12100007 | Service exception. |
 
 示例：
 
@@ -716,7 +717,7 @@ openPermissionOnSetting(context: Context, permission: Permissions): Promise<Sele
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 12100001 | Invalid parameter. Possible causes: 1. The context is invalid because it does not belong to the application itself; 2. The permission is invalid or not declared in the module.json file. |
-| 12100009 | Common inner error. An error occurs when creating the pop-up window or obtaining user operation result. |
+| 12100009 | Common inner error. An error occurs when creating the pop-up window or obtaining the user operation result. |
 | 12100014 | Unexpected permission. The permission is not a manual_settings permission. |
 
 示例：
@@ -910,6 +911,8 @@ atManager.verifyAccessToken(tokenID, permissionName).then((data: abilityAccessCt
 
 系统能力： SystemCapability.Security.AccessToken
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
 | CAMERA | 0 | 表示相机全局开关。 |
@@ -996,6 +999,8 @@ type Context = _Context
 表示跳转设置页弹窗结果的枚举。
 
 系统能力： SystemCapability.Security.AccessToken
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |

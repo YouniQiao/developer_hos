@@ -2,13 +2,13 @@
 title: "@ohos.ability.wantConstant (wantConstant)"
 upstream_id: "harmonyos-references/js-apis-ability-wantconstant"
 catalog: "harmonyos-references"
-content_hash: "a7e9a827f9c7"
-synced_at: "2026-07-09T00:57:11.241779"
+content_hash: "a1bda366a0a2"
+synced_at: "2026-08-29T18:12:06.373922"
 ---
 
 # @ohos.ability.wantConstant (wantConstant)
 
-wantConstant模块提供want中操作want常数和解释Flags说明的能力。
+wantConstant模块提供Want常量的操作方法，并说明Flags标志位的含义。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 6开始支持，从API version 9废弃，替换模块为[@ohos.app.ability.wantConstant](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-wantconstant)。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 

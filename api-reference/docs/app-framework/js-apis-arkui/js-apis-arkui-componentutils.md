@@ -2,8 +2,8 @@
 title: "@ohos.arkui.componentUtils (componentUtils)"
 upstream_id: "harmonyos-references/js-apis-arkui-componentutils"
 catalog: "harmonyos-references"
-content_hash: "f136357231c9"
-synced_at: "2026-08-03T17:09:34.313586"
+content_hash: "0dc3e0b8c90d"
+synced_at: "2026-08-29T18:12:21.678014"
 ---
 
 # @ohos.arkui.componentUtils (componentUtils)
@@ -84,7 +84,7 @@ let modePosition:componentUtils.ComponentInfo = componentUtils.getRectangleById(
 | rotate | [RotateResult](#rotateresult) | 否 | 否 | 组件旋转信息。 |
 | transform | [Matrix4Result](#matrix4result) | 否 | 否 | 仿射矩阵信息，根据入参创建的四阶矩阵对象。 |
 
-#### [h2]Size
+#### Size
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -95,7 +95,7 @@ let modePosition:componentUtils.ComponentInfo = componentUtils.getRectangleById(
 | width | number | 否 | 否 | 组件宽度。 单位：px |
 | height | number | 否 | 否 | 组件高度。 单位：px |
 
-#### [h2]Offset
+#### Offset
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -106,7 +106,7 @@ let modePosition:componentUtils.ComponentInfo = componentUtils.getRectangleById(
 | x | number | 否 | 否 | x点坐标。 单位：px |
 | y | number | 否 | 否 | y点坐标。 单位：px |
 
-#### [h2]TranslateResult
+#### TranslateResult
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -118,7 +118,7 @@ let modePosition:componentUtils.ComponentInfo = componentUtils.getRectangleById(
 | y | number | 否 | 否 | y轴平移距离。 单位：vp |
 | z | number | 否 | 否 | z轴平移距离。 单位：vp |
 
-#### [h2]ScaleResult
+#### ScaleResult
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -132,7 +132,7 @@ let modePosition:componentUtils.ComponentInfo = componentUtils.getRectangleById(
 | centerX | number | 否 | 否 | 变换中心点x轴坐标。 单位：vp |
 | centerY | number | 否 | 否 | 变换中心点y轴坐标。 单位：vp |
 
-#### [h2]RotateResult
+#### RotateResult
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -147,7 +147,7 @@ let modePosition:componentUtils.ComponentInfo = componentUtils.getRectangleById(
 | centerX | number | 否 | 否 | 变换中心点x轴坐标。 单位：vp |
 | centerY | number | 否 | 否 | 变换中心点y轴坐标。 单位：vp |
 
-#### [h2]Matrix4Result
+#### Matrix4Result
 
 type Matrix4Result = [number,number,number,number,number,number,number,number,number,number,number,number,number,number,number,number]
 
@@ -192,11 +192,11 @@ import { matrix4 } from '@kit.ArkUI';
 @Entry
 @Component
 struct Utils {
-  @State translateX: number = 120;
-  @State translateY: number = 10;
-  @State translateZ: number = 100;
+  @State x: number = 120;
+  @State y: number = 10;
+  @State z: number = 100;
   @State value: string = '';
-  private matrix1 = matrix4.identity().translate({ x: this.translateX, y: this.translateY, z: this.translateZ });
+  private matrix1 = matrix4.identity().translate({ x: this.x, y: this.y, z: this.z });
 
   build() {
     Column() {
@@ -231,4 +231,4 @@ struct Utils {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002689679197.gif)
+ ![](./img/zh-cn_image_0000002701799290.gif)

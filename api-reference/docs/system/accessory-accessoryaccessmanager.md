@@ -2,8 +2,8 @@
 title: "accessoryAccessManager（配件接入管理）"
 upstream_id: "harmonyos-references/accessory-accessoryaccessmanager"
 catalog: "harmonyos-references"
-content_hash: "5a24cc1f96fc"
-synced_at: "2026-07-28T16:50:35.650025"
+content_hash: "d12089a5e731"
+synced_at: "2026-08-29T18:16:35.815502"
 ---
 
 # accessoryAccessManager（配件接入管理）
@@ -641,7 +641,7 @@ let result : number = connectManager.registerConnectListener(attachId, (event: a
     attachId = event.attachId;
   }
 });
-hilog.info(0x0000, TAG, `modifyDisplayName code: ${result}`);
+hilog.info(0x0000, TAG, `registerConnectListener code: ${result}`);
 ```
 
 #### [h2]unregisterConnectListener

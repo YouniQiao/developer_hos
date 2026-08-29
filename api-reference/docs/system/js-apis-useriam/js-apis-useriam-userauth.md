@@ -2,8 +2,8 @@
 title: "@ohos.userIAM.userAuth (用户认证)"
 upstream_id: "harmonyos-references/js-apis-useriam-userauth"
 catalog: "harmonyos-references"
-content_hash: "4212325d5aad"
-synced_at: "2026-07-28T16:50:36.340571"
+content_hash: "dc3d334c7da4"
+synced_at: "2026-08-29T18:16:36.609488"
 ---
 
 # @ohos.userIAM.userAuth (用户认证)
@@ -44,7 +44,7 @@ userAuth模块是HarmonyOS系统中用于用户身份认证的核心模块，提
 
 - **[UserAuthInstance](#userauthinstance10)**：用户认证实例类，提供认证执行、取消、事件订阅等能力。
 
-![](./img/zh-cn_image_0000002685929043.png)
+![](./img/zh-cn_image_0000002701800494.png)
 
 #### API组合使用关系说明
 
@@ -238,7 +238,7 @@ userAuth.getAuthLockState(queryType)
     console.info('get auth lock state successfully.');
   })
   .catch((err: BusinessError) => {
-    console.info(`get auth lock state failed, err code is : ${err?.code}, err message is : ${err?.message}`);
+    console.error(`get auth lock state failed, err code is : ${err?.code}, err message is : ${err?.message}`);
   })
 ```
 
@@ -305,7 +305,7 @@ try {
 | authType | [UserAuthType](#userauthtype8)[] | 否 | 否 | 认证类型列表，用来指定用户认证界面提供的认证方法。可同时指定多种认证类型，如[UserAuthType.PIN, UserAuthType.FACE, UserAuthType.FINGERPRINT]，用户可选择任意一种完成认证。认证类型的选择会影响认证结果复用的匹配条件。暂不支持同时发起伴随设备认证和其他认证类型。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | authTrustLevel | [AuthTrustLevel](#authtrustlevel8) | 否 | 否 | 期望达到的认证可信等级。认证可信等级决定了认证的安全强度，应根据业务场景的安全需求选择合适的等级： - ATL1：适用于业务风控、一般个人数据查询等低安全场景。 - ATL2：适用于应用登录、维持设备解锁状态等中等安全场景。 - ATL3：适用于设备解锁等较高安全场景。 - ATL4：适用于小额支付等高安全场景。 典型操作需要的身份认证可信等级，以及身份认证可信等级的划分请参见[认证可信等级划分原则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/user-authentication-overview#生物认证可信等级划分原则)。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | reuseUnlockResult12+ | [ReuseUnlockResult](#reuseunlockresult12) | 否 | 是 | 表示可以复用解锁认证的结果。配置后，若满足复用条件，系统将直接返回之前的认证结果，无需用户再次进行认证交互。默认为不复用。启用认证结果复用可以提升用户体验，但应根据业务场景的安全需求合理配置复用模式和有效时长。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| skipLockedBiometricAuth20+ | boolean | 否 | 是 | 是否跳过已禁用的认证方式自动切换至其它方式的认证。若无可切换的认证方式则关闭控件，返回认证冻结错误码。 - true：生物认证冻结时，跳过倒计时界面直接切换到其他方式的认证（如从冻结的指纹切换到PIN）。适用于希望快速完成认证的场景。 - false（默认）：不跳过，用户需要等待冻结倒计时结束后才能继续尝试该认证方式或手动切换。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| skipLockedBiometricAuth20+ | boolean | 否 | 是 | 是否跳过已禁用的认证方式自动切换至其他方式的认证。若无可切换的认证方式则关闭控件，返回认证冻结错误码。 - true：生物认证冻结时，跳过倒计时界面直接切换到其他方式的认证（如从冻结的指纹切换到PIN）。适用于希望快速完成认证的场景。 - false（默认）：不跳过，用户需要等待冻结倒计时结束后才能继续尝试该认证方式或手动切换。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 
 #### WidgetParam10+
 
@@ -316,8 +316,8 @@ try {
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | title | string | 否 | 否 | 用户认证界面的标题，建议传入认证目的，例如用于支付、登录应用等，不支持传空字串，最大长度为500字符。标题会显示在认证界面，帮助用户理解当前认证的目的，提升用户信任度和配合度。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| navigationButtonText | string | 否 | 是 | 导航按键的说明文本，最大长度为60字符。点击该按钮可触发应用自定义的操作，如跳转到自定义认证页面或取消认证等。在单指纹、单人脸场景下支持，从API 18开始，增加支持人脸+指纹组合认证场景。默认为不展示自定义导航按键。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| uiContext18+ | Context | 否 | 是 | 以模应用弹窗方式显示身份认证对话框，仅支持在2in1设备上使用。传入有效的uiContext后，认证对话框将以模应用弹窗方式显示，认证结果返回后应用需先获取控件释放消息（订阅[on('authTip')](#onauthtip20)并等待WIDGET_RELEASED状态）才能弹出其他窗口。如果没有此参数或其他类型的设备，身份认证对话框将以模系统弹窗方式显示，此时控件释放后应用可直接进行后续操作。 **默认值：** 以模系统弹窗方式显示身份认证对话框。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| navigationButtonText | string | 否 | 是 | 导航按键的说明文本，最大长度为60字符。点击该按钮可触发应用自定义的操作，如跳转到自定义认证页面或取消认证等。在单指纹、单人脸场景下支持，从API版本18开始，增加支持人脸+指纹组合认证场景。默认为不展示自定义导航按键。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| uiContext18+ | Context | 否 | 是 | 以模应用弹窗方式显示身份认证对话框，从API版本18开始，支持在2in1设备上使用。传入有效的uiContext后，认证对话框将以模应用弹窗方式显示，认证结果返回后应用需先获取控件释放消息（订阅[on('authTip')](#onauthtip20)并等待收到authTipInfo.tipCode为WIDGET_RELEASED的回调）才能弹出其他窗口。如果没有此参数或其他类型的设备，身份认证对话框将以模系统弹窗方式显示，此时控件释放后应用可直接进行后续操作。 **默认值：** 以模系统弹窗方式显示身份认证对话框。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 
 #### UserAuthResult10+
 

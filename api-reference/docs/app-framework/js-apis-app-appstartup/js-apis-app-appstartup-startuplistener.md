@@ -2,8 +2,8 @@
 title: "@ohos.app.appstartup.StartupListener (启动框架任务监听器)"
 upstream_id: "harmonyos-references/js-apis-app-appstartup-startuplistener"
 catalog: "harmonyos-references"
-content_hash: "6b5b48e108ec"
-synced_at: "2026-07-09T00:57:05.438397"
+content_hash: "a65cc996f2e3"
+synced_at: "2026-08-29T18:11:58.616006"
 ---
 
 # @ohos.app.appstartup.StartupListener (启动框架任务监听器)
@@ -24,7 +24,7 @@ import { StartupListener } from '@kit.AbilityKit';
 
 onCompleted?(error: BusinessError<void>): void
 
-在所有启动任务完成时调用。
+在所有启动任务执行完成时调用。
 
 系统能力：SystemCapability.Ability.AppStartup
 
@@ -32,7 +32,7 @@ onCompleted?(error: BusinessError<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| error | [BusinessError](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#businesserror) | 是 | 错误信息。 |
+| error | [BusinessError](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#businesserror) | 是 | 启动任务执行的错误信息。成功时error为null，失败时包含错误码和错误描述，可通过error.code获取错误码、error.message获取错误描述。可能的错误码包括28800001、28800002、28800003和28800004，错误原因及处理措施请参考[元能力子系统错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-ability)。 |
 
 示例：
 

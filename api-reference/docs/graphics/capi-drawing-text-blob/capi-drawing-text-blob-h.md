@@ -2,8 +2,8 @@
 title: "drawing_text_blob.h"
 upstream_id: "harmonyos-references/capi-drawing-text-blob-h"
 catalog: "harmonyos-references"
-content_hash: "1b0962dc2416"
-synced_at: "2026-07-09T01:00:58.202459"
+content_hash: "ebd57b54f4ee"
+synced_at: "2026-08-29T18:17:55.349204"
 ---
 
 # drawing_text_blob.h
@@ -11,6 +11,8 @@ synced_at: "2026-07-09T01:00:58.202459"
 #### 概述
 
 文件中定义了与文字相关的功能函数。
+
+本模块为单线程模型策略，需要调用方自行管理线程安全和上下文状态的切换。
 
 引用文件： <native_drawing/drawing_text_blob.h>
 
@@ -28,7 +30,7 @@ synced_at: "2026-07-09T01:00:58.202459"
 
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
-| [OH_Drawing_RunBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-runbuffer) | OH_Drawing_RunBuffer | 结构体用于描述一块内存，描述文字和位置信息。 |
+| [OH_Drawing_RunBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-runbuffer) | OH_Drawing_RunBuffer | 结构体用于描述一块内存，该内存用于存储文字和位置信息。 |
 
 #### [h2]函数
 
@@ -42,8 +44,8 @@ synced_at: "2026-07-09T01:00:58.202459"
 | [uint32_t OH_Drawing_TextBlobUniqueID(const OH_Drawing_TextBlob* textBlob)](#oh_drawing_textblobuniqueid) | 获取文本的标识符，该标识符是唯一的非零值。 本接口会产生错误码，可以通过[OH_Drawing_ErrorCodeGet](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-error-code-h#oh_drawing_errorcodeget)查看错误码的取值。 textBlob为NULL时返回OH_DRAWING_ERROR_INVALID_PARAMETER。 |
 | [const OH_Drawing_RunBuffer* OH_Drawing_TextBlobBuilderAllocRunPos(OH_Drawing_TextBlobBuilder* textBlobBuilder,const OH_Drawing_Font* font, int32_t count, const OH_Drawing_Rect* rect)](#oh_drawing_textblobbuilderallocrunpos) | 申请一块内存，用于存储文字和位置信息。返回的指针无需调用者管理，当调用[OH_Drawing_TextBlobBuilderMake](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-text-blob-h#oh_drawing_textblobbuildermake)后禁止使用。 本接口会产生错误码，可以通过[OH_Drawing_ErrorCodeGet](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-error-code-h#oh_drawing_errorcodeget)查看错误码的取值。 textBlobBuilder、font任意一个为NULL或者count小于等于0时返回OH_DRAWING_ERROR_INVALID_PARAMETER。 |
 | [OH_Drawing_TextBlob* OH_Drawing_TextBlobBuilderMake(OH_Drawing_TextBlobBuilder* textBlobBuilder)](#oh_drawing_textblobbuildermake) | 用于从文本构造器中创建文本对象。 本接口会产生错误码，可以通过[OH_Drawing_ErrorCodeGet](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-error-code-h#oh_drawing_errorcodeget)查看错误码的取值。 textBlobBuilder为NULL时返回OH_DRAWING_ERROR_INVALID_PARAMETER。 |
-| [void OH_Drawing_TextBlobDestroy(OH_Drawing_TextBlob* textBlob)](#oh_drawing_textblobdestroy) | 用于销毁文本对象并回收该对象占有的内存。 |
-| [void OH_Drawing_TextBlobBuilderDestroy(OH_Drawing_TextBlobBuilder* textBlobBuilder)](#oh_drawing_textblobbuilderdestroy) | 用于销毁文本构造器对象并回收该对象占有的内存。 |
+| [void OH_Drawing_TextBlobDestroy(OH_Drawing_TextBlob* textBlob)](#oh_drawing_textblobdestroy) | 用于销毁文本对象并回收该对象占用的内存。 |
+| [void OH_Drawing_TextBlobBuilderDestroy(OH_Drawing_TextBlobBuilder* textBlobBuilder)](#oh_drawing_textblobbuilderdestroy) | 用于销毁文本构造器对象并回收该对象占用的内存。 |
 
 #### 函数说明
 
@@ -64,12 +66,12 @@ OH_Drawing_TextBlobBuilder* OH_Drawing_TextBlobBuilderCreate(void)
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Drawing_TextBlobBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-textblobbuilder)* | 函数会返回一个指针，指针指向创建的文本构造器对象。 |
+| [OH_Drawing_TextBlobBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-textblobbuilder)* | 函数返回一个指针，指针指向创建的文本构造器对象。 |
 
 #### [h2]OH_Drawing_TextBlobCreateFromText()
 
 ```
-OH_Drawing_TextBlob* OH_Drawing_TextBlobCreateFromText(const void* text, size_t byteLength,const OH_Drawing_Font* font, OH_Drawing_TextEncoding textEncoding)
+OH_Drawing_TextBlob* OH_Drawing_TextBlobCreateFromText(const void* text, size_t byteLength, const OH_Drawing_Font* font, OH_Drawing_TextEncoding textEncoding)
 ```
  描述
 
@@ -91,19 +93,19 @@ textEncoding不在枚举范围内返回OH_DRAWING_ERROR_PARAMETER_OUT_OF_RANGE�
 | --- | --- |
 | const void* text | 指向文本的指针。 |
 | size_t byteLength | 文本的字节长度。 |
-| const [OH_Drawing_Font](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-font)* font | 指向字体对象[OH_Drawing_Font](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-font)的指针。 |
-| [OH_Drawing_TextEncoding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-types-h#oh_drawing_textencoding) textEncoding | 文本编码类型[OH_Drawing_TextEncoding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-types-h#oh_drawing_textencoding)。 |
+| const [OH_Drawing_Font](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-font)* font | 指向字体对象OH_Drawing_Font的指针。 |
+| [OH_Drawing_TextEncoding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-types-h#oh_drawing_textencoding) textEncoding | 文本编码类型。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Drawing_TextBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-textblob)* | 函数返回一个指针，指针指向创建的文本对象[OH_Drawing_TextBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-textblob)。 |
+| [OH_Drawing_TextBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-textblob)* | 函数返回一个指针，指针指向创建的文本对象OH_Drawing_TextBlob。 |
 
 #### [h2]OH_Drawing_TextBlobCreateFromPosText()
 
 ```
-OH_Drawing_TextBlob* OH_Drawing_TextBlobCreateFromPosText(const void* text, size_t byteLength,OH_Drawing_Point2D* point2D, const OH_Drawing_Font* font, OH_Drawing_TextEncoding textEncoding)
+OH_Drawing_TextBlob* OH_Drawing_TextBlobCreateFromPosText(const void* text, size_t byteLength, OH_Drawing_Point2D* point2D, const OH_Drawing_Font* font, OH_Drawing_TextEncoding textEncoding)
 ```
  描述
 
@@ -125,20 +127,20 @@ textEncoding不在枚举范围内返回OH_DRAWING_ERROR_PARAMETER_OUT_OF_RANGE�
 | --- | --- |
 | const void* text | 指向文本的指针。 |
 | size_t byteLength | 文本的字节长度。 |
-| [OH_Drawing_Point2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-point2d)* point2D | 二维点[OH_Drawing_Point2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-point2d)数组首地址，数组个数由[OH_Drawing_FontCountText](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-font-h#oh_drawing_fontcounttext)计算结果决定。 |
-| const [OH_Drawing_Font](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-font)* font | 指向字体对象[OH_Drawing_Font](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-font)的指针。 |
-| [OH_Drawing_TextEncoding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-types-h#oh_drawing_textencoding) textEncoding | 文本编码类型[OH_Drawing_TextEncoding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-types-h#oh_drawing_textencoding)。 |
+| [OH_Drawing_Point2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-point2d)* point2D | 二维点OH_Drawing_Point2D数组首地址，数组个数由[OH_Drawing_FontCountText](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-font-h#oh_drawing_fontcounttext)的计算结果决定。 |
+| const [OH_Drawing_Font](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-font)* font | 指向字体对象OH_Drawing_Font的指针。 |
+| [OH_Drawing_TextEncoding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-types-h#oh_drawing_textencoding) textEncoding | 文本编码类型OH_Drawing_TextEncoding。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Drawing_TextBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-textblob)* | 函数返回一个指针，指针指向创建的文本对象[OH_Drawing_TextBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-textblob)。 |
+| [OH_Drawing_TextBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-textblob)* | 函数返回一个指针，指针指向创建的文本对象OH_Drawing_TextBlob。 |
 
 #### [h2]OH_Drawing_TextBlobCreateFromString()
 
 ```
-OH_Drawing_TextBlob* OH_Drawing_TextBlobCreateFromString(const char* str,const OH_Drawing_Font* font, OH_Drawing_TextEncoding textEncoding)
+OH_Drawing_TextBlob* OH_Drawing_TextBlobCreateFromString(const char* str, const OH_Drawing_Font* font, OH_Drawing_TextEncoding textEncoding)
 ```
  描述
 
@@ -159,14 +161,14 @@ textEncoding不在枚举范围内返回OH_DRAWING_ERROR_PARAMETER_OUT_OF_RANGE�
 | 参数项 | 描述 |
 | --- | --- |
 | const char* str | 指向字符串的指针。 |
-| const [OH_Drawing_Font](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-font)* font | 指向字体对象[OH_Drawing_Font](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-font)的指针。 |
-| [OH_Drawing_TextEncoding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-types-h#oh_drawing_textencoding) textEncoding | 文本编码类型[OH_Drawing_TextEncoding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-types-h#oh_drawing_textencoding)。 |
+| const [OH_Drawing_Font](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-font)* font | 指向字体对象OH_Drawing_Font的指针。 |
+| [OH_Drawing_TextEncoding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-types-h#oh_drawing_textencoding) textEncoding | 文本编码类型OH_Drawing_TextEncoding。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Drawing_TextBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-textblob)* | 函数返回一个指针，指针指向创建的文本对象[OH_Drawing_TextBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-textblob)。 |
+| [OH_Drawing_TextBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-textblob)* | 函数返回一个指针，指针指向创建的文本对象OH_Drawing_TextBlob。 |
 
 #### [h2]OH_Drawing_TextBlobGetBounds()
 
@@ -189,8 +191,8 @@ textBlob、rect任意一个为NULL时返回OH_DRAWING_ERROR_INVALID_PARAMETER。
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_Drawing_TextBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-textblob)* textBlob | 指向文本对象[OH_Drawing_TextBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-textblob)的指针。 |
-| [OH_Drawing_Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-rect)* rect | 指向矩形对象[OH_Drawing_Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-rect)的指针，开发者可调用[OH_Drawing_Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-rect)接口创建。 |
+| [OH_Drawing_TextBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-textblob)* textBlob | 指向文本对象OH_Drawing_TextBlob的指针。 |
+| [OH_Drawing_Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-rect)* rect | 指向矩形对象OH_Drawing_Rect的指针，开发者可调用OH_Drawing_Rect接口创建。 |
 
 #### [h2]OH_Drawing_TextBlobUniqueID()
 
@@ -213,7 +215,7 @@ textBlob为NULL时返回OH_DRAWING_ERROR_INVALID_PARAMETER。
 
 | 参数项 | 描述 |
 | --- | --- |
-| const [OH_Drawing_TextBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-textblob)* textBlob | 指向文本对象[OH_Drawing_TextBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-textblob)的指针。 |
+| const [OH_Drawing_TextBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-textblob)* textBlob | 指向文本对象OH_Drawing_TextBlob的指针。 |
 
 返回：
 
@@ -224,7 +226,7 @@ textBlob为NULL时返回OH_DRAWING_ERROR_INVALID_PARAMETER。
 #### [h2]OH_Drawing_TextBlobBuilderAllocRunPos()
 
 ```
-const OH_Drawing_RunBuffer* OH_Drawing_TextBlobBuilderAllocRunPos(OH_Drawing_TextBlobBuilder* textBlobBuilder,const OH_Drawing_Font* font, int32_t count, const OH_Drawing_Rect* rect)
+const OH_Drawing_RunBuffer* OH_Drawing_TextBlobBuilderAllocRunPos(OH_Drawing_TextBlobBuilder* textBlobBuilder, const OH_Drawing_Font* font, int32_t count, const OH_Drawing_Rect* rect)
 ```
  描述
 
@@ -243,7 +245,7 @@ textBlobBuilder、font任意一个为NULL或者count小于等于0时返回OH_DRA
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_Drawing_TextBlobBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-textblobbuilder)* textBlobBuilder | 指向文本构造器对象的指针。 |
-| const [OH_Drawing_Font](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-font)* font | 指向字体对象的指针。 |
+| const [OH_Drawing_Font](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-font)* font | 指向字体对象OH_Drawing_Font的指针。 |
 | int32_t count | 文字的数量。 |
 | const [OH_Drawing_Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-rect)* rect | 文本的边界框，为NULL表示不设置边界框。 |
 
@@ -274,7 +276,7 @@ textBlobBuilder为NULL时返回OH_DRAWING_ERROR_INVALID_PARAMETER。
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Drawing_TextBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-textblob)* | 返回一个指针，指针指向创建的文本对象。 |
+| [OH_Drawing_TextBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-textblob)* | 函数返回一个指针，指针指向创建的文本对象OH_Drawing_TextBlob。 |
 
 #### [h2]OH_Drawing_TextBlobDestroy()
 
@@ -283,7 +285,7 @@ void OH_Drawing_TextBlobDestroy(OH_Drawing_TextBlob* textBlob)
 ```
  描述
 
-用于销毁文本对象并回收该对象占有的内存。
+用于销毁文本对象并回收该对象占用的内存。
 
 系统能力： SystemCapability.Graphic.Graphic2D.NativeDrawing
 
@@ -293,7 +295,7 @@ void OH_Drawing_TextBlobDestroy(OH_Drawing_TextBlob* textBlob)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_Drawing_TextBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-textblob)* textBlob | 指向文本对象的指针。 |
+| [OH_Drawing_TextBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-textblob)* textBlob | 指向文本对象OH_Drawing_TextBlob的指针。 |
 
 #### [h2]OH_Drawing_TextBlobBuilderDestroy()
 
@@ -302,7 +304,7 @@ void OH_Drawing_TextBlobBuilderDestroy(OH_Drawing_TextBlobBuilder* textBlobBuild
 ```
  描述
 
-用于销毁文本构造器对象并回收该对象占有的内存。
+用于销毁文本构造器对象并回收该对象占用的内存。
 
 系统能力： SystemCapability.Graphic.Graphic2D.NativeDrawing
 

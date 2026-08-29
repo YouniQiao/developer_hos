@@ -2,8 +2,8 @@
 title: "faceComparator（人脸比对）"
 upstream_id: "harmonyos-references/core-vision-facecomparator-api"
 catalog: "harmonyos-references"
-content_hash: "9eb5b06d9cfd"
-synced_at: "2026-07-28T16:53:11.064962"
+content_hash: "97ad11ecea64"
+synced_at: "2026-08-29T18:18:39.175791"
 ---
 
 # faceComparator（人脸比对）
@@ -30,7 +30,7 @@ import { faceComparator } from '@kit.CoreVisionKit';
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| pixelMap | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 是 | 否 | 待识别的图片，必须为颜色数据格式RGBA_8888的PixelMap类型。对于图片的要求请参见[约束与限制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-introduction#约束与限制)。 |
+| pixelMap | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 是 | 否 | 待识别的图片，颜色数据格式必须为RGBA_8888。对于图片的详细要求请参见[约束与限制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-introduction#约束与限制)。 |
 
 #### FaceCompareResult
 

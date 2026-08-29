@@ -2,17 +2,19 @@
 title: "Search"
 upstream_id: "harmonyos-references/ts-basic-components-search"
 catalog: "harmonyos-references"
-content_hash: "a879a1eaf2fa"
-synced_at: "2026-07-28T16:44:56.078205"
+content_hash: "6a7f5d789924"
+synced_at: "2026-08-29T18:14:02.268092"
 ---
 
 # Search
 
 搜索框组件，支持搜索图标、清除按钮、搜索按钮、placeholder提示文本、自定义键盘等功能配置，适用于浏览器的搜索内容输入框、应用内搜索等场景。
 
-![](./img/note_3.0-zh-cn.png) 该组件从API version 8开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
+![](./img/note_3.0-zh-cn.png)
 
-该组件仅支持单文本样式，若需实现富文本样式，建议使用[RichEditor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-richeditor)组件。
+- 该组件从API version 8开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
+- 该组件仅支持单文本样式，若需实现富文本样式，建议使用[RichEditor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-richeditor)组件。
+- 如需设置触摸文本组件外部时是否清除文本选中和手柄，可使用[setTextSelectionClearPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#settextselectionclearpolicy)接口。
 
 #### 子组件
 
@@ -80,7 +82,7 @@ Wearable设备上默认字体大小为18fp。
 
 placeholderColor(value: ResourceColor)
 
-设置placeholder文本颜色。未通过该接口设置时，默认placeholder文本颜色为'#99182431'（深灰色，不透明度约为60%），Wearable设备上默认为'#99ffffff'（白色，不透明度约为60%）。
+设置placeholder文本颜色。未通过该接口设置时，默认placeholder文本颜色为'#99182431'（深灰色，不透明度为60%），Wearable设备上默认为'#99ffffff'（白色，不透明度为60%）。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -257,7 +259,7 @@ Wearable设备上默认图标大小为16vp。
 
 cancelButton(value: CancelButtonOptions | CancelButtonSymbolOptions)
 
-设置右侧清除按钮样式。示例请参考[示例2（设置搜索和删除图标）](#示例2设置搜索和删除图标)和[示例11（设置symbol类型清除按钮）](#示例11设置symbol类型清除按钮)。未通过该接口设置时，默认清除按钮样式为CancelButtonStyle.INPUT（输入样式），图标大小为16vp（Wearable设备上默认图标大小为18fp），颜色为'#99ffffff'（白色，不透明度约为60%）。
+设置右侧清除按钮样式。示例请参考[示例2（设置搜索和删除图标）](#示例2设置搜索和删除图标)和[示例11（设置symbol类型清除按钮）](#示例11设置symbol类型清除按钮)。未通过该接口设置时，默认清除按钮样式为CancelButtonStyle.INPUT（输入样式），图标大小为16vp（Wearable设备上默认图标大小为18fp），颜色为'#99ffffff'（白色，不透明度为60%）。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -275,7 +277,7 @@ cancelButton(value: CancelButtonOptions | CancelButtonSymbolOptions)
 
 fontColor(value: ResourceColor)
 
-设置输入文本的字体颜色。未通过该接口设置时，默认输入文本的字体颜色为'#FF182431'（深灰色），Wearable设备上默认为'#dbffffff'（白色，不透明度约为86%）。fontSize、fontStyle、fontWeight和fontFamily在[textFont](#textfont)属性中设置。
+设置输入文本的字体颜色。未通过该接口设置时，默认输入文本的字体颜色为'#FF182431'（深灰色），Wearable设备上默认为'#dbffffff'（白色，不透明度为86%）。fontSize、fontStyle、fontWeight和fontFamily在[textFont](#textfont)属性中设置。
 
 ![](./img/note_3.0-zh-cn.png) 当同时设置fontColor和[shaderStyle](#shaderstyle)时，fontColor不生效。
 
@@ -335,7 +337,7 @@ enableKeyboardOnFocus(value: boolean)
 
 selectionMenuHidden(value: boolean)
 
-设置是否不弹出系统文本选择菜单。未通过该接口设置时，默认弹出系统文本选择菜单。
+设置是否隐藏系统文本选择菜单。未通过该接口设置时，默认显示系统文本选择菜单。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -347,7 +349,7 @@ selectionMenuHidden(value: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | boolean | 是 | 是否不弹出系统文本选择菜单。 设置为true时，单击输入框光标、长按输入框、双击输入框、三击输入框或者右键输入框，不弹出系统文本选择菜单。 设置为false时，弹出系统文本选择菜单。 |
+| value | boolean | 是 | 是否隐藏系统文本选择菜单。 设置为true时，单击输入框光标、长按输入框、双击输入框、三击输入框或者右键输入框，隐藏系统文本选择菜单。 设置为false时，显示系统文本选择菜单。 |
 
 #### [h2]customKeyboard10+
 
@@ -458,13 +460,13 @@ AI菜单生效时，选中范围内需包括且仅包括一个完整的AI实体�
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| enable | boolean | undefined | 是 | 开启选中文本实体识别。 true：开启识别，false：关闭识别。 |
+| enable | boolean | undefined | 是 | 是否开启选中文本实体识别。 true：开启识别，false：关闭识别。 |
 
 #### [h2]lineHeight12+
 
 lineHeight(value: number | string | Resource)
 
-设置文本的文本行高，设置值不大于0时，不限制文本行高，自适应字体大小，number类型时单位为fp。
+设置文本的行高，设置值不大于0时，不限制文本行高，自适应字体大小，number类型时单位为fp。
 
 ![](./img/note_3.0-zh-cn.png) 特殊字符字体高度远超出同行的其他字符高度时，文本框出现截断、遮挡、内容相对位置发生变化等不符合预期的显示异常，需要开发者调整组件高度、行高等属性，修改对应的页面布局。
 
@@ -478,7 +480,7 @@ lineHeight(value: number | string | Resource)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 是 | 文本的文本行高。 number类型时单位为fp，string类型支持number类型取值的字符串形式，可以附带单位，例如"10"、"10fp"。 |
+| value | number | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 是 | 文本的行高。 number类型时单位为fp，string类型支持number类型取值的字符串形式，可以附带单位，例如"10"、"10fp"。 |
 
 #### [h2]decoration12+
 
@@ -555,13 +557,13 @@ Font Feature当前支持的属性参见[fontFeature](https://developer.huawei.co
 
 设置Font Feature属性。Font Feature是OpenType字体的高级排版能力（如连字、数字等宽等特性），一般用于自定义字体，且需要字体本身支持该能力。
 
-更多Font Feature能力介绍可参考https://www.w3.org/TR/css-fonts-3/#font-feature-settings-prop和https://sparanoid.com/lab/opentype-features/。
+更多Font Feature能力介绍可参考[font-feature-settings property](https://www.w3.org/TR/css-fonts-3/#font-feature-settings-prop)和[OpenType Features](https://sparanoid.com/lab/opentype-features/)。
 
 #### [h2]selectedBackgroundColor12+
 
 selectedBackgroundColor(value: ResourceColor)
 
-设置文本选中底板颜色。如果未设置不透明度，默认为20%不透明度。
+设置文本选中底板颜色。未通过该接口设置时，默认颜色为'#007DFF'（蓝色）。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1048,7 +1050,7 @@ fallbackLineSpacing(enabled: Optional<boolean>)
 | EMAIL | 5 | 邮箱地址输入模式。 支持数字、字母、下划线、小数点、!、#、$、%、&、'、*、+、-、/、=、?、^、`、{、|、}、~以及@字符（只能存在一个@字符）。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | NUMBER_DECIMAL12+ | 12 | 带小数点的数字输入模式。 支持数字、小数点（只能存在一个小数点）。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | URL12+ | 13 | 带URL的输入模式，无特殊限制。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| ONE_TIME_CODE20+ | 14 | 验证码输入模式，无特殊限制。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| ONE_TIME_CODE20+ | 14 | 验证码输入模式，无特殊限制。该模式下组件获焦后会默认拉起系统输入法。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 
 #### CancelButtonOptions12+对象说明
 
@@ -1122,6 +1124,12 @@ onChange(callback: EditableTextOnChangeCallback)
 
 在本回调中，若执行了光标操作，需要开发者在预上屏场景下依据previewText参数调整光标逻辑，以适应预上屏场景。
 
+![](./img/note_3.0-zh-cn.png) onWillChange和onChange形成will/did时序模式：
+
+- onWillChange在文本变更前触发，可通过返回false拦截变更；返回true则允许变更，随后触发onChange。
+- onChange在变更完成后触发，无法拦截。
+- 两者可以同时使用，onWillChange用于拦截控制，onChange用于获取变更结果。
+
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
@@ -1138,7 +1146,11 @@ onCopy(callback:Callback<string>)
 
 进行复制操作时，触发该回调。
 
-![](./img/note_3.0-zh-cn.png) onWillCopy先于onCopy触发。onWillCopy回调返回true时允许复制操作继续执行，返回false时拦截复制操作且不触发onCopy。两者可同时使用。
+![](./img/note_3.0-zh-cn.png) onWillCopy和onCopy形成will/did时序模式：
+
+- onWillCopy在复制操作前触发，可通过返回false拦截复制操作；返回true则允许复制，随后触发onCopy。
+- onCopy在复制操作完成后触发，无法拦截。
+- 两者可以同时使用，onWillCopy用于拦截控制，onCopy用于获取复制结果。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -1156,7 +1168,11 @@ onWillCopy(callback: Callback<string, boolean>)
 
 在进行复制操作前，触发该回调。
 
-![](./img/note_3.0-zh-cn.png) onWillCopy先于onCopy触发。onWillCopy回调返回true时允许复制操作继续执行，返回false时拦截复制操作且不触发onCopy。两者可同时使用。
+![](./img/note_3.0-zh-cn.png) onWillCopy和onCopy形成will/did时序模式：
+
+- onWillCopy在复制操作前触发，可通过返回false拦截复制操作；返回true则允许复制，随后触发onCopy。
+- onCopy在复制操作完成后触发，无法拦截。
+- 两者可以同时使用，onWillCopy用于拦截控制，onCopy用于获取复制结果。
 
 起始版本： 26.0.0
 
@@ -1170,7 +1186,7 @@ onWillCopy(callback: Callback<string, boolean>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | Callback | 是 | 复制操作前的回调。回调参数类型为string时，表示将要被复制的文本内容。回调参数类型为boolean时，表示当前选中文本是否允许被复制，true：允许文本被复制；false：不允许文本被复制。 |
+| callback | Callback | 是 | 复制操作前的回调。回调返回值为string时，表示将要被复制的文本内容。回调返回值为boolean时，表示当前选中文本是否允许被复制，返回true：允许文本被复制；返回false：不允许文本被复制。 |
 
 #### [h2]onCut
 
@@ -1178,7 +1194,11 @@ onCut(callback:Callback<string>)
 
 进行剪切操作时，触发该回调。
 
-![](./img/note_3.0-zh-cn.png) onWillCut先于onCut触发。onWillCut回调返回true时允许剪切操作继续执行，返回false时拦截剪切操作且不触发onCut。两者可同时使用。
+![](./img/note_3.0-zh-cn.png) onWillCut和onCut形成will/did时序模式：
+
+- onWillCut在剪切操作前触发，可通过返回false拦截剪切操作；返回true则允许剪切，随后触发onCut。
+- onCut在剪切操作完成后触发，无法拦截。
+- 两者可以同时使用，onWillCut用于拦截控制，onCut用于获取剪切结果。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -1196,7 +1216,11 @@ onWillCut(callback: Callback<string, boolean>)
 
 在进行剪切操作前，触发该回调。
 
-![](./img/note_3.0-zh-cn.png) onWillCut先于onCut触发。onWillCut回调返回true时允许剪切操作继续执行，返回false时拦截剪切操作且不触发onCut。两者可同时使用。
+![](./img/note_3.0-zh-cn.png) onWillCut和onCut形成will/did时序模式：
+
+- onWillCut在剪切操作前触发，可通过返回false拦截剪切操作；返回true则允许剪切，随后触发onCut。
+- onCut在剪切操作完成后触发，无法拦截。
+- 两者可以同时使用，onWillCut用于拦截控制，onCut用于获取剪切结果。
 
 起始版本： 26.0.0
 
@@ -1288,6 +1312,12 @@ onWillInsert(callback: Callback<InsertValue, boolean>)
 
 在将要输入时，触发该回调。
 
+![](./img/note_3.0-zh-cn.png) onWillInsert和onDidInsert形成will/did时序模式：
+
+- onWillInsert在插入操作前触发，可通过返回false拦截插入操作；返回true则允许插入，随后触发onDidInsert。
+- onDidInsert在插入完成后触发，无法拦截。
+- 两者可以同时使用，onWillInsert用于拦截控制，onDidInsert用于获取插入结果。
+
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
@@ -1305,6 +1335,12 @@ onWillInsert(callback: Callback<InsertValue, boolean>)
 onDidInsert(callback: Callback<InsertValue>)
 
 在输入完成时，触发该回调。
+
+![](./img/note_3.0-zh-cn.png) onWillInsert和onDidInsert形成will/did时序模式：
+
+- onWillInsert在插入操作前触发，可通过返回false拦截插入操作；返回true则允许插入，随后触发onDidInsert。
+- onDidInsert在插入完成后触发，无法拦截。
+- 两者可以同时使用，onWillInsert用于拦截控制，onDidInsert用于获取插入结果。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1324,6 +1360,13 @@ onWillDelete(callback: Callback<DeleteValue, boolean>)
 
 在将要删除时，触发该回调。
 
+![](./img/note_3.0-zh-cn.png)
+
+- 点击清除按钮不触发onWillDelete回调。
+- onWillDelete和onDidDelete形成will/did时序模式： onWillDelete在删除操作前触发，可通过返回false拦截删除操作；返回true则允许删除，随后触发onDidDelete。
+- onDidDelete在删除完成后触发，无法拦截。
+- 两者可以同时使用，onWillDelete用于拦截控制，onDidDelete用于获取删除结果。
+
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
@@ -1342,7 +1385,12 @@ onDidDelete(callback: Callback<DeleteValue>)
 
 在删除完成时，触发该回调。
 
-![](./img/note_3.0-zh-cn.png) 点击清除按钮不触发onDidDelete回调。
+![](./img/note_3.0-zh-cn.png)
+
+- 点击清除按钮不触发onDidDelete回调。
+- onWillDelete和onDidDelete形成will/did时序模式： onWillDelete在删除操作前触发，可通过返回false拦截删除操作；返回true则允许删除，随后触发onDidDelete。
+- onDidDelete在删除完成后触发，无法拦截。
+- 两者可以同时使用，onWillDelete用于拦截控制，onDidDelete用于获取删除结果。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1362,7 +1410,12 @@ onWillChange(callback: Callback<EditableTextChangeValue, boolean>)
 
 在文本内容将要发生变化时，触发该回调。
 
-onWillChange的回调时序晚于onWillInsert、onWillDelete，早于onDidInsert、onDidDelete。
+![](./img/note_3.0-zh-cn.png)
+
+- onWillChange的回调时序晚于onWillInsert、onWillDelete，早于onDidInsert、onDidDelete。
+- onWillChange和onChange形成will/did时序模式： onWillChange在文本变更前触发，可通过返回false拦截变更；返回true则允许变更，随后触发onChange。
+- onChange在变更完成后触发，无法拦截。
+- 两者可以同时使用，onWillChange用于拦截控制，onChange用于获取变更结果。
 
 元服务API： 从API version 15开始，该接口支持在元服务中使用。
 
@@ -1542,7 +1595,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848688.gif)
+ ![](./img/zh-cn_image_0000002701799738.gif)
 
 #### [h2]示例2（设置搜索和删除图标）
 
@@ -1588,7 +1641,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088119.gif)
+ ![](./img/zh-cn_image_0000002731519025.gif)
 
 #### [h2]示例3（设置自定义键盘）
 
@@ -1663,7 +1716,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928287.gif)
+ ![](./img/zh-cn_image_0000002701639824.gif)
 
 #### [h2]示例4（设置输入法回车键类型）
 
@@ -1696,7 +1749,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008610.gif)
+ ![](./img/zh-cn_image_0000002731359045.gif)
 
 #### [h2]示例5（设置文本样式）
 
@@ -1743,7 +1796,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848690.png)
+ ![](./img/zh-cn_image_0000002701799740.png)
 
 #### [h2]示例6（设置文字特性效果）
 
@@ -1771,7 +1824,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088121.png)
+ ![](./img/zh-cn_image_0000002731519027.png)
 
 #### [h2]示例7（自定义键盘避让）
 
@@ -1783,7 +1836,7 @@ struct SearchExample {
 @Component
 struct SearchExample {
   controller: SearchController = new SearchController();
-  @State inputValue: string = "";
+  @State inputValue: string = '';
   @State height1: string | number = '80%';
   @State supportAvoidance: boolean = true;
 
@@ -1801,7 +1854,7 @@ struct SearchExample {
       Grid() {
         ForEach([1, 2, 3, 4, 5, 6, 7, 8, 9, '*', 0, '#'], (item: number | string) => {
           GridItem() {
-            Button(item + "")
+            Button(item + '')
               .width(110).onClick(() => {
               this.inputValue += item;
             })
@@ -1815,22 +1868,22 @@ struct SearchExample {
   build() {
     Column() {
       Row() {
-        Button("20%")
+        Button('20%')
           .fontSize(24)
           .onClick(() => {
-            this.height1 = "20%";
+            this.height1 = '20%';
           })
-        Button("80%")
+        Button('80%')
           .fontSize(24)
           .margin({ left: 20 })
           .onClick(() => {
-            this.height1 = "80%";
+            this.height1 = '80%';
           })
       }
       .justifyContent(FlexAlign.Center)
       .alignItems(VerticalAlign.Bottom)
       .height(this.height1)
-      .width("100%")
+      .width('100%')
       .padding({ bottom: 50 })
 
       Search({ controller: this.controller, value: this.inputValue })// 绑定自定义键盘
@@ -1844,7 +1897,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928289.gif)
+ ![](./img/zh-cn_image_0000002701639826.gif)
 
 #### [h2]示例8（设置文本自适应）
 
@@ -1873,7 +1926,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008612.png)
+ ![](./img/zh-cn_image_0000002731359047.png)
 
 #### [h2]示例9（支持插入和删除回调）
 
@@ -1989,7 +2042,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848692.png)
+ ![](./img/zh-cn_image_0000002701799742.png)
 
 #### [h2]示例10（文本扩展自定义菜单）
 
@@ -2033,20 +2086,20 @@ struct SearchExample {
     return menuItems;
   }
   onMenuItemClick = (menuItem: TextMenuItem, textRange: TextRange) => {
-    if (menuItem.id.equals(TextMenuItemId.of("create2"))) {
-      console.info("拦截 id: create2 start:" + textRange.start + "; end:" + textRange.end);
+    if (menuItem.id.equals(TextMenuItemId.of('create2'))) {
+      console.info('拦截 id: create2 start:' + textRange.start + '; end:' + textRange.end);
       return true;
     }
-    if (menuItem.id.equals(TextMenuItemId.of("prepare1"))) {
-      console.info("拦截 id: prepare1 start:" + textRange.start + "; end:" + textRange.end);
+    if (menuItem.id.equals(TextMenuItemId.of('prepare1'))) {
+      console.info('拦截 id: prepare1 start:' + textRange.start + '; end:' + textRange.end);
       return true;
     }
     if (menuItem.id.equals(TextMenuItemId.COPY)) {
-      console.info("拦截 COPY start:" + textRange.start + "; end:" + textRange.end);
+      console.info('拦截 id: COPY start:' + textRange.start + '; end:' + textRange.end);
       return true;
     }
     if (menuItem.id.equals(TextMenuItemId.SELECT_ALL)) {
-      console.info("不拦截 SELECT_ALL start:" + textRange.start + "; end:" + textRange.end);
+      console.info('不拦截 id: SELECT_ALL start:' + textRange.start + '; end:' + textRange.end);
       return false;
     }
     return false;
@@ -2079,12 +2132,12 @@ struct SearchExample {
           this.endIndex = selectionEnd;
         })
     }
-    .width("90%")
-    .margin("5%")
+    .width('90%')
+    .margin('5%')
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088123.png)
+ ![](./img/zh-cn_image_0000002731519029.png)
 
 #### [h2]示例11（设置symbol类型清除按钮）
 
@@ -2123,7 +2176,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928291.png)
+ ![](./img/zh-cn_image_0000002701639828.png)
 
 #### [h2]示例12（设置文本是否可复制）
 
@@ -2143,8 +2196,8 @@ struct SearchExample {
 
   build() {
     Column({ space: 3 }) {
-      Text("copy: " + this.copyValue)
-      Text("cut:" + this.cutValue)
+      Text('copy: ' + this.copyValue)
+      Text('cut:' + this.cutValue)
       Search({ value: 'Search CopyOption:None', controller: this.controller })
         .width('95%')
         .height(40)
@@ -2191,7 +2244,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008614.gif)
+ ![](./img/zh-cn_image_0000002731359049.gif)
 
 #### [h2]示例13（设置文本水平对齐/光标样式/选中背景色）
 
@@ -2220,7 +2273,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848694.gif)
+ ![](./img/zh-cn_image_0000002701799744.gif)
 
 #### [h2]示例14（设置默认获焦并拉起软键盘）
 
@@ -2254,7 +2307,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088125.gif)
+ ![](./img/zh-cn_image_0000002731519031.gif)
 
 #### [h2]示例15（关闭系统文本选择菜单）
 
@@ -2281,7 +2334,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928293.gif)
+ ![](./img/zh-cn_image_0000002701639830.gif)
 
 #### [h2]示例16（对输入的文本进行过滤）
 
@@ -2313,7 +2366,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008616.gif)
+ ![](./img/zh-cn_image_0000002731359051.gif)
 
 #### [h2]示例17（设置选中指定区域的文本内容）
 
@@ -2353,7 +2406,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848696.png)
+ ![](./img/zh-cn_image_0000002701799746.png)
 
 #### [h2]示例18（设置文本滚动事件）
 
@@ -2385,7 +2438,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088127.gif)
+ ![](./img/zh-cn_image_0000002731519033.gif)
 
 #### [h2]示例19（设置最小字体范围与最大字体范围）
 
@@ -2432,10 +2485,10 @@ struct SearchExample {
   build() {
     Column() {
       Column() {
-        Text("系统字体变大变小，变大变小aaaaaaaAAAAAA")
+        Text('系统字体变大变小，变大变小aaaaaaaAAAAAA')
         Blank(30)
-        Text("minFontScale = " + this.minFontScale)
-        Text("maxFontScale = " + this.maxFontScale)
+        Text('minFontScale = ' + this.minFontScale)
+        Text('maxFontScale = ' + this.maxFontScale)
         Search({
           placeholder: 'The text area can hold an unlimited amount of text. input your word...',
         })
@@ -2444,8 +2497,8 @@ struct SearchExample {
 
         Blank(30)
 
-        Text("minFontScale = " + this.minFontScale2)
-        Text("maxFontScale = " + this.maxFontScale2)
+        Text('minFontScale = ' + this.minFontScale2)
+        Text('maxFontScale = ' + this.maxFontScale2)
         Search({
           placeholder: 'The text area can hold an unlimited amount of text. input your word...',
         })
@@ -2456,7 +2509,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928295.png) ![](./img/zh-cn_image_0000002656008618.png)
+ ![](./img/zh-cn_image_0000002701639832.png) ![](./img/zh-cn_image_0000002731359053.png)
 
 #### [h2]示例20（设置文本描边）
 
@@ -2506,7 +2559,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848698.png)
+ ![](./img/zh-cn_image_0000002701799748.png)
 
 #### [h2]示例21（设置中西文自动间距）
 
@@ -2532,7 +2585,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088129.png)
+ ![](./img/zh-cn_image_0000002731519035.png)
 
 #### [h2]示例22（设置placeholder富文本样式）
 
@@ -2546,7 +2599,7 @@ import { LengthMetrics } from '@kit.ArkUI';
 @Component
 struct SearchExample {
   styledString: MutableStyledString =
-    new MutableStyledString("输入框富文本：文本",
+    new MutableStyledString('输入框富文本：文本',
       [
         {
           start: 0,
@@ -2587,7 +2640,7 @@ struct SearchExample {
   build() {
     Scroll() {
       Column() {
-        Text("Search placeholder富文本")
+        Text('Search placeholder富文本')
           .fontSize(8)
         Search({
           controller: this.controller
@@ -2600,7 +2653,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928297.jpg)
+ ![](./img/zh-cn_image_0000002701639834.jpg)
 
 #### [h2]示例23（设置输入法扩展信息）
 
@@ -2648,16 +2701,16 @@ struct SearchExample {
   @State colorType: ColorMetrics[] =
     [this.colorTypeRGB, this.colorTypeARGB, this.colorTypeColorWithSpace, this.colorTypeRGBA, this.colorTypeRes];
   @State colorTypeName: string[] =
-    ["colorTypeRGB", "colorTypeARGB", "colorTypeColorWithSpace", "colorTypeRGBA", "colorTypeRes"];
+    ['colorTypeRGB', 'colorTypeARGB', 'colorTypeColorWithSpace', 'colorTypeRGBA', 'colorTypeRes'];
   @State count: number = 0;
 
   build() {
     Column() {
       Blank(30)
-      Search({ value: "Input search text" })
-        .searchButton("SEARCH", { fontSize: '14vp' })
+      Search({ value: 'Input search text' })
+        .searchButton('SEARCH', { fontSize: '14vp' })
         .dividerColor(this.colorType[this.count])
-      Button("Change ColorType: " + this.colorTypeName[this.count]).onClick(() => {
+      Button('Change ColorType: ' + this.colorTypeName[this.count]).onClick(() => {
         this.count = (this.count + 1) % (this.colorType.length)
       })
         .fontSize('14vp')
@@ -2666,7 +2719,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008620.jpg)
+ ![](./img/zh-cn_image_0000002731359055.jpg)
 
 #### [h2]示例25（设置行首标点压缩）
 
@@ -2681,12 +2734,12 @@ struct SearchExample {
 struct Index {
   build() {
     Column(){
-      Search({ value: "\u300C行首标点压缩打开" })
+      Search({ value: '\u300C行首标点压缩打开' })
         .compressLeadingPunctuation(true)
         .margin(5)
         .textFont({size:30})
         .width("90%")
-      Search({ value: "\u300C行首标点压缩关闭" })
+      Search({ value: '\u300C行首标点压缩关闭' })
         .compressLeadingPunctuation(false)
         .textFont({size:30})
         .width("90%")
@@ -2694,7 +2747,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848700.gif)
+ ![](./img/zh-cn_image_0000002701799750.gif)
 
 #### [h2]示例26（设置自适应间距）
 
@@ -2760,7 +2813,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088131.gif)
+ ![](./img/zh-cn_image_0000002731519037.gif)
 
 #### [h2]示例27（设置文本拖拽时的背板样式）
 
@@ -2786,7 +2839,7 @@ struct SearchTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928299.png)
+ ![](./img/zh-cn_image_0000002701639836.png)
 
 #### [h2]示例28（删除文本框内的最后一个字符）
 
@@ -2811,7 +2864,7 @@ struct Page {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008622.gif)
+ ![](./img/zh-cn_image_0000002731359057.gif)
 
 #### [h2]示例29（设置文本排版方向）
 
@@ -2854,7 +2907,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848702.png)
+ ![](./img/zh-cn_image_0000002701799752.png)
 
 #### [h2]示例30（将指定范围的文字滚动到可视区内）
 
@@ -2875,14 +2928,14 @@ struct SearchExample {
       Search({ value: this.text, controller: this.controller })
         .width(336)
         .height(56)
-      Button("滚动文本到可视区").onClick(()=> {
+      Button('滚动文本到可视区').onClick(()=> {
         this.controller.scrollToVisible({ start: 22, end: 30})
       })
     }.width('100%').height('100%').backgroundColor('#F1F3F5')
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088133.gif)
+ ![](./img/zh-cn_image_0000002731519039.gif)
 
 #### [h2]示例31（设置文本着色器效果）
 
@@ -2951,7 +3004,7 @@ struct ShaderColorStyle {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928301.png)
+ ![](./img/zh-cn_image_0000002701639838.png)
 
 #### [h2]示例32（设置文本选择的AI菜单）
 
@@ -2979,4 +3032,4 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008624.gif)
+ ![](./img/zh-cn_image_0000002731359059.gif)

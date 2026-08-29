@@ -2,8 +2,8 @@
 title: "modular_object_dispatcher.h"
 upstream_id: "harmonyos-references/capi-modular-object-dispatcher-h"
 catalog: "harmonyos-references"
-content_hash: "a73d7f9ef833"
-synced_at: "2026-07-28T16:40:44.583248"
+content_hash: "7f0262359a5d"
+synced_at: "2026-08-29T18:12:09.126508"
 ---
 
 # modular_object_dispatcher.h
@@ -190,7 +190,7 @@ void OH_AbilityRuntime_ModObjDispatcher_TypeInfoClear(OH_AbilityRuntime_ModObjDi
 - 当TypeInfo从函数返回（如[OH_AbilityRuntime_TypeDescriptor_GetMethodReturnType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-dispatcher-h#oh_abilityruntime_typedescriptor_getmethodreturntype)、[OH_AbilityRuntime_TypeDescriptor_GetMethodParamType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-dispatcher-h#oh_abilityruntime_typedescriptor_getmethodparamtype)、[OH_AbilityRuntime_TypeDescriptor_GetStructFieldType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-dispatcher-h#oh_abilityruntime_typedescriptor_getstructfieldtype)、[OH_AbilityRuntime_ModObjDispatcher_ArrayGetElementType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-dispatcher-h#oh_abilityruntime_modobjdispatcher_arraygetelementtype)、[OH_AbilityRuntime_ModObjDispatcher_VectorGetElementType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-dispatcher-h#oh_abilityruntime_modobjdispatcher_vectorgetelementtype)、[OH_AbilityRuntime_ModObjDispatcher_SetGetElementType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-dispatcher-h#oh_abilityruntime_modobjdispatcher_setgetelementtype)、[OH_AbilityRuntime_ModObjDispatcher_MapGetValueType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-dispatcher-h#oh_abilityruntime_modobjdispatcher_mapgetvaluetype)）时，函数执行深拷贝，调用方获得返回TypeInfo的所有权，必须调用此接口释放资源。
 - 当TypeInfo被传入函数（如[OH_AbilityRuntime_ModObjDispatcher_ArrayCreate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-dispatcher-h#oh_abilityruntime_modobjdispatcher_arraycreate)、[OH_AbilityRuntime_ModObjDispatcher_VectorCreate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-dispatcher-h#oh_abilityruntime_modobjdispatcher_vectorcreate)、[OH_AbilityRuntime_ModObjDispatcher_SetCreate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-dispatcher-h#oh_abilityruntime_modobjdispatcher_setcreate)、[OH_AbilityRuntime_ModObjDispatcher_MapCreate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-dispatcher-h#oh_abilityruntime_modobjdispatcher_mapcreate)）时，函数执行深拷贝，调用方保留原始TypeInfo的所有权，需自行调用此接口释放原始TypeInfo持有的资源。
 - 简单类型（布尔、整数、浮点数、空值等）不持有堆资源，无需调用此接口释放。
-- 禁止对TypeInfo的浅拷贝调用此接口。如果执行了 TypeInfo t2 = t1，只能清理其中一个。
+- 禁止对TypeInfo的浅拷贝调用此接口。如果执行了 TypeInfo t2 = t1，只能对原始实例或拷贝实例中的一个调用此接口。
 
 起始版本： 26.0.0
 
@@ -252,7 +252,7 @@ AbilityRuntime_ErrorCode OH_AbilityRuntime_ModObjDispatcher_CreateMainServiceIns
 
 | 类型 | 说明 |
 | --- | --- |
-| AbilityRuntime_ErrorCode | 返回特定的错误码。 [ABILITY_RUNTIME_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 接口调用成功。 [ABILITY_RUNTIME_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) remoteProxy或ppModObjDispatcher为NULL，或ppModObjDispatcher不为NULL。 [ABILITY_RUNTIME_ERROR_CODE_INTERNAL](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 内部错误，如内存分配失败。 |
+| AbilityRuntime_ErrorCode | 返回特定的错误码。 [ABILITY_RUNTIME_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 接口调用成功。 [ABILITY_RUNTIME_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) remoteProxy或ppModObjDispatcher为NULL，或*ppModObjDispatcher不为NULL。 [ABILITY_RUNTIME_ERROR_CODE_INTERNAL](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 内部错误，如内存分配失败。请检查系统内存是否充足，必要时释放资源后重试。 |
 
 #### [h2]OH_AbilityRuntime_ModObjDispatcher_CreateSubInstance()
 
@@ -283,7 +283,7 @@ AbilityRuntime_ErrorCode OH_AbilityRuntime_ModObjDispatcher_CreateSubInstance(OH
 
 | 类型 | 说明 |
 | --- | --- |
-| AbilityRuntime_ErrorCode | 返回特定的错误码。 [ABILITY_RUNTIME_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 接口调用成功。 [ABILITY_RUNTIME_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) mainServiceDispatcher、subProxy或ppModObjDispatcher为NULL，或ppModObjDispatcher不为NULL。 [ABILITY_RUNTIME_ERROR_CODE_INTERNAL](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 内部错误，如内存分配失败。 |
+| AbilityRuntime_ErrorCode | 返回特定的错误码。 [ABILITY_RUNTIME_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 接口调用成功。 [ABILITY_RUNTIME_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) mainServiceDispatcher、subProxy或ppModObjDispatcher为NULL，或*ppModObjDispatcher不为NULL。 [ABILITY_RUNTIME_ERROR_CODE_INTERNAL](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 内部错误，如内存分配失败。请检查系统内存是否充足，必要时释放资源后重试。 |
 
 #### [h2]OH_AbilityRuntime_ModObjDispatcher_Release()
 
@@ -324,7 +324,7 @@ AbilityRuntime_ErrorCode OH_AbilityRuntime_ModObjDispatcher_HasTypeDescriptor(OH
 
 | 类型 | 说明 |
 | --- | --- |
-| AbilityRuntime_ErrorCode | 返回特定的错误码。 [ABILITY_RUNTIME_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 接口调用成功。 [ABILITY_RUNTIME_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) pModObjDispatcher或pctinfo为NULL。 [ABILITY_RUNTIME_ERROR_CODE_SEND_REQUEST_FAILED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) IPC请求发送失败。 [ABILITY_RUNTIME_ERROR_CODE_METADATA_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 类型库元数据无效。 [ABILITY_RUNTIME_ERROR_CODE_INTERNAL](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 内部错误。 |
+| AbilityRuntime_ErrorCode | 返回特定的错误码。 [ABILITY_RUNTIME_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 接口调用成功。 [ABILITY_RUNTIME_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) pModObjDispatcher或pctinfo为NULL。 [ABILITY_RUNTIME_ERROR_CODE_SEND_REQUEST_FAILED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) IPC请求发送失败。请检查远端服务是否正常运行。 [ABILITY_RUNTIME_ERROR_CODE_METADATA_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 类型库元数据无效。请检查远端服务的类型库定义是否正确。 [ABILITY_RUNTIME_ERROR_CODE_INTERNAL](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 内部错误。请检查系统状态，必要时释放资源后重试。 |
 
 #### [h2]OH_AbilityRuntime_ModObjDispatcher_GetTypeDescriptor()
 
@@ -352,7 +352,7 @@ AbilityRuntime_ErrorCode OH_AbilityRuntime_ModObjDispatcher_GetTypeDescriptor(OH
 
 | 类型 | 说明 |
 | --- | --- |
-| AbilityRuntime_ErrorCode | 返回特定的错误码。 [ABILITY_RUNTIME_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 接口调用成功。 [ABILITY_RUNTIME_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) pModObjDispatcher或ppTypeDescriptor为NULL，或ppTypeDescriptor不为NULL。 [ABILITY_RUNTIME_ERROR_CODE_SEND_REQUEST_FAILED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) IPC请求发送失败。 [ABILITY_RUNTIME_ERROR_CODE_METADATA_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 类型库元数据无效。 [ABILITY_RUNTIME_ERROR_CODE_INTERNAL](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 内部错误。 |
+| AbilityRuntime_ErrorCode | 返回特定的错误码。 [ABILITY_RUNTIME_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 接口调用成功。 [ABILITY_RUNTIME_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) pModObjDispatcher或ppTypeDescriptor为NULL，或*ppTypeDescriptor不为NULL。 [ABILITY_RUNTIME_ERROR_CODE_SEND_REQUEST_FAILED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) IPC请求发送失败。请检查远端服务是否正常运行。 [ABILITY_RUNTIME_ERROR_CODE_METADATA_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 类型库元数据无效。请检查远端服务的类型库定义是否正确。 [ABILITY_RUNTIME_ERROR_CODE_INTERNAL](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 内部错误。请检查系统状态，必要时释放资源后重试。 |
 
 #### [h2]OH_AbilityRuntime_ModObjDispatcher_QueryMainServiceInterfaceMemIDsOfNames()
 
@@ -378,7 +378,7 @@ AbilityRuntime_ErrorCode OH_AbilityRuntime_ModObjDispatcher_QueryMainServiceInte
 
 | 类型 | 说明 |
 | --- | --- |
-| AbilityRuntime_ErrorCode | 返回特定的错误码。 [ABILITY_RUNTIME_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 接口调用成功。 [ABILITY_RUNTIME_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) pModObjDispatcher、rgszNames或pMemID为NULL。 [ABILITY_RUNTIME_ERROR_CODE_SEND_REQUEST_FAILED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) IPC请求发送失败。 [ABILITY_RUNTIME_ERROR_CODE_METADATA_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 类型库元数据无效。 [ABILITY_RUNTIME_ERROR_CODE_PROPERTY_NOT_FOUND](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 方法名称未找到。 [ABILITY_RUNTIME_ERROR_CODE_INTERNAL](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 内部错误。 |
+| AbilityRuntime_ErrorCode | 返回特定的错误码。 [ABILITY_RUNTIME_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 接口调用成功。 [ABILITY_RUNTIME_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) pModObjDispatcher、rgszNames或pMemID为NULL。 [ABILITY_RUNTIME_ERROR_CODE_SEND_REQUEST_FAILED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) IPC请求发送失败。请检查远端服务是否正常运行。 [ABILITY_RUNTIME_ERROR_CODE_METADATA_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 类型库元数据无效。请检查远端服务的类型库定义是否正确。 [ABILITY_RUNTIME_ERROR_CODE_PROPERTY_NOT_FOUND](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 方法名称未找到。请检查方法名称是否与类型库中定义一致。 [ABILITY_RUNTIME_ERROR_CODE_INTERNAL](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 内部错误。请检查系统状态，必要时释放资源后重试。 |
 
 #### [h2]OH_AbilityRuntime_ModObjDispatcher_CallMethod()
 
@@ -412,7 +412,7 @@ AbilityRuntime_ErrorCode OH_AbilityRuntime_ModObjDispatcher_CallMethod(OH_Abilit
 
 | 类型 | 说明 |
 | --- | --- |
-| AbilityRuntime_ErrorCode | 返回特定的错误码。 [ABILITY_RUNTIME_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 接口调用成功。 [ABILITY_RUNTIME_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) pModObjDispatcher、pInputParams或pResult为NULL。 [ABILITY_RUNTIME_ERROR_CODE_PROPERTY_NOT_FOUND](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 方法未找到。 [ABILITY_RUNTIME_ERROR_CODE_TYPE_MISMATCH](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 参数类型与元数据定义不匹配。 [ABILITY_RUNTIME_ERROR_CODE_SEND_REQUEST_FAILED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) IPC请求发送失败。 [ABILITY_RUNTIME_ERROR_CODE_METADATA_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 类型库元数据无效。 [ABILITY_RUNTIME_ERROR_CODE_INTERNAL](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 内部错误。 |
+| AbilityRuntime_ErrorCode | 返回特定的错误码。 [ABILITY_RUNTIME_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 接口调用成功。 [ABILITY_RUNTIME_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) pModObjDispatcher、pInputParams或pResult为NULL。 [ABILITY_RUNTIME_ERROR_CODE_PROPERTY_NOT_FOUND](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 方法未找到。请检查memID是否正确。 [ABILITY_RUNTIME_ERROR_CODE_TYPE_MISMATCH](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 参数类型与元数据定义不匹配。请检查输入参数类型是否与方法定义一致。 [ABILITY_RUNTIME_ERROR_CODE_SEND_REQUEST_FAILED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) IPC请求发送失败。请检查远端服务是否正常运行。 [ABILITY_RUNTIME_ERROR_CODE_METADATA_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 类型库元数据无效。请检查远端服务的类型库定义是否正确。 [ABILITY_RUNTIME_ERROR_CODE_INTERNAL](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 内部错误。请检查系统状态，必要时释放资源后重试。 |
 
 #### [h2]OH_AbilityRuntime_TypeDescriptor_Release()
 
@@ -1020,7 +1020,7 @@ AbilityRuntime_ErrorCode OH_AbilityRuntime_ModObjDispatcher_ArrayCreate(OH_Abili
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_AbilityRuntime_ModObjDispatcher_TypeInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-modobjdispatcher-typeinfo)* elementType | 指向元素类型描述符的指针。 |
+| [OH_AbilityRuntime_ModObjDispatcher_TypeInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-modobjdispatcher-typeinfo)* elementType | 指向元素类型描述符的指针。函数执行深拷贝，调用方保留原始TypeInfo的所有权，需自行调用[OH_AbilityRuntime_ModObjDispatcher_TypeInfoClear](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-dispatcher-h#oh_abilityruntime_modobjdispatcher_typeinfoclear)释放TypeInfo持有的堆资源。 |
 | uint32_t size | 数组的初始大小。 |
 | [OH_AbilityRuntime_ModObjDispatcher_ArrayHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-modularobjectdispatcher-array8h)* ppArray | 指向接收数组句柄的指针。 |
 
@@ -1160,7 +1160,7 @@ AbilityRuntime_ErrorCode OH_AbilityRuntime_ModObjDispatcher_VectorCreate(OH_Abil
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_AbilityRuntime_ModObjDispatcher_TypeInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-modobjdispatcher-typeinfo)* elementType | 指向元素类型描述符的指针。 |
+| [OH_AbilityRuntime_ModObjDispatcher_TypeInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-modobjdispatcher-typeinfo)* elementType | 指向元素类型描述符的指针。函数执行深拷贝，调用方保留原始TypeInfo的所有权，需自行调用[OH_AbilityRuntime_ModObjDispatcher_TypeInfoClear](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-dispatcher-h#oh_abilityruntime_modobjdispatcher_typeinfoclear)释放TypeInfo持有的堆资源。 |
 | [OH_AbilityRuntime_ModObjDispatcher_VectorHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-modularobjectdispatcher-vector8h)* ppVector | 指向接收向量句柄的指针。 |
 
 返回：
@@ -1321,7 +1321,7 @@ AbilityRuntime_ErrorCode OH_AbilityRuntime_ModObjDispatcher_SetCreate(OH_Ability
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_AbilityRuntime_ModObjDispatcher_TypeInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-modobjdispatcher-typeinfo)* elementType | 指向元素类型描述符的指针。 |
+| [OH_AbilityRuntime_ModObjDispatcher_TypeInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-modobjdispatcher-typeinfo)* elementType | 指向元素类型描述符的指针。函数执行深拷贝，调用方保留原始TypeInfo的所有权，需自行调用[OH_AbilityRuntime_ModObjDispatcher_TypeInfoClear](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-dispatcher-h#oh_abilityruntime_modobjdispatcher_typeinfoclear)释放TypeInfo持有的堆资源。 |
 | [OH_AbilityRuntime_ModObjDispatcher_SetHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-modularobjectdispatcher-set8h)* ppSet | 指向接收集合句柄的指针。 |
 
 返回：
@@ -1532,7 +1532,7 @@ AbilityRuntime_ErrorCode OH_AbilityRuntime_ModObjDispatcher_MapCreate(OH_Ability
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_AbilityRuntime_ModObjDispatcher_ValueType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-dispatcher-h#oh_abilityruntime_modobjdispatcher_valuetype) keyType | 键类型。仅支持基本类型（BOOL、有符号整数、无符号整数、浮点数、STRING、ENUM）。 |
-| [OH_AbilityRuntime_ModObjDispatcher_TypeInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-modobjdispatcher-typeinfo)* valueType | 指向值类型描述符的指针。 |
+| [OH_AbilityRuntime_ModObjDispatcher_TypeInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-modobjdispatcher-typeinfo)* valueType | 指向值类型描述符的指针，值类型无特殊限制。函数执行深拷贝，调用方保留原始TypeInfo的所有权，需自行调用[OH_AbilityRuntime_ModObjDispatcher_TypeInfoClear](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-dispatcher-h#oh_abilityruntime_modobjdispatcher_typeinfoclear)释放TypeInfo持有的堆资源。 |
 | [OH_AbilityRuntime_ModObjDispatcher_MapHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-modularobjectdispatcher-map8h)* ppMap | 指向接收映射句柄的指针。 |
 
 返回：
@@ -1605,14 +1605,14 @@ AbilityRuntime_ErrorCode OH_AbilityRuntime_ModObjDispatcher_MapPut(OH_AbilityRun
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_AbilityRuntime_ModObjDispatcher_MapHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-modularobjectdispatcher-map8h) pMap | 映射句柄。 |
-| [const OH_AbilityRuntime_ModObjDispatcher_Variant](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-modobjdispatcher-variant)* pKey | 指向键变体的指针。 |
+| [const OH_AbilityRuntime_ModObjDispatcher_Variant](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-modobjdispatcher-variant)* pKey | 指向键变体的指针。键类型必须与创建映射时指定的类型一致，仅支持基本类型（BOOL、有符号整数、无符号整数、浮点数、STRING、ENUM）。 |
 | [const OH_AbilityRuntime_ModObjDispatcher_Variant](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-modobjdispatcher-variant)* pValue | 指向值变体的指针。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| AbilityRuntime_ErrorCode | 返回特定的错误码。 [ABILITY_RUNTIME_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 接口调用成功。 [ABILITY_RUNTIME_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) pMap、pKey或pValue为NULL。 [ABILITY_RUNTIME_ERROR_CODE_TYPE_MISMATCH](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 键或值的类型与映射定义的类型不匹配。 [ABILITY_RUNTIME_ERROR_CODE_INTERNAL](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 内部错误。 |
+| AbilityRuntime_ErrorCode | 返回特定的错误码。 [ABILITY_RUNTIME_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 接口调用成功。 [ABILITY_RUNTIME_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) pMap、pKey或pValue为NULL。 [ABILITY_RUNTIME_ERROR_CODE_TYPE_MISMATCH](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 键或值的类型与映射定义的类型不匹配。请检查键值类型是否与创建映射时指定的类型一致。 [ABILITY_RUNTIME_ERROR_CODE_INTERNAL](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 内部错误。请检查系统状态，必要时释放资源后重试。 |
 
 #### [h2]OH_AbilityRuntime_ModObjDispatcher_MapGet()
 
@@ -1630,14 +1630,14 @@ AbilityRuntime_ErrorCode OH_AbilityRuntime_ModObjDispatcher_MapGet(OH_AbilityRun
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_AbilityRuntime_ModObjDispatcher_MapHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-modularobjectdispatcher-map8h) pMap | 映射句柄。 |
-| [const OH_AbilityRuntime_ModObjDispatcher_Variant](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-modobjdispatcher-variant)* pKey | 指向键变体的指针。 |
+| [const OH_AbilityRuntime_ModObjDispatcher_Variant](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-modobjdispatcher-variant)* pKey | 指向键变体的指针。键类型必须与创建映射时指定的类型一致，仅支持基本类型（BOOL、有符号整数、无符号整数、浮点数、STRING、ENUM）。 |
 | [OH_AbilityRuntime_ModObjDispatcher_Variant](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-modobjdispatcher-variant)* pValue | 指向接收值变体的指针。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| AbilityRuntime_ErrorCode | 返回特定的错误码。 [ABILITY_RUNTIME_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 接口调用成功。 [ABILITY_RUNTIME_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) pMap、pKey或pValue为NULL。 [ABILITY_RUNTIME_ERROR_CODE_TYPE_MISMATCH](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 键或值的类型与映射定义的类型不匹配。 [ABILITY_RUNTIME_ERROR_CODE_PROPERTY_NOT_FOUND](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 键在映射中不存在。 [ABILITY_RUNTIME_ERROR_CODE_INTERNAL](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 内部错误。 |
+| AbilityRuntime_ErrorCode | 返回特定的错误码。 [ABILITY_RUNTIME_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 接口调用成功。 [ABILITY_RUNTIME_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) pMap、pKey或pValue为NULL。 [ABILITY_RUNTIME_ERROR_CODE_TYPE_MISMATCH](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 键或值的类型与映射定义的类型不匹配。请检查键值类型是否与创建映射时指定的类型一致。 [ABILITY_RUNTIME_ERROR_CODE_PROPERTY_NOT_FOUND](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 键在映射中不存在。请检查键是否正确。 [ABILITY_RUNTIME_ERROR_CODE_INTERNAL](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) 内部错误。请检查系统状态，必要时释放资源后重试。 |
 
 #### [h2]OH_AbilityRuntime_ModObjDispatcher_MapRemove()
 
@@ -1655,7 +1655,7 @@ AbilityRuntime_ErrorCode OH_AbilityRuntime_ModObjDispatcher_MapRemove(OH_Ability
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_AbilityRuntime_ModObjDispatcher_MapHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-modularobjectdispatcher-map8h) pMap | 映射句柄。 |
-| [const OH_AbilityRuntime_ModObjDispatcher_Variant](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-modobjdispatcher-variant)* pKey | 指向键变体的指针。 |
+| [const OH_AbilityRuntime_ModObjDispatcher_Variant](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-modobjdispatcher-variant)* pKey | 指向键变体的指针。键类型必须与创建映射时指定的类型一致，仅支持基本类型（BOOL、有符号整数、无符号整数、浮点数、STRING、ENUM）。 |
 
 返回：
 
@@ -1679,7 +1679,7 @@ AbilityRuntime_ErrorCode OH_AbilityRuntime_ModObjDispatcher_MapContainsKey(OH_Ab
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_AbilityRuntime_ModObjDispatcher_MapHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-modularobjectdispatcher-map8h) pMap | 映射句柄。 |
-| [const OH_AbilityRuntime_ModObjDispatcher_Variant](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-modobjdispatcher-variant)* pKey | 指向键变体的指针。 |
+| [const OH_AbilityRuntime_ModObjDispatcher_Variant](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-modobjdispatcher-variant)* pKey | 指向键变体的指针。键类型必须与创建映射时指定的类型一致，仅支持基本类型（BOOL、有符号整数、无符号整数、浮点数、STRING、ENUM）。 |
 | bool* pExists | 指向接收存在标志的指针。true表示键存在，false表示不存在。 |
 
 返回：

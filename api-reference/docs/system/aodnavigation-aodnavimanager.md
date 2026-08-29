@@ -2,13 +2,13 @@
 title: "aodNaviManager (熄屏导航服务)"
 upstream_id: "harmonyos-references/aodnavigation-aodnavimanager"
 catalog: "harmonyos-references"
-content_hash: "a5d7224e8bfd"
-synced_at: "2026-07-28T16:51:20.940875"
+content_hash: "19f40ba4e066"
+synced_at: "2026-08-29T18:17:14.753516"
 ---
 
 # aodNaviManager (熄屏导航服务)
 
-本模块提供AOD Navigation Kit（熄屏导航服务）的基础能力，包括检查设备是否支持熄屏导航服务、检查熄屏导航开关状态、获取熄屏导航扩展能力集、熄屏导航初始化配置、规划路线设置、更新熄屏导航视图数据及数据同步等核心功能。
+本模块提供AOD Navigation Kit的基础能力，包括检查设备是否支持熄屏导航服务、检查熄屏导航开关状态、获取熄屏导航扩展能力集、熄屏导航初始化配置、规划路线设置、更新熄屏导航视图数据及数据同步等核心功能。
 
 起始版本： 26.0.0
 
@@ -664,7 +664,7 @@ hilog.info(0x0000, 'aodnavigationSample', 'Succeeded in unsubscribing from altit
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| historyRoutes | [HistoryRoute](#historyroute)[] | 否 | 否 | 历史轨迹点列表。 **说明**：设备亮屏期间应用产生的轨迹数据和熄屏导航期间AOD代理产生的轨迹数据。 |
+| historyRoutes | [HistoryRoute](#historyroute)[] | 否 | 否 | 历史轨迹点列表。 **说明**：设备亮屏期间应用产生的轨迹数据和熄屏导航期间AOD代理产生的轨迹数据。数组长度最大限制为50000。 |
 | aodNaviData | [AodNaviData](#aodnavidata) | 否 | 否 | 导航数据。 **说明**：设备亮屏期间应用产生的导航数据（里程、步数等）和熄屏导航期间AOD代理产生的导航数据。 |
 | historyClimbInfo | [AltitudeClimbInfo](#altitudeclimbinfo)[] | 否 | 是 | 历史爬升信息。 **说明**：设备亮屏期间应用产生的海拔爬升数据和熄屏导航期间AOD代理产生的海拔爬升数据。 |
 
@@ -750,7 +750,7 @@ hilog.info(0x0000, 'aodnavigationSample', 'Succeeded in unsubscribing from altit
 
 #### PlanRoute
 
-规划路线信息，包括经度和纬度。
+规划路线信息，包括经度和纬度。采用GCJ02坐标系标准。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -765,7 +765,7 @@ hilog.info(0x0000, 'aodnavigationSample', 'Succeeded in unsubscribing from altit
 
 #### HistoryRoute
 
-历史轨迹信息。
+历史轨迹信息。采用GCJ02坐标系标准。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -775,7 +775,7 @@ hilog.info(0x0000, 'aodnavigationSample', 'Succeeded in unsubscribing from altit
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| timestamp | number | 否 | 否 | 时间戳。单位：秒。 |
+| timestamp | number | 否 | 否 | 时间戳。单位：毫秒。 |
 | longitude | number | 否 | 否 | 经度。 |
 | latitude | number | 否 | 否 | 纬度。 |
 | altitude | number | 否 | 是 | 海拔。单位：米。值应为整数。 |
@@ -783,7 +783,7 @@ hilog.info(0x0000, 'aodnavigationSample', 'Succeeded in unsubscribing from altit
 
 #### MarkPoint
 
-标记点信息。
+标记点信息。采用GCJ02坐标系标准。
 
 模型约束： 此接口仅可在Stage模型下使用。
 

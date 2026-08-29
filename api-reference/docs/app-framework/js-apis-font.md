@@ -2,13 +2,13 @@
 title: "@ohos.font (注册自定义字体)"
 upstream_id: "harmonyos-references/js-apis-font"
 catalog: "harmonyos-references"
-content_hash: "f1ce5b114d42"
-synced_at: "2026-07-09T17:23:21.903664"
+content_hash: "c938cf2ade61"
+synced_at: "2026-08-29T18:12:31.589760"
 ---
 
 # @ohos.font (注册自定义字体)
 
-本模块提供注册自定义字体。
+本模块提供注册自定义字体、获取系统字体列表、获取字体详细信息以及获取系统字体配置等能力，适用于应用需要使用自定义字体样式（如品牌字体、图标字体）或获取系统字体信息的场景。通过使用本模块，开发者可以实现品牌字体统一、提升用户界面美观度和一致性，满足多样化的设计需求。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -55,8 +55,8 @@ registerFont(options: FontOptions): void
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| familyName | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource)10+ | 否 | 否 | 设置注册的字体名称。 |
-| familySrc | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource)10+ | 否 | 否 | 设置注册字体文件的路径。 **说明：** 读取系统沙箱路径内的资源时，建议使用file://路径前缀的字符串，需要确保沙箱目录路径下的文件存在并且有可读权限。 |
+| familyName | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource)10+ | 否 | 否 | 设置注册的字体名称。建议使用字母、数字和下划线组成。 |
+| familySrc | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource)10+ | 否 | 否 | 设置注册字体文件的路径。支持Resource资源引用、$rawfile路径、相对路径和绝对路径。 **说明：** 读取系统沙箱路径内的资源时，建议使用file://路径前缀的字符串，需要确保沙箱目录路径下的文件存在并且有可读权限。 |
 
 ![](./img/note_3.0-zh-cn.png) 直接使用font可能导致[UI上下文不明确](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-global-interface#ui上下文不明确)的问题，推荐通过使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getFont](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getfont)方法获取当前UI上下文关联的[Font](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-font)对象。
 
@@ -80,25 +80,25 @@ struct FontExample {
       // 'app.string.font_name'和'app.string.font_src'仅作示例，请替换为实际使用资源字符串
       familyName: $r('app.string.font_name'),
       familySrc: $r('app.string.font_src')
-    })
+    });
 
     // familySrc支持RawFile
     this.uiContext.getFont().registerFont({
       familyName: 'mediumRawFile',
-      familySrc: $rawfile('font/medium.ttf')// 'font/medium.ttf'仅作示例，请替换为实际使用资源字体文件
-    })
+      familySrc: $rawfile('font/medium.ttf') // 'font/medium.ttf'仅作示例，请替换为实际使用资源字体文件
+    });
 
     // 注册iconFont
     this.uiContext.getFont().registerFont({
       familyName: 'iconFont',
       familySrc: '/font/iconFont.ttf'
-    })
+    });
 
     // familyName和familySrc都支持string
     this.uiContext.getFont().registerFont({
       familyName: 'medium',
       familySrc: '/font/medium.ttf' // font文件夹与pages目录同级
-    })
+    });
   }
 
   build() {
@@ -205,7 +205,7 @@ getFontByName(fontName: string): FontInfo
 
 | 类型 | 说明 |
 | --- | --- |
-| FontInfo | 字体的详细信息。 |
+| FontInfo | 字体的详细信息，包含路径、名称、字重、宽度、是否倾斜等属性。 |
 
 #### FontInfo10+
 
@@ -224,7 +224,7 @@ getFontByName(fontName: string): FontInfo
 | fullName | string | 否 | 否 | 系统字体的名称。 |
 | family | string | 否 | 否 | 系统字体的字体家族。 |
 | subfamily | string | 否 | 否 | 系统字体的子字体家族。 |
-| weight | number | 否 | 否 | 系统字体的字重。 取值范围：[100,900]，取值间隔为100，分别对应[FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-text#fontweight)枚举中的值。 默认值：100 |
+| weight | number | 否 | 否 | 系统字体的字重。 取值范围：[100,900]，取值间隔为100，分别对应[FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-text#fontweight)枚举中的值。 |
 | width | number | 否 | 否 | 系统字体的宽度。 取值范围：[1,9]，取值间隔为1，分别对应[FontWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-text#fontwidth)枚举中的值。 |
 | italic | boolean | 否 | 否 | 系统字体是否倾斜。 默认值：false 值为true，表示斜体字体，值为false，表示非斜体字体。 |
 | monoSpace | boolean | 否 | 否 | 系统字体是否等宽。 默认值：false 值为true，表示等宽字体，值为false，表示非等宽字体。 |
@@ -236,30 +236,27 @@ getFontByName(fontName: string): FontInfo
 
 ```
 // xxx.ets
-import { font } from '@kit.ArkUI';
-
 @Entry
 @Component
 struct FontExample {
-  uiFont = this.getUIContext().getFont();
-  fontInfo: font.FontInfo = this.uiFont.getFontByName(''); // 建议使用 this.getUIContext().getFont().getFontByName()接口
+  private fontInfo = this.getUIContext().getFont().getFontByName('');
 
   build() {
     Column() {
-      Button("getFontByName")
+      Button('getFontByName')
         .onClick(() => {
           this.fontInfo =
-            this.uiFont.getFontByName('HarmonyOS Sans Italic');
-          console.info("getFontByName(): path = " + this.fontInfo.path);
-          console.info("getFontByName(): postScriptName = " + this.fontInfo.postScriptName);
-          console.info("getFontByName(): fullName = " + this.fontInfo.fullName);
-          console.info("getFontByName(): family = " + this.fontInfo.family);
-          console.info("getFontByName(): subfamily = " + this.fontInfo.subfamily);
-          console.info("getFontByName(): weight = " + this.fontInfo.weight);
-          console.info("getFontByName(): width = " + this.fontInfo.width);
-          console.info("getFontByName(): italic = " + this.fontInfo.italic);
-          console.info("getFontByName(): monoSpace = " + this.fontInfo.monoSpace);
-          console.info("getFontByName(): symbolic = " + this.fontInfo.symbolic);
+            this.getUIContext().getFont().getFontByName('HarmonyOS Sans Italic');
+          console.info('getFontByName(): path = ' + this.fontInfo.path);
+          console.info('getFontByName(): postScriptName = ' + this.fontInfo.postScriptName);
+          console.info('getFontByName(): fullName = ' + this.fontInfo.fullName);
+          console.info('getFontByName(): family = ' + this.fontInfo.family);
+          console.info('getFontByName(): subfamily = ' + this.fontInfo.subfamily);
+          console.info('getFontByName(): weight = ' + this.fontInfo.weight);
+          console.info('getFontByName(): width = ' + this.fontInfo.width);
+          console.info('getFontByName(): italic = ' + this.fontInfo.italic);
+          console.info('getFontByName(): monoSpace = ' + this.fontInfo.monoSpace);
+          console.info('getFontByName(): symbolic = ' + this.fontInfo.symbolic);
         })
     }.width('100%')
   }
@@ -270,9 +267,11 @@ struct FontExample {
 
 getUIFontConfig() : UIFontConfig
 
-获取系统字体配置文件的UI字体配置信息。
+获取系统字体配置文件的UI字体配置信息。常用于需要分析或查看系统字体配置的场景，例如：字体管理工具、字体调试与诊断、字体配置信息展示等。
 
-该接口仅支持获取配置文件内的信息以及当UI上下文不明确时可能返回undefined，如果想要获取全量的字体配置信息，推荐使用字体引擎的[getSystemFontFullNamesByType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-text#textgetsystemfontfullnamesbytype14)接口。
+该接口仅支持获取配置文件内的信息以及当UI上下文不明确时可能返回undefined，如需获取全量的字体配置信息，推荐使用字体引擎的[getSystemFontFullNamesByType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-text#textgetsystemfontfullnamesbytype14)接口获取系统最新支持的字体列表数据。
+
+![](./img/note_3.0-zh-cn.png) 需要先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getFont](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getfont)方法获取[Font](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-font)对象，然后通过该对象进行调用。且直接使用getUIFontConfig可能导致[UI上下文不明确](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-global-interface#ui上下文不明确)的问题。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -284,7 +283,7 @@ getUIFontConfig() : UIFontConfig
 
 | 类型 | 说明 |
 | --- | --- |
-| [UIFontConfig](#uifontconfig11) | 系统的UI字体配置信息。 |
+| [UIFontConfig](#uifontconfig11) | 系统的UI字体配置信息，包含字体目录、通用字体集、备用字体集等。 |
 
 #### UIFontConfig11+
 
@@ -298,9 +297,9 @@ getUIFontConfig() : UIFontConfig
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| fontDir | Array | 否 | 否 | 系统字体文件所在的路径。 |
+| fontDir | Array | 否 | 否 | 系统字体文件所在的路径列表，数组元素为系统绝对路径。 |
 | generic | Array | 否 | 否 | 系统所支持的通用字体集列表。 |
-| fallbackGroups | Array | 否 | 否 | 备用字体集。 |
+| fallbackGroups | Array | 否 | 否 | 系统备用字体集列表，用于指定当主字体不支持某些字符时使用的备用字体。 |
 
 #### UIFontGenericInfo11+
 
@@ -315,8 +314,8 @@ getUIFontConfig() : UIFontConfig
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | family | string | 否 | 否 | 字体集名，字体文件中指定的"family"值。 |
-| alias | Array | 否 | 否 | 别名列表。 |
-| adjust | Array | 否 | 否 | 字体原本的weight值对应需显示的值。 |
+| alias | Array | 否 | 否 | 字体集的别名列表，用于提供字体的替代名称。 |
+| adjust | Array | 否 | 否 | 字体weight值映射列表，将字体原本的weight值映射为实际显示的weight值。 |
 
 #### UIFontFallbackGroupInfo11+
 
@@ -330,7 +329,7 @@ getUIFontConfig() : UIFontConfig
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| fontSetName | string | 否 | 否 | 备用字体集所对应的字体集名称。 |
+| fontSetName | string | 否 | 否 | 备用字体集所对应的字体集名称。如果fontSetName为""，表示备用字体集可用于所有字体集。 |
 | fallback | Array | 否 | 否 | 表示以下列表为该字体集的备用字体，如果fontSetName为""，表示可以作为所有字体集的备用字体。 |
 
 #### UIFontAliasInfo11+
@@ -375,7 +374,7 @@ getUIFontConfig() : UIFontConfig
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| language | string | 否 | 否 | 字体集所支持的语言类型，语言格式为bcp47。 |
+| language | string | 否 | 否 | 字体集所支持的语言类型，语言格式为BCP47标签（如"zh-Hans"表示简体中文，"en"表示英语）。 |
 | family | string | 否 | 否 | 字体集名，字体文件中指定的"family"值。 |
 
 示例：
@@ -389,31 +388,31 @@ import { font } from '@kit.ArkUI';
 struct FontExample {
   build() {
     Column() {
-      Button("getUIFontConfig")
+      Button('getUIFontConfig')
         .width('60%')
         .height('6%')
         .margin(50)
         .onClick(() => {
           let fontConfig = font.getUIFontConfig();
-          console.info("font-dir -----------" + String(fontConfig.fontDir.length));
+          console.info('font-dir -----------' + String(fontConfig.fontDir.length));
           for (let i = 0; i < fontConfig.fontDir.length; i++) {
             console.info(fontConfig.fontDir[i]);
           }
-          console.info("generic-------------" + String(fontConfig.generic.length));
+          console.info('generic-------------' + String(fontConfig.generic.length));
           for (let i = 0; i < fontConfig.generic.length; i++) {
-            console.info("family:" + fontConfig.generic[i].family);
+            console.info('family:' + fontConfig.generic[i].family);
             for (let j = 0; j < fontConfig.generic[i].alias.length; j++) {
-              console.info(fontConfig.generic[i].alias[j].name + " " + fontConfig.generic[i].alias[j].weight);
+              console.info(fontConfig.generic[i].alias[j].name + ' ' + fontConfig.generic[i].alias[j].weight);
             }
             for (let j = 0; j < fontConfig.generic[i].adjust.length; j++) {
-              console.info(fontConfig.generic[i].adjust[j].weight + " " + fontConfig.generic[i].adjust[j].to);
+              console.info(fontConfig.generic[i].adjust[j].weight + ' ' + fontConfig.generic[i].adjust[j].to);
             }
           }
-          console.info("fallback------------" + String(fontConfig.fallbackGroups.length));
+          console.info('fallbackGroups------------' + String(fontConfig.fallbackGroups.length));
           for (let i = 0; i < fontConfig.fallbackGroups.length; i++) {
-            console.info("fontSetName:" + fontConfig.fallbackGroups[i].fontSetName);
+            console.info('fontSetName:' + fontConfig.fallbackGroups[i].fontSetName);
             for (let j = 0; j < fontConfig.fallbackGroups[i].fallback.length; j++) {
-              console.info("language:" + fontConfig.fallbackGroups[i].fallback[j].language + " family:" +
+              console.info('language:' + fontConfig.fallbackGroups[i].fallback[j].language + ' family:' +
               fontConfig.fallbackGroups[i].fallback[j].family);
             }
           }

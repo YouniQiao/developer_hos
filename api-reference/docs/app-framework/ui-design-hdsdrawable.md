@@ -1,12 +1,12 @@
 ---
-title: "hdsDrawable"
+title: "hdsDrawable (图标处理)"
 upstream_id: "harmonyos-references/ui-design-hdsdrawable"
 catalog: "harmonyos-references"
-content_hash: "e3a07eb468da"
-synced_at: "2026-07-28T16:50:13.836915"
+content_hash: "6a1112a3de45"
+synced_at: "2026-08-29T18:16:18.278632"
 ---
 
-# hdsDrawable
+# hdsDrawable (图标处理)
 
 本模块提供图标处理能力，包括对前后景合成、剪切、缩放、描边处理，支持分层图标和单层图标处理。
 
@@ -62,7 +62,7 @@ LayeredDrawableDescriptor对象：判断的方法是打开对应的Symbol json�
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. The value of bundleName is incorrect. Parameter error. The value of layeredDrawableDescriptor is incorrect. Parameter error. The value of size is incorrect. Parameter error. The value of hasBorder is incorrect. Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. |
 
 示例：
 
@@ -89,7 +89,7 @@ try {
   console.error(`getHdsLayeredIcon failed, code: ${code}, message: ${message}`);
 }
 ```
- ![](./img/zh-cn_image_0000002685929025.png)
+ ![](./img/zh-cn_image_0000002701800476.png)
 
 #### hdsDrawable.getHdsLayeredIconAsync
 
@@ -126,7 +126,7 @@ getHdsLayeredIconAsync(bundleName: string, layeredDrawableDescriptor: LayeredDra
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. The value of bundleName is incorrect. Parameter error. The value of layeredDrawableDescriptor is incorrect. Parameter error. The value of size is incorrect. Parameter error. The value of hasBorder is incorrect. Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. |
 
 示例：
 
@@ -153,7 +153,7 @@ hdsDrawable.getHdsLayeredIconAsync(bundleName, layeredDrawableDescriptor, 48, tr
     console.error(`Failed to get processed icon, code: ${err.code}, msg: ${err.message}`);
   });
 ```
- ![](./img/zh-cn_image_0000002685929025.png)
+ ![](./img/zh-cn_image_0000002701800476.png)
 
 #### hdsDrawable.getHdsIcon
 
@@ -191,7 +191,7 @@ getHdsIcon(bundleName: string, pixelMap: image.PixelMap, size: number, mask: ima
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. The value of bundleName is incorrect. Parameter error. The value of pixelMap is incorrect. Parameter error. The value of size is incorrect. Parameter error. The value of mask is incorrect. Parameter error. The value of hasBorder is incorrect. Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. |
 
 示例：
 
@@ -224,7 +224,7 @@ try {
   console.error(`getHdsIcon failed, code: ${code}, message: ${message}`);
 }
 ```
- ![](./img/zh-cn_image_0000002656009350.png)
+ ![](./img/zh-cn_image_0000002731519763.png)
 
 #### hdsDrawable.getHdsIconAsync
 
@@ -262,7 +262,7 @@ getHdsIconAsync(bundleName: string, pixelMap: image.PixelMap, size: number, mask
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. The value of bundleName is incorrect. Parameter error. The value of pixelMap is incorrect. Parameter error. The value of size is incorrect. Parameter error. The value of mask is incorrect. Parameter error. The value of hasBorder is incorrect. Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. |
 
 示例：
 
@@ -298,7 +298,7 @@ try {
   console.error(`getHdsIconAsync failed, code: ${code}, message: ${message}`);
 }
 ```
- ![](./img/zh-cn_image_0000002656009350.png)
+ ![](./img/zh-cn_image_0000002731519763.png)
 
 #### hdsDrawable.getHdsLayeredIcons
 
@@ -333,7 +333,7 @@ getHdsLayeredIcons(icons: Array<LayeredIcon>, options: Options): Promise<Array<P
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. The value of icons is incorrect. Parameter error. The value of size is incorrect. Parameter error. The value of hasBorder is incorrect. Parameter error. The value of parallelNumber is incorrect. |
+| 401 | Parameter error. |
 | 1012600001 | Task is busy. |
 
 示例：
@@ -380,7 +380,7 @@ try {
   console.error(`getHdsLayeredIcons failed, code: ${code}, message: ${message}`);
 }
 ```
- ![](./img/zh-cn_image_0000002685929025.png)
+ ![](./img/zh-cn_image_0000002701800476.png)
 
 #### hdsDrawable.getHdsIcons
 
@@ -416,7 +416,7 @@ getHdsIcons(icons: Array<Icon>, mask: image.PixelMap, options: Options): Promise
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. The value of icons is incorrect. Parameter error. The value of mask is incorrect. Parameter error. The value of size is incorrect. Parameter error. The value of hasBorder is incorrect. Parameter error. The value of parallelNumber is incorrect. |
+| 401 | Parameter error. |
 | 1012600001 | Task is busy. |
 
 示例：
@@ -466,7 +466,7 @@ try {
   console.error(`getHdsIcons failed, code: ${code}, message: ${message}`);
 }
 ```
- ![](./img/zh-cn_image_0000002656009350.png)
+ ![](./img/zh-cn_image_0000002731519763.png)
 
 #### LayeredIcon
 

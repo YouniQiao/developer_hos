@@ -2,8 +2,8 @@
 title: "Class (WebviewController)"
 upstream_id: "harmonyos-references/arkts-apis-webview-webviewcontroller"
 catalog: "harmonyos-references"
-content_hash: "15cecdeb27eb"
-synced_at: "2026-08-14T15:53:53.897727"
+content_hash: "ba2b9b319bdd"
+synced_at: "2026-08-29T18:15:58.981185"
 ---
 
 # Class (WebviewController)
@@ -68,7 +68,7 @@ class WebObj {
 @Entry
 @Component
 struct WebComponent {
-  controller: webview.WebviewController = new webview.WebviewController()
+  controller: webview.WebviewController = new webview.WebviewController();
   @State webTestObj: WebObj = new WebObj();
 
   build() {
@@ -364,7 +364,7 @@ struct WebComponent {
   }
 }
 ```
- 2.resources协议。
+ 2.resource协议。
 
 使用 resource://rawfile/ 协议前缀可以避免常规 $rawfile 方式在处理带有“#”路由链接时URL会被“#”截断的问题。当URL中包含“#”号时，“#”后面的内容会被视为锚点（fragment）。
 
@@ -1638,7 +1638,7 @@ struct WebComponent {
           try {
             let uiContext : UIContext = this.getUIContext();
             let context : Context | undefined = uiContext.getHostContext() as common.UIAbilityContext;
-            let filePath = context!.filesDir + 'test.txt';
+            let filePath = context!.filesDir + '/test.txt';
             // 新建并打开文件。
             let file = fileIo.openSync(filePath, fileIo.OpenMode.READ_WRITE | fileIo.OpenMode.CREATE);
             // 写入一段内容至文件。
@@ -1859,7 +1859,7 @@ struct WebComponent {
           try {
             let uiContext : UIContext = this.getUIContext();
             let context : Context | undefined = uiContext.getHostContext() as common.UIAbilityContext;
-            let filePath = context!.filesDir + 'test.txt';
+            let filePath = context!.filesDir + '/test.txt';
             // 新建并打开文件。
             let file = fileIo.openSync(filePath, fileIo.OpenMode.READ_WRITE | fileIo.OpenMode.CREATE);
             // 写入一段内容至文件。
@@ -3391,7 +3391,7 @@ scrollByWithResult(deltaX: number, deltaY: number): boolean
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | true表示当前网页可以滑动，false表示当前网页不可以滑动。 默认为false。 |
+| boolean | true表示当前网页可以滑动，false表示当前网页不可以滑动。 |
 
 错误码：
 
@@ -4757,7 +4757,7 @@ struct Index {
 
 setAudioMuted(mute: boolean): void
 
-设置网页静音。
+设置网页静音。典型使用场景包括：应用需要控制网页音量（如提供静音开关）、后台播放时需要静音等。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -4824,7 +4824,7 @@ prefetchPage(url: string, additionalHeaders?: Array<WebHeader>, prefetchOptions?
 | --- | --- | --- | --- |
 | url | string | 是 | 预加载的URL。 |
 | additionalHeaders | Array | 否 | URL的附加HTTP请求头。 默认值： [] |
-| prefetchOptions | [PrefetchOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-prefetchoptions) | 否 | 用来自定义预取行为的相关选项。 |
+| prefetchOptions | [PrefetchOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-prefetchoptions) | 否 | 用来自定义预取行为的相关选项。 两次预取间默认的最小时间间隔为500ms，默认不忽略响应头中的Cache-Control: no-store。 |
 
 错误码：
 
@@ -5428,7 +5428,7 @@ static setConnectionTimeout(timeout: number): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| timeout | number | 是 | socket连接超时时间，以秒为单位，必须为大于0的整数。 |
+| timeout | number | 是 | socket连接超时时间，单位：s，必须为大于0的整数。 |
 
 错误码：
 
@@ -6072,7 +6072,7 @@ struct WebComponent {
 
 static setRenderProcessMode(mode: RenderProcessMode): void
 
-设置ArkWeb渲染子进程模式。
+设置ArkWeb渲染子进程模式，可根据应用对内存占用与渲染进程隔离的需求选择对应的模式。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -6783,7 +6783,7 @@ struct Index {
 
 static pauseAllTimers(): void
 
-暂停所有WebView的定时器。
+暂停所有WebView的定时器，定时器暂停期间，网页中的setInterval、setTimeout等定时操作将被挂起。建议在应用进入后台等场景暂停，前台时恢复，以节省资源，可以与[resumeAllTimers](#resumealltimers12)()成对使用，避免定时器状态混乱。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -8563,7 +8563,7 @@ struct WebComponent {
 
 setPathAllowingUniversalAccess(pathList: Array<string>): void
 
-设置一个路径列表，当file协议访问该路径列表中的资源时，允许跨域访问本地文件，也允许跨域访问其他在线资源。此外，当设置了路径列表时，file协议仅允许访问路径列表中的资源（[fileAccess](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-attributes#fileaccess)的行为将会被此接口行为覆盖）。
+设置一个路径列表，当file协议访问该路径列表中的资源时，允许跨域访问本地文件，也允许跨域访问其他在线资源。此外，当设置了路径列表时，file协议仅允许访问路径列表中的资源。典型使用场景：用于需要允许Web组件跨域访问本地资源文件，同时限制访问范围以保证安全的场景。（[fileAccess](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-attributes#fileaccess)的行为将会被此接口行为覆盖）。
 
 setPathAllowingUniversalAccess放开目录的跨域访问限制是一个高风险操作。基于最小权限原则，当前el1，el2放开的路径是固定的，路径列表中的路径应符合以下任一路径格式：
 
@@ -9022,7 +9022,7 @@ getScrollOffset(): ScrollOffset
 
 | 类型 | 说明 |
 | --- | --- |
-| [ScrollOffset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-i#scrolloffset13) | 网页当前的滚动偏移量（包含过滚动偏移量）。 |
+| [ScrollOffset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-i#scrolloffset13) | 网页当前的滚动偏移量（包含过滚动偏移量），包含x和y坐标，单位为vp。 |
 
 示例：
 
@@ -9115,7 +9115,7 @@ getPageOffset(): ScrollOffset
 
 | 类型 | 说明 |
 | --- | --- |
-| [ScrollOffset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-i#scrolloffset13) | 网页当前的滚动偏移量（不包含过滚动偏移量）。 |
+| [ScrollOffset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-i#scrolloffset13) | 网页当前的滚动偏移量（不包含过滚动偏移量），包含x和y坐标，单位为vp。 |
 
 错误码：
 
@@ -9250,7 +9250,7 @@ getAttachState(): ControllerAttachState
 
 | 类型 | 说明 |
 | --- | --- |
-| [ControllerAttachState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-i#controllerattachstate20) | WebViewController与Web组件的绑定状态。 |
+| [ControllerAttachState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-e#controllerattachstate20) | WebViewController与Web组件的绑定状态。 |
 
 示例：
 
@@ -9379,7 +9379,7 @@ struct WebComponent {
 
 waitForAttached(timeout: number):Promise<ControllerAttachState>
 
-异步等待WebViewController与Web组件绑定完成，绑定完成或超时触发回调，通过Promise方式返回当前[ControllerAttachState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-i#controllerattachstate20)状态。
+异步等待WebViewController与Web组件绑定完成，绑定完成或超时触发回调，通过Promise方式返回当前[ControllerAttachState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-e#controllerattachstate20)状态。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -9393,7 +9393,7 @@ waitForAttached(timeout: number):Promise<ControllerAttachState>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise实例，返回当前[ControllerAttachState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-i#controllerattachstate20)状态。 |
+| Promise | Promise实例，返回当前[ControllerAttachState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-e#controllerattachstate20)状态。 |
 
 示例：
 
@@ -10327,7 +10327,7 @@ Scroll Test
 
 static setActiveWebEngineVersion(engineVersion: ArkWebEngineVersion): void
 
-设置ArkWeb内核版本。若系统不支持指定版本，则设置无效，使用系统默认内核（可参考[约束与限制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-component-overview#约束与限制)）。该接口为全局静态API，须在调用initializeWebEngine前执行，若已加载任何Web组件，则该设置无效。
+设置ArkWeb内核版本。若系统不支持指定版本，则设置无效，使用系统默认内核（可参考[约束与限制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-component-overview#约束与限制)）。该接口为全局静态API，须在调用initializeWebEngine前执行，若已加载任何Web组件，则该设置无效。典型使用场景：使用特定内核版本的特性或兼容性需求时，可切换到对应内核版本。
 
 遗留内核适配：
 
@@ -10427,7 +10427,7 @@ static setAutoPreconnect(enabled: boolean): void
 
 设置Web内核的自动预连接状态。若未设置，默认启用自动预连接。
 
-需要在[initializeWebEngine()](#initializewebengine)初始化内核或者创建Web组件之前调用。
+需要在[initializeWebEngine()](#initializewebengine)初始化内核或者创建Web组件之前调用。若已加载任何Web组件，则该设置无效。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -10536,7 +10536,7 @@ struct WebComponent {
 
 setSiteIsolationMode(mode: SiteIsolationMode): void
 
-设置站点隔离模式。站点隔离机制将不同源的网站隔离在不同的Render进程中，减少跨域攻击面。例如：PC等设备上，在未启用站点隔离模式时，原有进程模型是每一个Tab对应一个Render进程，开启站点隔离后，一个Tab下不同源的Iframe可在独立的Render进程中运行。
+设置站点隔离模式。站点隔离机制将不同源的网站隔离在不同的渲染进程中，减少跨域攻击面。例如：PC等设备上，在未启用站点隔离模式时，原有进程模型是每一个Tab对应一个渲染进程，开启站点隔离后，一个Tab下不同源的Iframe可在独立的渲染进程中运行。
 
 对于仅加载可信网页的第三方应用，可以关闭此功能，以提升性能并减少内存占用，同时减少跨域访问的拦截。默认值根据不同的设备而定，PC/Table采用严格站点隔离[SiteIsolationMode.STRICT](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-e#siteisolationmode21)，Phone默认部分站点隔离[SiteIsolationMode.PARTIAL](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-e#siteisolationmode21)。[坚盾守护模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-secure-shield-mode)下采用严格站点隔离。
 
@@ -10623,7 +10623,7 @@ export default class EntryAbility extends UIAbility {
 
 setSoftKeyboardBehaviorMode(mode: WebSoftKeyboardBehaviorMode): void
 
-设置软键盘自动控制模式，当接口没有显式调用时，Web组件失去焦点或获得焦点、状态切换为inactive或active时，系统均会尝试触发软键盘自动隐藏或拉起。
+设置软键盘自动控制模式，当接口没有显式调用时，Web组件失去焦点或获得焦点、状态切换为inactive或active时，系统均会尝试触发软键盘自动隐藏或拉起。典型使用场景：不希望Web组件在inactive或active状态切换时自动隐藏或重新拉起软键盘时，可使用DISABLE_AUTO_KEYBOARD_ON_ACTIVE；需要保留默认自动管理行为时，可使用DEFAULT。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -10699,6 +10699,10 @@ struct WebComponent {
   aboutToAppear(): void {
     let context: Context | undefined = this.uiContext.getHostContext() as common.UIAbilityContext;
     atManager.requestPermissionsFromUser(context, ['ohos.permission.MICROPHONE'], (err: BusinessError, data: PermissionRequestResult) => {
+      if (err) {
+        console.error(`ErrorCode: ${err.code}, Message: ${err.message}`);
+        return;
+      }
       console.info('data:' + JSON.stringify(data));
       console.info('data permissions:' + data.permissions);
       console.info('data authResults:' + data.authResults);
@@ -10798,6 +10802,10 @@ struct WebComponent {
 pauseMicrophone(): void
 
 暂停当前网页麦克风捕获。
+
+![](./img/note_3.0-zh-cn.png) 与resumeMicrophone和stopMicrophone的区别：
+
+pauseMicrophone仅暂停麦克风捕获，可通过resumeMicrophone恢复；stopMicrophone会停止捕获并释放资源。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -11117,7 +11125,7 @@ struct WebComponent {
 
 static enableAdvancedSecurityMode(securityParams: SecurityParams): void
 
-通过配置安全特性选项禁用特定的Web引擎能力，以降低攻击面。
+通过配置安全特性选项禁用特定的Web引擎能力，以降低攻击面。典型使用场景包括：高安全要求的应用（如金融、政务类应用）应启用高级安全模式以禁用不必要的Web引擎能力。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -11194,7 +11202,7 @@ executeAIPageCommand(command: string): Promise<string>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，返回JSON格式的命令执行结果。不同命令的返回格式不同。执行失败或无返回值时，返回空字符串。 |
+| Promise | Promise对象，执行成功时返回JSON格式的命令执行结果，执行失败或无返回值时返回空字符串。 |
 
 错误码：
 
@@ -11239,3 +11247,116 @@ struct WebComponent {
   }
 }
 ```
+
+#### setErrorPageEnabled
+
+setErrorPageEnabled(enable: boolean, includeSubframe: boolean): void
+
+设置是否启用mainframe错误页功能，并可控制是否同时启用subframe错误页功能。
+
+当enable设置为true时，mainframe加载发生错误将展示错误页：若设置了[onOverrideErrorPage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#onoverrideerrorpage20)回调，则展示用户自定义的错误页；若未设置，则展示ArkWeb提供的默认错误页。当enable和includeSubframe同时设置为true时，subframe加载发生错误也会展示错误页，onOverrideErrorPage回调对subframe同样生效。
+
+![](./img/note_3.0-zh-cn.png)
+
+- 当enable设置为false时，无论includeSubframe取何值，mainframe和subframe的错误页功能均不启用。
+- 当includeSubframe设置为false时，本接口行为与[setErrorPageEnabled](#seterrorpageenabled20)20+一致，即仅启用mainframe错误页功能，不启用subframe错误页功能。
+- 可通过[errorPageEvent.request.isMainFrame()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-webresourcerequest#ismainframe)判断错误来源是mainframe还是subframe，以便在onOverrideErrorPage回调中分别设置对应的自定义错误页。
+
+起始版本： 26.0.0
+
+系统能力： SystemCapability.Web.Webview.Core
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| enable | boolean | 是 | 表示是否启用mainframe错误页功能。true表示启用，false表示不启用。启用后mainframe加载出错将展示错误页。 |
+| includeSubframe | boolean | 是 | 表示是否同时启用subframe错误页功能。true表示启用，false表示不启用。启用后subframe加载出错也将展示错误页。仅在enable为true时有效。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[Webview错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-webview)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 17100001 | Init error. The WebviewController must be associated with a Web component. |
+
+示例：
+
+```
+// xxx.ets
+import { webview } from '@kit.ArkWeb';
+
+@Entry
+@Component
+struct WebComponent {
+  controller: webview.WebviewController = new webview.WebviewController();
+
+  build() {
+    Column() {
+      Web({ src: $rawfile("iframe_error.html"), controller: this.controller })
+        .onControllerAttached(() => {
+          // 启用mainframe和subframe错误页功能
+          this.controller.setErrorPageEnabled(true, true);
+          // 查询subframe错误页功能是否已启用
+          let isSubframeEnabled: boolean = this.controller.getSubframeErrorPageEnabled();
+          console.info("Subframe error page enabled: " + isSubframeEnabled);
+        })
+        .onOverrideErrorPage((event) => {
+          if (event.request.isMainFrame()) {
+            return "<html><body><h1>主页面加载失败</h1><p>错误码：" + event.error.getErrorCode() + "</p></body></html>";
+          }
+          return "<html><body><h1>子页面加载失败</h1><p>错误码：" + event.error.getErrorCode() + "</p></body></html>";
+        })
+    }
+  }
+}
+```
+ 
+```
+<!-- resources/rawfile/iframe_error.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iframe</title>
+</head>
+<body>
+<iframe src="https://error-test.com/" title="iframe_error.html" loading="lazy" referrerpolicy="no-referrer" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+</body>
+</html>
+```
+ ![](./img/note_3.0-zh-cn.png)
+
+#### getSubframeErrorPageEnabled
+
+getSubframeErrorPageEnabled(): boolean
+
+查询是否启用了subframe错误页功能。
+
+起始版本： 26.0.0
+
+系统能力： SystemCapability.Web.Webview.Core
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| boolean | 返回是否启用subframe错误页功能。 - true：已启用subframe错误页功能（即enable和includeSubframe均为true）； - false：未启用subframe错误页功能（包括未启用错误页功能、或启用了错误页功能但未启用subframe错误页功能两种情况）。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[Webview错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-webview)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 17100001 | Init error. The WebviewController must be associated with a Web component. |
+
+示例：
+
+完整示例代码参考[setErrorPageEnabled](#seterrorpageenabled)。

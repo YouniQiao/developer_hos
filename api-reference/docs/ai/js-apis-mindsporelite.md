@@ -2,8 +2,8 @@
 title: "@ohos.ai.mindSporeLite (端侧AI框架)"
 upstream_id: "harmonyos-references/js-apis-mindsporelite"
 catalog: "harmonyos-references"
-content_hash: "c3f16253a3fa"
-synced_at: "2026-07-28T16:53:13.917645"
+content_hash: "cef8d50a36ac"
+synced_at: "2026-08-29T18:18:41.112134"
 ---
 
 # @ohos.ai.mindSporeLite (端侧AI框架)
@@ -783,7 +783,7 @@ cfg.optimizationLevel = mindSporeLite.OptimizationLevel.O0;
 | --- | --- | --- |
 | O0 | 0 | 无优化等级。 |
 | O2 | 2 | 将网络转换为Float16，保持批量归一化层和损失函数为Float32。 |
-| O3 | 3 | 将网络转换为float16，包括批量归一化层。 |
+| O3 | 3 | 将网络转换为Float16，包括批量归一化层。 |
 | AUTO | 4 | 根据设备选择优化等级。 |
 
 #### QuantizationType12+

@@ -2,8 +2,8 @@
 title: "轴事件"
 upstream_id: "harmonyos-references/ts-universal-events-axis"
 catalog: "harmonyos-references"
-content_hash: "a97651ab2f7a"
-synced_at: "2026-07-28T16:41:49.416372"
+content_hash: "18418705c625"
+synced_at: "2026-08-29T18:12:39.352963"
 ---
 
 # 轴事件
@@ -39,7 +39,7 @@ onAxisEvent(event: Callback<AxisEvent>): T
 
 #### AxisEvent
 
-轴事件的对象说明，继承于[BaseEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-customize-judge#baseevent8)。
+轴事件的对象说明，继承于[BaseEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-click#baseevent8)。
 
 元服务API： 从API version 17开始，该接口支持在元服务中使用。
 
@@ -110,7 +110,7 @@ getPinchAxisScaleValue(): number
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 双指缩放比例。 **说明：** 缩放比例指的是触控板双指缩放事件触发过程中双指当前的距离与双指最初按下时的距离的比值；当前轴事件不包含捏合轴时，取默认值0。 默认值：0 取值范围：[0, +∞) |
+| number | 双指缩放比例。 **说明：** 缩放比例指的是触控板双指缩放事件触发过程中双指当前的距离与双指最初按下时的距离的比值。 默认值：0 取值范围：[0, +∞) |
 
 #### [h2]hasAxis22+
 
@@ -158,7 +158,7 @@ getCurrentLocalPosition?(): Coordinate2D
 
 #### [h2]示例1（获取轴事件相关参数）
 
-该示例中，对按钮设置轴事件，通过滚动鼠标滚轮可获取轴事件的相关参数。从API version 21开始，该示例通过[axisPinch](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-customize-judge#属性)和[getPinchAxisScaleValue](#getpinchaxisscalevalue21)获取双指缩放比例；从API version 22开始，该示例通过[hasAxis](#hasaxis22)判断轴事件是否包含指定的轴类型。
+该示例中，对按钮设置轴事件，通过滚动鼠标滚轮可获取轴事件的相关参数。从API version 21开始，该示例通过[BaseEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-click#baseevent8)的axisPinch属性和[getPinchAxisScaleValue](#getpinchaxisscalevalue21)获取双指缩放比例；从API version 22开始，该示例通过[hasAxis](#hasaxis22)判断轴事件是否包含指定的轴类型。
 
 ```
 // xxx.ets
@@ -191,7 +191,7 @@ struct AxisEventExample {
 ```
  鼠标滚轮滚动时：
 
-![](./img/zh-cn_image_0000002655848320.png)
+![](./img/zh-cn_image_0000002701799366.png)
 
 #### [h2]示例2（获取组件实时位置）
 
@@ -209,7 +209,7 @@ struct GetCurrentLocalPositionExample {
 
   build() {
     Column() {
-      Button('获取鼠标光标位置相对于当前组件实时位置左上角的坐标').translate({ y: this.textOffsetY })
+      Button('获取滚轮位置相对于当前组件实时位置左上角的坐标').translate({ y: this.textOffsetY })
         .onAxisEvent((event?: AxisEvent) => {
           if (event) {
             // 先移动按钮位置，延迟后获取鼠标光标相对于组件实时位置左上角的坐标。
@@ -226,4 +226,4 @@ struct GetCurrentLocalPositionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008240.gif)
+ ![](./img/zh-cn_image_0000002731358675.gif)

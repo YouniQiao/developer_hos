@@ -2,8 +2,8 @@
 title: "OH_AbilityRuntime_AllModularObjectExtensionInfos*"
 upstream_id: "harmonyos-references/capi-abilityruntime-oh-abilityruntime-allmodularobjectextensioninfos8h"
 catalog: "harmonyos-references"
-content_hash: "388cb085641f"
-synced_at: "2026-07-09T00:57:13.849616"
+content_hash: "d51abd9f1874"
+synced_at: "2026-08-29T18:12:10.406700"
 ---
 
 # OH_AbilityRuntime_AllModularObjectExtensionInfos*
@@ -14,7 +14,7 @@ typedef struct OH_AbilityRuntime_AllModularObjectExtensionInfos* OH_AbilityRunti
 
 #### 概述
 
-表示当前应用内所有ModularObjectExtensionAbility信息的集合句柄。该句柄指向一个包含多个[OH_AbilityRuntime_ModObjExtensionInfoHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-modularobjectextensioninfo8h) 的集合，可通过[OH_AbilityRuntime_GetCountFromAllModObjExtensionInfos](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-extension-manager-h#oh_abilityruntime_getcountfromallmodobjextensioninfos) 获取集合中元素的数量，并通过[OH_AbilityRuntime_GetModObjExtensionInfoByIndex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-extension-manager-h#oh_abilityruntime_getmodobjextensioninfobyindex) 按索引遍历获取单个ModularObjectExtensionAbility信息。使用完毕后需通过[OH_AbilityRuntime_ReleaseAllExtensionInfos](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-extension-manager-h#oh_abilityruntime_releaseallextensioninfos) 释放该集合。
+表示当前应用内所有ModularObjectExtensionAbility信息的集合句柄。可通过[OH_AbilityRuntime_AcquireSelfModularObjectExtensionInfos](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-extension-manager-h#oh_abilityruntime_acquireselfmodularobjectextensioninfos)获取该句柄。该句柄指向一个包含多个[OH_AbilityRuntime_ModObjExtensionInfoHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-oh-abilityruntime-modularobjectextensioninfo8h) 的集合，可通过[OH_AbilityRuntime_GetCountFromAllModObjExtensionInfos](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-extension-manager-h#oh_abilityruntime_getcountfromallmodobjextensioninfos) 获取集合中元素的数量，并通过[OH_AbilityRuntime_GetModObjExtensionInfoByIndex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-extension-manager-h#oh_abilityruntime_getmodobjextensioninfobyindex) 按索引获取单个ModularObjectExtensionAbility信息。使用完毕后需通过[OH_AbilityRuntime_ReleaseAllExtensionInfos](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-modular-object-extension-manager-h#oh_abilityruntime_releaseallextensioninfos) 释放该集合。
 
 起始版本： 26.0.0
 

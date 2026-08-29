@@ -2,8 +2,8 @@
 title: "rcp（数据请求）"
 upstream_id: "harmonyos-references/remote-communication-rcp"
 catalog: "harmonyos-references"
-content_hash: "234c58a4f918"
-synced_at: "2026-07-28T16:50:50.977785"
+content_hash: "8ecfec33685e"
+synced_at: "2026-08-29T18:16:50.737359"
 ---
 
 # rcp（数据请求）
@@ -113,7 +113,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { rcp } from '@kit.RemoteCommunicationKit';
 
 const session = rcp.createSession();
-let req = new rcp.Request("http://example.com/fetch", "POST");
+let req = new rcp.Request('http://example.com/fetch', 'POST');
 session.fetch(req).then((response) => {
   console.info(`Succeeded in getting the response ${response}`);
 }).catch((err: BusinessError) => {
@@ -226,7 +226,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { rcp } from '@kit.RemoteCommunicationKit';
 
 const session = rcp.createSession();
-session.get("http://example.com/get").then((response) => {
+session.get('http://example.com/get').then((response) => {
   console.info(`Succeeded in getting the response ${response}`);
 }).catch((err: BusinessError) => {
   console.error(`err: error code is ${err.code}, error data is ${err.data}`);
@@ -272,7 +272,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { rcp } from '@kit.RemoteCommunicationKit';
 
 const session = rcp.createSession();
-session.post("http://example.com/post", "data to send").then((response) => {
+session.post('http://example.com/post', 'data to send').then((response) => {
   console.info(`Succeeded in getting the response ${response}`);
 }).catch((err: BusinessError) => {
   console.error(`err: error code is ${err.code}, error data is ${err.data}`);
@@ -318,7 +318,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { rcp } from '@kit.RemoteCommunicationKit';
 
 const session = rcp.createSession();
-session.put("http://example.com/put", "data to send").then((response) => {
+session.put('http://example.com/put', 'data to send').then((response) => {
   console.info(`Succeeded in getting the response ${response.toString()}`);
 }).catch((err: BusinessError) => {
   console.error(`err: error code is ${err.code}, error data is ${err.data}`);
@@ -364,10 +364,10 @@ import { rcp } from '@kit.RemoteCommunicationKit';
 
 let downloadToFile: rcp.DownloadToFile = {
   kind: 'folder',
-  path: "/path/dir" // 请根据自身业务选择合适的路径
+  path: '/path/dir' // 请根据自身业务选择合适的路径
 } as rcp.DownloadToFile
 const session = rcp.createSession();
-session.downloadToFile("http://www.example.com", downloadToFile).then((response) => {
+session.downloadToFile('http://www.example.com', downloadToFile).then((response) => {
   console.info(`Succeeded in getting the response ${response.toString()}`);
 }).catch((err: BusinessError) => {
   console.error(`DownloadToFile failed, the error code is ${err.code}, error data is ${err.data}`);
@@ -411,12 +411,12 @@ uploadFromFile(url: URLOrString, uploadFrom: UploadFromFile): Promise<Response>
 import { BusinessError } from '@kit.BasicServicesKit';
 import { rcp } from '@kit.RemoteCommunicationKit';
 
-let fileDir = "/path/dir/"; // 请根据自身业务定义此路径
+let fileDir = '/path/dir/'; // 请根据自身业务定义此路径
 let uploadFromFile: rcp.UploadFromFile = {
   fileOrPath: fileDir
 };
 const session = rcp.createSession();
-session.uploadFromFile("http://example.com/head", uploadFromFile).then((response) => {
+session.uploadFromFile('http://example.com/head', uploadFromFile).then((response) => {
   console.info(`Succeeded in getting the response ${response.toString()}`);
 }).catch((err: BusinessError) => {
   console.error(`err: error code is ${err.code}, error data is ${err.data}`);
@@ -458,7 +458,7 @@ downloadToStream(url: URLOrString, downloadTo: DownloadToStream): Promise<Respon
 
 ```
 import { rcp } from '@kit.RemoteCommunicationKit';
-import { BusinessError } from '@kit.BasicServicesKit'
+import { BusinessError } from '@kit.BasicServicesKit';
 
 const streamData: rcp.WriteStream = {
   write(buffer: ArrayBuffer): Promise<void | number> {
@@ -471,7 +471,7 @@ let downloadToStream: rcp.DownloadToStream = {
   stream: streamData
 }
 const session = rcp.createSession();
-session.downloadToStream("http://example.com/head", downloadToStream).then((response) => {
+session.downloadToStream('http://example.com/head', downloadToStream).then((response) => {
   console.info(`Succeeded in getting the response ${response}`);
 }).catch((err: BusinessError) => {
   console.error(`err: error code is ${err.code}, error data is ${err.data}`);
@@ -519,7 +519,7 @@ let uploadFromStream: rcp.UploadFromStream = {
   stream: object // 此处请自行定义类型为Stream、ReadStream、SyncReadStream的对象
 }
 const session = rcp.createSession();
-session.uploadFromStream("http://example.com/head", uploadFromStream).then((response) => {
+session.uploadFromStream('http://example.com/head', uploadFromStream).then((response) => {
   console.info(`Succeeded in getting the response ${response}`);
 }).catch((err: BusinessError) => {
   console.error(`err: error code is ${err.code}, error data is ${err.data}`);
@@ -563,7 +563,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { rcp } from '@kit.RemoteCommunicationKit';
 
 const session = rcp.createSession();
-session.head("http://example.com/head").then((response) => {
+session.head('http://example.com/head').then((response) => {
   console.info(`Succeeded in getting the response ${response}`);
 }).catch((err: BusinessError) => {
   console.error(`err: error code is ${err.code}, error data is ${err.data}`);
@@ -607,7 +607,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { rcp } from '@kit.RemoteCommunicationKit';
 
 const session = rcp.createSession();
-session.delete("http://example.com/delete").then((response) => {
+session.delete('http://example.com/delete').then((response) => {
   console.info(`Succeeded in getting the response ${response}`);
 }).catch((err: BusinessError) => {
   console.error(`err: error code is ${err.code}, error data is ${err.data}`);
@@ -647,7 +647,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { rcp } from '@kit.RemoteCommunicationKit';
 
 const session = rcp.createSession();
-let req = new rcp.Request("http://example.com/fetch", "GET");
+let req = new rcp.Request('http://example.com/fetch', 'GET');
 session.fetch(req).then((response) => {
   console.info(`Succeeded in getting the response ${response}`);
   session.cancel(req);
@@ -675,7 +675,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { rcp } from '@kit.RemoteCommunicationKit';
 
 const session = rcp.createSession();
-let req = new rcp.Request("http://example.com/fetch", "GET");
+let req = new rcp.Request('http://example.com/fetch', 'GET');
 session.fetch(req).then((response) => {
   console.info(`Succeeded in getting the response ${response}`);
   session.close();
@@ -758,7 +758,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { rcp } from '@kit.RemoteCommunicationKit';
 
 const defaultSession = rcp.getDefaultSession();
-let req = new rcp.Request("http://example.com/fetch", "POST");
+let req = new rcp.Request('http://example.com/fetch', 'POST');
 defaultSession.fetch(req).then((response) => {
   console.info(`Succeeded in getting the response ${response}`);
 }).catch((err: BusinessError) => {
@@ -871,7 +871,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { rcp } from '@kit.RemoteCommunicationKit';
 
 const defaultSession = rcp.getDefaultSession();
-defaultSession.get("http://example.com/get").then((response) => {
+defaultSession.get('http://example.com/get').then((response) => {
   console.info(`Succeeded in getting the response ${response}`);
 }).catch((err: BusinessError) => {
   console.error(`err: error code is ${err.code}, error data is ${err.data}`);
@@ -917,7 +917,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { rcp } from '@kit.RemoteCommunicationKit';
 
 const defaultSession = rcp.getDefaultSession();
-defaultSession.post("http://example.com/post", "data to send").then((response) => {
+defaultSession.post('http://example.com/post', 'data to send').then((response) => {
   console.info(`Succeeded in getting the response ${response}`);
 }).catch((err: BusinessError) => {
   console.error(`err: error code is ${err.code}, error data is ${err.data}`);
@@ -963,7 +963,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { rcp } from '@kit.RemoteCommunicationKit';
 
 const defaultSession = rcp.getDefaultSession();
-defaultSession.put("http://example.com/put", "data to send").then((response) => {
+defaultSession.put('http://example.com/put', 'data to send').then((response) => {
   console.info(`Succeeded in getting the response ${response}`);
 }).catch((err: BusinessError) => {
   console.error(`err: error code is ${err.code}, error data is ${err.data}`);
@@ -1009,10 +1009,10 @@ import { rcp } from '@kit.RemoteCommunicationKit';
 
 let downloadToFile: rcp.DownloadToFile = {
   kind: 'folder',
-  path: "/path/dir" // 请根据自身业务选择合适的路径
+  path: '/path/dir' // 请根据自身业务选择合适的路径
 } as rcp.DownloadToFile
 const defaultSession = rcp.getDefaultSession();
-defaultSession.downloadToFile("http://www.example.com", downloadToFile).then((response) => {
+defaultSession.downloadToFile('http://www.example.com', downloadToFile).then((response) => {
   console.info(`Succeeded in getting the response ${response}`);
 }).catch((err: BusinessError) => {
   console.error(`DownloadToFile failed, the error code is ${err.code}, error data is ${err.data}`);
@@ -1056,12 +1056,12 @@ uploadFromFile(url: URLOrString, uploadFrom: UploadFromFile): Promise<Response>
 import { BusinessError } from '@kit.BasicServicesKit';
 import { rcp } from '@kit.RemoteCommunicationKit';
 
-let fileDir = "/path/dir/"; // 请根据自身业务定义此路径
+let fileDir = '/path/dir/'; // 请根据自身业务定义此路径
 let uploadFromFile: rcp.UploadFromFile = {
   fileOrPath: fileDir
 };
 const defaultSession = rcp.getDefaultSession();
-defaultSession.uploadFromFile("http://example.com/head", uploadFromFile).then((response) => {
+defaultSession.uploadFromFile('http://example.com/head', uploadFromFile).then((response) => {
   console.info(`Succeeded in getting the response ${response}`);
 }).catch((err: BusinessError) => {
   console.error(`err: error code is ${err.code}, error data is ${err.data}`);
@@ -1116,7 +1116,7 @@ let downloadToStream: rcp.DownloadToStream = {
   stream: streamData
 }
 const defaultSession = rcp.getDefaultSession();
-defaultSession.downloadToStream("http://example.com/head", downloadToStream).then((response) => {
+defaultSession.downloadToStream('http://example.com/head', downloadToStream).then((response) => {
   console.info(`Succeeded in getting the response ${response}`);
 }).catch((err: BusinessError) => {
   console.error(`err: error code is ${err.code}, error data is ${err.data}`);
@@ -1164,7 +1164,7 @@ let uploadFromStream: rcp.UploadFromStream = {
   stream: object // 此处请自行定义类型为Stream、ReadStream、SyncReadStream的对象
 }
 const defaultSession = rcp.getDefaultSession();
-defaultSession.uploadFromStream("http://example.com/head", uploadFromStream).then((response) => {
+defaultSession.uploadFromStream('http://example.com/head', uploadFromStream).then((response) => {
   console.info(`Succeeded in getting the response ${response}`);
 }).catch((err: BusinessError) => {
   console.error(`err: error code is ${err.code}, error data is ${err.data}`);
@@ -1208,7 +1208,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { rcp } from '@kit.RemoteCommunicationKit';
 
 const defaultSession = rcp.getDefaultSession();
-defaultSession.head("http://example.com/head").then((response) => {
+defaultSession.head('http://example.com/head').then((response) => {
   console.info(`Succeeded in getting the response ${response}`);
 }).catch((err: BusinessError) => {
   console.error(`err: error code is ${err.code}, error data is ${err.data}`);
@@ -1252,7 +1252,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { rcp } from '@kit.RemoteCommunicationKit';
 
 const defaultSession = rcp.getDefaultSession();
-defaultSession.delete("http://example.com/delete").then((response) => {
+defaultSession.delete('http://example.com/delete').then((response) => {
   console.info(`Succeeded in getting the response ${response}`);
 }).catch((err: BusinessError) => {
   console.error(`err: error code is ${err.code}, error data is ${err.data}`);
@@ -1288,7 +1288,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { rcp } from '@kit.RemoteCommunicationKit';
 
 const defaultSession = rcp.getDefaultSession();
-let req = new rcp.Request("http://example.com/fetch", "GET");
+let req = new rcp.Request('http://example.com/fetch', 'GET');
 defaultSession.fetch(req).then((response) => {
   console.info(`Succeeded in getting the response ${response}`);
   defaultSession.cancel(req);
@@ -1440,7 +1440,7 @@ function testInterceptor() {
     console.error(`Error: error code is ${err.code}, error data is ${err.data}`);
   });
 
-  let request = new rcp.Request("https://www.example.com", 'GET');
+  let request = new rcp.Request('https://www.example.com', 'GET');
   session.fetch(request).then((response: rcp.Response) => {
     console.info(`Succeeded in fetching the response. The statusCode of the response is ${response.statusCode}`);
   }).catch((err: BusinessError) => {
@@ -1463,7 +1463,7 @@ function testInterceptor() {
 | --- | --- | --- | --- | --- |
 | interceptors | [Interceptor](#interceptor)[] | 否 | 是 | 请求/响应拦截器。 **起始版本：** 5.0.0(12) |
 | requestConfiguration | [Configuration](#configuration) | 否 | 是 | 指定与会话关联的HTTP请求的配置。包括transfer、proxy、DNS、connection和security configurations。 |
-| baseAddress | [URLOrString](#urlorstring) | 否 | 是 | 设置会话中URL的基地址。这允许开发者为会话中的多个请求定义一个通用的基本URL。如果请求URL不是绝对URL，则把基地址预制在请求URL的前面。例如，"https://example.com?name=value"，"https://example.com"为基地址，"?name=value"为请求URL。 |
+| baseAddress | [URLOrString](#urlorstring) | 否 | 是 | 设置会话中URL的基地址。这允许开发者为会话中的多个请求定义一个通用的基本URL。如果请求URL不是绝对URL，则把基地址预制在请求URL的前面。例如，'https://example.com?name=value'，'https://example.com'为基地址，'?name=value'为请求URL。 |
 | headers | [RequestHeaders](#requestheaders) | 否 | 是 | 为Session发出的HTTP请求定义headers（可自定义）。开发者可以根据他们的需求定制的特定headers。 |
 | cookies | [RequestCookies](#requestcookies) | 否 | 是 | 提供在与会话关联的HTTP请求中包含自定义cookie的方法。适用于需要将某些cookie附加到每个请求的场景。需要手动设置cookie，携带cookie为用户行为。 |
 | sessionListener | [SessionListener](#sessionlistener) | 否 | 是 | 允许开发者将侦听器附加到会话，接收会话取消或关闭等事件的通知，更好地处理应用程序中与会话相关的事件。 |
@@ -1491,18 +1491,18 @@ const sessionConfig: rcp.SessionConfiguration = {
       verbose: true
     }
   },
-  baseAddress: "http://api.example.com",
+  baseAddress: 'http://api.example.com',
   headers: {
-    "Authorization": "Bearer YOUR_ACCESS_TOKEN",
-    "Content-Type": "application/json"
+    'Authorization': 'Bearer YOUR_ACCESS_TOKEN',
+    'Content-Type': 'application/json'
   },
   cookies: {
-    "user": "john_doe",
-    "session_id": "abc123"
+    'user': 'john_doe',
+    'session_id': 'abc123'
   },
   sessionListener: {
-    onCanceled: () => console.info("Session was cancelled"),
-    onClosed: () => console.info("Session was closed")
+    onCanceled: () => console.info('Session was cancelled'),
+    onClosed: () => console.info('Session was closed')
   },
   cookieRepository: cookieRepository,
   // ...
@@ -1562,7 +1562,7 @@ function testInterceptor() {
     console.error(`Error: error code is ${err.code}, error data is ${err.data}`);
   });
 
-  let request = new rcp.Request("https://www.example.com", 'GET');
+  let request = new rcp.Request('https://www.example.com', 'GET');
   session.fetch(request).then((response: rcp.Response) => {
     console.info(`Succeeded in fetching the response. The statusCode of the response is ${response.statusCode}`);
   }).catch((err: BusinessError) => {
@@ -1599,7 +1599,7 @@ import { rcp } from '@kit.RemoteCommunicationKit';
 const cache: rcp.ResponseCache = new rcp.ResponseCache({
   persistent: {
     kind: 'file-system',
-    pathToFolder: "/path/dir/" // 请根据自身业务指定缓存路径
+    pathToFolder: '/path/dir/' // 请根据自身业务指定缓存路径
   }
 });
 const requestConfig: rcp.Configuration = {
@@ -1610,31 +1610,31 @@ const requestConfig: rcp.Configuration = {
       transferMs: 10000
     },
     assumesHTTP3Capable: true,
-    pathPreference: "cellular"
+    pathPreference: 'cellular'
   },
   tracing: {
     verbose: true
   },
-  proxy: "system",
+  proxy: 'system',
   dns: {
     dnsRules: [
-      { host: "https://example.com", port: 443, ipAddresses: ["192.168.1.1", "192.168.1.2"] }
+      { host: 'https://example.com', port: 443, ipAddresses: ['192.168.1.1', '192.168.1.2'] }
     ]
   },
 
   security: {
     certificate: {
-      content: "-----BEGIN CERTIFICATE-----\n...",
-      type: "PEM",
-      key: "/path/dir/", // 请根据自身业务对key进行修改
-      keyPassword: "your-password"
+      content: '-----BEGIN CERTIFICATE-----\n...',
+      type: 'PEM',
+      key: '/path/dir/', // 请根据自身业务对key进行修改
+      keyPassword: 'your-password'
     },
     serverAuthentication: {
       credential: {
-        username: "your-username",
-        password: "your-password"
+        username: 'your-username',
+        password: 'your-password'
       },
-      authenticationType: "basic"
+      authenticationType: 'basic'
     }
   },
   cache: cache
@@ -1656,13 +1656,13 @@ ConnectionConfiguration接口包含两个参数，开发者可以调整最大并
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| maxConnectionsPerHost | number | 是 | 是 | 单个主机允许的最大并发 TCP 连接数（主机与主机名+端口号对相同）。 取值范围：1~2147483647。 默认值：6。 |
-| maxTotalConnections | number | 是 | 是 | 此会话中允许的最大同时 TCP 连接总数。 取值范围：1~2147483647。 默认值为 64。 |
+| maxConnectionsPerHost | number | 是 | 是 | 单个主机允许的最大并发 TCP 连接数（主机与主机名+端口号对相同）。 取值范围：[1~2147483647]。 默认值：6。 |
+| maxTotalConnections | number | 是 | 是 | 此会话中允许的最大同时 TCP 连接总数。 取值范围：[1~2147483647]。 默认值为 64。 |
 
 示例：
 
 ```
-import { rcp } from '@kit.RemoteCommunicationKit'
+import { rcp } from '@kit.RemoteCommunicationKit';
 
 const connectionConfig: rcp.ConnectionConfiguration = {
   maxConnectionsPerHost: 6,
@@ -1685,10 +1685,10 @@ TcpConfiguration接口为开发者提供设置TCP选项的能力。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| keepIdleSec | number | 否 | 是 | 该参数设置一个计时器，TCP连接将在计时器触发时发送探测报文。 单位：s。 取值范围：1~7200。 默认值：7200。 |
-| userTimeoutMs | number | 否 | 是 | 该参数设置一个超时时间。若传输的数据在超时时间内未收到服务器的确认报文，TCP连接将被断开。 单位：ms。 取值范围：1~3600000。 默认值：和[Timeout](#timeout).transferMs保持一致。 |
-| keepCnt | number | 否 | 是 | 该参数设置发送探测报文的次数。 单位：次。 取值范围：1~9。 默认值：9。 |
-| keepIntervalSec | number | 否 | 是 | 该参数设置每个探测报文之间的时间间隔。 单位：s。 取值范围：1~75。 默认值：75。 |
+| keepIdleSec | number | 否 | 是 | 该参数设置一个计时器，TCP连接将在计时器触发时发送探测报文。 单位：s。 取值范围：[1~7200]。 默认值：7200。 |
+| userTimeoutMs | number | 否 | 是 | 该参数设置一个超时时间。若传输的数据在超时时间内未收到服务器的确认报文，TCP连接将被断开。 单位：ms。 取值范围：[1~3600000]。 默认值：和[Timeout](#timeout).transferMs保持一致。 |
+| keepCnt | number | 否 | 是 | 该参数设置发送探测报文的次数。 单位：次。 取值范围：[1~9]。 默认值：9。 |
+| keepIntervalSec | number | 否 | 是 | 该参数设置每个探测报文之间的时间间隔。 单位：s。 取值范围：[1~75]。 默认值：75。 |
 
 示例：
 
@@ -1727,24 +1727,6 @@ cookie仓库。cookie仓库能够自动存储HTTP响应中的cookie，自动在H
 系统能力： SystemCapability.Collaboration.RemoteCommunication
 
 起始版本： 6.1.0(23)
-
-#### SessionPathPreference
-
-type SessionPathPreference = 'auto' | 'cellular-if-could' | 'mptcp'
-
-会话路径偏好设置。
-
-模型约束： 此接口仅可在Stage模型下使用。
-
-系统能力： SystemCapability.Collaboration.RemoteCommunication
-
-起始版本： 26.0.0
-
-| 类型 | 说明 |
-| --- | --- |
-| 'auto' | 表示没有配置会话路径偏好，系统自动选择路径。 |
-| 'cellular-if-could' | 表示蜂窝网络可用时，优先使用蜂窝网络。需要配置ohos.permission.GET_NETWORK_INFO才能生效。如何激活蜂窝网络，请参考[网络连接管理文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-net-connection#connectioncreatenetconnection)。 |
-| 'mptcp' | 表示使用多路传输控制协议（MPTCP），请参考[RFC 8684](https://www.rfc-editor.org/rfc/rfc8684.html)。 |
 
 #### [h2]create
 
@@ -2060,6 +2042,24 @@ let identifier = cookieRepository.identifier;
 console.info(`identifier is: ${identifier}`);
 ```
 
+#### SessionPathPreference
+
+type SessionPathPreference = 'auto' | 'cellular-if-could' | 'mptcp'
+
+会话路径偏好设置。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Collaboration.RemoteCommunication
+
+起始版本： 26.0.0
+
+| 类型 | 说明 |
+| --- | --- |
+| 'auto' | 表示没有配置会话路径偏好，系统自动选择路径。 |
+| 'cellular-if-could' | 表示蜂窝网络可用时，优先使用蜂窝网络。需要配置ohos.permission.GET_NETWORK_INFO才能生效。如何激活蜂窝网络，请参考[网络连接管理文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-net-connection#connectioncreatenetconnection)。 |
+| 'mptcp' | 表示使用多路传输控制协议（MPTCP），请参考[RFC 8684](https://www.rfc-editor.org/rfc/rfc8684.html)。 |
+
 #### TransferConfiguration
 
 TransferConfiguration接口为开发者提供了一组选项，用于调整会话中HTTP请求期间的数据传输行为。这包括与自动重定向和超时配置相关的设置。
@@ -2073,7 +2073,7 @@ TransferConfiguration接口为开发者提供了一组选项，用于调整会�
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | autoRedirect | boolean | 否 | 是 | HTTP请求是否开启自动重定向。true表示开启自动重定向，false表示不开启自动重定向。默认值为true。 |
-| maxAutoRedirects | number | 否 | 是 | 最大重定向次数，在autoRedirect为true时生效。 取值范围：1~2147483647。 默认值为50。 **起始版本：** 5.0.0(12) |
+| maxAutoRedirects | number | 否 | 是 | 最大重定向次数，在autoRedirect为true时生效。 取值范围：[1~2147483647]。 默认值为50。 **起始版本：** 5.0.0(12) |
 | timeout | [Timeout](#timeout) | 否 | 是 | 配置HTTP请求的超时值，允许开发者定义连接和传输数据所允许的最长时间。如果未设置，则使用默认时间。 |
 | assumesHTTP3Capable | boolean | 否 | 是 | 指定本次请求是否尝试升级为HTTP/3版本。true表示尝试升级，系统会根据客户端/服务端平台能力、网络质量等因素决定此次请求是否升级为HTTP/3版本，false表示不升级。默认为false。如需指定HTTP版本，请使用httpVersionSelectCallback。 |
 | pathPreference | [PathPreference](#pathpreference) | 否 | 是 | HTTP请求路径首选项，此处配置的为建议路径，在实际使用过程中，设备的系统会决定使用哪个路径。可以是'auto'或'cellular'路径。默认为'auto'路径。 |
@@ -2096,8 +2096,8 @@ const transferConfig: rcp.TransferConfiguration = {
     transferMs: 10000
   },
   assumesHTTP3Capable: true,
-  pathPreference: "cellular",
-  connectionReusePolicy: "balanced",
+  pathPreference: 'cellular',
+  connectionReusePolicy: 'balanced',
   httpVersionSelectCallback: (url: rcp.URL): rcp.HttpVersion => {
     return '2';
   },
@@ -2151,11 +2151,11 @@ const customHttpEventsHandler: rcp.HttpEventsHandler = {
   },
   onDataEnd: () => {
     // 用于处理数据传输完成的自定义逻辑。
-    console.info("Data transfer complete");
+    console.info('Data transfer complete');
   },
   onCanceled: () => {
     // 处理取消操作的自定义逻辑
-    console.info("Request/response canceled");
+    console.info('Request/response canceled');
   },
   onStatusCodeReceive: (statusCode: number, request?: rcp.Request) => {
     // 用于处理 statusCode 的自定义逻辑。
@@ -2208,32 +2208,32 @@ ProxyConfiguration接口允许开发者为会话中的HTTP请求配置代理设�
 import { rcp } from '@kit.RemoteCommunicationKit';
 
 // 配置系统代理（默认）
-const systemProxyConfig = "system";
+const systemProxyConfig = 'system';
 
 // 配置自定义代理
 const customProxyConfig: rcp.WebProxy = {
-  url: "http://custom-proxy.example.com",
-  createTunnel: "always",
-  exclusions: ["http://exclude.example.com"],
+  url: 'http://custom-proxy.example.com',
+  createTunnel: 'always',
+  exclusions: ['http://exclude.example.com'],
   security: {
     certificate: {
-      content: "-----BEGIN CERTIFICATE-----\n...",
-      type: "PEM",
-      key: "-----BEGIN PRIVATE KEY-----\n...", // 请根据实际业务选择合适的key
-      keyPassword: "your-password"
+      content: '-----BEGIN CERTIFICATE-----\n...',
+      type: 'PEM',
+      key: '-----BEGIN PRIVATE KEY-----\n...', // 请根据实际业务选择合适的key
+      keyPassword: 'your-password'
     },
     serverAuthentication: {
       credential: {
-        username: "proxy-username",
-        password: "proxy-password"
+        username: 'proxy-username',
+        password: 'proxy-password'
       },
-      authenticationType: "basic"
+      authenticationType: 'basic'
     }
   }
 };
 
 // 配置无代理模式
-const noProxyConfig = "no-proxy";
+const noProxyConfig = 'no-proxy';
 
 // 在会话创建中使用代理配置。
 const sessionWithSystemProxy = rcp.createSession({ requestConfiguration: { proxy: systemProxyConfig } });
@@ -2269,19 +2269,19 @@ import { rcp } from '@kit.RemoteCommunicationKit';
 
 // 配置自定义DNS服务器，下面IP地址仅作为示意。
 const customDnsServers: rcp.DnsServers = [
-  { ip: "192.168.1.1" },
-  { ip: "192.168.1.2", port: 53 }
+  { ip: '192.168.1.1' },
+  { ip: '192.168.1.2', port: 53 }
 ];
 
 // 配置静态DNS规则，下面IP地址仅作为示意。
 const staticDnsRules: rcp.StaticDnsRules = [
-  { host: "example.com", port: 80, ipAddresses: ["192.168.1.1", "192.168.1.2"] },
-  { host: "sub.example.com", port: 443, ipAddresses: ["192.168.2.1"] }
+  { host: 'example.com', port: 80, ipAddresses: ['192.168.1.1', '192.168.1.2'] },
+  { host: 'sub.example.com', port: 443, ipAddresses: ['192.168.2.1'] }
 ];
 
 // 配置通过 HTTPS 的 DNS
 const dohConfig: rcp.DnsOverHttpsConfiguration = {
-  url: "https://dns.example.com/dns-query",
+  url: 'https://dns.example.com/dns-query',
   skipCertificatesValidation: true
 };
 
@@ -2340,7 +2340,7 @@ import { rcp } from '@kit.RemoteCommunicationKit';
 
 // 配置 DNS over HTTPS 设置
 const dohConfig: rcp.DnsOverHttpsConfiguration = {
-  url: "https://dns.example.com/dns-query",
+  url: 'https://dns.example.com/dns-query',
   skipCertificatesValidation: true
 };
 
@@ -2378,19 +2378,19 @@ import { rcp } from '@kit.RemoteCommunicationKit';
 
 // 配置安全设置
 const securityConfig: rcp.SecurityConfiguration = {
-  remoteValidation: "system",
+  remoteValidation: 'system',
   certificate: {
-    content: "-----BEGIN CERTIFICATE-----\n...",
-    type: "PEM",
-    key: "-----BEGIN PRIVATE KEY-----\n...", // 请根据自身业务选择合适的key
-    keyPassword: "your-password"
+    content: '-----BEGIN CERTIFICATE-----\n...',
+    type: 'PEM',
+    key: '-----BEGIN PRIVATE KEY-----\n...', // 请根据自身业务选择合适的key
+    keyPassword: 'your-password'
   },
   serverAuthentication: {
     credential: {
-      username: "exampleUser",
-      password: "examplePassword"
+      username: 'exampleUser',
+      password: 'examplePassword'
     },
-    authenticationType: "basic"
+    authenticationType: 'basic'
   },
   tlsOptions: {
     tlsVersion: 'TlsV1.3',
@@ -2597,9 +2597,9 @@ constructor(url: URLOrString, method?: HttpMethod, headers?: RequestHeaders, con
 import { rcp } from '@kit.RemoteCommunicationKit';
 
 let headers: rcp.RequestHeaders = {
-  "accept": "application/json"
+  'accept': 'application/json'
 };
-let content = "data to send";
+let content = 'data to send';
 let configuration: rcp.Configuration = {
   transfer: {
     timeout: { connectMs: 60000, transferMs: 60000 }
@@ -2607,7 +2607,7 @@ let configuration: rcp.Configuration = {
 };
 let cookies: rcp.RequestCookies = { 'name1': 'value1', 'name2': 'value2' };
 let transferRange: rcp.TransferRange = { from: 100, to: 200 };
-let req = new rcp.Request("http://example.com", "POST", headers, content, cookies, transferRange, configuration);
+let req = new rcp.Request('http://example.com', 'POST', headers, content, cookies, transferRange, configuration);
 ```
 
 #### URL
@@ -3154,7 +3154,7 @@ type DownloadToStream = { kind: 'stream'; stream: Stream | WriteStream | SyncWri
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | kind | 'timeout' | 否 | 否 | 策略类型。用来表示这是按超时暂停接收流程的策略。 |
-| timeoutMs | number | 否 | 否 | 超时时间。如果超过了该时间，框架还没从服务端收到数据，就会暂停请求。单位：ms。 取值范围：1~1000。 默认值为 0。 |
+| timeoutMs | number | 否 | 否 | 超时时间。如果超过了该时间，框架还没从服务端收到数据，就会暂停请求。单位：ms。 取值范围：[1~1000]。 默认值为 0。 |
 
 #### ReceivingPauseByCache
 
@@ -3457,7 +3457,7 @@ type HttpVersionSelectCallback = (url: URL) => HttpVersion
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| url | [Url](#url) | 是 | HTTP 请求资源的URL。 |
+| url | [URL](#url) | 是 | HTTP 请求资源的URL。 |
 
 返回值：
 
@@ -3593,7 +3593,7 @@ type RequestHeaders = { [k: string]: string | string[] | undefined; 'authorizati
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | kind | 'timeout' | 否 | 否 | 策略类型。用来表示这是暂停发送流程的策略。 |
-| timeoutMs | number | 否 | 否 | 超时时间。如果超过了该时间，应用还没有给框架数据，就会暂停请求，单位：ms。 取值范围：1~1000。 默认值为 0。 |
+| timeoutMs | number | 否 | 否 | 超时时间。如果超过了该时间，应用还没有给框架数据，就会暂停请求，单位：ms。 取值范围：[1~1000]。 默认值为 0。 |
 
 #### NetworkInputQueue
 
@@ -3813,7 +3813,7 @@ constructor(fields: FormFields)
 import { rcp } from '@kit.RemoteCommunicationKit';
 
 let headers: rcp.RequestHeaders = {
-  "accept": "application/json"
+  'accept': 'application/json'
 };
 let configuration: rcp.Configuration = {
   transfer: {
@@ -3824,11 +3824,11 @@ let cookies: rcp.RequestCookies = { 'name1': 'value1', 'name2': 'value2' };
 let transferRange: rcp.TransferRange = { from: 100, to: 200 };
 
 const simpleForm = new rcp.Form({
-  "key1": "value1",
-  "key2": ["valueList0", "valueList1"],
+  'key1': 'value1',
+  'key2': ['valueList0', 'valueList1'],
 });
-simpleForm.keys = ["key2", "key1"];
-let req = new rcp.Request("http://example.com", "POST", headers, simpleForm, cookies, transferRange, configuration);
+simpleForm.keys = ['key2', 'key1'];
+let req = new rcp.Request('http://example.com', 'POST', headers, simpleForm, cookies, transferRange, configuration);
 req.content = simpleForm;
 ```
 
@@ -3882,7 +3882,7 @@ constructor(fields: MultipartFormFields)
 import { rcp } from '@kit.RemoteCommunicationKit';
 
 let headers: rcp.RequestHeaders = {
-  "accept": "application/json"
+  'accept': 'application/json'
 };
 let configuration: rcp.Configuration = {
   transfer: {
@@ -3893,16 +3893,16 @@ let cookies: rcp.RequestCookies = { 'name1': 'value1', 'name2': 'value2' };
 let transferRange: rcp.TransferRange = { from: 100, to: 200 };
 
 const multiForm = new rcp.MultipartForm({
-  "key1": "value1",
-  "key2": ["valueList0", "valueList1"],
-  "key3": {
-    contentType: "text/plain",
-    remoteFileName: "RemoteFileName",
-    contentOrPath: "/file/to/Path",
+  'key1': 'value1',
+  'key2': ['valueList0', 'valueList1'],
+  'key3': {
+    contentType: 'text/plain',
+    remoteFileName: 'RemoteFileName',
+    contentOrPath: '/file/to/Path',
   },
 });
-multiForm.keys = ["key3", "key1", "key2"];
-let req = new rcp.Request("http://example.com", "POST", headers, multiForm, cookies, transferRange, configuration);
+multiForm.keys = ['key3', 'key1', 'key2'];
+let req = new rcp.Request('http://example.com', 'POST', headers, multiForm, cookies, transferRange, configuration);
 req.content = multiForm;
 ```
 
@@ -3931,7 +3931,7 @@ constructor(fields: MultipartFormFields, boundary: string)
 import { rcp } from '@kit.RemoteCommunicationKit';
 
 let headers: rcp.RequestHeaders = {
-  "accept": "application/json"
+  'accept': 'application/json'
 };
 let configuration: rcp.Configuration = {
   transfer: {
@@ -3940,20 +3940,20 @@ let configuration: rcp.Configuration = {
 };
 let cookies: rcp.RequestCookies = { 'name1': 'value1', 'name2': 'value2' };
 let transferRange: rcp.TransferRange = { from: 100, to: 200 };
-let Boundary: string = "--MULTIPARTFORM BEGIN AND END BOUNDARY"
+let Boundary: string = '--MULTIPARTFORM BEGIN AND END BOUNDARY'
 
 const multiForm = new rcp.MultipartForm({
-  "key1": "value1",
-  "key2": ["valueList0", "valueList1"],
-  "key3": {
-    contentType: "text/plain",
-    remoteFileName: "RemoteFileName",
-    contentOrPath: "/file/to/Path",
+  'key1': 'value1',
+  'key2': ['valueList0', 'valueList1'],
+  'key3': {
+    contentType: 'text/plain',
+    remoteFileName: 'RemoteFileName',
+    contentOrPath: '/file/to/Path',
   },
 }, Boundary)
-multiForm.keys = ["key3", "key1", "key2"];
+multiForm.keys = ['key3', 'key1', 'key2'];
 
-let req = new rcp.Request("http://example.com", "POST", headers, multiForm, cookies, transferRange, configuration);
+let req = new rcp.Request('http://example.com', 'POST', headers, multiForm, cookies, transferRange, configuration);
 req.content = multiForm;
 ```
 
@@ -4012,8 +4012,8 @@ HTTP简单表单数据字段。
 import { rcp } from '@kit.RemoteCommunicationKit';
 
 const simpleForm: rcp.FormFields = {
-  "key1": "value1",
-  "key2": ["valueList0", "valueList1"],
+  'key1': 'value1',
+  'key2': ['valueList0', 'valueList1'],
 };
 ```
 
@@ -4088,9 +4088,9 @@ HTTP表单数据内容中的文件内容类型。
 import { rcp } from '@kit.RemoteCommunicationKit';
 
 const formFieldFileValue: rcp.FormFieldFileValue = {
-  contentType: "image/png",
-  remoteFileName: "remoteFile1",
-  contentOrPath: "/path/to/file",
+  contentType: 'image/png',
+  remoteFileName: 'remoteFile1',
+  contentOrPath: '/path/to/file',
 };
 ```
 
@@ -4114,8 +4114,8 @@ RequestCookies是HTTP模块中的一个接口，用于表示HTTP请求中包含�
 import { rcp } from '@kit.RemoteCommunicationKit';
 
 const cookies: rcp.RequestCookies = {
-  "sessionID": "abc123",
-  "userToken": "xyz789",
+  'sessionID': 'abc123',
+  'userToken': 'xyz789',
   // 可以在此处添加额外的cookies
 };
 ```
@@ -4217,7 +4217,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { rcp } from '@kit.RemoteCommunicationKit';
 
 const session = rcp.createSession();
-const request = new rcp.Request("https://www.example.com");
+const request = new rcp.Request('https://www.example.com');
 session.fetch(request).then((response: rcp.Response) => {
   if (response) {
     console.info(`Succeeded in fetching the response, response: ${response.toString()}`);
@@ -4252,7 +4252,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { rcp } from '@kit.RemoteCommunicationKit';
 
 const session = rcp.createSession();
-const request = new rcp.Request("https://www.example.com");
+const request = new rcp.Request('https://www.example.com');
 session.fetch(request).then((response: rcp.Response) => {
   if (response) {
     let resJson = response.toJSON();
@@ -4295,7 +4295,7 @@ import { JSON } from '@kit.ArkTS';
 import { BusinessError } from '@kit.BasicServicesKit';
 
 const session = rcp.createSession();
-const request = new rcp.Request("https://www.example.com");
+const request = new rcp.Request('https://www.example.com');
 session.fetch(request).then((response: rcp.Response) => {
   if (response) {
     const obj = response.toJSON({ bigIntMode: JSON.BigIntMode.PARSE_AS_BIGINT }); // 此处仅为示意，实际response的body应为JSON格式，且可能包含大整型数据
@@ -4442,7 +4442,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 // 1. 创建session、requestURL
 const session = rcp.createSession();
-const requestURL = "https://www.example.com";
+const requestURL = 'https://www.example.com';
 
 // 2. 在需要跟踪分析请求过程中各个时间段消耗的时间，请将此开关打开
 const configuration: rcp.Configuration = {
@@ -4452,12 +4452,12 @@ const configuration: rcp.Configuration = {
 }
 
 // 3. 创建请求
-const request = new rcp.Request(requestURL, "GET");
+const request = new rcp.Request(requestURL, 'GET');
 request.configuration = configuration;
 
 // 4. 使用fetch发起网络请求，request中携带上面配置好的configuration
 session.fetch(request).then((response: rcp.Response) => {
-// 由于timeInfo中各个参数有可能为undefined，所以需要在两个时间段做运算前添加判空操作
+  // 由于timeInfo中各个参数有可能为undefined，所以需要在两个时间段做运算前添加判空操作
   if (!response.timeInfo) {
     console.error(`TimeInfo is undefined ${response.timeInfo}`);
     return;
@@ -4548,7 +4548,7 @@ type ValidationCallback = (context: ValidationContext) => boolean | Promise<bool
 
 返回值：
 
-| 取值范围 | 说明 |
+| 类型 | 说明 |
 | --- | --- |
 | boolean | Promise | 回调函数，返回true表示校验成功，返回false表示校验失败；或者Promise对象，返回true表示校验成功，返回false表示校验失败。 |
 
@@ -4572,7 +4572,7 @@ TLS1.3及以上版本支持的加密套件。本框架有内置的优先顺序�
 
 #### TlsV12SpecificCipherSuite
 
-type TlsV12SpecificCipherSuite = 'TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256' | 'TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256' | 'TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384' | 'TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384' | 'TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256' | 'TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256' | 'TLS_RSA_WITH_AES_128_GCM_SHA256' | 'TLS_RSA_WITH_AES_256_GCM_SHA384';
+type TlsV12SpecificCipherSuite = 'TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256' | 'TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256' | 'TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384' | 'TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384' | 'TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256' | 'TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256' | 'TLS_RSA_WITH_AES_128_GCM_SHA256' | 'TLS_RSA_WITH_AES_256_GCM_SHA384'
 
 TLS1.2及以上版本支持的加密套件。
 
@@ -4709,7 +4709,7 @@ TLS1.3选择器，用来选择Tls的使用版本，以及配套加密套件。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| tlsVersion | 'TlsV1.3' | 否 | 否 | TLS版本为"TlsV1.3"。 |
+| tlsVersion | 'TlsV1.3' | 否 | 否 | TLS版本为'TlsV1.3'。 |
 | cipherSuite | [TlsV13CipherSuite](#tlsv13ciphersuite)[] | 否 | 是 | TLS1.3版本对应的加密套件。 |
 
 #### TlsV12Option
@@ -4843,7 +4843,49 @@ type GetDataCallback = (maxSize: number) => ArrayBuffer | Promise<ArrayBuffer>
 
 | 类型 | 说明 |
 | --- | --- |
-| ArrayBuffer | Promise | 回调函数，返回用于发送的数据；或者Promise对象，返回用于发送的数据。 **说明：** 5.0.0(12)新增返回值Promise。 |
+| ArrayBuffer | 回调函数，返回用于发送的数据。 **适用版本：** 4.1.0(11) |
+| ArrayBuffer | Promise | 回调函数，返回用于发送的数据；或者Promise对象，返回用于发送的数据。 **适用版本：** 5.0.0(12)+ |
+
+示例：
+
+```
+import { rcp } from '@kit.RemoteCommunicationKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+import { util } from '@kit.ArkTS';
+
+let read = false;
+
+function testGetDataCallback() {
+  try {
+    const session = rcp.createSession();
+    const request = new rcp.Request('https://www.example.com');
+    // 创建getDataCallback对象。
+    const getDataCallback: rcp.GetDataCallback = (maxSize: number) => {
+      if (read) {
+        return Promise.resolve(new ArrayBuffer(0));
+      }
+      read = true;
+      // 将字符串类型的测试数据转换为ArrayBuffer，并作为GetDataCallback的返回值。
+      const data = "Hello World";
+      const buffer = new ArrayBuffer(data.length);
+      const uint8Array = new Uint8Array(buffer);
+      new util.TextEncoder().encodeIntoUint8Array(data, uint8Array);
+      return Promise.resolve(buffer);
+    }
+    // 将getDataCallback对象赋值给request.content。
+    request.content = getDataCallback;
+    session.fetch(request).then((response) => {
+      console.info(`Succeeded in fetch the response ${response.toString()}`);
+      session.close();
+    }).catch((error: BusinessError) => {
+      console.error(`Error: error code is ${error.code}, error data is ${error.data}`);
+      session.close();
+    });
+  } catch (error) {
+    console.error(`Error: error code is ${error.code}, error data is ${error.data}`);
+  }
+}
+```
 
 #### DynamicExclusionRule
 
@@ -4940,7 +4982,7 @@ WebProxy接口使开发者能够在[ProxyConfiguration](#proxyconfiguration)中�
 | --- | --- | --- | --- | --- |
 | url | [URLOrString](#urlorstring) | 否 | 否 | 自定义代理的URL。 |
 | createTunnel | 'auto' | 'always' | 否 | 是 | 用于控制何时创建代理隧道。隧道是指将HTTP CONNECT请求发送到代理，要求其连接到一个特定端口号上的远程主机，然后流量通过代理。默认值为'auto'。 'auto'表示为HTTPS创建隧道，而不是为HTTP创建。 'always'表示始终创建隧道。 |
-| exclusions | [URLOrString](#urlorstring) | [URLOrString](#urlorstring)[] | [DynamicExclusionRule](#dynamicexclusionrule) | 否 | 是 | 需要从代理中排除的URL （例如："http://exclude.example.com"或["http://exclude1.com", "http://exclude2.com"]）。默认值为undefined。 |
+| exclusions | [URLOrString](#urlorstring) | [URLOrString](#urlorstring)[] | [DynamicExclusionRule](#dynamicexclusionrule) | 否 | 是 | 需要从代理中排除的URL （例如：'http://exclude.example.com'或['http://exclude1.com', 'http://exclude2.com']）。默认值为undefined。 |
 | security | [SecurityConfiguration](#securityconfiguration) | 否 | 是 | 设置代理安全配置。默认值为undefined。 |
 
 #### InfoToCollect
@@ -4962,7 +5004,7 @@ InfoToCollect接口可以帮助开发者收集信息事件。收集到的信息�
 | outgoingData | boolean | 否 | 是 | 是否收集传出的数据信息事件。true代表收集传出的数据信息事件，false代表不收集传出的数据信息事件。默认值为false。 |
 | incomingSslData | boolean | 否 | 是 | 是否收集传入的SSL/TLS数据信息事件。true代表收集传入的SSL/TLS数据信息事件，false代表不收集传入的SSL/TLS数据信息事件。默认值为false。 |
 | outgoingSslData | boolean | 否 | 是 | 是否收集传出的SSL/TLS数据信息事件。true代表收集传出的SSL/TLS数据信息事件，false代表不收集传出的SSL/TLS数据信息事件。默认值为false。 |
-| srcAddr | boolean | 否 | 是 | 客户端地址。 true：收集客户端地址及端口号。 false：不收集客户端地址及端口号。 默认值是false。 **起始版本：** 6.0.0(20 |
+| srcAddr | boolean | 否 | 是 | 客户端地址。 true：收集客户端地址及端口号。 false：不收集客户端地址及端口号。 默认值是false。 **起始版本：** 6.0.0(20) |
 | dstAddr | boolean | 否 | 是 | 服务器地址。 true：收集服务器地址及端口号。 false：不收集服务器地址及端口号。 默认值是false。 **起始版本：** 6.0.0(20) |
 | redirectCount | boolean | 否 | 是 | 是否收集重定向次数。 true：收集重定向次数。 false：不收集重定向次数。 默认值为false。 **起始版本：** 6.1.0(23) |
 
@@ -5164,7 +5206,8 @@ type OnDataReceive = (incomingData: ArrayBuffer, request?: Request) => number | 
 
 | 类型 | 说明 |
 | --- | --- |
-| number | void | Promise | 回调函数，返回number类型数据，表示处理的字节数；或者回调函数，无返回值；或者Promise对象，无返回结果。 **说明：** 5.0.0(12)版本上新增返回值void | Promise。 |
+| number | 回调函数，返回number类型数据，表示处理的字节数。 **适用版本：** 4.1.0(11) |
+| number | void | Promise | 回调函数，返回number类型数据，表示处理的字节数；或者回调函数，无返回值；或者Promise对象，无返回结果。 **适用版本：** 5.0.0(12)+ |
 
 #### OnUploadProgress
 
@@ -5270,7 +5313,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 // 1. 创建session、requestURL和request。
 const session = rcp.createSession();
-const requestURL = "https://www.example.com";
+const requestURL = 'https://www.example.com';
 const request = new rcp.Request(requestURL);
 
 // 2. 配置请求的configuration，设置onTimeInfo回调函数以获取网络请求相关的时间信息
@@ -5658,7 +5701,7 @@ import { rcp } from '@kit.RemoteCommunicationKit';
 const cache = new rcp.ResponseCache({
   persistent: {
     kind: 'file-system',
-    pathToFolder: "/path/dir" // 请根据自身业务选择合适的路径
+    pathToFolder: '/path/dir' // 请根据自身业务选择合适的路径
   }
 });
 ```
@@ -5698,7 +5741,7 @@ try {
   const cache = new rcp.ResponseCache({
     persistent: {
       kind: 'file-system',
-      pathToFolder: "/path/dir" // 请根据自身业务选择合适的路径
+      pathToFolder: '/path/dir' // 请根据自身业务选择合适的路径
     }
   });
   await cache.close();
@@ -5751,7 +5794,7 @@ try {
   const cache = new rcp.ResponseCache({
     persistent: {
       kind: 'file-system',
-      pathToFolder: "/path/dir" // 请根据自身业务选择合适的路径
+      pathToFolder: '/path/dir' // 请根据自身业务选择合适的路径
     }
   });
   const session: rcp.Session = rcp.createSession({
@@ -5820,7 +5863,7 @@ try {
   const cache = new rcp.ResponseCache({
     persistent: {
       kind: 'file-system',
-      pathToFolder: "/path/dir" // 请根据自身业务选择合适的路径
+      pathToFolder: '/path/dir' // 请根据自身业务选择合适的路径
     }
   });
   const record = await cache.get({
@@ -5867,7 +5910,7 @@ try {
   const cache = new rcp.ResponseCache({
     persistent: {
       kind: 'file-system',
-      pathToFolder: "/path/dir" // 请根据自身业务选择合适的路径
+      pathToFolder: '/path/dir' // 请根据自身业务选择合适的路径
     }
   });
   await cache.clear();
@@ -5911,7 +5954,7 @@ try {
   const cache = new rcp.ResponseCache({
     persistent: {
       kind: 'file-system',
-      pathToFolder: "/path/dir" // 请根据自身业务选择合适的路径
+      pathToFolder: '/path/dir' // 请根据自身业务选择合适的路径
     }
   });
   const cacheState = await cache.getState();
@@ -5962,7 +6005,7 @@ try {
   const cache = new rcp.ResponseCache({
     persistent: {
       kind: 'file-system',
-      pathToFolder: "/path/dir" // 请根据自身业务选择合适的路径
+      pathToFolder: '/path/dir' // 请根据自身业务选择合适的路径
     }
   });
   const key: rcp.ResponseCacheKey = {
@@ -6019,7 +6062,7 @@ try {
   const cache = new rcp.ResponseCache({
     persistent: {
       kind: 'file-system',
-      pathToFolder: "/path/dir" // 请根据自身业务选择合适的路径
+      pathToFolder: '/path/dir' // 请根据自身业务选择合适的路径
     }
   });
   const result = await cache.removeMultiple('https://www.example.com', 'exact', 'GET');
@@ -6084,7 +6127,7 @@ try {
   const cache = new rcp.ResponseCache({
     persistent: {
       kind: 'file-system',
-      pathToFolder: "/path/dir" // 请根据自身业务选择合适的路径
+      pathToFolder: '/path/dir' // 请根据自身业务选择合适的路径
     }
   });
   const request = new rcp.Request('https://www.example.com', 'GET');

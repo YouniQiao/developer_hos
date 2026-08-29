@@ -2,19 +2,20 @@
 title: "Class (AVCastPickerHelper)"
 upstream_id: "harmonyos-references/arkts-apis-avsession-avcastpickerhelper"
 catalog: "harmonyos-references"
-content_hash: "42e9c7304d1d"
-synced_at: "2026-07-09T01:00:17.143476"
+content_hash: "04cc177c6e51"
+synced_at: "2026-08-29T18:17:25.795949"
 ---
 
 # Class (AVCastPickerHelper)
 
-投播半模态对象，可拉起半模态窗口，选择投播设备。在使用前，需要创建AVCastPickerHelper实例。
+投播选择器对象，样式显示为半模态，实际会绑定全模态页面，可用于选择本地和投播设备。在使用前，需要创建AVCastPickerHelper实例。
 
 ![](./img/note_3.0-zh-cn.png)
 
 - 本模块首批接口从API version 9开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 - 本Class首批接口从API version 14开始支持。
 - AVCastPickerHelper样式显示为半模态，实际会绑定[全模态页面（bindContentCover）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-modal-transition#bindcontentcover)。
+- 本模块从API版本26.0.0开始支持Wearable设备。
 
 #### 导入模块
 
@@ -134,7 +135,7 @@ this.avCastPicker.select(avCastPickerOptions).then(() => {
 
 resetCommunicationDevice(): Promise<void>
 
-将应用通话设备恢复至默认设备。例如，在语音通话场景下，手机设备的通话装置将恢复为听筒。使用Promise异步回调。
+将应用通话设备恢复至默认设备。例如，在语音通话场景下，手机设备的通话设备将恢复为听筒。使用Promise异步回调。
 
 元服务API： 从API version 21开始，该接口支持在元服务中使用。
 
@@ -217,8 +218,8 @@ off(type: 'pickerStateChange', callback?: Callback<AVCastPickerState>) : void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 取消对应的监听事件，支持事件'pickerStateChange'。 |
-| callback | Callback | 否 | 回调函数，参数state是变化后的半模态窗口状态。 当监听事件取消成功，err为undefined，否则返回错误对象。 该参数为可选参数，若不填写该参数，则认为取消所有相关会话的事件监听。 |
+| type | string | 是 | 需要取消的监听事件类型，当前支持的事件类型为'pickerStateChange'。 |
+| callback | Callback | 否 | 需要取消的回调函数，与on接口注册时的回调函数保持一致。如果不填写该参数，则取消所有已注册的回调。 |
 
 错误码：
 

@@ -2,8 +2,8 @@
 title: "@ohos.net.http (数据请求)"
 upstream_id: "harmonyos-references/js-apis-http"
 catalog: "harmonyos-references"
-content_hash: "09851695b489"
-synced_at: "2026-07-28T16:50:43.234870"
+content_hash: "124838246c3e"
+synced_at: "2026-08-29T18:16:42.722993"
 ---
 
 # @ohos.net.http (数据请求)
@@ -1339,7 +1339,7 @@ httpRequest.off("dataSendProgress");
 | expectDataType9+ | [HttpDataType](#httpdatatype9) | 否 | 是 | 指定返回数据的类型，默认无此字段。如果设置了此参数，系统将优先返回指定的类型。当指定其类型为Object时，最大长度为65536字符数。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | usingCache9+ | boolean | 否 | 是 | 是否使用缓存，true表示请求时优先读取缓存，false表示不使用缓存；默认为true，请求时优先读取缓存。缓存跟随当前进程生效，新缓存会替换旧缓存。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | priority9+ | number | 否 | 是 | HTTP/HTTPS请求并发优先级，值越大优先级越高，范围[1,1000]，默认为1，超出范围将设置为默认值。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| header | Object | 否 | 是 | HTTP请求头字段。当请求方式为"POST" "PUT" "DELETE" 或者""时，默认{'content-Type': 'application/json'}， 否则默认{'content-Type': 'application/x-www-form-urlencoded'}。 如果head中包含number类型的字段，最大支持int64的整数。 header字段支持JSON格式如 [完整示例](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-http#完整示例) 和Record格式输入。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| header | Object | 否 | 是 | HTTP请求头字段。当请求方式为"POST" "PUT" "DELETE" 或者""时，默认{'content-Type': 'application/json'}， 否则默认{'content-Type': 'application/x-www-form-urlencoded'}。 如果header中包含number类型的字段，最大支持int64的整数。 header字段支持JSON格式如 [完整示例](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-http#完整示例) 和Record格式输入。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | readTimeout | number | 否 | 是 | 读取超时时间。单位为毫秒（ms），默认为60000ms。传入值需为uint32_t范围内的整数。 设置为0表示不会出现超时情况。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | connectTimeout | number | 否 | 是 | 连接超时时间。单位为毫秒（ms），默认为60000ms。传入值需为uint32_t范围内的整数。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | usingProtocol9+ | [HttpProtocol](#httpprotocol9) | 否 | 是 | HTTP请求使用的协议版本。未指定时，由系统自动协商最适合的协议版本。若指定HTTP3，由于HTTP3协议的安全限制，需通过[TlsConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-http#tlsconfig18)指定TLS 版本为1.3，且目标域名支持HTTP3协议，才能启用HTTP3，否则将协商降级。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |

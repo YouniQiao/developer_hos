@@ -2,8 +2,8 @@
 title: "ArkUI_NodeAttributeType（无障碍相关属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-accessibility"
 catalog: "harmonyos-references"
-content_hash: "8551b6dc8a9f"
-synced_at: "2026-07-28T16:49:21.787214"
+content_hash: "4e35683efd3a"
+synced_at: "2026-08-29T18:15:38.527181"
 ---
 
 # ArkUI_NodeAttributeType（无障碍相关属性）
@@ -43,7 +43,7 @@ NODE_ACCESSIBILITY_GROUP = 62
 
 | 类型 | 说明 |
 | --- | --- |
-| .value[0].i32 | 为1时表示该组件及其所有子组件为一整个可以选中的组件。无障碍服务将不再关注其子组件内容。参数取值为1或0。 |
+| .value[0].i32 | 为1时表示该组件及其所有子组件合并为一个可被无障碍服务整体聚焦的组件，无障碍服务将不再单独关注其子组件内容；为0时表示不启用无障碍分组，各子组件可被无障碍服务单独关注。参数取值为1或0。 |
 
 #### NODE_ACCESSIBILITY_TEXT
 
@@ -192,13 +192,13 @@ NODE_ACCESSIBILITY_STATE = 90
 
 | 参数项 | 描述 |
 | --- | --- |
-| .object | 无障碍状态属性，无障碍状态信息，参数类型[ArkUI_AccessibilityState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-accessibilitystate)。 |
+| .object | 无障碍状态信息，参数类型[ArkUI_AccessibilityState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-accessibilitystate)。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| .object | 参数类型为[ArkUI_AccessibilityState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-accessibilitystate)。 |
+| .object | 返回值类型为[ArkUI_AccessibilityState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-accessibilitystate)。 |
 
 #### NODE_ACCESSIBILITY_VALUE
 
@@ -215,10 +215,10 @@ NODE_ACCESSIBILITY_VALUE = 91
 
 | 参数项 | 描述 |
 | --- | --- |
-| .object | 无障碍信息属性，无障碍值信息，参数类型为[ArkUI_AccessibilityValue](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-accessibilityvalue)。 |
+| .object | 无障碍值信息，参数类型为[ArkUI_AccessibilityValue](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-accessibilityvalue)。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| .object | 参数类型为[ArkUI_AccessibilityValue](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-accessibilityvalue)。 |
+| .object | 返回值类型为[ArkUI_AccessibilityValue](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-accessibilityvalue)。 |

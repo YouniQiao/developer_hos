@@ -2,13 +2,15 @@
 title: "healthService (运动健康联动服务)"
 upstream_id: "harmonyos-references/health-api-healthservice"
 catalog: "harmonyos-references"
-content_hash: "71bfe9d19477"
-synced_at: "2026-07-09T01:01:19.427723"
+content_hash: "2dd67576edf4"
+synced_at: "2026-08-29T18:18:16.586482"
 ---
 
 # healthService (运动健康联动服务)
 
 本模块提供运动健康联动服务。
+
+![](./img/note_3.0-zh-cn.png) 针对系统能力SystemCapability.Health.HealthService，请先使用[canIUse()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-syscap#caniuse)接口判断当前设备是否支持此syscap及对应接口。
 
 起始版本： 5.0.0(12)
 
@@ -198,7 +200,7 @@ type ConfigType = number | string | boolean
 
 | **名称** | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
-| sportType | number | 否 | 否 | 运动类型，参见[锻炼记录类型常量](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-exercisedequencehelper)子数据类型id。 |
+| sportType | number | 否 | 否 | 运动类型，参见[锻炼记录类型常量](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-exercisesequencehelper)子数据类型id。 |
 | sportState | [SportState](#sportstate) | 否 | 否 | 运动状态。 |
 
 #### [h2]SportState
@@ -250,7 +252,7 @@ type ConfigType = number | string | boolean
 | **名称** | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
 | linkageType | [LinkageType](#linkagetype) | 否 | 否 | 联动类型。 |
-| sportType | number | 否 | 否 | 运动类型，参见[锻炼记录类型常量](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-exercisedequencehelper)子数据类型id。 |
+| sportType | number | 否 | 否 | 运动类型，参见[锻炼记录类型常量](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-exercisesequencehelper)子数据类型id。 |
 | activityGoals | [Goal](#goal)[] | 否 | 是 | 联动运动目标，若未填写，默认为空。 |
 | extensionConfig | Record | 否 | 是 | 扩展配置项，若未填写，默认为空。 |
 

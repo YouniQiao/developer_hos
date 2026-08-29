@@ -2,8 +2,8 @@
 title: "drawing_text_run.h"
 upstream_id: "harmonyos-references/capi-drawing-text-run-h"
 catalog: "harmonyos-references"
-content_hash: "b58839e6ff80"
-synced_at: "2026-07-09T01:00:58.758294"
+content_hash: "53c111521959"
+synced_at: "2026-08-29T18:17:55.783907"
 ---
 
 # drawing_text_run.h
@@ -69,8 +69,8 @@ OH_Drawing_Array* OH_Drawing_GetRunStringIndices(OH_Drawing_Run* run, int64_t st
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_Drawing_Run](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-run)* run | 指向渲染单元[OH_Drawing_Run](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-run)对象的指针。 |
-| int64_t start | 渲染单元内指定的开始位置，传入负数时该方法返回空指针。 |
-| int64_t length | 渲染单元内指定的长度，length为0时获取渲染单元的所有字符索引数组，length小于0时该方法返回空指针。 |
+| int64_t start | 渲染单元内指定的开始位置，取值范围为[0, glyphCount-1]，其中glyphCount为渲染单元字形数量。传入负数或超出渲染单元字形数量时，该方法返回空指针。 |
+| int64_t length | 渲染单元内指定的长度。length为0时获取渲染单元的所有字符索引数组；length小于0时该方法返回空指针；start+length超出渲染单元实际范围时，获取到渲染单元末尾的有效数据。 |
 
 返回：
 
@@ -96,7 +96,7 @@ uint64_t OH_Drawing_GetRunStringIndicesByIndex(OH_Drawing_Array* stringIndices, 
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_Drawing_Array](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-array)* stringIndices | 字符索引数组。 |
-| size_t index | 渲染单元字形的字符索引数组下标。 |
+| size_t index | 渲染单元字形的字符索引数组下标，取值范围为[0, arrayLength-1]，其中arrayLength为stringIndices数组的元素个数，超出该取值范围时返回0。 |
 
 返回：
 
@@ -141,8 +141,8 @@ void OH_Drawing_GetRunStringRange(OH_Drawing_Run* run, uint64_t* location, uint6
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_Drawing_Run](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-run)* run | 指向渲染单元[OH_Drawing_Run](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-run)对象的指针。 |
-| uint64_t* location | 表示渲染单元字形的字符范围的开始位置，该位置是相对于整个段落的偏移。 |
-| uint64_t* length | 表示渲染单元字符范围的长度。 |
+| uint64_t* location | 表示渲染单元字形的字符范围的开始位置，该位置是相对于整个段落的偏移。作为出参使用。调用者需提供有效的指针来接收返回值。 |
+| uint64_t* length | 表示渲染单元字符范围的长度。作为出参使用。调用者需提供有效的指针来接收返回值。 |
 
 #### [h2]OH_Drawing_GetRunTypographicBounds()
 
@@ -162,15 +162,15 @@ float OH_Drawing_GetRunTypographicBounds(OH_Drawing_Run* run, float* ascent, flo
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_Drawing_Run](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-run)* run | 指向渲染单元[OH_Drawing_Run](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-run)对象的指针。 |
-| float* ascent | 渲染单元中最高字符到基准线的距离。 |
-| float* descent | 渲染单元中最低字符到基准线的距离。 |
-| float* leading | 渲染单元行间距。 |
+| float* ascent | 渲染单元中最高字符到基准线的距离，单位为px。 |
+| float* descent | 渲染单元中最低字符到基准线的距离，单位为px。 |
+| float* leading | 渲染单元行间距，单位为px。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| float | 返回渲染单元排版宽度。 |
+| float | 返回渲染单元排版宽度，单位为px。 |
 
 #### [h2]OH_Drawing_RunPaint()
 
@@ -191,8 +191,8 @@ void OH_Drawing_RunPaint(OH_Drawing_Canvas* canvas, OH_Drawing_Run* run, double 
 | --- | --- |
 | [OH_Drawing_Canvas](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-canvas)* canvas | 指向画布[OH_Drawing_Canvas](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-canvas)对象的指针。 |
 | [OH_Drawing_Run](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-run)* run | 指向渲染单元[OH_Drawing_Run](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-run)对象的指针。 |
-| double x | 渲染单元x坐标。 |
-| double y | 渲染单元y坐标。 |
+| double x | 渲染单元x坐标。单位为px。 |
+| double y | 渲染单元y坐标。单位为px。 |
 
 #### [h2]OH_Drawing_GetRunImageBounds()
 
@@ -256,8 +256,8 @@ OH_Drawing_Array* OH_Drawing_GetRunGlyphs(OH_Drawing_Run* run, int64_t start, in
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_Drawing_Run](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-run)* run | 指向渲染单元[OH_Drawing_Run](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-run)对象的指针。 |
-| int64_t start | 渲染单元内指定的开始位置，传入负数时该方法返回空指针。 |
-| int64_t length | 渲染单元内指定的长度，length为0时获取渲染单元的所有字符索引，length小于0时该方法返回空指针。 |
+| int64_t start | 渲染单元内指定的开始位置，取值范围为[0, glyphCount-1]，其中glyphCount为渲染单元字形数量。传入负数或超出渲染单元字形数量时，该方法返回空指针。 |
+| int64_t length | 渲染单元内指定的长度。length为0时获取渲染单元的所有字形；length小于0时该方法返回空指针；start+length超出渲染单元实际范围时，获取到渲染单元末尾的有效数据。 |
 
 返回：
 
@@ -283,13 +283,13 @@ uint16_t OH_Drawing_GetRunGlyphsByIndex(OH_Drawing_Array* glyphs, size_t index)
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_Drawing_Array](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-array)* glyphs | 指向渲染单元字形数组[OH_Drawing_Array](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-array)对象的指针。 |
-| size_t index | 渲染单元字形数组下标。 |
+| size_t index | 渲染单元字形数组下标，取值范围为[0, arrayLength-1]，其中arrayLength为glyphs数组的元素个数，超出该取值范围时返回0。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| uint16_t | 渲染单元单个字形。 |
+| uint16_t | 返回渲染单元单个字形的字形ID。 |
 
 #### [h2]OH_Drawing_DestroyRunGlyphs()
 
@@ -328,8 +328,8 @@ OH_Drawing_Array* OH_Drawing_GetRunPositions(OH_Drawing_Run* run, int64_t start,
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_Drawing_Run](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-run)* run | 指向渲染单元[OH_Drawing_Run](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-run)对象的指针。 |
-| int64_t start | 渲染单元内指定的开始位置，传入负数时该方法返回空指针。 |
-| int64_t length | 渲染单元内指定的长度，length为0时获取渲染单元的所有字符索引，length小于0时该方法返回空指针。 |
+| int64_t start | 渲染单元内指定的开始位置，取值范围为[0, glyphCount-1]，其中glyphCount为渲染单元字形数量。传入负数或超出渲染单元字形数量时，该方法返回空指针。 |
+| int64_t length | 渲染单元内指定的长度。length为0时获取渲染单元的所有字形位置；length小于0时该方法返回空指针；start+length超出渲染单元实际范围时，获取到渲染单元末尾的有效数据。 |
 
 返回：
 
@@ -355,7 +355,7 @@ OH_Drawing_Point* OH_Drawing_GetRunPositionsByIndex(OH_Drawing_Array* positions,
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_Drawing_Array](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-array)* positions | 指向渲染单元字形位置数组[OH_Drawing_Array](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-array)对象的指针。 |
-| size_t index | 渲染单元字形位置数组下标。 |
+| size_t index | 渲染单元字形位置数组下标，取值范围为[0, arrayLength-1]，其中arrayLength为positions数组的元素个数，超出该取值范围时返回空指针。 |
 
 返回：
 
@@ -475,8 +475,8 @@ OH_Drawing_Array* OH_Drawing_GetRunGlyphAdvances(OH_Drawing_Run* run, uint32_t s
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_Drawing_Run](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-run)* run | 指向渲染单元[OH_Drawing_Run](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-run)对象的指针。 |
-| uint32_t start | 渲染单元内指定的开始位置，传入负数时该方法返回空指针。 |
-| uint32_t length | 渲染单元内指定的长度，如果length是0表示从start开始获取到渲染单元结束，length小于0时该方法返回空指针。 |
+| uint32_t start | 渲染单元内指定的开始位置，取值范围为[0, glyphCount-1]，其中glyphCount为渲染单元字形数量。传入值超出渲染单元字形数量时，该方法返回空指针。 |
+| uint32_t length | 渲染单元内指定的长度，length为0时获取从start开始到渲染单元结束的所有字形宽度。 |
 
 返回：
 
@@ -502,7 +502,7 @@ OH_Drawing_Point* OH_Drawing_GetRunGlyphAdvanceByIndex(OH_Drawing_Array* advance
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_Drawing_Array](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-array)* advances | 指向渲染单元字形宽度数组[OH_Drawing_Array](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-array)对象的指针。 |
-| size_t index | 渲染单元字形宽度数组的下标。 |
+| size_t index | 渲染单元字形宽度数组的下标，取值范围为[0, arrayLength-1]，其中arrayLength为advances数组的元素个数，超出该取值范围时返回空指针。 |
 
 返回：
 

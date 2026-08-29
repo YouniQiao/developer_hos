@@ -2,13 +2,13 @@
 title: "路径动画 (motionPath)"
 upstream_id: "harmonyos-references/ts-motion-path-animation"
 catalog: "harmonyos-references"
-content_hash: "6b825cd08149"
-synced_at: "2026-07-09T17:24:47.107247"
+content_hash: "49253bc98622"
+synced_at: "2026-08-29T18:14:44.864829"
 ---
 
 # 路径动画 (motionPath)
 
-设置组件进行位移动画时的运动路径。
+设置组件进行路径动画时的运动路径。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
 
@@ -16,7 +16,7 @@ synced_at: "2026-07-09T17:24:47.107247"
 
 motionPath(value: MotionPathOptions): T
 
-设置组件的路径动画。
+设置组件进行路径动画时的运动路径。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -26,17 +26,17 @@ motionPath(value: MotionPathOptions): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [MotionPathOptions](#motionpathoptions) | 是 | 设置组件的运动路径。 |
+| value | [MotionPathOptions](#motionpathoptions) | 是 | 设置组件进行路径动画时的运动路径。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### MotionPathOptions
 
-设置组件的运动路径。
+路径动画的运动路径参数选项。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -44,14 +44,14 @@ motionPath(value: MotionPathOptions): T
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| path | string | 否 | 否 | 位移动画的运动路径，使用[svg路径描述规范](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-path#svg路径描述规范)。path中支持使用start和end进行起点和终点的替代，如：'Mstart.x start.y L50 50 Lend.x end.y Z'，更多说明请参考[绘制路径](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-svg-path)。 设置为空字符串时相当于不设置路径动画。 |
-| from | number | 否 | 是 | 运动路径的起点。 默认值：0.0 取值范围：[0.0, 1.0] 设置小于0.0或大于1.0的值时，按默认值0.0处理。 |
-| to | number | 否 | 是 | 运动路径的终点。 默认值：1.0 取值范围：[0.0, 1.0] 设置小于0.0或大于1.0的值时，按默认值1.0处理，且满足to值 >= 异常值处理后的from值。当处理后的to值小于异常值处理后的from值时，to值会被修正为等于异常值处理后的from值，即to被向上修正至与from相同。当from等于to时（无论是开发者主动设置还是因超出范围被修正），组件在路径上不产生位移。 |
-| rotatable | boolean | 否 | 是 | 是否跟随路径进行旋转。true代表跟随路径进行旋转，false代表不跟随路径进行旋转。 默认值：false |
+| path | string | 否 | 否 | 位移动画的运动路径，使用[svg路径](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-path#svg路径描述规范)。path中支持使用start和end进行起点和终点的替代，如：'Mstart.x start.y L50 50 Lend.x end.y Z'，更多说明请参考[绘制路径](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-svg-path)。 设置为空字符串时相当于不设置路径动画，传入不符合SVG路径规范的字符串时路径动画不生效。 |
+| from | number | 否 | 是 | 运动路径的起点位置比例。 默认值：0.0 取值范围：[0.0, 1.0] 设置小于0.0或大于1.0的值时，按默认值0.0处理。 from的处理值会约束to的取值，需满足to值 >= from的处理值。当from等于to时（无论是开发者主动设置还是因超出范围被修正），组件在路径上不产生位移。 |
+| to | number | 否 | 是 | 运动路径的终止位置比例。 取值原则：数值表示路径上的比例位置，0.0为路径起点，1.0为路径终点，中间值为路径上的对应比例位置。 默认值：1.0 取值范围：[0.0, 1.0] 设置小于0.0或大于1.0的值时，按默认值1.0处理，且满足to值 >= 异常值处理后的from值。当处理后的to值小于异常值处理后的from值时，to值会被修正为等于异常值处理后的from值，即to被向上修正至与from相同。当from等于to时（无论是开发者主动设置还是因超出范围被修正），组件在路径上不产生位移。 |
+| rotatable | boolean | 否 | 是 | 是否跟随路径进行旋转。true代表组件沿运动方向自动旋转（旋转角度由路径切线方向决定），false代表不跟随路径进行旋转。 默认值：false |
 
 #### 示例
 
-该示例主要演示如何设置组件进行位移动画时的运动路径。
+该示例主要演示如何设置组件进行位移动画时的运动路径。此方法仅配置运动路径参数，需配合animateTo等动画触发方法及组件属性状态变化才能产生实际的位移动画效果，单独设置motionPath不会触发动画。
 
 ```
 // xxx.ets
@@ -68,7 +68,7 @@ struct MotionPathExample {
           from: 0.0,
           to: 1.0,
           rotatable: true
-        }) // 执行动画：从起点移动到(300,200)，再到(300,500)，再到终点
+        }) // 设置运动路径：从起点经(300,200)、(300,500)到终点
         .onClick(() => {
           this.getUIContext()?.animateTo({ duration: 4000, curve: Curve.Linear }, () => {
             this.toggle = !this.toggle; // 通过this.toggle变化组件的位置
@@ -78,4 +78,4 @@ struct MotionPathExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002634010854.gif)
+ ![](./img/zh-cn_image_0000002731359267.gif)

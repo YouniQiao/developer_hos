@@ -2,8 +2,8 @@
 title: "@ohos.security.CryptoExtensionAbility (密钥扩展能力)"
 upstream_id: "harmonyos-references/js-apis-cryptoextensionability"
 catalog: "harmonyos-references"
-content_hash: "7aaa6fc0de17"
-synced_at: "2026-07-28T16:50:33.280375"
+content_hash: "758a10a9fb9a"
+synced_at: "2026-08-29T18:16:33.931107"
 ---
 
 # @ohos.security.CryptoExtensionAbility (密钥扩展能力)
@@ -547,7 +547,7 @@ onExportCertificate(resourceId: string, params?: Array<huksExternalCrypto.HuksEx
 
 ```
 import { huksExternalCrypto, CryptoExtensionAbility, HuksCryptoExtensionResult,
-  HuksCryptoExtensionCertInfo } from '@kit.UniversalKeystoreKit';
+  HuksCryptoExtensionCertInfo, HuksCryptoExtensionParam } from '@kit.UniversalKeystoreKit';
 
 export default class CryptoExtension extends CryptoExtensionAbility {
   onExportCertificate(resourceId: string, params?: Array<huksExternalCrypto.HuksExternalCryptoParam> | HuksCryptoExtensionParam[]): Promise<HuksCryptoExtensionResult> {

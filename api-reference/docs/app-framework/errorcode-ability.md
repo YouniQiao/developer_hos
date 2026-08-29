@@ -2,8 +2,8 @@
 title: "元能力子系统错误码"
 upstream_id: "harmonyos-references/errorcode-ability"
 catalog: "harmonyos-references"
-content_hash: "1c2512bd4a6c"
-synced_at: "2026-07-28T16:40:47.455179"
+content_hash: "b35dca2e638e"
+synced_at: "2026-08-29T18:12:10.940159"
 ---
 
 # 元能力子系统错误码
@@ -92,7 +92,7 @@ Cannot start an invisible component.
 
 处理步骤
 
-1. [Stage模型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-terminology#stage模型)下，拉起应用时抛出16000004异常，表示被拉应用调用失败，需要检查被拉应用module.json5的Ability字段的[exported](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#abilities标签)配置是否为true。该配置字段为true，表示可以被其他应用调用；该配置字段为false，表示不可以被其他应用调用。
+1. [Stage模型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-terminology#stage模型)下，拉起应用时抛出16000004异常，表示无法启动不可见组件，需要检查被拉应用module.json5的Ability字段的[exported](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#abilities标签)配置是否为true。该配置字段为true，表示可以被其他应用调用；该配置字段为false，表示不可以被其他应用调用。
 2. 若应用需要拉起exported为false的ability，请申请ohos.permission.START_INVISIBLE_ABILITY权限（该权限仅系统应用可申请）。
 
 #### 16000005 指定的进程权限校验失败
@@ -293,7 +293,7 @@ Redirection to a third-party application is not allowed in API version greater t
 
 使用隐式启动方式或通过[openLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext#openlink12)跳转其他应用。
 
-#### 16000019 隐式启动未查找到匹配应用
+#### 16000019 隐式启动未查找到匹配Ability
 
 错误信息
 
@@ -312,6 +312,24 @@ No matching ability is found.
 
 1. 确保隐式启动的参数配置正确，匹配规则详见[显式Want与隐式Want匹配规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/explicit-implicit-want-mappings)。
 2. 确保对应的HAP包已安装。
+
+#### 16000020 传入的Context对象不是Ability级别Context
+
+错误信息
+
+The context is not ability context.
+
+错误描述
+
+传入的Context对象不是Ability级别Context。
+
+可能原因
+
+传入的Context对象既不是UIAbilityContext或ExtensionContext，也没有继承自UIAbilityContext或ExtensionContext。
+
+处理步骤
+
+使用UIAbilityContext或ExtensionContext对象作为入参，或者使用继承了UIAbilityContext或ExtensionContext类的对象作为入参。
 
 #### 16000050 内部错误
 
@@ -337,7 +355,7 @@ Internal error.
 3. 确保设备上已安装应用市场App，或者在拉起应用前检查应用市场App是否已安装。
 4. 对于开发者无法处理的系统内部错误，请尝试重新调用该接口，或者重启设备。
 
-#### 16000053 非顶层应用
+#### 16000053 非顶层Ability
 
 错误信息
 
@@ -345,17 +363,17 @@ The ability is not on the top of the UI.
 
 错误描述
 
-当前应用未显示在界面顶层时，方法将返回该错误码。
+当前Ability未显示在界面顶层时，方法将返回该错误码。
 
 可能原因
 
-用户执行免安装启动时需要确保应用在前台，但应用未显示在界面顶层。
+用户执行免安装启动时需要确保Ability在前台，但Ability未显示在界面顶层。
 
 处理步骤
 
-1. 请确保当前应用已启动并处于前台运行状态。
-2. 请核实应用界面是否完全显示，且未被其他应用窗口遮挡或最小化。
-3. 如设备启用了分屏或多窗口模式，请确保当前应用为焦点窗口。
+1. 请确保当前Ability已启动并处于前台运行状态。
+2. 请核实Ability界面是否完全显示，且未被其他Ability窗口遮挡或最小化。
+3. 如设备启用了分屏或多窗口模式，请确保当前Ability为焦点窗口。
 
 #### 16000055 免安装超时
 
@@ -657,7 +675,7 @@ BackToCaller is not supported.
 
 错误信息
 
-The app instance key is invalid.
+The app instance key does not exist.
 
 错误描述
 
@@ -958,6 +976,60 @@ Current ability is not in foreground.
 
 检查当前Ability是否处于前台状态。
 
+#### 16000122 待启动的目标组件被系统管控模块拦截
+
+错误信息
+
+The target component is blocked by the system module and does not support startup.
+
+错误描述
+
+待启动的目标组件被系统管控模块拦截，不支持启动。
+
+可能原因
+
+系统管控模块拦截了目标应用的启动。
+
+处理步骤
+
+如果无法启动目标UIAbility，可以尝试启动其他UIAbility。
+
+#### 16000123 不支持隐式启动
+
+错误信息
+
+Implicit startup is not supported.
+
+错误描述
+
+不支持隐式启动。
+
+可能原因
+
+wantList参数中存在隐式Want。
+
+处理步骤
+
+检查wantList参数，确保不存在隐式Want，若存在则将其修改为显式Want。
+
+#### 16000124 不支持启动分布式UIAbility
+
+错误信息
+
+Starting a remote UIAbility is not supported.
+
+错误描述
+
+不支持启动分布式UIAbility。
+
+可能原因
+
+Want中的deviceId不为空且非本机的设备ID。
+
+处理步骤
+
+将Want中的deviceId字段设为空，或配置为本机的deviceId。
+
 #### 16000130 UIAbility不属于调用方
 
 错误信息
@@ -980,7 +1052,7 @@ The UIAbility not belong to caller.
 
 错误信息
 
-The UIAbility is already exist, can not start again.
+The UIAbility is already exists, can not start again.
 
 错误描述
 
@@ -1207,15 +1279,15 @@ The observer does not exist.
 
 错误描述
 
-当监听器不存在时，方法将返回该错误码。
+当observer不存在时，方法将返回该错误码。
 
 可能原因
 
-当前监听器不存在或者已注销。
+当前observer不存在或者已注销。
 
 处理步骤
 
-请检查是否有重复注销监听器。
+请检查是否有重复注销observer。
 
 #### 29600001 图片编辑内部错误
 
@@ -1236,7 +1308,7 @@ Internal error.
 1. 确认系统内存是否足够，设备使用的系统版本是否存在异常。
 2. 尝试重启设备。
 
-#### 29600002 图片编辑内部错误
+#### 29600002 图片输入错误
 
 错误信息
 
@@ -1853,7 +1925,7 @@ Classes decorated with @InsightIntentEntity must implement InsightIntent.IntentE
 
 处理步骤
 
-确保类实现InsightIntent.IntentEntity或继承至其他意图实体。
+确保类实现InsightIntent.IntentEntity或继承自其他意图实体。
 
 #### 10110022 @InsightIntentForm装饰器修饰位置错误
 
@@ -2001,7 +2073,7 @@ Maximum connections from the same caller have been reached.
 
 调用方断开一些连接后重新发起连接。
 
-#### 16000161 当前进程的处理流程尚未结束，无法调用此API
+#### 16000161 当前进程延迟退出未处于等待状态，无法调用此API
 
 错误信息
 
@@ -2036,6 +2108,44 @@ The current process still has another UIAbility, and this API cannot be called.
 处理步骤
 
 调用方保证当前进程中只有一个UIAbility且处于退出状态。
+
+#### 16000163 文件类型错误
+
+错误信息
+
+The file type is incorrect.
+
+错误描述
+
+文件类型错误。
+
+可能原因
+
+1. 调用appMemoryOptimizer.evictFilePages接口时，传入的fileNames数组里的文件名未以.so、.hap或.hsp结尾。
+2. 调用appMemoryOptimizer.evictModuleFilePages接口时，memory_optimizer.json配置文件中evictFilePages数组里的文件名未以.so、.hap或.hsp结尾。
+
+处理步骤
+
+1. 若调用appMemoryOptimizer.evictFilePages接口，检查传入的fileNames数组，确保所有文件名均以.so、.hap或.hsp结尾。
+2. 若调用appMemoryOptimizer.evictModuleFilePages接口，检查对应模块的memory_optimizer.json配置文件，确保evictFilePages数组中所有文件名均以.so、.hap或.hsp结尾。
+
+#### 16000164 解析配置文件失败
+
+错误信息
+
+Failed to parse the configuration file.
+
+错误描述
+
+解析配置文件失败。
+
+可能原因
+
+调用appMemoryOptimizer.evictModuleFilePages接口时，memory_optimizer.json配置文件不存在、路径错误或内容格式错误。
+
+处理步骤
+
+检查对应模块目录下src/main/resources/rawfile/memory_optimizer.json配置文件是否存在，并确认其内容格式是否正确。
 
 #### 35600004 指定的AgentCard版本低于当前版本
 

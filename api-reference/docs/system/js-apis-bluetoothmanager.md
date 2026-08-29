@@ -2,13 +2,13 @@
 title: "@ohos.bluetoothManager (蓝牙)"
 upstream_id: "harmonyos-references/js-apis-bluetoothmanager"
 catalog: "harmonyos-references"
-content_hash: "ed535ec000f9"
-synced_at: "2026-07-28T16:50:41.532214"
+content_hash: "b40e5e659a1a"
+synced_at: "2026-08-29T18:16:40.674584"
 ---
 
 # @ohos.bluetoothManager (蓝牙)
 
-蓝牙模块提供了基础的传统蓝牙能力以及BLE的扫描、广播等功能。
+蓝牙模块提供了基础的传统蓝牙能力以及[BLE](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#ble)的扫描、广播等功能。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 9开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -2503,9 +2503,9 @@ startAdvertising(setting: AdvertiseSetting, advData: AdvertiseData, advResponse?
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| setting | [AdvertiseSetting](#advertisesettingdeprecated) | 是 | BLE广播的相关参数。 |
-| advData | [AdvertiseData](#advertisedatadeprecated) | 是 | BLE广播包内容。 |
-| advResponse | [AdvertiseData](#advertisedatadeprecated) | 否 | BLE回复扫描请求回复响应。 |
+| setting | [AdvertiseSetting](#advertisesettingdeprecated) | 是 | 广播的发送参数。 |
+| advData | [AdvertiseData](#advertisedatadeprecated) | 是 | 需要发送的广播报文数据内容。 |
+| advResponse | [AdvertiseData](#advertisedatadeprecated) | 否 | 回复扫描请求的广播报文数据内容。 |
 
 错误码：
 
@@ -4413,7 +4413,7 @@ try {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| uuid | string | 否 | 否 | spp单据的uuid。 |
+| uuid | string | 否 | 否 | 套接字链路类型的服务UUID。 |
 | secure | boolean | 否 | 否 | 是否是安全通道。 |
 | type | [SppType](#spptypedeprecated) | 否 | 否 | Spp链路类型。 |
 
@@ -4711,7 +4711,7 @@ try {
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | interval | number | 否 | 是 | 表示广播间隔，最小值设置32个slot表示20ms，最大值设置16384个slot，默认值设置为1600个slot表示1s。 |
-| txPower | number | 否 | 是 | 表示发送功率，最小值设置-127，最大值设置1，默认值设置-7，单位dbm。 |
+| txPower | number | 否 | 是 | 表示发送功率，最小值设置-127，最大值设置1，默认值设置-7，单位dBm。 |
 | connectable | boolean | 否 | 是 | 表示是否是可连接广播，默认值设置为true。 |
 
 #### AdvertiseData(deprecated)
@@ -4917,9 +4917,9 @@ try {
 | HEALTH_PULSE_OXIMETER | 0x0914 | 表示脉搏血氧仪健康设备。 |
 | HEALTH_PULSE_RATE | 0x0918 | 表示脉搏率健康设备。 |
 | HEALTH_DATA_DISPLAY | 0x091C | 表示数据显示健康设备。 |
-| HEALTH_STEP_COUNTER | 0x0920 | 表示阶梯计数器健康设备。 |
+| HEALTH_STEP_COUNTER | 0x0920 | 表示计步器健康设备。 |
 | HEALTH_BODY_COMPOSITION_ANALYZER | 0x0924 | 表示身体成分分析仪健康设备。 |
-| HEALTH_PEAK_FLOW_MONITOR | 0x0928 | 表示湿度计健康设备。 |
+| HEALTH_PEAK_FLOW_MONITOR | 0x0928 | 表示峰值流量监控仪健康设备。 |
 | HEALTH_MEDICATION_MONITOR | 0x092C | 表示药物监视仪健康设备。 |
 | HEALTH_KNEE_PROSTHESIS | 0x0930 | 表示膝盖假肢健康设备。 |
 | HEALTH_ANKLE_PROSTHESIS | 0x0934 | 表示脚踝假肢健康设备。 |

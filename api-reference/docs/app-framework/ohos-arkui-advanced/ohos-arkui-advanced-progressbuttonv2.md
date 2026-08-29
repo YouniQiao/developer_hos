@@ -2,8 +2,8 @@
 title: "ProgressButtonV2"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-progressbuttonv2"
 catalog: "harmonyos-references"
-content_hash: "8231d850b19c"
-synced_at: "2026-07-09T00:58:15.881245"
+content_hash: "95589d47ad57"
+synced_at: "2026-08-29T18:15:13.862209"
 ---
 
 # ProgressButtonV2
@@ -21,7 +21,7 @@ synced_at: "2026-07-09T00:58:15.881245"
 #### 导入模块
 
 ```
-import { ColorMetrics, LengthMetrics, ProgressButtonV2,  ProgressButtonV2Color } from '@kit.ArkUI';
+import { ColorMetrics, LengthMetrics, ProgressButtonV2, ProgressButtonV2Color } from '@kit.ArkUI';
 ```
 
 #### ProgressButtonV2
@@ -33,6 +33,8 @@ ProgressButtonV2({progress: number, content: ResourceStr, progressButtonWidth?: 
 装饰器类型：@ComponentV2
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -46,7 +48,7 @@ ProgressButtonV2({progress: number, content: ResourceStr, progressButtonWidth?: 
 | onClicked | [ClickCallback](#clickcallback) | 是 | @Param | 下载按钮的点击回调。 |
 | isEnabled | boolean | 是 | @Param | 下载按钮是否可以点击。 true：可以点击。 false：不可点击。 |
 | colorOptions | [ProgressButtonV2Color](#progressbuttonv2color) | 否 | @Param | 下载按钮颜色选项。 |
-| progressButtonRadius18+ | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | @Param | 下载按钮的圆角（不支持百分比设置）。 取值范围：[0, height/2] 默认值：height/2 设置非法数值时，按照默认值处理。 |
+| progressButtonRadius | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | @Param | 下载按钮的圆角（不支持百分比设置）。 取值范围：[0, height/2] 默认值：height/2 设置非法数值时，按照默认值处理。 |
 
 #### 属性
 
@@ -74,6 +76,8 @@ type ClickCallback = () => void
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 设备行为差异： 该接口在Wearable设备上使用时，应用程序运行异常，异常信息中提示接口未定义，在其他设备中可正常调用。
@@ -95,6 +99,8 @@ constructor(options: ProgressButtonV2ColorOptions);
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 设备行为差异： 该接口在Wearable设备上使用时，应用程序运行异常，异常信息中提示接口未定义，在其他设备中可正常调用。
 
 参数：
@@ -108,6 +114,8 @@ constructor(options: ProgressButtonV2ColorOptions);
 下载按钮色彩信息选项。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -177,4 +185,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732939.png)
+ ![](./img/zh-cn_image_0000002731359377.png)

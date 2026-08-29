@@ -2,8 +2,8 @@
 title: "FIDO2_PublicKeyAssertionCredential"
 upstream_id: "harmonyos-references/_f_i_d_o2___public_key_assertion_credential"
 catalog: "harmonyos-references"
-content_hash: "7a12d6250acb"
-synced_at: "2026-07-28T16:50:31.361801"
+content_hash: "65f21179a573"
+synced_at: "2026-08-29T18:16:32.031140"
 ---
 
 # FIDO2_PublicKeyAssertionCredential
@@ -28,7 +28,7 @@ synced_at: "2026-07-28T16:50:31.361801"
 | const char * [id](#id) | 凭据的标识符。对于每种类型的凭据，标识符的要求都是不同的。 |
 | const char * [type](#type) | 该属性以JSON字符串形式返回接口对象中用于指定凭据类型的插槽。该插槽用于指定此对象所表示的凭据类型。 |
 | [FIDO2_AuthenticatorResponse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_f_i_d_o2___authenticator_response) [response](#response) | 认证器断言响应。 |
-| [FIDO2_AuthenticatorAttachment](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey#fido2_authenticatorattachment-1) [authenticatorAttachment](#authenticatorattachment) | 认证器信息（FIDO2_PLATFORM表示平台，FIDO2_ROAMING表示漫游）。默认值为FIDO2_PLATFORM。可选。 |
+| [FIDO2_AuthenticatorAttachment](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey#fido2_authenticatorattachment-1) [authenticatorAttachment](#authenticatorattachment) | 认证器信息（FIDO2_PLATFORM表示平台，FIDO2_CROSS_PLATFORM表示漫游）。默认值为FIDO2_PLATFORM。可选。 |
 | [AuthenticationExtensionsClientOutputs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_authentication_extensions_client_outputs) [clientExtensionResults](#clientextensionresults) | 客户端扩展结果。当前版本不支持扩展，因此占位符始终为NULL，必须将clientExtensionResults键对应的值解析为{}。 |
 
 #### 结构体成员变量说明
@@ -40,7 +40,7 @@ FIDO2_AuthenticatorAttachment FIDO2_PublicKeyAssertionCredential::authenticatorA
 ```
  描述
 
-认证器信息（平台、漫游）。可选。
+认证器信息（平台、漫游）。默认值为FIDO2_PLATFORM。可选。
 
 #### [h2]clientExtensionResults
 

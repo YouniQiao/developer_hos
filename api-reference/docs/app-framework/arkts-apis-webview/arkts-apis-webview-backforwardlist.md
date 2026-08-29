@@ -2,8 +2,8 @@
 title: "Interface (BackForwardList)"
 upstream_id: "harmonyos-references/arkts-apis-webview-backforwardlist"
 catalog: "harmonyos-references"
-content_hash: "befd014bf8ce"
-synced_at: "2026-07-09T00:58:52.176221"
+content_hash: "4c543a347a9f"
+synced_at: "2026-08-29T18:15:59.028495"
 ---
 
 # Interface (BackForwardList)
@@ -29,13 +29,13 @@ import { webview } from '@kit.ArkWeb';
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | currentIndex | number | 否 | 否 | 当前在页面历史列表中的索引。 |
-| size | number | 否 | 否 | 历史列表中索引的数量，最多保存50条，超过时起始记录会被覆盖。 |
+| size | number | 否 | 否 | 历史列表中历史记录的数量，最多保存50条，超过时起始记录会被覆盖。 |
 
 #### getItemAtIndex
 
 getItemAtIndex(index: number): HistoryItem
 
-获取历史列表中指定索引的历史记录项信息。
+获取历史列表中指定索引的历史记录项信息。需先通过[getBackForwardEntries](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#getbackforwardentries)方法获取BackForwardList实例。
 
 系统能力： SystemCapability.Web.Webview.Core
 

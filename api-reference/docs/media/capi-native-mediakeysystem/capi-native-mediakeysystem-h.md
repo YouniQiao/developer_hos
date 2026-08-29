@@ -2,8 +2,8 @@
 title: "native_mediakeysystem.h"
 upstream_id: "harmonyos-references/capi-native-mediakeysystem-h"
 catalog: "harmonyos-references"
-content_hash: "182825cf00ce"
-synced_at: "2026-08-21T15:36:47.122888"
+content_hash: "46da2d1860e3"
+synced_at: "2026-08-29T18:17:33.632487"
 ---
 
 # native_mediakeysystem.h
@@ -35,7 +35,7 @@ synced_at: "2026-08-21T15:36:47.122888"
 | [Drm_ErrCode OH_MediaKeySystem_SetCallback(MediaKeySystem *mediaKeySystem, OH_MediaKeySystem_Callback callback)](#oh_mediakeysystem_setcallback) | - | 设置MediaKeySystem事件回调。 |
 | [Drm_ErrCode OH_MediaKeySystem_GetMediaKeySystems(DRM_MediaKeySystemDescription *descs, uint32_t *count)](#oh_mediakeysystem_getmediakeysystems) | - | 获取设备支持的DRM解决方案的名称和唯一标识的列表。 |
 | [bool OH_MediaKeySystem_IsSupported(const char *name)](#oh_mediakeysystem_issupported) | - | 查询设备是否支持对应的DRM解决方案。 |
-| [bool OH_MediaKeySystem_IsSupported2(const char *name, const char *mimeType)](#oh_mediakeysystem_issupported2) | - | 查询设备是否支持对应的DRM解决方案名称及媒体类型。可通过[OH_MediaKeySystem_IsSupported](#oh_mediakeysystem_issupported)接口先确认name参数对应的DRM解决方案是否是设备支持的。 |
+| [bool OH_MediaKeySystem_IsSupported2(const char *name, const char *mimeType)](#oh_mediakeysystem_issupported2) | - | 查询设备是否支持对应的DRM解决方案名称及媒体类型。可通过[OH_MediaKeySystem_IsSupported](#oh_mediakeysystem_issupported)接口先确认DRM解决方案是否被设备支持。 |
 | [bool OH_MediaKeySystem_IsSupported3(const char *name, const char *mimeType, DRM_ContentProtectionLevel contentProtectionLevel)](#oh_mediakeysystem_issupported3) | - | 查询设备是否支持对应的DRM解决方案、媒体类型、内容保护级别。可通过[OH_MediaKeySystem_IsSupported2](#oh_mediakeysystem_issupported2)接口先判断mimeType是否支持。 |
 | [Drm_ErrCode OH_MediaKeySystem_Create(const char *name, MediaKeySystem **mediaKeySystem)](#oh_mediakeysystem_create) | - | 创建MediaKeySystem实例。 |
 | [Drm_ErrCode OH_MediaKeySystem_SetConfigurationString(MediaKeySystem *mediaKeySystem, const char *configName, const char *value)](#oh_mediakeysystem_setconfigurationstring) | - | 设置字符串类型的配置属性。 |
@@ -50,7 +50,7 @@ synced_at: "2026-08-21T15:36:47.122888"
 | [Drm_ErrCode OH_MediaKeySystem_ProcessKeySystemResponse(MediaKeySystem *mediaKeySystem, uint8_t *response, int32_t responseLen)](#oh_mediakeysystem_processkeysystemresponse) | - | 处理设备DRM证书请求响应。 |
 | [Drm_ErrCode OH_MediaKeySystem_GetOfflineMediaKeyIds(MediaKeySystem *mediaKeySystem, DRM_OfflineMediakeyIdArray *offlineMediaKeyIds)](#oh_mediakeysystem_getofflinemediakeyids) | - | 获取离线媒体密钥标识列表，媒体密钥标识用于对离线媒体密钥的管理。 |
 | [Drm_ErrCode OH_MediaKeySystem_GetOfflineMediaKeyStatus(MediaKeySystem *mediaKeySystem, uint8_t *offlineMediaKeyId, int32_t offlineMediaKeyIdLen, DRM_OfflineMediaKeyStatus *status)](#oh_mediakeysystem_getofflinemediakeystatus) | - | 获取离线媒体密钥状态。 |
-| [Drm_ErrCode OH_MediaKeySystem_ClearOfflineMediaKeys(MediaKeySystem *mediaKeySystem, uint8_t *offlineMediaKeyId, int32_t offlineMediaKeyIdLen)](#oh_mediakeysystem_clearofflinemediakeys) | - | 按id清除离线媒体密钥。 |
+| [Drm_ErrCode OH_MediaKeySystem_ClearOfflineMediaKeys(MediaKeySystem *mediaKeySystem, uint8_t *offlineMediaKeyId, int32_t offlineMediaKeyIdLen)](#oh_mediakeysystem_clearofflinemediakeys) | - | 按ID清除离线媒体密钥。 |
 | [Drm_ErrCode OH_MediaKeySystem_GetCertificateStatus(MediaKeySystem *mediaKeySystem, DRM_CertificateStatus *certStatus)](#oh_mediakeysystem_getcertificatestatus) | - | 获取设备DRM证书状态。 |
 | [Drm_ErrCode OH_MediaKeySystem_Destroy(MediaKeySystem *mediaKeySystem)](#oh_mediakeysystem_destroy) | - | 销毁MediaKeySystem实例。 |
 
@@ -172,7 +172,7 @@ bool OH_MediaKeySystem_IsSupported(const char *name)
 
 | 参数项 | 描述 |
 | --- | --- |
-| const char *name | 输入参数，DRM解决方案名称。可通过[OH_MediaKeySystem_GetMediaKeySystems](#oh_mediakeysystem_getmediakeysystems)接口获取设备支持的DRM解决方案名称。示例："com.wiseplay.drm"。 |
+| const char *name | DRM解决方案名称。可通过[OH_MediaKeySystem_GetMediaKeySystems](#oh_mediakeysystem_getmediakeysystems)接口获取设备支持的DRM解决方案名称。示例："com.wiseplay.drm"。 |
 
 返回：
 
@@ -187,7 +187,7 @@ bool OH_MediaKeySystem_IsSupported2(const char *name, const char *mimeType)
 ```
  描述
 
-查询设备是否支持对应的DRM解决方案名称及媒体类型。可通过[OH_MediaKeySystem_IsSupported](#oh_mediakeysystem_issupported)接口先确认name参数对应的DRM解决方案是否是设备支持的。
+查询设备是否支持对应的DRM解决方案名称及媒体类型。可通过[OH_MediaKeySystem_IsSupported](#oh_mediakeysystem_issupported)接口先确认DRM解决方案是否被设备支持。
 
 起始版本： 11
 
@@ -195,7 +195,7 @@ bool OH_MediaKeySystem_IsSupported2(const char *name, const char *mimeType)
 
 | 参数项 | 描述 |
 | --- | --- |
-| const char *name | 输入参数，DRM解决方案名称。可通过[OH_MediaKeySystem_GetMediaKeySystems](#oh_mediakeysystem_getmediakeysystems)接口获取设备支持的DRM解决方案名称。 |
+| const char *name | DRM解决方案名称。可通过[OH_MediaKeySystem_GetMediaKeySystems](#oh_mediakeysystem_getmediakeysystems)接口获取设备支持的DRM解决方案名称。 |
 | const char *mimeType | 输入参数，媒体类型，支持的媒体类型取决于DRM解决方案，如：video/avc、video/hevc。 |
 
 返回：
@@ -219,7 +219,7 @@ bool OH_MediaKeySystem_IsSupported3(const char *name, const char *mimeType,DRM_C
 
 | 参数项 | 描述 |
 | --- | --- |
-| const char *name | 输入参数，DRM解决方案名称。可通过[OH_MediaKeySystem_GetMediaKeySystems](#oh_mediakeysystem_getmediakeysystems)接口获取设备支持的DRM解决方案名称。 |
+| const char *name | DRM解决方案名称。可通过[OH_MediaKeySystem_GetMediaKeySystems](#oh_mediakeysystem_getmediakeysystems)接口获取设备支持的DRM解决方案名称。 |
 | const char *mimeType | 输入参数，媒体类型，支持的媒体类型取决于DRM解决方案，如：video/avc、video/hevc。 |
 | [DRM_ContentProtectionLevel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-drm-common-h#drm_contentprotectionlevel) contentProtectionLevel | 输入参数，内容保护级别。 |
 
@@ -295,7 +295,7 @@ Drm_ErrCode OH_MediaKeySystem_GetConfigurationString(MediaKeySystem *mediaKeySys
 | --- | --- |
 | [MediaKeySystem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drm-mediakeysystem) *mediaKeySystem | MediaKeySystem实例。 |
 | const char *configName | 字符串类型配置名。 |
-| char *value | 字符串类型配置值。 |
+| char *value | 字符串类型配置值，用于存储获取的配置属性值。该参数不能为空，具体支持的取值由设备上DRM解决方案决定。 |
 | int32_t valueLen | 字符串类型配置值长度。 |
 
 返回：
@@ -320,7 +320,7 @@ Drm_ErrCode OH_MediaKeySystem_SetConfigurationByteArray(MediaKeySystem *mediaKey
 | 参数项 | 描述 |
 | --- | --- |
 | [MediaKeySystem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drm-mediakeysystem) *mediaKeySystem | MediaKeySystem实例。 |
-| const char *configName | 字符数组类型配置属性名，不能为空，具体支持的属性名由设备上DRM解决方案决定。 |
+| const char *configName | 字符数组类型配置属性名称，不能为空，具体支持的属性名由设备上DRM解决方案决定。 |
 | uint8_t *value | 字符数组类型配置属性值，不能为空，具体支持的属性值由设备上DRM解决方案决定。 |
 | int32_t valueLen | 字符数组类型配置属性值长度。 |
 
@@ -347,7 +347,7 @@ Drm_ErrCode OH_MediaKeySystem_GetConfigurationByteArray(MediaKeySystem *mediaKey
 | --- | --- |
 | [MediaKeySystem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drm-mediakeysystem) *mediaKeySystem | MediaKeySystem实例。 |
 | const char *configName | 字符数组类型配置属性名称，不能为空，具体支持的属性名由设备上DRM解决方案决定。 |
-| uint8_t *value | 字符数组类型配置属性。 |
+| uint8_t *value | 字符数组类型配置属性，用于存储获取的配置属性值。该参数不能为空，具体支持的取值由设备上DRM解决方案决定。 |
 | int32_t *valueLen | 字符数组类型配置属性长度。 |
 
 返回：

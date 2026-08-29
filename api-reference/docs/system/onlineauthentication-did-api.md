@@ -2,8 +2,8 @@
 title: "DID"
 upstream_id: "harmonyos-references/onlineauthentication-did-api"
 catalog: "harmonyos-references"
-content_hash: "eaee672a30be"
-synced_at: "2026-07-28T16:50:30.623110"
+content_hash: "a64cbeb8e8e5"
+synced_at: "2026-08-29T18:16:31.040197"
 ---
 
 # DID
@@ -560,7 +560,7 @@ DID查询响应。
 | --- | --- | --- | --- | --- |
 | verifierDisplayName | string | 否 | 否 | 验证方显示名称。最大长度为1024字节。默认值为空。 |
 | purpose | string | 否 | 否 | 用途。最大长度为1024字节。默认值为空。 |
-| extension | string | 否 | 是 | 扩展信息。最大长度为1024字节。默认值为空。 |
+| extension | string | 否 | 是 | 扩展信息。最大长度为10000字节。默认值为空。 |
 
 #### GetDigitalCredentialRequest
 
@@ -618,7 +618,7 @@ DID查询响应。
 | credentialData | string | 否 | 否 | 凭证数据，当前仅支持W3C协议标准中的VC/VP格式。最大长度为1024字节。默认值为空。 |
 | bioId | string | 否 | 是 | 认证器凭证ID。最大长度为1024字节。默认值为空。 |
 
-#### generateKey
+#### did.generateKey
 
 generateKey(context: common.Context, generateKeyRequest: GenerateKeyRequest): Promise<GenerateKeyResponse>
 
@@ -691,7 +691,7 @@ try {
 }
 ```
 
-#### importDid
+#### did.importDid
 
 importDid(context: common.Context, importDidRequest: ImportDidRequest): Promise<void>
 
@@ -764,7 +764,7 @@ try {
 }
 ```
 
-#### queryDid
+#### did.queryDid
 
 queryDid(context: common.Context, queryDidRequest: QueryDidRequest): Promise<QueryDidResponse>
 
@@ -831,7 +831,7 @@ try {
 }
 ```
 
-#### deleteDid
+#### did.deleteDid
 
 deleteDid(context: common.Context, did: string): Promise<void>
 
@@ -889,7 +889,7 @@ try {
 }
 ```
 
-#### sign
+#### did.sign
 
 sign(context: common.Context, signRequest: SignRequest): Promise<SignResponse>
 
@@ -954,7 +954,7 @@ try {
 }
 ```
 
-#### importDigitalCredential
+#### did.importDigitalCredential
 
 importDigitalCredential(context: common.Context, importDigitalCredentialRequest: ImportDigitalCredentialRequest): Promise<ImportDigitalCredentialResponse>
 
@@ -1039,7 +1039,7 @@ try {
 }
 ```
 
-#### queryDigitalCredential
+#### did.queryDigitalCredential
 
 queryDigitalCredential(context: common.Context, did?: string, credentialId?: string): Promise<QueryDigitalCredentialResponse>
 
@@ -1097,7 +1097,7 @@ try {
 }
 ```
 
-#### deleteDigitalCredential
+#### did.deleteDigitalCredential
 
 deleteDigitalCredential(context: common.Context, did?: string, credentialId?: string): Promise<void>
 
@@ -1159,7 +1159,7 @@ try {
 }
 ```
 
-#### getDigitalCredential
+#### did.getDigitalCredential
 
 getDigitalCredential(context: common.Context, getDigitalCredentialRequest: GetDigitalCredentialRequest): Promise<GetDigitalCredentialResponse>
 

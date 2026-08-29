@@ -2,8 +2,8 @@
 title: "LiveViewCardExtensionAbility"
 upstream_id: "harmonyos-references/liveview-card-ability"
 catalog: "harmonyos-references"
-content_hash: "6fe225b8079f"
-synced_at: "2026-08-11T16:04:14.448717"
+content_hash: "f5814ba93697"
+synced_at: "2026-08-29T18:18:19.015402"
 ---
 
 # LiveViewCardExtensionAbility
@@ -60,7 +60,7 @@ onRender(param: Record<string, string>): CardInfo
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| param | Record | 是 | 开发者创建实况窗卡片自定义扩展区时传入的参数[CustomLayout.abilityParameters](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-liveviewmanager#customlayout) 默认会携带以下key值（由系统赋值，开发者手动修改也不会生效）： 'ohos.extra.param.key.colorMode'：实况卡片深浅色模式（dark：深色模式；light：浅色模式） 'ohos.extra.param.key.fontColor'：实况卡片字体颜色（"#ARGB"16进制格式，长度为9） 'ohos.extra.param.key.contentWidth'：实况窗卡片自定义扩展区的宽度（单位为vp；自定义扩展区左右边界距离实况窗卡片边界各为12vp）。 |
+| param | Record | 是 | 开发者创建实况窗卡片自定义扩展区时传入的参数[CustomLayout.abilityParameters](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-liveviewmanager#customlayout) 默认会携带以下key值（由系统赋值，开发者手动修改也不会生效）： 'ohos.extra.param.key.colorMode'：实况卡片深浅色模式（dark：深色模式；light：浅色模式） 'ohos.extra.param.key.fontColor'：实况卡片字体颜色（"#ARGB"16进制格式，长度为9） 'ohos.extra.param.key.contentWidth'：实况窗卡片的宽度，单位为vp（自定义扩展区左右边界距离实况窗卡片边界各为12vp，即自定义扩展区宽度=实况窗卡片宽度-12*2）。 |
 
 返回值：
 
@@ -95,14 +95,14 @@ import { hilog } from '@kit.PerformanceAnalysisKit';
 export default class LiveViewCardExtAbility extends LiveViewCardExtensionAbility {
   onRender(param: Record<string, string>): CardInfo {
     hilog.info(0x0000, 'LiveViewCardTag', 'LiveViewCardExtAbility onRender begin.');
-    
+
     // 将param的参数构造到LocalStorage传递给页面使用。
     const storage = new LocalStorage(param);
-      
+
     // 加载实况窗卡片自定义扩展区页面
     return {
-        pagePath: 'pages/LiveViewCardPage',
-        storage: storage
+      pagePath: 'pages/LiveViewCardPage',
+      storage: storage
     }
   }
 }
@@ -121,12 +121,26 @@ struct LiveViewCardPage {
   private colorMode: string | undefined = this.storage?.get('ohos.extra.param.key.colorMode');
   private fontColor: string | undefined = this.storage?.get('ohos.extra.param.key.fontColor');
 
+  getFontColor(): string {
+    // 开发者可以根据深浅色模式自定义字体颜色。也可以使用默认的字体颜色。
+    let color = this.fontColor as string; // 默认的字体颜色。使用默认的字体颜色时，需要删掉下方根据colorMode进行判断的逻辑。
+    // 根据colorMode的值，自定义字体颜色。
+    if (this.colorMode == 'dark') {
+      // 深色模式场景下，开发者根据业务自行定义字体颜色，以下示例中字体颜色为红色。
+      color = '#FFFF3300';
+    } else if (this.colorMode == 'light') {
+      // 浅色模式场景下，开发者根据业务自行定义字体颜色，以下示例中字体颜色为绿色。
+      color = '#FF33CC66';
+    }
+    return color;
+  }
+
   build() {
     Column() {
       Scroll() {
         Column() {
           Text(this.words)
-            .fontColor(this.fontColor)
+            .fontColor(this.getFontColor())
         }
         .width(this.contentWidth)
       }

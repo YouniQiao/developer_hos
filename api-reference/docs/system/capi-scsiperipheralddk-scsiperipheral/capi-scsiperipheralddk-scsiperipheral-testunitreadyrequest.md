@@ -2,8 +2,8 @@
 title: "ScsiPeripheral_TestUnitReadyRequest"
 upstream_id: "harmonyos-references/capi-scsiperipheralddk-scsiperipheral-testunitreadyrequest"
 catalog: "harmonyos-references"
-content_hash: "8fcc62416e4d"
-synced_at: "2026-07-09T00:59:56.354822"
+content_hash: "90485d836744"
+synced_at: "2026-08-29T18:17:10.932110"
 ---
 
 # ScsiPeripheral_TestUnitReadyRequest
@@ -14,7 +14,7 @@ typedef struct ScsiPeripheral_TestUnitReadyRequest {...} ScsiPeripheral_TestUnit
 
 #### 概述
 
-命令（test unit ready）的请求结构体。
+SCSI命令（TEST UNIT READY）的请求结构体，通常用于确认逻辑单元是否就绪（逻辑单元是SCSI设备中可独立寻址的I/O操作实体）。
 
 起始版本： 18
 
@@ -28,5 +28,5 @@ typedef struct ScsiPeripheral_TestUnitReadyRequest {...} ScsiPeripheral_TestUnit
 
 | 名称 | 描述 |
 | --- | --- |
-| uint8_t control | Control字段，用于指定一些控制信息。 |
-| uint32_t timeout | 超时时间(单位: 毫秒)。 |
+| uint8_t control | Control字段，用于指定SCSI命令的控制信息。 |
+| uint32_t timeout | 超时时间（单位：ms）。 |

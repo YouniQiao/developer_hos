@@ -2,8 +2,8 @@
 title: "@ohos.arkui.dragController (DragController)"
 upstream_id: "harmonyos-references/js-apis-arkui-dragcontroller"
 catalog: "harmonyos-references"
-content_hash: "0311f7ca7157"
-synced_at: "2026-07-28T16:40:58.915455"
+content_hash: "e6e40d2cacf6"
+synced_at: "2026-08-29T18:12:21.813001"
 ---
 
 # @ohos.arkui.dragController (DragController)
@@ -135,7 +135,7 @@ struct DragControllerPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087675.gif)
+ ![](./img/zh-cn_image_0000002731518577.gif)
 
 #### dragController.executeDrag(deprecated)
 
@@ -284,7 +284,7 @@ struct DragControllerPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685927847.gif)
+ ![](./img/zh-cn_image_0000002701639380.gif)
 
 #### DragInfo
 
@@ -576,7 +576,7 @@ struct DragControllerPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008168.gif)
+ ![](./img/zh-cn_image_0000002731358601.gif)
 
 #### DragAction11+
 
@@ -692,7 +692,7 @@ struct ImageExample {
   @State uri: string = '';
   @State blockArr: string[] = [];
   uiContext = this.getUIContext();
-  dataLoadingKey: string = '';
+  udKey: string = '';
 
   @Builder
   DraggingBuilder() {
@@ -728,14 +728,14 @@ struct ImageExample {
                     fileIo.closeSync(file.fd);
                     context.resourceManager.closeRawFdSync('test1.mp4')
                     this.uri = fileUri.getUriFromPath(filePath);
-                    let videoFileUri: uniformDataStruct.FileUri = {
+                    let videoMp: uniformDataStruct.FileUri = {
                       uniformDataType: 'general.file-uri',
                       oriUri: this.uri,
                       fileType: 'general.video',
                     }
                     let unifiedRecord = new unifiedDataChannel.UnifiedRecord();
                     let unifiedData = new unifiedDataChannel.UnifiedData();
-                    unifiedRecord.addEntry(uniformTypeDescriptor.UniformDataType.FILE_URI, videoFileUri);
+                    unifiedRecord.addEntry(uniformTypeDescriptor.UniformDataType.FILE_URI, videoMp);
                     unifiedData.addRecord(unifiedRecord);
                     return unifiedData;
                   }
@@ -823,8 +823,8 @@ struct ImageExample {
               dataProgressListener: progressListener,
             }
             try {
-              this.dataLoadingKey = (event as DragEvent).startDataLoading(options);
-              console.info('dataLoadingKey: ', this.dataLoadingKey);
+              this.udKey = (event as DragEvent).startDataLoading(options);
+              console.info('udKey: ', this.udKey);
             } catch (e) {
               console.error(`startDataLoading errorCode: ${e.code}, errorMessage: ${e.message}`);
             }
@@ -838,7 +838,7 @@ struct ImageExample {
       Button('取消数据传输')
         .onClick(() => {
           try {
-            this.getUIContext().getDragController().cancelDataLoading(this.dataLoadingKey);
+            this.getUIContext().getDragController().cancelDataLoading(this.udKey);
           } catch (e) {
             console.error(`cancelDataLoading errorCode: ${e.code}, errorMessage: ${e.message}`);
           }
@@ -848,7 +848,7 @@ struct ImageExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848248.gif)
+ ![](./img/zh-cn_image_0000002701799292.gif)
 
 #### [h2]on('statusChange')11+
 
@@ -1177,7 +1177,8 @@ export default class EntryAbility extends UIAbility {
 
     windowStage.loadContent('pages/Index', this.storage, (err, data) => {
       if (err.code) {
-        console.error(`Failed to load the content. Code: ${err.code}, message: ${err.message}`);
+        hilog.error(0x0000, 'testTag', 'Failed to load the content. Cause: %{public}s',
+          `Code is ${err.code}, message is ${err.message}`);
         return;
       }
       hilog.info(0x0000, 'testTag', 'Succeeded in loading the content. Data: %{public}s',
@@ -1231,19 +1232,19 @@ struct DragControllerPage {
         .onDragEnter(() => {
           try {
             let uiContext: UIContext = this.storages?.get<UIContext>('uiContext') as UIContext;
-            let dragPreview: dragController.DragPreview = uiContext.getDragController().getDragPreview();
+            let previewObj: dragController.DragPreview = uiContext.getDragController().getDragPreview();
             let foregroundColor: ResourceColor = Color.Green;
 
             let previewAnimation: dragController.AnimationOptions = {
               curve: curves.cubicBezierCurve(0.2, 0, 0, 1),
             }
-            dragPreview.animate(previewAnimation, () => {
-              dragPreview.setForegroundColor(foregroundColor);
+            previewObj.animate(previewAnimation, () => {
+              previewObj.setForegroundColor(foregroundColor);
             });
           } catch (error) {
-            let message = (error as BusinessError).message;
+            let msg = (error as BusinessError).message;
             let code = (error as BusinessError).code;
-            console.error(`Failed to animate drag preview. Code: ${code}, message: ${message}`);
+            hilog.error(0x0000, `show error code is ${code}, message is ${msg}`, '');
           }
         })
         .onDrop(() => {
@@ -1259,23 +1260,21 @@ struct DragControllerPage {
               data: unifiedData,
               extraParams: ''
             }
+            let eve: DragInfo = new DragInfo();
             this.getUIContext()
               .getDragController()
               .executeDrag(() => { // 建议使用 this.getUIContext().getDragController().executeDrag()接口
                 this.draggingBuilder()
-              }, dragInfo, (err, dragEventParam) => {
-                if (err) {
-                  console.error(`Failed to execute drag. Code: ${err.code}, message: ${err.message}`);
-                  return;
-                }
-                if (dragEventParam && dragEventParam.event) {
-                  if (dragEventParam.event.getResult() == DragResult.DRAG_SUCCESSFUL) {
+              }, dragInfo, (err, eve) => {
+                hilog.info(0x0000, `${JSON.stringify(err)}`, '')
+                if (eve && eve.event) {
+                  if (eve.event.getResult() == DragResult.DRAG_SUCCESSFUL) {
                     hilog.info(0x0000, 'success', '');
-                  } else if (dragEventParam.event.getResult() == DragResult.DRAG_FAILED) {
+                  } else if (eve.event.getResult() == DragResult.DRAG_FAILED) {
                     hilog.info(0x0000, 'failed', '');
-                   }
-                 }
-               })
+                  }
+                }
+              })
           }
         }
       }).margin({ top: 100 })
@@ -1285,7 +1284,7 @@ struct DragControllerPage {
   }
 }
 ```
-![](./img/zh-cn_image_0000002686087677.gif)
+![](./img/zh-cn_image_0000002731518579.gif)
 
 #### DragStartRequestStatus18+
 
@@ -1364,7 +1363,7 @@ struct DragControllerPage {
 
 abort(): void
 
-终止后续的悬停检测。该方法应在悬停检测回调中通过SpringLoadingContext对象调用。本方法不会触发CANCEL状态通知，应用需要在执行本方法时进行状态清理。
+终止后续的悬停检测。该方法应在悬停检测回调中通过SpringLoadingContext对象调用。本方法不会触发CANCEL状态通知，应用程序需要在执行本方法时进行状态清理。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 

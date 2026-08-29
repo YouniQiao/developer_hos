@@ -2,8 +2,8 @@
 title: "Z序控制"
 upstream_id: "harmonyos-references/ts-universal-attributes-z-order"
 catalog: "harmonyos-references"
-content_hash: "5ccbb5695abc"
-synced_at: "2026-07-28T16:42:02.525274"
+content_hash: "c316c2d23968"
+synced_at: "2026-08-29T18:12:47.929752"
 ---
 
 # Z序控制
@@ -70,11 +70,11 @@ struct ZIndexExample {
 ```
  Stack容器内子组件不设置zIndex时，默认按照声明顺序显示，后声明的组件会覆盖在先声明的组件上方。
 
-![](./img/zh-cn_image_0000002656008262.png)
+![](./img/zh-cn_image_0000002701799392.png)
 
 Stack容器子组件设置zIndex后的效果。
 
-![](./img/zh-cn_image_0000002655848342.png)
+![](./img/zh-cn_image_0000002731518675.png)
 
 #### [h2]示例2（动态修改zIndex属性）
 
@@ -85,14 +85,14 @@ Stack容器子组件设置zIndex后的效果。
 @Entry
 @Component
 struct ZIndexExample {
-  @State zIndexValue: number = 0;
+  @State zIndex_: number = 0;
 
   build() {
     Column() {
       // 点击Button改变zIndex后，在点击Button前的层级顺序上根据zIndex进行稳定排序。
       Button('change Text2 zIndex')
         .onClick(() => {
-          this.zIndexValue = (this.zIndexValue + 1) % 3;
+          this.zIndex_ = (this.zIndex_ + 1) % 3;
         })
       Stack() {
         // Text1设置zIndex值为1
@@ -100,9 +100,9 @@ struct ZIndexExample {
           .size({ width: '70%', height: '50%' }).backgroundColor(0xd2cab3).align(Alignment.TopStart)
           .zIndex(1)
         // Text2设置zIndex默认值为0
-        Text('2, default zIndex(0), now zIndex:' + this.zIndexValue)
+        Text('2, default zIndex(0), now zIndex:' + this.zIndex_)
           .size({ width: '90%', height: '80%' }).backgroundColor(0xc1cbac).align(Alignment.TopStart)
-          .zIndex(this.zIndexValue)
+          .zIndex(this.zIndex_)
       }.width('100%').height(200)
     }.width('100%').height(200)
   }
@@ -110,15 +110,15 @@ struct ZIndexExample {
 ```
  不点击Button修改zIndex值的效果。
 
-![](./img/zh-cn_image_0000002686087771.png)
+![](./img/zh-cn_image_0000002701639478.png)
 
 点击Button动态修改zIndex，使Text1和Text2的zIndex相等，因为在点击Button前的层级顺序上根据zIndex进行稳定排序，层级顺序不发生改变。
 
-![](./img/zh-cn_image_0000002685927943.png)
+![](./img/zh-cn_image_0000002731358699.png)
 
 点击Button动态修改zIndex，使Text2的zIndex大于Text1，层级顺序发生改变。
 
-![](./img/zh-cn_image_0000002656008264.png)
+![](./img/zh-cn_image_0000002701799394.png)
 
 #### [h2]示例3（设置不同容器内组件的zIndex属性）
 
@@ -153,4 +153,4 @@ struct ZIndexExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848344.png)
+ ![](./img/zh-cn_image_0000002731518677.png)

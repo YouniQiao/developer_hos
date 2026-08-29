@@ -2,8 +2,8 @@
 title: "netBoost（网络加速）"
 upstream_id: "harmonyos-references/networkboost-netboost"
 catalog: "harmonyos-references"
-content_hash: "3b7e3a6795fb"
-synced_at: "2026-07-09T17:26:28.202796"
+content_hash: "b1c818a91e2d"
+synced_at: "2026-08-29T18:16:48.726115"
 ---
 
 # netBoost（网络加速）
@@ -57,6 +57,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { netBoost } from '@kit.NetworkBoostKit';
 try {
   let sceneDesc : netBoost.SceneDesc = {
+    // scene: 'realtimeVoice' 表示实时语音业务场景，可通过业务需求配置; sceneEvent: SCENE_EVENT_ENTER 表示进入场景事件
     scene : 'realtimeVoice',
     sceneEvent : netBoost.SceneEvent.SCENE_EVENT_ENTER
   }
@@ -113,7 +114,9 @@ try {
 
 setDataFlowDesc(dataFlowDesc : DataFlowDesc): void
 
-设置数据流描述。
+设置数据流描述。应用可向系统上报数据流信息、业务场景、场景事件以及该数据流期望的网络传输质量。系统依据数据流描述，为应用数据流提供差异化的网络传输保障。
+
+目前数据流描述仅对前台应用生效，每个应用最多支持设置两条数据流描述。
 
 模型约束： 此接口仅可在Stage模型下使用。
 

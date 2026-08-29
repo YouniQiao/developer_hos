@@ -2,15 +2,17 @@
 title: "drawing_types.h"
 upstream_id: "harmonyos-references/capi-drawing-types-h"
 catalog: "harmonyos-references"
-content_hash: "fe6057eaaa6e"
-synced_at: "2026-07-09T01:00:58.737467"
+content_hash: "637902d767db"
+synced_at: "2026-08-29T18:17:56.238062"
 ---
 
 # drawing_types.h
 
 #### 概述
 
-文件中定义了用于绘制2d图形的数据类型，包括画布、画笔、画刷、位图和路径。
+文件中定义了用于绘制2D图形的数据类型，包括画布、画笔、画刷、位图和路径。这些数据类型提供了2D图形绘制能力，适用于需要在画布上绑定画笔和画刷绘制各种形状、图片和文字的场景，可以灵活定义路径和位图，帮助开发者高效实现自定义图形绘制、图像处理等功能，满足复杂的2D图形绘制需求。
+
+本模块为单线程模型策略，需要调用方自行管理线程安全和上下文状态的切换。
 
 引用文件： <native_drawing/drawing_types.h>
 
@@ -50,7 +52,7 @@ synced_at: "2026-07-09T01:00:58.737467"
 | [OH_Drawing_RoundRect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-roundrect) | OH_Drawing_RoundRect | 用于描述圆角矩形。 |
 | [OH_Drawing_Matrix](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-matrix) | OH_Drawing_Matrix | 定义一个矩阵，用于描述坐标变换。 |
 | [OH_Drawing_ShaderEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-shadereffect) | OH_Drawing_ShaderEffect | 定义一个着色器，用于描述绘制内容的源颜色。 |
-| [OH_Drawing_ShadowLayer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-shadowlayer) | OH_Drawing_ShadowLayer | 定义一个阴影层，用于描述绘制内容的阴影层。 |
+| [OH_Drawing_ShadowLayer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-shadowlayer) | OH_Drawing_ShadowLayer | 定义一个阴影层，用于描述绘制内容的阴影效果。 |
 | [OH_Drawing_Filter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-filter) | OH_Drawing_Filter | 定义一个滤波器，用于存储颜色滤波器，蒙版滤波器和图像滤波器。 |
 | [OH_Drawing_MaskFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-maskfilter) | OH_Drawing_MaskFilter | 定义蒙版滤波器。 |
 | [OH_Drawing_ColorFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-colorfilter) | OH_Drawing_ColorFilter | 定义颜色滤波器，传入一个颜色并返回一个新的颜色。 |
@@ -61,16 +63,16 @@ synced_at: "2026-07-09T01:00:58.737467"
 | [OH_Drawing_Typeface](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-typeface) | OH_Drawing_Typeface | 用于描述字形。 |
 | [OH_Drawing_TextBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-textblob) | OH_Drawing_TextBlob | 定义一个文本对象，表示将多个文本组合到一个不可变的容器中。每个文本行由字形和位置组成。 |
 | [OH_Drawing_Image](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-image) | OH_Drawing_Image | 定义一个用于描述绘制二维像素数组的图片。 |
-| [OH_Drawing_ImageFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-imagefilter) | OH_Drawing_ImageFilter | 定义图像滤波器, 用于对构成图像像素的所有颜色位进行操作。 |
+| [OH_Drawing_ImageFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-imagefilter) | OH_Drawing_ImageFilter | 定义图像滤波器，用于对构成图像像素的所有颜色位进行操作。 |
 | [OH_Drawing_SamplingOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-samplingoptions) | OH_Drawing_SamplingOptions | 定义一个采样选项，用于描述图片、位图等图像的采样方法。 |
 | [OH_Drawing_TextBlobBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-textblobbuilder) | OH_Drawing_TextBlobBuilder | 定义文本构建器，用于构建文本。 |
 | [OH_Drawing_GpuContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-gpucontext) | OH_Drawing_GpuContext | 定义图形处理器上下文，用于描述图形处理器后端上下文。 |
 | [OH_Drawing_Surface](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-surface) | OH_Drawing_Surface | 定义surface，用于管理画布绘制的内容。 |
-| [OH_Drawing_FontMgr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-fontmgr) | OH_Drawing_FontMgr | 定义字体管理类, 用于字体管理。 |
-| [OH_Drawing_FontStyleSet](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-fontstyleset) | OH_Drawing_FontStyleSet | 定义字体样式集, 用于字体样式族匹配。 |
+| [OH_Drawing_FontMgr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-fontmgr) | OH_Drawing_FontMgr | 定义字体管理类，用于字体管理。 |
+| [OH_Drawing_FontStyleSet](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-fontstyleset) | OH_Drawing_FontStyleSet | 定义字体样式集，用于字体样式族匹配。 |
 | [OH_Drawing_RecordCmdUtils](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-recordcmdutils) | OH_Drawing_RecordCmdUtils | 定义指令录制工具，用于生成录制指令。 |
-| [OH_Drawing_RecordCmd](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-recordcmd) | OH_Drawing_RecordCmd | 定义录制指令类, 用于存储录制指令的集合。 |
-| [OH_Drawing_Array](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-array) | OH_Drawing_Array | 定义数组对象, 用于存储多个同类型对象。 |
+| [OH_Drawing_RecordCmd](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-recordcmd) | OH_Drawing_RecordCmd | 定义录制指令类，用于存储录制指令的集合。 |
+| [OH_Drawing_Array](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-array) | OH_Drawing_Array | 定义数组对象，用于存储多个同类型对象。 |
 
 #### [h2]枚举
 
@@ -118,8 +120,8 @@ enum OH_Drawing_AlphaFormat
 | --- | --- |
 | ALPHA_FORMAT_UNKNOWN | 未知格式。 |
 | ALPHA_FORMAT_OPAQUE | 位图无透明度。 |
-| ALPHA_FORMAT_PREMUL | 每个像素的颜色组件由透明度分量预先乘以。 |
-| ALPHA_FORMAT_UNPREMUL | 每个像素的颜色组件未由透明度分量预先乘以。 |
+| ALPHA_FORMAT_PREMUL | 每个像素的颜色组件已预先乘以透明度分量。 |
+| ALPHA_FORMAT_UNPREMUL | 每个像素的颜色组件未预先乘以透明度分量。 |
 
 #### [h2]OH_Drawing_BlendMode
 
@@ -169,20 +171,20 @@ rc : 如果操作3个颜色通道，用rc表示。
 | BLEND_MODE_PLUS | r = min(s + d, 1)。 |
 | BLEND_MODE_MODULATE | r = s * d。 |
 | BLEND_MODE_SCREEN | 滤色模式，r = s + d - s * d。 |
-| BLEND_MODE_OVERLAY | 叠加模式。 |
+| BLEND_MODE_OVERLAY | 叠加模式，根据目标像素的亮度，选择性地应用MULTIPLY或SCREEN模式，增强对比度。 |
 | BLEND_MODE_DARKEN | 变暗模式，rc = s + d - max(s * da, d * sa), ra = s + (1 - sa) * d。 |
 | BLEND_MODE_LIGHTEN | 变亮模式，rc = s + d - min(s * da, d * sa), ra = s + (1 - sa) * d。 |
-| BLEND_MODE_COLOR_DODGE | 颜色减淡模式。 |
-| BLEND_MODE_COLOR_BURN | 颜色加深模式。 |
-| BLEND_MODE_HARD_LIGHT | 强光模式。 |
-| BLEND_MODE_SOFT_LIGHT | 柔光模式。 |
+| BLEND_MODE_COLOR_DODGE | 颜色减淡模式，通过减小对比度使目标像素变亮以反映源像素。 |
+| BLEND_MODE_COLOR_BURN | 颜色加深模式，通过增加对比度使目标像素变暗以反映源像素。 |
+| BLEND_MODE_HARD_LIGHT | 强光模式，根据源像素的亮度，选择性地应用MULTIPLY或SCREEN模式。 |
+| BLEND_MODE_SOFT_LIGHT | 柔光模式，根据源像素的亮度，柔和地变亮或变暗目标像素。 |
 | BLEND_MODE_DIFFERENCE | 差值模式，rc = s + d - 2 * (min(s * da, d * sa)), ra = s + (1 - sa) * d。 |
 | BLEND_MODE_EXCLUSION | 排除模式，rc = s + d - two(s * d), ra = s + (1 - sa) * d。 |
 | BLEND_MODE_MULTIPLY | 正片叠底，r = s * (1 - da) + d * (1 - sa) + s * d。 |
-| BLEND_MODE_HUE | 色相模式。 |
-| BLEND_MODE_SATURATION | 饱和度模式。 |
-| BLEND_MODE_COLOR | 颜色模式。 |
-| BLEND_MODE_LUMINOSITY | 亮度模式。 |
+| BLEND_MODE_HUE | 色相模式，使用源像素的色相，目标像素的饱和度和亮度。 |
+| BLEND_MODE_SATURATION | 饱和度模式，使用源像素的饱和度，目标像素的色相和亮度。 |
+| BLEND_MODE_COLOR | 颜色模式，使用源像素的色相和饱和度，目标像素的亮度。 |
+| BLEND_MODE_LUMINOSITY | 亮度模式，使用源像素的亮度，目标像素的色相和饱和度。 |
 
 #### [h2]OH_Drawing_TextEncoding
 

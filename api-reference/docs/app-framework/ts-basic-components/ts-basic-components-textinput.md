@@ -2,17 +2,19 @@
 title: "TextInput"
 upstream_id: "harmonyos-references/ts-basic-components-textinput"
 catalog: "harmonyos-references"
-content_hash: "c41d46bdc586"
-synced_at: "2026-07-28T16:44:47.195441"
+content_hash: "1f623251b886"
+synced_at: "2026-08-29T18:13:58.966029"
 ---
 
 # TextInput
 
 单行文本输入框组件，用于接收用户的单行文本输入。支持多种输入类型（如文本、密码、邮箱、数字等）、自定义样式（字体、颜色、下划线、装饰线等）、输入过滤、密码输入模式、自动填充等功能，适用于登录注册、搜索、表单填写等多种场景。能够解决文本输入验证、格式化、安全输入等常见需求，简化开发流程、提升用户体验并增强数据安全性。
 
-![](./img/note_3.0-zh-cn.png) 该组件从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
+![](./img/note_3.0-zh-cn.png)
 
-该组件仅支持单文本样式，若需实现富文本样式，建议使用[RichEditor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-richeditor)组件。
+- 该组件从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
+- 该组件仅支持单文本样式，若需实现富文本样式，建议使用[RichEditor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-richeditor)组件。
+- 如需设置触摸文本组件外部时是否清除文本选中和手柄，可使用[setTextSelectionClearPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#settextselectionclearpolicy)接口。
 
 #### 子组件
 
@@ -126,6 +128,8 @@ placeholderFont(value?: Font)
 
 设置placeholder文本样式，包括字体大小、字体粗细、字体族、字体风格。
 
+![](./img/note_3.0-zh-cn.png) 可以使用[loadFontSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-text#loadfontsync)注册自定义字体。
+
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
@@ -135,8 +139,6 @@ placeholderFont(value?: Font)
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | value | [Font](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#font) | 否 | placeholder文本样式。 省略该参数时使用系统默认字体样式。 Wearable设备上字体大小默认值为18fp |
-
-![](./img/note_3.0-zh-cn.png) 可以使用[loadFontSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-text#loadfontsync)注册自定义字体。
 
 #### [h2]enterKeyType
 
@@ -258,6 +260,8 @@ fontFamily(value: ResourceStr)
 
 设置字体列表。未通过该接口设置时，默认字体为'HarmonyOS Sans'。
 
+![](./img/note_3.0-zh-cn.png) 推荐使用[loadFontSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-text#loadfontsync)注册自定义字体。
+
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
@@ -267,8 +271,6 @@ fontFamily(value: ResourceStr)
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | value | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 是 | 字体列表。使用多个字体时，请用逗号','分隔，字体的优先级按顺序生效。例如：'Arial,HarmonyOS Sans'。 应用当前支持'HarmonyOS Sans'字体和自定义字体。 卡片当前仅支持'HarmonyOS Sans'字体。 Wearable设备支持'HarmonyOS Sans'字体和自定义字体。 |
-
-![](./img/note_3.0-zh-cn.png) 推荐使用[loadFontSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-text#loadfontsync)注册自定义字体。
 
 #### [h2]inputFilter8+
 
@@ -1172,7 +1174,7 @@ enableHapticFeedback(isEnabled: boolean)
 
 autoCapitalizationMode(mode: AutoCapitalizationMode)
 
-设置自动大小写模式的文本模式，只提供接口能力，具体实现以输入法应用为主。
+设置自动大小写模式的文本模式，只提供接口能力，具体实现以输入法应用为主。未通过该接口设置时，默认不产生大小写转换效果，具体实现以输入法应用为主。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -1184,7 +1186,7 @@ autoCapitalizationMode(mode: AutoCapitalizationMode)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| mode | [AutoCapitalizationMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#autocapitalizationmode20枚举说明) | 是 | 自动大小写模式。不设置时，默认不启用自动大小写功能。具体实现以输入法应用为主。 |
+| mode | [AutoCapitalizationMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#autocapitalizationmode20枚举说明) | 是 | 自动大小写模式，用于设置输入法的大小写转换规则，具体实现以输入法应用为主。 |
 
 #### [h2]keyboardAppearance15+
 
@@ -1436,7 +1438,7 @@ orphanCharOptimization(enabled: Optional<boolean>)
 
 strokeJoinStyle(strokeJoinStyle: StrokeJoinStyle | undefined)
 
-设置文本描边拐角样式。
+设置文本描边拐角样式，仅在使用strokeWidth设置文本描边时生效。
 
 起始版本： 26.0.0
 
@@ -1450,7 +1452,7 @@ strokeJoinStyle(strokeJoinStyle: StrokeJoinStyle | undefined)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| strokeJoinStyle | [StrokeJoinStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#strokejoinstyle) | undefined | 是 | 文本描边拐角样式。 值为undefined时，按照StrokeJoinStyle.MITER_JOIN处理，请参考[StrokeJoinStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#strokejoinstyle)，文本拐角处表现为锐角。 |
+| strokeJoinStyle | [StrokeJoinStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#strokejoinstyle) | undefined | 是 | 设置文本描边拐角样式，仅在使用strokeWidth设置文本描边时生效。 值为undefined时，按照StrokeJoinStyle.MITER_JOIN处理，请参考[StrokeJoinStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#strokejoinstyle)，文本拐角处表现为锐角。 |
 
 #### [h2]shaderStyle
 
@@ -1568,7 +1570,7 @@ selectedDragPreviewStyle(value: SelectedDragPreviewStyle | undefined)
 | NEW_PASSWORD11+ | 11 | 新密码输入模式。 默认输入文字短暂显示后变成圆点。从API version 12开始，PC/2in1设备上输入文字直接显示为圆点。 TV设备上输入框末尾默认不显示小眼睛图标，其他设备输入框末尾默认显示小眼睛图标。 密码输入模式中，[decoration](#decoration12)、[showUnderline](#showunderline10)、[lineHeight](#lineheight12)、[fontFeature](#fontfeature12)不生效。在已启用密码保险箱的情况下，支持自动生成新密码。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | NUMBER_DECIMAL11+ | 12 | 带小数点的数字输入模式。 支持数字，小数点（只能存在一个小数点）。不支持负数（包括负数整数和负数小数）。若需支持负数输入，请使用[inputFilter](#inputfilter8)属性实现负数过滤。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | URL12+ | 13 | 带URL的输入模式，无特殊限制。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| ONE_TIME_CODE20+ | 14 | 验证码输入模式，无特殊限制。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| ONE_TIME_CODE20+ | 14 | 验证码输入模式，无特殊限制。该模式下组件获焦后会默认拉起系统输入法。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### ContentType12+枚举说明
 
@@ -1612,7 +1614,7 @@ selectedDragPreviewStyle(value: SelectedDragPreviewStyle | undefined)
 | LICENSE_FILE_NUMBER18+ | 34 | 【驾驶证档案编号】暂不支持自动保存和自动填充。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | LICENSE_PLATE18+ | 35 | 【车牌号】在已启用情景化自动填充的情况下，支持车牌号的自动保存和自动填充。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | ENGINE_NUMBER18+ | 36 | 【行驶证发动机号】暂不支持自动保存和自动填充。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| LICENSE_CHASSIS_NUMBER18+ | 37 | 【车牌识别号】暂不支持自动保存和自动填充。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| LICENSE_CHASSIS_NUMBER18+ | 37 | 【车架号】暂不支持自动保存和自动填充。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 
 #### TextInputStyle9+枚举说明
 
@@ -1665,6 +1667,12 @@ onChange(callback: EditableTextOnChangeCallback)
 输入内容发生变化时，触发该回调。
 
 在本回调中，若执行了光标操作，需要开发者在预上屏场景下依据previewText参数调整光标逻辑，以适应预上屏场景。
+
+![](./img/note_3.0-zh-cn.png) onWillChange和onChange形成will/did时序模式：
+
+- onWillChange在文本变更前触发，可通过返回false拦截变更；返回true则允许变更，随后触发onChange。
+- onChange在变更完成后触发，无法拦截。
+- 两者可以同时使用，onWillChange用于拦截控制，onChange用于获取变更结果。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -1748,13 +1756,13 @@ onWillCopy(callback: Callback<string, boolean>)
 
 在进行复制操作前，触发该回调。
 
-起始版本： 26.0.0
-
 ![](./img/note_3.0-zh-cn.png) onWillCopy和onCopy形成will/did时序模式：
 
 - onWillCopy在复制操作前触发，可通过返回false拦截复制操作；返回true则允许复制，随后触发onCopy。
 - onCopy在复制操作完成后触发，无法拦截。
 - 两者可以同时使用，onWillCopy用于拦截控制，onCopy用于获取复制结果。
+
+起始版本： 26.0.0
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -1890,9 +1898,9 @@ onWillInsert(callback: Callback<InsertValue, boolean>)
 
 ![](./img/note_3.0-zh-cn.png) onWillInsert和onDidInsert形成will/did时序模式：
 
-- onWillInsert在输入操作前触发，可通过返回false拦截输入操作；返回true则允许输入，随后触发onDidInsert
-- onDidInsert在输入完成后触发，无法拦截
-- 两者可以同时使用，onWillInsert用于拦截控制，onDidInsert用于获取输入结果
+- onWillInsert在输入操作前触发，可通过返回false拦截输入操作；返回true则允许输入，随后触发onDidInsert。
+- onDidInsert在输入完成后触发，无法拦截。
+- 两者可以同时使用，onWillInsert用于拦截控制，onDidInsert用于获取输入结果。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1930,11 +1938,12 @@ onWillDelete(callback: Callback<DeleteValue, boolean>)
 
 在将要删除时，触发该回调。
 
-![](./img/note_3.0-zh-cn.png) onWillDelete和onDidDelete形成will/did时序模式：
+![](./img/note_3.0-zh-cn.png)
 
-- onWillDelete在删除操作前触发，可通过返回false拦截删除操作；返回true则允许删除，随后触发onDidDelete
-- onDidDelete在删除完成后触发，无法拦截
-- 两者可以同时使用，onWillDelete用于拦截控制，onDidDelete用于获取删除结果
+- 点击清除按钮不触发onWillDelete回调。
+- onWillDelete和onDidDelete形成will/did时序模式： onWillDelete在删除操作前触发，可通过返回false拦截删除操作；返回true则允许删除，随后触发onDidDelete。
+- onDidDelete在删除完成后触发，无法拦截。
+- 两者可以同时使用，onWillDelete用于拦截控制，onDidDelete用于获取删除结果。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1954,6 +1963,13 @@ onDidDelete(callback: Callback<DeleteValue>)
 
 在删除完成时，触发该回调。
 
+![](./img/note_3.0-zh-cn.png)
+
+- 点击清除按钮不触发onDidDelete回调。
+- onWillDelete和onDidDelete形成will/did时序模式： onWillDelete在删除操作前触发，可通过返回false拦截删除操作；返回true则允许删除，随后触发onDidDelete。
+- onDidDelete在删除完成后触发，无法拦截。
+- 两者可以同时使用，onWillDelete用于拦截控制，onDidDelete用于获取删除结果。
+
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
@@ -1966,15 +1982,18 @@ onDidDelete(callback: Callback<DeleteValue>)
 | --- | --- | --- | --- |
 | callback | Callback | 是 | 在删除完成时调用的回调。 仅支持系统输入法输入的场景。 |
 
-![](./img/note_3.0-zh-cn.png) 点击清除按钮不触发onDidDelete回调。
-
 #### [h2]onWillChange15+
 
 onWillChange(callback: Callback<EditableTextChangeValue, boolean>)
 
 在文本内容将要发生变化时，触发该回调。
 
-onWillChange的回调时序晚于onWillInsert、onWillDelete，早于onDidInsert、onDidDelete。
+![](./img/note_3.0-zh-cn.png)
+
+- onWillChange的回调时序晚于onWillInsert、onWillDelete，早于onDidInsert、onDidDelete。
+- onWillChange和onChange形成will/did时序模式： onWillChange在文本变更前触发，可通过返回false拦截变更；返回true则允许变更，随后触发onChange。
+- onChange在变更完成后触发，无法拦截。
+- 两者可以同时使用，onWillChange用于拦截控制，onChange用于获取变更结果。
 
 元服务API： 从API version 15开始，该接口支持在元服务中使用。
 
@@ -2289,7 +2308,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008570.gif)
+ ![](./img/zh-cn_image_0000002731359005.gif)
 
 #### [h2]示例2（设置下划线）
 
@@ -2390,7 +2409,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848650.png)
+ ![](./img/zh-cn_image_0000002701799700.png)
 
 #### [h2]示例3（设置自定义键盘）
 
@@ -2460,7 +2479,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088079.gif)
+ ![](./img/zh-cn_image_0000002731518987.gif)
 
 #### [h2]示例4（设置右侧清除按钮样式）
 
@@ -2495,7 +2514,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928249.png)
+ ![](./img/zh-cn_image_0000002701639786.png)
 
 #### [h2]示例5（设置计数器）
 
@@ -2529,7 +2548,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008572.jpg)
+ ![](./img/zh-cn_image_0000002731359007.jpg)
 
 #### [h2]示例6（电话号码格式化）
 
@@ -2542,7 +2561,7 @@ struct TextInputExample {
 struct TextInputExample {
   @State text: string = '';
   public readonly NUM_TEXT_MAXSIZE_LENGTH = 13;
-  @State telNumberNoSpace: string = "";
+  @State telNumberNoSpace: string = '';
   @State nextCaret: number = -1; // 用于记录下次光标设置的位置
   @State actualCh: number = -1; // 用于记录光标在第i个数字后插入或者第i个数字前删除
   @State lastCaretPosition: number = 0;
@@ -2635,7 +2654,7 @@ struct TextInputExample {
         TextInput({ text: `${this.text}`, controller: this.controller }).type(InputType.PhoneNumber).height('48vp')
           .onChange((value: string) => {
             this.telNumberNoSpace = this.removeSpace(value);
-            let nextText: string = "";
+            let nextText: string = '';
             // 根据电话号码长度决定格式化方式：长度超限则不格式化，否则按'XXX XXXX XXXX'格式插入空格
             if (this.telNumberNoSpace.length > this.NUM_TEXT_MAXSIZE_LENGTH - 2) {
               nextText = this.telNumberNoSpace;
@@ -2673,11 +2692,11 @@ struct TextInputExample {
       }
     }
     .width('100%')
-    .height("100%")
+    .height('100%')
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848652.png)
+ ![](./img/zh-cn_image_0000002701799702.png)
 
 #### [h2]示例7（设置文本断行规则）
 
@@ -2736,7 +2755,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088081.png)
+ ![](./img/zh-cn_image_0000002731518989.png)
 
 #### [h2]示例8（设置文本样式）
 
@@ -2783,7 +2802,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928251.png)
+ ![](./img/zh-cn_image_0000002701639788.png)
 
 #### [h2]示例9（设置文字特性效果）
 
@@ -2802,18 +2821,18 @@ struct TextInputExample {
       TextInput({ text: this.text1 })
         .fontSize(20)
         .margin({ top: 200 })
-        .fontFeature("\"ss01\" on")
+        .fontFeature('"ss01" on')
       TextInput({ text: this.text2 })
         .margin({ top: 10 })
         .fontSize(20)
-        .fontFeature("\"ss01\" off")
+        .fontFeature('"ss01" off')
     }
     .width('90%')
     .margin('5%')
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008574.png)
+ ![](./img/zh-cn_image_0000002731359009.png)
 
 #### [h2]示例10（自定义键盘避让）
 
@@ -2883,7 +2902,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848654.gif)
+ ![](./img/zh-cn_image_0000002701799704.gif)
 
 #### [h2]示例11（设置文本自适应）
 
@@ -2934,7 +2953,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088083.png)
+ ![](./img/zh-cn_image_0000002731518991.png)
 
 #### [h2]示例12（设置折行规则）
 
@@ -2977,7 +2996,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928253.gif)
+ ![](./img/zh-cn_image_0000002701639790.gif)
 
 #### [h2]示例13（支持插入和删除回调）
 
@@ -3042,7 +3061,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008576.png)
+ ![](./img/zh-cn_image_0000002731359011.png)
 
 #### [h2]示例14（文本扩展自定义菜单）
 
@@ -3127,7 +3146,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848656.png)
+ ![](./img/zh-cn_image_0000002701799706.png)
 
 #### [h2]示例15（设置symbol类型清除按钮）
 
@@ -3155,7 +3174,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088085.jpg)
+ ![](./img/zh-cn_image_0000002731518993.jpg)
 
 #### [h2]示例16（文本设置省略模式）
 
@@ -3222,7 +3241,7 @@ struct EllipsisModeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928255.gif)
+ ![](./img/zh-cn_image_0000002701639792.gif)
 
 #### [h2]示例17（输入框支持输入状态变化等回调）
 
@@ -3263,7 +3282,7 @@ struct TextInputExample {
           .enableKeyboardOnFocus(false)
           .selectAll(false)
 
-        Text("editStatus:" + this.editStatus).height(30)
+        Text('editStatus:' + this.editStatus).height(30)
 
         TextInput({ text: 'TextInput支持复制操作时回调' })
           .height(60)
@@ -3342,7 +3361,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008578.png)
+ ![](./img/zh-cn_image_0000002731359013.png)
 
 #### [h2]示例18（设置最小字体范围与最大字体范围）
 
@@ -3402,7 +3421,7 @@ struct TextInputExample {
 
 | 系统字体缩放倍数为2倍 | 系统字体缩放倍数为3.2倍 |
 | --- | --- |
-| ![](./img/zh-cn_image_0000002655848658.png) | ![](./img/zh-cn_image_0000002686088087.png) |
+| ![](./img/zh-cn_image_0000002701799708.png) | ![](./img/zh-cn_image_0000002731518995.png) |
 
 #### [h2]示例19（设置选中指定区域的文本内容）
 
@@ -3441,7 +3460,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928257.png)
+ ![](./img/zh-cn_image_0000002701639794.png)
 
 #### [h2]示例20（设置文本描边）
 
@@ -3488,7 +3507,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008580.png)
+ ![](./img/zh-cn_image_0000002731359015.png)
 
 #### [h2]示例21（设置中西文自动间距）
 
@@ -3514,7 +3533,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848660.png)
+ ![](./img/zh-cn_image_0000002701799710.png)
 
 #### [h2]示例22（设置字符计数颜色以及超出字符颜色）
 
@@ -3550,7 +3569,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088089.gif)
+ ![](./img/zh-cn_image_0000002731518997.gif)
 
 #### [h2]示例23（设置placeholder富文本样式）
 
@@ -3616,7 +3635,7 @@ struct TextInputExample  {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928259.jpg)
+ ![](./img/zh-cn_image_0000002701639796.jpg)
 
 #### [h2]示例24（设置输入法扩展信息）
 
@@ -3671,7 +3690,7 @@ struct TextInputBarStateDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008582.gif)
+ ![](./img/zh-cn_image_0000002731359017.gif)
 
 #### [h2]示例26（设置行首标点符号压缩和行尾标点符号悬挂）
 
@@ -3721,7 +3740,7 @@ struct PunctuationDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848662.gif)
+ ![](./img/zh-cn_image_0000002701799712.gif)
 
 #### [h2]示例27（设置自适应间距）
 
@@ -3787,7 +3806,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088091.gif)
+ ![](./img/zh-cn_image_0000002731518999.gif)
 
 #### [h2]示例28（设置文本拖拽时的背板样式）
 
@@ -3813,7 +3832,7 @@ struct TextInputTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928261.png)
+ ![](./img/zh-cn_image_0000002701639798.png)
 
 #### [h2]示例29（删除文本框内的最后一个字符）
 
@@ -3839,7 +3858,7 @@ struct Page {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008584.gif)
+ ![](./img/zh-cn_image_0000002731359019.gif)
 
 #### [h2]示例30（设置文本排版方向）
 
@@ -3886,7 +3905,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848664.png)
+ ![](./img/zh-cn_image_0000002701799714.png)
 
 #### [h2]示例31（将指定范围的文字滚动到可视区内）
 
@@ -3915,7 +3934,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088093.gif)
+ ![](./img/zh-cn_image_0000002731519001.gif)
 
 #### [h2]示例32（设置文本排版时是否使能孤字优化）
 
@@ -3957,11 +3976,11 @@ struct TextExample {
 
 不开启孤字优化：
 
-![](./img/zh-cn_image_0000002685928263.png)
+![](./img/zh-cn_image_0000002701639800.png)
 
 开启孤字优化：
 
-![](./img/zh-cn_image_0000002656008586.png)
+![](./img/zh-cn_image_0000002731359021.png)
 
 #### [h2]示例33（设置文本着色器效果）
 
@@ -4030,7 +4049,7 @@ struct ShaderColorStyle {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848666.png)
+ ![](./img/zh-cn_image_0000002701799716.png)
 
 #### [h2]示例34（设置文本选择的AI菜单）
 
@@ -4058,4 +4077,4 @@ struct Demo34 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088095.gif)
+ ![](./img/zh-cn_image_0000002731519003.gif)

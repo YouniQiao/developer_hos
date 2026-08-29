@@ -2,8 +2,8 @@
 title: "Class (SslErrorHandler)"
 upstream_id: "harmonyos-references/arkts-basic-components-web-sslerrorhandler"
 catalog: "harmonyos-references"
-content_hash: "133f031bca04"
-synced_at: "2026-08-14T15:53:55.960056"
+content_hash: "787b41f73cd2"
+synced_at: "2026-08-29T18:16:00.961858"
 ---
 
 # Class (SslErrorHandler)
@@ -12,8 +12,8 @@ SslErrorHandler是Web组件中处理SSL证书验证错误的类。当加载安�
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 该组件首批接口从API version 8开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
-- 本Class首批接口从API version 9开始支持。
+- 该组件从API version 8开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+- 本Class从API version 9开始支持。
 - 示例效果请以真机运行为准。
 
 #### constructor9+
@@ -28,7 +28,7 @@ SslErrorHandler的构造函数。
 
 handleCancel(): void
 
-通知Web组件取消此请求。
+通知Web组件取消此请求，并停止当前SSL证书验证流程。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -36,7 +36,7 @@ handleCancel(): void
 
 handleConfirm(): void
 
-通知Web组件继续使用SSL证书。
+忽略SSL证书验证错误，继续加载页面。
 
 系统能力： SystemCapability.Web.Webview.Core
 

@@ -1,12 +1,12 @@
 ---
-title: "HdsListItem"
+title: "HdsListItem (列表项)"
 upstream_id: "harmonyos-references/ui-design-hdslistitem"
 catalog: "harmonyos-references"
-content_hash: "7ffec04e8ab4"
-synced_at: "2026-07-28T16:50:14.506141"
+content_hash: "3188fd3d59e7"
+synced_at: "2026-08-29T18:16:18.736462"
 ---
 
-# HdsListItem
+# HdsListItem (列表项)
 
 该组件可设置ListItem的横滑动效，可以承载HdsListItemCard组件。
 
@@ -40,7 +40,7 @@ HdsListItem({customItemBuilder?: CustomBuilder, hdsListItemCard?: HdsListItemCar
 
 系统能力： SystemCapability.UIDesign.HDSPattern.Standard
 
-设备行为异常： 该接口在TV中与ux规范不一致（获焦态和悬停态组件未放大，获焦态背板颜色未变化，Button内部的text默认颜色等），在其他设备类型中可正常使用。
+设备行为差异： 该接口在TV中与UX规范不一致（获焦态和悬停态组件未放大，获焦态背板颜色未变化，Button内部的text默认颜色等），在其他设备类型中可正常使用。
 
 起始版本： 6.0.0(20)
 
@@ -129,7 +129,7 @@ HdsListItem({customItemBuilder?: CustomBuilder, hdsListItemCard?: HdsListItemCar
 | backgroundColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 删除按钮图标背景色。 |
 | iconColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 删除按钮图标颜色。 |
 | iconOptions | [IconOptions](#iconoptions) | 否 | 是 | 删除按钮图标的能力选项。 |
-| onAction | [SwipeActionCallback](#swipeactioncallback) | 否 | 是 | 点击回调。 |
+| onAction | [SwipeActionCallback](#swipeactioncallback) | 否 | 是 | 删除图标点击回调。 |
 
 #### FullDeleteOptions
 
@@ -273,6 +273,7 @@ struct HdsListItemExample {
                 }
               }
             },
+            // 横滑会有吸附效果
             swipeActionOptions: {
               icons: [
                 {
@@ -408,4 +409,4 @@ export class LazyDataSource<T> implements IDataSource {
 
 执行上述示例中的代码效果如下：
 
-![](./img/zh-cn_image_0000002656009364.gif)
+![](./img/zh-cn_image_0000002731519777.gif)

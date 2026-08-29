@@ -2,8 +2,8 @@
 title: "@hms.security.confidentialSpace (机密空间服务)"
 upstream_id: "harmonyos-references/confidentialspace-confidentialspace"
 catalog: "harmonyos-references"
-content_hash: "7247ddbf229e"
-synced_at: "2026-08-07T15:57:42.377942"
+content_hash: "694d635e1810"
+synced_at: "2026-08-29T18:16:21.836027"
 ---
 
 # @hms.security.confidentialSpace (机密空间服务)
@@ -360,7 +360,7 @@ runApp(appPath: string, argv: string[]): Promise<DataAppHandle>
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | appPath | string | 是 | 待运行的数据应用文件路径。最大长度为256，不能为空。应为应用沙箱内的绝对路径。 |
-| argv | string[] | 是 | 运行数据应用进程的命令行参数。最大长度为64。 |
+| argv | string[] | 是 | 运行数据应用进程的命令行参数。最大长度为64。取值约束：参数字符串长度之和不超过32768。 |
 
 返回值：
 

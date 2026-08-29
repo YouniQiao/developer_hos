@@ -2,13 +2,13 @@
 title: "Functions"
 upstream_id: "harmonyos-references/arkts-apis-webview-f"
 catalog: "harmonyos-references"
-content_hash: "7b585e7d77f7"
-synced_at: "2026-07-09T00:58:49.812511"
+content_hash: "ec409e37db1b"
+synced_at: "2026-08-29T18:15:56.781047"
 ---
 
 # Functions
 
-ArkWeb Functions模块是ArkWeb（Web子系统）的函数能力集合，提供Web组件运行过程中所需的独立函数，例如订阅Web引擎初始化完成事件。开发者在使用Web组件时，可通过本模块中的函数监听Web引擎关键生命周期事件或执行全局性Web相关操作。
+ArkWeb Functions模块是ArkWeb（Web子系统）的函数能力集合，提供Web组件运行过程中所需的独立函数，例如订阅Web引擎初始化完成事件。开发者在使用Web组件时，可通过本模块中的函数监听Web引擎关键生命周期事件或执行全局性Web操作。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -35,8 +35,8 @@ once(type: string, callback: Callback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | Web事件的类型，目前支持："webInited"（Web引擎初始化完成）。 |
-| callback | Callback | 是 | 所订阅的回调函数。 |
+| type | string | 是 | Web事件的类型，目前仅支持："webInited"（Web引擎初始化完成）。 |
+| callback | Callback | 是 | Web引擎初始化完成时触发的回调函数。 |
 
 错误码：
 
@@ -52,10 +52,10 @@ once(type: string, callback: Callback<void>): void
 // xxx.ets
 import { webview } from '@kit.ArkWeb';
 
-webview.once("webInited", () => {
-  console.info("configCookieSync");
-  webview.WebCookieManager.configCookieSync("https://www.example.com", "a=b");
-})
+webview.once('webInited', () => {
+  console.info('configCookieSync');
+  webview.WebCookieManager.configCookieSync('https://www.example.com', 'a=b');
+});
 
 @Entry
 @Component

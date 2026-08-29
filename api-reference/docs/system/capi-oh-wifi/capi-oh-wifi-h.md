@@ -2,15 +2,15 @@
 title: "oh_wifi.h"
 upstream_id: "harmonyos-references/capi-oh-wifi-h"
 catalog: "harmonyos-references"
-content_hash: "0e65c2399611"
-synced_at: "2026-07-09T00:59:24.838353"
+content_hash: "73171f5e7ec9"
+synced_at: "2026-08-29T18:16:39.150242"
 ---
 
 # oh_wifi.h
 
 #### 概述
 
-定义查询WIFI开关状态的接口。
+定义查询WIFI开关状态、获取设备MAC地址和获取WIFI连接信息的接口。
 
 引用文件： <ConnectivityKit/wifi/oh_wifi.h>
 
@@ -188,7 +188,7 @@ WIFI7连接类型。
 #### [h2]OH_WifiLinkedInfo
 
 ```
-Struct OH_WifiLinkedInfo
+struct OH_WifiLinkedInfo
 ```
  描述
 
@@ -198,10 +198,10 @@ Struct OH_WifiLinkedInfo
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| ssid | char[] | 否 | 否 | 热点的SSID（Service Set Identifier，服务集标识符），用于获取当前设备已连接的WIFI热点的公开名称（即无线网络的名称），编码格式为UTF-8。 长度 WIFI_MAX_SSID_LEN = 18。 |
-| bssid | char[] | 否 | 否 | 热点的BSSID（Basic Service Set Identifier，基本服务集标识符）即无线网络的MAC地址。如果应用已请求 ohos.permission.GET_WIFI_PEERS_MAC 权限，则返回的bssid为真实BSSID地址；否则为随机设备地址。 格式："AA:BB:CC:DD:EE:FF" 最大长度 WIFI_MAC_LEN = 33。 |
+| ssid | char[] | 否 | 否 | 热点的SSID（Service Set Identifier，服务集标识符），用于获取当前设备已连接的WIFI热点的公开名称（即无线网络的名称），编码格式为UTF-8。 长度 WIFI_MAX_SSID_LEN = 33。 |
+| bssid | char[] | 否 | 否 | 热点的BSSID（Basic Service Set Identifier，基本服务集标识符）即无线网络的MAC地址。如果应用已请求 ohos.permission.GET_WIFI_PEERS_MAC 权限，则返回的bssid为真实BSSID地址；否则为随机设备地址。 格式："AA:BB:CC:DD:EE:FF" 最大长度 WIFI_MAC_LEN = 18。 |
 | rssi | int32_t | 否 | 否 | 热点的信号强度(dBm)。RSSI（Received Signal Strength Indicator，接收信号强度指示）。 |
-| band | int32_t | 否 | 否 | WLAN接入点的频段，1表示2.4GHZ；2表示5GHZ。 |
+| band | int32_t | 否 | 否 | WLAN接入点的频段，1表示2.4GHz；2表示5GHz。 |
 | linkSpeed | int32_t | 否 | 否 | WLAN接入点的上行速度单位Mbps。 |
 | rxLinkSpeed | int32_t | 否 | 否 | WLAN接入点的下行速度单位Mbps。 |
 | maxSupportedTxLinkSpeed | int32_t | 否 | 否 | 当前支持的最大上行速率单位Mbps。 |
@@ -242,7 +242,7 @@ Wifi_ResultCode OH_Wifi_IsWifiEnabled(bool *enabled)
 
 | 类型 | 说明 |
 | --- | --- |
-| [Wifi_ResultCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-wifi-h#wifi_resultcode) | 返回操作结果，详细定义参见[Wifi_ResultCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-wifi-h#wifi_resultcode). [WIFI_SUCCESS](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-wifi-h#wifi_resultcode) 查询WIFI开关状态成功。 [WIFI_INVALID_PARAM](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-wifi-h#wifi_resultcode) 入参为空指针。 [WIFI_OPERATION_FAILED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-wifi-h#wifi_resultcode) 服务内部执行错误。 |
+| [Wifi_ResultCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-wifi-h#wifi_resultcode) | 返回操作结果，详细定义参见[Wifi_ResultCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-wifi-h#wifi_resultcode)。 [WIFI_SUCCESS](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-wifi-h#wifi_resultcode)查询WIFI开关状态成功。 [WIFI_INVALID_PARAM](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-wifi-h#wifi_resultcode)入参为空指针。 [WIFI_OPERATION_FAILED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-wifi-h#wifi_resultcode) 服务内部执行错误。 |
 
 #### [h2]OH_Wifi_GetDeviceMacAddress()
 
@@ -292,7 +292,7 @@ Wifi_ResultCode OH_Wifi_GetLinkedInfo(OH_WifiLinkedInfo *info)
 
 | 参数项 | 描述 |
 | --- | --- |
-| OH_WifiLinkedInfo *info | OH_WifiLinkedInfo类型的结构体。 |
+| [OH_WifiLinkedInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-wifi-h#oh_wifilinkedinfo) *info | OH_WifiLinkedInfo类型的结构体。 |
 
 返回：
 

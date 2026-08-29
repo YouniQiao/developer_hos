@@ -2,15 +2,15 @@
 title: "drawing_text_global.h"
 upstream_id: "harmonyos-references/capi-drawing-text-global-h"
 catalog: "harmonyos-references"
-content_hash: "e2b3ca17a7ce"
-synced_at: "2026-07-09T01:00:58.126514"
+content_hash: "6031fa109a26"
+synced_at: "2026-08-29T18:17:55.535217"
 ---
 
 # drawing_text_global.h
 
 #### 概述
 
-提供文本全局信息的相关接口，比如设置文本渲染高对比度模式等。
+提供文本全局信息的相关接口，如设置文本渲染高对比度模式、未定义字形的呈现方式等。
 
 引用文件： <native_drawing/drawing_text_global.h>
 
@@ -36,7 +36,7 @@ synced_at: "2026-07-09T01:00:58.126514"
 | 名称 | 描述 |
 | --- | --- |
 | [void OH_Drawing_SetTextHighContrast(OH_Drawing_TextHighContrast action)](#oh_drawing_settexthighcontrast) | 设置文本渲染高对比度模式。 |
-| [void OH_Drawing_SetTextUndefinedGlyphDisplay(OH_Drawing_TextUndefinedGlyphDisplay undefinedGlyphDisplay)](#oh_drawing_settextundefinedglyphdisplay) | 控制未定义字形的呈现方式，影响此后渲染的所有文本。 |
+| [void OH_Drawing_SetTextUndefinedGlyphDisplay(OH_Drawing_TextUndefinedGlyphDisplay undefinedGlyphDisplay)](#oh_drawing_settextundefinedglyphdisplay) | 设置未定义字形的呈现方式，调用此接口后影响本进程后续渲染的所有文本。 |
 
 #### 枚举类型说明
 
@@ -54,8 +54,8 @@ enum OH_Drawing_TextHighContrast
 | 枚举项 | 描述 |
 | --- | --- |
 | TEXT_FOLLOW_SYSTEM_HIGH_CONTRAST | 跟随系统设置中的高对比度文字配置。 |
-| TEXT_APP_DISABLE_HIGH_CONTRAST | 关闭APP的文本渲染高对比度配置，该模式的优先级要高于系统设置中的高对比度文字配置。 |
-| TEXT_APP_ENABLE_HIGH_CONTRAST | 开启APP的文本渲染高对比度配置，该模式的优先级要高于系统设置中的高对比度文字配置。 |
+| TEXT_APP_DISABLE_HIGH_CONTRAST | 关闭应用的文本渲染高对比度配置，该模式的优先级要高于系统设置中的高对比度文字配置。 |
+| TEXT_APP_ENABLE_HIGH_CONTRAST | 开启应用的文本渲染高对比度配置，该模式的优先级要高于系统设置中的高对比度文字配置。 |
 
 #### [h2]OH_Drawing_TextUndefinedGlyphDisplay
 
@@ -88,7 +88,7 @@ void OH_Drawing_SetTextHighContrast(OH_Drawing_TextHighContrast action)
 
 该接口设置后整个进程都会生效，进程内所有页面共用相同模式。
 
-可调用此接口设置，也可通过系统设置界面中高对比度文字配置开关进行开启/关闭。使用此接口设置开启/关闭文本渲染高对比度配置的优先级高于系统开关设置。
+可通过调用此接口设置文本渲染高对比度模式，也可通过系统设置界面中高对比度文字配置开关进行开启/关闭。使用此接口设置文本渲染高对比度的优先级高于系统设置。
 
 该接口针对应用的文字自绘制场景不生效。
 
@@ -109,7 +109,7 @@ void OH_Drawing_SetTextUndefinedGlyphDisplay(OH_Drawing_TextUndefinedGlyphDispla
 ```
  描述
 
-控制未定义字形的呈现方式，影响此后渲染的所有文本。
+设置未定义字形的呈现方式，调用此接口后影响本进程后续渲染的所有文本。
 
 系统能力： SystemCapability.Graphic.Graphic2D.NativeDrawing
 

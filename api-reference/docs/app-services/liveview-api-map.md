@@ -2,26 +2,28 @@
 title: "实况窗Live View Kit与Push Kit的API字段关联"
 upstream_id: "harmonyos-references/liveview-api-map"
 catalog: "harmonyos-references"
-content_hash: "bd69608749aa"
-synced_at: "2026-07-09T01:01:23.015434"
+content_hash: "1a840f093e3e"
+synced_at: "2026-08-29T18:18:19.121784"
 ---
 
 # 实况窗Live View Kit与Push Kit的API字段关联
 
-#### 介绍
+针对开发者通过App调用Live View Kit在本地创建实况窗后，再使用Push Kit更新或结束实况窗的场景，开发者可参考Live View Kit与Push Kit的API字段关联表格，在项目中配置实况窗业务所需的API字段。
 
-开发者可参考Live View Kit与Push Kit的API字段关联表格，在项目中配置实况窗业务所需的API字段。为便于阅读与描述，表格内统一使用端侧作为Live View Kit ArkTS API的简称，使用云侧作为Push Kit REST API的简称。
+为便于阅读与描述，表格内统一使用端侧作为Live View Kit ArkTS API的简称，使用云侧作为Push Kit REST API的简称。
 
 | Live View Kit ArkTS API | Push Kit REST API | 差异说明 |
 | --- | --- | --- |
 | liveViewManager.startLiveView liveViewManager.updateLiveView liveViewManager.stopLiveView liveViewManager.startLiveViewByTrigger liveViewManager.stopLiveViewByTrigger | liveViewPayload.operation | liveViewManager.startLiveView对应云侧operation值为0。 liveViewManager.updateLiveView对应云侧operation值为1。 liveViewManager.stopLiveView对应云侧operation值为2。 liveViewManager.startLiveViewByTrigger对应云侧operation值为4。 liveViewManager.stopLiveViewByTrigger对应云侧operation值为6。 |
 | liveView | payload | NA |
 | liveView.id | payload.activityId | NA |
-| liveView.event | payload.event | NA |
+| liveView.event | payload.event | 在创建实况窗时，云侧API仅支持FLIGHT、TAXI、TRAIN、DELIVERY、QUEUE、RENT、EXPRESS、CHECK_IN、TRADE、SUBSCRIBE_TIMER场景。 |
 | liveView.subEvent | payload.subEvent | NA |
 | NA | payload.status | 端侧API不支持实况活动状态字段。 |
 | liveView.sequence | payload.version | NA |
 | liveView.isMute | payload.mute | NA |
+| liveView.lifeCycleMode | NA | 云侧API不支持实况窗生命周期模式字段。 |
+| liveView.shareUrl | payload.shareUrl | NA |
 | liveView.timer | NA | 云侧API不支持实况窗卡片计时器字段。 |
 | liveView.timer.time | NA | NA |
 | liveView.timer.isCountdown | NA | NA |
@@ -43,13 +45,14 @@ synced_at: "2026-07-09T01:01:23.015434"
 | liveView.liveViewData.primary.backgroundType | payload.activityData.notificationData.backgroundType | 端侧backgroundType枚举SYS_BACKGROUND_UNDEFINED，对应云侧backgroundType值为0。 端侧backgroundType枚举SYS_BACKGROUND_FLIGHT_MOON，对应云侧backgroundType值为100。 端侧backgroundType枚举SYS_BACKGROUND_FLIGHT_SUNSET，对应云侧backgroundType值为101。 |
 | liveView.liveViewData.primary.aliveTime | NA | 云侧不支持实况窗存活时间的字段。 |
 | liveView.liveViewData.primary.extensionData | payload.activityData.notificationData.extend | NA |
-| liveView.liveViewData.primary.extensionData.type | payload.activityData.notificationData.extend.type | 端侧type枚举EXTENSION_TYPE_DEFAULT，对应云侧type值为0。 端侧type枚举EXTENSION_TYPE_COMMON_TEXT，对应云侧type值为1。 端侧type枚举EXTENSION_TYPE_CAPSULE_TEXT，对应云侧type值为2。 端侧type枚举EXTENSION_TYPE_PIC，对应云侧type值为3。 端侧type枚举EXTENSION_TYPE_ICON，对应云侧type值为4。 |
+| liveView.liveViewData.primary.extensionData.type | payload.activityData.notificationData.extend.type | 端侧type枚举EXTENSION_TYPE_DEFAULT，对应云侧type值为0。 端侧type枚举EXTENSION_TYPE_COMMON_TEXT，对应云侧type值为1。 端侧type枚举EXTENSION_TYPE_CAPSULE_TEXT，对应云侧type值为2。 端侧type枚举EXTENSION_TYPE_PIC，对应云侧type值为3。 端侧type枚举EXTENSION_TYPE_ICON，对应云侧type值为4。 端侧type枚举EXTENSION_TYPE_PROGRESS，云侧API不支持此枚举值。 |
 | liveView.liveViewData.primary.extensionData.text | payload.activityData.notificationData.extend.text | NA |
 | liveView.liveViewData.primary.extensionData.pic | payload.activityData.notificationData.extend.image | 云侧仅支持传入图片路径。 |
 | NA | payload.activityData.notificationData.extend.imageUrl | 端侧不支持辅助区图片URL链接字段。 **说明：** 若应用需要通过端侧实现在实况窗辅助区上展示网络图片，可自行下载网络图片到本地，将其转换为PixelMap对象，通过[extensionData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-liveviewmanager#extensiondata).pic字段传入。 |
 | liveView.liveViewData.primary.extensionData.clickAction | payload.activityData.notificationData.extend.clickAction | NA |
+| liveView.liveViewData.primary.extensionData.progress | NA | 云侧API不支持进度百分比。 |
 | liveView.liveViewData.primary.layoutData | NA | 云侧不支持实况窗卡片扩展区结构体字段，相关API字段在结构体notificationData中体现。 |
-| liveView.liveViewData.primary.layoutData.layoutType | payload.activityData.notificationData.type | 端侧layoutType枚举LAYOUT_TYPE_DEFAULT，对应云侧type值为-1。 端侧layoutType枚举LAYOUT_TYPE_PROGRESS，对应云侧type值为3。 端侧layoutType枚举LAYOUT_TYPE_PICKUP，对应云侧type值为4。 端侧layoutType枚举LAYOUT_TYPE_FLIGHT，对应云侧type值为5。 端侧layoutType枚举LAYOUT_TYPE_SCORE，对应云侧type值为7。 |
+| liveView.liveViewData.primary.layoutData.layoutType | payload.activityData.notificationData.type | 端侧layoutType枚举LAYOUT_TYPE_DEFAULT，对应云侧type值为-1。 端侧layoutType枚举LAYOUT_TYPE_PROGRESS，对应云侧type值为3。 端侧layoutType枚举LAYOUT_TYPE_PICKUP，对应云侧type值为4。 端侧layoutType枚举LAYOUT_TYPE_FLIGHT，对应云侧type值为5。 端侧layoutType枚举LAYOUT_TYPE_SCORE，对应云侧type值为7。 端侧layoutType枚举LAYOUT_TYPE_NAVIGATION，云侧API不支持此枚举值。 端侧layoutType枚举LAYOUT_TYPE_CUSTOM，对应云侧type值为100。 |
 | liveView.liveViewData.primary.layoutData.serviceButtons | NA | 云侧不支持连续服务按钮字段。 |
 | liveView.liveViewData.primary.layoutData.isServiceButtonsDisplayed | NA | 云侧不支持连续服务按钮是否显示字段。 |
 | liveView.liveViewData.primary.layoutData.serviceButton.name | NA | NA |
@@ -98,6 +101,8 @@ synced_at: "2026-07-09T01:01:23.015434"
 | liveView.liveViewData.primary.navigationLayout.currentNavigationIcon | NA | 云侧不支持实况窗导航模板。 |
 | liveView.liveViewData.primary.navigationLayout.navigationIcons | NA | NA |
 | liveView.liveViewData.primary.navigationLayout.isNavigationIconsDisplayed | NA | NA |
+| liveView.liveViewData.primary.customLayout.abilityName | payload.activityData.notificationData.customLayout.abilityName | NA |
+| liveView.liveViewData.primary.customLayout.abilityParameters | payload.activityData.notificationData.customLayout.abilityParameters | NA |
 | liveView.liveViewData.capsule | payload.activityData.capsuleData | NA |
 | liveView.liveViewData.capsule.type | payload.activityData.capsuleData.type | 端侧type枚举CAPSULE_TYPE_TEXT，对应云侧type值为1。 端侧type枚举CAPSULE_TYPE_TIMER，对应云侧type值为2。 端侧type枚举CAPSULE_TYPE_PROGRESS，对应云侧type值为3。 |
 | liveView.liveViewData.capsule.status | payload.activityData.capsuleData.status | NA |

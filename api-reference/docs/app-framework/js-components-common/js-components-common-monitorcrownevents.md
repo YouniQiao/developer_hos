@@ -2,8 +2,8 @@
 title: "旋转表冠事件监听"
 upstream_id: "harmonyos-references/js-components-common-monitorcrownevents"
 catalog: "harmonyos-references"
-content_hash: "a207038a3ed2"
-synced_at: "2026-07-28T16:49:05.808562"
+content_hash: "0b47f0511d6e"
+synced_at: "2026-08-29T18:15:32.865220"
 ---
 
 # 旋转表冠事件监听
@@ -107,7 +107,7 @@ clearMonitorForCrownEvents(): void
     <button class="btn" type="capsule" value="flagChange" onclick="flagChange"></button>
     <list class="list" focusable="true" scrollpage="true">
         <list-item for="{{ array }}" class="listItem">
-            <text class="text">{{ $item.value }}</text>
+            <text class="text" onclick="toggleShow" show="{{ visible }}">{{ $item.value }}</text>
         </list-item>
     </list>
 </div>
@@ -136,7 +136,7 @@ export default {
     },
     onShow() {
         setMonitorForCrownEvents((event) => {
-            console.info('event timestamp is: ', event.timestamp, ', angularVelocity is: ',
+            console.info('event timestamp is: ', event.timeStamp, ', angularVelocity is: ',
                 event.angularVelocity);
             console.info('rotate is: ', event.rotate);
             return this.flag;

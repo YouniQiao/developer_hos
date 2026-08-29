@@ -2,8 +2,8 @@
 title: "avrecorder_base.h"
 upstream_id: "harmonyos-references/capi-avrecorder-base-h"
 catalog: "harmonyos-references"
-content_hash: "a160839d3952"
-synced_at: "2026-08-21T15:36:58.371258"
+content_hash: "e57542d10dda"
+synced_at: "2026-08-29T18:17:43.027124"
 ---
 
 # avrecorder_base.h
@@ -96,8 +96,8 @@ AVRecorder的视频源类型。
 
 | 枚举项 | 描述 |
 | --- | --- |
-| AVRECORDER_SURFACE_YUV = 0 | 原始数据Surface。适用于需要对原始视频帧数据进行编码处理的场景。 |
-| AVRECORDER_SURFACE_ES = 1 | ES数据Surface。适用于已有编码数据（如硬编码输出）无需再次编码的场景。 |
+| AVRECORDER_SURFACE_YUV = 0 | 原始数据Surface。 |
+| AVRECORDER_SURFACE_ES = 1 | ES数据Surface。 |
 
 #### [h2]OH_AVRecorder_CodecMimeType
 
@@ -183,8 +183,8 @@ AVRecorder状态变化的原因，用于区分状态变化是由用户操作还�
 
 | 枚举项 | 描述 |
 | --- | --- |
-| AVRECORDER_USER = 0 | 用户操作导致的状态变化。例如用户主动调用Start、Pause、Resume、Stop等接口时触发。 |
-| AVRECORDER_BACKGROUND = 1 | 后台操作导致的状态变化。例如因音频打断、录制超时等原因自动改变录制状态时触发。 |
+| AVRECORDER_USER = 0 | 用户操作导致的状态变化。 |
+| AVRECORDER_BACKGROUND = 1 | 后台操作导致的状态变化。 |
 
 #### [h2]OH_AVRecorder_FileGenerationMode
 

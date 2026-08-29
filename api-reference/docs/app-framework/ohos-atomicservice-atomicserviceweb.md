@@ -2,8 +2,8 @@
 title: "AtomicServiceWeb"
 upstream_id: "harmonyos-references/ohos-atomicservice-atomicserviceweb"
 catalog: "harmonyos-references"
-content_hash: "6b3d9fd6afe4"
-synced_at: "2026-07-09T00:58:12.771660"
+content_hash: "98b9f0286200"
+synced_at: "2026-08-29T18:14:58.946582"
 ---
 
 # AtomicServiceWeb
@@ -12,7 +12,7 @@ synced_at: "2026-07-09T00:58:12.771660"
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 该组件从API version 12开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+- 该组件从API version 12开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 - 示例效果请以真机运行为准，当前DevEco Studio预览器不支持。
 
 #### 需要权限
@@ -31,7 +31,11 @@ import { AtomicServiceWeb } from '@kit.ArkUI';
 
 #### 属性
 
-不支持[通用属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-attributes)
+不支持[通用属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-attributes)。
+
+#### 事件
+
+不支持[通用事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-events)。
 
 #### AtomicServiceWeb
 
@@ -54,7 +58,7 @@ AtomicServiceWeb({
   onProgressChange?: Callback<OnProgressChangeEvent>
 })
 ```
- 装饰器类型：@Component
+ 装饰器类型： @Component
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -64,16 +68,16 @@ AtomicServiceWeb({
 
 | 名称 | 类型 | 必填 | 装饰器类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| src | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 是 | - | 网页资源地址，访问网络资源需要在AGC配置业务域名，访问本地资源仅支持包内文件（$rawfile）。不支持通过状态变量（例如@State）动态更新地址。加载的网页中支持通过JS SDK提供的接口调用系统能力，具体以JS SDK为准。 |
+| src | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 是 | - | 网页资源地址，访问网络资源需要在AGC（AppGallery Connect）配置业务域名，访问本地资源仅支持包内文件（$rawfile）。不支持通过状态变量（例如@State）动态更新地址。加载的网页中支持通过JS SDK提供的接口调用系统能力，具体以JS SDK为准。 |
 | controller | [AtomicServiceWebController](#atomicservicewebcontroller) | 是 | @ObjectLink | 通过AtomicServiceWebController可以控制AtomicServiceWeb组件各种行为。 |
-| navPathStack | [NavPathStack](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#navpathstack10) | 否 | - | 路由栈信息。当使用NavDestination作为页面的根容器时，需传入NavDestination容器对应的NavPathStack处理页面路由。 |
+| navPathStack | [NavPathStack](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#navpathstack10) | 否 | - | 路由栈信息。当使用NavDestination作为页面的根容器时，需传入NavDestination容器对应的NavPathStack处理页面路由。默认值为空。 |
 | mixedMode | [MixedMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-e#mixedmode) | 否 | @Prop | 设置是否允许加载超文本传输协议（HTTP）和超文本传输安全协议（HTTPS）混合内容，默认不允许加载HTTP和HTTPS混合内容。 |
 | darkMode | [WebDarkMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-e#webdarkmode9) | 否 | @Prop | 设置Web深色模式，默认关闭。 |
 | forceDarkAccess | boolean | 否 | @Prop | 设置网页是否开启强制深色模式。true表示设置网页开启强制深色模式，false表示设置网页不开启强制深色模式。默认值：false。该属性仅在darkMode开启深色模式时生效。 |
-| nestedScroll15+ | [NestedScrollOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scrollable-common#nestedscrolloptions10对象说明) | [NestedScrollOptionsExt](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-i#nestedscrolloptionsext14) | 否 | @Prop | 设置嵌套滚动选项。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
+| nestedScroll15+ | [NestedScrollOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scrollable-common#nestedscrolloptions10对象说明) | [NestedScrollOptionsExt](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-i#nestedscrolloptionsext14) | 否 | @Prop | 设置嵌套滚动选项。nestedScroll为NestedScrollOptions（向前、向后两个方向）类型时，scrollForward、scrollBackward默认滚动选项为NestedScrollMode.SELF_FIRST。nestedScroll为NestedScrollOptionsExt（上下左右四个方向）类型时，scrollUp、scrollDown、scrollLeft、scrollRight默认滚动选项为NestedScrollMode.SELF_FIRST。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
 | onMessage | Callback | 否 | - | H5页面通过JS SDK的postMessage()发送消息后，Web组件对应的页面返回或销毁时，触发该回调。 |
 | onErrorReceive | Callback | 否 | - | 网页加载遇到错误时触发该回调。出于性能考虑，建议此回调中尽量执行简单逻辑。在无网络的情况下，触发此回调。 |
-| onHttpErrorReceive | Callback | 否 | - | 网页加载资源遇到的HTTP错误（响应码>=400)时触发该回调。 |
+| onHttpErrorReceive | Callback | 否 | - | 网页加载资源时遇到HTTP错误（响应码>=400）触发该回调。 |
 | onPageBegin | Callback | 否 | - | 网页开始加载时触发该回调，且只在主frame触发，iframe或者frameset的内容加载时不会触发此回调。 |
 | onPageEnd | Callback | 否 | - | 网页加载完成时触发该回调，且只在主frame触发。 |
 | onControllerAttached | Callback | 否 | - | 当Controller成功绑定到Web组件时触发该回调，此回调中不能使用操作网页的相关接口。 |
@@ -128,7 +132,7 @@ getCustomUserAgent(): string
 
 | 类型 | 说明 |
 | --- | --- |
-| string | 用户自定义代理信息。默认User-Agent定义与使用场景请参考[User-Agent开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-default-useragent)。 |
+| string | 自定义用户代理。默认User-Agent定义与使用场景请参考[User-Agent开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-default-useragent)。 |
 
 错误码：
 
@@ -144,9 +148,9 @@ setCustomUserAgent(userAgent: string): void
 
 设置自定义用户代理，会覆盖系统的用户代理。
 
-建议在onControllerAttached回调事件中设置User-Agent，设置方式请参考示例。不建议将User-Agent设置在onLoadIntercept回调事件中，会概率性出现设置失败。
+建议在onControllerAttached回调事件中设置User-Agent，设置方式请参考示例。不建议将User-Agent设置在onLoadIntercept回调事件中，在部分场景下可能出现设置失败。
 
-![](./img/note_3.0-zh-cn.png) 当Web组件src设置了url，且未在onControllerAttached回调事件中设置User-Agent。再调用setCustomUserAgent方法时，可能会出现加载的页面与实际设置User-Agent不符的异常现象。
+![](./img/note_3.0-zh-cn.png) 当Web组件src设置了url，且未在onControllerAttached回调事件中设置User-Agent，再调用setCustomUserAgent方法时，可能会出现加载的页面与实际设置User-Agent不符的异常现象。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -171,7 +175,7 @@ setCustomUserAgent(userAgent: string): void
 
 refresh(): void
 
-调用此接口通知AtomicServiceWeb组件刷新网页。
+通知AtomicServiceWeb组件刷新网页。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -189,7 +193,7 @@ refresh(): void
 
 forward(): void
 
-按照历史栈，前进一个页面。一般结合[accessForward](#accessforward)一起使用。
+按照历史栈，前进一个页面。可结合[accessForward](#accessforward)一起使用。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -207,7 +211,7 @@ forward(): void
 
 backward(): void
 
-按照历史栈，后退一个页面。一般结合[accessBackward](#accessbackward)一起使用。
+按照历史栈，后退一个页面。可结合[accessBackward](#accessbackward)一起使用。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -225,7 +229,7 @@ backward(): void
 
 accessForward(): boolean
 
-当前页面是否可前进，即当前页面是否有前进历史记录。
+当前页面是否可前进，即当前页面是否有前进历史记录。可结合[forward](#forward)一起使用，先通过此方法判断是否可前进，再调用forward执行前进操作。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -249,7 +253,7 @@ accessForward(): boolean
 
 accessBackward(): boolean
 
-当前页面是否可后退，即当前页面是否有返回历史记录。
+当前页面是否可后退，即当前页面是否有返回历史记录。可结合[backward](#backward)一起使用，先通过此方法判断是否可后退，再调用backward执行后退操作。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -314,8 +318,8 @@ loadUrl(url: string | Resource, headers?: Array<WebHeader>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| url | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 是 | 需要加载的 URL。 |
-| headers | Array | 否 | URL的附加HTTP请求头。 |
+| url | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 是 | 需要加载的 URL，需为合法的URL格式。 |
+| headers | Array | 否 | URL的附加HTTP请求头。默认值为空数组，即不添加附加请求头。 |
 
 错误码：
 
@@ -323,7 +327,7 @@ loadUrl(url: string | Resource, headers?: Array<WebHeader>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3.Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
 | 17100001 | Init error. The AtomicServiceWebController must be associated with a AtomicServiceWeb component. |
 | 17100002 | Invalid url. |
 | 17100003 | Invalid resource path or file type. |
@@ -343,7 +347,7 @@ Web组件返回的请求/响应头对象。
 
 #### OnMessageEvent
 
-定义页面回退或销毁时触发该回调。
+定义页面返回或销毁时触发该回调。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -364,11 +368,11 @@ Web组件返回的请求/响应头对象。
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | request | [WebResourceRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-webresourcerequest) | 否 | 否 | 网页请求的封装信息。 |
-| error | [WebResourceError](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-webresourceerror) | 否 | 否 | 网页加载资源错误的封装信息 。 |
+| error | [WebResourceError](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-webresourceerror) | 否 | 否 | 网页加载资源错误的封装信息。 |
 
 #### OnHttpErrorReceiveEvent
 
-定义网页收到加载资源加载HTTP错误时触发。
+定义网页加载资源遇到HTTP错误时触发该回调。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -381,7 +385,7 @@ Web组件返回的请求/响应头对象。
 
 #### OnPageBeginEvent
 
-定义网页加载开始时触发的函数。
+定义网页加载开始时触发该回调。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -393,7 +397,7 @@ Web组件返回的请求/响应头对象。
 
 #### OnPageEndEvent
 
-定义网页加载结束时触发的函数。
+定义网页加载结束时触发该回调。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -405,7 +409,7 @@ Web组件返回的请求/响应头对象。
 
 #### OnLoadInterceptEvent
 
-当资源加载被拦截时，加载拦截事件。
+定义Web组件加载url之前触发的加载拦截事件。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -425,13 +429,13 @@ Web组件返回的请求/响应头对象。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| newProgress | number | 否 | 否 | 新的加载进度，取值范围为0到100的整数。 |
+| newProgress | number | 否 | 否 | 新的加载进度，取值范围为0到100的整数。单位：%。 |
 
 #### OnLoadInterceptCallback
 
 type OnLoadInterceptCallback = (event: OnLoadInterceptEvent) => boolean
 
-资源加载被拦截时触发该回调。
+当Web组件加载url之前触发该回调，用于判断是否阻止此次访问。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -441,17 +445,13 @@ type OnLoadInterceptCallback = (event: OnLoadInterceptEvent) => boolean
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| event | OnLoadInterceptEvent | 是 | 当资源加载被拦截时，加载拦截事件。 |
+| event | [OnLoadInterceptEvent](#onloadinterceptevent) | 是 | 当Web组件加载url之前触发的加载拦截事件。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | 返回资源是否被拦截，true表示被拦截。 |
-
-#### 事件
-
-不支持[通用事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-events)
+| boolean | 返回资源是否被拦截，true表示被拦截，false表示不被拦截。 |
 
 #### 示例
 
@@ -470,7 +470,7 @@ struct WebComponent {
   
   build() {
     Column() {
-      AtomicServiceWeb({ src: $rawfile("index.html"), controller: this.controller })
+      AtomicServiceWeb({ src: $rawfile('index.html'), controller: this.controller })
     }
   }
 }
@@ -517,7 +517,7 @@ struct WebComponent {
 
   build() {
     NavDestination() {
-      AtomicServiceWeb({ src: $rawfile("index.html"), controller: this.controller, navPathStack: this.navPathStack })
+      AtomicServiceWeb({ src: $rawfile('index.html'), controller: this.controller, navPathStack: this.navPathStack })
     }
     .onReady((context: NavDestinationContext) => {
       this.navPathStack = context.pathStack;
@@ -542,7 +542,7 @@ struct WebComponent {
   build() {
     Column() {
       AtomicServiceWeb({
-        src: $rawfile("index.html"),
+        src: $rawfile('index.html'),
         controller: this.controller,
         // H5页面点击“发送消息”后，再点击“返回上一页”，触发该回调
         onMessage: (event: OnMessageEvent) => {
@@ -678,7 +678,7 @@ struct WebComponent {
   @State forceDarkAccess: boolean = true;
   @State mixedMode: MixedMode = MixedMode.None;
   @State controller: AtomicServiceWebController = new AtomicServiceWebController();
-  @State num: number = 1;
+  @State count: number = 1;
 
   build() {
     Column() {
@@ -716,7 +716,7 @@ struct WebComponent {
       Button('点击').onClick(() => {
         console.info(`AtomicServiceWebLog getUserAgent = ${this.controller.getUserAgent()}`);
         console.info(`AtomicServiceWebLog getCustomUserAgent = ${this.controller.getCustomUserAgent()}`);
-        this.controller.setCustomUserAgent('test' + this.num++);
+        this.controller.setCustomUserAgent('test' + this.count++);
 
         console.info(`AtomicServiceWebLog getUserAgent after set = ${this.controller.getUserAgent()}`);
         console.info(`AtomicServiceWebLog getCustomUserAgent after set = ${this.controller.getCustomUserAgent()}`);
@@ -728,36 +728,36 @@ struct WebComponent {
         forceDarkAccess: this.forceDarkAccess,
         controller: this.controller,
         onControllerAttached: () => {
-          console.info("AtomicServiceWebLog onControllerAttached call back success");
+          console.info('AtomicServiceWebLog onControllerAttached call back success');
         },
         onLoadIntercept: (event: OnLoadInterceptEvent) => {
-          console.info("AtomicServiceWebLog onLoadIntercept call back success " + JSON.stringify({
+          console.info('AtomicServiceWebLog onLoadIntercept call back success ' + JSON.stringify({
             getRequestUrl: event.data.getRequestUrl(),
             getRequestMethod: event.data.getRequestMethod(),
             getRequestHeader: event.data.getRequestHeader(),
             isRequestGesture: event.data.isRequestGesture(),
             isMainFrame: event.data.isMainFrame(),
             isRedirect: event.data.isRedirect(),
-          }))
+          }));
           return false;
         },
         onProgressChange: (event: OnProgressChangeEvent) => {
-          console.info("AtomicServiceWebLog onProgressChange call back success " + JSON.stringify(event));
+          console.info('AtomicServiceWebLog onProgressChange call back success ' + JSON.stringify(event));
         },
         onMessage: (event: OnMessageEvent) => {
-          console.info("onMessage call back success " + JSON.stringify(event));
+          console.info('AtomicServiceWebLog onMessage call back success ' + JSON.stringify(event));
         },
         onPageBegin: (event: OnPageBeginEvent) => {
-          console.info("onPageBegin call back success " + JSON.stringify(event));
+          console.info('AtomicServiceWebLog onPageBegin call back success ' + JSON.stringify(event));
         },
         onPageEnd: (event: OnPageEndEvent) => {
-          console.info("onPageEnd call back success " + JSON.stringify(event));
+          console.info('AtomicServiceWebLog onPageEnd call back success ' + JSON.stringify(event));
         },
         onHttpErrorReceive: (event: OnHttpErrorReceiveEvent) => {
-          console.info("onHttpErrorReceive call back success " + JSON.stringify(event));
+          console.info('AtomicServiceWebLog onHttpErrorReceive call back success ' + JSON.stringify(event));
         },
         onErrorReceive: (event: OnErrorReceiveEvent) => {
-          console.info("onErrorReceive call back success " + JSON.stringify(event));
+          console.info('AtomicServiceWebLog onErrorReceive call back success ' + JSON.stringify(event));
         }
       })
     }
@@ -786,9 +786,9 @@ struct AtomicServiceNestedScroll {
   build() {
     Scroll() {
       Column() {
-        Text("嵌套AsWeb-头部")
-          .height("15%")
-          .width("100%")
+        Text('嵌套AsWeb-头部')
+          .height('15%')
+          .width('100%')
           .fontSize(30)
           .backgroundColor(Color.Yellow)
         Button(this.mode)
@@ -813,9 +813,9 @@ struct AtomicServiceNestedScroll {
           controller: this.controller,
           nestedScroll: this.nestedScroll
         })
-        Text("嵌套AsWeb-尾部")
-          .height("15%")
-          .width("100%")
+        Text('嵌套AsWeb-尾部')
+          .height('15%')
+          .width('100%')
           .fontSize(30)
           .backgroundColor(Color.Yellow)
       }

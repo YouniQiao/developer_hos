@@ -2,8 +2,8 @@
 title: "@ohos.multimodalInput.gestureEvent (手势事件)"
 upstream_id: "harmonyos-references/js-apis-multimodalinput-gestureevent"
 catalog: "harmonyos-references"
-content_hash: "f07a9dcc7a8a"
-synced_at: "2026-07-09T00:59:48.795263"
+content_hash: "a44d1e068f2c"
+synced_at: "2026-08-29T18:17:04.897423"
 ---
 
 # @ohos.multimodalInput.gestureEvent (手势事件)
@@ -17,7 +17,7 @@ synced_at: "2026-07-09T00:59:48.795263"
 #### 导入模块
 
 ```
-import { Rotate, Pinch, ThreeFingersSwipe, FourFingersSwipe, ActionType } from '@kit.InputKit';
+import { Rotate, Pinch, ThreeFingersSwipe, FourFingersSwipe, ThreeFingersTap, ActionType } from '@kit.InputKit';
 ```
 
 #### Pinch
@@ -28,7 +28,7 @@ import { Rotate, Pinch, ThreeFingersSwipe, FourFingersSwipe, ActionType } from '
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| type | [ActionType](#actiontype) | 否 | 否 | 手势事件类型。如：手势开始、手势更新、手势结束等。 |
+| type | [ActionType](#actiontype) | 否 | 否 | 手势事件类型，包括手势取消、手势开始、手势更新、手势结束。 |
 | scale | number | 否 | 否 | 捏合度，取值范围大于等于0。 |
 
 #### Rotate11+

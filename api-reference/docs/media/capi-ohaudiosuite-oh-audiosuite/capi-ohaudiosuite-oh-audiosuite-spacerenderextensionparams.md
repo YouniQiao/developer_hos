@@ -2,8 +2,8 @@
 title: "OH_AudioSuite_SpaceRenderExtensionParams"
 upstream_id: "harmonyos-references/capi-ohaudiosuite-oh-audiosuite-spacerenderextensionparams"
 catalog: "harmonyos-references"
-content_hash: "e38893a3f86b"
-synced_at: "2026-07-09T01:00:12.259706"
+content_hash: "458915338711"
+synced_at: "2026-08-29T18:17:22.655194"
 ---
 
 # OH_AudioSuite_SpaceRenderExtensionParams
@@ -28,5 +28,5 @@ struct OH_AudioSuite_SpaceRenderExtensionParams {...}
 
 | 名称 | 描述 |
 | --- | --- |
-| float extRadius | 扩展半径。取值范围为[1.0, 5.0]，单位为米。 |
-| int32_t extAngle | 扩展角度。取值范围为(0, 360)，单位为度。 |
+| float extRadius | 扩展半径，表示声音源的空间扩散范围。取值越大，声音的空间扩散范围越宽广。取值范围为[1.0, 5.0]，单位为米（m）。 |
+| int32_t extAngle | 扩展角度，表示声音源在水平面上的扩散角度范围。取值越大，声音的扩散角度越宽。取值范围为(0, 360)，单位为度（°）。 |

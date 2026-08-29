@@ -2,8 +2,8 @@
 title: "native_xcomponent_key_event.h"
 upstream_id: "harmonyos-references/capi-native-xcomponent-key-event-h"
 catalog: "harmonyos-references"
-content_hash: "41e783188a7f"
-synced_at: "2026-07-28T16:49:23.310578"
+content_hash: "1e1f6a0fd659"
+synced_at: "2026-08-29T18:15:39.680276"
 ---
 
 # native_xcomponent_key_event.h
@@ -202,7 +202,7 @@ enum OH_NativeXComponent_KeyCode
 | KEY_LINEFEED = 2609 | 换行键。 |
 | KEY_MACRO = 2610 | 宏键。 |
 | KEY_NUMPAD_PLUSMINUS = 2611 | 小键盘加号/减号键。 |
-| KEY_SCALE = 2612 | 扩展键。 |
+| KEY_SCALE = 2612 | 缩放键。 |
 | KEY_HANGUEL = 2613 | 韩语键。 |
 | KEY_HANJA = 2614 | 韩语汉字键。 |
 | KEY_YEN = 2615 | 日元键。 |
@@ -316,11 +316,11 @@ enum OH_NativeXComponent_KeyCode
 | KEY_BRIGHTNESS_MIN = 2724 | 最小亮度键。 |
 | KEY_BRIGHTNESS_MAX = 2725 | 最大亮度键。 |
 | KEY_KBDINPUTASSIST_PREV = 2726 | 键盘输入辅助上一个候选。 |
-| KEY_KBDINPUTASSIST_NEXT = 2727 | 键盘输入Assist_Next。 |
+| KEY_KBDINPUTASSIST_NEXT = 2727 | 键盘输入辅助下一个候选。 |
 | KEY_KBDINPUTASSIST_PREVGROUP = 2728 | 键盘输入辅助上一个候选组。 |
 | KEY_KBDINPUTASSIST_NEXTGROUP = 2729 | 键盘输入辅助下一个候选组。 |
-| KEY_KBDINPUTASSIST_ACCEPT = 2730 | 键盘输入Assist_Accept。 |
-| KEY_KBDINPUTASSIST_CANCEL = 2731 | 键盘输入Assist_Cancel。 |
+| KEY_KBDINPUTASSIST_ACCEPT = 2730 | 键盘输入辅助接受。 |
+| KEY_KBDINPUTASSIST_CANCEL = 2731 | 键盘输入辅助取消。 |
 | KEY_FRONT = 2800 | 挡风玻璃除雾器开关。 |
 | KEY_SETUP = 2801 | 设置键。 |
 | KEY_WAKEUP = 2802 | 唤醒键。 |
@@ -335,7 +335,7 @@ enum OH_NativeXComponent_KeyCode
 | KEY_CYCLEWINDOWS = 2811 | Windows循环键。 |
 | KEY_COMPUTER = 2812 | 计算机键。 |
 | KEY_EJECTCLOSECD = 2813 | 弹出CD键。 |
-| KEY_ISO = 2814 | ISO键。 |
+| KEY_ISO = 2814 | ISO键盘布局标准定义的特殊功能键。 |
 | KEY_MOVE = 2815 | 移动键。 |
 | KEY_F13 = 2816 | 按键'F13'。 |
 | KEY_F14 = 2817 | 按键'F14'。 |

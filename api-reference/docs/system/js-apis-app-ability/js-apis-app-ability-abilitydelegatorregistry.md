@@ -2,8 +2,8 @@
 title: "@ohos.app.ability.abilityDelegatorRegistry (AbilityDelegatorRegistry)"
 upstream_id: "harmonyos-references/js-apis-app-ability-abilitydelegatorregistry"
 catalog: "harmonyos-references"
-content_hash: "37de8a1b70ee"
-synced_at: "2026-07-09T01:00:06.173042"
+content_hash: "8c4d73829822"
+synced_at: "2026-08-29T18:17:17.544002"
 ---
 
 # @ohos.app.ability.abilityDelegatorRegistry (AbilityDelegatorRegistry)
@@ -22,11 +22,11 @@ import { abilityDelegatorRegistry } from '@kit.TestKit';
 
 #### AbilityLifecycleState
 
-Ability生命周期状态，可配合[AbilityDelegator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-abilitydelegator)的[getAbilityState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-abilitydelegator#getabilitystate9)方法返回对应Ability的生命周期状态。
+Ability生命周期状态，可配合[AbilityDelegator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-abilitydelegator)的[getAbilityState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-abilitydelegator#getabilitystate)方法返回对应Ability的生命周期状态。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
-系统能力：以下各项对应的系统能力均为SystemCapability.Ability.AbilityRuntime.Core
+系统能力： SystemCapability.Ability.AbilityRuntime.Core
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
@@ -57,6 +57,7 @@ getAbilityDelegator(): AbilityDelegator
 ```
 import { abilityDelegatorRegistry } from '@kit.TestKit';
 import { Want } from '@kit.AbilityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
 
 // 获取应用程序的AbilityDelegator对象
 let abilityDelegator = abilityDelegatorRegistry.getAbilityDelegator();
@@ -67,9 +68,9 @@ let want: Want = {
 };
 
 // 启动指定Ability
-abilityDelegator.startAbility(want, (err) => {
+abilityDelegator.startAbility(want, (err: BusinessError) => {
   if (err) {
-    console.error(`Failed start ability, error: ${JSON.stringify(err)}`);
+    console.error(`Failed start ability. code: ${err.code}, message: ${err.message}`);
   } else {
     console.info('Success start ability.');
   }
@@ -138,7 +139,7 @@ type AbilityDelegatorArgs = _AbilityDelegatorArgs
 
 type AbilityMonitor = _AbilityMonitor
 
-作为[addAbilityMonitor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-abilitydelegator#addabilitymonitor9)的入参，用于监听指定UIAbility的生命周期变化。
+作为[addAbilityMonitor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-abilitydelegator#addabilitymonitor)的入参，用于监听指定UIAbility的生命周期变化。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -166,7 +167,7 @@ type ShellCmdResult = _ShellCmdResult
 
 type AbilityStageMonitor = _AbilityStageMonitor
 
-提供监听指定[AbilityStage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-abilitystage)对象的能力。开发者可以将AbilityStageMonitor作为[abilityDelegator.waitAbilityStageMonitor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-abilitydelegator#waitabilitystagemonitor9)的入参来注册监听。
+提供监听指定[AbilityStage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-abilitystage)对象的能力。开发者可以将AbilityStageMonitor作为[abilityDelegator.waitAbilityStageMonitor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-abilitydelegator#waitabilitystagemonitor)的入参来注册监听。
 
 元服务API： 从API version 14开始，该接口支持在元服务中使用。
 

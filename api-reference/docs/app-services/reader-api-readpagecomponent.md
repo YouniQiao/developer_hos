@@ -2,8 +2,8 @@
 title: "ReadPageComponent（阅读页组件）"
 upstream_id: "harmonyos-references/reader-api-readpagecomponent"
 catalog: "harmonyos-references"
-content_hash: "a46a4023e574"
-synced_at: "2026-07-09T01:01:38.635163"
+content_hash: "c5347748972e"
+synced_at: "2026-08-29T18:18:34.412105"
 ---
 
 # ReadPageComponent（阅读页组件）
@@ -42,8 +42,8 @@ import { ReadPageComponent } from '@kit.ReaderKit';
 
 | 参数名 | 类型 | 装饰器类型 | 说明 |
 | --- | --- | --- | --- |
-| controller | [ReaderComponentController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/reader-read-core#readercomponentcontroller) | _ | ReadPageComponent控制器。 |
-| readerCallback | AsyncCallback | _ | 回调函数。 |
+| controller | readerCore.[ReaderComponentController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/reader-read-core#readercomponentcontroller) | - | ReadPageComponent控制器。 |
+| readerCallback | AsyncCallback | - | 回调函数。 |
 
 #### [h2]build
 
@@ -87,7 +87,7 @@ struct Reader {
 
     await this.readerComponentController.init(context);
     this.readerComponentController.registerBookParser(bookParserHandler);
-    this.readerComponentController.startPlay(spineIndex || 0, domPos);
+    await this.readerComponentController.startPlay(spineIndex || 0, domPos);
     hilog.info(0x0000, 'testTag', `startPlay succeeded`);
   }
 

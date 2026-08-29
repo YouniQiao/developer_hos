@@ -2,13 +2,13 @@
 title: "Swiper"
 upstream_id: "harmonyos-references/ts-container-swiper"
 catalog: "harmonyos-references"
-content_hash: "1b66226bb338"
-synced_at: "2026-07-28T16:43:32.956910"
+content_hash: "7f473dca449a"
+synced_at: "2026-08-29T18:13:24.069234"
 ---
 
 # Swiper
 
-滑块视图容器，提供子组件滑动轮播显示的能力。适用于轮播图展示、图片浏览、引导页、卡片轮播等场景。
+滑块视图容器，提供子组件滑动轮播显示的能力。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -78,7 +78,7 @@ autoPlay(value: boolean)
 
 设置子组件是否自动播放。轮播方向为索引从小到大。
 
-[loop](#loop)为false时，自动轮播到最后一页时停止轮播。手势切换完成后，如果当前页面不是最后一页，自动轮播将继续播放。当Swiper不可见时会停止轮播。
+[loop](#loop)为false时，自动轮播到最后一页时停止轮播。手势切换后不是最后一页时继续播放。当Swiper不可见时会停止轮播。
 
 卡片能力： 从API version 10开始，该接口支持在ArkTS卡片中使用。
 
@@ -96,7 +96,7 @@ autoPlay(value: boolean)
 
 autoPlay(autoPlay: boolean, options: AutoPlayOptions)
 
-设置子组件是否自动播放。options入参控制手指或鼠标按下屏幕时子组件是否停止自动播放。
+设置子组件是否自动播放。options入参控制手指或者鼠标等按下屏幕时子组件是否停止自动播放。
 
 当[loop](#loop)设置为false时，自动轮播将在到达最后一页时停止。在通过手势切换且未处于最后一页的情况下，轮播将继续进行。Swiper在不可见时，轮播也将停止。
 
@@ -159,7 +159,7 @@ indicator(indicator: IndicatorComponentController | DotIndicator | DigitIndicato
 
 nestedScroll(value: SwiperNestedScrollMode)
 
-设置Swiper组件和父组件的嵌套滚动模式。当Swiper嵌套在滚动容器（如List、Scroll）中时，需要根据业务需求选择合适的嵌套滚动模式。[loop](#loop)为true时Swiper组件没有边缘，不会触发父组件嵌套滚动。
+设置Swiper组件和父组件的嵌套滚动模式。[loop](#loop)为true时Swiper组件没有边缘，不会触发父组件嵌套滚动。
 
 ![](./img/note_3.0-zh-cn.png) 由于Swiper的抛滑动画逻辑和其它滚动类组件不同（Swiper一次只能滑动一页，抛滑时做翻页动画），当Swiper内嵌套其它滚动组件时，如果Swiper的翻页动画已经启动，将无法接受子节点上传的滚动偏移量。这时Swiper的翻页动画和子节点的边缘效果动画会同时执行。
 
@@ -179,7 +179,9 @@ nestedScroll(value: SwiperNestedScrollMode)
 
 loop(value: boolean)
 
-设置是否开启循环。在LazyForEach懒循环加载模式下，加载的组件数量建议大于5个。预加载的组件数量不足时，可能会导致快速切换时出现空白或卡顿。
+设置是否开启循环。在LazyForEach懒循环加载模式下，加载的组件数量建议大于5个。
+
+![](./img/note_3.0-zh-cn.png) 循环场景下，设置prevMargin/nextMargin属性，屏幕朗读线性遍历子组件时会触发“聚焦-滚动-暴露新子节点”的无限循环。建议在该场景下，设置loop为false或者使用[accessibilityGroup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-accessibility#accessibilitygroup14)设置子组件不启用无障碍服务。
 
 卡片能力： 从API version 10开始，该接口支持在ArkTS卡片中使用。
 
@@ -227,7 +229,7 @@ interval(value: number)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 自动播放时播放的时间间隔。当该值小于[duration](#duration)属性值时，翻页完成后会立即开始下一次轮播。 默认值：3000 单位：ms 取值范围：[0, +∞)，设置小于0的值时，按照默认值处理。 |
+| value | number | 是 | 自动播放时播放的时间间隔。当该值小于[duration](#duration)属性值时，翻页完成后会立即开始下一次轮播。 默认值：3000 单位：毫秒 取值范围：[0, +∞)，设置小于0的值时，按照默认值处理。 |
 
 #### [h2]duration
 
@@ -247,7 +249,7 @@ curve默认曲线为[interpolatingSpring](https://developer.huawei.com/consumer/
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 子组件切换的动画时长。 默认值：400 单位：ms 取值范围：[0, +∞)，设置小于0的值时，按照默认值处理。 |
+| value | number | 是 | 子组件切换的动画时长。 默认值：400 单位：毫秒 取值范围：[0, +∞)，设置小于0的值时，按照默认值处理。 |
 
 #### [h2]curve8+
 
@@ -309,7 +311,7 @@ itemSpace(value: number | string)
 
 cachedCount(value: number)
 
-设置预加载子组件个数，以当前页面为基准，加载当前显示页面的前后个数。前面item删除，后面会向前补位。例如cachedCount=1时，会将当前显示页面在索引序号上相邻的前一页和后一页的子组件都预加载。如果设置为按组翻页，即displayCount的swipeByGroup参数设为true，预加载时会以组为基本单位。例如cachedCount=1，swipeByGroup=true时，会将当前组的前面一组和后面一组的子组件都预加载。
+设置预加载子组件个数，以当前页面为基准，加载当前显示页面的前后个数。前面item删除，后面会向前补位。例如cachedCount=1时，会将当前显示的页面的前面一页和后面一页的子组件都预加载。如果设置为按组翻页，即displayCount的swipeByGroup参数设为true，预加载时会以组为基本单位。例如cachedCount=1，swipeByGroup=true时，会将当前组的前面一组和后面一组的子组件都预加载。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -336,7 +338,6 @@ cachedCount(count: number, isShown: boolean)
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 只在[LazyForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-lazyforeach)和开启了virtualScroll开关的[Repeat](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-rendering-control-repeat)中生效，生效后超出缓存范围的子节点会被释放。
 - isShown值为true，且设置的count过大时，如果前后预加载范围内可加载的节点不足，循环场景下同一个可加载节点只会布局在一侧。
 
 卡片能力： 从API version 15开始，该接口支持在ArkTS卡片中使用。
@@ -378,14 +379,14 @@ cachedCount(count: number, options: CachedCountOptions)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| count | number | 是 | 预加载子组件个数。 默认值：1 取值范围：[0, +∞)，设置小于0的值时，按照1处理。 |
-| options | [CachedCountOptions](#cachedcountoptions24对象说明) | 是 | 预加载子组件的配置选项。对象属性包括：isShown（预加载范围内的节点是否进行绘制）和independent（是否按实际子组件个数计算）。 |
+| count | number | 是 | 预加载子组件个数。 取值范围：[0, +∞)，设置小于0的值时，按照1处理。 |
+| options | [CachedCountOptions](#cachedcountoptions24对象说明) | 是 | 预加载子组件的配置选项。 |
 
 #### [h2]disableSwipe8+
 
 disableSwipe(value: boolean)
 
-设置禁用组件滑动切换功能。适用于仅通过按钮或导航点控制翻页的场景，或需要限制用户滑动操作的场景。
+设置禁用组件滑动切换功能。
 
 卡片能力： 从API version 10开始，该接口支持在ArkTS卡片中使用。
 
@@ -471,7 +472,7 @@ displayCount(value: number | string | SwiperAutoFill | ItemFillPolicy, swipeByGr
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | string | [SwiperAutoFill](#swiperautofill10) | [ItemFillPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#itemfillpolicy22) | 是 | 视窗内显示的子元素个数。 默认值：1 取值范围：(0, +∞)，设置小于等于0的值时，按照1处理。 |
+| value | number | string | [SwiperAutoFill](#swiperautofill10) | [ItemFillPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#itemfillpolicy22) | 是 | 视窗内显示的子元素个数。 取值范围：(0, +∞)，设置小于等于0的值时，按照1处理。 |
 | swipeByGroup | boolean | 否 | 是否按组进行翻页。如果设为true，在翻页时会按组进行翻页，每组内子元素的数量为displayCount的值；如果为false，则为默认翻页行为，即按照子元素进行翻页。 默认值：false |
 
 ![](./img/note_3.0-zh-cn.png) 当Swiper子组件个数小于等于Swiper组件内容区内显示的节点总个数(totalDisplayCount = DisplayCount + prevMargin? (1 : 0) + nextMargin? (1 : 0))时，一般按照非循环模式布局处理，此时，前后边距对应子组件不显示，但依然会在视窗内占位。Swiper组件按照totalDisplayCount个数判断测算规格。例外情况如下：
@@ -576,7 +577,7 @@ prevMargin(value: Length, ignoreBlank?:boolean)
 
 indicatorInteractive(value: boolean)
 
-设置导航点是否可交互。适用于需要通过其他方式（如按钮）控制翻页，或需要禁止用户通过导航点点击翻页的场景。
+设置组件导航点是否可交互。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -656,10 +657,10 @@ Swiper在主轴上的尺寸大小模式枚举。
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| Stretch(deprecated) | 0 | Swiper滑动一页的宽度为Swiper组件自身的宽度。 **说明：** 从API version 7开始支持，从API version 10开始废弃，建议使用STRETCH替代。 **卡片能力：** 从API version 7开始，该接口支持在ArkTS卡片中使用。 |
-| AutoLinear(deprecated) | 1 | Swiper滑动一页的宽度为子组件宽度中的最大值。此枚举表现形式与[displayCount](#displaycount8)中使用string类型，将值设置为auto表现一致，具体可参考[displayCount](#displaycount8)说明。 **说明：** 从API version 7开始支持，从API version 10开始废弃，建议使用AUTO_LINEAR替代。 **卡片能力：** 从API version 7开始，该接口支持在ArkTS卡片中使用。 |
+| Stretch(deprecated) | 0 | Swiper滑动一页的宽度为Swiper组件自身的宽度。 **说明**：从API version 7开始支持，从API version 10开始废弃，建议使用STRETCH替代。 **卡片能力：** 从API version 7开始，该接口支持在ArkTS卡片中使用。 |
+| AutoLinear(deprecated) | 1 | Swiper滑动一页的宽度为子组件宽度中的最大值。此枚举表现形式与[displayCount](#displaycount8)中使用string类型，将值设置为auto表现一致，具体可参考[displayCount](#displaycount8)说明。 **说明**：从API version 7开始支持，从API version 10开始废弃，建议使用AUTO_LINEAR替代。 **卡片能力：** 从API version 7开始，该接口支持在ArkTS卡片中使用。 |
 | STRETCH10+ | 0 | Swiper滑动一页的宽度为Swiper组件自身的宽度。 **卡片能力：** 从API version 10开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| AUTO_LINEAR(deprecated) | 1 | Swiper滑动一页的宽度为视窗内最左侧子组件的宽度。此枚举表现形式与[displayCount](#displaycount8)中使用string类型，将值设置为auto表现一致，具体可参考[displayCount](#displaycount8)说明。 **说明：** 从API version 10开始支持，从API version 12开始废弃，建议使用[Scroller.scrollTo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scroll#scrollto)替代。 **卡片能力：** 从API version 10开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| AUTO_LINEAR(deprecated) | 1 | Swiper滑动一页的宽度为视窗内最左侧子组件的宽度。此枚举表现形式与[displayCount](#displaycount8)中使用string类型，将值设置为auto表现一致，具体可参考[displayCount](#displaycount8)说明。 **说明**：从API version 10开始支持，从API version 12开始废弃，建议使用[Scroller.scrollTo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scroll#scrollto)替代。 **卡片能力：** 从API version 10开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### SwiperNestedScrollMode11+枚举说明
 
@@ -726,9 +727,7 @@ showPrevious()
 
 changeIndex(index: number, useAnimation?: boolean)
 
-翻至指定页面。翻页带动效切换过程，时长通过Swiper的[duration](#duration)属性设置。
-
-![](./img/note_3.0-zh-cn.png) 该接口本身提供了不带动画跳转页面的能力（useAnimation设置为false），不建议使用changeIndex接口启动动画后，直接使用finishAnimation接口打断来实现页面不带动画跳转。
+翻至指定页面。
 
 卡片能力： 从API version 12开始，该接口支持在ArkTS卡片中使用。
 
@@ -749,7 +748,7 @@ changeIndex(index: number, useAnimation?: boolean)
 
 changeIndex(index: number, animationMode?: SwiperAnimationMode | boolean)
 
-翻页至指定页面。翻页带动效切换过程，时长通过Swiper的[duration](#duration)属性设置。
+翻页至指定页面。
 
 ![](./img/note_3.0-zh-cn.png) 该接口本身提供了不带动画跳转页面的能力（animationMode设置为false或者SwiperAnimationMode.NO_ANIMATION），不建议使用changeIndex接口启动动画后，直接使用finishAnimation接口打断来实现页面不带动画跳转。
 
@@ -766,7 +765,7 @@ changeIndex(index: number, animationMode?: SwiperAnimationMode | boolean)
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | index | number | 是 | 指定页面在Swiper中的索引值。 **说明：** 设置的值小于0或大于最大页面索引时，取0。 |
-| animationMode | [SwiperAnimationMode](#swiperanimationmode15枚举说明) | boolean | 否 | 设置翻页到指定页面的动效模式。 默认值：SwiperAnimationMode.NO_ANIMATION **说明：** 当传入true时有动效，等同于SwiperAnimationMode.DEFAULT_ANIMATION；当传入false时无动效，等同于SwiperAnimationMode.NO_ANIMATION。 |
+| animationMode | [SwiperAnimationMode](#swiperanimationmode15枚举说明) | boolean | 否 | 设置翻页至指定页面时的动效模式。 默认值：SwiperAnimationMode.NO_ANIMATION **说明：** 当传入true时有动效，等同于SwiperAnimationMode.DEFAULT_ANIMATION；当传入false时无动效，等同于SwiperAnimationMode.NO_ANIMATION。 |
 
 #### [h2]finishAnimation
 
@@ -876,7 +875,7 @@ fakeDragBy(offset: number): boolean
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| offset | number | 是 | 需要模拟拖拽的拖拽距离。 正数表示向主轴起点方向拖拽（横向布局时向左，纵向布局时向上）；负数表示向主轴终点方向拖拽（横向布局时向右，纵向布局时向下）。 单位：vp 取值范围：(-∞, +∞) |
+| offset | number | 是 | 需要模拟拖拽的拖拽距离。 正数表示向布局起点拖拽；负数表示向布局终点方向拖拽。 |
 
 返回值：
 
@@ -946,7 +945,7 @@ Swiper组件翻页至指定页面的动效模式。
 
 #### Indicator10+
 
-设置导航点与Swiper组件的距离。由于导航点有默认交互区域，交互区域高度为32vp，所以无法让显示部分完全贴底。若想实现完全贴底，可以使用[IndicatorComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-swiper-components-indicator#indicatorcomponent)组件，更灵活地调整位置。
+设置导航点距离Swiper组件距离。由于导航点有默认交互区域，交互区域高度为32vp，所以无法让显示部分完全贴底。若想实现完全贴底，可以使用[IndicatorComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-swiper-components-indicator#indicatorcomponent)组件，更灵活地调整位置。
 
 卡片能力： 从API version 10开始，该接口支持在ArkTS卡片中使用。
 
@@ -980,7 +979,7 @@ left(value: Length): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前导航点指示器，用于支持链式调用配置其他导航点属性。 |
+| T | 返回当前导航点指示器。 |
 
 #### [h2]top
 
@@ -1006,7 +1005,7 @@ top(value: Length): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前导航点指示器，用于支持链式调用配置其他导航点属性。 |
+| T | 返回当前导航点指示器。 |
 
 #### [h2]right
 
@@ -1026,13 +1025,13 @@ right(value: Length): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 是 | 设置导航点右侧相对于Swiper的位置。 未设置left和right时，进行自适应大小布局，按照指示器本身大小和Swiper的大小在主轴方向上进行居中对齐。 设置为0时：按照0位置布局计算。 优先级：低于left属性。 取值范围：[0,Swiper宽度-导航点区域宽度]，超出该范围时，取最近的边界值。 单位参考[Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length)类型的说明。 |
+| value | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 是 | 设置导航点右侧相对于Swiper的位置。 未设置left和right时，进行自适应大小布局，按照指示器本身大小和Swiper的大小在主轴方向上进行居中对齐。 设置为0时：按照0位置布局计算。 优先级：低于left属性。 取值范围：[0,Swiper宽度-导航点区域宽度]，超出该范围 时，取最近的边界值。 单位参考[Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length)类型的说明。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前导航点指示器，用于支持链式调用配置其他导航点属性。 |
+| T | 返回当前导航点指示器。 |
 
 #### [h2]bottom
 
@@ -1058,7 +1057,7 @@ bottom(value: Length): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前导航点指示器，用于支持链式调用配置其他导航点属性。 |
+| T | 返回当前导航点指示器。 |
 
 #### [h2]bottom19+
 
@@ -1079,13 +1078,13 @@ bottom(bottom: LengthMetrics | Length, ignoreSize: boolean): T
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | bottom | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 是 | 设置导航点底部相对于Swiper的位置。 未设置top和bottom时，进行自适应大小布局，按照指示器本身大小和Swiper的大小，在交叉轴方向上，位于底部，效果与设置bottom=0一致。 设置为0时：按照0位置布局计算。 优先级：低于top属性。 取值范围：[0,Swiper高度-导航点区域高度]，超出该范围时，取最近的边界值。 单位参考[Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length)类型的说明。 |
-| ignoreSize | boolean | 是 | 设置是否忽略导航点本身大小，默认false。 设置为true时，忽略导航点大小，可以将导航点更靠近Swiper底部；设置为false时，不忽略导航点大小，导航点按默认大小布局。使用方法可以参考[示例9](#示例9演示导航点space与bottom)演示导航点space与bottom。 说明：当导航点为[DigitIndicator](#digitindicator10)的类型时，不生效的场景如下： • 当[vertical](#vertical) 设置为false，且bottom > 0。 • 当[vertical](#vertical) 设置为true时： 1、bottom > 0 时。 2、bottom设为undefined。 3、isSidebarMiddle设置为false时。 |
+| ignoreSize | boolean | 是 | 设置是否忽略导航点本身大小，默认false。 设为true时可以将导航点更靠近Swiper底部，使用方法可以参考[示例9](#示例9演示导航点space与bottom)演示导航点space与bottom。 说明：当导航点为[DigitIndicator](#digitindicator10)的类型时，不生效的场景如下： • 当[vertical](#vertical) 设置为false，且bottom > 0。 • 当[vertical](#vertical) 设置为true时： 1、bottom > 0 时。 2、bottom设为undefined。 3、isSidebarMiddle设置为false时。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前导航点指示器，用于支持链式调用配置其他导航点属性。 |
+| T | 返回当前导航点指示器。 |
 
 #### [h2]start12+
 
@@ -1111,7 +1110,7 @@ start(value: LengthMetrics): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前导航点指示器，用于支持链式调用配置其他导航点属性。 |
+| T | 返回当前导航点指示器。 |
 
 #### [h2]end12+
 
@@ -1137,7 +1136,7 @@ end(value: LengthMetrics): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前导航点指示器，用于支持链式调用配置其他导航点属性。 |
+| T | 返回当前导航点指示器。 |
 
 #### [h2]dot
 
@@ -1157,7 +1156,7 @@ static dot(): DotIndicator
 
 | 类型 | 说明 |
 | --- | --- |
-| [DotIndicator](#dotindicator10) | 圆点指示器对象，用于设置Swiper组件的圆点导航样式。 |
+| [DotIndicator](#dotindicator10) | 圆点指示器。 |
 
 #### [h2]digit
 
@@ -1177,7 +1176,7 @@ static digit(): DigitIndicator
 
 | 类型 | 说明 |
 | --- | --- |
-| [DigitIndicator](#digitindicator10) | 数字指示器对象，用于设置Swiper组件的数字导航样式。 |
+| [DigitIndicator](#digitindicator10) | 数字指示器。 |
 
 #### DotIndicator10+
 
@@ -1228,13 +1227,13 @@ Swiper组件圆点导航指示器的宽。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 是 | 设置Swiper组件圆点导航指示器的宽，不支持设置百分比。 默认值：6 单位：vp 取值范围：(0, +∞)，超出范围时按照默认值处理。 |
+| value | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 是 | 设置Swiper组件圆点导航指示器的宽，不支持设置百分比。 默认值：6 单位：vp 取值范围：(0, +∞) |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| [DotIndicator](#dotindicator10) | 返回当前圆点指示器，用于支持链式调用配置其他圆点样式属性。 |
+| [DotIndicator](#dotindicator10) | 返回当前圆点指示器。 |
 
 #### [h2]itemHeight
 
@@ -1254,13 +1253,13 @@ Swiper组件圆点导航指示器的高。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 是 | 设置Swiper组件圆点导航指示器的高，不支持设置百分比。 默认值：6 单位：vp 取值范围：(0, +∞)，超出范围时按照默认值处理。 |
+| value | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 是 | 设置Swiper组件圆点导航指示器的高，不支持设置百分比。 默认值：6 单位：vp 取值范围：(0, +∞) |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| [DotIndicator](#dotindicator10) | 返回当前圆点指示器，用于支持链式调用配置其他圆点样式属性。 |
+| [DotIndicator](#dotindicator10) | 返回当前圆点指示器。 |
 
 #### [h2]selectedItemWidth
 
@@ -1280,13 +1279,13 @@ selectedItemWidth(value: Length): DotIndicator
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 是 | 设置选中Swiper组件圆点导航指示器的宽，不支持设置百分比。 默认值：6 单位：vp 取值范围：(0, +∞)，超出范围时按照默认值处理。 |
+| value | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 是 | 设置选中Swiper组件圆点导航指示器的宽，不支持设置百分比。 默认值：6 单位：vp 取值范围：(0, +∞) |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| [DotIndicator](#dotindicator10) | 返回当前圆点指示器，用于支持链式调用配置其他圆点样式属性。 |
+| [DotIndicator](#dotindicator10) | 返回当前圆点指示器。 |
 
 #### [h2]selectedItemHeight
 
@@ -1306,13 +1305,13 @@ selectedItemHeight(value: Length): DotIndicator
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 是 | 设置选中Swiper组件圆点导航指示器的高，不支持设置百分比。 默认值：6 单位：vp 取值范围：(0, +∞)，超出范围时按照默认值处理。 |
+| value | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 是 | 设置选中Swiper组件圆点导航指示器的高，不支持设置百分比。 默认值：6 单位：vp 取值范围：(0, +∞) |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| [DotIndicator](#dotindicator10) | 返回当前圆点指示器，用于支持链式调用配置其他圆点样式属性。 |
+| [DotIndicator](#dotindicator10) | 返回当前圆点指示器。 |
 
 #### [h2]mask
 
@@ -1332,13 +1331,13 @@ mask(value: boolean): DotIndicator
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | boolean | 是 | 设置是否显示Swiper组件圆点导航指示器的蒙版样式。为true时显示Swiper组件圆点导航指示器的蒙版样式，为false时不显示。 默认值：false |
+| value | boolean | 是 | 设置是否显示Swiper组件圆点导航指示器的蒙版样式。true为显示Swiper组件圆点导航指示器的蒙版样式，false为不显示。 默认值：false |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| [DotIndicator](#dotindicator10) | 返回当前圆点指示器，用于支持链式调用配置其他圆点样式属性。 |
+| [DotIndicator](#dotindicator10) | 返回当前圆点指示器。 |
 
 #### [h2]color
 
@@ -1364,7 +1363,7 @@ Swiper组件圆点导航指示器的颜色。
 
 | 类型 | 说明 |
 | --- | --- |
-| [DotIndicator](#dotindicator10) | 返回当前圆点指示器，用于支持链式调用配置其他圆点样式属性。 |
+| [DotIndicator](#dotindicator10) | 返回当前圆点指示器。 |
 
 #### [h2]selectedColor
 
@@ -1390,7 +1389,7 @@ selectedColor(value: ResourceColor): DotIndicator
 
 | 类型 | 说明 |
 | --- | --- |
-| [DotIndicator](#dotindicator10) | 返回当前圆点指示器，用于支持链式调用配置其他圆点样式属性。 |
+| [DotIndicator](#dotindicator10) | 返回当前圆点指示器。 |
 
 #### [h2]maxDisplayCount12+
 
@@ -1408,13 +1407,13 @@ maxDisplayCount(maxDisplayCount: number): DotIndicator
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| maxDisplayCount | number | 是 | 设置圆点导航点指示器样式下，导航点显示个数最大值，当实际导航点个数大于最大导航点个数时，会生效超长效果样式，样式如[示例5](#示例5设置圆点导航点超长显示)所示。 取值范围：[6, 9]，超出范围时等同于没有超长显示效果。 **说明：** 1、超长显示场景，API版本26.0.0之前不支持交互功能（包括：手指点击拖拽、鼠标操作），从API版本26.0.0开始支持手指点击拖拽的交互功能，不支持鼠标操作的交互功能。 2、在超长显示场景下，中间页面对应的选中导航点的位置，并不是完全固定的，取决于之前的翻页操作序列。 3、当前仅支持displayCount为1的场景。 |
+| maxDisplayCount | number | 是 | 设置圆点导航点指示器样式下，导航点显示个数最大值，当实际导航点个数大于最大导航点个数时，会生效超长效果样式，样式如[示例5](#示例5设置圆点导航点超长显示)所示。 默认值：这个属性没有默认值，如果设置异常值那等同于没有超长显示效果。 取值范围：[6, 9] **说明：** 1、超长显示场景，API版本26.0.0之前不支持交互功能（包括：手指点击拖拽、鼠标操作），从API版本26.0.0开始支持手指点击拖拽的交互功能，不支持鼠标操作的交互功能。 2、在超长显示场景下，中间页面对应的选中导航点的位置，并不是完全固定的，取决于之前的翻页操作序列。 3、当前仅支持displayCount为1的场景。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| [DotIndicator](#dotindicator10) | 返回当前圆点指示器，用于支持链式调用配置其他圆点样式属性。 |
+| [DotIndicator](#dotindicator10) | 返回当前圆点指示器。 |
 
 #### [h2]space19+
 
@@ -1434,13 +1433,13 @@ space(space: LengthMetrics): DotIndicator
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| space | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 是 | 设置圆点导航点间距，不支持设置百分比。 默认值：PC/2in1设备上为10，其他设备为8。 单位：vp 取值范围：[0, +∞)，设置小于0的值时按照默认值处理。 |
+| space | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 是 | 设置圆点导航点间距，不支持设置百分比。 默认值：PC/2in1设备上为10，其他设备为8。 单位：vp 取值范围：[0, +∞) |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| [DotIndicator](#dotindicator10) | 返回当前圆点指示器，用于支持链式调用配置其他圆点样式属性。 |
+| [DotIndicator](#dotindicator10) | 返回当前圆点指示器。 |
 
 #### [h2]indicatorIcon
 
@@ -1462,13 +1461,13 @@ indicatorIcon(iconList: Array<IndicatorIconInfo>): DotIndicator
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| iconList | Array | 是 | 设置圆点导航点图标。数组元素对象包含index（导航点索引）和icon（图标内容）两个属性。 |
+| iconList | Array | 是 | 设置圆点导航点图标。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| [DotIndicator](#dotindicator10) | 返回当前圆点指示器，用于支持链式调用配置其他圆点样式属性。 |
+| [DotIndicator](#dotindicator10) | 返回当前圆点指示器。 |
 
 #### DigitIndicator10+
 
@@ -1512,7 +1511,7 @@ Swiper组件数字导航点的字体颜色。
 
 | 类型 | 说明 |
 | --- | --- |
-| [DigitIndicator](#digitindicator10) | 返回当前数字指示器，用于支持链式调用配置其他数字样式属性。 |
+| [DigitIndicator](#digitindicator10) | 返回当前数字指示器。 |
 
 #### [h2]selectedFontColor
 
@@ -1538,13 +1537,13 @@ selectedFontColor(value: ResourceColor): DigitIndicator
 
 | 类型 | 说明 |
 | --- | --- |
-| [DigitIndicator](#digitindicator10) | 返回当前数字指示器，用于支持链式调用配置其他数字样式属性。 |
+| [DigitIndicator](#digitindicator10) | 返回当前数字指示器。 |
 
 #### [h2]digitFont
 
 digitFont(value: Font): DigitIndicator
 
-Swiper组件数字导航点的字体样式。按组翻页时，数字导航点显示的子节点数量不包括占位节点。
+Swiper组件数字导航点的字体样式。
 
 卡片能力： 从API version 10开始，该接口支持在ArkTS卡片中使用。
 
@@ -1564,7 +1563,7 @@ Swiper组件数字导航点的字体样式。按组翻页时，数字导航点�
 
 | 类型 | 说明 |
 | --- | --- |
-| [DigitIndicator](#digitindicator10) | 返回当前数字指示器，用于支持链式调用配置其他数字样式属性。 |
+| [DigitIndicator](#digitindicator10) | 返回当前数字指示器。 |
 
 #### [h2]selectedDigitFont
 
@@ -1592,7 +1591,7 @@ selectedDigitFont(value: Font): DigitIndicator
 
 | 类型 | 说明 |
 | --- | --- |
-| [DigitIndicator](#digitindicator10) | 返回当前数字指示器，用于支持链式调用配置其他数字样式属性。 |
+| [DigitIndicator](#digitindicator10) | 返回当前数字指示器。 |
 
 #### [h2]constructor
 
@@ -1641,7 +1640,7 @@ DigitIndicator的构造函数。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| minSize | [VP](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#vp10) | 否 | 否 | 设置元素显示最小宽度，用于根据Swiper当前宽度和minSize值自动计算并更改一页内元素显示个数。当需要根据Swiper组件宽度自适应调整一页内元素显示个数时，建议设置此参数以获得更好的响应式布局效果。 默认值：0 取值范围：(0, +∞)，设置小于等于0的值时，Swiper显示1列。 |
+| minSize | [VP](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#vp10) | 否 | 否 | 设置元素显示最小宽度。 默认值：0 |
 
 #### AutoPlayOptions18+对象说明
 
@@ -1674,7 +1673,7 @@ DigitIndicator的构造函数。
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | isShown | boolean | 否 | 是 | 预加载范围内的节点是否进行绘制。 设置为true时，预加载范围内的节点进行绘制。 设置为false时，预加载范围内的节点不进行绘制。 默认值：false |
-| independent | boolean | 否 | 是 | [cachedCount](#cachedcount24)是否按实际子组件个数计算。 设置为true时，cachedCount按实际子组件个数计算，不按组计算。 设置为false时，如果displayCount.swipeByGroup=true，则cachedCount按组计算，否则按实际子组件个数计算。 默认值：false |
+| independent | boolean | 否 | 是 | [cachedCount](#cachedcount24)是否按组计算。 设置为true时，cachedCount按实际子组件个数计算，不按组计算。 设置为false时，如果displayCount.swipeByGroup=true，则cachedCount按组计算，否则按实际子组件个数计算。 默认值：false |
 
 #### IndicatorIconInfo
 
@@ -1709,10 +1708,7 @@ onChange(event: Callback<number>)
 
 Swiper组件结合LazyForEach使用时，不能在onChange事件里触发子页面UI的刷新。
 
-![](./img/note_3.0-zh-cn.png)
-
-- 如果是动画引起的索引变化，回调在动画结束时触发。
-- 与onSelected的区别：onSelected在选中状态改变时立即触发，onChange在动画结束后触发。
+![](./img/note_3.0-zh-cn.png) 如果是动画引起的索引变化，回调在动画结束时触发。
 
 卡片能力： 从API version 10开始，该接口支持在ArkTS卡片中使用。
 
@@ -1789,7 +1785,7 @@ onGestureSwipe(event: OnSwiperGestureSwipeCallback)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| event | [OnSwiperGestureSwipeCallback](#onswipergestureswipecallback18) | 是 | 在页面跟手滑动过程中，逐帧触发的回调。onGestureSwipe回调触发时机在onTouch之后，如果需要在手指离开屏幕后动画开始时执行操作，建议使用[onAnimationStart](#onanimationstart9)。 |
+| event | [OnSwiperGestureSwipeCallback](#onswipergestureswipecallback18) | 是 | 在页面跟手滑动过程中，逐帧触发的回调。onGestureSwipe回调触发时机在onTouch之后，如果需要在离手后执行操作建议使用[onAnimationStart](#onanimationstart9)。 |
 
 #### [h2]customContentTransition12+
 
@@ -1799,7 +1795,7 @@ customContentTransition(transition: SwiperContentAnimatedTransition)
 
 使用说明：
 
-1、循环场景下，设置prevMargin和nextMargin属性，使得Swiper视窗的前后两端区域显示同一页面时，该接口不生效。
+1、循环场景下，设置prevMargin和nextMargin属性，使得Swiper前后端显示同一页面时，该接口不生效。
 
 2、在页面跟手滑动和离手后执行切换动画的过程中，会对视窗内所有页面逐帧触发[SwiperContentTransitionProxy](#swipercontenttransitionproxy12)回调。例如，当视窗内有下标为0、1的两个页面时，会每帧触发两次index值分别为0和1的回调。
 
@@ -1819,7 +1815,7 @@ customContentTransition(transition: SwiperContentAnimatedTransition)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| transition | [SwiperContentAnimatedTransition](#swipercontentanimatedtransition12) | 是 | Swiper自定义切换动画相关信息。对象属性包括：timeout（超时时间）和transition（自定义切换动画具体内容回调）。 |
+| transition | [SwiperContentAnimatedTransition](#swipercontentanimatedtransition12) | 是 | Swiper自定义切换动画相关信息。 |
 
 #### [h2]onContentDidScroll12+
 
@@ -1829,7 +1825,7 @@ onContentDidScroll(handler: ContentDidScrollCallback)
 
 使用说明：
 
-1、循环场景下，设置prevMargin和nextMargin属性，使得Swiper视窗的前后两端区域显示同一页面时，该接口不生效。
+1、循环场景下，设置prevMargin和nextMargin属性，使得Swiper前后端显示同一页面时，该接口不生效。
 
 2、在页面滑动过程中，会对视窗内所有页面逐帧触发[ContentDidScrollCallback](#contentdidscrollcallback12)回调。例如，当视窗内有下标为0、1的两个页面时，会每帧触发两次index值分别为0和1的回调。
 
@@ -1852,11 +1848,6 @@ onContentDidScroll(handler: ContentDidScrollCallback)
 onSelected(event: Callback<number>)
 
 当选中元素改变时触发该回调，返回值为当前选中的元素的索引值。
-
-![](./img/note_3.0-zh-cn.png)
-
-- onSelected回调中不可修改swiper的index属性，不可调用SwiperController.changeIndex()、SwiperController.showNext()和SwiperController.showPrevious()方法。
-- 与onChange的区别：onSelected在选中状态改变时立即触发，onChange在动画结束后触发。
 
 卡片能力： 从API version 18开始，该接口支持在ArkTS卡片中使用。
 
@@ -1918,7 +1909,7 @@ Swiper滑动行为拦截事件，在滑动前触发。Swiper会依据该事件�
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| handler | [ContentWillScrollCallback](#contentwillscrollcallback15) | 是 | Swiper滑动时触发的回调，返回true表示允许滑动，false表示不允许滑动。 |
+| handler | [ContentWillScrollCallback](#contentwillscrollcallback15) | 是 | Swiper滑动时触发的回调。 |
 
 #### [h2]onScrollStateChanged20+
 
@@ -2065,7 +2056,7 @@ Swiper即将滑动前触发的回调，返回值表示是否允许此次滑动�
 | --- | --- | --- | --- | --- |
 | currentIndex | number | 否 | 否 | 当前页面对应的index。在一次跟手滑动过程中，只要手指未离开屏幕，该值将保持不变，即使该页面已完全移出视窗，如在涉及多个页面的场景中。 |
 | comingIndex | number | 否 | 否 | 滑动方向上即将显示的页面index。 |
-| offset | number | 否 | 否 | 此次滑动的位移，带有符号，正负分别指示不同的翻页方向。单位：vp 正数表示从index=1向index=0翻页，负数表示从index=0向index=1翻页。 在手指滑动的场景中，该值为滑动事件中每帧传递下来的偏移量。在滚动鼠标滚轮和使用键盘方向键导航的场景中，该值代表即将翻页的距离。 |
+| offset | number | 否 | 否 | 此次滑动的位移，带有符号，正负分别指示不同的翻页方向。正数表示从index=1向index=0翻页，负数表示从index=0向index=1翻页。 在手指滑动的场景中，该值为滑动事件中每帧传递下来的偏移量。在滚动鼠标滚轮和使用键盘方向键导航的场景中，该值代表即将翻页的距离。 |
 
 #### SwiperAnimationEvent10+对象说明
 
@@ -2079,9 +2070,9 @@ Swiper组件动画相关信息集合。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| currentOffset | number | 否 | 否 | Swiper当前显示元素在主轴方向上，相对于Swiper起始位置的位移。单位vp，默认值为0。 |
-| targetOffset | number | 否 | 否 | Swiper动画目标元素在主轴方向上，相对于Swiper起始位置的位移。单位vp，默认值为0。 |
-| velocity | number | 否 | 否 | Swiper离手动画开始时的离手速度。单位vp/s，默认值为0。 |
+| currentOffset | number | 否 | 否 | Swiper当前显示元素在主轴方向上，相对于Swiper起始位置的位移。单位VP，默认值为0。 |
+| targetOffset | number | 否 | 否 | Swiper动画目标元素在主轴方向上，相对于Swiper起始位置的位移。单位VP，默认值为0。 |
+| velocity | number | 否 | 否 | Swiper离手动画开始时的离手速度。单位VP/S，默认值为0。 |
 
 #### SwiperContentAnimatedTransition12+
 
@@ -2097,7 +2088,7 @@ Swiper自定义切换动画相关信息。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| timeout | number | 否 | 是 | Swiper自定义切换动画超时时间。从页面执行默认动画（页面滑动）至移出视窗外的第一帧开始计时，如果到达该时间后，开发者仍未调用[SwiperContentTransitionProxy](#swipercontenttransitionproxy12)的finishTransition接口通知Swiper组件此页面的自定义动画已结束，那么组件就会认为此页面的自定义动画已结束，立即将该页面节点下渲染树。单位：ms 默认值：0 取值范围：[0, +∞)，设置小于0的值时按照默认值处理。 |
+| timeout | number | 否 | 是 | Swiper自定义切换动画超时时间。从页面执行默认动画（页面滑动）至移出视窗外的第一帧开始计时，如果到达该时间后，开发者仍未调用[SwiperContentTransitionProxy](#swipercontenttransitionproxy12)的finishTransition接口通知Swiper组件此页面的自定义动画已结束，那么组件就会认为此页面的自定义动画已结束，立即将该页面节点下渲染树。单位ms，默认值为0。 |
 | transition | Callback | 否 | 否 | 自定义切换动画具体内容。 |
 
 #### SwiperContentTransitionProxy12+
@@ -2256,22 +2247,22 @@ struct SwiperExample {
         console.info(index.toString());
       })
       .onScrollStateChanged((event: ScrollState) => {
-        console.info('event: ' + event);
+        console.info("event: " + event);
       })
       .onGestureSwipe((index: number, extraInfo: SwiperAnimationEvent) => {
-        console.info('index: ' + index);
-        console.info('current offset: ' + extraInfo.currentOffset);
+        console.info("index: " + index);
+        console.info("current offset: " + extraInfo.currentOffset);
       })
       .onAnimationStart((index: number, targetIndex: number, extraInfo: SwiperAnimationEvent) => {
-        console.info('index: ' + index);
-        console.info('targetIndex: ' + targetIndex);
-        console.info('current offset: ' + extraInfo.currentOffset);
-        console.info('target offset: ' + extraInfo.targetOffset);
-        console.info('velocity: ' + extraInfo.velocity);
+        console.info("index: " + index);
+        console.info("targetIndex: " + targetIndex);
+        console.info("current offset: " + extraInfo.currentOffset);
+        console.info("target offset: " + extraInfo.targetOffset);
+        console.info("velocity: " + extraInfo.velocity);
       })
       .onAnimationEnd((index: number, extraInfo: SwiperAnimationEvent) => {
-        console.info('index: ' + index);
-        console.info('current offset: ' + extraInfo.currentOffset);
+        console.info("index: " + index);
+        console.info("current offset: " + extraInfo.currentOffset);
       })
 
       Row({ space: 12 }) {
@@ -2306,7 +2297,7 @@ struct SwiperExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087939.gif)
+ ![](./img/zh-cn_image_0000002731358867.gif)
 
 #### [h2]示例2（设置数字指示器）
 
@@ -2392,7 +2383,7 @@ struct SwiperExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928111.gif)
+ ![](./img/zh-cn_image_0000002701799562.gif)
 
 #### [h2]示例3（设置按组翻页）
 
@@ -2481,7 +2472,7 @@ struct SwiperExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008432.gif)
+ ![](./img/zh-cn_image_0000002731518847.gif)
 
 #### [h2]示例4（设置自定义页面切换动画）
 
@@ -2610,13 +2601,13 @@ struct SwiperCustomAnimationExample {
       })
       .onContentDidScroll((selectedIndex: number, index: number, position: number, mainAxisLength: number) => {
         // 监听Swiper页面滑动事件，在该回调中可以实现自定义导航点切换动画等
-        console.info('onContentDidScroll selectedIndex: ' + selectedIndex + ', index: ' + index + ', position: ' + position + ', mainAxisLength: ' + mainAxisLength);
+        console.info("onContentDidScroll selectedIndex: " + selectedIndex + ", index: " + index + ", position: " + position + ", mainAxisLength: " + mainAxisLength);
       })
     }.width('100%')
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848512.gif)
+ ![](./img/zh-cn_image_0000002701639648.gif)
 
 #### [h2]示例5（设置圆点导航点超长显示）
 
@@ -2711,7 +2702,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087941.gif)
+ ![](./img/zh-cn_image_0000002731358869.gif)
 
 #### [h2]示例6（预加载子节点）
 
@@ -2749,10 +2740,10 @@ struct SwiperPreloadItems {
                 console.info('preloadItems [2, 3] success.');
               })
               .catch((error: BusinessError) => {
-                console.error(`Failed to preload items [2, 3]. Code: ${error.code}, message: ${error.message}`);
+                console.error('preloadItems [2, 3] failed, error code: ' + error.code + ', error message: ' + error.message);
               })
           } catch (error) {
-            console.error(`Failed to preload items [2, 3]. Code: ${error.code}, message: ${error.message}`);
+            console.error('preloadItems [2, 3] failed, error code: ' + error.code + ', error message: ' + error.message);
           }
 
         })
@@ -2852,7 +2843,6 @@ struct TabsSwiperExample {
           TabContent().tabBar(this.tabBuilder(index, '页签 ' + this.list[index]))
         })
       }
-      // 点击页签时，同步更新选中索引并切换Swiper到对应页面
       .onTabBarClick((index: number) => {
         this.currentIndex = index;
         this.swiperController.changeIndex(index, true);
@@ -2881,7 +2871,7 @@ struct TabsSwiperExample {
       .loop(false)
       // 选中/切换轮播项时触发
       .onSelected((index: number) => {
-        console.info('onSelected:' + index);
+        console.info("onSelected:" + index);
         // 同步选中索引到currentIndex（更新页签选中态）
         this.currentIndex = index;
         // 控制Tabs切换到对应索引页签
@@ -2891,7 +2881,7 @@ struct TabsSwiperExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928113.gif)
+ ![](./img/zh-cn_image_0000002701799564.gif)
 
 #### [h2]示例8（滑动行为拦截事件）
 
@@ -2979,7 +2969,7 @@ struct SwiperExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008434.gif)
+ ![](./img/zh-cn_image_0000002731518849.gif)
 
 #### [h2]示例9（演示导航点space与bottom）
 
@@ -3082,7 +3072,7 @@ struct SwiperExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848514.gif)
+ ![](./img/zh-cn_image_0000002701639650.gif)
 
 #### [h2]示例10（Swiper组件基于断点配置显示个数）
 
@@ -3145,11 +3135,11 @@ struct SwiperExample {
 ```
  Swiper宽度属于[sm](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-grid-layout#栅格容器断点)及更小的断点区间时显示1列。
 
-![](./img/zh-cn_image_0000002686087943.jpg)
+![](./img/zh-cn_image_0000002731358871.jpg)
 
 Swiper宽度属于[md](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-grid-layout#栅格容器断点)断点区间时显示2列。
 
-![](./img/zh-cn_image_0000002685928115.jpg)
+![](./img/zh-cn_image_0000002701799566.jpg)
 
 #### [h2]示例11（Swiper组件模拟拖拽）
 
@@ -3212,7 +3202,7 @@ struct SwiperFakeDragExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008438.gif)
+ ![](./img/zh-cn_image_0000002731518851.gif)
 
 #### [h2]示例12（配置Swiper组件导航点图标）
 
@@ -3258,4 +3248,4 @@ struct SwiperIndicatorIconExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848516.jpg)
+ ![](./img/zh-cn_image_0000002701639652.jpg)

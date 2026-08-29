@@ -2,8 +2,8 @@
 title: "SelectionContainer"
 upstream_id: "harmonyos-references/ts-basic-components-selectioncontainer"
 catalog: "harmonyos-references"
-content_hash: "6d02670164e7"
-synced_at: "2026-07-28T16:45:04.325178"
+content_hash: "461db54389bb"
+synced_at: "2026-08-29T18:14:02.787659"
 ---
 
 # SelectionContainer
@@ -15,7 +15,9 @@ SelectionContainer组件用于为多个文本节点提供跨节点文本选中�
 - 本组件中选中文本相关回调返回的文本内容，按照[Text](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text)组件的从上到下显示顺序进行拼接。
 - 本模块接口仅可在Stage模型下使用。
 - 本组件默认布局走[Stack](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-stack)，如有其他容器布局需求请在SelectionContainer内放置一个容器组件。
-- SelectionContainer内跨节点选中文本时不显示放大镜，也不支持[getMagnifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getmagnifier22)主动设置放大镜。
+- SelectionContainer内选中文本时不显示放大镜，也不支持[getMagnifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getmagnifier22)主动设置放大镜。
+- SelectionContainer内选中文本时不支持拖拽。
+- SelectionContainer内[Repeat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-rendering-control-repeat)组件下的文本不支持跨节点选中。
 - 仅Text组件中的文本内容参与跨节点选中与文本拼接。
 
 起始版本： 26.0.0
@@ -26,7 +28,7 @@ SelectionContainer组件用于为多个文本节点提供跨节点文本选中�
 
 #### 接口
 
-SelectionContainer()
+SelectionContainer(value?: SelectionContainerOptions)
 
 创建一个SelectionContainer组件。
 
@@ -36,6 +38,12 @@ SelectionContainer()
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| value | [SelectionContainerOptions](#selectioncontaineroptions) | 否 | 组件初始化配置项。 |
+
 #### 属性
 
 支持[通用属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-attributes)。
@@ -43,7 +51,7 @@ SelectionContainer()
 ![](./img/note_3.0-zh-cn.png)
 
 - 不支持[隐私遮罩](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-obscured)。
-- 不支持[图形变换](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation)，跨节点场景中Text子组件不支持图形变换。
+- 不支持[图形变换](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation)，在SelectionContainer容器中子组件Text不支持图形变换。
 
 #### [h2]copyOption
 
@@ -73,8 +81,8 @@ caretColor(color: Optional<ResourceColor>)
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 该属性在跨节点场景中用于各Text子组件选中文本手柄颜色。
-- 在跨节点场景中Text子组件[caretColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#caretcolor14)设置无效，始终使用SelectionContainer的配置。
+- 该属性在SelectionContainer容器上用于控制各子组件Text选中文本手柄颜色。
+- 在SelectionContainer容器中子组件Text的[caretColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#caretcolor14)设置无效，始终使用SelectionContainer的配置。
 
 起始版本： 26.0.0
 
@@ -96,7 +104,7 @@ selectedBackgroundColor(color: Optional<ResourceColor>)
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 该属性在跨节点场景中用于各Text子组件选中区域的高亮颜色。
+- 该属性在SelectionContainer容器上用于控制各子组件Text选中区域的高亮颜色。
 - Text子组件已显式设置[selectedBackgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#selectedbackgroundcolor14)时，优先使用Text子组件的配置；未设置时，使用SelectionContainer的配置。
 
 起始版本： 26.0.0
@@ -172,6 +180,7 @@ bindSelectionMenu(spanType: Optional<TextSpanType>, content: Optional<CustomBuil
 - bindSelectionMenu的长按响应时长为600ms，[bindContextMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#bindcontextmenu8)的长按响应时长为800ms，当两者同时绑定且触发方式均为长按时，优先响应bindSelectionMenu。
 - 自定义菜单过长时，建议内部嵌套使用[Scroll](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scroll)组件，避免键盘被遮挡。
 - 选区跨越不可复制Text时，菜单仅基于实际选中的可复制文本进行显示和处理。
+- 在SelectionContainer容器中子组件Text的[bindSelectionMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#bindselectionmenu11)设置无效，始终使用SelectionContainer的配置。
 
 起始版本： 26.0.0
 
@@ -194,7 +203,10 @@ editMenuOptions(editMenu: Optional<SelectionContainerEditMenuOptions>)
 
 设置选中文本后的编辑菜单选项，包括菜单文本、图标和回调等。
 
-![](./img/note_3.0-zh-cn.png) 当同时为当前场景设置了[bindSelectionMenu](#bindselectionmenu)和editMenuOptions时，优先使用bindSelectionMenu，editMenuOptions不生效。bindSelectionMenu用于完全自定义菜单风格和触发条件，由开发者定义所有菜单项；editMenuOptions用于在系统默认菜单基础上添加扩展项，触发条件不变。建议根据自定义程度需求选择。
+![](./img/note_3.0-zh-cn.png)
+
+- 当同时为当前场景设置了[bindSelectionMenu](#bindselectionmenu)和editMenuOptions时，优先使用bindSelectionMenu，editMenuOptions不生效。bindSelectionMenu用于完全自定义菜单风格和触发条件，由开发者定义所有菜单项；editMenuOptions用于在系统默认菜单基础上添加扩展项，触发条件不变。建议根据自定义程度需求选择。
+- 在SelectionContainer容器中子组件Text的[editMenuOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#editmenuoptions12)设置无效，始终使用SelectionContainer的配置。
 
 起始版本： 26.0.0
 
@@ -357,6 +369,50 @@ SelectionContainer自定义编辑菜单选项。
 | onMenuItemClick | [OnMenuItemClickWithTextCallback](#onmenuitemclickwithtextcallback) | 否 | 是 | 点击菜单项时触发，可拦截系统默认菜单执行行为。默认值为空，不触发该回调。 |
 | onPrepareMenu | [OnPrepareMenuCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#onpreparemenucallback20) | 否 | 是 | 文本选中内容变化后、菜单显示前触发，可在该回调中调整菜单数据。默认值为空，不触发该回调。 |
 
+#### SelectionContainerController
+
+SelectionContainer组件的控制器。
+
+起始版本： 26.0.0
+
+#### [h2]closeSelectionMenu
+
+closeSelectionMenu(): void
+
+关闭SelectionContainer的自定义或默认选择菜单。
+
+起始版本： 26.0.0
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+#### [h2]clearTextSelection
+
+clearTextSelection(): void
+
+清除SelectionContainer当前的文本选中状态；若选择菜单正在显示，会同时关闭选择菜单。
+
+起始版本： 26.0.0
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+#### SelectionContainerOptions
+
+组件初始化配置项。
+
+起始版本： 26.0.0
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| controller | [SelectionContainerController](#selectioncontainercontroller) | 否 | 否 | SelectionContainer控制器。 |
+
 #### 示例
 
 #### [h2]示例1（跨节点选中文本并复制）
@@ -430,7 +486,7 @@ struct SelectionContainerExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088141.png)
+ ![](./img/zh-cn_image_0000002731519047.png)
 
 #### [h2]示例2（绑定自定义选择菜单）
 
@@ -528,7 +584,7 @@ struct SelectionContainerExample2 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928309.png)
+ ![](./img/zh-cn_image_0000002701639846.png)
 
 #### [h2]示例3（扩展菜单选项）
 
@@ -670,4 +726,60 @@ struct SelectionContainerExample3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008632.png)
+ ![](./img/zh-cn_image_0000002731359067.png)
+
+#### [h2]示例4（通过控制器关闭选择菜单与清除文本选中）
+
+该示例通过[SelectionContainer](#接口)传入[SelectionContainerController](#selectioncontainercontroller)，调用[closeSelectionMenu](#closeselectionmenu)和[clearTextSelection](#cleartextselection)接口展示关闭选择菜单和清除选中文本的能力。
+
+从API版本26.0.0开始，新增[SelectionContainerController](#selectioncontainercontroller)和[SelectionContainerOptions](#selectioncontaineroptions)接口。
+
+```
+import {
+  SelectionContainer,
+  SelectionContainerController,
+  SelectionContainerAttribute
+} from '@kit.ArkUI';
+
+@Entry
+@Component
+struct SelectionContainerControllerExample {
+  private controller: SelectionContainerController = new SelectionContainerController();
+
+  build() {
+    Column({ space: 12 }) {
+      Text('请长按下方区域跨节点选中文本，再点击按钮关闭选择菜单或清除选中文本')
+        .fontSize(16)
+
+      SelectionContainer({ controller: this.controller }) {
+        Column({ space: 8 }) {
+          Text('第一段文本：SelectionContainer支持跨多个Text组件进行选中。')
+            .fontSize(18)
+            .copyOption(CopyOptions.InApp)
+          Text('第二段文本：选中后可通过控制器关闭选择菜单或清除选中文本。')
+            .fontSize(18)
+            .copyOption(CopyOptions.InApp)
+        }
+      }
+      .copyOption(CopyOptions.InApp)
+      .border({ width: 1, color: '#DCDCDC' })
+      .padding(12)
+      .width('100%')
+
+      Row({ space: 12 }) {
+        Button('关闭选择菜单')
+          .onClick(() => {
+            this.controller.closeSelectionMenu();
+          })
+        Button('清除文本选中')
+          .onClick(() => {
+            this.controller.clearTextSelection();
+          })
+      }
+    }
+    .width('100%')
+    .padding(16)
+  }
+}
+```
+ ![](./img/zh-cn_image_0000002701799762.gif)

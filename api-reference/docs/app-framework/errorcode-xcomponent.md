@@ -2,8 +2,8 @@
 title: "XComponent组件错误码"
 upstream_id: "harmonyos-references/errorcode-xcomponent"
 catalog: "harmonyos-references"
-content_hash: "f6aec7f07440"
-synced_at: "2026-07-09T17:25:33.533530"
+content_hash: "360cf06e196b"
+synced_at: "2026-08-29T18:15:56.182835"
 ---
 
 # XComponent组件错误码
@@ -18,12 +18,13 @@ synced_at: "2026-07-09T17:25:33.533530"
 
 错误描述
 
-当前XComponent状态异常，方法调用失败。
+当前XComponent处于无效状态，方法调用失败。
 
 可能原因
 
-参考报错接口的说明。
+调用XComponent相关方法时，XComponent尚未完成初始化或持有的Surface已被销毁或释放，导致当前处于无效状态。
 
 处理步骤
 
-确保XComponent持有的Surface状态正常。
+1. 确认XComponent已完成加载并初始化完成后再调用相关方法。
+2. 检查XComponent持有的Surface是否已被销毁或释放，若已失效请重新创建XComponent实例后再调用。

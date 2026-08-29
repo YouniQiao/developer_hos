@@ -2,8 +2,8 @@
 title: "loginComponentManager (华为账号登录组件管理)"
 upstream_id: "harmonyos-references/account-api-component-manager"
 catalog: "harmonyos-references"
-content_hash: "66c980c05b75"
-synced_at: "2026-07-28T16:52:29.895721"
+content_hash: "00aaa6e4dd0f"
+synced_at: "2026-08-29T18:18:10.138690"
 ---
 
 # loginComponentManager (华为账号登录组件管理)
@@ -2295,7 +2295,7 @@ struct QuickLoginButtonComponent {
 | ID | 0 | 表示用OpenID、UnionID来关联华为账号。 用户在登录成功后会返回对应数据。 该登录类型响应数据包含openID、unionID、authorizationCode、idToken字段。 |
 | PHONE_NUMBER | 1 | 表示用PhoneNumber来关联华为账号。 用户在登录成功后，如之前未对快速验证手机号进行授权，则会拉起手机号授权页面；如已授权，则返回对应数据。 该登录类型不需要实时验证华为账号的手机号码，响应数据包含openID、unionID、authorizationCode、idToken字段。 应用使用Authorization Code调用[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token#接口原型)接口向华为账号服务器请求获取Access Token，再使用Access Token调用[获取华为账号用户信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-user-info-get-phone#接口原型)接口获取用户信息，从用户信息中获取用户手机号。 |
 | REAL_TIME_PHONE_NUMBER | 2 | 表示用PhoneNumber来关联华为账号。 用户每次在登录成功后，都会拉起实时验证手机号授权页面。 该登录类型会实时验证华为账号的手机号码，响应数据包含openID、unionID、authorizationCode、idToken字段。 应用使用Authorization Code调用[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token#接口原型)接口向华为账号服务器请求获取Access Token，再使用Access Token调用[获取华为账号用户信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-user-info-get-phone#接口原型)接口获取用户信息，从用户信息中获取用户手机号。 **说明：** REAL_TIME_PHONE_NUMBER暂不支持使用。 |
-| QUICK_LOGIN | 3 | 表示用PhoneNumber来关联华为账号。 该类型不支持Icon类型和图文类型的LoginWithHuaweiIDButton组件。 该登录类型需要通过[AuthorizationWithHuaweiIDRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#authorizationwithhuaweiidrequest)接口获取华为账号绑定的匿名手机号，如果未获取到华为账号绑定的匿名手机号，请使用其他登录类型。 该登录类型响应数据包含openID、unionID、authorizationCode、idToken字段。 应用使用Authorization Code调用[/oauth2/v6/quickLogin/getPhoneNumber](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-user-info-quicklogin-by-code#接口原型)接口获取用户信息，从用户信息中获取用户手机号。 **起始版本：** 5.0.0(12) **设备行为差异：** 该接口在Phone、PC/2in1、Tablet、TV中可正常调用（TV设备从5.1.1(19)版本开始支持），在其他设备类型中返回1001500003错误码。 |
+| QUICK_LOGIN | 3 | 表示用PhoneNumber来关联华为账号。 该类型不支持Icon类型和图文类型的LoginWithHuaweiIDButton组件。 该登录类型需要通过[AuthorizationWithHuaweiIDRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#authorizationwithhuaweiidrequest)接口获取华为账号绑定的匿名手机号，如果未获取到华为账号绑定的匿名手机号，请使用其他登录类型。 该登录类型响应数据包含openID、unionID、authorizationCode、idToken字段。 应用使用Authorization Code调用[/oauth2/v6/quickLogin/getPhoneNumber](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-user-info-quicklogin-by-code#接口原型)接口获取用户信息，从用户信息中获取用户手机号。 **起始版本：** 5.0.0(12) |
 
 #### TextType
 

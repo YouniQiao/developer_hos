@@ -2,8 +2,8 @@
 title: "ArkUI_NodeAttributeType（布局属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-layoutattributes"
 catalog: "harmonyos-references"
-content_hash: "d03863deae5f"
-synced_at: "2026-08-18T15:32:36.831835"
+content_hash: "8a05f55bd127"
+synced_at: "2026-08-29T18:15:37.970220"
 ---
 
 # ArkUI_NodeAttributeType（布局属性）
@@ -698,7 +698,7 @@ NODE_WIDTH_PERCENT = 71
 
 | 参数项 | 描述 |
 | --- | --- |
-| .value[0].f32 | 设置宽度数值，单位为百分比。取值范围：[0, +∞)。设置异常值时，按默认值显示。 |
+| .value[0].f32 | 设置宽度数值，单位为百分比。取值范围：(0, +∞)。无默认值，不设置时由组件布局决定尺寸，使用子组件自身内容需要的宽度。传入异常值时返回错误码。 |
 
 返回：
 
@@ -721,7 +721,7 @@ NODE_HEIGHT_PERCENT = 72
 
 | 参数项 | 描述 |
 | --- | --- |
-| .value[0].f32 | 设置高度数值，单位为百分比。取值范围：[0, +∞)。设置异常值时，按默认值显示。 |
+| .value[0].f32 | 设置高度数值，单位为百分比。取值范围：(0, +∞)。无默认值，不设置时由组件布局决定尺寸，使用子组件自身内容需要的高度。传入异常值时返回错误码。 |
 
 返回：
 

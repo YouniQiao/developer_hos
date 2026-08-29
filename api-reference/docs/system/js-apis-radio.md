@@ -2,13 +2,13 @@
 title: "@ohos.telephony.radio (网络搜索)"
 upstream_id: "harmonyos-references/js-apis-radio"
 catalog: "harmonyos-references"
-content_hash: "0fb1ae7c6531"
-synced_at: "2026-07-09T00:59:38.575027"
+content_hash: "78af74a81ed8"
+synced_at: "2026-08-29T18:16:54.628584"
 ---
 
 # @ohos.telephony.radio (网络搜索)
 
-网络搜索模块提供管理网络搜索的一些基础功能，包括获取当前接入的CS域和PS域无线接入技术、获取网络状态、获取当前选网模式、获取注册网络所在国家的ISO国家码、获取主卡所在卡槽的索引号、获取指定SIM卡槽对应的注册网络信号强度信息列表、获取运营商名称，判断当前设备是否支持NR(New Radio)、判断主卡的Radio是否打开等。其中，CS域为电路交换域，PS为分组交换域。
+网络搜索模块提供管理网络搜索的一些基础功能，包括获取当前接入的CS域和PS域无线接入技术、获取网络状态、获取当前选网模式、获取注册网络所在国家的ISO国家码、获取主卡所在卡槽的索引号、获取指定SIM卡槽对应的注册网络信号强度信息列表、获取运营商名称，判断当前设备是否支持NR(New Radio)、判断主卡的Radio是否打开等。其中，CS(Circuit Switched)域为电路交换域，PS(Packet Switched)为分组交换域。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 6开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -53,10 +53,12 @@ getRadioTech(slotId: number, callback: AsyncCallback<[NetworkRadioTech](#network
 ```
 import { BusinessError } from '@kit.BasicServicesKit';
 
+// 指定卡槽ID，0表示卡槽1
 let slotId: number = 0;
+// 获取当前接入的CS域和PS域无线接入技术
 radio.getRadioTech(slotId, (err: BusinessError, data: radio.NetworkRadioTech) => {
     if (err) {
-        console.error(`getRadioTech failed, callback: err->${JSON.stringify(err)}`);
+        console.error(`getRadioTech failed, callback: err code: ${err.code}, message: ${err.message}`);
         return;
     }
     console.info(`getRadioTech success, callback: data->${JSON.stringify(data)}`);
@@ -107,7 +109,7 @@ let slotId: number = 0;
 radio.getRadioTech(slotId).then((data: radio.NetworkRadioTech) => {
     console.info(`getRadioTech success, promise: data->${JSON.stringify(data)}`);
 }).catch((err: BusinessError) => {
-    console.error(`getRadioTech failed, promise: err->${JSON.stringify(err)}`);
+    console.error(`getRadioTech failed, promise: err code: ${err.code}, message: ${err.message}`);
 });
 ```
 
@@ -115,7 +117,7 @@ radio.getRadioTech(slotId).then((data: radio.NetworkRadioTech) => {
 
 getRadioTechSync(slotId: number): [NetworkRadioTech](#networkradiotech11)
 
-获取当前接入的CS域和PS域无线接入技术。CS域为电路交换域，PS为分组交换域。
+获取当前接入的CS域和PS域无线接入技术，为[getRadioTech](#radiogetradiotech)的同步版本，直接返回结果。与异步方法getRadioTech功能相同，适用于需要立即获取结果且能接受阻塞调用的场景；若需要非阻塞调用，请使用getRadioTech。CS域为电路交换域，PS为分组交换域。
 
 需要权限：ohos.permission.GET_NETWORK_INFO
 
@@ -142,16 +144,22 @@ getRadioTechSync(slotId: number): [NetworkRadioTech](#networkradiotech11)
 | 201 | Permission denied. |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. |
 | 8300001 | Invalid parameter value. |
-| 8300002 | Operation failed. Cannot connect to service. |
+| 8300002 | Service connection failed. |
 | 8300003 | System internal error. |
-| 8300999 | Unknown error code. |
+| 8300999 | Unknown error. |
 
 示例：
 
 ```
+// 指定卡槽ID，0表示卡槽1
 let slotId: number = 0;
-let networkRadioTech: radio.NetworkRadioTech = radio.getRadioTechSync(slotId);
-console.info(`getRadioTechSync success, NetworkRadioTech->${JSON.stringify(networkRadioTech)}`);
+try {
+    // 同步获取当前接入的CS域和PS域无线接入技术
+    let networkRadioTech: radio.NetworkRadioTech = radio.getRadioTechSync(slotId);
+    console.info(`getRadioTechSync success, NetworkRadioTech->${JSON.stringify(networkRadioTech)}`);
+} catch (err) {
+    console.error(`getRadioTechSync failed, err->${JSON.stringify(err)}`);
+}
 ```
 
 #### radio.getNetworkState
@@ -190,7 +198,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 radio.getNetworkState((err: BusinessError, data: radio.NetworkState) => {
     if (err) {
-        console.error(`getNetworkState failed, callback: err->${JSON.stringify(err)}`);
+        console.error(`getNetworkState failed, callback: err code: ${err.code}, message: ${err.message}`);
         return;
     }
     console.info(`getNetworkState success, callback: data->${JSON.stringify(data)}`);
@@ -235,7 +243,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 let slotId: number = 0;
 radio.getNetworkState(slotId, (err: BusinessError, data: radio.NetworkState) => {
     if (err) {
-        console.error(`getNetworkState failed, callback: err->${JSON.stringify(err)}`);
+        console.error(`getNetworkState failed, callback: err code: ${err.code}, message: ${err.message}`);
         return;
     }
     console.info(`getNetworkState success, callback: data->${JSON.stringify(data)}`);
@@ -282,11 +290,13 @@ getNetworkState(slotId?: number): Promise<NetworkState>
 ```
 import { BusinessError } from '@kit.BasicServicesKit';
 
+// 指定卡槽ID，0表示卡槽1
 let slotId: number = 0;
+// 获取网络状态，使用Promise异步回调
 radio.getNetworkState(slotId).then((data: radio.NetworkState) => {
     console.info(`getNetworkState success, promise: data->${JSON.stringify(data)}`);
 }).catch((err: BusinessError) => {
-    console.error(`getNetworkState failed, promise: err->${JSON.stringify(err)}`);
+    console.error(`getNetworkState failed, promise: err code: ${err.code}, message: ${err.message}`);
 });
 ```
 
@@ -325,7 +335,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 let slotId: number = 0;
 radio.getNetworkSelectionMode(slotId, (err: BusinessError, data: radio.NetworkSelectionMode) => {
     if (err) {
-        console.error(`getNetworkSelectionMode failed, callback: err->${JSON.stringify(err)}`);
+        console.error(`getNetworkSelectionMode failed, callback: err code: ${err.code}, message: ${err.message}`);
         return;
     }
     console.info(`getNetworkSelectionMode success, callback: data->${JSON.stringify(data)}`);
@@ -373,7 +383,7 @@ let slotId: number = 0;
 radio.getNetworkSelectionMode(slotId).then((data: radio.NetworkSelectionMode) => {
     console.info(`getNetworkSelectionMode success, promise: data->${JSON.stringify(data)}`);
 }).catch((err: BusinessError) => {
-    console.error(`getNetworkSelectionMode failed, promise: err->${JSON.stringify(err)}`);
+    console.error(`getNetworkSelectionMode failed, promise: err code: ${err.code}, message: ${err.message}`);
 });
 ```
 
@@ -412,7 +422,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 let slotId: number = 0;
 radio.getISOCountryCodeForNetwork(slotId, (err: BusinessError, data: string) => {
     if (err) {
-        console.error(`getISOCountryCodeForNetwork failed, callback: err->${JSON.stringify(err)}`);
+        console.error(`getISOCountryCodeForNetwork failed, callback: err code: ${err.code}, message: ${err.message}`);
         return;
     }
     console.info(`getISOCountryCodeForNetwork success, callback: data->${JSON.stringify(data)}`);
@@ -460,7 +470,7 @@ let slotId: number = 0;
 radio.getISOCountryCodeForNetwork(slotId).then((data: string) => {
     console.info(`getISOCountryCodeForNetwork success, promise: data->${JSON.stringify(data)}`);
 }).catch((err: BusinessError) => {
-    console.error(`getISOCountryCodeForNetwork failed, promise: err->${JSON.stringify(err)}`);
+    console.error(`getISOCountryCodeForNetwork failed, promise: err code: ${err.code}, message: ${err.message}`);
 });
 ```
 
@@ -488,8 +498,12 @@ getISOCountryCodeForNetworkSync(slotId: number): string
 
 ```
 let slotId: number = 0;
-let countryISO: string = radio.getISOCountryCodeForNetworkSync(slotId);
-console.info(`the country ISO is:` + countryISO);
+try {
+    let countryISO: string = radio.getISOCountryCodeForNetworkSync(slotId);
+    console.info(`the country ISO is:` + countryISO);
+} catch (err) {
+    console.error(`getISOCountryCodeForNetworkSync failed, err->${JSON.stringify(err)}`);
+}
 ```
 
 #### radio.getPrimarySlotId7+
@@ -525,7 +539,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 radio.getPrimarySlotId((err: BusinessError, data: number) => {
     if (err) {
-        console.error(`getPrimarySlotId failed, callback: err->${JSON.stringify(err)}`);
+        console.error(`getPrimarySlotId failed, callback: err code: ${err.code}, message: ${err.message}`);
         return;
     }
     console.info(`getPrimarySlotId success, callback: data->${JSON.stringify(data)}`);
@@ -544,7 +558,7 @@ getPrimarySlotId(): Promise<number>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | 以Promise形式返回获取设备主卡所在卡槽的索引号的结果。 |
+| Promise | 以Promise形式返回设备主卡所在卡槽的索引号。 |
 
 错误码：
 
@@ -564,7 +578,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 radio.getPrimarySlotId().then((data: number) => {
     console.info(`getPrimarySlotId success, promise: data->${JSON.stringify(data)}`);
 }).catch((err: BusinessError) => {
-    console.error(`getPrimarySlotId failed, promise: err->${JSON.stringify(err)}`);
+    console.error(`getPrimarySlotId failed, promise: err code: ${err.code}, message: ${err.message}`);
 });
 ```
 
@@ -603,7 +617,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 let slotId: number = 0;
 radio.getSignalInformation(slotId, (err: BusinessError, data: Array<radio.SignalInformation>) => {
     if (err) {
-        console.error(`getSignalInformation failed, callback: err->${JSON.stringify(err)}`);
+        console.error(`getSignalInformation failed, callback: err code: ${err.code}, message: ${err.message}`);
         return;
     }
     console.info(`getSignalInformation success, callback: data->${JSON.stringify(data)}`);
@@ -651,7 +665,7 @@ let slotId: number = 0;
 radio.getSignalInformation(slotId).then((data: Array<radio.SignalInformation>) => {
     console.info(`getSignalInformation success, promise: data->${JSON.stringify(data)}`);
 }).catch((err: BusinessError) => {
-    console.error(`getSignalInformation failed, promise: err->${JSON.stringify(err)}`);
+    console.error(`getSignalInformation failed, promise: err code: ${err.code}, message: ${err.message}`);
 });
 ```
 
@@ -679,8 +693,12 @@ getSignalInformationSync(slotId: number): Array<SignalInformation>
 
 ```
 let slotId: number = 0;
-let signalInfo: Array<radio.SignalInformation> = radio.getSignalInformationSync(slotId);
-console.info(`signal information size is:` + signalInfo.length);
+try {
+    let signalInfo: Array<radio.SignalInformation> = radio.getSignalInformationSync(slotId);
+    console.info(`signal information size is:` + signalInfo.length);
+} catch (err) {
+    console.error(`getSignalInformationSync failed, err->${JSON.stringify(err)}`);
+}
 ```
 
 #### radio.isNrSupported(deprecated)
@@ -697,13 +715,13 @@ isNrSupported(): boolean
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | - true：支持。 - false：不支持。 |
+| boolean | 当前设备是否支持NR。- true：支持。 - false：不支持。 |
 
 示例：
 
 ```
 let result: boolean = radio.isNrSupported();
-console.info("Result: "+ result);
+console.info("Result: " + result);
 ```
 
 #### radio.isNrSupported(deprecated)
@@ -726,14 +744,16 @@ isNrSupported(slotId: number): boolean
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | - true：支持。 - false：不支持。 |
+| boolean | 当前设备是否支持NR。- true：支持。 - false：不支持。 |
 
 示例：
 
 ```
+// 指定卡槽ID，0表示卡槽1
 let slotId: number = 0;
+// 判断当前设备是否支持NR（该接口已废弃，建议使用isNRSupported）
 let result: boolean = radio.isNrSupported(slotId);
-console.info("Result: "+ result);
+console.info("Result: " + result);
 ```
 
 #### radio.isNRSupported9+
@@ -748,13 +768,13 @@ isNRSupported(): boolean
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | - true：支持。 - false：不支持。 |
+| boolean | 当前设备是否支持NR。- true：支持。 - false：不支持。 |
 
 示例：
 
 ```
 let result: boolean = radio.isNRSupported();
-console.info("Result: "+ result);
+console.info("Result: " + result);
 ```
 
 #### radio.isNRSupported9+
@@ -775,14 +795,14 @@ isNRSupported(slotId: number): boolean
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | - true：支持。 - false：不支持。 |
+| boolean | 当前设备是否支持NR。- true：支持。 - false：不支持。 |
 
 示例：
 
 ```
 let slotId: number = 0;
 let result: boolean = radio.isNRSupported(slotId);
-console.info("Result: "+ result);
+console.info("Result: " + result);
 ```
 
 #### radio.isRadioOn7+
@@ -821,7 +841,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 radio.isRadioOn((err: BusinessError, data: boolean) => {
     if (err) {
-        console.error(`isRadioOn failed, callback: err->${JSON.stringify(err)}`);
+        console.error(`isRadioOn failed, callback: err code: ${err.code}, message: ${err.message}`);
         return;
     }
     console.info(`isRadioOn success, callback: data->${JSON.stringify(data)}`);
@@ -866,7 +886,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 let slotId: number = 0;
 radio.isRadioOn(slotId, (err: BusinessError, data: boolean) => {
     if (err) {
-        console.error(`isRadioOn failed, callback: err->${JSON.stringify(err)}`);
+        console.error(`isRadioOn failed, callback: err code: ${err.code}, message: ${err.message}`);
         return;
     }
     console.info(`isRadioOn success, callback: data->${JSON.stringify(data)}`);
@@ -887,7 +907,7 @@ isRadioOn(slotId?: number): Promise<boolean>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| slotId | number | 否 | 卡槽ID。 - 0：卡槽1。 - 1：卡槽2。 如果不指定slotId，默认判断主卡Radio是否打开 |
+| slotId | number | 否 | 卡槽ID。 - 0：卡槽1。 - 1：卡槽2。 如果不指定slotId，默认判断主卡Radio是否打开。 |
 
 返回值：
 
@@ -917,7 +937,7 @@ let slotId: number = 0;
 radio.isRadioOn(slotId).then((data: boolean) => {
     console.info(`isRadioOn success, promise: data->${JSON.stringify(data)}`);
 }).catch((err: BusinessError) => {
-    console.error(`isRadioOn failed, promise: err->${JSON.stringify(err)}`);
+    console.error(`isRadioOn failed, promise: err code: ${err.code}, message: ${err.message}`);
 });
 ```
 
@@ -956,7 +976,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 let slotId: number = 0;
 radio.getOperatorName(slotId, (err: BusinessError, data: string) => {
     if (err) {
-        console.error(`getOperatorName failed, callback: err->${JSON.stringify(err)}`);
+        console.error(`getOperatorName failed, callback: err code: ${err.code}, message: ${err.message}`);
         return;
     }
     console.info(`getOperatorName success, callback: data->${JSON.stringify(data)}`);
@@ -1004,7 +1024,7 @@ let slotId: number = 0;
 radio.getOperatorName(slotId).then((data: string) => {
     console.info(`getOperatorName success, promise: data->${JSON.stringify(data)}`);
 }).catch((err: BusinessError) => {
-    console.error(`getOperatorName failed, promise: err->${JSON.stringify(err)}`);
+    console.error(`getOperatorName failed, promise: err code: ${err.code}, message: ${err.message}`);
 });
 ```
 
@@ -1012,7 +1032,7 @@ radio.getOperatorName(slotId).then((data: string) => {
 
 getOperatorNameSync(slotId: number): string
 
-获取运营商名称。
+获取运营商名称，为[getOperatorName](#radiogetoperatorname7)的同步版本，直接返回结果。与异步方法getOperatorName功能相同，适用于需要立即获取结果且能接受阻塞调用的场景；若需要非阻塞调用，请使用getOperatorName。
 
 系统能力：SystemCapability.Telephony.CoreService
 
@@ -1031,14 +1051,20 @@ getOperatorNameSync(slotId: number): string
 示例：
 
 ```
+// 指定卡槽ID，0表示卡槽1
 let slotId: number = 0;
-let operatorName: string = radio.getOperatorNameSync(slotId);
-console.info(`operator name is:` + operatorName);
+try {
+    // 同步获取运营商名称
+    let operatorName: string = radio.getOperatorNameSync(slotId);
+    console.info(`operator name is:` + operatorName);
+} catch (err) {
+    console.error(`getOperatorNameSync failed, err->${JSON.stringify(err)}`);
+}
 ```
 
 #### NetworkRadioTech11+
 
-网络中packet service (PS) 和 circuit service (CS) 无线接入技术。
+网络中PS（分组交换域）和CS（电路交换域）的无线接入技术。
 
 系统能力：SystemCapability.Telephony.CoreService
 
@@ -1060,13 +1086,13 @@ console.info(`operator name is:` + operatorName);
 | RADIO_TECHNOLOGY_1XRTT | 2 | 无线接入技术1XRTT(Single-Carrier Radio Transmission Technology)。 |
 | RADIO_TECHNOLOGY_WCDMA | 3 | 无线接入技术WCDMA(Wideband Code Division Multiple Access)。 |
 | RADIO_TECHNOLOGY_HSPA | 4 | 无线接入技术HSPA(High Speed Packet Access)。 |
-| RADIO_TECHNOLOGY_HSPAP | 5 | 无线接入技术HSPAP(High Speed packet access (HSPA+) )。 |
+| RADIO_TECHNOLOGY_HSPAP | 5 | 无线接入技术HSPAP(High Speed Packet Access+)。 |
 | RADIO_TECHNOLOGY_TD_SCDMA | 6 | 无线接入技术TD_SCDMA(TimeDivision-Synchronous Code Division Multiple Access)。 |
 | RADIO_TECHNOLOGY_EVDO | 7 | 无线接入技术EVDO(Evolution Data Only)。 |
-| RADIO_TECHNOLOGY_EHRPD | 8 | 无线接入技术EHRPD(Evolved High Rate Package Data)。 |
+| RADIO_TECHNOLOGY_EHRPD | 8 | 无线接入技术EHRPD(Evolved High Rate Packet Data)。 |
 | RADIO_TECHNOLOGY_LTE | 9 | 无线接入技术LTE(Long Term Evolution)。 |
 | RADIO_TECHNOLOGY_LTE_CA | 10 | 无线接入技术LTE_CA(Long Term Evolution_Carrier Aggregation)。 |
-| RADIO_TECHNOLOGY_IWLAN | 11 | 无线接入技术IWLAN(Industrial Wireless LAN)。 |
+| RADIO_TECHNOLOGY_IWLAN | 11 | 无线接入技术IWLAN(Interworking Wireless LAN)。 |
 | RADIO_TECHNOLOGY_NR | 12 | 无线接入技术NR(New Radio)。 |
 
 #### SignalInformation
@@ -1107,12 +1133,12 @@ console.info(`operator name is:` + operatorName);
 | --- | --- | --- | --- | --- |
 | longOperatorName | string | 否 | 否 | 注册网络的长运营商名称。 |
 | shortOperatorName | string | 否 | 否 | 注册网络的短运营商名称。 |
-| plmnNumeric | string | 否 | 否 | 注册网络的PLMN码。 |
-| isRoaming | boolean | 否 | 否 | 是否处于漫游状态。 |
+| plmnNumeric | string | 否 | 否 | 注册网络的PLMN(Public Land Mobile Network，公共陆地移动网络)码。 |
+| isRoaming | boolean | 否 | 否 | 是否处于漫游状态。 - true：处于漫游状态。 - false：未处于漫游状态。 |
 | regState | [RegState](#regstate) | 否 | 否 | 设备的网络注册状态。 |
 | cfgTech8+ | [RadioTechnology](#radiotechnology) | 否 | 否 | 设备的无线接入技术。 |
 | nsaState | [NsaState](#nsastate) | 否 | 否 | 设备的NSA网络注册状态。 |
-| isCaActive | boolean | 否 | 否 | CA的状态。 |
+| isCaActive | boolean | 否 | 否 | CA（Carrier Aggregation，载波聚合）的状态。 - true：CA已激活。 - false：CA未激活。 |
 | isEmergency | boolean | 否 | 否 | 此设备是否只允许拨打紧急呼叫。 |
 
 #### RegState
@@ -1141,7 +1167,7 @@ console.info(`operator name is:` + operatorName);
 | NSA_STATE_CONNECTED_DETECT | 3 | 设备在LTE小区下连接到LTE网络支持NSA和NR覆盖检测。 |
 | NSA_STATE_IDLE_DETECT | 4 | 支持NSA和NR覆盖检测的LTE小区下设备处于空闲状态。 |
 | NSA_STATE_DUAL_CONNECTED | 5 | 设备在支持NSA的LTE小区下连接到LTE + NR网络。 |
-| NSA_STATE_SA_ATTACHED | 6 | 设备在5GC附着时在NG-RAN小区下空闲或连接到NG-RAN小区。 |
+| NSA_STATE_SA_ATTACHED | 6 | 设备在5GC（5G核心网）附着时在NG-RAN（下一代无线接入网）小区下空闲或连接到NG-RAN小区。 |
 
 #### NetworkSelectionMode
 

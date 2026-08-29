@@ -2,8 +2,8 @@
 title: "native_drm_common.h"
 upstream_id: "harmonyos-references/capi-native-drm-common-h"
 catalog: "harmonyos-references"
-content_hash: "37d9c8ad8480"
-synced_at: "2026-07-28T16:51:45.889141"
+content_hash: "a1f4643dcf42"
+synced_at: "2026-08-29T18:17:33.652909"
 ---
 
 # native_drm_common.h
@@ -37,8 +37,8 @@ synced_at: "2026-07-28T16:51:45.889141"
 | [DRM_PsshInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drm-drm-psshinfo) | DRM_PsshInfo | DRM内容保护系统专用头（Protection System Specific Header）信息。 |
 | [DRM_MediaKeySystemInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drm-drm-mediakeysysteminfo) | DRM_MediaKeySystemInfo | 加密媒体内容的DRM信息。 |
 | [DRM_MediaKeySystemDescription](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drm-drm-mediakeysystemdescription) | DRM_MediaKeySystemDescription | DRM解决方案名称及其UUID的列表。 |
-| [MediaKeySystem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drm-mediakeysystem) | MediaKeySystem | MediaKeySystem结构。 |
-| [MediaKeySession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drm-mediakeysession) | MediaKeySession | MediaKeySession结构。 |
+| [MediaKeySystem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drm-mediakeysystem) | MediaKeySystem | MediaKeySystem结构，用于表示一个媒体密钥系统实例。MediaKeySystem提供数字版权保护能力，负责DRM插件配置管理、设备证书管理、统计信息获取、内容保护级别查询以及创建MediaKeySession等功能。通过OH_MediaKeySystem_Create接口创建实例，通过OH_MediaKeySystem_Destroy接口销毁实例。 |
+| [MediaKeySession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drm-mediakeysession) | MediaKeySession | MediaKeySession结构，用于表示一个媒体密钥会话实例。MediaKeySession是DRM解密流程的核心组件，负责生成许可证请求、处理许可证响应、管理密钥状态等功能。每个MediaKeySession实例对应一个播放会话的密钥解密过程。通过OH_MediaKeySystem_CreateMediaKeySession接口创建实例，通过OH_MediaKeySession_Destroy接口销毁实例。每个MediaKeySystem可创建多个MediaKeySession实例，用于处理不同的播放会话。 |
 
 #### [h2]枚举
 

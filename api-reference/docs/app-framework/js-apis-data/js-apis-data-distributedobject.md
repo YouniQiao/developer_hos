@@ -2,8 +2,8 @@
 title: "@ohos.data.distributedDataObject (分布式数据对象)"
 upstream_id: "harmonyos-references/js-apis-data-distributedobject"
 catalog: "harmonyos-references"
-content_hash: "dfe1328df27b"
-synced_at: "2026-07-28T16:40:49.147429"
+content_hash: "c29146559787"
+synced_at: "2026-08-29T18:12:12.109004"
 ---
 
 # @ohos.data.distributedDataObject (分布式数据对象)
@@ -37,7 +37,7 @@ create(context: Context, source: object): DataObject
 
 | 类型 | 说明 |
 | --- | --- |
-| [DataObject](#dataobject) | 创建完成的分布式数据对象。 |
+| [DataObject](#dataobject9) | 创建完成的分布式数据对象。 |
 
 错误码：
 
@@ -161,7 +161,7 @@ let sessionId: string = distributedDataObject.genSessionId();
 
 type DataObserver = (sessionId: string, fields: Array<string>) => void
 
-定义获取分布式对象数据变更的监听回调函数。
+定义获取分布式数据对象数据变更的监听回调函数。
 
 系统能力： SystemCapability.DistributedDataManager.DataObject.DistributedObject
 
@@ -176,7 +176,7 @@ type DataObserver = (sessionId: string, fields: Array<string>) => void
 
 type StatusObserver = (sessionId: string, networkId: string, status: string) => void
 
-定义获取分布式对象状态变更的监听回调函数。
+定义获取分布式数据对象状态变更的监听回调函数。
 
 系统能力： SystemCapability.DistributedDataManager.DataObject.DistributedObject
 
@@ -186,7 +186,7 @@ type StatusObserver = (sessionId: string, networkId: string, status: string) => 
 | --- | --- | --- | --- |
 | sessionId | string | 是 | 标识变更对象的sessionId。长度不大于128字节，且只能包含字母、数字或下划线_。 |
 | networkId | string | 是 | 对端设备的网络标识。要求字符串非空且长度不超过255字节。 |
-| status | string | 是 | 标识分布式对象的状态，可能的取值有'online'（上线）、'offline'（下线）和'restore'（恢复）。 |
+| status | string | 是 | 标识分布式数据对象的状态，可能的取值有'online'（上线）、'offline'（下线）和'restore'（恢复）。 |
 
 #### ProgressObserver20+
 
@@ -203,15 +203,17 @@ type ProgressObserver = (sessionId: string, progress: number) => void
 | sessionId | string | 是 | 标识变更对象的sessionId。长度不大于128字节，且只能包含字母、数字或下划线_。 |
 | progress | number | 是 | 标识资产传输进度。取值范围为[-1, 100]，取值为整数，-1表示获取进度失败，100表示传输完成。 |
 
-#### DataObject
+#### DataObject9+
 
 表示一个分布式数据对象。在使用以下接口前，需调用[create()](#distributeddataobjectcreate9)获取DataObject对象。
+
+系统能力： SystemCapability.DistributedDataManager.DataObject.DistributedObject
 
 #### [h2]setSessionId9+
 
 setSessionId(sessionId: string, callback: AsyncCallback<void>): void
 
-设置sessionId，使用callback方式异步回调。当可信组网中有多个设备处于协同状态时，如果多个设备间的分布式对象设置为同一个sessionId，就能自动同步。
+设置sessionId，使用callback异步回调。当可信组网中有多个设备处于协同状态时，如果多个设备间的分布式数据对象设置为同一个sessionId，就能自动同步。
 
 需要权限： ohos.permission.DISTRIBUTED_DATASYNC
 
@@ -221,8 +223,8 @@ setSessionId(sessionId: string, callback: AsyncCallback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| sessionId | string | 是 | 分布式数据对象在可信组网中的标识ID，长度不大于128字节，且只能包含字母数字或下划线_。当传入""、null时表示退出分布式组网。 |
-| callback | AsyncCallback | 是 | 加入session的异步回调。 |
+| sessionId | string | 是 | 分布式数据对象在可信组网中的标识ID，长度不大于128字节，且只能包含字母、数字或下划线_。当传入""、null时表示退出分布式组网。 |
+| callback | AsyncCallback | 是 | 回调函数。当加入session成功，err为undefined，否则为错误对象。 |
 
 错误码：
 
@@ -251,7 +253,7 @@ g_object.setSessionId('', () => {
 
 setSessionId(callback: AsyncCallback<void>): void
 
-退出所有已加入的session，使用callback方式异步回调。
+退出所有已加入的session，使用callback异步回调。
 
 需要权限：
 
@@ -264,7 +266,7 @@ setSessionId(callback: AsyncCallback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback | 是 | 退出所有已加入session的异步回调。 |
+| callback | AsyncCallback | 是 | 回调函数。当退出sessionid成功，err为undefined，否则为错误对象。 |
 
 错误码：
 
@@ -293,7 +295,7 @@ g_object.setSessionId(() => {
 
 setSessionId(sessionId?: string): Promise<void>
 
-设置sessionId或退出分布式组网，使用Promise异步回调。当传入""、null或不传入参数时，表示退出分布式组网。当可信组网中有多个设备处于协同状态时，如果多个设备间的分布式对象设置为同一个sessionId，就能自动同步。
+设置sessionId或退出分布式组网，使用Promise异步回调。当传入""、null或不传入参数时，表示退出分布式组网。当可信组网中有多个设备处于协同状态时，如果多个设备间的分布式数据对象设置为同一个sessionId，就能自动同步。
 
 需要权限： ohos.permission.DISTRIBUTED_DATASYNC
 
@@ -303,7 +305,7 @@ setSessionId(sessionId?: string): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| sessionId | string | 否 | 分布式数据对象在可信组网中的标识ID，长度不大于128字节，且只能包含字母数字或下划线_。当传入""、null或不传入参数时表示退出分布式组网。 |
+| sessionId | string | 否 | 分布式数据对象在可信组网中的标识ID，长度不大于128字节，且只能包含字母、数字或下划线_。当传入""、null或不传入参数时表示退出分布式组网。 |
 
 返回值：
 
@@ -400,7 +402,7 @@ off(type: 'change', callback?: (sessionId: string, fields: Array<string>) => voi
 示例：
 
 ```
-// 删除数据变更回调changeCallback
+// 删除数据变更回调
 g_object.off('change', (sessionId: string, fields: Array<string>) => {
     console.info('change' + sessionId);
     if (g_object != null && fields != null && fields != undefined) {
@@ -426,7 +428,7 @@ on(type: 'status', callback: (sessionId: string, networkId: string, status: 'onl
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件类型，固定为'status'，表示对象上下线。 |
-| callback | (sessionId: string, networkId: string, status: 'online' | 'offline' ) => void | 是 | 监听上下线回调实例。 sessionId：标识变更对象的sessionId； networkId：标识对象设备； status：标识对象为'online'(上线)或'offline'(下线)的状态。 |
+| callback | (sessionId: string, networkId: string, status: 'online' | 'offline' ) => void | 是 | 监听上下线回调实例。 sessionId：标识变更对象的sessionId； networkId：对端设备的网络标识； status：标识对象为'online'(上线)或'offline'(下线)的状态。 |
 
 错误码：
 
@@ -457,7 +459,7 @@ off(type: 'status', callback?:(sessionId: string, networkId: string, status: 'on
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件类型，固定为'status'，表示对象上下线。 |
-| callback | (sessionId: string, networkId: string, status: 'online' | 'offline' ) => void | 否 | 需要删除的上下线回调，若不设置则删除该对象所有的上下线回调。 sessionId：标识变更对象的sessionId； networkId：标识对象设备； status：标识对象为'online'(上线)或'offline'(下线)的状态。 |
+| callback | (sessionId: string, networkId: string, status: 'online' | 'offline' ) => void | 否 | 需要删除的上下线回调，若不设置则删除该对象所有的上下线回调。 sessionId：标识变更对象的sessionId； networkId：对端设备的网络标识； status：标识对象为'online'(上线)或'offline'(下线)的状态。 |
 
 错误码：
 
@@ -470,7 +472,7 @@ off(type: 'status', callback?:(sessionId: string, networkId: string, status: 'on
 示例：
 
 ```
-// 删除上下线回调changeCallback
+// 删除上下线回调
 g_object.off('status', (sessionId: string, networkId: string, status: 'online' | 'offline') => {
     console.info('status changed ' + sessionId + ' ' + status + ' ' + networkId);
 });
@@ -482,7 +484,7 @@ g_object.off('status');
 
 save(deviceId: string, callback: AsyncCallback<SaveSuccessResponse>): void
 
-保存分布式数据对象。使用callback方式异步回调。
+保存分布式数据对象。使用callback异步回调。
 
 对象数据保存成功后，当应用存在时不会释放对象数据，当应用退出后，重新进入应用时，恢复保存在设备上的数据。
 
@@ -499,7 +501,7 @@ save(deviceId: string, callback: AsyncCallback<SaveSuccessResponse>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | deviceId | string | 是 | 存储数据的设备号，标识需要保存对象的设备。"local"表示本地设备，否则表示其他设备的设备号。 |
-| callback | AsyncCallback | 是 | 回调函数。返回SaveSuccessResponse，包含sessionId、version、deviceId等信息。 |
+| callback | AsyncCallback | 是 | 回调函数。当保存成功，err为undefined，data为SaveSuccessResponse（包含sessionId、version、deviceId等信息）；否则为错误对象。 |
 
 错误码：
 
@@ -530,7 +532,7 @@ g_object.save('local', (err: BusinessError, result:distributedDataObject.SaveSuc
 
 save(deviceId: string): Promise<SaveSuccessResponse>
 
-保存分布式数据对象。使用Promise方式作为异步回调。
+保存分布式数据对象。使用Promise异步回调。
 
 对象数据保存成功后，当应用存在时不会释放对象数据，当应用退出后，重新进入应用时，恢复保存在设备上的数据。
 
@@ -581,7 +583,7 @@ g_object.save('local').then((callbackInfo: distributedDataObject.SaveSuccessResp
 
 revokeSave(callback: AsyncCallback<RevokeSaveSuccessResponse>): void
 
-撤回保存的分布式数据对象。使用callback方式作为异步方法。
+撤回保存的分布式数据对象。使用callback异步回调。
 
 如果对象保存在本地设备，那么将删除所有受信任设备上所保存的数据。
 
@@ -593,7 +595,7 @@ revokeSave(callback: AsyncCallback<RevokeSaveSuccessResponse>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback | 是 | 回调函数。返回RevokeSaveSuccessResponse，包含sessionId。 |
+| callback | AsyncCallback | 是 | 回调函数。当撤回保存成功，err为undefined，data为RevokeSaveSuccessResponse（包含sessionId信息）；否则为错误对象。 |
 
 错误码：
 
@@ -612,6 +614,7 @@ g_object.setSessionId('123456');
 g_object.save('local', (err: BusinessError, result: distributedDataObject.SaveSuccessResponse) => {
     if (err) {
         console.error(`Failed to save. Code: ${err.code}, message: ${err.message}`);
+        return;
     }
     console.info('save callback');
     console.info('save sessionId: ' + result.sessionId);
@@ -633,7 +636,7 @@ g_object.revokeSave((err: BusinessError, result: distributedDataObject.RevokeSav
 
 revokeSave(): Promise<RevokeSaveSuccessResponse>
 
-撤回保存的分布式数据对象。使用Promise方式作为异步方法。
+撤回保存的分布式数据对象。使用Promise异步回调。
 
 如果对象保存在本地设备，那么将删除所有受信任设备上所保存的数据。
 
@@ -681,9 +684,9 @@ g_object.revokeSave().then((result: distributedDataObject.RevokeSaveSuccessRespo
 
 bindAssetStore(assetKey: string, bindInfo: BindInfo, callback: AsyncCallback<void>): void
 
-绑定分布式对象中的单个资产与其对应的数据库信息，当前版本只支持分布式对象中的资产与关系型数据库的绑定。使用callback方式异步回调。
+绑定分布式数据对象中的单个资产与其对应的数据库信息，当前版本只支持分布式数据对象中的资产与关系型数据库的绑定。使用callback异步回调。
 
-当分布式对象中包含的资产和关系型数据库中包含的资产指向同一个实体资产文件，即两个资产的Uri相同时，就会存在冲突，我们把这种资产称为融合资产。如果需要分布式数据管理进行融合资产的冲突解决，需要先进行资产的绑定。当应用退出session后，绑定关系随之消失。
+当分布式数据对象中包含的资产和关系型数据库中包含的资产指向同一个实体资产文件，即两个资产的Uri相同时，就会存在冲突，我们把这种资产称为融合资产。如果需要分布式数据管理进行融合资产的冲突解决，需要先进行资产的绑定。当应用退出session后，绑定关系随之消失。
 
 系统能力： SystemCapability.DistributedDataManager.DataObject.DistributedObject
 
@@ -691,9 +694,9 @@ bindAssetStore(assetKey: string, bindInfo: BindInfo, callback: AsyncCallback<voi
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| assetKey | string | 是 | 待绑定的融合资产在分布式对象中的键值。 |
+| assetKey | string | 是 | 待绑定的融合资产在分布式数据对象中的键值。 |
 | bindInfo | [BindInfo](#bindinfo11) | 是 | 待绑定的融合资产在数据库中的信息，包含库名、表名、主键、列名及在数据库中的资产名。 |
-| callback | AsyncCallback | 是 | 绑定数据库的回调。 |
+| callback | AsyncCallback | 是 | 回调函数。当绑定数据库成功，err为undefined，否则为错误对象。 |
 
 错误码：
 
@@ -752,6 +755,7 @@ class EntryAbility extends UIAbility {
     g_object.bindAssetStore('attachment', bindInfo, (err: BusinessError) => {
       if (err) {
         console.error(`Failed to bind asset store. Code: ${err.code}, message: ${err.message}`);
+        return;
       }
       console.info('bindAssetStore success.');
     });
@@ -763,9 +767,9 @@ class EntryAbility extends UIAbility {
 
 bindAssetStore(assetKey: string, bindInfo: BindInfo): Promise<void>
 
-绑定分布式对象中的单个资产与其对应的数据库信息，当前版本只支持分布式对象中的资产与关系型数据库的绑定。使用Promise方式作为异步回调。
+绑定分布式数据对象中的单个资产与其对应的数据库信息，当前版本只支持分布式数据对象中的资产与关系型数据库的绑定。使用Promise异步回调。
 
-当分布式对象中包含的资产和关系型数据库中包含的资产指向同一个实体资产文件，即两个资产的Uri相同时，就会存在冲突，我们把这种资产称为融合资产。如果需要分布式数据管理进行融合资产的冲突解决，需要先进行资产的绑定。当应用退出session后，绑定关系随之消失。
+当分布式数据对象中包含的资产和关系型数据库中包含的资产指向同一个实体资产文件，即两个资产的Uri相同时，就会存在冲突，我们把这种资产称为融合资产。如果需要分布式数据管理进行融合资产的冲突解决，需要先进行资产的绑定。当应用退出session后，绑定关系随之消失。
 
 系统能力： SystemCapability.DistributedDataManager.DataObject.DistributedObject
 
@@ -773,7 +777,7 @@ bindAssetStore(assetKey: string, bindInfo: BindInfo): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| assetKey | string | 是 | 待绑定的融合资产在分布式对象中的键值。 |
+| assetKey | string | 是 | 待绑定的融合资产在分布式数据对象中的键值。 |
 | bindInfo | [BindInfo](#bindinfo11) | 是 | 待绑定的融合资产在数据库中的信息，包含库名、表名、主键、列名及在数据库中的资产名。 |
 
 返回值：
@@ -849,7 +853,7 @@ class EntryAbility extends UIAbility {
 
 on(type: 'change', callback: DataObserver): void
 
-监听分布式对象的数据变更。
+监听分布式数据对象的数据变更。
 
 系统能力： SystemCapability.DistributedDataManager.DataObject.DistributedObject
 
@@ -858,11 +862,13 @@ on(type: 'change', callback: DataObserver): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件类型，固定为'change'，表示数据变更。 |
-| callback | [DataObserver](#dataobserver20) | 是 | 表示分布式对象数据变更的回调实例。 |
+| callback | [DataObserver](#dataobserver20) | 是 | 表示分布式数据对象数据变更的回调实例。 |
 
 示例：
 
 ```
+import { BusinessError } from '@kit.BasicServicesKit';
+
 const changeCallback1: distributedDataObject.DataObserver = (sessionId: string, fields: Array<string>) => {
   console.info('change callback1 ' + sessionId);
   if (fields != null && fields != undefined) {
@@ -874,7 +880,8 @@ const changeCallback1: distributedDataObject.DataObserver = (sessionId: string, 
 try {
   g_object.on('change', changeCallback1);
 } catch (error) {
-  console.error(`Failed to execute. Code: ${error.code}, message: ${error.message}`);
+  let err = error as BusinessError;
+  console.error(`Failed to execute. Code: ${err.code}, message: ${err.message}`);
 }
 ```
 
@@ -882,7 +889,7 @@ try {
 
 off(type: 'change', callback?: DataObserver): void
 
-当不再进行数据变更监听时，使用此接口删除分布式对象数据变更监听的回调实例。
+当不再进行数据变更监听时，使用此接口删除分布式数据对象数据变更监听的回调实例。
 
 系统能力： SystemCapability.DistributedDataManager.DataObject.DistributedObject
 
@@ -896,6 +903,8 @@ off(type: 'change', callback?: DataObserver): void
 示例：
 
 ```
+import { BusinessError } from '@kit.BasicServicesKit';
+
 const changeCallback1: distributedDataObject.DataObserver = (sessionId: string, fields: Array<string>) => {
   console.info('change callback1 ' + sessionId);
   if (fields != null && fields != undefined) {
@@ -924,7 +933,8 @@ try {
   g_object.on('change', changeCallback2);
   g_object.off('change');
 } catch (error) {
-  console.error(`Failed to execute. Code: ${error.code}, message: ${error.message}`);
+  let err = error as BusinessError;
+  console.error(`Failed to execute. Code: ${err.code}, message: ${err.message}`);
 }
 ```
 
@@ -932,7 +942,7 @@ try {
 
 on(type: 'status', callback: StatusObserver): void
 
-监听分布式对象的状态变更。
+监听分布式数据对象的状态变更。
 
 系统能力： SystemCapability.DistributedDataManager.DataObject.DistributedObject
 
@@ -940,19 +950,22 @@ on(type: 'status', callback: StatusObserver): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 事件类型，固定为'status'，表示分布式对象状态变更事件。 |
-| callback | [StatusObserver](#statusobserver20) | 是 | 表示分布式对象状态变更的回调实例。 |
+| type | string | 是 | 事件类型，固定为'status'，表示分布式数据对象状态变更事件。 |
+| callback | [StatusObserver](#statusobserver20) | 是 | 表示分布式数据对象状态变更的回调实例。 |
 
 示例：
 
 ```
+import { BusinessError } from '@kit.BasicServicesKit';
+
 const statusCallback1: distributedDataObject.StatusObserver = (sessionId: string, networkId: string, status: string) => {
   console.info('status callback ' + sessionId);
 }
 try {
   g_object.on('status', statusCallback1);
 } catch (error) {
-  console.error(`Failed to execute. Code: ${error.code}, message: ${error.message}`);
+  let err = error as BusinessError;
+  console.error(`Failed to execute. Code: ${err.code}, message: ${err.message}`);
 }
 ```
 
@@ -960,7 +973,7 @@ try {
 
 off(type: 'status', callback?: StatusObserver): void
 
-当不再进行分布式对象状态变更监听时，使用此接口删除分布式对象状态变更的回调实例。
+当不再进行分布式数据对象状态变更监听时，使用此接口删除分布式数据对象状态变更的回调实例。
 
 系统能力： SystemCapability.DistributedDataManager.DataObject.DistributedObject
 
@@ -968,12 +981,14 @@ off(type: 'status', callback?: StatusObserver): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 事件类型，固定为'status'，表示数据对象状态变更事件。 |
+| type | string | 是 | 事件类型，固定为'status'，表示分布式数据对象状态变更事件。 |
 | callback | [StatusObserver](#statusobserver20) | 否 | 需要删除状态变更的回调实例，若不设置则删除该对象所有的状态变更回调实例。 |
 
 示例：
 
 ```
+import { BusinessError } from '@kit.BasicServicesKit';
+
 const statusCallback1: distributedDataObject.StatusObserver = (sessionId: string, networkId: string, status: string) => {
   console.info('status callback1' + sessionId);
 }
@@ -991,7 +1006,8 @@ try {
   g_object.on('status', statusCallback2);
   g_object.off('status');
 } catch (error) {
-  console.error(`Failed to execute. Code: ${error.code}, message: ${error.message}`);
+  let err = error as BusinessError;
+  console.error(`Failed to execute. Code: ${err.code}, message: ${err.message}`);
 }
 ```
 
@@ -1013,6 +1029,8 @@ on(type: 'progressChanged', callback: ProgressObserver): void
 示例：
 
 ```
+import { BusinessError } from '@kit.BasicServicesKit';
+
 const progressChangedCallback: distributedDataObject.ProgressObserver = (sessionId: string, progress: number) => {
   console.info('progressChanged callback' + sessionId);
   console.info('progressChanged callback' + progress);
@@ -1020,7 +1038,8 @@ const progressChangedCallback: distributedDataObject.ProgressObserver = (session
 try {
   g_object.on('progressChanged', progressChangedCallback);
 } catch (error) {
-  console.error(`Failed to execute. Code: ${error.code}, message: ${error.message}`);
+  let err = error as BusinessError;
+  console.error(`Failed to execute. Code: ${err.code}, message: ${err.message}`);
 }
 ```
 
@@ -1042,6 +1061,8 @@ off(type: 'progressChanged', callback?: ProgressObserver): void
 示例：
 
 ```
+import { BusinessError } from '@kit.BasicServicesKit';
+
 const progressChangedCallback1: distributedDataObject.ProgressObserver = (sessionId: string, progress: number) => {
   console.info('progressChanged callback1' + sessionId);
   console.info('progressChanged callback1' + progress);
@@ -1061,7 +1082,8 @@ try {
   // 取消对资产传输进度的所有监听
   g_object.off('progressChanged');
 } catch (error) {
-  console.error(`Failed to execute. Code: ${error.code}, message: ${error.message}`);
+  let err = error as BusinessError;
+  console.error(`Failed to execute. Code: ${err.code}, message: ${err.message}`);
 }
 ```
 
@@ -1069,7 +1091,7 @@ try {
 
 setAsset(assetKey: string, uri: string): Promise<void>
 
-设置分布式对象中的单个资产的属性信息，该接口必须在[setSessionId](#setsessionid9-2)接口调用前使用。使用Promise异步回调。
+设置分布式数据对象中的单个资产的属性信息，该接口必须在[setSessionId](#setsessionid9-2)接口调用前使用。使用Promise异步回调。
 
 ![](./img/caution_3.0-zh-cn.png) 在设置资产时必须保证assetKey存在且对应文件为资产类型文件，否则无法保证对端能接收到此次设置的资产。
 
@@ -1090,7 +1112,7 @@ setAsset(assetKey: string, uri: string): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| assetKey | string | 是 | 分布式对象中资产类型数据对应的属性名。 **使用约束：** （1）提供的assetKey对应的文件必须已存在且类型为资产[Asset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-commontype#asset)，才可进行正确的设置资产。若assetKey对应文件不存在或文件存在但类型不是资产类型，可能会出现资产设置错误。 （2）在协同或接续场景下需要双端满足assetKey对应的文件存在且为资产类型，才可将设置的资产同步到对端设备。 |
+| assetKey | string | 是 | 分布式数据对象中资产类型数据对应的属性名。 **使用约束：** （1）提供的assetKey对应的文件必须已存在且类型为资产[Asset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-commontype#asset)，才可进行正确的设置资产。若assetKey对应文件不存在或文件存在但类型不是资产类型，可能会出现资产设置错误。 （2）在协同或接续场景下需要双端满足assetKey对应的文件存在且为资产类型，才可将设置的资产同步到对端设备。 |
 | uri | string | 是 | 待设置的新资产的uri，表示该资产的存放的分布式路径。必须为真实存在的资产对应的分布式路径。 |
 
 返回值：
@@ -1156,7 +1178,7 @@ class EntryAbility extends UIAbility {
 
 setAssets(assetsKey: string, uris: Array<string>): Promise<void>
 
-设置分布式对象中的多个资产的属性信息，该接口必须在[setSessionId](#setsessionid9-2)接口调用前使用。使用Promise异步回调。
+设置分布式数据对象中的多个资产的属性信息，该接口必须在[setSessionId](#setsessionid9-2)接口调用前使用。使用Promise异步回调。
 
 ![](./img/caution_3.0-zh-cn.png) 在设置资产时必须保证assetsKey存在且对应文件为资产类型文件，否则无法保证对端能接收到此次设置的资产。
 
@@ -1179,7 +1201,7 @@ setAssets(assetsKey: string, uris: Array<string>): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| assetsKey | string | 是 | 分布式对象中资产数组类型数据对应的属性名。 **使用约束：** （1）提供的assetsKey对应的文件已存在且类型必须为资产[Asset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-commontype#asset)，才可进行正确的设置资产。若assetsKey对应文件不存在或文件存在但类型不是资产类型，可能会出现资产设置错误。 （2）在协同或接续场景下需要双端满足assetsKey对应的文件存在且为资产类型，才可将设置的资产数组同步到对端设备。 |
+| assetsKey | string | 是 | 分布式数据对象中资产数组类型数据对应的属性名。 **使用约束：** （1）提供的assetsKey对应的文件已存在且类型必须为资产[Asset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-commontype#asset)，才可进行正确的设置资产。若assetsKey对应文件不存在或文件存在但类型不是资产类型，可能会出现资产设置错误。 （2）在协同或接续场景下需要双端满足assetsKey对应的文件存在且为资产类型，才可将设置的资产数组同步到对端设备。 |
 | uris | Array | 是 | 待设置的新资产数组的uri集合，表示资产数组内每个资产存放的分布式路径。数组中元素的数量为[1, 50]，元素uri必须为真实存在的资产对应的分布式路径。 |
 
 返回值：
@@ -1292,7 +1314,7 @@ let g_object: distributedDataObject.DistributedObject = distributedDataObject.cr
 
 setSessionId(sessionId?: string): boolean
 
-设置sessionId。当可信组网中有多个设备处于协同状态时，如果多个设备间的分布式对象设置为同一个sessionId，就能自动同步。
+设置sessionId。当可信组网中有多个设备处于协同状态时，如果多个设备间的分布式数据对象设置为同一个sessionId，就能自动同步。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[setSessionId](#setsessionid9)替代。
 
@@ -1310,7 +1332,7 @@ setSessionId(sessionId?: string): boolean
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | true：标识设置sessionId成功。 false：标识设置sessionId失败。 |
+| boolean | true：表示设置sessionId成功。 false：表示设置sessionId失败。 |
 
 示例：
 
@@ -1339,7 +1361,7 @@ g_object.setSessionId('');
 
 on(type: 'change', callback: (sessionId: string, fields: Array<string>) => void): void
 
-监听分布式数据对象的变更。
+监听分布式数据对象的数据变更。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[on('change')](#onchange9)替代。
 
@@ -1413,7 +1435,7 @@ class SourceObject {
 
 let source: SourceObject = new SourceObject('jack', 18, false);
 let g_object: distributedDataObject.DistributedObject = distributedDataObject.createDistributedObject(source);
-// 删除数据变更回调changeCallback
+// 删除数据变更回调
 g_object.off('change', (sessionId: string, fields: Array<string>) => {
     console.info('change' + sessionId);
     if (fields != null && fields != undefined) {
@@ -1441,7 +1463,7 @@ on(type: 'status', callback: (sessionId: string, networkId: string, status: 'onl
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件类型，固定为'status'，表示对象上下线。 |
-| callback | (sessionId: string, networkId: string, status: 'online' | 'offline' ) => void | 是 | 监听上下线回调实例。 sessionId：标识变更对象的sessionId； networkId：标识对象设备； status：标识对象为'online'(上线)或'offline'(下线)的状态。 |
+| callback | (sessionId: string, networkId: string, status: 'online' | 'offline' ) => void | 是 | 监听上下线回调实例。 sessionId：标识变更对象的sessionId； networkId：对端设备的网络标识； status：标识对象为'online'(上线)或'offline'(下线)的状态。 |
 
 示例：
 
@@ -1481,7 +1503,7 @@ off(type: 'status', callback?: (sessionId: string, networkId: string, status: 'o
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 事件类型，固定为'status'，表示对象上下线。 |
-| callback | (sessionId: string, networkId: string, status: 'online' | 'offline' ) => void | 否 | 需要删除的上下线回调，若不设置则删除该对象所有的上下线回调。 sessionId：标识变更对象的sessionId； networkId：标识对象设备； status：标识对象为'online'(上线)或'offline'(下线)的状态。 |
+| callback | (sessionId: string, networkId: string, status: 'online' | 'offline' ) => void | 否 | 需要删除的上下线回调，若不设置则删除该对象所有的上下线回调。 sessionId：标识变更对象的sessionId； networkId：对端设备的网络标识； status：标识对象为'online'(上线)或'offline'(下线)的状态。 |
 
 示例：
 
@@ -1500,7 +1522,7 @@ class SourceObject {
 
 let source: SourceObject = new SourceObject('jack', 18, false);
 let g_object: distributedDataObject.DistributedObject = distributedDataObject.createDistributedObject(source);
-// 删除上下线回调changeCallback
+// 删除上下线回调
 g_object.off('status', (sessionId: string, networkId: string, status: 'online' | 'offline') => {
     console.info('status changed ' + sessionId + ' ' + status + ' ' + networkId);
 });

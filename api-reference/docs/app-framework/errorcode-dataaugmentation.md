@@ -2,8 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-dataaugmentation"
 catalog: "harmonyos-references"
-content_hash: "86cd5a2a9680"
-synced_at: "2026-07-09T00:59:02.572471"
+content_hash: "cacaf8202845"
+synced_at: "2026-08-29T18:16:10.683952"
 ---
 
 # ArkTS API错误码
@@ -164,7 +164,7 @@ RAG会话繁忙。
 
 错误信息
 
-The RAG session is Already closed.
+The RAG session is already closed.
 
 错误描述
 

@@ -2,8 +2,8 @@
 title: "filePreview（文件预览）"
 upstream_id: "harmonyos-references/preview-arkts"
 catalog: "harmonyos-references"
-content_hash: "f5bfa94d792a"
-synced_at: "2026-07-09T01:01:36.655444"
+content_hash: "37a42d86033c"
+synced_at: "2026-08-29T18:18:31.885218"
 ---
 
 # filePreview（文件预览）
@@ -200,13 +200,13 @@ openPreview(context: Context, files: Array<PreviewInfo>, index?: number): Promis
 
 该接口需要调用方确认传入的uri可进行转授权。
 
-该接口不支持PC/2in1设备。
-
 模型约束： 此接口仅可在Stage模型下使用。
 
 元服务API： 从版本5.0.0(12)开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.FileManagement.FilePreview.Core
+
+设备行为差异： 此接口在PC/2in1中调用返回801错误码，在其他设备类型中可正常调用。
 
 起始版本： 5.0.0(12)
 
@@ -699,6 +699,8 @@ loadData(context: Context, files: Array<PreviewInfo>, index?: number): Promise<v
 元服务API： 从版本5.0.0(12)开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.FileManagement.FilePreview.Core
+
+设备行为差异： 此接口在PC/2in1中调用返回801错误码，在其他设备类型中可正常调用。
 
 起始版本： 5.0.0(12)
 

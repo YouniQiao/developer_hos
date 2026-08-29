@@ -2,8 +2,8 @@
 title: "objectDetection（多目标识别）"
 upstream_id: "harmonyos-references/core-vision-object-detection-api"
 catalog: "harmonyos-references"
-content_hash: "561b9465624b"
-synced_at: "2026-07-28T16:53:11.453015"
+content_hash: "0a4061353310"
+synced_at: "2026-08-29T18:18:39.386538"
 ---
 
 # objectDetection（多目标识别）
@@ -98,6 +98,7 @@ static create(): Promise<ObjectDetector>
 ```
 import { objectDetection } from '@kit.CoreVisionKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
+import { BusinessError } from '@kit.BasicServicesKit';
 
 async function createAndDestroyDetector() {
   try {
@@ -119,7 +120,8 @@ async function createAndDestroyDetector() {
       hilog.error(0x0000, 'objectDetectionSample', 'Failed to destroy object detector');
     }
   } catch (err) {
-    hilog.error(0x0000, 'objectDetectionSample', `Object detector error: ${err}`);
+    const error = err as BusinessError;
+    hilog.error(0x0000, 'objectDetectionSample', `Object detector error. Code: ${error.code}, message: ${error.message}`);
   }
 }
 
@@ -160,6 +162,7 @@ destroy(): Promise<void>
 ```
 import { objectDetection } from '@kit.CoreVisionKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
+import { BusinessError } from '@kit.BasicServicesKit';
 
 async function createAndDestroyDetector() {
   try {
@@ -181,7 +184,8 @@ async function createAndDestroyDetector() {
       hilog.error(0x0000, 'objectDetectionSample', 'Failed to destroy object detector');
     }
   } catch (err) {
-    hilog.error(0x0000, 'objectDetectionSample', `Object detector error: ${err}`);
+    const error = err as BusinessError;
+    hilog.error(0x0000, 'objectDetectionSample', `Object detector error. Code: ${error.code}, message: ${error.message}`);
   }
 }
 
@@ -240,6 +244,7 @@ process(request: visionBase.Request): Promise<ObjectDetectionResponse>
 import { objectDetection, visionBase } from '@kit.CoreVisionKit';
 import { image } from '@kit.ImageKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
+import { BusinessError } from '@kit.BasicServicesKit';
 import { fileIo } from '@kit.CoreFileKit';
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 
@@ -300,7 +305,8 @@ async function objectDetectTest() {
       hilog.info(0x0000, 'objectDetectionSample', 'Object detector destroyed successfully');
     }
   } catch (err) {
-    hilog.error(0x0000, 'objectDetectionSample', `Object detection error: ${err}`);
+    const error = err as BusinessError;
+    hilog.error(0x0000, 'objectDetectionSample', `Object detection error. Code: ${error.code}, message: ${error.message}`);
   }
 }
 

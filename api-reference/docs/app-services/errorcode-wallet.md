@@ -2,8 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-wallet"
 catalog: "harmonyos-references"
-content_hash: "884b45d0db07"
-synced_at: "2026-07-28T16:53:06.374186"
+content_hash: "a3927e43f64f"
+synced_at: "2026-08-29T18:18:36.160606"
 ---
 
 # ArkTS API错误码
@@ -244,11 +244,17 @@ Operation failed because of an internal error.
 
 可能原因
 
-钱包应用内部问题。
+1. 应用在后台调用接口。
+2. 应用调用接口时传入的context不合法。
+3. 钱包被“健康使用设备”管控。
+4. 开发者无法处理的系统内部错误。包括但不限于：IPC跨进程通信失败、钱包业务异常等。
 
 处理步骤
 
-请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。
+1. 确保应用在前台调用接口。
+2. 确保调用接口时传入的context类型为[UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext)，且为有效状态。
+3. 打开“设置”->“健康使用设备”->“应用管理”，将钱包设置为“始终可用”。
+4. 对于开发者无法处理的系统内部错误，请尝试重新调用该接口，或者重启设备。
 
 #### 1010200014 钱包应用非机主用户检测
 

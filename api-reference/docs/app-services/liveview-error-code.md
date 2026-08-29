@@ -2,8 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/liveview-error-code"
 catalog: "harmonyos-references"
-content_hash: "e61fefc31fca"
-synced_at: "2026-07-28T16:52:41.354579"
+content_hash: "02e89fd62c3b"
+synced_at: "2026-08-29T18:18:19.018526"
 ---
 
 # ArkTS API错误码
@@ -98,7 +98,7 @@ The right of liveView is not enabled.
 
 处理步骤
 
-若已申请实况窗权益，请确认event字段与开通权益的场景匹配；若未申请实况窗权益，请到AGC平台开通实况窗权益。
+若已申请实况窗权益，请确认event字段与开通权益的场景匹配；若未申请实况窗权益，请参考[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-preparations)，完成实况窗权益申请。
 
 #### 1003500006 实况窗已存在
 
@@ -208,96 +208,6 @@ The liveView sequence is incorrect.
 处理步骤
 
 请修改序列号[sequence](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-liveviewmanager#liveview)后重新更新或结束实况窗。
-
-#### 1003500012 订阅次数超出限制
-
-错误信息
-
-The number of subscription times exceeds the upper limit of 2000.
-
-错误描述
-
-订阅次数超出限制。
-
-可能原因
-
-单个用户每个应用最多有2000个订阅关系。
-
-处理步骤
-
-请调整订阅次数。
-
-#### 1003500013 无效的实况窗订阅场景
-
-错误信息
-
-Invalid event type.
-
-错误描述
-
-无效的实况窗订阅场景。
-
-可能原因
-
-event传值不正确。
-
-处理步骤
-
-请检查event参数。
-
-#### 1003500014 实况窗提醒时间距当前时间过长
-
-错误信息
-
-Time exceeds valid period.
-
-错误描述
-
-实况窗提醒时间距当前时间过长。
-
-可能原因
-
-当前时间距离alertTime超过30天。
-
-处理步骤
-
-请检查alertTime、startTime参数。
-
-#### 1003500015 实况窗订阅失败
-
-错误信息
-
-Subscribe failed.
-
-错误描述
-
-实况窗订阅失败。
-
-可能原因
-
-云侧内部异常。
-
-处理步骤
-
-进行重试操作或通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。
-
-#### 1003500016 请求频次超限
-
-错误信息
-
-Request subscribe liveView exceed.
-
-错误描述
-
-请求频次超限。
-
-可能原因
-
-短时间内订阅次数过多。
-
-处理步骤
-
-请调整订阅频次。
 
 #### 1003500017 超过条件实况窗次数限制
 

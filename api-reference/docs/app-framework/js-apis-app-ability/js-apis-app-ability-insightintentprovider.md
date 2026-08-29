@@ -2,8 +2,8 @@
 title: "@ohos.app.ability.insightIntentProvider (意图提供方管理能力)"
 upstream_id: "harmonyos-references/js-apis-app-ability-insightintentprovider"
 catalog: "harmonyos-references"
-content_hash: "b7c468a26d7b"
-synced_at: "2026-07-28T16:40:33.305802"
+content_hash: "cee5c8eecfcf"
+synced_at: "2026-08-29T18:11:57.934475"
 ---
 
 # @ohos.app.ability.insightIntentProvider (意图提供方管理能力)
@@ -82,7 +82,7 @@ export default class InsightIntentExecutorUI extends InsightIntentExecutor {
     } catch (error) {
       let code = (error as BusinessError).code;
       let msg = (error as BusinessError).message;
-      console.error(`testTag setReturnModeForUIExtensionAbility fail, error code: ${code}, error msg: ${msg}.`);
+      console.error(`testTag setReturnModeForUIAbilityForeground fail, error code: ${code}, error msg: ${msg}.`);
     }
     // 将意图实例的id通过localStorage传入目标页面中
     let localStorageData: Record<string, number> = {
@@ -128,15 +128,15 @@ struct Index {
             };
             insightIntentProvider.sendExecuteResult(this.insightId, result)
               .then(() => {
-                console.info('testTag setExecuteResult success');
+                console.info('testTag sendExecuteResult success');
               })
               .catch((error: BusinessError) => {
-                console.error(`testTag setExecuteResult fail1, error code: ${error.code}, error msg: ${error.message}.`);
+                console.error(`testTag sendExecuteResult fail 1, error code: ${error.code}, error msg: ${error.message}.`);
               });
           } catch (e) {
             let code = (e as BusinessError).code;
             let msg = (e as BusinessError).message;
-            console.error(`testTag setExecuteResult fail2, error code: ${code}, error msg: ${msg}`);
+            console.error(`testTag sendExecuteResult fail 2, error code: ${code}, error msg: ${msg}`);
           }
         })
     }
@@ -273,7 +273,7 @@ struct Index {
 
   build() {
     Column() {
-      // 通过sendExecuteResult接口主动返回意图执行结果
+      // 通过sendIntentResult接口主动返回意图执行结果
       Button('insightIntentProvider sendIntentResult')
         .onClick(() => {
           try {

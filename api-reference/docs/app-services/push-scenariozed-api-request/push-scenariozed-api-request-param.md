@@ -2,8 +2,8 @@
 title: "请求体参数说明"
 upstream_id: "harmonyos-references/push-scenariozed-api-request-param"
 catalog: "harmonyos-references"
-content_hash: "17783f710a61"
-synced_at: "2026-08-03T17:12:39.723027"
+content_hash: "08da0f9aab03"
+synced_at: "2026-08-29T18:18:33.800515"
 ---
 
 # 请求体参数说明
@@ -171,8 +171,8 @@ synced_at: "2026-08-03T17:12:39.723027"
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
 | activityId | 是 | Integer | 实况窗唯一标识，取值范围为[-2147483648, 2147483647]，由开发者自行生成。对应Live View Kit中的[id](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-liveviewmanager#liveview)字段。 **说明：** 若发送的activityId对应的实况窗不存在（更新或结束实况窗的场景中），将限制使用该activityId发送实况窗消息24小时。 |
-| operation | 是 | Integer | 实况窗消息操作类型： 0：表示创建实况窗消息，仅允许event值为FLIGHT、TAXI、TRAIN、EXPRESS、CHECK_IN，详情见[创建实况窗约束](#创建实况窗约束)。 1：表示更新实况窗消息（确保activityId对应的实况窗存在） 2：表示结束实况窗消息（确保activityId对应的实况窗存在） 4：表示增加延迟触发创建实况窗消息（仅每个实况活动1个围栏） 6：表示增加延迟触发结束实况窗消息（仅每个实况活动1个围栏） 更新和结束实况窗时，对于非必选字段，若无特殊说明和默认值，则不携带时默认继承上一次的状态。 |
-| event | 是 | String | 业务场景取值，取值必须为[实况窗支持对接的场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-introduction#实况窗支持对接的场景)中的内容。 使用对应场景需要申请权益，详情请参见[开通实况窗权益](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-formal-authority)，完成权益的申请。 **说明：** 当创建实况窗消息（operation取值为0）时，event取值仅允许为FLIGHT、TAXI、TRAIN、EXPRESS、CHECK_IN。 |
+| operation | 是 | Integer | 实况窗消息操作类型： 0：表示创建实况窗消息（请参考[创建实况窗约束](#创建实况窗约束)进行创建） 1：表示更新实况窗消息（确保activityId对应的实况窗存在） 2：表示结束实况窗消息（确保activityId对应的实况窗存在） 4：表示增加延迟触发创建实况窗消息（仅每个实况活动1个围栏） 6：表示增加延迟触发结束实况窗消息（仅每个实况活动1个围栏） 更新和结束实况窗时，对于非必选字段，若无特殊说明和默认值，则不携带时默认继承上一次的状态。 |
+| event | 是 | String | 业务场景取值，取值必须为[实况窗支持对接的场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-introduction#实况窗支持对接的场景)中的内容。 使用对应场景需要申请权益，详情请参见[开通实况窗权益](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-formal-authority)，完成权益的申请。 **说明：** 当通过Push Kit创建实况窗消息（operation取值为0）时，event取值仅支持部分业务场景，详情请参考[通过Push Kit创建和更新实况窗的约束限制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-introduction#通过push-kit创建和更新实况窗的约束限制)。 |
 | status | 否 | String | 表示实况窗消息当前的业务阶段或状态。 当operation为0，或operation为1且更新的实况窗为通过REST API创建的实况窗时必填。 status的取值范围根据场景类型而定，详情见[Status取值范围](#status取值范围)。 消息体中占位符{{status}}的使用，参见[支持携带占位符的字段](#支持携带占位符的字段)，满足要求时将替换字段中的占位符为[目标值](#status取值范围)。 |
 | title | 否 | String | 可选，当系统不支持实况窗通知时，展示在通知栏的标题。（注意消息体大小限制，详情参见[使用约束](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-intro#使用约束)） |
 | content | 否 | String | 可选，当系统不支持实况窗通知时，展示在通知栏的内容。（注意消息体大小限制，详情参见[使用约束](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-intro#使用约束)） |
@@ -187,9 +187,9 @@ synced_at: "2026-08-03T17:12:39.723027"
 
 创建实况窗的消息示例请参见[创建实况窗消息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-example#创建实况窗消息)。
 
-1. 允许通过REST API创建实况窗的event：FLIGHT、TAXI、TRAIN、EXPRESS、CHECK_IN。
+1. 允许通过REST API创建实况窗的event取值范围见[通过Push Kit创建和更新实况窗的约束限制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-introduction#通过push-kit创建和更新实况窗的约束限制)。
 2. 12小时内不允许通过REST API创建同一个activityId的实况窗。
-3. 对于不同的event类型，创建实况窗时，对布局类型（activityData.notificationData.[type](#notificationdata)）和必填字段，有以下场景约束： event 创建时允许的布局类型 创建时必填字段 REST API创建的消息，更新时必填字段 FLIGHT 左右文本模板类型 [status](#liveviewpayload-实况窗消息) activityData.notificationData.[keywords](#notificationdata) [status](#liveviewpayload-实况窗消息) TAXI 进度可视化类型 强调文本模板类型 左右文本模板类型 赛事类型 [status](#liveviewpayload-实况窗消息) [status](#liveviewpayload-实况窗消息) TRAIN 左右文本模板类型 [status](#liveviewpayload-实况窗消息) activityData.notificationData.[keywords](#notificationdata) [status](#liveviewpayload-实况窗消息) EXPRESS 进度可视化类型 强调文本模板类型 左右文本模板类型 赛事类型 无 无 CHECK_IN 进度可视化类型 强调文本模板类型 左右文本模板类型 赛事类型 无 无
+3. 对于不同的event类型，创建实况窗时，对布局类型（activityData.notificationData.[type](#notificationdata)）和必填字段，有以下场景约束（表格中未提及的场景，在创建时支持所有布局类型，在创建或更新时无必填字段限制。）： event 创建时允许的布局类型 创建时必填字段 REST API创建的消息，更新时必填字段 FLIGHT 左右文本模板类型 [status](#liveviewpayload-实况窗消息) activityData.notificationData.[keywords](#notificationdata) [status](#liveviewpayload-实况窗消息) TAXI 进度可视化类型 强调文本模板类型 左右文本模板类型 赛事类型 [status](#liveviewpayload-实况窗消息) [status](#liveviewpayload-实况窗消息) TRAIN 左右文本模板类型 [status](#liveviewpayload-实况窗消息) activityData.notificationData.[keywords](#notificationdata) [status](#liveviewpayload-实况窗消息) SUBSCRIBE_TIMER 强调文本模板类型 左右文本模板类型 无 无
 4. 对于不同的布局类型（activityData.notificationData.[type](#notificationdata)），需要在[支持携带占位符的字段](#支持携带占位符的字段)中**填入至少一次[status](#liveviewpayload-实况窗消息)的占位符{{status}}** ；如果该event下[keywords](#notificationdata)字段也必填，则也需要在[支持携带占位符的字段](#支持携带占位符的字段)中**填入至少一次相应的占位符**，占位符具体请参见[keywords](#notificationdata)字段描述。
 5. 通过REST API创建的实况窗，在更新时必须同时满足status和keywords要求。通过Live View Kit（实况窗服务）创建的实况窗，在REST API更新时可以不填写status和keywords字段，若开发者选择填写则需满足status和keywords要求。
 
@@ -309,7 +309,7 @@ synced_at: "2026-08-03T17:12:39.723027"
 
 #### [h2]Extend
 
-![](./img/zh-cn_image_0000002689561045.png)
+![](./img/zh-cn_image_0000002701640964.png)
 
 - 1 实况卡片辅助区类型，对应type字段： 当辅助区类型为1时，辅助区显示普通文本，使用API字段text传入文本内容。
 - 当辅助区类型为2时，辅助区显示胶囊文本，使用API字段text传入文本内容。
@@ -327,7 +327,7 @@ synced_at: "2026-08-03T17:12:39.723027"
 
 #### [h2]Game
 
-![](./img/zh-cn_image_0000002689680865.png)
+![](./img/zh-cn_image_0000002731360183.png)
 
 - 1 左侧队伍名称，对应host中的[name](#team)字段。
 - 2 左侧队伍图标，对应host中的[icon](#team)和[iconUrl](#team)字段。
@@ -374,10 +374,10 @@ synced_at: "2026-08-03T17:12:39.723027"
 
 | 图示 | 说明 |
 | --- | --- |
-| ![](./img/zh-cn_image_0000002659441534.png) | 定义实况胶囊基本属性的基类： · 1 胶囊布局类型，对应type字段。 · 2 实况胶囊的图标，对应icon和iconUrl字段。 · 3 实况胶囊的尾部图标，对应tailIcon和tailIconUrl字段。 · 4 实况胶囊副文本是否展示，对应isContentDisplayed字段。 · 5 实况胶囊尾部图标是否展示，对应isTailIconDisplayed字段。 |
-| ![](./img/zh-cn_image_0000002659601462.png) | type为1时展示该内容： · 1 胶囊状态主文本，对应title字段。 · 2 胶囊内容，对应content字段。 |
-| ![](./img/zh-cn_image_0000002689561047.png) | type为2时展示该内容： · 1 胶囊内容，对应content字段。 · 2 胶囊计时器初始值，对应capsuleTimer中的[time](#capsuletimer)字段。 · 3 是否倒计时显示计时器，对应capsuleTimer中的[countDown](#capsuletimer)字段。 · 4 胶囊计时器是否暂停，对应capsuleTimer中的[pause](#capsuletimer)字段。 |
-| ![](./img/zh-cn_image_0000002689680867.png) | type为3时展示该内容： · 1 进度最大值，对应progress中的[max](#progress)字段。 · 2 进度当前值，对应progress中的[progress](#progress)字段。 · 3 进度显示类型，对应progress中的[indeterminate](#progress)字段。 · 4 胶囊内容，对应content字段。 |
+| ![](./img/zh-cn_image_0000002701800880.png) | 定义实况胶囊基本属性的基类： · 1 胶囊布局类型，对应type字段。 · 2 实况胶囊的图标，对应icon和iconUrl字段。 · 3 实况胶囊的尾部图标，对应tailIcon和tailIconUrl字段。 · 4 实况胶囊副文本是否展示，对应isContentDisplayed字段。 · 5 实况胶囊尾部图标是否展示，对应isTailIconDisplayed字段。 |
+| ![](./img/zh-cn_image_0000002731520163.png) | type为1时展示该内容： · 1 胶囊状态主文本，对应title字段。 · 2 胶囊内容，对应content字段。 |
+| ![](./img/zh-cn_image_0000002701640966.png) | type为2时展示该内容： · 1 胶囊内容，对应content字段。 · 2 胶囊计时器初始值，对应capsuleTimer中的[time](#capsuletimer)字段。 · 3 是否倒计时显示计时器，对应capsuleTimer中的[countDown](#capsuletimer)字段。 · 4 胶囊计时器是否暂停，对应capsuleTimer中的[pause](#capsuletimer)字段。 |
+| ![](./img/zh-cn_image_0000002731360185.png) | type为3时展示该内容： · 1 进度最大值，对应progress中的[max](#progress)字段。 · 2 进度当前值，对应progress中的[progress](#progress)字段。 · 3 进度显示类型，对应progress中的[indeterminate](#progress)字段。 · 4 胶囊内容，对应content字段。 |
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
@@ -406,7 +406,7 @@ synced_at: "2026-08-03T17:12:39.723027"
 
 #### [h2]SingleTextBlock
 
-![](./img/zh-cn_image_0000002659441536.png)
+![](./img/zh-cn_image_0000002701800882.png)
 
 - 1 辅助标记文本，对应firstLine字段。
 - 2 强调文本内容，对应secondLine字段。
@@ -421,7 +421,7 @@ synced_at: "2026-08-03T17:12:39.723027"
 
 #### [h2]FirstTextBlock
 
-![](./img/zh-cn_image_0000002659601464.png)
+![](./img/zh-cn_image_0000002731520165.png)
 
 - 1 左侧首行文本，对应firstLine字段。
 - 2 左侧次行文本内容，对应secondLine字段。
@@ -436,7 +436,7 @@ synced_at: "2026-08-03T17:12:39.723027"
 
 #### [h2]LastTextBlock
 
-![](./img/zh-cn_image_0000002689561049.png)
+![](./img/zh-cn_image_0000002701640968.png)
 
 - 3 右侧首行文本，对应firstLine字段。
 - 4 右侧次行文本内容，对应secondLine字段。
@@ -456,7 +456,7 @@ synced_at: "2026-08-03T17:12:39.723027"
 
 #### [h2]RichProgress
 
-![](./img/zh-cn_image_0000002689680869.png)
+![](./img/zh-cn_image_0000002731360187.png)
 
 - 1 进度百分比，对应progress字段。
 - 2 进度指示器左侧的进度点及节点图标的颜色，对应color字段。
@@ -484,7 +484,7 @@ synced_at: "2026-08-03T17:12:39.723027"
 
 #### [h2]ExternalData
 
-![](./img/zh-cn_image_0000002659441538.png)
+![](./img/zh-cn_image_0000002701800884.png)
 
 - 1 自定义的外屏通知标题，对应title字段。
 - 2 自定义的外屏通知内容，对应body字段。

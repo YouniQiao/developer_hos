@@ -2,15 +2,15 @@
 title: "oh_window_event_filter.h"
 upstream_id: "harmonyos-references/capi-oh-window-event-filter-h"
 catalog: "harmonyos-references"
-content_hash: "e7d0f842ac87"
-synced_at: "2026-07-09T00:58:37.591676"
+content_hash: "f15907fd2cf0"
+synced_at: "2026-08-29T18:15:42.343027"
 ---
 
 # oh_window_event_filter.h
 
 #### 概述
 
-定义窗口管理按键事件过滤的接口，当多模输入的事件经过窗口时，可以通过过滤接口拦截事件不让事件往下分发。
+定义窗口管理事件过滤的接口。当多模输入的事件经过窗口时，可通过过滤接口拦截事件，阻止事件向下分发。
 
 引用文件： <window_manager/oh_window_event_filter.h>
 
@@ -37,6 +37,9 @@ synced_at: "2026-07-09T00:58:37.591676"
 | [typedef bool (*OH_NativeWindowManager_TouchEventFilter)(Input_TouchEvent* touchEvent)](#oh_nativewindowmanager_toucheventfilter) | OH_NativeWindowManager_TouchEventFilter | 定义多模触摸事件的过滤函数。 |
 | [WindowManager_ErrorCode OH_NativeWindowManager_RegisterTouchEventFilter(int32_t windowId,OH_NativeWindowManager_TouchEventFilter touchEventFilter)](#oh_nativewindowmanager_registertoucheventfilter) | - | 注册触摸事件的过滤函数。 |
 | [WindowManager_ErrorCode OH_NativeWindowManager_UnregisterTouchEventFilter(int32_t windowId)](#oh_nativewindowmanager_unregistertoucheventfilter) | - | 取消注册窗口的触摸事件过滤函数。 |
+| [WindowManager_ErrorCode OH_NativeWindowManager_GetKeyEventFilter(int32_t windowId, OH_NativeWindowManager_KeyEventFilter* outKeyEventFilter)](#oh_nativewindowmanager_getkeyeventfilter) | - | 获取指定窗口注册的多模按键事件过滤函数。 |
+| [WindowManager_ErrorCode OH_NativeWindowManager_GetMouseEventFilter(int32_t windowId, OH_NativeWindowManager_MouseEventFilter* outMouseEventFilter)](#oh_nativewindowmanager_getmouseeventfilter) | - | 获取指定窗口注册的多模鼠标事件过滤函数。 |
+| [WindowManager_ErrorCode OH_NativeWindowManager_GetTouchEventFilter(int32_t windowId, OH_NativeWindowManager_TouchEventFilter* outTouchEventFilter)](#oh_nativewindowmanager_gettoucheventfilter) | - | 获取指定窗口注册的多模触摸事件过滤函数。 |
 
 #### 函数说明
 
@@ -249,3 +252,75 @@ WindowManager_ErrorCode OH_NativeWindowManager_UnregisterTouchEventFilter(int32_
 | 类型 | 说明 |
 | --- | --- |
 | [WindowManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-window-comm-h#windowmanager_errorcode) | 函数返回的执行结果。 返回OK，表示接口调用成功。 返回INVAILD_WINDOW_ID，表示参数windowId无效。 返回SERVICE_ERROR，表示窗口管理服务异常。 |
+
+#### [h2]OH_NativeWindowManager_GetKeyEventFilter()
+
+```
+WindowManager_ErrorCode OH_NativeWindowManager_GetKeyEventFilter(int32_t windowId, OH_NativeWindowManager_KeyEventFilter* outKeyEventFilter)
+```
+ 描述
+
+获取指定窗口注册的多模按键事件过滤函数。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| int32_t windowId | 窗口ID。 |
+| [OH_NativeWindowManager_KeyEventFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-window-event-filter-h#oh_nativewindowmanager_keyeventfilter)* outKeyEventFilter | 返回已注册的多模按键事件过滤函数指针。如果窗口没有注册过滤器，*outKeyEventFilter将返回NULL。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| [WindowManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-window-comm-h#windowmanager_errorcode) | 函数返回的执行结果。 返回OK，表示接口调用成功。 返回INVALID_WINDOW_ID，表示入参windowId无效。 返回WINDOW_MANAGER_ERRORCODE_INVALID_PARAM，表示入参outKeyEventFilter为NULL。 |
+
+#### [h2]OH_NativeWindowManager_GetMouseEventFilter()
+
+```
+WindowManager_ErrorCode OH_NativeWindowManager_GetMouseEventFilter(int32_t windowId, OH_NativeWindowManager_MouseEventFilter* outMouseEventFilter)
+```
+ 描述
+
+获取指定窗口注册的多模鼠标事件过滤函数。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| int32_t windowId | 窗口ID。 |
+| [OH_NativeWindowManager_MouseEventFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-window-event-filter-h#oh_nativewindowmanager_mouseeventfilter)* outMouseEventFilter | 返回已注册的多模鼠标事件过滤函数指针。如果窗口没有注册过滤器，*outMouseEventFilter将返回NULL。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| [WindowManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-window-comm-h#windowmanager_errorcode) | 函数返回的执行结果。 返回OK，表示接口调用成功。 返回INVALID_WINDOW_ID，表示入参windowId无效。 返回WINDOW_MANAGER_ERRORCODE_INVALID_PARAM，表示入参outMouseEventFilter为NULL。 |
+
+#### [h2]OH_NativeWindowManager_GetTouchEventFilter()
+
+```
+WindowManager_ErrorCode OH_NativeWindowManager_GetTouchEventFilter(int32_t windowId, OH_NativeWindowManager_TouchEventFilter* outTouchEventFilter)
+```
+ 描述
+
+获取指定窗口注册的多模触摸事件过滤函数。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数项 | 描述 |
+| --- | --- |
+| int32_t windowId | 窗口ID。 |
+| [OH_NativeWindowManager_TouchEventFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-window-event-filter-h#oh_nativewindowmanager_toucheventfilter)* outTouchEventFilter | 返回已注册的多模触摸事件过滤函数指针。如果窗口没有注册过滤器，*outTouchEventFilter将返回NULL。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| [WindowManager_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-window-comm-h#windowmanager_errorcode) | 函数返回的执行结果。 返回OK，表示接口调用成功。 返回INVALID_WINDOW_ID，表示入参windowId无效。 返回WINDOW_MANAGER_ERRORCODE_INVALID_PARAM，表示入参outTouchEventFilter为NULL。 |

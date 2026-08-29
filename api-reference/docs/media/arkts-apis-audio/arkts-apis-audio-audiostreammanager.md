@@ -2,20 +2,20 @@
 title: "Interface (AudioStreamManager)"
 upstream_id: "harmonyos-references/arkts-apis-audio-audiostreammanager"
 catalog: "harmonyos-references"
-content_hash: "09af5cbb9cf3"
-synced_at: "2026-08-14T15:55:05.103414"
+content_hash: "921ae87e034e"
+synced_at: "2026-08-29T18:17:19.101149"
 ---
 
 # Interface (AudioStreamManager)
 
-音频流管理。
+AudioStreamManager是音频系统中的音频流管理模块。本模块提供音频流生命周期管理能力，包括音频渲染器和采集器的信息查询、状态监听、音效模式管理等。当开发者需要实时掌握音频流状态变化以优化音频应用用户体验时，使用本模块接口完成相关操作。
 
 在使用AudioStreamManager的接口之前，需先通过[getStreamManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiomanager#getstreammanager9)获取AudioStreamManager实例。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 本模块首批接口从API版本7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
-- 本Interface首批接口从API版本9开始支持。
+- 本模块首批接口从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
+- 本Interface首批接口从API version 9开始支持。
 
 #### 导入模块
 
@@ -37,7 +37,7 @@ getCurrentAudioRendererInfoArray(callback: AsyncCallback<AudioRendererChangeInfo
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback | 是 | 回调函数。当获取当前音频渲染器的信息成功，err为undefined，data为获取到的当前音频渲染器的信息；否则为错误对象。 |
+| callback | AsyncCallback | 是 | 回调函数。当获取当前音频渲染器的信息成功，err为undefined，data为当前音频渲染器的信息；否则为错误对象。 |
 
 示例：
 
@@ -46,10 +46,10 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 audioStreamManager.getCurrentAudioRendererInfoArray((err: BusinessError, audioRendererChangeInfoArray: audio.AudioRendererChangeInfoArray) => {
   if (err) {
-    console.error(`Failed to get current audio renderer info array. Code: ${err.code}, message: ${err.message}`);
-  } else {
-    console.info(`Succeeded in getting current audio renderer info array, AudioRendererChangeInfoArray: ${JSON.stringify(audioRendererChangeInfoArray)}.`);
+    console.error(`Failed to obtain current audio renderer info array. Code: ${err.code}, message: ${err.message}`);
+    return;
   }
+  console.info(`Succeeded in obtaining current audio renderer info array, audioRendererChangeInfoArray: ${JSON.stringify(audioRendererChangeInfoArray)}.`);
 });
 ```
 
@@ -75,9 +75,9 @@ getCurrentAudioRendererInfoArray(): Promise<AudioRendererChangeInfoArray>
 import { BusinessError } from '@kit.BasicServicesKit';
 
 audioStreamManager.getCurrentAudioRendererInfoArray().then((audioRendererChangeInfoArray: audio.AudioRendererChangeInfoArray) => {
-  console.info(`Succeeded in getting current audio renderer info array, AudioRendererChangeInfoArray: ${JSON.stringify(audioRendererChangeInfoArray)}.`);
+  console.info(`Succeeded in obtaining current audio renderer info array, audioRendererChangeInfoArray: ${JSON.stringify(audioRendererChangeInfoArray)}.`);
 }).catch((err: BusinessError) => {
-  console.error(`Failed to get current audio renderer info array. Code: ${err.code}, message: ${err.message}`);
+  console.error(`Failed to obtain current audio renderer info array. Code: ${err.code}, message: ${err.message}`);
 });
 ```
 
@@ -104,10 +104,10 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
   let audioRendererChangeInfoArray: audio.AudioRendererChangeInfoArray = audioStreamManager.getCurrentAudioRendererInfoArraySync();
-  console.info(`Succeeded in getting current audio renderer info array, AudioRendererChangeInfoArray: ${JSON.stringify(audioRendererChangeInfoArray)}.`);
+  console.info(`Succeeded in obtaining current audio renderer info array, audioRendererChangeInfoArray: ${JSON.stringify(audioRendererChangeInfoArray)}.`);
 } catch (err) {
   let error = err as BusinessError;
-  console.error(`Failed to get current audio renderer info array. Code: ${error.code}, message: ${error.message}`);
+  console.error(`Failed to obtain current audio renderer info array. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -125,7 +125,7 @@ getCurrentAudioCapturerInfoArray(callback: AsyncCallback<AudioCapturerChangeInfo
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback | 是 | 回调函数。当获取当前音频采集器的信息成功，err为undefined，data为获取到的当前音频采集器的信息；否则为错误对象。 |
+| callback | AsyncCallback | 是 | 回调函数。当获取当前音频采集器的信息成功，err为undefined，data为当前音频采集器的信息；否则为错误对象。 |
 
 示例：
 
@@ -134,10 +134,10 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 audioStreamManager.getCurrentAudioCapturerInfoArray((err: BusinessError, audioCapturerChangeInfoArray: audio.AudioCapturerChangeInfoArray) => {
   if (err) {
-    console.error(`Failed to get current audio capturer info array. Code: ${err.code}, message: ${err.message}`);
-  } else {
-    console.info(`Succeeded in getting current audio capturer info array, AudioCapturerChangeInfoArray: ${JSON.stringify(audioCapturerChangeInfoArray)}.`);
+    console.error(`Failed to obtain current audio capturer info array. Code: ${err.code}, message: ${err.message}`);
+    return;
   }
+  console.info(`Succeeded in obtaining current audio capturer info array, audioCapturerChangeInfoArray: ${JSON.stringify(audioCapturerChangeInfoArray)}.`);
 });
 ```
 
@@ -163,9 +163,9 @@ getCurrentAudioCapturerInfoArray(): Promise<AudioCapturerChangeInfoArray>
 import { BusinessError } from '@kit.BasicServicesKit';
 
 audioStreamManager.getCurrentAudioCapturerInfoArray().then((audioCapturerChangeInfoArray: audio.AudioCapturerChangeInfoArray) => {
-  console.info(`Succeeded in getting current audio capturer info array, AudioCapturerChangeInfoArray: ${JSON.stringify(audioCapturerChangeInfoArray)}.`);
+  console.info(`Succeeded in obtaining current audio capturer info array, audioCapturerChangeInfoArray: ${JSON.stringify(audioCapturerChangeInfoArray)}.`);
 }).catch((err: BusinessError) => {
-  console.error(`Failed to get current audio capturer info array. Code: ${err.code}, message: ${err.message}`);
+  console.error(`Failed to obtain current audio capturer info array. Code: ${err.code}, message: ${err.message}`);
 });
 ```
 
@@ -192,10 +192,10 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
   let audioCapturerChangeInfoArray = audioStreamManager.getCurrentAudioCapturerInfoArraySync();
-  console.info(`Succeeded in getting current audio capturer info array, AudioCapturerChangeInfoArray: ${JSON.stringify(audioCapturerChangeInfoArray)}.`);
+  console.info(`Succeeded in obtaining current audio capturer info array, audioCapturerChangeInfoArray: ${JSON.stringify(audioCapturerChangeInfoArray)}.`);
 } catch (err) {
   let error = err as BusinessError;
-  console.error(`Failed to get current audio capturer info array. Code: ${error.code}, message: ${error.message}`);
+  console.error(`Failed to obtain current audio capturer info array. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -228,8 +228,8 @@ on(type: 'audioRendererChange', callback: Callback<AudioRendererChangeInfoArray>
 示例：
 
 ```
-audioStreamManager.on('audioRendererChange',  (audioRendererChangeInfoArray: audio.AudioRendererChangeInfoArray) => {
-  console.info(`Succeeded in using on function, AudioRendererChangeInfoArray: ${JSON.stringify(audioRendererChangeInfoArray)}.`);
+audioStreamManager.on('audioRendererChange', (audioRendererChangeInfoArray: audio.AudioRendererChangeInfoArray) => {
+  console.info(`Audio renderer changed, audioRendererChangeInfoArray: ${JSON.stringify(audioRendererChangeInfoArray)}.`);
 });
 ```
 
@@ -237,7 +237,7 @@ audioStreamManager.on('audioRendererChange',  (audioRendererChangeInfoArray: aud
 
 off(type: 'audioRendererChange', callback?: Callback<AudioRendererChangeInfoArray>): void
 
-取消监听音频渲染器更改事件。使用callback异步回调。
+取消监听音频渲染器更改事件。
 
 ![](./img/note_3.0-zh-cn.png) 该接口返回的音频渲染器信息，可能包含系统内部音频播放流，如蜂窝通话、超声波等。
 
@@ -247,8 +247,8 @@ off(type: 'audioRendererChange', callback?: Callback<AudioRendererChangeInfoArra
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 事件回调类型，支持的事件为'audioRendererChange'，当取消监听音频渲染器更改事件时，触发该事件。 |
-| callback18+ | Callback | 否 | 回调函数，返回当前音频渲染器信息。 |
+| type | string | 是 | 事件回调类型，支持的事件为'audioRendererChange'。 |
+| callback18+ | Callback | 否 | 回调函数。传入回调函数时，仅取消该回调对应的监听事件，需与[on('audioRendererChange')](#onaudiorendererchange9)绑定同一回调函数；不传参数时，取消此事件类型下所有已订阅的监听事件。 |
 
 错误码：
 
@@ -264,7 +264,7 @@ off(type: 'audioRendererChange', callback?: Callback<AudioRendererChangeInfoArra
 // 同一监听事件中，on方法和off方法传入callback参数一致，off方法取消对应on方法订阅的监听。
 // 当订阅了多个该事件的监听时，可通过 audioStreamManager.off('audioRendererChange'); 取消该事件的所有监听。
 let audioRendererChangeCallback = (audioRendererChangeInfoArray: audio.AudioRendererChangeInfoArray) => {
-  console.info(`Succeeded in using on or off function, AudioRendererChangeInfoArray: ${JSON.stringify(audioRendererChangeInfoArray)}.`);
+  console.info(`Audio renderer changed, audioRendererChangeInfoArray: ${JSON.stringify(audioRendererChangeInfoArray)}.`);
 };
 
 audioStreamManager.on('audioRendererChange', audioRendererChangeCallback);
@@ -301,8 +301,8 @@ on(type: 'audioCapturerChange', callback: Callback<AudioCapturerChangeInfoArray>
 示例：
 
 ```
-audioStreamManager.on('audioCapturerChange', (audioCapturerChangeInfoArray: audio.AudioCapturerChangeInfoArray) =>  {
-  console.info(`Succeeded in using on function, AudioCapturerChangeInfoArray: ${JSON.stringify(audioCapturerChangeInfoArray)}.`);
+audioStreamManager.on('audioCapturerChange', (audioCapturerChangeInfoArray: audio.AudioCapturerChangeInfoArray) => {
+  console.info(`Audio capturer changed, audioCapturerChangeInfoArray: ${JSON.stringify(audioCapturerChangeInfoArray)}.`);
 });
 ```
 
@@ -310,7 +310,7 @@ audioStreamManager.on('audioCapturerChange', (audioCapturerChangeInfoArray: audi
 
 off(type: 'audioCapturerChange', callback?: Callback<AudioCapturerChangeInfoArray>): void
 
-取消监听音频采集器更改事件。使用callback异步回调。
+取消监听音频采集器更改事件。
 
 ![](./img/note_3.0-zh-cn.png) 该接口返回的音频采集器信息，可能包含系统内部音频录制流，如语音唤醒、蜂窝通话等。
 
@@ -320,8 +320,8 @@ off(type: 'audioCapturerChange', callback?: Callback<AudioCapturerChangeInfoArra
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 事件回调类型，支持的事件为'audioCapturerChange'，当取消监听音频采集器更改事件时，触发该事件。 |
-| callback18+ | Callback | 否 | 回调函数，返回当前音频采集器信息。 |
+| type | string | 是 | 事件回调类型，支持的事件为'audioCapturerChange'。 |
+| callback18+ | Callback | 否 | 回调函数。传入回调函数时，仅取消该回调对应的监听事件，需与[on('audioCapturerChange')](#onaudiocapturerchange9)绑定同一回调函数；不传参数时，取消此事件类型下所有已订阅的监听事件。 |
 
 错误码：
 
@@ -336,8 +336,8 @@ off(type: 'audioCapturerChange', callback?: Callback<AudioCapturerChangeInfoArra
 ```
 // 同一监听事件中，on方法和off方法传入callback参数一致，off方法取消对应on方法订阅的监听。
 // 当订阅了多个该事件的监听时，可通过 audioStreamManager.off('audioCapturerChange'); 取消该事件的所有监听。
-let audioCapturerChangeCallback = (audioCapturerChangeInfoArray: audio.AudioCapturerChangeInfoArray) =>  {
-  console.info(`Succeeded in using on or off function, AudioCapturerChangeInfoArray: ${JSON.stringify(audioCapturerChangeInfoArray)}.`);
+let audioCapturerChangeCallback = (audioCapturerChangeInfoArray: audio.AudioCapturerChangeInfoArray) => {
+  console.info(`Audio capturer changed, audioCapturerChangeInfoArray: ${JSON.stringify(audioCapturerChangeInfoArray)}.`);
 };
 
 audioStreamManager.on('audioCapturerChange', audioCapturerChangeCallback);
@@ -351,7 +351,7 @@ isActive(volumeType: AudioVolumeType, callback: AsyncCallback<boolean>): void
 
 获取指定音频流活跃状态。使用callback异步回调。
 
-![](./img/note_3.0-zh-cn.png) 从API版本9开始支持，从API版本20开始废弃，建议使用[isStreamActive](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiostreammanager#isstreamactive20)替代。注意替代接口与原接口入参存在差异，例如[StreamUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage)中提供了STREAM_USAGE_MUSIC、STREAM_USAGE_MOVIE、STREAM_USAGE_AUDIOBOOK、STREAM_USAGE_GAME等更细分的类型，而[AudioVolumeType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#audiovolumetype)中这些类型统一归入MEDIA类型。具体映射关系请参考[音量控制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-right-streamusage-for-playback#音量控制)中常见的播放流类型与音量类型的对应关系，迁移时根据实际业务场景选择对应的StreamUsage值。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 20开始废弃，建议使用[isStreamActive](#isstreamactive20)替代。注意替代接口与原接口入参存在差异，例如[StreamUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage)中提供了STREAM_USAGE_MUSIC、STREAM_USAGE_MOVIE、STREAM_USAGE_AUDIOBOOK、STREAM_USAGE_GAME等更细分的类型，而[AudioVolumeType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#audiovolumetype)中这些类型统一归入MEDIA类型。具体映射关系请参考[音量控制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-right-streamusage-for-playback#音量控制)中常见的播放流类型与音量类型的对应关系，迁移时根据实际业务场景选择对应的StreamUsage值。
 
 系统能力： SystemCapability.Multimedia.Audio.Renderer
 
@@ -368,11 +368,11 @@ isActive(volumeType: AudioVolumeType, callback: AsyncCallback<boolean>): void
 import { BusinessError } from '@kit.BasicServicesKit';
 
 audioStreamManager.isActive(audio.AudioVolumeType.MEDIA, (err: BusinessError, value: boolean) => {
-if (err) {
-  console.error(`Failed to obtain the active status of the stream. ${err}`);
-  return;
-}
-  console.info(`Callback invoked to indicate that the active status of the stream is obtained ${value}.`);
+  if (err) {
+    console.error(`Failed to check whether the stream is active. Code: ${err.code}, message: ${err.message}`);
+    return;
+  }
+  console.info(`Succeeded in checking whether the stream is active, isActive: ${value}.`);
 });
 ```
 
@@ -382,7 +382,7 @@ isActive(volumeType: AudioVolumeType): Promise<boolean>
 
 获取指定音频流是否为活跃状态。使用Promise异步回调。
 
-![](./img/note_3.0-zh-cn.png) 从API版本9开始支持，从API版本20开始废弃，建议使用[isStreamActive](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiostreammanager#isstreamactive20)替代。注意替代接口与原接口入参存在差异，例如[StreamUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage)中提供了STREAM_USAGE_MUSIC、STREAM_USAGE_MOVIE、STREAM_USAGE_AUDIOBOOK、STREAM_USAGE_GAME等更细分的类型，而[AudioVolumeType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#audiovolumetype)中这些类型统一归入MEDIA类型。具体映射关系请参考[音量控制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-right-streamusage-for-playback#音量控制)中常见的播放流类型与音量类型的对应关系，迁移时根据实际业务场景选择对应的StreamUsage值。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 20开始废弃，建议使用[isStreamActive](#isstreamactive20)替代。注意替代接口与原接口入参存在差异，例如[StreamUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage)中提供了STREAM_USAGE_MUSIC、STREAM_USAGE_MOVIE、STREAM_USAGE_AUDIOBOOK、STREAM_USAGE_GAME等更细分的类型，而[AudioVolumeType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#audiovolumetype)中这些类型统一归入MEDIA类型。具体映射关系请参考[音量控制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-right-streamusage-for-playback#音量控制)中常见的播放流类型与音量类型的对应关系，迁移时根据实际业务场景选择对应的StreamUsage值。
 
 系统能力： SystemCapability.Multimedia.Audio.Renderer
 
@@ -401,8 +401,12 @@ isActive(volumeType: AudioVolumeType): Promise<boolean>
 示例：
 
 ```
+import { BusinessError } from '@kit.BasicServicesKit';
+
 audioStreamManager.isActive(audio.AudioVolumeType.MEDIA).then((value: boolean) => {
-  console.info(`Promise returned to indicate that the active status of the stream is obtained ${value}.`);
+  console.info(`Succeeded in checking whether the stream is active, isActive: ${value}.`);
+}).catch((err: BusinessError) => {
+  console.error(`Failed to check whether the stream is active. Code: ${err.code}, message: ${err.message}`);
 });
 ```
 
@@ -444,10 +448,10 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
   let value: boolean = audioStreamManager.isActiveSync(audio.AudioVolumeType.MEDIA);
-  console.info(`Indicate that the active status of the stream is obtained ${value}.`);
+  console.info(`Succeeded in checking whether the stream is active, isActive: ${value}.`);
 } catch (err) {
   let error = err as BusinessError;
-  console.error(`Failed to obtain the active status of the stream ${error}.`);
+  console.error(`Failed to check whether the stream is active. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -463,7 +467,7 @@ isStreamActive(streamUsage: StreamUsage): boolean
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| streamUsage | [StreamUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage) | 是 | 音频流使用类型。 |
+| streamUsage | [StreamUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage) | 是 | 音频流类型。 |
 
 返回值：
 
@@ -486,10 +490,10 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
   let isStreamActive = audioStreamManager.isStreamActive(audio.StreamUsage.STREAM_USAGE_MUSIC);
-  console.info(`Succeeded in using isStreamActive function, IsStreamActive: ${isStreamActive}.`);
+  console.info(`Succeeded in checking whether the stream is active, isStreamActive: ${isStreamActive}.`);
 } catch (err) {
   let error = err as BusinessError;
-  console.error(`Failed to use isStreamActive function. code: ${error.code}, message: ${error.message}`);
+  console.error(`Failed to check whether the stream is active. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -505,8 +509,8 @@ getAudioEffectInfoArray(usage: StreamUsage, callback: AsyncCallback<AudioEffectI
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| usage | [StreamUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage) | 是 | 音频流使用类型。 |
-| callback | AsyncCallback | 是 | 回调函数。当获取当前音效模式的信息成功，err为undefined，data为获取到的当前音效模式的信息；否则为错误对象。 |
+| usage | [StreamUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage) | 是 | 音频流类型。 |
+| callback | AsyncCallback | 是 | 回调函数。当获取当前音效模式的信息成功，err为undefined，data为当前音效模式的信息；否则为错误对象。 |
 
 错误码：
 
@@ -524,10 +528,10 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 audioStreamManager.getAudioEffectInfoArray(audio.StreamUsage.STREAM_USAGE_MUSIC, (err: BusinessError, audioEffectInfoArray: audio.AudioEffectInfoArray) => {
   if (err) {
-    console.error(`Failed to get audio effect info array. Code: ${err.code}, message: ${err.message}`);
-  } else {
-    console.info(`Succeeded in getting effect info array, AudioEffectInfoArray: ${JSON.stringify(audioEffectInfoArray)}.`);
+    console.error(`Failed to obtain the audio effect info array. Code: ${err.code}, message: ${err.message}`);
+    return;
   }
+  console.info(`Succeeded in obtaining the audio effect info array, audioEffectInfoArray: ${JSON.stringify(audioEffectInfoArray)}.`);
 });
 ```
 
@@ -543,7 +547,7 @@ getAudioEffectInfoArray(usage: StreamUsage): Promise<AudioEffectInfoArray>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| usage | [StreamUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage) | 是 | 音频流使用类型。 |
+| usage | [StreamUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage) | 是 | 音频流类型。 |
 
 返回值：
 
@@ -566,9 +570,9 @@ getAudioEffectInfoArray(usage: StreamUsage): Promise<AudioEffectInfoArray>
 import { BusinessError } from '@kit.BasicServicesKit';
 
 audioStreamManager.getAudioEffectInfoArray(audio.StreamUsage.STREAM_USAGE_MUSIC).then((audioEffectInfoArray: audio.AudioEffectInfoArray) => {
-  console.info(`Succeeded in getting effect info array, AudioEffectInfoArray: ${JSON.stringify(audioEffectInfoArray)}.`);
+  console.info(`Succeeded in obtaining the audio effect info array, audioEffectInfoArray: ${JSON.stringify(audioEffectInfoArray)}.`);
 }).catch((err: BusinessError) => {
-  console.error(`Failed to get audio effect info array. Code: ${err.code}, message: ${err.message}`);
+  console.error(`Failed to obtain the audio effect info array. Code: ${err.code}, message: ${err.message}`);
 });
 ```
 
@@ -584,7 +588,7 @@ getAudioEffectInfoArraySync(usage: StreamUsage): AudioEffectInfoArray
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| usage | [StreamUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage) | 是 | 音频流使用类型。 |
+| usage | [StreamUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage) | 是 | 音频流类型。 |
 
 返回值：
 
@@ -608,10 +612,10 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
   let audioEffectInfoArray = audioStreamManager.getAudioEffectInfoArraySync(audio.StreamUsage.STREAM_USAGE_MUSIC);
-  console.info(`Succeeded in getting effect info array, AudioEffectInfoArray: ${JSON.stringify(audioEffectInfoArray)}.`);
+  console.info(`Succeeded in obtaining the audio effect info array, audioEffectInfoArray: ${JSON.stringify(audioEffectInfoArray)}.`);
 } catch (err) {
   let error = err as BusinessError;
-  console.error(`Failed to get audio effect info array. Code: ${error.code}, message: ${error.message}`);
+  console.error(`Failed to obtain the audio effect info array. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -650,10 +654,10 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
   let isAcousticEchoCancelerSupported = audioStreamManager.isAcousticEchoCancelerSupported(audio.SourceType.SOURCE_TYPE_LIVE);
-  console.info(`Succeeded in using isAcousticEchoCancelerSupported function, IsAcousticEchoCancelerSupported: ${isAcousticEchoCancelerSupported}.`);
+  console.info(`Succeeded in checking whether acoustic echo canceler is supported, isAcousticEchoCancelerSupported: ${isAcousticEchoCancelerSupported}.`);
 } catch (err) {
   let error = err as BusinessError;
-  console.error(`Failed to use isAcousticEchoCancelerSupported function. code: ${error.code}, message: ${error.message}`);
+  console.error(`Failed to check whether acoustic echo canceler is supported. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -692,10 +696,10 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
   let isAudioLoopbackSupported = audioStreamManager.isAudioLoopbackSupported(audio.AudioLoopbackMode.HARDWARE);
-  console.info(`Succeeded in using isAudioLoopbackSupported function, IsAudioLoopbackSupported: ${isAudioLoopbackSupported}.`);
+  console.info(`Succeeded in checking whether audio loopback is supported, isAudioLoopbackSupported: ${isAudioLoopbackSupported}.`);
 } catch (err) {
   let error = err as BusinessError;
-  console.error(`Failed to use isAudioLoopbackSupported function. code: ${error.code}, message: ${error.message}`);
+  console.error(`Failed to check whether audio loopback is supported. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -752,15 +756,15 @@ let audioCapturerOptions: audio.AudioCapturerOptions = {
 audio.createAudioCapturer(audioCapturerOptions, (err: BusinessError, audioCapturer: audio.AudioCapturer) => {
   if (err) {
     console.error(`Failed to create AudioCapturer. Code: ${err.code}, message: ${err.message}`);
-  } else {
-    console.info('Succeeded in creating AudioCapturer.');
-    try {
-      let isRecordingAvailable = audioStreamManager.isRecordingAvailable(audioCapturerInfo);
-      console.info(`Succeeded in using isRecordingAvailable function, IsRecordingAvailable: ${isRecordingAvailable}.`);
-    } catch (err) {
-      let error = err as BusinessError;
-      console.error(`Failed to use isRecordingAvailable function. code: ${error.code}, message: ${error.message}`);
-    }
+    return;
+  }
+  console.info('Succeeded in creating AudioCapturer.');
+  try {
+    let isRecordingAvailable = audioStreamManager.isRecordingAvailable(audioCapturerInfo);
+    console.info(`Succeeded in checking whether recording is available, isRecordingAvailable: ${isRecordingAvailable}.`);
+  } catch (err) {
+    let error = err as BusinessError;
+    console.error(`Failed to check whether recording is available. Code: ${error.code}, message: ${error.message}`);
   }
 });
 ```
@@ -800,10 +804,10 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
   let isSupport = audioStreamManager.isIntelligentNoiseReductionEnabledForCurrentDevice(audio.SourceType.SOURCE_TYPE_LIVE);
-  console.info(`SourceType: ${audio.SourceType.SOURCE_TYPE_LIVE} intelligent noise reduction enabled is: ${isSupport}`);
+  console.info(`Succeeded in checking whether intelligent noise reduction is enabled for the current device, isIntelligentNoiseReductionEnabled: ${isSupport}.`);
 } catch (err) {
   let error = err as BusinessError;
-  console.error(`isIntelligentNoiseReductionEnabledForCurrentDevice ERROR: ${error}`);
+  console.error(`Failed to check whether intelligent noise reduction is enabled for the current device. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -835,6 +839,8 @@ isFastPlaybackSupported(streamInfo: AudioStreamInfo, usage: StreamUsage): boolea
 示例：
 
 ```
+import { BusinessError } from '@kit.BasicServicesKit';
+
 let streamInfo: audio.AudioStreamInfo = {
   samplingRate: audio.AudioSamplingRate.SAMPLE_RATE_48000,
   channels: audio.AudioChannel.CHANNEL_2,
@@ -845,10 +851,10 @@ let streamInfo: audio.AudioStreamInfo = {
 
 try {
   let isSupported = audioStreamManager.isFastPlaybackSupported(streamInfo, audio.StreamUsage.STREAM_USAGE_MUSIC);
-  console.info(`isFastPlaybackSupported: ${isSupported}.`);
+  console.info(`Succeeded in checking whether fast playback is supported, isFastPlaybackSupported: ${isSupported}.`);
 } catch (err) {
   let error = err as BusinessError;
-  console.error(`Failed to use isFastPlaybackSupported function. code: ${error.code}, message: ${error.message}`);
+  console.error(`Failed to check whether fast playback is supported. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -880,6 +886,8 @@ isOffloadPlaybackSupported(streamInfo: AudioStreamInfo, usage: StreamUsage): boo
 示例：
 
 ```
+import { BusinessError } from '@kit.BasicServicesKit';
+
 let streamInfo: audio.AudioStreamInfo = {
   samplingRate: audio.AudioSamplingRate.SAMPLE_RATE_48000,
   channels: audio.AudioChannel.CHANNEL_2,
@@ -890,10 +898,10 @@ let streamInfo: audio.AudioStreamInfo = {
 
 try {
   let isSupported = audioStreamManager.isOffloadPlaybackSupported(streamInfo, audio.StreamUsage.STREAM_USAGE_MUSIC);
-  console.info(`isOffloadPlaybackSupported: ${isSupported}.`);
+  console.info(`Succeeded in checking whether offload playback is supported, isOffloadPlaybackSupported: ${isSupported}.`);
 } catch (err) {
   let error = err as BusinessError;
-  console.error(`Failed to use isOffloadPlaybackSupported function. code: ${error.code}, message: ${error.message}`);
+  console.error(`Failed to check whether offload playback is supported. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -925,6 +933,8 @@ isDirectPlaybackSupported(streamInfo: AudioStreamInfo, usage: StreamUsage): bool
 示例：
 
 ```
+import { BusinessError } from '@kit.BasicServicesKit';
+
 let streamInfo: audio.AudioStreamInfo = {
   samplingRate: audio.AudioSamplingRate.SAMPLE_RATE_48000,
   channels: audio.AudioChannel.CHANNEL_2,
@@ -935,10 +945,10 @@ let streamInfo: audio.AudioStreamInfo = {
 
 try {
   let isSupported = audioStreamManager.isDirectPlaybackSupported(streamInfo, audio.StreamUsage.STREAM_USAGE_MUSIC);
-  console.info(`isDirectPlaybackSupported: ${isSupported}.`);
+  console.info(`Succeeded in checking whether direct playback is supported, isDirectPlaybackSupported: ${isSupported}.`);
 } catch (err) {
   let error = err as BusinessError;
-  console.error(`Failed to use isDirectPlaybackSupported function. code: ${error.code}, message: ${error.message}`);
+  console.error(`Failed to check whether direct playback is supported. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -970,6 +980,8 @@ isFastRecordingSupported(streamInfo: AudioStreamInfo, source: SourceType): boole
 示例：
 
 ```
+import { BusinessError } from '@kit.BasicServicesKit';
+
 let streamInfo: audio.AudioStreamInfo = {
   samplingRate: audio.AudioSamplingRate.SAMPLE_RATE_48000,
   channels: audio.AudioChannel.CHANNEL_2,
@@ -980,10 +992,10 @@ let streamInfo: audio.AudioStreamInfo = {
 
 try {
   let isSupported = audioStreamManager.isFastRecordingSupported(streamInfo, audio.SourceType.SOURCE_TYPE_MIC);
-  console.info(`isFastRecordingSupported: ${isSupported}.`);
+  console.info(`Succeeded in checking whether fast recording is supported, isFastRecordingSupported: ${isSupported}.`);
 } catch (err) {
   let error = err as BusinessError;
-  console.error(`Failed to use isFastRecordingSupported function. code: ${error.code}, message: ${error.message}`);
+  console.error(`Failed to check whether fast recording is supported. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -1015,6 +1027,8 @@ isMultichannelPlaybackSupported(streamInfo: AudioStreamInfo, usage: StreamUsage)
 示例：
 
 ```
+import { BusinessError } from '@kit.BasicServicesKit';
+
 let streamInfo: audio.AudioStreamInfo = {
   samplingRate: audio.AudioSamplingRate.SAMPLE_RATE_48000,
   channels: audio.AudioChannel.CHANNEL_3,
@@ -1025,9 +1039,9 @@ let streamInfo: audio.AudioStreamInfo = {
 
 try {
   let isSupported = audioStreamManager.isMultichannelPlaybackSupported(streamInfo, audio.StreamUsage.STREAM_USAGE_MUSIC);
-  console.info(`isMultichannelPlaybackSupported: ${isSupported}.`);
+  console.info(`Succeeded in checking whether multichannel playback is supported, isMultichannelPlaybackSupported: ${isSupported}.`);
 } catch (err) {
   let error = err as BusinessError;
-  console.error(`Failed to use isMultichannelPlaybackSupported function. code: ${error.code}, message: ${error.message}`);
+  console.error(`Failed to check whether multichannel playback is supported. Code: ${error.code}, message: ${error.message}`);
 }
 ```

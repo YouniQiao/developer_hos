@@ -2,8 +2,8 @@
 title: "drawable_descriptor.h"
 upstream_id: "harmonyos-references/capi-drawable-descriptor-h"
 catalog: "harmonyos-references"
-content_hash: "37736993a147"
-synced_at: "2026-08-18T15:32:35.152804"
+content_hash: "17b20defb23a"
+synced_at: "2026-08-29T18:15:36.979589"
 ---
 
 # drawable_descriptor.h
@@ -460,7 +460,7 @@ int32_t OH_ArkUI_DrawableDescriptor_GetAnimationStopMode(const ArkUI_DrawableDes
 
 | 参数项 | 描述 |
 | --- | --- |
-| const [ArkUI_DrawableDescriptor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-drawabledescriptor)* drawableDescriptor | [ArkUI_DrawableDescriptor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-drawabledescriptor)对象指针。 |
+| [ArkUI_DrawableDescriptor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-drawabledescriptor)* drawableDescriptor | [DrawableDescriptor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-drawabledescriptor)对象指针。 |
 | [DrawableDescriptor_AnimationStopMode](#drawabledescriptor_animationstopmode)* mode | 动图停止模式。 取值含义请参考[DrawableDescriptor_AnimationStopMode](#drawabledescriptor_animationstopmode)。 |
 
 返回：

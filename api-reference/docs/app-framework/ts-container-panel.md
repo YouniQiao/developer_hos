@@ -2,8 +2,8 @@
 title: "Panel"
 upstream_id: "harmonyos-references/ts-container-panel"
 catalog: "harmonyos-references"
-content_hash: "7bc04e3169cf"
-synced_at: "2026-07-28T16:48:53.353623"
+content_hash: "9c033b8c86f4"
+synced_at: "2026-08-29T18:15:25.508299"
 ---
 
 # Panel
@@ -36,7 +36,7 @@ Panel(show: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| show | boolean | 是 | 控制Panel显示或隐藏，true表示显示面板，false表示隐藏面板。 **说明：** 如果设置为false时，则不占位隐藏。[Visibility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#visibility).None或show之间有一个生效时，都会生效不占位隐藏。 |
+| show | boolean | 是 | 控制Panel显示或隐藏，true表示显示面板，false表示隐藏面板。 **说明：** 如果设置为false时，则不占位隐藏。[Visibility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#visibility).None或show之间有一个生效时，都会生效不占位隐藏。 属性show的优先级高于此参数，当属性show被设置时，本参数可能不生效。 |
 
 #### 属性
 
@@ -46,7 +46,7 @@ Panel(show: boolean)
 
 type(value: PanelType)
 
-可滑动面板的类型。
+可滑动面板的类型。type属性值制约其他属性的使用：当type为Minibar时，PanelMode.Half不生效；当type为Temporary时，PanelMode.Mini不生效；当type为CUSTOM时，不支持尺寸切换效果，需配合customHeight属性使用；当type为Foldable时，所有PanelMode值均可用，可配合fullHeight、halfHeight、miniHeight属性设置各状态高度。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 12开始废弃。建议使用[SheetOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#sheetoptions)中的preferType替代。
 
@@ -100,7 +100,7 @@ dragBar(value: boolean)
 
 customHeight(value: Dimension | PanelHeight)
 
-指定PanelType.CUSTOM状态下的高度。
+指定PanelType.CUSTOM状态下的高度。此属性仅在[type](#type)设置为PanelType.CUSTOM时生效，使用PanelHeight.WRAP_CONTENT时高度自适应内容，使用Dimension值时设置固定高度。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 10开始支持，从API version 12开始废弃。建议使用[SheetOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#sheetoptions)中的height替代。
 
@@ -112,7 +112,7 @@ customHeight(value: Dimension | PanelHeight)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | [PanelHeight](#panelheight10枚举说明) | 是 | 指定PanelType.CUSTOM状态下的高度。 默认值：0 **说明：** 不支持设置百分比。 |
+| value | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | [PanelHeight](#panelheight10枚举说明) | 是 | 指定PanelType.CUSTOM状态下的高度。 默认值：0 **说明：** 不支持设置百分比，传入百分比时不生效。传入负数时不生效。 |
 
 #### [h2]fullHeight
 
@@ -138,7 +138,9 @@ halfHeight(value: number | string)
 
 指定PanelMode.Half状态下的高度。
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 12开始废弃。建议使用[SheetOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#sheetoptions)中的height替代。
+![](./img/note_3.0-zh-cn.png) 此属性仅在type为Foldable或Temporary时生效。当type为Minibar时，Half模式不生效，halfHeight设置无效。
+
+从API version 7开始支持，从API version 12开始废弃。建议使用[SheetOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#sheetoptions)中的height替代。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -156,7 +158,9 @@ miniHeight(value: number | string)
 
 指定PanelMode.Mini状态下的高度。
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 12开始废弃。建议使用[SheetOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#sheetoptions)中的height替代。
+![](./img/note_3.0-zh-cn.png) 此属性仅在type为Minibar或Foldable时生效。当type为Temporary时，Mini模式不生效，miniHeight设置无效。
+
+从API version 7开始支持，从API version 12开始废弃。建议使用[SheetOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#sheetoptions)中的height替代。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -232,9 +236,9 @@ showCloseIcon(value: boolean)
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| Minibar | 0 | 提供minibar和类全屏展示切换效果。 |
-| Foldable | 1 | 内容永久展示类，提供大（类全屏）、中（类半屏）、小三种尺寸展示切换效果。 |
-| Temporary | 2 | 内容临时展示区，提供大（类全屏）、中（类半屏）两种尺寸展示切换效果。 |
+| Minibar | 0 | 提供Minibar和类全屏展示切换效果。 |
+| Foldable | 1 | 内容始终展示，提供大（类全屏）、中（类半屏）、小三种尺寸展示切换效果。 |
+| Temporary | 2 | 内容临时展示，提供大（类全屏）、中（类半屏）两种尺寸展示切换效果。 |
 | CUSTOM10+ | 3 | 配置自适应内容高度，不支持尺寸切换效果。 |
 
 #### PanelMode枚举说明
@@ -247,9 +251,9 @@ showCloseIcon(value: boolean)
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| Mini | 0 | 类型为minibar和foldable时，为最小状态；类型为temporary，则不生效。 |
-| Half | 1 | 类型为foldable和temporary时，为类半屏状态；类型为minibar，则不生效。 |
-| Full | 2 | 类全屏状态。 |
+| Mini | 0 | 类型为Minibar和Foldable时，为最小状态；类型为Temporary，则不生效。 |
+| Half | 1 | 类型为Foldable和Temporary时，为类半屏状态；类型为Minibar，则不生效。 |
+| Full | 2 | 类型为Minibar、Foldable和Temporary时，为类全屏状态；类型为CUSTOM，则不生效。 |
 
 #### PanelHeight10+枚举说明
 
@@ -271,7 +275,7 @@ showCloseIcon(value: boolean)
 
 onChange(event: (width: number, height: number, mode: PanelMode) => void)
 
-当可滑动面板发生状态变化时触发。
+当可滑动面板发生状态变化时触发。与onHeightChange的区别：onChange在面板模式切换时触发，返回宽高和模式信息；onHeightChange在面板高度变化时触发，仅返回高度值。需要感知模式切换时使用onChange，仅需感知高度变化时使用onHeightChange。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 12开始废弃。建议使用[SheetOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#sheetoptions)中的onTypeDidChange替代。
 
@@ -283,8 +287,8 @@ onChange(event: (width: number, height: number, mode: PanelMode) => void)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| width | number | 是 | 内容区的宽度值。 |
-| height | number | 是 | 内容区的高度值。 当dragBar属性为true时，panel本身的高度值为dragBar高度加上内容区高度。 |
+| width | number | 是 | 内容区的宽度值，单位：vp。 |
+| height | number | 是 | 内容区的高度值，单位：vp。 当dragBar属性为true时，Panel本身的高度值为dragBar高度加上内容区高度。 |
 | mode | [PanelMode](#panelmode枚举说明) | 是 | 面板的状态。 |
 
 #### [h2]onHeightChange9+
@@ -303,7 +307,7 @@ onHeightChange(callback: (value: number) => void)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 内容区的高度值，默认返回值单位为px。 当dragBar属性为true时，panel本身的高度值为dragBar高度加上内容区高度。 因用户体验设计原因，panel最高只能滑到 fullHeight-8vp。 |
+| value | number | 是 | 内容区的高度值，默认返回值单位为px。 当dragBar属性为true时，Panel本身的高度值为dragBar高度加上内容区高度。 因用户体验设计原因，Panel最高只能滑到fullHeight-8vp。 |
 
 #### 示例
 
@@ -335,7 +339,7 @@ struct PanelExample {
       .type(PanelType.Foldable)
       .mode(PanelMode.Half)
       .dragBar(true) // 默认开启
-      .halfHeight(500) // 设置半屏高度为500（默认为组件主轴大小的一半）
+      .halfHeight(500) // 设置半屏高度为500，默认为当前组件主轴大小的一半
       .showCloseIcon(true) // 显示关闭图标
       .onChange((width: number, height: number, mode: PanelMode) => {
         console.info(`width:${width},height:${height},mode:${mode}`);
@@ -344,4 +348,4 @@ struct PanelExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088503.gif)
+ ![](./img/zh-cn_image_0000002731359429.gif)

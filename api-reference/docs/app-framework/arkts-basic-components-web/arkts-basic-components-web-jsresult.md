@@ -2,8 +2,8 @@
 title: "Class (JsResult)"
 upstream_id: "harmonyos-references/arkts-basic-components-web-jsresult"
 catalog: "harmonyos-references"
-content_hash: "ea0ce541b7a8"
-synced_at: "2026-07-09T00:58:53.827434"
+content_hash: "9403bee29f9c"
+synced_at: "2026-08-29T18:16:00.786507"
 ---
 
 # Class (JsResult)
@@ -12,15 +12,15 @@ JsResult是Web组件在处理JavaScript弹窗事件时返回的结果处理对�
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 该组件首批接口从API version 8开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
-- 本Class首批接口从API version 8开始支持。
+- 该组件从API version 8开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+- 本Class从API version 8开始支持。
 - 示例效果请以真机运行为准。
 
 #### constructor
 
 constructor()
 
-JsResult的构造函数。
+JsResult的构造函数。用于处理JavaScript弹窗事件。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -44,7 +44,7 @@ handleConfirm(): void
 
 handlePromptConfirm(result: string): void
 
-通知Web组件用户确认弹窗操作及对话框内容。
+通知Web组件用户确认弹窗操作并传递对话框内容。
 
 系统能力： SystemCapability.Web.Webview.Core
 

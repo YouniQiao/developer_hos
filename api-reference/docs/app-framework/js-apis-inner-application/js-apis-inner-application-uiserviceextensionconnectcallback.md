@@ -2,8 +2,8 @@
 title: "UIServiceExtensionConnectCallback"
 upstream_id: "harmonyos-references/js-apis-inner-application-uiserviceextensionconnectcallback"
 catalog: "harmonyos-references"
-content_hash: "3fcd15ec7d68"
-synced_at: "2026-07-09T00:57:09.643492"
+content_hash: "afb9edd42448"
+synced_at: "2026-08-29T18:12:04.497809"
 ---
 
 # UIServiceExtensionConnectCallback
@@ -178,7 +178,7 @@ struct UIServiceExtensionAbility {
             middle: { anchor: '__container__', align: HorizontalAlign.Center }
           })
           .onClick(() => {
-            this.myConnectUIServiceExtensionAbility()
+            this.myDisconnectUIServiceExtensionAbility()
           });
       }
       .width('100%')
@@ -186,7 +186,7 @@ struct UIServiceExtensionAbility {
     .height('100%')
   }
 
-  myConnectUIServiceExtensionAbility() {
+  myDisconnectUIServiceExtensionAbility() {
     // 获取上下文
     let context = this.getUIContext().getHostContext() as common.UIAbilityContext;
     // 断开连接的UIServiceExtensionAbility

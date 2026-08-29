@@ -2,8 +2,8 @@
 title: "@ohos.telephony.vcard (VCard模块)"
 upstream_id: "harmonyos-references/js-apis-vcard"
 catalog: "harmonyos-references"
-content_hash: "51480b11508a"
-synced_at: "2026-07-09T00:59:38.107497"
+content_hash: "42c2746bf94a"
+synced_at: "2026-08-29T18:16:54.126296"
 ---
 
 # @ohos.telephony.vcard (VCard模块)
@@ -22,7 +22,7 @@ import { vcard } from '@kit.TelephonyKit';
 
 importVCard(context: Context, filePath: string, accountId: number, callback: AsyncCallback<void>): void
 
-将VCard文件导入联系人数据库。使用callback异步回调。
+将VCard文件导入联系人数据库。适用于从其他设备或应用接收VCard文件后批量导入联系人、联系人数据恢复等场景。使用callback异步回调。
 
 需要权限：ohos.permission.WRITE_CONTACTS 和 ohos.permission.READ_CONTACTS
 
@@ -33,7 +33,7 @@ importVCard(context: Context, filePath: string, accountId: number, callback: Asy
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 应用上下文。 |
-| filePath | string | 是 | VCF(vcard file)文件地址。 |
+| filePath | string | 是 | VCF(VCard file)文件地址。 |
 | accountId | number | 是 | 联系人账户ID。 |
 | callback | AsyncCallback | 是 | 回调函数，返回导入成功或失败的状态码。 |
 
@@ -59,7 +59,7 @@ import { vcard } from '@kit.TelephonyKit';
 
 class EntryAbility extends UIAbility {
     onWindowStageCreate(windowStage: window.WindowStage) {
-        let filePath: string = "/data/storage/vcf/contacts.vcf";
+        let filePath: string = '/data/storage/vcf/contacts.vcf';
         let accountId: number = 0;
         vcard.importVCard(this.context, filePath, accountId, (err: BusinessError) => {
             console.error(`callback: err->${JSON.stringify(err)}`);
@@ -72,7 +72,7 @@ class EntryAbility extends UIAbility {
 
 importVCard(context: Context, filePath: string, accountId?: number): Promise<void>
 
-将VCard文件导入联系人数据库。使用Promise异步回调。
+将VCard文件导入联系人数据库。适用于从其他设备或应用接收VCard文件后批量导入联系人、联系人数据恢复等场景。使用Promise异步回调。
 
 需要权限：ohos.permission.WRITE_CONTACTS 和 ohos.permission.READ_CONTACTS
 
@@ -83,14 +83,14 @@ importVCard(context: Context, filePath: string, accountId?: number): Promise<voi
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 应用上下文。 |
-| filePath | string | 是 | VCF(vcard file)文件地址。 |
-| accountId | number | 否 | 联系人账户ID。 |
+| filePath | string | 是 | VCF(VCard file)文件地址。 |
+| accountId | number | 否 | 联系人账户ID。不传入时使用默认账户。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，返回重置的结果码。 |
+| Promise | Promise对象，无返回结果。 |
 
 错误码：
 
@@ -114,7 +114,7 @@ import { vcard } from '@kit.TelephonyKit';
 
 class EntryAbility extends UIAbility {
     onWindowStageCreate(windowStage: window.WindowStage) {
-        let filePath: string = "/data/storage/vcf/contacts.vcf";
+        let filePath: string = '/data/storage/vcf/contacts.vcf';
         let accountId: number = 0;
         vcard.importVCard(this.context, filePath, accountId).then(() => {
             console.info(`importVCard success.`);
@@ -129,7 +129,7 @@ class EntryAbility extends UIAbility {
 
 importVCard(context: Context, filePath: string, callback: AsyncCallback<void>): void
 
-将VCard文件导入联系人数据库。使用callback异步回调。
+将VCard文件导入联系人数据库。适用于从其他设备或应用接收VCard文件后批量导入联系人、联系人数据恢复等场景。使用callback异步回调。
 
 需要权限：ohos.permission.WRITE_CONTACTS 和 ohos.permission.READ_CONTACTS
 
@@ -140,7 +140,7 @@ importVCard(context: Context, filePath: string, callback: AsyncCallback<void>): 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 应用上下文。 |
-| filePath | string | 是 | VCF(vcard file)文件地址。 |
+| filePath | string | 是 | VCF(VCard file)文件地址。 |
 | callback | AsyncCallback | 是 | 回调函数，返回导入成功或失败的状态码。 |
 
 错误码：
@@ -177,7 +177,7 @@ class EntryAbility extends UIAbility {
 
 exportVCard(context: Context, predicates: dataSharePredicates.DataSharePredicates, options: VCardBuilderOptions, callback: AsyncCallback<string>): void
 
-将联系人导出为 VCF(vcard file)文件。使用callback异步回调。
+将联系人导出为 VCF(VCard file)文件。适用于联系人数据备份、跨设备迁移联系人、通过文件分享联系人等场景。使用callback异步回调。
 
 需要权限：ohos.permission.WRITE_CONTACTS 和 ohos.permission.READ_CONTACTS
 
@@ -188,9 +188,9 @@ exportVCard(context: Context, predicates: dataSharePredicates.DataSharePredicate
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 应用上下文。 |
-| predicates | [dataSharePredicates.DataSharePredicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-datasharepredicates) | 是 | 查询语句。 |
+| predicates | [dataSharePredicates.DataSharePredicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-datasharepredicates) | 是 | 查询语句。用于筛选要导出的联系人数据。 |
 | options | VCardBuilderOptions | 是 | VCard版本与编码类型。 |
-| callback | AsyncCallback | 是 | 回调函数。生成的 VCF(vcard file)文件地址。 |
+| callback | AsyncCallback | 是 | 回调函数。生成的 VCF(VCard file)文件地址。 |
 
 错误码：
 
@@ -216,10 +216,10 @@ import { dataSharePredicates } from '@kit.ArkData';
 class EntryAbility extends UIAbility {
     onWindowStageCreate(windowStage: window.WindowStage) {
         let predicates = new dataSharePredicates.DataSharePredicates();
-        predicates.equalTo("NAME", "Rose");
+        predicates.equalTo('NAME', 'Rose');
         let options: vcard.VCardBuilderOptions = {
             cardType: vcard.VCardType.VERSION_21,
-            charset: "UTF-8"
+            charset: 'UTF-8'
         };
         vcard.exportVCard(this.context, predicates, options, (err: BusinessError, data: string) => {
             console.error(`callback: err->${JSON.stringify(err)}, data->${JSON.stringify(data)}`);
@@ -232,7 +232,7 @@ class EntryAbility extends UIAbility {
 
 exportVCard(context: Context, predicates: dataSharePredicates.DataSharePredicates, options?: VCardBuilderOptions): Promise<string>
 
-将联系人导出为 VCF(vcard file)文件。使用Promise异步回调。
+将联系人导出为 VCF(VCard file)文件。适用于联系人数据备份、跨设备迁移联系人、通过文件分享联系人等场景。使用Promise异步回调。
 
 需要权限：ohos.permission.WRITE_CONTACTS 和 ohos.permission.READ_CONTACTS
 
@@ -243,14 +243,14 @@ exportVCard(context: Context, predicates: dataSharePredicates.DataSharePredicate
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 应用上下文。 |
-| predicates | [dataSharePredicates.DataSharePredicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-datasharepredicates) | 是 | 查询语句。 |
+| predicates | [dataSharePredicates.DataSharePredicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-datasharepredicates) | 是 | 查询语句。用于筛选要导出的联系人数据。 |
 | options | VCardBuilderOptions | 否 | VCard版本与编码类型。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，返回重置的结果码。 |
+| Promise | Promise对象，返回生成的VCF(VCard file)文件地址。 |
 
 错误码：
 
@@ -294,7 +294,7 @@ class EntryAbility extends UIAbility {
 
 exportVCard(context: Context, predicates: dataSharePredicates.DataSharePredicates, callback: AsyncCallback<string>): void
 
-将联系人导出为 VCF(vcard file)文件。使用callback异步回调。
+将联系人导出为 VCF(VCard file)文件。适用于联系人数据备份、跨设备迁移联系人、通过文件分享联系人等场景。使用callback异步回调。
 
 需要权限：ohos.permission.WRITE_CONTACTS 和 ohos.permission.READ_CONTACTS
 
@@ -305,8 +305,8 @@ exportVCard(context: Context, predicates: dataSharePredicates.DataSharePredicate
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 应用上下文。 |
-| predicates | [dataSharePredicates.DataSharePredicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-datasharepredicates) | 是 | 查询语句。 |
-| callback | AsyncCallback | 是 | 回调函数。生成的 VCF(vcard file)文件地址。 |
+| predicates | [dataSharePredicates.DataSharePredicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-datasharepredicates) | 是 | 查询语句。用于筛选要导出的联系人。 |
+| callback | AsyncCallback | 是 | 回调函数。生成的 VCF(VCard file)文件地址。 |
 
 错误码：
 
@@ -349,7 +349,7 @@ VCard版本和编码信息。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| cardType | [VCardType](#vcardtype) | 否 | 是 | VCard版本类型 (默认值为VERSION_21)。 |
+| cardType | [VCardType](#vcardtype) | 否 | 是 | VCard版本类型（默认值为VERSION_21）。 |
 | charset | string | 否 | 是 | VCard编码类型（默认值为'UTF-8'）。 |
 
 #### VCardType

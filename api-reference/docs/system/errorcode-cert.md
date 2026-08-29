@@ -2,8 +2,8 @@
 title: "证书错误码"
 upstream_id: "harmonyos-references/errorcode-cert"
 catalog: "harmonyos-references"
-content_hash: "01cc1482ebe7"
-synced_at: "2026-07-09T00:59:20.258195"
+content_hash: "15d911aa4e1f"
+synced_at: "2026-08-29T18:16:33.389209"
 ---
 
 # 证书错误码
@@ -218,7 +218,7 @@ Maybe wrong password.
 
 错误信息
 
-The certificate is untrusted.
+Untrusted certificate.
 
 错误描述
 
@@ -272,7 +272,7 @@ Unsupported critical extension.
 
 错误信息
 
-Hostname mismatch.
+Hostname mismatch in the certificate.
 
 错误描述
 
@@ -290,7 +290,7 @@ Hostname mismatch.
 
 错误信息
 
-Email address mismatch.
+Email address mismatch in the certificate.
 
 错误描述
 
@@ -308,7 +308,7 @@ Email address mismatch.
 
 错误信息
 
-Key usage mismatch.
+Key usage mismatch in the certificate.
 
 错误描述
 
@@ -326,7 +326,7 @@ Key usage mismatch.
 
 错误信息
 
-CRL not found.
+Failed to obtain the certificate revocation list.
 
 错误描述
 
@@ -349,7 +349,7 @@ CRL not found.
 
 错误信息
 
-CRL not yet valid.
+The certificate revocation list has not taken effect.
 
 错误描述
 
@@ -369,7 +369,7 @@ CRL的生效时间晚于当前验证时间。
 
 错误信息
 
-CRL has expired.
+The certificate revocation list has expired.
 
 错误描述
 
@@ -389,7 +389,7 @@ CRL的失效时间早于当前验证时间。
 
 错误信息
 
-CRL signature verification failed.
+Failed to verify the signature of the certificate revocation list.
 
 错误描述
 
@@ -407,7 +407,7 @@ CRL的签名验证失败，可能是签名错误或颁发者证书不匹配。
 
 错误信息
 
-CRL issuer not found.
+Failed to find the issuer of the certificate revocation list.
 
 错误描述
 
@@ -425,7 +425,7 @@ CRL issuer not found.
 
 错误信息
 
-OCSP response not found.
+Failed to obtain the OCSP response.
 
 错误描述
 
@@ -448,7 +448,7 @@ OCSP response not found.
 
 错误信息
 
-OCSP response invalid.
+Invalid OCSP response.
 
 错误描述
 
@@ -466,7 +466,7 @@ OCSP响应数据格式错误、无法解析或已过期。
 
 错误信息
 
-OCSP signature verification failed.
+Failed to verify the OCSP signature.
 
 错误描述
 
@@ -484,7 +484,7 @@ OCSP响应的签名验证失败，可能是签名错误或签名者证书不匹�
 
 错误信息
 
-OCSP certificate status unknown.
+Unknown OCSP certificate status.
 
 错误描述
 
@@ -502,7 +502,7 @@ OCSP服务器无法确定证书的状态。
 
 错误信息
 
-Network timeout.
+Network connection timed out.
 
 错误描述
 

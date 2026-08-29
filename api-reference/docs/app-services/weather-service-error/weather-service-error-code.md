@@ -2,8 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/weather-service-error-code"
 catalog: "harmonyos-references"
-content_hash: "ce15f4b70afc"
-synced_at: "2026-07-09T01:01:40.321802"
+content_hash: "89d46e846e55"
+synced_at: "2026-08-29T18:18:37.585417"
 ---
 
 # ArkTS API错误码
@@ -86,8 +86,12 @@ System error.
 
 可能原因
 
-连接服务失败或其他内部错误。
+1、使用[weatherService.getWeather(request)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/weather-service-weatherservice#weatherservicegetweather)接口获取天气信息时，无法自动获取到Context信息。
+
+2、连接服务失败或其他内部错误。
 
 处理步骤
 
-通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+1、使用[weatherService.getWeatherWithContext(context, request)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/weather-service-weatherservice#weatherservicegetweatherwithcontext)接口替换[weatherService.getWeather(request)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/weather-service-weatherservice#weatherservicegetweather)接口，主动传入Context信息。
+
+2、通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。

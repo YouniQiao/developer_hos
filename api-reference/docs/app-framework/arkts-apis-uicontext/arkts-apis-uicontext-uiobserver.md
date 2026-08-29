@@ -2,8 +2,8 @@
 title: "Class (UIObserver)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-uiobserver"
 catalog: "harmonyos-references"
-content_hash: "c2c2afed99ee"
-synced_at: "2026-07-28T16:41:12.032341"
+content_hash: "b7f5ff67b3cc"
+synced_at: "2026-08-29T18:12:30.615956"
 ---
 
 # Class (UIObserver)
@@ -23,12 +23,6 @@ UIObserver提供UI组件行为变化的无感监听能力。无感监听是指�
 on(type: 'navDestinationUpdate', callback: Callback<observer.NavDestinationInfo>): void
 
 监听[NavDestination](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navdestination)组件的状态变化。监听器通过注册回调函数实现，当NavDestination组件的状态发生变化（如显示、隐藏、销毁等）时，系统会自动调用已注册的回调函数，携带状态变化信息。
-
-![](./img/note_3.0-zh-cn.png)
-
-- 必须与[off('navDestinationUpdate')](#offnavdestinationupdate11)方法配对使用。
-- 在组件销毁前（如aboutToDisappear生命周期中）必须调用off方法释放监听资源。
-- 未及时调用off方法会导致内存泄漏和资源占用。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -111,7 +105,7 @@ off(type: 'navDestinationUpdate', callback?: Callback<observer.NavDestinationInf
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 监听事件，固定为'navDestinationUpdate'，即[NavDestination](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navdestination)组件的状态变化。 |
-| callback | Callback | 否 | 需要取消的监听回调。不指定具体的回调函数时，取消所有[NavDestination](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navdestination)组件状态变化的监听回调。 |
+| callback | Callback | 否 | 需要取消的监听回调，不传参数时，取消所有[NavDestination](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navdestination)组件状态变化的监听回调。 |
 
 示例：
 
@@ -122,12 +116,6 @@ off(type: 'navDestinationUpdate', callback?: Callback<observer.NavDestinationInf
 on(type: 'navDestinationUpdate', options: { navigationId: ResourceStr }, callback: Callback<observer.NavDestinationInfo>): void
 
 通过[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)的id监听[NavDestination](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navdestination)组件的状态变化。
-
-![](./img/note_3.0-zh-cn.png)
-
-- 必须与[off('navDestinationUpdate')](#offnavdestinationupdate11-1)方法配对使用。
-- 在组件销毁前（如aboutToDisappear生命周期中）必须调用off方法释放监听资源。
-- 未及时调用off方法会导致内存泄漏和资源占用。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -213,7 +201,7 @@ off(type: 'navDestinationUpdate', options: { navigationId: ResourceStr }, callba
 | --- | --- | --- | --- |
 | type | string | 是 | 监听事件，固定为'navDestinationUpdate'，即[NavDestination](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navdestination)组件的状态变化。 |
 | options | { navigationId: [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) } | 是 | 指定监听的[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)的id。 |
-| callback | Callback | 否 | 需要取消的监听回调。不指定具体的回调函数时，取消options指定的Navigation上所有NavDestination组件状态变化的监听回调。 |
+| callback | Callback | 否 | 需要取消的监听回调。不指定具体的回调函数时，取消该[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)上所有的监听回调。 |
 
 示例：
 
@@ -224,12 +212,6 @@ off(type: 'navDestinationUpdate', options: { navigationId: ResourceStr }, callba
 on(type: 'navDestinationUpdateByUniqueId', navigationUniqueId: number, callback: Callback<observer.NavDestinationInfo>): void
 
 通过[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)的uniqueId监听[NavDestination](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navdestination)组件的状态变化，uniqueId可通过[queryNavigationInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-api#querynavigationinfo12)获取。
-
-![](./img/note_3.0-zh-cn.png)
-
-- 必须与[off('navDestinationUpdateByUniqueId')](#offnavdestinationupdatebyuniqueid20)方法配对使用。
-- 在组件销毁前（如aboutToDisappear生命周期中）必须调用off方法释放监听资源。
-- 未及时调用off方法会导致内存泄漏和资源占用。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -328,7 +310,7 @@ off(type: 'navDestinationUpdateByUniqueId', navigationUniqueId: number, callback
 | --- | --- | --- | --- |
 | type | string | 是 | 监听事件，固定为'navDestinationUpdateByUniqueId'，即[NavDestination](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navdestination)组件的状态变化。 |
 | navigationUniqueId | number | 是 | 指定监听的[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)的uniqueId，可以通过[queryNavigationInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-api#querynavigationinfo12)获取。 |
-| callback | Callback | 否 | 需要取消的监听回调。不指定具体的回调函数时，取消该[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)上所有的监听回调。 |
+| callback | Callback | 否 | 需要取消的监听回调，不传参数时，取消该[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)上所有的监听回调。 |
 
 示例：
 
@@ -497,12 +479,6 @@ on(type: 'routerPageUpdate', callback: Callback<observer.RouterPageInfo>): void
 
 监听[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)中page页面的状态变化。典型使用场景包括页面路由生命周期管理、页面跳转埋点、页面切换状态跟踪等。
 
-![](./img/note_3.0-zh-cn.png)
-
-- 必须与[off('routerPageUpdate')](#offrouterpageupdate11)方法配对使用。
-- 在组件销毁前（如aboutToDisappear生命周期中）必须调用off方法释放监听资源。
-- 未及时调用off方法会导致内存泄漏和资源占用。
-
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
@@ -589,12 +565,6 @@ off(type: 'routerPageUpdate', callback?: Callback<observer.RouterPageInfo>): voi
 on(type: 'densityUpdate', callback: Callback<observer.DensityInfo>): void
 
 监听屏幕像素密度变化。
-
-![](./img/note_3.0-zh-cn.png)
-
-- 必须与[off('densityUpdate')](#offdensityupdate12)方法配对使用。
-- 在组件销毁前（如aboutToDisappear生命周期中）必须调用off方法释放监听资源。
-- 未及时调用off方法会导致内存泄漏和资源占用。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -820,12 +790,6 @@ on(type: 'navDestinationSwitch', callback: Callback<observer.NavDestinationSwitc
 
 监听[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)的页面切换事件。
 
-![](./img/note_3.0-zh-cn.png)
-
-- 必须与[off('navDestinationSwitch')](#offnavdestinationswitch12)方法配对使用。
-- 在组件销毁前（如aboutToDisappear生命周期中）必须调用off方法释放监听资源。
-- 未及时调用off方法会导致内存泄漏和资源占用。
-
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
@@ -925,12 +889,6 @@ off(type: 'navDestinationSwitch', callback?: Callback<observer.NavDestinationSwi
 on(type: 'navDestinationSwitch', observerOptions: observer.NavDestinationSwitchObserverOptions, callback: Callback<observer.NavDestinationSwitchInfo>): void
 
 通过监听选项监听[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)的页面切换事件。
-
-![](./img/note_3.0-zh-cn.png)
-
-- 必须与[off('navDestinationSwitch')](#offnavdestinationswitch12-1)方法配对使用。
-- 在组件销毁前（如aboutToDisappear生命周期中）必须调用off方法释放监听资源。
-- 未及时调用off方法会导致内存泄漏和资源占用。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1033,7 +991,7 @@ off(type: 'navDestinationSwitch', observerOptions: observer.NavDestinationSwitch
 
 on(type: 'willClick', callback: GestureEventListenerCallback): void
 
-监听点击事件指令下发情况，所注册回调将于点击事件触发前触发。回调类型为[GestureEventListenerCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-t#gestureeventlistenercallback12)。从API version 20开始支持屏幕朗读触控模式。
+监听点击事件指令下发情况，所注册回调将于点击事件触发前触发。回调类型为[GestureEventListenerCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-t#gestureeventlistenercallback)。从API version 20开始支持屏幕朗读触控模式。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1044,7 +1002,7 @@ on(type: 'willClick', callback: GestureEventListenerCallback): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 监听事件，固定为'willClick'，用于监听点击事件指令下发情况，所注册回调将于点击事件触发前触发。 |
-| callback | [GestureEventListenerCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-t#gestureeventlistenercallback12) | 是 | 回调函数。可以获得点击事件的[GestureEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#gestureevent对象说明)和组件的[FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode)。 |
+| callback | [GestureEventListenerCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-t#gestureeventlistenercallback) | 是 | 回调函数。可以获得点击事件的[GestureEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#gestureevent对象说明)和组件的[FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode)。 |
 
 示例：
 
@@ -1149,7 +1107,7 @@ off(type: 'willClick', callback?: GestureEventListenerCallback): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 监听事件，固定为'willClick'，即点击事件指令下发情况。 |
-| callback | [GestureEventListenerCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-t#gestureeventlistenercallback12) | 否 | 需要被注销的回调函数。不传参数时，取消所有的点击事件指令下发监听回调。 |
+| callback | [GestureEventListenerCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-t#gestureeventlistenercallback) | 否 | 需要被注销的回调函数。不传参数时，取消所有的点击事件指令下发监听回调。 |
 
 示例：
 
@@ -1159,7 +1117,7 @@ off(type: 'willClick', callback?: GestureEventListenerCallback): void
 
 on(type: 'didClick', callback: GestureEventListenerCallback): void
 
-监听点击事件指令下发情况，所注册回调将于点击事件触发后触发。回调类型为[GestureEventListenerCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-t#gestureeventlistenercallback12)。从API version 20开始支持屏幕朗读触控模式。
+监听点击事件指令下发情况，所注册回调将于点击事件触发后触发。回调类型为[GestureEventListenerCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-t#gestureeventlistenercallback)。从API version 20开始支持屏幕朗读触控模式。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1170,7 +1128,7 @@ on(type: 'didClick', callback: GestureEventListenerCallback): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 监听事件，固定为'didClick'，用于监听点击事件指令下发情况，所注册回调将于点击事件触发后触发。 |
-| callback | [GestureEventListenerCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-t#gestureeventlistenercallback12) | 是 | 回调函数。可以获得点击事件的[GestureEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#gestureevent对象说明)和组件的[FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode)。 |
+| callback | [GestureEventListenerCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-t#gestureeventlistenercallback) | 是 | 回调函数。可以获得点击事件的[GestureEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#gestureevent对象说明)和组件的[FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode)。 |
 
 示例：
 
@@ -1191,7 +1149,7 @@ off(type: 'didClick', callback?: GestureEventListenerCallback): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 监听事件，固定为'didClick'，即点击事件指令下发情况。 |
-| callback | [GestureEventListenerCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-t#gestureeventlistenercallback12) | 否 | 需要被注销的回调函数。不传参数时，取消所有的点击事件指令下发监听回调。 |
+| callback | [GestureEventListenerCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-t#gestureeventlistenercallback) | 否 | 需要被注销的回调函数。不传参数时，取消所有的点击事件指令下发监听回调。 |
 
 示例：
 
@@ -1201,7 +1159,7 @@ off(type: 'didClick', callback?: GestureEventListenerCallback): void
 
 on(type: 'willClick', callback: ClickEventListenerCallback): void
 
-监听点击事件指令下发情况，所注册回调将于点击事件触发前触发。回调类型为[ClickEventListenerCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-t#clickeventlistenercallback12)。从API version 20开始支持屏幕朗读触控模式。
+监听点击事件指令下发情况，所注册回调将于点击事件触发前触发。回调类型为[ClickEventListenerCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-t#clickeventlistenercallback)。从API version 20开始支持屏幕朗读触控模式。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1212,7 +1170,7 @@ on(type: 'willClick', callback: ClickEventListenerCallback): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 监听事件，固定为'willClick'，用于监听点击事件指令下发情况，所注册回调将于点击事件触发前触发。 |
-| callback | [ClickEventListenerCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-t#clickeventlistenercallback12) | 是 | 回调函数。可以获得点击事件的[ClickEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-click#clickevent)和组件的[FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode)。 |
+| callback | [ClickEventListenerCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-t#clickeventlistenercallback) | 是 | 回调函数。可以获得点击事件的[ClickEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-click#clickevent)和组件的[FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode)。 |
 
 示例：
 
@@ -1233,7 +1191,7 @@ off(type: 'willClick', callback?: ClickEventListenerCallback): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 监听事件，固定为'willClick'，即点击事件指令下发情况。 |
-| callback | [ClickEventListenerCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-t#clickeventlistenercallback12) | 否 | 需要被注销的回调函数。不传参数时，取消所有的点击事件指令下发监听回调。 |
+| callback | [ClickEventListenerCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-t#clickeventlistenercallback) | 否 | 需要被注销的回调函数。不传参数时，取消所有的点击事件指令下发监听回调。 |
 
 示例：
 
@@ -1243,7 +1201,7 @@ off(type: 'willClick', callback?: ClickEventListenerCallback): void
 
 on(type: 'didClick', callback: ClickEventListenerCallback): void
 
-监听点击事件指令下发情况，所注册回调将于点击事件触发后触发。回调类型为[ClickEventListenerCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-t#clickeventlistenercallback12)。从API version 20开始支持屏幕朗读触控模式。
+监听点击事件指令下发情况，所注册回调将于点击事件触发后触发。回调类型为[ClickEventListenerCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-t#clickeventlistenercallback)。从API version 20开始支持屏幕朗读触控模式。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1254,7 +1212,7 @@ on(type: 'didClick', callback: ClickEventListenerCallback): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 监听事件，固定为'didClick'，用于监听点击事件指令下发情况，所注册回调将于点击事件触发后触发。 |
-| callback | [ClickEventListenerCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-t#clickeventlistenercallback12) | 是 | 回调函数。可以获得点击事件的[ClickEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-click#clickevent)和组件的[FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode)。 |
+| callback | [ClickEventListenerCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-t#clickeventlistenercallback) | 是 | 回调函数。可以获得点击事件的[ClickEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-click#clickevent)和组件的[FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode)。 |
 
 示例：
 
@@ -1275,7 +1233,7 @@ off(type: 'didClick', callback?: ClickEventListenerCallback): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 监听事件，固定为'didClick'，即点击事件指令下发情况。 |
-| callback | [ClickEventListenerCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-t#clickeventlistenercallback12) | 否 | 需要被注销的回调函数。不传参数时，取消所有的点击事件指令下发监听回调。 |
+| callback | [ClickEventListenerCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-t#clickeventlistenercallback) | 否 | 需要被注销的回调函数。不传参数时，取消所有的点击事件指令下发监听回调。 |
 
 示例：
 
@@ -1371,7 +1329,7 @@ off(type: 'tabContentUpdate', callback?: Callback<observer.TabContentInfo>): voi
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 监听事件，固定为'tabContentUpdate'，即[TabContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabcontent)页面的切换事件。 |
-| callback | Callback | 否 | 需要被注销的回调函数。不传参数时，取消所有Tabs组件上TabContent页面切换事件的监听回调。 |
+| callback | Callback | 否 | 需要被注销的回调函数。不传参数时，取消该[Tabs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabs)上所有的监听回调。 |
 
 示例：
 
@@ -1469,7 +1427,7 @@ off(type: 'tabContentUpdate', options: observer.ObserverOptions, callback?: Call
 | --- | --- | --- | --- |
 | type | string | 是 | 监听事件，固定为'tabContentUpdate'，即[TabContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabcontent)页面的切换事件。 |
 | options | observer.[ObserverOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-observer#observeroptions12) | 是 | 指定监听的[Tabs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabs)组件的id。 |
-| callback | Callback | 否 | 需要被注销的回调函数。不传参数时，取消options指定的Tabs组件上所有TabContent页面切换事件的监听回调。 |
+| callback | Callback | 否 | 需要被注销的回调函数。不传参数时，取消该[Tabs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabs)上所有的监听回调。 |
 
 示例：
 
@@ -1480,12 +1438,6 @@ off(type: 'tabContentUpdate', options: observer.ObserverOptions, callback?: Call
 on(type: 'tabChange', callback: Callback<observer.TabContentInfo>): void
 
 监听[Tabs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabs)组件页签的切换事件，支持多个[Tabs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabs)组件的监听。相比[on('tabContentUpdate')](#ontabcontentupdate12)，本接口支持监听Tabs组件初始化时，显示首个页签的事件。
-
-![](./img/note_3.0-zh-cn.png)
-
-- 必须与[off('tabChange')](#offtabchange22)方法配对使用。
-- 在组件销毁前（如aboutToDisappear生命周期中）必须调用off方法释放监听资源。
-- 未及时调用off方法会导致内存泄漏和资源占用。
 
 元服务API： 从API version 22开始，该接口支持在元服务中使用。
 
@@ -1605,12 +1557,6 @@ off(type: 'tabChange', callback?: Callback<observer.TabContentInfo>): void
 on(type: 'tabChange', config: observer.ObserverOptions, callback: Callback<observer.TabContentInfo>): void
 
 监听指定[Tabs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabs)组件的页签切换事件。相比[on('tabContentUpdate')](#ontabcontentupdate12-1)，本接口支持监听Tabs组件初始化时，显示首个页签的事件。
-
-![](./img/note_3.0-zh-cn.png)
-
-- 必须与[off('tabChange')](#offtabchange22-1)方法配对使用。
-- 在组件销毁前（如aboutToDisappear生命周期中）必须调用off方法释放监听资源。
-- 未及时调用off方法会导致内存泄漏和资源占用。
 
 元服务API： 从API version 22开始，该接口支持在元服务中使用。
 
@@ -2311,7 +2257,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685927867.gif)
+ ![](./img/zh-cn_image_0000002701639400.gif)
 
 #### off('nodeRenderState')20+
 
@@ -2531,7 +2477,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008188.gif)
+ ![](./img/zh-cn_image_0000002731358621.gif)
 
 #### removeGlobalGestureListener20+
 
@@ -2727,7 +2673,7 @@ offSwiperContentUpdate(callback?: Callback<SwiperContentInfo>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | Callback | 否 | 需要被注销的回调函数。不传参数时，取消所有Swiper组件上内容切换事件的监听回调。 |
+| callback | Callback | 否 | 需要被注销的回调函数。不传参数时，取消该Swiper上所有的监听回调。 |
 
 示例：
 
@@ -2818,7 +2764,7 @@ offSwiperContentUpdate(config: observer.ObserverOptions, callback?: Callback<Swi
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | config | observer.[ObserverOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-observer#observeroptions12) | 是 | 指定监听的Swiper组件信息。 |
-| callback | Callback | 否 | 需要被注销的回调函数。不传参数时，取消config指定的Swiper组件上所有内容切换事件的监听回调。 |
+| callback | Callback | 否 | 需要被注销的回调函数。不传参数时，取消该Swiper上所有的监听回调。 |
 
 示例：
 
@@ -2828,7 +2774,7 @@ offSwiperContentUpdate(config: observer.ObserverOptions, callback?: Callback<Swi
 
 onRouterPageSizeChange(callback: Callback<observer.RouterPageInfo>): void
 
-注册监听回调函数，当可见的Router页面大小发生变化时，会触发该回调函数。适用于需要响应Router页面大小变化的场景，例如根据页面大小动态调整UI布局、重新计算组件尺寸、优化显示效果等。
+注册监听回调函数，当可见的Router页面大小发生变化时，会触发该回调函数。使用callback异步回调。
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
@@ -2899,7 +2845,7 @@ offRouterPageSizeChange(callback?: Callback<observer.RouterPageInfo>): void
 
 onNavDestinationSizeChange(callback: Callback<observer.NavDestinationInfo>): void
 
-注册监听回调函数，当可见的NavDestination大小发生变化时，会触发该回调函数。适用于需要响应NavDestination页面大小变化的场景，例如根据页面大小动态调整UI布局、重新计算组件尺寸、优化显示效果等。
+注册监听回调函数，当可见的NavDestination大小发生变化时，会触发该回调函数。使用callback异步回调。
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
@@ -3003,7 +2949,7 @@ offNavDestinationSizeChange(callback?: Callback<observer.NavDestinationInfo>): v
 
 onNavDestinationSizeChangeByUniqueId(navigationUniqueId: number, callback: Callback<observer.NavDestinationInfo>): void
 
-注册监听回调函数，当属于指定Navigation的可见NavDestination的大小发生变化时，会触发该回调函数。适用于存在多个Navigation组件时，需要监听特定Navigation的NavDestination大小变化的场景，例如在复杂页面中包含多个独立的Navigation容器时，通过uniqueId精确控制监听范围。
+注册监听回调函数，当属于指定Navigation的可见NavDestination的大小发生变化时，会触发该回调函数。使用callback异步回调。
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 

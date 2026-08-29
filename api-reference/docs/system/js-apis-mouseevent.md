@@ -2,8 +2,8 @@
 title: "@ohos.multimodalInput.mouseEvent (鼠标输入事件)"
 upstream_id: "harmonyos-references/js-apis-mouseevent"
 catalog: "harmonyos-references"
-content_hash: "53108b794e55"
-synced_at: "2026-07-09T00:59:48.788384"
+content_hash: "3a9d7f3eaee2"
+synced_at: "2026-08-29T18:17:04.790142"
 ---
 
 # @ohos.multimodalInput.mouseEvent (鼠标输入事件)
@@ -17,7 +17,7 @@ synced_at: "2026-07-09T00:59:48.788384"
 #### 导入模块
 
 ```
-import { Action, Button, Axis, AxisValue, MouseEvent } from '@kit.InputKit';
+import { MouseAction, Button, Axis, AxisValue, MouseToolType, MouseEvent } from '@kit.InputKit';
 ```
 
 #### Action

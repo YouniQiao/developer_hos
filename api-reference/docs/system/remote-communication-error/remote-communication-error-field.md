@@ -2,8 +2,8 @@
 title: "故障日志关键字段说明"
 upstream_id: "harmonyos-references/remote-communication-error-field"
 catalog: "harmonyos-references"
-content_hash: "acb77ba5c023"
-synced_at: "2026-07-09T00:59:37.115192"
+content_hash: "7abe30935b14"
+synced_at: "2026-08-29T18:16:53.222948"
 ---
 
 # 故障日志关键字段说明
@@ -248,7 +248,7 @@ synced_at: "2026-07-09T00:59:37.115192"
 
 数据类型： 字符串。
 
-字段含义： 对端信息。格式为“域名:端口”或“IP:端口”。
+字段含义： 对端地址。
 
 #### [h2]sock
 

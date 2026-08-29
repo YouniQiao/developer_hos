@@ -1,12 +1,12 @@
 ---
-title: "@ohos.app.ability.AgentUIExtensionAbility (带界面的智能体拓展组件)"
+title: "@ohos.app.ability.AgentUIExtensionAbility (带界面的智能体扩展组件)"
 upstream_id: "harmonyos-references/js-apis-agent-agentuiextensionability"
 catalog: "harmonyos-references"
-content_hash: "bdd9f912d0db"
-synced_at: "2026-07-09T00:57:02.986874"
+content_hash: "5fb907a557f0"
+synced_at: "2026-08-29T18:11:55.693543"
 ---
 
-# @ohos.app.ability.AgentUIExtensionAbility (带界面的智能体拓展组件)
+# @ohos.app.ability.AgentUIExtensionAbility (带界面的智能体扩展组件)
 
 AgentUIExtensionAbility继承自[UIExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiextensionability)，为开发者提供接入端侧Agent UI界面显示能力。
 
@@ -33,6 +33,8 @@ import { AgentUIExtensionAbility } from '@kit.AbilityKit';
 
 #### AgentUIExtensionAbility
 
-AgentUIExtensionAbility继承自[UIExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiextensionability)，为开发者提供接入端侧Agent UI界面显示能力。例如，如果Agent开发者希望能够在其他应用显示Agent返回的结果时，可以通过接入AgentUIExtensionAbility提供展示嵌入式弹窗的能力。
+AgentUIExtensionAbility继承自[UIExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiextensionability)，为开发者提供接入端侧Agent UI界面显示能力。例如，当Agent开发者希望在其他应用中显示Agent返回的结果时，可以通过接入AgentUIExtensionAbility提供展示嵌入式弹窗的能力。
 
 系统能力：SystemCapability.Ability.AgentRuntime.Core
+
+元服务API：从API版本26.0.0开始，该接口支持在元服务中使用。

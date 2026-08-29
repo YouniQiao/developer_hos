@@ -2,8 +2,8 @@
 title: "net_ethernet_type.h"
 upstream_id: "harmonyos-references/capi-net-ethernet-type-h"
 catalog: "harmonyos-references"
-content_hash: "45f166379f51"
-synced_at: "2026-07-28T16:50:44.937802"
+content_hash: "80d8c4b5217e"
+synced_at: "2026-08-29T18:16:44.831427"
 ---
 
 # net_ethernet_type.h
@@ -12,7 +12,7 @@ synced_at: "2026-07-28T16:50:44.937802"
 
 为以太网网卡模块C接口定义数据结构。
 
-引用文件： <network/net_ethernet/net_ethernet_type.h>
+引用文件： <network/netmanager_ext/net_ethernet_type.h>
 
 库： libnet_ethernet.so
 

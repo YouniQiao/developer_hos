@@ -2,13 +2,13 @@
 title: "@ohos.bluetooth.hfp (蓝牙hfp模块)"
 upstream_id: "harmonyos-references/js-apis-bluetooth-hfp"
 catalog: "harmonyos-references"
-content_hash: "6ccf0efae976"
-synced_at: "2026-07-28T16:50:36.087486"
+content_hash: "e7ab5163106c"
+synced_at: "2026-08-29T18:16:36.425373"
 ---
 
 # @ohos.bluetooth.hfp (蓝牙hfp模块)
 
-本模块提供基于免提协议（Hands-Free Profile， [HFP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#hfp)）的蓝牙通话音频能力，支持获取连接状态等方法。
+本模块提供基于免提协议（Hands-Free Profile， [HFP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#hfp)）的蓝牙通话音频能力，支持创建[HFP AG](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#hfp-ag)和[HF](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#hf)实例、获取连接状态等。适用于需要在应用中实现蓝牙通话音频连接管理、监听通话音频连接状态等场景。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 10开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -34,7 +34,7 @@ type BaseProfile = baseProfile.BaseProfile
 
 createHfpAgProfile(): HandsFreeAudioGatewayProfile
 
-创建蓝牙通话音频中的[HFP AG](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#hfp-ag)实例。通过该实例可使用本端作为HFP AG设备的接口，如：获取和其他设备间的蓝牙通话音频连接状态。
+创建蓝牙通话音频中的[HFP AG](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#hfp-ag)实例。通过该实例可使用本端作为HFP AG设备的接口，如：获取和其他设备间的蓝牙通话音频连接状态。典型应用场景包括车载信息娱乐系统的蓝牙通话功能等，本端设备作为音频网关（AG）角色管理通话音频路由。
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
@@ -42,7 +42,7 @@ createHfpAgProfile(): HandsFreeAudioGatewayProfile
 
 | 类型 | 说明 |
 | --- | --- |
-| [HandsFreeAudioGatewayProfile](#handsfreeaudiogatewayprofile) | 返回HFP AG实例。 |
+| [HandsFreeAudioGatewayProfile](#handsfreeaudiogatewayprofile) | 返回HFP AG实例，可用于获取和其他设备间的蓝牙通话音频连接状态等操作。 |
 
 错误码：
 
@@ -70,7 +70,7 @@ try {
 
 createHfpHfProfile(): HandsFreeHfProfile
 
-创建蓝牙通话音频中的[HF](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#hf)实例。通过该实例可使用本端作为HF设备的接口，如：获取和其他设备间的蓝牙通话音频连接状态。
+创建蓝牙通话音频中的[HF](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#hf)实例。通过该实例可使用本端作为HF设备的接口，如：获取和其他设备间的蓝牙通话音频连接状态。典型应用场景包括蓝牙耳机的免提通话功能、车载免提系统等，本端设备作为免提（HF）角色接收和处理通话音频。
 
 起始版本： 26.0.0
 
@@ -82,7 +82,7 @@ createHfpHfProfile(): HandsFreeHfProfile
 
 | 类型 | 说明 |
 | --- | --- |
-| [HandsFreeHfProfile](#handsfreehfprofile) | 返回HF实例。 |
+| [HandsFreeHfProfile](#handsfreehfprofile) | 返回HF实例，可用于获取和其他设备间的蓝牙通话音频连接状态等操作。 |
 
 错误码：
 

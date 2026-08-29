@@ -2,8 +2,8 @@
 title: "@ohos.multimodalInput.touchEvent (触屏输入事件)"
 upstream_id: "harmonyos-references/js-apis-touchevent"
 catalog: "harmonyos-references"
-content_hash: "824653d9bc7b"
-synced_at: "2026-07-09T00:59:49.047683"
+content_hash: "150f2e067669"
+synced_at: "2026-08-29T18:17:04.782682"
 ---
 
 # @ohos.multimodalInput.touchEvent (触屏输入事件)
@@ -17,7 +17,7 @@ synced_at: "2026-07-09T00:59:49.047683"
 #### 导入模块
 
 ```
-import { Action,ToolType,SourceType,Touch,TouchEvent } from '@kit.InputKit';
+import { KeyAction,ToolType,SourceType,Touch,TouchEvent } from '@kit.InputKit';
 ```
 
 #### Action
@@ -55,7 +55,7 @@ import { Action,ToolType,SourceType,Touch,TouchEvent } from '@kit.InputKit';
 
 #### SourceType
 
-触屏来源的设备类型，当前仅支持触摸屏、触控板类型上报。
+触屏来源的设备类型，当前支持触屏、手写笔、触控板类型上报。
 
 系统能力： SystemCapability.MultimodalInput.Input.Core
 

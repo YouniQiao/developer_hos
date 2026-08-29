@@ -2,8 +2,8 @@
 title: "ContainerReader"
 upstream_id: "harmonyos-references/ts-container-containerreader"
 catalog: "harmonyos-references"
-content_hash: "a611971ce42d"
-synced_at: "2026-07-09T00:57:45.991248"
+content_hash: "d2187cef941d"
+synced_at: "2026-08-29T18:13:16.606540"
 ---
 
 # ContainerReader
@@ -125,11 +125,9 @@ breakpointConfig(value?: BreakpointOptions)
 
 从API版本26.0.0开始，新增ContainerReader。
 
-![](./img/note_3.0-zh-cn.png) 使用ContainerReader需要同时导入ContainerReaderAttribute，否则会导致编译报错。
-
 ```
 // xxx.ets
-import { ContainerReader, ContainerReaderAttribute, Size } from '@kit.ArkUI';
+import { ContainerReader, Size } from '@kit.ArkUI';
 
 @Entry
 @Component
@@ -186,7 +184,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612455.gif)
+ ![](./img/zh-cn_image_0000002701799520.gif)
 
 #### [h2]示例2 （自定义断点配置）
 
@@ -194,11 +192,9 @@ struct Index {
 
 从API版本26.0.0开始，新增ContainerReader与breakpointConfig。
 
-![](./img/note_3.0-zh-cn.png) 使用ContainerReader需要同时导入ContainerReaderAttribute，否则会导致编译报错。
-
 ```
 // xxx.ets
-import { ContainerReader, ContainerReaderAttribute, Size } from '@kit.ArkUI';
+import { ContainerReader, Size } from '@kit.ArkUI';
 
 @Entry
 @Component
@@ -262,7 +258,7 @@ struct Index {
 ```
  通过单击按钮改变父容器的宽度，返回不同的宽度断点值，从而调整布局方向。
 
-![](./img/zh-cn_image_0000002631413164.gif)
+![](./img/zh-cn_image_0000002731518805.gif)
 
 #### [h2]示例3 （利用宽度断点动态调整列数）
 
@@ -270,11 +266,9 @@ struct Index {
 
 从API版本26.0.0开始，新增ContainerReader。
 
-![](./img/note_3.0-zh-cn.png) 使用ContainerReader需要同时导入ContainerReaderAttribute，否则会导致编译报错。
-
 ```
 // xxx.ets
-import { ContainerReader, ContainerReaderAttribute, Size } from '@kit.ArkUI';
+import { ContainerReader, Size } from '@kit.ArkUI';
 
 @Entry
 @Component
@@ -348,4 +342,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732393.gif)
+ ![](./img/zh-cn_image_0000002701639606.gif)

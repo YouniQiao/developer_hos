@@ -2,14 +2,14 @@
 title: "ArkUI_AccessibilityProviderCallbacksWithInstance"
 upstream_id: "harmonyos-references/capi-arkui-accessibility-arkui-accessibilityprovidercallbackswithinstance"
 catalog: "harmonyos-references"
-content_hash: "621091f15559"
-synced_at: "2026-07-28T16:49:30.693323"
+content_hash: "e0502cb7de72"
+synced_at: "2026-08-29T18:15:45.793507"
 ---
 
 # ArkUI_AccessibilityProviderCallbacksWithInstance
 
 ```
-typedef struct {...} ArkUI_AccessibilityProviderCallbacksWithInstance
+typedef struct ArkUI_AccessibilityProviderCallbacksWithInstance {...} ArkUI_AccessibilityProviderCallbacksWithInstance
 ```
 
 #### 概述
@@ -82,7 +82,7 @@ int32_t (*findAccessibilityNodeInfosByText)(const char* instanceId, int64_t elem
 | --- | --- |
 | const char* instanceId | 第三方框架的实例编码。 |
 | int64_t elementId | 无障碍元素的唯一编号，需指向文本组件。 |
-| const char* text | 组件需要匹配的文本内容。 |
+| const char* text | 组件需要匹配的文本内容。匹配规则说明：需说明匹配方式（精确匹配/模糊匹配）、是否区分大小写等。 |
 | int32_t requestId | 请求id，用于关联请求过程，建议日志打印时附带输出该信息，方便问题定位。 |
 | [ArkUI_AccessibilityElementInfoList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-accessibility-arkui-accessibilityelementinfolist)* elementList | 本次查询到的所有无障碍元素列表。 |
 
@@ -203,7 +203,7 @@ int32_t (*getAccessibilityNodeCursorPosition)(const char* instanceId, int64_t el
 ```
  描述：
 
-获取当前组件中（文本组件）光标位置。由接入方平台实现的回调函数，注册给系统侧调用。支持多实例场景。
+获取当前文本组件中的光标位置。由接入方平台实现的回调函数，注册给系统侧调用。支持多实例场景。
 
 起始版本： 15
 

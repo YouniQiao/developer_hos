@@ -2,8 +2,8 @@
 title: "textRecognition（文字识别）"
 upstream_id: "harmonyos-references/core-vision-text-recognition-api"
 catalog: "harmonyos-references"
-content_hash: "a694263e54d4"
-synced_at: "2026-07-28T16:53:10.718808"
+content_hash: "84a5736ebac4"
+synced_at: "2026-08-29T18:18:38.876996"
 ---
 
 # textRecognition（文字识别）
@@ -589,20 +589,25 @@ import { textRecognition } from '@kit.CoreVisionKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
-// 获取支持的语言类型列表
-textRecognition.getSupportedLanguages().then((data: Array<string>) => {
-  let languageString = data.join(', ');
-  hilog.info(0x0000, 'OCRDemo', `Succeeded in obtaining the language: ${languageString}`);
-}, (err: BusinessError) => {
-  hilog.error(0x0000, 'OCRDemo', `Failed to obtain the language. Code: ${err.code}, message: ${err.message}`);
-});
-
 @Entry
 @Component
 struct Page {
+  @State supportedLanguages: string[] = [];
+
+  aboutToAppear() {
+    // 获取支持的语言类型列表
+    textRecognition.getSupportedLanguages().then((data: Array<string>) => {
+      this.supportedLanguages = data;
+      let languageString = data.join(', ');
+      hilog.info(0x0000, 'OCRDemo', `Succeeded in obtaining the language: ${languageString}`);
+    }, (err: BusinessError) => {
+      hilog.error(0x0000, 'OCRDemo', `Failed to obtain the language. Code: ${err.code}, message: ${err.message}`);
+    });
+  }
 
   build() {
-    Column(){
+    Column() {
+      Text(this.supportedLanguages.join(', '))
     }
   }
 }
@@ -642,21 +647,26 @@ import { textRecognition } from '@kit.CoreVisionKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
-// 获取支持的语言类型列表
-textRecognition.getSupportedLanguages((error: BusinessError, data: Array<string>) => {
-  if (!error) {
-    hilog.info(0x0000, 'OCRDemo', `Succeeded in obtaining the language: ${data}`);
-  } else {
-    hilog.error(0x0000, 'OCRDemo', `Failed to obtain the language. Code: ${error.code}, message: ${error.message}`);
-  }
-});
-
 @Entry
 @Component
 struct Page {
+  @State supportedLanguages: string[] = [];
+
+  aboutToAppear() {
+    // 获取支持的语言类型列表
+    textRecognition.getSupportedLanguages((error: BusinessError, data: Array<string>) => {
+      if (!error) {
+        this.supportedLanguages = data;
+        hilog.info(0x0000, 'OCRDemo', `Succeeded in obtaining the language: ${data}`);
+      } else {
+        hilog.error(0x0000, 'OCRDemo', `Failed to obtain the language. Code: ${error.code}, message: ${error.message}`);
+      }
+    });
+  }
 
   build() {
-    Column(){
+    Column() {
+      Text(this.supportedLanguages.join(', '))
     }
   }
 }

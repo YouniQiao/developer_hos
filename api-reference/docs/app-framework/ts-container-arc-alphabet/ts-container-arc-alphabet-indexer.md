@@ -2,13 +2,13 @@
 title: "ArcAlphabetIndexer"
 upstream_id: "harmonyos-references/ts-container-arc-alphabet-indexer"
 catalog: "harmonyos-references"
-content_hash: "c4ea24882ac6"
-synced_at: "2026-07-28T16:46:09.005077"
+content_hash: "caa53db72a65"
+synced_at: "2026-08-29T18:14:25.557219"
 ---
 
 # ArcAlphabetIndexer
 
-弧形索引条是一种弧形排列、可按字母顺序快速定位的组件，可与容器组件联动，按逻辑结构快速定位至容器显示区域，适用于手表等圆形屏幕设备。
+弧形索引条是一种弧形的、可按字母顺序排序进行快速定位的组件，可以与容器组件联动，按逻辑结构快速定位至容器显示区域。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -20,7 +20,7 @@ synced_at: "2026-07-28T16:46:09.005077"
 ![](./img/note_3.0-zh-cn.png)
 
 - ArcAlphabetIndexerAttribute是用于配置ArcAlphabetIndexer组件属性的关键接口。API version 21及之前版本，导入ArcAlphabetIndexer组件后需要开发者手动导入ArcAlphabetIndexerAttribute，否则会编译报错。从API version 22开始，编译工具链识别到导入ArcAlphabetIndexer组件后，会自动导入ArcAlphabetIndexerAttribute，无需开发者手动导入ArcAlphabetIndexerAttribute。
-- 如果开发者手动导入ArcAlphabetIndexerAttribute，DevEco Studio会将该导入语句显示为置灰状态，API version 21及之前版本删除会编译报错，API version 22开始，删除对功能无影响。
+- 如果开发者手动导入ArcAlphabetIndexerAttribute，DevEco Studio会显示置灰，API version 21及之前版本删除会编译报错，API version 22开始，删除对功能无影响。
 
 API version 21及之前版本：
 
@@ -41,17 +41,17 @@ import { ArcAlphabetIndexer } from '@kit.ArkUI';
 
 ArcAlphabetIndexer(info: ArcAlphabetIndexerInitInfo)
 
-创建并初始化弧形索引条组件。
+创建弧形索引条实例，传入弧形索引条配置项参数。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Circle
 
-参数：
+参数： 参数内容为设置弧形索引条索引项字符串数组、初始选中项索引位置。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| info | [ArcAlphabetIndexerInitInfo](#arcalphabetindexerinitinfo对象说明) | 是 | 定义弧形字母索引条的初始化参数，包含字母索引字符串数组和初始选中项索引值。 |
+| info | [ArcAlphabetIndexerInitInfo](#arcalphabetindexerinitinfo对象说明) | 是 | 定义弧形字母索引条的初始化参数。 |
 
 #### 属性
 
@@ -169,7 +169,7 @@ selectedFont(font: Optional<Font>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| font | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 选中项文字样式，用于设置索引条中被选中字母的显示效果，包括文字大小、粗细、倾斜角度和字体族等。 默认值：{ size:'13.0fp', style:FontStyle.Normal, weight:500, family:'HarmonyOS Sans' } |
+| font | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 选中项文字样式。 默认值：{ size:'13.0fp', style:FontStyle.Normal, weight:500, family:'HarmonyOS Sans' } |
 
 #### [h2]popupFont
 
@@ -185,13 +185,13 @@ popupFont(font: Optional<Font>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| font | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 提示弹窗字体样式，用于设置提示弹窗中显示的当前选中字母的显示效果，包括文字大小、粗细、倾斜角度和字体族等。 默认值： { size:'19.0fp', style:FontStyle.Normal, weight:500, family:'HarmonyOS Sans' } |
+| font | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 提示弹窗字体样式。 默认值： { size:'19.0fp', style:FontStyle.Normal, weight:500, family:'HarmonyOS Sans' } |
 
 #### [h2]font
 
 font(font: Optional<Font>)
 
-设置弧形字母索引条默认字体样式，即未选中状态下索引项的字体样式。
+设置字母索引条默认字体样式。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -201,13 +201,13 @@ font(font: Optional<Font>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| font | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 字母索引条默认字体样式，用于设置索引条上所有字母的显示效果，包括文字大小、粗细、倾斜角度和字体族等。 默认值： { size:'13.0fp', style:FontStyle.Normal, weight:500, family:'HarmonyOS Sans' } |
+| font | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 字母索引条默认字体样式。 默认值： { size:'13.0fp', style:FontStyle.Normal, weight:500, family:'HarmonyOS Sans' } |
 
 #### [h2]itemSize
 
 itemSize(size: Optional<LengthMetrics>)
 
-设置弧形索引条索引项区域大小。
+设置字母索引条字母区域大小。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -217,7 +217,7 @@ itemSize(size: Optional<LengthMetrics>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| size | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 弧形索引条索引项区域大小（圆形区域的直径）。不支持设置为百分比。 默认值：24.0 单位：vp |
+| size | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 字母索引条字母区域大小，字母区域为圆形，即圆形直径。不支持设置为百分比。 默认值：24.0 单位：vp |
 
 #### [h2]selected
 
@@ -233,13 +233,13 @@ selected(index: Optional<number>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| index | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 选中项索引值。若超出有效索引范围，则取默认值0。 默认值：0 该参数支持[!!](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-binding)双向绑定变量。 |
+| index | Optional | 是 | 选中项索引值。 默认值：0 该参数支持[!!](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-binding)双向绑定变量。 |
 
 #### [h2]autoCollapse
 
 autoCollapse(enable: Optional<boolean>)
 
-设置是否使用自适应折叠模式。当索引项过多时，组件会根据可用显示空间自动调整索引项的显示布局。
+设置是否使用自适应折叠模式。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -267,7 +267,7 @@ popupBackgroundBlurStyle(style: Optional<BlurStyle>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| style | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 设置提示弹窗的背景模糊材质。 默认值：BlurStyle.NONE。 设置此属性后不建议再设置[popupBackground](#popupbackground)属性。 |
+| style | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 设置提示弹窗的背景模糊材质。 |
 
 #### 事件
 
@@ -287,7 +287,7 @@ onSelect(handler: Optional<OnSelectCallback>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| handler | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 回调函数，用于处理索引条选中事件。当用户点击或滑动索引条选中某项时触发，回调中返回当前选中项的索引值。 |
+| handler | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 回调函数类型。 |
 
 #### ArcAlphabetIndexerInitInfo对象说明
 
@@ -336,7 +336,7 @@ import {
   ArcAlphabetIndexer,
   ArcAlphabetIndexerAttribute
 } from '@kit.ArkUI';
-// 本示例代码兼容API version 21及之前版本，因此手动导入了ArcListAttribute、ArcListItemAttribute、ArcAlphabetIndexerAttribute。从API version 22开始，无需手动导入这些Attribute类型。具体请参考ArcList、ArcListItem、ArcAlphabetIndexer的导入模块说明。
+// 从API version 22开始，无需手动导入ArcListAttribute、ArcListItemAttribute、ArcAlphabetIndexerAttribute。具体请参考ArcList、ArcListItem、ArcAlphabetIndexer的导入模块说明。
 
 @Entry
 @Component
@@ -361,7 +361,7 @@ struct ArcListAndIndexer {
     Column() {
       Row() {
         Stack() {
-          ArcList({ scroller: this.scrollerForList, initialIndex: 0 }) {
+          ArcList({ scroller : this.scrollerForList, initialIndex: 0 }) {
             ForEach(this.arrName, (itemName: string, index: number) => {
               ArcListItem() {
                 Text(itemName)
@@ -420,7 +420,7 @@ struct ArcListAndIndexer {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088231.gif)
+ ![](./img/zh-cn_image_0000002701639936.gif)
 
 #### [h2]示例2（设置弹窗显示）
 
@@ -517,4 +517,4 @@ struct ArcListAndIndexer {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928401.gif)
+ ![](./img/zh-cn_image_0000002731359157.gif)

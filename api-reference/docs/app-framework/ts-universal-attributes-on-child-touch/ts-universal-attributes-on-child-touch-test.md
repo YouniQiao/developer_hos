@@ -2,8 +2,8 @@
 title: "自定义事件分发"
 upstream_id: "harmonyos-references/ts-universal-attributes-on-child-touch-test"
 catalog: "harmonyos-references"
-content_hash: "2fe8a224e8c2"
-synced_at: "2026-07-28T16:41:56.936108"
+content_hash: "74cdd336073c"
+synced_at: "2026-08-29T18:12:45.193405"
 ---
 
 # 自定义事件分发
@@ -180,7 +180,7 @@ struct ListExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848330.gif)
+ ![](./img/zh-cn_image_0000002701799378.gif)
 
 #### [h2]示例2（设置事件派发策略为FORWARD）
 
@@ -254,7 +254,7 @@ struct ListExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087759.gif)
+ ![](./img/zh-cn_image_0000002731518663.gif)
 
 #### [h2]示例3（设置事件派发策略为DEFAULT）
 
@@ -317,10 +317,10 @@ struct ListExample {
     .backgroundColor(0xF1F3F5)
     .justifyContent(FlexAlign.End)
     .padding({ left: 12, right: 12, bottom: 24 })
-    .onChildTouchTest(() => {
+    .onChildTouchTest((touchInfo) => {
       return { strategy: TouchTestStrategy.DEFAULT }
     })
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685927931.gif)
+ ![](./img/zh-cn_image_0000002701639466.gif)

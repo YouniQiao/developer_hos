@@ -2,15 +2,15 @@
 title: "arkweb_net_error_list.h"
 upstream_id: "harmonyos-references/capi-arkweb-net-error-list-h"
 catalog: "harmonyos-references"
-content_hash: "e90bf0c8fdb4"
-synced_at: "2026-07-09T17:25:40.290417"
+content_hash: "7238c1b0d976"
+synced_at: "2026-08-29T18:16:02.635188"
 ---
 
 # arkweb_net_error_list.h
 
 #### 概述
 
-声明ArkWeb网络协议栈错误码。
+声明ArkWeb网络协议栈错误码。该枚举定义了ArkWeb网络协议栈中可能出现的各种错误类型，覆盖网络连接、SSL/TLS、证书验证、HTTP/2、QUIC、缓存等多个方面的错误场景。开发者可以通过这些错误码快速定位网络请求失败的原因，便于进行故障诊断和错误处理。
 
 引用文件： <web/arkweb_net_error_list.h>
 
@@ -76,7 +76,7 @@ enum ArkWeb_NetError
 | ARKWEB_ERR_BLOCKED_BY_RESPONSE = -27 | 请求失败，因为响应不满足要求（例如“X-Frame-Options”和“Content Security Policy”检查以及“Cross Origin Resource Policy”）。 |
 | ARKWEB_ERR_CLEARTEXT_NOT_PERMITTED = -29 | 由于系统策略禁止某些或所有明文请求，请求被阻止。 |
 | ARKWEB_ERR_BLOCKED_BY_CSP = -30 | 请求被内容安全策略阻止。 |
-| ARKWEB_ERR_H2_OR_QUIC_REQUIRED = -31 | 由于没有H/2或QUIC会话，请求被阻止。 |
+| ARKWEB_ERR_H2_OR_QUIC_REQUIRED = -31 | 由于没有HTTP/2或QUIC会话，请求被阻止。 |
 | ARKWEB_ERR_BLOCKED_BY_ORB = -32 | 请求被CORB或ORB阻止。 |
 | ARKWEB_ERR_CONNECTION_CLOSED = -100 | 连接已关闭（对应于TCP FIN）。 |
 | ARKWEB_ERR_CONNECTION_RESET = -101 | 连接被重置（对应于TCP RST）。 |
@@ -96,7 +96,7 @@ enum ArkWeb_NetError
 | ARKWEB_ERR_PROXY_AUTH_UNSUPPORTED = -115 | 代理请求进行身份验证（用于建立隧道，但使用的方法不受支持）。 |
 | ARKWEB_ERR_BAD_SSL_CLIENT_AUTH_CERT = -117 | SSL握手未能成功，原因是客户端证书不正确或缺失。 |
 | ARKWEB_ERR_CONNECTION_TIMED_OUT = -118 | 连接尝试超时。 |
-| ARKWEB_ERR_HOST_RESOLVER_QUEUE_TOO_LARGE = -119 | 有太多待处理的DNS解析，因此队列中的一个请求被中止了。 |
+| ARKWEB_ERR_HOST_RESOLVER_QUEUE_TOO_LARGE = -119 | DNS解析队列已满，无法接受新的解析请求。 |
 | ARKWEB_ERR_SOCKS_CONNECTION_FAILED = -120 | 为目标主机建立到SOCKS代理服务器的连接失败。 |
 | ARKWEB_ERR_SOCKS_CONNECTION_HOST_UNREACHABLE = -121 | SOCKS代理服务器无法建立与目标主机的连接，因为该主机无法访问。 |
 | ARKWEB_ERR_ALPN_NEGOTIATION_FAILED = -122 | 协商备用协议的请求失败。 |

@@ -2,8 +2,8 @@
 title: "FIDO2_AuthenticatorSelectionCriteria"
 upstream_id: "harmonyos-references/_f_i_d_o2___authenticator_selection_criteria"
 catalog: "harmonyos-references"
-content_hash: "7b792f8301dd"
-synced_at: "2026-07-28T16:50:31.022125"
+content_hash: "36f0b9270b86"
+synced_at: "2026-08-29T18:16:31.544573"
 ---
 
 # FIDO2_AuthenticatorSelectionCriteria
@@ -24,7 +24,7 @@ synced_at: "2026-07-28T16:50:31.022125"
 
 | 名称 | 描述 |
 | --- | --- |
-| [FIDO2_AuthenticatorAttachment](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey#fido2_authenticatorattachment-1) [authenticatorAttachment](#authenticatorattachment) | 认证器信息（FIDO2_PLATFORM表示平台，FIDO2_ROAMING表示漫游）。默认值为FIDO2_PLATFORM。可选。 |
+| [FIDO2_AuthenticatorAttachment](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey#fido2_authenticatorattachment-1) [authenticatorAttachment](#authenticatorattachment) | 认证器信息（FIDO2_PLATFORM表示平台，FIDO2_CROSS_PLATFORM表示漫游）。默认值为FIDO2_PLATFORM。可选。 |
 | const char * [residentKey](#residentkey) | 常驻键。默认空。可选。 |
 | bool [requireResidentKey](#requireresidentkey) | 是否需要常驻键，true代表需要常驻键，false代表不需要。默认值为false。可选。 |
 | [FIDO2_UserVerificationRequirement](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey#fido2_userverificationrequirement-1) [userVerification](#userverification) | 用户认证需求枚举。默认值为FIDO2_PREFERRED。可选。 |
@@ -38,7 +38,7 @@ FIDO2_AuthenticatorAttachment FIDO2_AuthenticatorSelectionCriteria::authenticato
 ```
  描述
 
-认证器信息（平台、漫游）。可选。
+认证器信息（平台、漫游）。默认值为FIDO2_PLATFORM。可选。
 
 #### [h2]requireResidentKey
 

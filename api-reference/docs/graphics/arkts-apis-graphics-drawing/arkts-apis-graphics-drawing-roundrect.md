@@ -2,13 +2,13 @@
 title: "Class (RoundRect)"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing-roundrect"
 catalog: "harmonyos-references"
-content_hash: "28e4d766fd20"
-synced_at: "2026-07-09T01:00:52.476354"
+content_hash: "018164c4d89f"
+synced_at: "2026-08-29T18:17:50.595785"
 ---
 
 # Class (RoundRect)
 
-圆角矩形对象。
+圆角矩形对象。支持设置和获取指定圆角位置的圆角半径，以及对圆角矩形进行平移操作。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -42,7 +42,7 @@ constructor(roundRect: RoundRect)
 ```
 import { common2D, drawing } from '@kit.ArkGraphics2D';
 
-let rect: common2D.Rect = {left : 100, top : 100, right : 500, bottom : 300};
+let rect: common2D.Rect = {left: 100, top: 100, right: 500, bottom: 300};
 let roundRect = new drawing.RoundRect(rect, 50, 50);
 let roundRect2 = new drawing.RoundRect(roundRect);
 ```
@@ -51,7 +51,7 @@ let roundRect2 = new drawing.RoundRect(roundRect);
 
 constructor(rect: common2D.Rect, xRadii: number, yRadii: number)
 
-构造一个圆角矩形对象，当且仅当xRadii和yRadii均大于0时，圆角生效，否则只会构造一个矩形。
+构造一个圆角矩形对象，当且仅当 xRadii 和 yRadii 均大于 0 时，圆角生效，否则只会构造一个矩形。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -60,8 +60,8 @@ constructor(rect: common2D.Rect, xRadii: number, yRadii: number)
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | rect | [common2D.Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-common2d#rect) | 是 | 需要创建的圆角矩形区域。 |
-| xRadii | number | 是 | X轴上的圆角半径，该参数为浮点数，小于等于0时无效。单位为物理像素px。 |
-| yRadii | number | 是 | Y轴上的圆角半径，该参数为浮点数，小于等于0时无效。单位为物理像素px。 |
+| xRadii | number | 是 | x轴方向的圆角半径，该参数为浮点数，取值大于0时圆角生效，小于等于0时圆角不生效。单位为物理像素px。 |
+| yRadii | number | 是 | y轴方向的圆角半径，该参数为浮点数，取值大于0时圆角生效，小于等于0时圆角不生效。单位为物理像素px。 |
 
 错误码：
 
@@ -69,14 +69,14 @@ constructor(rect: common2D.Rect, xRadii: number, yRadii: number)
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error.Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
 
 示例：
 
 ```
 import { common2D, drawing } from '@kit.ArkGraphics2D';
 
-let rect: common2D.Rect = {left : 100, top : 100, right : 500, bottom : 300};
+let rect: common2D.Rect = {left: 100, top: 100, right: 500, bottom: 300};
 let roundRect = new drawing.RoundRect(rect, 50, 50);
 ```
 
@@ -93,8 +93,8 @@ setCorner(pos: CornerPos, x: number, y: number): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | pos | [CornerPos](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-e#cornerpos12) | 是 | 圆角位置。 |
-| x | number | 是 | x轴方向的圆角半径，该参数为浮点数，小于等于0时无效。单位为物理像素px。 |
-| y | number | 是 | y轴方向的圆角半径，该参数为浮点数，小于等于0时无效。单位为物理像素px。 |
+| x | number | 是 | x轴方向的圆角半径，该参数为浮点数，取值大于0时该圆角半径设置生效，小于等于0时该圆角半径设置不生效。单位为物理像素px。 |
+| y | number | 是 | y轴方向的圆角半径，该参数为浮点数，取值大于0时该圆角半径设置生效，小于等于0时该圆角半径设置不生效。单位为物理像素px。 |
 
 错误码：
 
@@ -102,14 +102,14 @@ setCorner(pos: CornerPos, x: number, y: number): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error.Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types;3.Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 
 示例：
 
 ```
 import { drawing } from '@kit.ArkGraphics2D';
 
-let roundRect : drawing.RoundRect = new drawing.RoundRect({left: 0, top: 0, right: 300, bottom: 300}, 50, 50);
+let roundRect: drawing.RoundRect = new drawing.RoundRect({left: 0, top: 0, right: 300, bottom: 300}, 50, 50);
 roundRect.setCorner(drawing.CornerPos.TOP_LEFT_POS, 150, 150);
 ```
 
@@ -146,17 +146,17 @@ getCorner(pos: CornerPos): common2D.Point
 ```
 import { drawing } from '@kit.ArkGraphics2D';
 
-let roundRect : drawing.RoundRect = new drawing.RoundRect({left: 0, top: 0, right: 300, bottom: 300}, 50, 50);
+let roundRect: drawing.RoundRect = new drawing.RoundRect({left: 0, top: 0, right: 300, bottom: 300}, 50, 50);
 let cornerRadius = roundRect.getCorner(drawing.CornerPos.BOTTOM_LEFT_POS);
-console.info("getCorner---"+cornerRadius.x)
-console.info("getCorner---"+cornerRadius.y)
+console.info("getCorner---" + cornerRadius.x);
+console.info("getCorner---" + cornerRadius.y);
 ```
 
 #### offset12+
 
 offset(dx: number, dy: number): void
 
-将圆角矩形分别沿x轴方向和y轴方向平移dx,dy。
+将圆角矩形沿x轴方向平移dx、沿y轴方向平移dy。
 
 系统能力： SystemCapability.Graphics.Drawing
 
@@ -180,6 +180,6 @@ offset(dx: number, dy: number): void
 ```
 import { drawing } from '@kit.ArkGraphics2D';
 
-let roundRect : drawing.RoundRect = new drawing.RoundRect({left: 0, top: 0, right: 300, bottom: 300}, 50, 50);
+let roundRect: drawing.RoundRect = new drawing.RoundRect({left: 0, top: 0, right: 300, bottom: 300}, 50, 50);
 roundRect.offset(100, 100);
 ```

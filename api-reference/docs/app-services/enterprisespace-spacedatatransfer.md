@@ -2,8 +2,8 @@
 title: "@hms.enterpriseSpaceService.fileTransfer(空间数据传输)"
 upstream_id: "harmonyos-references/enterprisespace-spacedatatransfer"
 catalog: "harmonyos-references"
-content_hash: "5bbe3e12adf3"
-synced_at: "2026-07-28T16:52:36.191894"
+content_hash: "1d954d151b53"
+synced_at: "2026-08-29T18:18:14.030726"
 ---
 
 # @hms.enterpriseSpaceService.fileTransfer(空间数据传输)
@@ -20,7 +20,17 @@ synced_at: "2026-07-28T16:52:36.191894"
 import { fileTransfer } from '@kit.EnterpriseSpaceKit';
 ```
 
-#### AuditInfo
+#### fileTransfer
+
+该类为企业安全管控类应用提供下发空间互传策略能力。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.EnterpriseSpace.SpaceDataTransfer
+
+起始版本： 6.0.0(20)
+
+#### [h2]AuditInfo
 
 审批信息。
 
@@ -39,7 +49,7 @@ import { fileTransfer } from '@kit.EnterpriseSpaceKit';
 | comments | string | 否 | 否 | 表示审批评论。无位数限制。 |
 | status | string | 否 | 否 | 表示文件审批状态。其中，"1"表示等待审批，"2"表示取消审批，"3"表示拒绝审批，"4"表示同意审批。 |
 
-#### setAuditInfo
+#### [h2]setAuditInfo
 
 setAuditInfo(transactionNum: string, info: AuditInfo): number
 
@@ -99,7 +109,7 @@ try {
 }
 ```
 
-#### getAuditInfo
+#### [h2]getAuditInfo
 
 getAuditInfo(transactionNum: string): AuditInfo
 
@@ -150,7 +160,7 @@ try {
 }
 ```
 
-#### policyPush
+#### [h2]policyPush
 
 policyPush(policyContext: string): void
 
@@ -178,7 +188,7 @@ policyPush(policyContext: string): void
 
 | **参数名** | **说明** | **示例** |
 | --- | --- | --- |
-| data_list | 定义个人空间向企业空间发送文件时的检测规则。 | [ { "allow": "VirusCheck.result == 0", "approval": "", "check_point": "VirusCheck", "check_point_name": "VirusCheck_in", "is_enable": "true", "forbidden": "VirusCheck.result == 1", "order": "0" } ] |
+| data_list | 定义个人空间向企业空间发送文件时的检测规则。 | [ { "allow": "VirusCheck.Result == 0", "approval": "", "check_point": "VirusCheck", "check_point_name": "VirusCheck_in", "is_enable": "true", "forbidden": "VirusCheck.Result == 1", "order": "0" } ] |
 
 - **outgoing_check**
 
@@ -204,12 +214,12 @@ policyPush(policyContext: string): void
 
 | **参数名** | **说明** | **示例** |
 | --- | --- | --- |
-| allow | 放通动作配置，通过表达式配置。 | "VirusCheck.result == 0" |
+| allow | 放通动作配置，通过表达式配置。 | "VirusCheck.Result == 0" |
 | approval | 审批动作配置，个人空间向企业空间发送文件时的审批不生效，不需要配置。 | "VirusCheck.Result == 10" |
 | check_point | 检测点类型。 SecurityCheck：安全检查 VirusCheck：病毒检查 | "SecurityCheck" |
 | check_point_name | 检测点名称。由用户自定义，无长度限制。 | "VirusCheck_in" |
 | is_enable | 配置个人空间向企业空间发送文件时检测的规则是否生效。可选参数。 true：生效 false：不生效 默认值：true | "true" |
-| forbidden | 拦截动作配置信息，通过“VirusCheck.Result == xx”样式表达拦截动作，当用“or”连接多个表达式时，多个拦截动作组合配置。“xx”具体取值由业务决定。 | "VirusCheck.result == 1 or VirusCheck.result == 2" |
+| forbidden | 拦截动作配置信息，通过“VirusCheck.Result == xx”样式表达拦截动作，当用“or”连接多个表达式时，多个拦截动作组合配置。“xx”具体取值由业务决定。 | "VirusCheck.Result == 1 or VirusCheck.Result == 2" |
 | order | 检测点顺序号，编号从0开始。空间互传服务会根据编号顺序依次处理检测点。 | "0" |
 
 - **outgoing_check**下的**data_list**
@@ -250,12 +260,12 @@ policyContext内容可参考如下：
     "incoming_check": {
       "data_list": [
         {
-          "allow": "VirusCheck.result == 0",
+          "allow": "VirusCheck.Result == 0",
           "approval": "",
           "check_point": "VirusCheck",
           "check_point_name": "VirusCheck_in",
           "is_enable": "true",
-          "forbidden": "VirusCheck.result == 1",
+          "forbidden": "VirusCheck.Result == 1",
           "order": "0"
         }
       ]
@@ -320,7 +330,7 @@ policyContext内容可参考如下：
 import { fileTransfer } from '@kit.EnterpriseSpaceKit';
 
 const policyContext: string =
-  '{\"config\":{\"inEnable\":\"1\",\"incoming_check\":{\"data_list\":[{\"allow\":\"VirusCheck.result == 0\",\"approval\":\"\",\"check_point\":\"VirusCheck\",\"check_point_name\":\"VirusCheck_in\",\"forbidden\":\"VirusCheck.result == 1\",\"order\":\"0\"}]},\"outEnable\":\"0\",\"outgoing_check\":{\"data_list\":[{\"allow\":\"SecurityCheck.Result == 3 or SecurityCheck.Result == 4 or SecurityCheck.Result == 6 or SecurityCheck.Result == 7\",\"approval\":\"SecurityCheck.Result == 10\",\"check_point\":\"SecurityCheck\",\"check_point_name\":\"SecurityCheck_out\",\"forbidden\":\"SecurityCheck.Result == 0 or SecurityCheck.Result == 1 or SecurityCheck.Result == 12 or SecurityCheck.Result == 2 or SecurityCheck.Result == 5 or SecurityCheck.Result == 8 or SecurityCheck.Result == 9 or SecurityCheck.Result == 11\",\"order\":\"0\"}]},\"checkpoint_config\":{\"data_list\":[{\"check_point_name\":\"SecurityCheck\",\"bundle_name\":\"com.example.enterprisespacekit_samplecode_clientdemo_arkts\",\"ability_name\":\"TestScanAbility\",\"func_code\":\"2\",\"type\":\"2\"},{\"check_point_name\":\"VirusCheck\",\"bundle_name\":\"com.example.enterprisespacekit_samplecode_clientdemo_arkts\",\"ability_name\":\"TestScanAbility\",\"func_code\":\"3\",\"type\":\"1\"}]},\"approvalpoint_config\":{\"data_list\":[{\"bundle_name\":\"com.example.enterprisespacekit_samplecode_clientdemo_arkts\",\"ability_name\":\"TestApprovalAbility\"}]}}}';
+  '{\"config\":{\"inEnable\":\"1\",\"incoming_check\":{\"data_list\":[{\"allow\":\"VirusCheck.Result == 0\",\"approval\":\"\",\"check_point\":\"VirusCheck\",\"check_point_name\":\"VirusCheck_in\",\"forbidden\":\"VirusCheck.Result == 1\",\"order\":\"0\"}]},\"outEnable\":\"0\",\"outgoing_check\":{\"data_list\":[{\"allow\":\"SecurityCheck.Result == 3 or SecurityCheck.Result == 4 or SecurityCheck.Result == 6 or SecurityCheck.Result == 7\",\"approval\":\"SecurityCheck.Result == 10\",\"check_point\":\"SecurityCheck\",\"check_point_name\":\"SecurityCheck_out\",\"forbidden\":\"SecurityCheck.Result == 0 or SecurityCheck.Result == 1 or SecurityCheck.Result == 12 or SecurityCheck.Result == 2 or SecurityCheck.Result == 5 or SecurityCheck.Result == 8 or SecurityCheck.Result == 9 or SecurityCheck.Result == 11\",\"order\":\"0\"}]},\"checkpoint_config\":{\"data_list\":[{\"check_point_name\":\"SecurityCheck\",\"bundle_name\":\"com.example.enterprisespacekit_samplecode_clientdemo_arkts\",\"ability_name\":\"TestScanAbility\",\"func_code\":\"2\",\"type\":\"2\"},{\"check_point_name\":\"VirusCheck\",\"bundle_name\":\"com.example.enterprisespacekit_samplecode_clientdemo_arkts\",\"ability_name\":\"TestScanAbility\",\"func_code\":\"3\",\"type\":\"1\"}]},\"approvalpoint_config\":{\"data_list\":[{\"bundle_name\":\"com.example.enterprisespacekit_samplecode_clientdemo_arkts\",\"ability_name\":\"TestApprovalAbility\"}]}}}';
 fileTransfer.policyPush(policyContext);
 console.info(`Succeeded in pushing policy.`);
 ```

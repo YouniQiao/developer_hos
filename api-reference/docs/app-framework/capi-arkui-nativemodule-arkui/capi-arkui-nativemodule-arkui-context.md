@@ -2,8 +2,8 @@
 title: "ArkUI_Context"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-context"
 catalog: "harmonyos-references"
-content_hash: "3cac011c4db3"
-synced_at: "2026-07-28T16:49:26.837483"
+content_hash: "b40cf430ce4f"
+synced_at: "2026-08-29T18:15:42.787620"
 ---
 
 # ArkUI_Context
@@ -20,4 +20,4 @@ ArkUI native UI 的上下文实例对象，用于表示组件所在页面的 UIC
 
 相关模块： [ArkUI_NativeModule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule)
 
-所在头文件： [drag_and_drop.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drag-and-drop-h)
+所在头文件： [native_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h)

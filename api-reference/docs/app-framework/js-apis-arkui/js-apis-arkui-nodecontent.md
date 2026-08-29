@@ -2,8 +2,8 @@
 title: "NodeContent"
 upstream_id: "harmonyos-references/js-apis-arkui-nodecontent"
 catalog: "harmonyos-references"
-content_hash: "fbecc119da95"
-synced_at: "2026-07-28T16:41:40.030720"
+content_hash: "e52a65c26d23"
+synced_at: "2026-08-29T18:12:35.463655"
 ---
 
 # NodeContent
@@ -65,7 +65,7 @@ struct Parent {
 ```
  上述代码中so的实现可参考[Native XComponent](https://gitcode.com/HarmonyOS_Samples/guide-snippets/tree/master/ArkUISample/NativeXComponentSample)。
 
-#### [h2]addFrameNode12+
+#### [h2]addFrameNode
 
 addFrameNode(node: FrameNode): void
 
@@ -89,7 +89,7 @@ addFrameNode(node: FrameNode): void
 | --- | --- |
 | 100025 | The parameter is invalid. Details about the invalid parameter and the reason are included in the error message. For example: "The parameter 'node' is invalid: it cannot be adopted." 适用版本：22+ |
 
-#### [h2]removeFrameNode12+
+#### [h2]removeFrameNode
 
 removeFrameNode(node: FrameNode): void
 

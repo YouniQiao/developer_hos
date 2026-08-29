@@ -2,13 +2,13 @@
 title: "图像效果"
 upstream_id: "harmonyos-references/ts-universal-attributes-image-effect"
 catalog: "harmonyos-references"
-content_hash: "026a678acc4e"
-synced_at: "2026-08-24T15:40:09.004479"
+content_hash: "bf54345cd508"
+synced_at: "2026-08-29T18:12:52.137874"
 ---
 
 # 图像效果
 
-设置组件的模糊、阴影、球面效果以及设置图片的图像效果。
+设置组件的模糊、阴影、球面效果以及设置图像效果。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
 
@@ -16,7 +16,7 @@ synced_at: "2026-08-24T15:40:09.004479"
 
 blur(value: number, options?: BlurOptions): T
 
-为组件添加内容模糊效果。
+为组件添加内容模糊效果。当组件设置了BlendApplyType.OFFSCREEN的blendMode时，该接口可能无法截取到正确画面。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -28,14 +28,14 @@ blur(value: number, options?: BlurOptions): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 当前组件添加内容模糊效果，入参为模糊半径，模糊半径越大越模糊，value值小于等于0时不模糊。 |
-| options11+ | [BlurOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-foreground-blur-style#bluroptions11) | 否 | 灰阶模糊参数。对图像中的黑白色进行色阶调整，使其趋于灰色更为柔和美观，对图像中的彩色调整没有效果。 默认值：grayscale: [0,0] |
+| value | number | 是 | 模糊半径，模糊半径越大越模糊，值小于等于0时不模糊。 单位：px |
+| options11+ | [BlurOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-foreground-blur-style#bluroptions11) | 否 | 灰阶模糊参数。对图像中的黑白色进行色阶调整，使黑白灰度过渡更加平滑柔和，对图像中的彩色调整没有效果。 默认值：grayscale: [0,0] |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### blur18+
 
@@ -55,14 +55,14 @@ blur(blurRadius: Optional<number>, options?: BlurOptions): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| blurRadius | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 当前组件添加内容模糊效果，入参为模糊半径，模糊半径越大越模糊，blurRadius值小于等于0时不模糊。 当blurRadius的值为undefined时，维持之前取值。从未设置该属性时，默认值为0，表示不模糊。 |
+| blurRadius | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 模糊半径，模糊半径越大越模糊，值小于等于0时不模糊。 单位：px 当blurRadius的值为undefined时，维持之前取值。从未设置该属性时，默认值为0，表示不模糊。 |
 | options | [BlurOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-foreground-blur-style#bluroptions11) | 否 | 灰阶模糊参数。对图像中的黑白色进行色阶调整，使其趋于灰色更为柔和美观，对图像中的彩色调整没有效果。 默认值：grayscale: [0,0] |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### blur19+
 
@@ -82,7 +82,7 @@ blur(blurRadius: Optional<number>, options?: BlurOptions, sysOptions?: SystemAda
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| blurRadius | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 当前组件添加内容模糊效果，入参为模糊半径，模糊半径越大越模糊，blurRadius值小于等于0时不模糊。 当blurRadius的值为undefined时，维持之前取值。从未设置该属性时，默认值为0，表示不模糊。 |
+| blurRadius | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 模糊半径，模糊半径越大越模糊，值小于等于0时不模糊。 单位：px 当blurRadius的值为undefined时，维持之前取值。从未设置该属性时，默认值为0，表示不模糊。 |
 | options | [BlurOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-foreground-blur-style#bluroptions11) | 否 | 灰阶模糊参数。对图像中的黑白色进行色阶调整，使其趋于灰色更为柔和美观，对图像中的彩色调整没有效果。 默认值：grayscale: [0,0] |
 | sysOptions | [SystemAdaptiveOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#systemadaptiveoptions19) | 否 | 系统自适应调节参数。 默认值：{ disableSystemAdaptation: false } |
 
@@ -90,7 +90,7 @@ blur(blurRadius: Optional<number>, options?: BlurOptions, sysOptions?: SystemAda
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### shadow
 
@@ -98,7 +98,7 @@ shadow(value: ShadowOptions | ShadowStyle): T
 
 为组件添加阴影效果。
 
-卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用，ArkTS卡片上不支持参数为 [ShadowStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadowstyle10枚举说明)类型。
+卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用，ArkTS卡片上不支持参数为 [ShadowStyle](#shadowstyle10枚举说明)类型。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -114,7 +114,7 @@ shadow(value: ShadowOptions | ShadowStyle): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### shadow18+
 
@@ -122,7 +122,7 @@ shadow(options: Optional<ShadowOptions | ShadowStyle>): T
 
 为组件添加阴影效果。与[shadow](#shadow)相比，options参数新增了对undefined类型的支持。
 
-卡片能力： 从API version 18开始，该接口支持在ArkTS卡片中使用，ArkTS卡片上不支持参数为[ShadowStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadowstyle10枚举说明)类型。
+卡片能力： 从API version 18开始，该接口支持在ArkTS卡片中使用，ArkTS卡片上不支持参数为[ShadowStyle](#shadowstyle10枚举说明)类型。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -134,19 +134,19 @@ shadow(options: Optional<ShadowOptions | ShadowStyle>): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 为当前组件添加阴影效果。 入参类型为ShadowOptions时，可以指定模糊半径、阴影的颜色、X轴和Y轴的偏移量。 入参类型为ShadowStyle时，可指定不同阴影样式。 当options的值为undefined时，恢复为无样式的阴影效果。 |
+| options | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 为当前组件添加阴影效果。 入参类型为ShadowOptions时，可以指定模糊半径、阴影的颜色、X轴和Y轴的偏移量。 入参类型为ShadowStyle时，可指定不同阴影样式。 当options的值为undefined时，恢复为无阴影效果。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### grayscale
 
 grayscale(value: number): T
 
-为组件添加灰度效果。上层渲染灰度会覆盖下层子组件渲染。不通过该接口设置时，默认无变化。
+为组件添加灰度效果。上层渲染灰度会覆盖下层子组件渲染。未设置时，默认无变化。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -164,13 +164,13 @@ grayscale(value: number): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### grayscale18+
 
 grayscale(grayscale: Optional<number>): T
 
-为组件添加灰度效果。上层渲染灰度会覆盖下层子组件渲染。不通过该接口设置时，默认无变化。与[grayscale](#grayscale)相比，grayscale参数新增了对undefined类型的支持。
+为组件添加灰度效果。上层渲染灰度会覆盖下层子组件渲染。未设置时，默认无变化。与[grayscale](#grayscale)相比，grayscale参数新增了对undefined类型的支持。
 
 卡片能力： 从API version 18开始，该接口支持在ArkTS卡片中使用。
 
@@ -190,13 +190,13 @@ grayscale(grayscale: Optional<number>): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### brightness
 
 brightness(value: number): T
 
-为组件添加高光效果。不通过该接口设置时，默认无变化。
+为组件添加高光效果。未设置时，默认无变化。与lightUpEffect方法相比，brightness以乘数方式调节亮度（值大于1可超过原始亮度），适合需要增强或减弱亮度的场景；lightUpEffect以程度方式调节亮度（值范围[0,1]，不能超过原始亮度），适合需要控制图像亮起程度的场景。当组件设置了BlendApplyType.OFFSCREEN的blendMode时，该接口可能无法截取到正确画面。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -214,13 +214,13 @@ brightness(value: number): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### brightness18+
 
 brightness(brightness: Optional<number>): T
 
-为组件添加高光效果。不通过该接口设置时，默认无变化。与[brightness](#brightness)相比，brightness参数新增了对undefined类型的支持。
+为组件添加高光效果。未设置时，默认无变化。与[brightness](#brightness)相比，brightness参数新增了对undefined类型的支持。
 
 卡片能力： 从API version 18开始，该接口支持在ArkTS卡片中使用。
 
@@ -240,13 +240,13 @@ brightness(brightness: Optional<number>): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### saturate
 
 saturate(value: number): T
 
-为组件添加饱和度效果。不通过该接口设置时，默认无变化。
+为组件添加饱和度效果。未设置时，默认无变化。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -258,19 +258,19 @@ saturate(value: number): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 为当前组件添加饱和度效果，饱和度为颜色中的含色成分和消色成分(灰)的比例，入参为1时，显示原图像，大于1时含色成分越大，饱和度越大，小于1时消色成分越大，饱和度越小。 推荐取值范围：[0, 50) **说明：** 设置小于0的值时，按值为0处理。 |
+| value | number | 是 | 为当前组件添加饱和度效果，饱和度为颜色中的含色成分和消色成分（灰）的比例，入参为1时，显示原图像，大于1时含色成分越大，饱和度越大，小于1时消色成分越大，饱和度越小。 取值范围：[0, +∞) 推荐取值范围：[0, 50) **说明：** 设置小于0的值时，按值为0处理。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### saturate18+
 
 saturate(saturate: Optional<number>): T
 
-为组件添加饱和度效果。不通过该接口设置时，默认无变化。与[saturate](#saturate)相比，saturate参数新增了对undefined类型的支持。
+为组件添加饱和度效果。未设置时，默认无变化。与[saturate](#saturate)相比，saturate参数新增了对undefined类型的支持。
 
 卡片能力： 从API version 18开始，该接口支持在ArkTS卡片中使用。
 
@@ -284,19 +284,19 @@ saturate(saturate: Optional<number>): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| saturate | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 为当前组件添加饱和度效果，饱和度为颜色中的含色成分和消色成分(灰)的比例，入参为1时，显示原图像，大于1时含色成分越大，饱和度越大，小于1时消色成分越大，饱和度越小。 推荐取值范围：[0, 50) **说明：** 设置小于0的值时，按值为0处理。 当saturate的值为undefined时，恢复为饱和度为1的效果。 |
+| saturate | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 为当前组件添加饱和度效果，饱和度为颜色中的含色成分和消色成分（灰）的比例，入参为1时，显示原图像，大于1时含色成分越大，饱和度越大，小于1时消色成分越大，饱和度越小。 取值范围：[0, +∞) 推荐取值范围：[0, 50) **说明：** 设置小于0的值时，按值为0处理。 当saturate的值为undefined时，恢复为饱和度为1的效果。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### contrast
 
 contrast(value: number): T
 
-为组件添加对比度效果。不通过该接口设置时，默认无变化。
+为组件添加对比度效果。未设置时，默认无变化。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -308,19 +308,19 @@ contrast(value: number): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 为当前组件添加对比度效果，入参为对比度的值。值为1时，显示原图，大于1时，值越大对比度越高，图像越清晰醒目，小于1时，值越小对比度越低，当对比度为0时，图像变为全灰。 推荐取值范围：[0, 10) **说明：** 设置小于0的值时，按值为0处理。 |
+| value | number | 是 | 为当前组件添加对比度效果，入参为对比度的值。值为1时，显示原图，大于1时，值越大对比度越高，图像越清晰醒目，小于1时，值越小对比度越低，当对比度为0时，图像变为全灰。 取值范围：[0, +∞) 推荐取值范围：[0, 10) **说明：** 设置小于0的值时，按值为0处理。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### contrast18+
 
 contrast(contrast: Optional<number>): T
 
-为组件添加对比度效果。不通过该接口设置时，默认无变化。与[contrast](#contrast)相比，contrast参数新增了对undefined类型的支持。
+为组件添加对比度效果。未设置时，默认无变化。与[contrast](#contrast)相比，contrast参数新增了对undefined类型的支持。
 
 卡片能力： 从API version 18开始，该接口支持在ArkTS卡片中使用。
 
@@ -334,13 +334,13 @@ contrast(contrast: Optional<number>): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| contrast | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 为当前组件添加对比度效果，入参为对比度的值。值为1时，显示原图，大于1时，值越大对比度越高，图像越清晰醒目，小于1时，值越小对比度越低，当对比度为0时，图像变为全灰。 推荐取值范围：[0, 10) **说明：** 设置小于0的值时，按值为0处理。 当contrast的值为undefined时，恢复为对比度为1的效果。 |
+| contrast | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 为当前组件添加对比度效果，入参为对比度的值。值为1时，显示原图，大于1时，值越大对比度越高，图像越清晰醒目，小于1时，值越小对比度越低，当对比度为0时，图像变为全灰。 取值范围：[0, +∞) 推荐取值范围：[0, 10) **说明：** 设置小于0的值时，按值为0处理。 当contrast的值为undefined时，恢复为对比度为1的效果。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### invert
 
@@ -364,7 +364,7 @@ invert(value: number | InvertOptions): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### invert18+
 
@@ -390,7 +390,7 @@ invert(options: Optional<number | InvertOptions>): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### sepia
 
@@ -414,7 +414,7 @@ sepia(value: number): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### sepia18+
 
@@ -434,19 +434,19 @@ sepia(sepia: Optional<number>): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| sepia | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 将图像转换为深褐色，降低色彩度，产生温暖复古的图像风格。入参为褐色滤镜强度，值为1则完全是深褐色的，值小于等于0则图像无变化，值大于1会进一步放大色彩偏移比例，图像整体会变得更亮且色彩更加偏黄/偏红，但不属于标准sepia效果。 当sepia的值为undefined时，恢复为图像无变化的效果。 取值范围：[0, +∞)，推荐取值范围：(0, 1]。 |
+| sepia | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 将图像转换为深褐色，降低色彩度，产生温暖复古的图像风格。入参为褐色滤镜强度，值为1则完全是深褐色的，值小于等于0则图像无变化，值大于1会进一步放大色彩偏移比例，图像整体会变得更亮且色彩更加偏黄/偏红，但不属于标准sepia效果。 取值范围：[0, +∞)，推荐取值范围：(0, 1]。 当sepia的值为undefined时，恢复为图像无变化的效果。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### hueRotate
 
 hueRotate(value: number | string): T
 
-色相旋转效果。不通过该接口设置时，默认无变化。
+色相旋转效果。未设置时，默认无变化。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -458,19 +458,19 @@ hueRotate(value: number | string): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | string | 是 | 色相旋转效果，输入参数为旋转角度。 单位：度（°） 取值范围：(-∞, +∞) **说明：** 色调旋转360度会显示原始颜色。先将色调旋转180 度，然后再旋转-180度会显示原始颜色。数据类型为number时，值为90和'90deg'效果一致。 |
+| value | number | string | 是 | 色相旋转效果，输入参数为旋转角度。 单位：度（°） 取值范围：(-∞, +∞) **说明：** 色相旋转360度会显示原始颜色。先将色相旋转180度，然后再旋转-180度会显示原始颜色。数据类型为number时，值为90和'90deg'效果一致。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### hueRotate18+
 
 hueRotate(rotation: Optional<number | string>): T
 
-色相旋转效果。不通过该接口设置时，默认无变化。与[hueRotate](#huerotate)相比，rotation参数新增了对undefined类型的支持。
+色相旋转效果。未设置时，默认无变化。与[hueRotate](#huerotate)相比，rotation参数新增了对undefined类型的支持。
 
 卡片能力： 从API version 18开始，该接口支持在ArkTS卡片中使用。
 
@@ -484,13 +484,13 @@ hueRotate(rotation: Optional<number | string>): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| rotation | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 色相旋转效果，输入参数为旋转角度。 取值范围：(-∞, +∞) string需为数值字符串类型。 **说明：** 色相旋转360度会显示原始颜色。先将色相旋转180 度，然后再旋转-180度会显示原始颜色。数据类型为number时，值为90和'90deg'效果一致。 当rotation的值为undefined时，恢复为无色相旋转的效果。 |
+| rotation | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 色相旋转效果，输入参数为旋转角度。单位为度（°） 取值范围：(-∞, +∞) string需为数值字符串类型。 **说明：** 色相旋转360度会显示原始颜色。先将色相旋转180度，然后再旋转-180度会显示原始颜色。数据类型为number时，值为90和'90deg'效果一致。 当rotation的值为undefined时，恢复为无色相旋转的效果。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### colorBlend
 
@@ -508,13 +508,13 @@ colorBlend(value: Color | string | Resource): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [Color](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#color) | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 是 | 为当前组件添加颜色叠加效果，入参为叠加的颜色字符串。取值可为string类型，如'0x000000'，'rgba(0,0,0,1)'。 |
+| value | [Color](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#color) | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 是 | 为当前组件添加颜色叠加效果，入参为叠加的颜色。取值可为Color类型、string类型或Resource类型，如使用Color.Green，或string类型如'0x000000'、'rgba(0,0,0,1)'。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### colorBlend18+
 
@@ -534,19 +534,19 @@ colorBlend(color: Optional<Color | string | Resource>): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| color | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 为当前组件添加颜色叠加效果，入参为叠加的颜色。取值可为string类型，如'0x000000'，'rgba(0,0,0,1)'。 当color的值为undefined时，恢复为无颜色叠加的效果。 |
+| color | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 为当前组件添加颜色叠加效果，入参为叠加的颜色。取值可为Color枚举值、string类型（如'0x000000'、'rgba(0,0,0,1)'）或Resource资源引用。 当color的值为undefined时，恢复为无颜色叠加的效果。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### linearGradientBlur12+
 
 linearGradientBlur(value: number, options: LinearGradientBlurOptions): T
 
-为组件添加内容线性渐变模糊效果。
+为组件添加内容线性渐变模糊效果。当组件设置了BlendApplyType.OFFSCREEN的blendMode时，该接口可能无法截取到正确画面。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -558,14 +558,14 @@ linearGradientBlur(value: number, options: LinearGradientBlurOptions): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 为模糊半径，模糊半径越大越模糊，为0时不模糊。 取值范围：[0, 1000] |
+| value | number | 是 | 模糊半径，模糊半径越大越模糊，为0时不模糊。 单位：px 取值范围：[0, 1000] |
 | options | [LinearGradientBlurOptions](#lineargradientbluroptions12) | 是 | 设置线性渐变模糊效果。 线性渐变参数，包含模糊程度和模糊位置数组fractionStops，及渐变模糊方向direction。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### linearGradientBlur18+
 
@@ -583,20 +583,20 @@ linearGradientBlur(blurRadius: Optional<number>, options: Optional<LinearGradien
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| blurRadius | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 模糊半径，模糊半径越大越模糊，为0时不模糊。 取值范围：[0, 1000] 当blurRadius的值为undefined时，恢复为渐变模糊为0的效果。 |
-| options | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 设置线性渐变模糊效果。 线性渐变参数，包含模糊程度和模糊位置数组fractionStops，及渐变模糊方向direction。 |
+| blurRadius | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 模糊半径，模糊半径越大越模糊，为0时不模糊。 单位：px 取值范围：[0, 1000] 当blurRadius的值为undefined时，恢复为渐变模糊为0的效果。 |
+| options | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 设置线性渐变模糊效果。 线性渐变参数，包含模糊程度和模糊位置数组fractionStops，及渐变模糊方向direction。 当options的值为undefined时，恢复为无线性渐变模糊的效果。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### renderGroup10+
 
 renderGroup(value: boolean): T
 
-设置是否组成节点组。节点组表示当前组件和子组件组成的子树先在离屏画布中渲染，再与父组件融合绘制。设置为节点组后，系统会缓存绘制结果，提升性能。但如果节点组内的组件频繁更新，缓存失效，可能导致性能下降。此外，设置为节点组后，当前组件的不透明度不为1时，绘制效果可能有差异。
+设置是否组成节点组。节点组表示当前组件和子组件组成的子树先在离屏画布中渲染，再与父组件融合绘制。设置为节点组后，系统会缓存绘制结果，提升性能。与[freeze](#freeze12)方法相比，renderGroup允许组件属性继续更新（但频繁更新会导致缓存失效），适合需要动态更新且希望缓存优化的场景；freeze完全停止内部属性更新，适合静态内容的稳定缓存优化。但如果节点组内的组件频繁更新，缓存失效，可能导致性能下降。此外，设置为节点组后，当前组件的不透明度不为1时，绘制效果可能有差异。
 
 不设置该属性时，默认不组成节点组。
 
@@ -618,13 +618,15 @@ renderGroup(value: boolean): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### renderGroup18+
 
 renderGroup(isGroup: Optional<boolean>): T
 
 设置是否组成节点组。节点组表示当前组件和子组件组成的子树先在离屏画布中渲染，再与父组件融合绘制。设置为节点组后，系统会缓存绘制结果，提升性能。但如果节点组内的组件频繁更新，缓存失效，可能导致性能下降。此外，设置为节点组后，当前组件的不透明度不为1时，绘制效果可能有差异。
+
+![](./img/note_3.0-zh-cn.png) 与[freeze](#freeze12)不同，renderGroup在缓存绘制结果后仍允许内部属性更新（更新时缓存失效），适用于组件需要动态更新的场景；freeze则完全停止内部属性更新，适用于组件内容稳定不需要更新的场景。
 
 与[renderGroup10+](#rendergroup10)相比，isGroup参数新增了对undefined类型的支持。
 
@@ -648,7 +650,7 @@ renderGroup(isGroup: Optional<boolean>): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### blendMode11+
 
@@ -669,13 +671,13 @@ blendMode(value: BlendMode, type?: BlendApplyType): T
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | value | [BlendMode](#blendmode11枚举说明) | 是 | 混合模式。 默认值：BlendMode.NONE **说明：** 混合模式设置为BlendMode.NONE时，blend效果实际为默认的BlendMode.SRC_OVER，且BlendApplyType不生效。 |
-| type | [BlendApplyType](#blendapplytype11枚举说明) | 否 | blendMode实现方式是否离屏。 默认值：BlendApplyType.FAST **说明：** 1. 设置BlendApplyType.FAST时，不离屏。 2. 设置BlendApplyType.OFFSCREEN时，会创建当前组件大小的离屏画布，再将当前组件（含子组件）的内容绘制到离屏画布上，再用指定的混合模式与下方画布已有内容进行混合。使用该实现方式时，将导致[linearGradientBlur12+](#lineargradientblur12)、[backgroundEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundeffect11)、[brightness](#brightness)、[blur](#blur)等需要截屏的接口无法截取到正确的画面。 |
+| type | [BlendApplyType](#blendapplytype11枚举说明) | 否 | blendMode实现方式是否离屏。 默认值：BlendApplyType.FAST **说明：** 1. 设置BlendApplyType.FAST时，不离屏。 2. 设置BlendApplyType.OFFSCREEN时，会创建当前组件大小的离屏画布，再将当前组件（含子组件）的内容绘制到离屏画布上，再用指定的混合模式与下方画布已有内容进行混合。使用该实现方式时，将导致[linearGradientBlur12+](#lineargradientblur12)、[backgroundEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundeffect11)、[brightness](#brightness)、[blur](#blur)等需要截屏的接口无法截取到正确的画面。 3. 混合模式设置为BlendMode.NONE时，BlendApplyType不生效。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### blendMode18+
 
@@ -696,13 +698,13 @@ blendMode(mode: Optional<BlendMode>, type?: BlendApplyType): T
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | mode | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 混合模式。 默认值：BlendMode.NONE 当mode的值为undefined时，恢复为内容不进行混合的效果。 **说明：** 混合模式设置为BlendMode.NONE时，blend效果实际为默认的BlendMode.SRC_OVER，且BlendApplyType不生效。 |
-| type | [BlendApplyType](#blendapplytype11枚举说明) | 否 | blendMode实现方式是否离屏。 默认值：BlendApplyType.FAST **说明：** 1. 设置BlendApplyType.FAST时，不离屏。 2. 设置BlendApplyType.OFFSCREEN时，会创建当前组件大小的离屏画布，再将当前组件（含子组件）的内容绘制到离屏画布上，再用指定的混合模式与下方画布已有内容进行混合。使用该实现方式时，将导致[linearGradientBlur12+](#lineargradientblur12)、[backgroundEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundeffect11)、[brightness](#brightness)、[blur](#blur)等需要截屏的接口无法截取到正确的画面。 |
+| type | [BlendApplyType](#blendapplytype11枚举说明) | 否 | blendMode实现方式是否离屏。 默认值：BlendApplyType.FAST **说明：** 1. 设置BlendApplyType.FAST时，不离屏。 2. 设置BlendApplyType.OFFSCREEN时，会创建当前组件大小的离屏画布，再将当前组件（含子组件）的内容绘制到离屏画布上，再用指定的混合模式与下方画布已有内容进行混合。使用该实现方式时，将导致[linearGradientBlur12+](#lineargradientblur12)、[backgroundEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundeffect11)、[brightness](#brightness)、[blur](#blur)等需要截屏的接口无法截取到正确的画面。 3. 混合模式设置为BlendMode.NONE时，BlendApplyType不生效。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### BlendApplyType11+枚举说明
 
@@ -725,7 +727,7 @@ blendMode(mode: Optional<BlendMode>, type?: BlendApplyType): T
 
 useShadowBatching(value: boolean): T
 
-控件内部子节点的阴影进行同层绘制，同层元素阴影重叠。
+控件内部子节点的阴影是否进行同层绘制，控制同层元素阴影重叠效果。需配合[shadow](#shadow)方法使用，当子节点已通过shadow()设置阴影时，useShadowBatching可控制这些阴影是否进行同层绘制。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -745,13 +747,13 @@ useShadowBatching(value: boolean): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### useShadowBatching18+
 
 useShadowBatching(use: Optional<boolean>): T
 
-控件内部子节点的阴影进行同层绘制，同层元素阴影重叠。与[useShadowBatching11+](#useshadowbatching11)相比，use参数新增了对undefined类型的支持。
+控件内部子节点的阴影是否进行同层绘制，同层绘制时子节点阴影不会产生重叠覆盖效果。需配合[shadow](#shadow)方法使用，当子节点设置了shadow效果时，useShadowBatching可控制子节点阴影进行同层绘制，实现同层阴影不重叠效果。调用顺序：先在子节点上设置shadow属性，再在父容器上设置useShadowBatching(true)。与[useShadowBatching11+](#useshadowbatching11)相比，use参数新增了对undefined类型的支持。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -771,13 +773,13 @@ useShadowBatching(use: Optional<boolean>): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### sphericalEffect12+
 
 sphericalEffect(value: number): T
 
-设置组件的图像球面化程度。
+设置组件的图像球面化程度。球面化效果将组件内容映射到球面曲面上，使图像呈现出类似球体的立体视觉效果，值越大球面弧度越高、立体感越强。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -789,19 +791,19 @@ sphericalEffect(value: number): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 设置组件的图像球面化程度。 取值范围：[0,1]。 **说明：** 1. 如果value等于0则图像保持原样，如果value等于1则图像为完全球面化效果。在0和1之间，数值越大，则球面化程度越高。 value 1为异常情况，value 1按1处理。 2. 组件阴影和外描边不支持球面效果。 3. 设置value大于0时，组件冻屏并且把组件内容绘制到透明离屏buffer上，如果要更新组件属性则需要把value设置为0。 |
+| value | number | 是 | 设置组件的图像球面化程度。球面化效果将组件内容映射到球面曲面上，使图像呈现出类似球体的立体视觉效果，值越大球面弧度越高、立体感越强。 取值范围：[0,1]。 **说明：** 1. 如果value等于0则图像保持原样，如果value等于1则图像为完全球面化效果。在0和1之间，数值越大，则球面化程度越高。 value 1为异常情况，value 1按1处理。 2. 组件阴影和外描边不支持球面效果。 3. 设置value大于0时，组件冻屏并且把组件内容绘制到透明离屏buffer上，如果要更新组件属性则需要把value设置为0。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### sphericalEffect18+
 
 sphericalEffect(effect: Optional<number>): T
 
-设置组件的图像球面化程度。与[sphericalEffect12+](#sphericaleffect12)相比，effect参数新增了对undefined类型的支持。
+设置组件的图像球面化程度。球面化效果将组件内容映射到球面曲面上，使图像呈现出类似球体的立体视觉效果，值越大球面弧度越高、立体感越强。与[sphericalEffect12+](#sphericaleffect12)相比，effect参数新增了对undefined类型的支持。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -813,13 +815,13 @@ sphericalEffect(effect: Optional<number>): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| effect | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 设置组件的图像球面化程度。 取值范围：[0,1]。 **说明：** 1. 如果effect等于0则图像保持原样，如果effect等于1则图像为完全球面化效果。在0和1之间，数值越大，则球面化程度越高。 effect 1为异常情况，effect 1按1处理。 2. 组件阴影和外描边不支持球面效果。 3. 设置effect大于0时，组件冻屏并且把组件内容绘制到透明离屏buffer上，如果要更新组件属性则需要把effect设置为0。 当effect的值为undefined时，恢复为图像球面化程度为0的效果。 |
+| effect | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 设置组件的图像球面化程度。球面化效果将组件内容映射到球面曲面上，使图像呈现出类似球体的立体视觉效果，值越大球面弧度越高、立体感越强。 取值范围：[0,1]。 **说明：** 1. 如果effect等于0则图像保持原样，如果effect等于1则图像为完全球面化效果。在0和1之间，数值越大，则球面化程度越高。 effect 1为异常情况，effect 1按1处理。 2. 组件阴影和外描边不支持球面效果。 3. 设置effect大于0时，组件冻屏并且把组件内容绘制到透明离屏buffer上，如果要更新组件属性则需要把effect设置为0。 当effect的值为undefined时，恢复为图像球面化程度为0的效果。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### lightUpEffect12+
 
@@ -843,7 +845,7 @@ lightUpEffect(value: number): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### lightUpEffect18+
 
@@ -867,7 +869,7 @@ lightUpEffect(degree: Optional<number>): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### pixelStretchEffect12+
 
@@ -891,7 +893,7 @@ pixelStretchEffect(options: PixelStretchEffectOptions): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### pixelStretchEffect18+
 
@@ -915,7 +917,7 @@ pixelStretchEffect(options: Optional<PixelStretchEffectOptions>): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### PixelStretchEffectOptions10+
 
@@ -929,16 +931,16 @@ pixelStretchEffect(options: Optional<PixelStretchEffectOptions>): T
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| left | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 组件图像左边沿像素扩展距离。 默认值：0vp |
-| right | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 组件图像右边沿像素扩展距离。 默认值：0vp |
-| top | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 组件图像上边沿像素扩展距离。 默认值：0vp |
-| bottom | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 组件图像下边沿像素扩展距离。 默认值：0vp |
+| left | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 组件图像左边沿像素扩展距离。需与right、top、bottom方向保持一致：四个方向的扩展统一为非正值或者非负值，不支持百分比和具体值混用。 默认值：0vp |
+| right | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 组件图像右边沿像素扩展距离。需与left、top、bottom方向保持一致：四个方向的扩展统一为非正值或者非负值，不支持百分比和具体值混用。 默认值：0vp |
+| top | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 组件图像上边沿像素扩展距离。需与left、right、bottom方向保持一致：四个方向的扩展统一为非正值或者非负值，不支持百分比和具体值混用。 默认值：0vp |
+| bottom | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 组件图像下边沿像素扩展距离。需与left、right、top方向保持一致：四个方向的扩展统一为非正值或者非负值，不支持百分比和具体值混用。 默认值：0vp |
 
 #### systemBarEffect12+
 
 systemBarEffect(): T
 
-根据背景进行智能反色并且带有模糊效果。
+根据背景颜色自动判断反色区域和反色程度，并叠加模糊效果。智能反色基于背景内容的颜色与亮度特征自动确定反色策略，使组件在不同背景下保持内容可视性；模糊效果对背景内容进行模糊处理，增强系统栏与背景的视觉融合效果。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -950,7 +952,7 @@ systemBarEffect(): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### ShadowType10+枚举说明
 
@@ -964,8 +966,8 @@ systemBarEffect(): T
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| COLOR | 0 | 颜色。 |
-| BLUR | 1 | 模糊。 |
+| COLOR | 0 | 颜色阴影，基于指定颜色值绘制阴影效果。 |
+| BLUR | 1 | 模糊阴影，基于组件内容模糊绘制阴影效果。 |
 
 #### ShadowOptions对象说明
 
@@ -1058,7 +1060,7 @@ systemBarEffect(): T
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| fractionStops | [FractionStop](#fractionstop12)[] | 否 | 否 | 数组中保存的每一个二元数组（取值0-1，小于0则为0，大于1则为1）表示[模糊程度, 模糊位置]；模糊位置需严格递增，开发者传入的数据不符合规范会记录日志，渐变模糊数组中二元数组个数必须大于等于2，否则渐变模糊不生效。 |
+| fractionStops | [FractionStop](#fractionstop12)[] | 否 | 否 | 数组中保存的每一个二元数组（取值0-1，小于0则为0，大于1则为1）表示[模糊分数, 模糊位置]；模糊位置需严格递增，开发者传入的数据不符合规范会记录日志，渐变模糊数组中二元数组个数必须大于等于2，否则渐变模糊不生效。 |
 | direction | [GradientDirection](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#gradientdirection) | 否 | 否 | 渐变模糊方向。 默认值： GradientDirection.Bottom |
 
 #### FractionStop12+
@@ -1079,7 +1081,7 @@ type FractionStop = [ number, number ]
 
 #### InvertOptions11+对象说明
 
-前景智能取反色。
+前景智能取反色。基于灰度阈值区间决定反色取值，参见[invert](#invert)中的详细机制说明。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1089,10 +1091,10 @@ type FractionStop = [ number, number ]
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| low | number | 否 | 否 | 背景颜色灰度值大于阈值区间时的取值。 取值范围：[0, 1] |
-| high | number | 否 | 否 | 背景颜色灰度值小于阈值区间时的取值。 取值范围：[0, 1] |
+| low | number | 否 | 否 | 背景颜色灰度值大于阈值区间时的取值。 取值范围：[0, 1]。设置小于0的值时，按值为0处理。设置大于1的值时，按值为1处理。 |
+| high | number | 否 | 否 | 背景颜色灰度值小于阈值区间时的取值。 取值范围：[0, 1]。设置小于0的值时，按值为0处理。设置大于1的值时，按值为1处理。 |
 | threshold | number | 否 | 否 | 灰度阈值。与thresholdRange配合使用，灰度阈值上下偏移thresholdRange构成阈值区间。 取值范围：[0, 1] |
-| thresholdRange | number | 否 | 否 | 阈值范围。 取值范围：[0, 1] **说明：** 灰度阈值上下偏移thresholdRange构成阈值区间，背景颜色灰度值在区间内取值由high线性渐变到low。 |
+| thresholdRange | number | 否 | 否 | 阈值范围。 取值范围：[0, 1]。设置小于0的值时，按值为0处理；设置大于1的值时，按值为1处理。 **说明：** 灰度阈值上下偏移thresholdRange构成阈值区间，背景颜色灰度值在区间内取值由high线性渐变到low。 |
 
 #### BackgroundImageOptions18+
 
@@ -1117,7 +1119,7 @@ type FractionStop = [ number, number ]
 
 freeze(value: boolean): T
 
-设置当前控件和子控件是否整体离屏渲染绘制后重复绘制缓存，不再进行内部属性更新。
+设置当前控件和子控件是否整体离屏渲染绘制后重复绘制缓存，不再进行内部属性更新。当freeze设置为true时，组件属性更新将被冻结；若需恢复属性更新，需先将freeze设置为false。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 20开始，该接口支持在[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)中调用。
 
@@ -1137,13 +1139,13 @@ freeze(value: boolean): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### freeze18+
 
 freeze(freeze: Optional<boolean>): T
 
-设置当前控件和子控件是否整体离屏渲染绘制后重复绘制缓存，不再进行内部属性更新。与[freeze](#freeze12)相比，freeze参数新增了对undefined类型的支持。
+设置当前控件和子控件是否整体离屏渲染绘制后重复绘制缓存，不再进行内部属性更新。当freeze设置为true时，组件属性更新将被冻结；若需恢复属性更新，需先将freeze设置为false。与[freeze](#freeze12)相比，freeze参数新增了对undefined类型的支持。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 20开始，该接口支持在[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)中调用。
 
@@ -1163,17 +1165,18 @@ freeze(freeze: Optional<boolean>): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### systemMaterial
 
 systemMaterial(material: SystemUiMaterial | undefined): T
 
-设置组件的系统材质。不同系统材质对应不同的属性影响效果，该接口可以影响背景色[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、边框颜色[borderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#bordercolor)、边框宽度[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)、阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)、材质层滤镜[materialFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-filter-effect#materialfilter23)效果，影响的属性与设备算力档位相关，参考[ImmersiveMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#immersivematerial)。使用示例请参考[示例1（设置沉浸式系统材质）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#示例1设置沉浸式系统材质)。
+设置组件的系统材质。不同系统材质对应不同的属性影响效果，该接口可以影响背景色[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、边框颜色[borderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#bordercolor)、边框宽度[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)、阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)、材质层滤镜[materialFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-filter-effect#materialfilter23)效果，影响的属性与设备材质等级相关，参考[ImmersiveMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#immersivematerial)。[ImmersiveMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#immersivematerial)只有在支持沉浸式材质的设备上设置才有效果，在不支持沉浸式材质的设备上可设置但无效果，可通过[isImmersiveMaterialSupported](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#uimaterialisimmersivematerialsupported)判断设备是否支持沉浸式材质。使用示例请参考[示例1（设置沉浸式系统材质）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#示例1设置沉浸式系统材质)。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 在同时设置了材质影响的通用属性发生冲突时，除阴影外，总体原则为后设置的生效，对于阴影属性取决于[ImmersiveMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#immersivematerial)的applyShadow参数。先设置[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)属性后设置[systemMaterial](#systemmaterial)属性：backgroundColor属性被覆盖。在高算力和中算力设备上，背景色属性被清空为透明色；在低算力设备上，材质自带的背景色效果覆盖了先设置的backgroundColor属性。
+- [ImmersiveMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#immersivematerial)只有在支持沉浸式材质的设备上设置才有效果，在不支持沉浸式材质的设备上可设置但无效果，可通过[isImmersiveMaterialSupported](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#uimaterialisimmersivematerialsupported)判断设备是否支持沉浸式材质。在不支持沉浸式材质的设备上，设置ImmersiveMaterial后，组件的样式仍由已设置的通用属性决定，ImmersiveMaterial不会覆盖任何通用属性。
+- 在同时设置了材质影响的通用属性发生冲突时，除阴影外，总体原则为后设置的生效，对于阴影属性取决于[ImmersiveMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#immersivematerial)的applyShadow参数。先设置[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)属性后设置[systemMaterial](#systemmaterial)属性：backgroundColor属性被覆盖。在支持沉浸式材质的高算力和中算力设备上，背景色属性被清空为透明色；在支持沉浸式材质的低算力设备上，材质自带的背景色效果覆盖了先设置的backgroundColor属性。
 - 先设置[systemMaterial](#systemmaterial)属性后设置[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)属性：systemMaterial属性影响的背景色效果被覆盖，背景色属性生效为后设置的backgroundColor属性的颜色。
 
 对于所有设备算力档位均需要材质颜色的场景，可以通过[ImmersiveMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#immersivematerial)的materialColor参数承载，不再设置[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)属性。
@@ -1198,7 +1201,7 @@ systemMaterial(material: SystemUiMaterial | undefined): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### SystemUiMaterial
 
@@ -1246,13 +1249,13 @@ doubleSided(value: Optional<boolean>): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### 示例
 
 #### [h2]示例1（设置图片不同属性效果）
 
-设置图片的效果，包括阴影，灰度，高光，饱和度，对比度，图像反转，叠色，色相旋转等。
+设置图片的效果，包括阴影、灰度、高光、饱和度、对比度、图像反转、叠色、色相旋转等。
 
 ```
 // xxx.ets
@@ -1341,7 +1344,7 @@ struct ImageEffectsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723005417.png)
+ ![](./img/zh-cn_image_0000002701639504.png)
 
 #### [h2]示例2（设置组件线性渐变模糊效果）
 
@@ -1351,16 +1354,16 @@ struct ImageEffectsExample {
 // xxx.ets
 @Entry
 @Component
-struct ImageExample1 {
+struct LinearGradientBlurExample {
   // $r('app.media.testlinearGradientBlurOrigin')需要替换为开发者所需的资源文件。
-  private_resource1: Resource = $r('app.media.testlinearGradientBlurOrigin')
-  @State image_src: Resource = this.private_resource1
+  privateResource1: Resource = $r('app.media.testlinearGradientBlurOrigin')
+  @State imageSrc: Resource = this.privateResource1
 
   build() {
     Column() {
       Flex({ direction: FlexDirection.Column, alignItems: ItemAlign.Start }) {
         Row({ space: 5 }) {
-          Image(this.image_src)
+          Image(this.imageSrc)
             .blur(0) // 设置图片模糊效果为不模糊
             .linearGradientBlur(60,
               { fractionStops: [[0, 0], [0, 0.33], [1, 0.66], [1, 1]], direction: GradientDirection.Bottom })
@@ -1370,7 +1373,7 @@ struct ImageExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002693046060.png)
+ ![](./img/zh-cn_image_0000002731358725.png)
 
 #### [h2]示例3（设置离屏渲染效果）
 
@@ -1379,7 +1382,7 @@ struct ImageExample1 {
 ```
 // xxx.ets
 @Component
-struct Component1 {
+struct RenderGroupChildComponent {
   @Prop renderGroupValue: boolean;
 
   build() {
@@ -1411,9 +1414,9 @@ struct Component1 {
 struct RenderGroupExample {
   build() {
     Column() {
-      Component1({ renderGroupValue: true })
+      RenderGroupChildComponent({ renderGroupValue: true })
         .margin(20)
-      Component1({ renderGroupValue: false })
+      RenderGroupChildComponent({ renderGroupValue: false })
         .margin(20)
     }
     .width("100%")
@@ -1422,7 +1425,7 @@ struct RenderGroupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002722885507.png)
+ ![](./img/zh-cn_image_0000002701799420.png)
 
 #### [h2]示例4（当前组件内容与下方画布内容混合）
 
@@ -1464,7 +1467,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002693205936.png)
+ ![](./img/zh-cn_image_0000002731518703.png)
 
 #### [h2]示例5（前景智能取反色）
 
@@ -1503,7 +1506,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723005419.png)
+ ![](./img/zh-cn_image_0000002701639506.png)
 
 #### [h2]示例6（设置同层阴影不重叠效果）
 
@@ -1598,7 +1601,7 @@ struct UseShadowBatchingExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002693046062.png)
+ ![](./img/zh-cn_image_0000002731358727.png)
 
 #### [h2]示例7（设置组件图像球面效果）
 
@@ -1630,11 +1633,11 @@ struct SphericalEffectExample {
 ```
  效果图如下：
 
-![](./img/zh-cn_image_0000002722885509.png)
+![](./img/zh-cn_image_0000002701799422.png)
 
 去掉sphericalEffect的设置，效果如下：
 
-![](./img/zh-cn_image_0000002693205938.png)
+![](./img/zh-cn_image_0000002731518705.png)
 
 #### [h2]示例8（设置组件图像渐亮效果）
 
@@ -1660,15 +1663,15 @@ struct LightUpExample {
 ```
  效果图如下：
 
-![](./img/zh-cn_image_0000002723005421.png)
+![](./img/zh-cn_image_0000002701639508.png)
 
 修改lightUpEffect参数值为0.2：
 
-![](./img/zh-cn_image_0000002693046064.png)
+![](./img/zh-cn_image_0000002731358729.png)
 
 去掉lightUpEffect的设置，效果如下：
 
-![](./img/zh-cn_image_0000002722885511.png)
+![](./img/zh-cn_image_0000002701799424.png)
 
 #### [h2]示例9（设置组件图像边缘像素扩展效果）
 
@@ -1700,11 +1703,11 @@ struct PixelStretchExample {
 ```
  效果图如下：
 
-![](./img/zh-cn_image_0000002693205940.png)
+![](./img/zh-cn_image_0000002731518707.png)
 
 去掉pixelStretchEffect的设置，原图效果如下：
 
-![](./img/zh-cn_image_0000002723005423.png)
+![](./img/zh-cn_image_0000002701639510.png)
 
 #### [h2]示例10（系统导航条智能反色）
 
@@ -1733,7 +1736,7 @@ struct Index {
 ```
  效果图如下：
 
-![](./img/zh-cn_image_0000002693046066.png)
+![](./img/zh-cn_image_0000002731358731.png)
 
 #### [h2]示例11（设置组件是否双面绘制）
 
@@ -1796,4 +1799,4 @@ struct DoubleSided {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002722885513.gif)
+ ![](./img/zh-cn_image_0000002701799426.gif)

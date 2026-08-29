@@ -2,8 +2,8 @@
 title: "OH_AbilityRuntime_ConnectOptions"
 upstream_id: "harmonyos-references/capi-abilityruntime-oh-abilityruntime-connectoptions"
 catalog: "harmonyos-references"
-content_hash: "0afae8625224"
-synced_at: "2026-07-28T16:40:46.388001"
+content_hash: "afd61da1fc7d"
+synced_at: "2026-08-29T18:12:10.615171"
 ---
 
 # OH_AbilityRuntime_ConnectOptions
@@ -14,7 +14,7 @@ typedef struct OH_AbilityRuntime_ConnectOptions OH_AbilityRuntime_ConnectOptions
 
 #### 概述
 
-定义OH_AbilityRuntime_ConnectOptions结构体类型。
+定义OH_AbilityRuntime_ConnectOptions结构体类型，用于配置连接ExtensionAbility时的回调选项，包括连接成功、断开连接和连接失败的回调。
 
 起始版本： 26.0.0
 

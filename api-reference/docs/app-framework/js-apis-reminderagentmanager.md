@@ -2,8 +2,8 @@
 title: "@ohos.reminderAgentManager (后台代理提醒)"
 upstream_id: "harmonyos-references/js-apis-reminderagentmanager"
 catalog: "harmonyos-references"
-content_hash: "deef55321912"
-synced_at: "2026-08-21T15:35:03.541384"
+content_hash: "7a9b82692395"
+synced_at: "2026-08-29T18:16:04.318764"
 ---
 
 # @ohos.reminderAgentManager (后台代理提醒)
@@ -45,6 +45,7 @@ publishReminder(reminderReq: ReminderRequest, callback: AsyncCallback<number>): 
 
 | 错误码ID | 错误信息 |
 | --- | --- |
+| 201 | Permission denied. |
 | 401 | If the input parameter is not valid parameter. |
 | 1700001 | Notification is not enabled. |
 | 1700002 | The number of reminders exceeds the limit. |
@@ -101,6 +102,7 @@ publishReminder(reminderReq: ReminderRequest): Promise<number>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
+| 201 | Permission denied. |
 | 401 | If the input parameter is not valid parameter. |
 | 1700001 | Notification is not enabled. |
 | 1700002 | The number of reminders exceeds the limit. |

@@ -2,8 +2,8 @@
 title: "netHandover（连接迁移）"
 upstream_id: "harmonyos-references/networkboost-nethandover"
 catalog: "harmonyos-references"
-content_hash: "3bb385ba2d30"
-synced_at: "2026-08-03T17:11:14.575923"
+content_hash: "545249d86075"
+synced_at: "2026-08-29T18:16:48.948700"
 ---
 
 # netHandover（连接迁移）
@@ -339,7 +339,11 @@ import { netHandover } from '@kit.NetworkBoostKit';
 try {
   netHandover.on('multiPathStateChange', (data: netHandover.MultiPathStateInfo) => {
     // 回调信息处理
-    console.info("on multiPathStateChange: " + JSON.stringify(data));
+    console.info('on multiPathStateChange multiPathState:', data.multiPathState);
+    console.info('on multiPathStateChange cause:', data.cause);
+    console.info('on multiPathStateChange netHandle:', data.netHandle.netId);
+    console.info('on multiPathStateChange pathState:', data.pathState);
+    console.info('on multiPathStateChange pathType:', data.pathType);
   });
 } catch (err) {
   console.error('errCode: ' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);

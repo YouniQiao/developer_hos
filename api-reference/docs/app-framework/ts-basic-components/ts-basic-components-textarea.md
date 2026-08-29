@@ -2,8 +2,8 @@
 title: "TextArea"
 upstream_id: "harmonyos-references/ts-basic-components-textarea"
 catalog: "harmonyos-references"
-content_hash: "174bbd2940ec"
-synced_at: "2026-07-28T16:44:47.407504"
+content_hash: "a2676ac6c0bc"
+synced_at: "2026-08-29T18:13:52.708328"
 ---
 
 # TextArea
@@ -12,7 +12,10 @@ synced_at: "2026-07-28T16:44:47.407504"
 
 高度未设置时，组件无默认高度，自适应内容高度。宽度未设置时，默认撑满最大宽度。
 
-![](./img/note_3.0-zh-cn.png) 该组件从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
+![](./img/note_3.0-zh-cn.png)
+
+- 该组件从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
+- 如需设置触摸文本组件外部时是否清除文本选中和手柄，可使用[setTextSelectionClearPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#settextselectionclearpolicy)接口。
 
 #### 子组件
 
@@ -152,7 +155,7 @@ horizontalScrolling(enabled: Optional<boolean>)
 
 设置当文本宽度超过内容区宽度时是否启用水平滚动。未通过该接口设置时，禁用水平滚动。
 
-![](./img/note_3.0-zh-cn.png) 以下场景不支持水平滚动：设置[内联模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-text-input#内联模式)。
+![](./img/note_3.0-zh-cn.png) 以下场景不支持水平滚动：[TextContentStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#textcontentstyle10)为INLINE，即文本框多态样式为内联模式。
 
 元服务API： 从API version 24开始，该接口支持在元服务中使用。
 
@@ -254,6 +257,8 @@ fontFamily(value: ResourceStr)
 
 设置字体列表。
 
+![](./img/note_3.0-zh-cn.png) 可以使用[loadFontSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-text#loadfontsync)注册自定义字体。
+
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
@@ -263,8 +268,6 @@ fontFamily(value: ResourceStr)
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | value | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 是 | 字体列表。默认字体'HarmonyOS Sans'。 使用多个字体时，请用逗号','分隔，字体的优先级按顺序生效。例如：'Arial,HarmonyOS Sans'。 |
-
-![](./img/note_3.0-zh-cn.png) 可以使用[loadFontSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-text#loadfontsync)注册自定义字体。
 
 #### [h2]inputFilter8+
 
@@ -293,7 +296,7 @@ copyOption(value: CopyOptions)
 
 设置输入的文本是否可复制。设置CopyOptions.None时，只支持粘贴和全选。未通过该接口设置时，默认输入的文本可复制（CopyOptions.LocalDevice，支持设备内复制）。
 
-设置CopyOptions.None时，不支持拖拽操作。[enableSelectedDataDetector](#enableselecteddatadetector22)功能需要CopyOptions为LocalDevice或CROSS_DEVICE时才生效。
+设置CopyOptions.None时，不支持拖拽操作。[enableSelectedDataDetector](#enableselecteddatadetector22)功能需要CopyOptions为CopyOptions.LocalDevice或CopyOptions.CROSS_DEVICE时才生效。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -412,7 +415,17 @@ barState(value: BarState)
 
 maxLines(value: number)
 
-配置textOverflow一起使用时，maxLines为可显示行数，超出截断；未配置textOverflow时，内联模式获焦状态下内容超出maxLines时，文本可滚动显示，内联模式非获焦状态下不生效maxLines，非内联模式按行截断。未通过该接口设置时，默认内联输入风格编辑态时文本可显示的最大行数为3，非内联模式下默认值为UINT32_MAX。
+设置文本可显示的最大行数，可选设置超出最大行数的行为为滚动或截断。未通过该接口设置时，默认内联输入风格编辑态时文本可显示的最大行数为3，非内联模式下默认值为UINT32_MAX。
+
+![](./img/note_3.0-zh-cn.png) 配置textOverflow时：
+
+- maxLines为文本可显示的最大行数，超出部分直接截断。
+
+未配置textOverflow时：
+
+- 内联模式（获焦状态）：内容超出maxLines时，文本支持滚动显示；
+- 内联模式（非获焦状态）：maxLines不生效；
+- 非内联模式：文本按maxLines指定的行数截断。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -430,7 +443,17 @@ maxLines(value: number)
 
 maxLines(lines: number, options: MaxLinesOptions)
 
-配置[textOverflow](#textoverflow12)一起使用时，maxLines为可显示行数，超出可配置为截断或滚动。未配置textOverflow时，内联模式获焦状态下内容超出maxLines时，文本可滚动显示。内联模式非获焦状态下，maxLines不生效。非内联模式下，按行截断。未通过该接口设置时，默认内联输入风格编辑态时文本可显示的最大行数为3，非内联模式下默认值为+∞，不限制最大行数；文本超长时的显示效果默认为MaxLinesMode.CLIP。
+设置文本可显示的最大行数，可选设置超出最大行数的行为为滚动或截断。未通过该接口设置时，默认内联输入风格编辑态时文本可显示的最大行数为3，非内联模式下默认值为UINT32_MAX。
+
+![](./img/note_3.0-zh-cn.png) 配置textOverflow时：
+
+- maxLines为文本可显示的最大行数，超出部分直接截断。
+
+未配置textOverflow时：
+
+- 内联模式（获焦状态）：内容超出maxLines时，文本支持滚动显示；
+- 内联模式（非获焦状态）：maxLines不生效；
+- 非内联模式：文本按maxLines指定的行数截断。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -608,7 +631,7 @@ contentType(contentType: ContentType)
 
 lineHeight(value: number | string | Resource)
 
-设置文本的文本行高，设置值不大于0时，不限制文本行高，自适应字体大小。
+设置文本的行高，设置值不大于0时，不限制文本行高，自适应字体大小。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -620,7 +643,7 @@ lineHeight(value: number | string | Resource)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 是 | 文本的文本行高。需要显式指定[像素单位](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-pixel-units)，如'10px'，也可设置百分比字符串，如'100%'。 **说明**：不指定像素单位时，默认单位fp，如'10'，等同于10。 |
+| value | number | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 是 | 文本的行高。需要显式指定[像素单位](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-pixel-units)，如'10px'，也可设置百分比字符串，如'100%'。 **说明**：不指定像素单位时，默认单位fp，如'10'，等同于10。 |
 
 ![](./img/note_3.0-zh-cn.png) 特殊字符字体高度远超出同行的其他字符高度时，文本框可能出现截断、遮挡、内容相对位置发生变化等显示异常。开发者需调整组件高度、行高等属性，修改对应的页面布局。
 
@@ -1018,7 +1041,7 @@ enableHapticFeedback(isEnabled: boolean)
 
 autoCapitalizationMode(mode: AutoCapitalizationMode)
 
-设置文本的自动大小写模式，只提供接口能力，具体实现以输入法应用为主。
+设置自动大小写模式的文本模式，只提供接口能力，具体实现以输入法应用为主。未通过该接口设置时，默认不产生大小写转换效果，具体实现以输入法应用为主。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -1030,7 +1053,7 @@ autoCapitalizationMode(mode: AutoCapitalizationMode)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| mode | [AutoCapitalizationMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#autocapitalizationmode20枚举说明) | 是 | 自动大小写模式，具体实现以输入法应用为主。 |
+| mode | [AutoCapitalizationMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#autocapitalizationmode20枚举说明) | 是 | 自动大小写模式，用于设置输入法的大小写转换规则，具体实现以输入法应用为主。 |
 
 #### [h2]keyboardAppearance15+
 
@@ -1387,6 +1410,12 @@ onChange(callback: EditableTextOnChangeCallback)
 
 在本回调中，若执行了光标操作，需要开发者在预上屏场景下依据[EditableTextOnChangeCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#editabletextonchangecallback12)的previewText参数调整光标逻辑，以适应预上屏场景。
 
+![](./img/note_3.0-zh-cn.png) onWillChange和onChange形成will/did时序模式：
+
+- onWillChange在文本变更前触发，可通过返回false拦截变更；返回true则允许变更，随后触发onChange。
+- onChange在变更完成后触发，无法拦截。
+- 两者可以同时使用，onWillChange用于拦截控制，onChange用于获取变更结果。
+
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
@@ -1420,6 +1449,12 @@ onEditChange(callback: (isEditing: boolean) => void)
 onCopy(callback: (value: string) => void)
 
 进行复制操作时，触发该回调。
+
+![](./img/note_3.0-zh-cn.png) onWillCopy和onCopy形成will/did时序模式：
+
+- onWillCopy在复制操作前触发，可通过返回false拦截复制操作；返回true则允许复制，随后触发onCopy。
+- onCopy在复制操作完成后触发，无法拦截。
+- 两者可以同时使用，onWillCopy用于拦截控制，onCopy用于获取复制结果。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -1462,6 +1497,12 @@ onWillCopy(callback: Callback<string, boolean>)
 onCut(callback: (value: string) => void)
 
 进行剪切操作时，触发该回调。
+
+![](./img/note_3.0-zh-cn.png) onWillCut和onCut形成will/did时序模式：
+
+- onWillCut在剪切操作前触发，可通过返回false拦截剪切操作；返回true则允许剪切，随后触发onCut。
+- onCut在剪切操作完成后触发，无法拦截。
+- 两者可以同时使用，onWillCut用于拦截控制，onCut用于获取剪切结果。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -1646,11 +1687,12 @@ onWillDelete(callback: Callback<DeleteValue, boolean>)
 
 点击清除按钮不触发onWillDelete回调。
 
-![](./img/note_3.0-zh-cn.png) onWillDelete和onDidDelete形成will/did时序模式：
+![](./img/note_3.0-zh-cn.png)
 
-- onWillDelete在删除操作前触发，可通过返回false拦截删除操作；返回true则允许删除，随后触发onDidDelete
-- onDidDelete在删除完成后触发，无法拦截
-- 两者可以同时使用，onWillDelete用于拦截控制，onDidDelete用于获取删除结果
+- 点击清除按钮不触发onWillDelete回调。
+- onWillDelete和onDidDelete形成will/did时序模式： onWillDelete在删除操作前触发，可通过返回false拦截删除操作；返回true则允许删除，随后触发onDidDelete。
+- onDidDelete在删除完成后触发，无法拦截。
+- 两者可以同时使用，onWillDelete用于拦截控制，onDidDelete用于获取删除结果。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1670,11 +1712,10 @@ onDidDelete(callback: Callback<DeleteValue>)
 
 在删除完成时，触发该回调。
 
-点击清除按钮不触发onDidDelete回调。
-
 ![](./img/note_3.0-zh-cn.png)
 
-- onWillDelete在删除操作前触发，可通过返回false拦截删除操作；返回true则允许删除，随后触发onDidDelete。
+- 点击清除按钮不触发onDidDelete回调。
+- onWillDelete和onDidDelete形成will/did时序模式： onWillDelete在删除操作前触发，可通过返回false拦截删除操作；返回true则允许删除，随后触发onDidDelete。
 - onDidDelete在删除完成后触发，无法拦截。
 - 两者可以同时使用，onWillDelete用于拦截控制，onDidDelete用于获取删除结果。
 
@@ -1696,12 +1737,12 @@ onWillChange(callback: Callback<EditableTextChangeValue, boolean>)
 
 在文本内容将要发生变化时，触发该回调。
 
-![](./img/note_3.0-zh-cn.png) onWillChange与onChange均监听文本变更，区别在于：
+![](./img/note_3.0-zh-cn.png)
 
-- onWillChange在文本变更前触发，返回false可拦截此次变更；onChange在变更后触发，仅用于通知，无法拦截
-- 需要拦截控制时使用onWillChange，仅需获取变更结果时使用onChange
-
-onWillChange的回调时序晚于onWillInsert、onWillDelete，早于onDidInsert、onDidDelete。
+- onWillChange的回调时序晚于onWillInsert、onWillDelete，早于onDidInsert、onDidDelete。
+- onWillChange和onChange形成will/did时序模式： onWillChange在文本变更前触发，可通过返回false拦截变更；返回true则允许变更，随后触发onChange。
+- onChange在变更完成后触发，无法拦截。
+- 两者可以同时使用，onWillChange用于拦截控制，onChange用于获取变更结果。 onWillChange的回调时序晚于onWillInsert、onWillDelete，早于onDidInsert、onDidDelete。
 
 元服务API： 从API version 15开始，该接口支持在元服务中使用。
 
@@ -1829,7 +1870,7 @@ stopEditing(): void
 | EMAIL | 5 | 邮箱地址输入模式。 支持数字，字母，下划线、小数点、!、#、$、%、&、'、*、+、-、/、=、?、^、`、{、|、}、~，以及@字符（只能存在一个@字符）。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | NUMBER_DECIMAL12+ | 12 | 带小数点的数字输入模式。 支持数字，小数点（只能存在一个小数点）。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | URL12+ | 13 | 带URL的输入模式，无特殊限制。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| ONE_TIME_CODE20+ | 14 | 验证码输入模式，无特殊限制。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| ONE_TIME_CODE20+ | 14 | 验证码输入模式，无特殊限制。该模式下组件获焦后会默认拉起系统输入法。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 
 #### TextAreaSubmitCallback14+
 
@@ -1900,7 +1941,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088059.gif)
+ ![](./img/zh-cn_image_0000002731518967.gif)
 
 #### [h2]示例2（设置计数器）
 
@@ -1940,7 +1981,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928231.gif)
+ ![](./img/zh-cn_image_0000002701639768.gif)
 
 #### [h2]示例3（设置自定义键盘）
 
@@ -2010,7 +2051,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008554.gif)
+ ![](./img/zh-cn_image_0000002731358989.gif)
 
 #### [h2]示例4（设置输入法回车键类型）
 
@@ -2046,7 +2087,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848634.gif)
+ ![](./img/zh-cn_image_0000002701799684.gif)
 
 #### [h2]示例5（设置文本断行规则）
 
@@ -2080,7 +2121,7 @@ struct TextAreaExample {
         .fontSize(16)
         .border({ width: 1 })
         .wordBreak(WordBreak.BREAK_ALL)
-      Text("属性WordBreakType为BREAK_WORD的样式：").fontSize(16).fontColor(0xFF0000)
+      Text('属性WordBreakType为BREAK_WORD的样式：').fontSize(16).fontColor(0xFF0000)
       TextArea({
         text: 'This is set wordBreak to WordBreak text Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu.'
       })
@@ -2091,7 +2132,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088061.jpeg)
+ ![](./img/zh-cn_image_0000002731518969.jpeg)
 
 #### [h2]示例6（设置文本样式）
 
@@ -2138,7 +2179,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928233.png)
+ ![](./img/zh-cn_image_0000002701639770.png)
 
 #### [h2]示例7（设置文字特性效果）
 
@@ -2168,7 +2209,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008556.png)
+ ![](./img/zh-cn_image_0000002731358991.png)
 
 #### [h2]示例8（自定义键盘避让）
 
@@ -2180,7 +2221,7 @@ struct TextAreaExample {
 @Component
 struct TextAreaExample {
   controller: TextAreaController = new TextAreaController();
-  @State inputValue: string = "";
+  @State inputValue: string = '';
   @State height1: string | number = '80%';
   @State supportAvoidance: boolean = true;
 
@@ -2198,7 +2239,7 @@ struct TextAreaExample {
       Grid() {
         ForEach([1, 2, 3, 4, 5, 6, 7, 8, 9, '*', 0, '#'], (item: number | string) => {
           GridItem() {
-            Button(item + "")
+            Button(item + '')
               .width(110).onClick(() => {
               this.inputValue += item;
             })
@@ -2211,7 +2252,7 @@ struct TextAreaExample {
   build() {
     Column() {
       Row() {
-        Button("20%")
+        Button('20%')
           .fontSize(24)
           .onClick(() => {
             this.height1 = '20%';
@@ -2238,7 +2279,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848636.gif)
+ ![](./img/zh-cn_image_0000002701799686.gif)
 
 #### [h2]示例9（设置文本自适应）
 
@@ -2278,7 +2319,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088063.png)
+ ![](./img/zh-cn_image_0000002731518971.png)
 
 #### [h2]示例10（设置文本行间距）
 
@@ -2318,7 +2359,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928235.png)
+ ![](./img/zh-cn_image_0000002701639772.png)
 
 #### [h2]示例11（设置自动填充）
 
@@ -2394,7 +2435,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008558.gif)
+ ![](./img/zh-cn_image_0000002731358993.gif)
 
 #### [h2]示例13（支持插入和删除回调）
 
@@ -2461,7 +2502,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848638.png)
+ ![](./img/zh-cn_image_0000002701799688.png)
 
 #### [h2]示例14（文本扩展自定义菜单）
 
@@ -2546,7 +2587,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088065.png)
+ ![](./img/zh-cn_image_0000002731518973.png)
 
 #### [h2]示例15（文本设置省略模式）
 
@@ -2624,7 +2665,7 @@ struct EllipsisModeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928237.gif)
+ ![](./img/zh-cn_image_0000002701639774.gif)
 
 #### [h2]示例16（自定义复制、剪切、粘贴）
 
@@ -2711,7 +2752,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008560.png)
+ ![](./img/zh-cn_image_0000002731358995.png)
 
 #### [h2]示例17（设置最小字体范围与最大字体范围）
 
@@ -2768,7 +2809,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848640.png)
+ ![](./img/zh-cn_image_0000002701799690.png)
 
 #### [h2]示例18（设置选中指定区域的文本内容）
 
@@ -2808,7 +2849,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088067.png)
+ ![](./img/zh-cn_image_0000002731518975.png)
 
 #### [h2]示例19（设置文本描边）
 
@@ -2855,7 +2896,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928239.png)
+ ![](./img/zh-cn_image_0000002701639776.png)
 
 #### [h2]示例20（设置中西文自动间距）
 
@@ -2881,7 +2922,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008562.png)
+ ![](./img/zh-cn_image_0000002731358997.png)
 
 #### [h2]示例21（设置最大行数）
 
@@ -2909,7 +2950,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848642.gif)
+ ![](./img/zh-cn_image_0000002701799692.gif)
 
 #### [h2]示例22（设置最小行数）
 
@@ -2937,7 +2978,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088069.png)
+ ![](./img/zh-cn_image_0000002731518977.png)
 
 #### [h2]示例23（设置字符计数颜色以及超出字符颜色）
 
@@ -2978,7 +3019,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928241.gif)
+ ![](./img/zh-cn_image_0000002701639778.gif)
 
 #### [h2]示例24（设置滚动条颜色）
 
@@ -3020,7 +3061,7 @@ struct Index {
           .barState(BarState.On)
           .scrollBarColor(ColorMetrics.resourceColor(Color.Orange))
         TextArea({
-          text: "Hello World TextArea\nHello World TextArea\nHello World TextArea\nHello World TextArea",
+          text: 'Hello World TextArea\nHello World TextArea\nHello World TextArea\nHello World TextArea',
           placeholder: 'Type to text area...',
           controller: this.controller
         })
@@ -3037,7 +3078,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008564.jpg)
+ ![](./img/zh-cn_image_0000002731358999.jpg)
 
 #### [h2]示例25（设置placeholder富文本样式）
 
@@ -3107,7 +3148,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848644.jpg)
+ ![](./img/zh-cn_image_0000002701799694.jpg)
 
 #### [h2]示例26（设置输入法扩展信息）
 
@@ -3182,7 +3223,7 @@ struct PunctuationDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088071.gif)
+ ![](./img/zh-cn_image_0000002731518981.gif)
 
 #### [h2]示例28（设置自适应间距）
 
@@ -3248,7 +3289,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928243.gif)
+ ![](./img/zh-cn_image_0000002701639780.gif)
 
 #### [h2]示例29（设置文本拖拽时的背板样式）
 
@@ -3274,7 +3315,7 @@ struct TextAreaTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008566.png)
+ ![](./img/zh-cn_image_0000002731359001.png)
 
 #### [h2]示例30（删除文本框内的最后一个字符）
 
@@ -3299,7 +3340,7 @@ struct Page {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848646.gif)
+ ![](./img/zh-cn_image_0000002701799696.gif)
 
 #### [h2]示例31（设置文本排版方向）
 
@@ -3352,7 +3393,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088075.png)
+ ![](./img/zh-cn_image_0000002731518983.png)
 
 #### [h2]示例32（将指定范围的文字滚动到可视区内）
 
@@ -3386,7 +3427,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928245.gif)
+ ![](./img/zh-cn_image_0000002701639782.gif)
 
 #### [h2]示例33（设置水平滚动）
 
@@ -3421,7 +3462,7 @@ Hello World Hello World Hello World Hello World Hello World\n
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008568.png)
+ ![](./img/zh-cn_image_0000002731359003.png)
 
 #### [h2]示例34（设置文本排版时是否使能孤字优化）
 
@@ -3459,7 +3500,7 @@ struct TextExample {
 ```
  该效果图会因设备尺寸差异有显示区别，仅供参考。
 
-![](./img/zh-cn_image_0000002655848648.png)
+![](./img/zh-cn_image_0000002701799698.png)
 
 #### [h2]示例35（设置文本着色器效果）
 
@@ -3528,7 +3569,7 @@ struct ShaderColorStyle {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088077.png)
+ ![](./img/zh-cn_image_0000002731518985.png)
 
 #### [h2]示例36（设置文本选择的AI菜单）
 
@@ -3556,4 +3597,4 @@ struct Demo36 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928247.gif)
+ ![](./img/zh-cn_image_0000002701639784.gif)

@@ -2,8 +2,8 @@
 title: "@ohos.multimodalInput.infraredEmitter (红外管理)"
 upstream_id: "harmonyos-references/js-apis-infraredemitter"
 catalog: "harmonyos-references"
-content_hash: "046005fb54ff"
-synced_at: "2026-07-28T16:51:07.228253"
+content_hash: "c9b648b6e1b4"
+synced_at: "2026-08-29T18:17:04.796725"
 ---
 
 # @ohos.multimodalInput.infraredEmitter (红外管理)
@@ -12,7 +12,7 @@ synced_at: "2026-07-28T16:51:07.228253"
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 本模块首批接口从API version 15开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
+- 本模块首批接口从API version 12开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
 #### 导入模块
 
@@ -20,7 +20,7 @@ synced_at: "2026-07-28T16:51:07.228253"
 import { infraredEmitter } from '@kit.InputKit';
 ```
 
-#### infraredEmitter.transmitInfrared
+#### infraredEmitter.transmitInfrared15+
 
 transmitInfrared(infraredFrequency: number, pattern: Array<number>): void
 
@@ -71,7 +71,7 @@ struct Index {
 }
 ```
 
-#### infraredEmitter.getInfraredFrequencies
+#### infraredEmitter.getInfraredFrequencies15+
 
 getInfraredFrequencies(): Array<InfraredFrequency>
 
@@ -122,7 +122,7 @@ struct Index {
 }
 ```
 
-#### InfraredFrequency
+#### InfraredFrequency15+
 
 红外信号的频率范围。
 

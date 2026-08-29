@@ -2,13 +2,13 @@
 title: "FormEditExtensionContext"
 upstream_id: "harmonyos-references/js-apis-inner-application-formeditextensioncontext"
 catalog: "harmonyos-references"
-content_hash: "e694769dff46"
-synced_at: "2026-07-09T00:59:03.062235"
+content_hash: "c71796836602"
+synced_at: "2026-08-29T18:16:12.074646"
 ---
 
 # FormEditExtensionContext
 
-FormEditExtensionContext是[FormEditExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formeditextensionability)的上下文，继承自[UIExtensionContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiextensioncontext)。
+FormEditExtensionContext是[FormEditExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formeditextensionability)的上下文，继承自[UIExtensionContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiextensioncontext)。用于管理卡片编辑场景的上下文环境，支持拉起卡片提供方页面和所属应用UIAbility，适用于卡片编辑流程中需要与卡片提供方交互的场景。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 18开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -22,13 +22,18 @@ import { FormEditExtensionAbility } from '@kit.FormKit';
 
 #### FormEditExtensionContext
 
-FormEditExtensionContext提供允许访问特定于FormEditExtensionAbility资源的能力。
+FormEditExtensionContext提供访问特定于FormEditExtensionAbility资源的能力。
 
 #### [h2]startSecondPage
 
-startSecondPage(want: Want): Promise<[AbilityResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-ability-abilityresult)>
+startSecondPage(want: Want): Promise<AbilityResult>
 
 拉起需要被编辑的卡片提供方页面。使用Promise异步回调。
+
+使用场景：
+
+- 用户在卡片编辑界面点击编辑按钮，需要打开卡片提供方的编辑页面。
+- 用户需要修改卡片配置或内容时，拉起卡片提供方应用进行编辑。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -38,13 +43,13 @@ startSecondPage(want: Want): Promise<[AbilityResult](https://developer.huawei.co
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| want | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 第三方应用需要被桌面拉起的编辑页面信息。 |
+| want | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 需要拉起的编辑页面信息。必须包含bundleName字段，且parameters中需包含secPageAbilityName。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，返回AbilityResult。 |
+| Promise | Promise对象，返回被启动方退出时的结果码和数据。 |
 
 错误码：
 
@@ -91,7 +96,7 @@ export default class ExampleFormEditAbility extends FormEditExtensionAbility {
 
 startUIAbility(want: Want): Promise<void>
 
-拉起卡片所属应用的UIAbility。使用Promise异步回调。
+拉起卡片所属应用的UIAbility。使用Promise异步回调。说明：需在卡片编辑页面处于前台时调用，页面不在前台时调用将返回错误码16501014。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -101,17 +106,17 @@ startUIAbility(want: Want): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| want | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want#want) | 是 | 应用自身UIAbility的ability信息。 |
+| want | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want#want) | 是 | 用于指定要拉起的UIAbility的Want信息。必须包含abilityName字段。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，返回void。 |
+| Promise | Promise对象，无返回结果。 |
 
 错误码：
 
-以下错误码的详细介绍请参见[卡片错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-form)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+以下错误码的详细介绍请参见[卡片错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-form)和[元能力子系统错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-ability)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |

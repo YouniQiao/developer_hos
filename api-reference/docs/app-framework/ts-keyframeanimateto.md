@@ -2,25 +2,25 @@
 title: "关键帧动画 (keyframeAnimateTo)"
 upstream_id: "harmonyos-references/ts-keyframeanimateto"
 catalog: "harmonyos-references"
-content_hash: "4ee778adb5a1"
-synced_at: "2026-08-21T15:33:49.465263"
+content_hash: "1153504aa0ac"
+synced_at: "2026-08-29T18:14:42.192452"
 ---
 
 # 关键帧动画 (keyframeAnimateTo)
 
-在[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中提供keyframeAnimateTo接口来指定若干个关键帧状态，实现分段的动画。关键帧动画是通过若干个关键时刻的状态，将动画过程划分为多段，同一属性在动画过程内不是单调的从起点到终点的过渡，而可以是分段的过渡。同属性动画，布局类改变宽高的动画，内容都是直接到终点状态，例如文字、[Canvas](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-components-canvas-canvas)的内容等，如果要内容跟随宽高变化，可以使用[renderFit](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-renderfit#renderfit)属性配置。
+在[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中提供keyframeAnimateTo接口来指定一个或多个关键帧状态，实现分段的动画。关键帧动画是通过若干个关键时刻的状态，将动画过程划分为多段，同一属性在动画过程内不是单调的从起点到终点的过渡，而可以是分段的过渡。与[animateTo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#animateto)属性动画类似，布局类改变宽高的动画，内容都是直接到终点状态，例如文字、[Canvas](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-components-canvas-canvas)的内容等，如果要内容跟随宽高变化，可以使用[renderFit](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-renderfit#renderfit)属性配置。keyframeAnimateTo与[animateTo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#animateto)不能同时作用于同一组件的同一属性，若在同一属性上先后调用，后调用的动画将覆盖前一个动画的效果。
 
 ![](./img/note_3.0-zh-cn.png)
 
 - 从API version 11开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
 - 本模块接口仅可在Stage模型下使用。
-- 该接口为[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)类的成员函数，需要通过UIContext实例对象调用。
+- 该接口为[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)类的成员函数，需要通过UIContext实例对象调用。调用顺序：先通过[getUIContext()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-api#getuicontext)获取UIContext实例，再调用keyframeAnimateTo方法。
 
 #### keyframeAnimateTo
 
 keyframeAnimateTo(param: KeyframeAnimateParam, keyframes: Array<KeyframeState>): void
 
-设置关键帧动画。
+设置关键帧动画。需通过UIContext实例对象调用。布局类改变宽高的动画，内容（如文字、[Canvas](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-components-canvas-canvas)内容等）都是直接到终点状态，如需内容跟随宽高变化，可使用[renderFit](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-renderfit#renderfit)属性配置。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -30,8 +30,8 @@ keyframeAnimateTo(param: KeyframeAnimateParam, keyframes: Array<KeyframeState>):
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| param | [KeyframeAnimateParam](#keyframeanimateparam对象说明) | 是 | 关键帧动画的整体动画参数。 |
-| keyframes | Array | 是 | 所有的关键帧状态。 |
+| param | [KeyframeAnimateParam](#keyframeanimateparam对象说明) | 是 | 关键帧动画的整体参数配置，用于设置动画延迟、播放次数、完成回调及期望帧率等。 |
+| keyframes | Array | 是 | 所有的关键帧状态，至少需要1个关键帧，按数组顺序依次执行各段动画数组，每个关键帧定义一段动画的持续时间、动画曲线和目标状态。 |
 
 #### KeyframeAnimateParam对象说明
 
@@ -54,13 +54,13 @@ keyframeAnimateTo(param: KeyframeAnimateParam, keyframes: Array<KeyframeState>):
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| duration | number | 否 | 否 | 该段关键帧动画的持续时间，单位为毫秒。 取值范围：[0, +∞) **说明：** - 设置小于0的值时按0处理。 - 设置浮点型的值时，向下取整。例如，设置值为1.2，按照1处理。 |
-| curve | [Curve](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#curve)| string | [ICurve](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-explicit-animation#icurve9) | 否 | 是 | 该关键帧使用的动画曲线。 推荐以Curve或ICurve形式指定。 当类型为string时，为动画插值曲线，取值参考[AnimateParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-explicit-animation#animateparam对象说明)的curve参数。 默认值：Curve.EaseInOut **说明：** 由于[springMotion](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-curve#curvesspringmotion9)、[responsiveSpringMotion](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-curve#curvesresponsivespringmotion9)、[interpolatingSpring](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-curve#curvesinterpolatingspring10)曲线时长不生效，故不支持这三种曲线。 |
-| event | () => void | 否 | 否 | 指定在该关键帧时刻状态的闭包函数，即在该关键帧时刻要达到的状态。 |
+| duration | number | 否 | 否 | 该段关键帧动画的持续时间，单位为ms（毫秒）。 取值范围：[0, +∞) **说明：** - 设置小于0的值时按0处理。 - 设置浮点型的值时，截断取整。例如，设置值为1.2，按照1处理。 - duration为0时，表示瞬时过渡到该关键帧状态，无动画过程。 |
+| curve | [Curve](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#curve)| string | [ICurve](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-explicit-animation#icurve9) | 否 | 是 | 该关键帧使用的动画曲线。 推荐以Curve或ICurve形式指定。 当类型为string时，为动画插值曲线，取值参考[AnimateParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-explicit-animation#animateparam对象说明)的curve参数，有效取值为“linear”、“ease”、“ease-in”、“ease-out”、“ease-in-out”、“fast-out-slow-in”、“linear-out-slow-in”、“fast-out-linear-in”、“friction”、“extreme-deceleration”、“rhythm”、“sharp”、“smooth”，以及“cubic-bezier(x1,y1,x2,y2)”、“steps(number,step-position)”格式字符串，不支持“springMotion”、“responsiveSpringMotion”、“interpolatingSpring”。 默认值：Curve.EaseInOut **说明：** 由于[springMotion](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-curve#curvesspringmotion9)、[responsiveSpringMotion](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-curve#curvesresponsivespringmotion9)、[interpolatingSpring](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-curve#curvesinterpolatingspring10)曲线时长不生效，故不支持这三种曲线。设置不支持的曲线时，使用默认曲线Curve.EaseInOut。 |
+| event | () => void | 否 | 否 | 设置该关键帧时刻目标状态的闭包函数，在该闭包中定义组件属性要达到的目标值。 |
 
 #### 示例
 
-该示例主要演示如何通过keyframeAnimateTo来设置关键帧动画，包括delay延时、onFinish结束回调以及各关键帧的curve曲线配置。
+该示例主要演示如何通过keyframeAnimateTo来设置关键帧动画，包括delay延迟、onFinish播放完成回调以及各关键帧的curve曲线配置。
 
 ```
 // xxx.ets
@@ -86,17 +86,18 @@ struct KeyframeDemo {
         .scale({ x: this.myScale, y: this.myScale })
         .onClick(() => {
           if (!this.uiContext) {
-            console.info("no uiContext, keyframe failed");
+            console.info('no uiContext, keyframe failed');
             return;
           }
           this.myScale = 1;
-          // 设置关键帧动画整体播放3次，延时200ms，并在结束时触发onFinish回调
+          // 设置关键帧动画整体播放3次，延迟200ms，并在结束时触发onFinish回调
           this.uiContext.keyframeAnimateTo({
               iterations: 3,
               delay: 200,
               onFinish: () => {
                 console.info('keyframe animate finish');
               },
+              // 从API version 19开始新增expectedFrameRateRange
               expectedFrameRateRange: {
                 min: 10,
                 max: 120,
@@ -125,4 +126,4 @@ struct KeyframeDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002689300370.gif)
+ ![](./img/zh-cn_image_0000002701799956.gif)

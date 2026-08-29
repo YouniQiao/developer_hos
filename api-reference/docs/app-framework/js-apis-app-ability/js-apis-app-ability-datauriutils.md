@@ -2,13 +2,13 @@
 title: "@ohos.app.ability.dataUriUtils (DataUriUtils模块)"
 upstream_id: "harmonyos-references/js-apis-app-ability-datauriutils"
 catalog: "harmonyos-references"
-content_hash: "96a63d2ffeaf"
-synced_at: "2026-07-09T00:57:07.178374"
+content_hash: "757caa1df74a"
+synced_at: "2026-08-29T18:12:00.544453"
 ---
 
 # @ohos.app.ability.dataUriUtils (DataUriUtils模块)
 
-DataUriUtils模块提供用于处理uri对象的能力，包括获取、绑定、删除和更新指定uri对象的路径末尾的ID。
+DataUriUtils模块提供用于处理uri对象的能力，包括获取、附加、删除和更新指定uri对象的路径末尾的ID。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 9开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -30,7 +30,7 @@ getId(uri: string): number
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| uri | string | 是 | 表示uri对象。 |
+| uri | string | 是 | 表示要获取ID的uri对象。 |
 
 返回值：
 
@@ -50,12 +50,13 @@ getId(uri: string): number
 
 ```
 import { dataUriUtils } from '@kit.AbilityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
   let id = dataUriUtils.getId('com.example.dataUriUtils/1221');
   console.info(`get id: ${id}`);
-} catch(err) {
-  console.error(`get id err ,check the uri ${err}`);
+} catch (err) {
+  console.error(`get id err, code: ${JSON.stringify((err as BusinessError).code)}, msg: ${JSON.stringify((err as BusinessError).message)}`);
 }
 ```
 
@@ -71,7 +72,7 @@ attachId(uri: string, id: number): string
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| uri | string | 是 | 表示uri对象。 |
+| uri | string | 是 | 表示要附加ID的uri对象。 |
 | id | number | 是 | 表示要附加的ID。 |
 
 返回值：
@@ -102,7 +103,7 @@ try {
   );
   console.info(`attachId the uri is: ${uri}`);
 } catch (err) {
-  console.error(`get id err, code: ${JSON.stringify((err as BusinessError).code)}, msg: ${JSON.stringify((err as BusinessError).message)}`);
+  console.error(`attachId err, code: ${JSON.stringify((err as BusinessError).code)}, msg: ${JSON.stringify((err as BusinessError).message)}`);
 }
 ```
 
@@ -143,7 +144,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 try {
   let uri = dataUriUtils.deleteId('com.example.dataUriUtils/1221');
   console.info(`delete id with the uri is: ${uri}`);
-} catch(err) {
+} catch (err) {
   console.error(`delete id err, code: ${JSON.stringify((err as BusinessError).code)}, msg: ${JSON.stringify((err as BusinessError).message)}`);
 }
 ```
@@ -160,8 +161,8 @@ updateId(uri: string, id: number): string
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| uri | string | 是 | 表示uri对象 |
-| id | number | 是 | 表示要更新的ID |
+| uri | string | 是 | 表示要更新ID的uri对象。 |
+| id | number | 是 | 表示要更新的ID。 |
 
 返回值：
 
@@ -189,6 +190,7 @@ try {
     'com.example.dataUriUtils/1221',
     id
   );
+  console.info(`update id with the uri is: ${uri}`);
 } catch (err) {
   console.error(`update id err, code: ${JSON.stringify((err as BusinessError).code)}, msg: ${JSON.stringify((err as BusinessError).message)}`);
 }

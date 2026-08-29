@@ -2,8 +2,8 @@
 title: "@ohos.bluetooth.common (蓝牙common模块)"
 upstream_id: "harmonyos-references/js-apis-bluetooth-common"
 catalog: "harmonyos-references"
-content_hash: "23e13bb7f831"
-synced_at: "2026-07-09T00:59:22.816659"
+content_hash: "9f3f266bbc57"
+synced_at: "2026-08-29T18:16:36.418467"
 ---
 
 # @ohos.bluetooth.common (蓝牙common模块)
@@ -28,7 +28,7 @@ import { common } from '@kit.ConnectivityKit';
 | --- | --- | --- | --- | --- |
 | address | string | 否 | 否 | 表示蓝牙设备的地址，例如："XX:XX:XX:XX:XX:XX"。 |
 | addressType | [BluetoothAddressType](#bluetoothaddresstype) | 否 | 否 | 表示地址类型为蓝牙设备的实际MAC地址或虚拟MAC地址。 |
-| rawAddressType23+ | [BluetoothRawAddressType](#bluetoothrawaddresstype23) | 否 | 是 | 表示地址类型为蓝牙协议定义的Public类型或Random类型。 |
+| rawAddressType23+ | [BluetoothRawAddressType](#bluetoothrawaddresstype23) | 否 | 是 | 表示地址类型为蓝牙协议定义的Public类型或Random类型。默认值请参见相关接口说明，未传入时使用系统默认地址类型。 |
 
 #### BluetoothAddressType
 
@@ -49,5 +49,5 @@ import { common } from '@kit.ConnectivityKit';
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| PUBLIC | 0 | Public地址类型。 |
-| RANDOM | 1 | Random地址类型。 |
+| PUBLIC | 0 | 公共设备地址类型，该类型地址由IEEE组织分配并保证全球唯一性，永久不变。 |
+| RANDOM | 1 | 随机设备地址类型，该类型地址随机生成，包括静态随机地址和私有随机地址等子类型，可能定期变化。 |

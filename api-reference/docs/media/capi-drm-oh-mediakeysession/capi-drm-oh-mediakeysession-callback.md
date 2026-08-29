@@ -2,8 +2,8 @@
 title: "OH_MediaKeySession_Callback"
 upstream_id: "harmonyos-references/capi-drm-oh-mediakeysession-callback"
 catalog: "harmonyos-references"
-content_hash: "6b2f5167602a"
-synced_at: "2026-07-09T01:00:29.162060"
+content_hash: "f84563947865"
+synced_at: "2026-08-29T18:17:34.262551"
 ---
 
 # OH_MediaKeySession_Callback
@@ -28,5 +28,5 @@ OH_MediaKeySession_Callback结构体，用于监听密钥过期、密钥更改�
 
 | 名称 | 描述 |
 | --- | --- |
-| [OH_MediaKeySession_EventCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-mediakeysession-h#oh_mediakeysession_eventcallback) eventCallback | 正常事件回调，如密钥过期等。 |
-| [OH_MediaKeySession_KeyChangeCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-mediakeysession-h#oh_mediakeysession_keychangecallback) keyChangeCallback | 密钥更改事件的密钥更改回调。 |
+| [OH_MediaKeySession_EventCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-mediakeysession-h#oh_mediakeysession_eventcallback) eventCallback | 正常事件回调函数指针，用于处理密钥过期等常规事件。当MediaKeySession状态发生常规变化时，系统会调用此回调函数通知应用。 |
+| [OH_MediaKeySession_KeyChangeCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-mediakeysession-h#oh_mediakeysession_keychangecallback) keyChangeCallback | 密钥更改事件回调函数指针，用于处理密钥状态变化事件。当密钥状态发生变化（如密钥可用、密钥过期等）时，系统会调用此回调函数通知应用，回调参数中包含变化的密钥信息。 |

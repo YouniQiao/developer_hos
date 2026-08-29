@@ -2,8 +2,8 @@
 title: "insightIntent"
 upstream_id: "harmonyos-references/intents-arkts-api-insightintent"
 catalog: "harmonyos-references"
-content_hash: "6321e98b87a5"
-synced_at: "2026-08-07T15:59:49.902996"
+content_hash: "a2bc7b4c63a2"
+synced_at: "2026-08-29T18:18:40.179611"
 ---
 
 # insightIntent
@@ -261,8 +261,8 @@ struct Index {
                 logoURL: 'https://www-file.abc.com/-/media/corporate/images/home/logo/abc_logo.png',
                 keywords: ['华为音乐', '化妆'],
                 rankingHint: 99,
-                expirationDate: 1637393212000,
-                metadataModificationDate: 1637393212000,
+                expirationTime: 1637393212000,
+                metadataModificationTime: 1637393212000,
                 activityType: ['1', '2', '3'],
                 artist: ['张三', '李四'],
                 lyricist: ['李四', '张三'],

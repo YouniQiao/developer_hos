@@ -2,13 +2,15 @@
 title: "AutoFillRequest"
 upstream_id: "harmonyos-references/js-apis-inner-application-autofillrequest"
 catalog: "harmonyos-references"
-content_hash: "fd21a71dd3cd"
-synced_at: "2026-07-28T16:40:38.317104"
+content_hash: "4acc7c19e197"
+synced_at: "2026-08-29T18:12:03.216580"
 ---
 
 # AutoFillRequest
 
 本模块提供自动填充与自动保存场景下的页面请求数据，以及自动填充失败时的返回结果。
+
+起始版本： 26.0.0
 
 #### 导入模块
 

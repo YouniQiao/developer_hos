@@ -2,8 +2,8 @@
 title: "日历选择器弹窗 (CalendarPickerDialog)"
 upstream_id: "harmonyos-references/ts-methods-calendarpicker-dialog"
 catalog: "harmonyos-references"
-content_hash: "dfc55adc6dad"
-synced_at: "2026-07-28T16:47:18.406095"
+content_hash: "07d022963364"
+synced_at: "2026-08-29T18:14:47.528849"
 ---
 
 # 日历选择器弹窗 (CalendarPickerDialog)
@@ -128,7 +128,7 @@ struct CalendarPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008854.gif)
+ ![](./img/zh-cn_image_0000002701799982.gif)
 
 #### [h2]示例2（自定义按钮样式）
 
@@ -183,7 +183,7 @@ struct CalendarPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848934.png)
+ ![](./img/zh-cn_image_0000002731519269.png)
 
 #### [h2]示例3（悬停态弹窗）
 
@@ -232,7 +232,7 @@ struct CalendarPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088365.gif)
+ ![](./img/zh-cn_image_0000002701640068.gif)
 
 #### [h2]示例4（设置日期选中态底板样式）
 
@@ -265,7 +265,7 @@ struct CalendarPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928533.png)
+ ![](./img/zh-cn_image_0000002731359289.png)
 
 #### [h2]示例5（设置开始日期和结束日期）
 
@@ -297,7 +297,7 @@ struct CalendarPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008856.gif)
+ ![](./img/zh-cn_image_0000002701799984.gif)
 
 #### [h2]示例6（设置系统当前日期在日历选择器弹窗内保持高亮显示，并设置禁用日期区间）
 
@@ -328,7 +328,7 @@ struct CalendarPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848936.gif)
+ ![](./img/zh-cn_image_0000002731519271.gif)
 
 #### [h2]示例7（自定义背景模糊效果参数）
 
@@ -366,7 +366,7 @@ struct CalendarPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088367.png)
+ ![](./img/zh-cn_image_0000002701640072.png)
 
 #### [h2]示例8（自定义背景效果参数）
 
@@ -405,4 +405,36 @@ struct CalendarPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928535.png)
+ ![](./img/zh-cn_image_0000002731359291.png)
+
+#### [h2]示例9（设置系统材质）
+
+该示例通过配置[systemMaterial](#calendardialogoptions对象说明)，实现系统材质效果。
+
+从API版本26.0.0开始，在CalendarDialogOptions中新增了systemMaterial属性。
+
+```
+import { uiMaterial } from '@kit.ArkUI';
+
+@Entry
+@Component
+struct CalendarPickerDialogExample {
+  private selectedDate: Date = new Date('2025-08-05');
+
+  build() {
+    Stack({ alignContent: Alignment.Top }) {
+      Column() {
+        Button('Show CalendarPicker Dialog')
+          .margin(20)
+          .onClick(() => {
+            CalendarPickerDialog.show({
+              selected: this.selectedDate,
+              systemMaterial: new uiMaterial.ImmersiveMaterial({ style: uiMaterial.ImmersiveStyle.ULTRA_THICK })
+            });
+          })
+      }.width('100%')
+    }
+  }
+}
+```
+ ![](./img/zh-cn_image_0000002701799986.png)

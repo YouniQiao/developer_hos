@@ -2,8 +2,8 @@
 title: "SwipeRefresherV2"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-swiperefresherv2"
 catalog: "harmonyos-references"
-content_hash: "fe4152aa9c31"
-synced_at: "2026-07-28T16:48:34.808185"
+content_hash: "631e08e9331b"
+synced_at: "2026-08-29T18:15:16.409189"
 ---
 
 # SwipeRefresherV2
@@ -31,7 +31,7 @@ import { SwipeRefresherV2 } from '@kit.ArkUI';
 
 #### SwipeRefresherV2
 
-SwipeRefresherV2({content?: string, isLoading: boolean})
+SwipeRefresherV2({content?: ResourceStr, isLoading: boolean})
 
 实现下拉刷新功能。当用户下拉页面时，会触发内容加载操作，即从数据源获取新内容并动态展示在界面中。
 
@@ -49,7 +49,7 @@ SwipeRefresherV2({content?: string, isLoading: boolean})
 
 | 名称 | 类型 | 必填 | 装饰器类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| content | string | 否 | @Param | 内容加载时显示的文本。 默认值：空字符串。 **说明**：如果文本大于列宽时，文本被截断。 |
+| content | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | @Param | 内容加载时显示的文本。 默认值：空字符串。 **说明**：如果文本大于列宽时，文本被截断。 |
 | isLoading | boolean | 是 | @Require @Param | 当前内容是否正在加载。 true：内容正在加载。 false：内容未在加载。 |
 
 #### 事件
@@ -84,4 +84,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008960.gif)
+ ![](./img/zh-cn_image_0000002731519377.gif)

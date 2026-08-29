@@ -2,8 +2,8 @@
 title: "AutoFillRect"
 upstream_id: "harmonyos-references/js-apis-inner-application-autofillrect"
 catalog: "harmonyos-references"
-content_hash: "3d26ee19b2b5"
-synced_at: "2026-07-28T16:40:38.141645"
+content_hash: "f6087a6b7b13"
+synced_at: "2026-08-29T18:12:03.199681"
 ---
 
 # AutoFillRect
@@ -11,6 +11,12 @@ synced_at: "2026-07-28T16:40:38.141645"
 用于自动填充的矩形区域。
 
 起始版本： 26.0.0
+
+#### 导入模块
+
+```
+import { autoFillManager } from '@kit.AbilityKit';
+```
 
 #### AutoFillRect
 

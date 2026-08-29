@@ -2,8 +2,8 @@
 title: "Functions"
 upstream_id: "harmonyos-references/arkts-apis-drm-f"
 catalog: "harmonyos-references"
-content_hash: "7115342ae673"
-synced_at: "2026-07-28T16:51:45.865321"
+content_hash: "7104c0525a58"
+synced_at: "2026-08-29T18:17:33.529010"
 ---
 
 # Functions
@@ -22,7 +22,7 @@ createMediaKeySystem(name: string): MediaKeySystem
 
 创建MediaKeySystem实例。最多可以创建64个MediaKeySystem实例。超过上限时，会抛出错误码24700103。建议及时调用[destroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-drm-mediakeysystem#destroy)接口释放不再使用的MediaKeySystem实例。
 
-元服务API： 从API version 14开始，该接口支持在元服务中使用。
+元服务API： 从API版本14开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -45,9 +45,9 @@ createMediaKeySystem(name: string): MediaKeySystem
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | The parameter check failed. Possibly because: 1.Mandatory parameters are left unspecified. 2.Parameter verification failed. |
-| 24700101 | All unknown errors |
-| 24700103 | Meet max MediaKeySystem num limit |
-| 24700201 | Fatal service error, for example, service died |
+| 24700101 | All unknown errors. |
+| 24700103 | Meet max MediaKeySystem num limit. |
+| 24700201 | Fatal service error, for example, service died. |
 
 示例：
 
@@ -65,7 +65,7 @@ isMediaKeySystemSupported(name: string): boolean
 
 判断设备是否支持指定的DRM解决方案。
 
-元服务API： 从API version 14开始，该接口支持在元服务中使用。
+元服务API： 从API版本14开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -73,7 +73,7 @@ isMediaKeySystemSupported(name: string): boolean
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| name | string | 是 | DRM解决方案名称。可通过[drm.getMediaKeySystems](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-drm-f#drmgetmediakeysystems12)接口获取设备支持的DRM解决方案名称，如"com.wiseplay.drm"。 |
+| name | string | 是 | DRM解决方案名称，长度不超过4096字节。可通过[drm.getMediaKeySystems](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-drm-f#drmgetmediakeysystems12)接口获取设备支持的DRM解决方案名称，如"com.wiseplay.drm"。 |
 
 返回值：
 
@@ -88,8 +88,8 @@ isMediaKeySystemSupported(name: string): boolean
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | The parameter check failed. Possibly because: 1.Mandatory parameters are left unspecified. 2.Parameter verification failed, the param name's length is zero or too big(exceeds 4096 Bytes). |
-| 24700101 | All unknown errors |
-| 24700201 | Fatal service error, for example, service died |
+| 24700101 | All unknown errors. |
+| 24700201 | Fatal service error, for example, service died. |
 
 示例：
 
@@ -106,7 +106,7 @@ isMediaKeySystemSupported(name: string, mimeType: string): boolean
 
 判断设备是否支持指定的DRM解决方案及媒体类型。
 
-元服务API： 从API version 14开始，该接口支持在元服务中使用。
+元服务API： 从API版本14开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -114,7 +114,7 @@ isMediaKeySystemSupported(name: string, mimeType: string): boolean
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| name | string | 是 | DRM解决方案名称。可通过[drm.getMediaKeySystems](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-drm-f#drmgetmediakeysystems12)接口获取设备支持的DRM解决方案名称，如"com.wiseplay.drm"。 |
+| name | string | 是 | DRM解决方案名称。从API版本12开始，可通过[drm.getMediaKeySystems](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-drm-f#drmgetmediakeysystems12)接口获取设备支持的DRM解决方案名称，如"com.wiseplay.drm"。 |
 | mimeType | string | 是 | 媒体类型，支持的媒体类型取决于DRM解决方案，如：video/avc、video/hevc。 |
 
 返回值：
@@ -130,8 +130,8 @@ isMediaKeySystemSupported(name: string, mimeType: string): boolean
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | The parameter check failed. Possibly because: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed. |
-| 24700101 | All unknown errors |
-| 24700201 | Fatal service error, for example, service died |
+| 24700101 | All unknown errors. |
+| 24700201 | Fatal service error, for example, service died. |
 
 示例：
 
@@ -146,9 +146,9 @@ console.info("isMediaKeySystemSupported: ", supported);
 
 isMediaKeySystemSupported(name: string, mimeType: string, level: ContentProtectionLevel): boolean
 
-判断设备是否支持指定的DRM解决方案、媒体类型以及内容保护级别。
+判断设备是否支持指定的DRM解决方案、媒体类型及内容保护级别。
 
-元服务API： 从API version 14开始，该接口支持在元服务中使用。
+元服务API： 从API版本14开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -173,8 +173,8 @@ isMediaKeySystemSupported(name: string, mimeType: string, level: ContentProtecti
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | The parameter check failed. Possibly because: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed. |
-| 24700101 | All unknown errors |
-| 24700201 | Fatal service error, for example, service died |
+| 24700101 | All unknown errors. |
+| 24700201 | Fatal service error, for example, service died. |
 
 示例：
 
@@ -191,7 +191,7 @@ getMediaKeySystemUuid(name: string): string
 
 获取DRM解决方案支持的DRM内容保护系统唯一标识。
 
-元服务API： 从API version 14开始，该接口支持在元服务中使用。
+元服务API： 从API版本14开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -213,9 +213,9 @@ getMediaKeySystemUuid(name: string): string
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | The parameter check failed. Possibly because: 1.Mandatory parameters are left unspecified. 2.Parameter verification failed. |
-| 24700101 | All unknown errors |
-| 24700201 | Fatal service error, for example, service died |
+| 401 | The parameter check failed.Possibly because: 1.Mandatory parameters are left unspecified. 2.Parameter verification failed. |
+| 24700101 | All unknown errors. |
+| 24700201 | Fatal service error, for example, service died. |
 
 示例：
 
@@ -232,7 +232,7 @@ getMediaKeySystems(): MediaKeySystemDescription[]
 
 获取设备支持的插件信息列表。
 
-元服务API： 从API version 14开始，该接口支持在元服务中使用。
+元服务API： 从API版本14开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -248,8 +248,8 @@ getMediaKeySystems(): MediaKeySystemDescription[]
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 24700101 | All unknown errors |
-| 24700201 | Fatal service error, for example, service died |
+| 24700101 | All unknown errors. |
+| 24700201 | Fatal service error, for example, service died. |
 
 示例：
 

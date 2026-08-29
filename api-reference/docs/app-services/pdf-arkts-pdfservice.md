@@ -2,8 +2,8 @@
 title: "pdfService（PDF服务）"
 upstream_id: "harmonyos-references/pdf-arkts-pdfservice"
 catalog: "harmonyos-references"
-content_hash: "3484bce4fdb9"
-synced_at: "2026-07-28T16:52:59.428541"
+content_hash: "4c8d8229eb69"
+synced_at: "2026-08-29T18:18:32.408389"
 ---
 
 # pdfService（PDF服务）
@@ -421,7 +421,7 @@ insertPageFromDocument(document: PdfDocument, fromIndex: number, pageCount: numb
 | --- | --- | --- | --- |
 | document | [PdfDocument](#pdfdocument) | 是 | PdfDocument对象。 |
 | fromIndex | number | 是 | 从其他文档第几页开始添加，大于等于0，0为起始页。 |
-| pageCount | number | 是 | 添加页数量，大于0，小于等于总页数。 |
+| pageCount | number | 是 | 添加页数量，大于0且不超过总页数。最大支持1000页，从fromIndex起插入，超出1000页部分不插入且不报错。 |
 | index | number | 是 | 从当前文档第几页开始添加，大于等于0，小于总页数，0为起始页。 |
 
 返回值：
@@ -1557,7 +1557,7 @@ type SearchKeyCallback = (results: SearchResultData[]) => boolean
 | --- | --- | --- | --- | --- |
 | pageIndex | number | 否 | 否 | 搜索命中项所在的页码值。 |
 | rects | [PdfRect](#pdfrect)[] | 否 | 否 | 搜索命中项的矩形信息。 |
-| contextString | string | 否 | 否 | 当字符串长度不超过contextStringLength时，按原字符串进行输出；当字符串长度超过contextString时，截取至contextStringLength长度。 |
+| contextString | string | 否 | 否 | 当字符串长度不超过contextStringLength时，按原字符串进行输出；当字符串长度超过contextStringLength时，截取至contextStringLength长度。 |
 
 #### Metadata
 
@@ -1824,7 +1824,7 @@ PDF页面的文本批注类，继承[PdfAnnotationInfo](#pdfannotationinfo)。
 | state | [TextAnnotationState](#textannotationstate) | 否 | 否 | 文本批注状态类型枚举。 |
 | x | number | 否 | 否 | x坐标，必须大于等于0，单位为Points（一英寸等于72Points）。 |
 | y | number | 否 | 否 | y坐标，必须大于等于0，单位为Points（一英寸等于72Points）。 说明：底层做了处理，传值和取值会有偏差。 |
-| color | number | 否 | 是 | 批注文本颜色，取值范围0x000000 ~ 0xFFFFFF，默认值：0x000000。 (例如：0xFF0000代表蓝色，0x0000FF代表红色) |
+| color | number | 否 | 是 | 批注文本颜色，BGR格式，取值范围：0x000000~0xFFFFFF，默认值：0x000000。 例如：0xFF0000代表蓝色，0x0000FF代表红色。 |
 
 #### LinkAnnotationInfo
 
@@ -1843,7 +1843,7 @@ PDF页面的链接类型注释的信息，继承[PdfAnnotationInfo](#pdfannotati
 | right | number | 否 | 否 | 右间距，必须大于等于0，单位为Points（一英寸等于72Points）。 |
 | top | number | 否 | 否 | 顶部间距，必须大于等于0，单位为Points（一英寸等于72Points）。 |
 | highlightMode | [HighlightMode](#highlightmode) | 否 | 是 | 高亮模式类型，用于设置链接注释被激活时的高亮效果。 |
-| color | number | 否 | 是 | 颜色，取值范围0x000000 ~ 0xFFFFFF。 (例如：0xFF0000代表蓝色，0x0000FF代表红色) |
+| color | number | 否 | 是 | 颜色，BGR格式，取值范围：0x000000~0xFFFFFF。 例如：0xFF0000代表蓝色，0x0000FF代表红色。 |
 
 #### FreeTextAnnotationInfo
 
@@ -1860,7 +1860,7 @@ PDF页面的自由文本类型注释的信息，继承[PdfAnnotationInfo](#pdfan
 | x | number | 否 | 否 | x坐标，必须大于等于0，单位为Points（一英寸等于72Points）。 说明：底层做了处理，传值和取值会有偏差。 |
 | y | number | 否 | 否 | y坐标，必须大于等于0，单位为Points（一英寸等于72Points）。 说明：底层做了处理，传值和取值会有偏差。 |
 | width | number | 否 | 是 | 宽，必须大于0，单位为Points（一英寸等于72Points）。 说明：底层做了处理，传值和取值会有偏差。 |
-| fillColor | number | 否 | 是 | 填充颜色，取值范围 0x000000 ~ 0xFFFFFF，默认值：0x000000。 (例如：0xFF0000代表蓝色，0x0000FF代表红色) |
+| fillColor | number | 否 | 是 | 填充颜色，BGR格式，取值范围：0x000000~0xFFFFFF，默认值：0x000000。 例如：0xFF0000代表蓝色，0x0000FF代表红色。 |
 | textStyle | [TextStyle](#textstyle) | 否 | 是 | 文本类型。 说明：传值取值会有差异，有些传入的是布尔值，如果是true，则取值是1，如果是false，取值是0。传入的字体参数，因字体文件名称有多个，返回字体名称会有偏差。 |
 | textAlignment | [AlignmentType](#alignmenttype) | 否 | 是 | 对齐类型，默认值：LEFT。 |
 
@@ -1880,8 +1880,8 @@ PDF页面的方块类型标注信息类，继承[PdfAnnotationInfo](#pdfannotati
 | bottom | number | 否 | 否 | 底部间距，必须大于等于0，单位为Points（一英寸等于72Points）。 |
 | right | number | 否 | 否 | 右间距，必须大于等于0，单位为Points（一英寸等于72Points）。 |
 | top | number | 否 | 否 | 顶部间距，必须大于等于0，单位为Points（一英寸等于72Points）。 |
-| lineColor | number | 否 | 是 | 线框颜色，取值范围0x000000 ~ 0xFFFFFF。 (例如：0xFF0000代表蓝色，0x0000FF代表红色) |
-| fillColor | number | 否 | 是 | 填充颜色，取值范围0x000000 ~ 0xFFFFFF。 (例如：0xFF0000代表蓝色，0x0000FF代表红色) |
+| lineColor | number | 否 | 是 | 线框颜色，BGR格式，取值范围：0x000000~0xFFFFFF。 例如：0xFF0000代表蓝色，0x0000FF代表红色。 |
+| fillColor | number | 否 | 是 | 填充颜色，BGR格式，取值范围：0x000000~0xFFFFFF。 例如：0xFF0000代表蓝色，0x0000FF代表红色。 |
 
 #### OvalAnnotationInfo
 
@@ -1899,8 +1899,8 @@ PDF页面的椭圆型标注的信息类，继承[PdfAnnotationInfo](#pdfannotati
 | bottom | number | 否 | 否 | 底部间距，必须大于等于0，单位为Points（一英寸等于72Points）。 |
 | right | number | 否 | 否 | 右间距，必须大于等于0，单位为Points（一英寸等于72Points）。 |
 | top | number | 否 | 否 | 顶部间距，必须大于等于0，单位为Points（一英寸等于72Points）。 |
-| lineColor | number | 否 | 是 | 线框颜色，取值范围0x000000 ~ 0xFFFFFF。 (例如：0xFF0000代表蓝色，0x0000FF代表红色) |
-| fillColor | number | 否 | 是 | 填充颜色，取值范围0x000000 ~ 0xFFFFFF。 (例如：0xFF0000代表蓝色，0x0000FF代表红色) |
+| lineColor | number | 否 | 是 | 线框颜色，BGR格式，取值范围：0x000000~0xFFFFFF。 例如：0xFF0000代表蓝色，0x0000FF代表红色。 |
+| fillColor | number | 否 | 是 | 填充颜色，BGR格式，取值范围：0x000000~0xFFFFFF。 例如：0xFF0000代表蓝色，0x0000FF代表红色。 |
 
 #### PolygonAnnotationInfo
 
@@ -1915,8 +1915,8 @@ PDF页面的多边形批注信息类，继承[PdfAnnotationInfo](#pdfannotationi
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | vertexes | Array | 否 | 否 | 按顺序描述多边形的PdfPoint类型的数组。 |
-| lineColor | number | 否 | 是 | 线框颜色，取值范围0x000000 ~ 0xFFFFFF。 (例如：0xFF0000代表蓝色，0x0000FF代表红色) |
-| fillColor | number | 否 | 是 | 填充颜色，取值范围0x000000 ~ 0xFFFFFF。 (例如：0xFF0000代表蓝色，0x0000FF代表红色) |
+| lineColor | number | 否 | 是 | 线框颜色，BGR格式，取值范围：0x000000~0xFFFFFF。 例如：0xFF0000代表蓝色，0x0000FF代表红色。 |
+| fillColor | number | 否 | 是 | 填充颜色，BGR格式，取值范围：0x000000~0xFFFFFF。 例如：0xFF0000代表蓝色，0x0000FF代表红色。 |
 
 #### LineAnnotationInfo
 
@@ -1936,7 +1936,7 @@ PDF页面的线型标注信息类，继承[PdfAnnotationInfo](#pdfannotationinfo
 | endY | number | 否 | 否 | 终点的y坐标（到下边缘的距离），单位为Points（一英寸等于72Points）。 说明：传参和取值会有偏差，底层对数据做了处理。 |
 | startPointStyle | [LineEndStyle](#lineendstyle) | 否 | 否 | 线条开始端点的线条样式。 |
 | endPointStyle | [LineEndStyle](#lineendstyle) | 否 | 否 | 线条结束端点的线条样式。 |
-| lineColor | number | 否 | 是 | 线框颜色，取值范围0x000000 ~ 0xFFFFFF。（例如：0xFF0000代表蓝色，0x0000FF代表红色) |
+| lineColor | number | 否 | 是 | 线框颜色，BGR格式，取值范围：0x000000~0xFFFFFF。例如：0xFF0000代表蓝色，0x0000FF代表红色。 |
 
 #### PolylineAnnotationInfo
 
@@ -1951,7 +1951,7 @@ PDF页面的折线类型标注的信息类，继承[PdfAnnotationInfo](#pdfannot
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | vertexes | Array | 否 | 否 | 按顺序描述折线的PdfPoint类型的数组。 |
-| lineColor | number | 否 | 是 | 线框颜色，取值范围0x000000~0xFFFFFF。 (例如：0xFF0000代表蓝色，0x0000FF代表红色) |
+| lineColor | number | 否 | 是 | 线框颜色，BGR格式，取值范围：0x000000~0xFFFFFF。 例如：0xFF0000代表蓝色，0x0000FF代表红色。 |
 
 #### HighlightAnnotationInfo
 
@@ -1966,7 +1966,7 @@ PDF页面的高亮类型标注信息类，继承[PdfAnnotationInfo](#pdfannotati
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | quadPoints | Array | 否 | 否 | 高亮区域的PdfPoint数组。 每个链接标注有4*n个点，每组4个点分别是： 第1个点：矩形左上角的点。 第2个点：矩形的右上点。 第3个点：矩形左下角的点。 第4个点：矩形的右下角点。 说明：传参和取值会有差异，底层对数据做了处理。 |
-| color | number | 否 | 是 | 突出显示的RGB颜色，取值范围0x000000~0xFFFFFF。 (例如：0xFF0000代表蓝色，0x0000FF代表红色) |
+| color | number | 否 | 是 | 突出显示的BGR颜色，BGR格式，取值范围：0x000000~0xFFFFFF。 例如：0xFF0000代表蓝色，0x0000FF代表红色。 |
 
 #### UnderlineAnnotationInfo
 
@@ -2009,7 +2009,7 @@ PDF页面的墨水类型注释信息类，继承[PdfAnnotationInfo](#pdfannotati
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | inkPoints | Array | 否 | 否 | PdfPoint数组按顺序描述墨迹批注 每个链接标注有4*n个点，每组4个点分别是： 第1个点：矩形左上角的点。 第2个点：矩形的右上点。 第3个点：矩形左下角的点。 第4个点：矩形的右下角点。 |
-| lineColor | number | 否 | 是 | 线框颜色，取值范围0x000000~0xFFFFFF，默认值：0x000000。 (例如：0xFF0000代表蓝色，0x0000FF代表红色) |
+| lineColor | number | 否 | 是 | 线框颜色，BGR格式，取值范围：0x000000~0xFFFFFF，默认值：0x000000。 例如：0xFF0000代表蓝色，0x0000FF代表红色。 |
 
 #### StampAnnotationInfo
 
@@ -2082,7 +2082,7 @@ PDF页面的边框类。
 | --- | --- | --- | --- | --- |
 | borderStyle | [BorderStyle](#borderstyle) | 否 | 否 | 线框类型。 |
 | borderWidth | number | 否 | 否 | 线框宽度，必须大于0，单位为Points（一英寸等于72Points）。 |
-| borderColor | number | 否 | 否 | 线框颜色，取值范围0x000000 ~ 0xFFFFFF。 (例如：0xFF0000代表蓝色，0x0000FF代表红色) |
+| borderColor | number | 否 | 否 | 线框颜色，BGR格式，取值范围：0x000000~0xFFFFFF。 例如：0xFF0000代表蓝色，0x0000FF代表红色。 |
 
 #### [h2]constructor
 
@@ -2794,7 +2794,7 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 
 addImageObject(path: string, x: number, y: number, width: number, height: number): void
 
-在PDF文档的页面中添加图片。
+在PDF文档的页面中添加图片。当前仅支持添加像素格式为RGB_888、RGBA_8888、BGR_888、BGRA_8888、ARGB_8888、ABGR_8888、Y8的图片。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -3427,7 +3427,7 @@ if(pdfService.ParseResult.PARSE_SUCCESS === loadResult) {
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | title | string | 否 | 否 | 书签的标题文本，用于标识书签指向的PDF内容。 |
-| titleColor | number | 否 | 是 | 标题颜色，取值范围0x000000 ~ 0xFFFFFF，默认值：0x000000。 (例如：0xFF0000代表蓝色，0x0000FF代表红色) |
+| titleColor | number | 否 | 是 | 标题颜色，BGR格式，取值范围：0x000000~0xFFFFFF，默认值：0x000000。 例如：0xFF0000代表蓝色，0x0000FF代表红色。 |
 | isBold | boolean | 否 | 是 | 标题是否粗体，true表示是，false表示否 ，默认值：false。 |
 | isItalic | boolean | 否 | 是 | 标题是否斜体，true表示是，false表示否，默认值：false。 |
 
@@ -3469,7 +3469,7 @@ let bookmarkInfo = new pdfService.BookmarkInfo();
 | textSize | number | 否 | 否 | 页眉页脚文本大小，必须大于0，单位为Points（一英寸等于72Points）。默认值：0，0Points（无指定）。 |
 | charset | [CharsetType](#charsettype) | 否 | 否 | 文本字符集。默认值：0，PDF_FONT_ANSI_CHARSET （ANSI字符集）。 |
 | underline | boolean | 否 | 否 | 下划线是否添加，true表示是，false表示否。默认值：false，无下划线。 |
-| textColor | number | 否 | 否 | 文字颜色，取值范围0x000000 ~ 0xFFFFFF。默认值：0，表示黑色。 （例如：0xFF0000代表蓝色，0x0000FF代表红色） |
+| textColor | number | 否 | 否 | 文字颜色，BGR格式，取值范围：0x000000~0xFFFFFF。默认值：0，表示黑色。 例如：0xFF0000代表蓝色，0x0000FF代表红色。 |
 | leftMargin | number | 否 | 否 | 页眉页脚左间距，必须大于等于0，单位为Points（一英寸等于72Points）。默认值：0，表示无左边距。 |
 | topMargin | number | 否 | 否 | 页眉页脚顶部间距，必须大于等于0，单位为Points（一英寸等于72Points）。默认值：0，表示无顶部边距。 |
 | rightMargin | number | 否 | 否 | 页眉页脚右间距，必须大于等于0，单位为Points（一英寸等于72Points）。默认值：0，表示无右边距。 |
@@ -3558,7 +3558,7 @@ let watermarkInfo = new pdfService.WatermarkInfo();
 | content | string | 否 | 否 | 文本水印内容。 |
 | fontInfo | [FontInfo](#fontinfo) | 否 | 否 | 字体的信息。 |
 | textSize | number | 否 | 否 | 文本大小，必须大于0。 |
-| textColor | number | 否 | 否 | 文本颜色，取值范围0x000000 ~ 0xFFFFFF。 (例如：0xFF0000代表蓝色，0x0000FF代表红色) |
+| textColor | number | 否 | 否 | 文本颜色，BGR格式，取值范围：0x000000~0xFFFFFF。 例如：0xFF0000代表蓝色，0x0000FF代表红色。 |
 
 #### ImageWatermarkInfo
 
@@ -3589,7 +3589,7 @@ let watermarkInfo = new pdfService.WatermarkInfo();
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | imagePath | string | 否 | 否 | 图片路径（图片路径不填则背景色必填）。默认值：""，空字符串（无背景图片）。 |
-| backgroundColor | number | 否 | 否 | 背景颜色（背景色不填则图片路径必填）默认值：0，表示无色。 ，取值范围0x000000 ~ 0xFFFFFF。 （例如：0xFF0000代表蓝色，0x0000FF代表红色） |
+| backgroundColor | number | 否 | 否 | 背景颜色（背景色不填则图片路径必填）默认值：0，表示无色，BGR格式，取值范围：0x000000~0xFFFFFF。 例如：0xFF0000代表蓝色，0x0000FF代表红色。 |
 | isOnTop | boolean | 否 | 否 | 是否置顶，true表示是，false表示否。默认值：false。 |
 | scale | number | 否 | 否 | 缩放，必须大于0，小于等于5。默认值：0，表示无缩放。 |
 | rotation | number | 否 | 否 | 旋转。默认值：0，表示无旋转（0度）。 |
@@ -3812,7 +3812,7 @@ let destInfo = new pdfService.DestInfo();
 | --- | --- | --- | --- | --- |
 | fontInfo | [FontInfo](#fontinfo) | 否 | 是 | 字体信息，默认字体：HarmonyOS_Sans。 |
 | textSize | number | 否 | 是 | 字体大小，必须大于0，默认值：20。单位为Points（一英寸等于72Points）。 |
-| textColor | number | 否 | 是 | 字体颜色，取值范围0x000000 ~ 0xFFFFFF，默认值：0x000000。 (例如：0xFF0000代表蓝色，0x0000FF代表红色) |
+| textColor | number | 否 | 是 | 字体颜色，BGR格式，取值范围：0x000000~0xFFFFFF，默认值：0x000000。 例如：0xFF0000代表蓝色，0x0000FF代表红色。 |
 | isBold | boolean | 否 | 是 | 是否粗体，true表示是，false表示否，默认值：false。 |
 | isItalic | boolean | 否 | 是 | 是否斜体，true表示是，false表示否，默认值：false。 |
 | isUnderline | boolean | 否 | 是 | 是否有下划线，true表示是，false表示否，默认值：false。 |

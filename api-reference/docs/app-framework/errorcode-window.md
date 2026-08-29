@@ -2,8 +2,8 @@
 title: "窗口错误码"
 upstream_id: "harmonyos-references/errorcode-window"
 catalog: "harmonyos-references"
-content_hash: "e20ca75e62ac"
-synced_at: "2026-07-09T00:58:50.348846"
+content_hash: "9addbd3ed744"
+synced_at: "2026-08-29T18:15:56.849211"
 ---
 
 # 窗口错误码
@@ -48,6 +48,308 @@ This window state is abnormal.
 
 在对窗口进行操作前，检查该窗口是否存在，确保其已创建且未被销毁，再进行相关操作。
 
+#### [h2]窗口销毁时调用getLastWindow崩溃
+
+可能原因
+
+开发者在窗口销毁过程中（如onWindowStageDestroy、页面销毁等）调用[getLastWindow()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-f#windowgetlastwindow9-1)接口，导致应用崩溃。
+
+典型日志信息
+
+故障日志格式：
+
+```
+Error Name: Error
+Error Message: [window][getLastWindow]msg: xxx
+Error code: 1300002
+Stack trace:
+  at window.getLastWindow (WindowManagerService)
+  at MyComponent.onWindowStageDestroy (MyAbility.ts:50)
+```
+ 关键信息：
+
+- 错误码：1300002
+- 堆栈：getLastWindow()调用位置
+- 文件名和行号：定位具体代码位置
+
+处理步骤
+
+根据日志堆栈定位getLastWindow()调用位置，检查是否在销毁流程中（onWindowStageDestroy、aboutToDisappear等）。常见场景：窗口创建时未调用[loadContent()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-windowstage#loadcontent9)加载页面，销毁流程中错误调用getLastWindow导致崩溃。
+
+解决要点：
+
+- getLastWindow()调用位置不在onWindowStageDestroy、aboutToDisappear、onDestroy等销毁回调中
+- 异步任务不会在销毁后执行getLastWindow()
+
+正反案例
+
+错误示例
+
+```
+// 错误：窗口创建时未加载页面，销毁流程中调用getLastWindow
+onWindowStageCreate(windowStage: window.WindowStage) {
+    // 缺失：未调用loadContent加载页面
+    windowStage.getMainWindow((err, win) => {
+        win.showWindow(); // 直接显示空窗口
+    });
+}
+
+onWindowStageDestroy() {
+    let lastWindow = window.getLastWindow(this.context); // 崩溃！
+}
+```
+ 正确示例
+
+```
+// 正确：窗口创建时立即加载页面，销毁流程只做资源清理
+onWindowStageCreate(windowStage: window.WindowStage) {
+    windowStage.getMainWindow((err, win) => {
+        win.loadContent('pages/MainPage'); // 创建时加载页面
+    });
+}
+
+onWindowStageDestroy() {
+    this.cleanupResources(); // 只做资源清理，不调用getLastWindow
+}
+```
+
+#### [h2]子窗口调用setResizeByDragEnabled接口失败
+
+可能原因
+
+开发者在子窗口上调用[setResizeByDragEnabled()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setresizebydragenabled14)接口设置窗口可拖拽缩放时，返回错误码1300002，无法实现拖拽缩放功能。
+
+典型日志信息
+
+通过DevEco Studio或hdc查看错误日志：
+
+```
+hdc shell hilog | grep -i -E "1300002|setResizeByDragEnabled"
+```
+ 典型日志示例：
+
+```
+SetResizeByDragEnabled: This is not main window or decor enabled sub window
+```
+ 关键信息：
+
+- 错误码：1300002（窗口状态异常）
+- 错误信息：This is not main window or decor enabled sub window
+- 原因：子窗口未启用标题栏，不支持拖拽缩放
+
+处理步骤
+
+检查创建子窗口时是否在SubWindowOptions中将decorEnabled设置为true。
+
+对于调用该接口的子窗口，要保证子窗口已开启窗口标题栏。
+
+正反案例
+
+错误示例
+
+```
+windowStage.createSubWindowWithOptions('mySubWindow', {
+  title: "",
+  decorEnabled: false,    // 错误：未开启标题栏
+  isModal: false,
+  maximizeSupported: true
+});
+```
+ 正确示例
+
+```
+let options: window.SubWindowOptions = {
+  title: "",
+  decorEnabled: true,   // 开启窗口标题栏
+  isModal: false,
+  maximizeSupported: true
+};
+windowStage.createSubWindowWithOptions('mySubWindow', options).then((windowClass) => {
+  // decorEnabled=true时可正常调用
+  windowClass.setResizeByDragEnabled(true, (err: BusinessError) => {
+    console.error("setResizeByDragEnabled failed.", ` code: ${err.code}, message: ${err.message}`)
+  })
+})
+```
+
+#### [h2]窗口名不存在，调用findWindow查找崩溃
+
+可能原因
+
+开发者在调用[findWindow()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-f#windowfindwindow9)查找不存在的窗口时，导致应用崩溃。
+
+典型日志信息
+
+故障日志格式：
+
+```
+Error Name: Error
+Error Message: [window][findWindow]msg: The window is not created or destroyed
+Error code: 1300002
+Stack trace:
+  at window.findWindow (WindowManagerService)
+  at MyComponent.onCreate (MyAbility.ts:50)
+```
+ 关键信息：
+
+- 错误码：1300002
+- 堆栈：findWindow()调用位置
+- 文件名和行号：定位具体代码位置
+
+处理步骤
+
+1. 根据日志堆栈定位findWindow()调用位置，检查窗口名称是否正确。使用以下命令查找findWindow参数信息： 
+```
+grep -n "findWindow" src/**/*.ts
+```
+
+2. 使用hidumper验证窗口状态： 
+```
+hdc shell hidumper -s WindowManagerService -a '-a'
+```
+
+正反案例
+
+错误示例
+
+```
+// 错误：查找窗口时传入错误窗口名称
+const currWindow = window.findWindow("test_Window");
+// 错误：对为空的对象进行函数调用
+currWindow.showWindow();
+```
+ 正确示例
+
+```
+// 正确：findWindow之后对获取到的对象进行空校验
+const currWindow = window.findWindow("test_Window");
+if (currWindow) {
+    currWindow.showWindow();
+} else {
+    console.error('Window not found');
+}
+```
+
+#### [h2]销毁未完成导致createSubWindow创建同名子窗口失败
+
+可能原因
+
+开发者在[createSubWindow()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-windowstage#createsubwindow9)创建窗口对象后，使用[destroyWindow()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#destroywindow9)，在窗口还未销毁的情况下，再次调用[createSubWindow()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-windowstage#createsubwindow9)，且使用相同名称，导致窗口创建失败，报错1300002。
+
+典型日志信息
+
+故障日志格式：
+
+```
+WindowSessionCreateCheck: WindowName(TestSubWindow) already exists.
+Error code: 1300002
+```
+ 关键信息：
+
+- 重复窗口名：TestSubWindow
+- 错误码：1300002
+
+处理步骤
+
+destroyWindow()接口用于销毁对应窗口实例，该接口为异步接口，若createSubWindow接口调用时，需要销毁的窗口实例还未销毁完成，则有可能创建同名，触发1300002错误。
+
+1. 根据日志堆栈定位createSubWindow()调用位置，查找所有createSubWindow调用位置，检查是否有使用相同窗口名称的情况： 
+```
+grep -n "createSubWindow" src/**/*.ts
+```
+
+2. 在创建窗口失败后，使用hidumper查看当前窗口状态： 
+```
+hdc shell hidumper -s WindowManagerService -a '-a'
+```
+
+解决要点：
+
+- 确保destroyWindow()调用后等待异步回调完成，使用await等待销毁完成
+- 或使用不同的窗口名称避免重名
+
+正反案例
+
+错误示例
+
+```
+let windowClass: window.Window | undefined = undefined;
+
+let windowClass = await windowStage.createSubWindow('mySubWindow');
+
+// 错误，destroyWindow为异步接口，却当做同步接口使用
+windowClass.destroyWindow();
+let newWindow = await windowStage.createSubWindow('mySubWindow'); // 此处可能会返回1300002错误
+```
+ 正确示例
+
+```
+// 正确：等待销毁完成后再创建
+let windowClass = await windowStage.createSubWindow('mySubWindow');
+
+// 调用销毁并等待完成
+await windowClass.destroyWindow();
+// 确保销毁完成后，再创建同名窗口
+let newWindow = await windowStage.createSubWindow('mySubWindow');
+```
+ 或使用不同的窗口名称避免重名：
+
+```
+// 使用时间戳作为窗口名称的一部分，避免重名
+let windowName = 'mySubWindow_' + Date.now();
+let windowClass = await windowStage.createSubWindow(windowName);
+```
+
+#### [h2]窗口销毁时调用off('avoidAreaChange')崩溃
+
+可能原因
+
+开发者在窗口销毁过程中（如[onWindowStageDestroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#onwindowstagedestroy)、[onDestroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#ondestroy)或页面销毁等）调用[off('avoidAreaChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#offavoidareachange9)接口，导致应用崩溃。
+
+典型日志信息
+
+```
+Error Name: Error
+Error Message: [window][off]msg: Unregister listener failed.
+Error code: 1300002
+Stack trace:
+  at windowClass.off('avoidAreaChange') (WindowManagerService)
+  at MyComponent.onWindowStageDestroy (MyAbility.ts:50)
+```
+ 关键信息：
+
+- 错误码：1300002
+- 堆栈：off('avoidAreaChange')调用位置
+- 文件名和行号：定位具体代码位置（如MyAbility.ts第50行）
+
+处理步骤
+
+- 根据日志堆栈定位off('avoidAreaChange')调用位置不在onWindowStageDestroy或onDestroy等销毁回调中
+- 异步任务不会在销毁后执行off('avoidAreaChange')
+
+正反案例
+
+错误示例
+
+```
+// 错误：在onWindowStageDestroy中调用off
+onWindowStageDestroy() {
+    this.windowClass.off('avoidAreaChange'); // 窗口可能已经销毁，1300002崩溃！
+}
+```
+ 正确示例
+
+```
+// 取消监听时机：页面隐藏或卸载前（非销毁流程）
+onPageHide() {
+  try {
+    this.windowClass?.off('avoidAreaChange');
+  } catch (exception) {
+    console.error(`Failed to disable the listener. Cause code: ${exception.code}, message: ${exception.message}`);
+  }
+}
+```
+
 #### 1300003 系统服务工作异常
 
 错误信息
@@ -64,7 +366,7 @@ This window manager service works abnormally.
 
 处理步骤
 
-系统服务内部工作异常，请稍候重试，或者重启设备尝试。
+系统服务内部工作异常，请稍后重试，或者重启设备尝试。
 
 #### 1300004 无权限操作
 
@@ -87,6 +389,97 @@ Unauthorized operation.
 1.请检查是否非法操作了其它进程的窗口对象，若存在，请删除相关操作。
 
 2.请确保相关操作与其支持的窗口类型对应一致。
+
+#### [h2]子窗口调用restore失败
+
+可能原因
+
+开发者对子窗口调用[restore()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#restore14)接口，导致操作失败，报错1300004。
+
+典型日志信息
+
+故障日志：
+
+```
+BusinessError 1300004: Unauthorized operation. Possible cause: Invalid window Type.Only main windows are supported.
+```
+ 处理步骤
+
+restore()接口只能对主窗口进行恢复操作，否则会报1300004错误。
+
+1. 使用hidumper查看窗口类型，确认窗口是否为主窗口： 
+```
+hdc shell hidumper -s WindowManagerService -a '-a'
+```
+
+2. 在输出中查找目标窗口，根据Type字段判断： 若Type为1，则对应为主窗口（MainWindow），可以调用restore()。
+3. Type不为1的窗口，均不能调用restore()。例如，通过[createSubWindow()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-windowstage#createsubwindow9)接口创建的窗口为子窗口，可在创建时指定子窗口名称。
+
+#### [h2]子窗口调用getWindowSystemBarProperties崩溃
+
+可能原因
+
+开发者在应用子窗口、全局悬浮窗等非应用主窗口上调用[getWindowSystemBarProperties()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#getwindowsystembarproperties12)接口，报错1300004。
+
+典型日志信息
+
+```
+Error Name: Error
+Error Message: [window][getWindowSystemBarProperties]msg: Invalid window type. Only main windows are supported.
+Error code: 1300004
+Stack trace:
+  at windowClass.getWindowSystemBarProperties() (WindowManagerService)
+  at MyComponent.onWindowStageCreate (MyAbility.ts:50)
+```
+ 关键信息：
+
+- 错误码：1300004
+- 堆栈：getWindowSystemBarProperties()调用位置
+- 文件名和行号：定位具体代码位置（如MyAbility.ts第50行）
+
+处理步骤
+
+getWindowSystemBarProperties()接口只适用于应用主窗口调用，否则会报1300004错误。
+
+1. 使用hidumper查看窗口类型，确认当前窗口是否为应用主窗口： 
+```
+hdc shell hidumper -s WindowManagerService -a '-a'
+```
+
+2. 在输出中查找目标窗口，根据Type字段判断。若Type为1，则对应为主窗口，可以调用getWindowSystemBarProperties()；否则不可以调用getWindowSystemBarProperties()。
+
+正反案例
+
+错误示例
+
+```
+windowStage.createSubWindow('mySubWindow', (err: BusinessError, data) => {
+  const errCode: number = err.code;
+  if (errCode) {
+    console.error(`Failed to create the subwindow. Cause code: ${err.code}, message: ${err.message}`);
+    return;
+  }
+  windowClass = data;
+  console.info(`Succeeded in creating the subwindow. Data: ${JSON.stringify(data)}`);
+  if (!windowClass) {
+    console.info('Failed to load the content. Cause: windowClass is null');
+  }
+  let systemBarProperty = windowClass.getWindowSystemBarProperties()
+});
+```
+ 正确示例
+
+```
+onWindowStageCreate(windowStage: window.WindowStage) {
+  let windowClass = windowStage.getMainWindowSync();
+  try {
+    let systemBarProperty = windowClass.getWindowSystemBarProperties();
+    console.info('Success in obtaining system bar properties. Property: ' + JSON.stringify(systemBarProperty));
+  } catch (err) {
+    console.error(`Failed to get system bar properties. Code: ${err.code}, message: ${err.message}`);
+  }
+}
+```
 
 #### 1300005 WindowStage异常
 
@@ -194,11 +587,106 @@ The PiP window state is abnormal.
 
 可能原因
 
-画中画窗口状态异常。
+1. 画中画窗口已被销毁，但代码仍在尝试访问该窗口。
+2. 画中画窗口处于无效状态（如尚未创建、已关闭、正在销毁）。
+3. 在画中画窗口销毁后，异步任务或回调中访问了窗口对象。
+4. 画中画窗口已经启动或正在启动中，但代码仍在尝试重复启动画中画窗口。
 
 处理步骤
 
-无需处理。
+1. 在画中画生命周期状态为ABOUT_TO_STOP或STOPPED时不可调用stopPiP()接口。
+2. 在画中画生命周期状态为ABOUT_TO_START或STARTED时不可调用startPiP()接口。
+3. 在setTimeout、Promise等异步回调中，对画中画窗口状态进行校验后才可调用stopPiP()或startPiP()接口。
+
+#### [h2]画中画窗口销毁后访问导致崩溃
+
+可能原因
+
+开发者在画中画窗口销毁后（如用户退出画中画、窗口生命周期结束等）调用画中画窗口[stopPiP()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-pipwindow#stoppip)接口，触发错误码1300012。
+
+典型日志信息
+
+```
+Error Name: Error
+Error Message: [PiPWindow][stopPiP]msg: The window is not created or destroyed.
+Error code: 1300012
+```
+ 处理步骤
+
+- 是否在画中画生命周期状态为ABOUT_TO_STOP或STOPPED时调用stopPiP()接口。 在以上状态时，代表画中画窗口即将停止或已经停止，此时不可调用stopPiP()接口。
+- 是否在setTimeout、Promise等异步回调中调用stopPiP()，且回调执行时窗口可能已销毁。 在异步回调中，画中画窗口可能已被销毁，代码中没有对画中画窗口状态进行校验，此时调用stopPiP()接口会导致错误。
+
+正反案例
+
+错误示例
+
+```
+// 错误：异步任务在窗口销毁后调用stopPiP()接口
+stopPiPTimer() {
+    setTimeout(() => {
+        this.pipController?.stopPiP();
+    }, 1000);
+}
+```
+ 正确示例
+
+```
+async stopPiPSafely(pipController: PiPController) {
+  let state: string = 'undefined';
+  
+  pipController.on('stateChange', (newState: string, reason: string) => {
+    state = newState;
+    if (state === 'STARTED') {
+      pipController?.stopPiP();
+    }
+  });
+}
+```
+
+#### [h2]画中画窗口重复启动导致崩溃
+
+可能原因
+
+开发者在画中画窗口处于已经启动或正在启动中的状态时，调用画中画窗口[startPiP()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-pipwindow#startpip)接口，触发错误码1300012。
+
+典型日志信息
+
+```
+Error Name: Error
+Error Message: [PiPWindow][startPiP]msg: The window is already started or is about to start.
+Error code: 1300012
+```
+ 处理步骤
+
+- 是否在画中画生命周期状态为ABOUT_TO_START或STARTED时调用startPiP()接口。 在该状态时，代表画中画窗口即将启动或已经启动，此时不可调用startPiP()接口。
+- 是否在setTimeout、Promise等异步回调中调用startPiP()，且回调执行时窗口可能已启动。 在异步回调中，画中画窗口可能已经启动或正在启动中，代码中没有对画中画窗口状态进行校验，此时调用startPiP()接口会导致错误。
+
+正反案例
+
+错误示例
+
+```
+// 错误：异步任务在窗口已创建后调用startPiP()接口
+startPiPTimer() {
+    setTimeout(() => {
+        this.pipController?.startPiP();
+    }, 1000);
+}
+```
+ 正确示例
+
+```
+async startPiPSafely(pipController: PiPController) {
+  let state: string = 'undefined';
+  
+  pipController.on('stateChange', (newState: string, reason: string) => {
+    state = newState;
+    if (state === 'STOPPED') {
+      pipController?.startPiP();
+    }
+  });
+}
+```
 
 #### 1300013 创建画中画窗口失败
 
@@ -590,7 +1078,7 @@ Failed to restore the main window.
 
 错误描述
 
-闪控窗拉起应用主窗失败。
+闪控窗拉起应用主窗口失败。
 
 可能原因
 
@@ -619,7 +1107,7 @@ Failed to start float view.
 可能原因
 
 1. 同一应用重复启动了多个闪控窗。
-2. 启动闪控窗时，context关联的主窗不在前台。
+2. 启动闪控窗时，context关联的主窗口不在前台。
 
 处理步骤
 

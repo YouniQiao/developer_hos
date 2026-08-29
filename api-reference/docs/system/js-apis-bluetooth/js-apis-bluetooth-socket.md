@@ -2,8 +2,8 @@
 title: "@ohos.bluetooth.socket (蓝牙socket模块)"
 upstream_id: "harmonyos-references/js-apis-bluetooth-socket"
 catalog: "harmonyos-references"
-content_hash: "c506e17716a0"
-synced_at: "2026-07-09T00:59:23.186407"
+content_hash: "c532744dffc2"
+synced_at: "2026-08-29T18:16:36.760908"
 ---
 
 # @ohos.bluetooth.socket (蓝牙socket模块)
@@ -132,7 +132,7 @@ sppAccept(serverSocket: number, callback: AsyncCallback<number>): void
 
 - 须在调用[socket.sppListen](#socketspplisten)创建服务端套接字成功后，才能调用该接口监听客户端的连接请求。
 - 客户端可通过[socket.sppConnect](#socketsppconnect)向该服务端发起连接请求。
-- 连接建立成功后，即可通过[socket.sppWrite](#socketsppwrite)、[socket.sppWriteAsync](#socketsppwriteasync18)、[socket.sppReadAsync](#socketsppreadasync18)等接口，同客户端进行数据传输。
+- 连接建立成功后，即可通过[socket.sppWrite](#socketsppwrite)、[socket.sppWriteAsync](#socketsppwriteasync18)、[socket.sppReadAsync](#socketsppreadasync18)等接口，与客户端进行数据传输。
 - 当服务端不再需要已建立的连接时，可通过[socket.sppCloseClientSocket](#socketsppcloseclientsocket)主动断开指定的客户端套接字连接。
 
 系统能力： SystemCapability.Communication.Bluetooth.Core
@@ -189,7 +189,7 @@ sppConnect(deviceId: string, options: SppOptions, callback: AsyncCallback<number
 - 通过[SppOptions](#sppoptions)参数的type表示需要连接的服务类型。
 - 需确保服务端设备已具备需要连接的服务。服务端可通过[socket.sppListen](#socketspplisten)注册并监听连接请求。
 - 连接建立成功后，即可通过[socket.sppWrite](#socketsppwrite)或[socket.sppWriteAsync](#socketsppwriteasync18)接口，同服务端进行数据传输。
-- 当客户端不再需要已建立的连接时，可通过[socket.sppCloseclientSocket](#socketsppcloseclientsocket)主动断开连接。
+- 当客户端不再需要已建立的连接时，可通过[socket.sppCloseClientSocket](#socketsppcloseclientsocket)主动断开连接。
 
 需要权限：ohos.permission.ACCESS_BLUETOOTH
 
@@ -245,7 +245,7 @@ try {
 
 getDeviceId(clientSocket: number): string
 
-客户端和服务端均可使用，获取套接字连接中的对端设备蓝牙地址。
+客户端和服务端均可使用，获取套接字连接中的对端设备蓝牙地址。若客户端使用，需在调用[socket.sppConnect](#socketsppconnect)后，且连接成功后使用。若服务端使用，需在调用[socket.sppAccept](#socketsppaccept)后，且连接成功后使用。
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
@@ -259,7 +259,7 @@ getDeviceId(clientSocket: number): string
 
 | 类型 | 说明 |
 | --- | --- |
-| string | 返回对端设备地址。 基于信息安全考虑，此处获取的设备地址为虚拟MAC地址。 - 已配对的地址不会变更。 - 若该设备重启蓝牙开关，重新获取到的虚拟地址会立即变更。 - 若取消配对，蓝牙子系统会根据该地址的实际使用情况，决策后续变更时机；若其他应用正在使用该地址，则不会立刻变更。 |
+| string | 返回对端设备地址。 基于信息安全考虑，此处获取的设备地址为虚拟MAC地址。 - 已配对的地址不会变更。 - 若该设备重启蓝牙开关，重新获取到的虚拟地址会立即变更。 - 若取消配对，蓝牙子系统会根据该地址是否仍被其他应用使用来决定变更时机：若其他应用正在使用该地址，则不会立即变更；当无应用使用时，地址将被回收并在下次获取时分配新的虚拟地址。 |
 
 错误码：
 
@@ -396,7 +396,7 @@ sppWrite(clientSocket: number, data: ArrayBuffer): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | clientSocket | number | 是 | 客户端套接字的ID。 该值是调用[socket.sppAccept](#socketsppaccept)或[socket.sppConnect](#socketsppconnect)接口，通过其异步callback获取到的。 |
-| data | ArrayBuffer | 是 | 写入的数据。 |
+| data | ArrayBuffer | 是 | 写入的数据。 对于L2CAP链路类型（SPP_L2CAP/SPP_L2CAP_BLE），数据大小不能超过当前链路的最大发送数据大小，可通过[socket.getMaxTransmitDataSize](#socketgetmaxtransmitdatasize22)接口获取。 |
 
 错误码：
 
@@ -482,6 +482,10 @@ off(type: 'sppRead', clientSocket: number, callback?: Callback<ArrayBuffer>): vo
 
 取消订阅套接字读请求事件。
 
+- 须在调用[socket.on('sppRead')](#socketonsppread)成功订阅后，才能调用该接口取消订阅。
+- 若客户端使用，需在调用[socket.sppConnect](#socketsppconnect)后，且连接成功后使用。
+- 若服务端使用，需在调用[socket.sppAccept](#socketsppaccept)后，且连接成功后使用。
+
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
 参数：
@@ -518,13 +522,13 @@ try {
 
 sppWriteAsync(clientSocket: number, data: ArrayBuffer): Promise<void>
 
-客户端和服务端均可使用，向对端设备发送数据。使用Promise异步回调。该接口支持断开连接时，会抛出错误码并返回。
+客户端和服务端均可使用，向对端设备发送数据。使用Promise异步回调。当连接断开时，该接口会抛出错误码并返回。
 
 - 仅在双方成功建立连接后，调用本接口才有效。
 - 若客户端使用，需在调用[socket.sppConnect](#socketsppconnect)后，且连接成功后使用。
 - 若服务端使用，需在调用[socket.sppAccept](#socketsppaccept)后，且连接成功后使用。
 - 按照蓝牙协议规范，数据通道在空闲状态需进入休眠模式以降低功耗。蓝牙子系统实现上，通道在5-7s内没有数据交互时会进入休眠模式，将导致下次调用此接口发送数据前，会耗费500ms左右退出休眠模式才开始发送数据。
-- 若想减少每次发送数据前退休眠模式的耗时，建议每3s左右可往数据通道上发送一次任意大小的心跳数据，对数据通道进行保活，可防止进入休眠模式，但同时也会提高设备功耗。
+- 若想减少每次发送数据前退出休眠模式的耗时，建议每3s左右可往数据通道上发送一次任意大小的心跳数据，对数据通道进行保活，可防止进入休眠模式，但同时也会提高设备功耗。
 - 链路类型为[SPP_L2CAP](#spptype)或[SPP_L2CAP_BLE](#spptype)时，单次发送数据大小存在限制，单位为Byte，超过限制大小的数据将被截断。链路类型为SPP_L2CAP_BLE时单次发送数据大小范围为[1, 65535]；链路类型为SPP_L2CAP时服务端单次发送数据大小范围为[1, 4091]，客户端单次发送数据大小范围为[1, 8085]。
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
@@ -573,7 +577,7 @@ try {
 
 sppReadAsync(clientSocket: number): Promise<ArrayBuffer>
 
-客户端和服务端均可使用，读取对端发送数据的异步接口。使用Promise异步回调。该接口支持断开连接时，会抛出错误码并返回。
+客户端和服务端均可使用，读取对端发送数据的异步接口。使用Promise异步回调。当连接断开时，该接口会抛出错误码并返回。
 
 - 若客户端使用，需在调用[socket.sppConnect](#socketsppconnect)后，且连接成功后使用。
 - 若服务端使用，需在调用[socket.sppAccept](#socketsppaccept)后，且连接成功后使用。
@@ -635,7 +639,7 @@ async function readAsync(clientNumber: number) {
 
 getMaxReceiveDataSize(clientSocket: number): number
 
-客户端和服务端均可使用，获取当前套接字链路类型下最大接收数据的大小。
+客户端和服务端均可使用，获取当前套接字链路类型下最大接收数据的大小。通过[socket.sppReadAsync](#socketsppreadasync18)或[socket.on('sppRead')](#socketonsppread)接收数据时，单次接收的数据大小受此返回值约束（SPP_RFCOMM链路类型无此限制）。例如在文件传输、数据同步等需要接收大量数据的场景中，可调用此接口获取单次接收的最大数据量，以便对接收数据进行分片处理。
 
 - 若客户端使用，需在调用[socket.sppConnect](#socketsppconnect)后，且连接成功后使用。
 - 若服务端使用，需在调用[socket.sppAccept](#socketsppaccept)后，且连接成功后使用。
@@ -673,7 +677,7 @@ try {
 
 getMaxTransmitDataSize(clientSocket: number): number
 
-客户端和服务端均可使用，获取套接字当前链路类型下最大发送数据的大小。
+客户端和服务端均可使用，获取套接字当前链路类型下最大发送数据的大小。调用[socket.sppWrite](#socketsppwrite)或[socket.sppWriteAsync](#socketsppwriteasync18)发送数据时，单次发送的数据大小不应超过此返回值（SPP_RFCOMM链路类型无此限制）。例如在文件传输、音视频数据传输等需要发送大量数据的场景中，可调用此接口获取单次发送的最大数据量，以便对发送数据进行分片处理。
 
 - 若客户端使用，需在调用[socket.sppConnect](#socketsppconnect)后，且连接成功后使用。
 - 若服务端使用，需在调用[socket.sppAccept](#socketsppaccept)后，且连接成功后使用。
@@ -752,7 +756,7 @@ try {
 | uuid | string | 否 | 否 | RFCOMM套接字链路类型的服务UUID，例如"00001101-0000-1000-8000-00805F9B34FB"。 - 建议开发者使用自定义的服务UUID（可通过工具函数[util.generateRandomUUID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-util#utilgeneraterandomuuid9)生成），也可以使用标准协议定义的Serial Port UUID服务(00001101-0000-1000-8000-00805F9B34FB)。 - SppType设置为SPP_RFCOMM时该参数必选。 - SppType设置为SPP_L2CAP或SPP_L2CAP_BLE时设置为空字符串。 |
 | secure | boolean | 否 | 否 | 是否是安全通道。true表示是安全通道，false表示非安全通道。 |
 | type | [SppType](#spptype) | 否 | 否 | 蓝牙套接字链路类型。 |
-| psm20+ | number | 否 | 是 | 协议/服务多路复用器值，用于标识特定的服务数据传输通道。不填写该参数时默认值为-1。 对于客户端： - SppType设置为SPP_RFCOMM时，该参数不填。 - SppType设置为SPP_L2CAP_BLE或SPP_L2CAP时，需和服务端的psm值保持一致。 对于服务端： - SppType设置为SPP_RFCOMM时，该参数不填。 - SppType设置为SPP_L2CAP_BLE时，psm值必须由系统自动分配，有效值范围为[0x01, 0xFF]。 - SppType设置为SPP_L2CAP时，psm值可以主动设置或蓝牙子系统分配，若为主动设置，其有效范围为[0x00, 0xFFFF]，并且需要满足低位字节最低位必须为1，高位字节最低位必须为0；若为蓝牙子系统分配，该参数不填，可以通过[socket.getL2capPsm](#socketgetl2cappsm20)接口获取psm值。 |
+| psm20+ | number | 否 | 是 | 协议/服务多路复用器值，用于标识特定的服务数据传输通道。不填写该参数时默认值为-1。 对于客户端： - SppType设置为SPP_RFCOMM时，该参数不填。 - SppType设置为SPP_L2CAP_BLE或SPP_L2CAP时，需和服务端的psm值保持一致。 对于服务端： - SppType设置为SPP_RFCOMM时，该参数不填。 - SppType设置为SPP_L2CAP_BLE时，psm值必须由系统自动分配，有效值范围为[0x01, 0xFF]。 - SppType设置为SPP_L2CAP时，psm值可以主动设置或蓝牙子系统分配，若为主动设置，其有效范围为[0x01, 0xFEFF]，并且需要满足低位字节最低位必须为1，高位字节最低位必须为0；若为蓝牙子系统分配，该参数不填，可以通过[socket.getL2capPsm](#socketgetl2cappsm20)接口获取psm值。 |
 
 #### SppType
 

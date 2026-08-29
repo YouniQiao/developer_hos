@@ -2,8 +2,8 @@
 title: "scanBarcode (默认界面扫码)"
 upstream_id: "harmonyos-references/scan-scanbarcode-api"
 catalog: "harmonyos-references"
-content_hash: "006026f88c85"
-synced_at: "2026-07-28T16:52:05.841480"
+content_hash: "bf683003b946"
+synced_at: "2026-08-29T18:17:48.488733"
 ---
 
 # scanBarcode (默认界面扫码)
@@ -111,7 +111,7 @@ function loadPage(uiContext: UIContext) {
   try {
     scanBarcode.startScanForResult(uiContext.getHostContext(), options).then((data: scanBarcode.ScanResult) => {
       hilog.info(0x0001, '[Scan Sample]',
-        `Succeeded in getting ScanResult by promise with options, result is ${JSON.stringify(data)}`);
+        `Succeeded in getting ScanResult by promise with options, scanType: ${data.scanType}`);
     }).catch((err: BusinessError) => {
       hilog.error(0x0001, '[Scan Sample]',
         `Failed to get ScanResult by promise with options. Code: ${err.code}, message: ${err.message}`);
@@ -176,7 +176,7 @@ function loadPage(uiContext: UIContext) {
   try {
     scanBarcode.startScanForResult(uiContext.getHostContext(), options).then((data: scanBarcode.ScanResult) => {
       hilog.info(0x0001, '[Scan Sample]',
-        `Succeeded in getting ScanResult by promise with options, result is ${JSON.stringify(data)}`);
+        `Succeeded in getting ScanResult by promise with options, scanType: ${data.scanType}`);
     }).catch((err: BusinessError) => {
       hilog.error(0x0001, '[Scan Sample]',
         `Failed to get ScanResult by promise with options. Code: ${err.code}, message: ${err.message}`);
@@ -239,7 +239,7 @@ function loadPage(uiContext: UIContext) {
           return;
         }
         hilog.info(0x0001, '[Scan Sample]',
-          `Succeeded in getting ScanResult by callback, result is ${JSON.stringify(data)}`);
+          `Succeeded in getting ScanResult by callback, scanType: ${data.scanType}`);
       });
   } catch (err) {
     hilog.error(0x0001, '[Scan Sample]',
@@ -303,7 +303,7 @@ function loadPage(uiContext: UIContext) {
           return;
         }
         hilog.info(0x0001, '[Scan Sample]',
-          `Succeeded in getting ScanResult by callback with options, result is ${JSON.stringify(data)}`);
+          `Succeeded in getting ScanResult by callback with options, scanType: ${data.scanType}`);
       });
   } catch (err) {
     hilog.error(0x0001, '[Scan Sample]',
@@ -360,7 +360,7 @@ let options: scanBarcode.ScanOptions = { scanTypes: [scanCore.ScanType.ALL], ena
 try {
   scanBarcode.startScan(options).then((data: scanBarcode.ScanResult) => {
     hilog.info(0x0001, '[Scan Sample]',
-      `Succeeded in getting ScanResult by promise with options, result is ${JSON.stringify(data)}`);
+      `Succeeded in getting ScanResult by promise with options, scanType: ${data.scanType}`);
   }).catch((err: BusinessError) => {
     // 当扫码过程中出现错误，打印并返回报错
     hilog.error(0x0001, '[Scan Sample]',
@@ -417,7 +417,7 @@ try {
       return;
     }
     hilog.info(0x0001, '[Scan Sample]',
-      `Succeeded in getting ScanResult by callback, result is ${JSON.stringify(data)}`);
+      `Succeeded in getting ScanResult by callback, scanType: ${data.scanType}`);
   });
 } catch (err) {
   hilog.error(0x0001, '[Scan Sample]', `Failed to startScan. Code: ${err.code}, message: ${err.message}`);
@@ -473,7 +473,7 @@ try {
       return;
     }
     hilog.info(0x0001, '[Scan Sample]',
-      `Succeeded in getting ScanResult by callback with options, result is ${JSON.stringify(data)}`);
+      `Succeeded in getting ScanResult by callback with options, scanType: ${data.scanType}`);
   });
 } catch (err) {
   hilog.error(0x0001, '[Scan Sample]', `Failed to startScan. Code: ${err.code}, message: ${err.message}`);

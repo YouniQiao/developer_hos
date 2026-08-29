@@ -2,8 +2,8 @@
 title: "ScsiPeripheral_Device"
 upstream_id: "harmonyos-references/capi-scsiperipheralddk-scsiperipheral-device"
 catalog: "harmonyos-references"
-content_hash: "f557160c8c90"
-synced_at: "2026-07-09T00:59:56.749091"
+content_hash: "3d7931a5b92b"
+synced_at: "2026-08-29T18:17:11.484664"
 ---
 
 # ScsiPeripheral_Device
@@ -14,7 +14,7 @@ typedef struct ScsiPeripheral_Device ScsiPeripheral_Device
 
 #### 概述
 
-不透明的SCSI设备结构体。
+不透明的SCSI设备结构体，用于表示与SCSI外设交互的设备句柄。
 
 起始版本： 18
 

@@ -2,8 +2,8 @@
 title: "DynamicLayout"
 upstream_id: "harmonyos-references/ts-container-dynamiclayout"
 catalog: "harmonyos-references"
-content_hash: "4e6fb4410e77"
-synced_at: "2026-07-28T16:43:15.159661"
+content_hash: "88b135e79a1e"
+synced_at: "2026-08-29T18:13:16.430209"
 ---
 
 # DynamicLayout
@@ -63,7 +63,7 @@ DynamicLayout(algorithm: LayoutAlgorithm)
 从API version 24开始，新增onMeasure、onLayout。
 
 ```
-import { DynamicLayout, DynamicLayoutAttribute, CustomLayoutAlgorithm, LayoutAlgorithm, FrameNode, LayoutConstraint, Position } from '@kit.ArkUI';
+import { DynamicLayout,  CustomLayoutAlgorithm, LayoutAlgorithm, FrameNode, LayoutConstraint, Position } from '@kit.ArkUI';
 
 // 瀑布流布局算法
 class WaterfallLayout extends CustomLayoutAlgorithm {
@@ -227,7 +227,7 @@ interface Product {
   image: string;
 }
 ```
- ![](./img/zh-cn_image_0000002655848468.png)
+ ![](./img/zh-cn_image_0000002731518803.png)
 
 #### [h2]示例2（切换布局算法）
 
@@ -238,7 +238,7 @@ interface Product {
 从API version 24开始，新增RowLayoutAlgorithm、ColumnLayoutAlgorithm、StackLayoutAlgorithm、GridLayoutAlgorithm。
 
 ```
-import { DynamicLayout, DynamicLayoutAttribute, RowLayoutAlgorithm, ColumnLayoutAlgorithm, StackLayoutAlgorithm, GridLayoutAlgorithm, LayoutAlgorithm, LengthMetrics } from '@kit.ArkUI';
+import { DynamicLayout,  RowLayoutAlgorithm, ColumnLayoutAlgorithm, StackLayoutAlgorithm, GridLayoutAlgorithm, LayoutAlgorithm, LengthMetrics } from '@kit.ArkUI';
 
 @Entry
 @ComponentV2
@@ -345,7 +345,7 @@ struct LayoutSwitchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087897.gif)
+ ![](./img/zh-cn_image_0000002701639604.gif)
 
 #### [h2]示例3（修改布局算法属性）
 
@@ -354,7 +354,7 @@ struct LayoutSwitchExample {
 从API version 24开始，新增space、justifyContent属性。
 
 ```
-import { DynamicLayout, DynamicLayoutAttribute, RowLayoutAlgorithm, LengthMetrics } from '@kit.ArkUI';
+import { DynamicLayout,  RowLayoutAlgorithm, LengthMetrics } from '@kit.ArkUI';
 
 @Entry
 @ComponentV2
@@ -414,4 +414,4 @@ struct PropertyChangeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928069.gif)
+ ![](./img/zh-cn_image_0000002731358825.gif)

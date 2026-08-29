@@ -2,8 +2,8 @@
 title: "customScan (自定义界面扫码)"
 upstream_id: "harmonyos-references/scan-customscan-api"
 catalog: "harmonyos-references"
-content_hash: "ef6510101dc7"
-synced_at: "2026-07-28T16:52:06.572306"
+content_hash: "fd3a45b86d7d"
+synced_at: "2026-08-29T18:17:48.155919"
 ---
 
 # customScan (自定义界面扫码)
@@ -58,7 +58,7 @@ await customScan.release();
 
 customScan模块的扫码全流程包含：初始化（init）、启动相机流扫码（start）、暂停相机流（stop）、释放资源（release），状态图如下：
 
-![](./img/zh-cn_image_0000002656009688.png)
+![](./img/zh-cn_image_0000002731360123.png)
 
 状态说明
 
@@ -136,7 +136,7 @@ struct CustomScanPage {
           try {
             customScan.start(viewControl).then((scanResult: Array<scanBarcode.ScanResult>) => {
               hilog.info(0x0001, '[Scan Sample]',
-                `Succeeded in getting ScanResult by promise, scanResult is ${JSON.stringify(scanResult)}`);
+                `Succeeded in getting ScanResult by promise, scanResult length: ${scanResult.length}`);
             }).catch((err: BusinessError) => {
               hilog.error(0x0001, '[Scan Sample]',
                 `Failed to get ScanResult by promise. Code: ${err.code}, message: ${err.message}`);
@@ -198,7 +198,7 @@ struct CustomScanPage {
         return;
       }
       hilog.info(0x0001, '[Scan Sample]',
-        `Succeeded in getting ScanResult by callback, result is ${JSON.stringify(data)}`);
+        `Succeeded in getting ScanResult by callback, result length: ${data.length}`);
     };
   // 回调获取ScanFrame
   private frameCallback: AsyncCallback<customScan.ScanFrame> =
@@ -208,11 +208,8 @@ struct CustomScanPage {
           `Failed to get ScanFrame by callback. Code: ${err.code}, message: ${err.message}`);
         return;
       }
-      // byteBuffer相机YUV图像数组
       hilog.info(0x0001, '[Scan Sample]',
-        `Succeeded in getting ScanFrame.byteBuffer.byteLength:  ${frameResult.byteBuffer.byteLength}`);
-      hilog.info(0x0001, '[Scan Sample]',
-        `Succeeded in getting ScanFrame.scanCodeRect: ${JSON.stringify(frameResult.scanCodeRects)}`);
+        `Succeeded in getting ScanFrame. ByteLength: ${frameResult.byteBuffer.byteLength}, width: ${frameResult.width}, height: ${frameResult.height}.`);
     };
 
   build() {
@@ -393,7 +390,7 @@ struct CustomScanPage {
           try {
             customScan.start(viewControl).then((scanResult: Array<scanBarcode.ScanResult>) => {
               hilog.info(0x0001, '[Scan Sample]',
-                `Succeeded in getting ScanResult by promise, scanResult is ${JSON.stringify(scanResult)}`);
+                `Succeeded in getting ScanResult by promise, scanResult length: ${scanResult.length}`);
             }).catch((err: BusinessError) => {
               hilog.error(0x0001, '[Scan Sample]',
                 `Failed to get ScanResult by promise. Code: ${err.code}, message: ${err.message}`);
@@ -483,18 +480,18 @@ struct CustomScanPage {
         return;
       }
       hilog.info(0x0001, '[Scan Sample]',
-        `Succeeded in getting ScanResult by callback, result is ${JSON.stringify(data)}`);
+        `Succeeded in getting ScanResult by callback, scanResult length: ${data.length}`);
     };
   // 回调获取ScanFrame
   private frameCallback: AsyncCallback<customScan.ScanFrame> =
-    (err: BusinessError, data: customScan.ScanFrame) => {
+    (err: BusinessError, frameResult: customScan.ScanFrame) => {
       if (err) {
         hilog.error(0x0001, '[Scan Sample]',
           `Failed to get ScanFrame by callback. Code: ${err.code}, message: ${err.message}`);
         return;
       }
       hilog.info(0x0001, '[Scan Sample]',
-        `Succeeded in getting ScanFrame by callback, scanFrame is ${JSON.stringify(data)}`);
+        `Succeeded in getting ScanFrame. ByteLength: ${frameResult.byteBuffer.byteLength}, width: ${frameResult.width}, height: ${frameResult.height}.`);
     };
 
   build() {
@@ -1033,7 +1030,7 @@ struct CustomScanPage {
         return;
       }
       hilog.info(0x0001, '[Scan Sample]',
-        `Succeeded in getting ScanResult by callback, result is ${JSON.stringify(data)}`);
+        `Succeeded in getting ScanResult by callback, scanResult length: ${data.length}`);
       // 重新触发扫码。如需不重启相机并重新触发一次扫码，可以在start接口的Callback异步回调中，调用rescan接口。
       try {
         customScan.rescan();

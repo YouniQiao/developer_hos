@@ -2,8 +2,8 @@
 title: "udmf.h"
 upstream_id: "harmonyos-references/capi-udmf-h"
 catalog: "harmonyos-references"
-content_hash: "5d1e51b53bc8"
-synced_at: "2026-08-18T15:31:51.736167"
+content_hash: "8b6b023e8d68"
+synced_at: "2026-08-29T18:12:15.486340"
 ---
 
 # udmf.h
@@ -117,8 +117,8 @@ synced_at: "2026-08-18T15:31:51.736167"
 | [int OH_UdmfOptions_Reset(OH_UdmfOptions* pThis)](#oh_udmfoptions_reset) | - | 重置数据操作选项[OH_UdmfOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfoptions)实例为空。 |
 | [int OH_Udmf_GetUnifiedData(const char* key, Udmf_Intention intention, OH_UdmfData* unifiedData)](#oh_udmf_getunifieddata) | - | 从统一数据管理框架数据库中获取统一数据对象[OH_UdmfData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfdata)数据。 |
 | [int OH_Udmf_GetUnifiedDataByOptions(OH_UdmfOptions* options, OH_UdmfData** dataArray, unsigned int* dataSize)](#oh_udmf_getunifieddatabyoptions) | - | 通过数据通路类型从统一数据管理框架数据库中获取统一数据对象[OH_UdmfData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfdata)数据。 |
-| [int OH_Udmf_SetUnifiedData(Udmf_Intention intention, OH_UdmfData* unifiedData, char* key, unsigned int keyLen)](#oh_udmf_setunifieddata) | - | 从统一数据管理框架数据库中写入统一数据对象[OH_UdmfData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfdata)数据。 |
-| [int OH_Udmf_SetUnifiedDataByOptions(OH_UdmfOptions* options, OH_UdmfData *unifiedData, char *key, unsigned int keyLen)](#oh_udmf_setunifieddatabyoptions) | - | 从统一数据管理框架数据库中写入统一数据对象[OH_UdmfData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfdata)数据。 |
+| [int OH_Udmf_SetUnifiedData(Udmf_Intention intention, OH_UdmfData* unifiedData, char* key, unsigned int keyLen)](#oh_udmf_setunifieddata) | - | 指定数据通路类型向统一数据管理框架数据库中写入统一数据对象[OH_UdmfData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfdata)数据。 |
+| [int OH_Udmf_SetUnifiedDataByOptions(OH_UdmfOptions* options, OH_UdmfData *unifiedData, char *key, unsigned int keyLen)](#oh_udmf_setunifieddatabyoptions) | - | 指定数据操作选项向统一数据管理框架数据库中写入统一数据对象[OH_UdmfData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfdata)数据。 |
 | [int OH_Udmf_UpdateUnifiedData(OH_UdmfOptions* options, OH_UdmfData* unifiedData)](#oh_udmf_updateunifieddata) | - | 对统一数据管理框架数据库中的统一数据对象[OH_UdmfData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfdata)数据进行数据更改。 |
 | [int OH_Udmf_DeleteUnifiedData(OH_UdmfOptions* options, OH_UdmfData** dataArray, unsigned int* dataSize)](#oh_udmf_deleteunifieddata) | - | 删除统一数据管理框架数据库中的统一数据对象[OH_UdmfData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfdata)数据。 |
 | [void OH_Udmf_DestroyDataArray(OH_UdmfData** dataArray, unsigned int dataSize)](#oh_udmf_destroydataarray) | - | 销毁数据数组内存。 |
@@ -465,7 +465,7 @@ typedef OH_UdmfData* (*OH_Udmf_DataLoadHandler)(OH_UdmfDataLoadInfo* acceptableI
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_UdmfData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfdata)* (*OH_Udmf_DataLoadHandler) | 返回待加载的数据。 |
+| [OH_UdmfData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfdata)* | 返回待加载的数据。 |
 
 #### [h2]OH_UdmfOptions_GetVisibility()
 
@@ -751,7 +751,7 @@ typedef void* (*OH_UdmfRecordProvider_GetData)(void* context, const char* type)
 
 | 类型 | 说明 |
 | --- | --- |
-| void* | 需要返回一个标准化数据。 |
+| void* | 返回从上下文中获取的指定类型的数据指针。 |
 
 #### [h2]OH_UdmfRecordProvider_SetData()
 
@@ -811,7 +811,7 @@ void OH_UdmfRecord_Destroy(OH_UdmfRecord* pThis)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_UdmfRecord](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfrecord)* pThis | 表示指向统一数据对象[OH_UdmfRecord](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfrecord)实例的指针。 |
+| [OH_UdmfRecord](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfrecord)* pThis | 表示指向统一数据记录[OH_UdmfRecord](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfrecord)实例的指针。 |
 
 #### [h2]OH_UdmfRecord_AddGeneralEntry()
 
@@ -1883,7 +1883,7 @@ int OH_Udmf_SetUnifiedData(Udmf_Intention intention, OH_UdmfData* unifiedData, c
 ```
  描述
 
-从统一数据管理框架数据库中写入统一数据对象[OH_UdmfData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfdata)数据。
+指定数据通路类型向统一数据管理框架数据库中写入统一数据对象[OH_UdmfData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfdata)数据。
 
 起始版本： 12
 
@@ -1909,7 +1909,7 @@ int OH_Udmf_SetUnifiedDataByOptions(OH_UdmfOptions* options, OH_UdmfData *unifie
 ```
  描述
 
-从统一数据管理框架数据库中写入统一数据对象[OH_UdmfData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfdata)数据。
+指定数据操作选项向统一数据管理框架数据库中写入统一数据对象[OH_UdmfData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfdata)数据。
 
 起始版本： 20
 
@@ -1918,8 +1918,8 @@ int OH_Udmf_SetUnifiedDataByOptions(OH_UdmfOptions* options, OH_UdmfData *unifie
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_UdmfOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfoptions)* options | 指向数据操作选项[OH_UdmfOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfoptions)实例的指针。 |
-| [OH_UdmfData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfdata) *unifiedData | 指向统一数据对象[OH_UdmfData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfdata)实例的指针。 |
-| char *key | 成功将数据设置到数据库后对应数据的唯一标识符，内存大小不小于[UDMF_KEY_BUFFER_LEN](#宏定义)。 |
+| [OH_UdmfData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfdata)* unifiedData | 指向统一数据对象[OH_UdmfData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfdata)实例的指针。 |
+| char* key | 成功将数据设置到数据库后对应数据的唯一标识符，内存大小不小于[UDMF_KEY_BUFFER_LEN](#宏定义)。 |
 | unsigned int keyLen | 唯一标识符参数的空间大小。 |
 
 返回：
@@ -2062,7 +2062,7 @@ OH_UdmfGetDataParams* OH_UdmfGetDataParams_Create()
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_UdmfGetDataParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfgetdataparams)* | 执行成功则返回一个指向属性[OH_UdmfGetDataParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfgetdataparams)实例对象的指针，否则返回nullptr。 |
+| [OH_UdmfGetDataParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfgetdataparams)* | 执行成功则返回一个指向[OH_UdmfGetDataParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-udmf-oh-udmfgetdataparams)实例对象的指针，否则返回nullptr。 |
 
 #### [h2]OH_UdmfGetDataParams_Destroy()
 

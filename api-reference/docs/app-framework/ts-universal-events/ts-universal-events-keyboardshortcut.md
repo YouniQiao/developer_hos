@@ -2,8 +2,8 @@
 title: "组件快捷键事件"
 upstream_id: "harmonyos-references/ts-universal-events-keyboardshortcut"
 catalog: "harmonyos-references"
-content_hash: "30028a0650d5"
-synced_at: "2026-07-28T16:41:56.244607"
+content_hash: "ef513bab2015"
+synced_at: "2026-08-29T18:12:43.925576"
 ---
 
 # 组件快捷键事件
@@ -35,7 +35,7 @@ keyboardShortcut(value: string | FunctionKey, keys: Array<ModifierKey>, action?:
 | --- | --- | --- | --- |
 | value | string | [FunctionKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#functionkey10) | 是 | 热键的单个字符（可以通过键盘输入的字符）或[FunctionKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#functionkey10)。 空字符串意为取消快捷键绑定；绑定了多个快捷键的组件不能解除绑定快捷键。 当value有多个字符时，不绑定组合键，先前绑定的组合键仍然有效。 |
 | keys | Array | 是 | 热键组合。 仅当value为[FunctionKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#functionkey10)的情况下keys的值可以为空。 当keys有重复的控制键时，不绑定组合键，先前绑定的组合键仍然有效。 |
-| action | () => void | 否 | 组合快捷键触发成功后的自定义事件回调。若未设置该参数，则组合快捷键行为与click行为一致。 |
+| action | () => void | 否 | 组合快捷键触发成功后的自定义事件回调。 |
 
 返回值：
 
@@ -129,7 +129,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087757.gif)
+ ![](./img/zh-cn_image_0000002731518661.gif)
 
 #### [h2]示例2（快捷键的绑定和解除绑定）
 
@@ -168,4 +168,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685927929.gif)
+ ![](./img/zh-cn_image_0000002701639464.gif)

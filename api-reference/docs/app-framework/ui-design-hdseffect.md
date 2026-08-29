@@ -1,12 +1,12 @@
 ---
-title: "hdsEffect"
+title: "hdsEffect (hds高级视效)"
 upstream_id: "harmonyos-references/ui-design-hdseffect"
 catalog: "harmonyos-references"
-content_hash: "9cbf32c6b059"
-synced_at: "2026-07-09T00:59:09.425873"
+content_hash: "a3c2eeb14ffe"
+synced_at: "2026-08-29T18:16:18.172458"
 ---
 
-# hdsEffect
+# hdsEffect (hds高级视效)
 
 本模块提供组件的拓展视效能力，包括组件点光源效果、按压光效、动画控制。
 
@@ -126,7 +126,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631414116.jpg)
+ ![](./img/zh-cn_image_0000002731359783.jpg)
 
 #### [h2]pressShadow
 
@@ -200,7 +200,7 @@ struct PressShadowExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661733345.gif)
+ ![](./img/zh-cn_image_0000002701800478.gif)
 
 #### [h2]shaderEffect
 
@@ -271,6 +271,28 @@ struct Index {
       .clip(true)
       .height(200)
       .backgroundColor('#383838')
+      Row() {
+        // 开始执行视效
+        Button('play').onClick((event: ClickEvent) => {
+          this.controller.play();
+        })
+        // 暂停视效
+        Button('pause').onClick((event: ClickEvent) => {
+          this.controller.pause();
+        })
+        // 继续执行视效
+        Button('resume').onClick((event: ClickEvent) => {
+          this.controller.resume();
+        })
+        // 反转视效
+        Button('reverse').onClick((event: ClickEvent) => {
+          this.controller.reverse();
+        })
+        // 停止视效
+        Button('stop').onClick((event: ClickEvent) => {
+          this.controller.stop();
+        })
+      }
     }
     .justifyContent(FlexAlign.Center)
     .backgroundColor(Color.Black)
@@ -279,7 +301,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631254224.gif)
+ ![](./img/zh-cn_image_0000002731519765.gif)
 
 #### [h2]buildEffect
 

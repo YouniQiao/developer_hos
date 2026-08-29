@@ -2,8 +2,8 @@
 title: "A2A (A2A协议)"
 upstream_id: "harmonyos-references/hmaf-a2a-protocol"
 catalog: "harmonyos-references"
-content_hash: "d01d22efc77e"
-synced_at: "2026-07-28T16:53:08.338588"
+content_hash: "bdcaf1a2d88e"
+synced_at: "2026-08-29T18:18:37.897598"
 ---
 
 # A2A (A2A协议)
@@ -18,14 +18,14 @@ A2A协议用于智能体之间的通信，A2A Server端负责接收客户端请�
 
 ```
 import { Role, TaskState, Part, Message, Artifact, TaskStatus, Task, OnDataCallback, createA2AServer, ProxySender,
-    Server, AgentOperation, RequestContext, TaskArtifactParam } from '@kit.AgentFrameworkKit';
+    Server, RequestContext, TaskArtifactParam } from '@kit.AgentFrameworkKit';
 ```
 
 #### createA2AServer
 
 createA2AServer(agentCard: common.AgentCard, onData: OnDataCallback, want?: Want): Server
 
-创建并获取Server实例，用于处理A2A协议通信。
+创建并获取Server实例，用于处理A2A协议通信。调用此方法后，将创建A2A服务端实例并准备启动。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -33,9 +33,11 @@ createA2AServer(agentCard: common.AgentCard, onData: OnDataCallback, want?: Want
 
 起始版本： 26.0.0
 
-| 名称 | 类型 | 必填 | 说明 |
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| agentCard | [common.AgentCard](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-common#agentcard) | 是 | AgentCard信息。 |
+| agentCard | [common.AgentCard](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-common#agentcard24) | 是 | AgentCard信息。 |
 | onData | [OnDataCallback](#ondatacallback) | 是 | 智能体数据处理回调函数。 |
 | want | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 否 | 包含A2A版本信息的Want对象。 |
 
@@ -43,7 +45,7 @@ createA2AServer(agentCard: common.AgentCard, onData: OnDataCallback, want?: Want
 
 | 类型 | 说明 |
 | --- | --- |
-| [Server](#server) | 创建的A2A Server实例。 |
+| [Server](#server) | 创建的A2A Server实例。该Server实例可用于调用start()、stop()、onMessage()等方法以控制A2A服务端行为。 |
 
 错误码：
 
@@ -58,19 +60,19 @@ createA2AServer(agentCard: common.AgentCard, onData: OnDataCallback, want?: Want
 
 ```
 import { Want, AgentExtensionAbility } from '@kit.AbilityKit';
-import { createA2AServer, Server, RequestContext, AgentOperation, OnDataCallback } from '@kit.AgentFrameworkKit';
+import { createA2AServer, Server, RequestContext, OnDataCallback } from '@kit.AgentFrameworkKit';
 
 export default class MyAgentExtensionAbility extends AgentExtensionAbility {
   private server: Server | null = null;
 
-  private agentOnData: OnDataCallback = (method: AgentOperation, context: RequestContext) => {
-    // Agent的业务处理定义
+  private agentOnData: OnDataCallback = (method: string, context: RequestContext) => {
+    // 处理来自客户端的智能体操作请求，根据method类型执行相应业务逻辑
   }
 
   async onCreate(want: Want) {
     try {
       const card = this.context.agentCard;
-      this.server = createA2AServer(card, this.agentOnData, want=want);
+      this.server = createA2AServer(card, this.agentOnData, want);
     } catch (error) {
       console.error(`Failed to create server: ${error}`);
     }
@@ -80,7 +82,7 @@ export default class MyAgentExtensionAbility extends AgentExtensionAbility {
 
 #### OnDataCallback
 
-type OnDataCallback = (method: AgentOperation, context: RequestContext) => void
+type OnDataCallback = (method: string, context: RequestContext) => void
 
 A2A Server收到客户端请求后，触发智能体执行的事件回调函数。
 
@@ -90,9 +92,11 @@ A2A Server收到客户端请求后，触发智能体执行的事件回调函数�
 
 起始版本： 26.0.0
 
-| 名称 | 类型 | 必填 | 说明 |
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| method | [AgentOperation](#agentoperation) | 是 | 智能体操作类型。 |
+| method | string | 是 | 智能体操作类型。包括以下取值： 'Execute'：触发执行操作。小艺发送"对话交互"、"长任务陪伴"、"UI控制陪伴"或"原生控制"等消息时触发，此时客户端使用的方法为"SendMessage"或"SendStreamingMessage"。智能体应从context中读取必要信息，通过updateStatus更新任务状态，并通过addArtifact返回产物。一旦状态更新为非WORKING或非SUBMITTED状态，则认为本次执行完成。 'Cancel'：触发取消操作。当客户端发送"CancelTask"请求时触发。智能体应尝试停止context中指定的任务。 'PerceptionSuggest'：触发感知建议操作。小艺在初始化期间使用此方法获取智能体的感知建议chips。智能体应从context中读取必要信息，通过updateStatus更新任务状态，并通过addArtifact返回产物。一旦状态更新为非WORKING或非SUBMITTED状态，则认为本次执行完成。详见[感知建议chips](https://developer.huawei.com/consumer/cn/doc/service/agent2agent-chips-0000002660585431)。 'GetOpening'：获取应用开场白操作。小艺在初始化期间使用此方法从应用的智能体获取开场白。 其他A2A方法：有关支持的A2A消息指令完整列表，请参见[A2A消息指令定义](https://developer.huawei.com/consumer/cn/doc/service/agent2agent-message-0000002630186256)。 |
 | context | [RequestContext](#requestcontext) | 是 | 请求上下文对象。 |
 
 #### ProxySender
@@ -107,7 +111,9 @@ type ProxySender = (data: string) => void
 
 起始版本： 26.0.0
 
-| 名称 | 类型 | 必填 | 说明 |
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | data | string | 是 | 发送给客户端的数据。 |
 
@@ -127,6 +133,8 @@ start(): void
 
 启动A2A服务端实例。
 
+![](./img/note_3.0-zh-cn.png) 该接口调用后，退出时应使用[stop](#stop)方法停止服务器实例。
+
 模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.AI.Agent.AgentKit
@@ -145,6 +153,8 @@ server.start();
 stop(): void
 
 停止服务器实例。
+
+![](./img/note_3.0-zh-cn.png) 该接口调用前，应先调用[start](#start)方法启动A2A服务端实例，否则不会产生实际作用。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -171,7 +181,9 @@ A2A服务端处理来自A2A客户端的消息请求，并将响应发送回客�
 
 起始版本： 26.0.0
 
-| 名称 | 类型 | 必填 | 说明 |
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | data | string | 是 | 客户端请求的JSON字符串。 |
 | sender | [ProxySender](#proxysender) | 是 | 响应回调函数，用于发送响应给客户端。 |
@@ -198,7 +210,9 @@ A2A服务端处理来自A2A客户端的密钥协商请求。
 
 起始版本： 26.0.0
 
-| 名称 | 类型 | 必填 | 说明 |
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | data | string | 是 | 客户端的密钥协商请求，包含客户端公钥信息。 |
 
@@ -207,6 +221,14 @@ A2A服务端处理来自A2A客户端的密钥协商请求。
 | 类型 | 说明 |
 | --- | --- |
 | string | 密钥协商信息，包含服务端公钥。 |
+
+示例：
+
+```
+// server对象通过createA2AServer接口创建
+// data是通过传输层拿到的客户端的鉴权数据
+const authResp: string = server.onAuth(data);
+```
 
 #### [h2]updateStatus
 
@@ -220,7 +242,9 @@ updateStatus(taskId: string, status: TaskStatus): void
 
 起始版本： 26.0.0
 
-| 名称 | 类型 | 必填 | 说明 |
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | taskId | string | 是 | 任务唯一标识，必须为UUID格式，格式为xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx。 |
 | status | [TaskStatus](#taskstatus) | 是 | 新的任务状态。 |
@@ -252,10 +276,24 @@ addArtifact(taskId: string, taskArtifactParam: TaskArtifactParam): void
 
 起始版本： 26.0.0
 
-| 名称 | 类型 | 必填 | 说明 |
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | taskId | string | 是 | 任务唯一标识。 |
 | taskArtifactParam | [TaskArtifactParam](#taskartifactparam) | 是 | 产物更新参数。 |
+
+示例：
+
+```
+server.addArtifact(taskId, {
+  artifactId: 'result-artifact-id',
+  parts: [{
+    mediaType: 'application/json',
+    data: {'action': 'completed', 'result': 'Task finished successfully'}
+  }]
+});
+```
 
 #### RequestContext
 
@@ -289,32 +327,7 @@ getAgentId(): string | undefined
 
 ```
 // context对象在实现OnDataCallback接口时，作为参数获取
-const agentId: string = context.getAgentId() ?? "";
-```
-
-#### [h2]getClientSessionId
-
-getClientSessionId(): string | undefined
-
-获取客户端会话ID。
-
-模型约束： 此接口仅可在Stage模型下使用。
-
-系统能力： SystemCapability.AI.Agent.AgentKit
-
-起始版本： 26.0.0
-
-返回值：
-
-| 类型 | 说明 |
-| --- | --- |
-| string | undefined | 客户端会话ID，若不存在则返回undefined。 |
-
-示例：
-
-```
-// context对象在实现OnDataCallback接口时，作为参数获取
-const clientSessionId: string = context.getClientSessionId() ?? "";
+const agentId: string = context.getAgentId() ?? '';
 ```
 
 #### [h2]getUserInput
@@ -329,7 +342,9 @@ getUserInput(delimiter?: string): string
 
 起始版本： 26.0.0
 
-| 名称 | 类型 | 必填 | 说明 |
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | delimiter | string | 否 | 分隔符，用于分隔多条用户输入。 |
 
@@ -343,7 +358,7 @@ getUserInput(delimiter?: string): string
 
 ```
 // context对象在实现OnDataCallback接口时，作为参数获取
-const userInput: string = context.getUserInput(",");
+const userInput: string = context.getUserInput(',');
 ```
 
 #### [h2]getMessage
@@ -368,7 +383,7 @@ getMessage(): Message | undefined
 
 ```
 // context对象在实现OnDataCallback接口时，作为参数获取
-const message: Message = context.getMessage();
+const message = context.getMessage();
 ```
 
 #### [h2]getRelatedTasks
@@ -418,7 +433,7 @@ getCurrentTask(): Task | undefined
 
 ```
 // context对象在实现OnDataCallback接口时，作为参数获取
-const currentTask: Task = context.getRelatedTasks();
+const currentTask = context.getCurrentTask();
 ```
 
 #### [h2]getTaskId
@@ -443,7 +458,7 @@ getTaskId(): string | undefined
 
 ```
 // context对象在实现OnDataCallback接口时，作为参数获取
-const taskId: string = context.getTaskId() ?? "";
+const taskId: string = context.getTaskId() ?? '';
 ```
 
 #### [h2]getContextId
@@ -468,7 +483,7 @@ getContextId(): string | undefined
 
 ```
 // context对象在实现OnDataCallback接口时，作为参数获取
-const contextId: string = context.getContextId() ?? "";
+const contextId: string = context.getContextId() ?? '';
 ```
 
 #### [h2]getMetadata
@@ -515,23 +530,6 @@ const metadata: object = context.getMetadata();
 | append | boolean | 否 | 是 | 是否在任务历史记录中将当前的parts数组追加到有相同ID的产物中。true: 追加到现有的相同ID的产物，false: 在产物列表中新增一项。默认值：false。 |
 | lastChunk | boolean | 否 | 是 | 是否为最后一个数据块。true: 是最后一个数据块，false: 不是最后一个数据块。默认值：false。 |
 | extensions | string[] | 否 | 是 | 扩展URI列表。 |
-
-#### AgentOperation
-
-智能体操作枚举类型。
-
-模型约束： 此接口仅可在Stage模型下使用。
-
-系统能力： SystemCapability.AI.Agent.AgentKit
-
-起始版本： 26.0.0
-
-| 名称 | 值 | 说明 |
-| --- | --- | --- |
-| EXECUTE | 0 | 执行操作，收到客户端消息时触发。 |
-| CANCEL | 1 | 取消操作，收到取消任务请求时触发。 |
-| CLEAR_CONTEXT | 2 | 清除上下文操作。 |
-| PERCEPTION_SUGGEST | 3 | 小艺OnApp Chips推荐操作。 |
 
 #### TaskState
 
@@ -606,10 +604,10 @@ const metadata: object = context.getMetadata();
 | --- | --- | --- | --- | --- |
 | text | string | 否 | 是 | 文本内容。 |
 | raw | string | 否 | 是 | 原始数据内容。 |
-| url | string | 否 | 是 | 指向文件内容的URL，必须符合标准URL规范，例如"file://"、"https://"、`http://"。 |
+| url | string | 否 | 是 | 指向文件内容的URL，必须符合标准URL规范，例如'file://'、'https://'、'http://'。 |
 | data | object | string | number | boolean | 否 | 是 | 任意支持JSON序列化的对象、字符串、数字、布尔值。 |
-| mediaType | string | 否 | 是 | Part内容的媒体类型（MIME类型），例如"text/plain"、"application/json"、"image/png"。 |
-| filename | string | 否 | 是 | 文件名，例如"document.pdf"。 |
+| mediaType | string | 否 | 是 | Part内容的媒体类型（MIME类型），例如'text/plain'、'application/json'、'image/png'。 |
+| filename | string | 否 | 是 | 文件名，例如'document.pdf'。 |
 | metadata | object | 否 | 是 | 元数据，需要支持JSON序列化。 |
 
 #### Task

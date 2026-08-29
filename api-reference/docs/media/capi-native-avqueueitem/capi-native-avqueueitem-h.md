@@ -2,8 +2,8 @@
 title: "native_avqueueitem.h"
 upstream_id: "harmonyos-references/capi-native-avqueueitem-h"
 catalog: "harmonyos-references"
-content_hash: "d0008c9291ba"
-synced_at: "2026-07-09T01:00:20.261570"
+content_hash: "06f0e0005dec"
+synced_at: "2026-08-29T18:17:27.499620"
 ---
 
 # native_avqueueitem.h
@@ -36,7 +36,7 @@ synced_at: "2026-07-09T01:00:20.261570"
 
 | 名称 | 描述 |
 | --- | --- |
-| [AVQueueItem_Result OH_AVSession_AVMediaDescriptionBuilder_Create(OH_AVSession_AVMediaDescriptionBuilder** builder)](#oh_avsession_avmediadescriptionbuilder_create) | 创建OH_AVSession_AVMediaDescriptionBuilder实例。当该实例不再被使用时，调用[OH_AVSession_AVMediaDescriptionBuilder_Destroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avqueueitem-h#oh_avsession_avmediadescriptionbuilder_destroy)来释放构建器对象。 |
+| [AVQueueItem_Result OH_AVSession_AVMediaDescriptionBuilder_Create(OH_AVSession_AVMediaDescriptionBuilder** builder)](#oh_avsession_avmediadescriptionbuilder_create) | 创建OH_AVSession_AVMediaDescriptionBuilder实例。当该实例不再被使用时，调用[OH_AVSession_AVMediaDescriptionBuilder_Destroy](#oh_avsession_avmediadescriptionbuilder_destroy)来释放构建器对象。 |
 | [AVQueueItem_Result OH_AVSession_AVMediaDescriptionBuilder_Destroy(OH_AVSession_AVMediaDescriptionBuilder* builder)](#oh_avsession_avmediadescriptionbuilder_destroy) | 销毁构建器。 |
 | [AVQueueItem_Result OH_AVSession_AVMediaDescriptionBuilder_SetAssetId(OH_AVSession_AVMediaDescriptionBuilder* builder, const char* assetId)](#oh_avsession_avmediadescriptionbuilder_setassetid) | 设置媒体资源的当前资产ID。 |
 | [AVQueueItem_Result OH_AVSession_AVMediaDescriptionBuilder_SetTitle(OH_AVSession_AVMediaDescriptionBuilder* builder, const char* title)](#oh_avsession_avmediadescriptionbuilder_settitle) | 设置媒体资源的标题。 |
@@ -64,7 +64,7 @@ synced_at: "2026-07-09T01:00:20.261570"
 | [AVQueueItem_Result OH_AVSession_AVMediaDescription_GetMediaSize(OH_AVSession_AVMediaDescription* description, int32_t* mediaSize)](#oh_avsession_avmediadescription_getmediasize) | 获取资源的媒体大小。 |
 | [AVQueueItem_Result OH_AVSession_AVMediaDescription_GetAlbumTitle(OH_AVSession_AVMediaDescription* description, char** albumTitle)](#oh_avsession_avmediadescription_getalbumtitle) | 获取媒体资源的专辑标题。 |
 | [AVQueueItem_Result OH_AVSession_AVMediaDescription_GetAppName(OH_AVSession_AVMediaDescription* description, char** appName)](#oh_avsession_avmediadescription_getappname) | 获取媒体资源的应用名。 |
-| [AVQueueItem_Result OH_AVSession_AVMediaDescriptionBuilder_GenerateAVMediaDescription(OH_AVSession_AVMediaDescriptionBuilder* builder, OH_AVSession_AVMediaDescription** avMediaDescription)](#oh_avsession_avmediadescriptionbuilder_generateavmediadescription) | 创建avMediaDescription对象。当该对象不再使用时，调用[OH_AVSession_AVMediaDescription_Destroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avqueueitem-h#oh_avsession_avmediadescription_destroy)释放avMediaDescription对象。 |
+| [AVQueueItem_Result OH_AVSession_AVMediaDescriptionBuilder_GenerateAVMediaDescription(OH_AVSession_AVMediaDescriptionBuilder* builder, OH_AVSession_AVMediaDescription** avMediaDescription)](#oh_avsession_avmediadescriptionbuilder_generateavmediadescription) | 创建avMediaDescription对象。当该对象不再使用时，调用[OH_AVSession_AVMediaDescription_Destroy](#oh_avsession_avmediadescription_destroy)释放avMediaDescription对象。 |
 | [AVQueueItem_Result OH_AVSession_AVMediaDescription_Destroy(OH_AVSession_AVMediaDescription* avMediaDescription)](#oh_avsession_avmediadescription_destroy) | 释放avMediaDescription对象。 |
 
 #### 函数说明
@@ -76,7 +76,7 @@ AVQueueItem_Result OH_AVSession_AVMediaDescriptionBuilder_Create(OH_AVSession_AV
 ```
  描述
 
-创建OH_AVSession_AVMediaDescriptionBuilder实例。当该实例不再被使用时，调用[OH_AVSession_AVMediaDescriptionBuilder_Destroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avqueueitem-h#oh_avsession_avmediadescriptionbuilder_destroy)来释放构建器对象。
+创建OH_AVSession_AVMediaDescriptionBuilder实例。当该实例不再被使用时，调用[OH_AVSession_AVMediaDescriptionBuilder_Destroy](#oh_avsession_avmediadescriptionbuilder_destroy)来释放构建器对象。
 
 起始版本： 23
 
@@ -84,7 +84,7 @@ AVQueueItem_Result OH_AVSession_AVMediaDescriptionBuilder_Create(OH_AVSession_AV
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_AVSession_AVMediaDescriptionBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-oh-avsession-avmediadescriptionbuilder)** builder | 指向用于接收创建结果的构建器对象。 |
+| [OH_AVSession_AVMediaDescriptionBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-oh-avsession-avmediadescriptionbuilder)** builder | 用于接收创建结果的构建器对象指针。 |
 
 返回：
 
@@ -275,7 +275,7 @@ AVQueueItem_Result OH_AVSession_AVMediaDescriptionBuilder_SetLyricContent(OH_AVS
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_AVSession_AVMediaDescriptionBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-oh-avsession-avmediadescriptionbuilder)* builder | 表示音视频媒体描述构建器实例指针。 |
-| const char* lyricContent | 媒体资源的歌词内容。为LRC（Lyric Reduced Codec）格式。 |
+| const char* lyricContent | 媒体资源的歌词内容，为LRC（Lyric Reduced Codec）格式，需符合标准LRC歌词格式规范。 |
 
 返回：
 
@@ -611,7 +611,7 @@ AVQueueItem_Result OH_AVSession_AVMediaDescription_GetDuration(OH_AVSession_AVMe
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_AVSession_AVMediaDescription](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-oh-avsession-avmediadescription)* description | 表示音视频媒体描述实例指针。 |
-| int32_t* duration | 指针变量将返回当前媒体资源的总时长。 |
+| int32_t* duration | 指针变量将返回当前媒体资源的总时长。单位为毫秒（ms）。 |
 
 返回：
 
@@ -659,7 +659,7 @@ AVQueueItem_Result OH_AVSession_AVMediaDescription_GetStartPosition(OH_AVSession
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_AVSession_AVMediaDescription](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-oh-avsession-avmediadescription)* description | 表示音视频媒体描述实例指针。 |
-| int32_t* startPosition | 指针变量将返回当前媒体资源开始的位置。 |
+| int32_t* startPosition | 指针变量将返回当前媒体资源开始的位置。单位为毫秒（ms）。 |
 
 返回：
 
@@ -746,7 +746,7 @@ AVQueueItem_Result OH_AVSession_AVMediaDescriptionBuilder_GenerateAVMediaDescrip
 ```
  描述
 
-创建avMediaDescription对象。当该对象不再使用时，调用[OH_AVSession_AVMediaDescription_Destroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avqueueitem-h#oh_avsession_avmediadescription_destroy)释放avMediaDescription对象。
+创建avMediaDescription对象。当该对象不再使用时，调用[OH_AVSession_AVMediaDescription_Destroy](#oh_avsession_avmediadescription_destroy)释放avMediaDescription对象。
 
 起始版本： 23
 

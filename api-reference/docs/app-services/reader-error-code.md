@@ -2,8 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/reader-error-code"
 catalog: "harmonyos-references"
-content_hash: "7518fe4db50e"
-synced_at: "2026-07-09T01:01:38.717366"
+content_hash: "3a3b539f06ff"
+synced_at: "2026-08-29T18:18:34.499771"
 ---
 
 # ArkTS API错误码
@@ -114,7 +114,7 @@ Invalid caller.
 
 错误信息
 
-Book parser is not initialized
+Book parser is not initialized.
 
 错误描述
 
@@ -186,7 +186,7 @@ Book file format is unexpected.
 
 错误信息
 
-File is not existed.
+File is not exist.
 
 错误描述
 

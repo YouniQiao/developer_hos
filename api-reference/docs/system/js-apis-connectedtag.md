@@ -2,8 +2,8 @@
 title: "@ohos.connectedTag (有源标签)"
 upstream_id: "harmonyos-references/js-apis-connectedtag"
 catalog: "harmonyos-references"
-content_hash: "be377128fa7b"
-synced_at: "2026-07-09T00:59:24.026639"
+content_hash: "799b1472c9e8"
+synced_at: "2026-08-29T18:16:37.337814"
 ---
 
 # @ohos.connectedTag (有源标签)
@@ -93,9 +93,9 @@ uninitialize(): void
 
 卸载有源标签芯片资源。
 
-需要权限: ohos.permission.NFC_TAG
+需要权限： ohos.permission.NFC_TAG
 
-系统能力: SystemCapability.Communication.ConnectedTag
+系统能力： SystemCapability.Communication.ConnectedTag
 
 错误码：
 
@@ -278,7 +278,7 @@ writeNdefTag(data: string): Promise<void>
 
 | **参数名** | **类型** | **必填** | **说明** |
 | --- | --- | --- | --- |
-| data | string | 是 | 有源标签内容, 最大长度为1024个字节。 |
+| data | string | 是 | 有源标签内容，最大长度为1024个字节。 |
 
 返回值：
 
@@ -314,7 +314,7 @@ write(data: number[]): Promise<void>
 
 | **参数名** | **类型** | **必填** | **说明** |
 | --- | --- | --- | --- |
-| data | number[] | 是 | 有源标签内容, 由十六进制数字组成。范围：0x00至0xFF。 |
+| data | number[] | 是 | 有源标签内容，由十六进制数字组成。范围：0x00至0xFF。 |
 
 返回值：
 
@@ -363,7 +363,7 @@ writeNdefTag(data: string, callback: AsyncCallback<void>): void
 
 | **参数名** | **类型** | **必填** | **说明** |
 | --- | --- | --- | --- |
-| data | string | 是 | 有源标签内容, 最大长度为1024个字节。 |
+| data | string | 是 | 有源标签内容，最大长度为1024个字节。 |
 | callback | AsyncCallback | 是 | 回调函数。当写入标签成功，err为undefined，否则为错误对象。 |
 
 示例：
@@ -395,7 +395,7 @@ write(data: number[], callback: AsyncCallback<void>): void
 
 | **参数名** | **类型** | **必填** | **说明** |
 | --- | --- | --- | --- |
-| data | number[] | 是 | 有源标签内容, 由十六进制数字组成。范围：0x00至0xFF。 |
+| data | number[] | 是 | 有源标签内容，由十六进制数字组成。范围：0x00至0xFF。 |
 | callback | AsyncCallback | 是 | 回调函数。当写入标签成功，err为undefined，否则为错误对象。 |
 
 错误码：
@@ -467,7 +467,7 @@ function nfcStatusCb(rfState: connectedTag.NfcRfType) {
     console.info("connectedTag on Callback rfState: ", rfState);
 }
 
-// 有源nfc标签的使用流程
+// 有源NFC标签的使用流程
 async function nfcTagTestOn(): Promise<void> {
     try {
         console.info("connectedTag initialize");

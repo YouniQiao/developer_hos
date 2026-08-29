@@ -2,15 +2,15 @@
 title: "oh_bluetooth.h"
 upstream_id: "harmonyos-references/capi-oh-bluetooth-h"
 catalog: "harmonyos-references"
-content_hash: "7433f2bb543c"
-synced_at: "2026-07-09T00:59:24.780420"
+content_hash: "8f6018cd0e8e"
+synced_at: "2026-08-29T18:16:39.097609"
 ---
 
 # oh_bluetooth.h
 
 #### 概述
 
-定义查询蓝牙开关状态的接口。
+提供查询蓝牙开关状态的接口。支持获取蓝牙的开关、打开中、关闭中、BLE only模式等多种状态，适用于需要感知蓝牙当前开关状态以进行相应业务处理的场景。
 
 引用文件： <ConnectivityKit/bluetooth/oh_bluetooth.h>
 
@@ -93,10 +93,10 @@ Bluetooth_ResultCode OH_Bluetooth_GetBluetoothSwitchState(Bluetooth_SwitchState 
 
 | 参数项 | 描述 |
 | --- | --- |
-| [Bluetooth_SwitchState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-bluetooth-h#bluetooth_switchstate) *state | - 指向接收蓝牙开关状态的枚举值的指针。需要传入非空指针，否则将返回错误码。详细定义请参考[Bluetooth_SwitchState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-bluetooth-h#bluetooth_switchstate)。 |
+| [Bluetooth_SwitchState](#bluetooth_switchstate) *state | - 指向接收蓝牙开关状态的枚举值的指针。需要传入非空指针，否则将返回错误码。详细定义请参考[Bluetooth_SwitchState](#bluetooth_switchstate)。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| [Bluetooth_ResultCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-bluetooth-h#bluetooth_resultcode) | 蓝牙开关状态函数返回值。 详细定义请参考[Bluetooth_ResultCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-bluetooth-h#bluetooth_resultcode)。 [BLUETOOTH_SUCCESS](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-bluetooth-h#bluetooth_resultcode) 成功获取蓝牙开关状态。 [BLUETOOTH_INVALID_PARAM](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-bluetooth-h#bluetooth_resultcode) 输入参数为空指针。 |
+| [Bluetooth_ResultCode](#bluetooth_resultcode) | 蓝牙开关状态函数返回值。 详细定义请参考[Bluetooth_ResultCode](#bluetooth_resultcode)。 [BLUETOOTH_SUCCESS](#bluetooth_resultcode) 成功获取蓝牙开关状态。 [BLUETOOTH_INVALID_PARAM](#bluetooth_resultcode) 输入参数为空指针。 |

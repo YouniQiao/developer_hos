@@ -2,8 +2,8 @@
 title: "@ohos.ability.particleAbility (ParticleAbility模块)"
 upstream_id: "harmonyos-references/js-apis-ability-particleability"
 catalog: "harmonyos-references"
-content_hash: "fe699baa71d0"
-synced_at: "2026-07-09T00:57:06.736767"
+content_hash: "6622c9b1fb2b"
+synced_at: "2026-08-29T18:11:59.305212"
 ---
 
 # @ohos.ability.particleAbility (ParticleAbility模块)
@@ -184,7 +184,7 @@ acquireDataAbilityHelper(uri: string): DataAbilityHelper
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| uri | string | 是 | 表示要打开的文件的路径。 |
+| uri | string | 是 | 表示要访问的DataAbility的URI。 |
 
 返回值：
 

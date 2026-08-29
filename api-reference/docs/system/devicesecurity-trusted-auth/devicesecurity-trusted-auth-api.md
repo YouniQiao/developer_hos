@@ -2,8 +2,8 @@
 title: "TrustedAuthentication（数字盾服务）"
 upstream_id: "harmonyos-references/devicesecurity-trusted-auth-api"
 catalog: "harmonyos-references"
-content_hash: "00d1b810c35d"
-synced_at: "2026-08-03T17:10:56.728327"
+content_hash: "23fe5f6ef094"
+synced_at: "2026-08-29T18:16:27.390766"
 ---
 
 # TrustedAuthentication（数字盾服务）
@@ -24,7 +24,7 @@ enableTrustedAuthentication(challenge: Uint8Array, pwdInfo: PasswordInfo, label:
 
 拉起TUI（Trusted User Interface）界面并指引用户创建数字盾密码。使用Promise异步回调。
 
-元服务API： 从版本26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -54,14 +54,15 @@ enableTrustedAuthentication(challenge: Uint8Array, pwdInfo: PasswordInfo, label:
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 801 | Failed to call the API due to limited device capabilities. |
+| 801 | Failed to call the API due to limited device capabilities. 适用版本：26.0.0+ |
 | 1019100001 | The interface invoker does not have the corresponding permission. |
 | 1019100002 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
 | 1019100007 | Unsupported custom image. |
 | 1019100008 | The user canceled the operation. |
 | 1019100011 | The title text cannot be displayed. |
 | 1019100013 | Failed to set the password. |
-| 1019100025 | The TUI is occupied by another app. |
+| 1019100023 | Secure element fault. 适用版本：26.0.0+ |
+| 1019100025 | The TUI is occupied by another app. 适用版本：6.1.1(24)+ |
 
 示例：
 
@@ -105,7 +106,7 @@ modifyTrustedAuthenticationPwd(challenge: Uint8Array, pwdInfo: PasswordInfo, aut
 
 拉起TUI界面并指引用户修改数字盾密码，修改密码前会根据authID进行对应密码认证。使用Promise异步回调。
 
-元服务API： 从版本26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -145,7 +146,8 @@ modifyTrustedAuthenticationPwd(challenge: Uint8Array, pwdInfo: PasswordInfo, aut
 | 1019100011 | The title text cannot be displayed. |
 | 1019100012 | Invalid authentication ID. |
 | 1019100014 | Failed to change the password. |
-| 1019100025 | The TUI is occupied by another app. |
+| 1019100023 | Secure element fault. 适用版本：26.0.0+ |
+| 1019100025 | The TUI is occupied by another app. 适用版本：6.1.1(24)+ |
 
 示例：
 
@@ -191,7 +193,7 @@ disableTrustedAuthentication(challenge: Uint8Array, needAuth: boolean, authID: b
 
 关闭数字盾服务，开发者可通过参数needAuth控制密码关闭前是否需要密码认证。使用Promise异步回调。
 
-元服务API： 从版本26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -231,7 +233,8 @@ disableTrustedAuthentication(challenge: Uint8Array, needAuth: boolean, authID: b
 | 1019100008 | The user canceled the operation. |
 | 1019100011 | The title text cannot be displayed. |
 | 1019100012 | Invalid authentication ID. |
-| 1019100025 | The TUI is occupied by another app. |
+| 1019100023 | Secure element fault. 适用版本：26.0.0+ |
+| 1019100025 | The TUI is occupied by another app. 适用版本：6.1.1(24)+ |
 
 示例：
 
@@ -271,7 +274,7 @@ trustedAuthentication(challenge: Uint8Array, authID: bigint, label: TUILable): P
 
 提供数字盾密码认证能力，开发者可使用该接口完成绑定生物特征支付前的密码认证。使用Promise异步回调。
 
-元服务API： 从版本26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -308,7 +311,8 @@ trustedAuthentication(challenge: Uint8Array, authID: bigint, label: TUILable): P
 | 1019100007 | Unsupported custom image. |
 | 1019100008 | The user canceled the operation. |
 | 1019100012 | Invalid authentication ID. |
-| 1019100025 | The TUI is occupied by another app. |
+| 1019100023 | Secure element fault. 适用版本：26.0.0+ |
+| 1019100025 | The TUI is occupied by another app. 适用版本：6.1.1(24)+ |
 
 示例：
 
@@ -348,7 +352,7 @@ procContentAuthentication(challenge: Uint8Array, authID: bigint, authMsg: AuthRe
 
 数字盾交易认证接口。使用Promise异步回调。
 
-元服务API： 从版本26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -386,8 +390,9 @@ procContentAuthentication(challenge: Uint8Array, authID: bigint, authMsg: AuthRe
 | 1019100011 | The text content cannot be displayed. |
 | 1019100012 | Invalid authentication ID. |
 | 1019100021 | The corresponding biometric data has not been bound. |
-| 1019100024 | The bound biometric ID is invalid. |
-| 1019100025 | The TUI is occupied by another app. |
+| 1019100023 | Secure element fault. 适用版本：26.0.0+ |
+| 1019100024 | The bound biometric ID is invalid. 适用版本：26.0.0+ |
+| 1019100025 | The TUI is occupied by another app. 适用版本：6.1.1(24)+ |
 
 示例：
 
@@ -431,7 +436,7 @@ getBiometricAuthToken(operType: OperateType, tuiAuthToken: Uint8Array, bioAuthTo
 
 获取生物特征绑定/生物特征交易认证对应的authToken信息。使用Promise异步回调。
 
-元服务API： 从版本26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -467,6 +472,7 @@ getBiometricAuthToken(operType: OperateType, tuiAuthToken: Uint8Array, bioAuthTo
 | 1019100015 | Failed to get the biometric authToken. |
 | 1019100019 | The biometric data for authentication does not match the bound biometric feature. |
 | 1019100020 | The biometric data has already been bound. |
+| 1019100023 | Secure element fault. 适用版本：26.0.0+ |
 
 示例：
 
@@ -542,7 +548,7 @@ importData(data: ArrayBuffer, authID: bigint): Promise<void>
 
 导入备份的数据信息（即与HUKS签名验签时使用的加密密钥信息）。使用Promise异步回调。
 
-元服务API： 从版本26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -575,6 +581,7 @@ importData(data: ArrayBuffer, authID: bigint): Promise<void>
 | 1019100002 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
 | 1019100010 | Failed to import data. |
 | 1019100012 | Invalid authentication ID. |
+| 1019100023 | Secure element fault. 适用版本：26.0.0+ |
 
 示例：
 
@@ -603,7 +610,7 @@ exportData(authID: bigint, label: TUILable): Promise<ArrayBuffer>
 
 导出备份的数据信息（即与HUKS签名验签时使用的加密密钥信息），在导出时，需要经过密码认证，认证通过后才可导出对应的备份数据信息。使用Promise异步回调。
 
-元服务API： 从版本26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -636,7 +643,8 @@ exportData(authID: bigint, label: TUILable): Promise<ArrayBuffer>
 | 1019100002 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
 | 1019100009 | Failed to export data. |
 | 1019100012 | Invalid authentication ID. |
-| 1019100025 | The TUI is occupied by another app. |
+| 1019100023 | Secure element fault. 适用版本：26.0.0+ |
+| 1019100025 | The TUI is occupied by another app. 适用版本：6.1.1(24)+ |
 
 示例：
 
@@ -672,7 +680,7 @@ checkConfirmUITextFormat(text: string): Promise<TextCheckResult>
 
 检查将在TUI呈现的内容是否可以在屏幕上单行完整展示。使用Promise异步回调。
 
-元服务API： 从版本26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -692,7 +700,7 @@ checkConfirmUITextFormat(text: string): Promise<TextCheckResult>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，TUI界面显示指定text对应检查结果。 |
+| Promise | Promise对象，返回TUI界面显示指定text对应检查结果。 |
 
 错误码：
 
@@ -703,7 +711,7 @@ checkConfirmUITextFormat(text: string): Promise<TextCheckResult>
 | 1019100001 | The interface invoker does not have the corresponding permission. |
 | 1019100002 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
 | 1019100006 | Check input confirm text failed. |
-| 1019100025 | The TUI is occupied by another app. |
+| 1019100025 | The TUI is occupied by another app. 适用版本：6.1.1(24)+ |
 
 示例：
 
@@ -756,7 +764,7 @@ getRemainAuthTimes(authID: bigint): Promise<number>
 
 获取数字盾剩余认证次数。使用Promise异步回调。
 
-元服务API： 从版本26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -776,7 +784,7 @@ getRemainAuthTimes(authID: bigint): Promise<number>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，数字盾剩余认证次数。 |
+| Promise | Promise对象，返回数字盾剩余认证次数。 |
 
 错误码：
 
@@ -788,6 +796,7 @@ getRemainAuthTimes(authID: bigint): Promise<number>
 | 1019100002 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
 | 1019100012 | Invalid authentication ID. |
 | 1019100017 | Failed to get the remaining number of authentication attempts. |
+| 1019100023 | Secure element fault. 适用版本：26.0.0+ |
 
 示例：
 
@@ -813,7 +822,7 @@ disableTrustedBioAuthentication(authID: bigint, authType: AuthType): Promise<voi
 
 解绑指定生物类型认证能力。使用Promise异步回调。
 
-元服务API： 从版本26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -866,11 +875,76 @@ try {
 }
 ```
 
+#### trustedAuthentication.getSecurityLevel
+
+getSecurityLevel(authID?: bigint): Promise<SecurityLevel>
+
+获取当前系统支持开通数字盾的最高安全等级或指定数字盾对应的安全等级。使用Promise异步回调。
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Security.TrustedAuthentication
+
+设备行为差异： 对于API 24之前版本，该接口在Phone中可正常调用，在其他设备类型中统一返回业务错误码1019100016。对于API 24及之后版本，该接口在Phone、部分支持TUI能力的Tablet、PC/2in1中均可正常调用，在不支持TUI能力的Tablet、PC/2in1设备及其他设备类型中统一返回业务错误码1019100016。可使用[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#trustedauthenticationcheckconfirmuitextformat)查询能力是否支持。
+
+起始版本： 26.0.0
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| authID | bigint | 否 | 数字盾对应的authID。如果不设置该参数，则表示查询系统支持开通数字盾的最高安全等级。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise | Promise对象，系统或数字盾对应的安全等级。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-trusted-auth) 。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 1019100001 | The interface invoker does not have the corresponding permission. |
+| 1019100012 | Invalid authentication ID. |
+| 1019100016 | The trusted authentication feature is not enabled. |
+
+示例：
+
+```
+import { trustedAuthentication} from '@kit.DeviceSecurityKit';
+import { BusinessError} from '@kit.BasicServicesKit';
+import { hilog } from '@kit.PerformanceAnalysisKit';
+
+const TAG = "TrustedAuthenticationJsTest";
+
+try {
+  const securityLevel = await trustedAuthentication.getSecurityLevel();
+  hilog.info(0x0000, TAG, `The current system supports enabling the highest security level for the digital shield is: ${securityLevel}`);
+} catch (err) {
+  let e: BusinessError = err as BusinessError;
+  hilog.error(0x0000, TAG, 'get system securityLevel failed: %{public}d %{public}s', e.code, e.message);
+}
+
+try {
+ const authID: bigint = 1687413472599354502n;
+ const securityLevel = await trustedAuthentication.getSecurityLevel(authID);
+  hilog.info(0x0000, TAG, `The digital shield security level is: ${securityLevel}`);
+} catch (err) {
+  let e: BusinessError = err as BusinessError;
+  hilog.error(0x0000, TAG, 'getSecurityLevel failed: %{public}d %{public}s', e.code, e.message);
+}
+```
+
 #### PasswordInfo
 
 设置密码时业务对密码规格参数要求。
 
-元服务API： 从版本26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -884,12 +958,13 @@ try {
 | pwdMaxLength | number | 否 | 否 | 密码最大长度，取值范围6~18。 |
 | pwdMinLength | number | 否 | 否 | 密码最小长度，取值范围6~18，且小于等于pwdMaxLength。 |
 | maxAuthFailCount | number | 否 | 否 | 密码最大连续认证失败次数，取值范围1~10。 |
+| securityLevel | [SecurityLevel](#securitylevel) | 否 | 是 | 指定开通数字盾的安全等级，当不传入时，则默认为SECURITY_LEVEL_TEE。在调用enableTrustedAuthentication时，该参数有效；而在调用modifyTrustedAuthenticationPwd时，则遵循当前盾的安全等级设定，该参数不生效。 **起始版本：** 26.0.0 |
 
 #### TUILable
 
 TUI页面下的定制信息，包括定制图像logo和页面标题。
 
-元服务API： 从版本26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -906,7 +981,7 @@ TUI页面下的定制信息，包括定制图像logo和页面标题。
 
 开通数字盾服务对应的参数信息。
 
-元服务API： 从版本26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -923,7 +998,7 @@ TUI页面下的定制信息，包括定制图像logo和页面标题。
 
 经数字盾服务指定操作获取的authToken，不同操作流程中authToken包括的加密信息不同，详细可参考各个接口参数说明。
 
-元服务API： 从版本26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -939,7 +1014,7 @@ TUI页面下的定制信息，包括定制图像logo和页面标题。
 
 交易认证类型定义。
 
-元服务API： 从版本26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -953,11 +1028,28 @@ TUI页面下的定制信息，包括定制图像logo和页面标题。
 | AUTH_TYPE_FINGERPRINT | 4 | 指纹认证。 |
 | AUTH_TYPE_TUI_PIN | 32 | TUI密码认证。 |
 
+#### SecurityLevel
+
+数字盾安全级别定义。
+
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Security.TrustedAuthentication
+
+起始版本： 26.0.0
+
+| **名称** | 值 | **说明** |
+| --- | --- | --- |
+| SECURITY_LEVEL_TEE | 0 | TEE安全级别。 |
+| SECURITY_LEVEL_SE | 1 | SE安全级别。 |
+
 #### PasswordType
 
 密码类型定义，根据密码类型TUI界面弹出不同类型的安全键盘。
 
-元服务API： 从版本26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -974,7 +1066,7 @@ TUI页面下的定制信息，包括定制图像logo和页面标题。
 
 操作类型定义。
 
-元服务API： 从版本26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -991,7 +1083,7 @@ TUI页面下的定制信息，包括定制图像logo和页面标题。
 
 交易认证请求相关参数。
 
-元服务API： 从版本26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -1008,7 +1100,7 @@ TUI页面下的定制信息，包括定制图像logo和页面标题。
 
 TUI界面文本信息是否可以单行显示的检查结果。
 
-元服务API： 从版本26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -1025,7 +1117,7 @@ TUI界面文本信息是否可以单行显示的检查结果。
 
 数字盾服务开放接口执行失败错误码。
 
-元服务API： 从版本26.0.0开始，以下接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，以下接口支持在元服务中使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -1036,7 +1128,7 @@ TUI界面文本信息是否可以单行显示的检查结果。
 | **名称** | 值 | **说明** |
 | --- | --- | --- |
 | TRUSTED_AUTH_ERROR_NO_PERMISSION | 1019100001 | 权限校验失败。 |
-| TRUSTED_AUTH_ERROR_ILLEGAL_ARGUMENT | 1019100002 | 参数检查失败 |
+| TRUSTED_AUTH_ERROR_ILLEGAL_ARGUMENT | 1019100002 | 参数检查失败。 |
 | TRUSTED_AUTH_ERROR_PWD_LIMIT_REACHED | 1019100003 | 密码认证连续失败次数达到应用定义的最大次数。 |
 | TRUSTED_AUTH_ERROR_PWD_DELETE_FAILED | 1019100004 | 删除密码失败。 |
 | TRUSTED_AUTH_ERROR_VERIFY_FAILED | 1019100005 | 密码认证失败。 |
@@ -1056,5 +1148,6 @@ TUI界面文本信息是否可以单行显示的检查结果。
 | TRUSTED_AUTH_ERROR_BIO_MISMATCH | 1019100019 | 认证的生物特征与绑定的生物特征不匹配。 |
 | TRUSTED_AUTH_ERROR_BIO_REPEATED_BIND | 1019100020 | 已绑定对应的生物特征。 |
 | TRUSTED_AUTH_ERROR_NOT_BIND_BIO | 1019100021 | 对应生物特征未绑定。 |
-| TRUSTED_AUTH_ERROR_BIO_ID_INVALID | 1019100024 | 绑定的生物特征ID已失效。 **起始版本：** 26.0.0 |
-| TRUSTED_AUTH_ERROR_TUI_OCCUPIED | 1019100025 | TUI界面被其他应用占用。 **起始版本：** 6.1.1(24) |
+| TRUSTED_AUTH_ERROR_SE_FAULT | 1019100023 | 安全器件故障。 适用版本：26.0.0+ |
+| TRUSTED_AUTH_ERROR_BIO_ID_INVALID | 1019100024 | 绑定的生物特征ID已失效。 适用版本：26.0.0+ |
+| TRUSTED_AUTH_ERROR_TUI_OCCUPIED | 1019100025 | TUI界面被其他应用占用。 适用版本：6.1.1(24)+ |

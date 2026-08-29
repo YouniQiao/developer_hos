@@ -2,8 +2,8 @@
 title: "Interface (PixelMap)"
 upstream_id: "harmonyos-references/arkts-apis-image-pixelmap"
 catalog: "harmonyos-references"
-content_hash: "c61daeeb33e0"
-synced_at: "2026-08-07T15:58:52.718261"
+content_hash: "f48a47058b94"
+synced_at: "2026-08-29T18:17:36.110598"
 ---
 
 # Interface (PixelMap)
@@ -247,12 +247,12 @@ readPixelsToBufferSync(dst: ArrayBuffer): void
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed |
-| 501 | Resource Unavailable |
+| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed. |
+| 501 | Resource Unavailable. |
 
 示例：
 
@@ -613,12 +613,12 @@ readPixelsSync(area: PositionArea): void
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed |
-| 501 | Resource Unavailable |
+| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed. |
+| 501 | Resource Unavailable. |
 
 示例：
 
@@ -1028,12 +1028,12 @@ writePixelsSync(area: PositionArea): void
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed |
-| 501 | Resource Unavailable |
+| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed. |
+| 501 | Resource Unavailable. |
 
 示例：
 
@@ -1296,12 +1296,12 @@ writeBufferToPixelsSync(src: ArrayBuffer): void
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed |
-| 501 | Resource Unavailable |
+| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed. |
+| 501 | Resource Unavailable. |
 
 示例：
 
@@ -1414,7 +1414,7 @@ getImageInfoSync(): ImageInfo
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 501 | Resource Unavailable |
+| 501 | Resource Unavailable. |
 
 示例：
 
@@ -1514,7 +1514,9 @@ function getDensity(pixelMap: image.PixelMap) {
 
 setOpacity(value: number): Promise<void>
 
-设置PixelMap的不透明度，指定的不透明度值将被应用于所有像素，不受原图不透明度的影响。YUV格式的图像不支持设置不透明度。使用Promise异步回调。
+设置PixelMap的不透明度，指定的不透明度值将被应用于所有像素，不受原图不透明度的影响。使用Promise异步回调。
+
+![](./img/note_3.0-zh-cn.png) YUV格式的图像不支持设置不透明度。
 
 起始版本： 26.0.0
 
@@ -1530,7 +1532,7 @@ setOpacity(value: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 不透明度值。取值范围是(0.0, 1.0]，1.0表示完全不透明，数值越接近0.0则透明度越高。 |
+| value | number | 是 | 不透明度的值。取值范围是(0.0, 1.0]，1.0表示完全不透明，数值越接近0.0则透明度越高。 |
 
 返回值：
 
@@ -1572,7 +1574,9 @@ function setOpacity(pixelMap: image.PixelMap) {
 
 setOpacitySync(value: number): void
 
-设置PixelMap的不透明度，指定的不透明度值将被应用于所有像素，不受原图不透明度的影响。YUV格式的图像不支持设置不透明度。同步返回结果。
+设置PixelMap的不透明度，指定的不透明度值将被应用于所有像素，不受原图不透明度的影响。同步返回结果。
+
+![](./img/note_3.0-zh-cn.png) YUV格式的图像不支持设置不透明度。
 
 起始版本： 26.0.0
 
@@ -1588,7 +1592,7 @@ setOpacitySync(value: number): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 不透明度值。取值范围是(0.0, 1.0]，1.0表示完全不透明，数值越接近0.0则透明度越高。 |
+| value | number | 是 | 不透明度的值。取值范围是(0.0, 1.0]，1.0表示完全不透明，数值越接近0.0则透明度越高。 |
 
 错误码：
 
@@ -1624,9 +1628,12 @@ function setOpacitySync(pixelMap: image.PixelMap) {
 
 opacity(rate: number, callback: AsyncCallback<void>): void
 
-设置PixelMap的不透明度，指定的不透明度值将被应用于所有像素，不受原图不透明度的影响。YUV格式的图像不支持设置不透明度。使用callback异步回调。
+设置PixelMap的不透明度，指定的不透明度值将被应用于所有像素，不受原图不透明度的影响。使用callback异步回调。
 
-![](./img/note_3.0-zh-cn.png) 从API版本26.0.0开始，建议使用[setOpacity](#setopacity)代替，以获得更完善的异常处理能力。
+![](./img/note_3.0-zh-cn.png)
+
+- YUV格式的图像不支持设置不透明度。
+- 从API版本26.0.0开始，建议使用[setOpacity](#setopacity)代替，以获得更完善的异常处理能力。
 
 卡片能力： 从API version 12开始，该接口支持在ArkTS卡片中使用。
 
@@ -1638,7 +1645,7 @@ opacity(rate: number, callback: AsyncCallback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| rate | number | 是 | 不透明度的值，取值范围是(0, 1]。1.0表示完全不透明，数值越接近0.0则透明度越高。 |
+| rate | number | 是 | 不透明度的值，取值范围是(0.0, 1.0]。1.0表示完全不透明，数值越接近0.0则透明度越高。 |
 | callback | AsyncCallback | 是 | 回调函数。当设置透明比率成功，err为undefined，否则为错误对象。 |
 
 示例：
@@ -1662,9 +1669,12 @@ function opacity(pixelMap: image.PixelMap) {
 
 opacity(rate: number): Promise<void>
 
-设置PixelMap的不透明度，指定的不透明度值将被应用于所有像素，不受原图不透明度的影响。YUV格式的图像不支持设置不透明度。使用Promise异步回调。
+设置PixelMap的不透明度，指定的不透明度值将被应用于所有像素，不受原图不透明度的影响。使用Promise异步回调。
 
-![](./img/note_3.0-zh-cn.png) 从API版本26.0.0开始，建议使用[setOpacity](#setopacity)代替，以获得更完善的异常处理能力。
+![](./img/note_3.0-zh-cn.png)
+
+- YUV格式的图像不支持设置不透明度。
+- 从API版本26.0.0开始，建议使用[setOpacity](#setopacity)代替，以获得更完善的异常处理能力。
 
 卡片能力： 从API version 12开始，该接口支持在ArkTS卡片中使用。
 
@@ -1676,7 +1686,7 @@ opacity(rate: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| rate | number | 是 | 不透明度的值，取值范围是(0, 1]。1.0表示完全不透明，数值越接近0.0则透明度越高。 |
+| rate | number | 是 | 不透明度的值，取值范围是(0.0, 1.0]。1.0表示完全不透明，数值越接近0.0则透明度越高。 |
 
 返回值：
 
@@ -1703,9 +1713,12 @@ function opacity(pixelMap: image.PixelMap) {
 
 opacitySync(rate: number): void
 
-设置PixelMap的不透明度，指定的不透明度值将被应用于所有像素，不受原图不透明度的影响。YUV格式的图像不支持设置不透明度。同步返回结果。
+设置PixelMap的不透明度，指定的不透明度值将被应用于所有像素，不受原图不透明度的影响。同步返回结果。
 
-![](./img/note_3.0-zh-cn.png) 从API版本26.0.0开始，建议使用[setOpacitySync](#setopacitysync)代替，以获得更完善的异常处理能力。
+![](./img/note_3.0-zh-cn.png)
+
+- YUV格式的图像不支持设置不透明度。
+- 从API版本26.0.0开始，建议使用[setOpacitySync](#setopacitysync)代替，以获得更完善的异常处理能力。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1715,16 +1728,16 @@ opacitySync(rate: number): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| rate | number | 是 | 不透明度的值，取值范围是(0, 1]。1.0表示完全不透明，数值越接近0.0则透明度越高。 |
+| rate | number | 是 | 不透明度的值，取值范围是(0.0, 1.0]。1.0表示完全不透明，数值越接近0.0则透明度越高。 |
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed |
-| 501 | Resource Unavailable |
+| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed. |
+| 501 | Resource Unavailable. |
 
 示例：
 
@@ -1747,9 +1760,12 @@ function opacitySync(pixelMap: image.PixelMap) {
 
 extractAlphaPixelMap(): Promise<PixelMap>
 
-提取当前PixelMap的Alpha通道数据，并生成一个仅包含Alpha通道信息的ALPHA_U8格式的PixelMap。生成的新PixelMap不可编辑，可用于阴影效果。YUV格式不支持此接口。使用Promise异步回调。
+提取当前PixelMap的Alpha通道数据，并生成一个仅包含Alpha通道信息的ALPHA_U8格式的PixelMap。生成的新PixelMap不可编辑，可用于阴影效果。使用Promise异步回调。
 
-![](./img/note_3.0-zh-cn.png) 若原PixelMap的格式是ALPHA_F16，则新生成的PixelMap将维持ALPHA_F16格式。
+![](./img/note_3.0-zh-cn.png)
+
+- YUV格式不支持此接口。
+- 如果原PixelMap的格式是ALPHA_F16，则新生成的PixelMap将维持ALPHA_F16格式。
 
 起始版本： 26.0.0
 
@@ -1799,9 +1815,12 @@ function extractAlphaPixelMap(pixelMap: image.PixelMap) {
 
 extractAlphaPixelMapSync(): PixelMap
 
-提取当前PixelMap的Alpha通道数据，并生成一个仅包含Alpha通道信息的ALPHA_U8格式的PixelMap。生成的新PixelMap不可编辑，可用于阴影效果。YUV格式不支持此接口。同步返回结果。
+提取当前PixelMap的Alpha通道数据，并生成一个仅包含Alpha通道信息的ALPHA_U8格式的PixelMap。生成的新PixelMap不可编辑，可用于阴影效果。同步返回结果。
 
-![](./img/note_3.0-zh-cn.png) 若原PixelMap的格式是ALPHA_F16，则新生成的PixelMap将维持ALPHA_F16格式。
+![](./img/note_3.0-zh-cn.png)
+
+- YUV格式不支持此接口。
+- 如果原PixelMap的格式是ALPHA_F16，则新生成的PixelMap将维持ALPHA_F16格式。
 
 起始版本： 26.0.0
 
@@ -1851,11 +1870,12 @@ function extractAlphaPixelMapSync(pixelMap: image.PixelMap) {
 
 createAlphaPixelmap(): Promise<PixelMap>
 
-根据Alpha通道的信息，生成一个仅包含Alpha通道信息的ALPHA_8格式的PixelMap，生成的新PixelMap不可编辑，可用于阴影效果。YUV格式不支持此接口。使用Promise异步回调。
+根据Alpha通道的信息，生成一个仅包含Alpha通道信息的ALPHA_8格式的PixelMap，生成的新PixelMap不可编辑，可用于阴影效果。使用Promise异步回调。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 若原PixelMap的格式是ALPHA_F16，则新生成的PixelMap将维持ALPHA_F16格式。
+- YUV格式不支持此接口。
+- 如果原PixelMap的格式是ALPHA_F16，则新生成的PixelMap将维持ALPHA_F16格式。
 - 从API版本26.0.0开始，建议使用[extractAlphaPixelMap](#extractalphapixelmap)代替，以获得更完善的异常处理能力。
 
 卡片能力： 从API version 12开始，该接口支持在ArkTS卡片中使用。
@@ -1888,11 +1908,12 @@ function createAlphaPixelmap(pixelMap: image.PixelMap) {
 
 createAlphaPixelmap(callback: AsyncCallback<PixelMap>): void
 
-根据Alpha通道的信息，来生成一个仅包含Alpha通道信息的ALPHA_8格式的PixelMap，生成的新PixelMap不可编辑，可用于阴影效果。YUV格式不支持此接口。使用callback异步回调。
+根据Alpha通道的信息，来生成一个仅包含Alpha通道信息的ALPHA_8格式的PixelMap，生成的新PixelMap不可编辑，可用于阴影效果。使用callback异步回调。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 若原PixelMap的格式是ALPHA_F16，则新生成的PixelMap将维持ALPHA_F16格式。
+- YUV格式不支持此接口。
+- 如果原PixelMap的格式是ALPHA_F16，则新生成的PixelMap将维持ALPHA_F16格式。
 - 从API版本26.0.0开始，建议使用[extractAlphaPixelMap](#extractalphapixelmap)代替，以获得更完善的异常处理能力。
 
 卡片能力： 从API version 12开始，该接口支持在ArkTS卡片中使用。
@@ -1927,11 +1948,12 @@ function createAlphaPixelmap(pixelMap: image.PixelMap) {
 
 createAlphaPixelmapSync(): PixelMap
 
-根据Alpha通道的信息，生成一个仅包含Alpha通道信息的ALPHA_8格式的PixelMap，生成的新PixelMap不可编辑，可用于阴影效果。YUV格式不支持此接口。同步返回结果。
+根据Alpha通道的信息，生成一个仅包含Alpha通道信息的ALPHA_8格式的PixelMap，生成的新PixelMap不可编辑，可用于阴影效果。同步返回结果。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 若原PixelMap的格式是ALPHA_F16，则新生成的PixelMap将维持ALPHA_F16格式。
+- YUV格式不支持此接口。
+- 如果原PixelMap的格式是ALPHA_F16，则新生成的PixelMap将维持ALPHA_F16格式。
 - 从API版本26.0.0开始，建议使用[extractAlphaPixelMapSync](#extractalphapixelmapsync)代替，以获得更完善的异常处理能力。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
@@ -1946,12 +1968,12 @@ createAlphaPixelmapSync(): PixelMap
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Parameter verification failed |
-| 501 | Resource Unavailable |
+| 401 | Parameter error. Possible causes: 1.Parameter verification failed. |
+| 501 | Resource Unavailable. |
 
 示例：
 
@@ -1979,10 +2001,7 @@ applyScale(x: number, y: number, level?: AntiAliasingLevel): Promise<void>
 
 根据指定的宽高缩放倍数和缩放算法对PixelMap进行缩放。使用Promise异步回调。
 
-![](./img/note_3.0-zh-cn.png)
-
-- 建议宽高的缩放倍数取正数，否则会产生翻转效果。
-- 缩放倍数 = 缩放后的图像尺寸 / 缩放前的图像尺寸。
+![](./img/note_3.0-zh-cn.png) 缩放倍数 = 缩放后的图像尺寸 / 缩放前的图像尺寸。
 
 起始版本： 26.0.0
 
@@ -1998,8 +2017,8 @@ applyScale(x: number, y: number, level?: AntiAliasingLevel): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| x | number | 是 | 宽度的缩放倍数。取值不能为0。 |
-| y | number | 是 | 高度的缩放倍数。取值不能为0。 |
+| x | number | 是 | 宽度的缩放倍数。 取值不能为0，建议取正数，否则会产生翻转效果。 |
+| y | number | 是 | 高度的缩放倍数。 取值不能为0，建议取正数，否则会产生翻转效果。 |
 | level | [AntiAliasingLevel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#antialiasinglevel12) | 否 | 采用的缩放算法。该参数对于ASTC格式的PixelMap不生效。默认值为AntiAliasingLevel.NONE。 |
 
 返回值：
@@ -2045,10 +2064,7 @@ applyScaleSync(x: number, y: number, level?: AntiAliasingLevel): void
 
 根据指定的宽高缩放倍数和缩放算法对PixelMap进行缩放。同步返回结果。
 
-![](./img/note_3.0-zh-cn.png)
-
-- 建议宽高的缩放倍数取正数，否则会产生翻转效果。
-- 缩放倍数 = 缩放后的图像尺寸 / 缩放前的图像尺寸。
+![](./img/note_3.0-zh-cn.png) 缩放倍数 = 缩放后的图像尺寸 / 缩放前的图像尺寸。
 
 起始版本： 26.0.0
 
@@ -2064,8 +2080,8 @@ applyScaleSync(x: number, y: number, level?: AntiAliasingLevel): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| x | number | 是 | 宽度的缩放倍数。取值不能为0。 |
-| y | number | 是 | 高度的缩放倍数。取值不能为0。 |
+| x | number | 是 | 宽度的缩放倍数。 取值不能为0，建议取正数，否则会产生翻转效果。 |
+| y | number | 是 | 高度的缩放倍数。 取值不能为0，建议取正数，否则会产生翻转效果。 |
 | level | [AntiAliasingLevel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#antialiasinglevel12) | 否 | 采用的缩放算法。该参数对于ASTC格式的PixelMap不生效。默认值为AntiAliasingLevel.NONE。 |
 
 错误码：
@@ -2103,11 +2119,10 @@ function applyScaleSync(pixelMap: image.PixelMap) {
 
 scale(x: number, y: number, callback: AsyncCallback<void>): void
 
-根据输入的宽高的缩放倍数对图片进行缩放。使用callback异步回调。
+根据输入的宽高缩放倍数对图片进行缩放。使用callback异步回调。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 建议宽高的缩放倍数取正数，否则会产生翻转效果。
 - 宽高的缩放倍数 = 缩放后的图片宽高 / 缩放前的图片宽高。
 - 从API版本26.0.0开始，建议使用[applyScale](#applyscale)代替，以获得更完善的异常处理能力。
 
@@ -2121,8 +2136,8 @@ scale(x: number, y: number, callback: AsyncCallback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| x | number | 是 | 宽度的缩放倍数。取值不能为0。 |
-| y | number | 是 | 高度的缩放倍数。取值不能为0。 |
+| x | number | 是 | 宽度的缩放倍数。 取值不能为0，建议取正数，否则会产生翻转效果。 |
+| y | number | 是 | 高度的缩放倍数。 取值不能为0，建议取正数，否则会产生翻转效果。 |
 | callback | AsyncCallback | 是 | 回调函数。当对图片进行缩放成功，err为undefined，否则为错误对象。 |
 
 示例：
@@ -2147,11 +2162,10 @@ function scale(pixelMap: image.PixelMap) {
 
 scale(x: number, y: number): Promise<void>
 
-根据输入的宽高的缩放倍数对图片进行缩放。使用Promise异步回调。
+根据输入的宽高缩放倍数对图片进行缩放。使用Promise异步回调。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 建议宽高的缩放倍数取正数，否则会产生翻转效果。
 - 宽高的缩放倍数 = 缩放后的图片宽高 / 缩放前的图片宽高。
 - 从API版本26.0.0开始，建议使用[applyScale](#applyscale)代替，以获得更完善的异常处理能力。
 
@@ -2165,8 +2179,8 @@ scale(x: number, y: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| x | number | 是 | 宽度的缩放倍数。取值不能为0。 |
-| y | number | 是 | 高度的缩放倍数。取值不能为0。 |
+| x | number | 是 | 宽度的缩放倍数。 取值不能为0，建议取正数，否则会产生翻转效果。 |
+| y | number | 是 | 高度的缩放倍数。 取值不能为0，建议取正数，否则会产生翻转效果。 |
 
 返回值：
 
@@ -2194,11 +2208,10 @@ function scale(pixelMap: image.PixelMap) {
 
 scaleSync(x: number, y: number): void
 
-根据输入的宽高的缩放倍数对图片进行缩放。同步返回结果。
+根据输入的宽高缩放倍数对图片进行缩放。同步返回结果。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 建议宽高的缩放倍数取正数，否则会产生翻转效果。
 - 宽高的缩放倍数 = 缩放后的图片宽高 / 缩放前的图片宽高。
 - 从API版本26.0.0开始，建议使用[applyScaleSync](#applyscalesync)代替，以获得更完善的异常处理能力。
 
@@ -2210,17 +2223,17 @@ scaleSync(x: number, y: number): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| x | number | 是 | 宽度的缩放倍数。取值不能为0。 |
-| y | number | 是 | 高度的缩放倍数。取值不能为0。 |
+| x | number | 是 | 宽度的缩放倍数。 取值不能为0，建议取正数，否则会产生翻转效果。 |
+| y | number | 是 | 高度的缩放倍数。 取值不能为0，建议取正数，否则会产生翻转效果。 |
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed |
-| 501 | Resource Unavailable |
+| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed. |
+| 501 | Resource Unavailable. |
 
 示例：
 
@@ -2248,7 +2261,6 @@ scale(x: number, y: number, level: AntiAliasingLevel): Promise<void>
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 建议宽高的缩放倍数取正数，否则会产生翻转效果。
 - 宽高的缩放倍数 = 缩放后的图片宽高 / 缩放前的图片宽高。
 - 从API版本26.0.0开始，建议使用[applyScale](#applyscale)代替，以获得更完善的异常处理能力。
 
@@ -2262,8 +2274,8 @@ scale(x: number, y: number, level: AntiAliasingLevel): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| x | number | 是 | 宽度的缩放倍数。取值不能为0。 |
-| y | number | 是 | 高度的缩放倍数。取值不能为0。 |
+| x | number | 是 | 宽度的缩放倍数。 取值不能为0，建议取正数，否则会产生翻转效果。 |
+| y | number | 是 | 高度的缩放倍数。 取值不能为0，建议取正数，否则会产生翻转效果。 |
 | level | [AntiAliasingLevel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#antialiasinglevel12) | 是 | 采用的缩放算法。该参数对于ASTC格式的PixelMap不生效。 |
 
 返回值：
@@ -2274,12 +2286,12 @@ scale(x: number, y: number, level: AntiAliasingLevel): Promise<void>
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed |
-| 501 | Resource Unavailable |
+| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed. |
+| 501 | Resource Unavailable. |
 
 示例：
 
@@ -2305,7 +2317,6 @@ scaleSync(x: number, y: number, level: AntiAliasingLevel): void
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 建议宽高的缩放倍数取正数，否则会产生翻转效果。
 - 宽高的缩放倍数 = 缩放后的图片宽高 / 缩放前的图片宽高。
 - 从API版本26.0.0开始，建议使用[applyScaleSync](#applyscalesync)代替，以获得更完善的异常处理能力。
 
@@ -2317,18 +2328,18 @@ scaleSync(x: number, y: number, level: AntiAliasingLevel): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| x | number | 是 | 宽度的缩放倍数。取值不能为0。 |
-| y | number | 是 | 高度的缩放倍数。取值不能为0。 |
+| x | number | 是 | 宽度的缩放倍数。 取值不能为0，建议取正数，否则会产生翻转效果。 |
+| y | number | 是 | 高度的缩放倍数。 取值不能为0，建议取正数，否则会产生翻转效果。 |
 | level | [AntiAliasingLevel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#antialiasinglevel12) | 是 | 采用的缩放算法。该参数对于ASTC格式的PixelMap不生效。 |
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed |
-| 501 | Resource Unavailable |
+| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed. |
+| 501 | Resource Unavailable. |
 
 示例：
 
@@ -2362,8 +2373,8 @@ createScaledPixelMap(x: number, y: number, level?: AntiAliasingLevel): Promise<P
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| x | number | 是 | 宽度的缩放倍数。取值不能为0。 |
-| y | number | 是 | 高度的缩放倍数。取值不能为0。 |
+| x | number | 是 | 宽度的缩放倍数。 取值不能为0，建议取正数，否则会产生翻转效果。 |
+| y | number | 是 | 高度的缩放倍数。 取值不能为0，建议取正数，否则会产生翻转效果。 |
 | level | [AntiAliasingLevel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#antialiasinglevel12) | 否 | 采用的缩放算法，默认值为AntiAliasingLevel.NONE。该参数对于ASTC格式的PixelMap不生效。 |
 
 返回值：
@@ -2374,12 +2385,12 @@ createScaledPixelMap(x: number, y: number, level?: AntiAliasingLevel): Promise<P
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed |
-| 501 | Resource Unavailable |
+| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed. |
+| 501 | Resource Unavailable. |
 
 示例：
 
@@ -2411,8 +2422,8 @@ createScaledPixelMapSync(x: number, y: number, level?: AntiAliasingLevel): Pixel
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| x | number | 是 | 宽度的缩放倍数。取值不能为0。 |
-| y | number | 是 | 高度的缩放倍数。取值不能为0。 |
+| x | number | 是 | 宽度的缩放倍数。 取值不能为0，建议取正数，否则会产生翻转效果。 |
+| y | number | 是 | 高度的缩放倍数。 取值不能为0，建议取正数，否则会产生翻转效果。 |
 | level | [AntiAliasingLevel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#antialiasinglevel12) | 否 | 采用的缩放算法，默认值为AntiAliasingLevel.NONE。该参数对于ASTC格式的PixelMap不生效。 |
 
 返回值：
@@ -2423,12 +2434,12 @@ createScaledPixelMapSync(x: number, y: number, level?: AntiAliasingLevel): Pixel
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed |
-| 501 | Resource Unavailable |
+| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed. |
+| 501 | Resource Unavailable. |
 
 示例：
 
@@ -2463,8 +2474,8 @@ createCroppedAndScaledPixelMap(region: Region, x: number, y: number, level?: Ant
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | region | [Region](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-i#region8) | 是 | 裁剪的区域。取值范围不能超过图片的宽和高。单位：像素（px）。 |
-| x | number | 是 | 宽度的缩放倍数。取值不能为0。 |
-| y | number | 是 | 高度的缩放倍数。取值不能为0。 |
+| x | number | 是 | 宽度的缩放倍数。 取值不能为0，建议取正数，否则会产生翻转效果。 |
+| y | number | 是 | 高度的缩放倍数。 取值不能为0，建议取正数，否则会产生翻转效果。 |
 | level | [AntiAliasingLevel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#antialiasinglevel12) | 否 | 采用的缩放算法。默认值为AntiAliasingLevel.NONE。该参数对于ASTC格式的PixelMap不生效。 |
 
 返回值：
@@ -2523,8 +2534,8 @@ createCroppedAndScaledPixelMapSync(region: Region, x: number, y: number, level?:
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | region | [Region](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-i#region8) | 是 | 裁剪的区域。取值范围不能超过图片的宽和高。单位：像素（px）。 |
-| x | number | 是 | 宽度的缩放倍数。取值不能为0。 |
-| y | number | 是 | 高度的缩放倍数。取值不能为0。 |
+| x | number | 是 | 宽度的缩放倍数。 取值不能为0，建议取正数，否则会产生翻转效果。 |
+| y | number | 是 | 高度的缩放倍数。 取值不能为0，建议取正数，否则会产生翻转效果。 |
 | level | [AntiAliasingLevel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#antialiasinglevel12) | 否 | 采用的缩放算法。默认值为AntiAliasingLevel.NONE。该参数对于ASTC格式的PixelMap不生效。 |
 
 返回值：
@@ -2885,12 +2896,12 @@ translateSync(x: number, y: number): void
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed |
-| 501 | Resource Unavailable |
+| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed. |
+| 501 | Resource Unavailable. |
 
 示例：
 
@@ -2914,10 +2925,11 @@ function translateSync(pixelMap: image.PixelMap) {
 
 applyRotate(angle: number): Promise<void>
 
-根据指定的角度对PixelMap进行旋转。YUV格式仅支持90°倍数的旋转角。使用Promise异步回调。
+根据指定的角度对PixelMap进行旋转。使用Promise异步回调。
 
 ![](./img/note_3.0-zh-cn.png)
 
+- YUV格式仅支持90°倍数的旋转角。
 - 图像旋转角度的取值范围为[0, 360]。超出取值范围时，将根据圆周360°自动矫正。例如，-100°与260°效果相同。
 - 当旋转角度不是90°的倍数时，图像的尺寸会扩大为旋转后的外接矩形尺寸，以容纳旋转后的图像内容。例如：正方形图像旋转45°后，输出图像的尺寸（边长）变为原图像的√2倍。
 
@@ -2977,10 +2989,11 @@ function applyRotate(pixelMap: image.PixelMap) {
 
 applyRotateSync(angle: number): void
 
-根据指定的角度对PixelMap进行旋转。YUV格式仅支持90°倍数的旋转角。同步返回结果。
+根据指定的角度对PixelMap进行旋转。同步返回结果。
 
 ![](./img/note_3.0-zh-cn.png)
 
+- YUV格式仅支持90°倍数的旋转角。
 - 图像旋转角度的取值范围为[0, 360]。超出取值范围时，将根据圆周360°自动矫正。例如，-100°与260°效果相同。
 - 当旋转角度不是90°的倍数时，图像的尺寸会扩大为旋转后的外接矩形尺寸，以容纳旋转后的图像内容。例如：正方形图像旋转45°后，输出图像的尺寸（边长）变为原图像的√2倍。
 
@@ -3034,10 +3047,11 @@ function applyRotateSync(pixelMap: image.PixelMap) {
 
 rotate(angle: number, callback: AsyncCallback<void>): void
 
-根据输入的角度对图片进行旋转，YUV格式仅支持90°倍数的旋转角。使用callback异步回调。
+根据输入的角度对图片进行旋转。使用callback异步回调。
 
 ![](./img/note_3.0-zh-cn.png)
 
+- YUV格式仅支持90°倍数的旋转角。
 - 图像旋转的角度取值范围：[0, 360]。超出取值范围时，根据圆周360°自动矫正。例如，-100°与260°效果相同。
 - 如果图片旋转的角度不是90的整数倍，旋转后图片的尺寸会发生改变。
 - 从API版本26.0.0开始，建议使用[applyRotate](#applyrotate)代替，以获得更完善的异常处理能力。
@@ -3076,10 +3090,11 @@ function rotate(pixelMap: image.PixelMap) {
 
 rotate(angle: number): Promise<void>
 
-根据输入的角度对图片进行旋转，YUV格式仅支持90°倍数的旋转角。使用Promise异步回调。
+根据输入的角度对图片进行旋转。使用Promise异步回调。
 
 ![](./img/note_3.0-zh-cn.png)
 
+- YUV格式仅支持90°倍数的旋转角。
 - 图像旋转的角度取值范围：[0, 360]。超出取值范围时，根据圆周360°自动矫正。例如，-100°与260°效果相同。
 - 如果图片旋转的角度不是90的整数倍，旋转后图片的尺寸会发生改变。
 - 从API版本26.0.0开始，建议使用[applyRotate](#applyrotate)代替，以获得更完善的异常处理能力。
@@ -3121,10 +3136,11 @@ function rotate(pixelMap: image.PixelMap) {
 
 rotateSync(angle: number): void
 
-根据输入的角度对图片进行旋转，YUV格式仅支持90°倍数的旋转角。同步返回结果。
+根据输入的角度对图片进行旋转。同步返回结果。
 
 ![](./img/note_3.0-zh-cn.png)
 
+- YUV格式仅支持90°倍数的旋转角。
 - 图像旋转的角度取值范围：[0, 360]。超出取值范围时，根据圆周360°自动矫正。例如，-100°与260°效果相同。
 - 如果图片旋转的角度不是90的整数倍，旋转后图片的尺寸会发生改变。
 - 从API版本26.0.0开始，建议使用[applyRotateSync](#applyrotatesync)代替，以获得更完善的异常处理能力。
@@ -3141,12 +3157,12 @@ rotateSync(angle: number): void
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed |
-| 501 | Resource Unavailable |
+| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed. |
+| 501 | Resource Unavailable. |
 
 示例：
 
@@ -3383,12 +3399,12 @@ flipSync(horizontal: boolean, vertical: boolean): void
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed |
-| 501 | Resource Unavailable |
+| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed. |
+| 501 | Resource Unavailable. |
 
 示例：
 
@@ -3540,7 +3556,7 @@ function applyCropSync(pixelMap: image.PixelMap) {
 
 crop(region: Region, callback: AsyncCallback<void>): void
 
-根据输入的尺寸对图片进行裁剪。使用callback异步回调。
+根据输入的区域信息对图片进行裁剪。使用callback异步回调。
 
 ![](./img/note_3.0-zh-cn.png) 从API版本26.0.0开始，建议使用[applyCrop](#applycrop)代替，以获得更完善的异常处理能力。
 
@@ -3578,7 +3594,7 @@ function crop(pixelMap: image.PixelMap) {
 
 crop(region: Region): Promise<void>
 
-根据输入的尺寸对图片进行裁剪。使用Promise异步回调。
+根据输入的区域信息对图片进行裁剪。使用Promise异步回调。
 
 ![](./img/note_3.0-zh-cn.png) 从API版本26.0.0开始，建议使用[applyCrop](#applycrop)代替，以获得更完善的异常处理能力。
 
@@ -3619,7 +3635,7 @@ function crop(pixelMap: image.PixelMap) {
 
 cropSync(region: Region): void
 
-根据输入的尺寸裁剪图片。同步返回结果。
+根据输入的区域信息对图片进行裁剪。同步返回结果。
 
 ![](./img/note_3.0-zh-cn.png) 从API版本26.0.0开始，建议使用[applyCropSync](#applycropsync)代替，以获得更完善的异常处理能力。
 
@@ -3635,12 +3651,12 @@ cropSync(region: Region): void
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed |
-| 501 | Resource Unavailable |
+| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed. |
+| 501 | Resource Unavailable. |
 
 示例：
 
@@ -3747,6 +3763,11 @@ applyColorSpace(targetColorSpace: colorSpaceManager.ColorSpaceManager, callback:
 
 根据输入的目标色彩空间对图像的像素颜色进行色彩空间转换。使用callback异步回调。
 
+![](./img/note_3.0-zh-cn.png)
+
+- 本接口仅执行色彩空间之间的数学转换，不包含HDR到SDR的色调映射。当源图像为HDR色彩空间（传输函数为HLG或PQ，例如BT2020_HLG、BT2020_PQ、P3_HLG、P3_PQ等）且目标为SDR色彩空间（传输函数为sRGB gamma，例如SRGB、DISPLAY_P3、DCI_P3、ADOBE_RGB_1998等）时，直接调用本接口会导致图像整体偏亮、泛白、高光细节丢失。
+- 从API版本12开始，如果要将HDR色彩空间转换为SDR色彩空间，请先调用[toSdr](#tosdr12)完成HDR到SDR的转换和色调映射，再按需调用本接口在SDR色彩空间之间转换。
+
 系统能力： SystemCapability.Multimedia.Image.Core
 
 参数：
@@ -3758,11 +3779,11 @@ applyColorSpace(targetColorSpace: colorSpaceManager.ColorSpaceManager, callback:
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed |
+| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed. |
 | 62980104 | Failed to initialize the internal object. |
 | 62980108 | Failed to convert the color space. |
 | 62980115 | Invalid image parameter. |
@@ -3792,6 +3813,11 @@ applyColorSpace(targetColorSpace: colorSpaceManager.ColorSpaceManager): Promise<
 
 根据输入的目标色彩空间对图像的像素颜色进行色彩空间转换。使用Promise异步回调。
 
+![](./img/note_3.0-zh-cn.png)
+
+- 本接口仅执行色彩空间之间的数学转换，不包含HDR到SDR的色调映射。当源图像为HDR色彩空间（传输函数为HLG或PQ，例如BT2020_HLG、BT2020_PQ、P3_HLG、P3_PQ等）且目标为SDR色彩空间（传输函数为sRGB gamma，例如SRGB、DISPLAY_P3、DCI_P3、ADOBE_RGB_1998等）时，直接调用本接口会导致图像整体偏亮、泛白、高光细节丢失。
+- 从API版本12开始，如果要将HDR色彩空间转换为SDR色彩空间，请先调用[toSdr](#tosdr12)完成HDR到SDR的转换和色调映射，再按需调用本接口在SDR色彩空间之间转换。
+
 系统能力： SystemCapability.Multimedia.Image.Core
 
 参数：
@@ -3808,11 +3834,11 @@ applyColorSpace(targetColorSpace: colorSpaceManager.ColorSpaceManager): Promise<
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed |
+| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed. |
 | 62980104 | Failed to initialize the internal object. |
 | 62980108 | Failed to convert the color space. |
 | 62980115 | Invalid image parameter. |
@@ -3907,7 +3933,7 @@ getMetadata(key: HdrMetadataKey): HdrMetadataValue
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -3969,7 +3995,7 @@ setMetadata(key: HdrMetadataKey, value: HdrMetadataValue): Promise<void>
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -4022,7 +4048,7 @@ setTransferDetached(detached: boolean): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 501 | Resource Unavailable |
+| 501 | Resource Unavailable. |
 
 示例：
 
@@ -4138,10 +4164,7 @@ async function marshal() {
     size: { height: 4, width: 6 },
     alphaType: image.AlphaType.UNPREMUL
   };
-  let pixelMap: image.PixelMap | undefined = undefined;
-  await image.createPixelMap(color, opts).then((srcPixelMap: image.PixelMap) => {
-    pixelMap = srcPixelMap;
-  })
+  let pixelMap: image.PixelMap | undefined = await image.createPixelMap(color, opts);
   if (pixelMap != undefined) {
     // 序列化。
     let parcelable: MySequence = new MySequence(pixelMap);
@@ -4161,7 +4184,7 @@ unmarshalling(sequence: rpc.MessageSequence): Promise<PixelMap>
 
 从MessageSequence中反序列化并获取PixelMap。使用Promise异步回调。
 
-![](./img/note_3.0-zh-cn.png) 如需使用同步方式反序列化并创建PixelMap可使用：[createPixelMapFromParcel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-f#imagecreatepixelmapfromparcel11)。
+![](./img/note_3.0-zh-cn.png) 如需使用同步方式反序列化并创建PixelMap可使用[createPixelMapFromParcel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-f#imagecreatepixelmapfromparcel11)。
 
 系统能力： SystemCapability.Multimedia.Image.Core
 
@@ -4228,10 +4251,7 @@ async function unmarshal() {
     size: { height: 4, width: 6 },
     alphaType: image.AlphaType.UNPREMUL
   };
-  let pixelMap: image.PixelMap | undefined = undefined;
-  await image.createPixelMap(color, opts).then((srcPixelMap: image.PixelMap) => {
-    pixelMap = srcPixelMap;
-  })
+  let pixelMap: image.PixelMap | undefined = await image.createPixelMap(color, opts);
   if (pixelMap != undefined) {
     // 序列化。
     let parcelable: MySequence = new MySequence(pixelMap);
@@ -4358,8 +4378,8 @@ YUV和RGB类型互转。使用Promise异步回调。
 | 62980111 | The image source data is incomplete. |
 | 62980115 | Invalid input parameter. |
 | 62980178 | Failed to create the pixelmap. |
-| 62980274 | The conversion failed |
-| 62980276 | The type to be converted is an unsupported target pixel format |
+| 62980274 | The conversion failed. |
+| 62980276 | The type to be converted is an unsupported target pixel format. |
 
 示例：
 
@@ -4383,17 +4403,19 @@ setMemoryNameSync(name: string): void
 
 设置PixelMap的内存标识符，便于在内存调试或问题定位时识别该内存。
 
+![](./img/note_3.0-zh-cn.png) 仅支持DMA和SHARE_MEMORY内存类型的PixelMap设置内存标识符。
+
 系统能力： SystemCapability.Multimedia.Image.Core
 
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| name | string | 是 | PixelMap内存标识符，只允许DMA和SHARE_MEMORY内存类型的PixelMap设置。DMA内存设置名称长度取值范围为[1, 255]字节，SHARE_MEMORY内存设置名称长度取值范围为[1, 244]字节。 |
+| name | string | 是 | 需要设置的内存标识符。DMA内存标识符的字符串长度取值范围为[1, 255]字节，SHARE_MEMORY内存标识符的字符串长度取值范围为[1, 244]字节。 |
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |

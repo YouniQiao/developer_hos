@@ -1,12 +1,12 @@
 ---
-title: "HdsSnackBar"
+title: "HdsSnackBar (即时操作)"
 upstream_id: "harmonyos-references/ui-design-hdssnackbar"
 catalog: "harmonyos-references"
-content_hash: "ff8bf79e8c42"
-synced_at: "2026-07-28T16:50:14.334898"
+content_hash: "948528f33124"
+synced_at: "2026-08-29T18:16:18.366459"
 ---
 
-# HdsSnackBar
+# HdsSnackBar (即时操作)
 
 提供简短通知的非模态弹窗，其内部默认包含了图标区、内容区和操作区。
 
@@ -15,7 +15,7 @@ synced_at: "2026-07-28T16:50:14.334898"
 #### 导入模块
 
 ```
-import { HdsSnackBar } from '@kit.UIDesignKit';
+import { HdsSnackBar, SnackBarIconOptions, SnackBarMessageOptions, SnackBarOperationOptions, SnackBarStyleOptions, SnackBarOperationType } from '@kit.UIDesignKit';
 ```
 
 #### HdsSnackBar
@@ -265,4 +265,4 @@ struct TestSnackBar {
 ```
  效果图：
 
-![](./img/zh-cn_image_0000002686088867.gif)
+![](./img/zh-cn_image_0000002731359791.gif)

@@ -2,17 +2,17 @@
 title: "Socket错误码"
 upstream_id: "harmonyos-references/errorcode-net-socket"
 catalog: "harmonyos-references"
-content_hash: "ee36e3c4775a"
-synced_at: "2026-07-28T16:50:48.231695"
+content_hash: "6838a0b33ec8"
+synced_at: "2026-08-29T18:16:47.964943"
 ---
 
 # Socket错误码
 
 ![](./img/note_3.0-zh-cn.png) 以下仅介绍本模块特有错误码，通用错误码请参考[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)说明文档。
 
-socket错误码映射关系：2301000 + [内核错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-kernel)。
+Socket错误码映射关系：2301000 + [内核错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-kernel)。
 
-socket server错误码映射关系：2303100 + [内核错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-kernel)。
+Socket server错误码映射关系：2303100 + [内核错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-kernel)。
 
 #### 2301001 操作不允许
 
@@ -469,7 +469,7 @@ SSL is null.
 
 错误描述
 
-SSL/TLS连接对象为空，参数错误。
+SSL对象为空。
 
 可能原因
 
@@ -492,7 +492,7 @@ An error occurred when reading data on the TLS socket.
 
 错误描述
 
-等待套接字可读。
+在TLS套接字上读取数据时发生错误。
 
 可能原因
 
@@ -510,7 +510,7 @@ An error occurred when writing data on the TLS socket.
 
 错误描述
 
-等待套接字可写。
+在TLS套接字上写入数据时发生错误。
 
 可能原因
 
@@ -561,7 +561,7 @@ TLS系统调用发生不可恢复的致命I/O错误。
 2. 检查网络连接状态。
 3. 尝试重新建立TLS连接。
 
-#### 2303506 清除TLS连接出错
+#### 2303506 关闭TLS连接失败
 
 错误信息
 
@@ -569,7 +569,7 @@ Failed to close the TLS connection.
 
 错误描述
 
-TLS/SSL连接已关闭。
+关闭TLS连接失败。
 
 可能原因
 

@@ -2,8 +2,8 @@
 title: "native_type_visual.h"
 upstream_id: "harmonyos-references/capi-native-type-visual-h"
 catalog: "harmonyos-references"
-content_hash: "8f71620ae6ef"
-synced_at: "2026-08-21T15:34:30.910662"
+content_hash: "cf807ae5cec9"
+synced_at: "2026-08-29T18:15:40.330453"
 ---
 
 # native_type_visual.h
@@ -28,14 +28,14 @@ synced_at: "2026-08-21T15:34:30.910662"
 
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
-| [ArkUI_TranslationOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-translationoptions) | ArkUI_TranslationOptions | 定义组件转场时平移效果的配置选项。 |
-| [ArkUI_ScaleOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-scaleoptions) | ArkUI_ScaleOptions | 定义组件转场时的缩放效果对象。 |
-| [ArkUI_RotationOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rotationoptions) | ArkUI_RotationOptions | 定义组件转场时的旋转效果对象。 |
-| [ArkUI_MotionPathOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-motionpathoptions) | ArkUI_MotionPathOptions | 定义路径动画的运动路径配置项。 |
-| [ArkUI_Matrix4](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-matrix4) | ArkUI_Matrix4 | 四阶矩阵对象，用于矩阵变换操作。 |
+| [ArkUI_TranslationOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-translationoptions) | ArkUI_TranslationOptions | 定义组件转场时平移效果的配置选项，用于设置组件在转场过程中横向、纵向和深度方向的平移距离。 |
+| [ArkUI_ScaleOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-scaleoptions) | ArkUI_ScaleOptions | 定义组件转场时的缩放选项。 |
+| [ArkUI_RotationOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rotationoptions) | ArkUI_RotationOptions | 定义组件转场时的旋转配置选项。 |
+| [ArkUI_MotionPathOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-motionpathoptions) | ArkUI_MotionPathOptions | 定义路径动画的运动路径配置项，用于配置组件在动画过程中沿指定路径运动的轨迹及相关参数，使组件能够按照预设的运动路径进行位移动画。 |
+| [ArkUI_Matrix4](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-matrix4) | ArkUI_Matrix4 | 四阶矩阵对象，用于描述UI组件的平移、旋转、缩放等矩阵变换操作，详细使用说明请参见[ArkUI_NativeModule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule)。 |
 | [ArkUI_PointF](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-pointf) | ArkUI_PointF | 定义一个二维坐标点结构体，用于描述组件位置或偏移等坐标信息，坐标以浮点类型存储。 |
 | [ArkUI_Matrix4RotationOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-matrix4rotationoptions) | ArkUI_Matrix4RotationOptions | 定义矩阵旋转变换的参数配置对象。 |
-| [ArkUI_Matrix4ScaleOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-matrix4scaleoptions) | ArkUI_Matrix4ScaleOptions | 定义矩阵缩放变换的参数配置对象。 |
+| [ArkUI_Matrix4ScaleOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-matrix4scaleoptions) | ArkUI_Matrix4ScaleOptions | 定义4×4矩阵缩放变换的参数配置对象，各参数及其取值原则详见成员变量说明。 |
 | [ArkUI_Matrix4TranslationOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-matrix4translationoptions) | ArkUI_Matrix4TranslationOptions | 定义矩阵平移变换的参数配置对象。 |
 | [OH_ArkUI_ShadowOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-oh-arkui-shadowoptions) | OH_ArkUI_ShadowOptions | 定义阴影选项。 |
 
@@ -80,11 +80,11 @@ synced_at: "2026-08-21T15:34:30.910662"
 | [ArkUI_ErrorCode OH_ArkUI_Matrix4ScaleOptions_GetCenterY(const ArkUI_Matrix4ScaleOptions* options, float* centerY)](#oh_arkui_matrix4scaleoptions_getcentery) | - | 获取矩阵运算的缩放参数对象变换中心点的y轴坐标。 |
 | [ArkUI_Matrix4RotationOptions* OH_ArkUI_Matrix4RotationOptions_Create()](#oh_arkui_matrix4rotationoptions_create) | - | 创建矩阵运算的旋转参数对象的指针。在新创建的对象中，centerX（单次矩阵变换中心点相对于组件变换中心点的x轴偏移值）、centerY（y轴偏移值）和旋转角度angle默认值为0。如果未指定x、y、z方向向量，则默认x=0、y=0、z=1（绕z轴旋转）；一旦指定了任意一个方向向量，其余未指定的值等同于0。 |
 | [void OH_ArkUI_Matrix4RotationOptions_Dispose(ArkUI_Matrix4RotationOptions* options)](#oh_arkui_matrix4rotationoptions_dispose) | - | 销毁指向矩阵运算的旋转参数对象的指针。 |
-| [ArkUI_ErrorCode OH_ArkUI_Matrix4RotationOptions_SetX(ArkUI_Matrix4RotationOptions* options, const float x)](#oh_arkui_matrix4rotationoptions_setx) | - | 设置矩阵运算的旋转参数对象x方向的方向向量。 |
-| [ArkUI_ErrorCode OH_ArkUI_Matrix4RotationOptions_GetX(const ArkUI_Matrix4RotationOptions* options, float* x)](#oh_arkui_matrix4rotationoptions_getx) | - | 获取矩阵运算的旋转参数对象x方向的方向向量。如果从未设置过x值，其值将处于未定义状态，此时函数将返回[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
-| [ArkUI_ErrorCode OH_ArkUI_Matrix4RotationOptions_SetY(ArkUI_Matrix4RotationOptions* options, const float y)](#oh_arkui_matrix4rotationoptions_sety) | - | 设置矩阵运算的旋转参数对象y方向的方向向量。 |
+| [ArkUI_ErrorCode OH_ArkUI_Matrix4RotationOptions_SetX(ArkUI_Matrix4RotationOptions* options, const float x)](#oh_arkui_matrix4rotationoptions_setx) | - | 设置矩阵运算的旋转参数对象x方向的方向向量。一旦指定了任一方向向量（x、y或z），其余未指定的方向向量值将等同于0；若全部未指定，则默认等同于x=0、y=0、z=1，表示绕z轴旋转。 |
+| [ArkUI_ErrorCode OH_ArkUI_Matrix4RotationOptions_GetX(const ArkUI_Matrix4RotationOptions* options, float* x)](#oh_arkui_matrix4rotationoptions_getx) | - | 获取矩阵运算的旋转参数对象x方向的方向向量。如果从未设置过x值，其值将处于未定义状态，此时函数将返回[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。请先通过OH_ArkUI_Matrix4RotationOptions_SetX设置x值后再调用此函数获取。 |
+| [ArkUI_ErrorCode OH_ArkUI_Matrix4RotationOptions_SetY(ArkUI_Matrix4RotationOptions* options, const float y)](#oh_arkui_matrix4rotationoptions_sety) | - | 设置矩阵运算的旋转参数对象y方向的方向向量。一旦指定了任一方向向量（x、y或z），其余未指定的方向向量值将等同于0；若全部未指定，则默认等同于x=0、y=0、z=1，表示绕z轴旋转。 |
 | [ArkUI_ErrorCode OH_ArkUI_Matrix4RotationOptions_GetY(const ArkUI_Matrix4RotationOptions* options, float* y)](#oh_arkui_matrix4rotationoptions_gety) | - | 获取矩阵运算的旋转参数对象y方向的方向向量。如果从未设置过y值，其值将处于未定义状态，此时函数将返回[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
-| [ArkUI_ErrorCode OH_ArkUI_Matrix4RotationOptions_SetZ(ArkUI_Matrix4RotationOptions* options, const float z)](#oh_arkui_matrix4rotationoptions_setz) | - | 设置矩阵运算的旋转参数对象z方向的方向向量。 |
+| [ArkUI_ErrorCode OH_ArkUI_Matrix4RotationOptions_SetZ(ArkUI_Matrix4RotationOptions* options, const float z)](#oh_arkui_matrix4rotationoptions_setz) | - | 设置矩阵运算的旋转参数对象z方向的方向向量。一旦指定了任一方向向量（x、y或z），其余未指定的方向向量值将等同于0；若全部未指定，则默认等同于x=0、y=0、z=1，表示绕z轴旋转。 |
 | [ArkUI_ErrorCode OH_ArkUI_Matrix4RotationOptions_GetZ(const ArkUI_Matrix4RotationOptions* options, float* z)](#oh_arkui_matrix4rotationoptions_getz) | - | 获取矩阵运算的旋转参数对象z方向的方向向量。如果从未设置过z值，其值将处于未定义状态，此时函数将返回[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
 | [ArkUI_ErrorCode OH_ArkUI_Matrix4RotationOptions_SetAngle(ArkUI_Matrix4RotationOptions* options, const float angle)](#oh_arkui_matrix4rotationoptions_setangle) | - | 设置矩阵运算的旋转参数对象中旋转角度的值。 |
 | [ArkUI_ErrorCode OH_ArkUI_Matrix4RotationOptions_GetAngle(const ArkUI_Matrix4RotationOptions* options, float* angle)](#oh_arkui_matrix4rotationoptions_getangle) | - | 获取矩阵运算的旋转参数对象中旋转角度的值。 |
@@ -100,8 +100,8 @@ synced_at: "2026-08-21T15:34:30.910662"
 | [ArkUI_ErrorCode OH_ArkUI_Matrix4TranslationOptions_GetY(const ArkUI_Matrix4TranslationOptions* options, float* y)](#oh_arkui_matrix4translationoptions_gety) | - | 获取矩阵运算的平移对象y轴方向的平移值，单位为px。如果从未设置y的值，其默认值为0。 |
 | [ArkUI_ErrorCode OH_ArkUI_Matrix4TranslationOptions_SetZ(ArkUI_Matrix4TranslationOptions* options, const float z)](#oh_arkui_matrix4translationoptions_setz) | - | 设置矩阵运算的平移对象z轴方向的平移值，单位为px。 |
 | [ArkUI_ErrorCode OH_ArkUI_Matrix4TranslationOptions_GetZ(const ArkUI_Matrix4TranslationOptions* options, float* z)](#oh_arkui_matrix4translationoptions_getz) | - | 获取矩阵运算的平移对象z轴方向的平移值，单位为px。如果从未设置z的值，其默认值为0。 |
-| [ArkUI_Matrix4* OH_ArkUI_Matrix4_CreateIdentity()](#oh_arkui_matrix4_createidentity) | - | 创建一个单位四阶矩阵对象。 |
-| [ArkUI_Matrix4* OH_ArkUI_Matrix4_CreateByElements(const float* elements)](#oh_arkui_matrix4_createbyelements) | - | 通过指定矩阵的每个元素来创建一个四阶矩阵对象。 |
+| [ArkUI_Matrix4* OH_ArkUI_Matrix4_CreateIdentity()](#oh_arkui_matrix4_createidentity) | - | 创建一个单位四阶矩阵对象。当该对象不再使用时，请调用[OH_ArkUI_Matrix4_Dispose](#oh_arkui_matrix4_dispose)销毁。 |
+| [ArkUI_Matrix4* OH_ArkUI_Matrix4_CreateByElements(const float* elements)](#oh_arkui_matrix4_createbyelements) | - | 通过指定矩阵的每个元素来创建一个四阶矩阵对象。当该对象不再使用时，请调用[OH_ArkUI_Matrix4_Dispose](#oh_arkui_matrix4_dispose)销毁。 |
 | [void OH_ArkUI_Matrix4_Dispose(ArkUI_Matrix4* matrix)](#oh_arkui_matrix4_dispose) | - | 销毁矩阵对象的指针。 |
 | [ArkUI_Matrix4* OH_ArkUI_Matrix4_Copy(const ArkUI_Matrix4* matrix)](#oh_arkui_matrix4_copy) | - | 创建四阶矩阵对象的副本。用于对同一矩阵进行操作，以获取不同的矩阵对象。 |
 | [ArkUI_ErrorCode OH_ArkUI_Matrix4_Invert(ArkUI_Matrix4* matrix)](#oh_arkui_matrix4_invert) | - | 对输入矩阵执行逆矩阵变换，变换后将修改输入的矩阵对象。此函数将修改输入的矩阵对象。 |
@@ -125,7 +125,7 @@ synced_at: "2026-08-21T15:34:30.910662"
 | [ArkUI_ErrorCode OH_ArkUI_MotionPathOptions_GetRotatable(const ArkUI_MotionPathOptions* options, bool* rotatable)](#oh_arkui_motionpathoptions_getrotatable) | - | 获取组件是否沿运动路径旋转。 |
 | [OH_ArkUI_ShadowOptions* OH_ArkUI_ShadowOptions_Create()](#oh_arkui_shadowoptions_create) | - | 创建一个阴影选项对象。在新创建的对象中，模糊半径radius默认值为0，阴影类型type默认值为ARKUI_SHADOW_TYPE_COLOR，阴影颜色color默认值为0xFF000000，x轴偏移量offsetX默认值为0，y轴偏移量offsetY默认值为0，是否填充isFill默认值为false。当该对象不再使用时，请调用[OH_ArkUI_ShadowOptions_Destroy](#oh_arkui_shadowoptions_destroy)销毁。 |
 | [void OH_ArkUI_ShadowOptions_Destroy(OH_ArkUI_ShadowOptions* options)](#oh_arkui_shadowoptions_destroy) | - | 销毁阴影选项对象。 |
-| [ArkUI_ErrorCode OH_ArkUI_ShadowOptions_SetRadius(OH_ArkUI_ShadowOptions* options, float radius)](#oh_arkui_shadowoptions_setradius) | - | 设置阴影选项的模糊半径。 |
+| [ArkUI_ErrorCode OH_ArkUI_ShadowOptions_SetRadius(OH_ArkUI_ShadowOptions* options, float radius)](#oh_arkui_shadowoptions_setradius) | - | 设置阴影选项的模糊半径。取值范围：[0, +∞)，单位为vp。传入负数时返回[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
 | [ArkUI_ErrorCode OH_ArkUI_ShadowOptions_GetRadius(OH_ArkUI_ShadowOptions* options, float* radius)](#oh_arkui_shadowoptions_getradius) | - | 获取阴影选项的模糊半径。 |
 | [ArkUI_ErrorCode OH_ArkUI_ShadowOptions_SetType(OH_ArkUI_ShadowOptions* options, ArkUI_ShadowType type)](#oh_arkui_shadowoptions_settype) | - | 设置阴影选项的阴影类型。 |
 | [ArkUI_ErrorCode OH_ArkUI_ShadowOptions_GetType(OH_ArkUI_ShadowOptions* options, ArkUI_ShadowType* type)](#oh_arkui_shadowoptions_gettype) | - | 获取阴影选项的阴影类型。 |
@@ -169,12 +169,12 @@ enum ArkUI_ShadowStyle
 
 | 枚举项 | 描述 |
 | --- | --- |
-| ARKUI_SHADOW_STYLE_OUTER_DEFAULT_XS = 0 | 超小阴影。 ![](./img/zh-cn_image_0000002689140994.png) |
-| ARKUI_SHADOW_STYLE_OUTER_DEFAULT_SM = 1 | 小阴影。 ![](./img/zh-cn_image_0000002718980571.png) |
-| ARKUI_SHADOW_STYLE_OUTER_DEFAULT_MD = 2 | 中阴影。 ![](./img/zh-cn_image_0000002689300878.png) |
-| ARKUI_SHADOW_STYLE_OUTER_DEFAULT_LG = 3 | 大阴影。 ![](./img/zh-cn_image_0000002718860451.png) |
-| ARKUI_SHADOW_STYLE_OUTER_FLOATING_SM = 4 | 浮动小阴影。 ![](./img/zh-cn_image_0000002689140996.png) |
-| ARKUI_SHADOW_STYLE_OUTER_FLOATING_MD = 5 | 浮动中阴影。 ![](./img/zh-cn_image_0000002718980573.png) |
+| ARKUI_SHADOW_STYLE_OUTER_DEFAULT_XS = 0 | 超小阴影。 ![](./img/zh-cn_image_0000002731359771.png) |
+| ARKUI_SHADOW_STYLE_OUTER_DEFAULT_SM = 1 | 小阴影。 ![](./img/zh-cn_image_0000002701800466.png) |
+| ARKUI_SHADOW_STYLE_OUTER_DEFAULT_MD = 2 | 中阴影。 ![](./img/zh-cn_image_0000002731519753.png) |
+| ARKUI_SHADOW_STYLE_OUTER_DEFAULT_LG = 3 | 大阴影。 ![](./img/zh-cn_image_0000002701640556.png) |
+| ARKUI_SHADOW_STYLE_OUTER_FLOATING_SM = 4 | 浮动小阴影。 ![](./img/zh-cn_image_0000002731359773.png) |
+| ARKUI_SHADOW_STYLE_OUTER_FLOATING_MD = 5 | 浮动中阴影。 ![](./img/zh-cn_image_0000002701800468.png) |
 
 #### [h2]ArkUI_AnimationCurve
 
@@ -197,7 +197,7 @@ enum ArkUI_AnimationCurve
 | ARKUI_CURVE_FAST_OUT_SLOW_IN = 5 | 动画标准曲线。 |
 | ARKUI_CURVE_LINEAR_OUT_SLOW_IN = 6 | 动画减速曲线。 |
 | ARKUI_CURVE_FAST_OUT_LINEAR_IN = 7 | 动画加速曲线。 |
-| ARKUI_CURVE_EXTREME_DECELERATION = 8 | 动画急缓曲线。 |
+| ARKUI_CURVE_EXTREME_DECELERATION = 8 | 动画极缓曲线。 |
 | ARKUI_CURVE_SHARP = 9 | 动画锐利曲线。 |
 | ARKUI_CURVE_RHYTHM = 10 | 动画节奏曲线。 |
 | ARKUI_CURVE_SMOOTH = 11 | 动画平滑曲线。 |
@@ -234,19 +234,19 @@ enum ArkUI_BlurStyle
 
 | 枚举项 | 描述 |
 | --- | --- |
-| ARKUI_BLUR_STYLE_THIN = 0 | 轻薄材质模糊。 ![](./img/zh-cn_image_0000002689300880.png) |
-| ARKUI_BLUR_STYLE_REGULAR = 1 | 普通厚度材质模糊。 ![](./img/zh-cn_image_0000002718860453.png) |
-| ARKUI_BLUR_STYLE_THICK = 2 | 厚材质模糊。 ![](./img/zh-cn_image_0000002689140998.png) |
-| ARKUI_BLUR_STYLE_BACKGROUND_THIN = 3 | 近距景深模糊。 ![](./img/zh-cn_image_0000002718980575.png) |
-| ARKUI_BLUR_STYLE_BACKGROUND_REGULAR = 4 | 中距景深模糊。 ![](./img/zh-cn_image_0000002689300882.png) |
-| ARKUI_BLUR_STYLE_BACKGROUND_THICK = 5 | 远距景深模糊。 ![](./img/zh-cn_image_0000002718860455.png) |
-| ARKUI_BLUR_STYLE_BACKGROUND_ULTRA_THICK = 6 | 超远距景深模糊。 ![](./img/zh-cn_image_0000002689141000.png) |
-| ARKUI_BLUR_STYLE_NONE = 7 | 关闭模糊。 ![](./img/zh-cn_image_0000002718980577.png) |
-| ARKUI_BLUR_STYLE_COMPONENT_ULTRA_THIN = 8 | 组件超轻薄材质模糊。 ![](./img/zh-cn_image_0000002689300884.png) |
-| ARKUI_BLUR_STYLE_COMPONENT_THIN = 9 | 组件轻薄材质模糊。 ![](./img/zh-cn_image_0000002718860457.png) |
-| ARKUI_BLUR_STYLE_COMPONENT_REGULAR = 10 | 组件普通材质模糊。 ![](./img/zh-cn_image_0000002689141002.png) |
-| ARKUI_BLUR_STYLE_COMPONENT_THICK = 11 | 组件厚材质模糊。 ![](./img/zh-cn_image_0000002718980579.png) |
-| ARKUI_BLUR_STYLE_COMPONENT_ULTRA_THICK = 12 | 组件超厚材质模糊。 ![](./img/zh-cn_image_0000002689300886.png) |
+| ARKUI_BLUR_STYLE_THIN = 0 | 轻薄材质模糊。 ![](./img/zh-cn_image_0000002731519755.png) |
+| ARKUI_BLUR_STYLE_REGULAR = 1 | 普通厚度材质模糊。 ![](./img/zh-cn_image_0000002701640558.png) |
+| ARKUI_BLUR_STYLE_THICK = 2 | 厚材质模糊。 ![](./img/zh-cn_image_0000002731359775.png) |
+| ARKUI_BLUR_STYLE_BACKGROUND_THIN = 3 | 近距景深模糊。 ![](./img/zh-cn_image_0000002701800470.png) |
+| ARKUI_BLUR_STYLE_BACKGROUND_REGULAR = 4 | 中距景深模糊。 ![](./img/zh-cn_image_0000002731519757.png) |
+| ARKUI_BLUR_STYLE_BACKGROUND_THICK = 5 | 远距景深模糊。 ![](./img/zh-cn_image_0000002701640560.png) |
+| ARKUI_BLUR_STYLE_BACKGROUND_ULTRA_THICK = 6 | 超远距景深模糊。 ![](./img/zh-cn_image_0000002731359777.png) |
+| ARKUI_BLUR_STYLE_NONE = 7 | 关闭模糊。 ![](./img/zh-cn_image_0000002701800472.png) |
+| ARKUI_BLUR_STYLE_COMPONENT_ULTRA_THIN = 8 | 组件超轻薄材质模糊。 ![](./img/zh-cn_image_0000002731519759.png) |
+| ARKUI_BLUR_STYLE_COMPONENT_THIN = 9 | 组件轻薄材质模糊。 ![](./img/zh-cn_image_0000002701640562.png) |
+| ARKUI_BLUR_STYLE_COMPONENT_REGULAR = 10 | 组件普通材质模糊。 ![](./img/zh-cn_image_0000002731359779.png) |
+| ARKUI_BLUR_STYLE_COMPONENT_THICK = 11 | 组件厚材质模糊。 ![](./img/zh-cn_image_0000002701800474.png) |
+| ARKUI_BLUR_STYLE_COMPONENT_ULTRA_THICK = 12 | 组件超厚材质模糊。 ![](./img/zh-cn_image_0000002731519761.png) |
 
 #### [h2]ArkUI_BlurStyleActivePolicy
 
@@ -437,7 +437,7 @@ enum ArkUI_FinishCallbackType
 | 枚举项 | 描述 |
 | --- | --- |
 | ARKUI_FINISH_CALLBACK_REMOVED = 0 | 当整个动画结束并立即删除时，将触发回调。 |
-| ARKUI_FINISH_CALLBACK_LOGICALLY = 1 | 当动画在逻辑上处于下降状态，但可能仍处于其长尾状态时，将触发回调。长尾状态是指动画即将完全停止前的残余变化过程，此时动画的数值变化已非常微小，接近目标值。 |
+| ARKUI_FINISH_CALLBACK_LOGICALLY = 1 | 当动画在逻辑上已完成，但可能仍处于其长尾状态时，将触发回调。长尾状态是指动画即将完全停止前的残余变化过程，此时动画的数值变化已非常微小，接近目标值。 |
 
 #### [h2]ArkUI_BlendApplyType
 
@@ -555,7 +555,7 @@ ArkUI_Matrix4* OH_ArkUI_Matrix4_CreateByElements(const float* elements)
 
 | 参数项 | 描述 |
 | --- | --- |
-| const float* elements | 指向预期矩阵元素数据的数组指针。数组长度应大于或等于16。该参数不可为空指针。 |
+| const float* elements | 指向预期矩阵元素数据的数组指针。数组长度应大于或等于16，若不足16可能导致未定义行为。该参数不可为空指针，若为空指针函数将返回空值。 |
 
 返回：
 
@@ -587,7 +587,7 @@ ArkUI_Matrix4* OH_ArkUI_Matrix4_Copy(const ArkUI_Matrix4* matrix)
 ```
  描述：
 
-创建四阶矩阵对象的副本。通过复制原始矩阵，可以对其进行独立操作避免影响原始矩阵。
+创建四阶矩阵对象的副本。通过复制原始矩阵，可以对其进行独立操作以获取不同矩阵变换结果。当该副本对象不再使用时，请调用[OH_ArkUI_Matrix4_Dispose](#oh_arkui_matrix4_dispose)销毁。
 
 起始版本： 24
 
@@ -610,7 +610,7 @@ ArkUI_ErrorCode OH_ArkUI_Matrix4_Invert(ArkUI_Matrix4* matrix)
 ```
  描述：
 
-对输入矩阵执行逆矩阵变换，变换后将修改输入的矩阵对象。此函数将修改输入的矩阵对象。
+对输入矩阵执行逆矩阵变换，变换后将修改输入的矩阵对象。
 
 起始版本： 24
 
@@ -624,7 +624,7 @@ ArkUI_ErrorCode OH_ArkUI_Matrix4_Invert(ArkUI_Matrix4* matrix)
 
 | 类型 | 说明 |
 | --- | --- |
-| [ArkUI_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) | 错误码。 如果操作成功，返回[ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 如果发生参数异常，返回[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
+| [ArkUI_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) | 错误码。 如果操作成功，返回[ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 如果发生参数异常（如传入空指针），返回[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
 
 #### [h2]OH_ArkUI_Matrix4_Combine()
 
@@ -648,7 +648,7 @@ ArkUI_ErrorCode OH_ArkUI_Matrix4_Combine(ArkUI_Matrix4* oriMatrix, const ArkUI_M
 
 | 类型 | 说明 |
 | --- | --- |
-| [ArkUI_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) | 错误码。 如果操作成功，返回[ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 如果发生参数异常，返回[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
+| [ArkUI_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) | 错误码。 如果操作成功，返回[ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 如果oriMatrix或anotherMatrix为空指针，返回[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
 
 #### [h2]OH_ArkUI_Matrix4_Translate()
 
@@ -672,7 +672,7 @@ ArkUI_ErrorCode OH_ArkUI_Matrix4_Translate(ArkUI_Matrix4* matrix, const ArkUI_Ma
 
 | 类型 | 说明 |
 | --- | --- |
-| [ArkUI_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) | 错误码。 如果操作成功，返回[ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 如果发生参数异常，返回[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
+| [ArkUI_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) | 错误码。 如果操作成功，返回[ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 如果matrix或translate为空指针，返回[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
 
 #### [h2]OH_ArkUI_Matrix4_Scale()
 
@@ -696,7 +696,7 @@ ArkUI_ErrorCode OH_ArkUI_Matrix4_Scale(ArkUI_Matrix4* matrix, const ArkUI_Matrix
 
 | 类型 | 说明 |
 | --- | --- |
-| [ArkUI_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) | 错误码。 如果操作成功，返回[ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 如果发生参数异常，返回[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
+| [ArkUI_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) | 错误码。 如果操作成功，返回[ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 如果options为空指针，返回[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)，请确保传入有效的缩放参数对象指针。 |
 
 #### [h2]OH_ArkUI_Matrix4_Rotate()
 
@@ -720,7 +720,7 @@ ArkUI_ErrorCode OH_ArkUI_Matrix4_Rotate(ArkUI_Matrix4* matrix, const ArkUI_Matri
 
 | 类型 | 说明 |
 | --- | --- |
-| [ArkUI_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) | 错误码。 如果操作成功，返回[ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 如果发生参数异常，返回[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
+| [ArkUI_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) | 错误码。 如果操作成功，返回[ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 如果matrix或rotate为空指针，返回[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)，请确保传入有效的对象指针。 |
 
 #### [h2]OH_ArkUI_Matrix4_Skew()
 
@@ -738,8 +738,8 @@ ArkUI_ErrorCode OH_ArkUI_Matrix4_Skew(ArkUI_Matrix4* matrix, const float skewX, 
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_Matrix4](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-matrix4)* matrix | 指向待倾斜四阶矩阵对象的指针。 |
-| const float skewX | x方向的倾斜系数，取值范围：(-∞, +∞)。 |
-| const float skewY | y方向的倾斜系数，取值范围：(-∞, +∞)。 |
+| const float skewX | x方向的倾斜系数。取值范围：(-∞, +∞)。0表示无倾斜，正值使内容沿x方向正向倾斜，负值使内容沿x方向负向倾斜。 |
+| const float skewY | y方向的倾斜系数。取值范围：(-∞, +∞)。0表示无倾斜，正值使内容沿y方向正向倾斜，负值使内容沿y方向负向倾斜。 |
 
 返回：
 
@@ -762,8 +762,8 @@ ArkUI_ErrorCode OH_ArkUI_Matrix4_TransformPoint(const ArkUI_Matrix4* matrix, con
 
 | 参数项 | 描述 |
 | --- | --- |
-| const [ArkUI_Matrix4](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-matrix4)* matrix | 指向四阶矩阵对象的指针。 |
-| const [ArkUI_PointF](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-pointf)* oriPoint | 指向原始坐标点的指针。 |
+| const [ArkUI_Matrix4](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-matrix4)* matrix | 指向四阶矩阵对象的指针。不能为空。 |
+| const [ArkUI_PointF](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-pointf)* oriPoint | 指向原始坐标点的指针。不能为空。 |
 | [ArkUI_PointF](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-pointf)* result | 指向结果点的指针。不能为空。 |
 
 返回：
@@ -788,9 +788,9 @@ ArkUI_ErrorCode OH_ArkUI_Matrix4_SetPolyToPoly(ArkUI_Matrix4* matrix, const ArkU
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_Matrix4](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-matrix4)* matrix | 指向四阶矩阵对象的指针，用于存放结果矩阵。 |
-| const [ArkUI_PointF](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-pointf)* src | 指向原始多边形坐标点数组的指针。数组长度应至少为pointCount。 |
-| const [ArkUI_PointF](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-pointf)* dst | 指向映射后多边形坐标点数组的指针。数组长度应至少为pointCount。 |
-| const uint32_t pointCount | 多边形点的数量，必须是0、1、2、3或4中的一个值。 |
+| const [ArkUI_PointF](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-pointf)* src | 指向原始多边形坐标点数组的指针。数组长度应至少为pointCount，否则将导致未定义行为。 |
+| const [ArkUI_PointF](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-pointf)* dst | 指向映射后多边形坐标点数组的指针。数组长度应至少为pointCount，否则将导致未定义行为。 |
+| const uint32_t pointCount | 多边形点的数量，必须是0、1、2、3或4中的一个值。传入其他值时将返回[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
 
 返回：
 
@@ -814,7 +814,7 @@ ArkUI_ErrorCode OH_ArkUI_Matrix4_GetElements(const ArkUI_Matrix4* matrix, float*
 | 参数项 | 描述 |
 | --- | --- |
 | const [ArkUI_Matrix4](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-matrix4)* matrix | 指向四阶矩阵对象的指针。 |
-| float* result | 指向可容纳16个浮点数的数组的指针。不能为空。 |
+| float* result | 指向可容纳16个浮点数的数组的指针。不能为空。若缓冲区容量不足16个浮点数，可能导致未定义行为。 |
 
 返回：
 
@@ -1603,7 +1603,7 @@ ArkUI_MotionPathOptions* OH_ArkUI_MotionPathOptions_Create()
 ```
  描述：
 
-创建路径动画的运动路径配置项。
+创建路径动画的运动路径配置项。当该对象不再使用时，请调用[OH_ArkUI_MotionPathOptions_Dispose](#oh_arkui_motionpathoptions_dispose)销毁。
 
 起始版本： 23
 
@@ -1670,15 +1670,15 @@ ArkUI_ErrorCode OH_ArkUI_MotionPathOptions_GetPath(const ArkUI_MotionPathOptions
 | 参数项 | 描述 |
 | --- | --- |
 | const [ArkUI_MotionPathOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-motionpathoptions)* options | 指向路径动画的运动路径配置项[ArkUI_MotionPathOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-motionpathoptions)的指针。 |
-| char* svgPathBuffer | 存储运动路径字符串的缓冲区指针。 |
-| const int32_t bufferSize | svgPathBuffer参数的缓冲区大小。 |
-| int32_t* writeLength | 返回[ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)时，表示实际写入缓冲区的字符串长度。 返回[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)时，表示如果为入参异常，writeLength不会被赋值，如果为拷贝异常，writeLength为可容纳目标字符串的最小缓冲区大小。 返回[ARKUI_ERROR_CODE_BUFFER_SIZE_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)时，表示可容纳目标字符串的最小缓冲区大小。 |
+| char* svgPathBuffer | 存储运动路径字符串的缓冲区指针。不能为空指针，缓冲区大小须足够容纳路径字符串。 |
+| const int32_t bufferSize | svgPathBuffer参数的缓冲区大小，必须大于0。传入0或负数时返回[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
+| int32_t* writeLength | 返回[ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)时，表示实际写入缓冲区的字符串长度（含终止符）。 返回[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)时，如果为入参异常，writeLength不会被赋值；如果为拷贝异常，writeLength为可容纳目标字符串的最小缓冲区大小。 返回[ARKUI_ERROR_CODE_BUFFER_SIZE_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)时，表示可容纳目标字符串的最小缓冲区大小。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 [ARKUI_ERROR_CODE_BUFFER_SIZE_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 缓冲区大小不足。 |
+| [ArkUI_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) | 错误码。 如果操作成功，返回[ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 如果发生参数异常，返回[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 如果缓冲区大小不足，返回[ARKUI_ERROR_CODE_BUFFER_SIZE_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
 
 #### [h2]OH_ArkUI_MotionPathOptions_SetFrom()
 
@@ -1831,7 +1831,7 @@ OH_ArkUI_ShadowOptions* OH_ArkUI_ShadowOptions_Create()
 ```
  描述：
 
-创建一个阴影选项对象。当该对象不再使用时，请调用[OH_ArkUI_ShadowOptions_Destroy](#oh_arkui_shadowoptions_destroy)销毁。
+创建一个阴影选项对象。在新创建的对象中，模糊半径radius的默认值为0，阴影在x轴上的偏移量offsetX的默认值为0，阴影在y轴上的偏移量offsetY的默认值为0，阴影颜色color的默认值为0xFF000000，阴影类型type的默认值为ARKUI_SHADOW_TYPE_COLOR，是否用阴影填充组件内部isFill的默认值为false。当该对象不再使用时，请调用[OH_ArkUI_ShadowOptions_Destroy](#oh_arkui_shadowoptions_destroy)销毁。
 
 起始版本： 24
 
@@ -1874,13 +1874,13 @@ ArkUI_ErrorCode OH_ArkUI_ShadowOptions_SetRadius(OH_ArkUI_ShadowOptions* options
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_ArkUI_ShadowOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-oh-arkui-shadowoptions)* options | 指向[OH_ArkUI_ShadowOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-oh-arkui-shadowoptions)对象的指针。 |
-| float radius | 阴影的模糊半径，单位为vp。 |
+| float radius | 阴影的模糊半径，取值范围：(-∞, +∞)，单位为vp。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| [ArkUI_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) | 返回结果码。 若操作成功，返回[ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 若参数异常，返回[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
+| [ArkUI_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) | 返回结果码。 若操作成功，返回[ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 若options为空指针，返回[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)，请确保传入有效的阴影选项对象指针。 |
 
 #### [h2]OH_ArkUI_ShadowOptions_GetRadius()
 

@@ -2,8 +2,8 @@
 title: "oh_display_manager.h"
 upstream_id: "harmonyos-references/capi-oh-display-manager-h"
 catalog: "harmonyos-references"
-content_hash: "2518777800e6"
-synced_at: "2026-08-11T16:01:53.167217"
+content_hash: "653fb4d3d245"
+synced_at: "2026-08-29T18:15:42.715208"
 ---
 
 # oh_display_manager.h
@@ -362,7 +362,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_CreateDefaultDisplayCutou
 
 | 参数项 | 描述 |
 | --- | --- |
-| [NativeDisplayManager_CutoutInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-cutoutinfo) **cutoutInfo | 挖孔屏、刘海屏、瀑布屏等不可用屏幕区域信息，具体可见[NativeDisplayManager_CutoutInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-cutoutinfo)，此处作为出参返回。 |
+| [NativeDisplayManager_CutoutInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-cutoutinfo) **cutoutInfo | 挖孔屏、刘海屏、瀑布屏等不可用屏幕区域信息，具体可见[NativeDisplayManager_CutoutInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-cutoutinfo)，此处作为出参返回。使用完毕后需要调用[OH_NativeDisplayManager_DestroyDefaultDisplayCutoutInfo](#oh_nativedisplaymanager_destroydefaultdisplaycutoutinfo)释放资源。 |
 
 返回：
 
@@ -421,7 +421,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetFoldDisplayMode(Native
 
 起始版本： 12
 
-设备行为差异： 该接口在PC/2in1设备、非折叠设备中返回0，在其他设备中可正常调用。
+设备行为差异： 该接口在PC/2in1设备、非折叠设备中返回NativeDisplayManager_FoldDisplayMode.DISPLAY_MANAGER_FOLD_DISPLAY_MODE_UNKNOWN，在其他设备中可正常调用。
 
 参数：
 
@@ -578,7 +578,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_CreateAllDisplays(NativeD
 
 | 参数项 | 描述 |
 | --- | --- |
-| [NativeDisplayManager_DisplaysInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-displaysinfo) **allDisplays | 当前所有的屏幕信息，具体可见[NativeDisplayManager_DisplaysInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-displaysinfo)，此处作为出参返回。 |
+| [NativeDisplayManager_DisplaysInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-displaysinfo) **allDisplays | 当前所有的屏幕信息，具体可见[NativeDisplayManager_DisplaysInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-displaysinfo)，此处作为出参返回。使用完毕后需要调用[OH_NativeDisplayManager_DestroyAllDisplays](#oh_nativedisplaymanager_destroyalldisplays)释放资源。 |
 
 返回：
 
@@ -606,7 +606,7 @@ void OH_NativeDisplayManager_DestroyAllDisplays(NativeDisplayManager_DisplaysInf
 #### [h2]OH_NativeDisplayManager_CreateDisplayById()
 
 ```
-NativeDisplayManager_ErrorCode OH_NativeDisplayManager_CreateDisplayById(uint32_t displayId,NativeDisplayManager_DisplayInfo **displayInfo)
+NativeDisplayManager_ErrorCode OH_NativeDisplayManager_CreateDisplayById(uint32_t displayId, NativeDisplayManager_DisplayInfo **displayInfo)
 ```
  描述
 
@@ -619,7 +619,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_CreateDisplayById(uint32_
 | 参数项 | 描述 |
 | --- | --- |
 | uint32_t displayId | 指定屏幕的ID号，该值为非负整数。 |
-| [NativeDisplayManager_DisplayInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-displayinfo) **displayInfo | 指定的屏幕信息对象，具体可见[NativeDisplayManager_DisplayInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-displayinfo)，此处作为出参返回。 |
+| [NativeDisplayManager_DisplayInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-displayinfo) **displayInfo | 指定的屏幕信息对象，具体可见[NativeDisplayManager_DisplayInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-displayinfo)，此处作为出参返回。使用完毕后需要调用[OH_NativeDisplayManager_DestroyDisplay](#oh_nativedisplaymanager_destroydisplay)释放资源。 |
 
 返回：
 
@@ -698,7 +698,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_RegisterAvailableAreaChan
 设备行为差异：
 
 - 在搭载HarmonyOS 7.0.0及以上版本的设备上，该接口可正常调用。
-- 针对低于该版本的设备，该接口在PC/2in1设备、Tablet设备中可正常调用，在其他设备中不生效也不报错。
+- 针对HarmonyOS 7.0.0以下版本的设备，该接口在PC/2in1设备、Tablet设备中可正常调用，在其他设备中不生效也不报错。
 
 参数：
 
@@ -727,7 +727,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_UnregisterAvailableAreaCh
 设备行为差异：
 
 - 在搭载HarmonyOS 7.0.0及以上版本的设备上，该接口可正常调用。
-- 针对低于该版本的设备，该接口在PC/2in1设备、Tablet设备中可正常调用，在其他设备中不生效也不报错。
+- 针对HarmonyOS 7.0.0以下版本的设备，该接口在PC/2in1设备、Tablet设备中可正常调用，在其他设备中不生效也不报错。
 
 参数：
 
@@ -750,19 +750,21 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_CreateAvailableArea(uint6
 
 获取屏幕的可用区域。
 
+可用区域是扣除系统UI（如状态栏、Dock栏）后，可供应用程序自由使用的区域。
+
 起始版本： 20
 
 设备行为差异：
 
 - 在搭载HarmonyOS 7.0.0及以上版本的设备上，该接口可正常调用。
-- 针对低于该版本的设备，该接口在PC/2in1设备、Tablet设备中可正常调用；在其他设备中不可用，请通过[OH_NativeDisplayManager_GetDefaultDisplayWidth()](#oh_nativedisplaymanager_getdefaultdisplaywidth)、[OH_NativeDisplayManager_GetDefaultDisplayHeight()](#oh_nativedisplaymanager_getdefaultdisplayheight)获取当前设备屏幕的可用区域。
+- 针对HarmonyOS 7.0.0以下版本的设备，该接口在PC/2in1设备、Tablet设备中可正常调用；在其他设备中不可用，请通过[OH_NativeDisplayManager_GetDefaultDisplayWidth()](#oh_nativedisplaymanager_getdefaultdisplaywidth)、[OH_NativeDisplayManager_GetDefaultDisplayHeight()](#oh_nativedisplaymanager_getdefaultdisplayheight)获取当前设备屏幕的可用区域。
 
 参数：
 
 | 参数项 | 描述 |
 | --- | --- |
 | uint64_t displayId | 查询屏幕的ID号，非负整数。 |
-| [NativeDisplayManager_Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-rect) **availableArea | 屏幕可用区域，具体可见[NativeDisplayManager_Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-rect)，此处作为出参返回。 |
+| [NativeDisplayManager_Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-rect) **availableArea | 屏幕可用区域，具体可见[NativeDisplayManager_Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-rect)，此处作为出参返回。使用完毕后需要调用[OH_NativeDisplayManager_DestroyAvailableArea](#oh_nativedisplaymanager_destroyavailablearea)释放资源。 |
 
 返回：
 

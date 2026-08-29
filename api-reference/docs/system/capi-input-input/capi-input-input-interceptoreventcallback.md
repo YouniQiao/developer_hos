@@ -2,8 +2,8 @@
 title: "Input_InterceptorEventCallback"
 upstream_id: "harmonyos-references/capi-input-input-interceptoreventcallback"
 catalog: "harmonyos-references"
-content_hash: "2ea3818f88c1"
-synced_at: "2026-07-28T16:51:07.801687"
+content_hash: "9d95b407e7a7"
+synced_at: "2026-08-29T18:17:05.374438"
 ---
 
 # Input_InterceptorEventCallback
@@ -28,67 +28,6 @@ typedef struct Input_InterceptorEventCallback {...} Input_InterceptorEventCallba
 
 | 名称 | 描述 |
 | --- | --- |
-| [Input_MouseEventCallback](#input_mouseeventcallback) mouseCallback | 鼠标事件的回调函数。 |
-| [Input_TouchEventCallback](#input_toucheventcallback) touchCallback | 触屏输入事件的回调函数。 |
-| [Input_AxisEventCallback](#input_axiseventcallback) axisCallback | 轴事件的回调函数。 |
-
-#### [h2]成员函数
-
-| 名称 | typedef关键字 | 描述 |
-| --- | --- | --- |
-| [typedef void (*Input_MouseEventCallback)(const Input_MouseEvent* mouseEvent)](#input_mouseeventcallback) | Input_MouseEventCallback() | 鼠标事件的回调函数，mouseEvent的生命周期为回调函数内。 |
-| [typedef void (*Input_TouchEventCallback)(const Input_TouchEvent* touchEvent)](#input_toucheventcallback) | Input_TouchEventCallback() | 触屏输入事件的回调函数，touchEvent的生命周期为回调函数内。 |
-| [typedef void (*Input_AxisEventCallback)(const Input_AxisEvent* axisEvent)](#input_axiseventcallback) | Input_AxisEventCallback() | 轴事件的回调函数，axisEvent的生命周期为回调函数内。 |
-
-#### 成员函数说明
-
-#### [h2]Input_MouseEventCallback()
-
-```
-typedef void (*Input_MouseEventCallback)(const Input_MouseEvent* mouseEvent)
-```
- 描述
-
-鼠标事件的回调函数，mouseEvent的生命周期为回调函数内。
-
-起始版本： 12
-
-参数：
-
-| 参数项 | 描述 |
-| --- | --- |
-| const [Input_MouseEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-mouseevent)* mouseEvent | 鼠标事件对象。 |
-
-#### [h2]Input_TouchEventCallback()
-
-```
-typedef void (*Input_TouchEventCallback)(const Input_TouchEvent* touchEvent)
-```
- 描述
-
-触屏输入事件的回调函数，touchEvent的生命周期为回调函数内。
-
-起始版本： 12
-
-参数：
-
-| 参数项 | 描述 |
-| --- | --- |
-| const [Input_TouchEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-touchevent)* touchEvent | 触屏输入事件对象。 |
-
-#### [h2]Input_AxisEventCallback()
-
-```
-typedef void (*Input_AxisEventCallback)(const Input_AxisEvent* axisEvent)
-```
- 描述
-
-轴事件的回调函数，axisEvent的生命周期为回调函数内。
-
-起始版本： 12
-
-参数：
-
-| 参数项 | 描述 |
-| --- | --- |
-| const [Input_AxisEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-axisevent)* axisEvent | 轴事件对象。 |
+| [Input_MouseEventCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-input-manager-h#input_mouseeventcallback) mouseCallback | 鼠标事件的回调函数。 |
+| [Input_TouchEventCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-input-manager-h#input_toucheventcallback) touchCallback | 触屏输入事件的回调函数。 |
+| [Input_AxisEventCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-input-manager-h#input_axiseventcallback) axisCallback | 轴事件的回调函数。 |

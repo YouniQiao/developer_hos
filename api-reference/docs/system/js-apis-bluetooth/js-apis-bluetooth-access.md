@@ -2,8 +2,8 @@
 title: "@ohos.bluetooth.access (蓝牙access模块)"
 upstream_id: "harmonyos-references/js-apis-bluetooth-access"
 catalog: "harmonyos-references"
-content_hash: "4c9ecfd4cc07"
-synced_at: "2026-07-28T16:50:35.738148"
+content_hash: "5d79366c9973"
+synced_at: "2026-08-29T18:16:36.095416"
 ---
 
 # @ohos.bluetooth.access (蓝牙access模块)
@@ -204,6 +204,10 @@ getState(): BluetoothState
 
 获取蓝牙开关状态。
 
+需要权限：
+
+- API版本10-12：ohos.permission.ACCESS_BLUETOOTH
+
 元服务API：从API version 11开始，该接口支持在元服务中使用。
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
@@ -242,6 +246,10 @@ try {
 on(type: 'stateChange', callback: Callback<BluetoothState>): void
 
 订阅本端蓝牙开关状态变化事件。使用Callback异步回调。从API18开始不再校验ohos.permission.ACCESS_BLUETOOTH权限。
+
+需要权限：
+
+- API版本10-17：ohos.permission.ACCESS_BLUETOOTH
 
 元服务API：从API version 12开始，该接口支持在元服务中使用。
 
@@ -285,6 +293,10 @@ try {
 off(type: 'stateChange', callback?: Callback<BluetoothState>): void
 
 取消订阅本端蓝牙开关状态变化事件。从API18开始不再校验ohos.permission.ACCESS_BLUETOOTH权限。
+
+需要权限：
+
+- API版本10-17：ohos.permission.ACCESS_BLUETOOTH
 
 元服务API：从API version 12开始，该接口支持在元服务中使用。
 

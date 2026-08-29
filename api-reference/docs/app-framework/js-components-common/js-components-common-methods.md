@@ -2,8 +2,8 @@
 title: "通用方法"
 upstream_id: "harmonyos-references/js-components-common-methods"
 catalog: "harmonyos-references"
-content_hash: "b0a45586d641"
-synced_at: "2026-07-09T00:58:19.621170"
+content_hash: "d1e53c2ecb0b"
+synced_at: "2026-08-29T18:15:27.296886"
 ---
 
 # 通用方法
@@ -16,7 +16,7 @@ synced_at: "2026-07-09T00:58:19.621170"
 
 animate( keyframes: Keyframes, options: Options)：void
 
-设置动画样式和动画属性的对象列表。
+通过传入关键帧样式和动画参数，在组件上创建动画效果，返回animation对象用于控制动画的播放、暂停等操作。
 
 参数：
 
@@ -41,7 +41,7 @@ animate( keyframes: Keyframes, options: Options)：void
 | opacity | number | 1 | 设置到组件上的透明度，取值范围在0到1之间。 |
 | backgroundPosition | string | - | 格式为"x y"，单位为百分号或者px。 第一个值是水平位置，第二个值是垂直位置。 如果仅规定了一个值，另一个值为 50%。 |
 | transformOrigin | string | 'center center' | 变换对象的中心点。 第一个参数表示x轴的值，可以设置为left、center、right、长度值或百分比值。 第二个参数表示y轴的值，可以设置为top、center、bottom、长度值或百分比值。 |
-| transform | [Transform](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-common-animation) | - | 设置到变换对象上的类型。 |
+| transform | [Transform](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-common-animation#属性) | - | 设置到变换对象上的类型。 |
 | offset | number | - | - offset值（如果提供）必须在0.0到1.0（含）之间，并以升序排列。 - 若仅有两帧，offset参数可省略。 - 若超过两帧，offset必填。 |
 
 表3 Options说明
@@ -64,7 +64,7 @@ animate( keyframes: Keyframes, options: Options)：void
 | ease-out | 动画速度先快后慢，cubic-bezier(0.0, 0.0, 0.58, 1.0)。 |
 | ease-in-out | 动画先加速后减速，cubic-bezier(0.42, 0.0, 0.58, 1.0)。 |
 | friction | 阻尼曲线，cubic-bezier(0.2, 0.0, 0.2, 1.0)。 |
-| extreme-deceleration | 急缓曲线，cubic-bezier(0.0, 0.0, 0.0, 1.0)。 |
+| extreme-deceleration | 极缓曲线，cubic-bezier(0.0, 0.0, 0.0, 1.0)。 |
 | sharp | 锐利曲线，cubic-bezier(0.33, 0.0, 0.67, 1.0)。 |
 | rhythm | 节奏曲线，cubic-bezier(0.7, 0.0, 0.2, 1.0)。 |
 | smooth | 平滑曲线，cubic-bezier(0.4, 0.0, 0.4, 1.0)。 |
@@ -106,7 +106,7 @@ animation对象事件：
 ```
 <!-- xxx.hml -->
 <div class="container">
-  <div id="idName" class="box"></div>
+  <div id="animBox" class="box"></div>
   <div class="buttonBox">
     <button @click="start">
       start
@@ -178,7 +178,7 @@ export default {
     },
 
     start() {
-        this.animation = this.$element('idName').animate(this.frames, this.options);
+        this.animation = this.$element('animBox').animate(this.frames, this.options);
         this.animation.play();
     },
     cancel() {
@@ -186,7 +186,7 @@ export default {
     }
 }
 ```
- ![](./img/zh-cn_image_0000002661613053.gif)
+ ![](./img/zh-cn_image_0000002731359435.gif)
 
 #### getBoundingClientRect
 
@@ -217,7 +217,7 @@ console.info(`current element position is ${rect.left}, ${rect.top}`);
 
 createIntersectionObserver(param?: ObserverParam): Observer
 
-监听元素在当前页面的可见范围。
+创建一个交叉观察器，通过设置阈值，监听元素在当前页面可见区域与交叉区域的比例变化。
 
 参数：
 

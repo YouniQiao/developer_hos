@@ -2,8 +2,8 @@
 title: "栅格设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-grid"
 catalog: "harmonyos-references"
-content_hash: "c69f2643326e"
-synced_at: "2026-07-28T16:48:54.875731"
+content_hash: "e61953807b5b"
+synced_at: "2026-08-29T18:15:26.363374"
 ---
 
 # 栅格设置
@@ -23,7 +23,7 @@ synced_at: "2026-07-28T16:48:54.875731"
 
 | 名称 | 参数类型 | 描述 |
 | --- | --- | --- |
-| useSizeType(deprecated) | { xs?: number | { span: number, offset: number }, sm?: number | { span: number, offset: number }, md?: number | { span: number, offset: number }, lg?: number | { span: number, offset: number } } | 设置在特定设备宽度类型下的占用列数和偏移列数，span：占用列数（需为非负整数）；offset：偏移列数。 当值为number类型时，仅设置列数，当格式如{"span": 1, "offset": 0}时，指同时设置占用列数与偏移列数。 - xs：指设备宽度类型为SizeType.XS（ 本示例展示的是已废弃接口的用法。建议使用新组件[GridCol](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-gridcol)、[GridRow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-gridrow)来实现栅格布局。
+| useSizeType(deprecated) | { xs?: number | { span: number, offset: number }, sm?: number | { span: number, offset: number }, md?: number | { span: number, offset: number }, lg?: number | { span: number, offset: number } } | 设置在特定设备宽度类型下的占用列数和偏移列数，span：占用列数（需为非负整数）。传入负数或超出GridContainer总列数时，使用默认值；offset：偏移列数（需为非负整数）。传入负数时，使用默认值0。 当值为number类型时，仅设置列数，当格式如{"span": 1, "offset": 0}时，指同时设置占用列数与偏移列数。 - xs：指设备宽度类型为SizeType.XS（ 本示例展示的是已废弃接口的用法。建议使用新组件[GridCol](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-gridcol)、[GridRow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-gridrow)来实现栅格布局。
 
 ```
 // xxx.ets
@@ -105,16 +105,16 @@ struct GridContainerExample1 {
 ```
  图1 设备宽度为SM
 
-![](./img/zh-cn_image_0000002686088505.png)
+![](./img/zh-cn_image_0000002731359431.png)
 
 图2 设备宽度为MD
 
-![](./img/zh-cn_image_0000002685928675.png)
+![](./img/zh-cn_image_0000002701800126.png)
 
 图3 设备宽度为LG
 
-![](./img/zh-cn_image_0000002656008996.png)
+![](./img/zh-cn_image_0000002731519413.png)
 
 图4 单独设置gridSpan和gridOffset在特定屏幕大小下的效果与useSizeType效果一致
 
-![](./img/zh-cn_image_0000002655849076.png)
+![](./img/zh-cn_image_0000002701640216.png)

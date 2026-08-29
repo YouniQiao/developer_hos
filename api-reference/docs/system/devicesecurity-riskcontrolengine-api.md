@@ -2,8 +2,8 @@
 title: "RiskControlEngine（星盾机密风控引擎）"
 upstream_id: "harmonyos-references/devicesecurity-riskcontrolengine-api"
 catalog: "harmonyos-references"
-content_hash: "61cb34d3640c"
-synced_at: "2026-08-07T15:57:44.910126"
+content_hash: "5029ab2bee28"
+synced_at: "2026-08-29T18:16:26.579647"
 ---
 
 # RiskControlEngine（星盾机密风控引擎）
@@ -135,7 +135,7 @@ importRiskFactors(data: ImportData): Promise<void>
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-riskcontrolengine)。
+以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-riskcontrolengine)。
 
 | **错误码ID** | **错误信息** |
 | --- | --- |
@@ -155,7 +155,7 @@ import { hilog } from '@kit.PerformanceAnalysisKit';
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 import { util } from '@kit.ArkTS';
 
-const TAG = 'riskControlEngineJsTest';
+const TAG = "riskControlEngineJsTest";
 
 let rand = cryptoFramework.createRandom();
 let len = 32;
@@ -164,8 +164,8 @@ let base64 = new util.Base64Helper();
 // 导入应用风险因子数据
 let data: riskControlEngine.ImportData = {
   appFactorData: [
-    { factorName: 'factor_1', factorValue: 3600 },
-    { factorName: 'factor_2', factorValue: false }
+    { factorName: "factor_1", factorValue: 3600 },
+    { factorName: "factor_2", factorValue: false }
   ],
   nonce: base64.encodeToStringSync(randData.data) // 16-66字节随机数
 };
@@ -209,7 +209,7 @@ getRiskControlResult(req: RiskControlDetectionRequest): Promise<RiskControlDetec
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-riskcontrolengine)。
+以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-devicesecurity-riskcontrolengine)。
 
 | **错误码ID** | **错误信息** |
 | --- | --- |
@@ -229,7 +229,7 @@ import { hilog } from '@kit.PerformanceAnalysisKit';
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 import { util } from '@kit.ArkTS';
 
-const TAG = 'riskControlEngineJsTest';
+const TAG = "riskControlEngineJsTest";
 
 let rand = cryptoFramework.createRandom();
 let len = 32;
@@ -237,18 +237,18 @@ let randData = rand.generateRandomSync(len);
 let base64 = new util.Base64Helper();
 
 const request: riskControlEngine.RiskControlDetectionRequest = {
-  policyName: 'Policy_1001', // 风险策略
+  policyName: "Policy_1001", // 风险策略
   nonce: base64.encodeToStringSync(randData.data) // 16-66字节随机数
 };
 
 try {
-  hilog.info(0x0000, TAG, 'Getting risk control score begin.');
+  hilog.info(0x0000, TAG, 'Getting risk control result begin.');
   const response: riskControlEngine.RiskControlDetectionResponse =
     await riskControlEngine.getRiskControlResult(request);
   // 结果格式为JSON Web Signature (JWS)，需按规范解析验证
-  hilog.info(0x0000, TAG, 'Risk control score result: %{public}s', response.result);
+  hilog.info(0x0000, TAG, 'Risk control result: %{public}s', response.result);
 } catch (err) {
   const e: BusinessError = err as BusinessError;
-  hilog.error(0x0000, TAG, 'GetRiskControlScore failed: %{public}d %{public}s', e.code, e.message);
+  hilog.error(0x0000, TAG, 'Get risk control result failed: %{public}d %{public}s', e.code, e.message);
 }
 ```

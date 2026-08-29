@@ -2,8 +2,8 @@
 title: "GridItem"
 upstream_id: "harmonyos-references/ts-container-griditem"
 catalog: "harmonyos-references"
-content_hash: "97b36ce7af89"
-synced_at: "2026-07-28T16:43:27.932558"
+content_hash: "65134716bedd"
+synced_at: "2026-08-29T18:13:22.518677"
 ---
 
 # GridItem
@@ -279,7 +279,7 @@ struct GridItemExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008424.gif)
+ ![](./img/zh-cn_image_0000002731518839.gif)
 
 #### [h2]示例2（设置GridItem样式）
 
@@ -316,7 +316,7 @@ struct GridItemExample {
       .width('60%')
       .backgroundColor(0xFAEEE0)
       .height(150)
-      .padding('4vp')
+      .padding(4)
 
       Grid() {
         ForEach(this.numbers, (rowItem: string) => {
@@ -340,9 +340,9 @@ struct GridItemExample {
       .width('60%')
       .backgroundColor(0xFAEEE0)
       .height(150)
-      .padding('4vp')
+      .padding(4)
     }.width('100%').margin({ top: 5 })
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848504.png)
+ ![](./img/zh-cn_image_0000002701639640.png)

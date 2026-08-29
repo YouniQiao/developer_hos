@@ -2,8 +2,8 @@
 title: "@hms.enterpriseSpaceService.spaceManager(空间管理)"
 upstream_id: "harmonyos-references/enterprisespace-spacemanager"
 catalog: "harmonyos-references"
-content_hash: "f0c9a5249771"
-synced_at: "2026-07-28T16:52:36.534317"
+content_hash: "4ba035d7e907"
+synced_at: "2026-08-29T18:18:14.457876"
 ---
 
 # @hms.enterpriseSpaceService.spaceManager(空间管理)
@@ -18,7 +18,17 @@ synced_at: "2026-07-28T16:52:36.534317"
 import { spaceManager } from '@kit.EnterpriseSpaceKit';
 ```
 
-#### CreateWorkspaceParams
+#### spaceManager
+
+空间管理服务的实例，提供统一的空间管理能力。
+
+起始版本： 6.0.0(20)
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.EnterpriseSpace.ServiceManage
+
+#### [h2]CreateWorkspaceParams
 
 创建工作空间参数。
 
@@ -32,7 +42,7 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 | --- | --- | --- | --- | --- |
 | shortName | string | 否 | 否 | 工作空间的本地简称，默认值与[WorkspaceInfo](#workspaceinfo)下的localName一致。 |
 
-#### WorkspaceDomainInfo
+#### [h2]WorkspaceDomainInfo
 
 工作空间域账号信息。
 
@@ -51,7 +61,7 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 | serverConfigId | string | 否 | 是 | 工作空间所属域的服务器配置标识符。由创建空间时系统自动生成的，仅在工作空间认证后有值，例如“xx:test.com”，否则其值为空。 |
 | enterpriseWorkspaceName | string | 否 | 是 | 工作空间名称，企业设备在某个空间下的标签属性，默认值为空。例如，该名称在企业空间为“XXX”。 **起始版本**：6.0.2(22) |
 
-#### WorkspaceInfo
+#### [h2]WorkspaceInfo
 
 工作空间信息。
 
@@ -76,7 +86,7 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 | isAllowedToBeDeleted | boolean | 否 | 否 | 工作空间是否允许被删除。 - true：允许被删除 - false：不允许被删除 默认值为true。 |
 | domainInfo | [WorkspaceDomainInfo](#workspacedomaininfo) | 否 | 否 | 工作空间域信息，具体可参见[WorkspaceDomainInfo](#workspacedomaininfo)。 |
 
-#### ProcessConfigInfo
+#### [h2]ProcessConfigInfo
 
 进程无法访问的路径信息。
 
@@ -91,7 +101,7 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 | processName | string | 否 | 否 | 系统服务进程的名称。 |
 | disallowPaths | string[] | 否 | 否 | 不可访问的路径列表，列表只能包含如下列表的子集：['/data/service','/data/app','/storage','/mnt'] |
 
-#### WorkspaceType
+#### [h2]WorkspaceType
 
 工作空间类型的枚举。
 
@@ -105,7 +115,7 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 | --- | --- | --- |
 | ADMIN | 0 | 管理员工作空间，具有管理其他工作空间的权限。 |
 
-#### QueryType
+#### [h2]QueryType
 
 工作空间查询类型的枚举。
 
@@ -120,7 +130,7 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 | ALL | 0 | 查询所有的工作空间。 |
 | NON_DELETABLE | 1 | 查询不允许被删除的工作空间。 |
 
-#### EventType
+#### [h2]EventType
 
 订阅事件类型的枚举。
 
@@ -134,7 +144,7 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 | --- | --- | --- |
 | EVENT_WORKSPACE_SWITCHED | 0 | 工作空间切换事件。 |
 
-#### UserDataEnum
+#### [h2]UserDataEnum
 
 工作空间类型的枚举。
 
@@ -149,7 +159,7 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 | ENTERPRISE | 0 | 表示企业空间。 |
 | PERSONAL | 1 | 表示个人空间。 |
 
-#### EventData
+#### [h2]EventData
 
 工作空间事件信息。
 
@@ -164,7 +174,7 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 | event | [EventType](#eventtype) | 否 | 否 | 事件类型，取值可参见[EventType](#eventtype)。 |
 | currentWorkspaceId | number | 否 | 是 | 当前工作空间ID，例如101、102。 |
 
-#### LockdownModePolicy
+#### [h2]LockdownModePolicy
 
 锁定模式策略类型的枚举，包括后台应用冻结和公共目录加解密等安全加固功能，提供开关，关闭或者效率模式。
 
@@ -179,7 +189,7 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 | OFF | 0 | 关闭。关闭后不支持后台应用冻结和公共数据目录加解密。 |
 | EFFICIENT | 1 | 效率模式。支持后台应用冻结和公共数据目录加解密。 |
 
-#### SpaceGuidePolicy
+#### [h2]SpaceGuidePolicy
 
 个人空间创建引导页展示策略的枚举。
 
@@ -194,7 +204,7 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 | SHOW | 0 | 展示个人空间创建页引导页。 |
 | HIDE | 1 | 隐藏个人空间创建页引导页。 |
 
-#### AuthResult
+#### [h2]AuthResult
 
 企业认证结果。
 
@@ -209,7 +219,7 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 | result | number | 否 | 否 | 认证结果，0代表成功，其他代表失败。 |
 | workspaceId | number | 否 | 否 | 当前调用方的工作空间ID。 |
 
-#### StatusBarIcon
+#### [h2]StatusBarIcon
 
 状态栏中的工作空间图标。
 
@@ -224,7 +234,7 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 | white | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 否 | 否 | 深色背景下图标，样式设计[参考设计规范](https://developer.huawei.com/consumer/cn/doc/design-guides/statusbar-0000002319710910#section13803824112416)。 |
 | black | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 否 | 否 | 浅色背景下图标，样式设计[参考设计规范](https://developer.huawei.com/consumer/cn/doc/design-guides/statusbar-0000002319710910#section13803824112416)。 |
 
-#### NotificationVisibilitySwitch
+#### [h2]NotificationVisibilitySwitch
 
 跨空间通知内容可见性的状态枚举。
 
@@ -239,7 +249,7 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 | NOTIFICATION_HIDDEN | 0 | 隐藏跨空间消息提醒。 |
 | NOTIFICATION_VISIBLE | 1 | 展示跨空间消息提醒。 |
 
-#### NotificationSwitch
+#### [h2]NotificationSwitch
 
 跨空间通知的开关状态枚举。
 
@@ -254,7 +264,7 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 | ON | 0 | 开启跨空间消息提醒。 |
 | OFF | 1 | 关闭跨空间消息提醒。 |
 
-#### NotificationVisibilityControl
+#### [h2]NotificationVisibilityControl
 
 跨空间通知内容可见性的控制类型枚举。
 
@@ -269,7 +279,7 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 | ALLOW_CHANGE | 0 | 允许修改跨空间消息提醒可见性开关状态。 |
 | DISALLOW_CHANGE | 1 | 不允许修改跨空间消息提醒可见性开关状态。 |
 
-#### NotificationConfig
+#### [h2]NotificationConfig
 
 应用跨空间通知的配置信息。
 
@@ -287,7 +297,7 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 | visibilityState | [NotificationVisibilitySwitch](#notificationvisibilityswitch) | 否 | 是 | 跨空间消息提醒可见性开关状态，取值可参见[NotificationVisibilitySwitch](#notificationvisibilityswitch)。默认值为NOTIFICATION_HIDDEN。 |
 | allowVisibilityChange | [NotificationVisibilityControl](#notificationvisibilitycontrol) | 否 | 是 | 跨空间消息提醒可见性控制开关状态，取值可参见[NotificationVisibilityControl](#notificationvisibilitycontrol)。默认值为ALLOW_CHANGE。 |
 
-#### createWorkspace
+#### [h2]createWorkspace
 
 createWorkspace(localName: string, workspaceType: WorkspaceType, params?: CreateWorkspaceParams): Promise<WorkspaceInfo>
 
@@ -349,7 +359,7 @@ const workspaceInfo: spaceManager.WorkspaceInfo = await spaceManager.createWorks
 console.info(`Succeeded in creating workspace. workspaceInfo: ${JSON.stringify(workspaceInfo)}`);
 ```
 
-#### enableWorkspace
+#### [h2]enableWorkspace
 
 enableWorkspace(enable: boolean): Promise<void>
 
@@ -403,7 +413,7 @@ await spaceManager.enableWorkspace(enable);
 console.info(`Succeeded in enabling workspace.`);
 ```
 
-#### queryWorkspace
+#### [h2]queryWorkspace
 
 queryWorkspace(queryFlag: QueryType): Promise<WorkspaceInfo[]>
 
@@ -450,11 +460,13 @@ const spaces: spaceManager.WorkspaceInfo[] = await spaceManager.queryWorkspace(q
 console.info(`Succeeded in querying workspace. spaces: ${JSON.stringify(spaces)}`);
 ```
 
-#### removeWorkspace
+#### [h2]removeWorkspace
 
 removeWorkspace(workspaceId: number): Promise<void>
 
 移除工作空间。使用Promise异步回调。
+
+![](./img/note_3.0-zh-cn.png) 工作空间ID为100的首空间不支持移除，其余空间可正常移除。
 
 起始版本： 6.0.0(20)
 
@@ -499,7 +511,7 @@ await spaceManager.removeWorkspace(workspaceId);
 console.info(`Succeeded in removing workspace.`);
 ```
 
-#### setWorkspaceInfo
+#### [h2]setWorkspaceInfo
 
 setWorkspaceInfo(workspaceId: number, domainInfo: WorkspaceDomainInfo): Promise<void>
 
@@ -558,7 +570,7 @@ await spaceManager.setWorkspaceInfo(workspaceId, domainInfo);
 console.info(`Succeeded in setting workspace info.`);
 ```
 
-#### setWorkspaceProfilePhoto
+#### [h2]setWorkspaceProfilePhoto
 
 setWorkspaceProfilePhoto(workspaceId: number, photo: string): Promise<void>
 
@@ -613,7 +625,7 @@ try {
 }
 ```
 
-#### subscribeEvent
+#### [h2]subscribeEvent
 
 subscribeEvent(eventId: EventType[], callback: AsyncCallback<EventData>): number
 
@@ -670,7 +682,7 @@ const subscribeId = spaceManager.subscribeEvent([spaceManager.EventType.EVENT_WO
 console.info(`Succeeded in subscribing event. subscribeId: ${subscribeId}`);
 ```
 
-#### unsubscribeEvent
+#### [h2]unsubscribeEvent
 
 unsubscribeEvent(subscribeId: number): void
 
@@ -712,7 +724,7 @@ spaceManager.unsubscribeEvent(subscribeId);
 console.info(`Succeeded in unsubscribing event.`);
 ```
 
-#### setRestrictedAccessBackgroundUserdata
+#### [h2]setRestrictedAccessBackgroundUserdata
 
 setRestrictedAccessBackgroundUserdata(userData: UserDataEnum, enable: boolean): Promise<void>
 
@@ -762,7 +774,7 @@ await spaceManager.setRestrictedAccessBackgroundUserdata(userData, enable);
 console.info(`Succeeded in setting restricted access background user data.`);
 ```
 
-#### getRestrictedAccessBackgroundUserdataStatus
+#### [h2]getRestrictedAccessBackgroundUserdataStatus
 
 getRestrictedAccessBackgroundUserdataStatus(userData: UserDataEnum): Promise<boolean>
 
@@ -810,7 +822,7 @@ const status: boolean = await spaceManager.getRestrictedAccessBackgroundUserdata
 console.info(`Succeeded in getting restricted access background user data status. status: ${status}`);
 ```
 
-#### getRestrictedAccessBackgroundUserdataProcessList
+#### [h2]getRestrictedAccessBackgroundUserdataProcessList
 
 getRestrictedAccessBackgroundUserdataProcessList(userData: UserDataEnum): Promise<ProcessConfigInfo[]>
 
@@ -862,7 +874,7 @@ try {
 }
 ```
 
-#### addRestrictedAccessBackgroundUserdataProcessList
+#### [h2]addRestrictedAccessBackgroundUserdataProcessList
 
 addRestrictedAccessBackgroundUserdataProcessList(userData: UserDataEnum, processName: string, disallowPaths?: string[]): Promise<void>
 
@@ -918,7 +930,7 @@ try {
 }
 ```
 
-#### deleteRestrictedAccessBackgroundUserdataProcessList
+#### [h2]deleteRestrictedAccessBackgroundUserdataProcessList
 
 deleteRestrictedAccessBackgroundUserdataProcessList(userData: UserDataEnum, processName: string): Promise<void>
 
@@ -972,7 +984,7 @@ try {
 }
 ```
 
-#### setWorkspacePolicy
+#### [h2]setWorkspacePolicy
 
 setWorkspacePolicy(key: string, value: number, workspaceId?: number): Promise<void>
 
@@ -1023,7 +1035,7 @@ await spaceManager.setWorkspacePolicy(key, value, workspaceId);
 console.info(`Succeeded in setting workspace policy.`);
 ```
 
-#### getWorkspacePolicy
+#### [h2]getWorkspacePolicy
 
 getWorkspacePolicy(key: string, workspaceId?: number): Promise<number>
 
@@ -1073,7 +1085,7 @@ const value: number = await spaceManager.getWorkspacePolicy(key, workspaceId);
 console.info(`Succeeded in getting workspace policy. value: ${value}`);
 ```
 
-#### setLockdownExemptionApps
+#### [h2]setLockdownExemptionApps
 
 setLockdownExemptionApps(appIds: string[], workspaceId?: number): Promise<void>
 
@@ -1091,7 +1103,7 @@ setLockdownExemptionApps(appIds: string[], workspaceId?: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| appIds | string[] | 是 | 表示属于深度冻结豁免名单的应用ID数组。列表，例如“['com.example.test1', 'com.example.test2']”。详情信息可参考[什么是appId](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appid)。 |
+| appIds | string[] | 是 | 表示属于深度冻结豁免名单的应用ID数组。列表，例如“['com.example.test1_BN************', 'com.example.test2_BN************']”。详情信息可参考[什么是appId](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appid)。 |
 | workspaceId | number | 否 | 表示工作空间ID。首个空间ID为100，后续创建的工作空间ID逐一递增，例如101、102。如果未设置，则默认使用调用者所在的工作空间ID。取值应为[100,10736]内的整数。 |
 
 返回值：
@@ -1119,14 +1131,14 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 
 const workspaceId: number = 100;
 const appIds = [
-  'com.example.enterprisespacekit_samplecode_clientdemo_arkts1',
-  'com.example.enterprisespacekit_samplecode_clientdemo_arkts2'
+  'com.example.test1_BN************',
+  'com.example.test2_BN************'
 ];
 await spaceManager.setLockdownExemptionApps(appIds, workspaceId);
 console.info(`Succeeded in setting lockdown exemption apps.`);
 ```
 
-#### getLockdownExemptionApps
+#### [h2]getLockdownExemptionApps
 
 getLockdownExemptionApps(workspaceId?: number): Promise<string[]>
 
@@ -1174,7 +1186,7 @@ const apps: string[] = await spaceManager.getLockdownExemptionApps(workspaceId);
 console.info(`Succeeded in getting lockdown exemption apps. apps: ${JSON.stringify(apps)}`);
 ```
 
-#### authenticate
+#### [h2]authenticate
 
 authenticate(enterpriseAuthInfo: WorkspaceDomainInfo, credential: Uint8Array): Promise<AuthResult>
 
@@ -1235,7 +1247,7 @@ try {
 }
 ```
 
-#### getAccessToken
+#### [h2]getAccessToken
 
 getAccessToken(businessParams: Record<string, string>): Promise<Uint8Array>
 
@@ -1291,7 +1303,7 @@ try {
 }
 ```
 
-#### setWorkspaceStatusBarIcon
+#### [h2]setWorkspaceStatusBarIcon
 
 setWorkspaceStatusBarIcon(icon: StatusBarIcon, workspaceId?: number): Promise<void>
 
@@ -1347,13 +1359,13 @@ struct Index {
     const context = this.getUIContext().getHostContext() as common.UIAbilityContext;
     const resourceMgr: resourceManager.ResourceManager = context.resourceManager;
 
-    // 创建white pixelMap，需在资源rawfile文件夹中预置HuaweiWhite.jpg图片
-    const whiteFileData = await resourceMgr.getRawFd('HuaweiWhite.jpg');
+    // 创建white pixelMap，需在资源rawfile文件夹中预置CustomWhite.jpg图片
+    const whiteFileData = await resourceMgr.getRawFd('CustomWhite.jpg');
     const whiteImageSource: image.ImageSource = image.createImageSource(whiteFileData);
     const whitePixelMap: image.PixelMap = await whiteImageSource.createPixelMap();
 
-    // 创建black pixelMap，需在资源rawfile文件夹中预置HuaweiBlack.jpg图片
-    const blackFileData = await resourceMgr.getRawFd('HuaweiBlack.jpg');
+    // 创建black pixelMap，需在资源rawfile文件夹中预置CustomBlack.jpg图片
+    const blackFileData = await resourceMgr.getRawFd('CustomBlack.jpg');
     const blackImageSource: image.ImageSource = image.createImageSource(blackFileData);
     const blackPixelMap: image.PixelMap = await blackImageSource.createPixelMap();
 
@@ -1376,7 +1388,7 @@ struct Index {
 }
 ```
 
-#### setWorkspaceLocalName
+#### [h2]setWorkspaceLocalName
 
 setWorkspaceLocalName(localName: string, workspaceId?: number): Promise<void>
 
@@ -1427,7 +1439,7 @@ await spaceManager.setWorkspaceLocalName(localName, workspaceId);
 console.info(`Succeeded in setting workspace local name.`);
 ```
 
-#### isEnterpriseWorkspaceEnabled
+#### [h2]isEnterpriseWorkspaceEnabled
 
 isEnterpriseWorkspaceEnabled(): Promise<boolean>
 
@@ -1466,7 +1478,7 @@ const status = await spaceManager.isEnterpriseWorkspaceEnabled();
 console.info(`Succeeded in getting space enable. status: ${status}`);
 ```
 
-#### isEnterpriseWorkspace
+#### [h2]isEnterpriseWorkspace
 
 isEnterpriseWorkspace(workspaceId?: number): Promise<boolean>
 
@@ -1515,7 +1527,7 @@ const isEnterprise = await spaceManager.isEnterpriseWorkspace(workspaceId);
 console.info(`Succeeded in getting enterprise space. isEnterprise: ${isEnterprise}`);
 ```
 
-#### switchWorkspace
+#### [h2]switchWorkspace
 
 switchWorkspace(workspaceId?: number): Promise<void>
 
@@ -1566,7 +1578,7 @@ await spaceManager.switchWorkspace(workspaceId);
 console.info(`Succeeded in switching workspace.`);
 ```
 
-#### setNotificationConfig
+#### [h2]setNotificationConfig
 
 setNotificationConfig(configs: NotificationConfig[]): Promise<void>
 
@@ -1613,7 +1625,7 @@ import { spaceManager } from '@kit.EnterpriseSpaceKit';
 const configs: spaceManager.NotificationConfig[] = [
   {
     workspaceId: 100,
-    appIdentifier: 'com.example.app',
+    appIdentifier: '691867************',
     notificationState: spaceManager.NotificationSwitch.ON,
     visibilityState: spaceManager.NotificationVisibilitySwitch.NOTIFICATION_VISIBLE,
     allowVisibilityChange: spaceManager.NotificationVisibilityControl.ALLOW_CHANGE
@@ -1623,7 +1635,7 @@ await spaceManager.setNotificationConfig(configs);
 console.info(`Succeeded in setting notification config.`);
 ```
 
-#### getNotificationConfig
+#### [h2]getNotificationConfig
 
 getNotificationConfig(): Promise<NotificationConfig[]>
 

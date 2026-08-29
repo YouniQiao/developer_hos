@@ -2,8 +2,8 @@
 title: "@ohos.ability.ability (Ability模块)"
 upstream_id: "harmonyos-references/js-apis-ability-ability"
 catalog: "harmonyos-references"
-content_hash: "64a875cc1e31"
-synced_at: "2026-07-28T16:40:34.933725"
+content_hash: "558838ae9fe0"
+synced_at: "2026-08-29T18:11:59.210356"
 ---
 
 # @ohos.ability.ability (Ability模块)
@@ -40,7 +40,9 @@ PacMap二级模块。
 
 系统能力：SystemCapability.Ability.AbilityRuntime.FAModel
 
-模型约束：此接口仅可在FA模型下使用。
+模型约束：
+
+API版本9-10：此接口仅可在FA模型下使用。
 
 | 类型 | 说明 |
 | --- | --- |

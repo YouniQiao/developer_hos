@@ -2,8 +2,8 @@
 title: "Enums"
 upstream_id: "harmonyos-references/arkts-apis-window-e"
 catalog: "harmonyos-references"
-content_hash: "100e6d5cd04c"
-synced_at: "2026-07-28T16:41:44.756162"
+content_hash: "e17b1e7826a8"
+synced_at: "2026-08-29T18:12:37.406528"
 ---
 
 # Enums
@@ -26,6 +26,20 @@ synced_at: "2026-07-28T16:41:44.756162"
 | TYPE_FLOAT9+ | 8 | 表示全局悬浮窗。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | TYPE_DIALOG10+ | 16 | 表示模态窗口。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | TYPE_MAIN18+ | 32 | 表示应用主窗口。 此窗口类型不支持在创建窗口时使用。 |
+
+#### WindowPostureMode
+
+窗口姿态模式枚举。
+
+系统能力： SystemCapability.Window.SessionManager
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| DESKTOP_MODE | 0 | 桌面模式。当满足以下条件时处于桌面模式： 1. 当前设备折叠状态为半折叠状态（[FoldStatus.FOLD_STATUS_HALF_FOLDED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#foldstatus10)）； 2. 窗口所在屏幕通过[getLiveCreaseRegion()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#getlivecreaseregion20)获取的creaseRects宽度大于高度； 3. 窗口模式为全屏模式（[WindowStatusType.FULL_SCREEN](#windowstatustype11)）或最大化模式（[WindowStatusType.MAXIMIZE](#windowstatustype11)）。 4. 屏幕折痕区域位于窗口显示区域内。 |
 
 #### AvoidAreaType7+
 
@@ -79,7 +93,7 @@ synced_at: "2026-07-28T16:41:44.756162"
 | LANDSCAPE_INVERTED | 4 | 表示反向横屏显示模式。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | AUTO_ROTATION | 5 | 跟随传感器自动旋转，可以旋转到竖屏、横屏、反向竖屏、反向横屏四个方向，且不受控制中心的旋转开关控制。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | AUTO_ROTATION_PORTRAIT | 6 | 跟随传感器自动竖向旋转，可以旋转到竖屏、反向竖屏，无法旋转到横屏、反向横屏，且不受控制中心的旋转开关控制。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core |
-| AUTO_ROTATION_LANDSCAPE | 7 | 跟随传感器自动横向旋转，可以旋转到横屏、反向横屏，无法旋转到竖屏、反向竖屏，且不受控制中心的旋转开关控制。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| AUTO_ROTATION_LANDSCAPE | 7 | 跟随传感器自动横向旋转，可以旋转到横屏、反向横屏，无法旋转到竖屏、反向竖屏，且不受控制中心的旋转开关控制。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | AUTO_ROTATION_RESTRICTED | 8 | 跟随传感器自动旋转，可以旋转到竖屏、横屏、反向竖屏、反向横屏四个方向，且受控制中心的旋转开关控制。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | AUTO_ROTATION_PORTRAIT_RESTRICTED | 9 | 跟随传感器自动竖向旋转，可以旋转到竖屏、反向竖屏，无法旋转到横屏、反向横屏，且受控制中心的旋转开关控制。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core |
 | AUTO_ROTATION_LANDSCAPE_RESTRICTED | 10 | 跟随传感器自动横向旋转，可以旋转到横屏、反向横屏，无法旋转到竖屏、反向竖屏，且受控制中心的旋转开关控制。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core |
@@ -146,12 +160,12 @@ synced_at: "2026-07-28T16:41:44.756162"
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| UNDEFINED | 0 | 表示APP未定义窗口模式。 |
-| FULL_SCREEN | 1 | 表示APP全屏模式。 [自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态下，窗口铺满整个屏幕，默认无dock栏、标题栏和状态栏显示。 可通过[maximize()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#maximize12)和[setTitleAndDockHoverShown()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#settitleanddockhovershown14)配置，当hover到热区时是否显示标题栏和dock栏。 当maximize()和setTitleAndDockHoverShown()接口都调用时，以最后调用设置的效果为准。 非[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态下，窗口铺满整个屏幕，无标题栏和dock栏显示。可通过[setSpecificSystemBarEnabled()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setspecificsystembarenabled11)配置是否显示状态栏。 |
-| MAXIMIZE | 2 | 表示APP窗口最大化模式，[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态下，窗口铺满整个屏幕，不需要hover就可以显示dock栏、状态栏和标题栏。非[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态下，不存在该状态。 |
-| MINIMIZE | 3 | 表示APP窗口最小化模式。 |
-| FLOATING | 4 | 表示APP自由悬浮形式窗口模式，窗口可以自由移动和缩放，适用于需要多窗口同时使用的场景。 |
-| SPLIT_SCREEN | 5 | 表示APP分屏模式，屏幕同时显示两个应用窗口，每个窗口占据屏幕的一半空间，适用于多任务并行处理的场景。 |
+| UNDEFINED | 0 | 表示应用未定义窗口模式。 |
+| FULL_SCREEN | 1 | 表示应用全屏模式。 [自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态下，窗口铺满整个屏幕，默认无dock栏、标题栏和状态栏显示。 可通过[maximize()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#maximize12)和[setTitleAndDockHoverShown()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#settitleanddockhovershown14)配置，当悬停到热区时是否显示标题栏和dock栏。 当maximize()和setTitleAndDockHoverShown()接口都调用时，以最后调用设置的效果为准。 非[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态下，窗口铺满整个屏幕，无标题栏和dock栏显示。可通过[setSpecificSystemBarEnabled()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setspecificsystembarenabled11)配置是否显示状态栏。 |
+| MAXIMIZE | 2 | 表示应用窗口最大化模式，[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态下，窗口铺满整个屏幕，不需要悬停就可以显示dock栏、状态栏和标题栏。非[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态下，不存在该状态。 |
+| MINIMIZE | 3 | 表示应用窗口最小化模式。 |
+| FLOATING | 4 | 表示应用自由悬浮窗口模式，窗口可以自由移动和缩放，适用于需要多窗口同时使用的场景。 |
+| SPLIT_SCREEN | 5 | 表示应用分屏模式，屏幕同时显示两个应用窗口，每个窗口占据屏幕的一半空间，适用于多任务并行处理的场景。 |
 
 #### PixelUnit22+
 
@@ -176,8 +190,8 @@ synced_at: "2026-07-28T16:41:44.756162"
 | --- | --- | --- |
 | FOLLOW_APP_IMMERSIVE_SETTING | 0 | 最大化时，跟随应用当前设置的全屏模式。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | EXIT_IMMERSIVE | 1 | 最大化时，如果当前窗口设置了全屏模式会退出全屏模式。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| ENTER_IMMERSIVE | 2 | 最大化时，进入全屏模式，鼠标Hover在热区上显示窗口标题栏和dock栏。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| ENTER_IMMERSIVE_DISABLE_TITLE_AND_DOCK_HOVER14+ | 3 | 最大化时，进入全屏模式，鼠标Hover在热区上不显示窗口标题栏和dock栏。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
+| ENTER_IMMERSIVE | 2 | 最大化时，进入全屏模式，鼠标悬停在热区上显示窗口标题栏和dock栏。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| ENTER_IMMERSIVE_DISABLE_TITLE_AND_DOCK_HOVER14+ | 3 | 最大化时，进入全屏模式，鼠标悬停在热区上不显示窗口标题栏和dock栏。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
 
 #### AcrossDisplayPresentation
 

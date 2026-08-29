@@ -2,8 +2,8 @@
 title: "Class (NativeMediaPlayerSurfaceInfo)"
 upstream_id: "harmonyos-references/arkts-apis-webview-nativemediaplayersurfaceinfo"
 catalog: "harmonyos-references"
-content_hash: "ed07de62ed05"
-synced_at: "2026-07-09T00:58:50.404786"
+content_hash: "8ec0c9883e3b"
+synced_at: "2026-08-29T18:15:57.150057"
 ---
 
 # Class (NativeMediaPlayerSurfaceInfo)
@@ -23,4 +23,4 @@ NativeMediaPlayerSurfaceInfo 使用[enableNativeMediaPlayer](https://developer.h
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | id12+ | string | 否 | 否 | surface的id，用于同层渲染的NativeImage的surfaceId。 详见[NativeEmbedDataInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-i#nativeembeddatainfo11)。 |
-| rect12+ | [RectEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-i#rectevent12) | 否 | 否 | surface的位置信息。 |
+| rect12+ | [RectEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-i#rectevent12) | 否 | 否 | surface的位置信息，用于指定同层渲染时surface的显示位置和尺寸。 |

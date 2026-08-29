@@ -2,8 +2,8 @@
 title: "@ohos.account.distributedAccount (分布式账号管理)"
 upstream_id: "harmonyos-references/js-apis-distributed-account"
 catalog: "harmonyos-references"
-content_hash: "8f510e88b830"
-synced_at: "2026-07-28T16:50:56.255191"
+content_hash: "06d6cb09bde8"
+synced_at: "2026-08-29T18:16:54.805647"
 ---
 
 # @ohos.account.distributedAccount (分布式账号管理)
@@ -230,6 +230,7 @@ setOsAccountDistributedInfo(accountInfo: DistributedInfo, callback: AsyncCallbac
 | 12300001 | System service exception. |
 | 12300002 | Invalid accountInfo. |
 | 12300003 | Account not found. |
+| 12300406 | The distributed account information has already been bound to a sub-profile of the same OS account. 适用版本：26.0.0+ |
 
 示例：
 
@@ -288,6 +289,7 @@ setOsAccountDistributedInfo(accountInfo: DistributedInfo): Promise<void>
 | 12300001 | System service exception. |
 | 12300002 | Invalid accountInfo. |
 | 12300003 | Account not found. |
+| 12300406 | The distributed account information has already been bound to a sub-profile of the same OS account. 适用版本：26.0.0+ |
 
 示例：
 
@@ -398,11 +400,11 @@ accountAbility.updateOsAccountDistributedInfo(accountInfo).then(() => {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| name | string | 否 | 否 | 分布式账号名称，非空字符串。 |
-| id | string | 否 | 否 | 分布式账号UID，非空字符串。 |
+| name | string | 否 | 否 | 分布式账号名称，非空字符串。最大长度为256个字节。 |
+| id | string | 否 | 否 | 分布式账号UID，非空字符串。最大长度为512个字节。 |
 | event | string | 否 | 否 | 分布式账号登录状态，包括登录、登出、Token失效和注销，分别对应以下字符串： - Ohos.account.event.LOGIN - Ohos.account.event.LOGOUT - Ohos.account.event.TOKEN_INVALID - Ohos.account.event.LOGOFF |
-| nickname9+ | string | 否 | 是 | 分布式账号的昵称，当需要显示用户昵称时设置。不设置时默认为空，不影响账号功能使用。 |
-| avatar9+ | string | 否 | 是 | 分布式账号的头像，当需要显示用户头像时设置。不设置时默认为空，不影响账号功能使用。 |
+| nickname9+ | string | 否 | 是 | 分布式账号的昵称，当需要显示用户昵称时设置。不设置时默认为空，不影响账号功能使用。最大长度为1024个字节。 |
+| avatar9+ | string | 否 | 是 | 分布式账号的头像，当需要显示用户头像时设置。不设置时默认为空，不影响账号功能使用。 最大长度为10M（10485760个字节）。 |
 | status10+ | [DistributedAccountStatus](#distributedaccountstatus10) | 是 | 是 | 分布式账号的状态，枚举类型。当需要查询或设置账号登录状态时使用。不设置时默认为NOT_LOGGED_IN（未登录状态）。 |
 | scalableData8+ | object | 否 | 是 | 分布式账号扩展信息，当需要传递定制化业务信息时设置，以k-v形式传递。不设置时默认为空，不影响账号基本功能。 |
 

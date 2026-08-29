@@ -2,8 +2,8 @@
 title: "ChipGroup"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-chipgroup"
 catalog: "harmonyos-references"
-content_hash: "11b0f345d0f5"
-synced_at: "2026-07-28T16:48:01.359455"
+content_hash: "73aaaa9afedf"
+synced_at: "2026-08-29T18:15:06.367704"
 ---
 
 # ChipGroup
@@ -60,15 +60,15 @@ suffix?: Callback<void>
 | 名称 | 类型 | 必填 | 装饰器类型 | 说明 |
 | --- | --- | --- | --- | --- |
 | items | [ChipGroupItemOptions[]](#chipgroupitemoptions) | 是 | @Require @Prop | 每个Chip的特定属性，参考[ChipGroupItemOptions[]](#chipgroupitemoptions)类型。 若为undefined时，ChipGroup默认为空。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| itemStyle | [ChipItemStyle](#chipitemstyle) | 否 | @Prop | Chip的style属性，如颜色、大小等，参考[ChipItemStyle](#chipitemstyle)类型。 默认值： { size: ChipSize.NORMAL, backgroundColor: $r('sys.color.ohos_id_color_button_normal'), fontColor: $r('sys.color.ohos_id_color_text_primary'), selectedFontColor: $r('sys.color.ohos_id_color_text_primary_contrary'), selectedBackgroundColor: $r('sys.color.ohos_id_color_emphasize') } 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| selectedIndexes | Array | 否 | @Prop | 被选中Chip的索引。 取值范围：索引值为非负整数，且不能超过items数组长度减1。 传入负数、超出数组范围的索引值或非整数时，该索引值不生效。 默认值：[0] 若multiple=false，selectedIndexes为空数组时默认选中第1个；selectedIndexes包含多个元素时仅第一个索引生效。 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| multiple | boolean | 否 | @Prop | 是否选中多个Chip。 true：支持多个Chip选中；false：仅支持单个Chip选中。 默认值：false 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| chipGroupSpace | [ChipGroupSpaceOptions](#chipgroupspaceoptions) | 否 | @Prop | 左右内边距及Chip之间间距。参考[ChipGroupSpaceOptions](#chipgroupspaceoptions)类型。 默认值：{ itemSpace: 8, startSpace: 16, endSpace: 16 } 单位：vp 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| chipGroupPadding | [ChipGroupPaddingOptions](#chipgrouppaddingoptions) | 否 | @Prop | 设置ChipGroup的上下内边距，以控制整体高度。类型为[ChipGroupPaddingOptions](#chipgrouppaddingoptions)。 默认值：{ top: 14, bottom: 14 } 单位：vp 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| itemStyle | [ChipItemStyle](#chipitemstyle) | 否 | @Prop | Chip的style属性，如颜色、大小等，参考[ChipItemStyle](#chipitemstyle)类型。当需要自定义Chip的外观样式（如改变背景色、字体颜色、尺寸）时传入此参数。 默认值： { size: ChipSize.NORMAL, backgroundColor: $r('sys.color.ohos_id_color_button_normal'), fontColor: $r('sys.color.ohos_id_color_text_primary'), selectedFontColor: $r('sys.color.ohos_id_color_text_primary_contrary'), selectedBackgroundColor: $r('sys.color.ohos_id_color_emphasize') } 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| selectedIndexes | Array | 否 | @Prop | 被选中Chip的索引，索引从0开始计数。 取值范围：索引值为非负整数，且不能超过items数组长度减1。 传入负数、超出数组范围的索引值或非整数时，该索引值不生效。 默认值：[0] 若multiple=false，selectedIndexes为空数组时默认选中第1个；selectedIndexes包含多个元素时仅第一个索引生效。 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| multiple | boolean | 否 | @Prop | 是否选中多个Chip。 true：支持多个Chip选中，适用于需要同时选择多个选项的场景（如多标签选择、多条件筛选）；false：仅支持单个Chip选中，适用于单选场景（如单项选择）。 默认值：false 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| chipGroupSpace | [ChipGroupSpaceOptions](#chipgroupspaceoptions) | 否 | @Prop | 左右内边距及Chip之间间距。参考[ChipGroupSpaceOptions](#chipgroupspaceoptions)类型。当默认间距无法满足布局要求或需要根据UI设计调整Chip之间的间隔时传入此参数。 默认值：{ itemSpace: 8, startSpace: 16, endSpace: 16 } 单位：vp 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| chipGroupPadding | [ChipGroupPaddingOptions](#chipgrouppaddingoptions) | 否 | @Prop | 设置ChipGroup的上下内边距，以控制整体高度。类型为[ChipGroupPaddingOptions](#chipgrouppaddingoptions)。当需要调整ChipGroup组件的垂直空间占用或匹配特定UI设计要求时传入此参数。 默认值：{ top: 14, bottom: 14 } 单位：vp 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | backgroundSystemMaterial | [uiMaterial.Material](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#material) | 否 | @Prop | 设置组件系统材质样式。不同材质具有不同的效果，能够影响组件的[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、[border](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#border)、[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)视觉属性。设置自动反色的系统材质时，fontColor如果使用系统预定义的可反色颜色资源（如$r('sys.color.font_primary')），颜色自动适配到材质背景色的反色。当设置backgroundSystemMaterial时，应将backgroundColor设为Color.Transparent，否则会与系统材质冲突。 默认值：undefined 值为undefined时，不应用材质样式。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
 | selectedBackgroundSystemMaterial | [uiMaterial.Material](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#material) | 否 | @Prop | 设置组件选中状态的系统材质样式。不同材质具有不同的效果，能够影响组件选中时的[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、[border](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#border)、[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)视觉属性。设置自动反色的系统材质时，selectedFontColor如果使用系统预定义的可反色颜色资源（如$r('sys.color.font_primary')），颜色自动适配到材质背景色的反色。当设置selectedBackgroundSystemMaterial时，应将selectedBackgroundColor设为Color.Transparent，否则会与系统材质冲突。 默认值：undefined 值为undefined时，不应用选中状态的材质样式。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
-| onChange | Callback> | 否 | - | Chip状态改变时的回调方法，用于监听Chip选中状态的变更。该回调在selectedIndexes属性更新后触发，开发者可在回调中获取最新的选中状态并执行相应操作，如更新UI、保存选中数据、触发业务逻辑等。当需要响应Chip选中状态变化时传入此参数，不传入时不监听状态变化。 若为undefined，不触发该回调。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| suffix | Callback | 否 | @BuilderParam | 支持开发者自定义builder，如需在组件最右侧显示自定义内容可配置suffix属性，使用属性suffix需引用[IconGroupSuffix](#icongroupsuffix)接口。 默认不传入时，没有suffix。 值为undefined时，没有suffix。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| onChange | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12)> | 否 | - | Chip状态改变时的回调方法，用于监听Chip选中状态的变更。该回调在selectedIndexes属性更新后触发，开发者可在回调中获取最新的选中状态并执行相应操作，如更新UI、保存选中数据、触发业务逻辑等。当需要监听用户选择Chip的操作并执行相应业务逻辑时传入此参数。不传入时，无法接收Chip状态变化的通知。 若为undefined，不触发该回调。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| suffix | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 否 | @BuilderParam | 支持开发者自定义builder，如需在组件最右侧显示自定义内容可配置suffix属性，使用属性suffix需引用[IconGroupSuffix](#icongroupsuffix)接口。 默认不传入时，没有suffix。 值为undefined时，没有suffix。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -114,7 +114,7 @@ ChipItemStyle定义了Chip的通用属性。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| size | [ChipSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-chip#chipsize) | [SizeOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#sizeoptions) | 否 | 是 | Chip尺寸，使用时需要从Chip组件引入ChipSize类型。 默认值：ChipSize.NORMAL或{ height: 0, width: 0 } 为undefined时，使用默认值。 |
+| size | [ChipSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-chip#chipsize) | [SizeOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#sizeoptions) | 否 | 是 | Chip尺寸，使用时需要从Chip组件引入ChipSize类型。ChipSize.NORMAL适用于大多数标准场景；ChipSize.SMALL适用于紧凑布局或空间受限场景；SizeOptions适用于需要自定义精确尺寸的特殊场景。 默认值：ChipSize.NORMAL或{ height: 0, width: 0 } 为undefined时，使用默认值。 |
 | backgroundColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | Chip背景颜色。 默认值：$r('sys.color.ohos_id_color_button_normal') **说明**：从API版本26.0.0开始，当设置backgroundSystemMaterial时，应将backgroundColor设为Color.Transparent，否则会与系统材质冲突；当backgroundSystemMaterial为undefined时，backgroundColor属性生效。 为undefined时，backgroundColor走默认值。 |
 | fontColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | Chip文字颜色。 默认值：$r('sys.color.ohos_id_color_text_primary') **说明**：从API版本26.0.0开始，backgroundSystemMaterial设置自动反色的系统材质时，fontColor使用系统预定义的可反色颜色资源，文字颜色自动适配到材质背景色的反色。 为undefined时，fontColor走默认值。 |
 | selectedFontColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | Chip激活时的文字颜色。 默认值：$r('sys.color.ohos_id_color_text_primary_contrary') **说明**：从API版本26.0.0开始，selectedBackgroundSystemMaterial设置自动反色的系统材质时，selectedFontColor使用系统预定义的可反色颜色资源（如$r('sys.color.font_primary')），颜色自动适配到材质背景色的反色。 为undefined时，selectedFontColor走默认值。 |
@@ -189,7 +189,7 @@ ChipGroup的后缀图标选项类型。
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | symbol | [SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier#symbolglyphmodifier) | 否 | 否 | 尾部图标的SymbolGlyphModifier配置对象，用于设置图标的显示样式、渲染模式等。 |
-| action | [VoidCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#voidcallback12) | 否 | 否 | 尾部图标响应事件，用户点击尾部图标时触发回调。当需要为尾部图标添加自定义交互功能时设置此参数，如执行特定操作、打开界面等。 |
+| action | [VoidCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#voidcallback12) | 否 | 否 | 尾部图标响应事件，用户点击尾部图标时触发回调。当需要为尾部图标添加自定义交互功能时设置此参数，如执行特定操作、打开界面等。 值为undefined时，无尾部图标响应事件。 |
 | accessibilityText | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 尾部图标的无障碍文本属性。用于为用户进一步说明尾部图标，开发人员可为尾部图标的该属性设置相对较详细的解释文本，帮助用户理解将要执行的操作。如帮助用户理解将要执行的操作可能导致什么后果，尤其是当这些后果无法从尾部图标本身属性与无障碍文本中了解到时。若尾部图标既拥有文本属性又拥有无障碍说明属性，则尾部图标被选中时，先播报尾部图标的文本属性，再播报无障碍说明属性的内容。 默认值：空字符串。 值为undefined时，按默认值处理。 |
 | accessibilityDescription | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 尾部图标的无障碍描述。此描述用于向用户详细解释尾部图标，开发人员应为尾部图标的这一属性提供较为详尽的文本说明，以协助用户理解即将执行的操作及其可能产生的后果，特别是当这些后果无法仅从尾部图标的属性和无障碍文本中直接获知时。如果尾部图标同时具备文本属性和无障碍说明属性，当尾部图标被选中时，系统将首先播报尾部图标的文本属性，随后播报无障碍说明属性的内容。 默认值：空字符串。 值为undefined时，按默认值处理。 |
 | accessibilityLevel | string | 否 | 是 | 尾部图标无障碍重要性。用于控制尾部图标是否可被无障碍辅助服务所识别。当需要为无障碍辅助服务用户提供访问支持，或需要将装饰性图标从无障碍树中排除时设置此参数。 支持的值为： "auto"：尾部图标转化为“yes”，适用于大多数场景。 "yes"：尾部图标可被无障碍辅助服务所识别，适用于需要明确启用无障碍访问的场景。 "no"：尾部图标不可被无障碍辅助服务所识别，适用于纯装饰性图标的场景。 "no-hide-descendants"：尾部图标及其所有子组件不可被无障碍辅助服务所识别，适用于需要隐藏整个区域的场景。 默认值："auto"。 值为undefined时，按默认值处理。 |
@@ -226,7 +226,7 @@ IconGroupSuffix({
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | icon | [IconOptions](#iconoptions) | 否 | 否 | 自定义Builder icon。 Chip大小是ChipSize.SMALL时，icon的size默认值：{width: '16vp',height: '16vp'}。 Chip大小是ChipSize.NORMAL时，icon的size默认值：{width: '24vp',height: '24vp'}。 如果想动态修改size，那么必须在引入[IconGroupSuffix](#icongroupsuffix)时，使用[SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier#symbolglyphmodifier)类型。 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| action | Callback | 否 | 否 | 尾部图标点击事件回调，用户点击尾部图标时触发。当需要为尾部图标添加自定义交互功能时设置此参数，如执行特定操作、打开界面等。 为undefined时，不触发该回调。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| action | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 否 | 否 | 尾部图标点击事件回调，用户点击尾部图标时触发。当需要为尾部图标添加自定义交互功能时设置此参数，如执行特定操作、打开界面等。 为undefined时，不触发该回调。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | accessibilityText14+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 尾部图标无障碍文本属性。用于为用户进一步说明尾部图标，开发人员可为尾部图标的该属性设置相对较详细的解释文本，帮助用户理解将要执行的操作。如帮助用户理解将要执行的操作可能导致什么后果，尤其是当这些后果无法从尾部图标本身属性与无障碍文本中了解到时。若尾部图标既拥有文本属性又拥有无障碍说明属性，则尾部图标被选中时，先播报尾部图标的文本属性，再播报无障碍说明属性的内容。 默认值：空字符串。 值为undefined时，按默认值处理。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
 | accessibilityDescription14+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 尾部图标无障碍描述。此描述用于向用户详细解释尾部图标，开发人员应为尾部图标的这一属性提供较为详尽的文本说明，以协助用户理解即将执行的操作及其可能产生的后果，特别是当这些后果无法仅从尾部图标的属性和无障碍文本中直接获知时。如果尾部图标同时具备文本属性和无障碍说明属性，当尾部图标被选中时，系统将首先播报尾部图标的文本属性，随后播报无障碍说明属性的内容。 默认值：空字符串。 值为undefined时，按默认值处理。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
 | accessibilityLevel14+ | string | 否 | 是 | 尾部图标无障碍重要性。用于控制尾部图标是否可被无障碍辅助服务所识别。当需要为无障碍辅助服务用户提供访问支持，或需要将装饰性图标从无障碍树中排除时设置此参数。 支持的值为： "auto"：尾部图标转化为“yes”，适用于大多数场景。 "yes"：尾部图标可被无障碍辅助服务所识别，适用于功能性图标。 "no"：尾部图标不可被无障碍辅助服务所识别，适用于纯装饰性图标。 "no-hide-descendants"：尾部图标及其所有子组件不可被无障碍辅助服务所识别，适用于需要隐藏整个区域的场景。 默认值："auto" 值为undefined时，按默认值处理。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
@@ -332,7 +332,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008906.png)
+ ![](./img/zh-cn_image_0000002701800036.png)
 
 #### [h2]示例2（有最右侧的builder）
 
@@ -427,7 +427,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848986.png)
+ ![](./img/zh-cn_image_0000002731519323.png)
 
 #### [h2]示例3（设置Symbol类型图标）
 
@@ -526,7 +526,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088417.png)
+ ![](./img/zh-cn_image_0000002701640124.png)
 
 #### [h2]示例4（单选时无障碍朗读）
 
@@ -937,4 +937,86 @@ struct ChipGroupMaterialExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928587.png)
+ ![](./img/zh-cn_image_0000002731359343.png)
+
+#### [h2]示例7（设置组件选中状态的系统材质样式）
+
+该示例通过配置selectedBackgroundSystemMaterial实现组件选中状态的系统材质样式，开启自动反色功能使文本颜色适配背景色。
+
+从API版本26.0.0开始，[ChipGroup](#chipgroup-1)新增selectedBackgroundSystemMaterial属性。
+
+```
+import { ChipGroup, IconGroupSuffix, SymbolGlyphModifier, uiMaterial } from '@kit.ArkUI';
+
+@Entry
+@Component
+struct ChipGroupMaterialExample {
+  @State selectedIndexes: Array<number> = [0];
+
+  @LocalBuilder
+  suffixBuilder() {
+    IconGroupSuffix({
+      items: [new SymbolGlyphModifier($r('sys.symbol.magnifyingglass'))
+      // 将fontColor设置为特殊系统资源值，启用自动反色能力。
+        .fontColor([$r('sys.color.font_primary')])],
+      // 设置后缀图标的系统材质样式为ULTRA_THIN，并开启自动反色。
+      iconBackgroundSystemMaterial: new uiMaterial.ImmersiveMaterial({
+        style: uiMaterial.ImmersiveStyle.ULTRA_THIN,
+        colorInvert: true
+      })
+    })
+  }
+
+  build() {
+    Column({ space: 10 }) {
+      ChipGroup({
+        items: [
+          { label: { text: '选项1' } },
+          { label: { text: '选项2' } },
+          { label: { text: '选项3' } },
+          { label: { text: '选项4' } },
+          { label: { text: '选项5' } },
+          { label: { text: '选项6' } },
+        ],
+        selectedIndexes: this.selectedIndexes,
+        itemStyle: {
+          // 设置透明的背景颜色，否则会和系统材质冲突。
+          backgroundColor: Color.Transparent,
+          // 将fontColor设置为特殊系统资源值，启用自动反色能力。
+          fontColor: $r('sys.color.ohos_id_color_text_primary'),
+          selectedFontColor: $r('sys.color.ohos_id_color_text_primary_contrary')
+        },
+        // 设置ChipGroup的选中项系统材质样式为ULTRA_THIN，并开启自动反色。
+        selectedBackgroundSystemMaterial: new uiMaterial.ImmersiveMaterial({
+          style: uiMaterial.ImmersiveStyle.ULTRA_THIN,
+          materialColor: $r('sys.color.ohos_id_color_emphasize'),
+          colorInvert: true
+        }),
+        // 设置ChipGroup的系统材质样式为ULTRA_THIN，并开启自动反色。
+        backgroundSystemMaterial: new uiMaterial.ImmersiveMaterial({
+          style: uiMaterial.ImmersiveStyle.ULTRA_THIN,
+          colorInvert: true
+        }),
+        onChange: (activatedChipsIndex: Array<number>) => {
+          this.selectedIndexes = activatedChipsIndex;
+        },
+        suffix: () => {
+          this.suffixBuilder()
+        }
+      })
+    }
+    .linearGradient({
+      angle: 90, // 渐变角度，90度是从左到右。
+      colors: [
+        ['#FF9A9E', 0.0], // 起始颜色及位置（0.0表示起点）。
+        ['#FECFEF', 0.5], // 中间颜色及位置。
+        ['#3B324C', 1.0] // 结束颜色及位置（1.0表示终点）。
+      ]
+    })
+    .padding(12)
+    .width('100%')
+    .height('100%')
+  }
+}
+```
+ ![](./img/zh-cn_image_0000002701800038.png)

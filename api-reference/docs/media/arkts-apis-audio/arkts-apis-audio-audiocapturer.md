@@ -2,8 +2,8 @@
 title: "Interface (AudioCapturer)"
 upstream_id: "harmonyos-references/arkts-apis-audio-audiocapturer"
 catalog: "harmonyos-references"
-content_hash: "6814acbbb294"
-synced_at: "2026-07-28T16:51:25.277034"
+content_hash: "ce3b20b53c2b"
+synced_at: "2026-08-29T18:17:19.037693"
 ---
 
 # Interface (AudioCapturer)
@@ -1420,7 +1420,7 @@ setWillMuteWhenInterrupted(muteWhenInterrupted: boolean): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| muteWhenInterrupted | boolean | 是 | 设置当前录制音频流是否启用静音打断模式, true表示启用，false表示不启用，保持为默认打断模式。 |
+| muteWhenInterrupted | boolean | 是 | 设置当前录制音频流是否启用静音打断模式，true表示启用，false表示不启用，保持为默认打断模式。 |
 
 返回值：
 
@@ -1609,4 +1609,128 @@ let strategy: audio.AudioSessionStrategy = {
 };
 let behavior: number = audio.AudioSessionBehaviorFlags.MUTE_WHEN_INTERRUPTED;
 audioCapturer.setIndependentAudioSessionStrategy(strategy, behavior);
+```
+
+#### setNoiseReductionMode
+
+setNoiseReductionMode(noiseReductionMode: NoiseReductionMode): void
+
+设置当前录音流的降噪模式。建议先调用[getSupportedNoiseReductionModes](#getsupportednoisereductionmodes)获取当前录音流支持的降噪模式后，再通过本接口进行设置。
+
+![](./img/note_3.0-zh-cn.png)
+
+- 当前仅支持使用[SourceType.SOURCE_TYPE_VOICE_MESSAGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#sourcetype8)创建的录音流进行降噪模式设置，其他录音流默认仅支持[NoiseReductionMode.FIDELITY](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#noisereductionmode)。
+- 降噪效果受设备平台、音频设备和录音并发情况影响。存在多个录音流同时运行时，设置的降噪模式可能不生效。
+- 该接口仅可在录音流创建后未开始录音，或停止录音后调用；录音流处于运行态或已释放时调用将抛出异常。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Multimedia.Audio.Capturer
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| noiseReductionMode | [NoiseReductionMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#noisereductionmode) | 是 | 要设置的降噪模式。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[Audio错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-audio)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 6800101 | Parameter verification failed. |
+| 6800103 | Illegal state, audio capturer is in running or released state. |
+| 6800104 | The setted mode is not supported. |
+| 6800301 | Audio server process died. |
+
+示例：
+
+```
+import { BusinessError } from '@kit.BasicServicesKit';
+
+try {
+  let supportedModes: Array<audio.NoiseReductionMode> = audioCapturer.getSupportedNoiseReductionModes();
+  if (supportedModes.includes(audio.NoiseReductionMode.PURE_VOCALS)) {
+    audioCapturer.setNoiseReductionMode(audio.NoiseReductionMode.PURE_VOCALS);
+  } else {
+    audioCapturer.setNoiseReductionMode(audio.NoiseReductionMode.FIDELITY);
+  }
+  console.info(`setNoiseReductionMode success: ${audioCapturer.getNoiseReductionMode()}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`setNoiseReductionMode failed. Code: ${error.code}, message: ${error.message}`);
+}
+```
+
+#### getNoiseReductionMode
+
+getNoiseReductionMode(): NoiseReductionMode
+
+获取当前录音流的降噪模式。返回结果仅反映当前录音流的降噪模式。默认值为[NoiseReductionMode.FIDELITY](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#noisereductionmode)。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Multimedia.Audio.Capturer
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| [NoiseReductionMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#noisereductionmode) | 当前录音流的降噪模式。 |
+
+示例：
+
+```
+let noiseReductionMode: audio.NoiseReductionMode = audioCapturer.getNoiseReductionMode();
+console.info(`getNoiseReductionMode success: ${noiseReductionMode}`);
+```
+
+#### getSupportedNoiseReductionModes
+
+getSupportedNoiseReductionModes(): Array<NoiseReductionMode>
+
+获取当前设备支持的录音降噪模式。
+
+![](./img/note_3.0-zh-cn.png)
+
+- 当前仅使用[SourceType.SOURCE_TYPE_VOICE_MESSAGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#sourcetype8)创建的录音流会根据设备平台查询支持的降噪模式，其他录音流默认仅返回[NoiseReductionMode.FIDELITY](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#noisereductionmode)。
+- 返回结果仅考虑音频格式和设备平台，不考虑当前输入设备和录音并发情况。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Multimedia.Audio.Capturer
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Array | 支持的录音降噪模式数组，默认支持[NoiseReductionMode.FIDELITY](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#noisereductionmode)。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[Audio错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-audio)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 6800301 | Audio server process died. |
+
+示例：
+
+```
+import { BusinessError } from '@kit.BasicServicesKit';
+
+try {
+  let supportedModes: Array<audio.NoiseReductionMode> = audioCapturer.getSupportedNoiseReductionModes();
+  console.info(`getSupportedNoiseReductionModes success: ${supportedModes}`);
+} catch (err) {
+  let error = err as BusinessError;
+  console.error(`getSupportedNoiseReductionModes failed. Code: ${error.code}, message: ${error.message}`);
+}
 ```

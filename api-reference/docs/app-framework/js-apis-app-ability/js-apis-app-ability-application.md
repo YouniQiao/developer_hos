@@ -2,8 +2,8 @@
 title: "@ohos.app.ability.application (应用工具类)"
 upstream_id: "harmonyos-references/js-apis-app-ability-application"
 catalog: "harmonyos-references"
-content_hash: "c292a52eceb3"
-synced_at: "2026-07-09T00:57:03.524265"
+content_hash: "5dbcd76e7604"
+synced_at: "2026-08-29T18:11:56.269058"
 ---
 
 # @ohos.app.ability.application (应用工具类)
@@ -77,7 +77,7 @@ export default class EntryAbility extends UIAbility {
   onCreate(want: Want, launchParam: AbilityConstant.LaunchParam): void {
     let moduleContext: common.Context;
     try {
-      application.createModuleContext(this.context, 'entry').then((data: Context) => {
+      application.createModuleContext(this.context, 'entry').then((data: common.Context) => {
         moduleContext = data;
         console.info('createModuleContext success!');
       }).catch((error: BusinessError) => {
@@ -143,7 +143,7 @@ export default class EntryAbility extends UIAbility {
 
 getApplicationContextInstance(): ApplicationContext
 
-获取应用上下文。开发者使用该接口时，无需依赖Context基类。
+获取应用上下文实例。开发者使用该接口时，无需依赖Context基类。
 
 重复调用该接口，将获取同一个ApplicationContext实例。
 
@@ -217,7 +217,7 @@ export default class EntryAbility extends UIAbility {
     let moduleContext: common.Context;
     try {
       application.createPluginModuleContext(this.context, 'com.example.pluginBundleName', 'pluginModuleName')
-        .then((data: Context) => {
+        .then((data: common.Context) => {
           moduleContext = data;
           console.info('createPluginModuleContext success!');
         })
@@ -265,7 +265,7 @@ promoteCurrentToCandidateMasterProcess(insertToHead: boolean): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象。无返回结果。 |
+| Promise | Promise对象，无返回结果。 |
 
 错误码：
 
@@ -315,7 +315,7 @@ demoteCurrentFromCandidateMasterProcess(): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象。无返回结果。 |
+| Promise | Promise对象，无返回结果。 |
 
 错误码：
 
@@ -356,9 +356,9 @@ export default class EntryAbility extends UIAbility {
 
 exitMasterProcessRole(): Promise<void>
 
-放弃当前进程的[主控进程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-terminology#masterprocess主控进程)身份。使用Promise异步回调。
+退出当前进程的[主控进程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-terminology#masterprocess主控进程)身份。使用Promise异步回调。
 
-系统能力：SystemCapability.Ability.AbilityRuntime.Core
+系统能力： SystemCapability.Ability.AbilityRuntime.Core
 
 设备行为差异： 该接口仅在PC/2in1、Tablet设备中可正常调用，在其他设备中返回801错误码。
 

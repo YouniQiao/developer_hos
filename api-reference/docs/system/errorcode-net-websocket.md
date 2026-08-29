@@ -2,8 +2,8 @@
 title: "webSocket错误码"
 upstream_id: "harmonyos-references/errorcode-net-websocket"
 catalog: "harmonyos-references"
-content_hash: "ec9e8c982168"
-synced_at: "2026-07-09T00:59:31.047904"
+content_hash: "f8c8b35de529"
+synced_at: "2026-08-29T18:16:47.794757"
 ---
 
 # webSocket错误码
@@ -50,7 +50,7 @@ WebSocket URL错误。
 
 处理步骤
 
-1.检查URL是否为空或者未包含正确的协议（ws://或wss://)。
+1.检查URL是否为空或者未包含正确的协议（ws://或wss://）。
 
 2.检查URL长度是否超过2048个字符。
 
@@ -104,11 +104,11 @@ WebSocketServer无法在指定的NIC上进行网络监听。
 
 可能原因
 
-WebSocketServer服务器配置文件中的ip地址无效。
+WebSocketServer服务器配置文件中的IP地址无效。
 
 处理步骤
 
-检查网络连接是否正常，检查ip地址有效性。
+检查网络连接是否正常，检查IP地址有效性。
 
 #### 2302005 WebsocketServer 无法在指定的端口上进行网络监听
 

@@ -2,8 +2,8 @@
 title: "Types"
 upstream_id: "harmonyos-references/arkts-apis-avsession-t"
 catalog: "harmonyos-references"
-content_hash: "91dce3f4ee69"
-synced_at: "2026-07-28T16:51:36.622337"
+content_hash: "c3a314e331a9"
+synced_at: "2026-08-29T18:17:26.297972"
 ---
 
 # Types
@@ -55,13 +55,13 @@ type AVCastControlCommandType = 'play' | 'pause' | 'stop' | 'playNext' | 'playPr
 | 'stop' | 停止。无需传入参数。 |
 | 'playNext' | 下一首。无需传入参数。 |
 | 'playPrevious' | 上一首。无需传入参数。 |
-| 'fastForward' | 快进。对应参数使用number类型，单位毫秒（ms）。 |
-| 'rewind' | 快退。对应参数使用number类型，单位毫秒（ms）。 |
-| 'seek' | 跳转到指定时间点。对应参数使用number类型，单位毫秒（ms）。 |
+| 'fastForward' | 快进。对应参数使用number类型，单位为毫秒（ms）。 |
+| 'rewind' | 快退。对应参数使用number类型，单位为毫秒（ms）。 |
+| 'seek' | 跳转到指定时间点。对应参数使用number类型，单位为毫秒（ms）。 |
 | 'setVolume' | 设置音量。对应参数使用number类型，可通过[AVPlaybackState.maxVolume](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-i#avplaybackstate10)获取系统最大音量。 |
-| 'setSpeed' | 设置播放倍速。在音视频投播场景下，当远端设备使用DLNA协议进行连接时，不支持设置此项数据。对应参数使用[media.PlaybackSpeed](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-e#playbackspeed8)。 |
+| 'setSpeed' | 设置播放倍速。在音视频投播场景下，远端设备使用DLNA协议连接时，不支持设置此项。对应参数使用[media.PlaybackSpeed](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-e#playbackspeed8)。 |
 | 'setLoopMode' | 设置循环模式。对应参数使用[LoopMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-e#loopmode10)。 |
-| 'toggleFavorite' | 切换收藏状态。无需传入参数。 |
+| 'toggleFavorite' | 切换收藏状态。对应参数使用[AVMetadata.assetId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-i#avmetadata10)指定媒体资源标识符。 |
 | 'toggleMute' | 切换静音状态。无需传入参数。 |
 
 #### ExtraInfo18+
@@ -74,7 +74,7 @@ type ExtraInfo = {[key: string]: Object;}
 
 | 类型 | 说明 |
 | --- | --- |
-| {[key: string]: Object;} | key为远端分布式事件类型。当前支持的事件类型包括： AUDIO_GET_VOLUME：获取远端设备音量。 AUDIO_GET_AVAILABLE_DEVICES：获取远端所有可连接设备。 AUDIO_GET_PREFERRED_OUTPUT_DEVICE_FOR_RENDERER_INFO：获取远端实际发声设备。 媒体提供方根据不同的远端分布式事件类型，返回对应的媒体数据包对象。 |
+| {[key: string]: Object;} | key为远端分布式事件类型。当前支持的事件类型包括： AUDIO_GET_VOLUME：获取远端设备音量。 AUDIO_GET_AVAILABLE_DEVICES：获取远端所有可用设备。 AUDIO_GET_PREFERRED_OUTPUT_DEVICE_FOR_RENDERER_INFO：获取远端实际发声设备。 媒体提供方根据不同的远端分布式事件类型，返回对应的媒体数据包对象。 |
 
 #### KeyRequestCallback12+
 
@@ -90,7 +90,7 @@ type KeyRequestCallback = (assetId: string, requestData: Uint8Array) => void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| assetId | string | 是 | 媒体ID。 |
+| assetId | string | 是 | 媒体资源的唯一标识符。 |
 | requestData | Uint8Array | 是 | 媒体许可证请求数据。 |
 
 示例：
@@ -98,7 +98,7 @@ type KeyRequestCallback = (assetId: string, requestData: Uint8Array) => void
 ```
 let keyRequestCallback: avSession.KeyRequestCallback = async(assetId: string, requestData: Uint8Array) => {
   console.info(`Succeeded in keyRequestCallback. assetId: ${assetId}, requestData: ${requestData}`);
-}
+};
 ```
 
 #### AVControlCommandType10+
@@ -109,7 +109,7 @@ type AVControlCommandType = 'play' | 'pause' | 'stop' | 'playNext' | 'playPrevio
 
 会话可传递的命令。
 
-该类型可取的值为下表字符串的并集。
+该类型可取的值为下表所列字符串。
 
 系统能力： SystemCapability.Multimedia.AVSession.Core
 
@@ -117,18 +117,29 @@ type AVControlCommandType = 'play' | 'pause' | 'stop' | 'playNext' | 'playPrevio
 | --- | --- |
 | 'play' | 播放。无需传入参数。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | 'pause' | 暂停。无需传入参数。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| 'stop' | 停止。 无需传入参数。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| 'stop' | 停止。无需传入参数。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | 'playNext' | 下一首。无需传入参数。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | 'playPrevious' | 上一首。无需传入参数。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| 'fastForward' | 快进。对应参数请参考[SkipIntervals](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-e#skipintervals11)。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| 'rewind' | 快退。对应参数请参考[SkipIntervals](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-e#skipintervals11)。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| 'seek' | 跳转到指定时间点。对应参数使用number类型。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| 'fastForward' | 快进。对应参数请参考[SkipIntervals](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-e#skipintervals11)，表示快进的时间间隔。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| 'rewind' | 快退。对应参数请参考[SkipIntervals](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-e#skipintervals11)，表示快退的时间间隔。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| 'seek' | 跳转到指定时间点。对应参数使用number类型，单位为毫秒（ms）。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | 'setSpeed' | 设置播放倍速。对应参数使用number类型。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | 'setLoopMode' | 设置循环模式。对应参数使用[LoopMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-e#loopmode10)。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | 'setTargetLoopMode' 18+ | 设置目标循环模式。对应参数使用[LoopMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-e#loopmode10)。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| 'toggleFavorite' | 切换收藏状态。对应参数使用[AVMetadata.assetId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-i#avmetadata10)。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| 'toggleFavorite' | 切换收藏状态。对应参数使用[AVMetadata.assetId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-i#avmetadata10)指定媒体资源标识符。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | 'playFromAssetId' 11+ | 播放指定的assetId。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| 'playWithAssetId' 20+ | 播放指定的assetId。对应参数使用[AVMetadata.assetId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-i#avmetadata10)， 字符串长度起始版本： 26.0.0
+| 'playWithAssetId' 20+ | 播放指定的assetId。对应参数使用[AVMetadata.assetId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-i#avmetadata10)， assetId字符串长度需小于40960字节。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| 'answer' 11+ | 接听。无需传入参数。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| 'hangUp' 11+ | 挂断。无需传入参数。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| 'toggleCallMute' 11+ | 切换通话静音状态。无需传入参数。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+
+#### AVMediaCenterControlType
+
+type AVMediaCenterControlType = 'playNext' | 'playPrevious' | 'fastForward' | 'rewind' | 'setSpeed' | 'setLoopMode' | 'toggleFavorite'
+
+播控中心控制命令类型。
+
+起始版本： 26.0.0
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -164,5 +175,5 @@ type TwoParamCallback<T, G> = (data1: T, data2: G) => void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| data1 | T | 是 | 参数1。 |
-| data2 | G | 是 | 参数2。 |
+| data1 | T | 是 | 回调函数接收的第一个数据参数，具体类型和含义由调用方定义。 |
+| data2 | G | 是 | 回调函数接收的第二个数据参数，具体类型和含义由调用方定义。 |

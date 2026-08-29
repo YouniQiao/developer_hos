@@ -1,12 +1,10 @@
 ---
-
 title: "扩展认证错误码"
 upstream_id: "harmonyos-references/errorcode-net-eap"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T00:59:31.229737"
-content_hash: "6c97aff8a2e3"
+content_hash: "ffe99e18a07f"
+synced_at: "2026-08-29T18:16:47.885539"
 ---
-
 
 # 扩展认证错误码
 
@@ -20,15 +18,15 @@ Invalid netId.
 
 错误描述
 
-不合法的net Id值。
+不合法的netId值。
 
 可能原因
 
-net Id值不存在。
+netId值不存在。
 
 处理步骤
 
-输入一个合法的net ID值。
+输入一个合法的netId值。
 
 #### 33200002 退出指定netId网卡扩展认证失败
 
@@ -38,15 +36,15 @@ log off fail.
 
 错误描述
 
-退出指定的net Id的扩展认证失败。
+退出指定的netId的扩展认证失败。
 
 可能原因
 
-net Id值不存在。
+netId值不存在。
 
 处理步骤
 
-输入一个合法的net ID值。
+输入一个合法的netId值。
 
 #### 33200003 无效的eth eap配置
 
@@ -92,7 +90,7 @@ Invalid size of eap data.
 
 错误描述
 
-不合法的EAP数据长度值。
+不合法的eap数据长度值。
 
 可能原因
 
@@ -118,7 +116,7 @@ Invalid net type.
 
 处理步骤
 
-传入支持的合法网络类型: WLAN: 1; ETH: 2。
+传入支持的合法网络类型：WLAN：1；ETH：2。
 
 #### 33200007 无效的eapCode值
 
@@ -128,7 +126,7 @@ Invalid eap code.
 
 错误描述
 
-eap code不合法。
+eapCode不合法。
 
 可能原因
 
@@ -136,7 +134,7 @@ eap code不合法。
 
 处理步骤
 
-eap code的合法取值为1、2、3、4。
+eapCode的合法取值为1、2、3、4。
 
 #### 33200008 无效的eapType值
 
@@ -146,7 +144,7 @@ Invalid eap type.
 
 错误描述
 
-eap type不合法。
+eapType不合法。
 
 可能原因
 
@@ -154,7 +152,7 @@ eap type不合法。
 
 处理步骤
 
-传入合法的eap type，取值范围为[1, 255]。
+传入合法的eapType，取值范围为[1, 255]。
 
 #### 33200009 netmanager进程不存在
 
@@ -174,7 +172,7 @@ netmanager进程不存在。
 
 重启机器。
 
-#### 33200010 无效的eap状态
+#### 33200010 无效的eth状态
 
 错误信息
 

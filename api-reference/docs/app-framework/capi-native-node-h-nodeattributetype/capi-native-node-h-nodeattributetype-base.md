@@ -2,8 +2,8 @@
 title: "ArkUI_NodeAttributeType（基础属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-base"
 catalog: "harmonyos-references"
-content_hash: "af6792a95069"
-synced_at: "2026-07-28T16:49:20.121344"
+content_hash: "209c8f85bf55"
+synced_at: "2026-08-29T18:15:37.739287"
 ---
 
 # ArkUI_NodeAttributeType（基础属性）
@@ -61,7 +61,7 @@ NODE_BACKGROUND_IMAGE = 3
 | 参数项 | 描述 |
 | --- | --- |
 | .string | 图片地址。API version 22及之前版本，支持网络图片资源地址、本地图片资源地址、Base64和[PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)资源，不支持[svg](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-svg)图片、gif和webp等类型的动图。从API version 23开始，新增支持webp和gif类型的动图，显示动图第一帧，不支持其他类型的动图。 |
-| .value[0]?.i32 | 可选值，repeat参数，参数类型[ArkUI_ImageRepeat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image-h#arkui_imagerepeat)，默认值为ARKUI_IMAGE_REPEAT_NONE。 |
+| .value[0].?i32 | 可选值，repeat参数，参数类型[ArkUI_ImageRepeat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image-h#arkui_imagerepeat)，默认值为ARKUI_IMAGE_REPEAT_NONE。 |
 | .object | PixelMap图片数据，参数类型为[ArkUI_DrawableDescriptor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-drawabledescriptor)。.object参数和.string参数二选一，不可同时设置。 |
 
 返回：
@@ -160,8 +160,8 @@ NODE_BACKGROUND_IMAGE_POSITION = 56
 | --- | --- |
 | .value[0].f32 | x轴位置，单位为px。 |
 | .value[1].f32 | y轴位置，单位为px。 |
-| .value[2]?.i32 | 可选值，对齐方式，参数类型[ArkUI_Alignment](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-layout-h#arkui_alignment)，默认值为ARKUI_ALIGNMENT_TOP_START。该参数从API version 21开始支持。 |
-| .value[3]?.i32 | 可选值，布局方向，参数类型[ArkUI_Direction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-layout-h#arkui_direction)，默认值为ARKUI_DIRECTION_AUTO。多数场景下建议设置为AUTO，由系统自动处理布局方向；若需要固定方向，可设置为LTR或RTL。该参数从API version 21开始支持。 |
+| .value[2].?i32 | 可选值，对齐方式，参数类型[ArkUI_Alignment](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-layout-h#arkui_alignment)，默认值为ARKUI_ALIGNMENT_TOP_START。该参数从API version 21开始支持。 |
+| .value[3].?i32 | 可选值，布局方向，参数类型[ArkUI_Direction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-layout-h#arkui_direction)，默认值为ARKUI_DIRECTION_AUTO。多数场景下建议设置为AUTO，由系统自动处理布局方向；若需要固定方向，可设置为LTR或RTL。该参数从API version 21开始支持。 |
 
 返回：
 
@@ -207,6 +207,12 @@ NODE_UNIQUE_ID = 95
 起始版本： 12
 
 废弃版本： 从API version 12开始支持，从API version 20开始废弃。建议使用[OH_ArkUI_NodeUtils_GetNodeUniqueId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#oh_arkui_nodeutils_getnodeuniqueid)替代。
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| .value[0].i32 | 组件标识ID。 |
 
 #### NODE_CLICK_DISTANCE
 

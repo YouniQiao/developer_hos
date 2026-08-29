@@ -2,8 +2,8 @@
 title: "textProcessing（文本处理）"
 upstream_id: "harmonyos-references/natural-language-text-processing-api"
 catalog: "harmonyos-references"
-content_hash: "08d8b785bcd3"
-synced_at: "2026-07-28T16:53:12.556795"
+content_hash: "15c106bd7dd7"
+synced_at: "2026-08-29T18:18:40.077201"
 ---
 
 # textProcessing（文本处理）
@@ -47,8 +47,8 @@ import { textProcessing, EntityType } from '@kit.NaturalLanguageKit';
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| entityTypes | [EntityType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/natural-language-entity-type-api)[] | 否 | 是 | 实体的类别。若未指定，则默认识别所有支持的实体类型。 不能为空数组。 |
-| timestamp | number | 否 | 是 | 参考时间戳，用于指定实体识别的时间上下文。单位为ms。值为整数。若未指定，则使用当前系统时间。 **起始版本：** 26.0.0 |
+| entityTypes | [EntityType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/natural-language-entity-type-api)[] | 否 | 是 | 实体的类别。若未指定，则默认识别所有支持的实体类型。 |
+| timestamp | number | 否 | 是 | 参考时间戳，用于指定实体识别的时间上下文。取值为从1970年1月1日开始的毫秒数（整数）。若未指定，则使用当前系统时间。 **起始版本：** 26.0.0 |
 
 #### Entity
 

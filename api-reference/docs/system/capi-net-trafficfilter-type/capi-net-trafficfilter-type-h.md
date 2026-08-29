@@ -2,8 +2,8 @@
 title: "net_trafficfilter_type.h"
 upstream_id: "harmonyos-references/capi-net-trafficfilter-type-h"
 catalog: "harmonyos-references"
-content_hash: "c99e09744f64"
-synced_at: "2026-07-28T16:50:44.387718"
+content_hash: "9863b06fe637"
+synced_at: "2026-08-29T18:16:44.657763"
 ---
 
 # net_trafficfilter_type.h
@@ -13,6 +13,8 @@ synced_at: "2026-07-28T16:50:44.387718"
 声明网络流量过滤与重定向功能所需的通用类型和错误码。该头文件定义了流量过滤与重定向功能中使用的IP地址、端口、接口等匹配条件结构体，报文过滤规则、重定向规则等配置结构体，以及操作返回的错误码。
 
 适用于调用[OH_TrafficFilter_CreateRedirector](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-net-trafficfilter-h#oh_trafficfilter_createredirector)等接口时构造参数和解析返回值。
+
+引用文件： <network/netmanager_ext/net_trafficfilter_type.h>
 
 库： libnet_trafficfilter.so
 
@@ -69,7 +71,11 @@ synced_at: "2026-07-28T16:50:44.387718"
 | OH_TRAFFICFILTER_MIN_GROUP_ID 1 | 最小Group ID值。 **起始版本：** 26.0.0 |
 | OH_TRAFFICFILTER_MAX_GROUP_ID 65535 | 最大Group ID值。 **起始版本：** 26.0.0 |
 | OH_TRAFFICFILTER_IFNAMSIZ 32 | 网络接口名称最大长度。 **起始版本：** 26.0.0 |
-| OH_TRAFFICFILTER_PROTO_ANY 0 OH_TRAFFICFILTER_PROTO_TCP 6 OH_TRAFFICFILTER_PROTO_UDP 17 OH_TRAFFICFILTER_PROTO_ICMP 1 OH_TRAFFICFILTER_PROTO_ICMPV6 58 | 协议类型常量。 **起始版本：** 26.0.0 |
+| OH_TRAFFICFILTER_PROTO_ANY 0 | 协议类型常量：任意协议。 **起始版本：** 26.0.0 |
+| OH_TRAFFICFILTER_PROTO_TCP 6 | 协议类型常量：TCP协议。 **起始版本：** 26.0.0 |
+| OH_TRAFFICFILTER_PROTO_UDP 17 | 协议类型常量：UDP协议。 **起始版本：** 26.0.0 |
+| OH_TRAFFICFILTER_PROTO_ICMP 1 | 协议类型常量：ICMP协议。 **起始版本：** 26.0.0 |
+| OH_TRAFFICFILTER_PROTO_ICMPV6 58 | 协议类型常量：ICMPV6协议。 **起始版本：** 26.0.0 |
 
 #### 枚举类型说明
 
@@ -109,10 +115,10 @@ IP匹配类型。
 | 枚举项 | 描述 |
 | --- | --- |
 | OH_TRAFFICFILTER_IP_MATCH_ANY = 0 | 任意IP。 **起始版本：** 26.0.0 |
-| OH_TRAFFICFILTER_IP_MATCH_SINGLE | 单个IP。 **起始版本：** 26.0.0 |
-| OH_TRAFFICFILTER_IP_MATCH_CIDR | CIDR格式（如192.168.1.0/24，表示匹配该子网内的所有IP）。 **起始版本：** 26.0.0 |
-| OH_TRAFFICFILTER_IP_MATCH_RANGE | IP范围。 **起始版本：** 26.0.0 |
-| OH_TRAFFICFILTER_IP_MATCH_MULTI | 多个IP。 **起始版本：** 26.0.0 |
+| OH_TRAFFICFILTER_IP_MATCH_SINGLE = 1 | 单个IP。 **起始版本：** 26.0.0 |
+| OH_TRAFFICFILTER_IP_MATCH_CIDR = 2 | CIDR格式（如192.168.1.0/24，表示匹配该子网内的所有IP）。 **起始版本：** 26.0.0 |
+| OH_TRAFFICFILTER_IP_MATCH_RANGE = 3 | IP范围。 **起始版本：** 26.0.0 |
+| OH_TRAFFICFILTER_IP_MATCH_MULTI = 4 | 多个IP。 **起始版本：** 26.0.0 |
 
 #### [h2]OH_TrafficFilter_IPFamily
 
@@ -145,9 +151,9 @@ enum OH_TrafficFilter_PortMatchType
 | 枚举项 | 描述 |
 | --- | --- |
 | OH_TRAFFICFILTER_PORT_MATCH_ANY = 0 | 任意端口。 **起始版本：** 26.0.0 |
-| OH_TRAFFICFILTER_PORT_MATCH_SINGLE | 单个端口。 **起始版本：** 26.0.0 |
-| OH_TRAFFICFILTER_PORT_MATCH_RANGE | 端口范围。 **起始版本：** 26.0.0 |
-| OH_TRAFFICFILTER_PORT_MATCH_MULTI | 多个端口。 **起始版本：** 26.0.0 |
+| OH_TRAFFICFILTER_PORT_MATCH_SINGLE = 1 | 单个端口。 **起始版本：** 26.0.0 |
+| OH_TRAFFICFILTER_PORT_MATCH_RANGE = 2 | 端口范围。 **起始版本：** 26.0.0 |
+| OH_TRAFFICFILTER_PORT_MATCH_MULTI = 3 | 多个端口。 **起始版本：** 26.0.0 |
 
 #### [h2]OH_TrafficFilter_HookPoint
 
@@ -163,7 +169,7 @@ enum OH_TrafficFilter_HookPoint
 | 枚举项 | 描述 |
 | --- | --- |
 | OH_TRAFFICFILTER_HOOK_INPUT = 0 | INPUT链，处理进入本机的报文。 **起始版本：** 26.0.0 |
-| OH_TRAFFICFILTER_HOOK_OUTPUT | OUTPUT链，处理本机发出的报文。 **起始版本：** 26.0.0 |
-| OH_TRAFFICFILTER_HOOK_FORWARD | FORWARD链，处理本机转发的报文。 **起始版本：** 26.0.0 |
-| OH_TRAFFICFILTER_HOOK_PREROUTING | PREROUTING链，处理刚到达网卡、尚未路由的报文。 **起始版本：** 26.0.0 |
-| OH_TRAFFICFILTER_HOOK_POSTROUTING | POSTROUTING链，处理即将从网卡发出的报文。 **起始版本：** 26.0.0 |
+| OH_TRAFFICFILTER_HOOK_OUTPUT = 1 | OUTPUT链，处理本机发出的报文。 **起始版本：** 26.0.0 |
+| OH_TRAFFICFILTER_HOOK_FORWARD = 2 | FORWARD链，处理本机转发的报文。 **起始版本：** 26.0.0 |
+| OH_TRAFFICFILTER_HOOK_PREROUTING = 3 | PREROUTING链，处理刚到达网卡、尚未路由的报文。 **起始版本：** 26.0.0 |
+| OH_TRAFFICFILTER_HOOK_POSTROUTING = 4 | POSTROUTING链，处理即将从网卡发出的报文。 **起始版本：** 26.0.0 |

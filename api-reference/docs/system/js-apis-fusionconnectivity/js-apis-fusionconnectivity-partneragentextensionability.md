@@ -2,8 +2,8 @@
 title: "@ohos.FusionConnectivity.PartnerAgentExtensionAbility (支持设备状态通知的ExtensionAbility组件)"
 upstream_id: "harmonyos-references/js-apis-fusionconnectivity-partneragentextensionability"
 catalog: "harmonyos-references"
-content_hash: "2c75076fc18d"
-synced_at: "2026-07-28T16:50:38.270339"
+content_hash: "9a1d0d309607"
+synced_at: "2026-08-29T18:16:38.257792"
 ---
 
 # @ohos.FusionConnectivity.PartnerAgentExtensionAbility (支持设备状态通知的ExtensionAbility组件)
@@ -37,7 +37,7 @@ type PartnerDeviceAddress = partnerAgent.PartnerDeviceAddress
 
 | 类型 | 说明 |
 | --- | --- |
-| [partnerAgent.PartnerDeviceAddress](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-fusionconnectivity-partneragent#partneragentpartnerdeviceaddress) | 信息互通设备的地址信息。 |
+| [partnerAgent.PartnerDeviceAddress](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-fusionconnectivity-partneragent#partnerdeviceaddress) | 信息互通设备的地址信息。 |
 
 #### PartnerAgentExtensionAbilityDestroyReason
 
@@ -51,11 +51,11 @@ type PartnerAgentExtensionAbilityDestroyReason = partnerAgent.PartnerAgentExtens
 
 | 类型 | 说明 |
 | --- | --- |
-| [partnerAgent.PartnerAgentExtensionAbilityDestroyReason](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-fusionconnectivity-partneragent#partneragentpartneragentextensionabilitydestroyreason) | PartnerAgentExtensionAbility被销毁的原因。 |
+| [partnerAgent.PartnerAgentExtensionAbilityDestroyReason](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-fusionconnectivity-partneragent#partneragentextensionabilitydestroyreason) | PartnerAgentExtensionAbility被销毁的原因。 |
 
 #### PartnerAgentExtensionAbility
 
-PartnerAgentExtensionAbility是外设互通扩展能力的基础类，提供设备发现与设备下线的通知功能，需要应用继承实现。本能力继承自[ExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-extensionability)。
+PartnerAgentExtensionAbility是外设互通扩展能力的基础类，提供设备发现与设备下线的通知功能，本能力继承自[ExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-extensionability)，需要应用继承实现。
 
 #### [h2]属性
 
@@ -81,7 +81,7 @@ onDestroyWithReason(reason: PartnerAgentExtensionAbilityDestroyReason): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| reason | [PartnerAgentExtensionAbilityDestroyReason](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-fusionconnectivity-partneragent#partneragentpartneragentextensionabilitydestroyreason) | 是 | 通知销毁该应用的原因。 |
+| reason | [PartnerAgentExtensionAbilityDestroyReason](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-fusionconnectivity-partneragent#partneragentextensionabilitydestroyreason) | 是 | 通知销毁该外设互通扩展能力的原因。不同枚举值代表不同的销毁场景，应用可根据不同的销毁原因执行相应的资源释放或状态保存逻辑。 |
 
 示例：
 
@@ -107,7 +107,7 @@ onDeviceDiscovered(deviceAddress: PartnerDeviceAddress): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| deviceAddress | [PartnerDeviceAddress](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-fusionconnectivity-partneragent#partneragentpartnerdeviceaddress) | 是 | 应用注册的设备地址信息。 应用需在PartnerDeviceAddress类型中设置bluetoothAddress选项。 |
+| deviceAddress | [PartnerDeviceAddress](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-fusionconnectivity-partneragent#partnerdeviceaddress) | 是 | 应用注册的设备地址信息。 应用需在PartnerDeviceAddress类型中设置bluetoothAddress选项。 |
 
 示例：
 
@@ -125,8 +125,8 @@ PartnerAgentExtensionAbility不支持以下模块的引用。
 
 | Kit | 模块 |
 | --- | --- |
-| Ability Kit | [@ohos.backgroundTaskManager (后台任务管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resourceschedule-backgroundtaskmanager) |
-| Ability Kit | [@ohos.resourceschedule.backgroundTaskManager (后台任务管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resourceschedule-backgroundtaskmanager) |
+| Background Tasks Kit | [@ohos.backgroundTaskManager (后台任务管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resourceschedule-backgroundtaskmanager) |
+| Background Tasks Kit | [@ohos.resourceschedule.backgroundTaskManager (后台任务管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resourceschedule-backgroundtaskmanager) |
 | Camera Kit | [@ohos.multimedia.cameraPicker (相机选择器)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-camerapicker) |
 | Connectivity Kit | [@ohos.connectedTag (有源标签)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-connectedtag) |
 | Connectivity Kit | [@ohos.nfc.cardEmulation (标准NFC-cardEmulation)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-cardemulation) |

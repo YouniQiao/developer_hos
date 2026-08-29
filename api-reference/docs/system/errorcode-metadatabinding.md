@@ -2,8 +2,8 @@
 title: "记忆链接错误码"
 upstream_id: "harmonyos-references/errorcode-metadatabinding"
 catalog: "harmonyos-references"
-content_hash: "fb72c2f84f99"
-synced_at: "2026-07-09T00:59:58.101185"
+content_hash: "37f3d07d8498"
+synced_at: "2026-08-29T18:17:12.409667"
 ---
 
 # 记忆链接错误码
@@ -18,7 +18,7 @@ Internal handling failed.
 
 错误描述
 
-当调用记忆链接模块接口时，若服务异常，会报此错误码。
+当调用记忆链接模块接口时，若文件创建失败，会报此错误码。
 
 可能原因
 
@@ -33,7 +33,7 @@ Internal handling failed.
 
 错误信息
 
-Subscription failed. Possible causes: 1. Abnormal system capability; 2. IPC exception; 3. Algorithm loading exception.
+Subscription Failed. Possible causes: 1. Abnormal system capability. 2. IPC communication abnormality. 3. Algorithm loading exception.
 
 错误描述
 
@@ -52,7 +52,7 @@ Subscription failed. Possible causes: 1. Abnormal system capability; 2. IPC exce
 
 错误信息
 
-Unsubscription failed. Possible causes: 1. Abnormal system capability; 2. IPC exception.
+Unsubscription Failed. Possible causes: 1. Abnormal system capability. 2. IPC communication abnormality.
 
 错误描述
 

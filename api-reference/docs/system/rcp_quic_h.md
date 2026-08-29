@@ -2,8 +2,8 @@
 title: "rcp_quic.h"
 upstream_id: "harmonyos-references/rcp_quic_h"
 catalog: "harmonyos-references"
-content_hash: "9c2910a44777"
-synced_at: "2026-07-09T00:59:33.317670"
+content_hash: "aa433c2faa5a"
+synced_at: "2026-08-29T18:16:49.819164"
 ---
 
 # rcp_quic.h
@@ -76,7 +76,7 @@ synced_at: "2026-07-09T00:59:33.317670"
 | [Rcp_QuicStreamOpt](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-overview#rcp_quicstreamopt) { RCP_QUIC_STREAM_EVENT_FUNCTION = 0, RCP_QUIC_STREAM_DATA_FUNCTION, RCP_QUIC_INBOUND_STREAM_USER_OBJECT, RCP_QUIC_STREAM_SND_BUFFER_SIZE_KB} | quic连接中配置流选项。 |
 | [Rcp_QuicConnInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-overview#rcp_quicconninfo) { RCP_INFO_CONN_GET_LOCALADDR = 0, RCP_INFO_CONN_GET_PEERADDR, RCP_INFO_CONN_DNS_TIME_MS, RCP_INFO_CONN_CONNECT_TIME_MS, RCP_INFO_CONN_SCID, RCP_INFO_CONN_DCID } | quic连接中的信息类型。 |
 | [Rcp_QuicStreamInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-overview#rcp_quicstreaminfo) { RCP_INFO_STREAM_SND_BUFFER_SIZE_KB = 0 } | quic流中的信息类型。 |
-| [Rcp_QuicErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-overview#rcp_quicerrorcode) { RCP_QUIC_ERROR_CODE_SUCCESS, RCP_QUIC_PERMISSION_DENIED, RCP_QUIC_ERROR_CODE_FAILED, RCP_QUIC_ERROR_CODE_INVALID_PARAM, RCP_QUIC_ERROR_CODE_INVALID_STATE, RCP_QUIC_ERROR_CODE_OUT_OF_MEM, RCP_QUIC_ERROR_CODE_CLOSE_FROM_PEER, RCP_QUIC_ERROR_CODE_HANDSHAKE_TIMEOUT, RCP_QUIC_ERROR_CODE_NETWORK_IDLE_TIMEOUT, RCP_QUIC_ERROR_INVALID_FRAME, RCP_QUIC_ERROR_CODE_SEND_PENDING, RCP_QUIC_ERROR_CODE_FINALIZE_PENDING, RCP_QUIC_ERROR_CODE_NETWORK_UNREACHABLE, RCP_QUIC_ERROR_CODE_ENCRYPT_ERROR, RCP_QUIC_ERROR_CODE_BUFFER_TOO_SMALL, RCP_QUIC_ERROR_CODE_EAGAIN, RCP_QUIC_ERROR_CODE_STREAM_CLOSED, RCP_QUIC_ERROR_CODE_STREAM_RESET_RECEIVED, RCP_QUIC_ERROR_CODE_STREAM_STOP_SENDING_RECEIVED } | quic请求中可能出现的错误码。 |
+| [Rcp_QuicErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-overview#rcp_quicerrorcode) { RCP_QUIC_ERROR_CODE_SUCCESS = 0, RCP_QUIC_PERMISSION_DENIED = 201, RCP_QUIC_ERROR_CODE_FAILED = 1007920001, RCP_QUIC_ERROR_CODE_INVALID_PARAM = 1007920002, RCP_QUIC_ERROR_CODE_INVALID_STATE = 1007920003, RCP_QUIC_ERROR_CODE_OUT_OF_MEM = 1007920004, RCP_QUIC_ERROR_CODE_CLOSE_FROM_PEER = 1007920005, RCP_QUIC_ERROR_CODE_HANDSHAKE_TIMEOUT = 1007920006, RCP_QUIC_ERROR_CODE_NETWORK_IDLE_TIMEOUT = 1007920007, RCP_QUIC_ERROR_INVALID_FRAME = 1007920008, RCP_QUIC_ERROR_CODE_SEND_PENDING = 1007920009, RCP_QUIC_ERROR_CODE_FINALIZE_PENDING = 1007920010, RCP_QUIC_ERROR_CODE_NETWORK_UNREACHABLE = 1007920011, RCP_QUIC_ERROR_CODE_ENCRYPT_ERROR = 1007920012, RCP_QUIC_ERROR_CODE_BUFFER_TOO_SMALL = 1007920013, RCP_QUIC_ERROR_CODE_EAGAIN = 1007920015, RCP_QUIC_ERROR_CODE_STREAM_CLOSED = 1007920018, RCP_QUIC_ERROR_CODE_STREAM_RESET_RECEIVED = 1007920019, RCP_QUIC_ERROR_CODE_STREAM_STOP_SENDING_RECEIVED = 1007920020 } | quic请求中可能出现的错误码。 |
 | [Rcp_QuicStreamDirection](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-overview#rcp_quicstreamdirection) { RCP_QUIC_STREAM_BIDI = 0, RCP_QUIC_STREAM_UNI } | quic流的方向类型。 |
 | [Rcp_QuicStreamShutdown](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-overview#rcp_quicstreamshutdown) { RCP_QUIC_STREAM_SHUTDOWN_READ = 1, RCP_QUIC_STREAM_SHUTDOWN_WRITE = 2 } | quic流的关闭操作的类型。用于指定关闭流的读或写方向。 |
 

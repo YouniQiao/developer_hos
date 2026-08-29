@@ -2,8 +2,8 @@
 title: "批量转换teamPlayerId"
 upstream_id: "harmonyos-references/gameservice-teamplayerid"
 catalog: "harmonyos-references"
-content_hash: "9ccd041c39ec"
-synced_at: "2026-07-09T01:01:19.093710"
+content_hash: "24baf117c349"
+synced_at: "2026-08-29T18:18:16.124150"
 ---
 
 # 批量转换teamPlayerId
@@ -253,7 +253,7 @@ public function batch_convert_teamPlayerIds(string $domain, string $client_id, s
 ```
 Python
 from getToken import *
-class BatchConvertTeamPlayerIdsSolution:
+class BatchGetOpenIdsSolution:
     @staticmethod
     def batch_convert_team_player_ids(domain, client_id, access_token, team_player_id, app_id, src_cp_id, dst_cp_id):
         url = domain + '/api/jas/open/players/player-accounts/team-player/convert'

@@ -2,8 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-appgallery"
 catalog: "harmonyos-references"
-content_hash: "d58c73ac28e5"
-synced_at: "2026-07-28T16:52:34.361301"
+content_hash: "3e3723b40c60"
+synced_at: "2026-08-29T18:18:12.956491"
 ---
 
 # ArkTS API错误码
@@ -120,7 +120,8 @@ Write param into container failed.
 
 处理步骤
 
-请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+1. 重启设备或重试操作。
+2. 若仍失败请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
 
 #### 1006500009 请求服务异常
 
@@ -450,7 +451,8 @@ System internal error.
 
 处理步骤
 
-请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+1. 重启设备或重试操作。
+2. 若仍失败请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
 
 #### 1009300003 身份检查错误
 
@@ -859,7 +861,8 @@ System internal error.
 
 处理步骤
 
-请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+1. 重启设备或重试操作。
+2. 若仍失败请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
 
 #### 1006700002 Service extension连接失败
 
@@ -1465,28 +1468,11 @@ No dynamic icon data.
 
 #### 1006800011 选择动态图标失败
 
-错误信息
-
-Select dynamic icon failed.
-
-错误描述
-
-选择动态图标失败。
-
-可能原因
-
-调用BMS使能动态图标失败。
-
-处理步骤
-
-1. 检查[selectDynamicIcon](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/appgallery-appinfomanager#appinfomanagerselectdynamicicon)接口参数的数据格式是否符合接口规范要求，包括数据类型、长度限制及格式规则。
-2. 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
-
 #### [h2]Enable dynamic icons error
 
 错误信息
 
-System internal error. Possible cause: Enable dynamic icons error.
+Select dynamic icon failed. Possible cause: Enable dynamic icons error.
 
 错误描述
 
@@ -1494,19 +1480,18 @@ System internal error. Possible cause: Enable dynamic icons error.
 
 可能原因
 
-1. selectDynamicIcon接口参数不符合接口规范要求，例如：必填参数缺失、参数格式错误、参数值无效。
-2. 图标数据不存在或动态图标模块未启用。
+调用BMS使能动态图标失败。
 
 处理步骤
 
-1. 检查[selectDynamicIcon](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/appgallery-appinfomanager#appinfomanagerselectdynamicicon)接口参数的数据格式是否符合接口规范要求，包括数据类型、长度限制及格式规则。
+1. 重启设备或稍等重试。
 2. 若仍失败请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
 
 #### [h2]Failed to query the module name
 
 错误信息
 
-System internal error. Possible cause: Failed to query the module name.
+Select dynamic icon failed. Possible cause: Failed to query the module name.
 
 错误描述
 
@@ -1514,13 +1499,14 @@ System internal error. Possible cause: Failed to query the module name.
 
 可能原因
 
-1. 动态图标模块名称未在系统中配置。
+1. 动态图标模块名称未在系统中配置或图标数据不存在。
 2. 内部程序运行异常。
 
 处理步骤
 
 1. 清除设备缓存并重启重试。
-2. 若仍失败请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+2. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/)平台，检查[图标信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-appinfo-manage#通过appgallery-connect配置应用图标)是否生效。
+3. 若仍失败请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
 
 #### 1006800012 恢复默认图标失败
 
@@ -1575,7 +1561,8 @@ Internal system error.
 
 处理步骤
 
-请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+1. 重启设备或重试操作。
+2. 若仍失败请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
 
 #### 1021500002 请求服务异常
 
@@ -1651,7 +1638,8 @@ The app context is invalid.
 
 处理步骤
 
-请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+1. 检查并确保传入的应用上下文符合[showCommentDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/appgallery-commentmanager#commentmanagershowcommentdialog)接口要求。
+2. 若仍失败请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
 
 #### 1021500006 未登录华为账号
 

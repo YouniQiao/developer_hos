@@ -2,8 +2,8 @@
 title: "@ohos.enterprise.bluetoothManager（蓝牙管理）"
 upstream_id: "harmonyos-references/js-apis-enterprise-bluetoothmanager"
 catalog: "harmonyos-references"
-content_hash: "f0b455361e98"
-synced_at: "2026-07-28T16:51:10.148433"
+content_hash: "b97eda82417f"
+synced_at: "2026-08-29T18:17:07.178875"
 ---
 
 # @ohos.enterprise.bluetoothManager（蓝牙管理）
@@ -65,6 +65,7 @@ getBluetoothInfo(admin: Want): BluetoothInfo
 import { bluetoothManager } from '@kit.MDMKit';
 import { Want } from '@kit.AbilityKit';
 
+// 创建企业设备管理扩展组件
 let wantTemp: Want = {
   // 需根据实际情况进行替换
   bundleName: 'com.example.myapplication',
@@ -72,9 +73,10 @@ let wantTemp: Want = {
 };
 
 try {
+  // 获取蓝牙信息
   let result: bluetoothManager.BluetoothInfo = bluetoothManager.getBluetoothInfo(wantTemp);
   console.info(`Succeeded in getting bluetooth info: ${JSON.stringify(result)}`);
-} catch(err) {
+} catch (err) {
   console.error(`Failed to get bluetooth info. Code: ${err.code}, message: ${err.message}`);
 }
 ```
@@ -123,17 +125,19 @@ addAllowedBluetoothDevices(admin: Want, deviceIds: Array<string>): void
 import { bluetoothManager } from '@kit.MDMKit';
 import { Want } from '@kit.AbilityKit';
 
+// 创建企业设备管理扩展组件
 let wantTemp: Want = {
   // 需根据实际情况进行替换
   bundleName: 'com.example.myapplication',
   abilityName: 'EnterpriseAdminAbility'
 };
-// 需根据实际情况进行替换
-let deviceIds: Array<string> = ["00:1A:2B:3C:4D:5E","AA:BB:CC:DD:EE:FF"];
+// 定义蓝牙设备MAC地址数组（需根据实际情况进行替换）
+let deviceIds: Array<string> = ["00:1A:2B:3C:4D:5E", "AA:BB:CC:DD:EE:FF"];
 try {
-  bluetoothManager.addAllowedBluetoothDevices(wantTemp,deviceIds);
+  // 添加蓝牙设备允许名单
+  bluetoothManager.addAllowedBluetoothDevices(wantTemp, deviceIds);
   console.info(`Succeeded in adding allowed bluetooth devices.`);
-} catch(err) {
+} catch (err) {
   console.error(`Failed to add allowed bluetooth devices. Code: ${err.code}, message: ${err.message}`);
 }
 ```
@@ -176,26 +180,30 @@ removeAllowedBluetoothDevices(admin: Want, deviceIds: Array<string>): void
 import { bluetoothManager } from '@kit.MDMKit';
 import { Want } from '@kit.AbilityKit';
 
+// 创建企业设备管理扩展组件
 let wantTemp: Want = {
   // 需根据实际情况进行替换
   bundleName: 'com.example.myapplication',
   abilityName: 'EnterpriseAdminAbility'
 };
-// 需根据实际情况进行替换
-let deviceIds: Array<string> = ["00:1A:2B:3C:4D:5E","AA:BB:CC:DD:EE:FF"];
+// 定义蓝牙设备MAC地址数组（需根据实际情况进行替换）
+let deviceIds: Array<string> = ["00:1A:2B:3C:4D:5E", "AA:BB:CC:DD:EE:FF"];
 try {
-  bluetoothManager.removeAllowedBluetoothDevices(wantTemp,deviceIds);
+  // 移除蓝牙设备允许名单
+  bluetoothManager.removeAllowedBluetoothDevices(wantTemp, deviceIds);
   console.info(`Succeeded in removing allowed bluetooth devices.`);
-} catch(err) {
+} catch (err) {
   console.error(`Failed to remove allowed bluetooth devices. Code: ${err.code}, message: ${err.message}`);
 }
 ```
 
 #### bluetoothManager.getAllowedBluetoothDevices
 
-getAllowedBluetoothDevices(admin: Want | null): Array<string>
+getAllowedBluetoothDevices(admin: Want): Array<string>
 
 获取蓝牙设备可用名单。
+
+本接口通过传入Want查询对应企业设备管理应用设置的策略，如需查询实际生效的策略，请使用[bluetoothManager.getAllowedBluetoothDevices](#bluetoothmanagergetallowedbluetoothdevices-1)接口。
 
 需要权限： ohos.permission.ENTERPRISE_MANAGE_BLUETOOTH
 
@@ -207,7 +215,7 @@ getAllowedBluetoothDevices(admin: Want | null): Array<string>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，API版本26.0.0之前，传入Want时查询对应企业设备管理应用设置的策略。从API版本26.0.0开始，新增支持传入null时查询实际生效的策略。 |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
 
 返回值：
 
@@ -232,13 +240,68 @@ getAllowedBluetoothDevices(admin: Want | null): Array<string>
 import { bluetoothManager } from '@kit.MDMKit';
 import { Want } from '@kit.AbilityKit';
 
+// 创建企业设备管理扩展组件
 let wantTemp: Want = {
   // 需根据实际情况进行替换
   bundleName: 'com.example.myapplication',
   abilityName: 'EnterpriseAdminAbility'
 };
 try {
+  // 获取蓝牙设备允许名单
   let result: Array<string> = bluetoothManager.getAllowedBluetoothDevices(wantTemp);
+  console.info(`Succeeded in getting allowed bluetooth devices. Result: ${JSON.stringify(result)}`);
+} catch (err) {
+  console.error(`Failed to get allowed bluetooth devices. Code: ${err.code}, message: ${err.message}`);
+}
+```
+
+#### bluetoothManager.getAllowedBluetoothDevices
+
+getAllowedBluetoothDevices(admin: Want | null): Array<string>
+
+获取蓝牙设备可用名单。
+
+起始版本： 26.0.0
+
+需要权限： ohos.permission.ENTERPRISE_MANAGE_BLUETOOTH
+
+系统能力： SystemCapability.Customization.EnterpriseDeviceManager
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，传入Want时查询对应企业设备管理应用设置的策略，传入null时查询实际生效的策略。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Array | 可用名单中蓝牙设备MAC地址的数组。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[企业设备管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprisedevicemanager)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 9200001 | The application is not an administrator application of the device. |
+| 9200002 | The administrator application does not have permission to manage the device. |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+
+示例：
+
+```
+import { bluetoothManager } from '@kit.MDMKit';
+
+// 创建企业设备管理扩展组件
+try {
+  // 获取蓝牙设备允许名单
+  // 参数需根据实际情况进行替换
+  let result: Array<string> = bluetoothManager.getAllowedBluetoothDevices(null);
   console.info(`Succeeded in getting allowed bluetooth devices. Result: ${JSON.stringify(result)}`);
 } catch(err) {
   console.error(`Failed to get allowed bluetooth devices. Code: ${err.code}, message: ${err.message}`);
@@ -288,17 +351,19 @@ addDisallowedBluetoothDevices(admin: Want, deviceIds: Array<string>): void
 import { bluetoothManager } from '@kit.MDMKit';
 import { Want } from '@kit.AbilityKit';
 
+// 创建企业设备管理扩展组件
 let wantTemp: Want = {
   // 需根据实际情况进行替换
   bundleName: 'com.example.myapplication',
   abilityName: 'EnterpriseAdminAbility'
 };
-// 需根据实际情况进行替换
-let deviceIds: Array<string> = ["00:1A:2B:3C:4D:5E","AA:BB:CC:DD:EE:FF"];
+// 定义蓝牙设备MAC地址数组（需根据实际情况进行替换）
+let deviceIds: Array<string> = ["00:1A:2B:3C:4D:5E", "AA:BB:CC:DD:EE:FF"];
 try {
+  // 添加蓝牙设备禁用名单
   bluetoothManager.addDisallowedBluetoothDevices(wantTemp,deviceIds);
   console.info(`Succeeded in adding disallowed bluetooth devices.`);
-} catch(err) {
+} catch (err) {
   console.error(`Failed to add disallowed bluetooth devices. Code: ${err.code}, message: ${err.message}`);
 }
 ```
@@ -340,26 +405,30 @@ removeDisallowedBluetoothDevices(admin: Want, deviceIds: Array<string>): void
 import { bluetoothManager } from '@kit.MDMKit';
 import { Want } from '@kit.AbilityKit';
 
+// 创建企业设备管理扩展组件
 let wantTemp: Want = {
   // 需根据实际情况进行替换
   bundleName: 'com.example.myapplication',
   abilityName: 'EnterpriseAdminAbility'
 };
-// 需根据实际情况进行替换
-let deviceIds: Array<string> = ["00:1A:2B:3C:4D:5E","AA:BB:CC:DD:EE:FF"];
+// 定义蓝牙设备MAC地址数组（需根据实际情况进行替换）
+let deviceIds: Array<string> = ["00:1A:2B:3C:4D:5E", "AA:BB:CC:DD:EE:FF"];
 try {
+  // 移除蓝牙设备禁用名单
   bluetoothManager.removeDisallowedBluetoothDevices(wantTemp,deviceIds);
   console.info(`Succeeded in removing disallowed bluetooth devices.`);
-} catch(err) {
+} catch (err) {
   console.error(`Failed to remove disallowed bluetooth devices. Code: ${err.code}, message: ${err.message}`);
 }
 ```
 
 #### bluetoothManager.getDisallowedBluetoothDevices20+
 
-getDisallowedBluetoothDevices(admin: Want | null): Array<string>
+getDisallowedBluetoothDevices(admin: Want): Array<string>
 
 获取蓝牙设备禁用名单。
+
+本接口通过传入Want查询对应企业设备管理应用设置的策略，如需查询实际生效的策略，请使用[bluetoothManager.getDisallowedBluetoothDevices](#bluetoothmanagergetdisallowedbluetoothdevices)接口。
 
 需要权限： ohos.permission.ENTERPRISE_MANAGE_BLUETOOTH
 
@@ -371,7 +440,7 @@ getDisallowedBluetoothDevices(admin: Want | null): Array<string>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，API版本26.0.0之前，传入Want时查询对应企业设备管理应用设置的策略。从API版本26.0.0开始，新增支持传入null时查询实际生效的策略。 |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
 
 返回值：
 
@@ -395,13 +464,67 @@ getDisallowedBluetoothDevices(admin: Want | null): Array<string>
 import { bluetoothManager } from '@kit.MDMKit';
 import { Want } from '@kit.AbilityKit';
 
+// 创建企业设备管理扩展组件
 let wantTemp: Want = {
   // 需根据实际情况进行替换
   bundleName: 'com.example.myapplication',
   abilityName: 'EnterpriseAdminAbility'
 };
 try {
+  // 获取蓝牙设备禁用名单
   let result: Array<string> = bluetoothManager.getDisallowedBluetoothDevices(wantTemp);
+  console.info(`Succeeded in getting disallowed bluetooth devices. Result: ${JSON.stringify(result)}`);
+} catch (err) {
+  console.error(`Failed to get disallowed bluetooth devices. Code: ${err.code}, message: ${err.message}`);
+}
+```
+
+#### bluetoothManager.getDisallowedBluetoothDevices
+
+getDisallowedBluetoothDevices(admin: Want | null): Array<string>
+
+获取蓝牙设备禁用名单。
+
+起始版本： 26.0.0
+
+需要权限： ohos.permission.ENTERPRISE_MANAGE_BLUETOOTH
+
+系统能力： SystemCapability.Customization.EnterpriseDeviceManager
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 当设备存在多个MDM应用时，传入Want时查询对应企业设备管理应用设置的策略，传入null时查询实际生效的策略。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Array | 禁用名单中蓝牙设备MAC地址的数组。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[企业设备管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprisedevicemanager)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 9200001 | The application is not an administrator application of the device. |
+| 9200002 | The administrator application does not have permission to manage the device. |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
+
+示例：
+
+```
+import { bluetoothManager } from '@kit.MDMKit';
+
+// 创建企业设备管理扩展组件
+try {
+  // 获取蓝牙设备禁用名单
+  // 参数需根据实际情况进行替换
+  let result: Array<string> = bluetoothManager.getDisallowedBluetoothDevices(null);
   console.info(`Succeeded in getting disallowed bluetooth devices. Result: ${JSON.stringify(result)}`);
 } catch(err) {
   console.error(`Failed to get disallowed bluetooth devices. Code: ${err.code}, message: ${err.message}`);
@@ -445,15 +568,17 @@ turnOnBluetooth(admin: Want): void
 import { Want } from '@kit.AbilityKit';
 import { bluetoothManager } from '@kit.MDMKit';
 
+// 创建企业设备管理扩展组件
 let wantTemp: Want = {
   // 需根据实际情况进行替换
   bundleName: 'com.example.myapplication',
   abilityName: 'EnterpriseAdminAbility'
 };
 try {
+  // 开启蓝牙
   bluetoothManager.turnOnBluetooth(wantTemp);
   console.info(`Succeeded in turning on bluetooth.`);
-} catch(err) {
+} catch (err) {
   console.error(`Failed to turn on bluetooth. Code: ${err.code}, message: ${err.message}`);
 }
 ```
@@ -495,15 +620,17 @@ turnOffBluetooth(admin: Want): void
 import { Want } from '@kit.AbilityKit';
 import { bluetoothManager } from '@kit.MDMKit';
 
+// 创建企业设备管理扩展组件
 let wantTemp: Want = {
   // 需根据实际情况进行替换
   bundleName: 'com.example.myapplication',
   abilityName: 'EnterpriseAdminAbility'
 };
 try {
+  // 关闭蓝牙
   bluetoothManager.turnOffBluetooth(wantTemp);
   console.info('Succeeded in turning off bluetooth.');
-} catch(err) {
+} catch (err) {
   console.error(`Failed to turn off bluetooth. Code: ${err.code}, message: ${err.message}`);
 }
 ```
@@ -546,15 +673,18 @@ addDisallowedBluetoothProtocols(admin: Want, accountId: number, protocols: Array
 import { Want } from '@kit.AbilityKit';
 import { bluetoothManager } from '@kit.MDMKit';
 
+// 创建企业设备管理扩展组件
 let wantTemp: Want = {
   // 需根据实际情况进行替换
   bundleName: 'com.example.myapplication',
   abilityName: 'EnterpriseAdminAbility'
 };
-// 需根据实际情况进行替换
+// 定义用户ID（需根据实际情况进行替换）
 let accountId: number = 100;
+// 定义蓝牙协议数组（需根据实际情况进行替换）
 let protocols: Array<bluetoothManager.Protocol> = [bluetoothManager.Protocol.GATT, bluetoothManager.Protocol.SPP];
 try {
+  // 添加蓝牙协议禁用名单
   bluetoothManager.addDisallowedBluetoothProtocols(wantTemp, accountId, protocols);
   console.info('Succeeded in adding disallowed bluetooth protocols policy.');
 } catch (err) {
@@ -600,15 +730,18 @@ removeDisallowedBluetoothProtocols(admin: Want, accountId: number, protocols: Ar
 import { Want } from '@kit.AbilityKit';
 import { bluetoothManager } from '@kit.MDMKit';
 
+// 创建企业设备管理扩展组件
 let wantTemp: Want = {
   // 需根据实际情况进行替换
   bundleName: 'com.example.myapplication',
   abilityName: 'EnterpriseAdminAbility'
 };
-// 需根据实际情况进行替换
+// 定义用户ID（需根据实际情况进行替换）
 let accountId: number = 100;
+// 定义蓝牙协议数组（需根据实际情况进行替换）
 let protocols: Array<bluetoothManager.Protocol> = [bluetoothManager.Protocol.GATT, bluetoothManager.Protocol.SPP];
 try {
+  // 移除蓝牙协议禁用名单
   bluetoothManager.removeDisallowedBluetoothProtocols(wantTemp, accountId, protocols);
   console.info('Succeeded in removing disallowed bluetooth protocols policy.');
 } catch (err) {
@@ -621,6 +754,8 @@ try {
 getDisallowedBluetoothProtocols(admin: Want, accountId: number): Array<Protocol>
 
 获取指定用户的蓝牙协议禁用名单。
+
+本接口通过传入Want查询对应企业设备管理应用设置的策略，如需查询实际生效的策略，请使用[bluetoothManager.getDisallowedBluetoothProtocols](#bluetoothmanagergetdisallowedbluetoothprotocols)接口。
 
 需要权限： ohos.permission.ENTERPRISE_MANAGE_BLUETOOTH
 
@@ -657,14 +792,16 @@ getDisallowedBluetoothProtocols(admin: Want, accountId: number): Array<Protocol>
 import { Want } from '@kit.AbilityKit';
 import { bluetoothManager } from '@kit.MDMKit';
 
+// 创建企业设备管理扩展组件
 let wantTemp: Want = {
   // 需根据实际情况进行替换
   bundleName: 'com.example.myapplication',
   abilityName: 'EnterpriseAdminAbility'
 };
-// 需根据实际情况进行替换
+// 定义用户ID（需根据实际情况进行替换）
 let accountId: number = 100;
 try {
+  // 获取指定用户的蓝牙协议禁用名单
   let result: Array<bluetoothManager.Protocol> = bluetoothManager.getDisallowedBluetoothProtocols(wantTemp, accountId);
   console.info(`Succeeded in getting disallowed bluetooth protocols. Result: ${JSON.stringify(result)}`);
 } catch (err) {
@@ -701,7 +838,7 @@ addDisallowedBluetoothProtocols(admin: Want, accountId: number, protocols: Array
 | admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
 | accountId | number | 是 | 用户ID，取值范围：大于等于0。 accountId可以通过@ohos.account.osAccount中的[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9-1)等接口来获取。 |
 | protocols | Array | 是 | 蓝牙协议数组，指定需要添加至禁用名单的协议。 |
-| policy | [TransferPolicy](#transferpolicy) | 是 | 传输策略。 |
+| policy | [TransferPolicy](#transferpolicy) | 是 | 传输策略，用于指定蓝牙协议的禁用方式。可选值包括：SEND_ONLY(禁止发送)、RECEIVE_ONLY(禁止接收)、RECEIVE_SEND(禁止发送和接收)。 |
 
 错误码：
 
@@ -720,13 +857,16 @@ addDisallowedBluetoothProtocols(admin: Want, accountId: number, protocols: Array
 import { Want } from '@kit.AbilityKit';
 import { bluetoothManager } from '@kit.MDMKit';
 
+// 创建企业设备管理扩展组件
 let wantTemp: Want = {
   // 需根据实际情况进行替换
   bundleName: 'com.example.myapplication',
   abilityName: 'EnterpriseAdminAbility'
 };
 
+// 定义用户ID
 let accountId: number = 100;
+// 定义蓝牙协议数组
 let protocols: Array<bluetoothManager.Protocol> = [
   bluetoothManager.Protocol.GATT,
   bluetoothManager.Protocol.SPP,
@@ -734,7 +874,9 @@ let protocols: Array<bluetoothManager.Protocol> = [
 ];
 
 try {
-  bluetoothManager.addDisallowedBluetoothProtocols(wantTemp, accountId, protocols, bluetoothManager.TransferPolicy.RECEIVE_SEND);
+  // 添加蓝牙协议禁用名单，指定传输策略为禁止发送和接收
+  bluetoothManager.addDisallowedBluetoothProtocols(wantTemp, accountId, protocols,
+    bluetoothManager.TransferPolicy.RECEIVE_SEND);
   console.info('Succeeded in adding disallowed bluetooth protocols.');
 } catch (err) {
   console.error(`Failed to add disallowed bluetooth protocols. Code is ${err.code}, message is ${err.message}`);
@@ -788,13 +930,16 @@ removeDisallowedBluetoothProtocols(admin: Want, accountId: number, protocols: Ar
 import { Want } from '@kit.AbilityKit';
 import { bluetoothManager } from '@kit.MDMKit';
 
+// 创建企业设备管理扩展组件
 let wantTemp: Want = {
   // 需根据实际情况进行替换
   bundleName: 'com.example.myapplication',
   abilityName: 'EnterpriseAdminAbility'
 };
 
+// 定义用户ID
 let accountId: number = 100;
+// 定义蓝牙协议数组
 let protocols: Array<bluetoothManager.Protocol> = [
   bluetoothManager.Protocol.GATT,
   bluetoothManager.Protocol.SPP,
@@ -802,7 +947,9 @@ let protocols: Array<bluetoothManager.Protocol> = [
 ];
 
 try {
-  bluetoothManager.removeDisallowedBluetoothProtocols(wantTemp, accountId, protocols, bluetoothManager.TransferPolicy.RECEIVE_SEND);
+  // 移除蓝牙协议禁用名单，指定传输策略为禁止发送和接收
+  bluetoothManager.removeDisallowedBluetoothProtocols(wantTemp, accountId,protocols,
+    bluetoothManager.TransferPolicy.RECEIVE_SEND);
   console.info('Succeeded in removing disallowed bluetooth protocols.');
 } catch (err) {
   console.error(`Failed to remove disallowed bluetooth protocols. Code is ${err.code}, message is ${err.message}`);
@@ -858,16 +1005,20 @@ getDisallowedBluetoothProtocols(admin: Want | null, accountId: number, policy: T
 import { Want } from '@kit.AbilityKit';
 import { bluetoothManager } from '@kit.MDMKit';
 
+// 创建企业设备管理扩展组件
 let wantTemp: Want = {
   // 需根据实际情况进行替换
   bundleName: 'com.example.myapplication',
   abilityName: 'EnterpriseAdminAbility'
 };
 
+// 定义用户ID
 let accountId: number = 100;
 
 try {
-  let result: Array<bluetoothManager.Protocol> = bluetoothManager.getDisallowedBluetoothProtocols(wantTemp, accountId, bluetoothManager.TransferPolicy.RECEIVE_SEND);
+  // 获取指定用户指定传输策略下已禁用的蓝牙协议列表
+  let result: Array<bluetoothManager.Protocol> = bluetoothManager.getDisallowedBluetoothProtocols(wantTemp, accountId,
+    bluetoothManager.TransferPolicy.RECEIVE_SEND);
   console.info(`Succeeded in getting disallowed bluetooth protocols, result : ${JSON.stringify(result)}`);
 } catch (err) {
   console.error(`Failed to get disallowed bluetooth protocols. Code is ${err.code}, message is ${err.message}`);

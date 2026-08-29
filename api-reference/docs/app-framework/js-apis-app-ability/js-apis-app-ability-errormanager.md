@@ -2,8 +2,8 @@
 title: "@ohos.app.ability.errorManager (错误管理模块)"
 upstream_id: "harmonyos-references/js-apis-app-ability-errormanager"
 catalog: "harmonyos-references"
-content_hash: "994ba8927666"
-synced_at: "2026-08-24T15:39:41.461021"
+content_hash: "ad8d83d9924b"
+synced_at: "2026-08-29T18:12:00.900028"
 ---
 
 # @ohos.app.ability.errorManager (错误管理模块)
@@ -949,7 +949,7 @@ ErrorObserver模块。该模块定义了错误观测器的接口，包含onUnhan
 
 type LoopObserver = _LoopObserver
 
-LoopObserver模块。定义异常监听，可作为 errormanager.on 函数的参数，监听并处理当前应用主线程超时的事件。
+LoopObserver模块。定义异常监听，可作为 errorManager.on 函数的参数，监听并处理当前应用主线程超时的事件。
 
 该接口通过在ArkUI事件循环的消息处理前后记录时间戳，计算消息执行时长，当执行时长超过设定的timeout阈值时触发onLoopTimeOut回调。详细监测机制请参见[LoopObserver](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-loopobserver)。
 

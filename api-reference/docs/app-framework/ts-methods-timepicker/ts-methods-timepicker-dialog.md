@@ -2,8 +2,8 @@
 title: "时间滑动选择器弹窗 (TimePickerDialog)"
 upstream_id: "harmonyos-references/ts-methods-timepicker-dialog"
 catalog: "harmonyos-references"
-content_hash: "9474f82646bd"
-synced_at: "2026-08-03T17:09:59.636121"
+content_hash: "3c2c3c84f4da"
+synced_at: "2026-08-29T18:14:48.416492"
 ---
 
 # 时间滑动选择器弹窗 (TimePickerDialog)
@@ -60,7 +60,7 @@ static show(options?: TimePickerDialogOptions)
 | acceptButtonStyle12+ | [PickerDialogButtonStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-picker-common#pickerdialogbuttonstyle12对象说明) | 否 | 是 | 设置确认按钮显示样式、重要程度、角色、背景色、圆角、文本颜色、字号、字体粗细、字体样式、字体列表、按钮是否默认响应Enter键。 默认值：请参考[PickerDialogButtonStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-picker-common#pickerdialogbuttonstyle12对象说明)。 **说明：** 1.acceptButtonStyle与cancelButtonStyle中最多只能有一个primary字段配置为true，如果同时设置为true，则primary字段不生效，保持默认值false。 2.按钮高度默认40vp，borderRadius单位为vp。在关怀模式-大字体场景下高度不变，即使按钮样式设置为圆角矩形[ROUNDED_RECTANGLE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#buttontype枚举说明)，呈现效果依然是胶囊型按钮[Capsule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#buttontype枚举说明)。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | cancelButtonStyle12+ | [PickerDialogButtonStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-picker-common#pickerdialogbuttonstyle12对象说明) | 否 | 是 | 设置取消按钮显示样式、重要程度、角色、背景色、圆角、文本颜色、字号、字体粗细、字体样式、字体列表、按钮是否默认响应Enter键。 默认值：请参考[PickerDialogButtonStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-picker-common#pickerdialogbuttonstyle12对象说明)。 **说明：** 1.acceptButtonStyle与cancelButtonStyle中最多只能有一个primary字段配置为true，如果同时设置为true，则primary字段不生效，保持默认值false。 2.按钮高度默认40vp，borderRadius单位为vp。在关怀模式-大字体场景下高度不变，即使按钮样式设置为圆角矩形[ROUNDED_RECTANGLE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#buttontype枚举说明)，呈现效果依然是胶囊型按钮[Capsule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#buttontype枚举说明)。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | alignment10+ | [DialogAlignment](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-methods-alert-dialog-box#dialogalignment枚举说明) | 否 | 是 | 设置弹窗在垂直方向上的对齐方式。 默认值：DialogAlignment.Default **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| offset10+ | [Offset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#offset) | 否 | 是 | 设置弹窗相对alignment所在位置的偏移量。 默认值：{ dx: 0 , dy: 0 } **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| offset10+ | [Offset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#offset) | 否 | 是 | 设置弹窗相对alignment所在位置的偏移量。 默认值：{ dx: 0 , dy: 0 } 单位：vp **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | maskRect10+ | [Rectangle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-methods-alert-dialog-box#rectangle8类型说明) | 否 | 是 | 弹窗遮蔽层区域，在遮蔽层区域内的事件不透传，在遮蔽层区域外的事件透传。 默认值：{ x: 0, y: 0, width: '100%', height: '100%' } **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | onAccept | (value: [TimePickerResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-timepicker#timepickerresult对象说明)) => void | 否 | 是 | 点击弹窗中的“确定”按钮时触发该回调。回调参数为当前选中的时间值，类型为TimePickerResult。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | onCancel | () => void | 否 | 是 | 点击弹窗中的“取消”按钮时触发该回调，该回调无参数。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
@@ -152,7 +152,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002689560071.gif)
+ ![](./img/zh-cn_image_0000002731519279.gif)
 
 #### [h2]示例2（自定义样式）
 
@@ -210,7 +210,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002689679895.png)
+ ![](./img/zh-cn_image_0000002701640080.png)
 
 #### [h2]示例3（悬停态弹窗）
 
@@ -265,7 +265,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002659440562.gif)
+ ![](./img/zh-cn_image_0000002731359299.gif)
 
 #### [h2]示例4（设置弹窗位置）
 
@@ -299,7 +299,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002659600490.png)
+ ![](./img/zh-cn_image_0000002701799994.png)
 
 #### [h2]示例5（设置遮蔽区）
 
@@ -332,7 +332,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002689560073.png)
+ ![](./img/zh-cn_image_0000002731519281.png)
 
 #### [h2]示例6（设置弹窗背板）
 
@@ -367,7 +367,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002689679897.png)
+ ![](./img/zh-cn_image_0000002701640082.png)
 
 #### [h2]示例7（设置时间滑动选择器弹窗的起始时间）
 
@@ -403,7 +403,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002659440564.png)
+ ![](./img/zh-cn_image_0000002731359301.png)
 
 #### [h2]示例8（设置时间滑动选择器弹窗的结束时间）
 
@@ -439,7 +439,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002659600492.png)
+ ![](./img/zh-cn_image_0000002701799996.png)
 
 #### [h2]示例9（设置上午下午跟随时间联动）
 
@@ -474,7 +474,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002689560075.gif)
+ ![](./img/zh-cn_image_0000002731519283.gif)
 
 #### [h2]示例10（自定义背景模糊效果参数）
 
@@ -508,7 +508,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002689679899.png)
+ ![](./img/zh-cn_image_0000002701640084.png)
 
 #### [h2]示例11（自定义背景效果参数）
 
@@ -543,4 +543,33 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002659440566.png)
+ ![](./img/zh-cn_image_0000002731359303.png)
+
+#### [h2]示例12（设置系统材质）
+
+该示例通过配置[systemMaterial](#timepickerdialogoptions对象说明)，实现系统材质效果。
+
+从API版本26.0.0开始，在TimePickerDialogOptions中新增了systemMaterial属性。
+
+```
+import { uiMaterial } from '@kit.ArkUI';
+
+@Entry
+@Component
+struct DatePickerDialogExample {
+  build() {
+    Stack({ alignContent: Alignment.Top }) {
+      Column() {
+        Button('TimePickerDialog')
+          .margin(20)
+          .onClick(() => {
+            this.getUIContext().showTimePickerDialog({
+              systemMaterial: new uiMaterial.ImmersiveMaterial({ style: uiMaterial.ImmersiveStyle.ULTRA_THICK })
+            });
+          })
+      }.width('100%')
+    }
+  }
+}
+```
+ ![](./img/zh-cn_image_0000002701799998.png)

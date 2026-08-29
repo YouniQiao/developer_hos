@@ -2,15 +2,15 @@
 title: "合单支付结果回调通知"
 upstream_id: "harmonyos-references/payment-partner-combined-notify"
 catalog: "harmonyos-references"
-content_hash: "de63e88d2222"
-synced_at: "2026-07-09T01:01:33.982907"
+content_hash: "7be1b8168b21"
+synced_at: "2026-08-29T18:18:29.222664"
 ---
 
 # 合单支付结果回调通知
 
 #### 功能介绍
 
-用户支付完成后，华为支付服务器调用此接口向商户服务器发送支付关键事件通知。
+用户合单支付完成后，华为支付服务器调用此接口向开发者服务器发送支付关键事件通知。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -20,7 +20,7 @@ synced_at: "2026-07-09T01:01:33.982907"
 #### 接口原型
 
 - **承载协议：** HTTPS POST
-- **接口方向：** 开发者服务器 -> 华为支付服务器
+- **接口方向：** 华为支付服务器 -> 开发者服务器
 - **接口URL：** URL由开发者在请求预下单接口时传递的callbackUrl
 - **数据格式：** 请求消息：Content-Type: application/json 响应消息：Content-Type: application/json
 
@@ -54,8 +54,6 @@ Content-Type: application/json;charset=UTF-8
     "callbackId": "124070308575300049145189***",
     "callbackTime": "2023-08-29 10:29:14",
     "dataType": "plain",
-    "resultCode": "000000",
-    "resultDesc": "Success.",
     "sign": "MEYCIQDOsSJ5gL9mcYKi9usz4********************hAOd2P+Gu77jclylTWJOTThPxOdJs+2zsDv3sg38UY/Wy",
     "signType": "SM2",
     "combinedSysTransOrderNo": "123112802273686342***",

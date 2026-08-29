@@ -2,8 +2,8 @@
 title: "Interfaces (其他)"
 upstream_id: "harmonyos-references/arkts-apis-avsession-i"
 catalog: "harmonyos-references"
-content_hash: "fd50b99f6f32"
-synced_at: "2026-07-09T01:00:17.999973"
+content_hash: "5e381a13f25b"
+synced_at: "2026-08-29T18:17:26.617084"
 ---
 
 # Interfaces (其他)
@@ -12,7 +12,7 @@ synced_at: "2026-07-09T01:00:17.999973"
 
 #### AVCastControlCommand10+
 
-投播控制器接受的命令的对象描述。
+投播控制器接收的命令的对象描述。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -47,7 +47,7 @@ synced_at: "2026-07-09T01:00:17.999973"
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| assetId | string | 否 | 否 | 媒体ID。媒体信息的唯一标识，由应用自定义。 - 该属性发生变化则其他元数据属性都将被刷新。 - 若该属性维持不变，且不设置相应的媒体元数据信息，那么将不会更新对应的媒体元数据信息。 - 当该属性设为空值时，调用[setAVMetadata](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-avsession#setavmetadata10)方法将失败，返回错误码6600101。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| assetId | string | 否 | 否 | 媒体ID。媒体信息的唯一标识，由应用自定义。 - 该属性发生变化则其他元数据属性都将被刷新。 - 若该属性维持不变，且不设置其他媒体元数据信息，那么将不会更新对应的媒体元数据信息。 - 当该属性设为空值时，调用[setAVMetadata](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-avsession#setavmetadata10)方法将失败，返回错误码6600101。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | title | string | 否 | 是 | 标题。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | artist | string | 否 | 是 | 艺术家。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | author | string | 否 | 是 | 专辑作者。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
@@ -57,22 +57,22 @@ synced_at: "2026-07-09T01:00:17.999973"
 | album | string | 否 | 是 | 专辑名称。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | writer | string | 否 | 是 | 词作者。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | composer | string | 否 | 是 | 作曲者。 |
-| duration | number | 否 | 是 | 媒体时长，单位毫秒（ms）。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| mediaImage | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | string | 否 | 是 | 图片的像素数据或者图片路径地址（本地路径或网络路径）。应用通过setAVMetadata设置图片数据。 - 设置的数据类型为PixelMap时，通过getAVMetadata获取的将为PixelMap。 - 设置为url图片路径，获取的为url图片路径。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| duration | number | 否 | 是 | 媒体时长，单位为毫秒（ms）。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| mediaImage | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | string | 否 | 是 | 图片的像素数据或者图片路径地址（仅支持网络路径）。应用通过setAVMetadata设置图片数据。 - 设置的数据类型为PixelMap时，通过getAVMetadata获取的将为PixelMap。 - 设置为URL图片路径，获取的为URL图片路径。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | bundleIcon18+ | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 是 | 是 | 应用图标图片的像素数据。只读类型，不从应用侧设置。 |
 | publishDate | Date | 否 | 是 | 发行日期。 |
 | subtitle | string | 否 | 是 | 子标题。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | description | string | 否 | 是 | 媒体描述。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| lyric | string | 否 | 是 | 媒体歌词内容。应用需将歌词内容拼接为一个字符串传入。 字符串长度需小于40960字节。 **说明：** 系统支持简单版的LRC格式（Simple LRC format）的歌词文本内容。当传入的歌词内容不规范（例如：出现重复的时间戳等），将导致解析失败，并在系统中显示异常。 |
-| singleLyricText17+ | string | 否 | 是 | 单条媒体歌词内容。应用需将歌词内容拼接为一个字符串传入（不包含时间戳）。 字符串长度小于40960字节。 **元服务API：** 从API version 17开始，该接口支持在元服务中使用。 |
+| lyric | string | 否 | 是 | 媒体歌词内容。应用需将歌词内容拼接为一个字符串传入。 字符串的字节长度需小于40960字节。 **说明：** 系统支持简单版的LRC格式（Simple LRC format）的歌词文本内容。当传入的歌词内容不规范（例如：出现重复的时间戳等），将导致解析失败，并在系统中显示异常。 |
+| singleLyricText17+ | string | 否 | 是 | 单条媒体歌词内容。应用需将歌词内容拼接为一个字符串传入（不包含时间戳）。 字符串的字节长度需小于40960字节。 **元服务API：** 从API version 17开始，该接口支持在元服务中使用。 |
 | previousAssetId | string | 否 | 是 | 上一首媒体ID。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | nextAssetId | string | 否 | 是 | 下一首媒体ID。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| filter11+ | number | 否 | 是 | 当前会话支持的协议，默认为TYPE_CAST_PLUS_STREAM。具体取值参考[ProtocolType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-e#protocoltype11)。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| filter11+ | number | 否 | 是 | 当前会话支持的协议。若未设置该参数，默认为TYPE_CAST_PLUS_STREAM。具体取值参考[ProtocolType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-e#protocoltype11)。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | drmSchemes12+ | Array | 否 | 是 | 当前session支持的DRM方案，取值为DRM方案uuid。 |
-| skipIntervals11+ | [SkipIntervals](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-e#skipintervals11) | 否 | 是 | 快进快退支持的时间间隔。默认为SECONDS_15，即15秒。 |
+| skipIntervals11+ | [SkipIntervals](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-e#skipintervals11) | 否 | 是 | 快进快退支持的时间间隔。若未设置该参数，默认为SECONDS_15，即15秒。 |
 | displayTags11+ | number | 否 | 是 | 媒体资源的金标类型，取值参考[DisplayTag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-e#displaytag11)。 |
-| rewindSkipIntervals | [SkipIntervals](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-e#skipintervals11) | 否 | 是 | 快退支持的时间间隔。默认为SECONDS_15，即15秒。 系统会使用此值作为快退操作的时间间隔，而非skipIntervals的值。 若未设置此参数，快退操作的时间间隔仍会沿用skipIntervals的值。 **模型约束：** 此接口仅可在Stage模型下使用。 **起始版本**：26.0.0 |
-| fastForwardSkipIntervals | [SkipIntervals](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-e#skipintervals11) | 否 | 是 | 快进支持的时间间隔。默认为SECONDS_15，即15秒。 系统会使用此值作为快进操作的时间间隔，而非skipIntervals的值。 若未设置此参数，快进操作的时间间隔仍会沿用skipIntervals的值。 **模型约束：** 此接口仅可在Stage模型下使用。 **起始版本**：26.0.0 |
+| rewindSkipIntervals | [SkipIntervals](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-e#skipintervals11) | 否 | 是 | 快退支持的时间间隔。默认为SECONDS_15，即15秒。 系统会使用此值作为快退操作的时间间隔，而非skipIntervals的值。 若未设置此参数，快退操作的时间间隔仍会沿用skipIntervals的值。 **模型约束：** 此接口仅可在Stage模型下使用。 **起始版本：** 26.0.0 |
+| fastForwardSkipIntervals | [SkipIntervals](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-e#skipintervals11) | 否 | 是 | 快进支持的时间间隔。默认为SECONDS_15，即15秒。 系统会使用此值作为快进操作的时间间隔，而非skipIntervals的值。 若未设置此参数，快进操作的时间间隔仍会沿用skipIntervals的值。 **模型约束：** 此接口仅可在Stage模型下使用。 **起始版本：** 26.0.0 |
 
 #### AVMediaDescription10+
 
@@ -91,16 +91,16 @@ synced_at: "2026-07-09T01:00:17.999973"
 | mediaSize | number | 否 | 是 | 播放列表媒体的大小。 **系统能力：** SystemCapability.Multimedia.AVSession.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | albumTitle | string | 否 | 是 | 播放列表媒体专辑标题。 **系统能力：** SystemCapability.Multimedia.AVSession.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | albumCoverUri | string | 否 | 是 | 播放列表媒体专辑封面URI。 **系统能力：** SystemCapability.Multimedia.AVSession.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| lyricContent | string | 否 | 是 | 播放列表媒体歌词内容。 字符串长度需小于40960字节。 **系统能力：** SystemCapability.Multimedia.AVSession.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| lyricContent | string | 否 | 是 | 播放列表媒体歌词内容。 字符串的字节长度需小于40960字节。 **系统能力：** SystemCapability.Multimedia.AVSession.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | lyricUri | string | 否 | 是 | 播放列表媒体歌词URI。 **系统能力：** SystemCapability.Multimedia.AVSession.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| artist | string | 否 | 是 | 播放列表媒体专辑作者。 **系统能力：** SystemCapability.Multimedia.AVSession.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| artist | string | 否 | 是 | 播放列表媒体艺术家。 **系统能力：** SystemCapability.Multimedia.AVSession.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | fdSrc | [media.AVFileDescriptor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-i#avfiledescriptor9) | 否 | 是 | 播放列表媒体本地文件的句柄。 **系统能力：** SystemCapability.Multimedia.AVSession.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | dataSrc12+ | [media.AVDataSrcDescriptor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-i#avdatasrcdescriptor10) | 否 | 是 | 播放列表数据源描述。 **系统能力：** SystemCapability.Multimedia.AVSession.Core |
 | pcmSrc20+ | boolean | 否 | 是 | 播放列表是否使用PCM数据源。true表示使用PCM数据源，false表示不使用PCM数据源。 **系统能力：** SystemCapability.Multimedia.AVSession.Core **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | drmScheme12+ | string | 否 | 是 | 播放列表媒体支持的DRM方案，由uuid表示。 **系统能力：** SystemCapability.Multimedia.AVSession.Core |
-| duration | number | 否 | 是 | 播放列表媒体播放时长。 **系统能力：** SystemCapability.Multimedia.AVSession.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| startPosition | number | 否 | 是 | 播放列表媒体起始播放位置。音视频投播场景中，在投播直播资源时，此字段应置空或赋值为0。 **系统能力：** SystemCapability.Multimedia.AVSession.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| creditsPosition | number | 否 | 是 | 播放列表媒体的片尾播放位置。 **系统能力：** SystemCapability.Multimedia.AVSession.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| duration | number | 否 | 是 | 播放列表媒体播放时长，单位为毫秒（ms）。 **系统能力：** SystemCapability.Multimedia.AVSession.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| startPosition | number | 否 | 是 | 播放列表媒体起始播放位置，单位为毫秒（ms）。音视频投播场景中，在投播直播资源时，此字段应置空或赋值为0。 **系统能力：** SystemCapability.Multimedia.AVSession.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| creditsPosition | number | 否 | 是 | 播放列表媒体的片尾播放位置，单位为毫秒（ms）。 **系统能力：** SystemCapability.Multimedia.AVSession.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | appName | string | 否 | 是 | 播放列表提供的应用的名字。 **系统能力：** SystemCapability.Multimedia.AVSession.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | displayTags11+ | number | 否 | 是 | 媒体资源的金标类型，取值参考[DisplayTag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-e#displaytag11)。 在使用了cast+协议的音频投播场景下，不支持使用该属性。 **系统能力：** SystemCapability.Multimedia.AVSession.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | launchClientData20+ | string | 否 | 是 | 投播过程中应用程序向接收方发送的自定义数据。 **系统能力：** SystemCapability.Multimedia.AVSession.AVCast **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
@@ -129,7 +129,7 @@ synced_at: "2026-07-09T01:00:17.999973"
 | state | [PlaybackState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-e#playbackstate10) | 否 | 是 | 播放状态。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | speed | number | 否 | 是 | 播放倍速。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | position | [PlaybackPosition](#playbackposition10) | 否 | 是 | 播放位置。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| bufferedTime | number | 否 | 是 | 缓冲时间。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| bufferedTime | number | 否 | 是 | 缓冲时间，单位为毫秒（ms）。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | loopMode | [LoopMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-e#loopmode10) | 否 | 是 | 循环模式。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | isFavorite | boolean | 否 | 是 | 表示是否收藏。true表示收藏，false表示不收藏。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | activeItemId | number | 否 | 是 | 正在播放的媒体ID。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
@@ -151,8 +151,8 @@ synced_at: "2026-07-09T01:00:17.999973"
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| elapsedTime | number | 否 | 否 | 已用时间，单位毫秒（ms）。 |
-| updateTime | number | 否 | 否 | 更新时间，单位毫秒（ms）。 |
+| elapsedTime | number | 否 | 否 | 已用时间，单位为毫秒（ms）。 |
+| updateTime | number | 否 | 否 | 更新时间，单位为毫秒（ms）。 |
 
 #### CallMetadata11+
 
@@ -212,7 +212,7 @@ synced_at: "2026-07-09T01:00:17.999973"
 
 #### AVControlCommand10+
 
-会话接受的命令的对象描述。
+会话接收的命令的对象描述。
 
 系统能力： SystemCapability.Multimedia.AVSession.Core
 
@@ -226,13 +226,15 @@ synced_at: "2026-07-09T01:00:17.999973"
 
 拉起的投播组件包含的配置属性。
 
+从API版本26.0.0开始支持Wearable设备使用本属性。
+
 系统能力： SystemCapability.Multimedia.AVSession.AVCast
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | sessionType | [AVSessionType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-t#avsessiontype10) | 否 | 是 | 会话类型，默认值为audio。 当前仅支持的会话类型有audio和video。如果传入voice_call或video_call，将默认按照传入audio处理。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
-| pickerStyle22+ | [AVCastPickerStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-avcastpickerparam#avcastpickerstyle12) | 否 | 是 | 设置组件样式。 |
-| menuPosition22+ | [MenuPosition](#menuposition-22) | 否 | 是 | 当pickerStyle设置为STYLE_MENU时，可以设置弹出菜单的位置。 |
+| pickerStyle22+ | [AVCastPickerStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-avcastpickerparam#avcastpickerstyle12) | 否 | 是 | 设置组件样式。 Wearable设备上无需配置该属性，拉起的设备列表以全屏显示。 |
+| menuPosition22+ | [MenuPosition](#menuposition22) | 否 | 是 | 当pickerStyle设置为STYLE_MENU时，可以设置弹出菜单的位置。 |
 
 #### AudioCapabilities20+
 
@@ -259,7 +261,7 @@ synced_at: "2026-07-09T01:00:17.999973"
 | callerDeviceId | string | 否 | 是 | 调用方设备ID。 |
 | callerType | [CallerType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-e#callertype22) | 否 | 是 | 调用方来源。 |
 
-#### MenuPosition 22+
+#### MenuPosition22+
 
 定义可弹出菜单的组件的位置。
 
@@ -274,7 +276,7 @@ synced_at: "2026-07-09T01:00:17.999973"
 | width | number | 否 | 否 | 组件宽度。单位为vp。 |
 | height | number | 否 | 否 | 组件高度。单位为vp。 |
 
-#### AVSessionDescriptor 23+
+#### AVSessionDescriptor23+
 
 会话的相关描述信息。
 

@@ -2,8 +2,8 @@
 title: "组件标识"
 upstream_id: "harmonyos-references/ts-universal-attributes-component-id"
 catalog: "harmonyos-references"
-content_hash: "dcf62beddc25"
-synced_at: "2026-08-18T15:32:03.553030"
+content_hash: "3592075967ea"
+synced_at: "2026-08-29T18:12:47.222454"
 ---
 
 # 组件标识
@@ -19,7 +19,7 @@ id为组件的唯一标识，在整个应用内唯一。本模块提供组件标
 
 id(value: string): T
 
-组件的唯一标识，唯一性由使用者保证。当未设置id时，组件默认id为空。与key同时使用时，后赋值的属性会覆盖先赋值的属性。
+组件的唯一标识，唯一性由使用者保证。若同一个组件设置了多个id，最后设置的生效。当未设置id时，组件默认id为空。与key同时使用时，后赋值的属性会覆盖先赋值的属性。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 

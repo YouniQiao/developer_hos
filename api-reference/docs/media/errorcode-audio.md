@@ -2,8 +2,8 @@
 title: "Audio错误码"
 upstream_id: "harmonyos-references/errorcode-audio"
 catalog: "harmonyos-references"
-content_hash: "b5e6a0c255f3"
-synced_at: "2026-08-03T17:11:43.635963"
+content_hash: "2c67f51a0ec6"
+synced_at: "2026-08-29T18:17:23.423791"
 ---
 
 # Audio错误码
@@ -83,7 +83,7 @@ Unsupported option.
 
 处理步骤
 
-1. 确认当前api支持的枚举或其他入参。
+1. 确认当前API支持的枚举或其他入参。
 2. 改用支持的参数选项。
 
 #### 6800105 处理超时
@@ -308,4 +308,4 @@ AudioCapturer创建成功，但调用[start](https://developer.huawei.com/consum
 
 处理步骤
 
-尝试重试或[提单](https://gitcode.com/openharmony/docs/issues/create/choose)处理。
+尝试重试或[提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)处理。

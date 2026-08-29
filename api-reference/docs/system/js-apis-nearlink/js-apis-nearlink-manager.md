@@ -1,14 +1,14 @@
 ---
-title: "@ohos.nearlink.manager (星闪开关能力)"
+title: "@ohos.nearlink.manager (星闪基础管理能力)"
 upstream_id: "harmonyos-references/js-apis-nearlink-manager"
 catalog: "harmonyos-references"
-content_hash: "8bc68e2938e0"
-synced_at: "2026-07-28T16:50:38.465763"
+content_hash: "ab4fa6768f88"
+synced_at: "2026-08-29T18:16:38.334936"
 ---
 
-# @ohos.nearlink.manager (星闪开关能力)
+# @ohos.nearlink.manager (星闪基础管理能力)
 
-本模块提供了管理星闪基础能力，包括获取设备信息、订阅状态变化事件等。
+本模块提供了星闪基础管理能力，包括查询是否支持星闪、获取本端设备信息、管理星闪开关状态及订阅状态变化事件等。
 
 起始版本： 26.0.0
 
@@ -38,7 +38,7 @@ getState(): NearlinkState
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[星闪错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -113,11 +113,11 @@ getLocalName(): string
 
 | 类型 | 说明 |
 | --- | --- |
-| string | 表示星闪设备本地名称。最大长度为30。 |
+| string | 表示星闪设备本地名称。最大长度为30个字符。 |
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[星闪错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -162,7 +162,7 @@ getPairedDevices(): string[]
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[星闪错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -209,7 +209,7 @@ onStateChange(callback: Callback<NearlinkState>): void
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[星闪错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -256,11 +256,11 @@ offStateChange(callback?: Callback<NearlinkState>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | Callback | 否 | 回调函数，返回星闪的开关状态。 填写该参数则取消当前callback订阅。不填写该参数则取消该type对应的所有回调。 |
+| callback | Callback | 否 | 回调函数，返回星闪的开关状态。 填写该参数则取消当前callback订阅。不填写该参数则取消该事件对应的所有回调。 |
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[NearLink错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[星闪错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-nearlink-service)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |

@@ -2,8 +2,8 @@
 title: "@ohos.app.ability.kioskManager (Kiosk模式管理)"
 upstream_id: "harmonyos-references/js-apis-app-ability-kioskmanager"
 catalog: "harmonyos-references"
-content_hash: "c1b08764645b"
-synced_at: "2026-07-24T16:42:57.498164"
+content_hash: "b51a2d9aa702"
+synced_at: "2026-08-29T18:12:00.962452"
 ---
 
 # @ohos.app.ability.kioskManager (Kiosk模式管理)
@@ -38,7 +38,7 @@ enterKioskMode(context: UIAbilityContext): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| context | [UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext) | 是 | 需要进入kiosk模式的UIAbility的上下文。 |
+| context | [UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext) | 是 | 需要进入Kiosk模式的UIAbility的上下文。 |
 
 返回值：
 
@@ -106,7 +106,7 @@ exitKioskMode(context: UIAbilityContext): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| context | [UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext) | 是 | 需要退出kiosk模式的UIAbility的上下文。 |
+| context | [UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext) | 是 | 需要退出Kiosk模式的UIAbility的上下文。 |
 
 返回值：
 

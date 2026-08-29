@@ -2,8 +2,8 @@
 title: "media_asset_capi.h"
 upstream_id: "harmonyos-references/capi-media-asset-capi-h"
 catalog: "harmonyos-references"
-content_hash: "245b7ce4fa42"
-synced_at: "2026-07-09T01:00:48.736144"
+content_hash: "1b347194db76"
+synced_at: "2026-08-29T18:17:47.345159"
 ---
 
 # media_asset_capi.h
@@ -184,7 +184,7 @@ MediaLibrary_ErrorCode OH_MediaAsset_GetDateAdded(OH_MediaAsset* mediaAsset, uin
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_MediaAsset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-oh-mediaasset)* mediaAsset | [OH_MediaAsset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-mediaassetmanager-oh-mediaasset)实例。 |
-| uint32_t* dateAdded | 资产添加日期。该值是添加文件时间距1970年1月1日的秒数值。 |
+| uint32_t* dateAdded | 资产添加日期。该值是添加文件时间距1970年1月1日的秒数值。单位：秒（s）。 |
 
 返回：
 

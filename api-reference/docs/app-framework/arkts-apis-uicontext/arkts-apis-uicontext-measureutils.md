@@ -2,8 +2,8 @@
 title: "Class (MeasureUtils)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-measureutils"
 catalog: "harmonyos-references"
-content_hash: "2c92948d4319"
-synced_at: "2026-07-28T16:41:07.405340"
+content_hash: "a022eeaa3571"
+synced_at: "2026-08-29T18:12:26.919280"
 ---
 
 # Class (MeasureUtils)
@@ -46,7 +46,7 @@ measureText(options: MeasureOptions): number
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 文本宽度。 **说明：** 浮点数会向上取整。 单位：px |
+| number | 文本宽度。 **说明：** 浮点数会向上取整。 单位：px 当参数异常或内部计算失败时，会返回undefined。 |
 
 示例：
 
@@ -68,7 +68,8 @@ struct Index {
   build() {
     Row() {
       Column() {
-        Text(`The width of 'Hello World': ${this.textWidth}`)
+        // measureText在参数异常或内部计算失败时会返回undefined，使用时需做判空处理
+        Text(`The width of 'Hello World': ${this.textWidth ?? 0}`)
       }
       .width('100%')
     }
@@ -101,7 +102,7 @@ measureTextSize(options: MeasureOptions): SizeOptions
 
 | 类型 | 说明 |
 | --- | --- |
-| [SizeOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#sizeoptions) | 返回文本所占布局宽度和高度。 **说明：** 未设置constraintWidth时，文本宽度返回值会向上取整；传参constraintWidth时，文本宽度返回值不被取整。 文本宽度以及高度返回值单位均为px。 |
+| [SizeOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#sizeoptions) | 返回文本所占布局宽度和高度。 **说明：** 未设置constraintWidth时，文本宽度返回值会向上取整；传参constraintWidth时，文本宽度返回值不被取整。 文本宽度以及高度返回值单位均为px。 当参数异常或内部计算失败时，会返回undefined。 |
 
 示例1：
 
@@ -122,8 +123,9 @@ struct Index {
   build() {
     Row() {
       Column() {
-        Text(`The width of 'Hello World': ${this.textSize.width}`)
-        Text(`The height of 'Hello World': ${this.textSize.height}`)
+        // measureTextSize在参数异常或内部计算失败时会返回undefined，使用时需做判空处理
+        Text(`The width of 'Hello World': ${this.textSize?.width ?? 0}`)
+        Text(`The height of 'Hello World': ${this.textSize?.height ?? 0}`)
       }
       .width('100%')
     }
@@ -193,6 +195,10 @@ struct TextDemo {
       constraintWidth: this.textWidth,
       maxLines: this.maxLines
     });
+    // measureTextSize在参数异常或内部计算失败时会返回undefined，使用时需做判空处理
+    if (!noMaxLinesSize || !hasMaxLinesSize) {
+      return;
+    }
 
     this.displayedText = this.fullText;
     if (Number(noMaxLinesSize.height) > Number(hasMaxLinesSize.height)) { // 存在截断
@@ -205,6 +211,9 @@ struct TextDemo {
           textContent: textAfterCut,
           constraintWidth: this.textWidth
         });
+        if (!sizeAfterCut) {
+          continue;
+        }
         if (Number(sizeAfterCut.height) <= Number(hasMaxLinesSize.height)) {
           break;
         } else {
@@ -239,7 +248,7 @@ struct TextDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685927857.png)
+ ![](./img/zh-cn_image_0000002701639390.png)
 
 #### getParagraphs20+
 
@@ -262,7 +271,7 @@ getParagraphs(styledString: StyledString, options?: TextLayoutOptions): Array<Pa
 
 | 类型 | 说明 |
 | --- | --- |
-| Array | 根据文本布局选项转换后得到的[Paragraph](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-text#paragraph)对象数组，用于后续的文本布局计算。 |
+| Array | 根据文本布局选项转换后得到的[Paragraph](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-text#paragraph)对象数组，用于后续的文本布局计算。 **说明：** 当参数异常或内部计算失败时，会返回undefined。 |
 
 示例：
 
@@ -348,6 +357,10 @@ struct Index {
   // 测算属性字符串在指定宽度下能显示的行数
   getLineNum(styledString: StyledString, width: LengthMetrics) {
     let paragraphArr = this.getUIContext().getMeasureUtils().getParagraphs(styledString, { constraintWidth: width });
+    // getParagraphs在参数异常或内部计算失败时会返回undefined，使用时需做判空处理
+    if (!paragraphArr) {
+      return 0;
+    }
     let lineCount = 0;
     for (let i = 0; i < paragraphArr.length; ++i) {
       lineCount += paragraphArr[i].getLineCount();
@@ -468,4 +481,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008178.png)
+ ![](./img/zh-cn_image_0000002731358611.png)

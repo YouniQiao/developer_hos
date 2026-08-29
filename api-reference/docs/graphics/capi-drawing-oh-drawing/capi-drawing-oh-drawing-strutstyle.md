@@ -2,14 +2,14 @@
 title: "OH_Drawing_StrutStyle"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-strutstyle"
 catalog: "harmonyos-references"
-content_hash: "ff3d1124a45f"
-synced_at: "2026-07-09T01:01:01.103918"
+content_hash: "7a6d3eee5319"
+synced_at: "2026-08-29T18:17:58.504035"
 ---
 
 # OH_Drawing_StrutStyle
 
 ```
-typedef struct OH_Drawing_StrutStyle {...} OH_Drawing_StrutStyle
+typedef struct {...} OH_Drawing_StrutStyle
 ```
 
 #### 概述
@@ -29,7 +29,7 @@ typedef struct OH_Drawing_StrutStyle {...} OH_Drawing_StrutStyle
 | 名称 | 描述 |
 | --- | --- |
 | [OH_Drawing_FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-text-typography-h#oh_drawing_fontweight) weight | 计算支柱时使用的字体粗细。 |
-| [OH_Drawing_FontStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-text-typography-h#oh_drawing_fontstyle) style | 计算支柱时使用的字体格式。 |
+| [OH_Drawing_FontStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-text-typography-h#oh_drawing_fontstyle) style | 计算支柱时使用的字体样式。 |
 | double size | 逻辑像素中的上升加下降的大小。 |
 | double heightScale | 行高缩放系数。 |
 | bool heightOverride | 是否启用高度覆盖。true表示启用，false表示不启用。 |

@@ -2,8 +2,8 @@
 title: "native_avsession.h"
 upstream_id: "harmonyos-references/capi-native-avsession-h"
 catalog: "harmonyos-references"
-content_hash: "51500f06bd93"
-synced_at: "2026-07-09T01:00:19.892780"
+content_hash: "6c5e4d283841"
+synced_at: "2026-08-29T18:17:27.272944"
 ---
 
 # native_avsession.h
@@ -28,7 +28,7 @@ synced_at: "2026-07-09T01:00:19.892780"
 
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
-| [OH_AVSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-oh-avsession) | OH_AVSession | 定义播控会话对象。播控会话对象可以使用[OH_AVSession_Create](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avsession-h#oh_avsession_create)方法创建。 |
+| [OH_AVSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-oh-avsession) | OH_AVSession | 定义播控会话对象。播控会话对象可以使用[OH_AVSession_Create](#oh_avsession_create)方法创建。 |
 | [OH_AVCastController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-oh-avcastcontroller) | OH_AVCastController | 声明投播控制器对象。投播控制器对象可以使用[OH_AVSession_CreateAVCastController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avsession-h#oh_avsession_createavcastcontroller)方法创建。 |
 
 #### [h2]函数
@@ -36,9 +36,9 @@ synced_at: "2026-07-09T01:00:19.892780"
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
 | [typedef AVSessionCallback_Result (*OH_AVSessionCallback_OnCommand)(OH_AVSession* session, AVSession_ControlCommand command, void* userData)](#oh_avsessioncallback_oncommand) | OH_AVSessionCallback_OnCommand | 通用的执行播控命令的回调。 |
-| [typedef AVSessionCallback_Result (*OH_AVSessionCallback_OnFastForward)(OH_AVSession* session, uint32_t seekTime, void* userData)](#oh_avsessioncallback_onfastforward) | OH_AVSessionCallback_OnFastForward | 快进的回调。 |
-| [typedef AVSessionCallback_Result (*OH_AVSessionCallback_OnRewind)(OH_AVSession* session, uint32_t seekTime, void* userData)](#oh_avsessioncallback_onrewind) | OH_AVSessionCallback_OnRewind | 快退的回调。 |
-| [typedef AVSessionCallback_Result (*OH_AVSessionCallback_OnSeek)(OH_AVSession* session, uint64_t seekTime, void* userData)](#oh_avsessioncallback_onseek) | OH_AVSessionCallback_OnSeek | 进度调节的回调。 |
+| [typedef AVSessionCallback_Result (*OH_AVSessionCallback_OnFastForward)(OH_AVSession* session, uint32_t seekTime, void* userData)](#oh_avsessioncallback_onfastforward) | OH_AVSessionCallback_OnFastForward | 快进的回调。参数seekTime单位为毫秒(ms)。 |
+| [typedef AVSessionCallback_Result (*OH_AVSessionCallback_OnRewind)(OH_AVSession* session, uint32_t seekTime, void* userData)](#oh_avsessioncallback_onrewind) | OH_AVSessionCallback_OnRewind | 快退的回调。参数seekTime单位为毫秒(ms)。 |
+| [typedef AVSessionCallback_Result (*OH_AVSessionCallback_OnSeek)(OH_AVSession* session, uint64_t seekTime, void* userData)](#oh_avsessioncallback_onseek) | OH_AVSessionCallback_OnSeek | 进度调节的回调。参数seekTime单位为毫秒(ms)。 |
 | [typedef AVSessionCallback_Result (*OH_AVSessionCallback_OnSetLoopMode)(OH_AVSession* session, AVSession_LoopMode curLoopMode, void* userData)](#oh_avsessioncallback_onsetloopmode) | OH_AVSessionCallback_OnSetLoopMode | 设置循环模式的回调。 |
 | [typedef AVSessionCallback_Result (*OH_AVSessionCallback_OnToggleFavorite)(OH_AVSession* session, const char* assetId, void* userData)](#oh_avsessioncallback_ontogglefavorite) | OH_AVSessionCallback_OnToggleFavorite | 收藏的回调。 |
 | [typedef AVSessionCallback_Result (*OH_AVSessionCallback_OutputDeviceChange)(OH_AVSession* session, AVSession_ConnectionState state, AVSession_OutputDeviceInfo* outputDeviceInfo)](#oh_avsessioncallback_outputdevicechange) | OH_AVSessionCallback_OutputDeviceChange | 设备变化的回调。 |
@@ -53,22 +53,22 @@ synced_at: "2026-07-09T01:00:19.892780"
 | [AVSession_ErrCode OH_AVSession_SetPlaybackPosition(OH_AVSession* avsession, AVSession_PlaybackPosition* playbackPosition)](#oh_avsession_setplaybackposition) | - | 设置播放位置。 |
 | [AVSession_ErrCode OH_AVSession_SetFavorite(OH_AVSession* avsession, bool favorite)](#oh_avsession_setfavorite) | - | 设置收藏状态。 |
 | [AVSession_ErrCode OH_AVSession_SetLoopMode(OH_AVSession* avsession, AVSession_LoopMode loopMode)](#oh_avsession_setloopmode) | - | 设置循环模式。 |
-| [AVSession_ErrCode OH_AVSession_SetRemoteCastEnabled(OH_AVSession* avsession, bool enabled)](#oh_avsession_setremotecastenabled) | - | 请求使能远程投播。 |
+| [AVSession_ErrCode OH_AVSession_SetRemoteCastEnabled(OH_AVSession* avsession, bool enabled)](#oh_avsession_setremotecastenabled) | - | 请求启用远程投播。 |
 | [AVSession_ErrCode OH_AVSession_RegisterCommandCallback(OH_AVSession* avsession, AVSession_ControlCommand command, OH_AVSessionCallback_OnCommand callback, void* userData)](#oh_avsession_registercommandcallback) | - | 注册通用播控的回调。 |
 | [AVSession_ErrCode OH_AVSession_UnregisterCommandCallback(OH_AVSession* avsession, AVSession_ControlCommand command, OH_AVSessionCallback_OnCommand callback)](#oh_avsession_unregistercommandcallback) | - | 取消注册通用播控的回调。 |
 | [AVSession_ErrCode OH_AVSession_RegisterForwardCallback(OH_AVSession* avsession, OH_AVSessionCallback_OnFastForward callback, void* userData)](#oh_avsession_registerforwardcallback) | - | 注册快进的回调。 |
 | [AVSession_ErrCode OH_AVSession_UnregisterForwardCallback(OH_AVSession* avsession, OH_AVSessionCallback_OnFastForward callback)](#oh_avsession_unregisterforwardcallback) | - | 取消注册快进的回调。 |
 | [AVSession_ErrCode OH_AVSession_RegisterRewindCallback(OH_AVSession* avsession, OH_AVSessionCallback_OnRewind callback, void* userData)](#oh_avsession_registerrewindcallback) | - | 注册快退的回调。 |
 | [AVSession_ErrCode OH_AVSession_UnregisterRewindCallback(OH_AVSession* avsession, OH_AVSessionCallback_OnRewind callback)](#oh_avsession_unregisterrewindcallback) | - | 取消注册快退的回调。 |
-| [AVSession_ErrCode OH_AVSession_RegisterSeekCallback(OH_AVSession* avsession, OH_AVSessionCallback_OnSeek callback, void* userData)](#oh_avsession_registerseekcallback) | - | 注册跳转的回调。 |
-| [AVSession_ErrCode OH_AVSession_UnregisterSeekCallback(OH_AVSession* avsession, OH_AVSessionCallback_OnSeek callback)](#oh_avsession_unregisterseekcallback) | - | 取消注册跳转的回调。 |
+| [AVSession_ErrCode OH_AVSession_RegisterSeekCallback(OH_AVSession* avsession, OH_AVSessionCallback_OnSeek callback, void* userData)](#oh_avsession_registerseekcallback) | - | 注册进度调节的回调。 |
+| [AVSession_ErrCode OH_AVSession_UnregisterSeekCallback(OH_AVSession* avsession, OH_AVSessionCallback_OnSeek callback)](#oh_avsession_unregisterseekcallback) | - | 取消注册进度调节的回调。 |
 | [AVSession_ErrCode OH_AVSession_RegisterSetLoopModeCallback(OH_AVSession* avsession, OH_AVSessionCallback_OnSetLoopMode callback, void* userData)](#oh_avsession_registersetloopmodecallback) | - | 注册设置循环模式的回调。 |
 | [AVSession_ErrCode OH_AVSession_UnregisterSetLoopModeCallback(OH_AVSession* avsession, OH_AVSessionCallback_OnSetLoopMode callback)](#oh_avsession_unregistersetloopmodecallback) | - | 取消注册设置循环模式的回调。 |
-| [AVSession_ErrCode OH_AVSession_RegisterToggleFavoriteCallback(OH_AVSession* avsession, OH_AVSessionCallback_OnToggleFavorite callback, void* userData)](#oh_avsession_registertogglefavoritecallback) | - | 设置收藏的回调。 |
-| [AVSession_ErrCode OH_AVSession_UnregisterToggleFavoriteCallback(OH_AVSession* avsession, OH_AVSessionCallback_OnToggleFavorite callback)](#oh_avsession_unregistertogglefavoritecallback) | - | 取消设置收藏的回调。 |
+| [AVSession_ErrCode OH_AVSession_RegisterToggleFavoriteCallback(OH_AVSession* avsession, OH_AVSessionCallback_OnToggleFavorite callback, void* userData)](#oh_avsession_registertogglefavoritecallback) | - | 注册收藏的回调。 |
+| [AVSession_ErrCode OH_AVSession_UnregisterToggleFavoriteCallback(OH_AVSession* avsession, OH_AVSessionCallback_OnToggleFavorite callback)](#oh_avsession_unregistertogglefavoritecallback) | - | 取消注册收藏的回调。 |
 | [AVSession_ErrCode OH_AVSession_RegisterOutputDeviceChangeCallback(OH_AVSession* avsession, OH_AVSessionCallback_OutputDeviceChange callback)](#oh_avsession_registeroutputdevicechangecallback) | - | 注册设备变化的回调。 |
 | [AVSession_ErrCode OH_AVSession_UnregisterOutputDeviceChangeCallback(OH_AVSession* avsession, OH_AVSessionCallback_OutputDeviceChange callback)](#oh_avsession_unregisteroutputdevicechangecallback) | - | 取消注册设备变化的回调。 |
-| [AVSession_ErrCode OH_AVSession_AcquireSession(const char* sessionTag, const char* bundleName, const char* abilityName, OH_AVSession** avsession)](#oh_avsession_acquiresession) | - | 获取已经存在的媒体会话对象。当不再使用媒体会话对象时，调用[OH_AVSession_Destroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avsession-h#oh_avsession_destroy)进行释放。 |
+| [AVSession_ErrCode OH_AVSession_AcquireSession(const char* sessionTag, const char* bundleName, const char* abilityName, OH_AVSession** avsession)](#oh_avsession_acquiresession) | - | 获取已经存在的媒体会话对象。当不再使用媒体会话对象时，调用[OH_AVSession_Destroy](#oh_avsession_destroy)进行释放。 |
 | [AVSession_ErrCode OH_AVSession_CreateAVCastController(OH_AVSession* avsession, OH_AVCastController** avcastcontroller)](#oh_avsession_createavcastcontroller) | - | 创建投播控制器对象。当投播控制器对象不再使用时，调用[OH_AVCastController_Destroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avcastcontroller-h#oh_avcastcontroller_destroy)进行释放。 |
 | [AVSession_ErrCode OH_AVSession_StopCasting(OH_AVSession* avsession)](#oh_avsession_stopcasting) | - | 停止当前投播并断开设备连接。 |
 | [AVSession_ErrCode OH_AVSession_AcquireOutputDevice(OH_AVSession* avsession, AVSession_OutputDeviceInfo** outputDeviceInfo)](#oh_avsession_acquireoutputdevice) | - | 获取当前输出设备。 |
@@ -94,7 +94,7 @@ typedef AVSessionCallback_Result (*OH_AVSessionCallback_OnFastForward)(OH_AVSess
 ```
  描述
 
-快进的回调。
+快进的回调。参数seekTime单位为毫秒(ms)。
 
 起始版本： 13
 
@@ -105,7 +105,7 @@ typedef AVSessionCallback_Result (*OH_AVSessionCallback_OnRewind)(OH_AVSession* 
 ```
  描述
 
-快退的回调。
+快退的回调。参数seekTime单位为毫秒(ms)。
 
 起始版本： 13
 
@@ -116,7 +116,7 @@ typedef AVSessionCallback_Result (*OH_AVSessionCallback_OnSeek)(OH_AVSession* se
 ```
  描述
 
-进度调节的回调。
+进度调节的回调。参数seekTime单位为毫秒(ms)。
 
 起始版本： 13
 
@@ -169,7 +169,7 @@ AVSession_ErrCode OH_AVSession_Create(AVSession_Type sessionType, const char* se
 | 参数项 | 描述 |
 | --- | --- |
 | [AVSession_Type](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avsession-base-h#avsession_type) sessionType | 会话类型[AVSession_Type](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avsession-base-h#avsession_type)。 |
-| const char* sessionTag | 会话标签。 |
+| const char* sessionTag | 应用设置的会话自定义标签。 |
 | const char* bundleName | 创建会话的包名。 |
 | const char* abilityName | 创建会话的Ability组件名。 |
 | [OH_AVSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-oh-avsession)** avsession | 返回的媒体会话对象。 |
@@ -424,7 +424,7 @@ AVSession_ErrCode OH_AVSession_SetRemoteCastEnabled(OH_AVSession* avsession, boo
 ```
  描述
 
-请求使能远程投播。
+请求启用远程投播。
 
 起始版本： 23
 
@@ -433,7 +433,7 @@ AVSession_ErrCode OH_AVSession_SetRemoteCastEnabled(OH_AVSession* avsession, boo
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_AVSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-oh-avsession)* avsession | 媒体会话对象。 |
-| bool enabled | 是否使能远程投播。true表示使能，false表示不使能。 |
+| bool enabled | 是否启用远程投播。true表示启用，false表示不启用。 |
 
 返回：
 
@@ -597,7 +597,7 @@ AVSession_ErrCode OH_AVSession_RegisterSeekCallback(OH_AVSession* avsession, OH_
 ```
  描述
 
-注册跳转的回调。
+注册进度调节的回调。
 
 起始版本： 13
 
@@ -622,7 +622,7 @@ AVSession_ErrCode OH_AVSession_UnregisterSeekCallback(OH_AVSession* avsession, O
 ```
  描述
 
-取消注册跳转的回调。
+取消注册进度调节的回调。
 
 起始版本： 13
 
@@ -695,7 +695,7 @@ AVSession_ErrCode OH_AVSession_RegisterToggleFavoriteCallback(OH_AVSession* avse
 ```
  描述
 
-设置收藏的回调。
+注册收藏的回调。
 
 起始版本： 13
 
@@ -704,7 +704,7 @@ AVSession_ErrCode OH_AVSession_RegisterToggleFavoriteCallback(OH_AVSession* avse
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_AVSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-oh-avsession)* avsession | 媒体会话对象。 |
-| [OH_AVSessionCallback_OnToggleFavorite](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avsession-h#oh_avsessioncallback_ontogglefavorite) callback | 设置收藏命令的回调。 |
+| [OH_AVSessionCallback_OnToggleFavorite](#oh_avsessioncallback_ontogglefavorite) callback | 收藏命令的回调。 |
 | void* userData | 指向通过回调函数传递的应用数据指针。 |
 
 返回：
@@ -720,7 +720,7 @@ AVSession_ErrCode OH_AVSession_UnregisterToggleFavoriteCallback(OH_AVSession* av
 ```
  描述
 
-取消设置收藏的回调。
+取消注册收藏的回调。
 
 起始版本： 13
 
@@ -729,7 +729,7 @@ AVSession_ErrCode OH_AVSession_UnregisterToggleFavoriteCallback(OH_AVSession* av
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_AVSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-oh-avsession)* avsession | 媒体会话对象。 |
-| [OH_AVSessionCallback_OnToggleFavorite](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avsession-h#oh_avsessioncallback_ontogglefavorite) callback | 设置收藏命令的回调。 |
+| [OH_AVSessionCallback_OnToggleFavorite](#oh_avsessioncallback_ontogglefavorite) callback | 收藏命令的回调。 |
 
 返回：
 
@@ -792,7 +792,7 @@ AVSession_ErrCode OH_AVSession_AcquireSession(const char* sessionTag, const char
 ```
  描述
 
-获取已经存在的媒体会话对象。当不再使用媒体会话对象时，调用[OH_AVSession_Destroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avsession-h#oh_avsession_destroy)进行释放。
+获取已经存在的媒体会话对象。当不再使用媒体会话对象时，调用[OH_AVSession_Destroy](#oh_avsession_destroy)进行释放。
 
 起始版本： 23
 

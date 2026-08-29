@@ -2,8 +2,8 @@
 title: "SceneNode"
 upstream_id: "harmonyos-references/js-apis-inner-scene-nodes"
 catalog: "harmonyos-references"
-content_hash: "ff9f3a5c6df0"
-synced_at: "2026-07-28T16:52:22.295408"
+content_hash: "acba4fc10517"
+synced_at: "2026-08-29T18:18:03.429862"
 ---
 
 # SceneNode
@@ -59,8 +59,8 @@ function layerMask(): void {
           let enabled: boolean = node.layerMask.getEnabled(1);
       }
     }
-  }).catch((error: Error) => {
-    console.error('Scene load failed:', error);
+  }).catch((err: Error) => {
+    console.error(`Failed to load scene. Message: ${err.message}`);
   });
 }
 ```
@@ -96,8 +96,8 @@ function layerMask(): void {
           node.layerMask.setEnabled(1, true);
       }
     }
-  }).catch((error: Error) => {
-    console.error('Scene load failed:', error);
+  }).catch((err: Error) => {
+    console.error(`Failed to load scene. Message: ${err.message}`);
   });
 }
 ```
@@ -150,8 +150,8 @@ function append(): void {
         result.root?.children.get(0)?.children.append(node);
       }
     }
-  }).catch((error: Error) => {
-    console.error('Scene load failed:', error);
+  }).catch((err: Error) => {
+    console.error(`Failed to load scene. Message: ${err.message}`);
   });
 }
 ```
@@ -187,8 +187,8 @@ function insertAfter(): void {
         result.root?.children.get(0)?.children.insertAfter(node, null);
       }
     }
-  }).catch((error: Error) => {
-    console.error('Scene load failed:', error);
+  }).catch((err: Error) => {
+    console.error(`Failed to load scene. Message: ${err.message}`);
   });
 }
 ```
@@ -223,8 +223,8 @@ function remove(): void {
         result.root?.children.remove(node);
       }
     }
-  }).catch((error: Error) => {
-    console.error('Scene load failed:', error);
+  }).catch((err: Error) => {
+    console.error(`Failed to load scene. Message: ${err.message}`);
   });
 }
 ```
@@ -265,8 +265,8 @@ function get(): void {
         result.root?.children.get(0)?.children.insertAfter(node, null);
       }
     }
-  }).catch((error: Error) => {
-    console.error('Scene load failed:', error);
+  }).catch((err: Error) => {
+    console.error(`Failed to load scene. Message: ${err.message}`);
   });
 }
 ```
@@ -295,8 +295,8 @@ function clear(): void {
         node.children.clear();
       }
     }
-  }).catch((error: Error) => {
-    console.error('Scene load failed:', error);
+  }).catch((err: Error) => {
+    console.error(`Failed to load scene. Message: ${err.message}`);
   });
 }
 ```
@@ -514,7 +514,7 @@ raycast(viewPosition: Vec2, params: RaycastParameters): Promise<RaycastResult[]>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | 返回命中的结果数组（按距离从近到远排序），若无命中则返回空数组。 |
+| Promise | Promise对象，返回命中的结果数组（按距离从近到远排序），若无命中则返回空数组。 |
 
 示例：
 

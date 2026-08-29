@@ -1,12 +1,12 @@
 ---
-title: "HdsTabs"
+title: "HdsTabs (底部页签)"
 upstream_id: "harmonyos-references/ui-design-hdstabs"
 catalog: "harmonyos-references"
-content_hash: "919bb30a6c76"
-synced_at: "2026-08-03T17:10:48.137048"
+content_hash: "80017205d369"
+synced_at: "2026-08-29T18:16:18.943152"
 ---
 
-# HdsTabs
+# HdsTabs (底部页签)
 
 本模块提供Tabs容器组件的分割线样式，模糊样式和页签侧边栏半屏居中对齐样式的效果。
 
@@ -272,7 +272,7 @@ barWidth(value: Length)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 是 | TabBar的宽度值，单位：vp。若设置值小于0或大于Tabs宽度值时，按默认值显示。 默认值： - 未设置[SubTabBarStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabcontent#subtabbarstyle9)和[BottomTabBarStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabcontent#bottomtabbarstyle9)的TabBar且vertical属性为false时，默认值为Tabs的宽度。 - 未设置SubTabBarStyle和BottomTabBarStyle的TabBar且vertical属性为true时，默认值为56vp。 - 设置SubTabBarStyle样式且vertical属性为false时，默认值为Tabs的宽度。 - 设置SubTabBarStyle样式且vertical属性为true时，默认值为56vp。 - 设置BottomTabBarStyle样式且vertical属性为true时，默认值为96vp。 - 设置BottomTabBarStyle样式且vertical属性为false时，默认值为Tabs的宽度。 |
+| value | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 是 | TabBar的宽度值，单位：vp。若设置值小于0或大于Tabs宽度值时，按默认值显示。 默认值： - 设置属性vertical为false时，默认值为HdsTabs组件的宽度。 - 设置属性vertical为true时，默认值为96vp。 |
 
 #### [h2]barHeight
 
@@ -292,7 +292,7 @@ barHeight(value: Length)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 是 | TabBar的高度值。单位：vp。设置为'auto'时，TabBar自适应子组件高度，仅在横向Tabs下有效。设置为小于0或大于Tabs高度值时，按默认值显示。 默认值： - 未设置带样式的TabBar且vertical属性为false时，默认值为48vp。 - 未设置带样式的TabBar且vertical属性为true时，默认值为Tabs的高度。 - 设置[SubTabBarStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabcontent#subtabbarstyle9)样式且vertical属性为false时，默认值为48vp。设置SubTabBarStyle样式且vertical属性为true时，默认值为Tabs的高度。 - 设置[BottomTabBarStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabcontent#bottomtabbarstyle9)样式且vertical属性为true时，默认值为Tabs的高度。 - 设置BottomTabBarStyle样式且vertical属性为false时，默认值为48vp。 - 设置Tabs为[悬浮样式](#barfloatingstyle)时，默认值为56vp。 |
+| value | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 是 | TabBar的高度值。单位：vp。设置为'auto'时，TabBar自适应子组件高度，仅在横向Tabs下有效。设置为小于0或大于Tabs高度值时，按默认值显示。 默认值： - 设置属性vertical为false时，默认值为48vp。 - 设置属性vertical为true时，默认值为HdsTabs组件的高度。 - 设置HdsTabs为[悬浮样式](#barfloatingstyle)时，默认值为56vp。 |
 
 #### [h2]animationDuration
 
@@ -460,7 +460,7 @@ barBackgroundStyle(backgroundStyle: Optional<HdsTabsBackgroundStyle>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| backgroundStyle | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 设置模糊的颜色和高度，默认模糊效果失效。 |
+| backgroundStyle | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 设置模糊的颜色和高度。 默认值：渐变模糊颜色浅色模式#CCFFFFFF，深色模式#CC000000。渐变模糊高度等于TabBar组件高度+32vp。 |
 
 ![](./img/note_3.0-zh-cn.png) 1.依赖页签栏位于容器底部，barPosition设置为BarPosition.End，vertical设置为false。
 
@@ -543,14 +543,14 @@ barFloatingStyle(barFloatingStyle?: Optional<HdsTabsFloatingStyle>)
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| barWidth | [HdsBarWidthRangeOptions](#hdsbarwidthrangeoptions) | 否 | 是 | 页签栏分档宽度。 默认值：页签个数小于等于3时，且HdsTabs宽度小于600vp，单个页签宽度76vp，当HdsTabs宽度大于等于600vp时，单个页签宽度80vp。页签个数大于等于4时，页签栏最大宽度不超过328vp。 |
-| barSideMargin | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 页签栏与HdsTabs左右边距。 默认值：HdsTabs宽度小于600vp时，默认边距16vp；HdsTabs宽度在600vp-840vp之间，默认边距24vp，HdsTabs宽度大于840vp，默认边距32vp。 |
-| barBottomMargin | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 页签栏与HdsTabs底部距离。 默认值：页签栏距离底部0vp。 |
+| barWidth | [HdsBarWidthRangeOptions](#hdsbarwidthrangeoptions) | 否 | 是 | 页签栏分档宽度。 默认值：页签个数小于等于3时，且HdsTabs宽度小于600vp，页签栏宽度等于76vp*页签个数+8vp，当HdsTabs宽度大于等于600vp时，页签栏宽度等于80vp*页签个数+8vp。页签个数大于等于4时，页签栏最大宽度不超过328vp。 |
+| barSideMargin | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 页签栏与HdsTabs左右边距，不支持设置百分比单位。 默认值：HdsTabs宽度小于600vp时，默认边距16vp；HdsTabs宽度在600vp-840vp之间，默认边距24vp，HdsTabs宽度大于840vp，默认边距32vp。 |
+| barBottomMargin | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 页签栏与HdsTabs底部距离，不支持设置百分比单位。 默认值：页签栏默认距离HdsTabs底部0vp。 |
 | gradientMask | [HdsTabsBackgroundStyle](#hdstabsbackgroundstyle) | 否 | 是 | 背板蒙层的样式设置，可用来设置背板蒙层的高度和颜色。 默认值：蒙层颜色浅色模式是#CCF1F3F5，深色模式是#99000000。蒙层高度等于页签栏默认高度加16vp。 **说明：** 蒙层高度不可设置为0。 |
 | miniBar | [HdsTabsMiniBar](#hdstabsminibar) | 否 | 是 | 迷你栏的属性配置。 默认值：undefined，表示没有迷你栏。 |
 | adaptToHandedness | boolean | 否 | 是 | 左右跟手开关。 true：跟手。 false：不跟手。 默认值：false。 **说明：** 左右手跟手能力依赖底层硬件，部分历史设备硬件能力不支持。 |
 | lightColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 页签栏光效颜色。 默认值：深色模式#33E5E5E5，浅色模式#33fffffff。 |
-| barOpacity | number | 否 | 是 | 页签栏透明度，1表示不透明，0表示完全透明。 默认值：1。 |
+| barOpacity | number | 否 | 是 | 页签栏透明度，1表示不透明，0表示完全透明，取值范围为[0, 1]。 默认值：1。 |
 | thermoCtrl | boolean | 否 | 是 | 温控开关。 true：开启温控。 false：不开启温控。 默认值：false。 |
 | systemMaterialEffect | [SystemMaterialParams](#systemmaterialparams) | 否 | 是 | 材质参数。 默认值：undefined，没有新材质。 |
 
@@ -568,9 +568,9 @@ barFloatingStyle(barFloatingStyle?: Optional<HdsTabsFloatingStyle>)
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| smallWidth | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 当HdsTabs宽度小于440vp时，页签栏或迷你栏的宽度。 默认值：页签个数小于等于3，且HdsTabs宽度小于600vp时，单个页签宽度76vp。页签个数大于等于4时，页签栏最大宽度不超过328vp。迷你栏最大宽度不超过328vp。 **说明**：暂不支持百分比。 |
-| mediumWidth | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 当HdsTabs宽度在440vp-600vp之间，或宽度在600-840vp之间且高宽比小于0.8时，页签栏或迷你栏的宽度。 默认值：页签个数小于等于3，且HdsTabs宽度小于600vp时，单个页签宽度76vp，HdsTabs宽度大于600vp时，单个页签宽度80vp。页签个数大于等于4时，页签栏最大宽度不超过328vp。迷你栏最大宽度不超过328vp。 **说明**：暂不支持百分比。 |
-| largeWidth | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 当HdsTabs宽度大于840vp，或宽度在600vp-840vp之间且高宽比大于0.8时，页签栏或迷你栏的宽度。 默认值：页签个数小于等于3，单个页签宽度80vp。页签个数大于等于4时，页签栏最大宽度不超过328vp。迷你栏最大宽度不超过328vp。 **说明**：暂不支持百分比。 |
+| smallWidth | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 当HdsTabs宽度小于440vp时，页签栏或迷你栏的宽度，不支持设置百分比单位。 默认值：页签个数小于等于3，且HdsTabs宽度小于600vp时，页签栏宽度等于76vp*页签个数+8vp。页签个数大于等于4时，页签栏最大宽度不超过328vp。迷你栏最大宽度不超过328vp。 |
+| mediumWidth | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 当HdsTabs宽度在440vp-600vp之间，或宽度在600-840vp之间且高宽比小于0.8时，页签栏或迷你栏的宽度，不支持设置百分比单位。 默认值：页签个数小于等于3，且HdsTabs宽度小于600vp时，页签栏宽度等于76vp*页签个数+8vp，HdsTabs宽度大于600vp时，页签栏宽度等于80vp*页签个数+8vp。页签个数大于等于4时，页签栏最大宽度不超过328vp。迷你栏最大宽度不超过328vp。 |
+| largeWidth | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 当HdsTabs宽度大于840vp，或宽度在600vp-840vp之间且高宽比大于0.8时，页签栏或迷你栏的宽度，不支持设置百分比单位。 默认值：页签个数小于等于3，页签栏宽度等于80vp*页签个数+8vp。页签个数大于等于4时，页签栏最大宽度不超过328vp。迷你栏最大宽度不超过328vp。 |
 
 #### HdsTabsMiniBar
 
@@ -794,7 +794,7 @@ type TabBarAnimationStartCallback = (style: HdsBarStyle, width: number) => void
 
 #### HdsTabsBackgroundStyle
 
-渐变模糊样式。
+页签背景样式。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -806,8 +806,8 @@ type TabBarAnimationStartCallback = (style: HdsBarStyle, width: number) => void
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| maskColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 渐变模糊的颜色设置。 默认值：#CCFFFFFF。 |
-| maskHeight | number | 否 | 是 | 渐变模糊的高度设置。 默认值：组件高度（包含底部TabBar高度）+32vp。 |
+| maskColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 页签背景颜色。 |
+| maskHeight | number | 否 | 是 | 页签背景高度。 |
 
 #### 事件
 
@@ -1181,7 +1181,7 @@ struct Index {
 
 | 常显 | 常隐 | 跟手 |
 | --- | --- | --- |
-| ![](./img/zh-cn_image_0000002659441054.gif) | ![](./img/zh-cn_image_0000002659600982.gif) | ![](./img/zh-cn_image_0000002689560565.gif) |
+| ![](./img/zh-cn_image_0000002701640576.gif) | ![](./img/zh-cn_image_0000002731359793.gif) | ![](./img/zh-cn_image_0000002701800488.gif) |
 
 #### [h2]支持渐变模糊
 
@@ -1224,7 +1224,7 @@ struct Index {
 ```
  效果：
 
-![](./img/zh-cn_image_0000002689680389.png)
+![](./img/zh-cn_image_0000002731519775.png)
 
 #### [h2]支持出血效果
 
@@ -1272,7 +1272,7 @@ struct Index {
 ```
  效果：
 
-![](./img/zh-cn_image_0000002659441056.jpg)
+![](./img/zh-cn_image_0000002701640578.jpg)
 
 #### [h2]页签半屏居中对齐布局
 
@@ -1317,7 +1317,7 @@ struct Index {
 ```
  效果：
 
-![](./img/zh-cn_image_0000002659600984.jpg)
+![](./img/zh-cn_image_0000002731359795.jpg)
 
 #### [h2]页签栏悬浮样式
 
@@ -1402,4 +1402,4 @@ struct Index {
 ```
  效果：
 
-![](./img/zh-cn_image_0000002689560567.gif)
+![](./img/zh-cn_image_0000002701800490.gif)

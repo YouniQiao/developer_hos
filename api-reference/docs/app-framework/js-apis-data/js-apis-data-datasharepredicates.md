@@ -2,8 +2,8 @@
 title: "@ohos.data.dataSharePredicates (数据共享谓词)"
 upstream_id: "harmonyos-references/js-apis-data-datasharepredicates"
 catalog: "harmonyos-references"
-content_hash: "acb74afc962e"
-synced_at: "2026-07-28T16:40:48.243838"
+content_hash: "acd1635ecfbf"
+synced_at: "2026-08-29T18:12:11.577173"
 ---
 
 # @ohos.data.dataSharePredicates (数据共享谓词)
@@ -323,7 +323,7 @@ or(): DataSharePredicates
 示例：
 
 ```
-let predicates = new dataSharePredicates.DataSharePredicates()
+let predicates = new dataSharePredicates.DataSharePredicates();
 predicates.equalTo("NAME", "lisi")
     .or()
     .equalTo("NAME", "Rose");
@@ -495,7 +495,7 @@ greaterThanOrEqualTo(field: string, value: ValueType): DataSharePredicates
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| field | string | 是 | 数据库表中的列名。 field为undefined或null时，此次调用接口配置的谓词无效。 当field为字符串'null'或'undefined'时，此次调用接口配置的谓词匹配结果非预期或抛出异常。 |
+| field | string | 是 | 数据库表中的列名。 field为undefined或null时，此次调用接口配置的谓词无效。 当field为字符串'null'或'undefined'时，键值型数据库和关系型数据库接口使用该谓词时，可能匹配结果非预期或抛出异常。 |
 | value | [ValueType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-valuesbucket#valuetype) | 是 | 指示要与谓词匹配的值。 value为undefined或null时，此次调用接口配置的谓词无效。 |
 
 返回值：

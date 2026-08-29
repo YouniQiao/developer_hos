@@ -2,8 +2,8 @@
 title: "Class (WebController)"
 upstream_id: "harmonyos-references/arkts-basic-components-web-webcontroller"
 catalog: "harmonyos-references"
-content_hash: "99faed3426b2"
-synced_at: "2026-07-09T00:58:54.882445"
+content_hash: "300111c9ca68"
+synced_at: "2026-08-29T18:16:01.844593"
 ---
 
 # Class (WebController)
@@ -14,8 +14,8 @@ WebController适用于需要在应用侧对嵌入式Web组件进行主动控制�
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 该组件首批接口从API version 8开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
-- 本Class首批接口从API version 8开始支持。
+- 该组件从API version 8开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
+- 本Class从API version 8开始支持。
 - 该组件从API version 9开始废弃，建议使用[WebviewController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller)代替。
 - 示例效果请以真机运行为准。
 
@@ -183,7 +183,7 @@ struct WebComponent {
 
 accessStep(step: number): boolean
 
-当前页面是否可前进或者后退给定的step步。
+检查当前页面是否可前进或者后退给定的step步。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[accessStep9+](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#accessstep)代替。
 
@@ -199,7 +199,7 @@ accessStep(step: number): boolean
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | 页面是否前进或后退 |
+| boolean | 页面是否可以前进或后退给定的step步。true表示可以，false为不可以。 |
 
 示例：
 
@@ -228,7 +228,7 @@ struct WebComponent {
 
 backward()
 
-按照历史栈，后退一个页面。一般结合accessBackward一起使用。
+按照历史栈，后退一个页面。建议在调用backward前先调用[accessBackward9+](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#accessbackward)检查当前页面是否可后退。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[backward9+](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#backward)代替。
 
@@ -259,7 +259,7 @@ struct WebComponent {
 
 forward()
 
-按照历史栈，前进一个页面。一般结合accessForward一起使用。
+按照历史栈，前进一个页面。建议在调用forward前先调用[accessForward9+](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#accessforward)检查当前页面是否可前进。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[forward9+](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#forward)代替。
 
@@ -330,7 +330,7 @@ getHitTest(): HitTestType
 
 获取当前被点击区域的元素类型。
 
-![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[getHitTest(deprecated)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#gethittestdeprecated)代替。
+![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃。建议使用[getHitTest(deprecated)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#gethittestdeprecated)替代。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -380,10 +380,10 @@ baseUrl为空时，通过“data”协议加载指定的一段字符串。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| data | string | 是 | 按照“Base64”或者“URL”编码后的一段字符串。 |
+| data | string | 是 | 加载的字符串数据。处理方式与baseUrl协议相关：baseUrl为空或“data”协议时，按“Base64”或“URL”编码进行解码加载；为“http/https”协议时，作为未编码的普通HTML字符串直接加载。 |
 | mimeType | string | 是 | 媒体类型（MIME）。 |
-| encoding | string | 是 | 编码类型，具体为“Base64”或者“URL”编码。 |
-| baseUrl | string | 否 | 指定的一个URL路径（“http”/“https”/“data”协议），并由Web组件赋值给window.origin。默认值为空字符串。 |
+| encoding | string | 是 | 编码类型，支持“Base64”、“URL”或字符集编码（如“UTF-8”）。当data参数为未编码的HTML字符串时，应使用字符集编码；当data参数为已编码的字符串时，应使用“Base64”或“URL”。 |
+| baseUrl | string | 否 | 指定的一个URL路径（“http”/“https”/“data”协议），并由Web组件赋值给window.origin。为空时通过“data”协议加载字符串。默认值为空字符串。 |
 | historyUrl | string | 否 | 历史记录URL。默认值为空字符串。非空时，可被历史记录管理，实现前进后退功能。当baseUrl为空时，此属性无效。 |
 
 示例：
@@ -430,7 +430,7 @@ loadUrl(options: { url: string | Resource, headers?: Array<Header> })
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | url | string | Resource | 是 | 需要加载的 URL。 |
-| headers | Array | 否 | URL的附加HTTP请求头。 默认值：[]。 |
+| headers | Array | 否 | URL的附加HTTP请求头，用于自定义请求行为（如设置身份验证信息、指定内容类型、添加用户代理等）。当需要在请求中携带额外信息时传入。不传入时使用默认值（空数组），不携带额外HTTP请求头。 |
 
 示例：
 
@@ -459,7 +459,7 @@ onActive(): void
 
 调用此接口通知Web组件进入前台激活状态。
 
-![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[onActive9+](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#onactive)代替。
+![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[onActive9+](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#onactive)替代。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -490,7 +490,7 @@ onInactive(): void
 
 调用此接口通知Web组件进入未激活状态。
 
-![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[onInactive9+](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#oninactive)代替。
+![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[onInactive9+](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#oninactive)替代。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -521,7 +521,7 @@ zoom(factor: number): void
 
 调整当前网页的缩放比例。
 
-![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[zoom9+](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#zoom)代替。
+![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃。建议使用[zoom9+](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#zoom)替代。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -529,7 +529,7 @@ zoom(factor: number): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| factor | number | 是 | 基于当前网页所需调整的相对缩放比例，当入参为1时为默认加载网页的缩放比例，小于1为缩小，大于1为放大。取值范围(0, 100]。 |
+| factor | number | 是 | 缩放系数。1表示恢复默认加载网页的缩放比例；小于1为缩小，大于1为放大。取值范围(0, 100]。 |
 
 示例：
 
@@ -598,7 +598,7 @@ registerJavaScriptProxy(options: { object: object, name: string, methodList: Arr
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| object | object | 是 | 参与注册的应用侧JavaScript对象。可以声明方法，也可以声明属性，但是不支持h5直接调用。其中方法的参数和返回类型只能为string，number，boolean |
+| object | object | 是 | 参与注册的应用侧JavaScript对象。可以声明方法，也可以声明属性，但是不支持h5直接调用。其中方法的参数和返回类型只能为string、number、boolean。 |
 | name | string | 是 | 注册对象的名称，与window中调用的对象名一致。注册后window对象可以通过此名字访问应用侧JavaScript对象。 |
 | methodList | Array | 是 | 参与注册的应用侧JavaScript对象的方法。 |
 
@@ -641,7 +641,7 @@ struct Index {
   }
 }
 ```
- 加载的html文件。
+ 加载的HTML文件。
 
 ```
 <!-- index.html -->
@@ -677,7 +677,7 @@ runJavaScript(options: { script: string, callback?: (result: string) => void })
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | script | string | 是 | JavaScript脚本。 |
-| callback | (result: string) => void | 否 | 回调执行JavaScript脚本结果。JavaScript脚本若执行失败或无返回值时，返回null。不传入时不进行回调。 |
+| callback | (result: string) => void | 否 | 回调执行JavaScript脚本结果。JavaScript脚本若执行失败或无返回值时，返回null。当callback参数不传入时不进行回调。 |
 
 示例：
 
@@ -696,7 +696,7 @@ struct WebComponent {
       .onPageEnd((event) => {
         this.controller.runJavaScript({
           script: 'test()',
-          callback: (result: string)=> {
+          callback: (result: string) => {
             this.webResult = result
             console.info(`The test() return value is: ${result}`)
           }})
@@ -708,7 +708,7 @@ struct WebComponent {
   }
 }
 ```
- 加载的html文件。
+ 加载的HTML文件。
 
 ```
 <!-- index.html -->

@@ -2,8 +2,8 @@
 title: "@ohos.deviceInfo (设备信息)"
 upstream_id: "harmonyos-references/js-apis-device-info"
 catalog: "harmonyos-references"
-content_hash: "cd65d36006fd"
-synced_at: "2026-08-11T16:02:52.050484"
+content_hash: "739ae3bb6f8c"
+synced_at: "2026-08-29T18:16:55.209814"
 ---
 
 # @ohos.deviceInfo (设备信息)
@@ -12,7 +12,7 @@ synced_at: "2026-08-11T16:02:52.050484"
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 6开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
-部分参数返回值为default的，会在正式发布的版本中配置。
+hardwareProfile、incrementalVersion、buildType、buildUser、buildHost、buildTime、buildRootHash等参数返回值为default，这些参数会在设备正式商用版本中配置具体值。
 
 本模块接口返回设备常量信息，建议应用只调用一次，不需要频繁调用。
 
@@ -26,7 +26,7 @@ import { deviceInfo } from '@kit.BasicServicesKit';
 
 ![](./img/note_3.0-zh-cn.png) 未特殊说明的字段，数据长度最大值为96字节。
 
-系统能力：SystemCapability.Startup.SystemInfo。
+系统能力：SystemCapability.Startup.SystemInfo
 
 权限：以下各项所需要的权限有所不同，详见下表。
 
@@ -41,42 +41,43 @@ import { deviceInfo } from '@kit.BasicServicesKit';
 | productModelAlias14+ | string | 是 | 认证型号别名。 **元服务API**：从API版本14开始，该接口支持在元服务中使用。 示例：TAS-AL00 |
 | softwareModel | string | 是 | 内部软件子型号。 示例：ALN-AL00 |
 | hardwareModel | string | 是 | 硬件版本号。 示例：HL1CMSM |
-| hardwareProfile(deprecated) | string | 是 | 硬件Profile。 **说明**： 从API version 6 开始支持，从API version 9 开始废弃，建议使用[系统能力SystemCapability使用指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/syscap)查询相关信息。 示例：default |
-| serial | string | 是 | 设备序列号SN(Serial Number)。 **说明**：可作为设备唯一识别码。 **需要权限**：ohos.permission.sec.ACCESS_UDID(该权限只允许系统应用及企业类应用申请) 示例：序列号随设备差异 |
-| bootloaderVersion | string | 是 | Bootloader版本号。 示例：bootloader |
+| hardwareProfile(deprecated) | string | 是 | 硬件Profile。 **说明**： 从API version 6开始支持，从API version 9开始废弃。建议使用[系统能力SystemCapability使用指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/syscap)替代。 示例：default |
+| serial | string | 是 | 设备序列号SN(Serial Number)，该接口在执行期间会拉起临时进程，当系统负载较高时，可能引发阻塞风险。为确保应用主线程的响应性能，建议避免在主线程中调用。设备信息因设备而异且固定不变，可在首次获取后缓存在本地，避免每次使用时重复获取，以提升性能。 **说明**：可作为设备唯一识别码。 **需要权限**：ohos.permission.sec.ACCESS_UDID(该权限只允许系统应用及企业类应用申请) 示例：序列号随设备差异 |
+| bootloaderVersion | string | 是 | Bootloader版本号，用于标识设备启动引导程序的版本信息。 示例：bootloader |
 | abiList | string | 是 | 应用二进制接口（Abi）。 示例：arm64-v8a |
 | securityPatchTag | string | 是 | 安全补丁级别。 示例：2024/1/1 |
 | displayVersion | string | 是 | 产品版本。可以使用版本号中的DEM字段来识别门店演示样机。 示例：ALN-AL00 5.0.0.1(XXX) |
-| incrementalVersion | string | 是 | 差异版本号。 示例：6.1.1.120 |
+| incrementalVersion | string | 是 | 差异版本号，是编译时生成的ohos的版本号。 示例：6.1.1.120 |
 | osReleaseType | string | 是 | 系统的发布类型，取值为： - Canary：面向特定开发者发布的早期预览版本，不承诺API稳定性。 - Beta：面向开发者公开发布的Beta版本，不承诺API稳定性。 - Release：面向开发者公开发布的正式版本，承诺API稳定性。 示例：Canary1/Beta2/Release |
-| osFullName | string | 是 | 系统版本，版本格式OpenHarmony-x.x.x.x。 **元服务API**：从API版本11开始，该接口支持在元服务中使用。 示例：OpenHarmony-5.0.0.1(Canary1) |
-| majorVersion | number | 是 | Major版本号，随主版本更新增加，值为osFullName中的第一位数值，建议直接使用deviceInfo.majorVersion获取，可提升效率，不建议开发者解析osFullName获取。 示例：5 |
+| osFullName | string | 是 | 系统版本，版本格式OpenHarmony-x.x.x.x。如需获取版本号各段数值，建议直接使用majorVersion、seniorVersion、featureVersion、buildVersion字段，可提升效率，不建议解析osFullName获取。 **元服务API**：从API版本11开始，该接口支持在元服务中使用。 示例：OpenHarmony-5.0.0.1(Canary1) |
+| majorVersion | number | 是 | Major版本号，随主版本更新增加，值为osFullName中的第一位数值，建议直接使用deviceInfo.majorVersion获取，可提升效率，不建议开发者自主解析osFullName获取。 示例：5 |
 | seniorVersion | number | 是 | Senior版本号，随局部架构、重大特性增加，值为osFullName中的第二位数值，建议直接使用deviceInfo.seniorVersion获取，可提升效率，不建议开发者自主解析osFullName获取。 示例：0 |
 | featureVersion | number | 是 | Feature版本号，标识规划的新特性版本，值为osFullName中的第三位数值，建议直接使用deviceInfo.featureVersion获取，可提升效率，不建议开发者自主解析osFullName获取。 示例：0 |
 | buildVersion | number | 是 | Build版本号，标识编译构建的版本号，值为osFullName中的第四位数值，建议直接使用deviceInfo.buildVersion获取，可提升效率，不建议开发者自主解析osFullName获取。 示例：1 |
 | sdkApiVersion | number | 是 | 系统软件API版本。 **元服务API**：从API版本14开始，该接口支持在元服务中使用。 示例：12 |
-| sdkMinorApiVersion | number | 是 | 系统软件Minor API版本。**从** API 26.0.0 版本开始，系统API版本格式：sdkApiVersion.sdkMinorApiVersion.sdkPatchApiVersion。 **模型约束：** 此接口仅可在Stage模型下使用。 **起始版本**：26.0.0 **元服务API**：从API版本26.0.0开始，该接口支持在元服务中使用。 示例：0 |
-| sdkPatchApiVersion | number | 是 | 系统软件Patch API版本。**从** API 26.0.0 版本开始，系统API版本格式：sdkApiVersion.sdkMinorApiVersion.sdkPatchApiVersion。 **模型约束：** 此接口仅可在Stage模型下使用。 **起始版本**：26.0.0 **元服务API**：从API版本26.0.0开始，该接口支持在元服务中使用。 示例：0 |
+| sdkMinorApiVersion | number | 是 | 系统软件Minor API版本。从API 26.0.0 版本开始，系统API版本格式：sdkApiVersion.sdkMinorApiVersion.sdkPatchApiVersion。 **模型约束**： 此接口仅可在Stage模型下使用。 **起始版本**：26.0.0 **元服务API**：从API版本26.0.0开始，该接口支持在元服务中使用。 示例：0 |
+| sdkPatchApiVersion | number | 是 | 系统软件Patch API版本。从API 26.0.0 版本开始，系统API版本格式：sdkApiVersion.sdkMinorApiVersion.sdkPatchApiVersion。 **模型约束**： 此接口仅可在Stage模型下使用。 **起始版本**：26.0.0 **元服务API**：从API版本26.0.0开始，该接口支持在元服务中使用。 示例：0 |
 | firstApiVersion | number | 是 | 首个版本系统软件API版本。 示例：3 |
-| versionId | string | 是 | 版本ID。由deviceType、manufacture、brand、productSeries、osFullName、productModel、softwareModel、sdkApiVersion、incrementalVersion、buildType拼接组成。 |
+| versionId | string | 是 | 版本ID。由deviceType、manufacture、brand、productSeries、osFullName、productModel、softwareModel、sdkApiVersion、incrementalVersion、buildType拼接组成。如果需要获取其中的某个字段值，建议直接使用对应的字段（如deviceType、manufacture等），可提升效率，不建议解析versionId获取。 |
 | buildType | string | 是 | 构建类型。 示例：default |
 | buildUser | string | 是 | 构建用户。 示例：default |
 | buildHost | string | 是 | 构建主机。 示例：default |
 | buildTime | string | 是 | 构建时间。 示例：default |
 | buildRootHash | string | 是 | 构建版本Hash。 示例：default |
-| udid7+ | string | 是 | 设备Udid。 **说明**：数据长度为65字节。可作为设备唯一识别码。 **需要权限**：ohos.permission.sec.ACCESS_UDID(该权限只允许系统应用及企业类应用申请) 示例：9D6AABD147XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXE5536412 |
+| udid7+ | string | 是 | 设备UDID，该接口在执行期间会拉起临时进程，当系统负载较高时，可能引发阻塞风险。为确保应用主线程的响应性能，建议避免在主线程中调用。设备信息因设备而异且固定不变，可在首次获取后缓存在本地，避免每次使用时重复获取，以提升性能。 **说明**：数据长度为65字节(包含结束符)。可作为设备唯一识别码。 **需要权限**：ohos.permission.sec.ACCESS_UDID(该权限只允许系统应用及企业类应用申请) 示例：9D6AABD147XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXE5536412 |
 | distributionOSName10+ | string | 是 | 发行版系统名称。 示例：HarmonyOS |
 | distributionOSVersion10+ | string | 是 | 发行版系统版本号。格式为x.x.x，x是数字 示例：5.0.0 |
-| distributionOSApiVersion10+ | number | 是 | 发行版系统API版本。 示例：50001 |
-| distributionOSApiName13+ | string | 是 | 发行版系统API版本名称。 **说明**：不建议用于版本号判断。 示例：5.0.1 |
+| distributionOSApiVersion10+ | number | 是 | 发行版系统API版本。 API版本26.0.0之前 版本号格式：X.Y.Z(N) 参数取值：X*10000+Y*100+Z，以50001为基数递增 示例：API版本为6.1.1(24)时distributionOSApiVersion返回60101 API版本26.0.0及之后 版本号格式：X.Y.Z（参考语义化版本规范） 参数取值：X*10000+Y*100+Z，以260000为基数递增 示例：API版本为26.0.0时distributionOSApiVersion返回260000 注意：根据API版本演进关系，API版本6.1.1(24)的下一个版本为26.0.0。 所有已发布的API版本请参见https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/overview-allversion。 示例：50001 |
+| distributionOSApiName13+ | string | 是 | 发行版系统API版本名称。 不建议用于版本号判断，API版本26.0.0版本号为分界点： API版本26.0.0之前 示例：5.0.1 版本号格式：X.Y.Z(N) API版本26.0.0及之后 示例：26.0.0 版本号格式：X.Y.Z（参考语义化版本规范） 注意：根据API版本演进关系，API版本6.1.1(24)的下一个版本为26.0.0。 所有已发布的API版本请参见https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/overview-allversion。 |
 | distributionOSReleaseType10+ | string | 是 | 发行版系统类型。 示例：Release |
 | ODID12+ | string | 是 | ODID（Open Developer Identifier，开发者匿名设备标识符）。 **ODID值会在以下场景重新生成**： 手机恢复出厂设置。 同一设备上同一个开发者(developerId相同)的应用全部卸载后重新安装时。 **ODID生成规则**： 根据签名信息里developerId解析出的groupId生成，developerId规则为groupId.developerId，若无groupId则取整个developerId作为groupId。 同一设备上运行的同一个开发者(developerId相同)的应用，ODID相同。 同一个设备上不同开发者(developerId不同)的应用，ODID不同。 不同设备上同一个开发者(developerId相同)的应用，ODID不同。 不同设备上不同开发者(developerId不同)的应用，ODID不同。 **说明**：数据长度为37字节(包含结束符)。 示例：1234a567-XXXX-XXXX-XXXX-XXXXXXXXXXXX |
-| diskSN15+ | string | 是 | 硬盘序列号。 **说明** ：该字段只能在部分2in1设备上进行查询，其他设备查询结果为空。 **需要权限**：ohos.permission.ACCESS_DISK_PHY_INFO 示例：2502EM400567 |
+| diskSN15+ | string | 是 | 硬盘序列号，该接口在执行期间会拉起临时进程，当系统负载较高时，可能引发阻塞风险。为确保应用主线程的响应性能，建议避免在主线程中调用。设备信息因设备而异且固定不变，可在首次获取后缓存在本地，避免每次使用时重复获取，以提升性能。 **说明** ：该字段只能在部分2in1设备上进行查询，其他设备查询结果为空。 **需要权限**：ohos.permission.ACCESS_DISK_PHY_INFO(该权限只允许系统应用及企业类应用申请) 示例：2502EM400567 |
 | performanceClass19+ | [PerformanceClassLevel](#performanceclasslevel19) | 是 | 描述设备能力等级，基于CPU、内存、存储读写性能和屏幕分辨率等因素综合评估。 **使用场景**：用于根据设备能力进行性能适配，如调整动画复杂度、选择不同质量的资源、动态控制功能特性等。 示例：0 |
-| chipType21+ | string | 是 | 当前设备CPU芯片型号。 示例：xxxxx |
+| chipType21+ | string | 是 | 当前设备CPU芯片型号。 **使用场景**：用于根据芯片型号进行性能适配、设备特性识别、兼容性检查等场景，不同芯片型号可能具有不同的GPU性能、AI加速能力等特性。 示例：xxxxx |
 | bootCount21+ | number | 是 | 当前设备重启次数，获取失败时返回-1。 示例：100 |
-| deviceColor | string | 是 | 当前设备颜色。如果无法获取，则返回空字符串 **模型约束：** 此接口仅可在Stage模型下使用。 **起始版本**：26.0.0 示例：gold |
-| **错误码：** | | | |
+| deviceColor | string | 是 | 当前设备颜色。如果无法获取，则返回空字符串 **模型约束**： 此接口仅可在Stage模型下使用。 **起始版本**：26.0.0 示例：gold |
+
+错误码：
 
 以下错误码的详细介绍请参见[deviceInfo错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-device-info)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
@@ -95,7 +96,7 @@ let deviceTypeInfo: string = deviceInfo.deviceType;
 console.info('the value of the deviceType is :' + deviceTypeInfo);
 
 let manufactureInfo: string = deviceInfo.manufacture;
-// 输出结果：the value of the manufacture is :XXXX
+// 输出结果：the value of the manufactureInfo is :XXXX
 console.info('the value of the manufactureInfo is :' + manufactureInfo);
 
 let brandInfo: string = deviceInfo.brand;
@@ -178,11 +179,11 @@ let sdkApiVersionInfo: number = deviceInfo.sdkApiVersion;
 console.info('the value of the deviceInfo sdkApiVersion is :' + sdkApiVersionInfo);
 
 let sdkMinorApiVersionInfo: number = deviceInfo.sdkMinorApiVersion;
-// 输出结果：the value of the sdk Minor ApiVersion is :0
+// 输出结果：the value of the sdkMinorApiVersion is :0
 console.info('the value of the deviceInfo sdkMinorApiVersion is :' + sdkMinorApiVersionInfo);
 
 let sdkPatchApiVersionInfo: number = deviceInfo.sdkPatchApiVersion;
-// 输出结果：the value of the sdk Patch ApiVersion is :0
+// 输出结果：the value of the sdkPatchApiVersion is :0
 console.info('the value of the deviceInfo sdkPatchApiVersion is :' + sdkPatchApiVersionInfo);
 
 let firstApiVersionInfo: number = deviceInfo.firstApiVersion;
@@ -230,6 +231,7 @@ let distributionOSApiVersion: number = deviceInfo.distributionOSApiVersion;
 console.info('the value of the deviceInfo distributionOSApiVersion is :' + distributionOSApiVersion);
 
 let distributionOSApiName: string = deviceInfo.distributionOSApiName;
+// 输出结果：the value of the deviceInfo distributionOSApiName is :HarmonyOS-API
 console.info('the value of the deviceInfo distributionOSApiName is :' + distributionOSApiName);
 
 let distributionOSReleaseType: string = deviceInfo.distributionOSReleaseType;
@@ -237,7 +239,7 @@ let distributionOSReleaseType: string = deviceInfo.distributionOSReleaseType;
 console.info('the value of the deviceInfo distributionOSReleaseType is :' + distributionOSReleaseType);
 
 let odid: string = deviceInfo.ODID;
-// 输出结果：the value of the ODID is :1234a567-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+// 输出结果：the value of the deviceInfo odid is :1234a567-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 console.info('the value of the deviceInfo odid is :' + odid);
 
 let diskSN: string = deviceInfo.diskSN;

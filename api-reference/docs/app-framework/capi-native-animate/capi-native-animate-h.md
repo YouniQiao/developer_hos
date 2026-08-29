@@ -2,15 +2,15 @@
 title: "native_animate.h"
 upstream_id: "harmonyos-references/capi-native-animate-h"
 catalog: "harmonyos-references"
-content_hash: "a8c143c332a1"
-synced_at: "2026-07-28T16:49:19.235341"
+content_hash: "5088b80a967d"
+synced_at: "2026-08-29T18:15:37.389824"
 ---
 
 # native_animate.h
 
 #### 概述
 
-提供ArkUI在Native侧的动画接口定义集合。native_animate.h中的接口需要在主线程上调用。
+提供ArkUI（方舟UI框架）在Native侧的动画接口定义集合。native_animate.h中的接口需要在主线程上调用。
 
 引用文件： <arkui/native_animate.h>
 
@@ -31,14 +31,14 @@ synced_at: "2026-07-28T16:49:19.235341"
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
 | [ArkUI_ExpectedFrameRateRange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-expectedframeraterange) | ArkUI_ExpectedFrameRateRange | 设置动画的期望帧率。该结构体通过min、max和expected三个字段定义帧率范围，系统尽可能满足期望帧率。 |
-| [ArkUI_AnimateCompleteCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animatecompletecallback) | ArkUI_AnimateCompleteCallback | 动画播放结束回调类型。 |
-| [ArkUI_NativeAnimateAPI_1](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativeanimateapi-1) | ArkUI_NativeAnimateAPI_1 | ArkUI提供的Native侧动画接口集合。 |
-| [ArkUI_AnimateOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animateoption) | ArkUI_AnimateOption | 动画效果参数。 |
+| [ArkUI_AnimateCompleteCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animatecompletecallback) | ArkUI_AnimateCompleteCallback | 动画播放结束回调类型，用于在动画播放完成时通知开发者动画已结束。开发者可通过type字段指定回调触发方式，通过callback字段设置自定义回调函数，并通过userData字段传递自定义数据至回调函数中。 |
+| [ArkUI_NativeAnimateAPI_1](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativeanimateapi-1) | ArkUI_NativeAnimateAPI_1 | ArkUI（方舟UI框架）提供的Native侧动画接口集合。 |
+| [ArkUI_AnimateOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animateoption) | ArkUI_AnimateOption | 定义动画效果的配置参数，用于配置动画的相关属性。 |
 | [ArkUI_Curve](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-curve) | ArkUI_Curve | 提供动画曲线的插值对象定义，用于动画属性值的插值计算。 |
 | [ArkUI_Curve*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-curve8h) | ArkUI_CurveHandle | 曲线插值对象的指针类型定义。曲线插值用于控制动画属性值随时间的变化规律，不同类型的插值曲线可实现不同的动画过渡效果。 |
-| [ArkUI_KeyframeAnimateOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-keyframeanimateoption) | ArkUI_KeyframeAnimateOption | 定义关键帧动画参数对象，作为关键帧动画相关接口的输入参数使用。 |
+| [ArkUI_KeyframeAnimateOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-keyframeanimateoption) | ArkUI_KeyframeAnimateOption | 定义关键帧动画参数对象，作为关键帧动画接口的输入参数使用。相关接口需要在主线程上调用。 |
 | [ArkUI_AnimatorOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animatoroption) | ArkUI_AnimatorOption | 定义animator动画参数对象，用于创建animator动画时配置动画属性参数。 |
-| [ArkUI_Animator*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animator8h) | ArkUI_AnimatorHandle | 定义animator动画对象指针。 |
+| [ArkUI_Animator*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animator8h) | ArkUI_AnimatorHandle | 定义animator动画对象指针，用于对ArkUI（方舟UI框架）动画对象进行操作和控制。 |
 | [ArkUI_AnimatorEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animatorevent) | ArkUI_AnimatorEvent | 定义animator回调事件对象，用于在动画状态变化回调中接收事件。 |
 | [ArkUI_AnimatorOnFrameEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animatoronframeevent) | ArkUI_AnimatorOnFrameEvent | 定义animator动画播放过程中逐帧回调的事件数据对象。 |
 | [ArkUI_TransitionEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-transitioneffect) | ArkUI_TransitionEffect | 定义transition属性的转场效果参数对象，用于配置组件出现或消失时的过渡动画效果。 |
@@ -58,7 +58,7 @@ synced_at: "2026-07-28T16:49:19.235341"
 | [ArkUI_ExpectedFrameRateRange* OH_ArkUI_AnimateOption_GetExpectedFrameRateRange(ArkUI_AnimateOption* option)](#oh_arkui_animateoption_getexpectedframeraterange) | 获取动画的期望帧率。 |
 | [void OH_ArkUI_AnimateOption_SetDuration(ArkUI_AnimateOption* option, int32_t value)](#oh_arkui_animateoption_setduration) | 设置动画持续时间，单位为ms（毫秒）。 |
 | [void OH_ArkUI_AnimateOption_SetTempo(ArkUI_AnimateOption* option, float value)](#oh_arkui_animateoption_settempo) | 设置动画播放速度。 |
-| [void OH_ArkUI_AnimateOption_SetCurve(ArkUI_AnimateOption* option, ArkUI_AnimationCurve value)](#oh_arkui_animateoption_setcurve) | 设置动画曲线。 |
+| [void OH_ArkUI_AnimateOption_SetCurve(ArkUI_AnimateOption* option, ArkUI_AnimationCurve value)](#oh_arkui_animateoption_setcurve) | 设置动画的自定义曲线。 |
 | [void OH_ArkUI_AnimateOption_SetDelay(ArkUI_AnimateOption* option, int32_t value)](#oh_arkui_animateoption_setdelay) | 设置动画延迟播放时间，单位为ms（毫秒）。 |
 | [void OH_ArkUI_AnimateOption_SetIterations(ArkUI_AnimateOption* option, int32_t value)](#oh_arkui_animateoption_setiterations) | 设置动画播放次数。 |
 | [void OH_ArkUI_AnimateOption_SetPlayMode(ArkUI_AnimateOption* option, ArkUI_AnimationPlayMode value)](#oh_arkui_animateoption_setplaymode) | 设置动画播放模式。 |
@@ -74,7 +74,7 @@ synced_at: "2026-07-28T16:49:19.235341"
 | [int32_t OH_ArkUI_KeyframeAnimateOption_SetDuration(ArkUI_KeyframeAnimateOption* option, int32_t value, int32_t index)](#oh_arkui_keyframeanimateoption_setduration) | 设置关键帧动画某段关键帧动画的持续时间，单位为ms（毫秒）。 |
 | [int32_t OH_ArkUI_KeyframeAnimateOption_SetCurve(ArkUI_KeyframeAnimateOption* option, ArkUI_CurveHandle value, int32_t index)](#oh_arkui_keyframeanimateoption_setcurve) | 设置关键帧动画某段关键帧使用的动画曲线。 |
 | [int32_t OH_ArkUI_KeyframeAnimateOption_RegisterOnEventCallback(ArkUI_KeyframeAnimateOption* option, void* userData, void (*event)(void* userData), int32_t index)](#oh_arkui_keyframeanimateoption_registeroneventcallback) | 设置关键帧时刻状态的闭包函数，即在该关键帧时刻要达到的状态。 |
-| [int32_t OH_ArkUI_KeyframeAnimateOption_GetDelay(ArkUI_KeyframeAnimateOption* option)](#oh_arkui_keyframeanimateoption_getdelay) | 获取关键帧整体延时时间，单位为ms（毫秒）。 |
+| [int32_t OH_ArkUI_KeyframeAnimateOption_GetDelay(ArkUI_KeyframeAnimateOption* option)](#oh_arkui_keyframeanimateoption_getdelay) | 获取关键帧整体延迟时间，单位为ms（毫秒）。 |
 | [int32_t OH_ArkUI_KeyframeAnimateOption_GetIterations(ArkUI_KeyframeAnimateOption* option)](#oh_arkui_keyframeanimateoption_getiterations) | 获取关键帧动画播放次数。 |
 | [ArkUI_ExpectedFrameRateRange* OH_ArkUI_KeyframeAnimateOption_GetExpectedFrameRate(ArkUI_KeyframeAnimateOption* option)](#oh_arkui_keyframeanimateoption_getexpectedframerate) | 获取关键帧动画参数的期望帧率。 |
 | [int32_t OH_ArkUI_KeyframeAnimateOption_GetDuration(ArkUI_KeyframeAnimateOption* option, int32_t index)](#oh_arkui_keyframeanimateoption_getduration) | 获取关键帧动画某段状态持续时间，单位为ms（毫秒）。 |
@@ -82,9 +82,9 @@ synced_at: "2026-07-28T16:49:19.235341"
 | [ArkUI_AnimatorOption* OH_ArkUI_AnimatorOption_Create(int32_t keyframeSize)](#oh_arkui_animatoroption_create) | 创建animator动画对象参数。 |
 | [void OH_ArkUI_AnimatorOption_Dispose(ArkUI_AnimatorOption* option)](#oh_arkui_animatoroption_dispose) | 销毁animator动画对象参数。 |
 | [int32_t OH_ArkUI_AnimatorOption_SetDuration(ArkUI_AnimatorOption* option, int32_t value)](#oh_arkui_animatoroption_setduration) | 设置animator动画播放的时长，单位为ms（毫秒）。 |
-| [int32_t OH_ArkUI_AnimatorOption_SetDelay(ArkUI_AnimatorOption* option, int32_t value)](#oh_arkui_animatoroption_setdelay) | 设置animator动画延时播放的时间，单位为ms（毫秒）。 |
+| [int32_t OH_ArkUI_AnimatorOption_SetDelay(ArkUI_AnimatorOption* option, int32_t value)](#oh_arkui_animatoroption_setdelay) | 设置animator动画延迟播放的时间，单位为ms（毫秒）。 |
 | [int32_t OH_ArkUI_AnimatorOption_SetIterations(ArkUI_AnimatorOption* option, int32_t value)](#oh_arkui_animatoroption_setiterations) | 设置animator动画播放次数。默认播放一次，设置为-1时表示无限次播放，设置为0时表示无动画效果。 |
-| [int32_t OH_ArkUI_AnimatorOption_SetFill(ArkUI_AnimatorOption* option, ArkUI_AnimationFillMode value)](#oh_arkui_animatoroption_setfill) | 设置animator动画执行时组件在动画开始前和结束后的状态。 |
+| [int32_t OH_ArkUI_AnimatorOption_SetFill(ArkUI_AnimatorOption* option, ArkUI_AnimationFillMode value)](#oh_arkui_animatoroption_setfill) | 设置组件在动画开始前和结束后保持的状态。 |
 | [int32_t OH_ArkUI_AnimatorOption_SetDirection(ArkUI_AnimatorOption* option, ArkUI_AnimationDirection value)](#oh_arkui_animatoroption_setdirection) | 设置animator动画播放方向。 |
 | [int32_t OH_ArkUI_AnimatorOption_SetCurve(ArkUI_AnimatorOption* option, ArkUI_CurveHandle value)](#oh_arkui_animatoroption_setcurve) | 设置animator动画插值曲线。 |
 | [int32_t OH_ArkUI_AnimatorOption_SetBegin(ArkUI_AnimatorOption* option, float value)](#oh_arkui_animatoroption_setbegin) | 设置animator动画插值起点。 |
@@ -93,36 +93,36 @@ synced_at: "2026-07-28T16:49:19.235341"
 | [int32_t OH_ArkUI_AnimatorOption_SetKeyframe(ArkUI_AnimatorOption* option, float time, float value, int32_t index)](#oh_arkui_animatoroption_setkeyframe) | 设置animator动画关键帧参数。 |
 | [int32_t OH_ArkUI_AnimatorOption_SetKeyframeCurve(ArkUI_AnimatorOption* option, ArkUI_CurveHandle value, int32_t index)](#oh_arkui_animatoroption_setkeyframecurve) | 设置animator动画关键帧曲线类型。 |
 | [int32_t OH_ArkUI_AnimatorOption_GetDuration(ArkUI_AnimatorOption* option)](#oh_arkui_animatoroption_getduration) | 获取animator动画播放的时长，单位为ms（毫秒）。 |
-| [int32_t OH_ArkUI_AnimatorOption_GetDelay(ArkUI_AnimatorOption* option)](#oh_arkui_animatoroption_getdelay) | 获取animator动画延时播放时长，单位为ms（毫秒）。 |
+| [int32_t OH_ArkUI_AnimatorOption_GetDelay(ArkUI_AnimatorOption* option)](#oh_arkui_animatoroption_getdelay) | 获取animator动画延迟播放时长，单位为ms（毫秒）。 |
 | [int32_t OH_ArkUI_AnimatorOption_GetIterations(ArkUI_AnimatorOption* option)](#oh_arkui_animatoroption_getiterations) | 获取animator动画播放次数。 |
 | [ArkUI_AnimationFillMode OH_ArkUI_AnimatorOption_GetFill(ArkUI_AnimatorOption* option)](#oh_arkui_animatoroption_getfill) | 获取animator动画执行时组件在动画开始前和结束后的状态。 |
 | [ArkUI_AnimationDirection OH_ArkUI_AnimatorOption_GetDirection(ArkUI_AnimatorOption* option)](#oh_arkui_animatoroption_getdirection) | 获取animator动画播放方向。 |
 | [ArkUI_CurveHandle OH_ArkUI_AnimatorOption_GetCurve(ArkUI_AnimatorOption* option)](#oh_arkui_animatoroption_getcurve) | 获取animator动画插值曲线。 |
-| [float OH_ArkUI_AnimatorOption_GetBegin(ArkUI_AnimatorOption* option)](#oh_arkui_animatoroption_getbegin) | 获取animator动画插值起点。 |
-| [float OH_ArkUI_AnimatorOption_GetEnd(ArkUI_AnimatorOption* option)](#oh_arkui_animatoroption_getend) | 获取animator动画插值终点。 |
+| [float OH_ArkUI_AnimatorOption_GetBegin(ArkUI_AnimatorOption* option)](#oh_arkui_animatoroption_getbegin) | 获取animator动画插值起点。当Animator动画为关键帧动画时，此方法返回的值无实际意义。 |
+| [float OH_ArkUI_AnimatorOption_GetEnd(ArkUI_AnimatorOption* option)](#oh_arkui_animatoroption_getend) | 获取animator动画插值终点。当Animator动画为关键帧动画时，此方法返回的值无实际意义。 |
 | [ArkUI_ExpectedFrameRateRange* OH_ArkUI_AnimatorOption_GetExpectedFrameRateRange(ArkUI_AnimatorOption* option)](#oh_arkui_animatoroption_getexpectedframeraterange) | 获取animator动画期望的帧率范围。 |
 | [float OH_ArkUI_AnimatorOption_GetKeyframeTime(ArkUI_AnimatorOption* option, int32_t index)](#oh_arkui_animatoroption_getkeyframetime) | 获取animator动画关键帧时间，单位为ms（毫秒）。 |
-| [float OH_ArkUI_AnimatorOption_GetKeyframeValue(ArkUI_AnimatorOption* option, int32_t index)](#oh_arkui_animatoroption_getkeyframevalue) | 获取animator动画关键帧数值。 |
+| [float OH_ArkUI_AnimatorOption_GetKeyframeValue(ArkUI_AnimatorOption* option, int32_t index)](#oh_arkui_animatoroption_getkeyframevalue) | 获取animator动画在该关键帧位置的插值目标值。 |
 | [ArkUI_CurveHandle OH_ArkUI_AnimatorOption_GetKeyframeCurve(ArkUI_AnimatorOption* option, int32_t index)](#oh_arkui_animatoroption_getkeyframecurve) | 获取animator动画关键帧动画插值曲线。 |
 | [void* OH_ArkUI_AnimatorEvent_GetUserData(ArkUI_AnimatorEvent* event)](#oh_arkui_animatorevent_getuserdata) | 获取动画事件对象中的用户自定义对象。 |
 | [void* OH_ArkUI_AnimatorOnFrameEvent_GetUserData(ArkUI_AnimatorOnFrameEvent* event)](#oh_arkui_animatoronframeevent_getuserdata) | 获取动画的帧事件中的用户自定义对象。 |
 | [float OH_ArkUI_AnimatorOnFrameEvent_GetValue(ArkUI_AnimatorOnFrameEvent* event)](#oh_arkui_animatoronframeevent_getvalue) | 获取动画帧回调事件对象中的插值结果。 |
 | [int32_t OH_ArkUI_AnimatorOption_RegisterOnFrameCallback(ArkUI_AnimatorOption* option, void* userData, void (*callback)(ArkUI_AnimatorOnFrameEvent* event))](#oh_arkui_animatoroption_registeronframecallback) | 设置animator动画接收到帧时回调。 |
-| [int32_t OH_ArkUI_AnimatorOption_RegisterOnFinishCallback(ArkUI_AnimatorOption* option, void* userData, void (*callback)(ArkUI_AnimatorEvent* event))](#oh_arkui_animatoroption_registeronfinishcallback) | 设置animator动画完成时回调。 |
+| [int32_t OH_ArkUI_AnimatorOption_RegisterOnFinishCallback(ArkUI_AnimatorOption* option, void* userData, void (*callback)(ArkUI_AnimatorEvent* event))](#oh_arkui_animatoroption_registeronfinishcallback) | 设置animator动画完成时回调。当animator动画所有次数播放完成后调用，或调用[OH_ArkUI_Animator_Finish](#oh_arkui_animator_finish)结束时也会触发。 |
 | [int32_t OH_ArkUI_AnimatorOption_RegisterOnCancelCallback(ArkUI_AnimatorOption* option, void* userData, void (*callback)(ArkUI_AnimatorEvent* event))](#oh_arkui_animatoroption_registeroncancelcallback) | 设置animator动画被取消时回调。 |
 | [int32_t OH_ArkUI_AnimatorOption_RegisterOnRepeatCallback(ArkUI_AnimatorOption* option, void* userData, void (*callback)(ArkUI_AnimatorEvent* event))](#oh_arkui_animatoroption_registeronrepeatcallback) | 设置animator动画重复时回调。 |
 | [int32_t OH_ArkUI_Animator_ResetAnimatorOption(ArkUI_AnimatorHandle animatorHandle, ArkUI_AnimatorOption* option)](#oh_arkui_animator_resetanimatoroption) | 重置animator动画的配置参数。 |
 | [int32_t OH_ArkUI_Animator_Play(ArkUI_AnimatorHandle animatorHandle)](#oh_arkui_animator_play) | 启动animator动画。 |
-| [int32_t OH_ArkUI_Animator_Finish(ArkUI_AnimatorHandle animatorHandle)](#oh_arkui_animator_finish) | 结束animator动画。 |
+| [int32_t OH_ArkUI_Animator_Finish(ArkUI_AnimatorHandle animatorHandle)](#oh_arkui_animator_finish) | 结束animator动画，动画将跳到终点状态。与OH_ArkUI_Animator_Cancel的区别：Finish使动画完成至终点状态，Cancel中断动画并回到初始状态。 |
 | [int32_t OH_ArkUI_Animator_Pause(ArkUI_AnimatorHandle animatorHandle)](#oh_arkui_animator_pause) | 暂停animator动画。 |
 | [int32_t OH_ArkUI_Animator_Cancel(ArkUI_AnimatorHandle animatorHandle)](#oh_arkui_animator_cancel) | 取消animator动画。 |
 | [int32_t OH_ArkUI_Animator_Reverse(ArkUI_AnimatorHandle animatorHandle)](#oh_arkui_animator_reverse) | 以相反的顺序播放animator动画。 |
 | [ArkUI_CurveHandle OH_ArkUI_Curve_CreateCurveByType(ArkUI_AnimationCurve curve)](#oh_arkui_curve_createcurvebytype) | 插值曲线的初始化函数，可以根据入参创建一个插值曲线对象。 |
 | [ArkUI_CurveHandle OH_ArkUI_Curve_CreateStepsCurve(int32_t count, bool end)](#oh_arkui_curve_createstepscurve) | 构造阶梯曲线对象。 |
-| [ArkUI_CurveHandle OH_ArkUI_Curve_CreateCubicBezierCurve(float x1, float y1, float x2, float y2)](#oh_arkui_curve_createcubicbeziercurve) | 构造三阶贝塞尔曲线对象。 |
+| [ArkUI_CurveHandle OH_ArkUI_Curve_CreateCubicBezierCurve(float x1, float y1, float x2, float y2)](#oh_arkui_curve_createcubicbeziercurve) | 构造三阶贝塞尔曲线对象。动画时长受动画参数中的时长参数控制。 |
 | [ArkUI_CurveHandle OH_ArkUI_Curve_CreateSpringCurve(float velocity, float mass, float stiffness, float damping)](#oh_arkui_curve_createspringcurve) | 构造弹簧曲线对象，曲线形状由弹簧参数决定，动画时长受动画参数中的时长参数控制。 |
 | [ArkUI_CurveHandle OH_ArkUI_Curve_CreateSpringMotion(float response, float dampingFraction, float overlapDuration)](#oh_arkui_curve_createspringmotion) | 构造弹性动画曲线对象。如果对同一对象的同一属性进行多个弹性动画，每个动画会替换掉前一个动画，并继承之前的速度。 |
-| [ArkUI_CurveHandle OH_ArkUI_Curve_CreateResponsiveSpringMotion(float response, float dampingFraction, float overlapDuration)](#oh_arkui_curve_createresponsivespringmotion) | 构造弹性跟手动画曲线对象，是springMotion的一种特例，仅默认参数不同，可与springMotion混合使用。 |
+| [ArkUI_CurveHandle OH_ArkUI_Curve_CreateResponsiveSpringMotion(float response, float dampingFraction, float overlapDuration)](#oh_arkui_curve_createresponsivespringmotion) | 构造弹性跟手动画曲线对象，是springMotion的一种特例，仅默认参数不同，可与springMotion混合使用。如果对同一对象的同一属性进行多个弹性动画，每个动画会替换掉前一个动画，并继承之前的速度。 |
 | [ArkUI_CurveHandle OH_ArkUI_Curve_CreateInterpolatingSpring(float velocity, float mass, float stiffness, float damping)](#oh_arkui_curve_createinterpolatingspring) | 构造插值器弹簧曲线对象，生成一条从0到1的动画曲线，实际动画值根据曲线进行插值计算。 |
 | [ArkUI_CurveHandle OH_ArkUI_Curve_CreateCustomCurve(void* userData, float (*interpolate)(float fraction, void* userdata))](#oh_arkui_curve_createcustomcurve) | 构造自定义曲线对象。 |
 | [void OH_ArkUI_Curve_DisposeCurve(ArkUI_CurveHandle curveHandle)](#oh_arkui_curve_disposecurve) | 销毁自定义曲线对象。 |
@@ -130,8 +130,9 @@ synced_at: "2026-07-28T16:49:19.235341"
 | [ArkUI_TransitionEffect* OH_ArkUI_CreateTranslationTransitionEffect(ArkUI_TranslationOptions* translate)](#oh_arkui_createtranslationtransitioneffect) | 创建组件转场时的平移效果对象。 |
 | [ArkUI_TransitionEffect* OH_ArkUI_CreateScaleTransitionEffect(ArkUI_ScaleOptions* scale)](#oh_arkui_createscaletransitioneffect) | 创建组件转场时的缩放效果对象。 |
 | [ArkUI_TransitionEffect* OH_ArkUI_CreateRotationTransitionEffect(ArkUI_RotationOptions* rotate)](#oh_arkui_createrotationtransitioneffect) | 创建组件转场时的旋转效果对象。 |
-| [ArkUI_TransitionEffect* OH_ArkUI_CreateMovementTransitionEffect(ArkUI_TransitionEdge edge)](#oh_arkui_createmovementtransitioneffect) | 创建组件平移效果对象。 |
+| [ArkUI_TransitionEffect* OH_ArkUI_CreateMovementTransitionEffect(ArkUI_TransitionEdge edge)](#oh_arkui_createmovementtransitioneffect) | 创建组件平移效果对象，用于组件从指定边缘滑入或滑出的转场效果，适用于仅需指定滑动方向的简单场景。与[OH_ArkUI_CreateTranslationTransitionEffect](#oh_arkui_createtranslationtransitioneffect)不同：后者支持自定义x/y/z方向的精确平移参数，适用于需要指定具体位移距离的场景。 |
 | [ArkUI_TransitionEffect* OH_ArkUI_CreateAsymmetricTransitionEffect(ArkUI_TransitionEffect* appear, ArkUI_TransitionEffect* disappear)](#oh_arkui_createasymmetrictransitioneffect) | 创建非对称的转场效果对象。 |
+| [ArkUI_TransitionEffect* OH_ArkUI_CreateIdentityTransitionEffect(void)](#oh_arkui_createidentitytransitioneffect) | 创建无转场效果对象。 |
 | [void OH_ArkUI_TransitionEffect_Dispose(ArkUI_TransitionEffect* effect)](#oh_arkui_transitioneffect_dispose) | 销毁转场效果对象。 |
 | [int32_t OH_ArkUI_TransitionEffect_Combine(ArkUI_TransitionEffect* firstEffect, ArkUI_TransitionEffect* secondEffect)](#oh_arkui_transitioneffect_combine) | 设置转场效果链式组合，以形成包含多种转场效果的TransitionEffect。 |
 | [int32_t OH_ArkUI_TransitionEffect_SetAnimation(ArkUI_TransitionEffect* effect, ArkUI_AnimateOption* animation)](#oh_arkui_transitioneffect_setanimation) | 设置转场效果动画参数。 |
@@ -239,7 +240,7 @@ ArkUI_AnimationCurve OH_ArkUI_AnimateOption_GetCurve(ArkUI_AnimateOption* option
 
 | 类型 | 说明 |
 | --- | --- |
-| [ArkUI_AnimationCurve](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_animationcurve) | 动画曲线。option异常时返回-1。 |
+| [ArkUI_AnimationCurve](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_animationcurve) | 动画曲线。返回值包括：ARKUI_CURVE_LINEAR（0，线性曲线）、ARKUI_CURVE_EASE（1，缓动曲线）、ARKUI_CURVE_EASE_IN（2，加速曲线）、ARKUI_CURVE_EASE_OUT（3，减速曲线）、ARKUI_CURVE_EASE_IN_OUT（4，先加速后减速曲线）、ARKUI_CURVE_FAST_OUT_SLOW_IN（5，标准曲线）、ARKUI_CURVE_LINEAR_OUT_SLOW_IN（6，减速曲线）、ARKUI_CURVE_FAST_OUT_LINEAR_IN（7，加速曲线）、ARKUI_CURVE_EXTREME_DECELERATION（8，急减速曲线）、ARKUI_CURVE_SHARP（9，锐利曲线）、ARKUI_CURVE_RHYTHM（10，节奏曲线）、ARKUI_CURVE_SMOOTH（11，平滑曲线）、ARKUI_CURVE_FRICTION（12，阻尼曲线）。option异常时返回-1。 |
 
 #### [h2]OH_ArkUI_AnimateOption_GetDelay()
 
@@ -308,7 +309,7 @@ ArkUI_AnimationPlayMode OH_ArkUI_AnimateOption_GetPlayMode(ArkUI_AnimateOption* 
 
 | 类型 | 说明 |
 | --- | --- |
-| [ArkUI_AnimationPlayMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_animationplaymode) | 动画播放模式。option异常时返回-1。 |
+| [ArkUI_AnimationPlayMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_animationplaymode) | 动画播放模式。返回值包括：ARKUI_ANIMATION_PLAY_MODE_NORMAL（0，正向播放）、ARKUI_ANIMATION_PLAY_MODE_REVERSE（1，反向播放）、ARKUI_ANIMATION_PLAY_MODE_ALTERNATE（2，交替播放）、ARKUI_ANIMATION_PLAY_MODE_ALTERNATE_REVERSE（3，反向交替播放）。option异常时返回-1。 |
 
 #### [h2]OH_ArkUI_AnimateOption_GetExpectedFrameRateRange()
 
@@ -349,7 +350,7 @@ void OH_ArkUI_AnimateOption_SetDuration(ArkUI_AnimateOption* option, int32_t val
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_AnimateOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animateoption)* option | 动画效果参数。 option为NULL时，操作无效。 |
-| int32_t value | 动画持续时间，单位为ms（毫秒）。取值范围：[0, +∞)。 value小于0时，按0处理。 |
+| int32_t value | 动画持续时间，单位为ms（毫秒），默认值1000ms。取值范围：[0, +∞)。 value小于0时，按0处理。 |
 
 #### [h2]OH_ArkUI_AnimateOption_SetTempo()
 
@@ -376,7 +377,7 @@ void OH_ArkUI_AnimateOption_SetCurve(ArkUI_AnimateOption* option, ArkUI_Animatio
 ```
  描述：
 
-设置动画曲线。
+设置动画自定义曲线。
 
 起始版本： 12
 
@@ -385,7 +386,7 @@ void OH_ArkUI_AnimateOption_SetCurve(ArkUI_AnimateOption* option, ArkUI_Animatio
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_AnimateOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animateoption)* option | 动画效果参数。 option为NULL时，操作无效。 |
-| [ArkUI_AnimationCurve](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_animationcurve) value | 动画曲线。默认值：[ARKUI_CURVE_EASE_IN_OUT](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_animationcurve)。 value值异常时，设置无效。 **说明：**若同时设置了[OH_ArkUI_AnimateOption_SetICurve](#oh_arkui_animateoption_seticurve)，则SetICurve优先生效，此设置将被覆盖。 |
+| [ArkUI_AnimationCurve](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_animationcurve) value | 动画曲线。默认值：[ARKUI_CURVE_EASE_IN_OUT](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_animationcurve)，建议使用ARKUI_CURVE_EASE_IN_OUT获得更平滑的动画效果。 value值异常时，设置无效。 **说明：**若同时设置了[OH_ArkUI_AnimateOption_SetICurve](#oh_arkui_animateoption_seticurve)，则SetICurve优先生效，本设置不生效。 |
 
 #### [h2]OH_ArkUI_AnimateOption_SetDelay()
 
@@ -439,7 +440,7 @@ void OH_ArkUI_AnimateOption_SetPlayMode(ArkUI_AnimateOption* option, ArkUI_Anima
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_AnimateOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animateoption)* option | 动画效果参数。 option为NULL时，操作无效。 |
-| [ArkUI_AnimationPlayMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_animationplaymode) value | 动画播放模式。默认值：[ARKUI_ANIMATION_PLAY_MODE_NORMAL](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_animationplaymode)。 value值异常时，操作无效。 |
+| [ArkUI_AnimationPlayMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_animationplaymode) value | 动画播放模式。默认值：[ARKUI_ANIMATION_PLAY_MODE_NORMAL](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_animationplaymode)。ARKUI_ANIMATION_PLAY_MODE_NORMAL表示正向播放，ARKUI_ANIMATION_PLAY_MODE_REVERSE表示反向播放，ARKUI_ANIMATION_PLAY_MODE_ALTERNATE表示交替正反向播放，ARKUI_ANIMATION_PLAY_MODE_ALTERNATE_REVERSE表示交替反向和正向播放，奇数次反向，偶数次正向。 value值异常时，操作无效。 |
 
 #### [h2]OH_ArkUI_AnimateOption_SetExpectedFrameRateRange()
 
@@ -517,7 +518,7 @@ ArkUI_KeyframeAnimateOption* OH_ArkUI_KeyframeAnimateOption_Create(int32_t size)
 
 | 参数项 | 描述 |
 | --- | --- |
-| int32_t size | 关键帧动画状态数。 size小于0时返回NULL。 |
+| int32_t size | 关键帧动画状态数。取值范围：[0, +∞)，需要为正整数才能产生动画效果。 size小于0时返回NULL。 |
 
 返回：
 
@@ -564,7 +565,7 @@ int32_t OH_ArkUI_KeyframeAnimateOption_SetDelay(ArkUI_KeyframeAnimateOption* opt
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 函数参数异常。可能原因：option为NULL。解决措施：请确保option为有效的动画参数对象指针。 |
 
 #### [h2]OH_ArkUI_KeyframeAnimateOption_SetIterations()
 
@@ -656,7 +657,7 @@ int32_t OH_ArkUI_KeyframeAnimateOption_SetDuration(ArkUI_KeyframeAnimateOption* 
 | --- | --- |
 | [ArkUI_KeyframeAnimateOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-keyframeanimateoption)* option | 关键帧动画参数。 option为NULL时，返回错误码[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
 | int32_t value | 关键帧动画的持续时间，单位为ms（毫秒），默认值1000ms。取值范围：[0, +∞)。 value小于0时，按0处理。 |
-| int32_t index | 状态索引值。 index小于0时，返回错误码[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
+| int32_t index | 状态索引值。取值范围：[0, size-1]，其中size为关键帧动画状态数。 index超出范围时，返回错误码[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
 
 返回：
 
@@ -673,7 +674,7 @@ int32_t OH_ArkUI_KeyframeAnimateOption_SetCurve(ArkUI_KeyframeAnimateOption* opt
 
 设置关键帧动画某段关键帧使用的动画曲线。
 
-![](./img/note_3.0-zh-cn.png) 由于[springMotion](#oh_arkui_curve_createspringmotion)、[responsiveSpringMotion](#oh_arkui_curve_createresponsivespringmotion)、[interpolatingSpring](#oh_arkui_curve_createinterpolatingspring)曲线时长不生效，故不支持这三种曲线。
+![](./img/note_3.0-zh-cn.png) 由于[springMotion](#oh_arkui_curve_createspringmotion)、[responsiveSpringMotion](#oh_arkui_curve_createresponsivespringmotion)、[interpolatingSpring](#oh_arkui_curve_createinterpolatingspring)曲线时长不生效，故不支持这三种曲线。关键帧动画支持[springCurve](#oh_arkui_curve_createspringcurve)和[customCurve](#oh_arkui_curve_createcustomcurve)曲线。
 
 起始版本： 12
 
@@ -724,7 +725,7 @@ int32_t OH_ArkUI_KeyframeAnimateOption_GetDelay(ArkUI_KeyframeAnimateOption* opt
 ```
  描述：
 
-获取关键帧整体延时时间，单位为ms（毫秒）。
+获取关键帧整体延迟时间，单位为ms（毫秒）。
 
 起始版本： 12
 
@@ -738,7 +739,7 @@ int32_t OH_ArkUI_KeyframeAnimateOption_GetDelay(ArkUI_KeyframeAnimateOption* opt
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 整体延时时间，单位为ms（毫秒）。option异常时返回0。 |
+| int32_t | 整体延迟时间，单位为ms（毫秒）。option异常时返回0。 |
 
 #### [h2]OH_ArkUI_KeyframeAnimateOption_GetIterations()
 
@@ -802,7 +803,7 @@ int32_t OH_ArkUI_KeyframeAnimateOption_GetDuration(ArkUI_KeyframeAnimateOption* 
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_KeyframeAnimateOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-keyframeanimateoption)* option | 关键帧动画参数。 option为NULL时，返回0。 |
-| int32_t index | 状态索引值。 index小于0时，返回0。 |
+| int32_t index | 状态索引值。取值范围：[0, size-1]，其中size为关键帧动画状态数。 index不在取值范围内时，返回0。 |
 
 返回：
 
@@ -826,7 +827,7 @@ ArkUI_CurveHandle OH_ArkUI_KeyframeAnimateOption_GetCurve(ArkUI_KeyframeAnimateO
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_KeyframeAnimateOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-keyframeanimateoption)* option | 关键帧动画参数。 option为NULL时，返回NULL。 |
-| int32_t index | 状态索引值。 index小于0时，返回NULL。 |
+| int32_t index | 状态索引值。取值范围：[0, size-1]，其中size为关键帧动画状态数。 index不在取值范围内时，返回NULL。 |
 
 返回：
 
@@ -907,7 +908,7 @@ int32_t OH_ArkUI_AnimatorOption_SetDelay(ArkUI_AnimatorOption* option, int32_t v
 ```
  描述：
 
-设置animator动画延时播放的时间，单位为ms（毫秒）。
+设置animator动画延迟播放的时间，单位为ms（毫秒）。
 
 起始版本： 12
 
@@ -957,7 +958,7 @@ int32_t OH_ArkUI_AnimatorOption_SetFill(ArkUI_AnimatorOption* option, ArkUI_Anim
 ```
  描述：
 
-设置animator动画执行时组件在动画开始前和结束后的状态。
+设置组件在动画开始前和结束后保持的状态。
 
 起始版本： 12
 
@@ -966,7 +967,7 @@ int32_t OH_ArkUI_AnimatorOption_SetFill(ArkUI_AnimatorOption* option, ArkUI_Anim
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_AnimatorOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animatoroption)* option | animator动画对象参数。 option为NULL时，返回错误码[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
-| [ArkUI_AnimationFillMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_animationfillmode) value | 动画执行时组件在动画开始前和结束后的状态。默认值：[ARKUI_ANIMATION_FILL_MODE_FORWARDS](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_animationfillmode)。 value小于0时，返回错误码[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
+| [ArkUI_AnimationFillMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_animationfillmode) value | 动画执行时组件在动画开始前和结束后的状态。默认值：[ARKUI_ANIMATION_FILL_MODE_FORWARDS](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_animationfillmode)。 ARKUI_ANIMATION_FILL_MODE_NONE（0）表示动画前后均恢复初始状态，ARKUI_ANIMATION_FILL_MODE_FORWARDS（1）表示动画结束后保持终点状态，ARKUI_ANIMATION_FILL_MODE_BACKWARDS（2）表示动画开始前保持起点状态，ARKUI_ANIMATION_FILL_MODE_BOTH（3）表示动画前后均保持对应状态。 value小于0时，返回错误码[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
 
 返回：
 
@@ -990,7 +991,7 @@ int32_t OH_ArkUI_AnimatorOption_SetDirection(ArkUI_AnimatorOption* option, ArkUI
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_AnimatorOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animatoroption)* option | animator动画对象参数。 option为NULL时，返回错误码[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
-| [ArkUI_AnimationDirection](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_animationdirection) value | 动画播放方向。 value小于0时，返回错误码[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
+| [ArkUI_AnimationDirection](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_animationdirection) value | 动画播放方向。默认值：[ARKUI_ANIMATION_DIRECTION_NORMAL](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_animationdirection)。 ARKUI_ANIMATION_DIRECTION_NORMAL（0）表示正向播放，ARKUI_ANIMATION_DIRECTION_REVERSE（1）表示反向播放，ARKUI_ANIMATION_DIRECTION_ALTERNATE（2）表示交替正向和反向播放，奇数次正向，偶数次反向，ARKUI_ANIMATION_DIRECTION_ALTERNATE_REVERSE（3）表示交替反向和正向播放，奇数次反向，偶数次正向。 value超出取值范围时，返回错误码[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
 
 返回：
 
@@ -1033,7 +1034,7 @@ int32_t OH_ArkUI_AnimatorOption_SetBegin(ArkUI_AnimatorOption* option, float val
 
 设置animator动画插值起点。
 
-![](./img/note_3.0-zh-cn.png) 当Animator动画为关键帧动画[ArkUI_KeyframeAnimateOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-keyframeanimateoption)时，此方法不生效。
+![](./img/note_3.0-zh-cn.png) 当animator动画为关键帧动画时，此方法返回错误码[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。
 
 起始版本： 12
 
@@ -1042,7 +1043,7 @@ int32_t OH_ArkUI_AnimatorOption_SetBegin(ArkUI_AnimatorOption* option, float val
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_AnimatorOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animatoroption)* option | animator动画对象参数。 option为NULL时，返回错误码[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
-| float value | 动画插值起点。取值范围：(-∞, +∞)。 |
+| float value | 动画插值起点，默认值0.0。取值范围：(-∞, +∞)。 |
 
 返回：
 
@@ -1059,7 +1060,7 @@ int32_t OH_ArkUI_AnimatorOption_SetEnd(ArkUI_AnimatorOption* option, float value
 
 设置animator动画插值终点。
 
-![](./img/note_3.0-zh-cn.png) 当Animator动画为关键帧动画[ArkUI_KeyframeAnimateOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-keyframeanimateoption)时，此方法不生效。
+![](./img/note_3.0-zh-cn.png) 当animator动画为关键帧动画时，此方法返回错误码[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。
 
 起始版本： 12
 
@@ -1068,7 +1069,7 @@ int32_t OH_ArkUI_AnimatorOption_SetEnd(ArkUI_AnimatorOption* option, float value
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_AnimatorOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animatoroption)* option | animator动画对象参数。 option为NULL时，返回错误码[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
-| float value | 动画插值终点。取值范围：(-∞, +∞)。 |
+| float value | 动画插值终点。取值范围：(-∞, +∞)。默认值：1。 |
 
 返回：
 
@@ -1116,8 +1117,8 @@ int32_t OH_ArkUI_AnimatorOption_SetKeyframe(ArkUI_AnimatorOption* option, float 
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_AnimatorOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animatoroption)* option | animator动画对象参数。 option为NULL时，返回错误码[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
-| float time | 关键帧时间。取值范围：[0, 1], 必须是递增。默认值：按索引均匀分布（如第1帧为0.0，第2帧为0.5，第3帧为1.0）。 time小于0或time大于1时，返回错误码[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
-| float value | 关键帧数值。取值范围：(-∞, +∞)。 |
+| float time | 关键帧时间。取值范围：[0, 1], 各关键帧时间必须依次递增，即后一关键帧的time值大于前一关键帧的time值。默认值：按索引均匀分布（如第1帧为0.0，第2帧为0.5，第3帧为1.0）。 time小于0或time大于1时，返回错误码[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
+| float value | 关键帧对应的插值目标值，表示动画在该关键帧时刻要达到的属性值。取值范围：(-∞, +∞)。 |
 | int32_t index | 关键帧的索引值。 index小于0时，返回错误码[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
 
 返回：
@@ -1168,7 +1169,7 @@ int32_t OH_ArkUI_AnimatorOption_GetDuration(ArkUI_AnimatorOption* option)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkUI_AnimatorOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animatoroption)* option | animator动画参数。 option为NULL时，返回0。 |
+| [ArkUI_AnimatorOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animatoroption)* option | animator动画参数。 option为NULL时，返回-1。 |
 
 返回：
 
@@ -1183,7 +1184,7 @@ int32_t OH_ArkUI_AnimatorOption_GetDelay(ArkUI_AnimatorOption* option)
 ```
  描述：
 
-获取animator动画延时播放时长，单位为ms（毫秒）。
+获取animator动画延迟播放时长，单位为ms（毫秒）。
 
 起始版本： 12
 
@@ -1197,7 +1198,7 @@ int32_t OH_ArkUI_AnimatorOption_GetDelay(ArkUI_AnimatorOption* option)
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 动画延时播放时长，单位为ms（毫秒）。option异常时返回0。 |
+| int32_t | 动画延迟播放时长，单位为ms（毫秒）。option异常时返回0。 |
 
 #### [h2]OH_ArkUI_AnimatorOption_GetIterations()
 
@@ -1237,13 +1238,13 @@ ArkUI_AnimationFillMode OH_ArkUI_AnimatorOption_GetFill(ArkUI_AnimatorOption* op
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkUI_AnimatorOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animatoroption)* option | animator动画参数。 |
+| [ArkUI_AnimatorOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animatoroption)* option | animator动画参数。option为NULL时，返回-1。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| [ArkUI_AnimationFillMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_animationfillmode) | 动画执行时组件在动画开始前和结束后的状态。option异常时返回-1。 |
+| [ArkUI_AnimationFillMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_animationfillmode) | 动画执行时组件在动画开始前和结束后的状态。返回值包括：ARKUI_ANIMATION_FILL_MODE_NONE（0，播放完成后恢复初始状态）、ARKUI_ANIMATION_FILL_MODE_FORWARDS（1，播放完成后保持终点状态）、ARKUI_ANIMATION_FILL_MODE_BACKWARDS（2，延时播放时保持起点状态）、ARKUI_ANIMATION_FILL_MODE_BOTH（3，同时应用FORWARDS和BACKWARDS效果）。option异常时返回-1。 |
 
 #### [h2]OH_ArkUI_AnimatorOption_GetDirection()
 
@@ -1266,7 +1267,7 @@ ArkUI_AnimationDirection OH_ArkUI_AnimatorOption_GetDirection(ArkUI_AnimatorOpti
 
 | 类型 | 说明 |
 | --- | --- |
-| [ArkUI_AnimationDirection](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_animationdirection) | 动画播放方向。option异常时返回-1。 |
+| [ArkUI_AnimationDirection](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_animationdirection) | 动画播放方向。返回值包括：ARKUI_ANIMATION_DIRECTION_NORMAL（0，正向播放）、ARKUI_ANIMATION_DIRECTION_REVERSE（1，反向播放）、ARKUI_ANIMATION_DIRECTION_ALTERNATE（2，交替正向和反向播放，奇数次正向，偶数次反向）、ARKUI_ANIMATION_DIRECTION_ALTERNATE_REVERSE（3，交替反向和正向播放，奇数次反向，偶数次正向）。option异常时返回-1。 |
 
 #### [h2]OH_ArkUI_AnimatorOption_GetCurve()
 
@@ -1423,8 +1424,8 @@ ArkUI_CurveHandle OH_ArkUI_AnimatorOption_GetKeyframeCurve(ArkUI_AnimatorOption*
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkUI_AnimatorOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animatoroption)* option | animator动画对象参数。option为NULL时，返回0.0。 |
-| int32_t index | 关键帧的索引值。取值范围：[0, keyframeSize-1]，其中keyframeSize为关键帧个数。 index超出范围时，返回0.0。 |
+| [ArkUI_AnimatorOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animatoroption)* option | animator动画对象参数。option为NULL时，返回空指针。 |
+| int32_t index | 关键帧的索引值。取值范围：[0, keyframeSize-1]，其中keyframeSize为关键帧个数。 index超出范围时，返回空指针。 |
 
 返回：
 
@@ -1616,8 +1617,8 @@ int32_t OH_ArkUI_Animator_ResetAnimatorOption(ArkUI_AnimatorHandle animatorHandl
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkUI_AnimatorHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animator8h) animatorHandle | animator动画对象。 |
-| [ArkUI_AnimatorOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animatoroption)* option | animator动画参数。 |
+| [ArkUI_AnimatorHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animator8h) animatorHandle | animator动画对象。 animatorHandle为NULL时，返回错误码[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
+| [ArkUI_AnimatorOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animatoroption)* option | animator动画参数。 option为NULL时，返回错误码[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
 
 返回：
 
@@ -1632,7 +1633,7 @@ int32_t OH_ArkUI_Animator_Play(ArkUI_AnimatorHandle animatorHandle)
 ```
  描述：
 
-启动animator动画。
+启动animator动画。需要在主线程上调用。
 
 起始版本： 12
 
@@ -1640,7 +1641,7 @@ int32_t OH_ArkUI_Animator_Play(ArkUI_AnimatorHandle animatorHandle)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkUI_AnimatorHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animator8h) animatorHandle | animator动画对象。 |
+| [ArkUI_AnimatorHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animator8h) animatorHandle | animator动画对象。animatorHandle为NULL时，返回错误码[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
 
 返回：
 
@@ -1655,7 +1656,7 @@ int32_t OH_ArkUI_Animator_Finish(ArkUI_AnimatorHandle animatorHandle)
 ```
  描述：
 
-结束animator动画。
+结束animator动画，动画将跳到终点状态后停止。与[OH_ArkUI_Animator_Cancel](#oh_arkui_animator_cancel)的区别：Cancel会立即中断动画并回到初始状态，Finish会让动画直接跳到终点状态后停止。需要在主线程上调用。
 
 起始版本： 12
 
@@ -1663,7 +1664,7 @@ int32_t OH_ArkUI_Animator_Finish(ArkUI_AnimatorHandle animatorHandle)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkUI_AnimatorHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animator8h) animatorHandle | animator动画对象。 |
+| [ArkUI_AnimatorHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animator8h) animatorHandle | animator动画对象。animatorHandle为NULL时，返回错误码[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
 
 返回：
 
@@ -1686,7 +1687,7 @@ int32_t OH_ArkUI_Animator_Pause(ArkUI_AnimatorHandle animatorHandle)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkUI_AnimatorHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animator8h) animatorHandle | animator动画对象。 |
+| [ArkUI_AnimatorHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animator8h) animatorHandle | animator动画对象。animatorHandle为NULL时，返回错误码[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
 
 返回：
 
@@ -1709,7 +1710,7 @@ int32_t OH_ArkUI_Animator_Cancel(ArkUI_AnimatorHandle animatorHandle)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkUI_AnimatorHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animator8h) animatorHandle | animator动画对象。 |
+| [ArkUI_AnimatorHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animator8h) animatorHandle | animator动画对象。animatorHandle为NULL时，返回错误码[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
 
 返回：
 
@@ -1732,7 +1733,7 @@ int32_t OH_ArkUI_Animator_Reverse(ArkUI_AnimatorHandle animatorHandle)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkUI_AnimatorHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animator8h) animatorHandle | animator动画对象。 |
+| [ArkUI_AnimatorHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animator8h) animatorHandle | animator动画对象。animatorHandle为NULL时，返回错误码[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
 
 返回：
 
@@ -1761,7 +1762,7 @@ ArkUI_CurveHandle OH_ArkUI_Curve_CreateCurveByType(ArkUI_AnimationCurve curve)
 
 | 类型 | 说明 |
 | --- | --- |
-| [ArkUI_CurveHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-curve8h) | 曲线的插值对象指针。如果参数异常返回NULL。 |
+| [ArkUI_CurveHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-curve8h) | 插值曲线对象指针，用于动画属性值的插值计算。curve值异常时返回NULL。 |
 
 #### [h2]OH_ArkUI_Curve_CreateStepsCurve()
 
@@ -1785,7 +1786,7 @@ ArkUI_CurveHandle OH_ArkUI_Curve_CreateStepsCurve(int32_t count, bool end)
 
 | 类型 | 说明 |
 | --- | --- |
-| [ArkUI_CurveHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-curve8h) | 曲线的插值对象指针。如果参数异常返回NULL。 |
+| [ArkUI_CurveHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-curve8h) | 阶梯曲线对象指针。如果参数异常返回NULL。 |
 
 #### [h2]OH_ArkUI_Curve_CreateCubicBezierCurve()
 
@@ -1803,7 +1804,7 @@ ArkUI_CurveHandle OH_ArkUI_Curve_CreateCubicBezierCurve(float x1, float y1, floa
 | 参数项 | 描述 |
 | --- | --- |
 | float x1 | 确定贝塞尔曲线第一点横坐标，取值范围：[0, 1]。设置的值小于0时，按0处理；设置的值大于1时，按1处理。 |
-| float y1 | 确定贝塞尔曲线第一点纵坐标。 |
+| float y1 | 确定贝塞尔曲线第一点纵坐标。取值范围：(-∞, +∞)。 |
 | float x2 | 确定贝塞尔曲线第二点横坐标，取值范围：[0, 1]。设置的值小于0时，按0处理；设置的值大于1时，按1处理。 |
 | float y2 | 确定贝塞尔曲线第二点纵坐标。 |
 
@@ -1811,7 +1812,7 @@ ArkUI_CurveHandle OH_ArkUI_Curve_CreateCubicBezierCurve(float x1, float y1, floa
 
 | 类型 | 说明 |
 | --- | --- |
-| [ArkUI_CurveHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-curve8h) | 曲线的插值对象指针。如果参数异常返回NULL。 |
+| [ArkUI_CurveHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-curve8h) | 三阶贝塞尔曲线对象指针。 |
 
 #### [h2]OH_ArkUI_Curve_CreateSpringCurve()
 
@@ -1829,15 +1830,15 @@ ArkUI_CurveHandle OH_ArkUI_Curve_CreateSpringCurve(float velocity, float mass, f
 | 参数项 | 描述 |
 | --- | --- |
 | float velocity | 初始速度。是由外部因素对弹性动效产生的影响参数，其目的是保证对象从之前的运动状态平滑地过渡到弹性动效。该速度是归一化速度，其值等于动画开始时的实际速度除以动画属性改变值。 |
-| float mass | 质量。弹性系统的受力对象，会对弹性系统产生惯性影响。质量越大，震荡的幅度越大，恢复到平衡位置的速度越慢。取值范围：[0, +∞)。 value小于等于0时，按1处理。 |
+| float mass | 质量。弹性系统的受力对象，会对弹性系统产生惯性影响。质量越大，振荡的幅度越大，恢复到平衡位置的速度越慢。取值范围：[0, +∞)。 value小于等于0时，按1处理。 |
 | float stiffness | 刚度。是物体抵抗施加的力而形变的程度。在弹性系统中，刚度越大，抵抗变形的能力越强，恢复到平衡位置的速度就越快。取值范围：[0, +∞)。 value小于等于0时，按1处理。 |
-| float damping | 阻尼。用于描述系统在受到扰动后震荡及衰减的情形。阻尼越大，弹性运动的震荡次数越少、震荡幅度越小。取值范围：[0, +∞)。 value小于等于0时，按1处理。 |
+| float damping | 阻尼。用于描述系统在受到扰动后振荡及衰减的情形。阻尼越大，弹性运动的振荡次数越少、振荡幅度越小。取值范围：[0, +∞)。 value小于等于0时，按1处理。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| [ArkUI_CurveHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-curve8h) | 曲线的插值对象指针。如果参数异常返回NULL。 |
+| [ArkUI_CurveHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-curve8h) | 插值器弹簧曲线的插值对象指针，用于基于弹簧物理模型进行插值计算，生成从0到1的动画曲线。如果参数异常返回NULL。 |
 
 #### [h2]OH_ArkUI_Curve_CreateSpringMotion()
 
@@ -1864,7 +1865,7 @@ ArkUI_CurveHandle OH_ArkUI_Curve_CreateSpringMotion(float response, float dampin
 
 | 类型 | 说明 |
 | --- | --- |
-| [ArkUI_CurveHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-curve8h) | 曲线的插值对象指针。如果参数异常返回NULL。 |
+| [ArkUI_CurveHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-curve8h) | 弹性动画曲线的插值对象指针，使用响应式参数构造曲线，支持动画间的速度继承。如果参数异常返回NULL。 |
 
 #### [h2]OH_ArkUI_Curve_CreateResponsiveSpringMotion()
 
@@ -1891,7 +1892,7 @@ ArkUI_CurveHandle OH_ArkUI_Curve_CreateResponsiveSpringMotion(float response, fl
 
 | 类型 | 说明 |
 | --- | --- |
-| [ArkUI_CurveHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-curve8h) | 曲线的插值对象指针。如果参数异常返回NULL。 |
+| [ArkUI_CurveHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-curve8h) | 响应式弹簧动画曲线的插值对象指针，是springMotion的一种特例，仅默认参数不同。如果参数异常返回NULL。 |
 
 #### [h2]OH_ArkUI_Curve_CreateInterpolatingSpring()
 
@@ -1910,10 +1911,10 @@ ArkUI_CurveHandle OH_ArkUI_Curve_CreateInterpolatingSpring(float velocity, float
 
 | 参数项 | 描述 |
 | --- | --- |
-| float velocity | 初始速度。外部因素对弹性动效产生的影响参数，目的是保证对象从之前的运动状态平滑地过渡到弹性动效。该速度是归一化速度，其值等于动画开始时的实际速度除以动画属性改变值。 |
-| float mass | 质量。弹性系统的受力对象，会对弹性系统产生惯性影响。质量越大，震荡的幅度越大，恢复到平衡位置的速度越慢。取值范围：[0, +∞)。 value小于等于0时，按1处理。 |
+| float velocity | 初始速度。外部因素对弹性动效产生的影响参数，目的是保证对象从之前的运动状态平滑地过渡到弹性动效。该速度是归一化速度，其值等于动画开始时的实际速度除以动画属性改变值。取值范围：(-∞, +∞)。 |
+| float mass | 质量。弹性系统的受力对象，会对弹性系统产生惯性影响。质量越大，振荡的幅度越大，恢复到平衡位置的速度越慢。取值范围：[0, +∞)。 value小于等于0时，按1处理。 |
 | float stiffness | 刚度。表示物体抵抗施加的力而形变的程度。刚度越大，抵抗变形的能力越强，恢复到平衡位置的速度越快。取值范围：[0, +∞)。 value小于等于0时，按1处理。 |
-| float damping | 阻尼。用于描述系统在受到扰动后震荡及衰减的情形。阻尼越大，弹性运动的震荡次数越少、震荡幅度越小。取值范围：[0, +∞)。 value小于等于0时，按1处理。 |
+| float damping | 阻尼。用于描述系统在受到扰动后振荡及衰减的情形。阻尼越大，弹性运动的振荡次数越少、振荡幅度越小。取值范围：[0, +∞)。 value小于等于0时，按1处理。 |
 
 返回：
 
@@ -2061,7 +2062,7 @@ ArkUI_TransitionEffect* OH_ArkUI_CreateMovementTransitionEffect(ArkUI_Transition
 ```
  描述：
 
-创建组件平移效果对象。
+创建组件平移效果对象，通过指定边缘方向（上、下、左、右）控制组件的滑入滑出方向，适用于仅需指定滑动方向的简单场景。与OH_ArkUI_CreateTranslationTransitionEffect不同：后者支持自定义x/y/z方向的精确平移参数，适用于需要指定具体位移距离的场景。
 
 起始版本： 12
 
@@ -2069,7 +2070,7 @@ ArkUI_TransitionEffect* OH_ArkUI_CreateMovementTransitionEffect(ArkUI_Transition
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkUI_TransitionEdge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_transitionedge) edge | 组件平移的方向类型，决定组件出现和消失时的平移方向。 |
+| [ArkUI_TransitionEdge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_transitionedge) edge | 组件平移的方向类型，决定组件出现和消失时的平移方向。edge值异常时，按[ARKUI_TRANSITION_EDGE_START](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_transitionedge)处理。 ARKUI_TRANSITION_EDGE_TOP（0）表示从上方滑入/滑出，ARKUI_TRANSITION_EDGE_BOTTOM（1）表示从下方滑入/滑出，ARKUI_TRANSITION_EDGE_START（2）表示从左侧滑入/滑出，ARKUI_TRANSITION_EDGE_END（3）表示从右侧滑入/滑出。 |
 
 返回：
 
@@ -2103,6 +2104,23 @@ ArkUI_TransitionEffect* OH_ArkUI_CreateAsymmetricTransitionEffect(ArkUI_Transiti
 | --- | --- |
 | [ArkUI_TransitionEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-transitioneffect)* | 非对称的转场效果对象。如果参数异常返回NULL。 |
 
+#### [h2]OH_ArkUI_CreateIdentityTransitionEffect()
+
+```
+ArkUI_TransitionEffect* OH_ArkUI_CreateIdentityTransitionEffect(void)
+```
+ 描述：
+
+创建无转场效果对象。
+
+起始版本： 26.0.0
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| [ArkUI_TransitionEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-transitioneffect)* | 创建的无转场效果对象指针。调用者需要调用[OH_ArkUI_TransitionEffect_Dispose](#oh_arkui_transitioneffect_dispose)释放该对象。 |
+
 #### [h2]OH_ArkUI_TransitionEffect_Dispose()
 
 ```
@@ -2118,7 +2136,7 @@ void OH_ArkUI_TransitionEffect_Dispose(ArkUI_TransitionEffect* effect)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkUI_TransitionEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-transitioneffect)* effect | 转场效果对象。effect为NULL时，操作无效。 |
+| [ArkUI_TransitionEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-transitioneffect)* effect | 转场效果对象。 effect为NULL时，操作无效。 |
 
 #### [h2]OH_ArkUI_TransitionEffect_Combine()
 
@@ -2162,7 +2180,7 @@ int32_t OH_ArkUI_TransitionEffect_SetAnimation(ArkUI_TransitionEffect* effect, A
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkUI_TransitionEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-transitioneffect)* effect | 要设置动画参数的转场效果对象。 effect为NULL时，返回错误码[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
-| [ArkUI_AnimateOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animateoption)* animation | 属性显示动画效果相关参数。 animation为NULL时，返回错误码[ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode)。 |
+| [ArkUI_AnimateOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-animateoption)* animation | 属性显示动画效果相关参数。 animation为NULL时，设置动画参数为空。 |
 
 返回：
 

@@ -2,8 +2,8 @@
 title: "HML语法参考"
 upstream_id: "harmonyos-references/js-service-widget-syntax-hml"
 catalog: "harmonyos-references"
-content_hash: "c57f279e9aef"
-synced_at: "2026-07-28T16:49:11.713650"
+content_hash: "95037b13ca5c"
+synced_at: "2026-08-29T18:15:34.705946"
 ---
 
 # HML语法参考
@@ -53,7 +53,7 @@ HML是一套类HTML的标记语言，通过组件，事件构建出页面的内�
 - key值支持对象操作符和数组操作符，如{{key.value}}、{{key[0]}}。
 - 支持字符串拼接、逻辑运算和三元表达式。
 - 字符串拼接： 支持变量跟变量：{{key1}}{{key2}}等
-- 支持常量跟变量： "my name is {{name}}， I am from {{city}}." "key1 {{key1}}"
+- 支持常量跟变量： "my name is {{name}}， i am from {{city}}." "key1 {{key1}}"
 
 逻辑运算：
 

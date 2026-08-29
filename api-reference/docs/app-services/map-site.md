@@ -2,8 +2,8 @@
 title: "site（地点搜索）"
 upstream_id: "harmonyos-references/map-site"
 catalog: "harmonyos-references"
-content_hash: "2bc3c522651f"
-synced_at: "2026-07-28T16:52:46.495561"
+content_hash: "3b04e556b198"
+synced_at: "2026-08-29T18:18:23.157646"
 ---
 
 # site（地点搜索）
@@ -171,10 +171,10 @@ nearbySearch(nearbySearchParams: NearbySearchParams): Promise<NearbySearchResult
 示例：
 
 ```
-let params: site.Nea| cityId | string | 否 | 是 rbySearchParams = {
+let params: site.NearbySearchParams = {
   location: {
-    latitude:51.50811219132287,
-    longitude:-0.07594896472392065
+    latitude: 51.50811219132287,
+    longitude: -0.07594896472392065
   },
   poiTypes: [
     "Watch_Store",

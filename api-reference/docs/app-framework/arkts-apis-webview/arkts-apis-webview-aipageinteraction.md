@@ -2,8 +2,8 @@
 title: "AIPageInteraction"
 upstream_id: "harmonyos-references/arkts-apis-webview-aipageinteraction"
 catalog: "harmonyos-references"
-content_hash: "0c31ca3cb681"
-synced_at: "2026-07-28T16:49:52.591111"
+content_hash: "c9dd5379f113"
+synced_at: "2026-08-29T18:15:58.243370"
 ---
 
 # AIPageInteraction
@@ -73,7 +73,7 @@ click、focus、type命令需要通过目标元素定位参数指定操作对象
 
 #### click
 
-点击目标元素，使其响应点击事件(click event)。该命令仅使目标元素响应点击事件(click event)，不关注是否产生真实的鼠标事件(mouse event)。
+点击目标元素，使其响应点击事件(click event)，不关注是否产生真实的鼠标事件(mouse event)。
 
 #### [h2]ClickCommand
 

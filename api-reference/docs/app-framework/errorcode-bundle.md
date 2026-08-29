@@ -2,8 +2,8 @@
 title: "包管理子系统通用错误码"
 upstream_id: "harmonyos-references/errorcode-bundle"
 catalog: "harmonyos-references"
-content_hash: "cde5cd119205"
-synced_at: "2026-07-28T16:40:46.889706"
+content_hash: "256ed32d2856"
+synced_at: "2026-08-29T18:12:10.729792"
 ---
 
 # 包管理子系统通用错误码
@@ -96,13 +96,151 @@ The specified user ID is not found.
 
 可能原因
 
-1. 输入的用户名有误。
+1. 输入的用户编号有误。
 2. 系统中没有该用户。
 
 处理步骤
 
-1. 检查用户名拼写是否正确。
+1. 检查用户编号拼写是否正确。
 2. 确认系统中存在该用户。
+
+#### 17700010 文件解析失败导致应用安装失败
+
+错误信息
+
+Failed to install the HAP because the HAP fails to be parsed.
+
+错误描述
+
+传入的HAP或APP解析失败。
+
+可能原因
+
+1. HAP或APP的格式不是zip格式。
+2. HAP的配置文件不满足json格式。
+3. HAP的配置文件缺少必要的字段。
+4. HAP中配置了可执行二进制文件（即module.json5中配置了[executableBinaryPaths标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#executablebinarypaths标签)），但是没有配置解压模式，或当前设备不支持安装配置了该标签的HAP。
+5. 传入的安装路径中或目录下存在多个APP。
+6. APP中不包含适合在当前设备类型上安装的HAP。
+7. 应用配置了skill，但配置的skill名称、skill目录名与SKILL.md中frontmatter的name不一致。
+
+处理步骤
+
+1. 确认HAP或APP的格式是zip。
+2. 确认HAP的配置文件满足[配置文件json格式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-configuration-file-overview-stage)。
+3. 检查DevEco Studio编译HAP或APP时是否有错误提示，缺省字段时会有相应的报错。
+4. 配置应用为解压模式，即在应用的[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#配置文件标签)中设置compressNativeLibs标签为true；或更换为PC/2in1设备。
+5. 检查传入的路径下是否包含多个APP。
+6. 确认APP内是否存在支持当前设备类型的HAP。
+7. 检查module.json中skillProfiles下skill的name、skills目录下的子目录名称、SKILL.md中frontmatter的name，确保三者一致。
+
+#### 17700011 签名校验失败导致应用安装失败
+
+错误信息
+
+Failed to install the HAP because the HAP signature fails to be verified.
+
+错误描述
+
+签名校验失败导致应用安装失败。
+
+可能原因
+
+1. HAP或APP没有签名。
+2. HAP或APP签名信息来源不可靠。
+3. 升级的HAP与已安装的HAP签名信息不一致。
+4. 多个HAP的签名信息不一致。
+
+处理步骤
+
+1. 确认HAP包或APP包是否签名成功。
+2. 确认HAP包或APP包的签名证书是从应用市场申请。
+3. 确认多个HAP包签名时使用的证书相同。
+4. 确认升级的HAP包签名证书与已安装的HAP包相同。
+
+#### 17700012 安装包路径无效或者文件过大导致应用安装失败
+
+错误信息
+
+Failed to install the HAP because the HAP path is invalid or the HAP is too large.
+
+错误描述
+
+安装包路径无效或者文件过大导致应用安装失败。
+
+可能原因
+
+1. 输入错误，HAP或APP的文件路径不存在。
+2. HAP或APP的路径无法访问。
+3. HAP的大小超过最大限制4GB。
+
+处理步骤
+
+1. 确认HAP或APP是否存在。
+2. 查看HAP或APP的可执行权限，是否可读。
+3. 查看HAP的大小是否超过4GB。
+
+#### 17700015 多个HAP配置信息不同导致应用安装失败
+
+错误信息
+
+Failed to install the HAPs because they have different configuration information.
+
+错误描述
+
+多个HAP配置信息不同导致应用安装失败。
+
+可能原因
+
+多个HAP包中配置文件中app标签下面的字段信息或者签名信息不一致。
+
+处理步骤
+
+确认多个HAP中配置文件app下面的字段是否一致或者检查工程的[signingConfigs](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app#section153288223224)配置是否一样。
+
+#### 17700016 系统磁盘空间不足导致应用安装失败
+
+错误信息
+
+Failed to install the HAP because of insufficient system disk space.
+
+错误描述
+
+系统磁盘空间不足导致应用安装失败。
+
+可能原因
+
+系统空间不足。
+
+处理步骤
+
+确认系统是否有足够的空间。
+
+#### 17700017 新安装的应用版本号低于已安装的版本号导致应用安装失败
+
+错误信息
+
+Failed to install the HAP since the version of the HAP to install is too early.
+
+错误描述
+
+新安装的应用版本号低于已安装的版本号导致应用安装失败。
+
+可能原因
+
+新安装的应用版本号低于已安装的版本号。
+
+处理步骤
+
+确认新安装的应用版本号是否不低于已安装的同应用版本号。
+
+1. 已安装应用版本号查询，依赖[hdc工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc#环境准备)。执行命令行后会输出已安装应用的版本号versionCode，如果输出多个versionCode，选择大于0的。如果该命令无打印值输出，表示应用未安装。 
+```
+# 需要将com.xxx.demo替换为查询的bundleName
+hdc shell "bm dump -n com.xxx.demo |grep versionCode"
+```
+
+2. 新安装的应用查看版本，HAP或者HSP用DevEco Studio打开，查看里面module.json文件中的versionCode字段配置。 ![](./img/zh-cn_image_0000002701799286.png)
 
 #### 17700021 指定的uid无效
 
@@ -237,6 +375,46 @@ The specified module is an overlay module.
 
 检查指定的module是否为overlay特征的module。
 
+#### 17700048 代码签名校验失败
+
+错误信息
+
+Failed to install the HAP because the code signature verification failed.
+
+错误描述
+
+安装应用时，安装包的代码签名文件校验失败。
+
+可能原因
+
+1. 代码签名文件对应的module在安装包中不存在。
+2. 代码签名文件路径无效。
+3. 代码签名文件和对应的安装包不匹配。
+
+处理步骤
+
+1. 检查代码签名文件对应的module是否包含在安装包路径之中。
+2. 检查提供的代码签名文件的路径是否合法。
+3. 使用和安装包匹配的代码签名文件。
+
+#### 17700052 非开发者模式下不允许安装调试自分发插件或调试应用
+
+错误信息
+
+Failed to install the HAP because a debug bundle can be installed only in developer mode.
+
+错误描述
+
+安装调试应用时，设备处于非开发者模式，不允许安装。
+
+可能原因
+
+应用为调试应用，而设备处于非开发者模式。
+
+处理步骤
+
+执行hdc shell param get const.security.developermode.state，若返回结果为false，说明该设备无法安装调试应用。
+
 #### 17700055 指定的link无效
 
 错误信息
@@ -328,6 +506,80 @@ The launch want is not found.
 处理步骤
 
 应用需要有entities配置包含“entity.system.home”并且actions配置包含“ohos.want.action.home”的UIAbility。
+
+#### 17700073 由于设备上存在具有相同包名称但不同签名信息的应用程序，导致安装失败
+
+错误信息
+
+Failed to install the HAP because an application with the same bundle name but different signature information exists on the device.
+
+错误描述
+
+由于设备上存在具有相同包名称但不同签名信息的应用程序，导致安装失败。
+
+可能原因
+
+1. 由于设备上存在具有相同包名称但不同签名信息的已安装应用程序，导致安装失败。
+2. 设备上存在相同包名但签名信息不一致的应用被保留数据地卸载，导致安装失败。
+
+处理步骤
+
+1. 卸载设备上相同包名的应用。
+2. 若设备上存在相同包名但签名信息不一致的应用被保留数据地卸载，导致安装失败，则先安装已卸载的应用之后不保留数据地卸载掉。
+
+#### 17700087 当前设备不支持安装插件
+
+错误信息
+
+Failed to install the plugin because the current device does not support plugins.
+
+错误描述
+
+当前设备不支持插件能力。
+
+可能原因
+
+设备不具备插件能力，安装插件失败。
+
+处理步骤
+
+使用[param工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/param-tool)设置const.bms.support_plugin的值为true，即执行hdc shell param set const.bms.support_plugin true。
+
+#### 17700091 插件与主体同包名
+
+错误信息
+
+Failed to install the plugin because the plugin name is the same as the host bundle name.
+
+错误描述
+
+插件的包名与应用的包名一致，不符合插件与应用之间异包名的规格，安装插件失败。
+
+可能原因
+
+插件的包名与应用的包名一致。
+
+处理步骤
+
+重新配置插件的包名。
+
+#### 17700092 插件包名不存在
+
+错误信息
+
+Failed to uninstall the plugin because the specified plugin is not found.
+
+错误描述
+
+插件包名不存在，导致插件卸载时失败。
+
+可能原因
+
+插件没有在应用中安装。
+
+处理步骤
+
+使用[bm dump -n 命令](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bm-tool#查询应用信息命令dump)查询应用信息，确认插件是否安装。
 
 #### 17700093 指定的skillName不存在
 

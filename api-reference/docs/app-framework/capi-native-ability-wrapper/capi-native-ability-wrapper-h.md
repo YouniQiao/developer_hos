@@ -2,8 +2,8 @@
 title: "native_ability_wrapper.h"
 upstream_id: "harmonyos-references/capi-native-ability-wrapper-h"
 catalog: "harmonyos-references"
-content_hash: "38971c2b9981"
-synced_at: "2026-07-28T16:40:43.064213"
+content_hash: "b30d3cab72ba"
+synced_at: "2026-08-29T18:12:07.976585"
 ---
 
 # native_ability_wrapper.h
@@ -118,7 +118,7 @@ AbilityRuntime_ErrorCode OH_AbilityRuntime_GetAbilityName(
 
 | 类型 | 说明 |
 | --- | --- |
-| [AbilityRuntime_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) | 返回错误码。 返回[ABILITY_RUNTIME_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode)表示操作成功。 返回[ABILITY_RUNTIME_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode)表示nativeAbilityWrapper或writeLength为空指针，或缓冲区太小无法存储Ability名称。 返回[ABILITY_RUNTIME_ERROR_CODE_ABILITY_WRAPPER_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode)表示Native Ability Wrapper无效或不完整。 返回[ABILITY_RUNTIME_ERROR_CODE_INTERNAL](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode)表示内部错误。 |
+| [AbilityRuntime_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) | 返回错误码。 返回[ABILITY_RUNTIME_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode)表示操作成功。 返回[ABILITY_RUNTIME_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode)表示nativeAbilityWrapper或writeLength为空指针，或缓冲区太小无法存储Ability名称。 返回[ABILITY_RUNTIME_ERROR_CODE_ABILITY_WRAPPER_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode)表示NativeAbility数据信息无效或不完整。 返回[ABILITY_RUNTIME_ERROR_CODE_INTERNAL](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode)表示内部错误。 |
 
 示例代码：
 
@@ -168,7 +168,7 @@ AbilityRuntime_ErrorCode OH_AbilityRuntime_GetEnv(
 
 | 类型 | 说明 |
 | --- | --- |
-| [AbilityRuntime_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) | 返回错误码。 返回[ABILITY_RUNTIME_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode)表示操作成功。 返回[ABILITY_RUNTIME_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode)表示nativeAbilityWrapper或env为空指针。 返回[ABILITY_RUNTIME_ERROR_CODE_ABILITY_WRAPPER_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode)表示Native Ability Wrapper无效或不完整。 |
+| [AbilityRuntime_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode) | 返回错误码。 返回[ABILITY_RUNTIME_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode)表示操作成功。 返回[ABILITY_RUNTIME_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode)表示nativeAbilityWrapper或env为空指针。 返回[ABILITY_RUNTIME_ERROR_CODE_ABILITY_WRAPPER_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ability-runtime-common-h#abilityruntime_errorcode)表示NativeAbility数据信息无效或不完整。 |
 
 示例代码：
 

@@ -2,8 +2,8 @@
 title: "@ohos.calendarManager (日程管理能力)"
 upstream_id: "harmonyos-references/js-apis-calendarmanager"
 catalog: "harmonyos-references"
-content_hash: "67e41f46543d"
-synced_at: "2026-08-03T17:12:25.031944"
+content_hash: "19086e10df71"
+synced_at: "2026-08-29T18:18:13.125754"
 ---
 
 # @ohos.calendarManager (日程管理能力)
@@ -69,12 +69,10 @@ getCalendarManager(context: Context): CalendarManager
 // 文档后续示例代码都需要配置此文件才能正常运行
 import {
   abilityAccessCtrl,
-  AbilityConstant,
   common,
   PermissionRequestResult,
   Permissions,
-  UIAbility,
-  Want
+  UIAbility
 } from '@kit.AbilityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { calendarManager } from '@kit.CalendarKit';
@@ -259,7 +257,7 @@ deleteCalendar(calendar: Calendar, callback: AsyncCallback<void>): void
 需要权限：
 
 - API版本21+：ohos.permission.WRITE_CALENDAR 或 ohos.permission.WRITE_WHOLE_CALENDAR
-- API版本10-20：ohos.permission.WRITE_CALENDAR
+- API版本10-20：ohos.permission.WRITE_CALENDAR权限
 
 系统能力： SystemCapability.Applications.CalendarData
 
@@ -980,7 +978,7 @@ calendarMgr?.getCalendar((err: BusinessError, data:calendarManager.Calendar) => 
       console.info('Succeeded in adding events');
     }).catch((err: BusinessError) => {
       // 检查权限是否已成功申请或者参数是否正确。
-      console.error(`Failed to add event. Code: ${err.code}, message: ${err.message}`);
+      console.error(`Failed to add events. Code: ${err.code}, message: ${err.message}`);
     });
   }
 });
@@ -1488,13 +1486,15 @@ calendarMgr?.getCalendar(async (err: BusinessError, data:calendarManager.Calenda
     console.info(`Succeeded in getting calendar, data -> ${JSON.stringify(data)}`);
     calendar = data;
     await calendar.addEvent(event1).then((data: number) => {
-      console.info(`Succeeded in adding event, id -> ${data}`);
+      console.info(`Succeeded in adding event, id1 -> ${data}`);
+      id1 = data;
     }).catch((err: BusinessError) => {
       // 检查权限是否已成功申请或者参数是否正确。
       console.error(`Failed to add event. Code: ${err.code}, message: ${err.message}`);
     });
     await calendar.addEvent(event2).then((data: number) => {
-      console.info(`Succeeded in adding event, id -> ${data}`);
+      console.info(`Succeeded in adding event, id2 -> ${data}`);
+      id2 =data;
     }).catch((err: BusinessError) => {
       // 检查参数是否正确。
       console.error(`Failed to add event. Code: ${err.code}, message: ${err.message}`);
@@ -1796,8 +1796,8 @@ queryEventInstances(start: number, end: number, ids?: number[], eventKey?: (keyo
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| start | number | 是 | 日程开始时间，类型为13位时间戳。 |
-| end | number | 是 | 日程结束时间，类型为13位时间戳。 |
+| start | number | 是 | 查询日程开始时间，类型为13位时间戳。 |
+| end | number | 是 | 查询日程结束时间，类型为13位时间戳。 |
 | ids | number[] | 否 | 需要查询的日程id数组，可为空数组或undefined。 |
 | eventKey | (keyof [Event](#event))[] | 否 | 所有查询日程的字段。不填时，默认查询字段为：id、title、startTime、endTime、instanceStartTime、instanceEndTime、isAllDay、description、timeZone、location、service。若查询字段为空，则不返回该字段。 |
 

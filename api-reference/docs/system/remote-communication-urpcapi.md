@@ -2,8 +2,8 @@
 title: "urpc（高性能rpc通信库）"
 upstream_id: "harmonyos-references/remote-communication-urpcapi"
 catalog: "harmonyos-references"
-content_hash: "8a1d0f7b566d"
-synced_at: "2026-07-09T00:59:33.735047"
+content_hash: "0cd4b91c3f15"
+synced_at: "2026-08-29T18:16:49.635844"
 ---
 
 # urpc（高性能rpc通信库）
@@ -17,7 +17,7 @@ synced_at: "2026-07-09T00:59:33.735047"
 #### 导入模块
 
 ```
-import { urpc } from "@kit.RemoteCommunicationKit";
+import { urpc } from '@kit.RemoteCommunicationKit';
 ```
 
 #### FlowbufType
@@ -95,9 +95,9 @@ FlowbufElement<T>用于定义非数组的URPC入参和返回值类型。
 示例：
 
 ```
-import { urpc } from "@kit.RemoteCommunicationKit"
+import { urpc } from '@kit.RemoteCommunicationKit';
 
-let version: urpc.FlowbufElement<number> = {type: 'INT8', value: 0, name: ""};
+let version: urpc.FlowbufElement<number> = {type: 'INT8', value: 0, name: ''};
 ```
 
 #### FlowbufArrayElement
@@ -119,7 +119,7 @@ FlowbufArrayElement<T>用于定义数组类型的URPC入参和返回值类型。
 示例：
 
 ```
-import { urpc } from "@kit.RemoteCommunicationKit"
+import { urpc } from '@kit.RemoteCommunicationKit';
 
 let version: urpc.FlowbufArrayElement<number> = {type: 'ARRAY_INT8', value: [1,2,3], length: 3};
 ```
@@ -165,7 +165,7 @@ urpcStubCreate(config: UrpcInitConfiguration, funcList: string | string[]): Prom
 
 ```
 import { BusinessError } from '@kit.BasicServicesKit';
-import { urpc } from "@kit.RemoteCommunicationKit";
+import { urpc } from '@kit.RemoteCommunicationKit';
 
 // 下面IP地址仅作为示意
 let node: urpc.IpAndPort = {
@@ -182,7 +182,7 @@ let config: urpc.UrpcInitConfiguration = {
   connect: connect
 }
 
-const funcList:string[] = ["uploadFile"];
+const funcList:string[] = ['uploadFile'];
 urpc.urpcStubCreate(config, funcList).then((urpcStub: urpc.UrpcStub) => {
   urpcStub.destroy();
 }).catch((err: BusinessError<string>) => {
@@ -291,7 +291,7 @@ type UrpcDestroy = () => void
 示例：
 
 ```
-import { urpc } from "@kit.RemoteCommunicationKit";
+import { urpc } from '@kit.RemoteCommunicationKit';
 
 // 下面IP地址仅作为示意
 let node: urpc.IpAndPort = {
@@ -347,7 +347,7 @@ UrpcConnectConfiguration配置URPC连接的关键信息，可以配置连接的i
 示例：
 
 ```
-import { urpc } from "@kit.RemoteCommunicationKit"
+import { urpc } from '@kit.RemoteCommunicationKit';
 
 // 下面IP地址仅作为示意
 let node: urpc.IpAndPort = {
@@ -359,8 +359,8 @@ let connect: urpc.UrpcConnectConfiguration = {
   protocol: 'eat',
   multiPath: false,
   flags: 0,
-  host: "192.168.1.1",
-  caPath: "data/single_urpc/eat.pem"
+  host: '192.168.1.1',
+  caPath: 'data/single_urpc/eat.pem'
 }
 ```
 
@@ -382,7 +382,7 @@ IpAndPort用于配置URPC的连接IP和端口号。
 示例：
 
 ```
-import { urpc } from "@kit.RemoteCommunicationKit"
+import { urpc } from '@kit.RemoteCommunicationKit';
 
 // 下面IP地址仅作为示意
 let node: urpc.IpAndPort = {

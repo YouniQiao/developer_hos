@@ -2,8 +2,8 @@
 title: "挂载卸载事件"
 upstream_id: "harmonyos-references/ts-universal-events-show-hide"
 catalog: "harmonyos-references"
-content_hash: "eb3534ba2010"
-synced_at: "2026-07-28T16:41:58.220018"
+content_hash: "b53a0992068e"
+synced_at: "2026-08-29T18:12:46.122076"
 ---
 
 # 挂载卸载事件
@@ -45,7 +45,7 @@ onAttach(callback: Callback<void>): T
 
 onDetach(callback: Callback<void>): T
 
-组件从组件树卸载时触发此回调。
+组件从组件树卸载时触发此回调。建议使用[onDisAppear](#ondisappear)替代此接口。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -155,4 +155,4 @@ struct AppearExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008252.gif)
+ ![](./img/zh-cn_image_0000002731358687.gif)

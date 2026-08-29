@@ -2,8 +2,8 @@
 title: "编译错误码"
 upstream_id: "harmonyos-references/_ark_ui_compile"
 catalog: "harmonyos-references"
-content_hash: "6a5b972999f2"
-synced_at: "2026-07-28T16:49:51.401474"
+content_hash: "04e08e70767f"
+synced_at: "2026-08-29T18:15:57.104694"
 ---
 
 # 编译错误码
@@ -40,7 +40,7 @@ synced_at: "2026-07-28T16:49:51.401474"
 
 可能原因
 
-用普通函数其他类型变量初始化@BuilderParam装饰的变量。
+用普通函数或其他类型变量初始化@BuilderParam装饰的变量。
 
 处理步骤
 
@@ -266,7 +266,7 @@ Button组件同时包含了标签与子组件导致报错。
 
 错误信息
 
-'.stateStyles' doesn't conform standard.
+'.stateStyles' doesn't conform to standard.
 
 错误描述
 
@@ -1232,7 +1232,7 @@ The 'xxx' can decorate only member variables in a 'class'.
 
 处理步骤
 
-删除去掉class中方法上的@Type等装饰器即可。
+删除class中方法上的@Type等装饰器即可。
 
 #### 10905341 @Type等装饰器与@Observed同时使用校验异常
 
@@ -1382,7 +1382,7 @@ The 'xxx' decorator can decorate only member variables of a class.
 
 错误信息
 
-A function can only be decorated by one of the '@AnimatedExtend'，'@Builder'，'@Extend'，'@Styles'，'@Concurrent' and '@Sendable''.
+A function can only be decorated by one of the '@AnimatedExtend', '@Builder', '@Extend', '@Styles', '@Concurrent' and '@Sendable''.
 
 错误描述
 
@@ -1526,7 +1526,7 @@ The struct 'xxx' cannot have the same name as the built-in attribute 'xxx'.
 
 错误信息
 
-The struct 'xxx' can not be decorated with '@ComponentV2' and '@Component'，'@Reusable'，'@CustomDialog' at the same time.
+The struct 'xxx' can not be decorated with '@ComponentV2' and '@Component', '@Reusable', '@CustomDialog' at the same time.
 
 错误描述
 
@@ -1544,7 +1544,7 @@ struct不能同时使用 '@ComponentV2'、'@Component'、'@Reusable'和'@CustomD
 
 错误信息
 
-Decorator '@Component'，'@ComponentV2'，or '@CustomDialog' is missing for struct 'xxx'.
+Decorator '@Component', '@ComponentV2', or '@CustomDialog' is missing for struct 'xxx'.
 
 错误描述
 
@@ -1634,7 +1634,7 @@ struct必须有名称。
 
 错误信息
 
-Decorator '@Component'，'@ComponentV2'，or '@CustomDialog' is missing for struct 'xxx'.
+Decorator '@Component', '@ComponentV2', or '@CustomDialog' is missing for struct 'xxx'.
 
 错误描述
 

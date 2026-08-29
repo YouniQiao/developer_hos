@@ -2,8 +2,8 @@
 title: "AbilityRunningInfo"
 upstream_id: "harmonyos-references/js-apis-inner-application-abilityrunninginfo"
 catalog: "harmonyos-references"
-content_hash: "3320b22041e9"
-synced_at: "2026-07-28T16:40:37.434487"
+content_hash: "0bcecf741d5c"
+synced_at: "2026-08-29T18:12:02.221406"
 ---
 
 # AbilityRunningInfo
@@ -47,7 +47,7 @@ try {
     })
     .catch((error: BusinessError) => {
       console.error(`getAbilityRunningInfos fail, error code: ${JSON.stringify(error.code)}, error msg: ${JSON.stringify(error.message)}`);
-    })
+    });
 } catch (err) {
   let code = (err as BusinessError).code;
   let msg = (err as BusinessError).message;

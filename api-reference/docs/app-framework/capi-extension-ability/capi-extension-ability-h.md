@@ -2,8 +2,8 @@
 title: "extension_ability.h"
 upstream_id: "harmonyos-references/capi-extension-ability-h"
 catalog: "harmonyos-references"
-content_hash: "b3795bfd6707"
-synced_at: "2026-07-09T00:57:12.693626"
+content_hash: "97de92e1f4fa"
+synced_at: "2026-08-29T18:12:08.551716"
 ---
 
 # extension_ability.h
@@ -35,7 +35,7 @@ synced_at: "2026-07-09T00:57:12.693626"
 
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
-| [typedef void AbilityRuntime_Extension_CreateFunc(AbilityRuntime_ExtensionInstanceHandle handle, const char *abilityName);](#abilityruntime_extension_createfunc) | AbilityRuntime_Extension_CreateFunc | ExtensionAbility创建回调函数类型。ExtensionAbility中必须实现的回调函数类型，用于实例化ExtensionAbility。 |
+| [typedef void AbilityRuntime_Extension_CreateFunc(AbilityRuntime_ExtensionInstanceHandle handle, const char *abilityName);](#abilityruntime_extension_createfunc) | AbilityRuntime_Extension_CreateFunc | ExtensionAbility中必须实现的回调函数类型，用于实例化ExtensionAbility。 |
 
 #### [h2]变量
 
@@ -60,7 +60,7 @@ ExtensionAbility创建回调函数类型。ExtensionAbility中必须实现的回
 
 | 参数名 | 描述 |
 | --- | --- |
-| [AbilityRuntime_ExtensionInstanceHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-extensioninstance8h) handle | 回调函数传入AbilityRuntime_ExtensionInstanceHandle实例的指针。 |
+| [AbilityRuntime_ExtensionInstanceHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-extensioninstance8h) handle | 回调函数传入AbilityRuntime_ExtensionInstanceHandle实例。 |
 | const char *abilityName | 回调函数传入的ExtensionAbility的名称。 |
 
 #### 变量说明

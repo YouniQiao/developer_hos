@@ -2,8 +2,8 @@
 title: "@ohos.net.webSocket (WebSocket连接)"
 upstream_id: "harmonyos-references/js-apis-websocket"
 catalog: "harmonyos-references"
-content_hash: "b1416d75495f"
-synced_at: "2026-07-28T16:50:43.798557"
+content_hash: "be53e51d95d7"
+synced_at: "2026-08-29T18:16:43.282391"
 ---
 
 # @ohos.net.webSocket (WebSocket连接)
@@ -79,11 +79,11 @@ connect(url: string, callback: AsyncCallback<boolean>): void
 | --- | --- |
 | 401 | Parameter error. |
 | 201 | Permission denied. |
-| 2302001 | Websocket url error. |
-| 2302002 | Websocket certificate file does not exist. |
-| 2302003 | Websocket connection already exists. |
-| 2302998 | It is not allowed to access this domain. |
-| 2302999 | Internal error. |
+| 2302001 | Websocket url error. 适用版本：12+ |
+| 2302002 | Websocket certificate file does not exist. 适用版本：12+ |
+| 2302003 | Websocket connection already exists. 适用版本：12+ |
+| 2302998 | It is not allowed to access this domain. 适用版本：12+ |
+| 2302999 | Websocket other unknown error. 适用版本：10+ |
 
 示例：
 
@@ -134,11 +134,11 @@ connect(url: string, options: WebSocketRequestOptions, callback: AsyncCallback<b
 | --- | --- |
 | 401 | Parameter error. |
 | 201 | Permission denied. |
-| 2302001 | Websocket url error. |
-| 2302002 | Websocket certificate file does not exist. |
-| 2302003 | Websocket connection already exists. |
-| 2302998 | It is not allowed to access this domain. |
-| 2302999 | Internal error. |
+| 2302001 | Websocket url error. 适用版本：12+ |
+| 2302002 | Websocket certificate file does not exist. 适用版本：12+ |
+| 2302003 | Websocket connection already exists. 适用版本：12+ |
+| 2302998 | It is not allowed to access this domain. 适用版本：12+ |
+| 2302999 | Websocket other unknown error. 适用版本：10+ |
 
 示例：
 
@@ -218,11 +218,11 @@ connect(url: string, options?: WebSocketRequestOptions): Promise<boolean>
 | --- | --- |
 | 401 | Parameter error. |
 | 201 | Permission denied. |
-| 2302001 | Websocket url error. |
-| 2302002 | Websocket certificate file does not exist. |
-| 2302003 | Websocket connection already exists. |
-| 2302998 | It is not allowed to access this domain. |
-| 2302999 | Internal error. |
+| 2302001 | Websocket url error. 适用版本：12+ |
+| 2302002 | Websocket certificate file does not exist. 适用版本：12+ |
+| 2302003 | Websocket connection already exists. 适用版本：12+ |
+| 2302998 | It is not allowed to access this domain. 适用版本：12+ |
+| 2302999 | Websocket other unknown error. 适用版本：10+ |
 
 示例：
 
@@ -944,7 +944,7 @@ createWebSocketServer(): WebSocketServer
 
 ![](./img/note_3.0-zh-cn.png) 从API version 23开始支持全设备使用，之前仅支持TV设备使用。
 
-系统能力: SystemCapability.Communication.NetStack
+系统能力： SystemCapability.Communication.NetStack
 
 返回值：
 
@@ -970,9 +970,9 @@ start(config: WebSocketServerConfig): Promise<boolean>
 
 ![](./img/note_3.0-zh-cn.png) 在多次调用该接口时，应避免监听同一端口。
 
-需要权限: ohos.permission.INTERNET
+需要权限： ohos.permission.INTERNET
 
-系统能力: SystemCapability.Communication.NetStack
+系统能力： SystemCapability.Communication.NetStack
 
 参数：
 
@@ -996,7 +996,7 @@ start(config: WebSocketServerConfig): Promise<boolean>
 | 2302002 | Websocket certificate file does not exist. |
 | 2302004 | Can't listen on the given NIC. |
 | 2302005 | Can't listen on the given Port. |
-| 2302007 | Websocket port already occupied. |
+| 2302007 | Websocket port already occupied. 适用版本：24+ |
 | 2302999 | Websocket other unknown error. |
 
 示例：
@@ -1032,9 +1032,9 @@ send(data: string | ArrayBuffer, connection: WebSocketConnection): Promise<boole
 
 ![](./img/note_3.0-zh-cn.png) send接口必须在监听到connect事件后才可以调用。
 
-需要权限: ohos.permission.INTERNET
+需要权限： ohos.permission.INTERNET
 
-系统能力: SystemCapability.Communication.NetStack
+系统能力： SystemCapability.Communication.NetStack
 
 参数：
 
@@ -1103,7 +1103,7 @@ listAllConnections(): WebSocketConnection[]
 
 获取与服务端连接的所有客户端信息。
 
-需要权限: ohos.permission.INTERNET
+需要权限： ohos.permission.INTERNET
 
 系统能力：SystemCapability.Communication.NetStack
 

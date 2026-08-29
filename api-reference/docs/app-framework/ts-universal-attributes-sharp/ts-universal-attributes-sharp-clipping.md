@@ -2,8 +2,8 @@
 title: "形状裁剪"
 upstream_id: "harmonyos-references/ts-universal-attributes-sharp-clipping"
 catalog: "harmonyos-references"
-content_hash: "6e5f6ddfc5a0"
-synced_at: "2026-07-28T16:42:14.548318"
+content_hash: "b4e82a7c92f8"
+synced_at: "2026-08-29T18:12:52.229034"
 ---
 
 # 形状裁剪
@@ -16,7 +16,7 @@ synced_at: "2026-07-28T16:42:14.548318"
 
 clip(value: boolean): T
 
-是否对子组件超出当前组件范围外的区域进行裁剪。不设置该接口时，默认不对子组件超出当前组件范围外的区域进行裁剪。
+是否对子组件超出当前组件范围外的区域进行裁剪。设置value为true时，子组件超出当前组件范围外的区域将被裁剪不可见；设置value为false时，不对子组件进行裁剪。未设置时，默认不对子组件超出当前组件范围外的区域进行裁剪。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -36,13 +36,13 @@ clip(value: boolean): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### clip18+
 
 clip(clip: Optional<boolean>): T
 
-是否对子组件超出当前组件范围外的区域进行裁剪。不设置该接口时，默认不对子组件超出当前组件范围外的区域进行裁剪。与[clip12+](#clip12)相比，新增了对undefined类型的支持。
+是否对子组件超出当前组件范围外的区域进行裁剪。未设置时，默认不对子组件超出当前组件范围外的区域进行裁剪。与[clip12+](#clip12)相比，新增了对undefined类型的支持。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -62,13 +62,13 @@ clip(clip: Optional<boolean>): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### clip(deprecated)
 
 clip(value: boolean | CircleAttribute | EllipseAttribute | PathAttribute | RectAttribute): T
 
-按指定的形状对当前组件进行裁剪。
+按指定的形状对当前组件进行裁剪，或设置是否按照当前组件边缘轮廓进行裁剪。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 12开始废弃，建议使用[clipShape](#clipshape12)替代。
 
@@ -88,13 +88,13 @@ clip(value: boolean | CircleAttribute | EllipseAttribute | PathAttribute | RectA
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### clipShape12+
 
 clipShape(value: CircleShape | EllipseShape | PathShape | RectShape): T
 
-按指定的形状（形状中可包含位置信息）对当前组件进行裁剪。
+按指定的形状（形状中可包含位置信息）对当前组件进行裁剪，将组件超出形状范围外的区域裁剪掉使其不可见。与[maskShape](#maskshape12)不同，clipShape是将组件超出形状范围外的区域裁剪掉（不可见），而maskShape是在组件上叠加指定形状的遮罩覆盖层。
 
 ![](./img/note_3.0-zh-cn.png) 不同的形状支持的属性范围不同，路径是一种形状，除此之外还有椭圆、矩形等形状。
 
@@ -120,7 +120,7 @@ clipShape(value: CircleShape | EllipseShape | PathShape | RectShape): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### clipShape18+
 
@@ -146,13 +146,13 @@ clipShape(shape: Optional<CircleShape | EllipseShape | PathShape | RectShape>): 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| shape | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 参数为相应类型的组件，按指定的形状（形状中可包含位置信息）对当前组件进行裁剪。 **说明：** 裁剪不会导致被裁剪区域无法响应绑定的手势事件。 当shape的值为undefined时，会重置当前值。 |
+| shape | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 参数为相应类型的组件，按指定的形状（形状中可包含位置信息）对当前组件进行裁剪。 **说明：** 裁剪不会导致被裁剪区域无法响应绑定的手势事件。 当shape的值为undefined时，恢复为不添加指定形状的遮罩。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### CircleShape12+
 
@@ -230,7 +230,7 @@ type RectShape = import('../api/@ohos.arkui.shape').RectShape
 
 mask(value: ProgressMask): T
 
-为组件添加可调节进度的遮罩。
+为组件添加可调节进度的遮罩，遮罩覆盖在组件内容上方，通过进度值控制遮罩的显示范围。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -248,13 +248,13 @@ mask(value: ProgressMask): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### mask18+
 
 mask(mask: Optional<ProgressMask>): T
 
-为组件添加可调节进度的遮罩。与[mask12+](#mask12)相比，新增了对undefined类型的支持。
+为组件添加可调节进度的遮罩，遮罩覆盖在组件内容上方，通过进度值控制遮罩的显示范围。与[mask12+](#mask12)相比，新增了对undefined类型的支持。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -266,19 +266,19 @@ mask(mask: Optional<ProgressMask>): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| mask | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 在当前组件上加上可动态设置进度、最大值和颜色的遮罩。 当mask的值为undefined时，恢复为无进度遮罩效果。 |
+| mask | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 在当前组件上加上可动态设置进度和颜色的遮罩。遮罩的最大值(total)在构造ProgressMask对象时设定，不可动态修改。可通过ProgressMask对象的updateProgress()方法更新进度值、updateColor()方法更新颜色、enableBreathingAnimation()方法开关呼吸光晕动画。 当mask的值为undefined时，恢复为无进度遮罩效果。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### mask(deprecated)
 
 mask(value: CircleAttribute | EllipseAttribute | PathAttribute | RectAttribute | ProgressMask): T
 
-为组件添加指定形状的遮罩。
+为组件添加指定形状或可调节进度的遮罩。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 12开始废弃，建议使用[maskShape](#maskshape12)替代。
 
@@ -292,19 +292,25 @@ mask(value: CircleAttribute | EllipseAttribute | PathAttribute | RectAttribute |
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [CircleAttribute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-circle) | [EllipseAttribute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-ellipse) | [PathAttribute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-path) | [RectAttribute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-rect) | [ProgressMask](#progressmask10)10+ | 是 | 在当前组件上加上指定形状的遮罩。 |
+| value | [CircleAttribute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-circle) | [EllipseAttribute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-ellipse) | [PathAttribute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-path) | [RectAttribute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-rect) | [ProgressMask](#progressmask10)10+ | 是 | 参数为对应形状类型的组件时，在当前组件上加上指定形状的遮罩（圆形、椭圆、路径或矩形）；参数为ProgressMask时，在当前组件上加上可动态设置进度和颜色的遮罩。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### maskShape12+
 
 maskShape(value: CircleShape | EllipseShape | PathShape | RectShape): T
 
-为组件添加指定形状的遮罩。
+为组件添加指定形状的遮罩，在组件上叠加指定形状的覆盖层。
+
+![](./img/note_3.0-zh-cn.png)
+
+- 不同的形状支持的属性范围不同，路径是一种形状，除此之外还有椭圆、矩形等形状。
+- 路径的形状不支持设置宽度和高度。具体形状支持的属性参考具体形状的文档。
+- 形状中的fill属性对maskShape接口生效，用于设置遮罩的颜色。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -318,19 +324,25 @@ maskShape(value: CircleShape | EllipseShape | PathShape | RectShape): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [CircleShape](#circleshape12) | [EllipseShape](#ellipseshape12) | [PathShape](#pathshape12) | [RectShape](#rectshape12) | 是 | 在当前组件上加上指定形状的遮罩。 |
+| value | [CircleShape](#circleshape12) | [EllipseShape](#ellipseshape12) | [PathShape](#pathshape12) | [RectShape](#rectshape12) | 是 | 在当前组件上加上指定形状的遮罩或可调节进度的遮罩。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### maskShape18+
 
 maskShape(shape: Optional<CircleShape | EllipseShape | PathShape | RectShape>): T
 
-为组件添加指定形状的遮罩。与[maskShape12+](#maskshape12)相比，新增了对undefined类型的支持。
+为组件添加指定形状的遮罩，在组件上叠加指定形状的覆盖层。与[maskShape12+](#maskshape12)相比，新增了对undefined类型的支持。
+
+![](./img/note_3.0-zh-cn.png) 不同的形状支持的属性范围不同，路径是一种形状，除此之外还有椭圆、矩形等形状。
+
+路径的形状不支持设置宽度和高度。具体形状支持的属性参考具体形状的文档。
+
+形状中的fill属性对maskShape接口生效，用于设置遮罩的颜色。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -344,17 +356,17 @@ maskShape(shape: Optional<CircleShape | EllipseShape | PathShape | RectShape>): 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| shape | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 在当前组件上加上指定形状的遮罩。 当shape的值为undefined时，会重置当前值。 |
+| shape | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 参数为对应形状类型的组件时，在当前组件上加上指定形状的遮罩（圆形、椭圆、路径或矩形）；参数为ProgressMask时，在当前组件上加上可动态设置进度、最大值和颜色的遮罩。 当shape的值为undefined时，会重置当前值，恢复为无指定形状遮罩效果。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### ProgressMask10+
 
-ProgressMask设置遮罩的进度、最大值和颜色。
+ProgressMask用于设置遮罩的进度、最大值和颜色。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -378,8 +390,8 @@ constructor(value: number, total: number, color: ResourceColor)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 进度遮罩的当前值。 取值范围：[0.0, +∞) |
-| total | number | 是 | 进度遮罩的最大值。 取值范围：[0.0, +∞) |
+| value | number | 是 | 进度遮罩的当前值，与total配合使用确定进度比例，当value等于total时表示进度满。 取值范围：[0.0, +∞)。传入负数时自动修正为0。 |
+| total | number | 是 | 进度遮罩的最大值。 取值范围：[0.0, +∞)。传入负数时自动修正为100。 |
 | color | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 是 | 进度遮罩的颜色。 |
 
 #### [h2]updateProgress10+
@@ -387,6 +399,11 @@ constructor(value: number, total: number, color: ResourceColor)
 updateProgress(value: number): void
 
 更新进度遮罩的进度值。
+
+使用说明：
+
+- 需先通过[mask()](#mask12)方法将ProgressMask对象应用到组件上，调用此方法后遮罩的进度值会动态更新。
+- 若ProgressMask尚未通过mask()方法应用到组件，调用此方法仅更新ProgressMask对象的内部状态，不会产生可见的遮罩效果变化。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -398,13 +415,18 @@ updateProgress(value: number): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 进度遮罩的当前值。 |
+| value | number | 是 | 进度遮罩的当前值。 取值范围：[0.0, +∞)。传入负数时自动修正为0。 |
 
 #### [h2]updateColor10+
 
 updateColor(value: ResourceColor): void
 
 更新进度遮罩的颜色。
+
+使用说明：
+
+- 需先通过[mask()](#mask12)方法将ProgressMask对象应用到组件上，调用此方法后遮罩颜色会动态更新。
+- 若ProgressMask尚未通过mask()方法应用到组件，调用此方法仅更新ProgressMask对象的内部状态，不会产生可见的遮罩效果变化。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -422,7 +444,7 @@ updateColor(value: ResourceColor): void
 
 enableBreathingAnimation(value: boolean): void
 
-进度满时的呼吸光晕动画开关。不设置该接口时，默认关闭呼吸光晕动画。
+进度满时的呼吸光晕动画开关，开启后进度满时遮罩边缘会出现周期性明暗变化的发光效果。未设置时，默认关闭呼吸光晕动画。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -434,7 +456,7 @@ enableBreathingAnimation(value: boolean): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | boolean | 是 | 是否开启呼吸光晕动画。 true：开启呼吸光晕动画。 false：关闭呼吸光晕动画。 |
+| value | boolean | 是 | 是否开启进度满时的呼吸光晕动画。 true：开启呼吸光晕动画。 false：关闭呼吸光晕动画。 |
 
 #### 示例
 
@@ -483,7 +505,7 @@ struct ClipAndMaskExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848376.png)
+ ![](./img/zh-cn_image_0000002731518709.png)
 
 #### [h2]示例2（实现组件遮罩）
 
@@ -493,8 +515,7 @@ struct ClipAndMaskExample {
 @Entry
 @Component
 struct ProgressMaskExample {
-  @State progressFlag1: boolean = true;
-  @State color: Color = 0x01006CDE;
+  @State isRedColor: boolean = true;
   @State value: number = 10.0;
   @State enableBreathingAnimation: boolean = false;
   @State progress: ProgressMask = new ProgressMask(10.0, 100.0, Color.Gray);
@@ -502,7 +523,7 @@ struct ProgressMaskExample {
   build() {
     Column({ space: 15 }) {
       Text('progress mask').fontSize(12).width('75%').fontColor('#DCDCDC')
-      // 给图片添加了一个280px*280px的进度遮罩
+      // 给图片添加了一个进度遮罩
       // $r("app.media.testImg")需要替换为开发者所需的图像资源文件。
       Image($r('app.media.testImg'))
         .width('500px').height('280px')
@@ -513,7 +534,7 @@ struct ProgressMaskExample {
           delay: 0, // 动画延迟
           iterations: 1, // 播放次数
           playMode: PlayMode.Normal // 动画模式
-        }) // 对Image组件的属性进行动画配置
+        }) // 对Image组件的遮罩进度变化进行动画配置
 
       // 更新进度遮罩的进度值
       Button('updateProgress')
@@ -525,12 +546,12 @@ struct ProgressMaskExample {
       // 更新进度遮罩的颜色
       Button('updateColor')
         .onClick((event?: ClickEvent) => {
-          if (this.progressFlag1) {
+          if (this.isRedColor) {
             this.progress.updateColor(0x9fff0000);
           } else {
             this.progress.updateColor(0x9f0000ff);
           }
-          this.progressFlag1 = !this.progressFlag1;
+          this.isRedColor = !this.isRedColor;
         }).width(200).height(50).margin(20)
 
       // 开关呼吸光晕动画
@@ -541,7 +562,7 @@ struct ProgressMaskExample {
         }).width(200).height(50).margin(20)
 
       // 恢复进度遮罩
-      Button('click reset!')
+      Button('click reset')
         .onClick((event?: ClickEvent) => {
           this.value = 0;
           this.progress.updateProgress(this.value);
@@ -552,4 +573,4 @@ struct ProgressMaskExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087805.gif)
+ ![](./img/zh-cn_image_0000002701639512.gif)

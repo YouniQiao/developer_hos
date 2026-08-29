@@ -2,8 +2,8 @@
 title: "EventHub"
 upstream_id: "harmonyos-references/js-apis-inner-application-eventhub"
 catalog: "harmonyos-references"
-content_hash: "4dc6e3da0caa"
-synced_at: "2026-08-21T15:33:00.987084"
+content_hash: "dcafc812582c"
+synced_at: "2026-08-29T18:12:03.802915"
 ---
 
 # EventHub
@@ -124,7 +124,7 @@ export default class EntryAbility extends UIAbility {
 ```
  示例2：
 
-callback使用箭头函数时，调用方是EntryAbility对象。EntryAbility对象里存在value属性，因此结果是12。
+callback使用箭头函数时，this指向EntryAbility对象。EntryAbility对象里存在value属性，因此结果是12。
 
 ```
 import { UIAbility } from '@kit.AbilityKit';

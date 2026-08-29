@@ -2,8 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-graphics-accelerate"
 catalog: "harmonyos-references"
-content_hash: "016c1c15f4e2"
-synced_at: "2026-07-28T16:52:23.043298"
+content_hash: "7441533e3f6b"
+synced_at: "2026-08-29T18:18:04.028414"
 ---
 
 # ArkTS API错误码
@@ -275,75 +275,3 @@ No game is running, or the current game is not supported by the game buddy servi
 处理步骤
 
 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/add/101704353566310877?level2=201704444384569052&level3=601723606112598571)提交问题，华为工程师会及时处理。
-
-#### 1009503003 游戏伴随服务启动音频采集失败
-
-错误信息
-
-The game buddy service fails to start audio capture. Please perform audio capture directly or try again later.
-
-错误描述
-
-游戏伴随服务启动音频采集失败，请尝试直接获取音频采集器，或者稍后重试。
-
-可能原因
-
-音频采集接口启动失败。
-
-处理步骤
-
-请尝试通过[AudioCapturer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiocapturer)音频采集接口获取音频采集器，或者稍后重试。
-
-#### 1009503004 头像分辨率过大或过小
-
-错误信息
-
-Invalid avatar resolution. Please set the image resolution between 30x30 and 200x200 pixels.
-
-错误描述
-
-头像图片分辨率过大或过小，请将图片分辨率调整为30x30至200x200像素。
-
-可能原因
-
-头像图片分辨率过大或过小。
-
-处理步骤
-
-请将图片分辨率调整为30x30至200x200像素。
-
-#### 1009503005 游戏处于后台，不支持截图
-
-错误信息
-
-Screenshots are not supported while the game is running in the background. Please try again later.
-
-错误描述
-
-当前游戏处于后台，不支持对游戏截图，请稍后重试。
-
-可能原因
-
-当前游戏处于后台，不支持对游戏截图，请稍后重试。
-
-处理步骤
-
-请将游戏置于前台。
-
-#### 1009503006 游戏截图频率过高
-
-错误信息
-
-Screenshot frequency too high. This API can only be called once per second. Please try again later.
-
-错误描述
-
-游戏截图频率过高，每秒最多只能调用一次，请稍后重试。
-
-可能原因
-
-游戏截图频率过高，每秒最多只能调用一次。
-
-处理步骤
-
-请降低游戏截图频率，建议一秒调用一次。

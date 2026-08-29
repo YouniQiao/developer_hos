@@ -2,13 +2,13 @@
 title: "Class (PointUtils)"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing-pointutils"
 catalog: "harmonyos-references"
-content_hash: "29becfdad14d"
-synced_at: "2026-07-09T01:00:52.346710"
+content_hash: "6863ffb77283"
+synced_at: "2026-08-29T18:17:50.566235"
 ---
 
 # Class (PointUtils)
 
-提供了处理坐标点的工具。
+本Class是提供处理坐标点的工具类，支持对坐标点进行取反、偏移等操作，适用于需要对坐标点进行变换处理的图形绘制场景。
 
 ![](./img/note_3.0-zh-cn.png)
 

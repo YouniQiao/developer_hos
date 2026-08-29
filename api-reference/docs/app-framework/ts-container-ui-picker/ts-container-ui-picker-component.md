@@ -2,8 +2,8 @@
 title: "UIPickerComponent"
 upstream_id: "harmonyos-references/ts-container-ui-picker-component"
 catalog: "harmonyos-references"
-content_hash: "b0a1f695290a"
-synced_at: "2026-07-28T16:44:19.651591"
+content_hash: "5bf70eac0f4e"
+synced_at: "2026-08-29T18:13:44.805209"
 ---
 
 # UIPickerComponent
@@ -340,7 +340,7 @@ struct UIPickerComponentAttrsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088009.gif)
+ ![](./img/zh-cn_image_0000002701799632.gif)
 
 #### [h2]示例2（设置事件回调）
 
@@ -355,17 +355,21 @@ struct UIPickerComponentEventsExample {
   private dataArray: string[] = ['待办', '进行中', '已完成'];
   @State onChangeDesc: string = '';
   @State onScrollStopDesc: string = '';
+  @State index: number = 0;
 
   build() {
     Column() {
       Row() {
-        UIPickerComponent() {
+        UIPickerComponent({
+          selectedIndex: this.index
+        }) {
           ForEach(this.dataArray, (item: string) => {
             Text(item)
           })
         }
         // 配置onChange事件回调
         .onChange((selectedIndex: number) => {
+          this.index = selectedIndex;
           this.onChangeDesc = 'on change: ' + selectedIndex;
         })
         // 配置onScrollStop事件回调
@@ -385,7 +389,7 @@ struct UIPickerComponentEventsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928181.gif)
+ ![](./img/zh-cn_image_0000002731518917.gif)
 
 #### [h2]示例3（设置选中项索引值）
 
@@ -435,7 +439,7 @@ struct UIPickerComponentSelectedIndexExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008504.gif)
+ ![](./img/zh-cn_image_0000002701639718.gif)
 
 #### [h2]示例4（设置选中项指示器）
 
@@ -733,7 +737,7 @@ struct UIPickerComponentIndicatorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848584.gif)
+ ![](./img/zh-cn_image_0000002731358939.gif)
 
 #### [h2]示例5（自定义月份选择器）
 
@@ -784,7 +788,7 @@ struct MonthUIPickerComponentExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088011.gif)
+ ![](./img/zh-cn_image_0000002701799634.gif)
 
 #### [h2]示例6（自定义地区选择器）
 
@@ -901,7 +905,7 @@ struct RegionUIPickerComponentExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928183.gif)
+ ![](./img/zh-cn_image_0000002731518919.gif)
 
 #### [h2]示例7（自定义选项类型）
 
@@ -997,7 +1001,7 @@ struct UIPickerComponentExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008506.gif)
+ ![](./img/zh-cn_image_0000002701639720.gif)
 
 #### [h2]示例8（自定义时间选择器）
 
@@ -1469,7 +1473,7 @@ struct TimeUIPickerComponentExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848586.gif)
+ ![](./img/zh-cn_image_0000002731358941.gif)
 
 #### [h2]示例9（设置选项高度）
 
@@ -1499,7 +1503,9 @@ struct UIPickerComponentItemHeightExample {
       Text('当前itemHeight：' + (this.pickerItemHeight ? this.pickerItemHeight.value + 'vp' : '默认值(40vp)'))
         .fontSize(16)
 
-      UIPickerComponent() {
+      UIPickerComponent({
+        selectedIndex: this.selectedIndex
+      }) {
         ForEach(this.dataArray, (item: string) => {
           Text(item)
         })
@@ -1530,7 +1536,7 @@ struct UIPickerComponentItemHeightExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088013.jpg)
+ ![](./img/zh-cn_image_0000002701799636.jpg)
 
 #### [h2]示例10（设置可见选项数量）
 
@@ -1545,6 +1551,7 @@ struct UIPickerComponentItemHeightExample {
 struct UIPickerComponentDisplayedCountExample {
   private dataArray: string[] = [];
   @State visibleCount: number = 7;
+  @State selectedIndex: number = 0;
 
   aboutToAppear(): void {
     for (let i = 1; i <= 12; i++) {
@@ -1557,11 +1564,16 @@ struct UIPickerComponentDisplayedCountExample {
       Text('displayedItemCount: ' + this.visibleCount)
         .fontSize(16)
 
-      UIPickerComponent() {
+      UIPickerComponent({
+        selectedIndex: this.selectedIndex
+      }) {
         ForEach(this.dataArray, (item: string) => {
           Text(item)
         })
       }
+      .onChange((selectedIndex: number) => {
+        this.selectedIndex = selectedIndex
+      })
       .width('70%')
       .displayedItemCount(this.visibleCount)
 
@@ -1591,4 +1603,4 @@ struct UIPickerComponentDisplayedCountExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928185.jpg)
+ ![](./img/zh-cn_image_0000002731518921.jpg)

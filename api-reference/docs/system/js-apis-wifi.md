@@ -2,17 +2,17 @@
 title: "@ohos.wifi (WLAN)"
 upstream_id: "harmonyos-references/js-apis-wifi"
 catalog: "harmonyos-references"
-content_hash: "aaf70fea87f2"
-synced_at: "2026-07-09T00:59:25.965280"
+content_hash: "69ff0107b999"
+synced_at: "2026-08-29T18:16:39.699447"
 ---
 
 # @ohos.wifi (WLAN)
 
-该模块主要提供WLAN基础功能、P2P（peer-to-peer）功能和WLAN消息通知的相应服务，让应用可以通过WLAN和其他设备互联互通。
+该模块主要提供Wi-Fi基础功能（如Wi-Fi扫描、连接管理、连接信息查询、信号强度获取等）、P2P（peer-to-peer）功能（如设备发现、群组创建与管理、P2P连接等）和Wi-Fi消息通知服务，适用于应用通过Wi-Fi接入网络或与其他设备进行点对点数据传输和互联互通的场景。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 6开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
-从API Version 9 开始，该接口不再维护，推荐使用[@ohos.wifiManager (WLAN)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-wifimanager)等相关接口。
+从API version 9开始，该接口不再维护，推荐使用[@ohos.wifiManager (WLAN)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-wifimanager)等相关接口。
 
 #### 导入模块
 
@@ -24,7 +24,7 @@ import wifi from '@ohos.wifi';
 
 isWifiActive(): boolean
 
-查询WLAN是否已使能。
+查询Wi-Fi是否已使能。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 6开始支持，从API version 9开始废弃。建议使用[wifiManager.isWifiActive](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-wifimanager#wifimanageriswifiactive)替代。
 
@@ -46,7 +46,7 @@ import wifi from '@ohos.wifi';
 try {
   let isWifiActive = wifi.isWifiActive();
   console.info("isWifiActive:" + isWifiActive);
-}catch(error){
+} catch (error) {
   console.error("failed:" + JSON.stringify(error));
 }
 ```
@@ -55,7 +55,7 @@ try {
 
 scan(): boolean
 
-启动WLAN扫描。
+启动Wi-Fi扫描。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 6开始支持，从API version 9开始废弃。建议使用[wifiManager.scan](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-wifimanager#wifimanagerscandeprecated)替代。
 
@@ -141,7 +141,7 @@ wifi.getScanInfos().then(result => {
 
 #### WifiScanInfo(deprecated)
 
-WLAN热点信息。
+Wi-Fi热点信息。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 6开始支持，从API version 9开始废弃。建议使用[WifiScanInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-wifimanager#wifiscaninfo)替代。
 
@@ -152,11 +152,11 @@ WLAN热点信息。
 | ssid | string | 否 | 否 | 热点的SSID，最大长度为32字节，编码格式为UTF-8。 |
 | bssid | string | 否 | 否 | 热点的BSSID，例如：00:11:22:33:44:55。 |
 | capabilities | string | 否 | 否 | 热点能力。 |
-| securityType | [WifiSecurityType](#wifisecuritytypedeprecated) | 否 | 否 | WLAN加密类型。 |
+| securityType | [WifiSecurityType](#wifisecuritytypedeprecated) | 否 | 否 | Wi-Fi加密类型。 |
 | rssi | number | 否 | 否 | 热点的信号强度(dBm)。 |
-| band | number | 否 | 否 | WLAN接入点的频段。1表示2.4GHZ；2表示5GHZ。 |
-| frequency | number | 否 | 否 | WLAN接入点的频率。 |
-| channelWidth | number | 否 | 否 | WLAN接入点的带宽。 |
+| band | number | 否 | 否 | Wi-Fi接入点的频段。1表示2.4GHz；2表示5GHz。 |
+| frequency | number | 否 | 否 | Wi-Fi接入点的频率，单位：MHz。 |
+| channelWidth | number | 否 | 否 | Wi-Fi接入点的带宽。 |
 | timestamp | number | 否 | 否 | 时间戳。 |
 
 #### WifiSecurityType(deprecated)
@@ -177,7 +177,7 @@ WLAN热点信息。
 
 #### WifiDeviceConfig(deprecated)
 
-WLAN配置信息。
+Wi-Fi配置信息。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 6开始支持，从API version 9开始废弃。建议使用[WifiDeviceConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-wifimanager#wifideviceconfig)替代。
 
@@ -207,7 +207,7 @@ addUntrustedConfig(config: WifiDeviceConfig): Promise<boolean>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| config | [WifiDeviceConfig](#wifideviceconfigdeprecated) | 是 | WLAN配置信息。 |
+| config | [WifiDeviceConfig](#wifideviceconfigdeprecated) | 是 | Wi-Fi配置信息。 |
 
 返回值：
 
@@ -264,8 +264,8 @@ addUntrustedConfig(config: WifiDeviceConfig, callback: AsyncCallback<boolean>): 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| config | [WifiDeviceConfig](#wifideviceconfigdeprecated) | 是 | WLAN配置信息。 |
-| callback | AsyncCallback | 是 | 回调函数。当操作成功时，err为0，data表示操作结果，true: 成功， false: 失败。如果error为非0，表示处理出现错误。 |
+| config | [WifiDeviceConfig](#wifideviceconfigdeprecated) | 是 | Wi-Fi配置信息。 |
+| callback | AsyncCallback | 是 | 回调函数。当操作成功时，异步错误对象error为0，data表示操作结果，true: 成功， false: 失败。如果异步错误对象error为非0，表示处理出现错误。 |
 
 示例：
 
@@ -292,7 +292,7 @@ try {
       domains: []
     }
   }
-  wifi.addUntrustedConfig(config,(error,result) => {
+  wifi.addUntrustedConfig(config, (error, result) => {
     console.info("result:" + JSON.stringify(result));
   });
 }catch(error){
@@ -316,7 +316,7 @@ removeUntrustedConfig(config: WifiDeviceConfig): Promise<boolean>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| config | [WifiDeviceConfig](#wifideviceconfigdeprecated) | 是 | WLAN配置信息。 |
+| config | [WifiDeviceConfig](#wifideviceconfigdeprecated) | 是 | Wi-Fi配置信息。 |
 
 返回值：
 
@@ -373,8 +373,8 @@ removeUntrustedConfig(config: WifiDeviceConfig, callback: AsyncCallback<boolean>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| config | [WifiDeviceConfig](#wifideviceconfigdeprecated) | 是 | WLAN配置信息。 |
-| callback | AsyncCallback | 是 | 回调函数。当操作成功时，err为0，data表示操作结果，true: 成功， false: 失败。如果error为非0，表示处理出现错误。 |
+| config | [WifiDeviceConfig](#wifideviceconfigdeprecated) | 是 | Wi-Fi配置信息。 |
+| callback | AsyncCallback | 是 | 回调函数。当操作成功时，异步错误对象error为0，data表示操作结果，true: 成功， false: 失败。如果error为非0，表示处理出现错误。 |
 
 示例：
 
@@ -401,7 +401,7 @@ try {
       domains: []
     }
   }
-  wifi.removeUntrustedConfig(config,(error,result) => {
+  wifi.removeUntrustedConfig(config, (error, result) => {
   console.info("result:" + JSON.stringify(result));
   });
 }catch(error){
@@ -413,7 +413,7 @@ try {
 
 getSignalLevel(rssi: number, band: number): number
 
-查询WLAN信号强度。
+查询Wi-Fi信号强度。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 6开始支持，从API version 9开始废弃。建议使用[wifiManager.getSignalLevel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-wifimanager#wifimanagergetsignallevel)替代。
 
@@ -426,7 +426,7 @@ getSignalLevel(rssi: number, band: number): number
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | rssi | number | 是 | 热点的信号强度(dBm)。 |
-| band | number | 是 | WLAN接入点的频段。 |
+| band | number | 是 | Wi-Fi接入点的频段。 |
 
 返回值：
 
@@ -442,7 +442,7 @@ import wifi from '@ohos.wifi';
 try {
   let rssi = 0;
   let band = 0;
-  let level = wifi.getSignalLevel(rssi,band);
+  let level = wifi.getSignalLevel(rssi, band);
   console.info("level:" + JSON.stringify(level));
 }catch(error){
   console.error("failed:" + JSON.stringify(error));
@@ -453,7 +453,7 @@ try {
 
 getLinkedInfo(): Promise<WifiLinkedInfo>
 
-获取WLAN连接信息。使用Promise异步回调。
+获取Wi-Fi连接信息。使用Promise异步回调。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 6开始支持，从API version 9开始废弃。建议使用[wifiManager.getLinkedInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-wifimanager#wifimanagergetlinkedinfo)替代。
 
@@ -465,13 +465,13 @@ getLinkedInfo(): Promise<WifiLinkedInfo>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象。表示WLAN连接信息。 |
+| Promise | Promise对象。表示Wi-Fi连接信息。 |
 
 #### wifi.getLinkedInfo(deprecated)
 
 getLinkedInfo(callback: AsyncCallback<WifiLinkedInfo>): void
 
-获取WLAN连接信息。使用callback异步回调。
+获取Wi-Fi连接信息。使用callback异步回调。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 6开始支持，从API version 9开始废弃。建议使用[wifiManager.getLinkedInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-wifimanager#wifimanagergetlinkedinfo-1)替代。
 
@@ -483,7 +483,7 @@ getLinkedInfo(callback: AsyncCallback<WifiLinkedInfo>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback | 是 | 回调函数。当获取成功时，err为0，data表示WLAN连接信息。如果error为非0，表示处理出现错误。 |
+| callback | AsyncCallback | 是 | 回调函数。当获取成功时，err为0，data表示Wi-Fi连接信息。如果err为非0，表示处理出现错误。 |
 
 示例：
 
@@ -507,7 +507,7 @@ wifi.getLinkedInfo().then(data => {
 
 #### WifiLinkedInfo(deprecated)
 
-提供WLAN连接的相关信息。
+提供Wi-Fi连接的相关信息。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 6开始支持，从API version 9开始废弃。建议使用[WifiLinkedInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-wifimanager#wifilinkedinfo)替代。
 
@@ -518,18 +518,18 @@ wifi.getLinkedInfo().then(data => {
 | ssid | string | 否 | 否 | 热点的SSID，最大长度为32字节，编码格式为UTF-8。 |
 | bssid | string | 否 | 否 | 热点的BSSID，例如：00:11:22:33:44:55。 |
 | rssi | number | 否 | 否 | 热点的信号强度(dBm)。 |
-| band | number | 否 | 否 | WLAN接入点的频段。1表示2.4GHZ；2表示5GHZ。 |
-| linkSpeed | number | 否 | 否 | WLAN接入点的速度，单位Mbps。 |
-| frequency | number | 否 | 否 | WLAN接入点的频率。 |
-| isHidden | boolean | 否 | 否 | WLAN接入点是否是隐藏网络。true:是隐藏网络，false:不是隐藏网络。 |
-| isRestricted | boolean | 否 | 否 | WLAN接入点是否限制数据量。true: 限制，false:不限制。 |
+| band | number | 否 | 否 | Wi-Fi接入点的频段。1表示2.4GHz；2表示5GHz。 |
+| linkSpeed | number | 否 | 否 | Wi-Fi接入点的速度，单位Mbps。 |
+| frequency | number | 否 | 否 | Wi-Fi接入点的频率，单位：MHz。 |
+| isHidden | boolean | 否 | 否 | Wi-Fi接入点是否是隐藏网络。true:是隐藏网络，false:不是隐藏网络。 |
+| isRestricted | boolean | 否 | 否 | Wi-Fi接入点是否限制数据量。true: 限制，false:不限制。 |
 | macAddress | string | 否 | 否 | 设备的MAC地址。 |
-| ipAddress | number | 否 | 否 | WLAN连接的IP地址。 |
-| connState | [ConnState](#connstatedeprecated) | 否 | 否 | WLAN连接状态。 |
+| ipAddress | number | 否 | 否 | Wi-Fi连接的IP地址。 |
+| connState | [ConnState](#connstatedeprecated) | 否 | 否 | Wi-Fi连接状态。 |
 
 #### ConnState(deprecated)
 
-表示WLAN连接状态的枚举。
+表示Wi-Fi连接状态的枚举。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 6开始支持，从API version 9开始废弃。建议使用[ConnState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-wifimanager#connstate)替代。
 
@@ -538,19 +538,19 @@ wifi.getLinkedInfo().then(data => {
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
 | SCANNING | 0 | 设备正在搜索可用的AP。 |
-| CONNECTING | 1 | 正在建立WLAN连接。 |
-| AUTHENTICATING | 2 | WLAN连接正在认证中。 |
-| OBTAINING_IPADDR | 3 | 正在获取WLAN连接的IP地址。 |
-| CONNECTED | 4 | WLAN连接已建立。 |
-| DISCONNECTING | 5 | WLAN连接正在断开。 |
-| DISCONNECTED | 6 | WLAN连接已断开。 |
-| UNKNOWN | 7 | WLAN连接建立失败。 |
+| CONNECTING | 1 | 正在建立Wi-Fi连接。 |
+| AUTHENTICATING | 2 | Wi-Fi连接正在认证中。 |
+| OBTAINING_IPADDR | 3 | 正在获取Wi-Fi连接的IP地址。 |
+| CONNECTED | 4 | Wi-Fi连接已建立。 |
+| DISCONNECTING | 5 | Wi-Fi连接正在断开。 |
+| DISCONNECTED | 6 | Wi-Fi连接已断开。 |
+| UNKNOWN | 7 | Wi-Fi连接建立失败。 |
 
 #### wifi.isConnected(deprecated)
 
 isConnected(): boolean
 
-查询WLAN是否已连接。
+查询Wi-Fi是否已连接。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃。建议使用[wifiManager.isConnected](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-wifimanager#wifimanagerisconnected)替代。
 
@@ -568,7 +568,7 @@ isConnected(): boolean
 
 isFeatureSupported(featureId: number): boolean
 
-判断设备是否支持相关WLAN特性。
+判断设备是否支持指定featureId对应的Wi-Fi特性。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃。建议使用[wifiManager.isFeatureSupported](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-wifimanager#wifimanagerisfeaturesupported)替代。
 
@@ -639,7 +639,7 @@ IP信息。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃。建议使用[wifiManager.getIpInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-wifimanager#wifimanagergetipinfo)替代。
 
-系统能力： SystemCapability.Communication.WiFi.AP.Core
+系统能力： SystemCapability.Communication.WiFi.STA
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
@@ -649,7 +649,7 @@ IP信息。
 | primaryDns | number | 否 | 否 | 主DNS服务器IP地址。 |
 | secondDns | number | 否 | 否 | 备DNS服务器IP地址。 |
 | serverIp | number | 否 | 否 | DHCP服务端IP地址。 |
-| leaseDuration | number | 否 | 否 | IP地址租用时长。 |
+| leaseDuration | number | 否 | 否 | IP地址租用时长，单位：秒(s)。 |
 
 #### wifi.getCountryCode(deprecated)
 
@@ -702,7 +702,7 @@ getP2pLinkedInfo(): Promise<WifiP2pLinkedInfo>
 
 #### WifiP2pLinkedInfo(deprecated)
 
-提供WLAN连接的相关信息。
+提供P2P连接的相关信息。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃。建议使用[WifiP2pLinkedInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-wifimanager#wifip2plinkedinfo)替代。
 
@@ -743,7 +743,7 @@ getP2pLinkedInfo(callback: AsyncCallback<WifiP2pLinkedInfo>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback | 是 | 回调函数。当操作成功时，err为0，data表示P2P连接信息。如果error为非0，表示处理出现错误。 |
+| callback | AsyncCallback | 是 | 回调函数。当操作成功时，err为0，data表示P2P连接信息。如果err为非0，表示处理出现错误。 |
 
 示例：
 
@@ -797,7 +797,7 @@ getCurrentGroup(callback: AsyncCallback<WifiP2pGroupInfo>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback | 是 | 回调函数。当操作成功时，err为0，data表示当前组信息。如果error为非0，表示处理出现错误。 |
+| callback | AsyncCallback | 是 | 回调函数。当操作成功时，err为0，data表示当前组信息。如果err为非0，表示处理出现错误。 |
 
 示例：
 
@@ -851,7 +851,7 @@ getP2pPeerDevices(callback: AsyncCallback<WifiP2pDevice[]>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback | 是 | 回调函数。当操作成功时，err为0，data表示对端设备列表信息。如果error为非0，表示处理出现错误。 |
+| callback | AsyncCallback | 是 | 回调函数。当操作成功时，err为0，data表示对端设备列表信息。如果err为非0，表示处理出现错误。 |
 
 示例：
 
@@ -885,7 +885,7 @@ wifi.getP2pPeerDevices().then(data => {
 | deviceAddress | string | 否 | 否 | 设备MAC地址。 |
 | primaryDeviceType | string | 否 | 否 | 主设备类型。 |
 | deviceStatus | [P2pDeviceStatus](#p2pdevicestatusdeprecated) | 否 | 否 | 设备状态。 |
-| groupCapabilitys | number | 否 | 否 | 群组能力。 |
+| groupCapabilitys | number | 否 | 否 | 群组能力，以位掩码形式表示群组支持的特性。 |
 
 #### P2pDeviceStatus(deprecated)
 
@@ -974,8 +974,8 @@ try {
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
 | GO_BAND_AUTO | 0 | 自动模式。 |
-| GO_BAND_2GHZ | 1 | 2GHZ。 |
-| GO_BAND_5GHZ | 2 | 5GHZ。 |
+| GO_BAND_2GHZ | 1 | 2GHz。 |
+| GO_BAND_5GHZ | 2 | 5GHz。 |
 
 #### wifi.removeGroup(deprecated)
 
@@ -1040,7 +1040,7 @@ let recvP2pConnectionChangeFunc = (result:wifi.WifiP2pLinkedInfo) => {
     console.info("p2p connection change receive event: " + JSON.stringify(result));
     wifi.getP2pLinkedInfo((err, data:wifi.WifiP2pLinkedInfo) => {
         if (err) {
-            console.error('failed to get getP2pLinkedInfo: ' + JSON.stringify(err));
+            console.error("failed to get getP2pLinkedInfo: " + JSON.stringify(err));
             return;
         }
         console.info("get getP2pLinkedInfo: " + JSON.stringify(data));
@@ -1175,7 +1175,7 @@ stopDiscoverDevices(): boolean
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | true:操作执行成功 false:操作执行失败。 |
+| boolean | 停止发现设备是否成功。true:操作执行成功，false:操作执行失败。 |
 
 示例：
 
@@ -1205,7 +1205,7 @@ try {
 | interface | string | 否 | 否 | 接口名称。 |
 | groupName | string | 否 | 否 | 群组名称。 |
 | networkId | number | 否 | 否 | 网络ID。 |
-| frequency | number | 否 | 否 | 群组的频率。 |
+| frequency | number | 否 | 否 | 群组的频率，单位：MHz。 |
 | clientDevices | [WifiP2pDevice](#wifip2pdevicedeprecated)[] | 否 | 否 | 接入的设备列表信息。 |
 | goIpAddress | string | 否 | 否 | 群组IP地址。 |
 
@@ -1213,7 +1213,7 @@ try {
 
 on(type: 'wifiStateChange', callback: Callback<number>): void
 
-注册WLAN状态改变事件。
+注册Wi-Fi状态改变事件。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃。建议使用[wifiManager.on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-wifimanager#wifimanageronwifistatechange)替代。
 
@@ -1241,7 +1241,7 @@ on(type: 'wifiStateChange', callback: Callback<number>): void
 
 off(type: 'wifiStateChange', callback?: Callback<number>): void
 
-取消注册WLAN状态改变事件。
+取消注册Wi-Fi状态改变事件。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃。建议使用[wifiManager.off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-wifimanager#wifimanageroffwifistatechange)替代。
 
@@ -1276,7 +1276,7 @@ wifi.off("wifiStateChange", recvPowerNotifyFunc);
 
 on(type: 'wifiConnectionChange', callback: Callback<number>): void
 
-注册WLAN连接状态改变事件。
+注册Wi-Fi连接状态改变事件。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃。建议使用[wifiManager.on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-wifimanager#wifimanageronwificonnectionchange)替代。
 
@@ -1302,7 +1302,7 @@ on(type: 'wifiConnectionChange', callback: Callback<number>): void
 
 off(type: 'wifiConnectionChange', callback?: Callback<number>): void
 
-取消注册WLAN连接状态改变事件。
+取消注册Wi-Fi连接状态改变事件。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃。建议使用[wifiManager.off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-wifimanager#wifimanageroffwificonnectionchange)替代。
 

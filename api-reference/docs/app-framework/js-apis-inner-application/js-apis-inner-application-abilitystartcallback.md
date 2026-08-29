@@ -2,8 +2,8 @@
 title: "AbilityStartCallback"
 upstream_id: "harmonyos-references/js-apis-inner-application-abilitystartcallback"
 catalog: "harmonyos-references"
-content_hash: "2c4f43c042c2"
-synced_at: "2026-07-09T00:57:08.520087"
+content_hash: "bc802e4e5fe6"
+synced_at: "2026-08-29T18:12:02.464999"
 ---
 
 # AbilityStartCallback
@@ -47,7 +47,7 @@ onError(code: number, name: string, message: string): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | code | number | 是 | 拉起UIExtensionAbility执行失败时返回的结果码。 |
-| name | string | 是 | 拉起UIExtensionAbility执行失败时返回的名称。 |
+| name | string | 是 | 拉起UIExtensionAbility执行失败时返回的错误名称，用于标识错误类型。 |
 | message | string | 是 | 拉起UIExtensionAbility执行失败时返回的错误信息。 |
 
 示例：
@@ -63,7 +63,7 @@ export default class EntryAbility extends UIAbility {
     };
     let abilityStartCallback: common.AbilityStartCallback = {
       onError: (code: number, name: string, message: string) => {
-        console.info(`code: ${code}, name: ${name}, message: ${message}`);
+        console.error(`code: ${code}, name: ${name}, message: ${message}`);
       },
       onResult: (abilityResult: common.AbilityResult) => {
         console.info(`resultCode: ${abilityResult.resultCode}, bundleName: ${abilityResult.want?.bundleName}`);

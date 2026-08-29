@@ -2,8 +2,8 @@
 title: "Class (AVMusicTemplateController)"
 upstream_id: "harmonyos-references/arkts-apis-avmusictemplate-avmusictemplatecontroller"
 catalog: "harmonyos-references"
-content_hash: "2d62c81f12c9"
-synced_at: "2026-07-09T01:00:19.666946"
+content_hash: "55cb027ce013"
+synced_at: "2026-08-29T18:17:27.213127"
 ---
 
 # Class (AVMusicTemplateController)
@@ -36,7 +36,7 @@ import { avMusicTemplate } from '@kit.AVSessionKit';
 
 queryMainTabs(): Promise<MediaTab[]>
 
-查询主标签。使用Promise异步回调。
+查询主标签。通过音频模板控制器向媒体应用请求主标签列表，返回包含标签ID、标签名称等信息的主标签数组。使用Promise异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -82,7 +82,7 @@ export class ControllerManager {
       console.info(TAG, 'queryMainTabs')
       tabs = await this.controller.queryMainTabs();
     } catch (e) {
-      console.error(TAG, `queryMainTabs failed, errCode: ${e?.code}`)
+      console.error(TAG, `Failed to query main tabs. Code: ${e?.code}, message: ${e?.message}`);
     }
     return tabs;
   }
@@ -230,7 +230,7 @@ export class ControllerManager {
 
 queryCompilation(compilationId: string, pageIndex: number): Promise<PageMediaEntity>
 
-查询合集。使用Promise异步回调。
+查询媒体内容合集。使用Promise异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -368,7 +368,7 @@ export class ControllerManager {
 
 queryCurrentSingle(): Promise<Single>
 
-查询当前单曲。使用Promise异步回调。
+查询当前正在播放的单曲。通过音频模板控制器从媒体应用获取当前播放会话中的单曲信息，包括媒体ID、标题、作者等元数据。使用Promise异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -939,7 +939,7 @@ export class ControllerManager {
 
 login(controlType: LoginType, id?: string): Promise<QrCodeInfo[]>
 
-登录。使用Promise异步回调。
+登录媒体应用账号。使用Promise异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -1122,7 +1122,7 @@ export class ControllerManager {
   private controller: avMusicTemplate.AVMusicTemplateController | undefined = undefined;
 
   /**
-   * 模拟请求对话框信息。
+   * 模拟处理购买会员情况。
    *
    * @returns Promise类型的对话框信息。
    */
@@ -1648,7 +1648,7 @@ export class ControllerManager {
 
 onUserInfoChange(callback: Callback<UserInfo>): void
 
-注册用户信息改变的回调。使用callback异步回调。
+注册用户信息改变的回调。当媒体应用的用户信息发生变化（如登录状态改变、用户资料更新等）时，通过音频模板控制器触发该回调，通知音频模板控制方。使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -1694,7 +1694,7 @@ export class ControllerManager {
 
 offUserInfoChange(callback?: Callback<UserInfo>): void
 
-注销用户信息改变的回调。使用callback异步回调。
+注销用户信息改变的回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -1829,7 +1829,7 @@ export class ControllerManager {
 
 onCurrentSingleChange(callback: Callback<Single>): void
 
-注册当前单曲改变的回调。使用callback异步回调。
+注册当前单曲改变的回调。当正在播放的单曲发生变化（如切换歌曲、开始播放新歌曲等）时，通过音频模板控制器触发该回调，通知音频模板控制方。使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -1875,7 +1875,7 @@ export class ControllerManager {
 
 offCurrentSingleChange(callback?: Callback<Single>): void
 
-注销当前单曲改变的回调。使用callback异步回调。
+注销当前单曲改变的回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -1966,7 +1966,7 @@ export class ControllerManager {
 
 offMediaEntitiesChange(callback?: Callback<MediaEntity[]>): void
 
-注销媒体实体改变的回调。使用callback异步回调。
+注销媒体实体改变的回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -2101,7 +2101,7 @@ export class ControllerManager {
 
 onPlaylistChange(callback: Callback<PageMediaEntity>): void
 
-注册上报播放列表改变的回调。使用callback异步回调。
+注册上报播放列表改变的回调。当播放列表发生改变（如添加歌曲、删除歌曲、调整播放顺序等）时，通过音频模板控制器触发该回调，通知音频模板控制方。使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -2148,7 +2148,7 @@ export class ControllerManager {
 
 offPlaylistChange(callback?: Callback<PageMediaEntity>): void
 
-注销上报播放列表改变的回调。使用callback异步回调。
+注销上报播放列表改变的回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -2239,7 +2239,7 @@ export class ControllerManager {
 
 offDownloadMediaEntityStatusChange(callback?: Callback<MediaEntity>): void
 
-注销上报下载媒体状态改变的回调。使用callback异步回调。
+注销上报下载媒体状态改变的回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -2422,7 +2422,7 @@ export class ControllerManager {
 
 offSettingsChange(callback?: Callback<SettingItem[]>): void
 
-注销上报设置改变的回调。使用callback异步回调。
+注销上报设置改变的回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -2604,7 +2604,7 @@ export class ControllerManager {
 
 offExtensionAbilityChange(callback?: ReportExecuteAbilityEvent): void
 
-注销回调，用于停止监听拉起指定媒体应用的请求。
+注销拉起指定媒体应用界面的回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 

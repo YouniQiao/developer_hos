@@ -1,12 +1,10 @@
 ---
-
 title: "获取玩家标识"
 upstream_id: "harmonyos-references/gameservice-getplayerinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T01:01:19.219418"
-content_hash: "621fdcbc9497"
+content_hash: "f20afc6855c0"
+synced_at: "2026-08-29T18:18:15.805301"
 ---
-
 
 # 获取玩家标识
 
@@ -84,6 +82,10 @@ Server: elb
             "idType": 1,
             "bindType": 0
         }
+    },
+    "bindInfo": {
+        "bindMode": 0,
+        "thirdOpenId": "0234***56895"
     },
     "rtnCode": 0
 }

@@ -2,13 +2,13 @@
 title: "@ohos.bluetooth.constant (蓝牙constant模块)"
 upstream_id: "harmonyos-references/js-apis-bluetooth-constant"
 catalog: "harmonyos-references"
-content_hash: "1193ff69f0ed"
-synced_at: "2026-07-09T00:59:23.062053"
+content_hash: "33570f2ff1e7"
+synced_at: "2026-08-29T18:16:36.155283"
 ---
 
 # @ohos.bluetooth.constant (蓝牙constant模块)
 
-本模块提供了蓝牙[Profile](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#profile)、设备类型相关的常量定义。
+本模块提供了蓝牙[Profile](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#profile)、设备类型相关的常量定义。开发者可使用这些常量进行蓝牙Profile连接状态判断、设备类型识别等操作，适用于蓝牙设备配对、连接管理、设备分类筛选等场景，便于在应用中统一引用标准协议与设备类型的常量值，提升代码可读性与可维护性。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 10开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -20,7 +20,7 @@ import { constant } from '@kit.ConnectivityKit';
 
 #### ProfileId
 
-枚举，表示蓝牙[Profile](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#profile)协议的标识。
+枚举，表示蓝牙Profile协议的标识。
 
 系统能力：SystemCapability.Communication.Bluetooth.Core
 
@@ -97,7 +97,7 @@ import { constant } from '@kit.ConnectivityKit';
 | NETWORK_83_TO_99_UTILIZED | 0x03C0 | 表示网络负载占用率83%~99%的网络设备。 |
 | NETWORK_NO_SERVICE | 0x03E0 | 表示网络负载占用率100%的网络设备。 |
 | AUDIO_VIDEO_UNCATEGORIZED | 0x0400 | 表示未分类音频/视频设备。 |
-| AUDIO_VIDEO_WEARABLE_HEADSET | 0x0404 | 表示可穿戴式音频/视频设备。 |
+| AUDIO_VIDEO_WEARABLE_HEADSET | 0x0404 | 表示可穿戴式耳机音频/视频设备。 |
 | AUDIO_VIDEO_HANDSFREE | 0x0408 | 表示免提音频/视频设备。 |
 | AUDIO_VIDEO_MICROPHONE | 0x0410 | 表示麦克风音频/视频设备。 |
 | AUDIO_VIDEO_LOUDSPEAKER | 0x0414 | 表示扬声器音频/视频设备。 |
@@ -107,24 +107,24 @@ import { constant } from '@kit.ConnectivityKit';
 | AUDIO_VIDEO_SET_TOP_BOX | 0x0424 | 表示机顶盒音频/视频设备。 |
 | AUDIO_VIDEO_HIFI_AUDIO | 0x0428 | 表示高保真音频/视频设备。 |
 | AUDIO_VIDEO_VCR | 0x042C | 表示录像机音频/视频设备。 |
-| AUDIO_VIDEO_VIDEO_CAMERA | 0x0430 | 表示照相机视频设备。 |
+| AUDIO_VIDEO_VIDEO_CAMERA | 0x0430 | 表示摄像机视频设备。 |
 | AUDIO_VIDEO_CAMCORDER | 0x0434 | 表示摄像机音频/视频设备。 |
 | AUDIO_VIDEO_VIDEO_MONITOR | 0x0438 | 表示监视器视频设备。 |
 | AUDIO_VIDEO_VIDEO_DISPLAY_AND_LOUDSPEAKER | 0x043C | 表示具备显示和扬声器的视频设备。 |
 | AUDIO_VIDEO_VIDEO_CONFERENCING | 0x0440 | 表示会议视频设备。 |
 | AUDIO_VIDEO_VIDEO_GAMING_TOY | 0x0448 | 表示游戏玩具视频设备。 |
 | PERIPHERAL_NON_KEYBOARD_NON_POINTING | 0x0500 | 表示非键盘非指向外围设备。 |
-| PERIPHERAL_KEYBOARD | 0x0540 | 表示外设键盘设备。 |
+| PERIPHERAL_KEYBOARD | 0x0540 | 表示外围键盘设备。 |
 | PERIPHERAL_POINTING_DEVICE | 0x0580 | 表示定点装置外围设备。 |
 | PERIPHERAL_KEYBOARD_POINTING | 0x05C0 | 表示键盘指向外围设备。 |
 | PERIPHERAL_UNCATEGORIZED | 0x0500 | 表示未分类外围设备。 |
-| PERIPHERAL_JOYSTICK | 0x0504 | 表示周边操纵杆设备。 |
-| PERIPHERAL_GAMEPAD | 0x0508 | 表示周边游戏板设备。 |
+| PERIPHERAL_JOYSTICK | 0x0504 | 表示外围操纵杆设备。 |
+| PERIPHERAL_GAMEPAD | 0x0508 | 表示外围游戏板设备。 |
 | PERIPHERAL_REMOTE_CONTROL | 0x05C0 | 表示远程控制外围设备。 |
-| PERIPHERAL_SENSING_DEVICE | 0x0510 | 表示外围传感设备设备。 |
+| PERIPHERAL_SENSING_DEVICE | 0x0510 | 表示外围传感设备。 |
 | PERIPHERAL_DIGITIZER_TABLET | 0x0514 | 表示外围数字化仪平板电脑设备。 |
 | PERIPHERAL_CARD_READER | 0x0518 | 表示外围读卡器设备。 |
-| PERIPHERAL_DIGITAL_PEN | 0x051C | 表示外设数码笔设备。 |
+| PERIPHERAL_DIGITAL_PEN | 0x051C | 表示外围数码笔设备。 |
 | PERIPHERAL_SCANNER_RFID | 0x0520 | 表示射频识别扫描仪外围设备。 |
 | PERIPHERAL_GESTURAL_INPUT | 0x0522 | 表示手势输入外围设备。 |
 | IMAGING_UNCATEGORIZED | 0x0600 | 表示未分类的图像设备。 |
@@ -152,9 +152,9 @@ import { constant } from '@kit.ConnectivityKit';
 | HEALTH_PULSE_OXIMETER | 0x0914 | 表示脉搏血氧仪健康设备。 |
 | HEALTH_PULSE_RATE | 0x0918 | 表示脉搏率健康设备。 |
 | HEALTH_DATA_DISPLAY | 0x091C | 表示数据显示健康设备。 |
-| HEALTH_STEP_COUNTER | 0x0920 | 表示阶梯计数器健康设备。 |
+| HEALTH_STEP_COUNTER | 0x0920 | 表示计步器健康设备。 |
 | HEALTH_BODY_COMPOSITION_ANALYZER | 0x0924 | 表示身体成分分析仪健康设备。 |
-| HEALTH_PEAK_FLOW_MONITOR | 0x0928 | 表示湿度计健康设备。 |
+| HEALTH_PEAK_FLOW_MONITOR | 0x0928 | 表示峰值流量监控仪健康设备。 |
 | HEALTH_MEDICATION_MONITOR | 0x092C | 表示药物监视仪健康设备。 |
 | HEALTH_KNEE_PROSTHESIS | 0x0930 | 表示膝盖假肢健康设备。 |
 | HEALTH_ANKLE_PROSTHESIS | 0x0934 | 表示脚踝假肢健康设备。 |

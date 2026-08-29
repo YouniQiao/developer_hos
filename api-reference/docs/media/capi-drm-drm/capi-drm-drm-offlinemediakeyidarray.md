@@ -1,12 +1,12 @@
 ---
-title: "DRM_OfflineMediakeyIdArray"
+title: "DRM_OfflineMediaKeyIdArray"
 upstream_id: "harmonyos-references/capi-drm-drm-offlinemediakeyidarray"
 catalog: "harmonyos-references"
-content_hash: "5d19b9985236"
-synced_at: "2026-07-09T01:00:28.621350"
+content_hash: "693de5726dd6"
+synced_at: "2026-08-29T18:17:33.933370"
 ---
 
-# DRM_OfflineMediakeyIdArray
+# DRM_OfflineMediaKeyIdArray
 
 ```
 typedef struct DRM_OfflineMediakeyIdArray {...} DRM_OfflineMediakeyIdArray
@@ -28,6 +28,6 @@ typedef struct DRM_OfflineMediakeyIdArray {...} DRM_OfflineMediakeyIdArray
 
 | 名称 | 描述 |
 | --- | --- |
-| uint32_t idsCount | ID计数。 |
-| int32_t idsLen[MAX_OFFLINE_MEDIA_KEY_ID_COUNT] | ID长度集合。 |
-| uint8_t ids[MAX_OFFLINE_MEDIA_KEY_ID_COUNT][MAX_OFFLINE_MEDIA_KEY_ID_LEN] | ID数据集合。 |
+| uint32_t idsCount | 离线媒体密钥ID的数量，表示idsLen和ids数组中有效元素的个数。取值范围为[0, MAX_OFFLINE_MEDIA_KEY_ID_COUNT]。 |
+| int32_t idsLen[MAX_OFFLINE_MEDIA_KEY_ID_COUNT] | 离线媒体密钥ID长度数组，每个元素表示对应ids数组行中有效数据的字节数。数组长度由MAX_OFFLINE_MEDIA_KEY_ID_COUNT宏定义。 |
+| uint8_t ids[MAX_OFFLINE_MEDIA_KEY_ID_COUNT][MAX_OFFLINE_MEDIA_KEY_ID_LEN] | 离线媒体密钥ID数据数组，用于存储离线媒体密钥的标识符。每行存储一个密钥ID，有效长度由对应的idsLen元素指定。数组维度由MAX_OFFLINE_MEDIA_KEY_ID_COUNT和MAX_OFFLINE_MEDIA_KEY_ID_LEN宏定义。 |

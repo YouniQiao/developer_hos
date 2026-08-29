@@ -2,8 +2,8 @@
 title: "rag（检索增强生成）"
 upstream_id: "harmonyos-references/dataaugmentation-rag-api"
 catalog: "harmonyos-references"
-content_hash: "c3afe1460647"
-synced_at: "2026-07-09T00:59:02.108809"
+content_hash: "21d0b3072076"
+synced_at: "2026-08-29T18:16:11.165306"
 ---
 
 # rag（检索增强生成）
@@ -37,7 +37,7 @@ RAG（Retrieval-Augmented Generation，检索增强生成）模块提供基于�
 
 #### [h2]UML类图
 
-![](./img/zh-cn_image_0000002661613401.png)
+![](./img/zh-cn_image_0000002701640564.png)
 
 #### 导入模块
 
@@ -379,7 +379,7 @@ streamRun(question: string, config: RunConfig, callback: AsyncCallback<Stream>):
 | [1021000004](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-dataaugmentation#section1021000004-llm繁忙) | The LLM chat is busy. |
 | [1021000005](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-dataaugmentation#section1021000005-llm输出不符合约束) | The output of LLM chat does not comply with the constraints. |
 | [1021000007](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-dataaugmentation#section1021000007-rag会话繁忙) | The RAG session is busy. |
-| [1021000008](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-dataaugmentation#section1021000008-rag会话已关闭) | The RAG session is Already closed. |
+| [1021000008](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-dataaugmentation#section1021000008-rag会话已关闭) | The RAG session is already closed. |
 | [1021000009](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-dataaugmentation#section1021000009-用户已取消streamrun) | User has canceled the stream run. |
 | [1021000010](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-dataaugmentation#section1021000010-会话中发生超时) | A timeout occurred in the session. |
 | [1021000011](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-dataaugmentation#section1021000011-某些参数不满足约束条件) | Some parameter does not meet the constraints. Possible causes: 1. The length of the string parameter or the length of the numeric parameter does not comply with the constraints. 2. The string parameter contains invalid characters. |
@@ -457,7 +457,7 @@ cancel(runId: number): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [1021000000](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-dataaugmentation#section1021000000-系统资源不足或内存访问异常) | Insufficient system resources or memory access exception. |
-| [1021000008](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-dataaugmentation#section1021000008-rag会话已关闭) | The RAG session is Already closed. |
+| [1021000008](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-dataaugmentation#section1021000008-rag会话已关闭) | The RAG session is already closed. |
 
 示例：
 

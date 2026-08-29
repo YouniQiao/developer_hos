@@ -2,13 +2,13 @@
 title: "SendableResource"
 upstream_id: "harmonyos-references/js-apis-sendableresource"
 catalog: "harmonyos-references"
-content_hash: "8632e5596ac2"
-synced_at: "2026-07-09T00:59:07.124864"
+content_hash: "bb0cc1a36b58"
+synced_at: "2026-08-29T18:16:16.059234"
 ---
 
 # SendableResource
 
-本模块提供SendableResource资源相关信息，包括应用包名、应用模块名、资源类型等。
+本模块提供SendableResource资源相关信息，包括应用包名、应用模块名、资源类型等。SendableResource实现了[ISendable](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable#isendable)接口，支持跨线程传输，用于在多线程场景下访问应用资源。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 12开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -26,8 +26,8 @@ import { resourceManager } from '@kit.LocalizationKit';
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| bundleName | string | 否 | 否 | 应用的bundle名称。 |
-| moduleName | string | 否 | 否 | 应用的module名称。 |
-| id | number | 否 | 否 | 资源的id值，取值如下： - 应用资源区间：[0x01000000, 0x06FFFFFF] 和 [0x08000000, 0xFFFFFFFF] - 系统资源区间：[0x07000000, 0x07FFFFFF] |
-| params | collections.Array | 否 | 是 | 其他资源参数，包括资源名、格式化接口的替换值、复数接口的量词。 |
-| type | number | 否 | 是 | 资源的类型，取值如下： - 10001：color - 10002：float - 10003：string - 10004：plural - 10005：boolean - 10006：intarray - 10007：integer - 10008：pattern - 10009：strarray - 20000：media - 30000：rawfile - 40000：symbol |
+| bundleName | string | 否 | 否 | 应用包名。 |
+| moduleName | string | 否 | 否 | 应用模块名。 |
+| id | number | 否 | 否 | 资源ID，取值如下： - 应用资源区间：[0x01000000, 0x06FFFFFF] 和 [0x08000000, 0xFFFFFFFF]，表示应用自身的资源ID。 - 系统资源区间：[0x07000000, 0x07FFFFFF]，表示系统预置的资源ID。 |
+| params | collections.Array | 否 | 是 | 资源参数，包括：资源名（string类型）、格式化接口替换值（按占位符顺序提供string或number）、复数接口量词（number类型，表示数量）。格式化接口的替换值用于字符串格式化时的参数替换，复数接口的量词用于选择多语言环境下的复数形式。 |
+| type | number | 否 | 是 | 资源类型，取值如下： - 10001：color - 10002：float - 10003：string - 10004：plural - 10005：boolean - 10006：intarray - 10007：integer - 10008：pattern - 10009：strarray - 20000：media - 30000：rawfile - 40000：symbol |

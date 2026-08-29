@@ -2,8 +2,8 @@
 title: "访问控制错误码"
 upstream_id: "harmonyos-references/errorcode-access-token"
 catalog: "harmonyos-references"
-content_hash: "d87ce5379072"
-synced_at: "2026-07-28T16:40:47.236037"
+content_hash: "4066a1af1490"
+synced_at: "2026-08-29T18:12:11.011023"
 ---
 
 # 访问控制错误码
@@ -87,7 +87,7 @@ The number of listeners exceeds the limit.
 
 错误信息
 
-The service is abnormal.
+Service exception.
 
 错误描述
 

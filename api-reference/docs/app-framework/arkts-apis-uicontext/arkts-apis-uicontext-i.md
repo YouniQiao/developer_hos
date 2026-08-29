@@ -2,8 +2,8 @@
 title: "Interfaces (其他)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-i"
 catalog: "harmonyos-references"
-content_hash: "dca509465cd9"
-synced_at: "2026-07-28T16:41:12.727351"
+content_hash: "ea968445bb49"
+synced_at: "2026-08-29T18:12:30.257070"
 ---
 
 # Interfaces (其他)
@@ -53,6 +53,7 @@ Router和NavDestination等页面信息，若无对应的Router或NavDestination�
 | --- | --- | --- | --- | --- |
 | renderRootOverlay | boolean | 否 | 是 | 是否渲染overlay根节点，true表示渲染overlay根节点，false表示不渲染overlay根节点，默认值为true。通过将该参数设置为false，可以解决[OverlayManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-overlaymanager)显示在[PhotoPickerComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-file-photopickercomponent)上层时，PhotoPickerComponent无法选中照片的问题。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
 | enableBackPressedEvent19+ | boolean | 否 | 是 | 是否支持通过侧滑手势关闭OverlayManager下的ComponentContent，true表示可以通过侧滑关闭，false表示不可以通过侧滑关闭，默认值为false。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 |
+| onBackPress | [OnOverlayBackPressCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-t#onoverlaybackpresscallback) | 否 | 是 | 拦截Overlay侧滑返回事件的回调。 **说明：** 1. 注册该回调且**enableBackPressedEvent**设置为true时，侧滑返回事件不会自动关闭Overlay，而是调用该回调决定事件是否向下层组件传递。 2. 返回true表示拦截该事件（事件被消费，不会向下层传递）；返回false表示不拦截，事件将向下层组件透传。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
 
 #### GestureTriggerInfo20+
 

@@ -2,15 +2,15 @@
 title: "raw_file_manager.h"
 upstream_id: "harmonyos-references/capi-raw-file-manager-h"
 catalog: "harmonyos-references"
-content_hash: "996f9e182e4d"
-synced_at: "2026-07-09T00:59:07.885212"
+content_hash: "c64d5e454a0d"
+synced_at: "2026-08-29T18:16:16.819136"
 ---
 
 # raw_file_manager.h
 
 #### 概述
 
-提供资源管理rawfile相关功能，可以使用ResourceManager打开rawfile进行后续相关操作，像搜索和读取等。
+通过本模块可以创建、释放NativeResourceManager对象，以及打开rawfile文件和目录。
 
 引用文件： <rawfile/raw_file_manager.h>
 
@@ -28,18 +28,18 @@ synced_at: "2026-07-09T00:59:07.885212"
 
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
-| [NativeResourceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rawfile-nativeresourcemanager) | NativeResourceManager | 代表native侧的ResourceManager。此类封装了JavaScript resource manager的native实现，**ResourceManager**指针可以通过调用[OH_ResourceManager_InitNativeResourceManager](#oh_resourcemanager_initnativeresourcemanager)方法获取。 |
+| [NativeResourceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rawfile-nativeresourcemanager) | NativeResourceManager | 表示Native层的ResourceManager对象。NativeResourceManager对JavaScript ResourceManager的Native实现进行封装，可以通过[OH_ResourceManager_InitNativeResourceManager](#oh_resourcemanager_initnativeresourcemanager)函数获取。 |
 
 #### [h2]函数
 
 | 名称 | 描述 |
 | --- | --- |
-| [NativeResourceManager *OH_ResourceManager_InitNativeResourceManager(napi_env env, napi_value jsResMgr)](#oh_resourcemanager_initnativeresourcemanager) | 基于JavaScript侧的ResourceManager获取native侧的ResourceManager，用来完成rawfile相关功能。 |
-| [void OH_ResourceManager_ReleaseNativeResourceManager(NativeResourceManager *resMgr)](#oh_resourcemanager_releasenativeresourcemanager) | 释放native侧ResourceManager。 |
-| [RawDir *OH_ResourceManager_OpenRawDir(const NativeResourceManager *mgr, const char *dirName)](#oh_resourcemanager_openrawdir) | 打开rawfile目录，打开后可以遍历对应目录下的rawfile文件。 |
-| [RawFile *OH_ResourceManager_OpenRawFile(const NativeResourceManager *mgr, const char *fileName)](#oh_resourcemanager_openrawfile) | 打开rawfile文件，打开后可以读取它的数据。 |
-| [RawFile64 *OH_ResourceManager_OpenRawFile64(const NativeResourceManager *mgr, const char *fileName)](#oh_resourcemanager_openrawfile64) | 打开较大的rawfile文件，打开后可以读取它的数据。 |
-| [bool OH_ResourceManager_IsRawDir(const NativeResourceManager *mgr, const char *path)](#oh_resourcemanager_israwdir) | 判断路径是否是rawfile下的目录。 |
+| [NativeResourceManager *OH_ResourceManager_InitNativeResourceManager(napi_env env, napi_value jsResMgr)](#oh_resourcemanager_initnativeresourcemanager) | 初始化NativeResourceManager对象。 |
+| [void OH_ResourceManager_ReleaseNativeResourceManager(NativeResourceManager *resMgr)](#oh_resourcemanager_releasenativeresourcemanager) | 释放NativeResourceManager对象及其关联资源。 |
+| [RawDir *OH_ResourceManager_OpenRawDir(const NativeResourceManager *mgr, const char *dirName)](#oh_resourcemanager_openrawdir) | 打开rawfile目录。 |
+| [RawFile *OH_ResourceManager_OpenRawFile(const NativeResourceManager *mgr, const char *fileName)](#oh_resourcemanager_openrawfile) | 打开rawfile文件并返回RawFile对象，用于读取rawfile文件内容。 |
+| [RawFile64 *OH_ResourceManager_OpenRawFile64(const NativeResourceManager *mgr, const char *fileName)](#oh_resourcemanager_openrawfile64) | 打开rawfile文件并返回RawFile对象，用于读取rawfile文件内容。支持2GB以上的大文件。 |
+| [bool OH_ResourceManager_IsRawDir(const NativeResourceManager *mgr, const char *path)](#oh_resourcemanager_israwdir) | 判断指定路径是否为rawfile的子目录。用于在遍历目录前，判断对应路径是否为目录，或在打开文件前，判断对应路径是否为文件。 |
 
 #### 函数说明
 
@@ -50,7 +50,7 @@ NativeResourceManager *OH_ResourceManager_InitNativeResourceManager(napi_env env
 ```
  描述
 
-基于JavaScript侧的ResourceManager获取native侧的ResourceManager，用来完成rawfile相关功能。
+初始化NativeResourceManager对象。
 
 起始版本： 8
 
@@ -58,14 +58,14 @@ NativeResourceManager *OH_ResourceManager_InitNativeResourceManager(napi_env env
 
 | 参数项 | 描述 |
 | --- | --- |
-| napi_env env | 表示JavaScript Native Interface（napi）环境指针。 |
-| napi_value jsResMgr | 表示JavaScript resource manager。 |
+| napi_env env | 输入参数。指向JavaScript Native Interface（napi）环境的指针。 |
+| napi_value jsResMgr | 输入参数。表示JavaScript ResourceManager对象的引用。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| [NativeResourceManager *](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rawfile-nativeresourcemanager) | 返回[NativeResourceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rawfile-nativeresourcemanager)指针，如果失败返回空指针。 |
+| [NativeResourceManager *](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rawfile-nativeresourcemanager) | 返回NativeResourceManager对象的指针。若初始化失败，返回NULL，可能原因为参数env或jsResMgr无效。 该指针由此函数分配内存，使用完后须调用[OH_ResourceManager_ReleaseNativeResourceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-raw-file-manager-h#oh_resourcemanager_releasenativeresourcemanager)释放。 |
 
 #### [h2]OH_ResourceManager_ReleaseNativeResourceManager()
 
@@ -74,7 +74,7 @@ void OH_ResourceManager_ReleaseNativeResourceManager(NativeResourceManager *resM
 ```
  描述
 
-释放native侧ResourceManager。
+释放NativeResourceManager对象及其关联资源。
 
 起始版本： 8
 
@@ -82,7 +82,7 @@ void OH_ResourceManager_ReleaseNativeResourceManager(NativeResourceManager *resM
 
 | 参数项 | 描述 |
 | --- | --- |
-| [NativeResourceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rawfile-nativeresourcemanager) *resMgr | 表示[NativeResourceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rawfile-nativeresourcemanager)指针。 |
+| [NativeResourceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rawfile-nativeresourcemanager) *resMgr | 输入参数。指向要释放的NativeResourceManager对象的指针。释放后resMgr指针失效，不可用于其他操作。 |
 
 #### [h2]OH_ResourceManager_OpenRawDir()
 
@@ -91,7 +91,7 @@ RawDir *OH_ResourceManager_OpenRawDir(const NativeResourceManager *mgr, const ch
 ```
  描述
 
-打开rawfile目录，打开后可以遍历对应目录下的rawfile文件。
+打开rawfile目录。
 
 起始版本： 8
 
@@ -99,14 +99,14 @@ RawDir *OH_ResourceManager_OpenRawDir(const NativeResourceManager *mgr, const ch
 
 | 参数项 | 描述 |
 | --- | --- |
-| [const NativeResourceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rawfile-nativeresourcemanager) *mgr | 表示指向[NativeResourceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rawfile-nativeresourcemanager)的指针，此指针是通过调用[OH_ResourceManager_InitNativeResourceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-raw-file-manager-h#oh_resourcemanager_initnativeresourcemanager)方法获取的。 |
-| const char *dirName | 表示要打开的rawfile目录名称，当传递一个空字符串时表示打开rawfile根目录。 |
+| [const NativeResourceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rawfile-nativeresourcemanager) *mgr | 输入参数。指向NativeResourceManager对象的指针。 |
+| const char *dirName | 输入参数。待打开的目录路径。相对于rawfile根目录的路径，例如"images/icons"。当为空字符串时表示打开rawfile根目录。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| [RawDir *](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rawfile-rawdir) | 返回[RawDir](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rawfile-rawdir)指针。使用完此指针后，调用[OH_ResourceManager_CloseRawDir](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-raw-dir-h#oh_resourcemanager_closerawdir)释放。如果失败或者mgr为空时返回空指针。 |
+| [RawDir *](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rawfile-rawdir) | 返回指向RawDir对象的指针。若调用失败或mgr为空，则返回NULL。使用完后须调用[OH_ResourceManager_CloseRawDir](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-raw-dir-h#oh_resourcemanager_closerawdir)释放。 |
 
 参考：
 
@@ -121,7 +121,7 @@ RawFile *OH_ResourceManager_OpenRawFile(const NativeResourceManager *mgr, const 
 ```
  描述
 
-打开rawfile文件，打开后可以读取它的数据。
+打开rawfile文件并返回RawFile对象，用于读取rawfile文件内容。
 
 起始版本： 8
 
@@ -129,14 +129,14 @@ RawFile *OH_ResourceManager_OpenRawFile(const NativeResourceManager *mgr, const 
 
 | 参数项 | 描述 |
 | --- | --- |
-| [const NativeResourceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rawfile-nativeresourcemanager) *mgr | 表示指向[NativeResourceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rawfile-nativeresourcemanager)的指针，此指针通过调用[OH_ResourceManager_InitNativeResourceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-raw-file-manager-h#oh_resourcemanager_initnativeresourcemanager)方法获取。 |
-| const char *fileName | 表示基于rawfile根目录的相对路径下的文件名称。 |
+| [const NativeResourceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rawfile-nativeresourcemanager) *mgr | 输入参数。指向NativeResourceManager对象的指针。 |
+| const char *fileName | 输入参数。待打开的文件路径。相对于rawfile根目录的路径，例如"images/icons/1.png"。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| [RawFile *](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rawfile-rawfile) | 返回[RawFile](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rawfile-rawfile)指针。当使用完此指针，调用[OH_ResourceManager_CloseRawFile](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-raw-file-h#oh_resourcemanager_closerawfile)释放。如果失败或者mgr和fileName为空时返回空指针。 |
+| [RawFile *](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rawfile-rawfile) | 返回指向RawFile对象的指针。若调用失败或输入参数为空，则返回NULL。使用完后须调用[OH_ResourceManager_CloseRawFile](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-raw-file-h#oh_resourcemanager_closerawfile)释放。 |
 
 参考：
 
@@ -151,7 +151,7 @@ RawFile64 *OH_ResourceManager_OpenRawFile64(const NativeResourceManager *mgr, co
 ```
  描述
 
-打开较大的rawfile文件，打开后可以读取它的数据。
+打开rawfile文件并返回RawFile对象，用于读取rawfile文件内容。支持2GB以上的大文件。
 
 起始版本： 11
 
@@ -159,14 +159,14 @@ RawFile64 *OH_ResourceManager_OpenRawFile64(const NativeResourceManager *mgr, co
 
 | 参数项 | 描述 |
 | --- | --- |
-| [const NativeResourceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rawfile-nativeresourcemanager) *mgr | 表示指向[NativeResourceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rawfile-nativeresourcemanager)的指针，此指针通过调用[OH_ResourceManager_InitNativeResourceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-raw-file-manager-h#oh_resourcemanager_initnativeresourcemanager)方法获取。 |
-| const char *fileName | 表示基于rawfile根目录的相对路径下的文件名称。 |
+| [const NativeResourceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rawfile-nativeresourcemanager) *mgr | 输入参数。指向NativeResourceManager对象的指针。 |
+| const char *fileName | 输入参数。待打开的文件路径。相对于rawfile根目录的路径，例如"images/icons/1.png"。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| [RawFile64 *](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rawfile-rawfile64) | 返回[RawFile64](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rawfile-rawfile64)指针。当使用完此指针，调用[OH_ResourceManager_CloseRawFile64](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-raw-file-h#oh_resourcemanager_closerawfile64)释放。如果失败或者mgr和fileName为空时返回空指针。 |
+| [RawFile64 *](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rawfile-rawfile64) | 返回指向RawFile对象的指针。若调用失败或输入参数为空，则返回NULL。使用完后须调用[OH_ResourceManager_CloseRawFile64](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-raw-file-h#oh_resourcemanager_closerawfile64)释放。 |
 
 参考：
 
@@ -181,7 +181,7 @@ bool OH_ResourceManager_IsRawDir(const NativeResourceManager *mgr, const char *p
 ```
  描述
 
-判断路径是否是rawfile下的目录。
+判断指定路径是否为rawfile的子目录。用于在遍历目录前，判断对应路径是否为目录，或在打开文件前，判断对应路径是否为文件。
 
 起始版本： 12
 
@@ -189,8 +189,8 @@ bool OH_ResourceManager_IsRawDir(const NativeResourceManager *mgr, const char *p
 
 | 参数项 | 描述 |
 | --- | --- |
-| [const NativeResourceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rawfile-nativeresourcemanager) *mgr | 表示指向[NativeResourceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rawfile-nativeresourcemanager)的指针，此指针通过调用[OH_ResourceManager_InitNativeResourceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-raw-file-manager-h#oh_resourcemanager_initnativeresourcemanager)方法获取。 |
-| const char *path | rawfile路径。 |
+| [const NativeResourceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rawfile-nativeresourcemanager) *mgr | 输入参数。指向NativeResourceManager对象的指针。 |
+| const char *path | 待判断的路径。相对于rawfile根目录的路径，如"images/icons"。 |
 
 返回：
 

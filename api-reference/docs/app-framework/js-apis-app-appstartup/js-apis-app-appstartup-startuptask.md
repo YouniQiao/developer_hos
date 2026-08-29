@@ -2,8 +2,8 @@
 title: "@ohos.app.appstartup.StartupTask (启动框架任务)"
 upstream_id: "harmonyos-references/js-apis-app-appstartup-startuptask"
 catalog: "harmonyos-references"
-content_hash: "861d3721274f"
-synced_at: "2026-07-09T00:57:05.639917"
+content_hash: "d3f58b599d08"
+synced_at: "2026-08-29T18:11:58.821792"
 ---
 
 # @ohos.app.appstartup.StartupTask (启动框架任务)
@@ -30,7 +30,9 @@ import { StartupTask } from '@kit.AbilityKit';
 
 onDependencyCompleted?(dependency: string, result: Object): void
 
-当依赖的启动任务执行完成时该方法将会被调用。
+当依赖的启动任务执行完成时回调该方法，开发者可在该方法中处理依赖任务的执行结果。
+
+![](./img/note_3.0-zh-cn.png) 每当一个依赖任务完成时触发一次。该方法在[init](#init)方法之前被调用，可用于处理单个依赖任务的执行结果。init方法则在所有依赖任务都完成后被调用一次。
 
 系统能力：SystemCapability.Ability.AppStartup
 
@@ -100,7 +102,7 @@ export default class StartupTask_001 extends StartupTask {
     hilog.info(0x0000, 'testTag', 'StartupTask_001 init.');
     // ...
     
-    return "StartupTask_001";
+    return 'StartupTask_001';
   }
 
   onDependencyCompleted(dependency: string, result: Object): void {

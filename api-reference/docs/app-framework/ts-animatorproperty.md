@@ -2,8 +2,8 @@
 title: "属性动画 (animation)"
 upstream_id: "harmonyos-references/ts-animatorproperty"
 catalog: "harmonyos-references"
-content_hash: "4baebcc2361f"
-synced_at: "2026-07-28T16:47:04.328634"
+content_hash: "7d4b88ea0beb"
+synced_at: "2026-08-29T18:14:39.700579"
 ---
 
 # 属性动画 (animation)
@@ -16,12 +16,13 @@ synced_at: "2026-07-28T16:47:04.328634"
 
 animation(value:AnimateParam): T
 
-设置组件的属性动画。
+设置组件的属性动画，当组件的通用属性发生变化时，按照AnimateParam参数配置对属性变化过程进行渐变过渡。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 在单一页面上存在大量应用动效的组件时，可以使用[renderGroup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#rendergroup10)方法来解决卡顿问题，从而提升动画性能。最佳实践请参考[动画使用指导-使用renderGroup](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-fair-use-animation#section1223162922415)。
-- 该接口不支持在[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)中调用。
+- 在单一页面上同时存在数十个及以上应用动效的组件时，可以使用[renderGroup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#rendergroup10)方法来解决卡顿问题，从而提升动画性能。最佳实践请参考[动画使用指导-使用renderGroup](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-fair-use-animation#section1223162922415)。
+- 该接口不支持在[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)中调用，在attributeModifier中调用animation不会产生动画效果。如需在attributeModifier中实现属性变化动画，请使用[显式动画](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-explicit-animation)（animateTo）替代。
+- 仅对部分通用属性生效（包括width、height、backgroundColor、opacity、scale、rotate、translate等）。对于改变布局类属性（如宽高）的动画，组件内容（如文字或Canvas中的内容）通常会直接跳转到最终状态。如果希望内容跟随宽高变化平滑过渡，可以配合使用[renderFit](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-renderfit#renderfit)属性进行配置，建议将renderFit设置为RenderFit.CENTER或RenderFit.TOP_LEFT等值，使内容在动画过程中随组件尺寸同步变化。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -39,9 +40,9 @@ animation(value:AnimateParam): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
-属性动画只对写在animation前面的属性生效，且对组件构造器的属性不生效。
+属性动画只对写在animation前面的属性生效，产生渐变过渡效果；写在animation之后的属性变化不会有渐变动画效果，而是直接跳变到目标值。组件构造器的属性（如Column构造器的space参数、List构造器的initialIndex参数等在组件构造时传入的参数）不支持动画效果，仅对通过属性方法（如.width()、.height()、.backgroundColor()等）设置的属性生效。
 
 ```
 @Entry
@@ -145,4 +146,4 @@ struct AttrAnimationExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848906.gif)
+ ![](./img/zh-cn_image_0000002731519241.gif)

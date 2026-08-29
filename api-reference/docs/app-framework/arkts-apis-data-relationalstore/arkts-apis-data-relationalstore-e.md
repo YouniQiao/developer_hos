@@ -2,8 +2,8 @@
 title: "Enums"
 upstream_id: "harmonyos-references/arkts-apis-data-relationalstore-e"
 catalog: "harmonyos-references"
-content_hash: "0ede8f293600"
-synced_at: "2026-07-09T00:57:16.894855"
+content_hash: "4cdaf5b53119"
+synced_at: "2026-08-29T18:12:13.084179"
 ---
 
 # Enums
@@ -244,8 +244,8 @@ export default class EntryAbility extends UIAbility {
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
 | SUBSCRIBE_TYPE_REMOTE | 0 | 订阅远程数据更改。 **系统能力：** SystemCapability.DistributedDataManager.RelationalStore.Core |
-| SUBSCRIBE_TYPE_CLOUD10+ | 1 | 订阅云端数据更改。 **系统能力：** SystemCapability.DistributedDataManager.CloudSync.Client |
-| SUBSCRIBE_TYPE_CLOUD_DETAILS10+ | 2 | 订阅云端数据更改详情。 **系统能力：** SystemCapability.DistributedDataManager.CloudSync.Client |
+| SUBSCRIBE_TYPE_CLOUD10+ | 1 | 订阅云端数据更改。 **需要权限：** - API版本12+：N/A - API版本10-11：ohos.permission.DISTRIBUTED_DATASYNC **系统能力：** SystemCapability.DistributedDataManager.CloudSync.Client |
+| SUBSCRIBE_TYPE_CLOUD_DETAILS10+ | 2 | 订阅云端数据更改详情。 **需要权限：** - API版本12+：N/A - API版本10-11：ohos.permission.DISTRIBUTED_DATASYNC **系统能力：** SystemCapability.DistributedDataManager.CloudSync.Client |
 | SUBSCRIBE_TYPE_LOCAL_DETAILS12+ | 3 | 订阅本地数据更改详情。 **系统能力：** SystemCapability.DistributedDataManager.RelationalStore.Core |
 
 #### RebuildType12+
@@ -268,8 +268,8 @@ export default class EntryAbility extends UIAbility {
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| DATA_CHANGE | 0 | 表示是数据发生变更。 |
-| ASSET_CHANGE | 1 | 表示是资产附件发生了变更。 |
+| DATA_CHANGE | 0 | 表示是数据发生变更。 **需要权限：** - API版本12+：N/A - API版本10-11：ohos.permission.DISTRIBUTED_DATASYNC |
+| ASSET_CHANGE | 1 | 表示是资产附件发生了变更。 **需要权限：** - API版本12+：N/A - API版本10-11：ohos.permission.DISTRIBUTED_DATASYNC |
 
 #### DistributedType10+
 
@@ -278,7 +278,7 @@ export default class EntryAbility extends UIAbility {
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
 | DISTRIBUTED_DEVICE | 0 | 表示在不同设备之间分布式的数据库表。 **系统能力：** SystemCapability.DistributedDataManager.RelationalStore.Core |
-| DISTRIBUTED_CLOUD | 1 | 表示在设备和云端之间分布式的数据库表。 **系统能力：** SystemCapability.DistributedDataManager.CloudSync.Client |
+| DISTRIBUTED_CLOUD | 1 | 表示在设备和云端之间分布式的数据库表。 **需要权限：** - API版本12+：N/A - API版本10-11：ohos.permission.DISTRIBUTED_DATASYNC **系统能力：** SystemCapability.DistributedDataManager.CloudSync.Client |
 
 #### ConflictResolution10+
 

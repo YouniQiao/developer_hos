@@ -2,8 +2,8 @@
 title: "Class (RdbPredicates)"
 upstream_id: "harmonyos-references/arkts-apis-data-relationalstore-rdbpredicates"
 catalog: "harmonyos-references"
-content_hash: "cae936bcf374"
-synced_at: "2026-07-09T00:57:16.965273"
+content_hash: "bdb724c8ab39"
+synced_at: "2026-08-29T18:12:12.999137"
 ---
 
 # Class (RdbPredicates)
@@ -254,7 +254,7 @@ predicates.equalTo("NAME", "Lisa")
 
 or(): RdbPredicates
 
-将或条件添加到谓词中。
+将OR条件添加到谓词中。
 
 系统能力： SystemCapability.DistributedDataManager.RelationalStore.Core
 
@@ -262,7 +262,7 @@ or(): RdbPredicates
 
 | 类型 | 说明 |
 | --- | --- |
-| [RdbPredicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-data-relationalstore-rdbpredicates) | 返回带有或条件的Rdb谓词。 |
+| [RdbPredicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-data-relationalstore-rdbpredicates) | 返回带有OR条件的Rdb谓词。 |
 
 示例：
 
@@ -278,7 +278,7 @@ predicates.equalTo("NAME", "Lisa")
 
 and(): RdbPredicates
 
-向谓词添加和条件。
+向谓词添加AND条件。
 
 系统能力： SystemCapability.DistributedDataManager.RelationalStore.Core
 
@@ -286,7 +286,7 @@ and(): RdbPredicates
 
 | 类型 | 说明 |
 | --- | --- |
-| [RdbPredicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-data-relationalstore-rdbpredicates) | 返回带有和条件的Rdb谓词。 |
+| [RdbPredicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-data-relationalstore-rdbpredicates) | 返回带有AND条件的Rdb谓词。 |
 
 示例：
 

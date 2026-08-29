@@ -2,8 +2,8 @@
 title: "Media错误码"
 upstream_id: "harmonyos-references/errorcode-media"
 catalog: "harmonyos-references"
-content_hash: "868bc2fda983"
-synced_at: "2026-08-07T15:59:03.926933"
+content_hash: "b13708ed5a9a"
+synced_at: "2026-08-29T18:17:46.026214"
 ---
 
 # Media错误码
@@ -37,6 +37,10 @@ Operation not allowed.
 
 错误描述
 
+当前操作不允许。
+
+可能原因
+
 1. 当前状态不支持此操作。
 2. 此应用录屏当前实例数量超过2个或此设备创建录屏实例数超过16个。
 
@@ -45,9 +49,30 @@ Operation not allowed.
 1. 先确认当前状态是否支持此操作，再把实例切换到正确状态进行正确操作。
 2. 释放所有已经创建的实例。
 
+以下为SoundPool业务返回错误码5400102时的常见问题案例。
+
+#### [h2]触发场景1：调用load加载音频失败-传入无效的资源
+
+调用[load](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-multimedia-soundpool#load)返回错误码5400102时，根据系统日志按照以下场景进行排查。
+
+判断依据
+
+应用进程日志出现如下报错信息：
+
+```
+Failed to load sound, the resource path is invalid, please check input parameters
+```
+ 以上报错信息，从API版本23开始支持。
+
+可能原因
+
+资源不存在或提供的路径有误。
+
 处理步骤
 
-确认当前状态是否支持当前操作，把实例切换到正确的状态进行正确的操作。
+确认所需音频资源存在，且路径拼写正确无误。
+
+以下为AVPlayer业务返回错误码5400102时的常见问题案例。
 
 #### [h2]触发场景1：更换资源播放失败
 

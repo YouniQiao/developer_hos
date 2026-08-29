@@ -2,8 +2,8 @@
 title: "企业设备管理错误码"
 upstream_id: "harmonyos-references/errorcode-enterprisedevicemanager"
 catalog: "harmonyos-references"
-content_hash: "a2eb8c10d88f"
-synced_at: "2026-07-28T16:51:11.428543"
+content_hash: "3afa818fe105"
+synced_at: "2026-08-29T18:17:08.130826"
 ---
 
 # 企业设备管理错误码
@@ -308,11 +308,9 @@ The self-activation credential of the enterprise device administrator is invalid
 
 可能原因
 
-1、企业ID不匹配。
-
-2、应用appIdentifier配置失败。
-
-3、激活凭证缺少必需字段或者证书链校验失败。
+1. 企业ID不匹配。
+2. 应用appIdentifier配置失败。
+3. 激活凭证缺少必需字段或者证书链校验失败。
 
 处理步骤
 
@@ -755,7 +753,7 @@ The location is inoperable.
 
 错误信息
 
-set default data sim failed.
+Failed to set the default data SIM card. The airplane mode is enabled or no SIM card is inserted.
 
 错误描述
 
@@ -1185,6 +1183,24 @@ Restricted account.
 
 确认系统账号的类型是否支持此类操作。
 
+#### 9201042 切换开关状态失败
+
+错误信息
+
+Failed to toggle the switch state.
+
+错误描述
+
+当切换开关状态失败时，会产生此错误码。
+
+可能原因
+
+当前设备蓝牙、Wi-Fi、NFC或星闪等相关服务处于异常状态。
+
+处理步骤
+
+确认设备相关服务是否正常运行。
+
 #### 9201043 API调用的前置条件未满足
 
 错误信息
@@ -1193,7 +1209,7 @@ Prerequisites for the API call have not been satisfied. For example, distributed
 
 错误描述
 
-当API调用的前置条件未满足时，会产生此错误码。
+在未禁用设备间单向传输能力的情况下添加允许分布式双向协同应用名单时，会产生此错误码。
 
 可能原因
 
@@ -1229,7 +1245,7 @@ This permission cannot be disallowed.
 
 错误描述
 
-需要禁用指定权限时，会产生此错误码。
+禁用APL等级不为normal或system_basic的权限时，会产生此错误码。
 
 可能原因
 
@@ -1247,7 +1263,7 @@ The number of signed-in accounts reaches the upper limit.
 
 错误描述
 
-当前设备上已登录的系统账号数量达到最大上限。
+当前设备上已登录的系统账号数量达到上限。
 
 可能原因
 

@@ -2,8 +2,8 @@
 title: "SelectionMenu"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-selectionmenu"
 catalog: "harmonyos-references"
-content_hash: "7ed18165843a"
-synced_at: "2026-07-28T16:48:26.276101"
+content_hash: "2f4695d76d49"
+synced_at: "2026-08-29T18:15:15.319420"
 ---
 
 # SelectionMenu
@@ -453,7 +453,7 @@ struct Index {
 
 示例图为鼠标操作触发的自定义菜单弹出效果。
 
-![](./img/zh-cn_image_0000002685928631.gif)
+![](./img/zh-cn_image_0000002701800082.gif)
 
 #### [h2]示例2（设置Symbol类型图标）
 
@@ -482,6 +482,7 @@ struct Index {
   private editorMenuOptions: Array<EditorMenuOptions> =
     [
       {
+        // $r('sys.media.wifi_router_fill')需要替换为开发者所需的图像资源文件。
         icon: $r('sys.media.wifi_router_fill'),
         symbolStyle: new SymbolGlyphModifier($r('sys.symbol.save')),
         action: () => {
@@ -512,6 +513,7 @@ struct Index {
         }
       },
       {
+        // $r('sys.media.save_button_picture')需要替换为开发者所需的图像资源文件。
         icon: $r('sys.media.save_button_picture'),
         symbolStyle: new SymbolGlyphModifier($r('sys.symbol.camera')),
         action: () => {
@@ -542,6 +544,7 @@ struct Index {
         }
       },
       {
+        // $r('sys.media.waveform_folder_fill')需要替换为开发者所需的图像资源文件。
         icon: $r('sys.media.waveform_folder_fill'),
         symbolStyle: new SymbolGlyphModifier($r('sys.symbol.car')),
         action: () => {
@@ -581,6 +584,7 @@ struct Index {
       }, builder: (): void => this.sliderPanel()
       },
       {
+        // $r('sys.media.thermometer_fill')需要替换为开发者所需的图像资源文件。
         icon: $r('sys.media.thermometer_fill'), action: () => {
         if (this.controller) {
           let selection = this.controller.getSelection();
@@ -785,7 +789,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008952.jpg)
+ ![](./img/zh-cn_image_0000002731519369.jpg)
 
 #### [h2]示例3（设置背景板材质）
 
@@ -898,4 +902,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655849032.jpg)
+ ![](./img/zh-cn_image_0000002701640170.jpg)

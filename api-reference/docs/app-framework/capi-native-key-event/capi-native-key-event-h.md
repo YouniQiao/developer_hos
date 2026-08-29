@@ -2,15 +2,15 @@
 title: "native_key_event.h"
 upstream_id: "harmonyos-references/capi-native-key-event-h"
 catalog: "harmonyos-references"
-content_hash: "7741af02fea6"
-synced_at: "2026-07-28T16:49:19.974109"
+content_hash: "3393035af1ca"
+synced_at: "2026-08-29T18:15:37.988166"
 ---
 
 # native_key_event.h
 
 #### 概述
 
-提供NativeKeyEvent相关接口定义，用于获取按键事件的类型、键码、键值、输入设备类型、按键对应的意图和Unicode码值。支持控制按键事件冒泡或消费、分发按键事件，以及查询NumLock、CapsLock、ScrollLock状态，适用于原生侧需要精细化处理按键输入事件的场景，使开发者能够获取按键事件详细信息并灵活控制事件传播与消费行为。
+提供NativeKeyEvent相关接口定义，用于获取按键事件的类型、键码、键值、输入设备类型、按键意图和Unicode码值，支持控制按键事件冒泡或消费、分发按键事件，以及查询NumLock、CapsLock、ScrollLock状态，适用于原生侧处理按键输入事件的场景。
 
 引用文件： <arkui/native_key_event.h>
 
@@ -43,11 +43,11 @@ synced_at: "2026-07-28T16:49:19.974109"
 | [int32_t OH_ArkUI_KeyEvent_GetKeyCode(const ArkUI_UIInputEvent* event)](#oh_arkui_keyevent_getkeycode) | 获取按键的键码。 |
 | [const char *OH_ArkUI_KeyEvent_GetKeyText(const ArkUI_UIInputEvent* event)](#oh_arkui_keyevent_getkeytext) | 获取按键的键值。 |
 | [ArkUI_KeySourceType OH_ArkUI_KeyEvent_GetKeySource(const ArkUI_UIInputEvent* event)](#oh_arkui_keyevent_getkeysource) | 获取当前按键的输入设备类型。 |
-| [void OH_ArkUI_KeyEvent_StopPropagation(const ArkUI_UIInputEvent* event, bool stopPropagation)](#oh_arkui_keyevent_stoppropagation) | 在按键事件回调中，阻止事件冒泡传递，适用于嵌套组件结构中子组件已处理按键事件且不希望父组件再次响应同一按键的场景，如自定义快捷键处理时阻止事件向上冒泡。与OH_ArkUI_KeyEvent_SetConsumed不同，该接口控制事件的冒泡传递，而OH_ArkUI_KeyEvent_SetConsumed设置事件是否被回调消费，两者可同时使用且互不影响。建议根据是否需要阻止冒泡或标记消费选择对应接口。 |
+| [void OH_ArkUI_KeyEvent_StopPropagation(const ArkUI_UIInputEvent* event, bool stopPropagation)](#oh_arkui_keyevent_stoppropagation) | 阻止事件冒泡传递。与OH_ArkUI_KeyEvent_SetConsumed不同，该接口用于控制事件是否继续冒泡传递；OH_ArkUI_KeyEvent_SetConsumed用于设置事件是否被当前回调消费，建议根据是否需要阻止冒泡或标记消费选择对应接口。 |
 | [ArkUI_KeyIntension OH_ArkUI_KeyEvent_GetKeyIntensionCode(const ArkUI_UIInputEvent* event)](#oh_arkui_keyevent_getkeyintensioncode) | 获取按键对应的意图。 |
-| [uint32_t OH_ArkUI_KeyEvent_GetUnicode(const ArkUI_UIInputEvent* event)](#oh_arkui_keyevent_getunicode) | 获取按键的Unicode码值。支持范围为非空格的基本拉丁字符：0x0021-0x007E，不在支持范围内的字符，返回值为0。组合键场景下，返回当前按键事件对应按键的Unicode码值。 |
-| [void OH_ArkUI_KeyEvent_SetConsumed(const ArkUI_UIInputEvent* event, bool isConsumed)](#oh_arkui_keyevent_setconsumed) | 在按键事件回调中，设置事件是否被该回调消费，适用于快捷键处理、组件自定义按键响应等需要标记事件已处理并避免重复处理的场景。与OH_ArkUI_KeyEvent_StopPropagation不同，本接口用于标记事件是否被当前回调消费，而非控制事件冒泡传递；若需阻止事件向上冒泡，请使用OH_ArkUI_KeyEvent_StopPropagation。 |
-| [void OH_ArkUI_KeyEvent_Dispatch(ArkUI_NodeHandle node, const ArkUI_UIInputEvent* event)](#oh_arkui_keyevent_dispatch) | 将按键事件分发到指定组件节点。调用该接口后，按键事件将触发目标节点注册的按键事件回调。该接口可在按键事件回调中使用，用于将当前按键事件转发到指定组件节点进行二次处理；与StopPropagation和SetConsumed不同，Dispatch不影响当前事件的处理状态。 |
+| [uint32_t OH_ArkUI_KeyEvent_GetUnicode(const ArkUI_UIInputEvent* event)](#oh_arkui_keyevent_getunicode) | 获取按键的Unicode码值。支持范围为非空格的基本拉丁字符：0x0021-0x007E，不支持字符为0。组合键场景下，返回当前按键事件对应按键的Unicode码值。 |
+| [void OH_ArkUI_KeyEvent_SetConsumed(const ArkUI_UIInputEvent* event, bool isConsumed)](#oh_arkui_keyevent_setconsumed) | 在按键事件回调中，设置事件是否被该回调消费。 |
+| [void OH_ArkUI_KeyEvent_Dispatch(ArkUI_NodeHandle node, const ArkUI_UIInputEvent* event)](#oh_arkui_keyevent_dispatch) | 将按键事件分发到特定组件节点。 |
 | [ArkUI_ErrorCode OH_ArkUI_KeyEvent_IsNumLockOn(const ArkUI_UIInputEvent* event, bool* state)](#oh_arkui_keyevent_isnumlockon) | 获取按键事件发生时NumLock的状态。 |
 | [ArkUI_ErrorCode OH_ArkUI_KeyEvent_IsCapsLockOn(const ArkUI_UIInputEvent* event, bool* state)](#oh_arkui_keyevent_iscapslockon) | 获取按键事件发生时CapsLock的状态。 |
 | [ArkUI_ErrorCode OH_ArkUI_KeyEvent_IsScrollLockOn(const ArkUI_UIInputEvent* event, bool* state)](#oh_arkui_keyevent_isscrolllockon) | 获取按键事件发生时ScrollLock的状态。 |
@@ -307,7 +307,7 @@ ArkUI_KeyEventType OH_ArkUI_KeyEvent_GetType(const ArkUI_UIInputEvent* event)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [const ArkUI_UIInputEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-eventmodule-arkui-uiinputevent)* event | 按键输入事件指针，用于获取该事件对应的按键事件类型。 |
+| [const ArkUI_UIInputEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-eventmodule-arkui-uiinputevent)* event | 输入事件指针，用于获取该事件对应的按键事件类型。 |
 
 返回：
 
@@ -336,7 +336,7 @@ int32_t OH_ArkUI_KeyEvent_GetKeyCode(const ArkUI_UIInputEvent* event)
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 按键的键码标识，对应ArkUI_KeyCode枚举中定义的键码值。 |
+| int32_t | 按键的键码。 |
 
 #### [h2]OH_ArkUI_KeyEvent_GetKeyText()
 
@@ -359,7 +359,7 @@ const char *OH_ArkUI_KeyEvent_GetKeyText(const ArkUI_UIInputEvent* event)
 
 | 类型 | 说明 |
 | --- | --- |
-| const char * | 按键对应的文本字符内容，即按键产生的键值字符串。 |
+| const char * | 按键的键值。 |
 
 #### [h2]OH_ArkUI_KeyEvent_GetKeySource()
 
@@ -391,7 +391,7 @@ void OH_ArkUI_KeyEvent_StopPropagation(const ArkUI_UIInputEvent* event, bool sto
 ```
  描述：
 
-在按键事件回调中，阻止事件冒泡传递，适用于嵌套组件结构中子组件已处理按键事件且不希望父组件再次响应同一按键的场景，如自定义快捷键处理时阻止事件向上冒泡。与OH_ArkUI_KeyEvent_SetConsumed不同，该接口控制事件的冒泡传递，而OH_ArkUI_KeyEvent_SetConsumed设置事件是否被回调消费，两者可同时使用且互不影响。建议根据是否需要阻止冒泡或标记消费选择对应接口。
+阻止事件冒泡传递。与OH_ArkUI_KeyEvent_SetConsumed不同，该接口用于控制事件是否继续冒泡传递；OH_ArkUI_KeyEvent_SetConsumed用于设置事件是否被当前回调消费，建议根据是否需要阻止冒泡或标记消费选择对应接口。
 
 起始版本： 14
 
@@ -432,7 +432,7 @@ uint32_t OH_ArkUI_KeyEvent_GetUnicode(const ArkUI_UIInputEvent* event)
 ```
  描述：
 
-获取按键的Unicode码值。支持范围为非空格的基本拉丁字符：0x0021-0x007E，不在支持范围内的字符，返回值为0。组合键场景下，返回当前按键事件对应按键的Unicode码值。
+获取按键的Unicode码值。支持范围为非空格的基本拉丁字符：0x0021-0x007E，不支持字符为0。组合键场景下，返回当前按键事件对应按键的Unicode码值。
 
 起始版本： 14
 
@@ -455,9 +455,7 @@ void OH_ArkUI_KeyEvent_SetConsumed(const ArkUI_UIInputEvent* event, bool isConsu
 ```
  描述：
 
-在按键事件回调中，设置事件是否被该回调消费，适用于快捷键处理、组件自定义按键响应等需要标记事件已处理并避免重复处理的场景。与OH_ArkUI_KeyEvent_StopPropagation不同，本接口用于标记事件是否被当前回调消费，而非控制事件冒泡传递；若需阻止事件向上冒泡，请使用OH_ArkUI_KeyEvent_StopPropagation。
-
-按键事件触发的流程和具体时机参考[按键事件数据流](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-development-guide-keyboard#按键事件数据流)。
+在按键事件回调中，设置事件是否被该回调消费，适用于快捷键处理、组件自定义按键响应等需要标记事件已处理并避免重复处理的场景。
 
 起始版本： 14
 
@@ -475,7 +473,7 @@ void OH_ArkUI_KeyEvent_Dispatch(ArkUI_NodeHandle node, const ArkUI_UIInputEvent*
 ```
  描述：
 
-将按键事件分发到指定组件节点。调用该接口后，按键事件将触发目标节点注册的按键事件回调。该接口可在按键事件回调中使用，用于将当前按键事件转发到指定组件节点进行二次处理；与StopPropagation和SetConsumed不同，Dispatch不影响当前事件的处理状态。
+将按键事件分发到特定组件节点。
 
 起始版本： 15
 
@@ -483,7 +481,7 @@ void OH_ArkUI_KeyEvent_Dispatch(ArkUI_NodeHandle node, const ArkUI_UIInputEvent*
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkUI_NodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-node8h) node | 目标组件节点，用于接收分发的按键事件。取值原则：必须传入有效的非空ArkUI_NodeHandle节点句柄。 |
+| [ArkUI_NodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-node8h) node | 目标组件节点，用于接收分发的按键事件。 |
 | [const ArkUI_UIInputEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-eventmodule-arkui-uiinputevent)* event | 输入事件指针，表示需要分发到目标组件节点的按键事件。 |
 
 #### [h2]OH_ArkUI_KeyEvent_IsNumLockOn()
@@ -501,7 +499,7 @@ ArkUI_ErrorCode OH_ArkUI_KeyEvent_IsNumLockOn(const ArkUI_UIInputEvent* event, b
 
 | 参数项 | 描述 |
 | --- | --- |
-| [const ArkUI_UIInputEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-eventmodule-arkui-uiinputevent)* event | 按键输入事件指针，用于获取按键事件发生时NumLock的状态。取值原则：必须为按键类型的UIInputEvent事件。 |
+| [const ArkUI_UIInputEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-eventmodule-arkui-uiinputevent)* event | 输入事件指针。 |
 | bool* state | 输出参数，返回NumLock的状态。true表示处于激活状态，false表示处于未激活状态。 |
 
 返回：
@@ -525,7 +523,7 @@ ArkUI_ErrorCode OH_ArkUI_KeyEvent_IsCapsLockOn(const ArkUI_UIInputEvent* event, 
 
 | 参数项 | 描述 |
 | --- | --- |
-| [const ArkUI_UIInputEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-eventmodule-arkui-uiinputevent)* event | 按键输入事件指针，用于获取按键事件发生时CapsLock的状态。 |
+| [const ArkUI_UIInputEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-eventmodule-arkui-uiinputevent)* event | 输入事件指针，用于获取按键事件发生时CapsLock的状态。 |
 | bool* state | 输出参数，返回CapsLock的状态。true表示处于激活状态，false表示处于未激活状态。 |
 
 返回：
@@ -549,7 +547,7 @@ ArkUI_ErrorCode OH_ArkUI_KeyEvent_IsScrollLockOn(const ArkUI_UIInputEvent* event
 
 | 参数项 | 描述 |
 | --- | --- |
-| [const ArkUI_UIInputEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-eventmodule-arkui-uiinputevent)* event | 按键输入事件指针，用于获取按键事件发生时ScrollLock的状态。 |
+| [const ArkUI_UIInputEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-eventmodule-arkui-uiinputevent)* event | ArkUI_UIInputEvent事件指针。 |
 | bool* state | 输出参数，返回ScrollLock的状态。true表示处于激活状态，false表示处于未激活状态。 |
 
 返回：

@@ -2,8 +2,8 @@
 title: "ComposeListItem"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-composelistitem"
 catalog: "harmonyos-references"
-content_hash: "185aaa57ef42"
-synced_at: "2026-07-09T00:58:14.703414"
+content_hash: "94c1c0b79e98"
+synced_at: "2026-08-29T18:15:06.781300"
 ---
 
 # ComposeListItem
@@ -40,8 +40,8 @@ ComposeListItem({contentItem?: ContentItem, operateItem?: OperateItem})
 
 | 名称 | 类型 | 必填 | 装饰器类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| contentItem | [ContentItem](#contentitem) | 否 | @Prop | 定义左侧以及中间元素。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| operateItem | [OperateItem](#operateitem) | 否 | @Prop | 定义右侧元素。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| contentItem | [ContentItem](#contentitem) | 否 | @Prop | 定义左侧以及中间元素。 默认不设置或设置为undefined时，左侧和中间元素不显示。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| operateItem | [OperateItem](#operateitem) | 否 | @Prop | 定义右侧元素。 默认不设置或设置为undefined时，右侧元素不显示。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 
 #### ContentItem
 
@@ -53,9 +53,9 @@ ComposeListItem({contentItem?: ContentItem, operateItem?: OperateItem})
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| iconStyle | [IconType](#icontype) | 否 | 是 | 左侧元素的图标样式。 默认不设置或设置为undefined，icon图标资源不显示。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| icon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 左侧元素的图标资源。 默认不设置或设置为undefined，icon图标资源不显示。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| symbolStyle18+ | [SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier#symbolglyphmodifier) | 否 | 是 | 左侧元素的Symbol图标资源，优先级大于icon，同时设置了icon和Symbol图标，只显示Symbol图标。 默认不设置或设置为undefined，Symbol图标不显示。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| iconStyle | [IconType](#icontype) | 否 | 是 | 左侧元素的图标样式。需同时设置icon或symbolStyle才显示图标。 默认不设置或设置为undefined，icon图标资源不显示。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| icon | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 左侧元素的图标资源。需同时设置iconStyle才显示图标；与symbolStyle同时设置时，优先显示Symbol图标。 默认不设置或设置为undefined，icon图标资源不显示。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| symbolStyle18+ | [SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier#symbolglyphmodifier) | 否 | 是 | 左侧元素的Symbol图标样式。需同时设置iconStyle才显示图标；与icon同时设置时，优先显示Symbol图标。 默认不设置或设置为undefined，Symbol图标不显示。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | primaryText | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 中间元素的标题内容。 默认不设置或设置为undefined，标题内容不显示。 **文字处理规则：** 文本超长后无限换行显示。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | secondaryText | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 中间元素的副标题内容。 默认不设置或设置为undefined，副标题内容不显示。 **文字处理规则：** 文本超长后无限换行显示。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | description | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 中间元素的描述内容。 默认不设置或设置为undefined，描述内容不显示。 **文字处理规则：** 文本超长后无限换行显示。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
@@ -85,6 +85,8 @@ ComposeListItem({contentItem?: ContentItem, operateItem?: OperateItem})
 
 列表右侧显示的元素类型。
 
+同时配置多个属性时，按button、symbolStyle、image、icon与text组合、arrow、text、radio、checkbox、switch、icon的优先级选择右侧显示内容。icon可与text或subIcon组合，arrow可与text组合；其他情况下仅显示优先级最高的内容。
+
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 设备行为差异： 该接口在Wearable设备上使用时，应用程序运行异常，异常信息中提示接口未定义，在其他设备中可正常调用。
@@ -99,7 +101,7 @@ ComposeListItem({contentItem?: ContentItem, operateItem?: OperateItem})
 | checkbox | [OperateCheck](#operatecheck) | 否 | 是 | 右侧元素为多选框，大小为24*24vp。 默认不设置或设置为undefined，右侧多选框不显示。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | radio | [OperateCheck](#operatecheck) | 否 | 是 | 右侧元素为单选框，大小为24*24vp。 默认不设置或设置为undefined，右侧单选框不显示。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | image | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 右侧元素为图片，大小为48*48vp。 默认不设置或设置为undefined，右侧图片不显示。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| symbolStyle18+ | [SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier#symbolglyphmodifier) | 否 | 是 | 右侧元素为Symbol图标资源，大小为48*48vp。 默认不设置或设置为undefined，右侧Symbol图标不显示。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| symbolStyle18+ | [SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier#symbolglyphmodifier) | 否 | 是 | 右侧元素为Symbol图标资源，大小为48*48vp，优先级大于image，同时设置时只显示Symbol图标。 默认不设置或设置为undefined，右侧Symbol图标不显示。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | text | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 右侧元素为文字。 默认不设置或设置为undefined，右侧文字不显示。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 
 #### OperateIcon
@@ -112,12 +114,12 @@ ComposeListItem({contentItem?: ContentItem, operateItem?: OperateItem})
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| value | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 否 | 右侧图标/箭头资源。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| value | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 否 | 右侧图标/箭头资源，与symbolStyle同时设置时，优先显示Symbol图标。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | symbolStyle18+ | [SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier#symbolglyphmodifier) | 否 | 是 | 右侧Symbol图标/箭头资源，优先级大于value。 默认不设置或设置为undefined，Symbol图标不显示。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | action | ()=>void | 否 | 是 | 右侧图标/箭头点击事件。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | accessibilityText18+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 右侧图标/箭头的无障碍文本属性。当组件不包含文本属性时，屏幕朗读选中此组件时不播报，使用者无法清楚地知道当前选中了什么组件。为了解决此场景，开发人员可为不包含文字信息的组件设置无障碍文本，当屏幕朗读选中此组件时播报无障碍文本的内容，帮助屏幕朗读的使用者清楚地知道自己选中了什么组件。 默认值："" **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| accessibilityDescription18+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 右侧图标/箭头的无障碍描述。此描述用于向用户详细解释当前组件，开发人员应为组件的这一属性提供较为详尽的文本说明，以协助用户理解即将执行的操作及其可能产生的后果。特别是当这些后果无法仅从组件的属性和无障碍文本中直接获知时。如果组件同时具备文本属性和无障碍说明属性，当组件被选中时，系统将首先播报组件的文本属性，随后播报无障碍说明属性的内容。 默认值为“单指双击即可执行”。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| accessibilityLevel18+ | string | 否 | 是 | 右侧图标/箭头的无障碍重要性。用于控制当前项是否可被无障碍辅助服务所识别。 支持的值为： "auto"：当前组件会转换"no"。 "yes"：当前组件可被无障碍辅助服务所识别。 "no"：当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants"：当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值："auto" **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| accessibilityDescription18+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 右侧图标/箭头的无障碍描述。此描述用于向用户详细解释当前组件，开发人员应为组件的这一属性提供较为详尽的文本说明，以协助用户理解即将执行的操作及其可能产生的后果。特别是当这些后果无法仅从组件的属性和无障碍文本中直接获知时。如果组件同时包含文本信息和无障碍说明属性，当组件被选中时，系统将首先播报组件的文本信息，随后播报无障碍说明属性的内容。 默认值为“单指双击即可执行”。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| accessibilityLevel18+ | string | 否 | 是 | 右侧图标/箭头的无障碍重要性。用于控制当前项是否可被无障碍辅助服务所识别。 支持的值为： "auto"：当前组件视为"no"。 "yes"：当前组件可被无障碍辅助服务所识别。 "no"：当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants"：当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值："auto" **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 
 #### OperateButton
 
@@ -131,8 +133,8 @@ ComposeListItem({contentItem?: ContentItem, operateItem?: OperateItem})
 | --- | --- | --- | --- | --- |
 | text | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 右侧按钮文字。 默认值："" **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | accessibilityText18+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 右侧按钮的无障碍文本属性。当组件不包含文本属性时，屏幕朗读选中此组件时不播报，使用者无法清楚地知道当前选中了什么组件。为了解决此场景，开发人员可为不包含文字信息的组件设置无障碍文本，当屏幕朗读选中此组件时播报无障碍文本的内容，帮助屏幕朗读的使用者清楚地知道自己选中了什么组件。 默认值："" **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| accessibilityDescription18+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 右侧按钮的无障碍描述。此描述用于向用户详细解释当前组件，开发人员应为组件的这一属性提供较为详尽的文本说明，以协助用户理解即将执行的操作及其可能产生的后果。特别是当这些后果无法仅从组件的属性和无障碍文本中直接获知时。如果组件同时具备文本属性和无障碍说明属性，当组件被选中时，系统将首先播报组件的文本属性，随后播报无障碍说明属性的内容。 默认值："单指双击即可执行"。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| accessibilityLevel18+ | string | 否 | 是 | 右侧按钮的无障碍重要性。用于控制当前项是否可被无障碍辅助服务所识别。 支持的值为： "auto"：当前组件会转换"no"。 "yes"：当前组件可被无障碍辅助服务所识别。 "no"：当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants"：当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值："auto" **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| accessibilityDescription18+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 右侧按钮的无障碍描述。此描述用于向用户详细解释当前组件，开发人员应为组件的这一属性提供较为详尽的文本说明，以协助用户理解即将执行的操作及其可能产生的后果。特别是当这些后果无法仅从组件的属性和无障碍文本中直接获知时。如果组件同时包含文本信息和无障碍说明属性，当组件被选中时，系统将首先播报组件的文本信息，随后播报无障碍说明属性的内容。 默认值："单指双击即可执行"。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| accessibilityLevel18+ | string | 否 | 是 | 右侧按钮的无障碍重要性。用于控制当前项是否可被无障碍辅助服务所识别。 支持的值为： "auto"：当前组件视为"no"。 "yes"：当前组件可被无障碍辅助服务所识别。 "no"：当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants"：当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值："auto" **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 
 #### OperateCheck
 
@@ -147,8 +149,8 @@ ComposeListItem({contentItem?: ContentItem, operateItem?: OperateItem})
 | isCheck | boolean | 否 | 是 | 右侧Switch/CheckBox/Radio选中状态。 isCheck默认值为false。 isCheck为true时，表示为选中。 isCheck为false时，表示为未选中。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | onChange | (value: boolean)=>void | 否 | 是 | 右侧Switch/CheckBox/Radio选中状态改变时触发回调。 value为true时，表示从未选中变为选中。 value为false时，表示从选中变为未选中。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | accessibilityText18+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 右侧Switch/CheckBox/Radio的无障碍文本属性。当组件不包含文本属性时，屏幕朗读选中此组件时不播报，使用者无法清楚地知道当前选中了什么组件。为了解决此场景，开发人员可为不包含文字信息的组件设置无障碍文本，当屏幕朗读选中此组件时播报无障碍文本的内容，帮助屏幕朗读的使用者清楚地知道自己选中了什么组件。 默认值："" **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| accessibilityDescription18+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 右侧Switch/CheckBox/Radio的无障碍描述。此描述用于向用户详细解释当前组件，开发人员应为组件的这一属性提供较为详尽的文本说明，以协助用户理解即将执行的操作及其可能产生的后果。特别是当这些后果无法仅从组件的属性和无障碍文本中直接获知时。如果组件同时具备文本属性和无障碍说明属性，当组件被选中时，系统将首先播报组件的文本属性，随后播报无障碍说明属性的内容。 默认跟随基础组件Switch/CheckBox/Radio播报规则。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| accessibilityLevel18+ | string | 否 | 是 | 右侧Switch/CheckBox/Radio的无障碍重要性。用于控制当前项是否可被无障碍辅助服务所识别。 支持的值为： "auto"：当前组件会转换"no"。 "yes"：当前组件可被无障碍辅助服务所识别。 "no"：当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants"：当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值："auto" **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| accessibilityDescription18+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 右侧Switch/CheckBox/Radio的无障碍描述。此描述用于向用户详细解释当前组件，开发人员应为组件的这一属性提供较为详尽的文本说明，以协助用户理解即将执行的操作及其可能产生的后果。特别是当这些后果无法仅从组件的属性和无障碍文本中直接获知时。如果组件同时包含文本信息和无障碍说明属性，当组件被选中时，系统将首先播报组件的文本信息，随后播报无障碍说明属性的内容。 默认跟随基础组件Switch/CheckBox/Radio播报规则。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| accessibilityLevel18+ | string | 否 | 是 | 右侧Switch/CheckBox/Radio的无障碍重要性。用于控制当前项是否可被无障碍辅助服务所识别。 支持的值为： "auto"：当前组件视为"no"。 "yes"：当前组件可被无障碍辅助服务所识别。 "no"：当前组件不可被无障碍辅助服务所识别。 "no-hide-descendants"：当前组件及其所有子组件不可被无障碍辅助服务所识别。 默认值："auto" **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 
 #### 事件
 
@@ -158,7 +160,7 @@ ComposeListItem({contentItem?: ContentItem, operateItem?: OperateItem})
 
 #### [h2]示例1（设置简单列表项）
 
-该示例实现了带有主标题、副标题、描述、右侧按钮及文本的简单列表项。
+该示例实现了带有主标题、副标题、描述、右侧图标及文本的简单列表项。
 
 ```
 // 该示例主要演示该组件的基础功能使用，包含左侧右侧元素的情况
@@ -196,7 +198,7 @@ struct ComposeListItemExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732917.jpg)
+ ![](./img/zh-cn_image_0000002731519327.jpg)
 
 #### [h2]示例2（设置右侧不同元素自定义播报）
 
@@ -278,7 +280,7 @@ struct ComposeListItemExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253796.png)
+ ![](./img/zh-cn_image_0000002701640128.png)
 
 #### [h2]示例3（设置Symbol类型图标）
 
@@ -352,4 +354,4 @@ struct ComposeListItemExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612979.png)
+ ![](./img/zh-cn_image_0000002731359347.png)

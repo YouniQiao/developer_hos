@@ -2,8 +2,8 @@
 title: "@ohos.app.ability.CompletionHandlerForAbilityStartCallback (拉起应用结果回调的操作类)"
 upstream_id: "harmonyos-references/js-apis-app-ability-completionhandlerforabilitystartcallback"
 catalog: "harmonyos-references"
-content_hash: "77df6fc4deb1"
-synced_at: "2026-07-09T00:57:04.085209"
+content_hash: "451964f0451f"
+synced_at: "2026-08-29T18:11:56.841454"
 ---
 
 # @ohos.app.ability.CompletionHandlerForAbilityStartCallback (拉起应用结果回调的操作类)
@@ -95,7 +95,7 @@ struct Index {
   };
   abilityStartCallback: common.AbilityStartCallback = {
     onError: (code: number, name: string, message: string) => {
-      console.info(`testTag code:` + code + `name:` + name + `message:` + message);
+      console.error(`testTag code:` + code + `name:` + name + `message:` + message);
     },
     onResult: (abilityResult: common.AbilityResult) => {
       console.info(`testTag resultCode:` + abilityResult.resultCode + `bundleName:` + abilityResult.want?.bundleName);
@@ -118,7 +118,7 @@ struct Index {
           this.context.startAbilityByType("share", wantParam, this.abilityStartCallback).then(() => {
             console.info(`startAbilityByType success`);
           }).catch((err: BusinessError) => {
-            console.error(`startAbilityByType fail, err: ${JSON.stringify(err)}`);
+            console.error(`Failed startAbilityByType. Code: ${JSON.stringify(err.code)}, message: ${JSON.stringify(err.message)}`);
           });
         })
     }

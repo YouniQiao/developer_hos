@@ -2,8 +2,8 @@
 title: "Class (JsMessageExt)"
 upstream_id: "harmonyos-references/arkts-apis-webview-jsmessageext"
 catalog: "harmonyos-references"
-content_hash: "d7dc122a493e"
-synced_at: "2026-07-09T00:58:50.161358"
+content_hash: "3420053e706a"
+synced_at: "2026-08-29T18:15:57.112774"
 ---
 
 # Class (JsMessageExt)
@@ -44,7 +44,7 @@ getString(): string
 
 | 类型 | 说明 |
 | --- | --- |
-| string | 返回字符串类型的数据。 |
+| string | 返回runJavaScriptExt接口脚本执行后得到的字符串类型的数据。 |
 
 错误码：
 
@@ -66,7 +66,7 @@ getNumber(): number
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 返回数值类型的数据。 |
+| number | 返回runJavaScriptExt接口脚本执行后得到的数值类型的数据。 |
 
 错误码：
 
@@ -88,7 +88,7 @@ getBoolean(): boolean
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | 返回布尔类型的数据。 |
+| boolean | 返回runJavaScriptExt接口脚本执行后得到的布尔类型的数据。 |
 
 错误码：
 
@@ -110,7 +110,7 @@ getArrayBuffer(): ArrayBuffer
 
 | 类型 | 说明 |
 | --- | --- |
-| ArrayBuffer | 返回原始二进制数据。 |
+| ArrayBuffer | 返回runJavaScriptExt接口脚本执行后得到的原始二进制数据。 |
 
 错误码：
 
@@ -132,7 +132,7 @@ getArray(): Array<string | number | boolean>
 
 | 类型 | 说明 |
 | --- | --- |
-| Array | 返回数组类型的数据。 |
+| Array | 返回runJavaScriptExt接口脚本执行后得到的数组类型的数据。 |
 
 错误码：
 
@@ -146,7 +146,7 @@ getArray(): Array<string | number | boolean>
 
 getErrorDescription(): string | null
 
-获取JS执行的异常信息。完整示例代码参考[runJavaScriptExt](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#runjavascriptext10)。
+获取JavaScript执行的异常信息。完整示例代码参考[runJavaScriptExt](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#runjavascriptext10)。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -154,4 +154,4 @@ getErrorDescription(): string | null
 
 | 类型 | 说明 |
 | --- | --- |
-| string | null | 若JavaScript脚本执行过程中发生异常，或返回值为object类型，系统会将其格式化为"Not support type: "字符串返回，该字符串长度不超过2048个字符，超长部分将被截断；若object对象中包含callback类型的成员，则序列化时将自动忽略该成员；其余情况，接口均返回null。 |
+| string | null | 若JavaScript脚本执行过程中发生异常，或返回值为object类型，系统会将异常信息或object对象格式化为"Not support type: "字符串返回，该字符串长度不超过2048个字符，超长部分将被截断；若object对象中包含callback类型的成员，则序列化时将自动忽略该成员；其余情况，接口均返回null。 |

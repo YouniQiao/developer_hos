@@ -2,13 +2,13 @@
 title: "Interface (AudioRoutingManager)"
 upstream_id: "harmonyos-references/arkts-apis-audio-audioroutingmanager"
 catalog: "harmonyos-references"
-content_hash: "5c700a95a5c8"
-synced_at: "2026-07-28T16:51:25.661767"
+content_hash: "8527fb3e7818"
+synced_at: "2026-08-29T18:17:18.538162"
 ---
 
 # Interface (AudioRoutingManager)
 
-音频路由管理。
+AudioRoutingManager是音频系统中的设备路由管理模块。本模块提供音频设备路由管理能力，包括音频设备列表获取、设备连接状态变化监听、优先级设备获取等。当开发者需要在媒体录制、媒体播放等场景下进行音频设备路由选择时，使用本模块接口完成相关操作。
 
 在使用AudioRoutingManager的接口之前，需先通过[getRoutingManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiomanager#getroutingmanager9)获取AudioRoutingManager实例。
 
@@ -45,10 +45,10 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 audioRoutingManager.getDevices(audio.DeviceFlag.OUTPUT_DEVICES_FLAG, (err: BusinessError, audioDeviceDescriptors: audio.AudioDeviceDescriptors) => {
   if (err) {
-    console.error(`Failed to get devices. Code: ${err.code}, message: ${err.message}`);
-  } else {
-    console.info(`Succeeded in getting devices, AudioDeviceDescriptors: ${JSON.stringify(audioDeviceDescriptors)}.`);
+    console.error(`Failed to obtain the device list. Code: ${err.code}, message: ${err.message}`);
+    return;
   }
+  console.info(`Succeeded in obtaining the device list, deviceDescriptors: ${JSON.stringify(audioDeviceDescriptors)}.`);
 });
 ```
 
@@ -70,7 +70,7 @@ getDevices(deviceFlag: DeviceFlag): Promise<AudioDeviceDescriptors>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，返回设备列表。 |
+| Promise | Promise对象，返回音频设备列表。 |
 
 示例：
 
@@ -78,9 +78,9 @@ getDevices(deviceFlag: DeviceFlag): Promise<AudioDeviceDescriptors>
 import { BusinessError } from '@kit.BasicServicesKit';
 
 audioRoutingManager.getDevices(audio.DeviceFlag.OUTPUT_DEVICES_FLAG).then((audioDeviceDescriptors: audio.AudioDeviceDescriptors) => {
-  console.info(`Succeeded in getting devices, AudioDeviceDescriptors: ${JSON.stringify(audioDeviceDescriptors)}.`);
+  console.info(`Succeeded in obtaining the device list, deviceDescriptors: ${JSON.stringify(audioDeviceDescriptors)}.`);
 }).catch((err: BusinessError) => {
-  console.error(`Failed to get devices. Code: ${err.code}, message: ${err.message}`);
+  console.error(`Failed to obtain the device list. Code: ${err.code}, message: ${err.message}`);
 });
 ```
 
@@ -102,7 +102,7 @@ getDevicesSync(deviceFlag: DeviceFlag): AudioDeviceDescriptors
 
 | 类型 | 说明 |
 | --- | --- |
-| [AudioDeviceDescriptors](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-t#audiodevicedescriptors) | 返回设备列表。 |
+| [AudioDeviceDescriptors](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-t#audiodevicedescriptors) | 返回音频设备列表。 |
 
 错误码：
 
@@ -120,10 +120,10 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
   let audioDeviceDescriptors = audioRoutingManager.getDevicesSync(audio.DeviceFlag.OUTPUT_DEVICES_FLAG);
-  console.info(`Succeeded in getting devices, AudioDeviceDescriptors: ${JSON.stringify(audioDeviceDescriptors)}.`);
+  console.info(`Succeeded in obtaining the device list, deviceDescriptors: ${JSON.stringify(audioDeviceDescriptors)}.`);
 } catch (err) {
   let error = err as BusinessError;
-  console.error(`Failed to get devices. Code: ${error.code}, message: ${error.message}`);
+  console.error(`Failed to obtain the device list. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -144,8 +144,12 @@ isMicBlockDetectionSupported(): Promise<boolean>
 示例：
 
 ```
+import { BusinessError } from '@kit.BasicServicesKit';
+
 audioRoutingManager.isMicBlockDetectionSupported().then((value: boolean) => {
-  console.info(`Query whether microphone block detection is supported on current device result is ${value}.`);
+  console.info(`Succeeded in querying whether microphone block detection is supported, isSupported: ${value}.`);
+}).catch((err: BusinessError) => {
+  console.error(`Failed to query whether microphone block detection is supported. Code: ${err.code}, message: ${err.message}`);
 });
 ```
 
@@ -180,12 +184,14 @@ on(type: 'micBlockStatusChanged', callback: Callback<DeviceBlockStatusInfo>): vo
 ```
 // 在使用此功能之前，应先查询当前设备是否支持检测。
 audioRoutingManager.isMicBlockDetectionSupported().then((value: boolean) => {
-  console.info(`Query whether microphone block detection is supported on current device result is ${value}.`);
+  console.info(`Succeeded in querying whether microphone block detection is supported, isSupported: ${value}.`);
   if (value) {
-    audioRoutingManager.on('micBlockStatusChanged', (micBlockStatusChanged: audio.DeviceBlockStatusInfo) => {
-      console.info(`block status : ${micBlockStatusChanged.blockStatus} `);
+    audioRoutingManager.on('micBlockStatusChanged', (deviceBlockStatusInfo: audio.DeviceBlockStatusInfo) => {
+      console.info(`MicBlockStatus changed, deviceBlockStatusInfo: ${JSON.stringify(deviceBlockStatusInfo)}.`);
     });
   }
+}).catch((err: BusinessError) => {
+  console.error(`Failed to query whether microphone block detection is supported. Code: ${err.code}, message: ${err.message}`);
 });
 ```
 
@@ -193,7 +199,7 @@ audioRoutingManager.isMicBlockDetectionSupported().then((value: boolean) => {
 
 off(type: 'micBlockStatusChanged', callback?: Callback<DeviceBlockStatusInfo>): void
 
-取消监听麦克风堵塞状态变化事件。使用callback异步回调。
+取消监听麦克风堵塞状态变化事件。
 
 系统能力： SystemCapability.Multimedia.Audio.Device
 
@@ -201,8 +207,8 @@ off(type: 'micBlockStatusChanged', callback?: Callback<DeviceBlockStatusInfo>): 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 事件回调类型，支持的事件为'micBlockStatusChanged'，当取消监听音频麦克风是否被堵塞变化事件时，触发该事件。 |
-| callback | Callback | 否 | 回调函数，返回麦克风被堵塞状态和设备信息。 |
+| type | string | 是 | 事件回调类型，支持的事件为'micBlockStatusChanged'。 |
+| callback | Callback | 否 | 回调函数。传入回调函数时，仅取消该回调对应的监听事件，需与[on('micBlockStatusChanged')](#onmicblockstatuschanged13)绑定同一回调函数；不传参数时，取消此事件类型下所有已订阅的监听事件。 |
 
 错误码：
 
@@ -220,8 +226,8 @@ off(type: 'micBlockStatusChanged', callback?: Callback<DeviceBlockStatusInfo>): 
 audioRoutingManager.off('micBlockStatusChanged');
 
 // 同一监听事件中，on方法和off方法传入callback参数一致，off方法取消对应on方法订阅的监听。
-let micBlockStatusCallback = (micBlockStatusChanged: audio.DeviceBlockStatusInfo) => {
-  console.info(`block status : ${micBlockStatusChanged.blockStatus} `);
+let micBlockStatusCallback = (deviceBlockStatusInfo: audio.DeviceBlockStatusInfo) => {
+  console.info(`MicBlockStatus changed, deviceBlockStatusInfo: ${JSON.stringify(deviceBlockStatusInfo)}.`);
 };
 
 audioRoutingManager.on('micBlockStatusChanged', micBlockStatusCallback);
@@ -257,11 +263,8 @@ on(type: 'deviceChange', deviceFlag: DeviceFlag, callback: Callback<DeviceChange
 示例：
 
 ```
-audioRoutingManager.on('deviceChange', audio.DeviceFlag.OUTPUT_DEVICES_FLAG, (deviceChanged: audio.DeviceChangeAction) => {
-  console.info('device change type : ' + deviceChanged.type);
-  console.info('device descriptor size : ' + deviceChanged.deviceDescriptors.length);
-  console.info('device change descriptor : ' + deviceChanged.deviceDescriptors[0].deviceRole);
-  console.info('device change descriptor : ' + deviceChanged.deviceDescriptors[0].deviceType);
+audioRoutingManager.on('deviceChange', audio.DeviceFlag.OUTPUT_DEVICES_FLAG, (deviceChangeAction: audio.DeviceChangeAction) => {
+  console.info(`Device changed, deviceChangeAction: ${JSON.stringify(deviceChangeAction)}.`);
 });
 ```
 
@@ -269,7 +272,7 @@ audioRoutingManager.on('deviceChange', audio.DeviceFlag.OUTPUT_DEVICES_FLAG, (de
 
 off(type: 'deviceChange', callback?: Callback<DeviceChangeAction>): void
 
-取消监听音频设备连接状态变化事件。使用callback异步回调。
+取消监听音频设备连接状态变化事件。
 
 系统能力： SystemCapability.Multimedia.Audio.Device
 
@@ -277,8 +280,8 @@ off(type: 'deviceChange', callback?: Callback<DeviceChangeAction>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 事件回调类型，支持的事件为'deviceChange'，当取消监听音频设备连接变化事件时，触发该事件。 |
-| callback | Callback | 否 | 回调函数，返回设备更新详情。 |
+| type | string | 是 | 事件回调类型，支持的事件为'deviceChange'。 |
+| callback | Callback | 否 | 回调函数。传入回调函数时，仅取消该回调对应的监听事件，需与[on('deviceChange')](#ondevicechange9)绑定同一回调函数；不传参数时，取消此事件类型下所有已订阅的监听事件。 |
 
 错误码：
 
@@ -296,11 +299,8 @@ off(type: 'deviceChange', callback?: Callback<DeviceChangeAction>): void
 audioRoutingManager.off('deviceChange');
 
 // 同一监听事件中，on方法和off方法传入callback参数一致，off方法取消对应on方法订阅的监听。
-let deviceChangeCallback = (deviceChanged: audio.DeviceChangeAction) => {
-  console.info('device change type : ' + deviceChanged.type);
-  console.info('device descriptor size : ' + deviceChanged.deviceDescriptors.length);
-  console.info('device change descriptor : ' + deviceChanged.deviceDescriptors[0].deviceRole);
-  console.info('device change descriptor : ' + deviceChanged.deviceDescriptors[0].deviceType);
+let deviceChangeCallback = (deviceChangeAction: audio.DeviceChangeAction) => {
+  console.info(`Device changed, deviceChangeAction: ${JSON.stringify(deviceChangeAction)}.`);
 };
 
 audioRoutingManager.on('deviceChange', audio.DeviceFlag.OUTPUT_DEVICES_FLAG, deviceChangeCallback);
@@ -335,10 +335,10 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 audioRoutingManager.setCommunicationDevice(audio.CommunicationDeviceType.SPEAKER, true, (err: BusinessError) => {
   if (err) {
-    console.error(`Failed to set the active status of the device. ${err}`);
+    console.error(`Failed to set the active status of the communication device. Code: ${err.code}, message: ${err.message}`);
     return;
   }
-  console.info('Callback invoked to indicate that the device is set to the active status.');
+  console.info('Succeeded in setting the active status of the communication device.');
 });
 ```
 
@@ -360,7 +360,7 @@ getAvailableDevices(deviceUsage: DeviceUsage): AudioDeviceDescriptors
 
 | 类型 | 说明 |
 | --- | --- |
-| [AudioDeviceDescriptors](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-t#audiodevicedescriptors) | 返回设备列表。 |
+| [AudioDeviceDescriptors](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-t#audiodevicedescriptors) | 返回音频可选设备列表。 |
 
 错误码：
 
@@ -378,10 +378,10 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
   let data: audio.AudioDeviceDescriptors = audioRoutingManager.getAvailableDevices(audio.DeviceUsage.MEDIA_OUTPUT_DEVICES);
-  console.info('Succeeded in doing getAvailableDevices.');
+  console.info(`Succeeded in obtaining available devices, audioDeviceDescriptors: ${JSON.stringify(data)}.`);
 } catch (err) {
   let error = err as BusinessError;
-   console.error(`Failed to getAvailableDevices. Code: ${error.code}, message: ${error.message}`);
+  console.error(`Failed to obtain available devices. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -413,11 +413,8 @@ on(type: 'availableDeviceChange', deviceUsage: DeviceUsage, callback: Callback<D
 示例：
 
 ```
-audioRoutingManager.on('availableDeviceChange', audio.DeviceUsage.MEDIA_OUTPUT_DEVICES, (deviceChanged: audio.DeviceChangeAction) => {
-  console.info('device change type : ' + deviceChanged.type);
-  console.info('device descriptor size : ' + deviceChanged.deviceDescriptors.length);
-  console.info('device change descriptor : ' + deviceChanged.deviceDescriptors[0].deviceRole);
-  console.info('device change descriptor : ' + deviceChanged.deviceDescriptors[0].deviceType);
+audioRoutingManager.on('availableDeviceChange', audio.DeviceUsage.MEDIA_OUTPUT_DEVICES, (deviceChangeAction: audio.DeviceChangeAction) => {
+  console.info(`Available device changed, deviceChangeAction: ${JSON.stringify(deviceChangeAction)}.`);
 });
 ```
 
@@ -425,7 +422,7 @@ audioRoutingManager.on('availableDeviceChange', audio.DeviceUsage.MEDIA_OUTPUT_D
 
 off(type: 'availableDeviceChange', callback?: Callback<DeviceChangeAction>): void
 
-取消监听音频可选设备连接状态变化事件。使用callback异步回调。
+取消监听音频可选设备连接状态变化事件。
 
 系统能力： SystemCapability.Multimedia.Audio.Device
 
@@ -433,8 +430,8 @@ off(type: 'availableDeviceChange', callback?: Callback<DeviceChangeAction>): voi
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 事件回调类型，支持的事件为'availableDeviceChange'，当取消监听音频可选设备连接变化事件时，触发该事件。 |
-| callback | Callback | 否 | 回调函数，返回可选设备更新详情。 |
+| type | string | 是 | 事件回调类型，支持的事件为'availableDeviceChange'。 |
+| callback | Callback | 否 | 回调函数。传入回调函数时，仅取消该回调对应的监听事件，需与[on('availableDeviceChange')](#onavailabledevicechange12)绑定同一回调函数；不传参数时，取消此事件类型下所有已订阅的监听事件。 |
 
 错误码：
 
@@ -452,11 +449,8 @@ off(type: 'availableDeviceChange', callback?: Callback<DeviceChangeAction>): voi
 audioRoutingManager.off('availableDeviceChange');
 
 // 同一监听事件中，on方法和off方法传入callback参数一致，off方法取消对应on方法订阅的监听。
-let availableDeviceChangeCallback = (deviceChanged: audio.DeviceChangeAction) => {
-  console.info('device change type : ' + deviceChanged.type);
-  console.info('device descriptor size : ' + deviceChanged.deviceDescriptors.length);
-  console.info('device change descriptor : ' + deviceChanged.deviceDescriptors[0].deviceRole);
-  console.info('device change descriptor : ' + deviceChanged.deviceDescriptors[0].deviceType);
+let availableDeviceChangeCallback = (deviceChangeAction: audio.DeviceChangeAction) => {
+  console.info(`Available device changed, deviceChangeAction: ${JSON.stringify(deviceChangeAction)}.`);
 };
 
 audioRoutingManager.on('availableDeviceChange', audio.DeviceUsage.MEDIA_OUTPUT_DEVICES, availableDeviceChangeCallback);
@@ -487,13 +481,17 @@ setCommunicationDevice(deviceType: CommunicationDeviceType, active: boolean): Pr
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象。无返回结果的Promise对象。 |
+| Promise | Promise对象，无返回结果。 |
 
 示例：
 
 ```
+import { BusinessError } from '@kit.BasicServicesKit';
+
 audioRoutingManager.setCommunicationDevice(audio.CommunicationDeviceType.SPEAKER, true).then(() => {
-  console.info('Promise returned to indicate that the device is set to the active status.');
+  console.info('Succeeded in setting the active status of the communication device.');
+}).catch((err: BusinessError) => {
+  console.error(`Failed to set the active status of the communication device. Code: ${err.code}, message: ${err.message}`);
 });
 ```
 
@@ -509,7 +507,7 @@ isCommunicationDeviceActive(deviceType: CommunicationDeviceType, callback: Async
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| deviceType | [CommunicationDeviceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#communicationdevicetype9) | 是 | 活跃音频设备类型。 |
+| deviceType | [CommunicationDeviceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#communicationdevicetype9) | 是 | 通信设备类型。 |
 | callback | AsyncCallback | 是 | 回调函数。当获取指定通信设备的激活状态成功，err为undefined，data为true表示激活，false表示未激活；否则为错误对象。 |
 
 示例：
@@ -519,10 +517,10 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 audioRoutingManager.isCommunicationDeviceActive(audio.CommunicationDeviceType.SPEAKER, (err: BusinessError, value: boolean) => {
   if (err) {
-    console.error(`Failed to obtain the active status of the device. ${err}`);
+    console.error(`Failed to check whether the communication device is active. Code: ${err.code}, message: ${err.message}`);
     return;
   }
-  console.info('Callback invoked to indicate that the active status of the device is obtained.');
+  console.info(`Succeeded in checking whether the communication device is active, isActive: ${value}.`);
 });
 ```
 
@@ -549,8 +547,12 @@ isCommunicationDeviceActive(deviceType: CommunicationDeviceType): Promise<boolea
 示例：
 
 ```
+import { BusinessError } from '@kit.BasicServicesKit';
+
 audioRoutingManager.isCommunicationDeviceActive(audio.CommunicationDeviceType.SPEAKER).then((value: boolean) => {
-  console.info(`Promise returned to indicate that the active status of the device is obtained ${value}.`);
+  console.info(`Succeeded in checking whether the communication device is active, isActive: ${value}.`);
+}).catch((err: BusinessError) => {
+  console.error(`Failed to check whether the communication device is active. Code: ${err.code}, message: ${err.message}`);
 });
 ```
 
@@ -590,10 +592,10 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
   let value: boolean = audioRoutingManager.isCommunicationDeviceActiveSync(audio.CommunicationDeviceType.SPEAKER);
-  console.info(`Indicate that the active status of the device is obtained ${value}.`);
+  console.info(`Succeeded in checking whether the communication device is active, isActive: ${value}.`);
 } catch (err) {
   let error = err as BusinessError;
-  console.error(`Failed to obtain the active status of the device ${error}.`);
+  console.error(`Failed to check whether the communication device is active. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -634,10 +636,10 @@ let rendererInfo: audio.AudioRendererInfo = {
 
 audioRoutingManager.getPreferOutputDeviceForRendererInfo(rendererInfo, (err: BusinessError, audioDeviceDescriptors: audio.AudioDeviceDescriptors) => {
   if (err) {
-    console.error(`Failed to get prefer output device for renderer info. Code: ${err.code}, message: ${err.message}`);
-  } else {
-    console.info(`Succeeded in getting prefer output device for renderer info, AudioDeviceDescriptors: ${JSON.stringify(audioDeviceDescriptors)}.`);
+    console.error(`Failed to obtain the preferred output device for renderer info. Code: ${err.code}, message: ${err.message}`);
+    return;
   }
+  console.info(`Succeeded in obtaining the preferred output device for renderer info, audioDeviceDescriptors: ${JSON.stringify(audioDeviceDescriptors)}.`);
 });
 ```
 
@@ -682,10 +684,10 @@ let rendererInfo: audio.AudioRendererInfo = {
 };
 
 audioRoutingManager.getPreferOutputDeviceForRendererInfo(rendererInfo).then((audioDeviceDescriptors: audio.AudioDeviceDescriptors) => {
-  console.info(`Succeeded in getting prefer output device for renderer info, AudioDeviceDescriptors: ${JSON.stringify(audioDeviceDescriptors)}.`);
+  console.info(`Succeeded in obtaining the preferred output device for renderer info, audioDeviceDescriptors: ${JSON.stringify(audioDeviceDescriptors)}.`);
 }).catch((err: BusinessError) => {
-  console.error(`Failed to get prefer output device for renderer info. Code: ${err.code}, message: ${err.message}`);
-})
+  console.error(`Failed to obtain the preferred output device for renderer info. Code: ${err.code}, message: ${err.message}`);
+});
 ```
 
 #### getPreferredOutputDeviceForRendererInfoSync10+
@@ -729,10 +731,10 @@ let rendererInfo: audio.AudioRendererInfo = {
 
 try {
   let audioDeviceDescriptors = audioRoutingManager.getPreferredOutputDeviceForRendererInfoSync(rendererInfo);
-  console.info(`Succeeded in getting prefer output device for renderer info, AudioDeviceDescriptors: ${JSON.stringify(audioDeviceDescriptors)}.`);
+  console.info(`Succeeded in obtaining the preferred output device for renderer info, audioDeviceDescriptors: ${JSON.stringify(audioDeviceDescriptors)}.`);
 } catch (err) {
   let error = err as BusinessError;
-  console.error(`Failed to get prefer output device for renderer info. Code: ${error.code}, message: ${error.message}`);
+  console.error(`Failed to obtain the preferred output device for renderer info. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -770,7 +772,7 @@ let rendererInfo: audio.AudioRendererInfo = {
 };
 
 audioRoutingManager.on('preferOutputDeviceChangeForRendererInfo', rendererInfo, (audioDeviceDescriptors: audio.AudioDeviceDescriptors) => {
-  console.info(`Succeeded in using on function, AudioDeviceDescriptors: ${JSON.stringify(audioDeviceDescriptors)}.`);
+  console.info(`Preferred output device changed, audioDeviceDescriptors: ${JSON.stringify(audioDeviceDescriptors)}.`);
 });
 ```
 
@@ -778,7 +780,7 @@ audioRoutingManager.on('preferOutputDeviceChangeForRendererInfo', rendererInfo, 
 
 off(type: 'preferOutputDeviceChangeForRendererInfo', callback?: Callback<AudioDeviceDescriptors>): void
 
-取消监听最高优先级输出音频设备变化事件。使用callback异步回调。
+取消监听最高优先级输出音频设备变化事件。
 
 系统能力： SystemCapability.Multimedia.Audio.Device
 
@@ -786,8 +788,8 @@ off(type: 'preferOutputDeviceChangeForRendererInfo', callback?: Callback<AudioDe
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 事件回调类型，支持的事件为'preferOutputDeviceChangeForRendererInfo'，当取消监听最高优先级输出音频设备变化事件时，触发该事件。 |
-| callback | Callback | 否 | 回调函数，返回优先级最高的输出设备信息。 |
+| type | string | 是 | 事件回调类型，支持的事件为'preferOutputDeviceChangeForRendererInfo'。 |
+| callback | Callback | 否 | 回调函数。传入回调函数时，仅取消该回调对应的监听事件，需与[on('preferOutputDeviceChangeForRendererInfo')](#onpreferoutputdevicechangeforrendererinfo10)绑定同一回调函数；不传参数时，取消此事件类型下所有已订阅的监听事件。 |
 
 错误码：
 
@@ -804,7 +806,7 @@ off(type: 'preferOutputDeviceChangeForRendererInfo', callback?: Callback<AudioDe
 // 同一监听事件中，on方法和off方法传入callback参数一致，off方法取消对应on方法订阅的监听。
 // 当订阅了多个该事件的监听时，可通过 audioRoutingManager.off('preferOutputDeviceChangeForRendererInfo'); 取消该事件的所有监听。
 let preferOutputDeviceChangeForRendererInfoCallback = (audioDeviceDescriptors: audio.AudioDeviceDescriptors) => {
-  console.info(`Succeeded in using on or off function, AudioDeviceDescriptors: ${JSON.stringify(audioDeviceDescriptors)}.`);
+  console.info(`Preferred output device changed, audioDeviceDescriptors: ${JSON.stringify(audioDeviceDescriptors)}.`);
 };
 let rendererInfo: audio.AudioRendererInfo = {
   usage: audio.StreamUsage.STREAM_USAGE_MUSIC, // 音频流使用类型：音乐。根据业务场景配置，参考StreamUsage。
@@ -853,10 +855,10 @@ let capturerInfo: audio.AudioCapturerInfo = {
 
 audioRoutingManager.getPreferredInputDeviceForCapturerInfo(capturerInfo, (err: BusinessError, audioDeviceDescriptors: audio.AudioDeviceDescriptors) => {
   if (err) {
-    console.error(`Failed to get preferred input device for capturer info. Code: ${err.code}, message: ${err.message}`);
-  } else {
-    console.info(`Succeeded in getting preferred input device for capturer info, AudioDeviceDescriptors: ${JSON.stringify(audioDeviceDescriptors)}.`);
+    console.error(`Failed to obtain the preferred input device for capturer info. Code: ${err.code}, message: ${err.message}`);
+    return;
   }
+  console.info(`Succeeded in obtaining the preferred input device for capturer info, audioDeviceDescriptors: ${JSON.stringify(audioDeviceDescriptors)}.`);
 });
 ```
 
@@ -901,9 +903,9 @@ let capturerInfo: audio.AudioCapturerInfo = {
 };
 
 audioRoutingManager.getPreferredInputDeviceForCapturerInfo(capturerInfo).then((audioDeviceDescriptors: audio.AudioDeviceDescriptors) => {
-  console.info(`Succeeded in getting preferred input device for capturer info, AudioDeviceDescriptors: ${JSON.stringify(audioDeviceDescriptors)}.`);
+  console.info(`Succeeded in obtaining the preferred input device for capturer info, audioDeviceDescriptors: ${JSON.stringify(audioDeviceDescriptors)}.`);
 }).catch((err: BusinessError) => {
-  console.error(`Failed to get preferred input device for capturer info. Code: ${err.code}, message: ${err.message}`);
+  console.error(`Failed to obtain the preferred input device for capturer info. Code: ${err.code}, message: ${err.message}`);
 });
 ```
 
@@ -948,10 +950,10 @@ let capturerInfo: audio.AudioCapturerInfo = {
 
 try {
   let audioDeviceDescriptors = audioRoutingManager.getPreferredInputDeviceForCapturerInfoSync(capturerInfo);
-  console.info(`Succeeded in getting preferred input device for capturer info, AudioDeviceDescriptors: ${JSON.stringify(audioDeviceDescriptors)}.`);
+  console.info(`Succeeded in obtaining the preferred input device for capturer info, audioDeviceDescriptors: ${JSON.stringify(audioDeviceDescriptors)}.`);
 } catch (err) {
   let error = err as BusinessError;
-  console.error(`Failed to get preferred input device for capturer info. Code: ${error.code}, message: ${error.message}`);
+  console.error(`Failed to obtain the preferred input device for capturer info. Code: ${error.code}, message: ${error.message}`);
 }
 ```
 
@@ -989,7 +991,7 @@ let capturerInfo: audio.AudioCapturerInfo = {
 };
 
 audioRoutingManager.on('preferredInputDeviceChangeForCapturerInfo', capturerInfo, (audioDeviceDescriptors: audio.AudioDeviceDescriptors) => {
-  console.info(`Succeeded in using on function, AudioDeviceDescriptors: ${JSON.stringify(audioDeviceDescriptors)}.`);
+  console.info(`Preferred input device changed, audioDeviceDescriptors: ${JSON.stringify(audioDeviceDescriptors)}.`);
 });
 ```
 
@@ -997,7 +999,7 @@ audioRoutingManager.on('preferredInputDeviceChangeForCapturerInfo', capturerInfo
 
 off(type: 'preferredInputDeviceChangeForCapturerInfo', callback?: Callback<AudioDeviceDescriptors>): void
 
-取消监听最高优先级输入音频设备变化事件。使用callback异步回调。
+取消监听最高优先级输入音频设备变化事件。
 
 系统能力： SystemCapability.Multimedia.Audio.Device
 
@@ -1005,8 +1007,8 @@ off(type: 'preferredInputDeviceChangeForCapturerInfo', callback?: Callback<Audio
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 事件回调类型，支持的事件为'preferredInputDeviceChangeForCapturerInfo'，当取消监听最高优先级输入音频设备变化事件时，触发该事件。 |
-| callback | Callback | 否 | 回调函数，返回优先级最高的输入设备信息。 |
+| type | string | 是 | 事件回调类型，支持的事件为'preferredInputDeviceChangeForCapturerInfo'。 |
+| callback | Callback | 否 | 回调函数。传入回调函数时，仅取消该回调对应的监听事件，需与[on('preferredInputDeviceChangeForCapturerInfo')](#onpreferredinputdevicechangeforcapturerinfo10)绑定同一回调函数；不传参数时，取消此事件类型下所有已订阅的监听事件。 |
 
 错误码：
 
@@ -1023,7 +1025,7 @@ off(type: 'preferredInputDeviceChangeForCapturerInfo', callback?: Callback<Audio
 // 同一监听事件中，on方法和off方法传入callback参数一致，off方法取消对应on方法订阅的监听。
 // 当订阅了多个该事件的监听时，可通过 audioRoutingManager.off('preferredInputDeviceChangeForCapturerInfo'); 取消该事件的所有监听。
 let preferredInputDeviceChangeForCapturerInfoCallback = (audioDeviceDescriptors: audio.AudioDeviceDescriptors) => {
-  console.info(`Succeeded in using on or off function, AudioDeviceDescriptors: ${JSON.stringify(audioDeviceDescriptors)}.`);
+  console.info(`Preferred input device changed, audioDeviceDescriptors: ${JSON.stringify(audioDeviceDescriptors)}.`);
 };
 let capturerInfo: audio.AudioCapturerInfo = {
   source: audio.SourceType.SOURCE_TYPE_MIC, // 音源类型：Mic音频源。根据业务场景配置，参考SourceType。
@@ -1066,8 +1068,6 @@ declareDeviceTypesCompatibility(deviceTypes: DeviceTypeArray): void
 示例：
 
 ```
-import { audio } from '@kit.AudioKit';
-
 let deviceTypes = [
   audio.DeviceType.NEARLINK
 ];

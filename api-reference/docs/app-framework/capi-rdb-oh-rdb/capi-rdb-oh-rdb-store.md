@@ -2,8 +2,8 @@
 title: "OH_Rdb_Store"
 upstream_id: "harmonyos-references/capi-rdb-oh-rdb-store"
 catalog: "harmonyos-references"
-content_hash: "a231760ef5e3"
-synced_at: "2026-07-09T00:57:20.118537"
+content_hash: "9670ca03a64b"
+synced_at: "2026-08-29T18:12:15.787203"
 ---
 
 # OH_Rdb_Store
@@ -14,7 +14,7 @@ typedef struct {...} OH_Rdb_Store
 
 #### 概述
 
-表示数据库类型。
+表示数据库实例。需通过[OH_Rdb_GetOrOpen](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-relational-store-h#oh_rdb_getoropen)或[OH_Rdb_CreateOrOpen](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-relational-store-h#oh_rdb_createoropen)等函数获得。
 
 起始版本： 10
 

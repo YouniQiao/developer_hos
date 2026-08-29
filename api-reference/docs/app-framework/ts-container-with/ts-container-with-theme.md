@@ -2,13 +2,13 @@
 title: "WithTheme"
 upstream_id: "harmonyos-references/ts-container-with-theme"
 catalog: "harmonyos-references"
-content_hash: "602a2084e484"
-synced_at: "2026-07-28T16:47:44.982482"
+content_hash: "1946618cb9b2"
+synced_at: "2026-08-29T18:14:51.578297"
 ---
 
 # WithTheme
 
-WithTheme组件用于设置应用局部页面自定义主题风格，可设置子组件深浅色模式和自定义配色。当全局主题无法满足局部区域独立风格需求时，可使用该组件在不影响其他区域的前提下实现局部换肤或独立主题风格的定制。
+WithTheme组件用于设置应用局部页面自定义主题风格，可设置子组件深浅色模式和自定义配色。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -35,7 +35,7 @@ WithTheme(options: WithThemeOptions)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [WithThemeOptions](#withthemeoptions) | 是 | 用于配置WithTheme作用域内组件的主题配色和深浅色模式，支持范围见上方说明中的组件列表。 |
+| options | [WithThemeOptions](#withthemeoptions) | 是 | 设置作用域内组件配色。 |
 
 #### 属性
 
@@ -47,7 +47,7 @@ WithTheme(options: WithThemeOptions)
 
 #### WithThemeOptions
 
-用于设置WithTheme作用域内组件主题配色及深浅色模式。
+设置WithTheme作用域内组件缺省样式及深浅色模式。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -55,14 +55,14 @@ WithTheme(options: WithThemeOptions)
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| theme | [CustomTheme](#customtheme) | 否 | 是 | 用于设置WithTheme作用域内组件的自定义主题配色。 默认值：undefined，默认配色跟随系统[token默认样式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/theme_skinning#系统缺省token色值)。 |
-| colorMode | [ThemeColorMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-foreground-blur-style#themecolormode枚举说明) | 否 | 是 | 用于指定WithTheme作用域内组件配色的深浅色模式。取值原则：ThemeColorMode.SYSTEM跟随系统深浅色设置，ThemeColorMode.DARK强制使用深色模式，ThemeColorMode.LIGHT强制使用浅色模式。设置深浅色模式时需要添加dark.json资源文件才能生效。 默认值：ThemeColorMode.SYSTEM |
+| theme | [CustomTheme](#customtheme) | 否 | 是 | 用于自定义WithTheme作用域内组件缺省配色。 默认值：undefined，缺省样式跟随系统[token默认样式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/theme_skinning#系统缺省token色值)。 |
+| colorMode | [ThemeColorMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-foreground-blur-style#themecolormode枚举说明) | 否 | 是 | 用于指定WithTheme作用域内组件配色深浅色模式。 默认值：ThemeColorMode.SYSTEM |
 
 #### CustomTheme
 
 type CustomTheme = import('../api/@ohos.arkui.theme').CustomTheme
 
-用于自定义WithTheme作用域内组件的配色方案，具体配色项通过CustomColors接口配置。
+自定义配色。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -70,13 +70,13 @@ type CustomTheme = import('../api/@ohos.arkui.theme').CustomTheme
 
 | 类型 | 说明 |
 | --- | --- |
-| import('../api/@ohos.arkui.theme').[CustomTheme](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-theme#customtheme) | 自定义WithTheme作用域内组件默认主题配色。 |
+| import('../api/@ohos.arkui.theme').[CustomTheme](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-theme#customtheme) | 自定义WithTheme作用域内组件缺省配色。 |
 
 #### 示例
 
-设置局部深浅色模式时，需要添加dark.json资源文件，深浅色模式才会生效。
+设置局部深浅色时，需要添加dark.json资源文件，深浅色模式才会生效。
 
-![](./img/zh-cn_image_0000002685928563.png)
+![](./img/zh-cn_image_0000002731359319.png)
 
 dark.json数据示例：
 
@@ -146,9 +146,9 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008884.png)
+ ![](./img/zh-cn_image_0000002701800014.png)
 
-#### [h2]示例2（自定义WithTheme作用域内组件默认配色）
+#### [h2]示例2（自定义WithTheme作用域内组件缺省配色）
 
 ```
 // 自定义WithTheme作用域内组件缺省配色
@@ -173,10 +173,10 @@ class RedColors implements CustomColors {
 }
 
 class PageCustomTheme implements CustomTheme {
-  colors?: CustomColors;
+  colors?: CustomColors
 
   constructor(colors: CustomColors) {
-    this.colors = colors;
+    this.colors = colors
   }
 }
 
@@ -189,13 +189,13 @@ struct IndexPage {
     undefined, // System
     new PageCustomTheme(new GreenColors()),
     new PageCustomTheme(new RedColors())
-  ];
+  ]
   @State themeIndex: number = 0;
 
   build() {
     Column() {
       Column({ space: '8vp' }) {
-        Text('未使用WithTheme')
+        Text(`未使用WithTheme`)
         // 点击按钮切换局部换肤
         Button(`切换theme配色：${this.themeNames[this.themeIndex]}`)
           .onClick(() => {
@@ -217,7 +217,7 @@ struct IndexPage {
       WithTheme({ theme: this.themeArray[this.themeIndex] }) {
         // WithTheme作用域
         Column({ space: '8vp' }) {
-          Text('使用WithTheme')
+          Text(`使用WithTheme`)
           Button('Button.style(NORMAL) with Custom Theme')
             .buttonStyle(ButtonStyleMode.NORMAL)
           Button('Button.style(EMP..ED) with Custom Theme')
@@ -231,4 +231,4 @@ struct IndexPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848964.gif)
+ ![](./img/zh-cn_image_0000002731519301.gif)

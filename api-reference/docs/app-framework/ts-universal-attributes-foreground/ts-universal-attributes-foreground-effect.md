@@ -2,13 +2,13 @@
 title: "前景属性设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-foreground-effect"
 catalog: "harmonyos-references"
-content_hash: "297726c9b73e"
-synced_at: "2026-08-21T15:33:34.630027"
+content_hash: "26b61607045a"
+synced_at: "2026-08-29T18:12:54.771880"
 ---
 
 # 前景属性设置
 
-设置组件的前景属性。
+设置组件的前景属性，通过模糊半径参数对组件前景内容应用模糊效果。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -19,7 +19,7 @@ synced_at: "2026-08-21T15:33:34.630027"
 
 foregroundEffect(options: ForegroundEffectOptions): T
 
-设置组件的前景效果。
+设置组件的前景模糊效果。仅在组件范围内生效，与backgroundEffect、blur等接口连用时超出组件范围的效果无法生效。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -35,11 +35,11 @@ foregroundEffect(options: ForegroundEffectOptions): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前组件。 |
+| T | 返回当前组件，用于链式调用。 |
 
 #### ForegroundEffectOptions
 
-前景效果参数。
+前景效果参数，用于配置组件前景的模糊半径，控制前景内容的模糊程度。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -47,11 +47,11 @@ foregroundEffect(options: ForegroundEffectOptions): T
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| radius | number | 否 | 否 | 模糊半径，取值范围：[0, +∞)。 仅在组件范围内生效，与其他接口连用时超出组件范围的效果无法生效。 |
+| radius | number | 否 | 否 | 模糊半径，设置后组件前景呈现模糊效果，数值越大模糊程度越高。取值范围：[0, +∞)，0表示不产生模糊效果。传入负数时自动修正为0。仅在组件范围内生效，与backgroundBlur等效果类接口连用时超出组件范围的效果无法生效。 |
 
 #### 示例
 
-该示例主要演示通过foregroundEffect接口设置前景属性。
+该示例演示通过foregroundEffect接口设置前景属性。
 
 ```
 // xxx.ets
@@ -64,6 +64,7 @@ struct Index {
       Image($r('app.media.icon'))
           .width(100)
           .height(100)
+          // 设置前景模糊效果，模糊半径为20
           .foregroundEffect({ radius: 20 })
     }
     .width('100%')
@@ -76,4 +77,4 @@ struct Index {
 
 radius表示模糊半径，数值越大，效果越模糊。
 
-![](./img/zh-cn_image_0000002689299842.jpg)
+![](./img/zh-cn_image_0000002731518713.jpg)

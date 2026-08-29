@@ -2,8 +2,8 @@
 title: "自定义组件参数"
 upstream_id: "harmonyos-references/ts-custom-component-parameter"
 catalog: "harmonyos-references"
-content_hash: "0ee6c5f90b5b"
-synced_at: "2026-07-28T16:47:55.576342"
+content_hash: "d226a270fc48"
+synced_at: "2026-08-29T18:15:03.844591"
 ---
 
 # 自定义组件参数

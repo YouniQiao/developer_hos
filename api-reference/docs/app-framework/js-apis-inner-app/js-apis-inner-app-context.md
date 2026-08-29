@@ -2,8 +2,8 @@
 title: "Context (FA模型的上下文基类)"
 upstream_id: "harmonyos-references/js-apis-inner-app-context"
 catalog: "harmonyos-references"
-content_hash: "26782ea640e9"
-synced_at: "2026-07-28T16:40:35.659218"
+content_hash: "d637bcb18a22"
+synced_at: "2026-08-29T18:11:59.765503"
 ---
 
 # Context (FA模型的上下文基类)
@@ -691,7 +691,7 @@ setShowOnLockScreen(show: boolean, callback: AsyncCallback<void>): void
 
 ![](./img/note_3.0-zh-cn.png) 该接口功能仅对系统应用生效。
 
-从API version 7开始支持，从API version 9开始废弃。建议使用window.setShowOnLockScreen替代，新接口为系统接口。
+从API version 7开始支持，从API version 9开始废弃，替代接口仅面向系统应用开放。
 
 系统能力：SystemCapability.Ability.AbilityRuntime.Core
 
@@ -722,7 +722,7 @@ setShowOnLockScreen(show: boolean): Promise<void>
 
 ![](./img/note_3.0-zh-cn.png) 该接口功能仅对系统应用生效。
 
-从API version 7开始支持，从API version 9开始废弃。建议使用window.setShowOnLockScreen替代，新接口为系统接口。
+从API version 7开始支持，从API version 9开始废弃，替代接口仅面向系统应用开放。
 
 系统能力：SystemCapability.Ability.AbilityRuntime.Core
 

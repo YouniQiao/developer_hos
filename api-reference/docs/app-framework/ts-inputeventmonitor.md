@@ -2,8 +2,8 @@
 title: "全局基础输入事件监听"
 upstream_id: "harmonyos-references/ts-inputeventmonitor"
 catalog: "harmonyos-references"
-content_hash: "764de32e6a6e"
-synced_at: "2026-07-28T16:41:57.150358"
+content_hash: "c1bff6d09162"
+synced_at: "2026-08-29T18:12:45.639119"
 ---
 
 # 全局基础输入事件监听
@@ -22,7 +22,7 @@ synced_at: "2026-07-28T16:41:57.150358"
 
 - 对象为空对象，不包含任何可访问的成员。
 - 开发者无法主动构造此对象，只能通过[addLocalInputEventMonitor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#addlocalinputeventmonitor)接口注册获取。
-- 用于后续调用[removeLocalInputEventMonitor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#removelocalinputeventmonitor)解除注册时验证身份。
+- 用于后续解除注册时验证身份。
 
 起始版本： 26.0.0
 
@@ -94,15 +94,7 @@ type InputEventListener = (event: RawInputEventWrapper) => InputEventInterceptRe
 
 起始版本： 26.0.0
 
-原始输入事件包装器类。
-
-提供统一的接口来访问不同类型的输入事件，确保类型安全和向后兼容性。
-
-此类封装了原始的MouseEvent、TouchEvent或KeyEvent对象，并通过类型安全的方法访问。
-
-此类为抽象类，开发者无法自行创建实例。系统会在触发输入事件监听器时自动创建实例，并将实例传递给回调函数。
-
-![](./img/note_3.0-zh-cn.png) 由于监听器在事件派发给具体组件之前执行，事件中的以下字段和方法将无法提供有效值：触发对象[target](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-click#eventtarget8)、相对于组件的坐标（[x](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-mouse-key#属性)、[y](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-mouse-key#属性)）、[getCurrentLocalPosition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-touch#getcurrentlocalposition)和[stopPropagation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-touch#touchevent对象说明)方法、TouchEvent的[preventDefault](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-touch#touchevent对象说明)和[getHistoricalPoints](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-touch#gethistoricalpoints10)方法以及KeyEvent的[metaKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-key#属性)属性和[getModifierKeyState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-key#getmodifierkeystate12)方法。
+![](./img/note_3.0-zh-cn.png) 由于监听器在事件派发给具体组件之前执行，事件中的以下字段和方法将无法提供有效值：触发对象[target](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-click#eventtarget8)、相对于组件的坐标（[x](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-mouse-key#属性)、[y](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-mouse-key#属性)）、[getCurrentLocalPosition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-touch#getcurrentlocalposition)和[stopPropagation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-touch#touchevent对象说明)方法、TouchEvent的[preventDefault](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-touch#touchevent对象说明)和[getHistoricalPoints](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-touch#gethistoricalpoints10)方法以及KeyEvent的[metaKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-key#属性)属性和[getModifierKeyState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-click#getmodifierkeystate12)方法。
 
 示例：
 

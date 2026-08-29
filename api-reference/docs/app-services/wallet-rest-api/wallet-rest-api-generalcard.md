@@ -2,8 +2,8 @@
 title: "通用凭证接口"
 upstream_id: "harmonyos-references/wallet-rest-api-generalcard"
 catalog: "harmonyos-references"
-content_hash: "50469ff5c1f6"
-synced_at: "2026-07-28T16:53:07.870726"
+content_hash: "24e6b7bd7a9f"
+synced_at: "2026-08-29T18:18:37.256363"
 ---
 
 # 通用凭证接口
@@ -17,7 +17,7 @@ synced_at: "2026-07-28T16:53:07.870726"
 #### [h2]接口原型
 
 - **承载协议**：HTTPS POST
-- **接口方向**：三方业务管理服务->钱包云服务
+- **接口方向**：开发者业务管理服务->钱包云服务
 - **接口URL**：https://wallet-passentrust-drcn.cloud.huawei.com.cn/hmspass/v2/{cardType}/model
 - **数据格式**： 请求消息：Content-Type: application/json;charset=UTF-8 响应消息：Content-Type: application/json;charset=UTF-8
 
@@ -27,9 +27,9 @@ Request Header
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| Content-Type | 是 | String | 数据格式，取值为：Content-Type: application/json;charset=UTF-8。 |
+| Content-Type | 是 | String | 请求的数据类型，取值为：application/json;charset=UTF-8。 |
 | Authorization | 是 | String | 认证信息，将[获取AccessToken](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-public#获取accesstoken)获取到的“access_token”的值拼接在字符串“Bearer”之后，以空格符相隔，组成“Authorization”参数的值。 |
-| Accept | 是 | String | 响应的数据格式，取值为：Content-Type: application/json;charset=UTF-8。 |
+| Accept | 是 | String | 响应的数据格式，取值为：application/json;charset=UTF-8。 |
 
 Request Body
 
@@ -43,7 +43,7 @@ Request Body
 
 | appendFields参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| isCreateWhiteCard | 是 | String | 用于表明是否是NFC卡的标记： true：是NFC卡。 false：非NFC卡。 |
+| isCreateWhiteCard | 否 | String | 是否为NFC卡的标记。 true：NFC卡。 false：非NFC卡。 |
 
 | commonFields参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
@@ -57,9 +57,9 @@ Request Header
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| Content-Type | 是 | String | 数据格式，取值为：Content-Type: application/json;charset=UTF-8。 |
+| Content-Type | 是 | String | 请求的数据类型，取值为：application/json;charset=UTF-8。 |
 | Authorization | 是 | String | 认证信息，将[获取AccessToken](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-public#获取accesstoken)获取到的“access_token”的值拼接在字符串“Bearer”之后，以空格符相隔，组成“Authorization”参数的值。 |
-| Accept | 是 | String | 响应的数据格式，取值为：Content-Type: application/json;charset=UTF-8。 |
+| Accept | 是 | String | 响应的数据格式，取值为：application/json;charset=UTF-8。 |
 
 Request Body
 
@@ -70,25 +70,38 @@ Request Body
 | organizationName | 是 | String | 预置模板中创建的商户名称，最长64个字节。 |
 | organizationPassId | 是 | String | 通用凭证卡片在开发者服务器中的卡号。在同一个appId下唯一。长度16个字节，为保证唯一性，请勿手动输入，建议使用代码随机生成，只能是字母、数字，当前和serialNumber保持一致。 |
 | serialNumber | 是 | String | 通用凭证卡片在华为钱包服务器中的卡号，即instanceId。在同一个appId下唯一。长度16个字节，为保证唯一性，请勿手动输入，建议使用代码随机生成，只能是字母、数字，当前和organizationPassId保持一致。 |
-| fields | 是 | fields | 卡券展示信息，包括commonFields、timeList和status三部分。 |
-| linkDevicePass | 是 | linkDevicePass | 链接设备参数，用于保存通用凭证管理台服务器地址、公钥信息以及是否使能卡券的NFC能力。 |
+| fields | 是 | fields | 卡券展示信息，包括commonFields、barCode、flexFields、status、localized部分。 |
 
-| **timeList**参数 | 是否必选 | 参数类型 | 描述 |
+| barCode参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| linkDevicePassExpireTime | 是 | List | 时间列表。 |
+| text | 否 | String | 二维码下方显示的描述或数字。 |
+| type | 否 | String | 二维码类型，固定值：'qrCode'。 |
+| value | 否 | String | 二维码码值。 |
+| encoding | 否 | String | 编码格式，固定值：'UTF-8'。 |
+
+| flexFields参数 | 是否必选 | 参数类型 | 描述 |
+| --- | --- | --- | --- |
+| primaryFields | 否 | List | 主要信息区字段列表，最多展示4条数据。每个主要信息区字段包含key、value、label。 每行展示规则：1个key居左对齐，2个key分别居左居右，3~4个key两侧居左居右、中间居中。 label和value值进行展示，label不支持换行，value最多2行超过截断。 |
+| secondaryFields | 否 | List | 次要信息区字段列表，最多展示4个。展示规则与primaryFields相同。 |
 
 | **status**参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
 | state | 是 | String | 状态值。取值如下： - active：生效 - inactive：未激活 - completed：已使用 - expired：已过期 |
-| effectTime | 是 | String | 生效时间，UTC格式。 |
-| expireTime | 是 | String | 失效时间，UTC格式。如果超过此时间，卡券自动按照expired状态处理。 |
+| effectTime | 是 | String | 生效时间，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。 |
+| expireTime | 是 | String | 失效时间，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。如果超过此时间，卡券自动按照expired状态处理。 |
+
+| localized参数 | 是否必选 | 参数类型 | 描述 |
+| --- | --- | --- | --- |
+| key | 否 | String | 国际化键名。无固定值，根据实际需要国际化的字段传入对应键名即可。 |
+| value | 否 | String | 国际化文本，对应语言的显示内容。 |
+| language | 否 | String | 语言代码，如zh-CN、en-US。 |
 
 | commonFields参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
 | ownerPassTypeIdentifier | 是 | String | 服务号，格式为：hwpass.xxx.xxx.xxx。 |
-| readerMatchValue | 是 | String | 通用凭证标识，建议字节不超过20字节（第一字节：三方标识，第二字节：品牌/系列标识，后续字节保证在三方内唯一）, 只能包含0-9，A-F。 |
-| deviceType | 是 | String | 当前通用凭证开通的设备类型，如Phone：手机，Wear：穿戴。 |
-| personalizedData | 否 | Object | 三方个性化数据。 |
+| readerMatchValue | 否 | String | 通用凭证标识。建议不超过20个字节，第一字节表示开发者标识，第二字节表示品牌/系列标识，后续的字节用于保证开发者内唯一性。字符只能包含0-9和A-F。 |
+| deviceType | 否 | String | 当前通用凭证开通的设备类型，Phone：手机、Wear：穿戴。 |
+| personalizedData | 否 | Object | 开发者个性化数据。 |
 | logo | 否 | String | 卡面logo，128*128px，大小钱包云服务
 - **接口URL**：https://wallet-passentrust-drcn.cloud.huawei.com.cn/hmspass/v2/{cardType}/instance/{instanceId}
 - **数据格式**： 请求消息：Content-Type: application/json;charset=UTF-8 响应消息：Content-Type: application/json;charset=UTF-8
@@ -99,9 +112,9 @@ Request Header
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| Content-Type | 是 | String | 数据格式，取值为：Content-Type: application/json;charset=UTF-8。 |
+| Content-Type | 是 | String | 请求的数据类型，取值为：application/json;charset=UTF-8。 |
 | Authorization | 是 | String | 认证信息，将[获取AccessToken](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-public#获取accesstoken)获取到的“access_token”的值拼接在字符串“Bearer”之后，以空格符相隔，组成“Authorization”参数的值。 |
-| Accept | 是 | String | 响应的数据格式，取值为：Content-Type: application/json;charset=UTF-8。 |
+| Accept | 是 | String | 响应的数据格式，取值为：application/json;charset=UTF-8。 |
 
 Request Body
 
@@ -110,7 +123,7 @@ Request Body
 #### [h2]请求示例
 
 ```
-POST /hmspass/v2/key_generalcard/instance/100001 HTTP/1.1
+PATCH /hmspass/v2/key_generalcard/instance/100001 HTTP/1.1
 Content-Type: application/json;charset=UTF-8
 Authorization: Bearer bKyECwrVGw********************e
 Accept: application/json;charset=UTF-8
@@ -128,15 +141,15 @@ Accept: application/json;charset=UTF-8
 
 #### [h2]响应参数
 
-模板预置成功，即http响应为200时，钱包云服务会将开发者业务管理服务请求的数据原样返回，即和上面的请求体中的数据一致；其他错误情况，可见[REST API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-error-code)。
+http响应为200时表示成功。其他错误情况，可见[REST API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-error-code)。
 
 #### [h2]调用示例
 
 ```
-public HwWalletObject invokeHwCreateKeyParkObject() {
+public HwWalletObject invokeHwCreateKeyGeneralCardObject() {
     HwWalletObject request = new HwWalletObject();
-    request.setPassTypeIdentifier("hwpass.keypark.test");
-    request.setPassStyleIdentifier("keyParkModelTest");
+    request.setPassTypeIdentifier("hwpass.keygeneralcard.test");
+    request.setPassStyleIdentifier("keyGeneralCardModelTest");
     request.setOrganizationPassId("20001");
     request.setSerialNumber("20001");
     Fields fields = new Fields();
@@ -150,7 +163,8 @@ public HwWalletObject invokeHwCreateKeyParkObject() {
     request.setFields(fields);
     HttpHeaders header = constructHttpHeaders();
     String baseUrl = "https://wallet-passentrust-drcn.cloud.huawei.com.cn/hmspass";
-    String walletServerUrl = baseUrl + "/v2/key_parkcard/instance";
+    // 100001仅为instanceId的示例值，实际使用时请替换为真实的instanceId。
+    String walletServerUrl = baseUrl + "/v2/key_generalcard/instance/100001";
     HttpEntity<JSONObject> entity = new HttpEntity<>(JSONObject.parseObject(JSONObject.toJSONString(request)), header);
     ResponseEntity<JSONObject> exchange =
         REST_TEMPLATE.exchange(walletServerUrl, HttpMethod.PATCH, entity, JSONObject.class);

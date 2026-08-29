@@ -2,15 +2,17 @@
 title: "drawing_pixel_map.h"
 upstream_id: "harmonyos-references/capi-drawing-pixel-map-h"
 catalog: "harmonyos-references"
-content_hash: "2d93d6eea869"
-synced_at: "2026-07-09T01:00:56.654303"
+content_hash: "382245359f43"
+synced_at: "2026-08-29T18:17:54.351390"
 ---
 
 # drawing_pixel_map.h
 
 #### 概述
 
-声明与绘图模块中的像素图对象相关的函数。
+声明与绘图模块中的像素图对象相关的函数。支持从图像框架定义的像素图对象中获取本模块定义的像素图对象，支持解除两者之间的关系。
+
+本模块为单线程模型策略，需要调用方自行管理线程安全和上下文状态的切换。
 
 引用文件： <native_drawing/drawing_pixel_map.h>
 
@@ -35,9 +37,9 @@ synced_at: "2026-07-09T01:00:56.654303"
 
 | 名称 | 描述 |
 | --- | --- |
-| [OH_Drawing_PixelMap* OH_Drawing_PixelMapGetFromNativePixelMap(NativePixelMap_* nativePixelMap)](#oh_drawing_pixelmapgetfromnativepixelmap) | 从图像框架定义的像素图对象中获取本模块定义的像素图对象。对象使用完毕后，需调用[OH_Drawing_PixelMapDissolve](#oh_drawing_pixelmapdissolve)解除关系，否则会引发内存泄露问题。 |
-| [OH_Drawing_PixelMap* OH_Drawing_PixelMapGetFromOhPixelMapNative(OH_PixelmapNative* pixelmapNative)](#oh_drawing_pixelmapgetfromohpixelmapnative) | 从图像框架定义的像素图对象中获取本模块定义的像素图对象。对象使用完毕后，需调用[OH_Drawing_PixelMapDissolve](#oh_drawing_pixelmapdissolve)解除关系，否则会引发内存泄露问题。 |
-| [void OH_Drawing_PixelMapDissolve(OH_Drawing_PixelMap* pixelMap)](#oh_drawing_pixelmapdissolve) | 解除本模块定义的像素图对象和图像框架定义的像素图对象之间的关系，该关系通过调用[OH_Drawing_PixelMapGetFromNativePixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-pixel-map-h#oh_drawing_pixelmapgetfromnativepixelmap)或[OH_Drawing_PixelMapGetFromOhPixelMapNative](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-pixel-map-h#oh_drawing_pixelmapgetfromohpixelmapnative)建立。 |
+| [OH_Drawing_PixelMap* OH_Drawing_PixelMapGetFromNativePixelMap(NativePixelMap_* nativePixelMap)](#oh_drawing_pixelmapgetfromnativepixelmap) | 从图像框架定义的像素图对象中获取本模块定义的像素图对象。对象使用完毕后，调用[OH_Drawing_PixelMapDissolve](#oh_drawing_pixelmapdissolve)解除关系，否则会引发内存泄漏问题。 |
+| [OH_Drawing_PixelMap* OH_Drawing_PixelMapGetFromOhPixelMapNative(OH_PixelmapNative* pixelmapNative)](#oh_drawing_pixelmapgetfromohpixelmapnative) | 从图像框架定义的像素图对象中获取本模块定义的像素图对象。对象使用完毕后，调用[OH_Drawing_PixelMapDissolve](#oh_drawing_pixelmapdissolve)解除关系，否则会引发内存泄漏问题。 |
+| [void OH_Drawing_PixelMapDissolve(OH_Drawing_PixelMap* pixelMap)](#oh_drawing_pixelmapdissolve) | 解除本模块定义的像素图对象和图像框架定义的像素图对象之间的关系。必须先调用[OH_Drawing_PixelMapGetFromNativePixelMap](#oh_drawing_pixelmapgetfromnativepixelmap)或[OH_Drawing_PixelMapGetFromOhPixelMapNative](#oh_drawing_pixelmapgetfromohpixelmapnative)获取像素图对象并建立关联关系后，才能调用本方法解除该关系。 |
 
 #### 函数说明
 
@@ -48,7 +50,7 @@ OH_Drawing_PixelMap* OH_Drawing_PixelMapGetFromNativePixelMap(NativePixelMap_* n
 ```
  描述
 
-从图像框架定义的像素图对象中获取本模块定义的像素图对象。对象使用完毕后，需调用[OH_Drawing_PixelMapDissolve](#oh_drawing_pixelmapdissolve)解除关系，否则会引发内存泄露问题。
+从图像框架定义的像素图对象中获取本模块定义的像素图对象。对象使用完毕后，调用[OH_Drawing_PixelMapDissolve](#oh_drawing_pixelmapdissolve)解除关系，否则会引发内存泄漏问题。
 
 系统能力： SystemCapability.Graphic.Graphic2D.NativeDrawing
 
@@ -64,7 +66,7 @@ OH_Drawing_PixelMap* OH_Drawing_PixelMapGetFromNativePixelMap(NativePixelMap_* n
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Drawing_PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-pixelmap)* | 函数会返回一个指向本模块定义的像素图对象[OH_Drawing_PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-pixelmap)的指针。如果对象返回NULL，表示创建失败；可能的原因是NativePixelMap_为NULL。 |
+| [OH_Drawing_PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-pixelmap)* | 返回一个指向本模块定义的像素图对象[OH_Drawing_PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-pixelmap)的指针。如果返回NULL，表示获取失败；原因是参数nativePixelMap为NULL。 |
 
 #### [h2]OH_Drawing_PixelMapGetFromOhPixelMapNative()
 
@@ -73,7 +75,7 @@ OH_Drawing_PixelMap* OH_Drawing_PixelMapGetFromOhPixelMapNative(OH_PixelmapNativ
 ```
  描述
 
-从图像框架定义的像素图对象中获取本模块定义的像素图对象。对象使用完毕后，需调用[OH_Drawing_PixelMapDissolve](#oh_drawing_pixelmapdissolve)解除关系，否则会引发内存泄露问题。
+从图像框架定义的像素图对象中获取本模块定义的像素图对象。对象使用完毕后，调用[OH_Drawing_PixelMapDissolve](#oh_drawing_pixelmapdissolve)解除关系，否则会引发内存泄漏问题。
 
 系统能力： SystemCapability.Graphic.Graphic2D.NativeDrawing
 
@@ -89,7 +91,7 @@ OH_Drawing_PixelMap* OH_Drawing_PixelMapGetFromOhPixelMapNative(OH_PixelmapNativ
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Drawing_PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-pixelmap)* | 函数会返回一个指向本模块定义的像素图对象[OH_Drawing_PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-pixelmap)的指针。如果对象返回NULL，表示创建失败；可能的原因是OH_PixelmapNative为NULL。 |
+| [OH_Drawing_PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-pixelmap)* | 返回一个指向本模块定义的像素图对象[OH_Drawing_PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-pixelmap)的指针。如果返回NULL，表示获取失败；原因是参数pixelmapNative为NULL。 |
 
 #### [h2]OH_Drawing_PixelMapDissolve()
 
@@ -98,7 +100,7 @@ void OH_Drawing_PixelMapDissolve(OH_Drawing_PixelMap* pixelMap)
 ```
  描述
 
-解除本模块定义的像素图对象和图像框架定义的像素图对象之间的关系，该关系通过调用[OH_Drawing_PixelMapGetFromNativePixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-pixel-map-h#oh_drawing_pixelmapgetfromnativepixelmap)或[OH_Drawing_PixelMapGetFromOhPixelMapNative](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-pixel-map-h#oh_drawing_pixelmapgetfromohpixelmapnative)建立。
+解除本模块定义的像素图对象和图像框架定义的像素图对象之间的关系。必须先调用[OH_Drawing_PixelMapGetFromNativePixelMap](#oh_drawing_pixelmapgetfromnativepixelmap)或[OH_Drawing_PixelMapGetFromOhPixelMapNative](#oh_drawing_pixelmapgetfromohpixelmapnative)获取像素图对象并建立关联关系后，才能调用本方法解除该关系。
 
 系统能力： SystemCapability.Graphic.Graphic2D.NativeDrawing
 

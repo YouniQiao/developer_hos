@@ -2,8 +2,8 @@
 title: "@ohos.arkui.componentSnapshot (组件截图)"
 upstream_id: "harmonyos-references/js-apis-arkui-componentsnapshot"
 catalog: "harmonyos-references"
-content_hash: "55164d38bb3c"
-synced_at: "2026-07-28T16:40:58.824277"
+content_hash: "c3fbe8c09365"
+synced_at: "2026-08-29T18:12:21.871916"
 ---
 
 # @ohos.arkui.componentSnapshot (组件截图)
@@ -105,7 +105,7 @@ struct SnapshotExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087673.gif)
+ ![](./img/zh-cn_image_0000002731518575.gif)
 
 #### componentSnapshot.get(deprecated)
 
@@ -188,7 +188,7 @@ struct SnapshotExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087673.gif)
+ ![](./img/zh-cn_image_0000002731518575.gif)
 
 #### componentSnapshot.createFromBuilder(deprecated)
 
@@ -291,7 +291,7 @@ struct OffscreenSnapshotExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685927845.gif)
+ ![](./img/zh-cn_image_0000002701639378.gif)
 
 #### componentSnapshot.createFromBuilder(deprecated)
 
@@ -397,7 +397,7 @@ struct OffscreenSnapshotExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685927845.gif)
+ ![](./img/zh-cn_image_0000002701639378.gif)
 
 #### componentSnapshot.getSync12+
 
@@ -478,7 +478,7 @@ struct SnapshotExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087673.gif)
+ ![](./img/zh-cn_image_0000002731518575.gif)
 
 #### SnapshotSizeLimitation
 
@@ -505,7 +505,7 @@ struct SnapshotExample {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| scale | number | 否 | 是 | 指定截图时图形侧绘制pixelmap的缩放比例，比例过大时截图时间会变长，或者截图可能会失败。 取值范围：[0, +∞)，当小于等于0时按默认情况处理。 默认值：1 **说明：** 请不要截取过大尺寸的图片，截图不建议超过屏幕尺寸的大小。当要截取的图片目标长宽超过底层限制时，截图会返回失败，不同设备的底层限制不同，具体限制可通过[getSizeLimitation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-componentsnapshot#getsizelimitation)方法获取。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| scale | number | 否 | 是 | 指定截图时图形侧绘制pixelmap的缩放比例，比例过大时截图时间会变长，或者截图可能会失败。 取值范围：[0, +∞)，当小于等于0时按默认情况处理。 默认值：1 **说明：** 请不要截取过大尺寸的图片，截图不建议超过屏幕尺寸的大小。当要截取的图片目标长宽超过底层限制时，截图会返回失败，不同设备的底层限制不同。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | waitUntilRenderFinished | boolean | 否 | 是 | 设置是否强制系统在截图前等待所有绘制指令执行完毕。true表示强制系统在截图前等待所有绘制指令执行完毕，false表示不强制系统在截图前等待所有绘制指令执行完毕。该选项可尽可能确保截图内容是最新的状态，应尽量开启。需要注意的是，开启后接口可能需要更长的时间返回，具体的时间依赖页面当前时刻需要重绘区域的大小。 默认值：false **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | region15+ | [SnapshotRegionType](#snapshotregiontype15) | 否 | 是 | 指定截图的矩形区域范围，默认为整个组件。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
 | colorMode23+ | [ColorModeOptions](#colormodeoptions23) | 否 | 是 | 指定截图使用的色彩空间。 默认值：{colorSpace: SRGB, isAuto: false} **元服务API：** 从API version 23开始，该接口支持在元服务中使用。 |
@@ -572,7 +572,7 @@ struct SnapshotColorModeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087673.gif)
+ ![](./img/zh-cn_image_0000002731518575.gif)
 
 #### DynamicRangeModeOptions23+
 
@@ -634,7 +634,7 @@ struct SnapshotDynamicRangeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087673.gif)
+ ![](./img/zh-cn_image_0000002731518575.gif)
 
 #### SnapshotRegionType15+
 
@@ -665,10 +665,10 @@ type SnapshotRegionType = SnapshotRegion | LocalizedSnapshotRegion
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| left | number | 否 | 否 | 截图区域矩形左上角的x轴坐标。 单位：px 取值范围：[0, 组件宽度]。取值超出范围时，截图失败，返回错误码401。 |
-| top | number | 否 | 否 | 截图区域矩形左上角的y轴坐标。 单位：px 取值范围：[0, 组件高度]。取值超出范围时，截图失败，返回错误码401。 |
-| right | number | 否 | 否 | 截图区域矩形右下角的x轴坐标。 单位：px 取值范围：[0, 组件宽度]。取值超出范围时，截图失败，返回错误码401。 |
-| bottom | number | 否 | 否 | 截图区域矩形右下角的y轴坐标。 单位：px 取值范围：[0, 组件高度]。取值超出范围时，截图失败，返回错误码401。 |
+| left | number | 否 | 否 | 截图区域矩形左上角的x轴坐标。 单位：px 取值范围：[0, 组件宽度] |
+| top | number | 否 | 否 | 截图区域矩形左上角的y轴坐标。 单位：px 取值范围：[0, 组件高度] |
+| right | number | 否 | 否 | 截图区域矩形右下角的x轴坐标。 单位：px 取值范围：[0, 组件宽度] |
+| bottom | number | 否 | 否 | 截图区域矩形右下角的y轴坐标。 单位：px 取值范围：[0, 组件高度] |
 
 #### LocalizedSnapshotRegion15+
 
@@ -682,10 +682,10 @@ type SnapshotRegionType = SnapshotRegion | LocalizedSnapshotRegion
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| start | number | 否 | 否 | 布局方向为LTR时表示截图区域矩形左上角的x轴坐标，布局方向为RTL时表示截图区域矩形右上角的x轴坐标。 单位：px 取值范围：[0, 组件宽度]。取值超出范围时，截图失败，返回错误码401。 |
-| top | number | 否 | 否 | 布局方向为LTR时表示截图区域矩形左上角的y轴坐标，布局方向为RTL时表示截图区域矩形右上角的y轴坐标。 单位：px 取值范围：[0, 组件高度]。取值超出范围时，截图失败，返回错误码401。 |
-| end | number | 否 | 否 | 布局方向为LTR时表示截图区域矩形右下角的x轴坐标，布局方向为RTL时表示截图区域矩形左下角的x轴坐标。 单位：px 取值范围：[0, 组件宽度]。取值超出范围时，截图失败，返回错误码401。 |
-| bottom | number | 否 | 否 | 布局方向为LTR时表示截图区域矩形右下角的y轴坐标，布局方向为RTL时表示截图区域矩形左下角的y轴坐标。 单位：px 取值范围：[0, 组件高度]。取值超出范围时，截图失败，返回错误码401。 |
+| start | number | 否 | 否 | 布局方向为LTR时表示截图区域矩形左上角的x轴坐标，布局方向为RTL时表示截图区域矩形右上角的x轴坐标。 单位：px 取值范围：[0, 组件宽度] |
+| top | number | 否 | 否 | 布局方向为LTR时表示截图区域矩形左上角的y轴坐标，布局方向为RTL时表示截图区域矩形右上角的y轴坐标。 单位：px 取值范围：[0, 组件高度] |
+| end | number | 否 | 否 | 布局方向为LTR时表示截图区域矩形右下角的x轴坐标，布局方向为RTL时表示截图区域矩形左下角的x轴坐标。 单位：px 取值范围：[0, 组件宽度] |
+| bottom | number | 否 | 否 | 布局方向为LTR时表示截图区域矩形右下角的y轴坐标，布局方向为RTL时表示截图区域矩形左下角的y轴坐标。 单位：px 取值范围：[0, 组件高度] |
 
 ![](./img/note_3.0-zh-cn.png) 直接使用componentSnapshot可能导致[UI上下文不明确](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-global-interface#ui上下文不明确)的问题，建议使用getUIContext()获取[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)实例，并使用[getComponentSnapshot](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getcomponentsnapshot12)获取绑定实例的componentSnapshot。
 
@@ -749,4 +749,4 @@ struct SnapshotExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008166.gif)
+ ![](./img/zh-cn_image_0000002731358599.gif)

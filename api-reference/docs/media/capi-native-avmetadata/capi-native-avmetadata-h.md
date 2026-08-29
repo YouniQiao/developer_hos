@@ -2,8 +2,8 @@
 title: "native_avmetadata.h"
 upstream_id: "harmonyos-references/capi-native-avmetadata-h"
 catalog: "harmonyos-references"
-content_hash: "767db02ebe87"
-synced_at: "2026-07-09T01:00:19.311250"
+content_hash: "544d0c46f1a7"
+synced_at: "2026-08-29T18:17:27.242467"
 ---
 
 # native_avmetadata.h
@@ -431,7 +431,7 @@ AVMetadata_Result OH_AVMetadataBuilder_SetDisplayTags(OH_AVMetadataBuilder* buil
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_AVMetadataBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-oh-avmetadatabuilderstruct)* builder | 指向元数据构造器的实例。 |
-| int32_t tags | 用于在播控中心显示的媒体资源金标类型。 |
+| int32_t tags | 用于在播控中心显示的媒体资源金标类型，取值参考[AVMetadata_DisplayTag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avsession-base-h#avmetadata_displaytag)相关定义。 |
 
 返回：
 
@@ -479,7 +479,7 @@ AVMetadata_Result OH_AVMetadataBuilder_GenerateAVMetadata(OH_AVMetadataBuilder* 
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_AVMetadataBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-oh-avmetadatabuilderstruct)* builder | 指向元数据构造器的实例。 |
-| [OH_AVMetadata](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-oh-avmetadatastruct)** avMetadata | 指向元数据的指针对象。 |
+| [OH_AVMetadata](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-oh-avmetadatastruct)** avMetadata | 指向OH_AVMetadata的指针对象，用于接收生成的元数据对象。 |
 
 返回：
 

@@ -2,8 +2,8 @@
 title: "WebSocket_ErrorResult"
 upstream_id: "harmonyos-references/capi-netstack-websocket-errorresult"
 catalog: "harmonyos-references"
-content_hash: "3c3f9bf14abd"
-synced_at: "2026-07-09T00:59:29.955488"
+content_hash: "352ee61b11e0"
+synced_at: "2026-08-29T18:16:45.773666"
 ---
 
 # WebSocket_ErrorResult
@@ -14,7 +14,7 @@ struct WebSocket_ErrorResult {...}
 
 #### 概述
 
-websocket客户端来自服务端连接错误的参数。
+WebSocket客户端来自服务端连接错误的参数。
 
 起始版本： 11
 

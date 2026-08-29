@@ -2,8 +2,8 @@
 title: "ArkUI_NodeAttributeType（滚动容器类组件相关属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-scrollablecontainer"
 catalog: "harmonyos-references"
-content_hash: "f53f1f46734d"
-synced_at: "2026-08-21T15:34:28.534817"
+content_hash: "d467b3b9278b"
+synced_at: "2026-08-29T18:15:38.681722"
 ---
 
 # ArkUI_NodeAttributeType（滚动容器类组件相关属性）
@@ -432,7 +432,7 @@ NODE_SCROLL_CONTENT_START_OFFSET = 1002017
 
 | 参数项 | 描述 |
 | --- | --- |
-| .value[0].f32 | 内容起始端偏移量，单位vp。 |
+| .value[0].f32 | 内容起始端偏移量，单位vp。默认值：0。取值范围：[0, +∞)。设置为负数时，按0处理。 |
 
 返回：
 
@@ -455,7 +455,7 @@ NODE_SCROLL_CONTENT_END_OFFSET = 1002018
 
 | 参数项 | 描述 |
 | --- | --- |
-| .value[0].f32 | 内容末尾端偏移量，单位vp。 |
+| .value[0].f32 | 内容末尾端偏移量，单位vp。默认值：0。取值范围：[0, +∞)。设置为负数时，按0处理。 |
 
 返回：
 
@@ -478,7 +478,7 @@ NODE_SCROLL_FLING_SPEED_LIMIT = 1002019
 
 | 参数项 | 描述 |
 | --- | --- |
-| .value[0].f32 | Fling动效开始时的最大初始速度，单位：vp/s。 |
+| .value[0].f32 | Fling动效开始时的最大初始速度，单位：vp/s。非Wearable设备默认值为9000，Wearable设备默认值为5000。取值范围：(0, +∞)。设置为小于等于0的值时，按默认值处理。 |
 
 返回：
 

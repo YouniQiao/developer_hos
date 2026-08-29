@@ -2,8 +2,8 @@
 title: "Interfaces (其他)"
 upstream_id: "harmonyos-references/arkts-apis-window-i"
 catalog: "harmonyos-references"
-content_hash: "b85c8a7c1bbf"
-synced_at: "2026-08-03T17:09:38.245463"
+content_hash: "7c7f677c35e7"
+synced_at: "2026-08-29T18:12:36.908676"
 ---
 
 # Interfaces (其他)
@@ -95,7 +95,7 @@ synced_at: "2026-08-03T17:09:38.245463"
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| left | number | 否 | 否 | 矩形区域的左边界，单位为px，该参数为整数。 |
+| left | number | 否 | 否 | 矩形区域的左边界，单位为px，该参数应为整数。 |
 | top | number | 否 | 否 | 矩形区域的上边界，单位为px，该参数应为整数。 |
 | width | number | 否 | 否 | 矩形区域的宽度，单位为px，该参数应为整数。 |
 | height | number | 否 | 否 | 矩形区域的高度，单位为px，该参数应为整数。 |
@@ -110,10 +110,10 @@ synced_at: "2026-08-03T17:09:38.245463"
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| left | number | 否 | 否 | 矩形区域的左边界值，单位为vp。 |
-| top | number | 否 | 否 | 矩形区域的上边界值，单位为vp。 |
-| width | number | 否 | 否 | 矩形区域的宽度，单位为vp。 |
-| height | number | 否 | 否 | 矩形区域的高度，单位为vp。 |
+| left | number | 否 | 否 | 矩形区域的左边界值，单位为vp，该参数为浮点数。 |
+| top | number | 否 | 否 | 矩形区域的上边界值，单位为vp，该参数为浮点数。 |
+| width | number | 否 | 否 | 矩形区域的宽度，单位为vp，该参数为浮点数。 |
+| height | number | 否 | 否 | 矩形区域的高度，单位为vp，该参数为浮点数。 |
 
 #### AvoidArea7+
 
@@ -137,7 +137,7 @@ synced_at: "2026-08-03T17:09:38.245463"
 
 ![](./img/note_3.0-zh-cn.png) 示意图展示了leftRect、topRect、rightRect、bottomRect的含义。
 
-![](./img/zh-cn_image_0000002689559447.png)
+![](./img/zh-cn_image_0000002731358671.png)
 
 #### UIEnvAvoidAreaVP23+
 
@@ -252,7 +252,7 @@ synced_at: "2026-08-03T17:09:38.245463"
 | drawableRect11+ | [Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#rect7) | 否 | 否 | 窗口内的可绘制区域尺寸，其中左边界上边界是相对于窗口左上顶点计算。在Stage模型下，需要在调用[loadContent()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#loadcontent9)或[setUIContent()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setuicontent9)加载页面内容后获取该属性。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core |
 | type(deprecated) | [WindowType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#windowtype7) | 否 | 否 | 窗口类型。 当前存在主窗使用[getWindowProperties()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#getwindowproperties9)接口返回type不准确的问题，从API版本26.0.0开始废弃，可使用[windowType](#windowproperties)字段代替。 **起始版本：** 7 **废弃版本：** 26.0.0 **替代接口：** [windowType](#windowproperties) **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core |
 | windowType | [WindowType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#windowtype7) | 否 | 是 | 窗口类型，默认值是[TYPE_MAIN](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#windowtype7)。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core |
-| isFullScreen | boolean | 否 | 否 | 在满足isLayoutFullScreen为true的条件下如果隐藏了状态栏，返回值为true，其他情况下均返回false。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core |
+| isFullScreen | boolean | 否 | 否 | 对于主窗口，如果主动调用了接口（如[setSpecificSystemBarEnabled](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setspecificsystembarenabled11)或者[setWindowSystemBarEnable](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowsystembarenable9)）设置状态栏隐藏且满足isLayoutFullScreen为true的条件下，返回值为true；其他情况下返回值均为false。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core |
 | isLayoutFullScreen7+ | boolean | 否 | 否 | 对于子窗，如果设置了[沉浸式布局](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/immersive-window-feature#沉浸式布局)，返回值为true。 对于主窗，如果设置了[沉浸式布局](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/immersive-window-feature#沉浸式布局)且处于全屏模式，返回值为true。 其他情况下均返回false **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core |
 | focusable7+ | boolean | 否 | 否 | 窗口是否可获焦。true表示可获焦；false表示不可获焦。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core |
 | touchable7+ | boolean | 否 | 否 | 窗口是否可触摸。true表示可触摸；false表示不可触摸。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core |
@@ -391,8 +391,8 @@ synced_at: "2026-08-03T17:09:38.245463"
 | --- | --- | --- | --- | --- |
 | beginRect | [Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#rect7) | 否 | 否 | 动画开始前软键盘的位置和大小。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | endRect | [Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#rect7) | 否 | 否 | 动画结束后软键盘的位置和大小。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| animated20+ | boolean | 否 | 是 | 当前是否有显示/隐藏动画，true表示有动画，false表示没有。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
-| config20+ | [WindowAnimationConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#windowanimationconfig20) | 否 | 是 | 动画配置信息。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| animated20+ | boolean | 否 | 是 | 当前是否有显示/隐藏动画，true表示有动画，false表示没有。默认值：false。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| config20+ | [WindowAnimationConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#windowanimationconfig20) | 否 | 是 | 动画配置信息。不设置，则默认为空。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 
 #### ShowWindowOptions20+
 
@@ -404,7 +404,7 @@ synced_at: "2026-08-03T17:09:38.245463"
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| focusOnShow | boolean | 否 | 是 | 窗口调用[showWindow()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#showwindow20)显示时是否自动获焦，默认为true。该参数对主窗、模态窗、dialog窗口不生效。 |
+| focusOnShow | boolean | 否 | 是 | 窗口调用[showWindow()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#showwindow20)显示时是否自动获焦，默认为true。该参数对主窗口、模态窗、dialog窗口不生效。 |
 
 #### WindowAnimationConfig20+
 
@@ -417,8 +417,8 @@ synced_at: "2026-08-03T17:09:38.245463"
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | curve | [WindowAnimationCurve](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#windowanimationcurve20) | 否 | 否 | 动画曲线类型。 |
-| duration | number | 否 | 是 | 动画播放的时长，单位毫秒（ms）。 默认值：0，最大值：3000。 根据动画曲线类型决定是否必填。 |
-| param | [WindowAnimationCurveParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-t#windowanimationcurveparam20) | 否 | 是 | 动画曲线参数，根据动画曲线类型决定是否必填。 |
+| duration | number | 否 | 是 | 动画播放的时长，单位毫秒（ms）。 取值范围为[0, 3000]。默认值为0，表示不播放动画。 根据动画曲线类型决定是否必填。 |
+| param | [WindowAnimationCurveParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-t#windowanimationcurveparam20) | 否 | 是 | 动画曲线参数，根据动画曲线类型决定是否必填。不设置，则默认为空。 |
 
 #### WindowSnapshotAnimationConfig
 
@@ -449,7 +449,7 @@ synced_at: "2026-08-03T17:09:38.245463"
 | --- | --- | --- | --- | --- |
 | maximizePresentation | [MaximizePresentation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#maximizepresentation12) | 否 | 是 | 最大化时的布局方式，默认值为[MaximizePresentation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#maximizepresentation12).ENTER_IMMERSIVE。 |
 | acrossDisplayPresentation | [AcrossDisplayPresentation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#acrossdisplaypresentation) | 否 | 是 | 折叠屏跨屏策略，默认值为[AcrossDisplayPresentation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#acrossdisplaypresentation).FOLLOW_ACROSS_DISPLAY_SETTING。仅主窗口可设置，非主窗口调用时返回错误码1300004。**设备行为差异：** 仅在具备折叠功能的2in1设备可正常调用；在其他设备上调用不生效。 |
-| snapshotAnimationConfig | [WindowSnapshotAnimationConfig](#windowsnapshotanimationconfig) | 否 | 是 | 截图动画配置。在窗口最大化和窗口恢复[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)过程中，系统会通过截图动画遮盖应用布局变化的跳变，可通过此属性指定截图淡出动画延迟和淡出动画执行时长。仅主窗口可设置，主窗口不指定时使用系统默认动画；子窗默认无截图动画，即截图动画参数duration和delay均为0，传入其他动画参数返回1300004错误码。当duration为0时，表示取消截图动画。 |
+| snapshotAnimationConfig | [WindowSnapshotAnimationConfig](#windowsnapshotanimationconfig) | 否 | 是 | 截图动画配置。在窗口最大化和窗口恢复[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)过程中，系统会通过截图动画遮盖应用布局变化的跳变，可通过此属性指定截图淡出动画延迟和淡出动画执行时长。仅主窗口可设置，主窗口不指定时使用系统默认动画；子窗口默认无截图动画，即截图动画参数duration和delay均为0，传入其他动画参数返回1300004错误码。当duration为0时，表示取消截图动画。 |
 
 #### WindowInfo18+
 
@@ -464,7 +464,7 @@ synced_at: "2026-08-03T17:09:38.245463"
 | abilityName | string | 否 | 否 | Ability的名称。 |
 | windowId | number | 否 | 否 | 窗口ID。 |
 | windowStatusType | [WindowStatusType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#windowstatustype11) | 否 | 否 | 窗口模式枚举。 |
-| isFocused | boolean | 否 | 是 | 窗口是否获焦。true表示窗口获焦；false表示窗口未获焦。返回值与[isFocused()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#isfocused12)接口一致。 |
+| isFocused | boolean | 否 | 是 | 窗口是否获焦。true表示窗口获焦；false表示窗口未获焦。默认值：false。返回值与[isFocused()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#isfocused12)接口一致。 |
 | globalDisplayRect20+ | [Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#rect7) | 否 | 是 | 全局坐标系下的窗口尺寸，其中的宽高是未经缩放计算过的原始值。扩展屏场景下以主屏左上角为坐标原点，虚拟屏场景下以虚拟屏左上角为坐标原点。默认值：[0, 0, 0, 0]。 |
 | displayId | number | 否 | 是 | 窗口所在屏幕的ID。默认返回主屏幕ID，该参数为整数。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | globalRect | [Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#rect7) | 否 | 是 | 窗口所在物理屏幕上的真实显示区域，以所在屏幕的左上角为坐标原点。若窗口显示时经过了缩放，获取到的是缩放后窗口在屏幕上的真实位置和大小。默认值：[0, 0, 0, 0]。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 |
@@ -496,7 +496,7 @@ synced_at: "2026-08-03T17:09:38.245463"
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| type | [AnimationType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#animationtype20) | 否 | 否 | 窗口动画类型。 |
+| type | [AnimationType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#animationtype20) | 否 | 否 | 窗口动画类型，用于指定窗口启动时使用的动画效果，如淡入淡出等。 |
 
 #### WindowCreateParams20+
 
@@ -547,9 +547,9 @@ Callback<T, V = void> {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| type | [RotationChangeType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#rotationchangetype19) | 否 | 否 | 窗口旋转事件类型。 |
+| type | [RotationChangeType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#rotationchangetype19) | 否 | 否 | 窗口旋转事件类型，如窗口即将旋转、窗口旋转结束等。 |
 | orientation | number | 否 | 否 | 窗口显示方向。 - 0表示竖屏。 - 1表示反向横屏。 - 2表示反向竖屏。 - 3表示横屏。 开发者在使用时，需要注意该方向与display对象的属性orientation含义不一致。 |
-| displayId | number | 否 | 否 | 窗口所在屏幕Id。 |
+| displayId | number | 否 | 否 | 窗口所在屏幕ID，该参数为整数。 |
 | displayRect | [Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#rect7) | 否 | 否 | 窗口所在屏幕旋转后的矩形区域大小。 |
 
 #### RotationChangeResult19+
@@ -564,7 +564,7 @@ Callback<T, V = void> {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| rectType | [RectType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#recttype19) | 否 | 否 | 窗口矩形区域坐标系类型。 |
+| rectType | [RectType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#recttype19) | 否 | 否 | 窗口矩形区域坐标系类型，用于指定窗口矩形区域使用的坐标系，如屏幕坐标系、父窗口坐标系等。 |
 | windowRect | [Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#rect7) | 否 | 否 | 相对于屏幕或父窗坐标系的窗口矩形区域信息。 |
 
 #### OrientationResult
@@ -581,7 +581,7 @@ Callback<T, V = void> {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| executionResult | [OrientationExecutionResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#orientationexecutionresult) | 否 | 否 | 窗口显示方向的执行结果枚举。 |
+| executionResult | [OrientationExecutionResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#orientationexecutionresult) | 否 | 否 | 窗口显示方向的执行结果枚举，表示设置窗口显示方向的操作结果，例如生效、不生效、挂起等。 |
 
 #### SubWindowOptions11+
 
@@ -596,10 +596,10 @@ Callback<T, V = void> {
 | isModal12+ | boolean | 否 | 是 | 子窗口是否启用模态属性。true表示子窗口启用模态属性，false表示子窗口禁用模态属性。不设置，则默认为false。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | modalityType14+ | [ModalityType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#modalitytype14) | 否 | 是 | 子窗口模态类型，仅当子窗口启用模态属性时生效。不设置，则默认为WINDOW_MODALITY。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
 | windowRect18+ | [Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#rect7) | 否 | 是 | 子窗口矩形区域，其中子窗口存在大小限制，具体参考[resize()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#resize9)方法。不设置且未调用[showWindow()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#showwindow9)显示前，则默认为{left: 0, top: 0, width: 0, height: 0}。具体参考[子窗口开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/subwindow-guide)。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| zLevel18+ | number | 否 | 是 | 子窗口层级级别，仅当子窗口未启用模态属性，即未设置isModal时生效。该参数是整数，取值范围为[-10000, 10000]，浮点数输入将向下取整。不设置，则默认为0。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| zLevel18+ | number | 否 | 是 | 子窗口层级级别，仅当子窗口未启用模态属性，即未设置isModal时生效。该参数应为整数，取值范围为[-10000, 10000]，浮点数输入将向下取整。不设置，则默认为0。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | maximizeSupported19+ | boolean | 否 | 是 | 子窗口是否支持最大化特性。true表示子窗口支持最大化，false表示子窗口不支持最大化。不设置，则默认为false。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 **设备行为差异：** 该参数在支持并处于[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态的设备上可正常调用；在不支持[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态的设备上，作为入参使用时，对应接口不生效不报错；在支持但不处于[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态的设备上，作为入参使用时，对应接口不生效不报错，切换到[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#freeform-window自由窗口)状态后生效。 |
 | outlineEnabled20+ | boolean | 否 | 是 | 子窗口是否显示描边。true表示子窗口显示描边，false表示子窗口不显示描边。不设置，则默认为false。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **设备行为差异：** 该参数在PC/2in1设备、其他设备的电脑模式中可正常调用，在其他设备和其他模式中作为入参使用时，对应接口不生效不报错。 |
-| zLevelAboveParentLoosened | boolean | 否 | 是 | 子窗是否是[独立子窗](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-type-overview#辅助窗口)。true表示子窗是独立子窗，false表示子窗不是独立子窗。不设置，则默认为false。 **起始版本：** 26.0.0 **元服务API：** 从API version 26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| zLevelAboveParentLoosened | boolean | 否 | 是 | 子窗口是否是[独立子窗](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-type-overview#辅助窗口)。true表示子窗口是独立子窗，false表示子窗口不是独立子窗。不设置，则默认为false。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### KeyFramePolicy20+
 
@@ -623,8 +623,8 @@ Callback<T, V = void> {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| displayId | number | 否 | 否 | 主窗口所在的屏幕ID。 |
-| windowId | number | 否 | 否 | 主窗口ID。 |
+| displayId | number | 否 | 否 | 主窗口所在的屏幕ID，该参数应为正整数。 |
+| windowId | number | 否 | 否 | 主窗口ID，该参数应为正整数。 |
 | showing | boolean | 否 | 否 | 主窗口的前后台状态。true表示主窗口在前台，false表示主窗口不在前台。 |
 | label | string | 否 | 否 | 主窗口的任务名称。 |
 

@@ -2,8 +2,8 @@
 title: "fido2_api.h"
 upstream_id: "harmonyos-references/onlineauthentication_capi_header_fido2"
 catalog: "harmonyos-references"
-content_hash: "3ef30a0bd0b0"
-synced_at: "2026-07-28T16:50:30.445192"
+content_hash: "c9c59558cac8"
+synced_at: "2026-08-29T18:16:31.285572"
 ---
 
 # fido2_api.h
@@ -103,7 +103,7 @@ synced_at: "2026-07-28T16:50:30.445192"
 | [FIDO2_TokenBindingStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey#fido2_tokenbindingstatus-1) { FIDO2_PRESENT = 0, FIDO2_SUPPORTED = 1 } | TokenBinding协议的状态。 |
 | [FIDO2_AttestationConveyancePreference](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey#fido2_attestationconveyancepreference-1) { FIDO2_NONE = 0, FIDO2_INDIRECT = 1, FIDO2_DIRECT = 2, FIDO2_ENTERPRISE = 3 } | 供WebAuthn依赖方在生成凭据时参考，以指定凭据传递的首选项。 |
 | [FIDO2_UserVerificationRequirement](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey#fido2_userverificationrequirement-1) { FIDO2_REQUIRED = 0, FIDO2_PREFERRED = 1, FIDO2_DISCOURAGED = 2 } | 依赖方可能需要对某些操作进行用户鉴权（认证当前用户是否为用户）， 但不需要对其他操作进行认证。定义枚举类型是为了区分不同的需求级别。 |
-| [FIDO2_AuthenticatorAttachment](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey#fido2_authenticatorattachment-1) { FIDO2_PLATFORM = 0, FIDO2_CROSS_PLATFORM = 1 } | 认证器信息（FIDO2_PLATFORM表示平台，FIDO2_ROAMING表示漫游）。默认值为FIDO2_PLATFORM。可选。 |
+| [FIDO2_AuthenticatorAttachment](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey#fido2_authenticatorattachment-1) { FIDO2_PLATFORM = 0, FIDO2_CROSS_PLATFORM = 1 } | 认证器信息（FIDO2_PLATFORM表示平台，FIDO2_CROSS_PLATFORM表示漫游）。默认值为FIDO2_PLATFORM。可选。 |
 | [FIDO2_AuthenticatorTransport](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey#fido2_authenticatortransport-1) { FIDO2_USB = 0, FIDO2_NFC = 1, FIDO2_BLE = 2, FIDO2_SMART_CARD = 3, FIDO2_HYBRID = 4, FIDO2_INTERNAL = 5 } | 认证器传输方式的枚举。 |
 | [FIDO2_Algorithm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey#fido2_algorithm-1) { FIDO2_ES256 = -7, FIDO2_ES384 = -35, FIDO2_ES512 = -36, FIDO2_RS256 = -257, FIDO2_RS384 = -258, FIDO2_RS512 = -259, FIDO2_PS256 = -37, FIDO2_PS384 = -38, FIDO2_PS512 = -39 } | FIDO2支持的密码算法枚举。 |
 | [FIDO2_PublicKeyCredentialHint](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey#fido2_publickeycredentialhint-1) { FIDO2_SECURITY_KEY = 0, FIDO2_CLIENT_DEVICE = 1, FIDO2_HINT_HYBRID = 2 } | 认证方式指示的枚举。 |

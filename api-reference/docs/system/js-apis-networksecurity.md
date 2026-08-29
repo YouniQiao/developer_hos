@@ -2,8 +2,8 @@
 title: "@ohos.net.networkSecurity (网络安全校验)"
 upstream_id: "harmonyos-references/js-apis-networksecurity"
 catalog: "harmonyos-references"
-content_hash: "a0a22e0aa09c"
-synced_at: "2026-07-28T16:50:43.461406"
+content_hash: "bf60c62d1ce0"
+synced_at: "2026-08-29T18:16:43.349561"
 ---
 
 # @ohos.net.networkSecurity (网络安全校验)
@@ -107,11 +107,11 @@ certVerification(cert: CertBlob, caCert?: CertBlob): Promise<number>
 | 2305010 | Certificate has expired. |
 | 2305011 | CRL is not yet valid. |
 | 2305012 | CRL has expired. |
-| 2305018 | Self-signed certificate. |
+| 2305018 | Self-signed certificate. 适用版本：12+ |
 | 2305023 | Certificate has been revoked. |
 | 2305024 | Invalid certificate authority (CA). |
 | 2305027 | Certificate is untrusted. |
-| 2305069 | Invalid certificate verification context. |
+| 2305069 | Invalid certificate verification context. 适用版本：12+ |
 
 ![](./img/note_3.0-zh-cn.png) 这些错误代码对应于证书验证过程中的各种失败。
 
@@ -182,11 +182,11 @@ certVerificationSync(cert: CertBlob, caCert?: CertBlob): number
 | 2305010 | Certificate has expired. |
 | 2305011 | CRL is not yet valid. |
 | 2305012 | CRL has expired. |
-| 2305018 | Self-signed certificate. |
+| 2305018 | Self-signed certificate. 适用版本：12+ |
 | 2305023 | Certificate has been revoked. |
 | 2305024 | Invalid certificate authority (CA). |
 | 2305027 | Certificate is untrusted. |
-| 2305069 | Invalid certificate verification context. |
+| 2305069 | Invalid certificate verification context. 适用版本：12+ |
 
 ![](./img/note_3.0-zh-cn.png) 这些错误代码对应于证书验证过程中的各种失败。
 

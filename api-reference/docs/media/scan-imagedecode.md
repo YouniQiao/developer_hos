@@ -2,8 +2,8 @@
 title: "detectBarcode (图像识码)"
 upstream_id: "harmonyos-references/scan-imagedecode"
 catalog: "harmonyos-references"
-content_hash: "cce987a1aaef"
-synced_at: "2026-07-28T16:52:05.752034"
+content_hash: "98cc054b4dbf"
+synced_at: "2026-08-29T18:17:47.955787"
 ---
 
 # detectBarcode (图像识码)
@@ -110,19 +110,19 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 // 定义识码参数options
 let options: scanBarcode.ScanOptions = { scanTypes: [scanCore.ScanType.ALL], enableMultiMode: true, enableAlbum: true };
-// 通过picker拉起图库并选择图片
+// 通过PhotoViewPicker拉起图库并选择图片
 let photoOption = new photoAccessHelper.PhotoSelectOptions();
 photoOption.MIMEType = photoAccessHelper.PhotoViewMIMETypes.IMAGE_TYPE;
 photoOption.maxSelectNumber = 1;
 let photoPicker = new photoAccessHelper.PhotoViewPicker();
 photoPicker.select(photoOption).then((data) => {
-  // 定义识码参数inputImage，其中uri为picker选择图片
+  // 定义识码参数inputImage，其中uri为PhotoViewPicker选择的图片路径
   let inputImage: detectBarcode.InputImage = { uri: data.photoUris[0] };
   try {
     // 调用图片识码接口
     detectBarcode.decode(inputImage, options).then((data: Array<scanBarcode.ScanResult>) => {
       hilog.info(0x0001, '[Scan Sample]',
-        `Succeeded in getting ScanResult by promise with options, result is ${JSON.stringify(data)}`);
+        `Succeeded in getting ScanResult by promise with options, result length: ${data.length}`);
     }).catch((err: BusinessError) => {
       hilog.error(0x0001, '[Scan Sample]',
         `Failed to get ScanResult by promise with options. Code: ${err.code}, message: ${err.message}`);
@@ -177,13 +177,13 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 // 定义识码参数options
 let options: scanBarcode.ScanOptions = { scanTypes: [scanCore.ScanType.ALL], enableMultiMode: true, enableAlbum: true };
-// 通过picker拉起图库并选择图片
+// 通过PhotoViewPicker拉起图库并选择图片
 let photoOption = new photoAccessHelper.PhotoSelectOptions();
 photoOption.MIMEType = photoAccessHelper.PhotoViewMIMETypes.IMAGE_TYPE;
 photoOption.maxSelectNumber = 1;
 let photoPicker = new photoAccessHelper.PhotoViewPicker();
 photoPicker.select(photoOption).then((data) => {
-  // 定义识码参数inputImage，其中uri为picker选择图片
+  // 定义识码参数inputImage，其中uri为PhotoViewPicker选择的图片路径
   let inputImage: detectBarcode.InputImage = { uri: data.photoUris[0] };
   try {
     // 调用图片识码接口
@@ -194,7 +194,7 @@ photoPicker.select(photoOption).then((data) => {
         return;
       }
       hilog.info(0x0001, '[Scan Sample]',
-        `Succeeded in getting ScanResult by callback with options, result is ${JSON.stringify(data)}`);
+        `Succeeded in getting ScanResult by callback with options, result length: ${data.length}`);
     });
   } catch (err) {
     hilog.error(0x0001, '[Scan Sample]',
@@ -243,13 +243,13 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
-// 通过picker拉起图库并选择图片
+// 通过PhotoViewPicker拉起图库并选择图片
 let photoOption = new photoAccessHelper.PhotoSelectOptions();
 photoOption.MIMEType = photoAccessHelper.PhotoViewMIMETypes.IMAGE_TYPE;
 photoOption.maxSelectNumber = 1;
 let photoPicker = new photoAccessHelper.PhotoViewPicker();
 photoPicker.select(photoOption).then((data) => {
-  // 定义识码参数inputImage，其中uri为picker选择图片
+  // 定义识码参数inputImage，其中uri为PhotoViewPicker选择的图片路径
   let inputImage: detectBarcode.InputImage = { uri: data.photoUris[0] };
   try {
     // 调用图片识码接口
@@ -260,7 +260,7 @@ photoPicker.select(photoOption).then((data) => {
         return;
       }
       hilog.info(0x0001, '[Scan Sample]',
-        `Succeeded in getting ScanResult by callback, result is ${JSON.stringify(data)}`);
+        `Succeeded in getting ScanResult by callback, result length: ${data.length}`);
     });
   } catch (err) {
     hilog.error(0x0001, '[Scan Sample]',
@@ -399,7 +399,7 @@ let options: scanBarcode.ScanOptions = {
 try {
   detectBarcode.decodeImage(byteImg, options).then((data: detectBarcode.DetectResult) => {
     hilog.info(0x0001, '[Scan Sample]',
-      `Succeeded in getting DetectResult by promise with options, result is ${JSON.stringify(data)}`);
+      `Succeeded in getting DetectResult by promise with options, result length: ${data.scanResults.length}, zoomValue: ${data.zoomValue}`);
   }).catch((err: BusinessError) => {
     hilog.error(0x0001, '[Scan Sample]',
       `Failed to get DetectResult by promise with options. Code: ${err.code}, message: ${err.message}`);

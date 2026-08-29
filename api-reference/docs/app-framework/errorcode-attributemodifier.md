@@ -2,8 +2,8 @@
 title: "动态属性设置错误码"
 upstream_id: "harmonyos-references/errorcode-attributemodifier"
 catalog: "harmonyos-references"
-content_hash: "e4c6d6087bb1"
-synced_at: "2026-07-28T16:49:49.687197"
+content_hash: "dccf996aaabd"
+synced_at: "2026-08-29T18:15:55.875603"
 ---
 
 # 动态属性设置错误码
@@ -26,4 +26,4 @@ attributeModifier 的动态属性设置机制当前未实现对部分接口的�
 
 处理步骤
 
-请停止使用不支持的接口，具体请参考[用attributeModifier设置组件动态属性出现JSCrash](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-attribute-modifier-faq#使用attributemodifier设置组件动态属性出现jscrash)。
+请停止使用不支持的接口，具体请参考[使用AttributeModifier设置组件动态属性，出现JS Crash](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-attribute-modifier-faq#使用attributemodifier设置组件动态属性出现js-crash)。

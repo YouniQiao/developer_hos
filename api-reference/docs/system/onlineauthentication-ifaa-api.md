@@ -2,13 +2,13 @@
 title: "IFAA"
 upstream_id: "harmonyos-references/onlineauthentication-ifaa-api"
 catalog: "harmonyos-references"
-content_hash: "ba1d02b46bb3"
-synced_at: "2026-07-28T16:50:29.784707"
+content_hash: "c76a522a60a1"
+synced_at: "2026-08-29T18:16:29.987393"
 ---
 
 # IFAA
 
-IFAA提供移动端免密身份认证能力，实现接入IIFAA（互联网可信认证联盟）的业务免密登录，免密支付等业务场景（注：IFAA在本文中指HarmonyOS系统免密认证模块，IIFAA在本文中指联盟及相关技术规范）。
+IFAA提供移动端免密认证能力，实现接入IIFAA（互联网可信认证联盟）的业务免密登录，免密支付等业务场景（注：IFAA在本文中指HarmonyOS系统免密认证模块，IIFAA在本文中指联盟及相关技术规范）。
 
 起始版本： 4.1.0(11)
 
@@ -18,7 +18,7 @@ IFAA提供移动端免密身份认证能力，实现接入IIFAA（互联网可�
 import { ifaa } from '@kit.OnlineAuthenticationKit';
 ```
 
-#### getVersionSync
+#### ifaa.getVersionSync
 
 getVersionSync(): number
 
@@ -54,7 +54,7 @@ console.info('Succeeded in doing getVersionSync. version:', res);
 // 开发者处理res
 ```
 
-#### getAnonymousIdSync
+#### ifaa.getAnonymousIdSync
 
 getAnonymousIdSync(userToken: Uint8Array): Uint8Array
 
@@ -101,7 +101,7 @@ console.info('Succeeded in doing getAnonymousIdSync. anonymousId:', getAnonIdRes
 // 开发者处理getAnonIdResult ....
 ```
 
-#### getAnonymousId
+#### ifaa.getAnonymousId
 
 getAnonymousId(userToken: Uint8Array): Promise<Uint8Array>
 
@@ -154,7 +154,7 @@ getAnonIdPromise.then(result => {
  });
 ```
 
-#### getAnonymousId
+#### ifaa.getAnonymousId
 
 getAnonymousId(userToken: Uint8Array, callback: AsyncCallback<Uint8Array>): void
 
@@ -204,7 +204,7 @@ ifaa.getAnonymousId(arg,
   });
 ```
 
-#### queryStatusSync
+#### ifaa.queryStatusSync
 
 queryStatusSync(userToken: Uint8Array): boolean
 
@@ -254,7 +254,7 @@ if (status) {
 }
 ```
 
-#### queryStatus
+#### ifaa.queryStatus
 
 queryStatus(userToken: Uint8Array): Promise<boolean>
 
@@ -307,7 +307,7 @@ promise.then(queryStatusResult => {
 });
 ```
 
-#### queryStatus
+#### ifaa.queryStatus
 
 queryStatus(userToken: Uint8Array, callback: AsyncCallback<boolean>): void
 
@@ -357,7 +357,7 @@ ifaa.queryStatus(arg,
   });
 ```
 
-#### register
+#### ifaa.register
 
 register(registerData: Uint8Array): Promise<Uint8Array>
 
@@ -410,7 +410,7 @@ registerPromise.then(registerResult => {
 });
 ```
 
-#### register
+#### ifaa.register
 
 register(registerData: Uint8Array, callback: AsyncCallback<Uint8Array>): void
 
@@ -459,7 +459,7 @@ ifaa.register(arg, (err: BusinessError, registerResult: Uint8Array) => {
 });
 ```
 
-#### preAuthSync
+#### ifaa.preAuthSync
 
 preAuthSync(): Uint8Array
 
@@ -497,7 +497,7 @@ console.info('Succeeded in doing preAuthSync. preAuthResult:', preAuthResult);
 // 开发者处理preAuthResult
 ```
 
-#### preAuth
+#### ifaa.preAuth
 
 preAuth(): Promise<Uint8Array>
 
@@ -541,7 +541,7 @@ preAuthPromise.then(preAuthResult => {
 });
 ```
 
-#### preAuth
+#### ifaa.preAuth
 
 preAuth(callback: AsyncCallback<Uint8Array>): void
 
@@ -588,7 +588,7 @@ ifaa.preAuth(
   });
 ```
 
-#### authSync
+#### ifaa.authSync
 
 authSync(authToken: Uint8Array, authData: Uint8Array): Uint8Array
 
@@ -638,7 +638,7 @@ console.info('Succeeded in doing authSync. authResult:', authResult);
 // 开发者处理authResult ....
 ```
 
-#### auth
+#### ifaa.auth
 
 auth(authToken: Uint8Array, authData: Uint8Array): Promise<Uint8Array>
 
@@ -694,7 +694,7 @@ authPromise.then(authResult => {
 });
 ```
 
-#### auth
+#### ifaa.auth
 
 auth(authToken: Uint8Array, authData: Uint8Array, callback: AsyncCallback<Uint8Array>): void
 
@@ -747,7 +747,7 @@ ifaa.auth(token, arg,
   });
 ```
 
-#### deregisterSync
+#### ifaa.deregisterSync
 
 deregisterSync(deregisterData: Uint8Array): void
 
@@ -786,7 +786,7 @@ let arg = new Uint8Array([0]);
 ifaa.deregisterSync(arg);
 ```
 
-#### deregister
+#### ifaa.deregister
 
 deregister(deregisterData: Uint8Array): Promise<void>
 
@@ -838,7 +838,7 @@ promise.then(()=> {
 });
 ```
 
-#### deregister
+#### ifaa.deregister
 
 deregister(deregisterData: Uint8Array, callback: AsyncCallback<void>): void
 
@@ -887,7 +887,7 @@ ifaa.deregister(arg,
 });
 ```
 
-#### getProtocolVersionSync
+#### ifaa.getProtocolVersionSync
 
 getProtocolVersionSync(): Uint8Array
 
@@ -923,7 +923,7 @@ getProtocolVersionSync(): Uint8Array
 let res: Uint8Array = ifaa.getProtocolVersionSync();
 ```
 
-#### getProtocolVersion
+#### ifaa.getProtocolVersion
 
 getProtocolVersion(): Promise<Uint8Array>
 
@@ -967,7 +967,7 @@ promise.then(result => {
 });
 ```
 
-#### getProtocolVersion
+#### ifaa.getProtocolVersion
 
 getProtocolVersion(callback: AsyncCallback<Uint8Array>): void
 
@@ -1014,7 +1014,7 @@ ifaa.getProtocolVersion(
   });
 ```
 
-#### getSupportedCertTypesSync
+#### ifaa.getSupportedCertTypesSync
 
 getSupportedCertTypesSync(): Uint8Array
 
@@ -1052,7 +1052,7 @@ console.info('Succeeded in doing getSupportedCertTypesSync. supportedCertTypes:'
 // 开发者处理result
 ```
 
-#### getSupportedCertTypes
+#### ifaa.getSupportedCertTypes
 
 getSupportedCertTypes(): Promise<Uint8Array>
 
@@ -1096,7 +1096,7 @@ promise.then(result => {
 });
 ```
 
-#### getSupportedCertTypes
+#### ifaa.getSupportedCertTypes
 
 getSupportedCertTypes(callback: AsyncCallback<Uint8Array>): void
 

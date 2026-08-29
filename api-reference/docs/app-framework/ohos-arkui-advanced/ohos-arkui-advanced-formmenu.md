@@ -2,8 +2,8 @@
 title: "FormMenu"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-formmenu"
 catalog: "harmonyos-references"
-content_hash: "75fbcc509a17"
-synced_at: "2026-08-24T15:40:32.847439"
+content_hash: "ef2a69a6ed7b"
+synced_at: "2026-08-29T18:15:12.483700"
 ---
 
 # FormMenu
@@ -22,6 +22,8 @@ synced_at: "2026-08-24T15:40:32.847439"
 
 卡片具体开发指导请参考[卡片开发指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/formkit-overview)。
 
+从API version 18开始，建议使用[formProvider.openFormManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formprovider#formprovideropenformmanager18)接口。
+
 #### 导入模块
 
 ```
@@ -38,14 +40,9 @@ import { AddFormMenuItem } from '@kit.ArkUI';
 
 #### AddFormMenuItem
 
-```
-AddFormMenuItem(
-  want: Want,
-  componentId: string,
-  options?: AddFormOptions
-): void
-```
- 装饰器类型：@Builder
+AddFormMenuItem(want: Want, componentId: string, options?: AddFormOptions): void
+
+装饰器类型：@Builder
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -218,10 +215,10 @@ struct WidgetCard {
 ```
  高级自定义控件界面
 
-![](./img/zh-cn_image_0000002723006069.jpeg)
+![](./img/zh-cn_image_0000002701640154.jpeg)
 
 调用高级自定义控件桌面加桌结果
 
 左侧是formBindingData为空加桌结果，右侧是formBindingData为{ data: 'share' }的加桌结果。
 
-![](./img/zh-cn_image_0000002693046708.jpeg)
+![](./img/zh-cn_image_0000002731359373.jpeg)
