@@ -2,8 +2,8 @@
 title: "custom_span.h"
 upstream_id: "harmonyos-references/capi-custom-span-h"
 catalog: "harmonyos-references"
-content_hash: "3aad6b2a2f5b"
-synced_at: "2026-08-29T18:15:40.917309"
+content_hash: "13837a03bec2"
+synced_at: "2026-09-01T18:13:39.423464"
 ---
 
 # custom_span.h
@@ -201,7 +201,7 @@ int32_t OH_ArkUI_CustomSpanMetrics_SetWidth(ArkUI_CustomSpanMetrics* metrics, fl
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 参数验证失败。 可能原因：参数验证失败，参数不能为空。 处理步骤：请确保传入的metrics参数不为空指针。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 参数验证失败。 可能原因：参数不能为空。 处理步骤：请确保传入的metrics参数不为空指针。 |
 
 #### [h2]OH_ArkUI_CustomSpanMetrics_SetHeight()
 
@@ -230,7 +230,7 @@ int32_t OH_ArkUI_CustomSpanMetrics_SetHeight(ArkUI_CustomSpanMetrics* metrics, f
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 参数验证失败。 可能原因：参数验证失败，参数不能为空。 处理步骤：请确保传入的metrics参数不为空指针。 |
+| int32_t | 错误码。 [ARKUI_ERROR_CODE_NO_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 成功。 [ARKUI_ERROR_CODE_PARAM_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-error-code-h#arkui_errorcode) 参数验证失败。 可能原因：参数不能为空。 处理步骤：请确保传入的metrics参数不为空指针。 |
 
 #### [h2]OH_ArkUI_CustomSpanDrawInfo_Create()
 
@@ -298,7 +298,7 @@ float OH_ArkUI_CustomSpanDrawInfo_GetXOffset(ArkUI_CustomSpanDrawInfo* info)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkUI_CustomSpanDrawInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-customspandrawinfo)* info | 自定义绘制Span绘制信息指针，用于传入需要获取x轴偏移值的绘制信息对象。参数不能为空，否则会导致参数验证失败。 |
+| [ArkUI_CustomSpanDrawInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-customspandrawinfo)* info | 自定义绘制Span绘制信息指针，用于传入需要获取x轴偏移值的绘制信息对象。参数不能为空，否则会导致参数验证失败。必须是通过OH_ArkUI_CustomSpanDrawInfo_Create()创建的有效对象。 |
 
 返回：
 
@@ -354,7 +354,7 @@ float OH_ArkUI_CustomSpanDrawInfo_GetLineBottom(ArkUI_CustomSpanDrawInfo* info)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkUI_CustomSpanDrawInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-customspandrawinfo)* info | 自定义绘制Span绘制信息指针，用于传入需要获取下边距的绘制信息对象。参数不能为空，否则会导致参数验证失败。 |
+| [ArkUI_CustomSpanDrawInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-customspandrawinfo)* info | 自定义绘制Span绘制信息指针，用于传入需要获取下边距的绘制信息对象。参数不能为空，否则会导致参数验证失败。必须是通过OH_ArkUI_CustomSpanDrawInfo_Create()创建的有效对象。 |
 
 返回：
 

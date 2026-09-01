@@ -2,8 +2,8 @@
 title: "Class (Canvas)"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing-canvas"
 catalog: "harmonyos-references"
-content_hash: "074b345a1401"
-synced_at: "2026-08-29T18:17:49.962589"
+content_hash: "b4e085af567b"
+synced_at: "2026-09-01T18:15:42.528640"
 ---
 
 # Class (Canvas)
@@ -328,6 +328,8 @@ class DrawingRenderNode extends RenderNode {
     let spotColor : common2D.Color = {alpha: 0xFF, red: 0xFF, green: 0, blue: 0};
     let shadowFlag : drawing.ShadowFlag = drawing.ShadowFlag.ALL;
     canvas.drawShadow(path, planeParams, devLightPos, 30, ambientColor, spotColor, shadowFlag);
+    canvas.detachPen();
+    canvas.detachBrush();
   }
 }
 ```
@@ -1331,7 +1333,7 @@ drawTextBlob(blob: TextBlob, x: number, y: number): void
 | x | number | 是 | 所绘制出的文字基线（下图蓝线）的左端点（下图红点）的横坐标，该参数为浮点数。单位为物理像素px。 |
 | y | number | 是 | 所绘制出的文字基线（下图蓝线）的左端点（下图红点）的纵坐标，该参数为浮点数。单位为物理像素px。 |
 
-![](./img/zh-cn_image_0000002731360129.png)
+![](./img/zh-cn_image_0000002736436217.png)
 
 错误码：
 
@@ -1438,7 +1440,7 @@ drawSingleCharacter(text: string, font: Font, x: number, y: number): void
 | x | number | 是 | 所绘制出的字符基线（下图蓝线）的左端点（下图红点）的x轴坐标，该参数为浮点数。单位为物理像素px。 |
 | y | number | 是 | 所绘制出的字符基线（下图蓝线）的左端点（下图红点）的y轴坐标，该参数为浮点数。单位为物理像素px。 |
 
-![](./img/zh-cn_image_0000002731360129.png)
+![](./img/zh-cn_image_0000002736436217.png)
 
 错误码：
 

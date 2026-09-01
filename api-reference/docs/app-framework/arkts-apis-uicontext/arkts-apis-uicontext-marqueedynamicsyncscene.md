@@ -2,8 +2,8 @@
 title: "Class (MarqueeDynamicSyncScene)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-marqueedynamicsyncscene"
 catalog: "harmonyos-references"
-content_hash: "4ad1472ff39a"
-synced_at: "2026-07-28T16:41:07.133536"
+content_hash: "e97a672c25c4"
+synced_at: "2026-09-01T18:11:29.730252"
 ---
 
 # Class (MarqueeDynamicSyncScene)
@@ -79,7 +79,7 @@ struct MarqueeExample {
           this.start = true;
           this.controller.start();
           this.scenes.forEach((scene: MarqueeDynamicSyncScene) => {
-            if (scene.type == MarqueeDynamicSyncSceneType.ANIMATION) {
+            if (scene.type === MarqueeDynamicSyncSceneType.ANIMATION) {
               scene.setFrameRateRange(this.frameRateRange);
             }
           });

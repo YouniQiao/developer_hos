@@ -2,8 +2,8 @@
 title: "progress"
 upstream_id: "harmonyos-references/js-service-widget-basic-progress"
 catalog: "harmonyos-references"
-content_hash: "af81b2f79a55"
-synced_at: "2026-07-09T00:58:31.656453"
+content_hash: "a0b8903a0731"
+synced_at: "2026-09-01T18:13:33.877794"
 ---
 
 # progress
@@ -26,7 +26,7 @@ synced_at: "2026-07-09T00:58:31.656453"
 
 不同类型的进度条还支持不同的属性：
 
-- 类型为horizontal、ring、scale-ring时，支持如下属性： 名称 类型 默认值 必填 描述 percent number 0 否 当前进度。取值范围为0-100。 secondarypercent(Rich) number 0 否 次级进度。取值范围为0-100。
+- 类型为horizontal、ring、scale-ring时，支持如下属性： 名称 类型 默认值 必填 描述 percent number 0 否 当前进度。取值范围为0-100。 secondarypercent number 0 否 次级进度。取值范围为0-100。
 - 类型为ring、scale-ring时，支持如下属性： 名称 类型 默认值 必填 描述 clockwise boolean true 否 圆环形进度条是否采用顺时针。
 - 类型为arc、eclipse时，支持如下属性： 名称 类型 默认值 必填 描述 percent number 0 否 当前进度。取值范围为0-100。
 
@@ -104,4 +104,4 @@ type=arc
 ```
  4*4卡片
 
-![](./img/zh-cn_image_0000002631254134.png)
+![](./img/zh-cn_image_0000002736315731.png)

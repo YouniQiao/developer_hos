@@ -2,8 +2,8 @@
 title: "Enums"
 upstream_id: "harmonyos-references/arkts-apis-media-e"
 catalog: "harmonyos-references"
-content_hash: "3709f9f393ca"
-synced_at: "2026-08-14T15:55:29.955710"
+content_hash: "fc2a7aeacbdd"
+synced_at: "2026-09-01T18:15:33.338031"
 ---
 
 # Enums
@@ -14,23 +14,21 @@ synced_at: "2026-08-14T15:55:29.955710"
 
 [Media错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-media)类型枚举。
 
-元服务API： 从API version 11开始，该接口支持在元服务中使用。
-
 系统能力： SystemCapability.Multimedia.Media.Core
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| AVERR_OK | 0 | 表示操作成功。 |
-| AVERR_NO_PERMISSION | 201 | 表示无权限执行此操作。 |
-| AVERR_INVALID_PARAMETER | 401 | 表示传入参数无效。 |
-| AVERR_UNSUPPORT_CAPABILITY | 801 | 表示当前版本不支持该API能力。 |
-| AVERR_NO_MEMORY | 5400101 | 表示系统内存不足或服务数量达到上限。 |
-| AVERR_OPERATE_NOT_PERMIT | 5400102 | 表示当前状态不允许或无权执行此操作。 |
-| AVERR_IO | 5400103 | 表示数据流异常信息。 |
-| AVERR_TIMEOUT | 5400104 | 表示系统或网络响应超时。 |
-| AVERR_SERVICE_DIED | 5400105 | 表示服务进程死亡。 |
-| AVERR_UNSUPPORT_FORMAT | 5400106 | 表示不支持当前媒体资源的格式。 |
-| AVERR_AUDIO_INTERRUPTED11+ | 5400107 | 表示音频焦点被抢占。 |
+| AVERR_OK | 0 | 表示操作成功。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| AVERR_NO_PERMISSION | 201 | 表示无权限执行此操作。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| AVERR_INVALID_PARAMETER | 401 | 表示传入参数无效。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| AVERR_UNSUPPORT_CAPABILITY | 801 | 表示当前版本不支持该API能力。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| AVERR_NO_MEMORY | 5400101 | 表示系统内存不足或服务数量达到上限。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| AVERR_OPERATE_NOT_PERMIT | 5400102 | 表示当前状态不允许或无权执行此操作。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| AVERR_IO | 5400103 | 表示数据流异常信息。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| AVERR_TIMEOUT | 5400104 | 表示系统或网络响应超时。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| AVERR_SERVICE_DIED | 5400105 | 表示服务进程死亡。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| AVERR_UNSUPPORT_FORMAT | 5400106 | 表示不支持当前媒体资源的格式。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| AVERR_AUDIO_INTERRUPTED11+ | 5400107 | 表示音频焦点被抢占。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | AVERR_IO_HOST_NOT_FOUND14+ | 5411001 | 表示解析或链接服务端地址错误。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
 | AVERR_IO_CONNECTION_TIMEOUT14+ | 5411002 | 表示网络连接超时。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
 | AVERR_IO_NETWORK_ABNORMAL14+ | 5411003 | 表示网络异常导致的数据或链路异常。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |

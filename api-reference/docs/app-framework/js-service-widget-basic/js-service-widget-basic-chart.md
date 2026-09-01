@@ -2,8 +2,8 @@
 title: "chart"
 upstream_id: "harmonyos-references/js-service-widget-basic-chart"
 catalog: "harmonyos-references"
-content_hash: "434b1ba9acfd"
-synced_at: "2026-07-09T17:25:13.803746"
+content_hash: "3d2225c7d088"
+synced_at: "2026-09-01T18:13:33.415015"
 ---
 
 # chart
@@ -106,7 +106,7 @@ synced_at: "2026-07-09T17:25:13.803746"
 
 | 名称 | 类型 | 默认值 | 必填 | 描述 |
 | --- | --- | --- | --- | --- |
-| startColor | Color | - | 否 | 起始位置的颜色，设置startColor必须设置endColor。不设置startColor时，会使用系统默认预置的颜色数组，具体颜色值见下表。 |
+| startColor | Color | - | 否 | 起始位置的颜色，必须与endColor同时设置。不设置startColor时，会使用系统默认预置的颜色数组，具体颜色值见下表。 |
 | endColor | Color | - | 否 | 终止位置的颜色，设置endColor必须设置startColor。 不设置startColor时，会使用系统默认预置的颜色数组。 |
 | value | number | 0 | 是 | 占比数据的所占份额，最大100。 |
 | name | string | - | 否 | 此类数据的名称。 |
@@ -249,7 +249,7 @@ synced_at: "2026-07-09T17:25:13.803746"
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664210409.png)
+ ![](./img/zh-cn_image_0000002736315727.png)
 2. 柱状图 
 ```
 <!-- xxx.hml -->
@@ -314,7 +314,7 @@ synced_at: "2026-07-09T17:25:13.803746"
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664330467.png)
+ ![](./img/zh-cn_image_0000002706676684.png)
 3. 量规图 
 ```
 <!-- xxx.hml -->
@@ -341,4 +341,4 @@ synced_at: "2026-07-09T17:25:13.803746"
   weights: 4, 2, 1;
 }
 ```
- ![](./img/zh-cn_image_0000002633851356.png)
+ ![](./img/zh-cn_image_0000002736435775.png)

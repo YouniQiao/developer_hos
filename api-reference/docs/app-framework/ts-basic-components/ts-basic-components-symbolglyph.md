@@ -2,8 +2,8 @@
 title: "SymbolGlyph"
 upstream_id: "harmonyos-references/ts-basic-components-symbolglyph"
 catalog: "harmonyos-references"
-content_hash: "72549c7be50e"
-synced_at: "2026-08-24T15:40:20.880628"
+content_hash: "303a224b3566"
+synced_at: "2026-09-01T18:12:14.408796"
 ---
 
 # SymbolGlyph
@@ -125,7 +125,7 @@ sys.symbol.ohos_lungs图标不支持设置fontWeight。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | string | 是 | SymbolGlyph组件字体粗细。 number类型取值[100, 900]，取值间隔为100，默认为400，取值越大，字体越粗。string类型仅支持number类型取值的字符串形式，例如“400”，以及“bold”、“bolder”、“lighter”、“regular”、“medium”，分别对应FontWeight中相应的枚举值。设置过大可能会在不同字体下有截断。传入超出取值范围或不符合间隔要求的值时取默认值。 |
+| value | number | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | string | 是 | SymbolGlyph组件字体粗细。 number类型取值[100, 900]，取值间隔为100，默认为400，取值越大，字体越粗。string类型支持number类型取值的字符串形式，例如“400”，以及“bold”、“bolder”、“lighter”、“regular”、“medium”，分别对应FontWeight中相应的枚举值。设置过大可能会在不同字体下有截断。 **说明：** 传入超出取值范围的值时取默认值。传入不符合间隔要求的值时也取默认值（仅支持100整数倍的值）。 |
 
 #### [h2]fontWeight
 
@@ -170,7 +170,7 @@ renderingStrategy(value: SymbolRenderingStrategy)
 
 不同渲染策略效果可参考以下示意图。
 
-![](./img/zh-cn_image_0000002723005763.png)
+![](./img/zh-cn_image_0000002706676054.png)
 
 #### [h2]effectStrategy
 
@@ -252,7 +252,7 @@ minFontScale(scale: Optional<number | Resource>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| scale | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | SymbolGlyph组件最小的字体缩放倍数。 取值范围：[0, 1] 设置为0，缩放最小。 **说明：** 设置的值小于0时，按值为0处理。设置的值大于1时，按值为1处理。异常值默认不生效。 |
+| scale | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | SymbolGlyph组件最小的字体缩放倍数。 取值范围：[0, 1] 设置为0，缩放最小。 **说明：** 设置的值小于0时，按值为0处理。设置的值大于1时，按值为1处理。异常值默认不生效。未设置时，不限制最小缩放倍数。 |
 
 #### [h2]maxFontScale18+
 
@@ -268,7 +268,7 @@ maxFontScale(scale: Optional<number | Resource>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| scale | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | SymbolGlyph组件最大的字体缩放倍数。 取值范围：[1, +∞) **说明：** 设置的值小于1时，按值为1处理。 |
+| scale | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | SymbolGlyph组件最大的字体缩放倍数。 取值范围：[1, +∞) **说明：** 设置的值小于1时，按值为1处理。未设置时，不限制最大缩放倍数。 |
 
 #### [h2]shaderStyle20+
 
@@ -304,7 +304,7 @@ symbolShadow(shadow: Optional<ShadowOptions>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| shadow | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | SymbolGlyph组件的阴影效果。 单位：[vp](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-pixel-units#基本像素单位) 不支持fill、type属性和color中的ColoringStrategy枚举值。 |
+| shadow | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | SymbolGlyph组件的阴影效果。 单位：[vp](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-pixel-units#基本像素单位) **说明：** 仅支持ShadowOptions中的radius、color、offsetX、offsetY属性，不支持fill、type属性和color中的ColoringStrategy枚举值。 |
 
 #### ScaleSymbolEffect12+
 
@@ -667,14 +667,14 @@ struct Index {
         }
 
         Column() {
-          Text("Normal")
+          Text('Normal')
           SymbolGlyph($r('sys.symbol.ohos_trash'))
             .fontWeight(FontWeight.Normal)
             .fontSize(96)
         }
 
         Column() {
-          Text("Bold")
+          Text('Bold')
           SymbolGlyph($r('sys.symbol.ohos_trash'))
             .fontWeight(FontWeight.Bold)
             .fontSize(96)
@@ -683,7 +683,7 @@ struct Index {
 
       Row() {
         Column() {
-          Text("单色")
+          Text('单色')
           SymbolGlyph($r('sys.symbol.ohos_folder_badge_plus'))
             .fontSize(96)
             .renderingStrategy(SymbolRenderingStrategy.SINGLE)
@@ -691,7 +691,7 @@ struct Index {
         }
 
         Column() {
-          Text("多色")
+          Text('多色')
           SymbolGlyph($r('sys.symbol.ohos_folder_badge_plus'))
             .fontSize(96)
             .renderingStrategy(SymbolRenderingStrategy.MULTIPLE_COLOR)
@@ -699,7 +699,7 @@ struct Index {
         }
 
         Column() {
-          Text("分层")
+          Text('分层')
           SymbolGlyph($r('sys.symbol.ohos_folder_badge_plus'))
             .fontSize(96)
             .renderingStrategy(SymbolRenderingStrategy.MULTIPLE_OPACITY)
@@ -709,21 +709,21 @@ struct Index {
 
       Row() {
         Column() {
-          Text("无动效")
+          Text('无动效')
           SymbolGlyph($r('sys.symbol.ohos_wifi'))
             .fontSize(96)
             .effectStrategy(SymbolEffectStrategy.NONE)
         }
 
         Column() {
-          Text("整体缩放动效")
+          Text('整体缩放动效')
           SymbolGlyph($r('sys.symbol.ohos_wifi'))
             .fontSize(96)
             .effectStrategy(SymbolEffectStrategy.SCALE)
         }
 
         Column() {
-          Text("层级动效")
+          Text('层级动效')
           SymbolGlyph($r('sys.symbol.ohos_wifi'))
             .fontSize(96)
             .effectStrategy(SymbolEffectStrategy.HIERARCHICAL)
@@ -733,7 +733,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723005765.gif)
+ ![](./img/zh-cn_image_0000002706676056.gif)
 
 #### [h2]示例2（设置动效和阴影）
 
@@ -765,7 +765,7 @@ struct Index {
     Column() {
       Row() {
         Column() {
-          Text("可变颜色动效")
+          Text('可变颜色动效')
           SymbolGlyph($r('sys.symbol.ohos_wifi'))
             .fontSize(96)
             .symbolEffect(new HierarchicalSymbolEffect(EffectFillStyle.ITERATIVE), this.isActive)
@@ -776,7 +776,7 @@ struct Index {
         }
         .margin({ right: 20 })
         Column() {
-          Text("替换动效")
+          Text('替换动效')
           SymbolGlyph(this.replaceFlag ? $r('sys.symbol.checkmark_circle') : $r('sys.symbol.repeat_1'))
             .fontSize(96)
             .symbolEffect(new ReplaceSymbolEffect(EffectScope.WHOLE), this.triggerValueReplace)
@@ -791,7 +791,7 @@ struct Index {
 
       Row() {
         Column() {
-          Text("禁用动效")
+          Text('禁用动效')
           SymbolGlyph(this.replaceFlag1 ? $r('sys.symbol.eye_slash') : $r('sys.symbol.eye'))
             .fontSize(96)
             .renderingStrategy(this.renderMode)
@@ -804,7 +804,7 @@ struct Index {
         }
         .margin({ right: 20 })
         Column() {
-          Text("快速替换动效")
+          Text('快速替换动效')
           SymbolGlyph(this.replaceFlag2 ? $r('sys.symbol.checkmark_circle') : $r('sys.symbol.repeat_1'))
             .fontSize(96)
             .symbolEffect(new ReplaceSymbolEffect(EffectScope.WHOLE, ReplaceEffectType.CROSS_FADE), this.triggerValueReplace2)
@@ -816,7 +816,7 @@ struct Index {
         }
         .margin({ right: 20 })
         Column() {
-          Text("阴影能力")
+          Text('阴影能力')
           SymbolGlyph($r('sys.symbol.ohos_wifi'))
             .fontSize(96)
             .symbolEffect(new HierarchicalSymbolEffect(EffectFillStyle.ITERATIVE), this.isActive)
@@ -836,7 +836,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002693046406.gif)
+ ![](./img/zh-cn_image_0000002736435143.gif)
 
 #### [h2]示例3（设置颜色渐变）
 
@@ -975,7 +975,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002722885851.jpeg)
+ ![](./img/zh-cn_image_0000002706835996.jpeg)
 
 #### [h2]示例4（设置SymbolGlyph颜色）
 
@@ -1025,7 +1025,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002693206282.jpeg)
+ ![](./img/zh-cn_image_0000002736315101.jpeg)
 
 #### [h2]示例5（设置字体粗细）
 
@@ -1088,4 +1088,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723005767.png)
+ ![](./img/zh-cn_image_0000002706676058.png)

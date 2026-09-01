@@ -2,8 +2,8 @@
 title: "Class (Font)"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing-font"
 catalog: "harmonyos-references"
-content_hash: "90a64c7227f9"
-synced_at: "2026-08-29T18:17:49.876059"
+content_hash: "8a5f788707a4"
+synced_at: "2026-09-01T18:15:42.548098"
 ---
 
 # Class (Font)
@@ -523,7 +523,6 @@ import { drawing } from '@kit.ArkGraphics2D';
 
 class DrawingRenderNode extends RenderNode {
   draw(context : DrawContext) {
-    const canvas = context.canvas;
     const font = new drawing.Font();
     font.setSize(20);
     let width = font.measureSingleCharacter("你");
@@ -1080,7 +1079,7 @@ let text: string = 'hello world';
 let glyphs: number[] = font.textToGlyphs(text);
 let fontBounds: Array<common2D.Rect> = font.getBounds(glyphs);
 for (let index = 0; index < fontBounds.length; index++) {
-  console.info("get fontWidths[", index, "] left:", fontBounds[index].left, " top:", fontBounds[index].top,
+  console.info("get fontBounds[", index, "] left:", fontBounds[index].left, " top:", fontBounds[index].top,
     " right:", fontBounds[index].right, " bottom:", fontBounds[index].bottom);
 }
 ```

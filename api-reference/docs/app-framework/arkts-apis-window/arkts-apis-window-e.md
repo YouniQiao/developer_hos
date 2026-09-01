@@ -2,8 +2,8 @@
 title: "Enums"
 upstream_id: "harmonyos-references/arkts-apis-window-e"
 catalog: "harmonyos-references"
-content_hash: "e17b1e7826a8"
-synced_at: "2026-08-29T18:12:37.406528"
+content_hash: "f3c2d82db9a8"
+synced_at: "2026-09-01T18:11:34.310491"
 ---
 
 # Enums
@@ -54,7 +54,7 @@ synced_at: "2026-08-29T18:12:37.406528"
 | TYPE_SYSTEM_GESTURE9+ | 2 | 表示侧边返回手势区域。当前所有设备均无此类型避让区域。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | TYPE_KEYBOARD9+ | 3 | 表示固定态软键盘区域。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | TYPE_NAVIGATION_INDICATOR11+ | 4 | 表示底部导航区域。当三键导航显示时，底部导航避让区域始终存在。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| TYPE_FLOAT_NAVIGATION | 5 | 表示三键导航区域。需要调用[setFloatNavigationAvoidAreaEnabled()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setfloatnavigationavoidareaenabled)接口使能后，才能获取到三键导航的避让区域，否则直接返回空的三键导航避让区域。 **系统能力：** SystemCapability.Window.SessionManager **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 26.0.0开始，该接口支持在元服务中使用。 |
+| TYPE_FLOAT_NAVIGATION | 5 | 表示三键导航区域。需要调用[setFloatNavigationAvoidAreaEnabled()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setfloatnavigationavoidareaenabled)接口使能后，才能获取到三键导航的避让区域，否则直接返回空的三键导航避让区域。 **系统能力：** SystemCapability.Window.SessionManager **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
 
 #### SplitRatioPreference
 

@@ -2,8 +2,8 @@
 title: "Gauge"
 upstream_id: "harmonyos-references/ts-basic-components-gauge"
 catalog: "harmonyos-references"
-content_hash: "ce434dfb7450"
-synced_at: "2026-07-28T16:46:11.376661"
+content_hash: "517e1f4e65b2"
+synced_at: "2026-09-01T18:12:33.203616"
 ---
 
 # Gauge
@@ -57,9 +57,9 @@ Gauge(options: GaugeOptions)
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| value8+ | number | 否 | 否 | 量规图的当前数据值，即图中指针指向位置。用于组件创建时量规图初始值的预置。 默认值：0 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **说明：** value不在min和max范围内时使用min作为默认值。 |
-| min8+ | number | 否 | 是 | 当前数据段最小值。 默认值：0 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **说明：** 不传入时默认最小值为0。 min大于max时使用默认值0和100。 max和min支持负数。 |
-| max8+ | number | 否 | 是 | 当前数据段最大值。 默认值：100 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **说明：** 不传入时默认最大值为100。 min大于max时使用默认值0和100。 max和min支持负数。 |
+| value8+ | number | 否 | 否 | 量规图的当前数据值，即图中指针指向位置。用于组件创建时量规图初始值的预置。 默认值：0 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **说明：** value不在min和max范围内时，取min作为实际值。 |
+| min8+ | number | 否 | 是 | 当前数据段最小值。 默认值：0 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **说明：** 不传入时默认值为0。 min大于max时，min取0，max取100。 max和min支持负数。 |
+| max8+ | number | 否 | 是 | 当前数据段最大值。 默认值：100 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **说明：** 不传入时默认值为100。 min大于max时，min取0，max取100。 max和min支持负数。 |
 
 #### 属性
 
@@ -81,7 +81,7 @@ value(value: number)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 量规图的数据值，可用于动态修改量规图的数据值。 **说明：** value不在min和max范围内时使用min作为默认值。 默认值：0 |
+| value | number | 是 | 量规图的数据值，可用于动态修改量规图的数据值。 **说明：** value不在min和max范围内时，取min作为实际值。 默认值：0 |
 
 #### [h2]startAngle
 
@@ -378,7 +378,7 @@ struct Gauge1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008728.png)
+ ![](./img/zh-cn_image_0000002736315191.png)
 
 #### [h2]示例2（设置单色量规图）
 
@@ -421,7 +421,7 @@ struct Gauge2 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848806.png)
+ ![](./img/zh-cn_image_0000002706676148.png)
 
 #### [h2]示例3（设置定制说明区）
 
@@ -482,7 +482,7 @@ struct Gauge2 {
     }
   }
 ```
- ![](./img/zh-cn_image_0000002686088237.png)
+ ![](./img/zh-cn_image_0000002736435235.png)
 
 #### [h2]示例4（设置辅助区）
 
@@ -536,7 +536,7 @@ struct Gauge4 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928407.png)
+ ![](./img/zh-cn_image_0000002706836088.png)
 
 #### [h2]示例5（设置最大最小值）
 
@@ -577,7 +577,7 @@ struct Gauge5 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008730.png)
+ ![](./img/zh-cn_image_0000002736315193.png)
 
 #### [h2]示例6（设置指针）
 
@@ -624,7 +624,7 @@ struct Gauge6 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848808.png)
+ ![](./img/zh-cn_image_0000002706676150.png)
 
 #### [h2]示例7（设置起止角度）
 
@@ -663,7 +663,7 @@ struct Gauge7 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088239.png)
+ ![](./img/zh-cn_image_0000002736435237.png)
 
 #### [h2]示例8（设置定制内容区）
 
@@ -671,7 +671,7 @@ struct Gauge7 {
 
 ```
 // xxx.ets
-// 该示例实现了Gauge组件使用Builder定制内容区，使用了环形图表组件，按钮和文本框。点击增加按钮，环形图表指针位置会向右偏移，反之点减少按钮环形图表指针位置会向左偏移。
+// 该示例实现了Gauge组件使用Builder定制内容区，使用了环形图表组件，按钮和文本组件。点击增加按钮，环形图表指针位置会向右偏移，反之点减少按钮环形图表指针位置会向左偏移。
 @Builder
 function buildGauge(config: GaugeConfiguration) {
   Column({ space: 30 }) {
@@ -745,7 +745,7 @@ struct RefreshExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928409.gif)
+ ![](./img/zh-cn_image_0000002706836090.gif)
 
 #### [h2]示例9（设置隐私隐藏）
 
@@ -775,7 +775,7 @@ struct GaugeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008732.gif)
+ ![](./img/zh-cn_image_0000002736315195.gif)
 
 #### [h2]示例10（设置自定义指针）
 
@@ -809,4 +809,4 @@ struct Gauge2 {
     </path>
 </svg>
 ```
- ![](./img/zh-cn_image_0000002655848810.png)
+ ![](./img/zh-cn_image_0000002706676152.png)

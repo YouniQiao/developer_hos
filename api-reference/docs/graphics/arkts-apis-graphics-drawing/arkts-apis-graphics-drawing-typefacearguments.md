@@ -2,8 +2,8 @@
 title: "Class (TypefaceArguments)"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing-typefacearguments"
 catalog: "harmonyos-references"
-content_hash: "6bf884fdef08"
-synced_at: "2026-08-29T18:17:51.225018"
+content_hash: "439b6c604312"
+synced_at: "2026-09-01T18:15:43.340563"
 ---
 
 # Class (TypefaceArguments)
@@ -55,7 +55,7 @@ addVariation(axis: string, value: number)
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | axis | string | 是 | 字体属性对象可变维度轴标签。具体支持哪些标签取决于加载的字体文件。具体支持的属性及标签值请参考对应的字体文件。 |
-| value | number | 是 | 字体属性对象可变维度字重的标签'wght'对应的属性值，需要在字体文件支持的范围内，否则不会生效。如果属性值小于支持的最小值，则默认和最小值一致。如果属性值大于支持的最大值，则默认和最大值效果一致。请打开对应的字体文件具体查看支持的属性值。 |
+| value | number | 是 | 字体属性对象可变维度轴标签对应的属性值，需要在字体文件支持的范围内，否则不会生效。如果属性值小于支持的最小值，则默认和最小值一致。如果属性值大于支持的最大值，则默认和最大值效果一致。请打开对应的字体文件具体查看支持的属性值。 |
 
 错误码：
 

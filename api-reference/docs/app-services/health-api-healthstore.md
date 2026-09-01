@@ -2,8 +2,8 @@
 title: "healthStore (运动健康数据服务)"
 upstream_id: "harmonyos-references/health-api-healthstore"
 catalog: "harmonyos-references"
-content_hash: "33007f176e1d"
-synced_at: "2026-08-29T18:18:16.517395"
+content_hash: "3909af28250e"
+synced_at: "2026-09-01T18:16:08.140134"
 ---
 
 # healthStore (运动健康数据服务)
@@ -723,11 +723,11 @@ Health Service初始化接口，使用Promise异步回调，其他接口调用�
 
 错误码：
 
-以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section401-参数不合法) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
+| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
 
 示例：
 
@@ -772,12 +772,12 @@ insertDataSource(dataSource: DataSourceBase): Promise<string>
 
 错误码：
 
-以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)。
+以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. |
-| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section401-参数不合法) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. |
+| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
 | [1002700001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700001-系统内部错误) | System internal error. |
 | [1002700002](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700002-数据库异常) | Database processing error. |
 | [1002701001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002701001-网络错误) | Network error. The network is unavailable. |
@@ -846,12 +846,12 @@ readDataSource(request: DataSourceReadRequest): Promise<DataSource[]>
 
 错误码：
 
-以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)。
+以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. |
-| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section401-参数不合法) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. |
+| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
 | [1002700001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700001-系统内部错误) | System internal error. |
 | [1002700002](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700002-数据库异常) | Database processing error. |
 | [1002701001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002701001-网络错误) | Network error. The network is unavailable. |
@@ -909,12 +909,12 @@ updateDataSource(dataSource: DataSource): Promise<void>
 
 错误码：
 
-以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)。
+以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. |
-| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section401-参数不合法) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. |
+| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
 | [1002700001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700001-系统内部错误) | System internal error. |
 | [1002700002](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700002-数据库异常) | Database processing error. |
 | [1002701001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002701001-网络错误) | Network error. The network is unavailable. |
@@ -986,12 +986,12 @@ saveData(sampleData: SamplePoint[] | SamplePoint): Promise<void>
 
 错误码：
 
-以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)。
+以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. |
-| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section401-参数不合法) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. |
+| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
 | [1002700001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700001-系统内部错误) | System internal error. |
 | [1002700002](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700002-数据库异常) | Database processing error. |
 | [1002701001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002701001-网络错误) | Network error. The network is unavailable. |
@@ -1057,12 +1057,12 @@ saveData(exerciseSequence: ExerciseSequence[] | ExerciseSequence): Promise<void>
 
 错误码：
 
-以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)。
+以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. |
-| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section401-参数不合法) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. |
+| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
 | [1002700001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700001-系统内部错误) | System internal error. |
 | [1002700002](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700002-数据库异常) | Database processing error. |
 | [1002701001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002701001-网络错误) | Network error. The network is unavailable. |
@@ -1174,12 +1174,12 @@ saveData(healthSequence: HealthSequence[] | HealthSequence): Promise<void>
 
 错误码：
 
-以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)。
+以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. |
-| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section401-参数不合法) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. |
+| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
 | [1002700001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700001-系统内部错误) | System internal error. |
 | [1002700002](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700002-数据库异常) | Database processing error. |
 | [1002701001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002701001-网络错误) | Network error. The network is unavailable. |
@@ -1277,12 +1277,12 @@ readData<T extends SamplePoint>(request: SamplePointReadRequest): Promise<T[]>
 
 错误码：
 
-以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)。
+以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. |
-| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section401-参数不合法) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. |
+| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
 | [1002700001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700001-系统内部错误) | System internal error. |
 | [1002700002](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700002-数据库异常) | Database processing error. |
 | [1002701001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002701001-网络错误) | Network error. The network is unavailable. |
@@ -1346,12 +1346,12 @@ readData<T extends ExerciseSequence>(request: ExerciseSequenceReadRequest): Prom
 
 错误码：
 
-以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)。
+以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. |
-| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section401-参数不合法) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. |
+| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
 | [1002700001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700001-系统内部错误) | System internal error. |
 | [1002700002](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700002-数据库异常) | Database processing error. |
 | [1002701001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002701001-网络错误) | Network error. The network is unavailable. |
@@ -1429,12 +1429,12 @@ readData<T extends HealthSequence>(request: HealthSequenceReadRequest): Promise<
 
 错误码：
 
-以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)。
+以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. |
-| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section401-参数不合法) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. |
+| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
 | [1002700001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700001-系统内部错误) | System internal error. |
 | [1002700002](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700002-数据库异常) | Database processing error. |
 | [1002701001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002701001-网络错误) | Network error. The network is unavailable. |
@@ -1502,12 +1502,12 @@ deleteData(request: SamplePointDeleteRequest | SamplePointDeleteRequest[]): Prom
 
 错误码：
 
-以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)。
+以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. |
-| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section401-参数不合法) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. |
+| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
 | [1002700001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700001-系统内部错误) | System internal error. |
 | [1002700002](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700002-数据库异常) | Database processing error. |
 | [1002701001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002701001-网络错误) | Network error. The network is unavailable. |
@@ -1565,12 +1565,12 @@ deleteData(request: ExerciseSequenceDeleteRequest | ExerciseSequenceDeleteReques
 
 错误码：
 
-以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)。
+以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. |
-| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section401-参数不合法) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. |
+| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
 | [1002700001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700001-系统内部错误) | System internal error. |
 | [1002700002](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700002-数据库异常) | Database processing error. |
 | [1002701001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002701001-网络错误) | Network error. The network is unavailable. |
@@ -1627,12 +1627,12 @@ deleteData(request: HealthSequenceDeleteRequest | HealthSequenceDeleteRequest[])
 
 错误码：
 
-以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)。
+以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. |
-| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section401-参数不合法) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. |
+| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
 | [1002700001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700001-系统内部错误) | System internal error. |
 | [1002700002](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700002-数据库异常) | Database processing error. |
 | [1002701001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002701001-网络错误) | Network error. The network is unavailable. |
@@ -1689,12 +1689,12 @@ deleteData(samplePoint: SamplePoint | SamplePoint[]): Promise<void>
 
 错误码：
 
-以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)。
+以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. |
-| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section401-参数不合法) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. |
+| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
 | [1002700001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700001-系统内部错误) | System internal error. |
 | [1002700002](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700002-数据库异常) | Database processing error. |
 | [1002701001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002701001-网络错误) | Network error. The network is unavailable. |
@@ -1755,12 +1755,12 @@ deleteData(exerciseSequence: ExerciseSequence | ExerciseSequence[]): Promise<voi
 
 错误码：
 
-以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)。
+以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. |
-| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section401-参数不合法) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. |
+| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
 | [1002700001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700001-系统内部错误) | System internal error. |
 | [1002700002](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700002-数据库异常) | Database processing error. |
 | [1002701001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002701001-网络错误) | Network error. The network is unavailable. |
@@ -1824,12 +1824,12 @@ deleteData(healthSequence: HealthSequence | HealthSequence[]): Promise<void>
 
 错误码：
 
-以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)。
+以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. |
-| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section401-参数不合法) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. |
+| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
 | [1002700001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700001-系统内部错误) | System internal error. |
 | [1002700002](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700002-数据库异常) | Database processing error. |
 | [1002701001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002701001-网络错误) | Network error. The network is unavailable. |
@@ -1892,12 +1892,12 @@ aggregateData<T extends AggregateResult>(request: AggregateRequest | AggregateRe
 
 错误码：
 
-以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)。
+以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. |
-| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section401-参数不合法) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. |
+| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
 | [1002700001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700001-系统内部错误) | System internal error. |
 | [1002700002](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700002-数据库异常) | Database processing error. |
 | [1002701001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002701001-网络错误) | Network error. The network is unavailable. |
@@ -1979,12 +1979,12 @@ requestAuthorizations(context: common.UIAbilityContext, request: AuthorizationRe
 
 错误码：
 
-以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)，其他错误码请参见[华为账号服务ArkTS错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account-kit)。
+以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)，其他错误码请参见[华为账号服务ArkTS错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account-kit)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. |
-| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section401-参数不合法) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. |
+| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
 
 ![](./img/note_3.0-zh-cn.png) 上述接口调用前，需先使用[init](#healthstoreinit)方法进行初始化。
 
@@ -2046,12 +2046,12 @@ getAuthorizations(request: AuthorizationRequest): Promise<AuthorizationResponse>
 
 错误码：
 
-以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)。
+以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. |
-| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section401-参数不合法) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. |
+| [401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed. |
 | [1002701001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002701001-网络错误) | Network error. The network is unavailable. |
 | [1002702001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002702001-账号未登录) | Account error. The user has not logged in with HUAWEI ID. |
 | [1002702002](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002702002-账号异常) | Account error. Failed to obtain account information with HUAWEI ID. |
@@ -2112,7 +2112,7 @@ cancelAuthorizations(): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. |
 
 ![](./img/note_3.0-zh-cn.png) 上述接口调用前，需先使用[init](#healthstoreinit)方法进行初始化。
 
@@ -2152,12 +2152,12 @@ syncAll(): Promise<void>
 
 错误码：
 
-以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)。
+以下错误码的详细介绍请参见[运动健康服务ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. |
-| [801](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section801-该设备不支持此api) | Capability not supported. Failed to call the API due to limited device capabilities. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. |
+| [801](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section801-该设备不支持此api) | Capability not supported. Failed to call the API due to limited device capabilities. |
 | [1002700001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700001-系统内部错误) | System internal error. |
 | [1002700002](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002700002-数据库异常) | Database processing error. |
 | [1002701001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1002701001-网络错误) | Network error. The network is unavailable. |

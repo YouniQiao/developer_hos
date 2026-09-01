@@ -2,8 +2,8 @@
 title: "@ohos.data.distributedKVStore (分布式键值数据库)"
 upstream_id: "harmonyos-references/js-apis-distributedkvstore"
 catalog: "harmonyos-references"
-content_hash: "8a976c5ed13f"
-synced_at: "2026-08-29T18:12:12.766238"
+content_hash: "180a0dca9704"
+synced_at: "2026-09-01T18:11:19.648061"
 ---
 
 # @ohos.data.distributedKVStore (分布式键值数据库)
@@ -4323,7 +4323,7 @@ try {
     if (err) {
       console.error(`Failed to backup. Code: ${err.code}, message: ${err.message} `);
     } else {
-      console.info(`Succeeded in backupping data`);
+      console.info(`Succeeded in backing up data`);
     }
   });
 } catch (err) {
@@ -4369,7 +4369,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 let backupFile = 'BK001';
 try {
   kvStore.backup(backupFile).then(() => {
-    console.info(`Succeeded in backupping data`);
+    console.info(`Succeeded in backing up data`);
   }).catch((err: BusinessError) => {
     console.error(`Failed to backup. Code: ${err.code}, message: ${err.message}`);
   });
@@ -4419,7 +4419,7 @@ const backupConfig: distributedKVStore.BackupConfig = {
 };
 try {
   kvStore.backupEx(backupConfig).then(() => {
-    console.info(`Succeeded in backupping data`);
+    console.info(`Succeeded in backing up data`);
   }).catch((err: BusinessError) => {
     console.error(`Failed to backup. Code: ${err.code}, message: ${err.message}`);
   });

@@ -2,8 +2,8 @@
 title: "热点加速错误码"
 upstream_id: "harmonyos-references/errorcode-hotspot-accelerate"
 catalog: "harmonyos-references"
-content_hash: "f62a2db662da"
-synced_at: "2026-07-28T16:51:11.817792"
+content_hash: "f13652f99057"
+synced_at: "2026-09-01T18:14:55.418605"
 ---
 
 # 热点加速错误码
@@ -29,26 +29,6 @@ Resource occupied by another thread.
 
 1. 确保同一上下文只在一个线程中使用。
 2. 等待前一个操作完成后再进行新的操作。
-
-#### 801 设备不支持此 API
-
-错误信息
-
-Device does not support this API.
-
-错误描述
-
-当前设备不支持该API。
-
-可能原因
-
-1. 设备硬件不支持热点加速功能。
-2. 设备系统版本过低，不支持该API。
-
-处理步骤
-
-1. 检查设备是否支持热点加速功能。
-2. 确保设备系统版本符合API要求。
 
 #### 1026800001 API 未正确初始化
 

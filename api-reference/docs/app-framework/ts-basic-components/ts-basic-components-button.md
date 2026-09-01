@@ -2,8 +2,8 @@
 title: "Button"
 upstream_id: "harmonyos-references/ts-basic-components-button"
 catalog: "harmonyos-references"
-content_hash: "dd018b7ca8c4"
-synced_at: "2026-07-28T16:44:09.486453"
+content_hash: "22ba1bd24176"
+synced_at: "2026-09-01T18:11:46.583848"
 ---
 
 # Button
@@ -544,7 +544,7 @@ struct ButtonExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008492.gif)
+ ![](./img/zh-cn_image_0000002736434997.gif)
 
 #### [h2]示例2 （为按钮添加渲染控制）
 
@@ -575,7 +575,7 @@ struct ButtonRenderControlExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848570.gif)
+ ![](./img/zh-cn_image_0000002706835850.gif)
 
 #### [h2]示例3 （设置按钮文本样式）
 
@@ -616,7 +616,7 @@ struct ButtonTestDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087999.png)
+ ![](./img/zh-cn_image_0000002736314955.png)
 
 #### [h2]示例4（设置不同尺寸按钮的重要程度）
 
@@ -654,7 +654,7 @@ struct ButtonExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928171.jpeg)
+ ![](./img/zh-cn_image_0000002706675912.jpeg)
 
 #### [h2]示例5（设置按钮的角色）
 
@@ -683,7 +683,7 @@ struct ButtonExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008494.jpeg)
+ ![](./img/zh-cn_image_0000002736434999.jpeg)
 
 #### [h2]示例6（设置自定义样式按钮）
 
@@ -751,7 +751,7 @@ struct ButtonExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848572.gif)
+ ![](./img/zh-cn_image_0000002706835852.gif)
 
 #### [h2]示例7（设置圆角矩形按钮）
 
@@ -792,7 +792,7 @@ struct ButtonExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088001.jpeg)
+ ![](./img/zh-cn_image_0000002736314957.jpeg)
 
 #### [h2]示例8（设置label文本水平对齐方式）
 
@@ -817,4 +817,78 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928173.jpeg)
+ ![](./img/zh-cn_image_0000002706675914.jpeg)
+
+#### [h2]示例9（设置按钮的沉浸光感效果）
+
+该示例使用通用属性[systemMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemmaterial)接口来设置组件的系统材质，以实现沉浸光感效果。
+
+组件沉浸光感效果会根据设备算力与用户在系统中设置的沉浸光感效果自适应调整，开发者无需额外适配。
+
+从API版本26.0.0开始，新增systemMaterial属性。
+
+```
+import { uiMaterial } from '@kit.ArkUI';
+
+@Entry
+@Component
+struct Index {
+  @Builder
+  NavigationTitle() {
+    Column() {
+      Button('helloWorld')
+        .width(200)
+        .fontColor(Color.Black)
+        .systemMaterial(new uiMaterial.ImmersiveMaterial({
+          style: uiMaterial.ImmersiveStyle.THIN
+        }))
+        .backgroundColor('#7755bbff')
+    }
+    .width('100%')
+    .height('100%')
+  }
+
+  build() {
+    Column() {
+      Navigation() {
+        Row() {
+          Column()
+            .width('50%')
+            .height('100%')
+            .background(Color.White)
+
+          Column()
+            .width('50%')
+            .height('100%')
+            .background(Color.Black)
+        }
+        .height('100%')
+        .width('100%')
+        .margin({ top: 12, left: '10%' })
+      }
+      .title(this.NavigationTitle, {
+        systemMaterial: new uiMaterial.ImmersiveMaterial({
+          style: uiMaterial.ImmersiveStyle.ULTRA_THIN,
+          colorInvert: true,
+          interactive: true,
+          lightEffect: {}
+        }),
+        // systemMaterial和barStyle没有关联性，但是同时设置barStyle为STACK样式可获得最佳沉浸效果
+        barStyle: BarStyle.STACK
+      })
+      .hideTitleBar(false)
+      .titleMode(NavigationTitleMode.Free)
+      .onTitleModeChange((titleModel: NavigationTitleMode) => {
+        console.info('titleMode' + titleModel)
+      })
+    }
+  }
+}
+```
+ 未设置系统材质时：
+
+![](./img/zh-cn_image_0000002706703778.png)
+
+设置沉浸光感后：
+
+![](./img/zh-cn_image_0000002706863812.png)

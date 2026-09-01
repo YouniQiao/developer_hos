@@ -2,8 +2,8 @@
 title: "DataPanel"
 upstream_id: "harmonyos-references/ts-basic-components-datapanel"
 catalog: "harmonyos-references"
-content_hash: "298495ce645f"
-synced_at: "2026-07-28T16:46:09.069085"
+content_hash: "8b3744970146"
+synced_at: "2026-09-01T18:12:33.083253"
 ---
 
 # DataPanel
@@ -50,7 +50,7 @@ DataPanel(options: DataPanelOptions)
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | values | number[] | 否 | 否 | 数据值列表，数组长度范围[0, 9]，大于9个数据则取前9个数据。若数据值小于0则置为0。 |
-| max | number | 否 | 是 | - max大于0时，表示数据的最大值。 - max小于等于0时，max等于values数据值列表各项的和，按比例显示。 不传入时默认值：100。 |
+| max | number | 否 | 是 | - max大于0时，表示数据的最大值。 - max小于等于0时，max等于values数据值列表各项的和，按比例显示。 默认值：100。 |
 | type8+ | [DataPanelType](#datapaneltype8枚举说明) | 否 | 是 | 数据面板的类型（不支持动态修改）。 可选值：DataPanelType.Line（线性数据面板，适合在有限空间内展示多段数据对比）、DataPanelType.Circle（环形数据面板，适合直观展示数据占比关系）。 不传入时默认值为DataPanelType.Circle。 |
 
 #### DataPanelType8+枚举说明
@@ -192,7 +192,7 @@ DataPanelShadowOptions继承自[MultiShadowOptions](https://developer.huawei.com
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| colors | Array | 否 | 是 | 各数据段投影的颜色。 默认值：与valueColors值相同 **说明：** 若设置的投影颜色的个数少于数据段个数时，则显示的投影颜色的个数和设置的投影颜色个数一致。 若设置的投影颜色的个数多于数据段个数时，则显示的投影颜色的个数和数据段个数一致。 |
+| colors | Array | 否 | 是 | 各数据段投影的颜色。 默认值：与valueColors值相同 **说明：** 若设置的投影颜色的个数少于数据段个数时，则显示的投影颜色个数等于设置的投影颜色个数。 若设置的投影颜色的个数多于数据段个数时，则显示的投影颜色个数等于数据段个数。 |
 
 #### LinearGradient10+
 
@@ -299,7 +299,7 @@ struct DataPanelExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008726.png)
+ ![](./img/zh-cn_image_0000002736315189.png)
 
 #### [h2]示例2（设置渐变色和阴影）
 
@@ -357,7 +357,7 @@ struct LinearGradientDataPanelExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848804.png)
+ ![](./img/zh-cn_image_0000002706676146.png)
 
 #### [h2]示例3（设置关闭动画和阴影）
 
@@ -377,9 +377,6 @@ struct LinearGradientDataPanelExample {
   @State color4: string = '#20FF0000';
   @State colorArray: Array<LinearGradient | ResourceColor> = [this.color1, this.color2, this.color3, this.color4];
   @State bgColor: string = '#08182431';
-  @State offsetX: number = 15;
-  @State offsetY: number = 15;
-  @State radius: number = 5;
 
   build() {
     Column({ space: 5 }) {
@@ -400,7 +397,7 @@ struct LinearGradientDataPanelExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088235.png)
+ ![](./img/zh-cn_image_0000002736435233.png)
 
 #### [h2]示例4（设置定制内容区）
 
@@ -485,4 +482,4 @@ struct ChildItem {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928405.jpg)
+ ![](./img/zh-cn_image_0000002706836086.jpg)

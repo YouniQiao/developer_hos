@@ -2,8 +2,8 @@
 title: "列表选择弹窗 (ActionSheet)"
 upstream_id: "harmonyos-references/ts-methods-action-sheet"
 catalog: "harmonyos-references"
-content_hash: "05e4ba37b233"
-synced_at: "2026-07-28T16:47:15.381547"
+content_hash: "24714f2514eb"
+synced_at: "2026-09-01T18:13:01.133913"
 ---
 
 # 列表选择弹窗 (ActionSheet)
@@ -87,7 +87,7 @@ type LevelMode = import('../api/@ohos.promptAction').LevelMode
 
 | 类型 | 说明 |
 | --- | --- |
-| import('../api/@ohos.promptAction').[LevelMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#levelmode15枚举说明) | 设置弹窗的显示层级。 |
+| import('../api/@ohos.promptAction').[LevelMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#levelmode15) | 设置弹窗的显示层级。 |
 
 #### ImmersiveMode15+
 
@@ -103,7 +103,7 @@ type ImmersiveMode = import('../api/@ohos.promptAction').ImmersiveMode
 
 | 类型 | 说明 |
 | --- | --- |
-| import('../api/@ohos.promptAction').[ImmersiveMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#immersivemode15枚举说明) | 设置页面内弹窗的蒙层效果。 |
+| import('../api/@ohos.promptAction').[ImmersiveMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#immersivemode15) | 设置页面内弹窗的蒙层效果。 |
 
 #### DismissDialogAction12+
 
@@ -250,7 +250,7 @@ struct ActionSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088353.gif)
+ ![](./img/zh-cn_image_0000002706836202.gif)
 
 #### [h2]示例2（可在主窗外弹出的弹窗）
 
@@ -321,7 +321,7 @@ struct ActionSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928521.jpg)
+ ![](./img/zh-cn_image_0000002736315307.jpg)
 
 #### [h2]示例3（设置弹窗的动画）
 
@@ -382,7 +382,7 @@ struct ActionSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008844.gif)
+ ![](./img/zh-cn_image_0000002706676268.gif)
 
 #### [h2]示例4（设置弹窗的样式）
 
@@ -463,7 +463,7 @@ struct ActionSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848924.gif)
+ ![](./img/zh-cn_image_0000002736435353.gif)
 
 #### [h2]示例5（悬停态弹窗）
 
@@ -534,7 +534,7 @@ struct ActionSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088355.gif)
+ ![](./img/zh-cn_image_0000002706836204.gif)
 
 #### [h2]示例6（弹窗生命周期）
 
@@ -611,7 +611,7 @@ struct Example1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928523.gif)
+ ![](./img/zh-cn_image_0000002736315309.gif)
 
 #### [h2]示例7（自定义背景模糊效果参数）
 
@@ -670,7 +670,7 @@ struct ActionSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008846.png)
+ ![](./img/zh-cn_image_0000002706676270.png)
 
 #### [h2]示例8（自定义背景效果参数）
 
@@ -730,11 +730,13 @@ struct ActionSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848926.png)
+ ![](./img/zh-cn_image_0000002736435355.png)
 
-#### [h2]示例9（设置弹窗的系统材质）
+#### [h2]示例9（设置弹窗的沉浸光感效果）
 
-该示例通过配置[ActionSheetOptions](#actionsheetoptions对象说明)中的systemMaterial属性，实现系统材质效果。
+该示例通过[ActionSheetOptions](#actionsheetoptions对象说明)中的systemMaterial属性设置组件的系统材质，实现沉浸光感效果。
+
+组件沉浸光感效果会根据设备算力与用户在系统中设置的沉浸光感效果自适应调整，开发者无需额外适配。
 
 从API版本26.0.0开始，在[ActionSheetOptions](#actionsheetoptions对象说明)中新增了systemMaterial属性。
 
@@ -781,9 +783,17 @@ struct ActionSheetExample {
       }
       .height('100%')
       .width('100%')
-      .backgroundColor(Color.Gray)
+      // 请开发者替换为实际资源文件
+      .backgroundImage($r("app.media.img"))
+      .backgroundImageSize({ width: '100%', height: '100%' })
     }
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088357.png)
+ 未设置系统材质时：
+
+![](./img/zh-cn_image_0000002706836206.gif)
+
+设置系统材质后：
+
+![](./img/zh-cn_image_0000002736315311.gif)

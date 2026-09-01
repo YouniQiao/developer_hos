@@ -2,8 +2,8 @@
 title: "服务端关键事件通知"
 upstream_id: "harmonyos-references/iap-key-event-notifications"
 catalog: "harmonyos-references"
-content_hash: "28e23cefca58"
-synced_at: "2026-08-14T15:56:03.183485"
+content_hash: "ea95235eb1ea"
+synced_at: "2026-09-01T18:16:10.158144"
 ---
 
 # 服务端关键事件通知
@@ -53,7 +53,7 @@ synced_at: "2026-08-14T15:56:03.183485"
 
 关键事件通知处理流程建议如下：
 
-![](./img/zh-cn_image_0000002709528101.png)
+![](./img/zh-cn_image_0000002706837102.png)
 
 1. IAP服务器发送订单/订阅关键事件通知。
 2. 应用服务器收到通知请求后，从通知中获取购买Token。
@@ -94,7 +94,9 @@ synced_at: "2026-08-14T15:56:03.183485"
 | notificationRequestId | 是 | String | 通知唯一请求ID。 |
 | notificationMetaData | 是 | Object | 通知元数据，具体请参见表[NotificationMetaData](#notificationmetadata)说明。 |
 | notificationVersion | 是 | String | 通知版本：v3。 |
-| signedTime | 是 | Long | 通知签名时间，UTC时间戳，以毫秒为单位。 |
+| signedTime | 是 | Long | 通知签名时间，UTC时间戳，以ms为单位。 |
+
+![](./img/caution_3.0-zh-cn.png) 服务端关键事件通知可能会在后续版本中新增参数和取值。开发者在处理通知时应保留兼容性，避免因收到非预期的类型而导致程序异常或中断。
 
 #### [h2]NotificationType
 
@@ -102,7 +104,7 @@ synced_at: "2026-08-14T15:56:03.183485"
 | --- | --- |
 | DID_NEW_TRANSACTION | 订单已购买/订阅已购买/订阅续订成功。 |
 | DID_CHANGE_RENEWAL_STATUS | 订阅状态发生改变。 |
-| REVOKE | 订单退款/撤销订阅。 |
+| REVOKE | 消耗型/非消耗型/非续期订阅商品：订单退款。 自动续期订阅商品：撤销订阅。 |
 | RENEWAL_TIME_MODIFIED | 订阅过期时间调整。 |
 | EXPIRE | 订阅已过期。 |
 | TEST | 测试服务端通知，仅开发者调用[测试服务端通知](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-server-notifications-test)接口才会发送此类型通知。 此场景下无notificationSubtype。 |
@@ -118,7 +120,7 @@ synced_at: "2026-08-14T15:56:03.183485"
 | AUTO_RENEW_DISABLED | 自动续期功能关闭。 使用主类型：DID_CHANGE_RENEWAL_STATUS |
 | DOWNGRADE | 用户调整自动续期订阅商品降级或跨级且在下个续订生效。 使用主类型：DID_CHANGE_RENEWAL_STATUS或DID_NEW_TRANSACTION |
 | UPGRADE | 用户调整自动续期订阅商品升级或跨级且立即生效。 使用主类型：DID_NEW_TRANSACTION |
-| REFUND_TRANSACTION | 消耗型/非消耗型/非续期订阅商品订单退款成功。 自动续期订阅商品订单退款成功。 使用主类型：REVOKE |
+| REFUND_TRANSACTION | 消耗型/非消耗型/非续期订阅商品：订单退款成功。 自动续期订阅商品：订单退款成功且撤销对应订阅成功，订阅权益会立即取消。 使用主类型：REVOKE |
 | BILLING_RETRY | 一个到期的自动续期订阅商品进入账号保留期。 使用主类型：EXPIRE |
 | PRICE_INCREASE | 用户同意了涨价。 使用主类型：DID_CHANGE_RENEWAL_STATUS |
 | BILLING_RECOVERY | 订阅重试扣费成功。 使用主类型：DID_NEW_TRANSACTION |

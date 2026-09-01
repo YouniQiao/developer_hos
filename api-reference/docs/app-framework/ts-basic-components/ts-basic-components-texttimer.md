@@ -2,8 +2,8 @@
 title: "TextTimer"
 upstream_id: "harmonyos-references/ts-basic-components-texttimer"
 catalog: "harmonyos-references"
-content_hash: "12b5954ca912"
-synced_at: "2026-07-28T16:46:21.541719"
+content_hash: "933cf2e927d6"
+synced_at: "2026-09-01T18:12:50.222261"
 ---
 
 # TextTimer
@@ -298,7 +298,7 @@ ContentModifier接口使用的TextTimer配置。
 | isCountDown | boolean | 否 | 否 | 是否倒计时。 true：计时器开启倒计时，例如从30秒~0秒；false：计时器开始计时，例如从0秒~30秒。 默认值：false **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | started | boolean | 否 | 否 | 是否已经开始了计时。 true：开始计时；false：未开始计时。 默认值：false **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | elapsedTime | number | 否 | 否 | 计时器经过的时间，单位为设置格式的最小单位。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| startTime | number | 否 | 是 | 计时器正向计时模式下的初始时间，仅当isCountDown为false时该参数设置生效。 取值范围：无上限，支持负数。 默认值：0 单位：毫秒 当值为负数时，计时器将从负值开始计时，经过0后继续向正数计时。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
+| startTime | number | 否 | 是 | 计时器正向计时模式下的初始时间，仅当isCountDown为false时该参数设置生效。 取值范围：[-2147483648, 2147483647]，支持负数。 默认值：0 单位：毫秒 当值为负数时，计时器将从负值开始计时，经过0后继续向正数计时。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
 
 #### 示例
 
@@ -340,7 +340,7 @@ struct TextTimerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008744.gif)
+ ![](./img/zh-cn_image_0000002736315207.gif)
 
 #### [h2]示例2（设定文本阴影样式）
 
@@ -385,7 +385,7 @@ struct TextTimerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848822.png)
+ ![](./img/zh-cn_image_0000002706676164.png)
 
 #### [h2]示例3（设定自定义内容区）
 
@@ -463,7 +463,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088253.gif)
+ ![](./img/zh-cn_image_0000002736435251.gif)
 
 #### [h2]示例4（创建之后立即执行计时）
 
@@ -496,7 +496,7 @@ struct TextTimerStart {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928423.gif)
+ ![](./img/zh-cn_image_0000002706836104.gif)
 
 #### [h2]示例5（设置文本样式）
 
@@ -507,6 +507,7 @@ struct TextTimerStart {
 @Entry
 @Component
 struct TextTimerDemo {
+  // textTimerController用于控制计时器启停，本示例主要展示样式配置
   textTimerController: TextTimerController = new TextTimerController();
   @State countValue: number = 5025678;
 
@@ -548,7 +549,7 @@ struct TextTimerDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008746.png)
+ ![](./img/zh-cn_image_0000002736315209.png)
 
 #### [h2]示例6（设置初始计时时间）
 
@@ -588,4 +589,4 @@ struct TextTimerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848824.gif)
+ ![](./img/zh-cn_image_0000002706676166.gif)

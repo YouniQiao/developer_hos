@@ -1,18 +1,16 @@
 ---
-
 title: "订单确认发货（消耗型/非消耗型/非续期订阅商品）"
 upstream_id: "harmonyos-references/iap-confirm-purchase-for-order"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T01:01:21.684673"
-content_hash: "f1e626d19f57"
+content_hash: "a7fb8c1bbc17"
+synced_at: "2026-09-01T18:16:09.550977"
 ---
-
 
 # 订单确认发货（消耗型/非消耗型/非续期订阅商品）
 
 #### 功能介绍
 
-此接口用于确认购买的消耗型/非消耗型/非续期订阅商品订单已经发放权益。
+此接口用于通知IAP服务器，开发者服务器已经向用户发放权益。
 
 #### 场景描述
 

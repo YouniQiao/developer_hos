@@ -2,8 +2,8 @@
 title: "@ohos.data.dataAbility (DataAbility谓词)"
 upstream_id: "harmonyos-references/js-apis-data-ability"
 catalog: "harmonyos-references"
-content_hash: "42b923a004a1"
-synced_at: "2026-08-29T18:12:11.363105"
+content_hash: "25b3aa05133d"
+synced_at: "2026-09-01T18:11:19.329824"
 ---
 
 # @ohos.data.dataAbility (DataAbility谓词)
@@ -769,7 +769,7 @@ export default class EntryAbility extends UIAbility {
       };
       // 表结构：EMPLOYEE (ID, NAME, AGE, SALARY, CODES)
       const SQL_CREATE_TABLE =
-        'CREATE TABLE IF NOT EXISTS EMPLOYEE (ID INTEGER PRIMARY KEY AUTOINCREMENT, NAME TEXT NOT NULL, AGE INTEGER, SALARY REAL, CODES BLOB)'; // 建表Sql语句
+        'CREATE TABLE IF NOT EXISTS EMPLOYEE (ID INTEGER PRIMARY KEY AUTOINCREMENT, NAME TEXT NOT NULL, AGE INTEGER, SALARY REAL, CODES BLOB)'; // 建表SQL语句
       store = await relationalStore.getRdbStore(context, STORE_CONFIG);
       console.info('Succeeded in getting RdbStore.');
       await store.executeSql(SQL_CREATE_TABLE); // 创建数据表

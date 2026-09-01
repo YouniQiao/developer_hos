@@ -2,8 +2,8 @@
 title: "Slider"
 upstream_id: "harmonyos-references/ts-basic-components-slider"
 catalog: "harmonyos-references"
-content_hash: "6c67ec478e05"
-synced_at: "2026-08-21T15:33:42.710624"
+content_hash: "6d2c2195ef4a"
+synced_at: "2026-09-01T18:11:48.633135"
 ---
 
 # Slider
@@ -1087,7 +1087,7 @@ struct SliderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002718979765.gif)
+ ![](./img/zh-cn_image_0000002736314993.gif)
 
 #### [h2]示例2（设置滑动条样式）
 
@@ -1141,7 +1141,7 @@ struct SliderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002689300070.png)
+ ![](./img/zh-cn_image_0000002706675950.png)
 
 #### [h2]示例3（自定义滑动条）
 
@@ -1258,7 +1258,7 @@ struct SliderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002718859647.gif)
+ ![](./img/zh-cn_image_0000002736435037.gif)
 
 #### [h2]示例4（设置滑动条渐变色）
 
@@ -1340,7 +1340,7 @@ struct SliderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002689140192.gif)
+ ![](./img/zh-cn_image_0000002706835890.gif)
 
 #### [h2]示例5（滑动条设置前后缀内容）
 
@@ -1556,7 +1556,7 @@ struct SliderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002718979767.jpeg)
+ ![](./img/zh-cn_image_0000002736314995.jpeg)
 
 #### [h2]示例6（滑动条设置刻度点无障碍文本）
 
@@ -1623,7 +1623,7 @@ struct SliderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002689300072.png)
+ ![](./img/zh-cn_image_0000002706675952.png)
 
 #### [h2]示例7（设置滑动条的双向绑定）
 
@@ -1655,7 +1655,7 @@ struct SliderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002718859649.gif)
+ ![](./img/zh-cn_image_0000002736435039.gif)
 
 #### [h2]示例8（滑块设置渐变色）
 
@@ -1773,7 +1773,7 @@ struct SliderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002689140194.png)
+ ![](./img/zh-cn_image_0000002706835892.png)
 
 #### [h2]示例9（设置滑轨的背景颜色）
 
@@ -1816,11 +1816,13 @@ struct SliderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002718979769.png)
+ ![](./img/zh-cn_image_0000002736314997.png)
 
-#### [h2]示例10（设置滑动条的系统材质）
+#### [h2]示例10（设置滑动条的沉浸光感效果）
 
-该示例通过通用属性[systemMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemmaterial)为滑动条设置沉浸式材质。
+该示例通过通用属性[systemMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemmaterial)设置滑动条的系统材质，实现沉浸光感效果。设置系统材质后，Slider滑动过程中会产生粒子动画效果。
+
+组件沉浸光感效果会根据设备算力与用户在系统中设置的沉浸光感效果自适应调整，开发者无需额外适配。
 
 从API版本26.0.0开始，新增systemMaterial接口。
 
@@ -1846,8 +1848,15 @@ struct SliderSystemMaterial {
     }
     .height('100%')
     .width('100%')
-    .backgroundColor(Color.Grey)
+    // 请开发者替换为实际资源文件
+    .backgroundImage($r("app.media.img"))
   }
 }
 ```
- ![](./img/zh-cn_image_0000002689300074.png)
+ 未设置系统材质时：
+
+![](./img/zh-cn_image_0000002706675954.gif)
+
+设置系统材质后：
+
+![](./img/zh-cn_image_0000002736435041.gif)

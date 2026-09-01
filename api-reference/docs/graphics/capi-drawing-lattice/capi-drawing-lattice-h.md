@@ -2,8 +2,8 @@
 title: "drawing_lattice.h"
 upstream_id: "harmonyos-references/capi-drawing-lattice-h"
 catalog: "harmonyos-references"
-content_hash: "2dd647ce98c5"
-synced_at: "2026-08-29T18:17:53.733081"
+content_hash: "e51c21638d68"
+synced_at: "2026-09-01T18:15:45.640328"
 ---
 
 # drawing_lattice.h
@@ -56,7 +56,7 @@ enum OH_Drawing_LatticeRectType
 | --- | --- |
 | DEFAULT | 将图像绘制到矩形网格中。 |
 | TRANSPARENT | 将矩形网格设置为透明的。 |
-| FIXED_COLOR | 将矩形网格对象中fColors数组的颜色绘制到矩形网格中。 |
+| FIXED_COLOR | 将矩形网格对象中colors数组的颜色绘制到矩形网格中。 |
 
 #### 函数说明
 

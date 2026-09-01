@@ -2,8 +2,8 @@
 title: "Text"
 upstream_id: "harmonyos-references/ts-basic-components-text"
 catalog: "harmonyos-references"
-content_hash: "d54e04f4c5c4"
-synced_at: "2026-08-29T18:13:52.777504"
+content_hash: "69c8ea98a761"
+synced_at: "2026-09-01T18:11:50.237189"
 ---
 
 # Text
@@ -634,7 +634,7 @@ fontFeature(value: string)
 
 fontFeature属性列表：
 
-![](./img/zh-cn_image_0000002701639750.png)
+![](./img/zh-cn_image_0000002736435043.png)
 
 设置fontFeature属性，fontFeature是OpenType字体的高级排版能力，如支持连字、数字等宽等特性，一般用在自定义字体中，其能力需要字体本身支持。
 
@@ -1920,7 +1920,7 @@ Marquee初始化参数。
 | --- | --- | --- | --- | --- |
 | start | boolean | 否 | 否 | 控制跑马灯进入播放状态。 true表示播放，false表示不播放。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | step | number | 否 | 是 | 滚动动画文本滚动步长。 单位：vp 取值范围：(0, 文本宽度]。设置小于等于0的值时按默认值处理。 默认值：4.0vp **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| spacing23+ | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | 两轮跑马灯之间的间距。单位：vp。如果LengthMetrics的unit值是PERCENT，当前设置不生效，按默认值处理。 默认值：48.0vp **元服务API：** 从API version 23开始，该接口支持在元服务中使用。 |
+| spacing23+ | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | 两轮跑马灯之间的间距。单位：vp。当LengthMetrics对象的unit属性为LengthUnit.PERCENT时，当前设置不生效，按默认值处理。 默认值：48.0vp **元服务API：** 从API version 23开始，该接口支持在元服务中使用。 |
 | loop | number | 否 | 是 | 设置重复滚动的次数，小于等于零时无限循环。 默认值：-1 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | fromStart | boolean | 否 | 是 | 设置文本从头开始滚动或反向滚动。 true表示从头开始滚动，false表示反向滚动。 默认值：true **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | delay | number | 否 | 是 | 设置每次滚动的时间间隔。 取值范围：[0, +∞)。设置负数时按默认值处理。 默认值：0 单位：毫秒 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
@@ -2055,7 +2055,7 @@ struct TextExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358971.gif)
+ ![](./img/zh-cn_image_0000002706835896.gif)
 
 #### [h2]示例2（设置文本样式）
 
@@ -2174,7 +2174,7 @@ struct TextExample2 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799666.gif)
+ ![](./img/zh-cn_image_0000002736315001.gif)
 
 #### [h2]示例3（设置文本超长省略）
 
@@ -2283,7 +2283,7 @@ struct TextExample3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518951.gif)
+ ![](./img/zh-cn_image_0000002706675958.gif)
 
 #### [h2]示例4（设置文本断行及折行）
 
@@ -2367,7 +2367,7 @@ struct TextExample4 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639752.gif)
+ ![](./img/zh-cn_image_0000002736435045.gif)
 
 #### [h2]示例5（设置文本选中和复制）
 
@@ -2420,7 +2420,7 @@ struct TextExample5 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358973.gif)
+ ![](./img/zh-cn_image_0000002706835898.gif)
 
 #### [h2]示例6（设置文本自适应和缩放倍数限制范围）
 
@@ -2464,7 +2464,7 @@ struct TextExample6 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799668.png)
+ ![](./img/zh-cn_image_0000002736315003.png)
 
 #### [h2]示例7（设置文本识别）
 
@@ -2516,7 +2516,7 @@ struct TextExample7 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518953.png)
+ ![](./img/zh-cn_image_0000002706675960.png)
 
 #### [h2]示例8（文本绑定自定义菜单）
 
@@ -2637,7 +2637,7 @@ function MenuStyles() {
   .backgroundColor('#F0F0F0')
 }
 ```
- ![](./img/zh-cn_image_0000002701639754.gif)
+ ![](./img/zh-cn_image_0000002736435047.gif)
 
 #### [h2]示例9（设置文本特性与行间距）
 
@@ -2695,11 +2695,11 @@ struct TextExample9 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358975.png)
+ ![](./img/zh-cn_image_0000002706835900.png)
 
 #### [h2]示例10（获取文本信息）
 
-从API version 12开始，该示例通过[getLayoutManager](#getlayoutmanager12)接口调用文本的布局管理对象获取文本信息，同时，[LayoutManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#layoutmanager12)中的[getRectsForRange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#getrectsforrange14)（从API version 14开始）接口可以获取指定矩形宽度和高度下，文本中任意区间范围内字符或占位符的绘制区域信息。
+从API version 12开始，该示例通过[getLayoutManager](#getlayoutmanager12)接口调用文本的布局管理对象获取文本信息，同时，[LayoutManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#layoutmanager12)中的[getRectsForRange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#getrectsforrange14)（从API version 14开始）接口可以获取指定矩形宽度样式和高度样式下，文本中任意区间范围内字符或占位符的绘制区域信息。
 
 ```
 // xxx.ets
@@ -2772,7 +2772,7 @@ struct TextExample10 {
         Text(this.lineMetrics)
 
         Text('getRectsForRange').fontSize(15).fontColor(0xCCCCCC).width('90%').padding(10)
-        Button('获取指定矩形宽度和高度下，文本中任意区间范围内字符或占位符的绘制区域信息')
+        Button('获取指定矩形宽度样式和高度样式下，文本中任意区间范围内字符或占位符的绘制区域信息')
           .onClick(() => {
             let layoutManager: LayoutManager = this.controller.getLayoutManager();
             if (!layoutManager) {
@@ -2794,7 +2794,7 @@ struct TextExample10 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799670.gif)
+ ![](./img/zh-cn_image_0000002736315005.gif)
 
 #### [h2]示例11（实现键盘框选文本）
 
@@ -2822,7 +2822,7 @@ struct TextExample11 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518955.gif)
+ ![](./img/zh-cn_image_0000002706675962.gif)
 
 #### [h2]示例12（文本扩展自定义菜单）
 
@@ -2910,7 +2910,7 @@ struct TextExample12 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639756.gif)
+ ![](./img/zh-cn_image_0000002736435049.gif)
 
 #### [h2]示例13（配置隐私隐藏）
 
@@ -2932,7 +2932,7 @@ struct TextExample13 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358977.gif)
+ ![](./img/zh-cn_image_0000002706835902.gif)
 
 #### [h2]示例14（设置中西文自动间距）
 
@@ -2958,7 +2958,7 @@ struct TextExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799672.png)
+ ![](./img/zh-cn_image_0000002736315007.png)
 
 #### [h2]示例15（文本颜色按线性或径向渐变）
 
@@ -3025,7 +3025,7 @@ struct ShaderColorStyle {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518957.png)
+ ![](./img/zh-cn_image_0000002706675964.png)
 
 #### [h2]示例16（配置除去行尾空格）
 
@@ -3055,7 +3055,7 @@ struct TextExample16 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639758.png)
+ ![](./img/zh-cn_image_0000002736435051.png)
 
 #### [h2]示例17（文本垂直对齐）
 
@@ -3085,7 +3085,7 @@ struct TextExample14 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358979.png)
+ ![](./img/zh-cn_image_0000002706835904.png)
 
 #### [h2]示例18（文本翻牌动效）
 
@@ -3118,7 +3118,7 @@ struct TextNumberTransition {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799674.gif)
+ ![](./img/zh-cn_image_0000002736315009.gif)
 
 #### [h2]示例19（文本内容区垂直对齐）
 
@@ -3143,7 +3143,7 @@ struct TextContentAlignExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518959.png)
+ ![](./img/zh-cn_image_0000002706675966.png)
 
 #### [h2]示例20（倍数行高和最大最小行高）
 
@@ -3186,7 +3186,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639760.png)
+ ![](./img/zh-cn_image_0000002736435053.png)
 
 #### [h2]示例21（文本设置显示最小行数）
 
@@ -3217,7 +3217,7 @@ struct TextExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358981.png)
+ ![](./img/zh-cn_image_0000002706835906.png)
 
 #### [h2]示例22（设置文本选择区域并高亮显示）
 
@@ -3248,7 +3248,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799676.gif)
+ ![](./img/zh-cn_image_0000002736315011.gif)
 
 #### [h2]示例23（设置行首标点符号压缩和行尾标点符号悬挂）
 
@@ -3300,7 +3300,7 @@ struct PunctuationDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518961.gif)
+ ![](./img/zh-cn_image_0000002706675968.gif)
 
 #### [h2]示例24（设置自适应间距）
 
@@ -3363,7 +3363,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639762.gif)
+ ![](./img/zh-cn_image_0000002736435055.gif)
 
 #### [h2]示例25（设置文本拖拽时的背板样式）
 
@@ -3389,7 +3389,7 @@ struct TextTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358983.png)
+ ![](./img/zh-cn_image_0000002706835908.png)
 
 #### [h2]示例26（设置文本排版方向）
 
@@ -3430,7 +3430,7 @@ struct TextExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799678.png)
+ ![](./img/zh-cn_image_0000002736315013.png)
 
 #### [h2]示例27（获取指定坐标和范围对应的文本信息）
 
@@ -3508,7 +3508,7 @@ struct TextExample10 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518963.gif)
+ ![](./img/zh-cn_image_0000002706675970.gif)
 
 #### [h2]示例28（设置文本排版时是否使能孤字优化）
 
@@ -3546,7 +3546,7 @@ struct TextExample {
 ```
  该效果图会因设备尺寸差异有显示区别，仅供参考。
 
-![](./img/zh-cn_image_0000002701639764.png)
+![](./img/zh-cn_image_0000002736435057.png)
 
 #### [h2]示例29（设置可变字体的属性）
 
@@ -3575,7 +3575,7 @@ struct TextExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358985.gif)
+ ![](./img/zh-cn_image_0000002706835910.gif)
 
 #### [h2]示例30（设置图片预览菜单）
 
@@ -3621,7 +3621,7 @@ struct TextExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799680.gif)
+ ![](./img/zh-cn_image_0000002736315015.gif)
 
 #### [h2]示例31（设置属性字符串段落缓存策略）
 
@@ -3757,7 +3757,7 @@ struct StyledStringAppend {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518965.png)
+ ![](./img/zh-cn_image_0000002706675972.png)
 
 #### [h2]示例32（设置文本尾部缩进）
 
@@ -3802,7 +3802,7 @@ struct TailIndentsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639766.png)
+ ![](./img/zh-cn_image_0000002736435059.png)
 
 #### [h2]示例33（设置文本选择的AI菜单）
 
@@ -3830,7 +3830,7 @@ struct DataDetectorDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358987.gif)
+ ![](./img/zh-cn_image_0000002706835912.gif)
 
 #### [h2]示例34（长按含表情符号文本绘制渐变高亮背景）
 
@@ -3953,4 +3953,4 @@ struct Utf16GlyphHighlightPage {
 ```
  该效果图会因设备尺寸差异有显示区别，仅供参考。
 
-![](./img/zh-cn_image_0000002701799682.gif)
+![](./img/zh-cn_image_0000002736315017.gif)

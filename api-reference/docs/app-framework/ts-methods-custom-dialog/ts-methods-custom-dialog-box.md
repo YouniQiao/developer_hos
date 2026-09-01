@@ -2,8 +2,8 @@
 title: "自定义弹窗 (CustomDialog)"
 upstream_id: "harmonyos-references/ts-methods-custom-dialog-box"
 catalog: "harmonyos-references"
-content_hash: "69a25c4f03a1"
-synced_at: "2026-07-28T16:47:15.940790"
+content_hash: "d85bdf5a5a15"
+synced_at: "2026-09-01T18:13:01.472757"
 ---
 
 # 自定义弹窗 (CustomDialog)
@@ -106,7 +106,7 @@ type PromptActionCommonState = import('../api/@ohos.promptAction').promptAction.
 
 | 类型 | 说明 |
 | --- | --- |
-| import('../api/@ohos.promptAction').[promptAction.CommonState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#commonstate20枚举说明) | 返回对应的弹窗状态。 |
+| import('../api/@ohos.promptAction').[promptAction.CommonState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#commonstate20) | 返回对应的弹窗状态。 |
 
 #### CustomDialogControllerOptions对象说明
 
@@ -121,7 +121,7 @@ type PromptActionCommonState = import('../api/@ohos.promptAction').promptAction.
 | autoCancel | boolean | 否 | 是 | 是否允许点击遮罩层退出，true表示关闭弹窗。false表示不关闭弹窗。 默认值：true **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | alignment | [DialogAlignment](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-methods-alert-dialog-box#dialogalignment枚举说明) | 否 | 是 | 弹窗在竖直方向上的对齐方式。 默认值：DialogAlignment.Default **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | offset | [Offset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#offset) | 否 | 是 | 弹窗相对alignment所在位置的偏移量。 默认值：{ dx: 0, dy: 0 } **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| customStyle | boolean | 否 | 是 | 弹窗容器样式是否自定义。值为true表示弹窗容器样式能自定义，值为false表示弹窗容器样式不能自定义。 默认值：false 设置为false时： 1. 默认圆角为32vp。 2. 未设置弹窗宽度高度：弹窗容器的宽度根据栅格系统自适应。高度自适应自定义的内容节点。 3. 设置弹窗宽度高度：弹窗容器的宽度不超过默认样式下的最大宽度（自定义节点设置100%的宽度），弹窗容器的高度不超过默认样式下的最大高度（自定义节点设置100%的高度）。 4. 受安全区域的影响，弹窗显示区域将排除安全区域。例如在PC/2in1设备上避让屏幕边缘以及窗口标题栏。 设置为true时： 1. 圆角为0，弹窗背景色为透明色。 2. 不支持设置弹窗宽度、高度、边框宽度、边框样式、边框颜色以及阴影宽度。 3. 弹窗显示区域为屏幕。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| customStyle | boolean | 否 | 是 | 弹窗容器样式是否自定义。值为true表示弹窗容器样式能自定义，值为false表示弹窗容器样式不能自定义。 默认值：false 设置为false时： 1. 默认圆角为32vp。 2. 未设置弹窗宽度高度：弹窗容器的宽度根据栅格系统自适应。高度自适应自定义的内容节点。 3. 设置弹窗宽度高度：弹窗容器的宽度不超过默认样式下的最大宽度（自定义节点设置100%的宽度），弹窗容器的高度不超过默认样式下的最大高度（自定义节点设置100%的高度）。 4. 受安全区域的影响，弹窗显示区域将排除安全区域。例如在PC/2in1设备上避让屏幕边缘以及窗口标题栏。 设置为true时： 1. 圆角为0，弹窗背景色为透明色，并且弹窗的沉浸光感效果不生效。 2. 不支持设置弹窗宽度、高度、边框宽度、边框样式、边框颜色以及阴影宽度。 3. 弹窗显示区域为屏幕。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | gridCount8+ | number | 否 | 是 | 弹窗宽度占[栅格宽度](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-grid-layout)的个数。 默认为按照窗口大小自适应，异常值按默认值处理，最大栅格数为系统最大栅格数。 取值范围：大于等于0的整数。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | maskColor10+ | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 自定义遮罩层颜色。 默认值：0x33000000 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | maskRect10+ | [Rectangle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-methods-alert-dialog-box#rectangle8类型说明) | 否 | 是 | 弹窗遮罩层区域，在遮罩层区域内的事件不透传，在遮罩层区域外的事件透传。 默认值：{ x: 0, y: 0, width: '100%', height: '100%' } **说明：** showInSubWindow为true时，maskRect不生效。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
@@ -150,9 +150,9 @@ type PromptActionCommonState = import('../api/@ohos.promptAction').promptAction.
 | onWillDisappear19+ | Callback | 否 | 是 | 弹窗退出动效前的事件回调。 **说明：** 1.正常时序依次为：onWillAppear>>onDidAppear>>onWillDisappear>>onDidDisappear。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 |
 | onDidDisappear19+ | Callback | 否 | 是 | 弹窗消失后的事件回调。 **说明：** 1.正常时序依次为：onWillAppear>>onDidAppear>>onWillDisappear>>onDidDisappear。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 |
 | keyboardAvoidDistance15+ | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | 弹窗避让键盘后，和键盘之间的距离。 **说明：** - 默认值：16vp。 - 默认单位：vp。 - 当且仅当keyboardAvoidMode属性设置为DEFAULT时生效。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
-| levelMode15+ | [LevelMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#levelmode15枚举说明) | 否 | 是 | 设置弹窗显示层级。 **说明：** - 默认值：LevelMode.OVERLAY。 - 当且仅当showInSubWindow属性设置为false时生效。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
+| levelMode15+ | [LevelMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#levelmode15) | 否 | 是 | 设置弹窗显示层级。 **说明：** - 默认值：LevelMode.OVERLAY。 - 当且仅当showInSubWindow属性设置为false时生效。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
 | levelUniqueId15+ | number | 否 | 是 | 设置页面级弹窗需要显示的层级下的节点UniqueID，UniqueID可以通过[getUniqueId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#getuniqueid12)获取。 取值范围：大于等于0的数字。 **说明：** - 当且仅当levelMode属性设置为LevelMode.EMBEDDED时生效。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
-| immersiveMode15+ | [ImmersiveMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#immersivemode15枚举说明) | 否 | 是 | 设置页面内弹窗蒙层效果。 **说明：** - 默认值：ImmersiveMode.DEFAULT - 当且仅当levelMode属性设置为LevelMode.EMBEDDED时生效。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
+| immersiveMode15+ | [ImmersiveMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#immersivemode15) | 否 | 是 | 设置页面内弹窗蒙层效果。 **说明：** - 默认值：ImmersiveMode.DEFAULT - 当且仅当levelMode属性设置为LevelMode.EMBEDDED时生效。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
 | levelOrder18+ | [LevelOrder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#levelorder18) | 否 | 是 | 设置弹窗显示的顺序。 **说明：** - 默认值：LevelOrder.clamp(0) - 不支持动态刷新顺序。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | focusable19+ | boolean | 否 | 是 | 设置弹窗是否获取焦点。值为true表示获取焦点，值为false表示不获取焦点。 默认值：true **说明：** 只有弹出覆盖在当前窗口之上的弹窗才可以获取焦点。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 |
 | systemMaterial | [SystemUiMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemuimaterial) | 否 | 是 | 设置弹窗的系统材质。 **说明：** - 默认值：[ImmersiveOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#immersiveoptions)的style为ImmersiveStyle.ULTRA_THICK的[ImmersiveMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#immersivematerial)对象。设置undefined时与默认值保持一致。 - 不同的材质具有不同的效果，该接口影响背景色[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、背景模糊[backgroundBlurStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundblurstyle9)、背景效果[backgroundEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundeffect11)、边框颜色[borderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#bordercolor)、边框宽度[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)、阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)，当设置系统材质时，上述接口不生效。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
@@ -330,7 +330,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928525.gif)
+ ![](./img/zh-cn_image_0000002706676272.gif)
 
 #### [h2]示例2（可在主窗外弹出的弹窗）
 
@@ -422,7 +422,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008848.jpg)
+ ![](./img/zh-cn_image_0000002736435359.jpg)
 
 #### [h2]示例3（设置弹窗的样式）
 
@@ -513,7 +513,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848928.gif)
+ ![](./img/zh-cn_image_0000002706836208.gif)
 
 #### [h2]示例4（悬停态弹窗）
 
@@ -606,7 +606,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088359.gif)
+ ![](./img/zh-cn_image_0000002736315313.gif)
 
 #### [h2]示例5（获取弹窗的状态）
 
@@ -770,7 +770,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928527.gif)
+ ![](./img/zh-cn_image_0000002706676274.gif)
 
 #### [h2]示例7（自定义带loading的弹窗）
 
@@ -874,7 +874,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008850.gif)
+ ![](./img/zh-cn_image_0000002736435361.gif)
 
 #### [h2]示例8（不使用keyboardAvoidDistance调整弹窗与软键盘的间距）
 
@@ -1014,7 +1014,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848930.gif)
+ ![](./img/zh-cn_image_0000002706836210.gif)
 
 #### [h2]示例9（弹窗生命周期）
 
@@ -1110,7 +1110,7 @@ struct Example3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088361.gif)
+ ![](./img/zh-cn_image_0000002736315315.gif)
 
 #### [h2]示例10（不同customStyle下的弹窗示例）
 
@@ -1195,7 +1195,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928529.gif)
+ ![](./img/zh-cn_image_0000002706676276.gif)
 
 #### [h2]示例11（自定义背景模糊效果参数）
 
@@ -1256,7 +1256,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008852.png)
+ ![](./img/zh-cn_image_0000002736435363.png)
 
 #### [h2]示例12（自定义背景效果参数）
 
@@ -1318,7 +1318,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848932.png)
+ ![](./img/zh-cn_image_0000002706836212.png)
 
 #### [h2]示例13（自定义弹窗动态刷新宽度）
 
@@ -1384,11 +1384,13 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088363.gif)
+ ![](./img/zh-cn_image_0000002736315317.gif)
 
-#### [h2]示例14（设置弹窗的系统材质）
+#### [h2]示例14（设置弹窗的沉浸光感效果）
 
-该示例通过配置[systemMaterial](#customdialogcontrolleroptions对象说明)，实现系统材质效果。
+该示例通过[systemMaterial](#customdialogcontrolleroptions对象说明)设置组件的系统材质，实现沉浸光感效果。
+
+组件沉浸光感效果会根据设备算力与用户在系统中设置的沉浸光感效果自适应调整，开发者无需额外适配。
 
 从API版本26.0.0开始，在[CustomDialogControllerOptions](#customdialogcontrolleroptions对象说明)中新增了systemMaterial属性。
 
@@ -1436,9 +1438,17 @@ struct CustomDialogUser {
       }
       .height('100%')
       .width('100%')
-      .backgroundColor(Color.Gray)
+      // 请开发者替换为实际资源文件
+      .backgroundImage($r("app.media.img"))
+      .backgroundImageSize({width: '100%', height: '100%'})
     }
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928531.png)
+ 未设置系统材质时：
+
+![](./img/zh-cn_image_0000002706676278.gif)
+
+设置系统材质后：
+
+![](./img/zh-cn_image_0000002736435365.gif)

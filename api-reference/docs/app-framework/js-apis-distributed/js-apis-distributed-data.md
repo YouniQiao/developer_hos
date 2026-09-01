@@ -2,8 +2,8 @@
 title: "@ohos.data.distributedData (分布式数据管理)"
 upstream_id: "harmonyos-references/js-apis-distributed-data"
 catalog: "harmonyos-references"
-content_hash: "275a48df4303"
-synced_at: "2026-08-29T18:12:13.902633"
+content_hash: "938813dda6aa"
+synced_at: "2026-09-01T18:11:21.033469"
 ---
 
 # @ohos.data.distributedData (分布式数据管理)
@@ -639,7 +639,7 @@ constructor()
 | 名称 | 类型 | 可读 | 可写 | 说明 |
 | --- | --- | --- | --- | --- |
 | nullable8+ | boolean | 是 | 是 | 表示数据库字段是否可以为空。 |
-| default8+ | string | 是 | 是 | 表示Fieldnode的默认值。 |
+| default8+ | string | 是 | 是 | 表示FieldNode的默认值。 |
 | type8+ | number | 是 | 是 | 表示指定节点对应数据类型的值。 |
 
 #### [h2]constructor8+
@@ -2334,7 +2334,7 @@ try {
         });
     });
 }catch(e) {
-    console.info('PutBatch e ' + JSON.stringify(e));
+    console.error('PutBatch e ' + JSON.stringify(e));
 }
 ```
 
@@ -2388,7 +2388,7 @@ try {
         console.error('putBatch fail ' + JSON.stringify(err));
     });
 }catch(e) {
-    console.info('PutBatch e ' + JSON.stringify(e));
+    console.error('PutBatch e ' + JSON.stringify(e));
 }
 ```
 

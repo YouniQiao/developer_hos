@@ -2,8 +2,8 @@
 title: "Interfaces (其他)"
 upstream_id: "harmonyos-references/arkts-apis-window-i"
 catalog: "harmonyos-references"
-content_hash: "7c7f677c35e7"
-synced_at: "2026-08-29T18:12:36.908676"
+content_hash: "5be1e81140a8"
+synced_at: "2026-09-01T18:11:33.638098"
 ---
 
 # Interfaces (其他)
@@ -52,9 +52,11 @@ synced_at: "2026-08-29T18:12:36.908676"
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
+系统能力： SystemCapability.Window.SessionManager
+
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| contentColor | string | 否 | 否 | 状态栏文字颜色，固定为ARGB格式，如：#E5FFFFFF。 **系统能力：** SystemCapability.Window.SessionManager |
+| contentColor | string | 否 | 否 | 状态栏文字颜色，固定为ARGB格式，如：#E5FFFFFF。 |
 
 #### SystemBarStyle12+
 
@@ -137,7 +139,7 @@ synced_at: "2026-08-29T18:12:36.908676"
 
 ![](./img/note_3.0-zh-cn.png) 示意图展示了leftRect、topRect、rightRect、bottomRect的含义。
 
-![](./img/zh-cn_image_0000002731358671.png)
+![](./img/zh-cn_image_0000002706835590.png)
 
 #### UIEnvAvoidAreaVP23+
 
@@ -252,8 +254,8 @@ synced_at: "2026-08-29T18:12:36.908676"
 | drawableRect11+ | [Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#rect7) | 否 | 否 | 窗口内的可绘制区域尺寸，其中左边界上边界是相对于窗口左上顶点计算。在Stage模型下，需要在调用[loadContent()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#loadcontent9)或[setUIContent()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setuicontent9)加载页面内容后获取该属性。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core |
 | type(deprecated) | [WindowType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#windowtype7) | 否 | 否 | 窗口类型。 当前存在主窗使用[getWindowProperties()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#getwindowproperties9)接口返回type不准确的问题，从API版本26.0.0开始废弃，可使用[windowType](#windowproperties)字段代替。 **起始版本：** 7 **废弃版本：** 26.0.0 **替代接口：** [windowType](#windowproperties) **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core |
 | windowType | [WindowType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#windowtype7) | 否 | 是 | 窗口类型，默认值是[TYPE_MAIN](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#windowtype7)。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core |
-| isFullScreen | boolean | 否 | 否 | 对于主窗口，如果主动调用了接口（如[setSpecificSystemBarEnabled](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setspecificsystembarenabled11)或者[setWindowSystemBarEnable](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowsystembarenable9)）设置状态栏隐藏且满足isLayoutFullScreen为true的条件下，返回值为true；其他情况下返回值均为false。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core |
-| isLayoutFullScreen7+ | boolean | 否 | 否 | 对于子窗，如果设置了[沉浸式布局](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/immersive-window-feature#沉浸式布局)，返回值为true。 对于主窗，如果设置了[沉浸式布局](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/immersive-window-feature#沉浸式布局)且处于全屏模式，返回值为true。 其他情况下均返回false **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core |
+| isFullScreen | boolean | 否 | 否 | 窗口是否处于[沉浸式布局](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/immersive-window-feature#沉浸式布局)并设置了状态栏隐藏。对于主窗口，如果主动调用了接口（如[setSpecificSystemBarEnabled](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setspecificsystembarenabled11)或者[setWindowSystemBarEnable](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowsystembarenable9)）设置状态栏隐藏且满足isLayoutFullScreen为true的条件下，返回值为true；其他情况下返回值均为false。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core |
+| isLayoutFullScreen7+ | boolean | 否 | 否 | 窗口是否处于[沉浸式布局](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/immersive-window-feature#沉浸式布局)。对于子窗，如果设置了沉浸式布局，返回值为true。 对于主窗，如果设置了沉浸式布局且处于全屏模式，返回值为true。 其他情况下均返回false **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core |
 | focusable7+ | boolean | 否 | 否 | 窗口是否可获焦。true表示可获焦；false表示不可获焦。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core |
 | touchable7+ | boolean | 否 | 否 | 窗口是否可触摸。true表示可触摸；false表示不可触摸。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core |
 | brightness | number | 否 | 否 | 窗口亮度。通过[setWindowBrightness()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowbrightness9)设置窗口的亮度值。该参数为浮点数，可设置的亮度范围为[0.0, 1.0]或-1.0，其取值1.0时表示最大亮度，取值-1.0时，表示亮度跟随系统。如果窗口没有设置亮度值，表示亮度跟随系统，此时获取到的亮度值为-1.0。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core |

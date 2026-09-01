@@ -2,8 +2,8 @@
 title: "@ohos.accessibility (辅助功能)"
 upstream_id: "harmonyos-references/js-apis-accessibility"
 catalog: "harmonyos-references"
-content_hash: "c412cb1c6b67"
-synced_at: "2026-07-28T16:40:48.224197"
+content_hash: "e1421312822e"
+synced_at: "2026-09-01T18:11:19.481315"
 ---
 
 # @ohos.accessibility (辅助功能)
@@ -505,7 +505,7 @@ constructor(jsonObject: Object)
 ```
 import { accessibility } from '@kit.AccessibilityKit';
 
-let eventInfo = new accessibility.EventInfo({
+let eventInfo: accessibility.EventInfo = ({
   type: 'click',
   bundleName: 'com.example.MyApplication',
   triggerAction: 'click',

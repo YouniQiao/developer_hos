@@ -2,8 +2,8 @@
 title: "ArkWeb_ResourceHandler_"
 upstream_id: "harmonyos-references/capi-web-arkweb-resourcehandler"
 catalog: "harmonyos-references"
-content_hash: "9e156851d29e"
-synced_at: "2026-07-09T00:58:55.465815"
+content_hash: "c0ffb7d66df5"
+synced_at: "2026-09-01T18:13:56.481743"
 ---
 
 # ArkWeb_ResourceHandler_
@@ -19,5 +19,7 @@ ArkWeb_ResourceHandler是用于处理被拦截的Scheme请求的资源处理器�
 起始版本： 12
 
 相关模块： [Web](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-web)
+
+系统能力： SystemCapability.Web.Webview.Core
 
 所在头文件： [arkweb_scheme_handler.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkweb-scheme-handler-h)

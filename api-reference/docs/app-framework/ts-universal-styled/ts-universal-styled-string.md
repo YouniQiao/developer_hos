@@ -2,8 +2,8 @@
 title: "属性字符串"
 upstream_id: "harmonyos-references/ts-universal-styled-string"
 catalog: "harmonyos-references"
-content_hash: "0b748a262b5b"
-synced_at: "2026-08-29T18:14:07.734379"
+content_hash: "20c55ab62c22"
+synced_at: "2026-09-01T18:12:23.367136"
 ---
 
 # 属性字符串
@@ -162,7 +162,7 @@ getStyles(start: number, length: number, styledKey?: StyledStringKey): Array<Spa
 
 static fromHtml(html: string): Promise<StyledString>
 
-将HTML格式字符串转换成属性字符串，HTML标签将映射为对应的属性字符串样式（如加粗类标签映射为TextStyle、装饰类标签映射为DecorationStyle）。当前支持转换的HTML标签范围：<p>、<span>、<img>、<br>、<strong>、<b>、<a>、<i>、<em>、<s>、<u>、<del>、<sup>、<sub>、<cite>、<dfn>、<small>、<h1>、<h2>、<h3>、<h4>、<h5>、<h6>、<ol>、<ul>、<li>。支持将标签中的style属性样式转换成对应的属性字符串样式。
+将HTML格式字符串转换成属性字符串，HTML标签将映射为对应的属性字符串样式（如加粗类标签映射为TextStyle、装饰类标签映射为DecorationStyle）。支持的HTML标签范围详见下方表格，不同标签支持的起始API版本不同。
 
 使用方法参考[示例12（fromHtml和toHtml互相转换）](#示例12fromhtml和tohtml互相转换)和[示例18（fromHtml转换）](#示例18fromhtml转换)。
 
@@ -566,8 +566,8 @@ TextShadowStyle | GestureStyle | ImageAttachment | ParagraphStyle | LineHeightSt
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| start | number | 否 | 是 | 设置属性字符串样式的开始位置。 当start的值小于0或超出字符串长度时，按0处理。 |
-| length | number | 否 | 是 | 设置属性字符串样式的长度。 当length的值小于0或超出字符串长度与start的差值时，按字符串长度与start的差值处理。 |
+| start | number | 否 | 是 | 设置属性字符串样式的开始位置。 默认值：0 当start的值小于0或超出字符串长度时，按0处理。 |
+| length | number | 否 | 是 | 设置属性字符串样式的长度。 默认值：字符串长度与start的差值。 当length的值小于0或超出字符串长度与start的差值时，按字符串长度与start的差值处理。 |
 | styledKey | [StyledStringKey](#styledstringkey枚举说明) | 否 | 否 | 样式类型的枚举值。 |
 | styledValue | [StyledStringValue](#styledstringvalue) | 否 | 否 | 用于设置属性字符串样式的样式对象。 |
 
@@ -652,11 +652,11 @@ constructor(value?: TextStyleInterface)
 | --- | --- | --- | --- | --- |
 | fontColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 字体颜色。 默认为主题色。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | fontFamily | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 文本字体。 默认为主题字体。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| fontSize | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | 字体大小。 默认字体大小为16fp。 如果LengthMetrics的unit值是PERCENT，当前设置不生效，处理为16fp。 单位：[fp](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-pixel-units#基本像素单位) **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| fontSize | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | 字体大小。 默认字体大小为16fp。 当LengthMetrics对象的unit属性为LengthUnit.PERCENT时，当前设置不生效，处理为16fp。 单位：[fp](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-pixel-units#基本像素单位) **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | fontWeight | number| [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | string | 否 | 是 | 字体粗细。 number类型取值[100, 900]，取值间隔为100，默认为400，取值越大，字体越粗。string类型仅支持number类型取值的字符串形式，例如"400"，以及"bold"、"bolder"、"lighter"、"regular"、"medium"，分别对应FontWeight中相应的枚举值。设置过大可能会在不同字体下有截断。传入超出取值范围或不符合间隔要求的值时取默认值。 默认值：FontWeight.Normal **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | fontStyle | [FontStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontstyle) | 否 | 是 | 字体样式。 默认值：FontStyle.Normal **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | fontConfigs24+ | [FontConfigs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#fontconfigs24对象说明) | 否 | 是 | 字体配置。默认值继承[FontConfigs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#fontconfigs24对象说明)。 **元服务API：** 从API version 24开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| strokeWidth20+ | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | 文本描边宽度。如果LengthMetrics的unit值是PERCENT，当前设置不生效，处理为0。 设置值小于0时为实心字，大于0时为空心字。 默认值为0。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| strokeWidth20+ | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | 文本描边宽度。当LengthMetrics对象的unit属性为LengthUnit.PERCENT时，当前设置不生效，处理为0。 设置值小于0时为实心字，大于0时为空心字。 默认值为0，单位为vp。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | strokeColor20+ | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 文本描边颜色。 默认值为字体颜色，设置异常值时取字体颜色。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | superscript20+ | [SuperscriptStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#superscriptstyle20枚举说明) | 否 | 是 | 文本上下角标。 默认值：SuperscriptStyle.NORMAL **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | fontVariations | Array | 否 | 是 | 可变字体的属性。 默认值：undefined，表示未设置可变字体的属性。 fontVariations属性的优先级高于fontWeight。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
@@ -804,7 +804,7 @@ constructor(value: LengthMetrics)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 是 | 文本基线偏移量设置项。如果LengthMetrics的unit值是PERCENT，该设置不生效。 |
+| value | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 是 | 文本基线偏移量设置项。当LengthMetrics对象的unit属性为LengthUnit.PERCENT时，该设置不生效。 |
 
 #### LetterSpacingStyle
 
@@ -836,7 +836,7 @@ constructor(value: LengthMetrics)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 是 | 文本字符间距设置项。如果LengthMetrics的unit值是PERCENT，该设置不生效。 |
+| value | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 是 | 文本字符间距设置项。当LengthMetrics对象的unit属性为LengthUnit.PERCENT时，该设置不生效。 |
 
 #### LineHeightStyle
 
@@ -867,7 +867,7 @@ constructor(lineHeight: LengthMetrics)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| lineHeight | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 是 | 文本行高设置项。如果LengthMetrics的unit值是PERCENT，当前设置不生效。LengthMetrics的value值大于0时，文本行高设置生效，否则文本行高自适应字体大小。 |
+| lineHeight | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 是 | 文本行高设置项。当LengthMetrics对象的unit属性为LengthUnit.PERCENT时，当前设置不生效。LengthMetrics的value值大于0时，文本行高设置生效，否则文本行高自适应字体大小。 |
 
 #### [h2]constructor
 
@@ -1587,7 +1587,7 @@ struct StyledStringProcessDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799768.png)
+ ![](./img/zh-cn_image_0000002736315103.png)
 
 #### [h2]示例2（设置事件）
 
@@ -1676,7 +1676,7 @@ struct StyledStringBindEventsDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519055.png)
+ ![](./img/zh-cn_image_0000002706676060.png)
 
 #### [h2]示例3（设置文本样式）
 
@@ -1865,7 +1865,7 @@ struct StyledStringSetTextStyleDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639854.png)
+ ![](./img/zh-cn_image_0000002736435147.png)
 
 #### [h2]示例4（设置图片）
 
@@ -1999,7 +1999,7 @@ struct StyledStringSetImageDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359075.gif)
+ ![](./img/zh-cn_image_0000002706836000.gif)
 
 #### [h2]示例5（设置文本行高和段落样式）
 
@@ -2158,7 +2158,7 @@ struct StyledStringSetLineheightParagraphstyleDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799770.png)
+ ![](./img/zh-cn_image_0000002736315105.png)
 
 #### [h2]示例6（设置自定义绘制Span）
 
@@ -2319,7 +2319,7 @@ struct StyledStringSetCustomspanDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519057.gif)
+ ![](./img/zh-cn_image_0000002706676062.gif)
 
 #### [h2]示例7（支持存储自定义扩展信息）
 
@@ -2369,7 +2369,7 @@ struct StyledStringSetUserdataspanDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639856.gif)
+ ![](./img/zh-cn_image_0000002736435149.gif)
 
 #### [h2]示例8（设置超链接）
 
@@ -2402,7 +2402,7 @@ struct StyledStringSetUrlstyleDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359077.gif)
+ ![](./img/zh-cn_image_0000002706836002.gif)
 
 #### [h2]示例9 （给图片设置colorFilter）
 
@@ -2472,7 +2472,7 @@ struct StyledStringSetImageColorfilterDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799772.gif)
+ ![](./img/zh-cn_image_0000002736315107.gif)
 
 #### [h2]示例10（属性字符串的插入、删除、替换）
 
@@ -2547,7 +2547,7 @@ struct StyledStringModifyDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519059.gif)
+ ![](./img/zh-cn_image_0000002706676064.gif)
 
 #### [h2]示例11（属性字符串的文本描边）
 
@@ -2621,7 +2621,7 @@ struct StyledStringStrokewidthStrokecolorDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639858.png)
+ ![](./img/zh-cn_image_0000002736435151.png)
 
 #### [h2]示例12（fromHtml和toHtml互相转换）
 
@@ -2690,7 +2690,7 @@ struct StyledStringHtmlConvertDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359079.gif)
+ ![](./img/zh-cn_image_0000002706836004.gif)
 
 #### [h2]示例13（多装饰线与加粗装饰线）
 
@@ -2760,7 +2760,7 @@ struct StyledStringSetDecorationstyleDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799774.png)
+ ![](./img/zh-cn_image_0000002736315109.png)
 
 #### [h2]示例14（获取以vp为单位的图片尺寸）
 
@@ -2858,7 +2858,7 @@ struct StyledStringImageAttachmentInterfaceDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519061.gif)
+ ![](./img/zh-cn_image_0000002706676066.gif)
 
 #### [h2]示例15（设置段落自定义缩进）
 
@@ -2976,7 +2976,7 @@ struct leadingMarginSpanDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639860.gif)
+ ![](./img/zh-cn_image_0000002736435153.gif)
 
 #### [h2]示例16（使用supportSvg2属性时，SVG图片的显示效果）
 
@@ -3045,7 +3045,7 @@ struct StyledStringProcessDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639844.png)
+ ![](./img/zh-cn_image_0000002736435137.png)
 
 #### [h2]示例17（设置字体配置）
 
@@ -3152,7 +3152,7 @@ struct StyledStringFontConfigsDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359081.png)
+ ![](./img/zh-cn_image_0000002706836006.png)
 
 #### [h2]示例18（fromHtml转换）
 
@@ -3186,7 +3186,7 @@ struct html_convert_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799776.png)
+ ![](./img/zh-cn_image_0000002736315111.png)
 
 #### [h2]示例19（设置可变字体的属性）
 
@@ -3236,7 +3236,7 @@ struct StyledStringExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358985.gif)
+ ![](./img/zh-cn_image_0000002706835910.gif)
 
 #### [h2]示例20（设置文本着色器效果）
 
@@ -3365,7 +3365,7 @@ struct ShaderColorStyle {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519063.png)
+ ![](./img/zh-cn_image_0000002706676068.png)
 
 #### [h2]示例21（设置文本尾部缩进）
 
@@ -3463,4 +3463,4 @@ struct TailIndentsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639862.png)
+ ![](./img/zh-cn_image_0000002736435155.png)

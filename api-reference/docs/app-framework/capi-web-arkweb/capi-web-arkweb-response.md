@@ -2,8 +2,8 @@
 title: "ArkWeb_Response_"
 upstream_id: "harmonyos-references/capi-web-arkweb-response"
 catalog: "harmonyos-references"
-content_hash: "55e76e0af9f2"
-synced_at: "2026-07-09T00:58:55.547940"
+content_hash: "680ca65bffd7"
+synced_at: "2026-09-01T18:13:56.513602"
 ---
 
 # ArkWeb_Response_
@@ -19,5 +19,7 @@ ArkWeb_Response是用于构建自定义HTTP响应的结构体，定义了响应�
 起始版本： 12
 
 相关模块： [Web](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-web)
+
+系统能力： SystemCapability.Web.Webview.Core
 
 所在头文件： [arkweb_scheme_handler.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkweb-scheme-handler-h)

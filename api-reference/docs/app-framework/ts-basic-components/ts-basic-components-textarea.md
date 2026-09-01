@@ -2,8 +2,8 @@
 title: "TextArea"
 upstream_id: "harmonyos-references/ts-basic-components-textarea"
 catalog: "harmonyos-references"
-content_hash: "a2676ac6c0bc"
-synced_at: "2026-08-29T18:13:52.708328"
+content_hash: "ba0ecd60cbe4"
+synced_at: "2026-09-01T18:11:58.852175"
 ---
 
 # TextArea
@@ -1089,7 +1089,7 @@ strokeWidth(width: Optional<LengthMetrics>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| width | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 文本描边的宽度。如果LengthMetrics的unit值是PERCENT，当前设置不生效，按默认值处理。 若设置值小于0，显示实心字；若大于0，显示空心字。 |
+| width | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 文本描边的宽度。当LengthMetrics对象的unit属性为LengthUnit.PERCENT时，当前设置不生效，按默认值处理。 若设置值小于0，显示实心字；若大于0，显示空心字。 |
 
 #### [h2]strokeColor20+
 
@@ -1941,7 +1941,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518967.gif)
+ ![](./img/zh-cn_image_0000002706675974.gif)
 
 #### [h2]示例2（设置计数器）
 
@@ -1981,7 +1981,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639768.gif)
+ ![](./img/zh-cn_image_0000002736435061.gif)
 
 #### [h2]示例3（设置自定义键盘）
 
@@ -2051,7 +2051,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358989.gif)
+ ![](./img/zh-cn_image_0000002706835914.gif)
 
 #### [h2]示例4（设置输入法回车键类型）
 
@@ -2087,7 +2087,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799684.gif)
+ ![](./img/zh-cn_image_0000002736315019.gif)
 
 #### [h2]示例5（设置文本断行规则）
 
@@ -2100,28 +2100,28 @@ struct TextAreaExample {
 struct TextAreaExample {
   build() {
     Column() {
-      Text('属性WordBreakType为NORMAL的样式：').fontSize(16).fontColor(0xFF0000)
+      Text('wordBreak属性为NORMAL的样式：').fontSize(16).fontColor(0xFF0000)
       TextArea({
         text: 'This is set wordBreak to WordBreak text Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu.'
       })
         .fontSize(16)
         .border({ width: 1 })
         .wordBreak(WordBreak.NORMAL)
-      Text('英文文本，属性WordBreakType为BREAK_ALL的样式：').fontSize(16).fontColor(0xFF0000)
+      Text('英文文本，wordBreak属性为BREAK_ALL的样式：').fontSize(16).fontColor(0xFF0000)
       TextArea({
         text: 'This is set wordBreak to WordBreak text Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu.'
       })
         .fontSize(16)
         .border({ width: 1 })
         .wordBreak(WordBreak.BREAK_ALL)
-      Text('中文文本，属性WordBreakType为BREAK_ALL的样式：').fontSize(16).fontColor(0xFF0000)
+      Text('中文文本，wordBreak属性为BREAK_ALL的样式：').fontSize(16).fontColor(0xFF0000)
       TextArea({
         text: '多行文本输入框组件，当输入的文本内容超过组件宽度时会自动换行显示。\n高度未设置时，组件无默认高度，自适应内容高度。宽度未设置时，默认撑满最大宽度。'
       })
         .fontSize(16)
         .border({ width: 1 })
         .wordBreak(WordBreak.BREAK_ALL)
-      Text('属性WordBreakType为BREAK_WORD的样式：').fontSize(16).fontColor(0xFF0000)
+      Text('wordBreak属性为BREAK_WORD的样式：').fontSize(16).fontColor(0xFF0000)
       TextArea({
         text: 'This is set wordBreak to WordBreak text Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu.'
       })
@@ -2132,7 +2132,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518969.jpeg)
+ ![](./img/zh-cn_image_0000002706675976.jpeg)
 
 #### [h2]示例6（设置文本样式）
 
@@ -2179,7 +2179,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639770.png)
+ ![](./img/zh-cn_image_0000002736435063.png)
 
 #### [h2]示例7（设置文字特性效果）
 
@@ -2209,7 +2209,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358991.png)
+ ![](./img/zh-cn_image_0000002706835916.png)
 
 #### [h2]示例8（自定义键盘避让）
 
@@ -2279,7 +2279,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799686.gif)
+ ![](./img/zh-cn_image_0000002736315021.gif)
 
 #### [h2]示例9（设置文本自适应）
 
@@ -2319,7 +2319,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518971.png)
+ ![](./img/zh-cn_image_0000002706675978.png)
 
 #### [h2]示例10（设置文本行间距）
 
@@ -2359,7 +2359,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639772.png)
+ ![](./img/zh-cn_image_0000002736435065.png)
 
 #### [h2]示例11（设置自动填充）
 
@@ -2435,7 +2435,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358993.gif)
+ ![](./img/zh-cn_image_0000002706835918.gif)
 
 #### [h2]示例13（支持插入和删除回调）
 
@@ -2502,7 +2502,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799688.png)
+ ![](./img/zh-cn_image_0000002736315023.png)
 
 #### [h2]示例14（文本扩展自定义菜单）
 
@@ -2587,7 +2587,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518973.png)
+ ![](./img/zh-cn_image_0000002706675980.png)
 
 #### [h2]示例15（文本设置省略模式）
 
@@ -2665,7 +2665,7 @@ struct EllipsisModeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639774.gif)
+ ![](./img/zh-cn_image_0000002736435067.gif)
 
 #### [h2]示例16（自定义复制、剪切、粘贴）
 
@@ -2752,7 +2752,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358995.png)
+ ![](./img/zh-cn_image_0000002706835920.png)
 
 #### [h2]示例17（设置最小字体范围与最大字体范围）
 
@@ -2809,7 +2809,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799690.png)
+ ![](./img/zh-cn_image_0000002736315025.png)
 
 #### [h2]示例18（设置选中指定区域的文本内容）
 
@@ -2849,7 +2849,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518975.png)
+ ![](./img/zh-cn_image_0000002706675982.png)
 
 #### [h2]示例19（设置文本描边）
 
@@ -2896,7 +2896,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639776.png)
+ ![](./img/zh-cn_image_0000002736435069.png)
 
 #### [h2]示例20（设置中西文自动间距）
 
@@ -2922,7 +2922,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358997.png)
+ ![](./img/zh-cn_image_0000002706835922.png)
 
 #### [h2]示例21（设置最大行数）
 
@@ -2950,7 +2950,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799692.gif)
+ ![](./img/zh-cn_image_0000002736315027.gif)
 
 #### [h2]示例22（设置最小行数）
 
@@ -2978,7 +2978,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518977.png)
+ ![](./img/zh-cn_image_0000002706675984.png)
 
 #### [h2]示例23（设置字符计数颜色以及超出字符颜色）
 
@@ -3019,7 +3019,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639778.gif)
+ ![](./img/zh-cn_image_0000002736435071.gif)
 
 #### [h2]示例24（设置滚动条颜色）
 
@@ -3078,7 +3078,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358999.jpg)
+ ![](./img/zh-cn_image_0000002706835924.jpg)
 
 #### [h2]示例25（设置placeholder富文本样式）
 
@@ -3148,7 +3148,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799694.jpg)
+ ![](./img/zh-cn_image_0000002736315029.jpg)
 
 #### [h2]示例26（设置输入法扩展信息）
 
@@ -3223,7 +3223,7 @@ struct PunctuationDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518981.gif)
+ ![](./img/zh-cn_image_0000002706675986.gif)
 
 #### [h2]示例28（设置自适应间距）
 
@@ -3289,7 +3289,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639780.gif)
+ ![](./img/zh-cn_image_0000002736435073.gif)
 
 #### [h2]示例29（设置文本拖拽时的背板样式）
 
@@ -3315,7 +3315,7 @@ struct TextAreaTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359001.png)
+ ![](./img/zh-cn_image_0000002706835926.png)
 
 #### [h2]示例30（删除文本框内的最后一个字符）
 
@@ -3340,7 +3340,7 @@ struct Page {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799696.gif)
+ ![](./img/zh-cn_image_0000002736315031.gif)
 
 #### [h2]示例31（设置文本排版方向）
 
@@ -3393,7 +3393,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518983.png)
+ ![](./img/zh-cn_image_0000002706675988.png)
 
 #### [h2]示例32（将指定范围的文字滚动到可视区内）
 
@@ -3427,7 +3427,7 @@ struct TextAreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639782.gif)
+ ![](./img/zh-cn_image_0000002736435075.gif)
 
 #### [h2]示例33（设置水平滚动）
 
@@ -3462,7 +3462,7 @@ Hello World Hello World Hello World Hello World Hello World\n
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359003.png)
+ ![](./img/zh-cn_image_0000002706835928.png)
 
 #### [h2]示例34（设置文本排版时是否使能孤字优化）
 
@@ -3500,7 +3500,7 @@ struct TextExample {
 ```
  该效果图会因设备尺寸差异有显示区别，仅供参考。
 
-![](./img/zh-cn_image_0000002701799698.png)
+![](./img/zh-cn_image_0000002736315033.png)
 
 #### [h2]示例35（设置文本着色器效果）
 
@@ -3569,7 +3569,7 @@ struct ShaderColorStyle {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518985.png)
+ ![](./img/zh-cn_image_0000002706675990.png)
 
 #### [h2]示例36（设置文本选择的AI菜单）
 
@@ -3597,4 +3597,4 @@ struct Demo36 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639784.gif)
+ ![](./img/zh-cn_image_0000002736435077.gif)

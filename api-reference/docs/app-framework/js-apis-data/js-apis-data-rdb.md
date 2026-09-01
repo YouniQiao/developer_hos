@@ -2,8 +2,8 @@
 title: "@ohos.data.rdb (关系型数据库)"
 upstream_id: "harmonyos-references/js-apis-data-rdb"
 catalog: "harmonyos-references"
-content_hash: "b479e6b035b3"
-synced_at: "2026-07-28T16:40:50.425404"
+content_hash: "aa7efac1d4b7"
+synced_at: "2026-09-01T18:11:20.764027"
 ---
 
 # @ohos.data.rdb (关系型数据库)
@@ -562,7 +562,7 @@ predicates.equalTo("NAME", "Lisa")
 
 contains(field: string, value: string): RdbPredicates
 
-配置谓词以匹配数据字段为string且value包含指定值的字段。该方法等同于SQL语句中的"LIKE '%xxx%'"。
+配置谓词以匹配数据字段为string且值包含指定值的字段。该方法等同于SQL语句中的"LIKE '%xxx%'"。
 
 系统能力： SystemCapability.DistributedDataManager.RelationalStore.Core
 
@@ -764,7 +764,7 @@ predicates.glob("NAME", "?h*g")
 
 between(field: string, low: ValueType, high: ValueType): RdbPredicates
 
-将谓词配置为匹配数据字段为ValueType且value在给定范围内的指定字段。该方法等同于SQL语句中的"BETWEEN"。
+将谓词配置为匹配数据字段为ValueType且值在给定范围内的指定字段。该方法等同于SQL语句中的"BETWEEN"。
 
 系统能力： SystemCapability.DistributedDataManager.RelationalStore.Core
 
@@ -793,7 +793,7 @@ predicates.between("AGE", 10, 50)
 
 notBetween(field: string, low: ValueType, high: ValueType): RdbPredicates
 
-配置RdbPredicates以匹配数据字段为ValueType且value超出给定范围的指定字段。该方法等同于SQL语句中的"NOT BETWEEN"。
+配置RdbPredicates以匹配数据字段为ValueType值超出给定范围的指定字段。该方法等同于SQL语句中的"NOT BETWEEN"。
 
 系统能力： SystemCapability.DistributedDataManager.RelationalStore.Core
 
@@ -850,7 +850,7 @@ predicates.greaterThan("AGE", 18)
 
 lessThan(field: string, value: ValueType): RdbPredicates
 
-配置谓词以匹配数据字段为valueType且value小于指定值的字段。该方法等同于SQL语句中的"<"。
+配置谓词以匹配数据字段为ValueType且值小于指定值的字段。该方法等同于SQL语句中的"<"。
 
 系统能力： SystemCapability.DistributedDataManager.RelationalStore.Core
 
@@ -878,7 +878,7 @@ predicates.lessThan("AGE", 20)
 
 greaterThanOrEqualTo(field: string, value: ValueType): RdbPredicates
 
-配置谓词以匹配数据字段为ValueType且value大于或等于指定值的字段。该方法等同于SQL语句中的">="。
+配置谓词以匹配数据字段为ValueType且值大于或等于指定值的字段。该方法等同于SQL语句中的">="。
 
 系统能力： SystemCapability.DistributedDataManager.RelationalStore.Core
 
@@ -906,7 +906,7 @@ predicates.greaterThanOrEqualTo("AGE", 18)
 
 lessThanOrEqualTo(field: string, value: ValueType): RdbPredicates
 
-配置谓词以匹配数据字段为ValueType且value小于或等于指定值的字段。该方法等同于SQL语句中的"<="。
+配置谓词以匹配数据字段为ValueType且值小于或等于指定值的字段。该方法等同于SQL语句中的"<="。
 
 系统能力： SystemCapability.DistributedDataManager.RelationalStore.Core
 

@@ -2,8 +2,8 @@
 title: "@ohos.deviceInfo (设备信息)"
 upstream_id: "harmonyos-references/js-apis-device-info"
 catalog: "harmonyos-references"
-content_hash: "739ae3bb6f8c"
-synced_at: "2026-08-29T18:16:55.209814"
+content_hash: "3b9a5015aec9"
+synced_at: "2026-09-01T18:14:36.531930"
 ---
 
 # @ohos.deviceInfo (设备信息)
@@ -331,13 +331,11 @@ apiAvailable(version: string | number): boolean;
 
 检查指定的API版本在当前设备上是否可用。
 
-此方法提供跨不同HarmonyOS/分布式操作系统版本的兼容性检查。它会根据输入格式和API版本范围自动选择合适的版本检查方法。
+此方法提供HarmonyOS及其各发行版系统版本的兼容性检查。该方法会根据输入格式和API版本范围自动选择合适的版本检查方法。
 
 起始版本：26.0.0
 
-元服务API：从API版本26开始，该接口支持在元服务中使用。
-
-模型约束： 此接口Stage模型和FA模型下皆可使用。
+元服务API：从API版本26.0.0开始，该接口支持在元服务中使用。
 
 系统能力：SystemCapability.Startup.SystemInfo
 
@@ -345,27 +343,29 @@ apiAvailable(version: string | number): boolean;
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| version | string | number | 是 | 需要校验的API版本号，支持整数版本号和点分版本号。 |
+| version | string | number | 是 | 需要校验的API版本号，支持整数格式版本号和字符串格式版本号。字符串采用M.S.F格式（如 "26.0.0","5.0.1"）：对于API 26.0.0及以上版本（version >= 26.0.0）：代表HarmonyOS和发行版系统API版本。对于API 26.0.0以下版本（version =26,0返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| boolean | 布尔值。返回true表示当前设备API版本大于等于入参版本号；返回false代表当前设备API版本小于入参版本号，或传入的版本号格式非法、该版本不存在。 |
 
 示例：
 
 ```
 import { deviceInfo } from '@kit.BasicServicesKit';
 
-// Check API 26.0.0 (String format for API 26+ represents both HarmonyOS and Distribution OS)
-if (deviceInfo.apiAvailable("26.0.0")) {
-   // 需要版本隔离的方法
+// 针对API version 26.0.0及以后的HarmonyOS底座及发行版接口
+if (deviceInfo.apiAvailable('26.0.0')) {
+  // 需要版本隔离的方法
 }
 
-// Check API 5.0.1 (Distribution OS version, API 26-)
-if (deviceInfo.apiAvailable("5.0.1")) {
-   // 需要版本隔离的方法
+// 针对Distribution OS专有接口，即接口标记为since M.S.F(N)的接口
+if (deviceInfo.apiAvailable('5.0.1')) {
+  // 需要版本隔离的方法
 }
 
-import { deviceInfo } from '@kit.BasicServicesKit';
-
-// Check API 13 (HarmonyOS SDK version, API 26-)
+// 针对HarmonyOS底座公共接口，即接口标记为since N
 if (deviceInfo.apiAvailable(13)) {
-   // 需要版本隔离的方法
+  // 需要版本隔离的方法
 }
 ```

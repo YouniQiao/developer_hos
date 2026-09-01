@@ -2,8 +2,8 @@
 title: "@ohos.measure (文本计算)"
 upstream_id: "harmonyos-references/js-apis-measure"
 catalog: "harmonyos-references"
-content_hash: "f1325e76efe7"
-synced_at: "2026-08-29T18:12:31.884488"
+content_hash: "ec14ccca0ab9"
+synced_at: "2026-09-01T18:11:31.509214"
 ---
 
 # @ohos.measure (文本计算)
@@ -14,7 +14,7 @@ synced_at: "2026-08-29T18:12:31.884488"
 
 - 本模块首批接口从API version 9开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 - 该模块不支持在[UIAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability)的文件声明处使用，即不能在UIAbility的生命周期中调用，需要在创建组件实例后使用。
-- 如需更多测算文本参数，建议使用图形对应测算接口[Paragraph](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-text#paragraph)接口。
+- 如需更多测算文本参数，建议使用图形对应[Paragraph](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-text#paragraph)下的测算接口。
 - 调用文本计算接口时，不建议同时使用[ApplicationContext.setFontSizeScale](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-applicationcontext#applicationcontextsetfontsizescale13)设置应用字体大小缩放比例。为了确保时序的一致性，建议开发者自行监听字体缩放变化，以保证测算结果的准确性。
 - 在测算裁剪后的文本时，由于某些Unicode字符（如emoji）的码位长度大于1，直接按字符串长度裁剪会导致不准确的结果。建议基于Unicode码点进行迭代处理，避免错误截断字符，确保测算结果准确。
 
@@ -149,7 +149,7 @@ struct Index {
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | textContent | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 否 | 设置被计算文本内容。 |
-| constraintWidth10+ | number | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 是 | 设置被计算文本布局宽度。取值范围：[0, +∞)。 **说明：** 默认单位为vp，不支持设置百分比字符串。若不设置，则文本宽度为单行布局的最大宽度。若设置则为设置值，同时会影响文本的换行方式和高度计算结果。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| constraintWidth10+ | number | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 是 | 设置被计算文本布局宽度。取值范围：[0, +∞)。 **说明：** 默认单位为vp，不支持设置百分比字符串。此参数仅在measureTextSize接口中生效，若不设置，则文本宽度为单行布局的最大宽度。若设置则为设置值，同时会影响文本的换行方式和高度计算结果。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | fontSize | number | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 是 | 设置被计算文本字体大小。取值范围：[0, +∞)，超出取值范围会导致计算结果异常。 默认值：16 **说明：** 不支持设置百分比字符串。 fontSize为number类型时，从API version 12开始，使用fp单位，在API version 12之前使用vp单位。 |
 | fontStyle | number | [FontStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontstyle) | 否 | 是 | 设置被计算文本字体样式。 默认值：FontStyle.Normal number类型取值范围为[0,1]，取值间隔为1，依次对应FontStyle中的枚举值。超出范围时使用默认值FontStyle.Normal。 |
 | fontWeight | number | string | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | 否 | 是 | 设置被计算文本的字体粗细，number类型取值[100, 900]，取值间隔为100，默认为400，取值越大，字体越粗。超出范围或不在间隔值上时使用默认值400。string类型仅支持number类型取值的字符串形式，例如"400"，以及"bold"、"bolder"、"lighter"、"regular"、"medium"，分别对应FontWeight中相应的枚举值。 默认值：FontWeight.Normal |

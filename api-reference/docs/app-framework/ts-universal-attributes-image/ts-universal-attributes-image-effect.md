@@ -2,8 +2,8 @@
 title: "图像效果"
 upstream_id: "harmonyos-references/ts-universal-attributes-image-effect"
 catalog: "harmonyos-references"
-content_hash: "bf54345cd508"
-synced_at: "2026-08-29T18:12:52.137874"
+content_hash: "4de8663621d6"
+synced_at: "2026-09-01T18:11:37.738166"
 ---
 
 # 图像效果
@@ -1175,8 +1175,9 @@ systemMaterial(material: SystemUiMaterial | undefined): T
 
 ![](./img/note_3.0-zh-cn.png)
 
+- 通过该属性设置组件的系统材质时，仅在Navigation或NavDestination的标题栏，或横向Tabs中barPosition为BarPosition.End的底部TabBar中生效。
 - [ImmersiveMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#immersivematerial)只有在支持沉浸式材质的设备上设置才有效果，在不支持沉浸式材质的设备上可设置但无效果，可通过[isImmersiveMaterialSupported](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#uimaterialisimmersivematerialsupported)判断设备是否支持沉浸式材质。在不支持沉浸式材质的设备上，设置ImmersiveMaterial后，组件的样式仍由已设置的通用属性决定，ImmersiveMaterial不会覆盖任何通用属性。
-- 在同时设置了材质影响的通用属性发生冲突时，除阴影外，总体原则为后设置的生效，对于阴影属性取决于[ImmersiveMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#immersivematerial)的applyShadow参数。先设置[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)属性后设置[systemMaterial](#systemmaterial)属性：backgroundColor属性被覆盖。在支持沉浸式材质的高算力和中算力设备上，背景色属性被清空为透明色；在支持沉浸式材质的低算力设备上，材质自带的背景色效果覆盖了先设置的backgroundColor属性。
+- 在同时设置了材质影响的通用属性发生冲突时，除阴影外，总体原则为后设置的生效，对于阴影属性取决于[ImmersiveMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#immersivematerial)的applyShadow参数。 先设置[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)属性后设置[systemMaterial](#systemmaterial)属性：backgroundColor属性被覆盖。在支持沉浸式材质的高算力和中算力设备上，背景色属性被清空为透明色；在支持沉浸式材质的低算力设备上，材质自带的背景色效果覆盖了先设置的backgroundColor属性。
 - 先设置[systemMaterial](#systemmaterial)属性后设置[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)属性：systemMaterial属性影响的背景色效果被覆盖，背景色属性生效为后设置的backgroundColor属性的颜色。
 
 对于所有设备算力档位均需要材质颜色的场景，可以通过[ImmersiveMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#immersivematerial)的materialColor参数承载，不再设置[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)属性。
@@ -1344,7 +1345,7 @@ struct ImageEffectsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639504.png)
+ ![](./img/zh-cn_image_0000002736434791.png)
 
 #### [h2]示例2（设置组件线性渐变模糊效果）
 
@@ -1373,7 +1374,7 @@ struct LinearGradientBlurExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358725.png)
+ ![](./img/zh-cn_image_0000002706835644.png)
 
 #### [h2]示例3（设置离屏渲染效果）
 
@@ -1425,7 +1426,7 @@ struct RenderGroupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799420.png)
+ ![](./img/zh-cn_image_0000002736314749.png)
 
 #### [h2]示例4（当前组件内容与下方画布内容混合）
 
@@ -1467,7 +1468,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518703.png)
+ ![](./img/zh-cn_image_0000002706675706.png)
 
 #### [h2]示例5（前景智能取反色）
 
@@ -1506,7 +1507,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639506.png)
+ ![](./img/zh-cn_image_0000002736434793.png)
 
 #### [h2]示例6（设置同层阴影不重叠效果）
 
@@ -1601,7 +1602,7 @@ struct UseShadowBatchingExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358727.png)
+ ![](./img/zh-cn_image_0000002706835646.png)
 
 #### [h2]示例7（设置组件图像球面效果）
 
@@ -1633,11 +1634,11 @@ struct SphericalEffectExample {
 ```
  效果图如下：
 
-![](./img/zh-cn_image_0000002701799422.png)
+![](./img/zh-cn_image_0000002736314751.png)
 
 去掉sphericalEffect的设置，效果如下：
 
-![](./img/zh-cn_image_0000002731518705.png)
+![](./img/zh-cn_image_0000002706675708.png)
 
 #### [h2]示例8（设置组件图像渐亮效果）
 
@@ -1663,15 +1664,15 @@ struct LightUpExample {
 ```
  效果图如下：
 
-![](./img/zh-cn_image_0000002701639508.png)
+![](./img/zh-cn_image_0000002736434795.png)
 
 修改lightUpEffect参数值为0.2：
 
-![](./img/zh-cn_image_0000002731358729.png)
+![](./img/zh-cn_image_0000002706835648.png)
 
 去掉lightUpEffect的设置，效果如下：
 
-![](./img/zh-cn_image_0000002701799424.png)
+![](./img/zh-cn_image_0000002736314753.png)
 
 #### [h2]示例9（设置组件图像边缘像素扩展效果）
 
@@ -1703,11 +1704,11 @@ struct PixelStretchExample {
 ```
  效果图如下：
 
-![](./img/zh-cn_image_0000002731518707.png)
+![](./img/zh-cn_image_0000002706675710.png)
 
 去掉pixelStretchEffect的设置，原图效果如下：
 
-![](./img/zh-cn_image_0000002701639510.png)
+![](./img/zh-cn_image_0000002736434797.png)
 
 #### [h2]示例10（系统导航条智能反色）
 
@@ -1736,7 +1737,7 @@ struct Index {
 ```
  效果图如下：
 
-![](./img/zh-cn_image_0000002731358731.png)
+![](./img/zh-cn_image_0000002706835650.png)
 
 #### [h2]示例11（设置组件是否双面绘制）
 
@@ -1799,4 +1800,4 @@ struct DoubleSided {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799426.gif)
+ ![](./img/zh-cn_image_0000002736314755.gif)

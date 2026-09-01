@@ -2,8 +2,8 @@
 title: "Progress"
 upstream_id: "harmonyos-references/ts-basic-components-progress"
 catalog: "harmonyos-references"
-content_hash: "cd7389f702bd"
-synced_at: "2026-08-29T18:14:30.091421"
+content_hash: "051d8bcf25c0"
+synced_at: "2026-09-01T18:12:49.308015"
 ---
 
 # Progress
@@ -302,7 +302,7 @@ privacySensitive(isPrivacySensitiveMode: Optional<boolean>)
 | --- | --- | --- | --- | --- |
 | strokeWidth | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 设置进度条宽度。 默认值：4.0vp 取值范围：大于0的数值，不支持百分比设置。 超出取值范围或设置非法值时按默认值处理。 当宽度大于等于半径时，宽度默认修改为半径值的二分之一。 |
 | shadow | boolean | 否 | 是 | 进度条阴影开关。 true：表示打开进度条阴影；false：表示关闭进度条阴影。 默认值：false |
-| status | [ProgressStatus10+](#progressstatus10枚举说明) | 否 | 是 | 设置进度条状态。当设置为ProgressStatus.LOADING时会开启检查更新动效，此时设置进度值不生效。当从ProgressStatus.LOADING设置为ProgressStatus.PROGRESSING时，检查更新动效会执行到终点再停止。 默认值：ProgressStatus.PROGRESSING |
+| status | [ProgressStatus10+](#progressstatus10枚举说明) | 否 | 是 | 设置进度条状态。当设置为ProgressStatus.LOADING时会开启检查更新动效。当从ProgressStatus.LOADING设置为ProgressStatus.PROGRESSING时，检查更新动效会执行到终点再停止。 默认值：ProgressStatus.PROGRESSING **说明：** 当设置为ProgressStatus.LOADING时，进度值设置不生效，具体参见[value](#value)属性说明。 |
 
 #### LinearStyleOptions10+
 
@@ -335,9 +335,9 @@ privacySensitive(isPrivacySensitiveMode: Optional<boolean>)
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| strokeWidth | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 设置进度条宽度。 默认值：4.0vp 取值范围：大于0的数值，不支持百分比设置。 超出取值范围或设置非法值时按默认值处理。 |
+| strokeWidth | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 设置进度条宽度。 默认值：4.0vp 取值范围：大于0的数值（单位：vp），不支持百分比设置。 超出取值范围或设置非法值时按默认值处理。 |
 | scaleCount | number | 否 | 是 | 设置环形进度条总刻度数。 默认值：120 取值范围：[2, min(width, height)*π/scaleWidth]，超出取值范围时，样式显示为环形无刻度进度条。 在scaleCount和scaleWidth都与默认值相等的情况下，设置组件宽度或高度小于77vp会显示为环形无刻度进度条。 |
-| scaleWidth | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 设置环形进度条刻度粗细（不支持百分比设置）。 默认值：2.0vp 取值范围：大于0的数值。 刻度粗细大于进度条宽度时，使用系统默认粗细。 在scaleCount和scaleWidth都与默认值相等的情况下，设置组件宽度或高度小于77vp会显示为环形无刻度进度条。 |
+| scaleWidth | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 设置环形进度条刻度粗细（不支持百分比设置）。 默认值：2.0vp 取值范围：大于0的数值（单位：vp）。 刻度粗细大于进度条宽度时，使用系统默认粗细。 在scaleCount和scaleWidth都与默认值相等的情况下，设置组件宽度或高度小于77vp会显示为环形无刻度进度条。 |
 
 #### EclipseStyleOptions10+
 
@@ -432,7 +432,7 @@ struct ProgressExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799864.png)
+ ![](./img/zh-cn_image_0000002736315199.png)
 
 #### [h2]示例2（设置环形进度条属性）
 
@@ -461,7 +461,7 @@ struct ProgressExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519151.png)
+ ![](./img/zh-cn_image_0000002706676156.png)
 
 #### [h2]示例3（设置环形进度条动画）
 
@@ -487,7 +487,7 @@ struct ProgressExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639950.gif)
+ ![](./img/zh-cn_image_0000002736435243.gif)
 
 #### [h2]示例4（设置胶囊形进度条属性）
 
@@ -516,7 +516,7 @@ struct ProgressExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359171.png)
+ ![](./img/zh-cn_image_0000002706836096.png)
 
 #### [h2]示例5（设置进度平滑动效）
 
@@ -557,7 +557,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799866.gif)
+ ![](./img/zh-cn_image_0000002736315201.gif)
 
 #### [h2]示例6（设置定制内容区）
 
@@ -636,7 +636,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519153.gif)
+ ![](./img/zh-cn_image_0000002706676158.gif)
 
 #### [h2]示例7（设置隐私隐藏）
 
@@ -672,7 +672,7 @@ struct ProgressExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639952.gif)
+ ![](./img/zh-cn_image_0000002736435245.gif)
 
 #### [h2]示例8（设置Capsule进度条圆角半径）
 
@@ -708,7 +708,7 @@ struct ProgressExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359173.png)
+ ![](./img/zh-cn_image_0000002706836098.png)
 
 #### [h2]示例9（设置线性进度条和胶囊进度条属性）
 
@@ -739,4 +739,4 @@ struct ProgressExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799868.png)
+ ![](./img/zh-cn_image_0000002736315203.png)

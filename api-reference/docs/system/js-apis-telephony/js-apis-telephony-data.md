@@ -2,8 +2,8 @@
 title: "@ohos.telephony.data (蜂窝数据)"
 upstream_id: "harmonyos-references/js-apis-telephony-data"
 catalog: "harmonyos-references"
-content_hash: "3e499083a7d0"
-synced_at: "2026-08-29T18:16:53.795448"
+content_hash: "e53e34caa8ba"
+synced_at: "2026-09-01T18:14:35.926536"
 ---
 
 # @ohos.telephony.data (蜂窝数据)
@@ -178,7 +178,10 @@ getCellularDataState(callback: AsyncCallback<DataConnectState>): void
 
 获取蜂窝数据业务的连接状态，使用callback方式作为异步方法。
 
-需要权限：ohos.permission.GET_NETWORK_INFO
+需要权限：
+
+- API版本22之前：N/A
+- API版本22+：ohos.permission.GET_NETWORK_INFO
 
 系统能力：SystemCapability.Telephony.CellularData
 
@@ -217,7 +220,10 @@ getCellularDataState(): Promise<DataConnectState>
 
 获取蜂窝数据业务的连接状态，使用Promise方式作为异步方法。
 
-需要权限：ohos.permission.GET_NETWORK_INFO
+需要权限：
+
+- API版本22之前：N/A
+- API版本22+：ohos.permission.GET_NETWORK_INFO
 
 系统能力：SystemCapability.Telephony.CellularData
 

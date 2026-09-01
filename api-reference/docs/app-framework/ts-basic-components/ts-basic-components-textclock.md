@@ -2,8 +2,8 @@
 title: "TextClock"
 upstream_id: "harmonyos-references/ts-basic-components-textclock"
 catalog: "harmonyos-references"
-content_hash: "358fd23b6bed"
-synced_at: "2026-07-28T16:46:19.248839"
+content_hash: "acaf170e76d4"
+synced_at: "2026-09-01T18:12:49.541703"
 ---
 
 # TextClock
@@ -413,7 +413,7 @@ stop()
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| timeZoneOffset | number | 否 | 否 | 当前文本时钟时区偏移量。 取值范围为[-14, 12]，表示东十二区到西十二区，其中负值表示东时区，正值表示西时区，比如东八区为-8。设置值为该取值范围内的浮点数时会进行取整，舍弃小数部分。当设置的值不在取值范围内时，将使用当前系统的时区偏移量。 |
+| timeZoneOffset | number | 否 | 否 | 当前文本时钟时区偏移量。 取值范围为[-14, 12]，表示东十二区到西十二区，其中负值表示东时区，正值表示西时区，比如东八区为-8。设置值为该取值范围内的浮点数时会进行取整，舍弃小数部分；但设置值为{ 9.5, 3.5, -3.5, -4.5, -5.5, -5.75, -6.5, -9.5, -10.5, -12.75 }集合中的浮点数时不进行取整。当设置的值不在取值范围内时，将使用当前系统的时区偏移量。 |
 | started | boolean | 否 | 否 | 指示文本时钟是否启动。 true：表示启动文本时钟。 false：表示停止文本时钟。 默认值：true |
 | timeValue | number | 否 | 否 | 当前文本时钟时区的UTC秒数。 |
 
@@ -432,7 +432,7 @@ stop()
 @Component
 struct Second {
   @State accumulateTime: number = 0;
-  // 导入对象
+  // 创建控制器对象
   controller: TextClockController = new TextClockController();
 
   build() {
@@ -464,7 +464,7 @@ struct Second {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928419.gif)
+ ![](./img/zh-cn_image_0000002706836100.gif)
 
 #### [h2]示例2（设定文本阴影样式）
 
@@ -508,7 +508,7 @@ struct TextClockExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008742.png)
+ ![](./img/zh-cn_image_0000002736315205.png)
 
 #### [h2]示例3（设定自定义内容区）
 
@@ -594,7 +594,7 @@ struct TextClockExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848820.gif)
+ ![](./img/zh-cn_image_0000002706676162.gif)
 
 #### [h2]示例4（设置前导零）
 
@@ -628,7 +628,7 @@ struct TextClockExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088251.png)
+ ![](./img/zh-cn_image_0000002736435249.png)
 
 #### [h2]示例5（设置文字显示样式）
 
@@ -682,4 +682,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928421.png)
+ ![](./img/zh-cn_image_0000002706836102.png)

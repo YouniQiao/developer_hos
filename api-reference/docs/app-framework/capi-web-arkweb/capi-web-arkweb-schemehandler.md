@@ -2,8 +2,8 @@
 title: "ArkWeb_SchemeHandler_"
 upstream_id: "harmonyos-references/capi-web-arkweb-schemehandler"
 catalog: "harmonyos-references"
-content_hash: "16bc9344d22f"
-synced_at: "2026-08-29T18:16:02.823135"
+content_hash: "57543ed7a417"
+synced_at: "2026-09-01T18:13:56.290397"
 ---
 
 # ArkWeb_SchemeHandler_
@@ -19,5 +19,7 @@ ArkWeb_SchemeHandler是用于注册自定义Scheme（协议）拦截器的结构
 起始版本： 12
 
 相关模块： [Web](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-web)
+
+系统能力： SystemCapability.Web.Webview.Core
 
 所在头文件： [arkweb_scheme_handler.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkweb-scheme-handler-h)

@@ -2,8 +2,8 @@
 title: "drawing_font_mgr.h"
 upstream_id: "harmonyos-references/capi-drawing-font-mgr-h"
 catalog: "harmonyos-references"
-content_hash: "944e1e49eda1"
-synced_at: "2026-08-29T18:17:53.417237"
+content_hash: "b2c418618851"
+synced_at: "2026-09-01T18:15:45.830353"
 ---
 
 # drawing_font_mgr.h
@@ -272,7 +272,7 @@ OH_Drawing_Typeface* OH_Drawing_FontMgrMatchFamilyStyleCharacter(OH_Drawing_Font
 | [OH_Drawing_FontMgr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-fontmgr)* drawingFontMgr | 指向字体管理对象[OH_Drawing_FontMgr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-fontmgr)的指针，由[OH_Drawing_FontMgrCreate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-font-mgr-h#oh_drawing_fontmgrcreate)获取。 |
 | const char* familyName | 指定的字体家族名称。 |
 | [OH_Drawing_FontStyleStruct](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing-oh-drawing-fontstylestruct) fontStyle | 字体样式对象，包括字体字重、字体宽度和字体斜度信息。 |
-| const char* bcp47 | 用来指示character语言编码数组，是ISO 639、15924和3166-1语言编码的组合。 |
+| const char* bcp47[] | 用来指示character语言编码数组，是ISO 639、15924和3166-1语言编码的组合。 |
 | int bcp47Count | 参数bcp47数组大小，需与bcp47数组的实际元素个数一致。 |
 | int32_t character | 待匹配的UTF-8字符值。 |
 

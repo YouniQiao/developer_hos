@@ -2,8 +2,8 @@
 title: "开发说明"
 upstream_id: "harmonyos-references/development-intro-api"
 catalog: "harmonyos-references"
-content_hash: "6cf63a62bd35"
-synced_at: "2026-08-31T20:40:49.217194"
+content_hash: "af864fa6958d"
+synced_at: "2026-09-01T18:11:05.261369"
 ---
 
 # 开发说明
@@ -23,7 +23,7 @@ API参考采用两种方式标记组件或接口开始支持的版本号：
 
 建议开发者同步勾选"只看筛选内容"，查阅当前使用的SDK支持的API接口。
 
-![](./img/zh-cn_image_0000002706254440.gif)
+![](./img/zh-cn_image_0000002706835500.gif)
 
 #### 支持设备说明
 
@@ -37,16 +37,7 @@ API参考采用两种方式标记组件或接口开始支持的版本号：
 
 建议开发者同步勾选"只看筛选内容"，查阅对应设备支持的API接口。
 
-![](./img/zh-cn_image_0000002706094502.gif)
-
-#### 系统能力说明
-
-系统能力（SystemCapability，简称SysCap），指操作系统中每一个相对独立的特性。不同的设备对应不同的系统能力集，每个系统能力对应多个接口。开发者可根据系统能力来判断是否可以使用某接口。具体可参考[系统能力SystemCapability使用指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/syscap)。
-
-文档在每一个接口描述中说明了接口的系统能力，如：系统能力：SystemCapability.xxx.xxx
-
-- 系统提供了canIUse接口，可[使用canIUse判断SysCap是否可调用](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/syscap#使用caniuse判断syscap是否可调用)；
-- 相同的系统能力，在不同的设备下，也会有能力的差异。开发者可以进行[多设备应用开发场景下的适配开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/syscap#多设备应用开发场景下的适配开发)。
+![](./img/zh-cn_image_0000002736314605.gif)
 
 #### [h2]接口在各设备类型的起始版本标记
 
@@ -54,7 +45,7 @@ API参考采用两种方式标记组件或接口开始支持的版本号：
 
 标记示意图如下：
 
-![](./img/zh-cn_image_0000002736013603.png)
+![](./img/zh-cn_image_0000002706675562.png)
 
 标记适用范围说明：
 
@@ -74,6 +65,15 @@ API参考采用两种方式标记组件或接口开始支持的版本号：
 
 - 当B对应的版本早于该设备类型的首个商用发布版本时，A等于该设备类型的首个商用发布版本。
 - 当B对应的版本不早于该设备类型的首个商用发布版本时，A等于B。
+
+#### 系统能力说明
+
+系统能力（SystemCapability，简称SysCap），指操作系统中每一个相对独立的特性。不同的设备对应不同的系统能力集，每个系统能力对应多个接口。开发者可根据系统能力来判断是否可以使用某接口。具体可参考[系统能力SystemCapability使用指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/syscap)。
+
+文档在每一个接口描述中说明了接口的系统能力，如：系统能力：SystemCapability.xxx.xxx
+
+- 系统提供了canIUse接口，可[使用canIUse判断SysCap是否可调用](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/syscap#使用caniuse判断syscap是否可调用)；
+- 相同的系统能力，在不同的设备下，也会有能力的差异。开发者可以进行[多设备应用开发场景下的适配开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/syscap#多设备应用开发场景下的适配开发)。
 
 #### 接口使用说明
 

@@ -2,8 +2,8 @@
 title: "Search"
 upstream_id: "harmonyos-references/ts-basic-components-search"
 catalog: "harmonyos-references"
-content_hash: "6a7f5d789924"
-synced_at: "2026-08-29T18:14:02.268092"
+content_hash: "c6244c8c11d7"
+synced_at: "2026-09-01T18:12:08.262894"
 ---
 
 # Search
@@ -843,7 +843,7 @@ strokeWidth(width: Optional<LengthMetrics>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| width | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 文本描边的宽度。如果LengthMetrics的unit值是PERCENT，当前设置不生效，按默认值处理。 若设置值小于0，显示实心字；若大于0，显示空心字。 **说明：** 当同时设置strokeWidth和[shaderStyle](#shaderstyle)时，shaderStyle不生效。 [strokeJoinStyle](#strokejoinstyle)仅在使用strokeWidth设置文本描边时生效。 |
+| width | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 文本描边的宽度。当LengthMetrics对象的unit属性为LengthUnit.PERCENT时，当前设置不生效，按默认值处理。 若设置值小于0，显示实心字；若大于0，显示空心字。 **说明：** 当同时设置strokeWidth和[shaderStyle](#shaderstyle)时，shaderStyle不生效。 [strokeJoinStyle](#strokejoinstyle)仅在使用strokeWidth设置文本描边时生效。 |
 
 #### [h2]strokeColor20+
 
@@ -1234,7 +1234,7 @@ onWillCut(callback: Callback<string, boolean>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | Callback | 是 | 剪切操作前的回调。回调参数类型为string时，表示将要被剪切的文本内容。回调参数类型为boolean时，表示当前选中文本是否允许被剪切，true：允许文本被剪切；false：不允许文本被剪切。 |
+| callback | Callback | 是 | 剪切操作前的回调。回调参数类型为string时，表示将要被剪切的文本内容。回调返回值为boolean时，表示当前选中文本是否允许被剪切，true：允许文本被剪切；false：不允许文本被剪切。 |
 
 #### [h2]onPaste
 
@@ -1595,7 +1595,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799738.gif)
+ ![](./img/zh-cn_image_0000002736315073.gif)
 
 #### [h2]示例2（设置搜索和删除图标）
 
@@ -1641,7 +1641,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519025.gif)
+ ![](./img/zh-cn_image_0000002706676030.gif)
 
 #### [h2]示例3（设置自定义键盘）
 
@@ -1716,7 +1716,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639824.gif)
+ ![](./img/zh-cn_image_0000002736435117.gif)
 
 #### [h2]示例4（设置输入法回车键类型）
 
@@ -1749,7 +1749,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359045.gif)
+ ![](./img/zh-cn_image_0000002706835970.gif)
 
 #### [h2]示例5（设置文本样式）
 
@@ -1796,7 +1796,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799740.png)
+ ![](./img/zh-cn_image_0000002736315075.png)
 
 #### [h2]示例6（设置文字特性效果）
 
@@ -1824,7 +1824,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519027.png)
+ ![](./img/zh-cn_image_0000002706676032.png)
 
 #### [h2]示例7（自定义键盘避让）
 
@@ -1897,7 +1897,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639826.gif)
+ ![](./img/zh-cn_image_0000002736435119.gif)
 
 #### [h2]示例8（设置文本自适应）
 
@@ -1926,7 +1926,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359047.png)
+ ![](./img/zh-cn_image_0000002706835972.png)
 
 #### [h2]示例9（支持插入和删除回调）
 
@@ -2042,7 +2042,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799742.png)
+ ![](./img/zh-cn_image_0000002736315077.png)
 
 #### [h2]示例10（文本扩展自定义菜单）
 
@@ -2137,7 +2137,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519029.png)
+ ![](./img/zh-cn_image_0000002706676034.png)
 
 #### [h2]示例11（设置symbol类型清除按钮）
 
@@ -2176,7 +2176,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639828.png)
+ ![](./img/zh-cn_image_0000002736435121.png)
 
 #### [h2]示例12（设置文本是否可复制）
 
@@ -2244,7 +2244,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359049.gif)
+ ![](./img/zh-cn_image_0000002706835974.gif)
 
 #### [h2]示例13（设置文本水平对齐/光标样式/选中背景色）
 
@@ -2273,7 +2273,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799744.gif)
+ ![](./img/zh-cn_image_0000002736315079.gif)
 
 #### [h2]示例14（设置默认获焦并拉起软键盘）
 
@@ -2307,7 +2307,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519031.gif)
+ ![](./img/zh-cn_image_0000002706676036.gif)
 
 #### [h2]示例15（关闭系统文本选择菜单）
 
@@ -2334,7 +2334,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639830.gif)
+ ![](./img/zh-cn_image_0000002736435123.gif)
 
 #### [h2]示例16（对输入的文本进行过滤）
 
@@ -2366,7 +2366,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359051.gif)
+ ![](./img/zh-cn_image_0000002706835976.gif)
 
 #### [h2]示例17（设置选中指定区域的文本内容）
 
@@ -2406,7 +2406,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799746.png)
+ ![](./img/zh-cn_image_0000002736315081.png)
 
 #### [h2]示例18（设置文本滚动事件）
 
@@ -2438,7 +2438,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519033.gif)
+ ![](./img/zh-cn_image_0000002706676038.gif)
 
 #### [h2]示例19（设置最小字体范围与最大字体范围）
 
@@ -2509,7 +2509,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639832.png) ![](./img/zh-cn_image_0000002731359053.png)
+ ![](./img/zh-cn_image_0000002736435125.png) ![](./img/zh-cn_image_0000002706835978.png)
 
 #### [h2]示例20（设置文本描边）
 
@@ -2559,7 +2559,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799748.png)
+ ![](./img/zh-cn_image_0000002736315083.png)
 
 #### [h2]示例21（设置中西文自动间距）
 
@@ -2585,7 +2585,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519035.png)
+ ![](./img/zh-cn_image_0000002706676040.png)
 
 #### [h2]示例22（设置placeholder富文本样式）
 
@@ -2653,7 +2653,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639834.jpg)
+ ![](./img/zh-cn_image_0000002736435127.jpg)
 
 #### [h2]示例23（设置输入法扩展信息）
 
@@ -2719,7 +2719,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359055.jpg)
+ ![](./img/zh-cn_image_0000002706835980.jpg)
 
 #### [h2]示例25（设置行首标点压缩）
 
@@ -2747,7 +2747,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799750.gif)
+ ![](./img/zh-cn_image_0000002736315085.gif)
 
 #### [h2]示例26（设置自适应间距）
 
@@ -2813,7 +2813,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519037.gif)
+ ![](./img/zh-cn_image_0000002706676042.gif)
 
 #### [h2]示例27（设置文本拖拽时的背板样式）
 
@@ -2839,7 +2839,7 @@ struct SearchTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639836.png)
+ ![](./img/zh-cn_image_0000002736435129.png)
 
 #### [h2]示例28（删除文本框内的最后一个字符）
 
@@ -2864,7 +2864,7 @@ struct Page {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359057.gif)
+ ![](./img/zh-cn_image_0000002706835982.gif)
 
 #### [h2]示例29（设置文本排版方向）
 
@@ -2907,7 +2907,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799752.png)
+ ![](./img/zh-cn_image_0000002736315087.png)
 
 #### [h2]示例30（将指定范围的文字滚动到可视区内）
 
@@ -2935,7 +2935,7 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519039.gif)
+ ![](./img/zh-cn_image_0000002706676044.gif)
 
 #### [h2]示例31（设置文本着色器效果）
 
@@ -3004,7 +3004,7 @@ struct ShaderColorStyle {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639838.png)
+ ![](./img/zh-cn_image_0000002736435131.png)
 
 #### [h2]示例32（设置文本选择的AI菜单）
 
@@ -3032,4 +3032,4 @@ struct SearchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359059.gif)
+ ![](./img/zh-cn_image_0000002706835984.gif)

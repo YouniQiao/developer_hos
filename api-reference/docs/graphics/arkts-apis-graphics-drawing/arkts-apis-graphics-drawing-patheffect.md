@@ -2,8 +2,8 @@
 title: "Class (PathEffect)"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing-patheffect"
 catalog: "harmonyos-references"
-content_hash: "35b5c1fc16c2"
-synced_at: "2026-08-29T18:17:50.223772"
+content_hash: "b8c801338331"
+synced_at: "2026-09-01T18:15:42.855094"
 ---
 
 # Class (PathEffect)
@@ -56,11 +56,10 @@ static createDashPathEffect(intervals: Array<number>, phase: number): PathEffect
 
 ```
 import { RenderNode } from '@kit.ArkUI';
-import { common2D, drawing } from '@kit.ArkGraphics2D';
+import { drawing } from '@kit.ArkGraphics2D';
 
 class DrawingRenderNode extends RenderNode {
   draw(context : DrawContext) {
-    const canvas = context.canvas;
     let intervals = [10, 5];
     let effect = drawing.PathEffect.createDashPathEffect(intervals, 5);
   }

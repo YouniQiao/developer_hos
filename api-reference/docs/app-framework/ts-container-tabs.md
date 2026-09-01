@@ -2,8 +2,8 @@
 title: "Tabs"
 upstream_id: "harmonyos-references/ts-container-tabs"
 catalog: "harmonyos-references"
-content_hash: "97b59a453b29"
-synced_at: "2026-08-29T18:13:32.437347"
+content_hash: "1e189307efc9"
+synced_at: "2026-09-01T18:11:46.370303"
 ---
 
 # Tabs
@@ -651,7 +651,7 @@ TabBar悬浮样式。
 | maskColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 蒙层的颜色。蒙层显示区域在纵向会基于蒙层的颜色进行透明度渐变显示，从下到上不透明度变小。浅色模式下默认值为#CCF1F3F5，显示为白色。深色模式下默认值为#99000000，显示为黑色。 |
 | maskHeight | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 蒙层的高度。蒙层显示上边缘默认比TabBar上边缘高16vp。 |
 | adaptToHandedness | boolean | 否 | 是 | 是否跟随操作手左右布局显示。 true表示跟随操作手左右布局显示；false表示不跟随操作手左右布局显示。 默认值：false |
-| systemMaterial | [UIMaterial](#uimaterial).[ImmersiveMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#immersivematerial) | 否 | 是 | TabBar的背板沉浸式材质样式。 |
+| systemMaterial | [UIMaterial](#uimaterial).[ImmersiveMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#immersivematerial) | 否 | 是 | TabBar的背板沉浸式材质样式。仅当Tabs为横向布局且barPosition为BarPosition.End时，底部TabBar的材质效果生效。 |
 
 #### BarMode枚举说明
 
@@ -1372,7 +1372,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799604.gif)
+ ![](./img/zh-cn_image_0000002706675894.gif)
 
 #### [h2]示例2（设置Scrollable模式下的TabBar的布局样式）
 
@@ -1489,7 +1489,7 @@ struct TabsExample6 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518889.gif)
+ ![](./img/zh-cn_image_0000002736434981.gif)
 
 #### [h2]示例3（自定义页签切换联动）
 
@@ -1565,7 +1565,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639690.gif)
+ ![](./img/zh-cn_image_0000002706835834.gif)
 
 #### [h2]示例4（分割线基本属性）
 
@@ -1674,7 +1674,7 @@ struct TabsDivider1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358911.gif)
+ ![](./img/zh-cn_image_0000002736314939.gif)
 
 #### [h2]示例5（设置TabBar渐隐）
 
@@ -1786,7 +1786,7 @@ struct TabsOpaque {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799606.gif)
+ ![](./img/zh-cn_image_0000002706675896.gif)
 
 #### [h2]示例6（设置TabBar叠加在TabContent内容上）
 
@@ -1837,7 +1837,7 @@ struct barHeightTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518891.gif)
+ ![](./img/zh-cn_image_0000002736434983.gif)
 
 #### [h2]示例7（设置TabBar栅格化可见区域）
 
@@ -1940,7 +1940,7 @@ struct TabsExample5 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639692.gif)
+ ![](./img/zh-cn_image_0000002706835836.gif)
 
 #### [h2]示例8（自定义Tabs页面切换动画）
 
@@ -2029,7 +2029,7 @@ struct TabsCustomAnimationExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358913.gif)
+ ![](./img/zh-cn_image_0000002736314941.gif)
 
 #### [h2]示例9（页面切换拦截）
 
@@ -2120,7 +2120,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799608.gif)
+ ![](./img/zh-cn_image_0000002706675898.gif)
 
 #### [h2]示例10（自定义TabBar切换动画）
 
@@ -2290,7 +2290,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518893.gif)
+ ![](./img/zh-cn_image_0000002736434985.gif)
 
 #### [h2]示例11（预加载子节点）
 
@@ -2418,7 +2418,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639694.gif)
+ ![](./img/zh-cn_image_0000002706835838.gif)
 
 #### [h2]示例13（页面懒加载和释放）
 
@@ -2525,7 +2525,7 @@ struct TabsSwiperExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358915.gif)
+ ![](./img/zh-cn_image_0000002736314943.gif)
 
 #### [h2]示例14（设置翻页动效）
 
@@ -2598,7 +2598,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799610.gif)
+ ![](./img/zh-cn_image_0000002706675900.gif)
 
 #### [h2]示例15（页签超出TabBar区域显示）
 
@@ -2689,7 +2689,7 @@ struct TabsBarModifierExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518895.gif)
+ ![](./img/zh-cn_image_0000002736434987.gif)
 
 #### [h2]示例16（页签对齐布局）
 
@@ -2793,7 +2793,7 @@ struct TabsBarModifierExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639696.gif)
+ ![](./img/zh-cn_image_0000002706835840.gif)
 
 #### [h2]示例17（Tabs与TabBar同步切换）
 
@@ -2870,7 +2870,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358917.gif)
+ ![](./img/zh-cn_image_0000002736314945.gif)
 
 #### [h2]示例18（释放Tabs子组件）
 
@@ -2997,7 +2997,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799612.png)
+ ![](./img/zh-cn_image_0000002706675902.png)
 
 #### [h2]示例20（设置边缘滑动效果）
 
@@ -3053,7 +3053,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518897.gif)
+ ![](./img/zh-cn_image_0000002736434989.gif)
 
 #### [h2]示例21（Tabs设置翻页动画曲线）
 
@@ -3144,7 +3144,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639698.gif)
+ ![](./img/zh-cn_image_0000002706835842.gif)
 
 #### [h2]示例22（监听Tabs页面滑动事件）
 
@@ -3244,7 +3244,7 @@ struct TabsDidScrollExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358919.gif)
+ ![](./img/zh-cn_image_0000002736314947.gif)
 
 #### [h2]示例23（Tabs嵌套滚动）
 
@@ -3310,7 +3310,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799614.gif)
+ ![](./img/zh-cn_image_0000002706675904.gif)
 
 #### [h2]示例24（TabBar悬浮样式）
 
@@ -3361,4 +3361,4 @@ struct TabsFloatingStyleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518899.gif)
+ ![](./img/zh-cn_image_0000002736434991.gif)

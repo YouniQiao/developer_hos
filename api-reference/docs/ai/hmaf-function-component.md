@@ -2,8 +2,8 @@
 title: "FunctionComponent（功能组件）"
 upstream_id: "harmonyos-references/hmaf-function-component"
 catalog: "harmonyos-references"
-content_hash: "d1342af89b3a"
-synced_at: "2026-07-28T16:53:08.443177"
+content_hash: "51cf2834ac40"
+synced_at: "2026-09-01T18:16:29.645244"
 ---
 
 # FunctionComponent（功能组件）
@@ -36,12 +36,12 @@ Agent功能组件，可以实现拉起智能体功能。
 
 参数：
 
-| 名称 | 类型 | 只读 | 必填 | 说明 |
-| --- | --- | --- | --- | --- |
-| agentId | string | 是 | 是 | Agent ID，Agent的唯一标识，[开发Agent](https://developer.huawei.com/consumer/cn/doc/service/developing-intelligent-agents-0000002435989592)时获取。智能体创建成功后，可在智能体配置页面的网址链接中获取。 长度限制1~64个字符。 |
-| onError | [ErrorCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#errorcallback) | 是 | 是 | 错误回调函数。返回的错误码及说明如下所示 |
-| options | [FunctionOptions](#functionoptions) | 是 | 否 | Function组件初始化可选参数。 |
-| controller | [FunctionController](#functioncontroller) | 是 | 否 | Function组件控制器。默认为undefined。 |
+| 名称 | 类型 | 只读 | 必填 | 装饰器类型 | 说明 |
+| --- | --- | --- | --- | --- | --- |
+| agentId | string | 是 | 是 | - | Agent ID，Agent的唯一标识，[开发Agent](https://developer.huawei.com/consumer/cn/doc/service/developing-intelligent-agents-0000002435989592)时获取。智能体创建成功后，可在智能体配置页面的网址链接中获取。 长度限制：1~64个字符。 |
+| onError | [ErrorCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#errorcallback) | 是 | 是 | - | 错误回调函数。返回的错误码及说明如下所示 |
+| options | [FunctionOptions](#functionoptions) | 是 | 否 | - | Function组件初始化可选参数。 |
+| controller | [FunctionController](#functioncontroller) | 是 | 否 | - | Function组件控制器。默认为undefined。 |
 
 ![](./img/note_3.0-zh-cn.png) 该组件的所有参数均为初始化配置项，仅在组件实例化时生效，运行过程中修改参数值无法实现动态更新，若需调整参数请重新初始化组件。
 
@@ -53,6 +53,20 @@ Agent功能组件，可以实现拉起智能体功能。
 | --- | --- |
 | 1022400010 | Parameter error. |
 | 1022400014 | Internal error. |
+
+#### [h2]build
+
+build(): void
+
+FunctionComponent组件的构造函数。
+
+元服务API： 从版本6.0.1(21)开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.AI.Agent.AgentKit
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+起始版本： 6.0.0(20)
 
 示例：
 
@@ -115,7 +129,7 @@ isAgentSupport(context: common.UIAbilityContext, agentId: string): Promise<boole
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | context | [common.UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-common#uiabilitycontext) | 是 | 当前上下文环境。 |
-| agentId | string | 是 | Agent ID，Agent的唯一标识，[开发Agent](https://developer.huawei.com/consumer/cn/doc/service/developing-intelligent-agents-0000002435989592)时获取。 长度限制1~64个字符。 |
+| agentId | string | 是 | Agent ID，Agent的唯一标识，[开发Agent](https://developer.huawei.com/consumer/cn/doc/service/developing-intelligent-agents-0000002435989592)时获取。 长度限制：1~64个字符。 |
 
 返回值：
 

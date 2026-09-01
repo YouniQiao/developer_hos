@@ -2,8 +2,8 @@
 title: "ChipGroup"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-chipgroup"
 catalog: "harmonyos-references"
-content_hash: "73aaaa9afedf"
-synced_at: "2026-08-29T18:15:06.367704"
+content_hash: "9da58bb27162"
+synced_at: "2026-09-01T18:13:06.763084"
 ---
 
 # ChipGroup
@@ -65,8 +65,8 @@ suffix?: Callback<void>
 | multiple | boolean | 否 | @Prop | 是否选中多个Chip。 true：支持多个Chip选中，适用于需要同时选择多个选项的场景（如多标签选择、多条件筛选）；false：仅支持单个Chip选中，适用于单选场景（如单项选择）。 默认值：false 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | chipGroupSpace | [ChipGroupSpaceOptions](#chipgroupspaceoptions) | 否 | @Prop | 左右内边距及Chip之间间距。参考[ChipGroupSpaceOptions](#chipgroupspaceoptions)类型。当默认间距无法满足布局要求或需要根据UI设计调整Chip之间的间隔时传入此参数。 默认值：{ itemSpace: 8, startSpace: 16, endSpace: 16 } 单位：vp 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | chipGroupPadding | [ChipGroupPaddingOptions](#chipgrouppaddingoptions) | 否 | @Prop | 设置ChipGroup的上下内边距，以控制整体高度。类型为[ChipGroupPaddingOptions](#chipgrouppaddingoptions)。当需要调整ChipGroup组件的垂直空间占用或匹配特定UI设计要求时传入此参数。 默认值：{ top: 14, bottom: 14 } 单位：vp 值为undefined时，按默认值处理。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| backgroundSystemMaterial | [uiMaterial.Material](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#material) | 否 | @Prop | 设置组件系统材质样式。不同材质具有不同的效果，能够影响组件的[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、[border](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#border)、[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)视觉属性。设置自动反色的系统材质时，fontColor如果使用系统预定义的可反色颜色资源（如$r('sys.color.font_primary')），颜色自动适配到材质背景色的反色。当设置backgroundSystemMaterial时，应将backgroundColor设为Color.Transparent，否则会与系统材质冲突。 默认值：undefined 值为undefined时，不应用材质样式。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
-| selectedBackgroundSystemMaterial | [uiMaterial.Material](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#material) | 否 | @Prop | 设置组件选中状态的系统材质样式。不同材质具有不同的效果，能够影响组件选中时的[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、[border](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#border)、[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)视觉属性。设置自动反色的系统材质时，selectedFontColor如果使用系统预定义的可反色颜色资源（如$r('sys.color.font_primary')），颜色自动适配到材质背景色的反色。当设置selectedBackgroundSystemMaterial时，应将selectedBackgroundColor设为Color.Transparent，否则会与系统材质冲突。 默认值：undefined 值为undefined时，不应用选中状态的材质样式。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
+| backgroundSystemMaterial | [uiMaterial.Material](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#material) | 否 | @Prop | 设置组件系统材质样式。需要将组件放置在Navigation或NavDestination的标题栏子树，或横向Tabs的底部TabBar子树中，材质效果才会生效。不同材质具有不同的效果，能够影响组件的[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、[border](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#border)、[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)视觉属性。设置自动反色的系统材质时，fontColor如果使用系统预定义的可反色颜色资源（如$r('sys.color.font_primary')），颜色自动适配到材质背景色的反色。当设置backgroundSystemMaterial时，应将backgroundColor设为Color.Transparent，否则会与系统材质冲突。 默认值：undefined 值为undefined时，不应用材质样式。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
+| selectedBackgroundSystemMaterial | [uiMaterial.Material](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#material) | 否 | @Prop | 设置组件选中状态的系统材质样式。需要将组件放置在Navigation或NavDestination的标题栏子树，或横向Tabs的底部TabBar子树中，材质效果才会生效。不同材质具有不同的效果，能够影响组件选中时的[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、[border](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#border)、[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)视觉属性。设置自动反色的系统材质时，selectedFontColor如果使用系统预定义的可反色颜色资源（如$r('sys.color.font_primary')），颜色自动适配到材质背景色的反色。当设置selectedBackgroundSystemMaterial时，应将selectedBackgroundColor设为Color.Transparent，否则会与系统材质冲突。 默认值：undefined 值为undefined时，不应用选中状态的材质样式。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
 | onChange | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12)> | 否 | - | Chip状态改变时的回调方法，用于监听Chip选中状态的变更。该回调在selectedIndexes属性更新后触发，开发者可在回调中获取最新的选中状态并执行相应操作，如更新UI、保存选中数据、触发业务逻辑等。当需要监听用户选择Chip的操作并执行相应业务逻辑时传入此参数。不传入时，无法接收Chip状态变化的通知。 若为undefined，不触发该回调。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | suffix | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 否 | @BuilderParam | 支持开发者自定义builder，如需在组件最右侧显示自定义内容可配置suffix属性，使用属性suffix需引用[IconGroupSuffix](#icongroupsuffix)接口。 默认不传入时，没有suffix。 值为undefined时，没有suffix。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 
@@ -211,7 +211,7 @@ IconGroupSuffix({
 | 名称 | 类型 | 必填 | 装饰器类型 | 说明 |
 | --- | --- | --- | --- | --- |
 | items | Array | 是 | @Require @Prop | 尾部区域显示的自定义项数组，支持IconItemOptions（Image图标）、SymbolGlyphModifier（Symbol图标）或SymbolItemOptions（Symbol图标配置）类型。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| iconBackgroundSystemMaterial | [uiMaterial.Material](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#material) | 否 | @Prop | 设置组件系统材质样式。不同材质具有不同的效果，能够影响组件的[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、[border](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#border)、[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)视觉属性。设置自动反色的系统材质时，fontColor如果使用系统预定义的可反色颜色资源（如$r('sys.color.font_primary')），颜色自动适配到材质背景色的反色。 默认值：undefined 值为undefined时，不应用材质样式。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
+| iconBackgroundSystemMaterial | [uiMaterial.Material](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#material) | 否 | @Prop | 设置组件系统材质样式。需要将组件放置在Navigation或NavDestination的标题栏子树，或横向Tabs的底部TabBar子树中，材质效果才会生效。不同材质具有不同的效果，能够影响组件的[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、[border](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#border)、[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)视觉属性。设置自动反色的系统材质时，fontColor如果使用系统预定义的可反色颜色资源（如$r('sys.color.font_primary')），颜色自动适配到材质背景色的反色。 默认值：undefined 值为undefined时，不应用材质样式。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
 
 ![](./img/note_3.0-zh-cn.png) 传参SymbolGlyphModifier时，不支持使用symbolEffect修改动效类型和[effectStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-symbolglyph#effectstrategy)设置动效。
 
@@ -332,7 +332,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701800036.png)
+ ![](./img/zh-cn_image_0000002706836268.png)
 
 #### [h2]示例2（有最右侧的builder）
 
@@ -427,7 +427,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519323.png)
+ ![](./img/zh-cn_image_0000002736315373.png)
 
 #### [h2]示例3（设置Symbol类型图标）
 
@@ -526,7 +526,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701640124.png)
+ ![](./img/zh-cn_image_0000002706676334.png)
 
 #### [h2]示例4（单选时无障碍朗读）
 
@@ -891,7 +891,8 @@ struct ChipGroupMaterialExample {
     })
   }
 
-  build() {
+  @Builder
+  NavigationTitle() {
     Column({ space: 10 }) {
       ChipGroup({
         items: [
@@ -933,11 +934,19 @@ struct ChipGroupMaterialExample {
     })
     .padding(12)
     .width('100%')
-    .height('100%')
+  }
+
+  build() {
+    Column() {
+      Navigation() {
+        // 页面内容
+      }
+      .title({ builder: this.NavigationTitle, height: '100%' })
+    }.width('100%').height('100%')
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359343.png)
+ ![](./img/zh-cn_image_0000002736435421.png)
 
 #### [h2]示例7（设置组件选中状态的系统材质样式）
 
@@ -967,7 +976,8 @@ struct ChipGroupMaterialExample {
     })
   }
 
-  build() {
+  @Builder
+  NavigationTitle() {
     Column({ space: 10 }) {
       ChipGroup({
         items: [
@@ -1015,8 +1025,16 @@ struct ChipGroupMaterialExample {
     })
     .padding(12)
     .width('100%')
-    .height('100%')
+  }
+
+  build() {
+    Column() {
+      Navigation() {
+        // 页面内容
+      }
+      .title({ builder: this.NavigationTitle, height: '100%' })
+    }.width('100%').height('100%')
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701800038.png)
+ ![](./img/zh-cn_image_0000002706836270.png)

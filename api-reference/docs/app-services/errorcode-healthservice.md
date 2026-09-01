@@ -2,8 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-healthservice"
 catalog: "harmonyos-references"
-content_hash: "1556e492d503"
-synced_at: "2026-07-09T01:01:20.721859"
+content_hash: "579f64d90c30"
+synced_at: "2026-09-01T18:16:08.979798"
 ---
 
 # ArkTS API错误码
@@ -21,74 +21,6 @@ synced_at: "2026-07-09T01:01:20.721859"
 | INTERNAL_ERROR | [1001502009](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account-kit#section1001502009-内部错误) | 内部错误，如华为账号服务器错误或其他内部错误等。 |
 | USER_CANCELED | [1001502012](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account-kit#section1001502012-用户取消授权) | 用户取消授权。 |
 | SCOPE_OR_PERMISSION_NOT_REQUESTED | [1001502014](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account-kit#section1001502014-应用未申请scopes或permissions权限) | 应用未申请scopes或permissions权限。 |
-
-#### 201 鉴权失败
-
-错误信息
-
-Permission verification failed.
-
-错误描述
-
-鉴权失败。
-
-可能原因
-
-1、应用指纹配置不正确。
-
-2、缺少权限。
-
-3、部分接口仅白名单用户可调用。
-
-4、测试用户数已达上限。
-
-处理步骤
-
-1、检查AGC上应用的指纹证书，详情请见[添加公钥指纹](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-overview#条件必选添加公钥指纹)。
-
-2、参考[管理用户授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-add-permissions)，确认用户已授权相关权限。
-
-3、用户申请成为测试用户失败，请尽快参考[申请验证获取正式权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-verification)，完成管理台应用验收。
-
-4、通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
-
-#### 401 参数不合法
-
-错误信息
-
-Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3.Parameter verification failed.
-
-错误描述
-
-参数错误。
-
-可能原因
-
-参数填写不正确。
-
-处理步骤
-
-1、参考文档确认数据必填项、取值范围等是否填写正确。
-
-2、通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
-
-#### 801 该设备不支持此API
-
-错误信息
-
-Capability not supported. Failed to call the API due to limited device capabilities.
-
-错误描述
-
-该设备不支持此API，因此无法正常调用。
-
-可能原因
-
-可能出现该错误码的场景为：该设备已支持该API所属的Syscap, 但是并不支持此API。
-
-处理步骤
-
-应避免在该设备上使用此API，或在代码中通过判断来规避异常场景下应用在不同设备上运行所产生的影响。
 
 #### 1002700001 系统内部错误
 
@@ -124,7 +56,7 @@ Database processing error.
 
 处理步骤
 
-通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+重启设备后重试。若仍无法解决，通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
 
 #### 1002701001 网络错误
 
@@ -182,7 +114,7 @@ Account error. Failed to obtain account information with HUAWEI ID.
 
 处理步骤
 
-通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+重启设备后重试。若仍无法解决，通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
 
 #### 1002703001 用户隐私未同意
 
@@ -238,7 +170,7 @@ Unsupported sport type.
 
 处理步骤
 
-检查传入的运动类型，请参见[锻炼记录类型常量](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-exercisedequencehelper)。
+检查传入的运动类型，请参见[锻炼记录类型常量](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-exercisesequencehelper)。
 
 #### 1009104003 非法指令
 
@@ -358,4 +290,30 @@ Service exception.
 
 处理步骤
 
-通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+重启设备后重试。通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+
+#### Health Service Kit调用失败返回201
+
+错误码201是[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section201-权限校验失败)，标识参数检查失败。
+
+Health Service Kit出现201错误码时表示鉴权失败，可能由以下情况导致：
+
+可能原因
+
+1、应用指纹配置不正确。
+
+2、缺少权限。
+
+3、部分接口仅白名单用户可调用。
+
+4、测试用户数已达上限。
+
+解决措施
+
+1、检查AGC上应用的指纹证书，详情请见[添加公钥指纹](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-overview#条件必选添加公钥指纹)。
+
+2、参考[管理用户授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-add-permissions)，确认用户已授权相关权限。
+
+3、用户申请成为测试用户失败，请尽快参考[申请验证获取正式权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-verification)，完成管理台应用验收。
+
+4、通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。

@@ -2,8 +2,8 @@
 title: "订阅状态查询"
 upstream_id: "harmonyos-references/iap-query-subscription-status"
 catalog: "harmonyos-references"
-content_hash: "00a5a9f13533"
-synced_at: "2026-07-09T01:01:21.738862"
+content_hash: "1866e7daeea1"
+synced_at: "2026-09-01T18:16:09.702413"
 ---
 
 # 订阅状态查询
@@ -111,6 +111,7 @@ Accept: application/json
 | currency | 否 | String | 币种，请参见[ISO 4217](https://www.iso.org/iso-4217-currency-codes.html)标准。例如CNY、USD、MYR。 |
 | renewalTime | 否 | Long | 续期时间，UTC时间戳，以毫秒为单位。 |
 | expirationIntent | 否 | String | 订阅续期失败的原因。 1：用户取消 2：商品无效 3：签约无效 4：扣费异常 5：用户不同意涨价 6：未知 7：存在未发货的订阅 |
+| nextRenewPeriodPayload | 否 | String | 商户侧保留信息，由开发者在调用[支付接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-iap#iapcreatepurchase)时传入。 |
 
 #### 响应示例
 

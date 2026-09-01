@@ -2,8 +2,8 @@
 title: "生成服务端请求的token"
 upstream_id: "harmonyos-references/iap-jwt-description"
 catalog: "harmonyos-references"
-content_hash: "e3100d13fbf1"
-synced_at: "2026-07-09T01:01:21.375829"
+content_hash: "ecbfa6200c0d"
+synced_at: "2026-09-01T18:16:09.346617"
 ---
 
 # 生成服务端请求的token
@@ -33,7 +33,7 @@ JWT负载包含访问服务端API的一些关键信息，例如密钥颁发者ID
 | iss | 是 | String | 标识密钥颁发者ID（Issuer ID），获取方式请参见[配置密钥](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-set-necessary-parameters#配置密钥)的说明。 |
 | aud | 是 | String | JWT的预期接收者，固定为iap-v1。 |
 | iat | 是 | Long | JWT签发时间，UTC时间戳，以秒为单位。 |
-| exp | 是 | Long | JWT到期时间，UTC时间戳，以秒为单位。 （exp-iat）即为JWT的有效期，有效期不能超过1小时。 |
+| exp | 是 | Long | JWT到期时间，UTC时间戳，以秒为单位。 JWT的有效期由exp（到期时间）与iat（签发时间）的差值决定，即有效期=exp - iat。该有效期不得超过1小时。 |
 | aid | 是 | String | APP ID，获取方式参见[配置应用身份信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-config-app-identity-info)。 |
 | digest | 是 | String | Request Body（json字符串）的hash值，用于验证Request Body的完整性，算法为SHA-256。 **说明：** 如果Request Body为空，则传空字符串""的hash值。 |
 

@@ -2,8 +2,8 @@
 title: "ArkWeb_RequestHeaderList_"
 upstream_id: "harmonyos-references/capi-web-arkweb-requestheaderlist"
 catalog: "harmonyos-references"
-content_hash: "f2a512d1e15b"
-synced_at: "2026-08-29T18:16:03.060696"
+content_hash: "a33bf93e4a60"
+synced_at: "2026-09-01T18:13:56.526267"
 ---
 
 # ArkWeb_RequestHeaderList_
@@ -19,5 +19,7 @@ ArkWeb_RequestHeaderList是HTTP请求头列表结构体，用于在ArkWeb NDK中
 起始版本： 12
 
 相关模块： [Web](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-web)
+
+系统能力： SystemCapability.Web.Webview.Core
 
 所在头文件： [arkweb_scheme_handler.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkweb-scheme-handler-h)

@@ -2,8 +2,8 @@
 title: "@ohos.window.floatView (闪控窗)"
 upstream_id: "harmonyos-references/js-apis-floatview"
 catalog: "harmonyos-references"
-content_hash: "9dc79c24e704"
-synced_at: "2026-07-28T16:41:41.039702"
+content_hash: "49022139aa13"
+synced_at: "2026-09-01T18:11:33.222827"
 ---
 
 # @ohos.window.floatView (闪控窗)
@@ -374,7 +374,11 @@ console.info('Float view limits: ' + JSON.stringify(limits));
 
 下列API示例中都需先使用[floatView.create()](#floatviewcreate)方法获取到闪控窗控制器实例（即floatViewController），再通过此实例调用对应方法。
 
+起始版本： 26.0.0
+
 模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Window.SessionManager
 
 #### [h2]setUIContext
 

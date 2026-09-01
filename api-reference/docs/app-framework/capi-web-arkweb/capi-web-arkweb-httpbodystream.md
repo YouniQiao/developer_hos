@@ -2,8 +2,8 @@
 title: "ArkWeb_HttpBodyStream_"
 upstream_id: "harmonyos-references/capi-web-arkweb-httpbodystream"
 catalog: "harmonyos-references"
-content_hash: "129c6f2219de"
-synced_at: "2026-07-09T00:58:55.805140"
+content_hash: "9978e2c13647"
+synced_at: "2026-09-01T18:13:56.606520"
 ---
 
 # ArkWeb_HttpBodyStream_
@@ -19,5 +19,7 @@ ArkWeb_HttpBodyStream是HTTP请求体流结构体，用于在自定义Scheme请�
 起始版本： 12
 
 相关模块： [Web](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-web)
+
+系统能力： SystemCapability.Web.Webview.Core
 
 所在头文件： [arkweb_scheme_handler.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkweb-scheme-handler-h)

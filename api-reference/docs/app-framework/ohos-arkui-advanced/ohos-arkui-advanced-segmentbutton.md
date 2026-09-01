@@ -2,8 +2,8 @@
 title: "SegmentButton"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-segmentbutton"
 catalog: "harmonyos-references"
-content_hash: "207af924bafb"
-synced_at: "2026-07-28T16:48:25.620828"
+content_hash: "4907afc8bdea"
+synced_at: "2026-09-01T18:13:15.119575"
 ---
 
 # SegmentButton
@@ -93,7 +93,7 @@ SegmentButton({ options: SegmentButtonOptions, selectedIndexes: number[], onItem
 | borderRadiusMode20+ | [BorderRadiusMode](#borderradiusmode20) | 否 | 是 | 边框圆角模式，用于控制圆角计算方式。 默认值：BorderRadiusMode.DEFAULT 值为undefined时，按默认值处理。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | backgroundBorderRadius20+ | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | 分段按钮整体容器的边框圆角半径。 **说明：** 此属性仅在borderRadiusMode为BorderRadiusMode.CUSTOM时生效。 对于胶囊类多选分段按钮（type为"capsule"且multiply为true），此属性不生效，需要用itemBorderRadius配置圆角。 圆角大小受组件尺寸限制，最大值为组件宽或高的一半，不支持百分比设置。超出最大值时自动修正为最大值，使用百分比时按默认值处理。 默认值：$r('sys.float.segmentbutton_container_shape') 值为undefined时，按默认值处理。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | itemBorderRadius20+ | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | 分段按钮中按钮项的边框圆角半径。 **说明：** 此属性仅在borderRadiusMode为BorderRadiusMode.CUSTOM时生效。 对于胶囊类多选分段按钮（type为"capsule"且multiply为true），只能控制两端的选项圆角。 圆角大小受组件尺寸限制，最大值为组件宽或高的一半，不支持百分比设置。超出最大值时自动修正为最大值，使用百分比时按默认值处理。 默认值：$r('sys.float.segmentbutton_selected_background_shape') 值为undefined时，按默认值处理。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
-| backgroundSystemMaterial | [uiMaterial.Material](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#material) | 否 | 是 | 分段按钮组件的背景板的系统材质。不同系统材质具有不同的属性，产生不同的效果。传入材质后，SegmentButton的动效发生改变。 对于胶囊类多选分段按钮（即type为"capsule"且multiply为true），该属性不生效。 默认值：无材质效果。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| backgroundSystemMaterial | [uiMaterial.Material](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#material) | 否 | 是 | 分段按钮组件的背景板的系统材质。需要将组件放置在Navigation或NavDestination的标题栏子树，或横向Tabs的底部TabBar子树中，材质效果才会生效。不同系统材质具有不同的属性，产生不同的效果。传入材质后，SegmentButton的动效发生改变。 对于胶囊类多选分段按钮（即type为"capsule"且multiply为true），该属性不生效。 默认值：无材质效果。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 ![](./img/note_3.0-zh-cn.png) 从API版本26.0.0开始，除胶囊类多选按钮（即type为"capsule"且multiply为true）外，backgroundSystemMaterial设置自动反色的系统材质时，fontColor和selectedFontColor使用支持反色的特殊系统资源，颜色自动适配到材质背景色的反色。
 
@@ -211,7 +211,7 @@ type DimensionNoPercentage = PX | VP | FP | LPX | Resource
 | borderRadiusMode20+ | [BorderRadiusMode](#borderradiusmode20) | 否 | 是 | 边框圆角模式，用于控制圆角计算方式。 默认值：BorderRadiusMode.DEFAULT 值为undefined时，按默认值处理。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | backgroundBorderRadius20+ | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | 分段按钮整体容器的边框圆角半径。 **说明：** 此属性仅在borderRadiusMode为BorderRadiusMode.CUSTOM时生效。 对于胶囊类多选分段按钮（type为"capsule"且multiply为true），此属性不生效，需要用itemBorderRadius配置圆角。 圆角大小受组件尺寸限制，最大值为组件宽或高的一半，不支持百分比设置。超出最大值时自动修正为最大值，使用百分比时按默认值处理。 默认值：$r('sys.float.segmentbutton_container_shape') 值为undefined时，按默认值处理。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | itemBorderRadius20+ | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | 分段按钮中按钮项的边框圆角半径。 **说明：** 此属性仅在borderRadiusMode为BorderRadiusMode.CUSTOM时生效。 对于胶囊类多选分段按钮（type为"capsule"且multiply为true），只能控制两端的选项圆角。 圆角大小受组件尺寸限制，最大值为组件宽或高的一半，不支持百分比设置。超出最大值时自动修正为最大值，使用百分比时按默认值处理。 默认值：$r('sys.float.segmentbutton_selected_background_shape') 值为undefined时，按默认值处理。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
-| backgroundSystemMaterial | [uiMaterial.Material](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#material) | 否 | 是 | 分段按钮组件的背景板的系统材质。不同系统材质具有不同的属性，产生不同的效果。传入材质后，SegmentButton的动效发生改变。 对于胶囊类多选分段按钮（即type为"capsule"且multiply为true），该属性不生效。 默认值：无材质效果。 从API版本26.0.0开始，除胶囊类多选分段按钮（即type为"capsule"且multiply为true）外，backgroundSystemMaterial设置自动反色的系统材质时，fontColor和selectedFontColor使用支持反色的特殊系统资源，颜色自动适配到材质背景色的反色。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| backgroundSystemMaterial | [uiMaterial.Material](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#material) | 否 | 是 | 分段按钮组件的背景板的系统材质。需要将组件放置在Navigation或NavDestination的标题栏子树，或横向Tabs的底部TabBar子树中，材质效果才会生效。不同系统材质具有不同的属性，产生不同的效果。传入材质后，SegmentButton的动效发生改变。 对于胶囊类多选分段按钮（即type为"capsule"且multiply为true），该属性不生效。 默认值：无材质效果。 从API版本26.0.0开始，除胶囊类多选分段按钮（即type为"capsule"且multiply为true）外，backgroundSystemMaterial设置自动反色的系统材质时，fontColor和selectedFontColor使用支持反色的特殊系统资源，颜色自动适配到材质背景色的反色。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### BorderRadiusMode20+
 
@@ -729,7 +729,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655849022.png)
+ ![](./img/zh-cn_image_0000002706676370.png)
 
 #### [h2]示例2（设置分段按钮样式）
 
@@ -836,7 +836,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088453.png)
+ ![](./img/zh-cn_image_0000002736435457.png)
 
 #### [h2]示例3（分段按钮数组处理）
 
@@ -912,7 +912,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928623.gif)
+ ![](./img/zh-cn_image_0000002706836306.gif)
 
 #### [h2]示例4（设置镜像效果）
 
@@ -1021,7 +1021,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008944.png)
+ ![](./img/zh-cn_image_0000002736315411.png)
 
 #### [h2]示例5（设置无障碍朗读）
 
@@ -1210,7 +1210,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655849024.png)
+ ![](./img/zh-cn_image_0000002706676372.png)
 
 #### [h2]示例7（开启SegmentButton的属性动画）
 
@@ -1285,7 +1285,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088455.gif)
+ ![](./img/zh-cn_image_0000002736435459.gif)
 
 #### [h2]示例8（设置背景板材质）
 
@@ -1322,7 +1322,8 @@ struct Index {
   });
   @State tabSelectedIndexes: number[] = [0];
 
-  build() {
+  @Builder
+  NavigationTitle() {
     Column({ space: 20 }) {
       SegmentButton({
         options: this.tabOptions,
@@ -1341,9 +1342,18 @@ struct Index {
       ]
     })
   }
+
+  build() {
+    Column() {
+      Navigation() {
+        // 页面内容
+      }
+      .title({ builder: this.NavigationTitle, height: '100%' })
+    }.width('100%').height('100%')
+  }
 }
 ```
- ![](./img/zh-cn_image_0000002685928625.gif)
+ ![](./img/zh-cn_image_0000002706836308.gif)
 
 #### [h2]示例9（监听SegmentButtonOptions内属性的变化）
 
@@ -1406,4 +1416,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008946.gif)
+ ![](./img/zh-cn_image_0000002736315413.gif)

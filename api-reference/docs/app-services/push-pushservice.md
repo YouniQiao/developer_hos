@@ -2,8 +2,8 @@
 title: "pushService（推送服务基础能力）"
 upstream_id: "harmonyos-references/push-pushservice"
 catalog: "harmonyos-references"
-content_hash: "88269a1ea21d"
-synced_at: "2026-08-07T15:59:43.801699"
+content_hash: "abbd3284029d"
+synced_at: "2026-09-01T18:16:25.903734"
 ---
 
 # pushService（推送服务基础能力）
@@ -14,7 +14,7 @@ synced_at: "2026-08-07T15:59:43.801699"
 
 Push Token是Push Kit为应用分配的推送令牌，每台设备上每个应用的Push Token具有唯一性。开发者获取Push Token后需上报到应用服务器，用于向终端设备推送消息，Push Cloud将根据消息体中携带的Push Token，将消息下发至目标设备的目标应用。推送消息流程图如下。
 
-![](./img/zh-cn_image_0000002698223971.png)
+![](./img/zh-cn_image_0000002706837116.png)
 
 若应用服务器未及时更新Push Token，将影响消息的正常推送。
 
@@ -49,7 +49,7 @@ Push Token是设备与应用实例的唯一标识，与应用内账号无关。�
 
 接收消息流程图如下：
 
-![](./img/zh-cn_image_0000002698143877.png)
+![](./img/zh-cn_image_0000002736316225.png)
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -441,7 +441,7 @@ export default class EntryAbility extends UIAbility {
 
 bindAppProfileId(appProfileType: pushCommon.AppProfileType, appProfileId: string, callback: AsyncCallback<void>): void
 
-绑定应用内账号匿名标识，使用callback异步回调。在应用内登录或切换账号时，建立当前登录账号与Push Kit的绑定关系，Push Kit以该标识进行消息定向发送。
+绑定应用内账号匿名标识，使用callback异步回调。在应用内登录或切换账号时，建立当前登录账号与Push Token的绑定关系，Push Kit以该标识进行消息定向发送。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -527,7 +527,7 @@ export default class EntryAbility extends UIAbility {
 
 bindAppProfileId(appProfileType: pushCommon.AppProfileType, appProfileId: string): Promise<void>
 
-绑定应用内账号匿名标识，使用Promise异步回调。在应用内登录或切换账号时，建立当前登录账号与Push Kit的绑定关系，Push Kit以该标识进行消息定向发送。
+绑定应用内账号匿名标识，使用Promise异步回调。在应用内登录或切换账号时，建立当前登录账号与Push Token的绑定关系，Push Kit以该标识进行消息定向发送。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -616,7 +616,7 @@ export default class EntryAbility extends UIAbility {
 
 unbindAppProfileId(appProfileId: string, callback: AsyncCallback<void>): void
 
-解绑应用内账号匿名标识，使用callback异步回调。在应用内退出账号时，解除账号与Push Kit的绑定关系。
+解绑应用内账号匿名标识，使用callback异步回调。在应用内退出账号时，解除账号与Push Token的绑定关系。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -689,7 +689,7 @@ export default class EntryAbility extends UIAbility {
 
 unbindAppProfileId(appProfileId: string): Promise<void>
 
-解绑应用内账号匿名标识，使用Promise异步回调。在应用内退出账号时，解除账号与Push Kit的绑定关系。
+解绑应用内账号匿名标识，使用Promise异步回调。在应用内退出账号时，解除账号与Push Token的绑定关系。
 
 模型约束： 此接口仅可在Stage模型下使用。
 

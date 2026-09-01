@@ -2,8 +2,8 @@
 title: "Select"
 upstream_id: "harmonyos-references/ts-basic-components-select"
 catalog: "harmonyos-references"
-content_hash: "89572cf34ab9"
-synced_at: "2026-07-28T16:44:37.105410"
+content_hash: "b76dae32cbd6"
+synced_at: "2026-09-01T18:11:48.378768"
 ---
 
 # Select
@@ -1244,7 +1244,7 @@ struct SelectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928201.png)
+ ![](./img/zh-cn_image_0000002736314987.png)
 
 #### [h2]示例2（设置symbol类型图标）
 
@@ -1304,7 +1304,7 @@ struct SelectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008524.png)
+ ![](./img/zh-cn_image_0000002706675944.png)
 
 #### [h2]示例3（自定义下拉菜单）
 
@@ -1393,7 +1393,7 @@ struct SelectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848604.png)
+ ![](./img/zh-cn_image_0000002736435031.png)
 
 #### [h2]示例4（设置分割线样式）
 
@@ -1449,7 +1449,7 @@ struct SelectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088031.png)
+ ![](./img/zh-cn_image_0000002706835884.png)
 
 #### [h2]示例5（设置无分割线样式）
 
@@ -1495,7 +1495,7 @@ struct SelectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928203.png)
+ ![](./img/zh-cn_image_0000002736314989.png)
 
 #### [h2]示例6（设置Select中文本和箭头样式）
 
@@ -1569,7 +1569,7 @@ struct SelectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008526.png)
+ ![](./img/zh-cn_image_0000002706675946.png)
 
 #### [h2]示例7（设置Select下拉菜单选中和非选中项文本样式）
 
@@ -1645,7 +1645,7 @@ struct SelectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848606.png)
+ ![](./img/zh-cn_image_0000002736435033.png)
 
 #### [h2]示例8（设置分割线模式）
 
@@ -1678,7 +1678,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088033.png)
+ ![](./img/zh-cn_image_0000002706835886.png)
 
 #### [h2]示例9（设置Select下拉菜单外描边样式）
 
@@ -1732,7 +1732,7 @@ struct SelectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928205.png)
+ ![](./img/zh-cn_image_0000002736314991.png)
 
 #### [h2]示例10（设置Select弹出菜单避让软键盘）
 
@@ -1811,11 +1811,13 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008528.gif)
+ ![](./img/zh-cn_image_0000002706675948.gif)
 
-#### [h2]示例11（设置Select和下拉菜单系统材质）
+#### [h2]示例11（设置Select和下拉菜单沉浸光感效果）
 
-该示例通过调用[menuSystemMaterial](#menusystemmaterial)接口实现下拉菜单系统材质效果，通过[SystemUiMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemuimaterial)接口实现select组件系统材质效果。
+该示例通过调用[menuSystemMaterial](#menusystemmaterial)接口设置下拉菜单的系统材质，实现沉浸光感效果；通过[SystemUiMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemuimaterial)接口设置Select组件的系统材质，实现沉浸光感效果。
+
+组件沉浸光感效果会根据设备算力与用户在系统中设置的沉浸光感效果自适应调整，开发者无需额外适配。
 
 从API版本26.0.0开始，新增menuSystemMaterial接口。
 
@@ -1855,8 +1857,8 @@ struct Index {
 ```
  未设置系统材质时：
 
-![](./img/zh-cn_image_0000002655848608.png)
+![](./img/zh-cn_image_0000002736435035.gif)
 
 设置系统材质后：
 
-![](./img/zh-cn_image_0000002686088035.png)
+![](./img/zh-cn_image_0000002706835888.gif)

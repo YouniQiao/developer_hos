@@ -2,8 +2,8 @@
 title: "SymbolSpan"
 upstream_id: "harmonyos-references/ts-basic-components-symbolspan"
 catalog: "harmonyos-references"
-content_hash: "8fb5137ad413"
-synced_at: "2026-07-28T16:45:11.379496"
+content_hash: "6749147c98ed"
+synced_at: "2026-09-01T18:12:14.914455"
 ---
 
 # SymbolSpan
@@ -128,7 +128,7 @@ sys.symbol.ohos_lungs图标不支持设置fontWeight。
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | value | number | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 是 | SymbolSpan组件字体粗细。 number类型取值[100, 900]，取值间隔为100，默认为400，取值越大，字体越粗。string类型仅支持number类型取值的字符串形式，例如“400”，以及“bold”、“bolder”、“lighter”、“regular”、“medium”，分别对应FontWeight中相应的枚举值。设置过大可能会在不同字体下有截断。 传入超出取值范围的值时取默认值。传入不符合间隔要求的值时，若设置fontWeightConfigs的enableVariableFontWeight为true，使用传入值；若设置为false，使用默认值。 |
-| fontWeightConfigs | [FontWeightConfigs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#fontweightconfigs24对象说明) | 否 | 字体粗细配置。当需要启用可变字重调节（设置非100整数倍的精细字重值如220、660）或跟随设备字体粗细级别自动更新字重时传入此参数。默认值继承[FontWeightConfigs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#fontweightconfigs24对象说明)。 |
+| fontWeightConfigs | [FontWeightConfigs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#fontweightconfigs24对象说明) | 否 | 字体粗细配置。当需要启用可变字重调节（设置非100整数倍的精细字重值如220、660）或跟随设备字体粗细级别自动更新字重时传入此参数。 默认值：{ enableVariableFontWeight: false, enableDeviceFontWeightCategory: true } |
 
 #### [h2]renderingStrategy
 
@@ -154,7 +154,7 @@ SINGLE表示单色渲染，适用于需要统一颜色的图标显示场景；MU
 
 不同渲染策略效果可参考以下示意图。
 
-![](./img/zh-cn_image_0000002655848712.png)
+![](./img/zh-cn_image_0000002706676054.png)
 
 #### [h2]effectStrategy
 
@@ -306,7 +306,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088143.gif)
+ ![](./img/zh-cn_image_0000002736435141.gif)
 
 #### [h2]示例2（设置动态属性）
 
@@ -339,7 +339,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928313.gif)
+ ![](./img/zh-cn_image_0000002706835994.gif)
 
 #### [h2]示例3（设置字体粗细）
 
@@ -410,4 +410,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008634.png)
+ ![](./img/zh-cn_image_0000002736315099.png)

@@ -2,8 +2,8 @@
 title: "Marquee"
 upstream_id: "harmonyos-references/ts-basic-components-marquee"
 catalog: "harmonyos-references"
-content_hash: "6ca3ba3d1168"
-synced_at: "2026-07-28T16:46:13.975032"
+content_hash: "6eb09d05202e"
+synced_at: "2026-09-01T18:12:44.976898"
 ---
 
 # Marquee
@@ -57,7 +57,7 @@ Marquee初始化参数。
 | loop8+ | number | 否 | 是 | 设置重复滚动的次数，小于等于零时无限循环。 默认值：-1 **说明：** ArkTS卡片上该参数设置任意值都仅在可见时滚动一次。当设置为大于0的有限次数且播放完毕后，不可以通过改变start参数重置滚动次数重新开始播放。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | fromStart8+ | boolean | 否 | 是 | 设置文本的滚动方向。 true：表示文本从头部位置开始正向滚动；false：表示文本反向滚动。 默认值：true **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | src8+ | string | 否 | 否 | 需要滚动的文本。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| spacing23+ | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | 两轮跑马灯之间的间距。如果LengthMetrics的unit值是PERCENT，当前设置不生效，按默认值处理。 默认值：跑马灯组件宽度。 **卡片能力：** 从API version 23开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 23开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| spacing23+ | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | 两轮跑马灯之间的间距。当LengthMetrics对象的unit属性为LengthUnit.PERCENT时，当前设置不生效，按默认值处理。 默认值：跑马灯组件宽度。 **卡片能力：** 从API version 23开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 23开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | delay23+ | number | 否 | 是 | 设置两轮滚动之间的延迟时间。 默认值：0 取值范围：[0, +∞)，设置的值小于0时等价于设置0。 单位：毫秒 **卡片能力：** 从API version 23开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 23开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### 属性
@@ -342,7 +342,7 @@ struct MarqueeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008734.gif)
+ ![](./img/zh-cn_image_0000002736315197.gif)
 
 #### [h2]示例2（设置跑马灯停止回调）
 
@@ -356,7 +356,7 @@ struct MarqueeExample {
 @Component
 struct MarqueeStop4 {
   @State change: boolean = true;
-  @State scrollDirection: String = '正向滚动';
+  @State scrollDirection: string = '正向滚动';
   @State marqueeText: string =
     'This is the text with the text overflow set marquee This is the text with the text overflow set marquee This is the text with the text overflow set marquee';
   @State numberStart: number = 0;
@@ -418,4 +418,4 @@ struct MarqueeStop4 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848812.gif)
+ ![](./img/zh-cn_image_0000002706676154.gif)

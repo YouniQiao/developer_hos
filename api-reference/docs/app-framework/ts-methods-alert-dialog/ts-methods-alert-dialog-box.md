@@ -2,8 +2,8 @@
 title: "警告弹窗 (AlertDialog)"
 upstream_id: "harmonyos-references/ts-methods-alert-dialog-box"
 catalog: "harmonyos-references"
-content_hash: "55f00d8a1f9d"
-synced_at: "2026-07-28T16:47:12.716816"
+content_hash: "c0d46b293c0d"
+synced_at: "2026-09-01T18:13:01.369846"
 ---
 
 # 警告弹窗 (AlertDialog)
@@ -25,19 +25,19 @@ synced_at: "2026-07-28T16:47:12.716816"
 | title | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 弹窗标题。 默认值：未设置时不显示标题。 API version 20之前，弹窗标题的对齐方式为左对齐。 API version 20及之后，弹窗标题的对齐方式为居中对齐。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | subtitle10+ | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 弹窗副标题。 默认值：未设置时不显示副标题。 API version 20之前，弹窗副标题的对齐方式为左对齐。 API version 20及之后，弹窗副标题的对齐方式为居中对齐。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | message | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 否 | 弹窗内容。 API version 20之前，弹窗内容的对齐方式为左对齐。 API version 20及之后，弹窗内容的对齐方式为居中对齐。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| autoCancel | boolean | 否 | 是 | 点击遮障层时，是否关闭弹窗。值为true表示关闭弹窗，值为false表示不关闭弹窗。 默认值：true **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| cancel | [VoidCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#voidcallback12) | 否 | 是 | 点击遮障层关闭dialog时的回调。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| autoCancel | boolean | 否 | 是 | 点击遮罩层时，是否关闭弹窗。值为true表示关闭弹窗，值为false表示不关闭弹窗。 默认值：true **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| cancel | [VoidCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#voidcallback12) | 否 | 是 | 点击遮罩层关闭dialog时的回调。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | alignment | [DialogAlignment](#dialogalignment枚举说明) | 否 | 是 | 弹窗在竖直方向上的对齐方式。 默认值：DialogAlignment.Default **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **说明**： 若在UIExtension中设置showInSubWindow为true，弹窗将基于UIExtension的宿主窗口对齐。 |
 | offset | [Offset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#offset) | 否 | 是 | 弹窗相对alignment所在位置的偏移量。dx表示水平方向偏移，正值为向右偏移，负值为向左偏移；dy表示垂直方向偏移，正值为向下偏移，负值为向上偏移。 默认值：{ dx: 0 , dy: 0 } 单位：vp **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | gridCount | number | 否 | 是 | 弹窗容器宽度所占用栅格数。栅格数为弹窗宽度的相对单位，值越大弹窗越宽。 默认值：4 取值范围：大于等于0的整数。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| maskRect10+ | [Rectangle](#rectangle8类型说明) | 否 | 是 | 弹窗遮蔽层区域，在遮蔽层区域内的事件不透传，在遮蔽层区域外的事件透传。 默认值：{ x: 0, y: 0, width: '100%', height: '100%' } **说明：** showInSubWindow为true时，maskRect不生效。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| maskRect10+ | [Rectangle](#rectangle8类型说明) | 否 | 是 | 弹窗遮罩层区域，在遮罩层区域内的事件不透传，在遮罩层区域外的事件透传。 默认值：{ x: 0, y: 0, width: '100%', height: '100%' } **说明：** showInSubWindow为true时，maskRect不生效。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | showInSubWindow11+ | boolean | 否 | 是 | 某弹窗需要显示在主窗口之外时，是否在子窗口显示此弹窗。值为true表示在子窗口显示弹窗。 默认值：false，弹窗显示在应用内，而非独立子窗口。 **说明**：showInSubWindow为true的弹窗无法触发显示另一个showInSubWindow为true的弹窗。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | isModal11+ | boolean | 否 | 是 | 弹窗是否为模态窗口，模态窗口有蒙层，非模态窗口无蒙层。值为true时，弹窗为模态窗口，有蒙层。值为false时，弹窗为非模态窗口，无蒙层。 默认值：true，此时弹窗有蒙层。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | backgroundColor11+ | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 弹窗背板颜色。 默认值：Color.Transparent **说明：** backgroundColor会与模糊属性backgroundBlurStyle叠加产生效果，如果不符合预期，可将backgroundBlurStyle设置为BlurStyle.NONE，即可取消模糊。当设置系统材质systemMaterial时，backgroundColor不生效。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | backgroundBlurStyle11+ | [BlurStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#blurstyle9) | 否 | 是 | 弹窗背板模糊材质。 默认值：从API版本26.0.0开始，为BlurStyle.NONE，API版本26.0.0之前，为BlurStyle.COMPONENT_ULTRA_THICK。 **说明：** 设置为BlurStyle.NONE即可关闭背景虚化。当设置了backgroundBlurStyle为非NONE值时，则不要设置backgroundColor，否则颜色显示将不符合预期效果。当设置系统材质systemMaterial时，backgroundBlurStyle不生效。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | backgroundBlurStyleOptions19+ | [BackgroundBlurStyleOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundblurstyleoptions10对象说明) | 否 | 是 | 弹窗背板模糊效果。默认值请参考BackgroundBlurStyleOptions类型说明。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | backgroundEffect19+ | [BackgroundEffectOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundeffectoptions11) | 否 | 是 | 弹窗背板效果参数。当设置系统材质systemMaterial时，backgroundEffect不生效。默认值请参考BackgroundEffectOptions类型说明。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| onWillDismiss12+ | Callback | 否 | 是 | 交互式关闭回调函数。当用户执行点击遮障层关闭、侧滑（左滑/右滑）、三键back、键盘ESC关闭交互操作时，如果注册该回调函数，则不会立刻关闭弹窗。 **说明：** 1.在回调函数中可以通过reason得到阻拦关闭弹窗的操作类型，从而根据原因选择是否能关闭弹窗。典型场景如弹窗中存在未保存的表单数据时，拦截关闭并提示用户保存。当前组件返回的reason中，暂不支持CLOSE_BUTTON的枚举值。 2.在onWillDismiss回调中，不能再做onWillDismiss拦截。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| onWillDismiss12+ | Callback | 否 | 是 | 交互式关闭回调函数。当用户执行点击遮罩层关闭、侧滑（左滑/右滑）、三键back、键盘ESC关闭交互操作时，如果注册该回调函数，则不会立刻关闭弹窗。 **说明：** 1.在回调函数中可以通过reason得到阻拦关闭弹窗的操作类型，从而根据原因选择是否能关闭弹窗。典型场景如弹窗中存在未保存的表单数据时，拦截关闭并提示用户保存。当前组件返回的reason中，暂不支持CLOSE_BUTTON的枚举值。 2.在onWillDismiss回调中，不能再做onWillDismiss拦截。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | cornerRadius12+ | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | [BorderRadiuses](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#borderradiuses9) | [LocalizedBorderRadiuses](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#localizedborderradiuses12) | 否 | 是 | 设置背板的圆角半径。 可分别设置4个圆角的半径。 默认值：{ topLeft: '32vp', topRight: '32vp', bottomLeft: '32vp', bottomRight: '32vp' } 圆角大小受组件尺寸限制，最大值为组件宽或高的一半，若值为负，则按照默认值处理。 百分比参数方式：以父元素弹窗宽和高的百分比来设置弹窗的圆角。 **说明：** 当cornerRadius属性类型为LocalizedBorderRadiuses时，支持随语言习惯改变布局顺序。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | transition12+ | [TransitionEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-transition-animation-component#transitioneffect10对象说明) | 否 | 是 | 设置弹窗显示和退出的过渡效果。 **说明：** 1.如果不设置，则使用默认的显示/退出动效。 2.显示动效中按back键，打断显示动效，执行退出动效，动画效果为显示动效与退出动效的曲线叠加后的效果。 3.退出动效中按back键，不会打断退出动效，退出动效继续执行，继续按back键退出应用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | width12+ | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | 否 | 是 | 设置弹窗背板的宽度。 **说明：** - 弹窗宽度默认最大值：400vp。 - 百分比参数方式：弹窗参考宽度为所在窗口的宽度，在此基础上调小或调大。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
@@ -53,9 +53,9 @@ synced_at: "2026-07-28T16:47:12.716816"
 | onDidAppear19+ | Callback | 否 | 是 | 弹窗弹出后的事件回调。 **说明：** 1.正常时序依次为：onWillAppear >> onDidAppear >> onWillDisappear >> onDidDisappear。 2.在onDidAppear内设置改变弹窗显示效果的回调事件，二次弹出生效。 3.快速点击弹出，关闭弹窗时，onWillDisappear在onDidAppear前生效。 4.弹窗入场动效未完成时彻底关闭弹窗，动效打断，onDidAppear不会触发。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | onWillDisappear19+ | Callback | 否 | 是 | 弹窗退出动效前的事件回调。 **说明：** 正常时序依次为：onWillAppear >> onDidAppear >> onWillDisappear >> onDidDisappear。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | onDidDisappear19+ | Callback | 否 | 是 | 弹窗消失后的事件回调。 **说明：** 正常时序依次为：onWillAppear >> onDidAppear >> onWillDisappear >> onDidDisappear。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| levelMode15+ | [LevelMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#levelmode15枚举说明) | 否 | 是 | 设置弹窗显示层级。 **说明：** - 默认值：LevelMode.OVERLAY。 - 当且仅当showInSubWindow属性设置为false时生效。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| levelMode15+ | [LevelMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#levelmode15) | 否 | 是 | 设置弹窗显示层级。 **说明：** - 默认值：LevelMode.OVERLAY。 - 当且仅当showInSubWindow属性设置为false时生效。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | levelUniqueId15+ | number | 否 | 是 | 设置页面级弹窗需要显示的层级下的[getUniqueId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#getuniqueid12)。仅在levelMode属性设置为LevelMode.EMBEDDED时生效。 取值范围：大于等于0的数字。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| immersiveMode15+ | [ImmersiveMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#immersivemode15枚举说明) | 否 | 是 | 设置页面内弹窗蒙层效果。 **说明：** - 默认值：ImmersiveMode.DEFAULT - 当且仅当levelMode属性设置为LevelMode.EMBEDDED时生效。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| immersiveMode15+ | [ImmersiveMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#immersivemode15) | 否 | 是 | 设置页面内弹窗蒙层效果。 **说明：** - 默认值：ImmersiveMode.DEFAULT - 当且仅当levelMode属性设置为LevelMode.EMBEDDED时生效。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | levelOrder18+ | [LevelOrder](#levelorder18) | 否 | 是 | 设置弹窗显示的顺序。 **说明：** - 默认值：LevelOrder.clamp(0) - 不支持动态刷新顺序。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | systemMaterial | [SystemUiMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemuimaterial) | 否 | 是 | 设置弹窗的系统材质。 **说明：** - 默认值：[ImmersiveOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#immersiveoptions)的style为ImmersiveStyle.ULTRA_THICK的[ImmersiveMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#immersivematerial)对象。设置undefined时与默认值保持一致。 - 不同的材质具有不同的效果，该接口影响背景色[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、背景模糊[backgroundBlurStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundblurstyle9)、背景效果[backgroundEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundeffect11)、边框颜色[borderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#bordercolor)、边框宽度[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)、阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)，当设置系统材质时，上述接口不生效。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
 
@@ -216,12 +216,12 @@ Rectangle是各种Dialog中maskRect参数的类型。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| x | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 弹窗遮蔽层区域相对于窗口左上角的x轴坐标。 默认值：0vp |
-| y | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 弹窗遮蔽层区域相对于窗口左上角的y轴坐标。 默认值：0vp |
-| width | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 弹窗遮蔽层区域的宽度。 默认值：'100%' |
-| height | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 弹窗遮蔽层区域的高度。 默认值：'100%' |
+| x | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 弹窗遮罩层区域相对于窗口左上角的x轴坐标。 默认值：0vp |
+| y | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 弹窗遮罩层区域相对于窗口左上角的y轴坐标。 默认值：0vp |
+| width | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 弹窗遮罩层区域的宽度。 默认值：'100%' |
+| height | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 弹窗遮罩层区域的高度。 默认值：'100%' |
 
-![](./img/note_3.0-zh-cn.png) x和y可以设置正负值百分比。当x设置为'100%'时表示遮蔽层区域往右偏移窗口本身宽度大小，当x设置为'-100%'时表示遮蔽层区域往左偏移窗口本身宽度大小。当y设置为'100%'时表示遮蔽层区域往下偏移窗口本身高度大小，当y设置为'-100%'时表示遮蔽层区域往上偏移窗口本身高度大小。
+![](./img/note_3.0-zh-cn.png) x和y可以设置正负值百分比。当x设置为'100%'时表示遮罩层区域往右偏移窗口本身宽度大小，当x设置为'-100%'时表示遮罩层区域往左偏移窗口本身宽度大小。当y设置为'100%'时表示遮罩层区域往下偏移窗口本身高度大小，当y设置为'-100%'时表示遮罩层区域往上偏移窗口本身高度大小。
 
 width和height只能设置正值，支持百分比，如果设置为负值，那么该值将被重置为默认值。
 
@@ -425,7 +425,7 @@ struct AlertDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848918.gif)
+ ![](./img/zh-cn_image_0000002706676262.gif)
 
 #### [h2]示例2（可在主窗外弹出的弹窗）
 
@@ -494,7 +494,7 @@ struct AlertDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088349.jpg)
+ ![](./img/zh-cn_image_0000002736435347.jpg)
 
 #### [h2]示例3（设置弹窗的动画）
 
@@ -540,7 +540,7 @@ struct AlertDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928517.gif)
+ ![](./img/zh-cn_image_0000002706836198.gif)
 
 #### [h2]示例4（设置弹窗的样式）
 
@@ -604,7 +604,7 @@ struct AlertDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008840.gif)
+ ![](./img/zh-cn_image_0000002736315303.gif)
 
 #### [h2]示例5（悬停态弹窗）
 
@@ -655,7 +655,7 @@ struct AlertDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848920.gif)
+ ![](./img/zh-cn_image_0000002706676264.gif)
 
 #### [h2]示例6（弹窗生命周期）
 
@@ -710,7 +710,7 @@ struct AlertDialogLifecycleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088351.gif)
+ ![](./img/zh-cn_image_0000002736435349.gif)
 
 #### [h2]示例7（自定义背景模糊效果参数）
 
@@ -760,7 +760,7 @@ struct AlertDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928519.png)
+ ![](./img/zh-cn_image_0000002706836200.png)
 
 #### [h2]示例8（自定义背景效果参数）
 
@@ -811,11 +811,13 @@ struct AlertDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008842.png)
+ ![](./img/zh-cn_image_0000002736315305.png)
 
-#### [h2]示例9（设置弹窗的系统材质）
+#### [h2]示例9（设置弹窗的沉浸光感效果）
 
-该示例通过配置[AlertDialogParam](#alertdialogparam对象说明)中的systemMaterial属性，实现系统材质效果。
+该示例通过[AlertDialogParam](#alertdialogparam对象说明)中的systemMaterial属性设置组件的系统材质，实现沉浸光感效果。
+
+组件沉浸光感效果会根据设备算力与用户在系统中设置的沉浸光感效果自适应调整，开发者无需额外适配。
 
 从API版本26.0.0开始，在AlertDialogParam中新增了systemMaterial属性。
 
@@ -852,9 +854,17 @@ struct AlertDialogExample {
       }
       .height('100%')
       .width('100%')
-      .backgroundColor(Color.Gray)
+      // 请开发者替换为实际资源文件
+      .backgroundImage($r("app.media.img"))
+      .backgroundImageSize({width: '100%', height: '100%'})
     }
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848922.png)
+ 未设置系统材质时：
+
+![](./img/zh-cn_image_0000002706676266.gif)
+
+设置系统材质后：
+
+![](./img/zh-cn_image_0000002736435351.gif)
