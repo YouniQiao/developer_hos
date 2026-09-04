@@ -2,8 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-map"
 catalog: "harmonyos-references"
-content_hash: "e90bc0c96351"
-synced_at: "2026-07-28T16:52:46.019929"
+content_hash: "be2ece547997"
+synced_at: "2026-09-04T18:13:54.041910"
 ---
 
 # ArkTS API错误码
@@ -46,7 +46,7 @@ Failed to connect to the Map Kit server.
 处理步骤
 
 1. 检查设备网络状态。
-2. 清除旧证书配置后，重新自动签名，并配置client_id和证书指纹；从HarmonyOS 5.0.2(14)版本开始，可参考[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-config-agc)进行配置。 ![](./img/zh-cn_image_0000002685929413.png) ![](./img/zh-cn_image_0000002656009738.png)
+2. 清除旧证书配置后，重新自动签名，并配置client_id和证书指纹；从HarmonyOS 5.0.2(14)版本开始，可参考[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-config-agc)进行配置。 ![](./img/zh-cn_image_0000002712407370.png) ![](./img/zh-cn_image_0000002742126321.png)
 3. 如未解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。
 
 #### 1002600003 应用身份校验失败
@@ -70,12 +70,12 @@ App authentication failed.
 
 处理步骤
 
-1. 检查module.json5文件中配置的client_id与AGC上是否一致。 ![](./img/zh-cn_image_0000002655849816.png) ![](./img/zh-cn_image_0000002686089247.png)
+1. 检查module.json5文件中配置的client_id与AGC上是否一致。 ![](./img/zh-cn_image_0000002712247412.png) ![](./img/zh-cn_image_0000002742006359.png)
 2. 重新生成公钥指纹（[自动生成签名证书指纹](https://developer.huawei.com/consumer/cn/doc/app/agc-help-signature-info-0000001628566748#section958212134217)/[手动生成签名证书指纹](https://developer.huawei.com/consumer/cn/doc/app/agc-help-signature-info-0000001628566748#section2049119231438)），然后在AGC上[配置公钥指纹](https://developer.huawei.com/consumer/cn/doc/app/agc-help-cert-fingerprint-0000002278002933)。
 3. 检查设备网络状态后重新尝试。
 4. 将设备的系统时间往后调整1天。
-5. 请根据[开通地图服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-config-agc#开通地图服务)，先打开地图服务开关，然后重新[申请调试Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-debugprofile-0000001914423102)，并[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
-6. 自动签名证书不匹配有两种解决方案： 方案一：将本地已生成的csr签名，通过AGC重新生成新的调试证书，然后通过新的调试证书选择生成新的指纹证书。 自动签名默认已生成的csr签名在如下图路径下，马赛克部分为用户名。 ![](./img/zh-cn_image_0000002685929415.png) 在AGC上新增证书，将上述所选csr文件选中并生成新的调试证书。 ![](./img/zh-cn_image_0000002656009740.png) 然后添加公钥指纹，选中刚才自己生成调试证书即可。（需注意，配置完成后由于鉴权缓存，可能还是无法马上显示地图，须清除缓存或者将设备的系统时间往后调整1天，才能立刻显示地图。） ![](./img/zh-cn_image_0000002655849818.png) 方案二：将本地配置自动签名证书和AGC上调试证书全部删除，重新生成新的自动签名，调试证书会自动生成，并用新的调试证书生成公钥指纹。 将build-profile.json5文件下signingConfigs参数删除。 ![](./img/zh-cn_image_0000002686089249.png) 将config文件夹下所有内容删除。 ![](./img/zh-cn_image_0000002685929417.png) 将AGC上自动签名生成的调试证书删除。 ![](./img/zh-cn_image_0000002656009742.png) 将旧证书删除后生成新的自动签名，调试证书会被同步创建，然后用新生成的调试证书生成新的指纹即可。（需注意，配置完成后由于鉴权缓存，可能还是无法马上显示地图，须清除缓存或者将设备的系统时间往后调整1天，才能立刻显示地图。） ![](./img/zh-cn_image_0000002655849820.png)
+5. 请根据[开通地图服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-config-agc#开通地图服务)，先打开地图服务开关，然后重新[申请调试Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-debugprofile-0000001914423102)，并[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing-manual)。
+6. 自动签名证书不匹配有两种解决方案： 方案一：将本地已生成的csr签名，通过AGC重新生成新的调试证书，然后通过新的调试证书选择生成新的指纹证书。 自动签名默认已生成的csr签名在如下图路径下，马赛克部分为用户名。 ![](./img/zh-cn_image_0000002712407372.png) 在AGC上新增证书，将上述所选csr文件选中并生成新的调试证书。 ![](./img/zh-cn_image_0000002742126323.png) 然后添加公钥指纹，选中刚才自己生成调试证书即可。（需注意，配置完成后由于鉴权缓存，可能还是无法马上显示地图，须清除缓存或者将设备的系统时间往后调整1天，才能立刻显示地图。） ![](./img/zh-cn_image_0000002712247414.png) 方案二：将本地配置自动签名证书和AGC上调试证书全部删除，重新生成新的自动签名，调试证书会自动生成，并用新的调试证书生成公钥指纹。 将build-profile.json5文件下signingConfigs参数删除。 ![](./img/zh-cn_image_0000002742006361.png) 将config文件夹下所有内容删除。 ![](./img/zh-cn_image_0000002712407374.png) 将AGC上自动签名生成的调试证书删除。 ![](./img/zh-cn_image_0000002742126325.png) 将旧证书删除后生成新的自动签名，调试证书会被同步创建，然后用新生成的调试证书生成新的指纹即可。（需注意，配置完成后由于鉴权缓存，可能还是无法马上显示地图，须清除缓存或者将设备的系统时间往后调整1天，才能立刻显示地图。） ![](./img/zh-cn_image_0000002712247416.png)
 7. 如未解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。
 
 #### 1002600004 应用没有开通地图服务权限
@@ -96,7 +96,7 @@ The Map permission is not enabled.
 处理步骤
 
 1. [开通地图服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-config-agc#开通地图服务)。
-2. 配置client_id。 ![](./img/zh-cn_image_0000002686089251.png)
+2. 配置client_id。 ![](./img/zh-cn_image_0000002742006363.png)
 3. 如未解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。
 
 #### 1002600005 网络不可用
@@ -630,39 +630,3 @@ The map controller to be operated does not exist.
 处理步骤
 
 尝试重试操作或请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。
-
-#### 401 入参无效
-
-错误信息
-
-Invalid input parameter.
-
-错误描述
-
-入参无效。
-
-可能原因
-
-入参不符合要求。
-
-处理步骤
-
-检查入参。
-
-#### 801 功能不支持。设备能力受限，调用接口失败。
-
-错误信息
-
-Capability not supported. Failed to call the API due to limited device capabilities.
-
-错误描述
-
-功能不支持。设备能力受限，调用接口失败。
-
-可能原因
-
-当前设备不支持调用该接口。
-
-处理步骤
-
-更换设备或者使用其他接口。

@@ -2,8 +2,8 @@
 title: "Interface (TraceOverlay)"
 upstream_id: "harmonyos-references/map-map-traceoverlay"
 catalog: "harmonyos-references"
-content_hash: "28b203722cad"
-synced_at: "2026-07-09T01:01:25.690750"
+content_hash: "6a8c20358713"
+synced_at: "2026-09-04T18:13:51.910612"
 ---
 
 # Interface (TraceOverlay)
@@ -16,7 +16,7 @@ import { map, mapCommon } from '@kit.MapKit';
 
 #### TraceOverlay
 
-动态轨迹。
+动态轨迹。在调用map.[MapComponentController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller)类的[addTraceOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#addtraceoverlay)方法时会返回该类型的实例。
 
 模型约束： 此接口仅可在Stage模型下使用。
 

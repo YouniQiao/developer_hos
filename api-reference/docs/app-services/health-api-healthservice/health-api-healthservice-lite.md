@@ -2,8 +2,8 @@
 title: "healthService (运动健康联动服务)(Lite)"
 upstream_id: "harmonyos-references/health-api-healthservice-lite"
 catalog: "harmonyos-references"
-content_hash: "0cdd1ce7465b"
-synced_at: "2026-08-07T15:59:29.103514"
+content_hash: "af33a3e286f6"
+synced_at: "2026-09-04T18:13:46.962740"
 ---
 
 # healthService (运动健康联动服务)(Lite)
@@ -208,7 +208,7 @@ type ConfigType = number | string | boolean
 | FILE_NOT_FOUND | 1 | 算法库文件未找到。 |
 | SERVICE_BUSY | 2 | 算法库文件已被加载。 |
 | OPERATION_FAILED | 3 | 操作失败。 |
-| SYSTEM_INTERNAL_ERROR | 4 | 未知错误。 |
+| SYSTEM_INTERNAL_ERROR | 4 | 系统内部错误。 |
 
 #### [h2]workout.config
 
@@ -234,8 +234,8 @@ config(workoutConfig: WorkoutConfig): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. Please ensure that the app has applied for the Health Service Kit, selected the product type, enabled the corresponding data read and write permissions, and the user has completed authorization. |
-| [1009104003](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104003-非法指令) | Illegal command. Called when workout not in stoped or idle state. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. Please ensure that the app has applied for the Health Service Kit, selected the product type, enabled the corresponding data read and write permissions, and the user has completed authorization. |
+| [1009104003](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104003-非法指令) | Illegal command. Called when workout not in stopped or idle state. |
 | [1009104999](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104999-通用错误码) | System internal error. |
 
 示例：
@@ -281,7 +281,7 @@ start(): StartResult
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. Please ensure that the app has applied for the Health Service Kit, selected the product type, enabled the corresponding data read and write permissions, and the user has completed authorization. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. Please ensure that the app has applied for the Health Service Kit, selected the product type, enabled the corresponding data read and write permissions, and the user has completed authorization. |
 | [1009104001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104001-联动已开启) | Sport service busy. Workout is already started by other application. |
 | [1009104002](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104002-不支持运动类型) | Unsupported sport type. |
 | [1009104003](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104003-非法指令) | Illegal command. Called when workout in sporting, paused or stopped state. |
@@ -321,9 +321,9 @@ pause(): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. Please ensure that the app has applied for the Health Service Kit, selected the product type, enabled the corresponding data read and write permissions, and the user has completed authorization. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. Please ensure that the app has applied for the Health Service Kit, selected the product type, enabled the corresponding data read and write permissions, and the user has completed authorization. |
 | [1009104001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104001-联动已开启) | Sport service busy. Workout is already started by other application. |
-| [1009104003](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104003-非法指令) | Illegal command. Called when workout in ready, paused or stoped state. |
+| [1009104003](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104003-非法指令) | Illegal command. Called when workout in ready, paused or stopped state. |
 | [1009104999](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104999-通用错误码) | System internal error. |
 
 示例：
@@ -358,7 +358,7 @@ resume(): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. Please ensure that the app has applied for the Health Service Kit, selected the product type, enabled the corresponding data read and write permissions, and the user has completed authorization. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. Please ensure that the app has applied for the Health Service Kit, selected the product type, enabled the corresponding data read and write permissions, and the user has completed authorization. |
 | [1009104001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104001-联动已开启) | Sport service busy. Workout is already started by other application. |
 | [1009104003](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104003-非法指令) | Illegal command. Called when workout in ready, sporting or stopped state. |
 | [1009104999](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104999-通用错误码) | System internal error. |
@@ -395,7 +395,7 @@ stop(): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. Please ensure that the app has applied for the Health Service Kit, selected the product type, enabled the corresponding data read and write permissions, and the user has completed authorization. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. Please ensure that the app has applied for the Health Service Kit, selected the product type, enabled the corresponding data read and write permissions, and the user has completed authorization. |
 | [1009104003](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104003-非法指令) | Illegal command. Called when workout is not started. |
 | [1009104999](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104999-通用错误码) | System internal error. |
 
@@ -442,7 +442,7 @@ onData(dataType: undefined, listener: Callback<SampleReal[]>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. Please ensure that the app has applied for the Health Service Kit, selected the product type, enabled the corresponding data read and write permissions, and the user has completed authorization. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. Please ensure that the app has applied for the Health Service Kit, selected the product type, enabled the corresponding data read and write permissions, and the user has completed authorization. |
 | [1009104001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104001-联动已开启) | Sport service busy. Workout is already started by other application. |
 | [1009104003](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104003-非法指令) | Illegal command. Called when workout is not started. |
 | [1009104999](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104999-通用错误码) | System internal error. |
@@ -488,7 +488,7 @@ onData(listener: Callback<SampleReal[]>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. For the app, ensure that you have requested Health Service Kit, selected the product type, and enabled required data read and write permissions, and that the user has granted authorization. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. For the app, ensure that you have requested Health Service Kit, selected the product type, and enabled required data read and write permissions, and that the user has granted authorization. |
 | [1009104001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104001-联动已开启) | Sports service busy. Workout has already been started by another app. |
 | [1009104003](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104003-非法指令) | Invalid command. The API is called when workout is not started. |
 | [1009104999](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104999-通用错误码) | Internal system error. |
@@ -530,7 +530,7 @@ offData(dataType: undefined, listener?: Callback<SampleReal[]>): void
 
 | **参数名** | **类型** | 必填 | **说明** |
 | --- | --- | --- | --- |
-| dataType | undefined | 是 | 监听所有联动运动数据类型。 |
+| dataType | undefined | 是 | 取消监听所有联动运动数据类型。 |
 | listener | Callback | 否 | 需要取消订阅的回调函数，若不填写则代表取消所有监听。 |
 
 错误码：
@@ -539,7 +539,7 @@ offData(dataType: undefined, listener?: Callback<SampleReal[]>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. Please ensure that the app has applied for the Health Service Kit, selected the product type, enabled the corresponding data read and write permissions, and the user has completed authorization. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. Please ensure that the app has applied for the Health Service Kit, selected the product type, enabled the corresponding data read and write permissions, and the user has completed authorization. |
 | [1009104001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104001-联动已开启) | Sport service busy. Workout is already started by other application. |
 | [1009104999](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104999-通用错误码) | System internal error. |
 
@@ -584,7 +584,7 @@ offData(listener?: Callback<SampleReal[]>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. For the app, ensure that you have requested Health Service Kit, selected the product type, and enabled required data read and write permissions, and that the user has granted authorization. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. For the app, ensure that you have requested Health Service Kit, selected the product type, and enabled required data read and write permissions, and that the user has granted authorization. |
 | [1009104001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104001-联动已开启) | Sports service busy. Workout has already been started by another app. |
 | [1009104999](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104999-通用错误码) | Internal system error. |
 
@@ -629,7 +629,7 @@ sendData(sampleReal: SampleReal[]): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. Please ensure that the app has applied for the Health Service Kit, selected the product type, enabled the corresponding data read and write permissions, and the user has completed authorization. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. Please ensure that the app has applied for the Health Service Kit, selected the product type, enabled the corresponding data read and write permissions, and the user has completed authorization. |
 | [1009104001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104001-联动已开启) | Sport service busy. Workout is already started by other application. |
 | [1009104999](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104999-通用错误码) | System internal error. |
 
@@ -677,7 +677,7 @@ load(path: string): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. Please ensure that the app has applied for the Health Service Kit, selected the product type, enabled the corresponding data read and write permissions, and the user has completed authorization. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. Please ensure that the app has applied for the Health Service Kit, selected the product type, enabled the corresponding data read and write permissions, and the user has completed authorization. |
 | [1009104001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104001-联动已开启) | Sport service busy. Workout is already started by other application. |
 | [1009104003](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104003-非法指令) | Illegal command. Called when workout is not started. |
 | [1009104004](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104004-权限校验异常) | Permission verification error. Application has no permission, such as Motion Permission. |
@@ -722,7 +722,7 @@ load(path: string, callback: Callback<[DynamicLibResult](#dynamiclibresult)>): v
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. Please ensure that the app has applied for the Health Service Kit, selected the product type, enabled the corresponding data read and write permissions, and the user has completed authorization. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. Please ensure that the app has applied for the Health Service Kit, selected the product type, enabled the corresponding data read and write permissions, and the user has completed authorization. |
 | [1009104001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104001-联动已开启) | Sport service busy. Workout is already started by other application. |
 | [1009104003](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104003-非法指令) | Illegal command. Called when workout is not started. |
 | [1009104004](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104004-权限校验异常) | Permission verification error. Application has no permission, such as Motion Permission. |
@@ -783,7 +783,7 @@ unload(path: string): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. Please ensure that the app has applied for the Health Service Kit, selected the product type, enabled the corresponding data read and write permissions, and the user has completed authorization. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. Please ensure that the app has applied for the Health Service Kit, selected the product type, enabled the corresponding data read and write permissions, and the user has completed authorization. |
 | [1009104001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104001-联动已开启) | Sport service busy. Workout is already started by other application. |
 | [1009104003](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104003-非法指令) | Illegal command. Called when workout is not started. |
 | [1009104004](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104004-权限校验异常) | Permission verification error. Application has no permission, such as Motion Permission. |
@@ -828,7 +828,7 @@ unload(path: string, callback: Callback<[DynamicLibResult](#dynamiclibresult)>):
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section201-鉴权失败) | Permission verification failed. Please ensure that the app has applied for the Health Service Kit, selected the product type, enabled the corresponding data read and write permissions, and the user has completed authorization. |
+| [201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#health-service-kit调用失败返回201) | Permission verification failed. Please ensure that the app has applied for the Health Service Kit, selected the product type, enabled the corresponding data read and write permissions, and the user has completed authorization. |
 | [1009104001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104001-联动已开启) | Sport service busy. Workout is already started by other application. |
 | [1009104003](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104003-非法指令) | Illegal command. Called when workout is not started. |
 | [1009104004](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice#section1009104004-权限校验异常) | Permission verification error. Application has no permission, such as Motion Permission. |

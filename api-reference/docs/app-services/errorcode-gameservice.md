@@ -2,8 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-gameservice"
 catalog: "harmonyos-references"
-content_hash: "65f74dbfc666"
-synced_at: "2026-07-09T01:01:18.860807"
+content_hash: "b901a607523d"
+synced_at: "2026-09-04T18:13:46.128281"
 ---
 
 # ArkTS API错误码
@@ -26,7 +26,7 @@ Game Service Kit系统内部错误。
 
 处理步骤
 
-通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/add/101704353566310877?level2=101704353626565886&level3=101704354579010004&keyWord=Game Service Kit)提交问题，华为工程师会及时处理。
+请优先重试或重启设备重试，若重试不成功，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/add/101704353566310877?level2=101704353626565886&level3=101704354579010004&keyWord=Game Service Kit)提交问题，华为工程师会及时处理。
 
 #### 1010300002 鉴权失败
 
@@ -274,7 +274,7 @@ The playerId is not current player.
 
 请检查teamPlayerId是否正确，并重新调用[bindPlayer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-gameplayer#gameplayerbindplayer)或[unbindPlayer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-gameplayer#gameplayerunbindplayer)接口传递正确teamPlayerId。
 
-#### 1002000011 玩家未确认协议、隐私声明
+#### 1002000011 玩家未同意隐私声明
 
 错误信息
 
@@ -282,7 +282,7 @@ Agreement not agreed.
 
 错误描述
 
-玩家未确认协议、隐私声明。
+玩家未同意隐私声明。
 
 可能原因
 
@@ -604,11 +604,12 @@ System internal error.
 
 可能原因
 
-Game Service Kit系统内部错误。
+传入的参数无法解析。
 
 处理步骤
 
-通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/add/101704353566310877?level2=101704353626565886&level3=101704354579010004&keyWord=Game Service Kit)提交问题，华为工程师会及时处理。
+1. 检查参数传入是否正确。
+2. 若上述方法无法解决问题，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/add/101704353566310877?level2=101704353626565886&level3=101704354579010004&keyWord=Game Service Kit)提交问题，华为工程师会及时处理。
 
 #### 1018300002 鉴权失败
 
@@ -622,13 +623,12 @@ Authentication failed.
 
 可能原因
 
-网络连接、传参错误或未开通近场快传开放能力。
+网络连接或传参错误。
 
 处理步骤
 
 1. 首次使用设备进行登录时，请确认网络连接正常。
 2. 请检查[create](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransfercreate)接口传参是否正确。
-3. 未开通近场快传开放能力，请参见[申请近场快传开放能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-nearbytransfer-config-agc#申请近场快传开放能力)申请并开启近场快传开放能力。
 
 #### 1018300003 请求不合法
 

@@ -2,8 +2,8 @@
 title: "FAST"
 upstream_id: "harmonyos-references/fast-kit-fast"
 catalog: "harmonyos-references"
-content_hash: "1d31e1acf45e"
-synced_at: "2026-09-01T18:14:43.673065"
+content_hash: "09be60711d95"
+synced_at: "2026-09-04T18:12:22.417777"
 ---
 
 # FAST
@@ -123,8 +123,8 @@ synced_at: "2026-09-01T18:14:43.673065"
 | FAST_EXPORT [FAST_ErrorCode](#fast_errorcode-1) [HMS_FAST_SegmentMap_Query](#hms_fast_segmentmap_query) ([FAST_SegmentMapHandle](#fast_segmentmaphandle) handle, size_t left, size_t right, int32_t *result) | 查询线段表的区间。 |
 | FAST_EXPORT [FAST_ErrorCode](#fast_errorcode-1) [HMS_FAST_RectPartition_CreateConfig](#hms_fast_rectpartition_createconfig) ([FAST_RectPartitionConfig](#fast_rectpartitionconfig) **config) | 创建矩形划分求解器的不透明配置。 |
 | FAST_EXPORT void [HMS_FAST_RectPartition_DestroyConfig](#hms_fast_rectpartition_destroyconfig) ([FAST_RectPartitionConfig](#fast_rectpartitionconfig) *config) | 销毁矩形划分求解器的不透明配置。 |
-| FAST_EXPORT [FAST_ErrorCode](#fast_errorcode-1) [HMS_FAST_RectPartition_SetAlgo](#hms_fast_rectpartition_setalgo) ([FAST_RectPartitionConfig](#fast_rectpartitionconfig) *config, const char *name) | 设置矩形划分求解器使用的算法。目前仅支持扫描线算法“SweepLineAlgo”，输出数量尽可能少（不保证最优性）的不相交矩形集合，复杂度为![](./img/zh-cn_image_0000002736435891.png)。 |
-| FAST_EXPORT [FAST_ErrorCode](#fast_errorcode-1) [HMS_FAST_RectPartition_Solve](#hms_fast_rectpartition_solve) ([FAST_RectPartitionConfig](#fast_rectpartitionconfig) *config, size_t size, const [FAST_Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit--fast-rect) *origin, [FAST_Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit--fast-rect) *result, size_t *resultSize) | 在指定不透明配置下解决矩形划分问题。函数接收若干个彼此不相交的矩形作为输入，计算出覆盖相同区域的矩形划分方案，并使输出的矩形数量尽可能少。 **说明**： 1. 输入须保证矩形两两不相交（即任意两个矩形满足：![](./img/zh-cn_image_0000002706836736.png) 或 ![](./img/zh-cn_image_0000002736315845.png)或![](./img/zh-cn_image_0000002706676802.png)或 ![](./img/zh-cn_image_0000002736435893.png)），否则函数返回FAST_ERROR_CODE_ILLEGAL_INPUT。 2. 函数能保证输出矩形的数量小于等于输入矩形的数量。 |
+| FAST_EXPORT [FAST_ErrorCode](#fast_errorcode-1) [HMS_FAST_RectPartition_SetAlgo](#hms_fast_rectpartition_setalgo) ([FAST_RectPartitionConfig](#fast_rectpartitionconfig) *config, const char *name) | 设置矩形划分求解器使用的算法。目前仅支持扫描线算法“SweepLineAlgo”，输出数量尽可能少（不保证最优性）的不相交矩形集合，复杂度为![](./img/zh-cn_image_0000002742125957.png)。 |
+| FAST_EXPORT [FAST_ErrorCode](#fast_errorcode-1) [HMS_FAST_RectPartition_Solve](#hms_fast_rectpartition_solve) ([FAST_RectPartitionConfig](#fast_rectpartitionconfig) *config, size_t size, const [FAST_Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit--fast-rect) *origin, [FAST_Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit--fast-rect) *result, size_t *resultSize) | 在指定不透明配置下解决矩形划分问题。函数接收若干个彼此不相交的矩形作为输入，计算出覆盖相同区域的矩形划分方案，并使输出的矩形数量尽可能少。 **说明**： 1. 输入须保证矩形两两不相交（即任意两个矩形满足：![](./img/zh-cn_image_0000002712247048.png) 或 ![](./img/zh-cn_image_0000002742005995.png)或![](./img/zh-cn_image_0000002712407008.png)或 ![](./img/zh-cn_image_0000002742125959.png)），否则函数返回FAST_ERROR_CODE_ILLEGAL_INPUT。 2. 函数能保证输出矩形的数量小于等于输入矩形的数量。 |
 | [FAST_ErrorCode](#fast_errorcode-1) [HMS_FAST_PolyRoot_ComputeRoots](#hms_fast_polyroot_computeroots) (const [FAST_Poly](#fast_poly) *poly, const size_t maxRootCount, double *root, size_t *rootCount) | 计算多项式的给定数量的实数根。 |
 | [FAST_ErrorCode](#fast_errorcode-1) [HMS_FAST_PolyRoot_ComputeSingle](#hms_fast_polyroot_computesingle) (const [FAST_Poly](#fast_poly) *poly, double *root) | 计算多项式的绝对值最大的实根。 |
 | [FAST_ErrorCode](#fast_errorcode-1) [HMS_FAST_PolyRoot_ComputeRootIntervals](#hms_fast_polyroot_computerootintervals) (const [FAST_Poly](#fast_poly) *poly, const size_t maxRootCount, double *leftBoundary, double *rightBoundary, size_t *rootCount) | 计算多项式给定数量的实根的隔离区间，输出每个实根的左右边界。 |
@@ -245,7 +245,7 @@ typedef struct FAST_Poly FAST_Poly
 ```
  描述
 
-定义稀疏格式多项式的数据结构。多项式![](./img/zh-cn_image_0000002706836738.png)由系数数组coeff和指数数组pow共同描述，且需按指数升序排列。
+定义稀疏格式多项式的数据结构。多项式![](./img/zh-cn_image_0000002712247050.png)由系数数组coeff和指数数组pow共同描述，且需按指数升序排列。
 
 起始版本： 26.0.0
 
@@ -670,7 +670,7 @@ const uint32_t FAST_MAX_FFT_LOG2N = 16;
 ```
  描述
 
-FFT支持的最大点数N对应的以2为底的对数值。即FAST_MAX_FFT_LOG2N=![](./img/zh-cn_image_0000002736315847.png)，其中N为FFT支持的最大点数，例如该值为16时，最大点数为65536。
+FFT支持的最大点数N对应的以2为底的对数值。即FAST_MAX_FFT_LOG2N=![](./img/zh-cn_image_0000002742005997.png)，其中N为FFT支持的最大点数，例如该值为16时，最大点数为65536。
 
 起始版本：26.0.0
 
@@ -892,7 +892,7 @@ FAST_EXPORT FAST_ErrorCode HMS_FAST_RectPartition_SetAlgo (FAST_RectPartitionCon
 | 名称 | 描述 |
 | --- | --- |
 | config | 待设置的矩形划分求解器的不透明配置[FAST_RectPartitionConfig](#fast_rectpartitionconfig)。 |
-| name | 矩形求解器使用的算法名称。目前仅支持扫描线算法“SweepLineAlgo”，输出数量尽可能少（不保证最优性）的不相交矩形集合，复杂度为![](./img/zh-cn_image_0000002736435891.png)。 |
+| name | 矩形求解器使用的算法名称。目前仅支持扫描线算法“SweepLineAlgo”，输出数量尽可能少（不保证最优性）的不相交矩形集合，复杂度为![](./img/zh-cn_image_0000002742125957.png)。 |
 
 返回：
 
@@ -1312,7 +1312,7 @@ FAST_ErrorCode HMS_FAST_Biquadm_SetCoeffSingle (FAST_Biquadm * filter, const flo
 ```
  描述
 
-从单精度源数组设置所有二阶滤波器系数（单精度滤波器）。系数按每节[b0, b1, b2, a1, a2]的顺序排列。
+从单精度源数组设置所有二阶滤波器系数（单精度滤波器）。系数按每个（通道，节）对排列，顺序为 [b0, b1, b2, a1, a2]。按通道为主顺序排列：记录索引为：通道 * 节数 + 节。
 
 起始版本： 6.1.1(24)
 
@@ -1339,7 +1339,7 @@ FAST_ErrorCode HMS_FAST_Biquadm_SetCoeffDouble (FAST_Biquadm * filter, const dou
 ```
  描述
 
-从双精度源数组设置所有二阶滤波器系数（单精度滤波器）。系数按每节[b0, b1, b2, a1, a2]的顺序排列。
+从双精度源数组设置所有二阶滤波器系数（单精度滤波器）。系数按每个（通道，节）对排列，顺序为 [b0, b1, b2, a1, a2]。按通道为主顺序排列：记录索引为：通道 * 节数 + 节。
 
 起始版本： 6.1.1(24)
 
@@ -1366,7 +1366,7 @@ FAST_ErrorCode HMS_FAST_Biquadm_SetCoeffSingleD (FAST_BiquadmD * filter, const f
 ```
  描述
 
-从单精度源数组设置所有二阶滤波器系数（双精度滤波器）。系数按每节[b0, b1, b2, a1, a2]的顺序排列。
+从单精度源数组设置所有二阶滤波器系数（双精度滤波器）。系数按每个（通道，节）对排列，顺序为 [b0, b1, b2, a1, a2]。按通道为主顺序排列：记录索引为：通道 * 节数 + 节。
 
 起始版本： 6.1.1(24)
 
@@ -1393,7 +1393,7 @@ FAST_ErrorCode HMS_FAST_Biquadm_SetCoeffDoubleD (FAST_BiquadmD * filter, const d
 ```
  描述
 
-从双精度源数组设置所有二阶滤波器系数（双精度滤波器）。系数按每节[b0, b1, b2, a1, a2]的顺序排列。
+从双精度源数组设置所有二阶滤波器系数（双精度滤波器）。系数按每个（通道，节）对排列，顺序为 [b0, b1, b2, a1, a2]。按通道为主顺序排列：记录索引为：通道 * 节数 + 节。
 
 起始版本： 6.1.1(24)
 
@@ -1420,7 +1420,7 @@ FAST_ErrorCode HMS_FAST_Biquadm_SetActiveFilters (FAST_Biquadm * filter, const u
 ```
  描述
 
-设置二阶滤波器节的激活掩码（单精度）。掩码顺序为：[ch0_sec0, ch0_sec1, ch0_sec2, ..., ch1_sec0, ch1_sec1, ch1_sec2, ...]。
+设置二阶滤波器节的激活掩码（单精度）。掩码顺序为：[sec0, sec1, ...]。
 
 起始版本： 6.1.1(24)
 
@@ -1446,7 +1446,7 @@ FAST_ErrorCode HMS_FAST_Biquadm_SetActiveFiltersD (FAST_BiquadmD * filter, const
 ```
  描述
 
-设置二阶滤波器节的激活掩码（双精度）。掩码顺序为：[ch0_sec0, ch0_sec1, ch0_sec2, ..., ch1_sec0, ch1_sec1, ch1_sec2, ...]。
+设置二阶滤波器节的激活掩码（双精度）。掩码顺序为：[sec0, sec1, ...]。
 
 起始版本： 6.1.1(24)
 

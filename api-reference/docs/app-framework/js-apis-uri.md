@@ -2,8 +2,8 @@
 title: "@ohos.uri (URI字符串解析)"
 upstream_id: "harmonyos-references/js-apis-uri"
 catalog: "harmonyos-references"
-content_hash: "5c14b4a55d04"
-synced_at: "2026-08-07T15:56:10.042067"
+content_hash: "dec408171799"
+synced_at: "2026-09-04T18:09:33.264425"
 ---
 
 # @ohos.uri (URI字符串解析)
@@ -648,7 +648,7 @@ console.info(uriInstance.getSegment().toString()); // path,to,image.jpg
 
 #### [h2]createFromParts12+
 
-createFromParts(scheme: string, ssp: string, fragment: string): URI
+static createFromParts(scheme: string, ssp: string, fragment: string): URI
 
 根据提供的方案（scheme）、方案特定部分（ssp）以及片段（fragment）创建一个新的URI对象。
 

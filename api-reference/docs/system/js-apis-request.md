@@ -2,8 +2,8 @@
 title: "@ohos.request (上传下载)"
 upstream_id: "harmonyos-references/js-apis-request"
 catalog: "harmonyos-references"
-content_hash: "fda0443aef45"
-synced_at: "2026-08-04T17:02:53.415740"
+content_hash: "37ed296842a9"
+synced_at: "2026-09-04T18:12:16.685015"
 ---
 
 # @ohos.request (上传下载)
@@ -499,7 +499,7 @@ off(type: 'complete' | 'fail', callback?: Callback<Array<TaskState>>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | the parameters check fails. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. 适用版本：12+ |
+| 401 | The parameters check fails. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. 适用版本：12+ |
 
 示例：
 
@@ -2628,7 +2628,7 @@ request.agent.create(context, config).then((task: request.agent.Task) => {
 
 #### [h2]on('progress')10+
 
-on(event: 'progress', callback: (progress: [Progress](#requestagentprogress10)) => void): void
+on(event: 'progress', callback: (progress: Progress) => void): void
 
 订阅任务进度的事件，使用callback异步回调。
 
@@ -2705,7 +2705,7 @@ request.agent.create(context, config).then((task: request.agent.Task) => {
 
 #### [h2]on('completed')10+
 
-on(event: 'completed', callback: (progress: [Progress](#requestagentprogress10)) => void): void
+on(event: 'completed', callback: (progress: Progress) => void): void
 
 订阅任务完成事件，使用callback异步回调。
 
@@ -2782,7 +2782,7 @@ request.agent.create(context, config).then((task: request.agent.Task) => {
 
 #### [h2]on('failed')10+
 
-on(event: 'failed', callback: (progress: [Progress](#requestagentprogress10)) => void): void
+on(event: 'failed', callback: (progress: Progress) => void): void
 
 订阅任务失败事件，使用callback异步回调。可通过调用[request.agent.show](#requestagentshow10-1)查看错误原因。
 
@@ -2859,7 +2859,7 @@ request.agent.create(context, config).then((task: request.agent.Task) => {
 
 #### [h2]on('pause')11+
 
-on(event: 'pause', callback: (progress: [Progress](#requestagentprogress10)) => void): void
+on(event: 'pause', callback: (progress: Progress) => void): void
 
 订阅任务暂停事件，使用callback异步回调。
 
@@ -2938,7 +2938,7 @@ request.agent.create(context, config).then(async (task: request.agent.Task) => {
 
 #### [h2]on('resume')11+
 
-on(event: 'resume', callback: (progress: [Progress](#requestagentprogress10)) => void): void
+on(event: 'resume', callback: (progress: Progress) => void): void
 
 订阅任务恢复事件，使用callback异步回调。
 
@@ -3022,7 +3022,7 @@ request.agent.create(context, config).then(async (task: request.agent.Task) => {
 
 #### [h2]on('remove')11+
 
-on(event: 'remove', callback: (progress: [Progress](#requestagentprogress10)) => void): void
+on(event: 'remove', callback: (progress: Progress) => void): void
 
 订阅任务移除事件，使用callback异步回调。
 
@@ -3325,7 +3325,7 @@ request.agent.create(context, config).then((task: request.agent.Task) => {
 
 #### [h2]off('progress')10+
 
-off(event: 'progress', callback?: (progress: [Progress](#requestagentprogress10)) => void): void
+off(event: 'progress', callback?: (progress: Progress) => void): void
 
 取消订阅任务进度事件。
 
@@ -3410,7 +3410,7 @@ request.agent.create(context, config).then((task: request.agent.Task) => {
 
 #### [h2]off('completed')10+
 
-off(event: 'completed', callback?: (progress: [Progress](#requestagentprogress10)) => void): void
+off(event: 'completed', callback?: (progress: Progress) => void): void
 
 取消订阅任务完成事件。
 
@@ -3495,7 +3495,7 @@ request.agent.create(context, config).then((task: request.agent.Task) => {
 
 #### [h2]off('failed')10+
 
-off(event: 'failed', callback?: (progress: [Progress](#requestagentprogress10)) => void): void
+off(event: 'failed', callback?: (progress: Progress) => void): void
 
 取消订阅任务失败事件。
 
@@ -3580,7 +3580,7 @@ request.agent.create(context, config).then((task: request.agent.Task) => {
 
 #### [h2]off('pause')11+
 
-off(event: 'pause', callback?: (progress: [Progress](#requestagentprogress10)) => void): void
+off(event: 'pause', callback?: (progress: Progress) => void): void
 
 取消订阅任务暂停事件。
 
@@ -3662,7 +3662,7 @@ request.agent.create(context, config).then((task: request.agent.Task) => {
 
 #### [h2]off('resume')11+
 
-off(event: 'resume', callback?: (progress: [Progress](#requestagentprogress10)) => void): void
+off(event: 'resume', callback?: (progress: Progress) => void): void
 
 取消订阅任务恢复事件。
 
@@ -3744,7 +3744,7 @@ request.agent.create(context, config).then((task: request.agent.Task) => {
 
 #### [h2]off('remove')11+
 
-off(event: 'remove', callback?: (progress: [Progress](#requestagentprogress10)) => void): void
+off(event: 'remove', callback?: (progress: Progress) => void): void
 
 取消订阅任务移除事件。
 

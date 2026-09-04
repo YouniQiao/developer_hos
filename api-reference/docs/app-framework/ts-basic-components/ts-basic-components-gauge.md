@@ -2,8 +2,8 @@
 title: "Gauge"
 upstream_id: "harmonyos-references/ts-basic-components-gauge"
 catalog: "harmonyos-references"
-content_hash: "517e1f4e65b2"
-synced_at: "2026-09-01T18:12:33.203616"
+content_hash: "cd23ed5b542d"
+synced_at: "2026-09-04T18:10:06.323851"
 ---
 
 # Gauge
@@ -14,6 +14,7 @@ synced_at: "2026-09-01T18:12:33.203616"
 
 - 该组件从API version 8开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 - 该组件从API版本26.0.0开始支持[WithTheme](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-with-theme)。
+- [startAngle](#startangle)和[endAngle](#endangle)仅决定圆弧路径范围，不影响组件大小。角度差值越小，圆弧在组件内占比越小，min/max标记与圆弧间留白越大。
 
 #### 子组件
 
@@ -378,7 +379,7 @@ struct Gauge1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736315191.png)
+ ![](./img/zh-cn_image_0000002742005281.png)
 
 #### [h2]示例2（设置单色量规图）
 
@@ -421,7 +422,7 @@ struct Gauge2 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706676148.png)
+ ![](./img/zh-cn_image_0000002712406292.png)
 
 #### [h2]示例3（设置定制说明区）
 
@@ -482,7 +483,7 @@ struct Gauge2 {
     }
   }
 ```
- ![](./img/zh-cn_image_0000002736435235.png)
+ ![](./img/zh-cn_image_0000002742125241.png)
 
 #### [h2]示例4（设置辅助区）
 
@@ -536,7 +537,7 @@ struct Gauge4 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706836088.png)
+ ![](./img/zh-cn_image_0000002712246334.png)
 
 #### [h2]示例5（设置最大最小值）
 
@@ -577,7 +578,7 @@ struct Gauge5 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736315193.png)
+ ![](./img/zh-cn_image_0000002742005283.png)
 
 #### [h2]示例6（设置指针）
 
@@ -624,7 +625,7 @@ struct Gauge6 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706676150.png)
+ ![](./img/zh-cn_image_0000002712406294.png)
 
 #### [h2]示例7（设置起止角度）
 
@@ -663,7 +664,7 @@ struct Gauge7 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736435237.png)
+ ![](./img/zh-cn_image_0000002742125243.png)
 
 #### [h2]示例8（设置定制内容区）
 
@@ -745,7 +746,7 @@ struct RefreshExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706836090.gif)
+ ![](./img/zh-cn_image_0000002712246336.gif)
 
 #### [h2]示例9（设置隐私隐藏）
 
@@ -775,7 +776,7 @@ struct GaugeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736315195.gif)
+ ![](./img/zh-cn_image_0000002742005285.gif)
 
 #### [h2]示例10（设置自定义指针）
 
@@ -809,4 +810,4 @@ struct Gauge2 {
     </path>
 </svg>
 ```
- ![](./img/zh-cn_image_0000002706676152.png)
+ ![](./img/zh-cn_image_0000002712406296.png)

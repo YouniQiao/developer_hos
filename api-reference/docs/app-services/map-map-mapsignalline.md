@@ -2,8 +2,8 @@
 title: "Interface (MapSignalLine)"
 upstream_id: "harmonyos-references/map-map-mapsignalline"
 catalog: "harmonyos-references"
-content_hash: "d98001570334"
-synced_at: "2026-08-29T18:18:22.227313"
+content_hash: "f3b310f64039"
+synced_at: "2026-09-04T18:13:52.732260"
 ---
 
 # Interface (MapSignalLine)
@@ -16,7 +16,7 @@ import { map, mapCommon } from '@kit.MapKit';
 
 #### MapSignalLine
 
-信号路线管理对象，继承[BaseOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-baseoverlay)。在调用[addSignalLine](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#addsignalline)方法时会返回该类型的实例。
+信号路线管理对象，继承[BaseOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-baseoverlay)。在调用map.[MapComponentController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller)类的[addSignalLine](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#addsignalline)方法时会返回该类型的实例。
 
 模型约束： 此接口仅可在Stage模型下使用。
 

@@ -2,8 +2,8 @@
 title: "Interface (TileOverlay)"
 upstream_id: "harmonyos-references/map-map-tileoverlay"
 catalog: "harmonyos-references"
-content_hash: "b0cdecff8a0e"
-synced_at: "2026-07-09T01:01:26.089630"
+content_hash: "7ac2aacf2bf7"
+synced_at: "2026-09-04T18:13:52.324455"
 ---
 
 # Interface (TileOverlay)
@@ -16,7 +16,7 @@ import { map, mapCommon } from '@kit.MapKit';
 
 #### TileOverlay
 
-瓦片图层，继承[BaseOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-baseoverlay)。瓦片图层是一种基于[BaseOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-baseoverlay)实现的地图覆盖层，用于展示自定义瓦片。
+瓦片图层，继承[BaseOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-baseoverlay)。瓦片图层是一种基于[BaseOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-baseoverlay)实现的地图覆盖层，用于展示自定义瓦片。在调用map.[MapComponentController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller)类的[addTileOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#addtileoverlay)方法时会返回该类型的实例。
 
 ![](./img/note_3.0-zh-cn.png) 由于性能考虑，建议最多添加10个TileOverlay，且提供的图层瓦片分辨率是256*256。
 

@@ -2,14 +2,14 @@
 title: "OH_PrivacyProtectInfo"
 upstream_id: "harmonyos-references/capi-avscreencapture-oh-privacyprotectinfo"
 catalog: "harmonyos-references"
-content_hash: "6e5c1739f381"
-synced_at: "2026-07-28T16:52:01.144912"
+content_hash: "5935d766da3b"
+synced_at: "2026-09-04T18:13:15.733166"
 ---
 
 # OH_PrivacyProtectInfo
 
 ```
-typedef struct {...} OH_PrivacyProtectInfo;
+typedef struct {...} OH_PrivacyProtectInfo
 ```
 
 #### 概述

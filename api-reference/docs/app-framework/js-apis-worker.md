@@ -2,8 +2,8 @@
 title: "@ohos.worker (启动一个Worker)"
 upstream_id: "harmonyos-references/js-apis-worker"
 catalog: "harmonyos-references"
-content_hash: "931579507d9f"
-synced_at: "2026-08-14T15:52:21.229883"
+content_hash: "3ccf177c779b"
+synced_at: "2026-09-04T18:09:35.301525"
 ---
 
 # @ohos.worker (启动一个Worker)
@@ -71,11 +71,11 @@ Worker线程的优先级枚举，各优先级对应关系请参考[QoS等级定�
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| onexit9+ | (code: number) => void | 否 | 是 | 回调函数。表示Worker线程销毁时被调用的事件处理程序，该处理程序在宿主线程中执行。回调函数的code参数类型为number，异常退出时code为1，正常退出时code为0。默认值为undefined。 **元服务API**：从API version 11开始，该属性支持在元服务中使用。 |
-| onerror9+ | (err: [ErrorEvent](#errorevent)) => void | 否 | 是 | 回调函数，用于处理onmessage回调函数中同步代码产生的异常，处理程序在宿主线程中执行。回调函数的err类型为[ErrorEvent](#errorevent)，表示收到的异常数据。默认值为undefined。 **元服务API**：从API version 11开始，该属性支持在元服务中使用。 |
-| onAllErrors18+ | [ErrorCallback](#errorcallback18) | 否 | 是 | 回调函数。表示Worker线程生命周期内发生异常被调用的事件处理程序，处理程序在宿主线程中执行。默认值为undefined。 **元服务API**：从API version 18开始，该属性支持在元服务中使用。 |
-| onmessage9+ | (event: [MessageEvents](#messageevents9)) => void | 否 | 是 | 回调函数。表示宿主线程接收到来自其创建的Worker通过workerPort.[postMessage](#postmessage9-3)或workerPort.[postMessageWithSharedSendable](#postmessagewithsharedsendable12-1)接口发送的消息时被调用的事件处理程序，处理程序在宿主线程中执行。其中回调函数中event类型为[MessageEvents](#messageevents9)，表示收到的Worker线程发送的消息数据。默认值为undefined。 **元服务API**：从API version 11开始，该属性支持在元服务中使用。 |
-| onmessageerror9+ | (event: [MessageEvents](#messageevents9)) => void | 否 | 是 | 回调函数。用于处理Worker对象接收到的无法被序列化的消息。该处理程序在宿主线程中执行，event类型为[MessageEvents](#messageevents9)，表示收到的Worker消息数据。默认值为undefined。 **元服务API**：从API version 11开始，该属性支持在元服务中使用。 |
+| onexit9+ | (code: number) => void | 否 | 是 | 回调函数。表示Worker线程销毁时被调用的事件处理程序，该处理程序在宿主线程中执行。回调函数的code参数类型为number，异常退出时code为1，正常退出时code为0。默认值为undefined。 以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。 - 10200004：The Worker instance is not running. - 10200005：The called API is not supported in the worker thread. **元服务API**：从API version 11开始，该属性支持在元服务中使用。 |
+| onerror9+ | (err: [ErrorEvent](#errorevent)) => void | 否 | 是 | 回调函数，用于处理onmessage回调函数中同步代码产生的异常，处理程序在宿主线程中执行。回调函数的err类型为[ErrorEvent](#errorevent)，表示收到的异常数据。默认值为undefined。 以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。 - 10200004：The Worker instance is not running. - 10200005：The called API is not supported in the worker thread. **元服务API**：从API version 11开始，该属性支持在元服务中使用。 |
+| onAllErrors18+ | [ErrorCallback](#errorcallback18) | 否 | 是 | 回调函数。表示Worker线程生命周期内发生异常被调用的事件处理程序，处理程序在宿主线程中执行。默认值为undefined。 以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。 - 10200004：The Worker instance is not running. - 10200005：The called API is not supported in the worker thread. **元服务API**：从API version 18开始，该属性支持在元服务中使用。 |
+| onmessage9+ | (event: [MessageEvents](#messageevents9)) => void | 否 | 是 | 回调函数。表示宿主线程接收到来自其创建的Worker通过workerPort.[postMessage](#postmessage9-3)或workerPort.[postMessageWithSharedSendable](#postmessagewithsharedsendable12-1)接口发送的消息时被调用的事件处理程序，处理程序在宿主线程中执行。其中回调函数中event类型为[MessageEvents](#messageevents9)，表示收到的Worker线程发送的消息数据。默认值为undefined。 以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。 - 10200004：The Worker instance is not running. - 10200005：The called API is not supported in the worker thread. **元服务API**：从API version 11开始，该属性支持在元服务中使用。 |
+| onmessageerror9+ | (event: [MessageEvents](#messageevents9)) => void | 否 | 是 | 回调函数。用于处理Worker对象接收到的无法被序列化的消息。该处理程序在宿主线程中执行，event类型为[MessageEvents](#messageevents9)，表示收到的Worker消息数据。默认值为undefined。 以下错误码的详细介绍请参见[语言基础类库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-utils)。 - 10200004：The Worker instance is not running. - 10200005：The called API is not supported in the worker thread. **元服务API**：从API version 11开始，该属性支持在元服务中使用。 |
 
 使用Worker模块时，API version 18及之后的版本建议在宿主线程中注册onAllErrors回调，以捕获Worker线程生命周期内的各种异常。API version 18之前的版本应注册onerror回调。如果未注册onAllErrors或onerror回调，当Worker线程出现异常时会发生崩溃问题。注意，onerror接口仅能捕获onmessage回调中的同步异常，捕获异常后，Worker线程将进入销毁流程，无法继续使用。
 

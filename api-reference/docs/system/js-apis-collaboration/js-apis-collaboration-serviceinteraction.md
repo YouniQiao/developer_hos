@@ -2,8 +2,8 @@
 title: "@hms.collaboration.serviceInteraction (碰一碰)"
 upstream_id: "harmonyos-references/js-apis-collaboration-serviceinteraction"
 catalog: "harmonyos-references"
-content_hash: "0bcc40b41400"
-synced_at: "2026-07-28T16:50:54.178289"
+content_hash: "f588eb397a09"
+synced_at: "2026-09-04T18:12:13.323927"
 ---
 
 # @hms.collaboration.serviceInteraction (碰一碰)
@@ -101,7 +101,7 @@ sendMessage(data: ArrayBuffer): Promise<void>
 
 示例：
 
-参考[完整示例](#完整示例)。
+参考[示例](#示例)。
 
 #### [h2]disconnect
 
@@ -134,7 +134,7 @@ disconnect(): Promise<void>
 
 示例：
 
-参考[完整示例](#完整示例)。
+参考[示例](#示例)。
 
 #### ServiceInteractionCallback
 
@@ -166,7 +166,7 @@ onDeviceConnect(connection: Connection): void
 
 示例：
 
-参考[完整示例](#完整示例)。
+参考[示例](#示例)。
 
 #### [h2]onDeviceDisconnect
 
@@ -189,7 +189,7 @@ onDeviceDisconnect(connection: Connection, retCode: number): void;
 
 示例：
 
-参考[完整示例](#完整示例)。
+参考[示例](#示例)。
 
 #### [h2]onMessageReceive
 
@@ -212,7 +212,7 @@ onMessageReceive(connection: Connection, data: ArrayBuffer): void
 
 示例：
 
-参考[完整示例](#完整示例)。
+参考[示例](#示例)。
 
 #### [h2]onConnectFail
 
@@ -234,7 +234,7 @@ onConnectFail(retCode: number): void
 
 示例：
 
-参考[完整示例](#完整示例)。
+参考[示例](#示例)。
 
 #### onServiceInteraction
 
@@ -269,7 +269,7 @@ onServiceInteraction(config: CollaborationConfig, callbacks: ServiceInteractionC
 
 示例：
 
-参考[完整示例](#完整示例)。
+参考[示例](#示例)。
 
 #### offServiceInteraction
 
@@ -304,9 +304,9 @@ offServiceInteraction(config: CollaborationConfig, callbacks?: ServiceInteractio
 
 示例：
 
-参考[完整示例](#完整示例)。
+参考[示例](#示例)。
 
-#### **完整示例**
+#### 示例
 
 ```
 import { serviceInteraction } from '@kit.ServiceCollaborationKit';
@@ -378,7 +378,7 @@ struct LuckyCardExchangePage {
     try {
       serviceInteraction.onServiceInteraction(config, callback);
     } catch (error) {
-      hilog.info(0, 'MEMOMOCK', '注册失败，message：' + error.message);
+      hilog.error(0, 'MEMOMOCK', '注册失败，message：' + error.message);
     }
     hilog.info(0, 'MEMOMOCK', '已注册服务交互监听');
   }
@@ -395,7 +395,7 @@ struct LuckyCardExchangePage {
     try {
       serviceInteraction.offServiceInteraction(config);
     } catch (error) {
-      hilog.info(0, 'MEMOMOCK', '注册失败，message：' + error.message);
+      hilog.error(0, 'MEMOMOCK', '取消注册失败，message：' + error.message);
     }
     hilog.info(0, 'MEMOMOCK', '已取消服务交互监听');
   }
@@ -523,7 +523,7 @@ struct LuckyCardExchangePage {
             try {
               connnection.connection.sendMessage(uint8Array.buffer);
             } catch (error) {
-              hilog.info(0, 'MEMOMOCK', '注册失败，message：' + error.message);
+              hilog.error(0, 'MEMOMOCK', '发送消息失败，message：' + error.message);
             }
           })
         })
@@ -533,7 +533,7 @@ struct LuckyCardExchangePage {
             try {
               connnection.connection.disconnect();
             } catch (error) {
-              hilog.info(0, 'MEMOMOCK', '注册失败，message：' + error.message);
+              hilog.error(0, 'MEMOMOCK', '断开连接失败，message：' + error.message);
             }
           })
         })

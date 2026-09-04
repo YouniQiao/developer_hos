@@ -2,8 +2,8 @@
 title: "scan（星闪扫描能力）"
 upstream_id: "harmonyos-references/nearlink-scan"
 catalog: "harmonyos-references"
-content_hash: "874b0e6af814"
-synced_at: "2026-08-04T17:02:32.395789"
+content_hash: "b1ca7bbb5cea"
+synced_at: "2026-09-04T18:12:01.418119"
 ---
 
 # scan（星闪扫描能力）
@@ -307,8 +307,8 @@ try {
 | rssi | number | 否 | 否 | 表示扫描到的设备rssi值，取值范围[-128, 127]，单位dBm，其中127表示无效值。 |
 | data | ArrayBuffer | 否 | 否 | 表示广播包数据。 |
 | deviceName | string | 否 | 否 | 表示扫描到的设备名称。字符串长度范围[0, 30]。 |
-| isConnectable | boolean | 否 | 否 | 表示扫描到的广播是否可连接。true：可连接，false：不可连接 |
-| deviceClass | [constant.DeviceClass](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-constant#deviceclass) | 否 | 是 | 表示扫描到的设备类型 **起始版本：** 5.1.0(18) |
+| isConnectable | boolean | 否 | 否 | 表示扫描到的广播是否可连接。true表示可连接，false表示不可连接。 |
+| deviceClass | [constant.DeviceClass](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-constant#deviceclass) | 否 | 是 | 表示扫描到的设备类型。 **起始版本：** 5.1.0(18) |
 
 #### ScanFilters
 
@@ -342,7 +342,7 @@ try {
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | scanMode | [ScanMode](#scanmode) | 否 | 是 | 表示扫描模式。默认值为'SCAN_MODE_LOW_POWER'。 |
-| duration | number | 否 | 是 | 表示扫描持续时间。单位second，取值范围[10, 60]，默认值为全时段扫描。 |
+| duration | number | 否 | 是 | 表示扫描持续时间。单位：s，取值范围[10, 60]，默认值为全时段扫描。 |
 
 #### ScanMode
 

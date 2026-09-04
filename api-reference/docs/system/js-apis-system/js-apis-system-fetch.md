@@ -2,15 +2,17 @@
 title: "@system.fetch (数据请求)"
 upstream_id: "harmonyos-references/js-apis-system-fetch"
 catalog: "harmonyos-references"
-content_hash: "26bfa1aac44f"
-synced_at: "2026-08-29T18:16:47.858383"
+content_hash: "8f5df3c6e7a3"
+synced_at: "2026-09-04T18:12:06.933447"
 ---
 
 # @system.fetch (数据请求)
 
+本模块提供网络数据请求能力，可通过URL发起HTTP/HTTPS请求并获取服务器返回的数据，支持自定义请求头、请求方法和响应类型，适用于应用需要访问网络资源或与后端服务交互的场景，可满足应用内网络通信需求。
+
 ![](./img/note_3.0-zh-cn.png)
 
-- 从API Version 6开始，该接口不再维护，推荐使用新接口[@ohos.net.http](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-http)。
+- 从API Version 6开始，该接口不再维护，推荐使用新接口[@ohos.net.http (数据请求)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-http)。
 - 本模块首批接口从API version 3开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
 #### 导入模块

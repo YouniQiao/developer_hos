@@ -2,8 +2,8 @@
 title: "@ohos.util.ArrayList (线性容器ArrayList)"
 upstream_id: "harmonyos-references/js-apis-arraylist"
 catalog: "harmonyos-references"
-content_hash: "543e10696786"
-synced_at: "2026-08-11T16:01:10.597889"
+content_hash: "24d993b5c415"
+synced_at: "2026-09-04T18:09:33.981250"
 ---
 
 # @ohos.util.ArrayList (线性容器ArrayList)
@@ -930,7 +930,7 @@ while (!iteratorResult.done) {
 // value: 4
 ```
 
-#### [h2]ArrayListComparatorFn23+
+#### ArrayListComparatorFn23+
 
 type ArrayListComparatorFn<T> = (firstValue: T, secondValue: T) => number
 

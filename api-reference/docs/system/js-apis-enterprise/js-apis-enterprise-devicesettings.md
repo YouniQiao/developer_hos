@@ -2,8 +2,8 @@
 title: "@ohos.enterprise.deviceSettings（设备设置管理）"
 upstream_id: "harmonyos-references/js-apis-enterprise-devicesettings"
 catalog: "harmonyos-references"
-content_hash: "0d2179d58ed6"
-synced_at: "2026-09-01T18:14:54.099342"
+content_hash: "573f3d446e2a"
+synced_at: "2026-09-04T18:12:28.850801"
 ---
 
 # @ohos.enterprise.deviceSettings（设备设置管理）
@@ -116,7 +116,7 @@ try {
 try {
   // 需根据实际情况进行替换
   let currentInputMethod: inputMethod.InputMethodProperty = inputMethod.getCurrentInputMethod();
-  deviceSettings.setValue(wantTemp, 'defaultInputMethod', currentInputMethod.packageName);
+  deviceSettings.setValue(wantTemp, 'defaultInputMethod', currentInputMethod.name);
   console.info(`Succeeded in setting default input method.`);
 } catch (err) {
   console.error(`Failed to set default input method. Code: ${err.code}, message: ${err.message}`);

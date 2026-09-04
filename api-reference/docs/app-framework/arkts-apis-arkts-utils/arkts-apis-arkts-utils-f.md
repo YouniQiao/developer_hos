@@ -2,8 +2,8 @@
 title: "Functions"
 upstream_id: "harmonyos-references/arkts-apis-arkts-utils-f"
 catalog: "harmonyos-references"
-content_hash: "ca40dc3b2bbe"
-synced_at: "2026-07-28T16:40:56.649764"
+content_hash: "af374e5af9c8"
+synced_at: "2026-09-04T18:09:32.723801"
 ---
 
 # Functions
@@ -25,6 +25,8 @@ isSendable(value: Object | null | undefined): boolean
 该方法用于判断value是否为Sendable数据类型。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.Utils.Lang
 

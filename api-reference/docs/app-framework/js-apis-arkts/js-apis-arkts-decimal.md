@@ -2,8 +2,8 @@
 title: "@arkts.math.Decimal (高精度数学库Decimal)"
 upstream_id: "harmonyos-references/js-apis-arkts-decimal"
 catalog: "harmonyos-references"
-content_hash: "dca1629b60d6"
-synced_at: "2026-08-07T15:56:09.980262"
+content_hash: "001e2df7ae2f"
+synced_at: "2026-09-04T18:09:33.532922"
 ---
 
 # @arkts.math.Decimal (高精度数学库Decimal)
@@ -1755,7 +1755,7 @@ console.info("test Decimal toHexadecimal:" + data1); // 'test Decimal toHexadeci
 
 toDecimalPlaces(): Decimal
 
-返回一个保留小数点后指定位数的Decimal对象，不进行小数的取舍。
+返回一个保留小数点后指定位数的Decimal对象，不进行小数的舍入。
 
 元服务API：从API version 12 开始，该接口支持在元服务中使用。
 
@@ -1964,7 +1964,7 @@ console.info("test Decimal toExponential:" + data1); // 'test Decimal toExponent
 
 toFixed(): string
 
-将数值转换为十进制定点模式表示的字符串，不进行小数的取舍。
+将数值转换为十进制定点模式表示的字符串，不进行小数的舍入。
 
 元服务API：从API version 12 开始，该接口支持在元服务中使用。
 
@@ -3990,7 +3990,8 @@ static sign(n: Value): number
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 返回参数的符号判断结果。 1：参数为正数。 -1：参数为负数。 0：参数为0。 NaN：参数为NaN。 |
+| Decimal | 适用版本：12-17。返回参数的符号判断结果。 |
+| number | 适用版本：18+。返回参数的符号判断结果。 1：参数为正数。 -1：参数为负数。 0：参数为0。 NaN：参数为NaN。 |
 
 错误码：
 

@@ -2,8 +2,8 @@
 title: "元能力子系统错误码"
 upstream_id: "harmonyos-references/errorcode-ability"
 catalog: "harmonyos-references"
-content_hash: "b35dca2e638e"
-synced_at: "2026-08-29T18:12:10.940159"
+content_hash: "c8e10c63176d"
+synced_at: "2026-09-04T18:09:22.696373"
 ---
 
 # 元能力子系统错误码
@@ -1029,6 +1029,24 @@ Want中的deviceId不为空且非本机的设备ID。
 处理步骤
 
 将Want中的deviceId字段设为空，或配置为本机的deviceId。
+
+#### 16000125 不支持启动插件UIAbility
+
+错误信息
+
+Starting a plugin UIAbility is not supported.
+
+错误描述
+
+不支持启动插件。
+
+可能原因
+
+Want中的parameters指定了启动插件UIAbility。
+
+处理步骤
+
+检查Want中的parameters参数，不要将ohos.params.pluginAbility设置为true。
 
 #### 16000130 UIAbility不属于调用方
 

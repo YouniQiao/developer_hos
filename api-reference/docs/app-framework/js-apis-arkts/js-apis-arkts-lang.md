@@ -2,8 +2,8 @@
 title: "@arkts.lang (ArkTS语言基础能力)"
 upstream_id: "harmonyos-references/js-apis-arkts-lang"
 catalog: "harmonyos-references"
-content_hash: "c480011649e9"
-synced_at: "2026-07-28T16:40:56.393390"
+content_hash: "c4f02f017172"
+synced_at: "2026-09-04T18:09:32.221968"
 ---
 
 # @arkts.lang (ArkTS语言基础能力)
@@ -20,7 +20,9 @@ synced_at: "2026-07-28T16:40:56.393390"
 import { lang, Retention, RetentionPolicy } from '@kit.ArkTS';
 ```
 
-#### lang.ISendable
+#### lang
+
+#### [h2]ISendable
 
 是所有[Sendable](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable#基础概念)对象类型（除null和undefined）的父类型。实现该接口后，自定义类的实例将支持跨线程传递。自身不定义任何方法和属性。
 

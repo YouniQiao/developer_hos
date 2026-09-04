@@ -2,8 +2,8 @@
 title: "ArkUI_AccessibilityProviderCallbacks"
 upstream_id: "harmonyos-references/capi-arkui-accessibility-arkui-accessibilityprovidercallbacks"
 catalog: "harmonyos-references"
-content_hash: "957a12766e76"
-synced_at: "2026-08-29T18:15:45.557146"
+content_hash: "4a69b884598b"
+synced_at: "2026-09-04T18:11:12.338153"
 ---
 
 # ArkUI_AccessibilityProviderCallbacks
@@ -14,7 +14,7 @@ typedef struct ArkUI_AccessibilityProviderCallbacks {...} ArkUI_AccessibilityPro
 
 #### 概述
 
-第三方[provider](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-accessibility-arkui-accessibilityprovider)回调函数结构定义，需要第三方平台实现的相关函数，通过[OH_ArkUI_AccessibilityProviderRegisterCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-interface-accessibility-h#oh_arkui_accessibilityproviderregistercallback)注册到系统侧。适用于读屏软件、语音控制、开关控制等无障碍辅助场景，第三方平台通过实现这些回调响应系统的无障碍查询和操作请求。
+第三方[provider](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-accessibility-arkui-accessibilityprovider)回调函数结构定义，需要第三方平台实现的相关函数，通过[OH_ArkUI_AccessibilityProviderRegisterCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-interface-accessibility-h#oh_arkui_accessibilityproviderregistercallback)注册到系统侧。适用于读屏软件、语音控制、开关控制等无障碍辅助场景，第三方平台通过实现这些回调响应系统的无障碍查询和操作请求。所有的回调函数执行线程为IPC线程，非UI线程。
 
 起始版本： 13
 

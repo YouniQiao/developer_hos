@@ -2,8 +2,8 @@
 title: "UIAbilityContext"
 upstream_id: "harmonyos-references/js-apis-inner-application-uiabilitycontext"
 catalog: "harmonyos-references"
-content_hash: "1b1b10e51027"
-synced_at: "2026-08-29T18:12:04.898133"
+content_hash: "d1a0cecc0ef3"
+synced_at: "2026-09-04T18:09:17.746555"
 ---
 
 # UIAbilityContext
@@ -2933,12 +2933,19 @@ export default class EntryAbility extends UIAbility {
         editable: true, pixelFormat: image.PixelMapFormat.RGBA_8888, size: { height: 512, width: 512 }
       };
       let imagePixelMap: image.PixelMap = await image.createPixelMap(color, opts);
-      this.context.setAbilityInstanceInfo(newLabel, imagePixelMap)
-        .then(() => {
-          console.info('setAbilityInstanceInfo success');
-        }).catch((err: BusinessError) => {
-        console.error(`setAbilityInstanceInfo failed, code is ${err.code}, message is ${err.message}`);
-      });
+      // 设置UIAbility实例的图标和标签信息
+      try {
+        this.context.setAbilityInstanceInfo(newLabel, imagePixelMap)
+          .then(() => {
+            console.info('setAbilityInstanceInfo success');
+          }).catch((err: BusinessError) => {
+            console.error(`setAbilityInstanceInfo failed, code is ${err.code}, message is ${err.message}`);
+          });
+      } catch (paramError) {
+        let code = (paramError as BusinessError).code;
+        let message = (paramError as BusinessError).message;
+        console.error(`setAbilityInstanceInfo failed, code is ${code}, message is ${message}`);
+      }
     });
   }
 }

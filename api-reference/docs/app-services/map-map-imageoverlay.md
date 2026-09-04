@@ -2,8 +2,8 @@
 title: "Interface (ImageOverlay)"
 upstream_id: "harmonyos-references/map-map-imageoverlay"
 catalog: "harmonyos-references"
-content_hash: "d535d8bdacb0"
-synced_at: "2026-07-28T16:52:44.092090"
+content_hash: "934b479ff342"
+synced_at: "2026-09-04T18:13:52.053808"
 ---
 
 # Interface (ImageOverlay)
@@ -16,7 +16,7 @@ import { mapCommon } from '@kit.MapKit';
 
 #### ImageOverlay
 
-图片覆盖物。继承[BaseOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-baseoverlay)。
+图片覆盖物，继承[BaseOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-baseoverlay)。在调用map.[MapComponentController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller)类的[addImageOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#addimageoverlay)方法时会返回该类型的实例。
 
 模型约束： 此接口仅可在Stage模型下使用。
 

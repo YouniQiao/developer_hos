@@ -2,8 +2,8 @@
 title: "Interface (MapEventManager)"
 upstream_id: "harmonyos-references/map-map-mapeventmanager"
 catalog: "harmonyos-references"
-content_hash: "872c53d32c68"
-synced_at: "2026-07-28T16:52:45.315403"
+content_hash: "9385195e93c8"
+synced_at: "2026-09-04T18:13:52.815622"
 ---
 
 # Interface (MapEventManager)
@@ -16,7 +16,7 @@ import { map, mapCommon } from '@kit.MapKit';
 
 #### MapEventManager
 
-地图监听事件管理器。
+地图监听事件管理器。获取地图的控制器类mapController参见[MapComponentController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#mapcomponentcontroller)。
 
 模型约束： 此接口仅可在Stage模型下使用。
 

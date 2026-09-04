@@ -2,8 +2,8 @@
 title: "@ohos.url (URL字符串解析)"
 upstream_id: "harmonyos-references/js-apis-url"
 catalog: "harmonyos-references"
-content_hash: "1877532e119f"
-synced_at: "2026-08-11T16:01:10.679287"
+content_hash: "632104ddc78c"
+synced_at: "2026-09-04T18:09:33.967063"
 ---
 
 # @ohos.url (URL字符串解析)
@@ -469,7 +469,7 @@ console.info(params.toString()); // Output 'fod=1&bard=2&fod=3'
 | port | string | 否 | 否 | 获取和设置URL的端口部分。当port为当前protocol的默认端口时，port将被解析为空字符串。**元服务API**：从API version 11开始，该接口支持在元服务中使用。 |
 | protocol | string | 否 | 否 | 获取和设置URL的协议部分。**元服务API**：从API version 11开始，该接口支持在元服务中使用。 |
 | search | string | 否 | 否 | 获取和设置URL的序列化查询部分。**元服务API**：从API version 11开始，该接口支持在元服务中使用。 |
-| searchParams(deprecated) | [URLSearchParams](#urlsearchparamsdeprecated) | 是 | 否 | 获取URLSearchParams对象，用于访问URL查询参数。 - **说明：** 此属性从API version 7开始支持，从API version 9开始废弃。建议使用[URLParams](#urlparams9)替代。 |
+| searchParams(deprecated) | [URLSearchParams](#urlsearchparamsdeprecated) | 是 | 否 | 获取URLSearchParams对象，用于访问URL查询参数。 - **说明：** 此属性从API version 7开始支持，从API version 9开始废弃。建议使用params9+替代。 |
 | params9+ | [URLParams](#urlparams9) | 是 | 否 | 获取URLParams对象，用于访问URL查询参数。**元服务API**：从API version 11开始，该接口支持在元服务中使用。 |
 | username | string | 否 | 否 | 获取和设置URL的用户名部分。**元服务API**：从API version 11开始，该接口支持在元服务中使用。 |
 

@@ -2,8 +2,8 @@
 title: "Interface (MarkerClusterInfo)"
 upstream_id: "harmonyos-references/map-map-markerclusterinfo"
 catalog: "harmonyos-references"
-content_hash: "98feeab88179"
-synced_at: "2026-07-09T01:01:26.032152"
+content_hash: "37db074745f2"
+synced_at: "2026-09-04T18:13:52.322294"
 ---
 
 # Interface (MarkerClusterInfo)
@@ -16,7 +16,7 @@ import { map, mapCommon } from '@kit.MapKit';
 
 #### MarkerClusterInfo
 
-聚合图层的标记的信息。
+聚合图层的标记的信息。当进入室内图时，会通过[on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-clusteroverlay#onclusterclick)方法触发回调，并返回[MarkerClusterInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-markerclusterinfo)类型的实例。
 
 模型约束： 此接口仅可在Stage模型下使用。
 

@@ -2,8 +2,8 @@
 title: "A2A (A2A协议)"
 upstream_id: "harmonyos-references/hmaf-a2a-protocol"
 catalog: "harmonyos-references"
-content_hash: "bdcaf1a2d88e"
-synced_at: "2026-08-29T18:18:37.897598"
+content_hash: "5c2f7b91fd0b"
+synced_at: "2026-09-04T18:14:14.131692"
 ---
 
 # A2A (A2A协议)
@@ -192,6 +192,7 @@ A2A服务端处理来自A2A客户端的消息请求，并将响应发送回客�
 
 ```
 // server对象通过createA2AServer接口创建
+// data是通过传输层获取的客户端的请求数据
 // proxy提供外部定义的消息发送接口
 server.onMessage(data, (response: string) => {
   proxy.sendData(response);
@@ -226,7 +227,7 @@ A2A服务端处理来自A2A客户端的密钥协商请求。
 
 ```
 // server对象通过createA2AServer接口创建
-// data是通过传输层拿到的客户端的鉴权数据
+// data是通过传输层获取的客户端的鉴权数据
 const authResp: string = server.onAuth(data);
 ```
 
@@ -252,6 +253,8 @@ updateStatus(taskId: string, status: TaskStatus): void
 示例：
 
 ```
+// server对象通过createA2AServer接口创建
+// taskId是通过RequestContext的getTaskId接口获取的任务ID
 server.updateStatus(taskId, {
   state: TaskState.COMPLETED,
   message: {
@@ -286,6 +289,8 @@ addArtifact(taskId: string, taskArtifactParam: TaskArtifactParam): void
 示例：
 
 ```
+// server对象通过createA2AServer接口创建
+// taskId是通过RequestContext的getTaskId接口获取的任务ID
 server.addArtifact(taskId, {
   artifactId: 'result-artifact-id',
   parts: [{

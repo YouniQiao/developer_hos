@@ -2,8 +2,8 @@
 title: "ChipV2"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-chipv2"
 catalog: "harmonyos-references"
-content_hash: "2662af818ee1"
-synced_at: "2026-09-01T18:13:06.929735"
+content_hash: "b1d14ac5583a"
+synced_at: "2026-09-04T18:10:20.601311"
 ---
 
 # ChipV2
@@ -12,7 +12,10 @@ ChipV2是提供丰富样式和交互能力的操作块组件，支持前缀图�
 
 该组件基于[状态管理（V2）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-overview#状态管理v2)实现，相较于[状态管理（V1）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-overview#状态管理v1)，状态管理（V2）增强了对数据对象的深度观察与管理能力，不再局限于组件层级。借助状态管理（V2），开发者可以更灵活地控制组件的数据和状态，实现更高效的用户界面刷新。
 
-![](./img/note_3.0-zh-cn.png) 本模块接口仅可在Stage模型下使用。
+![](./img/note_3.0-zh-cn.png)
+
+- 本模块接口仅可在Stage模型下使用。
+- 如果ChipV2设置[通用属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-attributes)或[通用事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-events)，编译工具链会额外生成节点__Common__，并将通用属性或通用事件挂载在__Common__上，而不是直接应用到ChipV2本身。这可能导致开发者设置的通用属性或通用事件不生效或不符合预期，因此，不建议ChipV2设置通用属性和通用事件。
 
 起始版本： 26.0.0
 
@@ -1011,7 +1014,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706836266.png)
+ ![](./img/zh-cn_image_0000002712246512.png)
 
 #### [h2]示例2（设置ChipV2激活状态）
 
@@ -1075,7 +1078,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736315371.gif)
+ ![](./img/zh-cn_image_0000002742005461.gif)
 
 #### [h2]示例3（设置Symbol类型图标）
 
@@ -1133,7 +1136,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706676332.gif)
+ ![](./img/zh-cn_image_0000002712406472.gif)
 
 #### [h2]示例4（监听ChipV2Options内对象类型属性的内部属性变化）
 
@@ -1175,4 +1178,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736435419.gif)
+ ![](./img/zh-cn_image_0000002742125421.gif)

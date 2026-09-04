@@ -2,8 +2,8 @@
 title: "ssap（星闪SSAP连接能力）"
 upstream_id: "harmonyos-references/nearlink-ssap"
 catalog: "harmonyos-references"
-content_hash: "bae9532ad857"
-synced_at: "2026-07-28T16:50:42.812112"
+content_hash: "cd3e238c3f9f"
+synced_at: "2026-09-04T18:12:01.513604"
 ---
 
 # ssap（星闪SSAP连接能力）
@@ -524,7 +524,7 @@ setPropertyNotification(property: Property, enable: boolean): Promise<void>
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | property | [Property](#property) | 是 | 服务端属性。 |
-| enable | boolean | 是 | true: 打开通知功能。false: 关闭通知功能。 |
+| enable | boolean | 是 | true表示打开通知功能。false表示关闭通知功能。 |
 
 返回值：
 
@@ -749,7 +749,7 @@ try {
 
 on(type: 'connectionStateChange', callback: Callback<ConnectionChangeState>): void
 
-订阅连接状态变化事件。使用callback异步回调。
+客户端订阅连接状态变化事件。使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -799,7 +799,7 @@ try {
 
 off(type: 'connectionStateChange', callback?: Callback<ConnectionChangeState>): void
 
-取消订阅连接状态变化事件。使用callback异步回调。
+客户端取消订阅连接状态变化事件。使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -849,7 +849,7 @@ try {
 
 on(type: 'mtuChange', callback: Callback<number>): void
 
-订阅MTU变化事件。使用callback异步回调。
+客户端订阅MTU变化事件。使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -899,7 +899,7 @@ try {
 
 off(type: 'mtuChange', callback?: Callback<number>): void
 
-取消订阅MTU变化事件。使用callback异步回调。
+客户端取消订阅MTU变化事件。使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -1277,7 +1277,7 @@ try {
 
 on(type: 'connectionStateChange', callback: Callback<ConnectionChangeState>): void
 
-订阅连接状态变化事件。使用callback异步回调。
+服务端订阅连接状态变化事件。使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -1326,7 +1326,7 @@ try {
 
 off(type: 'connectionStateChange', callback?: Callback<ConnectionChangeState>): void
 
-取消订阅连接状态变化事件。使用callback异步回调。
+服务端取消订阅连接状态变化事件。使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -1571,7 +1571,7 @@ try {
 
 on(type: 'mtuChange', callback: Callback<number>): void
 
-订阅MTU（Maximum Transmission Unit）变化事件。使用callback异步回调。
+服务端订阅MTU（Maximum Transmission Unit）变化事件。使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -1620,7 +1620,7 @@ try {
 
 off(type: 'mtuChange', callback?: Callback<number>): void
 
-取消订阅MTU变化事件。使用callback异步回调。
+服务端取消订阅MTU变化事件。使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -1714,7 +1714,7 @@ try {
 | propertyUuid | string | 否 | 否 | 表示Property的UUID，数据格式同serviceUuid。 |
 | value | ArrayBuffer | 否 | 否 | 表示描述符的数据值。 |
 | descriptorType | [PropertyDescriptorType](#propertydescriptortype) | 否 | 否 | 表示Property的描述符类型。 |
-| isWriteable | boolean | 否 | 是 | 表示描述符是否是可写的。true：可写，false：不可写。默认值为true。 |
+| isWriteable | boolean | 否 | 是 | 表示描述符是否是可写的。true表示可写，false表示不可写。默认值为true。 |
 
 #### PropertyReadRequest
 

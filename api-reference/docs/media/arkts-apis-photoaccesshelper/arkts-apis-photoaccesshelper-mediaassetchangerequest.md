@@ -2,8 +2,8 @@
 title: "Class (MediaAssetChangeRequest)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-mediaassetchangerequest"
 catalog: "harmonyos-references"
-content_hash: "47bc0876574a"
-synced_at: "2026-08-29T18:17:45.908385"
+content_hash: "d9ed89144af7"
+synced_at: "2026-09-04T18:13:18.029973"
 ---
 
 # Class (MediaAssetChangeRequest)
@@ -633,7 +633,7 @@ saveCameraPhoto(): void
 ![](./img/note_3.0-zh-cn.png)
 
 - 非YUV拍摄模式下，照片资源保存的编码格式与[CameraFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-e#cameraformat)保持一致。
-- YUV拍摄模式下，该接口无法指定编码格式，图片资源保存为默认的jpg格式。从API版本13开始，如需指定编码格式，请使用[saveCameraPhoto](#savecameraphoto13)接口。
+- YUV拍摄模式下，该接口无法指定编码格式，图片资源保存为默认的jpg格式。从API version 13开始，如需指定编码格式，请使用[saveCameraPhoto](#savecameraphoto13)接口。
 
 系统能力：SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -718,7 +718,7 @@ async function example(context: Context, asset: photoAccessHelper.PhotoAsset) {
 
 discardCameraPhoto(): void
 
-删除相机拍摄的照片，照片将被移入回收站。
+删除相机拍摄的照片。
 
 系统能力：SystemCapability.FileManagement.PhotoAccessHelper.Core
 

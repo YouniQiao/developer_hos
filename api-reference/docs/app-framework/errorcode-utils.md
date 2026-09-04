@@ -2,8 +2,8 @@
 title: "语言基础类库错误码"
 upstream_id: "harmonyos-references/errorcode-utils"
 catalog: "harmonyos-references"
-content_hash: "eecd0d201033"
-synced_at: "2026-08-03T17:09:34.481373"
+content_hash: "ebb132e07bdc"
+synced_at: "2026-09-04T18:09:35.456613"
 ---
 
 # 语言基础类库错误码
@@ -977,6 +977,24 @@ Incorrect encoding format, only support utf-8.
 处理步骤
 
 修改编码格式为utf-8。
+
+#### 10200067 transfer传入不支持的类型
+
+错误信息
+
+Transfer Error. The input name is not supported!
+
+错误描述
+
+transfer转换失败，传入不支持的类型。
+
+可能原因
+
+传入的类型为不支持的类型。
+
+处理步骤
+
+调用时，确保传入的类型是可用的。无法保证时，需要捕获异常。
 
 #### 10200068 引用已释放或分离的ArrayBuffer
 

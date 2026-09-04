@@ -2,8 +2,8 @@
 title: "Interface (BuildingOverlay)"
 upstream_id: "harmonyos-references/map-map-buildingoverlay"
 catalog: "harmonyos-references"
-content_hash: "2cd142bc3f83"
-synced_at: "2026-07-09T17:28:10.046637"
+content_hash: "77ee30532894"
+synced_at: "2026-09-04T18:13:51.807247"
 ---
 
 # Interface (BuildingOverlay)
@@ -16,7 +16,7 @@ import { map, mapCommon } from '@kit.MapKit';
 
 #### BuildingOverlay
 
-3D建筑。缩放层级达到16级或以上，才可正常显示3D建筑效果。
+3D建筑。缩放层级达到16级或以上，才可正常显示3D建筑效果。在调用map.[MapComponentController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller)类的[addBuildingOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#addbuildingoverlay)方法时会返回该类型的实例。
 
 模型约束： 此接口仅可在Stage模型下使用。
 

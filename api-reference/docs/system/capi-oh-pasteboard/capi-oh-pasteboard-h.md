@@ -2,8 +2,8 @@
 title: "oh_pasteboard.h"
 upstream_id: "harmonyos-references/capi-oh-pasteboard-h"
 catalog: "harmonyos-references"
-content_hash: "736b498fe967"
-synced_at: "2026-07-28T16:51:00.698115"
+content_hash: "982848819df9"
+synced_at: "2026-09-04T18:12:19.266595"
 ---
 
 # oh_pasteboard.h
@@ -29,8 +29,8 @@ synced_at: "2026-07-28T16:51:00.698115"
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
 | [Pasteboard_ProgressInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-pasteboard-progressinfo) | Pasteboard_ProgressInfo | 定义进度上报的数据结构。 |
-| [Pasteboard_GetDataParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-pasteboard-getdataparams) | Pasteboard_GetDataParams | 表示从剪贴板获取粘贴数据和进度时需要写入的参数。 |
-| [OH_PasteboardObserver](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-pasteboard-oh-pasteboardobserver) | OH_PasteboardObserver | 定义剪贴板数据变更观察者。 |
+| [Pasteboard_GetDataParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-pasteboard-getdataparams) | Pasteboard_GetDataParams | 表示从剪贴板获取粘贴数据和进度时需要提供的参数。 |
+| [OH_PasteboardObserver](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-pasteboard-oh-pasteboardobserver) | OH_PasteboardObserver | 定义剪贴板数据变更观察者。用于监听系统剪贴板数据的变化事件，当剪贴板内容发生更新时，通过回调通知应用。典型使用场景：需要响应剪贴板内容变化的应用。 |
 | [OH_Pasteboard](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-pasteboard-oh-pasteboard) | OH_Pasteboard | 定义剪贴板对象，用以操作系统剪贴板。 |
 
 #### [h2]宏定义
@@ -40,8 +40,8 @@ synced_at: "2026-07-28T16:51:00.698115"
 | [PASTEBOARD_MIMETYPE_TEXT_PLAIN](#pasteboard_mimetype_text_plain) "text/plain" | 纯文本类型。 |
 | [PASTEBOARD_MIMETYPE_TEXT_URI](#pasteboard_mimetype_text_uri) "text/uri" | URI类型。 |
 | [PASTEBOARD_MIMETYPE_TEXT_HTML](#pasteboard_mimetype_text_html) "text/html" | HTML类型。 |
-| [PASTEBOARD_MIMETYPE_PIXELMAP](#pasteboard_mimetype_pixelmap) "pixelMap" | pixelMap类型。 |
-| [PASTEBOARD_MIMETYPE_TEXT_WANT](#pasteboard_mimetype_text_want) "text/want" | want类型。 |
+| [PASTEBOARD_MIMETYPE_PIXELMAP](#pasteboard_mimetype_pixelmap) "pixelMap" | PixelMap类型。 |
+| [PASTEBOARD_MIMETYPE_TEXT_WANT](#pasteboard_mimetype_text_want) "text/want" | Want类型。 |
 
 #### [h2]枚举
 
@@ -128,7 +128,7 @@ HTML类型。
 ```
  描述
 
-pixelMap类型。
+PixelMap类型。
 
 起始版本： 22
 
@@ -139,7 +139,7 @@ pixelMap类型。
 ```
  描述
 
-want类型。
+Want类型。
 
 起始版本： 22
 
@@ -584,7 +584,9 @@ OH_UdmfData* OH_Pasteboard_GetData(OH_Pasteboard* pasteboard, int* status)
 
 起始版本： 13
 
-需要权限：ohos.permission.READ_PASTEBOARD，应用访问剪贴板内容需[申请访问剪贴板权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/get-pastedata-permission-guidelines)。[使用粘贴控件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pastebutton)访问剪贴板内容的应用，可以无需申请权限。
+应用使用自定义控件访问剪贴板内容需[申请访问剪贴板权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/get-pastedata-permission-guidelines)。应用[使用粘贴控件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pastebutton)访问剪贴板内容，无需申请权限。
+
+需要权限： ohos.permission.READ_PASTEBOARD
 
 参数：
 
@@ -865,7 +867,9 @@ OH_UdmfData* OH_Pasteboard_GetDataWithProgress(OH_Pasteboard* pasteboard, Pasteb
 
 起始版本： 15
 
-需要权限：ohos.permission.READ_PASTEBOARD，应用访问剪贴板内容需[申请访问剪贴板权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/get-pastedata-permission-guidelines)。[使用粘贴控件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pastebutton)访问剪贴板内容的应用，可以无需申请权限。
+应用使用自定义控件访问剪贴板内容需[申请访问剪贴板权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/get-pastedata-permission-guidelines)。应用[使用粘贴控件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pastebutton)访问剪贴板内容，无需申请权限。
+
+需要权限： ohos.permission.READ_PASTEBOARD
 
 参数：
 

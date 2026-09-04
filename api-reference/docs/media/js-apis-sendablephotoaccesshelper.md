@@ -2,8 +2,8 @@
 title: "@ohos.file.sendablePhotoAccessHelper (基于Sendable对象的相册管理模块)"
 upstream_id: "harmonyos-references/js-apis-sendablephotoaccesshelper"
 catalog: "harmonyos-references"
-content_hash: "3d37db915db6"
-synced_at: "2026-08-29T18:17:46.999477"
+content_hash: "d25d88461de1"
+synced_at: "2026-09-04T18:13:18.999349"
 ---
 
 # @ohos.file.sendablePhotoAccessHelper (基于Sendable对象的相册管理模块)
@@ -594,7 +594,7 @@ set(member: string, value: string): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | member | string | 是 | 成员属性名称例如：[PhotoKeys](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#photokeys).TITLE。字符串长度的取值范围为[1, 255]。 |
-| value | string | 是 | 设置成员参数的值，只能修改[PhotoKeys](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#photokeys).TITLE的值。title的参数规格为： - 不应包含扩展名。 - 文件名字符串长度的取值范围为[1, 255]（资产文件名为标题+扩展名）。 - 不允许出现的非法字符，包括：. \ / : * ? " ' ` | { } [ ] |
+| value | string | 是 | 设置成员属性的值，只能修改[PhotoKeys](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#photokeys).TITLE的值。title的参数规格为： - 不应包含扩展名。 - 文件名字符串长度的取值范围为[1, 255]（资产文件名为标题+扩展名）。 - 不允许出现的非法英文字符，包括：. \ / : * ? " ' ` | { } [ ] |
 
 错误码：
 
@@ -704,7 +704,7 @@ getThumbnail(size?: image.Size): Promise<image.PixelMap>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| size | [image.Size](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-i#size) | 否 | 缩略图尺寸。不传时使用系统默认尺寸。 |
+| size | [image.Size](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-i#size) | 否 | 缩略图尺寸。默认尺寸为256×256。单位：像素（px）。 |
 
 返回值：
 

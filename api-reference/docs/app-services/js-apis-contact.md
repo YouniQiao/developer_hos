@@ -2,8 +2,8 @@
 title: "@ohos.contact (联系人)"
 upstream_id: "harmonyos-references/js-apis-contact"
 catalog: "harmonyos-references"
-content_hash: "aa06804ca870"
-synced_at: "2026-08-29T18:18:14.185670"
+content_hash: "fd65124d1aeb"
+synced_at: "2026-09-04T18:13:45.929707"
 ---
 
 # @ohos.contact (联系人)
@@ -3414,7 +3414,7 @@ contact.queryGroups((err: BusinessError, data) => {
     console.error(`Failed to query Groups. Code: ${err.code}, message: ${err.message}`);
     return;
   }
-  console.info(`Succeeded in querying Groups.. data->${JSON.stringify(data)}`);
+  console.info(`Succeeded in querying Groups. data->${JSON.stringify(data)}`);
 });
 ```
 
@@ -4366,7 +4366,7 @@ contact.hasMatchedCallLog(context, phoneNumber, minDuration).then((hasMatch:bool
 
 syncContacts(context: Context, mode: ContactSyncMode, progress: ContactSyncProgress, contacts: Array<Contact>): Promise<Array<number>>
 
-批量同步多个联系人至联系人数据库。每次最多可批量同步400个联系人。调用方必须处于前台。
+批量同步多个联系人至联系人数据库。每次最多可批量同步400个联系人。调用方必须处于前台。使用Promise异步回调。
 
 起始版本：26.0.0
 
@@ -4447,13 +4447,12 @@ for (let batch: number = 1; batch <= totalBatches; batch++) {
       currentBatch: batch,
       totalBatches: totalBatches
     };
-    console.info(`同步批次 ${batch}/${totalBatches}, 联系人数量: ${currentBatchSize}`);
     let result = await contact.syncContacts(context, mode, progress, contacts);
-    console.info(`批次 ${batch} 同步成功，result: `  + JSON.stringify(result));
+    console.info(`Succeeded in syncContacts. result->${JSON.stringify(result)}`);
   }
   catch (err) {
     const e = err as BusinessError;
-    console.error(`syncContacts 失败: code=${e.code}, message=${e.message}`);
+    console.error(`Failed to syncContacts. Code: ${e.code}, message: ${e.message}`);
   }
 }
 ```
@@ -4462,7 +4461,7 @@ for (let batch: number = 1; batch <= totalBatches; batch++) {
 
 queryContactSyncInfo(context: Context): Promise<Array<ContactSyncInfo>>
 
-查询当前应用的联系人信息同步状态。返回空值表示应用未发起同步或同步已完成。
+查询当前应用的联系人信息同步状态。如果返回的联系人同步信息为空，则调用方不进行联系人同步或联系人同步已完成。使用Promise异步回调。
 
 起始版本：26.0.0
 
@@ -4513,7 +4512,7 @@ console.info('queryContactSyncInfo syncInfoList '  + JSON.stringify(syncInfoList
 
 importContactsViaUI(context: Context, contacts: Array<Contact>): Promise<Array<number>>
 
-通过UI交互批量导入多个联系人。每次最多可导入100个联系人。不支持导入联系人的头像。
+通过UI交互批量导入多个联系人。每次最多可导入100个联系人。不支持导入联系人的头像。使用Promise异步回调。
 
 起始版本：26.0.0
 
@@ -4641,7 +4640,7 @@ promise.then((data) => {
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | filterCondition | [FilterCondition](#filtercondition15) | 否 | 否 | 过滤条件。 |
-| value | string | ValueType[] | 否 | 是 | 过滤值，默认为undefined。 |
+| value | string | [ValueType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-valuesbucket#valuetype) [] | 否 | 是 | 过滤值，默认为undefined。 |
 
 #### FilterCondition15+
 

@@ -2,8 +2,8 @@
 title: "dataTransfer（星闪数传能力）"
 upstream_id: "harmonyos-references/nearlink-data-transfer-api"
 catalog: "harmonyos-references"
-content_hash: "e30e05fa38a6"
-synced_at: "2026-07-28T16:50:41.978313"
+content_hash: "0df064178d7e"
+synced_at: "2026-09-04T18:12:01.463018"
 ---
 
 # dataTransfer（星闪数传能力）
@@ -271,7 +271,7 @@ on(type: 'connectionStateChanged', callback: Callback<ConnectionResult>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 事件回调类型，支持的事件为'connectionStateChanged'，表示连接状态发生变化的事件。 当端口通道连接状态发生变化时，触发该事件。 当调用[datatransfer.connect](#connect)或[datatransfer.disconnect](#disconnect)时，可能引起连接状态发生变化。 |
+| type | string | 是 | 事件回调类型，支持的事件为'connectionStateChanged'，表示连接状态发生变化的事件。 当端口通道连接状态发生变化时，触发该事件。 当调用[dataTransfer.connect](#connect)或[dataTransfer.disconnect](#disconnect)时，可能引起连接状态发生变化。 |
 | callback | Callback | 是 | 回调函数，返回与远端设备端口连接参数的协商结果。 |
 
 错误码：
@@ -576,7 +576,7 @@ try {
 | --- | --- | --- | --- | --- |
 | address | string | 否 | 否 | 远端设备的星闪地址。地址格式参考：11:22:33:AA:BB:FF。 |
 | uuid | string | 否 | 否 | 星闪服务UUID，例如：37bea880-fc70-11ea-b720-000000004386。UUID格式参考[星闪标准服务UUID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-faq#星闪标准服务uuid的格式)。 |
-| mtu | number | 否 | 是 | 期望发送数据的包长，单位为byte。范围[0, 65535]，默认值为512。 |
+| mtu | number | 否 | 是 | 期望发送数据的包长，单位：字节。范围[0, 65535]，默认值为512。 |
 | transferMode | [TransferMode](#transfermode) | 否 | 是 | 表示和远端设备的数据传输模式。默认值是BASIC。 |
 
 #### DataParams
@@ -609,7 +609,7 @@ try {
 | --- | --- | --- | --- | --- |
 | address | string | 否 | 否 | 远端设备的星闪地址。地址格式参考：11:22:33:AA:BB:FF。 |
 | uuid | string | 否 | 否 | 星闪服务UUID，例如：37bea880-fc70-11ea-b720-000000004386。UUID格式参考[星闪标准服务UUID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-faq#星闪标准服务uuid的格式)。 |
-| mtu | number | 否 | 否 | 协商后的发送和接收数据的包长，单位为byte，范围[0, 65535]。 |
+| mtu | number | 否 | 否 | 协商后的发送和接收数据的包长，单位：字节，范围[0, 65535]。 |
 | state | [ConnectionState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-constant#connectionstate) | 否 | 否 | 与远端设备的连接状态。 |
 
 #### ConnectionStateParams

@@ -2,8 +2,8 @@
 title: "Chip"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-chip"
 catalog: "harmonyos-references"
-content_hash: "a8cdc9831f76"
-synced_at: "2026-09-01T18:13:06.847122"
+content_hash: "f40521415b95"
+synced_at: "2026-09-04T18:10:20.170104"
 ---
 
 # Chip
@@ -14,6 +14,7 @@ Chip组件用于标签展示和交互场景，支持自定义样式、图标、�
 
 - 该组件从API version 11开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
 - 本模块接口仅可在Stage模型下使用。
+- 如果Chip设置[通用属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-attributes)或[通用事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-events)，编译工具链会额外生成节点__Common__，并将通用属性或通用事件挂载在__Common__上，而不是直接应用到Chip本身。这可能导致开发者设置的通用属性或通用事件不生效或不符合预期，因此，不建议Chip设置通用属性和通用事件。
 
 #### 导入模块
 
@@ -339,7 +340,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736315367.png)
+ ![](./img/zh-cn_image_0000002742005457.png)
 
 #### [h2]示例2（设置默认后缀图标）
 
@@ -387,7 +388,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706676328.png)
+ ![](./img/zh-cn_image_0000002712406468.png)
 
 #### [h2]示例3（不显示后缀图标）
 
@@ -434,7 +435,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736435415.png)
+ ![](./img/zh-cn_image_0000002742125417.png)
 
 #### [h2]示例4（激活态操作块）
 
@@ -491,7 +492,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706836264.gif)
+ ![](./img/zh-cn_image_0000002712246510.gif)
 
 #### [h2]示例5（设置symbol类型图标）
 
@@ -545,7 +546,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736315369.gif)
+ ![](./img/zh-cn_image_0000002742005459.gif)
 
 #### [h2]示例6（设置镜像效果）
 
@@ -596,7 +597,7 @@ struct ChipPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706676330.png)
+ ![](./img/zh-cn_image_0000002712406470.png)
 
 #### [h2]示例7（Image类型无障碍朗读）
 
@@ -980,4 +981,4 @@ struct ChipMaterialExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736435417.png)
+ ![](./img/zh-cn_image_0000002742125419.png)

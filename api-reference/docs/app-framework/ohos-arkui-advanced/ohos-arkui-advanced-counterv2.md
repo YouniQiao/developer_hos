@@ -2,8 +2,8 @@
 title: "CounterV2"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-counterv2"
 catalog: "harmonyos-references"
-content_hash: "e8380f4add8a"
-synced_at: "2026-07-28T16:48:44.456845"
+content_hash: "b97052ee4665"
+synced_at: "2026-09-04T18:10:33.780787"
 ---
 
 # CounterV2
@@ -14,8 +14,8 @@ CounterV2组件用于精确调节数值，包含列表型、紧凑型、数值�
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 如果CounterV2设置[通用属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-attributes)和[通用事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-events)，编译工具链会额外生成节点__Common__，并将通用属性或通用事件挂载在__Common__上，而不是直接应用到CounterV2本身。这可能导致开发者设置的通用属性或通用事件不生效或不符合预期，因此，不建议为CounterV2设置通用属性和通用事件。
-- 该组件接口仅可在Stage模型下使用。
+- 本模块接口仅可在Stage模型下使用。
+- 如果CounterV2设置[通用属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-attributes)或[通用事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-events)，编译工具链会额外生成节点__Common__，并将通用属性或通用事件挂载在__Common__上，而不是直接应用到CounterV2本身。这可能导致开发者设置的通用属性或通用事件不生效或不符合预期，因此，不建议CounterV2设置通用属性和通用事件。
 
 起始版本： 26.0.0
 
@@ -283,14 +283,6 @@ CounterV2DateStyleOptions定义日期内联型CounterV2的属性和事件。
 | day | number | 否 | 是 | 设置日期内联型初始日。 默认值：1 取值范围：[1, 31] 必须为合法日期，如month为2月时，day传入30将视为异常值，按默认值处理。 超出取值范围按默认值处理。 值为undefined时，按默认值处理。 |
 | onDateChange | [OnDateCounterV2ChangeCallback](#ondatecounterv2changecallback) | 否 | 是 | 当日期改变时，触发该回调。回调参数date表示当前显示的日期值。 使用场景：当需要在日期变化时执行自定义操作（如更新关联数据、触发业务逻辑、记录日志等）时传入此回调。 默认值：undefined，表示不触发该回调。 值为undefined时，按默认值处理。 |
 
-#### 属性
-
-不支持[通用属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-attributes)。
-
-#### 事件
-
-不支持[通用事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-events)。
-
 #### 示例
 
 #### [h2]示例1（列表型CounterV2）
@@ -323,7 +315,7 @@ struct ListCounterExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088475.gif)
+ ![](./img/zh-cn_image_0000002742125525.gif)
 
 #### [h2]示例2（紧凑型CounterV2）
 
@@ -356,7 +348,7 @@ struct CompactCounterExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928645.gif)
+ ![](./img/zh-cn_image_0000002712246618.gif)
 
 #### [h2]示例3（数值内联型CounterV2）
 
@@ -392,7 +384,7 @@ struct NumberStyleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008966.gif)
+ ![](./img/zh-cn_image_0000002742005567.gif)
 
 #### [h2]示例4（日期内联型CounterV2）
 
@@ -424,7 +416,7 @@ struct DateStyleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655849046.gif)
+ ![](./img/zh-cn_image_0000002712406580.gif)
 
 #### [h2]示例5（镜像布局展示）
 
@@ -511,4 +503,4 @@ struct CounterPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088477.png)
+ ![](./img/zh-cn_image_0000002742125527.png)

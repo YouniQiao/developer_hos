@@ -2,8 +2,8 @@
 title: "@ohos.app.ability.appManager (应用管理)"
 upstream_id: "harmonyos-references/js-apis-app-ability-appmanager"
 catalog: "harmonyos-references"
-content_hash: "51184aa464b9"
-synced_at: "2026-08-29T18:12:00.096439"
+content_hash: "ddb4ab3ff498"
+synced_at: "2026-09-04T18:09:10.850097"
 ---
 
 # @ohos.app.ability.appManager (应用管理)
@@ -270,9 +270,7 @@ appManager.getAppMemorySize((err, data) => {
 
 getRunningProcessInformation(): Promise<Array<ProcessInformation>>
 
-获取当前应用运行进程的相关信息。使用Promise异步回调。
-
-![](./img/note_3.0-zh-cn.png) 从API version 11开始，该接口仅用于获取调用方自身的进程信息，不再需要申请权限。
+从API版本11开始，默认仅返回调用方自身的进程信息；若拥有 ohos.permission.GET_RUNNING_INFO 权限（该权限仅系统应用可申请），则可查询全量应用的进程信息。使用Promise异步回调。
 
 元服务API：从API version 11开始，该接口支持在元服务中使用。
 
@@ -313,9 +311,7 @@ appManager.getRunningProcessInformation().then((data) => {
 
 getRunningProcessInformation(callback: AsyncCallback<Array<ProcessInformation>>): void
 
-获取当前应用运行进程的相关信息。使用callback异步回调。
-
-![](./img/note_3.0-zh-cn.png) 从API version 11开始，该接口仅用于获取调用方自身的进程信息，不再需要申请权限。
+从API版本11开始，默认仅返回调用方自身的进程信息；若拥有 ohos.permission.GET_RUNNING_INFO 权限（该权限仅系统应用可申请），则可查询全量应用的进程信息。使用callback异步回调。
 
 元服务API：从API version 11开始，该接口支持在元服务中使用。
 

@@ -2,8 +2,8 @@
 title: "SplitLayout"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-splitlayout"
 catalog: "harmonyos-references"
-content_hash: "9c13c2faf409"
-synced_at: "2026-07-28T16:48:27.778155"
+content_hash: "7abc33d7d127"
+synced_at: "2026-09-04T18:10:31.789615"
 ---
 
 # SplitLayout
@@ -13,8 +13,8 @@ SplitLayout组件提供了常用的页面布局样式，主要用于展示图片
 ![](./img/note_3.0-zh-cn.png)
 
 - 该组件从API version 10开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
-- 该组件仅可在Stage模型下使用。
-- SplitLayout不支持设置[通用属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-attributes)和[通用事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-events)。如果设置，编译工具链会额外生成__Common__节点，并将通用属性或通用事件挂载在__Common__上，而不是直接应用到SplitLayout本身，导致设置的属性或事件不生效。
+- 本模块接口仅可在Stage模型下使用。
+- 如果SplitLayout设置[通用属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-attributes)或[通用事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-events)，编译工具链会额外生成节点__Common__，并将通用属性或通用事件挂载在__Common__上，而不是直接应用到SplitLayout本身。这可能导致开发者设置的通用属性或通用事件不生效或不符合预期，因此，不建议SplitLayout设置通用属性和通用事件。
 
 #### 导入模块
 
@@ -48,14 +48,6 @@ SplitLayout是分栏布局组件，支持自适应布局能力，在不同宽度
 | tertiaryText | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | @Prop | 辅助文本，无长度限制。显示在副标题下方区域，当需要显示辅助文本时传入，不传入时不显示辅助文本。 |
 | container | () => void | 是 | @BuilderParam | 容器内组件，用于在布局下方区域承载自定义组件内容，无返回值。 |
 
-#### 事件
-
-不支持[通用事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-events)。
-
-#### 属性
-
-不支持[通用属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-attributes)。
-
 #### 示例
 
 该示例通过SplitLayout实现了页面布局，并具备自适应能力。
@@ -88,12 +80,12 @@ struct Index {
 ```
  小于等于600vp布局：
 
-![](./img/zh-cn_image_0000002686088463.png)
+![](./img/zh-cn_image_0000002742125503.png)
 
 大于600vp且小于等于840vp的布局：
 
-![](./img/zh-cn_image_0000002685928633.png)
+![](./img/zh-cn_image_0000002712246596.png)
 
 大于840vp布局：
 
-![](./img/zh-cn_image_0000002656008954.png)
+![](./img/zh-cn_image_0000002742005547.png)

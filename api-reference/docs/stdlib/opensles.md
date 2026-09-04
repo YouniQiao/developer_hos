@@ -2,8 +2,8 @@
 title: "OpenSL ES"
 upstream_id: "harmonyos-references/opensles"
 catalog: "harmonyos-references"
-content_hash: "ad65fd49dd59"
-synced_at: "2026-07-09T01:01:48.881671"
+content_hash: "a1a17ecb48bf"
+synced_at: "2026-09-04T18:14:23.195407"
 ---
 
 # OpenSL ES
@@ -12,7 +12,7 @@ synced_at: "2026-07-09T01:01:48.881671"
 
 #### 简介
 
-OpenSL ES（Open Sound Library for Embedded System）即嵌入式音频加速标准。为开发者提供了标准化、高性能以及低响应时间的音频功能开发的对象和接口。相对于开源免费的OpenSL ES，HarmonyOS基于[OpenSL ES](https://www.khronos.org/opensles/) 1.0.1 API规范实现了部分Native API，相关接口开放情况如表[支持的API](#支持的api)所示。
+OpenSL ES（Open Sound Library for Embedded Systems）即嵌入式音频加速标准。为开发者提供了标准化、高性能以及低响应时间的音频功能开发的对象和接口。相对于开源免费的OpenSL ES，HarmonyOS基于[OpenSL ES](https://www.khronos.org/opensles/) 1.0.1 API规范实现了部分Native API，相关接口开放情况如表[支持的API](#支持的api)所示。
 
 #### 引入OpenSL ES能力
 

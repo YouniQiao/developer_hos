@@ -2,8 +2,8 @@
 title: "Preview"
 upstream_id: "harmonyos-references/openfileboost_preview"
 catalog: "harmonyos-references"
-content_hash: "1e2566d09221"
-synced_at: "2026-07-28T16:52:59.543840"
+content_hash: "871eefb175ed"
+synced_at: "2026-09-04T18:14:09.934352"
 ---
 
 # Preview
@@ -161,7 +161,7 @@ typedef OpenFileBoost_AppState(*HMS_OpenFileBoost_QueryAppState) (void)
 
 | 类型 | 说明 |
 | --- | --- |
-| [OpenFileBoost_AppState](#openfileboost_appstate) | 如果App允许推荐文件，应该返回OPEN_FILE_BOOST_APP_STATE_ALLOW_PRELOAD，系统接下来将调用 [HMS_OpenFileBoost_OnFilePreload](#hms_openfileboost_onfilepreload)去推荐文件进行预加载。 如果App拒绝此次推荐，应该返回OPEN_FILE_BOOST_APP_STATE_REJECT_PRELOAD。 如果App在本次注册期间不想再收到推荐，应该返回OPEN_FILE_BOOST_APP_STATE_FOREVER_REJECT_PRELOAD，然后尽快调用HMS_OpenFileBoost_UnregisterFilePreloadCb来取消注册。 |
+| [OpenFileBoost_AppState](#openfileboost_appstate) | 如果App允许推荐文件，应该返回OPEN_FILE_BOOST_APP_STATE_ALLOW_PRELOAD，系统接下来将调用 [HMS_OpenFileBoost_OnFilePreload](#hms_openfileboost_onfilepreload)去推荐文件进行预加载。 如果App拒绝此次推荐，应该返回OPEN_FILE_BOOST_APP_STATE_REJECT_PRELOAD。 如果App在本次注册期间不想再收到推荐，应该返回OPEN_FILE_BOOST_APP_STATE_FOREVER_REJECT_PRELOAD，然后尽快调用[HMS_OpenFileBoost_UnregisterFilePreload](#hms_openfileboost_unregisterfilepreload)来取消注册。 |
 
 #### [h2]FileScanBoost_ScanOption
 
