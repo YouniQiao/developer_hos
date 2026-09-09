@@ -2,14 +2,14 @@
 title: "OH_AudioSuite_PureVoiceChangeOption"
 upstream_id: "harmonyos-references/capi-ohaudiosuite-oh-audiosuite-purevoicechangeoption"
 catalog: "harmonyos-references"
-content_hash: "b32b3c374799"
-synced_at: "2026-07-09T01:00:12.268099"
+content_hash: "33486d68836e"
+synced_at: "2026-09-09T18:22:14.505396"
 ---
 
 # OH_AudioSuite_PureVoiceChangeOption
 
 ```
-typedef struct {...} OH_AudioSuite_PureVoiceChangeOption
+typedef struct OH_AudioSuite_PureVoiceChangeOption {...} OH_AudioSuite_PureVoiceChangeOption
 ```
 
 #### 概述
@@ -28,6 +28,6 @@ typedef struct {...} OH_AudioSuite_PureVoiceChangeOption
 
 | 名称 | 描述 |
 | --- | --- |
-| [OH_AudioSuite_PureVoiceChangeGenderOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-suite-base-h#oh_audiosuite_purevoicechangegenderoption) optionGender | 定义传统变声性别。 |
-| [OH_AudioSuite_PureVoiceChangeType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-suite-base-h#oh_audiosuite_purevoicechangetype) optionType | 定义传统变声类型。 |
-| float pitch | 定义传统变声音调。如果使用系统中的默认音调以获得最佳效果, 设置为[OH_PURE_VOICE_DEFAULT_PITCH](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-suite-base-h#宏定义)。 设置自定义音调的取值范围为[0.3f, 3.0f]。 |
+| [OH_AudioSuite_PureVoiceChangeGenderOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-suite-base-h#oh_audiosuite_purevoicechangegenderoption) optionGender | 指定传统变声性别。 |
+| [OH_AudioSuite_PureVoiceChangeType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-suite-base-h#oh_audiosuite_purevoicechangetype) optionType | 指定传统变声类型。 |
+| float pitch | 指定传统变声音调。如果使用系统中的默认音调以获得最佳效果，设置为[宏定义](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-suite-base-h#宏定义)中的OH_PURE_VOICE_DEFAULT_PITCH。 设置自定义音调的取值范围为[0.3f, 3.0f]。 |

@@ -2,8 +2,8 @@
 title: "pdfService（PDF服务）"
 upstream_id: "harmonyos-references/pdf-arkts-pdfservice"
 catalog: "harmonyos-references"
-content_hash: "4c8d8229eb69"
-synced_at: "2026-08-29T18:18:32.408389"
+content_hash: "e95435f565b5"
+synced_at: "2026-09-09T18:23:14.087974"
 ---
 
 # pdfService（PDF服务）
@@ -3545,7 +3545,7 @@ let watermarkInfo = new pdfService.WatermarkInfo();
 
 #### TextWatermarkInfo
 
-文本水印类的相关属性，继承[WatermarkInfo](#watermarkinfo)。
+文本水印类的相关属性，继承[WatermarkInfo](#watermarkinfo)。当前在PC/2in1设备上暂不支持中文文本水印。
 
 模型约束： 此接口仅可在Stage模型下使用。
 

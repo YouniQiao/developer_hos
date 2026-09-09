@@ -2,8 +2,8 @@
 title: "telephony_data.h"
 upstream_id: "harmonyos-references/capi-telephony-data-h"
 catalog: "harmonyos-references"
-content_hash: "b7ee08e516c2"
-synced_at: "2026-07-09T00:59:38.233961"
+content_hash: "a24f77dd44bb"
+synced_at: "2026-09-09T18:21:47.324865"
 ---
 
 # telephony_data.h
@@ -49,4 +49,4 @@ int32_t OH_Telephony_GetDefaultCellularDataSlotId(void)
 
 | 类型 | 说明 |
 | --- | --- |
-| int32_t | 默认移动数据的SIM卡接口 (0 表示卡槽1, 1 表示卡槽2)。 |
+| int32_t | 默认移动数据的卡槽（0表示卡槽1，1表示卡槽2）。 |

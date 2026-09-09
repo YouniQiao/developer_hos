@@ -2,8 +2,8 @@
 title: "Enums"
 upstream_id: "harmonyos-references/arkts-apis-drm-e"
 catalog: "harmonyos-references"
-content_hash: "d9f8c3557b11"
-synced_at: "2026-08-29T18:17:33.506524"
+content_hash: "71b10da05cb8"
+synced_at: "2026-09-09T18:22:26.370528"
 ---
 
 # Enums
@@ -14,7 +14,7 @@ synced_at: "2026-08-29T18:17:33.506524"
 
 枚举，错误码。
 
-元服务API： 从API版本14开始，该接口支持在元服务中使用。
+元服务API： 从API version 14开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -29,7 +29,7 @@ synced_at: "2026-08-29T18:17:33.506524"
 
 枚举，预定义的配置属性。
 
-元服务API： 从API版本14开始，该接口支持在元服务中使用。
+元服务API： 从API version 14开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -47,7 +47,7 @@ synced_at: "2026-08-29T18:17:33.506524"
 
 枚举，媒体密钥类型。
 
-元服务API： 从API版本14开始，该接口支持在元服务中使用。
+元服务API： 从API version 14开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -60,7 +60,7 @@ synced_at: "2026-08-29T18:17:33.506524"
 
 枚举，离线媒体密钥状态。
 
-元服务API： 从API版本14开始，该接口支持在元服务中使用。
+元服务API： 从API version 14开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -74,7 +74,7 @@ synced_at: "2026-08-29T18:17:33.506524"
 
 枚举，设备证书状态。
 
-元服务API： 从API版本14开始，该接口支持在元服务中使用。
+元服务API： 从API version 14开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -90,7 +90,7 @@ synced_at: "2026-08-29T18:17:33.506524"
 
 枚举，媒体密钥请求类型。
 
-元服务API： 从API版本12开始，该接口支持在元服务中使用。
+元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -107,7 +107,7 @@ synced_at: "2026-08-29T18:17:33.506524"
 
 枚举，内容保护级别。
 
-元服务API： 从API版本12开始，该接口支持在元服务中使用。
+元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 

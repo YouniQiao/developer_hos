@@ -2,8 +2,8 @@
 title: "oh_input_manager.h"
 upstream_id: "harmonyos-references/capi-oh-input-manager-h"
 catalog: "harmonyos-references"
-content_hash: "b719c71173f2"
-synced_at: "2026-08-29T18:17:06.139073"
+content_hash: "43434760a479"
+synced_at: "2026-09-09T18:21:58.471324"
 ---
 
 # oh_input_manager.h
@@ -688,7 +688,7 @@ void OH_Input_SetKeyCode(struct Input_KeyState* keyState, int32_t keyCode)
 | 参数项 | 描述 |
 | --- | --- |
 | struct [Input_KeyState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-keystate)* keyState | 按键状态的枚举对象，具体请参考[Input_KeyStateAction](#input_keystateaction)。 |
-| int32_t keyCode | 按键键值，具体请参考[KeyCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-keycode#keycode)。 |
+| int32_t keyCode | 按键键值，具体请参考[Input_KeyCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-key-code-h#input_keycode)。 |
 
 #### [h2]OH_Input_GetKeyCode()
 
@@ -943,7 +943,7 @@ void OH_Input_SetKeyEventKeyCode(struct Input_KeyEvent* keyEvent, int32_t keyCod
 | 参数项 | 描述 |
 | --- | --- |
 | struct [Input_KeyEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-keyevent)* keyEvent | 按键事件对象，通过[OH_Input_CreateKeyEvent](#oh_input_createkeyevent)接口可以创建按键事件对象。 使用完需使用[OH_Input_DestroyKeyEvent](#oh_input_destroykeyevent)接口销毁按键事件对象。 |
-| int32_t keyCode | 按键键值，具体请参考[KeyCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-keycode#keycode)。 |
+| int32_t keyCode | 按键键值，具体请参考[Input_KeyCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-key-code-h#input_keycode)。 |
 
 #### [h2]OH_Input_GetKeyEventKeyCode()
 
@@ -1985,7 +1985,7 @@ Input_Result OH_Input_DestroyAxisEvent(Input_AxisEvent** axisEvent)
 
 | 类型 | 说明 |
 | --- | --- |
-| [Input_Result](#input_result) | 若销毁成功，则返回[INPUT_SUCCESS](#input_result)；若axisEvent为NULL或者axisEvent为NULL，则返回[INPUT_PARAMETER_ERROR](#input_result)。 |
+| [Input_Result](#input_result) | 若销毁成功，则返回[INPUT_SUCCESS](#input_result)；若axisEvent为NULL，则返回[INPUT_PARAMETER_ERROR](#input_result)。 |
 
 #### [h2]OH_Input_SetAxisEventAction()
 
@@ -3261,7 +3261,7 @@ Input_Result OH_Input_UnregisterDeviceListeners()
 
 | 类型 | 说明 |
 | --- | --- |
-| [Input_Result](#input_result) | OH_Input_UnregisterDeviceListener 函数返回值。 [INPUT_SUCCESS](#input_result) 表示调用成功。 [INPUT_SERVICE_EXCEPTION](#input_result) 表示由于服务异常调用失败。 |
+| [Input_Result](#input_result) | OH_Input_UnregisterDeviceListeners 函数返回值。 [INPUT_SUCCESS](#input_result) 表示调用成功。 [INPUT_SERVICE_EXCEPTION](#input_result) 表示由于服务异常调用失败。 |
 
 #### [h2]OH_Input_GetDeviceIds()
 
@@ -3372,7 +3372,7 @@ Input_Result OH_Input_GetKeyboardType(int32_t deviceId, int32_t *keyboardType)
 | 参数项 | 描述 |
 | --- | --- |
 | int32_t deviceId | 输入设备的唯一标识，同一个物理设备反复插拔或重启，设备ID可能会发生变化。 |
-| int32_t *keyboardType | keyboardType 指向输入设备的键盘指针。 |
+| int32_t *keyboardType | keyboardType 指向输入设备的键盘类型指针。 |
 
 返回：
 
@@ -3830,7 +3830,7 @@ int32_t OH_Input_InjectTouchEventGlobal(const struct Input_TouchEvent* touchEven
 
 使用以主屏左上角为原点的全局坐标系的坐标注入触屏输入事件。
 
-如果当前未获得事件注入授权，且调用方未持有ohos.permission.CONTROL_DEVICE权限，调用该接口注入事件不生效。
+如果当前处于用户未授权状态，且调用方未持有ohos.permission.CONTROL_DEVICE权限，调用该接口注入事件不生效。
 
 从API version 20开始，建议先使用[OH_Input_RequestInjection](#oh_input_requestinjection)请求授权。然后通过[OH_Input_QueryAuthorizedStatus](#oh_input_queryauthorizedstatus)查询授权状态，当授权状态为[AUTHORIZED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-input-manager-h#input_injectionstatus)时，再使用该接口。
 

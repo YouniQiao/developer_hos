@@ -2,14 +2,14 @@
 title: "OH_AudioDataArray"
 upstream_id: "harmonyos-references/capi-ohaudiosuite-oh-audiodataarray"
 catalog: "harmonyos-references"
-content_hash: "15228734fa61"
-synced_at: "2026-07-28T16:51:30.777686"
+content_hash: "948dcc40d71c"
+synced_at: "2026-09-09T18:22:14.214454"
 ---
 
 # OH_AudioDataArray
 
 ```
-typedef struct {...} OH_AudioDataArray
+typedef struct OH_AudioDataArray {...} OH_AudioDataArray
 ```
 
 #### 概述

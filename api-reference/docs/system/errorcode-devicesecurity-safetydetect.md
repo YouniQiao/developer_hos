@@ -2,32 +2,13 @@
 title: "SafetyDetect（安全检测）"
 upstream_id: "harmonyos-references/errorcode-devicesecurity-safetydetect"
 catalog: "harmonyos-references"
-content_hash: "bec6c920c725"
-synced_at: "2026-07-28T16:50:26.553965"
+content_hash: "4fef1f403a75"
+synced_at: "2026-09-09T18:21:26.238520"
 ---
 
 # SafetyDetect（安全检测）
 
 ![](./img/note_3.0-zh-cn.png) 以下仅介绍本模块特有错误码，通用错误码请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
-
-#### 201 权限校验失败
-
-错误信息
-
-Permission denied.
-
-错误描述
-
-权限校验失败。
-
-可能原因
-
-应用hap未开通Device Security服务。
-
-处理步骤
-
-1. 请参见[开通Device Security服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-deviceverify-activateservice)在AppGallery Connect开通“安全检测服务”。
-2. 重新[申请Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-profile-0000002270709473)，将新申请到的Profile作为工程的签名文件后重试。
 
 #### 1010800001 内部异常
 

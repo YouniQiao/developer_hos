@@ -2,8 +2,8 @@
 title: "防火墙错误码"
 upstream_id: "harmonyos-references/errorcode-net-netfirewall"
 catalog: "harmonyos-references"
-content_hash: "0847777c7ff0"
-synced_at: "2026-07-09T00:59:31.590337"
+content_hash: "ee7b7e6dcfae"
+synced_at: "2026-09-09T18:21:41.551907"
 ---
 
 # 防火墙错误码
@@ -26,7 +26,7 @@ The specified user does not exist.
 
 处理步骤
 
-检查系统是否创建该用户ID。
+检查系统是否创建该用户userid。
 
 #### 29400001 防火墙规则数量超过最大值
 
@@ -96,13 +96,13 @@ domain类型的防火墙规则中，域名规则数量超过最大值。
 
 可能原因
 
-1.添加/更新的一条domain规则里的域名参数NetFirewallDomainParams的个数大于100个。
+1.添加/更新的一条域名规则里的域名参数NetFirewallDomainParams的个数大于100个。
 
-2.单个用户userid的所有domain规则里的域名参数NetFirewallDomainParams的个数大于1000个。
+2.单个用户userid的所有域名规则里的域名参数NetFirewallDomainParams的个数大于1000个。
 
 处理步骤
 
-检查添加的一条domain规则里的域名参数NetFirewallDomainParams的个数是否大于100个。
+检查添加的一条域名规则里的域名参数NetFirewallDomainParams的个数是否大于100个，同时检查当前用户所有域名规则的域名参数NetFirewallDomainParams总个数是否大于1000个。
 
 #### 29400005 模糊域名规则数量超过最大值
 

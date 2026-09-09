@@ -2,8 +2,8 @@
 title: "Interfaces (其他)"
 upstream_id: "harmonyos-references/arkts-apis-drm-i"
 catalog: "harmonyos-references"
-content_hash: "7cbeefc1dd4f"
-synced_at: "2026-08-29T18:17:33.195291"
+content_hash: "8f11a0dc7daa"
+synced_at: "2026-09-09T18:22:26.283466"
 ---
 
 # Interfaces (其他)
@@ -14,7 +14,7 @@ synced_at: "2026-08-29T18:17:33.195291"
 
 设备证书请求。
 
-元服务API： 从API版本14开始，该接口支持在元服务中使用。
+元服务API： 从API version 14开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -27,7 +27,7 @@ synced_at: "2026-08-29T18:17:33.195291"
 
 设备证书请求的可选数据。
 
-元服务API： 从API版本12开始，该接口支持在元服务中使用。
+元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -40,7 +40,7 @@ synced_at: "2026-08-29T18:17:33.195291"
 
 媒体密钥请求参数。
 
-元服务API： 从API版本12开始，该接口支持在元服务中使用。
+元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -54,7 +54,7 @@ synced_at: "2026-08-29T18:17:33.195291"
 
 事件信息。
 
-元服务API： 从API版本12开始，该接口支持在元服务中使用。
+元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -67,7 +67,7 @@ synced_at: "2026-08-29T18:17:33.195291"
 
 度量记录。
 
-元服务API： 从API版本14开始，该接口支持在元服务中使用。
+元服务API： 从API version 14开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -80,7 +80,7 @@ synced_at: "2026-08-29T18:17:33.195291"
 
 媒体密钥状态。
 
-元服务API： 从API版本12开始，该接口支持在元服务中使用。
+元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -93,7 +93,7 @@ synced_at: "2026-08-29T18:17:33.195291"
 
 媒体密钥中密钥信息。
 
-元服务API： 从API版本12开始，该接口支持在元服务中使用。
+元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -106,7 +106,7 @@ synced_at: "2026-08-29T18:17:33.195291"
 
 加密媒体内容的DRM信息。
 
-元服务API： 从API版本12开始，该接口支持在元服务中使用。
+元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 
@@ -119,7 +119,7 @@ synced_at: "2026-08-29T18:17:33.195291"
 
 插件信息。
 
-元服务API： 从API版本14开始，该接口支持在元服务中使用。
+元服务API： 从API version 14开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Multimedia.Drm.Core
 

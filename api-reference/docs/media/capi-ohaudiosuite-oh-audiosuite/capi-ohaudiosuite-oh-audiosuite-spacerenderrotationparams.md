@@ -2,14 +2,14 @@
 title: "OH_AudioSuite_SpaceRenderRotationParams"
 upstream_id: "harmonyos-references/capi-ohaudiosuite-oh-audiosuite-spacerenderrotationparams"
 catalog: "harmonyos-references"
-content_hash: "77d1b7247146"
-synced_at: "2026-08-29T18:17:22.748937"
+content_hash: "d8d77b9b5278"
+synced_at: "2026-09-09T18:22:14.569295"
 ---
 
 # OH_AudioSuite_SpaceRenderRotationParams
 
 ```
-typedef struct {...} OH_AudioSuite_SpaceRenderRotationParams
+typedef struct OH_AudioSuite_SpaceRenderRotationParams {...} OH_AudioSuite_SpaceRenderRotationParams
 ```
 
 #### 概述

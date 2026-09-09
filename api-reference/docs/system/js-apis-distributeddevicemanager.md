@@ -2,8 +2,8 @@
 title: "@ohos.distributedDeviceManager (设备管理)"
 upstream_id: "harmonyos-references/js-apis-distributeddevicemanager"
 catalog: "harmonyos-references"
-content_hash: "4178aa51e9e1"
-synced_at: "2026-08-29T18:16:40.044682"
+content_hash: "0954504ac0b1"
+synced_at: "2026-09-09T18:21:35.161944"
 ---
 
 # @ohos.distributedDeviceManager (设备管理)
@@ -1235,7 +1235,7 @@ try {
 
 #### [h2]on('serviceDie')
 
-on(type: 'serviceDie', callback?: Callback<{}>): void
+on(type: 'serviceDie', callback: Callback<{}>): void
 
 注册设备管理服务死亡回调，以便在服务死亡时通知应用。使用callback异步回调。
 
@@ -1250,7 +1250,7 @@ on(type: 'serviceDie', callback?: Callback<{}>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | string | 是 | 注册设备管理服务死亡回调，以便在DeviceManager服务异常终止时通知应用，固定为serviceDie。 |
-| callback | Callback | 否 | 注册serviceDie的回调方法，当设备管理服务异常终止时触发该回调通知应用。如果不传入callback参数，则不会注册回调。 |
+| callback | Callback | 是 | 注册serviceDie的回调方法，当设备管理服务异常终止时触发该回调通知应用。 |
 
 错误码：
 

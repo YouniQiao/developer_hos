@@ -2,14 +2,14 @@
 title: "OH_AudioSuite_SpaceRenderExtensionParams"
 upstream_id: "harmonyos-references/capi-ohaudiosuite-oh-audiosuite-spacerenderextensionparams"
 catalog: "harmonyos-references"
-content_hash: "458915338711"
-synced_at: "2026-08-29T18:17:22.655194"
+content_hash: "23832deb4d18"
+synced_at: "2026-09-09T18:22:14.557511"
 ---
 
 # OH_AudioSuite_SpaceRenderExtensionParams
 
 ```
-struct OH_AudioSuite_SpaceRenderExtensionParams {...}
+struct OH_AudioSuite_SpaceRenderExtensionParams {...} OH_AudioSuite_SpaceRenderExtensionParams
 ```
 
 #### 概述

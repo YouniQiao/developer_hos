@@ -2,8 +2,8 @@
 title: "网络安全校验错误码"
 upstream_id: "harmonyos-references/errorcode-net-networksecurity"
 catalog: "harmonyos-references"
-content_hash: "56cbc5517581"
-synced_at: "2026-07-28T16:50:48.576837"
+content_hash: "599a521047e1"
+synced_at: "2026-09-09T18:21:41.532376"
 ---
 
 # 网络安全校验错误码
@@ -54,7 +54,7 @@ Unable to get certificate revocation list (CRL).
 
 错误描述
 
-无法获取证书注销列表（CRL）。
+无法获取证书吊销列表（CRL）。
 
 可能原因
 
@@ -62,7 +62,7 @@ Unable to get certificate revocation list (CRL).
 
 处理步骤
 
-检查网络、确认CRL URI正确、更新CRL文件或使用在线证书状态协议 (OCSP) 进行证书状态检查。
+检查网络、确认CRL URI正确、更新CRL文件或使用在线证书状态协议（OCSP）进行证书状态检查。
 
 #### 2305004 无法解密证书签名
 
@@ -98,7 +98,7 @@ CRL的加密算法不被客户端支持，或者用于加密CRL签名的密钥�
 
 处理步骤
 
-检查并确保客户端有正确的私钥，且私钥与CRL的公钥匹配，且私钥格式正确。
+检查并确保客户端有正确的证书颁发机构（CA）公钥，且该公钥与签发该CRL的CA相匹配，且公钥格式正确。
 
 #### 2305006 无法解码颁发者公钥
 
@@ -108,7 +108,7 @@ Unable to decode issuer public key.
 
 错误描述
 
-无法解码发行公钥。
+无法解码颁发者公钥。
 
 可能原因
 
@@ -153,7 +153,7 @@ CRL的签名计算错误，或者CRL使用的数字签名算法不被客户端�
 
 处理步骤
 
-检查CRL的签名算法、检查CRL的签名密钥、重新生成CRL、更新CRL。
+检查CRL的签名算法、检查CRL的签名密钥与公钥是否匹配、重新生成CRL、更新CRL。
 
 #### 2305009 证书尚未生效
 
@@ -208,7 +208,7 @@ CRL的开始日期在当前日期之后。
 处理步骤
 
 1. 检查并确保CRL的有效时间在开始日期和结束日期之间。
-2. 重新生成或更新CRL。
+2. 重新生成或更新CRL，或使用在线证书状态协议 (OCSP) 进行证书状态检查。
 
 #### 2305012 CRL已过期
 

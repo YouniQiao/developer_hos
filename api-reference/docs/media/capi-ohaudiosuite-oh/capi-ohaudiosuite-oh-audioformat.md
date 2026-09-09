@@ -2,14 +2,14 @@
 title: "OH_AudioFormat"
 upstream_id: "harmonyos-references/capi-ohaudiosuite-oh-audioformat"
 catalog: "harmonyos-references"
-content_hash: "e438b078d671"
-synced_at: "2026-07-28T16:51:30.768089"
+content_hash: "a91f41214eb6"
+synced_at: "2026-09-09T18:22:14.123910"
 ---
 
 # OH_AudioFormat
 
 ```
-typedef struct {...} OH_AudioFormat
+typedef struct OH_AudioFormat {...} OH_AudioFormat
 ```
 
 #### 概述

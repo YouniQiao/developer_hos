@@ -2,8 +2,8 @@
 title: "Netstack"
 upstream_id: "harmonyos-references/capi-netstack"
 catalog: "harmonyos-references"
-content_hash: "6179014e431a"
-synced_at: "2026-08-29T18:16:43.922222"
+content_hash: "a8a12d7ae995"
+synced_at: "2026-09-09T18:21:37.611677"
 ---
 
 # Netstack
@@ -11,6 +11,8 @@ synced_at: "2026-08-29T18:16:43.922222"
 #### 概述
 
 提供网络相关模块的C接口，包括SSL/TLS证书链校验、WebSocket客户端、HTTP请求和HTTP全局拦截器等功能。
+
+调用范式：以HTTP请求为例，典型调用流程为：创建请求实例→设置请求参数→发起请求→获取响应→销毁实例；WebSocket客户端需按创建实例→连接服务器→收发数据→关闭连接的顺序调用；SSL/TLS证书链校验需在发起网络请求前先加载并校验证书链；HTTP全局拦截器需先注册后使用，并在不再需要时注销。
 
 起始版本： 11
 

@@ -2,8 +2,8 @@
 title: "@ohos.arkui.uiMaterial (系统材质)"
 upstream_id: "harmonyos-references/arkts-apis-uimaterial"
 catalog: "harmonyos-references"
-content_hash: "4f76cafc5a30"
-synced_at: "2026-09-04T18:09:39.305600"
+content_hash: "f5e041963b55"
+synced_at: "2026-09-09T18:20:16.487303"
 ---
 
 # @ohos.arkui.uiMaterial (系统材质)
@@ -27,7 +27,7 @@ import { uiMaterial } from '@kit.ArkUI';
 组件上设置ImmersiveMaterial时，
 
 - 弹窗类组件（AlertDialog、ActionSheet、CustomDialog、CalendarPickerDialog、DatePickerDialog、TimePickerDialog、TextPickerDialog、SelectionMenu、AlphabetIndexer弹窗、Text设置copyOption后长按或双击触发的文本菜单）和弹窗类接口（PromptAction、ArkUI_NativeDialog、@ohos.promptAction (弹窗)、Popup控制、Tips控制、菜单控制、半模态转场）以及按钮与选择类组件（Slider、Toggle、Select）可在页面内全部区域生效。
-- 其他组件仅在Navigation/NavDestination标题栏或横向Tab中barPosition为BarPosition.End的底部TabBar中生效，在其他区域中设置不生效。
+- 其他组件仅在Navigation/NavDestination标题栏或横向Tab中barPosition为BarPosition.End的底部TabBar中生效。在其他区域中设置沉浸光感效果不生效。
 
 沉浸式材质根据设备是否支持沉浸式材质和设备算力有分档表现，可通过[isImmersiveMaterialSupported](#uimaterialisimmersivematerialsupported)判断设备是否支持沉浸式材质，通过[getGlobalMaterialLevel](#uimaterialgetglobalmateriallevel)获取设备的材质等级。在不支持沉浸式材质的设备上可设置沉浸式材质但无效果。在支持沉浸式材质的高算力和中算力设备上，通过材质层滤镜属性[materialFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-filter-effect#materialfilter23)和阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)属性实现材质效果，当[systemMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemmaterial)属性生效后，已设置的背景色属性[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)会被恢复为透明色，已设置的边框宽度[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)属性会被恢复为无边框效果。在支持沉浸式材质的低算力设备上，通过背景色[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、边框颜色[borderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#bordercolor)、边框宽度[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)、阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)属性实现材质效果。同一材质的效果，会受到系统设置应用中沉浸光感配置项的影响，不同强弱程度的沉浸光感配置下，材质的参数和效果存在差异。
 
@@ -118,7 +118,7 @@ static get empty(): Material
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
 | DEFAULT | 0 | 默认模式。[弹出框Dialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-base-dialog-overview)、[即时反馈（Toast）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-toast)、[AlphabetIndexer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-alphabet-indexer)在组件本身未设置背景颜色、模糊参数和阴影参数时默认开启沉浸式系统材质；[Text](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text)设置[copyOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#copyoption9)后长按或双击触发的文本菜单默认开启沉浸式系统材质；其他组件由应用主动设置。 |
-| ENABLE | 1 | 使能模式。此模式下，[弹出框Dialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-base-dialog-overview)、[即时反馈（Toast）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-toast)、[AlphabetIndexer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-alphabet-indexer)、[ChipGroup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-chipgroup)、[Chip](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-chip)、[Select](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-select)、[菜单控制](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu)、[Toggle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toggle)、[SegmentButton](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-segmentbutton)、[SegmentButtonV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-segmentbuttonv2)、[Slider](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-slider)、[SelectionMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-selectionmenu)默认开启沉浸式系统材质；[Text](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text)设置[copyOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#copyoption9)后长按或双击触发的文本菜单默认开启沉浸式系统材质；[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)/[NavDestination](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navdestination)标题栏默认开启沉浸式系统材质；[Tabs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabs)设置[barFloatingStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabs#barfloatingstyle)并生效悬浮样式，页签栏Tabbar默认开启沉浸式系统材质。其他组件需开发者主动设置。此模式下，沉浸式系统材质样式生效的优先级高于组件本身设置的背景色、模糊、阴影和边框样式。 |
+| ENABLE | 1 | 使能模式。[弹出框Dialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-base-dialog-overview)、[即时反馈（Toast）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-toast)、[AlphabetIndexer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-alphabet-indexer)、[ChipGroup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-chipgroup)、[Chip](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-chip)、[Select](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-select)、[菜单控制](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu)、[Toggle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toggle)、[SegmentButton](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-segmentbutton)、[SegmentButtonV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-segmentbuttonv2)、[Slider](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-slider)、[SelectionMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-selectionmenu)、[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)、[NavDestination](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navdestination)组件默认开启沉浸式系统材质；[Text](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text)设置[copyOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#copyoption9)后长按或双击触发的文本菜单默认开启沉浸式系统材质；[Tabs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabs)设置[barFloatingStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabs#barfloatingstyle)并生效悬浮样式，页签栏Tabbar默认开启沉浸式系统材质。此模式下，沉浸式系统材质样式生效的优先级高于组件本身设置的背景色、模糊、阴影和边框样式。其他组件需开发者主动设置。 |
 | DISABLE | 2 | 禁用模式。所有组件禁止开启沉浸式系统材质，即使主动为组件设置沉浸式系统材质参数也不会生效。 |
 
 #### MaterialInfo
@@ -403,67 +403,67 @@ struct SystemMaterialPage {
 
 ULTRA_THIN样式：
 
-![](./img/zh-cn_image_0000002742004727.jpg)
+![](./img/zh-cn_image_0000002717612390.jpg)
 
 THIN样式：
 
-![](./img/zh-cn_image_0000002712405738.jpg)
+![](./img/zh-cn_image_0000002747292343.jpg)
 
 REGULAR样式：
 
-![](./img/zh-cn_image_0000002742124687.jpg)
+![](./img/zh-cn_image_0000002747212259.jpg)
 
 THICK样式：
 
-![](./img/zh-cn_image_0000002712245780.jpg)
+![](./img/zh-cn_image_0000002717772324.jpg)
 
 ULTRA_THICK样式：
 
-![](./img/zh-cn_image_0000002742004729.jpg)
+![](./img/zh-cn_image_0000002717612392.jpg)
 
 在支持沉浸式材质的中算力设备上表现：
 
 ULTRA_THIN样式：
 
-![](./img/zh-cn_image_0000002712405740.jpg)
+![](./img/zh-cn_image_0000002747292345.jpg)
 
 THIN样式：
 
-![](./img/zh-cn_image_0000002742124689.jpg)
+![](./img/zh-cn_image_0000002747212261.jpg)
 
 REGULAR样式：
 
-![](./img/zh-cn_image_0000002712245782.jpg)
+![](./img/zh-cn_image_0000002717772326.jpg)
 
 THICK样式：
 
-![](./img/zh-cn_image_0000002742004731.jpg)
+![](./img/zh-cn_image_0000002717612394.jpg)
 
 ULTRA_THICK样式：
 
-![](./img/zh-cn_image_0000002712405742.jpg)
+![](./img/zh-cn_image_0000002747292347.jpg)
 
 在支持沉浸式材质的高算力设备上表现：
 
 ULTRA_THIN样式：
 
-![](./img/zh-cn_image_0000002742124691.jpg)
+![](./img/zh-cn_image_0000002747212263.jpg)
 
 THIN样式：
 
-![](./img/zh-cn_image_0000002712245784.jpg)
+![](./img/zh-cn_image_0000002717772328.jpg)
 
 REGULAR样式：
 
-![](./img/zh-cn_image_0000002742004733.jpg)
+![](./img/zh-cn_image_0000002717612396.jpg)
 
 THICK样式：
 
-![](./img/zh-cn_image_0000002712405744.jpg)
+![](./img/zh-cn_image_0000002747292349.jpg)
 
 ULTRA_THICK样式：
 
-![](./img/zh-cn_image_0000002742124693.jpg)
+![](./img/zh-cn_image_0000002747212265.jpg)
 
 #### [h2]示例2（获取材质配置信息并使用空材质关闭沉浸式系统材质）
 
@@ -535,15 +535,15 @@ struct MaterialInfoPage {
 ```
  在支持沉浸式材质的高算力设备上表现：
 
-![](./img/zh-cn_image_0000002712245786.jpg)
+![](./img/zh-cn_image_0000002717772330.jpg)
 
 在支持沉浸式材质的中算力设备上表现：
 
-![](./img/zh-cn_image_0000002742004735.jpg)
+![](./img/zh-cn_image_0000002717612398.jpg)
 
 在支持沉浸式材质的低算力设备上表现：
 
-![](./img/zh-cn_image_0000002712405746.jpg)
+![](./img/zh-cn_image_0000002747292351.jpg)
 
 #### [h2]示例3（设置组件材质的交互形变效果）
 
@@ -588,15 +588,15 @@ struct Index {
 ```
  在支持沉浸式材质的高算力设备上表现：
 
-![](./img/zh-cn_image_0000002742124695.gif)
+![](./img/zh-cn_image_0000002747212267.gif)
 
 在支持沉浸式材质的中算力设备上表现：
 
-![](./img/zh-cn_image_0000002712245788.gif)
+![](./img/zh-cn_image_0000002717772332.gif)
 
 在支持沉浸式材质的低算力设备上表现：
 
-![](./img/zh-cn_image_0000002742004737.gif)
+![](./img/zh-cn_image_0000002717612400.gif)
 
 #### [h2]示例4（设置组件材质的光感交互反馈效果）
 
@@ -671,15 +671,15 @@ struct NavigationTitleMaterialDemo {
 ```
  在支持沉浸式材质的高算力设备上表现：
 
-![](./img/zh-cn_image_0000002712405748.gif)
+![](./img/zh-cn_image_0000002747292353.gif)
 
 在支持沉浸式材质的中算力设备上表现：
 
-![](./img/zh-cn_image_0000002742124697.gif)
+![](./img/zh-cn_image_0000002747212269.gif)
 
 在支持沉浸式材质的低算力设备上表现：
 
-![](./img/zh-cn_image_0000002712245790.gif)
+![](./img/zh-cn_image_0000002717772334.gif)
 
 #### [h2]示例5（查询材质等级与是否支持沉浸式材质）
 
@@ -779,16 +779,16 @@ struct NavigationTitleMaterialDemo {
 ```
  在支持沉浸式材质的高算力设备上表现：
 
-![](./img/zh-cn_image_0000002742004739.jpg)
+![](./img/zh-cn_image_0000002717612402.jpg)
 
 在支持沉浸式材质的中算力设备上表现：
 
-![](./img/zh-cn_image_0000002712405750.jpg)
+![](./img/zh-cn_image_0000002747292355.jpg)
 
 在支持沉浸式材质的低算力设备上表现：
 
-![](./img/zh-cn_image_0000002742124699.jpg)
+![](./img/zh-cn_image_0000002747212271.jpg)
 
 在不支持沉浸式材质的设备上表现：
 
-![](./img/zh-cn_image_0000002712245792.jpg)
+![](./img/zh-cn_image_0000002717772336.jpg)
