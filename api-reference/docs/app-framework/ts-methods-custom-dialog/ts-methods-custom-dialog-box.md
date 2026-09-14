@@ -2,8 +2,8 @@
 title: "自定义弹窗 (CustomDialog)"
 upstream_id: "harmonyos-references/ts-methods-custom-dialog-box"
 catalog: "harmonyos-references"
-content_hash: "d85bdf5a5a15"
-synced_at: "2026-09-01T18:13:01.472757"
+content_hash: "c81fffaf1795"
+synced_at: "2026-09-14T19:46:12.652301"
 ---
 
 # 自定义弹窗 (CustomDialog)
@@ -330,7 +330,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706676272.gif)
+ ![](./img/zh-cn_image_0000002723857272.gif)
 
 #### [h2]示例2（可在主窗外弹出的弹窗）
 
@@ -422,7 +422,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736435359.jpg)
+ ![](./img/zh-cn_image_0000002723697354.jpg)
 
 #### [h2]示例3（设置弹窗的样式）
 
@@ -513,7 +513,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706836208.gif)
+ ![](./img/zh-cn_image_0000002753297121.gif)
 
 #### [h2]示例4（悬停态弹窗）
 
@@ -606,7 +606,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736315313.gif)
+ ![](./img/zh-cn_image_0000002753457039.gif)
 
 #### [h2]示例5（获取弹窗的状态）
 
@@ -770,7 +770,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706676274.gif)
+ ![](./img/zh-cn_image_0000002723857274.gif)
 
 #### [h2]示例7（自定义带loading的弹窗）
 
@@ -874,7 +874,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736435361.gif)
+ ![](./img/zh-cn_image_0000002723697356.gif)
 
 #### [h2]示例8（不使用keyboardAvoidDistance调整弹窗与软键盘的间距）
 
@@ -1014,7 +1014,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706836210.gif)
+ ![](./img/zh-cn_image_0000002753297123.gif)
 
 #### [h2]示例9（弹窗生命周期）
 
@@ -1110,7 +1110,7 @@ struct Example3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736315315.gif)
+ ![](./img/zh-cn_image_0000002753457041.gif)
 
 #### [h2]示例10（不同customStyle下的弹窗示例）
 
@@ -1195,7 +1195,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706676276.gif)
+ ![](./img/zh-cn_image_0000002723857276.gif)
 
 #### [h2]示例11（自定义背景模糊效果参数）
 
@@ -1256,7 +1256,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736435363.png)
+ ![](./img/zh-cn_image_0000002723697358.png)
 
 #### [h2]示例12（自定义背景效果参数）
 
@@ -1318,7 +1318,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706836212.png)
+ ![](./img/zh-cn_image_0000002753297125.png)
 
 #### [h2]示例13（自定义弹窗动态刷新宽度）
 
@@ -1384,13 +1384,13 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736315317.gif)
+ ![](./img/zh-cn_image_0000002753457043.gif)
 
 #### [h2]示例14（设置弹窗的沉浸光感效果）
 
-该示例通过[systemMaterial](#customdialogcontrolleroptions对象说明)设置组件的系统材质，实现沉浸光感效果。
+该示例通过[systemMaterial](#customdialogcontrolleroptions对象说明)设置组件的系统材质，实现沉浸光感效果。设置系统材质后，CustomDialog弹出过程中会有非线性形变和边缘流光。
 
-组件沉浸光感效果会根据设备算力与用户在系统中设置的沉浸光感效果自适应调整，开发者无需额外适配。
+该示例配图为高算力设备强档效果，组件沉浸光感效果会根据设备算力与用户在系统中设置的沉浸光感效果自适应调整，开发者无需额外适配。
 
 从API版本26.0.0开始，在[CustomDialogControllerOptions](#customdialogcontrolleroptions对象说明)中新增了systemMaterial属性。
 
@@ -1447,8 +1447,8 @@ struct CustomDialogUser {
 ```
  未设置系统材质时：
 
-![](./img/zh-cn_image_0000002706676278.gif)
+![](./img/zh-cn_image_0000002723857278.gif)
 
 设置系统材质后：
 
-![](./img/zh-cn_image_0000002736435365.gif)
+![](./img/zh-cn_image_0000002723697360.gif)

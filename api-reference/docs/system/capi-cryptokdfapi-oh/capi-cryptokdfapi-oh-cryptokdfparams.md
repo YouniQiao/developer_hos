@@ -2,8 +2,8 @@
 title: "OH_CryptoKdfParams"
 upstream_id: "harmonyos-references/capi-cryptokdfapi-oh-cryptokdfparams"
 catalog: "harmonyos-references"
-content_hash: "bd415bd2dca5"
-synced_at: "2026-07-09T00:59:13.512913"
+content_hash: "9f6073393838"
+synced_at: "2026-09-14T19:47:31.533813"
 ---
 
 # OH_CryptoKdfParams
@@ -14,7 +14,7 @@ typedef struct OH_CryptoKdfParams OH_CryptoKdfParams
 
 #### 概述
 
-定义密钥派生函数(KDF)参数结构。
+KDF参数结构体，表示KDF参数。
 
 起始版本： 20
 

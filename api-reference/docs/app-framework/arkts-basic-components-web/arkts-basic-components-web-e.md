@@ -2,8 +2,8 @@
 title: "Enums"
 upstream_id: "harmonyos-references/arkts-basic-components-web-e"
 catalog: "harmonyos-references"
-content_hash: "41ee4883cf24"
-synced_at: "2026-08-29T18:16:01.877165"
+content_hash: "266160c4b5d6"
+synced_at: "2026-09-14T19:47:15.679129"
 ---
 
 # Enums
@@ -363,7 +363,7 @@ ProtectedResourceType枚举定义了Web组件需要访问的受保护资源类�
 | RESIZE_VISUAL | 0 | 软键盘避让时，仅调整可视视口大小，不调整布局视口大小。 |
 | RESIZE_CONTENT | 1 | 默认值，软键盘避让时，同时调整可视视口和布局视口的大小。 |
 | OVERLAYS_CONTENT | 2 | 不调整任何视口大小，不会触发软键盘避让。 |
-| RETURN_TO_UICONTEXT22+ | 3 | Web组件的软键盘避让行为将跟随UIcontext设置的[KeyboardAvoidMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-e#keyboardavoidmode11)模式，Web组件不再处理组件的避让。 |
+| RETURN_TO_UICONTEXT22+ | 3 | Web组件的软键盘避让行为将跟随UIContext设置的[KeyboardAvoidMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-e#keyboardavoidmode11)模式，Web组件不再处理组件的避让。 |
 
 #### WebElementType13+
 

@@ -2,8 +2,8 @@
 title: "OH_AVTranscoder_Config"
 upstream_id: "harmonyos-references/capi-avtranscoder-oh-avtranscoder-config"
 catalog: "harmonyos-references"
-content_hash: "cc833a837be9"
-synced_at: "2026-08-29T18:17:44.151114"
+content_hash: "bc6eb5da3a15"
+synced_at: "2026-09-14T19:48:44.992949"
 ---
 
 # OH_AVTranscoder_Config
@@ -14,7 +14,7 @@ typedef struct OH_AVTranscoder_Config OH_AVTranscoder_Config
 
 #### 概述
 
-初始化AVTranscoder_Config。
+配置AVTranscoder参数的结构体。
 
 起始版本： 20
 

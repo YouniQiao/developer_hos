@@ -2,8 +2,8 @@
 title: "@ohos.data.distributedDataObject (分布式数据对象)"
 upstream_id: "harmonyos-references/js-apis-data-distributedobject"
 catalog: "harmonyos-references"
-content_hash: "c29146559787"
-synced_at: "2026-08-29T18:12:12.109004"
+content_hash: "f6658ac77204"
+synced_at: "2026-09-14T19:45:08.110831"
 ---
 
 # @ohos.data.distributedDataObject (分布式数据对象)
@@ -186,7 +186,7 @@ type StatusObserver = (sessionId: string, networkId: string, status: string) => 
 | --- | --- | --- | --- |
 | sessionId | string | 是 | 标识变更对象的sessionId。长度不大于128字节，且只能包含字母、数字或下划线_。 |
 | networkId | string | 是 | 对端设备的网络标识。要求字符串非空且长度不超过255字节。 |
-| status | string | 是 | 标识分布式数据对象的状态，可能的取值有'online'（上线）、'offline'（下线）和'restore'（恢复）。 |
+| status | string | 是 | 标识分布式数据对象的状态，可能的取值有'online'（上线）、'offline'（下线）和'restored'（恢复）。 |
 
 #### ProgressObserver20+
 

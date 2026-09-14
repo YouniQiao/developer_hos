@@ -2,8 +2,8 @@
 title: "OH_CryptoKdf"
 upstream_id: "harmonyos-references/capi-cryptokdfapi-oh-cryptokdf"
 catalog: "harmonyos-references"
-content_hash: "497ad0b773ea"
-synced_at: "2026-07-09T00:59:13.495110"
+content_hash: "1b4463272fcb"
+synced_at: "2026-09-14T19:47:31.377731"
 ---
 
 # OH_CryptoKdf
@@ -14,7 +14,7 @@ typedef struct OH_CryptoKdf OH_CryptoKdf
 
 #### 概述
 
-定义密钥派生函数(KDF)结构。
+KDF结构体，表示KDF上下文。
 
 起始版本： 20
 

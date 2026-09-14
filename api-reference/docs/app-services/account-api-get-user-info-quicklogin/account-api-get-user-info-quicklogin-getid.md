@@ -2,8 +2,8 @@
 title: "一键登录获取华为账号绑定号码和UnionID/OpenID（不推荐）"
 upstream_id: "harmonyos-references/account-api-get-user-info-quicklogin-getid"
 catalog: "harmonyos-references"
-content_hash: "f70fdfa2bf00"
-synced_at: "2026-07-09T17:27:59.359277"
+content_hash: "c89ee6523fab"
+synced_at: "2026-09-14T19:49:07.823622"
 ---
 
 # 一键登录获取华为账号绑定号码和UnionID/OpenID（不推荐）
@@ -79,8 +79,8 @@ access_token=<Access Token>
 | --- | --- | --- | --- |
 | openID | 是 | String | 用户OpenID。具体格式要求请参考[OpenID和UnionID的格式说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-9)。 |
 | unionID | 是 | String | 用户UnionID。具体格式要求请参考[OpenID和UnionID的格式说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-9)。 |
-| loginMobileNumber | 否 | String | 华为账号绑定号码，使用该手机号完成一键登录的功能，详见[华为账号一键登录（获取手机号和UnionID/OpenID）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-phone-unionid-login)。 以下场景loginMobileNumber不返回： - 用户未绑定手机号 - 应用未申请quickLoginMobilePhone的scope权限 - 获取Authorization Code时不携带quickLoginMobilePhone scope - 应用服务器部署在中国境外、香港特别行政区、澳门特别行政区或中国台湾 |
-| loginMobileValid | 否 | int | 通过一键登录功能获取的华为账号绑定号码的实时有效性。 当不返回 loginMobileNumber时，也不进行返回。 若发起一键登录时[LoginPanelParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#loginpanelparams)的verifyPhoneNumber参数值传递为true，表示华为代为验证手机号有效性，开发者无需关注此返回值； 若verifyPhoneNumber参数值传递为false, 需要根据返回的状态值进行处理。 0：在过去90天内，无法证明当前手机号码可以触达用户， 需要进行验证 1：在过去90天内，当前手机号码被证明可以触达用户，可以直接使用 |
+| loginMobileNumber | 否 | String | 华为账号绑定号码，使用该手机号完成一键登录的功能，详见[华为账号一键登录（获取手机号和UnionID/OpenID）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-phone-unionid-login)。 以下场景loginMobileNumber不返回： - 用户未绑定手机号。 - 应用未申请quickLoginMobilePhone的scope权限。 - 获取Authorization Code时不携带quickLoginMobilePhone scope。 - 应用服务器部署在中国境外、香港特别行政区、澳门特别行政区或中国台湾。 |
+| loginMobileValid | 否 | int | 通过一键登录功能获取的华为账号绑定号码的实时有效性。 当不返回 loginMobileNumber时，也不进行返回。 若发起一键登录时[LoginPanelParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#loginpanelparams)的verifyPhoneNumber参数值传递为true，表示华为代为验证手机号有效性，开发者无需关注此返回值； 若verifyPhoneNumber参数值传递为false, 需要根据返回的状态值进行处理。 0：在过去90天内，无法证明当前手机号码可以触达用户，需要进行验证。 1：在过去90天内，当前手机号码被证明可以触达用户，可以直接使用。 |
 | purePhoneNumber | 否 | String | 不带国家码的手机号，此处为loginMobileNumber去除国际冠码与国际电话区号的形式。 当不返回 loginMobileNumber时，也不进行返回。 |
 | phoneCountryCode | 否 | String | purePhoneNumber的国际冠码(00)+国际电话区号。 当不返回 loginMobileNumber时，也不进行返回。 |
 | warning | 否 | String | 应用服务器部署在中国境外、香港特别行政区、澳门特别行政区或中国台湾时， 不返回华为账号绑定的手机号码，而返回此字段进行提示说明。 |
@@ -110,7 +110,7 @@ Content-Type: application/json;charset=utf-8
     "unionID": "MDF9pBd6xxxxA8iaG4ZNPTw*****3fyXzG9WgUcmY8XibBvQ",
     // 华为账号绑定号码，使用该手机号完成一键登录的功能（返回数据实际为明文）
     "loginMobileNumber": "191******08",
-    // 通过一键登录功能获取的华为账号绑定号码的实时有效性， 0表示需要进一步验证有效性， 1表示可以直接使用
+    // 通过一键登录功能获取的华为账号绑定号码的实时有效性，0表示需要进一步验证有效性，1表示可以直接使用
     "loginMobileValid": 1,
     // 不带国际冠码与国际电话区号的手机号码（返回数据实际为明文）
     "purePhoneNumber": "191******08",
@@ -138,6 +138,7 @@ Content-Type: application/json;charset=utf-8
 
 {
     "openID": "MDFAMTAxMDA1MTg1QGFlMzM0OWIyOGY0*****MDRiaNTI5ODAxYTA3MDh*****A4ZTZmNTA2ZTE4ZT*****lmNGVmN2E1ZjY1OTg4NWRiaN2QxMzQy*****TU0YWQ3",
+    "unionID": "MDETDFsu1k*****KAATfuqNSH*****7AW3Afh*****iaWeQ",
     "warning": "xxx site doesn't support quick login, see the guide for details"
 }
 ```
@@ -212,7 +213,7 @@ public class GetMobileByQuickLoginDemo {
 
 | NSP_STATUS | 描述 | 解决方法 |
 | --- | --- | --- |
-| 6 | 会话失效，session timeout。 可能原因: - access_token无效或已过期 - access_token格式不正确 - 其他内部原因 | - 请检查传参是否正确，如无问题请尝试重新获取。 - 未对access_token进行URLEncode处理，可参考[示例代码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-user-info-get-nickname-and-avatar#示例代码)组装参数。 - 根据返回的错误描述进行处理，若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 6 | 会话失效或已超时（session timeout）。 可能原因: - access_token无效或已过期。 - access_token格式不正确。 - 其他内部原因。 | - 请检查传参是否正确，如无问题请尝试重新获取。 - 未对access_token进行URLEncode处理，可参考[示例代码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-user-info-get-nickname-and-avatar#示例代码)组装参数。 - 根据返回的错误描述进行处理，若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
 | 403 | 访问无权限。 | 请前往AppGallery Connect（简称AGC）为应用申请开放权限，详见[申请账号权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-config-permissions)。 |
 | 500 | 接口内部错误。 | 根据返回的错误描述进行处理，若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
 | 503 | 触发系统流控。 | 请稍后重试。 |

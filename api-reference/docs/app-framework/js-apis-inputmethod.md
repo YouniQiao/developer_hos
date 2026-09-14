@@ -2,8 +2,8 @@
 title: "@ohos.inputMethod (输入法框架)"
 upstream_id: "harmonyos-references/js-apis-inputmethod"
 catalog: "harmonyos-references"
-content_hash: "ea13686e41ef"
-synced_at: "2026-08-29T18:16:13.344056"
+content_hash: "95e13457d7b1"
+synced_at: "2026-09-14T19:47:23.997539"
 ---
 
 # @ohos.inputMethod (输入法框架)
@@ -937,7 +937,7 @@ Enter键的功能类型。
 | enterKeyType | [EnterKeyType](#enterkeytype10) | 否 | 否 | Enter键功能类型。 |
 | placeholder20+ | string | 否 | 是 | 编辑框设置的占位符信息。 - 编辑框设置占位符信息时，长度不超过255个字符（如果超出将会自动截断为255个字符），用于提示或引导用户输入临时性文本或符号。（例如：提示输入项为"必填"或"非必填"的输入结果反馈。） - 编辑框没有设置占位符信息时，默认为空字符串。 - 该字段在调用[attach](#attach10)时提供给输入法应用。 |
 | abilityName20+ | string | 否 | 是 | 编辑框设置的ability名称。 - 编辑框设置ability名称时，长度不超过127个字符（如果超出将会自动截断为127个字符）。 - 编辑框未设置ability名称时，默认为空字符串。 - 该字段在调用绑定[attach](#attach10)时提供给输入法应用。 |
-| consumeKeyEvents | boolean | 否 | 是 | 编辑框是否具有完整处理字母、字符、功能等按键的能力。默认值为false。 - 值为true，表示具备此能力。 - 值为false，表示不具备此能力。 - 该字段在调用[attach](#attach10) / [InputAttribute](#inputattribute10)时提供给输入法应用。 **起始版本：** 26.0.0 **模型约束：** 该参数仅可在Stage模型下使用。 |
+| consumeKeyEvents | boolean | 否 | 是 | 编辑框是否具有完整处理字母、字符、功能等按键的能力。默认值为false。 - 值为true，表示具备此能力。 - 值为false，表示不具备此能力。 - 该字段在调用[attach](#attach10) / [updateAttribute](#updateattribute10)时提供给输入法应用。 **起始版本：** 26.0.0 **模型约束：** 该参数仅可在Stage模型下使用。 |
 
 #### TextConfig10+
 

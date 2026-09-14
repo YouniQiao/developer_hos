@@ -2,8 +2,8 @@
 title: "@ohos.display (屏幕属性)"
 upstream_id: "harmonyos-references/js-apis-display"
 catalog: "harmonyos-references"
-content_hash: "085304157f45"
-synced_at: "2026-08-29T18:12:38.434391"
+content_hash: "de6137b2ad11"
+synced_at: "2026-09-14T19:45:24.213517"
 ---
 
 # @ohos.display (屏幕属性)
@@ -754,7 +754,7 @@ getFoldDisplayMode(): FoldDisplayMode
 
 系统能力： SystemCapability.Window.SessionManager
 
-设备行为差异： 该接口在支持多种显示模式的设备中可正常调用，在其他设备中返回FoldDisplayMode.FOLD_DISPLAY_MODE_UNKNOWN。
+设备行为差异： 该接口在支持多种显示模式（[getAllDisplayPhysicalResolution](#displaygetalldisplayphysicalresolution12)接口返回值中包含设备支持的所有显示模式）的设备中可正常调用，在其他设备中返回FoldDisplayMode.FOLD_DISPLAY_MODE_UNKNOWN。
 
 返回值：
 
@@ -1773,7 +1773,7 @@ promise.then((data: Array<display.Display>) => {
 | height | number | 是 | 否 | 显示设备的屏幕高度，单位为px，该参数为整数。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | densityDPI | number | 是 | 否 | 显示设备的物理像素密度，表示每英寸上的像素点数。该参数为浮点数，一般取值160.0、480.0等，实际能取到的值取决于不同设备设置里提供的可选值。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | orientation10+ | [Orientation](#orientation10) | 是 | 否 | 表示显示设备当前显示的方向。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| densityPixels | number | 是 | 否 | 显示设备逻辑像素的密度，代表物理像素与逻辑像素的缩放系数，计算方式为：![](./img/zh-cn_image_0000002701799362.jpg) 该参数为浮点数，受densityDPI范围限制，取值范围在[0.5, 4.0]。一般取值1.0、3.0等，实际取值取决于不同设备提供的densityDPI。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| densityPixels | number | 是 | 否 | 显示设备逻辑像素的密度，代表物理像素与逻辑像素的缩放系数，计算方式为：![](./img/zh-cn_image_0000002723856656.jpg) 该参数为浮点数，受densityDPI范围限制，取值范围在[0.5, 4.0]。一般取值1.0、3.0等，实际取值取决于不同设备提供的densityDPI。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | scaledDensity | number | 是 | 否 | 显示设备上的字体的缩放因子。该参数为浮点数，通常与densityPixels相同。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | xDPI | number | 是 | 否 | x轴方向中每英寸屏幕的确切物理像素值，该参数为浮点数。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | yDPI | number | 是 | 否 | y轴方向中每英寸屏幕的确切物理像素值，该参数为浮点数。 **系统能力：** SystemCapability.WindowManager.WindowManager.Core **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
@@ -2089,5 +2089,46 @@ try {
   console.info(`Succeeded in getting the live crease region. Data: ${JSON.stringify(data)}`);
 } catch (exception) {
   console.error(`Failed to get the live crease region. Code: ${exception.code}, message: ${exception.message}`);
+}
+```
+
+#### [h2]getDisplayCapability18+
+
+getDisplayCapability(): string
+
+获取当前设备屏幕的折叠状态、显示模式、旋转角度和显示方向信息。
+
+元服务API： 从API version 18开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.Window.SessionManager
+
+测试接口： 此接口仅在自动化测试脚本中使用。
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| string | JSON字符串，包含以下字段： - capability：设备支持的各折叠状态foldStatus（取值及含义可见[FoldStatus](#foldstatus10)）与显示模式foldDisplayMode（取值及含义可见[FoldDisplayMode](#folddisplaymode10)）组合，以及各组合下支持的旋转角度rotation（取值及含义可见[Display属性](#属性)中的rotation属性）和显示方向orientation（取值及含义可见[Orientation](#orientation10)）。 - foldScreenType：设备折叠产品类型。例如“6,1,0,0”，其中第一位参数表示：1：大折叠（内折），2：小折叠，3：大折叠（外折），4：阔折叠，5：折叠PC，6：双折轴设备；第二位参数表示存在几块物理屏幕；第三、四位参数暂未使用，返回默认值0。 - buildin_screen：设备是否存在内置屏幕。值为“0”时表示无内置屏幕，值为“1”时表示有内置屏幕。 - allCreaseRegion：各显示模式foldDisplayMode（取值及含义可见[FoldDisplayMode](#folddisplaymode10)）下不同显示方向displayOrientation（取值及含义可见[Orientation](#orientation10)）对应的折痕区域creaseRects（取值及含义可见[FoldCreaseRegion](#foldcreaseregion10)）。该字段仅在可折叠设备上返回。 |
+
+错误码：
+
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[屏幕错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-display)。
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 801 | Capability not supported. |
+| 1400001 | Invalid display or screen. |
+| 1400003 | This display manager service works abnormally. |
+
+示例：
+
+```
+let displayClass: display.Display | null = null;
+try {
+  displayClass = display.getDefaultDisplaySync();
+  let data: string = displayClass.getDisplayCapability();
+  console.info(`Succeeded in getting the display capability. Data: ${data}`);
+} catch (exception) {
+  console.error(`Failed to get the display capability. Code: ${exception.code}, message: ${exception.message}`);
 }
 ```

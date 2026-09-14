@@ -2,8 +2,8 @@
 title: "oh_input_manager.h"
 upstream_id: "harmonyos-references/capi-oh-input-manager-h"
 catalog: "harmonyos-references"
-content_hash: "43434760a479"
-synced_at: "2026-09-09T18:21:58.471324"
+content_hash: "171084e1ec5e"
+synced_at: "2026-09-14T19:48:05.953543"
 ---
 
 # oh_input_manager.h
@@ -31,7 +31,7 @@ synced_at: "2026-09-09T18:21:58.471324"
 | [Input_InterceptorEventCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-interceptoreventcallback) | Input_InterceptorEventCallback | 拦截回调事件结构体，拦截鼠标事件、触屏输入事件和轴事件。 |
 | [Input_DeviceListener](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-devicelistener) | Input_DeviceListener | 定义一个结构体用于监听设备热插拔。 |
 | [OH_PixelmapNative](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-oh-pixelmapnative) | OH_PixelmapNative | 像素图。 |
-| [Input_KeyState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-keystate) | Input_KeyState | 定义按键信息，用于标识按键行为。例如，“Ctrl”按键信息包含键值和键类型。 |
+| [Input_KeyState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-keystate) | Input_KeyState | 定义按键信息，用于标识按键行为。例如，“Ctrl”按键信息包含键值和键状态。 |
 | [Input_KeyEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-keyevent) | Input_KeyEvent | 按键事件对象。 |
 | [Input_MouseEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-mouseevent) | Input_MouseEvent | 鼠标事件对象。 |
 | [Input_TouchEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-touchevent) | Input_TouchEvent | 触屏输入事件对象。 |
@@ -71,9 +71,9 @@ synced_at: "2026-09-09T18:21:58.471324"
 | [typedef void (*Input_DeviceAddedCallback)(int32_t deviceId)](#input_deviceaddedcallback) | Input_DeviceAddedCallback | 回调函数，用于接收输入设备的热插事件。 |
 | [typedef void (*Input_DeviceRemovedCallback)(int32_t deviceId)](#input_deviceremovedcallback) | Input_DeviceRemovedCallback | 回调函数，用于接收输入设备的热拔事件。 |
 | [typedef void (*Input_InjectAuthorizeCallback)(Input_InjectionStatus authorizedStatus)](#input_injectauthorizecallback) | Input_InjectAuthorizeCallback | 回调函数，用于获取注入权限状态。 |
-| [Input_Result OH_Input_GetKeyState(struct Input_KeyState* keyState)](#oh_input_getkeystate) | - | 查询按键状态的枚举对象。 |
-| [struct Input_KeyState* OH_Input_CreateKeyState()](#oh_input_createkeystate) | - | 创建按键状态的枚举对象。通过调用[OH_Input_DestroyKeyState](#oh_input_destroykeystate)销毁按键状态的枚举对象。 |
-| [void OH_Input_DestroyKeyState(struct Input_KeyState** keyState)](#oh_input_destroykeystate) | - | 销毁按键状态的枚举对象。 |
+| [Input_Result OH_Input_GetKeyState(struct Input_KeyState* keyState)](#oh_input_getkeystate) | - | 查询按键状态的结构体对象。 |
+| [struct Input_KeyState* OH_Input_CreateKeyState()](#oh_input_createkeystate) | - | 创建按键状态的结构体对象。通过调用[OH_Input_DestroyKeyState](#oh_input_destroykeystate)销毁按键状态的结构体对象。 |
+| [void OH_Input_DestroyKeyState(struct Input_KeyState** keyState)](#oh_input_destroykeystate) | - | 销毁按键状态的结构体对象。 |
 | [void OH_Input_SetKeyCode(struct Input_KeyState* keyState, int32_t keyCode)](#oh_input_setkeycode) | - | 设置按键状态对象的键值。 |
 | [int32_t OH_Input_GetKeyCode(const struct Input_KeyState* keyState)](#oh_input_getkeycode) | - | 获取按键状态对象的键值。 |
 | [void OH_Input_SetKeyPressed(struct Input_KeyState* keyState, int32_t keyAction)](#oh_input_setkeypressed) | - | 设置按键状态对象的按键是否按下。 |
@@ -442,7 +442,7 @@ enum Input_Result
 | INPUT_INJECTION_AUTHORIZING = 3900005 | 正在授权中。 **起始版本：** 20 |
 | INPUT_INJECTION_OPERATION_FREQUENT = 3900006 | 重复请求。 **起始版本：** 20 |
 | INPUT_INJECTION_AUTHORIZED = 3900007 | 当前应用已经授权。 **起始版本：** 20 |
-| INPUT_INJECTION_AUTHORIZED_OTHERS = 3900008 | 其它应用已经授权。 **起始版本：** 20 |
+| INPUT_INJECTION_AUTHORIZED_OTHERS = 3900008 | 其他应用已经授权。 **起始版本：** 20 |
 | INPUT_APP_NOT_FOCUSED = 3900009 | 当前应用不是焦点应用。 **起始版本：** 20 |
 | INPUT_DEVICE_NO_POINTER = 3900010 | 无鼠标类输入外设。 **起始版本：** 20 |
 | INPUT_INVALID_WINDOWID = 26500001 | 无效的窗口ID。 **起始版本：** 22 |
@@ -614,7 +614,7 @@ Input_Result OH_Input_GetKeyState(struct Input_KeyState* keyState)
 ```
  描述
 
-查询按键状态的枚举对象。
+查询按键状态的结构体对象。
 
 系统能力： SystemCapability.MultimodalInput.Input.Core
 
@@ -624,7 +624,7 @@ Input_Result OH_Input_GetKeyState(struct Input_KeyState* keyState)
 
 | 参数项 | 描述 |
 | --- | --- |
-| struct [Input_KeyState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-keystate)* keyState | 按键状态的枚举对象，具体请参考[Input_KeyStateAction](#input_keystateaction)。 |
+| struct [Input_KeyState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-keystate)* keyState | 按键状态的结构体对象，具体请参考[Input_KeyStateAction](#input_keystateaction)。 |
 
 返回：
 
@@ -639,7 +639,7 @@ struct Input_KeyState* OH_Input_CreateKeyState()
 ```
  描述
 
-创建按键状态的枚举对象。通过调用[OH_Input_DestroyKeyState](#oh_input_destroykeystate)销毁按键状态的枚举对象。
+创建按键状态的结构体对象。通过调用[OH_Input_DestroyKeyState](#oh_input_destroykeystate)销毁按键状态的结构体对象。
 
 系统能力： SystemCapability.MultimodalInput.Input.Core
 
@@ -658,7 +658,7 @@ void OH_Input_DestroyKeyState(struct Input_KeyState** keyState)
 ```
  描述
 
-销毁按键状态的枚举对象。
+销毁按键状态的结构体对象。
 
 系统能力： SystemCapability.MultimodalInput.Input.Core
 
@@ -668,7 +668,7 @@ void OH_Input_DestroyKeyState(struct Input_KeyState** keyState)
 
 | 参数项 | 描述 |
 | --- | --- |
-| struct [Input_KeyState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-keystate)** keyState | 按键状态的枚举对象，具体请参考[Input_KeyStateAction](#input_keystateaction)。 |
+| struct [Input_KeyState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-keystate)** keyState | 按键状态的结构体对象，具体请参考[Input_KeyStateAction](#input_keystateaction)。 |
 
 #### [h2]OH_Input_SetKeyCode()
 
@@ -687,7 +687,7 @@ void OH_Input_SetKeyCode(struct Input_KeyState* keyState, int32_t keyCode)
 
 | 参数项 | 描述 |
 | --- | --- |
-| struct [Input_KeyState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-keystate)* keyState | 按键状态的枚举对象，具体请参考[Input_KeyStateAction](#input_keystateaction)。 |
+| struct [Input_KeyState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-keystate)* keyState | 按键状态的结构体对象，具体请参考[Input_KeyStateAction](#input_keystateaction)。 |
 | int32_t keyCode | 按键键值，具体请参考[Input_KeyCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-key-code-h#input_keycode)。 |
 
 #### [h2]OH_Input_GetKeyCode()
@@ -707,7 +707,7 @@ int32_t OH_Input_GetKeyCode(const struct Input_KeyState* keyState)
 
 | 参数项 | 描述 |
 | --- | --- |
-| const struct [Input_KeyState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-keystate)* keyState | 按键状态的枚举对象，具体请参考[Input_KeyStateAction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-input-manager-h#input_keystateaction)。 |
+| const struct [Input_KeyState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-keystate)* keyState | 按键状态的结构体对象，具体请参考[Input_KeyStateAction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-input-manager-h#input_keystateaction)。 |
 
 返回：
 
@@ -732,7 +732,7 @@ void OH_Input_SetKeyPressed(struct Input_KeyState* keyState, int32_t keyAction)
 
 | 参数项 | 描述 |
 | --- | --- |
-| struct [Input_KeyState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-keystate)* keyState | 按键状态的枚举对象，具体请参考[Input_KeyStateAction](#input_keystateaction)。 |
+| struct [Input_KeyState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-keystate)* keyState | 按键状态的结构体对象，具体请参考[Input_KeyStateAction](#input_keystateaction)。 |
 | int32_t keyAction | 按键是否按下，具体请参考[Input_KeyEventAction](#input_keyeventaction)。 |
 
 #### [h2]OH_Input_GetKeyPressed()
@@ -752,7 +752,7 @@ int32_t OH_Input_GetKeyPressed(const struct Input_KeyState* keyState)
 
 | 参数项 | 描述 |
 | --- | --- |
-| const struct [Input_KeyState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-keystate)* keyState | 按键状态的枚举对象，具体请参考[Input_KeyStateAction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-input-manager-h#input_keystateaction)。 |
+| const struct [Input_KeyState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-keystate)* keyState | 按键状态的结构体对象，具体请参考[Input_KeyStateAction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-input-manager-h#input_keystateaction)。 |
 
 返回：
 
@@ -777,7 +777,7 @@ void OH_Input_SetKeySwitch(struct Input_KeyState* keyState, int32_t keySwitch)
 
 | 参数项 | 描述 |
 | --- | --- |
-| struct [Input_KeyState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-keystate)* keyState | 按键状态的枚举对象，具体请参考[Input_KeyStateAction](#input_keystateaction)。 |
+| struct [Input_KeyState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-keystate)* keyState | 按键状态的结构体对象，具体请参考[Input_KeyStateAction](#input_keystateaction)。 |
 | int32_t keySwitch | 按键开关。 |
 
 #### [h2]OH_Input_GetKeySwitch()
@@ -797,7 +797,7 @@ int32_t OH_Input_GetKeySwitch(const struct Input_KeyState* keyState)
 
 | 参数项 | 描述 |
 | --- | --- |
-| const struct [Input_KeyState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-keystate)* keyState | 按键状态的枚举对象，具体请参考[Input_KeyStateAction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-input-manager-h#input_keystateaction)。 |
+| const struct [Input_KeyState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-keystate)* keyState | 按键状态的结构体对象，具体请参考[Input_KeyStateAction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-input-manager-h#input_keystateaction)。 |
 
 返回：
 
@@ -1916,7 +1916,7 @@ Input_Result OH_Input_RequestInjection(Input_InjectAuthorizeCallback callback)
 
 | 类型 | 说明 |
 | --- | --- |
-| [Input_Result](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-input-manager-h#input_result) | 函数返回值，参见[Input_Result](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-input-manager-h#input_result)。 INPUT_SUCCESS = 0 申请授权成功，等待用户授权结果并回调授权状态。 INPUT_PARAMETER_ERROR = 401 参数错误，参数callback为空。 INPUT_DEVICE_NOT_SUPPORTED = 801 表示不支持该功能。 INPUT_SERVICE_EXCEPTION = 3800001 服务异常。 INPUT_INJECTION_AUTHORIZING = 3900005 正在授权中。 INPUT_INJECTION_OPERATION_FREQUENT = 3900006 重复请求（当前应用连续申请授权弹窗成功，间隔时间不超过3秒）。 INPUT_INJECTION_AUTHORIZED = 3900007 当前应用已经授权。 INPUT_INJECTION_AUTHORIZED_OTHERS = 3900008 其它应用已经授权。 |
+| [Input_Result](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-input-manager-h#input_result) | 函数返回值，参见[Input_Result](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-input-manager-h#input_result)。 INPUT_SUCCESS = 0 申请授权成功，等待用户授权结果并回调授权状态。 INPUT_PARAMETER_ERROR = 401 参数错误，参数callback为空。 INPUT_DEVICE_NOT_SUPPORTED = 801 表示不支持该功能。 INPUT_SERVICE_EXCEPTION = 3800001 服务异常。 INPUT_INJECTION_AUTHORIZING = 3900005 正在授权中。 INPUT_INJECTION_OPERATION_FREQUENT = 3900006 重复请求（当前应用连续申请授权弹窗成功，间隔时间不超过3秒）。 INPUT_INJECTION_AUTHORIZED = 3900007 当前应用已经授权。 INPUT_INJECTION_AUTHORIZED_OTHERS = 3900008 其他应用已经授权。 |
 
 #### [h2]OH_Input_QueryAuthorizedStatus()
 
@@ -2031,7 +2031,7 @@ Input_Result OH_Input_GetAxisEventAction(const Input_AxisEvent* axisEvent, Input
 | 参数项 | 描述 |
 | --- | --- |
 | const [Input_AxisEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-axisevent)* axisEvent | 轴事件对象，通过[OH_Input_CreateAxisEvent](#oh_input_createaxisevent)接口可以创建轴事件对象。 使用完需使用[OH_Input_DestroyAxisEvent](#oh_input_destroyaxisevent)接口销毁轴事件对象。 |
-| [InputEvent_AxisAction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-axis-type-h#inputevent_axisaction) *action | action 出参，返回轴事件动作，具体请参考在[InputEvent_AxisAction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-axis-type-h#inputevent_axisaction)。 |
+| [InputEvent_AxisAction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-axis-type-h#inputevent_axisaction) *action | 出参，返回轴事件动作，具体请参考[InputEvent_AxisAction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-axis-type-h#inputevent_axisaction)。 |
 
 返回：
 
@@ -2495,7 +2495,7 @@ Input_Result OH_Input_AddMouseEventMonitor(Input_MouseEventCallback callback)
 
 添加鼠标事件监听，包含鼠标点击，移动，不包含滚轮事件，滚轮事件归属于轴事件。
 
-该接口处于录屏场景时才允许调用，否则调用该接口不生效。
+应用处于录屏场景时才允许调用该接口，否则调用不生效。
 
 系统能力： SystemCapability.MultimodalInput.Input.Core
 
@@ -3314,7 +3314,7 @@ Input_Result OH_Input_GetDevice(int32_t deviceId, Input_DeviceInfo **deviceInfo)
 
 | 类型 | 说明 |
 | --- | --- |
-| [Input_Result](#input_result) | [INPUT_SUCCESS](#input_result) 表示操作成功。 [INPUT_PARAMETER_ERROR](#input_result) 表示deviceInfo为空指针或deviceId无效。 可以通过 [OH_Input_GetDeviceIds](#oh_input_getdeviceids) 表示接口查询系统支持的设备ID。 |
+| [Input_Result](#input_result) | [INPUT_SUCCESS](#input_result) 表示操作成功。 [INPUT_PARAMETER_ERROR](#input_result) 表示deviceInfo为空指针或deviceId无效。 可以通过 [OH_Input_GetDeviceIds](#oh_input_getdeviceids) 接口查询系统支持的设备ID。 |
 
 #### [h2]OH_Input_CreateDeviceInfo()
 
@@ -3372,7 +3372,7 @@ Input_Result OH_Input_GetKeyboardType(int32_t deviceId, int32_t *keyboardType)
 | 参数项 | 描述 |
 | --- | --- |
 | int32_t deviceId | 输入设备的唯一标识，同一个物理设备反复插拔或重启，设备ID可能会发生变化。 |
-| int32_t *keyboardType | keyboardType 指向输入设备的键盘类型指针。 |
+| int32_t *keyboardType | keyboardType 指向输入设备的键盘类型的指针。 |
 
 返回：
 

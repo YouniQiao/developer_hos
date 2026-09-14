@@ -2,8 +2,8 @@
 title: "安全区域"
 upstream_id: "harmonyos-references/ts-universal-attributes-expand-safe-area"
 catalog: "harmonyos-references"
-content_hash: "ee7a72c46114"
-synced_at: "2026-07-28T16:42:06.574580"
+content_hash: "9787d47d6aa5"
+synced_at: "2026-09-14T19:45:28.392367"
 ---
 
 # 安全区域
@@ -204,7 +204,7 @@ struct SafeAreaExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685927955.png)
+ ![](./img/zh-cn_image_0000002753456461.png)
 
 #### [h2]示例2（同时设置固定宽高和expandSafeArea属性）
 
@@ -235,7 +235,7 @@ struct SafeAreaExample2 {
 ```
  如下图：Column组件扩展至了顶部状态栏[SafeAreaEdge.TOP]，未扩展至底部导航条[SafeAreaEdge.BOTTOM]，扩展后的组件高度维持设置值不变。
 
-![](./img/zh-cn_image_0000002656008276.png)
+![](./img/zh-cn_image_0000002723856696.png)
 
 #### [h2]示例3（键盘避让时固定背景图位置）
 
@@ -278,7 +278,7 @@ struct SafeAreaExample3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848356.gif)
+ ![](./img/zh-cn_image_0000002723696778.gif)
 
 #### [h2]示例4（设置键盘避让模式为压缩）
 
@@ -286,7 +286,7 @@ struct SafeAreaExample3 {
 
 ```
 // EntryAbility.ets
-import { KeyboardAvoidMode } from '@kit.ArkUI';
+import { window, KeyboardAvoidMode } from '@kit.ArkUI';
 export default class EntryAbility extends UIAbility{
   onWindowStageCreate(windowStage: window.WindowStage) {
     // Main window is created, set main page for this ability
@@ -330,7 +330,7 @@ struct KeyboardAvoidExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087785.gif)
+ ![](./img/zh-cn_image_0000002753296545.gif)
 
 #### [h2]示例5（设置键盘避让模式为上抬）
 
@@ -338,7 +338,7 @@ struct KeyboardAvoidExample1 {
 
 ```
 // EntryAbility.ets
-import { KeyboardAvoidMode } from '@kit.ArkUI';
+import { window, KeyboardAvoidMode } from '@kit.ArkUI';
 export default class EntryAbility extends UIAbility{
   onWindowStageCreate(windowStage: window.WindowStage) {
     // Main window is created, set main page for this ability
@@ -382,7 +382,7 @@ struct KeyboardAvoidExample2 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685927957.gif)
+ ![](./img/zh-cn_image_0000002753456463.gif)
 
 #### [h2]示例6（切换避让模式）
 
@@ -440,7 +440,7 @@ struct KeyboardAvoidExample3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008278.gif)
+ ![](./img/zh-cn_image_0000002723856698.gif)
 
 #### [h2]示例7（滚动类容器扩展安全区）
 
@@ -505,7 +505,7 @@ struct ExpandSafeAreaTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848358.png)
+ ![](./img/zh-cn_image_0000002723696780.png)
 
 #### [h2]示例8（ignoreLayoutSafeArea延伸组件布局范围）
 
@@ -545,7 +545,7 @@ struct IgnoreLayoutSafeAreaTest1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087787.jpg)
+ ![](./img/zh-cn_image_0000002753296547.jpg)
 
 #### [h2]示例9（ignoreLayoutSafeArea配合LayoutPolicy.matchParent延伸组件布局范围）
 
@@ -583,7 +583,7 @@ struct IgnoreLayoutSafeAreaTest2 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685927959.jpg)
+ ![](./img/zh-cn_image_0000002753456465.jpg)
 
 #### [h2]示例10（expandSafeArea与ignoreLayoutSafeArea的区别）
 
@@ -654,4 +654,4 @@ struct IgnoreLayoutSafeAreaTest3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008280.jpg)
+ ![](./img/zh-cn_image_0000002723856700.jpg)

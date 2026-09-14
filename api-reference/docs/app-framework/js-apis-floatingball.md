@@ -2,26 +2,23 @@
 title: "@ohos.window.floatingBall (闪控球窗口)"
 upstream_id: "harmonyos-references/js-apis-floatingball"
 catalog: "harmonyos-references"
-content_hash: "e5153b8a9db5"
-synced_at: "2026-07-28T16:41:42.384186"
+content_hash: "acb8552a3067"
+synced_at: "2026-09-14T19:45:23.149264"
 ---
 
 # @ohos.window.floatingBall (闪控球窗口)
 
-该模块提供闪控球的基础功能，包括判断设备是否支持闪控球功能，以及创建闪控球控制器来启动、更新或停止闪控球。适用于跨应用的题目搜索、账单记录、商品比价、抢单、翻译场景，以及金融类应用的实时盯盘场景，以小窗模式呈现内容。闪控球以悬浮小组件形式显示在其他应用之上，即时呈现应用的关键信息。
+该模块提供闪控球的基础功能，包括判断设备是否支持闪控球功能，以及创建闪控球控制器来启动、更新或停止闪控球。
+
+适用于跨应用的题目搜索、账单记录、商品比价、抢单、翻译场景，以及金融类应用的实时盯盘场景，以小窗模式呈现内容。闪控球以悬浮小组件形式显示在其他应用之上，即时呈现应用的关键信息。
+
+闪控球和闪控窗的对比与联动使用可见[窗口类型开发概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-type-overview#闪控球和闪控窗的对比)。
 
 ![](./img/note_3.0-zh-cn.png)
 
 - 本模块首批接口从API version 20开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 - 在HarmonyOS 7.0.0之前，支持在Tablet设备的非[电脑模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/freeform-window-overview#电脑模式)、Phone设备使用闪控球功能，其他设备不可用；从HarmonyOS 7.0.0开始，支持在Phone、PC/2in1、Tablet设备使用闪控球功能，其他设备不可用。
 - 针对系统能力SystemCapability.Window.SessionManager，请先使用[canIUse()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-syscap#caniuse)接口判断当前设备是否支持此syscap及对应接口。
-
-闪控球和闪控窗对比
-
-- 共同点：闪控球和[闪控窗](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-floatview)均为一种特殊的应用辅助窗口，具备在应用主窗口和对应UIAbility退至后台后仍然可以在前台显示的能力。可以用于应用退至后台后，使用其继续显示UI。
-- 区别： 显示形式不同。闪控球以小圆球的形式展现，适用于展示关键信息。闪控窗以小型窗口展示，展示区域较大，可以持续展示应用内容或提供快捷操作。
-- 闪控球只能贴边展示，闪控窗则没有此限制。
-- 闪控球模板固定，应用不能定制UI。闪控窗同样存在模板，并由系统管理并统一绘制UI，但是提供了可绘制的区域，可供应用加载指定页面内容。
 
 与闪控窗联动：
 

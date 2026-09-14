@@ -2,8 +2,8 @@
 title: "警告弹窗 (AlertDialog)"
 upstream_id: "harmonyos-references/ts-methods-alert-dialog-box"
 catalog: "harmonyos-references"
-content_hash: "c0d46b293c0d"
-synced_at: "2026-09-01T18:13:01.369846"
+content_hash: "d5285abf1c56"
+synced_at: "2026-09-14T19:46:12.501047"
 ---
 
 # 警告弹窗 (AlertDialog)
@@ -425,7 +425,7 @@ struct AlertDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706676262.gif)
+ ![](./img/zh-cn_image_0000002723857262.gif)
 
 #### [h2]示例2（可在主窗外弹出的弹窗）
 
@@ -494,7 +494,7 @@ struct AlertDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736435347.jpg)
+ ![](./img/zh-cn_image_0000002723697344.jpg)
 
 #### [h2]示例3（设置弹窗的动画）
 
@@ -540,7 +540,7 @@ struct AlertDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706836198.gif)
+ ![](./img/zh-cn_image_0000002753297111.gif)
 
 #### [h2]示例4（设置弹窗的样式）
 
@@ -604,7 +604,7 @@ struct AlertDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736315303.gif)
+ ![](./img/zh-cn_image_0000002753457029.gif)
 
 #### [h2]示例5（悬停态弹窗）
 
@@ -655,7 +655,7 @@ struct AlertDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706676264.gif)
+ ![](./img/zh-cn_image_0000002723857264.gif)
 
 #### [h2]示例6（弹窗生命周期）
 
@@ -710,7 +710,7 @@ struct AlertDialogLifecycleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736435349.gif)
+ ![](./img/zh-cn_image_0000002723697346.gif)
 
 #### [h2]示例7（自定义背景模糊效果参数）
 
@@ -760,7 +760,7 @@ struct AlertDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706836200.png)
+ ![](./img/zh-cn_image_0000002753297113.png)
 
 #### [h2]示例8（自定义背景效果参数）
 
@@ -811,13 +811,13 @@ struct AlertDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736315305.png)
+ ![](./img/zh-cn_image_0000002753457031.png)
 
 #### [h2]示例9（设置弹窗的沉浸光感效果）
 
-该示例通过[AlertDialogParam](#alertdialogparam对象说明)中的systemMaterial属性设置组件的系统材质，实现沉浸光感效果。
+该示例通过[AlertDialogParam](#alertdialogparam对象说明)中的systemMaterial属性设置组件的系统材质，实现沉浸光感效果。设置系统材质后，AlertDialog弹出过程中会有非线性形变和边缘流光。
 
-组件沉浸光感效果会根据设备算力与用户在系统中设置的沉浸光感效果自适应调整，开发者无需额外适配。
+该示例配图为高算力设备强档效果，组件沉浸光感效果会根据设备算力与用户在系统中设置的沉浸光感效果自适应调整，开发者无需额外适配。
 
 从API版本26.0.0开始，在AlertDialogParam中新增了systemMaterial属性。
 
@@ -863,8 +863,8 @@ struct AlertDialogExample {
 ```
  未设置系统材质时：
 
-![](./img/zh-cn_image_0000002706676266.gif)
+![](./img/zh-cn_image_0000002723857266.gif)
 
 设置系统材质后：
 
-![](./img/zh-cn_image_0000002736435351.gif)
+![](./img/zh-cn_image_0000002723697348.gif)

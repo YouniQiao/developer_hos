@@ -2,8 +2,8 @@
 title: "OH_CryptoSm2CiphertextSpec"
 upstream_id: "harmonyos-references/capi-cryptoasymcipherapi-oh-cryptosm2ciphertextspec"
 catalog: "harmonyos-references"
-content_hash: "f5c3b8adbe17"
-synced_at: "2026-07-09T00:59:12.798433"
+content_hash: "042e31b76d79"
+synced_at: "2026-09-14T19:47:30.904999"
 ---
 
 # OH_CryptoSm2CiphertextSpec
@@ -14,7 +14,7 @@ typedef struct OH_CryptoSm2CiphertextSpec OH_CryptoSm2CiphertextSpec
 
 #### 概述
 
-定义SM2密文规格结构。
+SM2密文规格结构体，表示SM2密文规格。
 
 起始版本： 20
 

@@ -2,8 +2,8 @@
 title: "ChipV2"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-chipv2"
 catalog: "harmonyos-references"
-content_hash: "b1d14ac5583a"
-synced_at: "2026-09-04T18:10:20.601311"
+content_hash: "0d29f3ba86d3"
+synced_at: "2026-09-14T19:46:27.791087"
 ---
 
 # ChipV2
@@ -114,8 +114,8 @@ ChipV2Options定义ChipV2的样式及具体样式参数。
 | minFontScale | number | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 是 | ChipV2组件文本与图标的最小字体缩放倍数。 取值范围：[0, 1] 设置的值小于0时，按值为0处理。设置的值大于1时，按值为1处理。异常值默认不生效。 默认值：1。 值为undefined时，按默认值处理。 **装饰器类型：** @Trace |
 | padding | [LocalizedPadding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#localizedpadding12) | 否 | 是 | ChipV2组件的内边距。 默认值： - size为ChipV2Size.SMALL并且activated为true时，默认值：{ start: LengthMetrics.resource('sys.float.chip_activated_small_text_padding'), end: LengthMetrics.resource('sys.float.chip_activated_small_text_padding'), top: LengthMetrics.vp(4), bottom: LengthMetrics.vp(4)}。 - size为ChipV2Size.SMALL并且activated为false时，默认值：{ start: LengthMetrics.resource('sys.float.chip_small_text_padding'), end: LengthMetrics.resource('sys.float.chip_small_text_padding'), top: LengthMetrics.vp(4), bottom: LengthMetrics.vp(4)}。 - size不为ChipV2Size.SMALL并且activated为true时，默认值：{ start: LengthMetrics.resource('sys.float.chip_activated_normal_text_padding'), end: LengthMetrics.resource('sys.float.chip_activated_normal_text_padding'), top: LengthMetrics.vp(4), bottom: LengthMetrics.vp(4)}。 - size不为ChipV2Size.SMALL并且activated为false时，默认值：{ start: LengthMetrics.resource('sys.float.chip_normal_text_padding'), end: LengthMetrics.resource('sys.float.chip_normal_text_padding'), top: LengthMetrics.vp(4), bottom: LengthMetrics.vp(4)}。 值为undefined时，按默认值处理。 **装饰器类型：** @Trace |
 | fontSize | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | 统一设置ChipV2组件的文本与图标的字体大小，不支持百分比。传入百分比时按默认值处理。 该fontSize的优先级低于prefixIcon、label、suffixIcon和closeIcon中的fontSize属性。 默认值： - size为ChipV2Size.SMALL时，文本默认值：$r('sys.float.chip_small_font_size')；图标默认值：$r('sys.float.chip_small_icon_size')。 - 其他情况下，文本默认值：$r('sys.float.chip_normal_font_size')；图标默认值：$r('sys.float.chip_normal_icon_size') 单位：fp 值为undefined时，按默认值处理。 **装饰器类型：** @Trace |
-| backgroundSystemMaterial | uiMaterial.[Material](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#material) | 否 | 是 | 设置组件系统材质样式。需要将组件放置在Navigation或NavDestination的标题栏子树，或横向Tabs的底部TabBar子树中，材质效果才会生效。不同材质具有不同的效果，能够影响组件的背景色[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、边框颜色[borderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#bordercolor)、边框宽度[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)、阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)效果、材质层滤镜效果[materialFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-filter-effect#materialfilter23)。 默认值：undefined，不应用材质样式。 **装饰器类型：** @Trace |
-| activatedBackgroundSystemMaterial | uiMaterial.[Material](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#material) | 否 | 是 | 设置组件激活状态下的系统材质样式。需要将组件放置在Navigation或NavDestination的标题栏子树，或横向Tabs的底部TabBar子树中，材质效果才会生效。不同材质具有不同的效果，能够影响组件的背景色[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、边框颜色[borderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#bordercolor)、边框宽度[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)、阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)效果、材质层滤镜效果[materialFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-filter-effect#materialfilter23)。 默认值：undefined，不应用材质样式。 **装饰器类型：** @Trace |
+| backgroundSystemMaterial | uiMaterial.[Material](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#material) | 否 | 是 | 设置组件系统材质样式。需要将组件放置在Navigation或NavDestination的标题栏，或横向Tabs的底部TabBar中，沉浸光感效果才会生效。不同材质具有不同的效果，能够影响组件的背景色[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、边框颜色[borderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#bordercolor)、边框宽度[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)、阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)效果、材质层滤镜效果[materialFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-filter-effect#materialfilter23)。 默认值：undefined，不应用材质样式。 **装饰器类型：** @Trace |
+| activatedBackgroundSystemMaterial | uiMaterial.[Material](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#material) | 否 | 是 | 设置组件激活状态下的系统材质样式。需要将组件放置在Navigation或NavDestination的标题栏，或横向Tabs的底部TabBar中，沉浸光感效果才会生效。不同材质具有不同的效果，能够影响组件的背景色[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、边框颜色[borderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#bordercolor)、边框宽度[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)、阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)效果、材质层滤镜效果[materialFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-filter-effect#materialfilter23)。 默认值：undefined，不应用材质样式。 **装饰器类型：** @Trace |
 | onClose | [VoidCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#voidcallback12) | 否 | 是 | 默认关闭图标点击事件回调函数。 当allowClose为true且suffixIcon没有传入参数时，点击关闭图标执行此回调函数。 默认值：不执行该回调函数。 值为undefined时，按默认值处理。 |
 | onClicked | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 否 | 是 | ChipV2点击事件回调函数。 当enabled为true时，点击ChipV2触发点击事件；当enabled为false时，不触发点击事件。 默认值：不执行该回调函数。 值为undefined时，按默认值处理。 |
 
@@ -176,8 +176,8 @@ IChipV2OptionsConfig定义ChipV2选项的配置接口。
 | minFontScale | number | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 是 | ChipV2组件文本与图标的最小字体缩放倍数。 取值范围：[0, 1] 设置的值小于0时，按值为0处理。设置的值大于1时，按值为1处理。异常值默认不生效。 默认值：1。 值为undefined时，按默认值处理。 |
 | padding | [LocalizedPadding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#localizedpadding12) | 否 | 是 | ChipV2的内边距。 默认值： - size为ChipV2Size.SMALL并且activated为true时，默认值：{ start: LengthMetrics.resource('sys.float.chip_activated_small_text_padding'), end: LengthMetrics.resource('sys.float.chip_activated_small_text_padding'), top: LengthMetrics.vp(4), bottom: LengthMetrics.vp(4)}。 - size为ChipV2Size.SMALL并且activated为false时，默认值：{ start: LengthMetrics.resource('sys.float.chip_small_text_padding'), end: LengthMetrics.resource('sys.float.chip_small_text_padding'), top: LengthMetrics.vp(4), bottom: LengthMetrics.vp(4)}。 - size不为ChipV2Size.SMALL并且activated为true时，默认值：{ start: LengthMetrics.resource('sys.float.chip_activated_normal_text_padding'), end: LengthMetrics.resource('sys.float.chip_activated_normal_text_padding'), top: LengthMetrics.vp(4), bottom: LengthMetrics.vp(4)}。 - size不为ChipV2Size.SMALL并且activated为false时，默认值：{ start: LengthMetrics.resource('sys.float.chip_normal_text_padding'), end: LengthMetrics.resource('sys.float.chip_normal_text_padding'), top: LengthMetrics.vp(4), bottom: LengthMetrics.vp(4)}。 值为undefined时，按默认值处理。 |
 | fontSize | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | 统一设置ChipV2组件的文本与图标的字体大小，不支持百分比。传入百分比时按默认值处理。 该fontSize的优先级低于prefixIcon、label、suffixIcon和closeIcon中的fontSize属性。 默认值： - size为ChipV2Size.SMALL时，文本默认值：$r('sys.float.chip_small_font_size')；图标默认值：$r('sys.float.chip_small_icon_size')。 - 其他情况下，文本默认值：$r('sys.float.chip_normal_font_size')；图标默认值：$r('sys.float.chip_normal_icon_size') 单位：fp 值为undefined时，按默认值处理。 |
-| backgroundSystemMaterial | uiMaterial.[Material](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#material) | 否 | 是 | 设置组件系统材质样式。需要将组件放置在Navigation或NavDestination的标题栏子树，或横向Tabs的底部TabBar子树中，材质效果才会生效。不同材质具有不同的效果，能够影响组件的背景色[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、边框颜色[borderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#bordercolor)、边框宽度[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)、阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)效果、材质层滤镜效果[materialFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-filter-effect#materialfilter23)。 默认值：undefined，不应用材质样式。 |
-| activatedBackgroundSystemMaterial | uiMaterial.[Material](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#material) | 否 | 是 | 设置组件激活状态下的系统材质样式。需要将组件放置在Navigation或NavDestination的标题栏子树，或横向Tabs的底部TabBar子树中，材质效果才会生效。不同材质具有不同的效果，能够影响组件的背景色[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、边框颜色[borderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#bordercolor)、边框宽度[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)、阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)效果、材质层滤镜效果[materialFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-filter-effect#materialfilter23)。 默认值：undefined，不应用材质样式。 |
+| backgroundSystemMaterial | uiMaterial.[Material](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#material) | 否 | 是 | 设置组件系统材质样式。需要将组件放置在Navigation或NavDestination的标题栏，或横向Tabs的底部TabBar中，沉浸光感效果才会生效。不同材质具有不同的效果，能够影响组件的背景色[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、边框颜色[borderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#bordercolor)、边框宽度[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)、阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)效果、材质层滤镜效果[materialFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-filter-effect#materialfilter23)。 默认值：undefined，不应用材质样式。 |
+| activatedBackgroundSystemMaterial | uiMaterial.[Material](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#material) | 否 | 是 | 设置组件激活状态下的系统材质样式。需要将组件放置在Navigation或NavDestination的标题栏，或横向Tabs的底部TabBar中，沉浸光感效果才会生效。不同材质具有不同的效果，能够影响组件的背景色[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、边框颜色[borderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#bordercolor)、边框宽度[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)、阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)效果、材质层滤镜效果[materialFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-filter-effect#materialfilter23)。 默认值：undefined，不应用材质样式。 |
 | onClose | [VoidCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#voidcallback12) | 否 | 是 | 默认关闭图标点击事件回调函数。 当allowClose为true且suffixIcon没有传入参数时，点击关闭图标执行此回调函数。 默认值：不执行该回调函数。 值为undefined时，按默认值处理。 |
 | onClicked | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 否 | 是 | ChipV2点击事件回调函数。 当enabled为true时，点击ChipV2触发点击事件；当enabled为false时，不触发点击事件。 默认值：不执行该回调函数。 值为undefined时，按默认值处理。 |
 
@@ -1014,7 +1014,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002712246512.png)
+ ![](./img/zh-cn_image_0000002723697414.png)
 
 #### [h2]示例2（设置ChipV2激活状态）
 
@@ -1078,7 +1078,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002742005461.gif)
+ ![](./img/zh-cn_image_0000002753297181.gif)
 
 #### [h2]示例3（设置Symbol类型图标）
 
@@ -1136,7 +1136,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002712406472.gif)
+ ![](./img/zh-cn_image_0000002753457099.gif)
 
 #### [h2]示例4（监听ChipV2Options内对象类型属性的内部属性变化）
 
@@ -1178,4 +1178,62 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002742125421.gif)
+ ![](./img/zh-cn_image_0000002723857334.gif)
+
+#### [h2]示例5（设置系统材质样式）
+
+该示例通过设置[ChipV2Options](#chipv2options)的backgroundSystemMaterial属性，实现了[ChipV2](#chipv2-1)的系统材质样式效果，包括沉浸式材质和自动反色功能。组件需放置在Navigation的标题栏中，沉浸光感效果才会生效。
+
+从API版本26.0.0开始，[ChipV2Options](#chipv2options)新增backgroundSystemMaterial属性。
+
+```
+import { ChipV2, ChipV2Options, ChipV2Label, LengthMetrics, ColorMetrics, UIUtils, uiMaterial } from '@kit.ArkUI';
+
+@Entry
+@ComponentV2
+struct Index {
+  @Local chipV2Options: ChipV2Options = new ChipV2Options({
+    // 设置文本属性。
+    label: new ChipV2Label({ text: '操作块' }),
+    // 使用UIUtils.makeObserved包裹padding，使内部属性start和end可被观测。
+    padding: UIUtils.makeObserved({ start: LengthMetrics.fp(20), end: LengthMetrics.fp(20) }),
+    backgroundSystemMaterial: new uiMaterial.ImmersiveMaterial({
+      style: uiMaterial.ImmersiveStyle.ULTRA_THIN,
+      colorInvert: true
+    }),
+    // backgroundColor: ColorMetrics.resourceColor($r('sys.color.ohos_id_color_button_normal')),
+    borderRadius: LengthMetrics.resource($r('sys.float.ohos_id_corner_radius_button')),
+    enabled: true,
+  });
+  @Local currentPadding: number = 20;
+
+  @Builder
+  NavigationTitle() {
+    Row({ space: 10 }) {
+      ChipV2({ chipV2Options: this.chipV2Options })
+      ChipV2({ chipV2Options: this.chipV2Options })
+    }
+    .linearGradient({
+      angle: 90, // 渐变角度，90度是从左到右。
+      colors: [
+        ['#FF9A9E', 0.0], // 起始颜色及位置（0.0表示起点）。
+        ['#FECFEF', 0.5], // 中间颜色及位置。
+        ['#3B324C', 1.0] // 结束颜色及位置（1.0表示终点）。
+      ]
+    })
+    .padding(12)
+    .width('100%')
+  }
+  build() {
+    Column() {
+      Navigation() {
+        // 页面内容
+      }
+      .title({ builder: this.NavigationTitle, height: '100%' })
+    }.width('100%').height('100%')
+  }
+}
+```
+ 该示例配图为高算力设备强档效果。
+
+![](./img/zh-cn_image_0000002723697416.png)

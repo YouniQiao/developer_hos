@@ -2,8 +2,8 @@
 title: "Interface (AVTranscoder)"
 upstream_id: "harmonyos-references/arkts-apis-media-avtranscoder"
 catalog: "harmonyos-references"
-content_hash: "a8d23f37dd82"
-synced_at: "2026-08-29T18:17:41.140431"
+content_hash: "93385e5af664"
+synced_at: "2026-09-14T19:48:41.345910"
 ---
 
 # Interface (AVTranscoder)
@@ -82,7 +82,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { media } from '@kit.MediaKit';
 import { image } from '@kit.ImageKit';
 
-async function test() {
+async function test(context: Context) {
   // 创建转码实例。
   let avTranscoder = await media.createAVTranscoder();
   
@@ -95,6 +95,24 @@ async function test() {
       height: 300,
   };
 
+  // 获取资源管理器。
+  let resourceManager = context.resourceManager;
+  // 获取rawfile中水印图片的描述符，'img.png'可替换为实际水印图片文件名。
+  let rawFileDescriptor = resourceManager.getRawFdSync('img.png');
+  // 根据文件描述符创建ImageSource。
+  let watermarkImageSource = image.createImageSource(rawFileDescriptor.fd);
+
+  // 创建水印PixelMap。
+  const decodingOptions: image.DecodingOptions = {
+    // 可编辑像素。
+    editable: true,
+    // 像素格式。
+    desiredPixelFormat: image.PixelMapFormat.RGBA_8888,
+  };
+  const watermarkPixelMap = await watermarkImageSource.createPixelMap(decodingOptions);
+  console.info('PixelMap created for watermark');
+
+  // 添加水印。
   avTranscoder.addWatermark(watermarkPixelMap, watermarkConfig).then((watermarkId: number) => {
     console.info('addWatermark success, watermarkId: ' + watermarkId);
   }).catch((err: BusinessError) => {
@@ -491,7 +509,7 @@ async function test() {
   // 创建转码实例。
   let avTranscoder = await media.createAVTranscoder();
   avTranscoder.on('error', (err: BusinessError) => {
-    console.info('case avTranscoder.on(error) called, errMessage is ' + err.message);
+    console.error('case avTranscoder.on(error) called, errMessage is ' + err.message);
   });
 }
 ```

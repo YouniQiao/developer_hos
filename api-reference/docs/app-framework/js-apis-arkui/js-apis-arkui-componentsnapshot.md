@@ -2,8 +2,8 @@
 title: "@ohos.arkui.componentSnapshot (组件截图)"
 upstream_id: "harmonyos-references/js-apis-arkui-componentsnapshot"
 catalog: "harmonyos-references"
-content_hash: "c3fbe8c09365"
-synced_at: "2026-08-29T18:12:21.871916"
+content_hash: "c862e2554998"
+synced_at: "2026-09-14T19:45:17.410235"
 ---
 
 # @ohos.arkui.componentSnapshot (组件截图)
@@ -105,7 +105,7 @@ struct SnapshotExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518575.gif)
+ ![](./img/zh-cn_image_0000002753456337.gif)
 
 #### componentSnapshot.get(deprecated)
 
@@ -188,7 +188,7 @@ struct SnapshotExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518575.gif)
+ ![](./img/zh-cn_image_0000002753456337.gif)
 
 #### componentSnapshot.createFromBuilder(deprecated)
 
@@ -291,7 +291,7 @@ struct OffscreenSnapshotExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639378.gif)
+ ![](./img/zh-cn_image_0000002723856572.gif)
 
 #### componentSnapshot.createFromBuilder(deprecated)
 
@@ -397,7 +397,7 @@ struct OffscreenSnapshotExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639378.gif)
+ ![](./img/zh-cn_image_0000002723856572.gif)
 
 #### componentSnapshot.getSync12+
 
@@ -478,7 +478,7 @@ struct SnapshotExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518575.gif)
+ ![](./img/zh-cn_image_0000002753456337.gif)
 
 #### SnapshotSizeLimitation
 
@@ -494,8 +494,8 @@ struct SnapshotExample {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| maxWidth | number | 否 | 否 | 组件截图的最大宽度限制。 取值范围：[0, +∞) 单位：px |
-| maxHeight | number | 否 | 否 | 组件截图的最大高度限制。 取值范围：[0, +∞) 单位：px |
+| maxWidth | number | 否 | 否 | 组件截图的最大宽度限制。 取值范围：(0, +∞)。异常值为-1，表示查询组件截图尺寸限制失败。 单位：px |
+| maxHeight | number | 否 | 否 | 组件截图的最大高度限制。 取值范围：(0, +∞)。异常值为-1，表示查询组件截图尺寸限制失败。 单位：px |
 
 #### SnapshotOptions12+
 
@@ -572,7 +572,7 @@ struct SnapshotColorModeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518575.gif)
+ ![](./img/zh-cn_image_0000002753456337.gif)
 
 #### DynamicRangeModeOptions23+
 
@@ -634,7 +634,7 @@ struct SnapshotDynamicRangeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518575.gif)
+ ![](./img/zh-cn_image_0000002753456337.gif)
 
 #### SnapshotRegionType15+
 
@@ -749,4 +749,4 @@ struct SnapshotExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358599.gif)
+ ![](./img/zh-cn_image_0000002723696654.gif)

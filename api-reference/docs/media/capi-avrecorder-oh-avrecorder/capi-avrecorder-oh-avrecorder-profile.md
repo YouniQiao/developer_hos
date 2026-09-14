@@ -2,14 +2,14 @@
 title: "OH_AVRecorder_Profile"
 upstream_id: "harmonyos-references/capi-avrecorder-oh-avrecorder-profile"
 catalog: "harmonyos-references"
-content_hash: "fe38a4450a98"
-synced_at: "2026-08-14T15:55:32.974559"
+content_hash: "6e462fa4e2b9"
+synced_at: "2026-09-14T19:48:44.619684"
 ---
 
 # OH_AVRecorder_Profile
 
 ```
-typedef struct OH_AVRecorder_Profile {/* 成员变量详见汇总部分 */} OH_AVRecorder_Profile;
+typedef struct OH_AVRecorder_Profile {/* 成员变量详见汇总部分 */} OH_AVRecorder_Profile
 ```
 
 #### 概述

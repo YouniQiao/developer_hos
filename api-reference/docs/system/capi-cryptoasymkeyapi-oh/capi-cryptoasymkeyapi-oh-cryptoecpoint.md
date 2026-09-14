@@ -2,8 +2,8 @@
 title: "OH_CryptoEcPoint"
 upstream_id: "harmonyos-references/capi-cryptoasymkeyapi-oh-cryptoecpoint"
 catalog: "harmonyos-references"
-content_hash: "e3ea58bcabff"
-synced_at: "2026-07-09T00:59:13.473464"
+content_hash: "66e3a47e4ea1"
+synced_at: "2026-09-14T19:47:31.357782"
 ---
 
 # OH_CryptoEcPoint
@@ -14,7 +14,7 @@ typedef struct OH_CryptoEcPoint OH_CryptoEcPoint
 
 #### 概述
 
-定义EC点结构体。
+椭圆曲线点结构体，表示椭圆曲线上的点。
 
 起始版本： 20
 

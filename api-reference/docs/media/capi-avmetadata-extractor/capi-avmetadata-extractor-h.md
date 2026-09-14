@@ -2,8 +2,8 @@
 title: "avmetadata_extractor.h"
 upstream_id: "harmonyos-references/capi-avmetadata-extractor-h"
 catalog: "harmonyos-references"
-content_hash: "a3a004e7d8ac"
-synced_at: "2026-07-28T16:51:58.774571"
+content_hash: "e50dae4e365b"
+synced_at: "2026-09-14T19:48:42.887471"
 ---
 
 # avmetadata_extractor.h
@@ -165,7 +165,7 @@ OH_AVErrCode OH_AVMetadataExtractor_FetchFramesByTimes(OH_AVMetadataExtractor *e
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_AVMetadataExtractor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avmetadataextractor-oh-avmetadataextractor) *extractor | 指向OH_AVMetadataExtractor实例的指针。 |
-| int64_t timesUs[] | 从视频源提取图像时的时间点数组（单位：微秒）。 |
+| int64_t timesUs[] | 从视频源提取图像时的时间点数组，单位为微秒（μs）。 |
 | uint16_t timesUsSize | 输入时间点数组的长度。 |
 | [OH_AVMedia_SeekMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avmedia-base-h#oh_avmedia_seekmode) seekMode | 定义每个给定时间与关键帧之间关系的跳转选项，详见[OH_AVMedia_SeekMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avmedia-base-h#oh_avmedia_seekmode)。 |
 | [const OH_AVMetadataExtractor_OutputParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avmetadataextractor-oh-avmetadataextractor-outputparam)* outputParam | 图像的输出参数，例如图像的高度或者宽度。详见[OH_AVMetadataExtractor_OutputParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avmetadataextractor-oh-avmetadataextractor-outputparam)。若该参数为空指针，则获取的帧使用视频原始尺寸。 |

@@ -2,8 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-confidentialspace"
 catalog: "harmonyos-references"
-content_hash: "00160989185c"
-synced_at: "2026-07-28T16:50:19.881797"
+content_hash: "2600f5d910e8"
+synced_at: "2026-09-14T19:47:29.266292"
 ---
 
 # ArkTS API错误码
@@ -178,11 +178,13 @@ Communication between client and data manager failed.
 
 可能原因
 
-由于应用与数据管理服务间通信的socket发生异常，导致通信无法进行。
+1. [runApp](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/confidentialspace-confidentialspace#confidentialspacerunapp)方法抛出此错误，表明应用与机密空间管理服务之间的通信失败。
+2. [sendData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/confidentialspace-confidentialspace#senddata)方法抛出此错误，表明由于应用与数据管理服务间通信的socket发生异常，导致通信无法进行。
 
 处理步骤
 
-避免过于高频地发送数据。
+1. 若runApp抛出此错误，请尝试重试。
+2. 若sendData抛出此错误，请避免过于高频地发送数据。
 
 #### 1028700010 数据管理服务与数据应用间通信失败
 

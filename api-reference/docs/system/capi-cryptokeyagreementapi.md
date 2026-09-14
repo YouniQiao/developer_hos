@@ -2,15 +2,15 @@
 title: "CryptoKeyAgreementApi"
 upstream_id: "harmonyos-references/capi-cryptokeyagreementapi"
 catalog: "harmonyos-references"
-content_hash: "b7e6574a2607"
-synced_at: "2026-07-09T00:59:11.668149"
+content_hash: "081614a73c8e"
+synced_at: "2026-09-14T19:47:29.647977"
 ---
 
 # CryptoKeyAgreementApi
 
 #### 概述
 
-为应用提供密钥协商算法接口。
+描述HarmonyOS为应用提供的密钥协商接口。
 
 起始版本： 20
 

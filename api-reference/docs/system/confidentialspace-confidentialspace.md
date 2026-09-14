@@ -2,8 +2,8 @@
 title: "@hms.security.confidentialSpace (机密空间服务)"
 upstream_id: "harmonyos-references/confidentialspace-confidentialspace"
 catalog: "harmonyos-references"
-content_hash: "694d635e1810"
-synced_at: "2026-08-29T18:16:21.836027"
+content_hash: "68ab43556d22"
+synced_at: "2026-09-14T19:47:29.147047"
 ---
 
 # @hms.security.confidentialSpace (机密空间服务)
@@ -381,6 +381,7 @@ runApp(appPath: string, argv: string[]): Promise<DataAppHandle>
 | 1028700005 | Access permission denied. |
 | 1028700006 | Call limit reached. |
 | 1028700007 | Operation timed out. |
+| 1028700009 | Communication between client and data manager failed. |
 | 1028700012 | The profile contains invalid configuration items. |
 | 1028700015 | Internal error on the client side. |
 | 1028700016 | Internal error on the confidential space manager side. |

@@ -2,8 +2,8 @@
 title: "列表选择弹窗 (ActionSheet)"
 upstream_id: "harmonyos-references/ts-methods-action-sheet"
 catalog: "harmonyos-references"
-content_hash: "24714f2514eb"
-synced_at: "2026-09-01T18:13:01.133913"
+content_hash: "5b58e21a13ec"
+synced_at: "2026-09-14T19:46:12.479367"
 ---
 
 # 列表选择弹窗 (ActionSheet)
@@ -250,7 +250,7 @@ struct ActionSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706836202.gif)
+ ![](./img/zh-cn_image_0000002753297115.gif)
 
 #### [h2]示例2（可在主窗外弹出的弹窗）
 
@@ -321,7 +321,7 @@ struct ActionSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736315307.jpg)
+ ![](./img/zh-cn_image_0000002753457033.jpg)
 
 #### [h2]示例3（设置弹窗的动画）
 
@@ -382,7 +382,7 @@ struct ActionSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706676268.gif)
+ ![](./img/zh-cn_image_0000002723857268.gif)
 
 #### [h2]示例4（设置弹窗的样式）
 
@@ -463,7 +463,7 @@ struct ActionSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736435353.gif)
+ ![](./img/zh-cn_image_0000002723697350.gif)
 
 #### [h2]示例5（悬停态弹窗）
 
@@ -534,7 +534,7 @@ struct ActionSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706836204.gif)
+ ![](./img/zh-cn_image_0000002753297117.gif)
 
 #### [h2]示例6（弹窗生命周期）
 
@@ -611,7 +611,7 @@ struct Example1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736315309.gif)
+ ![](./img/zh-cn_image_0000002753457035.gif)
 
 #### [h2]示例7（自定义背景模糊效果参数）
 
@@ -670,7 +670,7 @@ struct ActionSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706676270.png)
+ ![](./img/zh-cn_image_0000002723857270.png)
 
 #### [h2]示例8（自定义背景效果参数）
 
@@ -730,13 +730,13 @@ struct ActionSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736435355.png)
+ ![](./img/zh-cn_image_0000002723697352.png)
 
 #### [h2]示例9（设置弹窗的沉浸光感效果）
 
-该示例通过[ActionSheetOptions](#actionsheetoptions对象说明)中的systemMaterial属性设置组件的系统材质，实现沉浸光感效果。
+该示例通过[ActionSheetOptions](#actionsheetoptions对象说明)中的systemMaterial属性设置组件的系统材质，实现沉浸光感效果。设置系统材质后，ActionSheet弹出过程中会有非线性形变和边缘流光。
 
-组件沉浸光感效果会根据设备算力与用户在系统中设置的沉浸光感效果自适应调整，开发者无需额外适配。
+该示例配图为高算力设备强档效果，组件沉浸光感效果会根据设备算力与用户在系统中设置的沉浸光感效果自适应调整，开发者无需额外适配。
 
 从API版本26.0.0开始，在[ActionSheetOptions](#actionsheetoptions对象说明)中新增了systemMaterial属性。
 
@@ -792,8 +792,8 @@ struct ActionSheetExample {
 ```
  未设置系统材质时：
 
-![](./img/zh-cn_image_0000002706836206.gif)
+![](./img/zh-cn_image_0000002753297119.gif)
 
 设置系统材质后：
 
-![](./img/zh-cn_image_0000002736315311.gif)
+![](./img/zh-cn_image_0000002753457037.gif)

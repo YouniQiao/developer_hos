@@ -2,8 +2,8 @@
 title: "Interface (AVImageGenerator)"
 upstream_id: "harmonyos-references/arkts-apis-media-avimagegenerator"
 catalog: "harmonyos-references"
-content_hash: "4e831795be0d"
-synced_at: "2026-07-28T16:51:55.500007"
+content_hash: "767f9aac1981"
+synced_at: "2026-09-14T19:48:41.279910"
 ---
 
 # Interface (AVImageGenerator)
@@ -291,7 +291,7 @@ release(): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | 异步方式释放资源release方法的Promise返回值。 |
+| Promise | Promise对象，无返回结果。 |
 
 错误码：
 

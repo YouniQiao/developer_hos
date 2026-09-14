@@ -2,8 +2,8 @@
 title: "LazyForEach"
 upstream_id: "harmonyos-references/ts-rendering-control-lazyforeach"
 catalog: "harmonyos-references"
-content_hash: "87912bdc7d83"
-synced_at: "2026-08-29T18:15:22.199527"
+content_hash: "d44546406e2f"
+synced_at: "2026-09-14T19:46:39.431620"
 ---
 
 # LazyForEach
@@ -25,8 +25,6 @@ LazyForEach从提供的数据源中按需迭代数据，并在每次迭代过程
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
-
-元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
 参数：
 

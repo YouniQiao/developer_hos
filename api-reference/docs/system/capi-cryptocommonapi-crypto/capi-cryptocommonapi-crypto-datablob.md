@@ -2,8 +2,8 @@
 title: "Crypto_DataBlob"
 upstream_id: "harmonyos-references/capi-cryptocommonapi-crypto-datablob"
 catalog: "harmonyos-references"
-content_hash: "eadb7bb028ed"
-synced_at: "2026-07-09T00:59:12.763302"
+content_hash: "c1704d122abb"
+synced_at: "2026-09-14T19:47:30.680651"
 ---
 
 # Crypto_DataBlob
@@ -28,5 +28,5 @@ typedef struct Crypto_DataBlob {...} Crypto_DataBlob
 
 | 名称 | 描述 |
 | --- | --- |
-| uint8_t* data | 数据Blob的内容。 |
-| size_t len | 数据Blob的长度。 |
+| uint8_t *data | 数据缓冲区。 |
+| size_t len | 数据长度。 |

@@ -2,8 +2,8 @@
 title: "文件管理错误码"
 upstream_id: "harmonyos-references/errorcode-filemanagement"
 catalog: "harmonyos-references"
-content_hash: "78d88cb4c5e3"
-synced_at: "2026-07-28T16:50:05.454725"
+content_hash: "05977abc495c"
+synced_at: "2026-09-14T19:47:22.514142"
 ---
 
 # 文件管理错误码
@@ -30,11 +30,9 @@ Operation not permitted
 
 处理步骤
 
-1.根据当前系统的[访问控制机制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/access-token-overview)，应用无法使用分享给其他应用的URI。
-
-2.根据[系统Picker](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-app-startup#拉起系统应用的方式)的运行机制，通过Picker获取到的URI仅具有临时权限，应用退出或设备重启后如需继续访问，需按[授权持久化](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file-persistpermission)流程处理。
-
-3.URI路径不推荐进行拼接，拼接后的URI默认未授权。
+1. 根据当前系统的[访问控制机制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/access-token-overview)，应用无法使用分享给其他应用的URI。
+2. 根据[系统Picker](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-app-startup#拉起系统应用的方式)的运行机制，通过Picker获取到的URI仅具有临时权限，应用退出或设备重启后如需继续访问，需按[授权持久化](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file-persistpermission)流程处理。
+3. URI路径不推荐进行拼接，拼接后的URI默认未授权。
 
 #### [h2]13900002 没有这个文件或目录
 
@@ -48,27 +46,19 @@ No such file or directory
 
 可能原因
 
-1.传入路径不是沙箱路径，或在应用沙箱内不存在该文件或目录。
-
-2.接口仅支持沙箱路径时，传入了URI。
-
-3.接口支持URI时，传入了自行拼接或二次编/解码后的不正确的URI。
-
-4.接口仅支持'utf-8'编码的文件或目录名，使用其他编码可能导致文件找不到。
-
-5.创建文件时，路径中目标文件所在的目录不存在。
+1. 传入路径不是沙箱路径，或在应用沙箱内不存在该文件或目录。
+2. 接口仅支持沙箱路径时，传入了URI。
+3. 接口支持URI时，传入了自行拼接或二次编/解码后的不正确的URI。
+4. 接口仅支持'utf-8'编码的文件或目录名，使用其他编码可能导致文件找不到。
+5. 创建文件时，路径中目标文件所在的目录不存在。
 
 处理步骤
 
-1.检查传入的路径是否为沙箱路径，在沙箱内是否存在。
-
-2.检查是否传错参数类型。
-
-3.检查是否传入了自行拼接或二次编/解码后的不正确的URI。
-
-4.检查文件或目录名编码格式是否是'utf-8'。
-
-5.创建文件时，检查文件父级目录是否存在。
+1. 检查传入的路径是否为沙箱路径，在沙箱内是否存在。
+2. 检查是否传错参数类型。
+3. 检查是否传入了自行拼接或二次编/解码后的不正确的URI。
+4. 检查文件或目录名编码格式是否是'utf-8'。
+5. 创建文件时，检查文件父级目录是否存在。
 
 #### [h2]13900003 没有这样的进程
 
@@ -86,9 +76,8 @@ No such process
 
 处理步骤
 
-1.确认进程是否被意外杀死。
-
-2.确认相关服务是否已启动。
+1. 确认进程是否被意外杀死。
+2. 确认相关服务是否已启动。
 
 #### [h2]13900004 系统调用被中断
 
@@ -106,9 +95,8 @@ Interrupted system call
 
 处理步骤
 
-1.检查多线程代码逻辑。
-
-2.重新进行系统调用。
+1. 检查多线程代码逻辑。
+2. 重新进行系统调用。
 
 #### [h2]13900005 I/O错误
 
@@ -182,15 +170,13 @@ Bad file descriptor
 
 可能原因
 
-1.此文件描述符已关闭。
-
-2.读写权限不匹配。
+1. 此文件描述符已关闭。
+2. 读写权限不匹配。
 
 处理步骤
 
-1.确认此文件描述符是否已关闭。
-
-2.确认此文件读写权限是否匹配。
+1. 确认此文件描述符是否已关闭。
+2. 确认此文件读写权限是否匹配。
 
 #### [h2]13900009 没有子进程
 
@@ -244,9 +230,8 @@ Out of memory
 
 处理步骤
 
-1.确认内存开销。
-
-2.管理系统内存开销。
+1. 确认内存开销。
+2. 管理系统内存开销。
 
 #### [h2]13900012 拒绝许可
 
@@ -260,17 +245,14 @@ Permission denied
 
 可能原因
 
-1.文件操作被DAC或selinux拦截。
-
-2.文件沙箱路径地址错误。
+1. 文件操作被DAC或selinux拦截。
+2. 文件沙箱路径地址错误。
 
 处理步骤
 
-1.访问被DAC自主式权限控制权限拦截，请排查文件的UGO权限。
-
-2.排查内核日志中是否有[avc拦截日志](https://gitcode.com/openharmony/docs/blob/master/zh-cn/device-dev/subsystems/subsys-security-selinux-develop-intro.md)，如果存在avc拦截告警，请通过“华为开发者联盟官网”->“支持”，[在线提单](https://developer.huawei.com/consumer/cn/support/)方式获取支持。
-
-3.确认文件的路径是否为应用内的沙箱路径（[应用沙箱目录与应用沙箱路径](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory#应用沙箱目录与应用沙箱路径)），文件管理系统禁止操作应用沙箱以外的文档。
+1. 访问被DAC自主式权限控制权限拦截，请排查文件的UGO权限。
+2. 排查内核日志中是否有[avc拦截日志](https://gitcode.com/openharmony/docs/blob/master/zh-cn/device-dev/subsystems/subsys-security-selinux-develop-intro.md)，如果存在avc拦截告警，请通过“华为开发者联盟官网”->“支持”，[在线提单](https://developer.huawei.com/consumer/cn/support/)方式获取支持。
+3. 确认文件的路径是否为应用内的沙箱路径（[应用沙箱目录与应用沙箱路径](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory#应用沙箱目录与应用沙箱路径)），文件管理系统禁止操作应用沙箱以外的文档。
 
 #### [h2]13900013 错误的地址
 
@@ -810,9 +792,8 @@ Unknown error
 
 处理步骤
 
-1.重试接口。
-
-2.重启服务。
+1. 重试接口。
+2. 重启服务。
 
 #### [h2]13900043 没有可用的锁
 
@@ -866,9 +847,8 @@ Connection failed
 
 处理步骤
 
-1.检查设备，确认设备状态正常。
-
-2.检查Wi-Fi和蓝牙，确认状态正常。
+1. 检查设备，确认设备状态正常。
+2. 检查Wi-Fi和蓝牙，确认状态正常。
 
 #### [h2]13900046 软件造成连接中断
 
@@ -886,9 +866,8 @@ Software caused connection abort
 
 处理步骤
 
-1.检查设备，确认设备状态正常。
-
-2.检查Wi-Fi和蓝牙，确认状态正常。
+1. 检查设备，确认设备状态正常。
+2. 检查Wi-Fi和蓝牙，确认状态正常。
 
 #### [h2]13900050 内部资源错误
 
@@ -924,9 +903,8 @@ mmap缓冲区读写越界。
 
 处理步骤
 
-1.调用[remaining](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#remaining)确认映射区的剩余可用空间。
-
-2.如需操作更大范围，可先调用[setLimit](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#setlimit)调整限制值。
+1. 调用[remaining](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#remaining)确认映射区的剩余可用空间。
+2. 如需操作更大范围，可先调用[setLimit](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#setlimit)调整限制值。
 
 #### [h2]13900052 mmap缓冲区已释放
 
@@ -940,15 +918,13 @@ mmap缓冲区已释放。
 
 可能原因
 
-1.对已调用[unmap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#unmap)/[unmapSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#unmapsync)释放的缓冲区进行操作。
-
-2.FileMapping对象的内部状态无效。
+1. 对已调用[unmap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#unmap)/[unmapSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#unmapsync)释放的缓冲区进行操作。
+2. FileMapping对象的内部状态无效。
 
 处理步骤
 
-1.确认mmap缓冲区是否已调用[unmap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#unmap)/[unmapSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#unmapsync)释放。
-
-2.代码如果已经调用过[unmap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#unmap)/[unmapSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#unmapsync)接口，则需重新调用[mmap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#fileiommap)/[mmapSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#fileiommapsync)接口建立新的映射。
+1. 确认mmap缓冲区是否已调用[unmap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#unmap)/[unmapSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#unmapsync)释放。
+2. 代码如果已经调用过[unmap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#unmap)/[unmapSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#unmapsync)接口，则需重新调用[mmap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#fileiommap)/[mmapSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#fileiommapsync)接口建立新的映射。
 
 #### [h2]13900053 mmap缓冲区只读
 
@@ -1300,15 +1276,13 @@ No such object
 
 可能原因
 
-1.输入错误的卷id。
-
-2.输入错误的包名。
+1. 输入错误的卷id。
+2. 输入错误的包名。
 
 处理步骤
 
-1.检查输入的卷是否存在。
-
-2.检查输入的应用包名是否存在。
+1. 检查输入的卷是否存在。
+2. 检查输入的应用包名是否存在。
 
 #### [h2]13600009 用户id超出范围
 
@@ -1484,15 +1458,13 @@ Get partition table failed.
 
 可能原因
 
-1.磁盘处于不可操作状态。
-
-2.内部流程执行失败或内部错误。
+1. 磁盘处于不可操作状态。
+2. 内部流程执行失败或内部错误。
 
 处理步骤
 
-1.建议重新插拔设备后重试。
-
-2.请通过“华为开发者联盟官网”->“支持”，[在线提单](https://developer.huawei.com/consumer/cn/support/)方式获取支持。
+1. 建议重新插拔设备后重试。
+2. 请通过“华为开发者联盟官网”->“支持”，[在线提单](https://developer.huawei.com/consumer/cn/support/)方式获取支持。
 
 #### [h2]13600022 创建分区失败
 
@@ -1506,19 +1478,15 @@ Create partition failed.
 
 可能原因
 
-1.分区参数非法。
-
-2.磁盘未分配空间不足。
-
-3.内部流程执行失败或内部错误。
+1. 分区参数非法。
+2. 磁盘未分配空间不足。
+3. 内部流程执行失败或内部错误。
 
 处理步骤
 
-1.确认分区参数（起始扇区、结束扇区）是否在有效范围内。
-
-2.确认磁盘是否有足够的未分配空间。
-
-3.请通过“华为开发者联盟官网”->“支持”，[在线提单](https://developer.huawei.com/consumer/cn/support/)方式获取支持。
+1. 确认分区参数（起始扇区、结束扇区）是否在有效范围内。
+2. 确认磁盘是否有足够的未分配空间。
+3. 请通过“华为开发者联盟官网”->“支持”，[在线提单](https://developer.huawei.com/consumer/cn/support/)方式获取支持。
 
 #### [h2]13600023 删除分区失败
 
@@ -1532,15 +1500,13 @@ Delete partition failed.
 
 可能原因
 
-1.磁盘处于不可操作状态。
-
-2.内部流程执行失败或内部错误。
+1. 磁盘处于不可操作状态。
+2. 内部流程执行失败或内部错误。
 
 处理步骤
 
-1.建议重新插拔设备后重试。
-
-2.请通过“华为开发者联盟官网”->“支持”，[在线提单](https://developer.huawei.com/consumer/cn/support/)方式获取支持。
+1. 建议重新插拔设备后重试。
+2. 请通过“华为开发者联盟官网”->“支持”，[在线提单](https://developer.huawei.com/consumer/cn/support/)方式获取支持。
 
 #### [h2]13600024 光盘为空
 
@@ -1558,9 +1524,8 @@ Empty disc.
 
 处理步骤
 
-1.确认光盘已正确放入光驱。
-
-2.确认光盘包含有效数据。
+1. 确认光盘已正确放入光驱。
+2. 确认光盘包含有效数据。
 
 #### [h2]13600025 写入ISO文件失败
 
@@ -1574,19 +1539,15 @@ Failed to write the ISO file.
 
 可能原因
 
-1.ISO文件损坏或格式不正确。
-
-2.写入过程中发生I/O错误。
-
-3.光盘写入权限不足。
+1. ISO文件损坏或格式不正确。
+2. 写入过程中发生I/O错误。
+3. 光盘写入权限不足。
 
 处理步骤
 
-1.检查ISO文件完整性。
-
-2.确认光盘状态正常且可写入。
-
-3.重试写入操作。
+1. 检查ISO文件完整性。
+2. 确认光盘状态正常且可写入。
+3. 重试写入操作。
 
 #### [h2]13600026 擦除操作失败
 
@@ -1618,15 +1579,13 @@ Source data not found.
 
 可能原因
 
-1.源文件路径错误或文件不存在。
-
-2.源数据已被删除或移动。
+1. 源文件路径错误或文件不存在。
+2. 源数据已被删除或移动。
 
 处理步骤
 
-1.确认源文件路径正确。
-
-2.确认源文件存在且可访问。
+1. 确认源文件路径正确。
+2. 确认源文件存在且可访问。
 
 #### [h2]13600028 刻录操作失败
 
@@ -1640,19 +1599,15 @@ Burn operation failed.
 
 可能原因
 
-1.光驱硬件故障或连接异常。
-
-2.刻录过程中断或超时。
-
-3.光盘质量不佳或已损坏。
+1. 光驱硬件故障或连接异常。
+2. 刻录过程中断或超时。
+3. 光盘质量不佳或已损坏。
 
 处理步骤
 
-1.检查光驱已连接且处于正常识别的空闲状态。
-
-2.更换质量良好的光盘。
-
-3.降低刻录速度后重试。
+1. 检查光驱已连接且处于正常识别的空闲状态。
+2. 更换质量良好的光盘。
+3. 降低刻录速度后重试。
 
 #### [h2]13600029 无正在进行的操作
 
@@ -1684,19 +1639,15 @@ Verification failed.
 
 可能原因
 
-1.刻录数据与源数据不一致。
-
-2.光盘读取错误。
-
-3.数据传输过程中出现错误。
+1. 刻录数据与源数据不一致。
+2. 光盘读取错误。
+3. 数据传输过程中出现错误。
 
 处理步骤
 
-1.重新进行刻录操作。
-
-2.检查光盘质量和光驱状态。
-
-3.验证源数据完整性。
+1. 重新进行刻录操作。
+2. 检查光盘质量和光驱状态。
+3. 验证源数据完整性。
 
 #### [h2]13600031 数据不匹配
 
@@ -1714,11 +1665,9 @@ Data mismatch.
 
 处理步骤
 
-1.重新刻录并校验数据。
-
-2.检查源文件在刻录过程中是否被修改。
-
-3.更换光盘或光驱后重试。
+1. 重新刻录并校验数据。
+2. 检查源文件在刻录过程中是否被修改。
+3. 更换光盘或光驱后重试。
 
 #### [h2]13600032 格式化分区失败
 
@@ -1732,15 +1681,13 @@ Format partition failed.
 
 可能原因
 
-1.磁盘处于不可操作状态。
-
-2.内部流程执行失败或内部错误。
+1. 磁盘处于不可操作状态。
+2. 内部流程执行失败或内部错误。
 
 处理步骤
 
-1.建议重新插拔设备后重试。
-
-2.请通过“华为开发者联盟官网”->“支持”，[在线提单](https://developer.huawei.com/consumer/cn/support/)方式获取支持。
+1. 建议重新插拔设备后重试。
+2. 请通过“华为开发者联盟官网”->“支持”，[在线提单](https://developer.huawei.com/consumer/cn/support/)方式获取支持。
 
 #### 公共文件访问错误码
 
@@ -1756,9 +1703,8 @@ IPC通信失败。
 
 可能原因
 
-1.server端服务不在。
-
-2.extension机制异常。
+1. server端服务不在。
+2. extension机制异常。
 
 处理步骤
 
@@ -1830,9 +1776,8 @@ notify注册失败。
 
 可能原因
 
-1.server端服务不在。
-
-2.extension机制异常。
+1. server端服务不在。
+2. extension机制异常。
 
 处理步骤
 
@@ -1850,9 +1795,8 @@ notify移除失败。
 
 可能原因
 
-1.server端服务不在。
-
-2.extension机制异常。
+1. server端服务不在。
+2. extension机制异常。
 
 处理步骤
 
@@ -1888,9 +1832,8 @@ js-server端通知代理失败。
 
 可能原因
 
-1.服务不在。
-
-2.extension机制异常。
+1. 服务不在。
+2. extension机制异常。
 
 处理步骤
 
@@ -1906,15 +1849,13 @@ Cloud status not ready
 
 可能原因
 
-1.未启用云。
-
-2.应用云同步开关未打开。
+1. 未启用云。
+2. 应用云同步开关未打开。
 
 处理步骤
 
-1.检查是否账号登录。
-
-2.检查云同步开关是否打开。
+1. 检查是否账号登录。
+2. 检查云同步开关是否打开。
 
 #### [h2]22400002 网络不可用
 
@@ -1966,13 +1907,10 @@ Inner error
 
 可能原因
 
-1.系统内部数据库请求失败或者SQL执行失败。
-
-2.系统出现空指针等异常。
-
-3.系统内存不足或内存异常。
-
-4.JS框架异常。
+1. 系统内部数据库请求失败或者SQL执行失败。
+2. 系统出现空指针等异常。
+3. 系统内存不足或内存异常。
+4. JS框架异常。
 
 处理步骤
 

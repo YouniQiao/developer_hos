@@ -2,8 +2,8 @@
 title: "Enums"
 upstream_id: "harmonyos-references/arkts-apis-audio-e"
 catalog: "harmonyos-references"
-content_hash: "55361b300499"
-synced_at: "2026-08-29T18:17:19.401790"
+content_hash: "7a40f25311ea"
+synced_at: "2026-09-14T19:48:18.768711"
 ---
 
 # Enums
@@ -101,8 +101,8 @@ synced_at: "2026-08-29T18:17:19.401790"
 | HDMI19+ | 27 | HDMI设备（例如HDMI、ARC、eARC等）。 |
 | LINE_DIGITAL19+ | 28 | 有线数字设备（例如S/PDIF等）。 |
 | REMOTE_DAUDIO18+ | 29 | 分布式设备。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| HEARING_AID20+ | 30 | 助听器设备。 应用调用获取设备的相关接口时，该类型默认返回匿名类型。从API版本26.0.0开始，如需获取具体设备类型，可先调用[declareDeviceTypesCompatibility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audioroutingmanager#declaredevicetypescompatibility)进行设备类型兼容声明。 |
-| NEARLINK20+ | 31 | 星闪设备。 应用调用获取设备的相关接口时，该类型默认返回匿名类型。从API版本26.0.0开始，如需获取具体设备类型，可先调用[declareDeviceTypesCompatibility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audioroutingmanager#declaredevicetypescompatibility)进行设备类型兼容声明。 |
+| HEARING_AID20+ | 30 | 助听器设备。 该类型默认以BLUETOOTH_SCO作为匿名类型返回。从API版本26.0.0开始，如需获取真实设备类型，可先调用[declareDeviceTypesCompatibility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audioroutingmanager#declaredevicetypescompatibility)进行设备类型兼容声明。 |
+| NEARLINK20+ | 31 | 星闪设备。 该类型默认以BLUETOOTH_SCO作为匿名类型返回。从API版本26.0.0开始，如需获取真实设备类型，可先调用[declareDeviceTypesCompatibility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audioroutingmanager#declaredevicetypescompatibility)进行设备类型兼容声明。 |
 | SYSTEM_PRIVATE22+ | 200 | 系统私有设备（由于该设备在系统中属于私有设备，因此应用程序可以忽略该设备）。 |
 | DEFAULT9+ | 1000 | 默认设备类型。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 

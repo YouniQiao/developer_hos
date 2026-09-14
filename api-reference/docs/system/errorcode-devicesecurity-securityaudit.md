@@ -2,49 +2,13 @@
 title: "SecurityAudit（安全审计）"
 upstream_id: "harmonyos-references/errorcode-devicesecurity-securityaudit"
 catalog: "harmonyos-references"
-content_hash: "6f0008ba3e38"
-synced_at: "2026-07-28T16:50:27.016832"
+content_hash: "956179d0e704"
+synced_at: "2026-09-14T19:47:33.098711"
 ---
 
 # SecurityAudit（安全审计）
 
 ![](./img/note_3.0-zh-cn.png) 以下仅介绍本模块特有错误码，通用错误码请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
-
-#### 201 权限校验失败
-
-错误信息
-
-check permission fail.
-
-错误描述
-
-权限校验失败。
-
-可能原因
-
-应用包未申请ohos.permission.QUERY_AUDIT_EVENT或ohos.permission.kernel.AUTH_AUDIT_EVENT权限。
-
-处理步骤
-
-只允许清单内的企业类应用申请该权限，申请方式请参考：[企业类应用可用权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-enterprise-apps)。
-
-#### 401 参数检查失败
-
-错误信息
-
-Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed.
-
-错误描述
-
-参数检查失败。
-
-可能原因
-
-必选参数没有传入，或者参数类型、规格错误。
-
-处理步骤
-
-请检查必选参数是否没有传入，或者传的参数类型、规格是否错误。
 
 #### 1012000001 内部异常
 

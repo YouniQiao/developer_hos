@@ -2,14 +2,14 @@
 title: "OH_AVRecorder_Range"
 upstream_id: "harmonyos-references/capi-avrecorder-oh-avrecorder-range"
 catalog: "harmonyos-references"
-content_hash: "ec2b99effccb"
-synced_at: "2026-08-14T15:55:33.288784"
+content_hash: "e6876bae8a05"
+synced_at: "2026-09-14T19:48:44.871679"
 ---
 
 # OH_AVRecorder_Range
 
 ```
-typedef struct OH_AVRecorder_Range {...} OH_AVRecorder_Range;
+typedef struct OH_AVRecorder_Range {...} OH_AVRecorder_Range
 ```
 
 #### 概述

@@ -2,8 +2,8 @@
 title: "@ohos.arkui.dragController (DragController)"
 upstream_id: "harmonyos-references/js-apis-arkui-dragcontroller"
 catalog: "harmonyos-references"
-content_hash: "e6e40d2cacf6"
-synced_at: "2026-08-29T18:12:21.813001"
+content_hash: "2d9771427285"
+synced_at: "2026-09-14T19:45:17.497612"
 ---
 
 # @ohos.arkui.dragController (DragController)
@@ -135,7 +135,7 @@ struct DragControllerPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518577.gif)
+ ![](./img/zh-cn_image_0000002753456339.gif)
 
 #### dragController.executeDrag(deprecated)
 
@@ -284,7 +284,7 @@ struct DragControllerPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639380.gif)
+ ![](./img/zh-cn_image_0000002723856574.gif)
 
 #### DragInfo
 
@@ -576,7 +576,7 @@ struct DragControllerPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358601.gif)
+ ![](./img/zh-cn_image_0000002723696656.gif)
 
 #### DragAction11+
 
@@ -848,7 +848,7 @@ struct ImageExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799292.gif)
+ ![](./img/zh-cn_image_0000002753296423.gif)
 
 #### [h2]on('statusChange')11+
 
@@ -1284,7 +1284,7 @@ struct DragControllerPage {
   }
 }
 ```
-![](./img/zh-cn_image_0000002731518579.gif)
+ ![](./img/zh-cn_image_0000002753456341.gif)
 
 #### DragStartRequestStatus18+
 
@@ -1326,7 +1326,7 @@ struct DragControllerPage {
 | --- | --- | --- | --- | --- |
 | stillTimeLimit | number | 否 | 是 | 进入悬停检测BEGIN状态所需保持静止的时间，单位：ms。取值范围为[0, 231-1]的整数。输入浮点数时只取整数部分。输入非法值（负数、null、undefined、NaN）时取默认值500。 |
 | updateInterval | number | 否 | 是 | 进入悬停检测UPDATE状态后，更新通知的时间间隔，单位：ms。取值范围为[0, 231-1]的整数。输入浮点数时只取整数部分。输入非法值（负数、null、undefined、NaN）时取默认值100。 |
-| updateNotifyCount | number | 否 | 是 | 进入悬停检测UPDATE状态后，更新通知的最大次数。取值范围为[0, 231-1]的整数。输入浮点数时只取整数部分。输入非法值（负数、null、undefined、NaN）时取默认值3。 |
+| updateNotifyCount | number | 否 | 是 | 进入悬停检测UPDATE状态后，更新通知的最大次数。取值范围为[0, 231-1]的整数。输入浮点数时只取整数部分。输入非法值（负数、null、undefined、NaN）时取默认值3。取值为0时，不发送UPDATE通知，并在BEGIN状态后立即触发END状态。 |
 | updateToFinishInterval | number | 否 | 是 | 从UPDATE状态到END状态的最长等待时间，单位：ms。取值范围为[0, 231-1]的整数。输入浮点数时只取整数部分。输入非法值（负数、null、undefined、NaN）时取默认值100。 |
 
 #### SpringLoadingDragInfos20+

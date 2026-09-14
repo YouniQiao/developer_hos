@@ -2,53 +2,13 @@
 title: "TrustedAppService（可信应用服务）"
 upstream_id: "harmonyos-references/errorcode-devicesecurity-taas"
 catalog: "harmonyos-references"
-content_hash: "b9eeb3bde234"
-synced_at: "2026-07-28T16:50:26.959467"
+content_hash: "521e89b2327b"
+synced_at: "2026-09-14T19:47:33.064860"
 ---
 
 # TrustedAppService（可信应用服务）
 
 ![](./img/note_3.0-zh-cn.png) 以下仅介绍本模块特有错误码，通用错误码请参考[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)说明文档。
-
-#### 201 权限校验失败
-
-错误信息
-
-permission denied.
-
-错误描述
-
-权限校验失败。
-
-可能原因
-
-1. 应用未开通可信应用服务。
-2. 应用未申请必要权限。
-
-处理步骤
-
-1. 开通可信应用服务，请参考“[开通Device Security服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-deviceverify-activateservice)”。
-2. 申请位置权限，请参考开发指南中安全地理位置[开发步骤](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-taas-securelocation#开发步骤)。
-
-#### 401 参数检查失败
-
-错误信息
-
-argument is invalid.
-
-错误描述
-
-参数检查失败。
-
-可能原因
-
-1. 未使用Kit提供的枚举值。
-2. userData参数长度不符合要求。
-
-处理步骤
-
-1. 使用Kit中提供的枚举值作为传入参数。
-2. 修改userData参数的内容，保证长度在16到127 Bytes之间。
 
 #### 1011500001 无效的算法参数
 
@@ -236,7 +196,7 @@ get attestation key failed.
 
 initialize secure camera failed.
 
-错误描述。
+错误描述
 
 安全相机初始化失败。
 

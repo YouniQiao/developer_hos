@@ -2,8 +2,8 @@
 title: "@ohos.advertising (广告服务框架)"
 upstream_id: "harmonyos-references/js-apis-advertising"
 catalog: "harmonyos-references"
-content_hash: "fdb8adb597ae"
-synced_at: "2026-07-09T17:28:00.007004"
+content_hash: "c72034a69a5c"
+synced_at: "2026-09-14T19:49:07.966616"
 ---
 
 # @ohos.advertising (广告服务框架)
@@ -30,7 +30,7 @@ showAd(ad: Advertisement, options: AdDisplayOptions, context?: common.UIAbilityC
 
 参数：
 
-| **名称** | **类型** | 必填 | 说明 |
+| 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | ad | [Advertisement](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-advertisement#advertisement) | 是 | 广告对象。 |
 | options | [AdDisplayOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-advertising#addisplayoptions) | 是 | 广告展示参数。 |
@@ -42,7 +42,7 @@ showAd(ad: Advertisement, options: AdDisplayOptions, context?: common.UIAbilityC
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Invalid input parameter. Possible causes: 1. Mandatory parameters are left unspecified. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. |
 | 21800001 | System internal error. |
 | 21800004 | Failed to display the ad. |
 
@@ -77,7 +77,7 @@ getAdRequestBody(adParams: AdRequestParams[], adOptions: AdOptions): Promise<str
 
 参数：
 
-| **名称** | **类型** | 必填 | 说明 |
+| 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | adParams | [AdRequestParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-advertising#adrequestparams)[] | 是 | 广告请求参数。 **说明：** 该接口体的adId参数可以为空。 |
 | adOptions | [AdOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-advertising#adoptions) | 是 | 广告配置参数。 |
@@ -94,8 +94,8 @@ getAdRequestBody(adParams: AdRequestParams[], adOptions: AdOptions): Promise<str
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Invalid input parameter. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
-| 801 | Device not supported. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 801 | Capability not supported. |
 | 21800001 | System internal error. |
 
 示例：
@@ -126,7 +126,7 @@ parseAdResponse(adResponse: string, listener: MultiSlotsAdLoadListener, context:
 
 参数：
 
-| **名称** | **类型** | 必填 | 说明 |
+| 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | adResponse | string | 是 | 广告响应体。 |
 | listener | [MultiSlotsAdLoadListener](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-advertising#multislotsadloadlistener) | 是 | 请求广告回调监听。 |
@@ -138,8 +138,8 @@ parseAdResponse(adResponse: string, listener: MultiSlotsAdLoadListener, context:
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Invalid input parameter. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
-| 801 | Device not supported. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 801 | Capability not supported. |
 | 21800001 | System internal error. |
 | 21800005 | Failed to parse the ad response. |
 
@@ -182,7 +182,7 @@ registerWebAdInterface(controller: web_webview.WebviewController, context: commo
 
 参数：
 
-| **名称** | **类型** | 必填 | 说明 |
+| 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | controller | web_webview.[WebviewController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller) | 是 | Web组件控制器。 |
 | context | common.[UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext) | 是 | UIAbility的上下文环境。 |
@@ -193,7 +193,7 @@ registerWebAdInterface(controller: web_webview.WebviewController, context: commo
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Invalid input parameter. Possible causes: 1. Mandatory parameters are left unspecified. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. |
 | 21800001 | System internal error. |
 
 示例：
@@ -237,7 +237,7 @@ registerWebAdInterface(controller: web_webview.WebviewController, context: commo
 
 参数：
 
-| **名称** | **类型** | 必填 | 说明 |
+| 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | controller | web_webview.[WebviewController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller) | 是 | Web组件控制器。 |
 | context | common.[UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext) | 是 | UIAbility的上下文环境。 |
@@ -249,7 +249,7 @@ registerWebAdInterface(controller: web_webview.WebviewController, context: commo
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Invalid input parameter. Possible causes: Mandatory parameters are left unspecified. |
+| 401 | Parameter error. Possible causes: Mandatory parameters are left unspecified. |
 | 21800001 | System internal error. |
 
 示例：
@@ -293,7 +293,7 @@ deleteWebAdInterface(controller: web_webview.WebviewController, needRefresh: boo
 
 参数：
 
-| **名称** | **类型** | 必填 | 说明 |
+| 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | controller | web_webview.[WebviewController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller) | 是 | Web组件控制器。 |
 | needRefresh | boolean | 是 | 是否需要刷新页面（true: 需要；false: 不需要）。 |
@@ -304,7 +304,7 @@ deleteWebAdInterface(controller: web_webview.WebviewController, needRefresh: boo
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Invalid input parameter. Possible causes: Mandatory parameters are left unspecified. |
+| 401 | Parameter error. Possible causes: Mandatory parameters are left unspecified. |
 | 21800001 | System internal error. |
 
 示例：
@@ -353,7 +353,7 @@ constructor(context: common.Context)
 
 参数：
 
-| **名称** | **类型** | 必填 | 说明 |
+| 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | context | common.[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | ability或application的上下文环境。 |
 
@@ -383,7 +383,7 @@ loadAd(adParam: AdRequestParams, adOptions: AdOptions, listener: AdLoadListener)
 
 参数：
 
-| **名称** | **类型** | 必填 | 说明 |
+| 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | adParam | [AdRequestParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-advertising#adrequestparams) | 是 | 广告请求参数。 |
 | adOptions | [AdOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-advertising#adoptions) | 是 | 广告配置参数。 |
@@ -395,8 +395,8 @@ loadAd(adParam: AdRequestParams, adOptions: AdOptions, listener: AdLoadListener)
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Invalid input parameter. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
-| 801 | Device not supported. 适用版本：12+ |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 801 | Capability not supported. 适用版本：12+ |
 | 21800001 | System internal error. |
 | 21800003 | Failed to load the ad request. |
 
@@ -443,7 +443,7 @@ loadAdWithMultiSlots(adParams: AdRequestParams[], adOptions: AdOptions, listener
 
 参数：
 
-| **名称** | **类型** | 必填 | 说明 |
+| 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | adParams | [AdRequestParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-advertising#adrequestparams)[] | 是 | 广告请求参数。 |
 | adOptions | [AdOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-advertising#adoptions) | 是 | 广告配置参数。 |
@@ -455,8 +455,8 @@ loadAdWithMultiSlots(adParams: AdRequestParams[], adOptions: AdOptions, listener
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Invalid input parameter. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
-| 801 | Device not supported. 适用版本：12+ |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
+| 801 | Capability not supported. 适用版本：12+ |
 | 21800001 | System internal error. |
 | 21800003 | Failed to load the ad request. |
 
@@ -512,7 +512,7 @@ onAdLoadFailure(errorCode: number, errorMsg: string): void
 
 参数：
 
-| 名称 | **类型** | 必填 | 说明 |
+| 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | errorCode | number | 是 | 广告请求失败的错误码。 |
 | errorMsg | string | 是 | 广告请求失败的错误信息。 |
@@ -545,7 +545,7 @@ onAdLoadSuccess(ads: Array<Advertisement>): void
 
 参数：
 
-| 名称 | **类型** | 必填 | 说明 |
+| 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | ads | Array | 是 | 广告数据。 |
 
@@ -585,7 +585,7 @@ onAdLoadFailure(errorCode: number, errorMsg: string): void
 
 参数：
 
-| 名称 | **类型** | 必填 | 说明 |
+| 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | errorCode | number | 是 | 广告请求失败的错误码。 |
 | errorMsg | string | 是 | 广告请求失败的错误信息。 |
@@ -618,7 +618,7 @@ onAdLoadSuccess(adsMap: Map<string, Array<Advertisement>>): void
 
 参数：
 
-| **名称** | **类型** | 必填 | 说明 |
+| 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | adsMap | Map> | 是 | 广告数据，是以广告位ID为键，存储请求到的广告内容的映射集合。 |
 
@@ -658,7 +658,7 @@ onStatusChanged(status: string, ad: Advertisement, data: string)
 
 参数：
 
-| 名称 | 类型 | 必填 | 说明 |
+| 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | status | string | 是 | 广告展示状态。 - onAdLoad：广告加载成功。 - onAdFail：广告加载失败。 - onAdOpen：打开广告。 - onAdClick：点击广告。 - onAdClose：关闭广告。 - onMediaProgress：广告播放进度。 - onMediaStart：广告开始播放。 - onMediaPause：广告暂停播放。 - onMediaStop：广告停止播放。 - onMediaComplete：广告播放完成。 - onMediaCountDown：广告倒计时。 - onMediaError：广告播放失败。 - onLandscape：竖屏状态下点击全屏按钮。 - onPortrait：全屏状态下点击返回按钮。 - onBackClicked：点击返回按钮。 |
 | ad | [Advertisement](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-advertisement#advertisement) | 是 | 发生状态变化的广告内容。 |

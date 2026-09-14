@@ -2,8 +2,8 @@
 title: "OH_CryptoEccSignatureSpec"
 upstream_id: "harmonyos-references/capi-cryptosignatureapi-oh-cryptoeccsignaturespec"
 catalog: "harmonyos-references"
-content_hash: "9ad39a0c5155"
-synced_at: "2026-07-09T00:59:13.854725"
+content_hash: "622168586794"
+synced_at: "2026-09-14T19:47:31.717026"
 ---
 
 # OH_CryptoEccSignatureSpec
@@ -14,7 +14,7 @@ typedef struct OH_CryptoEccSignatureSpec OH_CryptoEccSignatureSpec
 
 #### 概述
 
-定义ECC签名规范结构体。
+ECC签名规格结构体，表示ECC签名规格。
 
 起始版本： 20
 

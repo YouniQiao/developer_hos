@@ -2,8 +2,8 @@
 title: "ContainerReader"
 upstream_id: "harmonyos-references/ts-container-containerreader"
 catalog: "harmonyos-references"
-content_hash: "d2187cef941d"
-synced_at: "2026-08-29T18:13:16.606540"
+content_hash: "1de6be70a796"
+synced_at: "2026-09-14T19:45:35.217577"
 ---
 
 # ContainerReader
@@ -19,6 +19,12 @@ ContainerReader是容器断点组件，用于在动态场景下根据容器尺�
 - 更多关于容器断点的开发指导和完整示例，可参考[容器断点 (ContainerReader)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-container-reader)。
 
 起始版本： 26.0.0
+
+#### 导入模块
+
+```
+import { ContainerReader } from '@kit.ArkUI';
+```
 
 #### 子组件
 
@@ -184,7 +190,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799520.gif)
+ ![](./img/zh-cn_image_0000002723696894.gif)
 
 #### [h2]示例2 （自定义断点配置）
 
@@ -258,7 +264,7 @@ struct Index {
 ```
  通过单击按钮改变父容器的宽度，返回不同的宽度断点值，从而调整布局方向。
 
-![](./img/zh-cn_image_0000002731518805.gif)
+![](./img/zh-cn_image_0000002753296661.gif)
 
 #### [h2]示例3 （利用宽度断点动态调整列数）
 
@@ -342,4 +348,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639606.gif)
+ ![](./img/zh-cn_image_0000002753456579.gif)

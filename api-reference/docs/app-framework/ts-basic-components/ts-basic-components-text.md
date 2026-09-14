@@ -2,8 +2,8 @@
 title: "Text"
 upstream_id: "harmonyos-references/ts-basic-components-text"
 catalog: "harmonyos-references"
-content_hash: "69c8ea98a761"
-synced_at: "2026-09-01T18:11:50.237189"
+content_hash: "713780759161"
+synced_at: "2026-09-14T19:45:45.585374"
 ---
 
 # Text
@@ -119,7 +119,7 @@ Text(content?: string | Resource , value?: TextOptions)
 | caretColor14+ | 设置文本组件选中区域手柄颜色。 |
 | copyOption9+ | 设置组件是否支持文本可复制粘贴。 |
 | draggable9+ | 设置选中文本拖拽效果。 |
-| selectedBackgroundColor14+ | 设置文本选中底板颜色。 |
+| selectedBackgroundColor14+ | 设置文本选中高亮颜色。 |
 | selection11+ | 设置选中区域。 |
 | textSelectable12+ | 设置是否支持文本可选择、可获焦。 |
 
@@ -634,7 +634,7 @@ fontFeature(value: string)
 
 fontFeature属性列表：
 
-![](./img/zh-cn_image_0000002736435043.png)
+![](./img/zh-cn_image_0000002753296807.png)
 
 设置fontFeature属性，fontFeature是OpenType字体的高级排版能力，如支持连字、数字等宽等特性，一般用在自定义字体中，其能力需要字体本身支持。
 
@@ -1273,8 +1273,6 @@ orphanCharOptimization(enabled: Optional<boolean>)
 
 元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
-模型约束： 此接口仅可在Stage模型下使用。
-
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 参数：
@@ -1327,7 +1325,7 @@ punctuationOverflow(enabled: Optional<boolean>)
 
 selectedBackgroundColor(color: ResourceColor)
 
-设置文本选中底板颜色。如果未设置不透明度，默认不透明度为20%。未通过该接口设置时，默认文本选中底板颜色为'#007DFF'（蓝色）。
+设置文本选中高亮颜色。如果未设置不透明度或设置为完全不透明，默认使用20%不透明度。未通过该接口设置时，默认文本选中高亮颜色为'#007DFF'（蓝色）。
 
 元服务API： 从API version 14开始，该接口支持在元服务中使用。
 
@@ -1339,7 +1337,7 @@ selectedBackgroundColor(color: ResourceColor)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| color | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 是 | 文本选中底板颜色。 |
+| color | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 是 | 文本选中高亮颜色。 |
 
 #### [h2]selection11+
 
@@ -2055,7 +2053,7 @@ struct TextExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706835896.gif)
+ ![](./img/zh-cn_image_0000002753456725.gif)
 
 #### [h2]示例2（设置文本样式）
 
@@ -2174,7 +2172,7 @@ struct TextExample2 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736315001.gif)
+ ![](./img/zh-cn_image_0000002723856960.gif)
 
 #### [h2]示例3（设置文本超长省略）
 
@@ -2283,7 +2281,7 @@ struct TextExample3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706675958.gif)
+ ![](./img/zh-cn_image_0000002723697042.gif)
 
 #### [h2]示例4（设置文本断行及折行）
 
@@ -2367,7 +2365,7 @@ struct TextExample4 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736435045.gif)
+ ![](./img/zh-cn_image_0000002753296809.gif)
 
 #### [h2]示例5（设置文本选中和复制）
 
@@ -2420,7 +2418,7 @@ struct TextExample5 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706835898.gif)
+ ![](./img/zh-cn_image_0000002753456727.gif)
 
 #### [h2]示例6（设置文本自适应和缩放倍数限制范围）
 
@@ -2464,7 +2462,7 @@ struct TextExample6 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736315003.png)
+ ![](./img/zh-cn_image_0000002723856962.png)
 
 #### [h2]示例7（设置文本识别）
 
@@ -2516,7 +2514,7 @@ struct TextExample7 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706675960.png)
+ ![](./img/zh-cn_image_0000002723697044.png)
 
 #### [h2]示例8（文本绑定自定义菜单）
 
@@ -2637,7 +2635,7 @@ function MenuStyles() {
   .backgroundColor('#F0F0F0')
 }
 ```
- ![](./img/zh-cn_image_0000002736435047.gif)
+ ![](./img/zh-cn_image_0000002753296811.gif)
 
 #### [h2]示例9（设置文本特性与行间距）
 
@@ -2695,7 +2693,7 @@ struct TextExample9 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706835900.png)
+ ![](./img/zh-cn_image_0000002753456729.png)
 
 #### [h2]示例10（获取文本信息）
 
@@ -2794,7 +2792,7 @@ struct TextExample10 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736315005.gif)
+ ![](./img/zh-cn_image_0000002723856964.gif)
 
 #### [h2]示例11（实现键盘框选文本）
 
@@ -2822,7 +2820,7 @@ struct TextExample11 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706675962.gif)
+ ![](./img/zh-cn_image_0000002723697046.gif)
 
 #### [h2]示例12（文本扩展自定义菜单）
 
@@ -2910,7 +2908,7 @@ struct TextExample12 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736435049.gif)
+ ![](./img/zh-cn_image_0000002753296813.gif)
 
 #### [h2]示例13（配置隐私隐藏）
 
@@ -2932,7 +2930,7 @@ struct TextExample13 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706835902.gif)
+ ![](./img/zh-cn_image_0000002753456731.gif)
 
 #### [h2]示例14（设置中西文自动间距）
 
@@ -2958,7 +2956,7 @@ struct TextExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736315007.png)
+ ![](./img/zh-cn_image_0000002723856966.png)
 
 #### [h2]示例15（文本颜色按线性或径向渐变）
 
@@ -3025,7 +3023,7 @@ struct ShaderColorStyle {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706675964.png)
+ ![](./img/zh-cn_image_0000002723697048.png)
 
 #### [h2]示例16（配置除去行尾空格）
 
@@ -3055,7 +3053,7 @@ struct TextExample16 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736435051.png)
+ ![](./img/zh-cn_image_0000002753296815.png)
 
 #### [h2]示例17（文本垂直对齐）
 
@@ -3074,7 +3072,7 @@ struct TextExample14 {
         // $r('app.media.startIcon')需要替换为开发者所需的图像资源文件。
         ImageSpan($r('app.media.startIcon'))
           .width(30).height(30)
-          .verticalAlign(ImageSpanAlignment.FOLLOW_PARAGRAPH)// 从API version 20开始，支持ImageSpanAlignment.FOLLOW_PARAGRAPH
+          .verticalAlign(ImageSpanAlignment.FOLLOW_PARAGRAPH) // 从API version 20开始，支持ImageSpanAlignment.FOLLOW_PARAGRAPH
         Span('World')
       }
       .textVerticalAlign(TextVerticalAlign.CENTER)
@@ -3085,7 +3083,7 @@ struct TextExample14 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706835904.png)
+ ![](./img/zh-cn_image_0000002753456733.png)
 
 #### [h2]示例18（文本翻牌动效）
 
@@ -3118,7 +3116,7 @@ struct TextNumberTransition {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736315009.gif)
+ ![](./img/zh-cn_image_0000002723856968.gif)
 
 #### [h2]示例19（文本内容区垂直对齐）
 
@@ -3143,7 +3141,7 @@ struct TextContentAlignExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706675966.png)
+ ![](./img/zh-cn_image_0000002723697050.png)
 
 #### [h2]示例20（倍数行高和最大最小行高）
 
@@ -3186,7 +3184,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736435053.png)
+ ![](./img/zh-cn_image_0000002753296817.png)
 
 #### [h2]示例21（文本设置显示最小行数）
 
@@ -3217,7 +3215,7 @@ struct TextExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706835906.png)
+ ![](./img/zh-cn_image_0000002753456735.png)
 
 #### [h2]示例22（设置文本选择区域并高亮显示）
 
@@ -3248,7 +3246,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736315011.gif)
+ ![](./img/zh-cn_image_0000002723856970.gif)
 
 #### [h2]示例23（设置行首标点符号压缩和行尾标点符号悬挂）
 
@@ -3300,7 +3298,7 @@ struct PunctuationDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706675968.gif)
+ ![](./img/zh-cn_image_0000002723697052.gif)
 
 #### [h2]示例24（设置自适应间距）
 
@@ -3363,7 +3361,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736435055.gif)
+ ![](./img/zh-cn_image_0000002753296819.gif)
 
 #### [h2]示例25（设置文本拖拽时的背板样式）
 
@@ -3389,7 +3387,7 @@ struct TextTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706835908.png)
+ ![](./img/zh-cn_image_0000002753456737.png)
 
 #### [h2]示例26（设置文本排版方向）
 
@@ -3430,7 +3428,7 @@ struct TextExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736315013.png)
+ ![](./img/zh-cn_image_0000002723856972.png)
 
 #### [h2]示例27（获取指定坐标和范围对应的文本信息）
 
@@ -3508,7 +3506,7 @@ struct TextExample10 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706675970.gif)
+ ![](./img/zh-cn_image_0000002723697054.gif)
 
 #### [h2]示例28（设置文本排版时是否使能孤字优化）
 
@@ -3546,7 +3544,7 @@ struct TextExample {
 ```
  该效果图会因设备尺寸差异有显示区别，仅供参考。
 
-![](./img/zh-cn_image_0000002736435057.png)
+![](./img/zh-cn_image_0000002753296821.png)
 
 #### [h2]示例29（设置可变字体的属性）
 
@@ -3575,7 +3573,7 @@ struct TextExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706835910.gif)
+ ![](./img/zh-cn_image_0000002753456739.gif)
 
 #### [h2]示例30（设置图片预览菜单）
 
@@ -3604,7 +3602,7 @@ struct TextExample {
           // $r('app.media.startIcon')需要替换为开发者所需的图像资源文件。
           ImageSpan($r('app.media.startIcon'))
             .width(30).height(30)
-            .verticalAlign(ImageSpanAlignment.FOLLOW_PARAGRAPH)// 从API version 20开始，支持ImageSpanAlignment.FOLLOW_PARAGRAPH
+            .verticalAlign(ImageSpanAlignment.FOLLOW_PARAGRAPH) // 从API version 20开始，支持ImageSpanAlignment.FOLLOW_PARAGRAPH
           Span('World')
         }
         .textVerticalAlign(TextVerticalAlign.CENTER)
@@ -3621,7 +3619,7 @@ struct TextExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736315015.gif)
+ ![](./img/zh-cn_image_0000002723856974.gif)
 
 #### [h2]示例31（设置属性字符串段落缓存策略）
 
@@ -3757,7 +3755,7 @@ struct StyledStringAppend {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706675972.png)
+ ![](./img/zh-cn_image_0000002723697056.png)
 
 #### [h2]示例32（设置文本尾部缩进）
 
@@ -3802,7 +3800,7 @@ struct TailIndentsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736435059.png)
+ ![](./img/zh-cn_image_0000002753296823.png)
 
 #### [h2]示例33（设置文本选择的AI菜单）
 
@@ -3830,7 +3828,7 @@ struct DataDetectorDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706835912.gif)
+ ![](./img/zh-cn_image_0000002753456741.gif)
 
 #### [h2]示例34（长按含表情符号文本绘制渐变高亮背景）
 
@@ -3953,4 +3951,4 @@ struct Utf16GlyphHighlightPage {
 ```
  该效果图会因设备尺寸差异有显示区别，仅供参考。
 
-![](./img/zh-cn_image_0000002736315017.gif)
+![](./img/zh-cn_image_0000002723856976.gif)

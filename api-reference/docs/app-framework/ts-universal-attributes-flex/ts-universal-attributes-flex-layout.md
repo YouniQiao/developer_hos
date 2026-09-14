@@ -2,8 +2,8 @@
 title: "Flex布局"
 upstream_id: "harmonyos-references/ts-universal-attributes-flex-layout"
 catalog: "harmonyos-references"
-content_hash: "4e0d63802773"
-synced_at: "2026-08-07T15:56:23.937822"
+content_hash: "306a8730afdf"
+synced_at: "2026-09-14T19:45:28.037227"
 ---
 
 # Flex布局
@@ -98,6 +98,8 @@ flexShrink(value: number): T
 alignSelf(value: ItemAlign): T
 
 子组件在父容器交叉轴（与主轴垂直的方向）的对齐格式，设置后会覆盖父容器的alignItems设置。仅Flex、Column、Row、DynamicLayout和GridRow容器支持此属性。
+
+![](./img/note_3.0-zh-cn.png) 当父容器为[Flex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-flex)时，alignSelf仅在父容器设置FlexWrap.NoWrap时生效；设置FlexWrap.Wrap或FlexWrap.WrapReverse时不生效。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -207,4 +209,4 @@ struct FlexExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002698222461.png)
+ ![](./img/zh-cn_image_0000002753296543.png)

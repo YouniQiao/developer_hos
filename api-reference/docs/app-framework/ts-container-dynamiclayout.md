@@ -2,8 +2,8 @@
 title: "DynamicLayout"
 upstream_id: "harmonyos-references/ts-container-dynamiclayout"
 catalog: "harmonyos-references"
-content_hash: "88b135e79a1e"
-synced_at: "2026-08-29T18:13:16.430209"
+content_hash: "9f21b69ae217"
+synced_at: "2026-09-14T19:45:35.162603"
 ---
 
 # DynamicLayout
@@ -14,6 +14,12 @@ synced_at: "2026-08-29T18:13:16.430209"
 
 - 该组件从API version 24开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 - 本模块接口仅可在Stage模型下使用。
+
+#### 导入模块
+
+```
+import { DynamicLayout } from '@kit.ArkUI';
+```
 
 #### 子组件
 
@@ -227,7 +233,7 @@ interface Product {
   image: string;
 }
 ```
- ![](./img/zh-cn_image_0000002731518803.png)
+ ![](./img/zh-cn_image_0000002753296659.png)
 
 #### [h2]示例2（切换布局算法）
 
@@ -345,7 +351,7 @@ struct LayoutSwitchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639604.gif)
+ ![](./img/zh-cn_image_0000002753456577.gif)
 
 #### [h2]示例3（修改布局算法属性）
 
@@ -414,4 +420,4 @@ struct PropertyChangeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358825.gif)
+ ![](./img/zh-cn_image_0000002723856812.gif)

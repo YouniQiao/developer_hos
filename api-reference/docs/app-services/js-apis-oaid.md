@@ -2,8 +2,8 @@
 title: "@ohos.identifier.oaid (开放匿名设备标识服务)"
 upstream_id: "harmonyos-references/js-apis-oaid"
 catalog: "harmonyos-references"
-content_hash: "cccbef6a7187"
-synced_at: "2026-08-29T18:18:11.467268"
+content_hash: "4005faaf3e0a"
+synced_at: "2026-09-14T19:49:07.971967"
 ---
 
 # @ohos.identifier.oaid (开放匿名设备标识服务)
@@ -55,6 +55,7 @@ import { hilog } from '@kit.PerformanceAnalysisKit';
 
 void identifier.getOAID().then((data: string) => {
   const oaid: string = data;
+  hilog.info(0x0000, 'testTag', `Succeeded in getting OAID: ${oaid}`);
 }).catch((error: BusinessError) => {
   hilog.error(0x0000, 'testTag', `Failed to get oaid. Code is ${error.code}, message is ${error.message}`);
 });
@@ -97,5 +98,6 @@ identifier.getOAID((err: BusinessError, data: string) => {
     return;
   }
   const oaid: string = data;
+  hilog.info(0x0000, 'testTag', `Succeeded in getting OAID: ${oaid}`);
 });
 ```

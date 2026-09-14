@@ -2,14 +2,14 @@
 title: "OH_AVRecorder_EncoderInfo"
 upstream_id: "harmonyos-references/capi-avrecorder-oh-avrecorder-encoderinfo"
 catalog: "harmonyos-references"
-content_hash: "62cefb5ebd08"
-synced_at: "2026-08-14T15:55:33.313563"
+content_hash: "e64ca07ba241"
+synced_at: "2026-09-14T19:48:44.882773"
 ---
 
 # OH_AVRecorder_EncoderInfo
 
 ```
-typedef struct OH_AVRecorder_EncoderInfo {...} OH_AVRecorder_EncoderInfo;
+typedef struct OH_AVRecorder_EncoderInfo {...} OH_AVRecorder_EncoderInfo
 ```
 
 #### 概述
@@ -29,11 +29,11 @@ typedef struct OH_AVRecorder_EncoderInfo {...} OH_AVRecorder_EncoderInfo;
 | 名称 | 描述 |
 | --- | --- |
 | [OH_AVRecorder_CodecMimeType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avrecorder-base-h#oh_avrecorder_codecmimetype) mimeType | 编码器MIME类型。值与type对应，type为audio时值为音频MIME类型，type为video时值为视频MIME类型。 |
-| char* type | 编码器类型，audio表示音频编码器，video表示视频编码器。 |
+| char *type | 编码器类型，audio表示音频编码器，video表示视频编码器。 |
 | [OH_AVRecorder_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avrecorder-oh-avrecorder-range) bitRate | 编码器支持的比特率范围，单位为比特每秒（bit/s）。音频和视频编码器均适用。 |
 | [OH_AVRecorder_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avrecorder-oh-avrecorder-range) frameRate | 编码器支持的视频帧率范围，单位为帧每秒（fps）。仅适用于视频编码器。 |
 | [OH_AVRecorder_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avrecorder-oh-avrecorder-range) width | 编码器支持的视频帧宽度范围，单位为像素（px）。仅适用于视频编码器。 |
 | [OH_AVRecorder_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avrecorder-oh-avrecorder-range) height | 编码器支持的视频帧高度范围，单位为像素（px）。仅适用于视频编码器。 |
 | [OH_AVRecorder_Range](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avrecorder-oh-avrecorder-range) channels | 编码器支持的音频声道数的范围，取值由设备编码器能力决定，常见取值为1（单声道）或2（立体声）。仅适用于音频编码器。 |
-| int32_t* sampleRate | 音频采样率列表，包含所有支持的音频采样率值，取值由设备编码器能力决定，常见取值如8000、16000、44100、48000等，单位为赫兹（Hz）。与sampleRateLen字段配合使用，sampleRateLen表示该列表的长度。仅适用于音频编码器。 |
+| int32_t *sampleRate | 音频采样率列表，包含所有支持的音频采样率值，取值由设备编码器能力决定，常见取值如8000、16000、44100、48000等，单位为赫兹（Hz）。与sampleRateLen字段配合使用，sampleRateLen表示该列表的长度。仅适用于音频编码器。 |
 | int32_t sampleRateLen | 音频采样率列表长度，取值为大于0的整数，与sampleRate字段配合使用，表示sampleRate数组中元素的个数。仅适用于音频编码器。 |

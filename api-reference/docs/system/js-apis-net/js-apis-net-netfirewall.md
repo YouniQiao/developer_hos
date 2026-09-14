@@ -2,8 +2,8 @@
 title: "@ohos.net.netFirewall (网络防火墙)"
 upstream_id: "harmonyos-references/js-apis-net-netfirewall"
 catalog: "harmonyos-references"
-content_hash: "281ea82f5172"
-synced_at: "2026-09-04T18:12:02.648717"
+content_hash: "094d63c7e885"
+synced_at: "2026-09-14T19:47:44.281341"
 ---
 
 # @ohos.net.netFirewall (网络防火墙)
@@ -553,7 +553,7 @@ netFirewall.getNetFirewallRule(100, 1).then((rule: netFirewall.NetFirewallRule) 
 | appUid | number | 否 | 是 | 应用程序或服务UID。 |
 | localIps | Array | 否 | 是 | 本地IP地址。当type=RULE_IP时有效，否则将被忽略，最多10个。 |
 | remoteIps | Array | 否 | 是 | 远端IP地址。当type=RULE_IP时有效，否则将被忽略，最多10个。 |
-| protocol | number | 否 | 是 | 协议，包含TCP：6，UDP：17。当type=RULE_IP时有效。 |
+| protocol | number | 否 | 是 | 协议，包含TCP：6，UDP：17，ICMP：1，ICMPv6：58。当type=RULE_IP时有效。 |
 | localPorts | Array | 否 | 是 | 本地端口。当type=RULE_IP时有效，否则将被忽略，最多10个。 |
 | remotePorts | Array | 否 | 是 | 远端端口。当type=RULE_IP时有效，否则将被忽略。最多10个。 |
 | domains | Array | 否 | 是 | 域名列表，当type=RULE_DOMAIN时有效，否则将被忽略，目前不支持中文域名。 |

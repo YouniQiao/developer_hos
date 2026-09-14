@@ -2,8 +2,8 @@
 title: "Video"
 upstream_id: "harmonyos-references/ts-media-components-video"
 catalog: "harmonyos-references"
-content_hash: "454c68b9d408"
-synced_at: "2026-08-29T18:14:11.011832"
+content_hash: "9ee625d17ab6"
+synced_at: "2026-09-14T19:45:53.909558"
 ---
 
 # Video
@@ -920,7 +920,7 @@ interface FullscreenObject {
   fullscreen: boolean;
 }
 ```
- ![](./img/zh-cn_image_0000002731519083.gif)
+ ![](./img/zh-cn_image_0000002723697172.gif)
 
 #### [h2]示例2（图像分析功能）
 
@@ -1077,7 +1077,7 @@ struct VideoObject {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639882.png)
+ ![](./img/zh-cn_image_0000002753296939.png)
 
 #### [h2]示例5（onError事件上报错误码）
 
@@ -1119,7 +1119,7 @@ struct VideoErrorComponent {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359103.png)
+ ![](./img/zh-cn_image_0000002753456857.png)
 
 #### [h2]示例6（使用attributeModifier动态设置Video组件的属性及方法）
 
@@ -1240,7 +1240,7 @@ interface FullscreenObject {
   fullscreen: boolean;
 }
 ```
- ![](./img/zh-cn_image_0000002701799798.png)
+ ![](./img/zh-cn_image_0000002723857092.png)
 
 #### [h2]示例7（VideoControllerAsync用法）
 
@@ -1254,7 +1254,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 @Entry
 @Component
 struct VideoControllerAsyncExample {
-  @State videoSrc: Resource = $rawfile('video1.mp4');// 替换为开发者所需的视频资源文件。
+  @State videoSrc: Resource = $rawfile('video1.mp4'); // 替换为开发者所需的视频资源文件。
   controller: VideoControllerAsync = new VideoControllerAsync();
 
   build() {
@@ -1313,7 +1313,7 @@ struct VideoControllerAsyncExample {
               console.info('start success')
             })
             .catch((err: BusinessError) => { // catch处理执行失败的场景。
-              console.info(`start failed: ${err.message}`)
+              console.error(`start failed: ${err.message}`)
             })
         }).margin(2)
         Button('pause').onClick(() => {
@@ -1322,7 +1322,7 @@ struct VideoControllerAsyncExample {
               console.info('pause success')
             })
             .catch((err: BusinessError) => {
-              console.info(`pause failed: ${err.message}`)
+              console.error(`pause failed: ${err.message}`)
             })
         }).margin(2)
         Button('stop').onClick(() => {
@@ -1331,7 +1331,7 @@ struct VideoControllerAsyncExample {
               console.info('stop success')
             })
             .catch((err: BusinessError) => {
-              console.info(`stop failed: ${err.message}`)
+              console.error(`stop failed: ${err.message}`)
             })
         }).margin(2)
         Button('reset').onClick(() => {
@@ -1340,7 +1340,7 @@ struct VideoControllerAsyncExample {
               console.info('reset success')
             })
             .catch((err: BusinessError) => {
-              console.info(`reset failed: ${err.message}`)
+              console.error(`reset failed: ${err.message}`)
             })
         }).margin(2)
       }

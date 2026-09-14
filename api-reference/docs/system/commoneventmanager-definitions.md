@@ -2,8 +2,8 @@
 title: "系统定义的公共事件"
 upstream_id: "harmonyos-references/commoneventmanager-definitions"
 catalog: "harmonyos-references"
-content_hash: "e4b78dd188c1"
-synced_at: "2026-08-29T18:16:57.326116"
+content_hash: "aebb5d9e80d6"
+synced_at: "2026-09-14T19:47:56.220820"
 ---
 
 # 系统定义的公共事件
@@ -1077,6 +1077,68 @@ Wi-Fi连接状态发生改变。
 订阅者所需权限： ohos.permission.GET_WIFI_INFO
 
 取值： "usual.event.wifi.p2p.GROUP_STATE_CHANGED"
+
+#### Core File Kit
+
+#### [h2]COMMON_EVENT_VOLUME_REMOVED
+
+表示外部存储设备正常移除的公共事件。
+
+当外部存储设备处于卸载状态，移除该设备时，会发送此公共事件。
+
+系统能力： SystemCapability.Notification.CommonEvent
+
+订阅者所需权限： ohos.permission.STORAGE_MANAGER（该权限仅系统应用可申请）
+
+取值： "usual.event.data.VOLUME_REMOVED"
+
+#### [h2]COMMON_EVENT_VOLUME_UNMOUNTED
+
+表示外部存储设备状态变更为卸载的公共事件。
+
+当外部存储设备处于挂载状态时，用户选择通过调用unmount接口或者直接移除设备的方法弹出该设备，并且已将外部存储设备卸载成功后，会发送此公共事件。
+
+系统能力： SystemCapability.Notification.CommonEvent
+
+订阅者所需权限： ohos.permission.STORAGE_MANAGER（该权限仅系统应用可申请）
+
+取值： "usual.event.data.VOLUME_UNMOUNTED"
+
+#### [h2]COMMON_EVENT_VOLUME_MOUNTED
+
+表示外部存储设备状态变更为挂载的公共事件。
+
+当用户插入外部存储设备自动挂载成功或者将处于卸载状态的外部存储设备调用mount接口进行挂载成功后，会发送此公共事件。
+
+系统能力： SystemCapability.Notification.CommonEvent
+
+订阅者所需权限： ohos.permission.STORAGE_MANAGER（该权限仅系统应用可申请）
+
+取值： "usual.event.data.VOLUME_MOUNTED"
+
+#### [h2]COMMON_EVENT_VOLUME_BAD_REMOVAL
+
+表示外部存储设备异常移除的公共事件。
+
+当外部存储设备处于挂载状态时，用户直接移除该外部存储设备，会发送此公共事件。
+
+系统能力： SystemCapability.Notification.CommonEvent
+
+订阅者所需权限： ohos.permission.STORAGE_MANAGER（该权限仅系统应用可申请）
+
+取值： "usual.event.data.VOLUME_BAD_REMOVAL"
+
+#### [h2]COMMON_EVENT_VOLUME_EJECT
+
+表示外部存储设备即将被弹出的公共事件。
+
+当外部存储设备处于挂载状态时，用户选择通过调用unmount接口或者直接移除设备的方法弹出该设备时，会发送此公共事件。
+
+系统能力： SystemCapability.Notification.CommonEvent
+
+订阅者所需权限： ohos.permission.STORAGE_MANAGER（该权限仅系统应用可申请）
+
+取值： "usual.event.data.VOLUME_EJECT"
 
 #### MDM Kit
 

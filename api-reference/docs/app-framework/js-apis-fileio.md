@@ -2,8 +2,8 @@
 title: "@ohos.fileio (文件管理)"
 upstream_id: "harmonyos-references/js-apis-fileio"
 catalog: "harmonyos-references"
-content_hash: "bc848ac830e2"
-synced_at: "2026-07-17T16:17:39.924041"
+content_hash: "615548eccbb8"
+synced_at: "2026-09-14T19:47:20.855265"
 ---
 
 # @ohos.fileio (文件管理)
@@ -23,20 +23,7 @@ import fileio from '@ohos.fileio';
 
 #### 使用说明
 
-使用该功能模块对文件/目录进行操作前，需要先获取其应用沙箱路径，获取方式及其接口用法请参考：
-
-```
- import UIAbility from '@ohos.app.ability.UIAbility';
- import window from '@ohos.window';
-
- export default class EntryAbility extends UIAbility {
-   onWindowStageCreate(windowStage: window.WindowStage) {
-     let context = this.context;
-     let pathDir = context.filesDir;
-   }
- }
-```
- 使用该功能模块对文件/目录进行操作前，需要先获取其应用沙箱路径，获取方式及其接口用法请参考：[应用上下文Context-获取应用文件路径](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-stage#获取应用文件路径)
+使用该功能模块对文件/目录进行操作前，需要先获取其应用沙箱路径pathDir，获取沙箱路径的方式及其接口用法可参考：[应用上下文Context-获取应用文件路径](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-stage#获取应用文件路径)。
 
 #### fileio.stat
 

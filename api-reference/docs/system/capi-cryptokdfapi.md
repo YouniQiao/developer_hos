@@ -2,15 +2,15 @@
 title: "CryptoKdfApi"
 upstream_id: "harmonyos-references/capi-cryptokdfapi"
 catalog: "harmonyos-references"
-content_hash: "25ddaca97353"
-synced_at: "2026-07-09T00:59:11.655407"
+content_hash: "11d4e792dfdd"
+synced_at: "2026-09-14T19:47:29.597422"
 ---
 
 # CryptoKdfApi
 
 #### 概述
 
-为应用提供密钥派生函数(KDF)接口。
+描述HarmonyOS为应用提供的密钥派生(KDF)接口。
 
 起始版本： 20
 

@@ -2,8 +2,8 @@
 title: "Interface (WindowStage)"
 upstream_id: "harmonyos-references/arkts-apis-window-windowstage"
 catalog: "harmonyos-references"
-content_hash: "de466a0e98e5"
-synced_at: "2026-08-29T18:12:36.813834"
+content_hash: "62159acffd96"
+synced_at: "2026-09-14T19:45:23.479325"
 ---
 
 # Interface (WindowStage)
@@ -1161,11 +1161,9 @@ on(eventType: 'windowStageLifecycleEvent', callback: Callback<WindowStageLifecyc
 
 ![](./img/note_3.0-zh-cn.png) [on('windowStageEvent')](#onwindowstageevent9)与本接口的区别：
 
-1.前者无法保证状态切换间的顺序，对于状态间的顺序有要求的情况下不推荐使用，推荐使用本接口；
-
-2.当前接口不提供WindowStage的获焦失焦状态监听，对于windowStage获焦失焦状态有监听需求的情况下，推荐使用[on('windowEvent')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#onwindowevent10)；
-
-3.其他系统机制及其生命周期状态切换的详细说明，请参考[主窗口的生命周期](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-lifecycle#管理应用主窗的生命周期)。
+1. 前者无法保证状态切换间的顺序，对于状态间的顺序有要求的情况下不推荐使用，推荐使用本接口；
+2. 当前接口不提供WindowStage的获焦失焦状态监听，对于windowStage获焦失焦状态有监听需求的情况下，推荐使用[on('windowEvent')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#onwindowevent10)；
+3. 其他系统机制及其生命周期状态切换的详细说明，请参考[主窗口的生命周期](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-lifecycle#管理应用主窗的生命周期)。
 
 模型约束： 此接口仅可在Stage模型下使用。
 

@@ -2,8 +2,8 @@
 title: "获取用户风险等级"
 upstream_id: "harmonyos-references/account-api-getuserrisklevel"
 catalog: "harmonyos-references"
-content_hash: "be9c3d0c9d65"
-synced_at: "2026-07-28T16:52:30.984611"
+content_hash: "cccd9d88749b"
+synced_at: "2026-09-14T19:49:07.234846"
 ---
 
 # 获取用户风险等级
@@ -47,14 +47,14 @@ synced_at: "2026-07-28T16:52:30.984611"
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
 | clientID | 是 | String | 在创建应用后，由AppGallery Connect（简称AGC）为应用分配的唯一标识。参数取值详见[查看应用基本信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-appinfo-0000001100014694)中的**OAuth 2.0客户端ID（凭据）-Client ID**参数。 |
-| transactionID | 是 | String | 交易流水号，每个消息都需要带该字段； 生成规则：YYYYMMDDhhmmssxxxxxxxxxx，例如： 202502121546232352164151 其中：YYYYMMDDhhmmss：请求产生时间，14位； xxxxxxxxxx：随机数，可变长，10至20位 |
+| transactionID | 是 | String | 交易流水号，每个消息都需要带该字段。 格式：YYYYMMDDhhmmssxxxxxxxxxx，其中：YYYYMMDDhhmmss为请求产生时间，14位；xxxxxxxxxx为随机数，可变长，10至20位。 例如： 202502121546232352164151。 |
 
 #### [h2]Request Body
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
 | accessToken | 是 | String | 通过[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token)获取的Access Token。获取凭证时Authorization Code需包含riskLevel scope的授权。 |
-| scene | 是 | String | 获取用户风险等级的业务场景 - registration：注册 - marketing：营销活动 |
+| scene | 是 | String | 获取用户风险等级的业务场景。 - registration：注册。 - marketing：营销活动。 |
 
 #### 请求示例
 
@@ -82,8 +82,8 @@ Content-Type: application/json;charset=utf-8
 | --- | --- | --- | --- |
 | errCode | 是 | Int | 错误码，调用成功时返回0，调用失败时返回对应错误码。 |
 | errMsg | 是 | String | 错误描述，调用成功时返回空字符串，调用失败时返回对应描述。 |
-| riskLevel | 否 | Int | 请求成功时才会返回风险等级（详见后文附表①） 0：未发现显著风险 1：低风险 2：中风险 3：高风险 4：风险未知 |
-| riskTag | 否 | String[] | 风险标签（详见后文附表②） |
+| riskLevel | 否 | Int | 请求成功时才会返回风险等级（详见后文附表①）。 0：未发现显著风险 1：低风险 2：中风险 3：高风险 4：风险未知 |
+| riskTag | 否 | String[] | 风险标签（详见后文附表②）。 |
 
 附表①: 风险等级含义与建议处置方案
 
@@ -99,14 +99,14 @@ Content-Type: application/json;charset=utf-8
 
 | **riskTag** | **名称** | **解释** |
 | --- | --- | --- |
-| spamMailbox | 绑定垃圾邮箱 | 疑似绑定垃圾邮箱 |
-| riskPhoneNumber | 绑定卡商手机号 | 疑似绑定卡商手机号 |
-| riskDevice | 使用风险设备 | 疑似使用自动机、群控等异常设备注册或登录 |
-| ipCluster | IP聚集 | 疑似半年内存在IP的聚集性异常 |
-| deviceCluster | 设备聚集 | 疑似半年内存在设备的聚集性异常 |
-| batchBehavior | 批量操作 | 疑似半年内与大量垃圾账号存在批量协同行为轨迹 |
-| illegalLogin | 非法登录 | 当前华为账号疑似通过非法手段登录 |
-| activityFraud | 恶意行为-薅羊毛 | 疑似半年内在营销活动中存在薅羊毛的行为 |
+| spamMailbox | 绑定垃圾邮箱。 | 疑似绑定垃圾邮箱。 |
+| riskPhoneNumber | 绑定卡商手机号。 | 疑似绑定卡商手机号。 |
+| riskDevice | 使用风险设备。 | 疑似使用自动机、群控等异常设备注册或登录。 |
+| ipCluster | IP聚集。 | 疑似半年内存在IP的聚集性异常。 |
+| deviceCluster | 设备聚集。 | 疑似半年内存在设备的聚集性异常。 |
+| batchBehavior | 批量操作。 | 疑似半年内与大量垃圾账号存在批量协同行为轨迹。 |
+| illegalLogin | 非法登录。 | 当前华为账号疑似通过非法手段登录。 |
+| activityFraud | 恶意行为-薅羊毛。 | 疑似半年内在营销活动中存在薅羊毛的恶意行为。 |
 
 #### 响应示例
 
@@ -215,7 +215,7 @@ public class GetUserRiskLevelDemo {
 | 403 | 无权限访问。 | 通常是调用方网络安全策略阻止了访问，请检查网络环境配置。若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
 | 404 | 找不到服务。 | 请检查请求URI是否正确。 |
 | 405 | 不支持的http请求method。 | 请检查http请求method是否与接口说明一致。 |
-| 415 | 不支持的媒体类型 | 请检查http请求的contentType是否与接口说明一致。 |
+| 415 | 不支持的媒体类型。 | 请检查http请求的contentType是否与接口说明一致。 |
 | 500 | 服务内部错误。 | 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
 | 502 | 请求连接异常，常见于网络状况不稳定。 | 建议稍后重试，若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
 | 504 | 请求连接超时，常见于网络状况不稳定。 | 建议稍后重试，若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
@@ -223,10 +223,10 @@ public class GetUserRiskLevelDemo {
 
 | errCode | 描述 | 解决方法 |
 | --- | --- | --- |
-| 6 | 会话失效，session timeout。 可能原因: - access_token无效或已过期 - access_token格式不正确 - 其他内部原因 | - 请检查传参是否正确，如无问题请尝试重新获取。 - 本接口请求数据格式为 application/json;charset=utf-8，在构造请求体时，请确保不对access_token参数进行URLEncode处理，可参考[示例代码](#示例代码)组装参数。 - 根据返回的错误描述进行处理，若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
-| 403 | 无权访问 | 请前往AppGallery Connect（简称AGC）为应用申请开放权限，详见[申请账号权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-config-permissions)。 |
+| 6 | 会话失效或已超时（session timeout）。 可能原因: - access_token无效或已过期。 - access_token格式不正确。 - 其他内部原因。 | - 请检查传参是否正确，如无问题请尝试重新获取。 - 本接口请求数据格式为 application/json;charset=utf-8，在构造请求体时，请确保不对access_token参数进行URLEncode处理，可参考[示例代码](#示例代码)组装参数。 - 根据返回的错误描述进行处理，若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 403 | 无权访问。 | 请前往AppGallery Connect（简称AGC）为应用申请开放权限，详见[申请账号权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-config-permissions)。 |
 | 503 | 触发系统流控。 | 请稍后重试。 |
-| 70001201 | 请求参数错误 | 修改请求url或者请求体中的参数。 |
+| 70001201 | 请求参数错误。 | 修改请求url或者请求体中的参数。 |
 | 70001402 | 系统鉴权错误。 | 鉴权系统异常，若重试无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
-| 70020002 | 接口内部超时 | 稍后重试。 |
-| 70001401 | 接口内部错误 | 根据返回的错误描述进行处理，若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
+| 70020002 | 接口内部超时。 | 稍后重试。 |
+| 70001401 | 接口内部错误。 | 根据返回的错误描述进行处理，若仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |

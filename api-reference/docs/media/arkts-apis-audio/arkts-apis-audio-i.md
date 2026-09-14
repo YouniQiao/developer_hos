@@ -2,8 +2,8 @@
 title: "Interfaces (其他)"
 upstream_id: "harmonyos-references/arkts-apis-audio-i"
 catalog: "harmonyos-references"
-content_hash: "112a9dffcacf"
-synced_at: "2026-07-28T16:51:26.347588"
+content_hash: "b35a5296219f"
+synced_at: "2026-09-14T19:48:18.140868"
 ---
 
 # Interfaces (其他)
@@ -282,15 +282,21 @@ synced_at: "2026-07-28T16:51:26.347588"
 
 音频监听事件传入的参数。
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃，无替代接口。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 9开始废弃。
+
+申请音频焦点时，建议使用[AudioRendererOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-i#audiorendereroptions8).rendererInfo替代，[StreamUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage)决定音频流的焦点策略。
+
+建议使用[on('audioInterrupt')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiorenderer#onaudiointerrupt9)接口监听音频焦点事件[InterruptEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-i#interruptevent9)，替代音频中断事件。
+
+使用已废弃的接口[on('interrupt')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiomanager#oninterruptdeprecated)不会打断新机制的音频流，也不会收到焦点中断事件。
 
 系统能力： SystemCapability.Multimedia.Audio.Renderer
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| streamUsage | [StreamUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage) | 否 | 否 | 音频流使用类型。 |
-| contentType | [ContentType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#contenttypedeprecated) | 否 | 否 | 音频打断媒体类型。 |
-| pauseWhenDucked | boolean | 否 | 否 | 音频打断时是否可以暂停音频播放。true表示音频播放可以在音频打断期间暂停，false表示音频播放不可以在音频打断期间暂停。 |
+| streamUsage | [StreamUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage) | 否 | 否 | 音频流使用类型。 **说明：** 从API version 7开始支持，从API version 9开始废弃，建议使用[AudioRendererOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-i#audiorendereroptions8).rendererInfo替代。 |
+| contentType | [ContentType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#contenttypedeprecated) | 否 | 否 | 音频打断媒体类型。 **说明：** 从API version 7开始支持，从API version 9开始废弃，建议使用[AudioRendererOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-i#audiorendereroptions8).rendererInfo替代。 |
+| pauseWhenDucked | boolean | 否 | 否 | 音频打断时是否可以暂停音频播放。true表示音频播放可以在音频打断期间暂停，false表示音频播放不可以在音频打断期间暂停。 **说明：** 从API version 7开始支持，从API version 9开始废弃，建议使用[InterruptEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-i#interruptevent9).hintType替代。 |
 
 #### CaptureFilterOptions(deprecated)
 
@@ -329,7 +335,7 @@ synced_at: "2026-07-28T16:51:26.347588"
 | actionType | [InterruptActionType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#interruptactiontypedeprecated) | 否 | 否 | 事件返回类型。TYPE_ACTIVATED为焦点触发事件，TYPE_INTERRUPT为音频打断事件。 |
 | type | [InterruptType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#interrupttype) | 否 | 是 | 打断事件类型。 |
 | hint | [InterruptHint](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#interrupthint) | 否 | 是 | 打断事件提示。 |
-| activated | boolean | 否 | 是 | 焦点获取/释放是否成功。true表示焦点获取/释放成功，false表示焦点获得/释放失败。 |
+| activated | boolean | 否 | 是 | 焦点获取/释放是否成功。true表示焦点获取/释放成功，false表示焦点获取/释放失败。 |
 
 #### SystemRecordControllerConfig
 

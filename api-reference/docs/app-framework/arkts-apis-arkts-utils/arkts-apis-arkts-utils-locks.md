@@ -1,18 +1,18 @@
 ---
-title: "ArkTSUtils.locks"
+title: "namespace (locks)"
 upstream_id: "harmonyos-references/arkts-apis-arkts-utils-locks"
 catalog: "harmonyos-references"
-content_hash: "81fbd52fd7cb"
-synced_at: "2026-07-28T16:40:56.663973"
+content_hash: "c123302ae002"
+synced_at: "2026-09-14T19:45:15.234951"
 ---
 
-# ArkTSUtils.locks
+# namespace (locks)
 
 为了解决多并发实例间的数据竞争问题，ArkTS语言基础库引入了异步锁能力。为了开发者的开发效率，AsyncLock对象支持跨并发实例引用传递。
 
 由于ArkTS语言支持异步操作，阻塞锁容易产生死锁问题，因此我们在ArkTS中仅支持异步锁（非阻塞式锁）。
 
-使用异步锁的方法需要标记为async，调用方需要await修饰调用，才能保证时序正确。因此会导致外层调用函数全部标记成async。
+使用异步锁的方法需要标记为async，调用方需要使用await等待调用结果，才能保证时序正确。因此会导致外层调用函数全部标记成async。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 12开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -460,7 +460,7 @@ let p = lock.lockAsync<void, string>(
 | --- | --- | --- | --- | --- |
 | name | string | 否 | 否 | 锁的名称。 |
 | mode | [AsyncLockMode](#asynclockmode) | 否 | 否 | 锁的模式。 |
-| contextId | number | 否 | 否 | [AsyncLockMode](#asynclockmode)调用者的执行上下文标识符。 |
+| contextId | number | 否 | 否 | [AsyncLock](#asynclock)调用者的执行上下文标识符。 |
 
 #### AbortSignal
 
