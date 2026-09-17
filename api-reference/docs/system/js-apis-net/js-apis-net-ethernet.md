@@ -2,8 +2,8 @@
 title: "@ohos.net.ethernet (以太网连接管理)"
 upstream_id: "harmonyos-references/js-apis-net-ethernet"
 catalog: "harmonyos-references"
-content_hash: "184d435b8359"
-synced_at: "2026-07-09T00:59:27.051010"
+content_hash: "ce63b51fd3e9"
+synced_at: "2026-09-17T18:53:07.857924"
 ---
 
 # @ohos.net.ethernet (以太网连接管理)
@@ -34,7 +34,7 @@ type HttpProxy = connection.HttpProxy
 
 getMacAddress(): Promise<Array<MacAddressInfo>>
 
-获取所有以太网网卡名称及对应网卡的MAC地址信息，使用Promise方式作为异步方法。
+获取所有以太网网卡名称及对应网卡的MAC地址信息，使用Promise异步回调。
 
 需要权限：ohos.permission.GET_ETHERNET_LOCAL_MAC
 
@@ -44,9 +44,11 @@ getMacAddress(): Promise<Array<MacAddressInfo>>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | 以Promise形式返回接口信息。 |
+| Promise> | Promise对象，返回所有以太网网卡名称及对应网卡的MAC地址信息。 |
 
 错误码：
+
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[以太网连接错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-net-ethernet)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -61,9 +63,9 @@ import { ethernet } from '@kit.NetworkKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
 ethernet.getMacAddress().then((data: Array<ethernet.MacAddressInfo>) => {
-  console.info("getMacAddress promise data = " + JSON.stringify(data));
+  console.info(`getMacAddress promise data = ${JSON.stringify(data)}`);
 }).catch((error: BusinessError) => {
-  console.error("getMacAddress promise error = " + JSON.stringify(error));
+  console.error(`getMacAddress promise error = ${JSON.stringify(error)}`);
 });
 ```
 
@@ -75,5 +77,5 @@ ethernet.getMacAddress().then((data: Array<ethernet.MacAddressInfo>) => {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| iface | string | 否 | 否 | 以太网网卡名称。 |
-| macAddress | string | 否 | 否 | 以太网网卡MAC地址信息。 |
+| iface | string | 否 | 否 | 以太网网卡名称，如"eth0"。可通过[getMacAddress](#ethernetgetmacaddress14)获取。 |
+| macAddress | string | 否 | 否 | 以太网网卡MAC地址信息，格式为"XX:XX:XX:XX:XX:XX"。 |

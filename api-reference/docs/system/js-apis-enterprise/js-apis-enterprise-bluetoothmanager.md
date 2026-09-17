@@ -1,12 +1,12 @@
 ---
-title: "@ohos.enterprise.bluetoothManager（蓝牙管理）"
+title: "@ohos.enterprise.bluetoothManager (蓝牙管理)"
 upstream_id: "harmonyos-references/js-apis-enterprise-bluetoothmanager"
 catalog: "harmonyos-references"
-content_hash: "b97eda82417f"
-synced_at: "2026-08-29T18:17:07.178875"
+content_hash: "00ab7baf167c"
+synced_at: "2026-09-17T18:53:30.667660"
 ---
 
-# @ohos.enterprise.bluetoothManager（蓝牙管理）
+# @ohos.enterprise.bluetoothManager (蓝牙管理)
 
 本模块提供设备蓝牙管理的能力，包括设置蓝牙开关状态、查询蓝牙信息，管理蓝牙设备可用名单、蓝牙设备禁用名单、蓝牙协议禁用名单等。通过本模块，企业可以统一管理设备蓝牙功能，实现对蓝牙设备连接的精细化管控，提升企业信息安全水平，适用于企业需要对员工设备的蓝牙使用进行规范化管理的场景。
 
@@ -16,7 +16,7 @@ synced_at: "2026-08-29T18:17:07.178875"
 
 本模块接口仅对设备管理应用开放，且调用接口前需激活设备管理应用，具体请参考[MDM Kit开发指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-guide)。
 
-全局通用限制类策略由restrictions统一提供，若要全局禁用蓝牙，请参考[@ohos.enterprise.restrictions（限制类策略）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions)。
+全局通用限制类策略由restrictions统一提供，若要全局禁用蓝牙，请参考[@ohos.enterprise.restrictions (限制类策略)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions)。
 
 #### 导入模块
 
@@ -92,13 +92,13 @@ addAllowedBluetoothDevices(admin: Want, deviceIds: Array<string>): void
 1. 已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated)接口禁用了蓝牙。通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated)接口启用蓝牙后，可解除冲突。
 2. 已经通过[addDisallowedBluetoothDevices](#bluetoothmanageradddisallowedbluetoothdevices20)接口添加了蓝牙设备禁用名单。通过[removeDisallowedBluetoothDevices](#bluetoothmanagerremovedisallowedbluetoothdevices20)移除蓝牙设备禁用名单后，可解除冲突。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_BLUETOOTH
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -148,13 +148,13 @@ removeAllowedBluetoothDevices(admin: Want, deviceIds: Array<string>): void
 
 移除蓝牙设备可用名单。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_BLUETOOTH
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -319,13 +319,13 @@ addDisallowedBluetoothDevices(admin: Want, deviceIds: Array<string>): void
 1. 已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated)接口禁用了蓝牙。通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated)接口启用蓝牙后，可解除冲突。
 2. 已经通过[addAllowedBluetoothDevices](#bluetoothmanageraddallowedbluetoothdevices)接口添加了蓝牙设备可用名单。通过[removeAllowedBluetoothDevices](#bluetoothmanagerremoveallowedbluetoothdevices)移除蓝牙设备可用名单后，可解除冲突。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_BLUETOOTH
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -374,13 +374,13 @@ removeDisallowedBluetoothDevices(admin: Want, deviceIds: Array<string>): void
 
 移除蓝牙设备禁用名单。若移除禁用名单中的部分蓝牙设备，则当前设备不允许连接禁用名单内剩余的蓝牙设备。若移除禁用名单中的所有蓝牙设备，则当前设备可以连接任意的蓝牙设备。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_BLUETOOTH
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -537,13 +537,13 @@ turnOnBluetooth(admin: Want): void
 
 开启蓝牙。蓝牙开启后用户可以手动关闭。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_BLUETOOTH
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)。
 
 参数：
 
@@ -589,13 +589,13 @@ turnOffBluetooth(admin: Want): void
 
 关闭蓝牙。蓝牙关闭后用户可以手动打开。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_BLUETOOTH
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)。
 
 参数：
 
@@ -641,13 +641,13 @@ addDisallowedBluetoothProtocols(admin: Want, accountId: number, protocols: Array
 
 添加蓝牙协议禁用名单。添加后，指定用户将无法使用该禁用名单中的蓝牙协议向其他设备外发文件。通过该接口禁用GATT或SPP协议，对系统服务和系统应用不生效。当传入SPP协议时，会同时禁用接收和发送功能。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_BLUETOOTH
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -698,13 +698,13 @@ removeDisallowedBluetoothProtocols(admin: Want, accountId: number, protocols: Ar
 
 移除蓝牙协议禁用名单。若移除禁用名单中某个用户的部分蓝牙协议，则该用户不能使用禁用名单内剩余的蓝牙协议向其他设备外发文件。若移除禁用名单中某个用户的所有蓝牙协议，则该用户可以使用任意蓝牙协议向其他设备外发文件。若移除禁用名单中不存在的蓝牙协议，接口可调用成功，但不会移除禁用名单中不存在的蓝牙协议。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_BLUETOOTH
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -820,6 +820,7 @@ addDisallowedBluetoothProtocols(admin: Want, accountId: number, protocols: Array
 1. 通过该接口禁用GATT或SPP协议，对系统服务和系统应用不生效。
 2. 当传入SPP协议时，policy参数只能传入TransferPolicy.RECEIVE_SEND，否则会返回错误码9200012。
 3. 本接口与[addDisallowedBluetoothProtocols20+](#bluetoothmanageradddisallowedbluetoothprotocols20)接口为重载接口。本接口增加了policy参数用于指定传输策略，可以更精细地控制蓝牙协议的禁用行为（如仅禁止发送、仅禁止接收或同时禁止发送和接收）。如果同时使用两个接口配置了禁用策略，策略会合并生效。
+4. 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
 
 起始版本： 26.0.0
 
@@ -828,8 +829,6 @@ addDisallowedBluetoothProtocols(admin: Want, accountId: number, protocols: Array
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -893,6 +892,7 @@ removeDisallowedBluetoothProtocols(admin: Want, accountId: number, protocols: Ar
 
 1. 当传入SPP协议时，policy参数只能传入TransferPolicy.RECEIVE_SEND，否则会返回错误码9200012。
 2. 本接口与[removeDisallowedBluetoothProtocols20+](#bluetoothmanagerremovedisallowedbluetoothprotocols20)接口为重载接口。本接口增加了policy参数，用于按传输策略移除禁用配置。若同一协议通过两个接口分别配置了不同策略的禁用，调用本接口仅移除对应策略的禁用配置，其他策略的禁用配置仍生效。
+3. 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
 
 起始版本： 26.0.0
 
@@ -901,8 +901,6 @@ removeDisallowedBluetoothProtocols(admin: Want, accountId: number, protocols: Ar
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 

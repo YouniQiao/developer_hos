@@ -2,8 +2,8 @@
 title: "AtomicServiceNavigation"
 upstream_id: "harmonyos-references/ohos-atomicservice-atomicservicenavigation"
 catalog: "harmonyos-references"
-content_hash: "bb6f5e62b68d"
-synced_at: "2026-08-29T18:14:54.176416"
+content_hash: "6ead8abe2070"
+synced_at: "2026-09-17T18:51:50.851784"
 ---
 
 # AtomicServiceNavigation
@@ -196,8 +196,8 @@ type NavDestinationBuilder = (name: string, param?: Object) => void
 展示AtomicServiceNavigation的基础样式与渐变色背景。
 
 ```
-import { AtomicServiceNavigation, MixMode, GradientAlpha, BackgroundTheme } from '@kit.ArkUI';
-import { AtomicServiceTabs, TabBarOptions, TabBarPosition } from '@kit.ArkUI';
+import { AtomicServiceNavigation, MixMode, GradientAlpha, BackgroundTheme, AtomicServiceTabs, TabBarOptions, TabBarPosition } from '@kit.ArkUI';
+
 @Entry
 @Component
 struct Index {
@@ -325,15 +325,14 @@ export struct PageTwo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701640102.jpg)
+ ![](./img/zh-cn_image_0000002727593052.jpg)
 
 #### [h2]示例2（抽屉样式，宽屏场景下插入自定义布局）
 
 设备宽屏场景（宽度大于600vp）下设置抽屉模式，在标题栏插入自定义布局。
 
 ```
-import { AtomicServiceNavigation, TitleBarType } from '@kit.ArkUI';
-import { AtomicServiceTabs, TabBarOptions, TabBarPosition } from '@kit.ArkUI';
+import { AtomicServiceNavigation, TitleBarType, AtomicServiceTabs, TabBarOptions, TabBarPosition } from '@kit.ArkUI';
 
 @Entry
 @Component
@@ -464,15 +463,14 @@ export struct PageTwo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359321.png)
+ ![](./img/zh-cn_image_0000002727752910.png)
 
 #### [h2]示例3（侧边栏使用场景）
 
 设置侧边栏：背景色与内容样式。
 
 ```
-import { AtomicServiceNavigation, TitleBarType } from '@kit.ArkUI';
-import { AtomicServiceTabs, TabBarOptions, TabBarPosition } from '@kit.ArkUI';
+import { AtomicServiceNavigation, TitleBarType, AtomicServiceTabs, TabBarOptions, TabBarPosition } from '@kit.ArkUI';
 
 @Entry
 @Component
@@ -604,4 +602,4 @@ export struct PageTwo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701800016.png)
+ ![](./img/zh-cn_image_0000002757312625.png)

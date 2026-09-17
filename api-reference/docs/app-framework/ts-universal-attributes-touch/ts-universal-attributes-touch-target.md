@@ -2,8 +2,8 @@
 title: "触摸热区设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-touch-target"
 catalog: "harmonyos-references"
-content_hash: "c27b3eb9ad0c"
-synced_at: "2026-08-29T18:13:02.351934"
+content_hash: "bcd64a10ec7f"
+synced_at: "2026-09-17T18:50:42.968119"
 ---
 
 # 触摸热区设置
@@ -31,7 +31,7 @@ responseRegion(value: Array<Rectangle> | Rectangle): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | Array | [Rectangle](#rectangle对象说明) | 是 | 触摸热区，包括位置和大小。 默认触摸热区为整个组件，默认值： { x：0, y：0, width：'100%', height：'100%' } |
+| value | Array | [Rectangle](#rectangle对象说明) | 是 | 触摸热区，包括位置和大小。 默认触摸热区为整个组件，默认值： { x：0, y：0, width：'100%', height：'100%' } 异常值：参数为undefined或null时，按默认值处理。 |
 
 返回值：
 
@@ -79,7 +79,7 @@ responseRegionList(regions: Array<ResponseRegion>): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| regions | Array | 是 | 组件的触摸热区数组。 每个触摸热区均包括输入工具类型、位置和大小。 默认值： [{ tool：ResponseRegionSupportedTool.ALL, x：LengthMetrics.vp(0), y：LengthMetrics.vp(0), width：LengthMetrics.percent(1), height：LengthMetrics.percent(1) }] |
+| regions | Array | 是 | 组件的触摸热区数组。 每个触摸热区均包括输入工具类型、位置和大小。 默认值： [{ tool：ResponseRegionSupportedTool.ALL, x：LengthMetrics.vp(0), y：LengthMetrics.vp(0), width：LengthMetrics.percent(1), height：LengthMetrics.percent(1) }] 异常值：参数为undefined或null时，按默认值处理。 |
 
 返回值：
 
@@ -202,7 +202,7 @@ struct TouchTargetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639540.gif)
+ ![](./img/zh-cn_image_0000002757312057.gif)
 
 #### [h2]示例2（通过responseRegionList接口设置触摸热区）
 
@@ -259,7 +259,7 @@ struct TouchTargetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358761.gif)
+ ![](./img/zh-cn_image_0000002757232177.gif)
 
 #### [h2]示例3（设置鼠标的触摸热区以响应点击事件）
 
@@ -350,4 +350,4 @@ struct MouseResponseRegionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799456.gif)
+ ![](./img/zh-cn_image_0000002727592486.gif)

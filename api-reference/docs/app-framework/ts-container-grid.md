@@ -2,8 +2,8 @@
 title: "Grid"
 upstream_id: "harmonyos-references/ts-container-grid"
 catalog: "harmonyos-references"
-content_hash: "122cda416f4e"
-synced_at: "2026-08-29T18:13:22.448888"
+content_hash: "517ad6155e3e"
+synced_at: "2026-09-17T18:50:47.498132"
 ---
 
 # Grid
@@ -82,7 +82,7 @@ Grid布局选项。其中，irregularIndexes和onGetIrregularSizeByIndex可对�
 
 设置Grid的padding后，如果子组件部分位于Grid内容区且部分位于padding区域内，则会显示；如果子组件完全位于padding区域内，则不会显示。如下图所示，GridItem1显示，而GridItem2不显示。
 
-![](./img/zh-cn_image_0000002701639626.png)
+![](./img/zh-cn_image_0000002757232265.png)
 
 #### [h2]columnsTemplate
 
@@ -172,32 +172,24 @@ auto-fit模式和auto-stretch模式只支持track-size为一个有效行高值�
 
 ![](./img/note_3.0-zh-cn.png) Grid组件根据rowsTemplate、columnsTemplate属性的设置情况，可分为以下三种布局模式：
 
-1、rowsTemplate、columnsTemplate同时设置：
-
-- Grid只展示固定行列数的元素，其余元素不展示，且Grid不可滚动。
-- 此模式下以下属性不生效：layoutDirection、maxCount、minCount、cellLength。
-- Grid的宽高没有设置时，默认适应父组件尺寸。
-- Grid网格列大小按照Grid自身内容区域大小减去所有行列Gap后按各个行列所占比重分配。
-- GridItem默认填满网格大小。
-
-2、rowsTemplate、columnsTemplate仅设置其中的一个：
-
-- 元素按照设置的方向进行排布，超出Grid显示区域后，Grid可通过滚动的方式展示。
-- 如果设置了columnsTemplate，Grid滚动方向为垂直方向，主轴方向为垂直方向，交叉轴方向为水平方向。
-- 如果设置了rowsTemplate，Grid滚动方向为水平方向，主轴方向为水平方向，交叉轴方向为垂直方向。
-- 此模式下以下属性不生效：layoutDirection、maxCount、minCount、cellLength。
-- 网格交叉轴方向尺寸根据Grid自身内容区域交叉轴尺寸减去交叉轴方向所有Gap后按所占比重分配。
-- 网格主轴方向尺寸取当前网格交叉轴方向所有GridItem主轴方向尺寸最大值。
-- 此模式下GridItem交叉轴方向尺寸与网格一致，可以通过设置[constraintSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#constraintsize)中的maxWidth或maxHeight限制GridItem交叉轴方向尺寸小于网格。
-
-3、rowsTemplate、columnsTemplate都不设置：
-
-- 元素在layoutDirection方向上排布，列数由Grid的宽度、首个元素的宽度、minCount、maxCount、columnsGap共同决定。
-- 行数由Grid高度、首个元素高度、cellLength、rowsGap共同决定。超出行列容纳范围的元素不显示，也不能通过滚动进行展示。
-- 此模式下仅生效以下属性：layoutDirection、maxCount、minCount、cellLength、editMode、columnsGap、rowsGap。
-- 当前layoutDirection设置为Row时，先从左到右排列，排满一行再排下一行。剩余高度不足时不再布局，整体内容顶部居中。
-- 当前layoutDirection设置为Column时，先从上到下排列，排满一列再排下一列，剩余宽度不足时不再布局。整体内容顶部居中。
-- 当前Grid下面没有GridItem时，Grid的宽高为0。
+1. rowsTemplate、columnsTemplate同时设置： Grid只展示固定行列数的元素，其余元素不展示，且Grid不可滚动。
+2. 此模式下以下属性不生效：layoutDirection、maxCount、minCount、cellLength。
+3. Grid的宽高没有设置时，默认适应父组件尺寸。
+4. Grid网格列大小按照Grid自身内容区域大小减去所有行列Gap后按各个行列所占比重分配。
+5. GridItem默认填满网格大小。
+6. rowsTemplate、columnsTemplate仅设置其中的一个： 元素按照设置的方向进行排布，超出Grid显示区域后，Grid可通过滚动的方式展示。
+7. 如果设置了columnsTemplate，Grid滚动方向为垂直方向，主轴方向为垂直方向，交叉轴方向为水平方向。
+8. 如果设置了rowsTemplate，Grid滚动方向为水平方向，主轴方向为水平方向，交叉轴方向为垂直方向。
+9. 此模式下以下属性不生效：layoutDirection、maxCount、minCount、cellLength。
+10. 网格交叉轴方向尺寸根据Grid自身内容区域交叉轴尺寸减去交叉轴方向所有Gap后按所占比重分配。
+11. 网格主轴方向尺寸取当前网格交叉轴方向所有GridItem主轴方向尺寸最大值。
+12. 此模式下GridItem交叉轴方向尺寸与网格一致，可以通过设置[constraintSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#constraintsize)中的maxWidth或maxHeight限制GridItem交叉轴方向尺寸小于网格。
+13. rowsTemplate、columnsTemplate都不设置： 元素在layoutDirection方向上排布，列数由Grid的宽度、首个元素的宽度、minCount、maxCount、columnsGap共同决定。
+14. 行数由Grid高度、首个元素高度、cellLength、rowsGap共同决定。超出行列容纳范围的元素不显示，也不能通过滚动进行展示。
+15. 此模式下仅生效以下属性：layoutDirection、maxCount、minCount、cellLength、editMode、columnsGap、rowsGap。
+16. 当前layoutDirection设置为Row时，先从左到右排列，排满一行再排下一行。剩余高度不足时不再布局，整体内容顶部居中。
+17. 当前layoutDirection设置为Column时，先从上到下排列，排满一列再排下一列，剩余宽度不足时不再布局。整体内容顶部居中。
+18. 当前Grid下面没有GridItem时，Grid的宽高为0。
 
 #### [h2]columnsGap
 
@@ -702,13 +694,12 @@ GridItem的对齐方式枚举。
 | DEFAULT | 0 | 使用Grid的默认对齐方式。 |
 | STRETCH | 1 | 以一行中的最高的GridItem作为其他GridItem的高度。 |
 
-![](./img/note_3.0-zh-cn.png) 1、只有可滚动的Grid中，设置STRETCH参数会生效，其他场景不生效。
+![](./img/note_3.0-zh-cn.png)
 
-2、在Grid的一行中，如果每个GridItem都是大小规律的（只占一行一列），设置STRETCH参数会生效，存在跨行或跨列的GridItem的场景不生效。
-
-3、设置STRETCH后，只有不设置高度的GridItem才会以当前行中最高的GridItem作为自己的高度，设置过高度的GridItem高度不会变化。
-
-4、设置STRETCH后，Grid布局时会有额外的布局流程，可能会带来额外的性能开销。
+1. 只有可滚动的Grid中，设置STRETCH参数会生效，其他场景不生效。
+2. 在Grid的一行中，如果每个GridItem都是大小规律的（只占一行一列），设置STRETCH参数会生效，存在跨行或跨列的GridItem的场景不生效。
+3. 设置STRETCH后，只有不设置高度的GridItem才会以当前行中最高的GridItem作为自己的高度，设置过高度的GridItem高度不会变化。
+4. 设置STRETCH后，Grid布局时会有额外的布局流程，可能会带来额外的性能开销。
 
 #### GridDirection8+枚举说明
 
@@ -1199,7 +1190,7 @@ struct GridExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358847.gif)
+ ![](./img/zh-cn_image_0000002727592574.gif)
 
 #### [h2]示例2（可滚动Grid和滚动事件）
 
@@ -1347,7 +1338,7 @@ struct GridExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799542.gif)
+ ![](./img/zh-cn_image_0000002727752432.gif)
 
 #### [h2]示例3（可滚动Grid设置跨行跨列节点）
 
@@ -1439,7 +1430,7 @@ struct GridExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518827.gif)
+ ![](./img/zh-cn_image_0000002757312147.gif)
 
 #### [h2]示例4（Grid嵌套滚动）
 
@@ -1620,7 +1611,7 @@ struct GridExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639628.gif)
+ ![](./img/zh-cn_image_0000002757232267.gif)
 
 #### [h2]示例5（Grid拖拽场景）
 
@@ -1708,19 +1699,19 @@ struct GridExample {
 
 网格子组件开始拖拽：
 
-![](./img/zh-cn_image_0000002731358849.png)
+![](./img/zh-cn_image_0000002727592576.png)
 
 网格子组件拖拽过程中：
 
-![](./img/zh-cn_image_0000002701799544.png)
+![](./img/zh-cn_image_0000002727752434.png)
 
 网格子组件1与子组件6拖拽交换位置后：
 
-![](./img/zh-cn_image_0000002731518829.png)
+![](./img/zh-cn_image_0000002757312149.png)
 
 拖拽动画：
 
-![](./img/zh-cn_image_0000002701639630.gif)
+![](./img/zh-cn_image_0000002757232269.gif)
 
 #### [h2]示例6（自适应Grid）
 
@@ -1772,7 +1763,7 @@ struct GridExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358851.gif)
+ ![](./img/zh-cn_image_0000002727592578.gif)
 
 #### [h2]示例7（双指缩放修改Grid列数）
 
@@ -1857,7 +1848,7 @@ struct GridExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799546.gif)
+ ![](./img/zh-cn_image_0000002727752436.gif)
 
 #### [h2]示例8（设置自适应列数）
 
@@ -1926,7 +1917,7 @@ struct GridColumnsTemplate {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518831.png)
+ ![](./img/zh-cn_image_0000002757312151.png)
 
 #### [h2]示例9（以当前行最高的GridItem的高度为其他GridItem的高度）
 
@@ -1994,7 +1985,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639632.png)
+ ![](./img/zh-cn_image_0000002757232271.png)
 
 #### [h2]示例10（设置边缘渐隐）
 
@@ -2049,7 +2040,7 @@ struct GridExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358853.gif)
+ ![](./img/zh-cn_image_0000002727592580.gif)
 
 #### [h2]示例11（单边边缘效果）
 
@@ -2103,7 +2094,7 @@ struct GridExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799548.gif)
+ ![](./img/zh-cn_image_0000002727752438.gif)
 
 #### [h2]示例12（方向键走焦换行模式）
 
@@ -2188,7 +2179,7 @@ struct GridExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518833.gif)
+ ![](./img/zh-cn_image_0000002757312153.gif)
 
 #### [h2]示例13（设置滚动事件）
 
@@ -2343,7 +2334,7 @@ struct GridScrollToIndexSample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639634.gif)
+ ![](./img/zh-cn_image_0000002757232273.gif)
 
 #### [h2]示例15（实现Grid滑动选择）
 
@@ -2645,7 +2636,7 @@ struct GridExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358855.gif)
+ ![](./img/zh-cn_image_0000002727592582.gif)
 
 #### [h2]示例16（实现GridItem自定义拖拽）
 
@@ -2914,7 +2905,7 @@ struct GridItemExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799550.gif)
+ ![](./img/zh-cn_image_0000002727752440.gif)
 
 #### [h2]示例17（通过拖拽事件实现GridItem拖拽）
 
@@ -2985,7 +2976,7 @@ struct Example {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518835.gif)
+ ![](./img/zh-cn_image_0000002757312155.gif)
 
 #### [h2]示例18（Grid组件基于断点配置列数）
 
@@ -3038,15 +3029,15 @@ struct GridExample {
 ```
  Grid宽度属于sm及更小的断点区间时显示2列。
 
-![](./img/zh-cn_image_0000002701639636.png)
+![](./img/zh-cn_image_0000002757232275.png)
 
 Grid宽度属于md断点区间时显示3列。
 
-![](./img/zh-cn_image_0000002731358857.png)
+![](./img/zh-cn_image_0000002727592584.png)
 
 Grid宽度属于lg及更大的断点区间时显示5列。
 
-![](./img/zh-cn_image_0000002701799552.png)
+![](./img/zh-cn_image_0000002727752442.png)
 
 #### [h2]示例19（获取内容总大小）
 
@@ -3131,7 +3122,7 @@ struct GridExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518837.gif)
+ ![](./img/zh-cn_image_0000002757312157.gif)
 
 #### [h2]示例20（设置多选聚拢动画）
 
@@ -3234,7 +3225,7 @@ struct GridExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639638.gif)
+ ![](./img/zh-cn_image_0000002757232277.gif)
 
 #### [h2]示例21（设置滑动多选）
 
@@ -3330,7 +3321,7 @@ struct GridExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358859.gif)
+ ![](./img/zh-cn_image_0000002727592586.gif)
 
 #### [h2]示例22（使用OnMove进行拖拽）
 
@@ -3542,4 +3533,4 @@ struct GridOnMoveExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799554.gif)
+ ![](./img/zh-cn_image_0000002727752444.gif)

@@ -2,8 +2,8 @@
 title: "ProgressButtonV2"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-progressbuttonv2"
 catalog: "harmonyos-references"
-content_hash: "95589d47ad57"
-synced_at: "2026-08-29T18:15:13.862209"
+content_hash: "5a8dd9becf91"
+synced_at: "2026-09-17T18:52:02.015529"
 ---
 
 # ProgressButtonV2
@@ -15,8 +15,8 @@ synced_at: "2026-08-29T18:15:13.862209"
 ![](./img/note_3.0-zh-cn.png)
 
 - 该组件从API version 18开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
-- 该组件仅可在Stage模型下使用。
-- 如果ProgressButtonV2设置[通用属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-attributes)和[通用事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-events)，编译工具链会额外生成节点__Common__，并将通用属性或通用事件挂载在__Common__上，而不是直接应用到ProgressButtonV2本身。这可能导致开发者设置的通用属性或通用事件不生效或不符合预期，因此，不建议ProgressButtonV2设置通用属性和通用事件。
+- 本模块接口仅可在Stage模型下使用。
+- 如果ProgressButtonV2设置[通用属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-attributes)或[通用事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-events)，编译工具链会额外生成节点__Common__，并将通用属性或通用事件挂载在__Common__上，而不是直接应用到ProgressButtonV2本身。这可能导致开发者设置的通用属性或通用事件不生效或不符合预期，因此，不建议ProgressButtonV2设置通用属性和通用事件。
 
 #### 导入模块
 
@@ -26,7 +26,7 @@ import { ColorMetrics, LengthMetrics, ProgressButtonV2, ProgressButtonV2Color } 
 
 #### ProgressButtonV2
 
-ProgressButtonV2({progress: number, content: ResourceStr, progressButtonWidth?: LengthMetrics, onClicked: ClickCallback, isEnabled: boolean, colorOptions?: ProgressButtonColorOptions, progressButtonRadius?: LengthMetrics})
+ProgressButtonV2({progress: number, content: ResourceStr, progressButtonWidth?: LengthMetrics, onClicked: ClickCallback, isEnabled: boolean, colorOptions?: ProgressButtonV2Color, progressButtonRadius?: LengthMetrics})
 
 文本下载按钮，可显示具体下载进度。
 
@@ -49,10 +49,6 @@ ProgressButtonV2({progress: number, content: ResourceStr, progressButtonWidth?: 
 | isEnabled | boolean | 是 | @Param | 下载按钮是否可以点击。 true：可以点击。 false：不可点击。 |
 | colorOptions | [ProgressButtonV2Color](#progressbuttonv2color) | 否 | @Param | 下载按钮颜色选项。 |
 | progressButtonRadius | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | @Param | 下载按钮的圆角（不支持百分比设置）。 取值范围：[0, height/2] 默认值：height/2 设置非法数值时，按照默认值处理。 |
-
-#### 属性
-
-不支持[通用属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-attributes)。
 
 #### ClickCallback
 
@@ -128,10 +124,6 @@ constructor(options: ProgressButtonV2ColorOptions);
 | textColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | 是 | 按钮文本颜色。 默认值：系统默认值(#CE000000) |
 | backgroundColor | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 否 | 是 | 按钮背景颜色。 默认值：$r('sys.color.ohos_id_color_foreground_contrary') |
 
-#### 事件
-
-不支持[通用事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-component-general-events)。
-
 #### 示例
 
 该示例实现了一个简单的带加载进度的文本下载按钮。
@@ -185,4 +177,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359377.png)
+ ![](./img/zh-cn_image_0000002727593112.png)

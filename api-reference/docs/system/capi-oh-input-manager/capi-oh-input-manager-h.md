@@ -2,8 +2,8 @@
 title: "oh_input_manager.h"
 upstream_id: "harmonyos-references/capi-oh-input-manager-h"
 catalog: "harmonyos-references"
-content_hash: "171084e1ec5e"
-synced_at: "2026-09-14T19:48:05.953543"
+content_hash: "81663c13548a"
+synced_at: "2026-09-17T18:53:30.407148"
 ---
 
 # oh_input_manager.h
@@ -3192,7 +3192,7 @@ Input_Result OH_Input_RemoveHotkeyMonitor(const Input_Hotkey* hotkey, Input_Hotk
 
 | 类型 | 说明 |
 | --- | --- |
-| [Input_Result](#input_result) | OH_Input_RemoveHotkeyMonitor 函数返回值。 [INPUT_SUCCESS](#input_result) 取消订阅组合按键成功， [INPUT_PARAMETER_ERROR](#input_result) 参数检查失败。 |
+| [Input_Result](#input_result) | OH_Input_RemoveHotkeyMonitor 函数返回值。 [INPUT_SUCCESS](#input_result) 表示取消订阅组合按键成功。 [INPUT_PARAMETER_ERROR](#input_result) 参数检查失败。 |
 
 #### [h2]OH_Input_RegisterDeviceListener()
 
@@ -3307,14 +3307,14 @@ Input_Result OH_Input_GetDevice(int32_t deviceId, Input_DeviceInfo **deviceInfo)
 
 | 参数项 | 描述 |
 | --- | --- |
-| int32_t deviceId | 输入设备的唯一标识，同一个物理设备反复插拔或重启，设备ID可能会发生变化。 |
+| int32_t deviceId | 输入设备的唯一标识，同一个物理设备反复插拔或重启，设备ID可能会发生变化。可以通过 [OH_Input_GetDeviceIds](#oh_input_getdeviceids) 接口查询系统支持的设备ID。 |
 | [Input_DeviceInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-deviceinfo) **deviceInfo | deviceInfo 指向输入设备信息[Input_DeviceInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-deviceinfo)的指针。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| [Input_Result](#input_result) | [INPUT_SUCCESS](#input_result) 表示操作成功。 [INPUT_PARAMETER_ERROR](#input_result) 表示deviceInfo为空指针或deviceId无效。 可以通过 [OH_Input_GetDeviceIds](#oh_input_getdeviceids) 接口查询系统支持的设备ID。 |
+| [Input_Result](#input_result) | [INPUT_SUCCESS](#input_result) 表示操作成功。 [INPUT_PARAMETER_ERROR](#input_result) 表示deviceInfo为空指针或deviceId无效。 |
 
 #### [h2]OH_Input_CreateDeviceInfo()
 

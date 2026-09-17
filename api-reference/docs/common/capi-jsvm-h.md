@@ -2,8 +2,8 @@
 title: "jsvm.h"
 upstream_id: "harmonyos-references/capi-jsvm-h"
 catalog: "harmonyos-references"
-content_hash: "37b02f89c7e4"
-synced_at: "2026-08-29T18:18:45.476624"
+content_hash: "6e4d21a3587d"
+synced_at: "2026-09-17T18:55:00.715221"
 ---
 
 # jsvm.h
@@ -117,7 +117,7 @@ synced_at: "2026-08-29T18:18:45.476624"
 | [JSVM_EXTERN JSVM_Status OH_JSVM_GetPrototype(JSVM_Env env,JSVM_Value object,JSVM_Value* result)](#oh_jsvm_getprototype) | 返回对象的原型。 |
 | [JSVM_EXTERN JSVM_Status OH_JSVM_GetTypedarrayInfo(JSVM_Env env,JSVM_Value typedarray,JSVM_TypedarrayType* type,size_t* length,void** data,JSVM_Value* arraybuffer,size_t* byteOffset)](#oh_jsvm_gettypedarrayinfo) | 返回类型化数组的各种属性。如果不需要该属性，则任何输出参数都可以是 NULL。 |
 | [JSVM_EXTERN JSVM_Status OH_JSVM_GetDataviewInfo(JSVM_Env env,JSVM_Value dataview,size_t* bytelength,void** data,JSVM_Value* arraybuffer,size_t* byteOffset)](#oh_jsvm_getdataviewinfo) | 返回DataView的各种属性。如果不需要某一属性，则任何出参都可以设置为NULL。 |
-| [JSVM_EXTERN JSVM_Status OH_JSVM_GetDateValue(JSVM_Env env,JSVM_Value value,double* result)](#oh_jsvm_getdatevalue) | 返回与给定的JavaScript Date时间值等价的C双精度基础类型值。如果调用成功，返回JSVM_OK。如果传入一个非JavaScript Date类型的JSVM_Value，返回JSVM_DATA_EXPECTED。 |
+| [JSVM_EXTERN JSVM_Status OH_JSVM_GetDateValue(JSVM_Env env,JSVM_Value value,double* result)](#oh_jsvm_getdatevalue) | 返回与给定的JavaScript Date时间值等价的C双精度基础类型值。如果调用成功，返回JSVM_OK。如果传入一个非JavaScript Date类型的JSVM_Value，返回JSVM_DATE_EXPECTED。 |
 | [JSVM_EXTERN JSVM_Status OH_JSVM_GetValueBool(JSVM_Env env,JSVM_Value value,bool* result)](#oh_jsvm_getvaluebool) | 返回与给定的JavaScript Boolean等价的C布尔基础类型值。 |
 | [JSVM_EXTERN JSVM_Status OH_JSVM_GetValueDouble(JSVM_Env env,JSVM_Value value,double* result)](#oh_jsvm_getvaluedouble) | 返回与给定的JavaScript number等价的C双精度基础类型值。 |
 | [JSVM_EXTERN JSVM_Status OH_JSVM_GetValueBigintInt64(JSVM_Env env,JSVM_Value value,int64_t* result,bool* lossless)](#oh_jsvm_getvaluebigintint64) | 返回与给定的JavaScript BigInt等价的C int64_t基础类型值。如果需要，它将截断该值，将lossless设置为false。 |
@@ -392,7 +392,7 @@ JSVM_EXTERN JSVM_Status OH_JSVM_CreateProxy(JSVM_Env env,JSVM_Value target,JSVM_
 
 | 类型 | 说明 |
 | --- | --- |
-| JSVM_EXTERN [JSVM_Status](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) | 返回执行状态码。 [JSVM_OK](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示接口调用成功。 [JSVM_OBJECT_EXPECTED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 如果 target 或 handler 非 JS 对象。 [JSVM_GENERIC_FAILURE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示有未知的原因导致执行失败。 |
+| JSVM_EXTERN [JSVM_Status](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) | 返回执行状态码。 [JSVM_OK](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示接口调用成功。 [JSVM_INVALID_ARG](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示传入参数不合法。 [JSVM_PENDING_EXCEPTION](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示执行的过程中产生了JS异常。 [JSVM_OBJECT_EXPECTED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 如果 target 或 handler 非 JS 对象。 |
 
 #### [h2]OH_JSVM_IsProxy()
 
@@ -2158,7 +2158,7 @@ JSVM_EXTERN JSVM_Status OH_JSVM_GetDateValue(JSVM_Env env,JSVM_Value value,doubl
 ```
  描述
 
-返回与给定的JavaScript Date时间值等价的C双精度基础类型值。如果调用成功，返回JSVM_OK。如果传入一个非JavaScript Date类型的JSVM_Value，返回JSVM_DATA_EXPECTED。
+返回与给定的JavaScript Date时间值等价的C双精度基础类型值。如果调用成功，返回JSVM_OK。如果传入一个非JavaScript Date类型的JSVM_Value，返回JSVM_DATE_EXPECTED。
 
 起始版本： 11
 
@@ -4717,7 +4717,7 @@ JSVM_EXTERN JSVM_Status OH_JSVM_CreateRegExp(JSVM_Env env,JSVM_Value value,JSVM_
 
 | 类型 | 说明 |
 | --- | --- |
-| JSVM_EXTERN [JSVM_Status](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) | 返回执行状态码 JSVM_Status。 [JSVM_OK](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示执行成功。 [JSVM_INVALID_ARG](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示输入参数不合法。 [JSVM_PENDING_EXCEPTION](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示API在运行时抛出异常。 |
+| JSVM_EXTERN [JSVM_Status](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) | 返回执行状态码 JSVM_Status。 [JSVM_OK](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示执行成功。 [JSVM_INVALID_ARG](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示输入参数不合法。 [JSVM_STRING_EXPECTED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示传入的参数不是string类型。 [JSVM_GENERIC_FAILURE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示有未知的原因导致执行失败。 [JSVM_PENDING_EXCEPTION](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示API在运行时抛出异常。 |
 
 #### [h2]OH_JSVM_ObjectGetPrototypeOf()
 
@@ -4841,7 +4841,7 @@ JSVM_EXTERN JSVM_Status OH_JSVM_CoerceToBigInt(JSVM_Env env,JSVM_Value value,JSV
 
 | 类型 | 说明 |
 | --- | --- |
-| JSVM_EXTERN [JSVM_Status](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) | 返回执行状态码 JSVM_Status。 [JSVM_OK](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示执行成功。 [JSVM_BIGINT_EXPECTED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 如果传入的JavaScript值无法转换成BigInt。 |
+| JSVM_EXTERN [JSVM_Status](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) | 返回执行状态码 JSVM_Status。 [JSVM_OK](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示执行成功。 [JSVM_INVALID_ARG](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示输入参数不合法。 [JSVM_BIGINT_EXPECTED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 如果传入的JavaScript值无法转换成BigInt。 |
 
 #### [h2]OH_JSVM_IsRegExp()
 
@@ -4866,7 +4866,7 @@ JSVM_EXTERN JSVM_Status OH_JSVM_IsRegExp(JSVM_Env env,JSVM_Value value,bool* res
 
 | 类型 | 说明 |
 | --- | --- |
-| JSVM_EXTERN [JSVM_Status](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) | 返回执行状态码 JSVM_Status。 [JSVM_OK](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示执行成功。 |
+| JSVM_EXTERN [JSVM_Status](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) | 返回执行状态码 JSVM_Status。 [JSVM_OK](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示执行成功。 [JSVM_INVALID_ARG](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示输入参数不合法。 |
 
 #### [h2]OH_JSVM_CreateFunctionWithScript()
 
@@ -4895,7 +4895,7 @@ JSVM_EXTERN JSVM_Status OH_JSVM_CreateFunctionWithScript(JSVM_Env env,const char
 
 | 类型 | 说明 |
 | --- | --- |
-| JSVM_EXTERN [JSVM_Status](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) | 返回执行状态码 JSVM_Status。 [JSVM_OK](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示执行成功。 [JSVM_GENERIC_FAILURE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示输入的JavaScript无法编译成功。 |
+| JSVM_EXTERN [JSVM_Status](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) | 返回执行状态码 JSVM_Status。 [JSVM_OK](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示执行成功。 [JSVM_INVALID_ARG](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示输入参数不合法。 [JSVM_GENERIC_FAILURE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示输入的JavaScript无法编译成功。 |
 
 #### [h2]OH_JSVM_PumpMessageLoop()
 
@@ -5069,7 +5069,7 @@ JSVM_EXTERN JSVM_Status OH_JSVM_CompileWasmModule(JSVM_Env env,const uint8_t *wa
 
 | 类型 | 说明 |
 | --- | --- |
-| JSVM_EXTERN [JSVM_Status](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) | 返回执行状态码 JSVM_Status。 [JSVM_OK](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示执行成功。 [JSVM_INVALID_ARG](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示 env 或 wasmBytecode 参数为空，或传入的数据长度参数无效。 [JSVM_GENERIC_FAILURE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示编译失败。 [JSVM_PENDING_EXCEPTION](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示发生了异常。 |
+| JSVM_EXTERN [JSVM_Status](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) | 返回执行状态码 JSVM_Status。 [JSVM_OK](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示执行成功。 [JSVM_INVALID_ARG](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示 env 或 wasmBytecode 参数为空，或传入的数据长度参数无效。 [JSVM_GENERIC_FAILURE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示编译失败。 [JSVM_PENDING_EXCEPTION](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示发生了异常。 [JSVM_JIT_MODE_EXPECTED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示无JIT权限。 |
 
 #### [h2]OH_JSVM_CompileWasmFunction()
 
@@ -5095,7 +5095,7 @@ JSVM_EXTERN JSVM_Status OH_JSVM_CompileWasmFunction(JSVM_Env env,JSVM_Value wasm
 
 | 类型 | 说明 |
 | --- | --- |
-| JSVM_EXTERN [JSVM_Status](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) | 返回执行状态码 JSVM_Status。 [JSVM_OK](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示执行成功。 [JSVM_INVALID_ARG](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示 env 或 wasmModule 参数为空，或 wasmModule 不是一个真正的 WebAssembly 模块。 [JSVM_GENERIC_FAILURE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示函数索引越界，或编译失败。 [JSVM_PENDING_EXCEPTION](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示发生了异常。 |
+| JSVM_EXTERN [JSVM_Status](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) | 返回执行状态码 JSVM_Status。 [JSVM_OK](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示执行成功。 [JSVM_INVALID_ARG](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示 env 或 wasmModule 参数为空，或 wasmModule 不是一个真正的 WebAssembly 模块。 [JSVM_GENERIC_FAILURE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示函数索引越界，或编译失败。 [JSVM_PENDING_EXCEPTION](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示发生了异常。 [JSVM_JIT_MODE_EXPECTED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示无JIT权限。 |
 
 #### [h2]OH_JSVM_IsWasmModuleObject()
 
@@ -5146,7 +5146,7 @@ JSVM_EXTERN JSVM_Status OH_JSVM_CreateWasmCache(JSVM_Env env,JSVM_Value wasmModu
 
 | 类型 | 说明 |
 | --- | --- |
-| JSVM_EXTERN [JSVM_Status](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) | 返回执行状态码 JSVM_Status。 [JSVM_OK](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示执行成功。 [JSVM_INVALID_ARG](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示传入了空指针参数。 [JSVM_GENERIC_FAILURE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示缓存生成失败。 |
+| JSVM_EXTERN [JSVM_Status](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) | 返回执行状态码 JSVM_Status。 [JSVM_OK](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示执行成功。 [JSVM_INVALID_ARG](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示传入了空指针参数。 [JSVM_GENERIC_FAILURE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示缓存生成失败。 [JSVM_JIT_MODE_EXPECTED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示无JIT权限。 |
 
 #### [h2]OH_JSVM_ReleaseCache()
 
@@ -5978,7 +5978,7 @@ JSVM_EXTERN JSVM_Status OH_JSVM_CreateDataReference(JSVM_Env env,JSVM_Data data,
 
 | 类型 | 说明 |
 | --- | --- |
-| JSVM_EXTERN [JSVM_Status](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) | 返回执行状态码 JSVM_Status。 [JSVM_OK](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示执行成功。 |
+| JSVM_EXTERN [JSVM_Status](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) | 返回执行状态码 JSVM_Status。 [JSVM_OK](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示执行成功。 [JSVM_INVALID_ARG](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h#jsvm_status) 表示任一传入参数为空或者 key 不是一个 private key 对象。 |
 
 #### [h2]OH_JSVM_GetReferenceData()
 

@@ -1,12 +1,12 @@
 ---
-title: "@ohos.enterprise.applicationManager（应用管理）"
+title: "@ohos.enterprise.applicationManager (应用管理)"
 upstream_id: "harmonyos-references/js-apis-enterprise-applicationmanager"
 catalog: "harmonyos-references"
-content_hash: "a8da6821699b"
-synced_at: "2026-08-29T18:17:07.066558"
+content_hash: "9e87eb8aceae"
+synced_at: "2026-09-17T18:53:31.293110"
 ---
 
-# @ohos.enterprise.applicationManager（应用管理）
+# @ohos.enterprise.applicationManager (应用管理)
 
 本模块提供应用管理能力，包括管理应用运行禁止名单、应用运行允许名单、开机自启动应用名单、保活应用名单、不可关停应用名单、后台防冻结应用名单、允许发送通知应用名单、允许跨设备应用名单等。适用于企业设备管理场景，可实现应用运行权限管控、开机自启动管理、保活应用管理等，提升企业设备安全性和合规性。
 
@@ -30,13 +30,13 @@ addDisallowedRunningBundlesSync(admin: Want, appIds: Array<string>, accountId?: 
 
 ![](./img/note_3.0-zh-cn.png) 若指定应用正在运行，将其加入禁止名单后，系统将立即终止该应用进程。
 
+在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_APPLICATION
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -86,13 +86,13 @@ removeDisallowedRunningBundlesSync(admin: Want, appIds: Array<string>, accountId
 
 将应用从当前/指定用户下的应用运行禁止名单中移除。移除后，该应用将允许在当前/指定用户下运行。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_APPLICATION
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -256,14 +256,13 @@ addAllowedRunningBundles(admin: Want, appIdentifiers: Array<string>, accountId: 
 1. 由于MDM Kit下大多数接口仅对MDM应用开放，本接口使用时，请将MDM应用同时添加至应用运行允许名单，否则会导致MDM应用不允许运行，阻塞接口调用。接口是否仅对MDM应用开放请查看对应的模块说明。
 2. 如果应用运行禁止名单非空，不支持再使用本接口添加应用运行允许名单，否则会报9200010冲突错误码。应用运行禁止名单相关接口包括[addDisallowedRunningBundlesSync](#applicationmanageradddisallowedrunningbundlessync)。
 3. 本接口仅对三方应用生效，系统应用不受该名单管控，默认可以运行。
+4. 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
 
 需要权限： ohos.permission.ENTERPRISE_MANAGE_APPLICATION
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -313,13 +312,13 @@ removeAllowedRunningBundles(admin: Want, appIdentifiers: Array<string>, accountI
 
 将应用从指定用户下的应用运行允许名单中移除。移除后，该应用将不允许在指定用户下运行。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_APPLICATION
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -476,6 +475,8 @@ addAutoStartApps(admin: Want, autoStartApps: Array<Want>): void
 
 为当前用户添加开机自启动应用名单。通过本接口添加至自启动名单的应用，禁止用户在设备上手动取消应用自启动（用户通过设备上设置->应用和元服务->应用启动管理，取消应用自启动），但可通过[removeAutoStartApps](#applicationmanagerremoveautostartapps)接口将应用从自启动名单中移除。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_APPLICATION
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
@@ -483,8 +484,6 @@ addAutoStartApps(admin: Want, autoStartApps: Array<Want>): void
 设备行为差异： 对于API version 20及之前的版本，该接口在PC/2in1设备可正常调用，在其他设备中调用无效果。从API version 21开始，该接口在Phone、Tablet、PC/2in1中均可正常使用。从API version 24开始，该接口新增支持配置应用开机自启时是否隐藏UI界面，隐藏UI界面的能力仅在PC/2in1和Tablet的PC模式中可正常使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -542,6 +541,8 @@ removeAutoStartApps(admin: Want, autoStartApps: Array<Want>): void
 
 为当前用户删除开机自启动应用名单。删除后，应用将不再开机自启动。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_APPLICATION
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
@@ -549,8 +550,6 @@ removeAutoStartApps(admin: Want, autoStartApps: Array<Want>): void
 设备行为差异： 对于API version 20及之前的版本，该接口在PC/2in1设备可正常调用，在其他设备中调用无效果。从API version 21开始，该接口在Phone、Tablet、PC/2in1中均可正常使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -603,6 +602,8 @@ removeAutoStartApps(admin: Want, autoStartApps: Array<Want>, accountId: number):
 
 删除指定用户的开机自启动应用名单中的指定应用。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_APPLICATION
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
@@ -610,8 +611,6 @@ removeAutoStartApps(admin: Want, autoStartApps: Array<Want>, accountId: number):
 设备行为差异： 对于API version 20及之前的版本，该接口在PC/2in1设备可正常调用，在其他设备中调用无效果。从API version 21开始，该接口在Phone、Tablet、PC/2in1中均可正常使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -808,6 +807,8 @@ addAutoStartApps(admin: Want, autoStartApps: Array<Want>, accountId: number, dis
 
 通过本接口、[addAutoStartApps](#applicationmanageraddautostartapps)接口均可添加开机自启动应用名单，两个接口的设置可同时生效。同一用户下，开机自启动应用名单最多支持包含10个应用。例如：若当前名单中已有3个应用，则最多还能通过本接口为当前用户添加7个应用。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_APPLICATION
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
@@ -815,8 +816,6 @@ addAutoStartApps(admin: Want, autoStartApps: Array<Want>, accountId: number, dis
 设备行为差异： 对于API version 20及之前的版本，该接口在PC/2in1设备可正常调用，在其他设备中调用无效果。从API version 21开始，该接口在Phone、Tablet、PC/2in1中均可正常使用。从API version 24开始，该接口新增支持配置应用开机自启时是否隐藏UI界面，隐藏UI界面的能力仅在PC/2in1和Tablet的PC模式中可正常使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -1094,6 +1093,7 @@ addKeepAliveApps(admin: Want, bundleNames: Array<string>, accountId: number): vo
 - 当被保活的应用进程退出时，系统将尝试重启该进程，连续3次重启失败后将不再继续重启。
 - 被保活的应用卸载后，会将该应用从保活名单中移除。
 - 若应用添加到保活名单时未启动，后续启动时保活失败，将从保活名单中移除。
+- 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
 
 需要权限： ohos.permission.ENTERPRISE_MANAGE_APPLICATION
 
@@ -1102,8 +1102,6 @@ addKeepAliveApps(admin: Want, bundleNames: Array<string>, accountId: number): vo
 设备行为差异： 该接口在PC/2in1设备中可正常调用，在其他设备中返回801错误码。
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -1168,6 +1166,7 @@ addKeepAliveApps(admin: Want, bundleNames: Array<string>, accountId: number, dis
 - 当被保活的应用进程退出时，系统将尝试重启该进程，连续3次重启失败后将不再继续重启。
 - 被保活的应用卸载后，会将该应用从保活名单中移除。
 - 若应用添加到保活名单时未启动，后续启动时保活失败，将从保活名单中移除。
+- 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
 
 需要权限： ohos.permission.ENTERPRISE_MANAGE_APPLICATION
 
@@ -1176,8 +1175,6 @@ addKeepAliveApps(admin: Want, bundleNames: Array<string>, accountId: number, dis
 设备行为差异： 该接口在PC/2in1设备中可正常调用，在其他设备中返回801错误码。
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -1230,6 +1227,8 @@ removeKeepAliveApps(admin: Want, bundleNames: Array<string>, accountId: number):
 
 移除保活应用名单中的指定应用。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_APPLICATION
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
@@ -1237,8 +1236,6 @@ removeKeepAliveApps(admin: Want, bundleNames: Array<string>, accountId: number):
 设备行为差异： 该接口在PC/2in1设备上生效，在其他设备中调用无效果。
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -1518,13 +1515,13 @@ setAllowedKioskApps(admin: Want, appIdentifiers: Array<string>): void
 
 Kiosk模式为系统层面提供的一种应用运行模式，该模式下会将设备锁定在单个应用或者一组应用运行，同时对锁屏状态、状态栏、手势操作和关键功能进行控制，防止用户在设备上启动其它应用或执行其它操作。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)规则。
+
 需要权限： ohos.permission.ENTERPRISE_SET_KIOSK
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)。
 
 参数：
 
@@ -1717,13 +1714,13 @@ setKioskFeatures(admin: Want, features: Array<KioskFeature>): void
 
 在非Kiosk模式下，本接口可以正常调用，但是不会生效，进入Kiosk模式后才会生效。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_SET_KIOSK
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 设备行为差异： 该接口在PC/2in1设备上调用无效果，在Phone和Tablet设备上可正常调用。
 
@@ -1781,6 +1778,8 @@ addUserNonStopApps(admin: Want, applicationInstances: Array<common.ApplicationIn
 
 从API版本26.0.0开始，调用[setDisallowedPolicyForAccount](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicyforaccount)接口禁用[SUPER_HUB](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#featureforaccount)后，再调用该接口将中转站添加到不可关停应用名单时，会发生策略冲突，抛出9200010错误码。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_APPLICATION
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
@@ -1788,8 +1787,6 @@ addUserNonStopApps(admin: Want, applicationInstances: Array<common.ApplicationIn
 设备行为差异： 该接口在Phone和Tablet中可正常调用，在其他设备中调用无效果。从API version 24开始，该接口在PC/2in1设备可正常调用。
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -1845,6 +1842,8 @@ removeUserNonStopApps(admin: Want, applicationInstances: Array<common.Applicatio
 
 为指定用户删除不可关停应用名单。删除后，用户可以在设备上正常关停该应用。执行删除策略时，若参数列表中包含未安装应用，删除操作仍能成功执行；已安装的应用将被删除，未安装的应用不影响删除操作。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_APPLICATION
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
@@ -1852,8 +1851,6 @@ removeUserNonStopApps(admin: Want, applicationInstances: Array<common.Applicatio
 设备行为差异： 该接口在Phone和Tablet中可正常调用，在其他设备中调用无效果。从API version 24开始，该接口在PC/2in1设备可正常调用。
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -2018,6 +2015,8 @@ addFreezeExemptedApps(admin: Want, applicationInstances: Array<common.Applicatio
 
 冻结操作：对目标应用的挂起、软件资源代理、硬件资源代理和高功耗管控等操作。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_APPLICATION
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
@@ -2025,8 +2024,6 @@ addFreezeExemptedApps(admin: Want, applicationInstances: Array<common.Applicatio
 设备行为差异： 在API版本26.0.0之前，该接口在Phone和Tablet中可正常调用，在其他设备中调用无效果。从API版本26.0.0开始，该接口在Phone、Tablet、PC/2in1中均可正常使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -2081,6 +2078,8 @@ removeFreezeExemptedApps(admin: Want, applicationInstances: Array<common.Applica
 
 为指定用户删除后台防冻结应用名单。删除后，应用可以被系统冻结。执行删除策略时，若参数列表中包含未安装应用，删除操作仍能成功执行；已安装的应用将被删除，未安装的应用不影响删除操作。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_APPLICATION
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
@@ -2088,8 +2087,6 @@ removeFreezeExemptedApps(admin: Want, applicationInstances: Array<common.Applica
 设备行为差异： 在API版本26.0.0之前，该接口在Phone和Tablet中可正常调用，在其他设备中调用无效果。从API版本26.0.0开始，该接口在Phone、Tablet、PC/2in1中均可正常使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -2252,13 +2249,13 @@ setAbilityDisabled(admin: Want, bundleName: string, accountId: number, abilityNa
 
 设置是否禁用指定应用（系统应用和三方应用均支持）的Ability组件。当前仅支持UIAbility类型，禁用后无法拉起此Ability组件的用户界面。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[从严管控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则1从严管控)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_APPLICATION
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [从严管控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则1从严管控)。
 
 参数：
 
@@ -2447,6 +2444,8 @@ addDockApp(admin: Want, bundleName: string, abilityName: string, index?: number)
 
 7.通过本接口添加应用到快捷栏后，用户可以手动移除或调整应用的位置。
 
+8.在多个MDM应用场景下，遵循[配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_APPLICATION
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
@@ -2454,8 +2453,6 @@ addDockApp(admin: Want, bundleName: string, abilityName: string, index?: number)
 模型约束： 此接口仅可在Stage模型下使用。
 
 设备行为差异： 该接口在PC/2in1设备上生效，在其他设备中调用返回801错误码。
-
-冲突规则： [配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)。
 
 参数：
 
@@ -2650,6 +2647,8 @@ addAllowedNotificationBundles(admin: Want, bundleNames: Array<string>, accountId
 
 4.支持跨用户设置，设置后跨用户立即生效。
 
+5.在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 起始版本： 26.0.0
 
 需要权限： ohos.permission.ENTERPRISE_MANAGE_APPLICATION
@@ -2657,8 +2656,6 @@ addAllowedNotificationBundles(admin: Want, bundleNames: Array<string>, accountId
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -2710,13 +2707,13 @@ removeAllowedNotificationBundles(admin: Want, bundleNames: Array<string>, accoun
 
 起始版本： 26.0.0
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_APPLICATION
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -2829,6 +2826,8 @@ addAllowedDistributeAbilityConnBundles(admin: Want, appIdentifiers: Array<string
 
 2.当向其他设备传输数据的设备间单向传输数据的能力被解除禁用时，通过本接口设置的允许使用特定分布式业务的应用名单会被同步清除。
 
+3.在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 起始版本： 26.0.0
 
 需要权限： ohos.permission.ENTERPRISE_MANAGE_APPLICATION
@@ -2836,8 +2835,6 @@ addAllowedDistributeAbilityConnBundles(admin: Want, appIdentifiers: Array<string
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -2904,13 +2901,13 @@ removeAllowedDistributeAbilityConnBundles(admin: Want, appIdentifiers: Array<str
 
 起始版本： 26.0.0
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_APPLICATION
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -3378,6 +3375,8 @@ addHideLauncherIcon(admin: Want, bundleNames: Array<string>): void
 
 3、不能把桌面所有应用都添加到隐藏名单中，否则所有应用都会显示到桌面上。
 
+4、在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 起始版本： 26.0.0
 
 需要权限： ohos.permission.ENTERPRISE_MANAGE_APPLICATION
@@ -3387,8 +3386,6 @@ addHideLauncherIcon(admin: Want, bundleNames: Array<string>): void
 模型约束： 此接口仅可在Stage模型下使用。
 
 设备行为差异： 该接口在Phone和Tablet中可正常调用，在其他设备中调用返回801错误码。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -3438,6 +3435,8 @@ removeHideLauncherIcon(admin: Want, bundleNames: Array<string>): void
 
 ![](./img/note_3.0-zh-cn.png) 取消隐藏的应用会从桌面第2屏开始找空位显示；如果第2~18屏无空位，则在第1屏找空位；如果第1屏无空位，则在第2屏第1个应用的位置创建小文件夹放置应用。
 
+在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 起始版本： 26.0.0
 
 需要权限： ohos.permission.ENTERPRISE_MANAGE_APPLICATION
@@ -3447,8 +3446,6 @@ removeHideLauncherIcon(admin: Want, bundleNames: Array<string>): void
 模型约束： 此接口仅可在Stage模型下使用。
 
 设备行为差异： 该接口在Phone和Tablet中可正常调用，在其他设备中调用返回801错误码。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 

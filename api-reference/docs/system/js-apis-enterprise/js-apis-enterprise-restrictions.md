@@ -1,12 +1,12 @@
 ---
-title: "@ohos.enterprise.restrictions（限制类策略）"
+title: "@ohos.enterprise.restrictions (限制类策略)"
 upstream_id: "harmonyos-references/js-apis-enterprise-restrictions"
 catalog: "harmonyos-references"
-content_hash: "ce087963d454"
-synced_at: "2026-09-04T18:12:29.115460"
+content_hash: "245b8614b8ac"
+synced_at: "2026-09-17T18:53:32.271679"
 ---
 
-# @ohos.enterprise.restrictions（限制类策略）
+# @ohos.enterprise.restrictions (限制类策略)
 
 本模块提供设置通用限制类策略能力。可以全局禁用和解除禁用蓝牙、HDC、USB、Wi-Fi、蜂窝数据、相机、麦克风等特性。
 
@@ -49,6 +49,8 @@ setDisallowedPolicy(admin: Want, feature: string, disallow: boolean): void
 
 ![](./img/note_3.0-zh-cn.png) 本接口为设备级禁用策略，影响设备所有用户。如需针对特定用户设置禁用策略，请使用[setDisallowedPolicyForAccount](#restrictionssetdisallowedpolicyforaccountdeprecated)接口。
 
+在多个MDM应用场景下，遵循[从严管控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则1从严管控)规则。
+
 起始版本： 12
 
 废弃版本： 26.0.0
@@ -66,8 +68,6 @@ setDisallowedPolicy(admin: Want, feature: string, disallow: boolean): void
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [从严管控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则1从严管控)。
 
 参数：
 
@@ -283,13 +283,13 @@ setDisallowedPolicyForAccount(admin: Want, feature: string, disallow: boolean, a
 
 替代接口： [restrictions.setDisallowedPolicyForAccount](#restrictionssetdisallowedpolicyforaccount)
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[从严管控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则1从严管控)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_RESTRICTIONS
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [从严管控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则1从严管控)。
 
 参数：
 
@@ -401,13 +401,13 @@ addDisallowedListForAccount(admin: Want, feature: string, list: Array<string>, a
 
 为指定用户添加禁止使用某特性的应用名单。指定用户下，添加到名单中的应用不允许使用指定的特性能力。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_RESTRICTIONS
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -457,13 +457,13 @@ removeDisallowedListForAccount(admin: Want, feature: string, list: Array<string>
 
 为指定用户移除禁止使用某特性的应用名单。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_RESTRICTIONS
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -577,13 +577,13 @@ setUserRestriction(admin: Want, settingsItem: string, restricted: boolean): void
 
 替代接口： [restrictions.setUserRestriction](#restrictionssetuserrestriction)
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[从严管控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则1从严管控)规则。
+
 需要权限： ohos.permission.ENTERPRISE_SET_USER_RESTRICTION
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [从严管控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则1从严管控)。
 
 参数：
 
@@ -698,13 +698,13 @@ setUserRestrictionForAccount(admin: Want, settingsItem: string, accountId: numbe
 
 替代接口： [restrictions.setUserRestrictionForAccount](#restrictionssetuserrestrictionforaccount)
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[从严管控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则1从严管控)规则。
+
 需要权限： ohos.permission.ENTERPRISE_SET_USER_RESTRICTION
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [从严管控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则1从严管控)。
 
 参数：
 
@@ -820,13 +820,13 @@ setDisallowedPolicy(admin: Want, feature: FeatureForDevice, disallow: boolean): 
 
 设置禁用/启用指定设备特性，禁用后相关设备特性无法被使用。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[从严管控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则1从严管控)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_RESTRICTIONS 或 ohos.permission.PERSONAL_MANAGE_RESTRICTIONS
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [从严管控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则1从严管控)。
 
 参数：
 
@@ -933,13 +933,13 @@ setDisallowedPolicyForAccount(admin: Want, feature: FeatureForAccount, disallow:
 
 起始版本： 26.0.0
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[从严管控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则1从严管控)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_RESTRICTIONS
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [从严管控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则1从严管控)。
 
 参数：
 

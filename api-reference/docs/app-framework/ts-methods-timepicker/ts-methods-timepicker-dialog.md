@@ -2,8 +2,8 @@
 title: "时间滑动选择器弹窗 (TimePickerDialog)"
 upstream_id: "harmonyos-references/ts-methods-timepicker-dialog"
 catalog: "harmonyos-references"
-content_hash: "3c2c3c84f4da"
-synced_at: "2026-08-29T18:14:48.416492"
+content_hash: "b1fe900b337d"
+synced_at: "2026-09-17T18:51:47.020975"
 ---
 
 # 时间滑动选择器弹窗 (TimePickerDialog)
@@ -152,7 +152,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519279.gif)
+ ![](./img/zh-cn_image_0000002757232721.gif)
 
 #### [h2]示例2（自定义样式）
 
@@ -210,7 +210,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701640080.png)
+ ![](./img/zh-cn_image_0000002727593030.png)
 
 #### [h2]示例3（悬停态弹窗）
 
@@ -265,7 +265,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359299.gif)
+ ![](./img/zh-cn_image_0000002727752888.gif)
 
 #### [h2]示例4（设置弹窗位置）
 
@@ -299,7 +299,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799994.png)
+ ![](./img/zh-cn_image_0000002757312603.png)
 
 #### [h2]示例5（设置遮蔽区）
 
@@ -332,7 +332,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519281.png)
+ ![](./img/zh-cn_image_0000002757232723.png)
 
 #### [h2]示例6（设置弹窗背板）
 
@@ -367,7 +367,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701640082.png)
+ ![](./img/zh-cn_image_0000002727593032.png)
 
 #### [h2]示例7（设置时间滑动选择器弹窗的起始时间）
 
@@ -403,7 +403,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359301.png)
+ ![](./img/zh-cn_image_0000002727752890.png)
 
 #### [h2]示例8（设置时间滑动选择器弹窗的结束时间）
 
@@ -439,7 +439,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799996.png)
+ ![](./img/zh-cn_image_0000002757312605.png)
 
 #### [h2]示例9（设置上午下午跟随时间联动）
 
@@ -474,7 +474,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519283.gif)
+ ![](./img/zh-cn_image_0000002757232725.gif)
 
 #### [h2]示例10（自定义背景模糊效果参数）
 
@@ -508,7 +508,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701640084.png)
+ ![](./img/zh-cn_image_0000002727593034.png)
 
 #### [h2]示例11（自定义背景效果参数）
 
@@ -543,11 +543,13 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359303.png)
+ ![](./img/zh-cn_image_0000002727752892.png)
 
-#### [h2]示例12（设置系统材质）
+#### [h2]示例12（设置沉浸光感）
 
-该示例通过配置[systemMaterial](#timepickerdialogoptions对象说明)，实现系统材质效果。
+该示例通过配置[systemMaterial](#timepickerdialogoptions对象说明)，实现沉浸光感效果。
+
+该示例配图为高算力设备强档效果，组件沉浸光感效果会根据设备算力与用户在系统中设置的沉浸光感效果自适应调整，开发者无需额外适配。
 
 从API版本26.0.0开始，在TimePickerDialogOptions中新增了systemMaterial属性。
 
@@ -568,8 +570,11 @@ struct DatePickerDialogExample {
             });
           })
       }.width('100%')
+      .height('100%')
+      .backgroundImage($r('app.media.bgImg'))  // $r('app.media.bgImg')需要替换为开发者所需的资源文件
+      .backgroundImageSize(ImageSize.FILL)
     }
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799998.png)
+ ![](./img/zh-cn_image_0000002757312607.gif)

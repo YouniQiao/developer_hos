@@ -2,8 +2,8 @@
 title: "属性"
 upstream_id: "harmonyos-references/arkts-basic-components-web-attributes"
 catalog: "harmonyos-references"
-content_hash: "878817f178cf"
-synced_at: "2026-08-29T18:16:03.583626"
+content_hash: "9f279462c6d3"
+synced_at: "2026-09-17T18:52:38.224070"
 ---
 
 # 属性
@@ -1904,8 +1904,7 @@ Web组件高度基于前端页面自适应布局有如下限制：
 
 示例：
 
-1、指明layoutMode为WebLayoutMode.FIT_CONTENT模式，为避免默认渲染模式下(RenderMode.ASYNC_RENDER)视口高度超过7680px导致页面渲染出错，需要显式指明渲染模式(RenderMode.SYNC_RENDER)。
-
+1. 指明layoutMode为WebLayoutMode.FIT_CONTENT模式，为避免默认渲染模式下(RenderMode.ASYNC_RENDER)视口高度超过7680px导致页面渲染出错，需要显式指明渲染模式(RenderMode.SYNC_RENDER)。 
 ```
 // xxx.ets
 import { webview } from '@kit.ArkWeb';
@@ -1924,8 +1923,8 @@ struct WebComponent {
   }
 }
 ```
- 2、指明layoutMode为WebLayoutMode.FIT_CONTENT模式，为避免嵌套滚动场景下，Web滚动到边缘时会优先触发过滚动的过界回弹效果影响用户体验，建议指定[overScrollMode](#overscrollmode11)为OverScrollMode.NEVER。
 
+2. 指明layoutMode为WebLayoutMode.FIT_CONTENT模式，为避免嵌套滚动场景下，Web滚动到边缘时会优先触发过滚动的过界回弹效果影响用户体验，建议指定[overScrollMode](#overscrollmode11)为OverScrollMode.NEVER。 
 ```
 // xxx.ets
 import { webview } from '@kit.ArkWeb';

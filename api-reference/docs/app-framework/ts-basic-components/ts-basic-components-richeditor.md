@@ -2,8 +2,8 @@
 title: "RichEditor"
 upstream_id: "harmonyos-references/ts-basic-components-richeditor"
 catalog: "harmonyos-references"
-content_hash: "93f693fe23f8"
-synced_at: "2026-08-29T18:13:59.722784"
+content_hash: "b4d702856d14"
+synced_at: "2026-09-17T18:50:58.629829"
 ---
 
 # RichEditor
@@ -188,10 +188,7 @@ dataDetectorConfig(config: TextDataDetectorConfig)
 当有两个实体A、B重叠时，按以下规则保留实体：
 
 1. 若A ⊂ B，则保留B，反之则保留A。
-
-2. 当A ⊄ B且B ⊄ A时，若A.start < B.start，则保留A，反之则保留B。
-
-元服务API： 从API version 12开始，该接口支持在元服务中使用。
+2. 当A ⊄ B且B ⊄ A时，若A.start 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -297,7 +294,7 @@ caretColor(value: ResourceColor)
 
 selectedBackgroundColor(value: ResourceColor)
 
-设置文本选中的底板颜色。如果未设置不透明度，默认为20%不透明度。
+设置文本选中高亮颜色。如果未设置不透明度或设置为完全不透明，默认使用20%不透明度。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -307,7 +304,7 @@ selectedBackgroundColor(value: ResourceColor)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 是 | 文本选中的底板颜色。 默认为20%不透明度。 |
+| value | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 是 | 文本选中高亮颜色。 默认为20%不透明度。 |
 
 #### [h2]editMenuOptions12+
 
@@ -1001,7 +998,7 @@ onWillAttachIME(callback: Callback<IMEClient> | undefined)
 | --- | --- | --- | --- | --- |
 | offset | number | 否 | 否 | 删除内容的偏移位置。 |
 | direction | [RichEditorDeleteDirection](#richeditordeletedirection) | 否 | 否 | 删除操作的方向。 |
-| length | number | 否 | 否 | 删除内容长度。 |
+| length | number | 否 | 否 | 删除内容长度，删除范围为[offset, offset + length)，结束位置对应的内容不包含在内。 |
 | richEditorDeleteSpans | Array | 否 | 否 | 删除的文本或图片Span的信息。 |
 
 #### RichEditorDeleteDirection
@@ -1028,7 +1025,7 @@ onWillAttachIME(callback: Callback<IMEClient> | undefined)
 | spanPosition | [RichEditorSpanPosition](#richeditorspanposition) | 否 | 否 | Span位置。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | value | string | 否 | 否 | 文本Span内容或Symbol的id。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | textStyle | [RichEditorTextStyleResult](#richeditortextstyleresult) | 否 | 否 | 文本Span样式信息。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| offsetInSpan | [number, number] | 否 | 否 | 文本Span内容里有效内容的起始和结束位置。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| offsetInSpan | [number, number] | 否 | 否 | 文本Span内容里有效内容的起始和结束位置，取值范围为[起始位置, 结束位置)，结束位置对应的内容不包含在内。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | valueResource11+ | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 是 | SymbolSpan资源内容。 默认值：undefined。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | symbolSpanStyle11+ | [RichEditorSymbolSpanStyle](#richeditorsymbolspanstyle11) | 否 | 是 | 组件SymbolSpan样式信息。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | paragraphStyle12+ | [RichEditorParagraphStyle](#richeditorparagraphstyle11) | 否 | 是 | 段落样式。 省略时，使用系统默认段落样式。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
@@ -1046,7 +1043,7 @@ Span位置信息。
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | spanIndex | number | 否 | 否 | Span索引值。 |
-| spanRange | [number, number] | 否 | 否 | Span内容在RichEditor内的起始和结束位置。 |
+| spanRange | [number, number] | 否 | 否 | Span内容在RichEditor内的起始和结束位置，取值范围为[起始位置, 结束位置)，结束位置对应的Span不包含在内。 |
 
 #### RichEditorSpanType
 
@@ -1168,7 +1165,7 @@ RichEditorSymbolSpanStyle和RichEditorSymbolSpanStyleResult中fontWeight的转�
 | valuePixelMap | [PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 否 | 是 | 图片内容。 |
 | valueResourceStr | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 是 | 图片资源id。 |
 | imageStyle | [RichEditorImageSpanStyleResult](#richeditorimagespanstyleresult) | 否 | 否 | 图片样式。 |
-| offsetInSpan | [number, number] | 否 | 否 | Span里图片的起始和结束位置。 |
+| offsetInSpan | [number, number] | 否 | 否 | Span里图片的起始和结束位置，取值范围为[起始位置, 结束位置)，结束位置对应的内容不包含在内。 |
 
 #### RichEditorImageSpanStyleResult
 
@@ -1368,7 +1365,7 @@ selectionStart和selectionEnd均为-1时表示全选，均为0时可以清空选
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | selectionStart | number | 是 | 选中开始位置。 |
-| selectionEnd | number | 是 | 选中结束位置。 |
+| selectionEnd | number | 是 | 选中结束位置，选中范围为[selectionStart, selectionEnd)，结束位置对应的内容不包含在内。 |
 | options12+ | [SelectionOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-text-style#selectionoptions12对象说明) | 否 | 选择项配置，用于控制选中操作时的菜单弹出策略。 当需要自定义菜单弹出行为（如强制显示或隐藏菜单）时传入此参数； 省略时默认使用MenuPolicy.DEFAULT，遵循系统默认菜单弹出策略。 各MenuPolicy取值的适用场景请参考SelectionOptions对象说明。 |
 
 #### [h2]isEditing12+
@@ -1882,7 +1879,7 @@ onContentChanged(listener: StyledStringChangedListener): void
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| selection | [number, number] | 否 | 否 | 选中范围。 |
+| selection | [number, number] | 否 | 否 | 选中范围，取值范围为[起始位置, 结束位置)，结束位置对应的内容不包含在内。 |
 | spans | Array | 否 | 否 | span信息。 |
 
 #### RichEditorRange
@@ -1896,7 +1893,7 @@ onContentChanged(listener: StyledStringChangedListener): void
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | start | number | 否 | 是 | 文本的起始位置，省略或者设置负值时表示从0开始。 |
-| end | number | 否 | 是 | 文本的结束位置，省略或者超出文本范围时表示无穷大。 |
+| end | number | 否 | 是 | 文本的结束位置，与start共同表示选中文本的范围[start, end)，结束位置对应的内容不包含在内，省略或者超出文本范围时表示无穷大。 |
 
 #### RichEditorSpanStyleOptions
 
@@ -2004,7 +2001,7 @@ SymbolSpan样式选项。
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | style | [RichEditorParagraphStyle](#richeditorparagraphstyle11) | 否 | 否 | 段落样式。 |
-| range | [number, number] | 否 | 否 | 段落起始和结束位置。 |
+| range | [number, number] | 否 | 否 | 段落起始和结束位置，取值范围为[起始位置, 结束位置)，结束位置对应的内容不包含在内。 |
 
 #### RichEditorTextSpanOptions
 
@@ -2037,7 +2034,7 @@ SymbolSpan样式选项。
 | textShadow11+ | [ShadowOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadowoptions对象说明) | Array | 否 | 是 | 设置文字阴影效果。 默认值：undefined，不设置文字阴影效果。 该接口支持以数组形式入参，实现多重文字阴影。 **说明：** 仅支持设置阴影模糊半径、颜色和偏移量，不支持智能取色。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | lineHeight12+ | number | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 是 | 设置文本的文本行高。 默认值：不设置时自适应字体大小。 number类型取值范围：(0, +∞)，设置值不大于0时，不限制文本行高，自适应字体大小。number类型时单位为fp，不支持设置百分比字符串。当lineHeight设置值小于当前字号下文本渲染出的实际高度时，[fallbackLineSpacing](#fallbacklinespacing23)属性将生效。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | letterSpacing12+ | number | string | 否 | 是 | 设置文本字符间距，默认单位为fp。默认值：0。当取值为负值时，文字会发生压缩。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| fontFeature12+ | string | 否 | 是 | 设置文字特性效果，比如数字等宽的特性。如果未设置，默认为变宽数字。设置无效字符保持默认。 格式为：normal | 的格式为： [ | on | off ] 的个数可以有多个，中间用','隔开。 例如，使用等宽时钟数字的输入格式为："ss01" on。 Font Feature当前支持的属性见[fontFeature](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#fontfeature12)属性列表。 设置 Font Feature 属性，Font Feature 是 OpenType 字体的高级排版能力，如支持连字、数字等宽等特性，一般用在自定义字体中，其能力需要字体本身支持。 更多 Font Feature 能力介绍可参考 [https://www.w3.org/TR/css-fonts-3/#font-feature-settings-prop](https://www.w3.org/TR/css-fonts-3/#font-feature-settings-prop) 和 [https://sparanoid.com/lab/opentype-features/](https://sparanoid.com/lab/opentype-features/) **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| fontFeature12+ | string | 否 | 是 | 设置文字特性效果，比如数字等宽的特性。如果未设置，默认为变宽数字。设置无效字符保持默认。 格式为：normal | 的格式为： [ | on | off ] 的个数可以有多个，中间用','隔开。 例如，使用等宽时钟数字的输入格式为："ss01" on。 Font Feature当前支持的属性见[fontFeature](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#fontfeature12)属性列表。 设置Font Feature属性，Font Feature是OpenType字体的高级排版能力，如支持连字、数字等宽等特性，一般用在自定义字体中，其能力需要字体本身支持。 更多Font Feature能力介绍可参考[font-feature-settings property](https://www.w3.org/TR/css-fonts-3/#font-feature-settings-prop)和[OpenType Features](https://sparanoid.com/lab/opentype-features/)。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | halfLeading18+ | boolean | 否 | 是 | 文本是否将行间距平分至行的顶部与底部。 true表示将行间距平分至行的顶部与底部，false则不平分。 默认值：false。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | textBackgroundStyle18+ | [TextBackgroundStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-span#textbackgroundstyle11对象说明) | 否 | 是 | 文本背景样式。 默认值： { color: Color.Transparent, radius: 0 } **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | strokeWidth23+ | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | number | 否 | 是 | 文本描边宽度。如果LengthMetrics的unit值是[PERCENT](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthunit12)，当前设置不生效，作为0处理。 值小于0时为实体字，大于0时为轮廓字，等于0时无描边效果。 默认值：0。 单位：LengthMetrics类型时跟随LengthMetrics，number类型时是vp。 取值范围：(-∞, +∞) 与[shaderStyle](#richeditorparagraphstyle11)同时设置时，shaderStyle不生效。 **元服务API：** 从API version 23开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
@@ -2258,7 +2255,7 @@ type MenuOnAppearCallback = (start: number, end: number) => void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | start | number | 是 | 选中内容的起始位置。 |
-| end | number | 是 | 选中内容的终止位置。 |
+| end | number | 是 | 选中内容的终止位置，选中范围为[start, end)，结束位置对应的内容不包含在内。 |
 
 #### MenuCallback15+
 
@@ -2275,7 +2272,7 @@ type MenuCallback = (start: number, end: number) => void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | start | number | 是 | 选中内容的起始位置。 |
-| end | number | 是 | 选中内容的终止位置。 |
+| end | number | 是 | 选中内容的终止位置，选中范围为[start, end)，结束位置对应的内容不包含在内。 |
 
 #### PasteEventCallback12+
 
@@ -2530,7 +2527,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639802.gif)
+ ![](./img/zh-cn_image_0000002757312323.gif)
 
 #### [h2]示例2（绑定自定义键盘）
 
@@ -2580,7 +2577,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359023.gif)
+ ![](./img/zh-cn_image_0000002757232443.gif)
 
 #### [h2]示例3（绑定自定义菜单）
 
@@ -3112,7 +3109,7 @@ struct SelectionMenu {
 ```
  ![](./img/note_3.0-zh-cn.png) 系统暂未预置加粗、斜体等图标，示例代码使用系统默认图标，开发者使用时需自行替换icons中的资源。
 
-![](./img/zh-cn_image_0000002701799718.png)
+![](./img/zh-cn_image_0000002727592752.png)
 
 #### [h2]示例4（更新图片样式）
 
@@ -3353,7 +3350,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519005.gif)
+ ![](./img/zh-cn_image_0000002727752610.gif)
 
 #### [h2]示例5（Span绑定手势事件）
 
@@ -3453,7 +3450,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639804.gif)
+ ![](./img/zh-cn_image_0000002757312325.gif)
 
 #### [h2]示例6（更新和获取段落样式）
 
@@ -3550,7 +3547,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359025.gif)
+ ![](./img/zh-cn_image_0000002757232445.gif)
 
 #### [h2]示例7（更新预设样式与缩进）
 
@@ -3819,7 +3816,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799720.gif)
+ ![](./img/zh-cn_image_0000002727592754.gif)
 
 #### [h2]示例8（设置文本字重与阴影）
 
@@ -3902,7 +3899,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519007.gif)
+ ![](./img/zh-cn_image_0000002727752612.gif)
 
 #### [h2]示例9（添加用户自定义布局Span）
 
@@ -4198,7 +4195,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639806.gif)
+ ![](./img/zh-cn_image_0000002757312327.gif)
 
 #### [h2]示例10（使用和管理组件内的BuilderSpan）
 
@@ -4543,7 +4540,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359027.gif)
+ ![](./img/zh-cn_image_0000002757232447.gif)
 
 #### [h2]示例11（设置文本识别配置）
 
@@ -4611,9 +4608,9 @@ struct TextExample7 {
 }
 ```
 
-#### [h2]示例12（设置光标、手柄和底板颜色）
+#### [h2]示例12（设置光标、手柄和高亮颜色）
 
-通过[caretColor](#caretcolor12)属性设置输入框光标、手柄颜色，通过[selectedBackgroundColor](#selectedbackgroundcolor12)属性设置文本选中底板颜色。
+通过[caretColor](#caretcolor12)属性设置输入框光标、手柄颜色，通过[selectedBackgroundColor](#selectedbackgroundcolor12)属性设置文本选中高亮颜色。
 
 ```
 @Entry
@@ -4645,7 +4642,7 @@ struct RichEditorDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799722.gif)
+ ![](./img/zh-cn_image_0000002727592756.gif)
 
 #### [h2]示例13（设置行高和字符间距）
 
@@ -4768,7 +4765,7 @@ struct RichEditorDemo03 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519009.png)
+ ![](./img/zh-cn_image_0000002727752614.png)
 
 #### [h2]示例14（自定义粘贴事件）
 
@@ -4802,7 +4799,7 @@ struct RichEditorDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639808.gif)
+ ![](./img/zh-cn_image_0000002757312329.gif)
 
 #### [h2]示例15（配置文字特性效果）
 
@@ -4853,7 +4850,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359029.png)
+ ![](./img/zh-cn_image_0000002757232449.png)
 
 #### [h2]示例16（自定义键盘避让）
 
@@ -4936,7 +4933,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799724.gif)
+ ![](./img/zh-cn_image_0000002727592758.gif)
 
 #### [h2]示例17（查看编辑状态）
 
@@ -4975,7 +4972,7 @@ struct RichEditorOnEditingChange {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519011.gif)
+ ![](./img/zh-cn_image_0000002727752616.gif)
 
 #### [h2]示例18（配置文本变化回调）
 
@@ -5080,7 +5077,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639810.gif)
+ ![](./img/zh-cn_image_0000002757312331.gif)
 
 #### [h2]示例19（配置输入法回车键功能）
 
@@ -5114,7 +5111,7 @@ struct SoftKeyboardEnterTypeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359031.gif)
+ ![](./img/zh-cn_image_0000002757232451.gif)
 
 #### [h2]示例20（设置段落折行规则）
 
@@ -5192,7 +5189,7 @@ struct LineBreakStrategyExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799726.gif)
+ ![](./img/zh-cn_image_0000002727592760.gif)
 
 #### [h2]示例21（属性字符串基本功能）
 
@@ -5390,7 +5387,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519013.gif)
+ ![](./img/zh-cn_image_0000002727752618.gif)
 
 #### [h2]示例22（获取布局信息）
 
@@ -5460,7 +5457,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639812.gif)
+ ![](./img/zh-cn_image_0000002757312333.gif)
 
 #### [h2]示例23（设置系统默认菜单扩展项）
 
@@ -5555,7 +5552,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359033.gif)
+ ![](./img/zh-cn_image_0000002757232453.gif)
 
 #### [h2]示例24（组件部分常用属性）
 
@@ -5647,7 +5644,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799728.gif)
+ ![](./img/zh-cn_image_0000002727592762.gif)
 
 #### [h2]示例25（获取光标相对组件位置的矩形）
 
@@ -5700,7 +5697,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519015.gif)
+ ![](./img/zh-cn_image_0000002727752620.gif)
 
 #### [h2]示例26（设置最大行数和最大字符数）
 
@@ -5796,7 +5793,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639814.gif)
+ ![](./img/zh-cn_image_0000002757312335.gif)
 
 #### [h2]示例27（文本设置Url样式）
 
@@ -5837,7 +5834,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359035.gif)
+ ![](./img/zh-cn_image_0000002757232455.gif)
 
 #### [h2]示例28（开启带样式的撤销还原能力）
 
@@ -5976,7 +5973,7 @@ struct StyledUndo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799730.gif)
+ ![](./img/zh-cn_image_0000002727592764.gif)
 
 #### [h2]示例29（文本设置预设段落样式）
 
@@ -6071,7 +6068,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519017.gif)
+ ![](./img/zh-cn_image_0000002727752622.gif)
 
 #### [h2]示例30（设置装饰线粗细和多装饰线）
 
@@ -6200,7 +6197,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639816.gif)
+ ![](./img/zh-cn_image_0000002757312337.gif)
 
 #### [h2]示例31（设置开启中西文自动间距）
 
@@ -6306,7 +6303,7 @@ struct AutoSpacing {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359037.gif)
+ ![](./img/zh-cn_image_0000002757232457.gif)
 
 #### [h2]示例32（设置文本选择的AI菜单）
 
@@ -6337,7 +6334,7 @@ struct SelectedDataDetectorDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799732.gif)
+ ![](./img/zh-cn_image_0000002727592766.gif)
 
 #### [h2]示例33（设置监听输入法绑定事件）
 
@@ -6390,7 +6387,7 @@ struct SetOnWillAttachIME {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519019.gif)
+ ![](./img/zh-cn_image_0000002727752624.gif)
 
 #### [h2]示例34（删除输入框文本尾部字符）
 
@@ -6446,7 +6443,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639818.gif)
+ ![](./img/zh-cn_image_0000002757312339.gif)
 
 #### [h2]示例35（优化小语种文字显示）
 
@@ -6533,7 +6530,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359039.gif)
+ ![](./img/zh-cn_image_0000002757232459.gif)
 
 #### [h2]示例36（设置行首标点符号压缩和行尾标点符号悬挂）
 
@@ -6586,7 +6583,7 @@ struct PunctuationDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799734.gif)
+ ![](./img/zh-cn_image_0000002727592768.gif)
 
 #### [h2]示例37（设置拖动预览样式）
 
@@ -6617,7 +6614,7 @@ struct RichEditorDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519021.gif)
+ ![](./img/zh-cn_image_0000002727752626.gif)
 
 #### [h2]示例38（设置单行模式）
 
@@ -6657,7 +6654,7 @@ struct SingleLineDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639820.gif)
+ ![](./img/zh-cn_image_0000002757312341.gif)
 
 #### [h2]示例39（设置属性字符串样式的提示文本）
 
@@ -6736,7 +6733,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359041.png)
+ ![](./img/zh-cn_image_0000002757232461.png)
 
 #### [h2]示例40（设置孤立字符不成行）
 
@@ -6784,7 +6781,7 @@ struct RichEditorDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799736.jpg)
+ ![](./img/zh-cn_image_0000002727592770.jpg)
 
 #### [h2]示例41（设置水平滚动）
 
@@ -6827,7 +6824,7 @@ struct HorizontalScrollDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519023.gif)
+ ![](./img/zh-cn_image_0000002727752628.gif)
 
 #### [h2]示例42（设置文本着色器效果）
 
@@ -6929,7 +6926,7 @@ struct ShaderColorStyle {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639822.png)
+ ![](./img/zh-cn_image_0000002757312343.png)
 
 #### [h2]示例43（将指定范围的文字滚动到可视区内）
 
@@ -6966,4 +6963,4 @@ struct ScrollToVisibleDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359043.gif)
+ ![](./img/zh-cn_image_0000002757232463.gif)

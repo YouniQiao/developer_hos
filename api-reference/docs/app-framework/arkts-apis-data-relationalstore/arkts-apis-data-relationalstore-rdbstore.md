@@ -2,8 +2,8 @@
 title: "Interface (RdbStore)"
 upstream_id: "harmonyos-references/arkts-apis-data-relationalstore-rdbstore"
 catalog: "harmonyos-references"
-content_hash: "c88c3997129f"
-synced_at: "2026-07-28T16:40:49.782637"
+content_hash: "b14d27f7970b"
+synced_at: "2026-09-17T18:50:27.334409"
 ---
 
 # Interface (RdbStore)
@@ -861,7 +861,7 @@ if (store != undefined) {
 
 ```
 let createSql = "CREATE TABLE IF NOT EXISTS test (id INTEGER PRIMARY KEY AUTOINCREMENT, data1 floatvector(2));";
-await store!.execute(createSql, 0, undefined);  // 创建关系表，第二个参数0表示不开启显示事务，第三个参数undefined表示sql未使用绑定参数化
+await store!.execute(createSql, 0, undefined); // 创建关系表，第二个参数0表示不开启显式事务，第三个参数undefined表示sql未使用绑定参数化
 let floatVector = Float32Array.from([1.2, 2.3]);
 let valueBucketArray = new Array<relationalStore.ValuesBucket>();
 for (let i = 0; i < 100; i++) { // 构造一个BucketArray用于写入
@@ -3774,7 +3774,7 @@ executeSync(sql: string, args?: Array<ValueType>): ValueType
 
 | 类型 | 说明 |
 | --- | --- |
-| [ValueType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-data-relationalstore-t#valuetype) | 返回SQL执行后的结果 |
+| [ValueType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-data-relationalstore-t#valuetype) | 返回SQL执行后的结果。 |
 
 错误码：
 
@@ -5043,9 +5043,9 @@ sync(mode: SyncMode, predicates: RdbPredicates, callback: AsyncCallback<Array<[s
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| mode | [SyncMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-data-relationalstore-e#syncmode) | 是 | 指同步模式。该值可以是relationalStore.SyncMode.SYNC_MODE_PUSH、relationalStore.SyncMode.SYNC_MODE_PULL。 |
+| mode | [SyncMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-data-relationalstore-e#syncmode) | 是 | 指定同步模式。该值可以是relationalStore.SyncMode.SYNC_MODE_PUSH、relationalStore.SyncMode.SYNC_MODE_PULL。 |
 | predicates | [RdbPredicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-data-relationalstore-rdbpredicates) | 是 | 约束同步数据和设备。 |
-| callback | AsyncCallback> | 是 | 回调函数，用于向调用者发送同步结果。string：设备ID；number：每个设备同步状态，0表示成功，1表示失败。 |
+| callback | AsyncCallback> | 是 | 回调函数。当同步成功，err为undefined，data为设备同步结果数组（string：设备ID；number：每个设备同步状态，0表示成功，1表示失败）；否则为错误对象。 |
 
 错误码：
 
@@ -5109,7 +5109,7 @@ sync(mode: SyncMode, predicates: RdbPredicates): Promise<Array<[string, number]>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| mode | [SyncMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-data-relationalstore-e#syncmode) | 是 | 指同步模式。该值可以是relationalStore.SyncMode.SYNC_MODE_PUSH、relationalStore.SyncMode.SYNC_MODE_PULL。 |
+| mode | [SyncMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-data-relationalstore-e#syncmode) | 是 | 指定同步模式。该值可以是relationalStore.SyncMode.SYNC_MODE_PUSH、relationalStore.SyncMode.SYNC_MODE_PULL。 |
 | predicates | [RdbPredicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-data-relationalstore-rdbpredicates) | 是 | 约束同步数据和设备。 |
 
 返回值：
@@ -5557,7 +5557,7 @@ on(event: 'dataChange', type: SubscribeType, observer: Callback<Array<string>>):
 | --- | --- | --- | --- |
 | event | string | 是 | 取值为'dataChange'，表示数据更改。 |
 | type | [SubscribeType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-data-relationalstore-e#subscribetype) | 是 | 订阅类型。 |
-| observer | Callback> | 是 | 指分布式数据库中数据更改事件的观察者。Array为数据库中的数据发生改变的对端设备ID。 |
+| observer | Callback> | 是 | 指定分布式数据库中数据更改事件的观察者。Array为数据库中的数据发生改变的对端设备ID。 |
 
 错误码：
 
@@ -5997,7 +5997,7 @@ off(event:'dataChange', type: SubscribeType, observer: Callback<Array<string>>):
 | --- | --- | --- | --- |
 | event | string | 是 | 取值为'dataChange'，表示数据更改。 |
 | type | [SubscribeType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-data-relationalstore-e#subscribetype) | 是 | 订阅类型。 |
-| observer | Callback> | 是 | 指已注册的数据更改观察者。Array为数据库中的数据发生改变的对端设备ID。 |
+| observer | Callback> | 是 | 指定已注册的数据更改观察者。Array为数据库中的数据发生改变的对端设备ID。 |
 
 错误码：
 
@@ -6176,7 +6176,7 @@ off(event: 'autoSyncProgress', progress?: Callback<ProgressDetails>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | event | string | 是 | 取值为'autoSyncProgress'，表示自动同步进度通知。 |
-| progress | Callback | 否 | 指已注册的自动同步进度观察者。该参数存在，则取消订阅指定回调，该参数为null或undefined或不存在，则取消订阅所有回调。 |
+| progress | Callback | 否 | 指定已注册的自动同步进度观察者。该参数存在，则取消订阅指定回调，该参数为null或undefined或不存在，则取消订阅所有回调。 |
 
 错误码：
 
@@ -6243,6 +6243,8 @@ off(event: 'statistics', observer?: Callback<SqlExecutionInfo>): void
 | 801 | Capability not supported. |
 | 14800000 | Inner error. |
 | 14800014 | The target instance is already closed. |
+
+示例：
 
 ```
 import { BusinessError } from '@kit.BasicServicesKit';
@@ -6321,6 +6323,8 @@ off(event: 'perfStat', observer?: Callback<SqlExecutionInfo>): void
 | --- | --- |
 | 801 | Capability not supported. |
 | 14800014 | The target instance is already closed. |
+
+示例：
 
 ```
 import { BusinessError } from '@kit.BasicServicesKit';

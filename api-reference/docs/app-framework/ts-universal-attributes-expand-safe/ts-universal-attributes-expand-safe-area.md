@@ -2,8 +2,8 @@
 title: "安全区域"
 upstream_id: "harmonyos-references/ts-universal-attributes-expand-safe-area"
 catalog: "harmonyos-references"
-content_hash: "9787d47d6aa5"
-synced_at: "2026-09-14T19:45:28.392367"
+content_hash: "2d088866bd42"
+synced_at: "2026-09-17T18:50:41.592534"
 ---
 
 # 安全区域
@@ -35,7 +35,7 @@ expandSafeArea(types?: Array<SafeAreaType>, edges?: Array<SafeAreaEdge>): T
 - 安全区域不会限制内部组件的布局和大小，不会裁剪内部组件。
 - 当父容器为滚动容器时，组件设置expandSafeArea属性后，自身不会延伸，但仍可触发其子节点中设置了expandSafeArea的延伸范围更新。
 - 设置expandSafeArea()时，不传参，走默认值处理；设置expandSafeArea([],[])时，相当于入参是空数组，此时expandSafeArea属性设置无效。
-- 组件设置expandSafeArea生效的条件为： 1.type为SafeAreaType.KEYBOARD时默认生效，表现为组件不避让键盘。 2.设置其他type时，仅当组件边界与安全区域重合，组件才能延伸到安全区域下。例如：设备顶部状态栏高度为100，组件在屏幕中的绝对位置需要为0 元服务API： 从API version 11开始，该接口支持在元服务中使用。
+- 组件设置expandSafeArea生效的条件为： 1. type为SafeAreaType.KEYBOARD时默认生效，表现为组件不避让键盘。 2. 设置其他type时，仅当组件边界与安全区域重合，组件才能延伸到安全区域下。例如：设备顶部状态栏高度为100，组件在屏幕中的绝对位置需要为0 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -204,7 +204,7 @@ struct SafeAreaExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753456461.png)
+ ![](./img/zh-cn_image_0000002757232127.png)
 
 #### [h2]示例2（同时设置固定宽高和expandSafeArea属性）
 
@@ -235,7 +235,7 @@ struct SafeAreaExample2 {
 ```
  如下图：Column组件扩展至了顶部状态栏[SafeAreaEdge.TOP]，未扩展至底部导航条[SafeAreaEdge.BOTTOM]，扩展后的组件高度维持设置值不变。
 
-![](./img/zh-cn_image_0000002723856696.png)
+![](./img/zh-cn_image_0000002727592436.png)
 
 #### [h2]示例3（键盘避让时固定背景图位置）
 
@@ -278,7 +278,7 @@ struct SafeAreaExample3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723696778.gif)
+ ![](./img/zh-cn_image_0000002727752294.gif)
 
 #### [h2]示例4（设置键盘避让模式为压缩）
 
@@ -330,7 +330,7 @@ struct KeyboardAvoidExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753296545.gif)
+ ![](./img/zh-cn_image_0000002757312009.gif)
 
 #### [h2]示例5（设置键盘避让模式为上抬）
 
@@ -382,7 +382,7 @@ struct KeyboardAvoidExample2 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753456463.gif)
+ ![](./img/zh-cn_image_0000002757232129.gif)
 
 #### [h2]示例6（切换避让模式）
 
@@ -440,7 +440,7 @@ struct KeyboardAvoidExample3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723856698.gif)
+ ![](./img/zh-cn_image_0000002727592438.gif)
 
 #### [h2]示例7（滚动类容器扩展安全区）
 
@@ -505,7 +505,7 @@ struct ExpandSafeAreaTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723696780.png)
+ ![](./img/zh-cn_image_0000002727752296.png)
 
 #### [h2]示例8（ignoreLayoutSafeArea延伸组件布局范围）
 
@@ -545,7 +545,7 @@ struct IgnoreLayoutSafeAreaTest1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753296547.jpg)
+ ![](./img/zh-cn_image_0000002757312011.jpg)
 
 #### [h2]示例9（ignoreLayoutSafeArea配合LayoutPolicy.matchParent延伸组件布局范围）
 
@@ -583,7 +583,7 @@ struct IgnoreLayoutSafeAreaTest2 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753456465.jpg)
+ ![](./img/zh-cn_image_0000002757232131.jpg)
 
 #### [h2]示例10（expandSafeArea与ignoreLayoutSafeArea的区别）
 
@@ -654,4 +654,4 @@ struct IgnoreLayoutSafeAreaTest3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723856700.jpg)
+ ![](./img/zh-cn_image_0000002727592440.jpg)

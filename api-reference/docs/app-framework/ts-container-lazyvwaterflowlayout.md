@@ -2,8 +2,8 @@
 title: "LazyVWaterFlowLayout"
 upstream_id: "harmonyos-references/ts-container-lazyvwaterflowlayout"
 catalog: "harmonyos-references"
-content_hash: "9b7364c64e76"
-synced_at: "2026-07-28T16:43:37.026906"
+content_hash: "bd6b05c685a1"
+synced_at: "2026-09-17T18:50:48.203874"
 ---
 
 # LazyVWaterFlowLayout
@@ -420,7 +420,7 @@ export class MyDataSource<T> extends BasicDataSource<T> {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928125.png)
+ ![](./img/zh-cn_image_0000002727752466.png)
 
 #### [h2]示例2（设置头部组件或尾部组件及吸附效果）
 
@@ -429,7 +429,7 @@ export class MyDataSource<T> extends BasicDataSource<T> {
 从API版本26.0.0开始，新增支持header、footer和sticky属性。
 
 ```
-import { LengthMetrics, LazyVWaterFlowLayout, LazyVWaterFlowLayoutAttribute, StickyStyle } from '@kit.ArkUI';
+import { LengthMetrics, LazyVWaterFlowLayout, LazyVWaterFlowLayoutAttribute } from '@kit.ArkUI';
 // MyDataSource是自定义数据源类，实现了LazyForEach所需的IDataSource接口
 import { MyDataSource } from './MyDataSource';
 
@@ -528,7 +528,7 @@ struct LazyVWaterFlowLayoutStickyDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008448.gif)
+ ![](./img/zh-cn_image_0000002757312181.gif)
 
 #### [h2]示例3（设置自适应列数）
 
@@ -657,4 +657,4 @@ struct LazyVWaterFlowLayoutColumnsTemplateDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848526.gif)
+ ![](./img/zh-cn_image_0000002757232301.gif)

@@ -2,8 +2,8 @@
 title: "InterstitialDialogAction"
 upstream_id: "harmonyos-references/ohos-atomicservice-interstitialdialogaction"
 catalog: "harmonyos-references"
-content_hash: "35db9c56bef4"
-synced_at: "2026-08-29T18:14:59.257951"
+content_hash: "f700609110c3"
+synced_at: "2026-09-17T18:51:52.536312"
 ---
 
 # InterstitialDialogAction
@@ -164,7 +164,7 @@ export default class EntryAbility extends UIAbility {
   }
 
   onWindowStageCreate(windowStage: window.WindowStage): void {
-    // Main window is created, set main page for this ability
+    // 主窗口创建，为此能力设置主页面
     hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onWindowStageCreate');
 
     windowStage.loadContent('pages/Index', (err) => {
@@ -201,17 +201,17 @@ export default class EntryAbility extends UIAbility {
   }
 
   onWindowStageDestroy(): void {
-    // Main window is destroyed, release UI related resources
+    // 主窗口销毁，释放与UI相关资源
     hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onWindowStageDestroy');
   }
 
   onForeground(): void {
-    // Ability has brought to foreground
+    // Ability 回到前台
     hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onForeground');
   }
 
   onBackground(): void {
-    // Ability has back to background
+    // Ability 回到后台
     hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onBackground');
   }
 }
@@ -257,7 +257,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701800024.png)
+ ![](./img/zh-cn_image_0000002757312633.png)
 
 #### [h2]示例2
 
@@ -289,7 +289,7 @@ export default class EntryAbility extends UIAbility {
   }
 
   onWindowStageCreate(windowStage: window.WindowStage): void {
-    // Main window is created, set main page for this ability
+    // 主窗口创建，为此能力设置主页面
     hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onWindowStageCreate');
 
     windowStage.loadContent('pages/Index', (err) => {
@@ -326,17 +326,17 @@ export default class EntryAbility extends UIAbility {
   }
 
   onWindowStageDestroy(): void {
-    // Main window is destroyed, release UI related resources
+    // 主窗口销毁，释放与UI相关资源
     hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onWindowStageDestroy');
   }
 
   onForeground(): void {
-    // Ability has brought to foreground
+    // Ability 回到前台
     hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onForeground');
   }
 
   onBackground(): void {
-    // Ability has back to background
+    // Ability 回到后台
     hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onBackground');
   }
 }
@@ -382,4 +382,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519311.png)
+ ![](./img/zh-cn_image_0000002757232753.png)

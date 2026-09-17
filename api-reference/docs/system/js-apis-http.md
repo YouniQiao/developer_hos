@@ -2,8 +2,8 @@
 title: "@ohos.net.http (数据请求)"
 upstream_id: "harmonyos-references/js-apis-http"
 catalog: "harmonyos-references"
-content_hash: "124838246c3e"
-synced_at: "2026-08-29T18:16:42.722993"
+content_hash: "6f7d5ec66a10"
+synced_at: "2026-09-17T18:53:08.363686"
 ---
 
 # @ohos.net.http (数据请求)
@@ -1469,16 +1469,16 @@ request方法回调函数的返回值类型。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| dnsTiming | number | 否 | 否 | 从[request](#request)请求到DNS解析完成耗时。 |
-| tcpTiming | number | 否 | 否 | 从[request](#request)请求到TCP连接完成耗时。 |
-| tlsTiming | number | 否 | 否 | 从[request](#request)请求到TLS连接完成耗时。 |
-| firstSendTiming | number | 否 | 否 | 从[request](#request)请求到开始发送第一个字节的耗时。 |
-| firstReceiveTiming | number | 否 | 否 | 从[request](#request)请求到接收第一个字节的耗时。 |
-| totalFinishTiming | number | 否 | 否 | 从[request](#request)请求到完成请求的耗时。 |
-| redirectTiming | number | 否 | 否 | 从[request](#request)请求到完成所有重定向步骤的耗时。 |
-| responseHeaderTiming | number | 否 | 否 | 从[request](#request)请求到header解析完成的耗时。 |
-| responseBodyTiming | number | 否 | 否 | 从[request](#request)请求到body解析完成的耗时。 |
-| totalTiming | number | 否 | 否 | 从[request](#request)请求回调到应用程序的耗时。 |
+| dnsTiming | number | 否 | 否 | 从[request](#request)请求到DNS解析完成耗时。单位为毫秒(ms)。 |
+| tcpTiming | number | 否 | 否 | 从[request](#request)请求到TCP连接完成耗时。单位为毫秒(ms)。 |
+| tlsTiming | number | 否 | 否 | 从[request](#request)请求到TLS连接完成耗时。单位为毫秒(ms)。 |
+| firstSendTiming | number | 否 | 否 | 从[request](#request)请求到开始发送第一个字节的耗时。单位为毫秒(ms)。 |
+| firstReceiveTiming | number | 否 | 否 | 从[request](#request)请求到接收第一个字节的耗时。单位为毫秒(ms)。 |
+| totalFinishTiming | number | 否 | 否 | 从[request](#request)请求到完成请求的耗时。单位为毫秒(ms)。 |
+| redirectTiming | number | 否 | 否 | 从[request](#request)请求到完成所有重定向步骤的耗时。单位为毫秒(ms)。 |
+| responseHeaderTiming | number | 否 | 否 | 从[request](#request)请求到header解析完成的耗时。单位为毫秒(ms)。 |
+| responseBodyTiming | number | 否 | 否 | 从[request](#request)请求到body解析完成的耗时。单位为毫秒(ms)。 |
+| totalTiming | number | 否 | 否 | 从[request](#request)请求回调到应用程序的耗时。单位为毫秒(ms)。 |
 
 #### ConnectionExtraInfo24+
 
@@ -1671,7 +1671,7 @@ let promise = httpRequest.request("EXAMPLE_URL");
 
 promise.then((data: http.HttpResponse) => {
   httpResponseCache.flush().then(() => {
-    console.error('flush success');
+    console.info('flush success');
   }).catch((err: BusinessError) => {
     console.error('flush fail');
   });
@@ -2196,7 +2196,7 @@ type SslType = 'TLS' | 'TLCP'
 | 类型 | 说明 |
 | --- | --- |
 | 'TLS' | 表示使用TLS安全通信协议，值固定为'TLS'字符串。 |
-| 'TLCP' | 表示使用TLCP安全通信协议，值固定为'TLCP'字符串。 **说明**： （1）证书支持字符串的规格： - UTF8String（英文字符集） - PrintableString - IA5String 从API Version 22开始支持： - TeletexString （2）证书支持扩展的规格： - BasicConstraints（OID 2.5.29.19） - KeyUsage（OID2.5.29.15） - SubjectKeyIdentifier（OID2.5.29.14） - AuthorityKeyIdentifier（OID2.5.29.35） 从API Version 22开始支持： - SubjectAltName（OID 2.5.29.17） - ExtendedKeyUsage（OID 2.5.29.37） |
+| 'TLCP' | 表示使用TLCP安全通信协议，值固定为'TLCP'字符串。 **说明**： （1）证书支持字符串的规格： - UTF8String（英文字符集） - PrintableString - IA5String 从API version 22开始支持： - TeletexString （2）证书支持扩展的规格： - BasicConstraints（OID 2.5.29.19） - KeyUsage（OID2.5.29.15） - SubjectKeyIdentifier（OID2.5.29.14） - AuthorityKeyIdentifier（OID2.5.29.35） 从API version 22开始支持： - SubjectAltName（OID 2.5.29.17） - ExtendedKeyUsage（OID 2.5.29.37） |
 
 #### InterceptorType22+
 

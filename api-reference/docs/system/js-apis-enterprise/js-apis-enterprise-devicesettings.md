@@ -1,12 +1,12 @@
 ---
-title: "@ohos.enterprise.deviceSettings（设备设置管理）"
+title: "@ohos.enterprise.deviceSettings (设备设置管理)"
 upstream_id: "harmonyos-references/js-apis-enterprise-devicesettings"
 catalog: "harmonyos-references"
-content_hash: "573f3d446e2a"
-synced_at: "2026-09-04T18:12:28.850801"
+content_hash: "936034ab6176"
+synced_at: "2026-09-17T18:53:31.476352"
 ---
 
-# @ohos.enterprise.deviceSettings（设备设置管理）
+# @ohos.enterprise.deviceSettings (设备设置管理)
 
 本模块提供企业设备设置能力，支持设置和获取设备息屏时间、系统时间、电源策略、护眼模式、默认输入法、壁纸、隐藏设置项等。
 
@@ -28,13 +28,13 @@ setValue(admin: Want, item: string, value: string): void
 
 设置设备策略。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_SETTINGS
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)。
 
 参数：
 
@@ -205,13 +205,13 @@ setHomeWallpaper(admin: Want, fd: number): Promise<void>
 
 设置桌面壁纸，使用Promise异步回调。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)规则。
+
 需要权限： ohos.permission.ENTERPRISE_SET_WALLPAPER
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)。
 
 参数：
 
@@ -272,13 +272,13 @@ setUnlockWallpaper(admin: Want, fd: number): Promise<void>
 
 设置锁屏壁纸，使用Promise异步回调。企业设备管理应用可通过此接口统一设置企业设备的锁屏壁纸，用于企业形象展示或安全管控等场景。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)规则。
+
 需要权限： ohos.permission.ENTERPRISE_SET_WALLPAPER
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)。
 
 参数：
 
@@ -641,13 +641,13 @@ setSwitchStatus(admin: Want, key: SwitchKey, status: SwitchStatus): void
 
 起始版本： 26.0.0
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_SETTINGS 或 ohos.permission.PERSONAL_MANAGE_RESTRICTIONS
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)。
 
 参数：
 

@@ -1,12 +1,12 @@
 ---
-title: "@ohos.enterprise.bundleManager（包管理）"
+title: "@ohos.enterprise.bundleManager (包管理)"
 upstream_id: "harmonyos-references/js-apis-enterprise-bundlemanager"
 catalog: "harmonyos-references"
-content_hash: "d3ffa8861911"
-synced_at: "2026-08-29T18:17:07.107354"
+content_hash: "f4fbc3e7a16b"
+synced_at: "2026-09-17T18:53:31.196373"
 ---
 
-# @ohos.enterprise.bundleManager（包管理）
+# @ohos.enterprise.bundleManager (包管理)
 
 本模块提供包管理能力，包括安装和卸载应用包，管理包安装允许名单、包安装禁止名单、包卸载禁止名单、可安装应用的分发类型等。在企业设备管理场景中，通过这些能力可以实现应用安装卸载的精细化管控，防止未授权应用的安装和卸载，保障企业设备安全，降低安全风险。
 
@@ -28,13 +28,13 @@ addAllowedInstallBundlesSync(admin: Want, appIds: Array<string>, accountId?: num
 
 添加应用至应用程序包安装允许名单，添加至允许名单的应用允许在当前/指定用户下安装，其它非允许名单应用不允许安装。系统应用卸载后重新安装不会受到接口限制；而普通应用在卸载后重新安装时，则会受到接口限制。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_SET_BUNDLE_INSTALL_POLICY
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -83,13 +83,13 @@ removeAllowedInstallBundlesSync(admin: Want, appIds: Array<string>, accountId?: 
 
 在应用程序包安装允许名单中移除应用，在允许名单存在的情况下，不在应用程序包安装允许名单中的应用不允许在当前/指定用户下安装。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_SET_BUNDLE_INSTALL_POLICY
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -248,13 +248,13 @@ addDisallowedInstallBundlesSync(admin: Want, appIds: Array<string>, accountId?: 
 
 添加应用至应用程序包安装禁止名单，添加至禁止名单的应用不允许在当前/指定用户下安装。系统应用卸载后重新安装不会受到接口限制；而普通应用在卸载后重新安装时，则会受到接口限制。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_SET_BUNDLE_INSTALL_POLICY
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -303,13 +303,13 @@ removeDisallowedInstallBundlesSync(admin: Want, appIds: Array<string>, accountId
 
 在应用程序包安装禁止名单中移除应用，在禁止名单存在的情况下，在应用程序包安装禁止名单中的应用不允许在当前/指定用户下安装。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_SET_BUNDLE_INSTALL_POLICY
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -470,13 +470,13 @@ addDisallowedUninstallBundlesSync(admin: Want, appIds: Array<string>, accountId?
 
 添加应用至包卸载禁止名单，添加至禁止名单的应用不允许在当前/指定用户下卸载。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_SET_BUNDLE_INSTALL_POLICY
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -526,13 +526,13 @@ removeDisallowedUninstallBundlesSync(admin: Want, appIds: Array<string>, account
 
 在包卸载禁止名单中移除应用。在禁止名单存在的情况下，在包卸载禁止名单中的应用不允许在当前/指定用户下卸载。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_SET_BUNDLE_INSTALL_POLICY
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -1086,13 +1086,13 @@ addInstallationAllowedAppDistributionTypes(admin: Want, appDistributionTypes: Ar
 
 应用程序签名证书的分发类型详细介绍请参见[ApplicationInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-applicationinfo#applicationinfo-1)的appDistributionType属性。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_SET_BUNDLE_INSTALL_POLICY
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -1140,13 +1140,13 @@ removeInstallationAllowedAppDistributionTypes(admin: Want, appDistributionTypes:
 
 应用程序签名证书的分发类型详细介绍请参见[ApplicationInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-applicationinfo#applicationinfo-1)的appDistributionType属性。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_SET_BUNDLE_INSTALL_POLICY
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 

@@ -2,8 +2,8 @@
 title: "画布绘制通用方法"
 upstream_id: "harmonyos-references/ts-components-canvas-common-method"
 catalog: "harmonyos-references"
-content_hash: "43ec467782dd"
-synced_at: "2026-07-28T16:46:41.055431"
+content_hash: "1316ce7bdfe4"
+synced_at: "2026-09-17T18:51:25.986661"
 ---
 
 # 画布绘制通用方法
@@ -65,7 +65,7 @@ struct FillRect {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848864.jpg)
+ ![](./img/zh-cn_image_0000002757232639.jpg)
 
 #### strokeRect
 
@@ -117,7 +117,7 @@ struct StrokeRect {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088293.png)
+ ![](./img/zh-cn_image_0000002727592948.png)
 
 #### clearRect
 
@@ -171,7 +171,7 @@ struct ClearRect {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928463.png)
+ ![](./img/zh-cn_image_0000002727752806.png)
 
 #### fillText
 
@@ -224,7 +224,7 @@ struct FillText {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008786.png)
+ ![](./img/zh-cn_image_0000002757312521.png)
 
 #### strokeText
 
@@ -277,7 +277,7 @@ struct StrokeText {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848866.png)
+ ![](./img/zh-cn_image_0000002757232641.png)
 
 #### measureText
 
@@ -334,7 +334,7 @@ struct MeasureText {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088295.jpg)
+ ![](./img/zh-cn_image_0000002727592950.jpg)
 
 #### stroke
 
@@ -382,7 +382,7 @@ struct Stroke {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928465.png)
+ ![](./img/zh-cn_image_0000002727752808.png)
 
 #### stroke
 
@@ -437,7 +437,7 @@ struct Stroke {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008788.png)
+ ![](./img/zh-cn_image_0000002757312523.png)
 
 #### beginPath
 
@@ -485,7 +485,7 @@ struct BeginPath {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848868.jpg)
+ ![](./img/zh-cn_image_0000002757232643.jpg)
 
 #### moveTo
 
@@ -542,7 +542,7 @@ struct MoveTo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088297.png)
+ ![](./img/zh-cn_image_0000002727592952.png)
 
 #### lineTo
 
@@ -595,7 +595,7 @@ struct LineTo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928467.png)
+ ![](./img/zh-cn_image_0000002727752810.png)
 
 #### closePath
 
@@ -643,7 +643,7 @@ struct ClosePath {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008790.png)
+ ![](./img/zh-cn_image_0000002757312525.png)
 
 #### createPattern
 
@@ -705,7 +705,7 @@ struct CreatePattern {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848870.jpg)
+ ![](./img/zh-cn_image_0000002757232645.jpg)
 
 #### bezierCurveTo
 
@@ -783,7 +783,7 @@ struct BezierCurveTo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088299.png)
+ ![](./img/zh-cn_image_0000002727592954.png)
 
 #### quadraticCurveTo
 
@@ -858,7 +858,7 @@ struct QuadraticCurveTo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928469.png)
+ ![](./img/zh-cn_image_0000002727752812.png)
 
 #### arc
 
@@ -914,7 +914,7 @@ struct Arc {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008792.jpeg)
+ ![](./img/zh-cn_image_0000002757312527.jpeg)
 
 #### arcTo
 
@@ -997,7 +997,7 @@ struct ArcTo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848872.png)
+ ![](./img/zh-cn_image_0000002757232647.png)
 
 此示例中，arcTo()创建的圆弧为黑色，圆弧的两条切线为灰色。控制点为红色，起始点为绿色。
 
@@ -1061,7 +1061,7 @@ struct CanvasExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088301.jpeg)
+ ![](./img/zh-cn_image_0000002727592956.jpeg)
 
 #### rect
 
@@ -1114,7 +1114,7 @@ struct CanvasExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928471.jpeg)
+ ![](./img/zh-cn_image_0000002727752814.jpeg)
 
 #### roundRect20+
 
@@ -1144,9 +1144,9 @@ roundRect(x: number, y: number, w: number, h: number, radii?: number | Array<num
 
 以下错误码的详细介绍请参见[Canvas组件错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-canvas)。
 
-| 错误码ID | 错误信息 | 可能原因 |
-| --- | --- | --- |
-| 103701 | Parameter error. | 1. The param radii is a list that has zero or more than four elements; 2. The param radii contains negative value. |
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 103701 | Parameter error. Possible causes: 1. The param radii is a list that has zero or more than four elements; 2. The param radii contains negative value. |
 
 示例：
 
@@ -1211,7 +1211,7 @@ struct CanvasExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088281.jpeg)
+ ![](./img/zh-cn_image_0000002727592936.jpeg)
 
 #### fill
 
@@ -1260,7 +1260,7 @@ struct Fill {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008794.png)
+ ![](./img/zh-cn_image_0000002757312529.png)
 
 #### fill
 
@@ -1320,7 +1320,7 @@ struct Fill {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848874.jpg)
+ ![](./img/zh-cn_image_0000002757232649.jpg)
 
 #### clip
 
@@ -1373,7 +1373,7 @@ struct Clip {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088303.png)
+ ![](./img/zh-cn_image_0000002727592958.png)
 
 #### clip
 
@@ -1433,7 +1433,7 @@ struct Clip {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928473.jpg)
+ ![](./img/zh-cn_image_0000002727752816.jpg)
 
 #### reset12+
 
@@ -1479,7 +1479,7 @@ struct Reset {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008796.png)
+ ![](./img/zh-cn_image_0000002757312531.png)
 
 #### saveLayer12+
 
@@ -1533,7 +1533,7 @@ struct saveLayer {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848876.png)
+ ![](./img/zh-cn_image_0000002757232651.png)
 
 #### restoreLayer12+
 
@@ -1593,7 +1593,7 @@ struct ResetTransform {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088305.png)
+ ![](./img/zh-cn_image_0000002727592960.png)
 
 #### rotate
 
@@ -1643,7 +1643,7 @@ struct Rotate {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928475.png)
+ ![](./img/zh-cn_image_0000002727752818.png)
 
 #### scale
 
@@ -1696,13 +1696,13 @@ struct Scale {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008798.png)
+ ![](./img/zh-cn_image_0000002757312533.png)
 
 #### transform
 
 transform(a: number, b: number, c: number, d: number, e: number, f: number): void
 
-transform方法对应一个变换矩阵，想对一个图形进行变化的时候，只要设置此变换矩阵相应的参数，对图形的各个定点的坐标分别乘以这个矩阵，就能得到新的定点的坐标。矩阵变换效果可叠加。
+transform方法对应一个变换矩阵，当需要对一个图形进行变换的时候，只要设置此变换矩阵相应的参数，对图形的各个顶点的坐标分别乘以这个矩阵，就能得到新的顶点的坐标。矩阵变换效果可叠加。
 
 卡片能力： 从API版本9开始，该接口支持在ArkTS卡片中使用。
 
@@ -1764,7 +1764,7 @@ struct Transform {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848878.jpg)
+ ![](./img/zh-cn_image_0000002757232653.jpg)
 
 #### setTransform
 
@@ -1829,7 +1829,7 @@ struct SetTransform {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088307.png)
+ ![](./img/zh-cn_image_0000002727592962.png)
 
 #### setTransform
 
@@ -1895,7 +1895,7 @@ setTransform(transform?: Matrix2D): void
    }
  }
 ```
- ![](./img/zh-cn_image_0000002685928477.jpeg)
+ ![](./img/zh-cn_image_0000002727752820.jpeg)
 
 #### getTransform
 
@@ -1964,7 +1964,7 @@ struct TransFormDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008800.png)
+ ![](./img/zh-cn_image_0000002757312535.png)
 
 #### translate
 
@@ -2016,7 +2016,7 @@ struct Translate {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848880.png)
+ ![](./img/zh-cn_image_0000002757232655.png)
 
 #### drawImage
 
@@ -2071,7 +2071,7 @@ struct DrawImage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088309.png)
+ ![](./img/zh-cn_image_0000002727592964.png)
 
 #### drawImage
 
@@ -2128,7 +2128,7 @@ struct DrawImage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928479.png)
+ ![](./img/zh-cn_image_0000002727752822.png)
 
 #### drawImage
 
@@ -2189,7 +2189,7 @@ struct DrawImage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008802.png)
+ ![](./img/zh-cn_image_0000002757312537.png)
 
 #### createImageData
 
@@ -2303,7 +2303,7 @@ struct GetPixelMap {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848882.png)
+ ![](./img/zh-cn_image_0000002757232657.png)
 
 #### setPixelMap
 
@@ -2383,7 +2383,7 @@ struct GetImageData {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848840.png)
+ ![](./img/zh-cn_image_0000002757232615.png)
 
 #### putImageData
 
@@ -2442,7 +2442,7 @@ struct PutImageData {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088311.png)
+ ![](./img/zh-cn_image_0000002727592966.png)
 
 #### putImageData
 
@@ -2505,7 +2505,7 @@ struct PutImageData {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928481.png)
+ ![](./img/zh-cn_image_0000002727752824.png)
 
 #### setLineDash
 
@@ -2556,9 +2556,9 @@ struct SetLineDash {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008804.png)
+ ![](./img/zh-cn_image_0000002757312539.png)
 
-#### [h2]transferFromImageBitmap
+#### transferFromImageBitmap
 
 transferFromImageBitmap(bitmap: ImageBitmap): void
 
@@ -2611,7 +2611,7 @@ struct TransferFromImageBitmap {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848884.jpg)
+ ![](./img/zh-cn_image_0000002757232659.jpg)
 
 #### getLineDash
 
@@ -2670,7 +2670,7 @@ struct OffscreenCanvasGetLineDash {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088313.png)
+ ![](./img/zh-cn_image_0000002727592968.png)
 
 #### restore
 
@@ -2723,7 +2723,7 @@ struct CanvasExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928483.png)
+ ![](./img/zh-cn_image_0000002727752826.png)
 
 #### save
 
@@ -2770,7 +2770,7 @@ struct CanvasExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928483.png)
+ ![](./img/zh-cn_image_0000002727752826.png)
 
 #### createLinearGradient
 
@@ -2833,7 +2833,7 @@ struct CreateLinearGradient {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008806.png)
+ ![](./img/zh-cn_image_0000002757312541.png)
 
 #### createRadialGradient
 
@@ -2898,7 +2898,7 @@ struct CreateRadialGradient {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848886.png)
+ ![](./img/zh-cn_image_0000002757232661.png)
 
 #### createConicGradient10+
 
@@ -2960,7 +2960,7 @@ struct OffscreenCanvasConicGradientPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088315.png)
+ ![](./img/zh-cn_image_0000002727592970.png)
 
 #### CanvasFillRule
 
@@ -3021,7 +3021,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928485.png)
+ ![](./img/zh-cn_image_0000002727752828.png)
 
 #### TextMetrics
 

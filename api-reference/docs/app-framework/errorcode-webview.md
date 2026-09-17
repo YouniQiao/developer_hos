@@ -2,8 +2,8 @@
 title: "Webview错误码"
 upstream_id: "harmonyos-references/errorcode-webview"
 catalog: "harmonyos-references"
-content_hash: "41309acf50f3"
-synced_at: "2026-08-29T18:16:04.355080"
+content_hash: "0f098dd813ee"
+synced_at: "2026-09-17T18:52:40.866714"
 ---
 
 # Webview错误码
@@ -322,11 +322,9 @@ WebResourceHandler已经失效。
 
 可能原因
 
-1.对应的请求在WebSchemeHandler中没有拦截；
-
-2.该请求拦截在构造返回体之前，因为某些原因已经请求结束；
-
-3.该WebResourceHandler已经调用过didFinish和didFail。
+1. 对应的请求在WebSchemeHandler中没有拦截。
+2. 该请求拦截在构造返回体之前，因为某些原因已经请求结束。
+3. 该WebResourceHandler已经调用过didFinish和didFail。
 
 处理步骤
 

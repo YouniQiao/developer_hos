@@ -2,8 +2,8 @@
 title: "Classes (其他)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-class"
 catalog: "harmonyos-references"
-content_hash: "cb346349873e"
-synced_at: "2026-07-09T01:00:46.624684"
+content_hash: "12de677412ce"
+synced_at: "2026-09-17T18:54:12.654446"
 ---
 
 # Classes (其他)
@@ -12,7 +12,7 @@ synced_at: "2026-07-09T01:00:46.624684"
 
 #### RecommendationOptions11+
 
-图片推荐选项(基于图片数据分析结果，依赖设备适配)。
+图片推荐选项（基于图片数据分析结果，依赖设备适配）。
 
 系统能力：SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -35,14 +35,14 @@ synced_at: "2026-07-09T01:00:46.624684"
 | isSearchSupported11+ | boolean | 否 | 是 | 是否支持搜索，true表示支持，false表示不支持，默认为true。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | recommendationOptions11+ | [RecommendationOptions](#recommendationoptions11) | 否 | 是 | 图片推荐相关配置参数。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | preselectedUris11+ | Array | 否 | 是 | 预选择图片的uri数据。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| isPreviewForSingleSelectionSupported12+ | boolean | 否 | 是 | 单选模式下是否需要进大图预览，true表示需要，false表示不需要，默认为true。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| isPreviewForSingleSelectionSupported12+ | boolean | 否 | 是 | 单选模式下是否需要进入大图预览，true表示需要，false表示不需要，默认为true。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | singleSelectionMode18+ | [SingleSelectionMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#singleselectionmode18) | 否 | 是 | 单选模式类型。默认为大图预览模式（SingleSelectionMode.BROWSER_MODE）。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | mimeTypeFilter19+ | [MimeTypeFilter](#mimetypefilter19) | 否 | 是 | 文件类型的过滤配置，支持指定多个类型过滤。 当配置mimeTypeFilter参数时，MIMEType的配置自动失效。 配置该参数时，仅显示配置过滤类型对应的媒体文件，建议提示用户仅支持选择指定类型的图片/视频。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 |
 | fileSizeFilter19+ | [FileSizeFilter](#filesizefilter19) | 否 | 是 | 可选择媒体文件大小的过滤配置。 配置该参数时，仅显示配置文件大小范围的媒体文件，建议提示用户仅支持选择指定大小的图片/视频。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 |
 | videoDurationFilter19+ | [VideoDurationFilter](#videodurationfilter19) | 否 | 是 | 可选择媒体文件视频时长的过滤配置。 配置该参数时，仅显示配置视频时长范围的媒体文件，建议提示用户仅支持选择指定时长视频。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 |
 | combinedMediaTypeFilter20+ | Array | 否 | 是 | 将过滤条件配置为字符串数组，支持多种类型组合。 字符串格式如下：photoType | photoSubType1,photoSubType2, … | mimeType1,mimeType2, …。 - 第1段指定1个photoType，固定为image（图片）或video（视频）。 - 第2段指定1~N个photoSubType，多个photoSubType之间使用逗号隔开，之间为“或（OR）”的逻辑取并集；N目前支持最大为1；可选的PhotoSubType包括movingPhoto或“*”（忽略）。 - 第3段指定1~N个mimeType，多个mimeType之间使用逗号隔开，之间为“或（OR）”的逻辑取并集；N最大为10，格式类似于[MimeTypeFilter](#mimetypefilter19)。 三段过滤的组合取交集处理。 支持“非”的逻辑。对于需要排除的类型，进行加括号的方式进行标识；一个string最多可使用1个括号。 当应用配置的过滤条件string不满足上述规格时，过滤结果为空。 配置该参数时，仅取数组前三个参数进行处理，MIMEType、mimeTypeFilter参数自动失效。 **元服务API：** 从API version 20开始支持在元服务中使用。 |
 | photoViewMimeTypeFileSizeFilters20+ | Array | 否 | 是 | 指定媒体文件类型和文件大小进行过滤。 配置该参数时，仅取数组前三个参数进行处理，MIMETypes和fileSizeFilter自动失效。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
-| isMovingPhotoBadgeShown22+ | boolean | 否 | 是 | 是否在大图浏览模式下展示动态照片图标，true表示展示，false表示不展示，默认为false。 若设置为true，[Photoselectresult](#photoselectresult)返回movingPhotoBadgeStates数组，动态照片默认返回状态为[MOVING_PHOTO_ENABLED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#movingphotobadgestatetype22)。 **注意：** 必须同时使用isMovingPhotoBadgeShown和MovingPhotoBadgeStateType判断照片是否是动态照片。 **元服务API：** 从API version 22开始，该接口支持在元服务中使用。 |
+| isMovingPhotoBadgeShown22+ | boolean | 否 | 是 | 是否在大图浏览模式下展示动态照片图标，true表示展示，false表示不展示，默认为false。 若设置为true，[PhotoSelectResult](#photoselectresult)返回movingPhotoBadgeStates数组，动态照片默认返回状态为[MOVING_PHOTO_ENABLED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#movingphotobadgestatetype22)。 **注意：** 必须同时使用isMovingPhotoBadgeShown和MovingPhotoBadgeStateType判断照片是否是动态照片。 **元服务API：** 从API version 22开始，该接口支持在元服务中使用。 |
 | assetFilter22+ | Array | 否 | 是 | 媒体资产过滤器，长度限制为50个，超出取前50个。 **注意：** 1. 当使用该过滤器时，其他过滤器会失效。 2. 当配置多个条件时，过滤条件前后需要配置英文括号，否则可能和内部过滤项冲突。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 22开始，该接口支持在元服务中使用。 |
 | autoPlayScenes23+ | Array | 否 | 是 | 设置动态照片播放模式。长度限制为2个，超出取前2个，多余的会自动忽略。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 23开始，该接口支持在元服务中使用。 |
 | globalMovingPhotoState23+ | [MovingPhotoBadgeStateType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#movingphotobadgestatetype22) | 否 | 是 | 设置全局动态照片的效果，当前仅支持MOVING_PHOTO_ENABLED和MOVING_PHOTO_DISABLED。默认为MOVING_PHOTO_ENABLED。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 23开始，该接口支持在元服务中使用。 |

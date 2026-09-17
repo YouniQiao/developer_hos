@@ -2,8 +2,8 @@
 title: "日历选择器弹窗 (CalendarPickerDialog)"
 upstream_id: "harmonyos-references/ts-methods-calendarpicker-dialog"
 catalog: "harmonyos-references"
-content_hash: "07d022963364"
-synced_at: "2026-08-29T18:14:47.528849"
+content_hash: "44b914d44f59"
+synced_at: "2026-09-17T18:51:34.591478"
 ---
 
 # 日历选择器弹窗 (CalendarPickerDialog)
@@ -128,7 +128,7 @@ struct CalendarPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799982.gif)
+ ![](./img/zh-cn_image_0000002757312591.gif)
 
 #### [h2]示例2（自定义按钮样式）
 
@@ -183,7 +183,7 @@ struct CalendarPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519269.png)
+ ![](./img/zh-cn_image_0000002757232711.png)
 
 #### [h2]示例3（悬停态弹窗）
 
@@ -232,7 +232,7 @@ struct CalendarPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701640068.gif)
+ ![](./img/zh-cn_image_0000002727593020.gif)
 
 #### [h2]示例4（设置日期选中态底板样式）
 
@@ -265,7 +265,7 @@ struct CalendarPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359289.png)
+ ![](./img/zh-cn_image_0000002727752878.png)
 
 #### [h2]示例5（设置开始日期和结束日期）
 
@@ -297,7 +297,7 @@ struct CalendarPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799984.gif)
+ ![](./img/zh-cn_image_0000002757312593.gif)
 
 #### [h2]示例6（设置系统当前日期在日历选择器弹窗内保持高亮显示，并设置禁用日期区间）
 
@@ -328,7 +328,7 @@ struct CalendarPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519271.gif)
+ ![](./img/zh-cn_image_0000002757232713.gif)
 
 #### [h2]示例7（自定义背景模糊效果参数）
 
@@ -366,7 +366,7 @@ struct CalendarPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701640072.png)
+ ![](./img/zh-cn_image_0000002727593022.png)
 
 #### [h2]示例8（自定义背景效果参数）
 
@@ -405,11 +405,13 @@ struct CalendarPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359291.png)
+ ![](./img/zh-cn_image_0000002727752880.png)
 
-#### [h2]示例9（设置系统材质）
+#### [h2]示例9（设置沉浸光感）
 
-该示例通过配置[systemMaterial](#calendardialogoptions对象说明)，实现系统材质效果。
+该示例通过配置[systemMaterial](#calendardialogoptions对象说明)，实现沉浸光感效果。
+
+该示例配图为高算力设备强档效果，组件沉浸光感效果会根据设备算力与用户在系统中设置的沉浸光感效果自适应调整，开发者无需额外适配。
 
 从API版本26.0.0开始，在CalendarDialogOptions中新增了systemMaterial属性。
 
@@ -433,8 +435,11 @@ struct CalendarPickerDialogExample {
             });
           })
       }.width('100%')
+      .height('100%')
+      .backgroundImage($r('app.media.bgImg'))  // $r('app.media.bgImg')需要替换为开发者所需的资源文件
+      .backgroundImageSize(ImageSize.FILL)
     }
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799986.png)
+ ![](./img/zh-cn_image_0000002757312595.gif)

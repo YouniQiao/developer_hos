@@ -2,8 +2,8 @@
 title: "Class (WebviewController)"
 upstream_id: "harmonyos-references/arkts-apis-webview-webviewcontroller"
 catalog: "harmonyos-references"
-content_hash: "ba2b9b319bdd"
-synced_at: "2026-08-29T18:15:58.981185"
+content_hash: "1020f82aa681"
+synced_at: "2026-09-17T18:52:36.807734"
 ---
 
 # Class (WebviewController)
@@ -336,8 +336,7 @@ struct WebComponent {
 ```
  加载本地网页，加载本地资源文件有三种方式。
 
-1.$rawfile方式。
-
+1. $rawfile方式。 
 ```
 // xxx.ets
 import { webview } from '@kit.ArkWeb';
@@ -364,10 +363,8 @@ struct WebComponent {
   }
 }
 ```
- 2.resource协议。
 
-使用 resource://rawfile/ 协议前缀可以避免常规 $rawfile 方式在处理带有“#”路由链接时URL会被“#”截断的问题。当URL中包含“#”号时，“#”后面的内容会被视为锚点（fragment）。
-
+2. resource协议。 使用 resource://rawfile/ 协议前缀可以避免常规 $rawfile 方式在处理带有“#”路由链接时URL会被“#”截断的问题。当URL中包含“#”号时，“#”后面的内容会被视为锚点（fragment）。 
 ```
 // xxx.ets
 import { webview } from '@kit.ArkWeb';
@@ -394,8 +391,7 @@ struct WebComponent {
   }
 }
 ```
- 在“src\main\resources\rawfile”文件夹下创建index.html：
-
+ 在“src\main\resources\rawfile”文件夹下创建index.html： 
 ```
 <!-- index.html -->
 <!DOCTYPE html>
@@ -424,10 +420,8 @@ struct WebComponent {
 </body>
 </html>
 ```
- 3.通过沙箱路径加载本地文件，可以参考[web](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-page-loading-with-web-components#加载本地页面)加载沙箱路径的示例代码。
 
-加载的html文件。
-
+3. 通过沙箱路径加载本地文件，可以参考[web](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-page-loading-with-web-components#加载本地页面)加载沙箱路径的示例代码。 加载的html文件。 
 ```
 <!-- index.html -->
 <!DOCTYPE html>
@@ -1324,6 +1318,7 @@ runJavaScript(script: string, callback : AsyncCallback<string>): void
 - 目前不支持传递对象，支持传递结构体。
 - 执行异步方法无法获取返回值，需要根据具体情境判断是否使用同步或异步方式。
 - 前端页面传到应用侧的string数据类型会被视为JSON格式的数据，需要调用JSON.parse反序列化。
+- 多次调用runJavaScript时，脚本按调用顺序依次执行，但回调结果的返回顺序不保证与调用顺序一致。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -1415,11 +1410,12 @@ runJavaScript(script: string): Promise<string>
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 跨导航操作（如loadUrl）时，JavaScript状态 将不再保留，例如，调用loadUrl前定义的全局变量和函数在加载的页面中将不存在。
+- 跨导航操作（如loadUrl）时，JavaScript状态将不再保留，例如，调用loadUrl前定义的全局变量和函数在加载的页面中将不存在。
 - 建议应用程序使用registerJavaScriptProxy来确保JavaScript状态能够在页面导航间保持。
 - 目前不支持传递对象，支持传递结构体。
 - 执行异步方法无法获取返回值，需要根据具体情境判断是否使用同步或异步方式。
 - 前端页面传到应用侧的string数据类型会被视为JSON格式的数据，需要调用JSON.parse反序列化。
+- 多次调用runJavaScript时，脚本按调用顺序依次执行，但Promise结果的返回顺序不保证与调用顺序一致。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -1511,6 +1507,7 @@ runJavaScriptExt(script: string | ArrayBuffer, callback : AsyncCallback<JsMessag
 ![](./img/note_3.0-zh-cn.png)
 
 - 前端页面传到应用侧的string数据类型会被视为JSON格式的数据，需要调用JSON.parse反序列化。
+- 多次调用runJavaScriptExt时，脚本按调用顺序依次执行，但回调结果的返回顺序不保证与调用顺序一致。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -1736,6 +1733,7 @@ runJavaScriptExt(script: string | ArrayBuffer): Promise<JsMessageExt>
 ![](./img/note_3.0-zh-cn.png)
 
 - 前端页面传到应用侧的string数据类型会被视为JSON格式的数据，需要调用JSON.parse反序列化。
+- 多次调用runJavaScriptExt时，脚本按调用顺序依次执行，但Promise结果的返回顺序不保证与调用顺序一致。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -4173,8 +4171,7 @@ serializeWebState(): Uint8Array
 
 示例：
 
-1.对文件的操作需要导入文件管理模块，详情请参考[文件管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs)。
-
+1. 对文件的操作需要导入文件管理模块，详情请参考[文件管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs)。 
 ```
 // xxx.ets
 import { webview } from '@kit.ArkWeb';
@@ -4209,10 +4206,8 @@ struct WebComponent {
   }
 }
 ```
- 2.修改EntryAbility.ets。
 
-获取应用缓存文件路径。
-
+2. 修改EntryAbility.ets。 获取应用缓存文件路径。 
 ```
 // xxx.ets
 import { AbilityConstant, UIAbility, Want } from '@kit.AbilityKit';
@@ -4252,8 +4247,7 @@ restoreWebState(state: Uint8Array): void
 
 示例：
 
-1.对文件的操作需要导入文件管理模块，详情请参考[文件管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs)。
-
+1. 对文件的操作需要导入文件管理模块，详情请参考[文件管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs)。 
 ```
 // xxx.ets
 import { webview } from '@kit.ArkWeb';
@@ -4297,10 +4291,8 @@ struct WebComponent {
   }
 }
 ```
- 2.修改EntryAbility.ets。
 
-获取应用缓存文件路径。
-
+2. 修改EntryAbility.ets。 获取应用缓存文件路径。 
 ```
 // xxx.ets
 import { AbilityConstant, UIAbility, Want } from '@kit.AbilityKit';
@@ -8567,26 +8559,15 @@ setPathAllowingUniversalAccess(pathList: Array<string>): void
 
 setPathAllowingUniversalAccess放开目录的跨域访问限制是一个高风险操作。基于最小权限原则，当前el1，el2放开的路径是固定的，路径列表中的路径应符合以下任一路径格式：
 
-1.应用文件目录的子目录（应用文件目录通过Ability Kit中的[Context.filesDir](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context#属性)获取），例如：
-
-- /data/storage/el2/base/files/example
-- /data/storage/el2/base/haps/entry/files/example
-
-2.应用资源目录及其子目录（应用资源目录通过Ability Kit中的[Context.resourceDir](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context#属性)获取），例如：
-
-- /data/storage/el1/bundle/entry/resources/resfile
-- /data/storage/el1/bundle/entry/resources/resfile/example
-
-3.从API version 21开始，还包括了应用缓存目录及其子目录（应用缓存目录通过Ability Kit中的[Context.cacheDir](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context#属性)获取），例如：
-
-- /data/storage/el2/base/cache
-- /data/storage/el2/base/haps/entry/cache/example
-- 设置的目录路径中，不允许包含cache/web，否则会抛出异常码401。如果设置目录路径是cache，cache/web也不允许访问。
-
-4.从API version 21开始，还包括了应用临时目录及其子目录（应用临时目录通过Ability Kit中的[Context.tempDir](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context#属性)获取），例如：
-
-- /data/storage/el2/base/temp
-- /data/storage/el2/base/haps/entry/temp/example
+1. 应用文件目录的子目录（应用文件目录通过Ability Kit中的[Context.filesDir](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context#属性)获取），例如： /data/storage/el2/base/files/example
+2. /data/storage/el2/base/haps/entry/files/example
+3. 应用资源目录及其子目录（应用资源目录通过Ability Kit中的[Context.resourceDir](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context#属性)获取），例如： /data/storage/el1/bundle/entry/resources/resfile
+4. /data/storage/el1/bundle/entry/resources/resfile/example
+5. 从API version 21开始，还包括了应用缓存目录及其子目录（应用缓存目录通过Ability Kit中的[Context.cacheDir](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context#属性)获取），例如： /data/storage/el2/base/cache
+6. /data/storage/el2/base/haps/entry/cache/example
+7. 设置的目录路径中，不允许包含cache/web，否则会抛出异常码401。如果设置目录路径是cache，cache/web也不允许访问。
+8. 从API version 21开始，还包括了应用临时目录及其子目录（应用临时目录通过Ability Kit中的[Context.tempDir](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context#属性)获取），例如： /data/storage/el2/base/temp
+9. /data/storage/el2/base/haps/entry/temp/example
 
 当路径列表中有其中一个路径不满足以上条件之一，则会抛出异常码401，并且设置路径列表失败。当设置的路径列表为空，则file协议可访问范围以[fileAccess](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-attributes#fileaccess)的行为为准。
 

@@ -2,8 +2,8 @@
 title: "事件"
 upstream_id: "harmonyos-references/arkts-basic-components-web-events"
 catalog: "harmonyos-references"
-content_hash: "88a6626bfe58"
-synced_at: "2026-08-29T18:16:00.511684"
+content_hash: "35c800b6e752"
+synced_at: "2026-09-17T18:52:38.015412"
 ---
 
 # 事件
@@ -1228,7 +1228,12 @@ struct WebComponent {
 
 onInterceptRequest(callback: Callback<OnInterceptRequestEvent, WebResourceResponse>)
 
-当Web组件加载URL之前触发该回调，用于拦截URL并返回响应数据。onInterceptRequest可拦截所有跳转请求并返回响应数据，但无法访问POST请求体（Body）内容，且不支持分片缓冲（buffer）类型数据获取。此类场景需改用[WebSchemeHandler](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webschemehandler)实现，依据具体业务需求进行判断。
+当Web组件加载URL之前触发该回调，用于拦截URL并返回响应数据。
+
+![](./img/note_3.0-zh-cn.png)
+
+- 使用onInterceptRequest返回自定义响应时，必须通过[setResponseMimeType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-webresourceresponse#setresponsemimetype9)设置MIME类型。如果不希望设置MIME类型，可使用[WebSchemeHandler](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webschemehandler)代替。
+- onInterceptRequest可拦截所有跳转请求并返回响应数据，但无法访问POST请求体（Body）内容，且不支持分片缓冲（buffer）类型数据获取。此类场景需改用[WebSchemeHandler](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webschemehandler)实现，依据具体业务需求进行判断。
 
 系统能力： SystemCapability.Web.Webview.Core
 

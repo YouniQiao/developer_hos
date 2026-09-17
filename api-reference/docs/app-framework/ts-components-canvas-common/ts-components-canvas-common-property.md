@@ -2,8 +2,8 @@
 title: "画布绘制通用属性"
 upstream_id: "harmonyos-references/ts-components-canvas-common-property"
 catalog: "harmonyos-references"
-content_hash: "0a3fb3083f51"
-synced_at: "2026-07-28T16:46:40.737829"
+content_hash: "44893f4c28b2"
+synced_at: "2026-09-17T18:51:25.115074"
 ---
 
 # 画布绘制通用属性
@@ -90,7 +90,7 @@ struct FillStyleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928451.png)
+ ![](./img/zh-cn_image_0000002727752794.png)
 
 #### lineWidth
 
@@ -137,7 +137,7 @@ struct LineWidthExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008774.png)
+ ![](./img/zh-cn_image_0000002757312509.png)
 
 #### strokeStyle
 
@@ -216,7 +216,7 @@ struct StrokeStyleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848854.png)
+ ![](./img/zh-cn_image_0000002757232629.png)
 
 #### lineCap
 
@@ -267,7 +267,7 @@ struct LineCapExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088283.png)
+ ![](./img/zh-cn_image_0000002727592938.png)
 
 #### lineJoin
 
@@ -319,7 +319,7 @@ struct LineJoinExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928453.png)
+ ![](./img/zh-cn_image_0000002727752796.png)
 
 #### miterLimit
 
@@ -371,7 +371,7 @@ struct MiterLimit {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008776.png)
+ ![](./img/zh-cn_image_0000002757312511.png)
 
 #### font
 
@@ -440,7 +440,7 @@ struct FontDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848856.jpeg)
+ ![](./img/zh-cn_image_0000002757232631.jpeg)
 
 #### textAlign
 
@@ -506,7 +506,7 @@ struct CanvasExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088285.png)
+ ![](./img/zh-cn_image_0000002727592940.png)
 
 #### textBaseline
 
@@ -572,7 +572,7 @@ struct TextBaseline {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928455.jpg)
+ ![](./img/zh-cn_image_0000002727752798.jpg)
 
 #### globalAlpha
 
@@ -622,7 +622,7 @@ struct GlobalAlpha {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008778.png)
+ ![](./img/zh-cn_image_0000002757312513.png)
 
 #### lineDashOffset
 
@@ -671,7 +671,7 @@ struct LineDashOffset {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848858.png)
+ ![](./img/zh-cn_image_0000002757232633.png)
 
 #### globalCompositeOperation
 
@@ -864,7 +864,7 @@ struct GlobalCompositeOperation {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088287.png)
+ ![](./img/zh-cn_image_0000002727592942.png)
 
 #### shadowBlur
 
@@ -913,7 +913,7 @@ struct ShadowBlur {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928457.jpg)
+ ![](./img/zh-cn_image_0000002727752800.jpg)
 
 #### shadowColor
 
@@ -962,7 +962,7 @@ struct ShadowColor {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008780.jpg)
+ ![](./img/zh-cn_image_0000002757312515.jpg)
 
 #### shadowOffsetX
 
@@ -1012,7 +1012,7 @@ struct ShadowOffsetX {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848860.png)
+ ![](./img/zh-cn_image_0000002757232635.png)
 
 #### shadowOffsetY
 
@@ -1062,7 +1062,7 @@ struct ShadowOffsetY {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088289.png)
+ ![](./img/zh-cn_image_0000002727592944.png)
 
 #### imageSmoothingEnabled
 
@@ -1076,7 +1076,7 @@ struct ShadowOffsetY {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| imageSmoothingEnabled | boolean | 否 | 否 | 绘制图片时是否进行图像平滑度调整。 默认值：true |
+| imageSmoothingEnabled | boolean | 否 | 否 | 绘制图片时是否进行图像平滑度调整。 默认值：true true：绘制图片时启用图像平滑度调整。 false：绘制图片时不启用图像平滑度调整。 |
 
 示例：
 
@@ -1113,7 +1113,7 @@ struct ImageSmoothingEnabled {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928459.png)
+ ![](./img/zh-cn_image_0000002727752802.png)
 
 #### imageSmoothingQuality
 
@@ -1154,11 +1154,11 @@ justifyContent: FlexAlign.Center }) {
           .backgroundColor('#ffff00')
           .onReady(() => {
             let offContext = this.offCanvas.getContext("2d", this.settings)
-            let offctx = offContext
-            offctx.imageSmoothingEnabled = true
+            let offCtx = offContext
+            offCtx.imageSmoothingEnabled = true
             // 设置imageSmoothingQuality属性
-            offctx.imageSmoothingQuality = 'high'
-            offctx.drawImage(this.img, 0, 0, 400, 200)
+            offCtx.imageSmoothingQuality = 'high'
+            offCtx.drawImage(this.img, 0, 0, 400, 200)
 
             let image = this.offCanvas.transferToImageBitmap()
             this.context.transferFromImageBitmap(image)
@@ -1169,7 +1169,7 @@ justifyContent: FlexAlign.Center }) {
     }
   }
 ```
- ![](./img/zh-cn_image_0000002656008782.jpeg)
+ ![](./img/zh-cn_image_0000002757312517.jpeg)
 
 #### direction
 
@@ -1206,16 +1206,16 @@ justifyContent: FlexAlign.Center }) {
           .backgroundColor('#ffff00')
           .onReady(() => {
             let offContext = this.offCanvas.getContext("2d", this.settings)
-            let offctx = offContext
-            offctx.font = '48px serif';
-            offctx.textAlign = 'start'
-            offctx.fillText("Hi ltr!", 200, 50);
+            let offCtx = offContext
+            offCtx.font = '48px serif';
+            offCtx.textAlign = 'start'
+            offCtx.fillText("Hi ltr!", 200, 50);
 
             // 设置direction属性
-            offctx.direction = "rtl";
-            offctx.fillText("Hi rtl!", 200, 100);
+            offCtx.direction = "rtl";
+            offCtx.fillText("Hi rtl!", 200, 100);
 
-            let image = offctx.transferToImageBitmap()
+            let image = offCtx.transferToImageBitmap()
             this.context.transferFromImageBitmap(image)
           })
       }
@@ -1224,7 +1224,7 @@ justifyContent: FlexAlign.Center }) {
     }
   }
 ```
- ![](./img/zh-cn_image_0000002655848862.jpeg)
+ ![](./img/zh-cn_image_0000002757232637.jpeg)
 
 #### filter
 
@@ -1306,13 +1306,17 @@ justifyContent: FlexAlign.Center }) {
     }
   }
 ```
- ![](./img/zh-cn_image_0000002686088291.jpeg)
+ ![](./img/zh-cn_image_0000002727592946.jpeg)
 
 #### letterSpacing18+
 
 用于指定绘制文本时字母之间的间距，此属性为只写属性，可通过赋值语句设置其值，但无法通过读取操作获取其当前值，若尝试读取将返回undefined。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 元服务API： 从API版本18开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -1328,7 +1332,7 @@ justifyContent: FlexAlign.Center }) {
 
   @Entry
   @Component
-  struct letterSpacingDemo {
+  struct LetterSpacingDemo {
     private settings: RenderingContextSettings = new RenderingContextSettings(true);
     private context: CanvasRenderingContext2D = new CanvasRenderingContext2D(this.settings);
     private offCanvas: OffscreenCanvas = new OffscreenCanvas(600, 600);
@@ -1357,7 +1361,7 @@ justifyContent: FlexAlign.Center }) {
     }
   }
 ```
- ![](./img/zh-cn_image_0000002685928461.jpeg)
+ ![](./img/zh-cn_image_0000002727752804.jpeg)
 
 #### antialias24+
 
@@ -1424,7 +1428,7 @@ struct AntialiasDemoOff {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008784.jpeg)
+ ![](./img/zh-cn_image_0000002757312519.jpeg)
 
 #### CanvasDirection
 

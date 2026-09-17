@@ -1,12 +1,12 @@
 ---
-title: "@ohos.enterprise.usbManager（USB管理）"
+title: "@ohos.enterprise.usbManager (USB管理)"
 upstream_id: "harmonyos-references/js-apis-enterprise-usbmanager"
 catalog: "harmonyos-references"
-content_hash: "f08bee256c90"
-synced_at: "2026-08-29T18:17:07.784842"
+content_hash: "8db37dd68513"
+synced_at: "2026-09-17T18:53:32.087327"
 ---
 
-# @ohos.enterprise.usbManager（USB管理）
+# @ohos.enterprise.usbManager (USB管理)
 
 本模块提供USB管理能力。
 
@@ -16,7 +16,7 @@ synced_at: "2026-08-29T18:17:07.784842"
 
 本模块接口仅对设备管理应用开放，且调用接口前需激活设备管理应用，具体请参考[MDM Kit开发指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-guide)。
 
-全局通用限制类策略由restrictions统一提供，若要全局禁用USB，请参考[@ohos.enterprise.restrictions（限制类策略）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions)。
+全局通用限制类策略由restrictions统一提供，若要全局禁用USB，请参考[@ohos.enterprise.restrictions (限制类策略)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions)。
 
 #### 导入模块
 
@@ -43,13 +43,13 @@ addAllowedUsbDevices(admin: Want, usbDeviceIds: Array<UsbDeviceId>): void
 3. 已经通过[addDisallowedUsbDevices](#usbmanageradddisallowedusbdevices14)接口添加了禁止使用的USB设备类型。
 4. 已经通过[addDisallowedPermissiveUsbDevices](#usbmanageradddisallowedpermissiveusbdevices)接口添加了禁止使用的USB设备类型。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_USB
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -106,13 +106,13 @@ removeAllowedUsbDevices(admin: Want, usbDeviceIds: Array<UsbDeviceId>): void
 - 设备管理员需要动态调整允许使用的USB设备列表
 - 当USB设备不再需要或存在安全风险时，从允许名单中移除
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_USB
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -270,6 +270,8 @@ setUsbStorageDeviceAccessPolicy(admin: Want, usbPolicy: UsbPolicy): void
 
 ![](./img/note_3.0-zh-cn.png) 在调用接口前，确保已暂停USB存储设备的读写操作，保证操作的稳定性和数据的完整性，否则可能出现不可预期的异常。
 
+在多个MDM应用场景下，遵循[从严管控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则1从严管控)规则。严格优先级：禁用 > 只读 > 可读可写。
+
 以下情况下，通过本接口设置USB存储设备访问策略为可读可写/只读，会报策略冲突：
 
 1. 已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated)接口禁用了设备USB能力。
@@ -292,8 +294,6 @@ setUsbStorageDeviceAccessPolicy(admin: Want, usbPolicy: UsbPolicy): void
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [从严管控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则1从严管控)，严格优先级： 禁用 > 只读 > 可读可写。
 
 参数：
 
@@ -453,6 +453,8 @@ addDisallowedUsbDevices(admin: Want, usbDevices: Array<UsbDeviceType>): void
 
 ![](./img/note_3.0-zh-cn.png) 推荐使用[addDisallowedPermissiveUsbDevices](#usbmanageradddisallowedpermissiveusbdevices)接口。
 
+在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 以下情况下，调用本接口会报策略冲突：
 
 1. 已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated)接口禁用了设备USB能力。
@@ -465,8 +467,6 @@ addDisallowedUsbDevices(admin: Want, usbDevices: Array<UsbDeviceType>): void
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -524,13 +524,13 @@ removeDisallowedUsbDevices(admin: Want, usbDevices: Array<UsbDeviceType>): void
 - 设备管理员需要动态调整禁止使用的USB设备类型列表
 - 当某些USB设备类型不再存在安全风险时，从禁用名单中移除
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_USB
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -697,13 +697,13 @@ addDisallowedPermissiveUsbDevices(admin: Want, usbDevices: Array<PermissiveUsbDe
 
 起始版本： 26.0.0
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_USB
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -773,13 +773,13 @@ removeDisallowedPermissiveUsbDevices(admin: Want, usbDevices: Array<PermissiveUs
 
 起始版本： 26.0.0
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_USB
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 

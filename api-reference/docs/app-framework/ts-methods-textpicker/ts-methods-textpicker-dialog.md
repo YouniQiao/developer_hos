@@ -2,8 +2,8 @@
 title: "文本滑动选择器弹窗 (TextPickerDialog)"
 upstream_id: "harmonyos-references/ts-methods-textpicker-dialog"
 catalog: "harmonyos-references"
-content_hash: "9b35ec5b01e6"
-synced_at: "2026-08-29T18:14:49.984731"
+content_hash: "9ded6415bb69"
+synced_at: "2026-09-17T18:51:47.266597"
 ---
 
 # 文本滑动选择器弹窗 (TextPickerDialog)
@@ -205,7 +205,7 @@ struct TextPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519285.gif)
+ ![](./img/zh-cn_image_0000002757232727.gif)
 
 #### [h2]示例2（自定义样式）
 
@@ -292,7 +292,7 @@ struct TextPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701640086.png)
+ ![](./img/zh-cn_image_0000002727593036.png)
 
 #### [h2]示例3（悬停态弹窗）
 
@@ -356,7 +356,7 @@ struct TextPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359305.gif)
+ ![](./img/zh-cn_image_0000002727752894.gif)
 
 #### [h2]示例4（设置弹窗位置）
 
@@ -397,7 +397,7 @@ struct TextPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701800000.png)
+ ![](./img/zh-cn_image_0000002757312609.png)
 
 #### [h2]示例5（设置遮蔽区）
 
@@ -442,7 +442,7 @@ struct TextPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519287.png)
+ ![](./img/zh-cn_image_0000002757232729.png)
 
 #### [h2]示例6（设置弹窗背板）
 
@@ -484,7 +484,7 @@ struct TextPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701640088.png)
+ ![](./img/zh-cn_image_0000002727593038.png)
 
 #### [h2]示例7（设置循环滚动）
 
@@ -525,7 +525,7 @@ struct TextPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359307.gif)
+ ![](./img/zh-cn_image_0000002727752896.gif)
 
 #### [h2]示例8（设置选中项的背景样式）
 
@@ -563,7 +563,7 @@ struct TextPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701800002.gif)
+ ![](./img/zh-cn_image_0000002757312611.gif)
 
 #### [h2]示例9（自定义背景模糊效果参数）
 
@@ -600,7 +600,7 @@ struct TextPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519289.png)
+ ![](./img/zh-cn_image_0000002757232731.png)
 
 #### [h2]示例10（自定义背景效果参数）
 
@@ -638,11 +638,13 @@ struct TextPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701640090.png)
+ ![](./img/zh-cn_image_0000002727593040.png)
 
-#### [h2]示例11（设置系统材质）
+#### [h2]示例11（设置沉浸光感）
 
-该示例通过配置[systemMaterial](#textpickerdialogoptionsext20对象说明)，实现系统材质效果。
+该示例通过配置[systemMaterial](#textpickerdialogoptionsext20对象说明)，实现沉浸光感效果。
+
+该示例配图为高算力设备强档效果，组件沉浸光感效果会根据设备算力与用户在系统中设置的沉浸光感效果自适应调整，开发者无需额外适配。
 
 从API版本26.0.0开始，在TextPickerDialogOptionsExt中新增了systemMaterial属性。
 
@@ -667,8 +669,11 @@ struct TextPickerDialogExample {
             })
           })
       }.width('100%')
+      .height('100%')
+      .backgroundImage($r('app.media.bgImg'))  // $r('app.media.bgImg')需要替换为开发者所需的资源文件
+      .backgroundImageSize(ImageSize.FILL)
     }
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359309.png)
+ ![](./img/zh-cn_image_0000002727752898.gif)

@@ -2,8 +2,8 @@
 title: "CanvasRenderingContext2D"
 upstream_id: "harmonyos-references/ts-canvasrenderingcontext2d"
 catalog: "harmonyos-references"
-content_hash: "d4dfb71dc9de"
-synced_at: "2026-08-21T15:33:46.521722"
+content_hash: "23541bcdfd5b"
+synced_at: "2026-09-17T18:51:13.944155"
 ---
 
 # CanvasRenderingContext2D
@@ -104,7 +104,7 @@ struct LengthMetricsUnitDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002718979987.png)
+ ![](./img/zh-cn_image_0000002727752774.png)
 
 #### 属性
 
@@ -171,7 +171,7 @@ struct CanvasExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002689300294.png)
+ ![](./img/zh-cn_image_0000002757312489.png)
 
 #### on('onAttach')13+
 
@@ -208,9 +208,8 @@ on(type: 'onAttach', callback: Callback<void>): void
 
 触发'onAttach'回调的一般场景：
 
-1、Canvas组件创建时绑定CanvasRenderingContext2D对象；
-
-2、CanvasRenderingContext2D对象新绑定一个Canvas组件时。
+1. Canvas组件创建时绑定CanvasRenderingContext2D对象；
+2. CanvasRenderingContext2D对象新绑定一个Canvas组件时。
 
 #### on('onDetach')13+
 
@@ -243,9 +242,8 @@ on(type: 'onDetach', callback: Callback<void>): void
 
 触发'onDetach'回调的一般场景：
 
-1、Canvas组件销毁时解除绑定CanvasRenderingContext2D对象；
-
-2、CanvasRenderingContext2D对象新绑定一个Canvas组件，会先解除已有的绑定。
+1. Canvas组件销毁时解除绑定CanvasRenderingContext2D对象；
+2. CanvasRenderingContext2D对象新绑定一个Canvas组件，会先解除已有的绑定。
 
 #### off('onAttach')13+
 
@@ -393,7 +391,7 @@ struct AttachDetachExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002718859869.gif)
+ ![](./img/zh-cn_image_0000002757232609.gif)
 
 #### startImageAnalyzer12+
 
@@ -520,7 +518,7 @@ struct ImageAnalyzerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002689140414.png)
+ ![](./img/zh-cn_image_0000002727592918.png)
 
 #### getContext2DFromDrawingContext23+
 
@@ -587,7 +585,7 @@ struct CanvasExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002718979989.png)
+ ![](./img/zh-cn_image_0000002727752776.png)
 
 #### RenderingContextOptions23+
 
@@ -665,7 +663,7 @@ struct WidthExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002689300296.png)
+ ![](./img/zh-cn_image_0000002757312491.png)
 
 #### [h2]示例2（height属性用法）
 
@@ -693,7 +691,7 @@ struct HeightExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002718859871.png)
+ ![](./img/zh-cn_image_0000002757232611.png)
 
 #### [h2]示例3（canvas属性用法）
 
@@ -736,4 +734,4 @@ struct CanvasExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002689140416.png)
+ ![](./img/zh-cn_image_0000002727592920.png)

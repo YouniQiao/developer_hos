@@ -2,8 +2,8 @@
 title: "Swiper"
 upstream_id: "harmonyos-references/ts-container-swiper"
 catalog: "harmonyos-references"
-content_hash: "7f473dca449a"
-synced_at: "2026-08-29T18:13:24.069234"
+content_hash: "865f660c8153"
+synced_at: "2026-09-17T18:50:48.268142"
 ---
 
 # Swiper
@@ -1795,13 +1795,10 @@ customContentTransition(transition: SwiperContentAnimatedTransition)
 
 使用说明：
 
-1、循环场景下，设置prevMargin和nextMargin属性，使得Swiper前后端显示同一页面时，该接口不生效。
-
-2、在页面跟手滑动和离手后执行切换动画的过程中，会对视窗内所有页面逐帧触发[SwiperContentTransitionProxy](#swipercontenttransitionproxy12)回调。例如，当视窗内有下标为0、1的两个页面时，会每帧触发两次index值分别为0和1的回调。
-
-3、设置displayCount属性的swipeByGroup参数为true时，若同组中至少有一个页面在视窗内时，则会对同组中所有页面触发回调，若同组所有页面均不在视窗内时，则会一起下渲染树。
-
-4、在页面跟手滑动和离手后执行切换动画的过程中，默认动画（页面滑动）依然会发生，若希望页面不滑动，可以设置主轴方向上负的位移（translate属性）来抵消页面滑动。例如：当displayCount属性值为2，视窗内有下标为0、1的两个页面时，页面水平滑动过程中，可以逐帧设置第0页的translate属性在x轴上的值为-position * mainAxisLength来抵消第0页的位移，设置第1页的translate属性在x轴上的值为-(position - 1) * mainAxisLength来抵消第1页的位移。
+1. 循环场景下，设置prevMargin和nextMargin属性，使得Swiper前后端显示同一页面时，该接口不生效。
+2. 在页面跟手滑动和离手后执行切换动画的过程中，会对视窗内所有页面逐帧触发[SwiperContentTransitionProxy](#swipercontenttransitionproxy12)回调。例如，当视窗内有下标为0、1的两个页面时，会每帧触发两次index值分别为0和1的回调。
+3. 设置displayCount属性的swipeByGroup参数为true时，若同组中至少有一个页面在视窗内时，则会对同组中所有页面触发回调，若同组所有页面均不在视窗内时，则会一起下渲染树。
+4. 在页面跟手滑动和离手后执行切换动画的过程中，默认动画（页面滑动）依然会发生，若希望页面不滑动，可以设置主轴方向上负的位移（translate属性）来抵消页面滑动。例如：当displayCount属性值为2，视窗内有下标为0、1的两个页面时，页面水平滑动过程中，可以逐帧设置第0页的translate属性在x轴上的值为-position * mainAxisLength来抵消第0页的位移，设置第1页的translate属性在x轴上的值为-(position - 1) * mainAxisLength来抵消第1页的位移。
 
 卡片能力： 从API版本26.0.0开始，该接口支持在ArkTS卡片中使用。
 
@@ -1825,11 +1822,9 @@ onContentDidScroll(handler: ContentDidScrollCallback)
 
 使用说明：
 
-1、循环场景下，设置prevMargin和nextMargin属性，使得Swiper前后端显示同一页面时，该接口不生效。
-
-2、在页面滑动过程中，会对视窗内所有页面逐帧触发[ContentDidScrollCallback](#contentdidscrollcallback12)回调。例如，当视窗内有下标为0、1的两个页面时，会每帧触发两次index值分别为0和1的回调。
-
-3、设置displayCount属性的swipeByGroup参数为true时，若同组中至少有一个页面在视窗内时，则会对同组中所有页面触发回调。
+1. 循环场景下，设置prevMargin和nextMargin属性，使得Swiper前后端显示同一页面时，该接口不生效。
+2. 在页面滑动过程中，会对视窗内所有页面逐帧触发[ContentDidScrollCallback](#contentdidscrollcallback12)回调。例如，当视窗内有下标为0、1的两个页面时，会每帧触发两次index值分别为0和1的回调。
+3. 设置displayCount属性的swipeByGroup参数为true时，若同组中至少有一个页面在视窗内时，则会对同组中所有页面触发回调。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -2297,7 +2292,7 @@ struct SwiperExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358867.gif)
+ ![](./img/zh-cn_image_0000002727592594.gif)
 
 #### [h2]示例2（设置数字指示器）
 
@@ -2383,7 +2378,7 @@ struct SwiperExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799562.gif)
+ ![](./img/zh-cn_image_0000002727752452.gif)
 
 #### [h2]示例3（设置按组翻页）
 
@@ -2472,7 +2467,7 @@ struct SwiperExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518847.gif)
+ ![](./img/zh-cn_image_0000002757312167.gif)
 
 #### [h2]示例4（设置自定义页面切换动画）
 
@@ -2607,7 +2602,7 @@ struct SwiperCustomAnimationExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639648.gif)
+ ![](./img/zh-cn_image_0000002757232287.gif)
 
 #### [h2]示例5（设置圆点导航点超长显示）
 
@@ -2702,7 +2697,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358869.gif)
+ ![](./img/zh-cn_image_0000002727592596.gif)
 
 #### [h2]示例6（预加载子节点）
 
@@ -2881,7 +2876,7 @@ struct TabsSwiperExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799564.gif)
+ ![](./img/zh-cn_image_0000002727752454.gif)
 
 #### [h2]示例8（滑动行为拦截事件）
 
@@ -2969,7 +2964,7 @@ struct SwiperExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518849.gif)
+ ![](./img/zh-cn_image_0000002757312169.gif)
 
 #### [h2]示例9（演示导航点space与bottom）
 
@@ -3072,7 +3067,7 @@ struct SwiperExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639650.gif)
+ ![](./img/zh-cn_image_0000002757232289.gif)
 
 #### [h2]示例10（Swiper组件基于断点配置显示个数）
 
@@ -3135,11 +3130,11 @@ struct SwiperExample {
 ```
  Swiper宽度属于[sm](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-grid-layout#栅格容器断点)及更小的断点区间时显示1列。
 
-![](./img/zh-cn_image_0000002731358871.jpg)
+![](./img/zh-cn_image_0000002727592598.jpg)
 
 Swiper宽度属于[md](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-grid-layout#栅格容器断点)断点区间时显示2列。
 
-![](./img/zh-cn_image_0000002701799566.jpg)
+![](./img/zh-cn_image_0000002727752456.jpg)
 
 #### [h2]示例11（Swiper组件模拟拖拽）
 
@@ -3202,7 +3197,7 @@ struct SwiperFakeDragExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518851.gif)
+ ![](./img/zh-cn_image_0000002757312171.gif)
 
 #### [h2]示例12（配置Swiper组件导航点图标）
 
@@ -3248,4 +3243,4 @@ struct SwiperIndicatorIconExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639652.jpg)
+ ![](./img/zh-cn_image_0000002757232291.jpg)

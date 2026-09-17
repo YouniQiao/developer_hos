@@ -2,8 +2,8 @@
 title: "Interface (AtomicServiceBar)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-atomicservicebar"
 catalog: "harmonyos-references"
-content_hash: "65f92ea68548"
-synced_at: "2026-07-28T16:41:12.377505"
+content_hash: "7af1ed640fdc"
+synced_at: "2026-09-17T18:50:36.295172"
 ---
 
 # Interface (AtomicServiceBar)
@@ -49,7 +49,7 @@ export default class EntryAbility extends UIAbility {
     hilog.info(0x0000, 'testTag', 'Ability onWindowStageCreate');
     windowStage.loadContent('pages/Index', (err, data) => {
       if (err) {
-        hilog.info(0x0000, 'testTag', 'LoadContent failed.');
+        hilog.error(0x0000, 'testTag', 'LoadContent failed.');
         return;
       }
       let uiContext: UIContext = windowStage.getMainWindowSync().getUIContext();
@@ -58,7 +58,7 @@ export default class EntryAbility extends UIAbility {
         hilog.info(0x0000, 'testTag', 'Get AtomicServiceBar Successfully.');
         atomicServiceBar.setVisible(false);
       } else {
-        hilog.info(0x0000, 'testTag', 'Get AtomicServiceBar failed.');
+        hilog.error(0x0000, 'testTag', 'Get AtomicServiceBar failed.');
       }
     });
   }
@@ -96,7 +96,7 @@ export default class EntryAbility extends UIAbility {
     hilog.info(0x0000, 'testTag', 'Ability onWindowStageCreate');
     windowStage.loadContent('pages/Index', (err, data) => {
       if (err) {
-        hilog.info(0x0000, 'testTag', 'LoadContent failed.');
+        hilog.error(0x0000, 'testTag', 'LoadContent failed.');
         return;
       }
       let uiContext: UIContext = windowStage.getMainWindowSync().getUIContext();
@@ -105,7 +105,7 @@ export default class EntryAbility extends UIAbility {
         hilog.info(0x0000, 'testTag', 'Get AtomicServiceBar Successfully.');
         atomicServiceBar.setBackgroundColor(0x88888888);
       } else {
-        hilog.info(0x0000, 'testTag', 'Get AtomicServiceBar failed.');
+        hilog.error(0x0000, 'testTag', 'Get AtomicServiceBar failed.');
       }
     });
   }
@@ -143,7 +143,7 @@ export default class EntryAbility extends UIAbility {
     hilog.info(0x0000, 'testTag', 'Ability onWindowStageCreate');
     windowStage.loadContent('pages/Index', (err, data) => {
       if (err) {
-        hilog.info(0x0000, 'testTag', 'LoadContent failed.');
+        hilog.error(0x0000, 'testTag', 'LoadContent failed.');
         return;
       }
       let uiContext: UIContext = windowStage.getMainWindowSync().getUIContext();
@@ -152,7 +152,7 @@ export default class EntryAbility extends UIAbility {
         hilog.info(0x0000, 'testTag', 'Get AtomicServiceBar Successfully.');
         atomicServiceBar.setTitleContent('text2');
       } else {
-        hilog.info(0x0000, 'testTag', 'Get AtomicServiceBar failed.');
+        hilog.error(0x0000, 'testTag', 'Get AtomicServiceBar failed.');
       }
     });
   }
@@ -190,7 +190,7 @@ export default class EntryAbility extends UIAbility {
     hilog.info(0x0000, 'testTag', 'Ability onWindowStageCreate');
     windowStage.loadContent('pages/Index', (err, data) => {
       if (err) {
-        hilog.info(0x0000, 'testTag', 'LoadContent failed.');
+        hilog.error(0x0000, 'testTag', 'LoadContent failed.');
         return;
       }
       let uiContext: UIContext = windowStage.getMainWindowSync().getUIContext();
@@ -199,7 +199,7 @@ export default class EntryAbility extends UIAbility {
         hilog.info(0x0000, 'testTag', 'Get AtomicServiceBar Successfully.');
         atomicServiceBar.setTitleFontStyle(FontStyle.Normal);
       } else {
-        hilog.info(0x0000, 'testTag', 'Get AtomicServiceBar failed.');
+        hilog.error(0x0000, 'testTag', 'Get AtomicServiceBar failed.');
       }
     });
   }
@@ -237,7 +237,7 @@ export default class EntryAbility extends UIAbility {
     hilog.info(0x0000, 'testTag', 'Ability onWindowStageCreate');
     windowStage.loadContent('pages/Index', (err, data) => {
       if (err) {
-        hilog.info(0x0000, 'testTag', 'LoadContent failed.');
+        hilog.error(0x0000, 'testTag', 'LoadContent failed.');
         return;
       }
       let uiContext: UIContext = windowStage.getMainWindowSync().getUIContext();
@@ -246,7 +246,7 @@ export default class EntryAbility extends UIAbility {
         hilog.info(0x0000, 'testTag', 'Get AtomicServiceBar Successfully.');
         atomicServiceBar.setIconColor(0x12345678);
       } else {
-        hilog.info(0x0000, 'testTag', 'Get AtomicServiceBar failed.');
+        hilog.error(0x0000, 'testTag', 'Get AtomicServiceBar failed.');
       }
     });
   }
@@ -290,7 +290,7 @@ struct Index {
           hilog.info(0x0000, 'testTag', 'Get AtomicServiceBar Successfully. x:'
             + rect.x + ' y:' + rect.y + ' width:' + rect.width + ' height:' + rect.height);
         } else {
-          hilog.info(0x0000, 'testTag', 'Get AtomicServiceBar failed.');
+          hilog.error(0x0000, 'testTag', 'Get AtomicServiceBar failed.');
         }
       })
   }
@@ -332,7 +332,7 @@ struct Index {
         hilog.info(0x0000, 'testTag', 'trigger onBarRectChange callback success. X: %{public}d, Y: %{public}d, Width: %{public}d, height: %{public}d.', rect.x, rect.y, rect.width, rect.height);
       });
     } else {
-      hilog.info(0x0000, 'testTag', 'set onBarRectChange callback failed.');
+      hilog.error(0x0000, 'testTag', 'set onBarRectChange callback failed.');
     }
   }
   build() {

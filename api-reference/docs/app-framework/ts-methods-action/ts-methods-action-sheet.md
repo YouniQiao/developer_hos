@@ -2,8 +2,8 @@
 title: "列表选择弹窗 (ActionSheet)"
 upstream_id: "harmonyos-references/ts-methods-action-sheet"
 catalog: "harmonyos-references"
-content_hash: "5b58e21a13ec"
-synced_at: "2026-09-14T19:46:12.479367"
+content_hash: "35fbd81c6615"
+synced_at: "2026-09-17T18:51:33.878054"
 ---
 
 # 列表选择弹窗 (ActionSheet)
@@ -35,7 +35,7 @@ synced_at: "2026-09-14T19:46:12.479367"
 | showInSubWindow11+ | boolean | 否 | 是 | 当弹窗需要显示在主窗口之外时，是否在子窗口显示此弹窗。值为true表示在子窗口显示弹窗。 默认值：false，弹窗显示在应用内，而非独立子窗口。 **说明：** showInSubWindow为true的弹窗无法触发显示另一个showInSubWindow为true的弹窗。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | isModal11+ | boolean | 否 | 是 | 弹窗是否为模态窗口，模态窗口有蒙层，非模态窗口无蒙层。值为false时，弹窗为非模态窗口，无蒙层。 默认值：true，此时弹窗有蒙层。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | backgroundColor11+ | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 弹窗背板颜色。 默认值：Color.Transparent **说明：** backgroundColor会与模糊属性backgroundBlurStyle叠加产生效果，如果不符合预期，可将backgroundBlurStyle设置为BlurStyle.NONE，即可取消模糊。当设置了backgroundBlurStyle为非NONE值时，不要设置backgroundColor，否则颜色显示将不符合预期效果。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| backgroundBlurStyle11+ | [BlurStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#blurstyle9) | 否 | 是 | 弹窗背板模糊材质。 默认值：从API版本26.0.0开始，为BlurStyle.NONE；API版本26.0.0之前，为BlurStyle.COMPONENT_ULTRA_THICK。 **说明：** 设置为BlurStyle.NONE即可关闭背景虚化。当设置了backgroundBlurStyle为非NONE值时，则不要设置backgroundColor，否则颜色显示将不符合预期效果。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| backgroundBlurStyle11+ | [BlurStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#blurstyle9) | 否 | 是 | 弹窗背板模糊材质。 默认值：BlurStyle.COMPONENT_ULTRA_THICK。 **说明：** 设置为BlurStyle.NONE即可关闭背景虚化。当设置了backgroundBlurStyle为非NONE值时，则不要设置backgroundColor，否则颜色显示将不符合预期效果。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | backgroundBlurStyleOptions19+ | [BackgroundBlurStyleOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundblurstyleoptions10对象说明) | 否 | 是 | 背景模糊效果。默认值请参考BackgroundBlurStyleOptions类型说明。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | backgroundEffect19+ | [BackgroundEffectOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundeffectoptions11) | 否 | 是 | 背景效果参数。默认值请参考BackgroundEffectOptions类型说明。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | onWillDismiss12+ | Callback | 否 | 是 | 交互式关闭回调函数。 **说明：** 1.当用户执行点击遮障层关闭、侧滑（左滑/右滑）、三键back、键盘ESC关闭交互操作时，如果注册该回调函数，则不会立刻关闭弹窗。在回调函数中可以通过reason得到阻拦关闭弹窗的操作类型，从而根据原因选择是否能关闭弹窗。如需关闭弹窗，在回调中调用[DismissDialogAction](#dismissdialogaction12)的dismiss方法即可。当前组件返回的reason中，暂不支持CLOSE_BUTTON的枚举值。 2.在onWillDismiss回调中，不能再做onWillDismiss拦截。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
@@ -250,7 +250,7 @@ struct ActionSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753297115.gif)
+ ![](./img/zh-cn_image_0000002757312579.gif)
 
 #### [h2]示例2（可在主窗外弹出的弹窗）
 
@@ -321,7 +321,7 @@ struct ActionSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753457033.jpg)
+ ![](./img/zh-cn_image_0000002757232699.jpg)
 
 #### [h2]示例3（设置弹窗的动画）
 
@@ -382,7 +382,7 @@ struct ActionSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723857268.gif)
+ ![](./img/zh-cn_image_0000002727593008.gif)
 
 #### [h2]示例4（设置弹窗的样式）
 
@@ -463,7 +463,7 @@ struct ActionSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723697350.gif)
+ ![](./img/zh-cn_image_0000002727752866.gif)
 
 #### [h2]示例5（悬停态弹窗）
 
@@ -534,7 +534,7 @@ struct ActionSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753297117.gif)
+ ![](./img/zh-cn_image_0000002757312581.gif)
 
 #### [h2]示例6（弹窗生命周期）
 
@@ -611,7 +611,7 @@ struct Example1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753457035.gif)
+ ![](./img/zh-cn_image_0000002757232701.gif)
 
 #### [h2]示例7（自定义背景模糊效果参数）
 
@@ -670,7 +670,7 @@ struct ActionSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723857270.png)
+ ![](./img/zh-cn_image_0000002727593010.png)
 
 #### [h2]示例8（自定义背景效果参数）
 
@@ -730,7 +730,7 @@ struct ActionSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723697352.png)
+ ![](./img/zh-cn_image_0000002727752868.png)
 
 #### [h2]示例9（设置弹窗的沉浸光感效果）
 
@@ -792,8 +792,8 @@ struct ActionSheetExample {
 ```
  未设置系统材质时：
 
-![](./img/zh-cn_image_0000002753297119.gif)
+![](./img/zh-cn_image_0000002757312583.gif)
 
 设置系统材质后：
 
-![](./img/zh-cn_image_0000002753457037.gif)
+![](./img/zh-cn_image_0000002757232703.gif)

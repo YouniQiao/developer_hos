@@ -1,12 +1,12 @@
 ---
-title: "@ohos.enterprise.systemManager（系统管理）"
+title: "@ohos.enterprise.systemManager (系统管理)"
 upstream_id: "harmonyos-references/js-apis-enterprise-systemmanager"
 catalog: "harmonyos-references"
-content_hash: "230be724397c"
-synced_at: "2026-09-04T18:12:30.118697"
+content_hash: "006e0bb928ea"
+synced_at: "2026-09-17T18:53:31.639292"
 ---
 
-# @ohos.enterprise.systemManager（系统管理）
+# @ohos.enterprise.systemManager (系统管理)
 
 本模块提供系统管理能力，包括NTP时间服务器设置、OTA升级策略管理、系统更新管理、按键事件处理策略、日志收集、设备激活锁管理等功能。适用于企业设备管理场景，帮助企业管理员统一管控设备系统配置、升级策略和安全策略，提升企业设备管理效率和安全性。
 
@@ -28,13 +28,13 @@ setNTPServer(admin: Want, server: string): void
 
 设置NTP(Network Time Protocol)时间服务器。设置成功后，系统将使用指定的NTP服务器进行时间同步，校准系统时间。适用于企业设备需要统一时间同步的场景，确保企业设备时间与标准时间保持一致，避免因时间不准确导致的业务问题，如日志时间戳不一致、证书验证失败等。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_SYSTEM
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)。
 
 参数：
 
@@ -135,13 +135,13 @@ setOtaUpdatePolicy(admin: Want, policy: OtaUpdatePolicy): void
 
 设置升级策略。设置成功后，系统将按照指定的策略类型进行OTA升级处理，不同策略类型对应不同的升级行为。内网升级场景下，需要先调用[systemManager.notifyUpdatePackages](#systemmanagernotifyupdatepackages)接口通知系统更新包，再调用该接口设置升级策略。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[独占](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则2独占)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_SYSTEM
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [独占](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则2独占)。
 
 参数：
 
@@ -519,6 +519,8 @@ setOtaUpdateNonceEnable(admin: Want, isEnable: boolean): void
 
 ![](./img/note_3.0-zh-cn.png) 为保障系统安全，若非内网升级等特殊业务需求，不建议禁用Nonce校验。
 
+在多个MDM应用场景下，遵循[配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)规则。
+
 起始版本： 26.0.0
 
 需要权限： ohos.permission.ENTERPRISE_MANAGE_SYSTEM
@@ -528,8 +530,6 @@ setOtaUpdateNonceEnable(admin: Want, isEnable: boolean): void
 设备行为差异： 该接口在PC/2in1企业设备中可正常调用，在其他设备中返回801错误码。
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)。
 
 参数：
 
@@ -579,13 +579,13 @@ isOtaUpdateNonceEnable(admin: Want): boolean
 
 起始版本： 26.0.0
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_SYSTEM
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)。
 
 参数：
 
@@ -635,6 +635,8 @@ addDisallowedNearLinkProtocols(admin: Want, protocols: Array<NearLinkProtocol>, 
 
 为指定用户添加禁用的星闪协议名单。NearLink Kit（星闪服务）提供一种低功耗、高速率的短距离通信服务，支持星闪设备之间的连接、数据交互。具体请参考[NearLink Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-introduction)。本接口对键盘、手写笔等系统服务和系统应用不生效。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_SYSTEM
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
@@ -642,8 +644,6 @@ addDisallowedNearLinkProtocols(admin: Want, protocols: Array<NearLinkProtocol>, 
 设备行为差异： 该接口在PC/2in1设备中可正常调用，在其他设备中返回801错误码。
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -698,6 +698,8 @@ removeDisallowedNearLinkProtocols(admin: Want, protocols: Array<NearLinkProtocol
 
 为指定用户移除禁用的星闪协议名单。移除成功后，指定用户可以重新使用移除列表中的星闪协议进行通信，恢复相应的协议连接能力。使用场景：在企业设备管理场景下，管理员可通过此接口移除之前设置的星闪协议禁用策略，允许用户恢复使用星闪协议进行设备间通信。适用于需要恢复特定用户星闪通信能力的场景，帮助企业管理员灵活调整用户设备的星闪协议访问权限，满足不同业务场景的通信需求。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_SYSTEM
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
@@ -705,8 +707,6 @@ removeDisallowedNearLinkProtocols(admin: Want, protocols: Array<NearLinkProtocol
 设备行为差异： 该接口在PC/2in1设备中可正常调用，在其他设备中返回801错误码。
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [合并](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则4合并)。
 
 参数：
 
@@ -821,6 +821,8 @@ setInstallLocalEnterpriseAppEnabled(admin: Want, isEnable: boolean): void
 
 设置是否支持本地安装企业应用。设置为支持安装后，具备本地安装能力的PC/2in1企业设备可本地双击应用安装包，安装签名证书分发类型为enterprise_normal的企业应用。调用此接口前，此设备必须通过[HEM商用部署](https://developer.huawei.com/business/cn/doc/HEM/hem_user-guide_add-reseller_management-resellerr-0000002469112100)。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[从严管控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则1从严管控)规则。任意一个MDM应用设置支持本地安装企业应用，则综合策略即为支持本地安装企业应用。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_SYSTEM
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
@@ -828,8 +830,6 @@ setInstallLocalEnterpriseAppEnabled(admin: Want, isEnable: boolean): void
 设备行为差异： 该接口在PC/2in1企业设备中可正常调用，在其他设备中返回801错误码。
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [从严管控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则1从严管控)。任意一个MDM应用设置支持本地安装企业应用，则综合策略即为支持本地安装企业应用。
 
 参数：
 
@@ -932,6 +932,8 @@ setAutoUnlockAfterReboot(admin: Want, isAllowed: boolean): void
 
 设置设备重启自动解锁，仅针对无锁屏密码设备生效。适用于企业无人值守设备或需要快速重启恢复服务的场景，避免因手动解锁导致的设备停机时间，提升设备运维效率和业务连续性。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[从严管控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则1从严管控)规则，任意一个MDM应用设置设备重启自动解锁，则综合策略即为设备重启自动解锁。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_SYSTEM
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
@@ -939,8 +941,6 @@ setAutoUnlockAfterReboot(admin: Want, isAllowed: boolean): void
 设备行为差异： 该接口在PC/2in1设备中可正常调用，在其他设备中返回801错误码。
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [从严管控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则1从严管控)，任意一个MDM应用设置设备重启自动解锁，则综合策略即为设备重启自动解锁。
 
 参数：
 
@@ -1333,10 +1333,11 @@ startCollectLog(admin: Want): Promise<void>
 开始收集设备上已生成并存储至硬盘的[FaultType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-faultlogger#faulttype)类型的faultlog日志，不支持收集未存储至硬盘的faultlog日志、应用业务日志和系统运行日志。使用Promise异步回调。
 
 - 调用接口后，系统会启动一个日志收集任务，任务启动后接口立即返回。任务可能会因为系统性能等原因导致收集失败。
-- 允许多个MDM应用调用，不同MDM应用在不同用户下收集的日志分开保存，互不影响。同一时间只允许一个MDM应用启动日志收集任务，在任务执行完成前调用本接口会返回错误码9201009，任务执行完成后，允许其他MDM应用调用。
 - 任务执行完成后，通过[EnterpriseAdminExtensionAbility.onLogCollected](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterpriseadminextensionability#onlogcollected23)回调函数通知给MDM应用，系统将已收集的日志文件挂载到MDM应用沙箱路径，MDM应用可以在回调函数中读取已收集的日志。
 - 如果日志收集任务执行超过5分钟，[EnterpriseAdminExtensionAbility.onLogCollected](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterpriseadminextensionability#onlogcollected23)回调函数会返回日志收集任务失败。
 - 应用取走日志后，建议调用[systemManager.finishLogCollected](#systemmanagerfinishlogcollected23)删除已收集到的日志。
+
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，允许多个MDM应用调用，不同MDM应用在不同用户下收集的日志分开保存，互不影响。同一时间只允许一个MDM应用启动日志收集任务，在任务执行完成前调用本接口会返回错误码9201009，任务执行完成后，允许其他MDM应用调用。
 
 需要权限： ohos.permission.ENTERPRISE_READ_LOG
 
@@ -1345,8 +1346,6 @@ startCollectLog(admin: Want): Promise<void>
 设备行为差异： 该接口在PC/2in1设备中可正常调用，在其他设备中返回801错误码。
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： 允许多个MDM应用调用，不同MDM应用在不同用户下收集的日志分开保存，互不影响。同一时间只允许一个MDM应用启动日志收集任务，在任务执行完成前调用本接口会返回错误码9201009，任务执行完成后，允许其他MDM应用调用。
 
 参数：
 
@@ -1453,6 +1452,8 @@ setActivationLockDisabled(admin: Want, isDisabled: boolean, credential?: string)
 
 禁用/启用设备激活锁。使用Promise异步回调。设备激活锁被禁用后，将无法使用查找设备功能。该功能只适用于特定设备（只支持PC/2in1企业设备）。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)规则。
+
 需要权限： ohos.permission.ENTERPRISE_MANAGE_SYSTEM
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
@@ -1460,8 +1461,6 @@ setActivationLockDisabled(admin: Want, isDisabled: boolean, credential?: string)
 设备行为差异： 该接口在PC/2in1设备中可正常调用，在其他设备中返回801错误码。
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)。
 
 参数：
 
@@ -1584,6 +1583,7 @@ setInstallLocalEnterpriseAppEnabledForAccount(admin: Want, isEnable: boolean, ac
 
 1. 已通过[setInstallLocalEnterpriseAppEnabled](#systemmanagersetinstalllocalenterpriseappenabled20)开启离线安装器；
 2. 已通过本接口设置当前用户支持本地安装企业应用。
+3. 在多个MDM应用场景下，遵循[从严管控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则1从严管控)规则。任意一个MDM应用设置支持本地安装企业应用，则综合策略即为支持本地安装企业应用。
 
 本地安装能力依赖华为应用市场。仅7.2.1.300及以上版本的应用市场支持安装MDM应用（分发类型为enterprise_mdm的应用）；仅7.1.6.300及以上版本的应用市场支持普通企业应用（分发类型为enterprise_normal的应用）。
 
@@ -1594,8 +1594,6 @@ setInstallLocalEnterpriseAppEnabledForAccount(admin: Want, isEnable: boolean, ac
 设备行为差异： 该接口在PC/2in1企业设备中可正常调用，在其他设备中返回801错误码。
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [从严管控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则1从严管控)。任意一个MDM应用设置支持本地安装企业应用，则综合策略即为支持本地安装企业应用。
 
 参数：
 

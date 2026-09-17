@@ -2,8 +2,8 @@
 title: "Tabs"
 upstream_id: "harmonyos-references/ts-container-tabs"
 catalog: "harmonyos-references"
-content_hash: "1e189307efc9"
-synced_at: "2026-09-01T18:11:46.370303"
+content_hash: "ea6f7570df72"
+synced_at: "2026-09-17T18:50:50.413837"
 ---
 
 # Tabs
@@ -651,7 +651,7 @@ TabBar悬浮样式。
 | maskColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 蒙层的颜色。蒙层显示区域在纵向会基于蒙层的颜色进行透明度渐变显示，从下到上不透明度变小。浅色模式下默认值为#CCF1F3F5，显示为白色。深色模式下默认值为#99000000，显示为黑色。 |
 | maskHeight | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 蒙层的高度。蒙层显示上边缘默认比TabBar上边缘高16vp。 |
 | adaptToHandedness | boolean | 否 | 是 | 是否跟随操作手左右布局显示。 true表示跟随操作手左右布局显示；false表示不跟随操作手左右布局显示。 默认值：false |
-| systemMaterial | [UIMaterial](#uimaterial).[ImmersiveMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#immersivematerial) | 否 | 是 | TabBar的背板沉浸式材质样式。仅当Tabs为横向布局且barPosition为BarPosition.End时，底部TabBar的材质效果生效。 |
+| systemMaterial | [UIMaterial](#uimaterial).[ImmersiveMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#immersivematerial) | 否 | 是 | TabBar的背板沉浸式材质样式。仅当Tabs为横向布局且barPosition为BarPosition.End时，底部TabBar的沉浸光感效果生效。 |
 
 #### BarMode枚举说明
 
@@ -756,13 +756,10 @@ Tab页签切换后触发的事件。
 
 满足以下任一条件，即可触发该事件：
 
-1、滑动页面进行页面切换时，组件滑动动画结束后触发。
-
-2、通过[控制器](#tabscontroller)调用[changeIndex](#changeindex)接口，Tab页签切换后触发。
-
-3、动态修改[状态变量](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state)构造的index属性值，Tab页签切换后触发。
-
-4、点击TabBar页签，Tab页签切换后触发。
+1. 滑动页面进行页面切换时，组件滑动动画结束后触发。
+2. 通过[控制器](#tabscontroller)调用[changeIndex](#changeindex)接口，Tab页签切换后触发。
+3. 动态修改[状态变量](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state)构造的index属性值，Tab页签切换后触发。
+4. 点击TabBar页签，Tab页签切换后触发。
 
 ![](./img/note_3.0-zh-cn.png) 使用自定义页签时，在onChange事件中联动可能会导致滑动页面切换后才执行页签联动，引起自定义页签切换效果延迟。建议在[onAnimationStart](#onanimationstart11)中监听并刷新当前索引，以确保动效能够及时触发。具体实现可参考[示例3](#示例3自定义页签切换联动)。
 
@@ -887,15 +884,11 @@ onContentWillChange(handler: OnTabsContentWillChangeCallback)
 
 满足以下任一条件，即可触发该事件：
 
-1、滑动TabContent切换新页面时触发。
-
-2、通过TabsController.[changeIndex](#changeindex)接口切换新页面时触发。
-
-3、通过动态修改index属性值切换新页面时触发。
-
-4、通过点击TabBar页签切换新页面时触发。
-
-5、TabBar页签获焦后，通过键盘左右方向键等切换新页面时触发。
+1. 滑动TabContent切换新页面时触发。
+2. 通过TabsController.[changeIndex](#changeindex)接口切换新页面时触发。
+3. 通过动态修改index属性值切换新页面时触发。
+4. 通过点击TabBar页签切换新页面时触发。
+5. TabBar页签获焦后，通过键盘左右方向键等切换新页面时触发。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 20开始，该接口支持在[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)中调用。
 
@@ -1372,7 +1365,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706675894.gif)
+ ![](./img/zh-cn_image_0000002727752494.gif)
 
 #### [h2]示例2（设置Scrollable模式下的TabBar的布局样式）
 
@@ -1489,7 +1482,7 @@ struct TabsExample6 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736434981.gif)
+ ![](./img/zh-cn_image_0000002757312209.gif)
 
 #### [h2]示例3（自定义页签切换联动）
 
@@ -1565,7 +1558,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706835834.gif)
+ ![](./img/zh-cn_image_0000002757232329.gif)
 
 #### [h2]示例4（分割线基本属性）
 
@@ -1674,7 +1667,7 @@ struct TabsDivider1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736314939.gif)
+ ![](./img/zh-cn_image_0000002727592638.gif)
 
 #### [h2]示例5（设置TabBar渐隐）
 
@@ -1786,7 +1779,7 @@ struct TabsOpaque {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706675896.gif)
+ ![](./img/zh-cn_image_0000002727752496.gif)
 
 #### [h2]示例6（设置TabBar叠加在TabContent内容上）
 
@@ -1837,7 +1830,7 @@ struct barHeightTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736434983.gif)
+ ![](./img/zh-cn_image_0000002757312211.gif)
 
 #### [h2]示例7（设置TabBar栅格化可见区域）
 
@@ -1940,7 +1933,7 @@ struct TabsExample5 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706835836.gif)
+ ![](./img/zh-cn_image_0000002757232331.gif)
 
 #### [h2]示例8（自定义Tabs页面切换动画）
 
@@ -2029,7 +2022,7 @@ struct TabsCustomAnimationExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736314941.gif)
+ ![](./img/zh-cn_image_0000002727592640.gif)
 
 #### [h2]示例9（页面切换拦截）
 
@@ -2120,7 +2113,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706675898.gif)
+ ![](./img/zh-cn_image_0000002727752498.gif)
 
 #### [h2]示例10（自定义TabBar切换动画）
 
@@ -2290,7 +2283,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736434985.gif)
+ ![](./img/zh-cn_image_0000002757312213.gif)
 
 #### [h2]示例11（预加载子节点）
 
@@ -2418,7 +2411,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706835838.gif)
+ ![](./img/zh-cn_image_0000002757232333.gif)
 
 #### [h2]示例13（页面懒加载和释放）
 
@@ -2525,7 +2518,7 @@ struct TabsSwiperExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736314943.gif)
+ ![](./img/zh-cn_image_0000002727592642.gif)
 
 #### [h2]示例14（设置翻页动效）
 
@@ -2598,7 +2591,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706675900.gif)
+ ![](./img/zh-cn_image_0000002727752500.gif)
 
 #### [h2]示例15（页签超出TabBar区域显示）
 
@@ -2689,7 +2682,7 @@ struct TabsBarModifierExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736434987.gif)
+ ![](./img/zh-cn_image_0000002757312215.gif)
 
 #### [h2]示例16（页签对齐布局）
 
@@ -2793,7 +2786,7 @@ struct TabsBarModifierExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706835840.gif)
+ ![](./img/zh-cn_image_0000002757232335.gif)
 
 #### [h2]示例17（Tabs与TabBar同步切换）
 
@@ -2870,7 +2863,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736314945.gif)
+ ![](./img/zh-cn_image_0000002727592644.gif)
 
 #### [h2]示例18（释放Tabs子组件）
 
@@ -2997,7 +2990,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706675902.png)
+ ![](./img/zh-cn_image_0000002727752502.png)
 
 #### [h2]示例20（设置边缘滑动效果）
 
@@ -3053,7 +3046,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736434989.gif)
+ ![](./img/zh-cn_image_0000002757312217.gif)
 
 #### [h2]示例21（Tabs设置翻页动画曲线）
 
@@ -3144,7 +3137,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706835842.gif)
+ ![](./img/zh-cn_image_0000002757232337.gif)
 
 #### [h2]示例22（监听Tabs页面滑动事件）
 
@@ -3244,7 +3237,7 @@ struct TabsDidScrollExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736314947.gif)
+ ![](./img/zh-cn_image_0000002727592646.gif)
 
 #### [h2]示例23（Tabs嵌套滚动）
 
@@ -3310,11 +3303,13 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002706675904.gif)
+ ![](./img/zh-cn_image_0000002727752504.gif)
 
 #### [h2]示例24（TabBar悬浮样式）
 
 本示例展示了如何通过[barFloatingStyle](#barfloatingstyle)接口设置TabBar的悬浮样式和背板沉浸式材质。
+
+该示例配图为高算力设备强档效果，组件沉浸光感效果会根据设备算力与用户在系统中设置的沉浸光感效果自适应调整，开发者无需额外适配。
 
 从API版本26.0.0开始，新增barFloatingStyle接口。
 
@@ -3361,4 +3356,4 @@ struct TabsFloatingStyleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002736434991.gif)
+ ![](./img/zh-cn_image_0000002757312219.gif)

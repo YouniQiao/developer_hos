@@ -2,8 +2,8 @@
 title: "@ohos.mediaquery (媒体查询)"
 upstream_id: "harmonyos-references/js-apis-mediaquery"
 catalog: "harmonyos-references"
-content_hash: "867c447af721"
-synced_at: "2026-07-09T00:57:30.977967"
+content_hash: "c30e704b6122"
+synced_at: "2026-09-17T18:50:36.801520"
 ---
 
 # @ohos.mediaquery (媒体查询)
@@ -120,7 +120,7 @@ off(type: 'change', callback?: Callback<MediaQueryResult>): void
 ```
 import { mediaquery } from '@kit.ArkUI';
 
-let listener: mediaquery.MediaQueryListener = mediaquery.matchMediaSync('(orientation: landscape)'); // 监听横屏事件
+let listener: mediaquery.MediaQueryListener = this.getUIContext().getMediaQuery().matchMediaSync('(orientation: landscape)'); // 监听横屏事件
 function onPortrait(mediaQueryResult:mediaquery.MediaQueryResult) {
   if (mediaQueryResult.matches) {
     // do something here
@@ -192,4 +192,4 @@ struct MediaQueryExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732199.png)
+ ![](./img/zh-cn_image_0000002757311927.png)

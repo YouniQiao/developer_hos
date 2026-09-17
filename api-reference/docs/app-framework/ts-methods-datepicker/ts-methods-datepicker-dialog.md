@@ -2,8 +2,8 @@
 title: "日期滑动选择器弹窗 (DatePickerDialog)"
 upstream_id: "harmonyos-references/ts-methods-datepicker-dialog"
 catalog: "harmonyos-references"
-content_hash: "b9f9b9783f40"
-synced_at: "2026-08-29T18:14:48.019209"
+content_hash: "4494f2f44866"
+synced_at: "2026-09-17T18:51:35.001308"
 ---
 
 # 日期滑动选择器弹窗 (DatePickerDialog)
@@ -161,7 +161,7 @@ struct DatePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519273.gif)
+ ![](./img/zh-cn_image_0000002757232715.gif)
 
 #### [h2]示例2（自定义样式）
 
@@ -239,7 +239,7 @@ struct DatePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701640074.png)
+ ![](./img/zh-cn_image_0000002727593024.png)
 
 ![](./img/note_3.0-zh-cn.png) 如需完全自定义实现日期滑动选择器弹窗，可以通过先使用[自定义弹窗 (CustomDialog)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-methods-custom-dialog-box)，然后使用[DatePicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-datepicker)组件来实现。
 
@@ -298,7 +298,7 @@ struct DatePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359293.gif)
+ ![](./img/zh-cn_image_0000002727752882.gif)
 
 #### [h2]示例4（设置弹窗位置）
 
@@ -333,7 +333,7 @@ struct DatePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799988.png)
+ ![](./img/zh-cn_image_0000002757312597.png)
 
 #### [h2]示例5（设置遮蔽区）
 
@@ -372,7 +372,7 @@ struct DatePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519275.png)
+ ![](./img/zh-cn_image_0000002757232717.png)
 
 #### [h2]示例6（设置弹窗背板）
 
@@ -408,7 +408,7 @@ struct DatePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701640076.png)
+ ![](./img/zh-cn_image_0000002727593026.png)
 
 #### [h2]示例7（设置公历农历）
 
@@ -458,7 +458,7 @@ struct DatePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359295.gif)
+ ![](./img/zh-cn_image_0000002727752884.gif)
 
 #### [h2]示例8（设置显示月、日列）
 
@@ -492,7 +492,7 @@ struct DatePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799990.gif)
+ ![](./img/zh-cn_image_0000002757312599.gif)
 
 #### [h2]示例9（设置循环滚动）
 
@@ -535,7 +535,7 @@ struct DatePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519277.gif)
+ ![](./img/zh-cn_image_0000002757232719.gif)
 
 #### [h2]示例10（自定义背景模糊效果参数）
 
@@ -574,7 +574,7 @@ struct DatePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701640078.png)
+ ![](./img/zh-cn_image_0000002727593028.png)
 
 #### [h2]示例11（自定义背景效果参数）
 
@@ -614,11 +614,13 @@ struct DatePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359297.png)
+ ![](./img/zh-cn_image_0000002727752886.png)
 
-#### [h2]示例12（设置系统材质）
+#### [h2]示例12（设置沉浸光感）
 
-该示例通过配置[systemMaterial](#datepickerdialogoptions对象说明)，实现系统材质效果。
+该示例通过配置[systemMaterial](#datepickerdialogoptions对象说明)，实现沉浸光感效果。
+
+该示例配图为高算力设备强档效果，组件沉浸光感效果会根据设备算力与用户在系统中设置的沉浸光感效果自适应调整，开发者无需额外适配。
 
 从API版本26.0.0开始，在DatePickerDialogOptions中新增了systemMaterial属性。
 
@@ -642,8 +644,11 @@ struct DatePickerDialogExample {
             });
           })
       }.width('100%')
+      .height('100%')
+      .backgroundImage($r('app.media.bgImg'))  // $r('app.media.bgImg')需要替换为开发者所需的资源文件
+      .backgroundImageSize(ImageSize.FILL)
     }
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799992.png)
+ ![](./img/zh-cn_image_0000002757312601.gif)

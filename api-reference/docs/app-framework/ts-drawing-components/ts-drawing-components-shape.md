@@ -2,8 +2,8 @@
 title: "Shape"
 upstream_id: "harmonyos-references/ts-drawing-components-shape"
 catalog: "harmonyos-references"
-content_hash: "465d49ad1d1a"
-synced_at: "2026-07-28T16:46:56.109231"
+content_hash: "347f2a099ac5"
+synced_at: "2026-09-17T18:51:29.195653"
 ---
 
 # Shape
@@ -14,9 +14,8 @@ Shape组件通过定义视口、填充、边框等属性，支持矢量图形的
 
 Shape组件的两种使用方式：
 
-1、绘制组件使用Shape作为父组件，实现类似SVG的矢量图形的组合绘制。
-
-2、绘制组件单独使用，用于在页面上绘制指定的图形。
+1. 绘制组件使用Shape作为父组件，实现类似SVG的矢量图形的组合绘制。
+2. 绘制组件单独使用，用于在页面上绘制指定的图形。
 
 ![](./img/note_3.0-zh-cn.png) 该组件从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -299,7 +298,7 @@ struct ShapeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088329.png)
+ ![](./img/zh-cn_image_0000002727592982.png)
 
 #### [h2]示例2（使用不同参数类型绘制图形）
 
@@ -341,7 +340,7 @@ struct ShapeTypeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928497.png)
+ ![](./img/zh-cn_image_0000002727752840.png)
 
 #### [h2]示例3（使用attributeModifier动态设置Shape组件的属性）
 
@@ -384,7 +383,7 @@ struct ShapeModifierDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008820.png)
+ ![](./img/zh-cn_image_0000002757312555.png)
 
 #### [h2]示例4（使用mesh实现图像局部扭曲）
 
@@ -427,4 +426,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848900.png)
+ ![](./img/zh-cn_image_0000002757232675.png)

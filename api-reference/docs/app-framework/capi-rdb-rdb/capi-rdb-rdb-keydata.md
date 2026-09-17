@@ -2,14 +2,14 @@
 title: "Rdb_KeyData"
 upstream_id: "harmonyos-references/capi-rdb-rdb-keydata"
 catalog: "harmonyos-references"
-content_hash: "2ea24e22f3de"
-synced_at: "2026-08-18T15:31:52.309441"
+content_hash: "c6c24878fcfa"
+synced_at: "2026-09-17T18:50:29.588844"
 ---
 
 # Rdb_KeyData
 
 ```
-union Rdb_KeyData { ... }
+union Rdb_KeyData { ... } *data
 ```
 
 #### 概述

@@ -2,8 +2,8 @@
 title: "ArkWeb_ControllerAPI"
 upstream_id: "harmonyos-references/capi-web-arkweb-controllerapi"
 catalog: "harmonyos-references"
-content_hash: "5b6a411b840b"
-synced_at: "2026-08-29T18:16:03.724072"
+content_hash: "2d5db339db75"
+synced_at: "2026-09-17T18:52:40.656350"
 ---
 
 # ArkWeb_ControllerAPI
@@ -211,7 +211,7 @@ const char* (*getLastJavascriptProxyCallingFrameUrl)()
 ```
  描述：
 
-获取调用JavaScriptProxy最后一帧的url。该方法通过帧栈追踪机制，记录最后一次JavaScript调用的frame上下文。在JavaScriptProxy调用的线程上调用。通过registerJavaScriptProxy或者JavaScriptProxy注入JavaScript对象到window对象中。该接口可以获取最后一次调用注入对象frame的url，如果从未调用过注入对象，返回值未定义。在被调用函数内部获取url才能获取到正确值，可以在函数内部获取url后保存下来。需在UI线程中调用OH_ArkWeb_GetNativeAPI方法获取该接口。
+获取调用JavaScriptProxy最后一帧的url。该方法通过帧栈追踪机制，记录最后一次JavaScript调用的frame上下文。在JavaScriptProxy调用的线程上调用。通过[registerJavaScriptProxy](#registerjavascriptproxy)或者[javaScriptProxy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-attributes#javascriptproxy)注入JavaScript对象到window对象中。该接口可以获取最后一次调用注入对象frame的url，如果从未调用过注入对象，返回值未定义。在被调用函数内部获取url才能获取到正确值，可以在函数内部获取url后保存下来。需在UI线程中调用OH_ArkWeb_GetNativeAPI方法获取该接口。
 
 起始版本： 14
 

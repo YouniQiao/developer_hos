@@ -2,8 +2,8 @@
 title: "Matrix2D"
 upstream_id: "harmonyos-references/ts-components-canvas-matrix2d"
 catalog: "harmonyos-references"
-content_hash: "c45abfad6d0e"
-synced_at: "2026-07-28T16:46:35.609336"
+content_hash: "1b991cd6934c"
+synced_at: "2026-09-17T18:51:19.350145"
 ---
 
 # Matrix2D
@@ -105,7 +105,7 @@ struct Parameter {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088269.png)
+ ![](./img/zh-cn_image_0000002727592924.png)
 
 #### identity
 
@@ -154,7 +154,7 @@ struct Identity {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928439.png)
+ ![](./img/zh-cn_image_0000002727752782.png)
 
 #### invert
 
@@ -209,7 +209,7 @@ struct Invert {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008762.png)
+ ![](./img/zh-cn_image_0000002757312497.png)
 
 #### multiply(deprecated)
 
@@ -291,7 +291,7 @@ struct Rotate {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848842.png)
+ ![](./img/zh-cn_image_0000002757232617.png)
 
 #### rotate10+
 
@@ -299,9 +299,13 @@ rotate(degree: number, rx?: number, ry?: number): Matrix2D
 
 以旋转点为中心，对当前矩阵进行左乘旋转运算。常用于图形旋转动画或图片旋转处理等场景。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 卡片能力： 从API version 10开始，该接口支持在ArkTS卡片中使用。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -354,7 +358,7 @@ struct Rotate {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088271.png)
+ ![](./img/zh-cn_image_0000002727592926.png)
 
 #### translate
 
@@ -416,7 +420,7 @@ struct Translate {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928441.png)
+ ![](./img/zh-cn_image_0000002727752784.png)
 
 #### scale
 
@@ -478,4 +482,4 @@ struct Scale {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008764.png)
+ ![](./img/zh-cn_image_0000002757312499.png)

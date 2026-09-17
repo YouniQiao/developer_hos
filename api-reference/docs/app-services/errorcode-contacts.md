@@ -2,8 +2,8 @@
 title: "Contacts错误码"
 upstream_id: "harmonyos-references/errorcode-contacts"
 catalog: "harmonyos-references"
-content_hash: "d8b9a784ea56"
-synced_at: "2026-07-28T16:52:35.894400"
+content_hash: "b3e0ab4f4f94"
+synced_at: "2026-09-17T18:54:35.251386"
 ---
 
 # Contacts错误码
@@ -138,25 +138,7 @@ User cancel.
 
 当前用户主动取消操作，请稍后重试。
 
-#### 401 打开联系人头像文件失败
-
-错误信息
-
-Failed to open contact portrait file.
-
-错误描述
-
-无法打开联系人头像文件。
-
-可能原因
-
-头像文件路径错误、文件不存在、磁盘损坏。
-
-处理步骤
-
-检查文件是否存在。
-
-#### 401 系统内部错误
+#### Contacts调用失败返回401
 
 #### [h2]内部关联联系人ID无效
 
@@ -247,3 +229,21 @@ Internal error. Invalid contact rawId.
 处理步骤
 
 系统异常，请稍后重试。
+
+#### [h2]打开联系人头像文件失败
+
+错误信息
+
+Failed to open contact portrait file.
+
+错误描述
+
+无法打开联系人头像文件。
+
+可能原因
+
+头像文件路径错误、文件不存在、磁盘损坏。
+
+处理步骤
+
+检查文件是否存在。

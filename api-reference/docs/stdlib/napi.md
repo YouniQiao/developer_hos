@@ -2,8 +2,8 @@
 title: "Node-API"
 upstream_id: "harmonyos-references/napi"
 catalog: "harmonyos-references"
-content_hash: "cafebba823e6"
-synced_at: "2026-08-07T15:59:56.083870"
+content_hash: "d3ddd12fd971"
+synced_at: "2026-09-17T18:55:02.039245"
 ---
 
 # Node-API
@@ -35,7 +35,7 @@ HarmonyOS的Node-API组件对Node-API的接口进行了重新实现，底层对�
 
 从Node-API标准库导出的接口，其使用方法及行为基于[Node.js](https://nodejs.org/docs/latest-v18.x/api/n-api.html)。部分接口存在差异，请参考[已导出符号列表与标准库对应符号的差异](#已导出符号列表与标准库对应符号的差异)。
 
-![](./img/caution_3.0-zh-cn.png) 使用 NAPI 接口时，应确保环境、对象和值有效且符合规格；无效或跨生命周期使用可能导致失败、崩溃或未定义行为。开发过程常见问题可参考[Node-API常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-faqs#node-api常见问题)。
+![](./img/caution_3.0-zh-cn.png) 使用 NAPI 接口时，应确保环境、对象和值有效且符合规格；无效或跨生命周期使用可能导致失败、崩溃或未定义行为。开发过程常见问题可参考[Node-API常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-faqs)。
 
 | 符号类型 | 符号名 | 说明 | 起始支持API版本 |
 | --- | --- | --- | --- |
@@ -138,7 +138,7 @@ HarmonyOS的Node-API组件对Node-API的接口进行了重新实现，底层对�
 | FUNC | napi_queue_async_work | 将异步工作对象加到队列，由底层去调度执行。 | 10 |
 | FUNC | napi_cancel_async_work | 取消入队的异步任务。 | 10 |
 | FUNC | napi_async_init | 创建一个异步资源上下文环境（不支持与async_hook相关能力）。 | 11 |
-| FUNC | napi_make_callback | 在异步资源上下文环境中回调JS函数(不支持与async_hook相关能力)。 | 11 |
+| FUNC | napi_make_callback | 在异步资源上下文环境中回调JS函数（不支持与async_hook相关能力）。 | 11 |
 | FUNC | napi_async_destroy | 销毁先前创建的异步资源上下文环境（不支持与async_hook相关能力）。 | 11 |
 | FUNC | napi_open_callback_scope | 创建一个回调作用域（不支持与async_hook相关能力）。 | 11 |
 | FUNC | napi_close_callback_scope | 关闭先前创建的回调作用域（不支持与async_hook相关能力）。 | 11 |
@@ -339,6 +339,10 @@ HarmonyOS的Node-API组件对Node-API的接口进行了重新实现，底层对�
 
 - 当参数object不是Object或Function对象时，该导出接口返回napi_object_expected。
 
+说明：
+
+- 该接口与napi_has_property行为一致，用于检查对象中是否存在指定的属性，避免访问不存在属性导致的异常。
+
 #### [h2]napi_set_named_property
 
 返回：
@@ -408,11 +412,19 @@ HarmonyOS的Node-API组件对Node-API的接口进行了重新实现，底层对�
 - 该导出接口不会去校验参数recv是否为nullptr。
 - 当参数func不是Function对象时，该导出接口返回napi_function_expected。
 
+说明：
+
+- 该函数执行后会触发微任务执行。
+
 #### [h2]napi_new_instance
 
 返回：
 
 - 当参数constructor不是Function对象时，该导出接口返回napi_function_expected。
+
+说明：
+
+- 该函数执行后会触发微任务执行。
 
 #### [h2]napi_define_class
 
@@ -502,12 +514,14 @@ HarmonyOS的Node-API组件对Node-API的接口进行了重新实现，底层对�
 说明：
 
 - promise的then方法的resolve或者reject回调中出现异常时，如果promise没有catch块，代码会继续执行不会崩溃；如果promise有catch块，则异常会被该catch块捕获。
+- 该函数执行后会触发微任务执行。
 
 #### [h2]napi_reject_deferred
 
 说明：
 
 - promise的then方法的resolve或者reject回调中出现异常时，如果promise没有catch块，代码会继续执行不会崩溃；如果promise有catch块，则异常会被该catch块捕获。
+- 该函数执行后会触发微任务执行。
 
 #### [h2]napi_create_threadsafe_function
 

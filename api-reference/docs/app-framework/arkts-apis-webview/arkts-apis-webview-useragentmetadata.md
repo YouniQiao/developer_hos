@@ -2,8 +2,8 @@
 title: "Class (UserAgentMetadata)"
 upstream_id: "harmonyos-references/arkts-apis-webview-useragentmetadata"
 catalog: "harmonyos-references"
-content_hash: "44a79c66319d"
-synced_at: "2026-07-09T00:58:52.395128"
+content_hash: "3a8e882dbb2a"
+synced_at: "2026-09-17T18:52:37.169436"
 ---
 
 # Class (UserAgentMetadata)
@@ -160,7 +160,7 @@ setFormFactors(formFactors: Array<UserAgentFormFactor>): void
 
 getFormFactors(): Array<UserAgentFormFactor>
 
-获取设备形态信息，如手机、平板等。不调用对应的[setFormFactors](#setformfactors)进行设置时，形态信息默认值：手机："Mobile"，手表："Watch"，车机："Automotive"，PC："Desktop"，平板："Tablet"。
+获取设备形态信息，如手机、平板等。不调用对应的[setFormFactors](#setformfactors)进行设置时，形态信息默认值：手机："Mobile"、手表："Watch"、车机："Automotive"、PC："Desktop"、平板："Tablet"。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -280,7 +280,7 @@ setModel(model: string): void
 
 getModel(): string
 
-获取设备型号。不调用对应的[setModel](#setmodel)设置时，型号默认值：手机根据const.product.model取设备型号，手表、大屏、车机、PC、平板：""。
+获取设备型号。不调用对应的[setModel](#setmodel)设置时，型号默认值：手机根据const.product.model取设备型号；手表、大屏、车机、PC、平板：""。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -320,7 +320,7 @@ setPlatform(platform: string): void
 
 getPlatform(): string
 
-获取操作系统名称。不调用对应的[setPlatform](#setplatform)设置时，名称默认值："HarmonyOS" 。
+获取操作系统名称。不调用对应的[setPlatform](#setplatform)设置时，名称默认值："OpenHarmony" 。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -360,7 +360,7 @@ setPlatformVersion(platformVersion: string): void
 
 getPlatformVersion(): string
 
-获取操作系统版本号。不调用对应的[setPlatformVersion](#setplatformversion)设置时，版本号默认值：按HarmonyOS平台版本号规则，同const.product.os.dist.version。
+获取操作系统版本号。不调用对应的[setPlatformVersion](#setplatformversion)设置时，版本号默认值：按OpenHarmony平台版本号规则，同const.product.os.dist.version。
 
 系统能力： SystemCapability.Web.Webview.Core
 

@@ -2,8 +2,8 @@
 title: "Interface (ResultSet)"
 upstream_id: "harmonyos-references/arkts-apis-data-relationalstore-resultset"
 catalog: "harmonyos-references"
-content_hash: "0001e87bfe7e"
-synced_at: "2026-08-18T15:31:49.898648"
+content_hash: "bab97c8515ac"
+synced_at: "2026-09-17T18:50:26.846822"
 ---
 
 # Interface (ResultSet)
@@ -1333,11 +1333,9 @@ getSendableRow(): sendableRelationalStore.ValuesBucket
 ```
 // EntryAbility.ets
 import { window } from '@kit.ArkUI';
-import { UIAbility } from '@kit.AbilityKit';
-import { relationalStore } from '@kit.ArkData';
+import { UIAbility, common } from '@kit.AbilityKit';
+import { relationalStore, sendableRelationalStore } from '@kit.ArkData';
 import { taskpool } from '@kit.ArkTS';
-import { common } from '@kit.AbilityKit';
-import { sendableRelationalStore } from '@kit.ArkData';
 
 @Concurrent
 async function getDataByName(name: string, context: common.UIAbilityContext) {

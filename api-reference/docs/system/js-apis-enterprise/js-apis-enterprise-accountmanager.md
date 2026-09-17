@@ -1,12 +1,12 @@
 ---
-title: "@ohos.enterprise.accountManager（账号管理）"
+title: "@ohos.enterprise.accountManager (账号管理)"
 upstream_id: "harmonyos-references/js-apis-enterprise-accountmanager"
 catalog: "harmonyos-references"
-content_hash: "021509c32346"
-synced_at: "2026-08-29T18:17:06.425784"
+content_hash: "0411ceea16e1"
+synced_at: "2026-09-17T18:53:30.419108"
 ---
 
-# @ohos.enterprise.accountManager（账号管理）
+# @ohos.enterprise.accountManager (账号管理)
 
 本模块提供设备账号管理能力，包括禁止创建本地账号等。
 
@@ -28,13 +28,13 @@ disallowOsAccountAddition(admin: Want, disallow: boolean, accountId?: number): v
 
 禁止用户添加账号。调用成功后，系统将禁止指定用户或所有用户添加新账号。适用于企业设备管理场景，如防止员工随意创建本地账号、加强设备安全管理等。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[从严管控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则1从严管控)规则。
+
 需要权限： ohos.permission.ENTERPRISE_SET_ACCOUNT_POLICY
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [从严管控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则1从严管控)。
 
 参数：
 
@@ -195,13 +195,13 @@ addOsAccountAsync(admin: Want, name: string, type: osAccount.OsAccountType): Pro
 
 ![](./img/note_3.0-zh-cn.png) 创建账号的流程比较耗时，当调用此接口后，后续如果在应用主线程调用其他同步接口时需要等待该接口异步返回。
 
+在多个MDM应用场景下，遵循[配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)规则。
+
 需要权限： ohos.permission.ENTERPRISE_SET_ACCOUNT_POLICY
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)。
 
 参数：
 
@@ -256,6 +256,8 @@ setDomainAccountPolicy(admin: Want, domainAccountInfo: osAccount.DomainAccountIn
 
 设置域账号策略。
 
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)规则。
+
 需要权限： ohos.permission.ENTERPRISE_SET_ACCOUNT_POLICY
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
@@ -263,8 +265,6 @@ setDomainAccountPolicy(admin: Want, domainAccountInfo: osAccount.DomainAccountIn
 设备行为差异： 该接口在PC/2in1设备中可正常调用，在其他设备中返回801错误码。
 
 模型约束： 此接口仅可在Stage模型下使用。
-
-冲突规则： [配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)。
 
 参数：
 

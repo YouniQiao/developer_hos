@@ -2,8 +2,8 @@
 title: "ImageBitmap"
 upstream_id: "harmonyos-references/ts-components-canvas-imagebitmap"
 catalog: "harmonyos-references"
-content_hash: "0449d6d2c7ce"
-synced_at: "2026-07-28T16:46:34.778600"
+content_hash: "fbbecfc68438"
+synced_at: "2026-09-17T18:51:14.453331"
 ---
 
 # ImageBitmap
@@ -184,7 +184,7 @@ struct ImageExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088267.png)
+ ![](./img/zh-cn_image_0000002727592922.png)
 
 #### [h2]示例2（创建ImageBitmap）
 
@@ -220,7 +220,7 @@ struct Demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928437.png)
+ ![](./img/zh-cn_image_0000002727752780.png)
 
 #### [h2]示例3（支持并发线程绘制）
 
@@ -233,7 +233,7 @@ import { worker } from '@kit.ArkTS';
 
 @Entry
 @Component
-struct imageBitmapExamplePage {
+struct ImageBitmapExamplePage {
   private settings: RenderingContextSettings = new RenderingContextSettings(true);
   private context: CanvasRenderingContext2D = new CanvasRenderingContext2D(this.settings);
   private myWorker = new worker.ThreadWorker('entry/ets/workers/Worker.ets');
@@ -278,7 +278,7 @@ workerPort.onmessage = (e: MessageEvents) => {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088267.png)
+ ![](./img/zh-cn_image_0000002727592922.png)
 
 #### [h2]示例4（加载Resource图片）
 
@@ -312,4 +312,4 @@ struct ImageBitmapResourceExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008760.png)
+ ![](./img/zh-cn_image_0000002757312495.png)

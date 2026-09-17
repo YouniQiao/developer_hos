@@ -2,8 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/intents-arkts-api-errorcodes-insightintent"
 catalog: "harmonyos-references"
-content_hash: "4b9f2a82b57e"
-synced_at: "2026-07-09T01:01:42.540884"
+content_hash: "037a081c4cb6"
+synced_at: "2026-09-17T18:54:56.595218"
 ---
 
 # ArkTS API错误码
@@ -45,6 +45,24 @@ HUAWEI Assistant has stopped providing services.
 处理步骤
 
 打开设置-小艺开关。
+
+#### 1000101103 "从此应用学习"开关关闭
+
+错误信息
+
+The switch of the app in the Data source has been turned off.
+
+错误描述
+
+"从此应用学习"开关关闭，共享失败，系统会产生此错误码。
+
+可能原因
+
+"从此应用学习"对应开关未开启。
+
+处理步骤
+
+在设备上选择"小艺语音助手 > 右上角头像 > 设置 > 应用服务管理"，然后选择对应的应用或服务，开启"从此应用学习"开关。
 
 #### 1000101104 超过应用共享次数
 
