@@ -2,8 +2,8 @@
 title: "粒子动画 (Particle)"
 upstream_id: "harmonyos-references/ts-particle-animation"
 catalog: "harmonyos-references"
-content_hash: "d7bca874761d"
-synced_at: "2026-08-29T18:14:46.203338"
+content_hash: "888a8c82d970"
+synced_at: "2026-09-20T18:01:30.271944"
 ---
 
 # 粒子动画 (Particle)
@@ -157,7 +157,7 @@ interface ParticleOptions<
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | emitter | [EmitterOptions](#emitteroptions) | 否 | 否 | 粒子发射器配置。 |
-| color | [ParticleColorPropertyOptions](#particlecolorpropertyoptions)[/topic/body/section/table/tgroup/tbody/row/entry/color_updater {""}) (color_updater] | 否 | 是 | 粒子颜色配置。 **说明**： 默认值：{ range:[Color.White,Color.White] }。图片粒子不支持设置颜色。 |
+| color | [ParticleColorPropertyOptions](#particlecolorpropertyoptions) | 否 | 是 | 粒子颜色配置。 **说明**： 默认值：{ range:[Color.White,Color.White] }。图片粒子不支持设置颜色。 |
 | opacity | [ParticlePropertyOptions](#particlepropertyoptions) | 否 | 是 | 粒子透明度配置。 默认值：{ range:[1.0,1.0] } |
 | scale | [ParticlePropertyOptions](#particlepropertyoptions) | 否 | 是 | 粒子大小配置。 默认值：{ range:[1.0,1.0] } |
 | velocity | [VelocityOptions](#velocityoptions18) | 否 | 是 | 粒子速度配置。 **说明**： speed表示速度大小。angle表示速度的方向（单位：度），以元素几何中心为坐标原点，水平方向为X轴，正数表示顺时针方向旋转角度。 默认值：{ speed:[0.0,0.0],angle:[0.0,0.0] } |
@@ -597,7 +597,7 @@ interface ParticleColorUpdaterOptions<UPDATER extends ParticleUpdater> {
 - 当outerRadius小于innerRadius时（即外圆半径小于内圆半径时），会将当前较小的值作为新的内圆半径，将较大的值作为新的外圆半径。
 - 当endAngle小于startAngle时（即结束角度小于起始角度时），会将当前较小的值作为新的起始角度，将较大的值作为新的结束角度。
 
-![](./img/zh-cn_image_0000002701799962.png)
+![](./img/zh-cn_image_0000002762996009.png)
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -820,7 +820,7 @@ struct ParticleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519249.gif)
+ ![](./img/zh-cn_image_0000002762836125.gif)
 
 #### [h2]示例2（图片初始化粒子）
 
@@ -926,7 +926,7 @@ struct ParticleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701640048.gif)
+ ![](./img/zh-cn_image_0000002733276614.gif)
 
 #### [h2]示例3（粒子扰动场的干扰下运动轨迹发生变化）
 
@@ -1053,7 +1053,7 @@ struct ParticleExample3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359269.gif)
+ ![](./img/zh-cn_image_0000002733436490.gif)
 
 #### [h2]示例4（调整粒子发射器位置）
 
@@ -1131,7 +1131,7 @@ struct ParticleExample4 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799964.gif)
+ ![](./img/zh-cn_image_0000002762996011.gif)
 
 #### [h2]示例5（环形发射器创建）
 
@@ -1217,7 +1217,7 @@ struct ParticleExample5 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519251.gif)
+ ![](./img/zh-cn_image_0000002762836127.gif)
 
 #### [h2]示例6（环形发射器更新）
 
@@ -1332,7 +1332,7 @@ struct ParticleExample6 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701640050.gif)
+ ![](./img/zh-cn_image_0000002733276616.gif)
 
 #### [h2]示例7（设置波动场和速度场）
 
@@ -1460,4 +1460,4 @@ struct ParticleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359271.gif)
+ ![](./img/zh-cn_image_0000002733436492.gif)

@@ -2,8 +2,8 @@
 title: "@ohos.app.ability.scriptManager (脚本管理)"
 upstream_id: "harmonyos-references/js-apis-app-ability-scriptmanager"
 catalog: "harmonyos-references"
-content_hash: "ee08f114d781"
-synced_at: "2026-08-29T18:11:58.468207"
+content_hash: "83baad9ae7dc"
+synced_at: "2026-09-20T18:00:38.367288"
 ---
 
 # @ohos.app.ability.scriptManager (脚本管理)
@@ -12,6 +12,7 @@ synced_at: "2026-08-29T18:11:58.468207"
 
 ![](./img/note_3.0-zh-cn.png)
 
+- 应用的ArkTS脚本开发参考[基于ArkTS脚本的应用Skill开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-skill-development-guide)。
 - 应用的ArkTS脚本需要绑定一个Ability，在[module.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)的[skillProfiles标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#skillprofiles标签)中配置对应的Ability。
 - 脚本通过export default class导出，其入口函数的第一个参数固定为[ArkTSScriptInfo](#arktsscriptinfo)，用于接收系统传递的脚本上下文信息，开发者可在第一个参数后添加自定义参数。
 

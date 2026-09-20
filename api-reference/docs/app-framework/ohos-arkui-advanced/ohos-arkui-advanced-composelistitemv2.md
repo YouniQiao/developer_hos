@@ -2,8 +2,8 @@
 title: "ComposeListItemV2"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-composelistitemv2"
 catalog: "harmonyos-references"
-content_hash: "df87bfb6ca26"
-synced_at: "2026-08-29T18:15:06.854818"
+content_hash: "703c0bc11783"
+synced_at: "2026-09-20T18:01:44.601471"
 ---
 
 # ComposeListItemV2
@@ -55,6 +55,8 @@ ComposeListItemV2({ contentItemV2?: ContentItemV2, operateItemV2?: OperateItemV2
 #### ContentItemV2
 
 列表左侧显示的图标、图标大小以及中间元素文字内容。
+
+#### [h2]属性
 
 起始版本： 26.0.0
 
@@ -151,6 +153,8 @@ ContentItemV2构造函数的参数选项。
 
 列表项右侧显示的元素类型。
 
+#### [h2]属性
+
 起始版本： 26.0.0
 
 模型约束： 此接口仅可在Stage模型下使用。
@@ -229,6 +233,8 @@ OperateItemV2构造函数的参数选项。
 
 列表项右侧图标元素的类型。
 
+#### [h2]属性
+
 起始版本： 26.0.0
 
 模型约束： 此接口仅可在Stage模型下使用。
@@ -299,6 +305,8 @@ OperateIconV2构造函数的参数选项。
 
 列表项右侧按钮元素的类型。
 
+#### [h2]属性
+
 起始版本： 26.0.0
 
 模型约束： 此接口仅可在Stage模型下使用。
@@ -364,6 +372,8 @@ OperateButtonV2构造函数的参数选项。
 #### OperateCheckV2
 
 列表项右侧元素为Switch、CheckBox、Radio的类型。当列表项右侧元素需要使用Switch、CheckBox、Radio时，可通过该类型配置对应属性。
+
+#### [h2]属性
 
 起始版本： 26.0.0
 
@@ -514,7 +524,7 @@ struct ComposeListItemV2Example {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701800042.jpg)
+ ![](./img/zh-cn_image_0000002733276698.jpg)
 
 #### [h2]示例2(设置列表项右侧不同元素自定义播报)
 
@@ -605,7 +615,7 @@ struct ComposeListItemV2Example {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519329.png)
+ ![](./img/zh-cn_image_0000002733436574.png)
 
 #### [h2]示例3(设置Symbol类型图标)
 
@@ -687,4 +697,4 @@ struct ComposeListItemV2Example {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701640130.png)
+ ![](./img/zh-cn_image_0000002762996095.png)

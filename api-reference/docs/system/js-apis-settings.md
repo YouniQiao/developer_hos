@@ -2,8 +2,8 @@
 title: "@ohos.settings (设置数据项名称)"
 upstream_id: "harmonyos-references/js-apis-settings"
 catalog: "harmonyos-references"
-content_hash: "9775548fe63b"
-synced_at: "2026-08-29T18:16:57.917945"
+content_hash: "c554ee8224af"
+synced_at: "2026-09-20T18:03:23.947517"
 ---
 
 # @ohos.settings (设置数据项名称)
@@ -335,7 +335,7 @@ settings.setValue(context, settings.display.SCREEN_BRIGHTNESS_STATUS, '100', set
 
 getValue(context: Context, name: string, callback: AsyncCallback<string>): void
 
-获取数据库中DEVICE_SHARD域指定数据项的值。使用callback异步回调。
+获取数据库中DEVICE_SHARED域指定数据项的值。使用callback异步回调。
 
 模型约束：此接口仅可在Stage模型下使用。
 
@@ -370,7 +370,7 @@ settings.getValue(context, settings.display.SCREEN_BRIGHTNESS_STATUS, (err, valu
 
 getValue(context: Context, name: string): Promise<string>
 
-获取数据库中DEVICE_SHARD域指定数据项的值。使用Promise异步回调。
+获取数据库中DEVICE_SHARED域指定数据项的值。使用Promise异步回调。
 
 模型约束：此接口仅可在Stage模型下使用。
 
@@ -939,7 +939,7 @@ settings.getURI(settings.display.SCREEN_BRIGHTNESS_STATUS).then((uri:string) => 
 
 getValue(dataAbilityHelper: DataAbilityHelper, name: string, callback: AsyncCallback<object>): void
 
-获取数据库中DEVICE_SHARD域指定数据项的值。使用callback异步回调。
+获取数据库中DEVICE_SHARED域指定数据项的值。使用callback异步回调。
 
 ![](./img/note_3.0-zh-cn.png) 从 API version 7开始支持，从API version 9开始废弃，建议使用[getValue()](#settingsgetvalue10)替代。
 
@@ -975,7 +975,7 @@ settings.getValue(helper, settings.display.SCREEN_BRIGHTNESS_STATUS, (err:Error,
 
 getValue(dataAbilityHelper: DataAbilityHelper, name: string): Promise<object>
 
-获取数据库中DEVICE_SHARD域指定数据项的值。使用Promise异步回调。
+获取数据库中DEVICE_SHARED域指定数据项的值。使用Promise异步回调。
 
 ![](./img/note_3.0-zh-cn.png) 从 API version 7开始支持，从API version 9开始废弃，建议使用[getValue()](#settingsgetvalue10-1)替代。
 

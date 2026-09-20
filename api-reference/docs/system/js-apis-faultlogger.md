@@ -2,8 +2,8 @@
 title: "@ohos.faultLogger (故障日志获取)"
 upstream_id: "harmonyos-references/js-apis-faultlogger"
 catalog: "harmonyos-references"
-content_hash: "b09e13165ed3"
-synced_at: "2026-07-28T16:51:21.635097"
+content_hash: "a85b1c86e38f"
+synced_at: "2026-09-20T18:03:42.307626"
 ---
 
 # @ohos.faultLogger (故障日志获取)
@@ -78,7 +78,7 @@ query(faultType: FaultType, callback: AsyncCallback<Array<FaultLogInfo>>) : void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | The parameter check failed, Parameter type error. |
-| 801 | The specified SystemCapability name was not found. |
+| 801 | Capability not supported. Possible causes: The specified SystemCapability name was not found. |
 | 10600001 | The service is not started or is faulty. |
 
 示例：
@@ -140,7 +140,7 @@ query(faultType: FaultType) : Promise<Array<FaultLogInfo>>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | The parameter check failed, Parameter type error. |
-| 801 | The specified SystemCapability name was not found. |
+| 801 | Capability not supported. Possible causes: The specified SystemCapability name was not found. |
 | 10600001 | The service is not started or is faulty. |
 
 示例：

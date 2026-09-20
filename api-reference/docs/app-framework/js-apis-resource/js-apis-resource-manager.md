@@ -2,8 +2,8 @@
 title: "@ohos.resourceManager (资源管理)"
 upstream_id: "harmonyos-references/js-apis-resource-manager"
 catalog: "harmonyos-references"
-content_hash: "9fb032595e31"
-synced_at: "2026-08-29T18:16:16.472450"
+content_hash: "fa31a03e5036"
+synced_at: "2026-09-20T18:02:50.724669"
 ---
 
 # @ohos.resourceManager (资源管理)
@@ -3973,7 +3973,7 @@ getRawFdSync(path: string): RawFileDescriptor
 
 获取resources/rawfile目录下rawfile文件所在HAP的文件描述符（fd），使用同步方式返回。
 
-![](./img/note_3.0-zh-cn.png) 文件描述符（fd）使用完毕后需调用[closeRawFdSync](#closerawfdsync10)或[closeRawFd](#closerawfd9)关闭fd，避免资源泄露。
+![](./img/note_3.0-zh-cn.png) 文件描述符（fd）使用完毕后需调用[closeRawFdSync](#closerawfdsync10)或[closeRawFd](#closerawfd9)关闭fd，避免资源泄漏。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -4026,7 +4026,7 @@ getRawFd(path: string, callback: _AsyncCallback<RawFileDescriptor>): void
 
 获取resources/rawfile目录下对应rawfile文件所在HAP的文件描述符（fd）。使用callback异步回调。
 
-![](./img/note_3.0-zh-cn.png) 文件描述符（fd）使用完毕后需调用[closeRawFdSync](#closerawfdsync10)或[closeRawFd](#closerawfd9)关闭fd，避免资源泄露。
+![](./img/note_3.0-zh-cn.png) 文件描述符（fd）使用完毕后需调用[closeRawFdSync](#closerawfdsync10)或[closeRawFd](#closerawfd9)关闭fd，避免资源泄漏。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -4083,7 +4083,7 @@ getRawFd(path: string): Promise<RawFileDescriptor>
 
 获取resources/rawfile目录下rawfile文件所在HAP的文件描述符（fd）。使用Promise异步回调。
 
-![](./img/note_3.0-zh-cn.png) 文件描述符（fd）使用完毕后需调用[closeRawFdSync](#closerawfdsync10)或[closeRawFd](#closerawfd9)关闭fd，避免资源泄露。
+![](./img/note_3.0-zh-cn.png) 文件描述符（fd）使用完毕后需调用[closeRawFdSync](#closerawfdsync10)或[closeRawFd](#closerawfd9)关闭fd，避免资源泄漏。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -6685,7 +6685,7 @@ try {
   // 在资源文件中用quantity字段表示单复数类别，因此会获取quantity为other的字符串
   let pluralStr = this.context.resourceManager.getDoublePluralStringValueSync(resource, 2.1, 2, "basket", 0.6);
   console.info(`getDoublePluralStringValueSync, result: ${pluralStr}`);
-  // 打印输出结果: getIntPluralStringValueSync, result: There are 2 apples in the basket, the total amount is 0.6 kg.
+  // 打印输出结果: getDoublePluralStringValueSync, result: There are 2 apples in the basket, the total amount is 0.6 kg.
 } catch (error) {
   let code = (error as BusinessError).code;
   let message = (error as BusinessError).message;

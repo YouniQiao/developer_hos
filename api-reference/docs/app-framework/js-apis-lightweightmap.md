@@ -2,8 +2,8 @@
 title: "@ohos.util.LightWeightMap (非线性容器LightWeightMap)"
 upstream_id: "harmonyos-references/js-apis-lightweightmap"
 catalog: "harmonyos-references"
-content_hash: "b685e4312e23"
-synced_at: "2026-08-03T17:09:33.514022"
+content_hash: "2a95b0a56619"
+synced_at: "2026-09-20T18:00:58.104458"
 ---
 
 # @ohos.util.LightWeightMap (非线性容器LightWeightMap)
@@ -33,7 +33,7 @@ LightWeightMap和[HashMap](https://developer.huawei.com/consumer/cn/doc/harmonyo
 
 这是因为，当key为number类型且值大于INT32_MAX或小于INT32_MIN时，存储结构会发生改变。
 
-例如在以下示例针对key的计算中，1758783600000大于INT32_MAX，此时会通过TaggedDouble存储；1758783600小于INT32_MIN，此时会通过TaggedInt存储。由于以上存储方式的差异，当对其进行hash算法即会计算出不同的hash值，从而导致映射结果不同，产生与预期不一致的现象。
+例如在以下示例针对key的计算中，1758783600000大于INT32_MAX，此时会通过TaggedDouble存储；1758783600小于INT32_MAX，大于INT32_MIN，此时会通过TaggedInt存储。由于以上存储方式的差异，当对其进行hash算法即会计算出不同的hash值，从而导致映射结果不同，产生与预期不一致的现象。
 
 ```
 let lightWeightMap = new LightWeightMap<number, number>();

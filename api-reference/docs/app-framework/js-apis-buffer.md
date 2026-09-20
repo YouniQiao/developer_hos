@@ -2,8 +2,8 @@
 title: "@ohos.buffer (Buffer)"
 upstream_id: "harmonyos-references/js-apis-buffer"
 catalog: "harmonyos-references"
-content_hash: "be4aa54390ed"
-synced_at: "2026-08-03T17:09:32.956033"
+content_hash: "ca5b32586eb9"
+synced_at: "2026-09-20T18:00:57.403000"
 ---
 
 # @ohos.buffer (Buffer)
@@ -22,7 +22,7 @@ import { buffer } from '@kit.ArkTS';
 
 #### BufferEncoding
 
-type BufferEncoding = 'ascii' | 'utf8' | 'utf-8' | 'utf16le' | 'ucs2' | 'ucs-2' | 'base64' | 'base64url' | 'latin1' | 'binary' | 'hex'
+type BufferEncoding = | 'ascii' | 'utf8' | 'utf-8' | 'utf16le' | 'ucs2' | 'ucs-2' | 'base64' | 'base64url' | 'latin1' | 'binary' | 'hex'
 
 表示支持的编码格式类型。
 
@@ -616,7 +616,7 @@ compare(target: Buffer | Uint8Array, targetStart?: number, targetEnd?: number, s
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 返回比较结果。-1：当前排列在目标前，0：当前与目标相同，1：当前排列在目标后。 |
+| -1 | 0 | 1 | 返回比较结果。-1：当前排列在目标前，0：当前与目标相同，1：当前排列在目标后。 |
 
 错误码：
 

@@ -2,8 +2,8 @@
 title: "TextInput"
 upstream_id: "harmonyos-references/ts-basic-components-textinput"
 catalog: "harmonyos-references"
-content_hash: "7ad5ee3e3ce8"
-synced_at: "2026-09-17T18:50:59.004294"
+content_hash: "81dbf05f6ecf"
+synced_at: "2026-09-20T18:01:17.673118"
 ---
 
 # TextInput
@@ -909,7 +909,7 @@ fontFeature(value: string)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | string | 是 | 文字特性效果，用于设置OpenType字体高级排版能力（如等宽数字、连字等）。格式为normal或[/topic/body/section/table/tgroup/tbody/row/entry/feature-tag-value {""}) ，例如"ss01" on。 (feature-tag-value] |
+| value | string | 是 | 文字特性效果，用于设置OpenType字体高级排版能力（如等宽数字、连字等）。格式为normal或，例如"ss01" on。 |
 
 Font Feature当前支持的属性参见[fontFeature](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#fontfeature12)属性列表。
 
@@ -2308,7 +2308,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002757232425.gif)
+ ![](./img/zh-cn_image_0000002762995743.gif)
 
 #### [h2]示例2（设置下划线）
 
@@ -2409,7 +2409,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002727592734.png)
+ ![](./img/zh-cn_image_0000002762835857.png)
 
 #### [h2]示例3（设置自定义键盘）
 
@@ -2479,7 +2479,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002727752592.gif)
+ ![](./img/zh-cn_image_0000002733276348.gif)
 
 #### [h2]示例4（设置右侧清除按钮样式）
 
@@ -2514,7 +2514,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002757312307.png)
+ ![](./img/zh-cn_image_0000002733436224.png)
 
 #### [h2]示例5（设置计数器）
 
@@ -2548,7 +2548,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002757232427.jpg)
+ ![](./img/zh-cn_image_0000002762995745.jpg)
 
 #### [h2]示例6（电话号码格式化）
 
@@ -2696,7 +2696,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002727592736.png)
+ ![](./img/zh-cn_image_0000002762835859.png)
 
 #### [h2]示例7（设置文本断行规则）
 
@@ -2755,7 +2755,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002727752594.png)
+ ![](./img/zh-cn_image_0000002733276350.png)
 
 #### [h2]示例8（设置文本样式）
 
@@ -2802,7 +2802,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002757312309.png)
+ ![](./img/zh-cn_image_0000002733436226.png)
 
 #### [h2]示例9（设置文字特性效果）
 
@@ -2832,7 +2832,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002757232429.png)
+ ![](./img/zh-cn_image_0000002762995747.png)
 
 #### [h2]示例10（自定义键盘避让）
 
@@ -2902,7 +2902,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002727592738.gif)
+ ![](./img/zh-cn_image_0000002762835861.gif)
 
 #### [h2]示例11（设置文本自适应）
 
@@ -2953,7 +2953,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002727752596.png)
+ ![](./img/zh-cn_image_0000002733276352.png)
 
 #### [h2]示例12（设置折行规则）
 
@@ -2996,7 +2996,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002757312311.gif)
+ ![](./img/zh-cn_image_0000002733436228.gif)
 
 #### [h2]示例13（支持插入和删除回调）
 
@@ -3061,7 +3061,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002757232431.png)
+ ![](./img/zh-cn_image_0000002762995749.png)
 
 #### [h2]示例14（文本扩展自定义菜单）
 
@@ -3146,7 +3146,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002727592740.png)
+ ![](./img/zh-cn_image_0000002762835863.png)
 
 #### [h2]示例15（设置symbol类型清除按钮）
 
@@ -3174,7 +3174,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002727752598.jpg)
+ ![](./img/zh-cn_image_0000002733276354.jpg)
 
 #### [h2]示例16（文本设置省略模式）
 
@@ -3241,7 +3241,7 @@ struct EllipsisModeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002757312313.gif)
+ ![](./img/zh-cn_image_0000002733436230.gif)
 
 #### [h2]示例17（输入框支持输入状态变化等回调）
 
@@ -3361,7 +3361,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002757232433.png)
+ ![](./img/zh-cn_image_0000002762995751.png)
 
 #### [h2]示例18（设置最小字体范围与最大字体范围）
 
@@ -3421,7 +3421,7 @@ struct TextInputExample {
 
 | 系统字体缩放倍数为2倍 | 系统字体缩放倍数为3.2倍 |
 | --- | --- |
-| ![](./img/zh-cn_image_0000002727592742.png) | ![](./img/zh-cn_image_0000002727752600.png) |
+| ![](./img/zh-cn_image_0000002762835865.png) | ![](./img/zh-cn_image_0000002733276356.png) |
 
 #### [h2]示例19（设置选中指定区域的文本内容）
 
@@ -3460,7 +3460,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002757312315.png)
+ ![](./img/zh-cn_image_0000002733436232.png)
 
 #### [h2]示例20（设置文本描边）
 
@@ -3507,7 +3507,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002757232435.png)
+ ![](./img/zh-cn_image_0000002762995753.png)
 
 #### [h2]示例21（设置中西文自动间距）
 
@@ -3533,7 +3533,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002727592744.png)
+ ![](./img/zh-cn_image_0000002762835867.png)
 
 #### [h2]示例22（设置字符计数颜色以及超出字符颜色）
 
@@ -3569,7 +3569,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002727752602.gif)
+ ![](./img/zh-cn_image_0000002733276358.gif)
 
 #### [h2]示例23（设置placeholder富文本样式）
 
@@ -3635,7 +3635,7 @@ struct TextInputExample  {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002757312317.jpg)
+ ![](./img/zh-cn_image_0000002733436234.jpg)
 
 #### [h2]示例24（设置输入法扩展信息）
 
@@ -3690,7 +3690,7 @@ struct TextInputBarStateDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002757232437.gif)
+ ![](./img/zh-cn_image_0000002762995755.gif)
 
 #### [h2]示例26（设置行首标点符号压缩和行尾标点符号悬挂）
 
@@ -3740,7 +3740,7 @@ struct PunctuationDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002727592746.gif)
+ ![](./img/zh-cn_image_0000002762835869.gif)
 
 #### [h2]示例27（设置自适应间距）
 
@@ -3806,7 +3806,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002727752604.gif)
+ ![](./img/zh-cn_image_0000002733276360.gif)
 
 #### [h2]示例28（设置文本拖拽时的背板样式）
 
@@ -3832,7 +3832,7 @@ struct TextInputTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002757312319.png)
+ ![](./img/zh-cn_image_0000002733436236.png)
 
 #### [h2]示例29（删除文本框内的最后一个字符）
 
@@ -3858,7 +3858,7 @@ struct Page {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002757232439.gif)
+ ![](./img/zh-cn_image_0000002762995757.gif)
 
 #### [h2]示例30（设置文本排版方向）
 
@@ -3905,7 +3905,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002727592748.png)
+ ![](./img/zh-cn_image_0000002762835871.png)
 
 #### [h2]示例31（将指定范围的文字滚动到可视区内）
 
@@ -3934,7 +3934,7 @@ struct TextInputExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002727752606.gif)
+ ![](./img/zh-cn_image_0000002733276362.gif)
 
 #### [h2]示例32（设置文本排版时是否使能孤字优化）
 
@@ -3976,11 +3976,11 @@ struct TextExample {
 
 不开启孤字优化：
 
-![](./img/zh-cn_image_0000002757312321.png)
+![](./img/zh-cn_image_0000002733436238.png)
 
 开启孤字优化：
 
-![](./img/zh-cn_image_0000002757232441.png)
+![](./img/zh-cn_image_0000002762995759.png)
 
 #### [h2]示例33（设置文本着色器效果）
 
@@ -4049,7 +4049,7 @@ struct ShaderColorStyle {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002727592750.png)
+ ![](./img/zh-cn_image_0000002762835873.png)
 
 #### [h2]示例34（设置文本选择的AI菜单）
 
@@ -4077,4 +4077,4 @@ struct Demo34 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002727752608.gif)
+ ![](./img/zh-cn_image_0000002733276364.gif)

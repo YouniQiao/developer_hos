@@ -2,8 +2,8 @@
 title: "Class (OverlayManager)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-overlaymanager"
 catalog: "harmonyos-references"
-content_hash: "5264ba42a34f"
-synced_at: "2026-07-28T16:41:08.119906"
+content_hash: "3188044475ff"
+synced_at: "2026-09-20T18:01:00.801247"
 ---
 
 # Class (OverlayManager)
@@ -85,18 +85,27 @@ struct OverlayExample {
   @State message: string = 'ComponentContent';
   private uiContext: UIContext = this.getUIContext();
   private overlayNode: OverlayManager = this.uiContext.getOverlayManager();
+  @StorageLink('contentArray') contentArray: ComponentContent<Params>[] = [];
 
   build() {
     Column({ space: 5 }) {
-      Button('打开浮层').onClick(() => {
+      Button('openOrderOverlay').onClick(() => {
         let componentContent = new ComponentContent(
           this.uiContext, wrapBuilder<[Params]>(builderText),
           new Params(this.message, { x: 0, y: 110 })
         );
+        this.contentArray.push(componentContent);
         this.overlayNode.openOrderOverlay(componentContent, {
           levelOrder: LevelOrder.clamp(100),
           levelMode: LevelMode.OVERLAY
         });
+      })
+      Button('close overlay').onClick(() => {
+        if (this.contentArray.length > 0) {
+          this.overlayNode.removeComponentContent(this.contentArray.pop());
+        } else {
+          console.info('arrayIndex有误');
+        }
       })
     }
     .width('100%')
@@ -120,7 +129,7 @@ struct OverlayExample {
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | levelOrder | [LevelOrder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#levelorder18) | 否 | 是 | 浮层的显示顺序。 **说明：** - 默认值：LevelOrder.clamp(0) |
-| levelMode | [LevelMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#levelmode15枚举说明) | 否 | 是 | 浮层的显示模式。 **说明：** - 默认值：LevelMode.OVERLAY |
+| levelMode | [LevelMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#levelmode15) | 否 | 是 | 浮层的显示模式。 **说明：** - 默认值：LevelMode.OVERLAY |
 | levelUniqueId | number | 否 | 是 | 浮层需要显示的层级下的节点uniqueId，uniqueId可通过[getUniqueId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#getuniqueid12)接口获取。取值范围为大于等于0的数字，当且仅当levelMode设置为LevelMode.EMBEDDED时生效。 |
 
 #### addComponentContent12+
@@ -233,7 +242,7 @@ struct OverlayExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848258.gif)
+ ![](./img/zh-cn_image_0000002733435808.gif)
 
 #### addComponentContentWithOrder18+
 
@@ -334,7 +343,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087687.gif)
+ ![](./img/zh-cn_image_0000002762995331.gif)
 
 #### removeComponentContent12+
 

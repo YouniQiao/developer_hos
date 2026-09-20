@@ -2,8 +2,8 @@
 title: "@ohos.taskpool (启动任务池)"
 upstream_id: "harmonyos-references/js-apis-taskpool"
 catalog: "harmonyos-references"
-content_hash: "c696daa7cbfc"
-synced_at: "2026-08-04T17:00:51.945037"
+content_hash: "44735cfa6e5b"
+synced_at: "2026-09-20T18:00:57.711712"
 ---
 
 # @ohos.taskpool (启动任务池)
@@ -2019,7 +2019,6 @@ onExecutionFailed(callback: CallbackFunctionWithError): void
 ```
 import { taskpool } from '@kit.ArkTS';
 import { BusinessError } from '@kit.BasicServicesKit';
-import { HashMap } from '@kit.ArkTS';
 
 @Concurrent
 function hashMapFunc(args: number) {

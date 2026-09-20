@@ -2,8 +2,8 @@
 title: "@ohos.fastbuffer (FastBuffer)"
 upstream_id: "harmonyos-references/js-apis-fastbuffer"
 catalog: "harmonyos-references"
-content_hash: "6c87a3448b43"
-synced_at: "2026-08-07T15:56:11.099205"
+content_hash: "c2a90b47f48b"
+synced_at: "2026-09-20T18:00:57.632619"
 ---
 
 # @ohos.fastbuffer (FastBuffer)
@@ -76,7 +76,7 @@ import { fastbuffer } from '@kit.ArkTS';
 // 创建长度为5的FastBuffer对象，默认填充0
 let buf1 = fastbuffer.alloc(5);
 console.info(buf1.toString());
-// 输出结果：00000
+// 输出结果为空
 // 创建长度为5的FastBuffer对象，填充字符'a'
 let buf2 = fastbuffer.alloc(5, 'a');
 // 创建长度为11的FastBuffer对象，使用base64编码填充

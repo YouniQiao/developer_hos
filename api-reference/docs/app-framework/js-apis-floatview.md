@@ -2,8 +2,8 @@
 title: "@ohos.window.floatView (闪控窗)"
 upstream_id: "harmonyos-references/js-apis-floatview"
 catalog: "harmonyos-references"
-content_hash: "604af117f490"
-synced_at: "2026-09-14T19:45:23.044520"
+content_hash: "0c5f10a550e3"
+synced_at: "2026-09-20T18:01:05.052271"
 ---
 
 # @ohos.window.floatView (闪控窗)
@@ -105,7 +105,8 @@ import { floatView } from '@kit.ArkUI';
 @Component
 struct Index {
   private floatViewController: floatView.FloatViewController | undefined = undefined;
-  aboutToAppear(): void {
+
+  createFloatView(): void {
     // 请在组件内获取context，确保this.getUIContext().getHostContext()返回的结果为UIAbilityContext
     let ctx = this.getUIContext().getHostContext() as common.UIAbilityContext;
     // 创建闪控窗配置对象
@@ -123,6 +124,14 @@ struct Index {
       });
     } catch (e) {
       console.error(`Failed to create float view controller. Cause:${e.code}, message:${e.message}`);
+    }
+  }
+
+  build() {
+    RelativeContainer() {
+      Button('create fv').onClick(() => {
+        this.createFloatView();
+      })
     }
   }
 }

@@ -2,8 +2,8 @@
 title: "spatialRender"
 upstream_id: "harmonyos-references/spatial-recon-spatialrender"
 catalog: "harmonyos-references"
-content_hash: "ec286ae1c6db"
-synced_at: "2026-08-29T18:18:05.768746"
+content_hash: "add9bdb476df"
+synced_at: "2026-09-20T18:04:33.730189"
 ---
 
 # spatialRender
@@ -613,7 +613,7 @@ ComicEffect参数，该类型为字符串枚举，该枚举值可在[Effect](htt
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
 | LINE_THRESHOLD | 'lineThreshold' | ComicEffect中lineThreshold属性的名称。 属性对应取值类型为number。该属性表示用来判定像素为轮廓线的阈值，图像梯度大于该阈值的像素会被判定为轮廓线。该属性取值范围[0, 1]，默认值为0.2。 |
-| LINE_COLOR | 'lineColor' | ComicEffect中lineThreshold属性的名称。 属性对应取值类型为[Color](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-types#color)。该属性表示轮廓线的颜色。 |
+| LINE_COLOR | 'lineColor' | ComicEffect中lineColor属性的名称。 属性对应取值类型为[Color](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-types#color)。该属性表示轮廓线的颜色。 |
 
 示例：
 
@@ -842,10 +842,10 @@ ColorEditingEffect接口封装了颜色编辑风格的参数，可帮助开发�
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| exposure | number | 否 | 否 | 图像的曝光度，推荐取值范围[-5，5]，默认值0.0。 |
+| exposure | number | 否 | 否 | 图像的曝光度，推荐取值范围[-5, 5]，默认值0.0。 |
 | contrast | number | 否 | 否 | 图像的对比度，推荐取值范围[0, 2]，默认值1.0。 |
 | temperature | number | 否 | 否 | 图像的色温，推荐取值范围[-2, 2]，默认值0.0。 |
-| tint | number | 否 | 否 | 图像的色调，推荐取值范围[-1，1]，默认值0.0。 |
+| tint | number | 否 | 否 | 图像的色调，推荐取值范围[-1, 1]，默认值0.0。 |
 | saturation | number | 否 | 否 | 图像的饱和度，推荐取值范围[0, 2]，默认值1.0。 |
 | vibrance | number | 否 | 否 | 图像的自然饱和度，推荐取值范围[-1, 1]，默认值0.0。 |
 

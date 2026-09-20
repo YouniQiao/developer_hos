@@ -2,8 +2,8 @@
 title: "Component3D"
 upstream_id: "harmonyos-references/ts-basic-components-component3d"
 catalog: "harmonyos-references"
-content_hash: "b2322cbf40ed"
-synced_at: "2026-07-09T00:58:06.681028"
+content_hash: "d7d41c855394"
+synced_at: "2026-09-20T18:01:26.918463"
 ---
 
 # Component3D
@@ -239,7 +239,7 @@ class EngineTime {
 let engineTime = new EngineTime();
 let frameCount: number = 0;
 
-function TickFrame() {
+function tickFrame() {
   if (frameCount == 10) {
     engineTime.totalTimeUs += 1.0;
     engineTime.deltaTimeUs += 1.0;
@@ -270,7 +270,7 @@ struct Index {
       console.info('backAnimator onfinish');
     }
     this.backAnimator.onFrame = (value: number) => {
-      TickFrame();
+      tickFrame();
       this.timeDelta[0] = engineTime.deltaTimeUs;
     }
 

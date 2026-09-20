@@ -2,8 +2,8 @@
 title: "Class (ArrayBuffer)"
 upstream_id: "harmonyos-references/arkts-apis-arkts-collections-arraybuffer"
 catalog: "harmonyos-references"
-content_hash: "1d106bdca327"
-synced_at: "2026-08-14T15:52:16.653316"
+content_hash: "3302245e9996"
+synced_at: "2026-09-20T18:00:55.542208"
 ---
 
 # Class (ArrayBuffer)
@@ -83,7 +83,7 @@ slice(begin: number, end?: number): ArrayBuffer
 
 | 类型 | 说明 |
 | --- | --- |
-| ArrayBuffer | collections.ArrayBuffer |
+| ArrayBuffer | collections.ArrayBuffer，包含原ArkTS ArrayBuffer指定范围的内容的新的ArkTS ArrayBuffer对象 |
 
 错误码：
 

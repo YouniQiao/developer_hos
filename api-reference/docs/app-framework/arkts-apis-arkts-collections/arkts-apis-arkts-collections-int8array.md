@@ -2,8 +2,8 @@
 title: "Class (Int8Array)"
 upstream_id: "harmonyos-references/arkts-apis-arkts-collections-int8array"
 catalog: "harmonyos-references"
-content_hash: "666c18eba7d4"
-synced_at: "2026-08-03T17:09:31.581304"
+content_hash: "0fedb8111f93"
+synced_at: "2026-09-20T18:00:56.463685"
 ---
 
 # Class (Int8Array)
@@ -201,7 +201,7 @@ constructor(buffer: ArrayBuffer, byteOffset?: number, length?: number)
 ```
 let int8Array: collections.Int8Array = collections.Int8Array.from([1, 2, 3, 4, 5, 6]);
 console.info("byteLength: " + int8Array.buffer.byteLength); // byteLength: 6
-// 从int8Array对应buffer第1个字节开始，长度为5
+// 从int8Array对应buffer第2个字节开始，长度为5
 let int8Array1: collections.Int8Array = new collections.Int8Array(int8Array.buffer, 1, 5);
 console.info("[" + int8Array1 + "]"); // [2, 3, 4, 5, 6]
 ```

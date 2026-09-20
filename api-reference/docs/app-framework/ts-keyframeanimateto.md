@@ -2,8 +2,8 @@
 title: "关键帧动画 (keyframeAnimateTo)"
 upstream_id: "harmonyos-references/ts-keyframeanimateto"
 catalog: "harmonyos-references"
-content_hash: "1153504aa0ac"
-synced_at: "2026-08-29T18:14:42.192452"
+content_hash: "4c6c16b26dc3"
+synced_at: "2026-09-20T18:01:28.107163"
 ---
 
 # 关键帧动画 (keyframeAnimateTo)
@@ -86,7 +86,7 @@ struct KeyframeDemo {
         .scale({ x: this.myScale, y: this.myScale })
         .onClick(() => {
           if (!this.uiContext) {
-            console.info('no uiContext, keyframe failed');
+            console.error('no uiContext, keyframe failed');
             return;
           }
           this.myScale = 1;
@@ -126,4 +126,4 @@ struct KeyframeDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799956.gif)
+ ![](./img/zh-cn_image_0000002733436482.gif)
