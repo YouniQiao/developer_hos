@@ -2,8 +2,8 @@
 title: "@ohos.util (util工具函数)"
 upstream_id: "harmonyos-references/js-apis-util"
 catalog: "harmonyos-references"
-content_hash: "4cb987e2273b"
-synced_at: "2026-09-20T18:00:58.318200"
+content_hash: "c4ba11bb6f8f"
+synced_at: "2026-09-23T18:53:17.023782"
 ---
 
 # @ohos.util (util工具函数)
@@ -258,7 +258,7 @@ const addCall = util.promisify(util.callbackWrapper(fn));
     console.info(res);
     // 输出结果：hello world
   } catch (err) {
-    console.info(err);
+    console.error(`Failed to call promisify. Code: ${err.code}, message: ${err.message}`);
   }
 })();
 ```

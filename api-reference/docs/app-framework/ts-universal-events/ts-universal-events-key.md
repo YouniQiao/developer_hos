@@ -2,8 +2,8 @@
 title: "按键事件"
 upstream_id: "harmonyos-references/ts-universal-events-key"
 catalog: "harmonyos-references"
-content_hash: "c59ba517f01d"
-synced_at: "2026-08-29T18:12:39.749720"
+content_hash: "34fe57c5584c"
+synced_at: "2026-09-23T18:53:24.474702"
 ---
 
 # 按键事件
@@ -217,7 +217,7 @@ struct KeyEventExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518653.gif)
+ ![](./img/zh-cn_image_0000002739892562.gif)
 
 #### [h2]示例2（获取Unicode码值）
 
@@ -235,6 +235,7 @@ struct KeyEventExample {
   build() {
     Column({ space: 10 }) {
       Button('KeyEvent')
+        .defaultFocus(true)
         .onKeyEvent((event?: KeyEvent) => {
           if (event) {
             if (event.type === KeyType.Down) {
@@ -260,7 +261,7 @@ struct KeyEventExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639456.gif)
+ ![](./img/zh-cn_image_0000002739732684.gif)
 
 #### [h2]示例3（触发onKeyPreIme回调）
 
@@ -278,6 +279,7 @@ struct PreImeEventExample {
       Search({
         placeholder: 'Search...'
       })
+        .defaultFocus(true)
         .width('80%')
         .height('40vp')
         .border({ radius: '20vp' })
@@ -357,4 +359,4 @@ struct KeyEventExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358677.gif)
+ ![](./img/zh-cn_image_0000002769332033.gif)

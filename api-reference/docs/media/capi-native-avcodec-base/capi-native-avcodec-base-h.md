@@ -2,8 +2,8 @@
 title: "native_avcodec_base.h"
 upstream_id: "harmonyos-references/capi-native-avcodec-base-h"
 catalog: "harmonyos-references"
-content_hash: "3257330e87a5"
-synced_at: "2026-07-28T16:51:33.167242"
+content_hash: "2400fbcca81c"
+synced_at: "2026-09-23T18:56:22.974242"
 ---
 
 # native_avcodec_base.h
@@ -154,7 +154,7 @@ synced_at: "2026-07-28T16:51:33.167242"
 | const char * OH_MD_KEY_DURATION | 媒体文件持续时间的键，单位为微秒，值类型为int64_t。 **起始版本：** 9 **系统能力：** SystemCapability.Multimedia.Media.CodecBase |
 | const char * OH_MD_KEY_BITRATE | 比特率的键，单位为bps，值类型为int64_t。可以通过能力查询接口[OH_AVCapability_GetEncoderBitrateRange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avcapability-h#oh_avcapability_getencoderbitraterange)接口来获取取值范围。 **起始版本：** 9 **系统能力：** SystemCapability.Multimedia.Media.CodecBase |
 | const char * OH_MD_KEY_MAX_INPUT_SIZE | 设置解码输入码流大小最大值的键，值类型为int32_t。 **起始版本：** 9 **系统能力：** SystemCapability.Multimedia.Media.CodecBase |
-| const char * OH_MD_KEY_WIDTH | 视频宽度的键，值类型为int32_t。 对于视频编码，该键用于设置目标编码分辨率。对于视频解码，该键是解码器预分配内部缓冲区的分辨率提示。实际解码输出尺寸由OH_MD_KEY_VIDEO_PIC_WIDTH提供。 虽然该键主要用于控制内存分配，但可参考[OH_AVCapability_GetVideoWidthRange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avcapability-h#oh_avcapability_getvideowidthrange)获取推荐值范围，该接口定义了编码器支持的解码宽度范围。 **起始版本：** 9 **系统能力：** SystemCapability.Multimedia.Media.CodecBase |
+| const char * OH_MD_KEY_WIDTH | 视频宽度的键，值类型为int32_t。 对于视频编码，该键用于设置目标编码分辨率。对于视频解码，该键是解码器预分配内部缓冲区的分辨率提示。实际解码输出尺寸由OH_MD_KEY_VIDEO_PIC_WIDTH提供。 虽然该键主要用于控制内存分配，但可参考[OH_AVCapability_GetVideoWidthRange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avcapability-h#oh_avcapability_getvideowidthrange)获取推荐值范围，该接口定义了编解码器支持的解码宽度范围。 **起始版本：** 9 **系统能力：** SystemCapability.Multimedia.Media.CodecBase |
 | const char * OH_MD_KEY_HEIGHT | 视频高度键，值类型为int32_t。 对于视频编码，该键用于设置目标编码分辨率。对于视频解码，该键是解码器预分配内部缓冲区的分辨率提示。实际解码输出尺寸由OH_MD_KEY_VIDEO_PIC_HEIGHT提供。 虽然该键主要用于控制内存分配，但可参考[OH_AVCapability_GetVideoHeightRange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avcapability-h#oh_avcapability_getvideoheightrange)获取推荐值范围，该接口定义了编解码器支持的解码高度范围。 **起始版本：** 9 **系统能力：** SystemCapability.Multimedia.Media.CodecBase |
 | const char * OH_MD_KEY_PIXEL_FORMAT | 视频像素格式的键，值类型为int32_t，请参见[OH_AVPixelFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avformat-h#oh_avpixelformat)。 **起始版本：** 9 **系统能力：** SystemCapability.Multimedia.Media.CodecBase |
 | const char * OH_MD_KEY_AUDIO_SAMPLE_FORMAT | 音频原始格式的键，值类型为int32_t，请参见[OH_BitsPerSample](#oh_bitspersample)。 **起始版本：** 9 **系统能力：** SystemCapability.Multimedia.Media.CodecBase |
@@ -1095,7 +1095,7 @@ typedef void (*OH_AVCodecOnError)(OH_AVCodec *codec, int32_t errorCode, void *us
 | 音频编解码 | AV_ERR_DRM_DECRYPT_FAILED：DRM解密失败。 |
 | 视频编解码 | AV_ERR_NO_MEMORY：系统资源不足。 AV_ERR_UNKNOWN：未知错误，请通过具体日志分析。 AV_ERR_SERVICE_DIED：服务状态已消亡。 |
 | 视频解码 | AV_ERR_VIDEO_UNSUPPORTED_COLOR_SPACE_CONVERSION：当前输入不支持色彩空间转换功能。 |
-| 视频编码 | AV_ERROR_INPUT_DATA_ERROR： 1. 运行过程中surfacebuffer宽、高超出OH_VideoEncoder_Configure接口配置的宽、高。 2. 配置信息与输入数据比特不一致，如：编码输入数据为8bit而配置为10bit，或编码输入数据为10bit而配置为8bit。 3. 配置了不支持的pixelformat。 |
+| 视频编码 | AV_ERR_INPUT_DATA_ERROR： 1. 运行过程中surfacebuffer宽、高超出OH_VideoEncoder_Configure接口配置的宽、高。 2. 配置信息与输入数据比特不一致，如：编码输入数据为8bit而配置为10bit，或编码输入数据为10bit而配置为8bit。 3. 配置了不支持的pixelformat。 |
 
 系统能力： SystemCapability.Multimedia.Media.CodecBase
 

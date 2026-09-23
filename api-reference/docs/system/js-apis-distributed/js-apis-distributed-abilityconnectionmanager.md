@@ -2,8 +2,8 @@
 title: "@ohos.distributedsched.abilityConnectionManager (应用多端协同管理)"
 upstream_id: "harmonyos-references/js-apis-distributed-abilityconnectionmanager"
 catalog: "harmonyos-references"
-content_hash: "6ce2ffffac1a"
-synced_at: "2026-08-29T18:16:40.478942"
+content_hash: "11bdcc474af9"
+synced_at: "2026-09-23T18:55:28.835584"
 ---
 
 # @ohos.distributedsched.abilityConnectionManager (应用多端协同管理)
@@ -12,7 +12,7 @@ abilityConnectionManager模块提供了应用协同接口管理能力。设备�
 
 多端协同的逻辑分层架构视图如下：
 
-![](./img/zh-cn_image_0000002701800496.png)
+![](./img/zh-cn_image_0000002769333169.png)
 
 逻辑分层架构视图的关键原理说明如下：
 
@@ -66,9 +66,9 @@ createAbilityConnectionSession(serviceName: string, context: Context, peerInfo: 
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 201 | Permission denied. |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types. |
-| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
+| 801 | Capability not supported. Possible causes: Failed to call the API due to limited device capabilities. |
 
 示例：
 

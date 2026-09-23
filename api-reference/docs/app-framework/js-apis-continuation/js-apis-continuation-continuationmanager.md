@@ -2,15 +2,15 @@
 title: "@ohos.continuation.continuationManager (流转/协同管理)"
 upstream_id: "harmonyos-references/js-apis-continuation-continuationmanager"
 catalog: "harmonyos-references"
-content_hash: "0e8259f050c2"
-synced_at: "2026-07-09T00:57:06.151285"
+content_hash: "4f03f4d10630"
+synced_at: "2026-09-23T18:52:58.231856"
 ---
 
 # @ohos.continuation.continuationManager (流转/协同管理)
 
 continuationManager模块提供了流转/协同入口管理服务能力，包括连接/取消流转管理服务，注册/解注册设备连接变化监听，拉起设备选择模块，更新连接状态。
 
-![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 8开始支持，从API version 22开始废弃，建议使用[分布式设备管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager)替代。
+![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 8开始支持，从API version 22开始废弃，建议使用[@ohos.distributedDeviceManager (设备管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager)替代。
 
 本模块接口仅可在Stage模型下使用。
 
@@ -26,7 +26,7 @@ register(callback: AsyncCallback<number>): void
 
 注册流转管理服务，并获取对应的注册token，无过滤条件，使用AsyncCallback方式作为异步方法。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始废弃，建议使用[ondevicestatechange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#ondevicestatechange)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始废弃，建议使用[on('deviceStateChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#ondevicestatechange)替代。
 
 模型约束：此接口仅可在Stage模型下使用。
 
@@ -60,7 +60,7 @@ register(options: ContinuationExtraParams, callback: AsyncCallback<number>): voi
 
 连接流转管理服务，并获取对应的注册token，使用AsyncCallback方式作为异步方法。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始废弃，建议使用[onDeviceStateChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#ondevicestatechange)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始废弃，建议使用[on('deviceStateChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#ondevicestatechange)替代。
 
 模型约束：此接口仅可在Stage模型下使用。
 
@@ -99,7 +99,7 @@ register(options?: ContinuationExtraParams): Promise<number>
 
 连接流转管理服务，并获取对应的注册token，使用Promise方式作为异步方法。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始废弃，建议使用[onDeviceStateChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#ondevicestatechange)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始废弃，建议使用[on('deviceStateChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#ondevicestatechange)替代。
 
 模型约束：此接口仅可在Stage模型下使用。
 
@@ -139,7 +139,7 @@ registerContinuation(callback: AsyncCallback<number>): void
 
 注册流转管理服务，并获取对应的注册token，无过滤条件，使用AsyncCallback方式作为异步方法。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 22开始废弃，建议使用[onDeviceStateChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#ondevicestatechange)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 22开始废弃，建议使用[on('deviceStateChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#ondevicestatechange)替代。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -161,7 +161,7 @@ registerContinuation(callback: AsyncCallback<number>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 201 | Permission denied. |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 16600001 | The system ability works abnormally. |
 | 16600003 | The number of token registration times has reached the upper limit. |
@@ -192,7 +192,7 @@ registerContinuation(options: ContinuationExtraParams, callback: AsyncCallback<n
 
 连接流转管理服务，并获取对应的注册token，使用AsyncCallback方式作为异步方法。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 22开始废弃，建议使用[onDeviceStateChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#ondevicestatechange)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 22开始废弃，建议使用[on('deviceStateChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#ondevicestatechange)替代。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -215,7 +215,7 @@ registerContinuation(options: ContinuationExtraParams, callback: AsyncCallback<n
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 201 | Permission denied. |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 16600001 | The system ability works abnormally. |
 | 16600003 | The number of token registration times has reached the upper limit. |
@@ -250,7 +250,7 @@ registerContinuation(options?: ContinuationExtraParams): Promise<number>
 
 连接流转管理服务，并获取对应的注册token，使用Promise方式作为异步方法。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 22开始废弃，建议使用[onDeviceStateChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#ondevicestatechange)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 22开始废弃，建议使用[on('deviceStateChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#ondevicestatechange)替代。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -278,7 +278,7 @@ registerContinuation(options?: ContinuationExtraParams): Promise<number>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 201 | Permission denied. |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
 | 401 | Parameter error. Possible causes: 1. Incorrect parameter types; 2. Parameter verification failed. |
 | 16600001 | The system ability works abnormally. |
 | 16600003 | The number of token registration times has reached the upper limit. |
@@ -311,7 +311,7 @@ on(type: 'deviceConnect', callback: Callback<ContinuationResult>): void
 
 异步方法，监听设备连接状态，使用Callback形式返回连接的设备信息。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始废弃，建议使用[onDeviceStateChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#ondevicestatechange)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始废弃，建议使用[on('deviceStateChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#ondevicestatechange)替代。
 
 模型约束：此接口仅可在Stage模型下使用。
 
@@ -342,7 +342,7 @@ on(type: 'deviceDisconnect', callback: Callback<string>): void
 
 异步方法，监听设备断开状态，使用Callback形式返回断开的设备信息。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始废弃，建议使用[onDeviceStateChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#ondevicestatechange)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始废弃，建议使用[on('deviceStateChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#ondevicestatechange)替代。
 
 模型约束：此接口仅可在Stage模型下使用。
 
@@ -371,7 +371,7 @@ off(type: 'deviceConnect', callback?: Callback<ContinuationResult>): void
 
 异步方法，取消监听设备连接状态，使用Callback形式返回连接的设备信息。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始废弃，建议使用[offDeviceStateChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#offdevicestatechange)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始废弃，建议使用[off('deviceStateChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#offdevicestatechange)替代。
 
 模型约束：此接口仅可在Stage模型下使用。
 
@@ -402,7 +402,7 @@ off(type: 'deviceDisconnect', callback?: Callback<string>): void
 
 异步方法，取消监听设备断开状态，使用Callback形式返回连接的设备信息。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始废弃，建议使用[offDeviceStateChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#offdevicestatechange)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始废弃，建议使用[off('deviceStateChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#offdevicestatechange)替代。
 
 模型约束：此接口仅可在Stage模型下使用。
 
@@ -431,7 +431,7 @@ on(type: 'deviceSelected', token: number, callback: Callback<Array<ContinuationR
 
 异步方法，监听设备连接状态，使用Callback形式返回连接的设备信息。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 22开始废弃，建议使用[onDeviceStateChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#ondevicestatechange)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 22开始废弃，建议使用[on('deviceStateChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#ondevicestatechange)替代。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -455,7 +455,7 @@ on(type: 'deviceSelected', token: number, callback: Callback<Array<ContinuationR
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 201 | Permission denied. |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 16600001 | The system ability works abnormally. |
 | 16600002 | The specified token or callback is not registered. |
@@ -487,7 +487,7 @@ on(type: 'deviceUnselected', token: number, callback: Callback<Array<Continuatio
 
 异步方法，监听设备断开状态，使用Callback形式返回断开的设备信息。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 22开始废弃，建议使用[onDeviceStateChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#ondevicestatechange)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 22开始废弃，建议使用[on('deviceStateChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#ondevicestatechange)替代。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -511,7 +511,7 @@ on(type: 'deviceUnselected', token: number, callback: Callback<Array<Continuatio
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 201 | Permission denied. |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 16600001 | The system ability works abnormally. |
 | 16600002 | The specified token or callback is not registered. |
@@ -544,7 +544,7 @@ off(type: 'deviceSelected', token: number): void
 
 取消监听设备连接状态。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 22开始废弃，建议使用[offDeviceStateChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#offdevicestatechange)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 22开始废弃，建议使用[off('deviceStateChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#offdevicestatechange)替代。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -567,7 +567,7 @@ off(type: 'deviceSelected', token: number): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 201 | Permission denied. |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 16600001 | The system ability works abnormally. |
 | 16600002 | The specified token or callback is not registered. |
@@ -592,7 +592,7 @@ off(type: 'deviceUnselected', token: number): void
 
 取消监听设备断开状态。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 22开始废弃，建议使用[offDeviceStateChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#offdevicestatechange)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 22开始废弃，建议使用[off('deviceStateChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#offdevicestatechange)替代。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -615,7 +615,7 @@ off(type: 'deviceUnselected', token: number): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 201 | Permission denied. |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 16600001 | The system ability works abnormally. |
 | 16600002 | The specified token or callback is not registered. |
@@ -780,7 +780,7 @@ startContinuationDeviceManager(token: number, callback: AsyncCallback<void>): vo
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 201 | Permission denied. |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 16600001 | The system ability works abnormally. |
 | 16600002 | The specified token or callback is not registered. |
@@ -834,7 +834,7 @@ startContinuationDeviceManager(token: number, options: ContinuationExtraParams, 
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 201 | Permission denied. |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 16600001 | The system ability works abnormally. |
 | 16600002 | The specified token or callback is not registered. |
@@ -898,7 +898,7 @@ startContinuationDeviceManager(token: number, options?: ContinuationExtraParams)
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 201 | Permission denied. |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
 | 401 | Parameter error. Possible causes: 1. Incorrect parameter types; 2. Parameter verification failed. |
 | 16600001 | The system ability works abnormally. |
 | 16600002 | The specified token or callback is not registered. |
@@ -1036,7 +1036,7 @@ updateContinuationState(token: number, deviceId: string, status: DeviceConnectSt
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 201 | Permission denied. |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 16600001 | The system ability works abnormally. |
 | 16600002 | The specified token or callback is not registered. |
@@ -1097,7 +1097,7 @@ updateContinuationState(token: number, deviceId: string, status: DeviceConnectSt
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 201 | Permission denied. |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 16600001 | The system ability works abnormally. |
 | 16600002 | The specified token or callback is not registered. |
@@ -1129,7 +1129,7 @@ unregister(token: number, callback: AsyncCallback<void>): void
 
 解注册流转管理服务，传入注册时获取的token进行解注册，使用AsyncCallback方式作为异步方法。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始废弃，建议使用[offDeviceStateChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#offdevicestatechange)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始废弃，建议使用[off('deviceStateChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#offdevicestatechange)替代。
 
 模型约束：此接口仅可在Stage模型下使用。
 
@@ -1163,7 +1163,7 @@ unregister(token: number): Promise<void>
 
 解注册流转管理服务，传入注册时获取的token进行解注册，使用Promise方式作为异步方法。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始废弃，建议使用[offDeviceStateChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#offdevicestatechange)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始废弃，建议使用[off('deviceStateChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#offdevicestatechange)替代。
 
 模型约束：此接口仅可在Stage模型下使用。
 
@@ -1202,7 +1202,7 @@ unregisterContinuation(token: number, callback: AsyncCallback<void>): void
 
 解注册流转管理服务，传入注册时获取的token进行解注册，使用AsyncCallback方式作为异步方法。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 22开始废弃，建议使用[offDeviceStateChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#offdevicestatechange)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 22开始废弃，建议使用[off('deviceStateChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#offdevicestatechange)替代。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -1225,7 +1225,7 @@ unregisterContinuation(token: number, callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 201 | Permission denied. |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 16600001 | The system ability works abnormally. |
 | 16600002 | The specified token or callback is not registered. |
@@ -1255,7 +1255,7 @@ unregisterContinuation(token: number): Promise<void>
 
 解注册流转管理服务，传入注册时获取的token进行解注册，使用Promise方式作为异步方法。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 22开始废弃，建议使用[offDeviceStateChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#offdevicestatechange)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 22开始废弃，建议使用[off('deviceStateChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#offdevicestatechange)替代。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -1283,7 +1283,7 @@ unregisterContinuation(token: number): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 201 | Permission denied. |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 16600001 | The system ability works abnormally. |
 | 16600002 | The specified token or callback is not registered. |

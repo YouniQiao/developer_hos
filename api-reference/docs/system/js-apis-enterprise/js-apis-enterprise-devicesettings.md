@@ -2,8 +2,8 @@
 title: "@ohos.enterprise.deviceSettings (设备设置管理)"
 upstream_id: "harmonyos-references/js-apis-enterprise-devicesettings"
 catalog: "harmonyos-references"
-content_hash: "936034ab6176"
-synced_at: "2026-09-17T18:53:31.476352"
+content_hash: "9eef46bfcb84"
+synced_at: "2026-09-23T18:56:00.753102"
 ---
 
 # @ohos.enterprise.deviceSettings (设备设置管理)
@@ -639,9 +639,9 @@ setSwitchStatus(admin: Want, key: SwitchKey, status: SwitchStatus): void
 
 设置开关的状态。支持设置星闪、蓝牙、Wi-Fi、NFC的状态为开启或关闭，设置完毕后，用户可以手动开关。支持设置蓝牙、NFC的状态为强制开启，设置完毕后，用户不可以手动开关。若已经通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated) 接口禁用了某个开关，则通过本接口设置这个开关的状态会抛出错误码203，需通过[setDisallowedPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-restrictions#restrictionssetdisallowedpolicydeprecated) 接口解除该开关禁用策略。当设备有多个MDM应用时，各MDM应用设置开关状态不存在冲突，最后设置的策略生效。开启（用户可手动开启、关闭）、关闭（用户可手动开启、关闭）、强制开启（用户不可手动关闭）三个状态可以随意切换，也不存在冲突。
 
-起始版本： 26.0.0
-
 ![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)规则。
+
+起始版本： 26.0.0
 
 需要权限： ohos.permission.ENTERPRISE_MANAGE_SETTINGS 或 ohos.permission.PERSONAL_MANAGE_RESTRICTIONS
 
@@ -705,7 +705,7 @@ try {
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
 | DEVICE_NAME | 0 | 设备名称。 |
-| FLOATING_NAVIGATION24+ | 1 | 三键导航。 |
+| FLOATING_NAVIGATION | 1 | 三键导航。 |
 
 #### SettingsMenu24+
 

@@ -2,8 +2,8 @@
 title: "@ohos.account.osAccount (系统账号管理)"
 upstream_id: "harmonyos-references/js-apis-osaccount"
 catalog: "harmonyos-references"
-content_hash: "a626f70249b8"
-synced_at: "2026-08-29T18:16:55.105620"
+content_hash: "8516ebae75d9"
+synced_at: "2026-09-23T18:55:45.956297"
 ---
 
 # @ohos.account.osAccount (系统账号管理)
@@ -1473,7 +1473,6 @@ getCurrentOsAccount(callback: AsyncCallback<OsAccountInfo>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. |
 | 12300001 | The system service works abnormally. |
 
 示例：

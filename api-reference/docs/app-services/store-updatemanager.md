@@ -2,8 +2,8 @@
 title: "updateManager（更新功能）"
 upstream_id: "harmonyos-references/store-updatemanager"
 catalog: "harmonyos-references"
-content_hash: "64bba3f41ab0"
-synced_at: "2026-07-28T16:52:33.996734"
+content_hash: "675424435d00"
+synced_at: "2026-09-23T18:57:15.228058"
 ---
 
 # updateManager（更新功能）
@@ -392,10 +392,33 @@ off(type: 'updateChange', callback?: Callback<UpdateSessionState>): void
 ```
 import { updateManager } from '@kit.AppGalleryKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
-try {
-  // 取消监听
-  updateManager.off('updateChange');
-} catch (error) {
-  hilog.error(0, 'TAG', `moduleInstallManager.off onError.code is ${error.code}, message is ${error.message}`);
+
+@Entry
+@Component
+struct Index {
+  @State message: string = 'off'
+
+  build() {
+    Row() {
+      Column() {
+        Text(this.message)
+          .fontSize(50)
+          .fontWeight(FontWeight.Bold)
+          .onClick(() => this.Off)
+      }
+      .width('100%')
+    }
+    .height('100%')
+  }
+
+  private Off() {
+
+    try {
+      // 取消监听
+      updateManager.off('updateChange');
+    } catch (error) {
+      hilog.error(0, 'TAG', `off onError.code is ${error.code}, message is ${error.message}`);
+    }
+  }
 }
 ```

@@ -2,8 +2,8 @@
 title: "WantAgentInfo"
 upstream_id: "harmonyos-references/js-apis-inner-wantagent-wantagentinfo"
 catalog: "harmonyos-references"
-content_hash: "bebb7048879a"
-synced_at: "2026-07-28T16:40:40.979551"
+content_hash: "45350f199ccc"
+synced_at: "2026-09-23T18:53:02.761083"
 ---
 
 # WantAgentInfo
@@ -15,7 +15,7 @@ WantAgentInfo用于定义触发WantAgent所需要的信息，可作为[getWantAg
 #### 导入模块
 
 ```
-import { wantAgent as abilityWantAgent } from '@kit.AbilityKit';
+import { wantAgent } from '@kit.AbilityKit';
 ```
 
 #### WantAgentInfo

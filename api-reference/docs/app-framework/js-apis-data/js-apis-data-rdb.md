@@ -2,8 +2,8 @@
 title: "@ohos.data.rdb (关系型数据库)"
 upstream_id: "harmonyos-references/js-apis-data-rdb"
 catalog: "harmonyos-references"
-content_hash: "d5babddc0144"
-synced_at: "2026-09-17T18:50:27.915437"
+content_hash: "37dedd1609eb"
+synced_at: "2026-09-23T18:53:09.632678"
 ---
 
 # @ohos.data.rdb (关系型数据库)
@@ -1579,7 +1579,6 @@ query(predicates: RdbPredicates, columns: Array<string>, callback: AsyncCallback
 | --- | --- | --- | --- |
 | predicates | [RdbPredicates](#rdbpredicates) | 是 | RdbPredicates的实例对象指定的查询条件。 |
 | columns | Array | 是 | 表示要查询的列。如果值为空，则查询应用于所有列。 |
-| callback | AsyncCallback | 是 | 回调函数。当查询成功，err为undefined，data为获取到的ResultSet对象；否则为错误对象。 |
 | callback | AsyncCallback | 是 | 回调函数。当操作成功，err为undefined，data为ResultSet对象；否则为错误对象。 |
 
 示例：
@@ -1646,7 +1645,6 @@ querySql(sql: string, bindArgs: Array<ValueType>, callback: AsyncCallback<Result
 | --- | --- | --- | --- |
 | sql | string | 是 | 指定要执行的SQL语句，不能为空字符串。 |
 | bindArgs | Array | 是 | SQL语句中参数的值。该值与sql参数语句中的占位符相对应。当sql参数语句完整时，该参数需为空数组。 |
-| callback | AsyncCallback | 是 | 回调函数。当查询成功，err为undefined，data为获取到的ResultSet对象；否则为错误对象。 |
 | callback | AsyncCallback | 是 | 回调函数。当操作成功，err为undefined，data为ResultSet对象；否则为错误对象。 |
 
 示例：

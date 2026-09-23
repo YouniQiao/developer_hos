@@ -2,8 +2,8 @@
 title: "external_window.h"
 upstream_id: "harmonyos-references/capi-external-window-h"
 catalog: "harmonyos-references"
-content_hash: "c8366972446f"
-synced_at: "2026-08-29T18:17:56.862086"
+content_hash: "3e7cbc54ac02"
+synced_at: "2026-09-23T18:57:01.761351"
 ---
 
 # external_window.h
@@ -29,7 +29,7 @@ synced_at: "2026-08-29T18:17:56.862086"
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
 | [Region](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativewindow-region) | Region | 表示本地窗口OHNativeWindow需要更新内容的矩形区域（脏区）。 |
-| [Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativewindow-rect) | - | 如果rects是空指针nullptr，默认Buffer大小为脏区。 |
+| [Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativewindow-rect) | - | 定义矩形区域的结构体，包含矩形框的起始坐标和宽高信息。 |
 | [OHHDRMetaData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativewindow-ohhdrmetadata) | OHHDRMetaData | HDR元数据结构体定义。 |
 | [OHExtDataHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativewindow-ohextdatahandle) | OHExtDataHandle | 扩展数据句柄结构体定义。 |
 | [OHIPCParcel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativewindow-ohipcparcel) | OHIPCParcel | 提供对IPC序列化对象的访问功能。 |

@@ -2,8 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/push-error-code"
 catalog: "harmonyos-references"
-content_hash: "2f14d92f645c"
-synced_at: "2026-08-03T17:12:39.223579"
+content_hash: "4ad7090ab452"
+synced_at: "2026-09-23T18:57:34.167401"
 ---
 
 # ArkTS API错误码
@@ -109,11 +109,11 @@ Failed to connect to the AAID service.
 
 错误描述
 
-当连接PushService发生错误时，将返回该错误码。
+当连接AAID服务发生错误时，将返回该错误码。
 
 可能原因
 
-PushService运行异常。
+AAID服务运行异常。
 
 处理步骤
 
@@ -127,11 +127,11 @@ Internal error of the AAID service.
 
 错误描述
 
-PushService内部处理任务时发生异常，将返回该错误码。
+AAID服务内部处理任务时发生异常，将返回该错误码。
 
 可能原因
 
-PushService内部处理超时或异常。
+AAID服务内部处理超时或异常。
 
 处理步骤
 
@@ -448,7 +448,7 @@ Failed to display subscription UI.
 
 错误描述
 
-当展示订阅通知授权弹框失败，将返回该错误码。
+当展示订阅通知授权弹窗失败，将返回该错误码。
 
 可能原因
 

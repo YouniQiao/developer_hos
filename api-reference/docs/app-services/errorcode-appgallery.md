@@ -2,8 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-appgallery"
 catalog: "harmonyos-references"
-content_hash: "3e3723b40c60"
-synced_at: "2026-08-29T18:18:12.956491"
+content_hash: "01d61a7fac44"
+synced_at: "2026-09-23T18:57:15.941063"
 ---
 
 # ArkTS API错误码
@@ -353,7 +353,7 @@ The timeout parameter for the on API is invalid.
 
 错误描述
 
-On接口参数timeout校验异常。
+on接口参数timeout校验异常。
 
 可能原因
 
@@ -1186,7 +1186,7 @@ Invalid shortcutId.
 
 处理步骤
 
-检查删除快捷方式接口的传参shortcut是否正确。
+检查[删除快捷方式](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-productviewmanager#productviewmanagerremovepinshortcut)接口的传参shortcutId是否正确。
 
 #### 1006620013 用户取消删除快捷方式
 
@@ -1602,11 +1602,11 @@ Failed to connect to AppGallery.
 
 #### 1021500004 参数写入异常
 
-#### [h2]get appInfo failed or init coment SDK failed
+#### [h2]get appInfo failed or init comment SDK failed
 
 错误信息
 
-Failed to write parameters, possible cause: get appInfo failed or init coment SDK failed.
+Failed to write parameters, possible cause: get appInfo failed or init comment SDK failed.
 
 错误描述
 

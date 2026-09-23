@@ -2,15 +2,15 @@
 title: "@ohos.faultLogger (故障日志获取)"
 upstream_id: "harmonyos-references/js-apis-faultlogger"
 catalog: "harmonyos-references"
-content_hash: "a85b1c86e38f"
-synced_at: "2026-09-20T18:03:42.307626"
+content_hash: "9766996157a8"
+synced_at: "2026-09-23T18:56:11.993713"
 ---
 
 # @ohos.faultLogger (故障日志获取)
 
 应用可以使用faultLogger接口查询系统侧缓存的当前应用的故障日志。接口以应用包名和系统分配的UID作为唯一键值。
 
-系统侧保存的应用故障日志数量受系统日志的压力限制，推荐使用[@ohos.hiviewdfx.hiAppEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hiviewdfx-hiappevent)订阅APP_CRASH及APP_FREEZE等故障事件。
+系统侧保存的故障信息与应用故障日志受系统压力限制，会被老化删除。故障信息被老化后会查询不到结果。故障信息存在但故障日志文件被老化后查询的故障信息数据结构中fullLog会打印错误信息Fail to get log, fd is -1。推荐使用[@ohos.hiviewdfx.hiAppEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hiviewdfx-hiappevent)订阅APP_CRASH及APP_FREEZE等故障事件。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 8开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 

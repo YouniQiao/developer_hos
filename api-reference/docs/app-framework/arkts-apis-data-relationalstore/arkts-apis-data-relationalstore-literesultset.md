@@ -2,8 +2,8 @@
 title: "Class (LiteResultSet)"
 upstream_id: "harmonyos-references/arkts-apis-data-relationalstore-literesultset"
 catalog: "harmonyos-references"
-content_hash: "f240e04e5d18"
-synced_at: "2026-07-28T16:40:49.295426"
+content_hash: "1291bfbc97c6"
+synced_at: "2026-09-23T18:53:08.733077"
 ---
 
 # Class (LiteResultSet)
@@ -915,7 +915,7 @@ async function getRowsExample(store : relationalStore.RdbStore) {
       let rows: Array<relationalStore.ValuesBucket>;
       let maxCount: number = 50;
       // 从结果集的当前行（默认首次获取数据时为当前结果集的第一行，后续为上次获取数据结束位置的下一行）开始获取数据
-      // getRows会自动移动结果集当前行到上次getRows获取结束位置的下一行，goToNextRow等接口移动
+      // getRows会自动移动结果集当前行到上次getRows获取结束位置的下一行，无需使用goToFirstRow、goToNextRow等接口移动
       while ((rows = await resultSet.getRows(maxCount)).length != 0) {
         console.info(JSON.stringify(rows[0]));
       }

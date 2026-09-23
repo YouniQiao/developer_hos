@@ -2,8 +2,8 @@
 title: "@ohos.enterprise.securityManager (安全管理)"
 upstream_id: "harmonyos-references/js-apis-enterprise-securitymanager"
 catalog: "harmonyos-references"
-content_hash: "9ccc9ce4e854"
-synced_at: "2026-09-17T18:53:32.311119"
+content_hash: "e53c59a9b8ab"
+synced_at: "2026-09-23T18:56:01.173906"
 ---
 
 # @ohos.enterprise.securityManager (安全管理)
@@ -331,7 +331,7 @@ setPasswordPolicy(admin: Want, policy: PasswordPolicy): void
 
 设置设备锁屏口令策略。策略设置后，当用户设置锁屏口令时，如果设置的锁屏口令不符合要求，会有安全提示重新设置锁屏口令。适用于企业安全合规场景，如强制要求员工使用强密码、定期更换密码等，降低企业数据泄露风险。
 
-![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)规则。
+![](./img/note_3.0-zh-cn.png) 在多个MDM应用场景下，遵循[配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm#规则3配置)规则，任意MDM应用取消激活时，该应用设置的设备锁屏口令策略会被清除。
 
 需要权限： ohos.permission.ENTERPRISE_MANAGE_SECURITY
 

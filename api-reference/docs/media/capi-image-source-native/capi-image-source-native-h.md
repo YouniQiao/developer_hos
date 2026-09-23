@@ -2,8 +2,8 @@
 title: "image_source_native.h"
 upstream_id: "harmonyos-references/capi-image-source-native-h"
 catalog: "harmonyos-references"
-content_hash: "6b1030bbf4eb"
-synced_at: "2026-07-28T16:51:51.179585"
+content_hash: "f31b5474bfba"
+synced_at: "2026-09-23T18:56:40.939907"
 ---
 
 # image_source_native.h
@@ -80,7 +80,7 @@ synced_at: "2026-07-28T16:51:51.179585"
 | [Image_ErrorCode OH_ImageSourceNative_CreateFromDataWithUserBuffer(uint8_t *data, size_t datalength, OH_ImageSourceNative **imageSource)](#oh_imagesourcenative_createfromdatawithuserbuffer) | 由数据缓存创建图片源。传入的数据缓存将在图片源对象中直接访问，在图片源对象的生命周期内，数据缓存需要保持可用。 |
 | [Image_ErrorCode OH_ImageSourceNative_CreateFromRawFile(RawFileDescriptor *rawFile, OH_ImageSourceNative **res)](#oh_imagesourcenative_createfromrawfile) | 通过图像资源文件的RawFileDescriptor创建OH_ImageSourceNative指针。 |
 | [Image_ErrorCode OH_ImageSourceNative_CreatePixelmap(OH_ImageSourceNative *source, OH_DecodingOptions *options, OH_PixelmapNative **pixelmap)](#oh_imagesourcenative_createpixelmap) | 通过图片解码参数创建OH_PixelmapNative指针。 |
-| [Image_ErrorCode OH_ImageSourceNative_CreatePixelmapUsingAllocator(OH_ImageSourceNative *source, OH_DecodingOptions *options, IMAGE_ALLOCATOR_TYPE allocator, OH_PixelmapNative **pixelmap)](#oh_imagesourcenative_createpixelmapusingallocator) | 根据解码参数创建一个PixelMap，PixelMap使用的内存类型可以通过allocatorType来指定。 默认情况下，系统会根据图像类型、图像大小、平台能力等选择内存类型。在处理通过此接口返回的PixelMap时，请始终考虑步幅（stride）的影响。 |
+| [Image_ErrorCode OH_ImageSourceNative_CreatePixelmapUsingAllocator(OH_ImageSourceNative *source, OH_DecodingOptions *options, IMAGE_ALLOCATOR_TYPE allocator, OH_PixelmapNative **pixelmap)](#oh_imagesourcenative_createpixelmapusingallocator) | 根据解码参数创建PixelMap，通过allocator指定内存类型。传入IMAGE_ALLOCATOR_TYPE_AUTO时，由系统自动选择共享内存或DMA内存；需要指定内存类型时，传入IMAGE_ALLOCATOR_TYPE_DMA或IMAGE_ALLOCATOR_TYPE_SHARE_MEMORY。在处理此接口返回的PixelMap时，应考虑步幅（stride）的影响。 |
 | [Image_ErrorCode OH_ImageSourceNative_CreatePixelmapList(OH_ImageSourceNative *source, OH_DecodingOptions *options, OH_PixelmapNative *resVecPixMap[], size_t size)](#oh_imagesourcenative_createpixelmaplist) | 通过图片解码参数创建OH_PixelmapNative数组。 注意，此接口会一次性解码全部帧，当帧数过多或单帧图像过大时，会占用较大内存，造成系统内存紧张，此种情况推荐使用Image组件显示动图，Image组件采用逐帧解码，占用内存比此接口少。 |
 | [Image_ErrorCode OH_ImageSourceNative_CreatePicture(OH_ImageSourceNative *source, OH_DecodingOptionsForPicture *options, OH_PictureNative **picture)](#oh_imagesourcenative_createpicture) | 通过图片解码创建OH_PictureNative指针。 |
 | [Image_ErrorCode OH_ImageSourceNative_CreatePictureAtIndex(OH_ImageSourceNative *source, uint32_t index, OH_PictureNative **picture)](#oh_imagesourcenative_createpictureatindex) | 通过指定序号的图片解码创建OH_PictureNative指针。 |
@@ -166,7 +166,7 @@ enum Image_CropAndScaleStrategy
 
 对于jpeg、webp图片（部分dng图片解码时会优先解码图片中的jpeg预览图，在此场景下也会被视为jpeg图片格式）会先进行下采样，例如按照7/8下采样，再基于175x175的图片大小进行区域裁剪，因此最终的区域内容稍大于原图的左上角1/4区域。
 
-对于svg图片，由于是矢量图，可以任意缩放不损失清晰度，在解码时会根据desiredSize与原图Size的比例选择缩放比例，在基于缩放后的图片大小进行区域裁剪，因此最终返回的解码区域会有所差异。
+对于svg图片，由于是矢量图，可以任意缩放不损失清晰度，在解码时会根据desiredSize与原图Size的比例选择缩放比例，再基于缩放后的图片大小进行区域裁剪，因此最终返回的解码区域会有所差异。
 
 针对该场景，建议在解码选项同时设置了desiredRegion与desiredSize时，参数Image_CropAndScaleStrategy应传入CROP_FIRST参数保证效果一致。
 
@@ -953,6 +953,8 @@ Image_ErrorCode OH_ImageSourceNative_CreatePixelmap(OH_ImageSourceNative *source
 
 通过图片解码参数创建OH_PixelmapNative指针。
 
+系统自动选择共享内存或DMA内存。从API version 15开始，需要指定内存类型时，应调用[OH_ImageSourceNative_CreatePixelmapUsingAllocator()](#oh_imagesourcenative_createpixelmapusingallocator)，将allocator设置为IMAGE_ALLOCATOR_TYPE_DMA或IMAGE_ALLOCATOR_TYPE_SHARE_MEMORY。相关说明请参见[系统默认的内存分配方式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-allocator-type-c#系统默认的内存分配方式)。
+
 使用场景：适用于将JPEG、PNG、WebP、GIF单帧等编码图片解码为可读取、处理或再编码的PixelMap。解码前可通过OH_DecodingOptions设置帧序号、目标像素格式、目标尺寸、裁剪区域、期望动态范围等参数。
 
 使用约束：source、options和pixelmap均不能为空指针。调用前需先创建OH_ImageSourceNative对象；如需自定义解码参数，需先创建并设置OH_DecodingOptions对象。接口执行成功后，pixelmap指向新创建的OH_PixelmapNative对象；接口执行失败时，不应使用pixelmap指向的对象。
@@ -982,9 +984,7 @@ Image_ErrorCode OH_ImageSourceNative_CreatePixelmapUsingAllocator(OH_ImageSource
 ```
  描述
 
-根据解码参数创建一个PixelMap，PixelMap使用的内存类型可以通过allocatorType来指定。
-
-默认情况下，系统会根据图像类型、图像大小、平台能力等选择内存类型。在处理通过此接口返回的PixelMap时，请始终考虑步幅（stride）的影响。
+根据解码参数创建PixelMap，通过allocator指定内存类型。传入IMAGE_ALLOCATOR_TYPE_AUTO时，由系统自动选择共享内存或DMA内存；需要指定内存类型时，传入IMAGE_ALLOCATOR_TYPE_DMA或IMAGE_ALLOCATOR_TYPE_SHARE_MEMORY。在处理此接口返回的PixelMap时，应考虑步幅（stride）的影响。
 
 使用场景：适用于调用方需要明确指定PixelMap内存类型的场景。例如，后续图像处理链路要求DMA内存时，可指定IMAGE_ALLOCATOR_TYPE_DMA。
 
@@ -1000,7 +1000,7 @@ Image_ErrorCode OH_ImageSourceNative_CreatePixelmapUsingAllocator(OH_ImageSource
 | --- | --- |
 | [OH_ImageSourceNative](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image-nativemodule-oh-imagesourcenative) *source | 被操作的OH_ImageSourceNative指针。 |
 | [OH_DecodingOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image-nativemodule-oh-decodingoptions) *options | 解码参数。 |
-| [IMAGE_ALLOCATOR_TYPE](#image_allocator_type) allocator | 指示返回的PixelMap将使用哪种内存类型。 |
+| [IMAGE_ALLOCATOR_TYPE](#image_allocator_type) allocator | PixelMap的内存类型。传入IMAGE_ALLOCATOR_TYPE_AUTO时由系统自动选择共享内存或DMA内存；需要指定内存类型时，传入IMAGE_ALLOCATOR_TYPE_DMA或IMAGE_ALLOCATOR_TYPE_SHARE_MEMORY。 |
 | [OH_PixelmapNative](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image-nativemodule-oh-pixelmapnative) **pixelmap | 指向c++本地层创建的OH_PixelmapNative对象的指针。 |
 
 返回：
@@ -1333,7 +1333,7 @@ Image_ErrorCode OH_ImageSourceNative_GetImagePropertyString(OH_ImageSourceNative
 | --- | --- |
 | [OH_ImageSourceNative](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image-nativemodule-oh-imagesourcenative) *source | 被查询属性的ImageSource。 |
 | [Image_String](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image-nativemodule-image-string) *key | 被查询的属性。 |
-| char *value | 被查询属性的查询结果。输出参数。调用者需要管理内存应用程序并释放。 |
+| char *value | 被查询属性的查询结果。输出参数。调用者需要管理内存并释放。 |
 | size_t size | 字符串长度。 |
 
 返回：
@@ -1369,7 +1369,7 @@ Image_ErrorCode OH_ImageSourceNative_GetImagePropertyIntArray(OH_ImageSourceNati
 | --- | --- |
 | [OH_ImageSourceNative](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image-nativemodule-oh-imagesourcenative) *source | 被查询属性的ImageSource。 |
 | [Image_String](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image-nativemodule-image-string) *key | 被查询的属性。 |
-| int32_t *value | 被查询属性的查询结果。输出参数。调用者需要管理内存应用程序并释放。 |
+| int32_t *value | 被查询属性的查询结果。输出参数。调用者需要管理内存并释放。 |
 | size_t size | 字符串长度。 |
 
 返回：
@@ -1405,7 +1405,7 @@ Image_ErrorCode OH_ImageSourceNative_GetImagePropertyDoubleArray(OH_ImageSourceN
 | --- | --- |
 | [OH_ImageSourceNative](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image-nativemodule-oh-imagesourcenative) *source | 被查询属性的ImageSource。 |
 | [Image_String](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image-nativemodule-image-string) *key | 被查询的属性。 |
-| double *value | 被查询属性的查询结果。输出参数。调用者需要管理内存应用程序并释放。 |
+| double *value | 被查询属性的查询结果。输出参数。调用者需要管理内存并释放。 |
 | size_t size | 数组长度。 |
 
 返回：
@@ -1441,7 +1441,7 @@ Image_ErrorCode OH_ImageSourceNative_GetImagePropertyBlob(OH_ImageSourceNative *
 | --- | --- |
 | [OH_ImageSourceNative](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image-nativemodule-oh-imagesourcenative) *source | 被查询属性的ImageSource。 |
 | [Image_String](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image-nativemodule-image-string) *key | 被查询的属性。 |
-| void *value | 被查询属性的查询结果。输出参数。调用者需要管理内存应用程序并释放。 |
+| void *value | 被查询属性的查询结果。输出参数。调用者需要管理内存并释放。 |
 | size_t size | 数组长度。 |
 
 返回：

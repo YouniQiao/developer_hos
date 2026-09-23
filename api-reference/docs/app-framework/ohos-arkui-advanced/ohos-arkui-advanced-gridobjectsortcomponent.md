@@ -2,8 +2,8 @@
 title: "GridObjectSortComponent"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-gridobjectsortcomponent"
 catalog: "harmonyos-references"
-content_hash: "0a2512006ebf"
-synced_at: "2026-08-29T18:15:13.076737"
+content_hash: "f8ed09337ef8"
+synced_at: "2026-09-23T18:54:14.991270"
 ---
 
 # GridObjectSortComponent
@@ -164,15 +164,15 @@ struct Index {
           select: Array<GridObjectSortComponentItem>,
           unselect: Array<GridObjectSortComponentItem>
         ) => {
-          // save ToDo
+          // 实现保存数据的逻辑
         },
         // 取消保存数据的回调。
         onCancel: () =>{
-          // cancel ToDo
+          // 实现取消编辑的逻辑
         }
       })
     }
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701800068.gif)
+ ![](./img/zh-cn_image_0000002739893270.gif)

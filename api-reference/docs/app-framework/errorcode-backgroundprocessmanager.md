@@ -2,8 +2,8 @@
 title: "backgroundProcessManager错误码"
 upstream_id: "harmonyos-references/errorcode-backgroundprocessmanager"
 catalog: "harmonyos-references"
-content_hash: "86f9bbad6872"
-synced_at: "2026-07-09T00:58:57.846418"
+content_hash: "073a0677ef2f"
+synced_at: "2026-09-23T18:54:57.977878"
 ---
 
 # backgroundProcessManager错误码
@@ -34,7 +34,7 @@ Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 
 
 错误信息
 
-Setup error, This setting is overridden by setting in Task Manager.
+Setup error, This setting is overridden by settings in Task Manager.
 
 错误描述
 

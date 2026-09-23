@@ -2,8 +2,8 @@
 title: "@ohos.application.DistributedExtensionAbility (协同Extension)"
 upstream_id: "harmonyos-references/js-apis-distributedextensionability"
 catalog: "harmonyos-references"
-content_hash: "c8703d37ef32"
-synced_at: "2026-08-29T18:16:40.056897"
+content_hash: "1a063a205093"
+synced_at: "2026-09-23T18:55:28.760601"
 ---
 
 # @ohos.application.DistributedExtensionAbility (协同Extension)
@@ -18,7 +18,7 @@ DistributedExtensionAbility（分布式扩展能力）模块提供了面向多�
 
 协同Extension的核心类结构及其与上下文、自定义子类的关系如下图所示。
 
-![](./img/zh-cn_image_0000002731519783.png)
+![](./img/zh-cn_image_0000002769453031.png)
 
 如上图所示：
 
@@ -117,11 +117,10 @@ import { AbilityConstant } from '@kit.AbilityKit';
 export default class DistributedExtension extends DistributedExtensionAbility {
   onCollaborate(wantParam: Record<string, Object>) {
     console.info(`DistributedExtension onCollabRequest Accept to the result of Ability collaborate`);
-    let sessionId = -1;
     const collaborationValues = wantParam["CollaborationValues"] as abilityConnectionManager.CollaborationValues;
     if (!collaborationValues) {
       console.error('Failed to get collaborationValues.');
-      return sessionId;
+      return AbilityConstant.CollaborateResult.REJECT;
     }
     console.info(`onCollab, collaborationValues: ${JSON.stringify(collaborationValues)}`);
     return AbilityConstant.CollaborateResult.ACCEPT;

@@ -2,8 +2,8 @@
 title: "ModuleInstall"
 upstream_id: "harmonyos-references/store-c-moduleinstall"
 catalog: "harmonyos-references"
-content_hash: "1cbee51a47ed"
-synced_at: "2026-07-28T16:52:34.607756"
+content_hash: "49d530487adf"
+synced_at: "2026-09-23T18:57:15.632329"
 ---
 
 # ModuleInstall
@@ -228,8 +228,8 @@ ModuleInstall_ErrCode HMS_ModuleInstall_GetInstalledModule(const char *moduleNam
 
 | 名称 | 描述 |
 | --- | --- |
-| char *moduleName | 模块名。 |
-| int length | 模块名长度，最大长度512。 |
+| const char *moduleName | 模块名。 |
+| unsigned int length | 模块名长度，最大长度512。 |
 | [ModuleInstall_InstalledModule](#moduleinstall_installedmodule) **installedModule | 模块信息。 |
 
 返回：
@@ -322,10 +322,10 @@ ModuleInstall_ErrCode HMS_ModuleInstall_FetchModules(const char *bundleName, uns
 
 | 名称 | 描述 |
 | --- | --- |
-| char *bundleName | 包名。 |
-| int length | 包名长度，最大长度512。 |
+| const char *bundleName | 包名。 |
+| unsigned int length | 包名长度，最大长度512。 |
 | char **moduleNames | 模块名数组。 |
-| int moduleNamesLength | 模块名数组长度，最大长度512。 |
+| unsigned int moduleNamesLength | 模块名数组长度，最大长度512。 |
 | [ModuleInstall_FetchModulesResult](#moduleinstall_fetchmodulesresult) **fetchModulesResult | 模块安装结果。 |
 
 返回：
@@ -372,7 +372,7 @@ ModuleInstall_TaskStatus HMS_ModuleInstall_GetFetchModulesTaskStatus(const Modul
 
 | 名称 | 描述 |
 | --- | --- |
-| [ModuleInstall_FetchModulesResult](#moduleinstall_fetchmodulesresult) *fetchModulesResult | 模块安装结果。 |
+| const [ModuleInstall_FetchModulesResult](#moduleinstall_fetchmodulesresult) *fetchModulesResult | 模块安装结果。 |
 
 返回：
 
@@ -395,7 +395,7 @@ char *HMS_ModuleInstall_GetFetchModulesTaskId(const ModuleInstall_FetchModulesRe
 
 | 名称 | 描述 |
 | --- | --- |
-| [ModuleInstall_FetchModulesResult](#moduleinstall_fetchmodulesresult) *fetchModulesResult | 模块安装结果。 |
+| const [ModuleInstall_FetchModulesResult](#moduleinstall_fetchmodulesresult) *fetchModulesResult | 模块安装结果。 |
 
 返回：
 
@@ -418,7 +418,7 @@ char *HMS_ModuleInstall_GetFetchModulesDesc(const ModuleInstall_FetchModulesResu
 
 | 名称 | 描述 |
 | --- | --- |
-| [ModuleInstall_FetchModulesResult](#moduleinstall_fetchmodulesresult) *fetchModulesResult | 模块安装结果。 |
+| const [ModuleInstall_FetchModulesResult](#moduleinstall_fetchmodulesresult) *fetchModulesResult | 模块安装结果。 |
 
 返回：
 
@@ -441,7 +441,7 @@ char* HMS_ModuleInstall_GetFetchModules(const ModuleInstall_FetchModulesResult *
 
 | 名称 | 描述 |
 | --- | --- |
-| [ModuleInstall_FetchModulesResult](#moduleinstall_fetchmodulesresult) *fetchModulesResult | 模块安装结果。 |
+| const [ModuleInstall_FetchModulesResult](#moduleinstall_fetchmodulesresult) *fetchModulesResult | 模块安装结果。 |
 
 返回：
 
@@ -464,7 +464,7 @@ int HMS_ModuleInstall_GetFetchModulesTotalSize(const ModuleInstall_FetchModulesR
 
 | 名称 | 描述 |
 | --- | --- |
-| [ModuleInstall_FetchModulesResult](#moduleinstall_fetchmodulesresult) *fetchModulesResult | 模块安装结果。 |
+| const [ModuleInstall_FetchModulesResult](#moduleinstall_fetchmodulesresult) *fetchModulesResult | 模块安装结果。 |
 
 返回：
 
@@ -487,7 +487,7 @@ int HMS_ModuleInstall_GetFetchModulesDownloadedSize(const ModuleInstall_FetchMod
 
 | 名称 | 描述 |
 | --- | --- |
-| [ModuleInstall_FetchModulesResult](#moduleinstall_fetchmodulesresult) *fetchModulesResult | 模块安装结果。 |
+| const [ModuleInstall_FetchModulesResult](#moduleinstall_fetchmodulesresult) *fetchModulesResult | 模块安装结果。 |
 
 返回：
 
@@ -510,9 +510,9 @@ ModuleInstall_ErrCode HMS_ModuleInstall_CancelTask(const char *taskId, unsigned 
 
 | 名称 | 描述 |
 | --- | --- |
-| char *taskId | 任务id。 |
-| int length | 任务id长度，最大长度512。 |
-| int cancelResult | 取消下载结果。 0：成功。 1：失败。 |
+| const char *taskId | 任务id。 |
+| unsigned int length | 任务id长度，最大长度512。 |
+| unsigned int cancelResult | 取消下载结果。 0：成功。 1：失败。 |
 
 返回：
 
@@ -535,7 +535,7 @@ ModuleInstall_ErrCode HMS_ModuleInstall_PauseTask(const char *taskId)
 
 | 名称 | 描述 |
 | --- | --- |
-| char *taskId | 任务id。 |
+| const char *taskId | 任务id。 |
 
 返回：
 
@@ -558,9 +558,9 @@ ModuleInstall_ErrCode HMS_ModuleInstall_ShowCellularDataConfirmation(const char 
 
 | 名称 | 描述 |
 | --- | --- |
-| char *taskId | 任务id。 |
-| int length | 任务id长度，最大长度512。 |
-| int showResult | 展示流量弹窗结果。 0：成功。 1：失败。 |
+| const char *taskId | 任务id。 |
+| unsigned int length | 任务id长度，最大长度512。 |
+| unsigned int showResult | 展示流量弹窗结果。 0：成功。 1：失败。 |
 
 返回：
 
@@ -606,10 +606,10 @@ ModuleInstall_ErrCode HMS_ModuleInstall_On(const char *bundleName, unsigned int 
 
 | 名称 | 描述 |
 | --- | --- |
-| char *bundleName | 包名。 |
-| int length | 包名长度，最大长度512。 |
-| int appIndex | 应用分身索引。 |
-| int period | 监听周期。 |
+| const char *bundleName | 包名。 |
+| unsigned int length | 包名长度，最大长度512。 |
+| unsigned int appIndex | 应用分身索引。 |
+| unsigned int period | 监听周期。 |
 | [ModuleInstall_StatusCallback](#moduleinstall_statuscallback) **callback | 下载进度监听回调。 |
 
 返回：
@@ -652,9 +652,9 @@ ModuleInstall_ErrCode HMS_ModuleInstall_Off(const char *bundleName, unsigned int
 
 | 名称 | 描述 |
 | --- | --- |
-| char *bundleName | 包名。 |
-| int length | 包名长度，最大长度512。 |
-| int appIndex | 应用分身索引。 |
+| const char *bundleName | 包名。 |
+| unsigned int length | 包名长度，最大长度512。 |
+| unsigned int appIndex | 应用分身索引。 |
 
 返回：
 

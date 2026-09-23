@@ -2,8 +2,8 @@
 title: "TrustedAppService（可信应用服务）"
 upstream_id: "harmonyos-references/devicesecurity-taas-api"
 catalog: "harmonyos-references"
-content_hash: "89a4ccf64aee"
-synced_at: "2026-08-29T18:16:27.437475"
+content_hash: "b86bbb6d4724"
+synced_at: "2026-09-23T18:55:16.648567"
 ---
 
 # TrustedAppService（可信应用服务）
@@ -609,7 +609,7 @@ import { hilog } from '@kit.PerformanceAnalysisKit';
 
 try {
   const secureLocation = await trustedAppService.getCurrentSecureLocation(3000, trustedAppService.LocatingPriority.PRIORITY_LOCATING_SPEED);
-  hilog.info(0x0000, 'testTag', 'Succeeded in getting secure location, result = ${JSON.stringify(secureLocation)}');
+  hilog.info(0x0000, 'testTag', `Succeeded in getting secure location, result = ${JSON.stringify(secureLocation)}`);
 } catch (error) {
   let err = error as BusinessError;
   hilog.error(0x0000, 'testTag', `Failed to get secure location, code:${err.code}, message:${err.message}`);
@@ -812,7 +812,7 @@ await trustedAppService.procSecImageTransform(srcSecImageBuffer, procParams).the
 | **名称** | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
 | tag | [SecImageProcTag](#secimageproctag) | 否 | 否 | 应用传入的标签，用于安全图像压缩、裁剪处理的配置信息。 |
-| value | number | [CropRegion](#cropregion) | 否 | 否 | 应用传入的标签对应的值，用于安全图像压缩、裁剪处理的配置信息。 **number：** 1）tag为SECIMAGE_TAG_SRC_IMAGE_FORMAT或者 SECIMAGE_TAG_DEST_IMAGE_FORMAT ，其值为[SecImageProcParamsArray](#secimageprocparamsarray)类型； 2）tag为SECIMAGE_TAG_PROC_OPERATION，其值为[SecImageProcOperation](#secimageprocoperation)类型； 3）tag为SECIMAGE_TAG_COMPRESSION_QUALITY，其值为1到100之间； **CropRegion：** tag为SECIMAGE_TAG_CROP_REGION，其值为[CropRegion](#cropregion)类型。 |
+| value | number | [CropRegion](#cropregion) | 否 | 否 | 应用传入的标签对应的值，用于安全图像压缩、裁剪处理的配置信息。 **number：** 1）tag为SECIMAGE_TAG_SRC_IMAGE_FORMAT或者 SECIMAGE_TAG_DEST_IMAGE_FORMAT ，其值为[SecImageProcFormat](#secimageprocformat)类型； 2）tag为SECIMAGE_TAG_PROC_OPERATION，其值为[SecImageProcOperation](#secimageprocoperation)类型； 3）tag为SECIMAGE_TAG_COMPRESSION_QUALITY，其值为1到100之间； **CropRegion：** tag为SECIMAGE_TAG_CROP_REGION，其值为[CropRegion](#cropregion)类型。 |
 
 #### SecImageProcTag
 
@@ -882,7 +882,7 @@ await trustedAppService.procSecImageTransform(srcSecImageBuffer, procParams).the
 | width | number | 否 | 否 | 裁剪区域的宽度，即横向的长度，取值范围在 0 到 640 之间的偶数，且需满足 x 与 width 的和不大于 640。单位：像素（pixel）。 |
 | height | number | 否 | 否 | 裁剪区域的高度，即纵向的长度，取值范围在 0 到 480 之间的偶数，且需满足 y 与 height 的和不大于 480。单位：像素（pixel）。 |
 
-![](./img/zh-cn_image_0000002731359799.jpg)
+![](./img/zh-cn_image_0000002739733820.jpg)
 
 #### SecImageBuffer
 

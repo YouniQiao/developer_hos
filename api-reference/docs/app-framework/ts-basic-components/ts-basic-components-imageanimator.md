@@ -2,8 +2,8 @@
 title: "ImageAnimator"
 upstream_id: "harmonyos-references/ts-basic-components-imageanimator"
 catalog: "harmonyos-references"
-content_hash: "c623ca0acfbc"
-synced_at: "2026-07-28T16:45:23.273069"
+content_hash: "c7415d512496"
+synced_at: "2026-09-23T18:53:58.036642"
 ---
 
 # ImageAnimator
@@ -85,7 +85,7 @@ duration(value: number)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 播放时长。 value为0时，不播放图片。 value平均分配给单张图片的播放时长小于一帧时间，将导致播放异常。 设置为负数时，取默认值1000毫秒。 value的改变只会在下一次循环开始时生效。 单位：毫秒 默认值：1000 |
+| value | number | 是 | 播放时长。 value为0时，不播放图片。 value平均分配给单张图片的播放时长小于一帧时间，将导致播放异常。 设置为负数时，取默认值1000ms。 value的改变只会在下一次循环开始时生效。 单位：ms 默认值：1000 |
 
 #### [h2]reverse
 
@@ -206,7 +206,7 @@ monitorInvisibleArea(monitorInvisibleArea: boolean)
 | height | number | string | 否 | 是 | 图片高度。string类型支持number类型取值的字符串形式，可以附带单位，例如"2"、"2px"。 默认值：0 单位：vp **卡片能力：** 从API version 10开始，该接口支持在ArkTS卡片中使用 |
 | top | number | string | 否 | 是 | 图片相对于组件左上角的纵向坐标。string类型支持number类型取值的字符串形式，可以附带单位，例如"2"、"2px"。 默认值：0 单位：vp **卡片能力：** 从API version 10开始，该接口支持在ArkTS卡片中使用 |
 | left | number | string | 否 | 是 | 图片相对于组件左上角的横向坐标。string类型支持number类型取值的字符串形式，可以附带单位，例如"2"、"2px"。 默认值：0 单位：vp **卡片能力：** 从API version 10开始，该接口支持在ArkTS卡片中使用 |
-| duration | number | 否 | 是 | 每帧图片的播放时长，单位毫秒。 默认值：0 不支持负数。设置为负数将导致图片在当前帧长时间停留，影响正常播放。 |
+| duration | number | 否 | 是 | 每帧图片的播放时长，单位：ms。 默认值：0 不支持负数。设置为负数将导致图片在当前帧长时间停留，影响正常播放。 |
 
 #### 事件
 
@@ -387,7 +387,7 @@ struct ImageAnimatorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088175.gif)
+ ![](./img/zh-cn_image_0000002739733112.gif)
 
 #### [h2]示例2（播放PixelMap动画）
 
@@ -486,7 +486,7 @@ struct ImageAnimatorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928345.gif)
+ ![](./img/zh-cn_image_0000002769332461.gif)
 
 #### [h2]示例3（设置不可见自动停播）
 
@@ -588,4 +588,4 @@ struct ImageAnimatorAutoPauseTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008666.gif)
+ ![](./img/zh-cn_image_0000002769452323.gif)

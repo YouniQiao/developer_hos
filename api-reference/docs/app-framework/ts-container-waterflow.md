@@ -2,8 +2,8 @@
 title: "WaterFlow"
 upstream_id: "harmonyos-references/ts-container-waterflow"
 catalog: "harmonyos-references"
-content_hash: "05865ca6a872"
-synced_at: "2026-08-29T18:13:25.372730"
+content_hash: "e788b112e0a2"
+synced_at: "2026-09-23T18:53:33.736718"
 ---
 
 # WaterFlow
@@ -284,6 +284,10 @@ columnsTemplate(value: string)
 
 可使用columnsTemplate('repeat(auto-fill,track-size)')根据给定的列宽track-size自动计算列数，其中repeat、auto-fill为关键字，track-size为可设置的宽度，支持的单位包括px、vp、%或有效数字，默认单位为vp，使用方法参见[示例2](#示例2自动计算列数)。
 
+非repeat形式的模板串中每项仅支持'数字+fr'、'数字+px'、'数字+%'三种格式，不支持vp（如columnsTemplate('100vp 100vp')）。需要按固定vp尺寸自动计算列数时，应使用repeat(auto-fill, track-size)。
+
+设置为'0fr'时，该列的列宽为0，该列FlowItem不显示。设置为其他非法值时，按固定1列处理。
+
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
@@ -327,6 +331,10 @@ rowsTemplate(value: string)
 例如，'1fr 1fr 2fr'是将父组件分3行，将父组件允许的高分为4等份，第1行占1份，第2行占1份，第3行占2份。
 
 可使用rowsTemplate('repeat(auto-fill,track-size)')根据给定的行高track-size自动计算行数，其中repeat、auto-fill为关键字，track-size为可设置的高度，支持的单位包括px、vp、%或有效数字，默认单位为vp。
+
+非repeat形式的模板串中每项仅支持'数字+fr'、'数字+px'、'数字+%'三种格式，不支持vp（如rowsTemplate('100vp 100vp')）。需要按固定vp尺寸自动计算行数时，应使用repeat(auto-fill, track-size)。
+
+设置为'0fr'时，该行的行高为0，该行FlowItem不显示。设置为其他非法值时，按固定1行处理。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -1027,7 +1035,7 @@ struct WaterFlowDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518853.gif)
+ ![](./img/zh-cn_image_0000002739732884.gif)
 
 #### [h2]示例2（自动计算列数）
 
@@ -1098,7 +1106,7 @@ struct WaterFlowDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639654.png)
+ ![](./img/zh-cn_image_0000002769332233.png)
 
 #### [h2]示例3（使用分组）
 
@@ -1354,7 +1362,7 @@ struct WaterFlowDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358875.png)
+ ![](./img/zh-cn_image_0000002769452095.png)
 
 #### [h2]示例4（双指缩放改变列数）
 
@@ -1555,7 +1563,7 @@ struct WaterFlowDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799570.gif)
+ ![](./img/zh-cn_image_0000002739892764.gif)
 
 #### [h2]示例5（设置边缘渐隐效果）
 
@@ -1627,7 +1635,7 @@ struct WaterFlowDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731518855.gif)
+ ![](./img/zh-cn_image_0000002739732886.gif)
 
 #### [h2]示例6（单边边缘效果）
 
@@ -1699,7 +1707,7 @@ struct WaterFlowDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701639656.gif)
+ ![](./img/zh-cn_image_0000002769332235.gif)
 
 #### [h2]示例7（WaterFlow组件设置和改变尾部组件）
 
@@ -1809,7 +1817,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731358877.gif)
+ ![](./img/zh-cn_image_0000002769452097.gif)
 
 #### [h2]示例8（WaterFlow组件实现下拉刷新）
 
@@ -1899,7 +1907,7 @@ struct WaterFlowDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799572.gif)
+ ![](./img/zh-cn_image_0000002739892766.gif)
 
 #### [h2]示例9（WaterFlow组件基于断点配置列数）
 
@@ -1970,15 +1978,15 @@ struct WaterFlowDemo {
 ```
  WaterFlow宽度属于sm及更小的断点区间时显示2列。
 
-![](./img/zh-cn_image_0000002731518857.png)
+![](./img/zh-cn_image_0000002739732888.png)
 
 WaterFlow宽度属于md断点区间时显示3列。
 
-![](./img/zh-cn_image_0000002701639658.png)
+![](./img/zh-cn_image_0000002769332237.png)
 
 WaterFlow宽度属于lg及更大的断点区间时显示5列。
 
-![](./img/zh-cn_image_0000002731358879.png)
+![](./img/zh-cn_image_0000002769452099.png)
 
 #### [h2]示例10（WaterFlow组件实现获取内容高度）
 
@@ -2082,7 +2090,7 @@ struct WaterFlowContentSizeDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701799574.gif)
+ ![](./img/zh-cn_image_0000002739892768.gif)
 
 #### [h2]示例11（设置滚动事件）
 

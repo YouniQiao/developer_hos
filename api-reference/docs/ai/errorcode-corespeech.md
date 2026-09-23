@@ -2,8 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-corespeech"
 catalog: "harmonyos-references"
-content_hash: "e28c4e05ba25"
-synced_at: "2026-07-09T01:01:41.652616"
+content_hash: "deda2c51df89"
+synced_at: "2026-09-23T18:57:38.208528"
 ---
 
 # ArkTS API错误码
@@ -25,12 +25,14 @@ Create engine failed.
 1. 语种不支持。
 2. 模式不支持。
 3. 资源不存在或初始化超时。
+4. 频繁创建、销毁引擎引起资源竞争，导致创建失败。
 
 处理步骤
 
 1. 调用[listLanguages](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/hms-ai-speechrecognizer#listlanguages)方法查询支持的语种，确认语种后请重新尝试。
 2. 当前仅支持[CreateEngineParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/hms-ai-speechrecognizer#createengineparams)，确认模式后请重新尝试。
 3. 资源不存在及初始化超时时，建议稍后重新尝试。
+4. 将创建成功的引擎实例进行存储，创建引擎参数相同的场景复用引擎实例，避免使用完立即销毁引擎，等到后续无需再使用时销毁引擎。
 
 #### 1002200002 开始识别失败
 
@@ -170,13 +172,15 @@ Internal Service Error.
 
 可能原因
 
-内部服务错误原因导致无法调用引擎功能。
+1.内部服务错误原因导致无法调用引擎功能。
+
+2.系统异常，导致服务进程被中止。
 
 处理步骤
 
-根据具体错误信息情况处理。
+可以重新调用接口重试，根据具体错误信息情况处理。
 
-如果无法解决，建议在线提单，详细步骤请见[在线提单指导](https://developer.huawei.com/consumer/cn/support/feedback/#/)。
+若您的问题仍无法解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
 
 #### 1002200010 语音识别未启动
 

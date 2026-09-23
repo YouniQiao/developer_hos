@@ -2,8 +2,8 @@
 title: "@ohos.deviceInfo (设备信息)"
 upstream_id: "harmonyos-references/js-apis-device-info"
 catalog: "harmonyos-references"
-content_hash: "7b72a0503ee1"
-synced_at: "2026-09-09T18:21:48.115795"
+content_hash: "748cf4d458ed"
+synced_at: "2026-09-23T18:55:45.540440"
 ---
 
 # @ohos.deviceInfo (设备信息)
@@ -32,7 +32,7 @@ import { deviceInfo } from '@kit.BasicServicesKit';
 
 | 名称 | 类型 | 只读 | 说明 |
 | --- | --- | --- | --- |
-| deviceType | string | 是 | 设备类型。详细请参考[deviceTypes标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#devicetypes标签)。 **元服务API**：从API版本11开始，该接口支持在元服务中使用。 示例：phone |
+| deviceType | string | 是 | 设备类型。详细请参考[deviceTypes标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#devicetypes标签)。 **元服务API**：从API版本11开始，该接口支持在元服务中使用。 示例：wearable |
 | manufacture | string | 是 | 设备厂家名称。 |
 | brand | string | 是 | 设备品牌名称。 **元服务API**：从API版本11开始，该接口支持在元服务中使用。 |
 | marketName | string | 是 | 外部产品系列。 示例：HUAWEI Mate 60 Pro |
@@ -45,7 +45,7 @@ import { deviceInfo } from '@kit.BasicServicesKit';
 | serial | string | 是 | 设备序列号SN(Serial Number)，该接口在执行期间会拉起临时进程，当系统负载较高时，可能引发阻塞风险。为确保应用主线程的响应性能，建议避免在主线程中调用。设备信息因设备而异且固定不变，可在首次获取后缓存在本地，避免每次使用时重复获取，以提升性能。 **说明**：可作为设备唯一识别码。 **需要权限**：ohos.permission.sec.ACCESS_UDID(该权限只允许系统应用及企业类应用申请) 示例：序列号随设备差异 |
 | bootloaderVersion | string | 是 | Bootloader版本号，用于标识设备启动引导程序的版本信息。 示例：bootloader |
 | abiList | string | 是 | 应用二进制接口（Abi）。 示例：arm64-v8a |
-| securityPatchTag | string | 是 | 安全补丁级别。 示例：2024/1/1 |
+| securityPatchTag | string | 是 | 安全补丁级别。 示例：2021/01/01 |
 | displayVersion | string | 是 | 产品版本。可以使用版本号中的DEM字段来识别门店演示样机。 示例：ALN-AL00 5.0.0.1(XXX) |
 | incrementalVersion | string | 是 | 差异版本号，是编译时生成的ohos的版本号。 示例：6.1.1.120 |
 | osReleaseType | string | 是 | 系统的发布类型，取值为： - Canary：面向特定开发者发布的早期预览版本，不承诺API稳定性。 - Beta：面向开发者公开发布的Beta版本，不承诺API稳定性。 - Release：面向开发者公开发布的正式版本，承诺API稳定性。 示例：Canary1/Beta2/Release |

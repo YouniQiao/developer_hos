@@ -2,8 +2,8 @@
 title: "服务通知"
 upstream_id: "harmonyos-references/push-api-service-noti"
 catalog: "harmonyos-references"
-content_hash: "66dedd1cb2e7"
-synced_at: "2026-08-03T17:12:39.563908"
+content_hash: "f255053dfc87"
+synced_at: "2026-09-23T18:57:34.610436"
 ---
 
 # 服务通知
@@ -71,9 +71,9 @@ synced_at: "2026-08-03T17:12:39.563908"
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| actionType | 是 | Integer | 消息点击后的行为。 0：打开元服务首页。 1：打开元服务指定页面。 |
-| action | 否 | String | 应用内置页面ability对应的action。当actionType为1时，字段action和uri至少填写一个，若都填写优先寻找与action匹配的应用页面。 |
-| uri | 否 | String | 应用内置页面ability对应的uri。当actionType为1时，字段action和uri至少填写一个，若都填写优先寻找与action匹配的应用页面。 |
+| actionType | 是 | Integer | 消息点击后的行为。 0：打开元服务首页。 1：打开元服务指定页面。 **说明**： 当actionType为1时，字段action和uri至少填写一个，若都填写优先寻找与action匹配的应用页面。 |
+| action | 否 | String | 应用内置页面ability对应的action。 |
+| uri | 否 | String | 应用内置页面ability对应的uri。 |
 | data | 否 | Object | 当actionType为0或1时，该字段用于在点击按钮后将数据传递给元服务。格式必须为key-value形式，最大长度1024字节。示例： {"key1": "value1", "key2": "value2"} |
 
 #### 请求示例

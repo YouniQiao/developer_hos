@@ -1,12 +1,12 @@
 ---
-title: "EnterpriseAdminExtensionContext（企业设备管理扩展能力上下文环境）"
+title: "EnterpriseAdminExtensionContext (企业设备管理扩展能力上下文环境)"
 upstream_id: "harmonyos-references/js-apis-application-enterpriseadminextensioncontext"
 catalog: "harmonyos-references"
-content_hash: "4d71f0b9fc38"
-synced_at: "2026-08-29T18:17:08.072801"
+content_hash: "1f60afd59908"
+synced_at: "2026-09-23T18:56:01.561181"
 ---
 
-# EnterpriseAdminExtensionContext（企业设备管理扩展能力上下文环境）
+# EnterpriseAdminExtensionContext (企业设备管理扩展能力上下文环境)
 
 EnterpriseAdminExtensionContext在@ohos.enterprise.common模块中作为类型导出，具体接口定义见本文档。
 
@@ -90,9 +90,10 @@ startAbilityByAdmin(admin: Want, want: Want): Promise<void>
     "startWindowIcon": "$media:icon",
     "startWindowBackground": "$color:white",
     "exported": true,
-    "permissions": [
-      "ohos.permission.START_UI_ABILITY"
-    ]
+    // 标识当前Ability组件的权限信息。其他应用访问该Ability时，需要申请相应的权限。
+    // "permissions": [
+    //   "ohos.permission.EXAMPLE_PERMISSION"
+    // ]
   }
 ]
 ```
@@ -100,9 +101,10 @@ startAbilityByAdmin(admin: Want, want: Want): Promise<void>
 
 ```
 "requestPermissions": [
-  {
-    "name": "ohos.permission.START_UI_ABILITY"
-  },
+  // 启动其他应用的组件时，需申请该组件所标识的权限。
+  // {
+  //   "name": "ohos.permission.EXAMPLE_PERMISSION"
+  // },
   {
     "name": "ohos.permission.ENTERPRISE_START_ABILITIES"
   }

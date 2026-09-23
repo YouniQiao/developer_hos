@@ -2,8 +2,8 @@
 title: "speechRecognizer（语音识别）"
 upstream_id: "harmonyos-references/hms-ai-speechrecognizer"
 catalog: "harmonyos-references"
-content_hash: "c67dda2b8f81"
-synced_at: "2026-08-07T15:59:49.254789"
+content_hash: "1d2997e5830e"
+synced_at: "2026-09-23T18:57:38.438247"
 ---
 
 # speechRecognizer（语音识别）
@@ -334,7 +334,7 @@ let setListener: speechRecognizer.RecognitionListener = {
   },
   // 识别结果回调，包括中间结果和最终结果
   onResult(sessionId: string, result: speechRecognizer.SpeechRecognitionResult) {
-    console.info(`onResult, sessionId: ${sessionId} sessionId: ${JSON.stringify(result)}`);
+    console.info(`onResult, sessionId: ${sessionId} result: ${JSON.stringify(result)}`);
   },
   // 识别完成回调
   onComplete(sessionId: string, eventMessage: string) {
@@ -659,7 +659,7 @@ struct Page {
         })
 
       Button() {
-        Text('cancel')
+        Text('isBusy')
           .fontColor(Color.White)
           .fontSize(20)
       }
@@ -714,7 +714,7 @@ struct Page {
         })
 
       Button() {
-        Text('cancel')
+        Text('shutdown')
           .fontColor(Color.White)
           .fontSize(20)
       }
@@ -779,7 +779,7 @@ let setListener: speechRecognizer.RecognitionListener = {
   },
   // 识别结果回调，包括中间结果和最终结果
   onResult(sessionId: string, result: speechRecognizer.SpeechRecognitionResult) {
-    console.info(`onResult, sessionId: ${sessionId} sessionId: ${JSON.stringify(result)}`);
+    console.info(`onResult, sessionId: ${sessionId} result: ${JSON.stringify(result)}`);
   },
   // 识别完成回调
   onComplete(sessionId: string, eventMessage: string) {
@@ -843,7 +843,7 @@ let setListener: speechRecognizer.RecognitionListener = {
   },
   // 识别结果回调，包括中间结果和最终结果
   onResult(sessionId: string, result: speechRecognizer.SpeechRecognitionResult) {
-    console.info(`onResult, sessionId: ${sessionId} sessionId: ${JSON.stringify(result)}`);
+    console.info(`onResult, sessionId: ${sessionId} result: ${JSON.stringify(result)}`);
   },
   // 识别完成回调
   onComplete(sessionId: string, eventMessage: string) {
@@ -906,7 +906,7 @@ let setListener: speechRecognizer.RecognitionListener = {
   },
   // 识别结果回调，包括中间结果和最终结果
   onResult(sessionId: string, result: speechRecognizer.SpeechRecognitionResult) {
-    console.info(`onResult, sessionId: ${sessionId} sessionId: ${JSON.stringify(result)}`);
+    console.info(`onResult, sessionId: ${sessionId} result: ${JSON.stringify(result)}`);
   },
   // 识别完成回调
   onComplete(sessionId: string, eventMessage: string) {
@@ -969,7 +969,7 @@ let setListener: speechRecognizer.RecognitionListener = {
   },
   // 识别结果回调，包括中间结果和最终结果
   onResult(sessionId: string, result: speechRecognizer.SpeechRecognitionResult) {
-    console.info(`onResult, sessionId: ${sessionId} sessionId: ${JSON.stringify(result)}`);
+    console.info(`onResult, sessionId: ${sessionId} result: ${JSON.stringify(result)}`);
   },
   // 识别完成回调
   onComplete(sessionId: string, eventMessage: string) {
@@ -1033,7 +1033,7 @@ let setListener: speechRecognizer.RecognitionListener = {
   },
   // 识别结果回调，包括中间结果和最终结果
   onResult(sessionId: string, result: speechRecognizer.SpeechRecognitionResult) {
-    console.info(`onResult, sessionId: ${sessionId} sessionId: ${JSON.stringify(result)}`);
+    console.info(`onResult, sessionId: ${sessionId} result: ${JSON.stringify(result)}`);
   },
   // 识别完成回调
   onComplete(sessionId: string, eventMessage: string) {
@@ -1121,7 +1121,6 @@ let extraParam: Record<string, Object> = {
   'vadBegin': 2000,
   'vadEnd': 3000,
   'maxAudioDuration': 20000,
-  'srcType': 1,
   'recognizerOption': recognizerOption
 };
 // 设置开始识别相关参数

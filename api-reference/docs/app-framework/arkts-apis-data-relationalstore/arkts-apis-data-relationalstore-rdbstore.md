@@ -2,8 +2,8 @@
 title: "Interface (RdbStore)"
 upstream_id: "harmonyos-references/arkts-apis-data-relationalstore-rdbstore"
 catalog: "harmonyos-references"
-content_hash: "b14d27f7970b"
-synced_at: "2026-09-17T18:50:27.334409"
+content_hash: "0989fc2644bc"
+synced_at: "2026-09-23T18:53:08.716628"
 ---
 
 # Interface (RdbStore)
@@ -7600,7 +7600,48 @@ export default class EntryAbility extends UIAbility {
   }
 }
 ```
- 示例6：原数据库为非加密数据库，更换为自定义参数加密数据库
+ 示例6：原数据库为默认参数加密数据库，更换为非加密数据库
+
+```
+// EntryAbility.ets
+import { UIAbility } from '@kit.AbilityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+export default class EntryAbility extends UIAbility {
+  async onCreate() {
+    let store: relationalStore.RdbStore | undefined = undefined;
+    const configV1: relationalStore.StoreConfig = {
+      name: 'rdbStore1.db',
+      securityLevel: relationalStore.SecurityLevel.S3,
+      encrypt: true
+    };
+
+    try {
+      const rdbStore = await relationalStore.getRdbStore(this.context, configV1);
+      store = rdbStore;
+      console.info('Get RdbStore successfully.');
+
+      let cryptoParam1: relationalStore.CryptoParam = {
+        encryptionKey: new Uint8Array(),
+        encryptionAlgo: relationalStore.EncryptionAlgo.PLAIN_TEXT
+      };
+
+      if (store != undefined) {
+        try {
+          await (store as relationalStore.RdbStore).rekeyEx(cryptoParam1);
+          console.info('rekeyEx is successful');
+        } catch (err) {
+          console.error(`rekeyEx is failed, code is ${err.code},message is ${err.message}`);
+        }
+      }
+      // 在完成rekeyEx操作后，如果后续需要重新getRdbStore时必须使用新的参数来打开数据库
+    } catch (err) {
+      console.error(`Get RdbStore failed, code is ${err.code},message is ${err.message}`);
+    };
+  }
+}
+```
+ 示例7：原数据库为非加密数据库，更换为自定义参数加密数据库
 
 ```
 // EntryAbility.ets

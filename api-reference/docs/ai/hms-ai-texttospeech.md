@@ -2,8 +2,8 @@
 title: "textToSpeech（文本转语音）"
 upstream_id: "harmonyos-references/hms-ai-texttospeech"
 catalog: "harmonyos-references"
-content_hash: "98f84e4a097f"
-synced_at: "2026-08-07T15:59:48.952302"
+content_hash: "b325f6c53ba2"
+synced_at: "2026-09-23T18:57:38.205082"
 ---
 
 # textToSpeech（文本转语音）
@@ -967,8 +967,6 @@ onComplete(requestId: string, response: CompleteResponse): void
 | requestId | string | 是 | 请求ID。唯一标识一条请求。 支持英文字符，数字和中文，长度不限制。 |
 | response | [CompleteResponse](#completeresponse) | 是 | 完成播报相关信息。 |
 
-![](./img/note_3.0-zh-cn.png) onData 可能存在数据过大的情况，无法一次性返回全部数据，请继续接收 onData 回调。
-
 示例：
 
 ```
@@ -1020,6 +1018,8 @@ onData?: OnDataCallback
 合成播报过程中回调此接口，返回请求ID，音频流信息，音频附加信息如格式、时长等。若需要返回音频流信息，请实现此接口。
 
 ![](./img/note_3.0-zh-cn.png) 调用方在播放音频前需要按照[sequence](#synthesisresponse)对音频流进行排序, 避免播放时音频流顺序错乱。
+
+onData可能存在数据过大的情况，无法一次性返回全部数据，请继续接收onData回调。
 
 元服务API： 从版本6.1.1(24)开始，该接口支持在元服务中使用。
 

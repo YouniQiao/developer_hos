@@ -2,8 +2,8 @@
 title: "事件"
 upstream_id: "harmonyos-references/arkts-basic-components-web-events"
 catalog: "harmonyos-references"
-content_hash: "35c800b6e752"
-synced_at: "2026-09-17T18:52:38.015412"
+content_hash: "94ec1908a59f"
+synced_at: "2026-09-23T18:54:53.664324"
 ---
 
 # 事件
@@ -3363,7 +3363,7 @@ onLoadIntercept(callback: Callback<OnLoadInterceptEvent, boolean>)
 ![](./img/note_3.0-zh-cn.png)
 
 - onLoadIntercept是在页面导航前同步触发的回调，回调返回前当前导航处于挂起状态。
-- 禁止在回调中直接调用会触发新导航的接口（如[refresh()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#refresh)、[loadurl()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#loadurl)、[setCustomUserAgent()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#setcustomuseragent10)等），否则会导致回调重入或导航状态混乱。
+- 禁止在回调中直接调用会触发新导航的接口（如[refresh()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#refresh)、[loadUrl()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#loadurl)、[setCustomUserAgent()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#setcustomuseragent10)等），否则会导致回调重入或导航状态混乱。
 - 如需在拦截后重新加载页面，应在回调返回后通过[setTimeout()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-timer#settimeout)等异步方法延迟调用。
 - onLoadIntercept无法获取到完整的headers，如需获取完整headers建议在[onInterceptRequest](#oninterceptrequest9)或者通过WebSchemeHandler的[onRequestStart](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webschemehandler#onrequeststart12)中获取。
 

@@ -2,8 +2,8 @@
 title: "oh_data_value.h"
 upstream_id: "harmonyos-references/capi-oh-data-value-h"
 catalog: "harmonyos-references"
-content_hash: "aab10f773077"
-synced_at: "2026-08-29T18:12:14.749739"
+content_hash: "e20bbe2634a0"
+synced_at: "2026-09-23T18:53:10.705511"
 ---
 
 # oh_data_value.h
@@ -466,7 +466,7 @@ int OH_Value_GetText(OH_Data_Value *value, const char **val)
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_Data_Value](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-data-value) *value | 表示指向[OH_Data_Value](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-rdb-oh-data-value)实例的指针。 |
-| const char **val | 一个输出参数，表示指向字符串类型数据的指针。 无需申请内存和释放内存。 val的生命周期遵循value中index的值。 |
+| const char **val | 一个输出参数，表示指向字符串类型数据的指针。 无需申请内存和释放内存。 val的生命周期遵循value的生命周期。 |
 
 返回：
 

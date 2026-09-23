@@ -2,8 +2,8 @@
 title: "@ohos.security.huks (通用密钥库系统)"
 upstream_id: "harmonyos-references/js-apis-huks"
 catalog: "harmonyos-references"
-content_hash: "854fe7391f5a"
-synced_at: "2026-08-29T18:16:34.633139"
+content_hash: "4ffc03d2a139"
+synced_at: "2026-09-23T18:55:23.907284"
 ---
 
 # @ohos.security.huks (通用密钥库系统)
@@ -2612,7 +2612,7 @@ huks.hasKeyItem(keyAlias, emptyOptions).then((data) => {
   if (data) {
     console.info(`keyAlias:${keyAlias} is existed!`);
   } else {
-    console.info(`find key failed!`);
+    console.error(`find key failed!`);
   }
 });
 ```

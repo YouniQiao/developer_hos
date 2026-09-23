@@ -2,8 +2,8 @@
 title: "Webview错误码"
 upstream_id: "harmonyos-references/errorcode-webview"
 catalog: "harmonyos-references"
-content_hash: "0f098dd813ee"
-synced_at: "2026-09-17T18:52:40.866714"
+content_hash: "be79c99ef932"
+synced_at: "2026-09-23T18:54:57.038679"
 ---
 
 # Webview错误码
@@ -91,7 +91,7 @@ Function not enabled.
 
 请检查相关功能开关是否已配置打开，如该功能对应的XXXAccess是否配置为true，或检测当前接口是否支持并发。
 
-#### 17100005 cookie value格式错误
+#### 17100005 Cookie value格式错误
 
 错误信息
 
@@ -99,15 +99,15 @@ The provided cookie value is invalid. It must follow the format specified in RFC
 
 错误描述
 
-cookie value格式错误。
+Cookie value格式错误。
 
 可能原因
 
-不支持的cookie value类型。
+不支持的Cookie value类型。
 
 处理步骤
 
-请检查输入的cookie value是否符合RFC 6265规范，确保不包含控制字符、分隔符等非法内容。
+请检查输入的Cookie value是否符合RFC 6265规范，确保不包含控制字符、分隔符等非法内容。
 
 #### 17100006 无法注册message port回调
 

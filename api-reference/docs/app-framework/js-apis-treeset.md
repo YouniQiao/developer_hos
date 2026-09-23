@@ -2,8 +2,8 @@
 title: "@ohos.util.TreeSet (非线性容器TreeSet)"
 upstream_id: "harmonyos-references/js-apis-treeset"
 catalog: "harmonyos-references"
-content_hash: "e60e769f2008"
-synced_at: "2026-08-03T17:09:33.869383"
+content_hash: "5d7ba52fe139"
+synced_at: "2026-09-23T18:53:17.712823"
 ---
 
 # @ohos.util.TreeSet (非线性容器TreeSet)
@@ -565,7 +565,9 @@ forEach(callbackFn: (value?: T, key?: T, set?: TreeSet<T>) => void, thisArg?: Ob
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | callbackFn | function | 是 | 遍历实例对象中每个元素时调用的回调函数，开发者可在回调中对元素及其下标进行自定义处理。 |
-| thisArg | Object | 否 | callbackFn被调用时用作this值。当需要在回调函数中使用特定的this上下文（如访问外部对象属性）时传入此参数。不传入时默认值为当前实例对象，回调函数中的this指向TreeSet实例本身。 |
+| thisArg | Object | 否 | callbackFn被调用时用作this值。不传入时默认值为undefined。 |
+
+![](./img/note_3.0-zh-cn.png) 不建议使用thisArg参数。ArkTS中，箭头函数的this由外层上下文决定，thisArg无法改变回调函数中的this；普通函数中则不允许使用this。因此该参数实际不生效。如需在回调函数中访问外部对象，建议直接在箭头函数中引用。
 
 callbackFn的参数说明：
 

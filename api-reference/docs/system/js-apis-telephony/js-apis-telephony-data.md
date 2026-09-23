@@ -2,8 +2,8 @@
 title: "@ohos.telephony.data (蜂窝数据)"
 upstream_id: "harmonyos-references/js-apis-telephony-data"
 catalog: "harmonyos-references"
-content_hash: "e53e34caa8ba"
-synced_at: "2026-09-01T18:14:35.926536"
+content_hash: "350d70715da1"
+synced_at: "2026-09-23T18:55:43.949377"
 ---
 
 # @ohos.telephony.data (蜂窝数据)
@@ -102,7 +102,10 @@ getCellularDataFlowType(callback: AsyncCallback<DataFlowType>): void
 
 获取蜂窝网络的数据流类型（对应信号栏旁边的上下行箭头），使用callback方式作为异步方法。
 
-需要权限：ohos.permission.GET_NETWORK_INFO
+需要权限：
+
+- API版本22之前：N/A
+- API版本22+：ohos.permission.GET_NETWORK_INFO
 
 系统能力：SystemCapability.Telephony.CellularData
 
@@ -584,7 +587,7 @@ queryApnIds(apnInfo: ApnInfo): Promise<Array<number>>
 
 异步获取传入的ApnInfo对应的ApnId信息。
 
-需要权限：ohos.permission.MANAGE_APN_SETTING（该权限是受限开放权限，仅需要连接移动数据专网进行办公室可以申请该权限，权限介绍参见[权限定义](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions#ohospermissionmanage_apn_setting)）
+需要权限：ohos.permission.MANAGE_APN_SETTING（该权限是受限开放权限，仅需要连接移动数据专网进行办公时可以申请该权限，权限介绍参见[权限定义](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions#ohospermissionmanage_apn_setting)）
 
 系统能力：SystemCapability.Telephony.CellularData
 
@@ -639,7 +642,7 @@ setPreferredApn(apnId: number): Promise<boolean>
 
 如果传入的apnId为无效的apnId，切回运营商默认配置的优选Apn。
 
-需要权限：ohos.permission.MANAGE_APN_SETTING（该权限是受限开放权限，仅需要连接移动数据专网进行办公室可以申请该权限，权限介绍参见[权限定义](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions#ohospermissionmanage_apn_setting)）
+需要权限：ohos.permission.MANAGE_APN_SETTING（该权限是受限开放权限，仅需要连接移动数据专网进行办公时可以申请该权限，权限介绍参见[权限定义](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions#ohospermissionmanage_apn_setting)）
 
 系统能力：SystemCapability.Telephony.CellularData
 

@@ -2,8 +2,8 @@
 title: "Rect"
 upstream_id: "harmonyos-references/capi-nativewindow-rect"
 catalog: "harmonyos-references"
-content_hash: "df9be1dc94d9"
-synced_at: "2026-07-09T01:01:01.782669"
+content_hash: "62b5fa475708"
+synced_at: "2026-09-23T18:57:03.676828"
 ---
 
 # Rect
@@ -14,7 +14,7 @@ struct Rect { ... }
 
 #### 概述
 
-如果rects是空指针nullptr，默认Buffer大小为脏区。
+定义矩形区域的结构体，包含矩形框的起始坐标和宽高信息。
 
 相关模块： [NativeWindow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativewindow)
 

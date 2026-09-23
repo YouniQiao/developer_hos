@@ -2,8 +2,8 @@
 title: "服务动态推送接口"
 upstream_id: "harmonyos-references/push-api-service-timeline-send"
 catalog: "harmonyos-references"
-content_hash: "1ad5a48947c7"
-synced_at: "2026-08-03T17:12:39.802303"
+content_hash: "a59e9b0ed8e0"
+synced_at: "2026-09-23T18:57:35.041859"
 ---
 
 # 服务动态推送接口
@@ -456,7 +456,7 @@ user close service.
 
 处理步骤
 
-请按照响应消息中的提示，在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)网站上开通服务动态推送权益，请参考[申请权益](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-timeline#section20387153745216)。
+请检查服务动态开关是否关闭，如关闭，需打开开关后再调用接口进行测试。服务动态开关设置路径：桌面左滑进入负一屏，点击头像进入“我的”，点击页面右上角![](./img/zh-cn_image_0000002769333555.png)，再点击“动态管理”，在“服务动态”列表找到对应的场景开关进行操作。
 
 #### [h2]82600014 非法的图片资源ID
 

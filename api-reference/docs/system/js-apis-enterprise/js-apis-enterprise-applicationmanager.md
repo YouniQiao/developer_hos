@@ -2,8 +2,8 @@
 title: "@ohos.enterprise.applicationManager (应用管理)"
 upstream_id: "harmonyos-references/js-apis-enterprise-applicationmanager"
 catalog: "harmonyos-references"
-content_hash: "9e87eb8aceae"
-synced_at: "2026-09-17T18:53:31.293110"
+content_hash: "95b034dff20d"
+synced_at: "2026-09-23T18:56:00.376784"
 ---
 
 # @ohos.enterprise.applicationManager (应用管理)
@@ -2281,7 +2281,7 @@ setAbilityDisabled(admin: Want, bundleName: string, accountId: number, abilityNa
 示例：
 
 ```
-import { applicationManager, common } from '@kit.MDMKit';
+import { applicationManager } from '@kit.MDMKit';
 import { Want } from '@kit.AbilityKit';
 
 let wantTemp: Want = {
@@ -2345,7 +2345,7 @@ isAbilityDisabled(admin: Want, bundleName: string, accountId: number, abilityNam
 示例：
 
 ```
-import { applicationManager, common } from '@kit.MDMKit';
+import { applicationManager } from '@kit.MDMKit';
 import { Want } from '@kit.AbilityKit';
 
 let wantTemp: Want = {
@@ -2409,7 +2409,7 @@ isAbilityDisabled(admin: Want | null, bundleName: string, accountId: number, abi
 示例：
 
 ```
-import { applicationManager, common } from '@kit.MDMKit';
+import { applicationManager } from '@kit.MDMKit';
 
 try {
   // 需根据实际情况进行替换

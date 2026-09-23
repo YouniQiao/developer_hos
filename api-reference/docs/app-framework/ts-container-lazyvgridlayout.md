@@ -2,8 +2,8 @@
 title: "LazyVGridLayout"
 upstream_id: "harmonyos-references/ts-container-lazyvgridlayout"
 catalog: "harmonyos-references"
-content_hash: "6203626207d7"
-synced_at: "2026-07-28T16:43:36.741155"
+content_hash: "16191b791974"
+synced_at: "2026-09-23T18:53:34.728780"
 ---
 
 # LazyVGridLayout
@@ -59,6 +59,8 @@ columnsTemplate('repeat(auto-stretch, track-size)')是设置固定列宽值为tr
 其中repeat、auto-fit、auto-fill、auto-stretch为关键字。track-size为列宽，支持的单位包括px、vp、%或有效数字，默认单位为vp，track-size至少包括一个有效列宽。
 
 auto-fit模式和auto-stretch模式只支持track-size为一个有效列宽值，并且auto-stretch模式中的track-size只支持px、vp和有效数字，不支持%。auto-fill模式支持一个或多个有效列宽，如columnsTemplate('repeat(auto-fill, 20)')、columnsTemplate('repeat(auto-fill, 20 80px)')。
+
+非repeat形式的模板串中每项仅支持'数字+fr'、'数字+px'、'数字+%'三种格式，不支持vp（如columnsTemplate('100vp 100vp')）。需要按固定vp尺寸自动计算列数时，应使用repeat(auto-fill, track-size)。
 
 使用效果可以参考[示例3](#示例3设置自适应列数)。
 
@@ -415,7 +417,7 @@ export class MyDataSource<T> extends BasicDataSource<T> {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008446.gif)
+ ![](./img/zh-cn_image_0000002739732890.gif)
 
 #### [h2]示例2（设置头部组件或尾部组件及吸附效果）
 
@@ -494,7 +496,7 @@ struct LazyVGridLayoutStickyDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848524.gif)
+ ![](./img/zh-cn_image_0000002769332239.gif)
 
 #### [h2]示例3（设置自适应列数）
 
@@ -627,4 +629,4 @@ struct LazyVGridLayoutColumnsTemplateDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087953.gif)
+ ![](./img/zh-cn_image_0000002769452101.gif)

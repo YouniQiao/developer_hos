@@ -2,8 +2,8 @@
 title: "@ohos.graphics.uiEffect (效果级联)"
 upstream_id: "harmonyos-references/js-apis-uieffect"
 catalog: "harmonyos-references"
-content_hash: "d7387602bb7f"
-synced_at: "2026-07-09T01:00:53.431200"
+content_hash: "c0cc88e188b0"
+synced_at: "2026-09-23T18:56:57.828896"
 ---
 
 # @ohos.graphics.uiEffect (效果级联)
@@ -115,7 +115,7 @@ struct UIEffectFilterExample {
     }
 }
 ```
- ![](./img/zh-cn_image_0000002631254606.png)
+ ![](./img/zh-cn_image_0000002739894064.png)
 
 #### [h2]hdrBrightnessRatio24+
 
@@ -162,3 +162,5 @@ filter.hdrBrightnessRatio(2.0)
 #### VisualEffect
 
 VisualEffect效果类，用于将相应的效果添加到指定的组件上。在调用VisualEffect的方法前，需要先通过[createEffect](#uieffectcreateeffect)创建一个VisualEffect实例。
+
+系统能力： SystemCapability.Graphics.Drawing

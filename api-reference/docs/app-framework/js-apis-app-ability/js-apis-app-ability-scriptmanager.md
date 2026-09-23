@@ -2,13 +2,15 @@
 title: "@ohos.app.ability.scriptManager (脚本管理)"
 upstream_id: "harmonyos-references/js-apis-app-ability-scriptmanager"
 catalog: "harmonyos-references"
-content_hash: "83baad9ae7dc"
-synced_at: "2026-09-20T18:00:38.367288"
+content_hash: "cc45f5d780d7"
+synced_at: "2026-09-23T18:52:57.592623"
 ---
 
 # @ohos.app.ability.scriptManager (脚本管理)
 
 本模块提供管理和组织脚本信息的能力，支持应用的ArkTS脚本执行结果上报。
+
+起始版本： 26.0.0
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -21,7 +23,6 @@ synced_at: "2026-09-20T18:00:38.367288"
 ```
 import { scriptManager } from '@kit.AbilityKit';
 ```
- 起始版本： 26.0.0
 
 #### ExecuteResult
 

@@ -2,8 +2,8 @@
 title: "@ohos.enterprise.accountManager (账号管理)"
 upstream_id: "harmonyos-references/js-apis-enterprise-accountmanager"
 catalog: "harmonyos-references"
-content_hash: "0411ceea16e1"
-synced_at: "2026-09-17T18:53:30.419108"
+content_hash: "ce6fcc959fd8"
+synced_at: "2026-09-23T18:55:59.692546"
 ---
 
 # @ohos.enterprise.accountManager (账号管理)
@@ -492,8 +492,7 @@ createNormalOsAccount(admin: Want, name: string): Promise<osAccount.OsAccountInf
 
 ```
 import { accountManager } from '@kit.MDMKit';
-import { BusinessError } from '@kit.BasicServicesKit';
-import { osAccount } from '@kit.BasicServicesKit';
+import { BusinessError, osAccount } from '@kit.BasicServicesKit';
 import { Want } from '@kit.AbilityKit';
 
 let wantTemp: Want = {
@@ -556,8 +555,7 @@ removeOsAccount(admin: Want, accountId: number): Promise<void>
 
 ```
 import { accountManager } from '@kit.MDMKit';
-import { BusinessError } from '@kit.BasicServicesKit';
-import { osAccount } from '@kit.BasicServicesKit';
+import { BusinessError, osAccount } from '@kit.BasicServicesKit';
 import { Want } from '@kit.AbilityKit';
 
 let wantTemp: Want = {
@@ -625,8 +623,7 @@ activateOsAccount(admin: Want, accountId: number): Promise<void>
 
 ```
 import { accountManager } from '@kit.MDMKit';
-import { BusinessError } from '@kit.BasicServicesKit';
-import { osAccount } from '@kit.BasicServicesKit';
+import { BusinessError, osAccount } from '@kit.BasicServicesKit';
 import { Want } from '@kit.AbilityKit';
 
 let wantTemp: Want = {

@@ -2,8 +2,8 @@
 title: "Class (WebviewController)"
 upstream_id: "harmonyos-references/arkts-apis-webview-webviewcontroller"
 catalog: "harmonyos-references"
-content_hash: "1020f82aa681"
-synced_at: "2026-09-17T18:52:36.807734"
+content_hash: "4af5dd34a54d"
+synced_at: "2026-09-23T18:54:51.685835"
 ---
 
 # Class (WebviewController)
@@ -9928,9 +9928,9 @@ struct WebComponent {
               let info = this.controller.getBlanklessInfoWithKey('https://www.example.com/page1');
               if (info.errCode == webview.WebBlanklessErrorCode.SUCCESS) {
                 if (info.similarity >= 0.5 && info.loadingTime < 1000) {
-                  this.controller.setBlanklessLoadingWithKey('http://www.example.com/page1', true);
+                  this.controller.setBlanklessLoadingWithKey('https://www.example.com/page1', true);
                 } else {
-                  this.controller.setBlanklessLoadingWithKey('http://www.example.com/page1', false);
+                  this.controller.setBlanklessLoadingWithKey('https://www.example.com/page1', false);
                 }
               } else {
                 console.info('getBlankless info err');
@@ -10001,9 +10001,9 @@ struct WebComponent {
               let info = this.controller.getBlanklessInfoWithKey('https://www.example.com/page1');
               if (info.errCode == webview.WebBlanklessErrorCode.SUCCESS) {
                 if (info.similarity >= 0.5 && info.loadingTime < 1000) {
-                  this.controller.setBlanklessLoadingWithKey('http://www.example.com/page1', true);
+                  this.controller.setBlanklessLoadingWithKey('https://www.example.com/page1', true);
                 } else {
-                  this.controller.setBlanklessLoadingWithKey('http://www.example.com/page1', false);
+                  this.controller.setBlanklessLoadingWithKey('https://www.example.com/page1', false);
                 }
               } else {
                 console.info('getBlankless info err');
@@ -10083,7 +10083,7 @@ struct WebComponent {
                     // 数据监控
                   },
                 };
-                this.controller.setBlanklessLoadingWithParams('http://www.example.com/page1', param);
+                this.controller.setBlanklessLoadingWithParams('https://www.example.com/page1', param);
               } else {
                 console.info('getBlankless info err');
               }
