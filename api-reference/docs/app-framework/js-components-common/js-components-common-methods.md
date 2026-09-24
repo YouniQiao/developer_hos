@@ -2,8 +2,8 @@
 title: "通用方法"
 upstream_id: "harmonyos-references/js-components-common-methods"
 catalog: "harmonyos-references"
-content_hash: "d1e53c2ecb0b"
-synced_at: "2026-08-29T18:15:27.296886"
+content_hash: "6267ff4febb4"
+synced_at: "2026-09-24T18:52:07.120875"
 ---
 
 # 通用方法
@@ -22,10 +22,10 @@ animate( keyframes: Keyframes, options: Options)：void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| keyframes | keyframes | 是 | 设置动画样式。 |
+| keyframes | Keyframes | 是 | 设置动画样式。 |
 | options | Options | 是 | 用于设置动画属性的对象列表。具体参数说明请参见表3 Options说明。 |
 
-表1 keyframes
+表1 Keyframes
 
 | 属性 | 类型 | 说明 |
 | --- | --- | --- |
@@ -186,7 +186,7 @@ export default {
     }
 }
 ```
- ![](./img/zh-cn_image_0000002731359435.gif)
+ ![](./img/zh-cn_image_0000002772740615.gif)
 
 #### getBoundingClientRect
 

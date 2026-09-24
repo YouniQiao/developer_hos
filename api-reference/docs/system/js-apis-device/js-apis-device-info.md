@@ -2,8 +2,8 @@
 title: "@ohos.deviceInfo (设备信息)"
 upstream_id: "harmonyos-references/js-apis-device-info"
 catalog: "harmonyos-references"
-content_hash: "748cf4d458ed"
-synced_at: "2026-09-23T18:55:45.540440"
+content_hash: "595d5dea1201"
+synced_at: "2026-09-24T18:53:38.285526"
 ---
 
 # @ohos.deviceInfo (设备信息)
@@ -231,7 +231,7 @@ let distributionOSApiVersion: number = deviceInfo.distributionOSApiVersion;
 console.info('the value of the deviceInfo distributionOSApiVersion is :' + distributionOSApiVersion);
 
 let distributionOSApiName: string = deviceInfo.distributionOSApiName;
-// 输出结果：the value of the deviceInfo distributionOSApiName is :HarmonyOS-API
+// 输出结果：the value of the deviceInfo distributionOSApiName is :5.0.1
 console.info('the value of the deviceInfo distributionOSApiName is :' + distributionOSApiName);
 
 let distributionOSReleaseType: string = deviceInfo.distributionOSReleaseType;

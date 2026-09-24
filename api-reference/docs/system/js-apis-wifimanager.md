@@ -2,8 +2,8 @@
 title: "@ohos.wifiManager (WLAN)"
 upstream_id: "harmonyos-references/js-apis-wifimanager"
 catalog: "harmonyos-references"
-content_hash: "ff7985e5cd77"
-synced_at: "2026-09-14T19:47:41.085885"
+content_hash: "bfb065c79043"
+synced_at: "2026-09-24T18:53:20.891063"
 ---
 
 # @ohos.wifiManager (WLAN)
@@ -600,7 +600,7 @@ WAPI(Wireless LAN Authentication and Privacy Infrastructure) 身份验证协议�
 
 #### WifiCapability
 
-Wi-Fi功能。
+Wi-Fi支持的能力。
 
 起始版本： 26.0.0
 
@@ -2505,7 +2505,7 @@ p2pConnect(config: WifiP2PConfig): void
 
 执行P2P连接。调用此方法后，如需取消连接可调用[p2pCancelConnect](#wifimanagerp2pcancelconnect)。
 
-当WifiP2PConfig中deviceAddressType为0（真实MAC地址）时，若设备MAC地址通过[wifiManager.on('p2pPeerDeviceChange')](#wifimanageronp2ppeerdevicechange)获取，需具备ohos.permission.GET_WIFI_PEERS_MAC权限。
+当WifiP2PConfig中deviceAddressType为1（真实MAC地址）时，若设备MAC地址通过[wifiManager.on('p2pPeerDeviceChange')](#wifimanageronp2ppeerdevicechange)获取，需具备ohos.permission.GET_WIFI_PEERS_MAC权限。
 
 从API版本26.0.0开始，支持通过WifiP2PConfig传入passphrase和groupName进行密钥连接，此时需将deviceAddress参数设置为"00:00:00:00:00:00"。
 

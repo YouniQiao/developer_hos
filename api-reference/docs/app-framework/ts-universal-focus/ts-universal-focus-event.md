@@ -2,8 +2,8 @@
 title: "焦点事件"
 upstream_id: "harmonyos-references/ts-universal-focus-event"
 catalog: "harmonyos-references"
-content_hash: "870427f50662"
-synced_at: "2026-07-28T16:41:53.684946"
+content_hash: "b9061b9e49f6"
+synced_at: "2026-09-24T18:51:27.177566"
 ---
 
 # 焦点事件
@@ -83,6 +83,7 @@ struct FocusEventExample {
         .width(260)
         .height(70)
         .fontColor(Color.Black)
+        .focusOnTouch(true)
         .onFocus(() => {
           this.oneButtonColor = '#FFFFFF';
         })
@@ -94,6 +95,7 @@ struct FocusEventExample {
         .width(260)
         .height(70)
         .fontColor(Color.Black)
+        .focusOnTouch(true)
         .onFocus(() => {
           this.twoButtonColor = '#FFFFFF';
         })
@@ -105,6 +107,7 @@ struct FocusEventExample {
         .width(260)
         .height(70)
         .fontColor(Color.Black)
+        .focusOnTouch(true)
         .onFocus(() => {
           this.threeButtonColor = '#FFFFFF';
         })
@@ -115,4 +118,4 @@ struct FocusEventExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686087755.png)
+ ![](./img/zh-cn_image_0000002772899733.png)

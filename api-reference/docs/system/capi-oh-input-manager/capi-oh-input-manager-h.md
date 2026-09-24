@@ -2,8 +2,8 @@
 title: "oh_input_manager.h"
 upstream_id: "harmonyos-references/capi-oh-input-manager-h"
 catalog: "harmonyos-references"
-content_hash: "81663c13548a"
-synced_at: "2026-09-17T18:53:30.407148"
+content_hash: "daec573983d0"
+synced_at: "2026-09-24T18:53:49.342857"
 ---
 
 # oh_input_manager.h
@@ -2939,7 +2939,7 @@ void OH_Input_SetPreKeys(Input_Hotkey *hotkey, int32_t *preKeys, int32_t size)
 | --- | --- |
 | [Input_Hotkey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-input-input-hotkey) *hotkey | hotkey 快捷键对象的实例。 |
 | int32_t *preKeys | preKeys 修饰键列表。 |
-| int32_t size | 修饰键个数，取值范围[1, 2]。 |
+| int32_t size | 修饰键个数，取值范围[1, 4]。 |
 
 #### [h2]OH_Input_GetPreKeys()
 

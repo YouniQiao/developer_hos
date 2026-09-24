@@ -2,8 +2,8 @@
 title: "gameNearbyTransfer（游戏近场快传）"
 upstream_id: "harmonyos-references/gameservice-nearbytransfer"
 catalog: "harmonyos-references"
-content_hash: "052722415450"
-synced_at: "2026-07-09T01:01:18.910110"
+content_hash: "fea8b2a81dab"
+synced_at: "2026-09-24T18:55:02.655643"
 ---
 
 # gameNearbyTransfer（游戏近场快传）
@@ -892,7 +892,7 @@ try {
   gameNearbyTransfer.onRemoteInstallationInfoNotify(remoteCallBack);
 } catch (error) {
   let err = error as BusinessError;
-  hilog.error(0x0000, 'nearby', `Failed to subscribe offRemoteInstallationInfoNotify error. Code: ${err.code}, message: ${err.message}`);
+  hilog.error(0x0000, 'nearby', `Failed to subscribe onRemoteInstallationInfoNotify error. Code: ${err.code}, message: ${err.message}`);
 }
 
 function remoteCallBack(callback: gameNearbyTransfer.RemoteInstallationInfo) {
@@ -917,7 +917,7 @@ offRemoteInstallationInfoNotify(callback?: Callback<RemoteInstallationInfo>): vo
 
 | **参数名** | **类型** | **必填** | **说明** |
 | --- | --- | --- | --- |
-| callback | Callback | 否 | 回调函数，返回远程安装包结果信息对象。 如果该参数不为空，则取消当前callback订阅。如果该参数为空，则取消'offRemoteInstallationInfoNotify'事件的所有callback订阅。 |
+| callback | Callback | 否 | 回调函数，返回远程安装包结果信息对象。 如果该参数不为空，则取消当前callback订阅。如果该参数为空，则取消'onRemoteInstallationInfoNotify'事件的所有callback订阅。 |
 
 错误码：
 

@@ -2,8 +2,8 @@
 title: "ArkUI_NodeContent*"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-nodecontent8h"
 catalog: "harmonyos-references"
-content_hash: "afea4965e745"
-synced_at: "2026-07-28T16:49:35.089001"
+content_hash: "23a2d0731314"
+synced_at: "2026-09-24T18:52:37.364874"
 ---
 
 # ArkUI_NodeContent*
@@ -20,4 +20,4 @@ typedef struct ArkUI_NodeContent* ArkUI_NodeContentHandle
 
 相关模块： [ArkUI_NativeModule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule)
 
-所在头文件： [native_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h)
+所在头文件： [common_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-common-type-h)

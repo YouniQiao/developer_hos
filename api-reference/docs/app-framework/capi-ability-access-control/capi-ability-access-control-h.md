@@ -2,8 +2,8 @@
 title: "ability_access_control.h"
 upstream_id: "harmonyos-references/capi-ability-access-control-h"
 catalog: "harmonyos-references"
-content_hash: "8f85b176cc9b"
-synced_at: "2026-07-09T00:57:12.100995"
+content_hash: "c4dec5d4c8c4"
+synced_at: "2026-09-24T18:51:07.094661"
 ---
 
 # ability_access_control.h
@@ -12,7 +12,7 @@ synced_at: "2026-07-09T00:57:12.100995"
 
 声明管理进程访问控制的接口。
 
-库： ability_access_control.so
+库： libability_access_control.so
 
 引用文件： <accesstoken/ability_access_control.h>
 

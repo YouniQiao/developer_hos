@@ -2,8 +2,8 @@
 title: "SOTER"
 upstream_id: "harmonyos-references/onlineauthentication-soter-api"
 catalog: "harmonyos-references"
-content_hash: "289e7a2c2ae7"
-synced_at: "2026-08-29T18:16:30.208011"
+content_hash: "a6c5690bf4c8"
+synced_at: "2026-09-24T18:53:14.776618"
 ---
 
 # SOTER
@@ -679,7 +679,7 @@ let keyAlias: string = 'keyAlias';
 
 // 使用同步接口获取authKey
 let signedResult: soter.SignedResult = soter.getAuthKeySync(keyAlias, keyType);
-let authKey: Uint8Array = signedResult.message; // 开发者使用结果authKey
+let authKey: Uint8Array = signedResult.signature; // 开发者使用结果authKey
 console.info('Succeeded in doing getAuthKeySync. authKey:', authKey);
 ```
 

@@ -2,8 +2,8 @@
 title: "酒店房卡接口"
 upstream_id: "harmonyos-references/wallet-rest-api-hotel"
 catalog: "harmonyos-references"
-content_hash: "4278817f40cc"
-synced_at: "2026-08-29T18:18:37.244605"
+content_hash: "7fad15655642"
+synced_at: "2026-09-24T18:55:21.566363"
 ---
 
 # 酒店房卡接口

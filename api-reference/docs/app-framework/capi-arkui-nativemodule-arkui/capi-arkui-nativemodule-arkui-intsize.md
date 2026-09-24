@@ -2,8 +2,8 @@
 title: "ArkUI_IntSize"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-intsize"
 catalog: "harmonyos-references"
-content_hash: "49c4a5eab363"
-synced_at: "2026-07-09T00:58:42.500563"
+content_hash: "b6b9fdf8363c"
+synced_at: "2026-09-24T18:52:36.017882"
 ---
 
 # ArkUI_IntSize
@@ -20,7 +20,7 @@ typedef struct {...} ArkUI_IntSize
 
 相关模块： [ArkUI_NativeModule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule)
 
-所在头文件： [native_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h)
+所在头文件： [common_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-common-type-h)
 
 #### 汇总
 

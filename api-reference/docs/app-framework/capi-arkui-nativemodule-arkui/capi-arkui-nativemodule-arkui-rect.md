@@ -2,8 +2,8 @@
 title: "ArkUI_Rect"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-rect"
 catalog: "harmonyos-references"
-content_hash: "1ab7d1d33efa"
-synced_at: "2026-07-09T00:58:42.462156"
+content_hash: "f24e0c21f70e"
+synced_at: "2026-09-24T18:52:35.942231"
 ---
 
 # ArkUI_Rect
@@ -20,7 +20,7 @@ typedef struct {...} ArkUI_Rect
 
 相关模块： [ArkUI_NativeModule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule)
 
-所在头文件： [native_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h)
+所在头文件： [common_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-common-type-h)
 
 #### 汇总
 

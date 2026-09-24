@@ -2,8 +2,8 @@
 title: "ArkUI_DrawContext"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-drawcontext"
 catalog: "harmonyos-references"
-content_hash: "a9a8629d424c"
-synced_at: "2026-07-28T16:49:34.421085"
+content_hash: "725e167e7cf0"
+synced_at: "2026-09-24T18:52:36.756149"
 ---
 
 # ArkUI_DrawContext
@@ -20,4 +20,4 @@ typedef struct ArkUI_DrawContext ArkUI_DrawContext
 
 相关模块： [ArkUI_NativeModule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule)
 
-所在头文件： [native_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h)
+所在头文件： [common_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-common-type-h)

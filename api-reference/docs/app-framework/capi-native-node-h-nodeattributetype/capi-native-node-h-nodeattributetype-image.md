@@ -2,8 +2,8 @@
 title: "ArkUI_NodeAttributeType（图类组件相关属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-image"
 catalog: "harmonyos-references"
-content_hash: "a0d30f8c92d1"
-synced_at: "2026-08-04T17:01:31.674940"
+content_hash: "c888026459c9"
+synced_at: "2026-09-24T18:52:25.861763"
 ---
 
 # ArkUI_NodeAttributeType（图类组件相关属性）
@@ -275,13 +275,13 @@ NODE_IMAGE_FILL_COLOR = 4010
 
 | 参数项 | 描述 |
 | --- | --- |
-| .value[0].u32 | 填充色数值，0xargb格式，形如 0xFFFF0000 表示红色。 |
+| .value[0].u32 | 填充色数值，0xARGB格式，形如 0xFFFF0000 表示红色。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| .value[0].u32 | 填充色数值，0xargb格式。 |
+| .value[0].u32 | 填充色数值，0xARGB格式。 |
 
 #### NODE_IMAGE_RESIZABLE
 

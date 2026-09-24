@@ -2,8 +2,8 @@
 title: "Image错误码"
 upstream_id: "harmonyos-references/errorcode-image"
 catalog: "harmonyos-references"
-content_hash: "05ab338d6382"
-synced_at: "2026-09-23T18:56:45.277071"
+content_hash: "76a4534f7782"
+synced_at: "2026-09-24T18:54:30.358338"
 ---
 
 # Image错误码
@@ -50,7 +50,7 @@ The operation failed. Possible cause: 1.Image upload exception. 2. Decoding proc
 
 请检查图片并按指示操作重新解码。
 
-#### 62980097 Pixelmap序列化传输失败
+#### 62980097 PixelMap序列化传输失败
 
 错误信息
 
@@ -58,7 +58,7 @@ IPC error. Possible cause: 1.IPC communication failed. 2. Image upload exception
 
 错误描述
 
-Pixelmap序列化传输失败。
+PixelMap序列化传输失败。
 
 可能原因
 
@@ -192,7 +192,7 @@ The image data is not supported.
 
 错误信息
 
-Image initialization abnormal. This status code is thrown when an error occurs during the process of creating empty Pixelmap.
+Image initialization abnormal. This status code is thrown when an error occurs during the process of creating empty PixelMap.
 
 错误描述
 
@@ -491,7 +491,7 @@ Failed to encode the image.
 
 错误信息
 
-Add Pixelmap out of range.
+Add PixelMap out of range.
 
 错误描述
 
@@ -948,7 +948,7 @@ PixelMap设置内存标识符失败。
 
 处理步骤
 
-检查是否已释放Pixelmap实例。检查内存类型是否匹配。
+检查是否已释放PixelMap实例。检查内存类型是否匹配。
 
 #### 62980302 内存拷贝失败
 

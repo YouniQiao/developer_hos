@@ -2,8 +2,8 @@
 title: "@hms.enterpriseSpaceService.fileTransfer(空间数据传输)"
 upstream_id: "harmonyos-references/enterprisespace-spacedatatransfer"
 catalog: "harmonyos-references"
-content_hash: "1d954d151b53"
-synced_at: "2026-08-29T18:18:14.030726"
+content_hash: "c35da6230333"
+synced_at: "2026-09-24T18:55:01.224930"
 ---
 
 # @hms.enterpriseSpaceService.fileTransfer(空间数据传输)
@@ -215,7 +215,7 @@ policyPush(policyContext: string): void
 | **参数名** | **说明** | **示例** |
 | --- | --- | --- |
 | allow | 放通动作配置，通过表达式配置。 | "VirusCheck.Result == 0" |
-| approval | 审批动作配置，个人空间向企业空间发送文件时的审批不生效，不需要配置。 | "VirusCheck.Result == 10" |
+| approval | 审批动作配置，个人空间向企业空间发送文件时的审批不生效，不需要配置。 | "" |
 | check_point | 检测点类型。 SecurityCheck：安全检查 VirusCheck：病毒检查 | "SecurityCheck" |
 | check_point_name | 检测点名称。由用户自定义，无长度限制。 | "VirusCheck_in" |
 | is_enable | 配置个人空间向企业空间发送文件时检测的规则是否生效。可选参数。 true：生效 false：不生效 默认值：true | "true" |

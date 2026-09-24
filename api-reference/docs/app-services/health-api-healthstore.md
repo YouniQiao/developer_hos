@@ -2,8 +2,8 @@
 title: "healthStore (运动健康数据服务)"
 upstream_id: "harmonyos-references/health-api-healthstore"
 catalog: "harmonyos-references"
-content_hash: "3909af28250e"
-synced_at: "2026-09-01T18:16:08.140134"
+content_hash: "16a1b09cc84a"
+synced_at: "2026-09-24T18:55:03.446754"
 ---
 
 # healthStore (运动健康数据服务)
@@ -1925,7 +1925,7 @@ let aggregateRequest: healthStore.AggregateRequest<healthStore.samplePointHelper
  },
   groupBy: {
     unitType: 3,
-    duration: 0
+    duration: 1
   },
   startLocalDate: '10/30/2023',
   endLocalDate: '10/30/2023'

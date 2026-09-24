@@ -2,8 +2,8 @@
 title: "UIAbilityContext"
 upstream_id: "harmonyos-references/js-apis-inner-application-uiabilitycontext"
 catalog: "harmonyos-references"
-content_hash: "d1a0cecc0ef3"
-synced_at: "2026-09-04T18:09:17.746555"
+content_hash: "22aefa9dd335"
+synced_at: "2026-09-24T18:51:04.992650"
 ---
 
 # UIAbilityContext
@@ -3542,7 +3542,7 @@ restartApp(want: Want): Promise<void>
 | 801 | Capability not supported. |
 | 16000011 | The context does not exist. |
 | 16000050 | Connect to system server error. |
-| 16000063 | The target to restart does not belong to the caller or is not a UIAbility. |
+| 16000063 | The target to restart does not belong to the current application or is not a UIAbility. |
 | 16000064 | Restart too frequently. |
 | 16000065 | The API can be called only when the ability is focused. |
 

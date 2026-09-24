@@ -2,8 +2,8 @@
 title: "ArkUI_ContextCallback"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-contextcallback"
 catalog: "harmonyos-references"
-content_hash: "8382e600f979"
-synced_at: "2026-07-28T16:49:32.913748"
+content_hash: "ecf35660811a"
+synced_at: "2026-09-24T18:52:35.588969"
 ---
 
 # ArkUI_ContextCallback
@@ -20,7 +20,7 @@ typedef struct {...} ArkUI_ContextCallback
 
 相关模块： [ArkUI_NativeModule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule)
 
-所在头文件： [native_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h)
+所在头文件： [common_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-common-type-h)
 
 #### 汇总
 

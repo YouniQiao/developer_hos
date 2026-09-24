@@ -2,8 +2,8 @@
 title: "通行密钥"
 upstream_id: "harmonyos-references/onlineauthentication-passkey-api"
 catalog: "harmonyos-references"
-content_hash: "18c64428a1ce"
-synced_at: "2026-08-29T18:16:30.324904"
+content_hash: "e84ece1a7a7d"
+synced_at: "2026-09-24T18:53:13.893032"
 ---
 
 # 通行密钥
@@ -168,7 +168,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 | response | [AuthenticatorAttestationResponseJson](#authenticatorattestationresponsejson) | 否 | 否 | 认证器证明响应。 |
 | authenticatorAttachment | string | 否 | 是 | 认证器信息（平台、漫游），默认值为platform。长度限制0到512。 |
 | clientExtensionResults | [AuthenticationExtensionsClientOutputsJson](#authenticationextensionsclientoutputsjson) | 否 | 否 | 客户端扩展结果。当前版本不支持扩展，因此占位符始终为NULL，必须将clientExtensionResults键对应的值解析为{}。 |
-| type | string | 否 | 否 | 该属性返回对象的接口对象的插槽的值，它指定此对象所表示的凭据类型。长度限制0到512。 |
+| type | string | 否 | 否 | 该属性指定此对象所表示的凭据类型。长度限制0到512。 |
 
 #### PublicKeyCredentialRequestOptions
 
@@ -184,7 +184,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| challenge | Uint8Array | 否 | 否 | 获取挑战值。 |
+| challenge | Uint8Array | 否 | 否 | 挑战值。 |
 | timeout | number | 否 | 是 | 超时时间。单位为ms。默认为300000（5分钟），限制为0到600000（10分钟）。 |
 | rpId | string | 否 | 是 | 依赖方标识。默认值为空。长度限制0到512。 |
 | allowCredentials | Array | 否 | 是 | 认证凭据的附加参数列表。默认值为空。 |
@@ -233,7 +233,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 | response | [AuthenticatorAssertionResponseJson](#authenticatorassertionresponsejson) | 否 | 否 | 认证器断言响应，JSON字符串的结构。 |
 | authenticatorAttachment | string | 否 | 是 | 认证器信息（平台、漫游），默认值为platform。长度限制0到512。 |
 | clientExtensionResults | [AuthenticationExtensionsClientOutputsJson](#authenticationextensionsclientoutputsjson) | 否 | 否 | 客户端扩展结果。当前版本不支持扩展，因此占位符始终为NULL，必须将clientExtensionResults键对应的值解析为{}。 |
-| type | string | 否 | 否 | 该属性以JSON字符串形式返回对象的接口对象的插槽的值，该插槽指定此对象所表示的凭据类型。长度限制0到512。 |
+| type | string | 否 | 否 | 该属性指定此对象所表示的凭据类型。长度限制0到512。 |
 
 #### CredentialMediationRequirement
 
@@ -584,7 +584,7 @@ Token binding协议，用于客户端与依赖方通信。
 | excludeCredentials | Array | 否 | 是 | FIDO服务器已注册的凭据列表，默认值为空数组。 |
 | authenticatorSelection | [AuthenticatorSelectionCriteria](#authenticatorselectioncriteria) | 否 | 是 | 身份认证器相关配置项。默认值为空。 |
 | hints | Array | 否 | 是 | 提示。默认值为空数组。 |
-| attestation | [AttestationConveyancePreference](#attestationconveyancepreference) | 否 | 是 | 凭证首选项，默认值为“FIDO2_NONE”。 |
+| attestation | [AttestationConveyancePreference](#attestationconveyancepreference) | 否 | 是 | 凭证首选项，默认值为“NONE”。 |
 | attestationFormats | Array | 否 | 是 | 依赖方可以使用此可选成员来指定对认证器使用的验证声明格式的偏好，默认值为空数组。 |
 | extensions | Map | 否 | 是 | 扩展参数。默认值为空。 |
 
@@ -852,7 +852,7 @@ struct Index {
             user: { id: new Uint8Array([1, 2, 3, 4]), name: 'user', displayName: 'User Name' },
             pubKeyCredParams: [
             ],
-            challenge: new Uint8Array([1, 2, 3, 4, 5, 6, 7, 8])
+            challenge: new Uint8Array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16])
           };
           let credentialCreationOp: fido2.CredentialCreationOptions = {
             publicKey: pkOptions

@@ -2,8 +2,8 @@
 title: "通用凭证接口"
 upstream_id: "harmonyos-references/wallet-rest-api-generalcard"
 catalog: "harmonyos-references"
-content_hash: "24e6b7bd7a9f"
-synced_at: "2026-08-29T18:18:37.256363"
+content_hash: "00b1bf29ac84"
+synced_at: "2026-09-24T18:55:22.210324"
 ---
 
 # 通用凭证接口

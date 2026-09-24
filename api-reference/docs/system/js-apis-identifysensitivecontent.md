@@ -2,8 +2,8 @@
 title: "@ohos.security.identifySensitiveContent (识别敏感内容)"
 upstream_id: "harmonyos-references/js-apis-identifysensitivecontent"
 catalog: "harmonyos-references"
-content_hash: "297754df989b"
-synced_at: "2026-08-24T15:41:26.581447"
+content_hash: "d0ad188b599f"
+synced_at: "2026-09-24T18:53:10.836058"
 ---
 
 # @ohos.security.identifySensitiveContent (识别敏感内容)
@@ -43,12 +43,12 @@ scanFile(filePath: string, identifyPolicies:Array<Policy>): Promise<Array<MatchR
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[数据泄露防护DLP服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-dlp)。
+以下错误码的详细介绍请参见[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[DLP服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-dlp)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 201 | permission denied. |
-| 801 | Capability not supported. |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
+| 801 | Capability not supported. Possible causes: The device type does not support the capability. |
 | 19110001 | Parameter error. Possible causes: 1. Incorrect policy format. 2. Invalid parameter range. |
 | 19110002 | Sensitive file content identification timed out. |
 | 19110003 | The file is not supported. Possible causes: 1. The file path does not exist. 2. The file type is not supported. 3. The file permission is not supported. |

@@ -2,17 +2,27 @@
 title: "@ohos.screenLock (锁屏管理)"
 upstream_id: "harmonyos-references/js-apis-screen-lock"
 catalog: "harmonyos-references"
-content_hash: "5258b26ae2ec"
-synced_at: "2026-07-09T00:59:42.611300"
+content_hash: "a2187035c2c9"
+synced_at: "2026-09-24T18:53:41.009613"
 ---
 
 # @ohos.screenLock (锁屏管理)
 
 锁屏管理服务是HarmonyOS中的系统服务，为锁屏应用提供注册亮屏、灭屏、开启屏幕、结束休眠、退出动画、请求解锁结果监听，并提供回调结果给锁屏应用。锁屏管理服务向三方应用提供请求解锁、查询锁屏状态、查询是否设置锁屏密码的能力。
 
-![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
+![](./img/note_3.0-zh-cn.png)
+
+- 本模块首批接口从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
+- 在以下内容中，对于Lite Wearable设备类型，请参考“JS示例”；对于支持该模块的其他设备类型，请参考“ArkTS示例”。
 
 #### 导入模块
+
+ArkTS示例：
+
+```
+import screenLock from '@ohos.screenLock';
+```
+ JS示例：
 
 ```
 import screenLock from '@ohos.screenLock';
@@ -36,6 +46,8 @@ isScreenLocked(callback: AsyncCallback<boolean>): void
 
 示例：
 
+ArkTS示例：
+
 ```
 import { BusinessError } from '@ohos.base';
 
@@ -46,6 +58,63 @@ screenLock.isScreenLocked((err: BusinessError, data: Boolean)=>{
   }
   console.info(`Succeeded in Obtaining whether the screen is locked. result: ${data}`);
 });
+```
+ JS示例：
+
+```
+<!-- xxx.hml -->
+<div class="container">
+    <text class="text-content" on:click="isScreenLocked">点击调用 isScreenLocked</text>
+    <text class="text-content">result: "{{ test_val }}"</text>
+</div>
+```
+ 
+```
+/* xxx.css */
+.container {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+.text-content {
+    color: black;
+    font-size: 28fp;
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+```
+ 
+```
+// xxx.js
+import screenLock from '@ohos.screenLock';
+
+export default {
+    data: {
+        test_val: '未调用'
+    },
+    isScreenLocked() {
+        this.test_val = '开始调用 isScreenLocked';
+        try {
+            screenLock.isScreenLocked((err, data) => {
+                if (err) {
+                    this.test_val = `isScreenLocked 报错: ${err.code}, message: ${err.message}`;
+                    console.error(`Failed to obtain whether the screen is locked, Code: ${err.code}, message: ${err.message}`);
+                    return;
+                }
+                this.test_val = `isScreenLocked 成功: ${data}`;
+                console.info(`Succeeded in Obtaining whether the screen is locked. result: ${data}`);
+            });
+        } catch (err) {
+            this.test_val = `isScreenLocked 调用异常: ${err.code} ${err.message}`;
+        }
+    }
+}
 ```
 
 #### screenLock.isScreenLocked(deprecated)
@@ -66,6 +135,8 @@ isScreenLocked(): Promise<boolean>
 
 示例：
 
+ArkTS示例：
+
 ```
 import { BusinessError } from '@ohos.base';
 
@@ -75,6 +146,7 @@ screenLock.isScreenLocked().then((data: Boolean) => {
   console.error(`Failed to obtain whether the screen is locked, Code: ${err.code}, message: ${err.message}`);
 });
 ```
+ ![](./img/note_3.0-zh-cn.png) Lite Wearable 不支持 Promise/async/await 等 ES6 语法，请使用上述 callback 形式的接口（[isScreenLocked(callback)](#screenlockisscreenlockeddeprecated)）。
 
 #### screenLock.isSecureMode(deprecated)
 
@@ -94,6 +166,8 @@ isSecureMode(callback: AsyncCallback<boolean>): void
 
 示例：
 
+ArkTS示例：
+
 ```
 import { BusinessError } from '@ohos.base';
 
@@ -104,6 +178,63 @@ screenLock.isSecureMode((err: BusinessError, data: Boolean)=>{
   }
   console.info(`Succeeded in Obtaining whether the device is in secure mode. result: ${data}`);
 });
+```
+ JS示例：
+
+```
+<!-- xxx.hml -->
+<div class="container">
+    <text class="text-content" on:click="isSecureMode">点击调用 isSecureMode</text>
+    <text class="text-content">result: "{{ test_val }}"</text>
+</div>
+```
+ 
+```
+/* xxx.css */
+.container {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+.text-content {
+    color: black;
+    font-size: 28fp;
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+```
+ 
+```
+// xxx.js
+import screenLock from '@ohos.screenLock';
+
+export default {
+    data: {
+        test_val: '未调用'
+    },
+    isSecureMode() {
+        this.test_val = '开始调用 isSecureMode';
+        try {
+            screenLock.isSecureMode((err, data) => {
+                if (err) {
+                    this.test_val = `isSecureMode 报错: ${err.code}, message: ${err.message}`;
+                    console.error(`Failed to obtain whether the device is in secure mode, Code: ${err.code}, message: ${err.message}`);
+                    return;
+                }
+                this.test_val = `isSecureMode 成功: ${data}`;
+                console.info(`Succeeded in Obtaining whether the device is in secure mode. result: ${data}`);
+            });
+        } catch (err) {
+            this.test_val = `isSecureMode 调用异常: ${err.code} ${err.message}`;
+        }
+    }
+}
 ```
 
 #### screenLock.isSecureMode(deprecated)
@@ -124,6 +255,8 @@ isSecureMode(): Promise<boolean>
 
 示例：
 
+ArkTS示例：
+
 ```
 import { BusinessError } from '@ohos.base';
 
@@ -133,6 +266,7 @@ screenLock.isSecureMode().then((data: Boolean) => {
   console.error(`Failed to obtain whether the device is in secure mode, Code: ${err.code}, message: ${err.message}`);
 });
 ```
+ ![](./img/note_3.0-zh-cn.png) Lite Wearable 不支持 Promise/async/await 等 ES6 语法，请使用上述 callback 形式的接口（[isSecureMode(callback)](#screenlockissecuremodedeprecated)）。
 
 #### screenLock.unlockScreen(deprecated)
 
@@ -152,6 +286,8 @@ unlockScreen(callback: AsyncCallback<void>): void
 
 示例：
 
+ArkTS示例：
+
 ```
 import { BusinessError } from '@ohos.base';
 
@@ -162,6 +298,63 @@ screenLock.unlockScreen((err: BusinessError) => {
   }
   console.info(`Succeeded unlocking the screen.`);
 });
+```
+ JS示例：
+
+```
+<!-- xxx.hml -->
+<div class="container">
+    <text class="text-content" on:click="unlockScreen">点击调用 unlockScreen</text>
+    <text class="text-content">result: "{{ test_val }}"</text>
+</div>
+```
+ 
+```
+/* xxx.css */
+.container {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+.text-content {
+    color: black;
+    font-size: 28fp;
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+```
+ 
+```
+// xxx.js
+import screenLock from '@ohos.screenLock';
+
+export default {
+    data: {
+        test_val: '未调用'
+    },
+    unlockScreen() {
+        this.test_val = '开始调用 unlockScreen';
+        try {
+            screenLock.unlockScreen((err) => {
+                if (err) {
+                    this.test_val = `unlockScreen 报错: ${err.code}, message: ${err.message}`;
+                    console.error(`Failed to unlock the screen, Code: ${err.code}, message: ${err.message}`);
+                    return;
+                }
+                this.test_val = `unlockScreen 调用成功`;
+                console.info(`Succeeded unlocking the screen.`);
+            });
+        } catch (err) {
+            this.test_val = `unlockScreen 调用异常: ${err.code} ${err.message}`;
+        }
+    }
+}
 ```
 
 #### screenLock.unlockScreen(deprecated)
@@ -182,6 +375,8 @@ unlockScreen(): Promise<void>
 
 示例：
 
+ArkTS示例：
+
 ```
 import { BusinessError } from '@ohos.base';
 
@@ -191,3 +386,4 @@ screenLock.unlockScreen().then(() => {
   console.error(`Failed to unlock the screen, Code: ${err.code}, message: ${err.message}`);
 });
 ```
+ ![](./img/note_3.0-zh-cn.png) Lite Wearable 不支持 Promise/async/await 等 ES6 语法，请使用上述 callback 形式的接口（[unlockScreen(callback)](#screenlockunlockscreendeprecated)）。

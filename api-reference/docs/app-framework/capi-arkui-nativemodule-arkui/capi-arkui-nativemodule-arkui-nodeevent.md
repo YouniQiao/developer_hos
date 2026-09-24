@@ -2,8 +2,8 @@
 title: "ArkUI_NodeEvent"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-nodeevent"
 catalog: "harmonyos-references"
-content_hash: "97ff9a9c358c"
-synced_at: "2026-08-29T18:15:42.734872"
+content_hash: "3eda95246d32"
+synced_at: "2026-09-24T18:52:29.646156"
 ---
 
 # ArkUI_NodeEvent
@@ -20,4 +20,4 @@ typedef struct ArkUI_NodeEvent ArkUI_NodeEvent
 
 相关模块： [ArkUI_NativeModule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule)
 
-所在头文件： [drag_and_drop.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drag-and-drop-h)
+所在头文件： [common_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-common-type-h)

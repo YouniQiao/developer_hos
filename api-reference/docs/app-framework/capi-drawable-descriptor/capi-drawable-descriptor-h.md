@@ -2,8 +2,8 @@
 title: "drawable_descriptor.h"
 upstream_id: "harmonyos-references/capi-drawable-descriptor-h"
 catalog: "harmonyos-references"
-content_hash: "17b20defb23a"
-synced_at: "2026-08-29T18:15:36.979589"
+content_hash: "07be2ae0f308"
+synced_at: "2026-09-24T18:52:21.978440"
 ---
 
 # drawable_descriptor.h
@@ -33,8 +33,6 @@ synced_at: "2026-08-29T18:15:36.979589"
 | [ArkUI_DrawableDescriptor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-drawabledescriptor) | ArkUI_DrawableDescriptor | 定义DrawableDescriptor对象。 |
 | [OH_PixelmapNative](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image-nativemodule-oh-pixelmapnative) | - | 使用Image Kit定义的Native侧的OH_PixelmapNative对象。 |
 | [OH_PixelmapNative*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-oh-pixelmapnative8h) | OH_PixelmapNativeHandle | 定义OH_PixelmapNative对象指针类型。 |
-| [ArkUI_Node](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-node-descriptor) | - | 定义ArkUI Native组件实例对象，供ArkUI_NodeHandle指针在Native接口中标识和传递组件实例。 **起始版本：** 22 |
-| [ArkUI_Node*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-node8h) | ArkUI_NodeHandle | 定义 ArkUI Native 组件实例对象指针，用于在 ArkUI Native 接口中标识和传递组件实例，例如创建、挂载、移除或销毁组件节点。 **起始版本：** 22 |
 | [ArkUI_DrawableDescriptor_AnimationController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-drawabledescriptoranimationcontroller) | ArkUI_DrawableDescriptor_AnimationController | 定义DrawableDescriptor动图控制器对象。 **起始版本：** 22 |
 
 #### [h2]枚举

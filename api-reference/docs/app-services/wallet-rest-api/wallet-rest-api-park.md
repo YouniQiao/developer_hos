@@ -2,8 +2,8 @@
 title: "园区卡接口"
 upstream_id: "harmonyos-references/wallet-rest-api-park"
 catalog: "harmonyos-references"
-content_hash: "f466b3e4bf2f"
-synced_at: "2026-08-29T18:18:36.933634"
+content_hash: "435838763c16"
+synced_at: "2026-09-24T18:55:21.481672"
 ---
 
 # 园区卡接口

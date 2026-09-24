@@ -2,8 +2,8 @@
 title: "安全区域"
 upstream_id: "harmonyos-references/ts-universal-attributes-expand-safe-area"
 catalog: "harmonyos-references"
-content_hash: "2d088866bd42"
-synced_at: "2026-09-17T18:50:41.592534"
+content_hash: "68aabb801a35"
+synced_at: "2026-09-24T18:51:29.383543"
 ---
 
 # 安全区域
@@ -204,7 +204,7 @@ struct SafeAreaExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002757232127.png)
+ ![](./img/zh-cn_image_0000002743220626.png)
 
 #### [h2]示例2（同时设置固定宽高和expandSafeArea属性）
 
@@ -235,7 +235,7 @@ struct SafeAreaExample2 {
 ```
  如下图：Column组件扩展至了顶部状态栏[SafeAreaEdge.TOP]，未扩展至底部导航条[SafeAreaEdge.BOTTOM]，扩展后的组件高度维持设置值不变。
 
-![](./img/zh-cn_image_0000002727592436.png)
+![](./img/zh-cn_image_0000002772739879.png)
 
 #### [h2]示例3（键盘避让时固定背景图位置）
 
@@ -278,7 +278,7 @@ struct SafeAreaExample3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002727752294.gif)
+ ![](./img/zh-cn_image_0000002772899763.gif)
 
 #### [h2]示例4（设置键盘避让模式为压缩）
 
@@ -289,9 +289,6 @@ struct SafeAreaExample3 {
 import { window, KeyboardAvoidMode } from '@kit.ArkUI';
 export default class EntryAbility extends UIAbility{
   onWindowStageCreate(windowStage: window.WindowStage) {
-    // Main window is created, set main page for this ability
-    hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onWindowStageCreate');
-
     windowStage.loadContent('pages/Index', (err, data) => {
       // 设置虚拟键盘抬起时压缩页面大小为减去键盘的高度
       windowStage.getMainWindowSync().getUIContext().setKeyboardAvoidMode(KeyboardAvoidMode.RESIZE);
@@ -330,7 +327,7 @@ struct KeyboardAvoidExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002757312009.gif)
+ ![](./img/zh-cn_image_0000002743380514.gif)
 
 #### [h2]示例5（设置键盘避让模式为上抬）
 
@@ -341,9 +338,6 @@ struct KeyboardAvoidExample1 {
 import { window, KeyboardAvoidMode } from '@kit.ArkUI';
 export default class EntryAbility extends UIAbility{
   onWindowStageCreate(windowStage: window.WindowStage) {
-    // Main window is created, set main page for this ability
-    hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onWindowStageCreate');
-
     windowStage.loadContent('pages/Index', (err, data) => {
       // 设置虚拟键盘抬起时把页面上抬直到露出光标
       windowStage.getMainWindowSync().getUIContext().setKeyboardAvoidMode(KeyboardAvoidMode.OFFSET);
@@ -382,7 +376,7 @@ struct KeyboardAvoidExample2 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002757232129.gif)
+ ![](./img/zh-cn_image_0000002743220628.gif)
 
 #### [h2]示例6（切换避让模式）
 
@@ -440,7 +434,7 @@ struct KeyboardAvoidExample3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002727592438.gif)
+ ![](./img/zh-cn_image_0000002772739881.gif)
 
 #### [h2]示例7（滚动类容器扩展安全区）
 
@@ -505,7 +499,7 @@ struct ExpandSafeAreaTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002727752296.png)
+ ![](./img/zh-cn_image_0000002772899765.png)
 
 #### [h2]示例8（ignoreLayoutSafeArea延伸组件布局范围）
 
@@ -545,7 +539,7 @@ struct IgnoreLayoutSafeAreaTest1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002757312011.jpg)
+ ![](./img/zh-cn_image_0000002743380516.jpg)
 
 #### [h2]示例9（ignoreLayoutSafeArea配合LayoutPolicy.matchParent延伸组件布局范围）
 
@@ -583,7 +577,7 @@ struct IgnoreLayoutSafeAreaTest2 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002757232131.jpg)
+ ![](./img/zh-cn_image_0000002743220630.jpg)
 
 #### [h2]示例10（expandSafeArea与ignoreLayoutSafeArea的区别）
 
@@ -654,4 +648,4 @@ struct IgnoreLayoutSafeAreaTest3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002727592440.jpg)
+ ![](./img/zh-cn_image_0000002772739883.jpg)

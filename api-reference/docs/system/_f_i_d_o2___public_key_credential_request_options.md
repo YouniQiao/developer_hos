@@ -2,8 +2,8 @@
 title: "FIDO2_PublicKeyCredentialRequestOptions"
 upstream_id: "harmonyos-references/_f_i_d_o2___public_key_credential_request_options"
 catalog: "harmonyos-references"
-content_hash: "2e7cc68a86be"
-synced_at: "2026-08-29T18:16:32.362840"
+content_hash: "78f120792f46"
+synced_at: "2026-09-24T18:53:15.654808"
 ---
 
 # FIDO2_PublicKeyCredentialRequestOptions
@@ -24,13 +24,13 @@ synced_at: "2026-08-29T18:16:32.362840"
 
 | 名称 | 描述 |
 | --- | --- |
-| [Uint8Buff](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_uint8_buff) [challenge](#challenge) | 获取挑战值。 |
+| [Uint8Buff](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_uint8_buff) [challenge](#challenge) | 挑战值。 |
 | uint32_t [timeout](#timeout) | 超时时间。单位为ms。默认为300000（5分钟），限制为0到600000（10分钟）。可选。 |
 | char * [rpId](#rpid) | 依赖方标识（如域名等）。默认空。可选。 |
 | [FIDO2_PublicKeyCredentialDescriptorArray](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_f_i_d_o2___public_key_credential_descriptor_array) [allowCredentials](#allowcredentials) | 认证凭据的附加参数列表。默认空列表。可选。 |
 | [FIDO2_UserVerificationRequirement](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey#fido2_userverificationrequirement-1) [userVerification](#userverification) | 用户认证需求枚举。默认值为FIDO2_PREFERRED。可选。 |
 | [FIDO2_PublicKeyCredentialHintArray](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_f_i_d_o2___public_key_credential_hint_array) [hints](#hints) | 认证方式指示。默认值为[]。可选。 |
-| char * [extensions](#extensions) | 扩展名必须是表示Map object的JSON字符串。默认空。可选，最小长度为0字符，最大长度为2048字符。 |
+| char * [extensions](#extensions) | 扩展名必须是表示Map 对象的JSON字符串。默认空。可选，最小长度为0字符，最大长度为2048字符。 |
 
 #### 结构体成员变量说明
 
@@ -41,7 +41,7 @@ FIDO2_PublicKeyCredentialDescriptorArray FIDO2_PublicKeyCredentialRequestOptions
 ```
  描述
 
-认证凭据的附加参数列表。可选。
+认证凭据的附加参数列表。默认空列表。可选。
 
 #### [h2]challenge
 
@@ -50,7 +50,7 @@ Uint8Buff FIDO2_PublicKeyCredentialRequestOptions::challenge
 ```
  描述
 
-获取挑战值。
+挑战值。
 
 #### [h2]extensions
 
@@ -59,7 +59,7 @@ char* FIDO2_PublicKeyCredentialRequestOptions::extensions
 ```
  描述
 
-扩展名必须是表示Map<string, Object> object的JSON字符串。可选。
+扩展名必须是表示Map<string, Object> 对象的JSON字符串。可选。
 
 #### [h2]hints
 

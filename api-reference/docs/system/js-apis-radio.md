@@ -2,8 +2,8 @@
 title: "@ohos.telephony.radio (网络搜索)"
 upstream_id: "harmonyos-references/js-apis-radio"
 catalog: "harmonyos-references"
-content_hash: "78af74a81ed8"
-synced_at: "2026-08-29T18:16:54.628584"
+content_hash: "e60449df29c4"
+synced_at: "2026-09-24T18:53:37.048594"
 ---
 
 # @ohos.telephony.radio (网络搜索)
@@ -145,8 +145,8 @@ getRadioTechSync(slotId: number): [NetworkRadioTech](#networkradiotech11)
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. |
 | 8300001 | Invalid parameter value. |
 | 8300002 | Service connection failed. |
-| 8300003 | System internal error. |
-| 8300999 | Unknown error. |
+| 8300003 | Operation failed. Cannot connect service. |
+| 8300999 | Unknown error code. |
 
 示例：
 

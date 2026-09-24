@@ -2,8 +2,8 @@
 title: "出行凭证接口"
 upstream_id: "harmonyos-references/wallet-rest-api-travel"
 catalog: "harmonyos-references"
-content_hash: "cd918c166a75"
-synced_at: "2026-08-29T18:18:37.382679"
+content_hash: "817dc56d858f"
+synced_at: "2026-09-24T18:55:22.068006"
 ---
 
 # 出行凭证接口

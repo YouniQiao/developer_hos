@@ -2,8 +2,8 @@
 title: "ArkUI_AttributeItem"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-attributeitem"
 catalog: "harmonyos-references"
-content_hash: "ab452618bcfe"
-synced_at: "2026-07-28T16:49:32.146039"
+content_hash: "a05cb43ea884"
+synced_at: "2026-09-24T18:52:34.818163"
 ---
 
 # ArkUI_AttributeItem
@@ -20,7 +20,7 @@ typedef struct {...} ArkUI_AttributeItem
 
 相关模块： [ArkUI_NativeModule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule)
 
-所在头文件： [native_node.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h)
+所在头文件： [common_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-common-type-h)
 
 #### 汇总
 

@@ -2,8 +2,8 @@
 title: "ArkUI_NativeModule"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule"
 catalog: "harmonyos-references"
-content_hash: "c6186b9293b2"
-synced_at: "2026-08-29T18:15:36.147986"
+content_hash: "75eb809c8abc"
+synced_at: "2026-09-24T18:52:20.760156"
 ---
 
 # ArkUI_NativeModule
@@ -33,6 +33,7 @@ synced_at: "2026-08-29T18:15:36.147986"
 | 名称 | 描述 |
 | --- | --- |
 | [common_attributes.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-common-attributes-h) | 提供NativeModule通用属性和事件的类型定义。 |
+| [common_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-common-type-h) | 定义ArkUI Native API的公共类型。 |
 | [embedded_component.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-embedded-component-h) | EmbeddedComponent组件相关的结构体和方法定义。 |
 | [image.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image-h) | 为NativeNode API提供Image节点类型定义。 |
 | [image_animator.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image-animator-h) | 为NativeNode API提供ImageAnimator节点类型定义。 |

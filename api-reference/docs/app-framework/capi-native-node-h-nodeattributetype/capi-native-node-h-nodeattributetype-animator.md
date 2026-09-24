@@ -2,8 +2,8 @@
 title: "ArkUI_NodeAttributeType（动效、视效相关属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-animator"
 catalog: "harmonyos-references"
-content_hash: "4e2e4d15f8dd"
-synced_at: "2026-09-14T19:46:54.703598"
+content_hash: "7d207cb03d11"
+synced_at: "2026-09-24T18:52:24.466881"
 ---
 
 # ArkUI_NodeAttributeType（动效、视效相关属性）
@@ -325,14 +325,14 @@ NODE_CLIP_SHAPE = 24
 1. rect类型： 参数项 描述 .value[0].i32 裁剪类型，参数类型[ArkUI_ClipType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_cliptype)，rect类型需设置为ARKUI_CLIP_TYPE_RECTANGLE。 .value[1].f32 矩形宽度，单位为vp。 .value[2].f32 矩形高度，单位为vp。 .value[3].f32 矩形圆角宽度，单位为vp。 .value[4].f32 矩形圆角高度，单位为vp。 .value[5]?.f32 矩形形状的左上圆角半径，单位为vp，默认值0。 .value[6]?.f32 矩形形状的左下圆角半径，单位为vp，默认值0。 .value[7]?.f32 矩形形状的右上圆角半径，单位为vp，默认值0。 .value[8]?.f32 矩形形状的右下圆角半径，单位为vp，默认值0。 .object 参数类型为[ArkUI_RenderNodeClipOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodeclipoption)，矩形形状的坐标偏移量，在仅传入.object参数时生效。
 2. circle类型： 参数项 描述 .value[0].i32 裁剪类型，参数类型ArkUI_ClipType，circle类型需设置为ARKUI_CLIP_TYPE_CIRCLE。 .value[1].f32 圆形宽度，单位为vp。 .value[2].f32 圆形高度，单位为vp。 .object 参数类型为[ArkUI_RenderNodeClipOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodeclipoption)，圆形坐标偏移量，在仅传入.object参数时生效。
 3. ellipse类型： 参数项 描述 .value[0].i32 裁剪类型，参数类型ArkUI_ClipType，ellipse类型需设置为ARKUI_CLIP_TYPE_ELLIPSE。 .value[1].f32 椭圆形宽度，单位为vp。 .value[2].f32 椭圆形高度，单位为vp。 .object 参数类型为[ArkUI_RenderNodeClipOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodeclipoption)，椭圆形坐标偏移量，在仅传入.object参数时生效。
-4. path类型： 参数项 描述 .value[0].i32 裁剪类型，参数类型ArkUI_ClipType，path类型需设置为ARKUI_CLIP_TYPE_PATH。 .value[1].f32 路径宽度，单位为vp。 .value[2].f32 路径高度，单位为vp。 .string 路径绘制的命令字符串，格式遵循SVG path数据语法，如'M0 0 L100 100 Z'。 .object 参数类型为[ArkUI_RenderNodeClipOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodeclipoption)，路径绘制的命令，在仅传入.object参数时生效。
+4. path类型： 参数项 描述 .value[0].i32 裁剪类型，参数类型ArkUI_ClipType，path类型需设置为ARKUI_CLIP_TYPE_PATH。 .value[1].f32 路径宽度，单位为vp。 .value[2].f32 路径高度，单位为vp。 .string 路径绘制的命令字符串，格式遵循SVG path数据语法，如'M0,0 L100,100 Z'。 .object 参数类型为[ArkUI_RenderNodeClipOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-rendernodeclipoption)，路径绘制的命令，在仅传入.object参数时生效。
 
 返回：
 
 1. rect类型： 类型 说明 .value[0].i32 裁剪类型，参数类型为[ArkUI_ClipType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_cliptype)，rect类型返回ARKUI_CLIP_TYPE_RECTANGLE。 .value[1].f32 矩形宽度，单位为vp。 .value[2].f32 矩形高度，单位为vp。 .value[3].f32 矩形圆角宽度，单位为vp。 .value[4].f32 矩形圆角高度，单位为vp。 .value[5]?.f32 矩形形状的左上圆角半径，单位为vp。 .value[6]?.f32 矩形形状的左下圆角半径，单位为vp。 .value[7]?.f32 矩形形状的右上圆角半径，单位为vp。 .value[8]?.f32 矩形形状的右下圆角半径，单位为vp。 .value[9]?.f32 矩形形状的横坐标偏移，单位为vp。 .value[10]?.f32 矩形形状的纵坐标偏移，单位为vp。
 2. circle类型： 类型 说明 .value[0].i32 裁剪类型，参数类型为[ArkUI_ClipType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_cliptype)，circle类型返回ARKUI_CLIP_TYPE_CIRCLE。 .value[1].f32 圆形宽度，单位为vp。 .value[2].f32 圆形高度，单位为vp。 .value[3]?.f32 圆形横坐标偏移，单位为vp。 .value[4]?.f32 圆形纵坐标偏移，单位为vp。
 3. ellipse类型： 类型 说明 .value[0].i32 裁剪类型，参数类型为[ArkUI_ClipType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_cliptype)，ellipse类型返回ARKUI_CLIP_TYPE_ELLIPSE。 .value[1].f32 椭圆形宽度，单位为vp。 .value[2].f32 椭圆形高度，单位为vp。 .value[3]?.f32 椭圆形横坐标偏移，单位为vp。 .value[4]?.f32 椭圆形纵坐标偏移，单位为vp。
-4. path类型： 类型 说明 .value[0].i32 裁剪类型，参数类型为[ArkUI_ClipType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_cliptype)，path类型返回ARKUI_CLIP_TYPE_PATH。 .value[1].f32 路径宽度，单位为vp。 .value[2].f32 路径高度，单位为vp。 .string 路径绘制的命令字符串。
+4. path类型： 类型 说明 .value[0].i32 裁剪类型，参数类型为[ArkUI_ClipType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_cliptype)，path类型返回ARKUI_CLIP_TYPE_PATH。 .value[1].f32 路径宽度，单位为vp。 .value[2].f32 路径高度，单位为vp。 .string 路径绘制的命令字符串，格式遵循SVG path数据语法，如'M0,0 L100,100 Z'。
 
 #### NODE_TRANSFORM
 
@@ -402,7 +402,7 @@ NODE_CUSTOM_SHADOW = 29
 | .value[2]?.f32 | 阴影X轴偏移量，单位为px，默认值0.0。 |
 | .value[3]?.f32 | 阴影Y轴偏移量，单位为px，默认值0.0。 |
 | .value[4]?.i32 | 阴影类型，参数类型为[ArkUI_ShadowType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_shadowtype)，默认值为ARKUI_SHADOW_TYPE_COLOR。 |
-| .value[5]?.u32 | 智能取色关闭（.value[1]为0）时表示阴影颜色，0xARGB格式，形如0xFFFF0000表示红色，不传入时默认值为0xFF000000（黑色）；智能取色开启（.value[1]为1）时表示颜色策略，取[ArkUI_ColorStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_colorstrategy)枚举值。 |
+| .value[5]?.u32 | 智能取色关闭（.value[1]为0）时表示阴影颜色，0xAARRGGBB格式，形如0xFFFF0000表示红色，不传入时默认值为0xFF000000（黑色）；智能取色开启（.value[1]为1）时表示颜色策略，取[ArkUI_ColorStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_colorstrategy)枚举值。 |
 | .value[6]?.u32 | 阴影是否内部填充，0表示不填充，1表示填充。 |
 
 返回：
@@ -414,7 +414,7 @@ NODE_CUSTOM_SHADOW = 29
 | .value[2].f32 | 阴影X轴偏移量，单位为px。 |
 | .value[3].f32 | 阴影Y轴偏移量，单位为px。 |
 | .value[4].i32 | 阴影类型，参数类型为[ArkUI_ShadowType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_shadowtype)，默认值为ARKUI_SHADOW_TYPE_COLOR。枚举值包括：ARKUI_SHADOW_TYPE_COLOR（颜色阴影）、ARKUI_SHADOW_TYPE_BLUR（模糊阴影）。 |
-| .value[5].u32 | 阴影颜色，0xARGB格式，形如0xFFFF0000表示红色。 |
+| .value[5].u32 | 阴影颜色，0xAARRGGBB格式，形如0xFFFF0000表示红色。 |
 | .value[6].u32 | 阴影是否内部填充，0表示不填充，1表示填充。 |
 
 #### NODE_BACKGROUND_BLUR_STYLE
@@ -789,20 +789,20 @@ NODE_MASK = 45
 
 | 参数项 | 描述 |
 | --- | --- |
-| 1.rect类型 | .value[0].u32：填充颜色，0xargb类型； .value[1].u32：描边颜色，0xargb类型； .value[2].f32：描边宽度，单位为vp； .value[3].i32：遮罩类型，参数类型[ArkUI_MaskType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_masktype)，遮罩类型枚举值为ARKUI_MASK_TYPE_RECTANGLE； .value[4].f32：矩形宽度，单位为vp； .value[5].f32：矩形高度，单位为vp； .value[6].f32：矩形圆角宽度，单位为vp； .value[7].f32：矩形圆角高度，单位为vp； .value[8]?.f32：矩形形状的左上圆角半径，单位为vp，默认值0； .value[9]?.f32：矩形形状的左下圆角半径，单位为vp，默认值0； .value[10]?.f32：矩形形状的右上圆角半径，单位为vp，默认值0； .value[11]?.f32：矩形形状的右下圆角半径，单位为vp，默认值0。 |
-| 2.circle类型 | .value[0].u32：填充颜色，0xargb类型； .value[1].u32：描边颜色，0xargb类型； .value[2].f32：描边宽度，单位为vp； .value[3].i32：遮罩类型，参数类型[ArkUI_MaskType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_masktype)，遮罩类型枚举值为ARKUI_MASK_TYPE_CIRCLE； .value[4].f32：圆形宽度，单位为vp； .value[5].f32：圆形高度，单位为vp。 |
-| 3.ellipse类型 | .value[0].u32：填充颜色，0xargb类型； .value[1].u32：描边颜色，0xargb类型； .value[2].f32：描边宽度，单位为vp； .value[3].i32：遮罩类型，参数类型[ArkUI_MaskType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_masktype)，遮罩类型枚举值为ARKUI_MASK_TYPE_ELLIPSE； .value[4].f32：椭圆形宽度，单位为vp； .value[5].f32：椭圆形高度，单位为vp。 |
-| 4.path类型 | .value[0].u32：填充颜色，0xargb类型； .value[1].u32：描边颜色，0xargb类型； .value[2].f32：描边宽度，单位为vp； .value[3].i32：遮罩类型，参数类型[ArkUI_MaskType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_masktype)，遮罩类型枚举值为ARKUI_MASK_TYPE_PATH； .value[4].f32：路径宽度，单位为vp； .value[5].f32：路径高度，单位为vp； .string：路径绘制的命令字符串，格式遵循SVG path数据语法，如'M0 0 L100 100 Z'。 |
+| 1.rect类型 | .value[0].u32：填充颜色，0xAARRGGBB类型； .value[1].u32：描边颜色，0xAARRGGBB类型； .value[2].f32：描边宽度，单位为vp； .value[3].i32：遮罩类型，参数类型[ArkUI_MaskType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_masktype)，遮罩类型枚举值为ARKUI_MASK_TYPE_RECTANGLE； .value[4].f32：矩形宽度，单位为vp； .value[5].f32：矩形高度，单位为vp； .value[6].f32：矩形圆角宽度，单位为vp； .value[7].f32：矩形圆角高度，单位为vp； .value[8]?.f32：矩形形状的左上圆角半径，单位为vp，默认值0； .value[9]?.f32：矩形形状的左下圆角半径，单位为vp，默认值0； .value[10]?.f32：矩形形状的右上圆角半径，单位为vp，默认值0； .value[11]?.f32：矩形形状的右下圆角半径，单位为vp，默认值0。 |
+| 2.circle类型 | .value[0].u32：填充颜色，0xAARRGGBB类型； .value[1].u32：描边颜色，0xAARRGGBB类型； .value[2].f32：描边宽度，单位为vp； .value[3].i32：遮罩类型，参数类型[ArkUI_MaskType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_masktype)，遮罩类型枚举值为ARKUI_MASK_TYPE_CIRCLE； .value[4].f32：圆形宽度，单位为vp； .value[5].f32：圆形高度，单位为vp。 |
+| 3.ellipse类型 | .value[0].u32：填充颜色，0xAARRGGBB类型； .value[1].u32：描边颜色，0xAARRGGBB类型； .value[2].f32：描边宽度，单位为vp； .value[3].i32：遮罩类型，参数类型[ArkUI_MaskType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_masktype)，遮罩类型枚举值为ARKUI_MASK_TYPE_ELLIPSE； .value[4].f32：椭圆形宽度，单位为vp； .value[5].f32：椭圆形高度，单位为vp。 |
+| 4.path类型 | .value[0].u32：填充颜色，0xAARRGGBB类型； .value[1].u32：描边颜色，0xAARRGGBB类型； .value[2].f32：描边宽度，单位为vp； .value[3].i32：遮罩类型，参数类型[ArkUI_MaskType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_masktype)，遮罩类型枚举值为ARKUI_MASK_TYPE_PATH； .value[4].f32：路径宽度，单位为vp； .value[5].f32：路径高度，单位为vp； .string：路径绘制的命令字符串，格式遵循SVG path数据语法，如'M0,0 L100,100 Z'。 |
 | 5.progress类型 | .value[0].i32：遮罩类型，参数类型[ArkUI_MaskType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-visual-h#arkui_masktype)，遮罩类型枚举值为ARKUI_MASK_TYPE_PROGRESS； .value[1].f32：进度遮罩的当前值； .value[2].f32：进度遮罩的最大值； .value[3].u32：进度遮罩的颜色。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| 1.rect类型 | .value[0].u32：填充颜色，0xargb类型； .value[1].u32：描边颜色，0xargb类型； .value[2].f32：描边宽度，单位为vp； .value[3].i32：遮罩类型； .value[4].f32：矩形宽度，单位为vp； .value[5].f32：矩形高度，单位为vp； .value[6].f32：矩形圆角宽度，单位为vp； .value[7].f32：矩形圆角高度，单位为vp； .value[8]?.f32：矩形形状的左上圆角半径，单位为vp； .value[9]?.f32：矩形形状的左下圆角半径，单位为vp； .value[10]?.f32：矩形形状的右上圆角半径，单位为vp； .value[11]?.f32：矩形形状的右下圆角半径，单位为vp。 |
-| 2.circle类型 | .value[0].u32：填充颜色，0xargb类型； .value[1].u32：描边颜色，0xargb类型； .value[2].f32：描边宽度，单位为vp； .value[3].i32：遮罩类型； .value[4].f32：圆形宽度，单位为vp； .value[5].f32：圆形高度，单位为vp。 |
-| 3.ellipse类型 | .value[0].u32：填充颜色，0xargb类型； .value[1].u32：描边颜色，0xargb类型； .value[2].f32：描边宽度，单位为vp； .value[3].i32：遮罩类型； .value[4].f32：椭圆形宽度，单位为vp； .value[5].f32：椭圆形高度，单位为vp。 |
-| 4.path类型 | .value[0].u32：填充颜色，0xargb类型； .value[1].u32：描边颜色，0xargb类型； .value[2].f32：描边宽度，单位为vp； .value[3].i32：遮罩类型； .value[4].f32：路径宽度，单位为vp； .value[5].f32：路径高度，单位为vp； .string：路径绘制的命令字符串，格式遵循SVG path数据语法，如'M0,0 L100,100 Z'。 |
+| 1.rect类型 | .value[0].u32：填充颜色，0xAARRGGBB类型； .value[1].u32：描边颜色，0xAARRGGBB类型； .value[2].f32：描边宽度，单位为vp； .value[3].i32：遮罩类型； .value[4].f32：矩形宽度，单位为vp； .value[5].f32：矩形高度，单位为vp； .value[6].f32：矩形圆角宽度，单位为vp； .value[7].f32：矩形圆角高度，单位为vp； .value[8]?.f32：矩形形状的左上圆角半径，单位为vp； .value[9]?.f32：矩形形状的左下圆角半径，单位为vp； .value[10]?.f32：矩形形状的右上圆角半径，单位为vp； .value[11]?.f32：矩形形状的右下圆角半径，单位为vp。 |
+| 2.circle类型 | .value[0].u32：填充颜色，0xAARRGGBB类型； .value[1].u32：描边颜色，0xAARRGGBB类型； .value[2].f32：描边宽度，单位为vp； .value[3].i32：遮罩类型； .value[4].f32：圆形宽度，单位为vp； .value[5].f32：圆形高度，单位为vp。 |
+| 3.ellipse类型 | .value[0].u32：填充颜色，0xAARRGGBB类型； .value[1].u32：描边颜色，0xAARRGGBB类型； .value[2].f32：描边宽度，单位为vp； .value[3].i32：遮罩类型； .value[4].f32：椭圆形宽度，单位为vp； .value[5].f32：椭圆形高度，单位为vp。 |
+| 4.path类型 | .value[0].u32：填充颜色，0xAARRGGBB类型； .value[1].u32：描边颜色，0xAARRGGBB类型； .value[2].f32：描边宽度，单位为vp； .value[3].i32：遮罩类型； .value[4].f32：路径宽度，单位为vp； .value[5].f32：路径高度，单位为vp； .string：路径绘制的命令字符串，格式遵循SVG path数据语法，如'M0,0 L100,100 Z'。 |
 | 5.progress类型 | .value[0].i32：遮罩类型； .value[1].f32：进度遮罩的当前值； .value[2].f32：进度遮罩的最大值； .value[3].u32：进度遮罩的颜色。 |
 
 #### NODE_BLEND_MODE
@@ -944,7 +944,7 @@ NODE_FOREGROUND_COLOR = 53
 
 | 类型 | 说明 |
 | --- | --- |
-| .value[0].u32 | 颜色数值，0xargb类型。 |
+| .value[0].u32 | 颜色数值，0xAARRGGBB类型。 |
 
 #### NODE_OUTLINE_WIDTH
 
@@ -1038,20 +1038,20 @@ NODE_OUTLINE_COLOR = 78
 
 | 参数项 | 描述 |
 | --- | --- |
-| .value[0].u32 | 统一设置四条边的边框颜色，使用0xargb表示，如0xFFFF11FF。仅传入.value[0]时生效。 |
-| .value[0].u32 | 设置上侧边框颜色，使用0xargb表示，如0xFFFF11FF。传入.value[0]至.value[3]四个值时生效。 |
-| .value[1].u32 | 设置右侧边框颜色，使用0xargb表示，如0xFFFF11FF。 |
-| .value[2].u32 | 设置下侧边框颜色，使用0xargb表示，如0xFFFF11FF。 |
-| .value[3].u32 | 设置左侧边框颜色，使用0xargb表示，如0xFFFF11FF。 |
+| .value[0].u32 | 统一设置四条边的边框颜色，使用0xAARRGGBB表示，如0xFFFF11FF。仅传入.value[0]时生效。 |
+| .value[0].u32 | 设置上侧边框颜色，使用0xAARRGGBB表示，如0xFFFF11FF。传入.value[0]至.value[3]四个值时生效。 |
+| .value[1].u32 | 设置右侧边框颜色，使用0xAARRGGBB表示，如0xFFFF11FF。 |
+| .value[2].u32 | 设置下侧边框颜色，使用0xAARRGGBB表示，如0xFFFF11FF。 |
+| .value[3].u32 | 设置左侧边框颜色，使用0xAARRGGBB表示，如0xFFFF11FF。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| .value[0].u32 | 设置上侧边框颜色，使用0xargb表示，如0xFFFF11FF。 |
-| .value[1].u32 | 设置右侧边框颜色，使用0xargb表示，如0xFFFF11FF。 |
-| .value[2].u32 | 设置下侧边框颜色，使用0xargb表示，如0xFFFF11FF。 |
-| .value[3].u32 | 设置左侧边框颜色，使用0xargb表示，如0xFFFF11FF。 |
+| .value[0].u32 | 设置上侧边框颜色，使用0xAARRGGBB表示，如0xFFFF11FF。 |
+| .value[1].u32 | 设置右侧边框颜色，使用0xAARRGGBB表示，如0xFFFF11FF。 |
+| .value[2].u32 | 设置下侧边框颜色，使用0xAARRGGBB表示，如0xFFFF11FF。 |
+| .value[3].u32 | 设置左侧边框颜色，使用0xAARRGGBB表示，如0xFFFF11FF。 |
 
 #### NODE_COLOR_BLEND
 
@@ -1068,13 +1068,13 @@ NODE_COLOR_BLEND = 81
 
 | 参数项 | 描述 |
 | --- | --- |
-| .value[0].u32 | 叠加的颜色，使用0xargb表示，默认值为0x00000000。 |
+| .value[0].u32 | 叠加的颜色，使用0xAARRGGBB表示，默认值为0x00000000。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| .value[0].u32 | 叠加的颜色，使用0xargb表示，如0xFFFF11FF。 |
+| .value[0].u32 | 叠加的颜色，使用0xAARRGGBB表示，如0xFFFF11FF。 |
 
 #### NODE_FOREGROUND_BLUR_STYLE
 

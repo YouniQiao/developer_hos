@@ -2,8 +2,8 @@
 title: "ArkUI_IntOffset"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-intoffset"
 catalog: "harmonyos-references"
-content_hash: "cae1e4a67c2f"
-synced_at: "2026-07-28T16:49:33.394360"
+content_hash: "e11bf1067239"
+synced_at: "2026-09-24T18:52:36.018759"
 ---
 
 # ArkUI_IntOffset
@@ -20,7 +20,7 @@ typedef struct {...} ArkUI_IntOffset
 
 相关模块： [ArkUI_NativeModule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule)
 
-所在头文件： [native_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h)
+所在头文件： [common_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-common-type-h)
 
 #### 汇总
 

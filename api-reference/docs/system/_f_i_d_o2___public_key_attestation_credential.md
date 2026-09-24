@@ -2,8 +2,8 @@
 title: "FIDO2_PublicKeyAttestationCredential"
 upstream_id: "harmonyos-references/_f_i_d_o2___public_key_attestation_credential"
 catalog: "harmonyos-references"
-content_hash: "a5f2208b5739"
-synced_at: "2026-08-29T18:16:32.065454"
+content_hash: "68f1b54994b4"
+synced_at: "2026-09-24T18:53:15.316097"
 ---
 
 # FIDO2_PublicKeyAttestationCredential
@@ -28,7 +28,7 @@ synced_at: "2026-08-29T18:16:32.065454"
 | [FIDO2_AuthenticatorAttestationResponse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_f_i_d_o2___authenticator_attestation_response) [response](#response) | 认证器证明响应。 |
 | [FIDO2_AuthenticatorAttachment](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/passkey#fido2_authenticatorattachment-1) [authenticatorAttachment](#authenticatorattachment) | 认证器信息（FIDO2_PLATFORM表示平台，FIDO2_CROSS_PLATFORM表示漫游）。默认值为FIDO2_PLATFORM。可选。 |
 | const char * [id](#id) | 凭据的标识符。对于每种类型的凭据，标识符的要求都是不同的。 |
-| const char * [type](#type) | 此属性返回接口对象中指定凭据类型的插槽，它指定此对象所代表的凭据类型。 |
+| const char * [type](#type) | 该属性以JSON字符串形式返回接口对象中用于指定凭据类型的插槽，该插槽用于指定此对象所表示的凭据类型。 |
 | [AuthenticationExtensionsClientOutputs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_authentication_extensions_client_outputs) [clientExtensionResults](#clientextensionresults) | 客户端扩展结果。当前版本不支持扩展，因此占位符始终为NULL，必须将clientExtensionResults键对应的值解析为{}。 |
 
 #### 结构体成员变量说明
@@ -85,4 +85,4 @@ const char* FIDO2_PublicKeyAttestationCredential::type
 ```
  描述
 
-此属性返回接口对象中指定凭据类型的插槽，它指定此对象所代表的凭据类型。
+该属性以JSON字符串形式返回接口对象中用于指定凭据类型的插槽，该插槽用于指定此对象所表示的凭据类型。

@@ -2,8 +2,8 @@
 title: "SoundPool (音频池)"
 upstream_id: "harmonyos-references/js-apis-inner-multimedia-soundpool"
 catalog: "harmonyos-references"
-content_hash: "1ae813bb1b88"
-synced_at: "2026-07-28T16:51:57.122301"
+content_hash: "bbb06d8a1486"
+synced_at: "2026-09-24T18:54:31.790314"
 ---
 
 # SoundPool (音频池)
@@ -1273,7 +1273,7 @@ media.createSoundPool(5, audioRendererInfo, (error: BusinessError, soundPool_: m
 
 setInterruptMode(interruptMode: media.SoundInterruptMode): void
 
-设置同一soundId对应的音频资源在播放时的打断模式。创建soundPool之后，该接口仅在首次调用soundPool的play函数之前设置有效。若未设置，将默认使用[SAME_SOUND_INTERRUPT](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-e#soundinterruptmode23)，即对同一个soundId对应的音频资源，如果前一播放实例尚未播放完成，后一播放实例在播放前会先打断前一播放实例的播放。
+设置同一ID音频在播放时的打断模式。创建soundPool之后，该接口仅在首次调用soundPool的Play函数之前设置有效，期间可多次设置，否则将默认使用[SAME_SOUND_INTERRUPT](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-e#soundinterruptmode23)，即对同一ID的音频，如果前者尚未播放完成，后者在播放前会先打断前者的播放。
 
 模型约束： 此接口仅可在Stage模型下使用。
 

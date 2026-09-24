@@ -2,8 +2,8 @@
 title: "活动/景点门票接口"
 upstream_id: "harmonyos-references/wallet-rest-api-ticket"
 catalog: "harmonyos-references"
-content_hash: "88c07e6f7bfb"
-synced_at: "2026-08-29T18:18:37.267957"
+content_hash: "d2d375dea8be"
+synced_at: "2026-09-24T18:55:21.878671"
 ---
 
 # 活动/景点门票接口

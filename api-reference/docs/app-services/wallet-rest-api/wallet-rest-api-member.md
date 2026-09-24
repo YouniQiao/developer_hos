@@ -2,8 +2,8 @@
 title: "会员卡接口"
 upstream_id: "harmonyos-references/wallet-rest-api-member"
 catalog: "harmonyos-references"
-content_hash: "1827c636f475"
-synced_at: "2026-08-29T18:18:36.734595"
+content_hash: "254e497d6f99"
+synced_at: "2026-09-24T18:55:21.498476"
 ---
 
 # 会员卡接口

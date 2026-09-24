@@ -2,8 +2,8 @@
 title: "@ohos.arkui.uiMaterial (系统材质)"
 upstream_id: "harmonyos-references/arkts-apis-uimaterial"
 catalog: "harmonyos-references"
-content_hash: "858b420cda6e"
-synced_at: "2026-09-23T18:53:21.372353"
+content_hash: "fe58ed9a1b3a"
+synced_at: "2026-09-24T18:51:23.357447"
 ---
 
 # @ohos.arkui.uiMaterial (系统材质)
@@ -383,6 +383,7 @@ struct SystemMaterialPage {
           .iconStyle({ selectedColor: $r('sys.color.brand'), unselectedColor: $r('sys.color.font_primary') })
         )
       }
+      .animationDuration(400)
       .barFloatingStyle({
         systemMaterial: new uiMaterial.ImmersiveMaterial({
           style: this.currentStyle,
@@ -405,67 +406,67 @@ struct SystemMaterialPage {
 
 ULTRA_THIN样式：
 
-![](./img/zh-cn_image_0000002769451829.jpg)
+![](./img/zh-cn_image_0000002772739779.jpg)
 
 THIN样式：
 
-![](./img/zh-cn_image_0000002739892498.jpg)
+![](./img/zh-cn_image_0000002772899663.jpg)
 
 REGULAR样式：
 
-![](./img/zh-cn_image_0000002739732620.jpg)
+![](./img/zh-cn_image_0000002743380414.jpg)
 
 THICK样式：
 
-![](./img/zh-cn_image_0000002769331969.jpg)
+![](./img/zh-cn_image_0000002743220528.jpg)
 
 ULTRA_THICK样式：
 
-![](./img/zh-cn_image_0000002769451831.jpg)
+![](./img/zh-cn_image_0000002772739781.jpg)
 
 在支持沉浸式材质的中算力设备上表现：
 
 ULTRA_THIN样式：
 
-![](./img/zh-cn_image_0000002739892500.jpg)
+![](./img/zh-cn_image_0000002772899665.jpg)
 
 THIN样式：
 
-![](./img/zh-cn_image_0000002739732622.jpg)
+![](./img/zh-cn_image_0000002743380416.jpg)
 
 REGULAR样式：
 
-![](./img/zh-cn_image_0000002769331971.jpg)
+![](./img/zh-cn_image_0000002743220530.jpg)
 
 THICK样式：
 
-![](./img/zh-cn_image_0000002769451833.jpg)
+![](./img/zh-cn_image_0000002772739783.jpg)
 
 ULTRA_THICK样式：
 
-![](./img/zh-cn_image_0000002739892502.jpg)
+![](./img/zh-cn_image_0000002772899667.jpg)
 
 在支持沉浸式材质的高算力设备上表现：
 
 ULTRA_THIN样式：
 
-![](./img/zh-cn_image_0000002739732624.jpg)
+![](./img/zh-cn_image_0000002743380418.jpg)
 
 THIN样式：
 
-![](./img/zh-cn_image_0000002769331973.jpg)
+![](./img/zh-cn_image_0000002743220532.jpg)
 
 REGULAR样式：
 
-![](./img/zh-cn_image_0000002769451835.jpg)
+![](./img/zh-cn_image_0000002772739785.jpg)
 
 THICK样式：
 
-![](./img/zh-cn_image_0000002739892504.jpg)
+![](./img/zh-cn_image_0000002772899669.jpg)
 
 ULTRA_THICK样式：
 
-![](./img/zh-cn_image_0000002739732626.jpg)
+![](./img/zh-cn_image_0000002743380420.jpg)
 
 #### [h2]示例2（获取材质配置信息并使用空材质关闭沉浸式系统材质）
 
@@ -537,15 +538,15 @@ struct MaterialInfoPage {
 ```
  在支持沉浸式材质的高算力设备上表现：
 
-![](./img/zh-cn_image_0000002769331975.jpg)
+![](./img/zh-cn_image_0000002743220534.jpg)
 
 在支持沉浸式材质的中算力设备上表现：
 
-![](./img/zh-cn_image_0000002769451837.jpg)
+![](./img/zh-cn_image_0000002772739787.jpg)
 
 在支持沉浸式材质的低算力设备上表现：
 
-![](./img/zh-cn_image_0000002739892506.jpg)
+![](./img/zh-cn_image_0000002772899671.jpg)
 
 #### [h2]示例3（设置组件材质的交互形变效果）
 
@@ -590,15 +591,15 @@ struct Index {
 ```
  在支持沉浸式材质的高算力设备上表现：
 
-![](./img/zh-cn_image_0000002739732628.gif)
+![](./img/zh-cn_image_0000002743380422.gif)
 
 在支持沉浸式材质的中算力设备上表现：
 
-![](./img/zh-cn_image_0000002769331977.gif)
+![](./img/zh-cn_image_0000002743220536.gif)
 
 在支持沉浸式材质的低算力设备上表现：
 
-![](./img/zh-cn_image_0000002769451839.gif)
+![](./img/zh-cn_image_0000002772739789.gif)
 
 #### [h2]示例4（设置组件材质的光感交互反馈效果）
 
@@ -626,6 +627,7 @@ struct NavigationTitleMaterialDemo {
     interactive: true,
     lightEffect: {},
   });
+  @State titleHeight: number = 100;
 
   @Builder
   CustomMenuBuilder() {
@@ -654,7 +656,7 @@ struct NavigationTitleMaterialDemo {
       .justifyContent(FlexAlign.End)
     }
     .width('100%')
-    .height(100)
+    .height(this.titleHeight)
   }
 
   build() {
@@ -664,7 +666,7 @@ struct NavigationTitleMaterialDemo {
       Navigation() {
         // 页面内容
       }
-      .title(this.CustomMenuBuilder())
+      .title({ builder: this.CustomMenuBuilder(), height: this.titleHeight })
     }
     .width('100%')
     .height('100%')
@@ -673,15 +675,15 @@ struct NavigationTitleMaterialDemo {
 ```
  在支持沉浸式材质的高算力设备上表现：
 
-![](./img/zh-cn_image_0000002739892508.gif)
+![](./img/zh-cn_image_0000002772899673.gif)
 
 在支持沉浸式材质的中算力设备上表现：
 
-![](./img/zh-cn_image_0000002739732630.gif)
+![](./img/zh-cn_image_0000002743380424.gif)
 
 在支持沉浸式材质的低算力设备上表现：
 
-![](./img/zh-cn_image_0000002769331979.gif)
+![](./img/zh-cn_image_0000002743220538.gif)
 
 #### [h2]示例5（查询材质等级与是否支持沉浸式材质）
 
@@ -706,6 +708,7 @@ function systemMaterialStyle() {
 struct NavigationTitleMaterialDemo {
   private materialLevel: uiMaterial.MaterialLevel = uiMaterial.getGlobalMaterialLevel(); // 材质档位由设备决定，应用运行后不会改变
   private isSupported: boolean = uiMaterial.isImmersiveMaterialSupported(); // 是否支持沉浸式材质由设备决定，应用运行后不会改变
+  @State titleHeight: number = 100;
 
   @Builder
   CustomMenuBuilder() {
@@ -752,7 +755,7 @@ struct NavigationTitleMaterialDemo {
     }
     .backgroundColor('#99000000')
     .width('100%')
-    .height(100)
+    .height(this.titleHeight)
   }
 
   build() {
@@ -772,7 +775,7 @@ struct NavigationTitleMaterialDemo {
         .margin({ top: 100 })
         .padding(15)
       }
-      .title(this.CustomMenuBuilder())
+      .title({ builder: this.CustomMenuBuilder(), height: this.titleHeight })
     }
     .width('100%')
     .height('100%')
@@ -781,16 +784,16 @@ struct NavigationTitleMaterialDemo {
 ```
  在支持沉浸式材质的高算力设备上表现：
 
-![](./img/zh-cn_image_0000002769451841.jpg)
+![](./img/zh-cn_image_0000002772739791.jpg)
 
 在支持沉浸式材质的中算力设备上表现：
 
-![](./img/zh-cn_image_0000002739892510.jpg)
+![](./img/zh-cn_image_0000002772899675.jpg)
 
 在支持沉浸式材质的低算力设备上表现：
 
-![](./img/zh-cn_image_0000002739732632.jpg)
+![](./img/zh-cn_image_0000002743380426.jpg)
 
 在不支持沉浸式材质的设备上表现：
 
-![](./img/zh-cn_image_0000002769331981.jpg)
+![](./img/zh-cn_image_0000002743220540.jpg)

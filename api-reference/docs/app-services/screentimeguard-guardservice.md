@@ -2,8 +2,8 @@
 title: "@hms.utilityApplication.screenTimeGuard.guardService（屏幕时间守护服务）"
 upstream_id: "harmonyos-references/screentimeguard-guardservice"
 catalog: "harmonyos-references"
-content_hash: "423b6a233c67"
-synced_at: "2026-08-24T15:43:23.848858"
+content_hash: "523eedabb308"
+synced_at: "2026-09-24T18:55:20.784913"
 ---
 
 # @hms.utilityApplication.screenTimeGuard.guardService（屏幕时间守护服务）
@@ -320,7 +320,7 @@ function testGetUserAuthStatus() {
 
 #### AuthStatus
 
-用户授权状态类型的枚举值，调用[getUserAuthStatus](#getuserauthstatus)接口后返回，可以用于区分管控应用是否已请求用户授权、请求用户授权后被拒绝、请求用户授权后同意三种状态。
+用户授权状态类型的枚举值，由[getUserAuthStatus](#getuserauthstatus)接口返回，用于标识当前管控应用是否已获得用户授权，包括初始状态、已授权和已拒绝三种情况。
 
 模型约束： 此枚举仅可在Stage模型下使用。
 
@@ -330,9 +330,9 @@ function testGetUserAuthStatus() {
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| AUTH_INIT | -1 | 初始状态 |
-| AUTH_GRANTED | 0 | 用户已授权 |
-| AUTH_DENIED | 1 | 用户已拒绝 |
+| AUTH_INIT | -1 | 初始状态，表示尚未请求用户授权。 |
+| AUTH_GRANTED | 0 | 用户已授权。 |
+| AUTH_DENIED | 1 | 用户已拒绝。 |
 
 #### AppInfo
 
@@ -419,7 +419,7 @@ function testAddGuardStrategy() {
 
 #### GuardStrategy
 
-守护策略，表示在何时对哪些应用的访问进行限制。在指定的时间内，指定的被管控应用将被限制访问，即无法被用户打开。
+守护策略，用于在特定时间段内限制指定应用的访问权限，使这些应用无法被用户打开。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -429,7 +429,7 @@ function testAddGuardStrategy() {
 
 | **名称** | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
-| name | string | 否 | 否 | 策略名称。长度不超过64个字符，仅支持字母、数字和下划线。 |
+| name | string | 否 | 否 | 策略名称。长度为1~64个字符，仅支持字母、数字和下划线。 |
 | timeStrategy | [TimeStrategy](#timestrategy) | 否 | 否 | 时间策略。 |
 | appInfo | [AppInfo](#appinfo) | 否 | 否 | 应用信息。 |
 | appRestrictionType | [RestrictionType](#restrictiontype) | 否 | 否 | 限制类型。 |
@@ -450,7 +450,7 @@ function testAddGuardStrategy() {
 | startTime | string | 否 | 是 | 起始时间，需采用"HH:mm"格式，有效范围为"00:00"至"23:59"。格式错误或超出范围将返回401错误码。 **说明**： 若TimeStrategyType为START_END_TIME_TYPE，此参数必填，置空将返回401错误码；若TimeStrategyType为其它，此参数不生效。 |
 | endTime | string | 否 | 是 | 结束时间，需采用"HH:mm"格式，有效范围为"00:00"至"23:59"。格式错误或超出范围将返回401错误码。 **说明**： 1. 若TimeStrategyType为START_END_TIME_TYPE，此参数必填，置空将返回401错误码；若TimeStrategyType为其它，此参数不生效。 2. 若结束时间小于起始时间，则代表的是次日。 3. 起始时间和结束时间不能相同。 |
 | totalDuration | number | 否 | 是 | 总时长，单位为min。参数范围：0-1440。 **说明**： 若TimeStrategyType为TOTAL_DURATION_TYPE或INCLUSIVE_DURATION_TYPE，此参数必填，置空将返回401错误码；若TimeStrategyType为其它，此参数不生效。 |
-| repeat | number[] | 否 | 是 | 重复执行时间，支持填写1~7，代表周一到周日。如果传入的是空数组则表示只执行一次。 默认值：[]。 **说明**： TimeStrategyType为START_END_TIME_TYPE和INCLUSIVE_DURATION_TYPE时此参数才生效。 |
+| repeat | number[] | 否 | 是 | 重复执行时间，支持填写1~7，代表周一到周日。如果传入的是空数组则表示只执行一次。 默认值：[]。 **说明**： TimeStrategyType为START_END_TIME_TYPE或INCLUSIVE_DURATION_TYPE时此参数才生效。 |
 
 #### TimeStrategyType
 
@@ -501,7 +501,7 @@ updateGuardStrategy(strategyName: string, guardStrategy: GuardStrategy): Promise
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| strategyName | string | 是 | 待更新的时间守护策略名称。长度不超过64个字符，仅支持字母、数字和下划线。 |
+| strategyName | string | 是 | 待更新的时间守护策略名称。长度为1~64个字符，仅支持字母、数字和下划线。 |
 | guardStrategy | [GuardStrategy](#guardstrategy) | 是 | 新的时间守护策略。 **说明**： 如想修改策略名称，可以在guardStrategy的name属性中传入新名称。但不能是已存在的名称，如果名称已存在则返回401错误码。 |
 
 返回值：
@@ -529,7 +529,7 @@ updateGuardStrategy(strategyName: string, guardStrategy: GuardStrategy): Promise
 import { guardService } from '@kit.ScreenTimeGuardKit';
 
 function testUpdateGuardService() {
-   // 定义起止时间策略，应用于周一至周三的08:00至19:00时间段
+   // 定义起止时间策略，应用于周一至周五的08:00至19:00时间段
    const time: guardService.TimeStrategy = {
       type: guardService.TimeStrategyType.START_END_TIME_TYPE,
       startTime: '08:00',
@@ -592,7 +592,7 @@ import { guardService } from '@kit.ScreenTimeGuardKit';
 function testQueryGuardService() {
    guardService.queryGuardStrategies()
       .then((guardStrategy: guardService.GuardStrategy[]) => {
-         console.info('queryGuardStrategies invoke success, GuardStrategies: ' + guardStrategy);
+         console.info('queryGuardStrategies invoke success, GuardStrategies: ' + JSON.stringify(guardStrategy));
       });
 }
 ```
@@ -615,7 +615,7 @@ removeGuardStrategy(strategyName: string): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| strategyName | string | 是 | 守护策略名称。长度不超过64个字符，仅支持字母、数字和下划线。 |
+| strategyName | string | 是 | 守护策略名称。长度为1~64个字符，仅支持字母、数字和下划线。 |
 
 返回值：
 
@@ -653,7 +653,7 @@ function testRemoveGuardService() {
 
 startGuardStrategy(strategyName: string): Promise<void>
 
-启动指定的守护策略，需先调用[addGuardStrategy](#addguardstrategy)接口添加策略后才可启动。策略启动后，系统会根据策略定义的规则设置指定应用的访问限制。使用Promise异步回调。
+启动指定的守护策略。策略启动后，系统会根据策略定义的规则设置指定应用的访问限制。调用此接口前，必须先通过[addGuardStrategy](#addguardstrategy)接口添加相应的守护策略，否则将返回1019000006错误码。使用Promise异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -667,7 +667,7 @@ startGuardStrategy(strategyName: string): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| strategyName | string | 是 | 守护策略名称。长度不超过64个字符，仅支持字母、数字和下划线。 |
+| strategyName | string | 是 | 守护策略名称。长度为1~64个字符，仅支持字母、数字和下划线。 |
 
 返回值：
 
@@ -720,7 +720,7 @@ startGuardStrategy(strategyName: string, startDate: Date): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| strategyName | string | 是 | 守护策略名称。长度不超过64个字符，仅支持字母、数字和下划线。 |
+| strategyName | string | 是 | 守护策略名称。长度为1~64个字符，仅支持字母、数字和下划线。 |
 | startDate | Date | 是 | 策略启动时间。 |
 
 返回值：
@@ -777,7 +777,7 @@ stopGuardStrategy(strategyName: string): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| strategyName | string | 是 | 守护策略名称。长度不超过64个字符，仅支持字母、数字和下划线。 |
+| strategyName | string | 是 | 守护策略名称。长度为1~64个字符，仅支持字母、数字和下划线。 |
 
 返回值：
 
@@ -954,7 +954,7 @@ queryGuardStrategyData(strategyName: string): Promise<GuardStrategyData>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| strategyName | string | 是 | 守护策略名称。长度不超过64个字符，仅支持字母、数字和下划线。 |
+| strategyName | string | 是 | 守护策略名称。长度为1~64个字符，仅支持字母、数字和下划线。 |
 
 返回值：
 
