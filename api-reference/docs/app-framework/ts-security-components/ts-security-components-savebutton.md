@@ -2,8 +2,8 @@
 title: "SaveButton"
 upstream_id: "harmonyos-references/ts-security-components-savebutton"
 catalog: "harmonyos-references"
-content_hash: "62685157c19b"
-synced_at: "2026-07-28T16:47:44.431555"
+content_hash: "1df3d8f9f394"
+synced_at: "2026-09-30T19:53:04.593304"
 ---
 
 # SaveButton
@@ -227,6 +227,10 @@ iconSize(size: Dimension | SizeOptions)
 
 设置保存控件的图标尺寸。
 
+![](./img/note_3.0-zh-cn.png) 在API版本10时，开发者可通过安全控件通用属性[iconSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-securitycomponent-attributes#iconsize)设置图标尺寸，此时size类型仅支持Dimension。
+
+从API版本20开始，开发者可以通过本接口设置图标尺寸，size类型增加支持SizeOptions。
+
 模型约束： 此接口仅可在Stage模型下使用。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
@@ -376,7 +380,7 @@ symbolRenderingStrategy(strategy: SymbolRenderingStrategy)
 
 不同渲染策略效果可参考以下示意图。
 
-![](./img/zh-cn_image_0000002655848712.png)
+![](./img/zh-cn_image_0000002749494804.png)
 
 #### 事件
 
@@ -476,7 +480,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008882.png)
+ ![](./img/zh-cn_image_0000002749335172.png)
 
 #### 示例2
 
@@ -550,7 +554,7 @@ struct SetIcon {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848962.png)
+ ![](./img/zh-cn_image_0000002749495056.png)
 
 #### 示例3
 
@@ -613,4 +617,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088393.jpeg)
+ ![](./img/zh-cn_image_0000002779094113.jpeg)

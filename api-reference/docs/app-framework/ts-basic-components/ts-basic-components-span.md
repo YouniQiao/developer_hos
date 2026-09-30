@@ -2,8 +2,8 @@
 title: "Span"
 upstream_id: "harmonyos-references/ts-basic-components-span"
 catalog: "harmonyos-references"
-content_hash: "8c899c86341e"
-synced_at: "2026-07-28T16:44:56.915355"
+content_hash: "19f151269f09"
+synced_at: "2026-09-30T19:52:53.156832"
 ---
 
 # Span
@@ -62,13 +62,13 @@ decoration(value: DecorationStyleInterface)
 
 ![](./img/note_3.0-zh-cn.png) 当文字的下边缘轮廓与装饰线位置相交时，会触发下划线避让规则，下划线将在这些字符处避让文字。常见“gjyqp”等英文字符。
 
-当文本装饰线的颜色设置为Color.Transparent时，装饰线颜色设置为跟随每行第一个字的字体颜色。当文本装饰线的颜色设置为透明色16进制对应值“#00FFFFFF”时，装饰线颜色设置为透明色。
+当文本装饰线的颜色设置为Color.Transparent时，装饰线颜色将跟随每行第一个字的字体颜色。当文本装饰线的颜色设置为透明色16进制对应值“#00FFFFFF”时，装饰线颜色设置为透明色。
 
 #### [h2]letterSpacing
 
 letterSpacing(value: number | ResourceStr)
 
-设置文本字符间距。取值小于0，字符聚集重叠，取值大于0且随着数值变大，字符间距越来越大，稀疏分布。适用于标题排版、标签文字等需要调整字符紧凑度或稀疏度的场景。string类型支持number类型取值的字符串形式，可以附带单位，例如"10"、"10fp"。
+设置文本字符间距。未通过该接口设置时，文本字符间距默认为0。取值小于0，字符聚集重叠，取值大于0且随着数值变大，字符间距越来越大，文本呈稀疏分布。适用于标题排版、标签文字等需要调整字符紧凑度或稀疏度的场景。string类型支持number类型取值的字符串形式，可以附带单位，例如"10"、"10fp"。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -172,7 +172,7 @@ fontWeight(value: number | FontWeight | ResourceStr)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 是 | 文本的字体粗细。 number类型取值[100, 900]，取值间隔为100，取值越大，字体越粗。string类型仅支持number类型取值的字符串形式，例如“400”，以及“bold”、“bolder”、“lighter”、“regular”、“medium”，分别对应FontWeight中相应的枚举值。设置过大可能会在不同字体下有截断。传入超出取值范围或不符合间隔要求的值时取默认值。 从API version 20开始，支持[Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource)类型。 |
+| value | number | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 是 | 文本的字体粗细。 number类型取值[100, 900]，取值间隔为100，默认为400，取值越大，字体越粗。string类型仅支持number类型取值的字符串形式，例如“400”，以及“bold”、“bolder”、“lighter”、“regular”、“medium”，分别对应FontWeight中相应的枚举值。设置过大可能会在不同字体下有截断。传入超出取值范围或不符合间隔要求的值时取默认值。 从API version 20开始，支持[Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource)类型。 |
 
 #### [h2]fontWeight24+
 
@@ -201,7 +201,7 @@ fontWeight(weight: number | FontWeight | ResourceStr, fontWeightConfigs?: FontWe
 
 fontFamily(value: string | Resource)
 
-设置字体列表。未通过该接口设置时，默认字体为'HarmonyOS Sans'。
+设置字体族。未通过该接口设置时，默认字体为'HarmonyOS Sans'。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -213,7 +213,7 @@ fontFamily(value: string | Resource)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 是 | 字体列表。 使用多个字体时，请用逗号','分隔，字体的优先级按顺序生效。例如：'Arial,HarmonyOS Sans'。 |
+| value | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 是 | 字体族。 使用多个字体时，请用逗号','分隔，字体的优先级按顺序生效。例如：'Arial,HarmonyOS Sans'。 |
 
 ![](./img/note_3.0-zh-cn.png) 可以使用[loadFontSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-text#loadfontsync)注册自定义字体。
 
@@ -354,7 +354,7 @@ textBackgroundStyle(style: TextBackgroundStyle): T
 
 baselineOffset(value: LengthMetrics): T
 
-设置Span基线的偏移量，适用于上下标排版、混合字号文本对齐微调等场景。此属性与父组件的baselineOffset是共存的。未通过该接口设置时，默认偏移量为0。
+设置Span基线的偏移量，适用于上下标排版、混合字号文本对齐微调等场景。此属性与父组件的baselineOffset属性同时生效，互不影响。未通过该接口设置时，默认偏移量为0。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -413,7 +413,7 @@ struct SpanExample {
           .fontFamily('HarmonyOS Sans')
       }.margin({ top: 12 })
 
-      // 文本横线添加
+      // 文本装饰线设置
       Text('Text Decoration').fontSize(9).fontColor(0xCCCCCC).margin({ top: 12 })
       Text() {
         Span('I am Underline-WAVY-span')
@@ -559,7 +559,7 @@ struct SpanExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848704.png)
+ ![](./img/zh-cn_image_0000002749334912.png)
 
 #### [h2]示例2（设置文本阴影）
 
@@ -612,7 +612,7 @@ struct SpanExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088135.png)
+ ![](./img/zh-cn_image_0000002749494796.png)
 
 #### [h2]示例3（设置背景样式）
 
@@ -635,7 +635,7 @@ struct SpanExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928303.png)
+ ![](./img/zh-cn_image_0000002779093853.png)
 
 #### [h2]示例4（设置文本基线偏移量）
 
@@ -671,7 +671,7 @@ struct SpanExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008626.png)
+ ![](./img/zh-cn_image_0000002778933997.png)
 
 #### [h2]示例5（设置文本可变字体的属性）
 
@@ -703,4 +703,4 @@ struct SpanExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848630.gif)
+ ![](./img/zh-cn_image_0000002778933921.gif)

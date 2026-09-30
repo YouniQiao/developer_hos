@@ -2,8 +2,8 @@
 title: "Rating"
 upstream_id: "harmonyos-references/ts-basic-components-rating"
 catalog: "harmonyos-references"
-content_hash: "e9eef18051cd"
-synced_at: "2026-07-28T16:44:31.667494"
+content_hash: "1521abc14a13"
+synced_at: "2026-09-30T19:52:51.697936"
 ---
 
 # Rating
@@ -79,7 +79,7 @@ stars(starCount: Optional<number>)
 
 stepSize(value: number)
 
-设置操作评级的步长。设置为小于0.1的值时，按默认值显示。默认值：0.5。
+设置操作评级的步长。设置为小于0.1的值时，按默认值显示。默认值：0.5。设置的评分值会规整到stepSize的整数倍（四舍五入到最近的整数倍）。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -97,7 +97,7 @@ stepSize(value: number)
 
 stepSize(size: Optional<number>)
 
-设置操作评级的步长。设置为小于0.1的值时，按默认值显示。与[stepSize](#stepsize)相比，size参数新增了对undefined类型的支持。当size的值为undefined时，默认值：0.5。
+设置操作评级的步长。设置为小于0.1的值时，按默认值显示。与[stepSize](#stepsize)相比，size参数新增了对undefined类型的支持。当size的值为undefined时，默认值：0.5。设置的评分值会规整到stepSize的整数倍（四舍五入到最近的整数倍）。
 
 卡片能力： 从API version 18开始，该接口支持在ArkTS卡片中使用。
 
@@ -219,7 +219,7 @@ onChange(callback:(value: number) => void)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 评分条的评分值。取值范围为[0, stars]，精度受stepSize影响。 |
+| value | number | 是 | 评分条的评分值。取值范围为[0, stars]，取值会规整到[stepSize](#stepsize)的整数倍。 |
 
 #### [h2]onChange18+
 
@@ -257,7 +257,7 @@ type OnRatingChangeCallback = (rating: number) => void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| rating | number | 是 | 评分条的评分值。取值范围为[0, stars]。 |
+| rating | number | 是 | 评分条的评分值。取值范围为[0, stars]，取值会规整到[stepSize](#stepsize)的整数倍。 |
 
 #### 键盘走焦规格
 
@@ -281,10 +281,10 @@ type OnRatingChangeCallback = (rating: number) => void
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| rating | number | 否 | 否 | 设置并接收评分值。 默认值：0 取值范围： [0, stars] 小于0取0，大于[stars](#stars)的值按[stars](#stars)的值显示。 该参数支持[$$](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-two-way-sync)双向绑定变量。 该参数支持[!!](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-binding#系统组件参数双向绑定)双向绑定变量。 |
+| rating | number | 否 | 否 | 设置并接收评分值。 默认值：0 取值范围： [0, stars] 小于0取0，大于[stars](#stars)的值按[stars](#stars)的值显示。 设置的评分值会规整到[stepSize](#stepsize)的整数倍（四舍五入到最近的整数倍），实际显示值与[onChange](#onchange)回调值均为规整后的值。该参数支持[$$](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-two-way-sync)与[!!](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-binding#系统组件参数双向绑定)双向绑定变量。 |
 | indicator | boolean | 否 | 否 | 评分条是否作为指示器使用。当值为true时，表示作为指示器；当值为false时，表示不作为指示器。 默认值：false |
 | stars | number | 否 | 否 | 评分条的星级总数。 默认值：5 取值范围：大于0，小于等于0时按默认值显示。 该参数同时定义了rating的最大值与stepSize的最大值。 |
-| stepSize | number | 否 | 否 | 评分条的评分步长。 默认值：0.5 取值范围：[0.1, stars] |
+| stepSize | number | 否 | 否 | 评分条的评分步长。 默认值：0.5 取值范围：[0.1, stars] 设置的评分值会规整到stepSize的整数倍（四舍五入到最近的整数倍）。 |
 | triggerChange | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 否 | 否 | 触发评分变化的回调，参数为新的评分值。 |
 
 #### RatingOptions18+对象说明
@@ -303,7 +303,7 @@ type OnRatingChangeCallback = (rating: number) => void
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| rating7+ | number | 否 | 否 | 设置并接收评分值。 默认值：0 取值范围： [0, stars] 小于0取0，大于[stars](#stars)取最大值stars。 该参数支持[$$](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-two-way-sync)双向绑定变量。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| rating7+ | number | 否 | 否 | 设置并接收评分值。 默认值：0 取值范围： [0, stars] 小于0取0，大于[stars](#stars)取最大值stars。 设置的评分值会规整到[stepSize](#stepsize)的整数倍（四舍五入到最近的整数倍），实际显示值与[onChange](#onchange)回调值均为规整后的值。该参数支持[$$](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-two-way-sync)双向绑定变量。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | indicator7+ | boolean | 否 | 是 | 设置评分组件作为指示器使用。值为true时，作为指示器使用，不可改变评分；值为false时，可进行评分。 默认值：false **说明：** indicator=true时，默认组件高度height=12.0vp，组件width=height * stars。 indicator=false时，默认组件高度height=28.0vp，组件width=height * stars。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 
 #### StarStyleOptions18+对象说明
@@ -386,7 +386,7 @@ struct RatingExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008522.gif)
+ ![](./img/zh-cn_image_0000002749494692.gif)
 
 #### [h2]示例2（自定义评分条）
 
@@ -591,7 +591,7 @@ struct RatingExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848602.gif)
+ ![](./img/zh-cn_image_0000002779093749.gif)
 
 #### [h2]示例3（通过Resource资源设置评分的样式）
 
@@ -628,7 +628,7 @@ struct RatingExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088029.gif)
+ ![](./img/zh-cn_image_0000002778933893.gif)
 
 #### [h2]示例4（设置评分的样式）
 
@@ -666,4 +666,4 @@ struct RatingExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088029.gif)
+ ![](./img/zh-cn_image_0000002778933893.gif)

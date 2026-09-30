@@ -2,8 +2,8 @@
 title: "OH_AVRange"
 upstream_id: "harmonyos-references/capi-avcapability-oh-avrange"
 catalog: "harmonyos-references"
-content_hash: "6ea775424882"
-synced_at: "2026-07-09T01:00:15.369147"
+content_hash: "49f7c293fefe"
+synced_at: "2026-09-30T19:54:55.001904"
 ---
 
 # OH_AVRange
@@ -15,6 +15,8 @@ typedef struct OH_AVRange {...} OH_AVRange
 #### 概述
 
 范围包含最小值和最大值。
+
+系统能力： SystemCapability.Multimedia.Media.CodecBase
 
 起始版本： 10
 

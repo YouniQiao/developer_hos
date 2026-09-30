@@ -2,15 +2,15 @@
 title: "avmetadata_extractor.h"
 upstream_id: "harmonyos-references/capi-avmetadata-extractor-h"
 catalog: "harmonyos-references"
-content_hash: "e50dae4e365b"
-synced_at: "2026-09-14T19:48:42.887471"
+content_hash: "6b1124616bc5"
+synced_at: "2026-09-30T19:55:12.745465"
 ---
 
 # avmetadata_extractor.h
 
 #### 概述
 
-定义AVMetadataExtractor接口。使用其Native API从媒体资源中获取元数据。
+定义AVMetadataExtractor接口。使用其C API从媒体资源中获取元数据。
 
 引用文件： <multimedia/player_framework/avmetadata_extractor.h>
 

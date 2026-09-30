@@ -2,8 +2,8 @@
 title: "NotificationCommonDef"
 upstream_id: "harmonyos-references/js-apis-inner-notification-notificationcommondef"
 catalog: "harmonyos-references"
-content_hash: "f716c7aec058"
-synced_at: "2026-07-28T16:52:47.269065"
+content_hash: "3e004bffe17a"
+synced_at: "2026-09-30T19:55:47.293340"
 ---
 
 # NotificationCommonDef
@@ -20,7 +20,7 @@ NotificationCommonDef中定义了通知相关接口中使用的通用数据结�
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| bundle | string | 否 | 否 | 应用的包名。 |
+| bundle | string | 否 | 否 | 应用的包名。字符串长度不超过202字节，超出部分会被截断。 |
 | uid | number | 否 | 是 | 应用的UID。从[ApplicationInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-applicationinfo#applicationinfo-1)获取，默认为0。 应用分身场景下，此参数为必填项。 |
 
 #### GrantedBundleInfo22+

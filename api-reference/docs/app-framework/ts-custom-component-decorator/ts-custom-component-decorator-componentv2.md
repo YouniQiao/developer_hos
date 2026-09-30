@@ -2,8 +2,8 @@
 title: "@ComponentV2：自定义组件V2"
 upstream_id: "harmonyos-references/ts-custom-component-decorator-componentv2"
 catalog: "harmonyos-references"
-content_hash: "e93f48b540fd"
-synced_at: "2026-07-28T16:47:55.924896"
+content_hash: "d24becd640fb"
+synced_at: "2026-09-30T19:53:06.243440"
 ---
 
 # @ComponentV2：自定义组件V2
@@ -21,11 +21,13 @@ synced_at: "2026-07-28T16:47:55.924896"
 
 const ComponentV2: ClassDecorator & ((options: ComponentOptions) => ClassDecorator)
 
-卡片能力： 从API version 12开始，该接口支持在ArkTS卡片中使用。
+卡片能力： 从API version 23开始，该接口支持在ArkTS卡片中使用。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 参数：
 

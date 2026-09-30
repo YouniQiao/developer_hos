@@ -2,8 +2,8 @@
 title: "Interface (AVMetadataExtractor)"
 upstream_id: "harmonyos-references/arkts-apis-media-avmetadataextractor"
 catalog: "harmonyos-references"
-content_hash: "230a9d14372f"
-synced_at: "2026-09-14T19:48:41.060207"
+content_hash: "53c52b26aa25"
+synced_at: "2026-09-30T19:55:11.378803"
 ---
 
 # Interface (AVMetadataExtractor)
@@ -263,6 +263,7 @@ async function fetchFramesByTimesDemo() {
   };
   // 获取缩略图。
   let avMetadataExtractor = await media.createAVMetadataExtractor();
+  let pixelMap: image.PixelMap | undefined = undefined;
   if (avMetadataExtractor) {
     console.info('Succeeded in creating AVMetadataExtractor');
     avMetadataExtractor.fetchFramesByTimes(timesUs, queryOption, param, (frameInfo: media.FrameInfo, err: BusinessError) => {
@@ -271,7 +272,7 @@ async function fetchFramesByTimesDemo() {
         return;
       }
       if (frameInfo != undefined && frameInfo.image != undefined) {
-        this.pixelMap = frameInfo.image;
+        pixelMap = frameInfo.image;
       }});
   }
 }
@@ -336,6 +337,7 @@ async function fetchFramesByTimesDemo() {
   };
   // 获取缩略图。
   let avMetadataExtractor = await media.createAVMetadataExtractor();
+  let pixelMap: image.PixelMap | undefined = undefined;
   if (avMetadataExtractor) {
     console.info('Succeeded in creating AVMetadataExtractor');
     avMetadataExtractor.fetchFramesByTimesWithTimeout(timesUs, queryOption, param, timeoutMs, (frameInfo: media.FrameInfo, err: BusinessError) => {
@@ -344,7 +346,7 @@ async function fetchFramesByTimesDemo() {
         return;
       }
       if (frameInfo != undefined && frameInfo.image != undefined) {
-        this.pixelMap = frameInfo.image;
+        pixelMap = frameInfo.image;
       }});
   }
 }

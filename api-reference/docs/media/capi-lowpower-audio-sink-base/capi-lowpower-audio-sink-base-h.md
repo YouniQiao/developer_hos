@@ -2,8 +2,8 @@
 title: "lowpower_audio_sink_base.h"
 upstream_id: "harmonyos-references/capi-lowpower-audio-sink-base-h"
 catalog: "harmonyos-references"
-content_hash: "ab9743f9c0b5"
-synced_at: "2026-07-28T16:51:59.092650"
+content_hash: "afa936efea4e"
+synced_at: "2026-09-30T19:55:13.380132"
 ---
 
 # lowpower_audio_sink_base.h
@@ -28,8 +28,8 @@ synced_at: "2026-07-28T16:51:59.092650"
 
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
-| [OH_LowPowerAudioSink](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpoweraudiosink-oh-lowpoweraudiosink) | OH_LowPowerAudioSink | LowPowerAudioSink的声明。 |
-| [OH_LowPowerAudioSinkCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpoweraudiosink-oh-lowpoweraudiosinkcallback) | OH_LowPowerAudioSinkCallback | 包含了LowPowerAudioSink回调函数指针的集合。 应用需注册此实例结构体到[OH_LowPowerAudioSink](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpoweraudiosink-oh-lowpoweraudiosink)实例中，并对回调上报的信息进行处理，保证LowPowerAudioSink的正常运行。 |
+| [OH_LowPowerAudioSink](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpoweraudiosink-oh-lowpoweraudiosink) | OH_LowPowerAudioSink | OH_LowPowerAudioSink是低功耗音频输出场景中使用的数据结构，开发者通过该结构体实现低功耗音频输出功能。 |
+| [OH_LowPowerAudioSinkCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpoweraudiosink-oh-lowpoweraudiosinkcallback) | OH_LowPowerAudioSinkCallback | 包含了OH_LowPowerAudioSink回调函数指针的集合。 应用需注册此实例结构体到[OH_LowPowerAudioSink](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpoweraudiosink-oh-lowpoweraudiosink)实例中，并对回调上报的信息进行处理，保证LowPowerAudioSink的正常运行。 |
 
 #### [h2]函数
 

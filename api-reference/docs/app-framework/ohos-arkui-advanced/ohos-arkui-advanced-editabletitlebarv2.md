@@ -2,8 +2,8 @@
 title: "EditableTitleBarV2"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-editabletitlebarv2"
 catalog: "harmonyos-references"
-content_hash: "2831ad0e116d"
-synced_at: "2026-07-28T16:48:13.748868"
+content_hash: "0324bf6a96a6"
+synced_at: "2026-09-30T19:53:08.668563"
 ---
 
 # EditableTitleBarV2
@@ -483,8 +483,8 @@ EditableTitleBarStyleV2的构造函数。
 从API版本26.0.0开始，支持EditableTitleBarV2。
 
 ```
-import { Prompt } from '@kit.ArkUI';
 import {
+  Prompt,
   EditableLeftIconTypeV2,
   EditableTitleBarV2,
   EditableLeftIconV2,
@@ -547,7 +547,7 @@ struct EditableTitleBarV2Demo01 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928601.png)
+ ![](./img/zh-cn_image_0000002778934299.png)
 
 #### [h2]示例2（头像与背景模糊标题栏）
 
@@ -556,8 +556,9 @@ struct EditableTitleBarV2Demo01 {
 从API版本26.0.0开始，支持EditableTitleBarV2。
 
 ```
-import { LengthMetrics, Prompt } from '@kit.ArkUI';
 import {
+  LengthMetrics,
+  Prompt,
   EditableLeftIconTypeV2,
   EditableTitleBarV2,
   EditableLeftIconV2,
@@ -694,7 +695,7 @@ struct EditableTitleBarV2Demo02 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008922.png)
+ ![](./img/zh-cn_image_0000002749335216.png)
 
 #### [h2]示例3（右侧自定义按钮播报）
 
@@ -703,8 +704,8 @@ struct EditableTitleBarV2Demo02 {
 从API版本26.0.0开始，支持EditableTitleBarV2。
 
 ```
-import { Prompt } from '@kit.ArkUI';
 import {
+  Prompt,
   EditableLeftIconTypeV2,
   EditableTitleBarV2,
   EditableLeftIconV2,
@@ -774,7 +775,7 @@ struct EditableTitleBarV2Demo03 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655849002.png)
+ ![](./img/zh-cn_image_0000002749495100.png)
 
 #### [h2]示例4（左侧图标设置为默认焦点）
 
@@ -783,8 +784,7 @@ struct EditableTitleBarV2Demo03 {
 从API版本26.0.0开始，支持EditableTitleBarV2。
 
 ```
-import { Prompt } from '@kit.ArkUI';
-import { EditableLeftIconTypeV2, EditableTitleBarV2, EditableLeftIconV2, EditableSaveButtonV2 } from '@kit.ArkUI';
+import { Prompt, EditableLeftIconTypeV2, EditableTitleBarV2, EditableLeftIconV2, EditableSaveButtonV2 } from '@kit.ArkUI';
 
 @Entry
 @Component
@@ -810,7 +810,7 @@ struct EditableTitleBarV2Demo04 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002686088433.png)
+ ![](./img/zh-cn_image_0000002779094157.png)
 
 #### [h2]示例5（右侧自定义图标设置为默认焦点）
 
@@ -819,8 +819,8 @@ struct EditableTitleBarV2Demo04 {
 从API版本26.0.0开始，支持EditableTitleBarV2。
 
 ```
-import { Prompt } from '@kit.ArkUI';
 import {
+  Prompt,
   EditableLeftIconTypeV2,
   EditableTitleBarV2,
   EditableLeftIconV2,
@@ -869,7 +869,7 @@ struct EditableTitleBarV2Demo05 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928603.png)
+ ![](./img/zh-cn_image_0000002778934301.png)
 
 #### [h2]示例6（设置Symbol类型图标）
 
@@ -878,8 +878,9 @@ struct EditableTitleBarV2Demo05 {
 从API版本26.0.0开始，支持EditableTitleBarV2。
 
 ```
-import { Prompt, SymbolGlyphModifier } from '@kit.ArkUI';
 import {
+  Prompt,
+  SymbolGlyphModifier,
   EditableLeftIconTypeV2,
   EditableTitleBarV2,
   EditableLeftIconV2,
@@ -957,4 +958,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008924.png)
+ ![](./img/zh-cn_image_0000002749335218.png)

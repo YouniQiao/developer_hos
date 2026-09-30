@@ -2,8 +2,8 @@
 title: "Interface (AVImageGenerator)"
 upstream_id: "harmonyos-references/arkts-apis-media-avimagegenerator"
 catalog: "harmonyos-references"
-content_hash: "767f9aac1981"
-synced_at: "2026-09-14T19:48:41.279910"
+content_hash: "732a57fa3feb"
+synced_at: "2026-09-30T19:55:11.112691"
 ---
 
 # Interface (AVImageGenerator)
@@ -63,6 +63,7 @@ fetchFrameByTime(timeUs: number, options: AVImageQueryOptions, param: PixelMapPa
 import { BusinessError } from '@kit.BasicServicesKit';
 import { image } from '@kit.ImageKit';
 import { media } from '@kit.MediaKit';
+import { common } from '@kit.AbilityKit';
 
 let avImageGenerator: media.AVImageGenerator | undefined = undefined;
 let pixel_map: image.PixelMap | undefined = undefined;
@@ -134,6 +135,7 @@ fetchFrameByTime(timeUs: number, options: AVImageQueryOptions, param: PixelMapPa
 import { BusinessError } from '@kit.BasicServicesKit';
 import { image } from '@kit.ImageKit';
 import { media } from '@kit.MediaKit';
+import { common } from '@kit.AbilityKit';
 
 let avImageGenerator: media.AVImageGenerator | undefined = undefined;
 let pixel_map: image.PixelMap | undefined = undefined;
@@ -203,6 +205,7 @@ fetchScaledFrameByTime(timeUs: number, queryMode: AVImageQueryOptions, outputSiz
 import { BusinessError } from '@kit.BasicServicesKit';
 import { image } from '@kit.ImageKit';
 import { media } from '@kit.MediaKit';
+import { common } from '@kit.AbilityKit';
 
 let avImageGenerator: media.AVImageGenerator | undefined = undefined;
 let pixel_map: image.PixelMap | undefined = undefined;

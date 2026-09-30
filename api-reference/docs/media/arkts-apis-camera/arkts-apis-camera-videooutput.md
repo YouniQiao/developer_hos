@@ -2,8 +2,8 @@
 title: "Interface (VideoOutput)"
 upstream_id: "harmonyos-references/arkts-apis-camera-videooutput"
 catalog: "harmonyos-references"
-content_hash: "c83ada61a70c"
-synced_at: "2026-07-09T01:00:23.845633"
+content_hash: "8b0afaaadb72"
+synced_at: "2026-09-30T19:55:00.563281"
 ---
 
 # Interface (VideoOutput)
@@ -325,7 +325,7 @@ off(type: 'error', callback?: ErrorCallback): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 监听事件，固定为'error'，photoOutput创建成功后可监听。 |
+| type | string | 是 | 监听事件，固定为'error'，videoOutput创建成功后可监听。 |
 | callback | [ErrorCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#errorcallback) | 否 | 回调函数，如果指定参数则取消对应callback（callback对象不可是匿名函数），否则取消所有callback。 |
 
 示例：
@@ -501,7 +501,7 @@ enableMirror(enabled: boolean): void
 
 启用/关闭镜像录像。
 
-- 调用该接口前，需要通过[isMirrorSupported](#ismirrorsupported15)查询是否支录像镜像功能。
+- 调用该接口前，需要通过[isMirrorSupported](#ismirrorsupported15)查询是否支持录像镜像功能。
 - 启用/关闭录像镜像后，需要通过[getVideoRotation](#getvideorotation12)获取录像旋转角度以及[updateRotation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-avrecorder#updaterotation12)更新旋转角度。
 
 元服务API： 从API version 19开始，该接口支持在元服务中使用。

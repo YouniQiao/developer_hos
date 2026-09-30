@@ -2,8 +2,8 @@
 title: "@ohos.systemDateTime (系统时间、时区)"
 upstream_id: "harmonyos-references/js-apis-date-time"
 catalog: "harmonyos-references"
-content_hash: "3d52cfa0039d"
-synced_at: "2026-09-24T18:53:40.530827"
+content_hash: "c74282ab94c3"
+synced_at: "2026-09-30T19:54:31.316046"
 ---
 
 # @ohos.systemDateTime (系统时间、时区)
@@ -491,7 +491,7 @@ getUptime(timeType: TimeType, isNanoseconds?: boolean): number
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3.Parameter verification failed. 适用版本：12+ |
+| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed. 适用版本：12+ |
 
 示例：
 

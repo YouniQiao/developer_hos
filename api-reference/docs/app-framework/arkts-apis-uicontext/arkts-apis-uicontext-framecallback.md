@@ -2,8 +2,8 @@
 title: "Class (FrameCallback)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-framecallback"
 catalog: "harmonyos-references"
-content_hash: "0750669d9daf"
-synced_at: "2026-07-28T16:41:05.826938"
+content_hash: "84dd6a75518d"
+synced_at: "2026-09-30T19:52:37.100266"
 ---
 
 # Class (FrameCallback)
@@ -35,7 +35,7 @@ onFrame(frameTimeInNano: number): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| frameTimeInNano | number | 是 | 下一帧渲染开始执行的时间，以纳秒为单位，由系统回调时传入，开发者无需手动传入。 取值范围：[0, +∞) |
+| frameTimeInNano | number | 是 | 下一帧渲染开始执行的时间，以ns为单位，由系统回调时传入，开发者无需手动传入。 取值范围：[0, +∞) |
 
 示例：
 

@@ -2,8 +2,8 @@
 title: "NotificationRequest"
 upstream_id: "harmonyos-references/js-apis-inner-notification-notificationrequest"
 catalog: "harmonyos-references"
-content_hash: "689f0547e006"
-synced_at: "2026-09-04T18:13:54.984531"
+content_hash: "de8a09aec1ff"
+synced_at: "2026-09-30T19:55:47.843113"
 ---
 
 # NotificationRequest
@@ -42,10 +42,10 @@ synced_at: "2026-09-04T18:13:54.984531"
 | overlayIcon23+ | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 否 | 是 | 通知重叠图标，替换通知左侧图标，默认为空。此接口只在[notificationSlotType](#notificationrequest-1)类型设置为SOCIAL_COMMUNICATION时生效。 图标像素的总字节数不超过192KB（图标像素的总字节数通过[getPixelBytesNumber](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap#getpixelbytesnumber7)获取），超出后设置不生效。建议图标像素长宽为128*128。实际显示效果依赖于设备能力和通知中心UI样式，详情请参考[通讯对话类通知](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-notification-0000001793074217#section158281459143810)。 |
 | groupName8+ | string | 否 | 是 | 通知所属组。当不同通知的groupName相同时，这些通知将成组展示。 大小不超过202字节，超出部分会被截断。默认为空。 |
 | template8+ | [NotificationTemplate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-notification-notificationtemplate) | 否 | 是 | 通知模板，默认为空。 |
-| extraInfo | {[key: string]: any} | 否 | 是 | 扩展参数。为应用提供定制服务。默认为空。 以下Key由系统赋值，开发者手动修改也不会生效，系统在数据传递时会自动修改为实际值。 - 'ohos.notificationManager.wantUri'：用户点击通知时传递给应用的[Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want#want) 中的uri字段，使用[getActiveNotifications](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notification#notificationgetactivenotifications)接口获取该信息。 |
+| extraInfo | {[key: string]: any} | 否 | 是 | 扩展参数。为应用提供定制服务。默认为空。 以下Key由系统赋值，开发者手动修改也不会生效，系统在数据传递时会自动修改为实际值。 - 'ohos.notificationManager.wantUri'：用户点击通知时传递给应用的[Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want#want) 中的uri字段，使用[getActiveNotifications](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationmanager#notificationmanagergetactivenotifications-1)接口获取该信息。 |
 | slotType(deprecated) | [notification.SlotType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notification#slottype) | 否 | 是 | 通知渠道类型，默认值为OTHER_TYPES。 从API version 7开始支持，从API version 11开始废弃，建议使用notificationSlotType替代。 |
 | hashCode | string | 是 | 是 | 通知唯一标识。 |
-| creatorBundleName | string | 是 | 是 | 创建通知的应用名称。 |
+| creatorBundleName | string | 是 | 是 | 创建通知的应用包名。 |
 | creatorUid | number | 是 | 是 | 创建通知的应用UID。 |
 | creatorPid | number | 是 | 是 | 创建通知的PID。 |
 | creatorUserId8+ | number | 是 | 是 | 创建通知的用户ID。 |
@@ -82,6 +82,6 @@ synced_at: "2026-09-04T18:13:54.984531"
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| wantAction | string | 否 | 是 | 应用在创建wantAgent时，传入的want的action字段，具体含义请参考[action](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want#want)。 |
-| wantUri | string | 否 | 是 | 应用在创建wantAgent时，传入的want的uri字段，具体含义请参考[uri](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want#want)。 |
-| wantParameters | Record | 否 | 是 | 应用在创建wantAgent时，传入的want的parameters字段，具体含义请参考[parameters](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want#want)。 |
+| wantAction | string | 否 | 是 | 应用在创建wantAgent时，传入的Want的action字段，具体含义请参考[action](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want#want)。 |
+| wantUri | string | 否 | 是 | 应用在创建wantAgent时，传入的Want的uri字段，具体含义请参考[uri](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want#want)。 |
+| wantParameters | Record | 否 | 是 | 应用在创建wantAgent时，传入的Want的parameters字段，具体含义请参考[parameters](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want#want)。 |

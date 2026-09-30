@@ -2,8 +2,8 @@
 title: "preview_output.h"
 upstream_id: "harmonyos-references/capi-preview-output-h"
 catalog: "harmonyos-references"
-content_hash: "8d547cad35f7"
-synced_at: "2026-08-18T15:34:10.936760"
+content_hash: "a26d3f2c672d"
+synced_at: "2026-09-30T19:55:01.676169"
 ---
 
 # preview_output.h
@@ -501,7 +501,7 @@ Camera_ErrorCode OH_PreviewOutput_EnableBandwidthCompression(Camera_PreviewOutpu
 
 | 类型 | 说明 |
 | --- | --- |
-| [Camera_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-camera-h#camera_errorcode) | CAMERA_OK：方法调用成功。 CAMERA_OPERATION_NOT_ALLOWED: 操作不允许。 CAMERA_INVALID_ARGUMENT：参数丢失或参数类型不正确。 CAMERA_SESSION_NOT_CONFIG：相机会话未配置。 CAMERA_SERVICE_FATAL_ERROR：相机服务异常。 |
+| [Camera_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-camera-h#camera_errorcode) | CAMERA_OK：方法调用成功。 CAMERA_OPERATION_NOT_ALLOWED：操作不允许。 CAMERA_INVALID_ARGUMENT：参数丢失或参数类型不正确。 CAMERA_SESSION_NOT_CONFIG：相机会话未配置。 CAMERA_SERVICE_FATAL_ERROR：相机服务异常。 |
 
 #### [h2]OH_PreviewOutput_AddDeferredSurface()
 

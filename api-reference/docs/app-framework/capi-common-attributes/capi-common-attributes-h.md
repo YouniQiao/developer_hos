@@ -2,8 +2,8 @@
 title: "common_attributes.h"
 upstream_id: "harmonyos-references/capi-common-attributes-h"
 catalog: "harmonyos-references"
-content_hash: "846f3abaf439"
-synced_at: "2026-08-29T18:15:36.513899"
+content_hash: "462edbee93a0"
+synced_at: "2026-09-30T19:53:28.661399"
 ---
 
 # common_attributes.h

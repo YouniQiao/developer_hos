@@ -2,8 +2,8 @@
 title: "ssap（星闪SSAP连接能力）"
 upstream_id: "harmonyos-references/nearlink-ssap"
 catalog: "harmonyos-references"
-content_hash: "cd3e238c3f9f"
-synced_at: "2026-09-04T18:12:01.513604"
+content_hash: "ef2b605b83cd"
+synced_at: "2026-09-30T19:54:18.681572"
 ---
 
 # ssap（星闪SSAP连接能力）
@@ -995,44 +995,51 @@ addService(service: Service): void
 import { ssap } from '@kit.NearLinkKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
-// 构造descriptor
-let descriptorsArray: Array<ssap.PropertyDescriptor> = [];
-let arrayBuffer = new ArrayBuffer(8);
-let descValue = new Uint8Array(arrayBuffer);
-descValue[0] = 11;
-descValue[1] = 22;
-let descriptor: ssap.PropertyDescriptor = {
+// 构造属性1的descriptor
+let descriptorsArray1: Array<ssap.PropertyDescriptor> = [];
+let descriptor1: ssap.PropertyDescriptor = {
   serviceUuid:'37bea880-fc70-11ea-b720-000000004386',
   propertyUuid: '37bea880-fc70-11ea-b720-000000001234',
-  value: arrayBuffer,
-  descriptorType: ssap.PropertyDescriptorType.PROPERTY,
+  value: new ArrayBuffer(2),
+  descriptorType: ssap.PropertyDescriptorType.CLIENT_PROPERTY_CONFIG,
   isWriteable: true
 };
-descriptorsArray[0] = descriptor;
-// 构造properties
-let propertiesArray: Array<ssap.Property> = [];
-let arrayBufferProperty = new ArrayBuffer(8);
-let properValue = new Uint8Array(arrayBufferProperty);
-properValue[0] = 1;
-let property1: ssap.Property = {
+descriptorsArray1[0] = descriptor1;
+// 构造属性2的descriptor
+let descriptorsArray2: Array<ssap.PropertyDescriptor> = [];
+let descriptor2: ssap.PropertyDescriptor = {
   serviceUuid:'37bea880-fc70-11ea-b720-000000004386',
   propertyUuid: '37bea880-fc70-11ea-b720-000000001234',
-  value: arrayBufferProperty,
-  descriptors:descriptorsArray
+  value: new ArrayBuffer(2),
+  descriptorType: ssap.PropertyDescriptorType.CLIENT_PROPERTY_CONFIG,
+  isWriteable: true
+};
+descriptorsArray2[0] = descriptor2;
+// 构造properties
+let propertiesArray: Array<ssap.Property> = [];
+let valueBuffer = new ArrayBuffer(8);
+let propertyValue = new Uint8Array(valueBuffer);
+propertyValue[0] = 1;
+let property1: ssap.Property = {
+  serviceUuid: '37bea880-fc70-11ea-b720-000000004386',
+  propertyUuid: '37bea880-fc70-11ea-b720-000000001234',
+  value: valueBuffer,
+  descriptors:descriptorsArray1,
+  operation: ssap.Operation.READABLE | ssap.Operation.WRITE_NO_RESPONSE | ssap.Operation.NOTIFY
 };
 let property2: ssap.Property = {
-  serviceUuid:'37bea880-fc70-11ea-b720-000000004386',
+  serviceUuid: '37bea880-fc70-11ea-b720-000000004386',
   propertyUuid: '37bea880-fc70-11ea-b720-000000003421',
-  value: arrayBufferProperty,
-  descriptors:descriptorsArray,
-  operation:12
+  value: valueBuffer,
+  descriptors:descriptorsArray2,
+  operation: ssap.Operation.WRITE_WITH_RESPONSE | ssap.Operation.NOTIFY
 };
 propertiesArray[0] = property1;
 propertiesArray[1] = property2;
 // 构造服务
 let service: ssap.Service = {
-  serviceUuid:'37bea880-fc70-11ea-b720-000000004386',
-  properties:propertiesArray
+  serviceUuid: '37bea880-fc70-11ea-b720-000000004386',
+  properties: propertiesArray
 };
 let server: ssap.Server;
 try {

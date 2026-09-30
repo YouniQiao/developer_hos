@@ -2,14 +2,14 @@
 title: "Camera_OcclusionDetectionResult"
 upstream_id: "harmonyos-references/capi-oh-camera-camera-occlusiondetectionresult"
 catalog: "harmonyos-references"
-content_hash: "0342dc50408e"
-synced_at: "2026-07-09T01:00:27.319031"
+content_hash: "6fcbce85716e"
+synced_at: "2026-09-30T19:55:03.434096"
 ---
 
 # Camera_OcclusionDetectionResult
 
 ```
-typedef struct {...} Camera_OcclusionDetectionResult
+typedef struct Camera_OcclusionDetectionResult {...} Camera_OcclusionDetectionResult
 ```
 
 #### 概述

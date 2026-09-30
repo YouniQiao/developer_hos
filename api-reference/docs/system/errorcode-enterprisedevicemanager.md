@@ -2,8 +2,8 @@
 title: "企业设备管理错误码"
 upstream_id: "harmonyos-references/errorcode-enterprisedevicemanager"
 catalog: "harmonyos-references"
-content_hash: "3afa818fe105"
-synced_at: "2026-08-29T18:17:08.130826"
+content_hash: "d0ed9002650e"
+synced_at: "2026-09-30T19:54:39.793155"
 ---
 
 # 企业设备管理错误码
@@ -372,6 +372,7 @@ Failed to install the application.
 2. 安装多个不同包名的应用。
 3. 当安装参数flag为0时再次安装已存在的应用。
 4. 传入无效用户id。
+5. 应用安装包中未包含有效证书。
 
 如果调用接口为[bundleManager.installMarketApps](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-bundlemanager#bundlemanagerinstallmarketapps22)，可能原因如下。
 
@@ -1272,3 +1273,21 @@ The number of signed-in accounts reaches the upper limit.
 处理步骤
 
 尝试注销多余的系统账号，并及时移除不再需要保留的系统账号。
+
+#### 9201048 设备操作失败
+
+错误信息
+
+Failed to operate the device.
+
+错误描述
+
+当前设备操作失败。
+
+可能原因
+
+磁盘擦除失败。
+
+处理步骤
+
+擦除失败，请重试。

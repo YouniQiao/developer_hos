@@ -2,8 +2,8 @@
 title: "DialogV2"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-dialogv2"
 catalog: "harmonyos-references"
-content_hash: "8489644b47b6"
-synced_at: "2026-08-29T18:15:09.958974"
+content_hash: "4684b29aae4a"
+synced_at: "2026-09-30T19:53:08.665103"
 ---
 
 # DialogV2
@@ -126,11 +126,11 @@ AlertDialogV2({primaryTitle?: ResourceStr, secondaryTitle?: ResourceStr, content
 
 | 名称 | 类型 | 必填 | 装饰器类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| primaryTitle | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | @Param | 确认弹出框标题。 默认不显示。 **说明：** 标题超过两行会显示“...”。 |
-| secondaryTitle | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | @Param | 确认弹出框辅助文本。 默认不显示。 **说明：** 辅助文本超过两行会显示“...”。 |
-| content | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 是 | @Param @Require | 确认弹出框内容。 |
-| primaryButton | [AdvancedDialogV2Button](#advanceddialogv2button) | 否 | @Param | 确认弹出框左侧按钮。 默认不显示。 |
-| secondaryButton | [AdvancedDialogV2Button](#advanceddialogv2button) | 否 | @Param | 确认弹出框右侧按钮。 默认不显示。 |
+| primaryTitle | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | @Param | 警告弹出框标题。 默认不显示。 **说明：** 标题超过两行会显示“...”。 |
+| secondaryTitle | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | @Param | 警告弹出框辅助文本。 默认不显示。 **说明：** 辅助文本超过两行会显示“...”。 |
+| content | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 是 | @Param @Require | 警告弹出框内容。 |
+| primaryButton | [AdvancedDialogV2Button](#advanceddialogv2button) | 否 | @Param | 警告弹出框左侧按钮。 默认不显示。 |
+| secondaryButton | [AdvancedDialogV2Button](#advanceddialogv2button) | 否 | @Param | 警告弹出框右侧按钮。 默认不显示。 |
 
 #### LoadingDialogV2
 
@@ -150,7 +150,7 @@ LoadingDialogV2({content?: ResourceStr})
 
 #### CustomContentDialogV2
 
-CustomContentDialogV2({contentBuilder: () => void, primaryTitle?: ResourceStr, secondaryTitle?: ResourceStr, contentAreaPadding?: LocalizedPadding, buttons?: AdvancedDialogV2Button[]})
+CustomContentDialogV2({contentBuilder: CustomBuilder, primaryTitle?: ResourceStr, secondaryTitle?: ResourceStr, contentAreaPadding?: LocalizedPadding, buttons?: AdvancedDialogV2Button[]})
 
 自定义内容区弹出框，同时支持定义操作区按钮样式。适用于需要展示复杂或自定义内容的场景，如用户协议确认、表单输入等。
 
@@ -350,7 +350,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701640134.png)
+ ![](./img/zh-cn_image_0000002749495094.png)
 
 #### [h2]示例2（纯列表弹出框）
 
@@ -419,7 +419,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519291.png)
+ ![](./img/zh-cn_image_0000002749495048.png)
 
 #### [h2]示例3（文本与勾选弹出框）
 
@@ -486,7 +486,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701640092.png)
+ ![](./img/zh-cn_image_0000002779094105.png)
 
 #### [h2]示例4（纯文本弹出框）
 
@@ -545,7 +545,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359311.png)
+ ![](./img/zh-cn_image_0000002778934249.png)
 
 #### [h2]示例5（进度加载类弹出框）
 
@@ -589,7 +589,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701800006.gif)
+ ![](./img/zh-cn_image_0000002749335166.gif)
 
 #### [h2]示例6（使用WithTheme自定义主题的弹出框）
 
@@ -647,7 +647,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359353.png)
+ ![](./img/zh-cn_image_0000002779094151.png)
 
 #### [h2]示例7（自定义内容弹出框）
 
@@ -707,7 +707,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701800048.png)
+ ![](./img/zh-cn_image_0000002778934295.png)
 
 #### [h2]示例8（跟手弹出框）
 
@@ -764,4 +764,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519335.png)
+ ![](./img/zh-cn_image_0000002749335212.png)

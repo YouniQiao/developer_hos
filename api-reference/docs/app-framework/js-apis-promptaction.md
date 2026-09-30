@@ -2,8 +2,8 @@
 title: "@ohos.promptAction (弹窗)"
 upstream_id: "harmonyos-references/js-apis-promptaction"
 catalog: "harmonyos-references"
-content_hash: "fecebc3a91a2"
-synced_at: "2026-07-28T16:41:18.458297"
+content_hash: "e60d33c32dd3"
+synced_at: "2026-09-30T19:52:39.232548"
 ---
 
 # @ohos.promptAction (弹窗)
@@ -106,7 +106,7 @@ struct toastExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008196.gif)
+ ![](./img/zh-cn_image_0000002778933427.gif)
 
 #### promptAction.closeToast18+
 
@@ -153,7 +153,7 @@ Toast的选项。
 | message | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 否 | 显示的文本信息。 **说明：** 默认字体为'Harmony Sans'，不支持设置其他字体。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | duration | number | 否 | 是 | 设置Toast弹出的持续时间。 **单位：ms** 默认值：1500ms 取值范围：[1500, 10000]。若小于1500ms则取默认值，若大于10000ms则取上限值10000ms。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | bottom | string | number | 否 | 是 | 设置Toast底部边框距离导航条的高度。软键盘拉起时，若bottom值过小且Toast会被遮挡，则自动避让至距离软键盘80vp处。 默认值：80vp **说明：** 当底部没有导航条时，bottom为设置弹窗底部边框距离窗口底部的高度。 设置对齐方式alignment后，bottom不生效。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| alignment12+ | [Alignment](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#alignment) | 否 | 是 | 对齐方式。默认值：undefined，当未设置alignment且存在导航条或软键盘时，Toast会自动根据导航条或软键盘位置进行调整，可参考bottom的说明。 **说明：** 不同alignment下，Toast位置对齐效果，如下图所示。 ![](./img/zh-cn_image_0000002655848276.png) Toast的文本显示默认自左向右，不支持其他对齐方式。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| alignment12+ | [Alignment](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#alignment) | 否 | 是 | 对齐方式。默认值：undefined，当未设置alignment且存在导航条或软键盘时，Toast会自动根据导航条或软键盘位置进行调整，可参考bottom的说明。 **说明：** 不同alignment下，Toast位置对齐效果，如下图所示。 ![](./img/zh-cn_image_0000002749334342.png) Toast的文本显示默认自左向右，不支持其他对齐方式。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | offset12+ | [Offset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#offset) | 否 | 是 | 在对齐方式上的偏移。 默认值：{ dx: 0, dy: 0 }，默认没有偏移。 **说明：** 仅支持设置px类型的数值。如需设置其他类型的数值，应将其他类型转换为px类型后传入。例如，若需设置vp，应将其转换为px后传入。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | showMode11+ | [ToastShowMode](#toastshowmode11) | 否 | 是 | 设置Toast层级。 默认值：ToastShowMode.DEFAULT，默认显示在应用内。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | backgroundColor12+ | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | Toast的背板颜色。 默认值：Color.Transparent **说明：** backgroundColor会与模糊属性backgroundBlurStyle叠加产生效果，如果不符合预期，可将backgroundBlurStyle设置为BlurStyle.NONE，即可取消模糊。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
@@ -206,9 +206,9 @@ Toast的选项。
 | onDidAppear19+ | Callback | 否 | 是 | 对话框弹出后的事件回调。 **说明：** 1.正常时序依次为：onWillAppear>>onDidAppear>>onWillDisappear>>onDidDisappear。 2.在onDidAppear内设置改变弹窗显示效果的回调事件，在对话框下次打开时生效。 3.在onDidAppear触发前就关闭对话框时，onWillDisappear在onDidAppear前生效。 4.对话框入场动效未完成时彻底关闭对话框，动效打断，onDidAppear不会触发。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 |
 | onWillDisappear19+ | Callback | 否 | 是 | 对话框退出动效前的事件回调。 **说明：** 1.正常时序依次为：onWillAppear>>onDidAppear>>onWillDisappear>>onDidDisappear。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 |
 | onDidDisappear19+ | Callback | 否 | 是 | 对话框消失后的事件回调。 **说明：** 1.正常时序依次为：onWillAppear>>onDidAppear>>onWillDisappear>>onDidDisappear。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 |
-| levelMode15+ | [LevelMode](#levelmode15枚举说明) | 否 | 是 | 设置对话框显示层级。 **说明：** - 默认值：LevelMode.OVERLAY - 当且仅当showInSubWindow属性设置为false时生效。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
+| levelMode15+ | [LevelMode](#levelmode15) | 否 | 是 | 设置对话框显示层级。 **说明：** - 默认值：LevelMode.OVERLAY - 当且仅当showInSubWindow属性设置为false时生效。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
 | levelUniqueId15+ | number | 否 | 是 | 设置页面级对话框需要显示的层级下的节点UniqueID，UniqueID可以通过[getUniqueId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#getuniqueid12)获取。 取值范围：大于等于0的数字。 **说明：** - 当且仅当levelMode属性设置为LevelMode.EMBEDDED时生效。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
-| immersiveMode15+ | [ImmersiveMode](#immersivemode15枚举说明) | 否 | 是 | 设置页面内对话框蒙层效果。 **说明：** - 默认值：ImmersiveMode.DEFAULT - 当且仅当levelMode属性设置为LevelMode.EMBEDDED时生效。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
+| immersiveMode15+ | [ImmersiveMode](#immersivemode15) | 否 | 是 | 设置页面内对话框蒙层效果。 **说明：** - 默认值：ImmersiveMode.DEFAULT - 当且仅当levelMode属性设置为LevelMode.EMBEDDED时生效。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
 | levelOrder18+ | [LevelOrder](#levelorder18) | 否 | 是 | 设置对话框显示的顺序。 **说明：** - 默认值：LevelOrder.clamp(0) - 不支持动态刷新顺序。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | systemMaterial | [SystemUiMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemuimaterial) | 否 | 是 | 设置弹窗的系统材质。 **说明：** - 默认值：[ImmersiveOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#immersiveoptions)的style为ImmersiveStyle.ULTRA_THICK的[ImmersiveMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#immersivematerial)对象。设置undefined时与默认值保持一致。 - 不同的材质具有不同的效果，该接口影响背景色[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、背景模糊[backgroundBlurStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundblurstyle9)、背景效果[backgroundEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundeffect11)、阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)，不建议与上述接口一起使用。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
 
@@ -236,9 +236,9 @@ Toast的选项。
 | buttons | [[Button](#button),[Button](#button)?,[Button](#button)?,[Button](#button)?,[Button](#button)?,[Button](#button)?] | 否 | 否 | 菜单中菜单项按钮的数组，结构为：{text:'button', color: '#666666'}，支持1-6个按钮。按钮数量大于6个时，仅显示buttons数组中的前6个按钮（索引0到5），数组中索引大于5的按钮不显示。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | showInSubWindow11+ | boolean | 否 | 是 | 某操作菜单需要显示在主窗口之外时，是否在子窗口显示此菜单。值为true表示在子窗口显示菜单。 默认值：false，在子窗口不显示菜单。 **说明：** - showInSubWindow为true的菜单无法触发显示另一个showInSubWindow为true的菜单。 - 若在UIExtension中设置showInSubWindow为true, 菜单将基于UIExtension的宿主窗口对齐。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | isModal11+ | boolean | 否 | 是 | 菜单是否为模态窗口。值为true表示为模态窗口且有蒙层，不可与菜单周围其他控件进行交互，即蒙层区域无法事件透传。值为false表示为非模态窗口且无蒙层，可以与菜单周围其他控件进行交互。 默认值：true **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| levelMode15+ | [LevelMode](#levelmode15枚举说明) | 否 | 是 | 设置菜单显示层级。 **说明：** - 默认值：LevelMode.OVERLAY - 当且仅当showInSubWindow属性设置为false时生效。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
+| levelMode15+ | [LevelMode](#levelmode15) | 否 | 是 | 设置菜单显示层级。 **说明：** - 默认值：LevelMode.OVERLAY - 当且仅当showInSubWindow属性设置为false时生效。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
 | levelUniqueId15+ | number | 否 | 是 | 设置页面级菜单需要显示的层级下的节点UniqueID，UniqueID可以通过[getUniqueId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#getuniqueid12)获取。 取值范围：大于等于0的数字。 **说明：** - 当且仅当levelMode属性设置为LevelMode.EMBEDDED时生效。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
-| immersiveMode15+ | [ImmersiveMode](#immersivemode15枚举说明) | 否 | 是 | 设置页面内菜单蒙层效果。 **说明：** - 默认值：ImmersiveMode.DEFAULT - 当且仅当levelMode属性设置为LevelMode.EMBEDDED时生效。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
+| immersiveMode15+ | [ImmersiveMode](#immersivemode15) | 否 | 是 | 设置页面内菜单蒙层效果。 **说明：** - 默认值：ImmersiveMode.DEFAULT - 当且仅当levelMode属性设置为LevelMode.EMBEDDED时生效。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
 | onWillAppear20+ | Callback | 否 | 是 | 菜单显示动效前的事件回调。 **说明：** 1.正常时序依次为：onWillAppear>>onDidAppear>>onWillDisappear>>onDidDisappear。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | onDidAppear20+ | Callback | 否 | 是 | 菜单弹出后的事件回调。 **说明：** 1.正常时序依次为：onWillAppear>>onDidAppear>>onWillDisappear>>onDidDisappear。 2.快速点击弹出，关闭菜单时，onWillDisappear在onDidAppear前生效。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | onWillDisappear20+ | Callback | 否 | 是 | 菜单退出动效前的事件回调。 **说明：** 1.正常时序依次为：onWillAppear>>onDidAppear>>onWillDisappear>>onDidDisappear。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
@@ -257,7 +257,7 @@ Toast的选项。
 | --- | --- | --- | --- | --- |
 | index | number | 否 | 否 | 选中按钮在buttons数组中的索引，从0开始，可用于判断用户点击了哪个按钮。 |
 
-#### CommonState20+枚举说明
+#### CommonState20+
 
 自定义弹窗的状态。
 
@@ -338,7 +338,7 @@ getState(): CommonState
 
 | 类型 | 说明 |
 | --- | --- |
-| [CommonState](#commonstate20枚举说明) | 返回对应的弹窗状态。 |
+| [CommonState](#commonstate20) | 返回对应的弹窗状态。 |
 
 #### LevelOrder18+
 
@@ -354,7 +354,7 @@ getState(): CommonState
 
 static clamp(order: number): LevelOrder
 
-创建指定顺序的弹窗层级。
+创建指定顺序的弹窗层级，数值越大弹窗显示越上层。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -538,8 +538,8 @@ type DialogOptionsShadow = ShadowOptions | ShadowStyle
 | isModal | boolean | 否 | 是 | 弹窗是否为模态窗口。值为true表示为模态窗口且有蒙层，不可与弹窗周围其他控件进行交互，即蒙层区域无法事件透传。值为false表示为非模态窗口且无蒙层，可以与弹窗周围其他控件进行交互。 默认值：true **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | showInSubWindow | boolean | 否 | 是 | 某弹窗需要显示在主窗口之外时，是否在子窗口显示此弹窗。值为true表示在子窗口显示弹窗。 默认值：false，弹窗显示在应用内，而非独立子窗口。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | displayModeInSubWindow | [DialogDisplayMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#dialogdisplaymode) | 否 | 是 | 弹窗在子窗口中的显示模式。 默认值：DialogDisplayMode.SCREEN_BASED **说明：** 仅当showInSubWindow设置为true时生效。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
-| onWillDismiss12+ | Callback | 否 | 是 | 交互式关闭回调函数。 **说明：** 1.当用户执行点击遮障层关闭、侧滑（左滑/右滑）、三键back、键盘ESC关闭交互操作时，如果注册该回调函数，则不会立刻关闭弹窗。在回调函数中可以通过reason得到阻拦关闭弹窗的操作类型，从而根据原因选择是否能关闭弹窗。当前组件返回的reason中，暂不支持CLOSE_BUTTON的枚举值。 2.在onWillDismiss回调中，不能再做onWillDismiss拦截。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| autoCancel12+ | boolean | 否 | 是 | 点击遮障层时，是否关闭弹窗，true表示关闭弹窗。false表示不关闭弹窗。 默认值：true **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| onWillDismiss12+ | Callback | 否 | 是 | 交互式关闭回调函数。 **说明：** 1.当用户执行点击遮罩层关闭、侧滑（左滑/右滑）、三键back、键盘ESC关闭交互操作时，如果注册该回调函数，则不会立刻关闭弹窗。在回调函数中可以通过reason得到阻拦关闭弹窗的操作类型，从而根据原因选择是否能关闭弹窗。当前组件返回的reason中，暂不支持CLOSE_BUTTON的枚举值。 2.在onWillDismiss回调中，不能再做onWillDismiss拦截。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| autoCancel12+ | boolean | 否 | 是 | 点击遮罩层时，是否关闭弹窗，true表示关闭弹窗。false表示不关闭弹窗。 默认值：true **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | maskColor12+ | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 自定义蒙层颜色。 默认值: 0x33000000 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | transition12+ | [TransitionEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-transition-animation-component#transitioneffect10对象说明) | 否 | 是 | 设置弹窗显示和退出的过渡效果。 **说明：** 1.如果不设置，则使用默认的显示/退出动效。 2.显示动效中按back键，打断显示动效，执行退出动效，动画效果为显示动效与退出动效的曲线叠加后的效果。 3.退出动效中按back键，不会打断退出动效，退出动效继续执行，继续按back键退出应用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | dialogTransition19+ | [TransitionEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-transition-animation-component#transitioneffect10对象说明) | 否 | 是 | 设置弹窗内容显示的过渡效果。默认无动效。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 |
@@ -554,9 +554,9 @@ type DialogOptionsShadow = ShadowOptions | ShadowStyle
 | backgroundBlurStyleOptions19+ | [BackgroundBlurStyleOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundblurstyleoptions10对象说明) | 否 | 是 | 背景模糊效果。默认值请参考BackgroundBlurStyleOptions类型说明。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 |
 | backgroundEffect19+ | [BackgroundEffectOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundeffectoptions11) | 否 | 是 | 背景效果参数。默认值请参考BackgroundEffectOptions类型说明。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 |
 | keyboardAvoidDistance15+ | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | 弹窗避让键盘后，和键盘之间距离。 **说明：** - 默认值：16vp - 默认单位：vp - 当且仅当keyboardAvoidMode属性设置为DEFAULT时生效。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
-| levelMode15+ | [LevelMode](#levelmode15枚举说明) | 否 | 是 | 设置弹窗显示层级。 **说明：** - 默认值：LevelMode.OVERLAY - 当且仅当showInSubWindow属性设置为false时生效。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
+| levelMode15+ | [LevelMode](#levelmode15) | 否 | 是 | 设置弹窗显示层级。 **说明：** - 默认值：LevelMode.OVERLAY - 当且仅当showInSubWindow属性设置为false时生效。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
 | levelUniqueId15+ | number | 否 | 是 | 设置页面级弹窗需要显示的层级下的节点UniqueID，UniqueID可以通过[getUniqueId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#getuniqueid12)获取。 取值范围：大于等于0的数字。 **说明：** - 当且仅当levelMode属性设置为LevelMode.EMBEDDED时生效。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
-| immersiveMode15+ | [ImmersiveMode](#immersivemode15枚举说明) | 否 | 是 | 设置页面内弹窗蒙层效果。 **说明：** - 默认值：ImmersiveMode.DEFAULT - 当且仅当levelMode属性设置为LevelMode.EMBEDDED时生效。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
+| immersiveMode15+ | [ImmersiveMode](#immersivemode15) | 否 | 是 | 设置页面内弹窗蒙层效果。 **说明：** - 默认值：ImmersiveMode.DEFAULT - 当且仅当levelMode属性设置为LevelMode.EMBEDDED时生效。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
 | levelOrder18+ | [LevelOrder](#levelorder18) | 否 | 是 | 设置弹窗显示的顺序。 **说明：** - 默认值：LevelOrder.clamp(0) - 不支持动态刷新顺序。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | focusable19+ | boolean | 否 | 是 | 设置弹窗是否获取焦点。值为true表示获取焦点，值为false表示不获取焦点。 默认值：true **说明：** 只有弹出覆盖在当前窗口之上的弹窗才可以获取焦点。 **元服务API：** 从API version 19开始，该接口支持在元服务中使用。 |
 | systemMaterial | [SystemUiMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemuimaterial) | 否 | 是 | 设置弹窗的系统材质。 **说明：** - 默认值：[ImmersiveOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#immersiveoptions)的style为ImmersiveStyle.ULTRA_THICK的[ImmersiveMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#immersivematerial)对象。设置undefined时与默认值保持一致。 - 不同的材质具有不同的效果，该接口影响背景色[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、背景模糊[backgroundBlurStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundblurstyle9)、背景效果[backgroundEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundeffect11)、边框颜色[borderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#bordercolor)、边框宽度[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)、阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)，不建议与上述接口一起使用。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
@@ -576,9 +576,9 @@ Dialog关闭的信息。
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | dismiss | Callback | 否 | 否 | Dialog关闭回调函数。开发者需要退出时调用，不需要退出时无需调用。 |
-| reason | [DismissReason](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-popup#dismissreason12枚举说明) | 否 | 否 | 触发Dialog关闭的操作类型（如点击遮障层、按返回键等）。开发者可根据reason判断用户的具体关闭操作，决定是否调用dismiss()关闭Dialog。 |
+| reason | [DismissReason](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-popup#dismissreason12枚举说明) | 否 | 否 | 触发Dialog关闭的操作类型（如点击遮罩层、按返回键等）。开发者可根据reason判断用户的具体关闭操作，决定是否调用dismiss()关闭Dialog。 |
 
-#### LevelMode15+枚举说明
+#### LevelMode15+
 
 弹窗显示层级模式。
 
@@ -593,7 +593,7 @@ Dialog关闭的信息。
 | OVERLAY | 0 | 弹窗层级为应用窗口根节点，应用内路由导航切换弹窗不隐藏。 |
 | EMBEDDED | 1 | 弹窗节点为页面内路由/导航下的节点，随路由导航切换，弹窗随页面隐藏。 **说明：** 1. 仅支持挂载在Page或[NavDestination](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navdestination)节点上，需在页面内顶层显示。 2. 新起页面可覆盖在弹窗上，页面返回后该弹窗仍存在，弹窗内容不丢失。 3. 需确保目标页面节点（如Page节点）已挂载上树后，再拉起弹窗，否则弹窗将无法挂载到对应的页面节点内。 |
 
-#### ImmersiveMode15+枚举说明
+#### ImmersiveMode15+
 
 页面内弹窗蒙层显示区域模式。
 
@@ -789,11 +789,11 @@ struct toastExample {
 ```
  API version 11及之前Toast样式。
 
-![](./img/zh-cn_image_0000002686087705.gif)
+![](./img/zh-cn_image_0000002749494228.gif)
 
 API version 12及之后Toast样式。
 
-![](./img/zh-cn_image_0000002685927877.gif)
+![](./img/zh-cn_image_0000002779093285.gif)
 
 #### promptAction.showDialog(deprecated)
 
@@ -854,10 +854,10 @@ promptAction.showDialog({
     console.info('showDialog success, click button: ' + data.index);
   })
   .catch((err: Error) => {
-    console.info('showDialog error: ' + err);
+    console.error('showDialog error: ' + err);
   })
 ```
- ![](./img/zh-cn_image_0000002656008198.gif)
+ ![](./img/zh-cn_image_0000002778933429.gif)
 
 #### promptAction.showDialog(deprecated)
 
@@ -912,7 +912,7 @@ try {
     ]
   }, (err, data) => {
     if (err) {
-      console.info('showDialog err: ' + err);
+      console.error('showDialog err: ' + err);
       return;
     }
     console.info('showDialog success callback, click button: ' + data.index);
@@ -923,7 +923,7 @@ try {
   console.error(`showDialog args error code is ${code}, message is ${message}`);
 };
 ```
- ![](./img/zh-cn_image_0000002655848278.gif)
+ ![](./img/zh-cn_image_0000002749334344.gif)
 
 当弹窗的showInSubWindow属性为true时，弹窗可显示在窗口外。
 
@@ -949,7 +949,7 @@ try {
     ]
   }, (err, data) => {
     if (err) {
-      console.info('showDialog err: ' + err);
+      console.error('showDialog err: ' + err);
       return;
     }
     console.info('showDialog success callback, click button: ' + data.index);
@@ -960,7 +960,7 @@ try {
   console.error(`showDialog args error code is ${code}, message is ${message}`);
 };
 ```
- ![](./img/zh-cn_image_0000002686087707.jpg)
+ ![](./img/zh-cn_image_0000002749494230.jpg)
 
 从API version 19开始，该示例通过调用[ShowDialogOptions](#showdialogoptions)中的onDidAppear、onDidDisappear、onWillAppear和onWillDisappear属性展示了弹窗生命周期的相关接口的使用方法。
 
@@ -1022,7 +1022,7 @@ struct DialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685927879.gif)
+ ![](./img/zh-cn_image_0000002779093287.gif)
 
 #### promptAction.showActionMenu(deprecated)
 
@@ -1076,7 +1076,7 @@ try {
     ]
   }, (err, data) => {
     if (err) {
-      console.info('showActionMenu err: ' + err);
+      console.error('showActionMenu err: ' + err);
       return;
     }
     console.info('showActionMenu success callback, click button: ' + data.index);
@@ -1087,7 +1087,7 @@ try {
   console.error(`showActionMenu args error code is ${code}, message is ${message}`);
 };
 ```
- ![](./img/zh-cn_image_0000002656008200.gif)
+ ![](./img/zh-cn_image_0000002778933431.gif)
 
 示例：2
 
@@ -1153,7 +1153,7 @@ struct Index {
               console.info('showActionMenu success, click button: ' + data.index);
             })
             .catch((err: Error) => {
-              console.info('showActionMenu error: ' + err);
+              console.error('showActionMenu error: ' + err);
             })
         })
     }
@@ -1161,7 +1161,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655848280.gif)
+ ![](./img/zh-cn_image_0000002749334346.gif)
 
 #### promptAction.showActionMenu(deprecated)
 
@@ -1221,10 +1221,10 @@ promptAction.showActionMenu({
     console.info('showActionMenu success, click button: ' + data.index);
   })
   .catch((err: Error) => {
-    console.info('showActionMenu error: ' + err);
+    console.error('showActionMenu error: ' + err);
   })
 ```
- ![](./img/zh-cn_image_0000002686087709.gif)
+ ![](./img/zh-cn_image_0000002749494232.gif)
 
 #### promptAction.openCustomDialog(deprecated)
 
@@ -1416,7 +1416,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685927881.gif)
+ ![](./img/zh-cn_image_0000002779093289.gif)
 
 该示例实现了一个页面内的弹窗。
 
@@ -1503,7 +1503,7 @@ struct Next {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008202.gif)
+ ![](./img/zh-cn_image_0000002778933433.gif)
 
 #### promptAction.closeCustomDialog(deprecated)
 

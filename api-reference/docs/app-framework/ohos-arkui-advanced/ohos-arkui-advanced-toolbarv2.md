@@ -2,8 +2,8 @@
 title: "ToolBarV2"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-toolbarv2"
 catalog: "harmonyos-references"
-content_hash: "e6994e61a1b2"
-synced_at: "2026-08-29T18:15:19.357009"
+content_hash: "0755cb88d9fe"
+synced_at: "2026-09-30T19:53:11.259877"
 ---
 
 # ToolBarV2
@@ -31,7 +31,7 @@ import { ToolBarV2 } from '@kit.ArkUI';
 
 #### ToolBarV2
 
-ToolBarV2({toolBarList: ToolBarV2Item[], activatedIndex?: number, dividerModifier: DividerModifier, toolBarModifier: ToolBarV2Modifier})
+ToolBarV2({toolBarList: ToolBarV2Item[], activatedIndex?: number, dividerModifier?: DividerModifier, toolBarModifier?: ToolBarV2Modifier})
 
 工具栏。
 
@@ -545,7 +545,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519379.png)
+ ![](./img/zh-cn_image_0000002779094197.png)
 
 #### [h2]示例2（设置工具栏自定义样式）
 
@@ -676,7 +676,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701640180.png)
+ ![](./img/zh-cn_image_0000002778934341.png)
 
 #### [h2]示例3（设置工具栏自定义播报）
 
@@ -801,4 +801,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519379.png)
+ ![](./img/zh-cn_image_0000002779094197.png)

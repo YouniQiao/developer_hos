@@ -2,14 +2,14 @@
 title: "Camera_DeviceQueryInfo"
 upstream_id: "harmonyos-references/capi-oh-camera-camera-devicequeryinfo"
 catalog: "harmonyos-references"
-content_hash: "c9779a3a72bd"
-synced_at: "2026-07-09T01:00:25.709062"
+content_hash: "323db1e1573d"
+synced_at: "2026-09-30T19:55:02.000795"
 ---
 
 # Camera_DeviceQueryInfo
 
 ```
-typedef struct {...} Camera_DeviceQueryInfo
+typedef struct Camera_DeviceQueryInfo {...} Camera_DeviceQueryInfo
 ```
 
 #### 概述

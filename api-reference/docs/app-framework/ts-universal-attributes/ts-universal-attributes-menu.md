@@ -2,8 +2,8 @@
 title: "菜单控制"
 upstream_id: "harmonyos-references/ts-universal-attributes-menu"
 catalog: "harmonyos-references"
-content_hash: "37b8ec80e382"
-synced_at: "2026-09-14T19:45:32.575017"
+content_hash: "649d473ec728"
+synced_at: "2026-09-30T19:52:44.780584"
 ---
 
 # 菜单控制
@@ -311,7 +311,7 @@ bindContextMenuByIsShow(isShow: boolean, content: CustomBuilder | Array<MenuElem
 | offset | [Position](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#position) | 否 | 是 | 菜单弹出位置的偏移量，不会导致菜单显示超出屏幕范围。 默认值：{ x: 0, y: 0 }，单位：vp，不支持设置百分比。 **说明：** 菜单类型为相对父组件区域弹出时，自动根据菜单位置属性 (placement)将区域的宽或高计入偏移量中。 offset最终取值与placement设置值的关系参见表1：同时设置offset与placement时菜单的偏移位置。 未设置、异常值或者undefined时按默认{ x: 0, y: 0 }处理。若传入偏移量超出屏幕范围外，则会就近约束到屏幕范围内。 如果菜单调整了显示位置（与placement初始值主方向不一致），则偏移值 (offset) 失效。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | placement | [Placement](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#placement8) | 否 | 是 | 菜单组件优先显示的位置，当前位置显示不下时，会自动调整位置。 **说明：** 1. 作为[bindMenu](#bindmenu11)入参时，默认值为Placement.BottomLeft。 2. 作为[bindContextMenu8+](#bindcontextmenu8)或[bindContextMenuWithResponse23+](#bindcontextmenuwithresponse23)入参时，默认效果为菜单跟随点击位置弹出。 3. 作为[bindContextMenu12+](#bindcontextmenu12)入参时，默认值为Placement.BottomLeft。 4. placement值设置为undefined、null或缺省时，按默认值处理。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | enableArrow | boolean | 否 | 是 | 是否显示箭头。如果菜单的大小和位置不足以放置箭头时，不会显示箭头。 默认值：false，不显示箭头。 **说明：** enableArrow为true时，placement未设置或者值为非法值，默认在目标物上方显示（此时菜单默认位置与接口的关系参见表3：enableArrow为true且placement未设置或者值为非法值的菜单默认位置），否则按照placement的位置优先显示。当前位置显示不下时，会自动调整位置，enableArrow为undefined时，不显示箭头。当preview参数设置为MenuPreviewMode.IMAGE或CustomBuilder时，enableArrow为true时也不显示箭头。bindContextMenu从API version 10开始支持该属性；bindMenu从API version 12开始支持该属性。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| enableHoverMode18+ | boolean | 否 | 是 | 菜单组件是否响应悬停态（半折叠状态）变化，即在悬停态下是否触发避让折痕区域。 默认值：false，PC/2in1设备默认为true。未设置或者值为非法值时，生效默认值。 **说明：** 1. 如果菜单的弹出位置在悬停态折痕区域，菜单组件不会响应悬停态。 2. PC/2in1设备从API version 20开始生效。 3. PC/2in1设备仅在窗口瀑布模式下生效。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| enableHoverMode18+ | boolean | 否 | 是 | 菜单组件是否响应悬停态（半折叠状态）变化，即在悬停态下是否触发避让折痕区域。 true：响应悬停态变化；false：不响应悬停态变化。 默认值：false，PC/2in1设备默认为true。未设置或者值为非法值时，生效默认值。 **说明：** 1. 如果菜单的弹出位置在悬停态折痕区域，菜单组件不会响应悬停态。 2. PC/2in1设备从API version 20开始生效。 3. PC/2in1设备仅在窗口瀑布模式下生效。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | arrowOffset | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 箭头在菜单处的偏移。偏移量必须合法且转换为具体数值时大于0才会生效，另外该值生效时不会导致箭头超出菜单四周的安全距离。 默认值：0 单位：vp **说明：** 箭头距菜单四周的安全距离为菜单圆角大小与箭头宽度的一半之和。 根据配置的placement来计算是在水平还是垂直方向上偏移。 箭头在菜单水平方向时，偏移量为箭头至最左侧箭头安全距离处的距离。箭头在菜单垂直方向时，偏移量为箭头至最上侧箭头安全距离处的距离。 根据配置的placement的不同，箭头展示的默认位置不同： 在菜单不发生避让的情况下，箭头最终位置与placement设置值的关系参见表2：同时设置arrowOffset与placement时菜单箭头的默认位置。 bindContextMenu从API version 10开始支持该属性；bindMenu从API version 12开始支持该属性。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | preview11+ | [MenuPreviewMode](#menupreviewmode11) | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 否 | 是 | 长按悬浮菜单或使用[bindContextMenu12+](#bindcontextmenu12)显示菜单的预览内容样式，可以为目标组件的截图，也可以为用户自定义的内容。 默认值：MenuPreviewMode.NONE，无预览内容。 **说明：** - 不支持responseType为ResponseType.RightClick时触发，如果responseType为ResponseType.RightClick，则不会显示预览内容。 - 当未设置preview参数或preview参数设置为MenuPreviewMode.NONE时，enableArrow参数生效。 - 当preview参数设置为MenuPreviewMode.IMAGE或CustomBuilder时，enableArrow为true时也不显示箭头。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | previewAnimationOptions11+ | [ContextMenuAnimationOptions](#contextmenuanimationoptions11) | 否 | 是 | 控制长按预览的显示效果。 默认值：{ scale: [0.95, 1.1], transition: undefined, hoverScale: undefined }。 **说明：** 倍率设置参数小于等于0时，不生效。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
@@ -329,7 +329,7 @@ bindContextMenuByIsShow(isShow: boolean, content: CustomBuilder | Array<MenuElem
 | borderRadius12+ | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | [BorderRadiuses](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#borderradiuses9) | [LocalizedBorderRadiuses](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#localizedborderradiuses12) | 否 | 是 | 设置菜单的边框圆角半径。 默认值：PC/2in1设备上默认值8vp，其他设备上默认值20vp。 **说明：** 支持百分比。 当水平方向两个圆角半径之和的最大值超出菜单宽度或垂直方向两个圆角半径之和的最大值超出菜单高度时，采用菜单默认圆角半径值。 当设置Length类型且传参为异常值时，菜单圆角取默认值。 当设置BorderRadiuses或LocalizedBorderRadiuses类型且传参为异常值时，菜单默认没有圆角。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | backgroundBlurStyleOptions18+ | [BackgroundBlurStyleOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundblurstyleoptions10对象说明) | 否 | 是 | 背景模糊效果。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | backgroundEffect18+ | [BackgroundEffectOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundeffectoptions11) | 否 | 是 | 背景效果参数。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| hapticFeedbackMode18+ | [HapticFeedbackMode](#hapticfeedbackmode18) | 否 | 是 | 菜单弹出时振动效果。 默认值：HapticFeedbackMode.DISABLED，菜单弹出时不振动。 **说明：** 只有一级菜单可配置弹出时振动效果。 仅当用户启用系统触感反馈且在工程的[module.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中配置requestPermissions字段开启ohos.permission.VIBRATE振动权限时，方可生效。配置如下： ![](./img/zh-cn_image_0000002753456523.png) **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| hapticFeedbackMode18+ | [HapticFeedbackMode](#hapticfeedbackmode18) | 否 | 是 | 菜单弹出时振动效果。 默认值：HapticFeedbackMode.DISABLED，菜单弹出时不振动。 **说明：** 只有一级菜单可配置弹出时振动效果。 仅当用户启用系统触感反馈且在工程的[module.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中配置requestPermissions字段开启ohos.permission.VIBRATE振动权限时，方可生效。配置如下： ![](./img/zh-cn_image_0000002778933569.png) **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | outlineWidth20+ | [Dimension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#dimension10) | [EdgeOutlineWidths](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#edgeoutlinewidths11对象说明) | 否 | 是 | 设置菜单边框外描边宽度。 默认值：0vp **说明：** 不支持百分比，若需要外描边效果，outlineWidth为必填项。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | outlineColor20+ | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | [EdgeColors](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#edgecolors9) | 否 | 是 | 设置菜单边框外描边颜色。 **说明：** 默认值：'#19ffffff' **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | mask20+ | boolean | [MenuMaskType](#menumasktype20类型说明) | 否 | 是 | 设置菜单是否有蒙层及蒙层样式。 true：有蒙层；false：没有蒙层；MenuMaskType：自定义蒙层的样式。 默认值：菜单有预览图时默认显示蒙层，否则不显示。 **说明：** 当设备配置$r('sys.string.ohos_id_menu_has_filter')为true时，该接口生效；配置为false时，该接口不生效。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
@@ -601,7 +601,7 @@ struct MenuExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723856758.gif)
+ ![](./img/zh-cn_image_0000002749334484.gif)
 
 #### [h2]示例2（弹出自定义菜单）
 
@@ -651,7 +651,7 @@ struct MenuExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723696840.gif)
+ ![](./img/zh-cn_image_0000002749494370.gif)
 
 #### [h2]示例3（长按弹出菜单）
 
@@ -687,7 +687,7 @@ struct ContextMenuExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753296607.gif)
+ ![](./img/zh-cn_image_0000002779093427.gif)
 
 #### [h2]示例4（右键弹出指向型菜单）
 
@@ -729,7 +729,7 @@ struct DirectiveMenuExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753456525.png)
+ ![](./img/zh-cn_image_0000002778933571.png)
 
 #### [h2]示例5（长按弹出菜单的截图预览样式）
 
@@ -772,7 +772,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723856760.png)
+ ![](./img/zh-cn_image_0000002749334486.png)
 
 #### [h2]示例6（长按弹出菜单的自定义预览样式）
 
@@ -823,7 +823,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723696842.png)
+ ![](./img/zh-cn_image_0000002749494372.png)
 
 #### [h2]示例7（设置状态变量弹出菜单）
 
@@ -882,7 +882,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723696842.png)
+ ![](./img/zh-cn_image_0000002749494372.png)
 
 #### [h2]示例8（设置菜单和预览的动效）
 
@@ -941,7 +941,7 @@ struct MenuExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753296609.gif)
+ ![](./img/zh-cn_image_0000002779093429.gif)
 
 #### [h2]示例9（设置symbol类型图标）
 
@@ -979,7 +979,7 @@ struct MenuExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753456527.png)
+ ![](./img/zh-cn_image_0000002778933573.png)
 
 #### [h2]示例10（设置一镜到底动效）
 
@@ -1031,7 +1031,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723856762.gif)
+ ![](./img/zh-cn_image_0000002749334488.gif)
 
 #### [h2]示例11（自定义背景模糊效果参数）
 
@@ -1081,7 +1081,7 @@ struct MenuExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723696844.png)
+ ![](./img/zh-cn_image_0000002749494374.png)
 
 #### [h2]示例12（自定义背景效果参数）
 
@@ -1132,7 +1132,7 @@ struct MenuExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753296611.png)
+ ![](./img/zh-cn_image_0000002779093431.png)
 
 #### [h2]示例13（设置一镜到底动效支持抬手打断）
 
@@ -1190,7 +1190,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753456529.gif)
+ ![](./img/zh-cn_image_0000002778933575.gif)
 
 #### [h2]示例14（设置预览图边框圆角半径）
 
@@ -1236,7 +1236,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723856764.jpg)
+ ![](./img/zh-cn_image_0000002749334490.jpg)
 
 #### [h2]示例15（bindMenu配置生命周期回调）
 
@@ -1311,7 +1311,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723696846.gif)
+ ![](./img/zh-cn_image_0000002749494376.gif)
 
 #### [h2]示例16（设置菜单蒙层）
 
@@ -1358,7 +1358,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753296613.jpg)
+ ![](./img/zh-cn_image_0000002779093433.jpg)
 
 #### [h2]示例17（bindMenu设置下拉菜单外描边样式）
 
@@ -1403,7 +1403,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753456531.png)
+ ![](./img/zh-cn_image_0000002778933577.png)
 
 #### [h2]示例18（bindMenu传入带参数的CustomBuilder）
 
@@ -1450,7 +1450,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723856766.gif)
+ ![](./img/zh-cn_image_0000002749334492.gif)
 
 #### [h2]示例19（根据触发方式弹出不同内容的菜单）
 
@@ -1500,7 +1500,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723696848.gif)
+ ![](./img/zh-cn_image_0000002749494378.gif)
 
 #### [h2]示例20（设置菜单避让软键盘）
 
@@ -1565,7 +1565,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753296615.gif)
+ ![](./img/zh-cn_image_0000002779093435.gif)
 
 #### [h2]示例21（设置菜单相对于绑定组件左上角的弹出位置）
 
@@ -1637,7 +1637,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753456533.gif)
+ ![](./img/zh-cn_image_0000002778933579.gif)
 
 #### [h2]示例22（设置菜单的最大高度）
 
@@ -1692,7 +1692,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723856768.png)
+ ![](./img/zh-cn_image_0000002749334494.png)
 
 #### [h2]示例23（设置菜单与目标组件间距）
 
@@ -1740,7 +1740,7 @@ struct Alone {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723696850.png)
+ ![](./img/zh-cn_image_0000002749494380.png)
 
 #### [h2]示例24（设置菜单的沉浸光感）
 
@@ -1783,11 +1783,11 @@ struct Index {
 ```
  未设置系统材质时：
 
-![](./img/zh-cn_image_0000002753296617.gif)
+![](./img/zh-cn_image_0000002779093437.gif)
 
 设置系统材质后：
 
-![](./img/zh-cn_image_0000002753456535.gif)
+![](./img/zh-cn_image_0000002778933581.gif)
 
 #### [h2]示例25（使用gridStyle设置栅格菜单）
 
@@ -1839,4 +1839,4 @@ struct ContextMenuGridStyleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723856770.png)
+ ![](./img/zh-cn_image_0000002749334496.png)

@@ -2,14 +2,14 @@
 title: "OH_AVMetadataExtractor_FrameInfo"
 upstream_id: "harmonyos-references/capi-avmetadataextractor-oh-avmetadataextractor-frameinfo"
 catalog: "harmonyos-references"
-content_hash: "9af70e398e1d"
-synced_at: "2026-07-09T01:00:45.401593"
+content_hash: "4bc2ab886548"
+synced_at: "2026-09-30T19:55:16.020833"
 ---
 
 # OH_AVMetadataExtractor_FrameInfo
 
 ```
-typedef struct {...} OH_AVMetadataExtractor_FrameInfo
+typedef struct OH_AVMetadataExtractor_FrameInfo {...} OH_AVMetadataExtractor_FrameInfo
 ```
 
 #### 概述

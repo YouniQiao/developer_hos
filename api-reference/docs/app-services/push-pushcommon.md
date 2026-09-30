@@ -2,8 +2,8 @@
 title: "pushCommon（推送服务公共信息）"
 upstream_id: "harmonyos-references/push-pushcommon"
 catalog: "harmonyos-references"
-content_hash: "3790ec03cf20"
-synced_at: "2026-08-07T15:59:43.714763"
+content_hash: "66b4f78c72a4"
+synced_at: "2026-09-30T19:55:54.267316"
 ---
 
 # pushCommon（推送服务公共信息）
@@ -188,5 +188,5 @@ PushPayload是推送服务向应用传递数据的核心接口，开发者可以
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | callId | string | 否 | 否 | 当次呼叫的唯一标识。 |
-| type | string | 否 | 否 | 继承自[PushPayload](#pushpayload)，表示传递给[VoIPExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-voip-ability)的消息类型。 |
-| data | string | 否 | 否 | 继承自[PushPayload](#pushpayload)，表示传递给[VoIPExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-voip-ability)的数据。 |
+| type | string | 否 | 否 | 继承自[PushPayload](#pushpayload)。 |
+| data | string | 否 | 否 | 继承自[PushPayload](#pushpayload)。 |

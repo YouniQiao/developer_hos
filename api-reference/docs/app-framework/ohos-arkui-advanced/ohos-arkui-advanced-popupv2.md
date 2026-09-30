@@ -2,8 +2,8 @@
 title: "PopupV2"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-popupv2"
 catalog: "harmonyos-references"
-content_hash: "68417906ff56"
-synced_at: "2026-07-28T16:48:22.172797"
+content_hash: "a8c60007a9bf"
+synced_at: "2026-09-30T19:53:09.359986"
 ---
 
 # PopupV2
@@ -92,8 +92,7 @@ PopupV2Button定义按钮的相关属性和事件。
 
 ```
 // xxx.ets
-import { PopupV2, PopupV2Button } from '@kit.ArkUI';
-import { ImageModifier, TextModifier } from '@kit.ArkUI';
+import { PopupV2, PopupV2Button, ImageModifier, TextModifier } from '@kit.ArkUI';
 
 @Entry
 @ComponentV2
@@ -137,7 +136,7 @@ struct PopupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002685928619.png)
+ ![](./img/zh-cn_image_0000002778934317.png)
 
 #### [h2]示例2（设置布局方向）
 
@@ -147,8 +146,7 @@ struct PopupExample {
 
 ```
 // xxx.ets
-import { PopupV2, PopupV2Button } from '@kit.ArkUI';
-import { ImageModifier, TextModifier } from '@kit.ArkUI';
+import { PopupV2, PopupV2Button, ImageModifier, TextModifier } from '@kit.ArkUI';
 
 @Entry
 @ComponentV2
@@ -192,7 +190,7 @@ struct PopupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656008940.png)
+ ![](./img/zh-cn_image_0000002749335234.png)
 
 #### [h2]示例3（设置自定义宽度）
 
@@ -202,8 +200,7 @@ struct PopupExample {
 
 ```
 // xxx.ets
-import { PopupV2, PopupV2Button } from '@kit.ArkUI';
-import { ImageModifier, TextModifier } from '@kit.ArkUI';
+import { PopupV2, PopupV2Button, ImageModifier, TextModifier } from '@kit.ArkUI';
 
 @Entry
 @ComponentV2
@@ -248,4 +245,4 @@ struct PopupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002655849020.png)
+ ![](./img/zh-cn_image_0000002749495118.png)

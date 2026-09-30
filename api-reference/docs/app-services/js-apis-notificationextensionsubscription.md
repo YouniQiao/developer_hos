@@ -2,13 +2,13 @@
 title: "@ohos.notificationExtensionSubscription (notificationExtensionSubscription模块)"
 upstream_id: "harmonyos-references/js-apis-notificationextensionsubscription"
 catalog: "harmonyos-references"
-content_hash: "0e7fd5b3f23c"
-synced_at: "2026-07-28T16:52:46.754442"
+content_hash: "f1a1fbe43b71"
+synced_at: "2026-09-30T19:55:47.057483"
 ---
 
 # @ohos.notificationExtensionSubscription (notificationExtensionSubscription模块)
 
-本模块提供管理通知扩展的能力，具体包括：打开通知扩展订阅设置界面、订阅和取消订阅通知扩展、获取和设置通知授权状态。
+本模块提供管理通知扩展的能力，具体包括：打开通知扩展订阅设置界面、订阅和取消订阅通知扩展、获取和设置[通知授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-glossary#notification-authorization通知授权)状态。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 22开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -33,7 +33,7 @@ openSubscriptionSettings(context: UIAbilityContext): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| context | [UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext) | 是 | 通知设置页面绑定Ability的上下文。 |
+| context | [UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext) | 是 | [通知设置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-glossary#notification-setting通知设置)页面绑定Ability的上下文。 |
 
 返回值：
 
@@ -63,7 +63,7 @@ try {
   notificationExtensionSubscription.openSubscriptionSettings(context).then(() => {
     console.info(`openSubscriptionSettings success`);
   }).catch((e: Error) => {
-    let error = e as BusinessError
+    let error = e as BusinessError;
     console.error(`failed to call openSubscriptionSettings, code is ${error.code}, message is ${error.message}`)
   });
 } catch (error) {
@@ -75,7 +75,7 @@ try {
 
 openSubscriptionSettingsWithResult(context: UIAbilityContext): Promise<UserGrantSetting>
 
-打开应用的通知扩展订阅授权页面，以半模态弹窗形式显示。用户可在该页面授权“允许获取本机通知”开关与“已获取的本机通知”应用开关。使用Promise异步回调，当半模态窗口关闭时返回用户设置的授权的结果。
+打开应用的通知扩展订阅授权页面，以半模态弹窗形式显示。用户可在该页面授权“允许获取本机通知”开关与“已获取的本机通知”应用开关。使用Promise异步回调，当半模态窗口关闭时返回用户设置的授权结果。
 
 起始版本：26.0.0
 
@@ -89,13 +89,13 @@ openSubscriptionSettingsWithResult(context: UIAbilityContext): Promise<UserGrant
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| context | [UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext) | 是 | 通知设置页面绑定Ability的上下文。 |
+| context | [UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext) | 是 | [通知设置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-glossary#notification-setting通知设置)页面绑定Ability的上下文。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，返回用户设置的授权的结果。 |
+| Promise | Promise对象，返回用户设置的授权结果。 |
 
 错误码：
 
@@ -119,7 +119,7 @@ try {
   notificationExtensionSubscription.openSubscriptionSettingsWithResult(context).then((data) => {
     console.info(`openSubscriptionSettingsWithResult success, data: ${JSON.stringify(data)}`);
   }).catch((e: Error) => {
-    let error = e as BusinessError
+    let error = e as BusinessError;
     console.error(`failed to call openSubscriptionSettingsWithResult, code is ${error.code}, message is ${error.message}`)
   });
 } catch (error) {
@@ -340,7 +340,7 @@ type NotificationExtensionSubscriptionInfo = _NotificationExtensionSubscriptionI
 
 type NotificationInfo = _NotificationInfo
 
-通知订阅扩展能力中[onReceiveMessage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationsubscriberextensionability#onreceivemessage)回调的通知信息。
+[通知订阅](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-glossary#notification-subscription通知订阅)扩展能力中[onReceiveMessage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationsubscriberextensionability#onreceivemessage)回调的通知信息。
 
 系统能力：SystemCapability.Notification.Notification
 

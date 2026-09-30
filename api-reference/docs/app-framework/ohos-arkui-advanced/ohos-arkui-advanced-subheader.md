@@ -2,8 +2,8 @@
 title: "SubHeader"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-subheader"
 catalog: "harmonyos-references"
-content_hash: "c4491fef4c64"
-synced_at: "2026-08-29T18:15:16.085741"
+content_hash: "02d65accb08c"
+synced_at: "2026-09-30T19:53:10.765852"
 ---
 
 # SubHeader
@@ -30,7 +30,7 @@ import { SubHeader } from '@kit.ArkUI';
 
 #### SubHeader
 
-SubHeader({icon?: ResourceStr, iconSymbolOptions?: SymbolOptions, primaryTitle?: ResourceStr, secondaryTitle?: ResourceStr, select?: SelectOptions, operationType?: OperationType, operationItem?: Array<OperationOption>, operationSymbolOptions?: Array<SymbolOptions>, primaryTitleModifier?: TextModifier, secondaryTitleModifier?: TextModifier, titleBuilder?: () => void, contentMargin?: LocalizedMargin, contentPadding?: LocalizedPadding, titleId?: string })
+SubHeader({icon?: ResourceStr, iconSymbolOptions?: SymbolOptions, primaryTitle?: ResourceStr, secondaryTitle?: ResourceStr, select?: SelectOptions, operationType?: OperationType, operationItem?: Array<OperationOption>, operationSymbolOptions?: Array<SymbolOptions>, primaryTitleModifier?: TextModifier, secondaryTitleModifier?: TextModifier, titleBuilder?: () => void, contentMargin?: LocalizedMargin, contentPadding?: LocalizedPadding, titleAccessibilityText?: ResourceStr, titleId?: string })
 
 装饰器类型：@Component
 
@@ -153,7 +153,7 @@ struct SubHeaderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701640172.png)
+ ![](./img/zh-cn_image_0000002778934333.png)
 
 #### [h2]示例2（双行文本内容型子标题）
 
@@ -182,7 +182,7 @@ struct SubHeaderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359391.png)
+ ![](./img/zh-cn_image_0000002749335250.png)
 
 #### [h2]示例3（spinner型内容型子标题）
 
@@ -229,7 +229,7 @@ struct SubHeaderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701800086.png)
+ ![](./img/zh-cn_image_0000002749495134.png)
 
 #### [h2]示例4（设置左侧symbol图标）
 
@@ -262,7 +262,7 @@ struct SubHeaderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519373.gif)
+ ![](./img/zh-cn_image_0000002779094191.gif)
 
 #### [h2]示例5（设置右侧symbol图标）
 
@@ -319,7 +319,7 @@ struct SubHeaderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701640174.png)
+ ![](./img/zh-cn_image_0000002778934335.png)
 
 #### [h2]示例6（自定义标题内容）
 
@@ -362,7 +362,7 @@ struct SubHeaderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731359393.png)
+ ![](./img/zh-cn_image_0000002749335252.png)
 
 #### [h2]示例7（自定义标题样式）
 
@@ -400,7 +400,7 @@ struct SubHeaderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701800088.png)
+ ![](./img/zh-cn_image_0000002749495136.png)
 
 #### [h2]示例8（右侧按钮自定义播报）
 
@@ -471,7 +471,7 @@ struct SubHeaderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002731519375.png)
+ ![](./img/zh-cn_image_0000002779094193.png)
 
 #### [h2]示例9（右侧按钮设置默认获焦）
 
@@ -504,4 +504,4 @@ struct SubHeaderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002701640176.png)
+ ![](./img/zh-cn_image_0000002778934337.png)

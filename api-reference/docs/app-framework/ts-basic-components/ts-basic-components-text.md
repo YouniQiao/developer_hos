@@ -2,8 +2,8 @@
 title: "Text"
 upstream_id: "harmonyos-references/ts-basic-components-text"
 catalog: "harmonyos-references"
-content_hash: "713780759161"
-synced_at: "2026-09-14T19:45:45.585374"
+content_hash: "1c34ff37b77e"
+synced_at: "2026-09-30T19:52:52.807247"
 ---
 
 # Text
@@ -25,7 +25,7 @@ Text组件用于显示文本内容，支持设置字体样式、文本对齐、�
 
 #### 接口
 
-Text(content?: string | Resource , value?: TextOptions)
+Text(content?: string | Resource, value?: TextOptions)
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -246,7 +246,7 @@ contentTransition(transition: Optional<ContentTransition>)
 
 copyOption(value: CopyOptions)
 
-设置组件是否支持文本可复制粘贴。未通过该接口设置时，默认值为CopyOptions.None，不支持文本可复制粘贴。
+设置组件是否支持文本复制粘贴。未通过该接口设置时，默认值为CopyOptions.None，不支持文本复制粘贴。
 
 多个属性的功能依赖copyOption的设置，包括[selection](#selection11)、[setTextSelection](#settextselection23)、[draggable](#draggable9)、[enableSelectedDataDetector](#enableselecteddatadetector22)、[textSelectable](#textselectable12)等，具体依赖条件请参考各属性说明。
 
@@ -261,7 +261,7 @@ copyOption(value: CopyOptions)
 - 默认情况下，长按选中文本可拖拽。若要取消此功能，可将 draggable 设置为 false。
 - 若需要支持Ctrl+C复制，需同时设置[textSelectable](#textselectable12)为TextSelectableMode.SELECTABLE_FOCUSABLE。
 
-此时Text会监听onClick事件，手势事件为非冒泡事件，若需要点击Text组件区域响应父组件的点击手势事件，建议在父组件上使用[parallelGesture](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-settings#parallelgesture)绑定手势识别，也可参考[示例7（设置文本识别）](#示例7设置文本识别)。
+此时Text会监听onClick事件，手势事件为非冒泡事件，若需要单击Text组件区域响应父组件的单击手势事件，建议在父组件上使用[parallelGesture](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-settings#parallelgesture)绑定手势识别，也可参考[示例7（设置文本识别）](#示例7设置文本识别)。
 
 由于卡片没有长按事件，此场景下长按文本，不会弹出文本选择菜单。
 
@@ -337,7 +337,7 @@ draggable(value: boolean)
 
 不能和[onDragStart](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondragstart)事件同时使用。
 
-当draggable设置为true时，需配合[CopyOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#copyoptions9)使用，设置copyOptions为CopyOptions.InApp或者CopyOptions.LocalDevice，支持对选中文本的拖拽及复制到输入框。
+当draggable设置为true时，需配合[CopyOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#copyoptions9)使用，设置copyOption为CopyOptions.InApp或者CopyOptions.LocalDevice，支持对选中文本的拖拽及复制到输入框。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -353,7 +353,7 @@ draggable(value: boolean)
 
 editMenuOptions(editMenu: EditMenuOptions)
 
-设置自定义菜单扩展项，允许用户设置扩展项的文本内容、图标、回调方法。
+设置自定义菜单扩展项，允许开发者设置扩展项的文本内容、图标、回调方法。
 
 调用[disableMenuItems](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-textmenucontroller#disablemenuitems20)或[disableSystemServiceMenuItems](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-textmenucontroller#disablesystemservicemenuitems20)接口屏蔽文本选择菜单内的系统服务菜单项时，editMenuOptions接口内回调方法[onCreateMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#oncreatemenu12)的入参列表中不包含被屏蔽的菜单选项。
 
@@ -417,7 +417,7 @@ enableAutoSpacing(enabled: Optional<boolean>)
 
 enableDataDetector(enable: boolean)
 
-设置是否进行文本特殊实体识别，可自动识别文本中的电话号码、网址、邮箱、地址、日期等实体信息，适用于聊天消息、评论内容、文章正文等需要智能识别和交互的场景。未通过该接口设置时，默认不进行文本特殊实体识别。当enableDataDetector设置为true时，识别特殊实体。
+设置是否进行文本实体识别，可自动识别文本中的电话号码、网址、邮箱、地址、日期等实体信息，适用于聊天消息、评论内容、文章正文等需要智能识别和交互的场景。未通过该接口设置时，默认不进行文本实体识别。当enableDataDetector设置为true时，识别特殊实体。
 
 所识别实体的样式如下，即字体颜色改为蓝色、并添加蓝色下划线。
 
@@ -452,7 +452,7 @@ decoration:{
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| enable | boolean | 是 | 是否可进行文本特殊实体识别。 true表示可识别，false表示不可识别。 |
+| enable | boolean | 是 | 是否可进行文本实体识别。 true表示可识别，false表示不可识别。 |
 
 #### [h2]enableHapticFeedback13+
 
@@ -487,7 +487,7 @@ enableHapticFeedback(isEnabled: boolean)
 
 enableSelectedDataDetector(enable: boolean | undefined)
 
-设置是否对选中文本进行实体识别。该接口依赖设备底层应具有文本识别能力，否则设置不会生效。未通过该接口设置时，默认对选中文本进行实体识别。
+设置是否对选中文本进行实体识别。该接口需要设备底层具有文本识别能力，否则设置不会生效。未通过该接口设置时，默认对选中文本进行实体识别。
 
 启用后可识别选区中的邮件、电话、网址、日期、地址等，并在文本选择菜单中展示对应的AI菜单项。默认启用AI菜单功能。
 
@@ -495,7 +495,7 @@ AI菜单功能启用时，在组件中选中文本后，文本选择菜单能够
 
 AI菜单生效时，选中范围内需包括且仅包括一个完整的AI实体，才能展示对应的选项。该菜单项与[TextMenuItemId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#textmenuitemid12)中的askAI菜单项不同时出现。
 
-需要[CopyOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#copyoptions9)为CopyOptions.LocalDevice或CopyOptions.CROSS_DEVICE时，本功能生效。
+当[CopyOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#copyoptions9)设置为CopyOptions.LocalDevice或CopyOptions.CROSS_DEVICE时，本功能生效。
 
 在[SelectionContainer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-selectioncontainer)跨节点选中场景中该属性无效，在文本选择菜单中不会展示对应的AI菜单项。
 
@@ -509,7 +509,7 @@ AI菜单生效时，选中范围内需包括且仅包括一个完整的AI实体�
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| enable | boolean | undefined | 是 | 是否对选中文本进行实体识别。 true：开启识别，false：关闭识别。默认值为：true。 取值为undefined时，按默认值处理。 |
+| enable | boolean | undefined | 是 | 是否对选中文本进行实体识别。 true：开启识别，false：关闭识别。默认值：true。 取值为undefined时，按默认值处理。 |
 
 #### [h2]font10+
 
@@ -614,9 +614,9 @@ fontFeature(value: string)
 
 当多个Text组件在[Row](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-row)容器内布局且没有设置具体的布局分配信息时，Text会以Row的最大尺寸进行布局。如果需要子组件主轴累加的尺寸不超过Row容器主轴的尺寸，可以设置[layoutWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#layoutweight)或者是以[Flex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-flex-layout)布局来约束子组件的主轴尺寸。
 
-系统默认字体支持的liga连字：Th fb ff fb ffb ffh ffi ffk ffl fh fi fk fl rf rt rv rx ry。常导致Span、属性字符串的效果不符合预期，关闭liga连字特性可以规避。
+系统默认字体支持的liga连字：Th fb ff fb ffb ffh ffi ffk ffl fh fi fk fl rf rt rv rx ry。该连字特性常导致Span、属性字符串的效果不符合预期，关闭liga连字特性可以规避此问题。
 
-文字特性效果与使用的字体文件密切相关。例如，8标点挤压功能需要字体文件中字符支持"ss08"特性，否则无法压缩，在当前系统默认字体中右侧标点符号及感叹号、顿号、问号均不生效。
+文字特性效果与使用的字体文件密切相关。例如，标点挤压功能（对应"ss08"特性）需要字体文件中字符支持"ss08"特性，否则无法压缩，在当前系统默认字体中右侧标点符号及感叹号、顿号、问号均不生效。
 
 卡片能力： 从API version 12开始，该接口支持在ArkTS卡片中使用。
 
@@ -634,7 +634,7 @@ fontFeature(value: string)
 
 fontFeature属性列表：
 
-![](./img/zh-cn_image_0000002753296807.png)
+![](./img/zh-cn_image_0000002779093763.png)
 
 设置fontFeature属性，fontFeature是OpenType字体的高级排版能力，如支持连字、数字等宽等特性，一般用在自定义字体中，其能力需要字体本身支持。
 
@@ -718,8 +718,8 @@ fontWeight(weight: number | FontWeight | ResourceStr, options?: FontSettingOptio
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| weight | number | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 是 | 设置文本字重 number类型取值[100, 900]，取值间隔为100，默认为400，取值越大，字体越粗。string类型仅支持number类型取值的字符串形式，例如“400”，以及“bold”、“bolder”、“lighter”、“regular”、“medium”，分别对应FontWeight中相应的枚举值。设置过大可能会在不同字体下有截断。 传入超出取值范围的值时取默认值。传入不符合间隔要求的值时，若设置fontWeightConfigs的enableVariableFontWeight为true，使用传入值；若设置为false，使用默认值。 从API version 20开始，支持[Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource)类型。 |
-| options | [FontSettingOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#fontsettingoptions12对象说明) | 否 | 设置字体配置项，用于启用可变字重调节功能。当需要使用可变字体的字重属性进行精细调节时传入此参数（设置enableVariableFontWeight为true）。不传入时使用默认字体配置（禁用可变字重调节，仅支持整百字重值）。 enableVariableFontWeight为false时禁用可变字重调节，weight取整百值时字重为weight，非整百值时字重为400；enableVariableFontWeight为true时启用可变字重调节，weight取任意整数时字重为weight。 |
+| weight | number | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 是 | 设置文本字重 number类型取值[100, 900]，取值间隔为100，默认为400，取值越大，字体越粗。string类型仅支持number类型取值的字符串形式，例如“400”，以及“bold”、“bolder”、“lighter”、“regular”、“medium”，分别对应FontWeight中相应的枚举值。设置过大可能会在不同字体下有截断。 传入超出取值范围的值时取默认值。传入不符合间隔要求的值时，若设置options的enableVariableFontWeight为true，使用传入值；若设置为false，使用默认值。 从API version 20开始，支持[Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource)类型。 |
+| options | [FontSettingOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#fontsettingoptions12对象说明) | 否 | 设置字体配置项，用于启用可变字重调节功能。当需要使用可变字体的字重属性进行精细调节时传入此参数（设置enableVariableFontWeight为true）。不传入时使用默认字体配置（禁用可变字重调节，仅支持整百字重值）。 enableVariableFontWeight为false时禁用可变字重调节，weight取整百值时实际字重为该参数值，非整百值时实际字重为400；enableVariableFontWeight为true时启用可变字重调节，weight取任意整数时实际字重为该参数值。 |
 
 #### [h2]fontVariations
 
@@ -745,7 +745,7 @@ fontVariations(fontVariations: Array<FontVariation>)
 
 halfLeading(halfLeading: boolean)
 
-设置文本是否垂直居中。未通过该接口设置时，默认文本不平分至行的顶部与底部。
+设置文本是否垂直居中。未通过该接口设置时，默认不将行间距平分至行的顶部与底部。
 
 ![](./img/note_3.0-zh-cn.png) 与[textVerticalAlign](#textverticalalign20)同时配置时，halfLeading不生效。
 
@@ -877,7 +877,7 @@ lineHeight(value: number | string | Resource)
 
 当与[lineHeightMultiple](#lineheightmultiple22)同时设置且lineHeightMultiple使用有效值时，lineHeight的设置不生效，以lineHeightMultiple为准。
 
-设置值不大于0时，不限制文本行高，自适应字体大小，number类型时单位为fp。string类型支持number类型取值的字符串形式，可以附带单位，例如"10"、"10fp"。
+设置值不大于0时，不限制文本行高，由系统根据字体大小自适应计算行高。number类型时单位为fp。string类型支持number类型取值的字符串形式，可以附带单位，例如"10"、"10fp"。
 
 ![](./img/note_3.0-zh-cn.png) 特殊字符字体高度远超出同行的其他字符高度时，文本框出现截断、遮挡、内容相对位置发生变化等不符合预期的显示异常，需要开发者调整组件高度、行高等属性，修改对应的页面布局。
 
@@ -901,7 +901,7 @@ lineHeightMultiple(value: number | undefined)
 
 设置行高为入参（value）与字高（fontHeight）的乘积。
 
-![](./img/note_3.0-zh-cn.png) 当lineHeightMultiple使用有效值和[lineHeight](#lineheight)或[lineSpacing](#linespacing12)同时设置时，仅lineHeightMultiple生效。lineHeightMultiple小于0时，lineHeightMultiple不生效，使用[lineHeight](#lineheight)和[lineSpacing](#linespacing12)设置行高和行间距。
+![](./img/note_3.0-zh-cn.png) 当lineHeightMultiple使用有效值，且与[lineHeight](#lineheight)或[lineSpacing](#linespacing12)同时设置时，仅lineHeightMultiple生效。lineHeightMultiple小于0时，lineHeightMultiple不生效，使用[lineHeight](#lineheight)和[lineSpacing](#linespacing12)设置行高和行间距。
 
 卡片能力： 从API version 22开始，该接口支持在ArkTS卡片中使用。
 
@@ -994,7 +994,7 @@ maxFontScale(scale: number | Resource)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| scale | number | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 是 | 文本最大的字体缩放倍数。 取值范围：[1, +∞) **说明：** 设置的值小于1时，按值为1处理，其余异常值默认不生效。 |
+| scale | number | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 是 | 文本最大的字体缩放倍数。 取值范围：[1, +∞) 默认值：不设置时不限制最大缩放倍数。 **说明：** 设置的值小于1时，按值为1处理，其余异常值默认不生效。 |
 
 #### [h2]maxFontSize
 
@@ -1044,7 +1044,7 @@ maxLineHeight小于minLineHeight时，maxLineHeight按照minLineHeight属性的�
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | undefined | 是 | 文本的最大行高，不支持百分比。 设置的值不大于0时按0处理，设置为0时，最大行高不受限制。 取值为undefined时，不生效。 |
+| value | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | undefined | 是 | 文本的最大行高，不支持百分比。 设置的值不大于0时，最大行高不受限制。 取值为undefined时，不生效。 |
 
 #### [h2]selectedDragPreviewStyle23+
 
@@ -1222,9 +1222,9 @@ optimizeTrailingSpace(optimize: Optional<boolean>)
 
 - 多行、单行、图文混排等多种情况下均会优化行尾空格（TextAlign.Center或TextAlign.End时，优化效果明显）；
 - 纯空格文本时，修饰线、阴影、背景色跟随空格文本显示；
-- 行首空格不在优化范围内，行尾文本强制换行，每行行尾空格根据组件宽度优化行尾空格。
+- 行首空格不在优化范围内。文本强制换行时，根据组件宽度优化每行行尾空格。
 
-当纯空格文本设置优化行尾空格[optimizeTrailingSpace](#optimizetrailingspace20)为true时，不允许同时设置文本背景色[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、空格装饰线[decoration](#decoration)和对齐[textAlign](#textalign)三个属性。
+当纯空格文本设置优化行尾空格[optimizeTrailingSpace](#optimizetrailingspace20)为true时，不允许同时设置文本背景色[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、装饰线[decoration](#decoration)和对齐[textAlign](#textalign)三个属性。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -1265,11 +1265,13 @@ compressLeadingPunctuation(enabled: Optional<boolean>)
 
 orphanCharOptimization(enabled: Optional<boolean>)
 
-设置文本排版时是否使能孤字优化。不通过该接口设置，默认不使能孤字优化。
+设置文本排版时是否开启孤字优化。不通过该接口设置，默认不开启孤字优化。
 
-孤字优化通过更高效地处理孤立字符（段落尾行首字符）来改善文本布局。使能后，它会调整换行点以尽可能避免孤立字符。孤字优化特性需在[wordBreak](#wordbreak11)为非BREAK_ALL并且待排版文本首个[TextStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-text#textstyle)的[locale](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-text#textstyle)为“zh-Hans”或“zh-Hant”时生效。
+孤字优化通过更高效地处理孤立字符（即段落最后一行的首个字符）来改善文本布局。开启后，它会调整换行点以尽可能避免孤立字符。孤字优化特性需在[wordBreak](#wordbreak11)为非BREAK_ALL并且待排版文本首个[TextStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-text#textstyle)的[locale](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-text#textstyle)为“zh-Hans”或“zh-Hant”时生效。
 
 起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
@@ -1279,7 +1281,7 @@ orphanCharOptimization(enabled: Optional<boolean>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| enabled | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 段落最后一行是否使能孤字优化。 true表示使能孤字优化，false表示不使能孤字优化。 值为undefined或null时，不使能孤字优化。 |
+| enabled | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 段落最后一行是否开启孤字优化。 true表示开启孤字优化，false表示不开启孤字优化。 值为undefined或null时，不开启孤字优化。 |
 
 #### [h2]privacySensitive12+
 
@@ -1299,7 +1301,7 @@ privacySensitive(supported: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| supported | boolean | 是 | 是否支持卡片敏感隐私信息。 true表示支持卡片敏感隐私信息，隐私模式下文字将被遮罩为横杠"-"样式；false表示不支持卡片敏感隐私信息，隐私模式下文字正常显示。 **说明：** 设置为null则表示不敏感。 进入隐私模式需要卡片框架支持。隐私遮罩的类型可以通过[obscured](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-obscured#obscured)配置。 |
+| supported | boolean | 是 | 是否支持卡片敏感隐私信息。 true表示支持卡片敏感隐私信息，隐私模式下文字将被遮罩为横杠"-"样式；false表示不支持卡片敏感隐私信息，隐私模式下文字正常显示。 **说明：** 设置为null则表示不支持卡片敏感隐私信息，行为与false一致。 进入隐私模式需要卡片框架支持。隐私遮罩的类型可以通过[obscured](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-obscured#obscured)配置。 |
 
 #### [h2]punctuationOverflow
 
@@ -1325,7 +1327,7 @@ punctuationOverflow(enabled: Optional<boolean>)
 
 selectedBackgroundColor(color: ResourceColor)
 
-设置文本选中高亮颜色。如果未设置不透明度或设置为完全不透明，默认使用20%不透明度。未通过该接口设置时，默认文本选中高亮颜色为'#007DFF'（蓝色）。
+设置文本选中高亮颜色。如果未设置不透明度或设置为完全不透明，系统默认应用20%不透明度。未通过该接口设置时，默认文本选中高亮颜色为'#007DFF'（蓝色）。
 
 元服务API： 从API version 14开始，该接口支持在元服务中使用。
 
@@ -1603,7 +1605,7 @@ textVerticalAlign(textVerticalAlign: Optional<TextVerticalAlign>)
 ![](./img/note_3.0-zh-cn.png)
 
 - 与[halfLeading](#halfleading12)同时配置时，halfLeading不生效。
-- 一个段落下使用同一字号必须同时设置行高[lineHeight](#lineheight)或者同一个段落不同字号文本混排时才有效果差异，否则设置了该属性任意枚举值和未设置该属性都是一样的排版效果。属性字符串[TextStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-styled-string#textstyle)中的SuperscriptStyle上下角标样式仅在[TextVerticalAlign](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#textverticalalign20)属性值为TextVerticalAlign.BASELINE时生效，其余垂直对齐方式下上下角标文本和普通文本表现一致，无上下角标效果。
+- 同一段落中使用同一字号时，需同时设置行高[lineHeight](#lineheight)才会产生垂直对齐效果差异；或同一段落中不同字号文本混排时也会产生效果差异。否则，设置该属性的任意枚举值与不设置该属性的排版效果相同。属性字符串[TextStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-styled-string#textstyle)中的SuperscriptStyle上下角标样式仅在[TextVerticalAlign](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#textverticalalign20)属性值为TextVerticalAlign.BASELINE时生效，其余垂直对齐方式下上下角标文本和普通文本表现一致，无上下角标效果。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -1709,7 +1711,7 @@ WordBreak.BREAK_ALL与{overflow: TextOverflow.Ellipsis}、maxLines组合使用�
 
 onCopy(callback:(value: string) => void)
 
-长按文本内部区域弹出剪贴板后，点击剪贴板复制按钮，触发该回调。目前只有文本可以复制。
+长按文本内部区域弹出剪贴板后，单击剪贴板复制按钮，触发该回调。目前只有文本可以复制。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -1886,7 +1888,7 @@ setTextSelection(selectionStart: number | undefined, selectionEnd: number | unde
 
 当selectionStart大于等于selectionEnd时不选中。可选范围为[0, textSize]，其中textSize为文本内容最大字符数，入参小于0时处理为0，大于textSize时处理为textSize。
 
-当selectionStart或selectionEnd位于截断的不可见区域时，文本不选中。clip设置为false时，超出父组件的文本选中区域生效。
+当selectionStart或selectionEnd位于截断的不可见区域时，文本不选中。clip设置为false时，超出父组件范围的文本也可被选中。
 
 如果设备为PC/2in1，即使options被赋值为MenuPolicy.SHOW，调用setTextSelection也不弹出菜单。
 
@@ -1917,7 +1919,7 @@ Marquee初始化参数。
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | start | boolean | 否 | 否 | 控制跑马灯进入播放状态。 true表示播放，false表示不播放。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
-| step | number | 否 | 是 | 滚动动画文本滚动步长。 单位：vp 取值范围：(0, 文本宽度]。设置小于等于0的值时按默认值处理。 默认值：4.0vp **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
+| step | number | 否 | 是 | 跑马灯文本滚动步长。 单位：vp 取值范围：(0, 文本宽度]。设置小于等于0的值时按默认值处理。 默认值：4.0vp **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | spacing23+ | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12) | 否 | 是 | 两轮跑马灯之间的间距。单位：vp。当LengthMetrics对象的unit属性为LengthUnit.PERCENT时，当前设置不生效，按默认值处理。 默认值：48.0vp **元服务API：** 从API version 23开始，该接口支持在元服务中使用。 |
 | loop | number | 否 | 是 | 设置重复滚动的次数，小于等于零时无限循环。 默认值：-1 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | fromStart | boolean | 否 | 是 | 设置文本从头开始滚动或反向滚动。 true表示从头开始滚动，false表示反向滚动。 默认值：true **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
@@ -2053,7 +2055,7 @@ struct TextExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753456725.gif)
+ ![](./img/zh-cn_image_0000002778933907.gif)
 
 #### [h2]示例2（设置文本样式）
 
@@ -2172,7 +2174,7 @@ struct TextExample2 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723856960.gif)
+ ![](./img/zh-cn_image_0000002749334824.gif)
 
 #### [h2]示例3（设置文本超长省略）
 
@@ -2247,11 +2249,11 @@ struct TextExample3 {
         })
         .onMarqueeStateChange((state: MarqueeState) => {
           if (state == MarqueeState.START) {
-            // "收到状态: START";
+            console.info('收到状态: START');
           } else if (state == MarqueeState.BOUNCE) {
-            // "收到状态: BOUNCE";
+            console.info('收到状态: BOUNCE');
           } else if (state == MarqueeState.FINISH) {
-            // "收到状态: FINISH";
+            console.info('收到状态: FINISH');
           }
         })
 
@@ -2281,7 +2283,7 @@ struct TextExample3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723697042.gif)
+ ![](./img/zh-cn_image_0000002749494708.gif)
 
 #### [h2]示例4（设置文本断行及折行）
 
@@ -2365,7 +2367,7 @@ struct TextExample4 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753296809.gif)
+ ![](./img/zh-cn_image_0000002779093765.gif)
 
 #### [h2]示例5（设置文本选中和复制）
 
@@ -2418,7 +2420,7 @@ struct TextExample5 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753456727.gif)
+ ![](./img/zh-cn_image_0000002778933909.gif)
 
 #### [h2]示例6（设置文本自适应和缩放倍数限制范围）
 
@@ -2462,7 +2464,7 @@ struct TextExample6 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723856962.png)
+ ![](./img/zh-cn_image_0000002749334826.png)
 
 #### [h2]示例7（设置文本识别）
 
@@ -2505,7 +2507,7 @@ struct TextExample7 {
       }
       .width('100%')
       // 使用parallelGesture中的TapGesture替代onClick属性，达到非冒泡事件类似冒泡
-      // 的效果，点击Text组件区域Column上的点击事件正常响应
+      // 的效果，单击Text组件区域Column上的单击事件正常响应
       .parallelGesture(TapGesture().onAction((event: GestureEvent) => {
         console.info('test column onClick timestamp:' + event.timestamp);
       }), GestureMask.Normal)
@@ -2514,7 +2516,7 @@ struct TextExample7 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723697044.png)
+ ![](./img/zh-cn_image_0000002749494710.png)
 
 #### [h2]示例8（文本绑定自定义菜单）
 
@@ -2635,7 +2637,7 @@ function MenuStyles() {
   .backgroundColor('#F0F0F0')
 }
 ```
- ![](./img/zh-cn_image_0000002753296811.gif)
+ ![](./img/zh-cn_image_0000002779093767.gif)
 
 #### [h2]示例9（设置文本特性与行间距）
 
@@ -2693,7 +2695,7 @@ struct TextExample9 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753456729.png)
+ ![](./img/zh-cn_image_0000002778933911.png)
 
 #### [h2]示例10（获取文本信息）
 
@@ -2792,7 +2794,7 @@ struct TextExample10 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723856964.gif)
+ ![](./img/zh-cn_image_0000002749334828.gif)
 
 #### [h2]示例11（实现键盘框选文本）
 
@@ -2820,7 +2822,7 @@ struct TextExample11 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723697046.gif)
+ ![](./img/zh-cn_image_0000002749494712.gif)
 
 #### [h2]示例12（文本扩展自定义菜单）
 
@@ -2908,7 +2910,7 @@ struct TextExample12 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753296813.gif)
+ ![](./img/zh-cn_image_0000002779093769.gif)
 
 #### [h2]示例13（配置隐私隐藏）
 
@@ -2930,7 +2932,7 @@ struct TextExample13 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753456731.gif)
+ ![](./img/zh-cn_image_0000002778933913.gif)
 
 #### [h2]示例14（设置中西文自动间距）
 
@@ -2956,7 +2958,7 @@ struct TextExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723856966.png)
+ ![](./img/zh-cn_image_0000002749334830.png)
 
 #### [h2]示例15（文本颜色按线性或径向渐变）
 
@@ -3023,7 +3025,7 @@ struct ShaderColorStyle {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723697048.png)
+ ![](./img/zh-cn_image_0000002749494714.png)
 
 #### [h2]示例16（配置除去行尾空格）
 
@@ -3053,7 +3055,7 @@ struct TextExample16 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753296815.png)
+ ![](./img/zh-cn_image_0000002779093771.png)
 
 #### [h2]示例17（文本垂直对齐）
 
@@ -3083,7 +3085,7 @@ struct TextExample14 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753456733.png)
+ ![](./img/zh-cn_image_0000002778933915.png)
 
 #### [h2]示例18（文本翻牌动效）
 
@@ -3116,7 +3118,7 @@ struct TextNumberTransition {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723856968.gif)
+ ![](./img/zh-cn_image_0000002749334832.gif)
 
 #### [h2]示例19（文本内容区垂直对齐）
 
@@ -3141,7 +3143,7 @@ struct TextContentAlignExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723697050.png)
+ ![](./img/zh-cn_image_0000002749494716.png)
 
 #### [h2]示例20（倍数行高和最大最小行高）
 
@@ -3184,7 +3186,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753296817.png)
+ ![](./img/zh-cn_image_0000002779093773.png)
 
 #### [h2]示例21（文本设置显示最小行数）
 
@@ -3215,7 +3217,7 @@ struct TextExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753456735.png)
+ ![](./img/zh-cn_image_0000002778933917.png)
 
 #### [h2]示例22（设置文本选择区域并高亮显示）
 
@@ -3246,7 +3248,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723856970.gif)
+ ![](./img/zh-cn_image_0000002749334834.gif)
 
 #### [h2]示例23（设置行首标点符号压缩和行尾标点符号悬挂）
 
@@ -3298,7 +3300,7 @@ struct PunctuationDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723697052.gif)
+ ![](./img/zh-cn_image_0000002749494718.gif)
 
 #### [h2]示例24（设置自适应间距）
 
@@ -3361,7 +3363,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753296819.gif)
+ ![](./img/zh-cn_image_0000002779093775.gif)
 
 #### [h2]示例25（设置文本拖拽时的背板样式）
 
@@ -3387,7 +3389,7 @@ struct TextTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753456737.png)
+ ![](./img/zh-cn_image_0000002778933919.png)
 
 #### [h2]示例26（设置文本排版方向）
 
@@ -3428,7 +3430,7 @@ struct TextExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723856972.png)
+ ![](./img/zh-cn_image_0000002749334836.png)
 
 #### [h2]示例27（获取指定坐标和范围对应的文本信息）
 
@@ -3506,7 +3508,7 @@ struct TextExample10 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723697054.gif)
+ ![](./img/zh-cn_image_0000002749494720.gif)
 
 #### [h2]示例28（设置文本排版时是否使能孤字优化）
 
@@ -3544,7 +3546,7 @@ struct TextExample {
 ```
  该效果图会因设备尺寸差异有显示区别，仅供参考。
 
-![](./img/zh-cn_image_0000002753296821.png)
+![](./img/zh-cn_image_0000002779093777.png)
 
 #### [h2]示例29（设置可变字体的属性）
 
@@ -3573,7 +3575,7 @@ struct TextExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753456739.gif)
+ ![](./img/zh-cn_image_0000002778933921.gif)
 
 #### [h2]示例30（设置图片预览菜单）
 
@@ -3619,7 +3621,7 @@ struct TextExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723856974.gif)
+ ![](./img/zh-cn_image_0000002749334838.gif)
 
 #### [h2]示例31（设置属性字符串段落缓存策略）
 
@@ -3755,7 +3757,7 @@ struct StyledStringAppend {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002723697056.png)
+ ![](./img/zh-cn_image_0000002749494722.png)
 
 #### [h2]示例32（设置文本尾部缩进）
 
@@ -3800,7 +3802,7 @@ struct TailIndentsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753296823.png)
+ ![](./img/zh-cn_image_0000002779093779.png)
 
 #### [h2]示例33（设置文本选择的AI菜单）
 
@@ -3828,7 +3830,7 @@ struct DataDetectorDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002753456741.gif)
+ ![](./img/zh-cn_image_0000002778933923.gif)
 
 #### [h2]示例34（长按含表情符号文本绘制渐变高亮背景）
 
@@ -3951,4 +3953,4 @@ struct Utf16GlyphHighlightPage {
 ```
  该效果图会因设备尺寸差异有显示区别，仅供参考。
 
-![](./img/zh-cn_image_0000002723856976.gif)
+![](./img/zh-cn_image_0000002749334840.gif)
