@@ -1,9 +1,10 @@
 name: Sync API Reference
 
 on:
-  schedule:
-    # 每天晚上北京时间 23:00 (UTC 15:00)
-    - cron: '0 15 * * *'
+  # 定时同步已停用（2026-10-02，老板决定）。如需恢复，取消注释即可。
+  # schedule:
+  #   # 每天晚上北京时间 23:00 (UTC 15:00)
+  #   - cron: '0 15 * * *'
   workflow_dispatch:
 
 permissions:
